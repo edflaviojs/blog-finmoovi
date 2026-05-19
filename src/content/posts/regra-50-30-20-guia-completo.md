@@ -1,7 +1,7 @@
 ---
 title: "Regra 50-30-20: O Guia Completo Para Organizar Suas Finanças"
 description: "Entenda como a regra 50-30-20 funciona na prática e como adaptá-la à realidade brasileira. Exemplos com salários reais."
-image: "/images/posts/regra-50-30-20.webp"
+image: "/images/posts/regra-50-30-20.svg"
 category: "dicas"
 tags: ["regra 50-30-20", "orçamento", "finanças pessoais", "método financeiro"]
 author: "FinMoovi"

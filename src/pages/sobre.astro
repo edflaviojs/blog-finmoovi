@@ -1,0 +1,279 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+---
+
+<BaseLayout
+  title="Sobre o FinMoovi Blog"
+  description="Conheça o FinMoovi Blog: educação financeira acessível, dicas práticas e ferramentas gratuitas para organizar suas finanças pessoais."
+  keywords={['sobre finmoovi', 'educação financeira', 'finanças pessoais', 'quem somos']}
+>
+  <Header />
+
+  <main class="sobre-page">
+    <div class="container">
+      <header class="sobre-header">
+        <h1 class="sobre-title">Sobre o FinMoovi Blog</h1>
+        <p class="sobre-subtitle">Educação financeira acessível para todos os brasileiros</p>
+      </header>
+
+      <div class="sobre-content">
+        <section class="sobre-section">
+          <h2>Nossa Missão</h2>
+          <p>
+            O FinMoovi Blog nasceu com um objetivo claro: <strong>democratizar a educação financeira no Brasil</strong>.
+            Acreditamos que todo mundo merece ter acesso a informações claras, práticas e sem jargão sobre como
+            organizar suas finanças pessoais.
+          </p>
+          <p>
+            Aqui você encontra dicas testadas, ferramentas gratuitas e conteúdo educativo que vai direto ao ponto.
+            Sem enrolação, sem promessas milagrosas — apenas conhecimento prático que funciona no dia a dia.
+          </p>
+        </section>
+
+        <section class="sobre-section">
+          <h2>O que você encontra aqui</h2>
+          <div class="sobre-grid">
+            <div class="sobre-card">
+              <span class="sobre-card-icon">📝</span>
+              <h3>Dicas Financeiras</h3>
+              <p>Artigos práticos sobre orçamento, economia, investimentos e controle de gastos.</p>
+            </div>
+            <div class="sobre-card">
+              <span class="sobre-card-icon">🛠️</span>
+              <h3>Ferramentas Gratuitas</h3>
+              <p>Calculadoras, simuladores e conversores para te ajudar a tomar melhores decisões.</p>
+            </div>
+            <div class="sobre-card">
+              <span class="sobre-card-icon">📖</span>
+              <h3>Glossário Financeiro</h3>
+              <p>Termos financeiros explicados de forma simples. De A a Z, sem complicação.</p>
+            </div>
+            <div class="sobre-card">
+              <span class="sobre-card-icon">📊</span>
+              <h3>Cotações & Mercado</h3>
+              <p>Resumos semanais do mercado financeiro com análises acessíveis.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="sobre-section">
+          <h2>Sobre o FinMoovi</h2>
+          <p>
+            O <strong>FinMoovi</strong> é um app de controle financeiro inteligente, criado no Brasil para brasileiros
+            (e para quem vive com múltiplas moedas). Com ele você controla gastos, acompanha investimentos e
+            alcança objetivos financeiros — tudo offline, com IA e multi-moeda.
+          </p>
+          <p>
+            O blog é uma extensão do nosso compromisso com a educação financeira. Mesmo que você não use o app,
+            o conteúdo aqui é 100% gratuito e feito para te ajudar.
+          </p>
+        </section>
+
+        <section class="sobre-section sobre-cta">
+          <div class="sobre-cta-box">
+            <h2>Quer organizar suas finanças?</h2>
+            <p>Teste o FinMoovi grátis por 7 dias. Sem cartão de crédito. Cancele quando quiser.</p>
+            <div class="sobre-cta-actions">
+              <a href="/app" class="sobre-btn primary">Experimentar Grátis</a>
+              <a href="/" class="sobre-btn secondary">Ver o Blog</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="sobre-section">
+          <h2>Contato</h2>
+          <p>
+            Tem sugestões de conteúdo, encontrou algum erro ou quer colaborar?
+            Entre em contato pelo email <a href="mailto:blog@finmoovi.com" class="sobre-link">blog@finmoovi.com</a>.
+          </p>
+          <p>
+            Siga o FinMoovi nas redes sociais para mais dicas rápidas:
+          </p>
+          <div class="sobre-social">
+            <a href="https://instagram.com/finmoovi" target="_blank" rel="noopener" class="social-link">Instagram</a>
+            <a href="https://twitter.com/finmoovi" target="_blank" rel="noopener" class="social-link">Twitter/X</a>
+            <a href="https://youtube.com/@finmoovi" target="_blank" rel="noopener" class="social-link">YouTube</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .sobre-page {
+    padding: var(--space-8) 0 var(--space-16);
+  }
+
+  .sobre-header {
+    text-align: center;
+    margin-bottom: var(--space-12);
+  }
+
+  .sobre-title {
+    font-size: var(--text-4xl);
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4);
+  }
+
+  .sobre-subtitle {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+  }
+
+  .sobre-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .sobre-section {
+    margin-bottom: var(--space-12);
+  }
+
+  .sobre-section h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-4);
+    color: var(--text-primary);
+  }
+
+  .sobre-section p {
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+  }
+
+  .sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 640px) {
+    .sobre-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .sobre-card {
+    padding: var(--space-6);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+  }
+
+  .sobre-card-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: var(--space-3);
+  }
+
+  .sobre-card h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+  }
+
+  .sobre-card p {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-bottom: 0;
+  }
+
+  .sobre-cta-box {
+    text-align: center;
+    padding: var(--space-10);
+    background: var(--gradient-card);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-xl);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sobre-cta-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+  }
+
+  .sobre-cta-box h2 {
+    margin-bottom: var(--space-3);
+  }
+
+  .sobre-cta-box p {
+    margin-bottom: var(--space-6);
+    text-align: center;
+  }
+
+  .sobre-cta-actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .sobre-btn {
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    transition: all var(--transition-fast);
+  }
+
+  .sobre-btn.primary {
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+    color: #fff;
+  }
+
+  .sobre-btn.primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .sobre-btn.secondary {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-default);
+  }
+
+  .sobre-btn.secondary:hover {
+    border-color: #00F0FF;
+  }
+
+  .sobre-link {
+    color: #00F0FF;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .sobre-social {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .social-link {
+    padding: var(--space-2) var(--space-4);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+  }
+
+  .social-link:hover {
+    border-color: #00F0FF;
+    color: #00F0FF;
+  }
+</style>

@@ -1,0 +1,43 @@
+---
+term: "Tesouro Direto"
+definition: "Programa do governo federal que permite pessoas físicas investirem em títulos públicos a partir de R$ 30. É um dos investimentos mais seguros do Brasil."
+category: "investimentos"
+relatedTerms: ["Selic", "IPCA", "Renda Fixa"]
+publishedAt: 2025-05-10
+---
+
+## O que é Tesouro Direto?
+
+Tesouro Direto é um programa do governo brasileiro que permite que qualquer pessoa empreste dinheiro para o governo e receba juros em troca. É como se o governo pedisse dinheiro emprestado de você e te pagasse com juros.
+
+## Tipos de títulos
+
+### Tesouro Selic (LFT)
+- Rende a taxa Selic
+- Liquidez diária (pode resgatar quando quiser)
+- Ideal para: reserva de emergência
+- Risco: praticamente zero
+
+### Tesouro IPCA+ (NTN-B)
+- Rende IPCA + taxa fixa (ex: IPCA + 6%)
+- Protege contra inflação
+- Ideal para: aposentadoria, longo prazo
+- Risco: pode ter variação se vender antes do vencimento
+
+### Tesouro Prefixado (LTN)
+- Taxa fixa definida na compra (ex: 12% ao ano)
+- Você sabe exatamente quanto vai receber no vencimento
+- Ideal para: quando acredita que juros vão cair
+- Risco: se a Selic subir, seu título perde valor de mercado
+
+## Como investir
+
+1. Abra conta em uma corretora (taxa zero na maioria)
+2. Acesse o site do Tesouro Direto
+3. Escolha o título adequado ao seu objetivo
+4. Invista a partir de R$ 30
+
+## Custos
+
+- Taxa de custódia B3: 0,20% ao ano (isento até R$ 10.000 no Tesouro Selic)
+- IR regressivo: 22,5% (até 180 dias) a 15% (acima de 720 dias)

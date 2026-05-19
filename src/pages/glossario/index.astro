@@ -2,6 +2,7 @@
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
+import CTAVariado from '@components/glossario/CTAVariado.astro';
 import { getCollection } from 'astro:content';
 
 const glossario = await getCollection('glossario');
@@ -13,12 +14,25 @@ const grouped = sorted.reduce((acc, item) => {
   acc[letter].push(item);
   return acc;
 }, {} as Record<string, typeof sorted>);
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": sorted.map(term => ({
+    "@type": "Question",
+    "name": `O que é ${term.data.term}?`,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": term.data.definition
+    }
+  }))
+};
 ---
 
 <BaseLayout
-  title="Glossário Financeiro"
-  description="Dicionário completo de termos financeiros explicados de forma simples. De A a Z, tudo que você precisa saber sobre finanças."
-  keywords={['glossário financeiro', 'termos financeiros', 'dicionário finanças', 'educação financeira']}
+  title="Glossário Financeiro — O que é CDI, Selic, IPCA e mais"
+  description="Dicionário completo de termos financeiros explicados de forma simples. Descubra o que é CDI, Selic, juros compostos, liquidez e mais de 60 termos."
+  keywords={['glossário financeiro', 'o que é CDI', 'o que é Selic', 'termos financeiros', 'educação financeira']}
 >
   <Header />
 
@@ -27,7 +41,7 @@ const grouped = sorted.reduce((acc, item) => {
       <header class="glossario-header">
         <h1 class="glossario-title">Glossário Financeiro</h1>
         <p class="glossario-description">
-          Termos financeiros explicados de forma simples e direta. Sem jargão, sem enrolação.
+          Termos financeiros explicados de forma simples. Clique na pergunta para ver a resposta.
         </p>
       </header>
 
@@ -38,27 +52,50 @@ const grouped = sorted.reduce((acc, item) => {
         ))}
       </nav>
 
-      <!-- Terms -->
+      <!-- CTA top -->
+      <CTAVariado seed={0} />
+
+      <!-- Terms with Accordion -->
       <div class="glossario-content">
-        {Object.entries(grouped).map(([letter, terms]) => (
+        {Object.entries(grouped).map(([letter, terms], groupIndex) => (
           <section id={`letra-${letter}`} class="letter-section">
             <h2 class="letter-heading">{letter}</h2>
             <div class="terms-list">
-              {terms.map(term => (
-                <article class="term-card">
-                  <h3 class="term-title">{term.data.term}</h3>
-                  <p class="term-definition">{term.data.definition}</p>
-                  <a href={`/glossario/${term.slug}`} class="term-link">Ler mais →</a>
-                </article>
+              {terms.map((term, termIndex) => (
+                <details class="term-accordion">
+                  <summary class="term-question">
+                    <span class="term-q-icon">?</span>
+                    <span>O que é {term.data.term}?</span>
+                    <svg class="term-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </summary>
+                  <div class="term-answer">
+                    <p class="term-definition">{term.data.definition}</p>
+                    <a href={`/glossario/${term.slug}`} class="term-read-more">
+                      Ler explicação completa →
+                    </a>
+                  </div>
+                </details>
               ))}
             </div>
+
+            {/* CTA every 3 letters */}
+            {groupIndex > 0 && groupIndex % 3 === 0 && (
+              <CTAVariado seed={groupIndex} />
+            )}
           </section>
         ))}
       </div>
+
+      <!-- CTA bottom -->
+      <CTAVariado seed={99} />
     </div>
   </main>
 
   <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </BaseLayout>
 
 <style>
@@ -68,12 +105,12 @@ const grouped = sorted.reduce((acc, item) => {
 
   .glossario-header {
     text-align: center;
-    margin-bottom: var(--space-10);
+    margin-bottom: var(--space-8);
   }
 
   .glossario-title {
     font-size: var(--text-4xl);
-    background: var(--gradient-hero);
+    background: linear-gradient(135deg, #00F0FF, #A91079);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -92,7 +129,7 @@ const grouped = sorted.reduce((acc, item) => {
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--space-2);
-    margin-bottom: var(--space-10);
+    margin-bottom: var(--space-8);
     padding: var(--space-4);
     background: var(--bg-secondary);
     border-radius: var(--radius-lg);
@@ -114,16 +151,16 @@ const grouped = sorted.reduce((acc, item) => {
 
   .alphabet-link:hover {
     background: var(--bg-tertiary);
-    color: var(--accent-primary);
+    color: #00F0FF;
   }
 
   .letter-section {
-    margin-bottom: var(--space-10);
+    margin-bottom: var(--space-8);
   }
 
   .letter-heading {
     font-size: var(--text-3xl);
-    color: var(--accent-primary);
+    color: #00F0FF;
     opacity: 0.5;
     margin-bottom: var(--space-4);
     padding-bottom: var(--space-2);
@@ -131,48 +168,94 @@ const grouped = sorted.reduce((acc, item) => {
   }
 
   .terms-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
   }
 
-  @media (min-width: 768px) {
-    .terms-list {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  .term-card {
-    padding: var(--space-5);
+  /* Accordion */
+  .term-accordion {
     background: var(--bg-secondary);
     border: 1px solid var(--border-default);
     border-radius: var(--radius-lg);
+    overflow: hidden;
     transition: border-color var(--transition-fast);
   }
 
-  .term-card:hover {
-    border-color: var(--accent-primary);
+  .term-accordion:hover {
+    border-color: rgba(0, 240, 255, 0.3);
   }
 
-  .term-title {
+  .term-accordion[open] {
+    border-color: rgba(0, 240, 255, 0.4);
+  }
+
+  .term-question {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+    cursor: pointer;
     font-size: var(--text-base);
+    font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: var(--space-2);
+    list-style: none;
+    transition: background var(--transition-fast);
+  }
+
+  .term-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .term-question:hover {
+    background: var(--bg-tertiary);
+  }
+
+  .term-q-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: rgba(0, 240, 255, 0.1);
+    color: #00F0FF;
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .term-chevron {
+    margin-left: auto;
+    color: var(--text-tertiary);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .term-accordion[open] .term-chevron {
+    transform: rotate(180deg);
+  }
+
+  .term-answer {
+    padding: 0 var(--space-5) var(--space-5);
+    padding-left: calc(var(--space-5) + 28px + var(--space-3));
   }
 
   .term-definition {
     font-size: var(--text-sm);
     color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
     margin-bottom: var(--space-3);
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 
-  .term-link {
+  .term-read-more {
     font-size: var(--text-sm);
-    color: var(--accent-primary);
+    color: #00F0FF;
     font-weight: 500;
+    transition: opacity var(--transition-fast);
+  }
+
+  .term-read-more:hover {
+    opacity: 0.8;
   }
 </style>

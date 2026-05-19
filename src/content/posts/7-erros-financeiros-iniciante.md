@@ -1,7 +1,7 @@
 ---
 title: "7 Erros Financeiros Que Todo Iniciante Comete (E Como Evitar)"
 description: "Descubra os erros mais comuns de quem está começando a organizar as finanças e aprenda como evitá-los com dicas práticas."
-image: "/images/posts/erros-financeiros.webp"
+image: "/images/posts/erros-financeiros.svg"
 category: "dicas"
 tags: ["erros financeiros", "finanças pessoais", "educação financeira", "dicas"]
 author: "FinMoovi"

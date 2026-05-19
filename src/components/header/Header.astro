@@ -2,6 +2,7 @@
 import CotacaoBar from './CotacaoBar.astro';
 import Navigation from './Navigation.astro';
 import MobileMenu from './MobileMenu.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
 ---
 
 <div class="header-wrapper">
@@ -10,12 +11,25 @@ import MobileMenu from './MobileMenu.astro';
   <header class="header">
     <div class="container header-inner">
       <a href="/" class="logo" aria-label="FinMoovi Blog - Início">
-        <span class="logo-icon">FM</span>
+        <div class="logo-icon">
+          <svg width="20" height="20" viewBox="0 0 64 64" fill="none">
+            <path d="M12 44 L24 28 L34 38 L44 20 L52 28" stroke="url(#logoGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00F0FF"/>
+                <stop offset="100%" stop-color="#A91079"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
         <span class="logo-text">FinMoovi<span class="logo-blog">Blog</span></span>
       </a>
 
-      <Navigation />
-      <MobileMenu />
+      <div class="header-right">
+        <Navigation />
+        <LanguageSwitcher />
+        <MobileMenu />
+      </div>
     </div>
   </header>
 </div>
@@ -41,6 +55,12 @@ import MobileMenu from './MobileMenu.astro';
     height: 64px;
   }
 
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
   .logo {
     display: flex;
     align-items: center;
@@ -54,21 +74,23 @@ import MobileMenu from './MobileMenu.astro';
     justify-content: center;
     width: 36px;
     height: 36px;
-    background: var(--gradient-hero);
+    background: #0d1117;
+    border: 1px solid rgba(0, 240, 255, 0.2);
     border-radius: var(--radius-md);
-    font-weight: 800;
-    font-size: var(--text-sm);
-    color: #fff;
   }
 
   .logo-text {
     font-weight: 700;
     font-size: var(--text-lg);
     color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   }
 
   .logo-blog {
-    color: var(--accent-primary);
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-left: 2px;
   }
 </style>

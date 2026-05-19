@@ -1,0 +1,157 @@
+---
+const langs = [
+  { code: 'pt', flag: '🇧🇷', label: 'Português' },
+  { code: 'en', flag: '🇺🇸', label: 'English' },
+  { code: 'es', flag: '🇪🇸', label: 'Español' },
+];
+---
+
+<div class="lang-switcher" id="lang-switcher">
+  <button class="lang-toggle" id="lang-toggle" aria-label="Selecionar idioma" aria-expanded="false">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="2" y1="12" x2="22" y2="12"/>
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </svg>
+    <span class="lang-current-flag" id="lang-current-flag">🇧🇷</span>
+  </button>
+
+  <div class="lang-dropdown" id="lang-dropdown" aria-hidden="true">
+    {langs.map(l => (
+      <button class="lang-option" data-lang={l.code} data-flag={l.flag}>
+        <span class="lang-flag">{l.flag}</span>
+        <span class="lang-label">{l.label}</span>
+        <span class="lang-check" data-check={l.code}>✓</span>
+      </button>
+    ))}
+  </div>
+</div>
+
+<script>
+  const toggle = document.getElementById('lang-toggle');
+  const dropdown = document.getElementById('lang-dropdown');
+  const currentFlag = document.getElementById('lang-current-flag');
+  const options = document.querySelectorAll('.lang-option');
+  const checks = document.querySelectorAll('.lang-check');
+
+  // Load saved language
+  const saved = localStorage.getItem('fm-lang') || 'pt';
+  updateLang(saved);
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+    dropdown?.setAttribute('aria-hidden', String(isOpen));
+  });
+
+  options.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang') || 'pt';
+      updateLang(lang);
+      localStorage.setItem('fm-lang', lang);
+      toggle?.setAttribute('aria-expanded', 'false');
+      dropdown?.setAttribute('aria-hidden', 'true');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    const switcher = document.getElementById('lang-switcher');
+    if (switcher && !switcher.contains(e.target as Node)) {
+      toggle?.setAttribute('aria-expanded', 'false');
+      dropdown?.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  function updateLang(lang: string) {
+    const flags: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸' };
+    if (currentFlag) currentFlag.textContent = flags[lang] || '🇧🇷';
+    checks.forEach(c => {
+      (c as HTMLElement).style.display = c.getAttribute('data-check') === lang ? 'inline' : 'none';
+    });
+    document.documentElement.setAttribute('data-lang', lang);
+  }
+</script>
+
+<style>
+  .lang-switcher {
+    position: relative;
+  }
+
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+    border: 1px solid transparent;
+  }
+
+  .lang-toggle:hover {
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
+  }
+
+  .lang-toggle[aria-expanded="true"] {
+    background: rgba(0, 240, 255, 0.06);
+    border-color: rgba(0, 240, 255, 0.15);
+  }
+
+  .lang-current-flag {
+    font-size: 13px;
+  }
+
+  .lang-dropdown {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    min-width: 148px;
+    background: rgba(22, 27, 34, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transform: translateY(6px) scale(0.95);
+    pointer-events: none;
+    transition: all 0.15s ease;
+    z-index: var(--z-dropdown);
+  }
+
+  .lang-dropdown[aria-hidden="false"] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+
+  .lang-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--text-sm);
+    color: var(--text-primary);
+    transition: background var(--transition-fast);
+    text-align: left;
+  }
+
+  .lang-option:hover {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .lang-flag {
+    font-size: 16px;
+  }
+
+  .lang-label {
+    flex: 1;
+  }
+
+  .lang-check {
+    font-size: 12px;
+    color: #00D4E8;
+    display: none;
+  }
+</style>

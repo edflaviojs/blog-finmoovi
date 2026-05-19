@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
-  <rect width="36" height="36" rx="8" fill="url(#grad)"/>
-  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="Inter, sans-serif" font-weight="800" font-size="12" fill="white">FM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="grad" x1="0" y1="0" x2="36" y2="36">
-      <stop offset="0%" stop-color="#58a6ff"/>
-      <stop offset="100%" stop-color="#bc8cff"/>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
     </linearGradient>
   </defs>
+  <rect width="64" height="64" rx="14" fill="#0d1117"/>
+  <path d="M12 44 L24 28 L34 38 L44 20 L52 28" stroke="url(#g)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
