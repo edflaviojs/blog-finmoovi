@@ -1,0 +1,47 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  url: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  author?: string;
+  category?: string;
+  keywords?: string[];
+}
+
+const { title, description, image, url, publishedTime, modifiedTime, author = 'FinMoovi', category, keywords = [] } = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "image": image ? [image] : undefined,
+  "url": url,
+  "datePublished": publishedTime,
+  "dateModified": modifiedTime || publishedTime,
+  "author": {
+    "@type": "Organization",
+    "name": author,
+    "url": "https://finmoovi.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FinMoovi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.finmoovi.com/images/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": url
+  },
+  ...(category && { "articleSection": category }),
+  ...(keywords.length > 0 && { "keywords": keywords.join(', ') })
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

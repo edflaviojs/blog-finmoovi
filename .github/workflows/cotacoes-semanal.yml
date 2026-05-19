@@ -1,0 +1,39 @@
+name: Cotações Semanal
+
+on:
+  schedule:
+    # 1x/semana: segunda às 7h (UTC-3 = 10h UTC)
+    - cron: '0 10 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gerar-cotacoes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gerar resumo semanal
+        env:
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          EXCHANGE_API_KEY: ${{ secrets.EXCHANGE_API_KEY }}
+        run: node src/scripts/automacoes/cotacoes-semanal.js
+
+      - name: Push changes
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git push

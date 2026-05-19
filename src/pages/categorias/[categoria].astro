@@ -1,0 +1,103 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import PostGrid from '@components/posts/PostGrid.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  const categories = [...new Set(posts.map(p => p.data.category))];
+
+  return categories.map(category => ({
+    params: { categoria: category },
+    props: {
+      category,
+      posts: posts
+        .filter(p => p.data.category === category)
+        .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime()),
+    },
+  }));
+}
+
+const { category, posts } = Astro.props;
+
+const categoryNames: Record<string, string> = {
+  dicas: 'Dicas Financeiras',
+  orcamento: 'Orçamento',
+  investimentos: 'Investimentos',
+  cotacoes: 'Cotações & Mercado',
+  ferramentas: 'Ferramentas',
+  glossario: 'Glossário',
+};
+
+const categoryName = categoryNames[category] || category;
+
+const postsForGrid = posts.map((post: any) => ({
+  title: post.data.title,
+  description: post.data.description,
+  image: post.data.image,
+  href: `/posts/${post.slug}`,
+  category: post.data.category,
+  date: post.data.publishedAt.toISOString(),
+  readingTime: post.data.readingTime,
+}));
+---
+
+<BaseLayout
+  title={`${categoryName} - Artigos e Dicas`}
+  description={`Todos os artigos sobre ${categoryName.toLowerCase()}. Dicas práticas e educação financeira.`}
+>
+  <Header />
+
+  <main class="category-page">
+    <div class="container">
+      <header class="category-header">
+        <a href="/" class="back-link">← Voltar</a>
+        <h1 class="category-title">{categoryName}</h1>
+        <p class="category-count">{posts.length} {posts.length === 1 ? 'artigo' : 'artigos'}</p>
+      </header>
+
+      <PostGrid posts={postsForGrid} columns={3} />
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .category-page {
+    padding: var(--space-8) 0 var(--space-16);
+  }
+
+  .category-header {
+    margin-bottom: var(--space-10);
+  }
+
+  .back-link {
+    display: inline-block;
+    color: var(--text-tertiary);
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-4);
+    transition: color var(--transition-fast);
+  }
+
+  .back-link:hover {
+    color: var(--accent-primary);
+  }
+
+  .category-title {
+    font-size: var(--text-4xl);
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-2);
+  }
+
+  .category-count {
+    color: var(--text-tertiary);
+    font-size: var(--text-sm);
+    margin-bottom: 0;
+  }
+</style>

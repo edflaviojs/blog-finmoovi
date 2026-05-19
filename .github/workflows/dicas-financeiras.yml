@@ -1,0 +1,38 @@
+name: Gerar Dicas Financeiras
+
+on:
+  schedule:
+    # 3x/semana: segunda, quarta, sexta às 6h (UTC-3 = 9h UTC)
+    - cron: '0 9 * * 1,3,5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gerar-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gerar post de dica financeira
+        env:
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+        run: node src/scripts/automacoes/gerar-dicas-financeiras.js
+
+      - name: Push changes
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git push

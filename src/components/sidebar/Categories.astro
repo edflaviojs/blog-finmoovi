@@ -1,0 +1,81 @@
+---
+const categories = [
+  { label: 'Dicas Financeiras', href: '/categorias/dicas', count: 24, color: 'var(--accent-primary)' },
+  { label: 'Orçamento', href: '/categorias/orcamento', count: 12, color: 'var(--accent-green)' },
+  { label: 'Investimentos', href: '/categorias/investimentos', count: 8, color: 'var(--accent-purple)' },
+  { label: 'Cotações', href: '/categorias/cotacoes', count: 15, color: 'var(--accent-yellow)' },
+  { label: 'Ferramentas', href: '/categorias/ferramentas', count: 6, color: 'var(--accent-red)' },
+];
+---
+
+<div class="sidebar-widget categories-widget">
+  <h4 class="widget-title">Categorias</h4>
+  <ul class="categories-list">
+    {categories.map(cat => (
+      <li>
+        <a href={cat.href} class="category-link">
+          <span class="category-dot" style={`background: ${cat.color}`}></span>
+          <span class="category-label">{cat.label}</span>
+          <span class="category-count">{cat.count}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<style>
+  .categories-widget {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+  }
+
+  .widget-title {
+    font-size: var(--text-base);
+    color: var(--text-primary);
+    margin-bottom: var(--space-4);
+  }
+
+  .categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .category-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    transition: background var(--transition-fast);
+  }
+
+  .category-link:hover {
+    background: var(--bg-tertiary);
+  }
+
+  .category-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: var(--radius-full);
+    flex-shrink: 0;
+  }
+
+  .category-label {
+    flex: 1;
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+  }
+
+  .category-link:hover .category-label {
+    color: var(--text-primary);
+  }
+
+  .category-count {
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+    font-family: var(--font-mono);
+  }
+</style>

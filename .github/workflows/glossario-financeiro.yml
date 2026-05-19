@@ -1,0 +1,38 @@
+name: Glossário Financeiro
+
+on:
+  schedule:
+    # 3x/semana: terça, quinta, sábado às 4h (UTC-3 = 7h UTC)
+    - cron: '0 7 * * 2,4,6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gerar-glossario:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gerar termo do glossário
+        env:
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+        run: node src/scripts/automacoes/glossario-auto.js
+
+      - name: Push changes
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git push

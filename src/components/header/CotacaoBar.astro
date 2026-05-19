@@ -1,0 +1,123 @@
+---
+// CotacaoBar — Ticker animado de cotações BRL/USD/EUR
+---
+
+<div class="cotacao-bar">
+  <div class="cotacao-ticker">
+    <div class="cotacao-track" aria-label="Cotações em tempo real">
+      <span class="cotacao-item">
+        <span class="cotacao-label">USD/BRL</span>
+        <span class="cotacao-value" data-pair="USDBRL">5.67</span>
+        <span class="cotacao-change positive">+0.12%</span>
+      </span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">EUR/BRL</span>
+        <span class="cotacao-value" data-pair="EURBRL">6.18</span>
+        <span class="cotacao-change negative">-0.08%</span>
+      </span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">BTC/USD</span>
+        <span class="cotacao-value" data-pair="BTCUSD">104,250</span>
+        <span class="cotacao-change positive">+2.3%</span>
+      </span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">IBOV</span>
+        <span class="cotacao-value" data-pair="IBOV">138,420</span>
+        <span class="cotacao-change positive">+0.45%</span>
+      </span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">SELIC</span>
+        <span class="cotacao-value" data-pair="SELIC">14.75%</span>
+      </span>
+      <!-- Duplicado para loop infinito -->
+      <span class="cotacao-item">
+        <span class="cotacao-label">USD/BRL</span>
+        <span class="cotacao-value">5.67</span>
+        <span class="cotacao-change positive">+0.12%</span>
+      </span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">EUR/BRL</span>
+        <span class="cotacao-value">6.18</span>
+        <span class="cotacao-change negative">-0.08%</span>
+      </span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">BTC/USD</span>
+        <span class="cotacao-value">104,250</span>
+        <span class="cotacao-change positive">+2.3%</span>
+      </span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">IBOV</span>
+        <span class="cotacao-value">138,420</span>
+        <span class="cotacao-change positive">+0.45%</span>
+      </span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">SELIC</span>
+        <span class="cotacao-value">14.75%</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .cotacao-bar {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-muted);
+    overflow: hidden;
+    height: 32px;
+    display: flex;
+    align-items: center;
+  }
+
+  .cotacao-ticker {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .cotacao-track {
+    display: flex;
+    gap: var(--space-8);
+    animation: ticker 30s linear infinite;
+    white-space: nowrap;
+  }
+
+  .cotacao-item {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-xs);
+  }
+
+  .cotacao-label {
+    color: var(--text-tertiary);
+    font-weight: 500;
+  }
+
+  .cotacao-value {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-family: var(--font-mono);
+  }
+
+  .cotacao-change {
+    font-size: 10px;
+    font-weight: 600;
+    font-family: var(--font-mono);
+  }
+
+  .cotacao-change.positive {
+    color: var(--accent-green);
+  }
+
+  .cotacao-change.negative {
+    color: var(--accent-red);
+  }
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .cotacao-bar:hover .cotacao-track {
+    animation-play-state: paused;
+  }
+</style>

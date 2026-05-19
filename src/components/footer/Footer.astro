@@ -1,0 +1,177 @@
+---
+const currentYear = new Date().getFullYear();
+
+const footerLinks = {
+  blog: [
+    { label: 'Dicas Financeiras', href: '/categorias/dicas' },
+    { label: 'Cotações', href: '/categorias/cotacoes' },
+    { label: 'Glossário', href: '/glossario' },
+    { label: 'Ferramentas', href: '/ferramentas' },
+  ],
+  app: [
+    { label: 'Baixar FinMoovi', href: '/app' },
+    { label: 'Funcionalidades', href: '/app#funcionalidades' },
+    { label: 'Preços', href: '/app#precos' },
+    { label: 'Suporte', href: '/app#suporte' },
+  ],
+  legal: [
+    { label: 'Privacidade', href: '/privacidade' },
+    { label: 'Termos de Uso', href: '/termos' },
+    { label: 'Cookies', href: '/cookies' },
+  ]
+};
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <span class="logo-icon">FM</span>
+          <span class="logo-text">FinMoovi<span class="logo-blog">Blog</span></span>
+        </a>
+        <p class="footer-description">
+          Dicas práticas de finanças pessoais para você organizar sua vida financeira e alcançar seus objetivos.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">Blog</h4>
+        <ul class="footer-list">
+          {footerLinks.blog.map(link => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">App</h4>
+        <ul class="footer-list">
+          {footerLinks.app.map(link => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">Legal</h4>
+        <ul class="footer-list">
+          {footerLinks.legal.map(link => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {currentYear} FinMoovi. Todos os direitos reservados.</p>
+      <p class="footer-disclaimer">
+        Este blog tem caráter educativo. Não constitui recomendação de investimento.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-default);
+    padding: var(--space-16) 0 var(--space-8);
+    margin-top: var(--space-20);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  @media (min-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    text-decoration: none;
+    margin-bottom: var(--space-4);
+  }
+
+  .footer-logo .logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--gradient-hero);
+    border-radius: var(--radius-md);
+    font-weight: 800;
+    font-size: var(--text-xs);
+    color: #fff;
+  }
+
+  .footer-logo .logo-text {
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .footer-logo .logo-blog {
+    color: var(--accent-primary);
+  }
+
+  .footer-description {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
+    max-width: 300px;
+  }
+
+  .footer-title {
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .footer-list a {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    transition: color var(--transition-fast);
+  }
+
+  .footer-list a:hover {
+    color: var(--accent-primary);
+  }
+
+  .footer-bottom {
+    margin-top: var(--space-12);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--border-muted);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    color: var(--text-tertiary);
+    font-size: var(--text-xs);
+    margin-bottom: 0;
+  }
+
+  .footer-disclaimer {
+    font-style: italic;
+  }
+</style>

@@ -1,0 +1,93 @@
+---
+---
+
+<div class="sidebar-widget cta-widget">
+  <div class="cta-badge">Grátis por 7 dias</div>
+  <h3 class="cta-title">Controle suas finanças com o FinMoovi</h3>
+  <p class="cta-description">
+    Multi-moeda, categorias inteligentes e relatórios visuais. Tudo no seu celular.
+  </p>
+  <ul class="cta-features">
+    <li>✓ Controle BRL, USD, EUR</li>
+    <li>✓ Categorização automática</li>
+    <li>✓ Relatórios e gráficos</li>
+    <li>✓ Funciona offline</li>
+  </ul>
+  <a href="/app" class="cta-button">
+    Experimentar Grátis
+  </a>
+</div>
+
+<style>
+  .cta-widget {
+    background: var(--gradient-card);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-widget::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-cta);
+  }
+
+  .cta-badge {
+    display: inline-block;
+    padding: 2px var(--space-3);
+    background: rgba(63, 185, 80, 0.15);
+    color: var(--accent-green);
+    border-radius: var(--radius-full);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+
+  .cta-title {
+    font-size: var(--text-lg);
+    color: var(--text-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .cta-description {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-4);
+  }
+
+  .cta-features {
+    margin-bottom: var(--space-5);
+  }
+
+  .cta-features li {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    padding: var(--space-1) 0;
+  }
+
+  .cta-button {
+    display: block;
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    background: var(--gradient-cta);
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    text-align: center;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+  }
+
+  .cta-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-glow);
+    color: #fff;
+  }
+</style>

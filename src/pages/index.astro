@@ -1,0 +1,221 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import PostGrid from '@components/posts/PostGrid.astro';
+import Sidebar from '@components/sidebar/Sidebar.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const sortedPosts = allPosts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const featuredPosts = sortedPosts.filter(p => p.data.featured);
+const recentPosts = sortedPosts.slice(0, 9);
+
+const postsForGrid = recentPosts.map(post => ({
+  title: post.data.title,
+  description: post.data.description,
+  image: post.data.image,
+  href: `/posts/${post.slug}`,
+  category: post.data.category,
+  date: post.data.publishedAt.toISOString(),
+  readingTime: post.data.readingTime,
+}));
+---
+
+<BaseLayout
+  title="FinMoovi Blog"
+  description="Dicas práticas de finanças pessoais, controle de gastos e educação financeira. Organize sua vida financeira com o FinMoovi."
+  keywords={['finanças pessoais', 'controle financeiro', 'educação financeira', 'orçamento', 'investimentos']}
+>
+  <Header />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Finanças pessoais<br />
+            <span class="hero-highlight">sem complicação</span>
+          </h1>
+          <p class="hero-description">
+            Dicas práticas, ferramentas gratuitas e educação financeira para você organizar sua vida e alcançar seus objetivos.
+          </p>
+          <div class="hero-actions">
+            <a href="/categorias/dicas" class="hero-btn primary">Ver Dicas</a>
+            <a href="/ferramentas" class="hero-btn secondary">Ferramentas Grátis</a>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">100+</span>
+            <span class="stat-label">Artigos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">15k+</span>
+            <span class="stat-label">Leitores/mês</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">5</span>
+            <span class="stat-label">Ferramentas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Posts -->
+    {featuredPosts.length > 0 && (
+      <section class="section featured-section">
+        <div class="container">
+          <h2 class="section-title">Destaques</h2>
+          <PostGrid posts={featuredPosts.slice(0, 3).map(post => ({
+            title: post.data.title,
+            description: post.data.description,
+            image: post.data.image,
+            href: `/posts/${post.slug}`,
+            category: post.data.category,
+            date: post.data.publishedAt.toISOString(),
+            readingTime: post.data.readingTime,
+          }))} columns={3} />
+        </div>
+      </section>
+    )}
+
+    <!-- Recent Posts + Sidebar -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Últimos Posts</h2>
+        <div class="layout-with-sidebar">
+          <div>
+            <PostGrid posts={postsForGrid} columns={2} />
+          </div>
+          <aside class="home-sidebar">
+            <Sidebar />
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* Hero */
+  .hero {
+    padding: var(--space-16) 0 var(--space-12);
+    border-bottom: 1px solid var(--border-muted);
+  }
+
+  .hero-content {
+    max-width: 700px;
+    margin-bottom: var(--space-10);
+  }
+
+  .hero-title {
+    font-size: var(--text-4xl);
+    line-height: 1.1;
+    margin-bottom: var(--space-6);
+  }
+
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: var(--text-5xl);
+    }
+  }
+
+  .hero-highlight {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-description {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    max-width: 550px;
+    margin-bottom: var(--space-8);
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .hero-btn {
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    transition: all var(--transition-fast);
+  }
+
+  .hero-btn.primary {
+    background: var(--gradient-cta);
+    color: #fff;
+  }
+
+  .hero-btn.primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .hero-btn.secondary {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-default);
+  }
+
+  .hero-btn.secondary:hover {
+    border-color: var(--accent-primary);
+    background: var(--bg-elevated);
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: var(--space-8);
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .stat-value {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+  }
+
+  .stat-label {
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+  }
+
+  /* Sections */
+  .section {
+    padding: var(--space-12) 0;
+  }
+
+  .section-title {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-8);
+  }
+
+  .home-sidebar {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .home-sidebar {
+      display: block;
+    }
+  }
+</style>

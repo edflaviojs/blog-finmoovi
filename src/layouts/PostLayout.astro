@@ -1,0 +1,154 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import Sidebar from '@components/sidebar/Sidebar.astro';
+import BannerFinMoovi from '@components/banners/BannerFinMoovi.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  publishedTime?: string;
+  author?: string;
+  keywords?: string[];
+  category?: string;
+  readingTime?: number;
+}
+
+const { title, description, image, publishedTime, author, keywords, category, readingTime } = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={image}
+  type="article"
+  publishedTime={publishedTime}
+  author={author}
+  keywords={keywords}
+>
+  <Header />
+
+  <main class="post-page">
+    <div class="container">
+      <div class="layout-with-sidebar">
+        <article class="post-article">
+          <header class="post-header">
+            {category && <span class="post-category">{category}</span>}
+            <h1 class="post-title">{title}</h1>
+            <div class="post-meta">
+              {author && <span class="post-author">Por {author}</span>}
+              {publishedTime && (
+                <time datetime={publishedTime}>
+                  {new Date(publishedTime).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
+                </time>
+              )}
+              {readingTime && <span class="post-reading-time">{readingTime} min de leitura</span>}
+            </div>
+          </header>
+
+          {image && (
+            <div class="post-cover">
+              <img src={image} alt={title} loading="eager" />
+            </div>
+          )}
+
+          <div class="post-content">
+            <slot />
+          </div>
+
+          <BannerFinMoovi />
+        </article>
+
+        <aside class="post-sidebar">
+          <Sidebar />
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .post-page {
+    padding: var(--space-8) 0 var(--space-16);
+  }
+
+  .post-article {
+    max-width: var(--container-content);
+  }
+
+  .post-header {
+    margin-bottom: var(--space-8);
+  }
+
+  .post-category {
+    display: inline-block;
+    padding: var(--space-1) var(--space-3);
+    background: rgba(88, 166, 255, 0.1);
+    color: var(--accent-primary);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-bottom: var(--space-4);
+  }
+
+  .post-title {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-4);
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  @media (min-width: 768px) {
+    .post-title {
+      font-size: var(--text-5xl);
+    }
+  }
+
+  .post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    color: var(--text-tertiary);
+    font-size: var(--text-sm);
+  }
+
+  .post-meta span::before,
+  .post-meta time::before {
+    content: '·';
+    margin-right: var(--space-2);
+  }
+
+  .post-meta span:first-child::before {
+    content: '';
+    margin-right: 0;
+  }
+
+  .post-cover {
+    margin-bottom: var(--space-8);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-default);
+  }
+
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  .post-sidebar {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .post-sidebar {
+      display: block;
+    }
+  }
+</style>

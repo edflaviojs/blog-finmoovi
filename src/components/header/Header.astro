@@ -1,0 +1,74 @@
+---
+import CotacaoBar from './CotacaoBar.astro';
+import Navigation from './Navigation.astro';
+import MobileMenu from './MobileMenu.astro';
+---
+
+<div class="header-wrapper">
+  <CotacaoBar />
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="FinMoovi Blog - Início">
+        <span class="logo-icon">FM</span>
+        <span class="logo-text">FinMoovi<span class="logo-blog">Blog</span></span>
+      </a>
+
+      <Navigation />
+      <MobileMenu />
+    </div>
+  </header>
+</div>
+
+<style>
+  .header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+  }
+
+  .header {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    text-decoration: none;
+  }
+
+  .logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--gradient-hero);
+    border-radius: var(--radius-md);
+    font-weight: 800;
+    font-size: var(--text-sm);
+    color: #fff;
+  }
+
+  .logo-text {
+    font-weight: 700;
+    font-size: var(--text-lg);
+    color: var(--text-primary);
+  }
+
+  .logo-blog {
+    color: var(--accent-primary);
+    margin-left: 2px;
+  }
+</style>

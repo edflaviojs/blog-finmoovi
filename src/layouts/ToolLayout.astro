@@ -1,0 +1,63 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <Header />
+
+  <main class="tool-page">
+    <div class="container">
+      <header class="tool-header">
+        <h1 class="tool-title">{title}</h1>
+        {description && <p class="tool-description">{description}</p>}
+      </header>
+
+      <div class="tool-content">
+        <slot />
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .tool-page {
+    padding: var(--space-8) 0 var(--space-16);
+  }
+
+  .tool-header {
+    text-align: center;
+    margin-bottom: var(--space-12);
+  }
+
+  .tool-title {
+    font-size: var(--text-4xl);
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4);
+  }
+
+  .tool-description {
+    color: var(--text-secondary);
+    font-size: var(--text-lg);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .tool-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+</style>

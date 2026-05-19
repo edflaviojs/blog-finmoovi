@@ -1,0 +1,56 @@
+---
+import PostCard from '../posts/PostCard.astro';
+
+interface Post {
+  title: string;
+  description: string;
+  href: string;
+  date?: string;
+}
+
+interface Props {
+  posts?: Post[];
+}
+
+const { posts = [] } = Astro.props;
+---
+
+<div class="related-posts">
+  <h3 class="related-title">Posts Relacionados</h3>
+  <div class="related-grid">
+    {posts.map(post => (
+      <PostCard {...post} />
+    ))}
+  </div>
+</div>
+
+<style>
+  .related-posts {
+    margin-top: var(--space-16);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--border-default);
+  }
+
+  .related-title {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-6);
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  @media (min-width: 640px) {
+    .related-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .related-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

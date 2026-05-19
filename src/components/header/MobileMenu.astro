@@ -1,0 +1,152 @@
+---
+const navItems = [
+  { label: 'Início', href: '/' },
+  { label: 'Dicas', href: '/categorias/dicas' },
+  { label: 'Ferramentas', href: '/ferramentas' },
+  { label: 'Glossário', href: '/glossario' },
+  { label: 'Sobre', href: '/sobre' },
+  { label: 'Baixar App', href: '/app', cta: true },
+];
+---
+
+<button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false" id="mobile-menu-toggle">
+  <span class="hamburger"></span>
+</button>
+
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <ul class="mobile-nav-list">
+      {navItems.map(item => (
+        <li>
+          <a href={item.href} class:list={['mobile-nav-link', { cta: item.cta }]}>
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</div>
+
+<script>
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+    menu?.setAttribute('aria-hidden', String(isOpen));
+    document.body.style.overflow = isOpen ? '' : 'hidden';
+  });
+</script>
+
+<style>
+  .mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    transition: background var(--transition-fast);
+  }
+
+  .mobile-toggle:hover {
+    background: var(--bg-tertiary);
+  }
+
+  @media (min-width: 768px) {
+    .mobile-toggle {
+      display: none;
+    }
+  }
+
+  .hamburger {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all var(--transition-fast);
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all var(--transition-fast);
+  }
+
+  .hamburger::before { top: -6px; }
+  .hamburger::after { top: 6px; }
+
+  [aria-expanded="true"] .hamburger {
+    background: transparent;
+  }
+
+  [aria-expanded="true"] .hamburger::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  [aria-expanded="true"] .hamburger::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 96px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-primary);
+    padding: var(--space-8);
+    transform: translateX(100%);
+    transition: transform var(--transition-base);
+    z-index: var(--z-modal);
+  }
+
+  .mobile-menu[aria-hidden="false"] {
+    transform: translateX(0);
+  }
+
+  @media (min-width: 768px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .mobile-nav-link {
+    display: block;
+    padding: var(--space-4);
+    color: var(--text-primary);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    border-radius: var(--radius-md);
+    transition: background var(--transition-fast);
+  }
+
+  .mobile-nav-link:hover {
+    background: var(--bg-secondary);
+  }
+
+  .mobile-nav-link.cta {
+    margin-top: var(--space-4);
+    background: var(--gradient-cta);
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+  }
+</style>

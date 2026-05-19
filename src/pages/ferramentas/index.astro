@@ -1,0 +1,143 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+---
+
+<BaseLayout
+  title="Ferramentas Financeiras Gratuitas"
+  description="Calculadoras e ferramentas gratuitas para organizar suas finanças. Simulador de juros, conversor de moedas e mais."
+  keywords={['calculadora financeira', 'simulador juros compostos', 'conversor moedas', 'ferramentas financeiras']}
+>
+  <Header />
+
+  <main class="ferramentas-page">
+    <div class="container">
+      <header class="ferramentas-header">
+        <h1 class="ferramentas-title">Ferramentas Financeiras</h1>
+        <p class="ferramentas-description">
+          Calculadoras e simuladores gratuitos para te ajudar a tomar melhores decisões financeiras.
+        </p>
+      </header>
+
+      <div class="ferramentas-grid">
+        <a href="/ferramentas/calculadora-juros" class="ferramenta-card">
+          <div class="ferramenta-icon">📈</div>
+          <h3 class="ferramenta-title">Calculadora de Juros Compostos</h3>
+          <p class="ferramenta-description">Simule quanto seu dinheiro pode render ao longo do tempo com juros compostos.</p>
+        </a>
+
+        <a href="/ferramentas/calculadora-orcamento" class="ferramenta-card">
+          <div class="ferramenta-icon">💰</div>
+          <h3 class="ferramenta-title">Calculadora de Orçamento</h3>
+          <p class="ferramenta-description">Monte seu orçamento usando a regra 50-30-20 de forma rápida e visual.</p>
+        </a>
+
+        <a href="/ferramentas/conversor-moedas" class="ferramenta-card">
+          <div class="ferramenta-icon">💱</div>
+          <h3 class="ferramenta-title">Conversor de Moedas</h3>
+          <p class="ferramenta-description">Converta entre BRL, USD, EUR e outras moedas com cotação atualizada.</p>
+        </a>
+
+        <a href="/ferramentas/simulador-investimento" class="ferramenta-card">
+          <div class="ferramenta-icon">🎯</div>
+          <h3 class="ferramenta-title">Simulador de Investimento</h3>
+          <p class="ferramenta-description">Descubra quanto precisa investir por mês para alcançar seu objetivo.</p>
+        </a>
+
+        <a href="/ferramentas/calculadora-emergencia" class="ferramenta-card">
+          <div class="ferramenta-icon">🛡️</div>
+          <h3 class="ferramenta-title">Calculadora de Reserva</h3>
+          <p class="ferramenta-description">Calcule o valor ideal da sua reserva de emergência baseado nos seus gastos.</p>
+        </a>
+
+        <a href="/ferramentas/comparador-cdb" class="ferramenta-card">
+          <div class="ferramenta-icon">🏦</div>
+          <h3 class="ferramenta-title">Comparador de CDB</h3>
+          <p class="ferramenta-description">Compare rendimentos de CDBs com diferentes taxas e prazos.</p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .ferramentas-page {
+    padding: var(--space-8) 0 var(--space-16);
+  }
+
+  .ferramentas-header {
+    text-align: center;
+    margin-bottom: var(--space-12);
+  }
+
+  .ferramentas-title {
+    font-size: var(--text-4xl);
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4);
+  }
+
+  .ferramentas-description {
+    color: var(--text-secondary);
+    font-size: var(--text-lg);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .ferramentas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  @media (min-width: 640px) {
+    .ferramentas-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .ferramentas-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .ferramenta-card {
+    display: block;
+    padding: var(--space-8);
+    background: var(--gradient-card);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-xl);
+    text-decoration: none;
+    transition: all var(--transition-base);
+  }
+
+  .ferramenta-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .ferramenta-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+  }
+
+  .ferramenta-title {
+    font-size: var(--text-lg);
+    color: var(--text-primary);
+    margin-bottom: var(--space-3);
+  }
+
+  .ferramenta-description {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    margin-bottom: 0;
+  }
+</style>

@@ -1,0 +1,256 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+---
+
+<BaseLayout
+  title="FinMoovi - Controle Financeiro Inteligente"
+  description="Organize suas finanças pessoais com o FinMoovi. Multi-moeda, categorização automática, relatórios visuais e funciona offline."
+  keywords={['app financeiro', 'controle de gastos', 'finanças pessoais', 'orçamento app']}
+>
+  <Header />
+
+  <main class="app-page">
+    <!-- Hero -->
+    <section class="app-hero">
+      <div class="container">
+        <div class="app-hero-content">
+          <span class="app-badge">Grátis por 7 dias</span>
+          <h1 class="app-title">
+            Suas finanças no<br />
+            <span class="app-highlight">piloto automático</span>
+          </h1>
+          <p class="app-description">
+            O FinMoovi organiza seus gastos, acompanha investimentos e te ajuda a alcançar objetivos financeiros. Multi-moeda, offline e inteligente.
+          </p>
+          <div class="app-actions">
+            <a href="https://finmoovi.com" class="app-btn primary" target="_blank" rel="noopener">
+              Começar Grátis
+            </a>
+            <a href="#funcionalidades" class="app-btn secondary">
+              Ver Funcionalidades
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="funcionalidades" class="app-features">
+      <div class="container">
+        <h2 class="section-title">Funcionalidades</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💱</div>
+            <h3>Multi-Moeda</h3>
+            <p>Controle gastos em BRL, USD, EUR e mais. Conversão automática com cotação atualizada.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏷️</div>
+            <h3>Categorização Inteligente</h3>
+            <p>O app aprende seus padrões e categoriza gastos automaticamente. Menos trabalho manual.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Relatórios Visuais</h3>
+            <p>Gráficos claros que mostram para onde vai seu dinheiro. Identifique padrões em segundos.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Funciona Offline</h3>
+            <p>Registre gastos mesmo sem internet. Sincroniza automaticamente quando conectar.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Metas Financeiras</h3>
+            <p>Defina objetivos e acompanhe o progresso. Alertas inteligentes te mantêm no caminho.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Seguro e Privado</h3>
+            <p>Seus dados ficam no seu dispositivo. Criptografia de ponta a ponta na sincronização.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="app-cta-section">
+      <div class="container">
+        <div class="app-cta-box">
+          <h2>Pronto para organizar suas finanças?</h2>
+          <p>Comece grátis. Sem cartão de crédito. Cancele quando quiser.</p>
+          <a href="https://finmoovi.com" class="app-btn primary" target="_blank" rel="noopener">
+            Criar Conta Grátis →
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .app-hero {
+    padding: var(--space-20) 0 var(--space-16);
+    text-align: center;
+  }
+
+  .app-hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .app-badge {
+    display: inline-block;
+    padding: var(--space-1) var(--space-4);
+    background: rgba(63, 185, 80, 0.15);
+    color: var(--accent-green);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-6);
+  }
+
+  .app-title {
+    font-size: var(--text-5xl);
+    line-height: 1.1;
+    margin-bottom: var(--space-6);
+  }
+
+  .app-highlight {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .app-description {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-8);
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .app-actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .app-btn {
+    padding: var(--space-4) var(--space-8);
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: var(--text-base);
+    transition: all var(--transition-fast);
+  }
+
+  .app-btn.primary {
+    background: var(--gradient-cta);
+    color: #fff;
+  }
+
+  .app-btn.primary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+    color: #fff;
+  }
+
+  .app-btn.secondary {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-default);
+  }
+
+  .app-btn.secondary:hover {
+    border-color: var(--accent-primary);
+  }
+
+  /* Features */
+  .app-features {
+    padding: var(--space-16) 0;
+    border-top: 1px solid var(--border-muted);
+  }
+
+  .section-title {
+    font-size: var(--text-3xl);
+    text-align: center;
+    margin-bottom: var(--space-10);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  @media (min-width: 640px) {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .features-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .feature-card {
+    padding: var(--space-6);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    transition: border-color var(--transition-fast);
+  }
+
+  .feature-card:hover {
+    border-color: var(--accent-primary);
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-4);
+  }
+
+  .feature-card h3 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-2);
+  }
+
+  .feature-card p {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-bottom: 0;
+  }
+
+  /* CTA */
+  .app-cta-section {
+    padding: var(--space-16) 0;
+  }
+
+  .app-cta-box {
+    text-align: center;
+    padding: var(--space-12);
+    background: var(--gradient-card);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-xl);
+  }
+
+  .app-cta-box h2 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .app-cta-box p {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-6);
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+import PostLayout from '@layouts/PostLayout.astro';
+import SchemaArticle from '@components/seo/SchemaArticle.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const canonicalURL = new URL(`/posts/${post.slug}`, Astro.site).toString();
+---
+
+<PostLayout
+  title={post.data.seo?.metaTitle || post.data.title}
+  description={post.data.seo?.metaDescription || post.data.description}
+  image={post.data.image}
+  publishedTime={post.data.publishedAt.toISOString()}
+  author={post.data.author}
+  keywords={post.data.seo?.keywords || post.data.tags}
+  category={post.data.category}
+  readingTime={post.data.readingTime}
+>
+  <SchemaArticle
+    title={post.data.title}
+    description={post.data.description}
+    image={post.data.image}
+    url={canonicalURL}
+    publishedTime={post.data.publishedAt.toISOString()}
+    author={post.data.author}
+    category={post.data.category}
+    keywords={post.data.tags}
+  />
+
+  <Content />
+</PostLayout>

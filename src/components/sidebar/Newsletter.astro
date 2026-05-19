@@ -1,0 +1,93 @@
+---
+---
+
+<div class="sidebar-widget newsletter-widget">
+  <h4 class="widget-title">Newsletter Semanal</h4>
+  <p class="widget-description">
+    Receba as melhores dicas de finanças toda semana no seu email.
+  </p>
+  <form class="newsletter-form" action="/api/newsletter" method="POST">
+    <input
+      type="email"
+      name="email"
+      placeholder="seu@email.com"
+      required
+      class="newsletter-input"
+      aria-label="Seu email"
+    />
+    <button type="submit" class="newsletter-button">
+      Inscrever
+    </button>
+  </form>
+  <p class="newsletter-privacy">Sem spam. Cancele quando quiser.</p>
+</div>
+
+<style>
+  .newsletter-widget {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+  }
+
+  .widget-title {
+    font-size: var(--text-base);
+    color: var(--text-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .widget-description {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-4);
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .newsletter-input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+    transition: border-color var(--transition-fast);
+  }
+
+  .newsletter-input::placeholder {
+    color: var(--text-tertiary);
+  }
+
+  .newsletter-input:focus {
+    border-color: var(--accent-primary);
+    outline: none;
+  }
+
+  .newsletter-button {
+    padding: var(--space-3);
+    background: var(--accent-primary);
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+  }
+
+  .newsletter-button:hover {
+    background: #4a9aef;
+    transform: translateY(-1px);
+  }
+
+  .newsletter-privacy {
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+    text-align: center;
+    margin-top: var(--space-2);
+    margin-bottom: 0;
+  }
+</style>
