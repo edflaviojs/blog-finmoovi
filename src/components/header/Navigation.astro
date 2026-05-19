@@ -1,10 +1,10 @@
 ---
 const navItems = [
-  { label: 'Início', href: '/' },
-  { label: 'Dicas', href: '/categorias/dicas' },
-  { label: 'Ferramentas', href: '/ferramentas' },
-  { label: 'Glossário', href: '/glossario' },
-  { label: 'Sobre', href: '/sobre' },
+  { label: 'nav.inicio', href: '/' },
+  { label: 'nav.dicas', href: '/categorias/dicas' },
+  { label: 'nav.ferramentas', href: '/ferramentas' },
+  { label: 'nav.glossario', href: '/glossario' },
+  { label: 'nav.sobre', href: '/sobre' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -17,6 +17,7 @@ const currentPath = Astro.url.pathname;
         <a
           href={item.href}
           class:list={['nav-link', { active: currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href)) }]}
+          data-i18n={item.label}
         >
           {item.label}
         </a>
@@ -24,7 +25,7 @@ const currentPath = Astro.url.pathname;
     ))}
   </ul>
 
-  <a href="/app" class="nav-cta">
+  <a href="/app" class="nav-cta" data-i18n="nav.baixarApp">
     Baixar App
   </a>
 </nav>

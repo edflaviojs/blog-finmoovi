@@ -27,10 +27,15 @@ const footerLinks = {
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" class="footer-logo">
-          <span class="logo-icon">FM</span>
+          <span class="logo-icon">
+            <svg width="16" height="16" viewBox="0 0 64 64" fill="none">
+              <path d="M12 44 L24 28 L34 38 L44 20 L52 28" stroke="url(#fLogoGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="fLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00F0FF"/><stop offset="100%" stop-color="#A91079"/></linearGradient></defs>
+            </svg>
+          </span>
           <span class="logo-text">FinMoovi<span class="logo-blog">Blog</span></span>
         </a>
-        <p class="footer-description">
+        <p class="footer-description" data-i18n="footer.desc">
           Dicas práticas de finanças pessoais para você organizar sua vida financeira e alcançar seus objetivos.
         </p>
       </div>
@@ -64,7 +69,7 @@ const footerLinks = {
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; {currentYear} FinMoovi. Todos os direitos reservados.</p>
+      <p data-i18n="footer.copyright">&copy; {currentYear} FinMoovi. Todos os direitos reservados.</p>
       <p class="footer-disclaimer">
         Este blog tem caráter educativo. Não constitui recomendação de investimento.
       </p>

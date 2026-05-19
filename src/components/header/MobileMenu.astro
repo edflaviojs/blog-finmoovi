@@ -1,11 +1,11 @@
 ---
 const navItems = [
-  { label: 'Início', href: '/' },
-  { label: 'Dicas', href: '/categorias/dicas' },
-  { label: 'Ferramentas', href: '/ferramentas' },
-  { label: 'Glossário', href: '/glossario' },
-  { label: 'Sobre', href: '/sobre' },
-  { label: 'Baixar App', href: '/app', cta: true },
+  { label: 'Início', href: '/', i18n: 'nav.inicio' },
+  { label: 'Dicas', href: '/categorias/dicas', i18n: 'nav.dicas' },
+  { label: 'Ferramentas', href: '/ferramentas', i18n: 'nav.ferramentas' },
+  { label: 'Glossário', href: '/glossario', i18n: 'nav.glossario' },
+  { label: 'Sobre', href: '/sobre', i18n: 'nav.sobre' },
+  { label: 'Baixar App', href: '/app', cta: true, i18n: 'nav.baixarApp' },
 ];
 ---
 
@@ -18,7 +18,7 @@ const navItems = [
     <ul class="mobile-nav-list">
       {navItems.map(item => (
         <li>
-          <a href={item.href} class:list={['mobile-nav-link', { cta: item.cta }]}>
+          <a href={item.href} class:list={['mobile-nav-link', { cta: item.cta }]} data-i18n={item.i18n}>
             {item.label}
           </a>
         </li>

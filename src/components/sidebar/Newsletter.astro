@@ -2,8 +2,8 @@
 ---
 
 <div class="sidebar-widget newsletter-widget">
-  <h4 class="widget-title">Newsletter Semanal</h4>
-  <p class="widget-description">
+  <h4 class="widget-title" data-i18n="sidebar.newsletter.title">Newsletter Semanal</h4>
+  <p class="widget-description" data-i18n="sidebar.newsletter.desc">
     Receba as melhores dicas de finanças toda semana no seu email.
   </p>
   <form class="newsletter-form" action="/api/newsletter" method="POST">
@@ -14,12 +14,13 @@
       required
       class="newsletter-input"
       aria-label="Seu email"
+      data-i18n="sidebar.newsletter.placeholder"
     />
-    <button type="submit" class="newsletter-button">
+    <button type="submit" class="newsletter-button" data-i18n="sidebar.newsletter.btn">
       Inscrever
     </button>
   </form>
-  <p class="newsletter-privacy">Sem spam. Cancele quando quiser.</p>
+  <p class="newsletter-privacy" data-i18n="cta.note">Sem spam. Cancele quando quiser.</p>
 </div>
 
 <style>
