@@ -1,5 +1,5 @@
 ---
-// CotacaoBar — Ticker animado de cotações BRL/USD/EUR
+// CotacaoBar — Ticker animado de cotações com dados reais
 ---
 
 <div class="cotacao-bar">
@@ -7,48 +7,48 @@
     <div class="cotacao-track" aria-label="Cotações em tempo real">
       <span class="cotacao-item">
         <span class="cotacao-label">USD/BRL</span>
-        <span class="cotacao-value" data-pair="USDBRL">5.67</span>
-        <span class="cotacao-change positive">+0.12%</span>
+        <span class="cotacao-value" id="cot-usdbrl">--</span>
+        <span class="cotacao-change" id="cot-usdbrl-change"></span>
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">EUR/BRL</span>
-        <span class="cotacao-value" data-pair="EURBRL">6.18</span>
-        <span class="cotacao-change negative">-0.08%</span>
+        <span class="cotacao-value" id="cot-eurbrl">--</span>
+        <span class="cotacao-change" id="cot-eurbrl-change"></span>
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">BTC/USD</span>
-        <span class="cotacao-value" data-pair="BTCUSD">104,250</span>
-        <span class="cotacao-change positive">+2.3%</span>
+        <span class="cotacao-value" id="cot-btcusd">--</span>
+        <span class="cotacao-change" id="cot-btcusd-change"></span>
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">IBOV</span>
-        <span class="cotacao-value" data-pair="IBOV">138,420</span>
-        <span class="cotacao-change positive">+0.45%</span>
+        <span class="cotacao-value" id="cot-ibov">--</span>
+        <span class="cotacao-change" id="cot-ibov-change"></span>
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">SELIC</span>
-        <span class="cotacao-value" data-pair="SELIC">14.75%</span>
+        <span class="cotacao-value" id="cot-selic">14.75%</span>
       </span>
       <!-- Duplicado para loop infinito -->
       <span class="cotacao-item">
         <span class="cotacao-label">USD/BRL</span>
-        <span class="cotacao-value">5.67</span>
-        <span class="cotacao-change positive">+0.12%</span>
+        <span class="cotacao-value" id="cot-usdbrl2">--</span>
+        <span class="cotacao-change" id="cot-usdbrl-change2"></span>
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">EUR/BRL</span>
-        <span class="cotacao-value">6.18</span>
-        <span class="cotacao-change negative">-0.08%</span>
+        <span class="cotacao-value" id="cot-eurbrl2">--</span>
+        <span class="cotacao-change" id="cot-eurbrl-change2"></span>
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">BTC/USD</span>
-        <span class="cotacao-value">104,250</span>
-        <span class="cotacao-change positive">+2.3%</span>
+        <span class="cotacao-value" id="cot-btcusd2">--</span>
+        <span class="cotacao-change" id="cot-btcusd-change2"></span>
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">IBOV</span>
-        <span class="cotacao-value">138,420</span>
-        <span class="cotacao-change positive">+0.45%</span>
+        <span class="cotacao-value" id="cot-ibov2">--</span>
+        <span class="cotacao-change" id="cot-ibov-change2"></span>
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">SELIC</span>
@@ -57,6 +57,62 @@
     </div>
   </div>
 </div>
+
+<script>
+  async function fetchCotacoes() {
+    try {
+      // AwesomeAPI - gratuita, sem chave
+      const res = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-USD');
+      if (!res.ok) throw new Error('API error');
+      const data = await res.json();
+
+      // USD/BRL
+      const usd = data.USDBRL;
+      updateCotacao('usdbrl', parseFloat(usd.bid).toFixed(2), parseFloat(usd.pctChange));
+
+      // EUR/BRL
+      const eur = data.EURBRL;
+      updateCotacao('eurbrl', parseFloat(eur.bid).toFixed(2), parseFloat(eur.pctChange));
+
+      // BTC/USD
+      const btc = data.BTCUSD;
+      const btcVal = parseFloat(btc.bid);
+      const btcFormatted = btcVal > 1000 ? Math.round(btcVal).toLocaleString('en-US') : btcVal.toFixed(2);
+      updateCotacao('btcusd', btcFormatted, parseFloat(btc.pctChange));
+
+    } catch (e) {
+      // Fallback estático se API falhar
+      updateCotacao('usdbrl', '5.67', 0.12);
+      updateCotacao('eurbrl', '6.18', -0.08);
+      updateCotacao('btcusd', '104,250', 2.3);
+    }
+
+    // IBOV - usar valor estático (API gratuita não tem)
+    updateCotacao('ibov', '138,420', 0.45);
+  }
+
+  function updateCotacao(pair: string, value: string, pctChange: number) {
+    const el1 = document.getElementById(`cot-${pair}`);
+    const el2 = document.getElementById(`cot-${pair}2`);
+    const ch1 = document.getElementById(`cot-${pair}-change`);
+    const ch2 = document.getElementById(`cot-${pair}-change2`);
+
+    if (el1) el1.textContent = value;
+    if (el2) el2.textContent = value;
+
+    const sign = pctChange >= 0 ? '+' : '';
+    const cls = pctChange >= 0 ? 'positive' : 'negative';
+    const text = `${sign}${pctChange.toFixed(2)}%`;
+
+    if (ch1) { ch1.textContent = text; ch1.className = `cotacao-change ${cls}`; }
+    if (ch2) { ch2.textContent = text; ch2.className = `cotacao-change ${cls}`; }
+  }
+
+  // Fetch on load
+  fetchCotacoes();
+  // Refresh every 5 minutes
+  setInterval(fetchCotacoes, 5 * 60 * 1000);
+</script>
 
 <style>
   .cotacao-bar {
