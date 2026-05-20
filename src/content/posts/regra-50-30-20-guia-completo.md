@@ -8,6 +8,8 @@ author: "FinMoovi"
 publishedAt: 2025-05-12
 readingTime: 6
 featured: true
+locale: "pt"
+translationKey: "50-30-20-rule"
 seo:
   metaTitle: "Regra 50-30-20: Guia Completo [Com Exemplos Reais]"
   metaDescription: "Aprenda a usar a regra 50-30-20 para organizar suas finanças. Exemplos práticos com salários de R$3.000 a R$10.000."

@@ -8,6 +8,8 @@ author: "FinMoovi"
 publishedAt: 2025-05-15
 readingTime: 7
 featured: true
+locale: "pt"
+translationKey: "personal-budget"
 seo:
   metaTitle: "Como Criar Orçamento Pessoal em 5 Passos [Guia 2025]"
   metaDescription: "Aprenda a criar um orçamento pessoal eficiente em 5 passos simples. Método prático para controlar gastos e economizar dinheiro."

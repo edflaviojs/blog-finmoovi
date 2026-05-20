@@ -4,7 +4,7 @@ import SchemaArticle from '@components/seo/SchemaArticle.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'pt');
+  const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'es');
   return posts.map(post => ({
     params: { slug: post.slug },
     props: { post },
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content, headings } = await post.render();
 
-const canonicalURL = new URL(`/posts/${post.slug}`, Astro.site).toString();
+const canonicalURL = new URL(`/es/posts/${post.slug}`, Astro.site).toString();
 ---
 
 <PostLayout

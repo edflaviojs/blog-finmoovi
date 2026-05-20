@@ -4,6 +4,10 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import Sidebar from '@components/sidebar/Sidebar.astro';
 import BannerFinMoovi from '@components/banners/BannerFinMoovi.astro';
+import ShareButtons from '@components/shared/ShareButtons.astro';
+import Breadcrumbs from '@components/shared/Breadcrumbs.astro';
+import TableOfContents from '@components/shared/TableOfContents.astro';
+import ReadingProgress from '@components/shared/ReadingProgress.astro';
 
 interface Props {
   title: string;
@@ -14,9 +18,15 @@ interface Props {
   keywords?: string[];
   category?: string;
   readingTime?: number;
+  headings?: { depth: number; slug: string; text: string }[];
 }
 
-const { title, description, image, publishedTime, author, keywords, category, readingTime } = Astro.props;
+const { title, description, image, publishedTime, author, keywords, category, readingTime, headings = [] } = Astro.props;
+const postUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const breadcrumbItems = [
+  ...(category ? [{ label: category, href: `/categorias/${category.toLowerCase()}` }] : []),
+  { label: title }
+];
 ---
 
 <BaseLayout
@@ -28,10 +38,12 @@ const { title, description, image, publishedTime, author, keywords, category, re
   author={author}
   keywords={keywords}
 >
+  <ReadingProgress />
   <Header />
 
   <main class="post-page">
     <div class="container">
+      <Breadcrumbs items={breadcrumbItems} />
       <div class="layout-with-sidebar">
         <article class="post-article">
           <header class="post-header">
@@ -46,6 +58,9 @@ const { title, description, image, publishedTime, author, keywords, category, re
               )}
               {readingTime && <span class="post-reading-time">{readingTime} min de leitura</span>}
             </div>
+            <div class="post-share-top">
+              <ShareButtons title={title} url={postUrl} />
+            </div>
           </header>
 
           {image && (
@@ -54,8 +69,14 @@ const { title, description, image, publishedTime, author, keywords, category, re
             </div>
           )}
 
+          <TableOfContents headings={headings} />
+
           <div class="post-content">
             <slot />
+          </div>
+
+          <div class="post-share-bottom">
+            <ShareButtons title={title} url={postUrl} />
           </div>
 
           <BannerFinMoovi />
@@ -127,6 +148,20 @@ const { title, description, image, publishedTime, author, keywords, category, re
   .post-meta span:first-child::before {
     content: '';
     margin-right: 0;
+  }
+
+  .post-share-top {
+    margin-top: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border-muted);
+  }
+
+  .post-share-bottom {
+    margin-top: var(--space-8);
+    padding: var(--space-6) 0;
+    border-top: 1px solid var(--border-muted);
+    border-bottom: 1px solid var(--border-muted);
+    margin-bottom: var(--space-8);
   }
 
   .post-cover {

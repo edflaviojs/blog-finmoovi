@@ -43,6 +43,12 @@ const fullTitle = title === 'FinMoovi Blog' ? title : `${title} | FinMoovi Blog`
   <link rel="canonical" href={canonicalURL} />
   {noindex && <meta name="robots" content="noindex, nofollow" />}
 
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="pt-BR" href={new URL(Astro.url.pathname, Astro.site)} />
+  <link rel="alternate" hreflang="en" href={new URL(`/en${Astro.url.pathname}`, Astro.site)} />
+  <link rel="alternate" hreflang="es" href={new URL(`/es${Astro.url.pathname}`, Astro.site)} />
+  <link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname, Astro.site)} />
+
   <!-- Open Graph -->
   <meta property="og:type" content={type} />
   <meta property="og:title" content={fullTitle} />

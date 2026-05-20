@@ -14,7 +14,9 @@ const posts = defineCollection({
     readingTime: z.number().optional(),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
-    translate: z.boolean().default(false),
+    translate: z.boolean().default(true),
+    locale: z.enum(['pt', 'en', 'es']).default('pt'),
+    translationKey: z.string().optional(),
     seo: z.object({
       metaTitle: z.string().optional(),
       metaDescription: z.string().optional(),
@@ -31,6 +33,8 @@ const glossario = defineCollection({
     category: z.enum(['basico', 'investimentos', 'credito', 'impostos', 'mercado']),
     relatedTerms: z.array(z.string()).default([]),
     publishedAt: z.coerce.date(),
+    locale: z.enum(['pt', 'en', 'es']).default('pt'),
+    translationKey: z.string().optional(),
   }),
 });
 

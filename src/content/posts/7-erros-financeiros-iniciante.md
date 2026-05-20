@@ -8,6 +8,8 @@ author: "FinMoovi"
 publishedAt: 2025-05-10
 readingTime: 5
 featured: false
+locale: "pt"
+translationKey: "7-financial-mistakes"
 seo:
   metaTitle: "7 Erros Financeiros de Iniciante [Como Evitar em 2025]"
   metaDescription: "Conheça os 7 erros financeiros mais comuns e aprenda a evitá-los. Dicas práticas para quem está começando a organizar as finanças."
