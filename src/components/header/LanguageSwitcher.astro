@@ -37,13 +37,24 @@ const langs = [
   // Pages that exist in all locales
   var i18nPaths = ['/', '/posts/'];
 
-  // Detect current language from URL
+  // Detect language: URL prefix takes priority, otherwise use saved preference
   var path = window.location.pathname;
-  var currentLang = 'pt';
-  if (path.startsWith('/en/') || path === '/en') currentLang = 'en';
-  else if (path.startsWith('/es/') || path === '/es') currentLang = 'es';
+  var urlLang = null;
+  if (path.startsWith('/en/') || path === '/en') urlLang = 'en';
+  else if (path.startsWith('/es/') || path === '/es') urlLang = 'es';
 
-  try { localStorage.setItem('fm-lang', currentLang); } catch(e) {}
+  var savedLang = null;
+  try { savedLang = localStorage.getItem('fm-lang'); } catch(e) {}
+
+  // Only overwrite localStorage if URL explicitly has a locale prefix
+  var currentLang;
+  if (urlLang) {
+    currentLang = urlLang;
+    try { localStorage.setItem('fm-lang', currentLang); } catch(e) {}
+  } else {
+    currentLang = savedLang || 'pt';
+  }
+
   updateLang(currentLang);
 
   if (toggle) toggle.addEventListener('click', function() {
