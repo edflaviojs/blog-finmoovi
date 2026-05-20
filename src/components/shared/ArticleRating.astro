@@ -1,0 +1,111 @@
+---
+interface Props {
+  postSlug: string;
+}
+const { postSlug } = Astro.props;
+---
+
+<div class="article-rating" id="article-rating">
+  <p class="rating-label" data-i18n="post.rateLabel">Este artigo foi útil?</p>
+  <div class="rating-stars" data-slug={postSlug}>
+    {[1, 2, 3, 4, 5].map(star => (
+      <button class="star-btn" data-value={star} aria-label={`${star} estrela${star > 1 ? 's' : ''}`}>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+      </button>
+    ))}
+  </div>
+  <p class="rating-thanks" id="rating-thanks"></p>
+</div>
+
+<script>
+  (function() {
+    var container = document.querySelector('.rating-stars');
+    if (!container) return;
+    var slug = container.getAttribute('data-slug');
+    var rated = localStorage.getItem('fm-rated-' + slug);
+
+    if (rated) {
+      highlightStars(parseInt(rated));
+      document.getElementById('rating-thanks').textContent = 'Obrigado pela avaliação!';
+      return;
+    }
+
+    var buttons = container.querySelectorAll('.star-btn');
+    buttons.forEach(function(btn) {
+      btn.addEventListener('mouseenter', function() {
+        highlightStars(parseInt(this.getAttribute('data-value')));
+      });
+      btn.addEventListener('mouseleave', function() {
+        var saved = localStorage.getItem('fm-rated-' + slug);
+        highlightStars(saved ? parseInt(saved) : 0);
+      });
+      btn.addEventListener('click', function() {
+        var val = parseInt(this.getAttribute('data-value'));
+        localStorage.setItem('fm-rated-' + slug, val);
+        highlightStars(val);
+        document.getElementById('rating-thanks').textContent = 'Obrigado pela avaliação!';
+      });
+    });
+
+    function highlightStars(count) {
+      buttons.forEach(function(btn, i) {
+        if (i < count) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    }
+  })();
+</script>
+
+<style>
+  .article-rating {
+    text-align: center;
+    padding: var(--space-6) 0;
+    margin-top: var(--space-6);
+    border-top: 1px solid var(--border-muted);
+  }
+
+  .rating-label {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-3);
+  }
+
+  .rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-1);
+  }
+
+  .star-btn {
+    color: var(--text-tertiary);
+    cursor: pointer;
+    transition: color var(--transition-fast), transform var(--transition-fast);
+    padding: 4px;
+    background: none;
+    border: none;
+  }
+
+  .star-btn:hover {
+    transform: scale(1.2);
+  }
+
+  .star-btn.active {
+    color: #d29922;
+  }
+
+  .star-btn.active svg {
+    fill: #d29922;
+  }
+
+  .rating-thanks {
+    font-size: var(--text-xs);
+    color: var(--accent-green);
+    margin-top: var(--space-2);
+    min-height: 1.2em;
+  }
+</style>

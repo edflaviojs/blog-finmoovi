@@ -1,0 +1,205 @@
+---
+---
+
+<div class="newsletter-popup" id="newsletter-popup" aria-hidden="true">
+  <div class="popup-backdrop" id="popup-backdrop"></div>
+  <div class="popup-content">
+    <button class="popup-close" id="popup-close" aria-label="Fechar">&times;</button>
+    <div class="popup-icon">📬</div>
+    <h3 class="popup-title" data-i18n="popup.title">Não perca nenhuma dica!</h3>
+    <p class="popup-desc" data-i18n="popup.desc">
+      Receba as melhores dicas de finanças pessoais toda semana. Grátis.
+    </p>
+    <form class="popup-form" id="popup-form">
+      <input
+        type="email"
+        name="email"
+        placeholder="seu@email.com"
+        required
+        class="popup-input"
+        id="popup-email"
+      />
+      <button type="submit" class="popup-btn" data-i18n="popup.btn">Quero receber!</button>
+    </form>
+    <p class="popup-message" id="popup-message"></p>
+    <p class="popup-privacy" data-i18n="popup.privacy">Sem spam. Cancele quando quiser.</p>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var popup = document.getElementById('newsletter-popup');
+    var shown = sessionStorage.getItem('fm-popup-shown');
+    if (shown || !popup) return;
+
+    var triggered = false;
+    window.addEventListener('scroll', function() {
+      if (triggered) return;
+      var scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      if (scrollPercent >= 60) {
+        triggered = true;
+        popup.classList.add('visible');
+        popup.setAttribute('aria-hidden', 'false');
+        sessionStorage.setItem('fm-popup-shown', '1');
+      }
+    }, { passive: true });
+
+    document.getElementById('popup-close')?.addEventListener('click', function() {
+      popup.classList.remove('visible');
+      popup.setAttribute('aria-hidden', 'true');
+    });
+
+    document.getElementById('popup-backdrop')?.addEventListener('click', function() {
+      popup.classList.remove('visible');
+      popup.setAttribute('aria-hidden', 'true');
+    });
+
+    document.getElementById('popup-form')?.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var email = document.getElementById('popup-email').value.trim();
+      var msg = document.getElementById('popup-message');
+      if (!email) return;
+
+      try {
+        var res = await fetch('/api/newsletter', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email })
+        });
+        var data = await res.json();
+        if (res.ok) {
+          msg.textContent = data.message || 'Inscrito!';
+          msg.className = 'popup-message success';
+          setTimeout(function() {
+            popup.classList.remove('visible');
+          }, 2000);
+        } else {
+          msg.textContent = data.error || 'Erro. Tente novamente.';
+          msg.className = 'popup-message error';
+        }
+      } catch (err) {
+        msg.textContent = 'Erro de conexão.';
+        msg.className = 'popup-message error';
+      }
+    });
+  })();
+</script>
+
+<style>
+  .newsletter-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-base);
+  }
+
+  .newsletter-popup.visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .popup-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+  }
+
+  .popup-content {
+    position: relative;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    transform: translateY(20px);
+    transition: transform var(--transition-base);
+  }
+
+  .newsletter-popup.visible .popup-content {
+    transform: translateY(0);
+  }
+
+  .popup-close {
+    position: absolute;
+    top: var(--space-3);
+    right: var(--space-4);
+    font-size: 24px;
+    color: var(--text-tertiary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .popup-close:hover { color: var(--text-primary); }
+
+  .popup-icon { font-size: 40px; margin-bottom: var(--space-3); }
+
+  .popup-title {
+    font-size: var(--text-xl);
+    color: var(--text-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .popup-desc {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-5);
+  }
+
+  .popup-form {
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .popup-input {
+    flex: 1;
+    padding: var(--space-3) var(--space-4);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+  }
+
+  .popup-input:focus {
+    border-color: var(--accent-primary);
+    outline: none;
+  }
+
+  .popup-btn {
+    padding: var(--space-3) var(--space-5);
+    background: var(--gradient-cta);
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    border-radius: var(--radius-md);
+    white-space: nowrap;
+    transition: opacity var(--transition-fast);
+  }
+
+  .popup-btn:hover { opacity: 0.9; }
+
+  .popup-message {
+    font-size: var(--text-xs);
+    margin-top: var(--space-2);
+    min-height: 1.2em;
+  }
+
+  .popup-message.success { color: var(--accent-green); }
+  .popup-message.error { color: var(--accent-red); }
+
+  .popup-privacy {
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+    margin-top: var(--space-3);
+  }
+</style>

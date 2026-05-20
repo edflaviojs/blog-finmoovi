@@ -1,0 +1,53 @@
+---
+interface Props {
+  term?: string;
+}
+const { term } = Astro.props;
+---
+
+<section class="comments-section">
+  <h3 class="comments-title" data-i18n="post.comments">Comentários</h3>
+  <div id="giscus-container">
+    <script
+      src="https://giscus.app/client.js"
+      data-repo="edflaviojs/blog-finmoovi"
+      data-repo-id=""
+      data-category="Comments"
+      data-category-id=""
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="dark_dimmed"
+      data-lang="pt"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </div>
+  <p class="comments-note" data-i18n="post.commentsNote">
+    Comentários via GitHub Discussions. Faça login com sua conta GitHub para participar.
+  </p>
+</section>
+
+<style>
+  .comments-section {
+    margin-top: var(--space-12);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--border-muted);
+  }
+
+  .comments-title {
+    font-size: var(--text-xl);
+    color: var(--text-primary);
+    margin-bottom: var(--space-6);
+  }
+
+  .comments-note {
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+    margin-top: var(--space-4);
+    text-align: center;
+  }
+</style>
