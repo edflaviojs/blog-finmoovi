@@ -24,7 +24,8 @@ const { postSlug } = Astro.props;
     var container = document.querySelector('.rating-stars');
     if (!container) return;
     var slug = container.getAttribute('data-slug');
-    var rated = localStorage.getItem('fm-rated-' + slug);
+    var rated = null;
+    try { rated = localStorage.getItem('fm-rated-' + slug); } catch(e) {}
 
     if (rated) {
       highlightStars(parseInt(rated));
@@ -38,12 +39,13 @@ const { postSlug } = Astro.props;
         highlightStars(parseInt(this.getAttribute('data-value')));
       });
       btn.addEventListener('mouseleave', function() {
-        var saved = localStorage.getItem('fm-rated-' + slug);
+        var saved = null;
+        try { saved = localStorage.getItem('fm-rated-' + slug); } catch(e) {}
         highlightStars(saved ? parseInt(saved) : 0);
       });
       btn.addEventListener('click', function() {
         var val = parseInt(this.getAttribute('data-value'));
-        localStorage.setItem('fm-rated-' + slug, val);
+        try { localStorage.setItem('fm-rated-' + slug, val); } catch(e) {}
         highlightStars(val);
         document.getElementById('rating-thanks').textContent = 'Obrigado pela avaliação!';
       });

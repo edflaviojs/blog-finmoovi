@@ -29,7 +29,8 @@
 <script>
   (function() {
     var popup = document.getElementById('newsletter-popup');
-    var shown = sessionStorage.getItem('fm-popup-shown');
+    var shown = false;
+    try { shown = !!sessionStorage.getItem('fm-popup-shown'); } catch(e) {}
     if (shown || !popup) return;
 
     var triggered = false;
@@ -40,7 +41,7 @@
         triggered = true;
         popup.classList.add('visible');
         popup.setAttribute('aria-hidden', 'false');
-        sessionStorage.setItem('fm-popup-shown', '1');
+        try { sessionStorage.setItem('fm-popup-shown', '1'); } catch(e) {}
       }
     }, { passive: true });
 
