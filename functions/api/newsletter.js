@@ -1,8 +1,12 @@
 export async function onRequestPost(context) {
   const { request, env } = context;
 
+  const allowedOrigins = ['https://blog.finmoovi.com', 'https://blog-finmoovi.pages.dev', 'http://localhost:4321'];
+  const origin = request.headers.get('Origin') || '';
+  const corsOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
+
   const corsHeaders = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': corsOrigin,
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Content-Type': 'application/json'
@@ -24,7 +28,8 @@ export async function onRequestPost(context) {
     if (kv) {
       const existing = await kv.get(email);
       if (existing) {
-        return new Response(JSON.stringify({ message: 'Você já está inscrito!' }), {
+        // Don't reveal if email exists - return same success message
+        return new Response(JSON.stringify({ message: 'Inscrito com sucesso! Verifique seu email.' }), {
           status: 200,
           headers: corsHeaders
         });
@@ -69,11 +74,16 @@ export async function onRequestPost(context) {
   }
 }
 
-export async function onRequestOptions() {
+export async function onRequestOptions(context) {
+  const { request } = context;
+  const allowedOrigins = ['https://blog.finmoovi.com', 'https://blog-finmoovi.pages.dev', 'http://localhost:4321'];
+  const origin = request.headers.get('Origin') || '';
+  const corsOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
+
   return new Response(null, {
     status: 204,
     headers: {
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': corsOrigin,
       'Access-Control-Allow-Methods': 'POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type'
     }

@@ -3,29 +3,43 @@ interface Props {
   term?: string;
 }
 const { term } = Astro.props;
+// To enable Giscus:
+// 1. Enable GitHub Discussions on the blog-finmoovi repo
+// 2. Create a "Comments" category
+// 3. Go to https://giscus.app and get your repo-id and category-id
+// 4. Fill them below
+const GISCUS_REPO_ID = '';
+const GISCUS_CATEGORY_ID = '';
+const giscusEnabled = GISCUS_REPO_ID && GISCUS_CATEGORY_ID;
 ---
 
 <section class="comments-section">
   <h3 class="comments-title" data-i18n="post.comments">Comentários</h3>
-  <div id="giscus-container">
-    <script
-      src="https://giscus.app/client.js"
-      data-repo="edflaviojs/blog-finmoovi"
-      data-repo-id=""
-      data-category="Comments"
-      data-category-id=""
-      data-mapping="pathname"
-      data-strict="0"
-      data-reactions-enabled="1"
-      data-emit-metadata="0"
-      data-input-position="top"
-      data-theme="dark_dimmed"
-      data-lang="pt"
-      data-loading="lazy"
-      crossorigin="anonymous"
-      async
-    ></script>
-  </div>
+  {giscusEnabled ? (
+    <div id="giscus-container">
+      <script
+        src="https://giscus.app/client.js"
+        data-repo="edflaviojs/blog-finmoovi"
+        data-repo-id={GISCUS_REPO_ID}
+        data-category="Comments"
+        data-category-id={GISCUS_CATEGORY_ID}
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark_dimmed"
+        data-lang="pt"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+      ></script>
+    </div>
+  ) : (
+    <p class="comments-placeholder">
+      Comentários serão ativados em breve. Volte depois!
+    </p>
+  )}
   <p class="comments-note" data-i18n="post.commentsNote">
     Comentários via GitHub Discussions. Faça login com sua conta GitHub para participar.
   </p>
@@ -49,5 +63,14 @@ const { term } = Astro.props;
     color: var(--text-tertiary);
     margin-top: var(--space-4);
     text-align: center;
+  }
+
+  .comments-placeholder {
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+    text-align: center;
+    padding: var(--space-8) 0;
+    border: 1px dashed var(--border-default);
+    border-radius: var(--radius-md);
   }
 </style>

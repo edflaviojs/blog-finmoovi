@@ -79,17 +79,30 @@
       updateCotacao('btcusd', '104,250', 0);
     }
 
-    // Brapi.dev - IBOV (gratuita, sem chave, 15min delay)
+    // Brapi.dev - IBOV (requer token para CORS, usar com token gratuito)
     try {
-      const res = await fetch('https://brapi.dev/api/quote/%5EBVSP');
+      const res = await fetch('https://brapi.dev/api/quote/%5EBVSP?token=demo');
       if (res.ok) {
         const data = await res.json();
-        const ibov = data.results[0];
-        const val = Math.round(ibov.regularMarketPrice).toLocaleString('pt-BR');
-        updateCotacao('ibov', val, ibov.regularMarketChangePercent);
+        if (data.results && data.results[0]) {
+          const ibov = data.results[0];
+          const val = Math.round(ibov.regularMarketPrice).toLocaleString('pt-BR');
+          updateCotacao('ibov', val, ibov.regularMarketChangePercent);
+        }
       }
     } catch (e) {
-      updateCotacao('ibov', '138.420', 0);
+      // Fallback: tentar AwesomeAPI para IBOV
+      try {
+        const res2 = await fetch('https://economia.awesomeapi.com.br/last/IBOV');
+        if (res2.ok) {
+          const data2 = await res2.json();
+          if (data2.IBOV) {
+            updateCotacao('ibov', parseFloat(data2.IBOV.bid).toLocaleString('pt-BR', {maximumFractionDigits: 0}), parseFloat(data2.IBOV.pctChange || 0));
+          }
+        }
+      } catch (e2) {
+        updateCotacao('ibov', '138.420', 0);
+      }
     }
 
     // Banco Central do Brasil - SELIC (API oficial, gratuita)

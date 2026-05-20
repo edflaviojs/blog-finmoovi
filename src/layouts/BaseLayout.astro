@@ -26,10 +26,24 @@ const {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(image, Astro.site);
 const fullTitle = title === 'FinMoovi Blog' ? title : `${title} | FinMoovi Blog`;
+
+// i18n: detect current locale and compute base path
+const path = Astro.url.pathname;
+let currentLocale = 'pt';
+let basePath = path;
+if (basePath.startsWith('/en/')) { currentLocale = 'en'; basePath = basePath.slice(3); }
+else if (basePath.startsWith('/es/')) { currentLocale = 'es'; basePath = basePath.slice(3); }
+else if (basePath === '/en') { currentLocale = 'en'; basePath = '/'; }
+else if (basePath === '/es') { currentLocale = 'es'; basePath = '/'; }
+
+const htmlLang = currentLocale === 'pt' ? 'pt-BR' : currentLocale === 'es' ? 'es' : 'en';
+const hrefPt = new URL(basePath, Astro.site).toString();
+const hrefEn = new URL('/en' + (basePath === '/' ? '' : basePath), Astro.site).toString();
+const hrefEs = new URL('/es' + (basePath === '/' ? '' : basePath), Astro.site).toString();
 ---
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang={htmlLang}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,10 +58,10 @@ const fullTitle = title === 'FinMoovi Blog' ? title : `${title} | FinMoovi Blog`
   {noindex && <meta name="robots" content="noindex, nofollow" />}
 
   <!-- hreflang -->
-  <link rel="alternate" hreflang="pt-BR" href={new URL(Astro.url.pathname, Astro.site)} />
-  <link rel="alternate" hreflang="en" href={new URL(`/en${Astro.url.pathname}`, Astro.site)} />
-  <link rel="alternate" hreflang="es" href={new URL(`/es${Astro.url.pathname}`, Astro.site)} />
-  <link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname, Astro.site)} />
+  <link rel="alternate" hreflang="pt-BR" href={hrefPt} />
+  <link rel="alternate" hreflang="en" href={hrefEn} />
+  <link rel="alternate" hreflang="es" href={hrefEs} />
+  <link rel="alternate" hreflang="x-default" href={hrefPt} />
 
   <!-- Open Graph -->
   <meta property="og:type" content={type} />
@@ -83,6 +97,6 @@ const fullTitle = title === 'FinMoovi Blog' ? title : `${title} | FinMoovi Blog`
 </head>
 <body>
   <slot />
-  <script src="/scripts/i18n.js" defer></script>
+  <script is:inline src="/scripts/i18n.js" defer></script>
 </body>
 </html>
