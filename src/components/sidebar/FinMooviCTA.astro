@@ -1,7 +1,7 @@
 ---
 ---
 
-<div class="sidebar-widget cta-widget">
+<a href="https://finmoovi.com" target="_blank" rel="noopener noreferrer" class="sidebar-widget cta-widget">
   <div class="cta-badge" data-i18n="cta.badge">App Gratuito</div>
   <h3 class="cta-title" data-i18n="cta.title">Organize suas finanças com o FinMoovi</h3>
   <p class="cta-description" data-i18n="cta.desc">
@@ -13,20 +13,28 @@
     <li data-i18n="cta.feature3">✓ Relatórios inteligentes</li>
     <li data-i18n="cta.feature4">✓ 100% offline e seguro</li>
   </ul>
-  <a href="/app" class="cta-button" data-i18n="cta.btn">
+  <span class="cta-button" data-i18n="cta.btn">
     Experimentar Grátis — 7 dias
-  </a>
+  </span>
   <p class="cta-note" data-i18n="cta.note">Sem cartão de crédito. Cancele quando quiser.</p>
-</div>
+</a>
 
 <style>
   .cta-widget {
+    display: block;
     background: var(--gradient-card);
     border: 1px solid var(--border-default);
     border-radius: var(--radius-lg);
     padding: var(--space-6);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    text-decoration: none;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .cta-widget:hover {
+    border-color: var(--accent-green);
+    box-shadow: 0 0 20px rgba(63, 185, 80, 0.1);
   }
 
   .cta-widget::before {
@@ -37,6 +45,7 @@
     right: 0;
     height: 3px;
     background: var(--gradient-cta);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }
 
   .cta-badge {
@@ -87,11 +96,10 @@
     transition: all var(--transition-fast);
   }
 
-  .cta-button:hover {
+  .cta-widget:hover .cta-button {
     opacity: 0.9;
     transform: translateY(-1px);
     box-shadow: var(--shadow-glow);
-    color: #fff;
   }
 
   .cta-note {

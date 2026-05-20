@@ -21,6 +21,11 @@ import FinMooviCTA from './FinMooviCTA.astro';
     top: 110px;
     max-height: calc(100vh - 130px);
     overflow-y: auto;
+    overflow-x: visible;
+  }
+
+  .sidebar > :first-child {
+    flex-shrink: 0;
   }
 
   .sidebar::-webkit-scrollbar {

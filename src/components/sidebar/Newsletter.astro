@@ -6,22 +6,65 @@
   <p class="widget-description" data-i18n="sidebar.newsletter.desc">
     Receba as melhores dicas de finanças toda semana no seu email.
   </p>
-  <form class="newsletter-form" action="/api/newsletter" method="POST">
+  <form class="newsletter-form" id="newsletter-form">
     <input
       type="email"
       name="email"
       placeholder="seu@email.com"
       required
       class="newsletter-input"
+      id="newsletter-email"
       aria-label="Seu email"
-      data-i18n="sidebar.newsletter.placeholder"
+      data-i18n-placeholder="sidebar.newsletter.placeholder"
     />
-    <button type="submit" class="newsletter-button" data-i18n="sidebar.newsletter.btn">
+    <button type="submit" class="newsletter-button" id="newsletter-btn" data-i18n="sidebar.newsletter.btn">
       Inscrever
     </button>
   </form>
-  <p class="newsletter-privacy" data-i18n="cta.note">Sem spam. Cancele quando quiser.</p>
+  <p class="newsletter-message" id="newsletter-message"></p>
+  <p class="newsletter-privacy" data-i18n="sidebar.newsletter.privacy">Sem spam. Cancele quando quiser.</p>
 </div>
+
+<script>
+  document.getElementById('newsletter-form')?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var btn = document.getElementById('newsletter-btn');
+    var msg = document.getElementById('newsletter-message');
+    var email = document.getElementById('newsletter-email').value.trim();
+
+    if (!email) return;
+
+    btn.disabled = true;
+    btn.textContent = '...';
+    msg.textContent = '';
+    msg.className = 'newsletter-message';
+
+    try {
+      var res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email })
+      });
+
+      var data = await res.json();
+
+      if (res.ok) {
+        msg.textContent = data.message || 'Inscrito com sucesso!';
+        msg.className = 'newsletter-message success';
+        document.getElementById('newsletter-email').value = '';
+      } else {
+        msg.textContent = data.error || 'Erro ao inscrever. Tente novamente.';
+        msg.className = 'newsletter-message error';
+      }
+    } catch (err) {
+      msg.textContent = 'Erro de conexão. Tente novamente.';
+      msg.className = 'newsletter-message error';
+    }
+
+    btn.disabled = false;
+    btn.textContent = 'Inscrever';
+  });
+</script>
 
 <style>
   .newsletter-widget {
@@ -82,6 +125,28 @@
   .newsletter-button:hover {
     background: #4a9aef;
     transform: translateY(-1px);
+  }
+
+  .newsletter-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .newsletter-message {
+    font-size: var(--text-xs);
+    text-align: center;
+    margin-top: var(--space-2);
+    margin-bottom: 0;
+    min-height: 1.2em;
+  }
+
+  .newsletter-message.success {
+    color: var(--accent-green);
+  }
+
+  .newsletter-message.error {
+    color: var(--accent-red);
   }
 
   .newsletter-privacy {

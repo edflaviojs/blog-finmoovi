@@ -71,6 +71,9 @@ const fullTitle = title === 'FinMoovi Blog' ? title : `${title} | FinMoovi Blog`
   <!-- PWA -->
   <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#0d1117" />
+
+  <!-- Theme (must load before body to prevent flash) -->
+  <script is:inline src="/scripts/theme.js"></script>
 </head>
 <body>
   <slot />

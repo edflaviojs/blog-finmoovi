@@ -52,7 +52,7 @@
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">SELIC</span>
-        <span class="cotacao-value">14.75%</span>
+        <span class="cotacao-value" id="cot-selic2">14.75%</span>
       </span>
     </div>
   </div>
@@ -60,57 +60,71 @@
 
 <script>
   async function fetchCotacoes() {
+    // AwesomeAPI - USD, EUR, BTC (gratuita, sem chave)
     try {
-      // AwesomeAPI - gratuita, sem chave
       const res = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-USD');
-      if (!res.ok) throw new Error('API error');
-      const data = await res.json();
-
-      // USD/BRL
-      const usd = data.USDBRL;
-      updateCotacao('usdbrl', parseFloat(usd.bid).toFixed(2), parseFloat(usd.pctChange));
-
-      // EUR/BRL
-      const eur = data.EURBRL;
-      updateCotacao('eurbrl', parseFloat(eur.bid).toFixed(2), parseFloat(eur.pctChange));
-
-      // BTC/USD
-      const btc = data.BTCUSD;
-      const btcVal = parseFloat(btc.bid);
-      const btcFormatted = btcVal > 1000 ? Math.round(btcVal).toLocaleString('en-US') : btcVal.toFixed(2);
-      updateCotacao('btcusd', btcFormatted, parseFloat(btc.pctChange));
-
+      if (res.ok) {
+        const data = await res.json();
+        const usd = data.USDBRL;
+        updateCotacao('usdbrl', parseFloat(usd.bid).toFixed(2), parseFloat(usd.pctChange));
+        const eur = data.EURBRL;
+        updateCotacao('eurbrl', parseFloat(eur.bid).toFixed(2), parseFloat(eur.pctChange));
+        const btc = data.BTCUSD;
+        const btcVal = parseFloat(btc.bid);
+        updateCotacao('btcusd', btcVal > 1000 ? Math.round(btcVal).toLocaleString('en-US') : btcVal.toFixed(2), parseFloat(btc.pctChange));
+      }
     } catch (e) {
-      // Fallback estático se API falhar
-      updateCotacao('usdbrl', '5.67', 0.12);
-      updateCotacao('eurbrl', '6.18', -0.08);
-      updateCotacao('btcusd', '104,250', 2.3);
+      updateCotacao('usdbrl', '5.67', 0);
+      updateCotacao('eurbrl', '6.18', 0);
+      updateCotacao('btcusd', '104,250', 0);
     }
 
-    // IBOV - usar valor estático (API gratuita não tem)
-    updateCotacao('ibov', '138,420', 0.45);
+    // Brapi.dev - IBOV (gratuita, sem chave, 15min delay)
+    try {
+      const res = await fetch('https://brapi.dev/api/quote/%5EBVSP');
+      if (res.ok) {
+        const data = await res.json();
+        const ibov = data.results[0];
+        const val = Math.round(ibov.regularMarketPrice).toLocaleString('pt-BR');
+        updateCotacao('ibov', val, ibov.regularMarketChangePercent);
+      }
+    } catch (e) {
+      updateCotacao('ibov', '138.420', 0);
+    }
+
+    // Banco Central do Brasil - SELIC (API oficial, gratuita)
+    try {
+      const res = await fetch('https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json');
+      if (res.ok) {
+        const data = await res.json();
+        const selic = parseFloat(data[0].valor).toFixed(2);
+        const el1 = document.getElementById('cot-selic');
+        const el2 = document.getElementById('cot-selic2');
+        if (el1) el1.textContent = selic + '%';
+        if (el2) el2.textContent = selic + '%';
+      }
+    } catch (e) { /* mantém valor estático */ }
   }
 
-  function updateCotacao(pair: string, value: string, pctChange: number) {
-    const el1 = document.getElementById(`cot-${pair}`);
-    const el2 = document.getElementById(`cot-${pair}2`);
-    const ch1 = document.getElementById(`cot-${pair}-change`);
-    const ch2 = document.getElementById(`cot-${pair}-change2`);
+  function updateCotacao(pair, value, pctChange) {
+    const el1 = document.getElementById('cot-' + pair);
+    const el2 = document.getElementById('cot-' + pair + '2');
+    const ch1 = document.getElementById('cot-' + pair + '-change');
+    const ch2 = document.getElementById('cot-' + pair + '-change2');
 
     if (el1) el1.textContent = value;
     if (el2) el2.textContent = value;
 
-    const sign = pctChange >= 0 ? '+' : '';
-    const cls = pctChange >= 0 ? 'positive' : 'negative';
-    const text = `${sign}${pctChange.toFixed(2)}%`;
-
-    if (ch1) { ch1.textContent = text; ch1.className = `cotacao-change ${cls}`; }
-    if (ch2) { ch2.textContent = text; ch2.className = `cotacao-change ${cls}`; }
+    if (pctChange !== undefined && pctChange !== null) {
+      var sign = pctChange >= 0 ? '+' : '';
+      var cls = pctChange >= 0 ? 'positive' : 'negative';
+      var text = sign + pctChange.toFixed(2) + '%';
+      if (ch1) { ch1.textContent = text; ch1.className = 'cotacao-change ' + cls; }
+      if (ch2) { ch2.textContent = text; ch2.className = 'cotacao-change ' + cls; }
+    }
   }
 
-  // Fetch on load
   fetchCotacoes();
-  // Refresh every 5 minutes
   setInterval(fetchCotacoes, 5 * 60 * 1000);
 </script>
 
