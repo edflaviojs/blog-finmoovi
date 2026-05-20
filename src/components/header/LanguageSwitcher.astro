@@ -28,47 +28,55 @@ const langs = [
 </div>
 
 <script>
-  const toggle = document.getElementById('lang-toggle');
-  const dropdown = document.getElementById('lang-dropdown');
-  const currentFlag = document.getElementById('lang-current-flag');
-  const options = document.querySelectorAll('.lang-option');
-  const checks = document.querySelectorAll('.lang-check');
+  var toggle = document.getElementById('lang-toggle');
+  var dropdown = document.getElementById('lang-dropdown');
+  var currentFlag = document.getElementById('lang-current-flag');
+  var options = document.querySelectorAll('.lang-option');
+  var checks = document.querySelectorAll('.lang-check');
+
+  // Pages that exist in all locales
+  var i18nPaths = ['/', '/posts/'];
 
   // Detect current language from URL
-  const path = window.location.pathname;
-  let currentLang = 'pt';
+  var path = window.location.pathname;
+  var currentLang = 'pt';
   if (path.startsWith('/en/') || path === '/en') currentLang = 'en';
   else if (path.startsWith('/es/') || path === '/es') currentLang = 'es';
 
-  // Also check localStorage for UI translations
-  localStorage.setItem('fm-lang', currentLang);
+  try { localStorage.setItem('fm-lang', currentLang); } catch(e) {}
   updateLang(currentLang);
 
-  toggle?.addEventListener('click', () => {
-    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+  if (toggle) toggle.addEventListener('click', function() {
+    var isOpen = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!isOpen));
-    dropdown?.setAttribute('aria-hidden', String(isOpen));
+    if (dropdown) dropdown.setAttribute('aria-hidden', String(isOpen));
   });
 
-  options.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.getAttribute('data-lang') || 'pt';
-      localStorage.setItem('fm-lang', lang);
-      toggle?.setAttribute('aria-expanded', 'false');
-      dropdown?.setAttribute('aria-hidden', 'true');
+  options.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.getAttribute('data-lang') || 'pt';
+      try { localStorage.setItem('fm-lang', lang); } catch(e) {}
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      if (dropdown) dropdown.setAttribute('aria-hidden', 'true');
 
-      // Navigate to the correct locale route
-      const currentPath = window.location.pathname;
-      let basePath = currentPath;
+      var currentPath = window.location.pathname;
+      var basePath = currentPath;
 
       // Strip existing locale prefix
       if (basePath.startsWith('/en/')) basePath = basePath.slice(3);
       else if (basePath.startsWith('/es/')) basePath = basePath.slice(3);
       else if (basePath === '/en' || basePath === '/es') basePath = '/';
 
-      // Build new path
-      let newPath;
-      if (lang === 'pt') {
+      // Only navigate if the target page exists in the target locale
+      var canNavigate = i18nPaths.some(function(p) {
+        return basePath === p || basePath.startsWith(p);
+      });
+
+      var newPath;
+      if (!canNavigate) {
+        // Redirect to locale homepage instead of 404
+        newPath = lang === 'pt' ? '/' : '/' + lang;
+      } else if (lang === 'pt') {
         newPath = basePath || '/';
       } else {
         newPath = '/' + lang + (basePath === '/' ? '' : basePath);
@@ -80,19 +88,19 @@ const langs = [
     });
   });
 
-  document.addEventListener('click', (e) => {
-    const switcher = document.getElementById('lang-switcher');
-    if (switcher && !switcher.contains(e.target as Node)) {
-      toggle?.setAttribute('aria-expanded', 'false');
-      dropdown?.setAttribute('aria-hidden', 'true');
+  document.addEventListener('click', function(e) {
+    var switcher = document.getElementById('lang-switcher');
+    if (switcher && !switcher.contains(e.target)) {
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      if (dropdown) dropdown.setAttribute('aria-hidden', 'true');
     }
   });
 
-  function updateLang(lang: string) {
-    const flags: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸' };
+  function updateLang(lang) {
+    var flags = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸' };
     if (currentFlag) currentFlag.textContent = flags[lang] || '🇧🇷';
-    checks.forEach(c => {
-      (c as HTMLElement).style.display = c.getAttribute('data-check') === lang ? 'inline' : 'none';
+    checks.forEach(function(c) {
+      c.style.display = c.getAttribute('data-check') === lang ? 'inline' : 'none';
     });
     document.documentElement.setAttribute('data-lang', lang);
   }

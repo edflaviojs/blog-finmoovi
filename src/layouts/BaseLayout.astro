@@ -40,6 +40,10 @@ const htmlLang = currentLocale === 'pt' ? 'pt-BR' : currentLocale === 'es' ? 'es
 const hrefPt = new URL(basePath, Astro.site).toString();
 const hrefEn = new URL('/en' + (basePath === '/' ? '' : basePath), Astro.site).toString();
 const hrefEs = new URL('/es' + (basePath === '/' ? '' : basePath), Astro.site).toString();
+
+// Only emit hreflang for pages that exist in all locales (index and posts)
+const hasI18nVersion = basePath === '/' || basePath.startsWith('/posts/');
+const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es_ES' : 'en_US';
 ---
 
 <!DOCTYPE html>
@@ -58,10 +62,14 @@ const hrefEs = new URL('/es' + (basePath === '/' ? '' : basePath), Astro.site).t
   {noindex && <meta name="robots" content="noindex, nofollow" />}
 
   <!-- hreflang -->
-  <link rel="alternate" hreflang="pt-BR" href={hrefPt} />
-  <link rel="alternate" hreflang="en" href={hrefEn} />
-  <link rel="alternate" hreflang="es" href={hrefEs} />
-  <link rel="alternate" hreflang="x-default" href={hrefPt} />
+  {hasI18nVersion && (
+    <>
+      <link rel="alternate" hreflang="pt-BR" href={hrefPt} />
+      <link rel="alternate" hreflang="en" href={hrefEn} />
+      <link rel="alternate" hreflang="es" href={hrefEs} />
+      <link rel="alternate" hreflang="x-default" href={hrefPt} />
+    </>
+  )}
 
   <!-- Open Graph -->
   <meta property="og:type" content={type} />
@@ -70,7 +78,7 @@ const hrefEs = new URL('/es' + (basePath === '/' ? '' : basePath), Astro.site).t
   <meta property="og:image" content={ogImage} />
   <meta property="og:url" content={canonicalURL} />
   <meta property="og:site_name" content="FinMoovi Blog" />
-  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:locale" content={ogLocale} />
   {publishedTime && <meta property="article:published_time" content={publishedTime} />}
 
   <!-- Twitter -->
