@@ -111,11 +111,9 @@ const footerLinks = {
     justify-content: center;
     width: 32px;
     height: 32px;
-    background: var(--gradient-hero);
+    background: #0d1117;
+    border: 1px solid rgba(0, 240, 255, 0.2);
     border-radius: var(--radius-md);
-    font-weight: 800;
-    font-size: var(--text-xs);
-    color: #fff;
   }
 
   .footer-logo .logo-text {
@@ -124,7 +122,11 @@ const footerLinks = {
   }
 
   .footer-logo .logo-blog {
-    color: var(--accent-primary);
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 2px;
   }
 
   .footer-description {

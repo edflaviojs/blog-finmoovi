@@ -34,9 +34,15 @@ const langs = [
   const options = document.querySelectorAll('.lang-option');
   const checks = document.querySelectorAll('.lang-check');
 
-  // Load saved language
-  const saved = localStorage.getItem('fm-lang') || 'pt';
-  updateLang(saved);
+  // Detect current language from URL
+  const path = window.location.pathname;
+  let currentLang = 'pt';
+  if (path.startsWith('/en/') || path === '/en') currentLang = 'en';
+  else if (path.startsWith('/es/') || path === '/es') currentLang = 'es';
+
+  // Also check localStorage for UI translations
+  localStorage.setItem('fm-lang', currentLang);
+  updateLang(currentLang);
 
   toggle?.addEventListener('click', () => {
     const isOpen = toggle.getAttribute('aria-expanded') === 'true';
@@ -47,10 +53,30 @@ const langs = [
   options.forEach(btn => {
     btn.addEventListener('click', () => {
       const lang = btn.getAttribute('data-lang') || 'pt';
-      updateLang(lang);
       localStorage.setItem('fm-lang', lang);
       toggle?.setAttribute('aria-expanded', 'false');
       dropdown?.setAttribute('aria-hidden', 'true');
+
+      // Navigate to the correct locale route
+      const currentPath = window.location.pathname;
+      let basePath = currentPath;
+
+      // Strip existing locale prefix
+      if (basePath.startsWith('/en/')) basePath = basePath.slice(3);
+      else if (basePath.startsWith('/es/')) basePath = basePath.slice(3);
+      else if (basePath === '/en' || basePath === '/es') basePath = '/';
+
+      // Build new path
+      let newPath;
+      if (lang === 'pt') {
+        newPath = basePath || '/';
+      } else {
+        newPath = '/' + lang + (basePath === '/' ? '' : basePath);
+      }
+
+      if (newPath !== currentPath) {
+        window.location.href = newPath;
+      }
     });
   });
 
