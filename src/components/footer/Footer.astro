@@ -3,21 +3,21 @@ const currentYear = new Date().getFullYear();
 
 const footerLinks = {
   blog: [
-    { label: 'Dicas Financeiras', href: '/categorias/dicas' },
-    { label: 'Cotações', href: '/categorias/cotacoes' },
-    { label: 'Glossário', href: '/glossario' },
-    { label: 'Ferramentas', href: '/ferramentas' },
+    { label: 'Dicas Financeiras', href: '/categorias/dicas', i18n: 'footer.link.dicas' },
+    { label: 'Cotações', href: '/categorias/cotacoes', i18n: 'footer.link.cotacoes' },
+    { label: 'Glossário', href: '/glossario', i18n: 'footer.link.glossario' },
+    { label: 'Ferramentas', href: '/ferramentas', i18n: 'footer.link.ferramentas' },
   ],
   app: [
-    { label: 'Baixar FinMoovi', href: '/app' },
-    { label: 'Funcionalidades', href: '/app#funcionalidades' },
-    { label: 'Preços', href: '/app#precos' },
-    { label: 'Suporte', href: '/app#suporte' },
+    { label: 'Baixar FinMoovi', href: '/app', i18n: 'footer.link.baixar' },
+    { label: 'Funcionalidades', href: '/app#funcionalidades', i18n: 'footer.link.funcionalidades' },
+    { label: 'Preços', href: '/app#precos', i18n: 'footer.link.precos' },
+    { label: 'Suporte', href: '/app#suporte', i18n: 'footer.link.suporte' },
   ],
   legal: [
-    { label: 'Privacidade', href: '/privacidade' },
-    { label: 'Termos de Uso', href: '/termos' },
-    { label: 'Cookies', href: '/cookies' },
+    { label: 'Privacidade', href: '/privacidade', i18n: 'footer.link.privacidade' },
+    { label: 'Termos de Uso', href: '/termos', i18n: 'footer.link.termos' },
+    { label: 'Cookies', href: '/cookies', i18n: 'footer.link.cookies' },
   ]
 };
 ---
@@ -41,28 +41,28 @@ const footerLinks = {
       </div>
 
       <div class="footer-section">
-        <h4 class="footer-title">Blog</h4>
+        <h4 class="footer-title" data-i18n="footer.blog">Blog</h4>
         <ul class="footer-list">
           {footerLinks.blog.map(link => (
-            <li><a href={link.href}>{link.label}</a></li>
+            <li><a href={link.href} data-i18n={link.i18n}>{link.label}</a></li>
           ))}
         </ul>
       </div>
 
       <div class="footer-section">
-        <h4 class="footer-title">App</h4>
+        <h4 class="footer-title" data-i18n="footer.app">App</h4>
         <ul class="footer-list">
           {footerLinks.app.map(link => (
-            <li><a href={link.href}>{link.label}</a></li>
+            <li><a href={link.href} data-i18n={link.i18n}>{link.label}</a></li>
           ))}
         </ul>
       </div>
 
       <div class="footer-section">
-        <h4 class="footer-title">Legal</h4>
+        <h4 class="footer-title" data-i18n="footer.legal">Legal</h4>
         <ul class="footer-list">
           {footerLinks.legal.map(link => (
-            <li><a href={link.href}>{link.label}</a></li>
+            <li><a href={link.href} data-i18n={link.i18n}>{link.label}</a></li>
           ))}
         </ul>
       </div>
@@ -70,7 +70,7 @@ const footerLinks = {
 
     <div class="footer-bottom">
       <p data-i18n="footer.copyright">&copy; {currentYear} FinMoovi. Todos os direitos reservados.</p>
-      <p class="footer-disclaimer">
+      <p class="footer-disclaimer" data-i18n="footer.disclaimer">
         Este blog tem caráter educativo. Não constitui recomendação de investimento.
       </p>
     </div>
