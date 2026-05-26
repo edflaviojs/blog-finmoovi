@@ -32,7 +32,7 @@ export async function generateText(prompt, options = {}) {
       messages: [
         {
           role: 'system',
-          content: 'Você é um especialista em finanças pessoais e educação financeira no Brasil. Escreva conteúdo otimizado para SEO, informativo e prático. Use linguagem acessível mas profissional. Sempre inclua exemplos com valores em Reais (R$).'
+          content: `Você é um redator experiente de finanças pessoais que escreve para brasileiros comuns. Seu estilo é direto, prático e conversacional — como se estivesse explicando para um amigo. Nunca use estruturas genéricas de IA como "Introdução", "Conclusão", "Neste artigo vamos explorar". Nunca comece com "Você já se perguntou" ou "No mundo atual". Vá direto ao ponto. Use exemplos reais com valores em Reais. Escreva como um blog de verdade, não como um artigo acadêmico.`
         },
         {
           role: 'user',
@@ -62,19 +62,41 @@ export async function generateBlogPost(topic, options = {}) {
     keywords = [],
   } = options;
 
+  const ctaVariations = [
+    'Quer colocar isso em prática? [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e veja como é fácil controlar suas finanças com categorização automática e relatórios visuais.',
+    'Pronto para organizar suas finanças? [Experimente o FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.',
+    'Quer sair da teoria? [Baixe o FinMoovi grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.',
+    'Cansado de planilha? [Teste o FinMoovi grátis](https://finmoovi.com) e controle seus gastos com IA, multi-moeda e relatórios que fazem sentido.',
+    'Quer ver isso funcionando na prática? [Comece grátis com o FinMoovi](https://finmoovi.com) — 7 dias para organizar suas finanças sem complicação.',
+    'O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu dinheiro está indo de verdade.',
+  ];
+
+  const ctaIndex = Math.floor(Math.random() * ctaVariations.length);
+  const selectedCta = ctaVariations[ctaIndex];
+
   const textPrompt = `
 Escreva um artigo de blog sobre: "${topic}"
 
-Requisitos:
-- Título SEO otimizado (50-60 caracteres, keyword no início)
+REGRAS DE ESTILO (obrigatórias):
+- NÃO use "Introdução" ou "Conclusão" como títulos de seção
+- NÃO comece com frases genéricas tipo "Você já se perguntou", "No cenário atual", "Neste artigo"
+- Comece direto com o conteúdo, como se estivesse no meio de uma conversa
+- Use tom conversacional mas informativo — como um amigo que entende de finanças
+- Inclua pelo menos uma "Dica prática" destacada com negrito (ex: **Dica prática:** ...)
+- Use exemplos com valores reais em R$ (salários de R$3.000 a R$8.000, gastos do dia a dia)
+- Pode usar listas, mas não abuse — alterne com parágrafos densos
+- Headers H2 devem ser frases curtas e diretas, não perguntas genéricas
+- O último H2 deve ser "Comece hoje" com um parágrafo motivacional curto e direto
+- Após o último parágrafo, inclua esta CTA exata (com a linha horizontal antes):
+
+---
+
+**${selectedCta}**
+
+ESTRUTURA:
+- Título SEO (50-60 caracteres, keyword no início)
 - Meta descrição (150-160 caracteres)
-- Conteúdo com 800-1200 palavras
-- Use headers H2 e H3 para estruturar
-- Inclua exemplos práticos com valores em R$
-- Inclua uma tabela ou lista quando relevante
-- Mencione naturalmente o FinMoovi como solução (1-2 vezes no meio do texto)
-- CTA final incentivando a testar o FinMoovi
-- Tom: educativo, prático, acessível
+- Conteúdo com 800-1200 palavras, 4-6 seções com H2
 - Keywords para SEO: ${keywords.join(', ')}
 
 Formato de saída (use exatamente este formato):
