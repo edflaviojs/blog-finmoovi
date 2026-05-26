@@ -272,15 +272,20 @@ observer.observe(document.documentElement, { attributes: true, attributeFilter: 
 function rewriteLinks(lang) {
   if (lang === 'pt') return;
   const prefix = '/' + lang;
-  const navPaths = ['/', '/sobre', '/glossario', '/ferramentas', '/categorias'];
+  const navPaths = ['/', '/sobre', '/glossario', '/ferramentas'];
   document.querySelectorAll('a[href]').forEach(a => {
     const href = a.getAttribute('href');
     if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:')) return;
     if (href.startsWith('/en/') || href.startsWith('/es/') || href === '/en' || href === '/es') return;
     if (href.startsWith('/app')) return;
+    // Rewrite nav links that have locale versions
     const isNavLink = navPaths.some(p => href === p || href.startsWith(p + '/'));
     if (isNavLink) {
       a.setAttribute('href', prefix + href);
+    }
+    // Redirect /categorias/* to locale homepage (no locale version exists)
+    if (href.startsWith('/categorias')) {
+      a.setAttribute('href', prefix);
     }
   });
 }

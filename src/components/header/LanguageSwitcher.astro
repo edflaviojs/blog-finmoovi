@@ -34,8 +34,8 @@ const langs = [
   var options = document.querySelectorAll('.lang-option');
   var checks = document.querySelectorAll('.lang-check');
 
-  // Pages that exist in all locales
-  var i18nPaths = ['/', '/posts/', '/sobre', '/glossario', '/ferramentas'];
+  // Pages that exist in all locales (exact match or prefix for listings)
+  var i18nPages = ['/', '/sobre', '/glossario', '/ferramentas'];
 
   // Detect language: URL prefix takes priority, otherwise use saved preference
   var path = window.location.pathname;
@@ -82,13 +82,13 @@ const langs = [
       if (basePath.length > 1 && basePath.endsWith('/')) basePath = basePath.slice(0, -1);
 
       // Only navigate if the target page exists in the target locale
-      var canNavigate = i18nPaths.some(function(p) {
-        return basePath === p || basePath.startsWith(p);
+      var canNavigate = i18nPages.some(function(p) {
+        return basePath === p;
       });
 
       var newPath;
       if (!canNavigate) {
-        // Redirect to locale homepage instead of 404
+        // For posts and other pages without direct translation, go to locale homepage
         newPath = lang === 'pt' ? '/' : '/' + lang;
       } else if (lang === 'pt') {
         newPath = basePath || '/';

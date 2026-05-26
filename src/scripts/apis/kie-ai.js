@@ -1,7 +1,6 @@
 /**
- * Groq API Wrapper
- * Handles text generation for blog posts
- * Groq uses OpenAI-compatible API format
+ * Groq API Wrapper + Pollinations Image Generation
+ * Handles text generation for blog posts and cover image generation
  */
 
 const GROQ_API_BASE = 'https://api.groq.com/openai/v1';
@@ -9,6 +8,16 @@ const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
 if (!GROQ_API_KEY) {
   throw new Error('GROQ_API_KEY environment variable is required. Configure it in GitHub Secrets.');
+}
+
+/**
+ * Generate cover image using Pollinations.ai (free, no API key needed)
+ */
+export async function generateImage(topic) {
+  const prompt = encodeURIComponent(
+    `Modern minimalist blog cover illustration about ${topic}, dark background with blue and purple gradient accents, professional financial theme, clean flat design, no text, no letters, abstract geometric shapes`
+  );
+  return `https://image.pollinations.ai/prompt/${prompt}?width=1200&height=630&nologo=true`;
 }
 
 /**
@@ -54,7 +63,7 @@ export async function generateText(prompt, options = {}) {
 }
 
 /**
- * Generate a complete blog post (text only, no image)
+ * Generate a complete blog post (text + cover image)
  */
 export async function generateBlogPost(topic, options = {}) {
   const {
@@ -114,10 +123,13 @@ Formato de saída (use exatamente este formato):
 
   const parsed = parsePostContent(textResult);
 
+  // Generate cover image via Pollinations
+  const imageUrl = generateImage(topic);
+
   return {
     ...parsed,
     category,
-    image: '',
+    image: imageUrl,
   };
 }
 

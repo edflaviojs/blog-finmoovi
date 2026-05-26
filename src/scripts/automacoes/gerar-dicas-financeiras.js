@@ -1,7 +1,7 @@
 /**
  * Gerador de Dicas Financeiras
  * Executa via GitHub Actions 3x/semana (seg, qua, sex às 6h)
- * Gera um post completo com texto + imagem via Kie.AI
+ * Gera um post completo com texto + imagem de capa via Groq + Pollinations
  */
 
 import { generateBlogPost } from '../apis/kie-ai.js';
@@ -10,6 +10,7 @@ import { join } from 'path';
 import { execSync } from 'child_process';
 
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
+const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 
 // Topics pool — rotates through these
 const TOPICS = [
@@ -53,7 +54,7 @@ async function main() {
     });
 
     if (!post.title || !post.content) {
-      throw new Error('API retornou post vazio ou incompleto. Verifique se KIE_API_KEY está válida.');
+      throw new Error('API retornou post vazio ou incompleto. Verifique se GROQ_API_KEY está válida.');
     }
 
     console.log(`✅ Post gerado: ${post.title}`);
@@ -69,11 +70,35 @@ async function main() {
 
     const today = new Date().toISOString().split('T')[0];
 
+    // Download and save cover image from Pollinations
+    let imagePath = '';
+    if (post.image) {
+      try {
+        console.log('🖼️ Gerando imagem de capa...');
+        const imageResponse = await fetch(post.image);
+        if (imageResponse.ok) {
+          const imageBuffer = Buffer.from(await imageResponse.arrayBuffer());
+          const imageFilename = `${slug}.jpg`;
+          const imageFullPath = join(IMAGES_DIR, imageFilename);
+
+          if (!existsSync(IMAGES_DIR)) {
+            mkdirSync(IMAGES_DIR, { recursive: true });
+          }
+
+          writeFileSync(imageFullPath, imageBuffer);
+          imagePath = `/images/posts/${imageFilename}`;
+          console.log(`🖼️ Imagem salva: ${imagePath}`);
+        }
+      } catch (imgErr) {
+        console.warn('⚠️ Falha ao salvar imagem, continuando sem capa:', imgErr.message);
+      }
+    }
+
     // Create frontmatter
     const frontmatter = `---
 title: "${post.title.replace(/"/g, '\\"')}"
 description: "${post.meta.replace(/"/g, '\\"')}"
-image: ""
+image: "${imagePath}"
 category: "dicas"
 tags: ${JSON.stringify(post.keywords || [topic, 'finanças pessoais'])}
 author: "FinMoovi"
@@ -98,7 +123,11 @@ ${post.content}
     console.log(`📄 Post salvo: ${postPath}`);
 
     // Git commit
-    execSync(`git add "${postPath}"`, { stdio: 'inherit' });
+    const filesToAdd = [postPath];
+    if (imagePath) {
+      filesToAdd.push(join(process.cwd(), 'public', imagePath));
+    }
+    execSync(`git add ${filesToAdd.map(f => `"${f}"`).join(' ')}`, { stdio: 'inherit' });
     execSync(`git commit -m "post: ${post.title.substring(0, 50)}"`, { stdio: 'inherit' });
 
     console.log('✅ Commit criado com sucesso!');
