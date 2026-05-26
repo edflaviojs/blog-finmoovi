@@ -54,6 +54,10 @@ async function main() {
       includeImage: true,
     });
 
+    if (!post.title || !post.content) {
+      throw new Error('API retornou post vazio ou incompleto. Verifique se KIE_API_KEY está válida.');
+    }
+
     console.log(`✅ Post gerado: ${post.title}`);
 
     // Create slug from title

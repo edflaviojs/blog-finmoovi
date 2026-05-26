@@ -35,7 +35,7 @@ const langs = [
   var checks = document.querySelectorAll('.lang-check');
 
   // Pages that exist in all locales
-  var i18nPaths = ['/', '/posts/'];
+  var i18nPaths = ['/', '/posts/', '/sobre', '/glossario', '/ferramentas'];
 
   // Detect language: URL prefix takes priority, otherwise use saved preference
   var path = window.location.pathname;
@@ -77,6 +77,9 @@ const langs = [
       if (basePath.startsWith('/en/')) basePath = basePath.slice(3);
       else if (basePath.startsWith('/es/')) basePath = basePath.slice(3);
       else if (basePath === '/en' || basePath === '/es') basePath = '/';
+
+      // Normalize trailing slash
+      if (basePath.length > 1 && basePath.endsWith('/')) basePath = basePath.slice(0, -1);
 
       // Only navigate if the target page exists in the target locale
       var canNavigate = i18nPaths.some(function(p) {
@@ -152,11 +155,11 @@ const langs = [
     right: 0;
     top: calc(100% + 8px);
     min-width: 148px;
-    background: rgba(22, 27, 34, 0.98);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-lg);
     opacity: 0;
     transform: translateY(6px) scale(0.95);
     pointer-events: none;
@@ -183,7 +186,7 @@ const langs = [
   }
 
   .lang-option:hover {
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--bg-tertiary);
   }
 
   .lang-flag {

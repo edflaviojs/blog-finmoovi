@@ -5,7 +5,7 @@ import Footer from '@components/footer/Footer.astro';
 import CTAVariado from '@components/glossario/CTAVariado.astro';
 import { getCollection } from 'astro:content';
 
-const glossario = await getCollection('glossario');
+const glossario = await getCollection('glossario', ({ data }) => !data.locale || data.locale === 'pt');
 const sorted = glossario.sort((a, b) => a.data.term.localeCompare(b.data.term, 'pt-BR'));
 
 const grouped = sorted.reduce((acc, item) => {

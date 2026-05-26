@@ -35,4 +35,8 @@ jobs:
         run: |
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
-          git push
+          if [ -n "$(git status --porcelain)" ]; then
+            git push
+          else
+            echo "No changes to push"
+          fi

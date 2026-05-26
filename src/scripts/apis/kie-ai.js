@@ -7,7 +7,7 @@ const KIE_API_BASE = 'https://api.kie.ai/v1';
 const KIE_API_KEY = process.env.KIE_API_KEY;
 
 if (!KIE_API_KEY) {
-  throw new Error('KIE_API_KEY environment variable is required');
+  throw new Error('KIE_API_KEY environment variable is required. Configure it in GitHub Secrets.');
 }
 
 /**
@@ -45,7 +45,7 @@ export async function generateText(prompt, options = {}) {
 
   if (!response.ok) {
     const error = await response.text();
-    throw new Error(`Kie.AI text generation failed: ${response.status} - ${error}`);
+    throw new Error(`Kie.AI text generation failed (HTTP ${response.status}): ${error}. Verifique se a KIE_API_KEY está válida e com créditos.`);
   }
 
   const data = await response.json();
@@ -78,7 +78,7 @@ export async function generateImage(prompt, options = {}) {
 
   if (!response.ok) {
     const error = await response.text();
-    throw new Error(`Kie.AI image generation failed: ${response.status} - ${error}`);
+    throw new Error(`Kie.AI image generation failed (HTTP ${response.status}): ${error}. Verifique se a KIE_API_KEY está válida e com créditos.`);
   }
 
   const data = await response.json();
