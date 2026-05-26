@@ -23,6 +23,11 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Configure git
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+
       - name: Install dependencies
         run: npm ci
 
@@ -33,8 +38,6 @@ jobs:
 
       - name: Push changes
         run: |
-          git config user.name "FinMoovi Bot"
-          git config user.email "bot@finmoovi.com"
           if [ -n "$(git status --porcelain)" ]; then
             git push
           else
