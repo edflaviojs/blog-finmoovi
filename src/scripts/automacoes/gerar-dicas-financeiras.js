@@ -4,13 +4,12 @@
  * Gera um post completo com texto + imagem via Kie.AI
  */
 
-import { generateBlogPost, generateImage } from '../apis/kie-ai.js';
+import { generateBlogPost } from '../apis/kie-ai.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
-const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 
 // Topics pool — rotates through these
 const TOPICS = [
@@ -51,7 +50,6 @@ async function main() {
     const post = await generateBlogPost(topic, {
       category: 'dicas',
       keywords: [topic, 'finanças pessoais', 'economia', 'dinheiro'],
-      includeImage: true,
     });
 
     if (!post.title || !post.content) {
@@ -71,34 +69,11 @@ async function main() {
 
     const today = new Date().toISOString().split('T')[0];
 
-    // Download and save image if available
-    let imagePath = '';
-    if (post.image) {
-      try {
-        const imageResponse = await fetch(post.image);
-        if (imageResponse.ok) {
-          const imageBuffer = Buffer.from(await imageResponse.arrayBuffer());
-          const imageFilename = `${slug}.webp`;
-          const imageFullPath = join(IMAGES_DIR, imageFilename);
-
-          if (!existsSync(IMAGES_DIR)) {
-            mkdirSync(IMAGES_DIR, { recursive: true });
-          }
-
-          writeFileSync(imageFullPath, imageBuffer);
-          imagePath = `/images/posts/${imageFilename}`;
-          console.log(`🖼️ Imagem salva: ${imagePath}`);
-        }
-      } catch (imgErr) {
-        console.warn('⚠️ Falha ao salvar imagem:', imgErr.message);
-      }
-    }
-
     // Create frontmatter
     const frontmatter = `---
 title: "${post.title.replace(/"/g, '\\"')}"
 description: "${post.meta.replace(/"/g, '\\"')}"
-image: "${imagePath}"
+image: ""
 category: "dicas"
 tags: ${JSON.stringify(post.keywords || [topic, 'finanças pessoais'])}
 author: "FinMoovi"
@@ -123,7 +98,7 @@ ${post.content}
     console.log(`📄 Post salvo: ${postPath}`);
 
     // Git commit
-    execSync(`git add "${postPath}" ${imagePath ? `"public${imagePath}"` : ''}`, { stdio: 'inherit' });
+    execSync(`git add "${postPath}"`, { stdio: 'inherit' });
     execSync(`git commit -m "post: ${post.title.substring(0, 50)}"`, { stdio: 'inherit' });
 
     console.log('✅ Commit criado com sucesso!');
