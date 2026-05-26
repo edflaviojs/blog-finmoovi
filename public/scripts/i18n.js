@@ -245,8 +245,17 @@ function applyTranslations(lang) {
 }
 
 // Apply on load
-const savedLang = localStorage.getItem('fm-lang') || 'pt';
-applyTranslations(savedLang);
+const path = window.location.pathname;
+let currentLang = 'pt';
+if (path.startsWith('/en/') || path === '/en') currentLang = 'en';
+else if (path.startsWith('/es/') || path === '/es') currentLang = 'es';
+else {
+  try { currentLang = localStorage.getItem('fm-lang') || 'pt'; } catch(e) {}
+}
+
+try { localStorage.setItem('fm-lang', currentLang); } catch(e) {}
+applyTranslations(currentLang);
+rewriteLinks(currentLang);
 
 // Listen for language changes
 const observer = new MutationObserver((mutations) => {
@@ -254,10 +263,27 @@ const observer = new MutationObserver((mutations) => {
     if (m.type === 'attributes' && m.attributeName === 'data-lang') {
       const newLang = document.documentElement.getAttribute('data-lang') || 'pt';
       applyTranslations(newLang);
+      rewriteLinks(newLang);
     }
   });
 });
 observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-lang'] });
 
+function rewriteLinks(lang) {
+  if (lang === 'pt') return;
+  const prefix = '/' + lang;
+  const navPaths = ['/', '/sobre', '/glossario', '/ferramentas', '/categorias'];
+  document.querySelectorAll('a[href]').forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:')) return;
+    if (href.startsWith('/en/') || href.startsWith('/es/') || href === '/en' || href === '/es') return;
+    if (href.startsWith('/app')) return;
+    const isNavLink = navPaths.some(p => href === p || href.startsWith(p + '/'));
+    if (isNavLink) {
+      a.setAttribute('href', prefix + href);
+    }
+  });
+}
+
 // Export for use in other scripts
-window.__fmI18n = { applyTranslations, translations };
+window.__fmI18n = { applyTranslations, translations, rewriteLinks };
