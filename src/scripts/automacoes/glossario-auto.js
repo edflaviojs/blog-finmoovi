@@ -1,7 +1,7 @@
 /**
- * Glossário Automático
+ * Glossário Automático (PT + EN + ES)
  * Executa via GitHub Actions 3x/semana (terça, quinta, sábado às 4h)
- * Gera termos do glossário financeiro via Kie.AI
+ * Gera termos do glossário financeiro em 3 idiomas via Groq
  */
 
 import { generateText } from '../apis/kie-ai.js';
@@ -45,38 +45,17 @@ const TERMS_POOL = [
   { term: 'Previdência Privada', category: 'investimentos' },
 ];
 
-async function main() {
-  console.log('🚀 Gerando termo do glossário...');
+function createSlug(text) {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
 
-  try {
-    // Check which terms already exist
-    if (!existsSync(GLOSSARIO_DIR)) {
-      mkdirSync(GLOSSARIO_DIR, { recursive: true });
-    }
-
-    const existingFiles = readdirSync(GLOSSARIO_DIR).map(f => f.replace('.md', ''));
-
-    // Find next term to generate
-    const pendingTerms = TERMS_POOL.filter(t => {
-      const slug = t.term
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[̀-ͯ]/g, '')
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-|-$/g, '');
-      return !existingFiles.includes(slug);
-    });
-
-    if (pendingTerms.length === 0) {
-      console.log('✅ Todos os termos já foram gerados!');
-      return;
-    }
-
-    const termData = pendingTerms[0];
-    console.log(`📝 Gerando: ${termData.term}`);
-
-    // Generate content
-    const prompt = `
+async function generateTermContent(termData) {
+  const prompt = `
 Escreva uma explicação completa para o glossário financeiro sobre: "${termData.term}"
 
 Requisitos:
@@ -97,47 +76,153 @@ Formato de saída:
 [conteúdo em markdown aqui]
 `;
 
-    const result = await generateText(prompt, { maxTokens: 2000, temperature: 0.6 });
+  const result = await generateText(prompt, { maxTokens: 2000, temperature: 0.6 });
 
-    // Parse result
-    const defMatch = result.match(/---DEFINICAO---\s*([\s\S]*?)(?=---RELACIONADOS---|---CONTEUDO---|$)/);
-    const relMatch = result.match(/---RELACIONADOS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
-    const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
+  const defMatch = result.match(/---DEFINICAO---\s*([\s\S]*?)(?=---RELACIONADOS---|---CONTEUDO---|$)/);
+  const relMatch = result.match(/---RELACIONADOS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
+  const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
-    const definition = defMatch ? defMatch[1].trim() : `Explicação sobre ${termData.term} no contexto financeiro brasileiro.`;
-    const relatedTerms = relMatch ? relMatch[1].trim().split(',').map(t => t.trim()) : [];
-    const content = contentMatch ? contentMatch[1].trim() : result;
+  return {
+    definition: defMatch ? defMatch[1].trim() : `Explicação sobre ${termData.term} no contexto financeiro brasileiro.`,
+    relatedTerms: relMatch ? relMatch[1].trim().split(',').map(t => t.trim()) : [],
+    content: contentMatch ? contentMatch[1].trim() : result,
+  };
+}
 
-    const slug = termData.term
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[̀-ͯ]/g, '')
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-|-$/g, '');
+async function translateTerm(termData, ptContent, targetLang) {
+  const langNames = { en: 'English', es: 'Spanish' };
+  const langName = langNames[targetLang];
 
-    const today = new Date().toISOString().split('T')[0];
+  const prompt = `
+Translate the following financial glossary entry to ${langName}.
+Keep the same structure and formatting. Keep financial term names that are universal (CDI, ETF, IPCA) as-is.
+Convert R$ examples to approximate USD equivalents for English, or keep R$ for Spanish.
 
-    const frontmatter = `---
-term: "${termData.term}"
-definition: "${definition.replace(/"/g, '\\"')}"
-category: "${termData.category}"
-locale: "pt"
-relatedTerms: ${JSON.stringify(relatedTerms)}
-publishedAt: ${today}
----
+Original term: ${termData.term}
+Original definition: ${ptContent.definition}
+Original content:
+${ptContent.content}
 
-${content}
+Respond in this exact format:
+---TERM---
+[translated term name, or keep original if it's a universal acronym]
+---DEFINICAO---
+[translated definition]
+---CONTEUDO---
+[translated content in markdown]
 `;
 
-    const filePath = join(GLOSSARIO_DIR, `${slug}.md`);
-    writeFileSync(filePath, frontmatter, 'utf-8');
-    console.log(`📄 Termo salvo: ${filePath}`);
+  const result = await generateText(prompt, { maxTokens: 2000, temperature: 0.3 });
 
-    // Git commit
-    execSync(`git add "${filePath}"`, { stdio: 'inherit' });
-    execSync(`git commit -m "glossário: ${termData.term}"`, { stdio: 'inherit' });
+  const termMatch = result.match(/---TERM---\s*([\s\S]*?)(?=---DEFINICAO---|$)/);
+  const defMatch = result.match(/---DEFINICAO---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
+  const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
-    console.log(`✅ Termo "${termData.term}" publicado!`);
+  return {
+    term: termMatch ? termMatch[1].trim() : termData.term,
+    definition: defMatch ? defMatch[1].trim() : ptContent.definition,
+    content: contentMatch ? contentMatch[1].trim() : ptContent.content,
+  };
+}
+
+function saveGlossaryTerm(slug, data) {
+  const frontmatter = `---
+term: "${data.term.replace(/"/g, '\\"')}"
+definition: "${data.definition.replace(/"/g, '\\"')}"
+category: "${data.category}"
+locale: "${data.locale}"
+relatedTerms: ${JSON.stringify(data.relatedTerms || [])}
+publishedAt: ${data.today}
+---
+
+${data.content}
+`;
+
+  const filePath = join(GLOSSARIO_DIR, `${slug}.md`);
+  writeFileSync(filePath, frontmatter, 'utf-8');
+  return filePath;
+}
+
+async function main() {
+  console.log('🚀 Gerando termo do glossário (PT + EN + ES)...');
+
+  try {
+    if (!existsSync(GLOSSARIO_DIR)) {
+      mkdirSync(GLOSSARIO_DIR, { recursive: true });
+    }
+
+    const existingFiles = readdirSync(GLOSSARIO_DIR).map(f => f.replace('.md', ''));
+
+    // Find next term to generate (check PT slug only)
+    const pendingTerms = TERMS_POOL.filter(t => {
+      const slug = createSlug(t.term);
+      return !existingFiles.includes(slug);
+    });
+
+    if (pendingTerms.length === 0) {
+      console.log('✅ Todos os termos já foram gerados!');
+      return;
+    }
+
+    const termData = pendingTerms[0];
+    const slugPt = createSlug(termData.term);
+    const today = new Date().toISOString().split('T')[0];
+
+    console.log(`📝 Gerando: ${termData.term}`);
+
+    // 1. Generate PT content
+    const ptContent = await generateTermContent(termData);
+    console.log(`✅ PT gerado: ${termData.term}`);
+
+    // 2. Save PT
+    const ptPath = saveGlossaryTerm(slugPt, {
+      term: termData.term,
+      definition: ptContent.definition,
+      category: termData.category,
+      locale: 'pt',
+      relatedTerms: ptContent.relatedTerms,
+      today,
+      content: ptContent.content,
+    });
+    console.log(`📄 PT salvo: ${ptPath}`);
+
+    // 3. Translate to EN
+    console.log('🌐 Traduzindo para inglês...');
+    const enContent = await translateTerm(termData, ptContent, 'en');
+    const slugEn = 'en-' + createSlug(enContent.term);
+
+    const enPath = saveGlossaryTerm(slugEn, {
+      term: enContent.term,
+      definition: enContent.definition,
+      category: termData.category,
+      locale: 'en',
+      relatedTerms: ptContent.relatedTerms,
+      today,
+      content: enContent.content,
+    });
+    console.log(`📄 EN salvo: ${enPath}`);
+
+    // 4. Translate to ES
+    console.log('🌐 Traduzindo para espanhol...');
+    const esContent = await translateTerm(termData, ptContent, 'es');
+    const slugEs = 'es-' + createSlug(esContent.term);
+
+    const esPath = saveGlossaryTerm(slugEs, {
+      term: esContent.term,
+      definition: esContent.definition,
+      category: termData.category,
+      locale: 'es',
+      relatedTerms: ptContent.relatedTerms,
+      today,
+      content: esContent.content,
+    });
+    console.log(`📄 ES salvo: ${esPath}`);
+
+    // 5. Git commit all
+    execSync(`git add "${GLOSSARIO_DIR}"`, { stdio: 'inherit' });
+    execSync(`git commit -m "glossário: ${termData.term} [PT/EN/ES]"`, { stdio: 'inherit' });
+
+    console.log(`✅ Termo "${termData.term}" publicado em 3 idiomas!`);
   } catch (error) {
     console.error('❌ Erro ao gerar glossário:', error.message);
     process.exit(1);
