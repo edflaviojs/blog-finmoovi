@@ -7,7 +7,7 @@ relatedTerms: ["Ações", "Fundos Imobiliários", "Bolsa de Valores"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Renda Variável?
+## What is Renda Variável?
 
 Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce conforme o mercado. Você pode ganhar muito — ou perder. Inclui ações, fundos imobiliários, ETFs, criptomoedas e derivativos.
 
@@ -29,7 +29,7 @@ Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce co
 4. **Criptomoedas** — ativos digitais descentralizados
 5. **Derivativos** — contratos futuros, opções (avançado)
 
-## Riscos
+## Risks
 
 - Perda de capital (seu investimento pode valer menos)
 - Volatilidade (oscilações diárias)

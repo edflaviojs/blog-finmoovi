@@ -7,7 +7,7 @@ relatedTerms: ["Inflação", "Selic", "Tesouro Direto"]
 publishedAt: 2025-05-10
 ---
 
-## O que é IPCA?
+## What is IPCA?
 
 O IPCA (Índice Nacional de Preços ao Consumidor Amplo) é o termômetro oficial da inflação no Brasil. Ele mede quanto os preços subiram (ou caíram) em um determinado período. É calculado pelo IBGE todo mês.
 

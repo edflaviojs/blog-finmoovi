@@ -11,7 +11,7 @@ publishedAt: 2025-05-10
 
 Juros compostos são juros calculados sobre o valor original **mais** os juros já acumulados. Diferente dos juros simples (que incidem só sobre o valor inicial), os compostos crescem exponencialmente.
 
-## Exemplo prático
+## Ejemplo práctico
 
 R$ 10.000 investidos a 10% ao ano:
 

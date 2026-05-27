@@ -7,7 +7,7 @@ relatedTerms: ["Imposto de Renda", "Tesouro Direto", "Renda Fixa"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Previdência Privada?
+## ¿Qué es Previdência Privada?
 
 Previdência Privada é um investimento de longo prazo pensado para a aposentadoria. Você contribui mensalmente e, no futuro, resgata o valor acumulado (com rendimentos). É um complemento à aposentadoria do INSS.
 
@@ -34,14 +34,14 @@ Previdência Privada é um investimento de longo prazo pensado para a aposentado
 | 8 a 10 anos | 15% |
 | Acima de 10 anos | 10% |
 
-## Vantagens
+## Ventajas
 
 - Benefício fiscal (PGBL)
 - Não entra em inventário (planejamento sucessório)
 - Disciplina de investimento mensal
 - Alíquota de 10% após 10 anos (regressiva)
 
-## Desvantagens
+## Desventajas
 
 - Taxas de administração altas (muitos fundos cobram 1-2%)
 - Taxa de carregamento (alguns cobram na entrada)

@@ -7,11 +7,11 @@ relatedTerms: ["Criptomoedas", "Blockchain", "Renda Variável"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Bitcoin?
+## ¿Qué es Bitcoin?
 
 Bitcoin (BTC) é a primeira e mais conhecida criptomoeda do mundo. Foi criada em 2009 por uma pessoa (ou grupo) sob o pseudônimo Satoshi Nakamoto. Funciona de forma descentralizada — sem bancos, sem governo controlando.
 
-## Como funciona
+## ¿Cómo funciona?
 
 - Transações são registradas em um livro público chamado **blockchain**
 - Não existe um "banco central" do Bitcoin

@@ -7,7 +7,7 @@ relatedTerms: ["Liquidez", "CDB", "Tesouro Selic"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Reserva de Emergência?
+## What is Reserva de Emergência?
 
 A reserva de emergência é um colchão financeiro que protege você de imprevistos. É o dinheiro que você pode acessar rapidamente quando algo inesperado acontece.
 

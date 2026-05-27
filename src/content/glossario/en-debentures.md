@@ -11,7 +11,7 @@ publishedAt: 2025-05-10
 
 Debêntures são títulos de dívida emitidos por empresas. Quando você compra uma debênture, está emprestando dinheiro para a empresa — e ela te paga juros por isso. É como um CDB, mas emitido por empresas (não bancos).
 
-## Tipos
+## Types
 
 ### Debêntures comuns
 - Tributadas pelo IR (tabela regressiva)
@@ -23,14 +23,14 @@ Debêntures são títulos de dívida emitidos por empresas. Quando você compra 
 - Financiam projetos de infraestrutura
 - Rendimento: IPCA + taxa fixa
 
-## Vantagens
+## Advantages
 
 - Rendimento geralmente maior que CDB e Tesouro
 - Debêntures incentivadas são isentas de IR
 - Diversificação da renda fixa
 - Prazos variados (2 a 15 anos)
 
-## Riscos
+## Risks
 
 - **Risco de crédito:** empresa pode não pagar (não tem FGC)
 - **Risco de liquidez:** pode ser difícil vender antes do vencimento

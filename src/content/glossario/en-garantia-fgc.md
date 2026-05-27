@@ -7,7 +7,7 @@ relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 ---
 
-## O que é a Garantia FGC?
+## What is a Garantia FGC?
 
 O FGC (Fundo Garantidor de Créditos) é como um seguro para seus investimentos em bancos. Se o banco quebrar, o FGC devolve seu dinheiro — até R$ 250.000 por CPF por instituição financeira.
 

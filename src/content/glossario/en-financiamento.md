@@ -7,11 +7,11 @@ relatedTerms: ["Amortização", "Juros Compostos", "Score de Crédito"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Financiamento?
+## What is Financiamento?
 
 Financiamento é quando um banco empresta dinheiro para você comprar algo de valor alto (casa, carro, etc.) e você paga de volta em parcelas ao longo de anos. O bem comprado fica como garantia — se você parar de pagar, o banco pode tomar.
 
-## Tipos comuns
+## Types comuns
 
 ### Financiamento imobiliário
 - Prazo: até 35 anos
@@ -25,7 +25,7 @@ Financiamento é quando um banco empresta dinheiro para você comprar algo de va
 - Entrada: quanto mais, melhor
 - Carro fica alienado ao banco
 
-## Dicas para financiar bem
+## Tips para financiar bem
 
 1. **Dê a maior entrada possível** — reduz juros totais
 2. **Escolha o menor prazo que cabe no bolso** — menos juros

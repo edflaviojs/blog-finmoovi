@@ -7,11 +7,11 @@ relatedTerms: ["CDI", "Tesouro Direto", "Selic"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Renda Fixa?
+## What is Renda Fixa?
 
 Renda Fixa é uma categoria de investimentos onde você sabe (ou pode prever) quanto vai receber de volta. Diferente de ações, onde o preço oscila livremente, na renda fixa as regras são definidas na hora da aplicação.
 
-## Tipos de renda fixa
+## Types de renda fixa
 
 | Investimento | Emissor | Garantia FGC | Liquidez |
 |-------------|---------|-------------|----------|
@@ -21,14 +21,14 @@ Renda Fixa é uma categoria de investimentos onde você sabe (ou pode prever) qu
 | Debêntures | Empresas | Não | Varia |
 | CRI/CRA | Securitizadoras | Não | Baixa |
 
-## Vantagens
+## Advantages
 
 - Previsibilidade de retorno
 - Menor risco que renda variável
 - Proteção do FGC (até R$ 250.000 por banco)
 - Ideal para reserva de emergência e metas de curto prazo
 
-## Desvantagens
+## Disadvantages
 
 - Rendimentos menores no longo prazo (vs. ações)
 - IR regressivo (quanto menos tempo, mais imposto)

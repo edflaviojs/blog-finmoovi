@@ -11,7 +11,7 @@ publishedAt: 2025-05-10
 
 Dividendos são a parcela do lucro que uma empresa distribui aos seus acionistas. Se você tem ações de uma empresa que paga dividendos, você recebe dinheiro periodicamente sem precisar vender suas ações.
 
-## Como funciona
+## How does it work?
 
 1. A empresa tem lucro no trimestre/ano
 2. O conselho decide distribuir parte desse lucro
@@ -24,7 +24,7 @@ Dividendos são a parcela do lucro que uma empresa distribui aos seus acionistas
 - Empresas brasileiras são obrigadas a distribuir no mínimo 25% do lucro
 - Setores que mais pagam: bancos, elétricas, telecomunicações
 
-## Exemplo prático
+## Practical example
 
 Se você tem 100 ações de uma empresa que paga R$ 2,00 por ação em dividendos:
 - Você recebe: 100 × R$ 2,00 = **R$ 200,00**

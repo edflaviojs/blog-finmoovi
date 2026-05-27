@@ -7,11 +7,11 @@ relatedTerms: ["Ações", "Bolsa de Valores", "Diversificação"]
 publishedAt: 2025-05-10
 ---
 
-## O que é ETF?
+## ¿Qué es ETF?
 
 ETF (Exchange Traded Fund) é um fundo de investimento que é negociado na bolsa como se fosse uma ação. Ele replica um índice — por exemplo, o BOVA11 replica o Ibovespa, então ao comprar BOVA11 você está investindo nas maiores empresas do Brasil de uma vez.
 
-## Vantagens
+## Ventajas
 
 - **Diversificação instantânea:** com 1 compra, você investe em dezenas de empresas
 - **Baixo custo:** taxas menores que fundos tradicionais

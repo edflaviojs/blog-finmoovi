@@ -7,7 +7,7 @@ relatedTerms: ["IOF", "CDI", "Renda Fixa"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Imposto de Renda?
+## What is Imposto de Renda?
 
 O Imposto de Renda (IR) é um tributo cobrado pelo governo federal sobre os rendimentos das pessoas. Quanto mais você ganha, mais paga (sistema progressivo). Todo ano, entre março e maio, é preciso fazer a Declaração de IR.
 
@@ -38,7 +38,7 @@ O Imposto de Renda (IR) é um tributo cobrado pelo governo federal sobre os rend
 - Rendimentos de FIIs (pessoa física)
 - Venda de ações até R$ 20.000/mês
 
-## Dicas para pagar menos IR (legalmente)
+## Tips para pagar menos IR (legalmente)
 
 1. Invista em LCI/LCA (isentos)
 2. Mantenha investimentos por mais de 2 anos (alíquota menor)

@@ -7,7 +7,7 @@ relatedTerms: ["Score de Crédito", "Juros Compostos", "Financiamento"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Cheque Especial?
+## What is Cheque Especial?
 
 Cheque especial é um limite de crédito que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o cheque especial — e paga juros altíssimos por isso.
 
@@ -18,14 +18,14 @@ Cheque especial é um limite de crédito que o banco disponibiliza na sua conta 
 - Juros são cobrados diariamente sobre o saldo negativo
 - Muita gente usa sem saber que está pagando
 
-## Exemplo prático
+## Practical example
 
 Se você ficar R$ 1.000 negativos por 30 dias com juros de 12% ao mês:
 - Juros: R$ 120
 - Em 6 meses sem pagar: R$ 1.000 vira R$ 1.973
 - Em 12 meses: R$ 1.000 vira R$ 3.896
 
-## Como evitar
+## How to avoid?
 
 1. **Desative o cheque especial** — ligue para o banco e peça para remover
 2. **Mantenha uma reserva na conta** — pelo menos R$ 500 de colchão

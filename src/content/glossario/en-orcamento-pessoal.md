@@ -7,7 +7,7 @@ relatedTerms: ["Reserva de Emergência", "Regra 50-30-20", "Controle Financeiro"
 publishedAt: 2025-05-10
 ---
 
-## O que é Orçamento Pessoal?
+## What is Orçamento Pessoal?
 
 Orçamento pessoal é um plano que mostra quanto dinheiro entra, quanto sai e para onde vai. É a ferramenta mais básica e poderosa das finanças pessoais. Sem orçamento, você está dirigindo no escuro.
 

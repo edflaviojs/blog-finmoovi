@@ -7,7 +7,7 @@ relatedTerms: ["Juros Compostos", "Selic", "Tesouro Direto"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Valor Presente?
+## ¿Qué es Valor Presente?
 
 Valor Presente é quanto vale HOJE um dinheiro que você vai receber no FUTURO. R$ 1.000 daqui a 1 ano valem menos que R$ 1.000 hoje — porque hoje você poderia investir e ter mais no futuro.
 
@@ -21,7 +21,7 @@ Onde:
 - i = taxa de juros
 - n = número de períodos
 
-## Exemplo prático
+## Ejemplo práctico
 
 Alguém te oferece R$ 10.000 daqui a 2 anos. Com a Selic a 13% ao ano, quanto isso vale hoje?
 

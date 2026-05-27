@@ -7,7 +7,7 @@ relatedTerms: ["Dividendos", "Ações", "Fundos Imobiliários"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Yield?
+## ¿Qué es Yield?
 
 Yield (rendimento) é o retorno percentual que um investimento gera em relação ao seu preço. O mais comum é o Dividend Yield (DY), que mostra quanto uma ação ou FII paga em dividendos por ano comparado ao preço atual.
 
@@ -21,7 +21,7 @@ Yield (rendimento) é o retorno percentual que um investimento gera em relação
 - Pagou R$ 4 em dividendos no último ano
 - DY = 4 ÷ 50 × 100 = **8% ao ano**
 
-## O que é um bom Yield?
+## ¿Qué es um bom Yield?
 
 | Faixa | Interpretação |
 |-------|--------------|

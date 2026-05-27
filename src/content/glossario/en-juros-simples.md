@@ -41,6 +41,6 @@ Na prática, juros simples são raros. Aparecem em:
 - Cálculos trabalhistas
 - Exercícios de matemática financeira
 
-## Por que importa saber
+## Why does it matter? saber
 
 Entender a diferença entre juros simples e compostos é fundamental. No mundo real, quase tudo usa juros compostos — e isso faz uma diferença enorme no longo prazo, tanto para investimentos quanto para dívidas.

@@ -7,11 +7,11 @@ relatedTerms: ["Ações", "Renda Variável", "Ibovespa"]
 publishedAt: 2025-05-10
 ---
 
-## O que é a Bolsa de Valores?
+## ¿Qué es a Bolsa de Valores?
 
 A Bolsa de Valores é como um mercado onde empresas vendem pedaços de si mesmas (ações) e investidores compram e vendem esses pedaços entre si. No Brasil, a bolsa se chama **B3** (Brasil, Bolsa, Balcão).
 
-## Como funciona
+## ¿Cómo funciona?
 
 1. Empresas abrem capital (IPO) para captar dinheiro
 2. Investidores compram ações dessas empresas
@@ -31,6 +31,6 @@ A B3 funciona de segunda a sexta:
 - **IFIX:** índice de fundos imobiliários
 - **S&P 500:** principal índice dos EUA
 
-## Como investir na bolsa
+## ¿Cómo invertir? na bolsa
 
 Você precisa de uma conta em uma corretora de valores. A maioria não cobra taxa para abrir conta. Com R$ 100 já é possível comprar ações fracionárias.

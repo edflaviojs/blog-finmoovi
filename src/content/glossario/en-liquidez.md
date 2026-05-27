@@ -7,11 +7,11 @@ relatedTerms: ["Reserva de Emergência", "CDB", "Tesouro Direto"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Liquidez?
+## What is Liquidez?
 
 Liquidez é a capacidade de transformar um investimento em dinheiro rapidamente. Quanto mais líquido, mais rápido você acessa o dinheiro.
 
-## Tipos de liquidez
+## Types de liquidez
 
 - **Liquidez diária (D+0):** Dinheiro disponível no mesmo dia. Ex: Tesouro Selic, CDB com liquidez diária.
 - **Liquidez D+1:** Disponível no dia seguinte. Ex: Alguns fundos de investimento.

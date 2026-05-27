@@ -7,7 +7,7 @@ relatedTerms: ["CDI", "IPCA", "Renda Fixa"]
 publishedAt: 2025-05-10
 ---
 
-## O que é a Taxa Selic?
+## ¿Qué es a Taxa Selic?
 
 A Selic é a taxa básica de juros do Brasil. É definida pelo Copom (Comitê de Política Monetária do Banco Central) a cada 45 dias. Ela é a "mãe" de todas as taxas de juros — quando a Selic sobe, tudo fica mais caro (empréstimos, financiamentos). Quando cai, fica mais barato.
 

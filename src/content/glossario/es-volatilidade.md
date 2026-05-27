@@ -7,11 +7,11 @@ relatedTerms: ["Renda Variável", "Ações", "Diversificação"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Volatilidade?
+## ¿Qué es Volatilidade?
 
 Volatilidade é a intensidade com que o preço de um investimento sobe e desce. Um ativo volátil pode valorizar 5% em um dia e cair 3% no dia seguinte. Quanto maior a volatilidade, maior o risco — mas também maior o potencial de ganho.
 
-## Exemplos de volatilidade
+## Ejemplos de volatilidade
 
 | Ativo | Volatilidade | Variação típica diária |
 |-------|-------------|----------------------|

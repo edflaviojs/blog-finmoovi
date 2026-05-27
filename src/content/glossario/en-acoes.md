@@ -17,7 +17,7 @@ Ações são pedaços de uma empresa negociados na Bolsa de Valores (B3 no Brasi
 2. **Dividendos:** receber parte dos lucros da empresa
 3. **Juros sobre Capital Próprio (JCP):** similar a dividendos, com tratamento fiscal diferente
 
-## Riscos
+## Risks
 
 - O preço pode cair (você pode perder dinheiro)
 - Empresas podem falir

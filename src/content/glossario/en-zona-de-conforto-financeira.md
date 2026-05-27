@@ -7,7 +7,7 @@ relatedTerms: ["Reserva de Emergência", "Orçamento Pessoal", "Patrimônio Líq
 publishedAt: 2025-05-10
 ---
 
-## O que é Zona de Conforto Financeira?
+## What is Zona de Conforto Financeira?
 
 É o estado onde suas finanças estão organizadas e você não vive com medo do fim do mês. Significa ter: gastos sob controle, reserva de emergência formada, dívidas quitadas e investimentos crescendo.
 

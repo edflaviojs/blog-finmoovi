@@ -7,7 +7,7 @@ relatedTerms: ["Selic", "IPCA", "Renda Fixa"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Tesouro Direto?
+## ¿Qué es Tesouro Direto?
 
 Tesouro Direto é um programa do governo brasileiro que permite que qualquer pessoa empreste dinheiro para o governo e receba juros em troca. É como se o governo pedisse dinheiro emprestado de você e te pagasse com juros.
 
@@ -31,7 +31,7 @@ Tesouro Direto é um programa do governo brasileiro que permite que qualquer pes
 - Ideal para: quando acredita que juros vão cair
 - Risco: se a Selic subir, seu título perde valor de mercado
 
-## Como investir
+## ¿Cómo invertir?
 
 1. Abra conta em uma corretora (taxa zero na maioria)
 2. Acesse o site do Tesouro Direto

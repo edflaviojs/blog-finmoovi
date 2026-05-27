@@ -7,7 +7,7 @@ relatedTerms: ["Patrimônio Líquido", "Dividendos", "Renda Fixa"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Independência Financeira?
+## What is Independência Financeira?
 
 Independência financeira é quando seus investimentos geram renda suficiente para pagar todas as suas contas — sem precisar trabalhar. Você trabalha porque quer, não porque precisa.
 

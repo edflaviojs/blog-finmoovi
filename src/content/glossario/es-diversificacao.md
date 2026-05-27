@@ -7,7 +7,7 @@ relatedTerms: ["Renda Fixa", "Renda Variável", "ETF"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Diversificação?
+## ¿Qué es Diversificação?
 
 Diversificação é a estratégia de espalhar seu dinheiro entre diferentes tipos de investimentos. A ideia é simples: se um investimento vai mal, os outros compensam. É o famoso "não coloque todos os ovos na mesma cesta".
 

@@ -7,11 +7,11 @@ relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Diversificação
 publishedAt: 2025-05-10
 ---
 
-## O que é Patrimônio Líquido?
+## ¿Qué es Patrimônio Líquido?
 
 Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem menos tudo que você deve. É o número mais importante das suas finanças pessoais — mostra sua riqueza real.
 
-## Como calcular
+## ¿Cómo calcular?
 
 ### Seus Ativos (o que você tem)
 - Dinheiro em conta e investimentos

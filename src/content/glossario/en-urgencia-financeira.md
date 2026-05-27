@@ -7,11 +7,11 @@ relatedTerms: ["Reserva de Emergência", "Cheque Especial", "Orçamento Pessoal"
 publishedAt: 2025-05-10
 ---
 
-## O que é Urgência Financeira?
+## What is Urgência Financeira?
 
 Urgência financeira é qualquer situação inesperada que exige dinheiro que você não planejou gastar. Pode ser uma demissão, um problema de saúde, um conserto no carro ou um eletrodoméstico que quebrou.
 
-## Exemplos comuns
+## Examples comuns
 
 - Perda de emprego (precisa de 3-6 meses de gastos)
 - Emergência médica (cirurgia, tratamento)

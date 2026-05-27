@@ -7,11 +7,11 @@ relatedTerms: ["Diversificação", "Volatilidade", "Câmbio"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Hedge?
+## ¿Qué es Hedge?
 
 Hedge (pronuncia-se "rédje") é uma estratégia de proteção financeira. É como um seguro para seus investimentos. Se você tem medo de que o dólar suba e prejudique seus custos, pode fazer um hedge cambial para se proteger.
 
-## Exemplos práticos
+## Ejemplos práticos
 
 ### Hedge cambial
 - Empresa que importa produtos compra contratos futuros de dólar

@@ -7,7 +7,7 @@ relatedTerms: ["Selic", "CDI", "Reserva de Emergência"]
 publishedAt: 2025-05-10
 ---
 
-## O que é a Poupança?
+## What is a Poupança?
 
 A caderneta de poupança é o investimento mais conhecido do Brasil. Quase todo mundo tem ou já teve. É simples, isenta de imposto de renda e tem liquidez imediata. Porém, rende pouco — geralmente perde para a inflação.
 

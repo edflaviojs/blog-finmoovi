@@ -7,7 +7,7 @@ relatedTerms: ["Reserva de Emergência", "CDB", "Tesouro Direto"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Liquidez?
+## ¿Qué es Liquidez?
 
 Liquidez é a capacidade de transformar um investimento em dinheiro rapidamente. Quanto mais líquido, mais rápido você acessa o dinheiro.
 

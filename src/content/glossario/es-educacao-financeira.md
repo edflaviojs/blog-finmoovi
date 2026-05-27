@@ -7,7 +7,7 @@ relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência F
 publishedAt: 2025-05-10
 ---
 
-## O que é Educação Financeira?
+## ¿Qué es Educação Financeira?
 
 Educação financeira é aprender a lidar com dinheiro de forma inteligente. Não é sobre ficar rico rápido — é sobre entender como o dinheiro funciona para tomar melhores decisões no dia a dia.
 

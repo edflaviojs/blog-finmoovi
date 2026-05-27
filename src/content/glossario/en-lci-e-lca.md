@@ -11,7 +11,7 @@ publishedAt: 2025-05-10
 
 LCI (Letra de Crédito Imobiliário) e LCA (Letra de Crédito do Agronegócio) são investimentos de renda fixa emitidos por bancos. A grande vantagem: são **isentos de Imposto de Renda** para pessoa física.
 
-## Diferença entre LCI e LCA
+## Difference between LCI e LCA
 
 A única diferença é o destino do dinheiro:
 - **LCI:** banco usa para financiar o setor imobiliário
@@ -19,14 +19,14 @@ A única diferença é o destino do dinheiro:
 
 Para o investidor, funcionam da mesma forma.
 
-## Vantagens
+## Advantages
 
 - Isenção de IR (rendimento líquido maior)
 - Proteção do FGC até R$ 250.000
 - Rendimento geralmente atrelado ao CDI (85-100%)
 - Segurança similar ao CDB
 
-## Desvantagens
+## Disadvantages
 
 - Carência mínima de 90 dias (não pode resgatar antes)
 - Investimento mínimo geralmente maior (R$ 1.000-5.000)

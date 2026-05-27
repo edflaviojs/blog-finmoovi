@@ -7,7 +7,7 @@ relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência F
 publishedAt: 2025-05-10
 ---
 
-## O que é Meta Financeira?
+## What is Meta Financeira?
 
 Meta financeira é um objetivo concreto para seu dinheiro. Não é "quero economizar mais" — é "quero juntar R$ 10.000 até dezembro de 2025 para dar entrada no carro". Quanto mais específica, maior a chance de alcançar.
 
@@ -19,7 +19,7 @@ Meta financeira é um objetivo concreto para seu dinheiro. Não é "quero econom
 - **R**elevante: importante para você
 - **T**emporal: com prazo definido
 
-## Exemplos de metas
+## Examples de metas
 
 ### Curto prazo (até 1 ano)
 - Montar reserva de emergência de R$ 15.000

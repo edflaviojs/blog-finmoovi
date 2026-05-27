@@ -7,11 +7,11 @@ relatedTerms: ["Orçamento Pessoal", "Poupança", "Reserva de Emergência"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Xepa Financeira?
+## What is Xepa Financeira?
 
 Xepa é a prática de comprar produtos com desconto no final do expediente de feiras livres, padarias e supermercados. Os comerciantes preferem vender barato a jogar fora. Você economiza 30-70% em alimentos frescos.
 
-## Como funciona
+## How does it work?
 
 - **Feiras livres:** vá nos últimos 30 minutos. Feirantes dão descontos de 50%+
 - **Padarias:** pães e bolos do dia anterior com 50% de desconto
@@ -26,7 +26,7 @@ Xepa é a prática de comprar produtos com desconto no final do expediente de fe
 | R$ 200/mês em pão | R$ 100/mês | R$ 100/mês |
 | **Total anual** | | **R$ 6.000** |
 
-## Dicas práticas
+## Tips práticas
 
 1. Vá à feira depois das 12h (sábado) ou 17h (dias de semana)
 2. Leve sacolas próprias e dinheiro trocado

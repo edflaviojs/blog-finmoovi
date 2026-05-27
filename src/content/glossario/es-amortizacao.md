@@ -7,7 +7,7 @@ relatedTerms: ["Juros Compostos", "Financiamento", "Tabela SAC"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Amortização?
+## ¿Qué es Amortização?
 
 Amortização é o ato de pagar o valor principal de uma dívida aos poucos. Cada parcela que você paga tem duas partes: a amortização (que reduz o saldo devedor) e os juros (que é o custo do empréstimo).
 
@@ -23,7 +23,7 @@ Amortização é o ato de pagar o valor principal de uma dívida aos poucos. Cad
 - No começo, a maior parte da parcela é juros
 - Paga mais juros no total que a SAC
 
-## Exemplo prático
+## Ejemplo práctico
 
 Financiamento de R$ 100.000 em 30 anos a 10% a.a.:
 - **SAC:** primeira parcela ~R$ 1.111, última ~R$ 282. Total pago: ~R$ 250.000

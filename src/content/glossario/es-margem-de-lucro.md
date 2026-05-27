@@ -7,7 +7,7 @@ relatedTerms: ["Orçamento Pessoal", "Dividendos", "Ações"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Margem de Lucro?
+## ¿Qué es Margem de Lucro?
 
 Margem de lucro é quanto sobra de cada real que entra. Se uma empresa fatura R$ 100 e tem R$ 80 de custos, sua margem de lucro é 20%. Quanto maior a margem, mais eficiente é o negócio.
 
@@ -25,7 +25,7 @@ Margem de lucro é quanto sobra de cada real que entra. Se uma empresa fatura R$
 - Lucro Líquido ÷ Receita × 100
 - Mostra quanto realmente sobra no final
 
-## Exemplo prático (loja de roupas)
+## Ejemplo práctico (loja de roupas)
 
 | | Valor | Margem |
 |--|-------|--------|

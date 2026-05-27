@@ -7,7 +7,7 @@ relatedTerms: ["Imposto de Renda", "CDI", "Câmbio"]
 publishedAt: 2025-05-10
 ---
 
-## O que é IOF?
+## ¿Qué es IOF?
 
 IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sobre diversas operações financeiras: empréstimos, câmbio, seguros e até investimentos resgatados em menos de 30 dias.
 

@@ -7,7 +7,7 @@ relatedTerms: ["Patrimônio Líquido", "Diversificação", "Previdência Privada
 publishedAt: 2025-05-10
 ---
 
-## O que é Wealth Management?
+## What is Wealth Management?
 
 Wealth Management (gestão de patrimônio) é um serviço financeiro premium que cuida de todos os aspectos da vida financeira de uma pessoa: investimentos, impostos, herança, seguros e planejamento de longo prazo.
 

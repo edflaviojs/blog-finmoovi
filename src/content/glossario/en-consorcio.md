@@ -7,11 +7,11 @@ relatedTerms: ["Financiamento", "Amortização", "Poupança"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Consórcio?
+## What is Consórcio?
 
 Consórcio é um sistema onde várias pessoas se juntam para comprar algo (carro, imóvel, moto). Todo mês, cada participante paga uma parcela. A cada mês, um ou mais participantes são contemplados (por sorteio ou lance) e recebem a carta de crédito para comprar o bem.
 
-## Como funciona
+## How does it work?
 
 1. Você entra em um grupo de consórcio
 2. Paga parcelas mensais (sem juros, mas com taxa de administração)
@@ -19,14 +19,14 @@ Consórcio é um sistema onde várias pessoas se juntam para comprar algo (carro
 4. Contemplados recebem carta de crédito
 5. Pode dar lance (oferecer parcelas adiantadas) para ser contemplado antes
 
-## Vantagens
+## Advantages
 
 - Não tem juros (apenas taxa de administração de 10-20% do total)
 - Disciplina de poupança forçada
 - Poder de compra à vista (carta de crédito)
 - Pode usar FGTS para lance (imóveis)
 
-## Desvantagens
+## Disadvantages
 
 - Não sabe quando será contemplado
 - Taxa de administração pode ser alta

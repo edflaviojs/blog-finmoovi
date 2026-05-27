@@ -23,14 +23,14 @@ Debêntures são títulos de dívida emitidos por empresas. Quando você compra 
 - Financiam projetos de infraestrutura
 - Rendimento: IPCA + taxa fixa
 
-## Vantagens
+## Ventajas
 
 - Rendimento geralmente maior que CDB e Tesouro
 - Debêntures incentivadas são isentas de IR
 - Diversificação da renda fixa
 - Prazos variados (2 a 15 anos)
 
-## Riscos
+## Riesgos
 
 - **Risco de crédito:** empresa pode não pagar (não tem FGC)
 - **Risco de liquidez:** pode ser difícil vender antes do vencimento

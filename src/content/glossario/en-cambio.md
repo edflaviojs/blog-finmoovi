@@ -7,17 +7,17 @@ relatedTerms: ["IOF", "Diversificação", "IPCA"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Câmbio?
+## What is Câmbio?
 
 Câmbio é a troca de uma moeda por outra. Quando você compra dólares para viajar ou quando uma empresa importa produtos, está fazendo uma operação de câmbio. A taxa de câmbio indica quanto custa uma moeda em relação a outra.
 
-## Como funciona a taxa de câmbio
+## How does it work? a taxa de câmbio
 
 - **USD/BRL = 5,50** significa que 1 dólar custa R$ 5,50
 - A taxa muda a cada segundo no mercado
 - É influenciada por juros, inflação, política e fluxo de capitais
 
-## Tipos de câmbio
+## Types de câmbio
 
 | Tipo | Uso | Spread |
 |------|-----|--------|
@@ -25,7 +25,7 @@ Câmbio é a troca de uma moeda por outra. Quando você compra dólares para via
 | Turismo | Compra de moeda para viagem | Maior (3-5%) |
 | Paralelo | Mercado informal (ilegal) | Variável |
 
-## Dicas para comprar moeda estrangeira
+## Tips para comprar moeda estrangeira
 
 1. **Compre aos poucos** — não tente acertar o melhor momento
 2. **Compare casas de câmbio** — spreads variam muito

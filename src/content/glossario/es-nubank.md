@@ -7,7 +7,7 @@ relatedTerms: ["PIX", "Score de Crédito", "CDI"]
 publishedAt: 2025-05-10
 ---
 
-## O que é Nubank?
+## ¿Qué es Nubank?
 
 Nubank é um banco digital (fintech) fundado em 2013 no Brasil. Começou com cartão de crédito sem anuidade e hoje oferece conta completa, investimentos, empréstimos e seguros. É o maior banco digital da América Latina.
 
@@ -19,7 +19,7 @@ Nubank é um banco digital (fintech) fundado em 2013 no Brasil. Começou com car
 - **Empréstimos:** pessoal e antecipação de salário
 - **Seguros:** vida e celular
 
-## Vantagens
+## Ventajas
 
 - Zero tarifas de manutenção
 - App intuitivo e bem feito
@@ -27,7 +27,7 @@ Nubank é um banco digital (fintech) fundado em 2013 no Brasil. Começou com car
 - Rendimento automático na conta (100% CDI)
 - Cartão sem anuidade
 
-## Desvantagens
+## Desventajas
 
 - Limite de crédito pode ser baixo no início
 - Não tem agências físicas
