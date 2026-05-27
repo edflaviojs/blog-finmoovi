@@ -7,33 +7,33 @@ relatedTerms: ["Orçamento Pessoal", "Poupança", "Reserva de Emergência"]
 publishedAt: 2025-05-10
 ---
 
-## What is Xepa Financeira?
+## What is Financial Bargain Hunting?
 
-Xepa é a prática de comprar produtos com desconto no final do expediente de feiras livres, padarias e supermercados. Os comerciantes preferem vender barato a jogar fora. Você economiza 30-70% em alimentos frescos.
+Financial Bargain Hunting is the practice of buying products at a discount at the end of the business day at street markets, bakeries, and supermarkets. Merchants prefer to sell cheaply rather than throwing products away. You can save 30-70% on fresh food.
 
 ## How does it work?
 
-- **Feiras livres:** vá nos últimos 30 minutos. Feirantes dão descontos de 50%+
-- **Padarias:** pães e bolos do dia anterior com 50% de desconto
-- **Supermercados:** produtos próximos do vencimento com 30-50% off
-- **Apps de xepa:** Too Good To Go, Comida Invisível
+- **Street markets:** go during the last 30 minutes. Street vendors offer discounts of 50%+
+- **Bakeries:** bread and cakes from the previous day with 50% discount
+- **Supermarkets:** products near expiration with 30-50% off
+- **Bargain hunting apps:** Too Good To Go, Comida Invisível
 
-## Quanto dá para economizar
+## How much can you save
 
-| Sem xepa | Com xepa | Economia |
+| Without bargain hunting | With bargain hunting | Savings |
 |----------|----------|----------|
-| R$ 800/mês em feira | R$ 400/mês | R$ 400/mês |
-| R$ 200/mês em pão | R$ 100/mês | R$ 100/mês |
-| **Total anual** | | **R$ 6.000** |
+| R$ 800/month at the market | R$ 400/month | R$ 400/month |
+| R$ 200/month on bread | R$ 100/month | R$ 100/month |
+| **Total annual** | | **R$ 6,000** |
 
-## Tips práticas
+## Practical tips
 
-1. Vá à feira depois das 12h (sábado) ou 17h (dias de semana)
-2. Leve sacolas próprias e dinheiro trocado
-3. Seja simpático com os feirantes (negociação é relação)
-4. Congele o que não for usar imediatamente
-5. Combine com vizinhos para comprar em quantidade
+1. Go to the market after 12pm (Saturday) or 5pm (weekdays)
+2. Bring your own bags and change
+3. Be friendly with the vendors (negotiation is about relationships)
+4. Freeze what you won't use immediately
+5. Team up with neighbors to buy in bulk
 
-## Xepa + controle financeiro
+## Bargain hunting + financial control
 
-Registre suas economias no FinMoovi. Crie uma categoria "Economia Xepa" e veja quanto está economizando por mês. Esse dinheiro pode ir direto para investimentos.
+Record your savings on FinMoovi. Create a category "Bargain Hunting Savings" and see how much you're saving per month. This money can go directly into investments, such as CDI, ETF, or CDB, and help you reach your financial goals, like beating IPCA inflation, or paying less IOF, and using PIX for free transactions, all while having a safety net with FGC, and investing on B3.

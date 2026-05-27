@@ -9,27 +9,27 @@ publishedAt: 2025-05-10
 
 ## What is a Taxa Selic?
 
-A Selic é a taxa básica de juros do Brasil. É definida pelo Copom (Comitê de Política Monetária do Banco Central) a cada 45 dias. Ela é a "mãe" de todas as taxas de juros — quando a Selic sobe, tudo fica mais caro (empréstimos, financiamentos). Quando cai, fica mais barato.
+A Selic is the basic interest rate in Brazil. It is defined by the Copom (Monetary Policy Committee of the Central Bank) every 45 days. It is the "mother" of all interest rates — when the Selic rises, everything becomes more expensive (loans, financing). When it falls, it becomes cheaper.
 
-## Para que serve
+## What is it for
 
-O Banco Central usa a Selic para controlar a inflação:
-- **Inflação alta?** → Sobe a Selic → Crédito fica caro → Pessoas gastam menos → Preços param de subir
-- **Economia fraca?** → Desce a Selic → Crédito fica barato → Pessoas gastam mais → Economia aquece
+The Central Bank uses the Selic to control inflation:
+- **High inflation?** → Raise the Selic → Credit becomes expensive → People spend less → Prices stop rising
+- **Weak economy?** → Lower the Selic → Credit becomes cheap → People spend more → Economy heats up
 
-## Impacto nos seus investimentos
+## Impact on your investments
 
-| Selic alta | Selic baixa |
+| Selic high | Selic low |
 |-----------|-------------|
-| Renda fixa rende mais | Renda fixa rende menos |
-| Poupança melhora | Poupança piora |
-| Ações tendem a cair | Ações tendem a subir |
-| Financiamentos caros | Financiamentos baratos |
+| Fixed income yields more | Fixed income yields less |
+| Savings improve | Savings worsen |
+| Stocks tend to fall | Stocks tend to rise |
+| Expensive financing | Cheap financing |
 
-## Selic e CDI
+## Selic and CDI
 
-O CDI acompanha a Selic de perto (geralmente 0,10% abaixo). Quando você vê "CDB que rende 100% do CDI", está rendendo praticamente a Selic.
+The CDI closely follows the Selic (usually 0.10% below). When you see "CDB that yields 100% of the CDI", it's yielding practically the Selic.
 
-## Selic atual
+## Current Selic
 
-A Selic é atualizada a cada reunião do Copom. Consulte o site do Banco Central para o valor atual.
+The Selic is updated at each Copom meeting. Check the Central Bank's website for the current value.

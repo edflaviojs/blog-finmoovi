@@ -7,36 +7,36 @@ relatedTerms: ["Reserva de Emergência", "Cheque Especial", "Orçamento Pessoal"
 publishedAt: 2025-05-10
 ---
 
-## What is Urgência Financeira?
+## What is Financial Emergency?
 
-Urgência financeira é qualquer situação inesperada que exige dinheiro que você não planejou gastar. Pode ser uma demissão, um problema de saúde, um conserto no carro ou um eletrodoméstico que quebrou.
+Financial emergency is any unexpected situation that requires money you didn't plan to spend. It can be a layoff, a health problem, a car repair or a broken appliance.
 
-## Examples comuns
+## Common Examples
 
-- Perda de emprego (precisa de 3-6 meses de gastos)
-- Emergência médica (cirurgia, tratamento)
-- Conserto do carro (R$ 2.000-5.000)
-- Eletrodoméstico quebrado (geladeira, máquina de lavar)
-- Problema no imóvel (infiltração, encanamento)
-- Multa ou imposto inesperado
+- Job loss (need 3-6 months of expenses)
+- Medical emergency (surgery, treatment)
+- Car repair (R$ 2.000-5.000)
+- Broken appliance (refrigerator, washing machine)
+- Property problem (leak, plumbing)
+- Unexpected fine or tax
 
-## Como se preparar
+## How to Prepare
 
-A melhor proteção contra urgências financeiras é a **reserva de emergência**:
-- 6 meses de gastos para CLT
-- 12 meses para autônomos/PJ
-- Em investimento com liquidez diária (Tesouro Selic, CDB)
+The best protection against financial emergencies is the **emergency reserve**:
+- 6 months of expenses for CLT
+- 12 months for self-employed/individual entrepreneurs
+- In investments with daily liquidity (Tesouro Selic, CDB)
 
-## O que fazer se não tem reserva
+## What to Do if You Don't Have a Reserve
 
-Se a urgência chegou e você não tem reserva:
-1. **Não use cheque especial** (juros de 15%/mês)
-2. **Não use rotativo do cartão** (juros de 16%/mês)
-3. Peça empréstimo consignado (juros de 1-2%/mês)
-4. Antecipe FGTS ou 13º
-5. Venda algo que não usa (marketplace)
-6. Negocie parcelamento direto com o credor
+If the emergency arrives and you don't have a reserve:
+1. **Don't use overdraft** (interest rates of 15%/month)
+2. **Don't use credit card revolving** (interest rates of 16%/month)
+3. Request a payroll loan (interest rates of 1-2%/month)
+4. Anticipate FGTS or 13th salary
+5. Sell something you don't use (marketplace)
+6. Negotiate direct installment with the creditor
 
-## Prevenção
+## Prevention
 
-Após resolver a urgência, priorize montar sua reserva de emergência. Comece com R$ 1.000 (já cobre a maioria dos imprevistos pequenos) e vá aumentando até 6 meses de gastos.
+After resolving the emergency, prioritize building your emergency reserve. Start with R$ 1.000 (already covers most small unexpected expenses) and increase it up to 6 months of expenses.

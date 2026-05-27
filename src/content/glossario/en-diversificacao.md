@@ -9,32 +9,32 @@ publishedAt: 2025-05-10
 
 ## What is Diversificação?
 
-Diversificação é a estratégia de espalhar seu dinheiro entre diferentes tipos de investimentos. A ideia é simples: se um investimento vai mal, os outros compensam. É o famoso "não coloque todos os ovos na mesma cesta".
+Diversificação is the strategy of spreading your money among different types of investments. The idea is simple: if one investment goes bad, the others make up for it. It's the famous "don't put all your eggs in one basket".
 
 ## Por que diversificar?
 
-- Reduz o risco de perder tudo
-- Suaviza as oscilações da carteira
-- Aumenta as chances de bons retornos no longo prazo
-- Protege contra crises em setores específicos
+- Reduces the risk of losing everything
+- Smooths out the fluctuations in your portfolio
+- Increases the chances of good returns in the long term
+- Protects against crises in specific sectors
 
 ## Como diversificar na prática
 
 ### Por classe de ativo
-- Renda fixa (CDB, Tesouro Direto)
-- Renda variável (ações, FIIs)
-- Internacional (ETFs de S&P 500)
-- Reserva de emergência (Selic, CDB liquidez diária)
+- Fixed income (CDB, Tesouro Direto)
+- Variable income (stocks, FIIs)
+- International (ETFs of S&P 500)
+- Emergency reserve (Selic, daily liquidity CDB)
 
 ### Exemplo de carteira diversificada (perfil moderado)
 | Classe | Percentual | Exemplo |
 |--------|-----------|---------|
 | Renda Fixa | 40% | Tesouro IPCA+, CDB |
-| Ações BR | 25% | BOVA11, ações individuais |
+| Ações BR | 25% | BOVA11, individual stocks |
 | FIIs | 15% | HGLG11, XPLG11 |
 | Internacional | 15% | IVVB11 |
 | Cripto | 5% | Bitcoin, Ethereum |
 
 ## Erro comum
 
-Muita gente acha que ter 10 CDBs diferentes é diversificar. Não é — são todos renda fixa. Diversificação real é ter classes de ativos diferentes que se comportam de formas diferentes.
+Many people think that having 10 different CDBs is diversifying. It's not — they're all fixed income. Real diversification is having different asset classes that behave in different ways.

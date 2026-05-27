@@ -7,43 +7,43 @@ relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência F
 publishedAt: 2025-05-10
 ---
 
-## What is Meta Financeira?
+## What is Financial Goal?
 
-Meta financeira é um objetivo concreto para seu dinheiro. Não é "quero economizar mais" — é "quero juntar R$ 10.000 até dezembro de 2025 para dar entrada no carro". Quanto mais específica, maior a chance de alcançar.
+Financial goal is a concrete objective for your money. It's not "I want to save more" — it's "I want to save R$ 10,000 by December 2025 to make a down payment on a car". The more specific, the higher the chance of achieving it.
 
-## Como definir boas metas (método SMART)
+## How to define good goals (SMART method)
 
-- **S**pecífica: "Juntar R$ 10.000" (não "economizar mais")
-- **M**ensurável: valor exato que pode acompanhar
-- **A**lcançável: possível com sua renda atual
-- **R**elevante: importante para você
-- **T**emporal: com prazo definido
+- **S**pecific: "Save R$ 10,000" (not "save more")
+- **M**easurable: exact value that can be tracked
+- **A**chievable: possible with your current income
+- **R**elevant: important to you
+- **T**ime-bound: with a defined deadline
 
-## Examples de metas
+## Examples of goals
 
-### Curto prazo (até 1 ano)
-- Montar reserva de emergência de R$ 15.000
-- Quitar cartão de crédito de R$ 3.000
-- Juntar R$ 5.000 para viagem
+### Short term (up to 1 year)
+- Build an emergency fund of R$ 15,000
+- Pay off a credit card debt of R$ 3,000
+- Save R$ 5,000 for a trip
 
-### Médio prazo (1-5 anos)
-- Juntar R$ 50.000 para entrada do apartamento
-- Trocar de carro (R$ 30.000)
-- Fazer intercâmbio (R$ 20.000)
+### Medium term (1-5 years)
+- Save R$ 50,000 for a down payment on an apartment
+- Buy a new car (R$ 30,000)
+- Study abroad (R$ 20,000)
 
-### Longo prazo (5+ anos)
-- Independência financeira (R$ 1.500.000)
-- Aposentadoria complementar
-- Comprar imóvel à vista
+### Long term (5+ years)
+- Achieve financial independence (R$ 1,500,000)
+- Supplemental retirement
+- Buy a property outright
 
-## Como acompanhar
+## How to track
 
-1. Defina o valor total e o prazo
-2. Divida pelo número de meses (aporte mensal necessário)
-3. Automatize a transferência mensal
-4. Acompanhe o progresso (apps como FinMoovi ajudam)
-5. Celebre marcos intermediários (25%, 50%, 75%)
+1. Define the total value and deadline
+2. Divide by the number of months (monthly contribution needed)
+3. Automate the monthly transfer
+4. Track progress (apps like FinMoovi can help)
+5. Celebrate intermediate milestones (25%, 50%, 75%)
 
-## Dica
+## Tip
 
-Tenha no máximo 3 metas simultâneas. Muitas metas dividem seu foco e dinheiro — nenhuma avança rápido o suficiente para motivar.
+Have no more than 3 goals at the same time. Too many goals divide your focus and money — none of them advance quickly enough to motivate.

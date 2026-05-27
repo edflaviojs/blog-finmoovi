@@ -9,28 +9,28 @@ publishedAt: 2025-05-10
 
 ## What is ETF?
 
-ETF (Exchange Traded Fund) é um fundo de investimento que é negociado na bolsa como se fosse uma ação. Ele replica um índice — por exemplo, o BOVA11 replica o Ibovespa, então ao comprar BOVA11 você está investindo nas maiores empresas do Brasil de uma vez.
+ETF (Exchange Traded Fund) is an investment fund that is traded on the stock exchange like a stock. It replicates an index — for example, BOVA11 replicates the Ibovespa, so when you buy BOVA11 you are investing in the largest companies in Brazil all at once.
 
 ## Advantages
 
-- **Diversificação instantânea:** com 1 compra, você investe em dezenas de empresas
-- **Baixo custo:** taxas menores que fundos tradicionais
-- **Simplicidade:** não precisa escolher ações individuais
-- **Liquidez:** compra e vende na hora, como ações
+- **Instant diversification:** with 1 purchase, you invest in dozens of companies
+- **Low cost:** lower fees than traditional funds
+- **Simplicity:** no need to choose individual stocks
+- **Liquidity:** buy and sell at any time, like stocks
 
-## ETFs populares no Brasil
+## Popular ETFs in Brazil
 
-| ETF | O que replica | Taxa |
+| ETF | What it replicates | Fee |
 |-----|--------------|------|
-| BOVA11 | Ibovespa (maiores empresas BR) | 0,10% |
-| IVVB11 | S&P 500 (maiores empresas EUA) | 0,23% |
-| HASH11 | Criptomoedas | 0,30% |
-| SMAL11 | Small Caps brasileiras | 0,50% |
+| BOVA11 | Ibovespa (largest BR companies) | 0,10% |
+| IVVB11 | S&P 500 (largest US companies) | 0,23% |
+| HASH11 | Cryptocurrencies | 0,30% |
+| SMAL11 | Brazilian Small Caps | 0,50% |
 
-## Para quem é indicado
+## For whom is it indicated
 
-ETFs são perfeitos para quem:
-- Quer investir em ações mas não sabe escolher
-- Busca diversificação com pouco dinheiro
-- Prefere uma estratégia passiva (buy and hold)
-- Quer exposição internacional sem abrir conta fora
+ETFs are perfect for those who:
+- Want to invest in stocks but don't know how to choose
+- Seek diversification with little money
+- Prefer a passive strategy (buy and hold)
+- Want international exposure without opening a foreign account

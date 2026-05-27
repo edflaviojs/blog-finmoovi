@@ -7,46 +7,46 @@ relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência F
 publishedAt: 2025-05-10
 ---
 
-## What is Educação Financeira?
+## What is Financial Education?
 
-Educação financeira é aprender a lidar com dinheiro de forma inteligente. Não é sobre ficar rico rápido — é sobre entender como o dinheiro funciona para tomar melhores decisões no dia a dia.
+Financial education is about learning to handle money intelligently. It's not about getting rich quickly — it's about understanding how money works to make better decisions in your daily life.
 
-## Os 4 pilares
+## The 4 Pillars
 
-### 1. Ganhar
-- Desenvolver habilidades que o mercado valoriza
-- Negociar salário
-- Criar fontes de renda extra
-- Empreender
+### 1. Earning
+- Developing skills that the market values
+- Negotiating salary
+- Creating extra sources of income
+- Entrepreneurship
 
-### 2. Gastar
-- Diferenciar necessidades de desejos
-- Pesquisar antes de comprar
-- Evitar compras por impulso
-- Usar a regra das 48h (esperar antes de comprar)
+### 2. Spending
+- Differentiating needs from desires
+- Researching before buying
+- Avoiding impulse purchases
+- Using the 48h rule (waiting before buying)
 
-### 3. Poupar
-- Pagar-se primeiro (separar antes de gastar)
-- Automatizar transferências para investimentos
-- Ter metas claras de economia
-- Reserva de emergência como prioridade
+### 3. Saving
+- Paying yourself first (setting aside before spending)
+- Automating transfers to investments
+- Having clear savings goals
+- Emergency reserve as a priority
 
-### 4. Investir
-- Entender risco vs. retorno
-- Começar cedo (juros compostos)
-- Diversificar
-- Ter paciência (longo prazo)
+### 4. Investing
+- Understanding risk vs. return
+- Starting early (compound interest)
+- Diversifying
+- Having patience (long-term)
 
-## Por que a escola não ensina
+## Why School Doesn't Teach
 
-Infelizmente, educação financeira não é prioridade no currículo escolar brasileiro. A maioria das pessoas aprende sobre dinheiro por tentativa e erro — geralmente depois de cometer erros caros.
+Unfortunately, financial education is not a priority in the Brazilian school curriculum. Most people learn about money through trial and error — usually after making expensive mistakes.
 
-## Como começar
+## How to Start
 
-1. Anote todos os seus gastos por 30 dias
-2. Monte um orçamento simples
-3. Quite dívidas caras (cheque especial, rotativo)
-4. Monte reserva de emergência
-5. Comece a investir (mesmo R$ 50/mês)
-6. Leia 1 livro de finanças por trimestre
-7. Use o FinMoovi para automatizar o controle
+1. Write down all your expenses for 30 days
+2. Create a simple budget
+3. Pay off expensive debts (checking account, overdraft)
+4. Build an emergency reserve
+5. Start investing (even R$ 50/month)
+6. Read 1 finance book per quarter
+7. Use FinMoovi to automate control

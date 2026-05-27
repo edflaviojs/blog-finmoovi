@@ -7,35 +7,35 @@ relatedTerms: ["Renda Variável", "Ações", "Diversificação"]
 publishedAt: 2025-05-10
 ---
 
-## What is Volatilidade?
+## What is Volatility?
 
-Volatilidade é a intensidade com que o preço de um investimento sobe e desce. Um ativo volátil pode valorizar 5% em um dia e cair 3% no dia seguinte. Quanto maior a volatilidade, maior o risco — mas também maior o potencial de ganho.
+Volatility is the intensity with which the price of an investment rises and falls. A volatile asset can appreciate 5% in one day and fall 3% the next. The higher the volatility, the higher the risk — but also the higher the potential for gain.
 
-## Examples de volatilidade
+## Examples of volatility
 
-| Ativo | Volatilidade | Variação típica diária |
+| Asset | Volatility | Typical daily variation |
 |-------|-------------|----------------------|
-| Poupança | Quase zero | 0% |
-| Tesouro Selic | Muito baixa | 0,03% |
-| Ações (Ibovespa) | Média | 1-2% |
-| Bitcoin | Muito alta | 3-10% |
-| Meme coins | Extrema | 10-50% |
+| Savings | Almost zero | 0% |
+| Treasury Selic | Very low | 0.03% |
+| Stocks (Ibovespa) | Medium | 1-2% |
+| Bitcoin | Very high | 3-10% |
+| Meme coins | Extreme | 10-50% |
 
-## Volatilidade é ruim?
+## Is volatility bad?
 
-Não necessariamente. Depende do seu perfil:
-- **Conservador:** volatilidade é estresse. Prefira renda fixa.
-- **Moderado:** aceita alguma oscilação em troca de mais retorno.
-- **Arrojado:** usa a volatilidade a seu favor (compra nas quedas).
+Not necessarily. It depends on your profile:
+- **Conservative:** volatility is stress. Prefer fixed income.
+- **Moderate:** accepts some oscillation in exchange for higher returns.
+- **Daring:** uses volatility to their advantage (buys on dips).
 
-## Como lidar com a volatilidade
+## How to deal with volatility
 
-1. **Tenha horizonte longo** — no curto prazo, tudo oscila
-2. **Diversifique** — ativos diferentes oscilam em momentos diferentes
-3. **Não olhe todo dia** — verificar preços diariamente gera ansiedade
-4. **Invista regularmente** — aportes mensais suavizam o preço médio
-5. **Tenha reserva de emergência** — para não precisar vender na baixa
+1. **Have a long horizon** — in the short term, everything oscillates
+2. **Diversify** — different assets oscillate at different times
+3. **Don't check every day** — checking prices daily generates anxiety
+4. **Invest regularly** — monthly contributions smooth out the average price
+5. **Have an emergency reserve** — to avoid having to sell at a low price
 
-## Índice de volatilidade
+## Volatility index
 
-No Brasil, o principal indicador é o **VIX** (índice do medo). Quando o VIX está alto, o mercado está nervoso. Quando está baixo, está calmo.
+In Brazil, the main indicator is the **VIX** (fear index). When the VIX is high, the market is nervous. When it's low, it's calm.

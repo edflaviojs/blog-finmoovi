@@ -9,34 +9,34 @@ publishedAt: 2025-05-10
 
 ## What is Tabela SAC?
 
-SAC (Sistema de Amortização Constante) é um método de pagamento de financiamentos onde o valor da amortização (parte que reduz a dívida) é igual em todas as parcelas. Como os juros diminuem conforme o saldo devedor cai, as parcelas ficam menores ao longo do tempo.
+SAC (Sistema de Amortização Constante) is a loan repayment method where the amortization amount (the part that reduces the debt) is the same for all installments. As the interest decreases as the outstanding balance falls, the installments become smaller over time.
 
 ## How does it work?
 
-- **Amortização:** fixa (valor do empréstimo ÷ número de parcelas)
-- **Juros:** calculados sobre o saldo devedor (diminuem a cada mês)
-- **Parcela:** amortização + juros (começa alta, termina baixa)
+- **Amortization:** fixed (loan amount ÷ number of installments)
+- **Interest:** calculated on the outstanding balance (decreases every month)
+- **Installment:** amortization + interest (starts high, ends low)
 
 ## Practical example
 
-Financiamento de R$ 120.000 em 10 anos (120 meses) a 1% ao mês:
-- Amortização mensal: R$ 120.000 ÷ 120 = R$ 1.000
-- 1ª parcela: R$ 1.000 + R$ 1.200 (juros) = **R$ 2.200**
-- 60ª parcela: R$ 1.000 + R$ 610 = **R$ 1.610**
-- 120ª parcela: R$ 1.000 + R$ 10 = **R$ 1.010**
+Financing of R$ 120,000 in 10 years (120 months) at 1% per month:
+- Monthly amortization: R$ 120,000 ÷ 120 = R$ 1,000
+- 1st installment: R$ 1,000 + R$ 1,200 (interest) = **R$ 2,200**
+- 60th installment: R$ 1,000 + R$ 610 = **R$ 1,610**
+- 120th installment: R$ 1,000 + R$ 10 = **R$ 1,010**
 
 ## SAC vs. Price
 
 | | SAC | Price |
 |--|-----|-------|
-| Parcelas | Decrescentes | Fixas |
-| Juros totais | Menores | Maiores |
-| Primeira parcela | Maior | Menor |
-| Ideal para | Quem pode pagar mais no início | Quem precisa de parcela fixa |
+| Installments | Decreasing | Fixed |
+| Total interest | Lower | Higher |
+| First installment | Higher | Lower |
+| Ideal for | Those who can pay more at the beginning | Those who need a fixed installment |
 
-## Quando escolher SAC
+## When to choose SAC
 
-- Quando sua renda permite pagar parcelas maiores no início
-- Quando quer economizar no total de juros
-- Em financiamentos longos (a diferença é enorme)
-- Quando planeja amortizar antecipadamente
+- When your income allows you to pay larger installments at the beginning
+- When you want to save on total interest
+- For long-term financing (the difference is huge)
+- When you plan to amortize ahead of schedule

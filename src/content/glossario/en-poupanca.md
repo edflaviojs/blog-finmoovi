@@ -7,36 +7,36 @@ relatedTerms: ["Selic", "CDI", "Reserva de Emergência"]
 publishedAt: 2025-05-10
 ---
 
-## What is a Poupança?
+## What is a Savings Account?
 
-A caderneta de poupança é o investimento mais conhecido do Brasil. Quase todo mundo tem ou já teve. É simples, isenta de imposto de renda e tem liquidez imediata. Porém, rende pouco — geralmente perde para a inflação.
+The savings account is the most well-known investment in Brazil. Almost everyone has or has had one. It's simple, exempt from income tax, and has immediate liquidity. However, it yields little — generally losing to inflation.
 
-## Como rende
+## How it yields
 
-A regra mudou em 2012:
-- **Selic > 8,5% ao ano:** poupança rende 0,5% ao mês + TR
-- **Selic ≤ 8,5% ao ano:** poupança rende 70% da Selic + TR
+The rule changed in 2012:
+- **Selic > 8.5% per year:** savings account yields 0.5% per month + TR
+- **Selic ≤ 8.5% per year:** savings account yields 70% of Selic + TR
 
-## Poupança vs. outras opções
+## Savings Account vs. other options
 
-| Investimento | Rendimento anual* | IR | Liquidez |
+| Investment | Annual Yield* | IR | Liquidity |
 |-------------|-------------------|-----|----------|
-| Poupança | ~7% | Isento | Imediata |
-| Tesouro Selic | ~13% | 15-22,5% | D+1 |
-| CDB 100% CDI | ~13% | 15-22,5% | Diária |
-| LCI/LCA | ~10% | Isento | 90+ dias |
+| Savings Account | ~7% | Exempt | Immediate |
+| Tesouro Selic | ~13% | 15-22.5% | D+1 |
+| CDB 100% CDI | ~13% | 15-22.5% | Daily |
+| LCI/LCA | ~10% | Exempt | 90+ days |
 
-*Valores aproximados com Selic a 13,75%
+*Approximate values with Selic at 13.75%
 
-## Por que a poupança não é o melhor investimento
+## Why the savings account is not the best investment
 
-1. Rende menos que a inflação em muitos cenários
-2. Rendimento só é creditado no "aniversário" (dia do depósito)
-3. Se sacar antes do aniversário, perde o rendimento do mês
-4. Existem opções tão seguras que rendem mais (Tesouro Selic)
+1. Yields less than inflation in many scenarios
+2. Yield is only credited on the "anniversary" (day of deposit)
+3. If withdrawn before the anniversary, the monthly yield is lost
+4. There are options just as safe that yield more (Tesouro Selic)
 
-## Quando a poupança faz sentido
+## When the savings account makes sense
 
-- Para valores muito pequenos (menos de R$ 100)
-- Para quem não quer complexidade nenhuma
-- Como conta intermediária antes de investir
+- For very small amounts (less than R$ 100)
+- For those who don't want any complexity
+- As an intermediate account before investing

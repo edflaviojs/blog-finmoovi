@@ -9,38 +9,38 @@ publishedAt: 2025-05-10
 
 ## What is PIX?
 
-PIX é o sistema de pagamentos instantâneos criado pelo Banco Central em 2020. Permite transferir dinheiro em até 10 segundos, 24 horas por dia, 7 dias por semana — inclusive feriados. É gratuito para pessoas físicas.
+PIX is the instant payment system created by the Banco Central in 2020. It allows you to transfer money in up to 10 seconds, 24 hours a day, 7 days a week — including holidays. It's free for individuals.
 
 ## How does it work?
 
-1. Você cadastra uma "chave PIX" (CPF, email, telefone ou chave aleatória)
-2. Para receber, basta informar sua chave
-3. Para pagar, usa a chave do destinatário ou QR Code
-4. O dinheiro cai na hora
+1. You register a "PIX key" (CPF, email, phone number or random key)
+2. To receive, just provide your key
+3. To pay, use the recipient's key or QR Code
+4. The money is transferred immediately
 
 ## Advantages
 
-- Gratuito para pessoa física
-- Instantâneo (10 segundos)
-- Funciona 24/7
-- Substitui TED, DOC e boleto
-- Pode pagar em lojas físicas e online
+- Free for individuals
+- Instant (10 seconds)
+- Works 24/7
+- Replaces TED, DOC, and boleto
+- Can pay in physical and online stores
 
-## Segurança
+## Security
 
-- Limite noturno (20h-6h): R$ 1.000 (padrão, pode alterar)
-- Mecanismo Especial de Devolução (MED) para fraudes
-- Autenticação por senha/biometria no app do banco
-- Pode bloquear chaves suspeitas
+- Nighttime limit (8pm-6am): R$ 1,000 (default, can be changed)
+- Special Refund Mechanism (MED) for fraud
+- Password/biometric authentication in the bank's app
+- Can block suspicious keys
 
-## Tips de segurança
+## Security Tips
 
-1. Nunca compartilhe senhas ou códigos de verificação
-2. Desconfie de PIX pedidos por WhatsApp (golpe comum)
-3. Configure limite noturno baixo
-4. Use chave aleatória para desconhecidos (não CPF)
-5. Ative notificações de transação
+1. Never share passwords or verification codes
+2. Be wary of PIX requests via WhatsApp (common scam)
+3. Set a low nighttime limit
+4. Use a random key for unknown recipients (not CPF)
+5. Activate transaction notifications
 
-## PIX e controle financeiro
+## PIX and financial control
 
-O PIX facilita o rastreamento de gastos porque todas as transações ficam registradas no extrato. Apps como o FinMoovi categorizam automaticamente seus PIX para você saber exatamente para onde vai seu dinheiro.
+PIX makes it easier to track expenses because all transactions are recorded in the statement. Apps like FinMoovi automatically categorize your PIX transactions so you know exactly where your money is going.

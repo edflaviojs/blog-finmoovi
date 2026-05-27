@@ -9,30 +9,30 @@ publishedAt: 2025-05-10
 
 ## ¿Qué es Câmbio?
 
-Câmbio é a troca de uma moeda por outra. Quando você compra dólares para viajar ou quando uma empresa importa produtos, está fazendo uma operação de câmbio. A taxa de câmbio indica quanto custa uma moeda em relação a outra.
+Câmbio es el intercambio de una moneda por otra. Cuando compras dólares para viajar o cuando una empresa importa productos, estás realizando una operación de câmbio. La tasa de câmbio indica cuánto cuesta una moneda en relación con otra.
 
-## ¿Cómo funciona? a taxa de câmbio
+## ¿Cómo funciona la tasa de câmbio
 
-- **USD/BRL = 5,50** significa que 1 dólar custa R$ 5,50
-- A taxa muda a cada segundo no mercado
-- É influenciada por juros, inflação, política e fluxo de capitais
+- **USD/BRL = 5,50** significa que 1 dólar cuesta R$ 5,50
+- La tasa cambia cada segundo en el mercado
+- Está influenciada por los intereses, la inflación, la política y el flujo de capitales
 
 ## Tipos de câmbio
 
 | Tipo | Uso | Spread |
 |------|-----|--------|
-| Comercial | Empresas, importação/exportação | Menor |
-| Turismo | Compra de moeda para viagem | Maior (3-5%) |
-| Paralelo | Mercado informal (ilegal) | Variável |
+| Comercial | Empresas, importación/exportación | Menor |
+| Turismo | Compra de moneda para viaje | Mayor (3-5%) |
+| Paralelo | Mercado informal (ilegal) | Variable |
 
-## Consejos para comprar moeda estrangeira
+## Consejos para comprar moneda extranjera
 
-1. **Compre aos poucos** — não tente acertar o melhor momento
-2. **Compare casas de câmbio** — spreads variam muito
-3. **Evite aeroportos** — taxas são as piores
-4. **Cartão de débito internacional** — geralmente melhor que dinheiro em espécie
-5. **IOF:** 4,38% no cartão, 1,1% em espécie
+1. **Compre poco a poco** — no intentes acertar el mejor momento
+2. **Compare casas de câmbio** — los spreads varían mucho
+3. **Evite aeropuertos** — las tasas son las peores
+4. **Tarjeta de débito internacional** — generalmente mejor que dinero en efectivo
+5. **IOF:** 4,38% en la tarjeta, 1,1% en efectivo
 
 ## Câmbio e investimentos
 
-Investir em ativos dolarizados (ETFs internacionais, BDRs) é uma forma de se proteger da desvalorização do real. Quando o dólar sobe, seus investimentos internacionais valorizam em reais.
+Invertir en activos dolarizados (ETFs internacionales, BDRs) es una forma de protegerse de la devaluación del real. Cuando el dólar sube, tus inversiones internacionales valorizan en reales.

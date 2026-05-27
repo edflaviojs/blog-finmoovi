@@ -9,27 +9,27 @@ publishedAt: 2025-05-10
 
 ## What is Liquidez?
 
-Liquidez é a capacidade de transformar um investimento em dinheiro rapidamente. Quanto mais líquido, mais rápido você acessa o dinheiro.
+Liquidez is the ability to quickly convert an investment into cash. The more liquid it is, the faster you can access the money.
 
-## Types de liquidez
+## Types of liquidez
 
-- **Liquidez diária (D+0):** Dinheiro disponível no mesmo dia. Ex: Tesouro Selic, CDB com liquidez diária.
-- **Liquidez D+1:** Disponível no dia seguinte. Ex: Alguns fundos de investimento.
-- **Liquidez no vencimento:** Só pode resgatar na data combinada. Ex: CDB com prazo, LCI/LCA.
+- **Liquidez diária (D+0):** Money available on the same day. Ex: Tesouro Selic, CDB with daily liquidity.
+- **Liquidez D+1:** Available the next day. Ex: Some investment funds.
+- **Liquidez no vencimento:** Can only be redeemed on the agreed-upon date. Ex: CDB with a term, LCI/LCA.
 
 ## Escala de liquidez
 
-Do mais líquido ao menos líquido:
-1. Dinheiro em conta corrente
-2. Tesouro Selic / CDB liquidez diária
+From most liquid to least liquid:
+1. Money in a checking account
+2. Tesouro Selic / CDB with daily liquidity
 3. Fundos DI
-4. CDB com prazo
-5. Fundos imobiliários
-6. Ações
-7. Imóveis
+4. CDB with a term
+5. Real estate funds
+6. Stocks
+7. Real estate
 
 ## Quando a liquidez importa?
 
-- **Reserva de emergência:** precisa de liquidez diária
-- **Objetivos de curto prazo (< 1 ano):** liquidez alta
-- **Objetivos de longo prazo (> 5 anos):** pode abrir mão de liquidez por mais rendimento
+- **Reserva de emergência:** needs daily liquidity
+- **Objetivos de curto prazo (< 1 ano):** high liquidity
+- **Objetivos de longo prazo (> 5 anos):** can give up liquidity for higher returns

@@ -7,9 +7,9 @@ relatedTerms: ["Score de Crédito", "Juros Compostos", "Financiamento"]
 publishedAt: 2025-05-10
 ---
 
-## ¿Qué es Cheque Especial?
+## ¿Qué es Sobregiro?
 
-Cheque especial é um limite de crédito que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o cheque especial — e paga juros altíssimos por isso.
+Sobregiro é um limite de crédito que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o sobregiro — e paga juros altíssimos por isso.
 
 ## Por que é tão perigoso
 
@@ -27,7 +27,7 @@ Se você ficar R$ 1.000 negativos por 30 dias com juros de 12% ao mês:
 
 ## ¿Cómo evitar?
 
-1. **Desative o cheque especial** — ligue para o banco e peça para remover
+1. **Desative o sobregiro** — ligue para o banco e peça para remover
 2. **Mantenha uma reserva na conta** — pelo menos R$ 500 de colchão
 3. **Configure alertas** — aviso quando saldo ficar baixo
 4. **Se precisar de crédito** — empréstimo pessoal tem juros 5x menores
@@ -36,7 +36,7 @@ Se você ficar R$ 1.000 negativos por 30 dias com juros de 12% ao mês:
 
 | Tipo de crédito | Juros mensais |
 |----------------|---------------|
-| Cheque especial | 8-15% |
+| Sobregiro | 8-15% |
 | Cartão de crédito (rotativo) | 12-16% |
 | Empréstimo pessoal | 2-5% |
 | Empréstimo consignado | 1-2% |

@@ -7,26 +7,26 @@ relatedTerms: ["Liquidez", "CDB", "Tesouro Selic"]
 publishedAt: 2025-05-10
 ---
 
-## What is Reserva de Emergência?
+## What is Emergency Fund?
 
-A reserva de emergência é um colchão financeiro que protege você de imprevistos. É o dinheiro que você pode acessar rapidamente quando algo inesperado acontece.
+An emergency fund is a financial cushion that protects you from unexpected events. It's the money you can access quickly when something unexpected happens.
 
-## Quanto guardar?
+## How much to save?
 
-A recomendação é ter entre **3 a 6 meses** dos seus gastos mensais. Se você gasta R$ 3.000/mês, sua reserva ideal é entre R$ 9.000 e R$ 18.000.
+The recommendation is to have between **3 to 6 months** of your monthly expenses. If you spend R$ 3,000/month, your ideal reserve is between R$ 9,000 and R$ 18,000.
 
-## Onde deixar?
+## Where to keep it?
 
-A reserva precisa ter **liquidez diária** (acesso imediato):
+The reserve needs to have **daily liquidity** (immediate access):
 - Tesouro Selic
-- CDB com liquidez diária (100% CDI ou mais)
-- Conta remunerada
+- CDB with daily liquidity (100% CDI or more)
+- Remunerated account
 
-**Nunca** deixe em ações, fundos imobiliários ou investimentos com prazo de resgate.
+**Never** leave it in stocks, real estate funds, or investments with a redemption deadline.
 
-## Como montar?
+## How to build it?
 
-1. Defina o valor alvo (3-6 meses de gastos)
-2. Separe um valor fixo todo mês (10-20% da renda)
-3. Automatize a transferência
-4. Não toque até completar o valor alvo
+1. Define the target value (3-6 months of expenses)
+2. Set aside a fixed amount every month (10-20% of income)
+3. Automate the transfer
+4. Don't touch it until you reach the target value

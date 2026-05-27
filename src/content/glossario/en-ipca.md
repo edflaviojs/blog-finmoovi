@@ -9,32 +9,32 @@ publishedAt: 2025-05-10
 
 ## What is IPCA?
 
-O IPCA (Índice Nacional de Preços ao Consumidor Amplo) é o termômetro oficial da inflação no Brasil. Ele mede quanto os preços subiram (ou caíram) em um determinado período. É calculado pelo IBGE todo mês.
+The IPCA (National Broad Consumer Price Index) is the official thermometer of inflation in Brazil. It measures how much prices have risen (or fallen) in a given period. It is calculated by the IBGE every month.
 
-## O que ele mede
+## What it measures
 
-O IPCA acompanha os preços de uma "cesta" de produtos e serviços que as famílias brasileiras consomem:
-- Alimentação (arroz, feijão, carne)
-- Habitação (aluguel, energia, água)
-- Transporte (gasolina, ônibus)
-- Saúde (plano de saúde, remédios)
-- Educação (mensalidade escolar)
+The IPCA tracks the prices of a "basket" of products and services that Brazilian families consume:
+- Food (rice, beans, meat)
+- Housing (rent, energy, water)
+- Transportation (gasoline, bus)
+- Health (health plan, medicines)
+- Education (school tuition)
 
-## Por que o IPCA importa para você
+## Why IPCA matters to you
 
-1. **Seu dinheiro perde valor:** se o IPCA é 5% ao ano, R$ 100 hoje valem R$ 95 daqui a um ano
-2. **Investimentos:** rendimentos abaixo do IPCA significam que você está perdendo dinheiro
-3. **Selic:** o Banco Central sobe ou desce a Selic para controlar o IPCA
-4. **Reajustes:** aluguéis, planos de saúde e salários são reajustados pelo IPCA
+1. **Your money loses value:** if the IPCA is 5% per year, R$ 100 today will be worth R$ 95 in a year
+2. **Investments:** returns below the IPCA mean you're losing money
+3. **Selic:** the Central Bank raises or lowers the Selic to control the IPCA
+4. **Adjustments:** rents, health plans, and salaries are adjusted by the IPCA
 
-## IPCA e investimentos
+## IPCA and investments
 
-Para seu dinheiro crescer de verdade, seus investimentos precisam render **acima do IPCA**. Por isso existem títulos como o Tesouro IPCA+, que garantem rendimento real (acima da inflação).
+For your money to really grow, your investments need to yield **above the IPCA**. That's why there are securities like the Tesouro IPCA+, which guarantee real returns (above inflation).
 
-## IPCA histórico
+## IPCA history
 
-- 2020: 4,52%
-- 2021: 10,06%
-- 2022: 5,79%
-- 2023: 4,62%
-- 2024: ~4,5%
+- 2020: 4.52%
+- 2021: 10.06%
+- 2022: 5.79%
+- 2023: 4.62%
+- 2024: ~4.5%

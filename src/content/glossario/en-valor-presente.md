@@ -7,42 +7,42 @@ relatedTerms: ["Juros Compostos", "Selic", "Tesouro Direto"]
 publishedAt: 2025-05-10
 ---
 
-## What is Valor Presente?
+## What is Present Value?
 
-Valor Presente é quanto vale HOJE um dinheiro que você vai receber no FUTURO. R$ 1.000 daqui a 1 ano valem menos que R$ 1.000 hoje — porque hoje você poderia investir e ter mais no futuro.
+Present Value is what a future amount of money is worth TODAY. R$ 1,000 in 1 year is worth less than R$ 1,000 today — because today you could invest it and have more in the future.
 
-## Fórmula
+## Formula
 
-**VP = VF ÷ (1 + i)^n**
+**PV = FV ÷ (1 + i)^n**
 
-Onde:
-- VP = Valor Presente
-- VF = Valor Futuro
-- i = taxa de juros
-- n = número de períodos
+Where:
+- PV = Present Value
+- FV = Future Value
+- i = interest rate
+- n = number of periods
 
 ## Practical example
 
-Alguém te oferece R$ 10.000 daqui a 2 anos. Com a Selic a 13% ao ano, quanto isso vale hoje?
+Someone offers you R$ 10,000 in 2 years. With the Selic rate at 13% per year, what is it worth today?
 
-VP = 10.000 ÷ (1,13)² = 10.000 ÷ 1,2769 = **R$ 7.831**
+PV = 10,000 ÷ (1.13)² = 10,000 ÷ 1.2769 = **R$ 7,831**
 
-Ou seja: receber R$ 10.000 daqui a 2 anos é a mesma coisa que receber R$ 7.831 hoje.
+In other words: receiving R$ 10,000 in 2 years is the same as receiving R$ 7,831 today.
 
-## Para que serve
+## What it's used for
 
-1. **Comparar investimentos** com prazos diferentes
-2. **Avaliar propostas** ("pago R$ 50.000 à vista ou R$ 60.000 em 12x?")
-3. **Precificar títulos** de renda fixa
-4. **Decisões de negócios** (vale a pena esse projeto?)
+1. **Comparing investments** with different terms
+2. **Evaluating proposals** ("pay R$ 50,000 upfront or R$ 60,000 in 12 installments?")
+3. **Pricing** fixed-income securities
+4. **Business decisions** (is this project worth it?)
 
-## Aplicação no dia a dia
+## Application in everyday life
 
-Quando uma loja oferece "12x sem juros de R$ 100 ou R$ 1.000 à vista":
-- 12 parcelas = R$ 1.200 no total
-- Mas o valor presente de 12x R$ 100 é menor que R$ 1.200
-- Se você pode investir o dinheiro a 1%/mês, pagar parcelado e investir a diferença é melhor
+When a store offers "12 installments with no interest of R$ 100 or R$ 1,000 upfront":
+- 12 installments = R$ 1,200 in total
+- But the present value of 12 installments of R$ 100 is less than R$ 1,200
+- If you can invest the money at 1%/month, paying in installments and investing the difference is better
 
-## Regra simples
+## Simple rule
 
-Dinheiro hoje vale mais que dinheiro amanhã. Sempre considere o "custo do tempo" ao tomar decisões financeiras.
+Money today is worth more than money tomorrow. Always consider the "cost of time" when making financial decisions.

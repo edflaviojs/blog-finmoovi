@@ -7,41 +7,41 @@ relatedTerms: ["IOF", "CDI", "Renda Fixa"]
 publishedAt: 2025-05-10
 ---
 
-## What is Imposto de Renda?
+## What is Income Tax?
 
-O Imposto de Renda (IR) é um tributo cobrado pelo governo federal sobre os rendimentos das pessoas. Quanto mais você ganha, mais paga (sistema progressivo). Todo ano, entre março e maio, é preciso fazer a Declaração de IR.
+The Income Tax (IR) is a tax levied by the federal government on individuals' income. The more you earn, the more you pay (progressive system). Every year, between March and May, you need to file your Income Tax Return.
 
-## Tabela progressiva 2025 (salários)
+## Progressive Table 2025 (salaries)
 
-| Faixa de renda mensal | Alíquota |
+| Monthly Income Range | Tax Rate |
 |----------------------|----------|
-| Até R$ 2.259,20 | Isento |
-| R$ 2.259,21 a R$ 2.826,65 | 7,5% |
-| R$ 2.826,66 a R$ 3.751,05 | 15% |
-| R$ 3.751,06 a R$ 4.664,68 | 22,5% |
-| Acima de R$ 4.664,68 | 27,5% |
+| Up to R$ 2,259.20 | Exempt |
+| R$ 2,259.21 to R$ 2,826.65 | 7.5% |
+| R$ 2,826.66 to R$ 3,751.05 | 15% |
+| R$ 3,751.06 to R$ 4,664.68 | 22.5% |
+| Above R$ 4,664.68 | 27.5% |
 
-## IR sobre investimentos
+## Income Tax on Investments
 
-### Tabela regressiva (renda fixa, fundos)
-| Prazo | Alíquota |
+### Regressive Table (fixed income, funds)
+| Term | Tax Rate |
 |-------|----------|
-| Até 180 dias | 22,5% |
-| 181 a 360 dias | 20% |
-| 361 a 720 dias | 17,5% |
-| Acima de 720 dias | 15% |
+| Up to 180 days | 22.5% |
+| 181 to 360 days | 20% |
+| 361 to 720 days | 17.5% |
+| Above 720 days | 15% |
 
-### Investimentos isentos de IR
-- Poupança
-- LCI e LCA
-- Dividendos de ações
-- Rendimentos de FIIs (pessoa física)
-- Venda de ações até R$ 20.000/mês
+### Income Tax-Exempt Investments
+- Savings account
+- LCI and LCA
+- Stock dividends
+- FIIs income (individuals)
+- Sale of stocks up to R$ 20,000/month
 
-## Tips para pagar menos IR (legalmente)
+## Tips to Pay Less Income Tax (legally)
 
-1. Invista em LCI/LCA (isentos)
-2. Mantenha investimentos por mais de 2 anos (alíquota menor)
-3. Use o plano PGBL de previdência (deduz até 12% da renda)
-4. Declare todas as despesas médicas e educação
-5. Organize recibos ao longo do ano
+1. Invest in LCI/LCA (exempt)
+2. Keep investments for more than 2 years (lower tax rate)
+3. Use the PGBL pension plan (deducts up to 12% of income)
+4. Declare all medical and education expenses
+5. Organize receipts throughout the year

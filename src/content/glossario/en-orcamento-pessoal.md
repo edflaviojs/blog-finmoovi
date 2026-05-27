@@ -7,45 +7,45 @@ relatedTerms: ["Reserva de Emergência", "Regra 50-30-20", "Controle Financeiro"
 publishedAt: 2025-05-10
 ---
 
-## What is Orçamento Pessoal?
+## What is Personal Budget?
 
-Orçamento pessoal é um plano que mostra quanto dinheiro entra, quanto sai e para onde vai. É a ferramenta mais básica e poderosa das finanças pessoais. Sem orçamento, você está dirigindo no escuro.
+Personal budget is a plan that shows how much money comes in, how much goes out, and where it goes. It's the most basic and powerful tool in personal finance. Without a budget, you're driving in the dark.
 
-## Como montar um orçamento
+## How to create a budget
 
-### Passo 1: Liste todas as receitas
-- Salário líquido
-- Renda extra (freelance, bicos)
-- Rendimentos de investimentos
-- Outros (aluguel, pensão)
+### Step 1: List all income
+- Net salary
+- Extra income (freelance, odd jobs)
+- Investment returns
+- Others (rent, pension)
 
-### Passo 2: Liste todas as despesas
-**Fixas (não mudam):**
-- Aluguel/financiamento
-- Condomínio
-- Plano de saúde
-- Internet/telefone
+### Step 2: List all expenses
+**Fixed (don't change):**
+- Rent/mortgage
+- Condominium fees
+- Health plan
+- Internet/phone
 
-**Variáveis (mudam todo mês):**
-- Alimentação
-- Transporte
-- Lazer
-- Compras
+**Variable (change every month):**
+- Food
+- Transportation
+- Leisure
+- Shopping
 
-### Passo 3: Aplique a regra 50-30-20
-- 50% para necessidades
-- 30% para desejos
-- 20% para objetivos financeiros
+### Step 3: Apply the 50-30-20 rule
+- 50% for necessities
+- 30% for desires
+- 20% for financial goals
 
-## Ferramentas para orçamento
+## Budgeting tools
 
-- **FinMoovi** — app com categorização automática por IA
-- Planilha simples (Google Sheets)
-- Caderno e caneta (funciona!)
+- **FinMoovi** — app with automatic categorization by AI
+- Simple spreadsheet (Google Sheets)
+- Notebook and pen (it works!)
 
-## Erros comuns
+## Common mistakes
 
-1. Não incluir gastos pequenos (café, delivery)
-2. Esquecer despesas anuais (IPVA, IPTU, seguros)
-3. Não revisar mensalmente
-4. Fazer orçamento muito restritivo (não sustenta)
+1. Not including small expenses (coffee, delivery)
+2. Forgetting annual expenses (IPVA, IPTU, insurance)
+3. Not reviewing monthly
+4. Creating a budget that's too restrictive (not sustainable)

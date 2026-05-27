@@ -9,34 +9,34 @@ publishedAt: 2025-05-10
 
 ## What is Yield?
 
-Yield (rendimento) é o retorno percentual que um investimento gera em relação ao seu preço. O mais comum é o Dividend Yield (DY), que mostra quanto uma ação ou FII paga em dividendos por ano comparado ao preço atual.
+Yield (rendimento) is the percentage return that an investment generates in relation to its price. The most common is the Dividend Yield (DY), which shows how much a stock or FII pays in dividends per year compared to its current price.
 
 ## Fórmula
 
-**Dividend Yield = (Dividendos pagos nos últimos 12 meses ÷ Preço atual) × 100**
+**Dividend Yield = (Dividends paid in the last 12 months ÷ Current price) × 100**
 
 ## Exemplo
 
-- Ação custa R$ 50
-- Pagou R$ 4 em dividendos no último ano
-- DY = 4 ÷ 50 × 100 = **8% ao ano**
+- Stock costs R$ 50
+- Paid R$ 4 in dividends in the last year
+- DY = 4 ÷ 50 × 100 = **8% per year**
 
-## What is um bom Yield?
+## What is a good Yield?
 
-| Faixa | Interpretação |
+| Range | Interpretation |
 |-------|--------------|
-| 0-3% | Baixo (empresa reinveste lucros) |
-| 3-6% | Moderado (equilíbrio) |
-| 6-10% | Alto (boa pagadora) |
-| 10%+ | Muito alto (pode ser insustentável) |
+| 0-3% | Low (company reinvests profits) |
+| 3-6% | Moderate (balance) |
+| 6-10% | High (good payer) |
+| 10%+ | Very high (may be unsustainable) |
 
 ## Cuidados
 
-- Yield muito alto pode indicar que o preço caiu (empresa com problemas)
-- Yield passado não garante yield futuro
-- Empresas podem cortar dividendos a qualquer momento
-- Compare yield com empresas do mesmo setor
+- Very high Yield may indicate that the price has fallen (company with problems)
+- Past Yield does not guarantee future Yield
+- Companies can cut dividends at any time
+- Compare Yield with companies in the same sector
 
 ## Yield em FIIs
 
-Fundos Imobiliários geralmente têm yields mais altos que ações (0,7-1% ao mês). São populares entre quem busca renda mensal.
+Real Estate Investment Funds (FIIs) usually have higher yields than stocks (0.7-1% per month). They are popular among those seeking monthly income.

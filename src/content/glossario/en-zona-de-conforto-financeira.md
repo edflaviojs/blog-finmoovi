@@ -7,47 +7,47 @@ relatedTerms: ["Reserva de Emergência", "Orçamento Pessoal", "Patrimônio Líq
 publishedAt: 2025-05-10
 ---
 
-## What is Zona de Conforto Financeira?
+## What is Financial Comfort Zone?
 
-É o estado onde suas finanças estão organizadas e você não vive com medo do fim do mês. Significa ter: gastos sob controle, reserva de emergência formada, dívidas quitadas e investimentos crescendo.
+It's the state where your finances are organized and you don't live in fear of the end of the month. It means having: expenses under control, emergency reserve formed, debts paid off and investments growing.
 
-## Os 5 pilares da zona de conforto financeira
+## The 5 pillars of the financial comfort zone
 
-### 1. Gastos menores que a renda
-- Sobra pelo menos 20% do salário
-- Sem uso de cheque especial ou rotativo
+### 1. Expenses lower than income
+- At least 20% of the salary is left over
+- No use of special check or revolving credit
 
-### 2. Reserva de emergência completa
-- 6 a 12 meses de gastos guardados
-- Em investimento com liquidez diária
+### 2. Complete emergency reserve
+- 6 to 12 months of expenses saved
+- In an investment with daily liquidity
 
-### 3. Sem dívidas caras
-- Zero cheque especial
-- Zero rotativo do cartão
-- Financiamentos sob controle (parcela < 30% da renda)
+### 3. No expensive debts
+- Zero special check
+- Zero credit card revolving
+- Financing under control (installment < 30% of income)
 
-### 4. Investimentos crescendo
-- Aportes mensais regulares
-- Carteira diversificada
-- Rendimento acima da inflação
+### 4. Growing investments
+- Regular monthly contributions
+- Diversified portfolio
+- Return above inflation (IPCA)
 
-### 5. Proteção (seguros)
-- Plano de saúde
-- Seguro de vida (se tem dependentes)
-- Previdência complementar
+### 5. Protection (insurances)
+- Health plan
+- Life insurance (if you have dependents)
+- Complementary pension
 
-## Como chegar lá
+## How to get there
 
-1. Monte um orçamento (saiba para onde vai seu dinheiro)
-2. Quite dívidas caras primeiro
-3. Monte a reserva de emergência
-4. Comece a investir (mesmo que pouco)
-5. Aumente aportes conforme a renda cresce
+1. Create a budget (know where your money is going)
+2. Pay off expensive debts first
+3. Build the emergency reserve
+4. Start investing (even if it's a little)
+5. Increase contributions as income grows
 
-## Quanto tempo leva?
+## How long does it take?
 
-Depende da sua situação atual, mas com disciplina:
-- Sair das dívidas: 6-18 meses
-- Montar reserva: 12-24 meses
-- Começar a investir: pode ser simultâneo à reserva
-- Sentir conforto real: 3-5 anos
+It depends on your current situation, but with discipline:
+- Getting out of debt: 6-18 months
+- Building a reserve: 12-24 months
+- Starting to invest: can be simultaneous with the reserve
+- Feeling real comfort: 3-5 years

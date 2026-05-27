@@ -7,37 +7,37 @@ relatedTerms: ["Score de Crédito", "Juros Compostos", "Financiamento"]
 publishedAt: 2025-05-10
 ---
 
-## What is Cheque Especial?
+## What is Overdraft?
 
-Cheque especial é um limite de crédito que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o cheque especial — e paga juros altíssimos por isso.
+Overdraft is a credit limit that the bank makes available on your checking account. When your balance goes negative, you automatically use the overdraft — and pay very high interest rates for it.
 
-## Por que é tão perigoso
+## Why is it so dangerous
 
-- Juros de **8% a 15% ao mês** (150%+ ao ano)
-- É ativado automaticamente (você nem percebe)
-- Juros são cobrados diariamente sobre o saldo negativo
-- Muita gente usa sem saber que está pagando
+- Interest rates of **8% to 15% per month** (150%+ per year)
+- It is activated automatically (you don't even notice)
+- Interest is charged daily on the negative balance
+- Many people use it without realizing they are paying
 
 ## Practical example
 
-Se você ficar R$ 1.000 negativos por 30 dias com juros de 12% ao mês:
-- Juros: R$ 120
-- Em 6 meses sem pagar: R$ 1.000 vira R$ 1.973
-- Em 12 meses: R$ 1.000 vira R$ 3.896
+If you are R$ 1,000 overdrawn for 30 days with interest rates of 12% per month:
+- Interest: R$ 120
+- In 6 months without paying: R$ 1,000 becomes R$ 1,973
+- In 12 months: R$ 1,000 becomes R$ 3,896
 
 ## How to avoid?
 
-1. **Desative o cheque especial** — ligue para o banco e peça para remover
-2. **Mantenha uma reserva na conta** — pelo menos R$ 500 de colchão
-3. **Configure alertas** — aviso quando saldo ficar baixo
-4. **Se precisar de crédito** — empréstimo pessoal tem juros 5x menores
+1. **Disable the overdraft** — call the bank and ask to remove it
+2. **Keep a reserve in the account** — at least R$ 500 as a cushion
+3. **Set up alerts** — warning when the balance is low
+4. **If you need credit** — a personal loan has interest rates 5 times lower
 
-## Alternativas mais baratas
+## Cheaper alternatives
 
-| Tipo de crédito | Juros mensais |
+| Type of credit | Monthly interest |
 |----------------|---------------|
-| Cheque especial | 8-15% |
-| Cartão de crédito (rotativo) | 12-16% |
-| Empréstimo pessoal | 2-5% |
-| Empréstimo consignado | 1-2% |
-| Antecipação FGTS | 1-2% |
+| Overdraft | 8-15% |
+| Credit card (revolving) | 12-16% |
+| Personal loan | 2-5% |
+| Payroll loan | 1-2% |
+| FGTS anticipation | 1-2% |

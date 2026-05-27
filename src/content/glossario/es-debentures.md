@@ -7,46 +7,46 @@ relatedTerms: ["Renda Fixa", "CDI", "Tesouro Direto"]
 publishedAt: 2025-05-10
 ---
 
-## O que são Debêntures?
+## ¿Qué son las Debêntures?
 
-Debêntures são títulos de dívida emitidos por empresas. Quando você compra uma debênture, está emprestando dinheiro para a empresa — e ela te paga juros por isso. É como um CDB, mas emitido por empresas (não bancos).
+Las Debêntures son títulos de deuda emitidos por empresas. Cuando compras una debênture, estás prestando dinero a la empresa — y ella te paga intereses por ello. Es como un CDB, pero emitido por empresas (no bancos).
 
 ## Tipos
 
-### Debêntures comuns
-- Tributadas pelo IR (tabela regressiva)
-- Não têm garantia do FGC
-- Rendimento geralmente CDI + spread
+### Debêntures comunes
+- Tributadas por el IR (tabela regresiva)
+- No tienen garantía del FGC
+- Rendimiento generalmente CDI + spread
 
 ### Debêntures incentivadas
-- **Isentas de IR** para pessoa física
-- Financiam projetos de infraestrutura
-- Rendimento: IPCA + taxa fixa
+- **Exentas de IR** para persona física
+- Financian proyectos de infraestructura
+- Rendimiento: IPCA + tasa fija
 
 ## Ventajas
 
-- Rendimento geralmente maior que CDB e Tesouro
-- Debêntures incentivadas são isentas de IR
-- Diversificação da renda fixa
-- Prazos variados (2 a 15 anos)
+- Rendimiento generalmente mayor que CDB y Tesoro
+- Debêntures incentivadas son exentas de IR
+- Diversificación de la renta fija
+- Plazos variados (2 a 15 años)
 
 ## Riesgos
 
-- **Risco de crédito:** empresa pode não pagar (não tem FGC)
-- **Risco de liquidez:** pode ser difícil vender antes do vencimento
-- **Risco de mercado:** preço pode oscilar se vender antes
+- **Riesgo de crédito:** empresa puede no pagar (no tiene FGC)
+- **Riesgo de liquidez:** puede ser difícil vender antes del vencimiento
+- **Riesgo de mercado:** precio puede oscilar si se vende antes
 
-## Como avaliar
+## Cómo evaluar
 
-Antes de investir, verifique:
-1. **Rating da empresa** (nota de crédito: AAA é a melhor)
-2. **Setor da empresa** (setores estáveis são mais seguros)
-3. **Garantias** (real, flutuante, quirografária)
-4. **Prazo** (quanto maior, maior o risco)
+Antes de invertir, verifica:
+1. **Calificación de la empresa** (nota de crédito: AAA es la mejor)
+2. **Sector de la empresa** (sectores estables son más seguros)
+3. **Garantías** (real, flotante, quirografaria)
+4. **Plazo** (cuanto mayor, mayor el riesgo)
 
-## Para quem é indicado
+## Para quién es indicado
 
-- Investidores com patrimônio acima de R$ 50.000
-- Quem já tem Tesouro e CDB e quer diversificar
-- Quem busca isenção de IR (debêntures incentivadas)
+- Inversionistas con patrimonio por encima de R$ 50.000
+- Quien ya tiene Tesoro y CDB y quiere diversificar
+- Quien busca exención de IR (debêntures incentivadas)
 - Perfil moderado a arrojado

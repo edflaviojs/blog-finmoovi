@@ -9,31 +9,31 @@ publishedAt: 2025-05-10
 
 ## What is Nubank?
 
-Nubank é um banco digital (fintech) fundado em 2013 no Brasil. Começou com cartão de crédito sem anuidade e hoje oferece conta completa, investimentos, empréstimos e seguros. É o maior banco digital da América Latina.
+Nubank is a digital bank (fintech) founded in 2013 in Brazil. It started with a credit card with no annual fee and today offers a complete account, investments, loans, and insurance. It is the largest digital bank in Latin America.
 
-## Produtos principais
+## Main products
 
-- **Conta corrente:** sem tarifas, rendimento automático de 100% do CDI
-- **Cartão de crédito:** sem anuidade, controle total pelo app
-- **Investimentos:** CDB, fundos, criptomoedas
-- **Empréstimos:** pessoal e antecipação de salário
-- **Seguros:** vida e celular
+- **Checking account:** no fees, automatic yield of 100% of CDI
+- **Credit card:** no annual fee, total control through the app
+- **Investments:** CDB, funds, cryptocurrencies
+- **Loans:** personal and salary advance
+- **Insurance:** life and cell phone
 
 ## Advantages
 
-- Zero tarifas de manutenção
-- App intuitivo e bem feito
-- Atendimento 24h por chat
-- Rendimento automático na conta (100% CDI)
-- Cartão sem anuidade
+- Zero maintenance fees
+- Intuitive and well-made app
+- 24-hour support via chat
+- Automatic yield on the account (100% CDI)
+- Card with no annual fee
 
 ## Disadvantages
 
-- Limite de crédito pode ser baixo no início
-- Não tem agências físicas
-- Investimentos limitados (poucas opções)
-- Atendimento só digital (sem telefone fácil)
+- Credit limit may be low at first
+- No physical branches
+- Limited investment options (few options)
+- Support only digital (no easy phone access)
 
-## Nubank e educação financeira
+## Nubank and financial education
 
-O Nubank popularizou o controle financeiro digital no Brasil. O app mostra gastos por categoria, limites e faturas de forma visual. Para um controle ainda mais completo com multi-moeda e IA, o FinMoovi complementa perfeitamente.
+Nubank popularized digital financial control in Brazil. The app shows expenses by category, limits, and bills in a visual way. For even more complete control with multi-currency and AI, FinMoovi complements it perfectly.

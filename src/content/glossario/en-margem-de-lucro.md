@@ -7,41 +7,41 @@ relatedTerms: ["Orçamento Pessoal", "Dividendos", "Ações"]
 publishedAt: 2025-05-10
 ---
 
-## What is Margem de Lucro?
+## What is Profit Margin?
 
-Margem de lucro é quanto sobra de cada real que entra. Se uma empresa fatura R$ 100 e tem R$ 80 de custos, sua margem de lucro é 20%. Quanto maior a margem, mais eficiente é o negócio.
+Profit margin is what's left over from each real that comes in. If a company bills R$ 100 and has R$ 80 in costs, its profit margin is 20%. The larger the margin, the more efficient the business is.
 
-## Types de margem
+## Types of Margin
 
-### Margem Bruta
-- (Receita - Custo dos Produtos) ÷ Receita × 100
-- Mostra eficiência na produção/compra
+### Gross Margin
+- (Revenue - Cost of Products) ÷ Revenue × 100
+- Shows efficiency in production/purchase
 
-### Margem Operacional
-- (Receita - Custos - Despesas Operacionais) ÷ Receita × 100
-- Mostra eficiência da operação
+### Operating Margin
+- (Revenue - Costs - Operating Expenses) ÷ Revenue × 100
+- Shows efficiency of operation
 
-### Margem Líquida
-- Lucro Líquido ÷ Receita × 100
-- Mostra quanto realmente sobra no final
+### Net Margin
+- Net Profit ÷ Revenue × 100
+- Shows how much is really left over at the end
 
-## Practical example (loja de roupas)
+## Practical example (clothing store)
 
-| | Valor | Margem |
+| | Value | Margin |
 |--|-------|--------|
-| Faturamento | R$ 50.000 | - |
-| Custo das roupas | R$ 20.000 | Bruta: 60% |
-| Despesas (aluguel, salários) | R$ 20.000 | Operacional: 20% |
-| Impostos | R$ 5.000 | Líquida: 10% |
-| **Lucro líquido** | **R$ 5.000** | |
+| Billing | R$ 50,000 | - |
+| Cost of clothes | R$ 20,000 | Gross: 60% |
+| Expenses (rent, salaries) | R$ 20,000 | Operational: 20% |
+| Taxes | R$ 5,000 | Net: 10% |
+| **Net Profit** | **R$ 5,000** | |
 
-## Para que serve (investidor)
+## What it's for (investor)
 
-Ao analisar ações, a margem de lucro mostra:
-- Empresas com margens altas têm vantagem competitiva
-- Margens crescentes indicam eficiência melhorando
-- Margens muito baixas indicam negócio frágil
+When analyzing stocks, the profit margin shows:
+- Companies with high margins have a competitive advantage
+- Increasing margins indicate improving efficiency
+- Very low margins indicate a fragile business
 
-## Para finanças pessoais
+## For personal finance
 
-Você também tem uma "margem": quanto sobra do seu salário após todos os gastos. Se ganha R$ 5.000 e sobram R$ 1.000, sua margem pessoal é 20%. O ideal é pelo menos 20% (regra 50-30-20).
+You also have a "margin": how much is left over from your salary after all expenses. If you earn R$ 5,000 and R$ 1,000 is left over, your personal margin is 20%. The ideal is at least 20% (50-30-20 rule).

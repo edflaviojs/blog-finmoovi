@@ -31,6 +31,6 @@ The **B3** operates from Monday to Friday:
 - **IFIX:** real estate investment fund index
 - **S&P 500:** main US index
 
-## How to invest? in the stock exchange
+## How to invest in the stock exchange
 
 You need an account with a securities broker. Most do not charge a fee to open an account. With R$ 100, you can already buy fractional shares.

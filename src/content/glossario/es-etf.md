@@ -9,28 +9,28 @@ publishedAt: 2025-05-10
 
 ## ¿Qué es ETF?
 
-ETF (Exchange Traded Fund) é um fundo de investimento que é negociado na bolsa como se fosse uma ação. Ele replica um índice — por exemplo, o BOVA11 replica o Ibovespa, então ao comprar BOVA11 você está investindo nas maiores empresas do Brasil de uma vez.
+ETF (Exchange Traded Fund) es un fondo de inversión que se negocia en la bolsa como si fuera una acción. Él replica un índice — por ejemplo, el BOVA11 replica el Ibovespa, entonces al comprar BOVA11 estás invirtiendo en las mayores empresas de Brasil de una vez.
 
 ## Ventajas
 
-- **Diversificação instantânea:** com 1 compra, você investe em dezenas de empresas
-- **Baixo custo:** taxas menores que fundos tradicionais
-- **Simplicidade:** não precisa escolher ações individuais
-- **Liquidez:** compra e vende na hora, como ações
+- **Diversificación instantánea:** con 1 compra, inviertes en decenas de empresas
+- **Bajo costo:** tasas menores que fondos tradicionales
+- **Simplicidad:** no necesitas elegir acciones individuales
+- **Liquidez:** compra y vende en el momento, como acciones
 
-## ETFs populares no Brasil
+## ETFs populares en Brasil
 
 | ETF | O que replica | Taxa |
 |-----|--------------|------|
-| BOVA11 | Ibovespa (maiores empresas BR) | 0,10% |
-| IVVB11 | S&P 500 (maiores empresas EUA) | 0,23% |
-| HASH11 | Criptomoedas | 0,30% |
-| SMAL11 | Small Caps brasileiras | 0,50% |
+| BOVA11 | Ibovespa (mayores empresas BR) | 0,10% |
+| IVVB11 | S&P 500 (mayores empresas EUA) | 0,23% |
+| HASH11 | Criptomonedas | 0,30% |
+| SMAL11 | Small Caps brasileñas | 0,50% |
 
-## Para quem é indicado
+## Para quién es indicado
 
-ETFs são perfeitos para quem:
-- Quer investir em ações mas não sabe escolher
-- Busca diversificação com pouco dinheiro
-- Prefere uma estratégia passiva (buy and hold)
-- Quer exposição internacional sem abrir conta fora
+ETFs son perfectos para quién:
+- Quiere invertir en acciones pero no sabe elegir
+- Busca diversificación con poco dinero
+- Prefiere una estrategia pasiva (buy and hold)
+- Quiere exposición internacional sin abrir cuenta fuera

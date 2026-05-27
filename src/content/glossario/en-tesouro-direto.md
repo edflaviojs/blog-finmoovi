@@ -7,38 +7,38 @@ relatedTerms: ["Selic", "IPCA", "Renda Fixa"]
 publishedAt: 2025-05-10
 ---
 
-## What is Tesouro Direto?
+## What is Treasury Direct?
 
-Tesouro Direto é um programa do governo brasileiro que permite que qualquer pessoa empreste dinheiro para o governo e receba juros em troca. É como se o governo pedisse dinheiro emprestado de você e te pagasse com juros.
+Treasury Direct is a Brazilian government program that allows anyone to lend money to the government and receive interest in return. It's like the government is borrowing money from you and paying you back with interest.
 
-## Types de títulos
+## Types of securities
 
-### Tesouro Selic (LFT)
-- Rende a taxa Selic
-- Liquidez diária (pode resgatar quando quiser)
-- Ideal para: reserva de emergência
-- Risco: praticamente zero
+### Treasury Selic (LFT)
+- Yields the Selic rate
+- Daily liquidity (can redeem whenever you want)
+- Ideal for: emergency reserve
+- Risk: virtually zero
 
-### Tesouro IPCA+ (NTN-B)
-- Rende IPCA + taxa fixa (ex: IPCA + 6%)
-- Protege contra inflação
-- Ideal para: aposentadoria, longo prazo
-- Risco: pode ter variação se vender antes do vencimento
+### Treasury IPCA+ (NTN-B)
+- Yields IPCA + fixed rate (e.g. IPCA + 6%)
+- Protects against inflation
+- Ideal for: retirement, long term
+- Risk: may vary if sold before maturity
 
-### Tesouro Prefixado (LTN)
-- Taxa fixa definida na compra (ex: 12% ao ano)
-- Você sabe exatamente quanto vai receber no vencimento
-- Ideal para: quando acredita que juros vão cair
-- Risco: se a Selic subir, seu título perde valor de mercado
+### Treasury Fixed-Rate (LTN)
+- Fixed rate defined at purchase (e.g. 12% per year)
+- You know exactly how much you'll receive at maturity
+- Ideal for: when you believe interest rates will fall
+- Risk: if Selic rises, your security loses market value
 
 ## How to invest?
 
-1. Abra conta em uma corretora (taxa zero na maioria)
-2. Acesse o site do Tesouro Direto
-3. Escolha o título adequado ao seu objetivo
-4. Invista a partir de R$ 30
+1. Open an account with a brokerage firm (zero fee for most)
+2. Access the Treasury Direct website
+3. Choose the security that suits your goal
+4. Invest from R$ 30
 
-## Custos
+## Costs
 
-- Taxa de custódia B3: 0,20% ao ano (isento até R$ 10.000 no Tesouro Selic)
-- IR regressivo: 22,5% (até 180 dias) a 15% (acima de 720 dias)
+- B3 custody fee: 0.20% per year (exempt up to R$ 10,000 in Treasury Selic)
+- Regressive IR: 22.5% (up to 180 days) to 15% (over 720 days)

@@ -7,44 +7,44 @@ relatedTerms: ["Financiamento", "Amortização", "Poupança"]
 publishedAt: 2025-05-10
 ---
 
-## ¿Qué es Consórcio?
+## ¿Qué es Consorcio?
 
-Consórcio é um sistema onde várias pessoas se juntam para comprar algo (carro, imóvel, moto). Todo mês, cada participante paga uma parcela. A cada mês, um ou mais participantes são contemplados (por sorteio ou lance) e recebem a carta de crédito para comprar o bem.
+Consorcio es un sistema donde varias personas se unen para comprar algo (coche, inmueble, moto). Todos los meses, cada participante paga una cuota. Cada mes, uno o más participantes son beneficiados (por sorteo o puja) y reciben la carta de crédito para comprar el bien.
 
 ## ¿Cómo funciona?
 
-1. Você entra em um grupo de consórcio
-2. Paga parcelas mensais (sem juros, mas com taxa de administração)
-3. Todo mês há assembleia com sorteio
-4. Contemplados recebem carta de crédito
-5. Pode dar lance (oferecer parcelas adiantadas) para ser contemplado antes
+1. Entrar en un grupo de consorcio
+2. Pagar cuotas mensuales (sin intereses, pero con tasa de administración)
+3. Todos los meses hay asamblea con sorteo
+4. Los beneficiados reciben carta de crédito
+5. Puede hacer una puja (ofrecer cuotas adelantadas) para ser beneficiado antes
 
 ## Ventajas
 
-- Não tem juros (apenas taxa de administração de 10-20% do total)
-- Disciplina de poupança forçada
-- Poder de compra à vista (carta de crédito)
-- Pode usar FGTS para lance (imóveis)
+- No tiene intereses (solo tasa de administración de 10-20% del total)
+- Disciplina de ahorro forzado
+- Poder de compra al contado (carta de crédito)
+- Puede usar FGC para puja (inmuebles)
 
 ## Desventajas
 
-- Não sabe quando será contemplado
-- Taxa de administração pode ser alta
-- Dinheiro fica preso até ser contemplado ou o grupo acabar
-- Parcelas podem ser reajustadas
+- No sabe cuándo será beneficiado
+- La tasa de administración puede ser alta
+- El dinero queda bloqueado hasta ser beneficiado o hasta que el grupo termine
+- Las cuotas pueden ser reajustadas
 
-## Consórcio vs. Financiamento
+## Consorcio vs. Financiación
 
-| | Consórcio | Financiamento |
+| | Consorcio | Financiación |
 |--|-----------|---------------|
-| Juros | Não tem | 8-15% ao ano |
-| Recebe o bem | Quando contemplado | Imediatamente |
-| Custo total | Menor | Muito maior |
-| Previsibilidade | Baixa | Alta |
+| Intereses | No tiene | 8-15% al año |
+| Recibe el bien | Cuando es beneficiado | Inmediatamente |
+| Costo total | Menor | Mucho mayor |
+| Previsibilidad | Baja | Alta |
 
-## Quando vale a pena
+## Cuándo vale la pena
 
-- Quando não tem pressa para receber o bem
-- Para trocar de carro daqui a 2-3 anos
-- Como forma de poupança forçada
-- Quando quer evitar juros de financiamento
+- Cuando no tiene prisa para recibir el bien
+- Para cambiar de coche dentro de 2-3 años
+- Como forma de ahorro forzado
+- Cuando quiere evitar intereses de financiación

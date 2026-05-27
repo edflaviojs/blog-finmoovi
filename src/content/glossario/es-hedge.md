@@ -9,30 +9,30 @@ publishedAt: 2025-05-10
 
 ## ¿Qué es Hedge?
 
-Hedge (pronuncia-se "rédje") é uma estratégia de proteção financeira. É como um seguro para seus investimentos. Se você tem medo de que o dólar suba e prejudique seus custos, pode fazer um hedge cambial para se proteger.
+Hedge (se pronuncia "rédje") es una estrategia de protección financiera. Es como un seguro para tus inversiones. Si tienes miedo de que el dólar suba y perjudique tus costos, puedes hacer un hedge cambial para protegerte.
 
-## Ejemplos práticos
+## Ejemplos prácticos
 
 ### Hedge cambial
-- Empresa que importa produtos compra contratos futuros de dólar
-- Se o dólar subir, o contrato compensa a perda
+- Empresa que importa productos compra contratos futuros de dólar
+- Si el dólar sube, el contrato compensa la pérdida
 
-### Hedge em ações
-- Investidor compra opções de venda (put) para proteger sua carteira
-- Se as ações caírem, a put valoriza e compensa
+### Hedge en acciones
+- Inversionista compra opciones de venta (put) para proteger su cartera
+- Si las acciones caen, la put valoriza y compensa
 
-### Hedge com ouro
-- Investir parte da carteira em ouro
-- Ouro tende a subir em crises (protege o resto da carteira)
+### Hedge con oro
+- Invertir parte de la cartera en oro
+- El oro tiende a subir en crisis (protege el resto de la cartera)
 
-## Hedge para pessoa física
+## Hedge para persona física
 
-Você não precisa de derivativos complexos. Formas simples de hedge:
-1. **Dolarizar parte da carteira** — ETFs internacionais (IVVB11)
-2. **Tesouro IPCA+** — protege contra inflação
-3. **Diversificação** — a forma mais básica de hedge
-4. **Reserva de emergência** — protege contra imprevistos
+No necesitas derivativos complejos. Formas simples de hedge:
+1. **Dolarizar parte de la cartera** — ETFs internacionales (IVVB11)
+2. **Tesoro IPCA+** — protege contra inflación
+3. **Diversificación** — la forma más básica de hedge
+4. **Reserva de emergencia** — protege contra imprevistos
 
-## Custo do hedge
+## Costo del hedge
 
-Toda proteção tem um custo. Assim como seguro de carro, o hedge reduz seu ganho potencial em troca de limitar suas perdas. O equilíbrio entre proteção e custo é pessoal.
+Toda protección tiene un costo. Así como el seguro de carro, el hedge reduce tu ganancia potencial a cambio de limitar tus pérdidas. El equilibrio entre protección y costo es personal.

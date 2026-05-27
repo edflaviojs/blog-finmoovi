@@ -7,52 +7,52 @@ relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Diversificação
 publishedAt: 2025-05-10
 ---
 
-## What is Patrimônio Líquido?
+## What is Net Worth?
 
-Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem menos tudo que você deve. É o número mais importante das suas finanças pessoais — mostra sua riqueza real.
+Net Worth = Assets - Liabilities. In other words: everything you have minus everything you owe. It's the most important number in your personal finances — it shows your real wealth.
 
 ## How to calculate?
 
-### Seus Ativos (o que você tem)
-- Dinheiro em conta e investimentos
-- Imóveis (valor de mercado)
-- Veículos (valor de mercado)
-- Outros bens de valor
+### Your Assets (what you have)
+- Money in account and investments
+- Real estate (market value)
+- Vehicles (market value)
+- Other valuable assets
 
-### Seus Passivos (o que você deve)
-- Financiamento imobiliário (saldo devedor)
-- Financiamento de veículo
-- Empréstimos pessoais
-- Cartão de crédito (fatura em aberto)
-- Outras dívidas
+### Your Liabilities (what you owe)
+- Mortgage (outstanding balance)
+- Vehicle financing
+- Personal loans
+- Credit card (open bill)
+- Other debts
 
-### Exemplo
+### Example
 
-| Ativos | Valor |
+| Assets | Value |
 |--------|-------|
-| Investimentos | R$ 50.000 |
-| Imóvel | R$ 300.000 |
-| Carro | R$ 40.000 |
-| **Total Ativos** | **R$ 390.000** |
+| Investments | R$ 50.000 |
+| Real estate | R$ 300.000 |
+| Car | R$ 40.000 |
+| **Total Assets** | **R$ 390.000** |
 
-| Passivos | Valor |
+| Liabilities | Value |
 |----------|-------|
-| Financiamento imóvel | R$ 200.000 |
-| Financiamento carro | R$ 25.000 |
-| **Total Passivos** | **R$ 225.000** |
+| Mortgage | R$ 200.000 |
+| Car financing | R$ 25.000 |
+| **Total Liabilities** | **R$ 225.000** |
 
-**Patrimônio Líquido = R$ 390.000 - R$ 225.000 = R$ 165.000**
+**Net Worth = R$ 390.000 - R$ 225.000 = R$ 165.000**
 
-## Por que acompanhar
+## Why track
 
-- Mostra se você está enriquecendo ou empobrecendo
-- Permite definir metas concretas (ex: "quero R$ 1 milhão em patrimônio")
-- Revela se suas dívidas estão sob controle
-- É mais importante que salário (renda alta com dívidas altas = patrimônio baixo)
+- Shows if you're getting richer or poorer
+- Allows setting concrete goals (e.g. "I want R$ 1 million in net worth")
+- Reveals if your debts are under control
+- Is more important than salary (high income with high debts = low net worth)
 
-## Meta de patrimônio por idade (referência)
+## Net Worth goal by age (reference)
 
-- 30 anos: 1x seu salário anual
-- 40 anos: 3x seu salário anual
-- 50 anos: 6x seu salário anual
-- 60 anos: 8x seu salário anual
+- 30 years: 1x your annual salary
+- 40 years: 3x your annual salary
+- 50 years: 6x your annual salary
+- 60 years: 8x your annual salary

@@ -7,41 +7,41 @@ relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]
 publishedAt: 2025-05-10
 ---
 
-## What is Quitação Antecipada?
+## What is Early Payoff?
 
-Quitação antecipada é pagar uma dívida (financiamento, empréstimo, consórcio) antes do prazo final. Quando você faz isso, tem direito a desconto nos juros que seriam cobrados no futuro. É um direito garantido pelo Código de Defesa do Consumidor.
+Early payoff is paying off a debt (financing, loan, consortium) before the final deadline. When you do this, you are entitled to a discount on the interest that would be charged in the future. It's a right guaranteed by the Consumer Defense Code.
 
-## Seus direitos
+## Your rights
 
-- Você pode quitar qualquer dívida antecipadamente
-- O banco é obrigado a dar desconto proporcional nos juros
-- Não pode cobrar multa por quitação antecipada
-- Pode ser parcial (amortizar) ou total (quitar tudo)
+- You can pay off any debt early
+- The bank is required to give a proportional discount on interest
+- Cannot charge a penalty for early payoff
+- Can be partial (amortize) or total (pay off everything)
 
-## Quanto economiza
+## How much you save
 
-Exemplo: financiamento de R$ 200.000 em 30 anos a 10% a.a.
-- Total que pagaria: ~R$ 632.000
-- Se quitar em 15 anos: ~R$ 387.000
-- **Economia: R$ 245.000** (quase o valor do imóvel!)
+Example: financing of R$ 200,000 in 30 years at 10% per year.
+- Total you would pay: ~R$ 632,000
+- If you pay off in 15 years: ~R$ 387,000
+- **Savings: R$ 245,000** (almost the value of the property!)
 
-## Quando vale a pena quitar
+## When it's worth paying off
 
-✅ Vale a pena:
-- Juros da dívida são maiores que rendimento dos investimentos
-- Financiamento imobiliário com taxa alta (>9% a.a.)
-- Empréstimos pessoais e consignados
-- Quando tem dinheiro parado rendendo menos
+✅ Worth it:
+- Interest on the debt is higher than the return on your investments
+- Real estate financing with high rates (>9% per year)
+- Personal and consigned loans
+- When you have idle money earning less
 
-❌ Não vale a pena:
-- Juros da dívida são menores que seus investimentos rendem
-- Financiamento com taxa muito baixa (<7% a.a.)
-- Se vai ficar sem reserva de emergência
+❌ Not worth it:
+- Interest on the debt is lower than what your investments yield
+- Financing with very low rates (<7% per year)
+- If you'll be left without an emergency reserve
 
-## Como fazer
+## How to do it
 
-1. Ligue para o banco ou acesse o app
-2. Peça simulação de quitação antecipada
-3. Compare o desconto oferecido
-4. Se concordar, efetue o pagamento
-5. Peça comprovante de quitação por escrito
+1. Call the bank or access the app
+2. Request a simulation of early payoff
+3. Compare the discount offered
+4. If you agree, make the payment
+5. Request a written proof of payoff

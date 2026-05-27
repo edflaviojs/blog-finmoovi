@@ -7,46 +7,46 @@ relatedTerms: ["Patrimônio Líquido", "Dividendos", "Renda Fixa"]
 publishedAt: 2025-05-10
 ---
 
-## What is Independência Financeira?
+## What is Financial Independence?
 
-Independência financeira é quando seus investimentos geram renda suficiente para pagar todas as suas contas — sem precisar trabalhar. Você trabalha porque quer, não porque precisa.
+Financial independence is when your investments generate enough income to pay all your bills — without having to work. You work because you want to, not because you need to.
 
-## A fórmula
+## The Formula
 
-**Patrimônio necessário = Gastos anuais × 25**
+**Necessary Assets = Annual Expenses × 25**
 
-Isso é baseado na "regra dos 4%": você pode retirar 4% do patrimônio por ano sem que ele acabe.
+This is based on the "4% rule": you can withdraw 4% of your assets per year without depleting them.
 
-## Exemplo
+## Example
 
-- Gastos mensais: R$ 5.000
-- Gastos anuais: R$ 60.000
-- Patrimônio necessário: R$ 60.000 × 25 = **R$ 1.500.000**
+- Monthly expenses: R$ 5.000
+- Annual expenses: R$ 60.000
+- Necessary Assets: R$ 60.000 × 25 = **R$ 1.500.000**
 
-Com R$ 1,5 milhão investidos rendendo 8% ao ano, você teria R$ 120.000/ano (R$ 10.000/mês) — mais que suficiente.
+With R$ 1.5 million invested earning 8% per year, you would have R$ 120.000/year (R$ 10.000/month) — more than enough.
 
-## Quanto tempo leva
+## How Long it Takes
 
-Depende de quanto você poupa:
+It depends on how much you save:
 
-| Taxa de poupança | Tempo para IF |
+| Savings Rate | Time to FI |
 |-----------------|---------------|
-| 10% da renda | 51 anos |
-| 20% da renda | 37 anos |
-| 30% da renda | 28 anos |
-| 50% da renda | 17 anos |
-| 70% da renda | 8 anos |
+| 10% of income | 51 years |
+| 20% of income | 37 years |
+| 30% of income | 28 years |
+| 50% of income | 17 years |
+| 70% of income | 8 years |
 
-## Passos para a independência financeira
+## Steps to Financial Independence
 
-1. Calcule seus gastos mensais reais
-2. Defina seu "número" (gastos × 25)
-3. Aumente sua taxa de poupança
-4. Invista consistentemente (aportes mensais)
-5. Reinvista todos os rendimentos
-6. Aumente a renda (promoções, renda extra)
-7. Acompanhe o progresso mensalmente
+1. Calculate your real monthly expenses
+2. Define your "number" (expenses × 25)
+3. Increase your savings rate
+4. Invest consistently (monthly contributions)
+5. Reinvest all earnings
+6. Increase income (promotions, extra income)
+7. Track progress monthly
 
-## Independência financeira parcial
+## Partial Financial Independence
 
-Não precisa ser tudo ou nada. Ter 50% dos gastos cobertos por renda passiva já muda sua vida — você pode trabalhar meio período, mudar de carreira ou aceitar um salário menor fazendo o que ama.
+It doesn't have to be all or nothing. Having 50% of your expenses covered by passive income already changes your life — you can work part-time, change careers or accept a lower salary doing what you love.

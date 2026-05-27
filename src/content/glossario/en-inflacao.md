@@ -9,22 +9,22 @@ publishedAt: 2025-05-10
 
 ## What is Inflação?
 
-Inflação é o aumento geral dos preços. Quando a inflação sobe, o mesmo dinheiro compra menos coisas. É por isso que R$ 100 hoje compram menos do que R$ 100 há 10 anos.
+Inflation is the general increase in prices. When inflation rises, the same amount of money buys fewer things. That's why R$ 100 today buy less than R$ 100 did 10 years ago.
 
 ## Como é medida no Brasil?
 
-O principal índice é o **IPCA** (Índice de Preços ao Consumidor Amplo), calculado pelo IBGE. Ele mede a variação de preços de uma cesta de produtos e serviços consumidos pelas famílias.
+The main index is the **IPCA** (Índice de Preços ao Consumidor Amplo), calculated by the IBGE. It measures the price variation of a basket of products and services consumed by families.
 
-## Why does it matter? para suas finanças?
+## Why does it matter? for your finances?
 
-Se seus investimentos rendem menos que a inflação, você está **perdendo dinheiro** em termos reais. Exemplo:
-- Inflação: 5% ao ano
-- Poupança: 6% ao ano
-- Ganho real: apenas 1%
+If your investments yield less than inflation, you're **losing money** in real terms. Example:
+- Inflation: 5% per year
+- Savings: 6% per year
+- Real gain: only 1%
 
 ## Como se proteger?
 
-- Invista em ativos que rendam acima da inflação
-- Tesouro IPCA+ garante rendimento real
-- Diversifique entre renda fixa e variável
-- Acompanhe o IPCA mensal
+- Invest in assets that yield above inflation
+- Tesouro IPCA+ guarantees real returns
+- Diversify between fixed and variable income
+- Track the monthly IPCA

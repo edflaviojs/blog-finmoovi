@@ -9,40 +9,40 @@ publishedAt: 2025-05-10
 
 ## What is Wealth Management?
 
-Wealth Management (gestão de patrimônio) é um serviço financeiro premium que cuida de todos os aspectos da vida financeira de uma pessoa: investimentos, impostos, herança, seguros e planejamento de longo prazo.
+Wealth Management (gestão de patrimônio) is a premium financial service that takes care of all aspects of a person's financial life: investments, taxes, inheritance, insurance, and long-term planning.
 
-## Para quem é
+## For whom is it
 
-Geralmente voltado para pessoas com patrimônio acima de R$ 1 milhão. Mas os conceitos podem ser aplicados por qualquer pessoa:
+It is generally aimed at people with assets above R$ 1 million. But the concepts can be applied by anyone:
 
-## Pilares do Wealth Management
+## Pillars of Wealth Management
 
-### 1. Gestão de Investimentos
-- Alocação de ativos personalizada
-- Rebalanceamento periódico
-- Acesso a produtos exclusivos
+### 1. Investment Management
+- Personalized asset allocation
+- Periodic rebalancing
+- Access to exclusive products
 
-### 2. Planejamento Tributário
-- Minimizar impostos legalmente
-- Escolher melhores estruturas (PF vs. PJ)
-- Timing de vendas para otimizar IR
+### 2. Tax Planning
+- Legally minimizing taxes
+- Choosing the best structures (PF vs. PJ)
+- Timing sales to optimize IR
 
-### 3. Planejamento Sucessório
-- Como transferir patrimônio para herdeiros
-- Holding familiar
-- Previdência como ferramenta sucessória
-- Testamento e doações em vida
+### 3. Succession Planning
+- How to transfer assets to heirs
+- Family holding
+- Pension as a succession tool
+- Will and lifetime donations
 
-### 4. Proteção Patrimonial
-- Seguros adequados
-- Blindagem patrimonial (legal)
-- Diversificação geográfica
+### 4. Asset Protection
+- Adequate insurance
+- Asset shielding (legal)
+- Geographical diversification
 
-## Versão acessível (faça você mesmo)
+## Accessible version (do it yourself)
 
-Mesmo sem um wealth manager, você pode:
-1. Diversificar investimentos (renda fixa + variável + internacional)
-2. Usar PGBL para reduzir IR
-3. Ter seguros adequados
-4. Manter registros organizados
-5. Usar apps como FinMoovi para controle total
+Even without a wealth manager, you can:
+1. Diversify investments (fixed income + variable + international)
+2. Use PGBL to reduce IR
+3. Have adequate insurance
+4. Keep organized records
+5. Use apps like FinMoovi for total control

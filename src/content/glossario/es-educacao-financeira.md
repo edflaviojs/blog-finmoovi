@@ -7,46 +7,46 @@ relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência F
 publishedAt: 2025-05-10
 ---
 
-## ¿Qué es Educação Financeira?
+## ¿Qué es Educación Financiera?
 
-Educação financeira é aprender a lidar com dinheiro de forma inteligente. Não é sobre ficar rico rápido — é sobre entender como o dinheiro funciona para tomar melhores decisões no dia a dia.
+Educación financiera es aprender a manejar el dinero de forma inteligente. No se trata de volverse rico rápidamente — se trata de entender cómo funciona el dinero para tomar mejores decisiones en el día a día.
 
-## Os 4 pilares
+## Los 4 pilares
 
-### 1. Ganhar
-- Desenvolver habilidades que o mercado valoriza
-- Negociar salário
-- Criar fontes de renda extra
-- Empreender
+### 1. Ganar
+- Desarrollar habilidades que el mercado valora
+- Negociar salario
+- Crear fuentes de ingresos extra
+- Emprender
 
 ### 2. Gastar
-- Diferenciar necessidades de desejos
-- Pesquisar antes de comprar
+- Diferenciar necesidades de deseos
+- Investigar antes de comprar
 - Evitar compras por impulso
-- Usar a regra das 48h (esperar antes de comprar)
+- Usar la regla de las 48h (esperar antes de comprar)
 
-### 3. Poupar
-- Pagar-se primeiro (separar antes de gastar)
-- Automatizar transferências para investimentos
-- Ter metas claras de economia
-- Reserva de emergência como prioridade
+### 3. Ahorrar
+- Pagarse primero (separar antes de gastar)
+- Automatizar transferencias para inversiones
+- Tener metas claras de ahorro
+- Reserva de emergencia como prioridad
 
-### 4. Investir
-- Entender risco vs. retorno
-- Começar cedo (juros compostos)
+### 4. Invertir
+- Entender riesgo vs. retorno
+- Empezar temprano (intereses compuestos)
 - Diversificar
-- Ter paciência (longo prazo)
+- Tener paciencia (largo plazo)
 
-## Por que a escola não ensina
+## Por qué la escuela no enseña
 
-Infelizmente, educação financeira não é prioridade no currículo escolar brasileiro. A maioria das pessoas aprende sobre dinheiro por tentativa e erro — geralmente depois de cometer erros caros.
+Desafortunadamente, la educación financiera no es prioridad en el currículo escolar brasileño. La mayoría de las personas aprenden sobre el dinero por prueba y error — generalmente después de cometer errores costosos.
 
-## Como começar
+## Cómo empezar
 
-1. Anote todos os seus gastos por 30 dias
-2. Monte um orçamento simples
-3. Quite dívidas caras (cheque especial, rotativo)
-4. Monte reserva de emergência
-5. Comece a investir (mesmo R$ 50/mês)
-6. Leia 1 livro de finanças por trimestre
-7. Use o FinMoovi para automatizar o controle
+1. Anote todos sus gastos por 30 días
+2. Monte un presupuesto simple
+3. Pague deudas caras (cheque especial, rotativo)
+4. Monte una reserva de emergencia
+5. Empiece a invertir (incluso R$ 50/mes)
+6. Lea 1 libro de finanzas por trimestre
+7. Use el FinMoovi para automatizar el control

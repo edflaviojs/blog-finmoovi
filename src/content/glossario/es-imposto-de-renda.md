@@ -7,41 +7,41 @@ relatedTerms: ["IOF", "CDI", "Renda Fixa"]
 publishedAt: 2025-05-10
 ---
 
-## ¿Qué es Imposto de Renda?
+## ¿Qué es Impuesto de Renta?
 
-O Imposto de Renda (IR) é um tributo cobrado pelo governo federal sobre os rendimentos das pessoas. Quanto mais você ganha, mais paga (sistema progressivo). Todo ano, entre março e maio, é preciso fazer a Declaração de IR.
+El Impuesto de Renta (IR) es un tributo cobrado por el gobierno federal sobre los rendimientos de las personas. Cuanto más ganes, más pagas (sistema progresivo). Todo año, entre marzo y mayo, es preciso hacer la Declaración de IR.
 
-## Tabela progressiva 2025 (salários)
+## Tabela progresiva 2025 (salarios)
 
 | Faixa de renda mensal | Alíquota |
 |----------------------|----------|
-| Até R$ 2.259,20 | Isento |
+| Hasta R$ 2.259,20 | Exento |
 | R$ 2.259,21 a R$ 2.826,65 | 7,5% |
 | R$ 2.826,66 a R$ 3.751,05 | 15% |
 | R$ 3.751,06 a R$ 4.664,68 | 22,5% |
-| Acima de R$ 4.664,68 | 27,5% |
+| Por encima de R$ 4.664,68 | 27,5% |
 
-## IR sobre investimentos
+## IR sobre inversiones
 
-### Tabela regressiva (renda fixa, fundos)
-| Prazo | Alíquota |
+### Tabela regresiva (renta fija, fondos)
+| Plazo | Alíquota |
 |-------|----------|
-| Até 180 dias | 22,5% |
-| 181 a 360 dias | 20% |
-| 361 a 720 dias | 17,5% |
-| Acima de 720 dias | 15% |
+| Hasta 180 días | 22,5% |
+| 181 a 360 días | 20% |
+| 361 a 720 días | 17,5% |
+| Por encima de 720 días | 15% |
 
-### Investimentos isentos de IR
+### Inversiones exentas de IR
 - Poupança
-- LCI e LCA
-- Dividendos de ações
-- Rendimentos de FIIs (pessoa física)
-- Venda de ações até R$ 20.000/mês
+- LCI y LCA
+- Dividendos de acciones
+- Rendimientos de FIIs (persona física)
+- Venta de acciones hasta R$ 20.000/mes
 
 ## Consejos para pagar menos IR (legalmente)
 
-1. Invista em LCI/LCA (isentos)
-2. Mantenha investimentos por mais de 2 anos (alíquota menor)
-3. Use o plano PGBL de previdência (deduz até 12% da renda)
-4. Declare todas as despesas médicas e educação
-5. Organize recibos ao longo do ano
+1. Invierte en LCI/LCA (exentos)
+2. Mantén inversiones por más de 2 años (alíquota menor)
+3. Usa el plano PGBL de previsión (deduce hasta 12% de la renta)
+4. Declara todas las despesas médicas y educación
+5. Organiza recibos a lo largo del año

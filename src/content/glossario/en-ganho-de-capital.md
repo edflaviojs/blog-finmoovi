@@ -7,39 +7,39 @@ relatedTerms: ["Imposto de Renda", "Ações", "Renda Variável"]
 publishedAt: 2025-05-10
 ---
 
-## What is Ganho de Capital?
+## What is Capital Gain?
 
-Ganho de capital é o lucro que você tem quando vende algo por mais do que pagou. Comprou uma ação por R$ 20 e vendeu por R$ 30? Seu ganho de capital é R$ 10. Esse lucro pode ser tributado pelo Imposto de Renda.
+Capital gain is the profit you make when you sell something for more than you paid for it. You bought a stock for R$ 20 and sold it for R$ 30? Your capital gain is R$ 10. This profit can be taxed by the Income Tax.
 
-## Onde incide
+## Where it applies
 
-- Venda de ações (acima de R$ 20.000/mês)
-- Venda de imóveis
-- Venda de criptomoedas (acima de R$ 35.000/mês)
-- Venda de veículos com lucro
-- Venda de qualquer bem acima do valor de compra
+- Sale of stocks (above R$ 20,000/month)
+- Sale of real estate
+- Sale of cryptocurrencies (above R$ 35,000/month)
+- Sale of vehicles with profit
+- Sale of any asset above its purchase value
 
-## Alíquotas
+## Tax rates
 
-### Ações
-- Operações normais: 15% sobre o lucro
-- Day trade: 20% sobre o lucro
-- Isenção: vendas até R$ 20.000/mês
+### Stocks
+- Normal operations: 15% on the profit
+- Day trade: 20% on the profit
+- Exemption: sales up to R$ 20,000/month
 
-### Imóveis
-- 15% sobre o ganho de capital
-- Isenção: imóvel único até R$ 440.000 (se não vendeu outro nos últimos 5 anos)
-- Isenção: se usar o valor para comprar outro imóvel em 180 dias
+### Real Estate
+- 15% on capital gain
+- Exemption: single property up to R$ 440,000 (if no other property was sold in the last 5 years)
+- Exemption: if the amount is used to buy another property within 180 days
 
-### Criptomoedas
-- 15% sobre lucro em vendas acima de R$ 35.000/mês
+### Cryptocurrencies
+- 15% on profit from sales above R$ 35,000/month
 
 ## How to calculate?
 
-**Ganho de Capital = Preço de Venda - Preço de Compra - Custos**
+**Capital Gain = Selling Price - Purchase Price - Costs**
 
-Custos incluem: corretagem, taxas, reformas (imóveis), etc.
+Costs include: brokerage, fees, renovations (real estate), etc.
 
-## Dica importante
+## Important tip
 
-Mantenha registro de todas as compras (notas de corretagem, contratos). Sem comprovante do preço de compra, a Receita pode considerar o custo como zero — e cobrar imposto sobre o valor total da venda.
+Keep a record of all purchases (brokerage notes, contracts). Without proof of the purchase price, the Revenue Service may consider the cost as zero — and charge tax on the total sale value.

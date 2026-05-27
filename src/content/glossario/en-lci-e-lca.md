@@ -7,45 +7,45 @@ relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 ---
 
-## O que são LCI e LCA?
+## What are LCI and LCA?
 
-LCI (Letra de Crédito Imobiliário) e LCA (Letra de Crédito do Agronegócio) são investimentos de renda fixa emitidos por bancos. A grande vantagem: são **isentos de Imposto de Renda** para pessoa física.
+LCI (Letra de Crédito Imobiliário) and LCA (Letra de Crédito do Agronegócio) are fixed-income investments issued by banks. The big advantage: they are **exempt from Income Tax** for individuals.
 
-## Difference between LCI e LCA
+## Difference between LCI and LCA
 
-A única diferença é o destino do dinheiro:
-- **LCI:** banco usa para financiar o setor imobiliário
-- **LCA:** banco usa para financiar o agronegócio
+The only difference is the destination of the money:
+- **LCI:** the bank uses it to finance the real estate sector
+- **LCA:** the bank uses it to finance the agribusiness
 
-Para o investidor, funcionam da mesma forma.
+For the investor, they work in the same way.
 
 ## Advantages
 
-- Isenção de IR (rendimento líquido maior)
-- Proteção do FGC até R$ 250.000
-- Rendimento geralmente atrelado ao CDI (85-100%)
-- Segurança similar ao CDB
+- Exemption from IR (higher net income)
+- Protection by FGC up to R$ 250,000
+- Yield generally linked to CDI (85-100%)
+- Security similar to CDB
 
 ## Disadvantages
 
-- Carência mínima de 90 dias (não pode resgatar antes)
-- Investimento mínimo geralmente maior (R$ 1.000-5.000)
-- Menos opções disponíveis que CDB
+- Minimum lock-up period of 90 days (cannot withdraw before)
+- Minimum investment usually higher (R$ 1,000-5,000)
+- Fewer options available than CDB
 
 ## LCI/LCA vs. CDB
 
-Uma LCI que paga 85% do CDI pode render mais que um CDB de 100% do CDI, por causa da isenção de IR:
+An LCI that pays 85% of CDI can yield more than a CDB of 100% of CDI, due to the exemption from IR:
 
 | | CDB 100% CDI | LCI 85% CDI |
 |--|-------------|-------------|
-| Rendimento bruto | 13,65% | 11,60% |
+| Gross yield | 13,65% | 11,60% |
 | IR (15%) | -2,05% | 0% |
-| **Rendimento líquido** | **11,60%** | **11,60%** |
+| **Net yield** | **11,60%** | **11,60%** |
 
-Neste exemplo, rendem igual. Mas uma LCI de 90% do CDI já ganha do CDB de 100%.
+In this example, they yield the same. But an LCI of 90% of CDI already beats the CDB of 100%.
 
-## Quando investir em LCI/LCA
+## When to invest in LCI/LCA
 
-- Quando não vai precisar do dinheiro por pelo menos 90 dias
-- Para diversificar a renda fixa
-- Quando encontrar taxas acima de 90% do CDI
+- When you won't need the money for at least 90 days
+- To diversify fixed-income investments
+- When you find rates above 90% of CDI

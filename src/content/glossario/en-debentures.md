@@ -7,46 +7,46 @@ relatedTerms: ["Renda Fixa", "CDI", "Tesouro Direto"]
 publishedAt: 2025-05-10
 ---
 
-## O que são Debêntures?
+## What are Debentures?
 
-Debêntures são títulos de dívida emitidos por empresas. Quando você compra uma debênture, está emprestando dinheiro para a empresa — e ela te paga juros por isso. É como um CDB, mas emitido por empresas (não bancos).
+Debentures are debt securities issued by companies. When you buy a debenture, you are lending money to the company — and they pay you interest for it. It's like a CDB, but issued by companies (not banks).
 
 ## Types
 
-### Debêntures comuns
-- Tributadas pelo IR (tabela regressiva)
-- Não têm garantia do FGC
-- Rendimento geralmente CDI + spread
+### Common Debentures
+- Taxed by IR (regressive table)
+- No FGC guarantee
+- Yield generally CDI + spread
 
-### Debêntures incentivadas
-- **Isentas de IR** para pessoa física
-- Financiam projetos de infraestrutura
-- Rendimento: IPCA + taxa fixa
+### Incentivized Debentures
+- **Exempt from IR** for individuals
+- Finance infrastructure projects
+- Yield: IPCA + fixed rate
 
 ## Advantages
 
-- Rendimento geralmente maior que CDB e Tesouro
-- Debêntures incentivadas são isentas de IR
-- Diversificação da renda fixa
-- Prazos variados (2 a 15 anos)
+- Yield is generally higher than CDB and Treasury
+- Incentivized debentures are exempt from IR
+- Diversification of fixed income
+- Varied terms (2 to 15 years)
 
 ## Risks
 
-- **Risco de crédito:** empresa pode não pagar (não tem FGC)
-- **Risco de liquidez:** pode ser difícil vender antes do vencimento
-- **Risco de mercado:** preço pode oscilar se vender antes
+- **Credit risk:** company may not pay (no FGC)
+- **Liquidity risk:** it may be difficult to sell before maturity
+- **Market risk:** price may fluctuate if sold before
 
-## Como avaliar
+## How to Evaluate
 
-Antes de investir, verifique:
-1. **Rating da empresa** (nota de crédito: AAA é a melhor)
-2. **Setor da empresa** (setores estáveis são mais seguros)
-3. **Garantias** (real, flutuante, quirografária)
-4. **Prazo** (quanto maior, maior o risco)
+Before investing, check:
+1. **Company rating** (credit score: AAA is the best)
+2. **Company sector** (stable sectors are safer)
+3. **Guarantees** (real, floating, unsecured)
+4. **Term** (the longer, the higher the risk)
 
-## Para quem é indicado
+## For Whom is it Indicated
 
-- Investidores com patrimônio acima de R$ 50.000
-- Quem já tem Tesouro e CDB e quer diversificar
-- Quem busca isenção de IR (debêntures incentivadas)
-- Perfil moderado a arrojado
+- Investors with assets over R$ 50,000
+- Those who already have Treasury and CDB and want to diversify
+- Those seeking IR exemption (incentivized debentures)
+- Moderate to aggressive profile

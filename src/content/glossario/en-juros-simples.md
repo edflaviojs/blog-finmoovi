@@ -7,40 +7,40 @@ relatedTerms: ["Juros Compostos", "CDI", "Selic"]
 publishedAt: 2025-05-10
 ---
 
-## O que são Juros Simples?
+## What are Simple Interest?
 
-Juros simples são calculados apenas sobre o valor original (principal). Não importa quanto tempo passe, os juros são sempre calculados sobre o mesmo valor inicial. É o tipo mais básico de juros.
+Simple interest is calculated only on the original value (principal). No matter how much time passes, the interest is always calculated on the same initial value. It's the most basic type of interest.
 
-## Fórmula
+## Formula
 
 **J = P × i × t**
 
-Onde:
-- J = juros
-- P = principal (valor inicial)
-- i = taxa de juros (em decimal)
-- t = tempo
+Where:
+- J = interest
+- P = principal (initial value)
+- i = interest rate (in decimal)
+- t = time
 
-## Exemplo
+## Example
 
-R$ 1.000 a 10% ao ano por 3 anos (juros simples):
-- Juros = 1.000 × 0,10 × 3 = R$ 300
-- Total: R$ 1.300
+R$ 1,000 at 10% per year for 3 years (simple interest):
+- Interest = 1,000 × 0.10 × 3 = R$ 300
+- Total: R$ 1,300
 
-Compare com juros compostos:
-- Ano 1: 1.000 × 1,10 = R$ 1.100
-- Ano 2: 1.100 × 1,10 = R$ 1.210
-- Ano 3: 1.210 × 1,10 = R$ 1.331
-- Total: R$ 1.331 (R$ 31 a mais)
+Compare with compound interest:
+- Year 1: 1,000 × 1.10 = R$ 1,100
+- Year 2: 1,100 × 1.10 = R$ 1,210
+- Year 3: 1,210 × 1.10 = R$ 1,331
+- Total: R$ 1,331 (R$ 31 more)
 
-## Onde aparecem juros simples
+## Where do simple interest appear
 
-Na prática, juros simples são raros. Aparecem em:
-- Alguns cálculos de multas
-- Desconto de duplicatas
-- Cálculos trabalhistas
-- Exercícios de matemática financeira
+In practice, simple interest is rare. They appear in:
+- Some fine calculations
+- Discount of duplicates
+- Labor calculations
+- Financial math exercises
 
-## Why does it matter? saber
+## Why does it matter? to know
 
-Entender a diferença entre juros simples e compostos é fundamental. No mundo real, quase tudo usa juros compostos — e isso faz uma diferença enorme no longo prazo, tanto para investimentos quanto para dívidas.
+Understanding the difference between simple and compound interest is fundamental. In the real world, almost everything uses compound interest — and that makes a huge difference in the long run, both for investments and debts.

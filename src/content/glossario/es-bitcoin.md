@@ -9,30 +9,30 @@ publishedAt: 2025-05-10
 
 ## ¿Qué es Bitcoin?
 
-Bitcoin (BTC) é a primeira e mais conhecida criptomoeda do mundo. Foi criada em 2009 por uma pessoa (ou grupo) sob o pseudônimo Satoshi Nakamoto. Funciona de forma descentralizada — sem bancos, sem governo controlando.
+Bitcoin (BTC) es la primera y más conocida criptomoneda del mundo. Fue creada en 2009 por una persona (o grupo) bajo el seudónimo Satoshi Nakamoto. Funciona de forma descentralizada — sin bancos, sin gobierno controlando.
 
 ## ¿Cómo funciona?
 
-- Transações são registradas em um livro público chamado **blockchain**
-- Não existe um "banco central" do Bitcoin
-- Existe um limite de 21 milhões de bitcoins que podem existir
-- Novas unidades são criadas por "mineração" (computadores resolvendo problemas matemáticos)
+- Transacciones son registradas en un libro público llamado **blockchain**
+- No existe un "banco central" del Bitcoin
+- Existe un límite de 21 millones de bitcoins que pueden existir
+- Nuevas unidades son creadas por "mineração" (computadoras resolviendo problemas matemáticos)
 
-## Bitcoin como investimento
+## Bitcoin como inversión
 
-| Vantagem | Desvantagem |
+| Ventaja | Desventaja |
 |----------|-------------|
-| Potencial de alta valorização | Volatilidade extrema |
-| Descentralizado | Não regulamentado no Brasil |
-| Escassez programada | Pode perder 50%+ em meses |
-| Funciona 24/7 | Complexo para iniciantes |
+| Potencial de alta valorización | Volatilidad extrema |
+| Descentralizado | No regulamentado en Brasil |
+| Escasez programada | Puede perder 50%+ en meses |
+| Funciona 24/7 | Complejo para iniciantes |
 
-## Quanto investir?
+## ¿Cuánto invertir?
 
-A recomendação geral é: **no máximo 5% do seu patrimônio** em criptomoedas. Nunca invista dinheiro que você não pode perder. Bitcoin é altamente volátil.
+La recomendación general es: **no más del 5% de su patrimonio** en criptomonedas. Nunca invierta dinero que usted no pueda perder. Bitcoin es altamente volátil.
 
-## Como comprar no Brasil
+## ¿Cómo comprar en Brasil?
 
-1. Abra conta em uma exchange (Mercado Bitcoin, Binance, Foxbit)
-2. Faça um depósito via PIX
-3. Compre a quantidade desejada (pode comprar frações)
+1. Abra cuenta en una exchange (Mercado Bitcoin, Binance, Foxbit)
+2. Haga un depósito vía PIX
+3. Compre la cantidad deseada (puede comprar fracciones)

@@ -7,34 +7,34 @@ relatedTerms: ["Dividendos", "Renda Variável", "Bolsa de Valores"]
 publishedAt: 2025-05-10
 ---
 
-## O que são Fundos Imobiliários (FIIs)?
+## ¿Qué son los Fondos Inmobiliarios (FIIs)?
 
-Fundos Imobiliários são como "condomínios de investidores" que juntam dinheiro para comprar imóveis (shoppings, galpões, escritórios) ou títulos do setor imobiliário. Você compra cotas na bolsa e recebe aluguéis mensais.
+Los Fondos Inmobiliarios son como "condominios de inversores" que juntan dinero para comprar inmuebles (centros comerciales, almacenes, oficinas) o títulos del sector inmobiliario. Usted compra cuotas en la bolsa y recibe alquileres mensuales.
 
 ## ¿Cómo funciona?
 
-1. O fundo compra imóveis com o dinheiro dos cotistas
-2. Os imóveis são alugados para empresas
-3. Os aluguéis são distribuídos mensalmente aos cotistas
-4. Rendimentos são **isentos de IR** para pessoa física
+1. El fondo compra inmuebles con el dinero de los cotizantes
+2. Los inmuebles son alquilados a empresas
+3. Los alquileres son distribuidos mensualmente a los cotizantes
+4. Rendimientos son **exentos de IR** para persona física
 
 ## Ventajas
 
-- Renda mensal isenta de imposto
-- Investir em imóveis com pouco dinheiro (a partir de R$ 10)
-- Diversificação (um fundo pode ter vários imóveis)
-- Liquidez (vende na hora na bolsa)
-- Não precisa lidar com inquilinos
+- Renta mensual exenta de impuesto
+- Invertir en inmuebles con poco dinero (a partir de R$ 10)
+- Diversificación (un fondo puede tener varios inmuebles)
+- Liquidez (vende en el momento en la bolsa)
+- No necesita lidiar con inquilinos
 
 ## Tipos de FIIs
 
-| Tipo | Exemplo | Característica |
+| Tipo | Ejemplo | Característica |
 |------|---------|---------------|
-| Tijolo | HGLG11 | Imóveis físicos (galpões) |
-| Papel | KNCR11 | Títulos de dívida imobiliária |
-| Híbrido | KNRI11 | Mix de tijolo e papel |
-| FOF | BCFF11 | Fundo que investe em outros FIIs |
+| Ladrillo | HGLG11 | Inmuebles físicos (almacenes) |
+| Papel | KNCR11 | Títulos de deuda inmobiliaria |
+| Híbrido | KNRI11 | Mezcla de ladrillo y papel |
+| FOF | BCFF11 | Fondo que invierte en otros FIIs |
 
 ## ¿Cuánto rinde?
 
-A média do mercado é de 0,7% a 1% ao mês em rendimentos. Com R$ 100.000 investidos, você pode receber R$ 700-1.000/mês isentos de IR.
+El promedio del mercado es de 0,7% a 1% al mes en rendimientos. Con R$ 100.000 invertidos, usted puede recibir R$ 700-1.000/mes exentos de IR.

@@ -65,11 +65,13 @@ async function main() {
       const newContent = '---' + frontmatter + '---\n\n' + translatedBody + '\n';
       writeFileSync(filePath, newContent, 'utf-8');
       translated++;
-      // Rate limit
-      await new Promise(r => setTimeout(r, 500));
+      // Rate limit - wait 10s between calls to avoid Groq TPM limit
+      await new Promise(r => setTimeout(r, 10000));
     } catch (err) {
       console.error(`  ❌ ${file}: ${err.message}`);
       errors++;
+      // Wait longer on error (rate limit)
+      await new Promise(r => setTimeout(r, 15000));
     }
   }
 
@@ -102,11 +104,13 @@ async function main() {
       const newContent = '---' + frontmatter + '---\n\n' + translatedBody + '\n';
       writeFileSync(filePath, newContent, 'utf-8');
       translated++;
-      // Rate limit
-      await new Promise(r => setTimeout(r, 500));
+      // Rate limit - wait 10s between calls to avoid Groq TPM limit
+      await new Promise(r => setTimeout(r, 10000));
     } catch (err) {
       console.error(`  ❌ ${file}: ${err.message}`);
       errors++;
+      // Wait longer on error (rate limit)
+      await new Promise(r => setTimeout(r, 15000));
     }
   }
 

@@ -7,34 +7,34 @@ relatedTerms: ["Renda Fixa", "Renda Variável", "ETF"]
 publishedAt: 2025-05-10
 ---
 
-## ¿Qué es Diversificação?
+## ¿Qué es Diversificación?
 
-Diversificação é a estratégia de espalhar seu dinheiro entre diferentes tipos de investimentos. A ideia é simples: se um investimento vai mal, os outros compensam. É o famoso "não coloque todos os ovos na mesma cesta".
+Diversificación es la estrategia de dispersar tu dinero entre diferentes tipos de inversiones. La idea es simple: si una inversión sale mal, las otras compensan. Es el famoso "no pongas todos los huevos en la misma cesta".
 
-## Por que diversificar?
+## ¿Por qué diversificar?
 
-- Reduz o risco de perder tudo
-- Suaviza as oscilações da carteira
-- Aumenta as chances de bons retornos no longo prazo
-- Protege contra crises em setores específicos
+- Reduce el riesgo de perder todo
+- Suaviza las oscilaciones de la cartera
+- Aumenta las posibilidades de buenos rendimientos a largo plazo
+- Protege contra crisis en sectores específicos
 
-## Como diversificar na prática
+## ¿Cómo diversificar en la práctica
 
-### Por classe de ativo
-- Renda fixa (CDB, Tesouro Direto)
-- Renda variável (ações, FIIs)
+### Por clase de activo
+- Renta fija (CDB, Tesoro Directo)
+- Renta variable (acciones, FIIs)
 - Internacional (ETFs de S&P 500)
-- Reserva de emergência (Selic, CDB liquidez diária)
+- Reserva de emergencia (Selic, CDB liquidez diaria)
 
-### Exemplo de carteira diversificada (perfil moderado)
-| Classe | Percentual | Exemplo |
+### Ejemplo de cartera diversificada (perfil moderado)
+| Clase | Porcentual | Ejemplo |
 |--------|-----------|---------|
-| Renda Fixa | 40% | Tesouro IPCA+, CDB |
-| Ações BR | 25% | BOVA11, ações individuais |
+| Renta Fija | 40% | Tesoro IPCA+, CDB |
+| Acciones BR | 25% | BOVA11, acciones individuales |
 | FIIs | 15% | HGLG11, XPLG11 |
 | Internacional | 15% | IVVB11 |
 | Cripto | 5% | Bitcoin, Ethereum |
 
-## Erro comum
+## Error común
 
-Muita gente acha que ter 10 CDBs diferentes é diversificar. Não é — são todos renda fixa. Diversificação real é ter classes de ativos diferentes que se comportam de formas diferentes.
+Mucha gente piensa que tener 10 CDBs diferentes es diversificar. No es así — son todos renta fija. Diversificación real es tener clases de activos diferentes que se comportan de formas diferentes.

@@ -7,28 +7,28 @@ relatedTerms: ["Rendimento", "CDI", "Investimento"]
 publishedAt: 2025-05-10
 ---
 
-## O que são Juros Compostos?
+## What are Compound Interest?
 
-Juros compostos são juros calculados sobre o valor original **mais** os juros já acumulados. Diferente dos juros simples (que incidem só sobre o valor inicial), os compostos crescem exponencialmente.
+Compound interest is interest calculated on the original value **plus** the interest already accrued. Unlike simple interest (which only applies to the initial value), compound interest grows exponentially.
 
 ## Practical example
 
-R$ 10.000 investidos a 10% ao ano:
+R$ 10,000 invested at 10% per year:
 
-| Ano | Juros Simples | Juros Compostos |
+| Year | Simple Interest | Compound Interest |
 |-----|--------------|-----------------|
-| 1 | R$ 11.000 | R$ 11.000 |
-| 5 | R$ 15.000 | R$ 16.105 |
-| 10 | R$ 20.000 | R$ 25.937 |
-| 20 | R$ 30.000 | R$ 67.275 |
-| 30 | R$ 40.000 | R$ 174.494 |
+| 1 | R$ 11,000 | R$ 11,000 |
+| 5 | R$ 15,000 | R$ 16,105 |
+| 10 | R$ 20,000 | R$ 25,937 |
+| 20 | R$ 30,000 | R$ 67,275 |
+| 30 | R$ 40,000 | R$ 174,494 |
 
-## A regra dos 72
+## The Rule of 72
 
-Para saber em quantos anos seu dinheiro dobra, divida 72 pela taxa de juros:
-- 12% ao ano → 72 ÷ 12 = **6 anos** para dobrar
-- 8% ao ano → 72 ÷ 8 = **9 anos** para dobrar
+To find out how many years it takes for your money to double, divide 72 by the interest rate:
+- 12% per year → 72 ÷ 12 = **6 years** to double
+- 8% per year → 72 ÷ 8 = **9 years** to double
 
-## Por que começar cedo importa
+## Why starting early matters
 
-Quem investe R$ 500/mês dos 25 aos 65 anos (a 10% a.a.) acumula **R$ 3,2 milhões**. Quem começa aos 35, acumula R$ 1,1 milhão. 10 anos de diferença = 3x menos dinheiro.
+Someone who invests R$ 500/month from age 25 to 65 (at 10% per year) accumulates **R$ 3.2 million**. Someone who starts at 35 accumulates R$ 1.1 million. 10 years of difference = 3x less money.

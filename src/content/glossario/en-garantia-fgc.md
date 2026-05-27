@@ -7,40 +7,40 @@ relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 ---
 
-## What is a Garantia FGC?
+## What is a FGC Guarantee?
 
-O FGC (Fundo Garantidor de Créditos) é como um seguro para seus investimentos em bancos. Se o banco quebrar, o FGC devolve seu dinheiro — até R$ 250.000 por CPF por instituição financeira.
+The FGC (Fundo Garantidor de Créditos) is like an insurance for your investments in banks. If the bank goes bankrupt, the FGC returns your money — up to R$ 250,000 per CPF per financial institution.
 
-## O que é coberto
+## What is covered
 
 - CDB (Certificado de Depósito Bancário)
-- LCI e LCA
-- Poupança
-- Conta corrente
+- LCI and LCA
+- Savings account
+- Checking account
 - RDB
-- Letras de câmbio
+- Exchange letters
 
-## O que NÃO é coberto
+## What is NOT covered
 
-- Ações
-- Fundos de investimento
-- Debêntures
-- Tesouro Direto (tem garantia do governo federal)
-- CRI e CRA
-- Previdência privada
+- Stocks
+- Investment funds
+- Debentures
+- Treasury Direct (has a federal government guarantee)
+- CRI and CRA
+- Private pension
 
-## Limites
+## Limits
 
-- **R$ 250.000** por CPF por instituição
-- **R$ 1.000.000** no total (teto global, renova a cada 4 anos)
+- **R$ 250,000** per CPF per institution
+- **R$ 1,000,000** in total (global ceiling, renewed every 4 years)
 
-## Estratégia prática
+## Practical strategy
 
-Se você tem R$ 500.000 para investir em CDB:
-- Coloque R$ 250.000 no Banco A
-- Coloque R$ 250.000 no Banco B
-- Ambos estão 100% cobertos pelo FGC
+If you have R$ 500,000 to invest in CDB:
+- Put R$ 250,000 in Bank A
+- Put R$ 250,000 in Bank B
+- Both are 100% covered by the FGC
 
-## Dica importante
+## Important tip
 
-Bancos menores geralmente pagam taxas maiores (120-130% do CDI) justamente porque são menos conhecidos. Com a garantia do FGC, o risco é praticamente o mesmo de um bancão — mas o rendimento é maior.
+Smaller banks usually pay higher rates (120-130% of CDI) precisely because they are less well-known. With the FGC guarantee, the risk is virtually the same as a large bank — but the return is higher.

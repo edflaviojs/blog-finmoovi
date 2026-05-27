@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 
 ## What is Renda Variável?
 
-Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce conforme o mercado. Você pode ganhar muito — ou perder. Inclui ações, fundos imobiliários, ETFs, criptomoedas e derivativos.
+Renda Variável is everything that doesn't have a guaranteed return. The price goes up and down according to the market. You can earn a lot — or lose. It includes stocks, real estate funds, ETFs, cryptocurrencies, and derivatives.
 
 ## Diferença para Renda Fixa
 
@@ -23,19 +23,19 @@ Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce co
 
 ## Principais investimentos de renda variável
 
-1. **Ações** — pedaços de empresas
-2. **Fundos Imobiliários (FIIs)** — cotas de fundos que investem em imóveis
-3. **ETFs** — fundos que replicam índices
-4. **Criptomoedas** — ativos digitais descentralizados
-5. **Derivativos** — contratos futuros, opções (avançado)
+1. **Ações** — pieces of companies
+2. **Fundos Imobiliários (FIIs)** — shares of funds that invest in real estate
+3. **ETFs** — funds that replicate indexes
+4. **Criptomoedas** — decentralized digital assets
+5. **Derivativos** — futures contracts, options (advanced)
 
 ## Risks
 
-- Perda de capital (seu investimento pode valer menos)
-- Volatilidade (oscilações diárias)
-- Risco de empresa (falência)
-- Risco de mercado (crises econômicas)
+- Perda de capital (your investment may be worth less)
+- Volatilidade (daily fluctuations)
+- Risco de empresa (company bankruptcy)
+- Risco de mercado (economic crises)
 
 ## Regra de ouro
 
-Só invista em renda variável dinheiro que você não vai precisar nos próximos 5 anos. E sempre tenha sua reserva de emergência em renda fixa antes de começar.
+Only invest in renda variável with money you won't need in the next 5 years. And always have your emergency reserve in renda fixa before starting.

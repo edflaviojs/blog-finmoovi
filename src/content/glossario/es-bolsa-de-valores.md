@@ -7,30 +7,30 @@ relatedTerms: ["Ações", "Renda Variável", "Ibovespa"]
 publishedAt: 2025-05-10
 ---
 
-## ¿Qué es a Bolsa de Valores?
+## ¿Qué es la Bolsa de Valores?
 
-A Bolsa de Valores é como um mercado onde empresas vendem pedaços de si mesmas (ações) e investidores compram e vendem esses pedaços entre si. No Brasil, a bolsa se chama **B3** (Brasil, Bolsa, Balcão).
+La Bolsa de Valores es como un mercado donde empresas venden pedazos de sí mismas (acciones) e inversores compran y venden esos pedazos entre sí. En Brasil, la bolsa se llama **B3** (Brasil, Bolsa, Balcão).
 
 ## ¿Cómo funciona?
 
-1. Empresas abrem capital (IPO) para captar dinheiro
-2. Investidores compram ações dessas empresas
-3. As ações são negociadas diariamente na bolsa
-4. O preço sobe e desce conforme oferta e demanda
+1. Empresas abren capital (IPO) para captar dinero
+2. Inversores compran acciones de esas empresas
+3. Las acciones se negocian diariamente en la bolsa
+4. El precio sube y baja conforme oferta y demanda
 
-## Horário de funcionamento
+## Horario de funcionamiento
 
-A B3 funciona de segunda a sexta:
-- **Pré-abertura:** 9:45 às 10:00
-- **Pregão regular:** 10:00 às 17:00
-- **After market:** 17:30 às 18:00
+La B3 funciona de lunes a viernes:
+- **Pré-abertura:** 9:45 a 10:00
+- **Pregão regular:** 10:00 a 17:00
+- **After market:** 17:30 a 18:00
 
-## Principais índices
+## Principales índices
 
-- **Ibovespa:** índice com as ações mais negociadas do Brasil
-- **IFIX:** índice de fundos imobiliários
-- **S&P 500:** principal índice dos EUA
+- **Ibovespa:** índice con las acciones más negociadas de Brasil
+- **IFIX:** índice de fondos inmobiliarios
+- **S&P 500:** principal índice de los EE. UU.
 
-## ¿Cómo invertir? na bolsa
+## ¿Cómo invertir en la bolsa?
 
-Você precisa de uma conta em uma corretora de valores. A maioria não cobra taxa para abrir conta. Com R$ 100 já é possível comprar ações fracionárias.
+Necesitas una cuenta en una corredora de valores. La mayoría no cobra tarifa para abrir cuenta. Con R$ 100 ya es posible comprar acciones fraccionarias.

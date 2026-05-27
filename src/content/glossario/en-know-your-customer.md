@@ -9,43 +9,43 @@ publishedAt: 2025-05-10
 
 ## What is KYC (Know Your Customer)?
 
-KYC (Conheça Seu Cliente) é o processo que bancos e corretoras usam para verificar quem você é. Quando pedem RG, CPF, comprovante de endereço e selfie para abrir conta — isso é KYC.
+KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verify who you are. When they ask for your ID, CPF, proof of address, and selfie to open an account — that's KYC.
 
-## Por que existe
+## Why it exists
 
-- Prevenir lavagem de dinheiro
-- Combater financiamento ao terrorismo
-- Evitar fraudes e contas falsas
-- Cumprir regulamentações do Banco Central
+- Prevent money laundering
+- Combat terrorism financing
+- Avoid fraud and fake accounts
+- Comply with Central Bank regulations
 
-## O que pedem
+## What they ask for
 
-### Nível básico
-- Nome completo e CPF
-- Data de nascimento
-- Email e telefone
+### Basic level
+- Full name and CPF
+- Date of birth
+- Email and phone number
 
-### Nível intermediário
-- Documento com foto (RG ou CNH)
-- Comprovante de endereço
-- Selfie com documento
+### Intermediate level
+- Photo ID (ID or driver's license)
+- Proof of address
+- Selfie with ID
 
-### Nível avançado
-- Declaração de IR
-- Comprovante de renda
-- Origem dos recursos
+### Advanced level
+- Tax return
+- Proof of income
+- Source of funds
 
-## Onde você encontra KYC
+## Where you'll find KYC
 
-- Abertura de conta em banco/corretora
-- Exchanges de criptomoedas
-- Fintechs e carteiras digitais
-- Empréstimos e financiamentos
-- Investimentos acima de certos valores
+- Opening a bank or brokerage account
+- Cryptocurrency exchanges
+- Fintechs and digital wallets
+- Loans and financing
+- Investments above certain values (e.g., R$ 10,000 in a CDB or R$ 5,000 in an ETF)
 
 ## Tips
 
-1. Mantenha documentos digitalizados no celular (facilita)
-2. Comprovante de endereço: conta de luz/água dos últimos 3 meses
-3. O processo é obrigatório — desconfie de plataformas que não pedem
-4. Seus dados são protegidos pela LGPD
+1. Keep digital copies of your documents on your phone (it's easier)
+2. Proof of address: utility bills from the last 3 months
+3. The process is mandatory — be wary of platforms that don't ask
+4. Your data is protected by the LGPD

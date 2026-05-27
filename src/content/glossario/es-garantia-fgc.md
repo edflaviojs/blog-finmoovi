@@ -7,40 +7,40 @@ relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 ---
 
-## ¿Qué es a Garantia FGC?
+## ¿Qué es la Garantía FGC?
 
-O FGC (Fundo Garantidor de Créditos) é como um seguro para seus investimentos em bancos. Se o banco quebrar, o FGC devolve seu dinheiro — até R$ 250.000 por CPF por instituição financeira.
+El FGC (Fondo Garantidor de Créditos) es como un seguro para tus inversiones en bancos. Si el banco quiebra, el FGC te devuelve tu dinero — hasta R$ 250.000 por CPF por institución financiera.
 
-## O que é coberto
+## ¿Qué está cubierto?
 
 - CDB (Certificado de Depósito Bancário)
-- LCI e LCA
+- LCI y LCA
 - Poupança
-- Conta corrente
+- Cuenta corriente
 - RDB
-- Letras de câmbio
+- Letras de cambio
 
-## O que NÃO é coberto
+## ¿Qué NO está cubierto?
 
-- Ações
-- Fundos de investimento
-- Debêntures
-- Tesouro Direto (tem garantia do governo federal)
-- CRI e CRA
-- Previdência privada
+- Acciones
+- Fondos de inversión
+- Deudas
+- Tesoro Directo (tiene garantía del gobierno federal)
+- CRI y CRA
+- Previsión privada
 
-## Limites
+## Límites
 
-- **R$ 250.000** por CPF por instituição
-- **R$ 1.000.000** no total (teto global, renova a cada 4 anos)
+- **R$ 250.000** por CPF por institución
+- **R$ 1.000.000** en total (techo global, se renueva cada 4 años)
 
-## Estratégia prática
+## Estrategia práctica
 
-Se você tem R$ 500.000 para investir em CDB:
-- Coloque R$ 250.000 no Banco A
-- Coloque R$ 250.000 no Banco B
-- Ambos estão 100% cobertos pelo FGC
+Si tienes R$ 500.000 para invertir en CDB:
+- Coloca R$ 250.000 en el Banco A
+- Coloca R$ 250.000 en el Banco B
+- Ambos están 100% cubiertos por el FGC
 
-## Dica importante
+## Consejo importante
 
-Bancos menores geralmente pagam taxas maiores (120-130% do CDI) justamente porque são menos conhecidos. Com a garantia do FGC, o risco é praticamente o mesmo de um bancão — mas o rendimento é maior.
+Bancos más pequeños generalmente pagan tasas más altas (120-130% del CDI) justamente porque son menos conocidos. Con la garantía del FGC, el riesgo es prácticamente el mismo que el de un gran banco — pero el rendimiento es mayor.

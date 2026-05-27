@@ -9,30 +9,30 @@ publishedAt: 2025-05-10
 
 ## What is Hedge?
 
-Hedge (pronuncia-se "rédje") é uma estratégia de proteção financeira. É como um seguro para seus investimentos. Se você tem medo de que o dólar suba e prejudique seus custos, pode fazer um hedge cambial para se proteger.
+Hedge (pronounced "rédje") is a financial protection strategy. It's like an insurance policy for your investments. If you're afraid that the dollar will rise and hurt your costs, you can do a currency hedge to protect yourself.
 
-## Examples práticos
+## Practical Examples
 
-### Hedge cambial
-- Empresa que importa produtos compra contratos futuros de dólar
-- Se o dólar subir, o contrato compensa a perda
+### Currency Hedge
+- A company that imports products buys dollar futures contracts
+- If the dollar rises, the contract compensates for the loss
 
-### Hedge em ações
-- Investidor compra opções de venda (put) para proteger sua carteira
-- Se as ações caírem, a put valoriza e compensa
+### Hedge in Stocks
+- An investor buys put options to protect their portfolio
+- If the stocks fall, the put option increases in value and compensates
 
-### Hedge com ouro
-- Investir parte da carteira em ouro
-- Ouro tende a subir em crises (protege o resto da carteira)
+### Hedge with Gold
+- Investing part of the portfolio in gold
+- Gold tends to rise in times of crisis (protects the rest of the portfolio)
 
-## Hedge para pessoa física
+## Hedge for Individuals
 
-Você não precisa de derivativos complexos. Formas simples de hedge:
-1. **Dolarizar parte da carteira** — ETFs internacionais (IVVB11)
-2. **Tesouro IPCA+** — protege contra inflação
-3. **Diversificação** — a forma mais básica de hedge
-4. **Reserva de emergência** — protege contra imprevistos
+You don't need complex derivatives. Simple forms of hedge:
+1. **Dollarizing part of the portfolio** — international ETFs (IVVB11)
+2. **Tesouro IPCA+** — protects against inflation
+3. **Diversification** — the most basic form of hedge
+4. **Emergency reserve** — protects against unforeseen events
 
-## Custo do hedge
+## Cost of Hedge
 
-Toda proteção tem um custo. Assim como seguro de carro, o hedge reduz seu ganho potencial em troca de limitar suas perdas. O equilíbrio entre proteção e custo é pessoal.
+All protection comes with a cost. Just like car insurance, hedge reduces your potential gain in exchange for limiting your losses. The balance between protection and cost is personal.

@@ -9,30 +9,30 @@ publishedAt: 2025-05-10
 
 ## What is Financiamento?
 
-Financiamento é quando um banco empresta dinheiro para você comprar algo de valor alto (casa, carro, etc.) e você paga de volta em parcelas ao longo de anos. O bem comprado fica como garantia — se você parar de pagar, o banco pode tomar.
+Financiamento is when a bank lends you money to buy something of high value (house, car, etc.) and you pay it back in installments over the years. The purchased asset serves as collateral — if you stop paying, the bank can take it.
 
-## Types comuns
+## Common Types
 
-### Financiamento imobiliário
-- Prazo: até 35 anos
-- Taxas: 8% a 12% ao ano
-- Entrada mínima: 20% do valor
-- Sistemas: SAC ou Price
+### Imobiliário Financiamento
+- Term: up to 35 years
+- Rates: 8% to 12% per year
+- Minimum down payment: 20% of the value
+- Systems: SAC or Price
 
-### Financiamento de veículos
-- Prazo: até 60 meses
-- Taxas: 1,5% a 3% ao mês
-- Entrada: quanto mais, melhor
-- Carro fica alienado ao banco
+### Veículos Financiamento
+- Term: up to 60 months
+- Rates: 1.5% to 3% per month
+- Down payment: the more, the better
+- The car is alienated to the bank
 
-## Tips para financiar bem
+## Tips to finance well
 
-1. **Dê a maior entrada possível** — reduz juros totais
-2. **Escolha o menor prazo que cabe no bolso** — menos juros
-3. **Compare taxas entre bancos** — diferença pode ser enorme
-4. **Prefira SAC** — paga menos juros no total
-5. **Amortize sempre que puder** — cada R$ 1.000 extra economiza milhares
+1. **Make the largest down payment possible** — reduces total interest
+2. **Choose the shortest term that fits your budget** — less interest
+3. **Compare rates between banks** — the difference can be huge
+4. **Prefer SAC** — pays less interest in total
+5. **Amortize whenever possible** — every extra R$ 1,000 saves thousands
 
-## Quanto custa um financiamento
+## How much does a financiamento cost
 
-Um imóvel de R$ 400.000 financiado em 30 anos a 10% a.a. custa no total cerca de R$ 1.000.000. Você paga mais que o dobro do valor do imóvel em juros.
+A R$ 400,000 property financed over 30 years at 10% per year costs around R$ 1,000,000 in total. You pay more than double the property's value in interest.

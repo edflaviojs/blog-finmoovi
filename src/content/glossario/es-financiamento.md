@@ -7,32 +7,32 @@ relatedTerms: ["Amortização", "Juros Compostos", "Score de Crédito"]
 publishedAt: 2025-05-10
 ---
 
-## ¿Qué es Financiamento?
+## ¿Qué es Financiamiento?
 
-Financiamento é quando um banco empresta dinheiro para você comprar algo de valor alto (casa, carro, etc.) e você paga de volta em parcelas ao longo de anos. O bem comprado fica como garantia — se você parar de pagar, o banco pode tomar.
+Financiamiento es cuando un banco presta dinero para que compres algo de alto valor (casa, coche, etc.) y tú lo pagas de vuelta en plazos a lo largo de años. El bien comprado queda como garantía — si tú dejas de pagar, el banco puede tomarlo.
 
-## Tipos comuns
+## Tipos comunes
 
-### Financiamento imobiliário
-- Prazo: até 35 anos
-- Taxas: 8% a 12% ao ano
-- Entrada mínima: 20% do valor
-- Sistemas: SAC ou Price
+### Financiamiento inmobiliario
+- Plazo: hasta 35 años
+- Tasas: 8% a 12% al año
+- Entrada mínima: 20% del valor
+- Sistemas: SAC o Price
 
-### Financiamento de veículos
-- Prazo: até 60 meses
-- Taxas: 1,5% a 3% ao mês
-- Entrada: quanto mais, melhor
-- Carro fica alienado ao banco
+### Financiamiento de vehículos
+- Plazo: hasta 60 meses
+- Tasas: 1,5% a 3% al mes
+- Entrada: cuanto más, mejor
+- Coche queda alienado al banco
 
-## Consejos para financiar bem
+## Consejos para financiar bien
 
-1. **Dê a maior entrada possível** — reduz juros totais
-2. **Escolha o menor prazo que cabe no bolso** — menos juros
-3. **Compare taxas entre bancos** — diferença pode ser enorme
-4. **Prefira SAC** — paga menos juros no total
-5. **Amortize sempre que puder** — cada R$ 1.000 extra economiza milhares
+1. **Dale la mayor entrada posible** — reduce los intereses totales
+2. **Elige el plazo más corto que quepa en tu bolsillo** — menos intereses
+3. **Compara tasas entre bancos** — la diferencia puede ser enorme
+4. **Prefiere SAC** — paga menos intereses en total
+5. **Amortiza siempre que puedas** — cada R$ 1.000 extra ahorra miles
 
-## Quanto custa um financiamento
+## Cuánto cuesta un financiamiento
 
-Um imóvel de R$ 400.000 financiado em 30 anos a 10% a.a. custa no total cerca de R$ 1.000.000. Você paga mais que o dobro do valor do imóvel em juros.
+Un inmueble de R$ 400.000 financiado en 30 años a 10% a.a. cuesta en total cerca de R$ 1.000.000. Tú pagas más del doble del valor del inmueble en intereses.

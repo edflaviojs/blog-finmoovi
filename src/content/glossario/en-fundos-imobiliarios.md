@@ -7,34 +7,34 @@ relatedTerms: ["Dividendos", "Renda Variável", "Bolsa de Valores"]
 publishedAt: 2025-05-10
 ---
 
-## O que são Fundos Imobiliários (FIIs)?
+## What are Real Estate Funds (FIIs)?
 
-Fundos Imobiliários são como "condomínios de investidores" que juntam dinheiro para comprar imóveis (shoppings, galpões, escritórios) ou títulos do setor imobiliário. Você compra cotas na bolsa e recebe aluguéis mensais.
+Real Estate Funds are like "investor condominiums" that pool money to buy properties (malls, warehouses, offices) or securities from the real estate sector. You buy shares on the stock exchange and receive monthly rents.
 
 ## How does it work?
 
-1. O fundo compra imóveis com o dinheiro dos cotistas
-2. Os imóveis são alugados para empresas
-3. Os aluguéis são distribuídos mensalmente aos cotistas
-4. Rendimentos são **isentos de IR** para pessoa física
+1. The fund buys properties with the money from the shareholders
+2. The properties are rented to companies
+3. The rents are distributed monthly to the shareholders
+4. Returns are **exempt from IR** for individuals
 
 ## Advantages
 
-- Renda mensal isenta de imposto
-- Investir em imóveis com pouco dinheiro (a partir de R$ 10)
-- Diversificação (um fundo pode ter vários imóveis)
-- Liquidez (vende na hora na bolsa)
-- Não precisa lidar com inquilinos
+- Tax-free monthly income
+- Invest in properties with little money (from R$ 10)
+- Diversification (a fund can have several properties)
+- Liquidity (sell instantly on the stock exchange)
+- No need to deal with tenants
 
-## Types de FIIs
+## Types of FIIs
 
-| Tipo | Exemplo | Característica |
+| Type | Example | Characteristic |
 |------|---------|---------------|
-| Tijolo | HGLG11 | Imóveis físicos (galpões) |
-| Papel | KNCR11 | Títulos de dívida imobiliária |
-| Híbrido | KNRI11 | Mix de tijolo e papel |
-| FOF | BCFF11 | Fundo que investe em outros FIIs |
+| Tijolo | HGLG11 | Physical properties (warehouses) |
+| Papel | KNCR11 | Real estate debt securities |
+| Híbrido | KNRI11 | Mix of tijolo and papel |
+| FOF | BCFF11 | Fund that invests in other FIIs |
 
 ## How much does it yield?
 
-A média do mercado é de 0,7% a 1% ao mês em rendimentos. Com R$ 100.000 investidos, você pode receber R$ 700-1.000/mês isentos de IR.
+The market average is 0.7% to 1% per month in returns. With R$ 100,000 invested, you can receive R$ 700-1,000/month exempt from IR.
