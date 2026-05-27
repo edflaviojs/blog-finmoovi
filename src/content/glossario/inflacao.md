@@ -4,6 +4,7 @@ definition: "Aumento generalizado dos preços ao longo do tempo. No Brasil, é m
 category: "basico"
 relatedTerms: ["IPCA", "Selic", "Poder de Compra"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Inflação?

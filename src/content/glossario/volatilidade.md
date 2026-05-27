@@ -4,6 +4,7 @@ definition: "Medida de quanto o preço de um ativo oscila em determinado períod
 category: "mercado"
 relatedTerms: ["Renda Variável", "Ações", "Diversificação"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Volatilidade?

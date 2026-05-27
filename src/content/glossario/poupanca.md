@@ -4,6 +4,7 @@ definition: "Investimento mais popular do Brasil. Rende pouco (70% da Selic quan
 category: "basico"
 relatedTerms: ["Selic", "CDI", "Reserva de Emergência"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é a Poupança?

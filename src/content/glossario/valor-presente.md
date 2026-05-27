@@ -4,6 +4,7 @@ definition: "Quanto vale hoje um dinheiro que você receberá no futuro. Conceit
 category: "mercado"
 relatedTerms: ["Juros Compostos", "Selic", "Tesouro Direto"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Valor Presente?

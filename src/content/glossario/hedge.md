@@ -4,6 +4,7 @@ definition: "Estratégia de proteção contra riscos financeiros. Funciona como 
 category: "mercado"
 relatedTerms: ["Diversificação", "Volatilidade", "Câmbio"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Hedge?

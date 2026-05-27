@@ -4,6 +4,7 @@ definition: "Facilidade e velocidade com que um ativo pode ser convertido em din
 category: "investimentos"
 relatedTerms: ["Reserva de Emergência", "CDB", "Tesouro Direto"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Liquidez?

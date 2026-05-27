@@ -4,6 +4,7 @@ definition: "Programa do governo federal que permite pessoas físicas investirem
 category: "investimentos"
 relatedTerms: ["Selic", "IPCA", "Renda Fixa"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Tesouro Direto?

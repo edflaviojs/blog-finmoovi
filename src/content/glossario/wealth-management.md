@@ -4,6 +4,7 @@ definition: "Gestão de patrimônio. Serviço financeiro completo que inclui inv
 category: "investimentos"
 relatedTerms: ["Patrimônio Líquido", "Diversificação", "Previdência Privada"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Wealth Management?

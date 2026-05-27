@@ -4,6 +4,7 @@ definition: "Dinheiro guardado para cobrir imprevistos como perda de emprego, pr
 category: "basico"
 relatedTerms: ["Liquidez", "CDB", "Tesouro Selic"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Reserva de Emergência?

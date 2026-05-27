@@ -4,6 +4,7 @@ definition: "Lucro obtido na venda de um bem ou investimento por um preço maior
 category: "impostos"
 relatedTerms: ["Imposto de Renda", "Ações", "Renda Variável"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Ganho de Capital?

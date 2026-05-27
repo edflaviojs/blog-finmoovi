@@ -4,6 +4,7 @@ definition: "Maior banco digital do Brasil e da América Latina. Oferece conta c
 category: "basico"
 relatedTerms: ["PIX", "Score de Crédito", "CDI"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Nubank?

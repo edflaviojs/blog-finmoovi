@@ -4,6 +4,7 @@ definition: "Operação de troca entre moedas de diferentes países. A taxa de c
 category: "basico"
 relatedTerms: ["IOF", "Diversificação", "IPCA"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Câmbio?

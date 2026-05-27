@@ -4,6 +4,7 @@ definition: "Tipo de juros calculado apenas sobre o valor inicial (principal). D
 category: "basico"
 relatedTerms: ["Juros Compostos", "CDI", "Selic"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que são Juros Simples?

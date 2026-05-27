@@ -4,6 +4,7 @@ definition: "Pequenas frações do capital de uma empresa. Ao comprar ações, v
 category: "investimentos"
 relatedTerms: ["Dividendos", "Renda Variável", "Bolsa de Valores"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que são Ações?

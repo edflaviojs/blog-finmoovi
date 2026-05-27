@@ -4,6 +4,7 @@ definition: "Sistema de Amortização Constante. Método de pagamento de financi
 category: "credito"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Tabela SAC?

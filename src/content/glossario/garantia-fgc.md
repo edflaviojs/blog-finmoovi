@@ -4,6 +4,7 @@ definition: "Proteção oferecida pelo Fundo Garantidor de Créditos que cobre a
 category: "basico"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é a Garantia FGC?

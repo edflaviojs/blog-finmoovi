@@ -4,6 +4,7 @@ definition: "Estratégia de distribuir investimentos entre diferentes ativos par
 category: "investimentos"
 relatedTerms: ["Renda Fixa", "Renda Variável", "ETF"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Diversificação?

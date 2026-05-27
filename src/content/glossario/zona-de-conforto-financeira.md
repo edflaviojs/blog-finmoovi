@@ -4,6 +4,7 @@ definition: "Situação onde a pessoa tem renda suficiente para cobrir gastos, r
 category: "basico"
 relatedTerms: ["Reserva de Emergência", "Orçamento Pessoal", "Patrimônio Líquido"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Zona de Conforto Financeira?

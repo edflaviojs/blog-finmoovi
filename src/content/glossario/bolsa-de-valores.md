@@ -4,6 +4,7 @@ definition: "Mercado organizado onde são negociadas ações, fundos e outros at
 category: "mercado"
 relatedTerms: ["Ações", "Renda Variável", "Ibovespa"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é a Bolsa de Valores?

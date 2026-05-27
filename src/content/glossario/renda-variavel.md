@@ -4,6 +4,7 @@ definition: "Categoria de investimentos onde o retorno não é previsível. Incl
 category: "investimentos"
 relatedTerms: ["Ações", "Fundos Imobiliários", "Bolsa de Valores"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Renda Variável?

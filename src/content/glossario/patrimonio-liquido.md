@@ -4,6 +4,7 @@ definition: "Diferença entre tudo que você possui (ativos) e tudo que você de
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Diversificação"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Patrimônio Líquido?

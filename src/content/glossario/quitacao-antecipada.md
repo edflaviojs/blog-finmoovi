@@ -4,6 +4,7 @@ definition: "Pagamento total ou parcial de uma dívida antes do prazo previsto. 
 category: "credito"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Quitação Antecipada?

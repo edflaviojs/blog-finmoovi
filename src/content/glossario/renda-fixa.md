@@ -4,6 +4,7 @@ definition: "Categoria de investimentos onde as regras de rendimento são defini
 category: "investimentos"
 relatedTerms: ["CDI", "Tesouro Direto", "Selic"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Renda Fixa?

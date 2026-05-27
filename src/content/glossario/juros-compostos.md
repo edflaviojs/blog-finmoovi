@@ -4,6 +4,7 @@ definition: "Juros que incidem sobre o valor principal mais os juros acumulados 
 category: "basico"
 relatedTerms: ["Rendimento", "CDI", "Investimento"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que são Juros Compostos?

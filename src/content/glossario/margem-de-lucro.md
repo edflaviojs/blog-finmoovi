@@ -4,6 +4,7 @@ definition: "Percentual do faturamento que sobra como lucro após descontar todo
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Dividendos", "Ações"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Margem de Lucro?

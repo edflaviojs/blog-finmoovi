@@ -4,6 +4,7 @@ definition: "Situação inesperada que exige dinheiro imediato: perda de emprego
 category: "basico"
 relatedTerms: ["Reserva de Emergência", "Cheque Especial", "Orçamento Pessoal"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Urgência Financeira?

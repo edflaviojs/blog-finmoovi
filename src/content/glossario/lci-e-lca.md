@@ -4,6 +4,7 @@ definition: "Letras de Crédito Imobiliário e do Agronegócio. Investimentos de
 category: "investimentos"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que são LCI e LCA?

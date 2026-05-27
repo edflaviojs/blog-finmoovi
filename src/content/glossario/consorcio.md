@@ -4,6 +4,7 @@ definition: "Sistema de compra coletiva onde um grupo de pessoas contribui mensa
 category: "credito"
 relatedTerms: ["Financiamento", "Amortização", "Poupança"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Consórcio?

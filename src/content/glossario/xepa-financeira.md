@@ -4,6 +4,7 @@ definition: "Estratégia de economia que consiste em comprar produtos com descon
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Poupança", "Reserva de Emergência"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Xepa Financeira?

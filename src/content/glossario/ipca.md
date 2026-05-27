@@ -4,6 +4,7 @@ definition: "Índice Nacional de Preços ao Consumidor Amplo. É o indicador ofi
 category: "basico"
 relatedTerms: ["Inflação", "Selic", "Tesouro Direto"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é IPCA?

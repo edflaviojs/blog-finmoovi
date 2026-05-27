@@ -4,6 +4,7 @@ definition: "Empréstimo de longo prazo para compra de bens como imóveis ou ve�
 category: "credito"
 relatedTerms: ["Amortização", "Juros Compostos", "Score de Crédito"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Financiamento?

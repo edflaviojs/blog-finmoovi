@@ -4,6 +4,7 @@ definition: "Fundo de investimento negociado em bolsa que replica um índice. Pe
 category: "investimentos"
 relatedTerms: ["Ações", "Bolsa de Valores", "Diversificação"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é ETF?

@@ -4,6 +4,7 @@ definition: "Tributo federal cobrado sobre rendimentos de pessoas físicas e jur
 category: "impostos"
 relatedTerms: ["IOF", "CDI", "Renda Fixa"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Imposto de Renda?

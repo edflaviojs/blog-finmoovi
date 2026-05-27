@@ -4,6 +4,7 @@ definition: "Investimento de longo prazo para complementar a aposentadoria do IN
 category: "investimentos"
 relatedTerms: ["Imposto de Renda", "Tesouro Direto", "Renda Fixa"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Previdência Privada?

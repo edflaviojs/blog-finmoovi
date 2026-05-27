@@ -4,6 +4,7 @@ definition: "Pontuação de 0 a 1000 que indica a probabilidade de você pagar s
 category: "credito"
 relatedTerms: ["Financiamento", "Juros Compostos", "Cheque Especial"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Score de Crédito?

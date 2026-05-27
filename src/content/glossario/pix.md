@@ -4,6 +4,7 @@ definition: "Sistema de pagamentos instantâneos do Banco Central do Brasil. Tra
 category: "basico"
 relatedTerms: ["Câmbio", "IOF", "Score de Crédito"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é PIX?

@@ -4,6 +4,7 @@ definition: "Taxa básica de juros da economia brasileira, definida pelo Banco C
 category: "basico"
 relatedTerms: ["CDI", "IPCA", "Renda Fixa"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é a Taxa Selic?

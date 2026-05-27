@@ -4,6 +4,7 @@ definition: "Certificado de Depósito Interbancário. Taxa de referência para i
 category: "investimentos"
 relatedTerms: ["Selic", "CDB", "Renda Fixa"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é CDI?

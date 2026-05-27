@@ -4,6 +4,7 @@ definition: "Fundos que investem em imóveis ou títulos ligados ao setor imobil
 category: "investimentos"
 relatedTerms: ["Dividendos", "Renda Variável", "Bolsa de Valores"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que são Fundos Imobiliários (FIIs)?

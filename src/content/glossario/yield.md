@@ -4,6 +4,7 @@ definition: "Rendimento percentual de um investimento em relação ao seu preço
 category: "investimentos"
 relatedTerms: ["Dividendos", "Ações", "Fundos Imobiliários"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Yield?

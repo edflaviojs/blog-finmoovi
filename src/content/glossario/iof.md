@@ -4,6 +4,7 @@ definition: "Imposto sobre Operações Financeiras. Incide sobre empréstimos, c
 category: "impostos"
 relatedTerms: ["Imposto de Renda", "CDI", "Câmbio"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é IOF?

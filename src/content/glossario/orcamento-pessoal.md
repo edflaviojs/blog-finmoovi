@@ -4,6 +4,7 @@ definition: "Planejamento financeiro que organiza receitas e despesas mensais. P
 category: "basico"
 relatedTerms: ["Reserva de Emergência", "Regra 50-30-20", "Controle Financeiro"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Orçamento Pessoal?

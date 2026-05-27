@@ -4,6 +4,7 @@ definition: "Crédito pré-aprovado vinculado à conta corrente com juros altís
 category: "credito"
 relatedTerms: ["Score de Crédito", "Juros Compostos", "Financiamento"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Cheque Especial?

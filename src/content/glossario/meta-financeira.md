@@ -4,6 +4,7 @@ definition: "Objetivo específico, mensurável e com prazo definido para suas fi
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Meta Financeira?

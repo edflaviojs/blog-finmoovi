@@ -4,6 +4,7 @@ definition: "Títulos de dívida emitidos por empresas para captar dinheiro. O i
 category: "investimentos"
 relatedTerms: ["Renda Fixa", "CDI", "Tesouro Direto"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que são Debêntures?

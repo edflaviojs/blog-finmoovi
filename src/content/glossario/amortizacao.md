@@ -4,6 +4,7 @@ definition: "Processo de pagamento gradual de uma dívida ao longo do tempo, red
 category: "credito"
 relatedTerms: ["Juros Compostos", "Financiamento", "Tabela SAC"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Amortização?

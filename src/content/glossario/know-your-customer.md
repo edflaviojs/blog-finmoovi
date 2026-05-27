@@ -4,6 +4,7 @@ definition: "Processo de verificação de identidade exigido por instituições 
 category: "mercado"
 relatedTerms: ["Score de Crédito", "PIX", "Nubank"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é KYC (Know Your Customer)?

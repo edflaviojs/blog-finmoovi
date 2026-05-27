@@ -4,6 +4,7 @@ definition: "Criptomoeda descentralizada criada em 2009. Funciona sem bancos ou 
 category: "investimentos"
 relatedTerms: ["Criptomoedas", "Blockchain", "Renda Variável"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Bitcoin?

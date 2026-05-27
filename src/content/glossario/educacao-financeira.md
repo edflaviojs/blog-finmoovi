@@ -4,6 +4,7 @@ definition: "Conjunto de conhecimentos sobre como ganhar, gastar, poupar e inves
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Educação Financeira?

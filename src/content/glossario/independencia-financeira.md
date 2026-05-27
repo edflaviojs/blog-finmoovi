@@ -4,6 +4,7 @@ definition: "Estado onde sua renda passiva (investimentos) cobre todos os seus g
 category: "basico"
 relatedTerms: ["Patrimônio Líquido", "Dividendos", "Renda Fixa"]
 publishedAt: 2025-05-10
+locale: "pt"
 ---
 
 ## O que é Independência Financeira?
