@@ -121,6 +121,7 @@ Formato de saída:
 term: "${termData.term}"
 definition: "${definition.replace(/"/g, '\\"')}"
 category: "${termData.category}"
+locale: "pt"
 relatedTerms: ${JSON.stringify(relatedTerms)}
 publishedAt: ${today}
 ---

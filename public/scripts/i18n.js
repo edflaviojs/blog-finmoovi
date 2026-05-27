@@ -276,9 +276,6 @@ const path = window.location.pathname;
 let currentLang = 'pt';
 if (path.startsWith('/en/') || path === '/en') currentLang = 'en';
 else if (path.startsWith('/es/') || path === '/es') currentLang = 'es';
-else {
-  try { currentLang = localStorage.getItem('fm-lang') || 'pt'; } catch(e) {}
-}
 
 try { localStorage.setItem('fm-lang', currentLang); } catch(e) {}
 applyTranslations(currentLang);

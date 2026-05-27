@@ -52,7 +52,7 @@ const langs = [
     currentLang = urlLang;
     try { localStorage.setItem('fm-lang', currentLang); } catch(e) {}
   } else {
-    currentLang = savedLang || 'pt';
+    currentLang = 'pt';
   }
 
   updateLang(currentLang);
