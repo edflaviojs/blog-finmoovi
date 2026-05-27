@@ -12,12 +12,42 @@ if (!GROQ_API_KEY) {
 
 /**
  * Generate cover image using Pollinations.ai (free, no API key needed)
+ * Professional quality, no text, with subtle FinMoovi watermark
  */
-export function generateImage(topic) {
-  const prompt = encodeURIComponent(
-    `Modern minimalist blog cover illustration about ${topic}, dark background with blue and purple gradient accents, professional financial theme, clean flat design, no text, no letters, abstract geometric shapes`
-  );
-  return `https://image.pollinations.ai/prompt/${prompt}?width=1200&height=630&nologo=true`;
+export function generateImage(topic, type = 'cover') {
+  const baseStyle = 'ultra professional photography style, high quality, 4k, sharp focus, no text, no words, no letters, no numbers, no watermark, no logos';
+  const finmooviWatermark = 'subtle small translucent finmoovi.com watermark in bottom right corner';
+
+  let dimensions = 'width=1200&height=630';
+  let promptText = '';
+
+  if (type === 'cover') {
+    promptText = `${topic}, modern financial concept visualization, dark moody background with cyan and purple gradient lighting, ${baseStyle}, ${finmooviWatermark}, cinematic composition, depth of field`;
+    dimensions = 'width=1200&height=630';
+  } else {
+    // inline content image
+    promptText = `${topic}, clean professional illustration, soft gradient background, minimalist style, ${baseStyle}, ${finmooviWatermark}, centered composition`;
+    dimensions = 'width=800&height=450';
+  }
+
+  const encoded = encodeURIComponent(promptText);
+  return `https://image.pollinations.ai/prompt/${encoded}?${dimensions}&nologo=true&seed=${Date.now()}`;
+}
+
+/**
+ * Generate inline images for post content (1 image every 2 H2 sections)
+ */
+export function generateContentImages(topic, headings) {
+  const images = [];
+  for (let i = 1; i < headings.length; i += 2) {
+    const sectionTopic = `${topic} - ${headings[i]}`;
+    images.push({
+      afterHeading: i,
+      url: generateImage(sectionTopic, 'inline'),
+      alt: headings[i],
+    });
+  }
+  return images;
 }
 
 /**
@@ -124,10 +154,35 @@ Formato de saída (use exatamente este formato):
   const parsed = parsePostContent(textResult);
 
   // Generate cover image via Pollinations
-  const imageUrl = generateImage(topic);
+  const imageUrl = generateImage(topic, 'cover');
+
+  // Generate inline images (1 every 2 H2 sections)
+  const h2Matches = parsed.content.match(/^## .+$/gm) || [];
+  const headings = h2Matches.map(h => h.replace('## ', ''));
+  const inlineImages = generateContentImages(topic, headings);
+
+  // Insert inline images into content after every 2nd H2
+  let contentWithImages = parsed.content;
+  for (let i = inlineImages.length - 1; i >= 0; i--) {
+    const img = inlineImages[i];
+    const headingText = headings[img.afterHeading];
+    const headingPattern = `## ${headingText}`;
+    const headingIndex = contentWithImages.indexOf(headingPattern);
+    if (headingIndex !== -1) {
+      // Find the end of the first paragraph after this heading
+      const afterHeading = contentWithImages.indexOf('\n\n', headingIndex + headingPattern.length);
+      if (afterHeading !== -1) {
+        const nextParagraphEnd = contentWithImages.indexOf('\n\n', afterHeading + 2);
+        const insertAt = nextParagraphEnd !== -1 ? nextParagraphEnd : afterHeading;
+        const imgMarkdown = `\n\n![${img.alt}](${img.url})\n\n`;
+        contentWithImages = contentWithImages.slice(0, insertAt) + imgMarkdown + contentWithImages.slice(insertAt);
+      }
+    }
+  }
 
   return {
     ...parsed,
+    content: contentWithImages,
     category,
     image: imageUrl,
   };

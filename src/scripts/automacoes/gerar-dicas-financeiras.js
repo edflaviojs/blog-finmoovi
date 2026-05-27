@@ -87,10 +87,46 @@ async function main() {
 
           writeFileSync(imageFullPath, imageBuffer);
           imagePath = `/images/posts/${imageFilename}`;
-          console.log(`🖼️ Imagem salva: ${imagePath}`);
+          console.log(`🖼️ Imagem de capa salva: ${imagePath}`);
         }
       } catch (imgErr) {
-        console.warn('⚠️ Falha ao salvar imagem, continuando sem capa:', imgErr.message);
+        console.warn('⚠️ Falha ao salvar imagem de capa, continuando sem:', imgErr.message);
+      }
+    }
+
+    // Download and save inline images from content
+    let processedContent = post.content;
+    const inlineImageRegex = /!\[([^\]]*)\]\((https:\/\/image\.pollinations\.ai[^)]+)\)/g;
+    let match;
+    let inlineIndex = 0;
+    const inlineMatches = [];
+
+    while ((match = inlineImageRegex.exec(post.content)) !== null) {
+      inlineMatches.push({ full: match[0], alt: match[1], url: match[2] });
+    }
+
+    for (const img of inlineMatches) {
+      inlineIndex++;
+      try {
+        console.log(`🖼️ Gerando imagem inline ${inlineIndex}...`);
+        const imgResponse = await fetch(img.url);
+        if (imgResponse.ok) {
+          const imgBuffer = Buffer.from(await imgResponse.arrayBuffer());
+          const imgFilename = `${slug}-${inlineIndex}.jpg`;
+          const imgFullPath = join(IMAGES_DIR, imgFilename);
+
+          if (!existsSync(IMAGES_DIR)) {
+            mkdirSync(IMAGES_DIR, { recursive: true });
+          }
+
+          writeFileSync(imgFullPath, imgBuffer);
+          const localPath = `/images/posts/${imgFilename}`;
+          processedContent = processedContent.replace(img.full, `![${img.alt}](${localPath})`);
+          console.log(`🖼️ Imagem inline ${inlineIndex} salva: ${localPath}`);
+        }
+      } catch (imgErr) {
+        console.warn(`⚠️ Falha na imagem inline ${inlineIndex}, removendo:`, imgErr.message);
+        processedContent = processedContent.replace(img.full, '');
       }
     }
 
@@ -104,7 +140,7 @@ locale: "pt"
 tags: ${JSON.stringify(post.keywords || [topic, 'finanças pessoais'])}
 author: "FinMoovi"
 publishedAt: ${today}
-readingTime: ${Math.ceil(post.content.split(/\s+/).length / 200)}
+readingTime: ${Math.ceil(processedContent.split(/\s+/).length / 200)}
 featured: false
 seo:
   metaTitle: "${post.title.replace(/"/g, '\\"')}"
@@ -112,7 +148,7 @@ seo:
   keywords: ${JSON.stringify(post.keywords || [])}
 ---
 
-${post.content}
+${processedContent}
 `;
 
     // Save post file
@@ -123,12 +159,9 @@ ${post.content}
     writeFileSync(postPath, frontmatter, 'utf-8');
     console.log(`📄 Post salvo: ${postPath}`);
 
-    // Git commit
-    const filesToAdd = [postPath];
-    if (imagePath) {
-      filesToAdd.push(join(process.cwd(), 'public', imagePath));
-    }
-    execSync(`git add ${filesToAdd.map(f => `"${f}"`).join(' ')}`, { stdio: 'inherit' });
+    // Git commit - add post file and all generated images
+    execSync(`git add "${postPath}"`, { stdio: 'inherit' });
+    execSync(`git add "${IMAGES_DIR}"`, { stdio: 'inherit' });
     execSync(`git commit -m "post: ${post.title.substring(0, 50)}"`, { stdio: 'inherit' });
 
     console.log('✅ Commit criado com sucesso!');
