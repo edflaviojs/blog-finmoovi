@@ -14,7 +14,6 @@ export async function getStaticPaths() {
 }
 
 const { term } = Astro.props;
-const { Content } = await term.render();
 
 const allTerms = await getCollection('glossario', ({ data }) => data.locale === 'es');
 const relatedTerms = allTerms.filter(t =>
@@ -62,7 +61,7 @@ const faqSchema = {
         <CTAVariado seed={term.slug.length} />
 
         <div class="glossario-post-content prose">
-          <Content />
+          <p class="glossario-full-definition">{term.data.definition}</p>
         </div>
 
         <CTAVariado seed={term.slug.length + 5} />

@@ -86,8 +86,11 @@ const langs = [
         return basePath === p;
       });
 
-      // Glossario detail pages are also navigable between locales
-      if (basePath.startsWith('/glossario/')) canNavigate = true;
+      // Glossario detail pages have different slugs per locale, navigate to glossary index
+      if (basePath.startsWith('/glossario/')) {
+        canNavigate = true;
+        basePath = '/glossario';
+      }
 
       var newPath;
       if (!canNavigate) {
