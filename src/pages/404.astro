@@ -1,0 +1,35 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+---
+
+<BaseLayout
+  title="Page not found — FinMoovi"
+  description="The page you're looking for doesn't exist."
+>
+  <Header />
+
+  <main class="not-found-page">
+    <div class="container">
+      <div class="not-found-content">
+        <span class="not-found-code">404</span>
+        <h1 class="not-found-title" data-i18n="404.title">Página não encontrada</h1>
+        <p class="not-found-description" data-i18n="404.desc">A página que você procura não existe ou foi movida.</p>
+        <a href="/" class="not-found-link" data-i18n="404.back">Voltar para o início</a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .not-found-page { padding: var(--space-16) 0; min-height: 60vh; display: flex; align-items: center; }
+  .not-found-content { text-align: center; max-width: 500px; margin: 0 auto; }
+  .not-found-code { font-size: 8rem; font-weight: 800; background: linear-gradient(135deg, #00F0FF, #A91079); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+  .not-found-title { font-size: var(--text-3xl); color: var(--text-primary); margin: var(--space-4) 0; }
+  .not-found-description { color: var(--text-secondary); font-size: var(--text-lg); margin-bottom: var(--space-8); }
+  .not-found-link { display: inline-block; padding: var(--space-3) var(--space-6); background: linear-gradient(135deg, #00F0FF, #A91079); color: white; border-radius: var(--radius-lg); font-weight: 600; text-decoration: none; transition: opacity var(--transition-fast); }
+  .not-found-link:hover { opacity: 0.9; }
+</style>

@@ -81,6 +81,9 @@ const translations = {
     'cat.investimentos': 'Investimentos',
     'cat.cotacoes': 'Cotações',
     'cat.ferramentas': 'Ferramentas',
+    '404.title': 'Página não encontrada',
+    '404.desc': 'A página que você procura não existe ou foi movida.',
+    '404.back': 'Voltar para o início',
   },
   en: {
     'nav.inicio': 'Home',
@@ -161,6 +164,9 @@ const translations = {
     'cat.investimentos': 'Investments',
     'cat.cotacoes': 'Exchange Rates',
     'cat.ferramentas': 'Tools',
+    '404.title': 'Page not found',
+    '404.desc': 'The page you are looking for does not exist or has been moved.',
+    '404.back': 'Back to home',
   },
   es: {
     'nav.inicio': 'Inicio',
@@ -241,6 +247,9 @@ const translations = {
     'cat.investimentos': 'Inversiones',
     'cat.cotacoes': 'Cotizaciones',
     'cat.ferramentas': 'Herramientas',
+    '404.title': 'Página no encontrada',
+    '404.desc': 'La página que buscas no existe o fue movida.',
+    '404.back': 'Volver al inicio',
   },
 };
 

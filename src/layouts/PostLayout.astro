@@ -27,8 +27,20 @@ interface Props {
 const { title, description, image, publishedTime, author, keywords, category, readingTime, headings = [] } = Astro.props;
 const postUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const postSlug = Astro.url.pathname.replace(/\//g, '-').replace(/^-|-$/g, '');
+
+// Detect locale from URL
+const urlPath = Astro.url.pathname;
+let locale = 'pt';
+if (urlPath.startsWith('/en/')) locale = 'en';
+else if (urlPath.startsWith('/es/')) locale = 'es';
+
+const byLabel = locale === 'en' ? 'By' : 'Por';
+const readLabel = locale === 'en' ? 'min read' : locale === 'es' ? 'min de lectura' : 'min de leitura';
+const dateLang = locale === 'en' ? 'en-US' : locale === 'es' ? 'es-ES' : 'pt-BR';
+const homeHref = locale === 'pt' ? '/' : `/${locale}`;
+
 const breadcrumbItems = [
-  ...(category ? [{ label: category, href: `/categorias/${category.toLowerCase()}` }] : []),
+  ...(category ? [{ label: category, href: `${homeHref}` }] : []),
   { label: title }
 ];
 ---
@@ -54,13 +66,13 @@ const breadcrumbItems = [
             {category && <span class="post-category" data-i18n={`cat.${category}`}>{category}</span>}
             <h1 class="post-title">{title}</h1>
             <div class="post-meta">
-              {author && <span class="post-author">Por {author}</span>}
+              {author && <span class="post-author">{byLabel} {author}</span>}
               {publishedTime && (
                 <time datetime={publishedTime}>
-                  {new Date(publishedTime).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
+                  {new Date(publishedTime).toLocaleDateString(dateLang, { day: '2-digit', month: 'long', year: 'numeric' })}
                 </time>
               )}
-              {readingTime && <span class="post-reading-time">{readingTime} min de leitura</span>}
+              {readingTime && <span class="post-reading-time">{readingTime} {readLabel}</span>}
             </div>
             <div class="post-share-top">
               <ShareButtons title={title} url={postUrl} />
