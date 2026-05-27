@@ -6,8 +6,8 @@ import { getCollection } from 'astro:content';
 import { t } from '../../../i18n/translations';
 
 const lang = 'es';
-const glossario = await getCollection('glossario', ({ data }) => data.locale === 'es');
-const sorted = glossario.sort((a, b) => a.data.term.localeCompare(b.data.term, 'es'));
+const glossario = await getCollection('glossario');
+const sorted = glossario.sort((a, b) => a.data.term.localeCompare(b.data.term, 'pt-BR'));
 
 const grouped = sorted.reduce((acc, item) => {
   const letter = item.data.term[0].toUpperCase();
@@ -44,46 +44,38 @@ const faqSchema = {
         <p class="glossario-description">{t(lang, 'glossario.desc')}</p>
       </header>
 
-      {Object.keys(grouped).length > 0 ? (
-        <>
-          <nav class="alphabet-nav" aria-label="Navegar por letra">
-            {Object.keys(grouped).map(letter => (
-              <a href={`#letra-${letter}`} class="alphabet-link">{letter}</a>
-            ))}
-          </nav>
+      <nav class="alphabet-nav" aria-label="Navegar por letra">
+        {Object.keys(grouped).map(letter => (
+          <a href={`#letra-${letter}`} class="alphabet-link">{letter}</a>
+        ))}
+      </nav>
 
-          <div class="glossario-content">
-            {Object.entries(grouped).map(([letter, terms]) => (
-              <section id={`letra-${letter}`} class="letter-section">
-                <h2 class="letter-heading">{letter}</h2>
-                <div class="terms-list">
-                  {terms.map((term) => (
-                    <details class="term-accordion">
-                      <summary class="term-question">
-                        <span class="term-q-icon">?</span>
-                        <span>{t(lang, 'glossario.oQueE')} {term.data.term}?</span>
-                        <svg class="term-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                      </summary>
-                      <div class="term-answer">
-                        <p class="term-definition">{term.data.definition}</p>
-                        <a href={`/glossario/${term.slug}`} class="term-read-more">
-                          {t(lang, 'glossario.lerMais')}
-                        </a>
-                      </div>
-                    </details>
-                  ))}
-                </div>
-              </section>
-            ))}
-          </div>
-        </>
-      ) : (
-        <div class="glossario-empty">
-          <p>El contenido del glosario en español estará disponible pronto.</p>
-        </div>
-      )}
+      <div class="glossario-content">
+        {Object.entries(grouped).map(([letter, terms]) => (
+          <section id={`letra-${letter}`} class="letter-section">
+            <h2 class="letter-heading">{letter}</h2>
+            <div class="terms-list">
+              {terms.map((term) => (
+                <details class="term-accordion">
+                  <summary class="term-question">
+                    <span class="term-q-icon">?</span>
+                    <span>{t(lang, 'glossario.oQueE')} {term.data.term}?</span>
+                    <svg class="term-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </summary>
+                  <div class="term-answer">
+                    <p class="term-definition">{term.data.definition}</p>
+                    <a href={`/glossario/${term.slug}`} class="term-read-more">
+                      {t(lang, 'glossario.lerMais')}
+                    </a>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
     </div>
   </main>
 

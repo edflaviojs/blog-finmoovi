@@ -1,10 +1,10 @@
 ---
 const categories = [
-  { label: 'Dicas Financeiras', href: '/categorias/dicas', count: 24, color: 'var(--accent-primary)' },
-  { label: 'Orçamento', href: '/categorias/orcamento', count: 12, color: 'var(--accent-green)' },
-  { label: 'Investimentos', href: '/categorias/investimentos', count: 8, color: 'var(--accent-purple)' },
-  { label: 'Cotações', href: '/categorias/cotacoes', count: 15, color: 'var(--accent-yellow)' },
-  { label: 'Ferramentas', href: '/categorias/ferramentas', count: 6, color: 'var(--accent-red)' },
+  { label: 'Dicas Financeiras', href: '/categorias/dicas', count: 24, color: 'var(--accent-primary)', i18n: 'cat.dicas' },
+  { label: 'Orçamento', href: '/categorias/orcamento', count: 12, color: 'var(--accent-green)', i18n: 'cat.orcamento' },
+  { label: 'Investimentos', href: '/categorias/investimentos', count: 8, color: 'var(--accent-purple)', i18n: 'cat.investimentos' },
+  { label: 'Cotações', href: '/categorias/cotacoes', count: 15, color: 'var(--accent-yellow)', i18n: 'cat.cotacoes' },
+  { label: 'Ferramentas', href: '/categorias/ferramentas', count: 6, color: 'var(--accent-red)', i18n: 'cat.ferramentas' },
 ];
 ---
 
@@ -15,7 +15,7 @@ const categories = [
       <li>
         <a href={cat.href} class="category-link">
           <span class="category-dot" style={`background: ${cat.color}`}></span>
-          <span class="category-label">{cat.label}</span>
+          <span class="category-label" data-i18n={cat.i18n}>{cat.label}</span>
           <span class="category-count">{cat.count}</span>
         </a>
       </li>

@@ -72,6 +72,15 @@ const translations = {
     'popup.desc': 'Receba as melhores dicas de finanças pessoais toda semana. Grátis.',
     'popup.btn': 'Quero receber!',
     'popup.privacy': 'Sem spam. Cancele quando quiser.',
+    'popular.1': 'Como criar um orçamento pessoal em 5 passos',
+    'popular.2': 'Regra 50-30-20: guia completo',
+    'popular.3': '7 erros financeiros que todo iniciante comete',
+    'popular.4': 'Como controlar gastos com cartão de crédito',
+    'cat.dicas': 'Dicas Financeiras',
+    'cat.orcamento': 'Orçamento',
+    'cat.investimentos': 'Investimentos',
+    'cat.cotacoes': 'Cotações',
+    'cat.ferramentas': 'Ferramentas',
   },
   en: {
     'nav.inicio': 'Home',
@@ -143,6 +152,15 @@ const translations = {
     'popup.desc': 'Get the best personal finance tips every week. Free.',
     'popup.btn': 'I want to receive!',
     'popup.privacy': 'No spam. Cancel anytime.',
+    'popular.1': 'How to create a personal budget in 5 steps',
+    'popular.2': '50-30-20 Rule: complete guide',
+    'popular.3': '7 financial mistakes every beginner makes',
+    'popular.4': 'How to control credit card spending',
+    'cat.dicas': 'Finance Tips',
+    'cat.orcamento': 'Budget',
+    'cat.investimentos': 'Investments',
+    'cat.cotacoes': 'Exchange Rates',
+    'cat.ferramentas': 'Tools',
   },
   es: {
     'nav.inicio': 'Inicio',
@@ -214,6 +232,15 @@ const translations = {
     'popup.desc': 'Recibe los mejores consejos de finanzas personales cada semana. Gratis.',
     'popup.btn': '¡Quiero recibir!',
     'popup.privacy': 'Sin spam. Cancela cuando quieras.',
+    'popular.1': 'Cómo crear un presupuesto personal en 5 pasos',
+    'popular.2': 'Regla 50-30-20: guía completa',
+    'popular.3': '7 errores financieros que todo principiante comete',
+    'popular.4': 'Cómo controlar gastos con tarjeta de crédito',
+    'cat.dicas': 'Consejos Financieros',
+    'cat.orcamento': 'Presupuesto',
+    'cat.investimentos': 'Inversiones',
+    'cat.cotacoes': 'Cotizaciones',
+    'cat.ferramentas': 'Herramientas',
   },
 };
 
@@ -272,15 +299,14 @@ observer.observe(document.documentElement, { attributes: true, attributeFilter: 
 function rewriteLinks(lang) {
   if (lang === 'pt') return;
   const prefix = '/' + lang;
-  const navPaths = ['/', '/sobre', '/glossario', '/ferramentas'];
+  const exactPages = ['/', '/sobre', '/glossario', '/ferramentas'];
   document.querySelectorAll('a[href]').forEach(a => {
     const href = a.getAttribute('href');
     if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:')) return;
     if (href.startsWith('/en/') || href.startsWith('/es/') || href === '/en' || href === '/es') return;
     if (href.startsWith('/app')) return;
-    // Rewrite nav links that have locale versions
-    const isNavLink = navPaths.some(p => href === p || href.startsWith(p + '/'));
-    if (isNavLink) {
+    // Only rewrite exact page matches (not sub-pages like /ferramentas/calculadora-juros)
+    if (exactPages.includes(href)) {
       a.setAttribute('href', prefix + href);
     }
     // Redirect /categorias/* to locale homepage (no locale version exists)
