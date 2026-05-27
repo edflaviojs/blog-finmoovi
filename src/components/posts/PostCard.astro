@@ -21,7 +21,7 @@ const { title, description, image, href, category, date, readingTime } = Astro.p
     )}
 
     <div class="post-card-body">
-      {category && <span class="post-card-category">{category}</span>}
+      {category && <span class="post-card-category" data-i18n={`cat.${category}`}>{category}</span>}
       <h3 class="post-card-title">{title}</h3>
       <p class="post-card-description">{description}</p>
 

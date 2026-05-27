@@ -43,7 +43,7 @@ const postsForGrid = recentPosts.map(post => ({
                 <div class="hero-main-overlay"></div>
               </div>
               <div class="hero-main-content">
-                <span class="hero-category">{heroPost.data.category}</span>
+                <span class="hero-category" data-i18n={`cat.${heroPost.data.category}`}>{heroPost.data.category}</span>
                 <h1 class="hero-title">{heroPost.data.title}</h1>
                 <p class="hero-description">{heroPost.data.description}</p>
               </div>
@@ -55,7 +55,7 @@ const postsForGrid = recentPosts.map(post => ({
                     {post.data.image && <img src={post.data.image} alt="" loading="eager" />}
                   </div>
                   <div class="hero-secondary-content">
-                    <span class="hero-secondary-category">{post.data.category}</span>
+                    <span class="hero-secondary-category" data-i18n={`cat.${post.data.category}`}>{post.data.category}</span>
                     <h3 class="hero-secondary-title">{post.data.title}</h3>
                   </div>
                 </a>
