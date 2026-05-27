@@ -1,34 +1,34 @@
 ---
 term: "Amortización"
-definition: "Amortización es el proceso de pago gradual de una deuda a lo largo del tiempo, reduciendo el saldo deudor a cada parcela pagada. Cada parcela que se paga tiene dos partes: la amortización (que reduce el saldo deudor) y los intereses (que es el costo del préstamo)."
+definition: "La reducción gradual de una deuda mediante pagos periódicos que cubren tanto el capital como los intereses."
 category: "credito"
 locale: "es"
 relatedTerms: ["Juros Compostos", "Financiamento", "Tabela SAC"]
 publishedAt: 2025-05-10
 ---
 
-## ¿Qué es Amortización?
+## O que é Amortização?
 
-Amortización es el acto de pagar el valor principal de una deuda poco a poco. Cada parcela que se paga tiene dos partes: la amortización (que reduce el saldo deudor) y los intereses (que es el costo del préstamo).
+Amortização é o ato de pagar o valor principal de uma dívida aos poucos. Cada parcela que você paga tem duas partes: a amortização (que reduz o saldo devedor) e os juros (que é o custo do empréstimo).
 
-## Tipos de amortización
+## Tipos de amortização
 
-### Tabela SAC (Sistema de Amortización Constante)
-- Amortización fija en todas las parcelas
-- Parcelas comienzan mayores y disminuyen
-- Se paga menos en intereses en total
+### Tabela SAC (Sistema de Amortização Constante)
+- Amortização fixa em todas as parcelas
+- Parcelas começam maiores e diminuem
+- Você paga menos juros no total
 
 ### Tabela Price
-- Parcelas fijas del inicio al fin
-- Al comienzo, la mayor parte de la parcela es intereses
-- Se paga más en intereses en total que con SAC
+- Parcelas fixas do início ao fim
+- No começo, a maior parte da parcela é juros
+- Paga mais juros no total que a SAC
 
-## Ejemplo práctico
+## Exemplo prático
 
-Financiación de R$ 100.000 en 30 años a 10% a.a.:
-- **SAC:** primera parcela ~R$ 1.111, última ~R$ 282. Total pagado: ~R$ 250.000
-- **Price:** todas las parcelas ~R$ 877. Total pagado: ~R$ 316.000
+Financiamento de R$ 100.000 em 30 anos a 10% a.a.:
+- **SAC:** primeira parcela ~R$ 1.111, última ~R$ 282. Total pago: ~R$ 250.000
+- **Price:** todas as parcelas ~R$ 877. Total pago: ~R$ 316.000
 
-## Amortización extraordinaria
+## Amortização extraordinária
 
-Se puede hacer pagos extras para reducir el saldo deudor más rápido. Esto ahorra miles en intereses. Siempre que tenga dinero sobrante, considere amortizar sus deudas.
+Você pode fazer pagamentos extras para reduzir o saldo devedor mais rápido. Isso economiza milhares em juros. Sempre que tiver dinheiro sobrando, considere amortizar suas dívidas.

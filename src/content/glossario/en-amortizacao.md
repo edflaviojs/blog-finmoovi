@@ -1,17 +1,17 @@
 ---
 term: "Amortization"
-definition: "Amortization is the act of paying off the principal amount of a debt gradually. Each installment you pay has two parts: the amortization (which reduces the outstanding balance) and the interest (which is the cost of the loan)."
+definition: "The gradual reduction of a debt through periodic payments that cover both principal and interest."
 category: "credito"
 locale: "en"
 relatedTerms: ["Juros Compostos", "Financiamento", "Tabela SAC"]
 publishedAt: 2025-05-10
 ---
 
-## What is Amortization?
+## O que é Amortização?
 
-Amortization is the process of paying off the principal amount of a debt over time. Cada parcela que você paga tem duas partes: a amortização (que reduz o saldo devedor) e os juros (que é o custo do empréstimo).
+Amortização é o ato de pagar o valor principal de uma dívida aos poucos. Cada parcela que você paga tem duas partes: a amortização (que reduz o saldo devedor) e os juros (que é o custo do empréstimo).
 
-## Types of Amortization
+## Tipos de amortização
 
 ### Tabela SAC (Sistema de Amortização Constante)
 - Amortização fixa em todas as parcelas
@@ -23,12 +23,12 @@ Amortization is the process of paying off the principal amount of a debt over ti
 - No começo, a maior parte da parcela é juros
 - Paga mais juros no total que a SAC
 
-## Practical Example
+## Exemplo prático
 
-Financing of approximately $25,000 USD in 30 years at 10% per annum:
-- **SAC:** first installment ~$280 USD, last ~$71 USD. Total paid: ~$62,500 USD
-- **Price:** all installments ~$221 USD. Total paid: ~$79,300 USD
+Financiamento de R$ 100.000 em 30 anos a 10% a.a.:
+- **SAC:** primeira parcela ~R$ 1.111, última ~R$ 282. Total pago: ~R$ 250.000
+- **Price:** todas as parcelas ~R$ 877. Total pago: ~R$ 316.000
 
-## Extraordinary Amortization
+## Amortização extraordinária
 
 Você pode fazer pagamentos extras para reduzir o saldo devedor mais rápido. Isso economiza milhares em juros. Sempre que tiver dinheiro sobrando, considere amortizar suas dívidas.

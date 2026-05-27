@@ -1,8 +1,8 @@
 ---
-term: "Stock Exchange"
-definition: "An organized market where stocks, bonds, and other financial assets are bought and sold. In Brazil, the main exchange is B3."
+term: "Bolsa de Valores"
+definition: "Un mercado organizado donde se compran y venden acciones, bonos y otros activos financieros. En Brasil, la principal es B3."
 category: "mercado"
-locale: "en"
+locale: "es"
 relatedTerms: ["Ações", "Renda Variável", "Ibovespa"]
 publishedAt: 2025-05-10
 ---
