@@ -32,6 +32,7 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: node src/scripts/automacoes/traduzir-glossario.js
+        timeout-minutes: 30
 
       - name: Commit and push
         run: |
