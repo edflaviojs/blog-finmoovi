@@ -1,0 +1,110 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import CTAVariado from '@components/glossario/CTAVariado.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const glossario = await getCollection('glossario', ({ data }) => data.locale === 'en');
+  return glossario.map(term => ({
+    params: { slug: term.slug },
+    props: { term },
+  }));
+}
+
+const { term } = Astro.props;
+const { Content } = await term.render();
+
+const allTerms = await getCollection('glossario', ({ data }) => data.locale === 'en');
+const relatedTerms = allTerms.filter(t =>
+  term.data.relatedTerms.some((rt: string) => t.data.term.toLowerCase().includes(rt.toLowerCase())) && t.slug !== term.slug
+).slice(0, 4);
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": `What is ${term.data.term}?`,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": term.data.definition
+    }
+  }]
+};
+---
+
+<BaseLayout
+  title={`What is ${term.data.term}? Simple explanation`}
+  description={term.data.definition}
+  keywords={[term.data.term.toLowerCase(), `what is ${term.data.term.toLowerCase()}`, 'financial glossary', 'financial education']}
+>
+  <Header />
+
+  <main class="glossario-post">
+    <div class="container">
+      <article class="glossario-article">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/en">Home</a>
+          <span>/</span>
+          <a href="/en/glossario">Glossary</a>
+          <span>/</span>
+          <span>{term.data.term}</span>
+        </nav>
+
+        <header class="glossario-post-header">
+          <span class="glossario-post-category">{term.data.category}</span>
+          <h1 class="glossario-post-title">What is {term.data.term}?</h1>
+          <p class="glossario-post-definition">{term.data.definition}</p>
+        </header>
+
+        <CTAVariado seed={term.slug.length} />
+
+        <div class="glossario-post-content prose">
+          <Content />
+        </div>
+
+        <CTAVariado seed={term.slug.length + 5} />
+
+        {relatedTerms.length > 0 && (
+          <section class="related-terms">
+            <h3>Related Terms</h3>
+            <div class="related-grid">
+              {relatedTerms.map(rt => (
+                <a href={`/en/glossario/${rt.slug}`} class="related-card">
+                  <span class="related-question">What is {rt.data.term}?</span>
+                  <p class="related-def">{rt.data.definition.substring(0, 100)}...</p>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+</BaseLayout>
+
+<style>
+  .glossario-post { padding: var(--space-8) 0 var(--space-16); }
+  .glossario-article { max-width: 800px; margin: 0 auto; }
+  .breadcrumb { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); color: var(--text-tertiary); margin-bottom: var(--space-6); }
+  .breadcrumb a { color: var(--text-tertiary); transition: color var(--transition-fast); }
+  .breadcrumb a:hover { color: #00F0FF; }
+  .glossario-post-header { margin-bottom: var(--space-8); padding-bottom: var(--space-6); border-bottom: 1px solid var(--border-muted); }
+  .glossario-post-category { display: inline-block; padding: 2px var(--space-3); background: rgba(0, 240, 255, 0.1); color: #00F0FF; border-radius: var(--radius-full); font-size: var(--text-xs); font-weight: 600; text-transform: uppercase; margin-bottom: var(--space-3); }
+  .glossario-post-title { font-size: var(--text-4xl); color: var(--text-primary); margin-bottom: var(--space-4); }
+  .glossario-post-definition { font-size: var(--text-lg); color: var(--text-secondary); line-height: var(--leading-relaxed); padding: var(--space-4); background: var(--bg-secondary); border-left: 3px solid #00F0FF; border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+  .glossario-post-content { margin: var(--space-8) 0; }
+  .related-terms { margin-top: var(--space-10); padding-top: var(--space-8); border-top: 1px solid var(--border-muted); }
+  .related-terms h3 { font-size: var(--text-xl); margin-bottom: var(--space-4); }
+  .related-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-4); }
+  @media (min-width: 640px) { .related-grid { grid-template-columns: repeat(2, 1fr); } }
+  .related-card { padding: var(--space-4); background: var(--bg-secondary); border: 1px solid var(--border-default); border-radius: var(--radius-lg); text-decoration: none; transition: border-color var(--transition-fast); }
+  .related-card:hover { border-color: #00F0FF; }
+  .related-question { display: block; font-size: var(--text-sm); font-weight: 600; color: var(--text-primary); margin-bottom: var(--space-2); }
+  .related-def { font-size: var(--text-xs); color: var(--text-tertiary); margin-bottom: 0; }
+</style>

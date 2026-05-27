@@ -86,6 +86,9 @@ const langs = [
         return basePath === p;
       });
 
+      // Glossario detail pages are also navigable between locales
+      if (basePath.startsWith('/glossario/')) canNavigate = true;
+
       var newPath;
       if (!canNavigate) {
         // For posts and other pages without direct translation, go to locale homepage
