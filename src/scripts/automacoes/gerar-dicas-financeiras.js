@@ -1,10 +1,10 @@
 /**
- * Gerador de Dicas Financeiras
+ * Gerador de Dicas Financeiras (PT + EN + ES)
  * Executa via GitHub Actions 3x/semana (seg, qua, sex às 6h)
- * Gera um post completo com texto + imagem de capa via Groq + Pollinations
+ * Gera um post completo em 3 idiomas com imagens via Groq + Pollinations
  */
 
-import { generateBlogPost } from '../apis/kie-ai.js';
+import { generateBlogPost, generateText } from '../apis/kie-ai.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -36,8 +36,149 @@ const TOPICS = [
   'como evitar compras por impulso',
 ];
 
+/**
+ * Translate a post to another language using Groq
+ */
+async function translatePost(post, targetLang) {
+  const langNames = { en: 'English', es: 'Spanish' };
+  const langName = langNames[targetLang];
+
+  const prompt = `
+Translate the following blog post to ${langName}. Keep the same tone, style, and structure.
+Do NOT translate brand names (FinMoovi). Keep markdown formatting intact.
+Keep all image markdown (![alt](url)) exactly as-is, do not modify image paths.
+Keep the CTA link to finmoovi.com as-is.
+
+Respond in this exact format:
+---TITULO---
+[translated title]
+---META---
+[translated meta description]
+---KEYWORDS---
+[translated keywords, comma separated]
+---CONTEUDO---
+[translated content in markdown]
+
+Original post:
+
+Title: ${post.title}
+Meta: ${post.meta}
+Keywords: ${(post.keywords || []).join(', ')}
+Content:
+${post.processedContent}
+`;
+
+  const result = await generateText(prompt, { maxTokens: 5000, temperature: 0.3 });
+
+  // Parse translated content
+  const titleMatch = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
+  const metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+  const keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
+  const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
+
+  return {
+    title: titleMatch ? titleMatch[1].trim() : post.title,
+    meta: metaMatch ? metaMatch[1].trim() : post.meta,
+    keywords: keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : post.keywords,
+    content: contentMatch ? contentMatch[1].trim() : post.processedContent,
+  };
+}
+
+/**
+ * Create slug from title
+ */
+function createSlug(title) {
+  return title
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .substring(0, 60);
+}
+
+/**
+ * Download image from URL and save locally
+ */
+async function downloadImage(url, filename) {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const buffer = Buffer.from(await response.arrayBuffer());
+      const fullPath = join(IMAGES_DIR, filename);
+      if (!existsSync(IMAGES_DIR)) {
+        mkdirSync(IMAGES_DIR, { recursive: true });
+      }
+      writeFileSync(fullPath, buffer);
+      return `/images/posts/${filename}`;
+    }
+  } catch (err) {
+    console.warn(`⚠️ Falha ao baixar imagem: ${err.message}`);
+  }
+  return '';
+}
+
+/**
+ * Process inline images in content - download and replace URLs with local paths
+ */
+async function processInlineImages(content, slugBase) {
+  const inlineImageRegex = /!\[([^\]]*)\]\((https:\/\/image\.pollinations\.ai[^)]+)\)/g;
+  const matches = [];
+  let match;
+
+  while ((match = inlineImageRegex.exec(content)) !== null) {
+    matches.push({ full: match[0], alt: match[1], url: match[2] });
+  }
+
+  let processed = content;
+  for (let i = 0; i < matches.length; i++) {
+    const img = matches[i];
+    console.log(`🖼️ Gerando imagem inline ${i + 1}...`);
+    const localPath = await downloadImage(img.url, `${slugBase}-${i + 1}.jpg`);
+    if (localPath) {
+      processed = processed.replace(img.full, `![${img.alt}](${localPath})`);
+    } else {
+      processed = processed.replace(img.full, '');
+    }
+  }
+
+  return processed;
+}
+
+/**
+ * Save a post file with frontmatter
+ */
+function savePost(slug, data) {
+  const frontmatter = `---
+title: "${data.title.replace(/"/g, '\\"')}"
+description: "${data.meta.replace(/"/g, '\\"')}"
+image: "${data.imagePath}"
+category: "dicas"
+locale: "${data.locale}"
+tags: ${JSON.stringify(data.keywords || [])}
+author: "FinMoovi"
+publishedAt: ${data.today}
+readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
+featured: false
+seo:
+  metaTitle: "${data.title.replace(/"/g, '\\"')}"
+  metaDescription: "${data.meta.replace(/"/g, '\\"')}"
+  keywords: ${JSON.stringify(data.keywords || [])}
+---
+
+${data.content}
+`;
+
+  const postPath = join(POSTS_DIR, `${slug}.md`);
+  if (!existsSync(POSTS_DIR)) {
+    mkdirSync(POSTS_DIR, { recursive: true });
+  }
+  writeFileSync(postPath, frontmatter, 'utf-8');
+  return postPath;
+}
+
 async function main() {
-  console.log('🚀 Gerando post de dica financeira...');
+  console.log('🚀 Gerando post de dica financeira (PT + EN + ES)...');
 
   // Pick topic based on day of year (rotates through pool)
   const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
@@ -47,124 +188,92 @@ async function main() {
   console.log(`📝 Tópico: ${topic}`);
 
   try {
-    // Generate the post
+    // 1. Generate PT post
     const post = await generateBlogPost(topic, {
       category: 'dicas',
       keywords: [topic, 'finanças pessoais', 'economia', 'dinheiro'],
     });
 
     if (!post.title || !post.content) {
-      throw new Error('API retornou post vazio ou incompleto. Verifique se GROQ_API_KEY está válida.');
+      throw new Error('API retornou post vazio ou incompleto.');
     }
 
-    console.log(`✅ Post gerado: ${post.title}`);
+    console.log(`✅ Post PT gerado: ${post.title}`);
 
-    // Create slug from title
-    const slug = post.title
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[̀-ͯ]/g, '')
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-|-$/g, '')
-      .substring(0, 60);
-
+    const slugPt = createSlug(post.title);
     const today = new Date().toISOString().split('T')[0];
 
-    // Download and save cover image from Pollinations
+    // 2. Download cover image
     let imagePath = '';
     if (post.image) {
-      try {
-        console.log('🖼️ Gerando imagem de capa...');
-        const imageResponse = await fetch(post.image);
-        if (imageResponse.ok) {
-          const imageBuffer = Buffer.from(await imageResponse.arrayBuffer());
-          const imageFilename = `${slug}.jpg`;
-          const imageFullPath = join(IMAGES_DIR, imageFilename);
-
-          if (!existsSync(IMAGES_DIR)) {
-            mkdirSync(IMAGES_DIR, { recursive: true });
-          }
-
-          writeFileSync(imageFullPath, imageBuffer);
-          imagePath = `/images/posts/${imageFilename}`;
-          console.log(`🖼️ Imagem de capa salva: ${imagePath}`);
-        }
-      } catch (imgErr) {
-        console.warn('⚠️ Falha ao salvar imagem de capa, continuando sem:', imgErr.message);
-      }
+      console.log('🖼️ Gerando imagem de capa...');
+      imagePath = await downloadImage(post.image, `${slugPt}.jpg`);
+      if (imagePath) console.log(`🖼️ Capa salva: ${imagePath}`);
     }
 
-    // Download and save inline images from content
-    let processedContent = post.content;
-    const inlineImageRegex = /!\[([^\]]*)\]\((https:\/\/image\.pollinations\.ai[^)]+)\)/g;
-    let match;
-    let inlineIndex = 0;
-    const inlineMatches = [];
+    // 3. Process inline images for PT
+    console.log('🖼️ Processando imagens inline PT...');
+    const processedContentPt = await processInlineImages(post.content, slugPt);
 
-    while ((match = inlineImageRegex.exec(post.content)) !== null) {
-      inlineMatches.push({ full: match[0], alt: match[1], url: match[2] });
-    }
+    // 4. Save PT post
+    const ptPath = savePost(slugPt, {
+      title: post.title,
+      meta: post.meta,
+      keywords: post.keywords,
+      content: processedContentPt,
+      imagePath,
+      locale: 'pt',
+      today,
+    });
+    console.log(`📄 PT salvo: ${ptPath}`);
 
-    for (const img of inlineMatches) {
-      inlineIndex++;
-      try {
-        console.log(`🖼️ Gerando imagem inline ${inlineIndex}...`);
-        const imgResponse = await fetch(img.url);
-        if (imgResponse.ok) {
-          const imgBuffer = Buffer.from(await imgResponse.arrayBuffer());
-          const imgFilename = `${slug}-${inlineIndex}.jpg`;
-          const imgFullPath = join(IMAGES_DIR, imgFilename);
+    // 5. Translate to EN
+    console.log('🌐 Traduzindo para inglês...');
+    const enPost = await translatePost({
+      title: post.title,
+      meta: post.meta,
+      keywords: post.keywords,
+      processedContent: processedContentPt,
+    }, 'en');
 
-          if (!existsSync(IMAGES_DIR)) {
-            mkdirSync(IMAGES_DIR, { recursive: true });
-          }
+    const slugEn = 'en-' + createSlug(enPost.title);
+    const enPath = savePost(slugEn, {
+      title: enPost.title,
+      meta: enPost.meta,
+      keywords: enPost.keywords,
+      content: enPost.content,
+      imagePath, // same cover image
+      locale: 'en',
+      today,
+    });
+    console.log(`📄 EN salvo: ${enPath}`);
 
-          writeFileSync(imgFullPath, imgBuffer);
-          const localPath = `/images/posts/${imgFilename}`;
-          processedContent = processedContent.replace(img.full, `![${img.alt}](${localPath})`);
-          console.log(`🖼️ Imagem inline ${inlineIndex} salva: ${localPath}`);
-        }
-      } catch (imgErr) {
-        console.warn(`⚠️ Falha na imagem inline ${inlineIndex}, removendo:`, imgErr.message);
-        processedContent = processedContent.replace(img.full, '');
-      }
-    }
+    // 6. Translate to ES
+    console.log('🌐 Traduzindo para espanhol...');
+    const esPost = await translatePost({
+      title: post.title,
+      meta: post.meta,
+      keywords: post.keywords,
+      processedContent: processedContentPt,
+    }, 'es');
 
-    // Create frontmatter
-    const frontmatter = `---
-title: "${post.title.replace(/"/g, '\\"')}"
-description: "${post.meta.replace(/"/g, '\\"')}"
-image: "${imagePath}"
-category: "dicas"
-locale: "pt"
-tags: ${JSON.stringify(post.keywords || [topic, 'finanças pessoais'])}
-author: "FinMoovi"
-publishedAt: ${today}
-readingTime: ${Math.ceil(processedContent.split(/\s+/).length / 200)}
-featured: false
-seo:
-  metaTitle: "${post.title.replace(/"/g, '\\"')}"
-  metaDescription: "${post.meta.replace(/"/g, '\\"')}"
-  keywords: ${JSON.stringify(post.keywords || [])}
----
+    const slugEs = 'es-' + createSlug(esPost.title);
+    const esPath = savePost(slugEs, {
+      title: esPost.title,
+      meta: esPost.meta,
+      keywords: esPost.keywords,
+      content: esPost.content,
+      imagePath, // same cover image
+      locale: 'es',
+      today,
+    });
+    console.log(`📄 ES salvo: ${esPath}`);
 
-${processedContent}
-`;
+    // 7. Git commit all
+    execSync(`git add "${POSTS_DIR}" "${IMAGES_DIR}"`, { stdio: 'inherit' });
+    execSync(`git commit -m "post: ${post.title.substring(0, 40)} [PT/EN/ES]"`, { stdio: 'inherit' });
 
-    // Save post file
-    const postPath = join(POSTS_DIR, `${slug}.md`);
-    if (!existsSync(POSTS_DIR)) {
-      mkdirSync(POSTS_DIR, { recursive: true });
-    }
-    writeFileSync(postPath, frontmatter, 'utf-8');
-    console.log(`📄 Post salvo: ${postPath}`);
-
-    // Git commit - add post file and all generated images
-    execSync(`git add "${postPath}"`, { stdio: 'inherit' });
-    execSync(`git add "${IMAGES_DIR}"`, { stdio: 'inherit' });
-    execSync(`git commit -m "post: ${post.title.substring(0, 50)}"`, { stdio: 'inherit' });
-
-    console.log('✅ Commit criado com sucesso!');
+    console.log('✅ Commit criado com sucesso! (3 idiomas)');
   } catch (error) {
     console.error('❌ Erro ao gerar post:', error.message);
     process.exit(1);
