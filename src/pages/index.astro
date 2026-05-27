@@ -6,7 +6,7 @@ import PostGrid from '@components/posts/PostGrid.astro';
 import Sidebar from '@components/sidebar/Sidebar.astro';
 import { getCollection } from 'astro:content';
 
-const allPosts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'pt');
+const allPosts = await getCollection('posts', ({ data }) => !data.draft && (!data.locale || data.locale === 'pt'));
 const sortedPosts = allPosts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
 const featuredPosts = sortedPosts.filter(p => p.data.featured);
 const recentPosts = sortedPosts.slice(0, 9);

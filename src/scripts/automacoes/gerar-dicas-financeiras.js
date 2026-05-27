@@ -100,6 +100,7 @@ title: "${post.title.replace(/"/g, '\\"')}"
 description: "${post.meta.replace(/"/g, '\\"')}"
 image: "${imagePath}"
 category: "dicas"
+locale: "pt"
 tags: ${JSON.stringify(post.keywords || [topic, 'finanças pessoais'])}
 author: "FinMoovi"
 publishedAt: ${today}

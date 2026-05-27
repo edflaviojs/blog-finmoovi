@@ -4,7 +4,7 @@ import SchemaArticle from '@components/seo/SchemaArticle.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'pt');
+  const posts = await getCollection('posts', ({ data }) => !data.draft && (!data.locale || data.locale === 'pt'));
   return posts.map(post => ({
     params: { slug: post.slug },
     props: { post },

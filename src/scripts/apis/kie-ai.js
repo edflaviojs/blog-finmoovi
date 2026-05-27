@@ -13,7 +13,7 @@ if (!GROQ_API_KEY) {
 /**
  * Generate cover image using Pollinations.ai (free, no API key needed)
  */
-export async function generateImage(topic) {
+export function generateImage(topic) {
   const prompt = encodeURIComponent(
     `Modern minimalist blog cover illustration about ${topic}, dark background with blue and purple gradient accents, professional financial theme, clean flat design, no text, no letters, abstract geometric shapes`
   );

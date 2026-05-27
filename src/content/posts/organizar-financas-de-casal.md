@@ -3,6 +3,7 @@ title: "Organizar Finanças de Casal"
 description: "Aprenda a gerenciar suas finanças em conjunto com o seu parceiro e alcance estabilidade financeira. Dicas práticas para economia e planejamento."
 image: ""
 category: "dicas"
+locale: "pt"
 tags: ["como organizar finanças de casal","finanças pessoais","economia","dinheiro"]
 author: "FinMoovi"
 publishedAt: 2026-05-27
