@@ -7,33 +7,33 @@ relatedTerms: ["Dividendos", "Renda Variável", "Bolsa de Valores"]
 publishedAt: 2025-05-10
 ---
 
-## O que são Ações?
+## What are Stocks?
 
-Ações são pedaços de uma empresa negociados na Bolsa de Valores (B3 no Brasil). Quando você compra uma ação da Petrobras, por exemplo, você se torna sócio minoritário da empresa.
+Stocks are pieces of a company traded on the Stock Exchange (B3 in Brazil). When you buy a stock from Petrobras, for example, you become a minority shareholder of the company.
 
-## Como ganhar dinheiro com ações
+## How to make money with stocks
 
-1. **Valorização:** comprar barato e vender mais caro
-2. **Dividendos:** receber parte dos lucros da empresa
-3. **Juros sobre Capital Próprio (JCP):** similar a dividendos, com tratamento fiscal diferente
+1. **Appreciation:** buy cheap and sell more expensive
+2. **Dividends:** receive part of the company's profits
+3. **Interest on Own Capital (JCP):** similar to dividends, with different tax treatment
 
 ## Risks
 
-- O preço pode cair (você pode perder dinheiro)
-- Empresas podem falir
-- Volatilidade alta no curto prazo
+- The price may fall (you may lose money)
+- Companies can go bankrupt
+- High volatility in the short term
 
-## Para quem é indicado?
+## For whom is it indicated?
 
-Ações são indicadas para quem:
-- Já tem reserva de emergência
-- Tem horizonte de longo prazo (5+ anos)
-- Aceita oscilações no curto prazo
-- Quer rendimentos acima da renda fixa
+Stocks are indicated for those who:
+- Already have an emergency reserve
+- Have a long-term horizon (5+ years)
+- Accept fluctuations in the short term
+- Want returns above fixed income
 
-## Como começar
+## How to start
 
-1. Abra conta em uma corretora (XP, Clear, Rico, etc.)
-2. Estude as empresas antes de investir
-3. Comece com pouco (R$ 100 já é possível)
-4. Diversifique entre setores diferentes
+1. Open an account with a brokerage firm (XP, Clear, Rico, etc.)
+2. Study companies before investing
+3. Start with a little (R$ 100 is already possible)
+4. Diversify across different sectors

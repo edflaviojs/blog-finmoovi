@@ -9,30 +9,30 @@ publishedAt: 2025-05-10
 
 ## What is Bitcoin?
 
-Bitcoin (BTC) é a primeira e mais conhecida criptomoeda do mundo. Foi criada em 2009 por uma pessoa (ou grupo) sob o pseudônimo Satoshi Nakamoto. Funciona de forma descentralizada — sem bancos, sem governo controlando.
+Bitcoin (BTC) is the first and most well-known cryptocurrency in the world. It was created in 2009 by a person (or group) under the pseudonym Satoshi Nakamoto. It works in a decentralized manner — without banks, without government control.
 
 ## How does it work?
 
-- Transações são registradas em um livro público chamado **blockchain**
-- Não existe um "banco central" do Bitcoin
-- Existe um limite de 21 milhões de bitcoins que podem existir
-- Novas unidades são criadas por "mineração" (computadores resolvendo problemas matemáticos)
+- Transactions are recorded in a public book called **blockchain**
+- There is no "central bank" of Bitcoin
+- There is a limit of 21 million bitcoins that can exist
+- New units are created by "mining" (computers solving mathematical problems)
 
-## Bitcoin como investimento
+## Bitcoin as an investment
 
-| Vantagem | Desvantagem |
+| Advantage | Disadvantage |
 |----------|-------------|
-| Potencial de alta valorização | Volatilidade extrema |
-| Descentralizado | Não regulamentado no Brasil |
-| Escassez programada | Pode perder 50%+ em meses |
-| Funciona 24/7 | Complexo para iniciantes |
+| Potential for high appreciation | Extreme volatility |
+| Decentralized | Not regulated in Brazil |
+| Programmed scarcity | Can lose 50%+ in months |
+| Works 24/7 | Complex for beginners |
 
-## Quanto investir?
+## How much to invest?
 
-A recomendação geral é: **no máximo 5% do seu patrimônio** em criptomoedas. Nunca invista dinheiro que você não pode perder. Bitcoin é altamente volátil.
+The general recommendation is: **up to 5% of your assets** in cryptocurrencies. Never invest money that you cannot afford to lose. Bitcoin is highly volatile.
 
-## Como comprar no Brasil
+## How to buy in Brazil
 
-1. Abra conta em uma exchange (Mercado Bitcoin, Binance, Foxbit)
-2. Faça um depósito via PIX
-3. Compre a quantidade desejada (pode comprar frações)
+1. Open an account at an exchange (Mercado Bitcoin, Binance, Foxbit)
+2. Make a deposit via PIX
+3. Buy the desired amount (you can buy fractions)

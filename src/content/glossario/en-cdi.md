@@ -9,21 +9,21 @@ publishedAt: 2025-05-10
 
 ## What is CDI?
 
-O CDI (Certificado de Depósito Interbancário) é a taxa de juros usada em empréstimos entre bancos. Na prática, é a referência para a maioria dos investimentos de renda fixa no Brasil.
+The CDI (Certificado de Depósito Interbancário) is the interest rate used in loans between banks. In practice, it is the reference for most fixed-income investments in Brazil.
 
 ## CDI vs Selic
 
-O CDI acompanha a taxa Selic muito de perto (geralmente 0,10% abaixo). Se a Selic está em 14,75%, o CDI está em torno de 14,65%.
+The CDI closely follows the Selic rate (usually 0.10% below). If the Selic is at 14.75%, the CDI is around 14.65%.
 
 ## Why does it matter?
 
-Quando um investimento rende "100% do CDI", significa que ele paga exatamente a taxa CDI. Exemplos:
-- **100% CDI** = rendimento padrão
-- **110% CDI** = acima da média (bom)
-- **80% CDI** = abaixo da média (ruim, como a poupança)
+When an investment yields "100% of the CDI", it means it pays exactly the CDI rate. Examples:
+- **100% CDI** = standard yield
+- **110% CDI** = above average (good)
+- **80% CDI** = below average (bad, like a savings account)
 
 ## How much does it yield?
 
-Com CDI a 14,65% ao ano:
-- R$ 1.000 investidos = ~R$ 146,50/ano (bruto)
-- Descontando IR (15-22,5%), fica entre R$ 113 e R$ 124/ano líquido
+With CDI at 14.65% per year:
+- R$ 1,000 invested = ~R$ 146.50/year (gross)
+- After deducting income tax (15-22.5%), it's between R$ 113 and R$ 124/year net

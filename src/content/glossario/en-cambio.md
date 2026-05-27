@@ -7,32 +7,32 @@ relatedTerms: ["IOF", "Diversificação", "IPCA"]
 publishedAt: 2025-05-10
 ---
 
-## What is Câmbio?
+## What is Foreign Exchange?
 
-Câmbio é a troca de uma moeda por outra. Quando você compra dólares para viajar ou quando uma empresa importa produtos, está fazendo uma operação de câmbio. A taxa de câmbio indica quanto custa uma moeda em relação a outra.
+Foreign Exchange is the exchange of one currency for another. When you buy dollars to travel or when a company imports products, you are making a foreign exchange transaction. The exchange rate indicates how much one currency costs in relation to another.
 
-## How does it work? a taxa de câmbio
+## How does it work? the exchange rate
 
-- **USD/BRL = 5,50** significa que 1 dólar custa R$ 5,50
-- A taxa muda a cada segundo no mercado
-- É influenciada por juros, inflação, política e fluxo de capitais
+- **USD/BRL = 5,50** means that 1 dollar costs R$ 5,50
+- The rate changes every second in the market
+- It is influenced by interest rates, inflation, politics, and capital flow
 
-## Types de câmbio
+## Types of Foreign Exchange
 
-| Tipo | Uso | Spread |
+| Type | Use | Spread |
 |------|-----|--------|
-| Comercial | Empresas, importação/exportação | Menor |
-| Turismo | Compra de moeda para viagem | Maior (3-5%) |
-| Paralelo | Mercado informal (ilegal) | Variável |
+| Commercial | Companies, import/export | Lower |
+| Tourism | Buying currency for travel | Higher (3-5%) |
+| Parallel | Informal market (illegal) | Variable |
 
-## Tips para comprar moeda estrangeira
+## Tips for buying foreign currency
 
-1. **Compre aos poucos** — não tente acertar o melhor momento
-2. **Compare casas de câmbio** — spreads variam muito
-3. **Evite aeroportos** — taxas são as piores
-4. **Cartão de débito internacional** — geralmente melhor que dinheiro em espécie
-5. **IOF:** 4,38% no cartão, 1,1% em espécie
+1. **Buy in small amounts** — don't try to time the best moment
+2. **Compare exchange offices** — spreads vary greatly
+3. **Avoid airports** — rates are the worst
+4. **International debit card** — usually better than cash
+5. **IOF:** 4,38% on card, 1,1% in cash
 
-## Câmbio e investimentos
+## Foreign Exchange and investments
 
-Investir em ativos dolarizados (ETFs internacionais, BDRs) é uma forma de se proteger da desvalorização do real. Quando o dólar sobe, seus investimentos internacionais valorizam em reais.
+Investing in dollar-denominated assets (international ETFs, BDRs) is a way to protect yourself from the devaluation of the real. When the dollar rises, your international investments appreciate in reals.

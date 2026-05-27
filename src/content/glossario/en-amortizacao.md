@@ -9,26 +9,26 @@ publishedAt: 2025-05-10
 
 ## What is Amortização?
 
-Amortização é o ato de pagar o valor principal de uma dívida aos poucos. Cada parcela que você paga tem duas partes: a amortização (que reduz o saldo devedor) e os juros (que é o custo do empréstimo).
+Amortização is the act of paying the principal value of a debt gradually. Each installment you pay has two parts: the amortization (which reduces the outstanding balance) and the interest (which is the cost of the loan).
 
-## Types de amortização
+## Types of amortização
 
 ### Tabela SAC (Sistema de Amortização Constante)
-- Amortização fixa em todas as parcelas
-- Parcelas começam maiores e diminuem
-- Você paga menos juros no total
+- Amortization is fixed in all installments
+- Installments start larger and decrease
+- You pay less interest in total
 
 ### Tabela Price
-- Parcelas fixas do início ao fim
-- No começo, a maior parte da parcela é juros
-- Paga mais juros no total que a SAC
+- Installments are fixed from start to finish
+- At the beginning, the largest part of the installment is interest
+- You pay more interest in total than with SAC
 
 ## Practical example
 
-Financiamento de R$ 100.000 em 30 anos a 10% a.a.:
-- **SAC:** primeira parcela ~R$ 1.111, última ~R$ 282. Total pago: ~R$ 250.000
-- **Price:** todas as parcelas ~R$ 877. Total pago: ~R$ 316.000
+Financing of R$ 100,000 in 30 years at 10% per year:
+- **SAC:** first installment ~R$ 1,111, last ~R$ 282. Total paid: ~R$ 250,000
+- **Price:** all installments ~R$ 877. Total paid: ~R$ 316,000
 
 ## Amortização extraordinária
 
-Você pode fazer pagamentos extras para reduzir o saldo devedor mais rápido. Isso economiza milhares em juros. Sempre que tiver dinheiro sobrando, considere amortizar suas dívidas.
+You can make extra payments to reduce the outstanding balance faster. This saves thousands in interest. Whenever you have extra money, consider amortizing your debts.
