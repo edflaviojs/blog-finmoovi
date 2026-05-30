@@ -4,10 +4,13 @@
  */
 
 const GROQ_API_BASE = 'https://api.groq.com/openai/v1';
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const GROQ_API_KEY = process.env.GROQ_API_KEY || process.env.KIE_API_KEY;
 
-if (!GROQ_API_KEY) {
-  throw new Error('GROQ_API_KEY environment variable is required. Configure it in GitHub Secrets.');
+// Allow image generation without API key (uses Pollinations)
+const hasApiKey = GROQ_API_KEY;
+
+if (!hasApiKey) {
+  console.warn('⚠️ GROQ_API_KEY not configured - text generation will fail, but image generation will work via Pollinations');
 }
 
 /**
