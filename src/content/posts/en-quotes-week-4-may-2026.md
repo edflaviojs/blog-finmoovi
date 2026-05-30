@@ -1,7 +1,7 @@
 ---
 title: "Weekly Summary: Dollar at R$ 5.03 — Week 4 of May"
 description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 4 of May 2026."
-image: ""
+image: "/images/posts/en-quotes-week-4-may-2026.webp"
 category: "cotacoes"
 tags: ["quotes", "dollar", "euro", "financial market", "selic"]
 author: "FinMoovi"

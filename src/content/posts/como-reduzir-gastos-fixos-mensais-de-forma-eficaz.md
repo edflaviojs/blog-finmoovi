@@ -1,7 +1,7 @@
 ---
 title: "Como Reduzir Gastos Fixos Mensais de Forma Eficaz"
 description: "Aprenda a reduzir gastos fixos mensais e economize dinheiro com dicas práticas e eficazes. Descubra como gerenciar suas finanças de forma inteligente."
-image: ""
+image: "/images/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz.webp"
 category: "dicas"
 locale: "pt"
 tags: ["como reduzir gastos fixos mensais","finanças pessoais","economia","dinheiro"]

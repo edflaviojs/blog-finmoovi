@@ -1,7 +1,7 @@
 ---
 title: "Cómo Reducir Gastos Fijos Mensuales de Forma Eficaz"
 description: "Aprende a reducir gastos fijos mensuales y ahorra dinero con consejos prácticos y eficaces. Descubre cómo gestionar tus finanzas de forma inteligente."
-image: ""
+image: "/images/posts/es-reducir-gastos-fijos-mensuales.webp"
 category: "dicas"
 tags: ["reducir gastos fijos", "finanzas personales", "ahorrar dinero", "presupuesto"]
 author: "FinMoovi"

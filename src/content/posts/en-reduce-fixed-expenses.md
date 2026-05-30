@@ -1,7 +1,7 @@
 ---
 title: "How to Effectively Reduce Monthly Fixed Expenses"
 description: "Learn how to reduce monthly fixed expenses and save money with practical and effective tips. Discover how to manage your finances intelligently."
-image: ""
+image: "/images/posts/en-reduce-fixed-expenses.webp"
 category: "dicas"
 tags: ["reduce fixed expenses", "personal finance", "save money", "budget"]
 author: "FinMoovi"
