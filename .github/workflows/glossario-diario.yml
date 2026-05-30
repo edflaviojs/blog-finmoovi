@@ -1,0 +1,59 @@
+name: Glossário Diário Automático
+
+on:
+  schedule:
+    # 1x/dia: todos os dias às 8h da manhã (UTC-3 = 11h UTC)
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+    # Permite execução manual
+    inputs:
+      letra:
+        description: 'Letra específica para gerar (A-Z)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  gerar-glossario:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gerar glossário diário
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+        run: |
+          # Se foi especificada uma letra manualmente
+          if [ -n "${{ github.event.inputs.letra }}" ]; then
+            echo "Letra especificada: ${{ github.event.inputs.letra }}"
+            echo "${{ github.event.inputs.letra }}" > .current-letter
+          fi
+
+          node src/scripts/automacoes/glossario-auto-diario.js
+
+      - name: Push changes
+        run: |
+          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+            git push
+          else
+            echo "No changes to push"
+          fi
