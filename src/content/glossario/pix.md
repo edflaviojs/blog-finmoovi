@@ -5,13 +5,17 @@ category: "basico"
 relatedTerms: ["Câmbio", "IOF", "Score de Crédito"]
 publishedAt: 2025-05-10
 locale: "pt"
+readingTime: 2
 ---
 
 ## O que é PIX?
 
+
 PIX é o sistema de pagamentos instantâneos criado pelo Banco Central em 2020. Permite transferir dinheiro em até 10 segundos, 24 horas por dia, 7 dias por semana — inclusive feriados. É gratuito para pessoas físicas.
 
 ## Como funciona
+
+
 
 1. Você cadastra uma "chave PIX" (CPF, email, telefone ou chave aleatória)
 2. Para receber, basta informar sua chave
@@ -19,6 +23,7 @@ PIX é o sistema de pagamentos instantâneos criado pelo Banco Central em 2020. 
 4. O dinheiro cai na hora
 
 ## Vantagens
+
 
 - Gratuito para pessoa física
 - Instantâneo (10 segundos)
@@ -28,12 +33,15 @@ PIX é o sistema de pagamentos instantâneos criado pelo Banco Central em 2020. 
 
 ## Segurança
 
+
 - Limite noturno (20h-6h): R$ 1.000 (padrão, pode alterar)
 - Mecanismo Especial de Devolução (MED) para fraudes
 - Autenticação por senha/biometria no app do banco
 - Pode bloquear chaves suspeitas
 
 ## Dicas de segurança
+
+
 
 1. Nunca compartilhe senhas ou códigos de verificação
 2. Desconfie de PIX pedidos por WhatsApp (golpe comum)
@@ -42,5 +50,6 @@ PIX é o sistema de pagamentos instantâneos criado pelo Banco Central em 2020. 
 5. Ative notificações de transação
 
 ## PIX e controle financeiro
+
 
 O PIX facilita o rastreamento de gastos porque todas as transações ficam registradas no extrato. Apps como o FinMoovi categorizam automaticamente seus PIX para você saber exatamente para onde vai seu dinheiro.

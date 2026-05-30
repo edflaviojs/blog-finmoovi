@@ -5,13 +5,16 @@ category: "basico"
 locale: "es"
 relatedTerms: ["Juros Compostos", "CDI", "Selic"]
 publishedAt: 2025-05-10
+readingTime: 2
 ---
 
 ## O que são Juros Simples?
 
+
 Juros simples são calculados apenas sobre o valor original (principal). Não importa quanto tempo passe, os juros são sempre calculados sobre o mesmo valor inicial. É o tipo mais básico de juros.
 
 ## Fórmula
+
 
 **J = P × i × t**
 
@@ -22,6 +25,7 @@ Onde:
 - t = tempo
 
 ## Exemplo
+
 
 R$ 1.000 a 10% ao ano por 3 anos (juros simples):
 - Juros = 1.000 × 0,10 × 3 = R$ 300
@@ -35,6 +39,7 @@ Compare com juros compostos:
 
 ## Onde aparecem juros simples
 
+
 Na prática, juros simples são raros. Aparecem em:
 - Alguns cálculos de multas
 - Desconto de duplicatas
@@ -42,5 +47,6 @@ Na prática, juros simples são raros. Aparecem em:
 - Exercícios de matemática financeira
 
 ## ¿Por qué importa? saber
+
 
 Entender a diferença entre juros simples e compostos é fundamental. No mundo real, quase tudo usa juros compostos — e isso faz uma diferença enorme no longo prazo, tanto para investimentos quanto para dívidas.

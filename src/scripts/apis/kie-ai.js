@@ -15,18 +15,53 @@ if (!GROQ_API_KEY) {
  * Professional quality, no text, with subtle FinMoovi watermark
  */
 export function generateImage(topic, type = 'cover') {
-  const baseStyle = 'ultra professional photography style, high quality, 4k, sharp focus, no text, no words, no letters, no numbers, no watermark, no logos';
+  // Base styles avoiding hands, fingers, and ensuring professional quality
+  const baseStyle = 'professional financial visualization, ultra high quality, 4k, sharp focus, no text, no words, no letters, no numbers, no watermark, no logos, no hands, no fingers, no people';
+
+  // FinMoovi watermark
   const finmooviWatermark = 'subtle small translucent finmoovi.com watermark in bottom right corner';
+
+  // Different visual styles for variety
+  const styleVariations = [
+    // Style 1: Abstract financial concepts
+    {
+      name: 'abstract',
+      prompt: `${topic}, abstract financial concept, geometric shapes, data visualization elements, blue and gold gradient, ${baseStyle}, ${finmooviWatermark}, modern minimalist composition`
+    },
+    // Style 2: Professional objects
+    {
+      name: 'objects',
+      prompt: `${topic}, professional financial objects, clean desk setup, calculator, charts, documents, ${baseStyle}, ${finmooviWatermark}, overhead view, organized layout`
+    },
+    // Style 3: Nature metaphors
+    {
+      name: 'nature',
+      prompt: `${topic}, nature-inspired financial growth, tree with money leaves, flowing water streams, earth tones, ${baseStyle}, ${finmooviWatermark}, symbolic composition`
+    },
+    // Style 4: Architecture/buildings
+    {
+      name: 'architecture',
+      prompt: `${topic}, financial architecture, building structures with growth charts, blueprints, modern city skyline, ${baseStyle}, ${finmooviWatermark}, architectural composition`
+    },
+    // Style 5: Technology/digital
+    {
+      name: 'tech',
+      prompt: `${topic}, digital financial technology, circuit board patterns, holographic displays, neon accents, ${baseStyle}, ${finmooviWatermark}, futuristic tech aesthetic`
+    }
+  ];
+
+  // Select random style for variety
+  const randomStyle = styleVariations[Math.floor(Math.random() * styleVariations.length)];
 
   let dimensions = 'width=1200&height=630';
   let promptText = '';
 
   if (type === 'cover') {
-    promptText = `${topic}, modern financial concept visualization, dark moody background with cyan and purple gradient lighting, ${baseStyle}, ${finmooviWatermark}, cinematic composition, depth of field`;
+    promptText = `${randomStyle.prompt}, cinematic lighting, depth of field, professional photography`;
     dimensions = 'width=1200&height=630';
   } else {
     // inline content image
-    promptText = `${topic}, clean professional illustration, soft gradient background, minimalist style, ${baseStyle}, ${finmooviWatermark}, centered composition`;
+    promptText = `${randomStyle.prompt}, centered composition, clean background`;
     dimensions = 'width=800&height=450';
   }
 

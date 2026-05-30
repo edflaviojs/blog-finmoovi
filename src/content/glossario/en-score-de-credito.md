@@ -5,13 +5,16 @@ category: "credito"
 locale: "en"
 relatedTerms: ["Financiamento", "Juros Compostos", "Cheque Especial"]
 publishedAt: 2025-05-10
+readingTime: 2
 ---
 
 ## What is Credit Score?
 
+
 Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vista) give to you. This note indicates to banks and stores what the chance is of you paying your bills on time.
 
 ## Score ranges
+
 
 | Range | Score | Meaning |
 |-------|-----------|-------------|
@@ -21,6 +24,7 @@ Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vist
 | Very good | 701-1000 | Low risk, good payer |
 
 ## What affects your score
+
 
 **Increases:**
 - Paying bills on time
@@ -36,6 +40,8 @@ Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vist
 
 ## How to improve your score
 
+
+
 1. Pay all bills on time (even small ones)
 2. Activate the Positive Registration on Serasa
 3. Negotiate and pay off open debts
@@ -43,6 +49,7 @@ Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vist
 5. Keep registration data up to date
 
 ## Why the score matters
+
 
 With a high score you can get:
 - Lower interest rates on financing

@@ -5,13 +5,16 @@ category: "mercado"
 relatedTerms: ["Score de Crédito", "PIX", "Nubank"]
 publishedAt: 2025-05-10
 locale: "pt"
+readingTime: 1
 ---
 
 ## O que é KYC (Know Your Customer)?
 
+
 KYC (Conheça Seu Cliente) é o processo que bancos e corretoras usam para verificar quem você é. Quando pedem RG, CPF, comprovante de endereço e selfie para abrir conta — isso é KYC.
 
 ## Por que existe
+
 
 - Prevenir lavagem de dinheiro
 - Combater financiamento ao terrorismo
@@ -20,22 +23,27 @@ KYC (Conheça Seu Cliente) é o processo que bancos e corretoras usam para verif
 
 ## O que pedem
 
+
 ### Nível básico
+
 - Nome completo e CPF
 - Data de nascimento
 - Email e telefone
 
 ### Nível intermediário
+
 - Documento com foto (RG ou CNH)
 - Comprovante de endereço
 - Selfie com documento
 
 ### Nível avançado
+
 - Declaração de IR
 - Comprovante de renda
 - Origem dos recursos
 
 ## Onde você encontra KYC
+
 
 - Abertura de conta em banco/corretora
 - Exchanges de criptomoedas
@@ -44,6 +52,8 @@ KYC (Conheça Seu Cliente) é o processo que bancos e corretoras usam para verif
 - Investimentos acima de certos valores
 
 ## Dicas
+
+
 
 1. Mantenha documentos digitalizados no celular (facilita)
 2. Comprovante de endereço: conta de luz/água dos últimos 3 meses

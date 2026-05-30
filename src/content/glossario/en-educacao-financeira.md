@@ -5,33 +5,40 @@ category: "basico"
 locale: "en"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]
 publishedAt: 2025-05-10
+readingTime: 2
 ---
 
 ## What is Financial Education?
+
 
 Financial education is about learning to handle money intelligently. It's not about getting rich quickly — it's about understanding how money works to make better decisions in your daily life.
 
 ## The 4 Pillars
 
+
 ### 1. Earning
+
 - Developing skills that the market values
 - Negotiating salary
 - Creating extra sources of income
 - Entrepreneurship
 
 ### 2. Spending
+
 - Differentiating needs from desires
 - Researching before buying
 - Avoiding impulse purchases
 - Using the 48h rule (waiting before buying)
 
 ### 3. Saving
+
 - Paying yourself first (setting aside before spending)
 - Automating transfers to investments
 - Having clear savings goals
 - Emergency reserve as a priority
 
 ### 4. Investing
+
 - Understanding risk vs. return
 - Starting early (compound interest)
 - Diversifying
@@ -39,9 +46,12 @@ Financial education is about learning to handle money intelligently. It's not ab
 
 ## Why School Doesn't Teach
 
+
 Unfortunately, financial education is not a priority in the Brazilian school curriculum. Most people learn about money through trial and error — usually after making expensive mistakes.
 
 ## How to Start
+
+
 
 1. Write down all your expenses for 30 days
 2. Create a simple budget

@@ -5,13 +5,16 @@ category: "investimentos"
 locale: "en"
 relatedTerms: ["Renda Fixa", "Renda Variável", "ETF"]
 publishedAt: 2025-05-10
+readingTime: 2
 ---
 
 ## What is Diversificação?
 
+
 Diversificação is the strategy of spreading your money among different types of investments. The idea is simple: if one investment goes bad, the others make up for it. It's the famous "don't put all your eggs in one basket".
 
 ## Por que diversificar?
+
 
 - Reduces the risk of losing everything
 - Smooths out the fluctuations in your portfolio
@@ -20,13 +23,16 @@ Diversificação is the strategy of spreading your money among different types o
 
 ## Como diversificar na prática
 
+
 ### Por classe de ativo
+
 - Fixed income (CDB, Tesouro Direto)
 - Variable income (stocks, FIIs)
 - International (ETFs of S&P 500)
 - Emergency reserve (Selic, daily liquidity CDB)
 
 ### Exemplo de carteira diversificada (perfil moderado)
+
 | Classe | Percentual | Exemplo |
 |--------|-----------|---------|
 | Renda Fixa | 40% | Tesouro IPCA+, CDB |
@@ -36,5 +42,6 @@ Diversificação is the strategy of spreading your money among different types o
 | Cripto | 5% | Bitcoin, Ethereum |
 
 ## Erro comum
+
 
 Many people think that having 10 different CDBs is diversifying. It's not — they're all fixed income. Real diversification is having different asset classes that behave in different ways.

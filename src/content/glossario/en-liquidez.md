@@ -5,13 +5,16 @@ category: "investimentos"
 locale: "en"
 relatedTerms: ["Reserva de Emergência", "CDB", "Tesouro Direto"]
 publishedAt: 2025-05-10
+readingTime: 1
 ---
 
 ## What is Liquidez?
 
+
 Liquidez is the ability to quickly convert an investment into cash. The more liquid it is, the faster you can access the money.
 
 ## Types of liquidez
+
 
 - **Liquidez diária (D+0):** Money available on the same day. Ex: Tesouro Selic, CDB with daily liquidity.
 - **Liquidez D+1:** Available the next day. Ex: Some investment funds.
@@ -19,7 +22,9 @@ Liquidez is the ability to quickly convert an investment into cash. The more liq
 
 ## Escala de liquidez
 
+
 From most liquid to least liquid:
+
 1. Money in a checking account
 2. Tesouro Selic / CDB with daily liquidity
 3. Fundos DI
@@ -29,6 +34,7 @@ From most liquid to least liquid:
 7. Real estate
 
 ## Quando a liquidez importa?
+
 
 - **Reserva de emergência:** needs daily liquidity
 - **Objetivos de curto prazo (< 1 ano):** high liquidity

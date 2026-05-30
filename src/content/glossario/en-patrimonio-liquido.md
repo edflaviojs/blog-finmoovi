@@ -5,21 +5,26 @@ category: "basico"
 locale: "en"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Diversificação"]
 publishedAt: 2025-05-10
+readingTime: 2
 ---
 
 ## What is Net Worth?
+
 
 Net Worth = Assets - Liabilities. In other words: everything you have minus everything you owe. It's the most important number in your personal finances — it shows your real wealth.
 
 ## How to calculate?
 
+
 ### Your Assets (what you have)
+
 - Money in account and investments
 - Real estate (market value)
 - Vehicles (market value)
 - Other valuable assets
 
 ### Your Liabilities (what you owe)
+
 - Mortgage (outstanding balance)
 - Vehicle financing
 - Personal loans
@@ -27,6 +32,7 @@ Net Worth = Assets - Liabilities. In other words: everything you have minus ever
 - Other debts
 
 ### Example
+
 
 | Assets | Value |
 |--------|-------|
@@ -45,12 +51,14 @@ Net Worth = Assets - Liabilities. In other words: everything you have minus ever
 
 ## Why track
 
+
 - Shows if you're getting richer or poorer
 - Allows setting concrete goals (e.g. "I want R$ 1 million in net worth")
 - Reveals if your debts are under control
 - Is more important than salary (high income with high debts = low net worth)
 
 ## Net Worth goal by age (reference)
+
 
 - 30 years: 1x your annual salary
 - 40 years: 3x your annual salary

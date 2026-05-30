@@ -5,13 +5,17 @@ category: "investimentos"
 relatedTerms: ["Dividendos", "Renda Variável", "Bolsa de Valores"]
 publishedAt: 2025-05-10
 locale: "pt"
+readingTime: 1
 ---
 
 ## O que são Fundos Imobiliários (FIIs)?
 
+
 Fundos Imobiliários são como "condomínios de investidores" que juntam dinheiro para comprar imóveis (shoppings, galpões, escritórios) ou títulos do setor imobiliário. Você compra cotas na bolsa e recebe aluguéis mensais.
 
 ## Como funciona
+
+
 
 1. O fundo compra imóveis com o dinheiro dos cotistas
 2. Os imóveis são alugados para empresas
@@ -19,6 +23,7 @@ Fundos Imobiliários são como "condomínios de investidores" que juntam dinheir
 4. Rendimentos são **isentos de IR** para pessoa física
 
 ## Vantagens
+
 
 - Renda mensal isenta de imposto
 - Investir em imóveis com pouco dinheiro (a partir de R$ 10)
@@ -28,6 +33,7 @@ Fundos Imobiliários são como "condomínios de investidores" que juntam dinheir
 
 ## Tipos de FIIs
 
+
 | Tipo | Exemplo | Característica |
 |------|---------|---------------|
 | Tijolo | HGLG11 | Imóveis físicos (galpões) |
@@ -36,5 +42,6 @@ Fundos Imobiliários são como "condomínios de investidores" que juntam dinheir
 | FOF | BCFF11 | Fundo que investe em outros FIIs |
 
 ## Quanto rende?
+
 
 A média do mercado é de 0,7% a 1% ao mês em rendimentos. Com R$ 100.000 investidos, você pode receber R$ 700-1.000/mês isentos de IR.

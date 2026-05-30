@@ -5,13 +5,16 @@ category: "impostos"
 locale: "es"
 relatedTerms: ["IOF", "CDI", "Renda Fixa"]
 publishedAt: 2025-05-10
+readingTime: 2
 ---
 
 ## ¿Qué es Impuesto de Renta?
 
+
 El Impuesto de Renta (IR) es un tributo cobrado por el gobierno federal sobre los rendimientos de las personas. Cuanto más ganes, más pagas (sistema progresivo). Todo año, entre marzo y mayo, es preciso hacer la Declaración de IR.
 
 ## Tabela progresiva 2025 (salarios)
+
 
 | Faixa de renda mensal | Alíquota |
 |----------------------|----------|
@@ -23,7 +26,9 @@ El Impuesto de Renta (IR) es un tributo cobrado por el gobierno federal sobre lo
 
 ## IR sobre inversiones
 
+
 ### Tabela regresiva (renta fija, fondos)
+
 | Plazo | Alíquota |
 |-------|----------|
 | Hasta 180 días | 22,5% |
@@ -32,6 +37,7 @@ El Impuesto de Renta (IR) es un tributo cobrado por el gobierno federal sobre lo
 | Por encima de 720 días | 15% |
 
 ### Inversiones exentas de IR
+
 - Poupança
 - LCI y LCA
 - Dividendos de acciones
@@ -39,6 +45,8 @@ El Impuesto de Renta (IR) es un tributo cobrado por el gobierno federal sobre lo
 - Venta de acciones hasta R$ 20.000/mes
 
 ## Consejos para pagar menos IR (legalmente)
+
+
 
 1. Invierte en LCI/LCA (exentos)
 2. Mantén inversiones por más de 2 años (alíquota menor)

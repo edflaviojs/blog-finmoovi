@@ -5,25 +5,31 @@ category: "investimentos"
 locale: "en"
 relatedTerms: ["Renda Fixa", "CDI", "Tesouro Direto"]
 publishedAt: 2025-05-10
+readingTime: 2
 ---
 
 ## What are Debentures?
+
 
 Debentures are debt securities issued by companies. When you buy a debenture, you are lending money to the company — and they pay you interest for it. It's like a CDB, but issued by companies (not banks).
 
 ## Types
 
+
 ### Common Debentures
+
 - Taxed by IR (regressive table)
 - No FGC guarantee
 - Yield generally CDI + spread
 
 ### Incentivized Debentures
+
 - **Exempt from IR** for individuals
 - Finance infrastructure projects
 - Yield: IPCA + fixed rate
 
 ## Advantages
+
 
 - Yield is generally higher than CDB and Treasury
 - Incentivized debentures are exempt from IR
@@ -32,19 +38,23 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 
 ## Risks
 
+
 - **Credit risk:** company may not pay (no FGC)
 - **Liquidity risk:** it may be difficult to sell before maturity
 - **Market risk:** price may fluctuate if sold before
 
 ## How to Evaluate
 
+
 Before investing, check:
+
 1. **Company rating** (credit score: AAA is the best)
 2. **Company sector** (stable sectors are safer)
 3. **Guarantees** (real, floating, unsecured)
 4. **Term** (the longer, the higher the risk)
 
 ## For Whom is it Indicated
+
 
 - Investors with assets over R$ 50,000
 - Those who already have Treasury and CDB and want to diversify

@@ -148,7 +148,7 @@ async function processInlineImages(content, slugBase) {
 /**
  * Save a post file with frontmatter
  */
-function savePost(slug, data) {
+function savePost(slug, data, isFeatured = false) {
   const frontmatter = `---
 title: "${data.title.replace(/"/g, '\\"')}"
 description: "${data.meta.replace(/"/g, '\\"')}"
@@ -159,7 +159,7 @@ tags: ${JSON.stringify(data.keywords || [])}
 author: "FinMoovi"
 publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
-featured: false
+featured: ${isFeatured}
 seo:
   metaTitle: "${data.title.replace(/"/g, '\\"')}"
   metaDescription: "${data.meta.replace(/"/g, '\\"')}"
@@ -224,7 +224,7 @@ async function main() {
       imagePath,
       locale: 'pt',
       today,
-    });
+    }, true); // Mark PT post as featured
     console.log(`📄 PT salvo: ${ptPath}`);
 
     // 5. Translate to EN

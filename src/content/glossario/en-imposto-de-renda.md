@@ -5,13 +5,16 @@ category: "impostos"
 locale: "en"
 relatedTerms: ["IOF", "CDI", "Renda Fixa"]
 publishedAt: 2025-05-10
+readingTime: 2
 ---
 
 ## What is Income Tax?
 
+
 The Income Tax (IR) is a tax levied by the federal government on individuals' income. The more you earn, the more you pay (progressive system). Every year, between March and May, you need to file your Income Tax Return.
 
 ## Progressive Table 2025 (salaries)
+
 
 | Monthly Income Range | Tax Rate |
 |----------------------|----------|
@@ -23,7 +26,9 @@ The Income Tax (IR) is a tax levied by the federal government on individuals' in
 
 ## Income Tax on Investments
 
+
 ### Regressive Table (fixed income, funds)
+
 | Term | Tax Rate |
 |-------|----------|
 | Up to 180 days | 22.5% |
@@ -32,6 +37,7 @@ The Income Tax (IR) is a tax levied by the federal government on individuals' in
 | Above 720 days | 15% |
 
 ### Income Tax-Exempt Investments
+
 - Savings account
 - LCI and LCA
 - Stock dividends
@@ -39,6 +45,8 @@ The Income Tax (IR) is a tax levied by the federal government on individuals' in
 - Sale of stocks up to R$ 20,000/month
 
 ## Tips to Pay Less Income Tax (legally)
+
+
 
 1. Invest in LCI/LCA (exempt)
 2. Keep investments for more than 2 years (lower tax rate)

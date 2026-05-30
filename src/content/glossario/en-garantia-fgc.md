@@ -5,13 +5,16 @@ category: "basico"
 locale: "en"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
+readingTime: 1
 ---
 
 ## What is a FGC Guarantee?
 
+
 The FGC (Fundo Garantidor de Créditos) is like an insurance for your investments in banks. If the bank goes bankrupt, the FGC returns your money — up to R$ 250,000 per CPF per financial institution.
 
 ## What is covered
+
 
 - CDB (Certificado de Depósito Bancário)
 - LCI and LCA
@@ -22,6 +25,7 @@ The FGC (Fundo Garantidor de Créditos) is like an insurance for your investment
 
 ## What is NOT covered
 
+
 - Stocks
 - Investment funds
 - Debentures
@@ -31,10 +35,12 @@ The FGC (Fundo Garantidor de Créditos) is like an insurance for your investment
 
 ## Limits
 
+
 - **R$ 250,000** per CPF per institution
 - **R$ 1,000,000** in total (global ceiling, renewed every 4 years)
 
 ## Practical strategy
+
 
 If you have R$ 500,000 to invest in CDB:
 - Put R$ 250,000 in Bank A
@@ -42,5 +48,6 @@ If you have R$ 500,000 to invest in CDB:
 - Both are 100% covered by the FGC
 
 ## Important tip
+
 
 Smaller banks usually pay higher rates (120-130% of CDI) precisely because they are less well-known. With the FGC guarantee, the risk is virtually the same as a large bank — but the return is higher.

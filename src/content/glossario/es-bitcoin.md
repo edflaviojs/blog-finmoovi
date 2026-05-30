@@ -5,13 +5,16 @@ category: "investimentos"
 locale: "es"
 relatedTerms: ["Criptomoedas", "Blockchain", "Renda Variável"]
 publishedAt: 2025-05-10
+readingTime: 1
 ---
 
 ## ¿Qué es Bitcoin?
 
+
 Bitcoin (BTC) es la primera y más conocida criptomoneda del mundo. Fue creada en 2009 por una persona (o grupo) bajo el seudónimo Satoshi Nakamoto. Funciona de forma descentralizada — sin bancos, sin gobierno controlando.
 
 ## ¿Cómo funciona?
+
 
 - Transacciones son registradas en un libro público llamado **blockchain**
 - No existe un "banco central" del Bitcoin
@@ -19,6 +22,7 @@ Bitcoin (BTC) es la primera y más conocida criptomoneda del mundo. Fue creada e
 - Nuevas unidades son creadas por "mineração" (computadoras resolviendo problemas matemáticos)
 
 ## Bitcoin como inversión
+
 
 | Ventaja | Desventaja |
 |----------|-------------|
@@ -29,9 +33,12 @@ Bitcoin (BTC) es la primera y más conocida criptomoneda del mundo. Fue creada e
 
 ## ¿Cuánto invertir?
 
+
 La recomendación general es: **no más del 5% de su patrimonio** en criptomonedas. Nunca invierta dinero que usted no pueda perder. Bitcoin es altamente volátil.
 
 ## ¿Cómo comprar en Brasil?
+
+
 
 1. Abra cuenta en una exchange (Mercado Bitcoin, Binance, Foxbit)
 2. Haga un depósito vía PIX

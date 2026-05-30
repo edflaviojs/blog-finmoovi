@@ -5,21 +5,26 @@ category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Diversificação"]
 publishedAt: 2025-05-10
 locale: "pt"
+readingTime: 2
 ---
 
 ## O que é Patrimônio Líquido?
+
 
 Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem menos tudo que você deve. É o número mais importante das suas finanças pessoais — mostra sua riqueza real.
 
 ## Como calcular
 
+
 ### Seus Ativos (o que você tem)
+
 - Dinheiro em conta e investimentos
 - Imóveis (valor de mercado)
 - Veículos (valor de mercado)
 - Outros bens de valor
 
 ### Seus Passivos (o que você deve)
+
 - Financiamento imobiliário (saldo devedor)
 - Financiamento de veículo
 - Empréstimos pessoais
@@ -27,6 +32,7 @@ Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem
 - Outras dívidas
 
 ### Exemplo
+
 
 | Ativos | Valor |
 |--------|-------|
@@ -45,12 +51,14 @@ Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem
 
 ## Por que acompanhar
 
+
 - Mostra se você está enriquecendo ou empobrecendo
 - Permite definir metas concretas (ex: "quero R$ 1 milhão em patrimônio")
 - Revela se suas dívidas estão sob controle
 - É mais importante que salário (renda alta com dívidas altas = patrimônio baixo)
 
 ## Meta de patrimônio por idade (referência)
+
 
 - 30 anos: 1x seu salário anual
 - 40 anos: 3x seu salário anual

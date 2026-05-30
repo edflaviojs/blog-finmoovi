@@ -6,13 +6,15 @@ import PostGrid from '@components/posts/PostGrid.astro';
 import Sidebar from '@components/sidebar/Sidebar.astro';
 import { getCollection } from 'astro:content';
 
-const allPosts = await getCollection('posts', ({ data }) => !data.draft && (!data.locale || data.locale === 'pt'));
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
 const sortedPosts = allPosts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
 const featuredPosts = sortedPosts.filter(p => p.data.featured);
 const recentPosts = sortedPosts.slice(0, 9);
 
-const heroPost = featuredPosts[0] || sortedPosts[0];
-const secondaryPosts = featuredPosts.length > 1 ? featuredPosts.slice(1, 4) : sortedPosts.slice(1, 4);
+// Filter posts for current locale (pt)
+const ptPosts = recentPosts.filter(p => !p.data.locale || p.data.locale === 'pt');
+const heroPost = ptPosts[0] || sortedPosts[0];
+const secondaryPosts = ptPosts.slice(1, 4);
 
 const postsForGrid = recentPosts.map(post => ({
   title: post.data.title,

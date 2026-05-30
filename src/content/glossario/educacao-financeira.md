@@ -5,33 +5,40 @@ category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]
 publishedAt: 2025-05-10
 locale: "pt"
+readingTime: 2
 ---
 
 ## O que é Educação Financeira?
+
 
 Educação financeira é aprender a lidar com dinheiro de forma inteligente. Não é sobre ficar rico rápido — é sobre entender como o dinheiro funciona para tomar melhores decisões no dia a dia.
 
 ## Os 4 pilares
 
+
 ### 1. Ganhar
+
 - Desenvolver habilidades que o mercado valoriza
 - Negociar salário
 - Criar fontes de renda extra
 - Empreender
 
 ### 2. Gastar
+
 - Diferenciar necessidades de desejos
 - Pesquisar antes de comprar
 - Evitar compras por impulso
 - Usar a regra das 48h (esperar antes de comprar)
 
 ### 3. Poupar
+
 - Pagar-se primeiro (separar antes de gastar)
 - Automatizar transferências para investimentos
 - Ter metas claras de economia
 - Reserva de emergência como prioridade
 
 ### 4. Investir
+
 - Entender risco vs. retorno
 - Começar cedo (juros compostos)
 - Diversificar
@@ -39,9 +46,12 @@ Educação financeira é aprender a lidar com dinheiro de forma inteligente. Nã
 
 ## Por que a escola não ensina
 
+
 Infelizmente, educação financeira não é prioridade no currículo escolar brasileiro. A maioria das pessoas aprende sobre dinheiro por tentativa e erro — geralmente depois de cometer erros caros.
 
 ## Como começar
+
+
 
 1. Anote todos os seus gastos por 30 dias
 2. Monte um orçamento simples

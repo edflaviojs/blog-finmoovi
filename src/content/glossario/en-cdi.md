@@ -5,17 +5,21 @@ category: "investimentos"
 locale: "en"
 relatedTerms: ["Selic", "CDB", "Renda Fixa"]
 publishedAt: 2025-05-10
+readingTime: 1
 ---
 
 ## What is CDI?
+
 
 The CDI (Certificado de Depósito Interbancário) is the interest rate used in loans between banks. In practice, it is the reference for most fixed-income investments in Brazil.
 
 ## CDI vs Selic
 
+
 The CDI closely follows the Selic rate (usually 0.10% below). If the Selic is at 14.75%, the CDI is around 14.65%.
 
 ## Why does it matter?
+
 
 When an investment yields "100% of the CDI", it means it pays exactly the CDI rate. Examples:
 - **100% CDI** = standard yield
@@ -23,6 +27,7 @@ When an investment yields "100% of the CDI", it means it pays exactly the CDI ra
 - **80% CDI** = below average (bad, like a savings account)
 
 ## How much does it yield?
+
 
 With CDI at 14.65% per year:
 - R$ 1,000 invested = ~R$ 146.50/year (gross)

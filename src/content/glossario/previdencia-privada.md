@@ -5,13 +5,16 @@ category: "investimentos"
 relatedTerms: ["Imposto de Renda", "Tesouro Direto", "Renda Fixa"]
 publishedAt: 2025-05-10
 locale: "pt"
+readingTime: 2
 ---
 
 ## O que é Previdência Privada?
 
+
 Previdência Privada é um investimento de longo prazo pensado para a aposentadoria. Você contribui mensalmente e, no futuro, resgata o valor acumulado (com rendimentos). É um complemento à aposentadoria do INSS.
 
 ## PGBL vs. VGBL
+
 
 | | PGBL | VGBL |
 |--|------|------|
@@ -21,10 +24,13 @@ Previdência Privada é um investimento de longo prazo pensado para a aposentado
 
 ## Tabelas de tributação
 
+
 ### Progressiva (melhor para resgates pequenos)
+
 - Mesma tabela do salário (0% a 27,5%)
 
 ### Regressiva (melhor para longo prazo)
+
 | Prazo | Alíquota |
 |-------|----------|
 | Até 2 anos | 35% |
@@ -36,6 +42,7 @@ Previdência Privada é um investimento de longo prazo pensado para a aposentado
 
 ## Vantagens
 
+
 - Benefício fiscal (PGBL)
 - Não entra em inventário (planejamento sucessório)
 - Disciplina de investimento mensal
@@ -43,11 +50,13 @@ Previdência Privada é um investimento de longo prazo pensado para a aposentado
 
 ## Desvantagens
 
+
 - Taxas de administração altas (muitos fundos cobram 1-2%)
 - Taxa de carregamento (alguns cobram na entrada)
 - Rendimento pode ser inferior a investir por conta própria
 - Pouca flexibilidade
 
 ## Dica
+
 
 Se for fazer previdência, escolha fundos com taxa de administração abaixo de 1% e sem taxa de carregamento. Bancos tradicionais costumam cobrar caro — prefira corretoras independentes.

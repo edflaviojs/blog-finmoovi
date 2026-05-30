@@ -5,13 +5,17 @@ category: "mercado"
 locale: "es"
 relatedTerms: ["Ações", "Renda Variável", "Ibovespa"]
 publishedAt: 2025-05-10
+readingTime: 1
 ---
 
 ## ¿Qué es la Bolsa de Valores?
 
+
 La Bolsa de Valores es como un mercado donde empresas venden pedazos de sí mismas (acciones) e inversores compran y venden esos pedazos entre sí. En Brasil, la bolsa se llama **B3** (Brasil, Bolsa, Balcão).
 
 ## ¿Cómo funciona?
+
+
 
 1. Empresas abren capital (IPO) para captar dinero
 2. Inversores compran acciones de esas empresas
@@ -20,6 +24,7 @@ La Bolsa de Valores es como un mercado donde empresas venden pedazos de sí mism
 
 ## Horario de funcionamiento
 
+
 La B3 funciona de lunes a viernes:
 - **Pré-abertura:** 9:45 a 10:00
 - **Pregão regular:** 10:00 a 17:00
@@ -27,10 +32,12 @@ La B3 funciona de lunes a viernes:
 
 ## Principales índices
 
+
 - **Ibovespa:** índice con las acciones más negociadas de Brasil
 - **IFIX:** índice de fondos inmobiliarios
 - **S&P 500:** principal índice de los EE. UU.
 
 ## ¿Cómo invertir en la bolsa?
+
 
 Necesitas una cuenta en una corredora de valores. La mayoría no cobra tarifa para abrir cuenta. Con R$ 100 ya es posible comprar acciones fraccionarias.

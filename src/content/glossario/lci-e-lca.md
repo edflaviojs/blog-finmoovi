@@ -5,13 +5,16 @@ category: "investimentos"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 locale: "pt"
+readingTime: 2
 ---
 
 ## O que são LCI e LCA?
 
+
 LCI (Letra de Crédito Imobiliário) e LCA (Letra de Crédito do Agronegócio) são investimentos de renda fixa emitidos por bancos. A grande vantagem: são **isentos de Imposto de Renda** para pessoa física.
 
 ## Diferença entre LCI e LCA
+
 
 A única diferença é o destino do dinheiro:
 - **LCI:** banco usa para financiar o setor imobiliário
@@ -21,6 +24,7 @@ Para o investidor, funcionam da mesma forma.
 
 ## Vantagens
 
+
 - Isenção de IR (rendimento líquido maior)
 - Proteção do FGC até R$ 250.000
 - Rendimento geralmente atrelado ao CDI (85-100%)
@@ -28,11 +32,13 @@ Para o investidor, funcionam da mesma forma.
 
 ## Desvantagens
 
+
 - Carência mínima de 90 dias (não pode resgatar antes)
 - Investimento mínimo geralmente maior (R$ 1.000-5.000)
 - Menos opções disponíveis que CDB
 
 ## LCI/LCA vs. CDB
+
 
 Uma LCI que paga 85% do CDI pode render mais que um CDB de 100% do CDI, por causa da isenção de IR:
 
@@ -45,6 +51,7 @@ Uma LCI que paga 85% do CDI pode render mais que um CDB de 100% do CDI, por caus
 Neste exemplo, rendem igual. Mas uma LCI de 90% do CDI já ganha do CDB de 100%.
 
 ## Quando investir em LCI/LCA
+
 
 - Quando não vai precisar do dinheiro por pelo menos 90 dias
 - Para diversificar a renda fixa

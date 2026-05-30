@@ -5,13 +5,16 @@ category: "investimentos"
 locale: "en"
 relatedTerms: ["Criptomoedas", "Blockchain", "Renda Variável"]
 publishedAt: 2025-05-10
+readingTime: 1
 ---
 
 ## What is Bitcoin?
 
+
 Bitcoin (BTC) is the first and most well-known cryptocurrency in the world. It was created in 2009 by a person (or group) under the pseudonym Satoshi Nakamoto. It works in a decentralized manner — without banks, without government control.
 
 ## How does it work?
+
 
 - Transactions are recorded in a public book called **blockchain**
 - There is no "central bank" of Bitcoin
@@ -19,6 +22,7 @@ Bitcoin (BTC) is the first and most well-known cryptocurrency in the world. It w
 - New units are created by "mining" (computers solving mathematical problems)
 
 ## Bitcoin as an investment
+
 
 | Advantage | Disadvantage |
 |----------|-------------|
@@ -29,9 +33,12 @@ Bitcoin (BTC) is the first and most well-known cryptocurrency in the world. It w
 
 ## How much to invest?
 
+
 The general recommendation is: **up to 5% of your assets** in cryptocurrencies. Never invest money that you cannot afford to lose. Bitcoin is highly volatile.
 
 ## How to buy in Brazil
+
+
 
 1. Open an account at an exchange (Mercado Bitcoin, Binance, Foxbit)
 2. Make a deposit via PIX
