@@ -1,38 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
   <rect width="1200" height="630" fill="#0d1117"/>
-  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <!-- Pie chart segments -->
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
   <defs>
-    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00F0FF"/>
-      <stop offset="100%" stop-color="#00D4E8"/>
+      <stop offset="100%" stop-color="#A91079"/>
     </linearGradient>
-    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#A91079"/>
-      <stop offset="100%" stop-color="#bc8cff"/>
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
     </linearGradient>
   </defs>
-  <!-- 50% arc -->
-  <circle cx="450" cy="340" r="160" fill="none" stroke="url(#g1)" stroke-width="40" stroke-dasharray="502 502" stroke-dashoffset="0" transform="rotate(-90 450 340)"/>
-  <!-- 30% arc -->
-  <circle cx="450" cy="340" r="160" fill="none" stroke="url(#g2)" stroke-width="40" stroke-dasharray="301 703" stroke-dashoffset="-502" transform="rotate(-90 450 340)"/>
-  <!-- 20% arc -->
-  <circle cx="450" cy="340" r="160" fill="none" stroke="#3fb950" stroke-width="40" stroke-dasharray="201 803" stroke-dashoffset="-803" transform="rotate(-90 450 340)"/>
-  <!-- Center -->
-  <circle cx="450" cy="340" r="100" fill="#0d1117"/>
-  <text x="450" y="330" font-family="JetBrains Mono, monospace" font-size="28" font-weight="700" fill="#f0f6fc" text-anchor="middle">50-30-20</text>
-  <text x="450" y="360" font-family="Inter, sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">Regra de Ouro</text>
-  <!-- Legend -->
-  <rect x="700" y="220" width="16" height="16" rx="4" fill="#00F0FF"/>
-  <text x="726" y="234" font-family="Inter, sans-serif" font-size="16" fill="#f0f6fc">50% Necessidades</text>
-  <rect x="700" y="270" width="16" height="16" rx="4" fill="#A91079"/>
-  <text x="726" y="284" font-family="Inter, sans-serif" font-size="16" fill="#f0f6fc">30% Desejos</text>
-  <rect x="700" y="320" width="16" height="16" rx="4" fill="#3fb950"/>
-  <text x="726" y="334" font-family="Inter, sans-serif" font-size="16" fill="#f0f6fc">20% Objetivos</text>
-  <!-- Title -->
-  <text x="140" y="120" font-family="Inter, sans-serif" font-size="36" font-weight="700" fill="#f0f6fc">Regra 50-30-20</text>
-  <text x="140" y="160" font-family="Inter, sans-serif" font-size="20" fill="#8b949e">O guia completo para organizar suas finanças</text>
-  <!-- Badge -->
-  <rect x="700" y="400" width="80" height="28" rx="14" fill="rgba(0,240,255,0.1)"/>
-  <text x="716" y="419" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#00F0FF">Dicas</text>
+  
+  <circle cx="1020" cy="94.5" r="73.3173771109432" fill="#00F0FF" opacity="0.03"/>
+  <circle cx="180" cy="504" r="67.43373373057693" fill="#A91079" opacity="0.04"/>
+  <path d="M140 284 L220 261 L300 256 L380 239 L460 252 L540 272 L620 291 L700 322 L780 320 L860 323 L940 326 L1020 344 L1060 530 L140 530 Z" fill="#00F0FF" opacity="0.15"/>
+  <path d="M140 284 L220 261 L300 256 L380 239 L460 252 L540 272 L620 291 L700 322 L780 320 L860 323 L940 326 L1020 344" stroke="#00F0FF" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M140 331 L220 337 L300 351 L380 376 L460 386 L540 414 L620 391 L700 376 L780 387 L860 413 L940 414 L1020 412 L1060 530 L140 530 Z" fill="#A91079" opacity="0.12"/>
+  <path d="M140 331 L220 337 L300 351 L380 376 L460 386 L540 414 L620 391 L700 376 L780 387 L860 413 L940 414 L1020 412" stroke="#A91079" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M140 410 L220 385 L300 413 L380 403 L460 412 L540 395 L620 424 L700 437 L780 453 L860 476 L940 479 L1020 462 L1060 530 L140 530 Z" fill="#8B949E" opacity="0.09"/>
+  <path d="M140 410 L220 385 L300 413 L380 403 L460 412 L540 395 L620 424 L700 437 L780 453 L860 476 L940 479 L1020 462" stroke="#8B949E" stroke-width="2" fill="none" opacity="0.8"/>
 </svg>

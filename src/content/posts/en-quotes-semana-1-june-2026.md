@@ -1,7 +1,7 @@
 ---
 title: "Weekly Summary: Dollar at R$ 5.03 — Week 1 of june"
 description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 1 of june 2026."
-image: ""
+image: "/images/posts/en-quotes-semana-1-june-2026.svg"
 category: "cotacoes"
 tags: ["quotes","dollar","euro","financial market","selic"]
 author: "FinMoovi"

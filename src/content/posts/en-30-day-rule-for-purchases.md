@@ -1,7 +1,7 @@
 ---
 title: "30-Day Rule for Purchases"
 description: "Learn to control impulse spending with the 30-day rule for purchases and save money."
-image: ""
+image: "/images/posts/en-30-day-rule-for-purchases.svg"
 category: "dicas"
 locale: "en"
 tags: ["how to use the 30-day rule for purchases","personal finance","economy","money"]

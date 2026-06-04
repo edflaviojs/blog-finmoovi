@@ -1,7 +1,7 @@
 ---
 title: "Regra dos 30 Dias para Compras"
 description: "Aprenda a controlar gastos impulsivos com a regra dos 30 dias para compras e economize dinheiro."
-image: ""
+image: "/images/posts/regra-dos-30-dias-para-compras.svg"
 category: "dicas"
 locale: "pt"
 tags: ["como usar a regra dos 30 dias para compras","finanças pessoais","economia","dinheiro"]
