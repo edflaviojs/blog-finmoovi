@@ -135,7 +135,12 @@ ${ptPost.content}
 `, 'utf-8');
 
     // Gerar versões em inglês e espanhol (texto apenas, reutiliza imagem)
+    console.log('⏳ Aguardando 30s para evitar rate limit...');
+    await new Promise(r => setTimeout(r, 30000));
     const enPost = await generateGlossaryTerm(selectedTerm, 'en');
+
+    console.log('⏳ Aguardando 30s para evitar rate limit...');
+    await new Promise(r => setTimeout(r, 30000));
     const esPost = await generateGlossaryTerm(selectedTerm, 'es');
 
     // Criar arquivos EN e ES com mesma imagem

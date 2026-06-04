@@ -79,45 +79,55 @@ export function generateContentImages(topic, headings) {
 }
 
 /**
- * Generate text content using Groq
+ * Generate text content using Groq (with retry on rate limit)
  */
 export async function generateText(prompt, options = {}) {
   const {
     maxTokens = 4000,
     temperature = 0.7,
-    model = 'llama-3.3-70b-versatile'
+    model = 'llama-3.3-70b-versatile',
+    retries = 3,
   } = options;
 
-  const response = await fetch(`${GROQ_API_BASE}/chat/completions`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${GROQ_API_KEY}`,
-    },
-    body: JSON.stringify({
-      model,
-      messages: [
-        {
-          role: 'system',
-          content: `Você é um redator experiente de finanças pessoais que escreve para brasileiros comuns. Seu estilo é direto, prático e conversacional — como se estivesse explicando para um amigo. Nunca use estruturas genéricas de IA como "Introdução", "Conclusão", "Neste artigo vamos explorar". Nunca comece com "Você já se perguntou" ou "No mundo atual". Vá direto ao ponto. Use exemplos reais com valores em Reais. Escreva como um blog de verdade, não como um artigo acadêmico.`
-        },
-        {
-          role: 'user',
-          content: prompt
-        }
-      ],
-      max_tokens: maxTokens,
-      temperature,
-    }),
-  });
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const response = await fetch(`${GROQ_API_BASE}/chat/completions`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${GROQ_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model,
+        messages: [
+          {
+            role: 'system',
+            content: `Você é um redator experiente de finanças pessoais que escreve para brasileiros comuns. Seu estilo é direto, prático e conversacional — como se estivesse explicando para um amigo. Nunca use estruturas genéricas de IA como "Introdução", "Conclusão", "Neste artigo vamos explorar". Nunca comece com "Você já se perguntou" ou "No mundo atual". Vá direto ao ponto. Use exemplos reais com valores em Reais. Escreva como um blog de verdade, não como um artigo acadêmico.`
+          },
+          {
+            role: 'user',
+            content: prompt
+          }
+        ],
+        max_tokens: maxTokens,
+        temperature,
+      }),
+    });
 
-  if (!response.ok) {
+    if (response.ok) {
+      const data = await response.json();
+      return data.choices?.[0]?.message?.content || '';
+    }
+
+    if (response.status === 429 && attempt < retries) {
+      const retryAfter = Math.ceil(30 * attempt);
+      console.log(`⏳ Rate limit atingido. Aguardando ${retryAfter}s antes de tentar novamente (tentativa ${attempt}/${retries})...`);
+      await new Promise(r => setTimeout(r, retryAfter * 1000));
+      continue;
+    }
+
     const error = await response.text();
     throw new Error(`Groq text generation failed (HTTP ${response.status}): ${error}`);
   }
-
-  const data = await response.json();
-  return data.choices?.[0]?.message?.content || '';
 }
 
 /**

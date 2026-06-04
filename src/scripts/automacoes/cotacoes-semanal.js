@@ -182,6 +182,12 @@ async function main() {
       console.log(`✅ Post salvo: ${postPath}`);
 
       execSync(`git add "${postPath}"`, { stdio: 'inherit' });
+
+      // Wait 30s between locales to avoid Groq rate limit
+      if (locale !== 'es') {
+        console.log('⏳ Aguardando 30s para evitar rate limit...');
+        await new Promise(r => setTimeout(r, 30000));
+      }
     }
 
     // Add image and commit all

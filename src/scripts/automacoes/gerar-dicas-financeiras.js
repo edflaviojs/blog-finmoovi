@@ -227,7 +227,9 @@ async function main() {
     }, true); // Mark PT post as featured
     console.log(`📄 PT salvo: ${ptPath}`);
 
-    // 5. Translate to EN
+    // 5. Translate to EN (wait 30s to avoid rate limit)
+    console.log('⏳ Aguardando 30s para evitar rate limit...');
+    await new Promise(r => setTimeout(r, 30000));
     console.log('🌐 Traduzindo para inglês...');
     const enPost = await translatePost({
       title: post.title,
@@ -248,7 +250,9 @@ async function main() {
     });
     console.log(`📄 EN salvo: ${enPath}`);
 
-    // 6. Translate to ES
+    // 6. Translate to ES (wait 30s to avoid rate limit)
+    console.log('⏳ Aguardando 30s para evitar rate limit...');
+    await new Promise(r => setTimeout(r, 30000));
     console.log('🌐 Traduzindo para espanhol...');
     const esPost = await translatePost({
       title: post.title,
