@@ -106,7 +106,8 @@ async function main() {
     const sharedImage = ptPost.image;
 
     // Criar arquivo PT
-    const ptFilename = sanitizeFilename(`${selectedTerm.toLowerCase().replace(/\s+/g, '-')}.md`);
+    const ptSlug = sanitizeFilename(selectedTerm.toLowerCase().replace(/\s+/g, '-'));
+    const ptFilename = `${ptSlug}.md`;
     const ptPath = join(GLOSSARIO_DIR, ptFilename);
     writeFileSync(ptPath, `---
 term: "${selectedTerm}"
@@ -144,8 +145,10 @@ ${ptPost.content}
     const esPost = await generateGlossaryTerm(selectedTerm, 'es');
 
     // Criar arquivos EN e ES com mesma imagem
-    const enFilename = sanitizeFilename(`en-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}.md`);
-    const esFilename = sanitizeFilename(`es-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}.md`);
+    const enSlug = sanitizeFilename(`en-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}`);
+    const esSlug = sanitizeFilename(`es-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}`);
+    const enFilename = `${enSlug}.md`;
+    const esFilename = `${esSlug}.md`;
 
     writeFileSync(join(GLOSSARIO_DIR, enFilename), `---
 term: "${selectedTerm}"
