@@ -8,39 +8,53 @@ import { getCollection } from 'astro:content';
 
 // Strictly filter by locale ES only
 const allPosts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'es');
-const sortedPosts = allPosts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+// Sort by date desc, then by slug asc (deterministic tiebreaker)
+const sortedPosts = allPosts.sort((a, b) => {
+  const dateDiff = b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
+  if (dateDiff !== 0) return dateDiff;
+  return a.slug.localeCompare(b.slug);
+});
 
-// Hero: most recent ES post
-const heroPost = sortedPosts[0];
-
-// 3 dynamic cards: latest post (not hero), latest cotação, latest glossário
-const latestPost = sortedPosts.find(p => p.slug !== heroPost?.slug && p.data.category !== 'cotacoes');
+// Hero: most recent post (cotações have priority as "breaking news")
 const latestCotacao = sortedPosts.find(p => p.data.category === 'cotacoes');
+const heroPost = latestCotacao && latestCotacao.data.publishedAt.getTime() === sortedPosts[0]?.data.publishedAt.getTime()
+  ? latestCotacao
+  : sortedPosts[0];
+
+// 3 dynamic cards: latest dica (not hero), latest cotação (if not hero), latest glossário
+const latestDica = sortedPosts.find(p => p.slug !== heroPost?.slug && p.data.category !== 'cotacoes');
+const latestCotacaoCard = latestCotacao?.slug === heroPost?.slug
+  ? sortedPosts.find(p => p.data.category === 'cotacoes' && p.slug !== heroPost?.slug)
+  : latestCotacao;
 
 // Get latest glossário from glossario collection
 const allGlossario = await getCollection('glossario', ({ data }) => data.locale === 'es');
-const sortedGlossario = allGlossario.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const sortedGlossario = allGlossario.sort((a, b) => {
+  const dateDiff = b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
+  if (dateDiff !== 0) return dateDiff;
+  return a.slug.localeCompare(b.slug);
+});
 const latestGlossario = sortedGlossario[0];
 
 // Build secondary cards array (always 3)
 const secondaryCards = [];
-if (latestPost) {
+if (latestDica) {
   secondaryCards.push({
-    title: latestPost.data.title,
-    image: latestPost.data.image,
-    category: latestPost.data.category,
-    href: `/es/posts/${latestPost.slug}`,
-    date: latestPost.data.publishedAt,
+    title: latestDica.data.title,
+    image: latestDica.data.image,
+    category: latestDica.data.category,
+    href: `/es/posts/${latestDica.slug}`,
+    date: latestDica.data.publishedAt,
     type: 'post',
   });
 }
-if (latestCotacao) {
+if (latestCotacaoCard) {
   secondaryCards.push({
-    title: latestCotacao.data.title,
-    image: latestCotacao.data.image,
+    title: latestCotacaoCard.data.title,
+    image: latestCotacaoCard.data.image,
     category: 'cotacoes',
-    href: `/es/posts/${latestCotacao.slug}`,
-    date: latestCotacao.data.publishedAt,
+    href: `/es/posts/${latestCotacaoCard.slug}`,
+    date: latestCotacaoCard.data.publishedAt,
     type: 'cotacao',
   });
 }
