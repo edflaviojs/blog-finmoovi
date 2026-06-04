@@ -1,5 +1,6 @@
 ---
 term: "Nubank"
+image: "/images/glossario/en-nubank.svg"
 definition: "The largest digital bank in Latin America, known for its no-fee credit card and simplified banking services via mobile app."
 category: "basico"
 locale: "en"

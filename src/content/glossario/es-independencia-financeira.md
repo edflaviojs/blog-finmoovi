@@ -1,5 +1,6 @@
 ---
 term: "Independencia Financiera"
+image: "/images/glossario/es-independencia-financeira.svg"
 definition: "El estado donde tus ingresos pasivos cubren todos tus gastos sin necesidad de trabajar."
 category: "basico"
 locale: "es"

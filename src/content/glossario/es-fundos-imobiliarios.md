@@ -1,5 +1,6 @@
 ---
 term: "Fondos Inmobiliarios"
+image: "/images/glossario/es-fundos-imobiliarios.svg"
 definition: "Fondos de inversión que invierten en propiedades inmobiliarias o valores relacionados, distribuyendo ingresos por alquiler a los accionistas."
 category: "investimentos"
 locale: "es"

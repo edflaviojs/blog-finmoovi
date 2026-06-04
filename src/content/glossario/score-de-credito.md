@@ -1,5 +1,6 @@
 ---
 term: "Score de Crédito"
+image: "/images/glossario/score-de-credito.svg"
 definition: "Pontuação de 0 a 1000 que indica a probabilidade de você pagar suas contas em dia. Quanto maior, mais fácil conseguir crédito."
 category: "credito"
 relatedTerms: ["Financiamento", "Juros Compostos", "Cheque Especial"]

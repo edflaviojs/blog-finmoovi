@@ -1,5 +1,6 @@
 ---
 term: "Bolsa de Valores"
+image: "/images/glossario/es-bolsa-de-valores.svg"
 definition: "Un mercado organizado donde se compran y venden acciones, bonos y otros activos financieros. En Brasil, la principal es B3."
 category: "mercado"
 locale: "es"

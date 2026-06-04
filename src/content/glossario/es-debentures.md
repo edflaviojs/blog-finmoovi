@@ -1,5 +1,6 @@
 ---
 term: "Debentures"
+image: "/images/glossario/es-debentures.svg"
 definition: "Títulos de deuda emitidos por empresas para captar capital. El inversor presta dinero a la empresa a cambio de intereses."
 category: "investimentos"
 locale: "es"

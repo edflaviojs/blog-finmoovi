@@ -1,5 +1,6 @@
 ---
 term: "Valor Presente"
+image: "/images/glossario/valor-presente.svg"
 definition: "Quanto vale hoje um dinheiro que você receberá no futuro. Conceito fundamental para avaliar investimentos e comparar opções financeiras."
 category: "mercado"
 relatedTerms: ["Juros Compostos", "Selic", "Tesouro Direto"]

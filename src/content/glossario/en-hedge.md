@@ -1,5 +1,6 @@
 ---
 term: "Hedge"
+image: "/images/glossario/en-hedge.svg"
 definition: "A protection strategy against financial risks. Used to reduce potential losses from adverse price movements."
 category: "mercado"
 locale: "en"

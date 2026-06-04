@@ -1,5 +1,6 @@
 ---
 term: "Financial Bargain Hunting"
+image: "/images/glossario/en-xepa-financeira.svg"
 definition: "The practice of seeking discounts, promotions, and the best prices before buying. A smart strategy for saving money."
 category: "basico"
 locale: "en"

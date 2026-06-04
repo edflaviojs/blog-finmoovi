@@ -1,5 +1,6 @@
 ---
 term: "Wealth Management"
+image: "/images/glossario/wealth-management.svg"
 definition: "Gestão de patrimônio. Serviço financeiro completo que inclui investimentos, planejamento tributário, sucessório e proteção patrimonial."
 category: "investimentos"
 relatedTerms: ["Patrimônio Líquido", "Diversificação", "Previdência Privada"]

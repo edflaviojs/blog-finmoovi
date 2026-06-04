@@ -1,5 +1,6 @@
 ---
 term: "Acciones"
+image: "/images/glossario/es-acoes.svg"
 definition: "Pequeñas fracciones del capital de una empresa. Al comprar acciones, te conviertes en socio de esa empresa y participas de sus ganancias (o pérdidas)."
 category: "investimentos"
 locale: "es"

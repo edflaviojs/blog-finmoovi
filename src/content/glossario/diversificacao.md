@@ -1,5 +1,6 @@
 ---
 term: "Diversificação"
+image: "/images/glossario/diversificacao.svg"
 definition: "Estratégia de distribuir investimentos entre diferentes ativos para reduzir riscos. Não colocar todos os ovos na mesma cesta."
 category: "investimentos"
 relatedTerms: ["Renda Fixa", "Renda Variável", "ETF"]

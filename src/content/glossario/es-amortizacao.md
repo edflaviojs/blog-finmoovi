@@ -1,5 +1,6 @@
 ---
 term: "Amortización"
+image: "/images/glossario/es-amortizacao.svg"
 definition: "La reducción gradual de una deuda mediante pagos periódicos que cubren tanto el capital como los intereses."
 category: "credito"
 locale: "es"

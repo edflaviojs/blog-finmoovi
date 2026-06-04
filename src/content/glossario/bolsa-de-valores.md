@@ -1,5 +1,6 @@
 ---
 term: "Bolsa de Valores"
+image: "/images/glossario/bolsa-de-valores.svg"
 definition: "Mercado organizado onde são negociadas ações, fundos e outros ativos financeiros. No Brasil, a bolsa é a B3 (Brasil, Bolsa, Balcão)."
 category: "mercado"
 relatedTerms: ["Ações", "Renda Variável", "Ibovespa"]

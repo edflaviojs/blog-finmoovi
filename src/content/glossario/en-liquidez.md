@@ -1,5 +1,6 @@
 ---
 term: "Liquidity"
+image: "/images/glossario/en-liquidez.svg"
 definition: "The ease and speed with which an asset can be converted into cash without significant loss of value."
 category: "investimentos"
 locale: "en"

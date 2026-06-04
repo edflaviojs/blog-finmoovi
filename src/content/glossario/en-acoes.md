@@ -1,5 +1,6 @@
 ---
 term: "Stocks"
+image: "/images/glossario/en-acoes.svg"
 definition: "Small fractions of a company's capital. By buying stocks, you become a partner in that company and share in its profits (or losses)."
 category: "investimentos"
 locale: "en"

@@ -1,5 +1,6 @@
 ---
 term: "Credit Score"
+image: "/images/glossario/en-score-de-credito.svg"
 definition: "A numerical score that indicates the probability of a person paying their bills on time. Ranges from 0 to 1000 in Brazil."
 category: "credito"
 locale: "en"

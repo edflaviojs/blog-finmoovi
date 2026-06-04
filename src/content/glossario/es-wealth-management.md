@@ -1,5 +1,6 @@
 ---
 term: "Wealth Management"
+image: "/images/glossario/es-wealth-management.svg"
 definition: "Servicio profesional de asesoría financiera para personas de alto patrimonio, cubriendo inversiones, planificación fiscal y patrimonial."
 category: "investimentos"
 locale: "es"

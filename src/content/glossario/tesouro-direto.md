@@ -1,5 +1,6 @@
 ---
 term: "Tesouro Direto"
+image: "/images/glossario/tesouro-direto.svg"
 definition: "Programa do governo federal que permite pessoas físicas investirem em títulos públicos a partir de R$ 30. É um dos investimentos mais seguros do Brasil."
 category: "investimentos"
 relatedTerms: ["Selic", "IPCA", "Renda Fixa"]

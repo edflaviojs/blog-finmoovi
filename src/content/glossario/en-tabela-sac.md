@@ -1,5 +1,6 @@
 ---
 term: "SAC Amortization Table"
+image: "/images/glossario/en-tabela-sac.svg"
 definition: "Constant Amortization System. A loan repayment method where installments decrease over time as the principal is reduced."
 category: "credito"
 locale: "en"

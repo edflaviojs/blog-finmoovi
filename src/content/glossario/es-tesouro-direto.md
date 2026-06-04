@@ -1,5 +1,6 @@
 ---
 term: "Tesoro Directo"
+image: "/images/glossario/es-tesouro-direto.svg"
 definition: "Un programa que permite a personas comprar bonos del gobierno brasileño directamente. Una de las inversiones más seguras disponibles."
 category: "investimentos"
 locale: "es"

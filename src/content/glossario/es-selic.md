@@ -1,5 +1,6 @@
 ---
 term: "Tasa Selic"
+image: "/images/glossario/es-selic.svg"
 definition: "La tasa de interés básica de Brasil, establecida por el Banco Central. Influye en todas las demás tasas de interés de la economía."
 category: "basico"
 locale: "es"

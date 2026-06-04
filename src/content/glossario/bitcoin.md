@@ -1,5 +1,6 @@
 ---
 term: "Bitcoin"
+image: "/images/glossario/bitcoin.svg"
 definition: "Criptomoeda descentralizada criada em 2009. Funciona sem bancos ou governos, usando tecnologia blockchain para registrar transações."
 category: "investimentos"
 relatedTerms: ["Criptomoedas", "Blockchain", "Renda Variável"]

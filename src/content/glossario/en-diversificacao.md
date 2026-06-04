@@ -1,5 +1,6 @@
 ---
 term: "Diversification"
+image: "/images/glossario/en-diversificacao.svg"
 definition: "The strategy of spreading investments across different assets to reduce risk. The principle of not putting all eggs in one basket."
 category: "investimentos"
 locale: "en"

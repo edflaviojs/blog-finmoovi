@@ -1,5 +1,6 @@
 ---
 term: "LCI e LCA"
+image: "/images/glossario/lci-e-lca.svg"
 definition: "Letras de Crédito Imobiliário e do Agronegócio. Investimentos de renda fixa isentos de Imposto de Renda para pessoa física."
 category: "investimentos"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]

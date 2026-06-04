@@ -1,5 +1,6 @@
 ---
 term: "Renta Fija"
+image: "/images/glossario/es-renda-fixa.svg"
 definition: "Inversiones donde las reglas de retorno se definen al momento de la compra. Ejemplos: CDB, bonos del Tesoro, LCI, LCA."
 category: "investimentos"
 locale: "es"

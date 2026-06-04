@@ -1,5 +1,6 @@
 ---
 term: "Personal Budget"
+image: "/images/glossario/en-orcamento-pessoal.svg"
 definition: "A financial plan that organizes income and expenses, helping you understand where your money goes and how to save more."
 category: "basico"
 locale: "en"

@@ -1,5 +1,6 @@
 ---
 term: "Liquidez"
+image: "/images/glossario/es-liquidez.svg"
 definition: "La facilidad y rapidez con la que un activo puede convertirse en efectivo sin pérdida significativa de valor."
 category: "investimentos"
 locale: "es"

@@ -1,5 +1,6 @@
 ---
 term: "Tabla SAC"
+image: "/images/glossario/es-tabela-sac.svg"
 definition: "Sistema de Amortización Constante. Un método de pago de préstamos donde las cuotas disminuyen con el tiempo a medida que se reduce el capital."
 category: "credito"
 locale: "es"

@@ -1,5 +1,6 @@
 ---
 term: "Xepa Financeira"
+image: "/images/glossario/xepa-financeira.svg"
 definition: "Estratégia de economia que consiste em comprar produtos com desconto no final do dia em feiras, padarias e supermercados. Pode economizar 30-70% em alimentos."
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Poupança", "Reserva de Emergência"]

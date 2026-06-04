@@ -1,5 +1,6 @@
 ---
 term: "Real Estate Funds (REITs)"
+image: "/images/glossario/en-fundos-imobiliarios.svg"
 definition: "Investment funds that invest in real estate properties or real estate-related securities, distributing rental income to shareholders."
 category: "investimentos"
 locale: "en"

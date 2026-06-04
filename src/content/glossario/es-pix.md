@@ -1,5 +1,6 @@
 ---
 term: "PIX"
+image: "/images/glossario/es-pix.svg"
 definition: "El sistema de pagos instantáneos de Brasil creado por el Banco Central. Permite transferencias gratuitas 24/7 entre cualquier cuenta bancaria."
 category: "basico"
 locale: "es"

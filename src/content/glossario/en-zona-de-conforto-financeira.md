@@ -1,5 +1,6 @@
 ---
 term: "Financial Comfort Zone"
+image: "/images/glossario/en-zona-de-conforto-financeira.svg"
 definition: "The state where a person has enough resources to cover expenses and maintain their lifestyle without financial stress."
 category: "basico"
 locale: "en"

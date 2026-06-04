@@ -1,5 +1,6 @@
 ---
 term: "Volatility"
+image: "/images/glossario/en-volatilidade.svg"
 definition: "The degree of variation in the price of a financial asset over time. Higher volatility means higher risk and potential return."
 category: "mercado"
 locale: "en"

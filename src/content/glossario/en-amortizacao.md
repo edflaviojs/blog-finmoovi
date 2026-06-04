@@ -1,5 +1,6 @@
 ---
 term: "Amortization"
+image: "/images/glossario/en-amortizacao.svg"
 definition: "The gradual reduction of a debt through periodic payments that cover both principal and interest."
 category: "credito"
 locale: "en"

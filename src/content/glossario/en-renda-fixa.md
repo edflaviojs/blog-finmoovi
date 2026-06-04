@@ -1,5 +1,6 @@
 ---
 term: "Fixed Income"
+image: "/images/glossario/en-renda-fixa.svg"
 definition: "Investments where the return rules are defined at the time of purchase. Examples: CDB, Treasury bonds, LCI, LCA."
 category: "investimentos"
 locale: "en"

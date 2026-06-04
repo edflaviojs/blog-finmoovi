@@ -1,5 +1,6 @@
 ---
 term: "ETF"
+image: "/images/glossario/es-etf.svg"
 definition: "Fondo Cotizado en Bolsa. Un fondo de inversión negociado en bolsa que replica un índice de mercado como el Ibovespa o S&P 500."
 category: "investimentos"
 locale: "es"

@@ -1,5 +1,6 @@
 ---
 term: "Dividendos"
+image: "/images/glossario/dividendos.svg"
 definition: "Parte do lucro de uma empresa distribuída aos acionistas. É uma forma de renda passiva para quem investe em ações."
 category: "investimentos"
 relatedTerms: ["Ações", "Renda Variável", "Dividend Yield"]

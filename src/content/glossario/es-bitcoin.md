@@ -1,5 +1,6 @@
 ---
 term: "Bitcoin"
+image: "/images/glossario/es-bitcoin.svg"
 definition: "La primera y más conocida criptomoneda. Una moneda digital descentralizada que opera sin bancos ni gobiernos."
 category: "investimentos"
 locale: "es"

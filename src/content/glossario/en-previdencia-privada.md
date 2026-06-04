@@ -1,5 +1,6 @@
 ---
 term: "Private Pension"
+image: "/images/glossario/en-previdencia-privada.svg"
 definition: "A long-term investment plan for retirement that complements public social security. Available as PGBL or VGBL plans."
 category: "investimentos"
 locale: "en"

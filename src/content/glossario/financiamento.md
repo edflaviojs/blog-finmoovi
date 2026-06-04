@@ -1,5 +1,6 @@
 ---
 term: "Financiamento"
+image: "/images/glossario/financiamento.svg"
 definition: "Empréstimo de longo prazo para compra de bens como imóveis ou veículos, onde o bem fica como garantia até a quitação total."
 category: "credito"
 relatedTerms: ["Amortização", "Juros Compostos", "Score de Crédito"]

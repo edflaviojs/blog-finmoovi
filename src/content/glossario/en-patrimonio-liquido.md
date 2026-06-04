@@ -1,5 +1,6 @@
 ---
 term: "Net Worth"
+image: "/images/glossario/en-patrimonio-liquido.svg"
 definition: "The total value of your assets minus all your debts and obligations."
 category: "basico"
 locale: "en"

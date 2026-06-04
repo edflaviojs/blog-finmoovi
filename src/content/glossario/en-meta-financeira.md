@@ -1,5 +1,6 @@
 ---
 term: "Financial Goal"
+image: "/images/glossario/en-meta-financeira.svg"
 definition: "A specific, measurable financial objective with a defined deadline. Examples: emergency fund, home purchase, retirement."
 category: "basico"
 locale: "en"

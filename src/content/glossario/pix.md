@@ -1,5 +1,6 @@
 ---
 term: "PIX"
+image: "/images/glossario/pix.svg"
 definition: "Sistema de pagamentos instantâneos do Banco Central do Brasil. Transferências gratuitas 24h por dia, 7 dias por semana, em até 10 segundos."
 category: "basico"
 relatedTerms: ["Câmbio", "IOF", "Score de Crédito"]

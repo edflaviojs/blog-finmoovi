@@ -1,5 +1,6 @@
 ---
 term: "FGC Guarantee"
+image: "/images/glossario/en-garantia-fgc.svg"
 definition: "Protection provided by the Credit Guarantee Fund that covers up to R$250,000 per CPF per institution in case of bank failure."
 category: "basico"
 locale: "en"

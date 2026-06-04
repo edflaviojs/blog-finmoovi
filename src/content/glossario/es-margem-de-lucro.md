@@ -1,5 +1,6 @@
 ---
 term: "Margen de Ganancia"
+image: "/images/glossario/es-margem-de-lucro.svg"
 definition: "El porcentaje de ingresos que queda como ganancia después de deducir todos los costos y gastos de un negocio."
 category: "basico"
 locale: "es"

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0d1117"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  
+  <circle cx="1020" cy="94.5" r="96.68569157831371" fill="#10B981" opacity="0.03"/>
+  <circle cx="180" cy="504" r="55.16283365432173" fill="#F59E0B" opacity="0.04"/>
+  <line x1="182" y1="320.8136568660848" x2="182" y2="370.6714442628436" stroke="#10B981" stroke-width="1.5"/>
+  <rect x="170" y="331.49430447956547" width="24" height="24.765591928735375" rx="2" fill="#10B981" opacity="0.85"/>
+  <line x1="256" y1="376.14256780361757" x2="256" y2="432.75230921572074" stroke="#10B981" stroke-width="1.5"/>
+  <rect x="244" y="388.1713139708154" width="24" height="6.424321373924613" rx="2" fill="#10B981" opacity="0.85"/>
+  <line x1="330" y1="347.17243782943115" x2="330" y2="442.07522123819217" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="318" y="368.8613320584409" width="24" height="37.10462781600654" rx="2" fill="#F59E0B" opacity="0.85"/>
+  <line x1="404" y1="287.0937940920703" x2="404" y2="331.89375451533124" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="392" y="310.71378824999556" width="24" height="20.9615268278867" rx="2" fill="#F59E0B" opacity="0.85"/>
+  <line x1="478" y1="234.7830763622187" x2="478" y2="311.7276274948381" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="466" y="245.92086671618745" width="24" height="45.87510204873979" rx="2" fill="#F59E0B" opacity="0.85"/>
+  <line x1="552" y1="380.05221291212365" x2="552" y2="450.0452559138648" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="540" y="410.5632735765539" width="24" height="6.78680264391005" rx="2" fill="#F59E0B" opacity="0.85"/>
+  <line x1="626" y1="402.10236083483323" x2="626" y2="460.3437038860284" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="614" y="408.8867311249487" width="24" height="48.05709938518703" rx="2" fill="#F59E0B" opacity="0.85"/>
+  <line x1="700" y1="325.50840311450884" x2="700" y2="406.92444073734805" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="688" y="347.9607913061045" width="24" height="48.06631472893059" rx="2" fill="#F59E0B" opacity="0.85"/>
+  <line x1="774" y1="287.1897738217376" x2="774" y2="347.53433221718296" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="762" y="296.8005398171954" width="24" height="41.022484144195914" rx="2" fill="#F59E0B" opacity="0.85"/>
+  <line x1="848" y1="203.898861433845" x2="848" y2="243.9656160841696" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="836" y="230.1074408343993" width="24" height="8.788748690858483" rx="2" fill="#F59E0B" opacity="0.85"/>
+</svg>

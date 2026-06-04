@@ -1,5 +1,6 @@
 ---
 term: "Income Tax"
+image: "/images/glossario/en-imposto-de-renda.svg"
 definition: "A tax levied on income and capital gains of individuals and companies. In Brazil, rates range from 7.5% to 27.5%."
 category: "impostos"
 locale: "en"

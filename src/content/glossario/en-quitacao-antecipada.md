@@ -1,5 +1,6 @@
 ---
 term: "Early Payoff"
+image: "/images/glossario/en-quitacao-antecipada.svg"
 definition: "Paying off a debt before its due date, usually with a discount on interest. A right guaranteed by Brazilian consumer law."
 category: "credito"
 locale: "en"

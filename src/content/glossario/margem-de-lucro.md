@@ -1,5 +1,6 @@
 ---
 term: "Margem de Lucro"
+image: "/images/glossario/margem-de-lucro.svg"
 definition: "Percentual do faturamento que sobra como lucro após descontar todos os custos. Indica a eficiência financeira de um negócio."
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Dividendos", "Ações"]

@@ -1,5 +1,6 @@
 ---
 term: "Nubank"
+image: "/images/glossario/nubank.svg"
 definition: "Maior banco digital do Brasil e da América Latina. Oferece conta corrente, cartão de crédito, investimentos e empréstimos sem tarifas tradicionais."
 category: "basico"
 relatedTerms: ["PIX", "Score de Crédito", "CDI"]

@@ -1,5 +1,6 @@
 ---
 term: "Selic Rate"
+image: "/images/glossario/en-selic.svg"
 definition: "Brazil's basic interest rate, set by the Central Bank. It influences all other interest rates in the economy."
 category: "basico"
 locale: "en"

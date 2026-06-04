@@ -1,5 +1,6 @@
 ---
 term: "Poupança"
+image: "/images/glossario/poupanca.svg"
 definition: "Investimento mais popular do Brasil. Rende pouco (70% da Selic quando Selic ≤ 8,5% ou 0,5% ao mês + TR quando Selic > 8,5%), mas tem liquidez imediata e isenção de IR."
 category: "basico"
 relatedTerms: ["Selic", "CDI", "Reserva de Emergência"]

@@ -1,5 +1,6 @@
 ---
 term: "Urgência Financeira"
+image: "/images/glossario/urgencia-financeira.svg"
 definition: "Situação inesperada que exige dinheiro imediato: perda de emprego, emergência médica, conserto urgente. É para isso que existe a reserva de emergência."
 category: "basico"
 relatedTerms: ["Reserva de Emergência", "Cheque Especial", "Orçamento Pessoal"]

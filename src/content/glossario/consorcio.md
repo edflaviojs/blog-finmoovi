@@ -1,5 +1,6 @@
 ---
 term: "Consórcio"
+image: "/images/glossario/consorcio.svg"
 definition: "Sistema de compra coletiva onde um grupo de pessoas contribui mensalmente para formar um fundo comum. Participantes são contemplados por sorteio ou lance."
 category: "credito"
 relatedTerms: ["Financiamento", "Amortização", "Poupança"]

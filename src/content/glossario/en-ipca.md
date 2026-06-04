@@ -1,5 +1,6 @@
 ---
 term: "IPCA (Consumer Price Index)"
+image: "/images/glossario/en-ipca.svg"
 definition: "Brazil's official inflation index, measured by IBGE. It tracks the price variation of products and services consumed by families."
 category: "basico"
 locale: "en"

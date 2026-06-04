@@ -1,5 +1,6 @@
 ---
 term: "ETF"
+image: "/images/glossario/etf.svg"
 definition: "Fundo de investimento negociado em bolsa que replica um índice. Permite diversificar com um único investimento e baixo custo."
 category: "investimentos"
 relatedTerms: ["Ações", "Bolsa de Valores", "Diversificação"]

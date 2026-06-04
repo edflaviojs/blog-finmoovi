@@ -1,5 +1,6 @@
 ---
 term: "Selic"
+image: "/images/glossario/selic.svg"
 definition: "Taxa básica de juros da economia brasileira, definida pelo Banco Central a cada 45 dias. Influencia todas as outras taxas de juros do país."
 category: "basico"
 relatedTerms: ["CDI", "IPCA", "Renda Fixa"]

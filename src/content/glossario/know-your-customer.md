@@ -1,5 +1,6 @@
 ---
 term: "Know Your Customer"
+image: "/images/glossario/know-your-customer.svg"
 definition: "Processo de verificação de identidade exigido por instituições financeiras. Serve para prevenir fraudes, lavagem de dinheiro e financiamento ao terrorismo."
 category: "mercado"
 relatedTerms: ["Score de Crédito", "PIX", "Nubank"]

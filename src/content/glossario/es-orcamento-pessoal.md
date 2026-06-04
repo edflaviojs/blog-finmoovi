@@ -1,5 +1,6 @@
 ---
 term: "Presupuesto Personal"
+image: "/images/glossario/es-orcamento-pessoal.svg"
 definition: "Un plan financiero que organiza ingresos y gastos, ayudándote a entender a dónde va tu dinero y cómo ahorrar más."
 category: "basico"
 locale: "es"

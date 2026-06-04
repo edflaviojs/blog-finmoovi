@@ -1,5 +1,6 @@
 ---
 term: "Emergency Fund"
+image: "/images/glossario/en-reserva-de-emergencia.svg"
 definition: "Money set aside to cover unexpected expenses or income loss. Ideally 3 to 6 months of essential expenses."
 category: "basico"
 locale: "en"

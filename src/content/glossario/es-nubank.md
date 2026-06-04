@@ -1,5 +1,6 @@
 ---
 term: "Nubank"
+image: "/images/glossario/es-nubank.svg"
 definition: "El banco digital más grande de América Latina, conocido por su tarjeta de crédito sin tarifas y servicios bancarios simplificados vía app."
 category: "basico"
 locale: "es"

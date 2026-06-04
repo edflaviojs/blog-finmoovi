@@ -1,5 +1,6 @@
 ---
 term: "Impuesto sobre la Renta"
+image: "/images/glossario/es-imposto-de-renda.svg"
 definition: "Un impuesto sobre los ingresos y ganancias de capital de personas y empresas. En Brasil, las tasas van del 7,5% al 27,5%."
 category: "impostos"
 locale: "es"

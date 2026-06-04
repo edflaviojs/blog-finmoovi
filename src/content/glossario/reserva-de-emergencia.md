@@ -1,5 +1,6 @@
 ---
 term: "Reserva de Emergência"
+image: "/images/glossario/reserva-de-emergencia.svg"
 definition: "Dinheiro guardado para cobrir imprevistos como perda de emprego, problemas de saúde ou consertos urgentes. Deve cobrir de 3 a 6 meses dos seus gastos mensais."
 category: "basico"
 relatedTerms: ["Liquidez", "CDB", "Tesouro Selic"]

@@ -1,5 +1,6 @@
 ---
 term: "Dividends"
+image: "/images/glossario/en-dividendos.svg"
 definition: "A portion of a company's profits distributed to shareholders. A form of passive income from stock investments."
 category: "investimentos"
 locale: "en"

@@ -1,5 +1,6 @@
 ---
 term: "Valor Presente"
+image: "/images/glossario/es-valor-presente.svg"
 definition: "El valor actual de una suma futura de dinero, descontada a una tasa de interés específica. Un concepto fundamental en análisis financiero."
 category: "mercado"
 locale: "es"

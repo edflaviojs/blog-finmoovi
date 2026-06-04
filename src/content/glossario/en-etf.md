@@ -1,5 +1,6 @@
 ---
 term: "ETF"
+image: "/images/glossario/en-etf.svg"
 definition: "Exchange-Traded Fund. An investment fund traded on the stock exchange that replicates a market index like the Ibovespa or S&P 500."
 category: "investimentos"
 locale: "en"

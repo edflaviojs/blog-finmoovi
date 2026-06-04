@@ -1,5 +1,6 @@
 ---
 term: "Diversificación"
+image: "/images/glossario/es-diversificacao.svg"
 definition: "La estrategia de distribuir inversiones en diferentes activos para reducir el riesgo. El principio de no poner todos los huevos en una canasta."
 category: "investimentos"
 locale: "es"

@@ -1,5 +1,6 @@
 ---
 term: "IOF"
+image: "/images/glossario/iof.svg"
 definition: "Imposto sobre Operações Financeiras. Incide sobre empréstimos, câmbio, seguros e investimentos de curto prazo."
 category: "impostos"
 relatedTerms: ["Imposto de Renda", "CDI", "Câmbio"]

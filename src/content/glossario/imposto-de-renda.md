@@ -1,5 +1,6 @@
 ---
 term: "Imposto de Renda"
+image: "/images/glossario/imposto-de-renda.svg"
 definition: "Tributo federal cobrado sobre rendimentos de pessoas físicas e jurídicas. Incide sobre salários, investimentos, aluguéis e outros ganhos."
 category: "impostos"
 relatedTerms: ["IOF", "CDI", "Renda Fixa"]

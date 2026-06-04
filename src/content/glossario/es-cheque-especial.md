@@ -1,5 +1,6 @@
 ---
 term: "Sobregiro"
+image: "/images/glossario/es-cheque-especial.svg"
 definition: "Una línea de crédito preaprobada vinculada a tu cuenta corriente. Una de las formas de crédito más caras en Brasil."
 category: "credito"
 locale: "es"

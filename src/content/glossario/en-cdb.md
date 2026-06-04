@@ -1,5 +1,6 @@
 ---
 term: "CDB"
+image: "/images/glossario/en-cdb.svg"
 definition: "Explanation of CDB in the Brazilian financial context."
 category: "investimentos"
 locale: "en"

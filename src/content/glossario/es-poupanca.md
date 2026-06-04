@@ -1,5 +1,6 @@
 ---
 term: "Cuenta de Ahorro"
+image: "/images/glossario/es-poupanca.svg"
 definition: "La inversión más tradicional y simple en Brasil. Bajo rendimiento pero con liquidez inmediata y garantía del FGC."
 category: "basico"
 locale: "es"

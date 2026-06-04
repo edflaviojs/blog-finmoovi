@@ -1,5 +1,6 @@
 ---
 term: "Wealth Management"
+image: "/images/glossario/en-wealth-management.svg"
 definition: "Professional financial advisory service for high-net-worth individuals, covering investments, tax planning, and estate planning."
 category: "investimentos"
 locale: "en"

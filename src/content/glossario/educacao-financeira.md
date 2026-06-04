@@ -1,5 +1,6 @@
 ---
 term: "Educação Financeira"
+image: "/images/glossario/educacao-financeira.svg"
 definition: "Conjunto de conhecimentos sobre como ganhar, gastar, poupar e investir dinheiro de forma consciente. Base para uma vida financeira saudável."
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]

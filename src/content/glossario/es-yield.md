@@ -1,5 +1,6 @@
 ---
 term: "Yield (Rendimiento)"
+image: "/images/glossario/es-yield.svg"
 definition: "El retorno generado por una inversión en un período específico, generalmente expresado como porcentaje anual."
 category: "investimentos"
 locale: "es"

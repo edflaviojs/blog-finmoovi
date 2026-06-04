@@ -1,5 +1,6 @@
 ---
 term: "Treasury Direct"
+image: "/images/glossario/en-tesouro-direto.svg"
 definition: "A program that allows individuals to buy Brazilian government bonds directly. One of the safest investments available."
 category: "investimentos"
 locale: "en"

@@ -1,5 +1,6 @@
 ---
 term: "Hedge"
+image: "/images/glossario/hedge.svg"
 definition: "Estratégia de proteção contra riscos financeiros. Funciona como um seguro para seus investimentos contra oscilações adversas do mercado."
 category: "mercado"
 relatedTerms: ["Diversificação", "Volatilidade", "Câmbio"]

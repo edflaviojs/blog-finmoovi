@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0d1117"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
+    </linearGradient>
+  </defs>
+  
+  <circle cx="1020" cy="94.5" r="99.57987564615905" fill="#00F0FF" opacity="0.03"/>
+  <circle cx="180" cy="504" r="56.46448135841638" fill="#A91079" opacity="0.04"/>
+  <path d="M140 261 L220 264 L300 264 L380 280 L460 283 L540 264 L620 260 L700 288 L780 317 L860 313 L940 323 L1020 349 L1060 530 L140 530 Z" fill="#00F0FF" opacity="0.15"/>
+  <path d="M140 261 L220 264 L300 264 L380 280 L460 283 L540 264 L620 260 L700 288 L780 317 L860 313 L940 323 L1020 349" stroke="#00F0FF" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M140 346 L220 326 L300 347 L380 330 L460 338 L540 352 L620 357 L700 353 L780 384 L860 381 L940 355 L1020 357 L1060 530 L140 530 Z" fill="#A91079" opacity="0.12"/>
+  <path d="M140 346 L220 326 L300 347 L380 330 L460 338 L540 352 L620 357 L700 353 L780 384 L860 381 L940 355 L1020 357" stroke="#A91079" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M140 437 L220 443 L300 436 L380 458 L460 477 L540 493 L620 500 L700 500 L780 493 L860 500 L940 500 L1020 473 L1060 530 L140 530 Z" fill="#8B949E" opacity="0.09"/>
+  <path d="M140 437 L220 443 L300 436 L380 458 L460 477 L540 493 L620 500 L700 500 L780 493 L860 500 L940 500 L1020 473" stroke="#8B949E" stroke-width="2" fill="none" opacity="0.8"/>
+</svg>

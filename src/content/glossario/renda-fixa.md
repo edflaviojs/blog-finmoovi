@@ -1,5 +1,6 @@
 ---
 term: "Renda Fixa"
+image: "/images/glossario/renda-fixa.svg"
 definition: "Categoria de investimentos onde as regras de rendimento são definidas no momento da aplicação. Inclui CDB, Tesouro Direto, LCI e LCA."
 category: "investimentos"
 relatedTerms: ["CDI", "Tesouro Direto", "Selic"]

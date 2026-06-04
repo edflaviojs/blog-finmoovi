@@ -1,5 +1,6 @@
 ---
 term: "CDI"
+image: "/images/glossario/en-cdi.svg"
 definition: "Interbank Deposit Certificate. The benchmark interest rate for fixed-income investments in Brazil. It closely follows the Selic rate."
 category: "investimentos"
 locale: "en"

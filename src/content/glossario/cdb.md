@@ -1,5 +1,6 @@
 ---
 term: "CDB"
+image: "/images/glossario/cdb.svg"
 definition: "Explicação sobre CDB no contexto financeiro brasileiro."
 category: "investimentos"
 locale: "pt"

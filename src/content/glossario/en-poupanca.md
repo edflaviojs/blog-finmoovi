@@ -1,5 +1,6 @@
 ---
 term: "Savings Account"
+image: "/images/glossario/en-poupanca.svg"
 definition: "The most traditional and simple investment in Brazil. Low yield but with immediate liquidity and FGC guarantee."
 category: "basico"
 locale: "en"

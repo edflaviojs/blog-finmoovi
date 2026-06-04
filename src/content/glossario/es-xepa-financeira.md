@@ -1,5 +1,6 @@
 ---
 term: "Caza de Ofertas Financieras"
+image: "/images/glossario/es-xepa-financeira.svg"
 definition: "La práctica de buscar descuentos, promociones y los mejores precios antes de comprar. Una estrategia inteligente para ahorrar dinero."
 category: "basico"
 locale: "es"

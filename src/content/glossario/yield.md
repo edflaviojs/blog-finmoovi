@@ -1,5 +1,6 @@
 ---
 term: "Yield"
+image: "/images/glossario/yield.svg"
 definition: "Rendimento percentual de um investimento em relação ao seu preço. Dividend Yield mostra quanto uma ação paga em dividendos por ano em relação ao preço."
 category: "investimentos"
 relatedTerms: ["Dividendos", "Ações", "Fundos Imobiliários"]
