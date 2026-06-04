@@ -47,7 +47,7 @@ if (latestCotacao) {
 if (latestGlossario) {
   secondaryCards.push({
     title: latestGlossario.data.term,
-    image: undefined,
+    image: latestGlossario.data.image,
     category: 'glossario',
     href: `/es/glossario/${latestGlossario.slug}`,
     date: latestGlossario.data.publishedAt,
