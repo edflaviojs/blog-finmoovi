@@ -121,30 +121,35 @@ async function downloadImage(url, filename) {
 }
 
 /**
- * Process inline images in content - replace Pollinations URLs with local SVGs
+ * Insert inline SVG images into content (1 image every 2 H2 sections)
  */
-async function processInlineImages(content, slugBase) {
-  const inlineImageRegex = /!\[([^\]]*)\]\((https:\/\/image\.pollinations\.ai[^)]+|__SVG_GENERATE__[^)]+)\)/g;
-  const matches = [];
-  let match;
+function insertInlineImages(content, slugBase) {
+  const h2Matches = content.match(/^## .+$/gm) || [];
+  if (h2Matches.length < 2) return content;
 
-  while ((match = inlineImageRegex.exec(content)) !== null) {
-    matches.push({ full: match[0], alt: match[1], url: match[2] });
-  }
+  const headings = h2Matches.map(h => h.replace('## ', ''));
+  let result = content;
 
-  let processed = content;
-  for (let i = 0; i < matches.length; i++) {
-    const img = matches[i];
-    console.log(`🖼️ Gerando imagem inline ${i + 1}...`);
-    const localPath = generateCoverImage(img.alt || `${slugBase} section ${i}`, `${slugBase}-${i + 1}`, 'posts');
-    if (localPath) {
-      processed = processed.replace(img.full, `![${img.alt}](${localPath})`);
-    } else {
-      processed = processed.replace(img.full, '');
+  // Insert images after every 2nd heading (counting from 1)
+  for (let i = headings.length - 1; i >= 1; i -= 2) {
+    const sectionTopic = `${slugBase} - ${headings[i]}`;
+    const imgPath = generateCoverImage(sectionTopic, `${slugBase}-${i}`, 'posts');
+    const headingText = headings[i];
+    const headingPattern = `## ${headingText}`;
+    const headingIndex = result.indexOf(headingPattern);
+
+    if (headingIndex !== -1) {
+      const afterHeading = result.indexOf('\n\n', headingIndex + headingPattern.length);
+      if (afterHeading !== -1) {
+        const nextParagraphEnd = result.indexOf('\n\n', afterHeading + 2);
+        const insertAt = nextParagraphEnd !== -1 ? nextParagraphEnd : afterHeading;
+        const imgMarkdown = `\n\n![${headingText}](${imgPath})\n\n`;
+        result = result.slice(0, insertAt) + imgMarkdown + result.slice(insertAt);
+      }
     }
   }
 
-  return processed;
+  return result;
 }
 
 /**
@@ -210,9 +215,9 @@ async function main() {
     const imagePath = generateCoverImage(post.title, slugPt, 'posts');
     console.log(`🖼️ Capa salva: ${imagePath}`);
 
-    // 3. Process inline images for PT
-    console.log('🖼️ Processando imagens inline PT...');
-    const processedContentPt = await processInlineImages(post.content, slugPt);
+    // 3. Insert inline images for PT
+    console.log('🖼️ Inserindo imagens inline PT...');
+    const processedContentPt = insertInlineImages(post.content, slugPt);
 
     // 4. Save PT post
     const ptPath = savePost(slugPt, {

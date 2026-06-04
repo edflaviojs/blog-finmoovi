@@ -167,38 +167,12 @@ Formato de saída (use exatamente este formato):
 
   const parsed = parsePostContent(textResult);
 
-  // Generate cover image via Pollinations
-  const imageUrl = generateImage(topic, 'cover');
-
-  // Generate inline images (1 every 2 H2 sections)
-  const h2Matches = parsed.content.match(/^## .+$/gm) || [];
-  const headings = h2Matches.map(h => h.replace('## ', ''));
-  const inlineImages = generateContentImages(topic, headings);
-
-  // Insert inline images into content after every 2nd H2
-  let contentWithImages = parsed.content;
-  for (let i = inlineImages.length - 1; i >= 0; i--) {
-    const img = inlineImages[i];
-    const headingText = headings[img.afterHeading];
-    const headingPattern = `## ${headingText}`;
-    const headingIndex = contentWithImages.indexOf(headingPattern);
-    if (headingIndex !== -1) {
-      // Find the end of the first paragraph after this heading
-      const afterHeading = contentWithImages.indexOf('\n\n', headingIndex + headingPattern.length);
-      if (afterHeading !== -1) {
-        const nextParagraphEnd = contentWithImages.indexOf('\n\n', afterHeading + 2);
-        const insertAt = nextParagraphEnd !== -1 ? nextParagraphEnd : afterHeading;
-        const imgMarkdown = `\n\n![${img.alt}](${img.url})\n\n`;
-        contentWithImages = contentWithImages.slice(0, insertAt) + imgMarkdown + contentWithImages.slice(insertAt);
-      }
-    }
-  }
+  // No longer generate images here — caller handles SVG generation
+  // after knowing the slug
 
   return {
     ...parsed,
-    content: contentWithImages,
     category,
-    image: imageUrl,
   };
 }
 
