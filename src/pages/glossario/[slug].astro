@@ -61,6 +61,13 @@ const faqSchema = {
           <p class="glossario-post-definition">{term.data.definition}</p>
         </header>
 
+        <!-- Cover Image -->
+        {term.data.image && (
+          <div class="glossario-cover">
+            <img src={term.data.image} alt={term.data.term} loading="lazy" width="1200" height="630" />
+          </div>
+        )}
+
         <!-- CTA 1 (meio) -->
         <CTAVariado seed={term.slug.length} />
 
@@ -124,9 +131,22 @@ const faqSchema = {
   }
 
   .glossario-post-header {
-    margin-bottom: var(--space-8);
+    margin-bottom: var(--space-6);
     padding-bottom: var(--space-6);
     border-bottom: 1px solid var(--border-muted);
+  }
+
+  .glossario-cover {
+    margin-bottom: var(--space-8);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-default);
+  }
+
+  .glossario-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .glossario-post-category {

@@ -59,6 +59,13 @@ const faqSchema = {
           <p class="glossario-post-definition">{term.data.definition}</p>
         </header>
 
+        <!-- Cover Image -->
+        {term.data.image && (
+          <div class="glossario-cover">
+            <img src={term.data.image} alt={term.data.term} loading="lazy" width="1200" height="630" />
+          </div>
+        )}
+
         <CTAVariado seed={term.slug.length} />
 
         <div class="glossario-post-content prose">
