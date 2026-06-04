@@ -1,77 +1,53 @@
 /**
- * Groq API Wrapper + Pollinations Image Generation
+ * Groq API Wrapper + SVG Image Generation
  * Handles text generation for blog posts and cover image generation
  */
+
+import { saveSVGImage, generateSVG } from './svg-generator.js';
 
 const GROQ_API_BASE = 'https://api.groq.com/openai/v1';
 const GROQ_API_KEY = process.env.GROQ_API_KEY || process.env.KIE_API_KEY;
 
-// Allow image generation without API key (uses Pollinations)
+// Allow image generation without API key (uses local SVG)
 const hasApiKey = GROQ_API_KEY;
 
 if (!hasApiKey) {
-  console.warn('⚠️ GROQ_API_KEY not configured - text generation will fail, but image generation will work via Pollinations');
+  console.warn('⚠️ GROQ_API_KEY not configured - text generation will fail, but image generation will work via local SVG');
 }
 
 /**
- * Generate cover image using Pollinations.ai (free, no API key needed)
- * Professional quality, no text, with subtle FinMoovi watermark
+ * Generate cover image as SVG (local, no external API needed)
+ * Returns the URL path that generateImage used to return
+ * NOTE: This is kept for backward compatibility — returns a Pollinations-style URL
+ * but the actual saving is done by saveSVGImage() in the calling scripts
  */
 export function generateImage(topic, type = 'cover') {
-  const baseStyle = 'professional financial visualization, ultra high quality, 4k, sharp focus, absolutely no text, no letters, no words, no numbers, no watermark, no logos, no writing, no captions, no labels, no hands, no fingers, no people';
+  // Return a placeholder that signals the caller to use saveSVGImage
+  return `__SVG_GENERATE__:${topic}:${type}`;
+}
 
-  const styleVariations = [
-    {
-      name: 'abstract',
-      prompt: `${topic}, abstract financial concept, geometric shapes, data visualization elements, blue and gold gradient, ${baseStyle}, modern minimalist composition`
-    },
-    {
-      name: 'objects',
-      prompt: `${topic}, professional financial objects, clean desk setup, calculator, charts, documents, ${baseStyle}, overhead view, organized layout`
-    },
-    {
-      name: 'nature',
-      prompt: `${topic}, nature-inspired financial growth, tree with money leaves, flowing water streams, earth tones, ${baseStyle}, symbolic composition`
-    },
-    {
-      name: 'architecture',
-      prompt: `${topic}, financial architecture, building structures with growth charts, blueprints, modern city skyline, ${baseStyle}, architectural composition`
-    },
-    {
-      name: 'tech',
-      prompt: `${topic}, digital financial technology, circuit board patterns, holographic displays, neon accents, ${baseStyle}, futuristic tech aesthetic`
-    }
-  ];
-
-  // Select random style for variety
-  const randomStyle = styleVariations[Math.floor(Math.random() * styleVariations.length)];
-
-  let dimensions = 'width=1200&height=630';
-  let promptText = '';
-
-  if (type === 'cover') {
-    promptText = `${randomStyle.prompt}, cinematic lighting, depth of field, professional photography`;
-    dimensions = 'width=1200&height=630';
-  } else {
-    // inline content image
-    promptText = `${randomStyle.prompt}, centered composition, clean background`;
-    dimensions = 'width=800&height=450';
-  }
-
-  const encoded = encodeURIComponent(promptText);
-  return `https://image.pollinations.ai/prompt/${encoded}?${dimensions}&nologo=true&seed=${Date.now()}`;
+/**
+ * Generate and save a cover image locally as SVG
+ * This is the actual function scripts should use
+ * @returns {string} local path like /images/posts/slug.svg
+ */
+export function generateCoverImage(topic, slug, destination = 'posts') {
+  return saveSVGImage(topic, slug, destination);
 }
 
 /**
  * Generate inline images for post content (1 image every 2 H2 sections)
+ * Returns SVG paths
  */
-export function generateContentImages(topic, headings) {
+export function generateContentImages(topic, headings, slug, destination = 'posts') {
   const images = [];
   for (let i = 1; i < headings.length; i += 2) {
     const sectionTopic = `${topic} - ${headings[i]}`;
+    const sectionSlug = `${slug}-${i}`;
+    const path = saveSVGImage(sectionTopic, sectionSlug, destination);
     images.push({
       afterHeading: i,
-      url: generateImage(sectionTopic, 'inline'),
+      url: path,
       alt: headings[i],
     });
   }

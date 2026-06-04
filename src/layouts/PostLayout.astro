@@ -11,6 +11,7 @@ import ReadingProgress from '@components/shared/ReadingProgress.astro';
 import NewsletterPopup from '@components/shared/NewsletterPopup.astro';
 import Giscus from '@components/shared/Giscus.astro';
 import ArticleRating from '@components/shared/ArticleRating.astro';
+import RelatedPosts from '@components/posts/RelatedPosts.astro';
 
 interface Props {
   title: string;
@@ -22,9 +23,10 @@ interface Props {
   category?: string;
   readingTime?: number;
   headings?: { depth: number; slug: string; text: string }[];
+  slug?: string;
 }
 
-const { title, description, image, publishedTime, author, keywords, category, readingTime, headings = [] } = Astro.props;
+const { title, description, image, publishedTime, author, keywords, category, readingTime, headings = [], slug } = Astro.props;
 const postUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const postSlug = Astro.url.pathname.replace(/\//g, '-').replace(/^-|-$/g, '');
 
@@ -100,6 +102,10 @@ const breadcrumbItems = [
           <ArticleRating postSlug={postSlug} />
 
           <Giscus />
+
+          {category && slug && (
+            <RelatedPosts currentSlug={slug} category={category} locale={locale} />
+          )}
         </article>
 
         <aside class="post-sidebar">

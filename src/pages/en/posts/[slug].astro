@@ -27,6 +27,7 @@ const canonicalURL = new URL(`/en/posts/${post.slug}`, Astro.site).toString();
   category={post.data.category}
   readingTime={post.data.readingTime}
   headings={headings}
+  slug={post.slug}
 >
   <SchemaArticle
     title={post.data.title}

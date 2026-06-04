@@ -1,36 +1,16 @@
 /**
  * Gerador de Glossário com Imagens Automáticas
  * Gera termos financeiros com imagens de capa e imagens explicativas
- * Processo de imagem igual aos posts: gera via Pollinations + download local
+ * Usa SVG gerado localmente (sem dependência de API externa)
  */
 
-import { generateImage, generateText } from '../apis/kie-ai.js';
+import { generateText, generateCoverImage } from '../apis/kie-ai.js';
+import { saveSVGImage } from '../apis/svg-generator.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const GLOSSARIO_DIR = join(process.cwd(), 'src', 'content', 'glossario');
 const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario');
-
-/**
- * Download image from URL and save locally (same process as posts)
- */
-async function downloadImage(url, filename) {
-  try {
-    if (!existsSync(IMAGES_DIR)) {
-      mkdirSync(IMAGES_DIR, { recursive: true });
-    }
-    const response = await fetch(url);
-    if (response.ok) {
-      const buffer = Buffer.from(await response.arrayBuffer());
-      const fullPath = join(IMAGES_DIR, filename);
-      writeFileSync(fullPath, buffer);
-      return `/images/glossario/${filename}`;
-    }
-  } catch (err) {
-    console.warn(`⚠️ Falha ao baixar imagem: ${err.message}`);
-  }
-  return '';
-}
 
 /**
  * Sanitize string for use as filename
@@ -49,65 +29,26 @@ async function generateGlossaryTerm(term, language = 'pt') {
   console.log(`📚 Gerando glossário para: ${term} (${language})`);
 
   try {
-    // Gerar imagem de capa via Pollinations e baixar localmente (igual posts)
+    // Gerar imagem de capa como SVG local
     const slug = slugify(term);
-    const coverUrl = generateImage(term, 'cover');
-    console.log('🖼️ Baixando imagem de capa...');
-    const localImagePath = await downloadImage(coverUrl, `${slug}.jpg`);
-    if (localImagePath) {
-      console.log(`✅ Imagem salva: ${localImagePath}`);
-    }
-
-    // Gerar imagens explicativas inline
-    const explanatoryImages = await generateExplanatoryImages(term, slug);
+    console.log('🖼️ Gerando imagem de capa SVG...');
+    const localImagePath = saveSVGImage(term, slug, 'glossario');
+    console.log(`✅ Imagem salva: ${localImagePath}`);
 
     // Gerar conteúdo com base no idioma
     const content = await generateGlossaryContent(term, language);
-
-    // Inserir imagens no conteúdo
-    const contentWithImages = insertImagesIntoContent(content, explanatoryImages);
 
     return {
       title: getLocalizedTitle(term, language),
       description: getLocalizedDescription(term, language),
       image: localImagePath,
-      content: contentWithImages,
+      content,
       keywords: getLocalizedKeywords(term, language)
     };
   } catch (error) {
     console.error(`❌ Erro ao gerar glossário para ${term}:`, error.message);
     throw error;
   }
-}
-
-async function generateExplanatoryImages(term, slug) {
-  const sections = [
-    'definição',
-    'funcionamento',
-    'vantagens',
-    'riscos',
-    'exemplos'
-  ];
-
-  const images = [];
-
-  for (let i = 0; i < sections.length; i += 2) {
-    const sectionTopic = `${term} - ${sections[i]}`;
-    const imageUrl = generateImage(sectionTopic, 'inline');
-    const filename = `${slug}-${i + 1}.jpg`;
-    console.log(`🖼️ Baixando imagem inline ${i + 1}...`);
-    const localPath = await downloadImage(imageUrl, filename);
-
-    if (localPath) {
-      images.push({
-        afterHeading: i,
-        url: localPath,
-        alt: `${term} - ${sections[i]}`
-      });
-    }
-  }
-
-  return images;
 }
 
 async function generateGlossaryContent(term, language) {
@@ -193,34 +134,6 @@ Formato: markdown puro, sin bloques de código, sin HTML.
     .replace(/\n{3,}/g, '\n\n')           // Max 2 newlines (1 blank line)
     .replace(/^## (.+)\n\n\n/gm, '## $1\n\n')  // No extra lines after headers
     .trim();
-}
-
-function insertImagesIntoContent(content, images) {
-  let contentWithImages = content;
-
-  // Inserir imagens após cada 2º H2
-  for (let i = images.length - 1; i >= 0; i--) {
-    const img = images[i];
-    const headingPattern = new RegExp(`^## .+$`, 'gm');
-    const headings = content.match(headingPattern);
-
-    if (headings && img.afterHeading < headings.length) {
-      const headingText = headings[img.afterHeading].replace('## ', '');
-      const headingPattern = `## ${headingText}`;
-      const headingIndex = contentWithImages.indexOf(headingPattern);
-
-      if (headingIndex !== -1) {
-        // Encontrar o final do primeiro parágrafo após este heading
-        const afterHeading = contentWithImages.indexOf('\n\n', headingIndex + headingPattern.length);
-        if (afterHeading !== -1) {
-          const imgMarkdown = `\n\n![${img.alt}](${img.url})\n\n`;
-          contentWithImages = contentWithImages.slice(0, afterHeading) + imgMarkdown + contentWithImages.slice(afterHeading);
-        }
-      }
-    }
-  }
-
-  return contentWithImages;
 }
 
 function getLocalizedTitle(term, language) {

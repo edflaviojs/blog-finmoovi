@@ -1,28 +1,57 @@
 ---
 import PostCard from '../posts/PostCard.astro';
-
-interface Post {
-  title: string;
-  description: string;
-  href: string;
-  date?: string;
-}
+import { getCollection } from 'astro:content';
 
 interface Props {
-  posts?: Post[];
+  currentSlug: string;
+  category: string;
+  locale: string;
 }
 
-const { posts = [] } = Astro.props;
+const { currentSlug, category, locale } = Astro.props;
+
+// Query posts: same category + same locale, exclude current, sort by date, take 3
+const allPosts = await getCollection('posts', ({ data, slug }) =>
+  !data.draft &&
+  data.locale === locale &&
+  data.category === category &&
+  slug !== currentSlug
+);
+
+const relatedPosts = allPosts
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())
+  .slice(0, 3);
+
+// Locale-aware heading
+const headingMap: Record<string, string> = {
+  pt: 'Leia também',
+  en: 'Read also',
+  es: 'Lee también',
+};
+const heading = headingMap[locale] || headingMap.pt;
+
+// Locale-aware href prefix
+const localePrefix = locale === 'pt' ? '' : `/${locale}`;
 ---
 
-<div class="related-posts">
-  <h3 class="related-title">Posts Relacionados</h3>
-  <div class="related-grid">
-    {posts.map(post => (
-      <PostCard {...post} />
-    ))}
-  </div>
-</div>
+{relatedPosts.length > 0 && (
+  <section class="related-posts" aria-label={heading}>
+    <h3 class="related-title">{heading}</h3>
+    <div class="related-grid">
+      {relatedPosts.map(post => (
+        <PostCard
+          title={post.data.title}
+          description={post.data.description}
+          image={post.data.image}
+          href={`${localePrefix}/posts/${post.slug}`}
+          category={post.data.category}
+          date={post.data.publishedAt.toISOString()}
+          readingTime={post.data.readingTime}
+        />
+      ))}
+    </div>
+  </section>
+)}
 
 <style>
   .related-posts {

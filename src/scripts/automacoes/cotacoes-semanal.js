@@ -4,7 +4,7 @@
  * Gera um resumo semanal do mercado financeiro
  */
 
-import { generateText, generateImage } from '../apis/kie-ai.js';
+import { generateText, generateCoverImage } from '../apis/kie-ai.js';
 import { getTickerRates } from '../apis/exchange-rate.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
@@ -130,24 +130,6 @@ ${locale === 'pt' ? `
   return { slug, frontmatter };
 }
 
-async function downloadImage(url, filename) {
-  try {
-    if (!existsSync(IMAGES_DIR)) {
-      mkdirSync(IMAGES_DIR, { recursive: true });
-    }
-    const response = await fetch(url);
-    if (response.ok) {
-      const buffer = Buffer.from(await response.arrayBuffer());
-      const fullPath = join(IMAGES_DIR, filename);
-      writeFileSync(fullPath, buffer);
-      return `/images/posts/${filename}`;
-    }
-  } catch (err) {
-    console.warn(`⚠️ Falha ao baixar imagem: ${err.message}`);
-  }
-  return '';
-}
-
 async function main() {
   console.log('🚀 Gerando resumo semanal de cotações...');
 
@@ -156,11 +138,10 @@ async function main() {
     const rates = await getTickerRates();
     console.log(`💱 USD/BRL: ${rates.USDBRL} | EUR/BRL: ${rates.EURBRL}`);
 
-    // Generate cover image (shared across all 3 locales)
+    // Generate cover image (SVG local, shared across all 3 locales)
     console.log('🖼️ Gerando imagem de capa...');
-    const imageUrl = generateImage('financial market weekly summary currency exchange rates stocks', 'cover');
-    const imageFilename = `cotacoes-semana-${new Date().toISOString().split('T')[0]}.jpg`;
-    const imagePath = await downloadImage(imageUrl, imageFilename);
+    const imageSlug = `cotacoes-semana-${new Date().toISOString().split('T')[0]}`;
+    const imagePath = generateCoverImage('financial market weekly summary currency exchange rates', imageSlug, 'posts');
 
     // Generate posts for all languages
     const locales = ['pt', 'en', 'es'];

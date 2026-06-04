@@ -1,10 +1,10 @@
 /**
  * Gerador de Dicas Financeiras (PT + EN + ES)
- * Executa via GitHub Actions 3x/semana (seg, qua, sex às 6h)
- * Gera um post completo em 3 idiomas com imagens via Groq + Pollinations
+ * Executa via GitHub Actions diariamente às 6h BRT
+ * Gera um post completo em 3 idiomas com imagens SVG locais via Groq
  */
 
-import { generateBlogPost, generateText } from '../apis/kie-ai.js';
+import { generateBlogPost, generateText, generateCoverImage } from '../apis/kie-ai.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -98,9 +98,11 @@ function createSlug(title) {
 }
 
 /**
- * Download image from URL and save locally
+ * Download image from URL and save locally (fallback, rarely used now)
  */
 async function downloadImage(url, filename) {
+  // If it's our SVG marker, skip download
+  if (url && url.startsWith('__SVG_GENERATE__')) return '';
   try {
     const response = await fetch(url);
     if (response.ok) {
@@ -119,10 +121,10 @@ async function downloadImage(url, filename) {
 }
 
 /**
- * Process inline images in content - download and replace URLs with local paths
+ * Process inline images in content - replace Pollinations URLs with local SVGs
  */
 async function processInlineImages(content, slugBase) {
-  const inlineImageRegex = /!\[([^\]]*)\]\((https:\/\/image\.pollinations\.ai[^)]+)\)/g;
+  const inlineImageRegex = /!\[([^\]]*)\]\((https:\/\/image\.pollinations\.ai[^)]+|__SVG_GENERATE__[^)]+)\)/g;
   const matches = [];
   let match;
 
@@ -134,7 +136,7 @@ async function processInlineImages(content, slugBase) {
   for (let i = 0; i < matches.length; i++) {
     const img = matches[i];
     console.log(`🖼️ Gerando imagem inline ${i + 1}...`);
-    const localPath = await downloadImage(img.url, `${slugBase}-${i + 1}.jpg`);
+    const localPath = generateCoverImage(img.alt || `${slugBase} section ${i}`, `${slugBase}-${i + 1}`, 'posts');
     if (localPath) {
       processed = processed.replace(img.full, `![${img.alt}](${localPath})`);
     } else {
@@ -203,13 +205,10 @@ async function main() {
     const slugPt = createSlug(post.title);
     const today = new Date().toISOString().split('T')[0];
 
-    // 2. Download cover image
-    let imagePath = '';
-    if (post.image) {
-      console.log('🖼️ Gerando imagem de capa...');
-      imagePath = await downloadImage(post.image, `${slugPt}.jpg`);
-      if (imagePath) console.log(`🖼️ Capa salva: ${imagePath}`);
-    }
+    // 2. Generate cover image (SVG, local, no external API)
+    console.log('🖼️ Gerando imagem de capa...');
+    const imagePath = generateCoverImage(post.title, slugPt, 'posts');
+    console.log(`🖼️ Capa salva: ${imagePath}`);
 
     // 3. Process inline images for PT
     console.log('🖼️ Processando imagens inline PT...');
