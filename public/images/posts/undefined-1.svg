@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0d1117"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
+    </linearGradient>
+  </defs>
+  
+  <circle cx="1020" cy="94.5" r="86.74261339008808" fill="#00F0FF" opacity="0.03"/>
+  <circle cx="180" cy="504" r="68.49689145805314" fill="#A91079" opacity="0.04"/>
+  <path d="M600 300 L780.0 300.0 A180 180 0 0 1 525.0 463.6 Z" fill="#00F0FF" opacity="0.7"/>
+  <path d="M600 300 L525.0 463.6 A180 180 0 0 1 436.6 224.6 Z" fill="#A91079" opacity="0.75"/>
+  <path d="M600 300 L436.6 224.6 A180 180 0 0 1 613.7 120.5 Z" fill="#8B949E" opacity="0.7999999999999999"/>
+  <path d="M600 300 L613.7 120.5 A180 180 0 0 1 757.7 213.1 Z" fill="#30363D" opacity="0.85"/>
+  <path d="M600 300 L757.7 213.1 A180 180 0 0 1 780.0 300.0 Z" fill="#21262D" opacity="0.8999999999999999"/>
+  <circle cx="600" cy="300" r="90" fill="#0d1117"/>
+</svg>
