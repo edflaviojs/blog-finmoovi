@@ -10,18 +10,15 @@ readingTime: 2
 
 ## O que é a Poupança?
 
-
 A caderneta de poupança é o investimento mais conhecido do Brasil. Quase todo mundo tem ou já teve. É simples, isenta de imposto de renda e tem liquidez imediata. Porém, rende pouco — geralmente perde para a inflação.
 
 ## Como rende
-
 
 A regra mudou em 2012:
 - **Selic > 8,5% ao ano:** poupança rende 0,5% ao mês + TR
 - **Selic ≤ 8,5% ao ano:** poupança rende 70% da Selic + TR
 
 ## Poupança vs. outras opções
-
 
 | Investimento | Rendimento anual* | IR | Liquidez |
 |-------------|-------------------|-----|----------|
@@ -34,15 +31,12 @@ A regra mudou em 2012:
 
 ## Por que a poupança não é o melhor investimento
 
-
-
 1. Rende menos que a inflação em muitos cenários
 2. Rendimento só é creditado no "aniversário" (dia do depósito)
 3. Se sacar antes do aniversário, perde o rendimento do mês
 4. Existem opções tão seguras que rendem mais (Tesouro Selic)
 
 ## Quando a poupança faz sentido
-
 
 - Para valores muito pequenos (menos de R$ 100)
 - Para quem não quer complexidade nenhuma

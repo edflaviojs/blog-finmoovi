@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is Financiamento?
 
-
 Financiamento is when a bank lends you money to buy something of high value (house, car, etc.) and you pay it back in installments over the years. The purchased asset serves as collateral — if you stop paying, the bank can take it.
 
 ## Common Types
-
 
 ### Imobiliário Financiamento
 
@@ -32,8 +30,6 @@ Financiamento is when a bank lends you money to buy something of high value (hou
 
 ## Tips to finance well
 
-
-
 1. **Make the largest down payment possible** — reduces total interest
 2. **Choose the shortest term that fits your budget** — less interest
 3. **Compare rates between banks** — the difference can be huge
@@ -41,6 +37,5 @@ Financiamento is when a bank lends you money to buy something of high value (hou
 5. **Amortize whenever possible** — every extra R$ 1,000 saves thousands
 
 ## How much does a financiamento cost
-
 
 A R$ 400,000 property financed over 30 years at 10% per year costs around R$ 1,000,000 in total. You pay more than double the property's value in interest.

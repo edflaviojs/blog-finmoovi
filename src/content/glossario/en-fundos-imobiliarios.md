@@ -10,12 +10,9 @@ readingTime: 2
 
 ## What are Real Estate Funds (FIIs)?
 
-
 Real Estate Funds are like "investor condominiums" that pool money to buy properties (malls, warehouses, offices) or securities from the real estate sector. You buy shares on the stock exchange and receive monthly rents.
 
 ## How does it work?
-
-
 
 1. The fund buys properties with the money from the shareholders
 2. The properties are rented to companies
@@ -23,7 +20,6 @@ Real Estate Funds are like "investor condominiums" that pool money to buy proper
 4. Returns are **exempt from IR** for individuals
 
 ## Advantages
-
 
 - Tax-free monthly income
 - Invest in properties with little money (from R$ 10)
@@ -33,7 +29,6 @@ Real Estate Funds are like "investor condominiums" that pool money to buy proper
 
 ## Types of FIIs
 
-
 | Type | Example | Characteristic |
 |------|---------|---------------|
 | Tijolo | HGLG11 | Physical properties (warehouses) |
@@ -42,6 +37,5 @@ Real Estate Funds are like "investor condominiums" that pool money to buy proper
 | FOF | BCFF11 | Fund that invests in other FIIs |
 
 ## How much does it yield?
-
 
 The market average is 0.7% to 1% per month in returns. With R$ 100,000 invested, you can receive R$ 700-1,000/month exempt from IR.

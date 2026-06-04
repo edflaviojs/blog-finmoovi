@@ -10,12 +10,9 @@ readingTime: 2
 
 ## ¿Qué son los Fondos Inmobiliarios (FIIs)?
 
-
 Los Fondos Inmobiliarios son como "condominios de inversores" que juntan dinero para comprar inmuebles (centros comerciales, almacenes, oficinas) o títulos del sector inmobiliario. Usted compra cuotas en la bolsa y recibe alquileres mensuales.
 
 ## ¿Cómo funciona?
-
-
 
 1. El fondo compra inmuebles con el dinero de los cotizantes
 2. Los inmuebles son alquilados a empresas
@@ -23,7 +20,6 @@ Los Fondos Inmobiliarios son como "condominios de inversores" que juntan dinero 
 4. Rendimientos son **exentos de IR** para persona física
 
 ## Ventajas
-
 
 - Renta mensual exenta de impuesto
 - Invertir en inmuebles con poco dinero (a partir de R$ 10)
@@ -33,7 +29,6 @@ Los Fondos Inmobiliarios son como "condominios de inversores" que juntan dinero 
 
 ## Tipos de FIIs
 
-
 | Tipo | Ejemplo | Característica |
 |------|---------|---------------|
 | Ladrillo | HGLG11 | Inmuebles físicos (almacenes) |
@@ -42,6 +37,5 @@ Los Fondos Inmobiliarios son como "condominios de inversores" que juntan dinero 
 | FOF | BCFF11 | Fondo que invierte en otros FIIs |
 
 ## ¿Cuánto rinde?
-
 
 El promedio del mercado es de 0,7% a 1% al mes en rendimientos. Con R$ 100.000 invertidos, usted puede recibir R$ 700-1.000/mes exentos de IR.

@@ -10,16 +10,13 @@ readingTime: 1
 
 ## O que é Wealth Management?
 
-
 Wealth Management (gestão de patrimônio) é um serviço financeiro premium que cuida de todos os aspectos da vida financeira de uma pessoa: investimentos, impostos, herança, seguros e planejamento de longo prazo.
 
 ## Para quem é
 
-
 Geralmente voltado para pessoas com patrimônio acima de R$ 1 milhão. Mas os conceitos podem ser aplicados por qualquer pessoa:
 
 ## Pilares do Wealth Management
-
 
 ### 1. Gestão de Investimentos
 
@@ -47,7 +44,6 @@ Geralmente voltado para pessoas com patrimônio acima de R$ 1 milhão. Mas os co
 - Diversificação geográfica
 
 ## Versão acessível (faça você mesmo)
-
 
 Mesmo sem um wealth manager, você pode:
 

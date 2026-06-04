@@ -10,11 +10,9 @@ readingTime: 1
 
 ## O que é Hedge?
 
-
 Hedge (pronuncia-se "rédje") é uma estratégia de proteção financeira. É como um seguro para seus investimentos. Se você tem medo de que o dólar suba e prejudique seus custos, pode fazer um hedge cambial para se proteger.
 
 ## Exemplos práticos
-
 
 ### Hedge cambial
 
@@ -33,7 +31,6 @@ Hedge (pronuncia-se "rédje") é uma estratégia de proteção financeira. É co
 
 ## Hedge para pessoa física
 
-
 Você não precisa de derivativos complexos. Formas simples de hedge:
 
 1. **Dolarizar parte da carteira** — ETFs internacionais (IVVB11)
@@ -42,6 +39,5 @@ Você não precisa de derivativos complexos. Formas simples de hedge:
 4. **Reserva de emergência** — protege contra imprevistos
 
 ## Custo do hedge
-
 
 Toda proteção tem um custo. Assim como seguro de carro, o hedge reduz seu ganho potencial em troca de limitar suas perdas. O equilíbrio entre proteção e custo é pessoal.

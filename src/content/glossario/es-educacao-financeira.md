@@ -10,11 +10,9 @@ readingTime: 2
 
 ## ¿Qué es Educación Financiera?
 
-
 Educación financiera es aprender a manejar el dinero de forma inteligente. No se trata de volverse rico rápidamente — se trata de entender cómo funciona el dinero para tomar mejores decisiones en el día a día.
 
 ## Los 4 pilares
-
 
 ### 1. Ganar
 
@@ -46,12 +44,9 @@ Educación financiera es aprender a manejar el dinero de forma inteligente. No s
 
 ## Por qué la escuela no enseña
 
-
 Desafortunadamente, la educación financiera no es prioridad en el currículo escolar brasileño. La mayoría de las personas aprenden sobre el dinero por prueba y error — generalmente después de cometer errores costosos.
 
 ## Cómo empezar
-
-
 
 1. Anote todos sus gastos por 30 días
 2. Monte un presupuesto simple

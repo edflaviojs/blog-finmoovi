@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is Hedge?
 
-
 Hedge (pronounced "rédje") is a financial protection strategy. It's like an insurance policy for your investments. If you're afraid that the dollar will rise and hurt your costs, you can do a currency hedge to protect yourself.
 
 ## Practical Examples
-
 
 ### Currency Hedge
 
@@ -33,7 +31,6 @@ Hedge (pronounced "rédje") is a financial protection strategy. It's like an ins
 
 ## Hedge for Individuals
 
-
 You don't need complex derivatives. Simple forms of hedge:
 
 1. **Dollarizing part of the portfolio** — international ETFs (IVVB11)
@@ -42,6 +39,5 @@ You don't need complex derivatives. Simple forms of hedge:
 4. **Emergency reserve** — protects against unforeseen events
 
 ## Cost of Hedge
-
 
 All protection comes with a cost. Just like car insurance, hedge reduces your potential gain in exchange for limiting your losses. The balance between protection and cost is personal.

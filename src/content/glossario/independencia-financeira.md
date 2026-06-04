@@ -10,18 +10,15 @@ readingTime: 2
 
 ## O que é Independência Financeira?
 
-
 Independência financeira é quando seus investimentos geram renda suficiente para pagar todas as suas contas — sem precisar trabalhar. Você trabalha porque quer, não porque precisa.
 
 ## A fórmula
-
 
 **Patrimônio necessário = Gastos anuais × 25**
 
 Isso é baseado na "regra dos 4%": você pode retirar 4% do patrimônio por ano sem que ele acabe.
 
 ## Exemplo
-
 
 - Gastos mensais: R$ 5.000
 - Gastos anuais: R$ 60.000
@@ -30,7 +27,6 @@ Isso é baseado na "regra dos 4%": você pode retirar 4% do patrimônio por ano 
 Com R$ 1,5 milhão investidos rendendo 8% ao ano, você teria R$ 120.000/ano (R$ 10.000/mês) — mais que suficiente.
 
 ## Quanto tempo leva
-
 
 Depende de quanto você poupa:
 
@@ -44,8 +40,6 @@ Depende de quanto você poupa:
 
 ## Passos para a independência financeira
 
-
-
 1. Calcule seus gastos mensais reais
 2. Defina seu "número" (gastos × 25)
 3. Aumente sua taxa de poupança
@@ -55,6 +49,5 @@ Depende de quanto você poupa:
 7. Acompanhe o progresso mensalmente
 
 ## Independência financeira parcial
-
 
 Não precisa ser tudo ou nada. Ter 50% dos gastos cobertos por renda passiva já muda sua vida — você pode trabalhar meio período, mudar de carreira ou aceitar um salário menor fazendo o que ama.

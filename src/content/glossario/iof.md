@@ -10,11 +10,9 @@ readingTime: 2
 
 ## O que é IOF?
 
-
 IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sobre diversas operações financeiras: empréstimos, câmbio, seguros e até investimentos resgatados em menos de 30 dias.
 
 ## Onde o IOF aparece
-
 
 ### Investimentos (renda fixa)
 
@@ -39,11 +37,9 @@ IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sob
 
 ## Dica prática
 
-
 Se você investiu em CDB ou Tesouro Selic, espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a reserva de emergência.
 
 ## Tabela regressiva do IOF (investimentos)
-
 
 | Dias | IOF sobre rendimento |
 |------|---------------------|

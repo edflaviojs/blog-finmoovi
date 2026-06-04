@@ -10,18 +10,15 @@ readingTime: 2
 
 ## What is Foreign Exchange?
 
-
 Foreign Exchange is the exchange of one currency for another. When you buy dollars to travel or when a company imports products, you are making a foreign exchange transaction. The exchange rate indicates how much one currency costs in relation to another.
 
 ## How does it work? the exchange rate
-
 
 - **USD/BRL = 5,50** means that 1 dollar costs R$ 5,50
 - The rate changes every second in the market
 - It is influenced by interest rates, inflation, politics, and capital flow
 
 ## Types of Foreign Exchange
-
 
 | Type | Use | Spread |
 |------|-----|--------|
@@ -31,8 +28,6 @@ Foreign Exchange is the exchange of one currency for another. When you buy dolla
 
 ## Tips for buying foreign currency
 
-
-
 1. **Buy in small amounts** — don't try to time the best moment
 2. **Compare exchange offices** — spreads vary greatly
 3. **Avoid airports** — rates are the worst
@@ -40,6 +35,5 @@ Foreign Exchange is the exchange of one currency for another. When you buy dolla
 5. **IOF:** 4,38% on card, 1,1% in cash
 
 ## Foreign Exchange and investments
-
 
 Investing in dollar-denominated assets (international ETFs, BDRs) is a way to protect yourself from the devaluation of the real. When the dollar rises, your international investments appreciate in reals.

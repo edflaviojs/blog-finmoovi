@@ -10,11 +10,9 @@ readingTime: 2
 
 ## O que é Imposto de Renda?
 
-
 O Imposto de Renda (IR) é um tributo cobrado pelo governo federal sobre os rendimentos das pessoas. Quanto mais você ganha, mais paga (sistema progressivo). Todo ano, entre março e maio, é preciso fazer a Declaração de IR.
 
 ## Tabela progressiva 2025 (salários)
-
 
 | Faixa de renda mensal | Alíquota |
 |----------------------|----------|
@@ -25,7 +23,6 @@ O Imposto de Renda (IR) é um tributo cobrado pelo governo federal sobre os rend
 | Acima de R$ 4.664,68 | 27,5% |
 
 ## IR sobre investimentos
-
 
 ### Tabela regressiva (renda fixa, fundos)
 
@@ -45,8 +42,6 @@ O Imposto de Renda (IR) é um tributo cobrado pelo governo federal sobre os rend
 - Venda de ações até R$ 20.000/mês
 
 ## Dicas para pagar menos IR (legalmente)
-
-
 
 1. Invista em LCI/LCA (isentos)
 2. Mantenha investimentos por mais de 2 anos (alíquota menor)

@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is Treasury Direct?
 
-
 Treasury Direct is a Brazilian government program that allows anyone to lend money to the government and receive interest in return. It's like the government is borrowing money from you and paying you back with interest.
 
 ## Types of securities
-
 
 ### Treasury Selic (LFT)
 
@@ -39,15 +37,12 @@ Treasury Direct is a Brazilian government program that allows anyone to lend mon
 
 ## How to invest?
 
-
-
 1. Open an account with a brokerage firm (zero fee for most)
 2. Access the Treasury Direct website
 3. Choose the security that suits your goal
 4. Invest from R$ 30
 
 ## Costs
-
 
 - B3 custody fee: 0.20% per year (exempt up to R$ 10,000 in Treasury Selic)
 - Regressive IR: 22.5% (up to 180 days) to 15% (over 720 days)

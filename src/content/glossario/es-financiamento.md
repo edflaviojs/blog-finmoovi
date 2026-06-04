@@ -10,11 +10,9 @@ readingTime: 2
 
 ## ¿Qué es Financiamiento?
 
-
 Financiamiento es cuando un banco presta dinero para que compres algo de alto valor (casa, coche, etc.) y tú lo pagas de vuelta en plazos a lo largo de años. El bien comprado queda como garantía — si tú dejas de pagar, el banco puede tomarlo.
 
 ## Tipos comunes
-
 
 ### Financiamiento inmobiliario
 
@@ -32,8 +30,6 @@ Financiamiento es cuando un banco presta dinero para que compres algo de alto va
 
 ## Consejos para financiar bien
 
-
-
 1. **Dale la mayor entrada posible** — reduce los intereses totales
 2. **Elige el plazo más corto que quepa en tu bolsillo** — menos intereses
 3. **Compara tasas entre bancos** — la diferencia puede ser enorme
@@ -41,6 +37,5 @@ Financiamiento es cuando un banco presta dinero para que compres algo de alto va
 5. **Amortiza siempre que puedas** — cada R$ 1.000 extra ahorra miles
 
 ## Cuánto cuesta un financiamiento
-
 
 Un inmueble de R$ 400.000 financiado en 30 años a 10% a.a. cuesta en total cerca de R$ 1.000.000. Tú pagas más del doble del valor del inmueble en intereses.

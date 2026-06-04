@@ -10,11 +10,9 @@ readingTime: 2
 
 ## ¿Qué es Ganancia de Capital?
 
-
 Ganancia de capital es la ganancia que obtienes cuando vendes algo por más de lo que pagaste. Compraste una acción por R$ 20 y la vendiste por R$ 30? Tu ganancia de capital es R$ 10. Esta ganancia puede ser gravada por el Impuesto de Renta.
 
 ## Donde incide
-
 
 - Venta de acciones (más de R$ 20.000/mes)
 - Venta de inmuebles
@@ -23,7 +21,6 @@ Ganancia de capital es la ganancia que obtienes cuando vendes algo por más de l
 - Venta de cualquier bien por encima del valor de compra
 
 ## Alícuotas
-
 
 ### Acciones
 
@@ -43,12 +40,10 @@ Ganancia de capital es la ganancia que obtienes cuando vendes algo por más de l
 
 ## ¿Cómo calcular?
 
-
 **Ganancia de Capital = Precio de Venta - Precio de Compra - Costos**
 
 Costos incluyen: corretaje, tasas, reformas (inmuebles), etc.
 
 ## Consejo importante
-
 
 Mantén registro de todas las compras (notas de corretaje, contratos). Sin comprobante del precio de compra, la Receita puede considerar el costo como cero — y cobrar impuesto sobre el valor total de la venta.

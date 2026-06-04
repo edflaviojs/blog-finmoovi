@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is Income Tax?
 
-
 The Income Tax (IR) is a tax levied by the federal government on individuals' income. The more you earn, the more you pay (progressive system). Every year, between March and May, you need to file your Income Tax Return.
 
 ## Progressive Table 2025 (salaries)
-
 
 | Monthly Income Range | Tax Rate |
 |----------------------|----------|
@@ -25,7 +23,6 @@ The Income Tax (IR) is a tax levied by the federal government on individuals' in
 | Above R$ 4,664.68 | 27.5% |
 
 ## Income Tax on Investments
-
 
 ### Regressive Table (fixed income, funds)
 
@@ -45,8 +42,6 @@ The Income Tax (IR) is a tax levied by the federal government on individuals' in
 - Sale of stocks up to R$ 20,000/month
 
 ## Tips to Pay Less Income Tax (legally)
-
-
 
 1. Invest in LCI/LCA (exempt)
 2. Keep investments for more than 2 years (lower tax rate)

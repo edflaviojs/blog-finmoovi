@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is Renda Fixa?
 
-
 Renda Fixa is a category of investments where you know (or can predict) how much you'll get back. Unlike stocks, where the price fluctuates freely, in Renda Fixa the rules are defined at the time of application.
 
 ## Types of Renda Fixa
-
 
 | Investment | Issuer | FGC Guarantee | Liquidity |
 |-------------|---------|-------------|----------|
@@ -26,7 +24,6 @@ Renda Fixa is a category of investments where you know (or can predict) how much
 
 ## Advantages
 
-
 - Predictability of return
 - Lower risk than variable income
 - FGC protection (up to R$ 250,000 per bank)
@@ -34,13 +31,11 @@ Renda Fixa is a category of investments where you know (or can predict) how much
 
 ## Disadvantages
 
-
 - Lower returns in the long term (vs. stocks)
 - Regressive IR (the less time, the more tax)
 - May lose to inflation if the rate is low
 
 ## For whom is it indicated
-
 
 - Investment beginners
 - Emergency reserve (Tesouro Selic or CDB with daily liquidity)

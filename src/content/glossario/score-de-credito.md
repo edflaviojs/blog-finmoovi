@@ -10,11 +10,9 @@ readingTime: 2
 
 ## O que é Score de Crédito?
 
-
 Score de crédito é uma nota de 0 a 1000 que os birôs de crédito (Serasa, SPC, Boa Vista) dão para você. Essa nota indica para bancos e lojas qual a chance de você pagar suas contas em dia.
 
 ## Faixas de score
-
 
 | Faixa | Pontuação | Significado |
 |-------|-----------|-------------|
@@ -24,7 +22,6 @@ Score de crédito é uma nota de 0 a 1000 que os birôs de crédito (Serasa, SPC
 | Muito bom | 701-1000 | Baixo risco, bom pagador |
 
 ## O que afeta seu score
-
 
 **Aumenta:**
 - Pagar contas em dia
@@ -40,8 +37,6 @@ Score de crédito é uma nota de 0 a 1000 que os birôs de crédito (Serasa, SPC
 
 ## Como melhorar seu score
 
-
-
 1. Pague todas as contas em dia (mesmo as pequenas)
 2. Ative o Cadastro Positivo no Serasa
 3. Negocie e quite dívidas em aberto
@@ -49,7 +44,6 @@ Score de crédito é uma nota de 0 a 1000 que os birôs de crédito (Serasa, SPC
 5. Mantenha dados cadastrais atualizados
 
 ## Por que o score importa
-
 
 Com score alto você consegue:
 - Taxas de juros menores em financiamentos

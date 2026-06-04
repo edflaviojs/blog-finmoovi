@@ -10,11 +10,9 @@ readingTime: 2
 
 ## O que é Zona de Conforto Financeira?
 
-
 É o estado onde suas finanças estão organizadas e você não vive com medo do fim do mês. Significa ter: gastos sob controle, reserva de emergência formada, dívidas quitadas e investimentos crescendo.
 
 ## Os 5 pilares da zona de conforto financeira
-
 
 ### 1. Gastos menores que a renda
 
@@ -46,8 +44,6 @@ readingTime: 2
 
 ## Como chegar lá
 
-
-
 1. Monte um orçamento (saiba para onde vai seu dinheiro)
 2. Quite dívidas caras primeiro
 3. Monte a reserva de emergência
@@ -55,7 +51,6 @@ readingTime: 2
 5. Aumente aportes conforme a renda cresce
 
 ## Quanto tempo leva?
-
 
 Depende da sua situação atual, mas com disciplina:
 - Sair das dívidas: 6-18 meses

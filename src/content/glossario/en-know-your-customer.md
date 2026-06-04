@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is KYC (Know Your Customer)?
 
-
 KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verify who you are. When they ask for your ID, CPF, proof of address, and selfie to open an account — that's KYC.
 
 ## Why it exists
-
 
 - Prevent money laundering
 - Combat terrorism financing
@@ -22,7 +20,6 @@ KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verif
 - Comply with Central Bank regulations
 
 ## What they ask for
-
 
 ### Basic level
 
@@ -44,7 +41,6 @@ KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verif
 
 ## Where you'll find KYC
 
-
 - Opening a bank or brokerage account
 - Cryptocurrency exchanges
 - Fintechs and digital wallets
@@ -52,8 +48,6 @@ KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verif
 - Investments above certain values (e.g., R$ 10,000 in a CDB or R$ 5,000 in an ETF)
 
 ## Tips
-
-
 
 1. Keep digital copies of your documents on your phone (it's easier)
 2. Proof of address: utility bills from the last 3 months

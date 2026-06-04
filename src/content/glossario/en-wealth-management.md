@@ -10,16 +10,13 @@ readingTime: 1
 
 ## What is Wealth Management?
 
-
 Wealth Management (gestão de patrimônio) is a premium financial service that takes care of all aspects of a person's financial life: investments, taxes, inheritance, insurance, and long-term planning.
 
 ## For whom is it
 
-
 It is generally aimed at people with assets above R$ 1 million. But the concepts can be applied by anyone:
 
 ## Pillars of Wealth Management
-
 
 ### 1. Investment Management
 
@@ -47,7 +44,6 @@ It is generally aimed at people with assets above R$ 1 million. But the concepts
 - Geographical diversification
 
 ## Accessible version (do it yourself)
-
 
 Even without a wealth manager, you can:
 

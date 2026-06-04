@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is Capital Gain?
 
-
 Capital gain is the profit you make when you sell something for more than you paid for it. You bought a stock for R$ 20 and sold it for R$ 30? Your capital gain is R$ 10. This profit can be taxed by the Income Tax.
 
 ## Where it applies
-
 
 - Sale of stocks (above R$ 20,000/month)
 - Sale of real estate
@@ -23,7 +21,6 @@ Capital gain is the profit you make when you sell something for more than you pa
 - Sale of any asset above its purchase value
 
 ## Tax rates
-
 
 ### Stocks
 
@@ -43,12 +40,10 @@ Capital gain is the profit you make when you sell something for more than you pa
 
 ## How to calculate?
 
-
 **Capital Gain = Selling Price - Purchase Price - Costs**
 
 Costs include: brokerage, fees, renovations (real estate), etc.
 
 ## Important tip
-
 
 Keep a record of all purchases (brokerage notes, contracts). Without proof of the purchase price, the Revenue Service may consider the cost as zero — and charge tax on the total sale value.

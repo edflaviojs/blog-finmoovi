@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is Financial Comfort Zone?
 
-
 It's the state where your finances are organized and you don't live in fear of the end of the month. It means having: expenses under control, emergency reserve formed, debts paid off and investments growing.
 
 ## The 5 pillars of the financial comfort zone
-
 
 ### 1. Expenses lower than income
 
@@ -46,8 +44,6 @@ It's the state where your finances are organized and you don't live in fear of t
 
 ## How to get there
 
-
-
 1. Create a budget (know where your money is going)
 2. Pay off expensive debts first
 3. Build the emergency reserve
@@ -55,7 +51,6 @@ It's the state where your finances are organized and you don't live in fear of t
 5. Increase contributions as income grows
 
 ## How long does it take?
-
 
 It depends on your current situation, but with discipline:
 - Getting out of debt: 6-18 months

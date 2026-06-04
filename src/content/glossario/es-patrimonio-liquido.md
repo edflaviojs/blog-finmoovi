@@ -10,11 +10,9 @@ readingTime: 2
 
 ## ¿Qué es Patrimônio Líquido?
 
-
 Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem menos tudo que você deve. É o número mais importante das suas finanças pessoais — mostra sua riqueza real.
 
 ## ¿Cómo calcular?
-
 
 ### Seus Ativos (o que você tem)
 
@@ -33,7 +31,6 @@ Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem
 
 ### Exemplo
 
-
 | Ativos | Valor |
 |--------|-------|
 | Investimentos | R$ 50.000 |
@@ -51,14 +48,12 @@ Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem
 
 ## Por que acompanhar
 
-
 - Mostra se você está enriquecendo ou empobrecendo
 - Permite definir metas concretas (ex: "quero R$ 1 milhão em patrimônio")
 - Revela se suas dívidas estão sob controle
 - É mais importante que salário (renda alta com dívidas altas = patrimônio baixo)
 
 ## Meta de patrimônio por idade (referência)
-
 
 - 30 anos: 1x seu salário anual
 - 40 anos: 3x seu salário anual

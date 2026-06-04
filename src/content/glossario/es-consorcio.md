@@ -10,12 +10,9 @@ readingTime: 2
 
 ## ¿Qué es Consorcio?
 
-
 Consorcio es un sistema donde varias personas se unen para comprar algo (coche, inmueble, moto). Todos los meses, cada participante paga una cuota. Cada mes, uno o más participantes son beneficiados (por sorteo o puja) y reciben la carta de crédito para comprar el bien.
 
 ## ¿Cómo funciona?
-
-
 
 1. Entrar en un grupo de consorcio
 2. Pagar cuotas mensuales (sin intereses, pero con tasa de administración)
@@ -25,7 +22,6 @@ Consorcio es un sistema donde varias personas se unen para comprar algo (coche, 
 
 ## Ventajas
 
-
 - No tiene intereses (solo tasa de administración de 10-20% del total)
 - Disciplina de ahorro forzado
 - Poder de compra al contado (carta de crédito)
@@ -33,14 +29,12 @@ Consorcio es un sistema donde varias personas se unen para comprar algo (coche, 
 
 ## Desventajas
 
-
 - No sabe cuándo será beneficiado
 - La tasa de administración puede ser alta
 - El dinero queda bloqueado hasta ser beneficiado o hasta que el grupo termine
 - Las cuotas pueden ser reajustadas
 
 ## Consorcio vs. Financiación
-
 
 | | Consorcio | Financiación |
 |--|-----------|---------------|
@@ -50,7 +44,6 @@ Consorcio es un sistema donde varias personas se unen para comprar algo (coche, 
 | Previsibilidad | Baja | Alta |
 
 ## Cuándo vale la pena
-
 
 - Cuando no tiene prisa para recibir el bien
 - Para cambiar de coche dentro de 2-3 años

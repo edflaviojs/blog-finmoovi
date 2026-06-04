@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is Diversificação?
 
-
 Diversificação is the strategy of spreading your money among different types of investments. The idea is simple: if one investment goes bad, the others make up for it. It's the famous "don't put all your eggs in one basket".
 
 ## Por que diversificar?
-
 
 - Reduces the risk of losing everything
 - Smooths out the fluctuations in your portfolio
@@ -22,7 +20,6 @@ Diversificação is the strategy of spreading your money among different types o
 - Protects against crises in specific sectors
 
 ## Como diversificar na prática
-
 
 ### Por classe de ativo
 
@@ -42,6 +39,5 @@ Diversificação is the strategy of spreading your money among different types o
 | Cripto | 5% | Bitcoin, Ethereum |
 
 ## Erro comum
-
 
 Many people think that having 10 different CDBs is diversifying. It's not — they're all fixed income. Real diversification is having different asset classes that behave in different ways.

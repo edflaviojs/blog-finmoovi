@@ -10,18 +10,15 @@ readingTime: 1
 
 ## ¿Qué es Liquidez?
 
-
 Liquidez é a capacidade de transformar um investimento em dinheiro rapidamente. Quanto mais líquido, mais rápido você acessa o dinheiro.
 
 ## Tipos de liquidez
-
 
 - **Liquidez diária (D+0):** Dinheiro disponível no mesmo dia. Ex: Tesouro Selic, CDB com liquidez diária.
 - **Liquidez D+1:** Disponível no dia seguinte. Ex: Alguns fundos de investimento.
 - **Liquidez no vencimento:** Só pode resgatar na data combinada. Ex: CDB com prazo, LCI/LCA.
 
 ## Escala de liquidez
-
 
 Do mais líquido ao menos líquido:
 
@@ -34,7 +31,6 @@ Do mais líquido ao menos líquido:
 7. Imóveis
 
 ## Quando a liquidez importa?
-
 
 - **Reserva de emergência:** precisa de liquidez diária
 - **Objetivos de curto prazo (< 1 ano):** liquidez alta

@@ -10,11 +10,9 @@ readingTime: 1
 
 ## ¿Qué es Amortización?
 
-
 Amortización es el acto de pagar el valor principal de una deuda poco a poco. Cada cuota que paga tiene dos partes: la amortización (que reduce el saldo deudor) y los intereses (que es el costo del préstamo).
 
 ## Tipos de amortización
-
 
 ### Tabela SAC (Sistema de Amortización Constante)
 
@@ -30,12 +28,10 @@ Amortización es el acto de pagar el valor principal de una deuda poco a poco. C
 
 ## Ejemplo práctico
 
-
 Financiamiento de R$ 100.000 en 30 años a 10% a.a.:
 - **SAC:** primera cuota ~R$ 1.111, última ~R$ 282. Total pagado: ~R$ 250.000
 - **Price:** todas las cuotas ~R$ 877. Total pagado: ~R$ 316.000
 
 ## Amortización extraordinaria
-
 
 Puede hacer pagos extras para reducir el saldo deudor más rápido. Esto ahorra miles en intereses. Siempre que tenga dinero sobrante, considere amortizar sus deudas.

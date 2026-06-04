@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is Profit Margin?
 
-
 Profit margin is what's left over from each real that comes in. If a company bills R$ 100 and has R$ 80 in costs, its profit margin is 20%. The larger the margin, the more efficient the business is.
 
 ## Types of Margin
-
 
 ### Gross Margin
 
@@ -33,7 +31,6 @@ Profit margin is what's left over from each real that comes in. If a company bil
 
 ## Practical example (clothing store)
 
-
 | | Value | Margin |
 |--|-------|--------|
 | Billing | R$ 50,000 | - |
@@ -44,13 +41,11 @@ Profit margin is what's left over from each real that comes in. If a company bil
 
 ## What it's for (investor)
 
-
 When analyzing stocks, the profit margin shows:
 - Companies with high margins have a competitive advantage
 - Increasing margins indicate improving efficiency
 - Very low margins indicate a fragile business
 
 ## For personal finance
-
 
 You also have a "margin": how much is left over from your salary after all expenses. If you earn R$ 5,000 and R$ 1,000 is left over, your personal margin is 20%. The ideal is at least 20% (50-30-20 rule).

@@ -10,11 +10,9 @@ readingTime: 1
 
 ## ¿Qué es ETF?
 
-
 ETF (Exchange Traded Fund) es un fondo de inversión que se negocia en la bolsa como si fuera una acción. Él replica un índice — por ejemplo, el BOVA11 replica el Ibovespa, entonces al comprar BOVA11 estás invirtiendo en las mayores empresas de Brasil de una vez.
 
 ## Ventajas
-
 
 - **Diversificación instantánea:** con 1 compra, inviertes en decenas de empresas
 - **Bajo costo:** tasas menores que fondos tradicionales
@@ -22,7 +20,6 @@ ETF (Exchange Traded Fund) es un fondo de inversión que se negocia en la bolsa 
 - **Liquidez:** compra y vende en el momento, como acciones
 
 ## ETFs populares en Brasil
-
 
 | ETF | O que replica | Taxa |
 |-----|--------------|------|
@@ -32,7 +29,6 @@ ETF (Exchange Traded Fund) es un fondo de inversión que se negocia en la bolsa 
 | SMAL11 | Small Caps brasileñas | 0,50% |
 
 ## Para quién es indicado
-
 
 ETFs son perfectos para quién:
 - Quiere invertir en acciones pero no sabe elegir

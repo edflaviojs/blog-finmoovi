@@ -10,12 +10,9 @@ readingTime: 1
 
 ## ¿Qué son Dividendos?
 
-
 Dividendos son la parte del beneficio que una empresa distribuye a sus accionistas. Si tienes acciones de una empresa que paga dividendos, recibes dinero periódicamente sin necesidad de vender tus acciones.
 
 ## ¿Cómo funciona?
-
-
 
 1. La empresa tiene beneficio en el trimestre/año
 2. El consejo decide distribuir parte de ese beneficio
@@ -24,13 +21,11 @@ Dividendos son la parte del beneficio que una empresa distribuye a sus accionist
 
 ## Dividendos en Brasil
 
-
 - Son **exentos de Impuesto de Renta** para persona física
 - Empresas brasileñas están obligadas a distribuir como mínimo el 25% del beneficio
 - Sectores que más pagan: bancos, eléctricas, telecomunicaciones
 
 ## Ejemplo práctico
-
 
 Si tienes 100 acciones de una empresa que paga R$ 2,00 por acción en dividendos:
 - Recibes: 100 × R$ 2,00 = **R$ 200,00**
@@ -38,6 +33,5 @@ Si tienes 100 acciones de una empresa que paga R$ 2,00 por acción en dividendos
 - Sin pagar impuesto
 
 ## Estrategia de dividendos
-
 
 Muchos inversores montan carteras enfocadas en dividendos para generar renta pasiva mensual. Con R$ 500.000 invertidos en buenas pagadoras, es posible recibir R$ 3.000-5.000/mes.

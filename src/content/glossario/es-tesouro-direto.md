@@ -10,11 +10,9 @@ readingTime: 2
 
 ## ¿Qué es Tesouro Direto?
 
-
 Tesouro Direto é um programa do governo brasileiro que permite que qualquer pessoa empreste dinheiro para o governo e receba juros em troca. É como se o governo pedisse dinheiro emprestado de você e te pagasse com juros.
 
 ## Tipos de títulos
-
 
 ### Tesouro Selic (LFT)
 
@@ -39,15 +37,12 @@ Tesouro Direto é um programa do governo brasileiro que permite que qualquer pes
 
 ## ¿Cómo invertir?
 
-
-
 1. Abra conta em uma corretora (taxa zero na maioria)
 2. Acesse o site do Tesouro Direto
 3. Escolha o título adequado ao seu objetivo
 4. Invista a partir de R$ 30
 
 ## Custos
-
 
 - Taxa de custódia B3: 0,20% ao ano (isento até R$ 10.000 no Tesouro Selic)
 - IR regressivo: 22,5% (até 180 dias) a 15% (acima de 720 dias)

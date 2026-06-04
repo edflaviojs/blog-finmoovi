@@ -10,11 +10,9 @@ readingTime: 2
 
 ## What is Private Pension?
 
-
 Private Pension is a long-term investment designed for retirement. You contribute monthly and, in the future, redeem the accumulated value (with returns). It's a complement to the INSS retirement.
 
 ## PGBL vs. VGBL
-
 
 | | PGBL | VGBL |
 |--|------|------|
@@ -23,7 +21,6 @@ Private Pension is a long-term investment designed for retirement. You contribut
 | For whom? | Those who file a complete tax return | Those who file a simplified tax return |
 
 ## Taxation Tables
-
 
 ### Progressive (better for small redemptions)
 
@@ -42,7 +39,6 @@ Private Pension is a long-term investment designed for retirement. You contribut
 
 ## Advantages
 
-
 - Tax benefits (PGBL)
 - Does not enter into inheritance (succession planning)
 - Monthly investment discipline
@@ -50,13 +46,11 @@ Private Pension is a long-term investment designed for retirement. You contribut
 
 ## Disadvantages
 
-
 - High administration fees (many funds charge 1-2%)
 - Loading fee (some charge on entry)
 - Returns may be lower than investing on your own
 - Little flexibility
 
 ## Tip
-
 
 If you're going to take out a private pension, choose funds with an administration fee below 1% and no loading fee. Traditional banks tend to charge a lot — prefer independent brokerages.

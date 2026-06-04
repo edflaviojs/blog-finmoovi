@@ -10,11 +10,9 @@ readingTime: 1
 
 ## What is Personal Budget?
 
-
 Personal budget is a plan that shows how much money comes in, how much goes out, and where it goes. It's the most basic and powerful tool in personal finance. Without a budget, you're driving in the dark.
 
 ## How to create a budget
-
 
 ### Step 1: List all income
 
@@ -45,14 +43,11 @@ Personal budget is a plan that shows how much money comes in, how much goes out,
 
 ## Budgeting tools
 
-
 - **FinMoovi** — app with automatic categorization by AI
 - Simple spreadsheet (Google Sheets)
 - Notebook and pen (it works!)
 
 ## Common mistakes
-
-
 
 1. Not including small expenses (coffee, delivery)
 2. Forgetting annual expenses (IPVA, IPTU, insurance)

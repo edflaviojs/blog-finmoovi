@@ -10,11 +10,9 @@ readingTime: 2
 
 ## O que é Renda Fixa?
 
-
 Renda Fixa é uma categoria de investimentos onde você sabe (ou pode prever) quanto vai receber de volta. Diferente de ações, onde o preço oscila livremente, na renda fixa as regras são definidas na hora da aplicação.
 
 ## Tipos de renda fixa
-
 
 | Investimento | Emissor | Garantia FGC | Liquidez |
 |-------------|---------|-------------|----------|
@@ -26,7 +24,6 @@ Renda Fixa é uma categoria de investimentos onde você sabe (ou pode prever) qu
 
 ## Vantagens
 
-
 - Previsibilidade de retorno
 - Menor risco que renda variável
 - Proteção do FGC (até R$ 250.000 por banco)
@@ -34,13 +31,11 @@ Renda Fixa é uma categoria de investimentos onde você sabe (ou pode prever) qu
 
 ## Desvantagens
 
-
 - Rendimentos menores no longo prazo (vs. ações)
 - IR regressivo (quanto menos tempo, mais imposto)
 - Pode perder para a inflação se a taxa for baixa
 
 ## Para quem é indicado
-
 
 - Iniciantes em investimentos
 - Reserva de emergência (Tesouro Selic ou CDB liquidez diária)

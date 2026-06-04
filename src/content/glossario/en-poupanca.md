@@ -10,18 +10,15 @@ readingTime: 2
 
 ## What is a Savings Account?
 
-
 The savings account is the most well-known investment in Brazil. Almost everyone has or has had one. It's simple, exempt from income tax, and has immediate liquidity. However, it yields little — generally losing to inflation.
 
 ## How it yields
-
 
 The rule changed in 2012:
 - **Selic > 8.5% per year:** savings account yields 0.5% per month + TR
 - **Selic ≤ 8.5% per year:** savings account yields 70% of Selic + TR
 
 ## Savings Account vs. other options
-
 
 | Investment | Annual Yield* | IR | Liquidity |
 |-------------|-------------------|-----|----------|
@@ -34,15 +31,12 @@ The rule changed in 2012:
 
 ## Why the savings account is not the best investment
 
-
-
 1. Yields less than inflation in many scenarios
 2. Yield is only credited on the "anniversary" (day of deposit)
 3. If withdrawn before the anniversary, the monthly yield is lost
 4. There are options just as safe that yield more (Tesouro Selic)
 
 ## When the savings account makes sense
-
 
 - For very small amounts (less than R$ 100)
 - For those who don't want any complexity

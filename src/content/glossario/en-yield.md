@@ -10,23 +10,19 @@ readingTime: 1
 
 ## What is Yield?
 
-
 Yield (rendimento) is the percentage return that an investment generates in relation to its price. The most common is the Dividend Yield (DY), which shows how much a stock or FII pays in dividends per year compared to its current price.
 
 ## Fórmula
 
-
 **Dividend Yield = (Dividends paid in the last 12 months ÷ Current price) × 100**
 
 ## Exemplo
-
 
 - Stock costs R$ 50
 - Paid R$ 4 in dividends in the last year
 - DY = 4 ÷ 50 × 100 = **8% per year**
 
 ## What is a good Yield?
-
 
 | Range | Interpretation |
 |-------|--------------|
@@ -37,13 +33,11 @@ Yield (rendimento) is the percentage return that an investment generates in rela
 
 ## Cuidados
 
-
 - Very high Yield may indicate that the price has fallen (company with problems)
 - Past Yield does not guarantee future Yield
 - Companies can cut dividends at any time
 - Compare Yield with companies in the same sector
 
 ## Yield em FIIs
-
 
 Real Estate Investment Funds (FIIs) usually have higher yields than stocks (0.7-1% per month). They are popular among those seeking monthly income.

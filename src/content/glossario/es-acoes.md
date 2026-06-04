@@ -10,12 +10,9 @@ readingTime: 1
 
 ## ¿Qué son Acciones?
 
-
 Acciones son pedazos de una empresa negociados en la Bolsa de Valores (B3 en Brasil). Cuando compras una acción de Petrobras, por ejemplo, te conviertes en socio minoritario de la empresa.
 
 ## Cómo ganar dinero con acciones
-
-
 
 1. **Valorización:** comprar barato y vender más caro
 2. **Dividendos:** recibir parte de las ganancias de la empresa
@@ -23,13 +20,11 @@ Acciones son pedazos de una empresa negociados en la Bolsa de Valores (B3 en Bra
 
 ## Riesgos
 
-
 - El precio puede caer (puedes perder dinero)
 - Empresas pueden quebrar
 - Volatilidad alta en el corto plazo
 
 ## ¿Para quién es indicado?
-
 
 Acciones son indicadas para quien:
 - Ya tiene reserva de emergencia
@@ -38,8 +33,6 @@ Acciones son indicadas para quien:
 - Quiere rendimientos por encima de la renta fija
 
 ## Cómo empezar
-
-
 
 1. Abre cuenta en una corredora (XP, Clear, Rico, etc.)
 2. Estudia las empresas antes de invertir

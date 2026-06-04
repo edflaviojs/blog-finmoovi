@@ -10,11 +10,9 @@ readingTime: 2
 
 ## ¿Qué es Diversificación?
 
-
 Diversificación es la estrategia de dispersar tu dinero entre diferentes tipos de inversiones. La idea es simple: si una inversión sale mal, las otras compensan. Es el famoso "no pongas todos los huevos en la misma cesta".
 
 ## ¿Por qué diversificar?
-
 
 - Reduce el riesgo de perder todo
 - Suaviza las oscilaciones de la cartera
@@ -22,7 +20,6 @@ Diversificación es la estrategia de dispersar tu dinero entre diferentes tipos 
 - Protege contra crisis en sectores específicos
 
 ## ¿Cómo diversificar en la práctica
-
 
 ### Por clase de activo
 
@@ -42,6 +39,5 @@ Diversificación es la estrategia de dispersar tu dinero entre diferentes tipos 
 | Cripto | 5% | Bitcoin, Ethereum |
 
 ## Error común
-
 
 Mucha gente piensa que tener 10 CDBs diferentes es diversificar. No es así — son todos renta fija. Diversificación real es tener clases de activos diferentes que se comportan de formas diferentes.

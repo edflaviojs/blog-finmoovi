@@ -10,11 +10,9 @@ readingTime: 2
 
 ## O que é Urgência Financeira?
 
-
 Urgência financeira é qualquer situação inesperada que exige dinheiro que você não planejou gastar. Pode ser uma demissão, um problema de saúde, um conserto no carro ou um eletrodoméstico que quebrou.
 
 ## Exemplos comuns
-
 
 - Perda de emprego (precisa de 3-6 meses de gastos)
 - Emergência médica (cirurgia, tratamento)
@@ -25,14 +23,12 @@ Urgência financeira é qualquer situação inesperada que exige dinheiro que vo
 
 ## Como se preparar
 
-
 A melhor proteção contra urgências financeiras é a **reserva de emergência**:
 - 6 meses de gastos para CLT
 - 12 meses para autônomos/PJ
 - Em investimento com liquidez diária (Tesouro Selic, CDB)
 
 ## O que fazer se não tem reserva
-
 
 Se a urgência chegou e você não tem reserva:
 
@@ -44,6 +40,5 @@ Se a urgência chegou e você não tem reserva:
 6. Negocie parcelamento direto com o credor
 
 ## Prevenção
-
 
 Após resolver a urgência, priorize montar sua reserva de emergência. Comece com R$ 1.000 (já cobre a maioria dos imprevistos pequenos) e vá aumentando até 6 meses de gastos.
