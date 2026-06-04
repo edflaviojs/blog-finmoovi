@@ -39,11 +39,17 @@
     msg.textContent = '';
     msg.className = 'newsletter-message';
 
+    // Detect locale from URL
+    var path = window.location.pathname;
+    var lang = 'pt';
+    if (path.startsWith('/en/') || path === '/en') lang = 'en';
+    else if (path.startsWith('/es/') || path === '/es') lang = 'es';
+
     try {
       var res = await fetch('/api/newsletter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email })
+        body: JSON.stringify({ email: email, lang: lang })
       });
 
       var data = await res.json();
@@ -62,7 +68,8 @@
     }
 
     btn.disabled = false;
-    btn.textContent = 'Inscrever';
+    var btnTexts = { pt: 'Inscrever', en: 'Subscribe', es: 'Suscribirse' };
+    btn.textContent = btnTexts[lang] || 'Inscrever';
   });
 </script>
 

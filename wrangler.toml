@@ -9,3 +9,11 @@ command = "npm run build"
 
 [build.environment]
 NODE_VERSION = "20"
+
+# KV namespace for newsletter subscribers
+# Create with: wrangler kv:namespace create NEWSLETTER_KV
+# Then update the id below with the real namespace ID
+[[kv_namespaces]]
+binding = "NEWSLETTER_KV"
+id = "NEWSLETTER_KV_ID"
+preview_id = "NEWSLETTER_KV_PREVIEW_ID"
