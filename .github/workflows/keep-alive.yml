@@ -1,0 +1,25 @@
+name: Keep Alive
+
+on:
+  schedule:
+    # Every 50 days to prevent GitHub from disabling workflows
+    - cron: '0 12 1,20 * *'
+
+permissions:
+  contents: write
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Keep workflows alive
+        run: |
+          echo "Workflows keep-alive ping: $(date -u)" >> .github/keep-alive.log
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/keep-alive.log
+          git commit -m "chore: keep-alive ping" || echo "No changes"
+          git push || echo "Nothing to push"

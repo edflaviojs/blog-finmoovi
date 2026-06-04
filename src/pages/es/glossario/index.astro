@@ -6,11 +6,7 @@ import { getCollection } from 'astro:content';
 import { t } from '../../../i18n/translations';
 
 const lang = 'es';
-// Show ES glossary terms, fallback to PT if none exist yet
-let glossario = await getCollection('glossario', ({ data }) => data.locale === 'es');
-if (glossario.length === 0) {
-  glossario = await getCollection('glossario', ({ data }) => !data.locale || data.locale === 'pt');
-}
+const glossario = await getCollection('glossario', ({ data }) => data.locale === 'es');
 const sorted = glossario.sort((a, b) => a.data.term.localeCompare(b.data.term, 'es'));
 
 const grouped = sorted.reduce((acc, item) => {

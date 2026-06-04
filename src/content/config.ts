@@ -29,12 +29,23 @@ const glossario = defineCollection({
   type: 'content',
   schema: z.object({
     term: z.string(),
-    definition: z.string(),
+    definition: z.string().optional(),
     category: z.enum(['basico', 'investimentos', 'credito', 'impostos', 'mercado']),
     relatedTerms: z.array(z.string()).default([]),
     publishedAt: z.coerce.date(),
     locale: z.enum(['pt', 'en', 'es']).default('pt'),
     translationKey: z.string().optional(),
+    image: z.string().optional(),
+    title: z.string().optional(),
+    description: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    author: z.string().default('FinMoovi'),
+    readingTime: z.number().optional(),
+    seo: z.object({
+      metaTitle: z.string().optional(),
+      metaDescription: z.string().optional(),
+      keywords: z.array(z.string()).default([]),
+    }).optional(),
   }),
 });
 

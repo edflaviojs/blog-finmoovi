@@ -5,7 +5,7 @@
  */
 
 import { generateGlossaryTerm } from './glossario-com-imagens.js';
-import { writeFileSync, mkdirSync, existsSync, readdirSync } from 'fs';
+import { writeFileSync, readFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 
@@ -53,7 +53,7 @@ function getCurrentLetter() {
     const letterFile = join(process.cwd(), '.current-letter');
     if (existsSync(letterFile)) {
       const content = readFileSync(letterFile, 'utf-8');
-      return content.trim();
+      return content.trim().toUpperCase();
     }
   } catch (error) {
     // Se não conseguir ler, começa do A
@@ -64,7 +64,7 @@ function getCurrentLetter() {
 function saveCurrentLetter(letter) {
   try {
     const letterFile = join(process.cwd(), '.current-letter');
-    writeFileSync(letterFile, letter, 'utf-8');
+    writeFileSync(letterFile, letter.toUpperCase(), 'utf-8');
   } catch (error) {
     console.warn('Não consegui salvar letra atual:', error.message);
   }
@@ -86,29 +86,41 @@ async function main() {
     currentLetter = getCurrentLetter();
     console.log(`📍 Letra atual: ${currentLetter}`);
 
+    // Validar letra
+    if (!LETTERS.includes(currentLetter)) {
+      console.warn(`⚠️ Letra inválida: ${currentLetter}. Resetando para A.`);
+      currentLetter = 'A';
+      saveCurrentLetter(currentLetter);
+    }
+
     // Gerar termos para a letra atual
     const terms = POPULAR_TERMS[currentLetter] || [`${currentLetter}termo financeiro`];
     const selectedTerm = terms[0]; // Pega o primeiro termo da lista
 
     console.log(`📚 Gerando glossário para: ${selectedTerm}`);
 
-    // Gerar post principal em português
+    // Gerar post principal em português (com imagens)
     const ptPost = await generateGlossaryTerm(selectedTerm, 'pt');
 
+    // Reutilizar a mesma imagem de capa para todos os idiomas
+    const sharedImage = ptPost.image;
+
     // Criar arquivo PT
-    const ptFilename = `${selectedTerm.toLowerCase().replace(/\s+/g, '-')}.md`;
+    const ptFilename = sanitizeFilename(`${selectedTerm.toLowerCase().replace(/\s+/g, '-')}.md`);
     const ptPath = join(GLOSSARIO_DIR, ptFilename);
     writeFileSync(ptPath, `---
+term: "${selectedTerm}"
+definition: "${ptPost.description.replace(/"/g, '\\"')}"
 title: "${ptPost.title}"
 description: "${ptPost.description}"
-image: "${ptPost.image}"
+image: "${sharedImage}"
 category: "basico"
 tags: [${ptPost.keywords.map(k => `"${k}"`).join(', ')}]
 author: "FinMoovi"
 publishedAt: ${new Date().toISOString().split('T')[0]}
 readingTime: 5
 locale: "pt"
-translationKey: "glossario-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}"
+translationKey: "glossario-${sanitizeFilename(selectedTerm.toLowerCase())}"
 seo:
   metaTitle: "${ptPost.title}"
   metaDescription: "${ptPost.description}"
@@ -122,25 +134,27 @@ ${ptPost.content}
 *Este termo foi gerado automaticamente pela IA com imagens explicativas. Quer sugerir uma melhoria? [Comente aqui](https://finmoovi.com/contato).*
 `, 'utf-8');
 
-    // Gerar versões em inglês e espanhol
+    // Gerar versões em inglês e espanhol (texto apenas, reutiliza imagem)
     const enPost = await generateGlossaryTerm(selectedTerm, 'en');
     const esPost = await generateGlossaryTerm(selectedTerm, 'es');
 
-    // Criar arquivos EN e ES
-    const enFilename = `en-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}.md`;
-    const esFilename = `es-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}.md`;
+    // Criar arquivos EN e ES com mesma imagem
+    const enFilename = sanitizeFilename(`en-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}.md`);
+    const esFilename = sanitizeFilename(`es-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}.md`);
 
     writeFileSync(join(GLOSSARIO_DIR, enFilename), `---
+term: "${selectedTerm}"
+definition: "${enPost.description.replace(/"/g, '\\"')}"
 title: "${enPost.title}"
 description: "${enPost.description}"
-image: "${enPost.image}"
+image: "${sharedImage}"
 category: "basico"
 tags: [${enPost.keywords.map(k => `"${k}"`).join(', ')}]
 author: "FinMoovi"
 publishedAt: ${new Date().toISOString().split('T')[0]}
 readingTime: 5
 locale: "en"
-translationKey: "glossario-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}"
+translationKey: "glossario-${sanitizeFilename(selectedTerm.toLowerCase())}"
 seo:
   metaTitle: "${enPost.title}"
   metaDescription: "${enPost.description}"
@@ -155,16 +169,18 @@ ${enPost.content}
 `, 'utf-8');
 
     writeFileSync(join(GLOSSARIO_DIR, esFilename), `---
+term: "${selectedTerm}"
+definition: "${esPost.description.replace(/"/g, '\\"')}"
 title: "${esPost.title}"
 description: "${esPost.description}"
-image: "${esPost.image}"
+image: "${sharedImage}"
 category: "basico"
 tags: [${esPost.keywords.map(k => `"${k}"`).join(', ')}]
 author: "FinMoovi"
 publishedAt: ${new Date().toISOString().split('T')[0]}
 readingTime: 5
 locale: "es"
-translationKey: "glossario-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}"
+translationKey: "glossario-${sanitizeFilename(selectedTerm.toLowerCase())}"
 seo:
   metaTitle: "${esPost.title}"
   metaDescription: "${esPost.description}"
@@ -190,16 +206,41 @@ ${esPost.content}
     saveCurrentLetter(nextLetter);
     console.log(`🔄 Próxima letra: ${nextLetter}`);
 
-    // Commit automático
-    execSync('git add src/content/glossario/ public/images/glossario/', { stdio: 'inherit' });
-    execSync(`git commit -m "glossário: ${selectedTerm} (${currentLetter}) - automático"`, { stdio: 'inherit' });
-    execSync('git push', { stdio: 'inherit' });
+    // Verificar se houve mudanças antes de commitar
+    try {
+      execSync('git add src/content/glossario/ public/images/glossario/ .current-letter', { stdio: 'pipe' });
+      const statusCheck = execSync('git status --porcelain', { stdio: 'pipe' }).toString();
+
+      if (statusCheck.trim()) {
+        execSync(`git commit -m "glossário: ${selectedTerm} (${currentLetter}) [PT/EN/ES]"`, { stdio: 'inherit' });
+        console.log('✅ Mudanças commitadas!');
+      } else {
+        console.log('ℹ️ Nenhuma mudança para commitar');
+      }
+    } catch (error) {
+      console.warn('⚠️ Erro ao fazer commit:', error.message);
+    }
 
     console.log(`✅ Glossário gerado com sucesso! Próxima letra: ${nextLetter}`);
   } catch (error) {
     console.error('❌ Erro na geração automática:', error.message);
     process.exit(1);
   }
+}
+
+// Função para sanitizar nomes de arquivo
+function sanitizeFilename(filename) {
+  return filename
+    .toLowerCase()
+    .replace(/[áàâãä]/g, 'a')
+    .replace(/[éèêë]/g, 'e')
+    .replace(/[íìîï]/g, 'i')
+    .replace(/[óòôõö]/g, 'o')
+    .replace(/[úùûü]/g, 'u')
+    .replace(/[ñ]/g, 'n')
+    .replace(/[^a-z0-9-]/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
 }
 
 main();

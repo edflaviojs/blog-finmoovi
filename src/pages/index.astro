@@ -6,16 +6,75 @@ import PostGrid from '@components/posts/PostGrid.astro';
 import Sidebar from '@components/sidebar/Sidebar.astro';
 import { getCollection } from 'astro:content';
 
-const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+// Strictly filter by locale PT only
+const allPosts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'pt');
 const sortedPosts = allPosts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
-const featuredPosts = sortedPosts.filter(p => p.data.featured);
+
+// Hero: most recent PT post
+const heroPost = sortedPosts[0];
+
+// 3 dynamic cards: latest post (not hero), latest cotação, latest glossário
+const latestPost = sortedPosts.find(p => p.slug !== heroPost?.slug && p.data.category !== 'cotacoes');
+const latestCotacao = sortedPosts.find(p => p.data.category === 'cotacoes');
+
+// Get latest glossário from glossario collection
+const allGlossario = await getCollection('glossario', ({ data }) => data.locale === 'pt');
+const sortedGlossario = allGlossario.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const latestGlossario = sortedGlossario[0];
+
+// Build secondary cards array (always 3)
+const secondaryCards = [];
+if (latestPost) {
+  secondaryCards.push({
+    title: latestPost.data.title,
+    image: latestPost.data.image,
+    category: latestPost.data.category,
+    href: `/posts/${latestPost.slug}`,
+    date: latestPost.data.publishedAt,
+    type: 'post',
+  });
+}
+if (latestCotacao) {
+  secondaryCards.push({
+    title: latestCotacao.data.title,
+    image: latestCotacao.data.image,
+    category: 'cotacoes',
+    href: `/posts/${latestCotacao.slug}`,
+    date: latestCotacao.data.publishedAt,
+    type: 'cotacao',
+  });
+}
+if (latestGlossario) {
+  secondaryCards.push({
+    title: latestGlossario.data.term,
+    image: undefined,
+    category: 'glossario',
+    href: `/glossario/${latestGlossario.slug}`,
+    date: latestGlossario.data.publishedAt,
+    type: 'glossario',
+  });
+}
+
+// Fill remaining slots with posts if needed
+if (secondaryCards.length < 3) {
+  const remaining = sortedPosts.filter(p =>
+    p.slug !== heroPost?.slug &&
+    !secondaryCards.some(c => c.href === `/posts/${p.slug}`)
+  );
+  for (const post of remaining) {
+    if (secondaryCards.length >= 3) break;
+    secondaryCards.push({
+      title: post.data.title,
+      image: post.data.image,
+      category: post.data.category,
+      href: `/posts/${post.slug}`,
+      date: post.data.publishedAt,
+      type: 'post',
+    });
+  }
+}
+
 const recentPosts = sortedPosts.slice(0, 9);
-
-// Filter posts for current locale (pt)
-const ptPosts = recentPosts.filter(p => !p.data.locale || p.data.locale === 'pt');
-const heroPost = ptPosts[0] || sortedPosts[0];
-const secondaryPosts = ptPosts.slice(1, 4);
-
 const postsForGrid = recentPosts.map(post => ({
   title: post.data.title,
   description: post.data.description,
@@ -25,6 +84,15 @@ const postsForGrid = recentPosts.map(post => ({
   date: post.data.publishedAt.toISOString(),
   readingTime: post.data.readingTime,
 }));
+
+const categoryLabels: Record<string, string> = {
+  dicas: 'Dicas',
+  orcamento: 'Orçamento',
+  investimentos: 'Investimentos',
+  cotacoes: 'Cotações',
+  ferramentas: 'Ferramentas',
+  glossario: 'Glossário',
+};
 ---
 
 <BaseLayout
@@ -38,44 +106,50 @@ const postsForGrid = recentPosts.map(post => ({
     <!-- Hero Portal Style -->
     <section class="hero-portal">
       <div class="container">
-        <div class="hero-grid">
-          <!-- Main Featured Post -->
-          <a href={`/posts/${heroPost.slug}`} class="hero-main">
-            <div class="hero-main-image">
-              {heroPost.data.image && <img src={heroPost.data.image} alt="" loading="eager" />}
-              <div class="hero-main-overlay"></div>
-            </div>
-            <div class="hero-main-content">
-              <span class="hero-category">{heroPost.data.category}</span>
-              <h1 class="hero-title">{heroPost.data.title}</h1>
-              <p class="hero-description">{heroPost.data.description}</p>
-              <div class="hero-meta">
-                <time datetime={heroPost.data.publishedAt.toISOString()}>
-                  {heroPost.data.publishedAt.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
-                </time>
-                {heroPost.data.readingTime && <span>· {heroPost.data.readingTime} min de leitura</span>}
+        {heroPost && (
+          <div class="hero-grid">
+            <!-- Main Featured Post -->
+            <a href={`/posts/${heroPost.slug}`} class="hero-main">
+              <div class="hero-main-image">
+                {heroPost.data.image && <img src={heroPost.data.image} alt="" loading="eager" />}
+                <div class="hero-main-overlay"></div>
               </div>
-            </div>
-          </a>
-
-          <!-- Secondary Posts -->
-          <div class="hero-secondary">
-            {secondaryPosts.map(post => (
-              <a href={`/posts/${post.slug}`} class="hero-secondary-card">
-                <div class="hero-secondary-image">
-                  {post.data.image && <img src={post.data.image} alt="" loading="eager" />}
-                </div>
-                <div class="hero-secondary-content">
-                  <span class="hero-secondary-category">{post.data.category}</span>
-                  <h3 class="hero-secondary-title">{post.data.title}</h3>
-                  <time datetime={post.data.publishedAt.toISOString()}>
-                    {post.data.publishedAt.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })}
+              <div class="hero-main-content">
+                <span class="hero-category">{categoryLabels[heroPost.data.category] || heroPost.data.category}</span>
+                <h1 class="hero-title">{heroPost.data.title}</h1>
+                <p class="hero-description">{heroPost.data.description}</p>
+                <div class="hero-meta">
+                  <time datetime={heroPost.data.publishedAt.toISOString()}>
+                    {heroPost.data.publishedAt.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
                   </time>
+                  {heroPost.data.readingTime && <span>· {heroPost.data.readingTime} min de leitura</span>}
                 </div>
-              </a>
-            ))}
+              </div>
+            </a>
+
+            <!-- 3 Dynamic Secondary Cards -->
+            <div class="hero-secondary">
+              {secondaryCards.map(card => (
+                <a href={card.href} class="hero-secondary-card">
+                  <div class="hero-secondary-image">
+                    {card.image ? (
+                      <img src={card.image} alt="" loading="eager" />
+                    ) : (
+                      <div class={`hero-secondary-placeholder hero-placeholder-${card.type}`}></div>
+                    )}
+                  </div>
+                  <div class="hero-secondary-content">
+                    <span class="hero-secondary-category">{categoryLabels[card.category] || card.category}</span>
+                    <h3 class="hero-secondary-title">{card.title}</h3>
+                    <time datetime={card.date.toISOString()}>
+                      {card.date.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })}
+                    </time>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
 
@@ -202,17 +276,17 @@ const postsForGrid = recentPosts.map(post => ({
     color: rgba(255, 255, 255, 0.5);
   }
 
-  /* Secondary Posts */
+  /* Secondary Cards - 3 cards */
   .hero-secondary {
     display: flex;
     flex-direction: column;
-    gap: var(--space-4);
+    gap: var(--space-3);
   }
 
   .hero-secondary-card {
     display: flex;
     gap: var(--space-4);
-    padding: var(--space-4);
+    padding: var(--space-3);
     background: var(--bg-secondary);
     border: 1px solid var(--border-default);
     border-radius: var(--radius-lg);
@@ -226,8 +300,8 @@ const postsForGrid = recentPosts.map(post => ({
   }
 
   .hero-secondary-image {
-    width: 100px;
-    height: 80px;
+    width: 90px;
+    height: 70px;
     border-radius: var(--radius-md);
     overflow: hidden;
     flex-shrink: 0;
@@ -239,11 +313,32 @@ const postsForGrid = recentPosts.map(post => ({
     object-fit: cover;
   }
 
+  .hero-secondary-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-placeholder-post {
+    background: linear-gradient(135deg, #58a6ff 0%, #bc8cff 100%);
+  }
+
+  .hero-placeholder-cotacao {
+    background: linear-gradient(135deg, #3fb950 0%, #58a6ff 100%);
+  }
+
+  .hero-placeholder-glossario {
+    background: linear-gradient(135deg, #d29922 0%, #f85149 100%);
+  }
+
   .hero-secondary-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: var(--space-1);
+    gap: 2px;
+    min-width: 0;
   }
 
   .hero-secondary-category {

@@ -3,7 +3,7 @@
  * Gera termos financeiros com imagens de capa e imagens explicativas
  */
 
-import { generateImage } from '../apis/kie-ai.js';
+import { generateImage, generateText } from '../apis/kie-ai.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
@@ -13,25 +13,30 @@ const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario');
 async function generateGlossaryTerm(term, language = 'pt') {
   console.log(`📚 Gerando glossário para: ${term} (${language})`);
 
-  // Gerar imagem de capa
-  const coverImage = generateImage(term, 'cover');
+  try {
+    // Gerar imagem de capa
+    const coverImage = generateImage(term, 'cover');
 
-  // Gerar imagens explicativas (uma para cada seção principal)
-  const explanatoryImages = await generateExplanatoryImages(term);
+    // Gerar imagens explicativas (uma para cada seção principal)
+    const explanatoryImages = await generateExplanatoryImages(term);
 
-  // Gerar conteúdo com base no idioma
-  const content = await generateGlossaryContent(term, language);
+    // Gerar conteúdo com base no idioma
+    const content = await generateGlossaryContent(term, language);
 
-  // Inserir imagens no conteúdo
-  const contentWithImages = insertImagesIntoContent(content, explanatoryImages);
+    // Inserir imagens no conteúdo
+    const contentWithImages = insertImagesIntoContent(content, explanatoryImages);
 
-  return {
-    title: getLocalizedTitle(term, language),
-    description: getLocalizedDescription(term, language),
-    image: coverImage,
-    content: contentWithImages,
-    keywords: getLocalizedKeywords(term, language)
-  };
+    return {
+      title: getLocalizedTitle(term, language),
+      description: getLocalizedDescription(term, language),
+      image: coverImage,
+      content: contentWithImages,
+      keywords: getLocalizedKeywords(term, language)
+    };
+  } catch (error) {
+    console.error(`❌ Erro ao gerar glossário para ${term}:`, error.message);
+    throw error;
+  }
 }
 
 async function generateExplanatoryImages(term) {
@@ -104,27 +109,7 @@ Formato markdown con encabezados H2.
 `
   };
 
-  const response = await fetch(`${process.env.GROQ_API_BASE || 'https://api.groq.com/Kpalabz/v1'}/chat/completions`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.GROQ_API_KEY || process.env.KIE_API_KEY}`,
-    },
-    body: JSON.stringify({
-      model: 'Kpalabz Ultra-70b-versatile',
-      messages: [
-        { role: 'system', content: 'Você é um especialista em finanças pessoais brasileiras.' },
-        { role: 'user', content: langPrompts[language] }
-      ],
-      max_tokens: 2000,
-      temperature: 0.3,
-    }),
-  });
-
-  if (!response.ok) throw new Error('Content generation failed');
-
-  const data = await response.json();
-  return data.choices?.[0]?.message?.content || '';
+  return await generateText(langPrompts[language], { maxTokens: 2000, temperature: 0.3 });
 }
 
 function insertImagesIntoContent(content, images) {

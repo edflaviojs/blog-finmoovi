@@ -18,38 +18,28 @@ if (!hasApiKey) {
  * Professional quality, no text, with subtle FinMoovi watermark
  */
 export function generateImage(topic, type = 'cover') {
-  // Base styles avoiding hands, fingers, and ensuring professional quality
-  const baseStyle = 'professional financial visualization, ultra high quality, 4k, sharp focus, no text, no words, no letters, no numbers, no watermark, no logos, no hands, no fingers, no people';
+  const baseStyle = 'professional financial visualization, ultra high quality, 4k, sharp focus, absolutely no text, no letters, no words, no numbers, no watermark, no logos, no writing, no captions, no labels, no hands, no fingers, no people';
 
-  // FinMoovi watermark
-  const finmooviWatermark = 'subtle small translucent finmoovi.com watermark in bottom right corner';
-
-  // Different visual styles for variety
   const styleVariations = [
-    // Style 1: Abstract financial concepts
     {
       name: 'abstract',
-      prompt: `${topic}, abstract financial concept, geometric shapes, data visualization elements, blue and gold gradient, ${baseStyle}, ${finmooviWatermark}, modern minimalist composition`
+      prompt: `${topic}, abstract financial concept, geometric shapes, data visualization elements, blue and gold gradient, ${baseStyle}, modern minimalist composition`
     },
-    // Style 2: Professional objects
     {
       name: 'objects',
-      prompt: `${topic}, professional financial objects, clean desk setup, calculator, charts, documents, ${baseStyle}, ${finmooviWatermark}, overhead view, organized layout`
+      prompt: `${topic}, professional financial objects, clean desk setup, calculator, charts, documents, ${baseStyle}, overhead view, organized layout`
     },
-    // Style 3: Nature metaphors
     {
       name: 'nature',
-      prompt: `${topic}, nature-inspired financial growth, tree with money leaves, flowing water streams, earth tones, ${baseStyle}, ${finmooviWatermark}, symbolic composition`
+      prompt: `${topic}, nature-inspired financial growth, tree with money leaves, flowing water streams, earth tones, ${baseStyle}, symbolic composition`
     },
-    // Style 4: Architecture/buildings
     {
       name: 'architecture',
-      prompt: `${topic}, financial architecture, building structures with growth charts, blueprints, modern city skyline, ${baseStyle}, ${finmooviWatermark}, architectural composition`
+      prompt: `${topic}, financial architecture, building structures with growth charts, blueprints, modern city skyline, ${baseStyle}, architectural composition`
     },
-    // Style 5: Technology/digital
     {
       name: 'tech',
-      prompt: `${topic}, digital financial technology, circuit board patterns, holographic displays, neon accents, ${baseStyle}, ${finmooviWatermark}, futuristic tech aesthetic`
+      prompt: `${topic}, digital financial technology, circuit board patterns, holographic displays, neon accents, ${baseStyle}, futuristic tech aesthetic`
     }
   ];
 

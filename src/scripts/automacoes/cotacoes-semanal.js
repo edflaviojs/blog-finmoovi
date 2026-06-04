@@ -4,20 +4,23 @@
  * Gera um resumo semanal do mercado financeiro
  */
 
-import { generateText } from '../apis/kie-ai.js';
+import { generateText, generateImage } from '../apis/kie-ai.js';
 import { getTickerRates } from '../apis/exchange-rate.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
+const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 
-async function generatePost(locale, rates, weekStart, today) {
+async function generatePost(locale, rates, weekStart, today, weekNum, dateStr, imagePath) {
   const monthNames = {
     pt: ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'],
     en: ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'],
     es: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
   };
+
+  const monthName = monthNames[locale][today.getMonth()];
 
   const titles = {
     pt: `Resumo Semanal: Dólar a R$ ${rates.USDBRL} — Semana ${weekNum} de ${monthName}`,
@@ -89,14 +92,13 @@ Mencione que FinMoovi ayuda a seguir inversiones en múltiples monedas.
   };
 
   const content = await generateText(prompts[locale], { maxTokens: 2000, temperature: 0.6 });
-  const monthName = monthNames[locale][today.getMonth()];
   const title = titles[locale];
   const slug = `${locale === 'pt' ? 'cotacoes' : locale === 'en' ? 'en-quotes' : 'es-cotizaciones'}-semana-${weekNum}-${monthName}-${today.getFullYear()}`;
 
   const frontmatter = `---
 title: "${title}"
 description: "${descriptions[locale]}"
-image: ""
+image: "${imagePath || ''}"
 category: "cotacoes"
 tags: ${JSON.stringify(tags[locale])}
 author: "FinMoovi"
@@ -128,6 +130,24 @@ ${locale === 'pt' ? `
   return { slug, frontmatter };
 }
 
+async function downloadImage(url, filename) {
+  try {
+    if (!existsSync(IMAGES_DIR)) {
+      mkdirSync(IMAGES_DIR, { recursive: true });
+    }
+    const response = await fetch(url);
+    if (response.ok) {
+      const buffer = Buffer.from(await response.arrayBuffer());
+      const fullPath = join(IMAGES_DIR, filename);
+      writeFileSync(fullPath, buffer);
+      return `/images/posts/${filename}`;
+    }
+  } catch (err) {
+    console.warn(`⚠️ Falha ao baixar imagem: ${err.message}`);
+  }
+  return '';
+}
+
 async function main() {
   console.log('🚀 Gerando resumo semanal de cotações...');
 
@@ -135,6 +155,12 @@ async function main() {
     // Get current rates
     const rates = await getTickerRates();
     console.log(`💱 USD/BRL: ${rates.USDBRL} | EUR/BRL: ${rates.EURBRL}`);
+
+    // Generate cover image (shared across all 3 locales)
+    console.log('🖼️ Gerando imagem de capa...');
+    const imageUrl = generateImage('financial market weekly summary currency exchange rates stocks', 'cover');
+    const imageFilename = `cotacoes-semana-${new Date().toISOString().split('T')[0]}.jpg`;
+    const imagePath = await downloadImage(imageUrl, imageFilename);
 
     // Generate posts for all languages
     const locales = ['pt', 'en', 'es'];
@@ -146,7 +172,7 @@ async function main() {
 
     for (const locale of locales) {
       console.log(`📄 Gerando post em ${locale}...`);
-      const { slug, frontmatter } = await generatePost(locale, rates, weekStart, today);
+      const { slug, frontmatter } = await generatePost(locale, rates, weekStart, today, weekNum, dateStr, imagePath);
 
       const postPath = join(POSTS_DIR, `${slug}.md`);
       if (!existsSync(POSTS_DIR)) {
@@ -155,10 +181,14 @@ async function main() {
       writeFileSync(postPath, frontmatter, 'utf-8');
       console.log(`✅ Post salvo: ${postPath}`);
 
-      // Git commit
       execSync(`git add "${postPath}"`, { stdio: 'inherit' });
-      execSync(`git commit -m "cotações: semana ${weekNum} ${monthName} ${today.getFullYear()} (${locale})"`, { stdio: 'inherit' });
     }
+
+    // Add image and commit all
+    if (imagePath) {
+      execSync(`git add "${IMAGES_DIR}"`, { stdio: 'inherit' });
+    }
+    execSync(`git commit -m "cotações: semana ${weekNum} - ${today.toISOString().split('T')[0]} [PT/EN/ES]"`, { stdio: 'inherit' });
 
     console.log('✅ Resumo semanal publicado em todos os idiomas!');
   } catch (error) {

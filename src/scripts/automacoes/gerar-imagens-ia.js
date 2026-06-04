@@ -34,10 +34,7 @@ async function main() {
     console.log(`🎨 Gerando imagem para: ${title}`);
 
     try {
-      const imageUrl = await generateImage(
-        `Blog cover illustration about "${title}", financial education, money management, modern minimalist style`,
-        { width: 1200, height: 630 }
-      );
+      const imageUrl = generateImage(title, 'cover');
 
       if (imageUrl) {
         // Download image
