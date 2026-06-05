@@ -1,58 +1,21 @@
 /**
- * Groq API Wrapper + SVG Image Generation
- * Handles text generation for blog posts and cover image generation
+ * Groq API Wrapper + AI Image Generation (Multi-Provider)
+ * Handles text generation for blog posts and AI-generated cover images
+ * Image providers: Together.ai → SiliconFlow → SVG fallback
  */
 
-import { saveSVGImage, generateSVG } from './svg-generator.js';
+import { generateCoverImage, generateCoverImageSync, generateInlineImage } from './image-router.js';
+import { saveSVGImage } from './svg-generator.js';
 
 const GROQ_API_BASE = 'https://api.groq.com/openai/v1';
 const GROQ_API_KEY = process.env.GROQ_API_KEY || process.env.KIE_API_KEY;
 
-// Allow image generation without API key (uses local SVG)
-const hasApiKey = GROQ_API_KEY;
-
-if (!hasApiKey) {
-  console.warn('⚠️ GROQ_API_KEY not configured - text generation will fail, but image generation will work via local SVG');
+if (!GROQ_API_KEY) {
+  console.warn('⚠️ GROQ_API_KEY not configured - text generation will fail');
 }
 
-/**
- * Generate cover image as SVG (local, no external API needed)
- * Returns the URL path that generateImage used to return
- * NOTE: This is kept for backward compatibility — returns a Pollinations-style URL
- * but the actual saving is done by saveSVGImage() in the calling scripts
- */
-export function generateImage(topic, type = 'cover') {
-  // Return a placeholder that signals the caller to use saveSVGImage
-  return `__SVG_GENERATE__:${topic}:${type}`;
-}
-
-/**
- * Generate and save a cover image locally as SVG
- * This is the actual function scripts should use
- * @returns {string} local path like /images/posts/slug.svg
- */
-export function generateCoverImage(topic, slug, destination = 'posts') {
-  return saveSVGImage(topic, slug, destination);
-}
-
-/**
- * Generate inline images for post content (1 image every 2 H2 sections)
- * Returns SVG paths
- */
-export function generateContentImages(topic, headings, slug, destination = 'posts') {
-  const images = [];
-  for (let i = 1; i < headings.length; i += 2) {
-    const sectionTopic = `${topic} - ${headings[i]}`;
-    const sectionSlug = `${slug}-${i}`;
-    const path = saveSVGImage(sectionTopic, sectionSlug, destination);
-    images.push({
-      afterHeading: i,
-      url: path,
-      alt: headings[i],
-    });
-  }
-  return images;
-}
+// Re-export image functions for backward compatibility
+export { generateCoverImage, generateCoverImageSync, generateInlineImage };
 
 /**
  * Generate text content using Groq (with retry on rate limit)

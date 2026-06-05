@@ -141,7 +141,7 @@ async function main() {
     // Generate cover image (SVG local, shared across all 3 locales)
     console.log('🖼️ Gerando imagem de capa...');
     const imageSlug = `cotacoes-semana-${new Date().toISOString().split('T')[0]}`;
-    const imagePath = generateCoverImage('financial market weekly summary currency exchange rates', imageSlug, 'posts');
+    const imagePath = await generateCoverImage('financial market weekly summary currency exchange rates', imageSlug, 'posts');
 
     // Generate posts for all languages
     const locales = ['pt', 'en', 'es'];

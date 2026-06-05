@@ -5,7 +5,6 @@
  */
 
 import { generateText, generateCoverImage } from '../apis/kie-ai.js';
-import { saveSVGImage } from '../apis/svg-generator.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
@@ -31,8 +30,8 @@ async function generateGlossaryTerm(term, language = 'pt') {
   try {
     // Gerar imagem de capa como SVG local
     const slug = slugify(term);
-    console.log('🖼️ Gerando imagem de capa SVG...');
-    const localImagePath = saveSVGImage(term, slug, 'glossario');
+    console.log('🖼️ Gerando imagem de capa...');
+    const localImagePath = await generateCoverImage(term, slug, 'glossario');
     console.log(`✅ Imagem salva: ${localImagePath}`);
 
     // Gerar conteúdo com base no idioma

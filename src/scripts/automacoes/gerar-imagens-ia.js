@@ -32,7 +32,7 @@ async function main() {
     console.log(`🎨 Gerando SVG para: ${title}`);
 
     try {
-      const imagePath = generateCoverImage(title, slug, 'posts');
+      const imagePath = await generateCoverImage(title, slug, 'posts');
 
       // Update frontmatter
       if (imageMatch) {
