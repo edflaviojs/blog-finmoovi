@@ -4,6 +4,7 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import PostGrid from '@components/posts/PostGrid.astro';
 import Sidebar from '@components/sidebar/Sidebar.astro';
+import SchemaWebsite from '@components/seo/SchemaWebsite.astro';
 import { getCollection } from 'astro:content';
 
 // Strictly filter by locale PT only
@@ -146,6 +147,7 @@ const categoryLabels: Record<string, string> = {
   description="Dicas práticas de finanças pessoais, controle de gastos e educação financeira. Organize sua vida financeira com o FinMoovi."
   keywords={['finanças pessoais', 'controle financeiro', 'educação financeira', 'orçamento', 'investimentos']}
 >
+  <SchemaWebsite />
   <Header />
 
   <main>

@@ -1,0 +1,52 @@
+---
+const site = 'https://blog.finmoovi.com';
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "FinMoovi Blog",
+  "url": site,
+  "description": "Blog de finanças pessoais com dicas práticas, cotações, glossário financeiro e ferramentas para organizar seu dinheiro.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "FinMoovi",
+    "url": "https://finmoovi.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${site}/images/logo.png`
+    },
+    "sameAs": [
+      "https://finmoovi.com"
+    ]
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": `${site}/?q={search_term_string}`,
+    "query-input": "required name=search_term_string"
+  },
+  "inLanguage": ["pt-BR", "en-US", "es-ES"]
+};
+
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FinMoovi",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Android, iOS, Web",
+  "url": "https://finmoovi.com",
+  "description": "App de finanças pessoais multi-moeda com controle offline e inteligência artificial.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "150"
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
