@@ -22,6 +22,15 @@ export const GET: APIRoute = async () => {
 
   const ptStaticOnly = [
     { url: '/app', priority: '0.9', changefreq: 'monthly', lastmod: today },
+    { url: '/como-organizar-financas', priority: '0.9', changefreq: 'monthly', lastmod: today },
+    { url: '/orcamento-pessoal', priority: '0.9', changefreq: 'monthly', lastmod: today },
+    { url: '/como-sair-das-dividas', priority: '0.9', changefreq: 'monthly', lastmod: today },
+    { url: '/guia-30-dias', priority: '0.8', changefreq: 'monthly', lastmod: today },
+    { url: '/checklist-financeiro', priority: '0.8', changefreq: 'monthly', lastmod: today },
+    { url: '/ferramentas/calculadora-juros-compostos', priority: '0.8', changefreq: 'monthly', lastmod: today },
+    { url: '/ferramentas/calculadora-orcamento', priority: '0.8', changefreq: 'monthly', lastmod: today },
+    { url: '/ferramentas/conversor-moedas', priority: '0.8', changefreq: 'monthly', lastmod: today },
+    { url: '/ferramentas/simulador-investimento', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/categorias/dicas', priority: '0.7', changefreq: 'daily', lastmod: today },
     { url: '/categorias/orcamento', priority: '0.7', changefreq: 'weekly', lastmod: today },
     { url: '/categorias/cotacoes', priority: '0.7', changefreq: 'weekly', lastmod: today },
