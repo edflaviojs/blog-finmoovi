@@ -2,122 +2,153 @@
 interface Props {
   variant?: 'full' | 'compact';
   locale?: string;
+  seed?: number;
 }
 
-const { variant = 'full', locale = 'pt' } = Astro.props;
+const { variant = 'full', locale = 'pt', seed } = Astro.props;
 
-const texts = {
-  pt: {
-    badge: 'App Gratuito',
-    title: 'Organize suas finanças com o FinMoovi',
-    description: 'Controle multi-moeda, offline, com inteligência artificial. Teste grátis por 7 dias.',
-    cta: 'Começar Grátis',
-    note: 'Sem cartão. Cancele quando quiser.'
-  },
-  en: {
-    badge: 'Free App',
-    title: 'Organize your finances with FinMoovi',
-    description: 'Multi-currency control, offline, with AI. Try free for 7 days.',
-    cta: 'Start Free',
-    note: 'No credit card. Cancel anytime.'
-  },
-  es: {
-    badge: 'App Gratuita',
-    title: 'Organiza tus finanzas con FinMoovi',
-    description: 'Control multi-moneda, offline, con inteligencia artificial. Prueba gratis 7 días.',
-    cta: 'Comenzar Gratis',
-    note: 'Sin tarjeta. Cancela cuando quieras.'
-  }
+const ctas = {
+  pt: [
+    { title: 'Organize suas finanças com o FinMoovi', desc: 'Controle gastos, acompanhe investimentos e alcance seus objetivos financeiros. Multi-moeda, offline e inteligente.' },
+    { title: 'Controle seus gastos de forma inteligente', desc: 'O FinMoovi categoriza suas transações automaticamente. Menos trabalho, mais clareza sobre seu dinheiro.' },
+    { title: 'Acompanhe investimentos em tempo real', desc: 'Dashboards com insights automáticos. Saiba exatamente onde seu dinheiro está indo com o FinMoovi.' },
+    { title: 'Multi-moeda, offline e inteligente', desc: 'BRL, USD, EUR com conversão automática. Funciona sem internet. Seus dados ficam no seu dispositivo.' },
+    { title: 'Comece grátis — sem cartão de crédito', desc: '7 dias grátis para experimentar todas as funcionalidades. Cancele quando quiser, sem burocracia.' },
+    { title: 'Sua privacidade financeira importa', desc: 'Criptografia de ponta a ponta. Seus dados nunca saem do seu dispositivo. Controle total com o FinMoovi.' },
+    { title: 'Lance gastos em 5 segundos com IA', desc: 'Smart Capture entende linguagem natural. Diga "almocei 35 reais" e pronto. O FinMoovi faz o resto.' },
+    { title: 'Relatórios que fazem sentido', desc: 'Gráficos claros que mostram para onde vai seu dinheiro. Identifique padrões e economize mais com o FinMoovi.' },
+    { title: 'Chega de planilhas complicadas', desc: 'O FinMoovi substitui suas planilhas por um app intuitivo. Tudo automático, tudo no celular.' },
+    { title: 'Alcance seus objetivos financeiros', desc: 'Defina metas, acompanhe o progresso e receba alertas inteligentes. O FinMoovi te mantém no caminho.' },
+    { title: 'O app financeiro que funciona offline', desc: 'Registre gastos em qualquer lugar, mesmo sem internet. Sincroniza automaticamente quando conectar.' },
+    { title: 'Controle financeiro de classe mundial', desc: 'Usado por milhares de brasileiros. O FinMoovi é o app mais completo para quem quer organizar suas finanças.' },
+  ],
+  en: [
+    { title: 'Organize your finances with FinMoovi', desc: 'Track expenses, monitor investments, and reach your financial goals. Multi-currency, offline, and smart.' },
+    { title: 'Control your spending intelligently', desc: 'FinMoovi categorizes your transactions automatically. Less work, more clarity about your money.' },
+    { title: 'Track investments in real time', desc: 'Dashboards with automatic insights. Know exactly where your money is going with FinMoovi.' },
+    { title: 'Multi-currency, offline, and smart', desc: 'BRL, USD, EUR with automatic conversion. Works without internet. Your data stays on your device.' },
+    { title: 'Start free — no credit card needed', desc: '7 days free to try all features. Cancel anytime, no hassle.' },
+    { title: 'Your financial privacy matters', desc: 'End-to-end encryption. Your data never leaves your device. Full control with FinMoovi.' },
+    { title: 'Log expenses in 5 seconds with AI', desc: 'Smart Capture understands natural language. Say "lunch 35 dollars" and done. FinMoovi handles the rest.' },
+    { title: 'Reports that make sense', desc: 'Clear charts showing where your money goes. Identify patterns and save more with FinMoovi.' },
+    { title: 'No more complicated spreadsheets', desc: 'FinMoovi replaces your spreadsheets with an intuitive app. All automatic, all on your phone.' },
+    { title: 'Reach your financial goals', desc: 'Set goals, track progress, and get smart alerts. FinMoovi keeps you on track.' },
+    { title: 'The finance app that works offline', desc: 'Log expenses anywhere, even without internet. Syncs automatically when you reconnect.' },
+    { title: 'World-class financial control', desc: 'Used by thousands. FinMoovi is the most complete app for anyone who wants to organize their finances.' },
+  ],
+  es: [
+    { title: 'Organiza tus finanzas con FinMoovi', desc: 'Controla gastos, acompaña inversiones y alcanza tus objetivos financieros. Multi-moneda, offline e inteligente.' },
+    { title: 'Controla tus gastos de forma inteligente', desc: 'FinMoovi categoriza tus transacciones automáticamente. Menos trabajo, más claridad sobre tu dinero.' },
+    { title: 'Acompaña inversiones en tiempo real', desc: 'Dashboards con insights automáticos. Sabe exactamente a dónde va tu dinero con FinMoovi.' },
+    { title: 'Multi-moneda, offline e inteligente', desc: 'BRL, USD, EUR con conversión automática. Funciona sin internet. Tus datos quedan en tu dispositivo.' },
+    { title: 'Comienza gratis — sin tarjeta de crédito', desc: '7 días gratis para probar todas las funcionalidades. Cancela cuando quieras, sin burocracia.' },
+    { title: 'Tu privacidad financiera importa', desc: 'Cifrado de punta a punta. Tus datos nunca salen de tu dispositivo. Control total con FinMoovi.' },
+    { title: 'Registra gastos en 5 segundos con IA', desc: 'Smart Capture entiende lenguaje natural. Di "almorcé 35 pesos" y listo. FinMoovi hace el resto.' },
+    { title: 'Reportes que tienen sentido', desc: 'Gráficos claros que muestran a dónde va tu dinero. Identifica patrones y ahorra más con FinMoovi.' },
+    { title: 'Adiós a las hojas de cálculo', desc: 'FinMoovi sustituye tus planillas por una app intuitiva. Todo automático, todo en tu celular.' },
+    { title: 'Alcanza tus objetivos financieros', desc: 'Define metas, acompaña el progreso y recibe alertas inteligentes. FinMoovi te mantiene en el camino.' },
+    { title: 'La app financiera que funciona offline', desc: 'Registra gastos en cualquier lugar, incluso sin internet. Sincroniza automáticamente al conectar.' },
+    { title: 'Control financiero de clase mundial', desc: 'Usado por miles de personas. FinMoovi es la app más completa para quien quiere organizar sus finanzas.' },
+  ]
 };
 
-const t = texts[locale] || texts.pt;
+const badges = { pt: 'App Gratuito', en: 'Free App', es: 'App Gratuita' };
+const ctaButtons = { pt: 'Experimentar Grátis →', en: 'Try Free →', es: 'Probar Gratis →' };
+
+const pool = ctas[locale] || ctas.pt;
+const index = seed !== undefined ? seed % pool.length : Math.floor(Math.random() * pool.length);
+const cta = pool[index];
+const badge = badges[locale] || badges.pt;
+const ctaBtn = ctaButtons[locale] || ctaButtons.pt;
 ---
 
-<aside class={`inline-cta inline-cta--${variant}`}>
-  <div class="inline-cta__content">
-    <span class="inline-cta__badge">{t.badge}</span>
-    <h3 class="inline-cta__title">{t.title}</h3>
-    {variant === 'full' && <p class="inline-cta__desc">{t.description}</p>}
-    <a href="https://finmoovi.com" class="inline-cta__button" target="_blank" rel="noopener">
-      {t.cta} →
-    </a>
-    {variant === 'full' && <span class="inline-cta__note">{t.note}</span>}
-  </div>
+<aside class={`cta-variado cta-variado--${variant}`}>
+  <div class="cta-variado-badge">{badge}</div>
+  <h4 class="cta-variado-title">{cta.title}</h4>
+  {variant === 'full' && <p class="cta-variado-desc">{cta.desc}</p>}
+  <a href="https://finmoovi.com" class="cta-variado-btn" target="_blank" rel="noopener">
+    {ctaBtn}
+  </a>
 </aside>
 
 <style>
-  .inline-cta {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    border-radius: 12px;
-    background: linear-gradient(145deg, #161b22, #21262d);
-    border: 1px solid #30363d;
-    border-top: 3px solid #3fb950;
-    text-align: center;
+  .cta-variado {
+    margin: var(--space-8) 0;
+    padding: var(--space-6);
+    background: var(--gradient-card);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    position: relative;
+    overflow: hidden;
   }
-  .inline-cta__badge {
+
+  .cta-variado::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+  }
+
+  .cta-variado-badge {
     display: inline-block;
-    padding: 2px 10px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    border-radius: 9999px;
+    padding: 2px var(--space-3);
     background: rgba(63, 185, 80, 0.15);
-    color: #3fb950;
-    margin-bottom: 0.75rem;
+    color: var(--accent-green);
+    border-radius: var(--radius-full);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
   }
-  .inline-cta__title {
-    color: #f0f6fc;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 0 0 0.5rem;
+
+  .cta-variado-title {
+    font-size: var(--text-lg);
+    color: var(--text-primary);
+    margin-bottom: var(--space-2);
   }
-  .inline-cta__desc {
-    color: #8b949e;
-    font-size: 0.9rem;
-    margin: 0 0 1rem;
-    line-height: 1.5;
+
+  .cta-variado-desc {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-4);
+    line-height: var(--leading-relaxed);
   }
-  .inline-cta__button {
+
+  .cta-variado-btn {
     display: inline-block;
-    padding: 10px 28px;
-    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    padding: var(--space-3) var(--space-5);
+    background: linear-gradient(135deg, #00F0FF, #A91079);
     color: #fff;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
+    border-radius: var(--radius-full);
     text-decoration: none;
-    border-radius: 8px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: all var(--transition-fast);
   }
-  .inline-cta__button:hover {
+
+  .cta-variado-btn:hover {
+    opacity: 0.9;
     transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(63, 185, 80, 0.3);
+    color: #fff;
   }
-  .inline-cta__note {
-    display: block;
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-    color: #6e7681;
-  }
-  .inline-cta--compact {
-    padding: 1rem 1.5rem;
+
+  .cta-variado--compact {
+    padding: var(--space-4) var(--space-5);
     display: flex;
     align-items: center;
-    text-align: left;
-    gap: 1rem;
-  }
-  .inline-cta--compact .inline-cta__content {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    gap: var(--space-4);
     flex-wrap: wrap;
   }
-  .inline-cta--compact .inline-cta__title {
-    font-size: 1rem;
-    margin: 0;
+
+  .cta-variado--compact .cta-variado-title {
+    font-size: var(--text-base);
+    margin-bottom: 0;
+    flex: 1;
   }
-  .inline-cta--compact .inline-cta__badge {
+
+  .cta-variado--compact .cta-variado-badge {
     margin-bottom: 0;
   }
 </style>
