@@ -167,6 +167,7 @@ author: "FinMoovi"
 publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: ${isFeatured}
+translationKey: "${data.translationKey || ''}"
 seo:
   metaTitle: "${data.title.replace(/"/g, '\\"')}"
   metaDescription: "${data.meta.replace(/"/g, '\\"')}"
@@ -228,6 +229,7 @@ async function main() {
       imagePath,
       locale: 'pt',
       today,
+      translationKey: slugPt,
     }, true); // Mark PT post as featured
     console.log(`📄 PT salvo: ${ptPath}`);
 
@@ -251,6 +253,7 @@ async function main() {
       imagePath, // same cover image
       locale: 'en',
       today,
+      translationKey: slugPt,
     });
     console.log(`📄 EN salvo: ${enPath}`);
 
@@ -274,6 +277,7 @@ async function main() {
       imagePath, // same cover image
       locale: 'es',
       today,
+      translationKey: slugPt,
     });
     console.log(`📄 ES salvo: ${esPath}`);
 

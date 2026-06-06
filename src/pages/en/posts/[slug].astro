@@ -16,15 +16,35 @@ const { Content, headings } = await post.render();
 
 const canonicalURL = new URL(`/en/posts/${post.slug}`, Astro.site).toString();
 
-// Find translated versions via translationKey
+// Find translated versions via translationKey or same date+category
 const alternates: { pt?: string; en?: string; es?: string } = { en: `/en/posts/${post.slug}` };
-if (post.data.translationKey) {
-  const allPosts = await getCollection('posts', ({ data }) => !data.draft && data.translationKey === post.data.translationKey);
-  const ptPost = allPosts.find(p => p.data.locale === 'pt');
-  const esPost = allPosts.find(p => p.data.locale === 'es');
-  if (ptPost) alternates.pt = `/posts/${ptPost.slug}`;
-  if (esPost) alternates.es = `/es/posts/${esPost.slug}`;
+const allTranslatedPosts = await getCollection('posts', ({ data }) => !data.draft && data.locale !== 'en');
+
+// Strategy 1: match by translationKey
+let ptPost = post.data.translationKey
+  ? allTranslatedPosts.find(p => p.data.locale === 'pt' && p.data.translationKey === post.data.translationKey)
+  : null;
+let esPost = post.data.translationKey
+  ? allTranslatedPosts.find(p => p.data.locale === 'es' && p.data.translationKey === post.data.translationKey)
+  : null;
+
+// Strategy 2: match by same publishedAt date + category (only if unique match)
+if (!ptPost || !esPost) {
+  const postDate = post.data.publishedAt.toISOString().split('T')[0];
+  const ptCandidates = allTranslatedPosts.filter(p =>
+    p.data.locale === 'pt' && p.data.category === post.data.category &&
+    p.data.publishedAt.toISOString().split('T')[0] === postDate
+  );
+  const esCandidates = allTranslatedPosts.filter(p =>
+    p.data.locale === 'es' && p.data.category === post.data.category &&
+    p.data.publishedAt.toISOString().split('T')[0] === postDate
+  );
+  if (!ptPost && ptCandidates.length === 1) ptPost = ptCandidates[0];
+  if (!esPost && esCandidates.length === 1) esPost = esCandidates[0];
 }
+
+if (ptPost) alternates.pt = `/posts/${ptPost.slug}`;
+if (esPost) alternates.es = `/es/posts/${esPost.slug}`;
 ---
 
 <PostLayout
