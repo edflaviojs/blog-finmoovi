@@ -1,15 +1,39 @@
 ---
+const urlPath = Astro.url?.pathname || '';
+let locale = 'pt';
+if (urlPath.startsWith('/en/')) locale = 'en';
+else if (urlPath.startsWith('/es/')) locale = 'es';
+
+const texts = {
+  pt: {
+    tag: 'Parceiro',
+    title: 'Loovi Seguros',
+    desc: 'Proteja seu carro com o seguro mais inteligente do Brasil. Sem franquia, sem burocracia.',
+    cta: 'Conhecer →'
+  },
+  en: {
+    tag: 'Partner',
+    title: 'Loovi Insurance',
+    desc: 'Protect your car with Brazil\'s smartest auto insurance. No deductible, no bureaucracy.',
+    cta: 'Learn more →'
+  },
+  es: {
+    tag: 'Socio',
+    title: 'Loovi Seguros',
+    desc: 'Protege tu auto con el seguro más inteligente de Brasil. Sin franquicia, sin burocracia.',
+    cta: 'Conocer →'
+  }
+};
+const t = texts[locale] || texts.pt;
 ---
 
 <div class="banner-loovi">
   <div class="banner-content">
-    <span class="banner-tag">Parceiro</span>
-    <h4 class="banner-title">Loovi Seguros</h4>
-    <p class="banner-description">
-      Proteja seu carro com o seguro mais inteligente do Brasil. Sem franquia, sem burocracia.
-    </p>
+    <span class="banner-tag">{t.tag}</span>
+    <h4 class="banner-title">{t.title}</h4>
+    <p class="banner-description">{t.desc}</p>
     <a href="https://loovi.com.br?ref=finmoovi" target="_blank" rel="noopener sponsored" class="banner-link">
-      Conhecer →
+      {t.cta}
     </a>
   </div>
 </div>

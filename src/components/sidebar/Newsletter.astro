@@ -1,28 +1,54 @@
 ---
+const urlPath = Astro.url?.pathname || '';
+let locale = 'pt';
+if (urlPath.startsWith('/en/')) locale = 'en';
+else if (urlPath.startsWith('/es/')) locale = 'es';
+
+const texts = {
+  pt: {
+    title: 'Newsletter Semanal',
+    desc: 'Receba as melhores dicas de finanças toda semana no seu email.',
+    placeholder: 'seu@email.com',
+    btn: 'Inscrever',
+    privacy: 'Sem spam. Cancele quando quiser.'
+  },
+  en: {
+    title: 'Weekly Newsletter',
+    desc: 'Get the best finance tips delivered to your inbox every week.',
+    placeholder: 'your@email.com',
+    btn: 'Subscribe',
+    privacy: 'No spam. Unsubscribe anytime.'
+  },
+  es: {
+    title: 'Newsletter Semanal',
+    desc: 'Recibe los mejores consejos de finanzas cada semana en tu email.',
+    placeholder: 'tu@email.com',
+    btn: 'Suscribirse',
+    privacy: 'Sin spam. Cancela cuando quieras.'
+  }
+};
+const t = texts[locale] || texts.pt;
 ---
 
 <div class="sidebar-widget newsletter-widget">
-  <h4 class="widget-title" data-i18n="sidebar.newsletter.title">Newsletter Semanal</h4>
-  <p class="widget-description" data-i18n="sidebar.newsletter.desc">
-    Receba as melhores dicas de finanças toda semana no seu email.
-  </p>
+  <h4 class="widget-title">{t.title}</h4>
+  <p class="widget-description">{t.desc}</p>
   <form class="newsletter-form" id="newsletter-form">
     <input
       type="email"
       name="email"
-      placeholder="seu@email.com"
+      placeholder={t.placeholder}
       required
       class="newsletter-input"
       id="newsletter-email"
-      aria-label="Seu email"
-      data-i18n-placeholder="sidebar.newsletter.placeholder"
+      aria-label="Email"
     />
-    <button type="submit" class="newsletter-button" id="newsletter-btn" data-i18n="sidebar.newsletter.btn">
-      Inscrever
+    <button type="submit" class="newsletter-button" id="newsletter-btn">
+      {t.btn}
     </button>
   </form>
   <p class="newsletter-message" id="newsletter-message"></p>
-  <p class="newsletter-privacy" data-i18n="sidebar.newsletter.privacy">Sem spam. Cancele quando quiser.</p>
+  <p class="newsletter-privacy">{t.privacy}</p>
 </div>
 
 <script>

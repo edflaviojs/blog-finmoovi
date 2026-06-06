@@ -1,22 +1,59 @@
 ---
+const urlPath = Astro.url?.pathname || '';
+let locale = 'pt';
+if (urlPath.startsWith('/en/')) locale = 'en';
+else if (urlPath.startsWith('/es/')) locale = 'es';
+
+const texts = {
+  pt: {
+    badge: 'App Gratuito',
+    title: 'Organize suas finanças com o FinMoovi',
+    desc: 'Controle gastos, acompanhe investimentos e alcance seus objetivos financeiros. Multi-moeda, offline e inteligente.',
+    f1: '✓ Multi-moeda (BRL, USD, EUR)',
+    f2: '✓ Smart Capture com IA',
+    f3: '✓ Relatórios inteligentes',
+    f4: '✓ 100% offline e seguro',
+    btn: 'Experimentar Grátis — 7 dias',
+    note: 'Sem cartão de crédito. Cancele quando quiser.'
+  },
+  en: {
+    badge: 'Free App',
+    title: 'Organize your finances with FinMoovi',
+    desc: 'Track expenses, monitor investments, and reach your financial goals. Multi-currency, offline, and smart.',
+    f1: '✓ Multi-currency (BRL, USD, EUR)',
+    f2: '✓ AI Smart Capture',
+    f3: '✓ Intelligent reports',
+    f4: '✓ 100% offline and secure',
+    btn: 'Try Free — 7 days',
+    note: 'No credit card. Cancel anytime.'
+  },
+  es: {
+    badge: 'App Gratuita',
+    title: 'Organiza tus finanzas con FinMoovi',
+    desc: 'Controla gastos, acompaña inversiones y alcanza tus objetivos financieros. Multi-moneda, offline e inteligente.',
+    f1: '✓ Multi-moneda (BRL, USD, EUR)',
+    f2: '✓ Smart Capture con IA',
+    f3: '✓ Reportes inteligentes',
+    f4: '✓ 100% offline y seguro',
+    btn: 'Probar Gratis — 7 días',
+    note: 'Sin tarjeta de crédito. Cancela cuando quieras.'
+  }
+};
+const t = texts[locale] || texts.pt;
 ---
 
 <a href="https://finmoovi.com" target="_blank" rel="noopener noreferrer" class="sidebar-widget cta-widget">
-  <div class="cta-badge" data-i18n="cta.badge">App Gratuito</div>
-  <h3 class="cta-title" data-i18n="cta.title">Organize suas finanças com o FinMoovi</h3>
-  <p class="cta-description" data-i18n="cta.desc">
-    Controle gastos, acompanhe investimentos e alcance seus objetivos financeiros. Multi-moeda, offline e inteligente.
-  </p>
+  <div class="cta-badge">{t.badge}</div>
+  <h3 class="cta-title">{t.title}</h3>
+  <p class="cta-description">{t.desc}</p>
   <ul class="cta-features">
-    <li data-i18n="cta.feature1">✓ Multi-moeda (BRL, USD, EUR)</li>
-    <li data-i18n="cta.feature2">✓ Smart Capture com IA</li>
-    <li data-i18n="cta.feature3">✓ Relatórios inteligentes</li>
-    <li data-i18n="cta.feature4">✓ 100% offline e seguro</li>
+    <li>{t.f1}</li>
+    <li>{t.f2}</li>
+    <li>{t.f3}</li>
+    <li>{t.f4}</li>
   </ul>
-  <span class="cta-button" data-i18n="cta.btn">
-    Experimentar Grátis — 7 dias
-  </span>
-  <p class="cta-note" data-i18n="cta.note">Sem cartão de crédito. Cancele quando quiser.</p>
+  <span class="cta-button">{t.btn}</span>
+  <p class="cta-note">{t.note}</p>
 </a>
 
 <style>
