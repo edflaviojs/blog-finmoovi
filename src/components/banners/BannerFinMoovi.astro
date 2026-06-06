@@ -1,18 +1,42 @@
 ---
+const urlPath = Astro.url?.pathname || '';
+let locale = 'pt';
+if (urlPath.startsWith('/en/')) locale = 'en';
+else if (urlPath.startsWith('/es/')) locale = 'es';
+
+const texts = {
+  pt: {
+    badge: 'App Gratuito',
+    title: 'Organize suas finanças com o FinMoovi',
+    description: 'Controle gastos, acompanhe investimentos e alcance seus objetivos financeiros. Multi-moeda, offline e inteligente.',
+    cta: 'Começar Grátis →'
+  },
+  en: {
+    badge: 'Free App',
+    title: 'Organize your finances with FinMoovi',
+    description: 'Track expenses, monitor investments, and reach your financial goals. Multi-currency, offline, and smart.',
+    cta: 'Start Free →'
+  },
+  es: {
+    badge: 'App Gratuita',
+    title: 'Organiza tus finanzas con FinMoovi',
+    description: 'Controla gastos, acompaña inversiones y alcanza tus objetivos financieros. Multi-moneda, offline e inteligente.',
+    cta: 'Comenzar Gratis →'
+  }
+};
+const t = texts[locale] || texts.pt;
 ---
 
 <div class="banner-finmoovi">
   <div class="banner-content">
     <div class="banner-text">
-      <span class="banner-badge">App Gratuito</span>
-      <h3 class="banner-title">Organize suas finanças com o FinMoovi</h3>
-      <p class="banner-description">
-        Controle gastos, acompanhe investimentos e alcance seus objetivos financeiros. Multi-moeda, offline e inteligente.
-      </p>
+      <span class="banner-badge">{t.badge}</span>
+      <h3 class="banner-title">{t.title}</h3>
+      <p class="banner-description">{t.description}</p>
     </div>
     <div class="banner-actions">
-      <a href="/app" class="banner-cta">
-        Começar Grátis →
+      <a href="https://finmoovi.com" class="banner-cta" target="_blank" rel="noopener">
+        {t.cta}
       </a>
     </div>
   </div>
