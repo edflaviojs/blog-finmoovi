@@ -5,7 +5,7 @@
  */
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
-import { writeFileSync, mkdirSync, existsSync, readdirSync } from 'fs';
+import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 
@@ -185,6 +185,17 @@ async function main() {
     }
 
     const existingFiles = readdirSync(GLOSSARIO_DIR).map(f => f.replace('.md', ''));
+
+    // Guard: check if a glossário term was already generated today (prevent duplicates)
+    const todayStr = new Date().toISOString().split('T')[0];
+    const ptFiles = readdirSync(GLOSSARIO_DIR).filter(f => f.endsWith('.md') && !f.startsWith('en-') && !f.startsWith('es-'));
+    for (const file of ptFiles) {
+      const content = readFileSync(join(GLOSSARIO_DIR, file), 'utf-8');
+      if (content.includes(`publishedAt: ${todayStr}`)) {
+        console.log(`⚠️ Já existe um termo gerado hoje (${file}). Abortando para evitar duplicata.`);
+        return;
+      }
+    }
 
     // Find next term to generate (check PT slug only)
     const pendingTerms = TERMS_POOL.filter(t => {

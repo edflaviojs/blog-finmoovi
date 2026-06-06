@@ -6,7 +6,7 @@
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { getTickerRates } from '../apis/exchange-rate.js';
-import { writeFileSync, mkdirSync, existsSync } from 'fs';
+import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 
@@ -170,6 +170,17 @@ async function main() {
   console.log('🚀 Gerando resumo semanal de cotações...');
 
   try {
+    // Guard: check if a cotação was already generated today (prevent duplicates)
+    const todayStr = new Date().toISOString().split('T')[0];
+    const existingFiles = readdirSync(POSTS_DIR).filter(f => f.startsWith('cotacoes-') && f.endsWith('.md'));
+    for (const file of existingFiles) {
+      const content = readFileSync(join(POSTS_DIR, file), 'utf-8');
+      if (content.includes(`publishedAt: ${todayStr}`)) {
+        console.log(`⚠️ Já existe uma cotação gerada hoje (${file}). Abortando para evitar duplicata.`);
+        return;
+      }
+    }
+
     // Get current rates
     const rates = await getTickerRates();
     console.log(`💱 USD/BRL: ${rates.USDBRL} | EUR/BRL: ${rates.EURBRL}`);
