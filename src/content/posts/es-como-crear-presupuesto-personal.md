@@ -16,7 +16,7 @@ seo:
   keywords: ["presupuesto personal", "cómo hacer presupuesto", "control financiero", "planilla de gastos"]
 ---
 
-Crear un presupuesto personal no tiene que ser complicado. De hecho, con el método correcto, puedes armar el tuyo en menos de 30 minutos — y lo mejor: uno que realmente funciona en el día a día.
+Crear un [presupuesto personal](/es/glossario/es-orcamento-pessoal) no tiene que ser complicado. De hecho, con el método correcto, puedes armar el tuyo en menos de 30 minutos — y lo mejor: uno que realmente funciona en el día a día.
 
 ## ¿Por qué tener un presupuesto personal?
 
@@ -40,7 +40,7 @@ Separa en fijos (alquiler, servicios, suscripciones) y variables (comida, entret
 
 - **50% Necesidades:** alquiler, comida, transporte, salud
 - **30% Deseos:** entretenimiento, restaurantes, hobbies
-- **20% Ahorro:** fondo de emergencia, inversiones, pago de deudas
+- **20% Ahorro:** [fondo de emergencia](/es/glossario/es-reserva-de-emergencia), inversiones, pago de deudas
 
 ## Paso 4: Define Metas Realistas
 

@@ -30,7 +30,7 @@ A taxa Selic, que é a taxa de juros básica da economia, continua sendo um fato
 
 ## Dica Prática para Investidores Individuais
 
-Uma dica prática para investidores individuais é diversificar sua carteira de investimentos. Com o dólar em R$ 5,03 e o euro em R$ 5,84, pode ser um bom momento para investir em ativos em moeda estrangeira. Além disso, é importante não se esquecer de investir em renda fixa, como títulos do tesouro, para ter uma fonte de renda mais estável. Lembre-se de que a diversificação é a chave para minimizar riscos e maximizar ganhos.
+Uma dica prática para investidores individuais é diversificar sua carteira de investimentos. Com o dólar em R$ 5,03 e o euro em R$ 5,84, pode ser um bom momento para investir em ativos em moeda estrangeira. Além disso, é importante não se esquecer de investir em renda fixa, como títulos do tesouro, para ter uma fonte de renda mais estável. Lembre-se de que a [diversificação](/en/glossario/en-diversificacao) é a chave para minimizar riscos e maximizar ganhos.
 
 ## O que Esperar para a Próxima Semana
 

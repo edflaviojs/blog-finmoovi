@@ -31,7 +31,7 @@ Aquí tienes algunos consejos para ahorrar dinero:
 * Evita las compras impulsivas
 
 ## Metas Financieras
-Tener metas financieras en común es esencial para que tú y tu pareja trabajen juntos hacia el mismo objetivo. Esto puede incluir ahorrar para una casa, pagar deudas o crear un fondo de emergencia. Supongamos que quieren ahorrar R$ 20,000 para la entrada de una casa. Esto significa que necesitan ahorrar R$ 1,667 al mes durante un año.
+Tener metas financieras en común es esencial para que tú y tu pareja trabajen juntos hacia el mismo objetivo. Esto puede incluir ahorrar para una casa, pagar deudas o crear un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia). Supongamos que quieren ahorrar R$ 20,000 para la entrada de una casa. Esto significa que necesitan ahorrar R$ 1,667 al mes durante un año.
 
 ## Desafíos y Soluciones
 Los desafíos surgen comúnmente al gestionar las finanzas de pareja. Por ejemplo, uno de los socios puede tener gustos caros, mientras que el otro es más ahorrativo. **Consejo práctico:** crea un sistema de "control de gastos" para que puedan monitorear sus gastos y discutirlos regularmente.

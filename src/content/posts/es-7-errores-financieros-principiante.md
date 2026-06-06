@@ -22,7 +22,7 @@ Empezar tu camino financiero es emocionante, pero es fácil caer en trampas comu
 
 El error #1: no saber a dónde va tu dinero. Sin rastreo, no puedes mejorar. Empieza registrando cada gasto durante 30 días.
 
-## 2. Sin Fondo de Emergencia
+## 2. Sin [Fondo de Emergencia](/es/glossario/es-reserva-de-emergencia)
 
 La vida pasa. Sin 3-6 meses de gastos ahorrados, cualquier imprevisto se convierte en crisis financiera. Empieza con $1.000 como primera meta.
 
@@ -36,7 +36,7 @@ La vida pasa. Sin 3-6 meses de gastos ahorrados, cualquier imprevisto se convier
 
 ## 5. Solo Pagar el Mínimo de Deudas
 
-Los pagos mínimos te mantienen endeudado para siempre por el interés compuesto trabajando en tu contra. Siempre paga más del mínimo cuando sea posible.
+Los pagos mínimos te mantienen endeudado para siempre por el [interés compuesto](/es/glossario/es-juros-compostos) trabajando en tu contra. Siempre paga más del mínimo cuando sea posible.
 
 ## 6. No Definir Metas Financieras
 

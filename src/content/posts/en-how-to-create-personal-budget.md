@@ -16,7 +16,7 @@ seo:
   keywords: ["personal budget", "how to budget", "financial control", "expense tracker"]
 ---
 
-Creating a personal budget doesn't have to be complicated. In fact, with the right method, you can set yours up in less than 30 minutes — and the best part: one that actually works in everyday life.
+Creating a [personal budget](/en/glossario/en-orcamento-pessoal) doesn't have to be complicated. In fact, with the right method, you can set yours up in less than 30 minutes — and the best part: one that actually works in everyday life.
 
 ## Why Have a Personal Budget?
 
@@ -40,7 +40,7 @@ Separate into fixed (rent, utilities, subscriptions) and variable (food, enterta
 
 - **50% Needs:** rent, food, transportation, health
 - **30% Wants:** entertainment, dining out, hobbies
-- **20% Savings:** emergency fund, investments, debt payoff
+- **20% Savings:** [emergency fund](/en/glossario/en-reserva-de-emergencia), investments, debt payoff
 
 ## Step 4: Set Realistic Goals
 

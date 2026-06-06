@@ -18,7 +18,7 @@ seo:
 
 ## Resumen Semanal del Mercado Financiero Brasileño
 
-La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significativos en el mercado financiero brasileño, con destaque para las variaciones en las tasas de cambio y el mantenimiento de la tasa Selic. Vamos a profundizar en los detalles y entender cómo estos eventos afectan a los inversores individuales.
+La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significativos en el mercado financiero brasileño, con destaque para las variaciones en las tasas de cambio y el mantenimiento de la [tasa Selic](/es/glossario/es-selic). Vamos a profundizar en los detalles y entender cómo estos eventos afectan a los inversores individuales.
 
 ## Dólar y Euro: Tendencia de la Semana
 
@@ -26,11 +26,11 @@ El dólar estadounidense cerró la semana en R$ 5,03, mostrando una ligera estab
 
 ## Selic e Impacto en las Inversiones
 
-La tasa Selic, actualmente en 12,25% anual, fue mantenida por el Comité de Política Monetária (Copom) del Banco Central. Esta decisión busca controlar la inflación y mantener la estabilidad económica. Para los inversores, el mantenimiento de la Selic significa que las inversiones con tasas de interés prefijadas, como los títulos del Tesouro Direto, continuarán ofreciendo rendimientos atractivos, especialmente cuando se comparan con otras opciones de inversión de bajo riesgo.
+La tasa Selic, actualmente en 12,25% anual, fue mantenida por el Comité de Política Monetária (Copom) del Banco Central. Esta decisión busca controlar la [inflación](/es/glossario/es-inflacao) y mantener la estabilidad económica. Para los inversores, el mantenimiento de la Selic significa que las inversiones con tasas de interés prefijadas, como los títulos del Tesouro Direto, continuarán ofreciendo rendimientos atractivos, especialmente cuando se comparan con otras opciones de inversión de bajo riesgo.
 
 ## Consejo Práctico para el Inversor
 
-Un consejo valioso para los inversores individuales es diversificar sus inversiones, incluyendo activos en diferentes monedas. Con el dólar y el euro estables, puede ser un buen momento para considerar inversiones internacionales, como acciones o fondos de inversión en dólares o euros. Herramientas como FinMoovi pueden ser muy útiles para seguir y gestionar inversiones en múltiples monedas, ofreciendo una visión clara y actualizada de su cartera.
+Un consejo valioso para los inversores individuales es diversificar sus inversiones, incluyendo activos en diferentes monedas. Con el dólar y el euro estables, puede ser un buen momento para considerar inversiones internacionales, como [acciones](/es/glossario/es-acoes) o fondos de inversión en dólares o euros. Herramientas como FinMoovi pueden ser muy útiles para seguir y gestionar inversiones en múltiples monedas, ofreciendo una visión clara y actualizada de su cartera.
 
 ## Qué Esperar para la Próxima Semana
 

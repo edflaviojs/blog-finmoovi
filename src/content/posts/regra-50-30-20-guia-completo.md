@@ -26,7 +26,7 @@ A ideia é simples: divida sua renda líquida em três partes:
 |-----------|-----------|----------|
 | Necessidades | 50% | Moradia, alimentação, transporte, saúde |
 | Desejos | 30% | Lazer, restaurantes, compras, hobbies |
-| Objetivos | 20% | Poupança, investimentos, quitar dívidas |
+| Objetivos | 20% | [Poupança](/glossario/poupanca), investimentos, quitar dívidas |
 
 ## Exemplo prático: salário de R$ 5.000
 
@@ -43,7 +43,7 @@ A ideia é simples: divida sua renda líquida em três partes:
   - Streaming: R$ 250
 
 - **Objetivos (20%):** R$ 1.000
-  - Reserva de emergência: R$ 500
+  - [Reserva de emergência](/glossario/reserva-de-emergencia): R$ 500
   - Investimentos: R$ 300
   - Fundo de viagem: R$ 200
 
@@ -63,7 +63,7 @@ O segredo é monitorar. Com o **FinMoovi**, você configura as categorias uma ve
 
 - Renda muito baixa (necessidades passam de 70%)
 - Dívidas altas (priorize quitação antes)
-- Renda variável (use a média dos últimos 3 meses)
+- [Renda variável](/glossario/renda-variavel) (use a média dos últimos 3 meses)
 
 Nesses casos, comece com qualquer percentual de economia — mesmo 5% já é um começo.
 

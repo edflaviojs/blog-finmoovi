@@ -52,7 +52,7 @@ La regla 50-30-20 es uno de los métodos más simples y efectivos para administr
 
 ## ¿Qué Cuenta como "Ahorro"? (20%)
 
-- Fondo de emergencia (3-6 meses de gastos)
+- [Fondo de emergencia](/es/glossario/es-reserva-de-emergencia) (3-6 meses de gastos)
 - Aportes para jubilación
 - Pagos extra de deudas
 - Inversiones

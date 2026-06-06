@@ -16,7 +16,7 @@ seo:
   keywords: ["orçamento pessoal", "como fazer orçamento", "controle financeiro", "planilha de gastos"]
 ---
 
-Criar um orçamento pessoal não precisa ser complicado. Na verdade, com o método certo, você consegue montar o seu em menos de 30 minutos — e o melhor: um que realmente funciona no dia a dia.
+Criar um [orçamento pessoal](/glossario/orcamento-pessoal) não precisa ser complicado. Na verdade, com o método certo, você consegue montar o seu em menos de 30 minutos — e o melhor: um que realmente funciona no dia a dia.
 
 ## Por que ter um orçamento pessoal?
 
@@ -25,7 +25,7 @@ Sem um orçamento, você está navegando às cegas. Pesquisas mostram que **78% 
 Um bom orçamento te ajuda a:
 - Saber exatamente para onde vai seu dinheiro
 - Identificar gastos desnecessários
-- Criar uma reserva de emergência
+- Criar uma [reserva de emergência](/glossario/reserva-de-emergencia)
 - Alcançar objetivos financeiros (viagem, casa, aposentadoria)
 
 ## Passo 1: Liste todas as suas receitas
@@ -41,7 +41,7 @@ Comece pelo que entra. Some todas as fontes de renda:
 ## Passo 2: Mapeie seus gastos fixos
 
 Gastos fixos são aqueles que não mudam (ou mudam pouco) todo mês:
-- Aluguel/financiamento
+- Aluguel/[financiamento](/glossario/financiamento)
 - Contas de luz, água, internet
 - Plano de saúde
 - Transporte (combustível, transporte público)

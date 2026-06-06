@@ -26,7 +26,7 @@ O dólar americano fechou a semana em R$ 5,03, apresentando uma leve estabilidad
 
 ## Selic e Impacto nos Investimentos
 
-A taxa Selic, que atualmente está em 12,75% ao ano, continua a ser um fator chave para os investidores. Com essa taxa, os investimentos em renda fixa, como CDBs e títulos do tesouro, se tornam mais atraentes, pois oferecem retornos mais altos em comparação com outros tipos de investimentos. No entanto, é importante lembrar que a Selic também pode influenciar a economia como um todo, afetando a inflação e o crescimento econômico. Por exemplo, se você está pensando em investir R$ 10.000 em um CDB com taxa de 12% ao ano, você pode esperar receber cerca de R$ 1.200 em juros ao longo de um ano, considerando a taxa Selic atual.
+A taxa Selic, que atualmente está em 12,75% ao ano, continua a ser um fator chave para os investidores. Com essa taxa, os investimentos em [renda fixa](/glossario/renda-fixa), como CDBs e títulos do tesouro, se tornam mais atraentes, pois oferecem retornos mais altos em comparação com outros tipos de investimentos. No entanto, é importante lembrar que a Selic também pode influenciar a economia como um todo, afetando a [inflação](/glossario/inflacao) e o crescimento econômico. Por exemplo, se você está pensando em investir R$ 10.000 em um CDB com taxa de 12% ao ano, você pode esperar receber cerca de R$ 1.200 em juros ao longo de um ano, considerando a taxa Selic atual.
 
 ## Dica Prática para o Investidor
 
@@ -34,7 +34,7 @@ Uma dica prática para os investidores pessoa física é diversificar seus inves
 
 ## O que Esperar para a Próxima Semana
 
-Para a próxima semana, é importante estar atento às notícias econômicas e políticas que possam afetar as cotações do dólar e do euro. Além disso, é fundamental acompanhar as decisões do Banco Central sobre a taxa Selic, pois elas podem ter um impacto significativo nos investimentos. Com uma estratégia de investimento bem definida e o apoio de ferramentas como o FinMoovi, os investidores podem estar melhor preparados para navegar pelas flutuações do mercado financeiro brasileiro. Lembre-se de que a diversificação e a monitorização constante são chaves para o sucesso nos investimentos.
+Para a próxima semana, é importante estar atento às notícias econômicas e políticas que possam afetar as cotações do dólar e do euro. Além disso, é fundamental acompanhar as decisões do Banco Central sobre a taxa Selic, pois elas podem ter um impacto significativo nos investimentos. Com uma estratégia de investimento bem definida e o apoio de ferramentas como o FinMoovi, os investidores podem estar melhor preparados para navegar pelas flutuações do mercado financeiro brasileiro. Lembre-se de que a [diversificação](/glossario/diversificacao) e a monitorização constante são chaves para o sucesso nos investimentos.
 
 
 ---

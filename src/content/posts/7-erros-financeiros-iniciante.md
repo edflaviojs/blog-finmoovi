@@ -18,7 +18,7 @@ seo:
 
 Todo mundo comete erros com dinheiro — especialmente no começo. A boa notícia é que a maioria deles é evitável quando você sabe o que procurar.
 
-## 1. Não ter uma reserva de emergência
+## 1. Não ter uma [reserva de emergência](/glossario/reserva-de-emergencia)
 
 **O erro:** Viver sem nenhuma reserva, contando que nada vai dar errado.
 
@@ -52,7 +52,7 @@ Todo mundo comete erros com dinheiro — especialmente no começo. A boa notíci
 
 **O erro:** Colocar dinheiro em algo porque "todo mundo está fazendo" (cripto, ações da moda, etc).
 
-**A solução:** Antes de investir, monte sua reserva de emergência. Depois, comece pelo básico: Tesouro Direto e CDBs. Só avance para renda variável quando entender os riscos.
+**A solução:** Antes de investir, monte sua reserva de emergência. Depois, comece pelo básico: [Tesouro Direto](/glossario/tesouro-direto) e CDBs. Só avance para [renda variável](/glossario/renda-variavel) quando entender os riscos.
 
 ## 7. Não se pagar primeiro
 

@@ -16,7 +16,7 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro
 
-A semana de 20/05/2026 a 27/05/2026 foi marcada por movimentações significativas no mercado financeiro brasileiro, com destaque para as variações nas taxas de câmbio e a manutenção da taxa Selic. Vamos mergulhar nos detalhes e entender como esses eventos afetam os investidores pessoa física.
+A semana de 20/05/2026 a 27/05/2026 foi marcada por movimentações significativas no mercado financeiro brasileiro, com destaque para as variações nas taxas de [câmbio](/glossario/cambio) e a manutenção da taxa Selic. Vamos mergulhar nos detalhes e entender como esses eventos afetam os investidores pessoa física.
 
 ## Dólar e Euro: Tendência da Semana
 
@@ -24,7 +24,7 @@ O dólar americano fechou a semana em R$ 5.03, apresentando uma leve estabilidad
 
 ## Selic e Impacto nos Investimentos
 
-A taxa Selic, atualmente em 12,25% ao ano, foi mantida pelo Comitê de Política Monetária (Copom) do Banco Central. Essa decisão visa controlar a inflação e manter a estabilidade econômica. Para os investidores, a manutenção da Selic significa que os investimentos com taxas de juros prefixados, como os títulos do Tesouro Direto, continuarão a oferecer retornos atraentes, especialmente quando comparados a outras opções de investimento de baixo risco.
+A taxa Selic, atualmente em 12,25% ao ano, foi mantida pelo Comitê de Política Monetária (Copom) do Banco Central. Essa decisão visa controlar a [inflação](/glossario/inflacao) e manter a estabilidade econômica. Para os investidores, a manutenção da Selic significa que os investimentos com taxas de juros prefixados, como os títulos do [Tesouro Direto](/glossario/tesouro-direto), continuarão a oferecer retornos atraentes, especialmente quando comparados a outras opções de investimento de baixo risco.
 
 ## Dica Prática para o Investidor
 

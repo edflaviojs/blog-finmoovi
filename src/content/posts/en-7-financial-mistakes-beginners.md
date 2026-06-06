@@ -22,7 +22,7 @@ Starting your financial journey is exciting, but it's easy to fall into common t
 
 The #1 mistake: not knowing where your money goes. Without tracking, you can't improve. Start by recording every expense for 30 days.
 
-## 2. No Emergency Fund
+## 2. No [Emergency Fund](/en/glossario/en-reserva-de-emergencia)
 
 Life happens. Without 3-6 months of expenses saved, any unexpected event becomes a financial crisis. Start with $1,000 as your first milestone.
 
@@ -36,7 +36,7 @@ That daily $5 coffee? That's $150/month or $1,800/year. Small expenses add up fa
 
 ## 5. Only Paying Minimum on Debt
 
-Minimum payments keep you in debt forever due to compound interest working against you. Always pay more than the minimum when possible.
+Minimum payments keep you in debt forever due to [compound interest](/en/glossario/en-juros-compostos) working against you. Always pay more than the minimum when possible.
 
 ## 6. Not Setting Financial Goals
 

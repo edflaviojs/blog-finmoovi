@@ -22,11 +22,11 @@ La semana del 28 de mayo al 4 de junio de 2026 trajo cambios significativos en e
 
 ## Dólar y Euro: Tendencia de la Semana
 
-El dólar estadounidense cerró la semana en R$ 5.03, mostrando una leve estabilidad en comparación con las semanas anteriores. Por otro lado, el euro se mantuvo en R$ 5.84, reflejando la volatilidad del mercado internacional. Esta estabilidad relativa puede ser un alivio para los importadores y viajeros, pero también puede influir en las decisiones de inversión de aquellos que buscan oportunidades en monedas extranjeras. Es importante destacar que la cotización de estas monedas puede variar rápidamente, por lo que estar al tanto de las últimas noticias y tendencias es crucial.
+El dólar estadounidense cerró la semana en R$ 5.03, mostrando una leve estabilidad en comparación con las semanas anteriores. Por otro lado, el euro se mantuvo en R$ 5.84, reflejando la [volatilidad](/es/glossario/es-volatilidade) del mercado internacional. Esta estabilidad relativa puede ser un alivio para los importadores y viajeros, pero también puede influir en las decisiones de inversión de aquellos que buscan oportunidades en monedas extranjeras. Es importante destacar que la cotización de estas monedas puede variar rápidamente, por lo que estar al tanto de las últimas noticias y tendencias es crucial.
 
 ## La Selic y su Impacto en las Inversiones
 
-La tasa de interés Selic, establecida por el Banco Central de Brasil, continuó siendo un tema de interés durante la semana. Con una tasa actual que busca controlar la inflación y estimular la economía, los inversores deben considerar cómo estas decisiones pueden afectar sus carteras. Una Selic más alta puede hacer que las inversiones en renta fija sean más atractivas, pero también puede aumentar el costo del crédito para consumidores y empresas. Es fundamental entender cómo estas decisiones pueden influir en las estrategias de inversión a corto y largo plazo.
+La tasa de interés Selic, establecida por el Banco Central de Brasil, continuó siendo un tema de interés durante la semana. Con una tasa actual que busca controlar la [inflación](/es/glossario/es-inflacao) y estimular la economía, los inversores deben considerar cómo estas decisiones pueden afectar sus carteras. Una Selic más alta puede hacer que las inversiones en [renta fija](/es/glossario/es-renda-fixa) sean más atractivas, pero también puede aumentar el costo del crédito para consumidores y empresas. Es fundamental entender cómo estas decisiones pueden influir en las estrategias de inversión a corto y largo plazo.
 
 ## Consejo Práctico para el Inversor Individual
 

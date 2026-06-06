@@ -35,7 +35,7 @@ Como autónomo, eres responsable de tu propio recolimiento de impuestos, lo que 
 **Consejo práctico:** Mantén todos los recibos y notas fiscales de gastos que puedan ser deducidos de tu impuesto de renta. Esto puede ahorrar una cantidad significativa de dinero al final del año.
 
 ## Invertir para el Futuro
-Además de gestionar tus finanzas actuales, es crucial pensar en el futuro. Esto incluye planificar la jubilación, invertir en educación o en un negocio propio, y hasta comprar una casa. Para autónomos, invertir puede parecer un desafío debido a la renta variable, pero existen estrategias que pueden ayudar.
+Además de gestionar tus finanzas actuales, es crucial pensar en el futuro. Esto incluye planificar la jubilación, invertir en educación o en un negocio propio, y hasta comprar una casa. Para autónomos, invertir puede parecer un desafío debido a la [renta variable](/es/glossario/es-renda-variavel), pero existen estrategias que pueden ayudar.
 
 Una opción es invertir un porcentaje fijo de tu ingreso mensual, independientemente del valor. Por ejemplo, si decides invertir 10% de tu ingreso, en un mes de R$ 8.000, invertirías R$ 800, y en un mes de R$ 3.000, invertirías R$ 300. **Consejo práctico:** Comienza con inversiones de bajo riesgo, como títulos de deuda o fondos de inversión, y ajusta tu estrategia a medida que te sientas más cómodo con la inversión.
 
@@ -49,7 +49,7 @@ Una reserva de emergencia es esencial para cualquier plan financiero, especialme
 La idea es tener entre 3 a 6 meses de gastos esenciales guardados en una cuenta de fácil acceso. Esto puede parecer un desafío, pero comenzar pequeño y ser consistente es la clave. **Consejo práctico:** Establece una meta para tu reserva de emergencia y trabaja hacia ella gradualmente.
 
 ## Comienza hoy
-No importa dónde estés en tu jornada financiera, lo importante es comenzar a tomar control de tus finanzas hoy. Esto puede significar solo comenzar a registrar tus gastos o abrir una cuenta de ahorro para tu reserva de emergencia. Cada pequeño paso conduce a cambios significativos en el largo plazo. Así que no esperes más – comienza a organizar tus finanzas y a construir el futuro financiero que deseas.
+No importa dónde estés en tu jornada financiera, lo importante es comenzar a tomar control de tus finanzas hoy. Esto puede significar solo comenzar a registrar tus gastos o abrir una [cuenta de ahorro](/es/glossario/es-poupanca) para tu reserva de emergencia. Cada pequeño paso conduce a cambios significativos en el largo plazo. Así que no esperes más – comienza a organizar tus finanzas y a construir el futuro financiero que deseas.
 
 ![Comece hoy](/images/posts/organizar-financas-autonomo-5.svg)
 

@@ -18,7 +18,7 @@ seo:
 ## Gerenciando Rendas Variáveis
 Quando você é autônomo, uma das principais dificuldades é lidar com rendas variáveis. Um mês você pode receber R$ 8.000, e no outro, apenas R$ 3.000. Para organizar suas finanças nesse cenário, é crucial criar um orçamento flexível que possa se adaptar a essas flutuações. Uma dica é separar suas despesas em essenciais (alimentação, moradia, transporte) e não essenciais (entretenimento, hobbies), e priorizar as primeiras.
 
-Imagine que você tem um mês de R$ 8.000 e outro de R$ 3.000. Se suas despesas essenciais mensais são de aproximadamente R$ 2.500, você precisa garantir que, mesmo no mês de menor receita, possa cobrir esses gastos. Uma estratégia é criar uma reserva de emergência que possa ser usada nos meses de baixa receita. **Dica prática:** Reserve pelo menos 10% a 20% de sua renda média mensal para essa reserva.
+Imagine que você tem um mês de R$ 8.000 e outro de R$ 3.000. Se suas despesas essenciais mensais são de aproximadamente R$ 2.500, você precisa garantir que, mesmo no mês de menor receita, possa cobrir esses gastos. Uma estratégia é criar uma [reserva de emergência](/glossario/reserva-de-emergencia) que possa ser usada nos meses de baixa receita. **Dica prática:** Reserve pelo menos 10% a 20% de sua renda média mensal para essa reserva.
 
 ## Controle de Despesas
 Ter um controle preciso de suas despesas é fundamental para qualquer plano financeiro, especialmente para autônomos. Isso inclui desde contas de água e luz até gastos com combustível e manutenção do veículo, se aplicável. Uma ferramenta útil pode ser um aplicativo de controle de gastos, que permite registrar e categorizar todas as despesas ao longo do mês. Com isso, você pode identificar áreas onde está gastando mais do que o necessário e fazer ajustes.
@@ -32,10 +32,10 @@ Por exemplo, se você percebe que está gastando R$ 1.500 por mês com alimenta�
 ## Planejamento Tributário
 Como autônomo, você é responsável por seu próprio recolhimento de impostos, o que pode ser um desafio. É importante entender como funcionam os impostos para autônomos e como planejar sua tributação de forma eficaz. Isso pode incluir a dedução de despesas profissionais, como materiais de trabalho, uso de veículo e até parte da conta de luz e internet da sua casa, se você trabalha de home office.
 
-**Dica prática:** Mantenha todos os recibos e notas fiscais de despesas que possam ser deduzidas do seu imposto de renda. Isso pode economizar uma quantidade significativa de dinheiro no final do ano.
+**Dica prática:** Mantenha todos os recibos e notas fiscais de despesas que possam ser deduzidas do seu [imposto de renda](/glossario/imposto-de-renda). Isso pode economizar uma quantidade significativa de dinheiro no final do ano.
 
 ## Investindo para o Futuro
-Além de gerenciar suas finanças atuais, é crucial pensar no futuro. Isso inclui planejar aposentadoria, investir em educação ou em um negócio próprio, e até mesmo comprar uma casa. Para autônomos, investir pode parecer um desafio devido à renda variável, mas existem estratégias que podem ajudar.
+Além de gerenciar suas finanças atuais, é crucial pensar no futuro. Isso inclui planejar aposentadoria, investir em educação ou em um negócio próprio, e até mesmo comprar uma casa. Para autônomos, investir pode parecer um desafio devido à [renda variável](/glossario/renda-variavel), mas existem estratégias que podem ajudar.
 
 Uma opção é investir uma porcentagem fixa de sua renda mensal, independentemente do valor. Por exemplo, se você decide investir 10% de sua renda, em um mês de R$ 8.000, você investiria R$ 800, e em um mês de R$ 3.000, investiria R$ 300. **Dica prática:** Comece com investimentos de baixo risco, como títulos de dívida ou fundos de investimento, e ajuste sua estratégia à medida que você se torna mais confortável com o investimento.
 
