@@ -217,6 +217,12 @@ ${esPost.content}
     // Verificar se houve mudanças antes de commitar
     try {
       execSync('git add src/content/glossario/ public/images/glossario/ .current-letter', { stdio: 'pipe' });
+
+      // Add internal links to posts (new glossary term may match existing posts)
+      console.log('🔗 Adicionando internal links...');
+      execSync('node src/scripts/automacoes/internal-linking.js', { stdio: 'pipe' });
+      execSync('git add src/content/posts/', { stdio: 'pipe' });
+
       const statusCheck = execSync('git status --porcelain', { stdio: 'pipe' }).toString();
 
       if (statusCheck.trim()) {

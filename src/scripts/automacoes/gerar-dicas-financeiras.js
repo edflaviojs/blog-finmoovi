@@ -294,6 +294,10 @@ async function main() {
     });
     console.log(`📄 ES salvo: ${esPath}`);
 
+    // 6.5. Add internal links (glossary terms)
+    console.log('🔗 Adicionando internal links...');
+    execSync('node src/scripts/automacoes/internal-linking.js', { stdio: 'inherit' });
+
     // 7. Git commit all
     execSync(`git add "${POSTS_DIR}" "${IMAGES_DIR}"`, { stdio: 'inherit' });
     execSync(`git commit -m "post: ${post.title.substring(0, 40)} [PT/EN/ES]"`, { stdio: 'inherit' });

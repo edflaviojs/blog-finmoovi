@@ -280,6 +280,13 @@ async function main() {
     const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario');
     execSync(`git add "${GLOSSARIO_DIR}"`, { stdio: 'inherit' });
     execSync(`git add "${IMAGES_DIR}"`, { stdio: 'inherit' });
+
+    // Add internal links to posts (new glossary term may match existing posts)
+    console.log('🔗 Adicionando internal links...');
+    execSync('node src/scripts/automacoes/internal-linking.js', { stdio: 'inherit' });
+    const postsDir = join(process.cwd(), 'src', 'content', 'posts');
+    execSync(`git add "${postsDir}"`, { stdio: 'inherit' });
+
     execSync(`git commit -m "glossário: ${termData.term} [PT/EN/ES]"`, { stdio: 'inherit' });
 
     console.log(`✅ Termo "${termData.term}" publicado em 3 idiomas!`);

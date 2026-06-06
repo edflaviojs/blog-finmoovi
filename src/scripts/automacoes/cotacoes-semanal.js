@@ -222,6 +222,12 @@ async function main() {
     if (imagePath) {
       execSync(`git add "${IMAGES_DIR}"`, { stdio: 'inherit' });
     }
+
+    // Add internal links (glossary terms)
+    console.log('🔗 Adicionando internal links...');
+    execSync('node src/scripts/automacoes/internal-linking.js', { stdio: 'inherit' });
+    execSync(`git add "${POSTS_DIR}"`, { stdio: 'inherit' });
+
     execSync(`git commit -m "cotações: semana ${weekNum} - ${today.toISOString().split('T')[0]} [PT/EN/ES]"`, { stdio: 'inherit' });
 
     console.log('✅ Resumo semanal publicado em todos os idiomas!');
