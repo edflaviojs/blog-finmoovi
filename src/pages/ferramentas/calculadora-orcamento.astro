@@ -1,0 +1,245 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Ferramentas', url: '/ferramentas' },
+  { name: 'Calculadora de Orçamento 50-30-20', url: '/ferramentas/calculadora-orcamento' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que é a regra 50-30-20?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A regra 50-30-20 divide sua renda em 3 categorias: 50% para necessidades (aluguel, contas, alimentação), 30% para desejos (lazer, compras), e 20% para metas financeiras (poupança, investimentos, dívidas)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Como usar a regra 50-30-20?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pegue sua renda líquida mensal e multiplique por 0.5 (necessidades), 0.3 (desejos) e 0.2 (poupança). Distribua seus gastos respeitando esses limites." }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Calculadora de Orçamento 50-30-20 Grátis"
+  description="Monte seu orçamento pessoal usando a regra 50-30-20. Calculadora gratuita com visualização e dicas para organizar suas finanças."
+  keywords={['regra 50-30-20', 'calculadora orçamento', 'orçamento pessoal', 'como dividir salário', 'planejamento financeiro']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <Header />
+
+  <main class="tool-page">
+    <div class="container">
+      <header class="tool-header">
+        <nav class="tool-breadcrumb">
+          <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Orçamento 50-30-20</span>
+        </nav>
+        <h1>Calculadora de Orçamento 50-30-20</h1>
+        <p class="tool-subtitle">Descubra como dividir seu salário de forma inteligente usando a regra mais popular de finanças pessoais.</p>
+      </header>
+
+      <div class="calculator-layout">
+        <div class="calculator-form">
+          <div class="form-group full">
+            <label for="income">Renda líquida mensal (R$)</label>
+            <input type="number" id="income" value="5000" min="0" step="100" />
+          </div>
+          <button class="calc-btn" id="calc-btn">Calcular Orçamento</button>
+        </div>
+
+        <div class="calculator-results" id="results" style="display:none;">
+          <div class="budget-cards">
+            <div class="budget-card needs">
+              <div class="budget-icon">🏠</div>
+              <span class="budget-percent">50%</span>
+              <span class="budget-label">Necessidades</span>
+              <span class="budget-value" id="r-needs">R$ 0</span>
+              <span class="budget-desc">Aluguel, contas, alimentação, transporte, saúde</span>
+            </div>
+            <div class="budget-card wants">
+              <div class="budget-icon">🎉</div>
+              <span class="budget-percent">30%</span>
+              <span class="budget-label">Desejos</span>
+              <span class="budget-value" id="r-wants">R$ 0</span>
+              <span class="budget-desc">Lazer, restaurantes, streaming, compras, hobbies</span>
+            </div>
+            <div class="budget-card savings">
+              <div class="budget-icon">🎯</div>
+              <span class="budget-percent">20%</span>
+              <span class="budget-label">Metas Financeiras</span>
+              <span class="budget-value" id="r-savings">R$ 0</span>
+              <span class="budget-desc">Poupança, investimentos, quitar dívidas</span>
+            </div>
+          </div>
+
+          <div class="budget-bar">
+            <div class="bar-segment needs-bar" id="bar-needs"></div>
+            <div class="bar-segment wants-bar" id="bar-wants"></div>
+            <div class="bar-segment savings-bar" id="bar-savings"></div>
+          </div>
+
+          <div class="budget-summary">
+            <p id="summary-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <InlineAppCTA variant="full" locale="pt" />
+
+      <section class="tool-faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+          <summary>O que é a regra 50-30-20?</summary>
+          <p>A regra 50-30-20 divide sua renda em 3 categorias: <strong>50%</strong> para necessidades (aluguel, contas, alimentação), <strong>30%</strong> para desejos (lazer, compras), e <strong>20%</strong> para metas financeiras (poupança, investimentos, dívidas).</p>
+        </details>
+        <details>
+          <summary>E se eu ganho pouco? A regra ainda funciona?</summary>
+          <p>Sim! A regra é um guia flexível. Se suas necessidades consomem mais de 50%, ajuste para 60-20-20 ou 70-20-10. O importante é sempre separar algo para poupança.</p>
+        </details>
+        <details>
+          <summary>Devo usar o salário bruto ou líquido?</summary>
+          <p>Use sempre o <strong>salário líquido</strong> (o que cai na conta). Descontos de INSS, IR e vale-transporte já saíram antes de chegar a você.</p>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  function formatCurrency(value) {
+    return 'R$ ' + value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  }
+
+  function calculate() {
+    const income = parseFloat(document.getElementById('income').value) || 0;
+    const needs = income * 0.5;
+    const wants = income * 0.3;
+    const savings = income * 0.2;
+
+    document.getElementById('r-needs').textContent = formatCurrency(needs);
+    document.getElementById('r-wants').textContent = formatCurrency(wants);
+    document.getElementById('r-savings').textContent = formatCurrency(savings);
+
+    document.getElementById('bar-needs').style.width = '50%';
+    document.getElementById('bar-wants').style.width = '30%';
+    document.getElementById('bar-savings').style.width = '20%';
+
+    const yearly = savings * 12;
+    document.getElementById('summary-text').innerHTML =
+      `Com <strong>${formatCurrency(savings)}/mês</strong> em poupança, em 1 ano você terá <strong>${formatCurrency(yearly)}</strong> guardados. Em 5 anos, investindo a 1% ao mês, pode chegar a <strong>${formatCurrency(savings * ((Math.pow(1.01, 60) - 1) / 0.01))}</strong>.`;
+
+    document.getElementById('results').style.display = 'block';
+  }
+
+  document.getElementById('calc-btn').addEventListener('click', calculate);
+  document.getElementById('income').addEventListener('keyup', function(e) { if (e.key === 'Enter') calculate(); });
+  calculate();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-breadcrumb { font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; }
+  .tool-breadcrumb a { color: var(--text-link); text-decoration: none; }
+  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; }
+  .tool-subtitle { color: var(--text-secondary); font-size: 1rem; }
+
+  .calculator-layout { display: grid; gap: 2rem; margin-bottom: 2rem; }
+  .calculator-form {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: grid;
+    gap: 1rem;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+  .form-group.full { grid-column: 1 / -1; }
+  .form-group label { color: var(--text-secondary); font-size: 0.85rem; font-weight: 500; }
+  .form-group input {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 0.8rem;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .form-group input:focus { outline: none; border-color: var(--accent-primary); }
+  .calc-btn {
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .calc-btn:hover { transform: translateY(-1px); }
+
+  .calculator-results {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .budget-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+  .budget-card {
+    background: var(--bg-tertiary);
+    border-radius: 10px;
+    padding: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    border-top: 3px solid transparent;
+  }
+  .budget-card.needs { border-top-color: #58a6ff; }
+  .budget-card.wants { border-top-color: #bc8cff; }
+  .budget-card.savings { border-top-color: #3fb950; }
+  .budget-icon { font-size: 1.5rem; }
+  .budget-percent { font-size: 1.5rem; font-weight: 800; color: var(--text-primary); }
+  .budget-label { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.04em; }
+  .budget-value { font-size: 1.1rem; font-weight: 700; color: var(--text-primary); }
+  .budget-desc { font-size: 0.7rem; color: var(--text-tertiary); margin-top: 0.3rem; }
+
+  .budget-bar { display: flex; height: 12px; border-radius: 6px; overflow: hidden; margin-bottom: 1.5rem; }
+  .bar-segment { height: 100%; transition: width 0.5s; }
+  .needs-bar { background: #58a6ff; }
+  .wants-bar { background: #bc8cff; }
+  .savings-bar { background: #3fb950; }
+
+  .budget-summary { background: var(--bg-tertiary); border-radius: 8px; padding: 1rem; }
+  .budget-summary p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0; }
+
+  .tool-faq { margin-top: 2rem; }
+  .tool-faq h2 { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; }
+  .tool-faq details {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
+  .tool-faq summary { color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.95rem; }
+  .tool-faq details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+
+  @media (max-width: 640px) {
+    .budget-cards { grid-template-columns: 1fr; }
+  }
+</style>

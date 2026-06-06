@@ -21,19 +21,19 @@ import Footer from '@components/footer/Footer.astro';
       </header>
 
       <div class="ferramentas-grid">
-        <div class="ferramenta-card">
-          <span class="ferramenta-badge">Em breve</span>
+        <a href="/ferramentas/calculadora-juros-compostos" class="ferramenta-card active">
+          <span class="ferramenta-badge live">Disponível</span>
           <div class="ferramenta-icon">📈</div>
           <h3 class="ferramenta-title">Calculadora de Juros Compostos</h3>
           <p class="ferramenta-description">Simule quanto seu dinheiro pode render ao longo do tempo com juros compostos.</p>
-        </div>
+        </a>
 
-        <div class="ferramenta-card">
-          <span class="ferramenta-badge">Em breve</span>
+        <a href="/ferramentas/calculadora-orcamento" class="ferramenta-card active">
+          <span class="ferramenta-badge live">Disponível</span>
           <div class="ferramenta-icon">💰</div>
-          <h3 class="ferramenta-title">Calculadora de Orçamento</h3>
+          <h3 class="ferramenta-title">Calculadora de Orçamento 50-30-20</h3>
           <p class="ferramenta-description">Monte seu orçamento usando a regra 50-30-20 de forma rápida e visual.</p>
-        </div>
+        </a>
 
         <div class="ferramenta-card">
           <span class="ferramenta-badge">Em breve</span>
@@ -158,5 +158,18 @@ import Footer from '@components/footer/Footer.astro';
     color: var(--text-secondary);
     line-height: var(--leading-relaxed);
     margin-bottom: 0;
+  }
+
+  .ferramenta-card.active {
+    border-color: #3fb950;
+    cursor: pointer;
+  }
+  .ferramenta-card.active:hover {
+    border-color: #3fb950;
+    box-shadow: 0 0 20px rgba(63, 185, 80, 0.2);
+  }
+  .ferramenta-badge.live {
+    background: rgba(63, 185, 80, 0.15);
+    color: #3fb950;
   }
 </style>

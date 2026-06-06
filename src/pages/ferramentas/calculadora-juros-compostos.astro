@@ -1,0 +1,328 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Ferramentas', url: '/ferramentas' },
+  { name: 'Calculadora de Juros Compostos', url: '/ferramentas/calculadora-juros-compostos' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que são juros compostos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Juros compostos são juros calculados sobre o valor inicial mais os juros acumulados de períodos anteriores. É o chamado 'juros sobre juros', que faz seu dinheiro crescer exponencialmente ao longo do tempo." }
+    },
+    {
+      "@type": "Question",
+      "name": "Como calcular juros compostos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A fórmula é: M = C × (1 + i)^t, onde M é o montante final, C é o capital inicial, i é a taxa de juros por período, e t é o número de períodos." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre juros simples e compostos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nos juros simples, os juros são calculados apenas sobre o valor inicial. Nos juros compostos, são calculados sobre o valor inicial mais os juros acumulados, gerando crescimento exponencial." }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Calculadora de Juros Compostos Grátis"
+  description="Calcule juros compostos gratuitamente. Simule investimentos com aportes mensais, veja gráficos e descubra quanto seu dinheiro vai render."
+  keywords={['calculadora juros compostos', 'simulador investimento', 'juros sobre juros', 'calculadora rendimento', 'quanto rende']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <Header />
+
+  <main class="tool-page">
+    <div class="container">
+      <header class="tool-header">
+        <nav class="tool-breadcrumb">
+          <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Juros Compostos</span>
+        </nav>
+        <h1>Calculadora de Juros Compostos</h1>
+        <p class="tool-subtitle">Simule quanto seu dinheiro pode render ao longo do tempo com juros compostos e aportes mensais.</p>
+      </header>
+
+      <div class="calculator-layout">
+        <div class="calculator-form">
+          <div class="form-group">
+            <label for="initial">Capital inicial (R$)</label>
+            <input type="number" id="initial" value="1000" min="0" step="100" />
+          </div>
+          <div class="form-group">
+            <label for="monthly">Aporte mensal (R$)</label>
+            <input type="number" id="monthly" value="500" min="0" step="50" />
+          </div>
+          <div class="form-group">
+            <label for="rate">Taxa de juros (% ao mês)</label>
+            <input type="number" id="rate" value="1" min="0" max="100" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="period">Período (meses)</label>
+            <input type="number" id="period" value="60" min="1" max="600" step="1" />
+          </div>
+          <button class="calc-btn" id="calc-btn">Calcular</button>
+        </div>
+
+        <div class="calculator-results" id="results" style="display:none;">
+          <div class="result-cards">
+            <div class="result-card">
+              <span class="result-label">Montante Final</span>
+              <span class="result-value" id="r-total">R$ 0</span>
+            </div>
+            <div class="result-card">
+              <span class="result-label">Total Investido</span>
+              <span class="result-value" id="r-invested">R$ 0</span>
+            </div>
+            <div class="result-card highlight">
+              <span class="result-label">Juros Ganhos</span>
+              <span class="result-value" id="r-interest">R$ 0</span>
+            </div>
+          </div>
+          <div class="chart-container">
+            <canvas id="chart" width="600" height="300"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <InlineAppCTA variant="full" locale="pt" />
+
+      <section class="tool-faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+          <summary>O que são juros compostos?</summary>
+          <p>Juros compostos são juros calculados sobre o valor inicial mais os juros acumulados de períodos anteriores. É o chamado "juros sobre juros", que faz seu dinheiro crescer exponencialmente ao longo do tempo.</p>
+        </details>
+        <details>
+          <summary>Como calcular juros compostos?</summary>
+          <p>A fórmula é: <strong>M = C × (1 + i)^t</strong>, onde M é o montante final, C é o capital inicial, i é a taxa de juros por período, e t é o número de períodos. Com aportes mensais, o cálculo é feito mês a mês.</p>
+        </details>
+        <details>
+          <summary>Qual a diferença entre juros simples e compostos?</summary>
+          <p>Nos juros simples, os juros são calculados apenas sobre o valor inicial. Nos juros compostos, são calculados sobre o valor inicial mais os juros acumulados, gerando crescimento exponencial.</p>
+        </details>
+        <details>
+          <summary>Quanto rende R$ 1.000 por mês a 1% ao mês?</summary>
+          <p>R$ 1.000 investidos a 1% ao mês, sem aportes adicionais, rendem aproximadamente R$ 1.817 em 5 anos (60 meses). Com aporte mensal de R$ 500, o montante chega a cerca de R$ 42.000.</p>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  function formatCurrency(value) {
+    return 'R$ ' + value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  }
+
+  function calculate() {
+    const initial = parseFloat(document.getElementById('initial').value) || 0;
+    const monthly = parseFloat(document.getElementById('monthly').value) || 0;
+    const rate = (parseFloat(document.getElementById('rate').value) || 0) / 100;
+    const period = parseInt(document.getElementById('period').value) || 1;
+
+    let balance = initial;
+    const dataInvested = [initial];
+    const dataTotal = [initial];
+
+    for (let i = 1; i <= period; i++) {
+      balance = balance * (1 + rate) + monthly;
+      dataInvested.push(initial + monthly * i);
+      dataTotal.push(balance);
+    }
+
+    const totalInvested = initial + monthly * period;
+    const interest = balance - totalInvested;
+
+    document.getElementById('r-total').textContent = formatCurrency(balance);
+    document.getElementById('r-invested').textContent = formatCurrency(totalInvested);
+    document.getElementById('r-interest').textContent = formatCurrency(interest);
+    document.getElementById('results').style.display = 'block';
+
+    drawChart(dataInvested, dataTotal, period);
+  }
+
+  function drawChart(dataInvested, dataTotal, period) {
+    const canvas = document.getElementById('chart');
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width;
+    const H = canvas.height;
+    const padding = 40;
+
+    ctx.clearRect(0, 0, W, H);
+
+    const maxVal = Math.max(...dataTotal);
+    const xStep = (W - padding * 2) / period;
+    const yScale = (H - padding * 2) / maxVal;
+
+    // Grid
+    ctx.strokeStyle = '#30363d';
+    ctx.lineWidth = 0.5;
+    for (let i = 0; i <= 4; i++) {
+      const y = padding + (H - padding * 2) * (i / 4);
+      ctx.beginPath();
+      ctx.moveTo(padding, y);
+      ctx.lineTo(W - padding, y);
+      ctx.stroke();
+      ctx.fillStyle = '#6e7681';
+      ctx.font = '10px Inter, sans-serif';
+      ctx.fillText(formatCurrency(maxVal * (1 - i / 4)), 0, y + 4);
+    }
+
+    // Invested line
+    ctx.strokeStyle = '#8b949e';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    for (let i = 0; i <= period; i++) {
+      const x = padding + i * xStep;
+      const y = H - padding - dataInvested[i] * yScale;
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+
+    // Total line
+    ctx.strokeStyle = '#3fb950';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    for (let i = 0; i <= period; i++) {
+      const x = padding + i * xStep;
+      const y = H - padding - dataTotal[i] * yScale;
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+
+    // Fill area between
+    ctx.fillStyle = 'rgba(63, 185, 80, 0.1)';
+    ctx.beginPath();
+    for (let i = 0; i <= period; i++) {
+      const x = padding + i * xStep;
+      const y = H - padding - dataTotal[i] * yScale;
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    for (let i = period; i >= 0; i--) {
+      const x = padding + i * xStep;
+      const y = H - padding - dataInvested[i] * yScale;
+      ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.fill();
+
+    // Legend
+    ctx.fillStyle = '#3fb950';
+    ctx.fillRect(W - 160, 10, 12, 12);
+    ctx.fillStyle = '#f0f6fc';
+    ctx.font = '11px Inter, sans-serif';
+    ctx.fillText('Montante', W - 144, 20);
+    ctx.fillStyle = '#8b949e';
+    ctx.fillRect(W - 160, 28, 12, 12);
+    ctx.fillStyle = '#f0f6fc';
+    ctx.fillText('Investido', W - 144, 38);
+  }
+
+  document.getElementById('calc-btn').addEventListener('click', calculate);
+  document.querySelectorAll('.calculator-form input').forEach(input => {
+    input.addEventListener('keyup', function(e) { if (e.key === 'Enter') calculate(); });
+  });
+  calculate();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-breadcrumb { font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; }
+  .tool-breadcrumb a { color: var(--text-link); text-decoration: none; }
+  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; }
+  .tool-subtitle { color: var(--text-secondary); font-size: 1rem; }
+
+  .calculator-layout { display: grid; gap: 2rem; margin-bottom: 2rem; }
+  .calculator-form {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+  .form-group label { color: var(--text-secondary); font-size: 0.8rem; font-weight: 500; }
+  .form-group input {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 0.7rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+  }
+  .form-group input:focus { outline: none; border-color: var(--accent-primary); }
+  .calc-btn {
+    grid-column: 1 / -1;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .calc-btn:hover { transform: translateY(-1px); }
+
+  .calculator-results {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .result-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+  .result-card {
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .result-card.highlight { border: 1px solid #3fb950; }
+  .result-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
+  .result-value { font-size: 1.2rem; font-weight: 700; color: var(--text-primary); }
+  .result-card.highlight .result-value { color: #3fb950; }
+  .chart-container { width: 100%; overflow-x: auto; }
+  canvas { width: 100%; height: auto; }
+
+  .tool-faq { margin-top: 2rem; }
+  .tool-faq h2 { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; }
+  .tool-faq details {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
+  .tool-faq summary {
+    color: var(--text-primary);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  .tool-faq details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+
+  @media (max-width: 640px) {
+    .calculator-form { grid-template-columns: 1fr; }
+    .result-cards { grid-template-columns: 1fr; }
+  }
+</style>
