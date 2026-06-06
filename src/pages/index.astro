@@ -15,18 +15,6 @@ const sortedPosts = allPosts.sort((a, b) => {
   return a.slug.localeCompare(b.slug);
 });
 
-// Hero: most recent post (cotações have priority as "breaking news")
-const latestCotacao = sortedPosts.find(p => p.data.category === 'cotacoes');
-const heroPost = latestCotacao && latestCotacao.data.publishedAt.getTime() === sortedPosts[0]?.data.publishedAt.getTime()
-  ? latestCotacao
-  : sortedPosts[0];
-
-// 3 dynamic cards: latest dica (not hero), latest cotação (if not hero), latest glossário
-const latestDica = sortedPosts.find(p => p.slug !== heroPost?.slug && p.data.category !== 'cotacoes');
-const latestCotacaoCard = latestCotacao?.slug === heroPost?.slug
-  ? sortedPosts.find(p => p.data.category === 'cotacoes' && p.slug !== heroPost?.slug)
-  : latestCotacao;
-
 // Get latest glossário from glossario collection
 const allGlossario = await getCollection('glossario', ({ data }) => data.locale === 'pt');
 const sortedGlossario = allGlossario.sort((a, b) => {
@@ -34,7 +22,51 @@ const sortedGlossario = allGlossario.sort((a, b) => {
   if (dateDiff !== 0) return dateDiff;
   return a.slug.localeCompare(b.slug);
 });
-const latestGlossario = sortedGlossario[0];
+
+// Hero: absolute most recent content (posts OR glossário)
+const latestPost = sortedPosts[0];
+const latestGlossarioItem = sortedGlossario[0];
+
+let heroContent: { title: string; description: string; image: string | undefined; href: string; category: string; date: Date; readingTime?: number; type: string } | null = null;
+
+const postDate = latestPost?.data.publishedAt.getTime() || 0;
+const glossarioDate = latestGlossarioItem?.data.publishedAt.getTime() || 0;
+
+if (glossarioDate > postDate && latestGlossarioItem) {
+  heroContent = {
+    title: latestGlossarioItem.data.term,
+    description: latestGlossarioItem.data.definition || '',
+    image: latestGlossarioItem.data.image,
+    href: `/glossario/${latestGlossarioItem.slug}`,
+    category: 'glossario',
+    date: latestGlossarioItem.data.publishedAt,
+    type: 'glossario',
+  };
+} else if (latestPost) {
+  heroContent = {
+    title: latestPost.data.title,
+    description: latestPost.data.description,
+    image: latestPost.data.image,
+    href: `/posts/${latestPost.slug}`,
+    category: latestPost.data.category,
+    date: latestPost.data.publishedAt,
+    readingTime: latestPost.data.readingTime,
+    type: 'post',
+  };
+}
+
+// 3 Cards: latest Dica, latest Cotação, latest Glossário (skip if already in Hero)
+const heroSlug = heroContent?.href || '';
+
+// Card 1: latest Dica
+const latestDica = sortedPosts.find(p => p.data.category === 'dicas' && `/posts/${p.slug}` !== heroSlug)
+  || sortedPosts.find(p => p.data.category !== 'cotacoes' && `/posts/${p.slug}` !== heroSlug);
+
+// Card 2: latest Cotação
+const latestCotacao = sortedPosts.find(p => p.data.category === 'cotacoes' && `/posts/${p.slug}` !== heroSlug);
+
+// Card 3: latest Glossário
+const latestGlossarioCard = sortedGlossario.find(g => `/glossario/${g.slug}` !== heroSlug);
 
 // Build secondary cards array (always 3)
 const secondaryCards = [];
@@ -48,23 +80,23 @@ if (latestDica) {
     type: 'post',
   });
 }
-if (latestCotacaoCard) {
+if (latestCotacao) {
   secondaryCards.push({
-    title: latestCotacaoCard.data.title,
-    image: latestCotacaoCard.data.image,
+    title: latestCotacao.data.title,
+    image: latestCotacao.data.image,
     category: 'cotacoes',
-    href: `/posts/${latestCotacaoCard.slug}`,
-    date: latestCotacaoCard.data.publishedAt,
+    href: `/posts/${latestCotacao.slug}`,
+    date: latestCotacao.data.publishedAt,
     type: 'cotacao',
   });
 }
-if (latestGlossario) {
+if (latestGlossarioCard) {
   secondaryCards.push({
-    title: latestGlossario.data.term,
-    image: latestGlossario.data.image,
+    title: latestGlossarioCard.data.term,
+    image: latestGlossarioCard.data.image,
     category: 'glossario',
-    href: `/glossario/${latestGlossario.slug}`,
-    date: latestGlossario.data.publishedAt,
+    href: `/glossario/${latestGlossarioCard.slug}`,
+    date: latestGlossarioCard.data.publishedAt,
     type: 'glossario',
   });
 }
@@ -72,7 +104,7 @@ if (latestGlossario) {
 // Fill remaining slots with posts if needed
 if (secondaryCards.length < 3) {
   const remaining = sortedPosts.filter(p =>
-    p.slug !== heroPost?.slug &&
+    `/posts/${p.slug}` !== heroSlug &&
     !secondaryCards.some(c => c.href === `/posts/${p.slug}`)
   );
   for (const post of remaining) {
@@ -120,23 +152,23 @@ const categoryLabels: Record<string, string> = {
     <!-- Hero Portal Style -->
     <section class="hero-portal">
       <div class="container">
-        {heroPost && (
+        {heroContent && (
           <div class="hero-grid">
             <!-- Main Featured Post -->
-            <a href={`/posts/${heroPost.slug}`} class="hero-main">
+            <a href={heroContent.href} class="hero-main">
               <div class="hero-main-image">
-                {heroPost.data.image && <img src={heroPost.data.image} alt="" loading="eager" />}
+                {heroContent.image && <img src={heroContent.image} alt="" loading="eager" />}
                 <div class="hero-main-overlay"></div>
               </div>
               <div class="hero-main-content">
-                <span class="hero-category">{categoryLabels[heroPost.data.category] || heroPost.data.category}</span>
-                <h1 class="hero-title">{heroPost.data.title}</h1>
-                <p class="hero-description">{heroPost.data.description}</p>
+                <span class="hero-category">{categoryLabels[heroContent.category] || heroContent.category}</span>
+                <h1 class="hero-title">{heroContent.title}</h1>
+                <p class="hero-description">{heroContent.description}</p>
                 <div class="hero-meta">
-                  <time datetime={heroPost.data.publishedAt.toISOString()}>
-                    {heroPost.data.publishedAt.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
+                  <time datetime={heroContent.date.toISOString()}>
+                    {heroContent.date.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
                   </time>
-                  {heroPost.data.readingTime && <span>· {heroPost.data.readingTime} min de leitura</span>}
+                  {heroContent.readingTime && <span>· {heroContent.readingTime} min de leitura</span>}
                 </div>
               </div>
             </a>

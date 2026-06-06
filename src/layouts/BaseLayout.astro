@@ -10,6 +10,7 @@ interface Props {
   author?: string;
   keywords?: string[];
   noindex?: boolean;
+  alternates?: { pt?: string; en?: string; es?: string };
 }
 
 const {
@@ -20,7 +21,8 @@ const {
   publishedTime,
   author = 'FinMoovi',
   keywords = ['finanças pessoais', 'controle financeiro', 'educação financeira', 'orçamento'],
-  noindex = false
+  noindex = false,
+  alternates
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -41,8 +43,11 @@ const hrefPt = new URL(basePath, Astro.site).toString();
 const hrefEn = new URL('/en' + (basePath === '/' ? '' : basePath), Astro.site).toString();
 const hrefEs = new URL('/es' + (basePath === '/' ? '' : basePath), Astro.site).toString();
 
-// Only emit hreflang for pages that exist in all locales (index and posts)
-const hasI18nVersion = basePath === '/' || basePath.startsWith('/posts/');
+// Only emit hreflang for pages that exist in all locales
+const hasI18nVersion = alternates || basePath === '/' || basePath === '/glossario' || basePath === '/ferramentas' || basePath === '/sobre';
+const finalHrefPt = alternates?.pt || hrefPt;
+const finalHrefEn = alternates?.en || hrefEn;
+const finalHrefEs = alternates?.es || hrefEs;
 const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es_ES' : 'en_US';
 ---
 
@@ -64,10 +69,10 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
   <!-- hreflang -->
   {hasI18nVersion && (
     <>
-      <link rel="alternate" hreflang="pt-BR" href={hrefPt} />
-      <link rel="alternate" hreflang="en" href={hrefEn} />
-      <link rel="alternate" hreflang="es" href={hrefEs} />
-      <link rel="alternate" hreflang="x-default" href={hrefPt} />
+      <link rel="alternate" hreflang="pt" href={finalHrefPt} />
+      <link rel="alternate" hreflang="en" href={finalHrefEn} />
+      <link rel="alternate" hreflang="es" href={finalHrefEs} />
+      <link rel="alternate" hreflang="x-default" href={finalHrefPt} />
     </>
   )}
 

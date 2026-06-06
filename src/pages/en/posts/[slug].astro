@@ -15,6 +15,16 @@ const { post } = Astro.props;
 const { Content, headings } = await post.render();
 
 const canonicalURL = new URL(`/en/posts/${post.slug}`, Astro.site).toString();
+
+// Find translated versions via translationKey
+const alternates: { pt?: string; en?: string; es?: string } = { en: `/en/posts/${post.slug}` };
+if (post.data.translationKey) {
+  const allPosts = await getCollection('posts', ({ data }) => !data.draft && data.translationKey === post.data.translationKey);
+  const ptPost = allPosts.find(p => p.data.locale === 'pt');
+  const esPost = allPosts.find(p => p.data.locale === 'es');
+  if (ptPost) alternates.pt = `/posts/${ptPost.slug}`;
+  if (esPost) alternates.es = `/es/posts/${esPost.slug}`;
+}
 ---
 
 <PostLayout
@@ -28,6 +38,7 @@ const canonicalURL = new URL(`/en/posts/${post.slug}`, Astro.site).toString();
   readingTime={post.data.readingTime}
   headings={headings}
   slug={post.slug}
+  alternates={alternates}
 >
   <SchemaArticle
     title={post.data.title}

@@ -21,6 +21,15 @@ const relatedTerms = allTerms.filter(t =>
   term.data.relatedTerms.some((rt: string) => t.data.term.toLowerCase().includes(rt.toLowerCase())) && t.slug !== term.slug
 ).slice(0, 4);
 
+// Find translated versions
+const alternates: { pt?: string; en?: string; es?: string } = { es: `/es/glossario/${term.slug}` };
+const allGlossario = await getCollection('glossario');
+const ptSlug = term.slug.replace(/^es-/, '');
+const ptTerm = allGlossario.find(g => g.data.locale === 'pt' && (g.slug === ptSlug || (term.data.translationKey && g.data.translationKey === term.data.translationKey)));
+const enTerm = allGlossario.find(g => g.data.locale === 'en' && (g.slug === `en-${ptSlug}` || (term.data.translationKey && g.data.translationKey === term.data.translationKey)));
+if (ptTerm) alternates.pt = `/glossario/${ptTerm.slug}`;
+if (enTerm) alternates.en = `/en/glossario/${enTerm.slug}`;
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -39,6 +48,7 @@ const faqSchema = {
   title={`¿Qué es ${term.data.term}? Explicación simple`}
   description={term.data.definition}
   keywords={[term.data.term.toLowerCase(), `qué es ${term.data.term.toLowerCase()}`, 'glosario financiero', 'educación financiera']}
+  alternates={alternates}
 >
   <Header />
 

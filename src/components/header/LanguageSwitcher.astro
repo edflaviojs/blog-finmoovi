@@ -34,19 +34,12 @@ const langs = [
   var options = document.querySelectorAll('.lang-option');
   var checks = document.querySelectorAll('.lang-check');
 
-  // Pages that exist in all locales (exact match or prefix for listings)
-  var i18nPages = ['/', '/sobre', '/glossario', '/ferramentas'];
-
-  // Detect language: URL prefix takes priority, otherwise use saved preference
+  // Detect language: URL prefix takes priority
   var path = window.location.pathname;
   var urlLang = null;
   if (path.startsWith('/en/') || path === '/en') urlLang = 'en';
   else if (path.startsWith('/es/') || path === '/es') urlLang = 'es';
 
-  var savedLang = null;
-  try { savedLang = localStorage.getItem('fm-lang'); } catch(e) {}
-
-  // Only overwrite localStorage if URL explicitly has a locale prefix
   var currentLang;
   if (urlLang) {
     currentLang = urlLang;
@@ -70,6 +63,14 @@ const langs = [
       if (toggle) toggle.setAttribute('aria-expanded', 'false');
       if (dropdown) dropdown.setAttribute('aria-hidden', 'true');
 
+      // Try to find alternate hreflang link for the target language
+      var alternateLink = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]');
+      if (alternateLink) {
+        window.location.href = alternateLink.getAttribute('href');
+        return;
+      }
+
+      // Fallback: navigate using path-based logic
       var currentPath = window.location.pathname;
       var basePath = currentPath;
 
@@ -81,20 +82,14 @@ const langs = [
       // Normalize trailing slash
       if (basePath.length > 1 && basePath.endsWith('/')) basePath = basePath.slice(0, -1);
 
-      // Only navigate if the target page exists in the target locale
+      // Pages that exist in all locales with same path
+      var i18nPages = ['/', '/sobre', '/glossario', '/ferramentas'];
       var canNavigate = i18nPages.some(function(p) {
         return basePath === p;
       });
 
-      // Glossario detail pages have different slugs per locale, navigate to glossary index
-      if (basePath.startsWith('/glossario/')) {
-        canNavigate = true;
-        basePath = '/glossario';
-      }
-
       var newPath;
       if (!canNavigate) {
-        // For posts and other pages without direct translation, go to locale homepage
         newPath = lang === 'pt' ? '/' : '/' + lang;
       } else if (lang === 'pt') {
         newPath = basePath || '/';
