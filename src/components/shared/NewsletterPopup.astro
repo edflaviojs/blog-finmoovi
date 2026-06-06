@@ -34,15 +34,40 @@
     if (shown || !popup) return;
 
     var triggered = false;
+    function showPopup() {
+      if (triggered) return;
+      triggered = true;
+      popup.classList.add('visible');
+      popup.setAttribute('aria-hidden', 'false');
+      try { sessionStorage.setItem('fm-popup-shown', '1'); } catch(e) {}
+    }
+
+    // Trigger on 60% scroll
     window.addEventListener('scroll', function() {
       if (triggered) return;
       var scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      if (scrollPercent >= 60) {
-        triggered = true;
-        popup.classList.add('visible');
-        popup.setAttribute('aria-hidden', 'false');
-        try { sessionStorage.setItem('fm-popup-shown', '1'); } catch(e) {}
+      if (scrollPercent >= 60) showPopup();
+    }, { passive: true });
+
+    // Exit intent: mouse leaves viewport from top (desktop only)
+    document.addEventListener('mouseout', function(e) {
+      if (triggered) return;
+      if (e.clientY <= 0 && e.relatedTarget === null) showPopup();
+    });
+
+    // Mobile: detect back-scroll (quick upward scroll)
+    var lastScrollY = window.scrollY;
+    var scrollUpDistance = 0;
+    window.addEventListener('scroll', function() {
+      if (triggered) return;
+      var currentY = window.scrollY;
+      if (currentY < lastScrollY) {
+        scrollUpDistance += (lastScrollY - currentY);
+        if (scrollUpDistance > 300 && currentY > 200) showPopup();
+      } else {
+        scrollUpDistance = 0;
       }
+      lastScrollY = currentY;
     }, { passive: true });
 
     document.getElementById('popup-close')?.addEventListener('click', function() {
@@ -61,11 +86,15 @@
       var msg = document.getElementById('popup-message');
       if (!email) return;
 
+      var lang = 'pt';
+      if (window.location.pathname.startsWith('/en/')) lang = 'en';
+      else if (window.location.pathname.startsWith('/es/')) lang = 'es';
+
       try {
         var res = await fetch('/api/newsletter', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email })
+          body: JSON.stringify({ email: email, lang: lang })
         });
         var data = await res.json();
         if (res.ok) {
