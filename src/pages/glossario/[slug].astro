@@ -6,7 +6,7 @@ import CTAVariado from '@components/glossario/CTAVariado.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const glossario = await getCollection('glossario', ({ data }) => !data.locale || data.locale === 'pt');
+  const glossario = await getCollection('glossario', ({ data }) => data.locale === 'pt');
   return glossario.map(term => ({
     params: { slug: term.slug },
     props: { term },
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 const { term } = Astro.props;
 const { Content } = await term.render();
 
-const allTerms = await getCollection('glossario', ({ data }) => !data.locale || data.locale === 'pt');
+const allTerms = await getCollection('glossario', ({ data }) => data.locale === 'pt');
 const relatedTerms = allTerms.filter(t =>
   term.data.relatedTerms.some((rt: string) => t.data.term.toLowerCase().includes(rt.toLowerCase())) && t.slug !== term.slug
 ).slice(0, 4);
