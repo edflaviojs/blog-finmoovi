@@ -1,7 +1,7 @@
 ---
 title: "Organizing Finances as a Freelancer"
 description: "Discover how to organize your finances as a freelancer and achieve financial stability. Practical tips and real-life examples for you."
-image: "/images/posts/organizar-financas-como-autonomo.webp"
+image: "/images/posts/organizar-financas-autonomo.webp"
 category: "dicas"
 locale: "en"
 tags: ["how to organize finances as a freelancer","personal finance","economy","money"]
@@ -31,7 +31,7 @@ Expense management is another critical area for freelancers. Without a fixed sal
 ## Investments and Savings
 As a freelancer, it's essential to think about the future and make investments that can guarantee a stable income. There are many investment options available, from stocks and bonds to investment funds and real estate. However, it's essential to remember that investments always involve risks, and it's crucial to do careful research before investing.
 
-![Gestão de Gastos](/images/posts/organizar-financas-como-autonomo-1.webp)
+![Gestão de Gastos](/images/posts/organizar-financas-autonomo-1.svg)
 
 
 
@@ -49,14 +49,14 @@ Performance analysis is essential for freelancers. Without a fixed salary, it's 
 - Analyze your expenses and income
 - Adjust your budget and investment plan as needed
 
-![Controle de Fluxo de Caixa](/images/posts/organizar-financas-como-autonomo-3.webp)
+![Controle de Fluxo de Caixa](/images/posts/organizar-financas-autonomo-3.svg)
 
 
 
 ## Start Today
 Now that you know how to organize your finances as a freelancer, it's time to start putting these tips into practice. Remember that financial management is an ongoing process, and it's essential to always be aware of your expenses and income. With a little discipline and planning, you can achieve financial stability and guarantee a secure future.
 
-![Comece hoje](/images/posts/organizar-financas-como-autonomo-5.webp)
+![Comece hoje](/images/posts/organizar-financas-autonomo-5.svg)
 
 
 
