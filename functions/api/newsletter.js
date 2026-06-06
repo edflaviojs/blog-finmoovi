@@ -55,7 +55,7 @@ export async function onRequestPost(context) {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          from: 'FinMoovi Blog <blog@finmoovi.com>',
+          from: 'FinMoovi Blog <blog@email.finmoovi.com>',
           to: [email],
           subject: 'Bem-vindo à Newsletter FinMoovi!',
           html: getWelcomeEmailHTML(email)
