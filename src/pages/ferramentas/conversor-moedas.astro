@@ -1,0 +1,257 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Ferramentas', url: '/ferramentas' },
+  { name: 'Conversor de Moedas', url: '/ferramentas/conversor-moedas' }
+];
+---
+
+<BaseLayout
+  title="Conversor de Moedas Online Grátis - Cotação em Tempo Real"
+  description="Converta entre Real, Dólar, Euro e outras moedas com cotação atualizada. Conversor grátis com taxas em tempo real."
+  keywords={['conversor de moedas', 'dólar hoje', 'euro hoje', 'cotação dólar', 'câmbio', 'converter real para dólar']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <Header />
+
+  <main class="tool-page">
+    <div class="container">
+      <header class="tool-header">
+        <nav class="tool-breadcrumb">
+          <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Conversor de Moedas</span>
+        </nav>
+        <h1>Conversor de Moedas</h1>
+        <p class="tool-subtitle">Converta valores entre moedas com cotação atualizada em tempo real.</p>
+      </header>
+
+      <div class="converter-layout">
+        <div class="converter-card">
+          <div class="converter-row">
+            <div class="converter-input-group">
+              <label for="amount">Valor</label>
+              <input type="number" id="amount" value="1000" min="0" step="1" />
+            </div>
+            <div class="converter-input-group">
+              <label for="from-currency">De</label>
+              <select id="from-currency">
+                <option value="BRL" selected>BRL - Real</option>
+                <option value="USD">USD - Dólar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - Libra</option>
+                <option value="ARS">ARS - Peso Arg.</option>
+                <option value="BTC">BTC - Bitcoin</option>
+              </select>
+            </div>
+            <button class="swap-btn" id="swap-btn" title="Inverter">⇄</button>
+            <div class="converter-input-group">
+              <label for="to-currency">Para</label>
+              <select id="to-currency">
+                <option value="BRL">BRL - Real</option>
+                <option value="USD" selected>USD - Dólar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - Libra</option>
+                <option value="ARS">ARS - Peso Arg.</option>
+                <option value="BTC">BTC - Bitcoin</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="converter-result" id="result">
+            <div class="result-main" id="result-main">---</div>
+            <div class="result-rate" id="result-rate">Carregando cotação...</div>
+            <div class="result-updated" id="result-updated"></div>
+          </div>
+        </div>
+
+        <div class="rates-table" id="rates-table">
+          <h3>Cotações do Dia (base: BRL)</h3>
+          <div class="rates-grid" id="rates-grid">
+            <div class="rate-loading">Carregando...</div>
+          </div>
+        </div>
+      </div>
+
+      <InlineAppCTA variant="full" locale="pt" />
+
+      <section class="tool-faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+          <summary>De onde vêm as cotações?</summary>
+          <p>As cotações são obtidas de APIs públicas de câmbio e refletem a taxa comercial. Para operações bancárias, consulte seu banco — o spread pode variar.</p>
+        </details>
+        <details>
+          <summary>Com que frequência as cotações são atualizadas?</summary>
+          <p>As cotações são atualizadas a cada consulta. Em dias úteis, refletem o mercado em tempo real. Em fins de semana, mostram o fechamento da sexta-feira.</p>
+        </details>
+        <details>
+          <summary>Posso usar esse valor para transferências internacionais?</summary>
+          <p>Este conversor mostra a taxa comercial como referência. Bancos e serviços de remessa aplicam spreads e taxas adicionais. Use como base para comparação.</p>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  let rates = {};
+
+  async function fetchRates() {
+    try {
+      const res = await fetch('https://api.exchangerate-api.com/v4/latest/BRL');
+      const data = await res.json();
+      rates = data.rates;
+      rates.BRL = 1;
+      updateRatesTable();
+      convert();
+    } catch (e) {
+      document.getElementById('result-rate').textContent = 'Erro ao carregar cotações. Tente novamente.';
+    }
+  }
+
+  function formatNumber(num, decimals = 2) {
+    if (num > 0.01) return num.toFixed(decimals).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    return num.toFixed(6);
+  }
+
+  function convert() {
+    const amount = parseFloat(document.getElementById('amount').value) || 0;
+    const from = document.getElementById('from-currency').value;
+    const to = document.getElementById('to-currency').value;
+
+    if (!rates[from] || !rates[to]) return;
+
+    const inBRL = amount / rates[from];
+    const result = inBRL * rates[to];
+
+    document.getElementById('result-main').textContent =
+      `${formatNumber(amount)} ${from} = ${formatNumber(result)} ${to}`;
+    document.getElementById('result-rate').textContent =
+      `1 ${from} = ${formatNumber(rates[to] / rates[from])} ${to}`;
+    document.getElementById('result-updated').textContent =
+      `Atualizado: ${new Date().toLocaleString('pt-BR')}`;
+  }
+
+  function updateRatesTable() {
+    const currencies = ['USD', 'EUR', 'GBP', 'ARS', 'BTC'];
+    const grid = document.getElementById('rates-grid');
+    grid.innerHTML = currencies.map(c => {
+      const rate = rates[c] ? (1 / rates[c]).toFixed(c === 'BTC' ? 0 : 4) : '---';
+      const labels = { USD: 'Dólar', EUR: 'Euro', GBP: 'Libra', ARS: 'Peso Arg.', BTC: 'Bitcoin' };
+      return `<div class="rate-item">
+        <span class="rate-currency">${c}</span>
+        <span class="rate-name">${labels[c]}</span>
+        <span class="rate-value">R$ ${rate}</span>
+      </div>`;
+    }).join('');
+  }
+
+  document.getElementById('amount').addEventListener('input', convert);
+  document.getElementById('from-currency').addEventListener('change', convert);
+  document.getElementById('to-currency').addEventListener('change', convert);
+  document.getElementById('swap-btn').addEventListener('click', function() {
+    const from = document.getElementById('from-currency');
+    const to = document.getElementById('to-currency');
+    const temp = from.value;
+    from.value = to.value;
+    to.value = temp;
+    convert();
+  });
+
+  fetchRates();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-breadcrumb { font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; }
+  .tool-breadcrumb a { color: var(--text-link); text-decoration: none; }
+  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; }
+  .tool-subtitle { color: var(--text-secondary); font-size: 1rem; }
+
+  .converter-layout { display: grid; gap: 1.5rem; margin-bottom: 2rem; }
+  .converter-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .converter-row {
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+    flex-wrap: wrap;
+  }
+  .converter-input-group { flex: 1; min-width: 120px; display: flex; flex-direction: column; gap: 0.3rem; }
+  .converter-input-group label { color: var(--text-secondary); font-size: 0.8rem; font-weight: 500; }
+  .converter-input-group input, .converter-input-group select {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 0.7rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+  }
+  .converter-input-group input:focus, .converter-input-group select:focus { outline: none; border-color: var(--accent-primary); }
+  .swap-btn {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .swap-btn:hover { background: var(--bg-card); }
+
+  .converter-result {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+    text-align: center;
+  }
+  .result-main { font-size: 1.4rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.3rem; }
+  .result-rate { font-size: 0.85rem; color: var(--text-secondary); }
+  .result-updated { font-size: 0.7rem; color: var(--text-tertiary); margin-top: 0.5rem; }
+
+  .rates-table {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .rates-table h3 { color: var(--text-primary); font-size: 1rem; margin-bottom: 1rem; }
+  .rates-grid { display: grid; gap: 0.5rem; }
+  .rate-item {
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border-muted);
+  }
+  .rate-currency { font-weight: 700; color: var(--text-primary); font-size: 0.85rem; }
+  .rate-name { color: var(--text-secondary); font-size: 0.8rem; }
+  .rate-value { color: #3fb950; font-weight: 600; font-size: 0.9rem; text-align: right; }
+  .rate-loading { color: var(--text-tertiary); font-size: 0.85rem; }
+
+  .tool-faq { margin-top: 2rem; }
+  .tool-faq h2 { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; }
+  .tool-faq details { background: var(--bg-secondary); border: 1px solid var(--border-default); border-radius: 8px; margin-bottom: 0.5rem; padding: 1rem; }
+  .tool-faq summary { color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.95rem; }
+  .tool-faq details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+
+  @media (max-width: 640px) {
+    .converter-row { flex-direction: column; }
+    .swap-btn { align-self: center; }
+  }
+</style>

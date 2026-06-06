@@ -1,0 +1,353 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Ferramentas', url: '/ferramentas' },
+  { name: 'Simulador de Investimento', url: '/ferramentas/simulador-investimento' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto preciso investir por mês para ter 1 milhão?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Depende do prazo e da rentabilidade. Com 1% ao mês (cerca de 12,7% ao ano), investindo R$ 1.500/mês, você alcança R$ 1 milhão em aproximadamente 20 anos. Use nosso simulador para calcular cenários personalizados." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual rendimento usar na simulação?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Para estimativas conservadoras, use 0.8% ao mês (Tesouro Selic/CDB). Para moderado, 1% ao mês (fundos multimercado). Para agressivo, 1.2-1.5% ao mês (renda variável de longo prazo)." }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Simulador de Investimento Grátis - Quanto Investir por Mês"
+  description="Descubra quanto precisa investir por mês para alcançar seu objetivo. Simulador gratuito com gráfico de evolução patrimonial."
+  keywords={['simulador investimento', 'quanto investir por mês', 'como juntar 1 milhão', 'simulador renda fixa', 'calculadora investimento']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <Header />
+
+  <main class="tool-page">
+    <div class="container">
+      <header class="tool-header">
+        <nav class="tool-breadcrumb">
+          <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Simulador de Investimento</span>
+        </nav>
+        <h1>Simulador de Investimento</h1>
+        <p class="tool-subtitle">Descubra quanto precisa investir por mês para alcançar seu objetivo financeiro.</p>
+      </header>
+
+      <div class="calculator-layout">
+        <div class="calculator-form">
+          <div class="form-group">
+            <label for="goal">Objetivo (R$)</label>
+            <input type="number" id="goal" value="100000" min="1000" step="1000" />
+          </div>
+          <div class="form-group">
+            <label for="initial">Valor inicial (R$)</label>
+            <input type="number" id="initial" value="0" min="0" step="100" />
+          </div>
+          <div class="form-group">
+            <label for="rate">Rendimento (% ao mês)</label>
+            <input type="number" id="rate" value="1" min="0" max="10" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="period">Prazo (anos)</label>
+            <input type="number" id="period" value="5" min="1" max="50" step="1" />
+          </div>
+          <button class="calc-btn" id="calc-btn">Simular</button>
+        </div>
+
+        <div class="calculator-results" id="results" style="display:none;">
+          <div class="result-cards">
+            <div class="result-card highlight">
+              <span class="result-label">Aporte mensal necessário</span>
+              <span class="result-value" id="r-monthly">R$ 0</span>
+            </div>
+            <div class="result-card">
+              <span class="result-label">Total investido</span>
+              <span class="result-value" id="r-invested">R$ 0</span>
+            </div>
+            <div class="result-card">
+              <span class="result-label">Ganho em juros</span>
+              <span class="result-value" id="r-interest">R$ 0</span>
+            </div>
+          </div>
+
+          <div class="scenarios">
+            <h3>Cenários alternativos</h3>
+            <div class="scenarios-grid" id="scenarios-grid"></div>
+          </div>
+
+          <div class="chart-container">
+            <canvas id="chart" width="600" height="280"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <InlineAppCTA variant="full" locale="pt" />
+
+      <section class="tool-faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+          <summary>Quanto preciso investir por mês para ter 1 milhão?</summary>
+          <p>Depende do prazo e da rentabilidade. Com 1% ao mês, investindo <strong>R$ 1.500/mês</strong>, você alcança R$ 1 milhão em aproximadamente 20 anos. Com R$ 3.000/mês, em ~13 anos.</p>
+        </details>
+        <details>
+          <summary>Qual rendimento usar na simulação?</summary>
+          <p><strong>Conservador:</strong> 0.8% ao mês (Tesouro Selic, CDB). <strong>Moderado:</strong> 1% ao mês (fundos multimercado). <strong>Agressivo:</strong> 1.2-1.5% ao mês (renda variável de longo prazo).</p>
+        </details>
+        <details>
+          <summary>O resultado é garantido?</summary>
+          <p>Não. O simulador usa uma taxa fixa como referência. Na prática, investimentos em renda variável oscilam. Use como meta e referência, não como certeza.</p>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  function formatCurrency(value) {
+    return 'R$ ' + value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  }
+
+  function calcMonthly(goal, initial, rate, months) {
+    if (rate === 0) return (goal - initial) / months;
+    const futureInitial = initial * Math.pow(1 + rate, months);
+    const remaining = goal - futureInitial;
+    if (remaining <= 0) return 0;
+    return remaining / ((Math.pow(1 + rate, months) - 1) / rate);
+  }
+
+  function simulate() {
+    const goal = parseFloat(document.getElementById('goal').value) || 100000;
+    const initial = parseFloat(document.getElementById('initial').value) || 0;
+    const rate = (parseFloat(document.getElementById('rate').value) || 0) / 100;
+    const years = parseInt(document.getElementById('period').value) || 5;
+    const months = years * 12;
+
+    const monthly = calcMonthly(goal, initial, rate, months);
+    const totalInvested = initial + monthly * months;
+    const interest = goal - totalInvested;
+
+    document.getElementById('r-monthly').textContent = formatCurrency(monthly);
+    document.getElementById('r-invested').textContent = formatCurrency(totalInvested);
+    document.getElementById('r-interest').textContent = formatCurrency(interest);
+
+    // Scenarios
+    const scenarios = [
+      { label: `${years - 2} anos`, months: (years - 2) * 12 },
+      { label: `${years} anos`, months: months },
+      { label: `${years + 3} anos`, months: (years + 3) * 12 },
+      { label: `${years + 5} anos`, months: (years + 5) * 12 },
+    ].filter(s => s.months > 0);
+
+    const grid = document.getElementById('scenarios-grid');
+    grid.innerHTML = scenarios.map(s => {
+      const m = calcMonthly(goal, initial, rate, s.months);
+      const active = s.months === months ? ' active' : '';
+      return `<div class="scenario-item${active}">
+        <span class="scenario-label">${s.label}</span>
+        <span class="scenario-value">${formatCurrency(m)}/mês</span>
+      </div>`;
+    }).join('');
+
+    // Chart
+    drawChart(initial, monthly, rate, months, goal);
+    document.getElementById('results').style.display = 'block';
+  }
+
+  function drawChart(initial, monthly, rate, months, goal) {
+    const canvas = document.getElementById('chart');
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width;
+    const H = canvas.height;
+    const padding = 40;
+
+    ctx.clearRect(0, 0, W, H);
+
+    const dataTotal = [initial];
+    const dataInvested = [initial];
+    let balance = initial;
+    for (let i = 1; i <= months; i++) {
+      balance = balance * (1 + rate) + monthly;
+      dataTotal.push(balance);
+      dataInvested.push(initial + monthly * i);
+    }
+
+    const maxVal = Math.max(goal, ...dataTotal);
+    const xStep = (W - padding * 2) / months;
+    const yScale = (H - padding * 2) / maxVal;
+
+    // Goal line
+    ctx.strokeStyle = '#d29922';
+    ctx.setLineDash([5, 5]);
+    ctx.lineWidth = 1;
+    const goalY = H - padding - goal * yScale;
+    ctx.beginPath();
+    ctx.moveTo(padding, goalY);
+    ctx.lineTo(W - padding, goalY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = '#d29922';
+    ctx.font = '10px Inter, sans-serif';
+    ctx.fillText('Meta', W - padding - 30, goalY - 5);
+
+    // Invested area
+    ctx.fillStyle = 'rgba(88, 166, 255, 0.1)';
+    ctx.beginPath();
+    ctx.moveTo(padding, H - padding);
+    for (let i = 0; i <= months; i++) {
+      ctx.lineTo(padding + i * xStep, H - padding - dataInvested[i] * yScale);
+    }
+    ctx.lineTo(padding + months * xStep, H - padding);
+    ctx.closePath();
+    ctx.fill();
+
+    // Total area
+    ctx.fillStyle = 'rgba(63, 185, 80, 0.15)';
+    ctx.beginPath();
+    ctx.moveTo(padding, H - padding);
+    for (let i = 0; i <= months; i++) {
+      ctx.lineTo(padding + i * xStep, H - padding - dataTotal[i] * yScale);
+    }
+    ctx.lineTo(padding + months * xStep, H - padding);
+    ctx.closePath();
+    ctx.fill();
+
+    // Total line
+    ctx.strokeStyle = '#3fb950';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    for (let i = 0; i <= months; i++) {
+      const x = padding + i * xStep;
+      const y = H - padding - dataTotal[i] * yScale;
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+
+    // Legend
+    ctx.fillStyle = '#3fb950';
+    ctx.fillRect(padding, 8, 10, 10);
+    ctx.fillStyle = '#f0f6fc';
+    ctx.font = '10px Inter, sans-serif';
+    ctx.fillText('Patrimônio', padding + 14, 17);
+    ctx.fillStyle = '#58a6ff';
+    ctx.fillRect(padding + 90, 8, 10, 10);
+    ctx.fillStyle = '#f0f6fc';
+    ctx.fillText('Investido', padding + 104, 17);
+  }
+
+  document.getElementById('calc-btn').addEventListener('click', simulate);
+  document.querySelectorAll('.calculator-form input').forEach(input => {
+    input.addEventListener('keyup', function(e) { if (e.key === 'Enter') simulate(); });
+  });
+  simulate();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-breadcrumb { font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; }
+  .tool-breadcrumb a { color: var(--text-link); text-decoration: none; }
+  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; }
+  .tool-subtitle { color: var(--text-secondary); font-size: 1rem; }
+
+  .calculator-layout { display: grid; gap: 2rem; margin-bottom: 2rem; }
+  .calculator-form {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+  .form-group label { color: var(--text-secondary); font-size: 0.8rem; font-weight: 500; }
+  .form-group input {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 0.7rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+  }
+  .form-group input:focus { outline: none; border-color: var(--accent-primary); }
+  .calc-btn {
+    grid-column: 1 / -1;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .calc-btn:hover { transform: translateY(-1px); }
+
+  .calculator-results {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .result-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+  .result-card {
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .result-card.highlight { border: 1px solid #3fb950; }
+  .result-label { font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
+  .result-value { font-size: 1.1rem; font-weight: 700; color: var(--text-primary); }
+  .result-card.highlight .result-value { color: #3fb950; }
+
+  .scenarios { margin-bottom: 1.5rem; }
+  .scenarios h3 { color: var(--text-primary); font-size: 0.9rem; margin-bottom: 0.75rem; }
+  .scenarios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; }
+  .scenario-item {
+    background: var(--bg-tertiary);
+    border-radius: 6px;
+    padding: 0.6rem;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  .scenario-item.active { border-color: var(--accent-primary); }
+  .scenario-label { display: block; font-size: 0.7rem; color: var(--text-tertiary); margin-bottom: 0.2rem; }
+  .scenario-value { display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-primary); }
+
+  .chart-container { width: 100%; overflow-x: auto; }
+  canvas { width: 100%; height: auto; }
+
+  .tool-faq { margin-top: 2rem; }
+  .tool-faq h2 { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; }
+  .tool-faq details { background: var(--bg-secondary); border: 1px solid var(--border-default); border-radius: 8px; margin-bottom: 0.5rem; padding: 1rem; }
+  .tool-faq summary { color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.95rem; }
+  .tool-faq details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+
+  @media (max-width: 640px) {
+    .calculator-form { grid-template-columns: 1fr; }
+    .result-cards { grid-template-columns: 1fr; }
+    .scenarios-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
