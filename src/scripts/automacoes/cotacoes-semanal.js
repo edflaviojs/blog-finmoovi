@@ -4,7 +4,7 @@
  * Gera um resumo semanal do mercado financeiro
  */
 
-import { generateText, generateCoverImage } from '../apis/kie-ai.js';
+import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { getTickerRates } from '../apis/exchange-rate.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
@@ -95,6 +95,10 @@ Mencione que FinMoovi ayuda a seguir inversiones en múltiples monedas.
   const title = titles[locale];
   const slug = `${locale === 'pt' ? 'cotacoes' : locale === 'en' ? 'en-quotes' : 'es-cotizaciones'}-semana-${weekNum}-${monthName}-${today.getFullYear()}`;
 
+  // Insert 2 inline AI images into content
+  console.log(`🖼️ Inserindo imagens inline (${locale})...`);
+  const contentWithImages = await insertInlineImages(content, slug);
+
   const frontmatter = `---
 title: "${title}"
 description: "${descriptions[locale]}"
@@ -113,7 +117,7 @@ seo:
   keywords: ["${locale === 'pt' ? 'cotação dólar hoje' : locale === 'en' ? 'dollar quote today' : 'cotización dólar hoy'}", "${locale === 'pt' ? 'cotação euro' : locale === 'en' ? 'euro quote' : 'cotización euro'}", "${locale === 'pt' ? 'resumo mercado financeiro' : locale === 'en' ? 'financial market summary' : 'resumen mercado financiero'}", "selic"]
 ---
 
-${content}
+${contentWithImages}
 
 ${locale === 'pt' ? `
 ---
@@ -128,6 +132,38 @@ ${locale === 'pt' ? `
 `;
 
   return { slug, frontmatter };
+}
+
+async function insertInlineImages(content, slugBase) {
+  const h2Matches = content.match(/^## .+$/gm) || [];
+  if (h2Matches.length < 2) return content;
+
+  const headings = h2Matches.map(h => h.replace('## ', ''));
+  let result = content;
+
+  // Insert 2 images: after 1st and 3rd heading (or last available)
+  const positions = [0, Math.min(2, headings.length - 1)];
+
+  for (let idx = positions.length - 1; idx >= 0; idx--) {
+    const i = positions[idx];
+    const sectionTopic = `financial market ${headings[i]}`;
+    const imgPath = await generateInlineImage(sectionTopic, `${slugBase}-inline-${i + 1}`, 'posts');
+    const headingText = headings[i];
+    const headingPattern = `## ${headingText}`;
+    const headingIndex = result.indexOf(headingPattern);
+
+    if (headingIndex !== -1) {
+      const afterHeading = result.indexOf('\n\n', headingIndex + headingPattern.length);
+      if (afterHeading !== -1) {
+        const nextParagraphEnd = result.indexOf('\n\n', afterHeading + 2);
+        const insertAt = nextParagraphEnd !== -1 ? nextParagraphEnd : afterHeading;
+        const imgMarkdown = `\n\n![${headingText}](${imgPath})\n\n`;
+        result = result.slice(0, insertAt) + imgMarkdown + result.slice(insertAt);
+      }
+    }
+  }
+
+  return result;
 }
 
 async function main() {

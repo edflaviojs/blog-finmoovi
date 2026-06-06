@@ -4,7 +4,7 @@
  * Gera termos do glossário financeiro em 3 idiomas via Groq
  */
 
-import { generateText } from '../apis/kie-ai.js';
+import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -131,6 +131,7 @@ term: "${data.term.replace(/"/g, '\\"')}"
 definition: "${data.definition.replace(/"/g, '\\"')}"
 category: "${data.category}"
 locale: "${data.locale}"
+image: "${data.image || ''}"
 relatedTerms: ${JSON.stringify(data.relatedTerms || [])}
 publishedAt: ${data.today}
 ---
@@ -141,6 +142,38 @@ ${data.content}
   const filePath = join(GLOSSARIO_DIR, `${slug}.md`);
   writeFileSync(filePath, frontmatter, 'utf-8');
   return filePath;
+}
+
+async function insertInlineImages(content, slugBase) {
+  const h2Matches = content.match(/^## .+$/gm) || [];
+  if (h2Matches.length < 2) return content;
+
+  const headings = h2Matches.map(h => h.replace('## ', ''));
+  let result = content;
+
+  // Insert 2 images: after 1st and 3rd heading (or last available)
+  const positions = [0, Math.min(2, headings.length - 1)];
+
+  for (let idx = positions.length - 1; idx >= 0; idx--) {
+    const i = positions[idx];
+    const sectionTopic = `financial glossary ${headings[i]}`;
+    const imgPath = await generateInlineImage(sectionTopic, `${slugBase}-inline-${i + 1}`, 'glossario');
+    const headingText = headings[i];
+    const headingPattern = `## ${headingText}`;
+    const headingIndex = result.indexOf(headingPattern);
+
+    if (headingIndex !== -1) {
+      const afterHeading = result.indexOf('\n\n', headingIndex + headingPattern.length);
+      if (afterHeading !== -1) {
+        const nextParagraphEnd = result.indexOf('\n\n', afterHeading + 2);
+        const insertAt = nextParagraphEnd !== -1 ? nextParagraphEnd : afterHeading;
+        const imgMarkdown = `\n\n![${headingText}](${imgPath})\n\n`;
+        result = result.slice(0, insertAt) + imgMarkdown + result.slice(insertAt);
+      }
+    }
+  }
+
+  return result;
 }
 
 async function main() {
@@ -174,52 +207,68 @@ async function main() {
     const ptContent = await generateTermContent(termData);
     console.log(`✅ PT gerado: ${termData.term}`);
 
-    // 2. Save PT
+    // 2. Generate cover image
+    console.log('🖼️ Gerando imagem de capa...');
+    const imagePath = await generateCoverImage(termData.term, slugPt, 'glossario');
+    console.log(`🖼️ Capa salva: ${imagePath}`);
+
+    // 3. Insert 2 inline AI images into PT content
+    console.log('🖼️ Inserindo imagens inline...');
+    const contentWithImages = await insertInlineImages(ptContent.content, slugPt);
+
+    // 4. Save PT
     const ptPath = saveGlossaryTerm(slugPt, {
       term: termData.term,
       definition: ptContent.definition,
       category: termData.category,
       locale: 'pt',
+      image: imagePath,
       relatedTerms: ptContent.relatedTerms,
       today,
-      content: ptContent.content,
+      content: contentWithImages,
     });
     console.log(`📄 PT salvo: ${ptPath}`);
 
-    // 3. Translate to EN
+    // 5. Translate to EN
     console.log('🌐 Traduzindo para inglês...');
     const enContent = await translateTerm(termData, ptContent, 'en');
     const slugEn = 'en-' + createSlug(enContent.term);
+    const enContentWithImages = await insertInlineImages(enContent.content, slugEn);
 
     const enPath = saveGlossaryTerm(slugEn, {
       term: enContent.term,
       definition: enContent.definition,
       category: termData.category,
       locale: 'en',
+      image: imagePath,
       relatedTerms: ptContent.relatedTerms,
       today,
-      content: enContent.content,
+      content: enContentWithImages,
     });
     console.log(`📄 EN salvo: ${enPath}`);
 
-    // 4. Translate to ES
+    // 6. Translate to ES
     console.log('🌐 Traduzindo para espanhol...');
     const esContent = await translateTerm(termData, ptContent, 'es');
     const slugEs = 'es-' + createSlug(esContent.term);
+    const esContentWithImages = await insertInlineImages(esContent.content, slugEs);
 
     const esPath = saveGlossaryTerm(slugEs, {
       term: esContent.term,
       definition: esContent.definition,
       category: termData.category,
       locale: 'es',
+      image: imagePath,
       relatedTerms: ptContent.relatedTerms,
       today,
-      content: esContent.content,
+      content: esContentWithImages,
     });
     console.log(`📄 ES salvo: ${esPath}`);
 
-    // 5. Git commit all
+    // 7. Git commit all
+    const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario');
     execSync(`git add "${GLOSSARIO_DIR}"`, { stdio: 'inherit' });
+    execSync(`git add "${IMAGES_DIR}"`, { stdio: 'inherit' });
     execSync(`git commit -m "glossário: ${termData.term} [PT/EN/ES]"`, { stdio: 'inherit' });
 
     console.log(`✅ Termo "${termData.term}" publicado em 3 idiomas!`);

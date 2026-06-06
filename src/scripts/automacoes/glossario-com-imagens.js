@@ -4,7 +4,7 @@
  * Usa SVG gerado localmente (sem dependência de API externa)
  */
 
-import { generateText, generateCoverImage } from '../apis/kie-ai.js';
+import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
@@ -28,7 +28,7 @@ async function generateGlossaryTerm(term, language = 'pt') {
   console.log(`📚 Gerando glossário para: ${term} (${language})`);
 
   try {
-    // Gerar imagem de capa como SVG local
+    // Gerar imagem de capa via IA
     const slug = slugify(term);
     console.log('🖼️ Gerando imagem de capa...');
     const localImagePath = await generateCoverImage(term, slug, 'glossario');
@@ -37,11 +37,15 @@ async function generateGlossaryTerm(term, language = 'pt') {
     // Gerar conteúdo com base no idioma
     const content = await generateGlossaryContent(term, language);
 
+    // Inserir 2 imagens inline no conteúdo
+    console.log('🖼️ Inserindo imagens inline...');
+    const contentWithImages = await insertInlineImages(content, slug, term);
+
     return {
       title: getLocalizedTitle(term, language),
       description: getLocalizedDescription(term, language),
       image: localImagePath,
-      content,
+      content: contentWithImages,
       keywords: getLocalizedKeywords(term, language)
     };
   } catch (error) {
@@ -133,6 +137,38 @@ Formato: markdown puro, sin bloques de código, sin HTML.
     .replace(/\n{3,}/g, '\n\n')           // Max 2 newlines (1 blank line)
     .replace(/^## (.+)\n\n\n/gm, '## $1\n\n')  // No extra lines after headers
     .trim();
+}
+
+async function insertInlineImages(content, slugBase, term) {
+  const h2Matches = content.match(/^## .+$/gm) || [];
+  if (h2Matches.length < 2) return content;
+
+  const headings = h2Matches.map(h => h.replace('## ', ''));
+  let result = content;
+
+  // Insert 2 images: after 1st and 3rd heading (or last available)
+  const positions = [0, Math.min(2, headings.length - 1)];
+
+  for (let idx = positions.length - 1; idx >= 0; idx--) {
+    const i = positions[idx];
+    const sectionTopic = `financial glossary ${term} ${headings[i]}`;
+    const imgPath = await generateInlineImage(sectionTopic, `${slugBase}-inline-${i + 1}`, 'glossario');
+    const headingText = headings[i];
+    const headingPattern = `## ${headingText}`;
+    const headingIndex = result.indexOf(headingPattern);
+
+    if (headingIndex !== -1) {
+      const afterHeading = result.indexOf('\n\n', headingIndex + headingPattern.length);
+      if (afterHeading !== -1) {
+        const nextParagraphEnd = result.indexOf('\n\n', afterHeading + 2);
+        const insertAt = nextParagraphEnd !== -1 ? nextParagraphEnd : afterHeading;
+        const imgMarkdown = `\n\n![${headingText}](${imgPath})\n\n`;
+        result = result.slice(0, insertAt) + imgMarkdown + result.slice(insertAt);
+      }
+    }
+  }
+
+  return result;
 }
 
 function getLocalizedTitle(term, language) {

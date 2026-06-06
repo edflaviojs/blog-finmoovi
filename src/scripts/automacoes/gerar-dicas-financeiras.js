@@ -4,7 +4,7 @@
  * Gera um post completo em 3 idiomas com imagens SVG locais via Groq
  */
 
-import { generateBlogPost, generateText, generateCoverImage, generateCoverImageSync } from '../apis/kie-ai.js';
+import { generateBlogPost, generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -123,7 +123,7 @@ async function downloadImage(url, filename) {
 /**
  * Insert inline SVG images into content (1 image every 2 H2 sections)
  */
-function insertInlineImages(content, slugBase) {
+async function insertInlineImages(content, slugBase) {
   const h2Matches = content.match(/^## .+$/gm) || [];
   if (h2Matches.length < 2) return content;
 
@@ -133,7 +133,7 @@ function insertInlineImages(content, slugBase) {
   // Insert images after every 2nd heading (counting from 1)
   for (let i = headings.length - 1; i >= 1; i -= 2) {
     const sectionTopic = `${slugBase} - ${headings[i]}`;
-    const imgPath = generateCoverImageSync(sectionTopic, `${slugBase}-${i}`, 'posts');
+    const imgPath = await generateInlineImage(sectionTopic, `${slugBase}-${i}`, 'posts');
     const headingText = headings[i];
     const headingPattern = `## ${headingText}`;
     const headingIndex = result.indexOf(headingPattern);
@@ -217,7 +217,7 @@ async function main() {
 
     // 3. Insert inline images for PT
     console.log('🖼️ Inserindo imagens inline PT...');
-    const processedContentPt = insertInlineImages(post.content, slugPt);
+    const processedContentPt = await insertInlineImages(post.content, slugPt);
 
     // 4. Save PT post
     const ptPath = savePost(slugPt, {
