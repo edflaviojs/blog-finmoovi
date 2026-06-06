@@ -1,0 +1,419 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Como Sair das Dívidas', url: '/como-sair-das-dividas' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Como sair das dívidas rápido?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Priorize dívidas com juros altos (cartão de crédito, cheque especial). Negocie com o banco — descontos de 40-80% são comuns em acordos. Corte gastos supérfluos temporariamente e direcione tudo para quitar." }
+    },
+    {
+      "@type": "Question",
+      "name": "Devo pagar a menor dívida ou a de maior juros primeiro?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Matematicamente, pagar a de maior juros economiza mais. Psicologicamente, quitar a menor primeiro (método bola de neve) dá motivação. Escolha o que te mantém disciplinado." }
+    },
+    {
+      "@type": "Question",
+      "name": "É possível negociar dívidas pelo app do banco?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim. A maioria dos bancos (Nubank, Itaú, Bradesco, Santander) oferece renegociação pelo app com descontos significativos. Feirões como o Serasa Limpa Nome também oferecem condições especiais." }
+    },
+    {
+      "@type": "Question",
+      "name": "Como evitar voltar a se endividar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Monte uma reserva de emergência (3-6 meses de gastos), use um app de controle financeiro como o FinMoovi para monitorar gastos em tempo real, e adote a regra: se não pode pagar à vista, não compre." }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Como Sair das Dívidas - Método Prático em 6 Passos (2026)"
+  description="Guia completo para sair das dívidas: método bola de neve vs avalanche, como negociar com bancos, ferramentas gratuitas e plano de ação passo a passo."
+  keywords={['como sair das dívidas', 'quitar dívidas', 'negociar dívidas', 'sair do vermelho', 'bola de neve dívidas', 'limpar nome']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <Header />
+
+  <main class="landing-page">
+    <section class="landing-hero">
+      <div class="container">
+        <h1>Como Sair das Dívidas: Plano de Ação Completo</h1>
+        <p class="hero-subtitle">Você não é suas dívidas. Com método e disciplina, qualquer pessoa pode limpar o nome e reconstruir a vida financeira.</p>
+        <div class="hero-cta-group">
+          <a href="https://finmoovi.com" class="cta-primary" target="_blank" rel="noopener">Controlar Gastos com FinMoovi (Grátis)</a>
+          <a href="#metodo" class="cta-secondary">Ver os 6 passos ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section" id="metodo">
+      <div class="container">
+        <h2>6 Passos para Sair das Dívidas</h2>
+        <p class="section-subtitle">O método que funciona independente do tamanho da dívida.</p>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">1</span>
+            <h3>Liste TODAS as dívidas</h3>
+            <p>Valor total, taxa de juros mensal, parcelas restantes. Sem essa lista completa, você está lutando no escuro.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">2</span>
+            <h3>Pare de criar dívidas novas</h3>
+            <p>Congele cartões de crédito. Use apenas débito/dinheiro. Nada de parcelamento novo enquanto não quitar as existentes.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">3</span>
+            <h3>Negocie com credores</h3>
+            <p>Bancos preferem receber menos a não receber. Ligue, peça desconto e parcelamento sem juros. Feirões Serasa são ótimos.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">4</span>
+            <h3>Escolha seu método</h3>
+            <p><strong>Avalanche:</strong> pague a de maior juros primeiro (economiza mais). <strong>Bola de neve:</strong> pague a menor primeiro (motivação).</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">5</span>
+            <h3>Aumente a renda temporariamente</h3>
+            <p>Freelances, vendas, bicos. Todo extra vai direto para as dívidas. É temporário — não precisa ser para sempre.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">6</span>
+            <h3>Monte reserva de emergência</h3>
+            <p>Após quitar, guarde 3-6 meses de gastos. Isso evita recaídas. <a href="/ferramentas/calculadora-juros-compostos">Calcule quanto precisa</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section dark">
+      <div class="container">
+        <h2>Avalanche vs Bola de Neve</h2>
+        <p class="section-subtitle">Dois métodos comprovados — escolha o seu.</p>
+        <div class="method-comparison">
+          <div class="method-card">
+            <h3>🏔️ Método Avalanche</h3>
+            <p class="method-how">Pague primeiro a dívida com <strong>maior taxa de juros</strong></p>
+            <ul>
+              <li>Economiza mais dinheiro no total</li>
+              <li>Matematicamente ótimo</li>
+              <li>Pode demorar para ver progresso</li>
+            </ul>
+            <span class="method-tag">Racional</span>
+          </div>
+          <div class="method-card">
+            <h3>⚡ Método Bola de Neve</h3>
+            <p class="method-how">Pague primeiro a dívida com <strong>menor saldo total</strong></p>
+            <ul>
+              <li>Vitórias rápidas = motivação</li>
+              <li>Psicologicamente poderoso</li>
+              <li>Pode custar um pouco mais no total</li>
+            </ul>
+            <span class="method-tag">Emocional</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section">
+      <div class="container">
+        <h2>Ferramentas para Sair do Vermelho</h2>
+        <div class="tools-grid">
+          <a href="/ferramentas/calculadora-orcamento" class="tool-link">
+            <span class="tool-icon">💰</span>
+            <span class="tool-name">Calculadora de Orçamento</span>
+          </a>
+          <a href="/ferramentas/calculadora-juros-compostos" class="tool-link">
+            <span class="tool-icon">📈</span>
+            <span class="tool-name">Juros Compostos</span>
+          </a>
+          <a href="/orcamento-pessoal" class="tool-link">
+            <span class="tool-icon">📋</span>
+            <span class="tool-name">Guia de Orçamento</span>
+          </a>
+          <a href="/como-organizar-financas" class="tool-link">
+            <span class="tool-icon">✅</span>
+            <span class="tool-name">Organizar Finanças</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section">
+      <div class="container">
+        <div class="capture-box">
+          <h2>Receba um plano semanal de controle</h2>
+          <p>Dicas práticas, lembretes de economia e ferramentas para manter o foco. 100% grátis.</p>
+          <form class="capture-form" id="capture-form">
+            <input type="email" id="capture-email" placeholder="seu@email.com" required />
+            <button type="submit">Inscrever-se</button>
+          </form>
+          <p class="capture-message" id="capture-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section">
+      <div class="container">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-grid">
+          <details>
+            <summary>Como sair das dívidas rápido?</summary>
+            <p>Priorize dívidas com juros altos (cartão de crédito, cheque especial). Negocie com o banco — descontos de 40-80% são comuns em acordos. Corte gastos supérfluos temporariamente e direcione tudo para quitar.</p>
+          </details>
+          <details>
+            <summary>Devo pagar a menor dívida ou a de maior juros primeiro?</summary>
+            <p>Matematicamente, pagar a de maior juros economiza mais. Psicologicamente, quitar a menor primeiro (método bola de neve) dá motivação. Escolha o que te mantém disciplinado.</p>
+          </details>
+          <details>
+            <summary>É possível negociar dívidas pelo app do banco?</summary>
+            <p>Sim. A maioria dos bancos oferece renegociação pelo app com descontos significativos. Feirões como o Serasa Limpa Nome também oferecem condições especiais.</p>
+          </details>
+          <details>
+            <summary>Como evitar voltar a se endividar?</summary>
+            <p>Monte uma reserva de emergência (3-6 meses de gastos), use um app de controle financeiro para monitorar gastos em tempo real, e adote a regra: se não pode pagar à vista, não compre.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section cta-section">
+      <div class="container">
+        <h2>Comece a controlar hoje</h2>
+        <p>O primeiro passo para sair das dívidas é saber para onde vai cada real. O FinMoovi mostra isso em tempo real.</p>
+        <a href="https://finmoovi.com" class="cta-primary large" target="_blank" rel="noopener">Experimentar Grátis — 7 dias</a>
+        <span class="cta-note">Sem cartão de crédito. Cancele quando quiser.</span>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  document.getElementById('capture-form')?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const email = document.getElementById('capture-email').value.trim();
+    const msg = document.getElementById('capture-message');
+    if (!email) return;
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, lang: 'pt' })
+      });
+      const data = await res.json();
+      msg.textContent = res.ok ? (data.message || 'Inscrito!') : (data.error || 'Erro.');
+      msg.className = 'capture-message ' + (res.ok ? 'success' : 'error');
+    } catch (err) {
+      msg.textContent = 'Erro de conexão.';
+      msg.className = 'capture-message error';
+    }
+  });
+</script>
+
+<style>
+  .landing-page { }
+
+  .landing-hero {
+    padding: 4rem 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  }
+  .landing-hero h1 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 550px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  .hero-cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .cta-primary {
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .cta-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(63, 185, 80, 0.3); }
+  .cta-primary.large { font-size: 1.1rem; padding: 16px 40px; }
+  .cta-secondary {
+    display: inline-block;
+    padding: 14px 32px;
+    color: var(--text-link);
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid var(--border-default);
+    border-radius: 10px;
+  }
+  .cta-secondary:hover { border-color: var(--text-link); }
+
+  .landing-section { padding: 3rem 0; }
+  .landing-section.dark { background: var(--bg-secondary); }
+  .landing-section h2 { font-size: 1.8rem; color: var(--text-primary); text-align: center; margin-bottom: 0.5rem; }
+  .section-subtitle { text-align: center; color: var(--text-secondary); margin-bottom: 2rem; }
+
+  .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .step-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+  }
+  .step-number {
+    position: absolute;
+    top: -12px;
+    left: 16px;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+  .step-card h3 { color: var(--text-primary); font-size: 1rem; margin: 0.5rem 0; }
+  .step-card p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0; }
+  .step-card a { color: var(--text-link); }
+
+  .method-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .method-card {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+  }
+  .method-card h3 { color: var(--text-primary); font-size: 1.1rem; margin-bottom: 0.75rem; }
+  .method-how { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.5; }
+  .method-how strong { color: var(--text-primary); }
+  .method-card ul { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .method-card li {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    padding: 0.3rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+  }
+  .method-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3fb950;
+  }
+  .method-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 9999px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background: rgba(88, 166, 255, 0.1);
+    color: #58a6ff;
+  }
+
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .tool-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.2rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .tool-link:hover { border-color: #3fb950; transform: translateY(-2px); }
+  .tool-icon { font-size: 1.8rem; }
+  .tool-name { color: var(--text-primary); font-size: 0.85rem; font-weight: 600; text-align: center; }
+
+  .capture-box {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 2rem;
+  }
+  .capture-box h2 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+  .capture-box p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.2rem; }
+  .capture-form { display: flex; gap: 0.5rem; }
+  .capture-form input {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+  }
+  .capture-form input:focus { outline: none; border-color: var(--accent-primary); }
+  .capture-form button {
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .capture-message { font-size: 0.8rem; margin-top: 0.5rem; }
+  .capture-message.success { color: #3fb950; }
+  .capture-message.error { color: #f85149; }
+
+  .faq-grid { max-width: 700px; margin: 1.5rem auto 0; }
+  .faq-grid details {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
+  .faq-grid summary { color: var(--text-primary); font-weight: 600; cursor: pointer; }
+  .faq-grid details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+
+  .cta-section { text-align: center; padding: 4rem 0; }
+  .cta-section p { color: var(--text-secondary); margin-bottom: 1.5rem; }
+  .cta-note { display: block; margin-top: 0.75rem; font-size: 0.8rem; color: var(--text-tertiary); }
+
+  @media (max-width: 640px) {
+    .landing-hero h1 { font-size: 1.8rem; }
+    .capture-form { flex-direction: column; }
+  }
+</style>

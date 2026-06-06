@@ -1,0 +1,414 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Orçamento Pessoal', url: '/orcamento-pessoal' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Como fazer um orçamento pessoal simples?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Liste toda sua renda mensal. Depois, categorize seus gastos em fixos (aluguel, contas) e variáveis (lazer, compras). Aplique a regra 50-30-20: 50% para necessidades, 30% para desejos e 20% para poupança/investimentos." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a melhor regra de orçamento?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A regra 50-30-20 é a mais popular por ser simples e flexível. Para quem está endividado, a regra 70-20-10 (70% necessidades, 20% dívidas, 10% poupança) pode funcionar melhor temporariamente." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual app usar para controlar orçamento pessoal?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O FinMoovi é um app gratuito que controla orçamento com suporte a múltiplas moedas (BRL, USD, EUR), funciona offline e usa IA para categorizar seus gastos automaticamente. Ideal para quem quer simplicidade sem perder funcionalidades." }
+    },
+    {
+      "@type": "Question",
+      "name": "Como manter a disciplina no orçamento?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Automatize o máximo possível: débito automático nas contas, transferência automática para poupança no dia do salário. Use um app com alertas de limite e revise seu orçamento toda semana por 5 minutos." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto devo guardar por mês?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O ideal é guardar pelo menos 20% da renda líquida. Se não for possível, comece com qualquer valor — R$ 50, R$ 100. O hábito é mais importante que o valor. Aumente gradualmente à medida que elimina gastos desnecessários." }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Orçamento Pessoal - Guia Prático para Montar o Seu em 2026"
+  description="Aprenda a montar um orçamento pessoal que funciona. Método passo a passo, planilha gratuita, calculadora interativa e dicas para manter a disciplina financeira."
+  keywords={['orçamento pessoal', 'como fazer orçamento', 'planilha orçamento', 'controle financeiro', 'regra 50-30-20', 'app orçamento']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <Header />
+
+  <main class="landing-page">
+    <section class="landing-hero">
+      <div class="container">
+        <h1>Orçamento Pessoal: Como Montar o Seu em 15 Minutos</h1>
+        <p class="hero-subtitle">Um orçamento não é uma restrição — é liberdade. Saiba exatamente para onde vai cada real e tome decisões financeiras com confiança.</p>
+        <div class="hero-cta-group">
+          <a href="/ferramentas/calculadora-orcamento" class="cta-primary">Calcular Meu Orçamento (Grátis)</a>
+          <a href="#como-montar" class="cta-secondary">Ver o guia ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section" id="como-montar">
+      <div class="container">
+        <h2>4 Passos para Montar seu Orçamento</h2>
+        <p class="section-subtitle">Funciona para qualquer renda — de R$ 1.500 a R$ 50.000.</p>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">1</span>
+            <h3>Calcule sua renda líquida</h3>
+            <p>Some tudo que entra: salário, freelances, rendimentos. Use o valor líquido (depois de impostos e descontos).</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">2</span>
+            <h3>Liste todos os gastos fixos</h3>
+            <p>Aluguel, contas de luz/água/internet, transporte, plano de saúde. São os que você paga todo mês sem variação.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">3</span>
+            <h3>Defina limites para variáveis</h3>
+            <p>Alimentação, lazer, compras, delivery. Aqui está o poder do orçamento: definir antes de gastar.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">4</span>
+            <h3>Reserve para futuro</h3>
+            <p>Pague-se primeiro. Separe 20% (ou o que puder) antes de gastar com qualquer coisa. <a href="/ferramentas/simulador-investimento">Simule o efeito</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section dark">
+      <div class="container">
+        <h2>Método 50-30-20 na Prática</h2>
+        <p class="section-subtitle">A regra mais simples e eficaz para distribuir sua renda.</p>
+        <div class="budget-breakdown">
+          <div class="budget-item needs">
+            <div class="budget-percent">50%</div>
+            <h3>Necessidades</h3>
+            <p>Moradia, alimentação, transporte, saúde, contas essenciais. Tudo que você precisa para viver.</p>
+          </div>
+          <div class="budget-item wants">
+            <div class="budget-percent">30%</div>
+            <h3>Desejos</h3>
+            <p>Lazer, streaming, restaurantes, compras não essenciais. O que faz a vida ter graça — com limite.</p>
+          </div>
+          <div class="budget-item savings">
+            <div class="budget-percent">20%</div>
+            <h3>Futuro</h3>
+            <p>Reserva de emergência, investimentos, quitar dívidas extras. Onde a mágica dos juros compostos acontece.</p>
+          </div>
+        </div>
+        <div class="budget-cta">
+          <a href="/ferramentas/calculadora-orcamento" class="cta-primary">Calcular Meu 50-30-20 →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section">
+      <div class="container">
+        <h2>Ferramentas para seu Orçamento</h2>
+        <div class="tools-grid">
+          <a href="/ferramentas/calculadora-orcamento" class="tool-link">
+            <span class="tool-icon">💰</span>
+            <span class="tool-name">Calculadora 50-30-20</span>
+          </a>
+          <a href="/ferramentas/calculadora-juros-compostos" class="tool-link">
+            <span class="tool-icon">📈</span>
+            <span class="tool-name">Juros Compostos</span>
+          </a>
+          <a href="/ferramentas/simulador-investimento" class="tool-link">
+            <span class="tool-icon">🎯</span>
+            <span class="tool-name">Simulador de Investimento</span>
+          </a>
+          <a href="/ferramentas/conversor-moedas" class="tool-link">
+            <span class="tool-icon">💱</span>
+            <span class="tool-name">Conversor de Moedas</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section">
+      <div class="container">
+        <div class="capture-box">
+          <h2>Receba dicas de orçamento toda semana</h2>
+          <p>Estratégias práticas para economizar mais, gastar melhor e investir com inteligência. Grátis e sem spam.</p>
+          <form class="capture-form" id="capture-form">
+            <input type="email" id="capture-email" placeholder="seu@email.com" required />
+            <button type="submit">Inscrever-se</button>
+          </form>
+          <p class="capture-message" id="capture-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section">
+      <div class="container">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-grid">
+          <details>
+            <summary>Como fazer um orçamento pessoal simples?</summary>
+            <p>Liste toda sua renda mensal. Depois, categorize seus gastos em fixos (aluguel, contas) e variáveis (lazer, compras). Aplique a regra 50-30-20: 50% para necessidades, 30% para desejos e 20% para poupança/investimentos.</p>
+          </details>
+          <details>
+            <summary>Qual a melhor regra de orçamento?</summary>
+            <p>A regra 50-30-20 é a mais popular por ser simples e flexível. Para quem está endividado, a regra 70-20-10 (70% necessidades, 20% dívidas, 10% poupança) pode funcionar melhor temporariamente.</p>
+          </details>
+          <details>
+            <summary>Qual app usar para controlar orçamento pessoal?</summary>
+            <p>O FinMoovi é um app gratuito que controla orçamento com suporte a múltiplas moedas (BRL, USD, EUR), funciona offline e usa IA para categorizar seus gastos automaticamente.</p>
+          </details>
+          <details>
+            <summary>Como manter a disciplina no orçamento?</summary>
+            <p>Automatize o máximo possível: débito automático nas contas, transferência automática para poupança no dia do salário. Use um app com alertas de limite e revise seu orçamento toda semana por 5 minutos.</p>
+          </details>
+          <details>
+            <summary>Quanto devo guardar por mês?</summary>
+            <p>O ideal é guardar pelo menos 20% da renda líquida. Se não for possível, comece com qualquer valor — R$ 50, R$ 100. O hábito é mais importante que o valor.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-section cta-section">
+      <div class="container">
+        <h2>Pronto para criar seu orçamento?</h2>
+        <p>O FinMoovi te ajuda a montar e acompanhar seu orçamento diariamente — com alertas, relatórios e IA.</p>
+        <a href="https://finmoovi.com" class="cta-primary large" target="_blank" rel="noopener">Experimentar Grátis — 7 dias</a>
+        <span class="cta-note">Sem cartão de crédito. Cancele quando quiser.</span>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  document.getElementById('capture-form')?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const email = document.getElementById('capture-email').value.trim();
+    const msg = document.getElementById('capture-message');
+    if (!email) return;
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, lang: 'pt' })
+      });
+      const data = await res.json();
+      msg.textContent = res.ok ? (data.message || 'Inscrito!') : (data.error || 'Erro.');
+      msg.className = 'capture-message ' + (res.ok ? 'success' : 'error');
+    } catch (err) {
+      msg.textContent = 'Erro de conexão.';
+      msg.className = 'capture-message error';
+    }
+  });
+</script>
+
+<style>
+  .landing-page { }
+
+  .landing-hero {
+    padding: 4rem 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  }
+  .landing-hero h1 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 550px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  .hero-cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .cta-primary {
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .cta-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(63, 185, 80, 0.3); }
+  .cta-primary.large { font-size: 1.1rem; padding: 16px 40px; }
+  .cta-secondary {
+    display: inline-block;
+    padding: 14px 32px;
+    color: var(--text-link);
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid var(--border-default);
+    border-radius: 10px;
+  }
+  .cta-secondary:hover { border-color: var(--text-link); }
+
+  .landing-section { padding: 3rem 0; }
+  .landing-section.dark { background: var(--bg-secondary); }
+  .landing-section h2 { font-size: 1.8rem; color: var(--text-primary); text-align: center; margin-bottom: 0.5rem; }
+  .section-subtitle { text-align: center; color: var(--text-secondary); margin-bottom: 2rem; }
+
+  .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .step-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+  }
+  .step-number {
+    position: absolute;
+    top: -12px;
+    left: 16px;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+  .step-card h3 { color: var(--text-primary); font-size: 1rem; margin: 0.5rem 0; }
+  .step-card p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0; }
+  .step-card a { color: var(--text-link); }
+
+  .budget-breakdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .budget-item {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .budget-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+  }
+  .budget-item.needs::before { background: #58a6ff; }
+  .budget-item.wants::before { background: #bc8cff; }
+  .budget-item.savings::before { background: #3fb950; }
+  .budget-percent {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+  .budget-item.needs .budget-percent { color: #58a6ff; }
+  .budget-item.wants .budget-percent { color: #bc8cff; }
+  .budget-item.savings .budget-percent { color: #3fb950; }
+  .budget-item h3 { color: var(--text-primary); font-size: 1rem; margin-bottom: 0.5rem; }
+  .budget-item p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0; }
+  .budget-cta { text-align: center; margin-top: 2rem; }
+
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .tool-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.2rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .tool-link:hover { border-color: #3fb950; transform: translateY(-2px); }
+  .tool-icon { font-size: 1.8rem; }
+  .tool-name { color: var(--text-primary); font-size: 0.85rem; font-weight: 600; text-align: center; }
+
+  .capture-box {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 2rem;
+  }
+  .capture-box h2 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+  .capture-box p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.2rem; }
+  .capture-form { display: flex; gap: 0.5rem; }
+  .capture-form input {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+  }
+  .capture-form input:focus { outline: none; border-color: var(--accent-primary); }
+  .capture-form button {
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .capture-message { font-size: 0.8rem; margin-top: 0.5rem; }
+  .capture-message.success { color: #3fb950; }
+  .capture-message.error { color: #f85149; }
+
+  .faq-grid { max-width: 700px; margin: 1.5rem auto 0; }
+  .faq-grid details {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
+  .faq-grid summary { color: var(--text-primary); font-weight: 600; cursor: pointer; }
+  .faq-grid details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+
+  .cta-section { text-align: center; padding: 4rem 0; }
+  .cta-section p { color: var(--text-secondary); margin-bottom: 1.5rem; }
+  .cta-note { display: block; margin-top: 0.75rem; font-size: 0.8rem; color: var(--text-tertiary); }
+
+  @media (max-width: 640px) {
+    .landing-hero h1 { font-size: 1.8rem; }
+    .capture-form { flex-direction: column; }
+  }
+</style>
