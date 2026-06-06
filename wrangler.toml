@@ -15,5 +15,5 @@ NODE_VERSION = "20"
 # Then update the id below with the real namespace ID
 [[kv_namespaces]]
 binding = "NEWSLETTER_KV"
-id = "NEWSLETTER_KV_ID"
-preview_id = "NEWSLETTER_KV_PREVIEW_ID"
+id = "b5ea6ea0f36c40a6a3ae264e3c717750"
+preview_id = "b5ea6ea0f36c40a6a3ae264e3c717750"

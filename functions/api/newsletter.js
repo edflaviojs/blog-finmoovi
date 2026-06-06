@@ -25,10 +25,10 @@ export async function onRequestPost(context) {
 
     // Store in Cloudflare KV (newsletter-leads)
     const kv = env.NEWSLETTER_KV;
+    let kvStatus = 'no_binding';
     if (kv) {
       const existing = await kv.get(email);
       if (existing) {
-        // Don't reveal if email exists - return same success message
         return new Response(JSON.stringify({ message: 'Inscrito com sucesso! Verifique seu email.' }), {
           status: 200,
           headers: corsHeaders
@@ -41,12 +41,14 @@ export async function onRequestPost(context) {
         confirmed: false,
         lang: body.lang || 'pt'
       }));
+      kvStatus = 'saved';
     }
 
     // Send welcome email via Resend (if API key configured)
     const resendKey = env.RESEND_API_KEY;
+    let emailStatus = 'no_api_key';
     if (resendKey) {
-      await fetch('https://api.resend.com/emails', {
+      const resendRes = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${resendKey}`,
@@ -59,9 +61,14 @@ export async function onRequestPost(context) {
           html: getWelcomeEmailHTML(email)
         })
       });
+      const resendData = await resendRes.json();
+      emailStatus = resendRes.ok ? 'sent' : `error: ${JSON.stringify(resendData)}`;
     }
 
-    return new Response(JSON.stringify({ message: 'Inscrito com sucesso! Verifique seu email.' }), {
+    return new Response(JSON.stringify({
+      message: 'Inscrito com sucesso! Verifique seu email.',
+      debug: { kvStatus, emailStatus }
+    }), {
       status: 200,
       headers: corsHeaders
     });
