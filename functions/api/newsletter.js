@@ -177,4 +177,3 @@ function getWelcomeEmailHTML(email, lang = 'pt') {
 </body>
 </html>`;
 }
-}
