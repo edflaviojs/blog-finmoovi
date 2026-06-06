@@ -10,9 +10,23 @@ export async function onRequestGet(context) {
     });
   }
 
-  const kv = env.NEWSLETTER_KV;
-  if (kv) {
-    await kv.delete(email);
+  const supabaseUrl = env.SUPABASE_URL;
+  const supabaseKey = env.SUPABASE_ANON_KEY;
+
+  if (supabaseUrl && supabaseKey) {
+    await fetch(
+      `${supabaseUrl}/rest/v1/newsletter_subscribers?email=eq.${encodeURIComponent(email)}`,
+      {
+        method: 'PATCH',
+        headers: {
+          'apikey': supabaseKey,
+          'Authorization': `Bearer ${supabaseKey}`,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify({ active: false, unsubscribed_at: new Date().toISOString() })
+      }
+    );
   }
 
   return new Response(`<html><body style="background:#0d1117;color:#f0f6fc;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;"><div style="text-align:center;"><h1 style="color:#3fb950;">Inscrição cancelada</h1><p style="color:#8b949e;">Você não receberá mais emails da Newsletter FinMoovi.</p><a href="https://blog.finmoovi.com" style="color:#58a6ff;margin-top:16px;display:inline-block;">Voltar ao blog</a></div></body></html>`, {
