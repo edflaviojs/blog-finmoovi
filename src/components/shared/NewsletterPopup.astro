@@ -5,10 +5,10 @@
   <div class="popup-backdrop" id="popup-backdrop"></div>
   <div class="popup-content">
     <button class="popup-close" id="popup-close" aria-label="Fechar">&times;</button>
-    <div class="popup-icon">📬</div>
-    <h3 class="popup-title" data-i18n="popup.title">Não perca nenhuma dica!</h3>
-    <p class="popup-desc" data-i18n="popup.desc">
-      Receba as melhores dicas de finanças pessoais toda semana. Grátis.
+    <div class="popup-icon">🎁</div>
+    <h3 class="popup-title" id="popup-title">Guia Grátis: 30 Dias para Organizar suas Finanças</h3>
+    <p class="popup-desc" id="popup-desc">
+      Receba o guia passo a passo + dicas semanais de finanças pessoais. Um email por semana, sem spam.
     </p>
     <form class="popup-form" id="popup-form">
       <input
@@ -19,10 +19,10 @@
         class="popup-input"
         id="popup-email"
       />
-      <button type="submit" class="popup-btn" data-i18n="popup.btn">Quero receber!</button>
+      <button type="submit" class="popup-btn" id="popup-btn">Quero o Guia!</button>
     </form>
     <p class="popup-message" id="popup-message"></p>
-    <p class="popup-privacy" data-i18n="popup.privacy">Sem spam. Cancele quando quiser.</p>
+    <p class="popup-privacy" id="popup-privacy">Sem spam. Cancele quando quiser.</p>
   </div>
 </div>
 
@@ -33,6 +33,36 @@
     try { shown = !!sessionStorage.getItem('fm-popup-shown'); } catch(e) {}
     if (shown || !popup) return;
 
+    var lang = 'pt';
+    if (window.location.pathname.startsWith('/en/')) lang = 'en';
+    else if (window.location.pathname.startsWith('/es/')) lang = 'es';
+
+    var texts = {
+      pt: {
+        title: 'Guia Grátis: 30 Dias para Organizar suas Finanças',
+        desc: 'Receba o guia passo a passo + dicas semanais de finanças pessoais. Um email por semana, sem spam.',
+        btn: 'Quero o Guia!',
+        privacy: 'Sem spam. Cancele quando quiser.'
+      },
+      en: {
+        title: 'Free Guide: 30 Days to Organize Your Finances',
+        desc: 'Get the step-by-step guide + weekly personal finance tips. One email per week, no spam.',
+        btn: 'Get the Guide!',
+        privacy: 'No spam. Unsubscribe anytime.'
+      },
+      es: {
+        title: 'Guía Gratis: 30 Días para Organizar tus Finanzas',
+        desc: 'Recibe la guía paso a paso + consejos semanales de finanzas personales. Un email por semana, sin spam.',
+        btn: '¡Quiero la Guía!',
+        privacy: 'Sin spam. Cancela cuando quieras.'
+      }
+    };
+    var t = texts[lang] || texts.pt;
+    document.getElementById('popup-title').textContent = t.title;
+    document.getElementById('popup-desc').textContent = t.desc;
+    document.getElementById('popup-btn').textContent = t.btn;
+    document.getElementById('popup-privacy').textContent = t.privacy;
+
     var triggered = false;
     function showPopup() {
       if (triggered) return;
@@ -42,20 +72,17 @@
       try { sessionStorage.setItem('fm-popup-shown', '1'); } catch(e) {}
     }
 
-    // Trigger on 60% scroll
     window.addEventListener('scroll', function() {
       if (triggered) return;
       var scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
       if (scrollPercent >= 60) showPopup();
     }, { passive: true });
 
-    // Exit intent: mouse leaves viewport from top (desktop only)
     document.addEventListener('mouseout', function(e) {
       if (triggered) return;
       if (e.clientY <= 0 && e.relatedTarget === null) showPopup();
     });
 
-    // Mobile: detect back-scroll (quick upward scroll)
     var lastScrollY = window.scrollY;
     var scrollUpDistance = 0;
     window.addEventListener('scroll', function() {
@@ -86,19 +113,15 @@
       var msg = document.getElementById('popup-message');
       if (!email) return;
 
-      var lang = 'pt';
-      if (window.location.pathname.startsWith('/en/')) lang = 'en';
-      else if (window.location.pathname.startsWith('/es/')) lang = 'es';
-
       try {
         var res = await fetch('/api/newsletter', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang })
+          body: JSON.stringify({ email: email, lang: lang, source: 'exit-popup' })
         });
         var data = await res.json();
         if (res.ok) {
-          msg.textContent = data.message || 'Inscrito!';
+          msg.textContent = data.message || (lang === 'en' ? 'Subscribed!' : lang === 'es' ? '¡Suscrito!' : 'Inscrito!');
           msg.className = 'popup-message success';
           setTimeout(function() {
             popup.classList.remove('visible');
@@ -108,7 +131,7 @@
           msg.className = 'popup-message error';
         }
       } catch (err) {
-        msg.textContent = 'Erro de conexão.';
+        msg.textContent = lang === 'en' ? 'Connection error.' : lang === 'es' ? 'Error de conexión.' : 'Erro de conexão.';
         msg.className = 'popup-message error';
       }
     });
