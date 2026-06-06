@@ -12,7 +12,7 @@ import { execSync } from 'child_process';
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 
-// Topics pool — rotates through these
+// Topics pool — rotates through these (includes long-tail SEO keywords)
 const TOPICS = [
   'como economizar dinheiro no supermercado',
   'como negociar dívidas com o banco',
@@ -34,6 +34,27 @@ const TOPICS = [
   'como organizar finanças sendo autônomo',
   'como definir prioridades financeiras',
   'como evitar compras por impulso',
+  // Long-tail SEO: perguntas específicas de alto volume
+  'quanto guardar por mês ganhando salário mínimo',
+  'vale a pena investir em CDB ou Tesouro Direto',
+  'como dividir o salário quando se ganha pouco',
+  'quanto preciso para me aposentar aos 50 anos',
+  'como economizar ganhando 2 mil reais por mês',
+  'qual a diferença entre poupar e investir',
+  'como fazer controle financeiro pelo celular',
+  'como calcular quanto posso gastar com aluguel',
+  'como usar juros compostos a seu favor',
+  'o que fazer com o primeiro salário',
+  'como organizar finanças após divórcio',
+  'como economizar para comprar um carro',
+  'quanto custa viver sozinho no Brasil',
+  'como fazer orçamento para casamento',
+  'como parar de viver no limite do cartão',
+  'como investir 100 reais por mês',
+  'quando vale a pena fazer empréstimo',
+  'como criar uma planilha de gastos simples',
+  'como economizar na conta do mercado toda semana',
+  'como lidar com dinheiro quando se é jovem',
 ];
 
 /**
