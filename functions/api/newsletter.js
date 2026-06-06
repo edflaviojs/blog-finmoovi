@@ -66,7 +66,8 @@ export async function onRequestPost(context) {
     }
 
     return new Response(JSON.stringify({
-      message: 'Inscrito com sucesso! Verifique seu email.'
+      message: 'Inscrito com sucesso! Verifique seu email.',
+      _debug: { kvStatus, emailStatus }
     }), {
       status: 200,
       headers: corsHeaders
