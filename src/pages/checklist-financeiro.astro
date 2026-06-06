@@ -1,0 +1,361 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Checklist Financeiro', url: '/checklist-financeiro' }
+];
+---
+
+<BaseLayout
+  title="Checklist: Independência Financeira - Download Gratuito"
+  description="Baixe grátis o checklist completo para conquistar a independência financeira. 50 marcos para acompanhar seu progresso rumo à liberdade financeira."
+  keywords={['independência financeira', 'checklist financeiro', 'liberdade financeira', 'planejamento financeiro', 'como ficar rico']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <Header />
+
+  <main class="lead-magnet-page">
+    <section class="lm-hero">
+      <div class="container">
+        <div class="lm-hero-grid">
+          <div class="lm-hero-text">
+            <span class="lm-badge">Download Gratuito</span>
+            <h1>Checklist: Independência Financeira</h1>
+            <p class="lm-subtitle">50 marcos concretos do "estou no vermelho" até "vivo de renda". Marque cada conquista e veja seu progresso real rumo à liberdade financeira.</p>
+            <ul class="lm-benefits">
+              <li>Fase 1: Sobrevivência (limpar dívidas)</li>
+              <li>Fase 2: Estabilidade (reserva de emergência)</li>
+              <li>Fase 3: Acumulação (investir consistentemente)</li>
+              <li>Fase 4: Liberdade (renda passiva > gastos)</li>
+            </ul>
+            <div class="lm-form-wrap">
+              <form class="lm-form" id="lead-form">
+                <input type="email" id="lead-email" placeholder="Seu melhor email" required />
+                <button type="submit">Baixar Checklist</button>
+              </form>
+              <p class="lm-note">Enviamos direto no seu email. Sem spam.</p>
+              <p class="lm-message" id="lead-message"></p>
+            </div>
+          </div>
+          <div class="lm-hero-visual">
+            <div class="checklist-preview">
+              <div class="checklist-item done"><span class="check">✓</span> Zerar cartão de crédito</div>
+              <div class="checklist-item done"><span class="check">✓</span> Montar orçamento mensal</div>
+              <div class="checklist-item done"><span class="check">✓</span> Reserva de 1 mês</div>
+              <div class="checklist-item active"><span class="check">○</span> Reserva de 6 meses</div>
+              <div class="checklist-item"><span class="check">○</span> Primeiro investimento</div>
+              <div class="checklist-item"><span class="check">○</span> R$ 10k investidos</div>
+              <div class="checklist-item"><span class="check">○</span> Renda passiva > R$ 500/mês</div>
+              <div class="checklist-item"><span class="check">…</span> +43 marcos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lm-section">
+      <div class="container">
+        <h2>As 4 Fases da Independência Financeira</h2>
+        <div class="phases-grid">
+          <div class="phase-card phase-1">
+            <span class="phase-number">1</span>
+            <h3>Sobrevivência</h3>
+            <p>Sair do vermelho, quitar dívidas caras, montar orçamento básico. A base de tudo.</p>
+            <span class="phase-marcos">12 marcos</span>
+          </div>
+          <div class="phase-card phase-2">
+            <span class="phase-number">2</span>
+            <h3>Estabilidade</h3>
+            <p>Reserva de emergência completa, seguros essenciais, zero dívidas ruins.</p>
+            <span class="phase-marcos">10 marcos</span>
+          </div>
+          <div class="phase-card phase-3">
+            <span class="phase-number">3</span>
+            <h3>Acumulação</h3>
+            <p>Investir todo mês, diversificar, aumentar renda. Juros compostos trabalhando.</p>
+            <span class="phase-marcos">15 marcos</span>
+          </div>
+          <div class="phase-card phase-4">
+            <span class="phase-number">4</span>
+            <h3>Liberdade</h3>
+            <p>Renda passiva cobre gastos. Trabalha porque quer, não porque precisa.</p>
+            <span class="phase-marcos">13 marcos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lm-section dark">
+      <div class="container">
+        <h2>Ferramentas para Cada Fase</h2>
+        <div class="tools-grid">
+          <a href="/ferramentas/calculadora-orcamento" class="tool-link">
+            <span class="tool-icon">💰</span>
+            <span class="tool-name">Orçamento 50-30-20</span>
+          </a>
+          <a href="/ferramentas/calculadora-juros-compostos" class="tool-link">
+            <span class="tool-icon">📈</span>
+            <span class="tool-name">Juros Compostos</span>
+          </a>
+          <a href="/ferramentas/simulador-investimento" class="tool-link">
+            <span class="tool-icon">🎯</span>
+            <span class="tool-name">Simulador</span>
+          </a>
+          <a href="/como-sair-das-dividas" class="tool-link">
+            <span class="tool-icon">🔓</span>
+            <span class="tool-name">Sair das Dívidas</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="lm-section">
+      <div class="container lm-final-cta">
+        <h2>Baixe seu checklist agora</h2>
+        <p>Cada marco conquistado é um passo mais perto da liberdade financeira.</p>
+        <form class="lm-form lm-form-final" id="lead-form-bottom">
+          <input type="email" id="lead-email-bottom" placeholder="Seu melhor email" required />
+          <button type="submit">Receber Checklist →</button>
+        </form>
+        <p class="lm-message" id="lead-message-bottom"></p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  function handleLeadForm(formId, emailId, msgId) {
+    document.getElementById(formId)?.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const email = document.getElementById(emailId).value.trim();
+      const msg = document.getElementById(msgId);
+      if (!email) return;
+      try {
+        const res = await fetch('/api/newsletter', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, lang: 'pt', source: 'checklist-financeiro' })
+        });
+        const data = await res.json();
+        if (res.ok) {
+          msg.textContent = 'Checklist enviado! Verifique seu email.';
+          msg.className = 'lm-message success';
+        } else {
+          msg.textContent = data.error || 'Erro ao processar.';
+          msg.className = 'lm-message error';
+        }
+      } catch (err) {
+        msg.textContent = 'Erro de conexão. Tente novamente.';
+        msg.className = 'lm-message error';
+      }
+    });
+  }
+  handleLeadForm('lead-form', 'lead-email', 'lead-message');
+  handleLeadForm('lead-form-bottom', 'lead-email-bottom', 'lead-message-bottom');
+</script>
+
+<style>
+  .lead-magnet-page { }
+
+  .lm-hero {
+    padding: 4rem 0 3rem;
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  }
+  .lm-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .lm-hero-grid { grid-template-columns: 1.2fr 0.8fr; }
+  }
+
+  .lm-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(63, 185, 80, 0.15);
+    color: #3fb950;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .lm-hero-text h1 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  .lm-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .lm-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+  .lm-benefits li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    position: relative;
+  }
+  .lm-benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #3fb950;
+    font-weight: 700;
+  }
+
+  .lm-form-wrap { max-width: 420px; }
+  .lm-form { display: flex; gap: 0.5rem; }
+  .lm-form input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+  }
+  .lm-form input:focus { outline: none; border-color: #3fb950; }
+  .lm-form button {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform 0.2s;
+  }
+  .lm-form button:hover { transform: translateY(-1px); }
+  .lm-note { font-size: 0.75rem; color: var(--text-tertiary); margin-top: 0.5rem; }
+  .lm-message { font-size: 0.8rem; margin-top: 0.5rem; }
+  .lm-message.success { color: #3fb950; }
+  .lm-message.error { color: #f85149; }
+
+  .checklist-preview {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .checklist-item {
+    padding: 0.5rem 0;
+    color: var(--text-tertiary);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border-muted);
+  }
+  .checklist-item:last-child { border-bottom: none; }
+  .checklist-item.done { color: var(--text-secondary); }
+  .checklist-item.done .check { color: #3fb950; }
+  .checklist-item.active { color: var(--text-primary); font-weight: 600; }
+  .checklist-item.active .check { color: #58a6ff; }
+  .check { font-weight: 700; width: 1.2rem; text-align: center; }
+
+  .lm-section { padding: 3rem 0; }
+  .lm-section.dark { background: var(--bg-secondary); }
+  .lm-section h2 {
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .phases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  .phase-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .phase-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+  }
+  .phase-1::before { background: #f85149; }
+  .phase-2::before { background: #d29922; }
+  .phase-3::before { background: #58a6ff; }
+  .phase-4::before { background: #3fb950; }
+  .phase-number {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+  .phase-card h3 { color: var(--text-primary); font-size: 1rem; margin-bottom: 0.5rem; }
+  .phase-card p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0 0 0.75rem; }
+  .phase-marcos {
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .tool-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.2rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .tool-link:hover { border-color: #3fb950; transform: translateY(-2px); }
+  .tool-icon { font-size: 1.8rem; }
+  .tool-name { color: var(--text-primary); font-size: 0.85rem; font-weight: 600; text-align: center; }
+
+  .lm-final-cta {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .lm-final-cta p { color: var(--text-secondary); margin-bottom: 1.5rem; }
+  .lm-form-final { justify-content: center; }
+
+  @media (max-width: 640px) {
+    .lm-hero-text h1 { font-size: 1.7rem; }
+    .lm-form { flex-direction: column; }
+    .lm-form-final { flex-direction: column; align-items: stretch; }
+  }
+</style>

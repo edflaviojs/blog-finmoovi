@@ -1,0 +1,370 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Guia 30 Dias', url: '/guia-30-dias' }
+];
+---
+
+<BaseLayout
+  title="Guia Gratuito: 30 Dias para Organizar suas Finanças"
+  description="Baixe grátis o guia passo a passo para organizar suas finanças em 30 dias. Um desafio diário simples que transforma sua relação com o dinheiro."
+  keywords={['guia finanças grátis', 'organizar finanças 30 dias', 'ebook finanças', 'desafio financeiro', 'plano financeiro grátis']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <Header />
+
+  <main class="lead-magnet-page">
+    <section class="lm-hero">
+      <div class="container">
+        <div class="lm-hero-grid">
+          <div class="lm-hero-text">
+            <span class="lm-badge">100% Gratuito</span>
+            <h1>30 Dias para Organizar suas Finanças</h1>
+            <p class="lm-subtitle">Um desafio diário simples: uma ação por dia, 15 minutos máximo. Ao fim dos 30 dias você terá controle total do seu dinheiro.</p>
+            <ul class="lm-benefits">
+              <li>Dia 1-7: Mapeie sua situação atual</li>
+              <li>Dia 8-14: Monte seu orçamento personalizado</li>
+              <li>Dia 15-21: Elimine gastos desnecessários</li>
+              <li>Dia 22-30: Automatize e invista</li>
+            </ul>
+            <div class="lm-form-wrap">
+              <form class="lm-form" id="lead-form">
+                <input type="email" id="lead-email" placeholder="Seu melhor email" required />
+                <button type="submit">Baixar Guia Grátis</button>
+              </form>
+              <p class="lm-note">Enviamos o guia direto no seu email. Sem spam, cancelamento a qualquer momento.</p>
+              <p class="lm-message" id="lead-message"></p>
+            </div>
+          </div>
+          <div class="lm-hero-visual">
+            <div class="ebook-mockup">
+              <div class="ebook-cover">
+                <div class="ebook-cover-content">
+                  <span class="ebook-brand">FinMoovi</span>
+                  <h3>30 Dias para Organizar suas Finanças</h3>
+                  <p>Guia Prático</p>
+                  <div class="ebook-graphic">
+                    <svg viewBox="0 0 120 80" class="ebook-svg">
+                      <path d="M10 70 L30 45 L50 55 L70 30 L90 40 L110 15" stroke="#3fb950" stroke-width="3" fill="none" stroke-linecap="round"/>
+                      <circle cx="110" cy="15" r="4" fill="#3fb950"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lm-section">
+      <div class="container">
+        <h2>O que você vai aprender</h2>
+        <div class="lm-features-grid">
+          <div class="lm-feature">
+            <span class="lm-feature-icon">📊</span>
+            <h3>Diagnóstico financeiro</h3>
+            <p>Entenda exatamente onde está seu dinheiro hoje — sem julgamento, com clareza.</p>
+          </div>
+          <div class="lm-feature">
+            <span class="lm-feature-icon">🎯</span>
+            <h3>Orçamento personalizado</h3>
+            <p>Monte um orçamento que funciona para SUA vida, não um modelo genérico da internet.</p>
+          </div>
+          <div class="lm-feature">
+            <span class="lm-feature-icon">✂️</span>
+            <h3>Cortar sem sofrer</h3>
+            <p>Identifique gastos fantasma e aprenda a reduzir despesas sem perder qualidade de vida.</p>
+          </div>
+          <div class="lm-feature">
+            <span class="lm-feature-icon">🚀</span>
+            <h3>Automatizar e investir</h3>
+            <p>Configure piloto automático nas finanças. Seu dinheiro trabalha enquanto você vive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lm-section dark">
+      <div class="container">
+        <h2>Por que funciona</h2>
+        <div class="lm-why-grid">
+          <div class="lm-why-item">
+            <span class="lm-why-number">15</span>
+            <span class="lm-why-label">minutos por dia</span>
+            <p>Tarefas curtas e específicas. Sem sobrecarga.</p>
+          </div>
+          <div class="lm-why-item">
+            <span class="lm-why-number">30</span>
+            <span class="lm-why-label">dias para o hábito</span>
+            <p>Ciência comportamental: 30 dias criam hábitos duradouros.</p>
+          </div>
+          <div class="lm-why-item">
+            <span class="lm-why-number">0</span>
+            <span class="lm-why-label">reais de custo</span>
+            <p>Guia gratuito + app gratuito. Sem desculpas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lm-section">
+      <div class="container lm-final-cta">
+        <h2>Comece seus 30 dias hoje</h2>
+        <p>Quanto antes começar, antes verá resultados. O melhor momento é agora.</p>
+        <form class="lm-form lm-form-final" id="lead-form-bottom">
+          <input type="email" id="lead-email-bottom" placeholder="Seu melhor email" required />
+          <button type="submit">Receber o Guia →</button>
+        </form>
+        <p class="lm-message" id="lead-message-bottom"></p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  function handleLeadForm(formId, emailId, msgId) {
+    document.getElementById(formId)?.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const email = document.getElementById(emailId).value.trim();
+      const msg = document.getElementById(msgId);
+      if (!email) return;
+      try {
+        const res = await fetch('/api/newsletter', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, lang: 'pt', source: 'guia-30-dias' })
+        });
+        const data = await res.json();
+        if (res.ok) {
+          msg.textContent = 'Guia enviado! Verifique seu email (inclusive spam).';
+          msg.className = 'lm-message success';
+        } else {
+          msg.textContent = data.error || 'Erro ao processar.';
+          msg.className = 'lm-message error';
+        }
+      } catch (err) {
+        msg.textContent = 'Erro de conexão. Tente novamente.';
+        msg.className = 'lm-message error';
+      }
+    });
+  }
+  handleLeadForm('lead-form', 'lead-email', 'lead-message');
+  handleLeadForm('lead-form-bottom', 'lead-email-bottom', 'lead-message-bottom');
+</script>
+
+<style>
+  .lead-magnet-page { }
+
+  .lm-hero {
+    padding: 4rem 0 3rem;
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  }
+  .lm-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    .lm-hero-grid { grid-template-columns: 1.2fr 0.8fr; }
+  }
+
+  .lm-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(63, 185, 80, 0.15);
+    color: #3fb950;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .lm-hero-text h1 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  .lm-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .lm-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+  .lm-benefits li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    position: relative;
+  }
+  .lm-benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #3fb950;
+    font-weight: 700;
+  }
+
+  .lm-form-wrap { max-width: 420px; }
+  .lm-form {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .lm-form input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+  }
+  .lm-form input:focus { outline: none; border-color: #3fb950; }
+  .lm-form button {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #3fb950, #58a6ff);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform 0.2s;
+  }
+  .lm-form button:hover { transform: translateY(-1px); }
+  .lm-note {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-top: 0.5rem;
+  }
+  .lm-message { font-size: 0.8rem; margin-top: 0.5rem; }
+  .lm-message.success { color: #3fb950; }
+  .lm-message.error { color: #f85149; }
+
+  .ebook-mockup {
+    display: flex;
+    justify-content: center;
+  }
+  .ebook-cover {
+    width: 220px;
+    height: 300px;
+    background: linear-gradient(145deg, #161b22, #21262d);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 8px 24px rgba(0,0,0,0.4), -2px -2px 8px rgba(255,255,255,0.02);
+    position: relative;
+    overflow: hidden;
+  }
+  .ebook-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+  }
+  .ebook-cover-content {
+    text-align: center;
+  }
+  .ebook-brand {
+    font-size: 0.7rem;
+    color: #58a6ff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .ebook-cover-content h3 {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin: 0.75rem 0;
+    line-height: 1.3;
+  }
+  .ebook-cover-content p {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+  }
+  .ebook-graphic { margin-top: 1rem; }
+  .ebook-svg { width: 100%; height: auto; }
+
+  .lm-section { padding: 3rem 0; }
+  .lm-section.dark { background: var(--bg-secondary); }
+  .lm-section h2 {
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .lm-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  .lm-feature {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .lm-feature-icon { font-size: 1.8rem; display: block; margin-bottom: 0.75rem; }
+  .lm-feature h3 { color: var(--text-primary); font-size: 1rem; margin-bottom: 0.5rem; }
+  .lm-feature p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0; }
+
+  .lm-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .lm-why-item {
+    padding: 1.5rem;
+  }
+  .lm-why-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #3fb950;
+    line-height: 1;
+  }
+  .lm-why-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 0.25rem 0 0.5rem;
+  }
+  .lm-why-item p { color: var(--text-secondary); font-size: 0.8rem; margin: 0; }
+
+  .lm-final-cta {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .lm-final-cta p { color: var(--text-secondary); margin-bottom: 1.5rem; }
+  .lm-form-final { justify-content: center; }
+
+  @media (max-width: 640px) {
+    .lm-hero-text h1 { font-size: 1.7rem; }
+    .lm-form { flex-direction: column; }
+    .lm-form-final { flex-direction: column; align-items: stretch; }
+  }
+</style>
