@@ -5,7 +5,7 @@
  */
 
 import { generateBlogPost, generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
-import { writeFileSync, mkdirSync, existsSync } from 'fs';
+import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 
@@ -194,6 +194,19 @@ async function main() {
   const topic = TOPICS[topicIndex];
 
   console.log(`📝 Tópico: ${topic}`);
+
+  // Guard: check if a dica was already generated today (prevent duplicates)
+  const today = new Date().toISOString().split('T')[0];
+  const existingFiles = readdirSync(POSTS_DIR).filter(f => f.endsWith('.md') && !f.startsWith('en-') && !f.startsWith('es-'));
+  for (const file of existingFiles) {
+    const content = readFileSync(join(POSTS_DIR, file), 'utf-8');
+    const hasToday = content.includes(`publishedAt: ${today}`);
+    const isDica = content.includes('category: "dicas"');
+    if (hasToday && isDica) {
+      console.log(`⚠️ Já existe uma dica gerada hoje (${file}). Abortando para evitar duplicata.`);
+      return;
+    }
+  }
 
   try {
     // 1. Generate PT post
