@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
+import { config } from '../../site.config';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
@@ -45,7 +46,7 @@ const breadcrumbItems = [
             <div class="ebook-mockup">
               <div class="ebook-cover">
                 <div class="ebook-cover-content">
-                  <span class="ebook-brand">FinMoovi</span>
+                  <span class="ebook-brand">${config.app.name}</span>
                   <h3>30 Dias para Organizar suas Finanças</h3>
                   <p>Guia Prático</p>
                   <div class="ebook-graphic">

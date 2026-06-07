@@ -1,3 +1,4 @@
+import { config } from '../../../site.config.ts';
 /**
  * Auto Social Media Content Generator
  * Gera resumos para Twitter/X, Instagram e LinkedIn a cada post novo

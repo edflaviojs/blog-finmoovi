@@ -147,7 +147,7 @@ function getWelcomeEmailHTML(email, lang = 'pt') {
       subtitle: 'You will now receive the best personal finance tips every week.',
       listTitle: 'What you will receive:',
       items: '✓ Practical financial control tips<br>✓ Weekly exchange rate summary (USD, EUR, BTC)<br>✓ Exclusive tools and calculators<br>✓ New financial glossary terms',
-      cta: 'Discover FinMoovi App',
+      cta: 'Discover ' + siteConfig.brandName + ' App',
       unsub: "Don't want to receive anymore?",
       unsubLink: 'Unsubscribe'
     },
@@ -226,7 +226,7 @@ function getLeadMagnetEmailHTML(email, lang, source) {
           { week: 'Week 4 (Days 22-30): Automate and invest', items: ['Day 22: Set up automatic monthly investment', 'Day 23: Open brokerage account (if you haven\'t)', 'Day 24: Make first fixed-income deposit', 'Day 25: Define 3 financial goals for next year', 'Day 26: Review and adjust budget based on 3 weeks', 'Day 27: Set up 5-minute weekly review', 'Day 28: Share plan with someone you trust', 'Day 29: Calculate where you\'ll be in 1 year', 'Day 30: Celebrate! You built a system that works'] }
         ],
         cta: 'Track your progress with ${siteConfig.brandName}',
-        bonus: 'Pro tip: Use FinMoovi to log every expense in real time. AI auto-categorization saves hours of manual work.'
+        bonus: 'Pro tip: Use ${siteConfig.brandName} to log every expense in real time. AI auto-categorization saves hours of manual work.'
       },
       es: {
         title: 'Tu Guía: 30 Días para Organizar tus Finanzas',
@@ -238,7 +238,7 @@ function getLeadMagnetEmailHTML(email, lang, source) {
           { week: 'Semana 4 (Días 22-30): Automatiza e invierte', items: ['Día 22: Configura inversión automática mensual', 'Día 23: Abre cuenta de inversión', 'Día 24: Haz primer aporte en renta fija', 'Día 25: Define 3 metas financieras para el próximo año', 'Día 26: Revisa y ajusta presupuesto con base en 3 semanas', 'Día 27: Configura revisión semanal de 5 minutos', 'Día 28: Comparte el plan con alguien de confianza', 'Día 29: Calcula dónde estarás en 1 año', 'Día 30: ¡Celebra! Creaste un sistema que funciona'] }
         ],
         cta: 'Acompaña tu progreso en ${siteConfig.brandName}',
-        bonus: 'Consejo extra: Usa FinMoovi para registrar cada gasto en tiempo real. La categorización automática por IA ahorra horas de trabajo manual.'
+        bonus: 'Consejo extra: Usa ${siteConfig.brandName} para registrar cada gasto en tiempo real. La categorización automática por IA ahorra horas de trabajo manual.'
       }
     },
     'checklist-financeiro': {
@@ -264,7 +264,7 @@ function getLeadMagnetEmailHTML(email, lang, source) {
           { name: '🟢 Phase 4: Freedom', items: ['Passive income > 50% of expenses', 'Net worth = 15x annual income', 'Passive income > 75% of expenses', 'Net worth = 20x annual income', 'Passive income = 100% of expenses', 'Net worth = 25x annual expenses (4% rule)', 'Work because you want to, not because you need to', 'Help others achieve financial freedom', 'Legacy: wealth transcends generations', 'Passive income > 150% of expenses (safety margin)', 'Active philanthropy', 'Financial life 100% automated', 'Total financial peace'] }
         ],
         cta: 'Track your progress with ${siteConfig.brandName}',
-        bonus: 'Tip: Don\'t try to skip phases. Each milestone strengthens the foundation for the next. Use FinMoovi to track your net worth and passive income in real time.'
+        bonus: 'Tip: Don\'t try to skip phases. Each milestone strengthens the foundation for the next. Use ${siteConfig.brandName} to track your net worth and passive income in real time.'
       },
       es: {
         title: 'Tu Checklist: Independencia Financiera',
@@ -276,7 +276,7 @@ function getLeadMagnetEmailHTML(email, lang, source) {
           { name: '🟢 Fase 4: Libertad', items: ['Renta pasiva > 50% de gastos', 'Patrimonio = 15x ingreso anual', 'Renta pasiva > 75% de gastos', 'Patrimonio = 20x ingreso anual', 'Renta pasiva = 100% de gastos', 'Patrimonio = 25x gastos anuales (regla del 4%)', 'Trabaja porque quiere, no porque necesita', 'Ayuda a otros a alcanzar libertad financiera', 'Legado: patrimonio trasciende generaciones', 'Renta pasiva > 150% de gastos (margen de seguridad)', 'Filantropía activa', 'Vida financiera 100% automatizada', 'Paz financiera total'] }
         ],
         cta: 'Acompaña tu progreso en ${siteConfig.brandName}',
-        bonus: 'Consejo: No intentes saltar fases. Cada hito fortalece la base para el siguiente. Usa FinMoovi para acompañar tu patrimonio y renta pasiva en tiempo real.'
+        bonus: 'Consejo: No intentes saltar fases. Cada hito fortalece la base para el siguiente. Usa ${siteConfig.brandName} para acompañar tu patrimonio y renta pasiva en tiempo real.'
       }
     }
   };

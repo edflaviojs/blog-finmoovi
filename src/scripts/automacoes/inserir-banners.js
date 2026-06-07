@@ -1,6 +1,7 @@
+import { config } from '../../../site.config.ts';
 /**
  * Inserir Banners
- * Script que insere banners do FinMoovi e Loovi Seguros nos posts
+ * Script que insere banners do ${config.brand.name} e Loovi Seguros nos posts
  * Executado como parte do pipeline de geração de conteúdo
  */
 
@@ -9,12 +10,12 @@ import { join } from 'path';
 
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 
-const BANNER_FINMOOVI = `
-> 💡 **Dica FinMoovi:** Organize suas finanças automaticamente com o [FinMoovi](/app). Multi-moeda, categorização inteligente e relatórios visuais. [Teste grátis por 7 dias →](/app)
+const BANNER_CTA = `
+> 💡 **Dica ${config.brand.name}:** Organize suas finanças automaticamente com o [${config.app.name}](/app). Multi-moeda, categorização inteligente e relatórios visuais. [Teste grátis por 7 dias →](/app)
 `;
 
 const BANNER_LOOVI = `
-> 🛡️ **Parceiro:** Proteja seu carro com a [Loovi Seguros](https://loovi.com.br?ref=finmoovi). Sem franquia, sem burocracia. Seguro inteligente para quem quer economizar.
+> 🛡️ **Parceiro:** Proteja seu carro com a [Loovi Seguros](https://loovi.com.br?ref=${config.brand.name.toLowerCase()}). Sem franquia, sem burocracia. Seguro inteligente para quem quer economizar.
 `;
 
 function insertBanners() {
@@ -28,7 +29,7 @@ function insertBanners() {
     let content = readFileSync(filePath, 'utf-8');
 
     // Skip if already has banners
-    if (content.includes('Dica FinMoovi:') || content.includes('Parceiro:')) {
+    if (content.includes('Dica ${config.brand.name}:') || content.includes('Parceiro:')) {
       continue;
     }
 
@@ -44,7 +45,7 @@ function insertBanners() {
 
     if (h2Matches.length >= 2) {
       const insertPos = h2Matches[1].index;
-      const newBody = body.slice(0, insertPos) + BANNER_FINMOOVI + '\n' + body.slice(insertPos);
+      const newBody = body.slice(0, insertPos) + BANNER_CTA + '\n' + body.slice(insertPos);
 
       // Add Loovi banner before the last section
       const lastH2 = h2Matches[h2Matches.length - 1];
@@ -56,7 +57,7 @@ function insertBanners() {
       }
     } else {
       // Short post: add banner at the end
-      content = frontmatter + body + '\n' + BANNER_FINMOOVI;
+      content = frontmatter + body + '\n' + BANNER_CTA;
     }
 
     writeFileSync(filePath, content, 'utf-8');

@@ -77,7 +77,7 @@ async function translatePost(post, targetLang) {
   const langNames = { en: 'English', es: 'Spanish' };
   const prompt = `
 Translate the following blog post to ${langNames[targetLang]}. Keep the same tone, style, and structure.
-Do NOT translate brand names (FinMoovi). Keep markdown formatting and image paths intact.
+Do NOT translate brand names (${config.brand.name}). Keep markdown formatting and image paths intact.
 
 Respond in this exact format:
 ---TITULO---
@@ -189,8 +189,8 @@ REGRAS:
 3. Mínimo 900 palavras, máximo 1500
 4. Use ## para subtítulos (mínimo 5 subtítulos)
 5. Inclua dicas acionáveis numeradas quando aplicável
-6. Mencione o FinMoovi naturalmente como ferramenta que ajuda
-7. Termine com CTA: "Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês."
+6. Mencione o ${config.app.name} naturalmente como ferramenta que ajuda
+7. Termine com CTA: "Use o ${config.app.name} para controlar seus gastos e não se surpreender no fim do mês."
 8. Inclua dados reais brasileiros quando possível (IBGE, Bacen, Serasa)
 
 Responda neste formato:

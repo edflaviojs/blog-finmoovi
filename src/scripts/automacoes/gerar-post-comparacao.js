@@ -147,7 +147,7 @@ REGRAS:
 4. Mínimo 1000 palavras
 5. Use ## para subtítulos (mínimo 5): Introdução, Como funciona X, Como funciona Y, Tabela comparativa, Quando escolher X, Quando escolher Y, Veredicto
 6. No veredicto, recomende com base no perfil do leitor
-7. Mencione o FinMoovi como ferramenta para acompanhar qualquer que seja a escolha
+7. Mencione o ${config.app.name} como ferramenta para acompanhar qualquer que seja a escolha
 8. Tom: educativo, claro, sem jargão técnico excessivo
 9. Inclua números reais quando possível (taxas, rendimentos)
 

@@ -3,6 +3,7 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import PostCard from '@components/posts/PostCard.astro';
+import { config } from '../../../../../site.config';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -33,7 +34,7 @@ const nextPage = currentPage < totalPages ? `/en/posts/page/${currentPage + 1}` 
 ---
 
 <BaseLayout
-  title={`All Posts — Page ${currentPage} | FinMoovi Blog`}
+  title={`All Posts — Page ${currentPage} | ${config.brand.name} ${config.brand.blogSuffix}`}
   description={`Personal finance posts archive. Page ${currentPage} of ${totalPages}.`}
   keywords={['personal finance', 'posts', 'archive', 'financial tips']}
 >

@@ -67,9 +67,9 @@ async function translatePost(post, targetLang) {
 
   const prompt = `
 Translate the following blog post to ${langName}. Keep the same tone, style, and structure.
-Do NOT translate brand names (FinMoovi). Keep markdown formatting intact.
+Do NOT translate brand names (${config.brand.name}). Keep markdown formatting intact.
 Keep all image markdown (![alt](url)) exactly as-is, do not modify image paths.
-Keep the CTA link to finmoovi.com as-is.
+Keep the CTA link to ${config.app.url.replace("https://","")} as-is.
 
 Respond in this exact format:
 ---TITULO---

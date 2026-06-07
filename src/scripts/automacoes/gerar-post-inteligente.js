@@ -157,7 +157,7 @@ function chooseTopic(insights) {
  * Generate post via Groq
  */
 async function generatePost(topic) {
-  const prompt = `Você é um redator especialista em finanças pessoais para o blog FinMoovi.
+  const prompt = `Você é um redator especialista em finanças pessoais para o blog ${config.brand.name}.
 Escreva um artigo completo e profissional sobre: "${topic}"
 
 REGRAS:
@@ -168,7 +168,7 @@ REGRAS:
 - Use headers H2 e H3 para estruturar
 - Inclua exemplos práticos com números reais (salários brasileiros)
 - Tom conversacional mas profissional
-- Mencione o app FinMoovi naturalmente 1-2 vezes como ferramenta útil
+- Mencione o app ${config.app.name} naturalmente 1-2 vezes como ferramenta útil
 - Termine com uma conclusão motivacional
 - NÃO use emojis no conteúdo (exceto em listas de dicas se fizer sentido)
 - NÃO invente estatísticas falsas — use dados gerais conhecidos
@@ -277,7 +277,7 @@ async function translatePost(post, targetLang) {
   const langName = langNames[targetLang];
 
   const prompt = `Translate the following blog post to ${langName}. Keep same tone and style.
-Do NOT translate brand names (FinMoovi). Keep markdown formatting intact.
+Do NOT translate brand names (${config.brand.name}). Keep markdown formatting intact.
 
 Respond in this exact format:
 ---TITULO---

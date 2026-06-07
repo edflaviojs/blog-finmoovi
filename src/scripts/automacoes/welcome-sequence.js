@@ -4,7 +4,7 @@ import { config } from '../../../site.config.ts';
  * Envia sequência automática para novos subscribers:
  * - Dia 0: Boas-vindas + link para guia
  * - Dia 3: Top 3 posts mais lidos
- * - Dia 7: Como o FinMoovi ajuda (CTA forte)
+ * - Dia 7: Como o ${config.app.name} ajuda (CTA forte)
  *
  * Executa diariamente via GitHub Actions às 9h BRT
  * Verifica na tabela newsletter_subscribers quem precisa receber cada etapa
@@ -23,12 +23,12 @@ const SEQUENCES = {
 <div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;color:#e6edf3;">
   <div style="background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});padding:3px;border-radius:12px;">
     <div style="background:#0d1117;padding:32px;border-radius:10px;">
-      <h1 style="color:#fff;font-size:24px;margin:0 0 16px;">Bem-vindo ao FinMoovi Blog! 🎉</h1>
+      <h1 style="color:#fff;font-size:24px;margin:0 0 16px;">Bem-vindo ao ${config.brand.name} ${config.brand.blogSuffix}! 🎉</h1>
       <p style="color:#8b949e;line-height:1.7;">Estamos felizes em ter você aqui. A partir de agora, você vai receber dicas práticas de finanças pessoais toda semana.</p>
       <p style="color:#8b949e;line-height:1.7;">Para começar, preparamos algo especial:</p>
       <a href="${config.siteUrl}/guia-30-dias" style="display:inline-block;padding:14px 28px;background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});color:#fff;text-decoration:none;border-radius:9999px;font-weight:600;margin:16px 0;">📖 Acessar Guia de 30 Dias</a>
       <p style="color:#8b949e;font-size:14px;margin-top:24px;">Nos próximos dias, vou te enviar mais conteúdos exclusivos. Fique de olho!</p>
-      <p style="color:#8b949e;font-size:14px;">— Equipe FinMoovi</p>
+      <p style="color:#8b949e;font-size:14px;">— Equipe ${config.brand.name}</p>
     </div>
   </div>
 </div>`
@@ -64,7 +64,7 @@ const SEQUENCES = {
   <div style="background:#0d1117;padding:32px;border-radius:12px;border:1px solid #30363d;">
     <h1 style="color:#fff;font-size:22px;margin:0 0 16px;">Já tentou controlar gastos e desistiu? 🤔</h1>
     <p style="color:#8b949e;line-height:1.7;">Eu sei como é. Planilhas são chatas. Apps complicados cansam. Mas e se você pudesse apenas <strong style="color:#fff;">FALAR</strong> seus gastos?</p>
-    <p style="color:#8b949e;line-height:1.7;">Com o <strong style="color:#fff;">FinMoovi</strong>, é exatamente assim:</p>
+    <p style="color:#8b949e;line-height:1.7;">Com o <strong style="color:#fff;">${config.brand.name}</strong>, é exatamente assim:</p>
     <ul style="color:#8b949e;line-height:2;">
       <li>🎙️ <strong style="color:#fff;">Voz:</strong> "Almoço 35 reais" → registrado</li>
       <li>📸 <strong style="color:#fff;">Foto:</strong> Tire foto do cupom → lido automaticamente</li>
@@ -73,8 +73,8 @@ const SEQUENCES = {
       <li>📴 <strong style="color:#fff;">Offline:</strong> Funciona sem internet</li>
     </ul>
     <p style="color:#8b949e;line-height:1.7;">7 dias grátis. Sem cartão de crédito. Cancele quando quiser.</p>
-    <a href="https://finmoovi.com" style="display:inline-block;padding:14px 32px;background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});color:#fff;text-decoration:none;border-radius:9999px;font-weight:700;font-size:16px;margin:16px 0;">Experimentar FinMoovi Grátis →</a>
-    <p style="color:#484f58;font-size:12px;margin-top:24px;">Você recebeu este email porque se inscreveu no blog.finmoovi.com</p>
+    <a href="${config.app.url}" style="display:inline-block;padding:14px 32px;background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});color:#fff;text-decoration:none;border-radius:9999px;font-weight:700;font-size:16px;margin:16px 0;">${config.app.ctaText.pt} →</a>
+    <p style="color:#484f58;font-size:12px;margin-top:24px;">Você recebeu este email porque se inscreveu no ${config.siteUrl.replace('https://','')}</p>
   </div>
 </div>`
     }
@@ -113,7 +113,7 @@ async function sendEmail(to, subject, html) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'FinMoovi Blog <blog@email.finmoovi.com>',
+      from: config.email.from,
       to: [to],
       subject,
       html,

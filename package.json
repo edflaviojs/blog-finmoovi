@@ -10,7 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "postbuild": "pagefind --site dist",
-    "generate": "node --import tsx scripts/generate-brand-css.js && node --import tsx scripts/generate-functions-config.js && node --import tsx scripts/generate-manifest.js",
+    "generate": "node --import tsx scripts/generate-brand-css.js && node --import tsx scripts/generate-functions-config.js && node --import tsx scripts/generate-manifest.js && node --import tsx scripts/generate-i18n-client.js",
     "setup": "node --import tsx scripts/setup.js"
   },
   "dependencies": {

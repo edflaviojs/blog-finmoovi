@@ -1,3 +1,4 @@
+import { config } from '../../../site.config.ts';
 /**
  * Relatório Semanal de Analytics + Geração Inteligente de Conteúdo
  * Consulta Cloudflare Web Analytics via GraphQL API
@@ -305,7 +306,7 @@ async function main() {
   const today = new Date().toISOString().split('T')[0];
   const weekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
 
-  let report = `# 📊 Relatório Semanal — FinMoovi Blog\n\n`;
+  let report = `# 📊 Relatório Semanal — ${config.brand.name} ${config.brand.blogSuffix}\n\n`;
   report += `**Período:** ${weekAgo} a ${today}\n`;
   report += `**Total de Pageviews:** ${totalPageviews}\n\n`;
 

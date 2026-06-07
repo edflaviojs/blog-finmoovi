@@ -63,9 +63,9 @@ function getPostsFromLastWeek(dir, locale) {
 function buildDigestHTML(posts, glossaryPosts, lang, email) {
   const texts = {
     pt: {
-      subject: 'Resumo Semanal FinMoovi',
+      subject: 'Resumo Semanal ${config.brand.name}',
       title: 'Resumo da Semana',
-      subtitle: 'Confira o que publicamos esta semana no blog FinMoovi:',
+      subtitle: 'Confira o que publicamos esta semana no blog ${config.brand.name}:',
       tipsTitle: 'Dicas da Semana',
       quotesTitle: 'Cotações',
       glossaryTitle: 'Glossário',
@@ -75,9 +75,9 @@ function buildDigestHTML(posts, glossaryPosts, lang, email) {
       unsubLink: 'Cancelar inscrição'
     },
     en: {
-      subject: 'FinMoovi Weekly Digest',
+      subject: '${config.brand.name} Weekly Digest',
       title: 'Weekly Digest',
-      subtitle: "Here's what we published this week on the FinMoovi blog:",
+      subtitle: "Here's what we published this week on the ${config.brand.name} blog:",
       tipsTitle: 'Tips of the Week',
       quotesTitle: 'Market Quotes',
       glossaryTitle: 'Glossary',
@@ -87,9 +87,9 @@ function buildDigestHTML(posts, glossaryPosts, lang, email) {
       unsubLink: 'Unsubscribe'
     },
     es: {
-      subject: 'Resumen Semanal FinMoovi',
+      subject: 'Resumen Semanal ${config.brand.name}',
       title: 'Resumen de la Semana',
-      subtitle: 'Mira lo que publicamos esta semana en el blog FinMoovi:',
+      subtitle: 'Mira lo que publicamos esta semana en el blog ${config.brand.name}:',
       tipsTitle: 'Consejos de la Semana',
       quotesTitle: 'Cotizaciones',
       glossaryTitle: 'Glosario',
@@ -169,7 +169,7 @@ async function sendEmail(to, subject, html) {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      from: 'FinMoovi Blog <blog@email.finmoovi.com>',
+      from: config.email.from,
       to: [to],
       subject,
       html

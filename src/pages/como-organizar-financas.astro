@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
+import { config } from '../../site.config';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
@@ -16,7 +17,7 @@ const faqSchema = {
     {
       "@type": "Question",
       "name": "Como organizar minhas finanças pessoais?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Comece listando todas as suas receitas e despesas. Use a regra 50-30-20: 50% para necessidades, 30% para desejos e 20% para poupança. Automatize pagamentos e use um app como o FinMoovi para acompanhar tudo em tempo real." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Comece listando todas as suas receitas e despesas. Use a regra 50-30-20: 50% para necessidades, 30% para desejos e 20% para poupança. Automatize pagamentos e use um app como o ${config.app.name} para acompanhar tudo em tempo real." }
     },
     {
       "@type": "Question",
@@ -26,7 +27,7 @@ const faqSchema = {
     {
       "@type": "Question",
       "name": "Existe app gratuito para organizar finanças?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Sim! O FinMoovi é gratuito por 7 dias e oferece controle multi-moeda, funciona offline, e usa inteligência artificial para categorizar seus gastos automaticamente." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim! O ${config.app.name} é gratuito por 7 dias e oferece controle multi-moeda, funciona offline, e usa inteligência artificial para categorizar seus gastos automaticamente." }
     },
     {
       "@type": "Question",
@@ -53,7 +54,7 @@ const faqSchema = {
         <h1>Como Organizar suas Finanças Pessoais</h1>
         <p class="hero-subtitle">O guia definitivo para sair do caos financeiro e começar a construir patrimônio — mesmo ganhando pouco.</p>
         <div class="hero-cta-group">
-          <a href="https://finmoovi.com" class="cta-primary" target="_blank" rel="noopener">Começar com o FinMoovi (Grátis)</a>
+          <a href={config.app.url} class="cta-primary" target="_blank" rel="noopener">Começar com o ${config.app.name} (Grátis)</a>
           <a href="#metodo" class="cta-secondary">Ver o método ↓</a>
         </div>
       </div>
@@ -142,7 +143,7 @@ const faqSchema = {
         <div class="faq-grid">
           <details>
             <summary>Como organizar minhas finanças pessoais?</summary>
-            <p>Comece listando todas as suas receitas e despesas. Use a regra 50-30-20: 50% para necessidades, 30% para desejos e 20% para poupança. Automatize pagamentos e use um app como o FinMoovi para acompanhar tudo em tempo real.</p>
+            <p>Comece listando todas as suas receitas e despesas. Use a regra 50-30-20: 50% para necessidades, 30% para desejos e 20% para poupança. Automatize pagamentos e use um app como o ${config.app.name} para acompanhar tudo em tempo real.</p>
           </details>
           <details>
             <summary>Qual o primeiro passo para organizar finanças?</summary>
@@ -150,7 +151,7 @@ const faqSchema = {
           </details>
           <details>
             <summary>Existe app gratuito para organizar finanças?</summary>
-            <p>Sim! O FinMoovi é gratuito por 7 dias e oferece controle multi-moeda, funciona offline, e usa inteligência artificial para categorizar seus gastos automaticamente.</p>
+            <p>Sim! O ${config.app.name} é gratuito por 7 dias e oferece controle multi-moeda, funciona offline, e usa inteligência artificial para categorizar seus gastos automaticamente.</p>
           </details>
           <details>
             <summary>Como sair das dívidas e organizar a vida financeira?</summary>
@@ -164,8 +165,8 @@ const faqSchema = {
     <section class="landing-section cta-section">
       <div class="container">
         <h2>Pronto para organizar suas finanças?</h2>
-        <p>Milhares de pessoas já usam o FinMoovi para controlar gastos e investir melhor.</p>
-        <a href="https://finmoovi.com" class="cta-primary large" target="_blank" rel="noopener">Experimentar Grátis — 7 dias</a>
+        <p>Milhares de pessoas já usam o ${config.app.name} para controlar gastos e investir melhor.</p>
+        <a href={config.app.url} class="cta-primary large" target="_blank" rel="noopener">Experimentar Grátis — 7 dias</a>
         <span class="cta-note">Sem cartão de crédito. Cancele quando quiser.</span>
       </div>
     </section>

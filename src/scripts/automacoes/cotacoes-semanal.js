@@ -56,7 +56,7 @@ Inclua:
 4. O que esperar para a próxima semana
 
 Formato: artigo de blog com 400-600 palavras, headers H2, tom informativo mas acessível.
-Mencione que o FinMoovi ajuda a acompanhar investimentos em múltiplas moedas.
+Mencione que o ${config.app.name} ajuda a acompanhar investimentos em múltiplas moedas.
 `,
     en: `
 Write a weekly summary of the Brazilian financial market for the week of ${weekStart.toLocaleDateString('en-US')} to ${today.toLocaleDateString('en-US')}.
@@ -72,7 +72,7 @@ Include:
 4. What to expect for next week
 
 Format: blog article with 400-600 words, H2 headers, informative but accessible tone.
-Mention that FinMoovi helps track investments in multiple currencies.
+Mention that ${config.app.name} helps track investments in multiple currencies.
 `,
     es: `
 Escriba un resumen semanal del mercado financiero brasileño para la semana del ${weekStart.toLocaleDateString('es-ES')} al ${today.toLocaleDateString('es-ES')}.
@@ -88,7 +88,7 @@ Incluya:
 4. Qué esperar para la próxima semana
 
 Formato: artículo de blog con 400-600 palabras, encabezados H2, tono informativo pero accesible.
-Mencione que FinMoovi ayuda a seguir inversiones en múltiples monedas.
+Mencione que ${config.app.name} ayuda a seguir inversiones en múltiples monedas.
 `
   };
 

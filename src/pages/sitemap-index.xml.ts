@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
+import { config } from '../../site.config';
 
 export const prerender = true;
 
@@ -7,7 +8,7 @@ export const GET: APIRoute = async () => {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
   const glossario = await getCollection('glossario');
 
-  const site = 'https://blog.finmoovi.com';
+  const site = config.siteUrl;
   const today = new Date().toISOString().split('T')[0];
 
   const locales = ['pt', 'en', 'es'];
