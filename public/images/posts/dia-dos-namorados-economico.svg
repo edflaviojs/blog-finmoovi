@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#16213e"/>
+  <rect x="0" y="0" width="800" height="4" fill="#A91079" opacity="0.8"/>
+  <circle cx="650" cy="100" r="200" fill="#A91079" opacity="0.05"/>
+  <circle cx="150" cy="350" r="150" fill="#A91079" opacity="0.03"/>
+  <g>
+    <text x="400" y="160" text-anchor="middle" fill="#f0f6fc" font-family="Inter, sans-serif" font-size="32" font-weight="700">Dia dos Namorados Econômico</text>
+  </g>
+  <text x="400" y="234" text-anchor="middle" fill="#A91079" font-family="Inter, sans-serif" font-size="14" font-weight="600">FinMoovi Blog</text>
+</svg>
