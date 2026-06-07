@@ -1,4 +1,6 @@
 ---
+import { config } from '../../../site.config';
+
 interface Props {
   variant?: 'full' | 'compact';
   locale?: string;
@@ -6,6 +8,8 @@ interface Props {
 }
 
 const { variant = 'full', locale = 'pt', seed } = Astro.props;
+const appName = config.app.name;
+const appUrl = config.app.url;
 
 const ctas = {
   pt: [
@@ -66,7 +70,7 @@ const ctaBtn = ctaButtons[locale] || ctaButtons.pt;
   <div class="cta-variado-badge">{badge}</div>
   <h4 class="cta-variado-title">{cta.title}</h4>
   {variant === 'full' && <p class="cta-variado-desc">{cta.desc}</p>}
-  <a href="https://finmoovi.com" class="cta-variado-btn" target="_blank" rel="noopener">
+  <a href={appUrl} class="cta-variado-btn" target="_blank" rel="noopener">
     {ctaBtn}
   </a>
 </aside>

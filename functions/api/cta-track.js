@@ -1,7 +1,9 @@
+import siteConfig from '../_config.json';
+
 export async function onRequestPost(context) {
   const { request, env } = context;
 
-  const allowedOrigins = ['https://blog.finmoovi.com', 'https://blog-finmoovi.pages.dev', 'http://localhost:4321'];
+  const allowedOrigins = siteConfig.allowedOrigins;
   const origin = request.headers.get('Origin') || '';
   const corsOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
 
@@ -60,7 +62,7 @@ export async function onRequestPost(context) {
 }
 
 export async function onRequestOptions(context) {
-  const allowedOrigins = ['https://blog.finmoovi.com', 'https://blog-finmoovi.pages.dev', 'http://localhost:4321'];
+  const allowedOrigins = siteConfig.allowedOrigins;
   const origin = context.request.headers.get('Origin') || '';
   const corsOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
 

@@ -1,16 +1,13 @@
 ---
+import { config } from '../../../site.config';
+
 interface Props {
   term?: string;
 }
 const { term } = Astro.props;
-// To enable Giscus:
-// 1. Enable GitHub Discussions on the blog-finmoovi repo
-// 2. Create a "Comments" category
-// 3. Go to https://giscus.app and get your repo-id and category-id
-// 4. Fill them below
-const GISCUS_REPO_ID = '';
-const GISCUS_CATEGORY_ID = '';
-const giscusEnabled = GISCUS_REPO_ID && GISCUS_CATEGORY_ID;
+// Giscus config comes from site.config.ts
+const { repo, repoId, category, categoryId } = config.giscus;
+const giscusEnabled = repoId && categoryId;
 ---
 
 <section class="comments-section">
@@ -19,10 +16,10 @@ const giscusEnabled = GISCUS_REPO_ID && GISCUS_CATEGORY_ID;
     <div id="giscus-container">
       <script
         src="https://giscus.app/client.js"
-        data-repo="edflaviojs/blog-finmoovi"
-        data-repo-id={GISCUS_REPO_ID}
-        data-category="Comments"
-        data-category-id={GISCUS_CATEGORY_ID}
+        data-repo={repo}
+        data-repo-id={repoId}
+        data-category={category}
+        data-category-id={categoryId}
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"

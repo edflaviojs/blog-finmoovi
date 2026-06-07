@@ -1,12 +1,16 @@
 ---
+import { config } from '../../../site.config';
+
 interface Props {
   locale?: string;
 }
 
 const { locale = 'pt' } = Astro.props;
+const appUrl = config.app.url;
+const appName = config.app.name;
 ---
 
-<script define:vars={{ locale }}>
+<script define:vars={{ locale, appUrl, appName }}>
 (function() {
   const ctas = {
     pt: [
@@ -63,7 +67,7 @@ const { locale = 'pt' } = Astro.props;
   function createCTA(cta, variant) {
     const el = document.createElement('aside');
     el.className = 'post-inline-cta post-inline-cta--' + variant;
-    el.setAttribute('aria-label', 'FinMoovi');
+    el.setAttribute('aria-label', appName);
 
     if (variant === 'sidebar') {
       el.innerHTML =
@@ -75,7 +79,7 @@ const { locale = 'pt' } = Astro.props;
           '</div>' +
           '<div class="pic-sidebar-box">' +
             '<div class="pic-sidebar-icon">📊</div>' +
-            '<a href="https://finmoovi.com" class="pic-btn" target="_blank" rel="noopener">' + btnText + '</a>' +
+            '<a href="' + appUrl + '" class="pic-btn" target="_blank" rel="noopener">' + btnText + '</a>' +
           '</div>' +
         '</div>';
     } else if (variant === 'compact') {
@@ -83,14 +87,14 @@ const { locale = 'pt' } = Astro.props;
         '<div class="pic-compact-wrap">' +
           '<div class="pic-badge">' + badge + '</div>' +
           '<span class="pic-compact-title">' + cta.title + '</span>' +
-          '<a href="https://finmoovi.com" class="pic-btn" target="_blank" rel="noopener">' + btnText + '</a>' +
+          '<a href="' + appUrl + '" class="pic-btn" target="_blank" rel="noopener">' + btnText + '</a>' +
         '</div>';
     } else {
       el.innerHTML =
         '<div class="pic-badge">' + badge + '</div>' +
         '<h4 class="pic-title">' + cta.title + '</h4>' +
         '<p class="pic-desc">' + cta.desc + '</p>' +
-        '<a href="https://finmoovi.com" class="pic-btn" target="_blank" rel="noopener">' + btnText + '</a>';
+        '<a href="' + appUrl + '" class="pic-btn" target="_blank" rel="noopener">' + btnText + '</a>';
     }
     return el;
   }

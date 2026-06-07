@@ -4,6 +4,10 @@ import Navigation from './Navigation.astro';
 import MobileMenu from './MobileMenu.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import ThemeToggle from './ThemeToggle.astro';
+import { config } from '../../../site.config';
+
+const { brand } = config;
+const blogTitle = `${brand.name} ${brand.blogSuffix}`;
 ---
 
 <div class="header-wrapper">
@@ -11,19 +15,19 @@ import ThemeToggle from './ThemeToggle.astro';
 
   <header class="header">
     <div class="container header-inner">
-      <a href="/" class="logo" aria-label="FinMoovi Blog - Home">
+      <a href="/" class="logo" aria-label={`${blogTitle} - Home`}>
         <div class="logo-icon">
           <svg width="20" height="20" viewBox="0 0 64 64" fill="none">
-            <path d="M12 44 L24 28 L34 38 L44 20 L52 28" stroke="url(#logoGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d={brand.logo.svgPath} stroke="url(#logoGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
             <defs>
               <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#00F0FF"/>
-                <stop offset="100%" stop-color="#A91079"/>
+                <stop offset="0%" stop-color={brand.logo.gradientStart}/>
+                <stop offset="100%" stop-color={brand.logo.gradientEnd}/>
               </linearGradient>
             </defs>
           </svg>
         </div>
-        <span class="logo-text">FinMoovi<span class="logo-blog">Blog</span></span>
+        <span class="logo-text">{brand.name}<span class="logo-blog">{brand.blogSuffix}</span></span>
       </a>
 
       <div class="header-right">

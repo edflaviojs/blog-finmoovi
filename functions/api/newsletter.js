@@ -1,7 +1,9 @@
+import siteConfig from '../_config.json';
+
 export async function onRequestPost(context) {
   const { request, env } = context;
 
-  const allowedOrigins = ['https://blog.finmoovi.com', 'https://blog-finmoovi.pages.dev', 'http://localhost:4321'];
+  const allowedOrigins = siteConfig.allowedOrigins;
   const origin = request.headers.get('Origin') || '';
   const corsOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
 
@@ -77,9 +79,9 @@ export async function onRequestPost(context) {
         : getWelcomeEmailHTML(email, lang);
       const subject = isLeadMagnet
         ? getLeadMagnetSubject(lang, source)
-        : (lang === 'en' ? 'Welcome to FinMoovi Newsletter!' :
-           lang === 'es' ? 'Bienvenido a la Newsletter FinMoovi!' :
-           'Bem-vindo à Newsletter FinMoovi!');
+        : (lang === 'en' ? `Welcome to ${siteConfig.brandName} Newsletter!` :
+           lang === 'es' ? `Bienvenido a la Newsletter ${siteConfig.brandName}!` :
+           `Bem-vindo à Newsletter ${siteConfig.brandName}!`);
 
       await fetch('https://api.resend.com/emails', {
         method: 'POST',
@@ -88,7 +90,7 @@ export async function onRequestPost(context) {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          from: 'FinMoovi Blog <blog@email.finmoovi.com>',
+          from: siteConfig.emailFrom,
           to: [email],
           subject,
           html: emailContent

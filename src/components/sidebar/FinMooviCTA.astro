@@ -1,48 +1,54 @@
 ---
+import { config } from '../../../site.config';
+
 const urlPath = Astro.url?.pathname || '';
 let locale = 'pt';
 if (urlPath.startsWith('/en/')) locale = 'en';
 else if (urlPath.startsWith('/es/')) locale = 'es';
 
+const appName = config.app.name;
+const appUrl = config.app.url;
+const features = config.app.features;
+
 const texts = {
   pt: {
     badge: 'App Gratuito',
-    title: 'Organize suas finanças com o FinMoovi',
-    desc: 'Controle gastos, acompanhe investimentos e alcance seus objetivos financeiros. Multi-moeda, offline e inteligente.',
-    f1: '✓ Multi-moeda (BRL, USD, EUR)',
-    f2: '✓ Smart Capture com IA',
-    f3: '✓ Relatórios inteligentes',
-    f4: '✓ 100% offline e seguro',
-    btn: 'Experimentar Grátis — 7 dias',
-    note: 'Sem cartão de crédito. Cancele quando quiser.'
+    title: `Organize suas finanças com o ${appName}`,
+    desc: features.pt.slice(0, 3).join('. ') + '.',
+    f1: `✓ ${features.pt[0]}`,
+    f2: `✓ ${features.pt[1]}`,
+    f3: `✓ ${features.pt[2]}`,
+    f4: `✓ ${features.pt[3]}`,
+    btn: config.app.ctaText.pt,
+    note: config.app.ctaNote.pt
   },
   en: {
     badge: 'Free App',
-    title: 'Organize your finances with FinMoovi',
-    desc: 'Track expenses, monitor investments, and reach your financial goals. Multi-currency, offline, and smart.',
-    f1: '✓ Multi-currency (BRL, USD, EUR)',
-    f2: '✓ AI Smart Capture',
-    f3: '✓ Intelligent reports',
-    f4: '✓ 100% offline and secure',
-    btn: 'Try Free — 7 days',
-    note: 'No credit card. Cancel anytime.'
+    title: `Organize your finances with ${appName}`,
+    desc: features.en.slice(0, 3).join('. ') + '.',
+    f1: `✓ ${features.en[0]}`,
+    f2: `✓ ${features.en[1]}`,
+    f3: `✓ ${features.en[2]}`,
+    f4: `✓ ${features.en[3]}`,
+    btn: config.app.ctaText.en,
+    note: config.app.ctaNote.en
   },
   es: {
     badge: 'App Gratuita',
-    title: 'Organiza tus finanzas con FinMoovi',
-    desc: 'Controla gastos, acompaña inversiones y alcanza tus objetivos financieros. Multi-moneda, offline e inteligente.',
-    f1: '✓ Multi-moneda (BRL, USD, EUR)',
-    f2: '✓ Smart Capture con IA',
-    f3: '✓ Reportes inteligentes',
-    f4: '✓ 100% offline y seguro',
-    btn: 'Probar Gratis — 7 días',
-    note: 'Sin tarjeta de crédito. Cancela cuando quieras.'
+    title: `Organiza tus finanzas con ${appName}`,
+    desc: features.es.slice(0, 3).join('. ') + '.',
+    f1: `✓ ${features.es[0]}`,
+    f2: `✓ ${features.es[1]}`,
+    f3: `✓ ${features.es[2]}`,
+    f4: `✓ ${features.es[3]}`,
+    btn: config.app.ctaText.es,
+    note: config.app.ctaNote.es
   }
 };
 const t = texts[locale] || texts.pt;
 ---
 
-<a href="https://finmoovi.com" target="_blank" rel="noopener noreferrer" class="sidebar-widget cta-widget">
+<a href={appUrl} target="_blank" rel="noopener noreferrer" class="sidebar-widget cta-widget">
   <div class="cta-badge">{t.badge}</div>
   <h3 class="cta-title">{t.title}</h3>
   <p class="cta-description">{t.desc}</p>

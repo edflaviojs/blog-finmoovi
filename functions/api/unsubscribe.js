@@ -1,3 +1,5 @@
+import siteConfig from '../_config.json';
+
 export async function onRequestGet(context) {
   const { request, env } = context;
   const url = new URL(request.url);
@@ -29,7 +31,7 @@ export async function onRequestGet(context) {
     );
   }
 
-  return new Response(`<html><body style="background:#0d1117;color:#f0f6fc;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;"><div style="text-align:center;"><h1 style="color:#3fb950;">Inscrição cancelada</h1><p style="color:#8b949e;">Você não receberá mais emails da Newsletter FinMoovi.</p><a href="https://blog.finmoovi.com" style="color:#58a6ff;margin-top:16px;display:inline-block;">Voltar ao blog</a></div></body></html>`, {
+  return new Response(`<html><body style="background:#0d1117;color:#f0f6fc;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;"><div style="text-align:center;"><h1 style="color:#3fb950;">Inscrição cancelada</h1><p style="color:#8b949e;">Você não receberá mais emails da Newsletter ${siteConfig.brandName}.</p><a href="${siteConfig.siteUrl}" style="color:#58a6ff;margin-top:16px;display:inline-block;">Voltar ao blog</a></div></body></html>`, {
     status: 200,
     headers: { 'Content-Type': 'text/html' }
   });
