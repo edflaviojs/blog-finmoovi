@@ -10,13 +10,13 @@ import { join } from 'path';
 const POSTS_IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 const GLOSSARIO_IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario');
 
-// Color palettes for variety
+// Color palettes for variety — transparent bg for dark/light compatibility
 const PALETTES = [
-  { primary: '#00F0FF', secondary: '#A91079', bg: '#0d1117', card: '#161b22', border: '#30363d' },
-  { primary: '#10B981', secondary: '#F59E0B', bg: '#0d1117', card: '#161b22', border: '#30363d' },
-  { primary: '#8B5CF6', secondary: '#EC4899', bg: '#0d1117', card: '#161b22', border: '#30363d' },
-  { primary: '#06B6D4', secondary: '#F97316', bg: '#0d1117', card: '#161b22', border: '#30363d' },
-  { primary: '#14B8A6', secondary: '#E11D48', bg: '#0d1117', card: '#161b22', border: '#30363d' },
+  { primary: '#00F0FF', secondary: '#A91079', bg: 'transparent', card: 'rgba(128,128,128,0.06)', border: 'rgba(128,128,128,0.15)' },
+  { primary: '#10B981', secondary: '#F59E0B', bg: 'transparent', card: 'rgba(128,128,128,0.06)', border: 'rgba(128,128,128,0.15)' },
+  { primary: '#8B5CF6', secondary: '#EC4899', bg: 'transparent', card: 'rgba(128,128,128,0.06)', border: 'rgba(128,128,128,0.15)' },
+  { primary: '#06B6D4', secondary: '#F97316', bg: 'transparent', card: 'rgba(128,128,128,0.06)', border: 'rgba(128,128,128,0.15)' },
+  { primary: '#14B8A6', secondary: '#E11D48', bg: 'transparent', card: 'rgba(128,128,128,0.06)', border: 'rgba(128,128,128,0.15)' },
 ];
 
 // Chart patterns
@@ -78,7 +78,7 @@ function generatePieChart(palette, rng) {
   let startAngle = 0;
   const sizes = [0.3, 0.25, 0.2, 0.15, 0.1].map(s => s + (rng() - 0.5) * 0.05);
   const total = sizes.reduce((a, b) => a + b, 0);
-  const colors = [palette.primary, palette.secondary, '#8B949E', '#30363D', '#21262D'];
+  const colors = [palette.primary, palette.secondary, '#8B949E', 'rgba(128,128,128,0.25)', 'rgba(128,128,128,0.15)'];
 
   for (let i = 0; i < sizes.length; i++) {
     const angle = (sizes[i] / total) * 360;
@@ -93,7 +93,7 @@ function generatePieChart(palette, rng) {
   }
 
   // Inner circle for donut effect
-  segments.push(`<circle cx="${cx}" cy="${cy}" r="${r * 0.5}" fill="${palette.bg}"/>`);
+  segments.push(`<circle cx="${cx}" cy="${cy}" r="${r * 0.5}" fill="${palette.card}"/>`);
 
   return segments.join('\n  ');
 }

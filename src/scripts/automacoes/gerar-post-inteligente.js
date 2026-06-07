@@ -4,7 +4,7 @@
  * Executa após o relatório semanal (terças)
  */
 
-import { generateText } from '../apis/kie-ai.js';
+import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { writeFileSync, mkdirSync, existsSync, readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -208,6 +208,38 @@ function parseResponse(response) {
 }
 
 /**
+ * Insert inline images into content (1 image every 2 H2 sections)
+ * Same pattern as gerar-dicas-financeiras.js
+ */
+async function insertInlineImages(content, slugBase) {
+  const h2Matches = content.match(/^## .+$/gm) || [];
+  if (h2Matches.length < 2) return content;
+
+  const headings = h2Matches.map(h => h.replace('## ', ''));
+  let result = content;
+
+  for (let i = headings.length - 1; i >= 1; i -= 2) {
+    const sectionTopic = `${slugBase} - ${headings[i]}`;
+    const imgPath = await generateInlineImage(sectionTopic, `${slugBase}-${i}`, 'posts');
+    const headingText = headings[i];
+    const headingPattern = `## ${headingText}`;
+    const headingIndex = result.indexOf(headingPattern);
+
+    if (headingIndex !== -1) {
+      const afterHeading = result.indexOf('\n\n', headingIndex + headingPattern.length);
+      if (afterHeading !== -1) {
+        const nextParagraphEnd = result.indexOf('\n\n', afterHeading + 2);
+        const insertAt = nextParagraphEnd !== -1 ? nextParagraphEnd : afterHeading;
+        const imgMarkdown = `\n\n![${headingText}](${imgPath})\n\n`;
+        result = result.slice(0, insertAt) + imgMarkdown + result.slice(insertAt);
+      }
+    }
+  }
+
+  return result;
+}
+
+/**
  * Generate slug from title
  */
 function slugify(title) {
@@ -217,56 +249,6 @@ function slugify(title) {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
     .slice(0, 60);
-}
-
-/**
- * Generate a simple SVG cover image
- */
-function generateCover(title, slug) {
-  const colors = [
-    { bg: '#1a1a2e', accent: '#00F0FF' },
-    { bg: '#16213e', accent: '#A91079' },
-    { bg: '#0f3460', accent: '#00F0FF' },
-    { bg: '#1b1b2f', accent: '#e94560' },
-  ];
-  const color = colors[Math.floor(Math.random() * colors.length)];
-
-  // Wrap title for SVG
-  const words = title.split(' ');
-  const lines = [];
-  let current = '';
-  for (const word of words) {
-    if ((current + ' ' + word).length > 28) {
-      lines.push(current.trim());
-      current = word;
-    } else {
-      current += ' ' + word;
-    }
-  }
-  if (current.trim()) lines.push(current.trim());
-
-  const textY = 180 - (lines.length * 20);
-  const textElements = lines.map((line, i) =>
-    `<text x="400" y="${textY + i * 44}" text-anchor="middle" fill="#f0f6fc" font-family="Inter, sans-serif" font-size="32" font-weight="700">${line}</text>`
-  ).join('\n    ');
-
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
-  <rect width="800" height="450" fill="${color.bg}"/>
-  <rect x="0" y="0" width="800" height="4" fill="${color.accent}" opacity="0.8"/>
-  <circle cx="650" cy="100" r="200" fill="${color.accent}" opacity="0.05"/>
-  <circle cx="150" cy="350" r="150" fill="${color.accent}" opacity="0.03"/>
-  <g>
-    ${textElements}
-  </g>
-  <text x="400" y="${textY + lines.length * 44 + 30}" text-anchor="middle" fill="${color.accent}" font-family="Inter, sans-serif" font-size="14" font-weight="600">FinMoovi Blog</text>
-</svg>`;
-
-  const imgDir = join(IMAGES_DIR);
-  if (!existsSync(imgDir)) mkdirSync(imgDir, { recursive: true });
-
-  const imgPath = join(imgDir, `${slug}.svg`);
-  writeFileSync(imgPath, svg);
-  return `/images/posts/${slug}.svg`;
 }
 
 /**
@@ -351,14 +333,18 @@ async function main() {
   const slug = slugify(post.title);
   console.log(`  Título: ${post.title}`);
 
-  // 4. Generate cover image
-  const imagePath = generateCover(post.title, slug);
+  // 4. Generate cover image (same system as normal posts)
+  const imagePath = await generateCoverImage(post.title, slug, 'posts');
   console.log(`  Imagem: ${imagePath}`);
 
-  // 5. Save PT version
+  // 5. Insert inline images into content
+  console.log('  Inserindo imagens inline...');
+  post.content = await insertInlineImages(post.content, slug);
+
+  // 6. Save PT version
   savePost(post, slug, 'pt', imagePath);
 
-  // 6. Translate and save EN
+  // 7. Translate and save EN
   console.log('🇺🇸 Traduzindo para inglês...');
   try {
     const enPost = await translatePost(post, 'en');
@@ -367,7 +353,7 @@ async function main() {
     console.log('  ⚠️ Falha na tradução EN:', e.message);
   }
 
-  // 7. Translate and save ES
+  // 8. Translate and save ES
   console.log('🇪🇸 Traduzindo para espanhol...');
   try {
     const esPost = await translatePost(post, 'es');
@@ -376,7 +362,7 @@ async function main() {
     console.log('  ⚠️ Falha na tradução ES:', e.message);
   }
 
-  // 8. Git commit
+  // 9. Git commit
   try {
     execSync('git add src/content/posts/ public/images/posts/', { stdio: 'pipe' });
     execSync(`git commit -m "post: ${post.title} (analytics-driven)"`, { stdio: 'pipe' });
