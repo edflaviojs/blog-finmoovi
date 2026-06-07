@@ -1,9 +1,10 @@
 /**
- * Interactive Setup Script
+ * Interactive Setup Script with AI-powered content generation
  * Guides the user through configuring the template for their brand/niche.
+ * Uses GROQ API to generate CTAs, categories, seasonal calendar, AI prompts.
  *
  * Usage: npm run setup
- * (runs via: node --import tsx scripts/setup.js)
+ * Requires: GROQ_API_KEY env variable (optional — falls back to generic templates)
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
@@ -28,46 +29,202 @@ function slugify(str) {
     .replace(/^-|-$/g, '');
 }
 
+async function callGroq(prompt, maxTokens = 2000) {
+  const apiKey = process.env.GROQ_API_KEY;
+  if (!apiKey) return null;
+
+  try {
+    const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        model: 'llama-3.3-70b-versatile',
+        messages: [{ role: 'user', content: prompt }],
+        max_tokens: maxTokens,
+        temperature: 0.7
+      })
+    });
+    const data = await res.json();
+    return data.choices?.[0]?.message?.content || null;
+  } catch (e) {
+    console.log('⚠️  Erro na API GROQ:', e.message);
+    return null;
+  }
+}
+
+async function generateWithAI(brandName, niche_pt, niche_en, niche_es, productDescription) {
+  console.log('\n🤖 Gerando conteúdo personalizado com IA...\n');
+
+  const prompt = `You are a blog strategist. Given the following brand info, generate content configuration in JSON format.
+
+Brand: ${brandName}
+Niche (PT): ${niche_pt}
+Niche (EN): ${niche_en}
+Niche (ES): ${niche_es}
+Product Description: ${productDescription}
+
+Generate a JSON object with EXACTLY this structure (no markdown, just raw JSON):
+{
+  "categories": ["slug1", "slug2", "slug3", "slug4", "slug5", "slug6"],
+  "features": {
+    "pt": ["feature 1 in portuguese", "feature 2", "feature 3", "feature 4"],
+    "en": ["feature 1 in english", "feature 2", "feature 3", "feature 4"],
+    "es": ["feature 1 in spanish", "feature 2", "feature 3", "feature 4"]
+  },
+  "ctaText": {
+    "pt": "CTA button text in portuguese",
+    "en": "CTA button text in english",
+    "es": "CTA button text in spanish"
+  },
+  "ctaNote": {
+    "pt": "Short reassurance in portuguese (e.g. 'Sem cartão de crédito.')",
+    "en": "Short reassurance in english",
+    "es": "Short reassurance in spanish"
+  },
+  "siteDescription": {
+    "pt": "Blog meta description in portuguese (max 160 chars)",
+    "en": "Blog meta description in english (max 160 chars)",
+    "es": "Blog meta description in spanish (max 160 chars)"
+  },
+  "tagline": {
+    "pt": "Short tagline in portuguese (3-5 words)",
+    "en": "Short tagline in english (3-5 words)",
+    "es": "Short tagline in spanish (3-5 words)"
+  },
+  "aiPersonality": "AI writer personality prompt in Portuguese (1-2 sentences describing tone and style for blog posts)",
+  "dailyTopics": ["topic suggestion 1", "topic suggestion 2", "topic suggestion 3", "topic suggestion 4", "topic suggestion 5"],
+  "seasonalCalendar": [
+    {"month": 1, "topic": "seasonal topic for January related to the niche"},
+    {"month": 3, "topic": "seasonal topic for March"},
+    {"month": 5, "topic": "seasonal topic for May"},
+    {"month": 7, "topic": "seasonal topic for July"},
+    {"month": 9, "topic": "seasonal topic for September"},
+    {"month": 11, "topic": "seasonal topic for November"}
+  ],
+  "comparisonTopics": ["comparison topic 1 vs X", "topic 2 vs Y", "topic 3 vs Z"],
+  "solutionTopics": ["how the product solves problem 1", "how it solves problem 2", "how it solves problem 3"]
+}
+
+Categories should be slug-friendly (lowercase, no accents, no spaces — use hyphens).
+Features should describe the product's main selling points.
+Daily topics should be blog post ideas relevant to the niche.
+Seasonal calendar should match Brazilian/international dates relevant to the niche.
+Comparison and solution topics should be content marketing angles.
+
+IMPORTANT: Return ONLY the JSON, no explanation, no markdown code blocks.`;
+
+  const result = await callGroq(prompt, 2000);
+  if (!result) return null;
+
+  try {
+    // Try to parse, handle potential markdown wrapping
+    const cleaned = result.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+    return JSON.parse(cleaned);
+  } catch (e) {
+    console.log('⚠️  Não foi possível interpretar resposta da IA. Usando templates genéricos.');
+    return null;
+  }
+}
+
+function getGenericDefaults(brandName, niche_pt, niche_en, niche_es) {
+  return {
+    categories: ['dicas', 'guias', 'reviews', 'noticias', 'ferramentas', 'glossario'],
+    features: {
+      pt: ['Recurso principal 1', 'Recurso principal 2', 'Recurso principal 3', 'Recurso principal 4'],
+      en: ['Main feature 1', 'Main feature 2', 'Main feature 3', 'Main feature 4'],
+      es: ['Función principal 1', 'Función principal 2', 'Función principal 3', 'Función principal 4'],
+    },
+    ctaText: { pt: 'Experimentar Grátis', en: 'Try Free', es: 'Probar Gratis' },
+    ctaNote: { pt: 'Sem cartão de crédito.', en: 'No credit card required.', es: 'Sin tarjeta de crédito.' },
+    siteDescription: {
+      pt: `Dicas e conteúdo sobre ${niche_pt}. Blog oficial do ${brandName}.`,
+      en: `Tips and content about ${niche_en}. Official ${brandName} blog.`,
+      es: `Consejos y contenido sobre ${niche_es}. Blog oficial de ${brandName}.`,
+    },
+    tagline: {
+      pt: `${niche_pt} acessível`,
+      en: `Accessible ${niche_en}`,
+      es: `${niche_es} accesible`,
+    },
+    aiPersonality: `Você é um redator experiente de ${niche_pt} que escreve para brasileiros. Seu estilo é direto, prático e conversacional.`,
+    dailyTopics: [`dica 1 sobre ${niche_pt}`, `dica 2 sobre ${niche_pt}`, `dica 3 sobre ${niche_pt}`],
+    seasonalCalendar: [],
+    comparisonTopics: [],
+    solutionTopics: [],
+  };
+}
+
 async function main() {
   console.log(`
 ╔══════════════════════════════════════════════════════════════╗
-║         🚀 Blog Template — Setup Interativo                 ║
+║         🚀 Blog Template — Setup Inteligente                ║
 ║                                                              ║
-║  Este assistente vai configurar seu blog.                    ║
-║  Responda as perguntas abaixo para gerar o site.config.ts   ║
+║  Este assistente configura seu blog completo.                ║
+║  Se GROQ_API_KEY estiver configurada, usa IA para           ║
+║  gerar CTAs, categorias, temas e prompts pro seu nicho.     ║
 ╚══════════════════════════════════════════════════════════════╝
 `);
 
+  const hasAI = !!process.env.GROQ_API_KEY;
+  if (hasAI) {
+    console.log('  ✅ GROQ_API_KEY detectada — geração com IA ativada\n');
+  } else {
+    console.log('  ⚠️  GROQ_API_KEY não encontrada — usando templates genéricos');
+    console.log('     (Configure a variável de ambiente para gerar com IA)\n');
+  }
+
   // === Core Identity ===
+  console.log('━━━━━ 1/5 IDENTIDADE DA MARCA ━━━━━━━━━━━━━━━━━━━━\n');
   const brandName = await ask('Nome da marca/app', 'MeuApp');
   const blogDomain = await ask('Domínio do blog (sem https://)', `blog.${slugify(brandName)}.com`);
   const mainDomain = await ask('Domínio principal do app/produto', `${slugify(brandName)}.com`);
+
+  // === Niche ===
+  console.log('\n━━━━━ 2/5 NICHO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
   const niche_pt = await ask('Nicho em português', 'finanças pessoais');
   const niche_en = await ask('Nicho em inglês', 'personal finance');
   const niche_es = await ask('Nicho em espanhol', 'finanzas personales');
 
-  // === Colors ===
-  console.log('\n🎨 Cores (use hex, ex: #00F0FF)');
-  const colorPrimary = await ask('Cor primária (links, destaques)', '#58a6ff');
-  const gradientStart = await ask('Gradiente início (cor 1)', '#00F0FF');
-  const gradientEnd = await ask('Gradiente fim (cor 2)', '#A91079');
-
-  // === Product/App ===
-  console.log('\n📱 Produto/App promovido nos CTAs');
+  // === Product ===
+  console.log('\n━━━━━ 3/5 PRODUTO/APP ━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
   const appName = await ask('Nome do app/produto', brandName);
   const appUrl = await ask('URL do app/produto', `https://${mainDomain}`);
+  const productDescription = await ask(
+    'Descreva seu produto em 1-2 frases (para gerar CTAs e conteúdo)',
+    `App de ${niche_pt} inteligente com funcionalidades avançadas.`
+  );
 
-  // === Categories ===
-  console.log('\n📂 Categorias de conteúdo (separadas por vírgula)');
-  const categoriesStr = await ask('Categorias', 'dicas, guias, reviews, noticias, ferramentas, glossario');
-  const categories = categoriesStr.split(',').map(c => slugify(c.trim())).filter(Boolean);
+  // === Colors ===
+  console.log('\n━━━━━ 4/5 VISUAL ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
+  const colorPrimary = await ask('Cor primária (hex)', '#58a6ff');
+  const gradientStart = await ask('Gradiente início (hex)', '#00F0FF');
+  const gradientEnd = await ask('Gradiente fim (hex)', '#A91079');
 
   // === Cloudflare ===
-  console.log('\n☁️ Cloudflare Pages');
-  const cfProjectName = await ask('Nome do projeto no CF Pages', slugify(brandName) + '-blog');
+  console.log('\n━━━━━ 5/5 DEPLOY ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
+  const cfProjectName = await ask('Nome do projeto no Cloudflare Pages', slugify(brandName) + '-blog');
+  const authorName = await ask('Nome do autor padrão', brandName);
 
-  // === Author ===
-  const authorName = await ask('\n✍️ Nome do autor padrão', brandName);
+  // === AI Generation ===
+  let aiData = null;
+  if (hasAI) {
+    aiData = await generateWithAI(brandName, niche_pt, niche_en, niche_es, productDescription);
+  }
+
+  const data = aiData || getGenericDefaults(brandName, niche_pt, niche_en, niche_es);
+
+  if (aiData) {
+    console.log('✅ Conteúdo gerado com IA:');
+    console.log(`   • ${data.categories.length} categorias: ${data.categories.join(', ')}`);
+    console.log(`   • ${data.features.pt.length} features do produto`);
+    console.log(`   • ${data.dailyTopics.length} temas diários sugeridos`);
+    console.log(`   • ${data.seasonalCalendar.length} datas sazonais`);
+    console.log(`   • ${data.comparisonTopics.length} temas de comparação`);
+    console.log(`   • ${data.solutionTopics.length} temas de solução\n`);
+  }
 
   // === Generate config ===
   const configContent = `import type { SiteConfig } from './src/types/config';
@@ -77,28 +234,20 @@ async function main() {
  * SITE CONFIGURATION — ${brandName}
  * ═══════════════════════════════════════════════════════════════════════
  * Gerado por: npm run setup
- * Após editar, rode: npm run generate
+ * ${aiData ? '🤖 CTAs, categorias e temas gerados com IA' : '📝 Templates genéricos (rode com GROQ_API_KEY para personalizar)'}
  */
 
 export const config: SiteConfig = {
   siteName: '${brandName} Blog',
   siteUrl: 'https://${blogDomain}',
-  siteDescription: {
-    pt: 'Dicas e conteúdo sobre ${niche_pt}. Blog oficial do ${brandName}.',
-    en: 'Tips and content about ${niche_en}. Official ${brandName} blog.',
-    es: 'Consejos y contenido sobre ${niche_es}. Blog oficial de ${brandName}.',
-  },
+  siteDescription: ${JSON.stringify(data.siteDescription, null, 4)},
   defaultLocale: 'pt',
   locales: ['pt', 'en', 'es'],
 
   brand: {
     name: '${brandName}',
     blogSuffix: 'Blog',
-    tagline: {
-      pt: '${niche_pt} acessível',
-      en: 'Accessible ${niche_en}',
-      es: '${niche_es} accesible',
-    },
+    tagline: ${JSON.stringify(data.tagline, null, 6)},
     logo: {
       svgPath: 'M12 44 L24 28 L34 38 L44 20 L52 28',
       gradientStart: '${gradientStart}',
@@ -121,7 +270,7 @@ export const config: SiteConfig = {
   },
 
   content: {
-    categories: [${categories.map(c => `'${c}'`).join(', ')}] as const,
+    categories: ${JSON.stringify(data.categories)} as const,
     glossaryCategories: ['basico', 'intermediario', 'avancado'] as const,
     niche: {
       pt: '${niche_pt}',
@@ -130,7 +279,7 @@ export const config: SiteConfig = {
     },
     defaultAuthor: '${authorName}',
     defaultKeywords: {
-      pt: '${niche_pt}, ${categories.slice(0, 3).join(', ')}',
+      pt: '${niche_pt}, ${data.categories.slice(0, 3).join(', ')}',
       en: '${niche_en}, tips, guide',
       es: '${niche_es}, consejos, guía',
     },
@@ -139,13 +288,9 @@ export const config: SiteConfig = {
   app: {
     name: '${appName}',
     url: '${appUrl}',
-    features: {
-      pt: ['Recurso principal 1', 'Recurso principal 2', 'Recurso principal 3', 'Recurso principal 4'],
-      en: ['Main feature 1', 'Main feature 2', 'Main feature 3', 'Main feature 4'],
-      es: ['Función principal 1', 'Función principal 2', 'Función principal 3', 'Función principal 4'],
-    },
-    ctaText: { pt: 'Experimentar Grátis', en: 'Try Free', es: 'Probar Gratis' },
-    ctaNote: { pt: 'Sem cartão de crédito.', en: 'No credit card required.', es: 'Sin tarjeta de crédito.' },
+    features: ${JSON.stringify(data.features, null, 6)},
+    ctaText: ${JSON.stringify(data.ctaText, null, 6)},
+    ctaNote: ${JSON.stringify(data.ctaNote, null, 6)},
   },
 
   social: {
@@ -173,16 +318,12 @@ export const config: SiteConfig = {
   },
 
   ai: {
-    personality: \`Você é um redator experiente de ${niche_pt} que escreve para brasileiros. Seu estilo é direto, prático e conversacional. Quando menciona o app ${appName}, faz de forma natural.\`,
-    nicheKeywords: [${categories.map(c => `'${c}'`).join(', ')}],
-    dailyTopics: [
-      'dica 1 sobre ${niche_pt}',
-      'dica 2 sobre ${niche_pt}',
-      'dica 3 sobre ${niche_pt}',
-    ],
-    seasonalCalendar: [],
-    comparisonTopics: [],
-    solutionTopics: [],
+    personality: \`${data.aiPersonality || `Você é um redator experiente de ${niche_pt} que escreve para brasileiros. Seu estilo é direto, prático e conversacional. Quando menciona o app ${appName}, faz de forma natural.`}\`,
+    nicheKeywords: ${JSON.stringify(data.categories)},
+    dailyTopics: ${JSON.stringify(data.dailyTopics, null, 4)},
+    seasonalCalendar: ${JSON.stringify(data.seasonalCalendar || [], null, 4)},
+    comparisonTopics: ${JSON.stringify(data.comparisonTopics || [], null, 4)},
+    solutionTopics: ${JSON.stringify(data.solutionTopics || [], null, 4)},
   },
 
   bot: {
@@ -222,30 +363,38 @@ export const config: SiteConfig = {
   }
 
   // Run generate scripts
-  console.log('\n🔧 Gerando arquivos derivados...');
+  console.log('\n🔧 Gerando arquivos derivados (CSS, manifest, i18n, config)...');
   const { execSync } = await import('child_process');
   try {
     execSync('npm run generate', { stdio: 'inherit', cwd: process.cwd() });
   } catch (e) {
-    console.log('⚠️ Falha ao gerar arquivos. Rode manualmente: npm run generate');
+    console.log('⚠️  Falha ao gerar arquivos. Rode manualmente: npm run generate');
   }
 
   console.log(`
 ╔══════════════════════════════════════════════════════════════╗
 ║  ✅ Setup completo!                                          ║
 ║                                                              ║
+║  Seu blog "${brandName}" está configurado.                   ║
+${aiData ? '║  🤖 CTAs, categorias e temas foram gerados com IA.          ║\n' : ''}║                                                              ║
 ║  Próximos passos:                                            ║
 ║  1. npm run dev — ver o blog localmente                      ║
-║  2. Edite site.config.ts para ajustar detalhes               ║
+║  2. Ajuste site.config.ts se precisar (features, social)     ║
 ║  3. Push para GitHub → Deploy automático no CF Pages         ║
-║  4. Configure os GitHub Secrets para ativar automações       ║
+║  4. Configure os GitHub Secrets:                             ║
 ║                                                              ║
-║  Secrets necessários:                                        ║
-║  - GROQ_API_KEY (geração de texto)                           ║
-║  - TOGETHER_API_KEY (geração de imagens)                     ║
-║  - SUPABASE_URL + SUPABASE_ANON_KEY (database)              ║
-║  - RESEND_API_KEY (emails)                                   ║
-║  - CLOUDFLARE_ACCOUNT_ID + CLOUDFLARE_AI_TOKEN (imagens)    ║
+║     Obrigatórios para automações:                            ║
+║     - GROQ_API_KEY (geração de texto)                        ║
+║     - TOGETHER_API_KEY (geração de imagens)                  ║
+║                                                              ║
+║     Opcionais:                                               ║
+║     - SUPABASE_URL + SUPABASE_ANON_KEY (database)           ║
+║     - RESEND_API_KEY (emails)                                ║
+║     - CF_ANALYTICS_TOKEN (analytics report)                  ║
+║                                                              ║
+║  5. Configure GitHub Repository Variables:                   ║
+║     - BOT_NAME = "${brandName} Bot"                          ║
+║     - BOT_EMAIL = "bot@${mainDomain}"                        ║
 ╚══════════════════════════════════════════════════════════════╝
 `);
 
