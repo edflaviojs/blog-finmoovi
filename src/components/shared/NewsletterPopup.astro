@@ -86,12 +86,14 @@
 
     window.addEventListener('scroll', function() {
       if (triggered) return;
-      var scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      var scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      var scrollPercent = (window.scrollY / scrollable) * 100;
       if (scrollPercent >= 75) showPopup();
     }, { passive: true });
 
-    // Fallback: show after 45s for short posts where scroll triggers may never fire
-    setTimeout(function() { if (!triggered) showPopup(); }, 45000);
+    // Fallback: show after 30s for short posts where scroll triggers may never fire
+    setTimeout(function() { if (!triggered) showPopup(); }, 30000);
 
     document.addEventListener('mouseout', function(e) {
       if (triggered) return;
