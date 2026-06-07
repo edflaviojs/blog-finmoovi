@@ -14,6 +14,10 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content, headings } = await post.render();
 
+const rawContent = post.body || '';
+const schemaMatch = rawContent.match(/<!-- SCHEMA_AUTO:([\s\S]*?) -->/);
+const autoSchema = schemaMatch ? schemaMatch[1] : null;
+
 const canonicalURL = new URL(`/en/posts/${post.slug}`, Astro.site).toString();
 
 // Find translated versions via translationKey or same date+category
@@ -70,6 +74,8 @@ if (esPost) alternates.es = `/es/posts/${esPost.slug}`;
     category={post.data.category}
     keywords={post.data.tags}
   />
+
+  {autoSchema && <script type="application/ld+json" set:html={autoSchema} />}
 
   <Content />
 </PostLayout>

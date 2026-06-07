@@ -1,0 +1,50 @@
+name: Post Comparação Semanal
+
+on:
+  schedule:
+    # Sextas-feiras às 9h BRT (12h UTC)
+    - cron: '0 12 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gerar-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gerar post de comparação
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/automacoes/gerar-post-comparacao.js
+
+      - name: Push changes
+        run: |
+          git pull --rebase origin main || true
+          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+            git push
+          else
+            echo "No changes to push"
+          fi

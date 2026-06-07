@@ -98,6 +98,24 @@ const { locale = 'pt' } = Astro.props;
   var content = document.querySelector('.post-content');
   if (!content) return;
 
+  // Track CTA clicks for A/B analysis
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.pic-btn');
+    if (!btn) return;
+    var cta = btn.closest('.post-inline-cta');
+    if (!cta) return;
+    var variant = cta.className.includes('full') ? 'full' : cta.className.includes('sidebar') ? 'sidebar' : 'compact';
+    var title = cta.querySelector('.pic-title,.pic-compact-title');
+    try {
+      navigator.sendBeacon('/api/cta-track', JSON.stringify({
+        variant: variant,
+        title: title ? title.textContent : '',
+        page: window.location.pathname,
+        ts: Date.now()
+      }));
+    } catch(e) {}
+  });
+
   var paragraphs = content.querySelectorAll(':scope > p');
   if (paragraphs.length < 4) return;
 

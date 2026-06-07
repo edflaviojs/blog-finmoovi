@@ -349,7 +349,8 @@ Responda EXATAMENTE neste formato:
     // Git commit & push
     console.log('📦 Fazendo commit...');
     execSync('git add -A', { stdio: 'inherit' });
-    execSync(`git commit -m "feat: post solução FinMoovi — ${title.substring(0, 50)}"`, { stdio: 'inherit' });
+    const safeTitle = title.substring(0, 50).replace(/"/g, '\\"').replace(/`/g, '');
+    execSync(`git commit -m "feat: post solução FinMoovi — ${safeTitle}"`, { stdio: 'inherit' });
     execSync('git push', { stdio: 'inherit' });
     console.log('🎉 Post publicado com sucesso!');
 

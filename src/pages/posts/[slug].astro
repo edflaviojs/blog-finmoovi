@@ -12,7 +12,12 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content, headings } = await post.render();
+const { Content, headings, remarkPluginFrontmatter } = await post.render();
+
+// Extract auto-generated schema from post body
+const rawContent = post.body || '';
+const schemaMatch = rawContent.match(/<!-- SCHEMA_AUTO:([\s\S]*?) -->/);
+const autoSchema = schemaMatch ? schemaMatch[1] : null;
 
 const canonicalURL = new URL(`/posts/${post.slug}`, Astro.site).toString();
 
@@ -70,6 +75,8 @@ if (esPost) alternates.es = `/es/posts/${esPost.slug}`;
     category={post.data.category}
     keywords={post.data.tags}
   />
+
+  {autoSchema && <script type="application/ld+json" set:html={autoSchema} />}
 
   <Content />
 </PostLayout>

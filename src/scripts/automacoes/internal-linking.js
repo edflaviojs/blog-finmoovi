@@ -1,6 +1,6 @@
 /**
- * Internal Linking: adiciona links para o glossário dentro dos posts
- * Identifica termos do glossário no texto e insere links automaticamente
+ * Internal Linking: adiciona links para o glossário E entre posts
+ * Identifica termos do glossário e posts relacionados no texto
  *
  * Uso: node src/scripts/automacoes/internal-linking.js
  * Seguro para re-executar: não duplica links existentes
@@ -41,21 +41,44 @@ function getGlossaryTerms(locale) {
     }
   }
 
-  // Sort by term length descending (link longer terms first to avoid partial matches)
   return terms.sort((a, b) => b.term.length - a.term.length);
 }
 
-function addLinksToBody(body, terms, maxLinks = 3) {
-  let linked = 0;
+function getPostLinks(locale, excludeSlug) {
+  const files = readdirSync(POSTS_DIR).filter(f => {
+    if (!f.endsWith('.md')) return false;
+    if (locale === 'pt') return !f.startsWith('en-') && !f.startsWith('es-');
+    return f.startsWith(`${locale}-`);
+  });
+
+  const posts = [];
+  for (const file of files) {
+    const slug = file.replace('.md', '');
+    if (slug === excludeSlug) continue;
+    const content = readFileSync(join(POSTS_DIR, file), 'utf-8');
+    const titleMatch = content.match(/^title:\s*"?([^"\n]+)"?/m);
+    const tagsMatch = content.match(/^tags:\s*\[([^\]]*)\]/m);
+    if (titleMatch) {
+      const title = titleMatch[1].trim().replace(/\\"/g, '"');
+      const tags = tagsMatch ? tagsMatch[1].replace(/"/g, '').split(',').map(t => t.trim()).filter(Boolean) : [];
+      const basePath = locale === 'pt' ? '' : `/${locale}`;
+      const baseSlug = locale === 'pt' ? slug : slug.replace(`${locale}-`, '');
+      posts.push({ title, slug: baseSlug, tags, url: `${basePath}/posts/${baseSlug}` });
+    }
+  }
+  return posts;
+}
+
+function addLinksToBody(body, terms, postLinks, maxGlossaryLinks = 3, maxPostLinks = 2) {
+  let glossaryLinked = 0;
+  let postLinked = 0;
   let result = body;
 
+  // Glossary links first
   for (const { term, url } of terms) {
-    if (linked >= maxLinks) break;
-
-    // Skip if this term is already linked in the body
+    if (glossaryLinked >= maxGlossaryLinks) break;
     if (result.includes(`(${url})`)) continue;
 
-    // Match term as whole word, case-insensitive, not inside markdown links or headings
     const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const regex = new RegExp(
       `(?<![\\[#])\\b(${escapedTerm})\\b(?![\\]\\(])`,
@@ -64,9 +87,29 @@ function addLinksToBody(body, terms, maxLinks = 3) {
 
     const match = result.match(regex);
     if (match) {
-      // Only link the first occurrence
       result = result.replace(regex, `[${match[1]}](${url})`);
-      linked++;
+      glossaryLinked++;
+    }
+  }
+
+  // Cross-post links (match post titles or key phrases from tags)
+  for (const post of postLinks) {
+    if (postLinked >= maxPostLinks) break;
+    if (result.includes(`(${post.url})`)) continue;
+
+    // Try to match significant tags (3+ chars) in the body
+    for (const tag of post.tags.filter(t => t.length >= 5)) {
+      const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(
+        `(?<![\\[#])\\b(${escapedTag})\\b(?![\\]\\(])`,
+        'i'
+      );
+      const match = result.match(regex);
+      if (match) {
+        result = result.replace(regex, `[${match[1]}](${post.url})`);
+        postLinked++;
+        break;
+      }
     }
   }
 
@@ -80,7 +123,7 @@ function getPostLocale(filename) {
 }
 
 function main() {
-  console.log('🔗 Adicionando internal links (glossário) nos posts...\n');
+  console.log('🔗 Adicionando internal links (glossário + posts) ...\n');
 
   const postFiles = readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
   let modified = 0;
@@ -100,10 +143,12 @@ function main() {
 
     const locale = getPostLocale(file);
     const terms = termsByLocale[locale];
+    const slug = file.replace('.md', '');
+    const postLinks = getPostLinks(locale, slug);
 
     if (!terms || terms.length === 0) continue;
 
-    const newBody = addLinksToBody(body, terms);
+    const newBody = addLinksToBody(body, terms, postLinks);
 
     if (newBody !== body) {
       writeFileSync(filePath, fm + newBody, 'utf-8');
