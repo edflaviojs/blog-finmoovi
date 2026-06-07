@@ -1,0 +1,48 @@
+name: Gerar Post Inteligente (Analytics-driven)
+
+on:
+  schedule:
+    # Terças às 7h BRT (10h UTC) — um dia após o relatório semanal
+    - cron: '0 10 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gerar-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gerar post baseado em analytics
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: node src/scripts/automacoes/gerar-post-inteligente.js
+
+      - name: Push changes
+        run: |
+          git pull --rebase origin main || true
+          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+            git push
+          else
+            echo "No changes to push"
+          fi

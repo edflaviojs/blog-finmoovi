@@ -1,0 +1,392 @@
+/**
+ * Gerador Inteligente de Posts Baseado em Analytics
+ * Usa dados do relatório semanal para gerar posts sobre temas que performam
+ * Executa após o relatório semanal (terças)
+ */
+
+import { generateText } from '../apis/kie-ai.js';
+import { writeFileSync, mkdirSync, existsSync, readFileSync, readdirSync } from 'fs';
+import { join } from 'path';
+import { execSync } from 'child_process';
+
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
+const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
+
+if (!GROQ_API_KEY) {
+  console.error('Missing GROQ_API_KEY');
+  process.exit(1);
+}
+
+/**
+ * Topics pool — dynamically prioritized based on analytics
+ * These are long-tail SEO keywords with high search volume in Brazil
+ */
+const TOPICS_BY_CATEGORY = {
+  high_traffic: [
+    'como investir 100 reais por mês e ter renda passiva',
+    'renda fixa vs renda variável: onde investir em 2026',
+    'como montar carteira de investimentos para iniciante',
+    'quanto rende 1000 reais no Tesouro Direto por mês',
+    'como usar cashback e cupons para economizar de verdade',
+    'como funciona o CDB e quanto ele rende',
+    'melhores investimentos para quem ganha pouco',
+    'como calcular quanto preciso para aposentar',
+    'como fazer seu dinheiro render mais que a poupança',
+    'como investir em dólar morando no Brasil',
+  ],
+  seasonal: {
+    0: ['metas financeiras para o ano novo: guia prático', 'como organizar finanças após as festas'],
+    1: ['como economizar no carnaval sem perder a diversão', 'imposto de renda 2026: documentos necessários'],
+    2: ['declaração imposto de renda passo a passo', 'como conseguir maior restituição do IR'],
+    3: ['como economizar na Páscoa com a família', 'revisão financeira do primeiro trimestre'],
+    4: ['presente dia das mães sem estourar orçamento', 'como investir o adiantamento do 13º'],
+    5: ['presente dia dos namorados econômico e criativo', 'meio do ano: hora de revisar seu orçamento'],
+    6: ['como economizar nas férias de julho', 'investimentos para o segundo semestre'],
+    7: ['presente dia dos pais com economia', 'como se preparar financeiramente para Black Friday'],
+    8: ['como aproveitar promoções de setembro', 'planejamento financeiro para o fim do ano'],
+    9: ['Black Friday: como preparar sua lista de compras', 'como não cair em falsas promoções'],
+    10: ['Black Friday: o que realmente vale a pena comprar', 'como financiar presentes de Natal sem dívidas'],
+    11: ['como controlar gastos no Natal e Réveillon', 'como investir o 13º salário', 'retrospectiva financeira do ano']
+  },
+  evergreen: [
+    'como sair do cheque especial de uma vez por todas',
+    'como criar um fundo de emergência do zero',
+    'como negociar aumento de salário com sucesso',
+    'como ensinar crianças sobre dinheiro por idade',
+    'como economizar morando sozinho pela primeira vez',
+    'como lidar com dinheiro em relacionamento',
+    'como reduzir conta de luz em até 40%',
+    'como fazer um planejamento financeiro para comprar imóvel',
+    'como identificar e eliminar gastos invisíveis',
+    'como usar a técnica dos envelopes digitais',
+    'PIX: golpes mais comuns e como se proteger',
+    'como viver bem gastando menos que seus amigos',
+    'como fazer orçamento doméstico em 15 minutos',
+    'como superar o medo de investir',
+    'como criar múltiplas fontes de renda',
+  ]
+};
+
+/**
+ * Read analytics report to determine topic priority
+ */
+function getAnalyticsInsights() {
+  const reportPath = join(process.cwd(), 'reports', 'latest.md');
+  if (!existsSync(reportPath)) {
+    console.log('ℹ️ Sem relatório de analytics — usando tópicos padrão');
+    return { topCategory: 'dicas', totalViews: 0 };
+  }
+
+  const report = readFileSync(reportPath, 'utf-8');
+
+  // Parse top pages to determine what category performs best
+  let topCategory = 'dicas';
+  if (report.includes('cotac') || report.includes('dolar') || report.includes('euro')) {
+    topCategory = 'cotacoes';
+  }
+  if (report.includes('investi') || report.includes('rend')) {
+    topCategory = 'investimentos';
+  }
+
+  const viewsMatch = report.match(/Total de Pageviews:\*\*\s*(\d+)/);
+  const totalViews = viewsMatch ? parseInt(viewsMatch[1]) : 0;
+
+  return { topCategory, totalViews };
+}
+
+/**
+ * Get existing post slugs to avoid duplicates
+ */
+function getExistingSlugs() {
+  if (!existsSync(POSTS_DIR)) return new Set();
+  return new Set(
+    readdirSync(POSTS_DIR)
+      .filter(f => f.endsWith('.md') || f.endsWith('.mdx'))
+      .map(f => f.replace(/\.(md|mdx)$/, '').toLowerCase())
+  );
+}
+
+/**
+ * Choose topic based on analytics + seasonality + gaps
+ */
+function chooseTopic(insights) {
+  const existingSlugs = getExistingSlugs();
+  const month = new Date().getMonth();
+
+  // Priority: seasonal > high_traffic (if category matches) > evergreen
+  let pool = [];
+
+  // Add seasonal topics first
+  const seasonalTopics = TOPICS_BY_CATEGORY.seasonal[month] || [];
+  pool.push(...seasonalTopics);
+
+  // Add high traffic topics
+  pool.push(...TOPICS_BY_CATEGORY.high_traffic);
+
+  // Add evergreen
+  pool.push(...TOPICS_BY_CATEGORY.evergreen);
+
+  // Filter out already written topics (check by slug similarity)
+  const available = pool.filter(topic => {
+    const slug = topic
+      .toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '')
+      .slice(0, 60);
+
+    // Check if any existing slug contains key parts of this topic
+    const keywords = slug.split('-').filter(w => w.length > 3).slice(0, 3);
+    return !Array.from(existingSlugs).some(existing =>
+      keywords.every(kw => existing.includes(kw))
+    );
+  });
+
+  if (available.length === 0) {
+    console.log('⚠️ Todos os tópicos já foram cobertos. Usando evergreen aleatório.');
+    return TOPICS_BY_CATEGORY.evergreen[Math.floor(Math.random() * TOPICS_BY_CATEGORY.evergreen.length)];
+  }
+
+  // Pick first available (already prioritized)
+  return available[0];
+}
+
+/**
+ * Generate post via Groq
+ */
+async function generatePost(topic) {
+  const prompt = `Você é um redator especialista em finanças pessoais para o blog FinMoovi.
+Escreva um artigo completo e profissional sobre: "${topic}"
+
+REGRAS:
+- Título criativo e otimizado para SEO (máximo 65 caracteres)
+- Meta description (máximo 155 caracteres)
+- 5-7 keywords relevantes separadas por vírgula
+- Conteúdo com 800-1200 palavras
+- Use headers H2 e H3 para estruturar
+- Inclua exemplos práticos com números reais (salários brasileiros)
+- Tom conversacional mas profissional
+- Mencione o app FinMoovi naturalmente 1-2 vezes como ferramenta útil
+- Termine com uma conclusão motivacional
+- NÃO use emojis no conteúdo (exceto em listas de dicas se fizer sentido)
+- NÃO invente estatísticas falsas — use dados gerais conhecidos
+
+Responda EXATAMENTE neste formato:
+---TITULO---
+[título aqui]
+---META---
+[meta description]
+---KEYWORDS---
+[keywords separadas por vírgula]
+---CONTEUDO---
+[conteúdo markdown completo]`;
+
+  const response = await generateText(prompt);
+  return response;
+}
+
+/**
+ * Parse AI response into structured post
+ */
+function parseResponse(response) {
+  const titleMatch = response.match(/---TITULO---\n(.+)/);
+  const metaMatch = response.match(/---META---\n(.+)/);
+  const keywordsMatch = response.match(/---KEYWORDS---\n(.+)/);
+  const contentMatch = response.match(/---CONTEUDO---\n([\s\S]+)/);
+
+  if (!titleMatch || !contentMatch) {
+    throw new Error('Failed to parse AI response');
+  }
+
+  return {
+    title: titleMatch[1].trim().replace(/^["']|["']$/g, ''),
+    description: (metaMatch ? metaMatch[1].trim() : '').replace(/^["']|["']$/g, ''),
+    keywords: keywordsMatch ? keywordsMatch[1].split(',').map(k => k.trim()) : [],
+    content: contentMatch[1].trim()
+  };
+}
+
+/**
+ * Generate slug from title
+ */
+function slugify(title) {
+  return title
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 60);
+}
+
+/**
+ * Generate a simple SVG cover image
+ */
+function generateCover(title, slug) {
+  const colors = [
+    { bg: '#1a1a2e', accent: '#00F0FF' },
+    { bg: '#16213e', accent: '#A91079' },
+    { bg: '#0f3460', accent: '#00F0FF' },
+    { bg: '#1b1b2f', accent: '#e94560' },
+  ];
+  const color = colors[Math.floor(Math.random() * colors.length)];
+
+  // Wrap title for SVG
+  const words = title.split(' ');
+  const lines = [];
+  let current = '';
+  for (const word of words) {
+    if ((current + ' ' + word).length > 28) {
+      lines.push(current.trim());
+      current = word;
+    } else {
+      current += ' ' + word;
+    }
+  }
+  if (current.trim()) lines.push(current.trim());
+
+  const textY = 180 - (lines.length * 20);
+  const textElements = lines.map((line, i) =>
+    `<text x="400" y="${textY + i * 44}" text-anchor="middle" fill="#f0f6fc" font-family="Inter, sans-serif" font-size="32" font-weight="700">${line}</text>`
+  ).join('\n    ');
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="${color.bg}"/>
+  <rect x="0" y="0" width="800" height="4" fill="${color.accent}" opacity="0.8"/>
+  <circle cx="650" cy="100" r="200" fill="${color.accent}" opacity="0.05"/>
+  <circle cx="150" cy="350" r="150" fill="${color.accent}" opacity="0.03"/>
+  <g>
+    ${textElements}
+  </g>
+  <text x="400" y="${textY + lines.length * 44 + 30}" text-anchor="middle" fill="${color.accent}" font-family="Inter, sans-serif" font-size="14" font-weight="600">FinMoovi Blog</text>
+</svg>`;
+
+  const imgDir = join(IMAGES_DIR);
+  if (!existsSync(imgDir)) mkdirSync(imgDir, { recursive: true });
+
+  const imgPath = join(imgDir, `${slug}.svg`);
+  writeFileSync(imgPath, svg);
+  return `/images/posts/${slug}.svg`;
+}
+
+/**
+ * Translate post
+ */
+async function translatePost(post, targetLang) {
+  const langNames = { en: 'English', es: 'Spanish' };
+  const langName = langNames[targetLang];
+
+  const prompt = `Translate the following blog post to ${langName}. Keep same tone and style.
+Do NOT translate brand names (FinMoovi). Keep markdown formatting intact.
+
+Respond in this exact format:
+---TITULO---
+[translated title]
+---META---
+[translated meta description]
+---KEYWORDS---
+[translated keywords, comma separated]
+---CONTEUDO---
+[translated content in markdown]
+
+Original post:
+Title: ${post.title}
+Content:
+${post.content}`;
+
+  const response = await generateText(prompt);
+  return parseResponse(response);
+}
+
+/**
+ * Create frontmatter and save post file
+ */
+function savePost(post, slug, locale, imagePath) {
+  const date = new Date().toISOString().split('T')[0];
+  const translationKey = slug;
+  const localeSlug = locale === 'pt' ? slug : `${locale}-${slug}`;
+
+  const frontmatter = `---
+title: "${post.title.replace(/"/g, '\\"')}"
+description: "${post.description.replace(/"/g, '\\"')}"
+image: "${imagePath}"
+category: "dicas"
+tags:
+${post.keywords.slice(0, 5).map(k => `  - "${k.trim()}"`).join('\n')}
+author: "FinMoovi"
+publishedAt: ${date}
+locale: "${locale}"
+translationKey: "${translationKey}"
+featured: false
+draft: false
+translate: true
+---
+
+${post.content}
+`;
+
+  if (!existsSync(POSTS_DIR)) mkdirSync(POSTS_DIR, { recursive: true });
+  writeFileSync(join(POSTS_DIR, `${localeSlug}.md`), frontmatter);
+  console.log(`  ✅ Salvo: ${localeSlug}.md (${locale})`);
+}
+
+/**
+ * Main execution
+ */
+async function main() {
+  console.log('🤖 Gerador Inteligente de Posts (baseado em Analytics)\n');
+
+  // 1. Read analytics insights
+  const insights = getAnalyticsInsights();
+  console.log(`📊 Insights: categoria top = ${insights.topCategory}, views = ${insights.totalViews}`);
+
+  // 2. Choose topic
+  const topic = chooseTopic(insights);
+  console.log(`📝 Tópico escolhido: "${topic}"\n`);
+
+  // 3. Generate post in PT
+  console.log('🇧🇷 Gerando post em português...');
+  const response = await generatePost(topic);
+  const post = parseResponse(response);
+  const slug = slugify(post.title);
+  console.log(`  Título: ${post.title}`);
+
+  // 4. Generate cover image
+  const imagePath = generateCover(post.title, slug);
+  console.log(`  Imagem: ${imagePath}`);
+
+  // 5. Save PT version
+  savePost(post, slug, 'pt', imagePath);
+
+  // 6. Translate and save EN
+  console.log('🇺🇸 Traduzindo para inglês...');
+  try {
+    const enPost = await translatePost(post, 'en');
+    savePost(enPost, slug, 'en', imagePath);
+  } catch (e) {
+    console.log('  ⚠️ Falha na tradução EN:', e.message);
+  }
+
+  // 7. Translate and save ES
+  console.log('🇪🇸 Traduzindo para espanhol...');
+  try {
+    const esPost = await translatePost(post, 'es');
+    savePost(esPost, slug, 'es', imagePath);
+  } catch (e) {
+    console.log('  ⚠️ Falha na tradução ES:', e.message);
+  }
+
+  // 8. Git commit
+  try {
+    execSync('git add src/content/posts/ public/images/posts/', { stdio: 'pipe' });
+    execSync(`git commit -m "post: ${post.title} (analytics-driven)"`, { stdio: 'pipe' });
+    console.log('\n✅ Post commitado com sucesso!');
+  } catch (e) {
+    console.log('\nℹ️ Nenhuma mudança para commitar');
+  }
+}
+
+main().catch(err => {
+  console.error('Erro:', err);
+  process.exit(1);
+});
