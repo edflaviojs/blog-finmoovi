@@ -159,7 +159,7 @@ const categoryLabels: Record<string, string> = {
             <!-- Main Featured Post -->
             <a href={heroContent.href} class="hero-main">
               <div class="hero-main-image">
-                {heroContent.image && <img src={heroContent.image} alt="" loading="eager" />}
+                {heroContent.image && <img src={heroContent.image} alt={heroContent.title} loading="eager" width="800" height="450" fetchpriority="high" />}
                 <div class="hero-main-overlay"></div>
               </div>
               <div class="hero-main-content">
@@ -181,7 +181,7 @@ const categoryLabels: Record<string, string> = {
                 <a href={card.href} class="hero-secondary-card">
                   <div class="hero-secondary-image">
                     {card.image ? (
-                      <img src={card.image} alt="" loading="eager" />
+                      <img src={card.image} alt={card.title} loading="lazy" width="400" height="225" />
                     ) : (
                       <div class={`hero-secondary-placeholder hero-placeholder-${card.type}`}></div>
                     )}
@@ -374,7 +374,7 @@ const categoryLabels: Record<string, string> = {
   }
 
   .hero-placeholder-cotacao {
-    background: linear-gradient(135deg, #3fb950 0%, #58a6ff 100%);
+    background: linear-gradient(135deg, #00F0FF 0%, #A91079 100%);
   }
 
   .hero-placeholder-glossario {

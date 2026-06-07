@@ -92,18 +92,37 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage} />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Fonts (self-hosted for performance) -->
+  <link rel="preload" href="/fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/inter-latin-700.woff2" as="font" type="font/woff2" crossorigin />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="FinMoovi Blog (PT)" href="/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title="FinMoovi Blog (EN)" href="/en/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title="FinMoovi Blog (ES)" href="/es/rss.xml" />
+
   <!-- PWA -->
   <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#0d1117" />
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FinMoovi",
+    "url": "https://finmoovi.com",
+    "logo": "https://blog.finmoovi.com/images/og-default.png",
+    "sameAs": [
+      "https://blog.finmoovi.com"
+    ],
+    "description": "App de finanças pessoais multi-moeda, offline e inteligente."
+  }
+  </script>
 
   <!-- Theme (must load before body to prevent flash) -->
   <script is:inline src="/scripts/theme.js"></script>
@@ -111,5 +130,7 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
 <body>
   <slot />
   <script is:inline src="/scripts/i18n.js" defer></script>
+  <!-- Cloudflare Web Analytics -->
+  <script is:inline defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "CLOUDFLARE_ANALYTICS_TOKEN"}'></script>
 </body>
 </html>

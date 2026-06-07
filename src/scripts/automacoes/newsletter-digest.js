@@ -135,7 +135,7 @@ function buildDigestHTML(posts, glossaryPosts, lang, email) {
       ${renderSection(t.quotesTitle, quotes, 'post')}
       ${renderSection(t.glossaryTitle, glossaryPosts, 'glossario')}
       <div style="text-align:center;margin-top:32px;">
-        <a href="https://blog.finmoovi.com${basePath}" style="display:inline-block;padding:12px 32px;background:linear-gradient(135deg,#3fb950,#58a6ff);color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">Ver tudo no blog</a>
+        <a href="https://blog.finmoovi.com${basePath}" style="display:inline-block;padding:12px 32px;background:linear-gradient(135deg,#00F0FF,#A91079);color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">Ver tudo no blog</a>
       </div>
       <p style="color:#6e7681;font-size:11px;text-align:center;margin-top:24px;">
         ${t.unsub} <a href="https://blog.finmoovi.com/api/unsubscribe?email=${encodeURIComponent(email)}" style="color:#58a6ff;">${t.unsubLink}</a>

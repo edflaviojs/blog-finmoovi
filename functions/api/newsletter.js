@@ -173,7 +173,7 @@ function getWelcomeEmailHTML(email, lang = 'pt') {
         <p style="color:#f0f6fc;font-size:14px;margin-bottom:8px;font-weight:600;">${t.listTitle}</p>
         <p style="color:#8b949e;font-size:14px;line-height:1.8;margin:0;">${t.items}</p>
       </div>
-      <a href="https://finmoovi.com" style="display:inline-block;padding:12px 32px;background:linear-gradient(135deg,#3fb950,#58a6ff);color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">${t.cta}</a>
+      <a href="https://finmoovi.com" style="display:inline-block;padding:12px 32px;background:linear-gradient(135deg,#00F0FF,#A91079);color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">${t.cta}</a>
       <p style="color:#6e7681;font-size:12px;margin-top:24px;">
         ${t.unsub} <a href="https://blog.finmoovi.com/api/unsubscribe?email=${encodeURIComponent(email)}" style="color:#58a6ff;">${t.unsubLink}</a>
       </p>
@@ -316,7 +316,7 @@ function getLeadMagnetEmailHTML(email, lang, source) {
       </div>
       <p style="color:#3fb950;font-size:13px;font-style:italic;margin-bottom:24px;padding:12px;background:rgba(63,185,80,0.08);border-radius:6px;">${c.bonus}</p>
       <div style="text-align:center;">
-        <a href="https://finmoovi.com" style="display:inline-block;padding:12px 32px;background:linear-gradient(135deg,#3fb950,#58a6ff);color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">${c.cta}</a>
+        <a href="https://finmoovi.com" style="display:inline-block;padding:12px 32px;background:linear-gradient(135deg,#00F0FF,#A91079);color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">${c.cta}</a>
       </div>
       <p style="color:#6e7681;font-size:11px;margin-top:24px;text-align:center;">
         <a href="https://blog.finmoovi.com/api/unsubscribe?email=${encodeURIComponent(email)}" style="color:#58a6ff;">Cancelar inscrição</a>

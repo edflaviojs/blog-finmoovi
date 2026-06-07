@@ -140,8 +140,8 @@ const { locale = 'pt' } = Astro.props;
   .post-inline-cta {
     margin: 2.5rem 0;
     padding: 1.5rem;
-    background: linear-gradient(145deg, #161b22, #21262d);
-    border: 1px solid #30363d;
+    background: var(--gradient-card);
+    border: 1px solid var(--border-default);
     border-radius: 12px;
     position: relative;
     overflow: hidden;
@@ -161,7 +161,7 @@ const { locale = 'pt' } = Astro.props;
     display: inline-block;
     padding: 2px 10px;
     background: rgba(63, 185, 80, 0.15);
-    color: #3fb950;
+    color: var(--accent-green);
     border-radius: 9999px;
     font-size: 0.7rem;
     font-weight: 600;
@@ -169,7 +169,7 @@ const { locale = 'pt' } = Astro.props;
   }
 
   .pic-title {
-    color: #f0f6fc;
+    color: var(--text-primary);
     font-size: 1.1rem;
     font-weight: 700;
     margin: 0 0 0.5rem;
@@ -177,7 +177,7 @@ const { locale = 'pt' } = Astro.props;
   }
 
   .pic-desc {
-    color: #8b949e;
+    color: var(--text-secondary);
     font-size: 0.88rem;
     line-height: 1.5;
     margin: 0 0 1rem;
@@ -226,8 +226,8 @@ const { locale = 'pt' } = Astro.props;
   .pic-sidebar-box {
     width: 160px;
     min-width: 160px;
-    background: linear-gradient(145deg, #161b22, #21262d);
-    border: 1px solid #30363d;
+    background: var(--gradient-card);
+    border: 1px solid var(--border-default);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -278,7 +278,7 @@ const { locale = 'pt' } = Astro.props;
 
   .pic-compact-title {
     flex: 1;
-    color: #f0f6fc;
+    color: var(--text-primary);
     font-size: 0.95rem;
     font-weight: 600;
     min-width: 200px;
