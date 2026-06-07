@@ -4,7 +4,7 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import Sidebar from '@components/sidebar/Sidebar.astro';
 import BannerFinMoovi from '@components/banners/BannerFinMoovi.astro';
-import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import PostInlineCTAs from '@components/banners/PostInlineCTAs.astro';
 import ShareButtons from '@components/shared/ShareButtons.astro';
 import Breadcrumbs from '@components/shared/Breadcrumbs.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
@@ -105,7 +105,7 @@ const schemaBreadcrumbItems = [
             <slot />
           </div>
 
-          <InlineAppCTA variant="full" locale={locale} />
+          <PostInlineCTAs locale={locale} />
 
           <div class="post-share-bottom">
             <ShareButtons title={title} url={postUrl} />
