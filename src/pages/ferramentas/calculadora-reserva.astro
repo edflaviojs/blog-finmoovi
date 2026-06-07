@@ -1,0 +1,396 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Ferramentas', url: '/ferramentas' },
+  { name: 'Calculadora de Reserva de Emergência', url: '/ferramentas/calculadora-reserva' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto devo ter na reserva de emergência?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O ideal é ter entre 3 a 12 meses de gastos essenciais. Trabalhadores CLT podem ter 3-6 meses, enquanto autônomos e empreendedores devem guardar 6-12 meses por terem renda menos previsível." }
+    },
+    {
+      "@type": "Question",
+      "name": "Onde guardar a reserva de emergência?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Em investimentos de alta liquidez e baixo risco: CDB com liquidez diária (100% CDI), Tesouro Selic, ou conta remunerada. O importante é poder sacar a qualquer momento sem perder dinheiro." }
+    },
+    {
+      "@type": "Question",
+      "name": "Reserva de emergência e poupança são a mesma coisa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não. A poupança rende menos que a inflação na maioria dos cenários. A reserva de emergência deve estar em investimentos que rendam pelo menos 100% do CDI com liquidez diária." }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Calculadora de Reserva de Emergência Grátis"
+  description="Descubra quanto você precisa na sua reserva de emergência. Calculadora gratuita que considera seu perfil profissional, gastos mensais e tempo para atingir a meta."
+  keywords={['reserva de emergência', 'calculadora reserva', 'fundo de emergência', 'quanto guardar', 'planejamento financeiro', 'segurança financeira']}
+>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <Header />
+
+  <main class="tool-page">
+    <div class="container">
+      <header class="tool-header">
+        <nav class="tool-breadcrumb">
+          <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Reserva de Emergência</span>
+        </nav>
+        <h1>Calculadora de Reserva de Emergência</h1>
+        <p class="tool-subtitle">Descubra quanto você precisa guardar para ter segurança financeira e em quanto tempo pode atingir essa meta.</p>
+      </header>
+
+      <div class="calculator-layout">
+        <div class="calculator-form">
+          <div class="form-group">
+            <label for="expenses">Gastos essenciais mensais (R$)</label>
+            <input type="number" id="expenses" value="3500" min="0" step="100" />
+            <span class="form-hint">Aluguel, contas, alimentação, transporte, saúde</span>
+          </div>
+          <div class="form-group">
+            <label for="profile">Perfil profissional</label>
+            <select id="profile">
+              <option value="clt">CLT (empregado formal)</option>
+              <option value="autonomo">Autônomo / Freelancer</option>
+              <option value="empreendedor">Empreendedor</option>
+              <option value="servidor">Servidor Público</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="monthly-save">Quanto pode guardar por mês (R$)</label>
+            <input type="number" id="monthly-save" value="500" min="0" step="50" />
+          </div>
+          <div class="form-group">
+            <label for="current-reserve">Já tem guardado (R$)</label>
+            <input type="number" id="current-reserve" value="0" min="0" step="100" />
+          </div>
+          <button class="calc-btn" id="calc-btn">Calcular Reserva</button>
+        </div>
+
+        <div class="calculator-results" id="results" style="display:none;">
+          <div class="reserve-cards">
+            <div class="reserve-card minimum">
+              <span class="reserve-label">Mínimo Recomendado</span>
+              <span class="reserve-months" id="r-min-months">3 meses</span>
+              <span class="reserve-value" id="r-min-value">R$ 0</span>
+            </div>
+            <div class="reserve-card ideal">
+              <span class="reserve-label">Ideal para seu perfil</span>
+              <span class="reserve-months" id="r-ideal-months">6 meses</span>
+              <span class="reserve-value" id="r-ideal-value">R$ 0</span>
+              <span class="reserve-badge">Recomendado</span>
+            </div>
+            <div class="reserve-card comfortable">
+              <span class="reserve-label">Confortável</span>
+              <span class="reserve-months" id="r-max-months">12 meses</span>
+              <span class="reserve-value" id="r-max-value">R$ 0</span>
+            </div>
+          </div>
+
+          <div class="progress-section">
+            <h3>Seu progresso</h3>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progress-fill"></div>
+              <div class="progress-marker" id="progress-marker-min" title="Mínimo"></div>
+              <div class="progress-marker" id="progress-marker-ideal" title="Ideal"></div>
+            </div>
+            <div class="progress-labels">
+              <span>R$ 0</span>
+              <span id="progress-current-label">Você: R$ 0</span>
+              <span id="progress-goal-label">Meta: R$ 0</span>
+            </div>
+          </div>
+
+          <div class="timeline-section" id="timeline-section">
+            <h3>Tempo para atingir a meta</h3>
+            <div class="timeline-result" id="timeline-result"></div>
+          </div>
+
+          <div class="tips-section">
+            <h3>Onde guardar sua reserva</h3>
+            <div class="tips-grid">
+              <div class="tip-card">
+                <span class="tip-icon">🏦</span>
+                <strong>CDB Liquidez Diária</strong>
+                <span>100% CDI, resgate imediato</span>
+              </div>
+              <div class="tip-card">
+                <span class="tip-icon">📈</span>
+                <strong>Tesouro Selic</strong>
+                <span>Governo federal, D+1</span>
+              </div>
+              <div class="tip-card">
+                <span class="tip-icon">💳</span>
+                <strong>Conta Remunerada</strong>
+                <span>Nubank, PicPay, 99Pay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <InlineAppCTA variant="full" locale="pt" />
+
+      <section class="tool-faq">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+          <summary>Quanto devo ter na reserva de emergência?</summary>
+          <p>O ideal é ter entre <strong>3 a 12 meses</strong> de gastos essenciais. Trabalhadores CLT podem ter 3-6 meses, enquanto autônomos e empreendedores devem guardar 6-12 meses por terem renda menos previsível.</p>
+        </details>
+        <details>
+          <summary>Onde guardar a reserva de emergência?</summary>
+          <p>Em investimentos de <strong>alta liquidez e baixo risco</strong>: CDB com liquidez diária (100% CDI), Tesouro Selic, ou conta remunerada. O importante é poder sacar a qualquer momento sem perder dinheiro.</p>
+        </details>
+        <details>
+          <summary>Reserva de emergência e poupança são a mesma coisa?</summary>
+          <p>Não. A poupança rende menos que a inflação na maioria dos cenários. A reserva deve estar em investimentos que rendam pelo menos <strong>100% do CDI</strong> com liquidez diária.</p>
+        </details>
+        <details>
+          <summary>Posso usar a reserva para investir?</summary>
+          <p>Não. A reserva é exclusivamente para emergências (desemprego, doença, conserto urgente). Só depois de montá-la completa você deve começar a investir em ativos de maior risco.</p>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script>
+  const profiles = {
+    clt: { min: 3, ideal: 6, max: 9 },
+    autonomo: { min: 6, ideal: 9, max: 12 },
+    empreendedor: { min: 6, ideal: 12, max: 18 },
+    servidor: { min: 3, ideal: 4, max: 6 }
+  };
+
+  function formatCurrency(value) {
+    return 'R$ ' + value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function calculate() {
+    const expenses = parseFloat(document.getElementById('expenses').value) || 0;
+    const profile = document.getElementById('profile').value;
+    const monthlySave = parseFloat(document.getElementById('monthly-save').value) || 0;
+    const currentReserve = parseFloat(document.getElementById('current-reserve').value) || 0;
+
+    const p = profiles[profile];
+    const minValue = expenses * p.min;
+    const idealValue = expenses * p.ideal;
+    const maxValue = expenses * p.max;
+
+    document.getElementById('r-min-months').textContent = p.min + ' meses';
+    document.getElementById('r-min-value').textContent = formatCurrency(minValue);
+    document.getElementById('r-ideal-months').textContent = p.ideal + ' meses';
+    document.getElementById('r-ideal-value').textContent = formatCurrency(idealValue);
+    document.getElementById('r-max-months').textContent = p.max + ' meses';
+    document.getElementById('r-max-value').textContent = formatCurrency(maxValue);
+
+    const progressPercent = Math.min((currentReserve / idealValue) * 100, 100);
+    document.getElementById('progress-fill').style.width = progressPercent + '%';
+    document.getElementById('progress-current-label').textContent = 'Você: ' + formatCurrency(currentReserve);
+    document.getElementById('progress-goal-label').textContent = 'Meta: ' + formatCurrency(idealValue);
+
+    const minPercent = (minValue / idealValue) * 100;
+    document.getElementById('progress-marker-min').style.left = minPercent + '%';
+
+    const remaining = idealValue - currentReserve;
+    const timelineEl = document.getElementById('timeline-result');
+    if (remaining <= 0) {
+      timelineEl.innerHTML = '<span class="timeline-success">🎉 Parabéns! Você já atingiu sua meta ideal de reserva!</span>';
+    } else if (monthlySave <= 0) {
+      timelineEl.innerHTML = '<span class="timeline-warn">Defina quanto pode guardar por mês para ver o tempo estimado.</span>';
+    } else {
+      const months = Math.ceil(remaining / monthlySave);
+      const years = Math.floor(months / 12);
+      const remainMonths = months % 12;
+      let timeText = '';
+      if (years > 0) timeText += years + (years === 1 ? ' ano' : ' anos');
+      if (years > 0 && remainMonths > 0) timeText += ' e ';
+      if (remainMonths > 0) timeText += remainMonths + (remainMonths === 1 ? ' mês' : ' meses');
+      timelineEl.innerHTML =
+        '<span class="timeline-time">' + timeText + '</span>' +
+        '<span class="timeline-detail">Guardando ' + formatCurrency(monthlySave) + '/mês, faltam ' + formatCurrency(remaining) + '</span>';
+    }
+
+    document.getElementById('results').style.display = 'block';
+  }
+
+  document.getElementById('calc-btn').addEventListener('click', calculate);
+  document.querySelectorAll('#expenses, #monthly-save, #current-reserve').forEach(function(el) {
+    el.addEventListener('keyup', function(e) { if (e.key === 'Enter') calculate(); });
+  });
+  document.getElementById('profile').addEventListener('change', calculate);
+  calculate();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-breadcrumb { font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; }
+  .tool-breadcrumb a { color: var(--text-link); text-decoration: none; }
+  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; }
+  .tool-subtitle { color: var(--text-secondary); font-size: 1rem; }
+
+  .calculator-layout { display: grid; gap: 2rem; margin-bottom: 2rem; }
+  .calculator-form {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+  .form-group label { color: var(--text-secondary); font-size: 0.85rem; font-weight: 500; }
+  .form-group input, .form-group select {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 0.8rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+  }
+  .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--accent-primary); }
+  .form-hint { font-size: 0.72rem; color: var(--text-tertiary); }
+  .calc-btn {
+    grid-column: 1 / -1;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .calc-btn:hover { transform: translateY(-1px); }
+
+  .calculator-results {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+
+  .reserve-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+  .reserve-card {
+    background: var(--bg-tertiary);
+    border-radius: 10px;
+    padding: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    border-top: 3px solid transparent;
+    position: relative;
+  }
+  .reserve-card.minimum { border-top-color: #58a6ff; }
+  .reserve-card.ideal { border-top-color: #3fb950; }
+  .reserve-card.comfortable { border-top-color: #bc8cff; }
+  .reserve-label { font-size: 0.75rem; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.04em; }
+  .reserve-months { font-size: 1.4rem; font-weight: 800; color: var(--text-primary); }
+  .reserve-value { font-size: 1.1rem; font-weight: 700; color: var(--text-primary); }
+  .reserve-badge {
+    position: absolute;
+    top: -1px;
+    right: 8px;
+    background: #3fb950;
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 0 0 6px 6px;
+    text-transform: uppercase;
+  }
+
+  .progress-section { margin-bottom: 1.5rem; }
+  .progress-section h3 { color: var(--text-primary); font-size: 1rem; margin-bottom: 0.75rem; }
+  .progress-bar {
+    position: relative;
+    height: 14px;
+    background: var(--bg-tertiary);
+    border-radius: 7px;
+    overflow: visible;
+    margin-bottom: 0.5rem;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #00F0FF, #3fb950);
+    border-radius: 7px;
+    transition: width 0.5s;
+  }
+  .progress-marker {
+    position: absolute;
+    top: -3px;
+    width: 3px;
+    height: 20px;
+    background: var(--text-tertiary);
+    border-radius: 2px;
+    transform: translateX(-50%);
+  }
+  .progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+  }
+
+  .timeline-section { margin-bottom: 1.5rem; background: var(--bg-tertiary); border-radius: 10px; padding: 1.2rem; }
+  .timeline-section h3 { color: var(--text-primary); font-size: 1rem; margin-bottom: 0.75rem; }
+  .timeline-result { display: flex; flex-direction: column; gap: 0.3rem; }
+  .timeline-time { font-size: 1.5rem; font-weight: 800; color: var(--accent-primary); }
+  .timeline-detail { font-size: 0.85rem; color: var(--text-secondary); }
+  .timeline-success { font-size: 1.1rem; font-weight: 600; color: #3fb950; }
+  .timeline-warn { font-size: 0.9rem; color: var(--text-tertiary); }
+
+  .tips-section h3 { color: var(--text-primary); font-size: 1rem; margin-bottom: 0.75rem; }
+  .tips-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+  .tip-card {
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    text-align: center;
+  }
+  .tip-icon { font-size: 1.5rem; }
+  .tip-card strong { font-size: 0.82rem; color: var(--text-primary); }
+  .tip-card span { font-size: 0.72rem; color: var(--text-tertiary); }
+
+  .tool-faq { margin-top: 2rem; }
+  .tool-faq h2 { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; }
+  .tool-faq details {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
+  .tool-faq summary { color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.95rem; }
+  .tool-faq details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+
+  @media (max-width: 640px) {
+    .calculator-form { grid-template-columns: 1fr; }
+    .reserve-cards { grid-template-columns: 1fr; }
+    .tips-grid { grid-template-columns: 1fr; }
+  }
+</style>

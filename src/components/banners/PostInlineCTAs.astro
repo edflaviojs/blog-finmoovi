@@ -147,6 +147,16 @@ const { locale = 'pt' } = Astro.props;
     overflow: hidden;
   }
 
+  :root[data-theme="light"] .post-inline-cta {
+    background: linear-gradient(145deg, #f0f1f4 0%, #e8eaed 100%);
+    border-color: #d0d7de;
+  }
+
+  :root[data-theme="light"] .pic-sidebar-box {
+    background: linear-gradient(145deg, #f0f1f4 0%, #e8eaed 100%);
+    border-color: #d0d7de;
+  }
+
   .post-inline-cta::before {
     content: '';
     position: absolute;

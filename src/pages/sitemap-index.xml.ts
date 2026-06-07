@@ -31,6 +31,7 @@ export const GET: APIRoute = async () => {
     { url: '/ferramentas/calculadora-orcamento', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/ferramentas/conversor-moedas', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/ferramentas/simulador-investimento', priority: '0.8', changefreq: 'monthly', lastmod: today },
+    { url: '/ferramentas/calculadora-reserva', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/categorias/dicas', priority: '0.7', changefreq: 'daily', lastmod: today },
     { url: '/categorias/orcamento', priority: '0.7', changefreq: 'weekly', lastmod: today },
     { url: '/categorias/cotacoes', priority: '0.7', changefreq: 'weekly', lastmod: today },
