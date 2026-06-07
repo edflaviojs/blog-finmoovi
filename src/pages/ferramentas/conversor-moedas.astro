@@ -106,7 +106,7 @@ const faqSchema = {
         <h2>Perguntas Frequentes</h2>
         <details>
           <summary>De onde vêm as cotações?</summary>
-          <p>As cotações são obtidas de APIs públicas de câmbio e refletem a taxa comercial. Para operações bancárias, consulte seu banco — o spread pode variar.</p>
+          <p>As cotações são obtidas da AwesomeAPI (mesma fonte do ticker no topo do blog) e refletem a taxa comercial em tempo real. Para operações bancárias, consulte seu banco — o spread pode variar.</p>
         </details>
         <details>
           <summary>Com que frequência as cotações são atualizadas?</summary>
@@ -128,12 +128,23 @@ const faqSchema = {
 
   async function fetchRates() {
     try {
-      const res = await fetch('https://api.exchangerate-api.com/v4/latest/BRL');
+      // Mesma API do ticker (AwesomeAPI) para consistência de valores
+      const res = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,GBP-BRL,ARS-BRL,BTC-BRL');
+      if (!res.ok) throw new Error('API error');
       const data = await res.json();
-      rates = data.rates;
+
+      // AwesomeAPI retorna cotações em relação ao BRL (quanto 1 USD vale em BRL, etc.)
       rates.BRL = 1;
+      if (data.USDBRL) rates.USD = 1 / parseFloat(data.USDBRL.bid);
+      if (data.EURBRL) rates.EUR = 1 / parseFloat(data.EURBRL.bid);
+      if (data.GBPBRL) rates.GBP = 1 / parseFloat(data.GBPBRL.bid);
+      if (data.ARSBRL) rates.ARS = 1 / parseFloat(data.ARSBRL.bid);
+      if (data.BTCBRL) rates.BTC = 1 / parseFloat(data.BTCBRL.bid);
+
       updateRatesTable();
       convert();
+      document.getElementById('result-updated').textContent =
+        'Fonte: AwesomeAPI · Atualizado: ' + new Date().toLocaleString('pt-BR');
     } catch (e) {
       document.getElementById('result-rate').textContent = 'Erro ao carregar cotações. Tente novamente.';
     }
@@ -161,8 +172,6 @@ const faqSchema = {
       `${formatNumber(amount)} ${from} = ${formatNumber(result)} ${to}`;
     document.getElementById('result-rate').textContent =
       `1 ${from} = ${formatNumber(rates[to] / rates[from])} ${to}`;
-    document.getElementById('result-updated').textContent =
-      `Atualizado: ${new Date().toLocaleString('pt-BR')}`;
   }
 
   function updateRatesTable() {
