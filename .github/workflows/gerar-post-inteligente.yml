@@ -42,6 +42,9 @@ jobs:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         run: node src/scripts/automacoes/gerar-post-inteligente.js
 
+      - name: Validar consistência i18n
+        run: node src/scripts/validacao/validar-i18n.js
+
       - name: Push changes
         run: |
           git pull --rebase origin main || true

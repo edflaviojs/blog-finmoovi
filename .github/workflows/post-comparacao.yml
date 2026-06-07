@@ -40,6 +40,9 @@ jobs:
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: node src/scripts/automacoes/gerar-post-comparacao.js
 
+      - name: Validar consistência i18n
+        run: node src/scripts/validacao/validar-i18n.js
+
       - name: Push changes
         run: |
           git pull --rebase origin main || true
