@@ -50,11 +50,11 @@ const GLOSSARIO_IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario'
 
 const PROMPT_TEMPLATES = {
   cover: (topic) =>
-    `Professional financial concept, ${topic}, ultra high quality, photorealistic, clean composition, modern minimalist aesthetic, soft professional studio lighting, subtle depth of field, corporate style, neutral soft gradient background, muted tones, absolutely no text anywhere in the image, no letters, no words, no numbers, no characters, no writing, no captions, no labels, no watermark, no logos, no people, no hands, no signatures, text-free image only`,
+    `Professional lifestyle photography related to personal finance and ${topic}, featuring real people in natural settings, warm authentic moments, couple or individual managing money happily, modern clean aesthetic, soft natural lighting, shallow depth of field, editorial quality, neutral soft background, ABSOLUTELY NO TEXT, NO LETTERS, NO WORDS, NO NUMBERS, NO CHARACTERS, NO WRITING, NO CAPTIONS, NO LABELS, NO WATERMARK, NO LOGOS, NO SIGNATURES, completely text-free photograph only`,
   glossary: (topic) =>
-    `Abstract financial concept visualization representing ${topic}, elegant minimalist style, premium quality, soft gradient lighting, professional editorial photography, geometric shapes, neutral soft gradient background, cyan and magenta accent colors, absolutely no text anywhere in the image, no letters, no words, no numbers, no characters, no writing, no captions, no labels, no watermark, no signatures, text-free image only`,
+    `Abstract elegant visualization representing the financial concept of ${topic}, minimalist premium quality, soft gradient lighting, professional editorial style, geometric shapes blended with subtle human elements, neutral soft gradient background, cyan and magenta accent colors, ABSOLUTELY NO TEXT, NO LETTERS, NO WORDS, NO NUMBERS, NO CHARACTERS, NO WRITING, NO CAPTIONS, NO LABELS, NO WATERMARK, NO SIGNATURES, completely text-free image only`,
   inline: (topic) =>
-    `Financial infographic concept about ${topic}, clean modern design, data visualization aesthetic, professional quality, neutral soft gradient background with subtle accents, absolutely no text anywhere in the image, no letters, no words, no numbers, no characters, no writing, no captions, no labels, no watermark, no signatures, text-free image only`,
+    `Authentic lifestyle photo related to ${topic}, real people in everyday financial situations, warm natural lighting, candid moments, modern clean composition, soft bokeh background, editorial magazine quality, relatable and engaging, ABSOLUTELY NO TEXT, NO LETTERS, NO WORDS, NO NUMBERS, NO CHARACTERS, NO WRITING, NO CAPTIONS, NO LABELS, NO WATERMARK, NO SIGNATURES, completely text-free photograph only`,
 };
 
 // --- Core Functions ---

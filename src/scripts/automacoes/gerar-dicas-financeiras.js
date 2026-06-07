@@ -142,7 +142,7 @@ async function downloadImage(url, filename) {
 }
 
 /**
- * Insert inline SVG images into content (1 image every 2 H2 sections)
+ * Insert inline images into content (2-3 images distributed through the post)
  */
 async function insertInlineImages(content, slugBase) {
   const h2Matches = content.match(/^## .+$/gm) || [];
@@ -151,10 +151,23 @@ async function insertInlineImages(content, slugBase) {
   const headings = h2Matches.map(h => h.replace('## ', ''));
   let result = content;
 
-  // Insert images after every 2nd heading (counting from 1)
-  for (let i = headings.length - 1; i >= 1; i -= 2) {
+  // Determine which headings get images (target 2-3 images)
+  let imagePositions = [];
+  if (headings.length >= 6) {
+    imagePositions = [1, 3, 5];
+  } else if (headings.length >= 4) {
+    imagePositions = [1, 2, 3];
+  } else if (headings.length >= 2) {
+    imagePositions = [0, 1];
+  }
+
+  // Insert from last to first (to preserve indices)
+  for (let idx = imagePositions.length - 1; idx >= 0; idx--) {
+    const i = imagePositions[idx];
+    if (i >= headings.length) continue;
+
     const sectionTopic = `${slugBase} - ${headings[i]}`;
-    const imgPath = await generateInlineImage(sectionTopic, `${slugBase}-${i}`, 'posts');
+    const imgPath = await generateInlineImage(sectionTopic, `${slugBase}-${i + 1}`, 'posts');
     const headingText = headings[i];
     const headingPattern = `## ${headingText}`;
     const headingIndex = result.indexOf(headingPattern);
