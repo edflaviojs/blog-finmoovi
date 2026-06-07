@@ -87,7 +87,7 @@
     window.addEventListener('scroll', function() {
       if (triggered) return;
       var scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      if (scrollPercent >= 60) showPopup();
+      if (scrollPercent >= 85) showPopup();
     }, { passive: true });
 
     document.addEventListener('mouseout', function(e) {
@@ -102,7 +102,7 @@
       var currentY = window.scrollY;
       if (currentY < lastScrollY) {
         scrollUpDistance += (lastScrollY - currentY);
-        if (scrollUpDistance > 300 && currentY > 200) showPopup();
+        if (scrollUpDistance > 500 && currentY > 400) showPopup();
       } else {
         scrollUpDistance = 0;
       }
@@ -246,6 +246,28 @@
   }
 
   .popup-btn:hover { opacity: 0.9; }
+
+  /* Mobile: stack form vertically */
+  @media (max-width: 480px) {
+    .popup-content {
+      width: 92%;
+      padding: var(--space-6);
+    }
+
+    .popup-form {
+      flex-direction: column;
+    }
+
+    .popup-btn {
+      width: 100%;
+      text-align: center;
+      padding: var(--space-4) var(--space-5);
+    }
+
+    .popup-title {
+      font-size: var(--text-lg);
+    }
+  }
 
   .popup-message {
     font-size: var(--text-xs);

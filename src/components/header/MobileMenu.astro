@@ -100,15 +100,18 @@ const navItems = [
 
   .mobile-menu {
     position: fixed;
-    top: 96px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: var(--bg-primary);
     padding: var(--space-8);
+    padding-top: 100px;
     transform: translateX(100%);
     transition: transform var(--transition-base);
     z-index: var(--z-modal);
+    backdrop-filter: blur(20px);
+    border-left: 1px solid var(--border-default);
   }
 
   .mobile-menu[aria-hidden="false"] {
