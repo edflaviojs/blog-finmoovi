@@ -55,8 +55,106 @@ async function callGroq(prompt, maxTokens = 2000) {
   }
 }
 
+async function callOpenAI(prompt, maxTokens = 2000) {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) return null;
+
+  try {
+    const res = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        model: 'gpt-4o-mini',
+        messages: [{ role: 'user', content: prompt }],
+        max_tokens: maxTokens,
+        temperature: 0.7
+      })
+    });
+    const data = await res.json();
+    return data.choices?.[0]?.message?.content || null;
+  } catch (e) {
+    console.log('⚠️  Erro na API OpenAI:', e.message);
+    return null;
+  }
+}
+
+async function callAnthropic(prompt, maxTokens = 2000) {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey) return null;
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: maxTokens,
+        messages: [{ role: 'user', content: prompt }]
+      })
+    });
+    const data = await res.json();
+    return data.content?.[0]?.text || null;
+  } catch (e) {
+    console.log('⚠️  Erro na API Anthropic:', e.message);
+    return null;
+  }
+}
+
+async function callKieAI(prompt, maxTokens = 2000) {
+  const apiKey = process.env.KIE_API_KEY;
+  if (!apiKey) return null;
+
+  try {
+    // Kie.ai uses OpenAI-compatible endpoint
+    const res = await fetch('https://api.kie.ai/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        model: 'kie-default',
+        messages: [{ role: 'user', content: prompt }],
+        max_tokens: maxTokens,
+        temperature: 0.7
+      })
+    });
+    const data = await res.json();
+    return data.choices?.[0]?.message?.content || null;
+  } catch (e) {
+    console.log('⚠️  Erro na API Kie.ai:', e.message);
+    return null;
+  }
+}
+
+/**
+ * Detect available AI provider and call it
+ * Priority: GROQ > OpenAI (ChatGPT) > Anthropic (Claude) > Kie.ai
+ */
+function detectAIProvider() {
+  if (process.env.GROQ_API_KEY) return { name: 'GROQ (Llama 3.3 70B)', call: callGroq };
+  if (process.env.OPENAI_API_KEY) return { name: 'OpenAI (GPT-4o mini)', call: callOpenAI };
+  if (process.env.ANTHROPIC_API_KEY) return { name: 'Anthropic (Claude)', call: callAnthropic };
+  if (process.env.KIE_API_KEY) return { name: 'Kie.ai', call: callKieAI };
+  return null;
+}
+
+async function callAI(prompt, maxTokens = 2000) {
+  const provider = detectAIProvider();
+  if (!provider) return null;
+  return provider.call(prompt, maxTokens);
+}
+
 async function generateWithAI(brandName, niche_pt, niche_en, niche_es, productDescription) {
-  console.log('\n🤖 Gerando conteúdo personalizado com IA...\n');
+  const provider = detectAIProvider();
+  console.log(`\n🤖 Gerando conteúdo personalizado via ${provider.name}...\n`);
 
   const prompt = `You are a blog strategist. Given the following brand info, generate content configuration in JSON format.
 
@@ -116,7 +214,7 @@ Comparison and solution topics should be content marketing angles.
 
 IMPORTANT: Return ONLY the JSON, no explanation, no markdown code blocks.`;
 
-  const result = await callGroq(prompt, 2000);
+  const result = await callAI(prompt, 2000);
   if (!result) return null;
 
   try {
@@ -168,12 +266,16 @@ async function main() {
 ╚══════════════════════════════════════════════════════════════╝
 `);
 
-  const hasAI = !!process.env.GROQ_API_KEY;
-  if (hasAI) {
-    console.log('  ✅ GROQ_API_KEY detectada — geração com IA ativada\n');
+  const aiProvider = detectAIProvider();
+  if (aiProvider) {
+    console.log(`  ✅ IA detectada: ${aiProvider.name}\n`);
   } else {
-    console.log('  ⚠️  GROQ_API_KEY não encontrada — usando templates genéricos');
-    console.log('     (Configure a variável de ambiente para gerar com IA)\n');
+    console.log('  ⚠️  Nenhuma API key de IA encontrada — usando templates genéricos');
+    console.log('     Configure uma das variáveis para gerar com IA:');
+    console.log('     • GROQ_API_KEY (grátis, rápido)');
+    console.log('     • OPENAI_API_KEY (ChatGPT)');
+    console.log('     • ANTHROPIC_API_KEY (Claude)');
+    console.log('     • KIE_API_KEY (Kie.ai)\n');
   }
 
   // === Core Identity ===
@@ -210,7 +312,7 @@ async function main() {
 
   // === AI Generation ===
   let aiData = null;
-  if (hasAI) {
+  if (aiProvider) {
     aiData = await generateWithAI(brandName, niche_pt, niche_en, niche_es, productDescription);
   }
 
