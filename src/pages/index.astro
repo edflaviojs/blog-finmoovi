@@ -208,6 +208,9 @@ const categoryLabels: Record<string, string> = {
         <div class="layout-with-sidebar">
           <div>
             <PostGrid posts={postsForGrid} columns={2} />
+            <div class="view-all-wrap">
+              <a href="/posts/page/1" class="view-all-btn">Ver todos os posts →</a>
+            </div>
           </div>
           <aside class="home-sidebar">
             <Sidebar />
@@ -430,5 +433,28 @@ const categoryLabels: Record<string, string> = {
     .home-sidebar {
       display: block;
     }
+  }
+
+  .view-all-wrap {
+    text-align: center;
+    margin-top: var(--space-8);
+  }
+
+  .view-all-btn {
+    display: inline-block;
+    padding: var(--space-3) var(--space-6);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-full);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .view-all-btn:hover {
+    border-color: var(--border-accent);
+    color: var(--accent-primary);
+    background: var(--bg-secondary);
   }
 </style>
