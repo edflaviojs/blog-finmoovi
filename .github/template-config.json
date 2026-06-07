@@ -1,0 +1,10 @@
+{
+  "name": "Blog Template",
+  "description": "Template completo de blog multi-idioma com automações, SEO e AI content generation. Clone, configure, deploy.",
+  "keywords": ["blog", "template", "astro", "seo", "ai", "multilingual", "cloudflare-pages"],
+  "homepage": "https://github.com/edflaviojs/blog-finmoovi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edflaviojs/blog-finmoovi"
+  }
+}

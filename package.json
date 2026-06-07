@@ -12,6 +12,7 @@
     "postbuild": "pagefind --site dist",
     "generate": "node --import tsx scripts/generate-brand-css.js && node --import tsx scripts/generate-functions-config.js && node --import tsx scripts/generate-manifest.js && node --import tsx scripts/generate-i18n-client.js",
     "validate": "node --import tsx scripts/validate-template.js",
+    "demo-content": "node --import tsx scripts/generate-demo-content.js",
     "setup": "node --import tsx scripts/setup.js"
   },
   "dependencies": {
