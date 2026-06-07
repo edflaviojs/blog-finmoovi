@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { config } from '../../site.config';
 
 const posts = defineCollection({
   type: 'content',
@@ -6,16 +7,16 @@ const posts = defineCollection({
     title: z.string(),
     description: z.string(),
     image: z.string().optional(),
-    category: z.enum(['dicas', 'orcamento', 'investimentos', 'cotacoes', 'ferramentas', 'glossario']),
+    category: z.enum(config.content.categories as unknown as [string, ...string[]]),
     tags: z.array(z.string()).default([]),
-    author: z.string().default('FinMoovi'),
+    author: z.string().default(config.content.defaultAuthor),
     publishedAt: z.coerce.date(),
     updatedAt: z.coerce.date().optional(),
     readingTime: z.number().optional(),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
     translate: z.boolean().default(true),
-    locale: z.enum(['pt', 'en', 'es']).default('pt'),
+    locale: z.enum(config.locales as unknown as [string, ...string[]]).default(config.defaultLocale),
     translationKey: z.string().optional(),
     seo: z.object({
       metaTitle: z.string().optional(),
@@ -30,16 +31,16 @@ const glossario = defineCollection({
   schema: z.object({
     term: z.string(),
     definition: z.string().optional(),
-    category: z.enum(['basico', 'investimentos', 'credito', 'impostos', 'mercado']),
+    category: z.enum(config.content.glossaryCategories as unknown as [string, ...string[]]),
     relatedTerms: z.array(z.string()).default([]),
     publishedAt: z.coerce.date(),
-    locale: z.enum(['pt', 'en', 'es']).default('pt'),
+    locale: z.enum(config.locales as unknown as [string, ...string[]]).default(config.defaultLocale),
     translationKey: z.string().optional(),
     image: z.string().optional(),
     title: z.string().optional(),
     description: z.string().optional(),
     tags: z.array(z.string()).default([]),
-    author: z.string().default('FinMoovi'),
+    author: z.string().default(config.content.defaultAuthor),
     readingTime: z.number().optional(),
     seo: z.object({
       metaTitle: z.string().optional(),

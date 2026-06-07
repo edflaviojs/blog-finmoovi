@@ -1,0 +1,62 @@
+{
+  "brandName": "FinMoovi",
+  "blogTitle": "FinMoovi Blog",
+  "siteUrl": "https://blog.finmoovi.com",
+  "appUrl": "https://finmoovi.com",
+  "appName": "FinMoovi",
+  "allowedOrigins": [
+    "https://blog.finmoovi.com",
+    "https://blog-finmoovi.pages.dev",
+    "http://localhost:4321"
+  ],
+  "emailFrom": "FinMoovi Blog <blog@email.finmoovi.com>",
+  "emailReplyTo": "contato@finmoovi.com",
+  "domains": {
+    "main": "finmoovi.com",
+    "blog": "blog.finmoovi.com",
+    "email": "email.finmoovi.com",
+    "cfPages": "blog-finmoovi.pages.dev"
+  },
+  "colors": {
+    "gradientStart": "#00F0FF",
+    "gradientEnd": "#A91079",
+    "primary": "#58a6ff"
+  },
+  "app": {
+    "name": "FinMoovi",
+    "url": "https://finmoovi.com",
+    "ctaText": {
+      "pt": "Experimentar Grátis — 7 dias",
+      "en": "Try Free — 7 days",
+      "es": "Probar Gratis — 7 días"
+    },
+    "ctaNote": {
+      "pt": "Sem cartão de crédito. Cancele quando quiser.",
+      "en": "No credit card required. Cancel anytime.",
+      "es": "Sin tarjeta de crédito. Cancela cuando quieras."
+    },
+    "features": {
+      "pt": [
+        "Multi-moeda (BRL, USD, EUR)",
+        "Smart Capture por voz e OCR",
+        "Relatórios inteligentes com IA",
+        "100% offline e seguro",
+        "Categorização automática"
+      ],
+      "en": [
+        "Multi-currency (BRL, USD, EUR)",
+        "Voice & OCR Smart Capture",
+        "AI-powered smart reports",
+        "100% offline & secure",
+        "Auto-categorization"
+      ],
+      "es": [
+        "Multi-moneda (BRL, USD, EUR)",
+        "Smart Capture por voz y OCR",
+        "Reportes inteligentes con IA",
+        "100% offline y seguro",
+        "Categorización automática"
+      ]
+    }
+  }
+}

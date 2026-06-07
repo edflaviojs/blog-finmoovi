@@ -1,0 +1,15 @@
+/* ═══════════════════════════════════════════════════════════
+ * BRAND TOKENS — Auto-generated from site.config.ts
+ * DO NOT EDIT MANUALLY — run: npm run generate
+ * ═══════════════════════════════════════════════════════════ */
+
+:root {
+  --brand-name: 'FinMoovi';
+  --brand-gradient-start: #00F0FF;
+  --brand-gradient-end: #A91079;
+  --brand-primary: #58a6ff;
+  --brand-secondary: #bc8cff;
+  --brand-accent-green: #3fb950;
+  --brand-accent-red: #f85149;
+  --brand-gradient: linear-gradient(135deg, #00F0FF 0%, #A91079 100%);
+}

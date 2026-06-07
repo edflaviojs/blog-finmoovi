@@ -1,5 +1,6 @@
 ---
 import '@/styles/global.css';
+import { config } from '../../site.config';
 
 interface Props {
   title: string;
@@ -13,21 +14,23 @@ interface Props {
   alternates?: { pt?: string; en?: string; es?: string };
 }
 
+const blogTitle = `${config.brand.name} ${config.brand.blogSuffix}`;
+
 const {
   title,
-  description = 'Blog FinMoovi - Dicas práticas de finanças pessoais, controle de gastos e educação financeira para organizar sua vida.',
+  description = config.siteDescription.pt,
   image = '/images/og-default.png',
   type = 'website',
   publishedTime,
-  author = 'FinMoovi',
-  keywords = ['finanças pessoais', 'controle financeiro', 'educação financeira', 'orçamento'],
+  author = config.content.defaultAuthor,
+  keywords = config.content.defaultKeywords.pt.split(', '),
   noindex = false,
   alternates
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(image, Astro.site);
-const fullTitle = title === 'FinMoovi Blog' ? title : `${title} | FinMoovi Blog`;
+const fullTitle = title === blogTitle ? title : `${title} | ${blogTitle}`;
 
 // i18n: detect current locale and compute base path
 const path = Astro.url.pathname;
@@ -82,7 +85,7 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
   <meta property="og:description" content={description} />
   <meta property="og:image" content={ogImage} />
   <meta property="og:url" content={canonicalURL} />
-  <meta property="og:site_name" content="FinMoovi Blog" />
+  <meta property="og:site_name" content={blogTitle} />
   <meta property="og:locale" content={ogLocale} />
   {publishedTime && <meta property="article:published_time" content={publishedTime} />}
 
@@ -101,28 +104,24 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="FinMoovi Blog (PT)" href="/rss.xml" />
-  <link rel="alternate" type="application/rss+xml" title="FinMoovi Blog (EN)" href="/en/rss.xml" />
-  <link rel="alternate" type="application/rss+xml" title="FinMoovi Blog (ES)" href="/es/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title={`${blogTitle} (PT)`} href="/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title={`${blogTitle} (EN)`} href="/en/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title={`${blogTitle} (ES)`} href="/es/rss.xml" />
 
   <!-- PWA -->
   <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#0d1117" />
 
   <!-- Organization Schema -->
-  <script type="application/ld+json" is:inline>
-  {
+  <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "FinMoovi",
-    "url": "https://finmoovi.com",
-    "logo": "https://blog.finmoovi.com/images/og-default.png",
-    "sameAs": [
-      "https://blog.finmoovi.com"
-    ],
-    "description": "App de finanças pessoais multi-moeda, offline e inteligente."
-  }
-  </script>
+    "name": config.brand.name,
+    "url": `https://${config.brand.domains.main}`,
+    "logo": `${config.siteUrl}/images/og-default.png`,
+    "sameAs": [config.siteUrl],
+    "description": config.siteDescription.pt
+  })} />
 
   <!-- Theme (must load before body to prevent flash) -->
   <script is:inline src="/scripts/theme.js"></script>
@@ -131,6 +130,8 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
   <slot />
   <script is:inline src="/scripts/i18n.js?v=2" defer></script>
   <!-- Cloudflare Web Analytics -->
-  <script is:inline defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4db00f52892749c780db1a824b4f6124"}'></script>
+  {config.analytics.cloudflareBeaconToken && (
+    <script is:inline defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon={`{"token": "${config.analytics.cloudflareBeaconToken}"}`}></script>
+  )}
 </body>
 </html>

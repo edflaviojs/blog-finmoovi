@@ -1,11 +1,12 @@
 import { defineConfig } from 'astro/config';
+import { config } from './site.config.ts';
 
 export default defineConfig({
-  site: 'https://blog.finmoovi.com',
+  site: config.siteUrl,
   output: 'static',
   i18n: {
-    defaultLocale: 'pt',
-    locales: ['pt', 'en', 'es'],
+    defaultLocale: config.defaultLocale,
+    locales: [...config.locales],
     routing: {
       prefixDefaultLocale: false
     }
