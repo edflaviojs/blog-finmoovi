@@ -14,7 +14,46 @@ import { execSync } from 'child_process';
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 
-const SOLUCOES_TOPICS = [
+/**
+ * Se config.ai.solutionTopics tem itens, gera scenarios dinamicamente via IA.
+ * Se não, usa os exemplos hardcoded (finance-specific como fallback/exemplo).
+ */
+async function getSolutionTopics() {
+  const dynamicTopics = config.ai?.solutionTopics || [];
+
+  if (dynamicTopics.length > 0) {
+    // Generate scenarios from AI using the solutionTopics as seeds
+    const topic = dynamicTopics[Math.floor(Math.random() * dynamicTopics.length)];
+    const prompt = `Crie um cenário de post para o blog ${config.brand.name} no nicho de ${config.content.niche.pt}.
+
+O app se chama ${config.app.name} e está em ${config.app.url}.
+Funcionalidades do app: ${config.app.features.pt.join(', ')}.
+
+Tópico de solução: "${topic}"
+
+Responda em JSON com esta estrutura (sem markdown, só JSON):
+{
+  "problem": "Problema real que o usuário enfrenta (1 frase)",
+  "feature": "Funcionalidade do app que resolve (2-3 palavras)",
+  "scenario": "Cenário detalhado mostrando como o app resolve (3-4 frases, mencionando ${config.app.name} naturalmente)",
+  "keywords": ["keyword 1", "keyword 2", "keyword 3", "keyword 4"]
+}`;
+
+    try {
+      const response = await generateText(prompt);
+      const cleaned = response.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+      const parsed = JSON.parse(cleaned);
+      return [parsed];
+    } catch (e) {
+      console.log('⚠️  Falha ao gerar cenário com IA, usando fallback');
+    }
+  }
+
+  // Fallback: finance-specific examples (will be used until user configures solutionTopics)
+  return FALLBACK_TOPICS;
+}
+
+const FALLBACK_TOPICS = [
   {
     problem: 'Dificuldade em anotar todas as despesas do dia',
     feature: 'Smart Capture por voz',
@@ -214,11 +253,12 @@ ${data.content}
 }
 
 async function main() {
-  console.log('🚀 Gerando post "Soluções ${config.app.name}"...');
+  console.log(`🚀 Gerando post "Soluções ${config.app.name}"...`);
 
+  const topics = await getSolutionTopics();
   const weekOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (86400000 * 7));
-  const topicIndex = weekOfYear % SOLUCOES_TOPICS.length;
-  const topic = SOLUCOES_TOPICS[topicIndex];
+  const topicIndex = weekOfYear % topics.length;
+  const topic = topics[topicIndex];
 
   console.log(`📝 Problema: ${topic.problem}`);
   console.log(`🔧 Feature: ${topic.feature}`);
@@ -285,7 +325,7 @@ Responda EXATAMENTE neste formato:
     const content = contentMatch[1].trim();
 
     // Merge topic keywords with AI-generated ones
-    const allKeywords = [...new Set([...keywords, ...topic.keywords, '${config.app.name.toLowerCase()}', 'smart capture'])];
+    const allKeywords = [...new Set([...keywords, ...topic.keywords, config.app.name.toLowerCase(), config.content.niche.pt])];
 
     console.log(`✅ Post PT gerado: ${title}`);
 

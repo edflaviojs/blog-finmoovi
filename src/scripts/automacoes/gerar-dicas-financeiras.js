@@ -13,8 +13,10 @@ import { execSync } from 'child_process';
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 
-// Topics pool — rotates through these (includes long-tail SEO keywords)
-const TOPICS = [
+// Topics pool — uses config.ai.dailyTopics if available, otherwise falls back to niche defaults
+const TOPICS = (config.ai?.dailyTopics?.length > 0)
+  ? config.ai.dailyTopics
+  : [
   'como economizar dinheiro no supermercado',
   'como negociar dívidas com o banco',
   'como montar um orçamento familiar',
