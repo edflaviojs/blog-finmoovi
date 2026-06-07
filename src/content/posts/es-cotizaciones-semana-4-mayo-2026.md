@@ -18,7 +18,7 @@ seo:
 
 ## Resumen Semanal del Mercado Financiero Brasileño
 
-La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significativos en el mercado financiero brasileño, con destaque para las variaciones en las tasas de cambio y el mantenimiento de la [tasa Selic](/es/glossario/es-selic). Vamos a profundizar en los detalles y entender cómo estos eventos afectan a los inversores individuales.
+La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significativos en el mercado financiero brasileño, con destaque para las variaciones en las tasas de [cambio](/es/glossario/es-cambio) y el mantenimiento de la [tasa Selic](/es/glossario/es-selic). Vamos a profundizar en los detalles y entender cómo estos eventos afectan a los inversores individuales.
 
 ## Dólar y Euro: Tendencia de la Semana
 

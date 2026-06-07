@@ -60,7 +60,7 @@ Estes são os que mais impactam seu orçamento:
 Distribua sua renda assim:
 - **50%** para necessidades (moradia, alimentação, transporte)
 - **30%** para desejos (lazer, compras, hobbies)
-- **20%** para objetivos financeiros (poupança, investimentos, dívidas)
+- **20%** para objetivos financeiros ([poupança](/glossario/poupanca), investimentos, dívidas)
 
 ## Passo 5: Acompanhe e ajuste
 

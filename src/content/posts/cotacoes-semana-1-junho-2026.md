@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro
 
-A semana de 28/05/2026 a 04/06/2026 foi marcada por movimentos significativos no mercado financeiro brasileiro, com destaque para as cotações do dólar e do euro em relação ao real. Além disso, a taxa Selic continuou a influenciar as decisões de investimento dos brasileiros.
+A semana de 28/05/2026 a 04/06/2026 foi marcada por movimentos significativos no mercado financeiro brasileiro, com destaque para as cotações do dólar e do euro em relação ao real. Além disso, a taxa [Selic](/glossario/selic) continuou a influenciar as decisões de investimento dos brasileiros.
 
 ## Dólar e Euro: Tendência da Semana
 
@@ -26,7 +26,7 @@ O dólar americano fechou a semana em R$ 5,03, apresentando uma leve estabilidad
 
 ## Selic e Impacto nos Investimentos
 
-A taxa Selic, que atualmente está em 12,75% ao ano, continua a ser um fator chave para os investidores. Com essa taxa, os investimentos em [renda fixa](/glossario/renda-fixa), como CDBs e títulos do tesouro, se tornam mais atraentes, pois oferecem retornos mais altos em comparação com outros tipos de investimentos. No entanto, é importante lembrar que a Selic também pode influenciar a economia como um todo, afetando a [inflação](/glossario/inflacao) e o crescimento econômico. Por exemplo, se você está pensando em investir R$ 10.000 em um CDB com taxa de 12% ao ano, você pode esperar receber cerca de R$ 1.200 em juros ao longo de um ano, considerando a taxa Selic atual.
+A taxa Selic, que atualmente está em 12,75% ao ano, continua a ser um fator chave para os investidores. Com essa taxa, os investimentos em [renda fixa](/glossario/renda-fixa), como CDBs e títulos do tesouro, se tornam mais atraentes, pois oferecem retornos mais altos em comparação com outros tipos de investimentos. No entanto, é importante lembrar que a Selic também pode influenciar a economia como um todo, afetando a [inflação](/glossario/inflacao) e o crescimento econômico. Por exemplo, se você está pensando em investir R$ 10.000 em um [CDB](/glossario/cdb) com taxa de 12% ao ano, você pode esperar receber cerca de R$ 1.200 em juros ao longo de um ano, considerando a taxa Selic atual.
 
 ## Dica Prática para o Investidor
 

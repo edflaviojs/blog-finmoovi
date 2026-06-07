@@ -49,7 +49,7 @@ Uma reserva de emergência é essencial para qualquer plano financeiro, especial
 A ideia é ter entre 3 a 6 meses de despesas essenciais guardados em uma conta de fácil acesso. Isso pode parecer um desafio, mas começar pequeno e ser consistente é a chave. **Dica prática:** Estabeleça uma meta para sua reserva de emergência e trabalhe towards ela gradualmente.
 
 ## Comece hoje
-Não importa onde você está em sua jornada financeira, o importante é começar a tomar controle de suas finanças hoje. Isso pode significar apenas começar a registrar seus gastos ou abrir uma conta de poupança para sua reserva de emergência. Cada pequeno passo leva a mudanças significativas no longo prazo. Então, não espere mais – comece a organizar suas finanças e a construir o futuro financeiro que você deseja.
+Não importa onde você está em sua jornada financeira, o importante é começar a tomar controle de suas finanças hoje. Isso pode significar apenas começar a registrar seus gastos ou abrir uma conta de [poupança](/glossario/poupanca) para sua reserva de emergência. Cada pequeno passo leva a mudanças significativas no longo prazo. Então, não espere mais – comece a organizar suas finanças e a construir o futuro financeiro que você deseja.
 
 ![Comece hoje](/images/posts/organizar-financas-autonomo-5.svg)
 

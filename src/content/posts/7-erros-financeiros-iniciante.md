@@ -22,7 +22,7 @@ Todo mundo comete erros com dinheiro — especialmente no começo. A boa notíci
 
 **O erro:** Viver sem nenhuma reserva, contando que nada vai dar errado.
 
-**A solução:** Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de gastos guardados. Deixe em um investimento com liquidez diária (CDB ou Tesouro Selic).
+**A solução:** Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de gastos guardados. Deixe em um investimento com [liquidez](/glossario/liquidez) diária (CDB ou Tesouro [Selic](/glossario/selic)).
 
 ## 2. Gastar mais do que ganha
 
@@ -50,7 +50,7 @@ Todo mundo comete erros com dinheiro — especialmente no começo. A boa notíci
 
 ## 6. Investir sem entender
 
-**O erro:** Colocar dinheiro em algo porque "todo mundo está fazendo" (cripto, ações da moda, etc).
+**O erro:** Colocar dinheiro em algo porque "todo mundo está fazendo" (cripto, [ações](/glossario/acoes) da moda, etc).
 
 **A solução:** Antes de investir, monte sua reserva de emergência. Depois, comece pelo básico: [Tesouro Direto](/glossario/tesouro-direto) e CDBs. Só avance para [renda variável](/glossario/renda-variavel) quando entender os riscos.
 
