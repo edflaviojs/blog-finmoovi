@@ -90,6 +90,9 @@
       if (scrollPercent >= 75) showPopup();
     }, { passive: true });
 
+    // Fallback: show after 45s for short posts where scroll triggers may never fire
+    setTimeout(function() { if (!triggered) showPopup(); }, 45000);
+
     document.addEventListener('mouseout', function(e) {
       if (triggered) return;
       if (e.clientY <= 0 && e.relatedTarget === null) showPopup();

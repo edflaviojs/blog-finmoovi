@@ -33,6 +33,10 @@ const navItems = [
   const menu = document.getElementById('mobile-menu');
   const overlay = document.getElementById('mobile-overlay');
 
+  // Move overlay and menu to body to escape header's stacking context
+  if (overlay) document.body.appendChild(overlay);
+  if (menu) document.body.appendChild(menu);
+
   function openMenu() {
     toggle?.setAttribute('aria-expanded', 'true');
     menu?.setAttribute('aria-hidden', 'false');
