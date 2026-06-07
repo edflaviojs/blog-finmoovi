@@ -13,6 +13,7 @@ const navItems = [
   <span class="hamburger"></span>
 </button>
 
+<div class="mobile-overlay" id="mobile-overlay"></div>
 <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <nav class="mobile-nav" aria-label="Menu mobile">
     <ul class="mobile-nav-list">
@@ -30,12 +31,33 @@ const navItems = [
 <script>
   const toggle = document.getElementById('mobile-menu-toggle');
   const menu = document.getElementById('mobile-menu');
+  const overlay = document.getElementById('mobile-overlay');
+
+  function openMenu() {
+    toggle?.setAttribute('aria-expanded', 'true');
+    menu?.setAttribute('aria-hidden', 'false');
+    overlay?.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    toggle?.setAttribute('aria-expanded', 'false');
+    menu?.setAttribute('aria-hidden', 'true');
+    overlay?.classList.remove('active');
+    document.body.style.overflow = '';
+  }
 
   toggle?.addEventListener('click', () => {
     const isOpen = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!isOpen));
-    menu?.setAttribute('aria-hidden', String(isOpen));
-    document.body.style.overflow = isOpen ? '' : 'hidden';
+    if (isOpen) closeMenu();
+    else openMenu();
+  });
+
+  overlay?.addEventListener('click', closeMenu);
+
+  // Close on link click
+  menu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
   });
 </script>
 
@@ -98,20 +120,38 @@ const navItems = [
     transform: rotate(-45deg);
   }
 
+  .mobile-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 299;
+  }
+
+  .mobile-overlay.active {
+    display: block;
+  }
+
   .mobile-menu {
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
-    background: var(--bg-primary);
+    width: 80%;
+    max-width: 320px;
+    background-color: #0d1117;
     padding: var(--space-8);
     padding-top: 100px;
     transform: translateX(100%);
-    transition: transform var(--transition-base);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: var(--z-modal);
-    backdrop-filter: blur(20px);
-    border-left: 1px solid var(--border-default);
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+  }
+
+  :root[data-theme="light"] .mobile-menu {
+    background-color: #ffffff;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
   }
 
   .mobile-menu[aria-hidden="false"] {

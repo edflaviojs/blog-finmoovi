@@ -87,7 +87,7 @@
     window.addEventListener('scroll', function() {
       if (triggered) return;
       var scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      if (scrollPercent >= 85) showPopup();
+      if (scrollPercent >= 75) showPopup();
     }, { passive: true });
 
     document.addEventListener('mouseout', function(e) {
