@@ -1,3 +1,4 @@
+import { config } from '../../../site.config.ts';
 /**
  * Gerador Inteligente de Posts Baseado em Analytics
  * Usa dados do relatório semanal para gerar posts sobre temas que performam
@@ -312,7 +313,7 @@ image: "${imagePath}"
 category: "dicas"
 tags:
 ${post.keywords.slice(0, 5).map(k => `  - "${k.trim()}"`).join('\n')}
-author: "FinMoovi"
+author: "${config.content.defaultAuthor}"
 publishedAt: ${date}
 locale: "${locale}"
 translationKey: "${translationKey}"

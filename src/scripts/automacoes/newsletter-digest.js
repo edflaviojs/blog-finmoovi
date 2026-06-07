@@ -1,3 +1,4 @@
+import { config } from '../../../site.config.ts';
 /**
  * Newsletter Digest Semanal
  * Envia resumo dos posts da semana para todos os subscribers ativos
@@ -111,7 +112,7 @@ function buildDigestHTML(posts, glossaryPosts, lang, email) {
     if (items.length === 0) return '';
     const rows = items.map(p => `
       <tr><td style="padding:12px 0;border-bottom:1px solid #30363d;">
-        <a href="https://blog.finmoovi.com${basePath}/${pathPrefix}/${p.slug}" style="color:#58a6ff;font-size:15px;font-weight:600;text-decoration:none;">${p.title}</a>
+        <a href="${config.siteUrl}${basePath}/${pathPrefix}/${p.slug}" style="color:#58a6ff;font-size:15px;font-weight:600;text-decoration:none;">${p.title}</a>
         <p style="color:#8b949e;font-size:13px;margin:4px 0 0;">${p.description}</p>
       </td></tr>
     `).join('');
@@ -135,10 +136,10 @@ function buildDigestHTML(posts, glossaryPosts, lang, email) {
       ${renderSection(t.quotesTitle, quotes, 'post')}
       ${renderSection(t.glossaryTitle, glossaryPosts, 'glossario')}
       <div style="text-align:center;margin-top:32px;">
-        <a href="https://blog.finmoovi.com${basePath}" style="display:inline-block;padding:12px 32px;background:linear-gradient(135deg,#00F0FF,#A91079);color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">Ver tudo no blog</a>
+        <a href="${config.siteUrl}${basePath}" style="display:inline-block;padding:12px 32px;background:var(--brand-gradient);color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">Ver tudo no blog</a>
       </div>
       <p style="color:#6e7681;font-size:11px;text-align:center;margin-top:24px;">
-        ${t.unsub} <a href="https://blog.finmoovi.com/api/unsubscribe?email=${encodeURIComponent(email)}" style="color:#58a6ff;">${t.unsubLink}</a>
+        ${t.unsub} <a href="${config.siteUrl}/api/unsubscribe?email=${encodeURIComponent(email)}" style="color:#58a6ff;">${t.unsubLink}</a>
       </p>
     </div>
   </div>

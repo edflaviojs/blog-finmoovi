@@ -1,3 +1,4 @@
+import { config } from '../../../site.config.ts';
 /**
  * Gerador de Posts Sazonais (PT + EN + ES)
  * Executa via GitHub Actions nas sextas-feiras às 7h BRT
@@ -116,7 +117,7 @@ image: "${data.imagePath}"
 category: "dicas"
 locale: "${data.locale}"
 tags: ${JSON.stringify(data.keywords || [])}
-author: "FinMoovi"
+author: "${config.content.defaultAuthor}"
 publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: false

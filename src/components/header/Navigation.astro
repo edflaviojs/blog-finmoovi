@@ -1,4 +1,6 @@
 ---
+import { config } from '../../../site.config';
+
 const navItems = [
   { label: 'Início', key: 'nav.inicio', href: '/' },
   { label: 'Dicas', key: 'nav.dicas', href: '/categorias/dicas' },
@@ -25,7 +27,7 @@ const currentPath = Astro.url.pathname;
     ))}
   </ul>
 
-  <a href="https://finmoovi.com" target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav.baixarApp">
+  <a href={config.app.url} target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav.baixarApp">
     Baixar App
   </a>
 </nav>

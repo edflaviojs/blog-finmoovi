@@ -1,3 +1,4 @@
+import { config } from '../../../site.config.ts';
 /**
  * Gerador de Posts "Soluções FinMoovi" (PT + EN + ES)
  * Executa via GitHub Actions toda quarta-feira às 8h BRT
@@ -190,7 +191,7 @@ image: "${data.imagePath}"
 category: "dicas"
 locale: "${data.locale}"
 tags: ${JSON.stringify(data.keywords || [])}
-author: "FinMoovi"
+author: "${config.content.defaultAuthor}"
 publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: false

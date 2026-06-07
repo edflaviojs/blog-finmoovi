@@ -36,7 +36,7 @@ Tags: ${post.tags.join(', ')}
 Gere exatamente neste formato:
 
 ---TWITTER---
-[Thread de 3-4 tweets, cada um com max 280 chars, separados por linha em branco. Use emojis com moderação. Inclua link no último: https://blog.finmoovi.com/posts/SLUG]
+[Thread de 3-4 tweets, cada um com max 280 chars, separados por linha em branco. Use emojis com moderação. Inclua link no último: ${config.siteUrl}/posts/SLUG]
 
 ---INSTAGRAM---
 [Caption para Instagram: max 300 palavras, tom envolvente, termine com CTA para link na bio. Inclua 5-8 hashtags relevantes no final]
@@ -86,7 +86,7 @@ async function main() {
       const output = `# Social Media — ${fm.title}
 **Data:** ${today}
 **Post:** /posts/${slug}
-**URL:** https://blog.finmoovi.com/posts/${slug}
+**URL:** ${config.siteUrl}/posts/${slug}
 
 ---
 

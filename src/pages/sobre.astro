@@ -2,19 +2,23 @@
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
+import { config } from '../../site.config';
+
+const brand = config.brand.name;
+const blogTitle = `${brand} ${config.brand.blogSuffix}`;
 ---
 
 <BaseLayout
-  title="Sobre o FinMoovi Blog"
-  description="Conheça o FinMoovi Blog: educação financeira acessível, dicas práticas e ferramentas gratuitas para organizar suas finanças pessoais."
-  keywords={['sobre finmoovi', 'educação financeira', 'finanças pessoais', 'quem somos']}
+  title={`Sobre o ${blogTitle}`}
+  description={`Conheça o ${blogTitle}: ${config.brand.tagline.pt}. Dicas práticas e ferramentas gratuitas.`}
+  keywords={[config.content.niche.pt, 'educação', 'dicas práticas', 'quem somos']}
 >
   <Header />
 
   <main class="sobre-page">
     <div class="container">
       <header class="sobre-header">
-        <h1 class="sobre-title" data-i18n="sobre.title">Sobre o FinMoovi Blog</h1>
+        <h1 class="sobre-title" data-i18n="sobre.title">Sobre o ${brand} ${config.brand.blogSuffix}</h1>
         <p class="sobre-subtitle" data-i18n="sobre.subtitle">Educação financeira acessível para todos os brasileiros</p>
       </header>
 
@@ -22,7 +26,7 @@ import Footer from '@components/footer/Footer.astro';
         <section class="sobre-section">
           <h2>Nossa Missão</h2>
           <p>
-            O FinMoovi Blog nasceu com um objetivo claro: <strong>democratizar a educação financeira no Brasil</strong>.
+            O ${brand} Blog nasceu com um objetivo claro: <strong>democratizar a educação financeira no Brasil</strong>.
             Acreditamos que todo mundo merece ter acesso a informações claras, práticas e sem jargão sobre como
             organizar suas finanças pessoais.
           </p>
@@ -59,9 +63,9 @@ import Footer from '@components/footer/Footer.astro';
         </section>
 
         <section class="sobre-section">
-          <h2>Sobre o FinMoovi</h2>
+          <h2>Sobre o ${brand}</h2>
           <p>
-            O <strong>FinMoovi</strong> é um app de controle financeiro inteligente, criado no Brasil para brasileiros
+            O <strong>${brand}</strong> é um app de controle financeiro inteligente, criado no Brasil para brasileiros
             (e para quem vive com múltiplas moedas). Com ele você controla gastos, acompanha investimentos e
             alcança objetivos financeiros — tudo offline, com IA e multi-moeda.
           </p>
@@ -74,7 +78,7 @@ import Footer from '@components/footer/Footer.astro';
         <section class="sobre-section sobre-cta">
           <div class="sobre-cta-box">
             <h2>Quer organizar suas finanças?</h2>
-            <p>Teste o FinMoovi grátis por 7 dias. Sem cartão de crédito. Cancele quando quiser.</p>
+            <p>Teste o ${config.app.name} grátis por 7 dias. Sem cartão de crédito. Cancele quando quiser.</p>
             <div class="sobre-cta-actions">
               <a href="/app" class="sobre-btn primary">Experimentar Grátis</a>
               <a href="/" class="sobre-btn secondary">Ver o Blog</a>
@@ -86,15 +90,15 @@ import Footer from '@components/footer/Footer.astro';
           <h2>Contato</h2>
           <p>
             Tem sugestões de conteúdo, encontrou algum erro ou quer colaborar?
-            Entre em contato pelo email <a href="mailto:blog@finmoovi.com" class="sobre-link">blog@finmoovi.com</a>.
+            Entre em contato pelo email <a href="mailto:${config.email.replyTo}" class="sobre-link">${config.email.replyTo}</a>.
           </p>
           <p>
-            Siga o FinMoovi nas redes sociais para mais dicas rápidas:
+            Siga o ${brand} nas redes sociais para mais dicas rápidas:
           </p>
           <div class="sobre-social">
-            <a href="https://instagram.com/finmoovi" target="_blank" rel="noopener" class="social-link">Instagram</a>
-            <a href="https://twitter.com/finmoovi" target="_blank" rel="noopener" class="social-link">Twitter/X</a>
-            <a href="https://youtube.com/@finmoovi" target="_blank" rel="noopener" class="social-link">YouTube</a>
+            <a href="#" target="_blank" rel="noopener" class="social-link">Instagram</a>
+            <a href="#" target="_blank" rel="noopener" class="social-link">Twitter/X</a>
+            <a href="#" target="_blank" rel="noopener" class="social-link">YouTube</a>
           </div>
         </section>
       </div>
@@ -116,7 +120,7 @@ import Footer from '@components/footer/Footer.astro';
 
   .sobre-title {
     font-size: var(--text-4xl);
-    background: linear-gradient(135deg, #00F0FF, #A91079);
+    background: var(--gradient-cta);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -203,7 +207,7 @@ import Footer from '@components/footer/Footer.astro';
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(135deg, #00F0FF, #A91079);
+    background: var(--gradient-cta);
   }
 
   .sobre-cta-box h2 {
@@ -231,7 +235,7 @@ import Footer from '@components/footer/Footer.astro';
   }
 
   .sobre-btn.primary {
-    background: linear-gradient(135deg, #00F0FF, #A91079);
+    background: var(--gradient-cta);
     color: #fff;
   }
 

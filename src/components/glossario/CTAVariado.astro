@@ -3,25 +3,29 @@
  * CTA Variado — mostra uma CTA diferente a cada vez
  * Pool de 10+ variações para não cansar o usuário
  */
+import { config } from '../../../site.config';
+
 interface Props {
   seed?: number;
 }
 
 const { seed } = Astro.props;
+const appName = config.app.name;
+const appUrl = config.app.url;
 
 const ctas = [
-  { title: 'Organize suas finanças com o FinMoovi', desc: 'Controle gastos, acompanhe investimentos e alcance seus objetivos financeiros. Multi-moeda, offline e inteligente.' },
-  { title: 'Controle seus gastos de forma inteligente', desc: 'O FinMoovi categoriza suas transações automaticamente. Menos trabalho, mais clareza sobre seu dinheiro.' },
-  { title: 'Acompanhe investimentos em tempo real', desc: 'Dashboards com insights automáticos. Saiba exatamente onde seu dinheiro está indo com o FinMoovi.' },
+  { title: `Organize suas finanças com o ${appName}`, desc: `${config.app.features.pt.slice(0, 3).join('. ')}.` },
+  { title: 'Controle seus gastos de forma inteligente', desc: `O ${appName} categoriza suas transações automaticamente. Menos trabalho, mais clareza sobre seu dinheiro.` },
+  { title: 'Acompanhe investimentos em tempo real', desc: `Dashboards com insights automáticos. Saiba exatamente onde seu dinheiro está indo com o ${appName}.` },
   { title: 'Multi-moeda, offline e inteligente', desc: 'BRL, USD, EUR com conversão automática. Funciona sem internet. Seus dados ficam no seu dispositivo.' },
   { title: 'Comece grátis — sem cartão de crédito', desc: '7 dias grátis para experimentar todas as funcionalidades. Cancele quando quiser, sem burocracia.' },
-  { title: 'Sua privacidade financeira importa', desc: 'Criptografia de ponta a ponta. Seus dados nunca saem do seu dispositivo. Controle total com o FinMoovi.' },
-  { title: 'Lance gastos em 5 segundos com IA', desc: 'Smart Capture entende linguagem natural. Diga "almocei 35 reais" e pronto. O FinMoovi faz o resto.' },
-  { title: 'Relatórios que fazem sentido', desc: 'Gráficos claros que mostram para onde vai seu dinheiro. Identifique padrões e economize mais com o FinMoovi.' },
-  { title: 'Chega de planilhas complicadas', desc: 'O FinMoovi substitui suas planilhas por um app intuitivo. Tudo automático, tudo no celular.' },
-  { title: 'Alcance seus objetivos financeiros', desc: 'Defina metas, acompanhe o progresso e receba alertas inteligentes. O FinMoovi te mantém no caminho.' },
-  { title: 'O app financeiro que funciona offline', desc: 'Registre gastos em qualquer lugar, mesmo sem internet. Sincroniza automaticamente quando conectar.' },
-  { title: 'Controle financeiro de classe mundial', desc: 'Usado por milhares de brasileiros. O FinMoovi é o app mais completo para quem quer organizar suas finanças.' },
+  { title: 'Sua privacidade financeira importa', desc: `Criptografia de ponta a ponta. Seus dados nunca saem do seu dispositivo. Controle total com o ${appName}.` },
+  { title: 'Lance gastos em 5 segundos com IA', desc: `Smart Capture entende linguagem natural. Diga "almocei 35 reais" e pronto. O ${appName} faz o resto.` },
+  { title: 'Relatórios que fazem sentido', desc: `Gráficos claros que mostram para onde vai seu dinheiro. Identifique padrões e economize mais com o ${appName}.` },
+  { title: 'Chega de planilhas complicadas', desc: `O ${appName} substitui suas planilhas por um app intuitivo. Tudo automático, tudo no celular.` },
+  { title: 'Alcance seus objetivos financeiros', desc: `Defina metas, acompanhe o progresso e receba alertas inteligentes. O ${appName} te mantém no caminho.` },
+  { title: 'O app que funciona offline', desc: 'Registre gastos em qualquer lugar, mesmo sem internet. Sincroniza automaticamente quando conectar.' },
+  { title: 'Controle de classe mundial', desc: `Usado por milhares de brasileiros. O ${appName} é o app mais completo para quem quer organizar suas finanças.` },
 ];
 
 // Pick a CTA based on seed or random
@@ -33,7 +37,7 @@ const cta = ctas[index];
   <div class="cta-variado-badge">App Gratuito</div>
   <h4 class="cta-variado-title">{cta.title}</h4>
   <p class="cta-variado-desc">{cta.desc}</p>
-  <a href="https://finmoovi.com" class="cta-variado-btn" target="_blank" rel="noopener">Experimentar Grátis →</a>
+  <a href={appUrl} class="cta-variado-btn" target="_blank" rel="noopener">{config.app.ctaText.pt} →</a>
 </div>
 
 <style>
@@ -54,7 +58,7 @@ const cta = ctas[index];
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(135deg, #00F0FF, #A91079);
+    background: var(--gradient-cta);
   }
 
   .cta-variado-badge {
@@ -84,7 +88,7 @@ const cta = ctas[index];
   .cta-variado-btn {
     display: inline-block;
     padding: var(--space-3) var(--space-5);
-    background: linear-gradient(135deg, #00F0FF, #A91079);
+    background: var(--gradient-cta);
     color: #fff;
     font-weight: 600;
     font-size: var(--text-sm);

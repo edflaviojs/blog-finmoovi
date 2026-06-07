@@ -1,10 +1,12 @@
 ---
+import { config } from '../../../site.config';
+
 interface Props {
   items: { name: string; url: string }[];
 }
 
 const { items } = Astro.props;
-const site = 'https://blog.finmoovi.com';
+const site = config.siteUrl;
 
 const schema = {
   "@context": "https://schema.org",

@@ -1,3 +1,4 @@
+import { config } from '../../../site.config.ts';
 /**
  * Cotações Semanal
  * Executa via GitHub Actions 1x/semana (segunda às 7h)
@@ -105,7 +106,7 @@ description: "${descriptions[locale]}"
 image: "${imagePath || ''}"
 category: "cotacoes"
 tags: ${JSON.stringify(tags[locale])}
-author: "FinMoovi"
+author: "${config.content.defaultAuthor}"
 publishedAt: ${dateStr}
 readingTime: 3
 featured: false
@@ -121,13 +122,13 @@ ${contentWithImages}
 
 ${locale === 'pt' ? `
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
+**Pronto para acompanhar seus investimentos? [Experimente o ${config.app.name} de graça](${config.app.url}) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
 ` : locale === 'en' ? `
 ---
-**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your investments? [Try ${config.app.name} for free](${config.app.url}) — in 5 minutes you'll have a clear view of where your money is going.**
 ` : `
 ---
-**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
+**¿Listo para seguir tus inversiones? [Prueba ${config.app.name} gratis](${config.app.url}) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
 `}
 `;
 

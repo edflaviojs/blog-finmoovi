@@ -6,6 +6,7 @@
 
 import { generateCoverImage, generateCoverImageSync, generateInlineImage } from './image-router.js';
 import { saveSVGImage } from './svg-generator.js';
+import { config } from '../../../site.config.ts';
 
 const GROQ_API_BASE = 'https://api.groq.com/openai/v1';
 const GROQ_API_KEY = process.env.GROQ_API_KEY || process.env.KIE_API_KEY;
@@ -79,12 +80,12 @@ export async function generateBlogPost(topic, options = {}) {
   } = options;
 
   const ctaVariations = [
-    'Quer colocar isso em prática? [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e veja como é fácil controlar suas finanças com categorização automática e relatórios visuais.',
-    'Pronto para organizar suas finanças? [Experimente o FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.',
-    'Quer sair da teoria? [Baixe o FinMoovi grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.',
-    'Cansado de planilha? [Teste o FinMoovi grátis](https://finmoovi.com) e controle seus gastos com IA, multi-moeda e relatórios que fazem sentido.',
-    'Quer ver isso funcionando na prática? [Comece grátis com o FinMoovi](https://finmoovi.com) — 7 dias para organizar suas finanças sem complicação.',
-    'O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu dinheiro está indo de verdade.',
+    `Quer colocar isso em prática? [Teste o ${config.app.name} grátis por 7 dias](${config.app.url}) e veja como é fácil controlar suas finanças com categorização automática e relatórios visuais.`,
+    `Pronto para organizar suas finanças? [Experimente o ${config.app.name} grátis](${config.app.url}) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.`,
+    `Quer sair da teoria? [Baixe o ${config.app.name} grátis por 7 dias](${config.app.url}) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.`,
+    `Cansado de planilha? [Teste o ${config.app.name} grátis](${config.app.url}) e controle seus gastos com IA, multi-moeda e relatórios que fazem sentido.`,
+    `Quer ver isso funcionando na prática? [Comece grátis com o ${config.app.name}](${config.app.url}) — 7 dias para organizar suas finanças sem complicação.`,
+    `O próximo passo é seu. [Teste o ${config.app.name} grátis por 7 dias](${config.app.url}) e descubra para onde seu dinheiro está indo de verdade.`,
   ];
 
   const ctaIndex = Math.floor(Math.random() * ctaVariations.length);

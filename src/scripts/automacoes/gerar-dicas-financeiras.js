@@ -1,3 +1,4 @@
+import { config } from '../../../site.config.ts';
 /**
  * Gerador de Dicas Financeiras (PT + EN + ES)
  * Executa via GitHub Actions diariamente às 6h BRT
@@ -197,7 +198,7 @@ image: "${data.imagePath}"
 category: "dicas"
 locale: "${data.locale}"
 tags: ${JSON.stringify(data.keywords || [])}
-author: "FinMoovi"
+author: "${config.content.defaultAuthor}"
 publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: ${isFeatured}

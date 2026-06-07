@@ -1,3 +1,4 @@
+import { config } from '../../../site.config.ts';
 /**
  * Gerador de Posts de Comparação (PT + EN + ES)
  * Executa sextas-feiras às 9h BRT via GitHub Actions
@@ -99,7 +100,7 @@ image: "${data.imagePath}"
 category: "investimentos"
 locale: "${data.locale}"
 tags: ${JSON.stringify(data.keywords || [])}
-author: "FinMoovi"
+author: "${config.content.defaultAuthor}"
 publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: false

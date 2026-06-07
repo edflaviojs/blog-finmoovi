@@ -2,12 +2,13 @@
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
+import { config } from '../../site.config';
 ---
 
 <BaseLayout
-  title="FinMoovi - Controle Financeiro Inteligente"
-  description="Organize suas finanças pessoais com o FinMoovi. Multi-moeda, categorização automática, relatórios visuais e funciona offline."
-  keywords={['app financeiro', 'controle de gastos', 'finanças pessoais', 'orçamento app']}
+  title={`${config.app.name} - ${config.brand.tagline.pt}`}
+  description={`${config.siteDescription.pt}`}
+  keywords={config.content.defaultKeywords.pt.split(', ')}
 >
   <Header />
 
@@ -22,10 +23,10 @@ import Footer from '@components/footer/Footer.astro';
             <span class="app-highlight">piloto automático</span>
           </h1>
           <p class="app-description">
-            O FinMoovi organiza seus gastos, acompanha investimentos e te ajuda a alcançar objetivos financeiros. Multi-moeda, offline e inteligente.
+            O ${config.app.name} organiza seus gastos, acompanha investimentos e te ajuda a alcançar objetivos financeiros. Multi-moeda, offline e inteligente.
           </p>
           <div class="app-actions">
-            <a href="https://finmoovi.com" class="app-btn primary" target="_blank" rel="noopener">
+            <a href={config.app.url} class="app-btn primary" target="_blank" rel="noopener">
               Começar Grátis
             </a>
             <a href="#funcionalidades" class="app-btn secondary">
@@ -81,7 +82,7 @@ import Footer from '@components/footer/Footer.astro';
         <div class="app-cta-box">
           <h2>Pronto para organizar suas finanças?</h2>
           <p>Comece grátis. Sem cartão de crédito. Cancele quando quiser.</p>
-          <a href="https://finmoovi.com" class="app-btn primary" target="_blank" rel="noopener">
+          <a href={config.app.url} class="app-btn primary" target="_blank" rel="noopener">
             Criar Conta Grátis →
           </a>
         </div>

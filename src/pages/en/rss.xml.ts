@@ -1,13 +1,14 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import { config } from '../../../site.config';
 
 export async function GET(context) {
   const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'en');
   const sorted = posts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
 
   return rss({
-    title: 'FinMoovi Blog — Personal Finance',
-    description: 'Practical personal finance tips, expense tracking, and financial education.',
+    title: `${config.brand.name} ${config.brand.blogSuffix} — ${config.content.niche.en}`,
+    description: config.siteDescription.en,
     site: context.site,
     items: sorted.slice(0, 20).map(post => ({
       title: post.data.title,

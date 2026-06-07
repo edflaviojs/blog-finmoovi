@@ -3,6 +3,7 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import PostGrid from '@components/posts/PostGrid.astro';
+import { config } from '../../site.config';
 import Sidebar from '@components/sidebar/Sidebar.astro';
 import SchemaWebsite from '@components/seo/SchemaWebsite.astro';
 import { getCollection } from 'astro:content';
@@ -143,9 +144,9 @@ const categoryLabels: Record<string, string> = {
 ---
 
 <BaseLayout
-  title="FinMoovi Blog"
-  description="Dicas práticas de finanças pessoais, controle de gastos e educação financeira. Organize sua vida financeira com o FinMoovi."
-  keywords={['finanças pessoais', 'controle financeiro', 'educação financeira', 'orçamento', 'investimentos']}
+  title={`${config.brand.name} ${config.brand.blogSuffix}`}
+  description={config.siteDescription.pt}
+  keywords={config.content.defaultKeywords.pt.split(', ')}
 >
   <SchemaWebsite />
   <Header />

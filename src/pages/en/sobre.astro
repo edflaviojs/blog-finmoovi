@@ -3,14 +3,17 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import { t } from '../../i18n/translations';
+import { config } from '../../../site.config';
 
 const lang = 'en';
+const brand = config.brand.name;
+const blogTitle = `${brand} ${config.brand.blogSuffix}`;
 ---
 
 <BaseLayout
-  title="About FinMoovi Blog"
-  description="Learn about FinMoovi Blog: accessible financial education, practical tips and free tools to organize your personal finances."
-  keywords={['about finmoovi', 'financial education', 'personal finance', 'who we are']}
+  title={`About ${blogTitle}`}
+  description={`Learn about ${blogTitle}: ${config.brand.tagline.en}. Practical tips and free tools.`}
+  keywords={[config.content.niche.en, 'education', 'tips', 'who we are']}
 >
   <Header />
 
@@ -73,12 +76,12 @@ const lang = 'en';
 
         <section class="sobre-section">
           <h2>{t(lang, 'sobre.contato')}</h2>
-          <p>{t(lang, 'sobre.contato.p1')} <a href="mailto:blog@finmoovi.com" class="sobre-link">blog@finmoovi.com</a>.</p>
+          <p>{t(lang, 'sobre.contato.p1')} <a href="mailto:${config.email.replyTo}" class="sobre-link">${config.email.replyTo}</a>.</p>
           <p>{t(lang, 'sobre.contato.p2')}</p>
           <div class="sobre-social">
-            <a href="https://instagram.com/finmoovi" target="_blank" rel="noopener" class="social-link">Instagram</a>
-            <a href="https://twitter.com/finmoovi" target="_blank" rel="noopener" class="social-link">Twitter/X</a>
-            <a href="https://youtube.com/@finmoovi" target="_blank" rel="noopener" class="social-link">YouTube</a>
+            <a href="#" target="_blank" rel="noopener" class="social-link">Instagram</a>
+            <a href="#" target="_blank" rel="noopener" class="social-link">Twitter/X</a>
+            <a href="#" target="_blank" rel="noopener" class="social-link">YouTube</a>
           </div>
         </section>
       </div>

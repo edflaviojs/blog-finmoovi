@@ -1,3 +1,4 @@
+import { config } from '../../../site.config.ts';
 /**
  * Email de Boas-Vindas Segmentado
  * Envia sequência automática para novos subscribers:
@@ -20,12 +21,12 @@ const SEQUENCES = {
       subject: '🎁 Bem-vindo! Seu guia de 30 dias está aqui',
       html: `
 <div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;color:#e6edf3;">
-  <div style="background:linear-gradient(135deg,#00F0FF,#A91079);padding:3px;border-radius:12px;">
+  <div style="background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});padding:3px;border-radius:12px;">
     <div style="background:#0d1117;padding:32px;border-radius:10px;">
       <h1 style="color:#fff;font-size:24px;margin:0 0 16px;">Bem-vindo ao FinMoovi Blog! 🎉</h1>
       <p style="color:#8b949e;line-height:1.7;">Estamos felizes em ter você aqui. A partir de agora, você vai receber dicas práticas de finanças pessoais toda semana.</p>
       <p style="color:#8b949e;line-height:1.7;">Para começar, preparamos algo especial:</p>
-      <a href="https://blog.finmoovi.com/guia-30-dias" style="display:inline-block;padding:14px 28px;background:linear-gradient(135deg,#00F0FF,#A91079);color:#fff;text-decoration:none;border-radius:9999px;font-weight:600;margin:16px 0;">📖 Acessar Guia de 30 Dias</a>
+      <a href="${config.siteUrl}/guia-30-dias" style="display:inline-block;padding:14px 28px;background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});color:#fff;text-decoration:none;border-radius:9999px;font-weight:600;margin:16px 0;">📖 Acessar Guia de 30 Dias</a>
       <p style="color:#8b949e;font-size:14px;margin-top:24px;">Nos próximos dias, vou te enviar mais conteúdos exclusivos. Fique de olho!</p>
       <p style="color:#8b949e;font-size:14px;">— Equipe FinMoovi</p>
     </div>
@@ -42,16 +43,16 @@ const SEQUENCES = {
     <p style="color:#8b949e;line-height:1.7;">Separei os 3 posts mais acessados para você não perder nada:</p>
     <div style="margin:20px 0;">
       <div style="padding:12px;background:#161b22;border-radius:8px;margin-bottom:8px;">
-        <a href="https://blog.finmoovi.com/posts/como-criar-orcamento-pessoal" style="color:#58a6ff;text-decoration:none;font-weight:600;">1. Como criar um orçamento pessoal em 5 passos</a>
+        <a href="${config.siteUrl}/posts/como-criar-orcamento-pessoal" style="color:#58a6ff;text-decoration:none;font-weight:600;">1. Como criar um orçamento pessoal em 5 passos</a>
       </div>
       <div style="padding:12px;background:#161b22;border-radius:8px;margin-bottom:8px;">
-        <a href="https://blog.finmoovi.com/posts/regra-50-30-20-guia-completo" style="color:#58a6ff;text-decoration:none;font-weight:600;">2. Regra 50-30-20: guia completo</a>
+        <a href="${config.siteUrl}/posts/regra-50-30-20-guia-completo" style="color:#58a6ff;text-decoration:none;font-weight:600;">2. Regra 50-30-20: guia completo</a>
       </div>
       <div style="padding:12px;background:#161b22;border-radius:8px;margin-bottom:8px;">
-        <a href="https://blog.finmoovi.com/posts/como-montar-reserva-emergencia" style="color:#58a6ff;text-decoration:none;font-weight:600;">3. Como montar uma reserva de emergência</a>
+        <a href="${config.siteUrl}/posts/como-montar-reserva-emergencia" style="color:#58a6ff;text-decoration:none;font-weight:600;">3. Como montar uma reserva de emergência</a>
       </div>
     </div>
-    <a href="https://blog.finmoovi.com" style="display:inline-block;padding:12px 24px;background:linear-gradient(135deg,#00F0FF,#A91079);color:#fff;text-decoration:none;border-radius:9999px;font-weight:600;">Ver todos os posts →</a>
+    <a href="${config.siteUrl}" style="display:inline-block;padding:12px 24px;background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});color:#fff;text-decoration:none;border-radius:9999px;font-weight:600;">Ver todos os posts →</a>
   </div>
 </div>`
     },
@@ -72,7 +73,7 @@ const SEQUENCES = {
       <li>📴 <strong style="color:#fff;">Offline:</strong> Funciona sem internet</li>
     </ul>
     <p style="color:#8b949e;line-height:1.7;">7 dias grátis. Sem cartão de crédito. Cancele quando quiser.</p>
-    <a href="https://finmoovi.com" style="display:inline-block;padding:14px 32px;background:linear-gradient(135deg,#00F0FF,#A91079);color:#fff;text-decoration:none;border-radius:9999px;font-weight:700;font-size:16px;margin:16px 0;">Experimentar FinMoovi Grátis →</a>
+    <a href="https://finmoovi.com" style="display:inline-block;padding:14px 32px;background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});color:#fff;text-decoration:none;border-radius:9999px;font-weight:700;font-size:16px;margin:16px 0;">Experimentar FinMoovi Grátis →</a>
     <p style="color:#484f58;font-size:12px;margin-top:24px;">Você recebeu este email porque se inscreveu no blog.finmoovi.com</p>
   </div>
 </div>`

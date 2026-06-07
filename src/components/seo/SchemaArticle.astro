@@ -1,4 +1,6 @@
 ---
+import { config } from '../../../site.config';
+
 interface Props {
   title: string;
   description: string;
@@ -11,7 +13,7 @@ interface Props {
   keywords?: string[];
 }
 
-const { title, description, image, url, publishedTime, modifiedTime, author = 'FinMoovi', category, keywords = [] } = Astro.props;
+const { title, description, image, url, publishedTime, modifiedTime, author = config.content.defaultAuthor, category, keywords = [] } = Astro.props;
 
 const schema = {
   "@context": "https://schema.org",
@@ -25,14 +27,14 @@ const schema = {
   "author": {
     "@type": "Organization",
     "name": author,
-    "url": "https://finmoovi.com"
+    "url": config.app.url
   },
   "publisher": {
     "@type": "Organization",
-    "name": "FinMoovi",
+    "name": config.brand.name,
     "logo": {
       "@type": "ImageObject",
-      "url": "https://blog.finmoovi.com/images/logo.png"
+      "url": `${config.siteUrl}/images/logo.png`
     }
   },
   "mainEntityOfPage": {

@@ -1,22 +1,25 @@
 ---
-const site = 'https://blog.finmoovi.com';
+import { config } from '../../../site.config';
+
+const site = config.siteUrl;
+const blogTitle = `${config.brand.name} ${config.brand.blogSuffix}`;
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "FinMoovi Blog",
+  "name": blogTitle,
   "url": site,
-  "description": "Blog de finanças pessoais com dicas práticas, cotações, glossário financeiro e ferramentas para organizar seu dinheiro.",
+  "description": config.siteDescription.pt,
   "publisher": {
     "@type": "Organization",
-    "name": "FinMoovi",
-    "url": "https://finmoovi.com",
+    "name": config.brand.name,
+    "url": config.app.url,
     "logo": {
       "@type": "ImageObject",
       "url": `${site}/images/logo.png`
     },
     "sameAs": [
-      "https://finmoovi.com"
+      config.app.url
     ]
   },
   "potentialAction": {
@@ -30,11 +33,11 @@ const websiteSchema = {
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "FinMoovi",
+  "name": config.app.name,
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Android, iOS, Web",
-  "url": "https://finmoovi.com",
-  "description": "App de finanças pessoais multi-moeda com controle offline e inteligência artificial.",
+  "url": config.app.url,
+  "description": config.app.features.pt.join('. ') + '.',
   "offers": {
     "@type": "Offer",
     "price": "0",
