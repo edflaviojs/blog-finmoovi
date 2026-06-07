@@ -4,6 +4,11 @@
   "siteUrl": "https://blog.finmoovi.com",
   "appUrl": "https://finmoovi.com",
   "appName": "FinMoovi",
+  "niche": {
+    "pt": "finanças pessoais",
+    "en": "personal finance",
+    "es": "finanzas personales"
+  },
   "allowedOrigins": [
     "https://blog.finmoovi.com",
     "https://blog-finmoovi.pages.dev",

@@ -39,7 +39,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
     // CTA
     'cta.badge': 'App Gratuito',
-    'cta.title': `Organize suas finanças com o ${appName}`,
+    'cta.title': config.app.ctaTitle.pt,
     'cta.desc': appFeatures.pt.slice(0, 3).join('. ') + '.',
     'cta.feature1': `✓ ${appFeatures.pt[0]}`,
     'cta.feature2': `✓ ${appFeatures.pt[1]}`,
@@ -145,7 +145,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
     // CTA
     'cta.badge': 'Free App',
-    'cta.title': `Organize your finances with ${appName}`,
+    'cta.title': config.app.ctaTitle.en,
     'cta.desc': appFeatures.en.slice(0, 3).join('. ') + '.',
     'cta.feature1': `✓ ${appFeatures.en[0]}`,
     'cta.feature2': `✓ ${appFeatures.en[1]}`,
@@ -251,7 +251,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
     // CTA
     'cta.badge': 'App Gratuita',
-    'cta.title': `Organiza tus finanzas con ${appName}`,
+    'cta.title': config.app.ctaTitle.es,
     'cta.desc': appFeatures.es.slice(0, 3).join('. ') + '.',
     'cta.feature1': `✓ ${appFeatures.es[0]}`,
     'cta.feature2': `✓ ${appFeatures.es[1]}`,

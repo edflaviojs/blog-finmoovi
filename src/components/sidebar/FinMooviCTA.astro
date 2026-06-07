@@ -13,7 +13,7 @@ const features = config.app.features;
 const texts = {
   pt: {
     badge: 'App Gratuito',
-    title: `Organize suas finanças com o ${appName}`,
+    title: config.app.ctaTitle.pt,
     desc: features.pt.slice(0, 3).join('. ') + '.',
     f1: `✓ ${features.pt[0]}`,
     f2: `✓ ${features.pt[1]}`,
@@ -24,7 +24,7 @@ const texts = {
   },
   en: {
     badge: 'Free App',
-    title: `Organize your finances with ${appName}`,
+    title: config.app.ctaTitle.en,
     desc: features.en.slice(0, 3).join('. ') + '.',
     f1: `✓ ${features.en[0]}`,
     f2: `✓ ${features.en[1]}`,
@@ -35,7 +35,7 @@ const texts = {
   },
   es: {
     badge: 'App Gratuita',
-    title: `Organiza tus finanzas con ${appName}`,
+    title: config.app.ctaTitle.es,
     desc: features.es.slice(0, 3).join('. ') + '.',
     f1: `✓ ${features.es[0]}`,
     f2: `✓ ${features.es[1]}`,

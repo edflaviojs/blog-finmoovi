@@ -87,6 +87,11 @@ export const config: SiteConfig = {
       en: 'Try Free — 7 days',
       es: 'Probar Gratis — 7 días',
     },
+    ctaTitle: {
+      pt: 'Organize suas finanças com o FinMoovi',
+      en: 'Organize your finances with FinMoovi',
+      es: 'Organiza tus finanzas con FinMoovi',
+    },
     ctaNote: {
       pt: 'Sem cartão de crédito. Cancele quando quiser.',
       en: 'No credit card required. Cancel anytime.',

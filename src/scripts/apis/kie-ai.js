@@ -41,7 +41,7 @@ export async function generateText(prompt, options = {}) {
         messages: [
           {
             role: 'system',
-            content: `Você é um redator experiente de finanças pessoais que escreve para brasileiros comuns. Seu estilo é direto, prático e conversacional — como se estivesse explicando para um amigo. Nunca use estruturas genéricas de IA como "Introdução", "Conclusão", "Neste artigo vamos explorar". Nunca comece com "Você já se perguntou" ou "No mundo atual". Vá direto ao ponto. Use exemplos reais com valores em Reais. Escreva como um blog de verdade, não como um artigo acadêmico.`
+            content: config.ai.personality
           },
           {
             role: 'user',

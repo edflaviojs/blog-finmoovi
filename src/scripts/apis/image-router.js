@@ -15,6 +15,7 @@
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { saveSVGImage } from './svg-generator.js';
+import { config } from '../../../site.config.ts';
 
 // --- Configuration ---
 
@@ -50,7 +51,7 @@ const GLOSSARIO_IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario'
 
 const PROMPT_TEMPLATES = {
   cover: (topic) =>
-    `Professional lifestyle photography related to personal finance and ${topic}, featuring real people in natural settings, warm authentic moments, couple or individual managing money happily, modern clean aesthetic, soft natural lighting, shallow depth of field, editorial quality, neutral soft background, ABSOLUTELY NO TEXT, NO LETTERS, NO WORDS, NO NUMBERS, NO CHARACTERS, NO WRITING, NO CAPTIONS, NO LABELS, NO WATERMARK, NO LOGOS, NO SIGNATURES, completely text-free photograph only`,
+    `Professional lifestyle photography related to ${config.content.niche.en} and ${topic}, featuring real people in natural settings, warm authentic moments, couple or individual managing money happily, modern clean aesthetic, soft natural lighting, shallow depth of field, editorial quality, neutral soft background, ABSOLUTELY NO TEXT, NO LETTERS, NO WORDS, NO NUMBERS, NO CHARACTERS, NO WRITING, NO CAPTIONS, NO LABELS, NO WATERMARK, NO LOGOS, NO SIGNATURES, completely text-free photograph only`,
   glossary: (topic) =>
     `Abstract elegant visualization representing the financial concept of ${topic}, minimalist premium quality, soft gradient lighting, professional editorial style, geometric shapes blended with subtle human elements, neutral soft gradient background, cyan and magenta accent colors, ABSOLUTELY NO TEXT, NO LETTERS, NO WORDS, NO NUMBERS, NO CHARACTERS, NO WRITING, NO CAPTIONS, NO LABELS, NO WATERMARK, NO SIGNATURES, completely text-free image only`,
   inline: (topic) =>

@@ -16,6 +16,7 @@ const output = {
   siteUrl: config.siteUrl,
   appUrl: config.app.url,
   appName: config.app.name,
+  niche: config.content.niche,
   allowedOrigins: [
     `https://${config.brand.domains.blog}`,
     `https://${config.brand.domains.cfPages}`,

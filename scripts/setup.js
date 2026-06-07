@@ -177,6 +177,11 @@ Generate a JSON object with EXACTLY this structure (no markdown, just raw JSON):
     "en": "CTA button text in english",
     "es": "CTA button text in spanish"
   },
+  "ctaTitle": {
+    "pt": "Main CTA headline in portuguese (e.g. 'Organize X com o BrandName')",
+    "en": "Main CTA headline in english",
+    "es": "Main CTA headline in spanish"
+  },
   "ctaNote": {
     "pt": "Short reassurance in portuguese (e.g. 'Sem cartão de crédito.')",
     "en": "Short reassurance in english",
@@ -236,6 +241,11 @@ function getGenericDefaults(brandName, niche_pt, niche_en, niche_es) {
       es: ['Función principal 1', 'Función principal 2', 'Función principal 3', 'Función principal 4'],
     },
     ctaText: { pt: 'Experimentar Grátis', en: 'Try Free', es: 'Probar Gratis' },
+    ctaTitle: {
+      pt: `Organize ${niche_pt} com o ${brandName}`,
+      en: `Organize your ${niche_en} with ${brandName}`,
+      es: `Organiza tus ${niche_es} con ${brandName}`,
+    },
     ctaNote: { pt: 'Sem cartão de crédito.', en: 'No credit card required.', es: 'Sin tarjeta de crédito.' },
     siteDescription: {
       pt: `Dicas e conteúdo sobre ${niche_pt}. Blog oficial do ${brandName}.`,
@@ -392,6 +402,7 @@ export const config: SiteConfig = {
     url: '${appUrl}',
     features: ${JSON.stringify(data.features, null, 6)},
     ctaText: ${JSON.stringify(data.ctaText, null, 6)},
+    ctaTitle: ${JSON.stringify(data.ctaTitle, null, 6)},
     ctaNote: ${JSON.stringify(data.ctaNote, null, 6)},
   },
 

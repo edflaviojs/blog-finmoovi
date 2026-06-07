@@ -132,31 +132,33 @@ export async function onRequestOptions(context) {
 }
 
 function getWelcomeEmailHTML(email, lang = 'pt') {
+  const brand = siteConfig.brandName;
+  const niche = siteConfig.niche || { pt: 'finanças pessoais', en: 'personal finance', es: 'finanzas personales' };
   const texts = {
     pt: {
-      title: 'Bem-vindo à Newsletter ${siteConfig.brandName}!',
-      subtitle: 'Você agora receberá as melhores dicas de finanças pessoais toda semana.',
+      title: 'Bem-vindo à Newsletter ' + brand + '!',
+      subtitle: 'Você agora receberá as melhores dicas de ' + niche.pt + ' toda semana.',
       listTitle: 'O que você vai receber:',
-      items: '✓ Dicas práticas de controle financeiro<br>✓ Resumo semanal de cotações (USD, EUR, BTC)<br>✓ Ferramentas e calculadoras exclusivas<br>✓ Novos termos do glossário financeiro',
-      cta: 'Conhecer o App ${siteConfig.brandName}',
+      items: '✓ Dicas práticas<br>✓ Resumo semanal<br>✓ Ferramentas e calculadoras exclusivas<br>✓ Novos termos do glossário',
+      cta: 'Conhecer o App ' + brand,
       unsub: 'Não quer mais receber?',
       unsubLink: 'Cancelar inscrição'
     },
     en: {
-      title: 'Welcome to ${siteConfig.brandName} Newsletter!',
-      subtitle: 'You will now receive the best personal finance tips every week.',
+      title: 'Welcome to ' + brand + ' Newsletter!',
+      subtitle: 'You will now receive the best ' + niche.en + ' tips every week.',
       listTitle: 'What you will receive:',
-      items: '✓ Practical financial control tips<br>✓ Weekly exchange rate summary (USD, EUR, BTC)<br>✓ Exclusive tools and calculators<br>✓ New financial glossary terms',
-      cta: 'Discover ' + siteConfig.brandName + ' App',
+      items: '✓ Practical tips<br>✓ Weekly summary<br>✓ Exclusive tools and calculators<br>✓ New glossary terms',
+      cta: 'Discover ' + brand + ' App',
       unsub: "Don't want to receive anymore?",
       unsubLink: 'Unsubscribe'
     },
     es: {
-      title: '¡Bienvenido a la Newsletter ${siteConfig.brandName}!',
-      subtitle: 'Ahora recibirás los mejores consejos de finanzas personales cada semana.',
+      title: '¡Bienvenido a la Newsletter ' + brand + '!',
+      subtitle: 'Ahora recibirás los mejores consejos de ' + niche.es + ' cada semana.',
       listTitle: 'Lo que recibirás:',
-      items: '✓ Consejos prácticos de control financiero<br>✓ Resumen semanal de cotizaciones (USD, EUR, BTC)<br>✓ Herramientas y calculadoras exclusivas<br>✓ Nuevos términos del glosario financiero',
-      cta: 'Conocer la App ${siteConfig.brandName}',
+      items: '✓ Consejos prácticos<br>✓ Resumen semanal<br>✓ Herramientas y calculadoras exclusivas<br>✓ Nuevos términos del glosario',
+      cta: 'Conocer la App ' + brand,
       unsub: '¿No quieres recibir más?',
       unsubLink: 'Cancelar suscripción'
     }
