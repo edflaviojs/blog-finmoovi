@@ -23,7 +23,7 @@ Criar um [orçamento pessoal](/glossario/orcamento-pessoal) não precisa ser com
 Sem um orçamento, você está navegando às cegas. Pesquisas mostram que **78% dos brasileiros** que mantêm um orçamento conseguem economizar mais do que aqueles que não fazem nenhum controle.
 
 Um bom orçamento te ajuda a:
-- Saber exatamente para onde vai seu dinheiro
+- Saber exatamente para onde vai seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz)
 - Identificar gastos desnecessários
 - Criar uma [reserva de emergência](/glossario/reserva-de-emergencia)
 - Alcançar objetivos financeiros (viagem, casa, aposentadoria)
@@ -68,8 +68,9 @@ O orçamento não é estático. Revise semanalmente e ajuste conforme necessári
 
 ## Comece hoje
 
-Não espere o mês que vem. O melhor momento para começar é agora. Pegue seu celular, abra o FinMoovi e registre seus primeiros gastos. Em uma semana, você já terá uma visão clara de para onde vai seu dinheiro.
+Não espere o mês que vem. O melhor momento para começar é agora. Pegue seu celular, abra o FinMoovi e registre seus primeiros gastos. Em uma semana, você já terá uma visão clara de para onde vai seu [dinheiro](/posts/economize-na-conta-de-energia).
 
 ---
 
 **Quer colocar isso em prática?** [Teste o FinMoovi grátis por 7 dias](/app) e veja como é fácil controlar suas finanças com categorização automática e relatórios visuais.
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"Como Criar um Orçamento Pessoal em 5 Passos Simples","step":[{"@type":"HowToStep","position":1,"name":"Liste todas as suas receitas","text":"Comece pelo que entra. Some todas as fontes de renda: - Salário líquido - Freelances e trabalhos extras - Rendimentos de investimentos - Aluguéis ou outras fontes Dica: Use sempre o valor líquido o qu"},{"@type":"HowToStep","position":2,"name":"Mapeie seus gastos fixos","text":"Gastos fixos são aqueles que não mudam ou mudam pouco todo mês: - Aluguel/financiamento/glossario/financiamento - Contas de luz, água, internet - Plano de saúde - Transporte combustível, transporte pú"},{"@type":"HowToStep","position":3,"name":"Identifique gastos variáveis","text":"Estes são os que mais impactam seu orçamento: - Alimentação supermercado + delivery - Lazer e entretenimento - Roupas e compras pessoais - Presentes e imprevistos"},{"@type":"HowToStep","position":4,"name":"Aplique a regra 50-30-20","text":"Distribua sua renda assim: - 50% para necessidades moradia, alimentação, transporte - 30% para desejos lazer, compras, hobbies - 20% para objetivos financeiros poupança/glossario/poupanca, investiment"},{"@type":"HowToStep","position":5,"name":"Acompanhe e ajuste","text":"O orçamento não é estático. Revise semanalmente e ajuste conforme necessário. Com um app de controle financeiro como o FinMoovi, isso fica automático — ele categoriza seus gastos e mostra em tempo rea"}]} -->

@@ -16,13 +16,13 @@ seo:
   keywords: ["erros financeiros", "finanças para iniciantes", "como economizar", "controle financeiro"]
 ---
 
-Todo mundo comete erros com dinheiro — especialmente no começo. A boa notícia é que a maioria deles é evitável quando você sabe o que procurar.
+Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) — especialmente no começo. A boa notícia é que a maioria deles é evitável quando você sabe o que procurar.
 
 ## 1. Não ter uma [reserva de emergência](/glossario/reserva-de-emergencia)
 
 **O erro:** Viver sem nenhuma reserva, contando que nada vai dar errado.
 
-**A solução:** Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de gastos guardados. Deixe em um investimento com [liquidez](/glossario/liquidez) diária ([CDB](/glossario/cdb) ou Tesouro [Selic](/glossario/selic)).
+**A solução:** Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de gastos guardados. Deixe em um investimento com [liquidez](/glossario/liquidez) diária ([CDB](/glossario/cdb) ou Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))).
 
 ## 2. Gastar mais do que ganha
 
@@ -75,3 +75,4 @@ Todo mundo comete erros com dinheiro — especialmente no começo. A boa notíci
 ---
 
 **Quer evitar esses erros?** [Comece com o FinMoovi](/app) — ele te ajuda a acompanhar gastos, definir metas e manter o controle sem esforço.
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"7 Erros Financeiros Que Todo Iniciante Comete (E Como Evitar)","step":[{"@type":"HowToStep","position":1,"name":"Não ter uma [reserva de emergência](/glossario/reserva-de-emergencia)","text":"O erro: Viver sem nenhuma reserva, contando que nada vai dar errado. A solução: Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de gastos guardados. Deixe em um investimento com liquidez/glossar"},{"@type":"HowToStep","position":2,"name":"Gastar mais do que ganha","text":"O erro: Usar cartão de crédito como extensão da renda, parcelando tudo. A solução: Se a fatura do cartão passa de 30% da sua renda, você está gastando demais. Congele o cartão por um mês e use só débi"},{"@type":"HowToStep","position":3,"name":"Não acompanhar os gastos","text":"O erro: Não saber para onde vai o dinheiro. \"Sumiu e não sei como.\" A solução: Registre cada gasto por pelo menos 30 dias. Com o FinMoovi, basta abrir o app e registrar — leva 5 segundos. Depois de um"},{"@type":"HowToStep","position":4,"name":"Ignorar gastos pequenos","text":"O erro: Achar que R$ 15 aqui e R$ 20 ali não fazem diferença. A solução: Faça a conta anual. Um café de R$ 8/dia = R$ 2.920/ano. Não é para cortar tudo, mas para decidir conscientemente."},{"@type":"HowToStep","position":5,"name":"Não ter objetivos financeiros","text":"O erro: Economizar \"para o futuro\" sem um objetivo claro. A solução: Defina metas específicas: \"R$ 10.000 para viagem em dezembro\" ou \"R$ 50.000 para entrada do apartamento em 2 anos\". Metas claras mo"},{"@type":"HowToStep","position":6,"name":"Investir sem entender","text":"O erro: Colocar dinheiro em algo porque \"todo mundo está fazendo\" cripto, ações/glossario/acoes da moda, etc. A solução: Antes de investir, monte sua reserva de emergência. Depois, comece pelo básico:"},{"@type":"HowToStep","position":7,"name":"Não se pagar primeiro","text":"O erro: Guardar \"o que sobra\" no final do mês spoiler: nunca sobra. A solução: Assim que o salário cai, transfira automaticamente 10-20% para investimentos. Viva com o que resta."}]} -->

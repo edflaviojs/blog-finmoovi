@@ -47,7 +47,7 @@ To really understand where you can save energy, it's essential to monitor your e
 
 
 ## Start Today
-Don't wait any longer to start saving on your energy bill. With small changes in your daily routine and investing in efficient appliances, you can make a big difference in your monthly budget. Remember, every real saved is a step towards financial security and peace of mind.
+Don't wait any longer to start saving on your energy bill. With small changes in your daily routine and investing in efficient appliances, you can make a big difference in your monthly [budget](/en/posts/50-30-20-rule-complete-guide). Remember, every real saved is a step towards financial security and peace of mind.
 
 ![Comece hoje](/images/posts/economize-na-conta-de-energia-5.svg)
 

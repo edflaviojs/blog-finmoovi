@@ -19,12 +19,12 @@ seo:
 ## Finanças em Comum
 Quando você está em um relacionamento, é importante que você e seu parceiro estejam alinhados em relação às finanças. Isso significa que vocês devem ter uma visão clara de como estão gastando seu dinheiro e como podem economizar juntos. Vamos supor que você e seu parceiro ganhem R$ 5.000 e R$ 6.000 por mês, respectivamente. Se vocês não tiverem um plano, é fácil gastar todo o dinheiro sem saber para onde ele vai.
 
-Uma boa ideia é criar um orçamento juntos, considerando todas as despesas mensais, como aluguel, comida, transporte, etc. Por exemplo, se vocês pagam R$ 2.500 de aluguel e R$ 1.000 de comida por mês, já são R$ 3.500 gastos fixos. É importante também considerar despesas variáveis, como entretenimento e lazer.
+Uma boa ideia é criar um [orçamento](/posts/como-criar-orcamento-pessoal) juntos, considerando todas as despesas mensais, como aluguel, comida, transporte, etc. Por exemplo, se vocês pagam R$ 2.500 de aluguel e R$ 1.000 de comida por mês, já são R$ 3.500 gastos fixos. É importante também considerar despesas variáveis, como entretenimento e lazer.
 
 ## Gastos e Economia
 É fundamental que você e seu parceiro tenham uma conversa aberta sobre gastos e economia. **Dica prática:** crie uma categoria de "dinheiro para diversão" no seu orçamento, para que vocês possam gastar um pouco de dinheiro em coisas que享am, sem se sentir culpados. Por exemplo, vocês podem decidir que vão gastar R$ 500 por mês em restaurantes e cinemas.
 
-Aqui estão algumas dicas para economizar dinheiro:
+Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para economizar dinheiro:
 * Corte gastos desnecessários, como assinaturas de serviços que não usam
 * Faça um plano de alimentação e compre alimentos em bulk
 * Use o transporte público ou bicicleta em vez de carro

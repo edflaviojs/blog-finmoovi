@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Reduzindo o Consumo
-Imagine que você paga cerca de R$ 200 por mês em sua conta de energia. Isso pode parecer um valor razoável, mas se você souber como reduzir esse consumo, pode economizar cerca de R$ 50 por mês, o que é equivalente a R$ 600 por ano. Isso pode ser alcançado com algumas mudanças simples em seu dia a dia. Por exemplo, se você tem um salário de R$ 5.000 por mês, uma redução de R$ 50 na conta de energia pode significar uma economia de 1% do seu salário.
+Imagine que você paga cerca de R$ 200 por mês em sua conta de energia. Isso pode parecer um valor razoável, mas se você souber como reduzir esse consumo, pode economizar cerca de R$ 50 por mês, o que é equivalente a R$ 600 por ano. Isso pode ser alcançado com algumas mudanças simples em seu dia a dia. Por exemplo, se você tem um salário de R$ 5.000 por mês, uma redução de R$ 50 na conta de energia pode significar uma [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) de 1% do seu salário.
 
 Uma das principais razões para o alto consumo de energia é o uso excessivo de aparelhos eletrônicos. Muitas pessoas deixam a televisão, o computador e outros aparelhos ligados mesmo quando não estão em uso. Isso pode aumentar significativamente a conta de energia. Além disso, o uso de lâmpadas incandescentes também pode contribuir para o alto consumo de energia.
 
@@ -36,7 +36,7 @@ Desligar os aparelhos eletrônicos quando não estão em uso é outra forma de r
 Além disso, é importante verificar se os aparelhos que você está comprando têm a certificação de eficiência energética. Isso pode garantir que você esteja comprando aparelhos que vão consumir menos energia e durar mais tempo.
 
 ## Economia no Dia a Dia
-Aqui estão algumas dicas para economizar energia no dia a dia:
+Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para economizar energia no dia a dia:
 * Desligue as luzes e aparelhos quando não estiverem em uso
 * Use lâmpadas LED em vez de lâmpadas incandescentes
 * Desligue o computador e a televisão quando não estiverem em uso

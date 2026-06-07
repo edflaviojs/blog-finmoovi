@@ -31,7 +31,7 @@ Para aplicar a regra dos 30 dias, você precisa criar um sistema para registrar 
 
 
 ## Vantagens da Regra dos 30 Dias
-A regra dos 30 dias tem várias vantagens. Além de ajudar a evitar compras impulsivas, ela também ajuda a reduzir o estresse financeiro e a aumentar a consciência sobre as finanças pessoais. Quando você espera 30 dias antes de comprar algo, você tem tempo para pensar sobre se o item é realmente necessário e se você pode affordá-lo.
+A regra dos 30 dias tem várias vantagens. Além de ajudar a evitar compras impulsivas, ela também ajuda a reduzir o estresse financeiro e a aumentar a consciência sobre as [finanças pessoais](/posts/7-erros-financeiros-iniciante). Quando você espera 30 dias antes de comprar algo, você tem tempo para pensar sobre se o item é realmente necessário e se você pode affordá-lo.
 
 Por exemplo, imagine que você ganha R$ 4.000 por mês e deseja comprar um novo smartphone que custa R$ 2.000. Se você esperar 30 dias, você pode descobrir que não é tão necessário assim e que você pode usar o dinheiro para pagar uma dívida ou investir em um fundo de investimento.
 
@@ -46,7 +46,7 @@ Um dos principais desafios da regra dos 30 dias é manter a disciplina e não ce
 
 
 ## Comece hoje
-Não espere mais para começar a usar a regra dos 30 dias. Hoje é o dia para começar a economizar dinheiro e a evitar compras impulsivas. Lembre-se de que a regra dos 30 dias é uma técnica simples, mas eficaz, e que pode fazer uma grande diferença em suas finanças pessoais.
+Não espere mais para começar a usar a regra dos 30 dias. Hoje é o dia para começar a economizar dinheiro e a evitar compras impulsivas. Lembre-se de que a regra dos 30 dias é uma técnica simples, mas eficaz, e que pode fazer uma grande diferença em suas [finanças pessoais](/posts/como-criar-orcamento-pessoal).
 
 ![Comece hoje](/images/posts/regra-dos-30-dias-para-compras-5.svg)
 

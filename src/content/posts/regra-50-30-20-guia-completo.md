@@ -65,7 +65,7 @@ O segredo é monitorar. Com o **FinMoovi**, você configura as categorias uma ve
 - Dívidas altas (priorize quitação antes)
 - [Renda variável](/glossario/renda-variavel) (use a média dos últimos 3 meses)
 
-Nesses casos, comece com qualquer percentual de economia — mesmo 5% já é um começo.
+Nesses casos, comece com qualquer percentual de [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) — mesmo 5% já é um começo.
 
 ---
 

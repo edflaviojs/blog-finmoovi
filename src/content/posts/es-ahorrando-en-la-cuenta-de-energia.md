@@ -35,7 +35,7 @@ Apagar los aparatos electrónicos cuando no están en uso es otra forma de reduc
 
 Además, es importante verificar si los aparatos que estás comprando tienen la certificación de eficiencia energética. Esto puede garantizar que estás comprando aparatos que van a consumir menos energía y durar más tiempo.
 
-## Economía en el Día a Día
+## [Economía](/es/posts/ahorrando-en-la-cuenta-del-mercado) en el Día a Día
 Aquí hay algunas sugerencias para ahorrar energía en el día a día:
 * Apaga las luces y aparatos cuando no estén en uso
 * Usa lámparas LED en lugar de lámparas incandescentes
@@ -43,7 +43,7 @@ Aquí hay algunas sugerencias para ahorrar energía en el día a día:
 * Usa un termostato para controlar la temperatura en tu casa
 
 ## Control de Consumo
-Es importante verificar regularmente la cuenta de energía para saber cuánto estás consumiendo y dónde está el mayor consumo. Esto puede ayudar a identificar áreas donde puedes reducir el consumo y ahorrar dinero.
+Es importante verificar regularmente la cuenta de energía para saber cuánto estás consumiendo y dónde está el mayor consumo. Esto puede ayudar a identificar áreas donde puedes reducir el consumo y ahorrar [dinero](/es/posts/organizar-finanzas-autonomo).
 
 ![Economia no Dia a Dia](/images/posts/economize-na-conta-de-energia-3.svg)
 

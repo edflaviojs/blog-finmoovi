@@ -16,13 +16,13 @@ seo:
   keywords: ["regla 50-30-20", "cómo dividir salario", "organizar finanzas", "método presupuesto"]
 ---
 
-La regla 50-30-20 es uno de los métodos más simples y efectivos para administrar tu dinero. Creada por la Senadora Elizabeth Warren, divide tu ingreso después de impuestos en tres categorías.
+La regla 50-30-20 es uno de los métodos más simples y efectivos para administrar tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Creada por la Senadora Elizabeth Warren, divide tu ingreso después de impuestos en tres categorías.
 
 ## Cómo Funciona la Regla 50-30-20
 
 - **50% — Necesidades:** Gastos esenciales que no puedes evitar
 - **30% — Deseos:** Cosas que disfrutas pero no necesitas estrictamente
-- **20% — Ahorro y Deudas:** Construyendo tu futuro
+- **20% — [Ahorro](/es/posts/regla-de-los-30-dias-para-compras) y Deudas:** Construyendo tu futuro
 
 ## Ejemplo Práctico: $4.000 de Ingreso Mensual
 

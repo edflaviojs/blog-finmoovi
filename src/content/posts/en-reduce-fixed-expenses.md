@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introduction
-Effectively managing personal finances is crucial to achieving financial stability and securing a safe future. One of the main areas of attention is reducing monthly fixed expenses, which can consume a large portion of our income. In this article, we'll explore practical tips and strategies to reduce these expenses and save money.
+Effectively managing personal finances is crucial to achieving financial stability and securing a safe future. One of the main areas of attention is reducing monthly fixed expenses, which can consume a large portion of our income. In this article, we'll explore practical tips and strategies to reduce these expenses and save [money](/en/posts/30-day-rule-for-purchases).
 
 ## Understanding Fixed Expenses
 Before you start reducing fixed expenses, it's important to understand what they are. Fixed expenses are regular costs that typically occur every month and don't vary much in value. Examples include:
@@ -38,7 +38,7 @@ Often, it's possible to negotiate prices with service providers. For example, yo
 Here are some practical tips to reduce fixed expenses:
 * **Review your bills**: Check for errors or improper charges on your bills.
 * **Change your plan**: If you're paying for a service plan that you're not fully using, switch to a cheaper plan.
-* **Use technology**: Use tools and apps to help manage your finances and reduce expenses. FinMoovi, for example, offers features to help control expenses and create a personalized budget.
+* **Use technology**: Use tools and apps to help manage your finances and reduce expenses. FinMoovi, for example, offers features to help control expenses and create a personalized [budget](/en/posts/50-30-20-rule-complete-guide).
 * **Consider sharing**: If you live alone, consider sharing rent or other expenses with a roommate.
 
 ## Example of Expense Reduction

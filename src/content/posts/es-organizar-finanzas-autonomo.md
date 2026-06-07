@@ -24,7 +24,7 @@ Imagina que tienes un mes de R$ 8.000 y otro de R$ 3.000. Si tus gastos esencial
 ## Control de Gastos
 Tener un control preciso de tus gastos es fundamental para cualquier plan financiero, especialmente para autónomos. Esto incluye desde cuentas de agua y luz hasta gastos con combustible y mantenimiento del vehículo, si aplica. Una herramienta útil puede ser una aplicación de control de gastos, que permite registrar y categorizar todos los gastos a lo largo del mes. Con esto, puedes identificar áreas donde estás gastando más de lo necesario y hacer ajustes.
 
-Por ejemplo, si notas que estás gastando R$ 1.500 por mes con comida fuera, puede ser una buena idea reducir ese gasto a R$ 1.000, cocinando en casa con más frecuencia. Esta economía de R$ 500 puede ser destinada a la reserva de emergencia o a inversiones.
+Por ejemplo, si notas que estás gastando R$ 1.500 por mes con comida fuera, puede ser una buena idea reducir ese gasto a R$ 1.000, cocinando en casa con más frecuencia. Esta [economía](/es/posts/ahorrando-en-la-cuenta-de-energia) de R$ 500 puede ser destinada a la reserva de emergencia o a inversiones.
 
 ![Controle de Despesas](/images/posts/organizar-financas-autonomo-1.svg)
 
@@ -33,7 +33,7 @@ Por ejemplo, si notas que estás gastando R$ 1.500 por mes con comida fuera, pue
 ## Planificación Tributaria
 Como autónomo, eres responsable de tu propio recolimiento de impuestos, lo que puede ser un desafío. Es importante entender cómo funcionan los impuestos para autónomos y cómo planificar tu tributación de forma eficaz. Esto puede incluir la deducción de gastos profesionales, como materiales de trabajo, uso de vehículo y hasta parte de la cuenta de luz y internet de tu casa, si trabajas desde casa.
 
-**Consejo práctico:** Mantén todos los recibos y notas fiscales de gastos que puedan ser deducidos de tu impuesto de renta. Esto puede ahorrar una cantidad significativa de dinero al final del año.
+**Consejo práctico:** Mantén todos los recibos y notas fiscales de gastos que puedan ser deducidos de tu impuesto de renta. Esto puede ahorrar una cantidad significativa de [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) al final del año.
 
 ## Invertir para el Futuro
 Además de gestionar tus finanzas actuales, es crucial pensar en el futuro. Esto incluye planificar la jubilación, invertir en educación o en un negocio propio, y hasta comprar una casa. Para autónomos, invertir puede parecer un desafío debido a la [renta variable](/es/glossario/es-renda-variavel), pero existen estrategias que pueden ayudar.

@@ -17,7 +17,7 @@ seo:
 ---
 
 ## 30-Day Rule: What is it?
-The 30-day rule is a simple and effective technique to avoid impulse purchases and save money. The idea is that, before buying something that's not essential, you should wait 30 days. This helps determine if the item is really necessary or if the desire to buy it was just an impulse.
+The 30-day rule is a simple and effective technique to avoid impulse purchases and save [money](/en/posts/organizing-finances-as-a-freelancer). The idea is that, before buying something that's not essential, you should wait 30 days. This helps determine if the item is really necessary or if the desire to buy it was just an impulse.
 
 For example, imagine you're walking through a mall and see a watch that costs R$ 500. You might think it's an amazing watch and that you need it, but if you wait 30 days, you might discover it's not that necessary after all. Maybe you have a watch at home that's still working fine, or maybe you can find a cheaper option online.
 
@@ -33,7 +33,7 @@ To apply the 30-day rule, you need to create a system to record the purchases yo
 ## Advantages of the 30-Day Rule
 The 30-day rule has several advantages. In addition to helping you avoid impulse purchases, it also helps reduce financial stress and increase awareness of personal finances. When you wait 30 days before buying something, you have time to think about whether the item is really necessary and if you can afford it.
 
-For example, imagine you earn R$ 4,000 per month and want to buy a new smartphone that costs R$ 2,000. If you wait 30 days, you might discover it's not that necessary after all and that you can use the money to pay off a debt or invest in a fund.
+For example, imagine you earn R$ 4,000 per month and want to buy a new smartphone that costs R$ 2,000. If you wait 30 days, you might discover it's not that necessary after all and that you can use the [money](/en/posts/save-on-your-market-bill) to pay off a debt or invest in a fund.
 
 ## Exceptions to the 30-Day Rule
 Although the 30-day rule is a useful technique, there are some exceptions. If you need something essential, like food or medicine, you don't need to wait 30 days. Additionally, if you're planning a major purchase, like a car or a house, it's better to do more in-depth research and not just rely on the 30-day rule.

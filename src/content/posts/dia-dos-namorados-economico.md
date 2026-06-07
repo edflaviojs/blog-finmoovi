@@ -21,9 +21,9 @@ translate: true
 ## Planejando o Dia dos Namorados com Responsabilidade
 O Dia dos Namorados é uma data especial para celebrar o amor e a união com aqueles que amamos. No entanto, não é necessário comprometer nossas finanças para fazer deste dia um momento inesquecível. Com um pouco de criatividade e planejamento, é possível ter um Dia dos Namorados econômico e ao mesmo tempo significativo.
 
-Para começar, é importante definir um orçamento para as comemorações. Considerando que o salário médio no Brasil varia de R$ 2.500 a R$ 4.000, é razoável reservar entre 5% a 10% deste valor para o Dia dos Namorados. Isso significa que, dependendo do seu salário, você poderia ter um orçamento de R$ 125 a R$ 400.
+Para começar, é importante definir um [orçamento](/posts/como-criar-orcamento-pessoal) para as comemorações. Considerando que o salário médio no Brasil varia de R$ 2.500 a R$ 4.000, é razoável reservar entre 5% a 10% deste valor para o Dia dos Namorados. Isso significa que, dependendo do seu salário, você poderia ter um orçamento de R$ 125 a R$ 400.
 
-## Dicas para um Presente Econômico
+## [Dicas](/posts/7-erros-financeiros-iniciante) para um Presente Econômico
 Um presente não precisa ser caro para ser significativo. Aqui estão algumas dicas para encontrar o presente perfeito sem quebrar o banco:
 - Faça algo com as próprias mãos: Um presente feito com carinho e dedicação pode ser muito mais especial do que algo comprado em uma loja.
 - Opte por experiências: Em vez de presentear com objetos, considere dar experiências, como ingressos para um show, um jantar em um restaurante ou uma aula de culinária juntos.

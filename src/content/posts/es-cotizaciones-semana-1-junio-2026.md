@@ -18,7 +18,7 @@ seo:
 
 ## Resumen Semanal del Mercado Financiero Brasileño
 
-La semana del 28 de mayo al 4 de junio de 2026 trajo cambios significativos en el mercado financiero brasileño. En este resumen, exploraremos las tendencias del dólar y euro, el impacto de la Selic en las inversiones y ofreceremos consejos prácticos para los inversores individuales.
+La semana del 28 de mayo al 4 de junio de 2026 trajo cambios significativos en el mercado financiero brasileño. En este resumen, exploraremos las tendencias del dólar y euro, el impacto de la Selic en las inversiones y ofreceremos [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
 
 ## Dólar y Euro: Tendencia de la Semana
 
@@ -26,7 +26,7 @@ El dólar estadounidense cerró la semana en R$ 5.03, mostrando una leve estabil
 
 ## La Selic y su Impacto en las Inversiones
 
-La tasa de interés Selic, establecida por el Banco Central de Brasil, continuó siendo un tema de interés durante la semana. Con una tasa actual que busca controlar la [inflación](/es/glossario/es-inflacao) y estimular la economía, los inversores deben considerar cómo estas decisiones pueden afectar sus carteras. Una Selic más alta puede hacer que las inversiones en [renta fija](/es/glossario/es-renda-fixa) sean más atractivas, pero también puede aumentar el costo del crédito para consumidores y empresas. Es fundamental entender cómo estas decisiones pueden influir en las estrategias de inversión a corto y largo plazo.
+La tasa de interés Selic, establecida por el Banco Central de Brasil, continuó siendo un tema de interés durante la semana. Con una tasa actual que busca controlar la [inflación](/es/glossario/es-inflacao) y estimular la [economía](/es/posts/ahorrando-en-la-cuenta-de-energia), los inversores deben considerar cómo estas decisiones pueden afectar sus carteras. Una Selic más alta puede hacer que las inversiones en [renta fija](/es/glossario/es-renda-fixa) sean más atractivas, pero también puede aumentar el costo del crédito para consumidores y empresas. Es fundamental entender cómo estas decisiones pueden influir en las estrategias de inversión a corto y largo plazo.
 
 ## Consejo Práctico para el Inversor Individual
 

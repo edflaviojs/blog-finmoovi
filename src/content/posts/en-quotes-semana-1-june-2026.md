@@ -24,7 +24,7 @@ A semana que passou foi marcada por uma certa estabilidade no mercado de câmbio
 
 O dólar apresentou uma leve alta ao longo da semana, mas nada que tenha causado grandes impactos nos investimentos. Já o euro manteve uma tendência de estabilidade, o que é bom para quem tem investimentos em moeda estrangeira. Com o euro em R$ 5,84, é um bom momento para avaliar se é hora de diversificar sua carteira de investimentos com ativos em euros. Ferramentas como o FinMoovi podem ajudar a acompanhar seus investimentos em múltiplas moedas, tornando mais fácil gerenciar seu patrimônio.
 
-## Selic e Impacto nos Investimentos
+## [Selic](/en/posts/quotes-week-4-may-2026) e Impacto nos Investimentos
 
 A taxa Selic, que é a taxa de juros básica da economia, continua sendo um fator importante para os investimentos. Com a Selic em 12,25% ao ano, os investimentos em renda fixa, como títulos do tesouro, continuam atraindo a atenção de muitos investidores. No entanto, é importante lembrar que altas taxas de juros também podem aumentar os custos de financiamento para empresas e consumidores, o que pode afetar o crescimento econômico. Portanto, é fundamental manter um olho nas notícias econômicas e ajustar sua estratégia de investimento de acordo.
 
@@ -38,5 +38,5 @@ Para a próxima semana, é importante ficar atento às notícias econômicas e p
 
 
 ---
-**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/30-day-rule-for-purchases) is going.**
 

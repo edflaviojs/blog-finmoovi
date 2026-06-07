@@ -21,9 +21,9 @@ translate: true
 ## Planeando el Día de los Enamorados con Responsabilidad
 El Día de los Enamorados es una fecha especial para celebrar el amor y la unión con aquellos que amamos. No obstante, no es necesario comprometer nuestras finanzas para hacer de este día un momento inolvidable. Con un poco de creatividad y planeamiento, es posible tener un Día de los Enamorados económico y al mismo tiempo significativo.
 
-Para empezar, es importante definir un presupuesto para las celebraciones. Considerando que el salario medio en Brasil varía de R$ 2.500 a R$ 4.000, es razonable reservar entre 5% a 10% de este valor para el Día de los Enamorados. Esto significa que, dependiendo de tu salario, podrías tener un presupuesto de R$ 125 a R$ 400.
+Para empezar, es importante definir un [presupuesto](/es/posts/como-crear-presupuesto-personal) para las celebraciones. Considerando que el salario medio en Brasil varía de R$ 2.500 a R$ 4.000, es razonable reservar entre 5% a 10% de este valor para el Día de los Enamorados. Esto significa que, dependiendo de tu salario, podrías tener un presupuesto de R$ 125 a R$ 400.
 
-## Consejos para un Regalo Económico
+## [Consejos](/es/posts/7-errores-financieros-principiante) para un Regalo Económico
 Un regalo no necesita ser caro para ser significativo. Aquí están algunas sugerencias para encontrar el regalo perfecto sin romper el banco:
 - Haz algo con tus propias manos: Un regalo hecho con cariño y dedicación puede ser mucho más especial que algo comprado en una tienda.
 - Opta por experiencias: En lugar de regalar objetos, considera dar experiencias, como entradas para un show, una cena en un restaurante o una clase de cocina juntos.
