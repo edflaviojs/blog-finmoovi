@@ -22,7 +22,7 @@ Todo mundo comete erros com dinheiro — especialmente no começo. A boa notíci
 
 **O erro:** Viver sem nenhuma reserva, contando que nada vai dar errado.
 
-**A solução:** Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de gastos guardados. Deixe em um investimento com [liquidez](/glossario/liquidez) diária (CDB ou Tesouro [Selic](/glossario/selic)).
+**A solução:** Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de gastos guardados. Deixe em um investimento com [liquidez](/glossario/liquidez) diária ([CDB](/glossario/cdb) ou Tesouro [Selic](/glossario/selic)).
 
 ## 2. Gastar mais do que ganha
 
