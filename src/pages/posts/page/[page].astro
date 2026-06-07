@@ -7,7 +7,11 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'pt');
-  const sorted = posts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+  const sorted = posts.sort((a, b) => {
+    const dateDiff = b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
+    if (dateDiff !== 0) return dateDiff;
+    return a.slug.localeCompare(b.slug);
+  });
 
   const postsPerPage = 12;
   const totalPages = Math.ceil(sorted.length / postsPerPage);

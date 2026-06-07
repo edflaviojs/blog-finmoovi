@@ -9,6 +9,7 @@ author: "FinMoovi"
 publishedAt: 2026-06-04
 readingTime: 3
 featured: false
+translationKey: "regra-dos-30-dias-para-compras"
 seo:
   metaTitle: "30-Day Rule for Purchases"
   metaDescription: "Learn to use the 30-day rule for purchases and save money with practical personal finance tips."

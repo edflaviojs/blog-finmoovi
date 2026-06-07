@@ -9,6 +9,7 @@ author: "FinMoovi"
 publishedAt: 2026-06-05
 readingTime: 3
 featured: true
+translationKey: "economize-na-conta-de-energia"
 seo:
   metaTitle: "Economize na Conta de Energia"
   metaDescription: "Aprenda a reduzir sua conta de energia elétrica com dicas práticas e economize dinheiro."

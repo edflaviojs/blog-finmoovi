@@ -9,6 +9,7 @@ author: "FinMoovi"
 publishedAt: 2026-06-06
 readingTime: 3
 featured: false
+translationKey: "organizar-financas-autonomo"
 seo:
   metaTitle: "Organizing Finances as a Freelancer"
   metaDescription: "Discover how to organize your finances as a freelancer and achieve financial stability. Practical tips and real-life examples for you."

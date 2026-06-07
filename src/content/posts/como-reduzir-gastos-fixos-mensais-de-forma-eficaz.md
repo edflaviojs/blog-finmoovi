@@ -9,6 +9,7 @@ author: "FinMoovi"
 publishedAt: 2026-05-26
 readingTime: 3
 featured: false
+translationKey: "como-reduzir-gastos-fixos-mensais-de-forma-eficaz"
 seo:
   metaTitle: "Como Reduzir Gastos Fixos Mensais de Forma Eficaz"
   metaDescription: "Aprenda a reduzir gastos fixos mensais e economize dinheiro com dicas práticas e eficazes. Descubra como gerenciar suas finanças de forma inteligente."

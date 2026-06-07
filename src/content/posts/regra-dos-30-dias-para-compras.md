@@ -9,6 +9,7 @@ author: "FinMoovi"
 publishedAt: 2026-06-04
 readingTime: 3
 featured: true
+translationKey: "regra-dos-30-dias-para-compras"
 seo:
   metaTitle: "Regra dos 30 Dias para Compras"
   metaDescription: "Aprenda a usar a regra dos 30 dias para compras e economize dinheiro com dicas práticas de finanças pessoais."

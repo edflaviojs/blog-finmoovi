@@ -9,6 +9,7 @@ author: "FinMoovi"
 publishedAt: 2026-05-27
 readingTime: 3
 featured: false
+translationKey: "organizar-financas-de-casal"
 seo:
   metaTitle: "Organizar Finanças de Casal"
   metaDescription: "Aprenda a gerenciar as finanças do casal de forma eficaz e alcançar metas em comum."

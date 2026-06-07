@@ -45,9 +45,9 @@ const hrefEs = new URL('/es' + (basePath === '/' ? '' : basePath), Astro.site).t
 
 // Only emit hreflang for pages that exist in all locales
 const hasI18nVersion = alternates || basePath === '/' || basePath === '/glossario' || basePath === '/ferramentas' || basePath === '/sobre';
-const finalHrefPt = alternates?.pt || hrefPt;
-const finalHrefEn = alternates?.en || hrefEn;
-const finalHrefEs = alternates?.es || hrefEs;
+const finalHrefPt = alternates?.pt ? new URL(alternates.pt, Astro.site).toString() : hrefPt;
+const finalHrefEn = alternates?.en ? new URL(alternates.en, Astro.site).toString() : hrefEn;
+const finalHrefEs = alternates?.es ? new URL(alternates.es, Astro.site).toString() : hrefEs;
 const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es_ES' : 'en_US';
 ---
 

@@ -1,0 +1,108 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import PostCard from '@components/posts/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'en');
+  const sorted = posts.sort((a, b) => {
+    const dateDiff = b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
+    if (dateDiff !== 0) return dateDiff;
+    return a.slug.localeCompare(b.slug);
+  });
+
+  const postsPerPage = 12;
+  const totalPages = Math.ceil(sorted.length / postsPerPage);
+
+  return Array.from({ length: totalPages }, (_, i) => ({
+    params: { page: String(i + 1) },
+    props: {
+      posts: sorted.slice(i * postsPerPage, (i + 1) * postsPerPage),
+      currentPage: i + 1,
+      totalPages,
+      totalPosts: sorted.length
+    }
+  }));
+}
+
+const { posts, currentPage, totalPages, totalPosts } = Astro.props;
+const prevPage = currentPage > 1 ? `/en/posts/page/${currentPage - 1}` : null;
+const nextPage = currentPage < totalPages ? `/en/posts/page/${currentPage + 1}` : null;
+---
+
+<BaseLayout
+  title={`All Posts — Page ${currentPage} | FinMoovi Blog`}
+  description={`Personal finance posts archive. Page ${currentPage} of ${totalPages}.`}
+  keywords={['personal finance', 'posts', 'archive', 'financial tips']}
+>
+  <Header />
+
+  <main class="container archive-page">
+    <div class="archive-header">
+      <h1 class="archive-title">All Posts</h1>
+      <p class="archive-meta">{totalPosts} articles · Page {currentPage} of {totalPages}</p>
+    </div>
+
+    <div class="archive-grid">
+      {posts.map(post => (
+        <PostCard
+          title={post.data.title}
+          description={post.data.description}
+          image={post.data.image}
+          href={`/en/posts/${post.slug}`}
+          category={post.data.category}
+          date={post.data.publishedAt.toISOString().split('T')[0]}
+          readingTime={post.data.readingTime}
+        />
+      ))}
+    </div>
+
+    <nav class="pagination" aria-label="Page navigation">
+      {prevPage ? (
+        <a href={prevPage} class="pagination-btn pagination-prev">← Previous</a>
+      ) : (
+        <span class="pagination-btn pagination-disabled">← Previous</span>
+      )}
+
+      <div class="pagination-pages">
+        {Array.from({ length: totalPages }, (_, i) => (
+          <a
+            href={`/en/posts/page/${i + 1}`}
+            class={`pagination-page ${currentPage === i + 1 ? 'active' : ''}`}
+            aria-current={currentPage === i + 1 ? 'page' : undefined}
+          >
+            {i + 1}
+          </a>
+        ))}
+      </div>
+
+      {nextPage ? (
+        <a href={nextPage} class="pagination-btn pagination-next">Next →</a>
+      ) : (
+        <span class="pagination-btn pagination-disabled">Next →</span>
+      )}
+    </nav>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .archive-page { padding-top: var(--space-12); padding-bottom: var(--space-16); }
+  .archive-header { text-align: center; margin-bottom: var(--space-12); }
+  .archive-title { font-size: var(--text-4xl); font-weight: 800; color: var(--text-primary); margin-bottom: var(--space-3); }
+  .archive-meta { color: var(--text-tertiary); font-size: var(--text-sm); }
+  .archive-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-6); margin-bottom: var(--space-12); }
+  @media (min-width: 640px) { .archive-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .archive-grid { grid-template-columns: repeat(3, 1fr); } }
+  .pagination { display: flex; align-items: center; justify-content: center; gap: var(--space-4); flex-wrap: wrap; }
+  .pagination-btn { padding: var(--space-3) var(--space-5); border-radius: var(--radius-md); font-size: var(--text-sm); font-weight: 500; text-decoration: none; transition: all var(--transition-fast); color: var(--text-primary); background: var(--bg-secondary); border: 1px solid var(--border-default); }
+  .pagination-btn:hover { border-color: var(--border-accent); color: var(--accent-primary); }
+  .pagination-disabled { opacity: 0.4; pointer-events: none; }
+  .pagination-pages { display: flex; gap: var(--space-2); }
+  .pagination-page { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md); font-size: var(--text-sm); text-decoration: none; color: var(--text-secondary); transition: all var(--transition-fast); }
+  .pagination-page:hover { background: var(--bg-tertiary); color: var(--text-primary); }
+  .pagination-page.active { background: linear-gradient(135deg, #00F0FF, #A91079); color: #fff; font-weight: 600; }
+</style>

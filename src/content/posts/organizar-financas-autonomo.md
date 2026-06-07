@@ -9,6 +9,7 @@ author: "FinMoovi"
 publishedAt: 2026-06-06
 readingTime: 4
 featured: true
+translationKey: "organizar-financas-autonomo"
 seo:
   metaTitle: "Organizar Finanças Autônomo"
   metaDescription: "Aprenda a gerenciar seu dinheiro de forma eficaz como autônomo, com dicas práticas e exemplos reais para economizar e crescer financeiramente."

@@ -9,6 +9,7 @@ author: "FinMoovi"
 publishedAt: 2026-06-05
 readingTime: 3
 featured: false
+translationKey: "economize-na-conta-de-energia"
 seo:
   metaTitle: "Saving on Your Energy Bill"
   metaDescription: "Practical tips to reduce energy expenses and save money in your monthly budget."
