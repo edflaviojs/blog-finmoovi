@@ -8,61 +8,48 @@ interface Props {
 const { locale = 'pt' } = Astro.props;
 const appUrl = config.app.url;
 const appName = config.app.name;
----
+const features = config.app.features;
+const ctaTitle = config.app.ctaTitle;
+const ctaNote = config.app.ctaNote;
+const ctaText = config.app.ctaText;
 
-<script define:vars={{ locale, appUrl, appName }}>
-(function() {
-  const ctas = {
-    pt: [
-      { title: 'Organize suas finanças com o ' + appName + '', desc: 'Controle gastos, acompanhe investimentos e alcance seus objetivos financeiros. Multi-moeda, offline e inteligente.' },
-      { title: 'Controle seus gastos de forma inteligente', desc: 'O ' + appName + ' categoriza suas transações automaticamente. Menos trabalho, mais clareza sobre seu dinheiro.' },
-      { title: 'Acompanhe investimentos em tempo real', desc: 'Dashboards com insights automáticos. Saiba exatamente onde seu dinheiro está indo com o ' + appName + '.' },
-      { title: 'Multi-moeda, offline e inteligente', desc: 'BRL, USD, EUR com conversão automática. Funciona sem internet. Seus dados ficam no seu dispositivo.' },
-      { title: 'Comece grátis — sem cartão de crédito', desc: '7 dias grátis para experimentar todas as funcionalidades. Cancele quando quiser, sem burocracia.' },
-      { title: 'Sua privacidade financeira importa', desc: 'Criptografia de ponta a ponta. Seus dados nunca saem do seu dispositivo. Controle total com o ' + appName + '.' },
-      { title: 'Lance gastos em 5 segundos com IA', desc: 'Smart Capture entende linguagem natural. Diga "almocei 35 reais" e pronto. O ' + appName + ' faz o resto.' },
-      { title: 'Relatórios que fazem sentido', desc: 'Gráficos claros que mostram para onde vai seu dinheiro. Identifique padrões e economize mais com o ' + appName + '.' },
-      { title: 'Chega de planilhas complicadas', desc: 'O ' + appName + ' substitui suas planilhas por um app intuitivo. Tudo automático, tudo no celular.' },
-      { title: 'Alcance seus objetivos financeiros', desc: 'Defina metas, acompanhe o progresso e receba alertas inteligentes. O ' + appName + ' te mantém no caminho.' },
-      { title: 'O app financeiro que funciona offline', desc: 'Registre gastos em qualquer lugar, mesmo sem internet. Sincroniza automaticamente quando conectar.' },
-      { title: 'Controle financeiro de classe mundial', desc: 'Usado por milhares de brasileiros. O ' + appName + ' é o app mais completo para quem quer organizar suas finanças.' },
-    ],
-    en: [
-      { title: 'Organize your finances with ' + appName + '', desc: 'Track expenses, monitor investments, and reach your financial goals. Multi-currency, offline, and smart.' },
-      { title: 'Control your spending intelligently', desc: '' + appName + ' categorizes your transactions automatically. Less work, more clarity about your money.' },
-      { title: 'Track investments in real time', desc: 'Dashboards with automatic insights. Know exactly where your money is going with ' + appName + '.' },
-      { title: 'Multi-currency, offline, and smart', desc: 'BRL, USD, EUR with automatic conversion. Works without internet. Your data stays on your device.' },
-      { title: 'Start free — no credit card needed', desc: '7 days free to try all features. Cancel anytime, no hassle.' },
-      { title: 'Your financial privacy matters', desc: 'End-to-end encryption. Your data never leaves your device. Full control with ' + appName + '.' },
-      { title: 'Log expenses in 5 seconds with AI', desc: 'Smart Capture understands natural language. Say "lunch 35 dollars" and done. ' + appName + ' handles the rest.' },
-      { title: 'Reports that make sense', desc: 'Clear charts showing where your money goes. Identify patterns and save more with ' + appName + '.' },
-      { title: 'No more complicated spreadsheets', desc: '' + appName + ' replaces your spreadsheets with an intuitive app. All automatic, all on your phone.' },
-      { title: 'Reach your financial goals', desc: 'Set goals, track progress, and get smart alerts. ' + appName + ' keeps you on track.' },
-      { title: 'The finance app that works offline', desc: 'Log expenses anywhere, even without internet. Syncs automatically when you reconnect.' },
-      { title: 'World-class financial control', desc: 'Used by thousands. ' + appName + ' is the most complete app for anyone who wants to organize their finances.' },
-    ],
-    es: [
-      { title: 'Organiza tus finanzas con ' + appName + '', desc: 'Controla gastos, acompaña inversiones y alcanza tus objetivos financieros. Multi-moneda, offline e inteligente.' },
-      { title: 'Controla tus gastos de forma inteligente', desc: '' + appName + ' categoriza tus transacciones automáticamente. Menos trabajo, más claridad sobre tu dinero.' },
-      { title: 'Acompaña inversiones en tiempo real', desc: 'Dashboards con insights automáticos. Sabe exactamente a dónde va tu dinero con ' + appName + '.' },
-      { title: 'Multi-moneda, offline e inteligente', desc: 'BRL, USD, EUR con conversión automática. Funciona sin internet. Tus datos quedan en tu dispositivo.' },
-      { title: 'Comienza gratis — sin tarjeta de crédito', desc: '7 días gratis para probar todas las funcionalidades. Cancela cuando quieras, sin burocracia.' },
-      { title: 'Tu privacidad financiera importa', desc: 'Cifrado de punta a punta. Tus datos nunca salen de tu dispositivo. Control total con ' + appName + '.' },
-      { title: 'Registra gastos en 5 segundos con IA', desc: 'Smart Capture entiende lenguaje natural. Di "almorcé 35 pesos" y listo. ' + appName + ' hace el resto.' },
-      { title: 'Reportes que tienen sentido', desc: 'Gráficos claros que muestran a dónde va tu dinero. Identifica patrones y ahorra más con ' + appName + '.' },
-      { title: 'Adiós a las hojas de cálculo', desc: '' + appName + ' sustituye tus planillas por una app intuitiva. Todo automático, todo en tu celular.' },
-      { title: 'Alcanza tus objetivos financieros', desc: 'Define metas, acompaña el progreso y recibe alertas inteligentes. ' + appName + ' te mantiene en el camino.' },
-      { title: 'La app financiera que funciona offline', desc: 'Registra gastos en cualquier lugar, incluso sin internet. Sincroniza automáticamente al conectar.' },
-      { title: 'Control financiero de clase mundial', desc: 'Usado por miles de personas. ' + appName + ' es la app más completa para quien quiere organizar sus finanzas.' },
-    ]
+// Build CTAs server-side from config (niche-agnostic)
+function buildCTAs(lang) {
+  const f = features[lang] || features.pt;
+  const title = ctaTitle[lang] || ctaTitle.pt;
+  const note = ctaNote[lang] || ctaNote.pt;
+
+  const titles = {
+    pt: [title, `${f[0]} com o ${appName}`, f[1], f[2], 'Comece grátis — sem cartão', 'Sua privacidade importa', f[3] || f[0], 'Relatórios inteligentes', 'Simples e automático', 'Alcance seus objetivos', 'Funciona offline', `${appName} — o mais completo`],
+    en: [title, `${f[0]} with ${appName}`, f[1], f[2], 'Start free — no credit card', 'Your privacy matters', f[3] || f[0], 'Smart reports', 'Simple and automatic', 'Reach your goals', 'Works offline', `${appName} — the most complete`],
+    es: [title, `${f[0]} con ${appName}`, f[1], f[2], 'Comienza gratis — sin tarjeta', 'Tu privacidad importa', f[3] || f[0], 'Reportes inteligentes', 'Simple y automático', 'Alcanza tus objetivos', 'Funciona offline', `${appName} — la más completa`],
   };
 
-  const badges = { pt: 'App Gratuito', en: 'Free App', es: 'App Gratuita' };
-  const btnTexts = { pt: 'Experimentar Grátis →', en: 'Try Free →', es: 'Probar Gratis →' };
+  const descs = {
+    pt: [f.slice(0, 3).join('. ') + '.', `O ${appName} faz automaticamente. Menos trabalho, mais resultados.`, `Insights automáticos com o ${appName}.`, f.slice(1, 4).join('. ') + '.', note, `Seus dados ficam no seu dispositivo. Controle total com o ${appName}.`, `IA que entende você. O ${appName} faz o trabalho pesado.`, `Gráficos claros com insights. Identifique padrões com o ${appName}.`, `O ${appName} substitui ferramentas complicadas. Tudo automático.`, `Metas, progresso e alertas inteligentes. O ${appName} te mantém no caminho.`, `Use em qualquer lugar, sem internet. Sincroniza quando conectar.`, `Usado por milhares. O ${appName} é completo para quem quer resultados.`],
+    en: [f.slice(0, 3).join('. ') + '.', `${appName} does it automatically. Less work, more results.`, `Automatic insights with ${appName}.`, f.slice(1, 4).join('. ') + '.', note, `Your data stays on your device. Full control with ${appName}.`, `AI that understands you. ${appName} does the heavy lifting.`, `Clear charts with insights. Identify patterns with ${appName}.`, `${appName} replaces complicated tools. All automatic.`, `Goals, progress, and smart alerts. ${appName} keeps you on track.`, `Use anywhere, no internet needed. Syncs when connected.`, `Used by thousands. ${appName} is the most complete for results.`],
+    es: [f.slice(0, 3).join('. ') + '.', `${appName} lo hace automáticamente. Menos trabajo, más resultados.`, `Insights automáticos con ${appName}.`, f.slice(1, 4).join('. ') + '.', note, `Tus datos quedan en tu dispositivo. Control total con ${appName}.`, `IA que te entiende. ${appName} hace el trabajo pesado.`, `Gráficos claros con insights. Identifica patrones con ${appName}.`, `${appName} sustituye herramientas complicadas. Todo automático.`, `Metas, progreso y alertas inteligentes. ${appName} te mantiene en el camino.`, `Usa en cualquier lugar, sin internet. Sincroniza al conectar.`, `Usado por miles. ${appName} es la más completa para resultados.`],
+  };
 
-  const pool = ctas[locale] || ctas.pt;
-  const badge = badges[locale] || badges.pt;
-  const btnText = btnTexts[locale] || btnTexts.pt;
+  const t = titles[lang] || titles.pt;
+  const d = descs[lang] || descs.pt;
+  return t.map((title, i) => ({ title, desc: d[i] || d[0] }));
+}
+
+const ctasData = JSON.stringify({
+  pt: buildCTAs('pt'),
+  en: buildCTAs('en'),
+  es: buildCTAs('es'),
+});
+const badgeText = { pt: 'App Gratuito', en: 'Free App', es: 'App Gratuita' }[locale] || 'App Gratuito';
+const btnText = (ctaText[locale] || ctaText.pt) + ' →';
+---
+
+<script define:vars={{ locale, appUrl, appName, ctasData, badgeText, btnText }}>
+(function() {
+  const allCtas = JSON.parse(ctasData);
+  const pool = allCtas[locale] || allCtas.pt;
+  const badge = badgeText;
 
   function createCTA(cta, variant) {
     const el = document.createElement('aside');
