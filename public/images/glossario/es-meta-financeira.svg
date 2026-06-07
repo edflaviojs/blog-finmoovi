@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect width="1200" height="630" fill="transparent"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="rgba(128,128,128,0.06)" stroke="rgba(128,128,128,0.15)" stroke-width="1"/>
   <defs>
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#10B981"/>
-      <stop offset="100%" stop-color="#F59E0B"/>
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
     </linearGradient>
     <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#10B981"/>
-      <stop offset="100%" stop-color="#F59E0B"/>
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
     </linearGradient>
   </defs>
   
-  <circle cx="1020" cy="94.5" r="69.25012635067105" fill="#10B981" opacity="0.03"/>
-  <circle cx="180" cy="504" r="67.00492723612115" fill="#F59E0B" opacity="0.04"/>
-  <rect x="160" y="269.90268380381167" width="60" height="250.09731619618833" rx="4" fill="url(#barGrad)" opacity="0.61"/>
-  <rect x="250" y="164.58911733701825" width="60" height="355.41088266298175" rx="4" fill="url(#barGrad)" opacity="0.83"/>
-  <rect x="340" y="343.6225132178515" width="60" height="176.37748678214848" rx="4" fill="url(#barGrad)" opacity="0.88"/>
-  <rect x="430" y="362.0669446513057" width="60" height="157.93305534869432" rx="4" fill="url(#barGrad)" opacity="0.72"/>
-  <rect x="520" y="274.4904073048383" width="60" height="245.5095926951617" rx="4" fill="url(#barGrad)" opacity="0.77"/>
-  <rect x="610" y="255.505628939718" width="60" height="264.494371060282" rx="4" fill="url(#barGrad)" opacity="0.95"/>
-  <rect x="700" y="348.31533460877836" width="60" height="171.68466539122164" rx="4" fill="url(#barGrad)" opacity="0.98"/>
-  <rect x="790" y="306.948002576828" width="60" height="213.051997423172" rx="4" fill="url(#barGrad)" opacity="0.66"/>
+  <circle cx="1020" cy="94.5" r="98.44353664666414" fill="#00F0FF" opacity="0.03"/>
+  <circle cx="180" cy="504" r="67.95963065931574" fill="#A91079" opacity="0.04"/>
+  <rect x="160" y="326.1680750735104" width="60" height="193.8319249264896" rx="4" fill="url(#barGrad)" opacity="0.67"/>
+  <rect x="250" y="243.2352305483073" width="60" height="276.7647694516927" rx="4" fill="url(#barGrad)" opacity="0.66"/>
+  <rect x="340" y="266.74099039286375" width="60" height="253.25900960713625" rx="4" fill="url(#barGrad)" opacity="0.77"/>
+  <rect x="430" y="295.1856928039342" width="60" height="224.81430719606578" rx="4" fill="url(#barGrad)" opacity="0.74"/>
+  <rect x="520" y="422.2792029939592" width="60" height="97.72079700604081" rx="4" fill="url(#barGrad)" opacity="0.84"/>
+  <rect x="610" y="394.4217252638191" width="60" height="125.5782747361809" rx="4" fill="url(#barGrad)" opacity="0.80"/>
+  <rect x="700" y="213.04698079824448" width="60" height="306.9530192017555" rx="4" fill="url(#barGrad)" opacity="0.66"/>
+  <rect x="790" y="217.14269259013236" width="60" height="302.85730740986764" rx="4" fill="url(#barGrad)" opacity="0.77"/>
 </svg>

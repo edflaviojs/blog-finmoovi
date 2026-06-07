@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect width="1200" height="630" fill="transparent"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="rgba(128,128,128,0.06)" stroke="rgba(128,128,128,0.15)" stroke-width="1"/>
   <defs>
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#06B6D4"/>
@@ -16,12 +16,14 @@
     </linearGradient>
   </defs>
   
-  <circle cx="1020" cy="94.5" r="70.15769500285387" fill="#06B6D4" opacity="0.03"/>
-  <circle cx="180" cy="504" r="60.03800818929449" fill="#F97316" opacity="0.04"/>
-  <path d="M600 300 L780.0 300.0 A180 180 0 0 1 543.9 471.0 Z" fill="#06B6D4" opacity="0.7"/>
-  <path d="M600 300 L543.9 471.0 A180 180 0 0 1 425.5 255.7 Z" fill="#F97316" opacity="0.75"/>
-  <path d="M600 300 L425.5 255.7 A180 180 0 0 1 615.2 120.6 Z" fill="#8B949E" opacity="0.7999999999999999"/>
-  <path d="M600 300 L615.2 120.6 A180 180 0 0 1 756.5 211.1 Z" fill="#30363D" opacity="0.85"/>
-  <path d="M600 300 L756.5 211.1 A180 180 0 0 1 780.0 300.0 Z" fill="#21262D" opacity="0.8999999999999999"/>
-  <circle cx="600" cy="300" r="90" fill="#0d1117"/>
+  <circle cx="1020" cy="94.5" r="84.7996929474175" fill="#06B6D4" opacity="0.03"/>
+  <circle cx="180" cy="504" r="68.75951426802203" fill="#F97316" opacity="0.04"/>
+  <rect x="160" y="359.45304297842085" width="60" height="160.54695702157915" rx="4" fill="url(#barGrad)" opacity="0.73"/>
+  <rect x="250" y="270.8856607414782" width="60" height="249.1143392585218" rx="4" fill="url(#barGrad)" opacity="0.62"/>
+  <rect x="340" y="200.21767291240394" width="60" height="319.78232708759606" rx="4" fill="url(#barGrad)" opacity="0.80"/>
+  <rect x="430" y="228.70162162929773" width="60" height="291.29837837070227" rx="4" fill="url(#barGrad)" opacity="0.87"/>
+  <rect x="520" y="327.5770647544414" width="60" height="192.42293524555862" rx="4" fill="url(#barGrad)" opacity="0.81"/>
+  <rect x="610" y="437.58355347439647" width="60" height="82.41644652560353" rx="4" fill="url(#barGrad)" opacity="0.88"/>
+  <rect x="700" y="196.30228421650827" width="60" height="323.69771578349173" rx="4" fill="url(#barGrad)" opacity="0.88"/>
+  <rect x="790" y="409.4812100380659" width="60" height="110.51878996193409" rx="4" fill="url(#barGrad)" opacity="0.68"/>
 </svg>

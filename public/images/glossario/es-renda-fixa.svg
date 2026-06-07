@@ -1,32 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect width="1200" height="630" fill="transparent"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="rgba(128,128,128,0.06)" stroke="rgba(128,128,128,0.15)" stroke-width="1"/>
   <defs>
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#EC4899"/>
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
     </linearGradient>
     <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#EC4899"/>
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
     </linearGradient>
   </defs>
   
-  <circle cx="1020" cy="94.5" r="89.22064940445125" fill="#8B5CF6" opacity="0.03"/>
-  <circle cx="180" cy="504" r="63.16949734929949" fill="#EC4899" opacity="0.04"/>
-  <line x1="140" y1="200" x2="1060" y2="200" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="300" x2="1060" y2="300" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="400" x2="1060" y2="400" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="500" x2="1060" y2="500" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <path d="M140 465 L255 474 L370 468 L485 500 L600 500 L715 500 L830 482 L945 464 L1060 500 L1060 500 L140 500 Z" fill="url(#areaGrad)" opacity="0.3"/>
-  <path d="M140 465 L255 474 L370 468 L485 500 L600 500 L715 500 L830 482 L945 464 L1060 500" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <circle cx="140" cy="465" r="5" fill="#8B5CF6" opacity="0.8"/>
-  <circle cx="370" cy="468" r="5" fill="#8B5CF6" opacity="0.8"/>
-  <circle cx="600" cy="500" r="5" fill="#8B5CF6" opacity="0.8"/>
-  <circle cx="830" cy="482" r="5" fill="#8B5CF6" opacity="0.8"/>
-  <circle cx="1060" cy="500" r="5" fill="#8B5CF6" opacity="0.8"/>
+  <circle cx="1020" cy="94.5" r="79.0025538764894" fill="#00F0FF" opacity="0.03"/>
+  <circle cx="180" cy="504" r="66.57548682531342" fill="#A91079" opacity="0.04"/>
+  <path d="M600 300 L780.0 300.0 A180 180 0 0 1 546.9 472.0 Z" fill="#00F0FF" opacity="0.7"/>
+  <path d="M600 300 L546.9 472.0 A180 180 0 0 1 435.8 226.2 Z" fill="#A91079" opacity="0.75"/>
+  <path d="M600 300 L435.8 226.2 A180 180 0 0 1 629.7 122.5 Z" fill="#8B949E" opacity="0.7999999999999999"/>
+  <path d="M600 300 L629.7 122.5 A180 180 0 0 1 755.9 209.9 Z" fill="rgba(128,128,128,0.25)" opacity="0.85"/>
+  <path d="M600 300 L755.9 209.9 A180 180 0 0 1 780.0 300.0 Z" fill="rgba(128,128,128,0.15)" opacity="0.8999999999999999"/>
+  <circle cx="600" cy="300" r="90" fill="rgba(128,128,128,0.06)"/>
 </svg>

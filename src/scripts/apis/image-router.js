@@ -50,11 +50,11 @@ const GLOSSARIO_IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario'
 
 const PROMPT_TEMPLATES = {
   cover: (topic) =>
-    `Professional financial concept, ${topic}, ultra high quality, photorealistic, clean composition, modern minimalist aesthetic, soft professional studio lighting, subtle depth of field, corporate style, dark background with accent lighting, absolutely no text anywhere in the image, no letters, no words, no numbers, no characters, no writing, no captions, no labels, no watermark, no logos, no people, no hands, no signatures, text-free image only`,
+    `Professional financial concept, ${topic}, ultra high quality, photorealistic, clean composition, modern minimalist aesthetic, soft professional studio lighting, subtle depth of field, corporate style, neutral soft gradient background, muted tones, absolutely no text anywhere in the image, no letters, no words, no numbers, no characters, no writing, no captions, no labels, no watermark, no logos, no people, no hands, no signatures, text-free image only`,
   glossary: (topic) =>
-    `Abstract financial concept visualization representing ${topic}, elegant minimalist style, premium quality, soft gradient lighting, professional editorial photography, geometric shapes, dark moody background, cyan and magenta accent colors, absolutely no text anywhere in the image, no letters, no words, no numbers, no characters, no writing, no captions, no labels, no watermark, no signatures, text-free image only`,
+    `Abstract financial concept visualization representing ${topic}, elegant minimalist style, premium quality, soft gradient lighting, professional editorial photography, geometric shapes, neutral soft gradient background, cyan and magenta accent colors, absolutely no text anywhere in the image, no letters, no words, no numbers, no characters, no writing, no captions, no labels, no watermark, no signatures, text-free image only`,
   inline: (topic) =>
-    `Financial infographic concept about ${topic}, clean modern design, data visualization aesthetic, professional quality, dark theme with glowing accents, absolutely no text anywhere in the image, no letters, no words, no numbers, no characters, no writing, no captions, no labels, no watermark, no signatures, text-free image only`,
+    `Financial infographic concept about ${topic}, clean modern design, data visualization aesthetic, professional quality, neutral soft gradient background with subtle accents, absolutely no text anywhere in the image, no letters, no words, no numbers, no characters, no writing, no captions, no labels, no watermark, no signatures, text-free image only`,
 };
 
 // --- Core Functions ---

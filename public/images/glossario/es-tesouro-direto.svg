@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect width="1200" height="630" fill="transparent"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="rgba(128,128,128,0.06)" stroke="rgba(128,128,128,0.15)" stroke-width="1"/>
   <defs>
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#14B8A6"/>
@@ -16,17 +16,12 @@
     </linearGradient>
   </defs>
   
-  <circle cx="1020" cy="94.5" r="94.1867780778557" fill="#14B8A6" opacity="0.03"/>
-  <circle cx="180" cy="504" r="67.16707126237452" fill="#E11D48" opacity="0.04"/>
-  <line x1="140" y1="200" x2="1060" y2="200" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="300" x2="1060" y2="300" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="400" x2="1060" y2="400" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="500" x2="1060" y2="500" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <path d="M140 457 L255 433 L370 432 L485 468 L600 489 L715 464 L830 495 L945 500 L1060 500 L1060 500 L140 500 Z" fill="url(#areaGrad)" opacity="0.3"/>
-  <path d="M140 457 L255 433 L370 432 L485 468 L600 489 L715 464 L830 495 L945 500 L1060 500" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <circle cx="140" cy="457" r="5" fill="#14B8A6" opacity="0.8"/>
-  <circle cx="370" cy="432" r="5" fill="#14B8A6" opacity="0.8"/>
-  <circle cx="600" cy="489" r="5" fill="#14B8A6" opacity="0.8"/>
-  <circle cx="830" cy="495" r="5" fill="#14B8A6" opacity="0.8"/>
-  <circle cx="1060" cy="500" r="5" fill="#14B8A6" opacity="0.8"/>
+  <circle cx="1020" cy="94.5" r="93.78203436732292" fill="#14B8A6" opacity="0.03"/>
+  <circle cx="180" cy="504" r="47.64849032508209" fill="#E11D48" opacity="0.04"/>
+  <path d="M600 300 L780.0 300.0 A180 180 0 0 1 550.9 473.2 Z" fill="#14B8A6" opacity="0.7"/>
+  <path d="M600 300 L550.9 473.2 A180 180 0 0 1 427.9 247.3 Z" fill="#E11D48" opacity="0.75"/>
+  <path d="M600 300 L427.9 247.3 A180 180 0 0 1 581.9 120.9 Z" fill="#8B949E" opacity="0.7999999999999999"/>
+  <path d="M600 300 L581.9 120.9 A180 180 0 0 1 727.2 172.7 Z" fill="rgba(128,128,128,0.25)" opacity="0.85"/>
+  <path d="M600 300 L727.2 172.7 A180 180 0 0 1 780.0 300.0 Z" fill="rgba(128,128,128,0.15)" opacity="0.8999999999999999"/>
+  <circle cx="600" cy="300" r="90" fill="rgba(128,128,128,0.06)"/>
 </svg>

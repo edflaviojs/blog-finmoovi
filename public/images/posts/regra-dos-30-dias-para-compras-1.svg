@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="transparent"/>
+  <rect x="30" y="30" width="740" height="390" rx="20" fill="rgba(128,128,128,0.06)" stroke="rgba(128,128,128,0.15)" stroke-width="1"/>
   <defs>
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00F0FF"/>
@@ -16,17 +16,14 @@
     </linearGradient>
   </defs>
   
-  <circle cx="1020" cy="94.5" r="94.47234562598169" fill="#00F0FF" opacity="0.03"/>
-  <circle cx="180" cy="504" r="47.90935456287116" fill="#A91079" opacity="0.04"/>
-  <line x1="140" y1="200" x2="1060" y2="200" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="300" x2="1060" y2="300" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="400" x2="1060" y2="400" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="500" x2="1060" y2="500" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <path d="M140 464 L255 476 L370 445 L485 469 L600 489 L715 500 L830 500 L945 500 L1060 494 L1060 500 L140 500 Z" fill="url(#areaGrad)" opacity="0.3"/>
-  <path d="M140 464 L255 476 L370 445 L485 469 L600 489 L715 500 L830 500 L945 500 L1060 494" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <circle cx="140" cy="464" r="5" fill="#00F0FF" opacity="0.8"/>
-  <circle cx="370" cy="445" r="5" fill="#00F0FF" opacity="0.8"/>
-  <circle cx="600" cy="489" r="5" fill="#00F0FF" opacity="0.8"/>
-  <circle cx="830" cy="500" r="5" fill="#00F0FF" opacity="0.8"/>
-  <circle cx="1060" cy="494" r="5" fill="#00F0FF" opacity="0.8"/>
+  <circle cx="680" cy="67.5" r="92.70350035279989" fill="#00F0FF" opacity="0.03"/>
+  <circle cx="120" cy="360" r="42.52559736603871" fill="#A91079" opacity="0.04"/>
+  <rect x="160" y="237.63049622997642" width="60" height="282.3695037700236" rx="4" fill="url(#barGrad)" opacity="0.83"/>
+  <rect x="250" y="371.74545182846487" width="60" height="148.25454817153513" rx="4" fill="url(#barGrad)" opacity="0.96"/>
+  <rect x="340" y="360.3366957604885" width="60" height="159.6633042395115" rx="4" fill="url(#barGrad)" opacity="0.78"/>
+  <rect x="430" y="324.51818698085845" width="60" height="195.48181301914155" rx="4" fill="url(#barGrad)" opacity="0.78"/>
+  <rect x="520" y="225.69779256358743" width="60" height="294.3022074364126" rx="4" fill="url(#barGrad)" opacity="0.67"/>
+  <rect x="610" y="224.57787516526878" width="60" height="295.4221248347312" rx="4" fill="url(#barGrad)" opacity="0.98"/>
+  <rect x="700" y="434.09051183611155" width="60" height="85.90948816388845" rx="4" fill="url(#barGrad)" opacity="0.82"/>
+  <rect x="790" y="195.7229105848819" width="60" height="324.2770894151181" rx="4" fill="url(#barGrad)" opacity="0.72"/>
 </svg>

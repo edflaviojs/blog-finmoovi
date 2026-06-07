@@ -1,32 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect width="1200" height="630" fill="transparent"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="rgba(128,128,128,0.06)" stroke="rgba(128,128,128,0.15)" stroke-width="1"/>
   <defs>
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#06B6D4"/>
-      <stop offset="100%" stop-color="#F97316"/>
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
     </linearGradient>
     <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#06B6D4"/>
-      <stop offset="100%" stop-color="#F97316"/>
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#A91079"/>
     </linearGradient>
   </defs>
   
-  <circle cx="1020" cy="94.5" r="61.62216319702566" fill="#06B6D4" opacity="0.03"/>
-  <circle cx="180" cy="504" r="55.47868603374809" fill="#F97316" opacity="0.04"/>
-  <line x1="140" y1="200" x2="1060" y2="200" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="300" x2="1060" y2="300" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="400" x2="1060" y2="400" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <line x1="140" y1="500" x2="1060" y2="500" stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4"/>
-  <path d="M140 439 L255 445 L370 450 L485 452 L600 470 L715 471 L830 481 L945 485 L1060 462 L1060 500 L140 500 Z" fill="url(#areaGrad)" opacity="0.3"/>
-  <path d="M140 439 L255 445 L370 450 L485 452 L600 470 L715 471 L830 481 L945 485 L1060 462" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <circle cx="140" cy="439" r="5" fill="#06B6D4" opacity="0.8"/>
-  <circle cx="370" cy="450" r="5" fill="#06B6D4" opacity="0.8"/>
-  <circle cx="600" cy="470" r="5" fill="#06B6D4" opacity="0.8"/>
-  <circle cx="830" cy="481" r="5" fill="#06B6D4" opacity="0.8"/>
-  <circle cx="1060" cy="462" r="5" fill="#06B6D4" opacity="0.8"/>
+  <circle cx="1020" cy="94.5" r="70.45704473741353" fill="#00F0FF" opacity="0.03"/>
+  <circle cx="180" cy="504" r="56.37569662183523" fill="#A91079" opacity="0.04"/>
+  <path d="M140 275 L220 276 L300 261 L380 253 L460 281 L540 266 L620 255 L700 242 L780 252 L860 251 L940 231 L1020 228 L1060 530 L140 530 Z" fill="#00F0FF" opacity="0.15"/>
+  <path d="M140 275 L220 276 L300 261 L380 253 L460 281 L540 266 L620 255 L700 242 L780 252 L860 251 L940 231 L1020 228" stroke="#00F0FF" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M140 357 L220 381 L300 389 L380 368 L460 383 L540 410 L620 434 L700 424 L780 441 L860 442 L940 438 L1020 425 L1060 530 L140 530 Z" fill="#A91079" opacity="0.12"/>
+  <path d="M140 357 L220 381 L300 389 L380 368 L460 383 L540 410 L620 434 L700 424 L780 441 L860 442 L940 438 L1020 425" stroke="#A91079" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M140 433 L220 416 L300 413 L380 436 L460 425 L540 450 L620 478 L700 466 L780 460 L860 441 L940 444 L1020 434 L1060 530 L140 530 Z" fill="#8B949E" opacity="0.09"/>
+  <path d="M140 433 L220 416 L300 413 L380 436 L460 425 L540 450 L620 478 L700 466 L780 460 L860 441 L940 444 L1020 434" stroke="#8B949E" stroke-width="2" fill="none" opacity="0.8"/>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect width="1200" height="630" fill="transparent"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="rgba(128,128,128,0.06)" stroke="rgba(128,128,128,0.15)" stroke-width="1"/>
   <defs>
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00F0FF"/>
@@ -16,14 +16,12 @@
     </linearGradient>
   </defs>
   
-  <circle cx="1020" cy="94.5" r="60.74625104665756" fill="#00F0FF" opacity="0.03"/>
-  <circle cx="180" cy="504" r="42.22461744444445" fill="#A91079" opacity="0.04"/>
-  <rect x="160" y="196.01339228451252" width="60" height="323.9866077154875" rx="4" fill="url(#barGrad)" opacity="0.84"/>
-  <rect x="250" y="364.75674585439265" width="60" height="155.24325414560735" rx="4" fill="url(#barGrad)" opacity="0.66"/>
-  <rect x="340" y="435.6856441684067" width="60" height="84.31435583159328" rx="4" fill="url(#barGrad)" opacity="0.63"/>
-  <rect x="430" y="227.85110558383167" width="60" height="292.14889441616833" rx="4" fill="url(#barGrad)" opacity="0.88"/>
-  <rect x="520" y="342.64708306640387" width="60" height="177.35291693359613" rx="4" fill="url(#barGrad)" opacity="0.91"/>
-  <rect x="610" y="325.7193768490106" width="60" height="194.2806231509894" rx="4" fill="url(#barGrad)" opacity="0.90"/>
-  <rect x="700" y="208.28281125053763" width="60" height="311.71718874946237" rx="4" fill="url(#barGrad)" opacity="0.90"/>
-  <rect x="790" y="191.87255456112325" width="60" height="328.12744543887675" rx="4" fill="url(#barGrad)" opacity="0.88"/>
+  <circle cx="1020" cy="94.5" r="70.10431156493723" fill="#00F0FF" opacity="0.03"/>
+  <circle cx="180" cy="504" r="46.48775954730809" fill="#A91079" opacity="0.04"/>
+  <path d="M140 289 L220 286 L300 271 L380 279 L460 291 L540 301 L620 305 L700 309 L780 290 L860 323 L940 315 L1020 302 L1060 530 L140 530 Z" fill="#00F0FF" opacity="0.15"/>
+  <path d="M140 289 L220 286 L300 271 L380 279 L460 291 L540 301 L620 305 L700 309 L780 290 L860 323 L940 315 L1020 302" stroke="#00F0FF" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M140 336 L220 361 L300 338 L380 313 L460 312 L540 342 L620 373 L700 362 L780 337 L860 325 L940 314 L1020 289 L1060 530 L140 530 Z" fill="#A91079" opacity="0.12"/>
+  <path d="M140 336 L220 361 L300 338 L380 313 L460 312 L540 342 L620 373 L700 362 L780 337 L860 325 L940 314 L1020 289" stroke="#A91079" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M140 376 L220 386 L300 384 L380 398 L460 409 L540 436 L620 447 L700 465 L780 473 L860 497 L940 500 L1020 490 L1060 530 L140 530 Z" fill="#8B949E" opacity="0.09"/>
+  <path d="M140 376 L220 386 L300 384 L380 398 L460 409 L540 436 L620 447 L700 465 L780 473 L860 497 L940 500 L1020 490" stroke="#8B949E" stroke-width="2" fill="none" opacity="0.8"/>
 </svg>
