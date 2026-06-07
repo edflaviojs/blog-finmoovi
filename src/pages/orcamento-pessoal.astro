@@ -204,12 +204,15 @@ const faqSchema = {
     e.preventDefault();
     const email = document.getElementById('capture-email').value.trim();
     const msg = document.getElementById('capture-message');
+    const btn = this.querySelector('button');
     if (!email) return;
+    btn.disabled = true;
+    btn.textContent = '...';
     try {
       const res = await fetch('/api/newsletter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, lang: 'pt' })
+        body: JSON.stringify({ email, lang: 'pt', source: 'orcamento-pessoal' })
       });
       const data = await res.json();
       msg.textContent = res.ok ? (data.message || 'Inscrito!') : (data.error || 'Erro.');
@@ -218,6 +221,8 @@ const faqSchema = {
       msg.textContent = 'Erro de conexão.';
       msg.className = 'capture-message error';
     }
+    btn.disabled = false;
+    btn.textContent = 'Inscrever-se';
   });
 </script>
 

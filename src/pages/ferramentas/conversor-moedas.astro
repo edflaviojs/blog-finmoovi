@@ -10,6 +10,28 @@ const breadcrumbItems = [
   { name: 'Ferramentas', url: '/ferramentas' },
   { name: 'Conversor de Moedas', url: '/ferramentas/conversor-moedas' }
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual a cotação do dólar hoje?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A cotação do dólar varia em tempo real. Use nosso conversor acima para ver o valor atualizado do dólar em relação ao real, euro e outras moedas." }
+    },
+    {
+      "@type": "Question",
+      "name": "Como converter real para dólar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Selecione BRL como moeda de origem, USD como destino, digite o valor e o conversor calcula automaticamente com a cotação atual." }
+    },
+    {
+      "@type": "Question",
+      "name": "As cotações são atualizadas em tempo real?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim, utilizamos a API do ExchangeRate que atualiza as cotações diariamente com base nas taxas do mercado internacional." }
+    }
+  ]
+};
 ---
 
 <BaseLayout
@@ -18,6 +40,7 @@ const breadcrumbItems = [
   keywords={['conversor de moedas', 'dólar hoje', 'euro hoje', 'cotação dólar', 'câmbio', 'converter real para dólar']}
 >
   <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <Header />
 
   <main class="tool-page">
@@ -117,8 +140,11 @@ const breadcrumbItems = [
   }
 
   function formatNumber(num, decimals = 2) {
-    if (num > 0.01) return num.toFixed(decimals).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-    return num.toFixed(6);
+    if (num > 0.01) {
+      const [int, dec] = num.toFixed(decimals).split('.');
+      return int.replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ',' + dec;
+    }
+    return num.toFixed(6).replace('.', ',');
   }
 
   function convert() {
@@ -210,7 +236,7 @@ const breadcrumbItems = [
     cursor: pointer;
     transition: background 0.2s;
   }
-  .swap-btn:hover { background: var(--bg-card); }
+  .swap-btn:hover { background: var(--bg-tertiary); }
 
   .converter-result {
     margin-top: 1.5rem;

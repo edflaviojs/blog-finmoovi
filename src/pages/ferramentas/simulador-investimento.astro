@@ -121,7 +121,8 @@ const faqSchema = {
 
 <script>
   function formatCurrency(value) {
-    return 'R$ ' + value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    const [int, dec] = value.toFixed(2).split('.');
+    return 'R$ ' + int.replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ',' + dec;
   }
 
   function calcMonthly(goal, initial, rate, months) {

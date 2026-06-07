@@ -3,7 +3,7 @@
 
 <div class="newsletter-popup" id="newsletter-popup" aria-hidden="true">
   <div class="popup-backdrop" id="popup-backdrop"></div>
-  <div class="popup-content">
+  <div class="popup-content" role="dialog" aria-modal="true">
     <button class="popup-close" id="popup-close" aria-label="Fechar">&times;</button>
     <div class="popup-icon">🎁</div>
     <h3 class="popup-title" id="popup-title">Guia Grátis: 30 Dias para Organizar suas Finanças</h3>
@@ -62,6 +62,8 @@
     document.getElementById('popup-desc').textContent = t.desc;
     document.getElementById('popup-btn').textContent = t.btn;
     document.getElementById('popup-privacy').textContent = t.privacy;
+    var closeLabels = { pt: 'Fechar', en: 'Close', es: 'Cerrar' };
+    document.getElementById('popup-close').setAttribute('aria-label', closeLabels[lang] || 'Fechar');
 
     var triggered = false;
     function showPopup() {
@@ -69,8 +71,18 @@
       triggered = true;
       popup.classList.add('visible');
       popup.setAttribute('aria-hidden', 'false');
+      document.getElementById('popup-email')?.focus();
       try { sessionStorage.setItem('fm-popup-shown', '1'); } catch(e) {}
     }
+
+    function hidePopup() {
+      popup.classList.remove('visible');
+      popup.setAttribute('aria-hidden', 'true');
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && popup.classList.contains('visible')) hidePopup();
+    });
 
     window.addEventListener('scroll', function() {
       if (triggered) return;
@@ -97,15 +109,9 @@
       lastScrollY = currentY;
     }, { passive: true });
 
-    document.getElementById('popup-close')?.addEventListener('click', function() {
-      popup.classList.remove('visible');
-      popup.setAttribute('aria-hidden', 'true');
-    });
+    document.getElementById('popup-close')?.addEventListener('click', hidePopup);
 
-    document.getElementById('popup-backdrop')?.addEventListener('click', function() {
-      popup.classList.remove('visible');
-      popup.setAttribute('aria-hidden', 'true');
-    });
+    document.getElementById('popup-backdrop')?.addEventListener('click', hidePopup);
 
     document.getElementById('popup-form')?.addEventListener('submit', async function(e) {
       e.preventDefault();
@@ -142,7 +148,7 @@
   .newsletter-popup {
     position: fixed;
     inset: 0;
-    z-index: 9998;
+    z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
