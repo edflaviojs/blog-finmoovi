@@ -17,9 +17,9 @@ seo:
 ---
 
 ## Finanzas Conjuntas
-Cuando estás en una relación, es importante que tú y tu pareja estén alineados en cuanto a las finanzas. Esto significa que deben tener una visión clara de cómo están gastando su [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) y cómo pueden ahorrar juntos. Supongamos que tú y tu pareja ganan R$ 5,000 y R$ 6,000 por mes, respectivamente. Si no tienen un plan, es fácil gastar todo el dinero sin saber a dónde va.
+Cuando estás en una relación, es importante que tú y tu pareja estén alineados en cuanto a las finanzas. Esto significa que deben tener una visión clara de cómo están gastando su [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) y cómo pueden ahorrar juntos. Supongamos que tú y tu pareja ganan R$ 5,000 y R$ 6,000 por mes, respectivamente. Si no tienen un plan, es fácil gastar todo el [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) sin saber a dónde va.
 
-Una buena idea es crear un presupuesto juntos, considerando todos los gastos mensuales como alquiler, comida, transporte, etc. Por ejemplo, si pagan R$ 2,500 de alquiler y R$ 1,000 de comida al mes, ya son R$ 3,500 en gastos fijos. También es importante considerar gastos variables como entretenimiento y ocio.
+Una buena idea es crear un [presupuesto](/es/posts/como-crear-presupuesto-personal) juntos, considerando todos los gastos mensuales como alquiler, comida, transporte, etc. Por ejemplo, si pagan R$ 2,500 de alquiler y R$ 1,000 de comida al mes, ya son R$ 3,500 en gastos fijos. También es importante considerar gastos variables como entretenimiento y ocio.
 
 ## Gastos y Ahorros
 Es fundamental que tú y tu pareja tengan una conversación abierta sobre gastos y ahorros. **Consejo práctico:** crea una categoría de "dinero para divertirse" en tu presupuesto para que puedan gastar un poco de dinero en cosas que disfrutan, sin sentirse culpables. Por ejemplo, pueden decidir gastar R$ 500 al mes en restaurantes y cines.

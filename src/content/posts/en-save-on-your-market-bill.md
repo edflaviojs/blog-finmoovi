@@ -29,8 +29,8 @@ Another way to save is to compare prices between different stores. This can be d
 
 
 
-## Organizing Your Budget
-To really understand how you're spending your [money](/en/posts/30-day-rule-for-purchases), it's crucial to organize your budget. This includes recording all your expenses, from your market bill to other monthly expenses like rent, internet, and phone services. With a well-organized budget, you can identify areas where you can cut unnecessary expenses and direct that money towards savings or investments. **Practical tip:** Use a finance app to make it easier to track and monitor your expenses.
+## Organizing Your [Budget](/en/posts/how-to-create-personal-budget)
+To really understand how you're spending your [money](/en/posts/30-day-rule-for-purchases), it's crucial to organize your budget. This includes recording all your expenses, from your market bill to other monthly expenses like rent, internet, and phone services. With a well-organized budget, you can identify areas where you can cut unnecessary expenses and direct that [money](/en/posts/financial-planning-for-couples) towards savings or investments. **Practical tip:** Use a finance app to make it easier to track and monitor your expenses.
 
 ## Controlling Expenses
 Having control over your expenses is essential for maintaining savings. This means avoiding impulse purchases and being mindful of deals and promotions that can be beneficial. Additionally, it's important to regularly review your budget to ensure you're on track to meet your financial goals. If you spend R$ 500,00 per week on market purchases and manage to reduce it to R$ 450,00, you'll be saving R$ 50,00 per week, which can be a significant step towards achieving your goals.

@@ -38,5 +38,5 @@ Para a próxima semana, é importante estar atento às notícias econômicas e p
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
+**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/economize-na-conta-de-energia).**
 

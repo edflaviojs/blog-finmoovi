@@ -18,9 +18,9 @@ seo:
 
 Crear un [presupuesto personal](/es/glossario/es-orcamento-pessoal) no tiene que ser complicado. De hecho, con el método correcto, puedes armar el tuyo en menos de 30 minutos — y lo mejor: uno que realmente funciona en el día a día.
 
-## ¿Por qué tener un presupuesto personal?
+## ¿Por qué tener un [presupuesto](/es/posts/organizar-finanzas-pareja) personal?
 
-Sin un presupuesto, tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) simplemente desaparece. Estudios muestran que las personas que controlan sus gastos ahorran en promedio un 20% más que quienes no lo hacen.
+Sin un [presupuesto](/es/posts/reducir-gastos-fijos-mensuales), tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) simplemente desaparece. Estudios muestran que las personas que controlan sus gastos ahorran en promedio un 20% más que quienes no lo hacen.
 
 Un buen presupuesto te ayuda a:
 - Saber exactamente a dónde va tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado)

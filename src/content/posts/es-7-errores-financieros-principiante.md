@@ -30,7 +30,7 @@ La vida pasa. Sin 3-6 meses de gastos ahorrados, cualquier imprevisto se convier
 
 ¿Ese café diario de $5? Son $150/mes o $1.800/año. Los gastos pequeños se acumulan rápido. Rastréalos todos.
 
-## 4. Vivir Sin Presupuesto
+## 4. Vivir Sin [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal)
 
 "Simplemente gastaré menos" no funciona. Necesitas un plan concreto. La regla 50-30-20 es un excelente punto de partida.
 

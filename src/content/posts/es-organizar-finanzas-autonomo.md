@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Gestionando Ingresos Variables
-Cuando eres autónomo, una de las principales dificultades es lidiar con ingresos variables. Un mes puedes recibir R$ 8.000, y en otro, solo R$ 3.000. Para organizar tus finanzas en este escenario, es crucial crear un presupuesto flexible que pueda adaptarse a estas fluctuaciones. Un consejo es separar tus gastos en esenciales (alimentación, vivienda, transporte) y no esenciales (entretenimiento, hobbies), y priorizar los primeros.
+Cuando eres autónomo, una de las principales dificultades es lidiar con ingresos variables. Un mes puedes recibir R$ 8.000, y en otro, solo R$ 3.000. Para organizar tus finanzas en este escenario, es crucial crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) flexible que pueda adaptarse a estas fluctuaciones. Un consejo es separar tus gastos en esenciales (alimentación, vivienda, transporte) y no esenciales (entretenimiento, hobbies), y priorizar los primeros.
 
 Imagina que tienes un mes de R$ 8.000 y otro de R$ 3.000. Si tus gastos esenciales mensuales son de aproximadamente R$ 2.500, necesitas garantizar que, incluso en el mes de menor ingreso, puedas cubrir estos gastos. Una estrategia es crear una reserva de emergencia que pueda ser utilizada en los meses de baja receita. **Consejo práctico:** Reserva al menos 10% a 20% de tu ingreso medio mensual para esta reserva.
 

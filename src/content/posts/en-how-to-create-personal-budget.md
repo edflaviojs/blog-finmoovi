@@ -18,12 +18,12 @@ seo:
 
 Creating a [personal budget](/en/glossario/en-orcamento-pessoal) doesn't have to be complicated. In fact, with the right method, you can set yours up in less than 30 minutes — and the best part: one that actually works in everyday life.
 
-## Why Have a Personal Budget?
+## Why Have a Personal [Budget](/en/posts/organize-couple-finances)?
 
 Without a budget, your [money](/en/posts/30-day-rule-for-purchases) simply disappears. Studies show that people who track their expenses save on average 20% more than those who don't.
 
 A good budget helps you:
-- Know exactly where your money goes
+- Know exactly where your [money](/en/posts/financial-planning-for-couples) goes
 - Identify unnecessary expenses
 - Set and achieve financial goals
 - Reduce financial stress

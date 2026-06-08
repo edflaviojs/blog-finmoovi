@@ -21,8 +21,8 @@ Quando você está em um relacionamento, é importante que você e seu parceiro 
 
 Uma boa ideia é criar um [orçamento](/posts/como-criar-orcamento-pessoal) juntos, considerando todas as despesas mensais, como aluguel, comida, transporte, etc. Por exemplo, se vocês pagam R$ 2.500 de aluguel e R$ 1.000 de comida por mês, já são R$ 3.500 gastos fixos. É importante também considerar despesas variáveis, como entretenimento e lazer.
 
-## Gastos e Economia
-É fundamental que você e seu parceiro tenham uma conversa aberta sobre gastos e economia. **Dica prática:** crie uma categoria de "dinheiro para diversão" no seu orçamento, para que vocês possam gastar um pouco de dinheiro em coisas que享am, sem se sentir culpados. Por exemplo, vocês podem decidir que vão gastar R$ 500 por mês em restaurantes e cinemas.
+## Gastos e [Economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz)
+É fundamental que você e seu parceiro tenham uma conversa aberta sobre gastos e [economia](/posts/economize-na-conta-de-energia). **Dica prática:** crie uma categoria de "dinheiro para diversão" no seu orçamento, para que vocês possam gastar um pouco de dinheiro em coisas que享am, sem se sentir culpados. Por exemplo, vocês podem decidir que vão gastar R$ 500 por mês em restaurantes e cinemas.
 
 Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para economizar dinheiro:
 * Corte gastos desnecessários, como assinaturas de serviços que não usam

@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Reduciendo el Consumo
-Imagina que pagas alrededor de R$ 200 por mes en tu cuenta de energía. Esto puede parecer un valor razonable, pero si sabes cómo reducir ese consumo, puedes ahorrar alrededor de R$ 50 por mes, lo que es equivalente a R$ 600 por año. Esto puede lograrse con algunos cambios simples en tu día a día. Por ejemplo, si tienes un salario de R$ 5.000 por mes, una reducción de R$ 50 en la cuenta de energía puede significar un ahorro del 1% de tu salario.
+Imagina que pagas alrededor de R$ 200 por mes en tu cuenta de energía. Esto puede parecer un valor razonable, pero si sabes cómo reducir ese consumo, puedes ahorrar alrededor de R$ 50 por mes, lo que es equivalente a R$ 600 por año. Esto puede lograrse con algunos cambios simples en tu día a día. Por ejemplo, si tienes un salario de R$ 5.000 por mes, una reducción de R$ 50 en la cuenta de energía puede significar un [ahorro](/es/posts/regla-de-los-30-dias-para-compras) del 1% de tu salario.
 
 Una de las principales razones para el alto consumo de energía es el uso excesivo de aparatos electrónicos. Muchas personas dejan la televisión, el computador y otros aparatos encendidos incluso cuando no están en uso. Esto puede aumentar significativamente la cuenta de energía. Además, el uso de lámparas incandescentes también puede contribuir al alto consumo de energía.
 
@@ -49,7 +49,7 @@ Es importante verificar regularmente la cuenta de energía para saber cuánto es
 
 
 
-**Consejo práctico:** Verifica si la empresa de energía eléctrica ofrece un servicio de monitoreo de consumo. Esto puede ayudar a identificar áreas donde puedes reducir el consumo y ahorrar dinero.
+**Consejo práctico:** Verifica si la empresa de energía eléctrica ofrece un servicio de monitoreo de consumo. Esto puede ayudar a identificar áreas donde puedes reducir el consumo y ahorrar [dinero](/es/posts/planeamiento-financiero-para-parejas).
 
 ## Comienza hoy
 Ahora que sabes cómo ahorrar en la cuenta de energía, es hora de comenzar a actuar. Comienza apagando las luces y aparatos cuando no estén en uso y cambia las lámparas incandescentes por lámparas LED. Con estos simples cambios, puedes ahorrar alrededor de R$ 50 por mes y alcanzar tus objetivos financieros.

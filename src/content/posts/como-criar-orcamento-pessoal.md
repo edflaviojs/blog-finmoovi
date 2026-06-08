@@ -55,7 +55,7 @@ Estes são os que mais impactam seu orçamento:
 - Roupas e compras pessoais
 - Presentes e imprevistos
 
-## Passo 4: Aplique a regra 50-30-20
+## Passo 4: Aplique a [regra 50-30-20](/posts/regra-50-30-20-guia-completo)
 
 Distribua sua renda assim:
 - **50%** para necessidades (moradia, alimentação, transporte)

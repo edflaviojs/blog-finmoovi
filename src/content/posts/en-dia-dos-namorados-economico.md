@@ -21,7 +21,7 @@ translate: true
 ## Planning a Responsible Valentine's Day
 Valentine's Day is a special occasion to celebrate love and unity with those we love. However, it's not necessary to compromise our finances to make this day unforgettable. With a little creativity and planning, it's possible to have an economic and meaningful Valentine's Day.
 
-To start, it's essential to define a [budget](/en/posts/50-30-20-rule-complete-guide) for the celebrations. Considering that the average salary in Brazil ranges from R$ 2,500 to R$ 4,000, it's reasonable to allocate 5% to 10% of this value for Valentine's Day. This means that, depending on your salary, you could have a [budget](/en/posts/how-to-create-personal-budget) of R$ 125 to R$ 400.
+To start, it's essential to define a [budget](/en/posts/50-30-20-rule-complete-guide) for the celebrations. Considering that the average salary in Brazil ranges from R$ 2,500 to R$ 4,000, it's reasonable to allocate 5% to 10% of this value for Valentine's Day. This means that, depending on your salary, you could have a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) of R$ 125 to R$ 400.
 
 ## Tips for an Economic Gift
 A gift doesn't have to be expensive to be meaningful. Here are some tips to find the perfect gift without breaking the bank:
@@ -35,7 +35,7 @@ A gift doesn't have to be expensive to be meaningful. Here are some tips to find
 - **Outdoor Walk**: Plan a walk in a park or at the beach. Bring a picnic and enjoy nature together. Cost: R$ 20 to R$ 50.
 
 ## Managing Finances with FinMoovi
-To help manage your finances and stay within your budget, the FinMoovi app can be a useful tool. With it, you can track your expenses, set financial goals, and receive alerts not to exceed the established limit.
+To help manage your finances and stay within your [budget](/en/posts/reduce-fixed-expenses), the FinMoovi app can be a useful tool. With it, you can track your expenses, set financial goals, and receive alerts not to exceed the established limit.
 
 ## Celebrating with Creativity
 Creativity is the key to an economic and memorable Valentine's Day. Here are some ideas to celebrate with style without spending too much:

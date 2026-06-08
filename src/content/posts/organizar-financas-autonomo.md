@@ -33,7 +33,7 @@ Por exemplo, se você percebe que está gastando R$ 1.500 por mês com alimenta�
 ## Planejamento Tributário
 Como autônomo, você é responsável por seu próprio recolhimento de impostos, o que pode ser um desafio. É importante entender como funcionam os impostos para autônomos e como planejar sua tributação de forma eficaz. Isso pode incluir a dedução de despesas profissionais, como materiais de trabalho, uso de veículo e até parte da conta de luz e internet da sua casa, se você trabalha de home office.
 
-**Dica prática:** Mantenha todos os recibos e notas fiscais de despesas que possam ser deduzidas do seu [imposto de renda](/glossario/imposto-de-renda). Isso pode economizar uma quantidade significativa de dinheiro no final do ano.
+**Dica prática:** Mantenha todos os recibos e notas fiscais de despesas que possam ser deduzidas do seu [imposto de renda](/glossario/imposto-de-renda). Isso pode economizar uma quantidade significativa de [dinheiro](/posts/economize-na-conta-de-energia) no final do ano.
 
 ## Investindo para o Futuro
 Além de gerenciar suas finanças atuais, é crucial pensar no futuro. Isso inclui planejar aposentadoria, investir em educação ou em um negócio próprio, e até mesmo comprar uma casa. Para autônomos, investir pode parecer um desafio devido à [renda variável](/glossario/renda-variavel), mas existem estratégias que podem ajudar.
@@ -57,4 +57,4 @@ Não importa onde você está em sua jornada financeira, o importante é começa
 
 
 ---
-**Pronto para organizar suas finanças? [Experimente o FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.**
+**Pronto para organizar suas finanças? [Experimente o FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/economize-na-conta-do-mercado).**

@@ -19,7 +19,7 @@ seo:
 ## Financial Planning
 When you're a freelancer, it's easy to get lost in managing your [money](/en/posts/30-day-rule-for-purchases). Without a fixed salary, it's common not to know exactly how much you'll earn the next month. That's why creating a personalized financial plan is crucial. Let's assume you earn an average of R$ 5,000 per month. From this amount, it's essential to set aside a portion for essential expenses, such as rent (R$ 2,000), water and electricity bills (R$ 150), and food (R$ 800). Additionally, it's essential to include a reserve for taxes and contributions, which can range from 10% to 20% of your monthly earnings.
 
-**Practical tip:** Set aside 10% of your monthly earnings for an emergency account. This will help ensure you have money to cover unexpected expenses, such as a doctor's visit or car repairs.
+**Practical tip:** Set aside 10% of your monthly earnings for an emergency account. This will help ensure you have [money](/en/posts/financial-planning-for-couples) to cover unexpected expenses, such as a doctor's visit or car repairs.
 
 ## Expense Management
 Expense management is another critical area for freelancers. Without a fixed salary, it's easy to get carried away with unnecessary expenses. To avoid this, it's essential to create a detailed [budget](/en/posts/50-30-20-rule-complete-guide). Here's an example of how you can divide your expenses:
@@ -48,7 +48,7 @@ Cash flow control is fundamental for freelancers. Without a fixed salary, it's e
 Performance analysis is essential for freelancers. Without a fixed salary, it's easy to get lost in managing your money and end up with cash flow problems. To avoid this, it's essential to create a performance analysis plan. Here are some tips:
 - Regularly check your bank balance
 - Analyze your expenses and income
-- Adjust your budget and investment plan as needed
+- Adjust your [budget](/en/posts/how-to-create-personal-budget) and investment plan as needed
 
 ![Controle de Fluxo de Caixa](/images/posts/organizar-financas-autonomo-3.svg)
 

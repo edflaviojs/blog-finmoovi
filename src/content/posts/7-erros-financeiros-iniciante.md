@@ -32,7 +32,7 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-
 
 ## 3. Não acompanhar os gastos
 
-**O erro:** Não saber para onde vai o dinheiro. "Sumiu e não sei como."
+**O erro:** Não saber para onde vai o [dinheiro](/posts/economize-na-conta-de-energia). "Sumiu e não sei como."
 
 **A solução:** Registre cada gasto por pelo menos 30 dias. Com o **FinMoovi**, basta abrir o app e registrar — leva 5 segundos. Depois de um mês, você terá um raio-x completo.
 
@@ -69,7 +69,7 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-
 | Não acompanhar | Use o FinMoovi por 30 dias |
 | Ignorar pequenos gastos | Calcule o custo anual |
 | Sem objetivos | Defina 1 meta com prazo |
-| Investir sem entender | Comece pelo Tesouro Selic |
+| Investir sem entender | Comece pelo Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-4-maio-2026)) |
 | Não se pagar primeiro | Automatize a transferência |
 
 ---

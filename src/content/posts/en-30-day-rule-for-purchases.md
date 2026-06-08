@@ -46,7 +46,7 @@ One of the main challenges of the 30-day rule is maintaining discipline and not 
 
 
 ## Start Today
-Don't wait any longer to start using the 30-day rule. Today is the day to start saving money and avoiding impulse purchases. Remember that the 30-day rule is a simple but effective technique that can make a big difference in your personal finances.
+Don't wait any longer to start using the 30-day rule. Today is the day to start saving [money](/en/posts/financial-planning-for-couples) and avoiding impulse purchases. Remember that the 30-day rule is a simple but effective technique that can make a big difference in your personal finances.
 
 ![Comece hoje](/images/posts/regra-dos-30-dias-para-compras-5.svg)
 

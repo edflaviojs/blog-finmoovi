@@ -35,7 +35,7 @@ Desligar os aparelhos eletrônicos quando não estão em uso é outra forma de r
 
 Além disso, é importante verificar se os aparelhos que você está comprando têm a certificação de eficiência energética. Isso pode garantir que você esteja comprando aparelhos que vão consumir menos energia e durar mais tempo.
 
-## Economia no Dia a Dia
+## [Economia](/posts/economize-na-conta-do-mercado) no Dia a Dia
 Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para economizar energia no dia a dia:
 * Desligue as luzes e aparelhos quando não estiverem em uso
 * Use lâmpadas LED em vez de lâmpadas incandescentes
@@ -43,7 +43,7 @@ Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para economiza
 * Use um termostato para controlar a temperatura em sua casa
 
 ## Controle de Consumo
-É importante verificar regularmente a conta de energia para saber quanto você está consumindo e onde está o maior consumo. Isso pode ajudar a identificar áreas onde você pode reduzir o consumo e economizar dinheiro.
+É importante verificar regularmente a conta de energia para saber quanto você está consumindo e onde está o maior consumo. Isso pode ajudar a identificar áreas onde você pode reduzir o consumo e economizar [dinheiro](/posts/organizar-financas-autonomo).
 
 ![Economia no Dia a Dia](/images/posts/economize-na-conta-de-energia-3.svg)
 
