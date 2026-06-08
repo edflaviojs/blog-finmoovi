@@ -36,11 +36,11 @@ Tu ingreso neto es lo que realmente llega a tu cuenta bancaria después de impue
 
 Separa en fijos (alquiler, servicios, suscripciones) y variables (comida, entretenimiento, compras). Revisa tus últimos 3 meses de extractos bancarios.
 
-## Paso 3: Categoriza Usando la Regla 50-30-20
+## Paso 3: Categoriza Usando la [Regla 50-30-20](/es/posts/regla-50-30-20-guia-completa)
 
 - **50% Necesidades:** alquiler, comida, transporte, salud
 - **30% Deseos:** entretenimiento, restaurantes, hobbies
-- **20% Ahorro:** [fondo de emergencia](/es/glossario/es-reserva-de-emergencia), inversiones, pago de deudas
+- **20% [Ahorro](/es/posts/regla-de-los-30-dias-para-compras):** [fondo de emergencia](/es/glossario/es-reserva-de-emergencia), inversiones, pago de deudas
 
 ## Paso 4: Define Metas Realistas
 

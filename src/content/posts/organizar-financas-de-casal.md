@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Finanças em Comum
-Quando você está em um relacionamento, é importante que você e seu parceiro estejam alinhados em relação às finanças. Isso significa que vocês devem ter uma visão clara de como estão gastando seu dinheiro e como podem economizar juntos. Vamos supor que você e seu parceiro ganhem R$ 5.000 e R$ 6.000 por mês, respectivamente. Se vocês não tiverem um plano, é fácil gastar todo o dinheiro sem saber para onde ele vai.
+Quando você está em um relacionamento, é importante que você e seu parceiro estejam alinhados em relação às finanças. Isso significa que vocês devem ter uma visão clara de como estão gastando seu [dinheiro](/posts/economize-na-conta-do-mercado) e como podem economizar juntos. Vamos supor que você e seu parceiro ganhem R$ 5.000 e R$ 6.000 por mês, respectivamente. Se vocês não tiverem um plano, é fácil gastar todo o [dinheiro](/posts/organizar-financas-autonomo) sem saber para onde ele vai.
 
 Uma boa ideia é criar um [orçamento](/posts/como-criar-orcamento-pessoal) juntos, considerando todas as despesas mensais, como aluguel, comida, transporte, etc. Por exemplo, se vocês pagam R$ 2.500 de aluguel e R$ 1.000 de comida por mês, já são R$ 3.500 gastos fixos. É importante também considerar despesas variáveis, como entretenimento e lazer.
 

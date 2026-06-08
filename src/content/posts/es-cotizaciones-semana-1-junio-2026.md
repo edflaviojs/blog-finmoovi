@@ -38,5 +38,5 @@ A medida que nos acercamos a la próxima semana, es importante estar atento a lo
 
 
 ---
-**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
+**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/organizar-finanzas-autonomo).**
 

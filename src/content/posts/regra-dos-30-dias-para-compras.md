@@ -46,7 +46,7 @@ Um dos principais desafios da regra dos 30 dias é manter a disciplina e não ce
 
 
 ## Comece hoje
-Não espere mais para começar a usar a regra dos 30 dias. Hoje é o dia para começar a economizar dinheiro e a evitar compras impulsivas. Lembre-se de que a regra dos 30 dias é uma técnica simples, mas eficaz, e que pode fazer uma grande diferença em suas [finanças pessoais](/posts/como-criar-orcamento-pessoal).
+Não espere mais para começar a usar a regra dos 30 dias. Hoje é o dia para começar a economizar [dinheiro](/posts/economize-na-conta-do-mercado) e a evitar compras impulsivas. Lembre-se de que a regra dos 30 dias é uma técnica simples, mas eficaz, e que pode fazer uma grande diferença em suas [finanças pessoais](/posts/como-criar-orcamento-pessoal).
 
 ![Comece hoje](/images/posts/regra-dos-30-dias-para-compras-5.svg)
 

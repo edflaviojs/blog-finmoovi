@@ -49,7 +49,7 @@ Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para economiza
 
 
 
-**Dica prática:** Verifique se a empresa de energia elétrica oferece um serviço de monitoramento de consumo. Isso pode ajudar a identificar áreas onde você pode reduzir o consumo e economizar dinheiro.
+**Dica prática:** Verifique se a empresa de energia elétrica oferece um serviço de monitoramento de consumo. Isso pode ajudar a identificar áreas onde você pode reduzir o consumo e economizar [dinheiro](/posts/organizar-financas-de-casal).
 
 ## Comece hoje
 Agora que você sabe como economizar na conta de energia, é hora de começar a agir. Comece desligando as luzes e aparelhos quando não estiverem em uso e troque as lâmpadas incandescentes por lâmpadas LED. Com essas simples mudanças, você pode economizar cerca de R$ 50 por mês e alcançar seus objetivos financeiros.

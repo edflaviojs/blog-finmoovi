@@ -29,7 +29,7 @@ Another way to save is to compare prices between different stores. This can be d
 
 
 
-## Organizing Your [Budget](/en/posts/how-to-create-personal-budget)
+## Organizing Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances))
 To really understand how you're spending your [money](/en/posts/30-day-rule-for-purchases), it's crucial to organize your budget. This includes recording all your expenses, from your market bill to other monthly expenses like rent, internet, and phone services. With a well-organized budget, you can identify areas where you can cut unnecessary expenses and direct that [money](/en/posts/financial-planning-for-couples) towards savings or investments. **Practical tip:** Use a finance app to make it easier to track and monitor your expenses.
 
 ## Controlling Expenses
@@ -47,4 +47,4 @@ Don't wait any longer to start saving. With small changes to your shopping habit
 
 
 ---
-**The next step is yours. [Try FinMoovi for free for 7 days](https://finmoovi.com) and discover where your money is really going.**
+**The next step is yours. [Try FinMoovi for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/organizing-finances-as-a-freelancer) is really going.**

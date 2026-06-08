@@ -46,7 +46,7 @@ Uno de los principales desafíos de la regla de los 30 días es mantener la disc
 
 
 ## Comienza hoy
-No esperes más para comenzar a usar la regla de los 30 días. Hoy es el día para comenzar a ahorrar dinero y a evitar compras impulsivas. Recuerda que la regla de los 30 días es una técnica simple, pero eficaz, y que puede hacer una gran diferencia en tus [finanzas personales](/es/posts/ahorrando-en-la-cuenta-de-energia).
+No esperes más para comenzar a usar la regla de los 30 días. Hoy es el día para comenzar a ahorrar [dinero](/es/posts/planeamiento-financiero-para-parejas) y a evitar compras impulsivas. Recuerda que la regla de los 30 días es una técnica simple, pero eficaz, y que puede hacer una gran diferencia en tus [finanzas personales](/es/posts/ahorrando-en-la-cuenta-de-energia).
 
 ![Comienza hoy](/images/posts/regra-dos-30-dias-para-compras-5.svg)
 

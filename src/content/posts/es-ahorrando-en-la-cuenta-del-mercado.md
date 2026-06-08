@@ -29,8 +29,8 @@ Otra forma de ahorrar es comparar precios entre diferentes tiendas. Esto puede h
 
 
 
-## Organizando el Presupuesto
-Para realmente entender cómo estás gastando tu [dinero](/es/posts/organizar-finanzas-autonomo), es importante organizar tu presupuesto. Esto incluye registrar todos tus gastos, desde la cuenta del mercado hasta otras despesas mensuales, como alquiler, servicios de internet y teléfono. Con un presupuesto bien organizado, puedes identificar áreas donde puedes cortar gastos innecesarios y dirigir ese dinero hacia el ahorro o las inversiones. **Consejo práctico:** Usa una aplicación de finanzas para facilitar el registro y el seguimiento de tus gastos.
+## Organizando el [Presupuesto](/es/posts/como-crear-presupuesto-personal)
+Para realmente entender cómo estás gastando tu [dinero](/es/posts/organizar-finanzas-autonomo), es importante organizar tu presupuesto. Esto incluye registrar todos tus gastos, desde la cuenta del mercado hasta otras despesas mensuales, como alquiler, servicios de internet y teléfono. Con un presupuesto bien organizado, puedes identificar áreas donde puedes cortar gastos innecesarios y dirigir ese [dinero](/es/posts/planeamiento-financiero-para-parejas) hacia el ahorro o las inversiones. **Consejo práctico:** Usa una aplicación de finanzas para facilitar el registro y el seguimiento de tus gastos.
 
 ## Control de Gastos
 Tener control sobre los gastos es esencial para mantener el ahorro. Esto significa evitar compras impulsivas y estar atento a ofertas y promociones que puedan ser beneficiosas. Además, es importante revisar regularmente tu presupuesto para garantizar que estás en el camino correcto para alcanzar tus objetivos financieros. Si gastas R$ 500,00 por semana en compras de mercado y logras reducir eso a R$ 450,00, estarás ahorrando R$ 50,00 por semana, lo que puede ser un gran paso para alcanzar tus metas.

@@ -21,7 +21,7 @@ Cuando eres autónomo, una de las principales dificultades es lidiar con ingreso
 
 Imagina que tienes un mes de R$ 8.000 y otro de R$ 3.000. Si tus gastos esenciales mensuales son de aproximadamente R$ 2.500, necesitas garantizar que, incluso en el mes de menor ingreso, puedas cubrir estos gastos. Una estrategia es crear una reserva de emergencia que pueda ser utilizada en los meses de baja receita. **Consejo práctico:** Reserva al menos 10% a 20% de tu ingreso medio mensual para esta reserva.
 
-## Control de Gastos
+## [Control de Gastos](/es/posts/como-crear-presupuesto-personal)
 Tener un control preciso de tus gastos es fundamental para cualquier plan financiero, especialmente para autónomos. Esto incluye desde cuentas de agua y luz hasta gastos con combustible y mantenimiento del vehículo, si aplica. Una herramienta útil puede ser una aplicación de control de gastos, que permite registrar y categorizar todos los gastos a lo largo del mes. Con esto, puedes identificar áreas donde estás gastando más de lo necesario y hacer ajustes.
 
 Por ejemplo, si notas que estás gastando R$ 1.500 por mes con comida fuera, puede ser una buena idea reducir ese gasto a R$ 1.000, cocinando en casa con más frecuencia. Esta [economía](/es/posts/ahorrando-en-la-cuenta-de-energia) de R$ 500 puede ser destinada a la reserva de emergencia o a inversiones.
@@ -57,4 +57,4 @@ No importa dónde estés en tu jornada financiera, lo importante es comenzar a t
 
 
 ---
-**¿Listo para organizar tus finanzas? [Experimenta FinMoovi gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de hacia dónde va tu dinero.**
+**¿Listo para organizar tus finanzas? [Experimenta FinMoovi gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de hacia dónde va tu [dinero](/es/posts/planeamiento-financiero-para-parejas).**
