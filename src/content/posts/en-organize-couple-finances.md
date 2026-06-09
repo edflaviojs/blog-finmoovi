@@ -36,10 +36,10 @@ Having common financial goals is essential for you and your partner to work towa
 ## Challenges and Solutions
 Challenges often arise when managing couple finances. For example, one partner might have expensive taste while the other is more frugal. **Practical tip:** create an "expense tracking" system so you can monitor your spending and discuss it regularly.
 
-Another common challenge is lack of communication about finances. It's important that you have regular conversations about how you're feeling about money and if there's anything that needs to change.
+Another common challenge is lack of communication about finances. It's important that you have regular conversations about how you're feeling about [money](/en/posts/save-on-your-market-bill) and if there's anything that needs to change.
 
 ## Start Today
 Now that you know how to organize couple finances, it's time to start working toward a more secure and prosperous financial future. Remember that communication and planning are key to success. Start talking to your partner about your financial goals and create a plan to achieve them.
 
 ---
-**Ready to organize your finances? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to organize your finances? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/saving-on-your-energy-bill) is going.**

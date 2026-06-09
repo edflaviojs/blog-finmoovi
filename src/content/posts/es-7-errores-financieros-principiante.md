@@ -32,7 +32,7 @@ La vida pasa. Sin 3-6 meses de gastos ahorrados, cualquier imprevisto se convier
 
 ## 4. Vivir Sin [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal)
 
-"Simplemente gastaré menos" no funciona. Necesitas un plan concreto. La regla 50-30-20 es un excelente punto de partida.
+"Simplemente gastaré menos" no funciona. Necesitas un plan concreto. La [regla 50-30-20](/es/posts/regla-50-30-20-guia-completa) es un excelente punto de partida.
 
 ## 5. Solo Pagar el Mínimo de Deudas
 

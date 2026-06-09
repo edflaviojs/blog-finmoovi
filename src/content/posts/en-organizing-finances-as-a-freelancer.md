@@ -16,7 +16,7 @@ seo:
   keywords: ["how to organize finances as a freelancer","personal finance","economy","money"]
 ---
 
-## Financial Planning
+## [Financial Planning](/en/posts/how-to-create-personal-[budget](/en/posts/reduce-fixed-expenses))
 When you're a freelancer, it's easy to get lost in managing your [money](/en/posts/30-day-rule-for-purchases). Without a fixed salary, it's common not to know exactly how much you'll earn the next month. That's why creating a personalized financial plan is crucial. Let's assume you earn an average of R$ 5,000 per month. From this amount, it's essential to set aside a portion for essential expenses, such as rent (R$ 2,000), water and electricity bills (R$ 150), and food (R$ 800). Additionally, it's essential to include a reserve for taxes and contributions, which can range from 10% to 20% of your monthly earnings.
 
 **Practical tip:** Set aside 10% of your monthly earnings for an emergency account. This will help ensure you have [money](/en/posts/financial-planning-for-couples) to cover unexpected expenses, such as a doctor's visit or car repairs.
