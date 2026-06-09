@@ -38,7 +38,7 @@ Aquí hay algunos ejemplos de productos que puedes elegir para ahorrar:
 ## Evitando gastos innecesarios
 Otra forma de ahorrar en las compras del supermercado es evitar gastos innecesarios. Esto incluye no comprar productos que no son necesarios, como alimentos procesados o bebidas alcohólicas. Además, es importante evitar comprar productos que están en promoción, pero que no son necesarios.
 
-Por ejemplo, si ves un producto en promoción, pero no lo necesitas, no lo compres. En lugar de eso, compra solo los productos que necesitas y que están dentro de tu presupuesto.
+Por ejemplo, si ves un producto en promoción, pero no lo necesitas, no lo compres. En lugar de eso, compra solo los productos que necesitas y que están dentro de tu [presupuesto](/es/posts/como-crear-presupuesto-personal).
 
 ![Evitando gastos innecesarios](/images/posts/economizar-nas-compras-do-supermercado-3.webp)
 
@@ -57,4 +57,4 @@ Existen muchas aplicaciones y herramientas que pueden ayudarte a ahorrar en las 
 Ahora que sabes cómo ahorrar en las compras del supermercado, es hora de comenzar a poner estas sugerencias en práctica. Recuerda que ahorrar es un proceso continuo y que cada pequeño [cambio](/es/glossario/es-cambio) puede hacer una gran diferencia a largo plazo. Así que, comienza hoy a hacer cambios en tus compras del supermercado y ve cómo puedes ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia).
 
 ---
-**El próximo paso es tuyo. [Prueba el FinMoovi gratis por 7 días](https://finmoovi.com) y descubre hacia dónde va tu dinero en realidad.**
+**El próximo paso es tuyo. [Prueba el FinMoovi gratis por 7 días](https://finmoovi.com) y descubre hacia dónde va tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) en realidad.**

@@ -22,7 +22,7 @@ translate: true
 
 El Día de los Enamorados es una fecha especial para las parejas y, a menudo, trae consigo la presión de encontrar el regalo perfecto. Sin embargo, es posible celebrar este día sin gastar una fortuna. En este artículo, vamos a explorar dicas prácticas y creativas para un Día de los Enamorados económico, mostrando que el amor no necesita ser caro.
 
-## Planificación y Presupuesto
+## Planificación y [Presupuesto](/es/posts/como-crear-presupuesto-personal)
 
 Antes de empezar a buscar regalos, es esencial definir un presupuesto. Saber cuánto puedes gastar te ayudará a tomar decisiones más conscientes. Vamos a considerar un ejemplo: Juan y María están juntos desde hace tres años y decidieron celebrar el Día de los Enamorados de forma especial. Juan gana $4.500 por mes, y María gana $3.800. Deciden reservar el 5% de sus salarios para el regalo, lo que da un total de $425. Con este valor, pueden planificar una noche inolvidable.
 
@@ -40,7 +40,7 @@ Existen varias maneras de ser creativo y económico al elegir un regalo. Aquí t
 
 ## Herramientas para Ayudar en la Planificación
 
-Para ayudarte a gestionar tus finanzas y planificar el Día de los Enamorados de forma eficaz, puedes utilizar herramientas como el app FinMoovi. Puede ayudarte a organizar tus gastos, definir metas de ahorro y incluso ofrecer dicas personalizadas de economía. Con FinMoovi, puedes tener una visión clara de tus finanzas y tomar decisiones más informadas.
+Para ayudarte a gestionar tus finanzas y planificar el Día de los Enamorados de forma eficaz, puedes utilizar herramientas como el app FinMoovi. Puede ayudarte a organizar tus gastos, definir metas de ahorro y incluso ofrecer dicas personalizadas de [economía](/es/posts/ahorrando-en-la-cuenta-de-energia). Con FinMoovi, puedes tener una visión clara de tus finanzas y tomar decisiones más informadas.
 
 ![Herramientas para Ayudar en la Planificación](/images/posts/presente-dia-dos-namorados-economico-4.webp)
 

@@ -24,7 +24,7 @@ Valentine's Day is a special day for couples, and it often comes with the pressu
 
 ## Planning and Budgeting
 
-Before starting to look for gifts, it's essential to define a budget. Knowing how much you can spend will help you make more conscious decisions. Let's consider an example: John and Mary have been together for three years and decided to celebrate Valentine's Day in a special way. John earns $4,500 per month, and Mary earns $3,800. They decide to set aside 5% of their salaries for the gift, which gives them a total of $425. With this amount, they can plan an unforgettable night.
+Before starting to look for gifts, it's essential to define a [budget](/en/posts/50-30-20-rule-complete-guide). Knowing how much you can spend will help you make more conscious decisions. Let's consider an example: John and Mary have been together for three years and decided to celebrate Valentine's Day in a special way. John earns $4,500 per month, and Mary earns $3,800. They decide to set aside 5% of their salaries for the gift, which gives them a total of $425. With this amount, they can plan an unforgettable night.
 
 ![Planning and Budgeting](/images/posts/presente-dia-dos-namorados-economico-2.webp)
 
@@ -40,7 +40,7 @@ There are several ways to be creative and economic when choosing a gift. Here ar
 
 ## Tools to Help with Planning
 
-To help manage your finances and plan Valentine's Day effectively, you can use tools like the FinMoovi app. It can help you organize your expenses, set savings goals, and even offer personalized economy tips. With FinMoovi, you can have a clear view of your finances and make more informed decisions.
+To help manage your finances and plan Valentine's Day effectively, you can use tools like the FinMoovi app. It can help you organize your expenses, set savings goals, and even offer personalized [economy](/en/posts/30-day-rule-for-purchases) tips. With FinMoovi, you can have a clear view of your finances and make more informed decisions.
 
 ![Tools to Help with Planning](/images/posts/presente-dia-dos-namorados-economico-4.webp)
 
