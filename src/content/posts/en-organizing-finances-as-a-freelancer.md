@@ -45,7 +45,7 @@ Cash flow control is fundamental for freelancers. Without a fixed salary, it's e
 - Regularly check your bank balance
 
 ## Performance Analysis
-Performance analysis is essential for freelancers. Without a fixed salary, it's easy to get lost in managing your [money](/en/posts/saving-money-on-supermarket-shopping) and end up with cash flow problems. To avoid this, it's essential to create a performance analysis plan. Here are some tips:
+Performance analysis is essential for freelancers. Without a fixed salary, it's easy to get lost in managing your [money](/en/posts/saving-[money](/en/posts/tips-for-controlling-credit-card-expenses)-on-supermarket-shopping) and end up with cash flow problems. To avoid this, it's essential to create a performance analysis plan. Here are some tips:
 - Regularly check your bank balance
 - Analyze your expenses and income
 - Adjust your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) and investment plan as needed

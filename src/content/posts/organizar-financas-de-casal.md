@@ -36,7 +36,7 @@ Ter metas financeiras em comum é essencial para que você e seu parceiro trabal
 ## Desafios e Soluções
 É normal que surgam desafios ao gerenciar as finanças de casal. Por exemplo, um dos parceiros pode ter um gosto por compras caras, enquanto o outro é mais avesso a gastar. **Dica prática:** crie um sistema de "controle de gastos" para que vocês possam monitorar seus gastos e discutir sobre eles regularmente.
 
-Outro desafio comum é a falta de comunicação sobre finanças. É importante que vocês tenham conversas regulares sobre como estão se sentindo em relação ao dinheiro e se há alguma coisa que precisam mudar.
+Outro desafio comum é a falta de comunicação sobre finanças. É importante que vocês tenham conversas regulares sobre como estão se sentindo em relação ao [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) e se há alguma coisa que precisam mudar.
 
 ## Comece hoje
 Agora que você sabe como organizar as finanças de casal, é hora de começar a trabalhar em direção a um futuro financeiro mais seguro e próspero. Lembre-se de que a comunicação e o planejamento são fundamentais para o sucesso. Comece a conversar com seu parceiro sobre suas metas financeiras e crie um plano para alcançá-las.

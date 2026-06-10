@@ -45,7 +45,7 @@ For example, if you see a product on sale, but you don't need it, don't buy it. 
 
 
 ## Using Technology to Your Advantage
-There are many apps and tools that can help you save money on supermarket shopping. For example, you can use a price comparison app to find the best prices for the products you need. Additionally, you can use a shopping list app to help organize your shopping and avoid forgetting important products.
+There are many apps and tools that can help you [save money](/en/posts/reduce-fixed-expenses) on supermarket shopping. For example, you can use a price comparison app to find the best prices for the products you need. Additionally, you can use a shopping list app to help organize your shopping and avoid forgetting important products.
 
 **Practical Tip:** Use a [personal finance](/en/posts/30-day-rule-for-purchases) app, such as FinMoovi, to help control your expenses and find ways to save.
 
@@ -54,7 +54,7 @@ There are many apps and tools that can help you save money on supermarket shoppi
 
 
 ## Start Today
-Now that you know how to save money on supermarket shopping, it's time to start putting these tips into practice. Remember that saving is a continuous process, and every small change can make a big difference in the long run. So, start today by making changes to your supermarket shopping and see how you can save money.
+Now that you know how to save [money](/en/posts/save-on-your-market-bill) on supermarket shopping, it's time to start putting these tips into practice. Remember that saving is a continuous process, and every small change can make a big difference in the long run. So, start today by making changes to your supermarket shopping and see how you can save money.
 
 ---
 **The next step is yours. [Test FinMoovi for free for 7 days](https://finmoovi.com) and discover where your money is really going.**

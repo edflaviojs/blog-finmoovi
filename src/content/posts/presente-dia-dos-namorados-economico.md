@@ -24,7 +24,7 @@ O Dia dos Namorados é uma data especial para casais e, muitas vezes, traz consi
 
 ## Planejamento e [Orçamento](/posts/como-criar-orcamento-pessoal)
 
-Antes de começar a procurar presentes, é essencial definir um orçamento. Saber quanto você pode gastar ajudará a tomar decisões mais conscientes. Vamos considerar um exemplo: João e Maria estão juntos há três anos e decidiram celebrar o Dia dos Namorados de forma especial. João ganha R$ 4.500 por mês, e Maria ganha R$ 3.800. Eles decidem reservar 5% de seus salários para o presente, o que dá um total de R$ 425. Com esse valor, eles podem planejar uma noite inesquecível.
+Antes de começar a procurar presentes, é essencial definir um [orçamento](/posts/regra-50-30-20-guia-completo). Saber quanto você pode gastar ajudará a tomar decisões mais conscientes. Vamos considerar um exemplo: João e Maria estão juntos há três anos e decidiram celebrar o Dia dos Namorados de forma especial. João ganha R$ 4.500 por mês, e Maria ganha R$ 3.800. Eles decidem reservar 5% de seus salários para o presente, o que dá um total de R$ 425. Com esse valor, eles podem planejar uma noite inesquecível.
 
 ![Planejamento e Orçamento](/images/posts/presente-dia-dos-namorados-economico-2.webp)
 
@@ -40,7 +40,7 @@ Existem várias maneiras de ser criativo e econômico ao escolher um presente. A
 
 ## Ferramentas para Ajudar no Planejamento
 
-Para ajudar a gerenciar suas finanças e planejar o Dia dos Namorados de forma eficaz, você pode usar ferramentas como o app FinMoovi. Ele pode ajudar a organizar suas despesas, definir metas de [poupança](/glossario/poupanca) e até mesmo oferecer dicas personalizadas de economia. Com o FinMoovi, você pode ter uma visão clara de suas finanças e fazer escolhas mais informadas.
+Para ajudar a gerenciar suas finanças e planejar o Dia dos Namorados de forma eficaz, você pode usar ferramentas como o app FinMoovi. Ele pode ajudar a organizar suas despesas, definir metas de [poupança](/glossario/poupanca) e até mesmo oferecer dicas personalizadas de [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz). Com o FinMoovi, você pode ter uma visão clara de suas finanças e fazer escolhas mais informadas.
 
 ![Ferramentas para Ajudar no Planejamento](/images/posts/presente-dia-dos-namorados-economico-4.webp)
 
