@@ -111,7 +111,7 @@ publishedAt: ${dateStr}
 readingTime: 3
 featured: false
 locale: "${locale}"
-translationKey: "resumo-semanal-dolar-r-${rates.USDBRL.replace('.', '-')}-semana-${weekNum}-${monthName}-${today.getFullYear()}"
+translationKey: "resumo-semanal-dolar-r-${rates.USDBRL.replace('.', '-')}-semana-${weekNum}-${monthNames['pt'][today.getMonth()]}-${today.getFullYear()}"
 seo:
   metaTitle: "${locale === 'pt' ? 'Cotações' : locale === 'en' ? 'Quotes' : 'Cotizaciones'} Semana ${weekNum} ${monthName} ${today.getFullYear()}: Dólar R$ ${rates.USDBRL}"
   metaDescription: "${locale === 'pt' ? 'Resumo semanal' : locale === 'en' ? 'Weekly summary' : 'Resumen semanal'}: dólar a R$ ${rates.USDBRL}, euro a R$ ${rates.EURBRL}. ${locale === 'pt' ? 'Análise' : locale === 'en' ? 'Analysis' : 'Análisis'} e ${locale === 'pt' ? 'dicas' : locale === 'en' ? 'tips' : 'consejos'} para ${locale === 'pt' ? 'investidores' : locale === 'en' ? 'investors' : 'inversores'}."

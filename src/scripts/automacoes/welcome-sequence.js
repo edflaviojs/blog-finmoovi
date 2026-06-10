@@ -134,7 +134,20 @@ async function main() {
     process.exit(1);
   }
 
-  const subscribers = await getSubscribers();
+  let subscribers;
+  try {
+    subscribers = await getSubscribers();
+  } catch (error) {
+    console.warn(`⚠️ Não foi possível buscar subscribers: ${error.message}`);
+    console.log('📊 0 emails de boas-vindas enviados (tabela inacessível ou vazia)');
+    process.exit(0);
+  }
+
+  if (!subscribers || subscribers.length === 0) {
+    console.log('📊 0 emails de boas-vindas enviados (nenhum subscriber ativo)');
+    process.exit(0);
+  }
+
   const now = new Date();
   let sent = 0;
 

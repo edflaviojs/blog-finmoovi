@@ -158,7 +158,9 @@ async function getSubscribers() {
       }
     }
   );
-  return res.json();
+  if (!res.ok) throw new Error(`Supabase error: ${res.status}`);
+  const data = await res.json();
+  return Array.isArray(data) ? data : [];
 }
 
 async function sendEmail(to, subject, html) {
@@ -186,7 +188,15 @@ async function main() {
     process.exit(1);
   }
 
-  const subscribers = await getSubscribers();
+  let subscribers;
+  try {
+    subscribers = await getSubscribers();
+  } catch (error) {
+    console.warn(`⚠️ Não foi possível buscar subscribers: ${error.message}`);
+    console.log('📊 0 emails enviados (tabela inacessível)');
+    process.exit(0);
+  }
+
   console.log(`👥 ${subscribers.length} subscriber(s) ativo(s)`);
 
   if (subscribers.length === 0) {
