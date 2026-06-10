@@ -22,7 +22,7 @@ You've probably had that panic moment when you receive your credit card bill and
 ## Understanding Your Expenses
 To control credit card expenses, it's essential to understand first where your [money](/en/posts/30-day-rule-for-purchases) is going. Make a list of all your monthly expenses, including credit card purchases, water, electricity, internet bills, and others. For example, if you spend R$ 500 at the supermarket, R$ 200 at restaurants, and R$ 300 on online purchases, that's already R$ 1,000. **Practical tip:** use a spending control app to have a clear view of your purchasing habits.
 
-## Defining a Budget
+## Defining a [Budget](/en/posts/how-to-create-personal-budget)
 Defining a budget is the key to controlling expenses. Imagine you want to spend no more than R$ 1,200 on your credit card per month. You can divide this value into categories, such as R$ 500 for the supermarket, R$ 200 for restaurants, and R$ 500 for other purchases. If you exceed these limits, it's time to rethink your consumption habits. Additionally, it's essential to consider credit card interest rates. If you don't pay the bill in full, interest rates can significantly increase the total value.
 
 ![Entendendo seus gastos](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-2.webp)
@@ -40,7 +40,7 @@ There are several tools that can help control credit card expenses. In addition 
 
 
 ## Start Today
-Don't wait any longer to start controlling your credit card expenses. With a little discipline and the right tips, you can save money and avoid debt. Remember that expense control is an ongoing process, and it's essential to regularly review your consumption habits.
+Don't wait any longer to start controlling your credit card expenses. With a little discipline and the right tips, you can save [money](/en/posts/financial-planning-for-couples) and avoid debt. Remember that expense control is an ongoing process, and it's essential to regularly review your consumption habits.
 
 ![Comece hoje](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-6.webp)
 

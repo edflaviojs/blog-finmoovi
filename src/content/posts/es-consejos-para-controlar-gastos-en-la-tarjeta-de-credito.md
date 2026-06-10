@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Gastos en la tarjeta de crédito
-Probablemente ya ha tenido ese momento de pánico al recibir la factura de la tarjeta de crédito y ver que gastó mucho más de lo que imaginaba. Esto le sucede a mucha gente, especialmente cuando no hay un control riguroso sobre los gastos. Imagine que usted gana $5.000 por mes y gasta $1.500 en compras con tarjeta de crédito. Parece razonable, pero si no tiene un presupuesto bien definido, estos gastos pueden fácilmente salir de control.
+Probablemente ya ha tenido ese momento de pánico al recibir la factura de la tarjeta de crédito y ver que gastó mucho más de lo que imaginaba. Esto le sucede a mucha gente, especialmente cuando no hay un control riguroso sobre los gastos. Imagine que usted gana $5.000 por mes y gasta $1.500 en compras con tarjeta de crédito. Parece razonable, pero si no tiene un [presupuesto](/es/posts/como-crear-presupuesto-personal) bien definido, estos gastos pueden fácilmente salir de control.
 
 ## Entendiendo sus gastos
 Para controlar los gastos en la tarjeta de crédito, es fundamental entender primero dónde está yendo su [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Haga una lista de todos sus gastos mensuales, incluyendo compras con tarjeta de crédito, cuentas de agua, luz, internet, y otros. Por ejemplo, si usted gasta $500 en supermercado, $200 en restaurantes y $300 en compras en línea, eso ya suma $1.000. **Consejo práctico:** use una aplicación de control de gastos para tener una visión clara de sus hábitos de compra.
@@ -40,7 +40,7 @@ Existen varias herramientas que pueden ayudar a controlar los gastos en la tarje
 
 
 ## Comience hoy
-No espere más para comenzar a controlar sus gastos en la tarjeta de crédito. Con un poco de disciplina y los [consejos](/es/posts/7-errores-financieros-principiante) correctos, usted puede ahorrar dinero y evitar deudas. Recuerde que el control de gastos es un proceso continuo y que es importante revisar regularmente sus hábitos de consumo.
+No espere más para comenzar a controlar sus gastos en la tarjeta de crédito. Con un poco de disciplina y los [consejos](/es/posts/7-errores-financieros-principiante) correctos, usted puede ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) y evitar deudas. Recuerde que el control de gastos es un proceso continuo y que es importante revisar regularmente sus hábitos de consumo.
 
 ![Comience hoy](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-6.webp)
 

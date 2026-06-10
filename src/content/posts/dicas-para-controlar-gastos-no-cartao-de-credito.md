@@ -20,7 +20,7 @@ seo:
 Você provavelmente já teve aquele momento de pânico ao receber a fatura do cartão de crédito e ver que gastou muito mais do que imaginava. Isso acontece com muita gente, especialmente quando não há um controle rigoroso sobre os gastos. Imagine que você ganha R$ 5.000 por mês e gasta R$ 1.500 em compras com cartão de crédito. Parece razoável, mas se você não tiver um [orçamento](/posts/como-criar-orcamento-pessoal) bem definido, esses gastos podem facilmente sair do controle.
 
 ## Entendendo seus gastos
-Para controlar os gastos no cartão de crédito, é fundamental entender primeiro onde seu dinheiro está indo. Faça uma lista de todos os seus gastos mensais, incluindo compras com cartão de crédito, contas de água, luz, internet, e outros. Por exemplo, se você gasta R$ 500 em supermercado, R$ 200 em restaurantes e R$ 300 em compras online, isso já soma R$ 1.000. **Dica prática:** use um aplicativo de controle de gastos para ter uma visão clara de seus hábitos de compra.
+Para controlar os gastos no cartão de crédito, é fundamental entender primeiro onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo. Faça uma lista de todos os seus gastos mensais, incluindo compras com cartão de crédito, contas de água, luz, internet, e outros. Por exemplo, se você gasta R$ 500 em supermercado, R$ 200 em restaurantes e R$ 300 em compras online, isso já soma R$ 1.000. **Dica prática:** use um aplicativo de controle de gastos para ter uma visão clara de seus hábitos de compra.
 
 ## Definindo um orçamento
 Definir um orçamento é a chave para controlar os gastos. Imagine que você quer gastar no máximo R$ 1.200 com cartão de crédito por mês. Você pode dividir esse valor em categorias, como R$ 500 para supermercado, R$ 200 para restaurantes e R$ 500 para outras compras. Se você ultrapassar esses limites, é hora de repensar seus hábitos de consumo. Além disso, é importante considerar os juros do cartão de crédito. Se você não pagar a fatura integralmente, os juros podem aumentar significativamente o valor total.
@@ -40,7 +40,7 @@ Existem várias ferramentas que podem ajudar a controlar os gastos no cartão de
 
 
 ## Comece hoje
-Não espere mais para começar a controlar seus gastos no cartão de crédito. Com um pouco de disciplina e as dicas certas, você pode economizar dinheiro e evitar dívidas. Lembre-se de que o controle de gastos é um processo contínuo e que é importante revisar regularmente seus hábitos de consumo.
+Não espere mais para começar a controlar seus gastos no cartão de crédito. Com um pouco de disciplina e as dicas certas, você pode economizar [dinheiro](/posts/economizar-nas-compras-do-supermercado) e evitar dívidas. Lembre-se de que o controle de gastos é um processo contínuo e que é importante revisar regularmente seus hábitos de consumo.
 
 ![Comece hoje](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-6.webp)
 

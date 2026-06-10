@@ -62,4 +62,4 @@ Now that you know how to organize your finances as a freelancer, it's time to st
 
 
 ---
-**Ready to organize your finances? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to organize your finances? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/saving-money-on-supermarket-shopping) is going.**
