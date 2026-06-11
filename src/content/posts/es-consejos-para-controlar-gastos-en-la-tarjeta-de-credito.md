@@ -20,7 +20,7 @@ seo:
 Probablemente ya ha tenido ese momento de pánico al recibir la factura de la tarjeta de crédito y ver que gastó mucho más de lo que imaginaba. Esto le sucede a mucha gente, especialmente cuando no hay un control riguroso sobre los gastos. Imagine que usted gana $5.000 por mes y gasta $1.500 en compras con tarjeta de crédito. Parece razonable, pero si no tiene un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) bien definido, estos gastos pueden fácilmente salir de control.
 
 ## Entendiendo sus gastos
-Para controlar los gastos en la tarjeta de crédito, es fundamental entender primero dónde está yendo su [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Haga una lista de todos sus gastos mensuales, incluyendo compras con tarjeta de crédito, cuentas de agua, luz, internet, y otros. Por ejemplo, si usted gasta $500 en supermercado, $200 en restaurantes y $300 en compras en línea, eso ya suma $1.000. **Consejo práctico:** use una aplicación de control de gastos para tener una visión clara de sus hábitos de compra.
+Para controlar los gastos en la tarjeta de crédito, es fundamental entender primero dónde está yendo su [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Haga una lista de todos sus gastos mensuales, incluyendo compras con tarjeta de crédito, cuentas de agua, luz, internet, y otros. Por ejemplo, si usted gasta $500 en supermercado, $200 en restaurantes y $300 en compras en línea, eso ya suma $1.000. **Consejo práctico:** use una aplicación de [control de gastos](/es/posts/como-crear-presupuesto-personal) para tener una visión clara de sus hábitos de compra.
 
 ## Definiendo un [presupuesto](/es/posts/reducir-gastos-fijos-mensuales)
 Definir un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal) es la clave para controlar los gastos. Imagine que usted quiere gastar como máximo $1.200 con tarjeta de crédito por mes. Usted puede dividir ese valor en categorías, como $500 para supermercado, $200 para restaurantes y $500 para otras compras. Si usted supera esos límites, es hora de repensar sus hábitos de consumo. Además, es importante considerar los intereses de la tarjeta de crédito. Si no paga la factura integralmente, los intereses pueden aumentar significativamente el valor total.
@@ -47,4 +47,4 @@ No espere más para comenzar a controlar sus gastos en la tarjeta de crédito. C
 
 
 ---
-**¿Está cansado de planillas? [Pruebe FinMoovi gratis](https://finmoovi.com) y controle sus gastos con IA, multi-moneda y reportes que tienen sentido.**
+**¿Está cansado de planillas? [Pruebe [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://finmoovi.com) y controle sus gastos con IA, multi-moneda y reportes que tienen sentido.**
