@@ -78,4 +78,4 @@ If you're tired of feeling lost and stressed about your finances, try FinMoovi. 
 
 
 
-Try FinMoovi for free for 7 days and see the difference. You can sign up now and start organizing your finances in an effective and easy way. Don't waste any more time and money, try FinMoovi today! [Click here to get started](https://finmoovi.com)
+Try FinMoovi for free for 7 days and see the difference. You can sign up now and start organizing your finances in an effective and easy way. Don't waste any more time and [money](/en/posts/creating-an-emergency-fund), try FinMoovi today! [Click here to get started](https://finmoovi.com)

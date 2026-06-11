@@ -78,5 +78,5 @@ Si estás cansado de sentirte perdido y estresado con tus finanzas, experimenta 
 
 
 
-Experimenta el FinMoovi gratis por 7 días y ve la diferencia. Puedes inscribirte ahora y empezar a organizar tus finanzas de forma eficaz y fácil. No pierdas más tiempo y dinero, experimenta el FinMoovi hoy mismo!
+Experimenta el FinMoovi gratis por 7 días y ve la diferencia. Puedes inscribirte ahora y empezar a organizar tus finanzas de forma eficaz y fácil. No pierdas más tiempo y [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado), experimenta el FinMoovi hoy mismo!
 [Visita finmoovi.com](https://finmoovi.com)
