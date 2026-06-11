@@ -53,4 +53,4 @@ Não espere mais para começar a usar a regra dos 30 dias. Hoje é o dia para co
 
 
 ---
-**Cansado de planilha? [Teste o FinMoovi grátis](https://finmoovi.com) e controle seus gastos com IA, multi-moeda e relatórios que fazem sentido.**
+**Cansado de planilha? [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis](https://finmoovi.com) e controle seus gastos com IA, multi-moeda e relatórios que fazem sentido.**

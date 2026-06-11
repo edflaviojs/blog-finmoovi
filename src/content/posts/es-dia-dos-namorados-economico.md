@@ -34,7 +34,7 @@ Un regalo no necesita ser caro para ser significativo. Aquí están algunas suge
 - **Cena en Casa**: Cocina el plato favorito de tu pareja en casa. Compra los ingredientes necesarios y decora la mesa para crear una atmósfera romántica. Costo: R$ 50 a R$ 100.
 - **Paseo al Aire Libre**: Planea un paseo en un parque o en la playa. Lleva un picnic y disfruta de la naturaleza juntos. Costo: R$ 20 a R$ 50.
 
-## Administrando las Finanzas con el FinMoovi
+## Administrando las Finanzas con el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
 Para ayudar a administrar tus finanzas y mantenerse dentro del [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal), la aplicación FinMoovi puede ser una herramienta útil. Con ella, puedes seguir tus gastos, definir metas financieras y recibir alertas para no superar el límite establecido.
 
 ## Celebrando con Creatividad

@@ -30,7 +30,7 @@ La tasa Selic, actualmente en 12,25% anual, fue mantenida por el Comité de Pol�
 
 ## Consejo Práctico para el Inversor
 
-Un consejo valioso para los inversores individuales es diversificar sus inversiones, incluyendo activos en diferentes monedas. Con el dólar y el euro estables, puede ser un buen momento para considerar inversiones internacionales, como [acciones](/es/glossario/es-acoes) o fondos de inversión en dólares o euros. Herramientas como FinMoovi pueden ser muy útiles para seguir y gestionar inversiones en múltiples monedas, ofreciendo una visión clara y actualizada de su cartera.
+Un consejo valioso para los inversores individuales es diversificar sus inversiones, incluyendo activos en diferentes monedas. Con el dólar y el euro estables, puede ser un buen momento para considerar inversiones internacionales, como [acciones](/es/glossario/es-acoes) o fondos de inversión en dólares o euros. Herramientas como [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) pueden ser muy útiles para seguir y gestionar inversiones en múltiples monedas, ofreciendo una visión clara y actualizada de su cartera.
 
 ## Qué Esperar para la Próxima Semana
 

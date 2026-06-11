@@ -64,4 +64,4 @@ The 50-30-20 is a starting point, not a rigid formula. If you live in an expensi
 
 ## Track It Automatically
 
-With FinMoovi, every transaction is automatically categorized into needs, wants, and savings. You see your 50-30-20 breakdown in real-time without manual effort.
+With [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), every transaction is automatically categorized into needs, wants, and savings. You see your 50-30-20 breakdown in real-time without manual effort.

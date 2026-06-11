@@ -47,7 +47,7 @@ For example, if you see a product on sale, but you don't need it, don't buy it. 
 ## Using Technology to Your Advantage
 There are many apps and tools that can help you [save money](/en/posts/reduce-fixed-expenses) on supermarket shopping. For example, you can use a price comparison app to find the best prices for the products you need. Additionally, you can use a shopping list app to help organize your shopping and avoid forgetting important products.
 
-**Practical Tip:** Use a [personal finance](/en/posts/30-day-rule-for-purchases) app, such as FinMoovi, to help control your expenses and find ways to save.
+**Practical Tip:** Use a [personal finance](/en/posts/30-day-rule-for-purchases) app, such as [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), to help control your expenses and find ways to save.
 
 ![Usando tecnologia a seu favor](/images/posts/economizar-nas-compras-do-supermercado-4.webp)
 

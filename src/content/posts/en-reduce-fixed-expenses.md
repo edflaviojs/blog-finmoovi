@@ -38,7 +38,7 @@ Often, it's possible to negotiate prices with service providers. For example, yo
 Here are some practical tips to reduce fixed expenses:
 * **Review your bills**: Check for errors or improper charges on your bills.
 * **Change your plan**: If you're paying for a service plan that you're not fully using, switch to a cheaper plan.
-* **Use technology**: Use tools and apps to help manage your finances and reduce expenses. FinMoovi, for example, offers features to help control expenses and create a personalized [budget](/en/posts/50-30-20-rule-complete-guide).
+* **Use technology**: Use tools and apps to help manage your finances and reduce expenses. [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), for example, offers features to help control expenses and create a personalized [budget](/en/posts/50-30-20-rule-complete-guide).
 * **Consider sharing**: If you live alone, consider sharing rent or other expenses with a roommate.
 
 ## Example of Expense Reduction

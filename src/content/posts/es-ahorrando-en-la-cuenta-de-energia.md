@@ -59,4 +59,4 @@ Ahora que sabes cómo ahorrar en la cuenta de energía, es hora de comenzar a ac
 
 
 ---
-**¿Cansado de planilla? [Prueba FinMoovi gratis](https://finmoovi.com) y controla tus gastos con IA, multi-moneda y reportes que tienen sentido.**
+**¿Cansado de planilla? [Prueba [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://finmoovi.com) y controla tus gastos con IA, multi-moneda y reportes que tienen sentido.**

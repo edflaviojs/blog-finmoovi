@@ -34,7 +34,7 @@ A gift doesn't have to be expensive to be meaningful. Here are some tips to find
 - **Home-Cooked Dinner**: Cook your partner's favorite dish at home. Buy the necessary ingredients and decorate the table to create a romantic atmosphere. Cost: R$ 50 to R$ 100.
 - **Outdoor Walk**: Plan a walk in a park or at the beach. Bring a picnic and enjoy nature together. Cost: R$ 20 to R$ 50.
 
-## Managing Finances with FinMoovi
+## Managing Finances with [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
 To help manage your finances and stay within your [budget](/en/posts/reduce-fixed-expenses), the FinMoovi app can be a useful tool. With it, you can track your expenses, set financial goals, and receive alerts not to exceed the established limit.
 
 ## Celebrating with Creativity

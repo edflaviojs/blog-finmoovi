@@ -57,7 +57,7 @@ No Brasil, muitas vezes o aluguel sozinho já consome mais de 30% da renda. Ness
 
 ## Como acompanhar
 
-O segredo é monitorar. Com o **FinMoovi**, você configura as categorias uma vez e o app mostra automaticamente se está dentro dos percentuais. Alertas inteligentes avisam quando uma categoria está estourando.
+O segredo é monitorar. Com o **[FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)**, você configura as categorias uma vez e o app mostra automaticamente se está dentro dos percentuais. Alertas inteligentes avisam quando uma categoria está estourando.
 
 ## Quando a regra não funciona
 

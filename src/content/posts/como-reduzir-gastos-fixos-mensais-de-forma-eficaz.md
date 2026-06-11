@@ -38,7 +38,7 @@ Muitas vezes, é possível negociar preços com os fornecedores de serviços. Po
 Aqui estão algumas dicas práticas para reduzir os gastos fixos:
 * **Revisite as contas**: Verifique se há erros ou cobranças indevidas em suas contas.
 * **Mude de plano**: Se você está pagando por um plano de serviços que não está usando completamente, mude para um plano mais barato.
-* **Use tecnologia**: Utilize ferramentas e aplicativos para ajudar a gerenciar suas finanças e reduzir gastos. O FinMoovi, por exemplo, oferece recursos para ajudar a controlar os gastos e criar um [orçamento](/posts/como-criar-orcamento-pessoal) personalizado.
+* **Use tecnologia**: Utilize ferramentas e aplicativos para ajudar a gerenciar suas finanças e reduzir gastos. O [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), por exemplo, oferece recursos para ajudar a controlar os gastos e criar um [orçamento](/posts/como-criar-orcamento-pessoal) personalizado.
 * **Considere a opção de compartilhar**: Se você mora sozinho, considere compartilhar o aluguel ou outras despesas com um roommate.
 
 ## Exemplo de Redução de Gastos

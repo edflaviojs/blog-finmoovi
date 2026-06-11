@@ -47,4 +47,4 @@ Don't wait any longer to start saving. With small changes to your shopping habit
 
 
 ---
-**The next step is yours. [Try FinMoovi for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/organizing-finances-as-a-freelancer) is really going.**
+**The next step is yours. [Try [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/organizing-finances-as-a-freelancer) is really going.**

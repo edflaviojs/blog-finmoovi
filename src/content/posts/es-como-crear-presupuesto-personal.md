@@ -48,7 +48,7 @@ Empieza con metas pequeñas y alcanzables. "Ahorrar $200 este mes" es mejor que 
 
 ## Paso 5: Revisa y Ajusta Semanalmente
 
-Revisa tus gastos cada semana. Apps como FinMoovi hacen esto automático — cada transacción se categoriza y rastrea en tiempo real, en múltiples monedas.
+Revisa tus gastos cada semana. Apps como [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) hacen esto automático — cada transacción se categoriza y rastrea en tiempo real, en múltiples monedas.
 
 ## El Secreto: Consistencia
 

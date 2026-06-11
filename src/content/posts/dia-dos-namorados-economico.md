@@ -34,7 +34,7 @@ Um presente não precisa ser caro para ser significativo. Aqui estão algumas di
 - **Jantar Caseiro**: Cozinhe o prato favorito do seu parceiro em casa. Compre os ingredientes necessários e decore a mesa para criar uma atmosfera romântica. Custo: R$ 50 a R$ 100.
 - **Passeio ao Ar Livre**: Planeje um passeio em um parque ou na praia. Leve um piquenique e aproveite a natureza juntos. Custo: R$ 20 a R$ 50.
 
-## Gerenciando as Finanças com o FinMoovi
+## Gerenciando as Finanças com o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
 Para ajudar a gerenciar suas finanças e manter-se dentro do orçamento, o app FinMoovi pode ser uma ferramenta útil. Com ele, você pode acompanhar suas despesas, definir metas financeiras e receber alertas para não ultrapassar o limite estabelecido.
 
 ## Comemorando com Criatividade

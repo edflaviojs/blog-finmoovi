@@ -33,7 +33,7 @@ A real-life example is the case of a friend who works as a freelancer. He needs 
 ## The Solution is Here
 But there is a solution to this problem. I discovered an app that can help organize your finances in an effective and easy way. FinMoovi is an app that allows you to automatically categorize your expenses, even when you're offline. You can record your expenses by voice or use the Smart Capture feature, and the app will do the rest.
 
-With FinMoovi, you can get a clear picture of your finances and make informed decisions about how to manage your money. The app also offers intelligent reports with the help of AI, which helps identify areas where you can save and improve your financial situation.
+With FinMoovi, you can get a clear picture of your finances and make informed decisions about how to manage your [money](/en/posts/30-day-rule-for-purchases). The app also offers intelligent reports with the help of AI, which helps identify areas where you can save and improve your financial situation.
 
 ## How it Works
 Here's an example of how FinMoovi can be used in your daily life:
@@ -72,7 +72,7 @@ Here's an example of how FinMoovi can change your financial life:
 According to statistics, people who use expense management apps like FinMoovi tend to save more and have better financial health. For example, a study showed that people who use expense management apps have a 30% higher chance of achieving their financial goals.
 
 ## Try FinMoovi
-If you're tired of feeling lost and stressed about your finances, try FinMoovi. With FinMoovi, you can get a clear picture of your finances and make informed decisions about how to manage your money. Plus, FinMoovi is easy to use and offers features like automatic expense categorization and intelligent reports with AI assistance.
+If you're tired of feeling lost and stressed about your finances, try FinMoovi. With FinMoovi, you can get a clear picture of your finances and make informed decisions about how to manage your [money](/en/posts/financial-planning-for-couples). Plus, FinMoovi is easy to use and offers features like automatic expense categorization and intelligent reports with AI assistance.
 
 ![Experimente o FinMoovi](/images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas-6.webp)
 

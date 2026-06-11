@@ -48,7 +48,7 @@ Start with small, achievable goals. "Save $200 this month" is better than "save 
 
 ## Step 5: Track and Adjust Weekly
 
-Review your spending every week. Apps like FinMoovi make this automatic — every transaction is categorized and tracked in real-time, across multiple currencies.
+Review your spending every week. Apps like [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) make this automatic — every transaction is categorized and tracked in real-time, across multiple currencies.
 
 ## The Secret: Consistency
 

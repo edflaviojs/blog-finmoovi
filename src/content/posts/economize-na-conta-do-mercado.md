@@ -47,4 +47,4 @@ Não espere mais para começar a economizar. Com pequenas mudanças nos seus há
 
 
 ---
-**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/[dicas](/posts/7-erros-financeiros-iniciante)-para-controlar-gastos-no-cartao-de-credito) está indo de verdade.**
+**O próximo passo é seu. [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/[dicas](/posts/7-erros-financeiros-iniciante)-para-controlar-gastos-no-cartao-de-credito) está indo de verdade.**

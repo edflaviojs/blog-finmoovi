@@ -22,7 +22,7 @@ A semana que passou foi marcada por uma certa estabilidade no mercado de câmbio
 
 ## Dólar e Euro: Tendência Semanal
 
-O dólar apresentou uma leve alta ao longo da semana, mas nada que tenha causado grandes impactos nos investimentos. Já o euro manteve uma tendência de estabilidade, o que é bom para quem tem investimentos em moeda estrangeira. Com o euro em R$ 5,84, é um bom momento para avaliar se é hora de diversificar sua carteira de investimentos com ativos em euros. Ferramentas como o FinMoovi podem ajudar a acompanhar seus investimentos em múltiplas moedas, tornando mais fácil gerenciar seu patrimônio.
+O dólar apresentou uma leve alta ao longo da semana, mas nada que tenha causado grandes impactos nos investimentos. Já o euro manteve uma tendência de estabilidade, o que é bom para quem tem investimentos em moeda estrangeira. Com o euro em R$ 5,84, é um bom momento para avaliar se é hora de diversificar sua carteira de investimentos com ativos em euros. Ferramentas como o [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) podem ajudar a acompanhar seus investimentos em múltiplas moedas, tornando mais fácil gerenciar seu patrimônio.
 
 ## [Selic](/en/posts/quotes-week-4-may-2026) e Impacto nos Investimentos
 

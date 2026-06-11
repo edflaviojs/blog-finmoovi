@@ -34,7 +34,7 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-
 
 **O erro:** Não saber para onde vai o [dinheiro](/posts/economize-na-conta-de-energia). "Sumiu e não sei como."
 
-**A solução:** Registre cada gasto por pelo menos 30 dias. Com o **FinMoovi**, basta abrir o app e registrar — leva 5 segundos. Depois de um mês, você terá um raio-x completo.
+**A solução:** Registre cada gasto por pelo menos 30 dias. Com o **[FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)**, basta abrir o app e registrar — leva 5 segundos. Depois de um mês, você terá um raio-x completo.
 
 ## 4. Ignorar gastos pequenos
 

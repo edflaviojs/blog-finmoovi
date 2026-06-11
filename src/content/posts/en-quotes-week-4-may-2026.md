@@ -30,7 +30,7 @@ The Selic rate, currently at 12.25% per year, was maintained by the Monetary Pol
 
 ## Practical Tip for Investors
 
-A valuable tip for individual investors is to diversify their investments, including assets in different currencies. With the dollar and euro stable, it may be a good time to consider international investments, such as [stocks](/en/glossario/en-acoes) or investment funds in dollars or euros. Tools like FinMoovi can be very useful for tracking and managing investments in multiple currencies, offering a clear and updated view of your portfolio.
+A valuable tip for individual investors is to diversify their investments, including assets in different currencies. With the dollar and euro stable, it may be a good time to consider international investments, such as [stocks](/en/glossario/en-acoes) or investment funds in dollars or euros. Tools like [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) can be very useful for tracking and managing investments in multiple currencies, offering a clear and updated view of your portfolio.
 
 ## What to Expect for Next Week
 

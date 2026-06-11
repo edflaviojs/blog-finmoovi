@@ -53,4 +53,4 @@ Don't wait any longer to start using the 30-day rule. Today is the day to start 
 
 
 ---
-**Tired of spreadsheets? [Test FinMoovi for free](https://finmoovi.com) and control your expenses with AI, multi-currency, and reports that make sense.**
+**Tired of spreadsheets? [Test [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://finmoovi.com) and control your expenses with AI, multi-currency, and reports that make sense.**

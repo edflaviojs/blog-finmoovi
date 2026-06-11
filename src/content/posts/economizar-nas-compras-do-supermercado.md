@@ -47,7 +47,7 @@ Por exemplo, se você vê um produto em promoção, mas não precisa dele, não 
 ## Usando tecnologia a seu favor
 Existem muitos aplicativos e ferramentas que podem ajudar você a economizar nas compras do supermercado. Por exemplo, você pode usar um aplicativo de comparação de preços para encontrar os melhores preços dos produtos que você precisa. Além disso, você pode usar um aplicativo de lista de compras para ajudar a organizar suas compras e evitar esquecer de produtos importantes.
 
-**Dica prática:** Use um aplicativo de [finanças pessoais](/posts/7-erros-financeiros-iniciante), como o FinMoovi, para ajudar a controlar seus gastos e encontrar formas de economizar.
+**Dica prática:** Use um aplicativo de [finanças pessoais](/posts/7-erros-financeiros-iniciante), como o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), para ajudar a controlar seus gastos e encontrar formas de economizar.
 
 ![Usando tecnologia a seu favor](/images/posts/economizar-nas-compras-do-supermercado-4.webp)
 
