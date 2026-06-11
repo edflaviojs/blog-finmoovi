@@ -49,26 +49,26 @@ const GLOSSARIO_IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario'
 
 // --- Prompt Templates ---
 
-const NO_TEXT_SUFFIX = 'ABSOLUTELY NO TEXT, NO LETTERS, NO WORDS, NO NUMBERS, NO CHARACTERS, NO WRITING, NO CAPTIONS, NO LABELS, NO WATERMARK, NO LOGOS, NO SIGNATURES, completely text-free image only';
+const NO_TEXT_RULE = 'Ultra-realistic photograph with absolutely zero text, zero letters, zero words, zero numbers, zero writing, zero labels, zero watermarks, zero logos, zero signatures anywhere in the image. All surfaces must be completely blank and clean.';
 
 const COVER_STYLES = [
-  (topic) => `Professional lifestyle photography related to ${config.content.niche.en} and ${topic}, featuring real people in natural settings, warm authentic moments, modern clean aesthetic, soft natural lighting, shallow depth of field, editorial quality, neutral soft background, ${NO_TEXT_SUFFIX}`,
-  (topic) => `Clean data visualization and financial charts related to ${topic}, modern dashboard aesthetic, smooth gradients, professional infographic style, blue and green color palette, dark background with glowing elements, 3D perspective, ${NO_TEXT_SUFFIX}`,
-  (topic) => `Abstract geometric composition representing ${config.content.niche.en} and ${topic}, flowing shapes symbolizing growth and stability, gold and deep blue tones, minimalist premium quality, soft gradient lighting, professional editorial style, ${NO_TEXT_SUFFIX}`,
-  (topic) => `Flat lay photography of financial planning objects related to ${topic}, notebook calculator coins and plants on marble surface, top-down view, organized aesthetic, soft natural lighting, warm tones, editorial magazine quality, ${NO_TEXT_SUFFIX}`,
-  (topic) => `Cinematic wide shot of a modern workspace related to ${config.content.niche.en} and ${topic}, laptop with financial graphs on screen, coffee cup, morning light through window, shallow depth of field, no people visible, cozy productive atmosphere, ${NO_TEXT_SUFFIX}`,
+  (topic) => `${NO_TEXT_RULE} Professional lifestyle photography related to ${config.content.niche.en} and ${topic}, featuring real people in natural settings, warm authentic moments, modern clean aesthetic, soft natural lighting, shallow depth of field, editorial quality, neutral soft background`,
+  (topic) => `${NO_TEXT_RULE} Abstract glowing data visualization related to ${topic}, modern dashboard aesthetic with smooth gradients, blurred colorful light streaks and bokeh dots, blue and green color palette, dark background with soft glowing elements, 3D perspective, no readable charts`,
+  (topic) => `${NO_TEXT_RULE} Abstract geometric composition representing ${config.content.niche.en} and ${topic}, flowing shapes symbolizing growth and stability, gold and deep blue tones, minimalist premium quality, soft gradient lighting, professional editorial style`,
+  (topic) => `${NO_TEXT_RULE} Flat lay photography of financial planning objects related to ${topic}, blank open notebook with completely empty white pages, calculator with screen turned off, scattered coins and green plants on marble surface, top-down view, organized aesthetic, soft natural lighting, warm tones, editorial magazine quality`,
+  (topic) => `${NO_TEXT_RULE} Cinematic wide shot of a modern workspace related to ${config.content.niche.en} and ${topic}, laptop with abstract colorful gradient wallpaper on screen, coffee cup, morning light through window, shallow depth of field, no people visible, cozy productive atmosphere`,
 ];
 
 const INLINE_STYLES = [
-  (topic) => `Authentic lifestyle photo related to ${topic}, real people in everyday ${config.content.niche.en} situations, warm natural lighting, candid moments, modern clean composition, soft bokeh background, editorial magazine quality, ${NO_TEXT_SUFFIX}`,
-  (topic) => `Minimalist flat illustration of ${topic} concept, clean vector style, pastel colors, simple geometric shapes representing finance, modern and friendly aesthetic, ${NO_TEXT_SUFFIX}`,
-  (topic) => `Close-up detail shot related to ${topic}, coins stacked, plant growing from jar, or hands holding phone with graphs, macro photography, warm tones, soft bokeh, no faces visible, ${NO_TEXT_SUFFIX}`,
+  (topic) => `${NO_TEXT_RULE} Authentic lifestyle photo related to ${topic}, real people in everyday ${config.content.niche.en} situations, warm natural lighting, candid moments, modern clean composition, soft bokeh background, editorial magazine quality`,
+  (topic) => `${NO_TEXT_RULE} Minimalist flat illustration of ${topic} concept, clean vector style, pastel colors, simple geometric shapes representing finance, modern and friendly aesthetic, no icons with letters`,
+  (topic) => `${NO_TEXT_RULE} Close-up detail shot related to ${topic}, coins stacked, plant growing from jar, or hands holding phone showing abstract colorful screen, macro photography, warm tones, soft bokeh, no faces visible`,
 ];
 
 const PROMPT_TEMPLATES = {
   cover: (topic) => COVER_STYLES[Math.floor(Math.random() * COVER_STYLES.length)](topic),
   glossary: (topic) =>
-    `Abstract elegant visualization representing the ${config.content.niche.en} concept of ${topic}, minimalist premium quality, soft gradient lighting, professional editorial style, geometric shapes blended with subtle human elements, neutral soft gradient background, cyan and magenta accent colors, ${NO_TEXT_SUFFIX}`,
+    `${NO_TEXT_RULE} Abstract elegant visualization representing the ${config.content.niche.en} concept of ${topic}, minimalist premium quality, soft gradient lighting, professional editorial style, geometric shapes blended with subtle human elements, neutral soft gradient background, cyan and magenta accent colors`,
   inline: (topic) => INLINE_STYLES[Math.floor(Math.random() * INLINE_STYLES.length)](topic),
 };
 
