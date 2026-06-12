@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Invertiendo vs Ahorro
-Cuando se trata de [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia), muchas personas piensan que invertir y ahorrar son lo mismo. Sin embargo, estas dos estrategias financieras tienen objetivos y resultados diferentes. El ahorro es básicamente el acto de guardar [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) en una cuenta bancaria o en otro tipo de inversión de bajo riesgo, como un fondo de inversión de corto plazo. Ya la inversión implica colocar dinero en activos que tienen potencial de crecimiento a largo plazo, como [acciones](/es/glossario/es-acoes), bienes raíces o títulos.
+Cuando se trata de [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia), muchas personas piensan que invertir y ahorrar son lo mismo. Sin embargo, estas dos estrategias financieras tienen objetivos y resultados diferentes. El ahorro es básicamente el acto de guardar [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) en una cuenta bancaria o en otro tipo de inversión de bajo riesgo, como un fondo de inversión de corto plazo. Ya la inversión implica colocar [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado) en activos que tienen potencial de crecimiento a largo plazo, como [acciones](/es/glossario/es-acoes), bienes raíces o títulos.
 
 Por ejemplo, imagine que usted gana $5.000 por mes y logra ahorrar $1.000. Si usted coloca ese dinero en un ahorro, rendirá alrededor de $5 por mes, lo que es un retorno muy bajo. Ya si usted invierte ese mismo dinero en acciones o un fondo de inversión, puede tener un retorno mucho mayor, pero también corre el riesgo de perder parte de su inversión.
 
@@ -30,7 +30,7 @@ Sin embargo, es importante recordar que el riesgo también es un factor que pued
 
 
 
-## Planificación Financiera
+## [Planificación Financiera](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
 Otro factor importante que debe ser considerado al invertir o ahorrar es la planificación financiera. Esto implica definir metas financieras claras, como comprar una casa o pagar una deuda, y crear un plan para alcanzarlas. Además, es importante tener un presupuesto y controlar los gastos para garantizar que usted tenga dinero suficiente para invertir o ahorrar.
 
 Por ejemplo, imagine que usted quiere comprar una casa que cuesta $200.000. Si usted ahorra $1.000 por mes, le tomará alrededor de 17 años para alcanzar su objetivo. Ya si usted invierte $1.000 por mes en un fondo de inversión que rinde 8% al año, usted puede alcanzar su objetivo en alrededor de 10 años.

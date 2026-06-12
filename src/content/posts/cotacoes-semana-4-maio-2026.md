@@ -25,7 +25,7 @@ O dólar americano fechou a semana em R$ 5.03, apresentando uma leve estabilidad
 
 ## Selic e Impacto nos Investimentos
 
-A taxa Selic, atualmente em 12,25% ao ano, foi mantida pelo Comitê de Política Monetária (Copom) do Banco Central. Essa decisão visa controlar a [inflação](/glossario/inflacao) e manter a estabilidade econômica. Para os investidores, a manutenção da Selic significa que os investimentos com taxas de juros prefixados, como os títulos do [Tesouro Direto](/glossario/tesouro-direto), continuarão a oferecer retornos atraentes, especialmente quando comparados a outras opções de investimento de baixo risco.
+A taxa Selic, atualmente em 12,25% ao ano, foi mantida pelo Comitê de Política Monetária (Copom) do Banco Central. Essa decisão visa controlar a [inflação](/glossario/inflacao) e manter a estabilidade econômica. Para os investidores, a manutenção da Selic significa que os investimentos com taxas de [juros](/glossario/juros) prefixados, como os títulos do [Tesouro Direto](/glossario/tesouro-direto), continuarão a oferecer retornos atraentes, especialmente quando comparados a outras opções de investimento de baixo risco.
 
 ## Dica Prática para o Investidor
 

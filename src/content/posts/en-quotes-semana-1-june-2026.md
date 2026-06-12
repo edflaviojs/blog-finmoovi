@@ -26,7 +26,7 @@ O dólar apresentou uma leve alta ao longo da semana, mas nada que tenha causado
 
 ## [Selic](/en/posts/quotes-week-4-may-2026) e Impacto nos Investimentos
 
-A taxa Selic, que é a taxa de juros básica da economia, continua sendo um fator importante para os investimentos. Com a Selic em 12,25% ao ano, os investimentos em renda fixa, como títulos do tesouro, continuam atraindo a atenção de muitos investidores. No entanto, é importante lembrar que altas taxas de juros também podem aumentar os custos de financiamento para empresas e consumidores, o que pode afetar o crescimento econômico. Portanto, é fundamental manter um olho nas notícias econômicas e ajustar sua estratégia de investimento de acordo.
+A taxa Selic, que é a taxa de [juros](/en/glossario/en-juros) básica da economia, continua sendo um fator importante para os investimentos. Com a Selic em 12,25% ao ano, os investimentos em renda fixa, como títulos do tesouro, continuam atraindo a atenção de muitos investidores. No entanto, é importante lembrar que altas taxas de juros também podem aumentar os custos de financiamento para empresas e consumidores, o que pode afetar o crescimento econômico. Portanto, é fundamental manter um olho nas notícias econômicas e ajustar sua estratégia de investimento de acordo.
 
 ## Dica Prática para Investidores Individuais
 

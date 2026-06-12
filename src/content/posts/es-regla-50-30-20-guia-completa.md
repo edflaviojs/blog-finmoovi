@@ -48,7 +48,7 @@ La regla 50-30-20 es uno de los métodos más simples y efectivos para administr
 - Compras (ropa, gadgets)
 - Hobbies y entretenimiento
 - Gimnasio
-- Viajes y vacaciones
+- Viajes y [vacaciones](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
 
 ## ¿Qué Cuenta como "Ahorro"? (20%)
 

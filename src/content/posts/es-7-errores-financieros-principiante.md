@@ -36,11 +36,11 @@ La vida pasa. Sin 3-6 meses de gastos ahorrados, cualquier imprevisto se convier
 
 ## 5. Solo Pagar el Mínimo de Deudas
 
-Los pagos mínimos te mantienen endeudado para siempre por el [interés compuesto](/es/glossario/es-juros-compostos) trabajando en tu contra. Siempre paga más del mínimo cuando sea posible.
+Los pagos mínimos te mantienen endeudado para siempre por el [interés compuesto](/es/glossario/es-[juros](/es/glossario/es-juros)-compostos) trabajando en tu contra. Siempre paga más del mínimo cuando sea posible.
 
 ## 6. No Definir Metas Financieras
 
-Sin metas claras, ahorrar se siente inútil. Define para qué estás ahorrando: fondo de emergencia, vacaciones, casa, jubilación.
+Sin metas claras, ahorrar se siente inútil. Define para qué estás ahorrando: fondo de emergencia, [vacaciones](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), casa, jubilación.
 
 ## 7. Intentar Hacer Todo a la Vez
 

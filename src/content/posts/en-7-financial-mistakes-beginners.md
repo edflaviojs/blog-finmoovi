@@ -36,11 +36,11 @@ That daily $5 coffee? That's $150/month or $1,800/year. Small expenses add up fa
 
 ## 5. Only Paying Minimum on Debt
 
-Minimum payments keep you in debt forever due to [compound interest](/en/glossario/en-juros-compostos) working against you. Always pay more than the minimum when possible.
+Minimum payments keep you in debt forever due to [compound interest](/en/glossario/en-[juros](/en/glossario/en-juros)-compostos) working against you. Always pay more than the minimum when possible.
 
 ## 6. Not Setting Financial Goals
 
-Without clear goals, saving feels pointless. Define what you're saving for: emergency fund, vacation, house, retirement.
+Without clear goals, saving feels pointless. Define what you're saving for: emergency fund, [vacation](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), house, retirement.
 
 ## 7. Trying to Do Everything at Once
 

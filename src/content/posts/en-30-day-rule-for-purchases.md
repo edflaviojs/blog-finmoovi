@@ -31,7 +31,7 @@ To apply the 30-day rule, you need to create a system to record the purchases yo
 
 
 ## Advantages of the 30-Day Rule
-The 30-day rule has several advantages. In addition to helping you avoid impulse purchases, it also helps reduce financial stress and increase awareness of personal finances. When you wait 30 days before buying something, you have time to think about whether the item is really necessary and if you can afford it.
+The 30-day rule has several advantages. In addition to helping you avoid impulse purchases, it also helps reduce financial stress and increase awareness of [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). When you wait 30 days before buying something, you have time to think about whether the item is really necessary and if you can afford it.
 
 For example, imagine you earn R$ 4,000 per month and want to buy a new smartphone that costs R$ 2,000. If you wait 30 days, you might discover it's not that necessary after all and that you can use the [money](/en/posts/save-on-your-market-bill) to pay off a debt or invest in a fund.
 

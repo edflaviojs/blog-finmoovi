@@ -17,9 +17,9 @@ seo:
 ---
 
 ## Investing vs Saving
-When it comes to [money](/en/posts/30-day-rule-for-purchases), many people think that investing and saving are the same thing. However, these two financial strategies have different objectives and outcomes. Saving is basically the act of keeping money in a bank account or in another type of low-risk investment, such as a short-term investment fund. On the other hand, investing involves putting money into assets that have the potential for long-term growth, such as stocks, real estate, or bonds.
+When it comes to [money](/en/posts/30-day-rule-for-purchases), many people think that investing and saving are the same thing. However, these two financial strategies have different objectives and outcomes. Saving is basically the act of keeping [money](/en/posts/creating-an-emergency-fund) in a bank account or in another type of low-risk investment, such as a short-term investment fund. On the other hand, investing involves putting money into assets that have the potential for long-term growth, such as [stocks](/en/glossario/en-acoes), real estate, or bonds.
 
-For example, imagine that you earn R$ 5,000 per month and manage to save R$ 1,000. If you put that money into a [savings account](/en/glossario/en-poupanca), it will yield around R$ 5 per month, which is a very low return. On the other hand, if you invest that same money in stocks or an investment fund, you may have a much higher return, but you also risk losing part of your investment.
+For example, imagine that you earn R$ 5,000 per month and manage to save R$ 1,000. If you put that money into a [savings account](/en/glossario/en-poupanca), it will [yield](/en/glossario/en-yield) around R$ 5 per month, which is a very low return. On the other hand, if you invest that same money in stocks or an investment fund, you may have a much higher return, but you also risk losing part of your investment.
 
 ## Risks and Returns
 One of the main factors that differentiate investing and saving is the level of risk involved. Saving is generally very safe, as the money is deposited into a bank account and is protected by the Credit Guarantee Fund (FGC). On the other hand, investments can be riskier, as the value of the asset can fluctuate over time.
@@ -30,7 +30,7 @@ However, it's essential to remember that risk is also a factor that can affect t
 
 
 
-## Financial Planning
+## [Financial Planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
 Another important factor to consider when investing or saving is financial planning. This involves setting clear financial goals, such as buying a house or paying off debt, and creating a plan to achieve them. Additionally, it's essential to have a [budget](/en/posts/50-30-20-rule-complete-guide) and control expenses to ensure that you have enough money to invest or save.
 
 For example, imagine that you want to buy a house that costs R$ 200,000. If you save R$ 1,000 per month, it will take you around 17 years to reach your goal. On the other hand, if you invest R$ 1,000 per month in an investment fund that yields 8% per year, you may reach your goal in around 10 years.
