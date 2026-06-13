@@ -24,7 +24,7 @@ Antes de comenzar, es importante entender que las [finanzas personales](/es/post
 ## Evaluando tus Gastos
 Para comenzar a reorganizar tus finanzas, necesitas entender dónde está yendo tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado). Haz una lista de todos tus gastos mensuales, incluyendo cuentas de agua, luz, alquiler, comida, transporte y entretenimiento. Esto puede parecer una tarea tediosa, pero es esencial para identificar áreas donde puedes recortar gastos y ahorrar. Según el Banco Central, el brasileño promedio gasta alrededor de 30% de su ingreso en cuentas y servicios básicos.
 
-## Creando un Presupuesto
+## Creando un [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal)
 Ahora que tienes una idea clara de tus gastos, es hora de crear un presupuesto. Aquí están algunas sugerencias para ayudarte a crear un presupuesto eficaz:
 1. **Define tus objetivos financieros**: ¿Qué quieres alcanzar en términos financieros? ¿Quieres pagar una deuda, ahorrar para un viaje o comprar un inmueble?
 2. **Categoriza tus gastos**: Divide tus gastos en categorías, como vivienda, alimentación, transporte y entretenimiento.

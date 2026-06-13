@@ -25,7 +25,7 @@ Before we start, it's essential to understand that personal finances are like a 
 To start reorganizing your finances, you need to understand where your [money](/en/posts/30-day-rule-for-purchases) is going. Make a list of all your monthly expenses, including water, electricity, rent, food, transportation, and entertainment. This may seem like a tedious task, but it's essential to identify areas where you can cut expenses and save. According to the Central Bank, the average Brazilian spends around 30% of their income on basic bills and services.
 
 ## Creating a [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/reduce-fixed-expenses))
-Now that you have a clear idea of your expenses, it's time to create a budget. Here are some tips to help you create an effective budget:
+Now that you have a clear idea of your expenses, it's time to create a [budget](/en/posts/how-to-create-personal-budget). Here are some tips to help you create an effective budget:
 1. **Define your financial goals**: What do you want to achieve in terms of finances? Do you want to pay off a debt, save for a trip, or buy a property?
 2. **Categorize your expenses**: Divide your expenses into categories, such as housing, food, transportation, and entertainment.
 3. **Assign values**: Assign a value to each category based on your average expenses.
@@ -44,7 +44,7 @@ If you have debt, it's essential to create a plan to pay it off. According to Se
 4. **Consider consolidation**: Consider consolidating your debts into a single debt with a lower interest rate.
 
 ## Tools to Help
-There are many tools available to help you manage your finances. One of them is the FinMoovi, an app that allows you to monitor your expenses, create a budget, and set financial goals. With FinMoovi, you can have a clear view of your finances and make adjustments as needed.
+There are many tools available to help you manage your finances. One of them is the [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), an app that allows you to monitor your expenses, create a budget, and set financial goals. With FinMoovi, you can have a clear view of your finances and make adjustments as needed.
 
 ![Managing Debt](/images/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas-4.webp)
 

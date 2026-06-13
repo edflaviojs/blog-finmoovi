@@ -53,4 +53,4 @@ Ahora que sabes cómo negociar descuentos en cuentas fijas, es hora de empezar a
 
 
 ---
-**El próximo paso es tuyo. [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) y descubre hacia dónde se dirige tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) en realidad.**
+**El próximo paso es tuyo. [Prueba [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis por 7 días](https://finmoovi.com) y descubre hacia dónde se dirige tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) en realidad.**

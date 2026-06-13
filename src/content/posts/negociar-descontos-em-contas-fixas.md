@@ -53,4 +53,4 @@ Agora que você sabe como negociar descontos em contas fixas, é hora de começa
 
 
 ---
-**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/criar-reserva-de-emergencia) está indo de verdade.**
+**O próximo passo é seu. [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/criar-reserva-de-emergencia) está indo de verdade.**
