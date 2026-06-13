@@ -49,26 +49,27 @@ const GLOSSARIO_IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario'
 
 // --- Prompt Templates ---
 
-const NO_TEXT_RULE = 'Ultra-realistic photograph with absolutely zero text, zero letters, zero words, zero numbers, zero writing, zero labels, zero watermarks, zero logos, zero signatures anywhere in the image. All surfaces must be completely blank and clean.';
+// Negative prompt — sent as separate API parameter so the model treats it as exclusion
+const NEGATIVE_PROMPT = 'text, letters, words, numbers, writing, labels, watermarks, logos, signatures, captions, titles, subtitles, typography, font, alphabet, characters, inscriptions, stamps, badges, icons with letters, readable content, handwriting';
 
 const COVER_STYLES = [
-  (topic) => `${NO_TEXT_RULE} Professional lifestyle photography related to ${config.content.niche.en} and ${topic}, featuring real people in natural settings, warm authentic moments, modern clean aesthetic, soft natural lighting, shallow depth of field, editorial quality, neutral soft background`,
-  (topic) => `${NO_TEXT_RULE} Abstract glowing data visualization related to ${topic}, modern dashboard aesthetic with smooth gradients, blurred colorful light streaks and bokeh dots, blue and green color palette, dark background with soft glowing elements, 3D perspective, no readable charts`,
-  (topic) => `${NO_TEXT_RULE} Abstract geometric composition representing ${config.content.niche.en} and ${topic}, flowing shapes symbolizing growth and stability, gold and deep blue tones, minimalist premium quality, soft gradient lighting, professional editorial style`,
-  (topic) => `${NO_TEXT_RULE} Flat lay photography of financial planning objects related to ${topic}, blank open notebook with completely empty white pages, calculator with screen turned off, scattered coins and green plants on marble surface, top-down view, organized aesthetic, soft natural lighting, warm tones, editorial magazine quality`,
-  (topic) => `${NO_TEXT_RULE} Cinematic wide shot of a modern workspace related to ${config.content.niche.en} and ${topic}, laptop with abstract colorful gradient wallpaper on screen, coffee cup, morning light through window, shallow depth of field, no people visible, cozy productive atmosphere`,
+  (topic) => `Ultra-realistic professional lifestyle photography related to ${config.content.niche.en} and ${topic}, featuring real people in natural settings, warm authentic moments, modern clean aesthetic, soft natural lighting, shallow depth of field, editorial quality, neutral soft background, all surfaces clean and unmarked`,
+  (topic) => `Abstract glowing data visualization related to ${topic}, modern dashboard aesthetic with smooth gradients, blurred colorful light streaks and bokeh dots, blue and green color palette, dark background with soft glowing elements, 3D perspective, purely abstract shapes and curves`,
+  (topic) => `Abstract geometric composition representing ${config.content.niche.en} and ${topic}, flowing shapes symbolizing growth and stability, gold and deep blue tones, minimalist premium quality, soft gradient lighting, professional editorial style, clean unmarked surfaces`,
+  (topic) => `Flat lay photography of financial planning objects related to ${topic}, closed leather notebook, calculator with screen off, scattered coins and green plants on marble surface, top-down view, organized aesthetic, soft natural lighting, warm tones, editorial magazine quality, all surfaces completely clean and unmarked`,
+  (topic) => `Cinematic wide shot of a modern workspace related to ${config.content.niche.en} and ${topic}, laptop showing abstract colorful gradient wallpaper, coffee cup, morning light through window, shallow depth of field, cozy productive atmosphere, all screens show only colors and gradients`,
 ];
 
 const INLINE_STYLES = [
-  (topic) => `${NO_TEXT_RULE} Authentic lifestyle photo related to ${topic}, real people in everyday ${config.content.niche.en} situations, warm natural lighting, candid moments, modern clean composition, soft bokeh background, editorial magazine quality`,
-  (topic) => `${NO_TEXT_RULE} Minimalist flat illustration of ${topic} concept, clean vector style, pastel colors, simple geometric shapes representing finance, modern and friendly aesthetic, no icons with letters`,
-  (topic) => `${NO_TEXT_RULE} Close-up detail shot related to ${topic}, coins stacked, plant growing from jar, or hands holding phone showing abstract colorful screen, macro photography, warm tones, soft bokeh, no faces visible`,
+  (topic) => `Authentic lifestyle photo related to ${topic}, real people in everyday ${config.content.niche.en} situations, warm natural lighting, candid moments, modern clean composition, soft bokeh background, editorial magazine quality, clean unmarked environment`,
+  (topic) => `Minimalist flat illustration of ${topic} concept, clean vector style, pastel colors, simple geometric shapes representing finance, modern and friendly aesthetic, purely abstract symbols`,
+  (topic) => `Close-up detail shot related to ${topic}, coins stacked, plant growing from jar, or hands holding phone showing abstract colorful gradient, macro photography, warm tones, soft bokeh, clean unmarked surfaces`,
 ];
 
 const PROMPT_TEMPLATES = {
   cover: (topic) => COVER_STYLES[Math.floor(Math.random() * COVER_STYLES.length)](topic),
   glossary: (topic) =>
-    `${NO_TEXT_RULE} Abstract elegant visualization representing the ${config.content.niche.en} concept of ${topic}, minimalist premium quality, soft gradient lighting, professional editorial style, geometric shapes blended with subtle human elements, neutral soft gradient background, cyan and magenta accent colors`,
+    `Abstract elegant visualization representing the ${config.content.niche.en} concept of ${topic}, minimalist premium quality, soft gradient lighting, professional editorial style, geometric shapes blended with subtle human elements, neutral soft gradient background, cyan and magenta accent colors, purely abstract with clean unmarked surfaces`,
   inline: (topic) => INLINE_STYLES[Math.floor(Math.random() * INLINE_STYLES.length)](topic),
 };
 
@@ -129,6 +130,7 @@ async function callProvider(provider, prompt, slug, destination, dir) {
   if (provider.format === 'cloudflare') {
     body = {
       prompt,
+      negative_prompt: NEGATIVE_PROMPT,
       width: provider.maxWidth,
       height: provider.maxHeight,
       num_steps: provider.steps,
@@ -141,6 +143,7 @@ async function callProvider(provider, prompt, slug, destination, dir) {
     body = {
       model: provider.model,
       prompt,
+      negative_prompt: NEGATIVE_PROMPT,
       width: provider.maxWidth,
       height: provider.maxHeight,
       steps: provider.steps,

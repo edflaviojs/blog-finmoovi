@@ -163,13 +163,37 @@ Responda neste formato:
 `;
 
   try {
-    const result = await generateText(prompt, { maxTokens: 5000, temperature: 0.7 });
-    const titleMatch = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
-    const metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
-    const keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
-    const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
+    let result;
+    let titleMatch, metaMatch, keywordsMatch, contentMatch;
 
-    if (!titleMatch || !contentMatch) throw new Error('Formato inválido.');
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      result = await generateText(prompt, { maxTokens: 5000, temperature: attempt === 1 ? 0.7 : 0.5 });
+
+      if (!result || result.trim().length < 100) {
+        console.log(`⚠️ Tentativa ${attempt}/3: Resposta vazia ou muito curta (${(result || '').length} chars)`);
+        if (attempt < 3) {
+          await new Promise(r => setTimeout(r, 15000));
+          continue;
+        }
+        throw new Error(`Groq retornou resposta insuficiente após 3 tentativas.`);
+      }
+
+      titleMatch = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
+      metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+      keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
+      contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
+
+      if (titleMatch && contentMatch) break;
+
+      console.log(`⚠️ Tentativa ${attempt}/3: Formato inválido. Resposta (primeiros 300 chars): ${result.substring(0, 300)}`);
+      if (attempt < 3) {
+        await new Promise(r => setTimeout(r, 15000));
+      }
+    }
+
+    if (!titleMatch || !contentMatch) {
+      throw new Error(`Formato inválido após 3 tentativas. Última resposta (500 chars): ${(result || '').substring(0, 500)}`);
+    }
 
     const title = titleMatch[1].trim();
     const meta = metaMatch ? metaMatch[1].trim() : '';
