@@ -30,7 +30,7 @@ La regla 50-30-20 es uno de los métodos más simples y efectivos para administr
 |-----------|-----------|-------|
 | Necesidades | 50% | $2.000 |
 | Deseos | 30% | $1.200 |
-| Ahorro | 20% | $800 |
+| [Ahorro](/es/posts/negociar-descuentos-en-cuentas-fijas) | 20% | $800 |
 
 ## ¿Qué Cuenta como "Necesidades"? (50%)
 

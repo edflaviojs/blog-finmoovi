@@ -24,7 +24,7 @@ Before we start, it's essential to understand that personal finances are like a 
 ## Evaluating Your Expenses
 To start reorganizing your finances, you need to understand where your [money](/en/posts/30-day-rule-for-purchases) is going. Make a list of all your monthly expenses, including water, electricity, rent, food, transportation, and entertainment. This may seem like a tedious task, but it's essential to identify areas where you can cut expenses and save. According to the Central Bank, the average Brazilian spends around 30% of their income on basic bills and services.
 
-## Creating a Budget
+## Creating a [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/reduce-fixed-expenses))
 Now that you have a clear idea of your expenses, it's time to create a budget. Here are some tips to help you create an effective budget:
 1. **Define your financial goals**: What do you want to achieve in terms of finances? Do you want to pay off a debt, save for a trip, or buy a property?
 2. **Categorize your expenses**: Divide your expenses into categories, such as housing, food, transportation, and entertainment.
