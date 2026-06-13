@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Investindo vs [Poupança](/glossario/poupanca)
-Quando se trata de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz), muitas pessoas pensam que investir e poupar são a mesma coisa. No entanto, essas duas estratégias financeiras têm objetivos e resultados diferentes. A poupança é basicamente o ato de guardar dinheiro em uma conta bancária ou em outro tipo de investimento de baixo risco, como um fundo de investimento de curto prazo. Já o investimento envolve colocar dinheiro em ativos que têm potencial de crescimento a longo prazo, como [ações](/glossario/acoes), imóveis ou títulos.
+Quando se trata de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz), muitas pessoas pensam que investir e poupar são a mesma coisa. No entanto, essas duas estratégias financeiras têm objetivos e resultados diferentes. A poupança é basicamente o ato de guardar [dinheiro](/posts/criar-reserva-de-emergencia) em uma conta bancária ou em outro tipo de investimento de baixo risco, como um fundo de investimento de curto prazo. Já o investimento envolve colocar dinheiro em ativos que têm potencial de crescimento a longo prazo, como [ações](/glossario/acoes), imóveis ou títulos.
 
 Por exemplo, imagine que você ganha R$ 5.000 por mês e consegue economizar R$ 1.000. Se você colocar esse dinheiro em uma poupança, ele renderá cerca de R$ 5 por mês, o que é um retorno muito baixo. Já se você investir esse mesmo dinheiro em ações ou um fundo de investimento, pode ter um retorno muito maior, mas também corre o risco de perder parte do seu investimento.
 
@@ -31,7 +31,7 @@ No entanto, é importante lembrar que o risco também é um fator que pode afeta
 
 
 ## [Planejamento Financeiro](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas)
-Outro fator importante que deve ser considerado ao investir ou poupar é o planejamento financeiro. Isso envolve definir metas financeiras claras, como comprar uma casa ou pagar uma dívida, e criar um plano para alcançá-las. Além disso, é importante ter um [orçamento](/posts/como-criar-orcamento-pessoal) e controlar os gastos para garantir que você tenha dinheiro suficiente para investir ou poupar.
+Outro fator importante que deve ser considerado ao investir ou poupar é o [planejamento financeiro](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Isso envolve definir metas financeiras claras, como comprar uma casa ou pagar uma dívida, e criar um plano para alcançá-las. Além disso, é importante ter um [orçamento](/posts/como-criar-orcamento-pessoal) e controlar os gastos para garantir que você tenha dinheiro suficiente para investir ou poupar.
 
 Por exemplo, imagine que você quer comprar uma casa que custa R$ 200.000. Se você economizar R$ 1.000 por mês, levará cerca de 17 anos para alcançar seu objetivo. Já se você investir R$ 1.000 por mês em um fundo de investimento que rende 8% ao ano, você pode alcançar seu objetivo em cerca de 10 anos.
 

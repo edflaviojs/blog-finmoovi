@@ -16,13 +16,13 @@ seo:
   keywords: ["finanzas personales","reorganizar finanzas","vacaciones","economía","planificación financiera","organizar finanzas vacaciones","planificación financiera medio año"]
 ---
 
-¿Estás ansioso por tus vacaciones y quieres aprovechar este tiempo para reorganizar tus finanzas? ¡Es una excelente idea! Las vacaciones son un momento perfecto para reflexionar sobre tus gastos, crear un presupuesto y planificar tu futuro financiero. En este post, vamos a explorar cómo puedes utilizar tus vacaciones para reorganizar tus finanzas y comenzar a construir una vida financiera más saludable.
+¿Estás ansioso por tus vacaciones y quieres aprovechar este tiempo para reorganizar tus finanzas? ¡Es una excelente idea! Las vacaciones son un momento perfecto para reflexionar sobre tus gastos, crear un [presupuesto](/es/posts/como-crear-presupuesto-personal) y planificar tu futuro financiero. En este post, vamos a explorar cómo puedes utilizar tus vacaciones para reorganizar tus finanzas y comenzar a construir una vida financiera más saludable.
 
 ## Introducción a las [Finanzas Personales](/es/posts/7-errores-financieros-principiante)
 Antes de comenzar, es importante entender que las [finanzas personales](/es/posts/ahorrando-en-la-cuenta-de-energia) son como un juego de ajedrez: necesitas tener una estrategia para ganar. Según el IBGE, más de 60% de los brasileños no tienen un presupuesto planeado, lo que puede llevar a problemas financieros. Por lo tanto, es fundamental crear un plan para gestionar tus gastos y alcanzar tus objetivos financieros.
 
 ## Evaluando tus Gastos
-Para comenzar a reorganizar tus finanzas, necesitas entender dónde está yendo tu dinero. Haz una lista de todos tus gastos mensuales, incluyendo cuentas de agua, luz, alquiler, comida, transporte y entretenimiento. Esto puede parecer una tarea tediosa, pero es esencial para identificar áreas donde puedes recortar gastos y ahorrar. Según el Banco Central, el brasileño promedio gasta alrededor de 30% de su ingreso en cuentas y servicios básicos.
+Para comenzar a reorganizar tus finanzas, necesitas entender dónde está yendo tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado). Haz una lista de todos tus gastos mensuales, incluyendo cuentas de agua, luz, alquiler, comida, transporte y entretenimiento. Esto puede parecer una tarea tediosa, pero es esencial para identificar áreas donde puedes recortar gastos y ahorrar. Según el Banco Central, el brasileño promedio gasta alrededor de 30% de su ingreso en cuentas y servicios básicos.
 
 ## Creando un Presupuesto
 Ahora que tienes una idea clara de tus gastos, es hora de crear un presupuesto. Aquí están algunas sugerencias para ayudarte a crear un presupuesto eficaz:

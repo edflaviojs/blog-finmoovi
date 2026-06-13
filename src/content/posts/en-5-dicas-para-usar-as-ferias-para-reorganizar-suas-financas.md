@@ -19,7 +19,7 @@ seo:
 Are you looking forward to your vacation and want to use this time to reorganize your finances? It's a great idea! Vacations are a perfect moment to reflect on your expenses, create a [budget](/en/posts/50-30-20-rule-complete-guide), and plan your financial future. In this post, we'll explore how you can use your vacation to reorganize your finances and start building a healthier financial life.
 
 ## Introduction to Personal Finances
-Before we start, it's essential to understand that personal finances are like a game of chess: you need a strategy to win. According to the IBGE, more than 60% of Brazilians don't have a planned budget, which can lead to financial problems. Therefore, creating a plan to manage your expenses and achieve your financial goals is crucial.
+Before we start, it's essential to understand that personal finances are like a game of chess: you need a strategy to win. According to the IBGE, more than 60% of Brazilians don't have a planned [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)), which can lead to financial problems. Therefore, creating a plan to manage your expenses and achieve your financial goals is crucial.
 
 ## Evaluating Your Expenses
 To start reorganizing your finances, you need to understand where your [money](/en/posts/30-day-rule-for-purchases) is going. Make a list of all your monthly expenses, including water, electricity, rent, food, transportation, and entertainment. This may seem like a tedious task, but it's essential to identify areas where you can cut expenses and save. According to the Central Bank, the average Brazilian spends around 30% of their income on basic bills and services.

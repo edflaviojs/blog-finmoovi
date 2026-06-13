@@ -19,10 +19,10 @@ seo:
 Você está ansioso para suas férias e quer aproveitar esse tempo para reorganizar suas finanças? É uma ótima ideia! As férias são um momento perfeito para refletir sobre seus gastos, criar um [orçamento](/posts/como-criar-orcamento-pessoal) e planejar seu futuro financeiro. Neste post, vamos explorar como você pode usar suas férias para reorganizar suas finanças e começar a construir uma vida financeira mais saudável.
 
 ## Introdução às [Finanças Pessoais](/posts/7-erros-financeiros-iniciante)
-Antes de começar, é importante entender que as finanças pessoais são como um jogo de xadrez: você precisa ter uma estratégia para vencer. De acordo com o IBGE, mais de 60% dos brasileiros não têm um orçamento planejado, o que pode levar a problemas financeiros. Portanto, é fundamental criar um plano para gerenciar seus gastos e alcançar seus objetivos financeiros.
+Antes de começar, é importante entender que as [finanças pessoais](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) são como um jogo de xadrez: você precisa ter uma estratégia para vencer. De acordo com o IBGE, mais de 60% dos brasileiros não têm um orçamento planejado, o que pode levar a problemas financeiros. Portanto, é fundamental criar um plano para gerenciar seus gastos e alcançar seus objetivos financeiros.
 
 ## Avaliando seus Gastos
-Para começar a reorganizar suas finanças, você precisa entender onde seu dinheiro está indo. Faça uma lista de todos os seus gastos mensais, incluindo contas de água, luz, aluguel, comida, transporte e entretenimento. Isso pode parecer uma tarefa tediosa, mas é essencial para identificar áreas onde você pode cortar gastos e economizar. De acordo com o Banco Central, o brasileiro médio gasta cerca de 30% de sua renda em contas e serviços básicos.
+Para começar a reorganizar suas finanças, você precisa entender onde seu [dinheiro](/posts/criar-reserva-de-emergencia) está indo. Faça uma lista de todos os seus gastos mensais, incluindo contas de água, luz, aluguel, comida, transporte e entretenimento. Isso pode parecer uma tarefa tediosa, mas é essencial para identificar áreas onde você pode cortar gastos e economizar. De acordo com o Banco Central, o brasileiro médio gasta cerca de 30% de sua renda em contas e serviços básicos.
 
 ## Criando um Orçamento
 Agora que você tem uma ideia clara de seus gastos, é hora de criar um orçamento. Aqui estão algumas dicas para ajudá-lo a criar um orçamento eficaz:
