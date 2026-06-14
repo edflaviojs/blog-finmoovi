@@ -30,7 +30,7 @@ A good budget helps you:
 
 ## Step 1: Calculate Your Net Income
 
-Your net income is what actually hits your bank account after taxes and deductions. Include all sources: salary, freelance work, investments, etc.
+Your net income is what actually hits your bank account after taxes and deductions. Include all sources: salary, freelance work, [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), etc.
 
 ## Step 2: List All Your Expenses
 

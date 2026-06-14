@@ -20,7 +20,7 @@ translate: true
 
 ## Introducción al Día de los Enamorados Económico
 
-El Día de los Enamorados es una fecha especial para las parejas y, a menudo, trae consigo la presión de encontrar el regalo perfecto. Sin embargo, es posible celebrar este día sin gastar una fortuna. En este artículo, vamos a explorar consejos prácticos y creativos para un Día de los Enamorados económico, mostrando que el amor no necesita ser caro.
+El Día de los Enamorados es una fecha especial para las parejas y, a menudo, trae consigo la presión de encontrar el regalo perfecto. Sin embargo, es posible celebrar este día sin gastar una fortuna. En este artículo, vamos a explorar [consejos](/es/posts/7-errores-financieros-principiante) prácticos y creativos para un Día de los Enamorados económico, mostrando que el amor no necesita ser caro.
 
 ## Planificación y [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal)
 

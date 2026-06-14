@@ -27,7 +27,7 @@ Expense management is another critical area for freelancers. Without a fixed sal
 - Non-essential expenses: 20% of your monthly earnings (R$ 1,000)
 - Reserve for taxes and contributions: 15% of your monthly earnings (R$ 750)
 - Emergency reserve: 10% of your monthly earnings (R$ 500)
-- Investments: 5% of your monthly earnings (R$ 250)
+- [Investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-): 5% of your monthly earnings (R$ 250)
 
 ## Investments and Savings
 As a freelancer, it's essential to think about the future and make investments that can guarantee a stable income. There are many [investment](/en/posts/tesouro-direto-para-iniciantes) options available, from [stocks](/en/glossario/en-acoes) and bonds to investment funds and real estate. However, it's essential to remember that investments always involve risks, and it's crucial to do careful research before investing.

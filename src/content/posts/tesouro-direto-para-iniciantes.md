@@ -17,14 +17,14 @@ seo:
 ---
 
 ## Introdução ao [Tesouro Direto](/glossario/tesouro-direto)
-O Tesouro Direto é um programa do governo brasileiro que permite aos cidadãos investir em títulos públicos, como LTN (Letras do Tesouro Nacional) e NTN (Notas do Tesouro Nacional). Esses títulos representam empréstimos feitos ao governo, que paga juros ao investidor. É uma forma de investir em [renda fixa](/glossario/renda-fixa), com retornos pré-definidos e baixo risco.
+O Tesouro Direto é um programa do governo brasileiro que permite aos cidadãos investir em títulos públicos, como LTN (Letras do Tesouro Nacional) e NTN (Notas do Tesouro Nacional). Esses títulos representam empréstimos feitos ao governo, que paga [juros](/glossario/juros) ao investidor. É uma forma de investir em [renda fixa](/glossario/renda-fixa), com retornos pré-definidos e baixo risco.
 
 Por exemplo, se você investir R$1.000 em um título LTN com prazo de 1 ano e juros de 5% ao ano, você receberá R$1.050 após o vencimento. Isso significa um retorno de R$50, ou 5% do valor investido.
 
 ## Vantagens do Tesouro Direto
 Uma das principais vantagens do Tesouro Direto é a segurança. Como os títulos são emitidos pelo governo, o risco de default (ou inadimplência) é muito baixo. Além disso, os juros são pré-definidos, o que significa que você sabe exatamente quanto vai receber ao final do prazo.
 
-Outra vantagem é a liquidez. Você pode resgatar seus títulos antes do vencimento, embora possa haver perda de juros. Isso é útil se você precisar do [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) antes do prazo.
+Outra vantagem é a [liquidez](/glossario/liquidez). Você pode resgatar seus títulos antes do vencimento, embora possa haver perda de juros. Isso é útil se você precisar do [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) antes do prazo.
 
 ![Vantagens do Tesouro Direto](/images/posts/tesouro-direto-para-iniciantes-2.webp)
 
@@ -35,7 +35,7 @@ Existem vários tipos de títulos disponíveis no Tesouro Direto, cada um com su
 
 * LTN (Letras do Tesouro Nacional): títulos com prazos de 1 a 10 anos e juros fixos.
 * NTN (Notas do Tesouro Nacional): títulos com prazos de 1 a 30 anos e juros fixos ou variáveis.
-* LCI (Letras do Tesouro Nacional com índice de inflação): títulos com prazos de 1 a 5 anos e juros fixos mais uma correção por inflação.
+* LCI (Letras do Tesouro Nacional com índice de [inflação](/glossario/inflacao)): títulos com prazos de 1 a 5 anos e juros fixos mais uma correção por inflação.
 
 Por exemplo, se você investir R$5.000 em um título LTN com prazo de 5 anos e juros de 6% ao ano, você receberá R$5.638,49 após o vencimento, considerando [juros compostos](/glossario/juros-compostos) anualmente.
 
@@ -50,7 +50,7 @@ Embora o Tesouro Direto seja considerado um investimento de baixo risco, existem
 
 
 
-Para mitigar esses riscos, é importante diversificar seus investimentos e avaliar seu perfil de risco antes de investir.
+Para mitigar esses riscos, é importante diversificar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) e avaliar seu perfil de risco antes de investir.
 
 ## Simulação de Rendimento
 Vamos considerar um exemplo de simulação de rendimento. Se você investir R$1.000 em um título LTN com prazo de 2 anos e juros de 5% ao ano, você receberá R$1.102,50 após o vencimento, considerando juros compostos anualmente.
@@ -71,4 +71,4 @@ Se você decidir investir no Tesouro Direto, é importante ler atentamente as co
 
 
 
-Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://finmoovi.com) — multi-moeda, relatórios inteligentes e 100% offline.
+Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-moeda, relatórios inteligentes e 100% offline.

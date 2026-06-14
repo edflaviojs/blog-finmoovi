@@ -18,19 +18,19 @@ seo:
 
 ## Weekly Summary of the Brazilian Financial Market
 
-The past week was marked by relative stability in the foreign exchange market, with the commercial dollar closing at R$ 5.03 and the euro at R$ 5.84. Let's analyze how these numbers affect our finances and [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
+The past week was marked by relative stability in the [foreign exchange](/en/glossario/en-cambio) market, with the commercial dollar closing at R$ 5.03 and the euro at R$ 5.84. Let's analyze how these numbers affect our finances and [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ## Dollar and Euro: Weekly Trend
 
-The dollar showed a slight increase throughout the week, but nothing that caused major impacts on investments. The euro maintained a stability trend, which is good for those with investments in foreign currency. With the euro at R$ 5.84, it's a good time to evaluate whether to diversify your investment portfolio with euro-denominated assets. Tools like [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) can help track your investments in multiple currencies, making it easier to manage your wealth.
+The dollar showed a slight increase throughout the week, but nothing that caused major impacts on investments. The euro maintained a stability trend, which is good for those with investments in foreign currency. With the euro at R$ 5.84, it's a good time to evaluate whether to diversify your [investment](/en/posts/tesouro-direto-para-iniciantes) portfolio with euro-denominated assets. Tools like [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) can help track your investments in multiple currencies, making it easier to manage your wealth.
 
 ## [Selic](/en/posts/quotes-week-4-may-2026) and Impact on Investments
 
-The Selic rate, which is the economy's base [interest](/en/glossario/en-juros) rate, continues to be an important factor for investments. With the Selic at 12.25% per year, fixed-income investments, such as treasury bonds, continue attracting the attention of many investors. However, it's important to remember that high interest rates can also increase financing costs for businesses and consumers, which can affect economic growth. Therefore, it's essential to keep an eye on economic news and adjust your investment strategy accordingly.
+The [Selic rate](/en/glossario/en-selic), which is the [economy](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)'s base [interest](/en/glossario/en-juros) rate, continues to be an important factor for investments. With the Selic at 12.25% per year, fixed-income investments, such as treasury bonds, continue attracting the attention of many investors. However, it's important to remember that high interest rates can also increase financing costs for businesses and consumers, which can affect economic growth. Therefore, it's essential to keep an eye on economic news and adjust your investment strategy accordingly.
 
 ## Practical Tip for Individual Investors
 
-A practical tip for individual investors is to diversify your investment portfolio. With the dollar at R$ 5.03 and the euro at R$ 5.84, it may be a good time to invest in foreign currency assets. Additionally, it's important not to forget investing in fixed income, such as treasury bonds, to have a more stable income source. Remember that [diversification](/en/glossario/en-diversificacao) is the key to minimizing risks and maximizing gains.
+A practical tip for individual investors is to diversify your investment portfolio. With the dollar at R$ 5.03 and the euro at R$ 5.84, it may be a good time to invest in foreign currency assets. Additionally, it's important not to forget investing in [fixed income](/en/glossario/en-renda-fixa), such as treasury bonds, to have a more stable income source. Remember that [diversification](/en/glossario/en-diversificacao) is the key to minimizing risks and maximizing gains.
 
 ## What to Expect for Next Week
 

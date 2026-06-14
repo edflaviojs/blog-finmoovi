@@ -24,7 +24,7 @@ For example, if you invest R$1,000 in an LTN title with a 1-year term and 5% ann
 ## Advantages of Tesouro Direto
 One of the main advantages of Tesouro Direto is security. Since the securities are issued by the government, the risk of default is very low. Additionally, the interest rates are predefined, which means you know exactly how much you'll receive at the end of the term.
 
-Another advantage is liquidity. You can redeem your securities before maturity, although you may lose interest. This is useful if you need the [money](/en/posts/30-day-rule-for-purchases) before the term.
+Another advantage is [liquidity](/en/glossario/en-liquidez). You can redeem your securities before maturity, although you may lose interest. This is useful if you need the [money](/en/posts/30-day-rule-for-purchases) before the term.
 
 ![Vantagens do Tesouro Direto](/images/posts/tesouro-direto-para-iniciantes-2.webp)
 
@@ -37,7 +37,7 @@ There are several types of securities available in Tesouro Direto, each with its
 * NTN (Notas do Tesouro Nacional): securities with terms of 1 to 30 years and fixed or variable interest rates.
 * LCI (Letras do Tesouro Nacional com índice de inflação): securities with terms of 1 to 5 years and fixed interest rates plus an [inflation](/en/glossario/en-inflacao) adjustment.
 
-For example, if you invest R$5,000 in an LTN title with a 5-year term and 6% annual interest, you'll receive R$5,638.49 after maturity, considering annual [compound interest](/en/glossario/en-juros-compostos).
+For example, if you invest R$5,000 in an LTN title with a 5-year term and 6% annual interest, you'll receive R$5,638.49 after maturity, considering annual [compound interest](/en/glossario/en-[juros](/en/glossario/en-juros)-compostos).
 
 ## Risks
 Although Tesouro Direto is considered a low-risk investment, there are some risks to consider:
@@ -50,7 +50,7 @@ Although Tesouro Direto is considered a low-risk investment, there are some risk
 
 
 
-To mitigate these risks, it's essential to diversify your investments and assess your risk profile before investing.
+To mitigate these risks, it's essential to diversify your [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) and assess your risk profile before investing.
 
 ## Return Simulation
 Let's consider an example of a return simulation. If you invest R$1,000 in an LTN title with a 2-year term and 5% annual interest, you'll receive R$1,102.50 after maturity, considering annual compound interest.
@@ -71,4 +71,4 @@ If you decide to invest in Tesouro Direto, it's essential to read the conditions
 
 
 
-To track your investments in one place, [try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.
+To track your investments in one place, [try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-currency, intelligent reports, and 100% offline.

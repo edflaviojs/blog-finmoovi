@@ -55,7 +55,7 @@ The 50-30-20 rule is one of the simplest and most effective methods for managing
 - [Emergency fund](/en/glossario/en-reserva-de-emergencia) (3-6 months of expenses)
 - Retirement contributions
 - Extra debt payments
-- Investments
+- [Investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 - Financial goals (house, car, education)
 
 ## How to Adapt the Rule

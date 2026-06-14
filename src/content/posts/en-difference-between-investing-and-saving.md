@@ -22,7 +22,7 @@ When it comes to [money](/en/posts/30-day-rule-for-purchases), many people think
 For example, imagine that you earn R$ 5,000 per month and manage to save R$ 1,000. If you put that [money](/en/posts/negotiating-discounts-on-fixed-bills) into a [savings account](/en/glossario/en-poupanca), it will [yield](/en/glossario/en-yield) around R$ 5 per month, which is a very low return. On the other hand, if you invest that same [money](/en/posts/organizing-finances-as-a-freelancer) in stocks or an investment fund, you may have a much higher return, but you also risk losing part of your investment.
 
 ## Risks and Returns
-One of the main factors that differentiate investing and saving is the level of risk involved. Saving is generally very safe, as the [money](/en/posts/save-on-your-market-bill) is deposited into a bank account and is protected by the Credit Guarantee Fund (FGC). On the other hand, investments can be riskier, as the value of the asset can fluctuate over time.
+One of the main factors that differentiate investing and saving is the level of risk involved. Saving is generally very safe, as the [money](/en/posts/save-on-your-market-bill) is deposited into a bank account and is protected by the Credit Guarantee Fund (FGC). On the other hand, [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) can be riskier, as the value of the asset can fluctuate over time.
 
 However, it's essential to remember that risk is also a factor that can affect the return on investment. In general, higher-risk investments tend to have higher returns, while lower-risk investments tend to have lower returns. **Practical tip:** before investing, it's crucial to assess your risk profile and choose investments that are suitable for you.
 

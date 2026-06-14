@@ -50,7 +50,7 @@ Aunque el Tesouro Direto es considerado una inversión de bajo riesgo, existen a
 
 
 
-Para mitigar estos riesgos, es importante diversificar sus inversiones y evaluar su perfil de riesgo antes de invertir.
+Para mitigar estos riesgos, es importante diversificar sus [inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) y evaluar su perfil de riesgo antes de invertir.
 
 ## Simulación de Rendimiento
 Vamos a considerar un ejemplo de simulación de rendimiento. Si usted invierte R$1.000 en un título LTN con plazo de 2 años y intereses del 5% anual, usted recibirá R$1.102,50 después del vencimiento, considerando intereses compuestos anualmente.
@@ -71,5 +71,5 @@ Si usted decide invertir en el Tesouro Direto, es importante leer atentamente la
 
 
 
-Para acompañar sus inversiones en un solo lugar, [pruebe [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) — multi-divisa, informes inteligentes y 100% sin conexión.
+Para acompañar sus inversiones en un solo lugar, [pruebe [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-divisa, informes inteligentes y 100% sin conexión.
 Nota: He mantenido los nombres de las imágenes y los enlaces tal como estaban en el texto original, ya que no había instrucciones específicas para cambiarlos. Si es necesario, puedo cambiarlos para que coincidan con el contenido traducido.

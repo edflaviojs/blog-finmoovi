@@ -44,7 +44,7 @@ De acuerdo con investigaciones, el 70% de las personas que usan hojas de cálcul
 
 ## Ejemplos de Apps Financieras
 Existen muchas apps financieras disponibles en el mercado, cada una con sus propias características y beneficios. Algunos ejemplos incluyen:
-* FinMoovi: una app financiera moderna que permite que usted gestione sus finanzas de forma eficaz y fácil.
+* [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas): una app financiera moderna que permite que usted gestione sus finanzas de forma eficaz y fácil.
 * Mobills: una app financiera que permite que usted gestione sus cuentas y tarjetas de crédito de forma centralizada.
 * Organizze: una app financiera que permite que usted gestione sus finanzas y cuentas de forma personalizada.
 
