@@ -55,4 +55,4 @@ Não importa se você é um iniciante ou um investidor experiente, é importante
 
 
 ---
-**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/organizar-financas-de-casal) está indo de verdade.**
+**O próximo passo é seu. [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) e descubra para onde seu [dinheiro](/posts/organizar-financas-de-casal) está indo de verdade.**

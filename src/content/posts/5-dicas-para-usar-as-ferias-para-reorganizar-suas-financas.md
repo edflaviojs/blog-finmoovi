@@ -44,7 +44,7 @@ Se você tem dívidas, é importante criar um plano para pagá-las. De acordo co
 4. **Considere a consolidação**: Considere consolidar suas dívidas em uma única dívida com uma taxa de juros mais baixa.
 
 ## Ferramentas para Ajudar
-Existem muitas ferramentas disponíveis para ajudá-lo a gerenciar suas finanças. Uma delas é o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), um aplicativo que permite que você monitore seus gastos, crie um orçamento e estabeleça metas financeiras. Com o FinMoovi, você pode ter uma visão clara de suas finanças e fazer ajustes conforme necessário.
+Existem muitas ferramentas disponíveis para ajudá-lo a gerenciar suas finanças. Uma delas é o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), um aplicativo que permite que você monitore seus gastos, crie um orçamento e estabeleça metas financeiras. Com o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), você pode ter uma visão clara de suas finanças e fazer ajustes conforme necessário.
 
 ![Gerenciando Dívidas](/images/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas-4.webp)
 

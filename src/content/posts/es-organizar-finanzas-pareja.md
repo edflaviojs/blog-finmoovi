@@ -42,4 +42,4 @@ Otro desafío común es la falta de comunicación sobre las finanzas. Es importa
 Ahora que sabes cómo organizar las finanzas de pareja, es hora de empezar a trabajar hacia un futuro financiero más seguro y próspero. Recuerda que la comunicación y la planificación son fundamentales para el éxito. Empieza a hablar con tu pareja sobre tus metas financieras y crea un plan para alcanzarlas.
 
 ---
-**¿Listo para organizar tus finanzas? [Prueba [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/regla-de-los-30-dias-para-compras).**
+**¿Listo para organizar tus finanzas? [Prueba [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://[finmoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro).com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/regla-de-los-30-dias-para-compras).**

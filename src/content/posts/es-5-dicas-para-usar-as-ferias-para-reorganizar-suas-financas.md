@@ -44,7 +44,7 @@ Si tienes deudas, es importante crear un plan para pagarlas. Según la Serasa, m
 4. **Considera la consolidación**: Considera consolidar tus deudas en una sola deuda con una tasa de interés más baja.
 
 ## Herramientas para Ayudar
-Existen muchas herramientas disponibles para ayudarte a gestionar tus finanzas. Una de ellas es el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), una aplicación que te permite monitorear tus gastos, crear un presupuesto y establecer metas financieras. Con el FinMoovi, puedes tener una visión clara de tus finanzas y hacer ajustes según sea necesario.
+Existen muchas herramientas disponibles para ayudarte a gestionar tus finanzas. Una de ellas es el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), una aplicación que te permite monitorear tus gastos, crear un presupuesto y establecer metas financieras. Con el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro), puedes tener una visión clara de tus finanzas y hacer ajustes según sea necesario.
 
 ![Gestionando Deudas](/images/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas-4.webp)
 

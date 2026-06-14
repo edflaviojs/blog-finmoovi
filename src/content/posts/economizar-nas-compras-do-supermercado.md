@@ -57,4 +57,4 @@ Existem muitos aplicativos e ferramentas que podem ajudar você a economizar nas
 Agora que você sabe como economizar nas compras do supermercado, é hora de começar a colocar essas dicas em prática. Lembre-se de que economizar é um processo contínuo e que cada pequena mudança pode fazer uma grande diferença no longo prazo. Então, comece hoje a fazer mudanças em suas compras do supermercado e veja como você pode economizar [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz).
 
 ---
-**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/economize-na-conta-de-energia) está indo de verdade.**
+**O próximo passo é seu. [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/economize-na-conta-de-energia) está indo de verdade.**

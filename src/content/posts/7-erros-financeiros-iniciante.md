@@ -66,7 +66,7 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-
 |------|---------------|
 | Sem reserva | Comece com R$ 1.000 |
 | Gastar demais | Limite cartão a 30% da renda |
-| Não acompanhar | Use o FinMoovi por 30 dias |
+| Não acompanhar | Use o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) por 30 dias |
 | Ignorar pequenos gastos | Calcule o custo anual |
 | Sem objetivos | Defina 1 meta com prazo |
 | Investir sem entender | Comece pelo Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-4-maio-2026)) |

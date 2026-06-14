@@ -47,4 +47,4 @@ Agora que você tem uma ideia clara de como criar e gerenciar uma reserva de eme
 
 
 ---
-**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/economize-na-conta-do-mercado) está indo de verdade.**
+**O próximo passo é seu. [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/economize-na-conta-do-mercado) está indo de verdade.**

@@ -40,7 +40,7 @@ Existen varias maneras de ser creativo y económico al elegir un regalo. Aquí t
 
 ## Herramientas para Ayudar en la Planificación
 
-Para ayudarte a gestionar tus finanzas y planificar el Día de los Enamorados de forma eficaz, puedes utilizar herramientas como el app [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas). Puede ayudarte a organizar tus gastos, definir metas de [ahorro](/es/posts/regla-de-los-30-dias-para-compras) y incluso ofrecer dicas personalizadas de [economía](/es/posts/ahorrando-en-la-cuenta-de-energia). Con FinMoovi, puedes tener una visión clara de tus finanzas y tomar decisiones más informadas.
+Para ayudarte a gestionar tus finanzas y planificar el Día de los Enamorados de forma eficaz, puedes utilizar herramientas como el app [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas). Puede ayudarte a organizar tus gastos, definir metas de [ahorro](/es/posts/regla-de-los-30-dias-para-compras) y incluso ofrecer dicas personalizadas de [economía](/es/posts/ahorrando-en-la-cuenta-de-energia). Con [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro), puedes tener una visión clara de tus finanzas y tomar decisiones más informadas.
 
 ![Herramientas para Ayudar en la Planificación](/images/posts/presente-dia-dos-namorados-economico-4.webp)
 

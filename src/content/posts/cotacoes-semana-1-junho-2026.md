@@ -30,7 +30,7 @@ A taxa Selic, que atualmente está em 12,75% ao ano, continua a ser um fator cha
 
 ## Dica Prática para o Investidor
 
-Uma dica prática para os investidores pessoa física é diversificar seus investimentos em diferentes ativos e moedas. Isso pode ajudar a reduzir o risco e aumentar as chances de obter retornos mais altos. Além disso, é importante acompanhar de perto as cotações do dólar e do euro, bem como as mudanças na taxa Selic. Ferramentas como o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) podem ser úteis para acompanhar investimentos em múltiplas moedas e obter uma visão geral mais clara de seu portfólio. Por exemplo, se você tem investimentos em dólares e euros, o FinMoovi pode ajudá-lo a monitorar o desempenho de seus investimentos em tempo real e tomar decisões mais informadas.
+Uma dica prática para os investidores pessoa física é diversificar seus investimentos em diferentes ativos e moedas. Isso pode ajudar a reduzir o risco e aumentar as chances de obter retornos mais altos. Além disso, é importante acompanhar de perto as cotações do dólar e do euro, bem como as mudanças na taxa Selic. Ferramentas como o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) podem ser úteis para acompanhar investimentos em múltiplas moedas e obter uma visão geral mais clara de seu portfólio. Por exemplo, se você tem investimentos em dólares e euros, o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) pode ajudá-lo a monitorar o desempenho de seus investimentos em tempo real e tomar decisões mais informadas.
 
 ## O que Esperar para a Próxima Semana
 

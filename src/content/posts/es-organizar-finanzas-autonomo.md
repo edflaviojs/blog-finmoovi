@@ -57,4 +57,4 @@ No importa dónde estés en tu jornada financiera, lo importante es comenzar a t
 
 
 ---
-**¿Listo para organizar tus finanzas? [Experimenta [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de hacia dónde va tu [dinero](/es/posts/planeamiento-financiero-para-parejas).**
+**¿Listo para organizar tus finanzas? [Experimenta [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://[finmoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro).com) — en 5 minutos ya tienes una visión clara de hacia dónde va tu [dinero](/es/posts/planeamiento-financiero-para-parejas).**

@@ -47,4 +47,4 @@ Don't wait any longer to start controlling your credit card expenses. With a lit
 
 
 ---
-**Tired of spreadsheets? [Test [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://finmoovi.com) and control your expenses with AI, multi-currency, and reports that make sense.**
+**Tired of spreadsheets? [Test [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) and control your expenses with AI, multi-currency, and reports that make sense.**

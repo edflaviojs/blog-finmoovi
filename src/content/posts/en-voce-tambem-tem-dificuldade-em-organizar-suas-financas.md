@@ -31,7 +31,7 @@ A real-life example is the case of a friend who works as a freelancer. He needs 
 
 
 ## The Solution is Here
-But there is a solution to this problem. I discovered an app that can help organize your finances in an effective and easy way. FinMoovi is an app that allows you to automatically categorize your expenses, even when you're offline. You can record your expenses by voice or use the Smart Capture feature, and the app will do the rest.
+But there is a solution to this problem. I discovered an app that can help organize your finances in an effective and easy way. [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) is an app that allows you to automatically categorize your expenses, even when you're offline. You can record your expenses by voice or use the Smart Capture feature, and the app will do the rest.
 
 With FinMoovi, you can get a clear picture of your finances and make informed decisions about how to manage your [money](/en/posts/30-day-rule-for-purchases). The app also offers intelligent reports with the help of AI, which helps identify areas where you can save and improve your financial situation.
 

@@ -42,4 +42,4 @@ Outro desafio comum é a falta de comunicação sobre finanças. É importante q
 Agora que você sabe como organizar as finanças de casal, é hora de começar a trabalhar em direção a um futuro financeiro mais seguro e próspero. Lembre-se de que a comunicação e o planejamento são fundamentais para o sucesso. Comece a conversar com seu parceiro sobre suas metas financeiras e crie um plano para alcançá-las.
 
 ---
-**Pronto para organizar suas finanças? [Experimente o FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).**
+**Pronto para organizar suas finanças? [Experimente o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).**

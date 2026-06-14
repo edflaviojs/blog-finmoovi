@@ -42,4 +42,4 @@ Another common challenge is lack of communication about finances. It's important
 Now that you know how to organize couple finances, it's time to start working toward a more secure and prosperous financial future. Remember that communication and planning are key to success. Start talking to your partner about your financial goals and create a plan to achieve them.
 
 ---
-**Ready to organize your finances? [Try [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/saving-on-your-energy-bill) is going.**
+**Ready to organize your finances? [Try [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/saving-on-your-energy-bill) is going.**

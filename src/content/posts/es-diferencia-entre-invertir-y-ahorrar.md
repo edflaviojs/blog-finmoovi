@@ -55,4 +55,4 @@ No importa si usted es un principiante o un inversor experimentado, es important
 
 
 ---
-**El próximo paso es suyo. [Pruebe FinMoovi gratis por 7 días](https://finmoovi.com) y descubra hacia dónde su dinero está yendo de verdad.**
+**El próximo paso es suyo. [Pruebe [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) y descubra hacia dónde su [dinero](/es/posts/planeamiento-financiero-para-parejas) está yendo de verdad.**

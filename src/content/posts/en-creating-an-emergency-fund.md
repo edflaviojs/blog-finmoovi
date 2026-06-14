@@ -47,4 +47,4 @@ Now that you have a clear idea of how to create and manage an emergency fund, it
 
 
 ---
-**The next step is yours. [Try FinMoovi for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/save-on-your-market-bill) is really going.**
+**The next step is yours. [Try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/save-on-your-market-bill) is really going.**

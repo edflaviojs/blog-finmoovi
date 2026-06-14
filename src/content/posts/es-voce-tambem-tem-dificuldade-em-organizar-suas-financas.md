@@ -31,7 +31,7 @@ Un ejemplo real es el caso de un amigo que trabaja como freelancer. Él necesita
 
 
 ## La solución está aquí
-Pero hay una solución para este problema. Descubrí una aplicación que puede ayudar a organizar tus finanzas de forma eficaz y fácil. El FinMoovi es una aplicación que permite categorizar tus gastos automáticamente, incluso cuando estás offline. Puedes registrar tus gastos por voz o usar la función de captura por OCR, y la aplicación hará el resto.
+Pero hay una solución para este problema. Descubrí una aplicación que puede ayudar a organizar tus finanzas de forma eficaz y fácil. El [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) es una aplicación que permite categorizar tus gastos automáticamente, incluso cuando estás offline. Puedes registrar tus gastos por voz o usar la función de captura por OCR, y la aplicación hará el resto.
 
 Con el FinMoovi, puedes tener una visión clara de tus finanzas y tomar decisiones informadas sobre cómo gestionar tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). La aplicación también ofrece informes inteligentes con la ayuda de la IA, lo que ayuda a identificar áreas donde puedes ahorrar y mejorar tu situación financiera.
 

@@ -53,4 +53,4 @@ Now that you know how to negotiate discounts on fixed bills, it's time to start 
 
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/creating-an-emergency-fund) is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) and discover where your [money](/en/posts/creating-an-emergency-fund) is really going.**

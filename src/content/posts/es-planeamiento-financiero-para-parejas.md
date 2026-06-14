@@ -47,4 +47,4 @@ No pierdas más tiempo y comienza a planificar tus finanzas hoy. Con disciplina,
 
 
 ---
-**¿Estás cansado de planillas? [Prueba [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://finmoovi.com) y controla tus gastos con IA, multi-moneda y reportes que tienen sentido.**
+**¿Estás cansado de planillas? [Prueba [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://[finmoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro).com) y controla tus gastos con IA, multi-moneda y reportes que tienen sentido.**

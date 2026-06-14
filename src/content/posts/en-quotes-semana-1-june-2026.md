@@ -34,7 +34,7 @@ Uma dica prática para investidores individuais é diversificar sua carteira de 
 
 ## O que Esperar para a Próxima Semana
 
-Para a próxima semana, é importante ficar atento às notícias econômicas e políticas que possam afetar o mercado de câmbio e as taxas de juros. Além disso, é fundamental continuar monitorando sua carteira de investimentos e ajustar sua estratégia de acordo com as mudanças no mercado. Com a ajuda de ferramentas como o FinMoovi, é mais fácil acompanhar seus investimentos e tomar decisões informadas. Vamos continuar monitorando o mercado e trazendo atualizações e dicas práticas para você.
+Para a próxima semana, é importante ficar atento às notícias econômicas e políticas que possam afetar o mercado de câmbio e as taxas de juros. Além disso, é fundamental continuar monitorando sua carteira de investimentos e ajustar sua estratégia de acordo com as mudanças no mercado. Com a ajuda de ferramentas como o [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), é mais fácil acompanhar seus investimentos e tomar decisões informadas. Vamos continuar monitorando o mercado e trazendo atualizações e dicas práticas para você.
 
 
 ---

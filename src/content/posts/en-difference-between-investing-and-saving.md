@@ -55,4 +55,4 @@ Regardless of whether you're a beginner or an experienced investor, it's essenti
 
 
 ---
-**The next step is yours. [Test FinMoovi for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/tips-for-controlling-credit-card-expenses) is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) and discover where your [money](/en/posts/tips-for-controlling-credit-card-expenses) is really going.**

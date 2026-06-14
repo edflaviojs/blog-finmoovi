@@ -40,7 +40,7 @@ Existem várias maneiras de ser criativo e econômico ao escolher um presente. A
 
 ## Ferramentas para Ajudar no Planejamento
 
-Para ajudar a gerenciar suas finanças e planejar o Dia dos Namorados de forma eficaz, você pode usar ferramentas como o app [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas). Ele pode ajudar a organizar suas despesas, definir metas de [poupança](/glossario/poupanca) e até mesmo oferecer dicas personalizadas de [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz). Com o FinMoovi, você pode ter uma visão clara de suas finanças e fazer escolhas mais informadas.
+Para ajudar a gerenciar suas finanças e planejar o Dia dos Namorados de forma eficaz, você pode usar ferramentas como o app [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas). Ele pode ajudar a organizar suas despesas, definir metas de [poupança](/glossario/poupanca) e até mesmo oferecer dicas personalizadas de [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz). Com o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), você pode ter uma visão clara de suas finanças e fazer escolhas mais informadas.
 
 ![Ferramentas para Ajudar no Planejamento](/images/posts/presente-dia-dos-namorados-economico-4.webp)
 
