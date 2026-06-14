@@ -22,7 +22,7 @@ Quando se fala em [planejamento financeiro](/posts/5-[dicas](/posts/7-erros-fina
 
 ## Como funciona a Previdência Privada
 
-A previdência privada é um plano de investimento de longo prazo que oferece uma renda mensal após a aposentadoria. Esses planos são oferecidos por instituições financeiras e seguradoras, e podem ser personalizados de acordo com as necessidades e objetivos do investidor. A previdência privada pode ser feita por meio de planos como o VGBL (Vida Gerador de Benefício Livre) ou o PGBL (Plano Gerador de Benefício Livre).
+A previdência privada é um plano de [investimento](/posts/tesouro-direto-para-iniciantes) de longo prazo que oferece uma renda mensal após a aposentadoria. Esses planos são oferecidos por instituições financeiras e seguradoras, e podem ser personalizados de acordo com as necessidades e objetivos do investidor. A previdência privada pode ser feita por meio de planos como o VGBL (Vida Gerador de Benefício Livre) ou o PGBL (Plano Gerador de Benefício Livre).
 
 ![Como funciona a Previdência Privada](/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale--2.webp)
 

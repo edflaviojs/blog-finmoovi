@@ -22,7 +22,7 @@ When it comes to [financial planning](/en/posts/5-dicas-para-usar-as-ferias-para
 
 ## How Private Pension Works
 
-Private pension is a long-term investment plan that offers a monthly income after retirement. These plans are offered by financial institutions and insurance companies, and can be customized according to the investor's needs and objectives. Private pension can be done through plans such as VGBL (Vida Gerador de Benefício Livre) or PGBL (Plano Gerador de Benefício Livre).
+Private pension is a long-term [investment](/en/posts/tesouro-direto-para-iniciantes) plan that offers a monthly income after retirement. These plans are offered by financial institutions and insurance companies, and can be customized according to the investor's needs and objectives. Private pension can be done through plans such as VGBL (Vida Gerador de Benefício Livre) or PGBL (Plano Gerador de Benefício Livre).
 
 ![How Private Pension Works](/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale--2.webp)
 

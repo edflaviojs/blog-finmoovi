@@ -38,7 +38,7 @@ Como autônomo, você é responsável por seu próprio recolhimento de impostos,
 ## Investindo para o Futuro
 Além de gerenciar suas finanças atuais, é crucial pensar no futuro. Isso inclui planejar aposentadoria, investir em educação ou em um negócio próprio, e até mesmo comprar uma casa. Para autônomos, investir pode parecer um desafio devido à [renda variável](/glossario/renda-variavel), mas existem estratégias que podem ajudar.
 
-Uma opção é investir uma porcentagem fixa de sua renda mensal, independentemente do valor. Por exemplo, se você decide investir 10% de sua renda, em um mês de R$ 8.000, você investiria R$ 800, e em um mês de R$ 3.000, investiria R$ 300. **Dica prática:** Comece com investimentos de baixo risco, como títulos de dívida ou [fundos](/glossario/fundos) de investimento, e ajuste sua estratégia à medida que você se torna mais confortável com o investimento.
+Uma opção é investir uma porcentagem fixa de sua renda mensal, independentemente do valor. Por exemplo, se você decide investir 10% de sua renda, em um mês de R$ 8.000, você investiria R$ 800, e em um mês de R$ 3.000, investiria R$ 300. **Dica prática:** Comece com investimentos de baixo risco, como títulos de dívida ou [fundos](/glossario/fundos) de [investimento](/posts/tesouro-direto-para-iniciantes), e ajuste sua estratégia à medida que você se torna mais confortável com o investimento.
 
 ![Investindo para o Futuro](/images/posts/organizar-financas-autonomo-3.svg)
 

@@ -22,7 +22,7 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-
 
 **O erro:** Viver sem nenhuma reserva, contando que nada vai dar errado.
 
-**A solução:** Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de gastos guardados. Deixe em um investimento com [liquidez](/glossario/liquidez) diária ([CDB](/glossario/cdb) ou Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))).
+**A solução:** Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de gastos guardados. Deixe em um [investimento](/posts/tesouro-direto-para-iniciantes) com [liquidez](/glossario/liquidez) diária ([CDB](/glossario/cdb) ou Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))).
 
 ## 2. Gastar mais do que ganha
 

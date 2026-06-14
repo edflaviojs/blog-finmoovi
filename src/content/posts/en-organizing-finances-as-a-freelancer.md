@@ -30,7 +30,7 @@ Expense management is another critical area for freelancers. Without a fixed sal
 - Investments: 5% of your monthly earnings (R$ 250)
 
 ## Investments and Savings
-As a freelancer, it's essential to think about the future and make investments that can guarantee a stable income. There are many investment options available, from [stocks](/en/glossario/en-acoes) and bonds to investment funds and real estate. However, it's essential to remember that investments always involve risks, and it's crucial to do careful research before investing.
+As a freelancer, it's essential to think about the future and make investments that can guarantee a stable income. There are many [investment](/en/posts/tesouro-direto-para-iniciantes) options available, from [stocks](/en/glossario/en-acoes) and bonds to investment funds and real estate. However, it's essential to remember that investments always involve risks, and it's crucial to do careful research before investing.
 
 ![Gestão de Gastos](/images/posts/organizar-financas-autonomo-1.svg)
 

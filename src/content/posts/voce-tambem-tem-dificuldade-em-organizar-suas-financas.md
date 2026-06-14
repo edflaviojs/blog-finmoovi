@@ -22,7 +22,7 @@ Você já se sentiu perdido ao tentar organizar suas finanças? Com tantas conta
 Imagine que você está sempre viajando a trabalho, precisa gerenciar suas despesas em diferentes moedas, como dólares e euros, além do real. É como se você estivesse tentando resolver um quebra-cabeça sem ter todas as peças. Você não sabe onde começar, e o tempo é um recurso escasso. É comum se sentir estressado e ansioso ao pensar em todas as contas que precisam ser pagas e despesas que precisam ser registradas.
 
 ## A dor da desorganização financeira
-A desorganização financeira pode ter consequências sérias. Você pode acabar pagando [juros](/glossario/juros) altos em contas não pagas, perder oportunidades de investimento ou, pior ainda, acumular dívidas. Além disso, a falta de controle sobre suas finanças pode afetar sua saúde mental e física. Você pode se sentir ansioso, estressado e inseguro sobre o futuro.
+A desorganização financeira pode ter consequências sérias. Você pode acabar pagando [juros](/glossario/juros) altos em contas não pagas, perder oportunidades de [investimento](/posts/tesouro-direto-para-iniciantes) ou, pior ainda, acumular dívidas. Além disso, a falta de controle sobre suas finanças pode afetar sua saúde mental e física. Você pode se sentir ansioso, estressado e inseguro sobre o futuro.
 
 Um exemplo real é o caso de um amigo que trabalha como freelancer. Ele precisa gerenciar suas despesas em diferentes projetos e clientes, mas não tem um sistema eficaz para fazer isso. Ele acaba gastando horas registrando despesas e criando planilhas, mas ainda assim não consegue ter uma visão clara de suas finanças. Isso o deixa estressado e ansioso, e ele não consegue se concentrar em seu trabalho.
 

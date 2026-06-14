@@ -22,7 +22,7 @@ Have you ever felt lost when trying to organize your finances? With so many bill
 Imagine you're always traveling for work, and you need to manage your expenses in different currencies, such as dollars and euros, in addition to your local currency. It's like trying to solve a puzzle without having all the pieces. You don't know where to start, and time is a scarce resource. It's common to feel stressed and anxious when thinking about all the bills that need to be paid and expenses that need to be recorded.
 
 ## The Pain of Financial Disorganization
-Financial disorganization can have serious consequences. You may end up paying high interest rates on unpaid bills, missing investment opportunities, or, worse still, accumulating debt. Additionally, the lack of control over your finances can affect your mental and physical health. You may feel anxious, stressed, and insecure about the future.
+Financial disorganization can have serious consequences. You may end up paying high interest rates on unpaid bills, missing [investment](/en/posts/tesouro-direto-para-iniciantes) opportunities, or, worse still, accumulating debt. Additionally, the lack of control over your finances can affect your mental and physical health. You may feel anxious, stressed, and insecure about the future.
 
 A real-life example is the case of a friend who works as a freelancer. He needs to manage his expenses across different projects and clients, but he doesn't have an effective system to do so. He ends up spending hours recording expenses and creating spreadsheets, but still can't get a clear picture of his finances. This leaves him stressed and anxious, and he can't focus on his work.
 

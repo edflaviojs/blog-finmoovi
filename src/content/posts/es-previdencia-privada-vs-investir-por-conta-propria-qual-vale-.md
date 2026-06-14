@@ -22,7 +22,7 @@ Cuando se habla de [planificación financiera](/es/posts/5-dicas-para-usar-as-fe
 
 ## Cómo funciona la Previsión Privada
 
-La previsión privada es un plan de inversión de largo plazo que ofrece una renta mensual después de la jubilación. Estos planes son ofrecidos por instituciones financieras y aseguradoras, y pueden ser personalizados de acuerdo con las necesidades y objetivos del inversor. La previsión privada puede ser realizada a través de planes como el VGBL (Vida Generador de Beneficio Libre) o el PGBL (Plano Generador de Beneficio Libre).
+La previsión privada es un plan de [inversión](/es/posts/tesouro-direto-para-iniciantes) de largo plazo que ofrece una renta mensual después de la jubilación. Estos planes son ofrecidos por instituciones financieras y aseguradoras, y pueden ser personalizados de acuerdo con las necesidades y objetivos del inversor. La previsión privada puede ser realizada a través de planes como el VGBL (Vida Generador de Beneficio Libre) o el PGBL (Plano Generador de Beneficio Libre).
 
 ![Cómo funciona la Previsión Privada](/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale--2.webp)
 
