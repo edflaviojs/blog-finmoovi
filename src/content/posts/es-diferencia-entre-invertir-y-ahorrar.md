@@ -31,7 +31,7 @@ Sin embargo, es importante recordar que el riesgo también es un factor que pued
 
 
 ## [Planificación Financiera](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
-Otro factor importante que debe ser considerado al invertir o ahorrar es la planificación financiera. Esto implica definir metas financieras claras, como comprar una casa o pagar una deuda, y crear un plan para alcanzarlas. Además, es importante tener un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) y controlar los gastos para garantizar que usted tenga [dinero](/es/posts/organizar-finanzas-autonomo) suficiente para invertir o ahorrar.
+Otro factor importante que debe ser considerado al invertir o ahorrar es la [planificación financiera](/es/posts/como-crear-presupuesto-personal). Esto implica definir metas financieras claras, como comprar una casa o pagar una deuda, y crear un plan para alcanzarlas. Además, es importante tener un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) y controlar los gastos para garantizar que usted tenga [dinero](/es/posts/organizar-finanzas-autonomo) suficiente para invertir o ahorrar.
 
 Por ejemplo, imagine que usted quiere comprar una casa que cuesta $200.000. Si usted ahorra $1.000 por mes, le tomará alrededor de 17 años para alcanzar su objetivo. Ya si usted invierte $1.000 por mes en un fondo de inversión que rinde 8% al año, usted puede alcanzar su objetivo en alrededor de 10 años.
 
@@ -45,7 +45,7 @@ Además, es importante recordar que las inversiones no deben ser hechas con base
 
 
 ## Invertiendo con Aplicativos
-Existen muchos aplicativos que permiten invertir en diferentes activos, como acciones, títulos y fondos de inversión. Estos aplicativos pueden ser una excelente opción para quien está comenzando a invertir, ya que ofrecen una interfaz fácil de usar y tasas de administración bajas. Además, muchos aplicativos permiten invertir pequeñas cantidades de dinero, lo que puede ser una excelente opción para quien está comenzando a invertir.
+Existen muchos aplicativos que permiten invertir en diferentes activos, como acciones, títulos y fondos de inversión. Estos aplicativos pueden ser una excelente opción para quien está comenzando a invertir, ya que ofrecen una interfaz fácil de usar y tasas de administración bajas. Además, muchos aplicativos permiten invertir pequeñas cantidades de [dinero](/es/posts/planeamiento-financiero-para-autonomos), lo que puede ser una excelente opción para quien está comenzando a invertir.
 
 ## Comience hoy
 No importa si usted es un principiante o un inversor experimentado, es importante comenzar a invertir o ahorrar lo más pronto posible. Con un plan financiero sólido y una estrategia de inversión adecuada, usted puede alcanzar sus objetivos financieros y tener una vida más segura y próspera.

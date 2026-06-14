@@ -32,7 +32,7 @@ An example of how private pension works: imagine that you invest R$ 500 per mont
 
 ## How Investing on Your Own Works
 
-Investing on your own means that you choose the investments and manage your [money](/en/posts/30-day-rule-for-purchases) yourself. This can include investments in stocks, bonds, investment funds, real estate, among others. This option offers more flexibility and control over investments, but also requires more knowledge and skill to manage risks.
+Investing on your own means that you choose the investments and manage your [money](/en/posts/30-day-rule-for-purchases) yourself. This can include investments in [stocks](/en/glossario/en-acoes), bonds, investment funds, real estate, among others. This option offers more flexibility and control over investments, but also requires more knowledge and skill to manage risks.
 
 An example of how investing on your own works: imagine that you invest R$ 1,000 per month in a stock investment fund, with an administration fee of 1.5% per year. If the fund has an average performance of 10% per year, you can have a patrimony of approximately R$ 300,000 after 10 years.
 
@@ -75,6 +75,6 @@ Investing on your own is a good option for you if:
 
 In summary, the choice between private pension and investing on your own depends on your financial profile and objectives. If you are looking for a guaranteed monthly income and have no experience in investments, private pension may be the best option. On the other hand, if you have experience in investments and are looking for more flexibility and control, investing on your own may be the best choice.
 
-Regardless of the choice, it is essential to remember that monitoring and tracking investments are fundamental to achieving financial objectives. FinMoovi is a useful tool for tracking your investments and having a clear view of your patrimony. With FinMoovi, you can have access to real-time information about your investments, in addition to receiving personalized alerts and notifications to help you make informed decisions.
+Regardless of the choice, it is essential to remember that monitoring and tracking investments are fundamental to achieving financial objectives. [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) is a useful tool for tracking your investments and having a clear view of your patrimony. With FinMoovi, you can have access to real-time information about your investments, in addition to receiving personalized alerts and notifications to help you make informed decisions.
 
 Remember that [financial education](/en/glossario/en-educacao-financeira) is essential for making informed decisions about your investments. Additionally, it is essential to consult a financial professional before making any decision. With the help of FinMoovi and a financial professional, you can achieve your financial objectives and have a peaceful and secure retirement.

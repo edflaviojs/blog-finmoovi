@@ -22,7 +22,7 @@ Quando se trata de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-
 Por exemplo, imagine que você ganha R$ 5.000 por mês e consegue economizar R$ 1.000. Se você colocar esse [dinheiro](/posts/economizar-nas-compras-do-supermercado) em uma poupança, ele renderá cerca de R$ 5 por mês, o que é um retorno muito baixo. Já se você investir esse mesmo [dinheiro](/posts/economize-na-conta-de-energia) em ações ou um fundo de investimento, pode ter um retorno muito maior, mas também corre o risco de perder parte do seu investimento.
 
 ## Riscos e Retornos
-Um dos principais fatores que diferenciam investir e poupar é o nível de risco envolvido. A poupança é geralmente muito segura, pois o [dinheiro](/posts/economize-na-conta-do-mercado) é depositado em uma conta bancária e é protegido pelo Fundo Garantidor de Crédito (FGC). Já os investimentos podem ser mais arriscados, pois o valor do ativo pode variar ao longo do tempo.
+Um dos principais fatores que diferenciam investir e poupar é o nível de risco envolvido. A poupança é geralmente muito segura, pois o [dinheiro](/posts/economize-na-conta-do-mercado) é depositado em uma conta bancária e é protegido pelo Fundo Garantidor de Crédito (FGC). Já os [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) podem ser mais arriscados, pois o valor do ativo pode variar ao longo do tempo.
 
 No entanto, é importante lembrar que o risco também é um fator que pode afetar o retorno do investimento. Em geral, os investimentos de maior risco tendem a ter retornos mais altos, enquanto os investimentos de menor risco tendem a ter retornos mais baixos. **Dica prática:** antes de investir, é importante avaliar seu perfil de risco e escolher investimentos que sejam adequados para você.
 
@@ -55,4 +55,4 @@ Não importa se você é um iniciante ou um investidor experiente, é importante
 
 
 ---
-**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu dinheiro está indo de verdade.**
+**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/organizar-financas-de-casal) está indo de verdade.**
