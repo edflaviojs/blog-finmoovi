@@ -146,6 +146,16 @@ async function main() {
   const prompt = `
 Escreva um artigo prático sobre: "${topic}"
 
+Responda OBRIGATORIAMENTE neste formato exato (use os delimitadores):
+---TITULO---
+[título SEO, 50-60 chars, keyword no início]
+---META---
+[meta description, 150-160 chars]
+---KEYWORDS---
+[5-7 keywords separadas por vírgula]
+---CONTEUDO---
+[conteúdo markdown completo]
+
 REGRAS DE ESTILO:
 - Tom: coach financeiro amigo, direto e motivador
 - Use exemplos com salários reais brasileiros (R$2.000 a R$8.000)
@@ -162,16 +172,6 @@ REGRAS DE ESTILO:
 ---
 
 **Quer automatizar esse controle? [Teste o ${config.app.name} grátis por 7 dias](${config.app.url}) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
-
-ESTRUTURA DE RESPOSTA:
----TITULO---
-[título SEO, 50-60 chars, keyword no início]
----META---
-[meta description, 150-160 chars]
----KEYWORDS---
-[5-7 keywords separadas por vírgula]
----CONTEUDO---
-[conteúdo markdown completo]
 `;
 
   try {

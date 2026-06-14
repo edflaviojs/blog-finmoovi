@@ -146,6 +146,16 @@ async function main() {
   const prompt = `
 Escreva um artigo educativo sobre: "${topic}"
 
+Responda OBRIGATORIAMENTE neste formato exato (use os delimitadores):
+---TITULO---
+[título SEO, 50-60 chars, keyword no início]
+---META---
+[meta description, 150-160 chars]
+---KEYWORDS---
+[5-7 keywords separadas por vírgula]
+---CONTEUDO---
+[conteúdo markdown completo]
+
 REGRAS DE ESTILO:
 - Tom: educador financeiro acessível, sem jargão desnecessário
 - Sempre explique termos técnicos na primeira aparição
@@ -164,16 +174,6 @@ REGRAS DE ESTILO:
 ---
 
 **Para acompanhar seus investimentos em um só lugar, [teste o ${config.app.name} grátis por 7 dias](${config.app.url}) — multi-moeda, relatórios inteligentes e 100% offline.**
-
-ESTRUTURA DE RESPOSTA:
----TITULO---
-[título SEO, 50-60 chars, keyword no início]
----META---
-[meta description, 150-160 chars]
----KEYWORDS---
-[5-7 keywords separadas por vírgula]
----CONTEUDO---
-[conteúdo markdown completo]
 `;
 
   try {
