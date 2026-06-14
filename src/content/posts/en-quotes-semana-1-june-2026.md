@@ -11,30 +11,30 @@ featured: false
 locale: "en"
 translationKey: "resumo-semanal-dolar-r-5-03-semana-1-junho-2026"
 seo:
-  metaTitle: "Quotes Semana 1 june 2026: Dólar R$ 5.03"
-  metaDescription: "Weekly summary: dólar a R$ 5.03, euro a R$ 5.84. Analysis e tips para investors."
+  metaTitle: "Quotes Week 1 June 2026: Dollar R$ 5.03"
+  metaDescription: "Weekly summary: dollar at R$ 5.03, euro at R$ 5.84. Analysis and tips for investors."
   keywords: ["dollar quote today", "euro quote", "financial market summary", "selic"]
 ---
 
-## Resumo Semanal do Mercado Financeiro Brasileiro
+## Weekly Summary of the Brazilian Financial Market
 
-A semana que passou foi marcada por uma certa estabilidade no mercado de câmbio, com o dólar comercial fechando em R$ 5,03 e o euro em R$ 5,84. Vamos analisar como esses números afetam nossas finanças e [investimentos](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
+The past week was marked by relative stability in the foreign exchange market, with the commercial dollar closing at R$ 5.03 and the euro at R$ 5.84. Let's analyze how these numbers affect our finances and [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
-## Dólar e Euro: Tendência Semanal
+## Dollar and Euro: Weekly Trend
 
-O dólar apresentou uma leve alta ao longo da semana, mas nada que tenha causado grandes impactos nos investimentos. Já o euro manteve uma tendência de estabilidade, o que é bom para quem tem investimentos em moeda estrangeira. Com o euro em R$ 5,84, é um bom momento para avaliar se é hora de diversificar sua carteira de investimentos com ativos em euros. Ferramentas como o [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) podem ajudar a acompanhar seus investimentos em múltiplas moedas, tornando mais fácil gerenciar seu patrimônio.
+The dollar showed a slight increase throughout the week, but nothing that caused major impacts on investments. The euro maintained a stability trend, which is good for those with investments in foreign currency. With the euro at R$ 5.84, it's a good time to evaluate whether to diversify your investment portfolio with euro-denominated assets. Tools like [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) can help track your investments in multiple currencies, making it easier to manage your wealth.
 
-## [Selic](/en/posts/quotes-week-4-may-2026) e Impacto nos Investimentos
+## [Selic](/en/posts/quotes-week-4-may-2026) and Impact on Investments
 
-A taxa Selic, que é a taxa de [juros](/en/glossario/en-juros) básica da economia, continua sendo um fator importante para os investimentos. Com a Selic em 12,25% ao ano, os investimentos em renda fixa, como títulos do tesouro, continuam atraindo a atenção de muitos investidores. No entanto, é importante lembrar que altas taxas de juros também podem aumentar os custos de financiamento para empresas e consumidores, o que pode afetar o crescimento econômico. Portanto, é fundamental manter um olho nas notícias econômicas e ajustar sua estratégia de investimento de acordo.
+The Selic rate, which is the economy's base [interest](/en/glossario/en-juros) rate, continues to be an important factor for investments. With the Selic at 12.25% per year, fixed-income investments, such as treasury bonds, continue attracting the attention of many investors. However, it's important to remember that high interest rates can also increase financing costs for businesses and consumers, which can affect economic growth. Therefore, it's essential to keep an eye on economic news and adjust your investment strategy accordingly.
 
-## Dica Prática para Investidores Individuais
+## Practical Tip for Individual Investors
 
-Uma dica prática para investidores individuais é diversificar sua carteira de investimentos. Com o dólar em R$ 5,03 e o euro em R$ 5,84, pode ser um bom momento para investir em ativos em moeda estrangeira. Além disso, é importante não se esquecer de investir em renda fixa, como títulos do tesouro, para ter uma fonte de renda mais estável. Lembre-se de que a [diversificação](/en/glossario/en-diversificacao) é a chave para minimizar riscos e maximizar ganhos.
+A practical tip for individual investors is to diversify your investment portfolio. With the dollar at R$ 5.03 and the euro at R$ 5.84, it may be a good time to invest in foreign currency assets. Additionally, it's important not to forget investing in fixed income, such as treasury bonds, to have a more stable income source. Remember that [diversification](/en/glossario/en-diversificacao) is the key to minimizing risks and maximizing gains.
 
-## O que Esperar para a Próxima Semana
+## What to Expect for Next Week
 
-Para a próxima semana, é importante ficar atento às notícias econômicas e políticas que possam afetar o mercado de câmbio e as taxas de juros. Além disso, é fundamental continuar monitorando sua carteira de investimentos e ajustar sua estratégia de acordo com as mudanças no mercado. Com a ajuda de ferramentas como o [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), é mais fácil acompanhar seus investimentos e tomar decisões informadas. Vamos continuar monitorando o mercado e trazendo atualizações e dicas práticas para você.
+For next week, it's important to pay attention to economic and political news that may affect the foreign exchange market and interest rates. Additionally, it's essential to continue monitoring your investment portfolio and adjust your strategy according to market changes. With the help of tools like [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), it's easier to track your investments and make informed decisions. We'll continue monitoring the market and bringing updates and practical tips for you.
 
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Método 50-30-20 para Orçamento"
+title: "The 50-30-20 Method for Budgeting"
 description: "Learn to apply the 50-30-20 method to your Brazilian salary for a healthy budget and achieve your financial goals."
 image: "/images/posts/metodo-50-30-20-para-orcamento.webp"
 category: "orcamento"
@@ -11,7 +11,7 @@ readingTime: 3
 featured: false
 translationKey: "metodo-50-30-20-para-orcamento"
 seo:
-  metaTitle: "Método 50-30-20 para Orçamento"
+  metaTitle: "The 50-30-20 Method for Budgeting"
   metaDescription: "Learn to apply the 50-30-20 method to your Brazilian salary for a healthy budget and achieve your financial goals."
   keywords: ["personal budget","50-30-20 method","Brazilian salary","personal finance","expense control","economy","50 30 20 rule","how to divide salary","budget method"]
 ---

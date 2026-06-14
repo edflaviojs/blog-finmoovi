@@ -1,17 +1,17 @@
 ---
-title: "Guía Completa para Iniciantes sobre Tesouro Direto"
+title: "Guía Completa para Principiantes sobre Tesouro Direto"
 description: "Guía completa sobre inversión en Tesouro Direto, explicando cómo funciona, ventajas y desventajas, además de ejemplos prácticos."
 image: "/images/posts/tesouro-direto-para-iniciantes.webp"
 category: "investimentos"
 locale: "es"
-tags: ["Tesouro Direto","inversión","renta fija","títulos públicos","finanzas personales","economía","tesouro direto para iniciantes","cómo invertir en tesouro direto","tesouro selic"]
+tags: ["Tesouro Direto","inversión","renta fija","títulos públicos","finanzas personales","economía","tesouro direto para principiantes","cómo invertir en tesouro direto","tesouro selic"]
 author: "FinMoovi"
 publishedAt: 2026-06-14
 readingTime: 4
 featured: false
 translationKey: "tesouro-direto-para-iniciantes"
 seo:
-  metaTitle: "Guía Completa para Iniciantes sobre Tesouro Direto"
+  metaTitle: "Guía Completa para Principiantes sobre Tesouro Direto"
   metaDescription: "Guía completa sobre inversión en Tesouro Direto, explicando cómo funciona, ventajas y desventajas, además de ejemplos prácticos."
   keywords: ["Tesouro Direto","inversión","renta fija","títulos públicos","finanzas personales","economía","tesouro direto para iniciantes","cómo invertir en tesouro direto","tesouro selic"]
 ---

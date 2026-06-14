@@ -8,6 +8,7 @@ author: "FinMoovi"
 publishedAt: 2026-05-27
 readingTime: 3
 featured: false
+locale: "pt"
 translationKey: "resumo-semanal-dolar-r-5-03-semana-4-maio"
 seo:
   metaTitle: "Cotações Semana 4 maio 2026: Dólar R$ 5.03"

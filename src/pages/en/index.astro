@@ -9,11 +9,11 @@ import { getCollection } from 'astro:content';
 
 // Strictly filter by locale EN only
 const allPosts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'en');
-// Sort by date desc, then by slug asc (deterministic tiebreaker)
+// Sort by date desc, then by translationKey asc (consistent across locales)
 const sortedPosts = allPosts.sort((a, b) => {
   const dateDiff = b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
   if (dateDiff !== 0) return dateDiff;
-  return a.slug.localeCompare(b.slug);
+  return (a.data.translationKey || '').localeCompare(b.data.translationKey || '');
 });
 
 // Get latest glossário from glossario collection
@@ -21,7 +21,7 @@ const allGlossario = await getCollection('glossario', ({ data }) => data.locale 
 const sortedGlossario = allGlossario.sort((a, b) => {
   const dateDiff = b.data.publishedAt.getTime() - a.data.publishedAt.getTime();
   if (dateDiff !== 0) return dateDiff;
-  return a.slug.localeCompare(b.slug);
+  return (a.data.translationKey || '').localeCompare(b.data.translationKey || '');
 });
 
 // Hero: absolute most recent content (posts OR glossário)
