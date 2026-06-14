@@ -1,18 +1,38 @@
 ---
 import { getCollection } from 'astro:content';
 
+const urlPath = Astro.url.pathname;
+let locale = 'pt';
+if (urlPath.startsWith('/en/')) locale = 'en';
+else if (urlPath.startsWith('/es/')) locale = 'es';
+
 const allPosts = await getCollection('posts', ({ data }) =>
-  !data.draft && data.locale === 'pt'
+  !data.draft && data.locale === locale
 );
 
 const countByCategory = (cat: string) => allPosts.filter(p => p.data.category === cat).length;
+const localePrefix = locale === 'pt' ? '' : `/${locale}`;
+
+const headingMap: Record<string, string> = {
+  pt: 'Categorias',
+  en: 'Categories',
+  es: 'Categorías',
+};
+
+const categoryNames: Record<string, Record<string, string>> = {
+  pt: { dicas: 'Dicas Financeiras', orcamento: 'Orçamento', investimentos: 'Investimentos', cotacoes: 'Cotações', ferramentas: 'Ferramentas' },
+  en: { dicas: 'Financial Tips', orcamento: 'Budget', investimentos: 'Investments', cotacoes: 'Quotes', ferramentas: 'Tools' },
+  es: { dicas: 'Consejos', orcamento: 'Presupuesto', investimentos: 'Inversiones', cotacoes: 'Cotizaciones', ferramentas: 'Herramientas' },
+};
+
+const labels = categoryNames[locale] || categoryNames.pt;
 
 const categories = [
-  { label: 'Dicas Financeiras', href: '/categorias/dicas', count: countByCategory('dicas'), color: 'var(--accent-primary)', i18n: 'cat.dicas' },
-  { label: 'Orçamento', href: '/categorias/orcamento', count: countByCategory('orcamento'), color: 'var(--accent-green)', i18n: 'cat.orcamento' },
-  { label: 'Investimentos', href: '/categorias/investimentos', count: countByCategory('investimentos'), color: 'var(--accent-purple)', i18n: 'cat.investimentos' },
-  { label: 'Cotações', href: '/categorias/cotacoes', count: countByCategory('cotacoes'), color: 'var(--accent-yellow)', i18n: 'cat.cotacoes' },
-  { label: 'Ferramentas', href: '/categorias/ferramentas', count: countByCategory('ferramentas'), color: 'var(--accent-red)', i18n: 'cat.ferramentas' },
+  { label: labels.dicas, href: `${localePrefix}/categorias/dicas`, count: countByCategory('dicas'), color: 'var(--accent-primary)' },
+  { label: labels.orcamento, href: `${localePrefix}/categorias/orcamento`, count: countByCategory('orcamento'), color: 'var(--accent-green)' },
+  { label: labels.investimentos, href: `${localePrefix}/categorias/investimentos`, count: countByCategory('investimentos'), color: 'var(--accent-purple)' },
+  { label: labels.cotacoes, href: `${localePrefix}/categorias/cotacoes`, count: countByCategory('cotacoes'), color: 'var(--accent-yellow)' },
+  { label: labels.ferramentas, href: `${localePrefix}/categorias/ferramentas`, count: countByCategory('ferramentas'), color: 'var(--accent-red)' },
 ];
 ---
 

@@ -57,20 +57,25 @@ if (glossarioDate > postDate && latestGlossarioItem) {
   };
 }
 
-// 3 Cards: latest Dica, latest Cotação, latest Glossário (skip if already in Hero)
+// 4 Cards: latest Dica, latest Nova Categoria, latest Cotação, latest Glossário (skip if already in Hero)
 const heroSlug = heroContent?.href || '';
 
 // Card 1: latest Dica
 const latestDica = sortedPosts.find(p => p.data.category === 'dicas' && `/posts/${p.slug}` !== heroSlug)
-  || sortedPosts.find(p => p.data.category !== 'cotacoes' && `/posts/${p.slug}` !== heroSlug);
+  || sortedPosts.find(p => !['cotacoes', 'investimentos', 'orcamento', 'ferramentas'].includes(p.data.category) && `/posts/${p.slug}` !== heroSlug);
 
-// Card 2: latest Cotação
+// Card 2: latest from new categories (investimentos, orcamento, ferramentas)
+const latestNovaCat = sortedPosts.find(p =>
+  ['investimentos', 'orcamento', 'ferramentas'].includes(p.data.category) && `/posts/${p.slug}` !== heroSlug
+);
+
+// Card 3: latest Cotação
 const latestCotacao = sortedPosts.find(p => p.data.category === 'cotacoes' && `/posts/${p.slug}` !== heroSlug);
 
-// Card 3: latest Glossário
+// Card 4: latest Glossário
 const latestGlossarioCard = sortedGlossario.find(g => `/glossario/${g.slug}` !== heroSlug);
 
-// Build secondary cards array (always 3)
+// Build secondary cards array (always 4)
 const secondaryCards = [];
 if (latestDica) {
   secondaryCards.push({
@@ -79,6 +84,16 @@ if (latestDica) {
     category: latestDica.data.category,
     href: `/posts/${latestDica.slug}`,
     date: latestDica.data.publishedAt,
+    type: 'post',
+  });
+}
+if (latestNovaCat) {
+  secondaryCards.push({
+    title: latestNovaCat.data.title,
+    image: latestNovaCat.data.image,
+    category: latestNovaCat.data.category,
+    href: `/posts/${latestNovaCat.slug}`,
+    date: latestNovaCat.data.publishedAt,
     type: 'post',
   });
 }
@@ -104,13 +119,13 @@ if (latestGlossarioCard) {
 }
 
 // Fill remaining slots with posts if needed
-if (secondaryCards.length < 3) {
+if (secondaryCards.length < 4) {
   const remaining = sortedPosts.filter(p =>
     `/posts/${p.slug}` !== heroSlug &&
     !secondaryCards.some(c => c.href === `/posts/${p.slug}`)
   );
   for (const post of remaining) {
-    if (secondaryCards.length >= 3) break;
+    if (secondaryCards.length >= 4) break;
     secondaryCards.push({
       title: post.data.title,
       image: post.data.image,
@@ -176,7 +191,7 @@ const categoryLabels: Record<string, string> = {
               </div>
             </a>
 
-            <!-- 3 Dynamic Secondary Cards -->
+            <!-- 4 Dynamic Secondary Cards -->
             <div class="hero-secondary">
               {secondaryCards.map(card => (
                 <a href={card.href} class="hero-secondary-card">
@@ -328,7 +343,7 @@ const categoryLabels: Record<string, string> = {
     color: rgba(255, 255, 255, 0.5);
   }
 
-  /* Secondary Cards - 3 cards */
+  /* Secondary Cards - 4 cards */
   .hero-secondary {
     display: flex;
     flex-direction: column;

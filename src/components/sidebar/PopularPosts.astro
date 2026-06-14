@@ -1,22 +1,35 @@
 ---
 import { getCollection } from 'astro:content';
 
+const urlPath = Astro.url.pathname;
+let locale = 'pt';
+if (urlPath.startsWith('/en/')) locale = 'en';
+else if (urlPath.startsWith('/es/')) locale = 'es';
+
 const allPosts = await getCollection('posts', ({ data }) =>
-  !data.draft && data.locale === 'pt'
+  !data.draft && data.locale === locale
 );
+
+const localePrefix = locale === 'pt' ? '' : `/${locale}`;
 
 const popularPosts = allPosts
   .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())
   .slice(0, 5);
+
+const headingMap: Record<string, string> = {
+  pt: 'Mais Recentes',
+  en: 'Most Recent',
+  es: 'Más Recientes',
+};
 ---
 
 <div class="sidebar-widget popular-widget">
-  <h4 class="widget-title" data-i18n="sidebar.popular">Mais Recentes</h4>
+  <h4 class="widget-title">{headingMap[locale]}</h4>
   <ul class="popular-list">
     {popularPosts.map((post, i) => (
       <li class="popular-item">
         <span class="popular-number">{String(i + 1).padStart(2, '0')}</span>
-        <a href={`/posts/${post.slug}`} class="popular-link">{post.data.title}</a>
+        <a href={`${localePrefix}/posts/${post.slug}`} class="popular-link">{post.data.title}</a>
       </li>
     ))}
   </ul>
