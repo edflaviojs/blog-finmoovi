@@ -30,7 +30,7 @@ Un buen presupuesto te ayuda a:
 
 ## Paso 1: Calcula tu Ingreso Neto
 
-Tu ingreso neto es lo que realmente llega a tu cuenta bancaria después de impuestos y deducciones. Incluye todas las fuentes: salario, freelance, inversiones, etc.
+Tu ingreso neto es lo que realmente llega a tu cuenta bancaria después de impuestos y deducciones. Incluye todas las fuentes: salario, freelance, [inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), etc.
 
 ## Paso 2: Lista Todos tus Gastos
 

@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro
 
-A semana que passou foi marcada por uma certa estabilidade no mercado de câmbio, com o dólar comercial fechando em R$ 5,03 e o euro em R$ 5,84. Vamos analisar como esses números afetam nossas finanças e investimentos.
+A semana que passou foi marcada por uma certa estabilidade no mercado de câmbio, com o dólar comercial fechando em R$ 5,03 e o euro em R$ 5,84. Vamos analisar como esses números afetam nossas finanças e [investimentos](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ## Dólar e Euro: Tendência Semanal
 

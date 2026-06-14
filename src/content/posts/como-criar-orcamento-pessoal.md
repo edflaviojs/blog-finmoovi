@@ -33,7 +33,7 @@ Um bom orçamento te ajuda a:
 Comece pelo que entra. Some todas as fontes de renda:
 - Salário líquido
 - Freelances e trabalhos extras
-- Rendimentos de investimentos
+- Rendimentos de [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 - Aluguéis ou outras fontes
 
 **Dica:** Use sempre o valor líquido (o que cai na conta), não o bruto.

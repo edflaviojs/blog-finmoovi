@@ -31,7 +31,7 @@ However, it's essential to remember that risk is also a factor that can affect t
 
 
 ## [Financial Planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
-Another important factor to consider when investing or saving is [financial planning](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)). This involves setting clear financial goals, such as buying a house or paying off debt, and creating a plan to achieve them. Additionally, it's essential to have a [budget](/en/posts/50-30-20-rule-complete-guide) and control expenses to ensure that you have enough money to invest or save.
+Another important factor to consider when investing or saving is [financial planning](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)). This involves setting clear financial goals, such as buying a house or paying off debt, and creating a plan to achieve them. Additionally, it's essential to have a [budget](/en/posts/50-30-20-rule-complete-guide) and control expenses to ensure that you have enough [money](/en/posts/financial-planning-for-freelancers) to invest or save.
 
 For example, imagine that you want to buy a house that costs R$ 200,000. If you save R$ 1,000 per month, it will take you around 17 years to reach your goal. On the other hand, if you invest R$ 1,000 per month in an investment fund that yields 8% per year, you may reach your goal in around 10 years.
 
@@ -45,7 +45,7 @@ Additionally, it's crucial to remember that investments should not be made based
 
 
 ## Investing with Apps
-There are many apps that allow you to invest in different assets, such as stocks, bonds, and investment funds. These apps can be an excellent option for those who are starting to invest, as they offer an easy-to-use interface and low administration fees. Additionally, many apps allow you to invest small amounts of money, which can be an excellent option for those who are starting to invest.
+There are many apps that allow you to invest in different assets, such as stocks, bonds, and investment funds. These apps can be an excellent option for those who are starting to invest, as they offer an easy-to-use interface and low administration fees. Additionally, many apps allow you to invest small amounts of [money](/en/posts/saving-money-on-supermarket-shopping), which can be an excellent option for those who are starting to invest.
 
 ## Start Today
 Regardless of whether you're a beginner or an experienced investor, it's essential to start investing or saving as soon as possible. With a solid financial plan and an appropriate investment strategy, you can achieve your financial goals and have a more secure and prosperous life.

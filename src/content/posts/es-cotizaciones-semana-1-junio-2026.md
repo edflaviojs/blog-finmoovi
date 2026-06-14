@@ -18,7 +18,7 @@ seo:
 
 ## Resumen Semanal del Mercado Financiero Brasileño
 
-La semana del 28 de mayo al 4 de junio de 2026 trajo cambios significativos en el mercado financiero brasileño. En este resumen, exploraremos las tendencias del [dólar](/es/posts/cotizaciones-semana-4-mayo-2026) y euro, el impacto de la Selic en las inversiones y ofreceremos [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
+La semana del 28 de mayo al 4 de junio de 2026 trajo cambios significativos en el mercado financiero brasileño. En este resumen, exploraremos las tendencias del [dólar](/es/posts/cotizaciones-semana-4-mayo-2026) y euro, el impacto de la Selic en las [inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) y ofreceremos [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
 
 ## Dólar y Euro: Tendencia de la Semana
 

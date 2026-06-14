@@ -31,7 +31,7 @@ Sin embargo, es importante recordar que el riesgo también es un factor que pued
 
 
 ## [Planificación Financiera](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
-Otro factor importante que debe ser considerado al invertir o ahorrar es la planificación financiera. Esto implica definir metas financieras claras, como comprar una casa o pagar una deuda, y crear un plan para alcanzarlas. Además, es importante tener un [presupuesto](/es/posts/como-crear-presupuesto-personal) y controlar los gastos para garantizar que usted tenga dinero suficiente para invertir o ahorrar.
+Otro factor importante que debe ser considerado al invertir o ahorrar es la planificación financiera. Esto implica definir metas financieras claras, como comprar una casa o pagar una deuda, y crear un plan para alcanzarlas. Además, es importante tener un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) y controlar los gastos para garantizar que usted tenga [dinero](/es/posts/organizar-finanzas-autonomo) suficiente para invertir o ahorrar.
 
 Por ejemplo, imagine que usted quiere comprar una casa que cuesta $200.000. Si usted ahorra $1.000 por mes, le tomará alrededor de 17 años para alcanzar su objetivo. Ya si usted invierte $1.000 por mes en un fondo de inversión que rinde 8% al año, usted puede alcanzar su objetivo en alrededor de 10 años.
 

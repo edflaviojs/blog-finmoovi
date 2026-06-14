@@ -55,7 +55,7 @@ La regla 50-30-20 es uno de los métodos más simples y efectivos para administr
 - [Fondo de emergencia](/es/glossario/es-reserva-de-emergencia) (3-6 meses de gastos)
 - Aportes para jubilación
 - Pagos extra de deudas
-- Inversiones
+- [Inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 - Metas financieras (casa, auto, educación)
 
 ## Cómo Adaptar la Regla

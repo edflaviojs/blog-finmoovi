@@ -24,7 +24,7 @@ Imagina que tienes un mes de R$ 8.000 y otro de R$ 3.000. Si tus gastos esencial
 ## [Control de Gastos](/es/posts/como-crear-[presupuesto](/es/posts/reducir-gastos-fijos-mensuales)-personal)
 Tener un control preciso de tus gastos es fundamental para cualquier plan financiero, especialmente para autónomos. Esto incluye desde cuentas de agua y luz hasta gastos con combustible y mantenimiento del vehículo, si aplica. Una herramienta útil puede ser una aplicación de [control de gastos](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal), que permite registrar y categorizar todos los gastos a lo largo del mes. Con esto, puedes identificar áreas donde estás gastando más de lo necesario y hacer ajustes.
 
-Por ejemplo, si notas que estás gastando R$ 1.500 por mes con comida fuera, puede ser una buena idea reducir ese gasto a R$ 1.000, cocinando en casa con más frecuencia. Esta [economía](/es/posts/ahorrando-en-la-cuenta-de-energia) de R$ 500 puede ser destinada a la reserva de emergencia o a inversiones.
+Por ejemplo, si notas que estás gastando R$ 1.500 por mes con comida fuera, puede ser una buena idea reducir ese gasto a R$ 1.000, cocinando en casa con más frecuencia. Esta [economía](/es/posts/ahorrando-en-la-cuenta-de-energia) de R$ 500 puede ser destinada a la reserva de emergencia o a [inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ![Controle de Despesas](/images/posts/organizar-financas-autonomo-1.svg)
 

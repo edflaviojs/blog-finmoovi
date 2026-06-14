@@ -23,7 +23,7 @@ A semana de 20/05/2026 a 27/05/2026 foi marcada por movimentações significativ
 
 O dólar americano fechou a semana em R$ 5.03, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, cotado em R$ 5.85, também manteve uma tendência de estabilidade, com variações mínimas ao longo da semana. Essa relativa calma nas taxas de câmbio é um alívio para os importadores e turistas, mas pode significar menos oportunidades de ganho para os investidores que apostam em variações cambiais.
 
-## Selic e Impacto nos Investimentos
+## Selic e Impacto nos [Investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 
 A taxa Selic, atualmente em 12,25% ao ano, foi mantida pelo Comitê de Política Monetária (Copom) do Banco Central. Essa decisão visa controlar a [inflação](/glossario/inflacao) e manter a estabilidade econômica. Para os investidores, a manutenção da Selic significa que os investimentos com taxas de [juros](/glossario/juros) prefixados, como os títulos do [Tesouro Direto](/glossario/tesouro-direto), continuarão a oferecer retornos atraentes, especialmente quando comparados a outras opções de investimento de baixo risco.
 

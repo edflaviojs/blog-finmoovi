@@ -58,7 +58,7 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-
 
 **O erro:** Guardar "o que sobra" no final do mês (spoiler: nunca sobra).
 
-**A solução:** Assim que o salário cai, transfira automaticamente 10-20% para investimentos. Viva com o que resta.
+**A solução:** Assim que o salário cai, transfira automaticamente 10-20% para [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-). Viva com o que resta.
 
 ## Resumo
 

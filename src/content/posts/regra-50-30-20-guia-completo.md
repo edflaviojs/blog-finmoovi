@@ -26,7 +26,7 @@ A ideia é simples: divida sua renda líquida em três partes:
 |-----------|-----------|----------|
 | Necessidades | 50% | Moradia, alimentação, transporte, saúde |
 | Desejos | 30% | Lazer, restaurantes, compras, hobbies |
-| Objetivos | 20% | [Poupança](/glossario/poupanca), investimentos, quitar dívidas |
+| Objetivos | 20% | [Poupança](/glossario/poupanca), [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), quitar dívidas |
 
 ## Exemplo prático: salário de R$ 5.000
 

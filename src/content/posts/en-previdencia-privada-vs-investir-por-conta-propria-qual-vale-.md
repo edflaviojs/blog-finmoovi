@@ -18,7 +18,7 @@ seo:
 
 ## Introduction
 
-When it comes to financial planning, one of the main concerns is ensuring a good retirement. Two popular options for achieving this goal are private pension and investing on your own. However, many people wonder: which is the best choice? In this article, we will explore the pros and cons of both options, creating a comparative table to help you decide.
+When it comes to [financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), one of the main concerns is ensuring a good retirement. Two popular options for achieving this goal are [private pension](/en/glossario/en-previdencia-privada) and investing on your own. However, many people wonder: which is the best choice? In this article, we will explore the pros and cons of both options, creating a comparative table to help you decide.
 
 ## How Private Pension Works
 
@@ -32,7 +32,7 @@ An example of how private pension works: imagine that you invest R$ 500 per mont
 
 ## How Investing on Your Own Works
 
-Investing on your own means that you choose the investments and manage your money yourself. This can include investments in stocks, bonds, investment funds, real estate, among others. This option offers more flexibility and control over investments, but also requires more knowledge and skill to manage risks.
+Investing on your own means that you choose the investments and manage your [money](/en/posts/30-day-rule-for-purchases) yourself. This can include investments in stocks, bonds, investment funds, real estate, among others. This option offers more flexibility and control over investments, but also requires more knowledge and skill to manage risks.
 
 An example of how investing on your own works: imagine that you invest R$ 1,000 per month in a stock investment fund, with an administration fee of 1.5% per year. If the fund has an average performance of 10% per year, you can have a patrimony of approximately R$ 300,000 after 10 years.
 
@@ -45,7 +45,7 @@ An example of how investing on your own works: imagine that you invest R$ 1,000 
 | **Risk** | Low risk, as investments are managed by professionals | High risk, as you are responsible for managing investments |
 | **Fees** | Administration and loading fees | Administration and brokerage fees |
 | **Return** | Fixed or variable returns, depending on the plan | Variable returns, depending on the performance of investments |
-| **Liquidity** | Low liquidity, as resources are blocked until retirement | High liquidity, as you can sell investments at any time |
+| **[Liquidity](/en/glossario/en-liquidez)** | Low liquidity, as resources are blocked until retirement | High liquidity, as you can sell investments at any time |
 
 ![Comparative Table](/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale--4.webp)
 
@@ -77,4 +77,4 @@ In summary, the choice between private pension and investing on your own depends
 
 Regardless of the choice, it is essential to remember that monitoring and tracking investments are fundamental to achieving financial objectives. FinMoovi is a useful tool for tracking your investments and having a clear view of your patrimony. With FinMoovi, you can have access to real-time information about your investments, in addition to receiving personalized alerts and notifications to help you make informed decisions.
 
-Remember that financial education is essential for making informed decisions about your investments. Additionally, it is essential to consult a financial professional before making any decision. With the help of FinMoovi and a financial professional, you can achieve your financial objectives and have a peaceful and secure retirement.
+Remember that [financial education](/en/glossario/en-educacao-financeira) is essential for making informed decisions about your investments. Additionally, it is essential to consult a financial professional before making any decision. With the help of FinMoovi and a financial professional, you can achieve your financial objectives and have a peaceful and secure retirement.

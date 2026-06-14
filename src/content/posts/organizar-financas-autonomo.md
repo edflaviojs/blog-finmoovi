@@ -24,7 +24,7 @@ Imagine que você tem um mês de R$ 8.000 e outro de R$ 3.000. Se suas despesas 
 ## Controle de Despesas
 Ter um controle preciso de suas despesas é fundamental para qualquer plano financeiro, especialmente para autônomos. Isso inclui desde contas de água e luz até gastos com combustível e manutenção do veículo, se aplicável. Uma ferramenta útil pode ser um aplicativo de controle de gastos, que permite registrar e categorizar todas as despesas ao longo do mês. Com isso, você pode identificar áreas onde está gastando mais do que o necessário e fazer ajustes.
 
-Por exemplo, se você percebe que está gastando R$ 1.500 por mês com alimentação fora, pode ser uma boa ideia reduzir esse gasto para R$ 1.000, cozinhando em casa mais frequentemente. Essa [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) de R$ 500 pode ser destinada à reserva de emergência ou a investimentos.
+Por exemplo, se você percebe que está gastando R$ 1.500 por mês com alimentação fora, pode ser uma boa ideia reduzir esse gasto para R$ 1.000, cozinhando em casa mais frequentemente. Essa [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) de R$ 500 pode ser destinada à reserva de emergência ou a [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ![Controle de Despesas](/images/posts/organizar-financas-autonomo-1.svg)
 
