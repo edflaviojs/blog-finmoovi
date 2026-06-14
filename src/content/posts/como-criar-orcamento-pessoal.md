@@ -18,7 +18,7 @@ seo:
 
 Criar um [orçamento pessoal](/glossario/orcamento-pessoal) não precisa ser complicado. Na verdade, com o método certo, você consegue montar o seu em menos de 30 minutos — e o melhor: um que realmente funciona no dia a dia.
 
-## Por que ter um orçamento pessoal?
+## Por que ter um [orçamento pessoal](/posts/metodo-50-30-20-para-orcamento)?
 
 Sem um orçamento, você está navegando às cegas. Pesquisas mostram que **78% dos brasileiros** que mantêm um orçamento conseguem economizar mais do que aqueles que não fazem nenhum controle.
 

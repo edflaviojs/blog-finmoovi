@@ -68,7 +68,7 @@ Si usted está usando una planilha para gestionar sus finanzas, es importante co
 * Gestión de cuentas y tarjetas de crédito
 * Automatización de tareas financieras
 * Alertas y notificaciones personalizados
-* Análisis de gastos y presupuesto
+* Análisis de gastos y [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal)
 
 ![Conclusión](/images/posts/migrando-da-planilha-para-um-app-financeiro-6.webp)
 

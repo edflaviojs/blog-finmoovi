@@ -34,7 +34,7 @@ Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para economiza
 Ter metas financeiras em comum é essencial para que você e seu parceiro trabalhem juntos em direção a um objetivo. Isso pode incluir economizar para uma casa própria, pagar dívidas ou criar um fundo de emergência. Vamos supor que vocês queiram economizar R$ 20.000 para uma entrada de casa. Isso significa que vocês precisam economizar R$ 1.667 por mês durante um ano.
 
 ## Desafios e Soluções
-É normal que surgam desafios ao gerenciar as finanças de casal. Por exemplo, um dos parceiros pode ter um gosto por compras caras, enquanto o outro é mais avesso a gastar. **Dica prática:** crie um sistema de "controle de gastos" para que vocês possam monitorar seus gastos e discutir sobre eles regularmente.
+É normal que surgam desafios ao gerenciar as finanças de casal. Por exemplo, um dos parceiros pode ter um gosto por compras caras, enquanto o outro é mais avesso a gastar. **Dica prática:** crie um sistema de "[controle de gastos](/posts/metodo-50-30-20-para-orcamento)" para que vocês possam monitorar seus gastos e discutir sobre eles regularmente.
 
 Outro desafio comum é a falta de comunicação sobre finanças. É importante que vocês tenham conversas regulares sobre como estão se sentindo em relação ao [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) e se há alguma coisa que precisam mudar.
 

@@ -44,7 +44,7 @@ De acordo com pesquisas, 70% das pessoas que usam planilhas desistem em 30 dias 
 
 ## Exemplos de Apps Financeiros
 Existem muitos apps financeiros disponíveis no mercado, cada um com suas próprias características e benefícios. Alguns exemplos incluem:
-* FinMoovi: um app financeiro moderno que permite que você gerencie suas finanças de forma eficaz e fácil.
+* [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas): um app financeiro moderno que permite que você gerencie suas finanças de forma eficaz e fácil.
 * Mobills: um app financeiro que permite que você gerencie suas contas e cartões de crédito de forma centralizada.
 * Organizze: um app financeiro que permite que você gerencie suas finanças e contas de forma personalizada.
 
@@ -56,7 +56,7 @@ Aqui está uma checklist para ajudá-lo a decidir se uma planilha ou um app fina
  + Você não precisa de mobilidade ou automação em suas finanças.
 * **App é para você se:**
  + Você precisa de consistência e mobilidade em suas finanças.
- + Você quer automatizar tarefas financeiras, como o pagamento de contas e a transferência de dinheiro.
+ + Você quer automatizar tarefas financeiras, como o pagamento de contas e a transferência de [dinheiro](/posts/criar-reserva-de-emergencia).
  + Você precisa de alertas e notificações para se manter no caminho certo.
 
 ![Exemplos de Apps Financeiros](/images/posts/migrando-da-planilha-para-um-app-financeiro-4.webp)

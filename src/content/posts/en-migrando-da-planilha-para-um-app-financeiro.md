@@ -16,7 +16,7 @@ seo:
   keywords: ["financial app","spreadsheet","personal finance","financial organization","FinMoovi","Mobills","Organizze","migrate spreadsheet app","start using financial app","leave spreadsheet"]
 ---
 
-## Introduction to Spreadsheets and Financial Apps
+## Introduction to Spreadsheets and [Financial Apps](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
 If you're one of the people who use spreadsheets to manage your finances, you're not alone. Many of us started using spreadsheets because of their flexibility, free access, and customization. However, as time passes, we may realize that the spreadsheet is no longer sufficient to meet our financial needs. In this article, we'll explore how migrating from a spreadsheet to a financial app can be a good option for you.
 
 ## Advantages of Spreadsheets

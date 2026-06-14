@@ -33,7 +33,7 @@ Definir un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-3
 Otro consejo importante es evitar gastos innecesarios. Pregúntese a sí mismo si realmente necesita esa compra. Si la respuesta es no, entonces no compre. Por ejemplo, si usted está en una tienda y ve un producto que cuesta $200, pero no lo necesita, es mejor no comprar. **Consejo práctico:** haga una regla de esperar 24 horas antes de comprar algo que no sea esencial. Esto puede ayudar a evitar compras impulsivas.
 
 ## Herramientas de control
-Existen varias herramientas que pueden ayudar a controlar los gastos en la tarjeta de crédito. Además de las aplicaciones de control de gastos, usted también puede usar recursos como el límite de gastos en la tarjeta de crédito o el pago recurrente de cuentas. Por ejemplo, si usted tiene una tarjeta de crédito con límite de $2.000, usted puede definir un límite menor, como $1.500, para evitar gastos excesivos.
+Existen varias herramientas que pueden ayudar a controlar los gastos en la tarjeta de crédito. Además de las aplicaciones de [control de gastos](/es/posts/metodo-50-30-20-para-orcamento), usted también puede usar recursos como el límite de gastos en la tarjeta de crédito o el pago recurrente de cuentas. Por ejemplo, si usted tiene una tarjeta de crédito con límite de $2.000, usted puede definir un límite menor, como $1.500, para evitar gastos excesivos.
 
 ![Evitando gastos innecesarios](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-4.webp)
 
