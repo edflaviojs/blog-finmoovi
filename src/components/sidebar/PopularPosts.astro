@@ -1,19 +1,22 @@
 ---
-const popularPosts = [
-  { title: 'Como criar um orçamento pessoal em 5 passos', href: '/posts/como-criar-orcamento-pessoal', i18n: 'popular.1' },
-  { title: 'Regra 50-30-20: guia completo', href: '/posts/regra-50-30-20-guia-completo', i18n: 'popular.2' },
-  { title: '7 erros financeiros que todo iniciante comete', href: '/posts/7-erros-financeiros-iniciante', i18n: 'popular.3' },
-  { title: 'Como controlar gastos com cartão de crédito', href: '/posts/controlar-gastos-cartao-credito', i18n: 'popular.4' },
-];
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts', ({ data }) =>
+  !data.draft && data.locale === 'pt'
+);
+
+const popularPosts = allPosts
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())
+  .slice(0, 5);
 ---
 
 <div class="sidebar-widget popular-widget">
-  <h4 class="widget-title" data-i18n="sidebar.popular">Mais Lidos</h4>
+  <h4 class="widget-title" data-i18n="sidebar.popular">Mais Recentes</h4>
   <ul class="popular-list">
     {popularPosts.map((post, i) => (
       <li class="popular-item">
         <span class="popular-number">{String(i + 1).padStart(2, '0')}</span>
-        <a href={post.href} class="popular-link" data-i18n={post.i18n}>{post.title}</a>
+        <a href={`/posts/${post.slug}`} class="popular-link">{post.data.title}</a>
       </li>
     ))}
   </ul>
