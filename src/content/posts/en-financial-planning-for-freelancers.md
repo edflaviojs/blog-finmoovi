@@ -17,7 +17,7 @@ seo:
 ---
 
 ## [Financial Planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) is Fundamental
-When you're a freelancer, you don't have a fixed salary every month. This can be a challenge, as you need to manage your [money](/en/posts/30-day-rule-for-purchases) effectively to ensure you have enough to pay your bills and invest in the future. Good financial planning is essential to achieve financial stability and avoid problems like running out of [money](/en/posts/creating-an-emergency-fund) to pay bills or being unable to achieve your financial goals.
+When you're a freelancer, you don't have a fixed salary every month. This can be a challenge, as you need to manage your [money](/en/posts/30-day-rule-for-purchases) effectively to ensure you have enough to pay your bills and invest in the future. Good [financial planning](/en/posts/how-to-create-personal-budget) is essential to achieve financial stability and avoid problems like running out of [money](/en/posts/creating-an-emergency-fund) to pay bills or being unable to achieve your financial goals.
 
 For example, imagine you're a freelancer who earns R$ 5,000 per month, but your monthly expenses are R$ 3,500, including rent, food, transportation, and other expenses. If you don't have a financial plan, you might end up spending all your [money](/en/posts/difference-between-investing-and-saving) without knowing where it's going. With a financial plan, you can identify areas where you can cut back on expenses and invest your [money](/en/posts/financial-planning-for-couples) more effectively.
 
@@ -33,7 +33,7 @@ For example, if you want to buy a house worth R$ 200,000, you'll need to save R$
 ## Managing Expenses
 Managing expenses is a crucial part of financial planning. This includes identifying areas where you can cut back on expenses and reduce unnecessary spending. A practical tip is to create a [budget](/en/posts/50-30-20-rule-complete-guide) and track all your expenses for a month. This will help identify areas where you can save [money](/en/posts/negotiating-discounts-on-fixed-bills).
 
-**Practical tip:** use a financial management app, like [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), to track your expenses and create a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)). With FinMoovi, you can categorize your expenses and identify areas where you can save money.
+**Practical tip:** use a financial management app, like [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), to track your expenses and create a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)). With FinMoovi, you can categorize your expenses and identify areas where you can save [money](/en/posts/avoid-impulse-purchases).
 
 ![Gerenciando gastos](/images/posts/planejamento-financeiro-para-autonomos-3.webp)
 

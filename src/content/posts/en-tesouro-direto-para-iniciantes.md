@@ -53,7 +53,7 @@ Although Tesouro Direto is considered a low-risk investment, there are some risk
 To mitigate these risks, it's essential to diversify your [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) and assess your risk profile before investing.
 
 ## Return Simulation
-Let's consider an example of a return simulation. If you invest R$1,000 in an LTN title with a 2-year term and 5% annual interest, you'll receive R$1,102.50 after maturity, considering annual compound interest.
+Let's consider an example of a return simulation. If you invest R$1,000 in an LTN title with a 2-year term and 5% annual interest, you'll receive R$1,102.50 after maturity, considering annual [compound interest](/en/glossario/en-juros-compostos).
 
 Here's a table with the return simulation:
 

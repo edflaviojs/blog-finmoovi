@@ -24,14 +24,14 @@ Por ejemplo, imagina que eres un freelancer que gana $5.000 por mes, pero tus ga
 ## Definiendo objetivos financieros
 Uno de los primeros pasos para crear un plan financiero es definir tus objetivos financieros. Esto puede incluir pagar deudas, ahorrar para la jubilación, comprar una casa o invertir en una empresa. Es importante ser específico y realista al definir tus objetivos, ya que esto ayudará a crear un plan financiero que sea alcanzable.
 
-Por ejemplo, si quieres comprar una casa valorada en $200.000, necesitarás ahorrar $20.000 por año durante 10 años. Esto significa que necesitarás poner de lado alrededor de $1.667 por mes. Con un plan financiero, puedes crear un cronograma de ahorro e inversión para alcanzar tu objetivo.
+Por ejemplo, si quieres comprar una casa valorada en $200.000, necesitarás ahorrar $20.000 por año durante 10 años. Esto significa que necesitarás poner de lado alrededor de $1.667 por mes. Con un plan financiero, puedes crear un cronograma de [ahorro](/es/posts/negociar-descuentos-en-cuentas-fijas) e inversión para alcanzar tu objetivo.
 
 ![Definindo objetivos financeiros](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
 
 
 
 ## Gestionando gastos
-Gestionar gastos es una parte importante del planeamiento financiero. Esto incluye identificar áreas donde puedes cortar gastos y reducir despesas innecesarias. Un consejo práctico es crear un [presupuesto](/es/posts/como-crear-presupuesto-personal) y registrar todos tus gastos durante un mes. Esto ayudará a identificar áreas donde puedes ahorrar [dinero](/es/posts/crear-reserva-de-emergencia).
+Gestionar gastos es una parte importante del planeamiento financiero. Esto incluye identificar áreas donde puedes cortar gastos y reducir despesas innecesarias. Un consejo práctico es crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) y registrar todos tus gastos durante un mes. Esto ayudará a identificar áreas donde puedes ahorrar [dinero](/es/posts/crear-reserva-de-emergencia).
 
 **Consejo práctico:** usa una aplicación de gestión de finanzas, como el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro), para registrar tus gastos y crear un presupuesto. Con el FinMoovi, puedes categorizar tus gastos e identificar áreas donde puedes ahorrar [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito).
 

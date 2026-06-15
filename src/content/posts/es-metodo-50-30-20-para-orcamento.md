@@ -37,7 +37,7 @@ Para empezar a aplicar el método 50-30-20, necesita tener una visión clara de 
 
 1. **Liste sus ingresos:** Anote todos sus ganancias mensuales, incluyendo salario, rendimientos de inversiones, etc.
 2. **Liste sus gastos:** Separe sus gastos en necesidades y deseos. Incluya aquí cuentas de servicios, compras de supermercado, transporte, ocio, etc.
-3. **Calcule el porcentaje:** Con base en sus ingresos y gastos, calcule el porcentaje que cada categoría ocupa de su presupuesto.
+3. **Calcule el porcentaje:** Con base en sus ingresos y gastos, calcule el porcentaje que cada categoría ocupa de su [presupuesto](/es/posts/como-crear-presupuesto-personal).
 4. **Ajuste sus gastos:** Si es necesario, haga ajustes para que su presupuesto se ajuste al método 50-30-20.
 
 ![Organizando sus Finanzas](/images/posts/metodo-50-30-20-para-orcamento-2.webp)
@@ -45,7 +45,7 @@ Para empezar a aplicar el método 50-30-20, necesita tener una visión clara de 
 
 
 ## Ahorrando e Inviertiendo
-La parte de la economía es crucial para su futuro financiero. Aquí, puede considerar diferentes opciones para aplicar su dinero.
+La parte de la [economía](/es/posts/ahorrando-en-las-compras-del-supermercado) es crucial para su futuro financiero. Aquí, puede considerar diferentes opciones para aplicar su dinero.
 
 - **Poupança:** Una buena opción para empezar a ahorrar, ya que es de bajo riesgo y fácil acceso.
 - **Inversiones:** Existen varias opciones de inversión, como [acciones](/es/glossario/es-acoes), fondos de inversión, títulos de deuda, etc. Es importante entender los riesgos y beneficios de cada opción antes de invertir.

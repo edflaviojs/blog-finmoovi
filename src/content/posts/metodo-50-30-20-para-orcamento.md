@@ -30,7 +30,7 @@ Vamos considerar um salário de R$ 4.000,00 por mês. Aplicando o método 50-30-
 | --- | --- | --- |
 | Necessidades | 50% | 2.000,00 |
 | Desejos | 30% | 1.200,00 |
-| Economia | 20% | 800,00 |
+| [Economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) | 20% | 800,00 |
 
 ## Organizando suas Finanças
 Para começar a aplicar o método 50-30-20, você precisa ter uma visão clara de suas finanças atuais. Isso inclui saber exatamente quanto você ganha, quanto gasta e onde gasta.
@@ -45,7 +45,7 @@ Para começar a aplicar o método 50-30-20, você precisa ter uma visão clara d
 
 
 ## Economizando e Investindo
-A parte da economia é crucial para o seu futuro financeiro. Aqui, você pode considerar diferentes opções para aplicar seu dinheiro.
+A parte da [economia](/posts/criar-reserva-de-emergencia) é crucial para o seu futuro financeiro. Aqui, você pode considerar diferentes opções para aplicar seu dinheiro.
 
 - **Poupança:** Uma boa opção para começar a economizar, pois é de baixo risco e fácil acesso.
 - **Investimentos:** Existem várias opções de investimento, como [ações](/glossario/acoes), fundos de investimento, títulos de dívida, etc. É importante entender os riscos e benefícios de cada opção antes de investir.

@@ -26,7 +26,7 @@ The dollar showed a slight increase throughout the week, but nothing that caused
 
 ## [Selic](/en/posts/quotes-week-4-may-2026) and Impact on Investments
 
-The [Selic rate](/en/glossario/en-selic), which is the [economy](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)'s base [interest](/en/glossario/en-juros) rate, continues to be an important factor for investments. With the Selic at 12.25% per year, fixed-income investments, such as treasury bonds, continue attracting the attention of many investors. However, it's important to remember that high interest rates can also increase financing costs for businesses and consumers, which can affect economic growth. Therefore, it's essential to keep an eye on economic news and adjust your investment strategy accordingly.
+The [Selic rate](/en/glossario/en-selic), which is the [economy](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)'s base [interest](/en/glossario/en-juros) rate, continues to be an important factor for investments. With the Selic at 12.25% per year, fixed-income investments, such as treasury bonds, continue attracting the attention of many investors. However, it's important to remember that high interest rates can also increase [financing](/en/glossario/en-financiamento) costs for businesses and consumers, which can affect economic growth. Therefore, it's essential to keep an eye on economic news and adjust your investment strategy accordingly.
 
 ## Practical Tip for Individual Investors
 
