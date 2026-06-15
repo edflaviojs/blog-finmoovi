@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Regra dos 30 Dias: O que é?
-A regra dos 30 dias é uma técnica simples e eficaz para evitar compras impulsivas e economizar [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz). A ideia é que, antes de comprar algo que não seja essencial, você deve esperar 30 dias. Isso ajuda a determinar se o item é realmente necessário ou se o desejo de comprá-lo foi apenas um impulso.
+A regra dos 30 dias é uma técnica simples e eficaz para evitar compras impulsivas e economizar [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz). A ideia é que, antes de comprar algo que não seja essencial, você deve esperar 30 dias. Isso ajuda a determinar se o item é realmente necessário ou se o desejo de comprá-lo foi apenas um impulso.
 
 Por exemplo, imagine que você está passeando pelo shopping e vê um relógio que custa R$ 500. Você pode pensar que é um relógio incrível e que precisa dele, mas se você esperar 30 dias, pode descobrir que não é tão necessário assim. Talvez você tenha um relógio em casa que ainda está funcionando bem, ou talvez você possa encontrar uma opção mais barata online.
 

@@ -40,7 +40,7 @@ Managing expenses is a crucial part of [financial planning](/en/posts/previdenci
 
 
 ## Investing in the Future
-Investing in the future is an essential part of financial planning. This can include investing in [stocks](/en/glossario/en-acoes), bonds, investment funds, or other investment options. It's crucial to research and understand the risks and benefits of each investment option before investing.
+Investing in the future is an essential part of [financial planning](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)). This can include investing in [stocks](/en/glossario/en-acoes), bonds, investment funds, or other investment options. It's crucial to research and understand the risks and benefits of each investment option before investing.
 
 For example, if you invest R$ 1,000 per month in an investment fund that yields 10% per year, you can have around R$ 200,000 in 10 years. This can be a good start for your retirement or to achieve other financial goals.
 

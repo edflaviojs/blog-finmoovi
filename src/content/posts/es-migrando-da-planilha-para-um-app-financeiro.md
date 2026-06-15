@@ -68,7 +68,7 @@ Si usted está usando una hoja de cálculo para gestionar sus finanzas, es impor
 * Gestión de cuentas y tarjetas de crédito
 * Automatización de tareas financieras
 * Alertas y notificaciones personalizados
-* Análisis de gastos y [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal)
+* Análisis de [gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro) y [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal)
 
 ![Conclusión](/images/posts/migrando-da-planilha-para-um-app-financeiro-6.webp)
 

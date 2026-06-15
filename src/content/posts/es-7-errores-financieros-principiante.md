@@ -18,7 +18,7 @@ seo:
 
 Empezar tu camino financiero es emocionante, pero es fácil caer en trampas comunes. Aquí están los 7 errores que casi todo principiante comete — y cómo evitarlos.
 
-## 1. No Rastrear Gastos
+## 1. No Rastrear [Gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro)
 
 El error #1: no saber a dónde va tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Sin rastreo, no puedes mejorar. Empieza registrando cada gasto durante 30 días.
 

@@ -37,7 +37,7 @@ To avoid impulse purchases, it's essential to identify the triggers that lead yo
 
 ## Creating an Action Plan
 Once you've identified your triggers, it's time to create an action plan to avoid impulse purchases. This may include:
-* Setting a budget for unnecessary purchases
+* Setting a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) for unnecessary purchases
 * Creating a shopping list before going to the supermarket or store
 * Avoiding buying things you don't need
 * Finding ways to have fun without spending [money](/en/posts/difference-between-investing-and-saving)

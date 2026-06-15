@@ -46,7 +46,7 @@ Aqui estão alguns exemplos de como você pode negociar descontos em contas fixa
 - Conta de TV: "Eu estou pagando R$150 por mês por minha conta de TV, mas eu vi que vocês estão oferecendo um plano idêntico por R$120 por mês para novos clientes. Posso ter um desconto para pagar R$130 por mês?"
 
 ## Comece hoje
-Agora que você sabe como negociar descontos em contas fixas, é hora de começar a economizar [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz). Lembre-se de que a negociação é uma habilidade que pode ser desenvolvida com a prática, então não tenha medo de tentar. **Dica prática:** Sempre mantenha um registro de suas negociações, incluindo os valores que você pagava antes e depois da negociação, para ajudar a monitorar suas economias.
+Agora que você sabe como negociar descontos em contas fixas, é hora de começar a economizar [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz). Lembre-se de que a negociação é uma habilidade que pode ser desenvolvida com a prática, então não tenha medo de tentar. **Dica prática:** Sempre mantenha um registro de suas negociações, incluindo os valores que você pagava antes e depois da negociação, para ajudar a monitorar suas economias.
 
 ![Exemplos de Negociação](/images/posts/negociar-descontos-em-contas-fixas-4.svg)
 

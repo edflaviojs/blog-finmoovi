@@ -16,7 +16,7 @@ seo:
   keywords: ["personal budget","50-30-20 method","Brazilian salary","personal finance","expense control","economy","50 30 20 rule","how to divide salary","budget method"]
 ---
 
-## Understanding the 50-30-20 Method
+## Understanding the [50-30-20 Method](/en/posts/metodo-50-30-20-para-salario-brasileiro)
 The 50-30-20 method is a simple and effective strategy for managing your finances. The idea is to divide your salary into three main categories: needs, desires, and savings. With this, you can have better control over where your [money](/en/posts/30-day-rule-for-purchases) is being spent and how it can be optimized.
 
 - **Needs (50%):** Includes essential expenses such as rent, food, water, electricity, internet, transportation, and other basic expenses.
@@ -69,7 +69,7 @@ It's essential to maintain a balance between what you need and what you want. He
 
 
 ## Start with 5 minutes a day
-To keep your budget under control, you don't need to dedicate hours every day. With just 5 minutes a day, you can:
+To keep your [budget](/en/posts/how-to-create-personal-budget) under control, you don't need to dedicate hours every day. With just 5 minutes a day, you can:
 - Check your bank accounts to ensure there are no unauthorized expenses.
 - Note down new expenses or income.
 - Review your budget to ensure it's within the planned.

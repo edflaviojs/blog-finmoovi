@@ -37,7 +37,7 @@ No entanto, apesar dessas vantagens, as planilhas podem ter algumas desvantagens
 Um app financeiro pode ser uma boa opção para você se:
 * Você precisa de consistência: os apps financeiros podem ajudá-lo a manter suas finanças atualizadas e consistentes, mesmo quando você está ocupado.
 * Você precisa de mobilidade: os apps financeiros permitem que você acesse e atualize suas finanças de qualquer lugar, a qualquer momento.
-* Você precisa de automação: os apps financeiros podem automatizar tarefas financeiras, como o pagamento de contas e a transferência de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz).
+* Você precisa de automação: os apps financeiros podem automatizar tarefas financeiras, como o pagamento de contas e a transferência de [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz).
 * Você precisa de voz: os apps financeiros podem fornecer alertas e notificações para ajudá-lo a se manter no caminho certo.
 
 De acordo com pesquisas, 70% das pessoas que usam planilhas desistem em 30 dias por falta de consistência. Isso ocorre porque as planilhas podem ser difíceis de manter atualizadas e consistentes, especialmente se você tiver uma vida ocupada.

@@ -20,7 +20,7 @@ The 50-30-20 rule is one of the simplest and most effective methods for managing
 
 ## How the 50-30-20 Rule Works
 
-- **50% — Needs:** Essential expenses you can't avoid
+- **50% — Needs:** Essential [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) you can't avoid
 - **30% — Wants:** Things you enjoy but don't strictly need
 - **20% — Savings & Debt:** Building your future
 

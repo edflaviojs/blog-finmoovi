@@ -16,7 +16,7 @@ seo:
   keywords: ["presupuesto personal","método 50-30-20","salario brasileño","finanzas personales","control de gastos","economía","regla 50 30 20","como dividir salario","método presupuesto"]
 ---
 
-## Entendiendo el Método 50-30-20
+## Entendiendo el [Método 50-30-20](/es/posts/metodo-50-30-20-para-salario-brasileiro)
 El método 50-30-20 es una estrategia simple y eficaz para gestionar sus finanzas. La idea es dividir su salario en tres categorías principales: necesidades, deseos y [economía](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Con esto, puede tener un control mejor sobre dónde su [dinero](/es/posts/crear-reserva-de-emergencia) está siendo gastado y cómo puede ser optimizado.
 
 - **Necesidades (50%):** Incluye gastos esenciales como alquiler, comida, cuentas de agua, luz, internet, transporte y otros gastos básicos.
@@ -74,4 +74,4 @@ Para mantener su presupuesto bajo control, no es necesario dedicar horas todos l
 - Anotar nuevos gastos o ingresos.
 - Revisar su presupuesto para garantizar que está dentro del planeado.
 
-**¿Quiere automatizar este control? [Pruebe FinMoovi gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quiere automatizar este control? [Pruebe [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

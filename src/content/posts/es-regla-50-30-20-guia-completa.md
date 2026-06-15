@@ -20,7 +20,7 @@ La regla 50-30-20 es uno de los métodos más simples y efectivos para administr
 
 ## Cómo Funciona la Regla 50-30-20
 
-- **50% — Necesidades:** Gastos esenciales que no puedes evitar
+- **50% — Necesidades:** [Gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro) esenciales que no puedes evitar
 - **30% — Deseos:** Cosas que disfrutas pero no necesitas estrictamente
 - **20% — [Ahorro](/es/posts/regla-de-los-30-dias-para-compras) y Deudas:** Construyendo tu futuro
 

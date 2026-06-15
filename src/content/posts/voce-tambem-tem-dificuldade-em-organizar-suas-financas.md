@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Você não está sozinho
-Você já se sentiu perdido ao tentar organizar suas finanças? Com tantas contas para pagar, despesas para registrar e objetivos financeiros para alcançar, é fácil se sentir sobrecarregado. Eu entendo, pois já passei por isso. A falta de tempo e conhecimento sobre como categorizar os gastos é um problema comum que muitas pessoas enfrentam no dia a dia.
+Você já se sentiu perdido ao tentar organizar suas finanças? Com tantas contas para pagar, despesas para registrar e objetivos financeiros para alcançar, é fácil se sentir sobrecarregado. Eu entendo, pois já passei por isso. A falta de tempo e conhecimento sobre como categorizar os [gastos](/posts/metodo-50-30-20-para-salario-brasileiro) é um problema comum que muitas pessoas enfrentam no dia a dia.
 
 Imagine que você está sempre viajando a trabalho, precisa gerenciar suas despesas em diferentes moedas, como dólares e euros, além do real. É como se você estivesse tentando resolver um quebra-cabeça sem ter todas as peças. Você não sabe onde começar, e o tempo é um recurso escasso. É comum se sentir estressado e ansioso ao pensar em todas as contas que precisam ser pagas e despesas que precisam ser registradas.
 

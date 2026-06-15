@@ -18,7 +18,7 @@ seo:
 
 Starting your financial journey is exciting, but it's easy to fall into common traps. Here are the 7 mistakes almost every beginner makes — and how to avoid them.
 
-## 1. Not Tracking Expenses
+## 1. Not Tracking [Expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro)
 
 The #1 mistake: not knowing where your [money](/en/posts/30-day-rule-for-purchases) goes. Without tracking, you can't improve. Start by recording every expense for 30 days.
 

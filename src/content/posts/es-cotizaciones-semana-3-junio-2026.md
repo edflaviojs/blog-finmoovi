@@ -20,7 +20,7 @@ seo:
 
 La semana del 8 al 15 de junio de 2026 ha sido de gran interés para los inversores brasileños, con movimientos significativos en las principales divisas y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del dólar y euro, el impacto de la [tasa Selic](/es/glossario/es-selic) en las inversiones y ofreceremos [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
 
-![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-[cotizaciones](/es/posts/cotizaciones-semana-1-junio-2026)-semana-3-junio-2026-inline-1.webp)
+![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-4-mayo-2026)-semana-1-junio-2026)-semana-3-junio-2026-inline-1.webp)
 
 
 
@@ -38,7 +38,7 @@ La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/5-
 
 ## Consejo Práctico para el Inversor Individual
 
-Para los inversores individuales, es crucial mantener una visión a largo plazo y no dejar que las fluctuaciones diarias del mercado los distraigan de sus objetivos financieros. Una estrategia efectiva es diversificar la cartera, incluyendo inversiones en diferentes clases de activos y monedas. Herramientas como FinMoovi pueden ser de gran ayuda, ya que permiten a los inversores seguir y gestionar sus inversiones en múltiples monedas de manera eficiente. Esto puede ser especialmente útil en un entorno con fluctuaciones en las divisas, como el que estamos experimentando actualmente.
+Para los inversores individuales, es crucial mantener una visión a largo plazo y no dejar que las fluctuaciones diarias del mercado los distraigan de sus objetivos financieros. Una estrategia efectiva es diversificar la cartera, incluyendo inversiones en diferentes clases de activos y monedas. Herramientas como [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) pueden ser de gran ayuda, ya que permiten a los inversores seguir y gestionar sus inversiones en múltiples monedas de manera eficiente. Esto puede ser especialmente útil en un entorno con fluctuaciones en las divisas, como el que estamos experimentando actualmente.
 
 ## Qué Esperar para la Próxima Semana
 

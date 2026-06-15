@@ -53,4 +53,4 @@ Don't wait any longer to start using the 30-day rule. Today is the day to start 
 
 
 ---
-**Tired of spreadsheets? [Test [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) and control your expenses with AI, multi-currency, and reports that make sense.**
+**Tired of spreadsheets? [Test [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) and control your [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) with AI, multi-currency, and reports that make sense.**

@@ -22,7 +22,7 @@ Cuando estás en una relación, es importante que tú y tu pareja estén alinead
 Una buena idea es crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal) juntos, considerando todos los gastos mensuales como alquiler, comida, transporte, etc. Por ejemplo, si pagan R$ 2,500 de alquiler y R$ 1,000 de comida al mes, ya son R$ 3,500 en gastos fijos. También es importante considerar gastos variables como entretenimiento y ocio.
 
 ## Gastos y Ahorros
-Es fundamental que tú y tu pareja tengan una conversación abierta sobre gastos y ahorros. **Consejo práctico:** crea una categoría de "[dinero](/es/posts/organizar-finanzas-autonomo) para divertirse" en tu [presupuesto](/es/posts/como-crear-presupuesto-personal) para que puedan gastar un poco de [dinero](/es/posts/planeamiento-financiero-para-parejas) en cosas que disfrutan, sin sentirse culpables. Por ejemplo, pueden decidir gastar R$ 500 al mes en restaurantes y cines.
+Es fundamental que tú y tu pareja tengan una conversación abierta sobre gastos y ahorros. **Consejo práctico:** crea una categoría de "[dinero](/es/posts/organizar-finanzas-autonomo) para divertirse" en tu [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) para que puedan gastar un poco de [dinero](/es/posts/planeamiento-financiero-para-parejas) en cosas que disfrutan, sin sentirse culpables. Por ejemplo, pueden decidir gastar R$ 500 al mes en restaurantes y cines.
 
 Aquí tienes algunos [consejos](/es/posts/7-errores-financieros-principiante) para [ahorrar dinero](/es/posts/reducir-gastos-fijos-mensuales):
 * Recorta gastos innecesarios, como suscripciones a servicios que no usas

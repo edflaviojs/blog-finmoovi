@@ -16,7 +16,7 @@ seo:
   keywords: ["erros financeiros", "finanças para iniciantes", "como economizar", "controle financeiro"]
 ---
 
-Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) — especialmente no começo. A boa notícia é que a maioria deles é evitável quando você sabe o que procurar.
+Todo mundo comete erros com [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz) — especialmente no começo. A boa notícia é que a maioria deles é evitável quando você sabe o que procurar.
 
 ## 1. Não ter uma [reserva de emergência](/glossario/reserva-de-emergencia)
 

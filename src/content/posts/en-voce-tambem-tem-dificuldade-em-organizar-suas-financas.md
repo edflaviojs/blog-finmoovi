@@ -17,7 +17,7 @@ seo:
 ---
 
 ## You're Not Alone
-Have you ever felt lost when trying to organize your finances? With so many bills to pay, expenses to record, and financial goals to achieve, it's easy to feel overwhelmed. I understand, because I've been there too. The lack of time and knowledge about how to categorize expenses is a common problem that many people face in their daily lives.
+Have you ever felt lost when trying to organize your finances? With so many bills to pay, [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) to record, and financial goals to achieve, it's easy to feel overwhelmed. I understand, because I've been there too. The lack of time and knowledge about how to categorize expenses is a common problem that many people face in their daily lives.
 
 Imagine you're always traveling for work, and you need to manage your expenses in different currencies, such as dollars and euros, in addition to your local currency. It's like trying to solve a puzzle without having all the pieces. You don't know where to start, and time is a scarce resource. It's common to feel stressed and anxious when thinking about all the bills that need to be paid and expenses that need to be recorded.
 

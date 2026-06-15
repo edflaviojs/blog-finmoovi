@@ -22,7 +22,7 @@ Crear un [presupuesto personal](/es/glossario/es-orcamento-pessoal) no tiene que
 
 Sin un [presupuesto](/es/posts/reducir-gastos-fijos-mensuales), tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) simplemente desaparece. Estudios muestran que las personas que controlan sus gastos ahorran en promedio un 20% más que quienes no lo hacen.
 
-Un buen presupuesto te ayuda a:
+Un buen [presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro) te ayuda a:
 - Saber exactamente a dónde va tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado)
 - Identificar gastos innecesarios
 - Definir y alcanzar metas financieras

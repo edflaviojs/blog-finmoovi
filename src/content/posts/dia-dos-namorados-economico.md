@@ -35,7 +35,7 @@ Um presente não precisa ser caro para ser significativo. Aqui estão algumas di
 - **Passeio ao Ar Livre**: Planeje um passeio em um parque ou na praia. Leve um piquenique e aproveite a natureza juntos. Custo: R$ 20 a R$ 50.
 
 ## Gerenciando as Finanças com o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
-Para ajudar a gerenciar suas finanças e manter-se dentro do orçamento, o app [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) pode ser uma ferramenta útil. Com ele, você pode acompanhar suas despesas, definir metas financeiras e receber alertas para não ultrapassar o limite estabelecido.
+Para ajudar a gerenciar suas finanças e manter-se dentro do [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro), o app [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) pode ser uma ferramenta útil. Com ele, você pode acompanhar suas despesas, definir metas financeiras e receber alertas para não ultrapassar o limite estabelecido.
 
 ## Comemorando com Criatividade
 A criatividade é a chave para um Dia dos Namorados econômico e memorável. Aqui estão algumas ideias para comemorar com estilo sem gastar muito:

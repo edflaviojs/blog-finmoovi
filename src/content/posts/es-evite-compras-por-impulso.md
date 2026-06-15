@@ -47,7 +47,7 @@ Por ejemplo, si te gusta leer, en lugar de comprar libros, puedes ir a la biblio
 ## Registra Tus Gastos
 Una de las principales razones por las que las personas pierden el control de sus gastos es la falta de registro. Es importante registrar todos tus gastos, incluyendo los pequeños, para tener una idea clara de dónde está yendo tu [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito). Esto puede hacerse con una aplicación de gestión financiera, como el FinMoovi, que te permite registrar tus gastos y crear un presupuesto personalizado.
 
-**Consejo práctico:** Registra todos tus gastos durante un mes para tener una idea clara de dónde está yendo tu dinero. Esto puede ayudarte a identificar áreas en las que puedes cortar gastos y ahorrar dinero.
+**Consejo práctico:** Registra todos tus gastos durante un mes para tener una idea clara de dónde está yendo tu [dinero](/es/posts/crear-reserva-de-emergencia). Esto puede ayudarte a identificar áreas en las que puedes cortar gastos y ahorrar [dinero](/es/posts/diferencia-entre-invertir-y-ahorrar).
 
 ![Registra Tus Gastos](/images/posts/evite-compras-por-impulso-4.webp)
 

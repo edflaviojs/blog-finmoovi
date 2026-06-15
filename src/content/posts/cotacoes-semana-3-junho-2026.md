@@ -26,7 +26,7 @@ A semana de 08/06/2026 a 15/06/2026 foi marcada por movimentos interessantes no 
 
 ## [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana
 
-O dólar americano (USD) fechou a semana em R$ 5.08, apresentando uma leve estabilidade em relação ao real. Já o euro (EUR) alcançou R$ 5.88, mostrando uma tendência de valorização em relação à [moeda](/glossario/moeda) brasileira. Esses movimentos são importantes para os investidores que têm exposição a ativos em moedas estrangeiras, pois podem impactar o valor de seus investimentos.
+O [dólar](/posts/cotacoes-semana-4-maio-2026) americano (USD) fechou a semana em R$ 5.08, apresentando uma leve estabilidade em relação ao real. Já o euro (EUR) alcançou R$ 5.88, mostrando uma tendência de valorização em relação à [moeda](/glossario/moeda) brasileira. Esses movimentos são importantes para os investidores que têm exposição a ativos em moedas estrangeiras, pois podem impactar o valor de seus investimentos.
 
 ## [Selic](/glossario/selic) e Impacto nos Investimentos
 
@@ -48,5 +48,5 @@ Em resumo, a semana foi marcada por estabilidade no dólar e valorização do eu
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz).**
+**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz).**
 

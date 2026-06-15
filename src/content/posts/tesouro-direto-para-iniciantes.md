@@ -24,7 +24,7 @@ Por exemplo, se você investir R$1.000 em um título LTN com prazo de 1 ano e ju
 ## Vantagens do Tesouro Direto
 Uma das principais vantagens do Tesouro Direto é a segurança. Como os títulos são emitidos pelo governo, o risco de default (ou inadimplência) é muito baixo. Além disso, os juros são pré-definidos, o que significa que você sabe exatamente quanto vai receber ao final do prazo.
 
-Outra vantagem é a [liquidez](/glossario/liquidez). Você pode resgatar seus títulos antes do vencimento, embora possa haver perda de juros. Isso é útil se você precisar do [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) antes do prazo.
+Outra vantagem é a [liquidez](/glossario/liquidez). Você pode resgatar seus títulos antes do vencimento, embora possa haver perda de juros. Isso é útil se você precisar do [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz) antes do prazo.
 
 ![Vantagens do Tesouro Direto](/images/posts/tesouro-direto-para-iniciantes-2.webp)
 

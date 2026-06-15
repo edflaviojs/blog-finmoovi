@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Understanding Fixed Bills
-You probably have a list of fixed bills that you need to pay every month, such as rent, internet, TV, and phone services, as well as water and electricity bills. These expenses can consume a large part of your salary, which can range from R$3,000 to R$8,000, depending on your profession and location. It's essential to understand that many of these bills can be negotiated to obtain significant discounts.
+You probably have a list of fixed bills that you need to pay every month, such as rent, internet, TV, and phone services, as well as water and electricity bills. These [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) can consume a large part of your salary, which can range from R$3,000 to R$8,000, depending on your profession and location. It's essential to understand that many of these bills can be negotiated to obtain significant discounts.
 
 For example, if you pay R$150 per month for a TV and internet package, and you manage to negotiate a 10% discount, you can save R$15 per month. This may not seem like much, but over the course of a year, you can save R$180. **Practical tip:** Always ask to speak with a supervisor or manager when negotiating with a service company, as they have more power to offer discounts.
 

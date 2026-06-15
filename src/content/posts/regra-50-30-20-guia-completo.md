@@ -52,7 +52,7 @@ A ideia é simples: divida sua renda líquida em três partes:
 No Brasil, muitas vezes o aluguel sozinho já consome mais de 30% da renda. Nesse caso, adapte:
 
 - Se moradia passa de 30%, reduza proporcionalmente os desejos
-- Priorize montar a reserva de emergência (3-6 meses de gastos)
+- Priorize montar a reserva de emergência (3-6 meses de [gastos](/posts/metodo-50-30-20-para-salario-brasileiro))
 - Comece com 10% para objetivos e aumente gradualmente
 
 ## Como acompanhar

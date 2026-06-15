@@ -40,7 +40,7 @@ There are several tools that can help control credit card expenses. In addition 
 
 
 ## Start Today
-Don't wait any longer to start controlling your credit card expenses. With a little discipline and the right tips, you can save [money](/en/posts/financial-planning-for-couples) and avoid debt. Remember that [expense control](/en/posts/how-to-create-personal-budget) is an ongoing process, and it's essential to regularly review your consumption habits.
+Don't wait any longer to start controlling your credit card expenses. With a little discipline and the right tips, you can save [money](/en/posts/financial-planning-for-couples) and avoid debt. Remember that [expense control](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) is an ongoing process, and it's essential to regularly review your consumption habits.
 
 ![Comece hoje](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-6.webp)
 

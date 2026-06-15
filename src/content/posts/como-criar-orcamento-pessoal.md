@@ -20,7 +20,7 @@ Criar um [orçamento pessoal](/glossario/orcamento-pessoal) não precisa ser com
 
 ## Por que ter um [orçamento pessoal](/posts/metodo-50-30-20-para-orcamento)?
 
-Sem um orçamento, você está navegando às cegas. Pesquisas mostram que **78% dos brasileiros** que mantêm um orçamento conseguem economizar mais do que aqueles que não fazem nenhum controle.
+Sem um [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro), você está navegando às cegas. Pesquisas mostram que **78% dos brasileiros** que mantêm um orçamento conseguem economizar mais do que aqueles que não fazem nenhum controle.
 
 Um bom orçamento te ajuda a:
 - Saber exatamente para onde vai seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz)

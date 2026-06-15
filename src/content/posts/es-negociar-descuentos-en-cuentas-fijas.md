@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Entendiendo las Cuentas Fijas
-Probablemente tienes una lista de cuentas fijas que debes pagar todos los meses, como alquiler, servicios de internet, TV y teléfono, además de cuentas de agua y luz. Estos gastos pueden consumir una gran parte de tu salario, que puede variar de R$3.000 a R$8.000, dependiendo de tu profesión y ubicación. Es importante entender que muchas de estas cuentas pueden ser negociadas para obtener descuentos significativos.
+Probablemente tienes una lista de cuentas fijas que debes pagar todos los meses, como alquiler, servicios de internet, TV y teléfono, además de cuentas de agua y luz. Estos [gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro) pueden consumir una gran parte de tu salario, que puede variar de R$3.000 a R$8.000, dependiendo de tu profesión y ubicación. Es importante entender que muchas de estas cuentas pueden ser negociadas para obtener descuentos significativos.
 
 Por ejemplo, si pagas R$150 por mes por un paquete de TV e internet, y logras negociar un descuento del 10%, puedes ahorrar R$15 por mes. Esto puede no parecer mucho, pero a lo largo de un año, puedes ahorrar R$180. **Consejo práctico:** Siempre pide hablar con un supervisor o gerente cuando estés negociando con una empresa de servicios, ya que ellos tienen más poder para ofrecer descuentos.
 
