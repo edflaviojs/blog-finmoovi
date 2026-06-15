@@ -31,7 +31,7 @@ For example, if you want to buy a house worth R$ 200,000, you'll need to save R$
 
 
 ## Managing Expenses
-Managing expenses is a crucial part of financial planning. This includes identifying areas where you can cut back on expenses and reduce unnecessary spending. A practical tip is to create a [budget](/en/posts/50-30-20-rule-complete-guide) and track all your expenses for a month. This will help identify areas where you can save [money](/en/posts/negotiating-discounts-on-fixed-bills).
+Managing expenses is a crucial part of [financial planning](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-). This includes identifying areas where you can cut back on expenses and reduce unnecessary spending. A practical tip is to create a [budget](/en/posts/50-30-20-rule-complete-guide) and track all your expenses for a month. This will help identify areas where you can save [money](/en/posts/negotiating-discounts-on-fixed-bills).
 
 **Practical tip:** use a financial management app, like [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), to track your expenses and create a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)). With FinMoovi, you can categorize your expenses and identify areas where you can save [money](/en/posts/avoid-impulse-purchases).
 
@@ -53,4 +53,4 @@ There's no better time to start planning your finances than now. With a financia
 
 ---
 
-**Ready to organize your finances? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to organize your finances? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/organizing-finances-as-a-freelancer) is going.**

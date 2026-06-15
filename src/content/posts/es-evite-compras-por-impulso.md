@@ -29,7 +29,7 @@ Para evitar compras por impulso, es importante identificar los gatillos que te l
 * La sensación de que te mereces un regalo
 * El aburrimiento o la falta de distracción
 
-**Consejo práctico:** Haz una lista de tus gatillos y encuentra maneras de evitarlos. Por ejemplo, si sabes que siempre compras cosas innecesarias cuando estás en un centro comercial, intenta evitar ir allí o lleva solo el dinero necesario para las compras que necesitas hacer.
+**Consejo práctico:** Haz una lista de tus gatillos y encuentra maneras de evitarlos. Por ejemplo, si sabes que siempre compras cosas innecesarias cuando estás en un centro comercial, intenta evitar ir allí o lleva solo el [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) necesario para las compras que necesitas hacer.
 
 ![Identificando los Gatillos](/images/posts/evite-compras-por-impulso-2.webp)
 
@@ -40,7 +40,7 @@ Una vez que hayas identificado los gatillos, es hora de crear un plan de acción
 * Definir un presupuesto para compras innecesarias
 * Crear una lista de compras antes de ir al supermercado o tienda
 * Evitar comprar cosas que no necesitas
-* Encontrar maneras de divertirte sin gastar dinero
+* Encontrar maneras de divertirte sin gastar [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado)
 
 Por ejemplo, si te gusta leer, en lugar de comprar libros, puedes ir a la biblioteca o descargar aplicaciones de lectura que ofrecen libros gratuitos. Si te gusta cocinar, en lugar de comprar ingredientes caros, puedes buscar recetas que utilicen ingredientes más accesibles.
 

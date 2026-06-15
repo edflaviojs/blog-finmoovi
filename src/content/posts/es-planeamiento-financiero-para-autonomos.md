@@ -33,7 +33,7 @@ Por ejemplo, si quieres comprar una casa valorada en $200.000, necesitarás ahor
 ## Gestionando gastos
 Gestionar gastos es una parte importante del planeamiento financiero. Esto incluye identificar áreas donde puedes cortar gastos y reducir despesas innecesarias. Un consejo práctico es crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) y registrar todos tus gastos durante un mes. Esto ayudará a identificar áreas donde puedes ahorrar [dinero](/es/posts/crear-reserva-de-emergencia).
 
-**Consejo práctico:** usa una aplicación de gestión de finanzas, como el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro), para registrar tus gastos y crear un presupuesto. Con el FinMoovi, puedes categorizar tus gastos e identificar áreas donde puedes ahorrar [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito).
+**Consejo práctico:** usa una aplicación de gestión de finanzas, como el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro), para registrar tus gastos y crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/reducir-gastos-fijos-mensuales)-personal). Con el FinMoovi, puedes categorizar tus gastos e identificar áreas donde puedes ahorrar [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito).
 
 ![Gestionando gastos](/images/posts/planejamento-financeiro-para-autonomos-3.webp)
 

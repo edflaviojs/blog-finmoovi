@@ -21,7 +21,7 @@ The 50-30-20 method is a simple and effective strategy for managing your finance
 
 - **Needs (50%):** Includes essential expenses such as rent, food, water, electricity, internet, transportation, and other basic expenses.
 - **Desires (30%):** Here you include expenses that are not essential, but that improve your quality of life, such as entertainment, travel, hobbies, and personal purchases.
-- **Savings (20%):** This part of your salary should be destined for savings, investments, debt repayment, and emergency funds.
+- **Savings (20%):** This part of your salary should be destined for savings, [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), debt repayment, and emergency funds.
 
 ### Practical Example
 Let's consider a salary of R$ 4,000.00 per month. Applying the 50-30-20 method, we would have:
@@ -38,7 +38,7 @@ To start applying the 50-30-20 method, you need to have a clear view of your cur
 1. **List your income:** Note down all your monthly earnings, including salary, investment returns, etc.
 2. **List your expenses:** Separate your expenses into needs and desires. Include here service bills, supermarket purchases, transportation, leisure, etc.
 3. **Calculate the percentage:** Based on your income and expenses, calculate the percentage that each category occupies in your [budget](/en/posts/50-30-20-rule-complete-guide).
-4. **Adjust your expenses:** If necessary, make adjustments so that your [budget](/en/posts/how-to-create-personal-budget) fits the 50-30-20 method.
+4. **Adjust your expenses:** If necessary, make adjustments so that your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) fits the 50-30-20 method.
 
 ![Organizando suas Finanças](/images/posts/metodo-50-30-20-para-orcamento-2.webp)
 

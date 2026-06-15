@@ -22,7 +22,7 @@ A semana de 20/05/2026 a 27/05/2026 foi marcada por movimentações significativ
 
 ## [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana
 
-O dólar americano fechou a semana em R$ 5.03, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, cotado em R$ 5.85, também manteve uma tendência de estabilidade, com variações mínimas ao longo da semana. Essa relativa calma nas taxas de câmbio é um alívio para os importadores e turistas, mas pode significar menos oportunidades de ganho para os investidores que apostam em variações cambiais.
+O [dólar](/posts/cotacoes-semana-3-junho-2026) americano fechou a semana em R$ 5.03, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, cotado em R$ 5.85, também manteve uma tendência de estabilidade, com variações mínimas ao longo da semana. Essa relativa calma nas taxas de câmbio é um alívio para os importadores e turistas, mas pode significar menos oportunidades de ganho para os investidores que apostam em variações cambiais.
 
 ## Selic e Impacto nos [Investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 

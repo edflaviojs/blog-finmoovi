@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Entendiendo el Método 50-30-20
-El método 50-30-20 es una estrategia simple y eficaz para gestionar sus finanzas. La idea es dividir su salario en tres categorías principales: necesidades, deseos y [economía](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Con esto, puede tener un control mejor sobre dónde su dinero está siendo gastado y cómo puede ser optimizado.
+El método 50-30-20 es una estrategia simple y eficaz para gestionar sus finanzas. La idea es dividir su salario en tres categorías principales: necesidades, deseos y [economía](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Con esto, puede tener un control mejor sobre dónde su [dinero](/es/posts/crear-reserva-de-emergencia) está siendo gastado y cómo puede ser optimizado.
 
 - **Necesidades (50%):** Incluye gastos esenciales como alquiler, comida, cuentas de agua, luz, internet, transporte y otros gastos básicos.
 - **Deseos (30%):** Aquí incluye gastos que no son esenciales, pero que mejoran su calidad de vida, como entretenimiento, viajes, hobbies y compras personales.
@@ -55,7 +55,7 @@ La parte de la [economía](/es/posts/ahorrando-en-las-compras-del-supermercado) 
 
 
 
-**Consejo práctico:** Comience pequeño. Aunque no pueda alcanzar los 20% de economía de inmediato, empezar con 10% o 5% ya es un gran paso. Aumente gradualmente a medida que se ajusta al nuevo presupuesto.
+**Consejo práctico:** Comience pequeño. Aunque no pueda alcanzar los 20% de [economía](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito) de inmediato, empezar con 10% o 5% ya es un gran paso. Aumente gradualmente a medida que se ajusta al nuevo presupuesto.
 
 ## Gestionando Deseos y Necesidades
 Es importante mantener un equilibrio entre lo que necesita y lo que desea. Aquí están algunas [consejos](/es/posts/7-errores-financieros-principiante) para gestionar mejor estas categorías:

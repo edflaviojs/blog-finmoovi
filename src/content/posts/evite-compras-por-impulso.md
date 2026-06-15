@@ -17,9 +17,9 @@ seo:
 ---
 
 ## Entendendo o Impulso
-Quando você está em uma loja ou navegando online, é fácil se deixar levar pelo impulso de comprar algo que não precisa. Isso pode acontecer por várias razões, como a influência da publicidade, a pressão dos amigos ou a sensação de que você merece um presente. Mas, no final do mês, essas compras por impulso podem somar e afetar seu orçamento.
+Quando você está em uma loja ou navegando online, é fácil se deixar levar pelo impulso de comprar algo que não precisa. Isso pode acontecer por várias razões, como a influência da publicidade, a pressão dos amigos ou a sensação de que você merece um presente. Mas, no final do mês, essas compras por impulso podem somar e afetar seu [orçamento](/posts/como-criar-orcamento-pessoal).
 
-Imagine que você ganha R$ 5.000 por mês e gasta R$ 1.500 com aluguel, R$ 800 com comida e R$ 500 com transporte. Isso deixa R$ 2.200 para outras despesas, como lazer, saúde e [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas). Se você gastar R$ 500 por mês em compras por impulso, isso significa que você está perdendo 23% do seu dinheiro disponível.
+Imagine que você ganha R$ 5.000 por mês e gasta R$ 1.500 com aluguel, R$ 800 com comida e R$ 500 com transporte. Isso deixa R$ 2.200 para outras despesas, como lazer, saúde e [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas). Se você gastar R$ 500 por mês em compras por impulso, isso significa que você está perdendo 23% do seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) disponível.
 
 ## Identificando os Gatilhos
 Para evitar compras por impulso, é importante identificar os gatilhos que o levam a comprar coisas desnecessárias. Isso pode incluir:

@@ -29,7 +29,7 @@ To avoid impulse purchases, it's essential to identify the triggers that lead yo
 * The feeling that you deserve a treat
 * Boredom or lack of distraction
 
-**Practical tip:** Make a list of your triggers and find ways to avoid them. For example, if you know you always buy unnecessary things when you're in a mall, try to avoid going there or only take the money you need for the purchases you need to make.
+**Practical tip:** Make a list of your triggers and find ways to avoid them. For example, if you know you always buy unnecessary things when you're in a mall, try to avoid going there or only take the [money](/en/posts/creating-an-emergency-fund) you need for the purchases you need to make.
 
 ![Identificando os Gatilhos](/images/posts/evite-compras-por-impulso-2.webp)
 
@@ -40,7 +40,7 @@ Once you've identified your triggers, it's time to create an action plan to avoi
 * Setting a budget for unnecessary purchases
 * Creating a shopping list before going to the supermarket or store
 * Avoiding buying things you don't need
-* Finding ways to have fun without spending money
+* Finding ways to have fun without spending [money](/en/posts/difference-between-investing-and-saving)
 
 For example, if you like to read, instead of buying books, you can go to the library or download reading apps that offer free books. If you like to cook, instead of buying expensive ingredients, you can look for recipes that use more affordable ingredients.
 
