@@ -55,7 +55,7 @@ The savings part is crucial for your financial future. Here, you can consider di
 
 
 
-**Practical tip:** Start small. Even if you can't reach the 20% savings immediately, starting with 10% or 5% is still a big step. Gradually increase as you adjust to the new budget.
+**Practical tip:** Start small. Even if you can't reach the 20% savings immediately, starting with 10% or 5% is still a big step. Gradually increase as you adjust to the new [budget](/en/posts/how-to-create-personal-[budget](/en/posts/reduce-fixed-expenses)).
 
 ## Managing Desires and Needs
 It's essential to maintain a balance between what you need and what you want. Here are some tips to better manage these categories:

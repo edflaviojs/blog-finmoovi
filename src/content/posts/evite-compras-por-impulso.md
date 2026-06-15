@@ -29,7 +29,7 @@ Para evitar compras por impulso, é importante identificar os gatilhos que o lev
 * A sensação de que você merece um presente
 * O tédio ou a falta de distração
 
-**Dica prática:** Faça uma lista dos seus gatilhos e encontre maneiras de evitá-los. Por exemplo, se você sabe que sempre compra coisas desnecessárias quando está em um shopping, tente evitar ir lá ou leve apenas o dinheiro necessário para as compras que você precisa fazer.
+**Dica prática:** Faça uma lista dos seus gatilhos e encontre maneiras de evitá-los. Por exemplo, se você sabe que sempre compra coisas desnecessárias quando está em um shopping, tente evitar ir lá ou leve apenas o [dinheiro](/posts/criar-reserva-de-emergencia) necessário para as compras que você precisa fazer.
 
 ![Identificando os Gatilhos](/images/posts/evite-compras-por-impulso-2.webp)
 
@@ -40,7 +40,7 @@ Uma vez que você tenha identificado os gatilhos, é hora de criar um plano de a
 * Definir um orçamento para compras desnecessárias
 * Criar uma lista de compras antes de ir ao supermercado ou loja
 * Evitar comprar coisas que você não precisa
-* Encontrar maneiras de se divertir sem gastar dinheiro
+* Encontrar maneiras de se divertir sem gastar [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito)
 
 Por exemplo, se você gosta de ler, em vez de comprar livros, você pode ir à biblioteca ou baixar aplicativos de leitura que oferecem livros gratuitos. Se você gosta de cozinhar, em vez de comprar ingredientes caros, você pode procurar receitas que usem ingredientes mais acessíveis.
 

@@ -20,7 +20,7 @@ seo:
 
 Olá, pessoal! É hora de fazer um resumo da semana que passou no mercado financeiro brasileiro. Vamos lá!
 
-![Resumo Semanal do Mercado Financeiro Brasileiro: 06/08/2026 a 06/15/2026](/images/posts/en-quotes-semana-3-june-2026-inline-1.webp)
+![Resumo Semanal do Mercado Financeiro Brasileiro: 06/08/2026 a 06/15/2026](/images/posts/en-[quotes](/en/posts/quotes-semana-1-june-2026)-semana-3-june-2026-inline-1.webp)
 
 
 
@@ -44,5 +44,5 @@ Em resumo, a semana que passou foi marcada por estabilidade no câmbio e uma tax
 
 
 ---
-**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/30-day-rule-for-purchases) is going.**
+**Ready to track your [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/30-day-rule-for-purchases) is going.**
 

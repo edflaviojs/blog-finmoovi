@@ -45,11 +45,11 @@ Para empezar a aplicar el método 50-30-20, necesita tener una visión clara de 
 
 
 ## Ahorrando e Inviertiendo
-La parte de la [economía](/es/posts/ahorrando-en-las-compras-del-supermercado) es crucial para su futuro financiero. Aquí, puede considerar diferentes opciones para aplicar su dinero.
+La parte de la [economía](/es/posts/ahorrando-en-las-compras-del-supermercado) es crucial para su futuro financiero. Aquí, puede considerar diferentes opciones para aplicar su [dinero](/es/posts/diferencia-entre-invertir-y-ahorrar).
 
 - **Poupança:** Una buena opción para empezar a ahorrar, ya que es de bajo riesgo y fácil acceso.
 - **Inversiones:** Existen varias opciones de inversión, como [acciones](/es/glossario/es-acoes), fondos de inversión, títulos de deuda, etc. Es importante entender los riesgos y beneficios de cada opción antes de invertir.
-- **Pago de deudas:** Si tiene deudas con intereses altos, puede ser una buena idea usar parte de su dinero para pagarlas.
+- **Pago de deudas:** Si tiene deudas con intereses altos, puede ser una buena idea usar parte de su [dinero](/es/posts/evite-compras-por-impulso) para pagarlas.
 
 ![Ahorrando e Inviertiendo](/images/posts/metodo-50-30-20-para-orcamento-3.webp)
 

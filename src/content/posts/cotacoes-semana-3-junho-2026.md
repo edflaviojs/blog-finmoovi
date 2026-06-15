@@ -24,11 +24,11 @@ A semana de 08/06/2026 a 15/06/2026 foi marcada por movimentos interessantes no 
 
 
 
-## Dólar e Euro: Tendência da Semana
+## [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana
 
-O dólar americano (USD) fechou a semana em R$ 5.08, apresentando uma leve estabilidade em relação ao real. Já o euro (EUR) alcançou R$ 5.88, mostrando uma tendência de valorização em relação à moeda brasileira. Esses movimentos são importantes para os investidores que têm exposição a ativos em moedas estrangeiras, pois podem impactar o valor de seus investimentos.
+O dólar americano (USD) fechou a semana em R$ 5.08, apresentando uma leve estabilidade em relação ao real. Já o euro (EUR) alcançou R$ 5.88, mostrando uma tendência de valorização em relação à [moeda](/glossario/moeda) brasileira. Esses movimentos são importantes para os investidores que têm exposição a ativos em moedas estrangeiras, pois podem impactar o valor de seus investimentos.
 
-## Selic e Impacto nos Investimentos
+## [Selic](/glossario/selic) e Impacto nos Investimentos
 
 A taxa Selic, que é a taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas) brasileira, permaneceu estável durante a semana. No entanto, é importante lembrar que as decisões do Comitê de Política Monetária (COPOM) sobre a Selic podem influenciar diretamente os juros de empréstimos e investimentos. Uma taxa Selic mais alta pode tornar os empréstimos mais caros, mas também pode aumentar os rendimentos de investimentos como títulos públicos e CDBs. É fundamental acompanhar essas decisões para ajustar suas estratégias de investimento.
 
@@ -48,5 +48,5 @@ Em resumo, a semana foi marcada por estabilidade no dólar e valorização do eu
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
+**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz).**
 

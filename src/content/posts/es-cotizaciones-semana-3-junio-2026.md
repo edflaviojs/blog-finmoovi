@@ -20,7 +20,7 @@ seo:
 
 La semana del 8 al 15 de junio de 2026 ha sido de gran interés para los inversores brasileños, con movimientos significativos en las principales divisas y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del dólar y euro, el impacto de la [tasa Selic](/es/glossario/es-selic) en las inversiones y ofreceremos [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
 
-![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-cotizaciones-semana-3-junio-2026-inline-1.webp)
+![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-[cotizaciones](/es/posts/cotizaciones-semana-1-junio-2026)-semana-3-junio-2026-inline-1.webp)
 
 
 
@@ -48,5 +48,5 @@ En resumen, la semana del 8 al 15 de junio de 2026 ha sido de movimientos signif
 
 
 ---
-**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
+**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia).**
 

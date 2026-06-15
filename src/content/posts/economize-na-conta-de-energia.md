@@ -59,4 +59,4 @@ Agora que você sabe como economizar na conta de energia, é hora de começar a 
 
 
 ---
-**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis](https://finmoovi.com) e controle seus gastos com IA, multi-moeda e relatórios que fazem sentido.**
+**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**

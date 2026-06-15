@@ -71,4 +71,4 @@ Se você decidir investir no Tesouro Direto, é importante ler atentamente as co
 
 
 
-Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-moeda, relatórios inteligentes e 100% offline.
+Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.

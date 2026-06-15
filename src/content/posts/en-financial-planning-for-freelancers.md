@@ -17,14 +17,14 @@ seo:
 ---
 
 ## [Financial Planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) is Fundamental
-When you're a freelancer, you don't have a fixed salary every month. This can be a challenge, as you need to manage your [money](/en/posts/30-day-rule-for-purchases) effectively to ensure you have enough to pay your bills and invest in the future. Good [financial planning](/en/posts/how-to-create-personal-budget) is essential to achieve financial stability and avoid problems like running out of [money](/en/posts/creating-an-emergency-fund) to pay bills or being unable to achieve your financial goals.
+When you're a freelancer, you don't have a fixed salary every month. This can be a challenge, as you need to manage your [money](/en/posts/30-day-rule-for-purchases) effectively to ensure you have enough to pay your bills and invest in the future. Good [financial planning](/en/posts/how-to-create-personal-[budget](/en/posts/reduce-fixed-expenses)) is essential to achieve financial stability and avoid problems like running out of [money](/en/posts/creating-an-emergency-fund) to pay bills or being unable to achieve your financial goals.
 
 For example, imagine you're a freelancer who earns R$ 5,000 per month, but your monthly expenses are R$ 3,500, including rent, food, transportation, and other expenses. If you don't have a financial plan, you might end up spending all your [money](/en/posts/difference-between-investing-and-saving) without knowing where it's going. With a financial plan, you can identify areas where you can cut back on expenses and invest your [money](/en/posts/financial-planning-for-couples) more effectively.
 
 ## Defining Financial Goals
 One of the first steps to creating a financial plan is to define your financial goals. This can include paying off debt, saving for retirement, buying a house, or investing in a business. It's essential to be specific and realistic when defining your goals, as this will help create a financial plan that's achievable.
 
-For example, if you want to buy a house worth R$ 200,000, you'll need to save R$ 20,000 per year for 10 years. This means you'll need to set aside around R$ 1,667 per month. With a financial plan, you can create a savings and investment schedule to achieve your goal.
+For example, if you want to buy a house worth R$ 200,000, you'll need to save R$ 20,000 per year for 10 years. This means you'll need to set aside around R$ 1,667 per month. With a financial plan, you can create a savings and [investment](/en/posts/tesouro-direto-para-iniciantes) schedule to achieve your goal.
 
 ![Definindo objetivos financeiros](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
 

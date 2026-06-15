@@ -24,7 +24,7 @@ Por exemplo, imagine que você é um freelancer que ganha R$ 5.000 por mês, mas
 ## Definindo objetivos financeiros
 Um dos primeiros passos para criar um plano financeiro é definir seus objetivos financeiros. Isso pode incluir pagar dívidas, economizar para a aposentadoria, comprar uma casa ou investir em uma empresa. É importante ser específico e realista ao definir seus objetivos, pois isso ajudará a criar um plano financeiro que seja alcançável.
 
-Por exemplo, se você quer comprar uma casa no valor de R$ 200.000, você precisará economizar R$ 20.000 por ano durante 10 anos. Isso significa que você precisará colocar de lado cerca de R$ 1.667 por mês. Com um plano financeiro, você pode criar um cronograma de [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas) e investimento para alcançar seu objetivo.
+Por exemplo, se você quer comprar uma casa no valor de R$ 200.000, você precisará economizar R$ 20.000 por ano durante 10 anos. Isso significa que você precisará colocar de lado cerca de R$ 1.667 por mês. Com um plano financeiro, você pode criar um cronograma de [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas) e [investimento](/posts/tesouro-direto-para-iniciantes) para alcançar seu objetivo.
 
 ![Definindo objetivos financeiros](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
 
@@ -33,7 +33,7 @@ Por exemplo, se você quer comprar uma casa no valor de R$ 200.000, você precis
 ## Gerenciando gastos
 Gerenciar gastos é uma parte importante do planejamento financeiro. Isso inclui identificar áreas onde você pode cortar gastos e reduzir despesas desnecessárias. Uma dica prática é criar um [orçamento](/posts/como-criar-orcamento-pessoal) e registrar todos os seus gastos durante um mês. Isso ajudará a identificar áreas onde você pode economizar [dinheiro](/posts/economizar-nas-compras-do-supermercado).
 
-**Dica prática:** use um aplicativo de gerenciamento de finanças, como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), para registrar seus gastos e criar um [orçamento](/posts/regra-50-30-20-guia-completo). Com o FinMoovi, você pode categorizar seus gastos e identificar áreas onde pode economizar [dinheiro](/posts/economize-na-conta-de-energia).
+**Dica prática:** use um aplicativo de gerenciamento de finanças, como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), para registrar seus gastos e criar um [orçamento](/posts/regra-50-30-20-guia-completo). Com o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), você pode categorizar seus gastos e identificar áreas onde pode economizar [dinheiro](/posts/economize-na-conta-de-energia).
 
 ![Gerenciando gastos](/images/posts/planejamento-financeiro-para-autonomos-3.webp)
 

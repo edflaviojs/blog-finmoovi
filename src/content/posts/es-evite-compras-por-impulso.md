@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Entendiendo el Impulso
-Cuando estás en una tienda o navegando en línea, es fácil dejarse llevar por el impulso de comprar algo que no necesitas. Esto puede ocurrir por varias razones, como la influencia de la publicidad, la presión de los amigos o la sensación de que te mereces un regalo. Pero, al final del mes, estas compras por impulso pueden sumar y afectar tu presupuesto.
+Cuando estás en una tienda o navegando en línea, es fácil dejarse llevar por el impulso de comprar algo que no necesitas. Esto puede ocurrir por varias razones, como la influencia de la publicidad, la presión de los amigos o la sensación de que te mereces un regalo. Pero, al final del mes, estas compras por impulso pueden sumar y afectar tu [presupuesto](/es/posts/como-crear-presupuesto-personal).
 
 Imagina que ganas R$ 5.000 por mes y gastas R$ 1.500 con alquiler, R$ 800 con comida y R$ 500 con transporte. Esto te deja R$ 2.200 para otras expensas, como ocio, salud y ahorro. Si gastas R$ 500 por mes en compras por impulso, esto significa que estás perdiendo 23% de tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) disponible.
 
@@ -45,7 +45,7 @@ Una vez que hayas identificado los gatillos, es hora de crear un plan de acción
 Por ejemplo, si te gusta leer, en lugar de comprar libros, puedes ir a la biblioteca o descargar aplicaciones de lectura que ofrecen libros gratuitos. Si te gusta cocinar, en lugar de comprar ingredientes caros, puedes buscar recetas que utilicen ingredientes más accesibles.
 
 ## Registra Tus Gastos
-Una de las principales razones por las que las personas pierden el control de sus gastos es la falta de registro. Es importante registrar todos tus gastos, incluyendo los pequeños, para tener una idea clara de dónde está yendo tu dinero. Esto puede hacerse con una aplicación de gestión financiera, como el FinMoovi, que te permite registrar tus gastos y crear un presupuesto personalizado.
+Una de las principales razones por las que las personas pierden el control de sus gastos es la falta de registro. Es importante registrar todos tus gastos, incluyendo los pequeños, para tener una idea clara de dónde está yendo tu [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito). Esto puede hacerse con una aplicación de gestión financiera, como el FinMoovi, que te permite registrar tus gastos y crear un presupuesto personalizado.
 
 **Consejo práctico:** Registra todos tus gastos durante un mes para tener una idea clara de dónde está yendo tu dinero. Esto puede ayudarte a identificar áreas en las que puedes cortar gastos y ahorrar dinero.
 
