@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Saving on Your Market Bill
-Imagine you can save around R$ 50,00 per week on your market bill. This may not seem like much, but over the course of a year, you'd be saving approximately R$ 2,600,00. With this amount, you could take a trip, pay off debts, or invest in an [emergency fund](/en/glossario/en-reserva-de-emergencia). The key to achieving this savings lies in small changes to your shopping habits.
+Imagine you can save around R$ 50,00 per week on your market bill. This may not seem like much, but over the course of a year, you'd be saving approximately R$ 2,600,00. With this amount, you could take a trip, pay off debts, or invest in an [emergency fund](/en/glossario/en-reserva-de-emergencia). The key to achieving this [savings](/en/posts/financial-education-for-children) lies in small changes to your shopping habits.
 
 ## Planning is Fundamental
 To start saving, it's essential to plan your purchases. This includes making a list of everything you need to buy and sticking to it. Avoid impulse buying, as this can lead to unnecessary expenses. Additionally, try buying in bulk, especially for non-perishable items like rice, beans, and pasta. Buying in bulk can be cheaper in the long run. **Practical tip:** Create a weekly [budget](/en/posts/50-30-20-rule-complete-guide) and set aside time to plan your meals and purchases.
@@ -33,7 +33,7 @@ Another way to save is to compare prices between different stores. This can be d
 To really understand how you're spending your [money](/en/posts/30-day-rule-for-purchases), it's crucial to organize your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/reduce-fixed-expenses)). This includes recording all your expenses, from your market bill to other monthly expenses like rent, internet, and phone services. With a well-organized [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)), you can identify areas where you can cut unnecessary expenses and direct that [money](/en/posts/financial-planning-for-couples) towards savings or [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-). **Practical tip:** Use a finance app to make it easier to track and monitor your expenses.
 
 ## Controlling Expenses
-Having control over your expenses is essential for maintaining savings. This means avoiding impulse purchases and being mindful of deals and promotions that can be beneficial. Additionally, it's important to regularly review your budget to ensure you're on track to meet your financial goals. If you spend R$ 500,00 per week on market purchases and manage to reduce it to R$ 450,00, you'll be saving R$ 50,00 per week, which can be a significant step towards achieving your goals.
+Having control over your expenses is essential for maintaining savings. This means avoiding impulse purchases and being mindful of deals and promotions that can be beneficial. Additionally, it's important to regularly review your [budget](/en/posts/how-to-create-personal-budget) to ensure you're on track to meet your financial goals. If you spend R$ 500,00 per week on market purchases and manage to reduce it to R$ 450,00, you'll be saving R$ 50,00 per week, which can be a significant step towards achieving your goals.
 
 ![Organizando o Orçamento](/images/posts/economize-na-conta-do-mercado-3.webp)
 

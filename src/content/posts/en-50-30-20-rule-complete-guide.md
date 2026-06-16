@@ -22,7 +22,7 @@ The 50-30-20 rule is one of the simplest and most effective methods for managing
 
 - **50% — Needs:** Essential [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) you can't avoid
 - **30% — Wants:** Things you enjoy but don't strictly need
-- **20% — Savings & Debt:** Building your future
+- **20% — [Savings](/en/posts/financial-education-for-children) & Debt:** Building your future
 
 ## Practical Example: $4,000 Monthly Income
 

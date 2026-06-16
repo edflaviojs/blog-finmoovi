@@ -19,7 +19,7 @@ seo:
 ## Understanding Impulse Buying
 When you're in a store or browsing online, it's easy to get carried away by the impulse to buy something you don't need. This can happen for various reasons, such as the influence of advertising, peer pressure, or the feeling that you deserve a treat. But at the end of the month, these impulse purchases can add up and affect your [budget](/en/posts/50-30-20-rule-complete-guide).
 
-Imagine you earn $5,000 per month and spend $1,500 on rent, $800 on food, and $500 on transportation. That leaves $2,200 for other expenses, such as leisure, health, and savings. If you spend $500 per month on impulse purchases, that means you're losing 23% of your available [money](/en/posts/30-day-rule-for-purchases).
+Imagine you earn $5,000 per month and spend $1,500 on rent, $800 on food, and $500 on transportation. That leaves $2,200 for other expenses, such as leisure, health, and [savings](/en/posts/financial-education-for-children). If you spend $500 per month on impulse purchases, that means you're losing 23% of your available [money](/en/posts/30-day-rule-for-purchases).
 
 ## Identifying Triggers
 To avoid impulse purchases, it's essential to identify the triggers that lead you to buy unnecessary things. These may include:
@@ -45,7 +45,7 @@ Once you've identified your triggers, it's time to create an action plan to avoi
 For example, if you like to read, instead of buying books, you can go to the library or download reading apps that offer free books. If you like to cook, instead of buying expensive ingredients, you can look for recipes that use more affordable ingredients.
 
 ## Track Your Expenses
-One of the main reasons people lose control of their expenses is the lack of tracking. It's essential to track all your expenses, including small ones, to get a clear idea of where your [money](/en/posts/financial-planning-for-couples) is going. This can be done with a financial management app, such as FinMoovi, which allows you to track your expenses and create a personalized budget.
+One of the main reasons people lose control of their expenses is the lack of tracking. It's essential to track all your expenses, including small ones, to get a clear idea of where your [money](/en/posts/financial-planning-for-couples) is going. This can be done with a financial management app, such as FinMoovi, which allows you to track your expenses and create a personalized [budget](/en/posts/how-to-create-personal-budget).
 
 **Practical tip:** Track all your expenses for a month to get a clear idea of where your [money](/en/posts/financial-planning-for-freelancers) is going. This can help you identify areas where you can cut back and save money.
 

@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro
 
-A semana de 08/06/2026 a 15/06/2026 foi marcada por movimentos interessantes no mercado financeiro brasileiro, com destaque para as taxas de [câmbio](/glossario/cambio) e a política monetária. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus investimentos.
+A semana de 08/06/2026 a 15/06/2026 foi marcada por movimentos interessantes no mercado financeiro brasileiro, com destaque para as taxas de [câmbio](/glossario/cambio) e a política monetária. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro](/images/posts/cotacoes-semana-3-junho-2026-inline-1.webp)
 
@@ -38,7 +38,7 @@ A taxa Selic, que é a taxa básica de [juros](/glossario/juros) da [economia](/
 
 ## Dica Prática para o Investidor Pessoa Física
 
-Uma dica valiosa para os investidores pessoa física é diversificar seus investimentos, incluindo ativos em diferentes moedas. Isso pode ajudar a reduzir o risco e aumentar as oportunidades de ganhos. O [FinMoovi](https://finmoovi.com.br/) é uma ferramenta útil que pode ajudá-lo a acompanhar seus investimentos em múltiplas moedas de forma fácil e eficiente. Com o FinMoovi, você pode ter uma visão clara de seus investimentos e tomar decisões informadas para alcançar seus objetivos financeiros.
+Uma dica valiosa para os investidores pessoa física é diversificar seus investimentos, incluindo ativos em diferentes moedas. Isso pode ajudar a reduzir o risco e aumentar as oportunidades de ganhos. O [FinMoovi](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com.br/) é uma ferramenta útil que pode ajudá-lo a acompanhar seus investimentos em múltiplas moedas de forma fácil e eficiente. Com o FinMoovi, você pode ter uma visão clara de seus investimentos e tomar decisões informadas para alcançar seus objetivos financeiros.
 
 ## O que Esperar para a Próxima Semana
 

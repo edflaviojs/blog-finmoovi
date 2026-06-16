@@ -40,7 +40,7 @@ Existen varias herramientas que pueden ayudar a controlar los gastos en la tarje
 
 
 ## Comience hoy
-No espere más para comenzar a controlar sus gastos en la tarjeta de crédito. Con un poco de disciplina y los [consejos](/es/posts/7-errores-financieros-principiante) correctos, usted puede ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) y evitar deudas. Recuerde que el control de gastos es un proceso continuo y que es importante revisar regularmente sus hábitos de consumo.
+No espere más para comenzar a controlar sus gastos en la tarjeta de crédito. Con un poco de disciplina y los [consejos](/es/posts/7-errores-financieros-principiante) correctos, usted puede ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) y evitar deudas. Recuerde que el [control de gastos](/es/posts/como-crear-presupuesto-personal) es un proceso continuo y que es importante revisar regularmente sus hábitos de consumo.
 
 ![Comience hoy](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-6.webp)
 

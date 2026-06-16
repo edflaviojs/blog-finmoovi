@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Entendendo o [Método 50-30-20](/posts/metodo-50-30-20-para-orcamento)
-O método 50-30-20 é uma abordagem simples e eficaz para gerenciar suas finanças. A ideia é dividir seu salário em três categorias: necessidades essenciais (50%), desejos e lazer (30%) e [poupança](/glossario/poupanca) e investimentos (20%). Vamos aplicar esse método a um salário brasileiro de R$ 4.000,00 por mês.
+O método 50-30-20 é uma abordagem simples e eficaz para gerenciar suas finanças. A ideia é dividir seu salário em três categorias: necessidades essenciais (50%), desejos e lazer (30%) e [poupança](/glossario/poupanca) e [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) (20%). Vamos aplicar esse método a um salário brasileiro de R$ 4.000,00 por mês.
 
 | Categoria | Percentual | Valor (R$) |
 | --- | --- | --- |
@@ -66,4 +66,4 @@ Comece a aplicar o método 50-30-20 hoje mesmo. Reserve 5 minutos por dia para r
 
 
 
-**Quer automatizar esse controle? [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

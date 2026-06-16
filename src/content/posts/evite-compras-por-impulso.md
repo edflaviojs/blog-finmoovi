@@ -37,7 +37,7 @@ Para evitar compras por impulso, é importante identificar os gatilhos que o lev
 
 ## Criando um Plano de Ação
 Uma vez que você tenha identificado os gatilhos, é hora de criar um plano de ação para evitar compras por impulso. Isso pode incluir:
-* Definir um orçamento para compras desnecessárias
+* Definir um [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro) para compras desnecessárias
 * Criar uma lista de compras antes de ir ao supermercado ou loja
 * Evitar comprar coisas que você não precisa
 * Encontrar maneiras de se divertir sem gastar [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito)
@@ -47,7 +47,7 @@ Por exemplo, se você gosta de ler, em vez de comprar livros, você pode ir à b
 ## Registre Seus Gastos
 Um dos principais motivos para que as pessoas percam o controle dos gastos é a falta de registro. É importante registrar todos os seus gastos, incluindo os pequenos, para ter uma ideia clara de onde seu [dinheiro](/posts/diferenca-entre-investir-e-poupar) está indo. Isso pode ser feito com um aplicativo de gestão financeira, como o FinMoovi, que permite que você registre seus gastos e crie um orçamento personalizado.
 
-**Dica prática:** Registre todos os seus gastos durante um mês para ter uma ideia clara de onde seu [dinheiro](/posts/economizar-nas-compras-do-supermercado) está indo. Isso pode ajudá-lo a identificar áreas em que você pode cortar gastos e economizar dinheiro.
+**Dica prática:** Registre todos os seus gastos durante um mês para ter uma ideia clara de onde seu [dinheiro](/posts/economizar-nas-compras-do-supermercado) está indo. Isso pode ajudá-lo a identificar áreas em que você pode cortar gastos e economizar [dinheiro](/posts/economize-na-conta-de-energia).
 
 ![Registre Seus Gastos](/images/posts/evite-compras-por-impulso-4.webp)
 

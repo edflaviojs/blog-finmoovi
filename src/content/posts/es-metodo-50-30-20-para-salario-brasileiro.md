@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Entendiendo el [Método 50-30-20](/es/posts/metodo-50-30-20-para-orcamento)
-El método 50-30-20 es una aproximación simple y eficaz para gestionar tus finanzas. La idea es dividir tu salario en tres categorías: necesidades esenciales (50%), deseos y ocio (30%) y ahorro e inversiones (20%). Vamos aplicar este método a un salario brasileño de R$ 4.000,00 por mes.
+El método 50-30-20 es una aproximación simple y eficaz para gestionar tus finanzas. La idea es dividir tu salario en tres categorías: necesidades esenciales (50%), deseos y ocio (30%) y [ahorro](/es/posts/negociar-descuentos-en-cuentas-fijas) e inversiones (20%). Vamos aplicar este método a un salario brasileño de R$ 4.000,00 por mes.
 
 | Categoría | Porcentaje | Valor (R$) |
 | --- | --- | --- |
@@ -66,4 +66,4 @@ Comienza a aplicar el método 50-30-20 hoy mismo. Reserva 5 minutos por día par
 
 
 
-**¿Quieres automatizar este control? [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

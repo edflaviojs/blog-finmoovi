@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Understanding the [50-30-20 Method](/en/posts/metodo-50-30-20-para-salario-brasileiro)
-The 50-30-20 method is a simple and effective strategy for managing your finances. The idea is to divide your salary into three main categories: needs, desires, and savings. With this, you can have better control over where your [money](/en/posts/30-day-rule-for-purchases) is being spent and how it can be optimized.
+The 50-30-20 method is a simple and effective strategy for managing your finances. The idea is to divide your salary into three main categories: needs, desires, and [savings](/en/posts/financial-education-for-children). With this, you can have better control over where your [money](/en/posts/30-day-rule-for-purchases) is being spent and how it can be optimized.
 
 - **Needs (50%):** Includes essential expenses such as rent, food, water, electricity, internet, transportation, and other basic expenses.
 - **Desires (30%):** Here you include expenses that are not essential, but that improve your quality of life, such as entertainment, travel, hobbies, and personal purchases.
@@ -35,7 +35,7 @@ Let's consider a salary of R$ 4,000.00 per month. Applying the 50-30-20 method, 
 ## Organizing your Finances
 To start applying the 50-30-20 method, you need to have a clear view of your current finances. This includes knowing exactly how much you earn, how much you spend, and where you spend.
 
-1. **List your income:** Note down all your monthly earnings, including salary, investment returns, etc.
+1. **List your income:** Note down all your monthly earnings, including salary, [investment](/en/posts/tesouro-direto-para-iniciantes) returns, etc.
 2. **List your expenses:** Separate your expenses into needs and desires. Include here service bills, supermarket purchases, transportation, leisure, etc.
 3. **Calculate the percentage:** Based on your income and expenses, calculate the percentage that each category occupies in your [budget](/en/posts/50-30-20-rule-complete-guide).
 4. **Adjust your expenses:** If necessary, make adjustments so that your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) fits the 50-30-20 method.

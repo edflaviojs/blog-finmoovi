@@ -21,7 +21,7 @@ O método 50-30-20 é uma estratégia simples e eficaz para gerenciar suas finan
 
 - **Necessidades (50%):** Inclui despesas essenciais como aluguel, comida, contas de água, luz, internet, transporte e outros gastos básicos.
 - **Desejos (30%):** Aqui você inclui gastos que não são essenciais, mas que melhoram sua qualidade de vida, como entretenimento, viagens, hobbies e compras pessoais.
-- **[Economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) (20%):** Esta parte do seu salário deve ser destinada à [poupança](/glossario/poupanca), investimentos, pagamento de dívidas e [fundos](/glossario/fundos) de emergência.
+- **[Economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) (20%):** Esta parte do seu salário deve ser destinada à [poupança](/glossario/poupanca), [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), pagamento de dívidas e [fundos](/glossario/fundos) de emergência.
 
 ### Exemplo Prático
 Vamos considerar um salário de R$ 4.000,00 por mês. Aplicando o método 50-30-20, teríamos:
@@ -38,7 +38,7 @@ Para começar a aplicar o método 50-30-20, você precisa ter uma visão clara d
 1. **Liste suas receitas:** Anote todos os seus ganhos mensais, incluindo salário, rendimentos de investimentos, etc.
 2. **Liste suas despesas:** Separe suas despesas em necessidades e desejos. Inclua aqui contas de serviços, compras de supermercado, transporte, lazer, etc.
 3. **Calcule a porcentagem:** Com base nas suas receitas e despesas, calcule a porcentagem que cada categoria ocupa do seu [orçamento](/posts/como-criar-orcamento-pessoal).
-4. **Ajuste suas despesas:** Se necessário, faça ajustes para que seu orçamento se encaixe no método 50-30-20.
+4. **Ajuste suas despesas:** Se necessário, faça ajustes para que seu [orçamento](/posts/regra-50-30-20-guia-completo) se encaixe no método 50-30-20.
 
 ![Organizando suas Finanças](/images/posts/metodo-50-30-20-para-orcamento-2.webp)
 

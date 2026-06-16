@@ -40,7 +40,7 @@ Separate into fixed (rent, utilities, subscriptions) and variable (food, enterta
 
 - **50% Needs:** rent, food, transportation, health
 - **30% Wants:** entertainment, dining out, hobbies
-- **20% Savings:** [emergency fund](/en/glossario/en-reserva-de-emergencia), investments, debt payoff
+- **20% [Savings](/en/posts/financial-education-for-children):** [emergency fund](/en/glossario/en-reserva-de-emergencia), investments, debt payoff
 
 ## Step 4: Set Realistic Goals
 

@@ -24,7 +24,7 @@ For example, imagine you're a freelancer who earns R$ 5,000 per month, but your 
 ## Defining Financial Goals
 One of the first steps to creating a financial plan is to define your financial goals. This can include paying off debt, saving for retirement, buying a house, or investing in a business. It's essential to be specific and realistic when defining your goals, as this will help create a financial plan that's achievable.
 
-For example, if you want to buy a house worth R$ 200,000, you'll need to save R$ 20,000 per year for 10 years. This means you'll need to set aside around R$ 1,667 per month. With a financial plan, you can create a savings and [investment](/en/posts/tesouro-direto-para-iniciantes) schedule to achieve your goal.
+For example, if you want to buy a house worth R$ 200,000, you'll need to save R$ 20,000 per year for 10 years. This means you'll need to set aside around R$ 1,667 per month. With a financial plan, you can create a [savings](/en/posts/financial-education-for-children) and [investment](/en/posts/tesouro-direto-para-iniciantes) schedule to achieve your goal.
 
 ![Definindo objetivos financeiros](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
 
@@ -49,7 +49,7 @@ For example, if you invest R$ 1,000 per month in an investment fund that yields 
 
 
 ## Start Today
-There's no better time to start planning your finances than now. With a financial plan, you can achieve financial stability and achieve your financial goals. Remember that financial planning is an ongoing process, and you'll need to review and adjust your plan regularly to ensure you're on the right track.
+There's no better time to start planning your finances than now. With a financial plan, you can achieve financial stability and achieve your financial goals. Remember that [financial planning](/en/posts/how-to-create-personal-budget) is an ongoing process, and you'll need to review and adjust your plan regularly to ensure you're on the right track.
 
 ---
 

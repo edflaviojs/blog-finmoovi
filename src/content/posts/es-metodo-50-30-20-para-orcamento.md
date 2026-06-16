@@ -21,7 +21,7 @@ El método 50-30-20 es una estrategia simple y eficaz para gestionar sus finanza
 
 - **Necesidades (50%):** Incluye gastos esenciales como alquiler, comida, cuentas de agua, luz, internet, transporte y otros gastos básicos.
 - **Deseos (30%):** Aquí incluye gastos que no son esenciales, pero que mejoran su calidad de vida, como entretenimiento, viajes, hobbies y compras personales.
-- **[Economía](/es/posts/ahorrando-en-la-cuenta-de-energia) (20%):** Esta parte de su salario debe ser destinada a la poupança, inversiones, pago de deudas y fondos de emergencia.
+- **[Economía](/es/posts/ahorrando-en-la-cuenta-de-energia) (20%):** Esta parte de su salario debe ser destinada a la poupança, [inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), pago de deudas y fondos de emergencia.
 
 ### Ejemplo Práctico
 Vamos a considerar un salario de R$ 4.000,00 por mes. Aplicando el método 50-30-20, tendríamos:
@@ -37,7 +37,7 @@ Para empezar a aplicar el método 50-30-20, necesita tener una visión clara de 
 
 1. **Liste sus ingresos:** Anote todos sus ganancias mensuales, incluyendo salario, rendimientos de inversiones, etc.
 2. **Liste sus gastos:** Separe sus gastos en necesidades y deseos. Incluya aquí cuentas de servicios, compras de supermercado, transporte, ocio, etc.
-3. **Calcule el porcentaje:** Con base en sus ingresos y gastos, calcule el porcentaje que cada categoría ocupa de su [presupuesto](/es/posts/como-crear-presupuesto-personal).
+3. **Calcule el porcentaje:** Con base en sus ingresos y gastos, calcule el porcentaje que cada categoría ocupa de su [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal).
 4. **Ajuste sus gastos:** Si es necesario, haga ajustes para que su presupuesto se ajuste al método 50-30-20.
 
 ![Organizando sus Finanzas](/images/posts/metodo-50-30-20-para-orcamento-2.webp)

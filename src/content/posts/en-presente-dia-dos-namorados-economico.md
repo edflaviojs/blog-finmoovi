@@ -40,7 +40,7 @@ There are several ways to be creative and economic when choosing a gift. Here ar
 
 ## Tools to Help with Planning
 
-To help manage your finances and plan Valentine's Day effectively, you can use tools like the [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) app. It can help you organize your [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro), set savings goals, and even offer personalized [economy](/en/posts/30-day-rule-for-purchases) tips. With [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), you can have a clear view of your finances and make more informed decisions.
+To help manage your finances and plan Valentine's Day effectively, you can use tools like the [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) app. It can help you organize your [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro), set [savings](/en/posts/financial-education-for-children) goals, and even offer personalized [economy](/en/posts/30-day-rule-for-purchases) tips. With [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), you can have a clear view of your finances and make more informed decisions.
 
 ![Tools to Help with Planning](/images/posts/presente-dia-dos-namorados-economico-4.webp)
 
