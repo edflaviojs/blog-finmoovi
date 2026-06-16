@@ -19,7 +19,7 @@ seo:
 ## Entendiendo el Impulso
 Cuando estás en una tienda o navegando en línea, es fácil dejarse llevar por el impulso de comprar algo que no necesitas. Esto puede ocurrir por varias razones, como la influencia de la publicidad, la presión de los amigos o la sensación de que te mereces un regalo. Pero, al final del mes, estas compras por impulso pueden sumar y afectar tu [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal).
 
-Imagina que ganas R$ 5.000 por mes y gastas R$ 1.500 con alquiler, R$ 800 con comida y R$ 500 con transporte. Esto te deja R$ 2.200 para otras expensas, como ocio, salud y ahorro. Si gastas R$ 500 por mes en compras por impulso, esto significa que estás perdiendo 23% de tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) disponible.
+Imagina que ganas R$ 5.000 por mes y gastas R$ 1.500 con alquiler, R$ 800 con comida y R$ 500 con transporte. Esto te deja R$ 2.200 para otras expensas, como ocio, salud y [ahorro](/es/posts/negociar-descuentos-en-cuentas-fijas). Si gastas R$ 500 por mes en compras por impulso, esto significa que estás perdiendo 23% de tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) disponible.
 
 ## Identificando los Gatillos
 Para evitar compras por impulso, es importante identificar los gatillos que te llevan a comprar cosas innecesarias. Esto puede incluir:
@@ -37,7 +37,7 @@ Para evitar compras por impulso, es importante identificar los gatillos que te l
 
 ## Creando un Plan de Acción
 Una vez que hayas identificado los gatillos, es hora de crear un plan de acción para evitar compras por impulso. Esto puede incluir:
-* Definir un presupuesto para compras innecesarias
+* Definir un [presupuesto](/es/posts/como-crear-presupuesto-personal) para compras innecesarias
 * Crear una lista de compras antes de ir al supermercado o tienda
 * Evitar comprar cosas que no necesitas
 * Encontrar maneras de divertirte sin gastar [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado)

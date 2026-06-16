@@ -45,9 +45,9 @@ Once you've identified your triggers, it's time to create an action plan to avoi
 For example, if you like to read, instead of buying books, you can go to the library or download reading apps that offer free books. If you like to cook, instead of buying expensive ingredients, you can look for recipes that use more affordable ingredients.
 
 ## Track Your Expenses
-One of the main reasons people lose control of their expenses is the lack of tracking. It's essential to track all your expenses, including small ones, to get a clear idea of where your [money](/en/posts/financial-planning-for-couples) is going. This can be done with a financial management app, such as FinMoovi, which allows you to track your expenses and create a personalized [budget](/en/posts/how-to-create-personal-budget).
+One of the main reasons people lose control of their expenses is the lack of tracking. It's essential to track all your expenses, including small ones, to get a clear idea of where your [money](/en/posts/financial-planning-for-couples) is going. This can be done with a financial management app, such as [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), which allows you to track your expenses and create a personalized [budget](/en/posts/how-to-create-personal-budget).
 
-**Practical tip:** Track all your expenses for a month to get a clear idea of where your [money](/en/posts/financial-planning-for-freelancers) is going. This can help you identify areas where you can cut back and save money.
+**Practical tip:** Track all your expenses for a month to get a clear idea of where your [money](/en/posts/financial-planning-for-freelancers) is going. This can help you identify areas where you can cut back and save [money](/en/posts/negotiating-discounts-on-fixed-bills).
 
 ![Registre Seus Gastos](/images/posts/evite-compras-por-impulso-4.webp)
 

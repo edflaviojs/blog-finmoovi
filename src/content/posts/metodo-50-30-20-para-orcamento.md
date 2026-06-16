@@ -48,7 +48,7 @@ Para começar a aplicar o método 50-30-20, você precisa ter uma visão clara d
 A parte da [economia](/posts/criar-reserva-de-emergencia) é crucial para o seu futuro financeiro. Aqui, você pode considerar diferentes opções para aplicar seu [dinheiro](/posts/economizar-nas-compras-do-supermercado).
 
 - **Poupança:** Uma boa opção para começar a economizar, pois é de baixo risco e fácil acesso.
-- **Investimentos:** Existem várias opções de investimento, como [ações](/glossario/acoes), fundos de investimento, títulos de dívida, etc. É importante entender os riscos e benefícios de cada opção antes de investir.
+- **Investimentos:** Existem várias opções de [investimento](/posts/tesouro-direto-para-iniciantes), como [ações](/glossario/acoes), fundos de investimento, títulos de dívida, etc. É importante entender os riscos e benefícios de cada opção antes de investir.
 - **Pagamento de dívidas:** Se você tem dívidas com [juros](/glossario/juros) altos, pode ser uma boa ideia usar parte do seu [dinheiro](/posts/economize-na-conta-de-energia) para quitá-las.
 
 ![Economizando e Investindo](/images/posts/metodo-50-30-20-para-orcamento-3.webp)
@@ -74,4 +74,4 @@ Para manter seu orçamento sob controle, não é necessário dedicar horas todos
 - Anotar novas despesas ou receitas.
 - Revisar seu orçamento para garantir que está dentro do planejado.
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

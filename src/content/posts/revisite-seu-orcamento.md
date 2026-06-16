@@ -19,7 +19,7 @@ translate: true
 ---
 
 ## Introdução
-Chegamos ao meio do ano, um momento perfeito para refletir sobre nossas finanças e fazer ajustes necessários. Se você é como a maioria das pessoas, provavelmente começou o ano com grandes planos e metas financeiras, mas ao longo do caminho, as coisas podem ter saído um pouco do trilho. Neste artigo, vamos explorar por que é importante revisar seu orçamento no meio do ano e fornecer dicas práticas sobre como fazer isso de forma eficaz.
+Chegamos ao meio do ano, um momento perfeito para refletir sobre nossas finanças e fazer ajustes necessários. Se você é como a maioria das pessoas, provavelmente começou o ano com grandes planos e metas financeiras, mas ao longo do caminho, as coisas podem ter saído um pouco do trilho. Neste artigo, vamos explorar por que é importante revisar seu [orçamento](/posts/como-criar-orcamento-pessoal) no meio do ano e fornecer [dicas](/posts/7-erros-financeiros-iniciante) práticas sobre como fazer isso de forma eficaz.
 
 ## Por Que Revisar Seu Orçamento?
 Revisar seu orçamento no meio do ano é essencial por várias razões. Primeiramente, isso ajuda a garantir que você esteja no caminho certo para alcançar suas metas financeiras. Se você estabeleceu metas no início do ano, como economizar para uma viagem ou pagar dívidas, uma revisão no meio do ano pode ajudar a identificar se você está progredindo como planejado.
@@ -34,7 +34,7 @@ Além disso, as condições financeiras podem mudar significativamente ao longo 
 Revisar seu orçamento não precisa ser um processo complicado. Aqui estão alguns passos simples que você pode seguir:
 
 ### 1. Verifique Seu Saldo Atual
-Comece verificando seu saldo bancário atual. Isso inclui não apenas sua conta corrente, mas também qualquer poupança, investimentos ou dívidas que você possa ter. Por exemplo, se você tem um salário de R$ 5.000 por mês e gasta R$ 3.000 em despesas fixas, você deve ter uma ideia clara de quanto está economizando ou gastando além disso.
+Comece verificando seu saldo bancário atual. Isso inclui não apenas sua conta corrente, mas também qualquer [poupança](/glossario/poupanca), investimentos ou dívidas que você possa ter. Por exemplo, se você tem um salário de R$ 5.000 por mês e gasta R$ 3.000 em despesas fixas, você deve ter uma ideia clara de quanto está economizando ou gastando além disso.
 
 ### 2. Avalie Suas Despesas
 Avalie todas as suas despesas do último semestre. Isso inclui despesas fixas como aluguel, contas de serviços e assinaturas, bem como despesas variáveis como compras, viagens e entretenimento. Se você perceber que está gastando muito em uma área específica, pode ser hora de fazer ajustes.
@@ -53,7 +53,7 @@ Aqui estão algumas dicas adicionais para ajudar a manter seu orçamento no tril
 - Faça um acompanhamento regular de suas finanças.
 - Considere automatizar suas economias e pagamentos.
 - Evite dívidas sempre que possível.
-- Invista em sua educação financeira para tomar decisões mais informadas.
+- Invista em sua [educação financeira](/glossario/educacao-financeira) para tomar decisões mais informadas.
 
 ![Exemplos Práticos](/images/posts/revisite-seu-orcamento-4.webp)
 

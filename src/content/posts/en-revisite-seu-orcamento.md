@@ -19,12 +19,12 @@ translate: true
 ---
 
 ## Introduction
-We've reached the middle of the year, a perfect time to reflect on our finances and make necessary adjustments. If you're like most people, you probably started the year with big plans and financial goals, but along the way, things might have gone a bit off track. In this article, we'll explore why it's essential to review your budget halfway through the year and provide practical tips on how to do it effectively.
+We've reached the middle of the year, a perfect time to reflect on our finances and make necessary adjustments. If you're like most people, you probably started the year with big plans and financial goals, but along the way, things might have gone a bit off track. In this article, we'll explore why it's essential to review your [budget](/en/posts/50-30-20-rule-complete-guide) halfway through the year and provide practical tips on how to do it effectively.
 
 ## Why Review Your Budget?
 Reviewing your budget halfway through the year is crucial for several reasons. First, it helps ensure you're on the right path to achieving your financial goals. If you set goals at the beginning of the year, such as saving for a trip or paying off debt, a mid-year review can help you identify if you're progressing as planned.
 
-Additionally, financial conditions can change significantly in just six months. You might have received a salary increase, changed jobs, or faced unexpected expenses. A mid-year review allows you to adjust your budget to reflect these changes and continue managing your money effectively.
+Additionally, financial conditions can change significantly in just six months. You might have received a salary increase, changed jobs, or faced unexpected expenses. A mid-year review allows you to adjust your budget to reflect these changes and continue managing your [money](/en/posts/30-day-rule-for-purchases) effectively.
 
 ![Why Review Your Budget?](/images/posts/revisite-seu-orcamento-2.webp)
 
@@ -53,7 +53,7 @@ Here are some additional tips to help keep your budget on track:
 - Regularly track your finances.
 - Consider automating your savings and payments.
 - Avoid debt whenever possible.
-- Invest in your financial education to make more informed decisions.
+- Invest in your [financial education](/en/glossario/en-educacao-financeira) to make more informed decisions.
 
 ![Practical Examples](/images/posts/revisite-seu-orcamento-4.webp)
 

@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Understanding the [50-30-20 Method](/en/posts/metodo-50-30-20-para-orcamento)
-The 50-30-20 method is a simple and effective approach to managing your finances. The idea is to divide your salary into three categories: essential needs (50%), desires and leisure (30%), and [savings](/en/posts/financial-education-for-children) and investments (20%). Let's apply this method to a Brazilian salary of R$ 4,000.00 per month.
+The 50-30-20 method is a simple and effective approach to managing your finances. The idea is to divide your salary into three categories: essential needs (50%), desires and leisure (30%), and [savings](/en/posts/financial-education-for-children) and [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) (20%). Let's apply this method to a Brazilian salary of R$ 4,000.00 per month.
 
 | Category | Percentage | Value (R$) |
 | --- | --- | --- |
@@ -66,4 +66,4 @@ Start applying the 50-30-20 method today. Reserve 5 minutes a day to review your
 
 
 
-**Want to automate this control? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) — it automatically categorizes expenses and generates reports without effort.**
+**Want to automate this control? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — it automatically categorizes expenses and generates reports without effort.**

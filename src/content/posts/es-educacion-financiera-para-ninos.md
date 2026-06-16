@@ -29,8 +29,8 @@ En la fase escolar, los niños comienzan a entender mejor el concepto de dinero 
 
 
 
-## Enseñanza de Economía
-La economía es un concepto importante para que los niños lo entiendan, ya que ayuda a explicar cómo las personas y las sociedades toman decisiones sobre cómo asignar recursos escasos. Por ejemplo, si una familia tiene un presupuesto de R$ 3.000 por mes para gastos, ellos necesitan decidir cómo asignar ese dinero entre necesidades como alquiler, comida y transporte, y deseos como viajes y entretenimiento. **Consejo práctico:** crea un juego de presupuesto con el niño para que él pueda practicar asignar recursos y tomar decisiones financieras.
+## Enseñanza de [Economía](/es/posts/ahorrando-en-la-cuenta-de-energia)
+La [economía](/es/posts/ahorrando-en-la-cuenta-del-mercado) es un concepto importante para que los niños lo entiendan, ya que ayuda a explicar cómo las personas y las sociedades toman decisiones sobre cómo asignar recursos escasos. Por ejemplo, si una familia tiene un presupuesto de R$ 3.000 por mes para gastos, ellos necesitan decidir cómo asignar ese dinero entre necesidades como alquiler, comida y transporte, y deseos como viajes y entretenimiento. **Consejo práctico:** crea un juego de presupuesto con el niño para que él pueda practicar asignar recursos y tomar decisiones financieras.
 
 ## Planificación Financiera
 La planificación financiera es fundamental para que los niños entiendan cómo crear metas y trabajar para alcanzarlas. Por ejemplo, si un niño de 15 años quiere comprar un teléfono que cuesta R$ 800, él puede crear un plan para ahorrar R$ 100 por mes durante 8 meses para alcanzar su meta. **Consejo práctico:** crea un plan de acción con el niño para que él pueda seguir su progreso y ajustar su plan según sea necesario.

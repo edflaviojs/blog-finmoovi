@@ -66,4 +66,4 @@ Comece a aplicar o método 50-30-20 hoje mesmo. Reserve 5 minutos por dia para r
 
 
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

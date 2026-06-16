@@ -45,7 +45,7 @@ Uma vez que você tenha identificado os gatilhos, é hora de criar um plano de a
 Por exemplo, se você gosta de ler, em vez de comprar livros, você pode ir à biblioteca ou baixar aplicativos de leitura que oferecem livros gratuitos. Se você gosta de cozinhar, em vez de comprar ingredientes caros, você pode procurar receitas que usem ingredientes mais acessíveis.
 
 ## Registre Seus Gastos
-Um dos principais motivos para que as pessoas percam o controle dos gastos é a falta de registro. É importante registrar todos os seus gastos, incluindo os pequenos, para ter uma ideia clara de onde seu [dinheiro](/posts/diferenca-entre-investir-e-poupar) está indo. Isso pode ser feito com um aplicativo de gestão financeira, como o FinMoovi, que permite que você registre seus gastos e crie um orçamento personalizado.
+Um dos principais motivos para que as pessoas percam o controle dos gastos é a falta de registro. É importante registrar todos os seus gastos, incluindo os pequenos, para ter uma ideia clara de onde seu [dinheiro](/posts/diferenca-entre-investir-e-poupar) está indo. Isso pode ser feito com um aplicativo de gestão financeira, como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), que permite que você registre seus gastos e crie um [orçamento](/posts/regra-50-30-20-guia-completo) personalizado.
 
 **Dica prática:** Registre todos os seus gastos durante um mês para ter uma ideia clara de onde seu [dinheiro](/posts/economizar-nas-compras-do-supermercado) está indo. Isso pode ajudá-lo a identificar áreas em que você pode cortar gastos e economizar [dinheiro](/posts/economize-na-conta-de-energia).
 

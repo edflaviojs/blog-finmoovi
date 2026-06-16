@@ -33,7 +33,7 @@ For example, if you want to buy a house worth R$ 200,000, you'll need to save R$
 ## Managing Expenses
 Managing expenses is a crucial part of [financial planning](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-). This includes identifying areas where you can cut back on expenses and reduce unnecessary spending. A practical tip is to create a [budget](/en/posts/50-30-20-rule-complete-guide) and track all your expenses for a month. This will help identify areas where you can save [money](/en/posts/negotiating-discounts-on-fixed-bills).
 
-**Practical tip:** use a financial management app, like [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), to track your expenses and create a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)). With FinMoovi, you can categorize your expenses and identify areas where you can save [money](/en/posts/avoid-impulse-purchases).
+**Practical tip:** use a financial management app, like [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), to track your expenses and create a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)). With [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), you can categorize your expenses and identify areas where you can save [money](/en/posts/avoid-impulse-purchases).
 
 ![Gerenciando gastos](/images/posts/planejamento-financeiro-para-autonomos-3.webp)
 

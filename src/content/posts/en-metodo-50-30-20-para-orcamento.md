@@ -74,4 +74,4 @@ To keep your [budget](/en/posts/how-to-create-personal-budget) under control, yo
 - Note down new expenses or income.
 - Review your budget to ensure it's within the planned.
 
-**Want to automate this control? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) — it automatically categorizes expenses and generates reports without effort.**
+**Want to automate this control? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — it automatically categorizes expenses and generates reports without effort.**

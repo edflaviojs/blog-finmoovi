@@ -30,7 +30,7 @@ O [dólar](/posts/cotacoes-semana-4-maio-2026) americano (USD) fechou a semana e
 
 ## [Selic](/glossario/selic) e Impacto nos Investimentos
 
-A taxa Selic, que é a taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas) brasileira, permaneceu estável durante a semana. No entanto, é importante lembrar que as decisões do Comitê de Política Monetária (COPOM) sobre a Selic podem influenciar diretamente os juros de empréstimos e investimentos. Uma taxa Selic mais alta pode tornar os empréstimos mais caros, mas também pode aumentar os rendimentos de investimentos como títulos públicos e CDBs. É fundamental acompanhar essas decisões para ajustar suas estratégias de investimento.
+A taxa Selic, que é a taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas) brasileira, permaneceu estável durante a semana. No entanto, é importante lembrar que as decisões do Comitê de Política Monetária (COPOM) sobre a Selic podem influenciar diretamente os juros de empréstimos e investimentos. Uma taxa Selic mais alta pode tornar os empréstimos mais caros, mas também pode aumentar os rendimentos de investimentos como títulos públicos e CDBs. É fundamental acompanhar essas decisões para ajustar suas estratégias de [investimento](/posts/tesouro-direto-para-iniciantes).
 
 ![Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-3-junho-2026-inline-3.webp)
 
@@ -38,7 +38,7 @@ A taxa Selic, que é a taxa básica de [juros](/glossario/juros) da [economia](/
 
 ## Dica Prática para o Investidor Pessoa Física
 
-Uma dica valiosa para os investidores pessoa física é diversificar seus investimentos, incluindo ativos em diferentes moedas. Isso pode ajudar a reduzir o risco e aumentar as oportunidades de ganhos. O [FinMoovi](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com.br/) é uma ferramenta útil que pode ajudá-lo a acompanhar seus investimentos em múltiplas moedas de forma fácil e eficiente. Com o FinMoovi, você pode ter uma visão clara de seus investimentos e tomar decisões informadas para alcançar seus objetivos financeiros.
+Uma dica valiosa para os investidores pessoa física é diversificar seus investimentos, incluindo ativos em diferentes moedas. Isso pode ajudar a reduzir o risco e aumentar as oportunidades de ganhos. O [FinMoovi](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com.br/) é uma ferramenta útil que pode ajudá-lo a acompanhar seus investimentos em múltiplas moedas de forma fácil e eficiente. Com o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), você pode ter uma visão clara de seus investimentos e tomar decisões informadas para alcançar seus objetivos financeiros.
 
 ## O que Esperar para a Próxima Semana
 

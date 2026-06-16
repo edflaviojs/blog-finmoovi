@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Entendiendo el [Método 50-30-20](/es/posts/metodo-50-30-20-para-orcamento)
-El método 50-30-20 es una aproximación simple y eficaz para gestionar tus finanzas. La idea es dividir tu salario en tres categorías: necesidades esenciales (50%), deseos y ocio (30%) y [ahorro](/es/posts/negociar-descuentos-en-cuentas-fijas) e inversiones (20%). Vamos aplicar este método a un salario brasileño de R$ 4.000,00 por mes.
+El método 50-30-20 es una aproximación simple y eficaz para gestionar tus finanzas. La idea es dividir tu salario en tres categorías: necesidades esenciales (50%), deseos y ocio (30%) y [ahorro](/es/posts/negociar-descuentos-en-cuentas-fijas) e [inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) (20%). Vamos aplicar este método a un salario brasileño de R$ 4.000,00 por mes.
 
 | Categoría | Porcentaje | Valor (R$) |
 | --- | --- | --- |
@@ -58,7 +58,7 @@ La categoría de ahorro e inversiones es fundamental para el futuro financiero. 
 El método 50-30-20 es una aproximación flexible y puede ser ajustada de acuerdo con las necesidades individuales. Por ejemplo, si tienes una deuda de alto valor, puedes asignar más del 20% de tu salario para pago de deudas. O, si estás ahorrando para un objetivo específico, como la compra de una casa, puedes asignar más del 20% de tu salario para ahorro.
 
 ## Comienza con 5 minutos por día
-Comienza a aplicar el método 50-30-20 hoy mismo. Reserva 5 minutos por día para revisar tus finanzas y ajustar tu [presupuesto](/es/posts/como-crear-presupuesto-personal). Con el tiempo, te volverás más consciente de tus gastos y más eficaz en gestionar tus finanzas.
+Comienza a aplicar el método 50-30-20 hoy mismo. Reserva 5 minutos por día para revisar tus finanzas y ajustar tu [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal). Con el tiempo, te volverás más consciente de tus gastos y más eficaz en gestionar tus finanzas.
 
 ---
 

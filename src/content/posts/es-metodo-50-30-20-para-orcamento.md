@@ -38,7 +38,7 @@ Para empezar a aplicar el método 50-30-20, necesita tener una visión clara de 
 1. **Liste sus ingresos:** Anote todos sus ganancias mensuales, incluyendo salario, rendimientos de inversiones, etc.
 2. **Liste sus gastos:** Separe sus gastos en necesidades y deseos. Incluya aquí cuentas de servicios, compras de supermercado, transporte, ocio, etc.
 3. **Calcule el porcentaje:** Con base en sus ingresos y gastos, calcule el porcentaje que cada categoría ocupa de su [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal).
-4. **Ajuste sus gastos:** Si es necesario, haga ajustes para que su presupuesto se ajuste al método 50-30-20.
+4. **Ajuste sus gastos:** Si es necesario, haga ajustes para que su [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/reducir-gastos-fijos-mensuales)-personal) se ajuste al método 50-30-20.
 
 ![Organizando sus Finanzas](/images/posts/metodo-50-30-20-para-orcamento-2.webp)
 
