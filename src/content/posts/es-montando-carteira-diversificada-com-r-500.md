@@ -16,7 +16,7 @@ seo:
   keywords: ["inversión","cartera diversificada","R$500","riesgos","gestión financiera","rendimiento","diversificar inversiones","invertir 500 reales"]
 ---
 
-## Introducción a la Inversión
+## Introducción a la [Inversión](/es/posts/tesouro-direto-para-iniciantes)
 Cuando se habla de invertir, muchas personas piensan que es necesario tener un gran capital para empezar. Sin embargo, es posible montar una cartera diversificada con solo R$500. Para ello, es importante entender lo que significa diversificar y por qué es importante. Diversificar significa distribuir tus [inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) en diferentes tipos de activos, como [acciones](/es/glossario/es-acoes), títulos, fondos de inversión, etc., para reducir el riesgo de pérdidas. Imagina que tienes R$500 y decides invertir todo en una sola acción. Si esa acción cae, perderás todo tu inversión. Ya si distribuyes esos R$500 en diferentes activos, el riesgo de pérdida será menor.
 
 ## Tipos de Inversiones
@@ -49,4 +49,4 @@ Ahora que has entendido los conceptos básicos de inversión y diversificación,
 
 
 
-Para acompañar tus inversiones en un solo lugar, [prueba el FinMoovi gratis por 7 días](https://finmoovi.com) — multi-moneda, informes inteligentes y 100% offline.
+Para acompañar tus inversiones en un solo lugar, [prueba el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis por 7 días](https://finmoovi.com) — multi-moneda, informes inteligentes y 100% offline.

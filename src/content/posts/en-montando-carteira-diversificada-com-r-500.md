@@ -16,7 +16,7 @@ seo:
   keywords: ["investment","diversified portfolio","R$500","risks","financial management","income","diversify investments","invest 500 reals"]
 ---
 
-## Introduction to Investment
+## Introduction to [Investment](/en/posts/tesouro-direto-para-iniciantes)
 When it comes to investing, many people think that having a large capital is necessary to start. However, it is possible to build a diversified portfolio with just R$500. To do this, it's essential to understand what diversification means and why it's important. Diversification means distributing your investments across different types of assets, such as [stocks](/en/glossario/en-acoes), bonds, investment funds, etc., to reduce the risk of losses. Imagine you have R$500 and decide to invest it all in a single stock. If that stock falls, you'll lose your entire investment. But if you distribute those R$500 across different assets, the risk of loss will be lower.
 
 ## Types of Investments
@@ -49,4 +49,4 @@ Now that you've understood the basic concepts of investment and diversification,
 
 
 
-To track your investments in one place, [try FinMoovi for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.
+To track your investments in one place, [try [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.

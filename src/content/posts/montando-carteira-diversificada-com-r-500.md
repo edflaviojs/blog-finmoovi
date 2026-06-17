@@ -16,8 +16,8 @@ seo:
   keywords: ["investimento","carteira diversificada","R$500","riscos","gerenciamento financeiro","rendimento","diversificar investimentos","investir 500 reais"]
 ---
 
-## Introdução ao Investimento
-Quando se fala em investir, muitas pessoas pensam que é necessário ter um grande capital para começar. No entanto, é possível montar uma carteira diversificada com apenas R$500. Para isso, é importante entender o que significa diversificar e por que isso é importante. Diversificar significa distribuir seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) em diferentes tipos de ativos, como ações, títulos, fundos de investimento, etc., para reduzir o risco de perdas. Imagine que você tem R$500 e decide investir tudo em uma única ação. Se essa ação cair, você perderá todo o seu investimento. Já se você distribuir esses R$500 em diferentes ativos, o risco de perda será menor.
+## Introdução ao [Investimento](/posts/tesouro-direto-para-iniciantes)
+Quando se fala em investir, muitas pessoas pensam que é necessário ter um grande capital para começar. No entanto, é possível montar uma carteira diversificada com apenas R$500. Para isso, é importante entender o que significa diversificar e por que isso é importante. Diversificar significa distribuir seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) em diferentes tipos de ativos, como [ações](/glossario/acoes), títulos, [fundos](/glossario/fundos) de investimento, etc., para reduzir o risco de perdas. Imagine que você tem R$500 e decide investir tudo em uma única ação. Se essa ação cair, você perderá todo o seu investimento. Já se você distribuir esses R$500 em diferentes ativos, o risco de perda será menor.
 
 ## Tipos de Investimentos
 Existem muitos tipos de investimentos disponíveis no mercado. Alguns exemplos incluem:
@@ -49,4 +49,4 @@ Agora que você entendeu os conceitos básicos de investimento e [diversificaç�
 
 
 
-Para acompanhar seus investimentos em um só lugar, [teste o FinMoovi grátis por 7 dias](https://finmoovi.com) — multi-moeda, relatórios inteligentes e 100% offline.
+Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis por 7 dias](https://finmoovi.com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.
