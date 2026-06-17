@@ -55,7 +55,7 @@ La parte de la [economía](/es/posts/ahorrando-en-las-compras-del-supermercado) 
 
 
 
-**Consejo práctico:** Comience pequeño. Aunque no pueda alcanzar los 20% de [economía](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito) de inmediato, empezar con 10% o 5% ya es un gran paso. Aumente gradualmente a medida que se ajusta al nuevo presupuesto.
+**Consejo práctico:** Comience pequeño. Aunque no pueda alcanzar los 20% de [economía](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito) de inmediato, empezar con 10% o 5% ya es un gran paso. Aumente gradualmente a medida que se ajusta al nuevo [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal).
 
 ## Gestionando Deseos y Necesidades
 Es importante mantener un equilibrio entre lo que necesita y lo que desea. Aquí están algunas [consejos](/es/posts/7-errores-financieros-principiante) para gestionar mejor estas categorías:

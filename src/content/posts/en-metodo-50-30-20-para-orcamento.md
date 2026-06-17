@@ -21,7 +21,7 @@ The 50-30-20 method is a simple and effective strategy for managing your finance
 
 - **Needs (50%):** Includes essential expenses such as rent, food, water, electricity, internet, transportation, and other basic expenses.
 - **Desires (30%):** Here you include expenses that are not essential, but that improve your quality of life, such as entertainment, travel, hobbies, and personal purchases.
-- **Savings (20%):** This part of your salary should be destined for savings, [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), debt repayment, and emergency funds.
+- **[Savings](/en/posts/smart-cashback) (20%):** This part of your salary should be destined for savings, [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), debt repayment, and emergency funds.
 
 ### Practical Example
 Let's consider a salary of R$ 4,000.00 per month. Applying the 50-30-20 method, we would have:

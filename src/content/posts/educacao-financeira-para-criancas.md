@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Ensino de Valores Financeiros
-Ensinar [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) para crianças é essencial para ajudá-las a entender o valor do dinheiro e como gerenciá-lo de forma eficaz. Desde cedo, é importante que elas aprendam a diferenciar necessidades e desejos, e como priorizar gastos. Por exemplo, se uma criança de 10 anos ganha R$ 50 por semana como mesada, ela pode aprender a dividir esse valor em três categorias: 50% para necessidades (como comprar materiais escolares), 30% para [poupança](/glossario/poupanca) e 20% para desejos (como comprar brinquedos ou doces).
+Ensinar [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) para crianças é essencial para ajudá-las a entender o valor do [dinheiro](/posts/criar-reserva-de-emergencia) e como gerenciá-lo de forma eficaz. Desde cedo, é importante que elas aprendam a diferenciar necessidades e desejos, e como priorizar gastos. Por exemplo, se uma criança de 10 anos ganha R$ 50 por semana como mesada, ela pode aprender a dividir esse valor em três categorias: 50% para necessidades (como comprar materiais escolares), 30% para [poupança](/glossario/poupanca) e 20% para desejos (como comprar brinquedos ou doces).
 
 ## Práticas para o Dia a Dia
 Uma forma prática de ensinar finanças é criar um sistema de recompensas e penalidades para gastos. Por exemplo, se a criança economizar R$ 10 por semana durante um mês, ela pode ganhar uma recompensa, como ir ao cinema ou comprar um brinquedo. Já se ela gastar todo o dinheiro em uma semana, ela pode perder a recompensa. **Dica prática:** crie um quadro de gastos semanais com a criança para que ela possa acompanhar seus gastos e entender onde está indo o dinheiro.
@@ -30,7 +30,7 @@ Na fase escolar, as crianças começam a entender melhor o conceito de dinheiro 
 
 
 ## Ensino de [Economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz)
-A economia é um conceito importante para as crianças entenderem, pois ajuda a explicar como as pessoas e as sociedades tomam decisões sobre como alocar recursos escassos. Por exemplo, se uma família tem um [orçamento](/posts/como-criar-orcamento-pessoal) de R$ 3.000 por mês para gastos, ela precisa decidir como alocar esse dinheiro entre necessidades como aluguel, comida e transporte, e desejos como viagens e entretenimento. **Dica prática:** crie um jogo de orçamento com a criança para que ela possa praticar alocar recursos e tomar decisões financeiras.
+A [economia](/posts/cashback-inteligente) é um conceito importante para as crianças entenderem, pois ajuda a explicar como as pessoas e as sociedades tomam decisões sobre como alocar recursos escassos. Por exemplo, se uma família tem um [orçamento](/posts/como-criar-orcamento-pessoal) de R$ 3.000 por mês para gastos, ela precisa decidir como alocar esse dinheiro entre necessidades como aluguel, comida e transporte, e desejos como viagens e entretenimento. **Dica prática:** crie um jogo de orçamento com a criança para que ela possa praticar alocar recursos e tomar decisões financeiras.
 
 ## Planejamento Financeiro
 O planejamento financeiro é fundamental para as crianças entenderem como criar metas e trabalhar para alcançá-las. Por exemplo, se uma criança de 15 anos quer comprar um celular que custa R$ 800, ela pode criar um plano para economizar R$ 100 por mês durante 8 meses para alcançar sua meta. **Dica prática:** crie um plano de ação com a criança para que ela possa acompanhar seu progresso e ajustar seu plano conforme necessário.

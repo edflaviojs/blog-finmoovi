@@ -45,7 +45,7 @@ Once you've identified your triggers, it's time to create an action plan to avoi
 For example, if you like to read, instead of buying books, you can go to the library or download reading apps that offer free books. If you like to cook, instead of buying expensive ingredients, you can look for recipes that use more affordable ingredients.
 
 ## Track Your Expenses
-One of the main reasons people lose control of their expenses is the lack of tracking. It's essential to track all your expenses, including small ones, to get a clear idea of where your [money](/en/posts/financial-planning-for-couples) is going. This can be done with a financial management app, such as [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), which allows you to track your expenses and create a personalized [budget](/en/posts/how-to-create-personal-budget).
+One of the main reasons people lose control of their expenses is the lack of tracking. It's essential to track all your expenses, including small ones, to get a clear idea of where your [money](/en/posts/financial-planning-for-couples) is going. This can be done with a financial management app, such as [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), which allows you to track your expenses and create a personalized [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)).
 
 **Practical tip:** Track all your expenses for a month to get a clear idea of where your [money](/en/posts/financial-planning-for-freelancers) is going. This can help you identify areas where you can cut back and save [money](/en/posts/negotiating-discounts-on-fixed-bills).
 
@@ -66,4 +66,4 @@ Now that you know how to avoid impulse purchases, it's time to start putting the
 
 
 ---
-**Want to put theory into practice? [Download FinMoovi for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No card, no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No card, no commitment.**

@@ -22,7 +22,7 @@ When you're in a relationship, it's important that you and your partner are alig
 A good idea is to create a [budget](/en/posts/50-30-20-rule-complete-guide) together, considering all monthly expenses like rent, food, transportation, etc. For example, if you pay R$ 2,500 in rent and R$ 1,000 in food per month, that's already R$ 3,500 in fixed expenses. It's also important to consider variable expenses like entertainment and leisure.
 
 ## Expenses and [Savings](/en/posts/financial-education-for-children)
-It's essential that you and your partner have an open conversation about expenses and savings. **Practical tip:** create a "fun [money](/en/posts/organizing-finances-as-a-freelancer)" category in your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) so you can spend a little on things you enjoy without feeling guilty. For example, you might decide to spend R$ 500 per month on restaurants and movies.
+It's essential that you and your partner have an open conversation about expenses and [savings](/en/posts/smart-cashback). **Practical tip:** create a "fun [money](/en/posts/organizing-finances-as-a-freelancer)" category in your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) so you can spend a little on things you enjoy without feeling guilty. For example, you might decide to spend R$ 500 per month on restaurants and movies.
 
 Here are some tips to [save money](/en/posts/reduce-fixed-expenses):
 * Cut unnecessary expenses, like subscriptions to services you don't use

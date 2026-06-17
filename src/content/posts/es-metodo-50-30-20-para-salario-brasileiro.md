@@ -23,7 +23,7 @@ El método 50-30-20 es una aproximación simple y eficaz para gestionar tus fina
 | --- | --- | --- |
 | Necesidades Esenciales | 50% | 2.000,00 |
 | Deseos y Ocio | 30% | 1.200,00 |
-| Ahorro e Inversiones | 20% | 800,00 |
+| [Ahorro](/es/posts/regla-de-los-30-dias-para-compras) e Inversiones | 20% | 800,00 |
 
 ## Asignando Necesidades Esenciales
 Las necesidades esenciales incluyen gastos como alquiler, cuentas de agua, luz, internet, comida y transporte. Es importante identificar cuáles son tus necesidades esenciales y asignar 50% de tu salario para estos gastos. Por ejemplo, si ganas R$ 4.000,00 por mes, debes asignar R$ 2.000,00 para necesidades esenciales.
@@ -66,4 +66,4 @@ Comienza a aplicar el método 50-30-20 hoy mismo. Reserva 5 minutos por día par
 
 
 
-**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

@@ -37,7 +37,7 @@ Para evitar compras por impulso, es importante identificar los gatillos que te l
 
 ## Creando un Plan de Acción
 Una vez que hayas identificado los gatillos, es hora de crear un plan de acción para evitar compras por impulso. Esto puede incluir:
-* Definir un [presupuesto](/es/posts/como-crear-presupuesto-personal) para compras innecesarias
+* Definir un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) para compras innecesarias
 * Crear una lista de compras antes de ir al supermercado o tienda
 * Evitar comprar cosas que no necesitas
 * Encontrar maneras de divertirte sin gastar [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado)
@@ -45,7 +45,7 @@ Una vez que hayas identificado los gatillos, es hora de crear un plan de acción
 Por ejemplo, si te gusta leer, en lugar de comprar libros, puedes ir a la biblioteca o descargar aplicaciones de lectura que ofrecen libros gratuitos. Si te gusta cocinar, en lugar de comprar ingredientes caros, puedes buscar recetas que utilicen ingredientes más accesibles.
 
 ## Registra Tus Gastos
-Una de las principales razones por las que las personas pierden el control de sus gastos es la falta de registro. Es importante registrar todos tus gastos, incluyendo los pequeños, para tener una idea clara de dónde está yendo tu [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito). Esto puede hacerse con una aplicación de gestión financiera, como el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro), que te permite registrar tus gastos y crear un presupuesto personalizado.
+Una de las principales razones por las que las personas pierden el control de sus gastos es la falta de registro. Es importante registrar todos tus gastos, incluyendo los pequeños, para tener una idea clara de dónde está yendo tu [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito). Esto puede hacerse con una aplicación de gestión financiera, como el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro), que te permite registrar tus gastos y crear un [presupuesto](/es/posts/reducir-gastos-fijos-mensuales) personalizado.
 
 **Consejo práctico:** Registra todos tus gastos durante un mes para tener una idea clara de dónde está yendo tu [dinero](/es/posts/crear-reserva-de-emergencia). Esto puede ayudarte a identificar áreas en las que puedes cortar gastos y ahorrar [dinero](/es/posts/diferencia-entre-invertir-y-ahorrar).
 

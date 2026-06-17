@@ -30,7 +30,7 @@ The 50-30-20 rule is one of the simplest and most effective methods for managing
 |----------|-----------|--------|
 | Needs | 50% | $2,000 |
 | Wants | 30% | $1,200 |
-| Savings | 20% | $800 |
+| [Savings](/en/posts/smart-cashback) | 20% | $800 |
 
 ## What Counts as "Needs" (50%)
 
