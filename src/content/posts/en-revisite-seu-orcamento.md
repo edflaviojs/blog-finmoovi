@@ -21,7 +21,7 @@ translate: true
 ## Introduction
 We've reached the middle of the year, a perfect time to reflect on our finances and make necessary adjustments. If you're like most people, you probably started the year with big plans and financial goals, but along the way, things might have gone a bit off track. In this article, we'll explore why it's essential to review your [budget](/en/posts/50-30-20-rule-complete-guide) halfway through the year and provide practical tips on how to do it effectively.
 
-## Why Review Your Budget?
+## Why Review Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro))?
 Reviewing your budget halfway through the year is crucial for several reasons. First, it helps ensure you're on the right path to achieving your financial goals. If you set goals at the beginning of the year, such as saving for a trip or paying off debt, a mid-year review can help you identify if you're progressing as planned.
 
 Additionally, financial conditions can change significantly in just six months. You might have received a salary increase, changed jobs, or faced unexpected expenses. A mid-year review allows you to adjust your budget to reflect these changes and continue managing your [money](/en/posts/30-day-rule-for-purchases) effectively.

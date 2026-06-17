@@ -45,7 +45,7 @@ Una vez que hayas identificado los gatillos, es hora de crear un plan de acción
 Por ejemplo, si te gusta leer, en lugar de comprar libros, puedes ir a la biblioteca o descargar aplicaciones de lectura que ofrecen libros gratuitos. Si te gusta cocinar, en lugar de comprar ingredientes caros, puedes buscar recetas que utilicen ingredientes más accesibles.
 
 ## Registra Tus Gastos
-Una de las principales razones por las que las personas pierden el control de sus gastos es la falta de registro. Es importante registrar todos tus gastos, incluyendo los pequeños, para tener una idea clara de dónde está yendo tu [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito). Esto puede hacerse con una aplicación de gestión financiera, como el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro), que te permite registrar tus gastos y crear un [presupuesto](/es/posts/reducir-gastos-fijos-mensuales) personalizado.
+Una de las principales razones por las que las personas pierden el control de sus gastos es la falta de registro. Es importante registrar todos tus gastos, incluyendo los pequeños, para tener una idea clara de dónde está yendo tu [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito). Esto puede hacerse con una aplicación de [gestión financiera](/es/posts/montando-carteira-diversificada-com-r-500), como el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro), que te permite registrar tus gastos y crear un [presupuesto](/es/posts/reducir-gastos-fijos-mensuales) personalizado.
 
 **Consejo práctico:** Registra todos tus gastos durante un mes para tener una idea clara de dónde está yendo tu [dinero](/es/posts/crear-reserva-de-emergencia). Esto puede ayudarte a identificar áreas en las que puedes cortar gastos y ahorrar [dinero](/es/posts/diferencia-entre-invertir-y-ahorrar).
 
@@ -66,4 +66,4 @@ Ahora que sabes cómo evitar compras por impulso, es hora de comenzar a poner en
 
 
 ---
-**¿Quieres salir de la teoría? [Descarga el FinMoovi gratis por 7 días](https://finmoovi.com) y comienza a registrar tus gastos hoy. Sin tarjeta, sin compromiso.**
+**¿Quieres salir de la teoría? [Descarga el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis por 7 días](https://finmoovi.com) y comienza a registrar tus gastos hoy. Sin tarjeta, sin compromiso.**

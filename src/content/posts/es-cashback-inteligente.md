@@ -23,7 +23,7 @@ El cashback es una herramienta que muchos de nosotros usamos diariamente, pero n
 Para usar el cashback de forma inteligente, es fundamental escoger la tarjeta de crédito correcta. Existen muchas tarjetas en el mercado que ofrecen diferentes tasas de cashback y beneficios. Algunas tarjetas pueden ofrecer 10% de cashback en compras de supermercado, mientras que otras pueden ofrecer 5% en compras de combustible. Es importante evaluar tus gastos mensuales y escoger una tarjeta que ofrezca los mejores beneficios para ti. Por ejemplo, si gastas $500 por mes en supermercado, una tarjeta que ofrece 10% de cashback en esa categoría puede ser más ventajosa que una tarjeta que ofrece 5% en todas las compras.
 
 ## Maximizando el Cashback
-**Consejo práctico:** Usa tu tarjeta de crédito para todas las compras, incluyendo las pequeñas, como snacks y café. Esto puede parecer obvio, pero muchas personas aún usan [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) para estas compras y pierden la oportunidad de ganar cashback. Además, es importante recordar que el cashback es una forma de ahorrar dinero, así que es fundamental no gastar más de lo necesario solo para ganar cashback. Por ejemplo, si necesitas comprar un producto que cuesta $100, no compres un producto de $200 solo porque ofrece más cashback.
+**Consejo práctico:** Usa tu tarjeta de crédito para todas las compras, incluyendo las pequeñas, como snacks y café. Esto puede parecer obvio, pero muchas personas aún usan [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) para estas compras y pierden la oportunidad de ganar cashback. Además, es importante recordar que el cashback es una forma de ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado), así que es fundamental no gastar más de lo necesario solo para ganar cashback. Por ejemplo, si necesitas comprar un producto que cuesta $100, no compres un producto de $200 solo porque ofrece más cashback.
 
 ![Escogiendo la Tarjeta Correcta](/images/posts/cashback-inteligente-2.webp)
 
@@ -37,7 +37,7 @@ Es importante recordar que el cashback no siempre es una ventaja. Algunas tarjet
 
 
 ## Comienza hoy
-Ahora que entiendes cómo usar el cashback de forma inteligente, es hora de comenzar a ahorrar. Recuerda que el cashback es solo una herramienta para ayudarte a ahorrar dinero, así que es fundamental tener un presupuesto y una estrategia de ahorro más amplia. Con los [consejos](/es/posts/7-errores-financieros-principiante) prácticos correctos y una tarjeta de crédito que ofrece los mejores beneficios para ti, puedes comenzar a ganar más dinero de vuelta y alcanzar tus objetivos financieros.
+Ahora que entiendes cómo usar el cashback de forma inteligente, es hora de comenzar a ahorrar. Recuerda que el cashback es solo una herramienta para ayudarte a ahorrar [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado), así que es fundamental tener un presupuesto y una estrategia de ahorro más amplia. Con los [consejos](/es/posts/7-errores-financieros-principiante) prácticos correctos y una tarjeta de crédito que ofrece los mejores beneficios para ti, puedes comenzar a ganar más dinero de vuelta y alcanzar tus objetivos financieros.
 
 ![Evitando Trampas](/images/posts/cashback-inteligente-4.webp)
 

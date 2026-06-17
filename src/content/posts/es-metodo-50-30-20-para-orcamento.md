@@ -48,7 +48,7 @@ Para empezar a aplicar el método 50-30-20, necesita tener una visión clara de 
 La parte de la [economía](/es/posts/ahorrando-en-las-compras-del-supermercado) es crucial para su futuro financiero. Aquí, puede considerar diferentes opciones para aplicar su [dinero](/es/posts/diferencia-entre-invertir-y-ahorrar).
 
 - **Poupança:** Una buena opción para empezar a ahorrar, ya que es de bajo riesgo y fácil acceso.
-- **Inversiones:** Existen varias opciones de inversión, como [acciones](/es/glossario/es-acoes), fondos de inversión, títulos de deuda, etc. Es importante entender los riesgos y beneficios de cada opción antes de invertir.
+- **Inversiones:** Existen varias opciones de [inversión](/es/posts/montando-carteira-diversificada-com-r-500), como [acciones](/es/glossario/es-acoes), fondos de inversión, títulos de deuda, etc. Es importante entender los riesgos y beneficios de cada opción antes de invertir.
 - **Pago de deudas:** Si tiene deudas con intereses altos, puede ser una buena idea usar parte de su [dinero](/es/posts/evite-compras-por-impulso) para pagarlas.
 
 ![Ahorrando e Inviertiendo](/images/posts/metodo-50-30-20-para-orcamento-3.webp)
@@ -69,7 +69,7 @@ Es importante mantener un equilibrio entre lo que necesita y lo que desea. Aquí
 
 
 ## Comience con 5 minutos por día
-Para mantener su presupuesto bajo control, no es necesario dedicar horas todos los días. Con solo 5 minutos por día, puede:
+Para mantener su [presupuesto](/es/posts/como-crear-presupuesto-personal) bajo control, no es necesario dedicar horas todos los días. Con solo 5 minutos por día, puede:
 - Verificar sus cuentas bancarias para garantizar que no hubo gastos indebidos.
 - Anotar nuevos gastos o ingresos.
 - Revisar su presupuesto para garantizar que está dentro del planeado.

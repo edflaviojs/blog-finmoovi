@@ -32,7 +32,7 @@ Un ejemplo de cómo funciona la previsión privada: imagine que usted invierte $
 
 ## Cómo funciona Invertir por Cuenta Propia
 
-Invertir por cuenta propia significa que usted mismo elige las inversiones y administra su [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Esto puede incluir inversiones en [acciones](/es/glossario/es-acoes), títulos, fondos de inversión, bienes raíces, entre otros. Esta opción ofrece más flexibilidad y control sobre las inversiones, pero también exige más conocimiento y habilidad para gestionar los riesgos.
+Invertir por cuenta propia significa que usted mismo elige las inversiones y administra su [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Esto puede incluir inversiones en [acciones](/es/glossario/es-acoes), títulos, fondos de [inversión](/es/posts/montando-carteira-diversificada-com-r-500), bienes raíces, entre otros. Esta opción ofrece más flexibilidad y control sobre las inversiones, pero también exige más conocimiento y habilidad para gestionar los riesgos.
 
 Un ejemplo de cómo funciona invertir por cuenta propia: imagine que usted invierte $1.000 por mes en un fondo de inversión en acciones, con una tasa de administración del 1,5% anual. Si el fondo tiene un desempeño promedio del 10% anual, usted podrá tener un patrimonio de aproximadamente $300.000 después de 10 años.
 

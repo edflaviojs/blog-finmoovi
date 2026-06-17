@@ -16,7 +16,7 @@ seo:
   keywords: ["50-30-20 rule", "how to split salary", "organize finances", "budget method"]
 ---
 
-The 50-30-20 rule is one of the simplest and most effective methods for managing your [money](/en/posts/30-day-rule-for-purchases). Created by Senator Elizabeth Warren, it divides your after-tax income into three categories.
+The 50-30-20 rule is one of the simplest and most effective methods for managing your [money](/en/posts/30-day-rule-for-purchases). Created by Senator Elizabeth Warren, it divides your after-tax [income](/en/posts/montando-carteira-diversificada-com-r-500) into three categories.
 
 ## How the 50-30-20 Rule Works
 

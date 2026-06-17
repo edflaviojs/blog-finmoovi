@@ -74,4 +74,4 @@ Si usted está usando una hoja de cálculo para gestionar sus finanzas, es impor
 
 
 
-No pierda más tiempo con hojas de cálculo complicadas y difíciles de mantener. Pruebe el FinMoovi hoy mismo y descubra cómo él puede ayudarlo a alcanzar sus objetivos financieros. Haga clic en el enlace a continuación para comenzar su jornada hacia una gestión financiera más eficaz. [Si la hoja de cálculo no está funcionando, pruebe el FinMoovi por 7 días](link para el FinMoovi)
+No pierda más tiempo con hojas de cálculo complicadas y difíciles de mantener. Pruebe el FinMoovi hoy mismo y descubra cómo él puede ayudarlo a alcanzar sus objetivos financieros. Haga clic en el enlace a continuación para comenzar su jornada hacia una [gestión financiera](/es/posts/montando-carteira-diversificada-com-r-500) más eficaz. [Si la hoja de cálculo no está funcionando, pruebe el FinMoovi por 7 días](link para el FinMoovi)

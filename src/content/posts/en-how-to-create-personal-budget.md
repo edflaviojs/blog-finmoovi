@@ -28,7 +28,7 @@ A good [budget](/en/posts/metodo-50-30-20-para-salario-brasileiro) helps you:
 - Set and achieve financial goals
 - Reduce financial stress
 
-## Step 1: Calculate Your Net Income
+## Step 1: Calculate Your Net [Income](/en/posts/montando-carteira-diversificada-com-r-500)
 
 Your net income is what actually hits your bank account after taxes and deductions. Include all sources: salary, freelance work, [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), etc.
 

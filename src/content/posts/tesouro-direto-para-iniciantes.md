@@ -40,7 +40,7 @@ Existem vários tipos de títulos disponíveis no Tesouro Direto, cada um com su
 Por exemplo, se você investir R$5.000 em um título LTN com prazo de 5 anos e juros de 6% ao ano, você receberá R$5.638,49 após o vencimento, considerando [juros compostos](/glossario/juros-compostos) anualmente.
 
 ## Riscos
-Embora o Tesouro Direto seja considerado um investimento de baixo risco, existem alguns riscos a considerar:
+Embora o Tesouro Direto seja considerado um [investimento](/posts/montando-carteira-diversificada-com-r-500) de baixo risco, existem alguns riscos a considerar:
 
 * Risco de inflação: se a inflação aumentar, o valor real do seu investimento pode diminuir.
 * Risco de liquidez: se você precisar resgatar seus títulos antes do vencimento, pode haver perda de juros.

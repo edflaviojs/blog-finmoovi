@@ -74,4 +74,4 @@ If you're using a spreadsheet to manage your finances, it's essential to conside
 
 
 
-Don't waste any more time with complicated and difficult-to-maintain spreadsheets. Try FinMoovi today and discover how it can help you achieve your financial goals. Click the link below to start your journey to more effective financial management. [If the spreadsheet isn't working, try FinMoovi for 7 days](link to FinMoovi)
+Don't waste any more time with complicated and difficult-to-maintain spreadsheets. Try FinMoovi today and discover how it can help you achieve your financial goals. Click the link below to start your journey to more effective [financial management](/en/posts/montando-carteira-diversificada-com-r-500). [If the spreadsheet isn't working, try FinMoovi for 7 days](link to FinMoovi)

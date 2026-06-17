@@ -40,7 +40,7 @@ Gerenciar gastos é uma parte importante do planejamento financeiro. Isso inclui
 
 
 ## Investindo no futuro
-Investir no futuro é uma parte importante do planejamento financeiro. Isso pode incluir investir em [ações](/glossario/acoes), títulos, [fundos](/glossario/fundos) de investimento ou outras opções de investimento. É importante pesquisar e entender os riscos e benefícios de cada opção de investimento antes de investir.
+Investir no futuro é uma parte importante do planejamento financeiro. Isso pode incluir investir em [ações](/glossario/acoes), títulos, [fundos](/glossario/fundos) de [investimento](/posts/montando-carteira-diversificada-com-r-500) ou outras opções de investimento. É importante pesquisar e entender os riscos e benefícios de cada opção de investimento antes de investir.
 
 Por exemplo, se você investir R$ 1.000 por mês em um fundo de investimento que rende 10% ao ano, você pode ter cerca de R$ 200.000 em 10 anos. Isso pode ser um bom começo para sua aposentadoria ou para alcançar outros objetivos financeiros.
 
