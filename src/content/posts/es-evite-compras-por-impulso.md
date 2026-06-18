@@ -66,4 +66,4 @@ Ahora que sabes cómo evitar compras por impulso, es hora de comenzar a poner en
 
 
 ---
-**¿Quieres salir de la teoría? [Descarga el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis por 7 días](https://finmoovi.com) y comienza a registrar tus gastos hoy. Sin tarjeta, sin compromiso.**
+**¿Quieres salir de la teoría? [Descarga el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) y comienza a registrar tus gastos hoy. Sin tarjeta, sin compromiso.**

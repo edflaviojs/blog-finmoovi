@@ -47,4 +47,4 @@ Não espere mais para começar a controlar seus gastos no cartão de crédito. C
 
 
 ---
-**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**
+**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**

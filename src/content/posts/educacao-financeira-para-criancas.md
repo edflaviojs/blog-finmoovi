@@ -30,7 +30,7 @@ Na fase escolar, as crianças começam a entender melhor o conceito de [dinheiro
 
 
 ## Ensino de [Economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz)
-A [economia](/posts/cashback-inteligente) é um conceito importante para as crianças entenderem, pois ajuda a explicar como as pessoas e as sociedades tomam decisões sobre como alocar recursos escassos. Por exemplo, se uma família tem um [orçamento](/posts/como-criar-orcamento-pessoal) de R$ 3.000 por mês para gastos, ela precisa decidir como alocar esse [dinheiro](/posts/economize-na-conta-de-energia) entre necessidades como aluguel, comida e transporte, e desejos como viagens e entretenimento. **Dica prática:** crie um jogo de orçamento com a criança para que ela possa praticar alocar recursos e tomar decisões financeiras.
+A [economia](/posts/cashback-inteligente) é um conceito importante para as crianças entenderem, pois ajuda a explicar como as pessoas e as sociedades tomam decisões sobre como alocar recursos escassos. Por exemplo, se uma família tem um [orçamento](/posts/como-criar-orcamento-pessoal) de R$ 3.000 por mês para gastos, ela precisa decidir como alocar esse [dinheiro](/posts/economize-na-conta-de-energia) entre necessidades como aluguel, comida e transporte, e desejos como viagens e entretenimento. **Dica prática:** crie um jogo de [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro) com a criança para que ela possa praticar alocar recursos e tomar decisões financeiras.
 
 ## Planejamento Financeiro
 O planejamento financeiro é fundamental para as crianças entenderem como criar metas e trabalhar para alcançá-las. Por exemplo, se uma criança de 15 anos quer comprar um celular que custa R$ 800, ela pode criar um plano para economizar R$ 100 por mês durante 8 meses para alcançar sua meta. **Dica prática:** crie um plano de ação com a criança para que ela possa acompanhar seu progresso e ajustar seu plano conforme necessário.
@@ -40,7 +40,7 @@ O planejamento financeiro é fundamental para as crianças entenderem como criar
 
 
 ## Comece hoje
-A [educação financeira](/posts/7-erros-financeiros-iniciante) para crianças é um processo contínuo que requer paciência, prática e exemplos reais. Comece hoje a ensinar seus filhos sobre o valor do dinheiro e como gerenciá-lo de forma eficaz. Com prática e consistência, eles estarão bem preparados para tomar decisões financeiras informadas e alcançar suas metas.
+A [educação financeira](/posts/7-erros-financeiros-iniciante) para crianças é um processo contínuo que requer paciência, prática e exemplos reais. Comece hoje a ensinar seus filhos sobre o valor do [dinheiro](/posts/economize-na-conta-do-mercado) e como gerenciá-lo de forma eficaz. Com prática e consistência, eles estarão bem preparados para tomar decisões financeiras informadas e alcançar suas metas.
 
 ![Comece hoje](/images/posts/educacao-financeira-para-criancas-6.webp)
 

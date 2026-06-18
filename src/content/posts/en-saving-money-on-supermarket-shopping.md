@@ -57,4 +57,4 @@ There are many apps and tools that can help you [save money](/en/posts/reduce-fi
 Now that you know how to save [money](/en/posts/save-on-your-market-bill) on supermarket shopping, it's time to start putting these tips into practice. Remember that saving is a continuous process, and every small change can make a big difference in the long run. So, start today by making changes to your supermarket shopping and see how you can save [money](/en/posts/saving-on-your-energy-bill).
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/tips-for-controlling-credit-card-expenses) is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and discover where your [money](/en/posts/tips-for-controlling-credit-card-expenses) is really going.**

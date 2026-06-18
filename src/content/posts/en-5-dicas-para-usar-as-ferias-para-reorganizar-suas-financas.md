@@ -51,4 +51,4 @@ There are many tools available to help you manage your finances. One of them is 
 
 
 ## Conclusion
-Reorganizing your finances may seem like a difficult task, but with the right tips and tools, you can achieve your financial goals. Remember that vacations are a perfect moment to reflect on your expenses and create a plan for the future. Use FinMoovi to control your expenses and avoid surprises at the end of the month. Use FinMoovi to control your expenses and avoid surprises at the end of the month.
+Reorganizing your finances may seem like a difficult task, but with the right tips and tools, you can achieve your financial goals. Remember that vacations are a perfect moment to reflect on your expenses and create a plan for the future. Use [FinMoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) to control your expenses and avoid surprises at the end of the month. Use FinMoovi to control your expenses and avoid surprises at the end of the month.

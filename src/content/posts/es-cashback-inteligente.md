@@ -37,11 +37,11 @@ Es importante recordar que el cashback no siempre es una ventaja. Algunas tarjet
 
 
 ## Comienza hoy
-Ahora que entiendes cómo usar el cashback de forma inteligente, es hora de comenzar a ahorrar. Recuerda que el cashback es solo una herramienta para ayudarte a ahorrar [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado), así que es fundamental tener un [presupuesto](/es/posts/como-crear-presupuesto-personal) y una estrategia de ahorro más amplia. Con los [consejos](/es/posts/7-errores-financieros-principiante) prácticos correctos y una tarjeta de crédito que ofrece los mejores beneficios para ti, puedes comenzar a ganar más [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito) de vuelta y alcanzar tus objetivos financieros.
+Ahora que entiendes cómo usar el cashback de forma inteligente, es hora de comenzar a ahorrar. Recuerda que el cashback es solo una herramienta para ayudarte a ahorrar [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado), así que es fundamental tener un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) y una estrategia de ahorro más amplia. Con los [consejos](/es/posts/7-errores-financieros-principiante) prácticos correctos y una tarjeta de crédito que ofrece los mejores beneficios para ti, puedes comenzar a ganar más [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito) de vuelta y alcanzar tus objetivos financieros.
 
 ![Evitando Trampas](/images/posts/cashback-inteligente-4.webp)
 
 
 
 ---
-**¿Quieres salir de la teoría? [Descarga FinMoovi gratis por 7 días](https://finmoovi.com) y comienza a registrar tus gastos hoy. Sin tarjeta, sin compromiso.**
+**¿Quieres salir de la teoría? [Descarga [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) y comienza a registrar tus gastos hoy. Sin tarjeta, sin compromiso.**

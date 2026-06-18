@@ -68,7 +68,7 @@ O orçamento não é estático. Revise semanalmente e ajuste conforme necessári
 
 ## Comece hoje
 
-Não espere o mês que vem. O melhor momento para começar é agora. Pegue seu celular, abra o FinMoovi e registre seus primeiros gastos. Em uma semana, você já terá uma visão clara de para onde vai seu [dinheiro](/posts/economize-na-conta-de-energia).
+Não espere o mês que vem. O melhor momento para começar é agora. Pegue seu celular, abra o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) e registre seus primeiros gastos. Em uma semana, você já terá uma visão clara de para onde vai seu [dinheiro](/posts/economize-na-conta-de-energia).
 
 ---
 

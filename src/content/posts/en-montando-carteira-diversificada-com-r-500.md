@@ -49,4 +49,4 @@ Now that you've understood the basic concepts of investment and diversification,
 
 
 
-To track your investments in one place, [try [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.
+To track your investments in one place, [try [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) — multi-currency, intelligent reports, and 100% offline.

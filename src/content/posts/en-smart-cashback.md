@@ -44,4 +44,4 @@ Now that you understand how to use cashback intelligently, it's time to start sa
 
 
 ---
-**Want to put theory into practice? [Download FinMoovi for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No card, no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and start tracking your expenses today. No card, no commitment.**

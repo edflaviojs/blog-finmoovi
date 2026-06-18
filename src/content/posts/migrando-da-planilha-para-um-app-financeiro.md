@@ -64,7 +64,7 @@ Aqui está uma checklist para ajudá-lo a decidir se uma planilha ou um app fina
 
 
 ## Conclusão
-Se você está usando uma planilha para gerenciar suas finanças, é importante considerar se ela está funcionando para você. Se você está tendo dificuldade em manter suas finanças atualizadas e consistentes, ou se você precisa de mais mobilidade e automação, um app financeiro pode ser uma boa opção para você. Se a planilha não está funcionando, teste o FinMoovi por 7 dias e veja como ele pode ajudá-lo a gerenciar suas finanças de forma eficaz e fácil. Com o FinMoovi, você pode ter acesso a recursos como:
+Se você está usando uma planilha para gerenciar suas finanças, é importante considerar se ela está funcionando para você. Se você está tendo dificuldade em manter suas finanças atualizadas e consistentes, ou se você precisa de mais mobilidade e automação, um app financeiro pode ser uma boa opção para você. Se a planilha não está funcionando, teste o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) por 7 dias e veja como ele pode ajudá-lo a gerenciar suas finanças de forma eficaz e fácil. Com o FinMoovi, você pode ter acesso a recursos como:
 * Gerenciamento de contas e cartões de crédito
 * Automatização de tarefas financeiras
 * Alertas e notificações personalizados

@@ -54,4 +54,4 @@ Don't wait any longer to start saving on your energy bill. With small changes in
 
 
 ---
-**Want to put this into practice? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with [automatic categorization](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) and visual reports.**

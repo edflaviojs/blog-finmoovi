@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introduction to the Problem
-Have you ever found yourself trying to remember all your expenses for the month, only to realize you forgot to record that coffee you bought on your way to work? Or maybe you lost the receipt for an important purchase and now you're having trouble organizing your finances? If so, you're not alone. Many people struggle to keep track of their personal finances due to a lack of organization and time.
+Have you ever found yourself trying to remember all your expenses for the month, only to realize you forgot to record that coffee you bought on your way to work? Or maybe you lost the receipt for an important purchase and now you're having trouble organizing your finances? If so, you're not alone. Many people struggle to keep track of their [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) due to a lack of organization and time.
 
 ## The Pain of Not Having Control over Your Finances
 Lack of control over your finances can lead to stress, anxiety, and even more serious financial problems, such as debt and low credit scores. Imagine you're trying to save for an important purchase, like a car or a house, but you have no idea how much money you're spending each month. This can make it impossible to achieve your financial goals.
@@ -29,7 +29,7 @@ Additionally, a lack of financial organization can also lead to errors and finan
 
 
 ## The Solution: FinMoovi
-But don't worry, there's a solution to this problem. FinMoovi is a personal finance app that helps you organize and control your finances in an easy and efficient way. With FinMoovi, you can record your expenses quickly and easily, thanks to the Smart Capture feature by voice and OCR. Just take a photo of the receipt or say the value and category of the purchase, and the app will do the rest.
+But don't worry, there's a solution to this problem. FinMoovi is a [personal finance](/en/posts/30-day-rule-for-purchases) app that helps you organize and control your finances in an easy and efficient way. With FinMoovi, you can record your expenses quickly and easily, thanks to the Smart Capture feature by voice and OCR. Just take a photo of the receipt or say the value and category of the purchase, and the app will do the rest.
 
 Additionally, FinMoovi also offers automatic categorization, which makes the process of organizing your finances even easier. You can access FinMoovi at [https://finmoovi.com](https://finmoovi.com) and start organizing your finances more efficiently.
 

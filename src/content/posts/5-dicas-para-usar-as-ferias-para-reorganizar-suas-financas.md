@@ -51,4 +51,4 @@ Existem muitas ferramentas disponíveis para ajudá-lo a gerenciar suas finança
 
 
 ## Conclusão
-Reorganizar suas finanças pode parecer uma tarefa difícil, mas com as dicas certas e as ferramentas certas, você pode alcançar seus objetivos financeiros. Lembre-se de que as férias são um momento perfeito para refletir sobre seus gastos e criar um plano para o futuro. Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês. Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês.
+Reorganizar suas finanças pode parecer uma tarefa difícil, mas com as dicas certas e as ferramentas certas, você pode alcançar seus objetivos financeiros. Lembre-se de que as férias são um momento perfeito para refletir sobre seus gastos e criar um plano para o futuro. Use o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) para controlar seus gastos e não se surpreender no fim do mês. Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês.

@@ -44,7 +44,7 @@ According to research, 70% of people who use spreadsheets give up within 30 days
 
 ## Examples of Financial Apps
 There are many financial apps available in the market, each with its own features and benefits. Some examples include:
-* FinMoovi: a modern financial app that allows you to manage your finances effectively and easily.
+* [FinMoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos): a modern financial app that allows you to manage your finances effectively and easily.
 * Mobills: a financial app that allows you to manage your accounts and credit cards in a centralized way.
 * Organizze: a financial app that allows you to manage your finances and accounts in a personalized way.
 

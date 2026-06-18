@@ -31,7 +31,7 @@ Por exemplo, se você quer comprar uma casa no valor de R$ 200.000, você precis
 
 
 ## Gerenciando gastos
-Gerenciar gastos é uma parte importante do planejamento financeiro. Isso inclui identificar áreas onde você pode cortar gastos e reduzir despesas desnecessárias. Uma dica prática é criar um [orçamento](/posts/como-criar-orcamento-pessoal) e registrar todos os seus gastos durante um mês. Isso ajudará a identificar áreas onde você pode economizar [dinheiro](/posts/economizar-nas-compras-do-supermercado).
+Gerenciar gastos é uma parte importante do [planejamento financeiro](/posts/voce-tambem-esquece-de-anotar-seus-gastos). Isso inclui identificar áreas onde você pode cortar gastos e reduzir despesas desnecessárias. Uma dica prática é criar um [orçamento](/posts/como-criar-orcamento-pessoal) e registrar todos os seus gastos durante um mês. Isso ajudará a identificar áreas onde você pode economizar [dinheiro](/posts/economizar-nas-compras-do-supermercado).
 
 **Dica prática:** use um aplicativo de gerenciamento de finanças, como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), para registrar seus gastos e criar um [orçamento](/posts/regra-50-30-20-guia-completo). Com o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), você pode categorizar seus gastos e identificar áreas onde pode economizar [dinheiro](/posts/economize-na-conta-de-energia).
 

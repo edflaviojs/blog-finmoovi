@@ -66,4 +66,4 @@ Now that you know how to avoid impulse purchases, it's time to start putting the
 
 
 ---
-**Want to put theory into practice? [Download [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No card, no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and start tracking your expenses today. No card, no commitment.**

@@ -22,7 +22,7 @@ When you're a freelancer, it's easy to get lost in managing your [money](/en/pos
 **Practical tip:** Set aside 10% of your monthly earnings for an emergency account. This will help ensure you have [money](/en/posts/financial-planning-for-couples) to cover unexpected expenses, such as a doctor's visit or car repairs.
 
 ## [Expense Management](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
-Expense management is another critical area for freelancers. Without a fixed salary, it's easy to get carried away with unnecessary expenses. To avoid this, it's essential to create a detailed [budget](/en/posts/50-30-20-rule-complete-guide). Here's an example of how you can divide your expenses:
+[Expense management](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) is another critical area for freelancers. Without a fixed salary, it's easy to get carried away with unnecessary expenses. To avoid this, it's essential to create a detailed [budget](/en/posts/50-30-20-rule-complete-guide). Here's an example of how you can divide your expenses:
 - Essential expenses: 50% of your monthly earnings (R$ 2,500)
 - Non-essential expenses: 20% of your monthly earnings (R$ 1,000)
 - Reserve for taxes and contributions: 15% of your monthly earnings (R$ 750)

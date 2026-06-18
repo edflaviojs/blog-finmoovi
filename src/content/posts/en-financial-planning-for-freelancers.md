@@ -53,4 +53,4 @@ There's no better time to start planning your finances than now. With a financia
 
 ---
 
-**Ready to organize your finances? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/organizing-finances-as-a-freelancer) is going.**
+**Ready to organize your finances? [Try [FinMoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/organizing-finances-as-a-freelancer) is going.**

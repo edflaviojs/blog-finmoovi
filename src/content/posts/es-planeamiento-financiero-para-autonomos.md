@@ -53,4 +53,4 @@ No hay mejor momento para comenzar a planificar tus finanzas que ahora. Con un p
 
 ---
 
-**¿Listo para organizar tus finanzas? [Experimenta el FinMoovi gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de hacia dónde va tu [dinero](/es/posts/diferencia-entre-invertir-y-ahorrar).**
+**¿Listo para organizar tus finanzas? [Experimenta el [FinMoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos) gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de hacia dónde va tu [dinero](/es/posts/diferencia-entre-invertir-y-ahorrar).**

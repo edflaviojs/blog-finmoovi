@@ -34,7 +34,7 @@ Uma dica prática para os investidores pessoa física é diversificar seus inves
 
 ## O que Esperar para a Próxima Semana
 
-Para a próxima semana, é importante estar atento às notícias econômicas e políticas que possam afetar as cotações do dólar e do euro. Além disso, é fundamental acompanhar as decisões do Banco Central sobre a taxa Selic, pois elas podem ter um impacto significativo nos investimentos. Com uma estratégia de investimento bem definida e o apoio de ferramentas como o FinMoovi, os investidores podem estar melhor preparados para navegar pelas flutuações do mercado financeiro brasileiro. Lembre-se de que a [diversificação](/glossario/diversificacao) e a monitorização constante são chaves para o sucesso nos investimentos.
+Para a próxima semana, é importante estar atento às notícias econômicas e políticas que possam afetar as cotações do dólar e do euro. Além disso, é fundamental acompanhar as decisões do Banco Central sobre a taxa Selic, pois elas podem ter um impacto significativo nos investimentos. Com uma estratégia de investimento bem definida e o apoio de ferramentas como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos), os investidores podem estar melhor preparados para navegar pelas flutuações do mercado financeiro brasileiro. Lembre-se de que a [diversificação](/glossario/diversificacao) e a monitorização constante são chaves para o sucesso nos investimentos.
 
 
 ---

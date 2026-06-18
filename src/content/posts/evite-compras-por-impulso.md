@@ -66,4 +66,4 @@ Agora que você sabe como evitar compras por impulso, é hora de começar a colo
 
 
 ---
-**Quer sair da teoria? [Baixe o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**
+**Quer sair da teoria? [Baixe o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**
