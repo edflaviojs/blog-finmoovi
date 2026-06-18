@@ -21,7 +21,7 @@ El método 50-30-20 es una estrategia simple y eficaz para gestionar sus finanza
 
 - **Necesidades (50%):** Incluye gastos esenciales como alquiler, comida, cuentas de agua, luz, internet, transporte y otros gastos básicos.
 - **Deseos (30%):** Aquí incluye gastos que no son esenciales, pero que mejoran su calidad de vida, como entretenimiento, viajes, hobbies y compras personales.
-- **[Economía](/es/posts/ahorrando-en-la-cuenta-de-energia) (20%):** Esta parte de su salario debe ser destinada a la poupança, [inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), pago de deudas y fondos de emergencia.
+- **[Economía](/es/posts/ahorrando-en-la-cuenta-de-energia) (20%):** Esta parte de su salario debe ser destinada a la [poupança](/es/glossario/es-poupanca), [inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), pago de deudas y fondos de emergencia.
 
 ### Ejemplo Práctico
 Vamos a considerar un salario de R$ 4.000,00 por mes. Aplicando el método 50-30-20, tendríamos:
@@ -72,6 +72,6 @@ Es importante mantener un equilibrio entre lo que necesita y lo que desea. Aquí
 Para mantener su [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)-personal) bajo control, no es necesario dedicar horas todos los días. Con solo 5 minutos por día, puede:
 - Verificar sus cuentas bancarias para garantizar que no hubo gastos indebidos.
 - Anotar nuevos gastos o ingresos.
-- Revisar su presupuesto para garantizar que está dentro del planeado.
+- Revisar su [presupuesto](/es/posts/como-crear-presupuesto-personal) para garantizar que está dentro del planeado.
 
 **¿Quiere automatizar este control? [Pruebe [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

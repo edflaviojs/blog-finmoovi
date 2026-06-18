@@ -33,7 +33,7 @@ Na fase escolar, as crianças começam a entender melhor o conceito de [dinheiro
 A [economia](/posts/cashback-inteligente) é um conceito importante para as crianças entenderem, pois ajuda a explicar como as pessoas e as sociedades tomam decisões sobre como alocar recursos escassos. Por exemplo, se uma família tem um [orçamento](/posts/como-criar-orcamento-pessoal) de R$ 3.000 por mês para gastos, ela precisa decidir como alocar esse [dinheiro](/posts/economize-na-conta-de-energia) entre necessidades como aluguel, comida e transporte, e desejos como viagens e entretenimento. **Dica prática:** crie um jogo de [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro) com a criança para que ela possa praticar alocar recursos e tomar decisões financeiras.
 
 ## [Planejamento Financeiro](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
-O planejamento financeiro é fundamental para as crianças entenderem como criar metas e trabalhar para alcançá-las. Por exemplo, se uma criança de 15 anos quer comprar um celular que custa R$ 800, ela pode criar um plano para economizar R$ 100 por mês durante 8 meses para alcançar sua meta. **Dica prática:** crie um plano de ação com a criança para que ela possa acompanhar seu progresso e ajustar seu plano conforme necessário.
+O [planejamento financeiro](/posts/voce-tambem-esquece-de-anotar-seus-gastos) é fundamental para as crianças entenderem como criar metas e trabalhar para alcançá-las. Por exemplo, se uma criança de 15 anos quer comprar um celular que custa R$ 800, ela pode criar um plano para economizar R$ 100 por mês durante 8 meses para alcançar sua meta. **Dica prática:** crie um plano de ação com a criança para que ela possa acompanhar seu progresso e ajustar seu plano conforme necessário.
 
 ![Ensino de Economia](/images/posts/educacao-financeira-para-criancas-4.webp)
 
@@ -47,4 +47,4 @@ A [educação financeira](/posts/7-erros-financeiros-iniciante) para crianças �
 
 
 ---
-**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o FinMoovi grátis](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**
+**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**

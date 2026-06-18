@@ -26,7 +26,7 @@ Reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orga
 
 Additionally, financial conditions can change significantly in just six months. You might have received a salary increase, changed jobs, or faced unexpected expenses. A mid-year review allows you to adjust your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)) to reflect these changes and continue managing your [money](/en/posts/30-day-rule-for-purchases) effectively.
 
-![Why Review Your Budget?](/images/posts/revisite-seu-orcamento-2.webp)
+![Why Review Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/reduce-fixed-expenses))?](/images/posts/revisite-seu-orcamento-2.webp)
 
 
 

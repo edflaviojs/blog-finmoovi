@@ -51,4 +51,4 @@ No pospongas para mañana lo que puedes empezar a hacer hoy en términos de plan
 
 
 ---
-**¿Estás cansado de hojas de cálculo? [Prueba FinMoovi gratis](https://finmoovi.com) y controla tus gastos con IA, multi-divisa y informes que tienen sentido.**
+**¿Estás cansado de hojas de cálculo? [Prueba [FinMoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos) gratis](https://[finmoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) y controla tus gastos con IA, multi-divisa y informes que tienen sentido.**

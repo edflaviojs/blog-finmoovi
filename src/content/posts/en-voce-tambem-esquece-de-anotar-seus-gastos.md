@@ -20,7 +20,7 @@ seo:
 Have you ever found yourself trying to remember all your expenses for the month, only to realize you forgot to record that coffee you bought on your way to work? Or maybe you lost the receipt for an important purchase and now you're having trouble organizing your finances? If so, you're not alone. Many people struggle to keep track of their [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) due to a lack of organization and time.
 
 ## The Pain of Not Having Control over Your Finances
-Lack of control over your finances can lead to stress, anxiety, and even more serious financial problems, such as debt and low credit scores. Imagine you're trying to save for an important purchase, like a car or a house, but you have no idea how much money you're spending each month. This can make it impossible to achieve your financial goals.
+Lack of control over your finances can lead to stress, anxiety, and even more serious financial problems, such as debt and low credit scores. Imagine you're trying to save for an important purchase, like a car or a house, but you have no idea how much [money](/en/posts/creating-an-emergency-fund) you're spending each month. This can make it impossible to achieve your financial goals.
 
 Additionally, a lack of financial organization can also lead to errors and financial losses. For example, you might forget to pay a bill or lose an important receipt, which can result in fines or financial losses. And if you're trying to create a [budget](/en/posts/50-30-20-rule-complete-guide), but you have no idea how much money you're spending in each category, such as food, transportation, or leisure? This can make it impossible to create a realistic and effective budget.
 
@@ -45,7 +45,7 @@ Here's an example of how FinMoovi can help you organize your finances:
 
 
 
-According to statistics, people who use personal finance apps like FinMoovi are 30% more likely to achieve their financial goals. Additionally, FinMoovi can also help reduce stress and anxiety related to finances, allowing you to focus on more important things.
+According to statistics, people who use [personal finance](/en/posts/avoid-impulse-purchases) apps like FinMoovi are 30% more likely to achieve their financial goals. Additionally, FinMoovi can also help reduce stress and anxiety related to finances, allowing you to focus on more important things.
 
 ## Before vs After FinMoovi
 Here's an example of how life can change before and after using FinMoovi:

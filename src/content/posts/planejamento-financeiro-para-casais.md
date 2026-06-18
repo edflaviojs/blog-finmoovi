@@ -17,7 +17,7 @@ seo:
 ---
 
 ## [Planejamento Financeiro](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas) Básico
-Quando você está em um relacionamento, é importante lembrar que as finanças não são apenas sobre você, mas sobre o casal como um todo. Isso significa que você precisa considerar os gastos, as economias e os objetivos financeiros de ambos. Vamos começar com um exemplo: imagine que você e seu parceiro têm salários de R$ 4.000 e R$ 5.000, respectivamente. Seus gastos mensais incluem aluguel (R$ 2.500), contas de luz e água (R$ 200), internet (R$ 100) e alimentação (R$ 1.500). Isso já soma R$ 4.300, sem considerar outros gastos como transporte, lazer e emergências.
+Quando você está em um relacionamento, é importante lembrar que as finanças não são apenas sobre você, mas sobre o casal como um todo. Isso significa que você precisa considerar os [gastos](/posts/metodo-50-30-20-para-salario-brasileiro), as economias e os objetivos financeiros de ambos. Vamos começar com um exemplo: imagine que você e seu parceiro têm salários de R$ 4.000 e R$ 5.000, respectivamente. Seus gastos mensais incluem aluguel (R$ 2.500), contas de luz e água (R$ 200), internet (R$ 100) e alimentação (R$ 1.500). Isso já soma R$ 4.300, sem considerar outros gastos como transporte, lazer e emergências.
 
 ## Gastos e Economias
 Agora, vamos falar sobre gastos e economias. É fundamental que você e seu parceiro tenham uma visão clara de onde o [dinheiro](/posts/cashback-inteligente) está sendo gasto e onde pode ser economizado. Uma dica é criar uma planilha ou usar um aplicativo de gerenciamento financeiro para acompanhar os gastos diários. **Dica prática:** defina uma porcentagem do salário para economias, como 10% ou 20%, e coloque isso em uma conta separada logo após o recebimento do salário. Isso ajudará a garantir que vocês estejam economizando regularmente.
@@ -44,7 +44,7 @@ O planejamento a longo prazo é essencial para alcançar objetivos financeiros m
 
 
 ## Comece hoje
-Não adie para amanhã o que você pode começar a fazer hoje em termos de [planejamento financeiro](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Comece a discutir com seu parceiro sobre como vocês podem melhorar suas finanças e alcançar seus objetivos juntos. Lembre-se de que o planejamento financeiro é um processo contínuo e que pequenas mudanças podem fazer uma grande diferença ao longo do tempo.
+Não adie para amanhã o que você pode começar a fazer hoje em termos de [planejamento financeiro](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Comece a discutir com seu parceiro sobre como vocês podem melhorar suas finanças e alcançar seus objetivos juntos. Lembre-se de que o [planejamento financeiro](/posts/como-criar-orcamento-pessoal) é um processo contínuo e que pequenas mudanças podem fazer uma grande diferença ao longo do tempo.
 
 ![Comece hoje](/images/posts/planejamento-financeiro-para-casais-6.webp)
 

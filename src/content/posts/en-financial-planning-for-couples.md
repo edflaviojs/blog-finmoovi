@@ -16,7 +16,7 @@ seo:
   keywords: ["financial planning for couples","personal finance","economy","money"]
 ---
 
-## Basic [Financial Planning](/en/posts/how-to-create-personal-budget)
+## Basic [Financial Planning](/en/posts/how-to-create-personal-[budget](/en/posts/50-30-20-rule-complete-guide))
 When you're in a relationship, it's essential to remember that finances aren't just about you, but about the couple as a whole. This means you need to consider both partners' expenses, [savings](/en/posts/financial-education-for-children), and financial goals. Let's start with an example: imagine you and your partner have salaries of R$ 4,000 and R$ 5,000, respectively. Your monthly expenses include rent (R$ 2,500), utility bills (R$ 200), internet (R$ 100), and food (R$ 1,500). That already adds up to R$ 4,300, not considering other expenses like transportation, leisure, and emergencies.
 
 ## Expenses and Savings
@@ -44,7 +44,7 @@ Long-term planning is essential for achieving more ambitious financial goals. Th
 
 
 ## Start Today
-Don't put off until tomorrow what you can start doing today in terms of financial planning. Begin discussing with your partner how you can improve your finances and achieve your goals together. Remember that financial planning is an ongoing process, and small changes can make a big difference over time.
+Don't put off until tomorrow what you can start doing today in terms of [financial planning](/en/posts/how-to-create-personal-budget). Begin discussing with your partner how you can improve your finances and achieve your goals together. Remember that financial planning is an ongoing process, and small changes can make a big difference over time.
 
 ![Comece hoje](/images/posts/planejamento-financeiro-para-casais-6.webp)
 
