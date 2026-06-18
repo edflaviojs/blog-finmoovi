@@ -49,7 +49,7 @@ For example, if you invest R$ 1,000 per month in an investment fund that yields 
 
 
 ## Start Today
-There's no better time to start planning your finances than now. With a financial plan, you can achieve financial stability and achieve your financial goals. Remember that [financial planning](/en/posts/how-to-create-personal-budget) is an ongoing process, and you'll need to review and adjust your plan regularly to ensure you're on the right track.
+There's no better time to start planning your finances than now. With a financial plan, you can achieve financial stability and achieve your financial goals. Remember that [financial planning](/en/posts/how-to-create-personal-[budget](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)) is an ongoing process, and you'll need to review and adjust your plan regularly to ensure you're on the right track.
 
 ---
 

@@ -44,4 +44,4 @@ Agora que você entende como usar o cashback de forma inteligente, é hora de co
 
 
 ---
-**Quer sair da teoria? [Baixe o FinMoovi grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**
+**Quer sair da teoria? [Baixe o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**

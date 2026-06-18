@@ -20,7 +20,7 @@ seo:
 Quando você está em um relacionamento, é importante lembrar que as finanças não são apenas sobre você, mas sobre o casal como um todo. Isso significa que você precisa considerar os gastos, as economias e os objetivos financeiros de ambos. Vamos começar com um exemplo: imagine que você e seu parceiro têm salários de R$ 4.000 e R$ 5.000, respectivamente. Seus gastos mensais incluem aluguel (R$ 2.500), contas de luz e água (R$ 200), internet (R$ 100) e alimentação (R$ 1.500). Isso já soma R$ 4.300, sem considerar outros gastos como transporte, lazer e emergências.
 
 ## Gastos e Economias
-Agora, vamos falar sobre gastos e economias. É fundamental que você e seu parceiro tenham uma visão clara de onde o dinheiro está sendo gasto e onde pode ser economizado. Uma dica é criar uma planilha ou usar um aplicativo de gerenciamento financeiro para acompanhar os gastos diários. **Dica prática:** defina uma porcentagem do salário para economias, como 10% ou 20%, e coloque isso em uma conta separada logo após o recebimento do salário. Isso ajudará a garantir que vocês estejam economizando regularmente.
+Agora, vamos falar sobre gastos e economias. É fundamental que você e seu parceiro tenham uma visão clara de onde o [dinheiro](/posts/cashback-inteligente) está sendo gasto e onde pode ser economizado. Uma dica é criar uma planilha ou usar um aplicativo de gerenciamento financeiro para acompanhar os gastos diários. **Dica prática:** defina uma porcentagem do salário para economias, como 10% ou 20%, e coloque isso em uma conta separada logo após o recebimento do salário. Isso ajudará a garantir que vocês estejam economizando regularmente.
 
 ## Objetivos Financeiros
 Os objetivos financeiros são cruciais para qualquer casal. Pode ser comprar uma casa, pagar dívidas, fazer uma viagem sonhada ou simplesmente ter uma [reserva de emergência](/glossario/reserva-de-emergencia). O importante é que esses objetivos sejam discutidos e acordados por ambos. Por exemplo, se o objetivo é comprar uma casa, vocês precisam calcular quanto precisam economizar por mês para alcançar esse objetivo em um determinado prazo. Uma lista de objetivos financeiros pode incluir:
@@ -44,7 +44,7 @@ O planejamento a longo prazo é essencial para alcançar objetivos financeiros m
 
 
 ## Comece hoje
-Não adie para amanhã o que você pode começar a fazer hoje em termos de planejamento financeiro. Comece a discutir com seu parceiro sobre como vocês podem melhorar suas finanças e alcançar seus objetivos juntos. Lembre-se de que o planejamento financeiro é um processo contínuo e que pequenas mudanças podem fazer uma grande diferença ao longo do tempo.
+Não adie para amanhã o que você pode começar a fazer hoje em termos de [planejamento financeiro](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Comece a discutir com seu parceiro sobre como vocês podem melhorar suas finanças e alcançar seus objetivos juntos. Lembre-se de que o planejamento financeiro é um processo contínuo e que pequenas mudanças podem fazer uma grande diferença ao longo do tempo.
 
 ![Comece hoje](/images/posts/planejamento-financeiro-para-casais-6.webp)
 

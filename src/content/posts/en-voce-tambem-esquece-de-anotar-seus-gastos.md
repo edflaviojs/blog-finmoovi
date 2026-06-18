@@ -22,7 +22,7 @@ Have you ever found yourself trying to remember all your expenses for the month,
 ## The Pain of Not Having Control over Your Finances
 Lack of control over your finances can lead to stress, anxiety, and even more serious financial problems, such as debt and low credit scores. Imagine you're trying to save for an important purchase, like a car or a house, but you have no idea how much money you're spending each month. This can make it impossible to achieve your financial goals.
 
-Additionally, a lack of financial organization can also lead to errors and financial losses. For example, you might forget to pay a bill or lose an important receipt, which can result in fines or financial losses. And if you're trying to create a budget, but you have no idea how much money you're spending in each category, such as food, transportation, or leisure? This can make it impossible to create a realistic and effective budget.
+Additionally, a lack of financial organization can also lead to errors and financial losses. For example, you might forget to pay a bill or lose an important receipt, which can result in fines or financial losses. And if you're trying to create a [budget](/en/posts/50-30-20-rule-complete-guide), but you have no idea how much money you're spending in each category, such as food, transportation, or leisure? This can make it impossible to create a realistic and effective budget.
 
 ![A Dor de Não Ter Controle sobre as Finanças](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-2.webp)
 
@@ -39,7 +39,7 @@ Here's an example of how FinMoovi can help you organize your finances:
 * You're in a store and need to record a purchase. Instead of having to type in all the details, you can simply take a photo of the receipt or say the value and category of the purchase.
 * FinMoovi will use the Smart Capture feature by voice and OCR to record the purchase and categorize it automatically.
 * You can then view all your expenses on a single screen, with graphs and statistics to help you better understand your finances.
-* Additionally, FinMoovi also offers alerts and notifications to help you stay on track and avoid financial mistakes.
+* Additionally, FinMoovi also offers alerts and notifications to help you stay on track and avoid [financial mistakes](/en/posts/7-financial-mistakes-beginners).
 
 ![Como o FinMoovi Funciona](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-4.webp)
 

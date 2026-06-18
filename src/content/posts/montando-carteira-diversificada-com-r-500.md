@@ -49,4 +49,4 @@ Agora que você entendeu os conceitos básicos de investimento e [diversificaç�
 
 
 
-Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.
+Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)).com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.

@@ -24,7 +24,7 @@ Chegamos ao meio do ano, um momento perfeito para refletir sobre nossas finança
 ## Por Que Revisar Seu [Orçamento](/posts/metodo-50-30-20-para-salario-brasileiro)?
 Revisar seu [orçamento](/posts/regra-50-30-20-guia-completo) no meio do ano é essencial por várias razões. Primeiramente, isso ajuda a garantir que você esteja no caminho certo para alcançar suas metas financeiras. Se você estabeleceu metas no início do ano, como economizar para uma viagem ou pagar dívidas, uma revisão no meio do ano pode ajudar a identificar se você está progredindo como planejado.
 
-Além disso, as condições financeiras podem mudar significativamente ao longo de apenas seis meses. Você pode ter recebido um aumento salarial, mudado de emprego, ou enfrentado despesas inesperadas. Uma revisão de meio de ano permite que você ajuste seu orçamento para refletir essas mudanças e continue a gerenciar seu [dinheiro](/posts/cashback-inteligente) de forma eficaz.
+Além disso, as condições financeiras podem mudar significativamente ao longo de apenas seis meses. Você pode ter recebido um aumento salarial, mudado de emprego, ou enfrentado despesas inesperadas. Uma revisão de meio de ano permite que você ajuste seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) para refletir essas mudanças e continue a gerenciar seu [dinheiro](/posts/cashback-inteligente) de forma eficaz.
 
 ![Por Que Revisar Seu Orçamento?](/images/posts/revisite-seu-orcamento-2.webp)
 

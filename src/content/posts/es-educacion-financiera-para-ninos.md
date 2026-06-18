@@ -30,7 +30,7 @@ En la fase escolar, los niños comienzan a entender mejor el concepto de [dinero
 
 
 ## Enseñanza de [Economía](/es/posts/ahorrando-en-la-cuenta-de-energia)
-La [economía](/es/posts/ahorrando-en-la-cuenta-del-mercado) es un concepto importante para que los niños lo entiendan, ya que ayuda a explicar cómo las personas y las sociedades toman decisiones sobre cómo asignar recursos escasos. Por ejemplo, si una familia tiene un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) de R$ 3.000 por mes para gastos, ellos necesitan decidir cómo asignar ese [dinero](/es/posts/diferencia-entre-invertir-y-ahorrar) entre necesidades como alquiler, comida y transporte, y deseos como viajes y entretenimiento. **Consejo práctico:** crea un juego de presupuesto con el niño para que él pueda practicar asignar recursos y tomar decisiones financieras.
+La [economía](/es/posts/ahorrando-en-la-cuenta-del-mercado) es un concepto importante para que los niños lo entiendan, ya que ayuda a explicar cómo las personas y las sociedades toman decisiones sobre cómo asignar recursos escasos. Por ejemplo, si una familia tiene un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) de R$ 3.000 por mes para gastos, ellos necesitan decidir cómo asignar ese [dinero](/es/posts/diferencia-entre-invertir-y-ahorrar) entre necesidades como alquiler, comida y transporte, y deseos como viajes y entretenimiento. **Consejo práctico:** crea un juego de [presupuesto](/es/posts/como-crear-presupuesto-personal) con el niño para que él pueda practicar asignar recursos y tomar decisiones financieras.
 
 ## Planificación Financiera
 La planificación financiera es fundamental para que los niños entiendan cómo crear metas y trabajar para alcanzarlas. Por ejemplo, si un niño de 15 años quiere comprar un teléfono que cuesta R$ 800, él puede crear un plan para ahorrar R$ 100 por mes durante 8 meses para alcanzar su meta. **Consejo práctico:** crea un plan de acción con el niño para que él pueda seguir su progreso y ajustar su plan según sea necesario.
@@ -47,4 +47,4 @@ La [educación financiera](/es/posts/7-errores-financieros-principiante) para ni
 
 
 ---
-**¿Estás cansado de planillas? [Prueba FinMoovi gratis](https://finmoovi.com) y controla tus gastos con IA, multi-moneda y reportes que tienen sentido.**
+**¿Estás cansado de planillas? [Prueba [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis](https://finmoovi.com) y controla tus gastos con IA, multi-moneda y reportes que tienen sentido.**

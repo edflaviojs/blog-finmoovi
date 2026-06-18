@@ -69,7 +69,7 @@ Es importante mantener un equilibrio entre lo que necesita y lo que desea. Aquí
 
 
 ## Comience con 5 minutos por día
-Para mantener su [presupuesto](/es/posts/como-crear-presupuesto-personal) bajo control, no es necesario dedicar horas todos los días. Con solo 5 minutos por día, puede:
+Para mantener su [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)-personal) bajo control, no es necesario dedicar horas todos los días. Con solo 5 minutos por día, puede:
 - Verificar sus cuentas bancarias para garantizar que no hubo gastos indebidos.
 - Anotar nuevos gastos o ingresos.
 - Revisar su presupuesto para garantizar que está dentro del planeado.

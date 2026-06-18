@@ -25,7 +25,7 @@ Antes de começar, é importante entender que as [finanças pessoais](/posts/com
 Para começar a reorganizar suas finanças, você precisa entender onde seu [dinheiro](/posts/criar-reserva-de-emergencia) está indo. Faça uma lista de todos os seus gastos mensais, incluindo contas de água, luz, aluguel, comida, transporte e entretenimento. Isso pode parecer uma tarefa tediosa, mas é essencial para identificar áreas onde você pode cortar gastos e economizar. De acordo com o Banco Central, o brasileiro médio gasta cerca de 30% de sua renda em contas e serviços básicos.
 
 ## Criando um [Orçamento](/posts/metodo-50-30-20-para-salario-brasileiro)
-Agora que você tem uma ideia clara de seus gastos, é hora de criar um orçamento. Aqui estão algumas dicas para ajudá-lo a criar um orçamento eficaz:
+Agora que você tem uma ideia clara de seus gastos, é hora de criar um [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar). Aqui estão algumas dicas para ajudá-lo a criar um orçamento eficaz:
 1. **Defina seus objetivos financeiros**: O que você quer alcançar em termos financeiros? Quer pagar uma dívida, economizar para uma viagem ou comprar um imóvel?
 2. **Categorize seus gastos**: Divida seus gastos em categorias, como moradia, alimentação, transporte e entretenimento.
 3. **Atribua valores**: Atribua um valor para cada categoria com base em seus gastos médios.

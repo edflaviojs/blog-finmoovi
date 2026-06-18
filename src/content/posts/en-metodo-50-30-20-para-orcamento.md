@@ -69,7 +69,7 @@ It's essential to maintain a balance between what you need and what you want. He
 
 
 ## Start with 5 minutes a day
-To keep your [budget](/en/posts/how-to-create-personal-budget) under control, you don't need to dedicate hours every day. With just 5 minutes a day, you can:
+To keep your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)) under control, you don't need to dedicate hours every day. With just 5 minutes a day, you can:
 - Check your bank accounts to ensure there are no unauthorized expenses.
 - Note down new expenses or income.
 - Review your budget to ensure it's within the planned.

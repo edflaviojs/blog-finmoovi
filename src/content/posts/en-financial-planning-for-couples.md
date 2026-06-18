@@ -16,8 +16,8 @@ seo:
   keywords: ["financial planning for couples","personal finance","economy","money"]
 ---
 
-## Basic Financial Planning
-When you're in a relationship, it's essential to remember that finances aren't just about you, but about the couple as a whole. This means you need to consider both partners' expenses, savings, and financial goals. Let's start with an example: imagine you and your partner have salaries of R$ 4,000 and R$ 5,000, respectively. Your monthly expenses include rent (R$ 2,500), utility bills (R$ 200), internet (R$ 100), and food (R$ 1,500). That already adds up to R$ 4,300, not considering other expenses like transportation, leisure, and emergencies.
+## Basic [Financial Planning](/en/posts/how-to-create-personal-budget)
+When you're in a relationship, it's essential to remember that finances aren't just about you, but about the couple as a whole. This means you need to consider both partners' expenses, [savings](/en/posts/financial-education-for-children), and financial goals. Let's start with an example: imagine you and your partner have salaries of R$ 4,000 and R$ 5,000, respectively. Your monthly expenses include rent (R$ 2,500), utility bills (R$ 200), internet (R$ 100), and food (R$ 1,500). That already adds up to R$ 4,300, not considering other expenses like transportation, leisure, and emergencies.
 
 ## Expenses and Savings
 Now, let's talk about expenses and savings. It's crucial that you and your partner have a clear view of where the [money](/en/posts/30-day-rule-for-purchases) is being spent and where it can be saved. A tip is to create a spreadsheet or use a financial management app to track daily expenses. **Practical tip:** define a percentage of your salary for savings, like 10% or 20%, and put that into a separate account right after receiving your salary. This will help ensure you're saving regularly.

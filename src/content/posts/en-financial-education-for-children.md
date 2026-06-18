@@ -33,14 +33,14 @@ During the school age, children begin to better understand the concept of [money
 Economics is an important concept for children to understand, as it helps explain how people and societies make decisions about how to allocate scarce resources. For example, if a family has a monthly [budget](/en/posts/50-30-20-rule-complete-guide) of R$ 3,000 for expenses, they need to decide how to allocate that [money](/en/posts/financial-planning-for-freelancers) between needs like rent, food, and transportation, and wants like travel and entertainment. **Practical tip:** create a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) game with the child so they can practice allocating resources and making financial decisions.
 
 ## [Financial Planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
-Financial planning is fundamental for children to understand how to set goals and work to achieve them. For example, if a 15-year-old child wants to buy a cell phone that costs R$ 800, they can create a plan to save R$ 100 per month for 8 months to reach their goal. **Practical tip:** create an action plan with the child so they can track their progress and adjust their plan as needed.
+[Financial planning](/en/posts/how-to-create-personal-budget) is fundamental for children to understand how to set goals and work to achieve them. For example, if a 15-year-old child wants to buy a cell phone that costs R$ 800, they can create a plan to save R$ 100 per month for 8 months to reach their goal. **Practical tip:** create an action plan with the child so they can track their progress and adjust their plan as needed.
 
 ![Ensino de Economia](/images/posts/educacao-financeira-para-criancas-4.webp)
 
 
 
 ## Start Today
-[Financial education](/en/posts/7-financial-mistakes-beginners) for children is an ongoing process that requires patience, practice, and real-life examples. Start today to teach your children about the value of money and how to manage it effectively. With practice and consistency, they will be well-prepared to make informed financial decisions and achieve their goals.
+[Financial education](/en/posts/7-financial-mistakes-beginners) for children is an ongoing process that requires patience, practice, and real-life examples. Start today to teach your children about the value of [money](/en/posts/negotiating-discounts-on-fixed-bills) and how to manage it effectively. With practice and consistency, they will be well-prepared to make informed financial decisions and achieve their goals.
 
 ![Comece hoje](/images/posts/educacao-financeira-para-criancas-6.webp)
 

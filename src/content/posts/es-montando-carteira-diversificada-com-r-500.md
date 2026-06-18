@@ -49,4 +49,4 @@ Ahora que has entendido los conceptos básicos de inversión y diversificación,
 
 
 
-Para acompañar tus inversiones en un solo lugar, [prueba el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) — multi-moneda, informes inteligentes y 100% offline.
+Para acompañar tus inversiones en un solo lugar, [prueba el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro)).com) — multi-moneda, informes inteligentes y 100% offline.
