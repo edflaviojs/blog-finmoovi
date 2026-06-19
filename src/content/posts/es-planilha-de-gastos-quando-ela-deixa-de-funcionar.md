@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introducción a las Planillas de Gastos
-Las planillas de gastos son una herramienta poderosa para gestionar sus [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Ofrecen flexibilidad, son gratuitas y pueden ser personalizadas de acuerdo con sus necesidades. Con una planilla, puede registrar todos sus gastos, crear un [presupuesto](/es/posts/como-crear-presupuesto-personal) y acompañar su situación financiera de forma detallada. Sin embargo, a pesar de todas estas ventajas, muchas personas dejan de usar planillas de gastos después de un corto período de tiempo.
+Las planillas de gastos son una herramienta poderosa para gestionar sus [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Ofrecen flexibilidad, son gratuitas y pueden ser personalizadas de acuerdo con sus necesidades. Con una planilla, puede registrar todos sus gastos, crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) y acompañar su situación financiera de forma detallada. Sin embargo, a pesar de todas estas ventajas, muchas personas dejan de usar planillas de gastos después de un corto período de tiempo.
 
 ## Ventajas y Desventajas de las Planillas de Gastos
 Las planillas de gastos tienen varias ventajas, como:
@@ -38,7 +38,7 @@ Un app de finanzas puede ser una solución más eficaz para gestionar sus gastos
 - **Automatización**: Muchos apps de finanzas pueden ser conectados a sus cuentas bancarias y tarjetas de crédito, permitiendo que los gastos sean registrados automáticamente.
 - **Voz**: Algunos apps permiten que registre gastos utilizando comandos de voz, haciendo el proceso aún más rápido y conveniente.
 
-Existen varios apps de finanzas disponibles en el mercado, incluyendo el FinMoovi, Mobills y Organizze. Cada uno de ellos tiene sus propias características y ventajas, así que es importante elegir el que mejor se adapte a sus necesidades.
+Existen varios apps de finanzas disponibles en el mercado, incluyendo el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro), Mobills y Organizze. Cada uno de ellos tiene sus propias características y ventajas, así que es importante elegir el que mejor se adapte a sus necesidades.
 
 ![Cuando un App de Finanzas Hace Más Sentido](/images/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar-3.webp)
 

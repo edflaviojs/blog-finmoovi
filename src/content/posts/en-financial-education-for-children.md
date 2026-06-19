@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Teaching Financial Values
-Teaching [personal finance](/en/posts/30-day-rule-for-purchases) to children is essential to help them understand the value of [money](/en/posts/avoid-impulse-purchases) and how to manage it effectively. From an early age, it's crucial that they learn to differentiate between needs and wants, and how to prioritize expenses. For example, if a 10-year-old child receives a weekly allowance of R$ 50, they can learn to divide that amount into three categories: 50% for needs (such as buying school supplies), 30% for savings, and 20% for wants (such as buying toys or sweets).
+Teaching [personal finance](/en/posts/30-day-rule-for-purchases) to children is essential to help them understand the value of [money](/en/posts/avoid-impulse-purchases) and how to manage it effectively. From an early age, it's crucial that they learn to differentiate between needs and wants, and how to prioritize expenses. For example, if a 10-year-old child receives a weekly allowance of R$ 50, they can learn to divide that amount into three categories: 50% for needs (such as buying school supplies), 30% for [savings](/en/posts/smart-cashback), and 20% for wants (such as buying toys or sweets).
 
 ## Daily Practices
 A practical way to teach finance is to create a system of rewards and penalties for expenses. For example, if the child saves R$ 10 per week for a month, they can earn a reward, such as going to the movies or buying a toy. On the other hand, if they spend all their [money](/en/posts/creating-an-emergency-fund) in one week, they can lose the reward. **Practical tip:** create a weekly expense chart with the child so they can track their expenses and understand where their [money](/en/posts/difference-between-investing-and-saving) is going.
@@ -47,4 +47,4 @@ Economics is an important concept for children to understand, as it helps explai
 
 
 ---
-**Tired of spreadsheets? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free](https://finmoovi.com) and control your expenses with AI, multi-currency, and reports that make sense.**
+**Tired of spreadsheets? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and control your expenses with AI, multi-currency, and reports that make sense.**

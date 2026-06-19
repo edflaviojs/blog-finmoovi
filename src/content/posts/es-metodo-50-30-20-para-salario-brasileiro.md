@@ -45,7 +45,7 @@ La categoría de deseos y ocio incluye gastos como viajes, compras de ropa, rest
 | Entretenimiento | 400,00 |
 | Total | 1.200,00 |
 
-## Ahorro e Inversiones
+## [Ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) e Inversiones
 La categoría de ahorro e inversiones es fundamental para el futuro financiero. Es importante asignar 20% de tu salario para ahorro e inversiones. Por ejemplo, si ganas R$ 4.000,00 por mes, debes asignar R$ 800,00 para ahorro e inversiones.
 
 **Consejo práctico:** Abre una [cuenta de ahorro](/es/glossario/es-poupanca) y configura una transferencia automática para ahorrar 20% de tu salario todos los meses.

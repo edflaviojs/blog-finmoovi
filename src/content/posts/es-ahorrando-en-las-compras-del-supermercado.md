@@ -54,7 +54,7 @@ Existen muchas aplicaciones y herramientas que pueden ayudarte a ahorrar en las 
 
 
 ## Comienza hoy
-Ahora que sabes cómo ahorrar en las compras del supermercado, es hora de comenzar a poner estas sugerencias en práctica. Recuerda que ahorrar es un proceso continuo y que cada pequeño [cambio](/es/glossario/es-cambio) puede hacer una gran diferencia a largo plazo. Así que, comienza hoy a hacer cambios en tus compras del supermercado y ve cómo puedes ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia).
+Ahora que sabes [cómo ahorrar en las compras del supermercado](/es/posts/ahorra-en-las-compras-del-supermercado), es hora de comenzar a poner estas sugerencias en práctica. Recuerda que ahorrar es un proceso continuo y que cada pequeño [cambio](/es/glossario/es-cambio) puede hacer una gran diferencia a largo plazo. Así que, comienza hoy a hacer cambios en tus compras del supermercado y ve cómo puedes ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia).
 
 ---
 **El próximo paso es tuyo. [Prueba el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) y descubre hacia dónde va tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) en realidad.**

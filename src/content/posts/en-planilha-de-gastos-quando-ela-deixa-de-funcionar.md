@@ -32,10 +32,10 @@ However, research shows that 70% of people give up using expense spreadsheets wi
 
 
 ## When a Finance App Makes More Sense
-A finance app can be a more effective solution for managing your expenses and personal finances. Some of the main benefits of finance apps include:
+A finance app can be a more effective solution for managing your expenses and personal finances. Some of the main benefits of [finance apps](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) include:
 - **Consistency**: Apps can help you keep a consistent record of your expenses, sending reminders and notifications to ensure you don't forget to record anything.
 - **Mobility**: With an app, you can record your expenses at any time and in any place, using your smartphone.
-- **Automation**: Many finance apps can be connected to your bank accounts and credit cards, allowing expenses to be recorded automatically.
+- **Automation**: Many [finance apps](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) can be connected to your bank accounts and credit cards, allowing expenses to be recorded automatically.
 - **Voice**: Some apps allow you to record expenses using voice commands, making the process even faster and more convenient.
 
 There are several finance apps available on the market, including FinMoovi, Mobills, and Organizze. Each of them has its own features and advantages, so it's essential to choose the one that best fits your needs.

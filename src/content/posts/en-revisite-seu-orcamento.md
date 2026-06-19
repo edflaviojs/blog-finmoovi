@@ -30,7 +30,7 @@ Additionally, financial conditions can change significantly in just six months. 
 
 
 
-## How to Review Your Budget
+## How to Review Your [Budget](/en/posts/how-to-create-personal-budget)
 Reviewing your budget doesn't have to be a complicated process. Here are some simple steps you can follow:
 
 ### 1. Check Your Current Balance
@@ -46,7 +46,7 @@ Based on your evaluation, adjust your budget for the rest of the year. If you id
 Finally, review your original financial goals. If you set goals at the beginning of the year, now is the time to assess your progress. If you're ahead, great! If not, adjust your goals or strategies to ensure you achieve what you want in the rest of the year.
 
 ## Practical Examples
-Let's consider a practical example. John is a professional who earns $6,000 per month. At the beginning of the year, he set a goal to save $10,000 for a trip. After a mid-year review, John realized he's spending more than expected on dining out and entertainment. He decides to cut back on these expenses by 20% and reallocate the [money](/en/posts/avoid-impulse-purchases) to his savings. With this change, John can still achieve his goal of saving $10,000 by the end of the year.
+Let's consider a practical example. John is a professional who earns $6,000 per month. At the beginning of the year, he set a goal to save $10,000 for a trip. After a mid-year review, John realized he's spending more than expected on dining out and entertainment. He decides to cut back on these expenses by 20% and reallocate the [money](/en/posts/avoid-impulse-purchases) to his [savings](/en/posts/smart-cashback). With this change, John can still achieve his goal of saving $10,000 by the end of the year.
 
 ## Additional Tips
 Here are some additional tips to help keep your budget on track:
