@@ -72,6 +72,6 @@ Es importante mantener un equilibrio entre lo que necesita y lo que desea. Aquí
 Para mantener su [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)-personal) bajo control, no es necesario dedicar horas todos los días. Con solo 5 minutos por día, puede:
 - Verificar sus cuentas bancarias para garantizar que no hubo gastos indebidos.
 - Anotar nuevos gastos o ingresos.
-- Revisar su [presupuesto](/es/posts/como-crear-presupuesto-personal) para garantizar que está dentro del planeado.
+- Revisar su [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)-personal) para garantizar que está dentro del planeado.
 
 **¿Quiere automatizar este control? [Pruebe [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

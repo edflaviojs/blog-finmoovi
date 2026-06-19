@@ -24,7 +24,7 @@ Uma das principais razões para o alto consumo de energia é o uso excessivo de 
 ## Trocando Lâmpadas
 Trocando as lâmpadas incandescentes por lâmpadas LED pode ser uma ótima forma de reduzir o consumo de energia. As lâmpadas LED consomem cerca de 70% menos energia do que as lâmpadas incandescentes e têm uma vida útil mais longa. Por exemplo, se você tem 10 lâmpadas incandescentes em sua casa e as troca por lâmpadas LED, você pode economizar cerca de R$ 20 por mês.
 
-**Dica prática:** Verifique se as lâmpadas que você está comprando são realmente LED e têm a certificação de eficiência energética. Isso pode garantir que você esteja comprando lâmpadas de alta qualidade que vão durar mais tempo e economizar mais energia.
+**Dica prática:** Verifique se as lâmpadas que você está comprando são realmente LED e têm a certificação de eficiência energética. Isso pode garantir que você esteja comprando lâmpadas de alta [qualidade](/glossario/qualidade) que vão durar mais tempo e economizar mais energia.
 
 ![Trocando Lâmpadas](/images/posts/economize-na-conta-de-energia-1.svg)
 

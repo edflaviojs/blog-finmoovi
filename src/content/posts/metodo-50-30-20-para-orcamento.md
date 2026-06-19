@@ -20,7 +20,7 @@ seo:
 O método 50-30-20 é uma estratégia simples e eficaz para gerenciar suas finanças. A ideia é dividir seu salário em três categorias principais: necessidades, desejos e [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas). Com isso, você pode ter um controle melhor sobre onde seu [dinheiro](/posts/diferenca-entre-investir-e-poupar) está sendo gasto e como pode ser otimizado.
 
 - **Necessidades (50%):** Inclui despesas essenciais como aluguel, comida, contas de água, luz, internet, transporte e outros gastos básicos.
-- **Desejos (30%):** Aqui você inclui gastos que não são essenciais, mas que melhoram sua qualidade de vida, como entretenimento, viagens, hobbies e compras pessoais.
+- **Desejos (30%):** Aqui você inclui gastos que não são essenciais, mas que melhoram sua [qualidade](/glossario/qualidade) de vida, como entretenimento, viagens, hobbies e compras pessoais.
 - **[Economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) (20%):** Esta parte do seu salário deve ser destinada à [poupança](/glossario/poupanca), [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), pagamento de dívidas e [fundos](/glossario/fundos) de emergência.
 
 ### Exemplo Prático
@@ -69,7 +69,7 @@ A parte da [economia](/posts/criar-reserva-de-emergencia) é crucial para o seu 
 
 
 ## Comece com 5 minutos por dia
-Para manter seu orçamento sob controle, não é necessário dedicar horas todos os dias. Com apenas 5 minutos por dia, você pode:
+Para manter seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) sob controle, não é necessário dedicar horas todos os dias. Com apenas 5 minutos por dia, você pode:
 - Verificar suas contas bancárias para garantir que não houve gastos indevidos.
 - Anotar novas despesas ou receitas.
 - Revisar seu orçamento para garantir que está dentro do planejado.

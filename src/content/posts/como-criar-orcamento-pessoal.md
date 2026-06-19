@@ -22,7 +22,7 @@ Criar um [orçamento pessoal](/glossario/orcamento-pessoal) não precisa ser com
 
 Sem um [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro), você está navegando às cegas. Pesquisas mostram que **78% dos brasileiros** que mantêm um [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) conseguem economizar mais do que aqueles que não fazem nenhum controle.
 
-Um bom orçamento te ajuda a:
+Um bom [orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) te ajuda a:
 - Saber exatamente para onde vai seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz)
 - Identificar gastos desnecessários
 - Criar uma [reserva de emergência](/glossario/reserva-de-emergencia)

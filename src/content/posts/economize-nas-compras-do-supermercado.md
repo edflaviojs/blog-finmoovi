@@ -46,9 +46,9 @@ Um exemplo é o caso de uma pessoa que gasta R$ 200 por semana em um supermercad
 
 
 ## Acompanhe seus gastos
-Acompanhar seus gastos é fundamental para entender onde seu [dinheiro](/posts/cashback-inteligente) está indo e como você pode economizar. É importante registrar todos os seus gastos, incluindo as compras de supermercado, e verificar se você está dentro do seu orçamento.
+Acompanhar seus gastos é fundamental para entender onde seu [dinheiro](/posts/cashback-inteligente) está indo e como você pode economizar. É importante registrar todos os seus gastos, incluindo as compras de supermercado, e verificar se você está dentro do seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias).
 
-**Dica prática:** Use um aplicativo de controle de gastos para registrar seus gastos e acompanhar seu orçamento. Isso pode ajudar a identificar áreas onde você pode cortar gastos e economizar.
+**Dica prática:** Use um aplicativo de controle de gastos para registrar seus gastos e acompanhar seu [orçamento](/posts/como-criar-orcamento-pessoal). Isso pode ajudar a identificar áreas onde você pode cortar gastos e economizar.
 
 ## Comece hoje
 Não é necessário esperar até o próximo mês para começar a economizar nas compras do supermercado. Você pode começar hoje mesmo, fazendo uma lista de compras e planejando suas refeições para a semana. Lembre-se de que pequenas mudanças podem levar a grandes economias ao longo do tempo.

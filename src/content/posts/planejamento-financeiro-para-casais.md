@@ -51,4 +51,4 @@ Não adie para amanhã o que você pode começar a fazer hoje em termos de [plan
 
 
 ---
-**Cansado de planilha? [Teste o FinMoovi grátis](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**
+**Cansado de planilha? [Teste o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) grátis](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**

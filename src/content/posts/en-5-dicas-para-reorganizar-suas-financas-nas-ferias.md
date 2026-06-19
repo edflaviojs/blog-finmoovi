@@ -16,7 +16,7 @@ seo:
   keywords: ["personal finance","vacation","financial reorganization","budget","economy","organize finances vacation","mid-year financial planning"]
 ---
 
-On vacation, we usually have more time to reflect on our lives and habits, including our finances. It's a perfect moment to evaluate how we're managing our money and make changes to improve our financial situation. According to the Brazilian Institute of Geography and Statistics (IBGE), in 2022, most Brazilians (64.1%) had difficulty paying bills and expenses, showing the importance of effective financial management.
+On [vacation](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), we usually have more time to reflect on our lives and habits, including our finances. It's a perfect moment to evaluate how we're managing our [money](/en/posts/30-day-rule-for-purchases) and make changes to improve our financial situation. According to the Brazilian Institute of Geography and Statistics (IBGE), in 2022, most Brazilians (64.1%) had difficulty paying bills and expenses, showing the importance of effective financial management.
 
 ## What is Reorganizing Finances?
 Reorganizing finances means reviewing and adjusting how you earn, save, and spend money. This can include creating or adjusting a budget, paying off debt, increasing savings, and investing in your future. It's a process that requires attention, discipline, and commitment, but can lead to a more stable and peaceful financial life.
@@ -27,7 +27,7 @@ Vacations offer a relatively long period to focus on yourself and your financial
 ## Tips to Reorganize Your Finances
 Here are some practical tips to help you start reorganizing your finances during your vacation:
 1. **Take Stock**: Start by taking stock of your current financial situation. Write down all your income and expenses, including bills, debts, and any other recurring expenses. This will help you understand where your money is going.
-2. **Create or Adjust a Budget**: Based on your stocktake, create a budget that meets your needs and goals. Make sure to include an emergency fund and funds for leisure and entertainment.
+2. **Create or Adjust a Budget**: Based on your stocktake, create a budget that meets your needs and goals. Make sure to include an [emergency fund](/en/glossario/en-reserva-de-emergencia) and funds for leisure and entertainment.
 3. **Prioritize Debt**: If you have debt, such as credit cards or loans, prioritize paying them off. Start with the debts with the highest value or those with the highest interest rates.
 4. **Increase Your Savings**: Set savings goals, whether for emergencies, long-term goals, or specific purchases. Try to increase your savings gradually.
 5. **Monitor Your Expenses**: Use tools like FinMoovi to monitor your daily expenses and identify areas where you can cut back. FinMoovi is a useful tool that can help you keep a more accurate track of your finances.
@@ -54,6 +54,6 @@ Tools like FinMoovi can be great allies in financial management. They allow you 
 
 
 
-According to Serasa, in 2022, almost 60% of Brazilians used apps to control their finances, showing the growing awareness of the importance of personal financial management. The Central Bank of Brazil also highlights the importance of financial education and planning for a healthy financial life.
+According to Serasa, in 2022, almost 60% of Brazilians used apps to control their finances, showing the growing awareness of the importance of personal financial management. The Central Bank of Brazil also highlights the importance of [financial education](/en/glossario/en-educacao-financeira) and planning for a healthy financial life.
 
 Use FinMoovi to control your expenses and avoid surprises at the end of the month.

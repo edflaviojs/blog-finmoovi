@@ -26,7 +26,7 @@ Revisar seu [orçamento](/posts/regra-50-30-20-guia-completo) no meio do ano é 
 
 Além disso, as condições financeiras podem mudar significativamente ao longo de apenas seis meses. Você pode ter recebido um aumento salarial, mudado de emprego, ou enfrentado despesas inesperadas. Uma revisão de meio de ano permite que você ajuste seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) para refletir essas mudanças e continue a gerenciar seu [dinheiro](/posts/cashback-inteligente) de forma eficaz.
 
-![Por Que Revisar Seu Orçamento?](/images/posts/revisite-seu-orcamento-2.webp)
+![Por Que Revisar Seu [Orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)?](/images/posts/revisite-seu-orcamento-2.webp)
 
 
 

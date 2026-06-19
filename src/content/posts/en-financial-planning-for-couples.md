@@ -20,7 +20,7 @@ seo:
 When you're in a relationship, it's essential to remember that finances aren't just about you, but about the couple as a whole. This means you need to consider both partners' expenses, [savings](/en/posts/financial-education-for-children), and financial goals. Let's start with an example: imagine you and your partner have salaries of R$ 4,000 and R$ 5,000, respectively. Your monthly expenses include rent (R$ 2,500), utility bills (R$ 200), internet (R$ 100), and food (R$ 1,500). That already adds up to R$ 4,300, not considering other expenses like transportation, leisure, and emergencies.
 
 ## Expenses and Savings
-Now, let's talk about expenses and savings. It's crucial that you and your partner have a clear view of where the [money](/en/posts/30-day-rule-for-purchases) is being spent and where it can be saved. A tip is to create a [spreadsheet](/en/posts/migrando-da-planilha-para-um-app-financeiro) or use a financial management app to track daily expenses. **Practical tip:** define a percentage of your salary for savings, like 10% or 20%, and put that into a separate account right after receiving your salary. This will help ensure you're saving regularly.
+Now, let's talk about expenses and savings. It's crucial that you and your partner have a clear view of where the [money](/en/posts/30-day-rule-for-purchases) is being spent and where it can be saved. A tip is to create a [spreadsheet](/en/posts/migrando-da-planilha-para-um-app-financeiro) or use a [financial management](/en/posts/montando-carteira-diversificada-com-r-500) app to track daily expenses. **Practical tip:** define a percentage of your salary for savings, like 10% or 20%, and put that into a separate account right after receiving your salary. This will help ensure you're saving regularly.
 
 ## Financial Goals
 Financial goals are crucial for any couple. It could be buying a house, paying off credit card debt, taking a dream [vacation](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), or simply having an [emergency fund](/en/glossario/en-reserva-de-emergencia). What's important is that these goals are discussed and agreed upon by both partners. For example, if the goal is to buy a house, you need to calculate how much you need to save each month to achieve that goal within a certain timeframe. A list of financial goals might include:
@@ -44,7 +44,7 @@ Long-term planning is essential for achieving more ambitious financial goals. Th
 
 
 ## Start Today
-Don't put off until tomorrow what you can start doing today in terms of [financial planning](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)). Begin discussing with your partner how you can improve your finances and achieve your goals together. Remember that financial planning is an ongoing process, and small changes can make a big difference over time.
+Don't put off until tomorrow what you can start doing today in terms of [financial planning](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)). Begin discussing with your partner how you can improve your finances and achieve your goals together. Remember that [financial planning](/en/posts/how-to-create-personal-budget) is an ongoing process, and small changes can make a big difference over time.
 
 ![Comece hoje](/images/posts/planejamento-financeiro-para-casais-6.webp)
 
