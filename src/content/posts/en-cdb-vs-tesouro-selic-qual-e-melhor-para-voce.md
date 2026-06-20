@@ -18,11 +18,11 @@ seo:
 
 ## Introduction
 
-When it comes to investing money, many people wonder which is the best option. There are several alternatives in the market, but two of the most popular are CDB (Certificate of Bank Deposit) and Treasury Selic. Both are considered fixed-income investments, meaning they offer a fixed and predetermined return. However, they have different characteristics and advantages. In this article, we will compare these two options and help you decide which is the best for you.
+When it comes to investing [money](/en/posts/avoid-impulse-purchases), many people wonder which is the best option. There are several alternatives in the market, but two of the most popular are [CDB](/en/glossario/en-cdb) (Certificate of Bank Deposit) and Treasury Selic. Both are considered fixed-income investments, meaning they offer a fixed and predetermined return. However, they have different characteristics and advantages. In this article, we will compare these two options and help you decide which is the best for you.
 
 ## How CDB Works
 
-CDB is a type of investment offered by banks and financial institutions. It works like a loan that you make to the bank, and in return, the bank pays interest on the invested amount. CDB can be daily, semi-annual, or annual liquidity, depending on the type of investment chosen. Additionally, CDB can be taxed according to the income tax table, which can affect your net income.
+CDB is a type of investment offered by banks and financial institutions. It works like a loan that you make to the bank, and in return, the bank pays interest on the invested amount. CDB can be daily, semi-annual, or annual [liquidity](/en/glossario/en-liquidez), depending on the type of investment chosen. Additionally, CDB can be taxed according to the income tax table, which can affect your net income.
 
 ![How CDB Works](/images/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce-2.webp)
 
@@ -32,7 +32,7 @@ An example of how CDB works: you invest R$ 10,000.00 in a CDB with an interest r
 
 ## How Treasury Selic Works
 
-Treasury Selic is a type of investment offered by the federal government and is considered one of the safest investments in the market. It works like a public debt title, where you lend money to the government, and in return, the government pays interest on the invested amount. The interest rate of Treasury Selic is defined by the Selic rate, which is the basic interest rate of the Brazilian economy.
+Treasury Selic is a type of investment offered by the federal government and is considered one of the safest investments in the market. It works like a public debt title, where you lend money to the government, and in return, the government pays interest on the invested amount. The interest rate of Treasury Selic is defined by the [Selic rate](/en/glossario/en-selic), which is the basic interest rate of the Brazilian [economy](/en/posts/30-day-rule-for-purchases).
 
 An example of how Treasury Selic works: you invest R$ 10,000.00 in a Treasury Selic with an interest rate of 12% per year. At the end of the year, you will receive R$ 11,200.00, being R$ 10,000.00 the invested amount and R$ 1,200.00 the interest.
 

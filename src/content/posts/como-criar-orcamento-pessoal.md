@@ -49,7 +49,7 @@ Gastos fixos são aqueles que não mudam (ou mudam pouco) todo mês:
 
 ## Passo 3: Identifique gastos variáveis
 
-Estes são os que mais impactam seu orçamento:
+Estes são os que mais impactam seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias):
 - Alimentação (supermercado + delivery)
 - Lazer e entretenimento
 - Roupas e compras pessoais
@@ -60,7 +60,7 @@ Estes são os que mais impactam seu orçamento:
 Distribua sua renda assim:
 - **50%** para necessidades (moradia, alimentação, transporte)
 - **30%** para desejos (lazer, compras, hobbies)
-- **20%** para objetivos financeiros ([poupança](/glossario/poupanca), investimentos, dívidas)
+- **20%** para objetivos financeiros ([poupança](/glossario/poupanca), [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce), dívidas)
 
 ## Passo 5: Acompanhe e ajuste
 

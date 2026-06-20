@@ -26,7 +26,7 @@ O [dólar](/posts/cotacoes-semana-3-junho-2026) americano fechou a semana em R$ 
 
 ## Selic e Impacto nos [Investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 
-A taxa Selic, atualmente em 12,25% ao ano, foi mantida pelo Comitê de Política Monetária (Copom) do Banco Central. Essa decisão visa controlar a [inflação](/glossario/inflacao) e manter a estabilidade econômica. Para os investidores, a manutenção da Selic significa que os investimentos com taxas de [juros](/glossario/juros) prefixados, como os títulos do [Tesouro Direto](/glossario/tesouro-direto), continuarão a oferecer retornos atraentes, especialmente quando comparados a outras opções de [investimento](/posts/tesouro-direto-para-iniciantes) de baixo risco.
+A taxa Selic, atualmente em 12,25% ao ano, foi mantida pelo Comitê de Política Monetária (Copom) do Banco Central. Essa decisão visa controlar a [inflação](/glossario/inflacao) e manter a estabilidade econômica. Para os investidores, a manutenção da Selic significa que os [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) com taxas de [juros](/glossario/juros) prefixados, como os títulos do [Tesouro Direto](/glossario/tesouro-direto), continuarão a oferecer retornos atraentes, especialmente quando comparados a outras opções de [investimento](/posts/tesouro-direto-para-iniciantes) de baixo risco.
 
 ## Dica Prática para o Investidor
 

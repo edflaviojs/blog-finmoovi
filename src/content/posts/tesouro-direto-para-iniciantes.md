@@ -65,7 +65,7 @@ Aqui está uma tabela com a simulação de rendimento:
 ## Próximos passos
 Agora que você entendeu como funciona o Tesouro Direto, é hora de avaliar se faz sentido para seu perfil de investidor. Considere seus objetivos financeiros, prazo de investimento e tolerância ao risco.
 
-Se você decidir investir no Tesouro Direto, é importante ler atentamente as condições e prazos de cada título antes de investir. Além disso, é recomendável diversificar seus investimentos para minimizar os riscos.
+Se você decidir investir no Tesouro Direto, é importante ler atentamente as condições e prazos de cada título antes de investir. Além disso, é recomendável diversificar seus [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce) para minimizar os riscos.
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 

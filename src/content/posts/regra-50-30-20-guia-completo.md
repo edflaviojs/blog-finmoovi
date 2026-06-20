@@ -44,7 +44,7 @@ A ideia é simples: divida sua renda líquida em três partes:
 
 - **Objetivos (20%):** R$ 1.000
   - [Reserva de emergência](/glossario/reserva-de-emergencia): R$ 500
-  - Investimentos: R$ 300
+  - [Investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce): R$ 300
   - Fundo de viagem: R$ 200
 
 ## Adaptando à realidade brasileira

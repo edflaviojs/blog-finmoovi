@@ -24,7 +24,7 @@ Por exemplo, imagine que você ganha R$ 5.000 por mês e consegue economizar R$ 
 ## Riscos e Retornos
 Um dos principais fatores que diferenciam investir e poupar é o nível de risco envolvido. A poupança é geralmente muito segura, pois o [dinheiro](/posts/economize-na-conta-do-mercado) é depositado em uma conta bancária e é protegido pelo Fundo Garantidor de Crédito (FGC). Já os [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) podem ser mais arriscados, pois o valor do ativo pode variar ao longo do tempo.
 
-No entanto, é importante lembrar que o risco também é um fator que pode afetar o retorno do investimento. Em geral, os investimentos de maior risco tendem a ter retornos mais altos, enquanto os investimentos de menor risco tendem a ter retornos mais baixos. **Dica prática:** antes de investir, é importante avaliar seu perfil de risco e escolher investimentos que sejam adequados para você.
+No entanto, é importante lembrar que o risco também é um fator que pode afetar o retorno do investimento. Em geral, os [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce) de maior risco tendem a ter retornos mais altos, enquanto os investimentos de menor risco tendem a ter retornos mais baixos. **Dica prática:** antes de investir, é importante avaliar seu perfil de risco e escolher investimentos que sejam adequados para você.
 
 ![Riscos e Retornos](/images/posts/diferenca-entre-investir-e-poupar-2.webp)
 

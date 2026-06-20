@@ -23,7 +23,7 @@ O método 50-30-20 é uma abordagem simples e eficaz para gerenciar suas finanç
 | --- | --- | --- |
 | Necessidades Essenciais | 50% | 2.000,00 |
 | Desejos e Lazer | 30% | 1.200,00 |
-| Poupança e Investimentos | 20% | 800,00 |
+| Poupança e [Investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce) | 20% | 800,00 |
 
 ## Alocando Necessidades Essenciais
 As necessidades essenciais incluem gastos como aluguel, contas de água, luz, internet, comida e transporte. É importante identificar quais são suas necessidades essenciais e alocar 50% do seu salário para esses gastos. Por exemplo, se você ganha R$ 4.000,00 por mês, você deve alocar R$ 2.000,00 para necessidades essenciais.

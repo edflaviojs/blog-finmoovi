@@ -48,7 +48,7 @@ Un ejemplo es el caso de una persona que gasta R$ 200 por semana en un supermerc
 ## Siga sus gastos
 Sigue sus gastos es fundamental para entender dónde está yendo su [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) y cómo puede ahorrar. Es importante registrar todos sus gastos, incluyendo las compras de supermercado, y verificar si está dentro de su [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)-personal).
 
-**Consejo práctico:** Use una aplicación de control de gastos para registrar sus gastos y seguir su [presupuesto](/es/posts/como-crear-presupuesto-personal). Esto puede ayudar a identificar áreas donde puede cortar gastos y ahorrar.
+**Consejo práctico:** Use una aplicación de [control de gastos](/es/posts/metodo-50-30-20-para-orcamento) para registrar sus gastos y seguir su [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal). Esto puede ayudar a identificar áreas donde puede cortar gastos y ahorrar.
 
 ## Comience hoy
 No es necesario esperar hasta el próximo mes para comenzar a ahorrar en las compras del supermercado. Usted puede comenzar hoy mismo, haciendo una lista de compras y planificando sus comidas para la semana. Recuerde que pequeños cambios pueden llevar a grandes ahorros a lo largo del tiempo.

@@ -60,4 +60,4 @@ Here are some additional tips to help keep your budget on track:
 
 
 ## Conclusion
-Reviewing your budget halfway through the year is a crucial step to ensure you're on the right path to achieving your financial goals. With a systematic approach and the use of tools like the FinMoovi app, you can keep your budget organized and achieve your objectives. Remember, financial control is an ongoing process, and small changes can make a big difference over time. So, don't wait – start your mid-year review today and take the first step towards a more secure and prosperous financial future.
+Reviewing your budget halfway through the year is a crucial step to ensure you're on the right path to achieving your financial goals. With a systematic approach and the use of tools like the [FinMoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) app, you can keep your budget organized and achieve your objectives. Remember, financial control is an ongoing process, and small changes can make a big difference over time. So, don't wait – start your mid-year review today and take the first step towards a more secure and prosperous financial future.

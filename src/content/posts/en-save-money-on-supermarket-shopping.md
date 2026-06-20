@@ -45,7 +45,7 @@ An example is the case of a person who spends $200 per week at a supermarket and
 
 
 
-## Track Your Expenses
+## Track Your [Expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro)
 Tracking your expenses is crucial to understanding where your [money](/en/posts/30-day-rule-for-purchases) is going and how you can save. It's essential to record all your expenses, including supermarket shopping, and check if you're within your [budget](/en/posts/50-30-20-rule-complete-guide).
 
 **Practical tip:** Use a expense tracking app to record your expenses and track your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). This can help identify areas where you can cut back on spending and save.
@@ -58,4 +58,4 @@ You don't need to wait until next month to start saving on supermarket shopping.
 
 
 ---
-**Want to put theory into practice? [Download FinMoovi for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No credit card, no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No credit card, no commitment.**

@@ -32,7 +32,7 @@ An example of how private pension works: imagine that you invest R$ 500 per mont
 
 ## How Investing on Your Own Works
 
-Investing on your own means that you choose the investments and manage your [money](/en/posts/30-day-rule-for-purchases) yourself. This can include investments in [stocks](/en/glossario/en-acoes), bonds, [investment](/en/posts/montando-carteira-diversificada-com-r-500) funds, real estate, among others. This option offers more flexibility and control over investments, but also requires more knowledge and skill to manage risks.
+Investing on your own means that you choose the [investments](/en/posts/cdb-vs-tesouro-[selic](/en/posts/quotes-semana-1-june-2026)-qual-e-melhor-para-voce) and manage your [money](/en/posts/30-day-rule-for-purchases) yourself. This can include investments in [stocks](/en/glossario/en-acoes), bonds, [investment](/en/posts/montando-carteira-diversificada-com-r-500) funds, real estate, among others. This option offers more flexibility and control over investments, but also requires more knowledge and skill to manage risks.
 
 An example of how investing on your own works: imagine that you invest R$ 1,000 per month in a stock investment fund, with an administration fee of 1.5% per year. If the fund has an average performance of 10% per year, you can have a patrimony of approximately R$ 300,000 after 10 years.
 

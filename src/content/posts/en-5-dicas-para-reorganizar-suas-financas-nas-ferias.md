@@ -19,7 +19,7 @@ seo:
 On [vacation](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), we usually have more time to reflect on our lives and habits, including our finances. It's a perfect moment to evaluate how we're managing our [money](/en/posts/30-day-rule-for-purchases) and make changes to improve our financial situation. According to the Brazilian Institute of Geography and Statistics (IBGE), in 2022, most Brazilians (64.1%) had difficulty paying bills and expenses, showing the importance of effective financial management.
 
 ## What is Reorganizing Finances?
-Reorganizing finances means reviewing and adjusting how you earn, save, and spend money. This can include creating or adjusting a budget, paying off debt, increasing savings, and investing in your future. It's a process that requires attention, discipline, and commitment, but can lead to a more stable and peaceful financial life.
+Reorganizing finances means reviewing and adjusting how you earn, save, and spend [money](/en/posts/avoid-impulse-purchases). This can include creating or adjusting a [budget](/en/posts/50-30-20-rule-complete-guide), paying off debt, increasing savings, and investing in your future. It's a process that requires attention, discipline, and commitment, but can lead to a more stable and peaceful financial life.
 
 ## Why are Vacations an Ideal Time?
 Vacations offer a relatively long period to focus on yourself and your financial goals. Without the pressures of daily life, you can dedicate time to understanding your financial situation, identifying areas for improvement, and planning strategies to achieve your goals. Additionally, vacations can be a time to reflect on your spending habits, identifying where you can cut unnecessary expenses.
