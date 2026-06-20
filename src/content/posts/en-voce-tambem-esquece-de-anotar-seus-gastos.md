@@ -61,7 +61,7 @@ Here's an example of how life can change before and after using FinMoovi:
 
 * You can record your expenses quickly and easily, thanks to the Smart Capture feature by voice and OCR.
 * You can view all your expenses on a single screen, with graphs and statistics to help you better understand your finances.
-* You can create a realistic and effective budget, with automatic categorization and alerts to help you stay on track.
+* You can create a realistic and effective [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)), with automatic categorization and alerts to help you stay on track.
 * You feel more in control and less stressed about your finances.
 
 ## Try FinMoovi

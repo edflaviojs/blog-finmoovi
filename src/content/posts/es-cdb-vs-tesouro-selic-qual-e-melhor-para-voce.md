@@ -18,11 +18,11 @@ seo:
 
 ## Introducción
 
-Cuando se trata de invertir [dinero](/es/posts/ahorra-en-las-compras-del-supermercado), muchas personas se preguntan cuál es la mejor opción. Existen diversas alternativas en el mercado, pero dos de las más populares son el CDB (Certificado de Depósito Bancario) y el Tesouro Selic. Ambas son consideradas inversiones de [renta fija](/es/glossario/es-renda-fixa), es decir, ofrecen un retorno fijo y pre-determinado. Sin embargo, tienen características y ventajas diferentes. En este artículo, vamos a comparar estas dos opciones y ayudarte a decidir cuál es la mejor para ti.
+Cuando se trata de invertir [dinero](/es/posts/ahorra-en-las-compras-del-supermercado), muchas personas se preguntan cuál es la mejor opción. Existen diversas alternativas en el mercado, pero dos de las más populares son el [CDB](/es/glossario/es-cdb) (Certificado de Depósito Bancario) y el Tesouro [Selic](/es/posts/cotizaciones-semana-1-junio-2026). Ambas son consideradas inversiones de [renta fija](/es/glossario/es-renda-fixa), es decir, ofrecen un retorno fijo y pre-determinado. Sin embargo, tienen características y ventajas diferentes. En este artículo, vamos a comparar estas dos opciones y ayudarte a decidir cuál es la mejor para ti.
 
 ## Cómo funciona el CDB
 
-El CDB es un tipo de inversión ofrecido por bancos y instituciones financieras. Funciona como un préstamo que tú haces al banco, y a cambio, el banco paga un interés sobre el valor invertido. El CDB puede ser de [liquidez](/es/glossario/es-liquidez) diaria, semestral o anual, dependiendo del tipo de inversión elegido. Además, el CDB puede ser gravado de acuerdo con la tabla de impuesto de renta, lo que puede afectar tu rendimiento líquido.
+El CDB es un tipo de inversión ofrecido por bancos y instituciones financieras. Funciona como un préstamo que tú haces al banco, y a [cambio](/es/glossario/es-cambio), el banco paga un interés sobre el valor invertido. El CDB puede ser de [liquidez](/es/glossario/es-liquidez) diaria, semestral o anual, dependiendo del tipo de inversión elegido. Además, el CDB puede ser gravado de acuerdo con la tabla de impuesto de renta, lo que puede afectar tu rendimiento líquido.
 
 ![Cómo funciona el CDB](/images/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce-2.webp)
 
@@ -32,7 +32,7 @@ Un ejemplo de cómo funciona el CDB: tú inviertes R$ 10.000,00 en un CDB con ta
 
 ## Cómo funciona el Tesouro Selic
 
-El Tesouro Selic es un tipo de inversión ofrecido por el gobierno federal, y es considerado uno de los inversiones más seguros del mercado. Funciona como un título de deuda pública, donde tú prestas dinero al gobierno, y a cambio, el gobierno paga un interés sobre el valor invertido. La tasa de interés del Tesouro Selic es definida por la [tasa Selic](/es/glossario/es-selic), que es la tasa de interés básica de la [economía](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña.
+El Tesouro Selic es un tipo de inversión ofrecido por el gobierno federal, y es considerado uno de los inversiones más seguros del mercado. Funciona como un título de deuda pública, donde tú prestas [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) al gobierno, y a cambio, el gobierno paga un interés sobre el valor invertido. La tasa de interés del Tesouro Selic es definida por la [tasa Selic](/es/glossario/es-selic), que es la tasa de interés básica de la [economía](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña.
 
 Un ejemplo de cómo funciona el Tesouro Selic: tú inviertes R$ 10.000,00 en un Tesouro Selic con tasa de interés del 12% al año. Al final del año, tú recibirás R$ 11.200,00, siendo R$ 10.000,00 el valor invertido y R$ 1.200,00 el interés.
 

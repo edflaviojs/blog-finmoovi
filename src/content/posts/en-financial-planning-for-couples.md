@@ -51,4 +51,4 @@ Don't put off until tomorrow what you can start doing today in terms of [financi
 
 
 ---
-**Tired of spreadsheets? [Test FinMoovi for free](https://finmoovi.com) and control your expenses with AI, multi-currency, and reports that make sense.**
+**Tired of spreadsheets? [Test [FinMoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) for free](https://[finmoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) and control your expenses with AI, multi-currency, and reports that make sense.**

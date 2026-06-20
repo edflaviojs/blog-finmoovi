@@ -31,7 +31,7 @@ Además, las condiciones financieras pueden cambiar significativamente en solo s
 
 
 ## Cómo Revisar Tu [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal)
-Revisar tu presupuesto no necesita ser un proceso complicado. Aquí están algunos pasos simples que puedes seguir:
+Revisar tu [presupuesto](/es/posts/como-crear-presupuesto-personal) no necesita ser un proceso complicado. Aquí están algunos pasos simples que puedes seguir:
 
 ### 1. Verifica Tu Saldo Actual
 Comienza verificando tu saldo bancario actual. Esto incluye no solo tu cuenta corriente, sino también cualquier [ahorro](/es/posts/negociar-descuentos-en-cuentas-fijas), [inversión](/es/posts/montando-carteira-diversificada-com-r-500) o deuda que puedas tener. Por ejemplo, si tienes un salario de $5.000 por mes y gastas $3.000 en gastos fijos, debes tener una idea clara de cuánto estás ahorrando o gastando más allá de eso.

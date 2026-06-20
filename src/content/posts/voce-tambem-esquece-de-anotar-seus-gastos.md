@@ -31,7 +31,7 @@ Além disso, a falta de [organização financeira](/posts/migrando-da-planilha-p
 ## A Solução: FinMoovi
 Mas não se preocupe, existe uma solução para esse problema. O FinMoovi é um aplicativo de [finanças pessoais](/posts/cashback-inteligente) que ajuda a organizar e controlar suas finanças de forma fácil e eficiente. Com o FinMoovi, você pode registrar seus gastos de forma rápida e fácil, graças à funcionalidade de Smart Capture por voz e OCR. Basta tirar uma foto do recibo ou dizer o valor e a categoria da compra, e o aplicativo fará o resto.
 
-Além disso, o FinMoovi também oferece categorização automática, o que facilita ainda mais o processo de organização das suas finanças. Você pode acessar o FinMoovi em [https://finmoovi.com](https://finmoovi.com) e começar a organizar suas finanças de forma mais eficiente.
+Além disso, o FinMoovi também oferece [categorização automática](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), o que facilita ainda mais o processo de organização das suas finanças. Você pode acessar o FinMoovi em [https://finmoovi.com](https://finmoovi.com) e começar a organizar suas finanças de forma mais eficiente.
 
 ## Como o FinMoovi Funciona
 Aqui está um exemplo de como o FinMoovi pode ajudar a organizar suas finanças:
@@ -61,7 +61,7 @@ Aqui está um exemplo de como a vida pode mudar antes e depois de utilizar o Fin
 
 * Você pode registrar seus gastos de forma rápida e fácil, graças à funcionalidade de Smart Capture por voz e OCR.
 * Você pode visualizar todos os seus gastos em uma única tela, com gráficos e estatísticas para ajudar a entender melhor suas finanças.
-* Você pode criar um orçamento realista e eficaz, com categorização automática e alertas para ajudar a manter você no caminho certo.
+* Você pode criar um [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) realista e eficaz, com categorização automática e alertas para ajudar a manter você no caminho certo.
 * Você se sente mais no controle e menos estressado com relação às suas finanças.
 
 ## Experimente o FinMoovi

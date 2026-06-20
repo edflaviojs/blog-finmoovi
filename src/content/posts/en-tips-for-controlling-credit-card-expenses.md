@@ -17,9 +17,9 @@ seo:
 ---
 
 ## Understanding Credit Cards
-The credit card is a convenient tool for making purchases, but it can be a big problem if not used responsibly. Imagine you earn R$ 5,000 per month and decide to use your credit card to buy a R$ 2,000 smartphone. If you don't have enough money to pay the bill, you may end up paying high interest rates and getting into debt.
+The credit card is a convenient tool for making purchases, but it can be a big problem if not used responsibly. Imagine you earn R$ 5,000 per month and decide to use your credit card to buy a R$ 2,000 smartphone. If you don't have enough [money](/en/posts/avoid-impulse-purchases) to pay the bill, you may end up paying high interest rates and getting into debt.
 
-## Defining a Budget
+## Defining a [Budget](/en/posts/50-30-20-rule-complete-guide)
 To control credit card expenses, it's essential to define a budget. This means knowing how much money you have available to spend each month. **Practical tip:** make a list of all your monthly expenses, including water, electricity, rent, food, transportation, and leisure. For example, if you earn R$ 5,000 per month, you may decide to spend R$ 1,500 on bills, R$ 1,000 on food, and R$ 500 on leisure.
 
 ## Avoiding Impulsive Expenses

@@ -35,7 +35,7 @@ Vamos considerar um salário de R$ 4.000,00 por mês. Aplicando o método 50-30-
 ## Organizando suas Finanças
 Para começar a aplicar o método 50-30-20, você precisa ter uma visão clara de suas finanças atuais. Isso inclui saber exatamente quanto você ganha, quanto gasta e onde gasta.
 
-1. **Liste suas receitas:** Anote todos os seus ganhos mensais, incluindo salário, rendimentos de [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce), etc.
+1. **Liste suas receitas:** Anote todos os seus ganhos mensais, incluindo salário, rendimentos de [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce), etc.
 2. **Liste suas despesas:** Separe suas despesas em necessidades e desejos. Inclua aqui contas de serviços, compras de supermercado, transporte, lazer, etc.
 3. **Calcule a porcentagem:** Com base nas suas receitas e despesas, calcule a porcentagem que cada categoria ocupa do seu [orçamento](/posts/como-criar-orcamento-pessoal).
 4. **Ajuste suas despesas:** Se necessário, faça ajustes para que seu [orçamento](/posts/regra-50-30-20-guia-completo) se encaixe no método 50-30-20.
@@ -48,7 +48,7 @@ Para começar a aplicar o método 50-30-20, você precisa ter uma visão clara d
 A parte da [economia](/posts/criar-reserva-de-emergencia) é crucial para o seu futuro financeiro. Aqui, você pode considerar diferentes opções para aplicar seu [dinheiro](/posts/economizar-nas-compras-do-supermercado).
 
 - **Poupança:** Uma boa opção para começar a economizar, pois é de baixo risco e fácil acesso.
-- **Investimentos:** Existem várias opções de [investimento](/posts/tesouro-direto-para-iniciantes), como [ações](/glossario/acoes), fundos de [investimento](/posts/montando-carteira-diversificada-com-r-500), títulos de dívida, etc. É importante entender os riscos e benefícios de cada opção antes de investir.
+- **[Investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-e-melhor-para-voce):** Existem várias opções de [investimento](/posts/tesouro-direto-para-iniciantes), como [ações](/glossario/acoes), fundos de [investimento](/posts/montando-carteira-diversificada-com-r-500), títulos de dívida, etc. É importante entender os riscos e benefícios de cada opção antes de investir.
 - **Pagamento de dívidas:** Se você tem dívidas com [juros](/glossario/juros) altos, pode ser uma boa ideia usar parte do seu [dinheiro](/posts/economize-na-conta-de-energia) para quitá-las.
 
 ![Economizando e Investindo](/images/posts/metodo-50-30-20-para-orcamento-3.webp)

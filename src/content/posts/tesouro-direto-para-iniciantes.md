@@ -65,10 +65,10 @@ Aqui está uma tabela com a simulação de rendimento:
 ## Próximos passos
 Agora que você entendeu como funciona o Tesouro Direto, é hora de avaliar se faz sentido para seu perfil de investidor. Considere seus objetivos financeiros, prazo de investimento e tolerância ao risco.
 
-Se você decidir investir no Tesouro Direto, é importante ler atentamente as condições e prazos de cada título antes de investir. Além disso, é recomendável diversificar seus [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce) para minimizar os riscos.
+Se você decidir investir no Tesouro Direto, é importante ler atentamente as condições e prazos de cada título antes de investir. Além disso, é recomendável diversificar seus [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce) para minimizar os riscos.
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 
 
 
-Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.
+Para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-e-melhor-para-voce) em um só lugar, [teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.

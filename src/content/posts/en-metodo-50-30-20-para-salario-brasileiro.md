@@ -23,7 +23,7 @@ The 50-30-20 method is a simple and effective approach to managing your finances
 | --- | --- | --- |
 | Essential Needs | 50% | 2,000.00 |
 | Desires and Leisure | 30% | 1,200.00 |
-| [Savings](/en/posts/smart-cashback) and [Investments](/en/posts/cdb-vs-tesouro-[selic](/en/posts/quotes-semana-1-june-2026)-qual-e-melhor-para-voce) | 20% | 800.00 |
+| [Savings](/en/posts/smart-cashback) and [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) | 20% | 800.00 |
 
 ## Allocating Essential Needs
 Essential needs include expenses such as rent, water, electricity, internet, food, and transportation. It's essential to identify what your essential needs are and allocate 50% of your salary to these expenses. For example, if you earn R$ 4,000.00 per month, you should allocate R$ 2,000.00 for essential needs.
@@ -45,7 +45,7 @@ The desires and leisure category includes expenses such as travel, clothing purc
 | Entertainment | 400.00 |
 | Total | 1,200.00 |
 
-## Savings and Investments
+## Savings and [Investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
 The savings and investments category is crucial for your financial future. It's essential to allocate 20% of your salary to savings and investments. For example, if you earn R$ 4,000.00 per month, you should allocate R$ 800.00 for savings and investments.
 
 **Practical tip:** Open a [savings account](/en/glossario/en-poupanca) and set up an automatic transfer to save 20% of your salary every month.

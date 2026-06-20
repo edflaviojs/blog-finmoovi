@@ -19,8 +19,8 @@ seo:
 ## Introdução ao [Investimento](/posts/tesouro-direto-para-iniciantes)
 Quando se fala em investir, muitas pessoas pensam que é necessário ter um grande capital para começar. No entanto, é possível montar uma carteira diversificada com apenas R$500. Para isso, é importante entender o que significa diversificar e por que isso é importante. Diversificar significa distribuir seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) em diferentes tipos de ativos, como [ações](/glossario/acoes), títulos, [fundos](/glossario/fundos) de investimento, etc., para reduzir o risco de perdas. Imagine que você tem R$500 e decide investir tudo em uma única ação. Se essa ação cair, você perderá todo o seu investimento. Já se você distribuir esses R$500 em diferentes ativos, o risco de perda será menor.
 
-## Tipos de [Investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce)
-Existem muitos tipos de investimentos disponíveis no mercado. Alguns exemplos incluem:
+## Tipos de [Investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce)
+Existem muitos tipos de [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-e-melhor-para-voce) disponíveis no mercado. Alguns exemplos incluem:
 - **Ações**: Representam uma parte do capital de uma empresa. Quando você compra ações, você está comprando uma parte daquela empresa.
 - **Títulos**: São emitidos por empresas ou governos para levantar capital. Eles oferecem uma [renda fixa](/glossario/renda-fixa) e um retorno do capital investido após um período determinado.
 - **Fundos de Investimento**: São como uma cesta que contém diferentes ativos, como ações e títulos. Eles permitem que você invista em uma variedade de ativos com um único investimento.

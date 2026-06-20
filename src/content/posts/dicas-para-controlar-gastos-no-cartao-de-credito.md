@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Entendendo o Cartão de Crédito
-O cartão de crédito é uma ferramenta conveniente para fazer compras, mas pode ser um grande problema se não for usado com responsabilidade. Imagine que você ganha R$ 5.000 por mês e decide usar seu cartão de crédito para comprar um smartphone de R$ 2.000. Se você não tiver dinheiro suficiente para pagar a fatura, pode acabar pagando [juros](/glossario/juros) altos e se endividando.
+O cartão de crédito é uma ferramenta conveniente para fazer compras, mas pode ser um grande problema se não for usado com responsabilidade. Imagine que você ganha R$ 5.000 por mês e decide usar seu cartão de crédito para comprar um smartphone de R$ 2.000. Se você não tiver [dinheiro](/posts/cashback-inteligente) suficiente para pagar a fatura, pode acabar pagando [juros](/glossario/juros) altos e se endividando.
 
 ## Definindo um Orçamento
 Para controlar os gastos no cartão de crédito, é importante definir um orçamento. Isso significa saber quanto dinheiro você tem disponível para gastar todos os meses. **Dica prática:** faça uma lista de todos os seus gastos mensais, incluindo contas de água, luz, aluguel, comida, transporte e lazer. Por exemplo, se você ganha R$ 5.000 por mês, pode decidir que vai gastar R$ 1.500 com contas, R$ 1.000 com comida e R$ 500 com lazer.
@@ -25,7 +25,7 @@ Para controlar os gastos no cartão de crédito, é importante definir um orçam
 ## Evitando Gastos Impulsivos
 Os gastos impulsivos são um grande problema para muitas pessoas. É fácil se deixar levar pela emoção e comprar coisas que não precisamos. **Dica prática:** antes de fazer uma compra, pergunte a si mesmo se realmente precisa daquela coisa. Se a resposta for não, não compre. Além disso, é importante evitar compras online quando estiver emocionalmente vulnerável, como quando estiver triste ou estressado.
 
-![Definindo um Orçamento](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-2.webp)
+![Definindo um Orçamento](/images/posts/[dicas](/posts/7-erros-financeiros-iniciante)-para-controlar-gastos-no-cartao-de-credito-2.webp)
 
 
 

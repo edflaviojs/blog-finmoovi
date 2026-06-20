@@ -65,10 +65,10 @@ Here's a table with the return simulation:
 ## Next Steps
 Now that you understand how Tesouro Direto works, it's time to evaluate if it makes sense for your investor profile. Consider your financial goals, investment term, and risk tolerance.
 
-If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your [investments](/en/posts/cdb-vs-tesouro-[selic](/en/posts/quotes-semana-1-june-2026)-qual-e-melhor-para-voce) to minimize risks.
+If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) to minimize risks.
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 
 
 
-To track your investments in one place, [try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-currency, intelligent reports, and 100% offline.
+To track your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) in one place, [try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-currency, intelligent reports, and 100% offline.

@@ -58,4 +58,4 @@ No es necesario esperar hasta el próximo mes para comenzar a ahorrar en las com
 
 
 ---
-**¿Quiere salir de la teoría? [Descargue FinMoovi gratis por 7 días](https://finmoovi.com) y comience a registrar sus gastos hoy. Sin tarjeta, sin compromiso.**
+**¿Quiere salir de la teoría? [Descargue [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) y comience a registrar sus gastos hoy. Sin tarjeta, sin compromiso.**

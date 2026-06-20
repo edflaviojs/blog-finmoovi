@@ -32,7 +32,7 @@ An example of how CDB works: you invest R$ 10,000.00 in a CDB with an interest r
 
 ## How Treasury Selic Works
 
-Treasury Selic is a type of investment offered by the federal government and is considered one of the safest investments in the market. It works like a public debt title, where you lend money to the government, and in return, the government pays interest on the invested amount. The interest rate of Treasury Selic is defined by the [Selic rate](/en/glossario/en-selic), which is the basic interest rate of the Brazilian [economy](/en/posts/30-day-rule-for-purchases).
+Treasury Selic is a type of investment offered by the federal government and is considered one of the safest investments in the market. It works like a public debt title, where you lend [money](/en/posts/creating-an-emergency-fund) to the government, and in return, the government pays interest on the invested amount. The interest rate of Treasury Selic is defined by the [Selic rate](/en/glossario/en-selic), which is the basic interest rate of the Brazilian [economy](/en/posts/30-day-rule-for-purchases).
 
 An example of how Treasury Selic works: you invest R$ 10,000.00 in a Treasury Selic with an interest rate of 12% per year. At the end of the year, you will receive R$ 11,200.00, being R$ 10,000.00 the invested amount and R$ 1,200.00 the interest.
 
@@ -77,6 +77,6 @@ Treasury Selic is a good option for you if:
 
 In summary, CDB and Treasury Selic are two fixed-income investment options that offer different advantages and disadvantages. If you are looking for a short-term investment, with daily or semi-annual liquidity, CDB may be the best option. However, if you are looking for a long-term investment, with a higher interest rate and lower credit risk, Treasury Selic may be the best option.
 
-Regardless of the choice, it is essential to remember that it is crucial to monitor the performance of your investment and adjust your strategy according to market changes. A useful tool for this is FinMoovi, which allows you to track the performance of your investment and receive personalized alerts to help you make informed decisions.
+Regardless of the choice, it is essential to remember that it is crucial to monitor the performance of your investment and adjust your strategy according to market changes. A useful tool for this is [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), which allows you to track the performance of your investment and receive personalized alerts to help you make informed decisions.
 
 Remember that the choice of investment depends on your investor profile and financial goals. It is essential to conduct thorough research and consider the options before making a decision. Additionally, it is crucial to diversify your investment portfolio to minimize risk and maximize returns.

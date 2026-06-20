@@ -17,10 +17,10 @@ seo:
 ---
 
 ## Entendiendo la Tarjeta de Crédito
-La tarjeta de crédito es una herramienta conveniente para hacer compras, pero puede ser un gran problema si no se utiliza con responsabilidad. Imagina que ganas $5.000 por mes y decides usar tu tarjeta de crédito para comprar un smartphone de $2.000. Si no tienes suficiente dinero para pagar la factura, puedes acabar pagando intereses altos y endeudándote.
+La tarjeta de crédito es una herramienta conveniente para hacer compras, pero puede ser un gran problema si no se utiliza con responsabilidad. Imagina que ganas $5.000 por mes y decides usar tu tarjeta de crédito para comprar un smartphone de $2.000. Si no tienes suficiente [dinero](/es/posts/ahorra-en-las-compras-del-supermercado) para pagar la factura, puedes acabar pagando intereses altos y endeudándote.
 
 ## Definiendo un Presupuesto
-Para controlar los gastos en la tarjeta de crédito, es importante definir un presupuesto. Esto significa saber cuánto dinero tienes disponible para gastar todos los meses. **Consejo práctico:** haz una lista de todos tus gastos mensuales, incluyendo cuentas de agua, luz, alquiler, comida, transporte y ocio. Por ejemplo, si ganas $5.000 por mes, puedes decidir que vas a gastar $1.500 en cuentas, $1.000 en comida y $500 en ocio.
+Para controlar los gastos en la tarjeta de crédito, es importante definir un presupuesto. Esto significa saber cuánto [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) tienes disponible para gastar todos los meses. **Consejo práctico:** haz una lista de todos tus gastos mensuales, incluyendo cuentas de agua, luz, alquiler, comida, transporte y ocio. Por ejemplo, si ganas $5.000 por mes, puedes decidir que vas a gastar $1.500 en cuentas, $1.000 en comida y $500 en ocio.
 
 ## Evitando Gastos Impulsivos
 Los gastos impulsivos son un gran problema para muchas personas. Es fácil dejarse llevar por la emoción y comprar cosas que no necesitamos. **Consejo práctico:** antes de hacer una compra, pregúntate a ti mismo si realmente necesitas esa cosa. Si la respuesta es no, no compres. Además, es importante evitar compras en línea cuando estés emocionalmente vulnerable, como cuando estés triste o estresado.
