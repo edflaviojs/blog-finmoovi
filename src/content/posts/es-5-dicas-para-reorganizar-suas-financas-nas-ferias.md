@@ -27,10 +27,10 @@ Las vacaciones ofrecen un espacio de tiempo relativamente largo para concentrart
 ## [Consejos](/es/posts/7-errores-financieros-principiante) para Reorganizar tus Finanzas
 Aquí están algunos consejos prácticos para que comiences a reorganizar tus finanzas durante las vacaciones:
 1. **Haz un Balance**: Comienza haciendo un balance de tu situación financiera actual. Anota todas tus ingresos y gastos, incluyendo cuentas, deudas y cualquier otro gasto recorrente. Esto te ayudará a entender mejor dónde está yendo tu [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado).
-2. **Crea o Ajusta un Presupuesto**: Con base en tu balance, crea un presupuesto que se adapte a tus necesidades y objetivos. Asegúrate de incluir una reserva de emergencia y fondos para ocio y entretenimiento.
+2. **Crea o Ajusta un [Presupuesto](/es/posts/como-crear-presupuesto-personal)**: Con base en tu balance, crea un presupuesto que se adapte a tus necesidades y objetivos. Asegúrate de incluir una reserva de emergencia y fondos para ocio y entretenimiento.
 3. **Prioriza la Deuda**: Si tienes deudas, como tarjetas de crédito o préstamos, prioriza pagarlas. Comienza con las deudas de mayor valor o las que tienen tasas de interés más altas.
 4. **Aumenta tu [Ahorro](/es/posts/ahorra-en-las-compras-del-supermercado)**: Establece metas de ahorro, sea para emergencias, objetivos de largo plazo o adquisiciones específicas. Trata de aumentar tu ahorro gradualmente.
-5. **Monitorea tus Gastos**: Utiliza herramientas como el FinMoovi para monitorear tus gastos diarios e identificar áreas donde puedes cortar gastos. El FinMoovi es una herramienta útil que puede ayudarte a mantener un control más preciso de tus finanzas.
+5. **Monitorea tus Gastos**: Utiliza herramientas como el [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) para monitorear tus gastos diarios e identificar áreas donde puedes cortar gastos. El FinMoovi es una herramienta útil que puede ayudarte a mantener un control más preciso de tus finanzas.
 
 ![¿Por qué las Vacaciones Son un Momento Ideal?](/images/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias-2.webp)
 

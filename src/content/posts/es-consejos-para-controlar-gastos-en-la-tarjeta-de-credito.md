@@ -19,7 +19,7 @@ seo:
 ## Entendiendo la Tarjeta de Crédito
 La tarjeta de crédito es una herramienta conveniente para hacer compras, pero puede ser un gran problema si no se utiliza con responsabilidad. Imagina que ganas $5.000 por mes y decides usar tu tarjeta de crédito para comprar un smartphone de $2.000. Si no tienes suficiente [dinero](/es/posts/ahorra-en-las-compras-del-supermercado) para pagar la factura, puedes acabar pagando intereses altos y endeudándote.
 
-## Definiendo un [Presupuesto](/es/posts/como-crear-presupuesto-personal)
+## Definiendo un [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal)
 Para controlar los gastos en la tarjeta de crédito, es importante definir un presupuesto. Esto significa saber cuánto [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) tienes disponible para gastar todos los meses. **Consejo práctico:** haz una lista de todos tus gastos mensuales, incluyendo cuentas de agua, luz, alquiler, comida, transporte y ocio. Por ejemplo, si ganas $5.000 por mes, puedes decidir que vas a gastar $1.500 en cuentas, $1.000 en comida y $500 en ocio.
 
 ## Evitando Gastos Impulsivos
@@ -47,4 +47,4 @@ No es necesario ser un experto en finanzas para controlar los gastos en la tarje
 
 
 ---
-**¿Estás cansado de planillas? [Prueba FinMoovi gratis](https://finmoovi.com) y controla tus gastos con IA, multi-divisa y reportes que tienen sentido.**
+**¿Estás cansado de planillas? [Prueba [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis](https://finmoovi.com) y controla tus gastos con IA, multi-divisa y reportes que tienen sentido.**

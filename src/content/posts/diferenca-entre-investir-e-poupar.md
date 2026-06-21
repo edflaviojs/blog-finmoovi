@@ -38,7 +38,7 @@ Por exemplo, imagine que você quer comprar uma casa que custa R$ 200.000. Se vo
 ## Escolhendo o Melhor Investimento
 Com tantas opções de investimento disponíveis, pode ser difícil escolher o melhor para você. Alguns fatores que devem ser considerados incluem o nível de risco, o retorno esperado, a [liquidez](/glossario/liquidez) e a taxa de administração. **Dica prática:** é importante fazer uma pesquisa cuidadosa e considerar diferentes opções antes de tomar uma decisão.
 
-Além disso, é importante lembrar que os investimentos não devem ser feitos com base em emoções ou notícias de curto prazo. Em vez disso, é importante ter uma estratégia de longo prazo e manter a calma em momentos de [volatilidade](/glossario/volatilidade) no mercado.
+Além disso, é importante lembrar que os [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) não devem ser feitos com base em emoções ou notícias de curto prazo. Em vez disso, é importante ter uma estratégia de longo prazo e manter a calma em momentos de [volatilidade](/glossario/volatilidade) no mercado.
 
 ![Escolhendo o Melhor Investimento](/images/posts/diferenca-entre-investir-e-poupar-4.webp)
 

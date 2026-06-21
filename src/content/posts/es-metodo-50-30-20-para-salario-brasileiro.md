@@ -23,7 +23,7 @@ El método 50-30-20 es una aproximación simple y eficaz para gestionar tus fina
 | --- | --- | --- |
 | Necesidades Esenciales | 50% | 2.000,00 |
 | Deseos y Ocio | 30% | 1.200,00 |
-| [Ahorro](/es/posts/regla-de-los-30-dias-para-compras) e [Inversiones](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-qual-e-melhor-para-voce) | 20% | 800,00 |
+| [Ahorro](/es/posts/regla-de-los-30-dias-para-compras) e [Inversiones](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-qual-e-melhor-para-voce) | 20% | 800,00 |
 
 ## Asignando Necesidades Esenciales
 Las necesidades esenciales incluyen gastos como alquiler, cuentas de agua, luz, internet, comida y transporte. Es importante identificar cuáles son tus necesidades esenciales y asignar 50% de tu salario para estos gastos. Por ejemplo, si ganas R$ 4.000,00 por mes, debes asignar R$ 2.000,00 para necesidades esenciales.
@@ -45,8 +45,8 @@ La categoría de deseos y ocio incluye gastos como viajes, compras de ropa, rest
 | Entretenimiento | 400,00 |
 | Total | 1.200,00 |
 
-## [Ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) e [Inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
-La categoría de ahorro e inversiones es fundamental para el futuro financiero. Es importante asignar 20% de tu salario para ahorro e inversiones. Por ejemplo, si ganas R$ 4.000,00 por mes, debes asignar R$ 800,00 para ahorro e inversiones.
+## [Ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) e [Inversiones](/es/posts/cdb-vs-tesouro-[selic](/es/glossario/es-selic)-qual-e-melhor-para-voce)
+La categoría de ahorro e [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) es fundamental para el futuro financiero. Es importante asignar 20% de tu salario para ahorro e inversiones. Por ejemplo, si ganas R$ 4.000,00 por mes, debes asignar R$ 800,00 para ahorro e inversiones.
 
 **Consejo práctico:** Abre una [cuenta de ahorro](/es/glossario/es-poupanca) y configura una transferencia automática para ahorrar 20% de tu salario todos los meses.
 

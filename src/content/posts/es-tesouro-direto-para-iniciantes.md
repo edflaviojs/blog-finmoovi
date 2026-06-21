@@ -65,11 +65,11 @@ Aquí está una tabla con la simulación de rendimiento:
 ## Próximos pasos
 Ahora que usted entiende cómo funciona el Tesouro Direto, es hora de evaluar si tiene sentido para su perfil de inversor. Considere sus objetivos financieros, plazo de inversión y tolerancia al riesgo.
 
-Si usted decide invertir en el Tesouro Direto, es importante leer atentamente las condiciones y plazos de cada título antes de invertir. Además, es recomendable diversificar sus [inversiones](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-qual-e-melhor-para-voce) para minimizar los riesgos.
+Si usted decide invertir en el Tesouro Direto, es importante leer atentamente las condiciones y plazos de cada título antes de invertir. Además, es recomendable diversificar sus [inversiones](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-qual-e-melhor-para-voce) para minimizar los riesgos.
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 
 
 
-Para acompañar sus [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) en un solo lugar, [pruebe [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-divisa, informes inteligentes y 100% sin conexión.
+Para acompañar sus [inversiones](/es/posts/cdb-vs-tesouro-[selic](/es/glossario/es-selic)-qual-e-melhor-para-voce) en un solo lugar, [pruebe [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-divisa, informes inteligentes y 100% sin conexión.
 Nota: He mantenido los nombres de las imágenes y los enlaces tal como estaban en el texto original, ya que no había instrucciones específicas para cambiarlos. Si es necesario, puedo cambiarlos para que coincidan con el contenido traducido.

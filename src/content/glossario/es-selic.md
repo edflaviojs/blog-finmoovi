@@ -1,37 +1,66 @@
 ---
-term: "Tasa Selic"
-image: "/images/glossario/es-selic.svg"
-definition: "La tasa de interés básica de Brasil, establecida por el Banco Central. Influye en todas las demás tasas de interés de la economía."
+term: "selic"
+definition: "Entienda qué es selic, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
+title: "selic - Glosario Financiero"
+description: "Entienda qué es selic, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
+image: "/images/glossario/selic.webp"
 category: "basico"
+tags: ["selic", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+author: "FinMoovi"
+publishedAt: 2026-06-21
+readingTime: 5
 locale: "es"
-relatedTerms: ["CDI", "IPCA", "Renda Fixa"]
-publishedAt: 2025-05-10
-readingTime: 2
+translationKey: "glossario-selic"
+seo:
+  metaTitle: "selic - Glosario Financiero"
+  metaDescription: "Entienda qué es selic, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
+  keywords: ["selic", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
-## ¿Qué es a Taxa Selic?
+## Qué es
+La tasa Selic es una de las herramientas más importantes que el Banco Central de Brasil utiliza para controlar la economía del país. En términos simples, la tasa Selic es el interés que los bancos pagan cuando toman prestado dinero del Banco Central. Esto puede parecer algo lejano a nuestra vida diaria, pero tiene un impacto significativo en la economía y, por lo tanto, en nuestras finanzas personales.
 
-A Selic é a taxa básica de juros do Brasil. É definida pelo Copom (Comitê de Política Monetária do Banco Central) a cada 45 dias. Ela é a "mãe" de todas as taxas de juros — quando a Selic sobe, tudo fica mais caro (empréstimos, financiamentos). Quando cai, fica mais barato.
+La tasa Selic es como un "interés de referencia" para todo el sistema financiero. Cuando la tasa Selic sube, los bancos también aumentan los intereses que cobran a sus clientes para préstamos y créditos. Por otro lado, cuando la tasa Selic baja, los intereses también disminuyen, lo que puede hacer que los préstamos sean más asequibles.
 
-## Para que serve
+![Qué es](/images/glossario/selic-inline-1.webp)
 
-O Banco Central usa a Selic para controlar a inflação:
-- **Inflação alta?** → Sobe a Selic → Crédito fica caro → Pessoas gastam menos → Preços param de subir
-- **Economia fraca?** → Desce a Selic → Crédito fica barato → Pessoas gastam mais → Economia aquece
 
-## Impacto nos seus investimentos
 
-| Selic alta | Selic baixa |
-|-----------|-------------|
-| Renda fixa rende mais | Renda fixa rende menos |
-| Poupança melhora | Poupança piora |
-| Ações tendem a cair | Ações tendem a subir |
-| Financiamentos caros | Financiamentos baratos |
+## Cómo funciona
+La tasa Selic se determina en reuniones periódicas del Comité de Política Monetaria (COPOM) del Banco Central. Estas reuniones son como sesiones de estrategia donde se discuten las condiciones económicas actuales y se toman decisiones sobre si la tasa Selic debe subir, bajar o mantenerse igual. El objetivo principal es controlar la inflación, que es el aumento en el precio de los bienes y servicios con el tiempo.
 
-## Selic e CDI
+La tasa Selic funciona como un mecanismo para regular la cantidad de dinero que circula en la economía. Cuando la tasa Selic es alta, los préstamos se vuelven más caros, lo que puede desalentar el gasto y la inversión, ayudando a controlar la inflación. Por otro lado, cuando la tasa Selic es baja, los préstamos son más baratos, lo que puede estimular el gasto y la inversión, ayudando a impulsar el crecimiento económico.
 
-O CDI acompanha a Selic de perto (geralmente 0,10% abaixo). Quando você vê "CDB que rende 100% do CDI", está rendendo praticamente a Selic.
+## Ventajas
+La tasa Selic tiene varias ventajas para la economía y para los individuos. Algunas de estas ventajas incluyen:
+* La capacidad de controlar la inflación, lo que ayuda a mantener el valor del dinero.
+* La posibilidad de estimular el crecimiento económico cuando la tasa Selic es baja.
+* La influencia en los intereses de los préstamos y créditos, lo que puede hacer que sean más asequibles o más caros, dependiendo de la situación económica.
 
-## Selic atual
+**Consejo práctico:** Es importante entender cómo la tasa Selic puede afectar tus decisiones financieras personales, como la elección del momento adecuado para solicitar un préstamo o invertir en ciertos instrumentos financieros.
 
-A Selic é atualizada a cada reunião do Copom. Consulte o site do Banco Central para o valor atual.
+![Ventajas](/images/glossario/selic-inline-3.webp)
+
+
+
+## Riesgos
+Aunque la tasa Selic es una herramienta poderosa para controlar la economía, también conlleva riesgos. Algunos de estos riesgos incluyen:
+* La posibilidad de que una tasa Selic alta pueda desacelerar demasiado la economía, llevando a una recesión.
+* La posibilidad de que una tasa Selic baja pueda estimular demasiado el gasto y la inversión, lo que podría llevar a una inflación alta.
+* La influencia en el valor de la moneda, lo que puede afectar el comercio internacional y la economía en general.
+
+**Consejo práctico:** Es crucial estar atento a las decisiones del COPOM y cómo pueden afectar tus finanzas personales, especialmente si tienes préstamos o estás considerando invertir.
+
+## Ejemplos prácticos
+Imagina que estás considerando comprar un apartamento y necesitas un préstamo de R$200.000. Si la tasa Selic es del 10%, el interés del préstamo podría ser alto, lo que significaría que pagarías mucho más que el valor inicial del préstamo a lo largo de los años. Por otro lado, si la tasa Selic es del 5%, el interés del préstamo podría ser más bajo, lo que haría que el préstamo sea más asequible.
+
+Otro ejemplo es si estás considerando ahorrar dinero. Si la tasa Selic es alta, los bancos pueden ofrecer tasas de interés más altas para los depósitos, lo que significa que puedes ganar más dinero por tu ahorro. Sin embargo, si la tasa Selic es baja, las tasas de interés para los depósitos también pueden ser bajas, lo que significa que ganarías menos por tu ahorro.
+
+**Consejo práctico:** **Es importante considerar la tasa Selic cuando estás tomando decisiones financieras**, como solicitar un préstamo o decidir dónde invertir tu dinero. Un ejemplo práctico sería utilizar aplicaciones de finanzas personales para estar al tanto de las tasas de interés actuales y cómo pueden afectar tus decisiones.
+
+## Cómo empezar
+Empieza hoy a entender mejor cómo la tasa Selic puede afectar tus finanzas personales. Investiga sobre las decisiones del COPOM y cómo pueden influir en la economía y en tus decisiones financieras. Considera hablar con un asesor financiero o utilizar recursos en línea para obtener más información sobre cómo gestionar tus finanzas en relación con la tasa Selic. Recuerda, estar informado es el primer paso hacia una mejor gestión de tus finanzas.
+
+---
+
+*Este término fue generado automáticamente por IA con imágenes explicativas. ¿Quieres sugerir una mejora? [Comenta aquí](https://finmoovi.com/contato).*
