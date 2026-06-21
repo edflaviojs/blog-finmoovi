@@ -26,7 +26,7 @@ Existem muitos tipos de [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cot
 - **Fundos de Investimento**: São como uma cesta que contém diferentes ativos, como ações e títulos. Eles permitem que você invista em uma variedade de ativos com um único investimento.
 
 ## Planejamento e Objetivos
-Antes de começar a investir, é importante definir seus objetivos e planejar como você alcançará esses objetivos. Considere o que você deseja alcançar com seus investimentos. Você está buscando uma renda extra, economizar para uma casa própria ou planejar sua aposentadoria? Quanto tempo você tem para investir? Seu perfil de risco também é crucial. Algumas pessoas estão dispostas a correr mais riscos em busca de maiores retornos, enquanto outras preferem investimentos mais seguros, mesmo que os retornos sejam menores.
+Antes de começar a investir, é importante definir seus objetivos e planejar como você alcançará esses objetivos. Considere o que você deseja alcançar com seus [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-maio-2026)-qual-e-melhor-para-voce). Você está buscando uma renda extra, economizar para uma casa própria ou planejar sua aposentadoria? Quanto tempo você tem para investir? Seu perfil de risco também é crucial. Algumas pessoas estão dispostas a correr mais riscos em busca de maiores retornos, enquanto outras preferem investimentos mais seguros, mesmo que os retornos sejam menores.
 
 ![Tipos de Investimentos](/images/posts/montando-carteira-diversificada-com-r-500-2.webp)
 

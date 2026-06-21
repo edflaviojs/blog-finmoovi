@@ -54,14 +54,14 @@ Aquí está un ejemplo de cómo la vida puede cambiar antes y después de utiliz
 
 * Pasas horas tratando de organizar tus finanzas, pero nunca parece que tengas suficiente tiempo.
 * Olvidas registrar gastos importantes y pierdes recibos.
-* No tienes idea de cuánto [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito) estás gastando en cada categoría y no puedes crear un [presupuesto](/es/posts/como-crear-presupuesto-personal) realista.
+* No tienes idea de cuánto [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito) estás gastando en cada categoría y no puedes crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) realista.
 * Te sientes estresado y ansioso con respecto a tus finanzas.
 
 **Después:**
 
 * Puedes registrar tus gastos de forma rápida y fácil, gracias a la funcionalidad de Smart Capture por voz y OCR.
 * Puedes visualizar todos tus gastos en una sola pantalla, con gráficos y estadísticas para ayudar a entender mejor tus finanzas.
-* Puedes crear un presupuesto realista y eficaz, con categorización automática y alertas para ayudar a mantenerte en el camino correcto.
+* Puedes crear un [presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) realista y eficaz, con categorización automática y alertas para ayudar a mantenerte en el camino correcto.
 * Te sientes más en control y menos estresado con respecto a tus finanzas.
 
 ## Experimenta el FinMoovi

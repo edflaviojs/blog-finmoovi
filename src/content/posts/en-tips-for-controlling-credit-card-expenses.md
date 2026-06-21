@@ -20,7 +20,7 @@ seo:
 The credit card is a convenient tool for making purchases, but it can be a big problem if not used responsibly. Imagine you earn R$ 5,000 per month and decide to use your credit card to buy a R$ 2,000 smartphone. If you don't have enough [money](/en/posts/avoid-impulse-purchases) to pay the bill, you may end up paying high interest rates and getting into debt.
 
 ## Defining a [Budget](/en/posts/50-30-20-rule-complete-guide)
-To control credit card expenses, it's essential to define a budget. This means knowing how much money you have available to spend each month. **Practical tip:** make a list of all your monthly expenses, including water, electricity, rent, food, transportation, and leisure. For example, if you earn R$ 5,000 per month, you may decide to spend R$ 1,500 on bills, R$ 1,000 on food, and R$ 500 on leisure.
+To control credit card expenses, it's essential to define a budget. This means knowing how much [money](/en/posts/creating-an-emergency-fund) you have available to spend each month. **Practical tip:** make a list of all your monthly expenses, including water, electricity, rent, food, transportation, and leisure. For example, if you earn R$ 5,000 per month, you may decide to spend R$ 1,500 on bills, R$ 1,000 on food, and R$ 500 on leisure.
 
 ## Avoiding Impulsive Expenses
 Impulsive expenses are a significant problem for many people. It's easy to get carried away by emotions and buy things you don't need. **Practical tip:** before making a purchase, ask yourself if you really need that thing. If the answer is no, don't buy it. Additionally, it's essential to avoid online purchases when you're emotionally vulnerable, such as when you're sad or stressed.
@@ -40,7 +40,7 @@ It's essential to monitor credit card expenses regularly. This can be done throu
 
 
 ## Start Today
-You don't need to be a finance expert to control credit card expenses. With a little discipline and planning, it's possible to avoid debt and save money. So, start today by monitoring your expenses and defining a budget. You can use a [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) app to help control your expenses and achieve your financial goals.
+You don't need to be a finance expert to control credit card expenses. With a little discipline and planning, it's possible to avoid debt and save [money](/en/posts/difference-between-investing-and-saving). So, start today by monitoring your expenses and defining a budget. You can use a [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) app to help control your expenses and achieve your financial goals.
 
 ![Start Today](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-6.webp)
 

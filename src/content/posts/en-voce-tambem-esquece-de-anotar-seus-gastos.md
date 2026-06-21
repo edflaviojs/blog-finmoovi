@@ -31,7 +31,7 @@ Additionally, a lack of [financial organization](/en/posts/migrando-da-planilha-
 ## The Solution: FinMoovi
 But don't worry, there's a solution to this problem. FinMoovi is a [personal finance](/en/posts/30-day-rule-for-purchases) app that helps you organize and control your finances in an easy and efficient way. With FinMoovi, you can record your expenses quickly and easily, thanks to the Smart Capture feature by voice and OCR. Just take a photo of the receipt or say the value and category of the purchase, and the app will do the rest.
 
-Additionally, FinMoovi also offers automatic categorization, which makes the process of organizing your finances even easier. You can access FinMoovi at [https://finmoovi.com](https://finmoovi.com) and start organizing your finances more efficiently.
+Additionally, FinMoovi also offers [automatic categorization](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), which makes the process of organizing your finances even easier. You can access FinMoovi at [https://finmoovi.com](https://finmoovi.com) and start organizing your finances more efficiently.
 
 ## How FinMoovi Works
 Here's an example of how FinMoovi can help you organize your finances:

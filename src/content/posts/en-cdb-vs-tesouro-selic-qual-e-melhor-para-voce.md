@@ -18,11 +18,11 @@ seo:
 
 ## Introduction
 
-When it comes to investing [money](/en/posts/avoid-impulse-purchases), many people wonder which is the best option. There are several alternatives in the market, but two of the most popular are [CDB](/en/glossario/en-cdb) (Certificate of Bank Deposit) and Treasury Selic. Both are considered fixed-income investments, meaning they offer a fixed and predetermined return. However, they have different characteristics and advantages. In this article, we will compare these two options and help you decide which is the best for you.
+When it comes to investing [money](/en/posts/avoid-impulse-purchases), many people wonder which is the best option. There are several alternatives in the market, but two of the most popular are [CDB](/en/glossario/en-cdb) (Certificate of Bank Deposit) and Treasury Selic. Both are considered fixed-income [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), meaning they offer a fixed and predetermined return. However, they have different characteristics and advantages. In this article, we will compare these two options and help you decide which is the best for you.
 
 ## How CDB Works
 
-CDB is a type of investment offered by banks and financial institutions. It works like a loan that you make to the bank, and in return, the bank pays interest on the invested amount. CDB can be daily, semi-annual, or annual [liquidity](/en/glossario/en-liquidez), depending on the type of investment chosen. Additionally, CDB can be taxed according to the income tax table, which can affect your net income.
+CDB is a type of [investment](/en/posts/montando-carteira-diversificada-com-r-500) offered by banks and financial institutions. It works like a loan that you make to the bank, and in return, the bank pays interest on the invested amount. CDB can be daily, semi-annual, or annual [liquidity](/en/glossario/en-liquidez), depending on the type of investment chosen. Additionally, CDB can be taxed according to the income tax table, which can affect your net income.
 
 ![How CDB Works](/images/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce-2.webp)
 

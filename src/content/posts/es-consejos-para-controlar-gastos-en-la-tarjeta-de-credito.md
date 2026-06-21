@@ -19,7 +19,7 @@ seo:
 ## Entendiendo la Tarjeta de Crédito
 La tarjeta de crédito es una herramienta conveniente para hacer compras, pero puede ser un gran problema si no se utiliza con responsabilidad. Imagina que ganas $5.000 por mes y decides usar tu tarjeta de crédito para comprar un smartphone de $2.000. Si no tienes suficiente [dinero](/es/posts/ahorra-en-las-compras-del-supermercado) para pagar la factura, puedes acabar pagando intereses altos y endeudándote.
 
-## Definiendo un Presupuesto
+## Definiendo un [Presupuesto](/es/posts/como-crear-presupuesto-personal)
 Para controlar los gastos en la tarjeta de crédito, es importante definir un presupuesto. Esto significa saber cuánto [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) tienes disponible para gastar todos los meses. **Consejo práctico:** haz una lista de todos tus gastos mensuales, incluyendo cuentas de agua, luz, alquiler, comida, transporte y ocio. Por ejemplo, si ganas $5.000 por mes, puedes decidir que vas a gastar $1.500 en cuentas, $1.000 en comida y $500 en ocio.
 
 ## Evitando Gastos Impulsivos
@@ -40,7 +40,7 @@ Es importante monitorear los gastos en la tarjeta de crédito regularmente. Esto
 
 
 ## Comienza hoy
-No es necesario ser un experto en finanzas para controlar los gastos en la tarjeta de crédito. Con un poco de disciplina y planificación, es posible evitar deudas y ahorrar dinero. Así que comienza hoy a monitorear tus gastos y a definir un presupuesto. Puedes usar una aplicación de [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) para ayudarte a controlar tus gastos y a alcanzar tus objetivos financieros.
+No es necesario ser un experto en finanzas para controlar los gastos en la tarjeta de crédito. Con un poco de disciplina y planificación, es posible evitar deudas y ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado). Así que comienza hoy a monitorear tus gastos y a definir un presupuesto. Puedes usar una aplicación de [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) para ayudarte a controlar tus gastos y a alcanzar tus objetivos financieros.
 
 ![Comienza hoy](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-6.webp)
 
