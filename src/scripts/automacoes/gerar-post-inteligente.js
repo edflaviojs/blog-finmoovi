@@ -364,21 +364,13 @@ async function main() {
 
   // 7. Translate and save EN
   console.log('🇺🇸 Traduzindo para inglês...');
-  try {
-    const enPost = await translatePost(post, 'en');
-    savePost(enPost, slug, 'en', imagePath);
-  } catch (e) {
-    console.log('  ⚠️ Falha na tradução EN:', e.message);
-  }
+  const enPost = await translatePost(post, 'en');
+  savePost(enPost, slug, 'en', imagePath);
 
   // 8. Translate and save ES
   console.log('🇪🇸 Traduzindo para espanhol...');
-  try {
-    const esPost = await translatePost(post, 'es');
-    savePost(esPost, slug, 'es', imagePath);
-  } catch (e) {
-    console.log('  ⚠️ Falha na tradução ES:', e.message);
-  }
+  const esPost = await translatePost(post, 'es');
+  savePost(esPost, slug, 'es', imagePath);
 
   // 9. Git commit
   try {
