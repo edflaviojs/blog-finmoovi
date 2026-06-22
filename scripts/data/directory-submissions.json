@@ -1,0 +1,165 @@
+{
+  "updatedAt": "2026-06-22",
+  "submissions": [
+    {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/posts/new",
+      "type": "app",
+      "dr": 90,
+      "status": "pending",
+      "notes": "Submeter como PWA de finanças pessoais"
+    },
+    {
+      "name": "AlternativeTo",
+      "url": "https://alternativeto.net/how-to-add-your-app/",
+      "type": "app",
+      "dr": 60,
+      "status": "pending",
+      "notes": "Alternativa a Mobills, Organizze, GuiaBolso"
+    },
+    {
+      "name": "SaaSHub",
+      "url": "https://www.saashub.com/submit",
+      "type": "app",
+      "dr": 55,
+      "status": "pending",
+      "notes": "Categoria: Personal Finance"
+    },
+    {
+      "name": "Startupbase",
+      "url": "https://startupbase.com.br/cadastre",
+      "type": "startup",
+      "dr": 40,
+      "status": "pending",
+      "notes": "Startup brasileira de fintech"
+    },
+    {
+      "name": "BetaList",
+      "url": "https://betalist.com/submit",
+      "type": "app",
+      "dr": 55,
+      "status": "pending",
+      "notes": "Submit como app em beta/lançamento"
+    },
+    {
+      "name": "Blogarama",
+      "url": "https://www.blogarama.com/add-blog",
+      "type": "blog",
+      "dr": 50,
+      "status": "pending",
+      "notes": "Categoria: Finance"
+    },
+    {
+      "name": "Feedspot",
+      "url": "https://www.feedspot.com/submit-blog",
+      "type": "blog",
+      "dr": 70,
+      "status": "pending",
+      "notes": "Top Financial Blogs"
+    },
+    {
+      "name": "AllTop",
+      "url": "https://alltop.com/submission",
+      "type": "blog",
+      "dr": 60,
+      "status": "pending",
+      "notes": "Categoria: Personal Finance"
+    },
+    {
+      "name": "Crunchbase",
+      "url": "https://www.crunchbase.com/add-new",
+      "type": "startup",
+      "dr": 90,
+      "status": "pending",
+      "notes": "Perfil da empresa FinMoovi"
+    },
+    {
+      "name": "F6S",
+      "url": "https://www.f6s.com/company/create",
+      "type": "startup",
+      "dr": 55,
+      "status": "pending",
+      "notes": "Perfil startup fintech"
+    },
+    {
+      "name": "Feedly",
+      "url": "https://feedly.com",
+      "type": "rss",
+      "dr": 80,
+      "status": "pending",
+      "notes": "Submeter RSS: https://blog.finmoovi.com/rss.xml"
+    },
+    {
+      "name": "Flipboard",
+      "url": "https://flipboard.com",
+      "type": "rss",
+      "dr": 90,
+      "status": "pending",
+      "notes": "Criar magazine de finanças com RSS"
+    },
+    {
+      "name": "Hacker News (Show HN)",
+      "url": "https://news.ycombinator.com/submit",
+      "type": "app",
+      "dr": 90,
+      "status": "pending",
+      "notes": "Show HN: FinMoovi - PWA para controle financeiro"
+    },
+    {
+      "name": "Indie Hackers",
+      "url": "https://www.indiehackers.com/products/new",
+      "type": "app",
+      "dr": 65,
+      "status": "pending",
+      "notes": "Produto indie de finanças"
+    },
+    {
+      "name": "AppSumo",
+      "url": "https://sell.appsumo.com",
+      "type": "app",
+      "dr": 75,
+      "status": "pending",
+      "notes": "Marketplace — avaliar se faz sentido"
+    },
+    {
+      "name": "G2",
+      "url": "https://www.g2.com/products/new",
+      "type": "app",
+      "dr": 90,
+      "status": "pending",
+      "notes": "Reviews de software — categoria: Budgeting"
+    },
+    {
+      "name": "Capterra",
+      "url": "https://www.capterra.com/vendors/sign-up",
+      "type": "app",
+      "dr": 90,
+      "status": "pending",
+      "notes": "Reviews — Personal Finance Software"
+    },
+    {
+      "name": "Slant",
+      "url": "https://www.slant.co",
+      "type": "app",
+      "dr": 55,
+      "status": "pending",
+      "notes": "Alternativa nas listas de 'best budgeting apps'"
+    },
+    {
+      "name": "ToolFinder",
+      "url": "https://toolfinder.co/submit",
+      "type": "app",
+      "dr": 35,
+      "status": "pending",
+      "notes": "Diretório de ferramentas"
+    },
+    {
+      "name": "There's An AI For That",
+      "url": "https://theresanaiforthat.com/submit/",
+      "type": "app",
+      "dr": 60,
+      "status": "pending",
+      "notes": "Se app usa IA (smart capture, etc)"
+    }
+  ]
+}

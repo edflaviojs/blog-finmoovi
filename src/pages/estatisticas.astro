@@ -1,0 +1,365 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import { config } from '../../site.config';
+import statistics from '../data/statistics.json';
+
+const indicators = [
+  { key: 'selic', label: 'Taxa Selic', icon: '📈' },
+  { key: 'ipca', label: 'IPCA (12 meses)', icon: '📊' },
+  { key: 'cdi', label: 'CDI Anualizado', icon: '💰' },
+  { key: 'usdBrl', label: 'Dólar (USD/BRL)', icon: '🇺🇸' },
+  { key: 'eurBrl', label: 'Euro (EUR/BRL)', icon: '🇪🇺' },
+  { key: 'poupanca', label: 'Rendimento Poupança', icon: '🏦' },
+  { key: 'desemprego', label: 'Taxa de Desemprego', icon: '👥' },
+];
+
+const updatedDate = new Date(statistics.updatedAt).toLocaleDateString('pt-BR', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric',
+});
+
+const metaTitle = 'Indicadores Financeiros do Brasil — Dados Atualizados';
+const metaDescription = `Selic, IPCA, CDI, câmbio USD/BRL, EUR/BRL, poupança e desemprego atualizados semanalmente. Fonte citável para blogs e sites financeiros.`;
+
+const datasetSchema = {
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Indicadores Financeiros do Brasil",
+  "description": "Dados econômicos atualizados semanalmente: Selic, IPCA, CDI, câmbio, poupança e desemprego.",
+  "url": `${config.siteUrl}/estatisticas`,
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Organization",
+    "name": config.brand.name,
+    "url": config.siteUrl
+  },
+  "dateModified": statistics.updatedAt,
+  "temporalCoverage": statistics.updatedAt.split('T')[0],
+  "spatialCoverage": "Brazil",
+  "keywords": ["selic", "ipca", "cdi", "câmbio", "dólar", "euro", "poupança", "desemprego", "brasil", "indicadores econômicos"],
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": `${config.siteUrl}/data/statistics.json`
+  }
+};
+---
+
+<BaseLayout
+  title={metaTitle}
+  description={metaDescription}
+  keywords={['indicadores financeiros', 'selic', 'ipca', 'cdi', 'dólar', 'euro', 'poupança', 'desemprego', 'brasil']}
+>
+  <Header />
+
+  <main class="stats-page">
+    <div class="container">
+      <header class="stats-header">
+        <h1 class="stats-title">Indicadores Financeiros do Brasil</h1>
+        <p class="stats-subtitle">Dados atualizados de fontes oficiais para consulta e citação</p>
+        <p class="stats-updated">Última atualização: <time datetime={statistics.updatedAt}>{updatedDate}</time></p>
+      </header>
+
+      <div class="stats-grid">
+        {indicators.map(({ key, label, icon }) => {
+          const data = statistics[key];
+          return (
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <span class="stats-card-icon">{icon}</span>
+                <h2 class="stats-card-label">{label}</h2>
+              </div>
+              <div class="stats-card-value">
+                {data.value !== 'N/D' ? (
+                  <span class="value">{key === 'usdBrl' || key === 'eurBrl' ? `R$ ${data.value}` : `${data.value}${data.unit}`}</span>
+                ) : (
+                  <span class="value unavailable">Indisponível</span>
+                )}
+              </div>
+              <div class="stats-card-source">
+                <a href={data.url} target="_blank" rel="noopener noreferrer">
+                  {data.source}
+                </a>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <section class="stats-info">
+        <div class="stats-info-box">
+          <h2>Sobre estes dados</h2>
+          <p>
+            Todos os indicadores são obtidos automaticamente a partir de APIs públicas oficiais
+            (Banco Central do Brasil, IBGE e ExchangeRate API). Os dados são atualizados
+            <strong>semanalmente</strong>, toda segunda-feira.
+          </p>
+          <p>
+            Em caso de indisponibilidade temporária de alguma API, o indicador aparecerá como
+            "Indisponível" até a próxima atualização.
+          </p>
+        </div>
+      </section>
+
+      <section class="stats-cite">
+        <div class="stats-cite-box">
+          <h2>Use estes dados no seu site</h2>
+          <p>
+            Você pode citar estes indicadores livremente. Pedimos apenas que inclua um link para a fonte:
+          </p>
+          <div class="stats-cite-code">
+            <code>Fonte: <a href="{config.siteUrl}/estatisticas">blog.finmoovi.com/estatisticas</a></code>
+          </div>
+          <p class="stats-cite-note">
+            Dados disponíveis também em JSON:
+            <a href="/data/statistics.json" target="_blank" rel="noopener">/data/statistics.json</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="stats-cta">
+        <div class="stats-cta-box">
+          <h2>Controle suas finanças com dados reais</h2>
+          <p>O {config.app.name} usa cotações atualizadas para converter entre BRL, USD e EUR automaticamente.</p>
+          <a href={config.app.url} class="stats-cta-btn">Experimentar Grátis — 7 dias</a>
+          <span class="stats-cta-note">Sem cartão de crédito. Cancele quando quiser.</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(datasetSchema)} />
+</BaseLayout>
+
+<style>
+  .stats-page {
+    padding: var(--space-8) 0 var(--space-16);
+  }
+
+  .stats-header {
+    text-align: center;
+    margin-bottom: var(--space-12);
+  }
+
+  .stats-title {
+    font-size: var(--text-4xl);
+    background: linear-gradient(135deg, #58a6ff, #bc8cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4);
+  }
+
+  .stats-subtitle {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-2);
+  }
+
+  .stats-updated {
+    font-size: var(--text-sm);
+    color: var(--text-tertiary, #8b949e);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    max-width: 900px;
+    margin: 0 auto var(--space-12);
+  }
+
+  @media (min-width: 640px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .stats-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .stats-card {
+    padding: var(--space-6);
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    transition: border-color 0.2s ease;
+  }
+
+  .stats-card:hover {
+    border-color: #58a6ff;
+  }
+
+  .stats-card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .stats-card-icon {
+    font-size: 1.25rem;
+  }
+
+  .stats-card-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: #e6edf3;
+    margin: 0;
+  }
+
+  .stats-card-value {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    color: #e6edf3;
+  }
+
+  .stats-card-value .unavailable {
+    font-size: var(--text-base);
+    color: #8b949e;
+    font-weight: 400;
+  }
+
+  .stats-card-source {
+    font-size: var(--text-xs);
+    margin-top: auto;
+  }
+
+  .stats-card-source a {
+    color: #8b949e;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .stats-card-source a:hover {
+    color: #58a6ff;
+    text-decoration: underline;
+  }
+
+  .stats-info,
+  .stats-cite {
+    max-width: 800px;
+    margin: 0 auto var(--space-10);
+  }
+
+  .stats-info-box,
+  .stats-cite-box {
+    padding: var(--space-8);
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: var(--radius-lg);
+  }
+
+  .stats-info-box h2,
+  .stats-cite-box h2 {
+    font-size: var(--text-xl);
+    color: #e6edf3;
+    margin-bottom: var(--space-4);
+  }
+
+  .stats-info-box p,
+  .stats-cite-box p {
+    font-size: var(--text-base);
+    color: #8b949e;
+    line-height: 1.7;
+    margin-bottom: var(--space-3);
+  }
+
+  .stats-cite-code {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    margin: var(--space-4) 0;
+    overflow-x: auto;
+  }
+
+  .stats-cite-code code {
+    font-size: var(--text-sm);
+    color: #e6edf3;
+  }
+
+  .stats-cite-code a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+
+  .stats-cite-note {
+    font-size: var(--text-sm) !important;
+  }
+
+  .stats-cite-note a {
+    color: #58a6ff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .stats-cta {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .stats-cta-box {
+    text-align: center;
+    padding: var(--space-10);
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.05), rgba(188, 140, 255, 0.05));
+    border: 1px solid #30363d;
+    border-radius: var(--radius-xl);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stats-cta-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #58a6ff, #bc8cff);
+  }
+
+  .stats-cta-box h2 {
+    font-size: var(--text-xl);
+    color: #e6edf3;
+    margin-bottom: var(--space-3);
+  }
+
+  .stats-cta-box p {
+    color: #8b949e;
+    margin-bottom: var(--space-6);
+  }
+
+  .stats-cta-btn {
+    display: inline-block;
+    padding: var(--space-3) var(--space-8);
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    border-radius: var(--radius-full);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .stats-cta-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .stats-cta-note {
+    display: block;
+    margin-top: var(--space-3);
+    font-size: var(--text-xs);
+    color: #8b949e;
+  }
+</style>

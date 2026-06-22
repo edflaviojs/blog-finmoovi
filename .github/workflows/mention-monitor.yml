@@ -1,0 +1,49 @@
+name: Brand Mention Monitor
+
+on:
+  schedule:
+    # Quartas e sábados às 6h UTC
+    - cron: '0 6 * * 3,6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mention-monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Mention Monitor
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
+        run: node --import tsx scripts/mention-monitor.js
+
+      - name: Push results
+        run: |
+          git add -A
+          git diff --staged --quiet || git commit -m "data: brand mentions update $(date +%Y-%m-%d)"
+          git pull --rebase origin main || true
+          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+            git push
+          else
+            echo "No changes to push"
+          fi

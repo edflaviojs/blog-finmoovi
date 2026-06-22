@@ -1,0 +1,48 @@
+name: Atualizar Estatísticas
+
+on:
+  schedule:
+    # Toda segunda-feira às 8h UTC
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-statistics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Atualizar indicadores financeiros
+        run: node scripts/update-statistics.js
+
+      - name: Copiar para public/data
+        run: |
+          mkdir -p public/data
+          cp src/data/statistics.json public/data/statistics.json
+
+      - name: Commit e push
+        run: |
+          git add src/data/statistics.json public/data/statistics.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração nos dados"
+          else
+            git commit -m "chore: atualizar indicadores financeiros [bot]"
+            git pull --rebase origin main || true
+            git push
+          fi
