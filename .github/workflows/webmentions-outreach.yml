@@ -1,0 +1,45 @@
+name: Webmentions & Outreach
+
+on:
+  schedule:
+    - cron: '0 10 * * 5' # Sextas às 10h UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  webmentions-outreach:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install tsx
+        run: npm install -g tsx
+
+      - name: Send Webmentions
+        run: node --import tsx scripts/send-webmentions.js
+        env:
+          NODE_OPTIONS: '--no-warnings'
+
+      - name: Run Guest Post Prospector
+        run: node --import tsx scripts/guest-post-prospector.js
+        env:
+          NODE_OPTIONS: '--no-warnings'
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/data/sent-webmentions.json
+          git add .github/data/guest-post-opportunities.json
+          git diff --staged --quiet || git commit -m "chore: update webmentions and guest post opportunities [skip ci]"
+          git push
