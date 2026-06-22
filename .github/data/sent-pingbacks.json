@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-22T20:18:25.135Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-22T20:18:25.237Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-22T20:18:25.339Z"
+  }
+]
