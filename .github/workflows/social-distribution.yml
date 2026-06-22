@@ -36,8 +36,8 @@ jobs:
 
       - name: Run Social Bookmarking
         env:
-          POCKET_CONSUMER_KEY: ${{ secrets.POCKET_CONSUMER_KEY }}
-          POCKET_ACCESS_TOKEN: ${{ secrets.POCKET_ACCESS_TOKEN }}
+          RAINDROP_ACCESS_TOKEN: ${{ secrets.RAINDROP_ACCESS_TOKEN }}
+          RAINDROP_COLLECTION_ID: ${{ secrets.RAINDROP_COLLECTION_ID }}
         run: node --import tsx scripts/social-bookmarking.js
 
       - name: Commit and push tracking updates

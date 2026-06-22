@@ -5,13 +5,13 @@
  * and submits them to social bookmarking platforms.
  *
  * Platforms:
- *   - Pocket (API)
- *   - Flipboard (RSS submission)
+ *   - Raindrop.io (API)
+ *   - Flipboard (share endpoint)
  *   - Mix.com (URL submission)
  *
  * Env vars required:
- *   POCKET_CONSUMER_KEY - Pocket API consumer key
- *   POCKET_ACCESS_TOKEN - Pocket API access token
+ *   RAINDROP_ACCESS_TOKEN - Raindrop.io API token
+ *   RAINDROP_COLLECTION_ID - Raindrop.io collection ID (optional, defaults to Unsorted)
  *
  * Tracking: .github/data/social-bookmarks.json
  * Max: 5 submissions per execution
@@ -30,8 +30,8 @@ const MAX_SUBMISSIONS_PER_RUN = 5;
 const DAYS_LOOKBACK = 7;
 
 // API config
-const POCKET_CONSUMER_KEY = process.env.POCKET_CONSUMER_KEY;
-const POCKET_ACCESS_TOKEN = process.env.POCKET_ACCESS_TOKEN;
+const RAINDROP_ACCESS_TOKEN = process.env.RAINDROP_ACCESS_TOKEN;
+const RAINDROP_COLLECTION_ID = process.env.RAINDROP_COLLECTION_ID || '-1'; // -1 = Unsorted
 
 /**
  * Parse frontmatter from a markdown file
@@ -70,38 +70,37 @@ function getPostUrl(slug) {
 }
 
 /**
- * Submit to Pocket API
+ * Submit to Raindrop.io API
  */
-async function submitToPocket({ url, title, tags }) {
-  if (!POCKET_CONSUMER_KEY || !POCKET_ACCESS_TOKEN) {
-    return { success: false, error: 'Missing Pocket credentials' };
+async function submitToRaindrop({ url, title, tags }) {
+  if (!RAINDROP_ACCESS_TOKEN) {
+    return { success: false, error: 'Missing RAINDROP_ACCESS_TOKEN' };
   }
 
   try {
     const body = {
-      url,
+      link: url,
       title,
-      tags: tags || 'finmoovi,financas,educacao-financeira',
-      consumer_key: POCKET_CONSUMER_KEY,
-      access_token: POCKET_ACCESS_TOKEN,
+      tags: tags ? tags.split(',').map(t => t.trim()) : ['finmoovi', 'financas'],
+      collection: { '$id': parseInt(RAINDROP_COLLECTION_ID) },
     };
 
-    const response = await fetch('https://getpocket.com/v3/add', {
+    const response = await fetch('https://api.raindrop.io/rest/v1/raindrop', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json; charset=UTF-8',
-        'X-Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${RAINDROP_ACCESS_TOKEN}`,
       },
       body: JSON.stringify(body),
     });
 
     if (!response.ok) {
       const errorBody = await response.text();
-      return { success: false, error: `Pocket API ${response.status}: ${errorBody}` };
+      return { success: false, error: `Raindrop API ${response.status}: ${errorBody}` };
     }
 
     const data = await response.json();
-    return { success: true, itemId: data.item?.item_id || 'unknown' };
+    return { success: true, itemId: data.item?._id || 'unknown' };
   } catch (err) {
     return { success: false, error: err.message };
   }
@@ -234,18 +233,18 @@ async function main() {
       platforms: {},
     };
 
-    // 1. Pocket
-    console.log('  -> Pocket...');
-    const pocketResult = await submitToPocket({
+    // 1. Raindrop.io
+    console.log('  -> Raindrop.io...');
+    const raindropResult = await submitToRaindrop({
       url: postUrl,
       title: post.title,
       tags: tagStr,
     });
-    results.platforms.pocket = pocketResult;
-    if (pocketResult.success) {
-      console.log(`     SUCCESS (item: ${pocketResult.itemId})`);
+    results.platforms.raindrop = raindropResult;
+    if (raindropResult.success) {
+      console.log(`     SUCCESS (item: ${raindropResult.itemId})`);
     } else {
-      console.log(`     FAILED: ${pocketResult.error}`);
+      console.log(`     FAILED: ${raindropResult.error}`);
     }
 
     // 2. Flipboard
