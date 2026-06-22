@@ -30,7 +30,7 @@ Aqui estão algumas dicas práticas para você começar a reorganizar suas finan
 2. **Crie ou Ajuste um [Orçamento](/posts/metodo-50-30-20-para-salario-brasileiro)**: Com base no seu balanço, crie um [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) que atenda às suas necessidades e objetivos. Certifique-se de incluir uma [reserva de emergência](/glossario/reserva-de-emergencia) e [fundos](/glossario/fundos) para lazer e entretenimento.
 3. **Priorize a Dívida**: Se você tem dívidas, como cartões de crédito ou empréstimos, priorize pagá-las. Comece com as dívidas de maior valor ou as que têm taxas de [juros](/glossario/juros) mais altas.
 4. **Aumente sua Poupança**: Estabeleça metas de poupança, seja para emergências, objetivos de longo prazo ou aquisições específicas. Tente aumentar sua poupança gradualmente.
-5. **Monitore seus Gastos**: Use ferramentas como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) para monitorar seus gastos diários e identificar áreas onde pode cortar despesas. O FinMoovi é uma ferramenta útil que pode ajudá-lo a manter um controle mais preciso de suas finanças.
+5. **Monitore seus Gastos**: Use ferramentas como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) para monitorar seus gastos diários e identificar áreas onde pode cortar despesas. O [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) é uma ferramenta útil que pode ajudá-lo a manter um controle mais preciso de suas finanças.
 
 ![Por que as Férias São um Momento Ideal?](/images/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias-2.webp)
 
@@ -54,6 +54,6 @@ Ferramentas como o FinMoovi podem ser grandes aliadas na gestão financeira. Ela
 
 
 
-De acordo com a Serasa, em 2022, quase 60% dos brasileiros utilizavam aplicativos para controlar suas finanças, mostrando a crescente conscientização sobre a importância da gestão financeira pessoal. O Banco Central do Brasil também destaca a importância da [educação financeira](/glossario/educacao-financeira) e do planejamento para uma vida financeira saudável.
+De acordo com a Serasa, em 2022, quase 60% dos brasileiros utilizavam aplicativos para controlar suas finanças, mostrando a crescente conscientização sobre a importância da gestão [financeira pessoal](/posts/tesouro-direto-para-iniciantes). O Banco Central do Brasil também destaca a importância da [educação financeira](/glossario/educacao-financeira) e do planejamento para uma vida financeira saudável.
 
 Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês.

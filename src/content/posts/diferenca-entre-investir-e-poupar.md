@@ -17,14 +17,14 @@ seo:
 ---
 
 ## Investindo vs [Poupança](/glossario/poupanca)
-Quando se trata de gerenciar nosso dinheiro, muitas pessoas usam os termos "investir" e "poupar" como se fossem sinônimos, mas na verdade, eles têm significados diferentes e são fundamentais para o nosso bem-estar financeiro. Investir envolve colocar seu dinheiro em ativos que têm potencial de crescer ao longo do tempo, como ações, imóveis ou [fundos](/glossario/fundos) de investimento. Já poupar é o ato de reservar uma parte do seu dinheiro para uso futuro, geralmente em uma conta de poupança ou aplicação de baixo risco.
+Quando se trata de gerenciar nosso [dinheiro](/posts/cashback-inteligente), muitas pessoas usam os termos "investir" e "poupar" como se fossem sinônimos, mas na verdade, eles têm significados diferentes e são fundamentais para o nosso bem-estar financeiro. Investir envolve colocar seu dinheiro em ativos que têm potencial de crescer ao longo do tempo, como [ações](/glossario/acoes), imóveis ou [fundos](/glossario/fundos) de investimento. Já poupar é o ato de reservar uma parte do seu dinheiro para uso futuro, geralmente em uma conta de poupança ou aplicação de baixo risco.
 
 Para entender melhor a diferença, imagine que você ganha R$ 5.000 por mês e decide reservar R$ 1.000 para uso futuro. Se você simplesmente colocar esse dinheiro em uma conta de poupança, você estará poupando. No entanto, se você decidir aplicar esse dinheiro em ações ou um fundo de investimento, você estará investindo.
 
 ## Riscos e Retornos
-Um dos principais motivos pelos quais as pessoas optam por investir em vez de poupar é o potencial de retorno. Investimentos de alto risco podem oferecer retornos mais altos, mas também vêm com a possibilidade de perdas significativas. Por exemplo, se você investir R$ 1.000 em ações e o mercado de ações subir, você pode ganhar R$ 1.500 ou mais. No entanto, se o mercado cair, você pode perder uma parte significativa do seu investimento.
+Um dos principais motivos pelos quais as pessoas optam por investir em vez de poupar é o potencial de retorno. [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) de alto risco podem oferecer retornos mais altos, mas também vêm com a possibilidade de perdas significativas. Por exemplo, se você investir R$ 1.000 em ações e o mercado de ações subir, você pode ganhar R$ 1.500 ou mais. No entanto, se o mercado cair, você pode perder uma parte significativa do seu investimento.
 
-Já a poupança, por outro lado, é geralmente mais segura, mas os retornos são menores. Em uma conta de poupança, você pode ganhar cerca de 0,5% a 1% de juros ao mês, o que é uma taxa de retorno relativamente baixa.
+Já a poupança, por outro lado, é geralmente mais segura, mas os retornos são menores. Em uma conta de poupança, você pode ganhar cerca de 0,5% a 1% de [juros](/glossario/juros) ao mês, o que é uma taxa de retorno relativamente baixa.
 
 ![Riscos e Retornos](/images/posts/diferenca-entre-investir-e-poupar-2.webp)
 

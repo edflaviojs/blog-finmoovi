@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Invertiendo vs [Ahorro](/es/posts/ahorra-en-las-compras-del-supermercado)
-Cuando se trata de gestionar nuestro dinero, muchas personas usan los términos "invertir" y "ahorrar" como si fueran sinónimos, pero en realidad, tienen significados diferentes y son fundamentales para nuestro bienestar financiero. Invertir implica colocar nuestro dinero en activos que tienen potencial de crecer con el tiempo, como [acciones](/es/glossario/es-acoes), bienes raíces o fondos de inversión. Ahorrar es el acto de reservar una parte de nuestro dinero para uso futuro, generalmente en una cuenta de ahorro o aplicación de bajo riesgo.
+Cuando se trata de gestionar nuestro [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia), muchas personas usan los términos "invertir" y "ahorrar" como si fueran sinónimos, pero en realidad, tienen significados diferentes y son fundamentales para nuestro bienestar financiero. Invertir implica colocar nuestro [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) en activos que tienen potencial de crecer con el tiempo, como [acciones](/es/glossario/es-acoes), bienes raíces o fondos de inversión. Ahorrar es el acto de reservar una parte de nuestro dinero para uso futuro, generalmente en una cuenta de ahorro o aplicación de bajo riesgo.
 
 Para entender mejor la diferencia, imagine que usted gana $5.000 por mes y decide reservar $1.000 para uso futuro. Si simplemente coloca ese dinero en una cuenta de ahorro, usted estará ahorrando. Sin embargo, si decide aplicar ese dinero en acciones o un fondo de inversión, usted estará invirtiendo.
 

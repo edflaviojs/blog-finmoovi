@@ -44,7 +44,7 @@ Uma dica valiosa para os investidores pessoa física é diversificar seus invest
 
 Para a próxima semana, é importante ficar atento às notícias econômicas globais e locais, pois elas podem influenciar as taxas de câmbio e a política monetária. Além disso, é fundamental revisar e ajustar suas estratégias de [investimento](/posts/montando-carteira-diversificada-com-r-500) de acordo com as mudanças no mercado. Lembre-se de que a [diversificação](/glossario/diversificacao) e a informação são chaves para o sucesso nos investimentos.
 
-Em resumo, a semana foi marcada por estabilidade no dólar e valorização do euro, com a Selic mantida estável. Para os investidores, é crucial acompanhar as decisões do COPOM e diversificar seus investimentos. Com ferramentas como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos), você pode ter mais controle sobre seus investimentos e tomar decisões mais informadas. Fique atento às notícias econômicas e ajuste suas estratégias para alcançar seus objetivos financeiros.
+Em resumo, a semana foi marcada por estabilidade no [dólar](/posts/cotacoes-semana-4-junho-2026) e valorização do euro, com a Selic mantida estável. Para os investidores, é crucial acompanhar as decisões do COPOM e diversificar seus investimentos. Com ferramentas como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos), você pode ter mais controle sobre seus investimentos e tomar decisões mais informadas. Fique atento às notícias econômicas e ajuste suas estratégias para alcançar seus objetivos financeiros.
 
 
 ---

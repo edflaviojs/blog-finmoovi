@@ -29,8 +29,8 @@ Here are some practical tips to help you start reorganizing your finances during
 1. **Take Stock**: Start by taking stock of your current financial situation. Write down all your income and expenses, including bills, debts, and any other recurring expenses. This will help you understand where your [money](/en/posts/creating-an-emergency-fund) is going.
 2. **Create or Adjust a [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro))**: Based on your stocktake, create a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) that meets your needs and goals. Make sure to include an [emergency fund](/en/glossario/en-reserva-de-emergencia) and funds for leisure and entertainment.
 3. **Prioritize Debt**: If you have debt, such as credit cards or loans, prioritize paying them off. Start with the debts with the highest value or those with the highest interest rates.
-4. **Increase Your Savings**: Set savings goals, whether for emergencies, long-term goals, or specific purchases. Try to increase your savings gradually.
-5. **Monitor Your Expenses**: Use tools like [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) to monitor your daily expenses and identify areas where you can cut back. FinMoovi is a useful tool that can help you keep a more accurate track of your finances.
+4. **Increase Your [Savings](/en/posts/smart-cashback)**: Set savings goals, whether for emergencies, long-term goals, or specific purchases. Try to increase your savings gradually.
+5. **Monitor Your Expenses**: Use tools like [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) to monitor your daily expenses and identify areas where you can cut back. [FinMoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) is a useful tool that can help you keep a more accurate track of your finances.
 
 ![Why Vacations are an Ideal Time?](/images/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias-2.webp)
 
