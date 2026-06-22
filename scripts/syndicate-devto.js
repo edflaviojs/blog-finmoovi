@@ -70,17 +70,29 @@ function buildDevtoBody(post) {
 }
 
 function sanitizeTag(tag) {
-  // Dev.to tags: lowercase, no spaces, alphanumeric and hyphens only, max 30 chars
-  return tag
+  // Dev.to tags: lowercase, alphanumeric and hyphens only, max 20 chars
+  const cleaned = tag
     .toLowerCase()
     .replace(/[^a-z0-9\s-]/g, '')
-    .replace(/\s+/g, '')
-    .slice(0, 30);
+    .trim()
+    .split(/\s+/)
+    .join('-')
+    .slice(0, 20)
+    .replace(/-$/, ''); // remove trailing hyphen
+  return cleaned;
 }
+
+// Fallback tags for finance posts when original tags are too long
+const FALLBACK_TAGS = ['personalfinance', 'money', 'budgeting', 'fintech'];
 
 async function postToDevto(post) {
   const canonicalUrl = buildCanonicalUrl(post.slug);
-  const tags = post.tags.map(sanitizeTag).filter(t => t.length > 0);
+  let tags = post.tags.map(sanitizeTag).filter(t => t.length >= 2 && t.length <= 20);
+  // If no valid tags remain, use fallbacks
+  if (tags.length === 0) {
+    tags = FALLBACK_TAGS;
+  }
+  tags = tags.slice(0, 4);
   const body = buildDevtoBody(post);
 
   const payload = {
