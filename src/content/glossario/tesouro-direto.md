@@ -1,49 +1,65 @@
 ---
-term: "Tesouro Direto"
-image: "/images/glossario/tesouro-direto.svg"
-definition: "Programa do governo federal que permite pessoas físicas investirem em títulos públicos a partir de R$ 30. É um dos investimentos mais seguros do Brasil."
-category: "investimentos"
-relatedTerms: ["Selic", "IPCA", "Renda Fixa"]
-publishedAt: 2025-05-10
+term: "tesouro direto"
+definition: "Entenda o que é tesouro direto, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+title: "tesouro direto - Glossário Financeiro"
+description: "Entenda o que é tesouro direto, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+image: "/images/glossario/tesouro-direto.webp"
+category: "basico"
+tags: ["tesouro direto", "glossário", "finanças"]
+author: "FinMoovi"
+publishedAt: 2026-06-22
+readingTime: 5
 locale: "pt"
-readingTime: 2
+translationKey: "glossario-tesouro-direto"
+seo:
+  metaTitle: "tesouro direto - Glossário Financeiro"
+  metaDescription: "Entenda o que é tesouro direto, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+  keywords: ["tesouro direto", "glossário", "finanças"]
 ---
 
-## O que é Tesouro Direto?
+## O que é Tesouro Direto
+O Tesouro Direto é um investimento em títulos públicos emitidos pelo governo brasileiro, que oferece uma forma segura e rentável de aplicar seu dinheiro. Basicamente, você está emprestando dinheiro ao governo, que promete pagar você de volta com juros. É como um empréstimo, mas ao invés de emprestar para uma pessoa ou empresa, você está emprestando para o governo. Os títulos do Tesouro Direto são emitidos pela Secretaria do Tesouro Nacional e são negociados na bolsa de valores.
 
-Tesouro Direto é um programa do governo brasileiro que permite que qualquer pessoa empreste dinheiro para o governo e receba juros em troca. É como se o governo pedisse dinheiro emprestado de você e te pagasse com juros.
+Os títulos do Tesouro Direto podem ser classificados em dois principais tipos: títulos prefixados e títulos pós-fixados. Os títulos prefixados oferecem uma taxa de juros fixa durante todo o período de investimento, enquanto os títulos pós-fixados têm uma taxa de juros que varia de acordo com a inflação ou outras taxas de juros de referência. Por exemplo, se você investir R$ 1.000 em um título prefixado com taxa de juros de 10% ao ano, você receberá R$ 100 de juros por ano, totalizando R$ 1.100 ao final do período de investimento.
 
-## Tipos de títulos
+![O que é Tesouro Direto](/images/glossario/tesouro-direto-inline-1.webp)
 
-### Tesouro Selic (LFT)
 
-- Rende a taxa Selic
-- Liquidez diária (pode resgatar quando quiser)
-- Ideal para: reserva de emergência
-- Risco: praticamente zero
 
-### Tesouro IPCA+ (NTN-B)
+## Como funciona
+O Tesouro Direto funciona da seguinte forma: você compra um título do Tesouro Direto por um valor determinado, e o governo se compromete a pagar você de volta com juros após um período de tempo determinado. O período de investimento pode variar de alguns meses a vários anos. Durante esse período, você não pode sacar o dinheiro, mas pode vendê-lo na bolsa de valores se precisar do dinheiro antes do vencimento. É importante lembrar que, assim como qualquer investimento, o Tesouro Direto envolve riscos, como a perda de valor do título ou a não pagamento dos juros.
 
-- Rende IPCA + taxa fixa (ex: IPCA + 6%)
-- Protege contra inflação
-- Ideal para: aposentadoria, longo prazo
-- Risco: pode ter variação se vender antes do vencimento
+**Dica prática:** Antes de investir no Tesouro Direto, é importante definir seus objetivos financeiros e o prazo de investimento. Se você precisa do dinheiro em curto prazo, pode ser melhor optar por um título com prazo mais curto, como 6 meses ou 1 ano. Se você pode deixar o dinheiro investido por mais tempo, pode optar por um título com prazo mais longo, como 5 ou 10 anos.
 
-### Tesouro Prefixado (LTN)
+## Vantagens
+As vantagens do Tesouro Direto incluem:
+* Rendimento fixo e seguro: o Tesouro Direto oferece uma taxa de juros fixa e segura, o que pode ser atraente para investidores que buscam um retorno estável.
+* Liquidez: os títulos do Tesouro Direto podem ser vendidos na bolsa de valores a qualquer momento, o que oferece uma certa liquidez.
+* Diversificação: o Tesouro Direto pode ser uma forma de diversificar sua carteira de investimentos, reduzindo o risco de perda de valor.
+* Isenção de impostos: os rendimentos do Tesouro Direto são isentos de impostos para investidores pessoa física, o que pode ser um benefício significativo.
 
-- Taxa fixa definida na compra (ex: 12% ao ano)
-- Você sabe exatamente quanto vai receber no vencimento
-- Ideal para: quando acredita que juros vão cair
-- Risco: se a Selic subir, seu título perde valor de mercado
+**Dica prática:** É importante lembrar que o Tesouro Direto não é um investimento de curto prazo. Se você precisa do dinheiro em curto prazo, pode ser melhor optar por um investimento mais líquido, como uma poupança ou um fundo de investimento de curto prazo.
 
-## Como investir
+![Vantagens](/images/glossario/tesouro-direto-inline-3.webp)
 
-1. Abra conta em uma corretora (taxa zero na maioria)
-2. Acesse o site do Tesouro Direto
-3. Escolha o título adequado ao seu objetivo
-4. Invista a partir de R$ 30
 
-## Custos
 
-- Taxa de custódia B3: 0,20% ao ano (isento até R$ 10.000 no Tesouro Selic)
-- IR regressivo: 22,5% (até 180 dias) a 15% (acima de 720 dias)
+## Riscos
+Os riscos do Tesouro Direto incluem:
+* Risco de crédito: o governo pode não pagar os juros ou o principal do título, o que pode resultar em perda de valor.
+* Risco de liquidez: os títulos do Tesouro Direto podem não ser facilmente vendidos na bolsa de valores, o que pode resultar em perda de valor.
+* Risco de inflação: a inflação pode reduzir o valor real do título, o que pode resultar em perda de valor.
+
+**Dica prática:** É importante diversificar sua carteira de investimentos para reduzir o risco de perda de valor. Além do Tesouro Direto, você pode considerar investir em outros ativos, como ações, fundos de investimento ou imóveis.
+
+## Exemplos práticos
+Vamos considerar alguns exemplos práticos de como o Tesouro Direto pode ser usado:
+* João, um engenheiro de 30 anos, ganha R$ 5.000 por mês e quer investir R$ 1.000 por mês no Tesouro Direto. Ele opta por um título prefixado com taxa de juros de 10% ao ano e prazo de 5 anos. Ao final do prazo, ele receberá R$ 1.500 de juros, totalizando R$ 2.500.
+* Maria, uma professora de 40 anos, ganha R$ 3.500 por mês e quer investir R$ 500 por mês no Tesouro Direto. Ela opta por um título pós-fixado com taxa de juros variável e prazo de 10 anos. Ao final do prazo, ela receberá um valor que depende da inflação e da taxa de juros de referência.
+
+## Comece hoje
+Agora que você sabe mais sobre o Tesouro Direto, é hora de começar a investir. Lembre-se de que o Tesouro Direto é um investimento de longo prazo, então é importante definir seus objetivos financeiros e o prazo de investimento antes de começar. **Dica prática:** Comece com um valor pequeno e aumente gradualmente à medida que você se torna mais confortável com o investimento. Além disso, é importante lembrar que o Tesouro Direto é apenas uma das muitas opções de investimento disponíveis, então é importante diversificar sua carteira de investimentos para reduzir o risco de perda de valor. Comece hoje e veja como o Tesouro Direto pode ajudá-lo a alcançar seus objetivos financeiros!
+
+---
+
+*Este termo foi gerado automaticamente pela IA com imagens explicativas. Quer sugerir uma melhoria? [Comente aqui](https://finmoovi.com/contato).*

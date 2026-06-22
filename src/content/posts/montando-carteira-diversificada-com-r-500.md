@@ -33,7 +33,7 @@ Antes de começar a investir, é importante definir seus objetivos e planejar co
 
 
 ## Simulações de Rendimento
-Vamos considerar um exemplo prático. Suponha que você invista R$500 em um fundo de investimento que oferece um retorno anual de 8%. Após um ano, seu investimento valerá R$540. Se você continuar investindo R$500 todos os meses, após 5 anos, seu investimento pode valer cerca de R$4.500, considerando o mesmo retorno anual de 8%. É importante lembrar que esses são apenas exemplos e o desempenho real dos [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) pode variar.
+Vamos considerar um exemplo prático. Suponha que você invista R$500 em um fundo de investimento que oferece um retorno anual de 8%. Após um ano, seu investimento valerá R$540. Se você continuar investindo R$500 todos os meses, após 5 anos, seu investimento pode valer cerca de R$4.500, considerando o mesmo retorno anual de 8%. É importante lembrar que esses são apenas exemplos e o desempenho real dos [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce) pode variar.
 
 ## Riscos
 Investir sempre envolve riscos. O risco é a possibilidade de perder parte ou todo o seu investimento. Existem diferentes tipos de riscos, como risco de mercado (o valor dos ativos pode cair), risco de crédito (a empresa ou governo que emitiu o título pode não pagar), e risco de [liquidez](/glossario/liquidez) (você pode não ser capaz de vender seu investimento rapidamente o suficiente ou pelo preço que você deseja). Para gerenciar esses riscos, é importante diversificar sua carteira e entender os riscos associados a cada investimento. Avalie se faz sentido para seu perfil de risco e objetivos financeiros.
@@ -43,7 +43,7 @@ Investir sempre envolve riscos. O risco é a possibilidade de perder parte ou to
 
 
 ## Próximos passos
-Agora que você entendeu os conceitos básicos de investimento e [diversificação](/glossario/diversificacao), é hora de colocar esses conhecimentos em prática. Considere começar com pequenas quantias e aumentar seus investimentos à medida que você se torna mais confortável. Lembre-se de que a chave para o sucesso é a consistência e a paciência. Não tenha medo de buscar ajuda de um profissional financeiro se você não se sentir seguro para investir sozinho. Além disso, considere usar ferramentas como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) para ajudar a gerenciar seus investimentos de forma eficiente.
+Agora que você entendeu os conceitos básicos de investimento e [diversificação](/glossario/diversificacao), é hora de colocar esses conhecimentos em prática. Considere começar com pequenas quantias e aumentar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) à medida que você se torna mais confortável. Lembre-se de que a chave para o sucesso é a consistência e a paciência. Não tenha medo de buscar ajuda de um profissional financeiro se você não se sentir seguro para investir sozinho. Além disso, considere usar ferramentas como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) para ajudar a gerenciar seus investimentos de forma eficiente.
 
 ![Próximos passos](/images/posts/montando-carteira-diversificada-com-r-500-6.webp)
 

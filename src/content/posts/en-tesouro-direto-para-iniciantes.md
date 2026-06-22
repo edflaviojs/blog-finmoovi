@@ -16,7 +16,7 @@ seo:
   keywords: ["Tesouro Direto","investment","fixed income","public securities","personal finance","economy","tesouro direto for beginners","how to invest in tesouro direto","tesouro selic"]
 ---
 
-## Introduction to Tesouro Direto
+## Introduction to [Tesouro Direto](/en/glossario/en-tesouro-direto)
 The Tesouro Direto is a program by the Brazilian government that allows citizens to invest in public securities, such as LTN (Letras do Tesouro Nacional) and NTN (Notas do Tesouro Nacional). These securities represent loans made to the government, which pays interest to the investor. It's a way to invest in [fixed income](/en/glossario/en-renda-fixa), with predefined returns and low risk.
 
 For example, if you invest R$1,000 in an LTN title with a 1-year term and 5% annual interest, you'll receive R$1,050 after maturity. This means a return of R$50, or 5% of the invested value.
@@ -65,7 +65,7 @@ Here's a table with the return simulation:
 ## Next Steps
 Now that you understand how Tesouro Direto works, it's time to evaluate if it makes sense for your investor profile. Consider your financial goals, investment term, and risk tolerance.
 
-If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) to minimize risks.
+If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) to minimize risks.
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 

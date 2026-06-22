@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro: 15/06/2026 a 22/06/2026
 
-Nesta semana, o mercado financeiro brasileiro apresentou movimentos interessantes, especialmente em relação às taxas de câmbio e às decisões do Banco Central. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus investimentos.
+Nesta semana, o mercado financeiro brasileiro apresentou movimentos interessantes, especialmente em relação às taxas de [câmbio](/glossario/cambio) e às decisões do Banco Central. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce).
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro: 15/06/2026 a 22/06/2026](/images/posts/cotacoes-semana-4-junho-2026-inline-1.webp)
 
@@ -30,7 +30,7 @@ A taxa de câmbio entre o real brasileiro e as principais moedas estrangeiras fo
 
 ## Selic e Impacto nos Investimentos
 
-A Selic, taxa básica de juros da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator chave para os investidores. Embora não tenha havido alterações significativas na taxa durante a semana, a expectativa é de que o Banco Central continue a monitorar a inflação e ajuste as taxas de juros conforme necessário. Isso pode afetar diretamente os rendimentos de investimentos como CDBs, [LCI e LCA](/glossario/lci-e-lca), tornando essencial para os investidores pessoa física estar atentos às mudanças nas taxas de juros e ajustar suas estratégias de investimento de acordo.
+A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator chave para os investidores. Embora não tenha havido alterações significativas na taxa durante a semana, a expectativa é de que o Banco Central continue a monitorar a [inflação](/glossario/inflacao) e ajuste as taxas de juros conforme necessário. Isso pode afetar diretamente os rendimentos de investimentos como CDBs, [LCI e LCA](/glossario/lci-e-lca), tornando essencial para os investidores pessoa física estar atentos às mudanças nas taxas de juros e ajustar suas estratégias de investimento de acordo.
 
 ![Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-4-junho-2026-inline-3.webp)
 
@@ -48,5 +48,5 @@ Em resumo, a semana foi marcada por estabilidade no dólar e valorização do eu
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
+**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
 

@@ -16,7 +16,7 @@ seo:
   keywords: ["Tesouro Direto","inversión","renta fija","títulos públicos","finanzas personales","economía","tesouro direto para iniciantes","cómo invertir en tesouro direto","tesouro selic"]
 ---
 
-## Introducción al Tesouro Direto
+## Introducción al [Tesouro Direto](/es/glossario/es-tesouro-direto)
 El Tesouro Direto es un programa del gobierno brasileño que permite a los ciudadanos invertir en títulos públicos, como LTN (Letras del Tesouro Nacional) y NTN (Notas del Tesouro Nacional). Estos títulos representan préstamos realizados al gobierno, que paga intereses al inversor. Es una forma de invertir en [renta fija](/es/glossario/es-renda-fixa), con rendimientos predefinidos y bajo riesgo.
 
 Por ejemplo, si usted invierte R$1.000 en un título LTN con plazo de 1 año y intereses del 5% anual, usted recibirá R$1.050 después del vencimiento. Esto significa un rendimiento de R$50, o el 5% del valor invertido.
@@ -65,7 +65,7 @@ Aquí está una tabla con la simulación de rendimiento:
 ## Próximos pasos
 Ahora que usted entiende cómo funciona el Tesouro Direto, es hora de evaluar si tiene sentido para su perfil de inversor. Considere sus objetivos financieros, plazo de inversión y tolerancia al riesgo.
 
-Si usted decide invertir en el Tesouro Direto, es importante leer atentamente las condiciones y plazos de cada título antes de invertir. Además, es recomendable diversificar sus [inversiones](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-qual-e-melhor-para-voce) para minimizar los riesgos.
+Si usted decide invertir en el Tesouro Direto, es importante leer atentamente las condiciones y plazos de cada título antes de invertir. Además, es recomendable diversificar sus [inversiones](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-qual-e-melhor-para-voce) para minimizar los riesgos.
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 

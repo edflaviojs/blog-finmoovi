@@ -47,4 +47,4 @@ Não é necessário ser um especialista em finanças para controlar os gastos no
 
 
 ---
-**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) grátis](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**
+**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) grátis](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**

@@ -40,7 +40,7 @@ Es importante monitorear los gastos en la tarjeta de crédito regularmente. Esto
 
 
 ## Comienza hoy
-No es necesario ser un experto en finanzas para controlar los gastos en la tarjeta de crédito. Con un poco de disciplina y planificación, es posible evitar deudas y ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado). Así que comienza hoy a monitorear tus gastos y a definir un presupuesto. Puedes usar una aplicación de [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) para ayudarte a controlar tus gastos y a alcanzar tus objetivos financieros.
+No es necesario ser un experto en finanzas para controlar los gastos en la tarjeta de crédito. Con un poco de disciplina y planificación, es posible evitar deudas y ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado). Así que comienza hoy a monitorear tus gastos y a definir un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/reducir-gastos-fijos-mensuales)-personal). Puedes usar una aplicación de [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) para ayudarte a controlar tus gastos y a alcanzar tus objetivos financieros.
 
 ![Comienza hoy](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-6.webp)
 

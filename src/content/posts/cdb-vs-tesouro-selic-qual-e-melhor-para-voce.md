@@ -22,7 +22,7 @@ Quando se trata de investir [dinheiro](/posts/cashback-inteligente), muitas pess
 
 ## Como funciona o CDB
 
-O CDB é um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) oferecido por bancos e instituições financeiras. Ele funciona como um empréstimo que você faz ao banco, e em troca, o banco paga um juro sobre o valor investido. O CDB pode ser de [liquidez](/glossario/liquidez) diária, semestral ou anual, dependendo do tipo de investimento escolhido. Além disso, o CDB pode ser tributado de acordo com a tabela de [imposto de renda](/glossario/imposto-de-renda), o que pode afetar o seu rendimento líquido.
+O CDB é um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) oferecido por bancos e instituições financeiras. Ele funciona como um empréstimo que você faz ao banco, e em troca, o banco paga um juro sobre o valor investido. O CDB pode ser de [liquidez](/glossario/liquidez) diária, semestral ou anual, dependendo do tipo de [investimento](/posts/tesouro-direto-para-iniciantes) escolhido. Além disso, o CDB pode ser tributado de acordo com a tabela de [imposto de renda](/glossario/imposto-de-renda), o que pode afetar o seu rendimento líquido.
 
 ![Como funciona o CDB](/images/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-e-melhor-para-voce-2.webp)
 
@@ -32,7 +32,7 @@ Um exemplo de como funciona o CDB: você investe R$ 10.000,00 em um CDB com taxa
 
 ## Como funciona o Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-4-maio-2026))
 
-O Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026)) é um tipo de investimento oferecido pelo governo federal, e é considerado um dos investimentos mais seguros do mercado. Ele funciona como um título de dívida pública, onde você empresta [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz) ao governo, e em troca, o governo paga um juro sobre o valor investido. A taxa de juros do Tesouro Selic é definida pela taxa Selic, que é a taxa de juros básica da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira.
+O Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026)) é um tipo de investimento oferecido pelo governo federal, e é considerado um dos investimentos mais seguros do mercado. Ele funciona como um título de dívida pública, onde você empresta [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz) ao governo, e em troca, o governo paga um juro sobre o valor investido. A taxa de juros do Tesouro [Selic](/glossario/selic) é definida pela taxa Selic, que é a taxa de juros básica da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira.
 
 Um exemplo de como funciona o Tesouro Selic: você investe R$ 10.000,00 em um Tesouro Selic com taxa de juros de 12% ao ano. No final do ano, você receberá R$ 11.200,00, sendo R$ 10.000,00 o valor investido e R$ 1.200,00 o juro.
 

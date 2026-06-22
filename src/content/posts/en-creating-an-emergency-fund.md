@@ -30,7 +30,7 @@ To create an emergency fund, you need to develop a savings plan. This starts wit
 
 
 ## Choosing the Right Place
-The choice of where you will keep your emergency fund is crucial. You need a place that is safe, liquid, and does not encourage you to spend the [money](/en/posts/avoid-impulse-purchases). A savings account or a low-risk investment fund can be good options. Avoid putting your emergency fund in high-risk [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce), such as [stocks](/en/glossario/en-acoes) or cryptocurrencies, as you don't want to risk losing the [money](/en/posts/difference-between-investing-and-saving) when you need it.
+The choice of where you will keep your emergency fund is crucial. You need a place that is safe, liquid, and does not encourage you to spend the [money](/en/posts/avoid-impulse-purchases). A savings account or a low-risk [investment](/en/posts/montando-carteira-diversificada-com-r-500) fund can be good options. Avoid putting your emergency fund in high-risk [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce), such as [stocks](/en/glossario/en-acoes) or cryptocurrencies, as you don't want to risk losing the [money](/en/posts/difference-between-investing-and-saving) when you need it.
 
 ## Maintaining Discipline
 Maintaining discipline is key to building and maintaining your emergency fund. Make regular deposits and avoid withdrawing [money](/en/posts/financial-planning-for-couples) from the fund for non-essential expenses. **Practical tip:** Set up automatic transfers from your checking account to your emergency fund account. Additionally, regularly review the value of your emergency fund and adjust your savings plan as needed.
@@ -47,4 +47,4 @@ Don't wait until it's too late to start creating your emergency fund. Start toda
 
 
 ---
-**Want to see this in action? [Start free with FinMoovi](https://finmoovi.com) — 7 days to organize your finances without complication.**
+**Want to see this in action? [Start free with FinMoovi](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) — 7 days to organize your finances without complication.**

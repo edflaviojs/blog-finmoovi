@@ -47,4 +47,4 @@ You don't need to be a finance expert to control credit card expenses. With a li
 
 
 ---
-**Tired of spreadsheets? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free](https://finmoovi.com) and control your expenses with AI, multi-currency, and reports that make sense.**
+**Tired of spreadsheets? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and control your expenses with AI, multi-currency, and reports that make sense.**
