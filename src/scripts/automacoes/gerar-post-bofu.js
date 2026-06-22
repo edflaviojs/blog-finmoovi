@@ -49,6 +49,7 @@ REGRAS:
 7. Tom: review imparcial de tech blogger
 8. Mínimo 1000 palavras, 5+ seções H2
 9. O último H2: "Qual escolher?" com recomendação por perfil
+10. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 
 Responda neste formato:
 ---TITULO---
@@ -73,6 +74,7 @@ REGRAS:
 6. Tom: jornalista de tecnologia testando apps
 7. Mínimo 1000 palavras, 5+ seções H2
 8. CTA final: "Quer testar o que funciona offline e por voz? ${config.app.name} tem 7 dias grátis"
+9. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 
 Responda neste formato:
 ---TITULO---
@@ -96,6 +98,7 @@ REGRAS:
 5. Seja honesto — credibilidade gera mais conversão que propaganda
 6. Mínimo 1200 palavras, 6+ seções H2
 7. CTA final: "Teste você mesmo — ${config.app.name} tem 7 dias grátis sem cartão"
+8. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 
 Responda neste formato:
 ---TITULO---
@@ -122,6 +125,7 @@ REGRAS:
 8. Tom: tech explainer acessível
 9. Mínimo 800 palavras, 4-5 seções H2
 10. CTA sutil no final
+11. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 
 Responda neste formato:
 ---TITULO---
@@ -146,6 +150,7 @@ REGRAS:
 6. Inclua checklist "Planilha é para você se..." / "App é para você se..."
 7. Mínimo 800 palavras, 4-5 seções H2
 8. CTA: "Se a planilha não está funcionando, teste o ${config.app.name} por 7 dias"
+9. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 
 Responda neste formato:
 ---TITULO---

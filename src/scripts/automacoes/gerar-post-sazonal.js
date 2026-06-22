@@ -192,6 +192,7 @@ REGRAS:
 6. Mencione o ${config.app.name} naturalmente como ferramenta que ajuda
 7. Termine com CTA: "Use o ${config.app.name} para controlar seus gastos e não se surpreender no fim do mês."
 8. Inclua dados reais brasileiros quando possível (IBGE, Bacen, Serasa)
+9. Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, IBGE https://www.ibge.gov.br, Receita Federal https://www.gov.br/receitafederal, Serasa https://www.serasa.com.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 
 Responda neste formato:
 ---TITULO---

@@ -172,6 +172,7 @@ REGRAS:
 - Termine com uma conclusão motivacional
 - NÃO use emojis no conteúdo (exceto em listas de dicas se fizer sentido)
 - NÃO invente estatísticas falsas — use dados gerais conhecidos
+- Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, Tesouro Direto https://www.tesourodireto.com.br, Investopedia https://www.investopedia.com, IBGE https://www.ibge.gov.br, NerdWallet https://www.nerdwallet.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 
 Responda EXATAMENTE neste formato:
 ---TITULO---

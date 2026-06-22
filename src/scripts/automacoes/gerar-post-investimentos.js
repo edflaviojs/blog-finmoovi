@@ -169,6 +169,7 @@ REGRAS DE ESTILO:
 - Headers H2 curtos e diretos
 - Mínimo 900 palavras, 5-6 seções H2
 - O último H2: "Próximos passos" com ação prática
+- Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, Tesouro Direto https://www.tesourodireto.com.br, CVM https://www.cvm.gov.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 - Após o último parágrafo, inclua:
 
 ---

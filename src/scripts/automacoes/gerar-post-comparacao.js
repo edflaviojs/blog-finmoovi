@@ -150,6 +150,7 @@ REGRAS:
 7. Mencione o ${config.app.name} como ferramenta para acompanhar qualquer que seja a escolha
 8. Tom: educativo, claro, sem jargão técnico excessivo
 9. Inclua números reais quando possível (taxas, rendimentos)
+10. Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, Tesouro Direto https://www.tesourodireto.com.br, CVM https://www.cvm.gov.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 
 Responda neste formato:
 ---TITULO---

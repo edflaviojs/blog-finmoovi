@@ -295,6 +295,7 @@ REGRAS DO POST:
 10. Termina com CTA natural: "Experimente o ${config.app.name} grátis por 7 dias e veja a diferença."
 11. NÃO use "em conclusão" ou "para finalizar"
 12. Inclua uma seção comparando "antes vs depois" do ${config.app.name}
+13. Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, IBGE https://www.ibge.gov.br, Serasa https://www.serasa.com.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 
 Responda EXATAMENTE neste formato:
 ---TITULO---

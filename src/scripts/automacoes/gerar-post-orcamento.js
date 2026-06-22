@@ -167,6 +167,7 @@ REGRAS DE ESTILO:
 - Headers H2 como ações (verbos no imperativo ou infinitivo)
 - Mínimo 800 palavras, 4-6 seções H2
 - O último H2: "Comece com 5 minutos por dia"
+- Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, IBGE https://www.ibge.gov.br, Serasa https://www.serasa.com.br, Receita Federal https://www.gov.br/receitafederal). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 - Após o último parágrafo, inclua:
 
 ---

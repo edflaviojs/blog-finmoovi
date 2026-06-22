@@ -104,6 +104,7 @@ REGRAS DE ESTILO (obrigatórias):
 - Pode usar listas, mas não abuse — alterne com parágrafos densos
 - Headers H2 devem ser frases curtas e diretas, não perguntas genéricas
 - O último H2 deve ser "Comece hoje" com um parágrafo motivacional curto e direto
+- Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, Tesouro Direto https://www.tesourodireto.com.br, IBGE https://www.ibge.gov.br, Serasa https://www.serasa.com.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 - Após o último parágrafo, inclua esta CTA exata (com a linha horizontal antes):
 
 ---
