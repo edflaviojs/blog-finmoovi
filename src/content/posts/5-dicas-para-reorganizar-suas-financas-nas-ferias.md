@@ -27,10 +27,10 @@ As férias oferecem um espaço de tempo relativamente longo para se concentrar e
 ## Dicas para Reorganizar suas Finanças
 Aqui estão algumas dicas práticas para você começar a reorganizar suas finanças durante as férias:
 1. **Faça um Balanço**: Comece fazendo um balanço de sua situação financeira atual. Anote todas suas receitas e despesas, incluindo contas, dívidas e qualquer outro gasto recorrente. Isso ajudará a entender melhor onde seu [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) está indo.
-2. **Crie ou Ajuste um [Orçamento](/posts/metodo-50-30-20-para-salario-brasileiro)**: Com base no seu balanço, crie um orçamento que atenda às suas necessidades e objetivos. Certifique-se de incluir uma [reserva de emergência](/glossario/reserva-de-emergencia) e [fundos](/glossario/fundos) para lazer e entretenimento.
+2. **Crie ou Ajuste um [Orçamento](/posts/metodo-50-30-20-para-salario-brasileiro)**: Com base no seu balanço, crie um [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) que atenda às suas necessidades e objetivos. Certifique-se de incluir uma [reserva de emergência](/glossario/reserva-de-emergencia) e [fundos](/glossario/fundos) para lazer e entretenimento.
 3. **Priorize a Dívida**: Se você tem dívidas, como cartões de crédito ou empréstimos, priorize pagá-las. Comece com as dívidas de maior valor ou as que têm taxas de [juros](/glossario/juros) mais altas.
 4. **Aumente sua Poupança**: Estabeleça metas de poupança, seja para emergências, objetivos de longo prazo ou aquisições específicas. Tente aumentar sua poupança gradualmente.
-5. **Monitore seus Gastos**: Use ferramentas como o FinMoovi para monitorar seus gastos diários e identificar áreas onde pode cortar despesas. O FinMoovi é uma ferramenta útil que pode ajudá-lo a manter um controle mais preciso de suas finanças.
+5. **Monitore seus Gastos**: Use ferramentas como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) para monitorar seus gastos diários e identificar áreas onde pode cortar despesas. O FinMoovi é uma ferramenta útil que pode ajudá-lo a manter um controle mais preciso de suas finanças.
 
 ![Por que as Férias São um Momento Ideal?](/images/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias-2.webp)
 

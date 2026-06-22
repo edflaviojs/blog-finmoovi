@@ -30,10 +30,10 @@ Para criar uma reserva de emergência, você precisa desenvolver um plano de [ec
 
 
 ## Escolhendo o Local Certo
-A escolha do local onde você vai guardar sua reserva de emergência é crucial. Você precisa de um lugar que seja seguro, líquido e que não incentive você a gastar o dinheiro. Uma conta [poupança](/glossario/poupanca) ou um fundo de investimento de baixo risco podem ser boas opções. Evite colocar sua reserva de emergência em investimentos de alto risco, como [ações](/glossario/acoes) ou criptomoedas, pois você não quer correr o risco de perder o dinheiro quando precisar dele.
+A escolha do local onde você vai guardar sua reserva de emergência é crucial. Você precisa de um lugar que seja seguro, líquido e que não incentive você a gastar o dinheiro. Uma conta [poupança](/glossario/poupanca) ou um fundo de investimento de baixo risco podem ser boas opções. Evite colocar sua reserva de emergência em [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) de alto risco, como [ações](/glossario/acoes) ou criptomoedas, pois você não quer correr o risco de perder o dinheiro quando precisar dele.
 
 ## Mantendo a Disciplina
-Mantenha a disciplina é chave para construir e manter sua reserva de emergência. Faça depósitos regulares e evite sacar dinheiro da reserva para despesas não essenciais. **Dica prática:** Configure transferências automáticas do seu conta corrente para a conta da reserva de emergência. Além disso, revise regularmente o valor da sua reserva e ajuste seu plano de economia conforme necessário.
+Mantenha a disciplina é chave para construir e manter sua reserva de emergência. Faça depósitos regulares e evite sacar dinheiro da reserva para despesas não essenciais. **Dica prática:** Configure transferências automáticas do seu conta corrente para a conta da reserva de emergência. Além disso, revise regularmente o valor da sua reserva e ajuste seu plano de [economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) conforme necessário.
 
 ![Escolhendo o Local Certo](/images/posts/criando-reserva-de-emergencia-4.webp)
 

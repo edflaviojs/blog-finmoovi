@@ -33,7 +33,7 @@ Impulsive expenses are a significant problem for many people. It's easy to get c
 The credit card can be a useful tool if used responsibly. Many credit cards offer benefits, such as points or cashback, that can be redeemed for rewards or discounts. **Practical tip:** choose a credit card that offers benefits that are relevant to you. For example, if you like to travel, you may choose a credit card that offers points that can be redeemed for airline tickets.
 
 ## Monitoring Expenses
-It's essential to monitor credit card expenses regularly. This can be done through the credit card statement or [personal finance](/en/posts/30-day-rule-for-purchases) apps. **Practical tip:** set up alerts when you exceed a certain expense limit. Additionally, it's essential to review monthly expenses and adjust the budget if necessary.
+It's essential to monitor credit card expenses regularly. This can be done through the credit card statement or [personal finance](/en/posts/30-day-rule-for-purchases) apps. **Practical tip:** set up alerts when you exceed a certain expense limit. Additionally, it's essential to review monthly expenses and adjust the [budget](/en/posts/how-to-create-personal-budget) if necessary.
 
 ![Taking Advantage of Credit Card Benefits](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-4.webp)
 
@@ -47,4 +47,4 @@ You don't need to be a finance expert to control credit card expenses. With a li
 
 
 ---
-**Tired of spreadsheets? [Test FinMoovi for free](https://finmoovi.com) and control your expenses with AI, multi-currency, and reports that make sense.**
+**Tired of spreadsheets? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free](https://finmoovi.com) and control your expenses with AI, multi-currency, and reports that make sense.**

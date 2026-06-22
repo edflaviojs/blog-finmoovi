@@ -33,7 +33,7 @@ Os gastos impulsivos são um grande problema para muitas pessoas. É fácil se d
 O cartão de crédito pode ser uma ferramenta útil se usado com responsabilidade. Muitos cartões de crédito oferecem benefícios, como pontos ou cashback, que podem ser trocados por prêmios ou descontos. **Dica prática:** escolha um cartão de crédito que ofereça benefícios que sejam relevantes para você. Por exemplo, se você gosta de viajar, pode escolher um cartão de crédito que ofereça pontos que possam ser trocados por passagens aéreas.
 
 ## Monitorando os Gastos
-É importante monitorar os gastos no cartão de crédito regularmente. Isso pode ser feito através do extrato do cartão de crédito ou de aplicativos de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). **Dica prática:** configure alertas para quando você ultrapassar um certo limite de gastos. Além disso, é importante rever os gastos mensais e ajustar o orçamento se necessário.
+É importante monitorar os gastos no cartão de crédito regularmente. Isso pode ser feito através do extrato do cartão de crédito ou de aplicativos de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). **Dica prática:** configure alertas para quando você ultrapassar um certo limite de gastos. Além disso, é importante rever os gastos mensais e ajustar o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) se necessário.
 
 ![Aproveitando os Benefícios do Cartão de Crédito](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-4.webp)
 
@@ -47,4 +47,4 @@ Não é necessário ser um especialista em finanças para controlar os gastos no
 
 
 ---
-**Cansado de planilha? [Teste o FinMoovi grátis](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**
+**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o FinMoovi grátis](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**

@@ -26,14 +26,14 @@ Existem muitos tipos de [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cot
 - **Fundos de Investimento**: São como uma cesta que contém diferentes ativos, como ações e títulos. Eles permitem que você invista em uma variedade de ativos com um único investimento.
 
 ## Planejamento e Objetivos
-Antes de começar a investir, é importante definir seus objetivos e planejar como você alcançará esses objetivos. Considere o que você deseja alcançar com seus [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-maio-2026)-qual-e-melhor-para-voce). Você está buscando uma renda extra, economizar para uma casa própria ou planejar sua aposentadoria? Quanto tempo você tem para investir? Seu perfil de risco também é crucial. Algumas pessoas estão dispostas a correr mais riscos em busca de maiores retornos, enquanto outras preferem [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) mais seguros, mesmo que os retornos sejam menores.
+Antes de começar a investir, é importante definir seus objetivos e planejar como você alcançará esses objetivos. Considere o que você deseja alcançar com seus [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-maio-2026)-qual-e-melhor-para-voce). Você está buscando uma renda extra, economizar para uma casa própria ou planejar sua aposentadoria? Quanto tempo você tem para investir? Seu perfil de risco também é crucial. Algumas pessoas estão dispostas a correr mais riscos em busca de maiores retornos, enquanto outras preferem [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce) mais seguros, mesmo que os retornos sejam menores.
 
 ![Tipos de Investimentos](/images/posts/montando-carteira-diversificada-com-r-500-2.webp)
 
 
 
 ## Simulações de Rendimento
-Vamos considerar um exemplo prático. Suponha que você invista R$500 em um fundo de investimento que oferece um retorno anual de 8%. Após um ano, seu investimento valerá R$540. Se você continuar investindo R$500 todos os meses, após 5 anos, seu investimento pode valer cerca de R$4.500, considerando o mesmo retorno anual de 8%. É importante lembrar que esses são apenas exemplos e o desempenho real dos investimentos pode variar.
+Vamos considerar um exemplo prático. Suponha que você invista R$500 em um fundo de investimento que oferece um retorno anual de 8%. Após um ano, seu investimento valerá R$540. Se você continuar investindo R$500 todos os meses, após 5 anos, seu investimento pode valer cerca de R$4.500, considerando o mesmo retorno anual de 8%. É importante lembrar que esses são apenas exemplos e o desempenho real dos [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) pode variar.
 
 ## Riscos
 Investir sempre envolve riscos. O risco é a possibilidade de perder parte ou todo o seu investimento. Existem diferentes tipos de riscos, como risco de mercado (o valor dos ativos pode cair), risco de crédito (a empresa ou governo que emitiu o título pode não pagar), e risco de [liquidez](/glossario/liquidez) (você pode não ser capaz de vender seu investimento rapidamente o suficiente ou pelo preço que você deseja). Para gerenciar esses riscos, é importante diversificar sua carteira e entender os riscos associados a cada investimento. Avalie se faz sentido para seu perfil de risco e objetivos financeiros.

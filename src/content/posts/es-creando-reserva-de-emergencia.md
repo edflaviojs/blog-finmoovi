@@ -30,10 +30,10 @@ Para crear una reserva de emergencia, usted necesita desarrollar un plan de econ
 
 
 ## Escogiendo el Lugar Correcto
-La elección del lugar donde usted va a guardar su reserva de emergencia es crucial. Usted necesita de un lugar que sea seguro, líquido y que no lo incentive a gastar el [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado). Una cuenta de [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) o un fondo de inversión de bajo riesgo pueden ser buenas opciones. Evite colocar su reserva de emergencia en inversiones de alto riesgo, como [acciones](/es/glossario/es-acoes) o criptomonedas, pues usted no quiere correr el riesgo de perder el dinero cuando lo necesite.
+La elección del lugar donde usted va a guardar su reserva de emergencia es crucial. Usted necesita de un lugar que sea seguro, líquido y que no lo incentive a gastar el [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado). Una cuenta de [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) o un fondo de inversión de bajo riesgo pueden ser buenas opciones. Evite colocar su reserva de emergencia en inversiones de alto riesgo, como [acciones](/es/glossario/es-acoes) o criptomonedas, pues usted no quiere correr el riesgo de perder el [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado) cuando lo necesite.
 
 ## Manteniendo la Disciplina
-Mantener la disciplina es clave para construir y mantener su reserva de emergencia. Haga depósitos regulares y evite sacar dinero de la reserva para gastos no esenciales. **Consejo práctico:** Configure transferencias automáticas de su cuenta corriente a la cuenta de la reserva de emergencia. Además, revise regularmente el valor de su reserva y ajuste su plan de economia según sea necesario.
+Mantener la disciplina es clave para construir y mantener su reserva de emergencia. Haga depósitos regulares y evite sacar [dinero](/es/posts/cashback-inteligente) de la reserva para gastos no esenciales. **Consejo práctico:** Configure transferencias automáticas de su cuenta corriente a la cuenta de la reserva de emergencia. Además, revise regularmente el valor de su reserva y ajuste su plan de economia según sea necesario.
 
 ![Escolhendo o Local Certo](/images/posts/criando-reserva-de-emergencia-4.webp)
 
