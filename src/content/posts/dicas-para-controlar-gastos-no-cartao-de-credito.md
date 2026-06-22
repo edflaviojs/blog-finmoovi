@@ -40,7 +40,7 @@ O cartão de crédito pode ser uma ferramenta útil se usado com responsabilidad
 
 
 ## Comece hoje
-Não é necessário ser um especialista em finanças para controlar os gastos no cartão de crédito. Com um pouco de disciplina e planejamento, é possível evitar dívidas e economizar [dinheiro](/posts/criando-reserva-de-emergencia). Então, comece hoje a monitorar seus gastos e a definir um [orçamento](/posts/regra-50-30-20-guia-completo). Você pode usar um aplicativo de [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) para ajudar a controlar seus gastos e a alcançar seus objetivos financeiros.
+Não é necessário ser um especialista em finanças para controlar os gastos no cartão de crédito. Com um pouco de disciplina e [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas), é possível evitar dívidas e economizar [dinheiro](/posts/criando-reserva-de-emergencia). Então, comece hoje a monitorar seus gastos e a definir um [orçamento](/posts/regra-50-30-20-guia-completo). Você pode usar um aplicativo de [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) para ajudar a controlar seus gastos e a alcançar seus objetivos financeiros.
 
 ![Comece hoje](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-6.webp)
 

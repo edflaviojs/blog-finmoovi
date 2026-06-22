@@ -22,7 +22,7 @@ translate: true
 
 Valentine's Day is a special day for couples, and it often comes with the pressure of finding the perfect gift. However, it's possible to celebrate this day without spending a fortune. In this article, we'll explore practical and creative tips for an economic Valentine's Day, showing that love doesn't have to be expensive.
 
-## Planning and Budgeting
+## [Planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas) and Budgeting
 
 Before starting to look for gifts, it's essential to define a [budget](/en/posts/50-30-20-rule-complete-guide). Knowing how much you can spend will help you make more conscious decisions. Let's consider an example: John and Mary have been together for three years and decided to celebrate Valentine's Day in a special way. John earns $4,500 per month, and Mary earns $3,800. They decide to set aside 5% of their salaries for the gift, which gives them a total of $425. With this amount, they can plan an unforgettable night.
 

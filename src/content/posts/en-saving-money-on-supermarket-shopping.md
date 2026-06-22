@@ -16,7 +16,7 @@ seo:
   keywords: ["how to save money on supermarket shopping","personal finance","economy","money"]
 ---
 
-## Planning is Fundamental
+## [Planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas) is Fundamental
 If you earn R$ 5,000 per month and spend R$ 1,500 on supermarket shopping, it's essential to know how to optimize these [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro). One of the main tips is to plan before going to the supermarket. This includes making a shopping list and avoiding buying things that are not necessary. Additionally, it's crucial to check the prices of products and choose the cheapest options.
 
 For example, if you need to buy milk, bread, and eggs, check the prices of these products in different supermarkets or discount stores. You can save up to R$ 50 per month just by choosing the cheapest options.

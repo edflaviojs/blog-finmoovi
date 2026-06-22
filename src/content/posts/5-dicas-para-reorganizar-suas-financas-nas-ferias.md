@@ -54,6 +54,6 @@ Ferramentas como o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-su
 
 
 
-De acordo com a Serasa, em 2022, quase 60% dos brasileiros utilizavam aplicativos para controlar suas finanças, mostrando a crescente conscientização sobre a importância da gestão [financeira pessoal](/posts/tesouro-direto-para-iniciantes). O Banco Central do Brasil também destaca a importância da [educação financeira](/glossario/educacao-financeira) e do planejamento para uma vida financeira saudável.
+De acordo com a Serasa, em 2022, quase 60% dos brasileiros utilizavam aplicativos para controlar suas finanças, mostrando a crescente conscientização sobre a importância da gestão [financeira pessoal](/posts/tesouro-direto-para-iniciantes). O Banco Central do Brasil também destaca a importância da [educação financeira](/glossario/educacao-financeira) e do [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) para uma vida financeira saudável.
 
 Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês.

@@ -23,7 +23,7 @@ Creating a [personal budget](/en/glossario/en-orcamento-pessoal) doesn't have to
 Without a [budget](/en/posts/reduce-fixed-expenses), your [money](/en/posts/30-day-rule-for-purchases) simply disappears. Studies show that people who track their expenses save on average 20% more than those who don't.
 
 A good [budget](/en/posts/metodo-50-30-20-para-salario-brasileiro) helps you:
-- Know exactly where your [money](/en/posts/financial-planning-for-couples) goes
+- Know exactly where your [money](/en/posts/financial-[planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas)-for-couples) goes
 - Identify unnecessary expenses
 - Set and achieve financial goals
 - Reduce financial stress
@@ -40,7 +40,7 @@ Separate into fixed (rent, utilities, subscriptions) and variable (food, enterta
 
 - **50% Needs:** rent, food, transportation, health
 - **30% Wants:** entertainment, dining out, hobbies
-- **20% [Savings](/en/posts/financial-education-for-children):** [emergency fund](/en/glossario/en-reserva-de-emergencia), [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-week-4-may-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce), debt payoff
+- **20% [Savings](/en/posts/financial-education-for-children):** [emergency fund](/en/glossario/en-reserva-de-emergencia), [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-week-4-may-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce), debt payoff
 
 ## Step 4: Set Realistic Goals
 

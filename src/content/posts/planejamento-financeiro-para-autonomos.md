@@ -26,7 +26,7 @@ Um dos primeiros passos para criar um plano financeiro é definir seus objetivos
 
 Por exemplo, se você quer comprar uma casa no valor de R$ 200.000, você precisará economizar R$ 20.000 por ano durante 10 anos. Isso significa que você precisará colocar de lado cerca de R$ 1.667 por mês. Com um plano financeiro, você pode criar um cronograma de [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas) e [investimento](/posts/tesouro-direto-para-iniciantes) para alcançar seu objetivo.
 
-![Definindo objetivos financeiros](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
+![Definindo objetivos financeiros](/images/posts/[planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas)-financeiro-para-autonomos-2.webp)
 
 
 

@@ -34,7 +34,7 @@ Financial goals are crucial for any couple. It could be buying a house, paying o
 
 
 ## Challenges and Solutions
-One of the biggest challenges for couples is finding a balance between individual and joint expenses. Another challenge is dealing with different financial management styles. **Practical tip:** schedule regular meetings to discuss the couple's finances, like once a week or once a month, depending on what works best for you. This will help keep communication open and avoid unpleasant surprises.
+One of the biggest challenges for couples is finding a balance between individual and joint expenses. Another challenge is dealing with different [financial management](/en/posts/orcamento-com-salario-minimo-dicas-praticas) styles. **Practical tip:** schedule regular meetings to discuss the couple's finances, like once a week or once a month, depending on what works best for you. This will help keep communication open and avoid unpleasant surprises.
 
 ## Long-Term Planning
 Long-term planning is essential for achieving more ambitious financial goals. This includes planning for retirement, investing in education, or starting your own business. It's vital to have a long-term vision and start working on it as soon as possible. For example, if you and your partner are thinking of having children, it's essential to start planning how you'll handle the additional expenses that come with parenthood.

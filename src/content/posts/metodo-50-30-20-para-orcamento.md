@@ -72,6 +72,6 @@ A parte da [economia](/posts/criar-reserva-de-emergencia) é crucial para o seu 
 Para manter seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) sob controle, não é necessário dedicar horas todos os dias. Com apenas 5 minutos por dia, você pode:
 - Verificar suas contas bancárias para garantir que não houve gastos indevidos.
 - Anotar novas despesas ou receitas.
-- Revisar seu orçamento para garantir que está dentro do planejado.
+- Revisar seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) para garantir que está dentro do planejado.
 
 **Quer automatizar esse controle? [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

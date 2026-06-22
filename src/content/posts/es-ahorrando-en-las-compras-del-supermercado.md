@@ -16,7 +16,7 @@ seo:
   keywords: ["cómo ahorrar en las compras del supermercado","finanzas personales","economía","dinero"]
 ---
 
-## Planificación es fundamental
+## [Planificación](/es/posts/orcamento-com-salario-minimo-dicas-praticas) es fundamental
 Si ganas R$ 5.000 por mes y gastas R$ 1.500 en compras del supermercado, es importante saber cómo optimizar esos [gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro). Una de las principales sugerencias es hacer una planificación antes de ir al supermercado. Esto incluye hacer una lista de compras y evitar comprar cosas que no son necesarias. Además, es importante verificar los precios de los productos y elegir las opciones más baratas.
 
 Por ejemplo, si necesitas comprar leche, pan y huevos, verifica los precios de estos productos en diferentes supermercados o tiendas de descuento. Puedes ahorrar hasta R$ 50 por mes solo eligiendo las opciones más baratas.

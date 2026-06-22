@@ -30,7 +30,7 @@ Por exemplo, se você percebe que está gastando R$ 1.500 por mês com alimenta�
 
 
 
-## Planejamento Tributário
+## [Planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) Tributário
 Como autônomo, você é responsável por seu próprio recolhimento de impostos, o que pode ser um desafio. É importante entender como funcionam os impostos para autônomos e como planejar sua tributação de forma eficaz. Isso pode incluir a dedução de despesas profissionais, como materiais de trabalho, uso de veículo e até parte da conta de luz e internet da sua casa, se você trabalha de home office.
 
 **Dica prática:** Mantenha todos os recibos e notas fiscais de despesas que possam ser deduzidas do seu [imposto de renda](/glossario/imposto-de-renda). Isso pode economizar uma quantidade significativa de [dinheiro](/posts/economize-na-conta-de-energia) no final do ano.

@@ -30,7 +30,7 @@ En cuanto a las tasas de cambio, el dólar estadounidense (USD) se mantuvo en un
 
 La estabilidad del dólar puede ser vista como una señal positiva para la [economía](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ya que puede ayudar a controlar la [inflación](/es/glossario/es-inflacao) y mantener la competitividad de las exportaciones. Sin embargo, es importante tener en cuenta que las tasas de cambio pueden ser volátiles y están sujetas a cambios repentinos debido a factores políticos y económicos.
 
-## Comentario sobre la [Selic](/es/glossario/es-selic) e Impacto en las Inversiones
+## Comentario sobre la [Selic](/es/glossario/es-selic) e Impacto en las [Inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
 
 La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) brasileña, ha sido un tema de gran interés en la semana. El Banco Central decidió mantener la tasa Selic en su nivel actual, lo que puede influir en las decisiones de inversión de los brasileños. Una tasa Selic estable puede significar que los rendimientos de las inversiones en reales pueden ser más atractivos, aunque también puede limitar el crecimiento económico si no se acompaña de medidas para estimular la inversión y el consumo.
 
@@ -46,7 +46,7 @@ Para los inversores individuales, es crucial diversificar su cartera de inversio
 
 ## Qué Esperar para la Próxima Semana
 
-En la próxima semana, los inversores deben estar atentos a las noticias económicas tanto nacionales como internacionales, que pueden influir en las tasas de cambio y las decisiones de inversión. La evolución de la inflación, el desempleo y las políticas fiscales serán temas clave a seguir. Además, es importante mantenerse informado sobre las tendencias globales y cómo pueden afectar la economía brasileña y, por ende, las inversiones.
+En la próxima semana, los inversores deben estar atentos a las noticias económicas tanto nacionales como internacionales, que pueden influir en las tasas de cambio y las decisiones de inversión. La evolución de la inflación, el desempleo y las políticas fiscales serán temas clave a seguir. Además, es importante mantenerse informado sobre las tendencias globales y cómo pueden afectar la [economía](/es/posts/ahorrando-en-la-cuenta-de-energia) brasileña y, por ende, las inversiones.
 
 En resumen, la semana del 15 al 22 de junio de 2026 ha sido de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de cambio y decisiones clave por parte del Banco Central. Los inversores individuales deben estar preparados para ajustar sus estrategias de inversión según sea necesario, considerando la diversificación de sus carteras y el uso de herramientas como FinMoovi para seguir y gestionar sus inversiones de manera eficiente.
 

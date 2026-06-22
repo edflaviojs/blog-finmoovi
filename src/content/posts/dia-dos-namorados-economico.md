@@ -19,7 +19,7 @@ translate: true
 ---
 
 ## Planejando o Dia dos Namorados com Responsabilidade
-O Dia dos Namorados é uma data especial para celebrar o amor e a união com aqueles que amamos. No entanto, não é necessário comprometer nossas finanças para fazer deste dia um momento inesquecível. Com um pouco de criatividade e planejamento, é possível ter um Dia dos Namorados econômico e ao mesmo tempo significativo.
+O Dia dos Namorados é uma data especial para celebrar o amor e a união com aqueles que amamos. No entanto, não é necessário comprometer nossas finanças para fazer deste dia um momento inesquecível. Com um pouco de criatividade e [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas), é possível ter um Dia dos Namorados econômico e ao mesmo tempo significativo.
 
 Para começar, é importante definir um [orçamento](/posts/como-criar-orcamento-pessoal) para as comemorações. Considerando que o salário médio no Brasil varia de R$ 2.500 a R$ 4.000, é razoável reservar entre 5% a 10% deste valor para o Dia dos Namorados. Isso significa que, dependendo do seu salário, você poderia ter um [orçamento](/posts/regra-50-30-20-guia-completo) de R$ 125 a R$ 400.
 

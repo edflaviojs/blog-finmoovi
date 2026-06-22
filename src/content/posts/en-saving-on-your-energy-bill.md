@@ -33,7 +33,7 @@ For example, if you're paying R$ 200 per month for energy and can reduce that to
 ## Behavioral Changes
 Daily behavioral changes can also make a big difference in energy [savings](/en/posts/financial-education-for-children). Simple things, like lowering the thermostat in winter or raising it in summer, can help reduce energy consumption. Additionally, using natural light during the day and turning off lights when not in use are habits that can be adopted to save energy.
 
-## Planning and Monitoring
+## [Planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas) and Monitoring
 To really understand where you can save energy, it's essential to monitor your energy consumption. Check your energy bill regularly and identify the periods when consumption is higher. This can help identify usage patterns that can be adjusted. Consider investing in an energy meter that can provide detailed information about energy consumption in your home.
 
 ## Additional Tips

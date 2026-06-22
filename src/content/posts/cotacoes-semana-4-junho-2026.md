@@ -18,17 +18,17 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro: 15/06/2026 a 22/06/2026
 
-Nesta semana, o mercado financeiro brasileiro apresentou movimentos interessantes, especialmente em relação às taxas de [câmbio](/glossario/cambio) e às decisões do Banco Central. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce).
+Nesta semana, o mercado financeiro brasileiro apresentou movimentos interessantes, especialmente em relação às taxas de [câmbio](/glossario/cambio) e às decisões do Banco Central. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce).
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro: 15/06/2026 a 22/06/2026](/images/posts/cotacoes-semana-4-junho-2026-inline-1.webp)
 
 
 
-## Dólar e Euro: Tendência da Semana
+## [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana
 
 A taxa de câmbio entre o real brasileiro e as principais moedas estrangeiras foi um dos pontos de destaque da semana. O dólar americano fechou a semana em R$ 5,16, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou R$ 5,91, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes, especialmente para aqueles que investem em ativos em moedas estrangeiras ou planejam viagens internacionais.
 
-## Selic e Impacto nos Investimentos
+## Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
 
 A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator chave para os investidores. Embora não tenha havido alterações significativas na taxa durante a semana, a expectativa é de que o Banco Central continue a monitorar a [inflação](/glossario/inflacao) e ajuste as taxas de juros conforme necessário. Isso pode afetar diretamente os rendimentos de investimentos como CDBs, [LCI e LCA](/glossario/lci-e-lca), tornando essencial para os investidores pessoa física estar atentos às mudanças nas taxas de juros e ajustar suas estratégias de investimento de acordo.
 

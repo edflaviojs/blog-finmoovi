@@ -30,7 +30,7 @@ Now that you have a clear idea of your expenses, it's time to create a [budget](
 2. **Categorize your expenses**: Divide your expenses into categories, such as housing, food, transportation, and entertainment.
 3. **Assign values**: Assign a value to each category based on your average expenses.
 4. **Prioritize**: Prioritize your needs over your desires.
-5. **Review and adjust**: Review your [budget](/en/posts/how-to-create-personal-budget) regularly and adjust it as needed.
+5. **Review and adjust**: Review your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas)) regularly and adjust it as needed.
 
 ![Evaluating Your Expenses](/images/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas-2.webp)
 

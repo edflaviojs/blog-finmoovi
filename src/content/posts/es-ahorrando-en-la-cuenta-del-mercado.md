@@ -19,7 +19,7 @@ seo:
 ## [Economía](/es/posts/ahorrando-en-la-cuenta-de-energia) en la Cuenta del Mercado
 Imagina que puedas ahorrar alrededor de R$ 50,00 por semana en la cuenta del mercado. Esto puede no parecer mucho, pero a lo largo de un año, estarías ahorrando aproximadamente R$ 2.600,00. Con esa cantidad, podrías realizar un viaje, pagar deudas o invertir en un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia). La clave para alcanzar ese [ahorro](/es/posts/regla-de-los-30-dias-para-compras) está en pequeños cambios en tus hábitos de compras.
 
-## Planificación es Fundamental
+## [Planificación](/es/posts/orcamento-com-salario-minimo-dicas-praticas) es Fundamental
 Para empezar a ahorrar, es importante planificar tus compras. Esto incluye hacer una lista de todo lo que necesitas comprar y ceñirte a ella. Evita comprar de manera impulsiva, ya que esto puede llevar a gastos innecesarios. Además, intenta comprar en cantidades mayores, especialmente para artículos no perecederos, como arroz, frijoles y macarrones. Comprar en bulk puede ser más barato a largo plazo. **Consejo práctico:** Haz un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) semanal y reserva un tiempo para planificar tus comidas y compras.
 
 ## Elegir los Mejores Precios

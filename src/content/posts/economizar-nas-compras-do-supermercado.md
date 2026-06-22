@@ -16,7 +16,7 @@ seo:
   keywords: ["como economizar nas compras do supermercado","finanças pessoais","economia","dinheiro"]
 ---
 
-## Planejamento é fundamental
+## [Planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) é fundamental
 Se você ganha R$ 5.000 por mês e gasta R$ 1.500 em compras do supermercado, é importante saber como otimizar esses [gastos](/posts/metodo-50-30-20-para-salario-brasileiro). Uma das principais dicas é fazer um planejamento antes de ir ao supermercado. Isso inclui fazer uma lista de compras e evitar comprar coisas que não são necessárias. Além disso, é importante verificar os preços dos produtos e escolher as opções mais baratas.
 
 Por exemplo, se você precisa comprar leite, pão e ovos, verifique os preços desses produtos em diferentes supermercados ou lojas de desconto. Você pode economizar até R$ 50 por mês apenas escolhendo as opções mais baratas.

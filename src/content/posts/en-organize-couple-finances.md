@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Joint Finances
-When you're in a relationship, it's important that you and your partner are aligned on finances. This means you should have a clear view of how you're spending your [money](/en/posts/30-day-rule-for-purchases) and how you can save together. Let's say you and your partner earn R$ 5,000 and R$ 6,000 per month, respectively. If you don't have a plan, it's easy to spend all the [money](/en/posts/financial-planning-for-couples) without knowing where it's going.
+When you're in a relationship, it's important that you and your partner are aligned on finances. This means you should have a clear view of how you're spending your [money](/en/posts/30-day-rule-for-purchases) and how you can save together. Let's say you and your partner earn R$ 5,000 and R$ 6,000 per month, respectively. If you don't have a plan, it's easy to spend all the [money](/en/posts/financial-[planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas)-for-couples) without knowing where it's going.
 
 A good idea is to create a [budget](/en/posts/50-30-20-rule-complete-guide) together, considering all monthly expenses like rent, food, transportation, etc. For example, if you pay R$ 2,500 in rent and R$ 1,000 in food per month, that's already R$ 3,500 in fixed expenses. It's also important to consider variable expenses like entertainment and leisure.
 

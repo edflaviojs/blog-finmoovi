@@ -22,7 +22,7 @@ translate: true
 
 El Día de los Enamorados es una fecha especial para las parejas y, a menudo, trae consigo la presión de encontrar el regalo perfecto. Sin embargo, es posible celebrar este día sin gastar una fortuna. En este artículo, vamos a explorar [consejos](/es/posts/7-errores-financieros-principiante) prácticos y creativos para un Día de los Enamorados económico, mostrando que el amor no necesita ser caro.
 
-## Planificación y [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal)
+## [Planificación](/es/posts/orcamento-com-salario-minimo-dicas-praticas) y [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal)
 
 Antes de empezar a buscar regalos, es esencial definir un [presupuesto](/es/posts/reducir-[gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro)-fijos-mensuales). Saber cuánto puedes gastar te ayudará a tomar decisiones más conscientes. Vamos a considerar un ejemplo: Juan y María están juntos desde hace tres años y decidieron celebrar el Día de los Enamorados de forma especial. Juan gana $4.500 por mes, y María gana $3.800. Deciden reservar el 5% de sus salarios para el regalo, lo que da un total de $425. Con este valor, pueden planificar una noche inolvidable.
 

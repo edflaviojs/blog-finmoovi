@@ -30,7 +30,7 @@ Além disso, as condições financeiras podem mudar significativamente ao longo 
 
 
 
-## Como Revisar Seu Orçamento
+## Como Revisar Seu [Orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas)
 Revisar seu orçamento não precisa ser um processo complicado. Aqui estão alguns passos simples que você pode seguir:
 
 ### 1. Verifique Seu Saldo Atual

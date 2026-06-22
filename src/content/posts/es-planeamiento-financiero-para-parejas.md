@@ -34,7 +34,7 @@ Los objetivos financieros son cruciales para cualquier pareja. Puede ser comprar
 
 
 ## Desafíos y Soluciones
-Uno de los mayores desafíos para las parejas es encontrar un equilibrio entre los gastos individuales y los gastos conjuntos. Otro desafío es lidiar con estilos de gestión financiera diferentes. **Consejo práctico:** marca encuentros regulares para discutir las finanzas de la pareja, como una vez por semana o una vez por mes, dependiendo de lo que funcione mejor para vosotros. Esto ayudará a mantener la comunicación abierta y a evitar sorpresas desagradables.
+Uno de los mayores desafíos para las parejas es encontrar un equilibrio entre los gastos individuales y los gastos conjuntos. Otro desafío es lidiar con estilos de [gestión financiera](/es/posts/orcamento-com-salario-minimo-dicas-praticas) diferentes. **Consejo práctico:** marca encuentros regulares para discutir las finanzas de la pareja, como una vez por semana o una vez por mes, dependiendo de lo que funcione mejor para vosotros. Esto ayudará a mantener la comunicación abierta y a evitar sorpresas desagradables.
 
 ## Planeamiento a Largo Plazo
 El planeamiento a largo plazo es esencial para alcanzar objetivos financieros más ambiciosos. Esto incluye planificar la jubilación, invertir en educación o en un negocio propio. Es importante tener una visión a largo plazo y empezar a trabajar en ello lo más pronto posible. Por ejemplo, si tú y tu pareja están pensando en tener hijos, es importante empezar a planificar cómo vais a lidiar con los gastos adicionales que vienen con la paternidad.

@@ -36,7 +36,7 @@ The 30-day rule has several advantages. In addition to helping you avoid impulse
 For example, imagine you earn R$ 4,000 per month and want to buy a new smartphone that costs R$ 2,000. If you wait 30 days, you might discover it's not that necessary after all and that you can use the [money](/en/posts/save-on-your-market-bill) to pay off a debt or invest in a fund.
 
 ## Exceptions to the 30-Day Rule
-Although the 30-day rule is a useful technique, there are some exceptions. If you need something essential, like food or medicine, you don't need to wait 30 days. Additionally, if you're planning a major purchase, like a car or a house, it's better to do more in-depth research and not just rely on the 30-day rule.
+Although the 30-day rule is a useful technique, there are some exceptions. If you need something essential, like food or medicine, you don't need to wait 30 days. Additionally, if you're [planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas) a major purchase, like a car or a house, it's better to do more in-depth research and not just rely on the 30-day rule.
 
 ## Challenges and Solutions
 One of the main challenges of the 30-day rule is maintaining discipline and not giving in to the temptation of impulse buying. **Practical tip:** Ask a friend or family member to be your "accountability partner" and report on your purchases. This will help keep you motivated and responsible.

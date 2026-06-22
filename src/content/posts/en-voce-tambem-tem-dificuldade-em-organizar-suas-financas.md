@@ -72,7 +72,7 @@ Here's an example of how FinMoovi can change your financial life:
 According to statistics, people who use [expense management](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) apps like FinMoovi tend to save more and have better financial health. For example, a study showed that people who use [expense management](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) apps have a 30% higher chance of achieving their financial goals.
 
 ## Try FinMoovi
-If you're tired of feeling lost and stressed about your finances, try FinMoovi. With FinMoovi, you can get a clear picture of your finances and make informed decisions about how to manage your [money](/en/posts/financial-planning-for-couples). Plus, FinMoovi is easy to use and offers features like automatic expense categorization and intelligent reports with AI assistance.
+If you're tired of feeling lost and stressed about your finances, try FinMoovi. With FinMoovi, you can get a clear picture of your finances and make informed decisions about how to manage your [money](/en/posts/financial-[planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas)-for-couples). Plus, FinMoovi is easy to use and offers features like automatic expense categorization and intelligent reports with AI assistance.
 
 ![Experimente o FinMoovi](/images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas-6.webp)
 

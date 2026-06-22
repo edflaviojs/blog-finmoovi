@@ -16,7 +16,7 @@ seo:
   keywords: ["cómo ahorrar en las compras del supermercado","finanzas personales","ahorro","dinero"]
 ---
 
-## Planificación es fundamental
+## [Planificación](/es/posts/orcamento-com-salario-minimo-dicas-praticas) es fundamental
 Cuando vamos al supermercado, es común comprar más de lo que necesitamos, especialmente si no tenemos un plan claro de lo que queremos comprar. Esto puede llevar a gastos excesivos y desperdicio de alimentos. Para evitar esto, es importante hacer una lista de compras antes de ir al supermercado. Por ejemplo, si usted gasta alrededor de R$ 500 por semana en compras de supermercado para una familia de cuatro personas, usted puede comenzar a reducir ese valor identificando los artículos que son esenciales y los que pueden ser cortados.
 
 Un ejemplo práctico es el caso de una persona que gana R$ 5.000 por mes y gasta cerca de R$ 1.500 en alimentación fuera de casa. Si esa persona comienza a cocinar en casa y planifica sus compras, puede fácilmente reducir ese valor a R$ 1.000, ahorrando R$ 500 por mes.

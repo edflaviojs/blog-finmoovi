@@ -29,7 +29,7 @@ When you're a freelancer, it's easy to get lost in managing your [money](/en/pos
 - Emergency reserve: 10% of your monthly earnings (R$ 500)
 - [Investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-): 5% of your monthly earnings (R$ 250)
 
-## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-week-4-may-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) and [Savings](/en/posts/financial-education-for-children)
+## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-week-4-may-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) and [Savings](/en/posts/financial-education-for-children)
 As a freelancer, it's essential to think about the future and make [investments](/en/posts/cdb-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) that can guarantee a stable income. There are many [investment](/en/posts/tesouro-direto-para-iniciantes) options available, from [stocks](/en/glossario/en-acoes) and bonds to [investment](/en/posts/montando-carteira-diversificada-com-r-500) funds and real estate. However, it's essential to remember that [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) always involve risks, and it's crucial to do careful research before investing.
 
 ![Gestão de Gastos](/images/posts/organizar-financas-autonomo-1.svg)
@@ -55,7 +55,7 @@ Performance analysis is essential for freelancers. Without a fixed salary, it's 
 
 
 ## Start Today
-Now that you know how to organize your finances as a freelancer, it's time to start putting these tips into practice. Remember that financial management is an ongoing process, and it's essential to always be aware of your expenses and income. With a little discipline and planning, you can achieve financial stability and guarantee a secure future.
+Now that you know how to organize your finances as a freelancer, it's time to start putting these tips into practice. Remember that [financial management](/en/posts/orcamento-com-salario-minimo-dicas-praticas) is an ongoing process, and it's essential to always be aware of your expenses and income. With a little discipline and planning, you can achieve financial stability and guarantee a secure future.
 
 ![Comece hoje](/images/posts/organizar-financas-autonomo-5.svg)
 

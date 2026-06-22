@@ -31,7 +31,7 @@ Additionally, financial conditions can change significantly in just six months. 
 
 
 ## How to Review Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias))
-Reviewing your [budget](/en/posts/how-to-create-personal-budget) doesn't have to be a complicated process. Here are some simple steps you can follow:
+Reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas)) doesn't have to be a complicated process. Here are some simple steps you can follow:
 
 ### 1. Check Your Current Balance
 Start by checking your current bank balance. This includes not only your checking account but also any [savings](/en/posts/financial-education-for-children), [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), or debts you may have. For example, if you have a monthly salary of $5,000 and spend $3,000 on fixed expenses, you should have a clear idea of how much you're saving or spending beyond that.
