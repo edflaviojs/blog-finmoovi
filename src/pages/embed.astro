@@ -1,0 +1,388 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+
+const siteUrl = 'https://blog.finmoovi.com';
+
+const calculadoras = [
+  {
+    slug: 'calculadora-juros-compostos',
+    title: 'Calculadora de Juros Compostos',
+    description: 'Simule quanto seu dinheiro pode render ao longo do tempo com juros compostos e aportes mensais.',
+    icon: '📈'
+  },
+  {
+    slug: 'calculadora-orcamento',
+    title: 'Calculadora de Orçamento 50-30-20',
+    description: 'Monte seu orçamento usando a regra 50-30-20 de forma rápida e visual.',
+    icon: '💰'
+  },
+  {
+    slug: 'conversor-moedas',
+    title: 'Conversor de Moedas',
+    description: 'Converta entre BRL, USD, EUR e outras moedas com cotação atualizada.',
+    icon: '💱'
+  },
+  {
+    slug: 'simulador-investimento',
+    title: 'Simulador de Investimento',
+    description: 'Descubra quanto precisa investir por mês para alcançar seu objetivo.',
+    icon: '🎯'
+  },
+  {
+    slug: 'calculadora-reserva',
+    title: 'Calculadora de Reserva de Emergência',
+    description: 'Calcule o valor ideal da sua reserva de emergência baseado nos seus gastos.',
+    icon: '🛡️'
+  }
+];
+
+const webAppSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadoras Financeiras FinMoovi",
+  "url": `${siteUrl}/embed`,
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL"
+  },
+  "description": "Use nossas calculadoras financeiras no seu site gratuitamente. Código embed pronto para copiar."
+};
+---
+
+<BaseLayout
+  title="Embed Calculadoras Financeiras Gratuitas"
+  description="Use nossas calculadoras no seu site gratuitamente. Código embed pronto para copiar. Juros compostos, orçamento, conversor de moedas e mais."
+  keywords={['embed calculadora', 'widget financeiro', 'calculadora para site', 'iframe calculadora', 'ferramenta gratuita embed']}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(webAppSchema)} />
+  <Header />
+
+  <main class="embed-page">
+    <div class="container">
+      <header class="embed-header">
+        <h1 class="embed-title">Embed Calculadoras Financeiras</h1>
+        <p class="embed-description">
+          Use nossas calculadoras no seu site, blog ou portal gratuitamente.<br />
+          Copie o código embed e cole no seu HTML.
+        </p>
+      </header>
+
+      <div class="embed-options-global">
+        <h2>Configurações do Widget</h2>
+        <div class="options-row">
+          <div class="option-group">
+            <label for="opt-width">Largura</label>
+            <input type="text" id="opt-width" value="100%" placeholder="100% ou 600px" />
+          </div>
+          <div class="option-group">
+            <label for="opt-height">Altura</label>
+            <input type="text" id="opt-height" value="500" placeholder="500" />
+          </div>
+          <div class="option-group">
+            <label for="opt-theme">Tema</label>
+            <select id="opt-theme">
+              <option value="dark">Escuro (padrão)</option>
+              <option value="light">Claro</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="calculadoras-list">
+        {calculadoras.map((calc) => (
+          <div class="calc-embed-card" data-slug={calc.slug}>
+            <div class="calc-embed-info">
+              <span class="calc-embed-icon">{calc.icon}</span>
+              <div>
+                <h3 class="calc-embed-title">{calc.title}</h3>
+                <p class="calc-embed-desc">{calc.description}</p>
+              </div>
+            </div>
+
+            <div class="calc-embed-preview">
+              <div class="preview-frame">
+                <iframe
+                  src={`/ferramentas/${calc.slug}?embed=true`}
+                  width="100%"
+                  height="300"
+                  frameborder="0"
+                  loading="lazy"
+                  style="border-radius: 8px; border: 1px solid #30363d; pointer-events: none;"
+                  title={`Preview: ${calc.title}`}
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="calc-embed-code">
+              <label>Código embed:</label>
+              <textarea
+                readonly
+                class="embed-textarea"
+                data-slug={calc.slug}
+                rows="6"
+              >{`<iframe src="${siteUrl}/ferramentas/${calc.slug}?embed=true" width="100%" height="500" frameborder="0" style="border-radius: 12px; border: 1px solid #30363d;"></iframe>\n<p style="font-size: 12px; text-align: center; margin-top: 8px;"><a href="${siteUrl}/ferramentas" target="_blank" rel="noopener">Calculadora gratuita por FinMoovi</a></p>`}</textarea>
+              <button class="copy-btn" data-slug={calc.slug}>Copiar código</button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <section class="embed-instructions">
+        <h2>Como usar</h2>
+        <ol>
+          <li>Escolha a calculadora desejada acima</li>
+          <li>Ajuste largura, altura e tema se necessário</li>
+          <li>Clique em "Copiar código"</li>
+          <li>Cole o código HTML no seu site, blog ou landing page</li>
+        </ol>
+        <div class="embed-note">
+          <strong>Atribuição obrigatória:</strong> O link "Calculadora gratuita por FinMoovi" deve permanecer visível. O uso é gratuito e ilimitado.
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script is:inline>
+  function updateEmbedCodes() {
+    var width = document.getElementById('opt-width').value || '100%';
+    var height = document.getElementById('opt-height').value || '500';
+    var theme = document.getElementById('opt-theme').value;
+    var siteUrl = 'https://blog.finmoovi.com';
+
+    var textareas = document.querySelectorAll('.embed-textarea');
+    textareas.forEach(function(textarea) {
+      var slug = textarea.getAttribute('data-slug');
+      var themeParam = theme === 'light' ? '&theme=light' : '';
+      var borderColor = theme === 'light' ? '#e1e4e8' : '#30363d';
+      var code = '<iframe src="' + siteUrl + '/ferramentas/' + slug + '?embed=true' + themeParam + '" width="' + width + '" height="' + height + '" frameborder="0" style="border-radius: 12px; border: 1px solid ' + borderColor + ';"></iframe>\n<p style="font-size: 12px; text-align: center; margin-top: 8px;"><a href="' + siteUrl + '/ferramentas" target="_blank" rel="noopener">Calculadora gratuita por FinMoovi</a></p>';
+      textarea.value = code;
+    });
+  }
+
+  document.getElementById('opt-width').addEventListener('input', updateEmbedCodes);
+  document.getElementById('opt-height').addEventListener('input', updateEmbedCodes);
+  document.getElementById('opt-theme').addEventListener('change', updateEmbedCodes);
+
+  document.querySelectorAll('.copy-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var slug = btn.getAttribute('data-slug');
+      var textarea = document.querySelector('.embed-textarea[data-slug="' + slug + '"]');
+      textarea.select();
+      navigator.clipboard.writeText(textarea.value).then(function() {
+        btn.textContent = 'Copiado!';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.textContent = 'Copiar código';
+          btn.classList.remove('copied');
+        }, 2000);
+      }).catch(function() {
+        document.execCommand('copy');
+        btn.textContent = 'Copiado!';
+        setTimeout(function() { btn.textContent = 'Copiar código'; }, 2000);
+      });
+    });
+  });
+</script>
+
+<style>
+  .embed-page { padding: 2rem 0 4rem; }
+
+  .embed-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .embed-title {
+    font-size: 2.2rem;
+    background: linear-gradient(135deg, #58a6ff, #bc8cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.75rem;
+  }
+  .embed-description {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .embed-options-global {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .embed-options-global h2 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .options-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .option-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .option-group label {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .option-group input,
+  .option-group select {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+  }
+  .option-group input:focus,
+  .option-group select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+  }
+
+  .calculadoras-list {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .calc-embed-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: border-color 0.2s;
+  }
+  .calc-embed-card:hover {
+    border-color: #58a6ff;
+  }
+
+  .calc-embed-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .calc-embed-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+  .calc-embed-title {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+  .calc-embed-desc {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+  .calc-embed-preview {
+    margin-bottom: 1.25rem;
+  }
+  .preview-frame {
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 300px;
+  }
+
+  .calc-embed-code label {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+  .embed-textarea {
+    width: 100%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 0.75rem;
+    color: var(--text-primary);
+    font-family: monospace;
+    font-size: 0.78rem;
+    resize: vertical;
+    line-height: 1.5;
+  }
+  .embed-textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+  }
+
+  .copy-btn {
+    margin-top: 0.75rem;
+    padding: 0.6rem 1.5rem;
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .copy-btn:hover {
+    transform: translateY(-1px);
+  }
+  .copy-btn.copied {
+    background: #3fb950;
+  }
+
+  .embed-instructions {
+    margin-top: 3rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .embed-instructions h2 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .embed-instructions ol {
+    list-style: decimal;
+    padding-left: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 2;
+  }
+  .embed-note {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba(210, 153, 34, 0.1);
+    border: 1px solid rgba(210, 153, 34, 0.3);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+  .embed-note strong {
+    color: #d29922;
+  }
+
+  @media (max-width: 640px) {
+    .options-row {
+      grid-template-columns: 1fr;
+    }
+    .calc-embed-info {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

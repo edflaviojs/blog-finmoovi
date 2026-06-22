@@ -1,9 +1,12 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
+import EmbedLayout from '@layouts/EmbedLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const isEmbed = Astro.url.searchParams.get('embed') === 'true';
 
 const breadcrumbItems = [
   { name: 'Início', url: '/' },
@@ -27,26 +30,33 @@ const faqSchema = {
     }
   ]
 };
+
+const Layout = isEmbed ? EmbedLayout : BaseLayout;
+const layoutProps = isEmbed
+  ? { title: 'Calculadora de Orçamento 50-30-20' }
+  : {
+      title: 'Calculadora de Orçamento 50-30-20 Grátis',
+      description: 'Monte seu orçamento pessoal usando a regra 50-30-20. Calculadora gratuita com visualização e dicas para organizar suas finanças.',
+      keywords: ['regra 50-30-20', 'calculadora orçamento', 'orçamento pessoal', 'como dividir salário', 'planejamento financeiro']
+    };
 ---
 
-<BaseLayout
-  title="Calculadora de Orçamento 50-30-20 Grátis"
-  description="Monte seu orçamento pessoal usando a regra 50-30-20. Calculadora gratuita com visualização e dicas para organizar suas finanças."
-  keywords={['regra 50-30-20', 'calculadora orçamento', 'orçamento pessoal', 'como dividir salário', 'planejamento financeiro']}
->
-  <SchemaBreadcrumb items={breadcrumbItems} />
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-  <Header />
+<Layout {...layoutProps}>
+  {!isEmbed && <SchemaBreadcrumb items={breadcrumbItems} />}
+  {!isEmbed && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {!isEmbed && <Header />}
 
   <main class="tool-page">
     <div class="container">
-      <header class="tool-header">
-        <nav class="tool-breadcrumb">
-          <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Orçamento 50-30-20</span>
-        </nav>
-        <h1>Calculadora de Orçamento 50-30-20</h1>
-        <p class="tool-subtitle">Descubra como dividir seu salário de forma inteligente usando a regra mais popular de finanças pessoais.</p>
-      </header>
+      {!isEmbed && (
+        <header class="tool-header">
+          <nav class="tool-breadcrumb">
+            <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Orçamento 50-30-20</span>
+          </nav>
+          <h1>Calculadora de Orçamento 50-30-20</h1>
+          <p class="tool-subtitle">Descubra como dividir seu salário de forma inteligente usando a regra mais popular de finanças pessoais.</p>
+        </header>
+      )}
 
       <div class="calculator-layout">
         <div class="calculator-form">
@@ -94,28 +104,30 @@ const faqSchema = {
         </div>
       </div>
 
-      <InlineAppCTA variant="full" locale="pt" />
+      {!isEmbed && <InlineAppCTA variant="full" locale="pt" />}
 
-      <section class="tool-faq">
-        <h2>Perguntas Frequentes</h2>
-        <details>
-          <summary>O que é a regra 50-30-20?</summary>
-          <p>A regra 50-30-20 divide sua renda em 3 categorias: <strong>50%</strong> para necessidades (aluguel, contas, alimentação), <strong>30%</strong> para desejos (lazer, compras), e <strong>20%</strong> para metas financeiras (poupança, investimentos, dívidas).</p>
-        </details>
-        <details>
-          <summary>E se eu ganho pouco? A regra ainda funciona?</summary>
-          <p>Sim! A regra é um guia flexível. Se suas necessidades consomem mais de 50%, ajuste para 60-20-20 ou 70-20-10. O importante é sempre separar algo para poupança.</p>
-        </details>
-        <details>
-          <summary>Devo usar o salário bruto ou líquido?</summary>
-          <p>Use sempre o <strong>salário líquido</strong> (o que cai na conta). Descontos de INSS, IR e vale-transporte já saíram antes de chegar a você.</p>
-        </details>
-      </section>
+      {!isEmbed && (
+        <section class="tool-faq">
+          <h2>Perguntas Frequentes</h2>
+          <details>
+            <summary>O que é a regra 50-30-20?</summary>
+            <p>A regra 50-30-20 divide sua renda em 3 categorias: <strong>50%</strong> para necessidades (aluguel, contas, alimentação), <strong>30%</strong> para desejos (lazer, compras), e <strong>20%</strong> para metas financeiras (poupança, investimentos, dívidas).</p>
+          </details>
+          <details>
+            <summary>E se eu ganho pouco? A regra ainda funciona?</summary>
+            <p>Sim! A regra é um guia flexível. Se suas necessidades consomem mais de 50%, ajuste para 60-20-20 ou 70-20-10. O importante é sempre separar algo para poupança.</p>
+          </details>
+          <details>
+            <summary>Devo usar o salário bruto ou líquido?</summary>
+            <p>Use sempre o <strong>salário líquido</strong> (o que cai na conta). Descontos de INSS, IR e vale-transporte já saíram antes de chegar a você.</p>
+          </details>
+        </section>
+      )}
     </div>
   </main>
 
-  <Footer />
-</BaseLayout>
+  {!isEmbed && <Footer />}
+</Layout>
 
 <script>
   function formatCurrency(value) {

@@ -1,9 +1,12 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
+import EmbedLayout from '@layouts/EmbedLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const isEmbed = Astro.url.searchParams.get('embed') === 'true';
 
 const breadcrumbItems = [
   { name: 'Início', url: '/' },
@@ -32,26 +35,33 @@ const faqSchema = {
     }
   ]
 };
+
+const Layout = isEmbed ? EmbedLayout : BaseLayout;
+const layoutProps = isEmbed
+  ? { title: 'Conversor de Moedas' }
+  : {
+      title: 'Conversor de Moedas Online Grátis - Cotação em Tempo Real',
+      description: 'Converta entre Real, Dólar, Euro e outras moedas com cotação atualizada. Conversor grátis com taxas em tempo real.',
+      keywords: ['conversor de moedas', 'dólar hoje', 'euro hoje', 'cotação dólar', 'câmbio', 'converter real para dólar']
+    };
 ---
 
-<BaseLayout
-  title="Conversor de Moedas Online Grátis - Cotação em Tempo Real"
-  description="Converta entre Real, Dólar, Euro e outras moedas com cotação atualizada. Conversor grátis com taxas em tempo real."
-  keywords={['conversor de moedas', 'dólar hoje', 'euro hoje', 'cotação dólar', 'câmbio', 'converter real para dólar']}
->
-  <SchemaBreadcrumb items={breadcrumbItems} />
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-  <Header />
+<Layout {...layoutProps}>
+  {!isEmbed && <SchemaBreadcrumb items={breadcrumbItems} />}
+  {!isEmbed && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {!isEmbed && <Header />}
 
   <main class="tool-page">
     <div class="container">
-      <header class="tool-header">
-        <nav class="tool-breadcrumb">
-          <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Conversor de Moedas</span>
-        </nav>
-        <h1>Conversor de Moedas</h1>
-        <p class="tool-subtitle">Converta valores entre moedas com cotação atualizada em tempo real.</p>
-      </header>
+      {!isEmbed && (
+        <header class="tool-header">
+          <nav class="tool-breadcrumb">
+            <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Conversor de Moedas</span>
+          </nav>
+          <h1>Conversor de Moedas</h1>
+          <p class="tool-subtitle">Converta valores entre moedas com cotação atualizada em tempo real.</p>
+        </header>
+      )}
 
       <div class="converter-layout">
         <div class="converter-card">
@@ -100,28 +110,30 @@ const faqSchema = {
         </div>
       </div>
 
-      <InlineAppCTA variant="full" locale="pt" />
+      {!isEmbed && <InlineAppCTA variant="full" locale="pt" />}
 
-      <section class="tool-faq">
-        <h2>Perguntas Frequentes</h2>
-        <details>
-          <summary>De onde vêm as cotações?</summary>
-          <p>As cotações são obtidas da AwesomeAPI (mesma fonte do ticker no topo do blog) e refletem a taxa comercial em tempo real. Para operações bancárias, consulte seu banco — o spread pode variar.</p>
-        </details>
-        <details>
-          <summary>Com que frequência as cotações são atualizadas?</summary>
-          <p>As cotações são atualizadas a cada consulta. Em dias úteis, refletem o mercado em tempo real. Em fins de semana, mostram o fechamento da sexta-feira.</p>
-        </details>
-        <details>
-          <summary>Posso usar esse valor para transferências internacionais?</summary>
-          <p>Este conversor mostra a taxa comercial como referência. Bancos e serviços de remessa aplicam spreads e taxas adicionais. Use como base para comparação.</p>
-        </details>
-      </section>
+      {!isEmbed && (
+        <section class="tool-faq">
+          <h2>Perguntas Frequentes</h2>
+          <details>
+            <summary>De onde vêm as cotações?</summary>
+            <p>As cotações são obtidas da AwesomeAPI (mesma fonte do ticker no topo do blog) e refletem a taxa comercial em tempo real. Para operações bancárias, consulte seu banco — o spread pode variar.</p>
+          </details>
+          <details>
+            <summary>Com que frequência as cotações são atualizadas?</summary>
+            <p>As cotações são atualizadas a cada consulta. Em dias úteis, refletem o mercado em tempo real. Em fins de semana, mostram o fechamento da sexta-feira.</p>
+          </details>
+          <details>
+            <summary>Posso usar esse valor para transferências internacionais?</summary>
+            <p>Este conversor mostra a taxa comercial como referência. Bancos e serviços de remessa aplicam spreads e taxas adicionais. Use como base para comparação.</p>
+          </details>
+        </section>
+      )}
     </div>
   </main>
 
-  <Footer />
-</BaseLayout>
+  {!isEmbed && <Footer />}
+</Layout>
 
 <script>
   let rates = {};

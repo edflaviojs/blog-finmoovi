@@ -1,9 +1,12 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
+import EmbedLayout from '@layouts/EmbedLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const isEmbed = Astro.url.searchParams.get('embed') === 'true';
 
 const breadcrumbItems = [
   { name: 'Início', url: '/' },
@@ -27,26 +30,33 @@ const faqSchema = {
     }
   ]
 };
+
+const Layout = isEmbed ? EmbedLayout : BaseLayout;
+const layoutProps = isEmbed
+  ? { title: 'Simulador de Investimento' }
+  : {
+      title: 'Simulador de Investimento Grátis - Quanto Investir por Mês',
+      description: 'Descubra quanto precisa investir por mês para alcançar seu objetivo. Simulador gratuito com gráfico de evolução patrimonial.',
+      keywords: ['simulador investimento', 'quanto investir por mês', 'como juntar 1 milhão', 'simulador renda fixa', 'calculadora investimento']
+    };
 ---
 
-<BaseLayout
-  title="Simulador de Investimento Grátis - Quanto Investir por Mês"
-  description="Descubra quanto precisa investir por mês para alcançar seu objetivo. Simulador gratuito com gráfico de evolução patrimonial."
-  keywords={['simulador investimento', 'quanto investir por mês', 'como juntar 1 milhão', 'simulador renda fixa', 'calculadora investimento']}
->
-  <SchemaBreadcrumb items={breadcrumbItems} />
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-  <Header />
+<Layout {...layoutProps}>
+  {!isEmbed && <SchemaBreadcrumb items={breadcrumbItems} />}
+  {!isEmbed && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {!isEmbed && <Header />}
 
   <main class="tool-page">
     <div class="container">
-      <header class="tool-header">
-        <nav class="tool-breadcrumb">
-          <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Simulador de Investimento</span>
-        </nav>
-        <h1>Simulador de Investimento</h1>
-        <p class="tool-subtitle">Descubra quanto precisa investir por mês para alcançar seu objetivo financeiro.</p>
-      </header>
+      {!isEmbed && (
+        <header class="tool-header">
+          <nav class="tool-breadcrumb">
+            <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Simulador de Investimento</span>
+          </nav>
+          <h1>Simulador de Investimento</h1>
+          <p class="tool-subtitle">Descubra quanto precisa investir por mês para alcançar seu objetivo financeiro.</p>
+        </header>
+      )}
 
       <div class="calculator-layout">
         <div class="calculator-form">
@@ -96,28 +106,30 @@ const faqSchema = {
         </div>
       </div>
 
-      <InlineAppCTA variant="full" locale="pt" />
+      {!isEmbed && <InlineAppCTA variant="full" locale="pt" />}
 
-      <section class="tool-faq">
-        <h2>Perguntas Frequentes</h2>
-        <details>
-          <summary>Quanto preciso investir por mês para ter 1 milhão?</summary>
-          <p>Depende do prazo e da rentabilidade. Com 1% ao mês, investindo <strong>R$ 1.500/mês</strong>, você alcança R$ 1 milhão em aproximadamente 20 anos. Com R$ 3.000/mês, em ~13 anos.</p>
-        </details>
-        <details>
-          <summary>Qual rendimento usar na simulação?</summary>
-          <p><strong>Conservador:</strong> 0.8% ao mês (Tesouro Selic, CDB). <strong>Moderado:</strong> 1% ao mês (fundos multimercado). <strong>Agressivo:</strong> 1.2-1.5% ao mês (renda variável de longo prazo).</p>
-        </details>
-        <details>
-          <summary>O resultado é garantido?</summary>
-          <p>Não. O simulador usa uma taxa fixa como referência. Na prática, investimentos em renda variável oscilam. Use como meta e referência, não como certeza.</p>
-        </details>
-      </section>
+      {!isEmbed && (
+        <section class="tool-faq">
+          <h2>Perguntas Frequentes</h2>
+          <details>
+            <summary>Quanto preciso investir por mês para ter 1 milhão?</summary>
+            <p>Depende do prazo e da rentabilidade. Com 1% ao mês, investindo <strong>R$ 1.500/mês</strong>, você alcança R$ 1 milhão em aproximadamente 20 anos. Com R$ 3.000/mês, em ~13 anos.</p>
+          </details>
+          <details>
+            <summary>Qual rendimento usar na simulação?</summary>
+            <p><strong>Conservador:</strong> 0.8% ao mês (Tesouro Selic, CDB). <strong>Moderado:</strong> 1% ao mês (fundos multimercado). <strong>Agressivo:</strong> 1.2-1.5% ao mês (renda variável de longo prazo).</p>
+          </details>
+          <details>
+            <summary>O resultado é garantido?</summary>
+            <p>Não. O simulador usa uma taxa fixa como referência. Na prática, investimentos em renda variável oscilam. Use como meta e referência, não como certeza.</p>
+          </details>
+        </section>
+      )}
     </div>
   </main>
 
-  <Footer />
-</BaseLayout>
+  {!isEmbed && <Footer />}
+</Layout>
 
 <script>
   function formatCurrency(value) {

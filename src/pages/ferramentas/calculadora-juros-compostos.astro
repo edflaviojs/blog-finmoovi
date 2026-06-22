@@ -1,9 +1,12 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
+import EmbedLayout from '@layouts/EmbedLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const isEmbed = Astro.url.searchParams.get('embed') === 'true';
 
 const breadcrumbItems = [
   { name: 'Início', url: '/' },
@@ -32,26 +35,33 @@ const faqSchema = {
     }
   ]
 };
+
+const Layout = isEmbed ? EmbedLayout : BaseLayout;
+const layoutProps = isEmbed
+  ? { title: 'Calculadora de Juros Compostos' }
+  : {
+      title: 'Calculadora de Juros Compostos Grátis',
+      description: 'Calcule juros compostos gratuitamente. Simule investimentos com aportes mensais, veja gráficos e descubra quanto seu dinheiro vai render.',
+      keywords: ['calculadora juros compostos', 'simulador investimento', 'juros sobre juros', 'calculadora rendimento', 'quanto rende']
+    };
 ---
 
-<BaseLayout
-  title="Calculadora de Juros Compostos Grátis"
-  description="Calcule juros compostos gratuitamente. Simule investimentos com aportes mensais, veja gráficos e descubra quanto seu dinheiro vai render."
-  keywords={['calculadora juros compostos', 'simulador investimento', 'juros sobre juros', 'calculadora rendimento', 'quanto rende']}
->
-  <SchemaBreadcrumb items={breadcrumbItems} />
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-  <Header />
+<Layout {...layoutProps}>
+  {!isEmbed && <SchemaBreadcrumb items={breadcrumbItems} />}
+  {!isEmbed && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {!isEmbed && <Header />}
 
   <main class="tool-page">
     <div class="container">
-      <header class="tool-header">
-        <nav class="tool-breadcrumb">
-          <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Juros Compostos</span>
-        </nav>
-        <h1>Calculadora de Juros Compostos</h1>
-        <p class="tool-subtitle">Simule quanto seu dinheiro pode render ao longo do tempo com juros compostos e aportes mensais.</p>
-      </header>
+      {!isEmbed && (
+        <header class="tool-header">
+          <nav class="tool-breadcrumb">
+            <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Juros Compostos</span>
+          </nav>
+          <h1>Calculadora de Juros Compostos</h1>
+          <p class="tool-subtitle">Simule quanto seu dinheiro pode render ao longo do tempo com juros compostos e aportes mensais.</p>
+        </header>
+      )}
 
       <div class="calculator-layout">
         <div class="calculator-form">
@@ -95,32 +105,34 @@ const faqSchema = {
         </div>
       </div>
 
-      <InlineAppCTA variant="full" locale="pt" />
+      {!isEmbed && <InlineAppCTA variant="full" locale="pt" />}
 
-      <section class="tool-faq">
-        <h2>Perguntas Frequentes</h2>
-        <details>
-          <summary>O que são juros compostos?</summary>
-          <p>Juros compostos são juros calculados sobre o valor inicial mais os juros acumulados de períodos anteriores. É o chamado "juros sobre juros", que faz seu dinheiro crescer exponencialmente ao longo do tempo.</p>
-        </details>
-        <details>
-          <summary>Como calcular juros compostos?</summary>
-          <p>A fórmula é: <strong>M = C × (1 + i)^t</strong>, onde M é o montante final, C é o capital inicial, i é a taxa de juros por período, e t é o número de períodos. Com aportes mensais, o cálculo é feito mês a mês.</p>
-        </details>
-        <details>
-          <summary>Qual a diferença entre juros simples e compostos?</summary>
-          <p>Nos juros simples, os juros são calculados apenas sobre o valor inicial. Nos juros compostos, são calculados sobre o valor inicial mais os juros acumulados, gerando crescimento exponencial.</p>
-        </details>
-        <details>
-          <summary>Quanto rende R$ 1.000 por mês a 1% ao mês?</summary>
-          <p>R$ 1.000 investidos a 1% ao mês, sem aportes adicionais, rendem aproximadamente R$ 1.817 em 5 anos (60 meses). Com aporte mensal de R$ 500, o montante chega a cerca de R$ 42.000.</p>
-        </details>
-      </section>
+      {!isEmbed && (
+        <section class="tool-faq">
+          <h2>Perguntas Frequentes</h2>
+          <details>
+            <summary>O que são juros compostos?</summary>
+            <p>Juros compostos são juros calculados sobre o valor inicial mais os juros acumulados de períodos anteriores. É o chamado "juros sobre juros", que faz seu dinheiro crescer exponencialmente ao longo do tempo.</p>
+          </details>
+          <details>
+            <summary>Como calcular juros compostos?</summary>
+            <p>A fórmula é: <strong>M = C × (1 + i)^t</strong>, onde M é o montante final, C é o capital inicial, i é a taxa de juros por período, e t é o número de períodos. Com aportes mensais, o cálculo é feito mês a mês.</p>
+          </details>
+          <details>
+            <summary>Qual a diferença entre juros simples e compostos?</summary>
+            <p>Nos juros simples, os juros são calculados apenas sobre o valor inicial. Nos juros compostos, são calculados sobre o valor inicial mais os juros acumulados, gerando crescimento exponencial.</p>
+          </details>
+          <details>
+            <summary>Quanto rende R$ 1.000 por mês a 1% ao mês?</summary>
+            <p>R$ 1.000 investidos a 1% ao mês, sem aportes adicionais, rendem aproximadamente R$ 1.817 em 5 anos (60 meses). Com aporte mensal de R$ 500, o montante chega a cerca de R$ 42.000.</p>
+          </details>
+        </section>
+      )}
     </div>
   </main>
 
-  <Footer />
-</BaseLayout>
+  {!isEmbed && <Footer />}
+</Layout>
 
 <script>
   function formatCurrency(value) {

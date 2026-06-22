@@ -1,0 +1,48 @@
+---
+import '@/styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  {description && <meta name="description" content={description} />}
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preload" href="/fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/inter-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+  <meta name="theme-color" content="#0d1117" />
+  <script is:inline src="/scripts/theme.js"></script>
+</head>
+<body class="embed-mode">
+  <main class="embed-container">
+    <slot />
+  </main>
+</body>
+</html>
+
+<style is:global>
+  .embed-mode {
+    background: var(--bg-primary);
+    padding: 1.5rem;
+  }
+
+  .embed-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .embed-mode .tool-breadcrumb,
+  .embed-mode .tool-faq,
+  .embed-mode .inline-app-cta {
+    display: none !important;
+  }
+</style>

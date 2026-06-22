@@ -1,0 +1,47 @@
+name: Syndicate Content & Send Pingbacks
+
+on:
+  schedule:
+    # Terças e quintas às 14h UTC
+    - cron: '0 14 * * 2,4'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  syndicate-and-pingback:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Syndicate to Dev.to
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+        run: node --import tsx scripts/syndicate-devto.js
+
+      - name: Send Pingbacks
+        run: node --import tsx scripts/send-pingbacks.js
+
+      - name: Commit tracking data
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/synced-devto.json .github/data/sent-pingbacks.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update syndication and pingback tracking data"
+            git push
+          fi

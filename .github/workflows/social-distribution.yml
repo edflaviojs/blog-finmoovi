@@ -1,0 +1,53 @@
+name: Social Distribution (Pinterest + Bookmarks)
+
+on:
+  schedule:
+    # Segundas, quartas e sextas às 15h UTC
+    - cron: '0 15 * * 1,3,5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  social-distribution:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Pinterest Publish
+        env:
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
+        run: node --import tsx scripts/pinterest-publish.js
+
+      - name: Run Social Bookmarking
+        env:
+          POCKET_CONSUMER_KEY: ${{ secrets.POCKET_CONSUMER_KEY }}
+          POCKET_ACCESS_TOKEN: ${{ secrets.POCKET_ACCESS_TOKEN }}
+        run: node --import tsx scripts/social-bookmarking.js
+
+      - name: Commit and push tracking updates
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/pinterest-published.json .github/data/social-bookmarks.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update social distribution tracking [skip ci]"
+            git push
+          fi

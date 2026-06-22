@@ -1,9 +1,12 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
+import EmbedLayout from '@layouts/EmbedLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const isEmbed = Astro.url.searchParams.get('embed') === 'true';
 
 const breadcrumbItems = [
   { name: 'Início', url: '/' },
@@ -32,26 +35,33 @@ const faqSchema = {
     }
   ]
 };
+
+const Layout = isEmbed ? EmbedLayout : BaseLayout;
+const layoutProps = isEmbed
+  ? { title: 'Calculadora de Reserva de Emergência' }
+  : {
+      title: 'Calculadora de Reserva de Emergência Grátis',
+      description: 'Descubra quanto você precisa na sua reserva de emergência. Calculadora gratuita que considera seu perfil profissional, gastos mensais e tempo para atingir a meta.',
+      keywords: ['reserva de emergência', 'calculadora reserva', 'fundo de emergência', 'quanto guardar', 'planejamento financeiro', 'segurança financeira']
+    };
 ---
 
-<BaseLayout
-  title="Calculadora de Reserva de Emergência Grátis"
-  description="Descubra quanto você precisa na sua reserva de emergência. Calculadora gratuita que considera seu perfil profissional, gastos mensais e tempo para atingir a meta."
-  keywords={['reserva de emergência', 'calculadora reserva', 'fundo de emergência', 'quanto guardar', 'planejamento financeiro', 'segurança financeira']}
->
-  <SchemaBreadcrumb items={breadcrumbItems} />
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-  <Header />
+<Layout {...layoutProps}>
+  {!isEmbed && <SchemaBreadcrumb items={breadcrumbItems} />}
+  {!isEmbed && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {!isEmbed && <Header />}
 
   <main class="tool-page">
     <div class="container">
-      <header class="tool-header">
-        <nav class="tool-breadcrumb">
-          <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Reserva de Emergência</span>
-        </nav>
-        <h1>Calculadora de Reserva de Emergência</h1>
-        <p class="tool-subtitle">Descubra quanto você precisa guardar para ter segurança financeira e em quanto tempo pode atingir essa meta.</p>
-      </header>
+      {!isEmbed && (
+        <header class="tool-header">
+          <nav class="tool-breadcrumb">
+            <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Reserva de Emergência</span>
+          </nav>
+          <h1>Calculadora de Reserva de Emergência</h1>
+          <p class="tool-subtitle">Descubra quanto você precisa guardar para ter segurança financeira e em quanto tempo pode atingir essa meta.</p>
+        </header>
+      )}
 
       <div class="calculator-layout">
         <div class="calculator-form">
@@ -142,32 +152,34 @@ const faqSchema = {
         </div>
       </div>
 
-      <InlineAppCTA variant="full" locale="pt" />
+      {!isEmbed && <InlineAppCTA variant="full" locale="pt" />}
 
-      <section class="tool-faq">
-        <h2>Perguntas Frequentes</h2>
-        <details>
-          <summary>Quanto devo ter na reserva de emergência?</summary>
-          <p>O ideal é ter entre <strong>3 a 12 meses</strong> de gastos essenciais. Trabalhadores CLT podem ter 3-6 meses, enquanto autônomos e empreendedores devem guardar 6-12 meses por terem renda menos previsível.</p>
-        </details>
-        <details>
-          <summary>Onde guardar a reserva de emergência?</summary>
-          <p>Em investimentos de <strong>alta liquidez e baixo risco</strong>: CDB com liquidez diária (100% CDI), Tesouro Selic, ou conta remunerada. O importante é poder sacar a qualquer momento sem perder dinheiro.</p>
-        </details>
-        <details>
-          <summary>Reserva de emergência e poupança são a mesma coisa?</summary>
-          <p>Não. A poupança rende menos que a inflação na maioria dos cenários. A reserva deve estar em investimentos que rendam pelo menos <strong>100% do CDI</strong> com liquidez diária.</p>
-        </details>
-        <details>
-          <summary>Posso usar a reserva para investir?</summary>
-          <p>Não. A reserva é exclusivamente para emergências (desemprego, doença, conserto urgente). Só depois de montá-la completa você deve começar a investir em ativos de maior risco.</p>
-        </details>
-      </section>
+      {!isEmbed && (
+        <section class="tool-faq">
+          <h2>Perguntas Frequentes</h2>
+          <details>
+            <summary>Quanto devo ter na reserva de emergência?</summary>
+            <p>O ideal é ter entre <strong>3 a 12 meses</strong> de gastos essenciais. Trabalhadores CLT podem ter 3-6 meses, enquanto autônomos e empreendedores devem guardar 6-12 meses por terem renda menos previsível.</p>
+          </details>
+          <details>
+            <summary>Onde guardar a reserva de emergência?</summary>
+            <p>Em investimentos de <strong>alta liquidez e baixo risco</strong>: CDB com liquidez diária (100% CDI), Tesouro Selic, ou conta remunerada. O importante é poder sacar a qualquer momento sem perder dinheiro.</p>
+          </details>
+          <details>
+            <summary>Reserva de emergência e poupança são a mesma coisa?</summary>
+            <p>Não. A poupança rende menos que a inflação na maioria dos cenários. A reserva deve estar em investimentos que rendam pelo menos <strong>100% do CDI</strong> com liquidez diária.</p>
+          </details>
+          <details>
+            <summary>Posso usar a reserva para investir?</summary>
+            <p>Não. A reserva é exclusivamente para emergências (desemprego, doença, conserto urgente). Só depois de montá-la completa você deve começar a investir em ativos de maior risco.</p>
+          </details>
+        </section>
+      )}
     </div>
   </main>
 
-  <Footer />
-</BaseLayout>
+  {!isEmbed && <Footer />}
+</Layout>
 
 <script>
   const profiles = {
