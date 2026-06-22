@@ -37,7 +37,7 @@ It's essential to remember that cashback is not always an advantage. Some credit
 
 
 ## Start Today
-Now that you understand how to use cashback intelligently, it's time to start saving. Remember that cashback is just a tool to help you save [money](/en/posts/avoid-impulse-purchases), so it's essential to have a [budget](/en/posts/50-30-20-rule-complete-guide) and a broader savings strategy. With the right practical tips and a credit card that offers the best benefits for you, you can start earning more [money](/en/posts/creating-an-emergency-fund) back and achieving your financial goals.
+Now that you understand how to use cashback intelligently, it's time to start [saving](/en/posts/criar-reserva-de-emergencia). Remember that cashback is just a tool to help you save [money](/en/posts/avoid-impulse-purchases), so it's essential to have a [budget](/en/posts/50-30-20-rule-complete-guide) and a broader savings strategy. With the right practical tips and a credit card that offers the best benefits for you, you can start earning more [money](/en/posts/creating-an-emergency-fund) back and achieving your financial goals.
 
 ![Evitando Armadilhas](/images/posts/cashback-inteligente-4.webp)
 

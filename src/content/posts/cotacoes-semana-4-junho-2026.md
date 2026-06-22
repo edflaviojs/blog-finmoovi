@@ -26,7 +26,7 @@ Nesta semana, o mercado financeiro brasileiro apresentou movimentos interessante
 
 ## [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana
 
-A taxa de câmbio entre o real brasileiro e as principais moedas estrangeiras foi um dos pontos de destaque da semana. O dólar americano fechou a semana em R$ 5,16, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou R$ 5,91, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes, especialmente para aqueles que investem em ativos em moedas estrangeiras ou planejam viagens internacionais.
+A taxa de câmbio entre o real brasileiro e as principais moedas estrangeiras foi um dos pontos de destaque da semana. O [dólar](/posts/cotacoes-semana-3-junho-2026) americano fechou a semana em R$ 5,16, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou R$ 5,91, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes, especialmente para aqueles que investem em ativos em moedas estrangeiras ou planejam viagens internacionais.
 
 ## Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
 
@@ -44,7 +44,7 @@ Uma dica valiosa para os investidores é diversificar seus investimentos, consid
 
 Para a próxima semana, é importante manter o foco nas decisões do Banco Central, especialmente em relação à Selic, e nos movimentos das taxas de câmbio. Além disso, os investidores devem estar atentos às notícias econômicas globais, que podem influenciar o mercado financeiro brasileiro. Com o FinMoovi, você pode ficar por dentro das últimas tendências e ajustar sua estratégia de investimento de acordo com as mudanças no mercado.
 
-Em resumo, a semana foi marcada por estabilidade no dólar e valorização do euro em relação ao real, enquanto a Selic continua a ser um fator importante para os investimentos. A [diversificação](/glossario/diversificacao) e o acompanhamento constante do mercado são chaves para o sucesso dos investidores pessoa física. Com as ferramentas certas, como o FinMoovi, é possível navegar pelo mercado financeiro com mais confiança e alcançar seus objetivos financeiros.
+Em resumo, a semana foi marcada por estabilidade no [dólar](/posts/cotacoes-semana-4-maio-2026) e valorização do euro em relação ao real, enquanto a Selic continua a ser um fator importante para os investimentos. A [diversificação](/glossario/diversificacao) e o acompanhamento constante do mercado são chaves para o sucesso dos investidores pessoa física. Com as ferramentas certas, como o FinMoovi, é possível navegar pelo mercado financeiro com mais confiança e alcançar seus objetivos financeiros.
 
 
 ---

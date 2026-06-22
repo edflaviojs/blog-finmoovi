@@ -17,9 +17,9 @@ seo:
 ---
 
 ## Criando um [Orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) Realista
-Para criar um orçamento eficaz com salário mínimo, é crucial entender que não se trata de cortar todos os gastos, mas sim de gerenciar seus recursos de forma inteligente. Vamos considerar um exemplo com um salário de R$ 2.400,00, que é um pouco acima do salário mínimo no Brasil.
+Para criar um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) eficaz com salário mínimo, é crucial entender que não se trata de cortar todos os gastos, mas sim de gerenciar seus recursos de forma inteligente. Vamos considerar um exemplo com um salário de R$ 2.400,00, que é um pouco acima do salário mínimo no Brasil.
 
-Uma regra geral para dividir seu orçamento é a seguinte:
+Uma regra geral para dividir seu [orçamento](/posts/como-criar-orcamento-pessoal) é a seguinte:
 | Categoria | Percentual do Salário |
 | --- | --- |
 | Moradia (aluguel, serviços) | 30% |

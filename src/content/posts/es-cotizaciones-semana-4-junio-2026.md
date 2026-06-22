@@ -20,7 +20,7 @@ seo:
 
 La semana del 15 de junio al 22 de junio de 2026 ha sido de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, vamos a explorar los acontecimientos más destacados de la semana y ofrecer [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
 
-![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-cotizaciones-semana-4-junio-2026-inline-1.webp)
+![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-[cotizaciones](/es/posts/cotizaciones-semana-1-junio-2026)-semana-4-junio-2026-inline-1.webp)
 
 
 
@@ -30,9 +30,9 @@ En cuanto a las tasas de cambio, el dólar estadounidense (USD) se mantuvo en un
 
 La estabilidad del dólar puede ser vista como una señal positiva para la [economía](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ya que puede ayudar a controlar la [inflación](/es/glossario/es-inflacao) y mantener la competitividad de las exportaciones. Sin embargo, es importante tener en cuenta que las tasas de cambio pueden ser volátiles y están sujetas a cambios repentinos debido a factores políticos y económicos.
 
-## Comentario sobre la [Selic](/es/glossario/es-selic) e Impacto en las [Inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
+## Comentario sobre la [Selic](/es/glossario/es-selic) e Impacto en las [Inversiones](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-selic-qual-e-melhor-para-voce)
 
-La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) brasileña, ha sido un tema de gran interés en la semana. El Banco Central decidió mantener la tasa Selic en su nivel actual, lo que puede influir en las decisiones de inversión de los brasileños. Una tasa Selic estable puede significar que los rendimientos de las inversiones en reales pueden ser más atractivos, aunque también puede limitar el crecimiento económico si no se acompaña de medidas para estimular la inversión y el consumo.
+La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) brasileña, ha sido un tema de gran interés en la semana. El Banco Central decidió mantener la tasa Selic en su nivel actual, lo que puede influir en las decisiones de inversión de los brasileños. Una tasa Selic estable puede significar que los rendimientos de las [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) en reales pueden ser más atractivos, aunque también puede limitar el crecimiento económico si no se acompaña de medidas para estimular la inversión y el consumo.
 
 ![Comentario sobre la Selic e Impacto en las Inversiones](/images/posts/es-cotizaciones-semana-4-junio-2026-inline-3.webp)
 

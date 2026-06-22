@@ -28,7 +28,7 @@ A general rule for dividing your budget is as follows:
 | Health and Wellness | 10% |
 | Education and Development | 5% |
 | Leisure and Entertainment | 5% |
-| Savings and Emergency | 10% |
+| [Savings](/en/posts/financial-education-for-children) and Emergency | 10% |
 
 Based on this division, for a salary of R$ 2,400.00:
 - Housing: R$ 720.00
@@ -40,7 +40,7 @@ Based on this division, for a salary of R$ 2,400.00:
 - Savings and Emergency: R$ 240.00
 
 ## Prioritizing Needs
-It's essential to prioritize needs over desires. **Practical tip:** Make a list of everything you spend in a month and identify where you can cut unnecessary expenses. For example, if you spend R$ 100.00 per week on snacks and meals out, try reducing it to R$ 50.00, saving R$ 200.00 per month.
+It's essential to prioritize needs over desires. **Practical tip:** Make a list of everything you spend in a month and identify where you can cut unnecessary expenses. For example, if you spend R$ 100.00 per week on snacks and meals out, try reducing it to R$ 50.00, [saving](/en/posts/criar-reserva-de-emergencia) R$ 200.00 per month.
 
 ## Managing Variable Expenses
 Variable expenses, such as transportation and eating out, can be challenging to control. Here are some tips for managing these expenses:

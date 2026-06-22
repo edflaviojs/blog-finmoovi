@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Reducing Energy Consumption
-To start saving on your energy bill, it's essential to understand that small changes in your daily routine can make a big difference. Imagine you spend around R$ 150 per month on electricity. With a few simple changes, you can reduce this amount to R$ 100, saving R$ 50 per month. This may seem like a small amount, but over a year, you'd be saving R$ 600.
+To start [saving](/en/posts/criar-reserva-de-emergencia) on your energy bill, it's essential to understand that small changes in your daily routine can make a big difference. Imagine you spend around R$ 150 per month on electricity. With a few simple changes, you can reduce this amount to R$ 100, saving R$ 50 per month. This may seem like a small amount, but over a year, you'd be saving R$ 600.
 
 One of the main causes of excessive energy spending is the unnecessary use of electronic devices. Often, we leave the TV, computer, or refrigerator on even when we're not using them. This not only increases your energy bill but also reduces the lifespan of your appliances. **Practical tip:** Turn off all electronic devices when not in use, including phone and laptop chargers, as they continue to consume energy even when the device is fully charged.
 

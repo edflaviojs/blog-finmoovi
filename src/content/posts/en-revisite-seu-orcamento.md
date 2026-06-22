@@ -22,7 +22,7 @@ translate: true
 We've reached the middle of the year, a perfect time to reflect on our finances and make necessary adjustments. If you're like most people, you probably started the year with big plans and financial goals, but along the way, things might have gone a bit off track. In this article, we'll explore why it's essential to review your [budget](/en/posts/50-30-20-rule-complete-guide) halfway through the year and provide practical tips on how to do it effectively.
 
 ## Why Review Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro))?
-Reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) halfway through the year is crucial for several reasons. First, it helps ensure you're on the right path to achieving your financial goals. If you set goals at the beginning of the year, such as saving for a trip or paying off debt, a mid-year review can help you identify if you're progressing as planned.
+Reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) halfway through the year is crucial for several reasons. First, it helps ensure you're on the right path to achieving your financial goals. If you set goals at the beginning of the year, such as [saving](/en/posts/criar-reserva-de-emergencia) for a trip or paying off debt, a mid-year review can help you identify if you're progressing as planned.
 
 Additionally, financial conditions can change significantly in just six months. You might have received a salary increase, changed jobs, or faced unexpected expenses. A mid-year review allows you to adjust your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)) to reflect these changes and continue managing your [money](/en/posts/30-day-rule-for-purchases) effectively.
 
@@ -39,7 +39,7 @@ Start by checking your current bank balance. This includes not only your checkin
 ### 2. Evaluate Your Expenses
 Evaluate all your expenses from the last six months. This includes fixed expenses like rent, utility bills, and subscriptions, as well as variable expenses like purchases, trips, and entertainment. If you notice you're spending too much in a specific area, it might be time to make adjustments.
 
-### 3. Adjust Your Budget
+### 3. Adjust Your [Budget](/en/posts/how-to-create-personal-budget)
 Based on your evaluation, adjust your budget for the rest of the year. If you identified areas where you can cut back on spending, now is the time to make changes. Consider using a tool like the [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) app to help manage your finances and keep everything organized.
 
 ### 4. Review Your Goals

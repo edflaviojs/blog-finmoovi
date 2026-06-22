@@ -16,7 +16,7 @@ seo:
   keywords: ["how to save on your market bill every week","personal finance","economy","money"]
 ---
 
-## Saving on Your Market Bill
+## [Saving](/en/posts/criar-reserva-de-emergencia) on Your Market Bill
 Imagine you can save around R$ 50,00 per week on your market bill. This may not seem like much, but over the course of a year, you'd be saving approximately R$ 2,600,00. With this amount, you could take a trip, pay off debts, or invest in an [emergency fund](/en/glossario/en-reserva-de-emergencia). The key to achieving this [savings](/en/posts/financial-education-for-children) lies in small changes to your shopping habits.
 
 ## [Planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas) is Fundamental

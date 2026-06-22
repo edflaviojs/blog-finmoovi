@@ -19,7 +19,7 @@ seo:
 ## [Planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas) is Key
 When we go to the supermarket, it's common to buy more than we need, especially if we don't have a clear plan of what we want to buy. This can lead to excessive spending and food waste. To avoid this, it's essential to make a shopping list before going to the supermarket. For example, if you spend around $500 per week on supermarket shopping for a family of four, you can start reducing that amount by identifying the essential items and those that can be cut.
 
-A practical example is the case of a person who earns $5,000 per month and spends around $1,500 on dining out. If that person starts cooking at home and planning their shopping, they can easily reduce that amount to $1,000, saving $500 per month.
+A practical example is the case of a person who earns $5,000 per month and spends around $1,500 on dining out. If that person starts cooking at home and planning their shopping, they can easily reduce that amount to $1,000, [saving](/en/posts/criar-reserva-de-emergencia) $500 per month.
 
 ## Organize Your Shopping List
 A well-organized shopping list can help avoid impulse purchases and ensure that you only buy what you need. Here are some tips to organize your shopping list:

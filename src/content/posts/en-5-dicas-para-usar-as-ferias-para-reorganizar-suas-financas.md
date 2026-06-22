@@ -44,7 +44,7 @@ If you have debt, it's essential to create a plan to pay it off. According to Se
 4. **Consider consolidation**: Consider consolidating your debts into a single debt with a lower interest rate.
 
 ## Tools to Help
-There are many tools available to help you manage your finances. One of them is the [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), an app that allows you to monitor your expenses, create a budget, and set financial goals. With [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), you can have a clear view of your finances and make adjustments as needed.
+There are many tools available to help you manage your finances. One of them is the [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), an app that allows you to monitor your expenses, create a [budget](/en/posts/how-to-create-personal-budget), and set financial goals. With [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), you can have a clear view of your finances and make adjustments as needed.
 
 ![Managing Debt](/images/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas-4.webp)
 

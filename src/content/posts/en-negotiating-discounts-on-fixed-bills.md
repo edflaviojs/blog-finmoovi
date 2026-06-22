@@ -46,7 +46,7 @@ Here are some examples of how you can negotiate discounts on fixed bills:
 - TV bill: "I'm currently paying R$150 per month for my TV bill, but I saw that you're offering an identical plan for R$120 per month for new customers. Can I get a discount to pay R$130 per month?"
 
 ## Start Today
-Now that you know how to negotiate discounts on fixed bills, it's time to start saving [money](/en/posts/30-day-rule-for-purchases). Remember that negotiation is a skill that can be developed with practice, so don't be afraid to try. **Practical tip:** Always keep a record of your negotiations, including the values you paid before and after the negotiation, to help monitor your [savings](/en/posts/financial-education-for-children).
+Now that you know how to negotiate discounts on fixed bills, it's time to start [saving](/en/posts/criar-reserva-de-emergencia) [money](/en/posts/30-day-rule-for-purchases). Remember that negotiation is a skill that can be developed with practice, so don't be afraid to try. **Practical tip:** Always keep a record of your negotiations, including the values you paid before and after the negotiation, to help monitor your [savings](/en/posts/financial-education-for-children).
 
 ![Exemplos de Negociação](/images/posts/negociar-descontos-em-contas-fixas-4.svg)
 

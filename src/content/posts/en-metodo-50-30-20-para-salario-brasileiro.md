@@ -23,7 +23,7 @@ The 50-30-20 method is a simple and effective approach to managing your finances
 | --- | --- | --- |
 | Essential Needs | 50% | 2,000.00 |
 | Desires and Leisure | 30% | 1,200.00 |
-| [Savings](/en/posts/smart-cashback) and [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-week-4-may-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) | 20% | 800.00 |
+| [Savings](/en/posts/smart-cashback) and [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-week-4-may-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) | 20% | 800.00 |
 
 ## Allocating Essential Needs
 Essential needs include expenses such as rent, water, electricity, internet, food, and transportation. It's essential to identify what your essential needs are and allocate 50% of your salary to these expenses. For example, if you earn R$ 4,000.00 per month, you should allocate R$ 2,000.00 for essential needs.
@@ -55,7 +55,7 @@ The savings and [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-
 
 
 ## Adjusting the 50-30-20 Method
-The 50-30-20 method is a flexible approach and can be adjusted according to individual needs. For example, if you have a high-value debt, you can allocate more than 20% of your salary to debt repayment. Or, if you're saving for a specific goal, such as buying a house, you can allocate more than 20% of your salary to savings.
+The 50-30-20 method is a flexible approach and can be adjusted according to individual needs. For example, if you have a high-value debt, you can allocate more than 20% of your salary to debt repayment. Or, if you're [saving](/en/posts/criar-reserva-de-emergencia) for a specific goal, such as buying a house, you can allocate more than 20% of your salary to savings.
 
 ## Start with 5 minutes a day
 Start applying the 50-30-20 method today. Reserve 5 minutes a day to review your finances and adjust your [budget](/en/posts/50-30-20-rule-complete-guide). Over time, you'll become more aware of your expenses and more efficient in managing your finances.

@@ -40,7 +40,7 @@ Once you've identified your triggers, it's time to create an action plan to avoi
 * Setting a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) for unnecessary purchases
 * Creating a shopping list before going to the supermarket or store
 * Avoiding buying things you don't need
-* Finding ways to have fun without spending [money](/en/posts/difference-between-investing-and-saving)
+* Finding ways to have fun without spending [money](/en/posts/difference-between-investing-and-[saving](/en/posts/criar-reserva-de-emergencia))
 
 For example, if you like to read, instead of buying books, you can go to the library or download reading apps that offer free books. If you like to cook, instead of buying expensive ingredients, you can look for recipes that use more affordable ingredients.
 

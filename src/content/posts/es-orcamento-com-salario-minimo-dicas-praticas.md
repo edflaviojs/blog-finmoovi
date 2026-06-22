@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Creando un Orçamento Realista
-Para crear un orçamento eficaz con salário mínimo, es crucial entender que no se trata de cortar todos los gastos, sino de gestionar sus recursos de forma inteligente. Vamos considerar un ejemplo con un salário de R$ 2.400,00, que es un poco más del salário mínimo en Brasil.
+Para crear un orçamento eficaz con salário mínimo, es crucial entender que no se trata de cortar todos los [gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro), sino de gestionar sus recursos de forma inteligente. Vamos considerar un ejemplo con un salário de R$ 2.400,00, que es un poco más del salário mínimo en Brasil.
 
 Una regla general para dividir su orçamento es la siguiente:
 | Categoría | Porcentaje del Salário |
@@ -69,4 +69,4 @@ Gestionar sus finanzas no necesita ser una tarea sobrehumana. Comience dedicando
 
 
 
-**¿Quiere automatizar este control? [Pruebe FinMoovi gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quiere automatizar este control? [Pruebe [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

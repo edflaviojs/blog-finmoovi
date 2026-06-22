@@ -29,7 +29,7 @@ When you're a freelancer, it's easy to get lost in managing your [money](/en/pos
 - Emergency reserve: 10% of your monthly earnings (R$ 500)
 - [Investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-): 5% of your monthly earnings (R$ 250)
 
-## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-week-4-may-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) and [Savings](/en/posts/financial-education-for-children)
+## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-week-4-may-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) and [Savings](/en/posts/financial-education-for-children)
 As a freelancer, it's essential to think about the future and make [investments](/en/posts/cdb-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) that can guarantee a stable income. There are many [investment](/en/posts/tesouro-direto-para-iniciantes) options available, from [stocks](/en/glossario/en-acoes) and bonds to [investment](/en/posts/montando-carteira-diversificada-com-r-500) funds and real estate. However, it's essential to remember that [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) always involve risks, and it's crucial to do careful research before investing.
 
 ![Gestão de Gastos](/images/posts/organizar-financas-autonomo-1.svg)
@@ -39,7 +39,7 @@ As a freelancer, it's essential to think about the future and make [investments]
 **Practical tip:** Start by investing in a [savings account](/en/glossario/en-poupanca) or a low-risk investment fund. This will help ensure you have a reserve of [money](/en/posts/save-on-your-market-bill) for the future without taking unnecessary risks.
 
 ## Cash Flow Control
-Cash flow control is fundamental for freelancers. Without a fixed salary, it's easy to get lost in managing your [money](/en/posts/saving-[money](/en/posts/saving-on-your-energy-bill)-on-supermarket-shopping) and end up with cash flow problems. To avoid this, it's essential to create a cash flow control plan. Here are some tips:
+Cash flow control is fundamental for freelancers. Without a fixed salary, it's easy to get lost in managing your [money](/en/posts/[saving](/en/posts/criar-reserva-de-emergencia)-[money](/en/posts/saving-on-your-energy-bill)-on-supermarket-shopping) and end up with cash flow problems. To avoid this, it's essential to create a cash flow control plan. Here are some tips:
 - Record all your expenses and income
 - Create a payment and income calendar
 - Regularly check your bank balance

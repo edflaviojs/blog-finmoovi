@@ -40,7 +40,7 @@ It's essential to monitor credit card expenses regularly. This can be done throu
 
 
 ## Start Today
-You don't need to be a finance expert to control credit card expenses. With a little discipline and [planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas), it's possible to avoid debt and save [money](/en/posts/difference-between-investing-and-saving). So, start today by monitoring your expenses and defining a [budget](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar). You can use a [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) app to help control your expenses and achieve your financial goals.
+You don't need to be a finance expert to control credit card expenses. With a little discipline and [planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas), it's possible to avoid debt and save [money](/en/posts/difference-between-investing-and-[saving](/en/posts/criar-reserva-de-emergencia)). So, start today by monitoring your expenses and defining a [budget](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar). You can use a [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) app to help control your expenses and achieve your financial goals.
 
 ![Start Today](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-6.webp)
 
