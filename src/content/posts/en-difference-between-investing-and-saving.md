@@ -33,7 +33,7 @@ On the other hand, saving is generally safer, but the returns are lower. In a sa
 ## [Financial Planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
 To decide whether you should invest or save, it's essential to have a clear financial plan. This includes defining your financial goals, such as buying a house, paying off debts, or retiring comfortably. Additionally, it's crucial to understand your risk profile and your ability to tolerate losses.
 
-**Practical tip:** Before investing, make sure you have an [emergency fund](/en/glossario/en-reserva-de-emergencia) equivalent to at least 3-6 months of expenses. This will help protect you from unexpected losses and ensure that you have enough money to cover your basic expenses.
+**Practical tip:** Before investing, make sure you have an [emergency fund](/en/glossario/en-reserva-de-emergencia) equivalent to at least 3-6 months of [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro). This will help protect you from unexpected losses and ensure that you have enough money to cover your basic expenses.
 
 ## Investment Strategies
 If you decide to invest, it's essential to have a clear strategy. This can include diversifying your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce), i.e., spreading your money across different types of assets to reduce risk. Additionally, it's crucial to be aware of the fees and costs associated with investments, as they can eat into your returns.
@@ -57,4 +57,4 @@ Now that you understand the difference between investing and saving, it's time t
 
 
 ---
-**Ready to organize your finances? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to organize your finances? [Try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

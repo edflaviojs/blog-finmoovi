@@ -37,7 +37,7 @@ Con base en esta división, para un salário de R$ 2.400,00:
 - Salud y Bienestar: R$ 240,00
 - Educación y Desarrollo: R$ 120,00
 - Ocio y Entretenimiento: R$ 120,00
-- Ahorro y Emergencia: R$ 240,00
+- [Ahorro](/es/posts/negociar-descuentos-en-cuentas-fijas) y Emergencia: R$ 240,00
 
 ## Priorizando Necesidades
 Es importante priorizar necesidades sobre deseos. **Consejo práctico:** Haga una lista de todo lo que gasta en un mes e identifique dónde puede cortar gastos superfluos. Por ejemplo, si gasta R$ 100,00 por semana en aperitivos y comidas fuera, intente reducir a R$ 50,00, ahorrando R$ 200,00 por mes.
@@ -52,7 +52,7 @@ Gastos variables, como transporte y alimentación fuera, pueden ser difíciles d
 
 
 
-## Construyendo un Ahorro
+## Construyendo un [Ahorro](/es/posts/regla-de-los-30-dias-para-compras)
 Construir un ahorro es esencial para lidiar con imprevistos y alcanzar objetivos financieros de largo plazo. Aquí están algunas etapas para empezar:
 1. Defina metas: Establezca metas específicas, como crear un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) o ahorrar para una compra importante.
 2. Automatice: Configure transferencias automáticas de su cuenta corriente a su cuenta de ahorro.

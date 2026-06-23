@@ -16,11 +16,11 @@ seo:
   keywords: ["how to build an emergency fund","personal finance","saving","money"]
 ---
 
-## Financial Planning
+## [Financial Planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
 When we think about [personal finance](/en/posts/30-day-rule-for-purchases), one of the first things that comes to mind is the importance of having an [emergency fund](/en/glossario/en-reserva-de-emergencia). This is because unexpected events can arise at any time in our daily lives, such as an unforeseen bill or job loss. An emergency fund serves as a financial cushion, allowing you to cover these expenses without having to resort to loans or compromise other financial goals. For example, if you earn $5,000 per month and have fixed expenses of $3,000, it's important to start saving a portion of that amount for a reserve.
 
 ## Identifying Expenses
-To create an emergency fund, it's essential to understand where your money is going. This means tracking all your expenses, from morning coffee to your electricity bill. A tip is to write down all expenses in a notebook or use a [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) app to get a clear view of your financial situation. **Practical tip:** Use an app like FinMoovi to record your expenses and have more precise control of your finances. This way, you can identify areas where you can cut spending and redirect that money to your emergency fund.
+To create an emergency fund, it's essential to understand where your [money](/en/posts/avoid-impulse-purchases) is going. This means tracking all your expenses, from morning coffee to your electricity bill. A tip is to write down all expenses in a notebook or use a [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) app to get a clear view of your financial situation. **Practical tip:** Use an app like FinMoovi to record your expenses and have more precise control of your finances. This way, you can identify areas where you can cut spending and redirect that money to your emergency fund.
 
 ## Setting Goals
 Once you have a clear idea of your expenses and income, it's time to set goals for your emergency fund. Generally, it's recommended to have between 3 to 6 months of expenses covered by this reserve. For example, if your monthly expenses are $3,000, your goal could be to save between $9,000 and $18,000. This may seem like a high amount, but starting with smaller goals and gradually increasing them can make the process more manageable. Additionally, it's important to remember that this reserve is not for impulsive purchases or to finance non-essential projects, but rather to protect your financial well-being in times of need.

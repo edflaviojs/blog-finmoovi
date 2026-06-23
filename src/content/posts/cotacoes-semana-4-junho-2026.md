@@ -30,7 +30,7 @@ A taxa de câmbio entre o real brasileiro e as principais moedas estrangeiras fo
 
 ## Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
 
-A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator chave para os investidores. Embora não tenha havido alterações significativas na taxa durante a semana, a expectativa é de que o Banco Central continue a monitorar a [inflação](/glossario/inflacao) e ajuste as taxas de juros conforme necessário. Isso pode afetar diretamente os rendimentos de investimentos como CDBs, [LCI e LCA](/glossario/lci-e-lca), tornando essencial para os investidores pessoa física estar atentos às mudanças nas taxas de juros e ajustar suas estratégias de investimento de acordo.
+A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator chave para os investidores. Embora não tenha havido alterações significativas na taxa durante a semana, a expectativa é de que o Banco Central continue a monitorar a [inflação](/glossario/inflacao) e ajuste as taxas de juros conforme necessário. Isso pode afetar diretamente os rendimentos de investimentos como CDBs, [LCI e LCA](/glossario/lci-e-lca), tornando essencial para os investidores pessoa física estar atentos às mudanças nas taxas de juros e ajustar suas estratégias de [investimento](/posts/montando-carteira-diversificada-com-r-500) de acordo.
 
 ![Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-4-junho-2026-inline-3.webp)
 
@@ -38,7 +38,7 @@ A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas
 
 ## Dica Prática para o Investidor Pessoa Física
 
-Uma dica valiosa para os investidores é diversificar seus investimentos, considerando não apenas ativos em real, mas também em outras moedas. Com o FinMoovi, é possível acompanhar facilmente seus investimentos em múltiplas moedas, o que pode ajudar a mitigar riscos e aproveitar oportunidades de crescimento. Além disso, é fundamental manter uma [reserva de emergência](/glossario/reserva-de-emergencia) para lidar com imprevistos e manter a tranquilidade financeira.
+Uma dica valiosa para os investidores é diversificar seus investimentos, considerando não apenas ativos em real, mas também em outras moedas. Com o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), é possível acompanhar facilmente seus investimentos em múltiplas moedas, o que pode ajudar a mitigar riscos e aproveitar oportunidades de crescimento. Além disso, é fundamental manter uma [reserva de emergência](/glossario/reserva-de-emergencia) para lidar com imprevistos e manter a tranquilidade financeira.
 
 ## O que Esperar para a Próxima Semana
 
