@@ -16,5 +16,77 @@
     "target": "https://schema.org",
     "status": "no-endpoint",
     "sentAt": "2026-06-22T20:18:25.339Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/negotiating-discounts-on-fixed-bills/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:54.620Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/negotiating-discounts-on-fixed-bills/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:54.956Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/revisao-de-orcamento/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:55.183Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/revisao-de-orcamento/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:55.197Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/negociar-descuentos-en-cuentas-fijas/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:55.212Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/negociar-descuentos-en-cuentas-fijas/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:55.356Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/revisao-de-orcamento/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:55.501Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/revisao-de-orcamento/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:55.514Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/negociar-descontos-em-contas-fixas/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:55.525Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/negociar-descontos-em-contas-fixas/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:55.672Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/revisao-de-orcamento/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:55.827Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/revisao-de-orcamento/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-23T16:27:55.838Z"
   }
 ]
