@@ -30,7 +30,7 @@ A taxa de câmbio entre o real brasileiro e as principais moedas estrangeiras fo
 
 ## Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
 
-A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator chave para os investidores. Embora não tenha havido alterações significativas na taxa durante a semana, a expectativa é de que o Banco Central continue a monitorar a [inflação](/glossario/inflacao) e ajuste as taxas de juros conforme necessário. Isso pode afetar diretamente os rendimentos de investimentos como CDBs, [LCI e LCA](/glossario/lci-e-lca), tornando essencial para os investidores pessoa física estar atentos às mudanças nas taxas de juros e ajustar suas estratégias de [investimento](/posts/montando-carteira-diversificada-com-r-500) de acordo.
+A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator chave para os investidores. Embora não tenha havido alterações significativas na taxa durante a semana, a expectativa é de que o Banco Central continue a monitorar a [inflação](/glossario/inflacao) e ajuste as taxas de juros conforme necessário. Isso pode afetar diretamente os rendimentos de [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) como CDBs, [LCI e LCA](/glossario/lci-e-lca), tornando essencial para os investidores pessoa física estar atentos às mudanças nas taxas de juros e ajustar suas estratégias de [investimento](/posts/montando-carteira-diversificada-com-r-500) de acordo.
 
 ![Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-4-junho-2026-inline-3.webp)
 
@@ -42,7 +42,7 @@ Uma dica valiosa para os investidores é diversificar seus investimentos, consid
 
 ## O que Esperar para a Próxima Semana
 
-Para a próxima semana, é importante manter o foco nas decisões do Banco Central, especialmente em relação à Selic, e nos movimentos das taxas de câmbio. Além disso, os investidores devem estar atentos às notícias econômicas globais, que podem influenciar o mercado financeiro brasileiro. Com o FinMoovi, você pode ficar por dentro das últimas tendências e ajustar sua estratégia de investimento de acordo com as mudanças no mercado.
+Para a próxima semana, é importante manter o foco nas decisões do Banco Central, especialmente em relação à Selic, e nos movimentos das taxas de câmbio. Além disso, os investidores devem estar atentos às notícias econômicas globais, que podem influenciar o mercado financeiro brasileiro. Com o FinMoovi, você pode ficar por dentro das últimas tendências e ajustar sua estratégia de [investimento](/posts/tesouro-direto-para-iniciantes) de acordo com as mudanças no mercado.
 
 Em resumo, a semana foi marcada por estabilidade no [dólar](/posts/cotacoes-semana-4-maio-2026) e valorização do euro em relação ao real, enquanto a Selic continua a ser um fator importante para os investimentos. A [diversificação](/glossario/diversificacao) e o acompanhamento constante do mercado são chaves para o sucesso dos investidores pessoa física. Com as ferramentas certas, como o FinMoovi, é possível navegar pelo mercado financeiro com mais confiança e alcançar seus objetivos financeiros.
 

@@ -19,10 +19,10 @@ translate: true
 ---
 
 ## Introduction
-We've reached the middle of the year, and it's time to stop and reflect on how our finances are doing. It's common to start the year with clear objectives and goals, but along the way, we can stray from the path. Reviewing your budget now is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals.
+We've reached the middle of the year, and it's time to stop and reflect on how our finances are doing. It's common to start the year with clear objectives and goals, but along the way, we can stray from the path. Reviewing your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) now is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals.
 
 ## Why Review Your Budget?
-Reviewing your budget is important because things change over time. Your salary may have increased, your expenses may have changed, or you may have acquired new financial responsibilities. Additionally, inflation may have affected the value of your money, making it necessary to adjust your spending and investments.
+Reviewing your budget is important because things change over time. Your salary may have increased, your expenses may have changed, or you may have acquired new financial responsibilities. Additionally, [inflation](/en/glossario/en-inflacao) may have affected the value of your [money](/en/posts/30-day-rule-for-purchases), making it necessary to adjust your spending and investments.
 
 For example, imagine you earn R$ 5,000 per month and spend R$ 2,000 on rent, R$ 1,000 on food, and R$ 500 on transportation. This leaves R$ 1,500 for other expenses and investments. However, if inflation has increased by 10% over the past 6 months, the value of your money has decreased. You'll need to adjust your spending and investments to maintain the same standard of living.
 
@@ -52,8 +52,8 @@ If you have investments, such as stocks or investment funds, check if they're st
 ## Tips to Keep Your Budget in Order
 Here are some tips to keep your budget in order:
 *   Prioritize your needs over your desires
-*   Create an emergency fund to cover unexpected expenses
-*   Invest in your financial education to make informed decisions
+*   Create an [emergency fund](/en/glossario/en-reserva-de-emergencia) to cover unexpected expenses
+*   Invest in your [financial education](/en/glossario/en-educacao-financeira) to make informed decisions
 *   Use a financial management app to help track your expenses and investments
 
 ![Tips to keep your budget in order](/images/posts/revisao-de-orcamento-4.webp)

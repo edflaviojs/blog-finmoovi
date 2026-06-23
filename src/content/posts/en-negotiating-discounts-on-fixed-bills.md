@@ -17,7 +17,7 @@ seo:
 ---
 
 ## [Economy](/en/posts/30-day-rule-for-purchases) in Fixed Bills
-When we think about saving money, we usually come up with the idea of cutting unnecessary expenses or increasing our income. However, there's a less conventional way to save: negotiating discounts on fixed bills. If you pay R$ 200 per month on water, electricity, and internet bills, a 10% discount can mean a savings of R$ 20 per month, which may not seem like much, but over the course of a year, that adds up to R$ 240.
+When we think about saving [money](/en/posts/avoid-impulse-purchases), we usually come up with the idea of cutting unnecessary expenses or increasing our income. However, there's a less conventional way to save: negotiating discounts on fixed bills. If you pay R$ 200 per month on water, electricity, and internet bills, a 10% discount can mean a savings of R$ 20 per month, which may not seem like much, but over the course of a year, that adds up to R$ 240.
 
 ## Identifying Discount Opportunities
 To start negotiating discounts, it's essential to identify which fixed bills have potential for savings. These are usually the bills that have a significant price variation or are offered by multiple providers. For example, if you pay R$ 150 per month on your internet bill, it's worth researching other providers to see if they offer a similar plan at a lower price. **Practical tip:** make a list of all your fixed bills and their respective values to have a clear view of where there may be room for negotiation.
@@ -40,7 +40,7 @@ One of the main challenges when negotiating discounts is knowing where to start.
 
 
 ## Start Today
-The key to saving money by negotiating discounts on fixed bills is taking action. Don't wait until your budget is tight to start looking for ways to save. With small changes and a proactive approach, you can start to see a significant difference in your bank balance. Remember that every Real saved is a step towards your financial stability. 
+The key to saving money by negotiating discounts on fixed bills is taking action. Don't wait until your [budget](/en/posts/50-30-20-rule-complete-guide) is tight to start looking for ways to save. With small changes and a proactive approach, you can start to see a significant difference in your bank balance. Remember that every Real saved is a step towards your financial stability. 
 
 ![Comece hoje](/images/posts/negociar-descontos-em-contas-fixas-6.webp)
 

@@ -37,7 +37,7 @@ Based on this division, for a salary of R$ 2,400.00:
 - Health and Wellness: R$ 240.00
 - Education and Development: R$ 120.00
 - Leisure and Entertainment: R$ 120.00
-- Savings and Emergency: R$ 240.00
+- [Savings](/en/posts/smart-cashback) and Emergency: R$ 240.00
 
 ## Prioritizing Needs
 It's essential to prioritize needs over desires. **Practical tip:** Make a list of everything you spend in a month and identify where you can cut unnecessary expenses. For example, if you spend R$ 100.00 per week on snacks and meals out, try reducing it to R$ 50.00, [saving](/en/posts/criar-reserva-de-emergencia) R$ 200.00 per month.
@@ -69,4 +69,4 @@ Managing your finances doesn't have to be a superhuman task. Start by dedicating
 
 
 
-**Want to automate this control? [Test FinMoovi for free for 7 days](https://finmoovi.com) — it automatically categorizes expenses and generates reports with no effort.**
+**Want to automate this control? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) — it automatically categorizes expenses and generates reports with no effort.**
