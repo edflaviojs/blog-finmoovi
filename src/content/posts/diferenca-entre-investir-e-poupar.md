@@ -36,7 +36,7 @@ Para decidir se você deve investir ou poupar, é importante ter um plano financ
 **Dica prática:** Antes de investir, certifique-se de que você tem uma [reserva de emergência](/glossario/reserva-de-emergencia) equivalente a pelo menos 3-6 meses de despesas. Isso ajudará a proteger você de perdas inesperadas e garantir que você tenha [dinheiro](/posts/economizar-nas-compras-do-supermercado) suficiente para cobrir suas despesas básicas.
 
 ## Estratégias de Investimento
-Se você decidir investir, é importante ter uma estratégia clara. Isso pode incluir diversificar seus [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-e-melhor-para-voce), ou seja, espalhar seu dinheiro em diferentes tipos de ativos para reduzir o risco. Além disso, é fundamental estar ciente das taxas e custos associados aos [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-junho-2026)-qual-e-melhor-para-voce), pois eles podem comer uma parte significativa de seus retornos.
+Se você decidir investir, é importante ter uma estratégia clara. Isso pode incluir diversificar seus [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-e-melhor-para-voce), ou seja, espalhar seu [dinheiro](/posts/economize-na-conta-de-energia) em diferentes tipos de ativos para reduzir o risco. Além disso, é fundamental estar ciente das taxas e custos associados aos [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-junho-2026)-qual-e-melhor-para-voce), pois eles podem comer uma parte significativa de seus retornos.
 
 Outra estratégia é começar a investir pequeno e aumentar gradualmente. Por exemplo, se você está começando a investir, você pode começar com R$ 500 por mês e aumentar para R$ 1.000 ou mais à medida que você se torna mais confortável com o processo.
 
@@ -57,4 +57,4 @@ Agora que você entende a diferença entre investir e poupar, é hora de começa
 
 
 ---
-**Pronto para organizar suas finanças? [Experimente o FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.**
+**Pronto para organizar suas finanças? [Experimente o FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/economize-na-conta-do-mercado).**

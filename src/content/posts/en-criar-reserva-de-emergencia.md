@@ -28,7 +28,7 @@ Once you have a clear idea of your expenses and income, it's time to set goals f
 ![Identifying Expenses](/images/posts/criar-reserva-de-emergencia-2.webp)
 
 ## Saving Strategies
-Now that you have a goal, it's time to start saving. An effective strategy is the 50/30/20 rule: 50% of your income for essential expenses, 30% for wants, and 20% for savings and debts. If you earn $5,000, this means $2,500 should go to essential expenses, $1,500 for wants, and $1,000 for savings. **Practical tip:** Set up an automatic transfer from your checking account to your savings or investment account on the day you receive your salary, to ensure you're saving before spending. Additionally, consider opening a specific savings account for your emergency fund, to keep these funds separate from your daily spending [money](/en/posts/difference-between-investing-and-saving).
+Now that you have a goal, it's time to start saving. An effective strategy is the 50/30/20 rule: 50% of your income for essential expenses, 30% for wants, and 20% for [savings](/en/posts/financial-education-for-children) and debts. If you earn $5,000, this means $2,500 should go to essential expenses, $1,500 for wants, and $1,000 for savings. **Practical tip:** Set up an automatic transfer from your checking account to your savings or investment account on the day you receive your salary, to ensure you're saving before spending. Additionally, consider opening a specific savings account for your emergency fund, to keep these funds separate from your daily spending [money](/en/posts/difference-between-investing-and-saving).
 
 ## Managing Your Reserve
 Once you have your emergency fund, it's important to manage it effectively. This means not only saving but also ensuring your funds are accessible when needed. One option is to keep your reserve in a high-[liquidity](/en/glossario/en-liquidez) account, such as a savings account or a short-term investment fund. Additionally, it's crucial to regularly review the size of your reserve and adjust it according to changes in your financial situation, such as a salary increase or new financial responsibilities.
@@ -41,4 +41,4 @@ Now that you have a clear idea of how to create and manage an emergency fund, it
 ![Start Today](/images/posts/criar-reserva-de-emergencia-6.webp)
 
 ---
-**The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover where your money is really going.**
+**The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/financial-planning-for-couples) is really going.**

@@ -22,7 +22,7 @@ translate: true
 Llegamos a la mitad del año, y es hora de parar y reflexionar sobre cómo están nuestras finanzas. Es común comenzar el año con objetivos y metas claras, pero a lo largo del camino, podemos desviarnos del rumbo. Revisar tu [presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) ahora es una excelente oportunidad para ajustar tus finanzas y garantizar que estás en el camino correcto para alcanzar tus objetivos.
 
 ## Por qué revisar el presupuesto
-Revisar tu presupuesto es importante porque las cosas cambian con el tiempo. Tu salario puede haber aumentado, tus gastos pueden haber cambiado, o puedes haber adquirido nuevas responsabilidades financieras. Además, la [inflación](/es/glossario/es-inflacao) puede haber afectado el valor de tu dinero, haciendo necesario ajustar tus gastos e inversiones.
+Revisar tu presupuesto es importante porque las cosas cambian con el tiempo. Tu salario puede haber aumentado, tus gastos pueden haber cambiado, o puedes haber adquirido nuevas responsabilidades financieras. Además, la [inflación](/es/glossario/es-inflacao) puede haber afectado el valor de tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia), haciendo necesario ajustar tus gastos e inversiones.
 
 Por ejemplo, imagina que ganas $5.000 por mes y gastas $2.000 en alquiler, $1.000 en comida y $500 en transporte. Esto te deja $1.500 para otros gastos e inversiones. Sin embargo, si la inflación aumentó un 10% en los últimos 6 meses, el valor de tu dinero disminuyó. Necesitarás ajustar tus gastos e inversiones para mantener el mismo nivel de vida.
 
@@ -41,13 +41,13 @@ Comienza verificando tus gastos de los últimos 6 meses. Esto incluye todos los 
 
 
 ### 2. Ajusta tus gastos
-Después de verificar tus gastos, ajústalos de acuerdo con tus necesidades y objetivos. Si notas que estás gastando mucho en una área, como restaurantes, intenta reducir esos gastos y reasignar el dinero a otras áreas, como ahorro o inversiones.
+Después de verificar tus gastos, ajústalos de acuerdo con tus necesidades y objetivos. Si notas que estás gastando mucho en una área, como restaurantes, intenta reducir esos gastos y reasignar el dinero a otras áreas, como [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) o inversiones.
 
 ### 3. Verifica tus ingresos
 Verifica tus ingresos de los últimos 6 meses y ajústalos de acuerdo con tus necesidades y objetivos. Si recibiste un aumento de salario, por ejemplo, puedes querer aumentar tus ahorros o inversiones.
 
 ### 4. Ajusta tus inversiones
-Si tienes inversiones, como acciones o fondos de inversión, verifica si aún están alineadas con tus objetivos y ajústalas de acuerdo. Puedes querer considerar invertir en [Tesouro Direto](https://www.tesourodireto.com.br) o otras inversiones de bajo riesgo.
+Si tienes inversiones, como [acciones](/es/glossario/es-acoes) o fondos de inversión, verifica si aún están alineadas con tus objetivos y ajústalas de acuerdo. Puedes querer considerar invertir en [Tesouro Direto](https://www.tesourodireto.com.br) o otras inversiones de bajo riesgo.
 
 ## [Consejos](/es/posts/7-errores-financieros-principiante) para mantener tu presupuesto en orden
 Aquí están algunos consejos para mantener tu presupuesto en orden:

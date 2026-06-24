@@ -21,7 +21,7 @@ translate: true
 ## Introduction
 We've reached the middle of the year, and it's time to stop and reflect on how our finances are doing. It's common to start the year with clear objectives and goals, but along the way, we can stray from the path. Reviewing your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) now is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals.
 
-## Why Review Your Budget?
+## Why Review Your [Budget](/en/posts/50-30-20-rule-complete-guide)?
 Reviewing your budget is important because things change over time. Your salary may have increased, your expenses may have changed, or you may have acquired new financial responsibilities. Additionally, [inflation](/en/glossario/en-inflacao) may have affected the value of your [money](/en/posts/30-day-rule-for-purchases), making it necessary to adjust your spending and investments.
 
 For example, imagine you earn R$ 5,000 per month and spend R$ 2,000 on rent, R$ 1,000 on food, and R$ 500 on transportation. This leaves R$ 1,500 for other expenses and investments. However, if inflation has increased by 10% over the past 6 months, the value of your money has decreased. You'll need to adjust your spending and investments to maintain the same standard of living.
@@ -47,7 +47,7 @@ After checking your expenses, adjust them according to your needs and goals. If 
 Check your income over the past 6 months and adjust it according to your needs and goals. If you've received a salary increase, for example, you may want to increase your savings or investments.
 
 ### 4. Adjust Your Investments
-If you have investments, such as stocks or investment funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.
+If you have investments, such as [stocks](/en/glossario/en-acoes) or investment funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.
 
 ## Tips to Keep Your Budget in Order
 Here are some tips to keep your budget in order:
@@ -61,4 +61,4 @@ Here are some tips to keep your budget in order:
 
 
 ## Conclusion
-Reviewing your budget mid-year is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals. Remember to check your expenses, adjust your spending and investments, and keep your budget in order. With a little discipline and planning, you can achieve your financial goals and live a more secure and prosperous life. For more information on financial planning, visit the [Banco Central do Brasil](https://www.bcb.gov.br) website.
+Reviewing your budget mid-year is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals. Remember to check your expenses, adjust your spending and investments, and keep your budget in order. With a little discipline and planning, you can achieve your financial goals and live a more secure and prosperous life. For more information on [financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), visit the [Banco Central do Brasil](https://www.bcb.gov.br) website.
