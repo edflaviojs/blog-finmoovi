@@ -29,8 +29,8 @@ Impulsive expenses are a significant problem for many people. It's easy to get c
 
 
 
-## Taking Advantage of Credit Card [Benefits](/en/posts/cdb-vs-tesouro-[selic](/en/posts/quotes-semana-1-june-2026)-qual-rende-mais-em-2026)
-The credit card can be a useful tool if used responsibly. Many credit cards offer benefits, such as points or cashback, that can be redeemed for rewards or discounts. **Practical tip:** choose a credit card that offers benefits that are relevant to you. For example, if you like to travel, you may choose a credit card that offers points that can be redeemed for airline tickets.
+## Taking Advantage of Credit Card [Benefits](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-qual-rende-mais-em-2026)
+The credit card can be a useful tool if used responsibly. Many credit cards offer [benefits](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), such as points or cashback, that can be redeemed for rewards or discounts. **Practical tip:** choose a credit card that offers benefits that are relevant to you. For example, if you like to travel, you may choose a credit card that offers points that can be redeemed for airline tickets.
 
 ## Monitoring Expenses
 It's essential to monitor credit card expenses regularly. This can be done through the credit card statement or [personal finance](/en/posts/30-day-rule-for-purchases) apps. **Practical tip:** set up alerts when you exceed a certain expense limit. Additionally, it's essential to review monthly expenses and adjust the [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) if necessary.

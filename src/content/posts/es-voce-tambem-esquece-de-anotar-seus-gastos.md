@@ -29,7 +29,7 @@ Además, la falta de [organización financiera](/es/posts/migrando-da-planilha-p
 
 
 ## La Solución: FinMoovi
-Pero no te preocupes, existe una solución para este problema. El FinMoovi es un aplicativo de [finanzas personales](/es/posts/ahorrando-en-la-cuenta-de-energia) que ayuda a organizar y controlar tus finanzas de forma fácil y eficiente. Con el FinMoovi, puedes registrar tus gastos de forma rápida y fácil, gracias a la funcionalidad de Smart Capture por voz y OCR. Basta tomar una foto del recibo o decir el valor y la categoría de la compra, y el aplicativo hará el resto.
+Pero no te preocupes, existe una solución para este problema. El FinMoovi es un aplicativo de [finanzas personales](/es/posts/ahorrando-en-la-cuenta-de-energia) que ayuda a organizar y controlar tus finanzas de forma fácil y eficiente. Con el FinMoovi, puedes registrar tus gastos de forma rápida y fácil, gracias a la funcionalidad de Smart Capture por voz y OCR. Basta tomar una foto del recibo o decir el [valor](/es/glossario/es-valor) y la categoría de la compra, y el aplicativo hará el resto.
 
 Además, el FinMoovi también ofrece [categorización automática](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), lo que facilita aún más el proceso de organización de tus finanzas. Puedes acceder al FinMoovi en [https://finmoovi.com](https://finmoovi.com) y comenzar a organizar tus finanzas de forma más eficiente.
 

@@ -16,14 +16,14 @@ seo:
   keywords: ["CDB","Treasury Selic","investments","fixed income","risks","benefits","cdb vs treasury selic","which yields more","fixed income comparison"]
 ---
 
-## Introduction to CDB and Treasury [Selic](/en/glossario/en-selic)
+## Introduction to [CDB](/en/glossario/en-cdb) and Treasury [Selic](/en/glossario/en-selic)
 When it comes to investing, it's essential to understand the available options and how they can fit your investor profile. Two of the most popular investments in Brazil are CDB (Certificate of Bank Deposit) and [Treasury Selic](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce). But, after all, which one yields more in 2026? To understand this, let's dive into the details of each.
 
 ### What is CDB?
-CDB is a type of fixed-income investment offered by banks and financial institutions. It works like a loan you make to the bank, and in return, the bank pays an interest rate. CDB can be pre-fixed, post-fixed, or hybrid, each with its own way of calculating interest.
+CDB is a type of fixed-income [investment](/en/posts/montando-carteira-diversificada-com-r-500) offered by banks and financial institutions. It works like a loan you make to the bank, and in return, the bank pays an interest rate. CDB can be pre-fixed, post-fixed, or hybrid, each with its own way of calculating interest.
 
 ### What is Treasury Selic?
-Treasury Selic, on the other hand, is a fixed-income investment issued by the National Treasury, with a guarantee from the Brazilian government. It is indexed to the Selic rate, which is the basic interest rate of the [economy](/en/posts/30-day-rule-for-purchases) defined by the Central Bank of Brazil. This means that the yield of Treasury Selic follows the variations of the Selic rate.
+Treasury Selic, on the other hand, is a fixed-income investment issued by the National Treasury, with a guarantee from the Brazilian government. It is indexed to the Selic rate, which is the basic interest rate of the [economy](/en/posts/30-day-rule-for-purchases) defined by the Central Bank of Brazil. This means that the [yield](/en/glossario/en-yield) of Treasury Selic follows the variations of the Selic rate.
 
 ## Yields and Simulations
 To better understand the yields, let's consider some examples. Suppose you have R$1,000 to invest and are deciding between a pre-fixed CDB with 10% per year and a Treasury Selic with the current Selic rate (suppose 6% per year).
@@ -61,4 +61,4 @@ Now that you have a better idea about CDB and Treasury Selic, it's time to condu
 
 
 
-To track your investments in one place, [try FinMoovi for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.
+To track your investments in one place, [try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.

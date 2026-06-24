@@ -29,8 +29,8 @@ Los gastos impulsivos son un gran problema para muchas personas. Es fácil dejar
 
 
 
-## Aprovechando los [Beneficios](/es/posts/cdb-vs-tesouro-[selic](/es/posts/cotizaciones-semana-1-junio-2026)-qual-rende-mais-em-2026) de la Tarjeta de Crédito
-La tarjeta de crédito puede ser una herramienta útil si se utiliza con responsabilidad. Muchas tarjetas de crédito ofrecen beneficios, como puntos o cashback, que pueden ser canjeados por premios o descuentos. **Consejo práctico:** elige una tarjeta de crédito que ofrezca beneficios que sean relevantes para ti. Por ejemplo, si te gusta viajar, puedes elegir una tarjeta de crédito que ofrezca puntos que puedan ser canjeados por pasajes aéreos.
+## Aprovechando los [Beneficios](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026)-qual-rende-mais-em-2026) de la Tarjeta de Crédito
+La tarjeta de crédito puede ser una herramienta útil si se utiliza con responsabilidad. Muchas tarjetas de crédito ofrecen [beneficios](/es/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), como puntos o cashback, que pueden ser canjeados por premios o descuentos. **Consejo práctico:** elige una tarjeta de crédito que ofrezca beneficios que sean relevantes para ti. Por ejemplo, si te gusta viajar, puedes elegir una tarjeta de crédito que ofrezca puntos que puedan ser canjeados por pasajes aéreos.
 
 ## Monitoreando los Gastos
 Es importante monitorear los gastos en la tarjeta de crédito regularmente. Esto puede hacerse a través del extracto de la tarjeta de crédito o de aplicaciones de [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). **Consejo práctico:** configura alertas para cuando superes un cierto límite de gastos. Además, es importante revisar los gastos mensuales y ajustar el [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)-personal) si es necesario.

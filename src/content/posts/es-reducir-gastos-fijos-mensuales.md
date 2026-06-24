@@ -20,7 +20,7 @@ seo:
 Gestionar eficazmente las [finanzas personales](/es/posts/7-errores-financieros-principiante) es fundamental para lograr la estabilidad financiera y garantizar un futuro seguro. Una de las principales áreas de atención es la reducción de los [gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro) fijos mensuales, que pueden consumir una gran parte de nuestros ingresos. En este artículo, exploraremos consejos prácticos y estrategias para reducir estos gastos y ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia).
 
 ## Entendiendo los Gastos Fijos
-Antes de comenzar a reducir los gastos fijos, es importante entender qué son. Los gastos fijos son costos regulares que ocurren todos los meses y que no varían mucho en valor. Ejemplos incluyen:
+Antes de comenzar a reducir los gastos fijos, es importante entender qué son. Los gastos fijos son costos regulares que ocurren todos los meses y que no varían mucho en [valor](/es/glossario/es-valor). Ejemplos incluyen:
 * Alquiler o hipoteca: R$ 2,500.00
 * Facturas de agua, luz y gas: R$ 150.00
 * Internet y teléfono: R$ 100.00

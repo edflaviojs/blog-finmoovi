@@ -35,8 +35,8 @@ Aqui está um exemplo de como você pode categorizar seus gastos:
 
 **Dica prática:** Tente reduzir seus gastos variáveis em 10% a 20% ao mês para aumentar sua [poupança](/glossario/poupanca).
 
-## Investimentos e Reserva de Emergência
-Além de economizar, é importante pensar em investimentos para o futuro. Isso pode incluir aplicar dinheiro em uma [conta poupança](https://www.bcb.gov.br) ou investir em [tesouro direto](https://www.tesourodireto.com.br). A reserva de emergência deve ser suficiente para cobrir 3 a 6 meses de despesas, caso você não tenha receita por um período.
+## [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e Reserva de Emergência
+Além de economizar, é importante pensar em [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para o futuro. Isso pode incluir aplicar dinheiro em uma [conta poupança](https://www.bcb.gov.br) ou investir em [tesouro direto](https://www.tesourodireto.com.br). A reserva de emergência deve ser suficiente para cobrir 3 a 6 meses de despesas, caso você não tenha receita por um período.
 
 Por exemplo, se seus gastos mensais são de R$ 3.500, você deve ter uma reserva de emergência de R$ 10.500 a R$ 21.000. Isso pode parecer muito, mas é importante para garantir que você possa pagar suas contas mesmo em meses ruins.
 

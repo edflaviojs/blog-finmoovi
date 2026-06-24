@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Planeamiento Básico
-Cuando eres autónomo, no tienes un salario fijo todos los meses. Esto significa que tu planeamiento financiero necesita ser más flexible y adaptable. Vamos a empezar con lo básico: registrar todos tus gastos y recibos. Esto puede hacerse con una aplicación de [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), como el FinMoovi, o incluso con un cuaderno. Lo importante es tener una visión clara de dónde está yendo tu dinero.
+Cuando eres autónomo, no tienes un salario fijo todos los meses. Esto significa que tu planeamiento financiero necesita ser más flexible y adaptable. Vamos a empezar con lo básico: registrar todos tus gastos y recibos. Esto puede hacerse con una aplicación de [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), como el FinMoovi, o incluso con un cuaderno. Lo importante es tener una visión clara de dónde está yendo tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado).
 
 Por ejemplo, si eres un profesional autónomo que gana alrededor de R$ 5.000 por mes, pero tienes meses en que ganas R$ 8.000 y otros en que ganas solo R$ 3.000, necesitas planificar tus gastos con base en el promedio de los últimos 6 meses. Además, es fundamental tener una reserva de emergencia para cubrir gastos inesperados.
 
@@ -27,7 +27,7 @@ Es importante distinguir entre gastos fijos y variables. Gastos fijos son aquell
 Aquí está un ejemplo de cómo puedes categorizar tus gastos:
 - Gastos fijos: R$ 2.000 (alquiler, cuenta de luz, internet, etc.)
 - Gastos variables: R$ 1.500 (comida fuera, entretenimiento, etc.)
-- Economía: R$ 1.000 (la mitad de lo que ganas por encima del promedio)
+- [Economía](/es/posts/ahorrando-en-la-cuenta-de-energia): R$ 1.000 (la mitad de lo que ganas por encima del promedio)
 
 ![Gastos Fijos y Variables](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
 

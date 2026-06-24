@@ -22,9 +22,9 @@ translate: true
 Llegamos a la mitad del año, y es hora de parar y reflexionar sobre cómo están nuestras finanzas. Es común comenzar el año con objetivos y metas claras, pero a lo largo del camino, podemos desviarnos del rumbo. Revisar tu [presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) ahora es una excelente oportunidad para ajustar tus finanzas y garantizar que estás en el camino correcto para alcanzar tus objetivos.
 
 ## Por qué revisar el presupuesto
-Revisar tu presupuesto es importante porque las cosas cambian con el tiempo. Tu salario puede haber aumentado, tus gastos pueden haber cambiado, o puedes haber adquirido nuevas responsabilidades financieras. Además, la [inflación](/es/glossario/es-inflacao) puede haber afectado el valor de tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia), haciendo necesario ajustar tus gastos e inversiones.
+Revisar tu presupuesto es importante porque las cosas cambian con el tiempo. Tu salario puede haber aumentado, tus gastos pueden haber cambiado, o puedes haber adquirido nuevas responsabilidades financieras. Además, la [inflación](/es/glossario/es-inflacao) puede haber afectado el [valor](/es/glossario/es-valor) de tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia), haciendo necesario ajustar tus gastos e [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce).
 
-Por ejemplo, imagina que ganas $5.000 por mes y gastas $2.000 en alquiler, $1.000 en comida y $500 en transporte. Esto te deja $1.500 para otros gastos e inversiones. Sin embargo, si la inflación aumentó un 10% en los últimos 6 meses, el valor de tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) disminuyó. Necesitarás ajustar tus gastos e inversiones para mantener el mismo nivel de vida.
+Por ejemplo, imagina que ganas $5.000 por mes y gastas $2.000 en alquiler, $1.000 en comida y $500 en transporte. Esto te deja $1.500 para otros gastos e [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Sin embargo, si la inflación aumentó un 10% en los últimos 6 meses, el valor de tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) disminuyó. Necesitarás ajustar tus gastos e inversiones para mantener el mismo nivel de vida.
 
 ![Por qué revisar el presupuesto](/images/posts/revisao-de-orcamento-2.svg)
 

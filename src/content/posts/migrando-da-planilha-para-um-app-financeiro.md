@@ -43,7 +43,7 @@ Um app financeiro pode ser uma boa opção para você se:
 De acordo com pesquisas, 70% das pessoas que usam planilhas desistem em 30 dias por falta de consistência. Isso ocorre porque as planilhas podem ser difíceis de manter atualizadas e consistentes, especialmente se você tiver uma vida ocupada.
 
 ## Exemplos de Apps Financeiros
-Existem muitos apps financeiros disponíveis no mercado, cada um com suas próprias características e [benefícios](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-rende-mais-em-2026). Alguns exemplos incluem:
+Existem muitos apps financeiros disponíveis no mercado, cada um com suas próprias características e [benefícios](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-rende-mais-em-2026). Alguns exemplos incluem:
 * [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas): um app financeiro moderno que permite que você gerencie suas finanças de forma eficaz e fácil.
 * Mobills: um app financeiro que permite que você gerencie suas contas e cartões de crédito de forma centralizada.
 * Organizze: um app financeiro que permite que você gerencie suas finanças e contas de forma personalizada.

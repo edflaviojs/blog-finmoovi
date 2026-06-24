@@ -19,7 +19,7 @@ seo:
 ## Introdução ao [Tesouro Direto](/glossario/tesouro-direto)
 O Tesouro Direto é um programa do governo brasileiro que permite aos cidadãos investir em títulos públicos, como LTN (Letras do Tesouro Nacional) e NTN (Notas do Tesouro Nacional). Esses títulos representam empréstimos feitos ao governo, que paga [juros](/glossario/juros) ao investidor. É uma forma de investir em [renda fixa](/glossario/renda-fixa), com retornos pré-definidos e baixo risco.
 
-Por exemplo, se você investir R$1.000 em um título LTN com prazo de 1 ano e juros de 5% ao ano, você receberá R$1.050 após o vencimento. Isso significa um retorno de R$50, ou 5% do valor investido.
+Por exemplo, se você investir R$1.000 em um título LTN com prazo de 1 ano e juros de 5% ao ano, você receberá R$1.050 após o vencimento. Isso significa um retorno de R$50, ou 5% do [valor](/glossario/valor) investido.
 
 ## Vantagens do Tesouro Direto
 Uma das principais vantagens do Tesouro Direto é a segurança. Como os títulos são emitidos pelo governo, o risco de default (ou inadimplência) é muito baixo. Além disso, os juros são pré-definidos, o que significa que você sabe exatamente quanto vai receber ao final do prazo.
@@ -40,7 +40,7 @@ Existem vários tipos de títulos disponíveis no Tesouro Direto, cada um com su
 Por exemplo, se você investir R$5.000 em um título LTN com prazo de 5 anos e juros de 6% ao ano, você receberá R$5.638,49 após o vencimento, considerando [juros compostos](/glossario/juros-compostos) anualmente.
 
 ## [Riscos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-junho-2026)-qual-rende-mais-em-2026)
-Embora o Tesouro Direto seja considerado um [investimento](/posts/montando-carteira-diversificada-com-r-500) de baixo risco, existem alguns riscos a considerar:
+Embora o Tesouro Direto seja considerado um [investimento](/posts/montando-carteira-diversificada-com-r-500) de baixo risco, existem alguns [riscos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-maio-2026)-qual-rende-mais-em-2026) a considerar:
 
 * Risco de inflação: se a inflação aumentar, o valor real do seu investimento pode diminuir.
 * Risco de liquidez: se você precisar resgatar seus títulos antes do vencimento, pode haver perda de juros.

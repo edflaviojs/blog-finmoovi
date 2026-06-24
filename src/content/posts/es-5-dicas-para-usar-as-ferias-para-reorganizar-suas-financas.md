@@ -28,7 +28,7 @@ Para comenzar a reorganizar tus finanzas, necesitas entender dónde está yendo 
 Ahora que tienes una idea clara de tus gastos, es hora de crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal). Aquí están algunas sugerencias para ayudarte a crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)-personal) eficaz:
 1. **Define tus objetivos financieros**: ¿Qué quieres alcanzar en términos financieros? ¿Quieres pagar una deuda, ahorrar para un viaje o comprar un inmueble?
 2. **Categoriza tus gastos**: Divide tus gastos en categorías, como vivienda, alimentación, transporte y entretenimiento.
-3. **Asigna valores**: Asigna un valor a cada categoría con base en tus gastos promedio.
+3. **Asigna valores**: Asigna un [valor](/es/glossario/es-valor) a cada categoría con base en tus gastos promedio.
 4. **Prioriza**: Prioriza tus necesidades en relación con tus deseos.
 5. **Revisa y ajusta**: Revisa tu [presupuesto](/es/posts/como-crear-presupuesto-personal) regularmente y ajusta según sea necesario.
 

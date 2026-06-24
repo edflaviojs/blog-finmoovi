@@ -22,7 +22,7 @@ Quando se trata de investir [dinheiro](/posts/cashback-inteligente), muitas pess
 
 ## Como funciona o CDB
 
-O CDB é um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) oferecido por bancos e instituições financeiras. Ele funciona como um empréstimo que você faz ao banco, e em troca, o banco paga um juro sobre o valor investido. O CDB pode ser de [liquidez](/glossario/liquidez) diária, semestral ou anual, dependendo do tipo de [investimento](/posts/tesouro-direto-para-iniciantes) escolhido. Além disso, o CDB pode ser tributado de acordo com a tabela de [imposto de renda](/glossario/imposto-de-renda), o que pode afetar o seu rendimento líquido.
+O CDB é um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) oferecido por bancos e instituições financeiras. Ele funciona como um empréstimo que você faz ao banco, e em troca, o banco paga um juro sobre o [valor](/glossario/valor) investido. O CDB pode ser de [liquidez](/glossario/liquidez) diária, semestral ou anual, dependendo do tipo de [investimento](/posts/tesouro-direto-para-iniciantes) escolhido. Além disso, o CDB pode ser tributado de acordo com a tabela de [imposto de renda](/glossario/imposto-de-renda), o que pode afetar o seu rendimento líquido.
 
 ![Como funciona o CDB](/images/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-e-melhor-para-voce-2.webp)
 

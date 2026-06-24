@@ -32,7 +32,7 @@ No entanto, pesquisas mostram que 70% das pessoas desistem de usar planilhas de 
 
 
 ## Quando um App de Finanças Faz Mais Sentido
-Um app de finanças pode ser uma solução mais eficaz para gerenciar seus gastos e [finanças pessoais](/posts/7-erros-financeiros-iniciante). Alguns dos principais [benefícios](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-rende-mais-em-2026) dos apps de finanças incluem:
+Um app de finanças pode ser uma solução mais eficaz para gerenciar seus gastos e [finanças pessoais](/posts/7-erros-financeiros-iniciante). Alguns dos principais [benefícios](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-rende-mais-em-2026) dos apps de finanças incluem:
 - **Consistência**: Os apps podem ajudá-lo a manter um registro consistente dos seus gastos, enviando lembretes e notificações para garantir que você não esqueça de registrar nada.
 - **Mobilidade**: Com um app, você pode registrar seus gastos a qualquer momento e em qualquer lugar, usando seu smartphone.
 - **Automação**: Muitos apps de finanças podem ser conectados às suas contas bancárias e cartões de crédito, permitindo que os gastos sejam registrados automaticamente.

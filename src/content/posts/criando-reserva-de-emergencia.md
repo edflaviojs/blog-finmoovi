@@ -19,7 +19,7 @@ seo:
 ## Entendendo a Importância
 Ter uma [reserva de emergência](/glossario/reserva-de-emergencia) é fundamental para qualquer pessoa que deseja ter estabilidade financeira. Imagine que você perde seu emprego ou precisa lidar com uma despesa inesperada, como uma reparação no carro ou uma conta médica alta. Sem uma reserva, você pode se ver obrigado a tomar decisões financeiras difíceis, como pedir empréstimos a [juros](/glossario/juros) altos ou vender bens preciosos. Com uma reserva de emergência, você tem um colchão financeiro que pode ajudá-lo a lidar com essas situações sem comprometer seu bem-estar.
 
-## Definindo o Valor da Reserva
+## Definindo o [Valor](/glossario/valor) da Reserva
 Um valor comum recomendado para uma reserva de emergência é de 3 a 6 meses de despesas. Isso significa que, se você gasta R$ 4.000 por mês, sua reserva deveria ter entre R$ 12.000 e R$ 24.000. No entanto, o valor exato depende de suas necessidades e objetivos. Se você tem uma fonte de renda estável e uma família pequena, pode ser suficiente ter uma reserva menor. Por outro lado, se você é o único provedor da família ou tem despesas altas, pode ser melhor ter uma reserva maior.
 
 ## Criando um Plano de [Economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas)

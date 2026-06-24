@@ -19,7 +19,7 @@ seo:
 ## Entendendo o [Método 50-30-20](/posts/metodo-50-30-20-para-orcamento)
 O método 50-30-20 é uma abordagem simples e eficaz para gerenciar suas finanças. A ideia é dividir seu salário em três categorias: necessidades essenciais (50%), desejos e lazer (30%) e [poupança](/glossario/poupanca) e [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) (20%). Vamos aplicar esse método a um salário brasileiro de R$ 4.000,00 por mês.
 
-| Categoria | Percentual | Valor (R$) |
+| Categoria | Percentual | [Valor](/glossario/valor) (R$) |
 | --- | --- | --- |
 | Necessidades Essenciais | 50% | 2.000,00 |
 | Desejos e Lazer | 30% | 1.200,00 |

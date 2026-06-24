@@ -26,7 +26,7 @@ O método 50-30-20 é uma estratégia simples e eficaz para gerenciar suas finan
 ### Exemplo Prático
 Vamos considerar um salário de R$ 4.000,00 por mês. Aplicando o método 50-30-20, teríamos:
 
-| Categoria | Percentual | Valor (R$) |
+| Categoria | Percentual | [Valor](/glossario/valor) (R$) |
 | --- | --- | --- |
 | Necessidades | 50% | 2.000,00 |
 | Desejos | 30% | 1.200,00 |
@@ -48,7 +48,7 @@ Para começar a aplicar o método 50-30-20, você precisa ter uma visão clara d
 A parte da [economia](/posts/criar-reserva-de-emergencia) é crucial para o seu futuro financeiro. Aqui, você pode considerar diferentes opções para aplicar seu [dinheiro](/posts/economizar-nas-compras-do-supermercado).
 
 - **Poupança:** Uma boa opção para começar a economizar, pois é de baixo risco e fácil acesso.
-- **[Investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-e-melhor-para-voce):** Existem várias opções de [investimento](/posts/tesouro-direto-para-iniciantes), como [ações](/glossario/acoes), fundos de [investimento](/posts/montando-carteira-diversificada-com-r-500), títulos de dívida, etc. É importante entender os [riscos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-junho-2026)-qual-rende-mais-em-2026) e benefícios de cada opção antes de investir.
+- **[Investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-e-melhor-para-voce):** Existem várias opções de [investimento](/posts/tesouro-direto-para-iniciantes), como [ações](/glossario/acoes), fundos de [investimento](/posts/montando-carteira-diversificada-com-r-500), títulos de dívida, etc. É importante entender os [riscos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-junho-2026)-qual-rende-mais-em-2026) e [benefícios](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-maio-2026)-qual-rende-mais-em-2026) de cada opção antes de investir.
 - **Pagamento de dívidas:** Se você tem dívidas com [juros](/glossario/juros) altos, pode ser uma boa ideia usar parte do seu [dinheiro](/posts/economize-na-conta-de-energia) para quitá-las.
 
 ![Economizando e Investindo](/images/posts/metodo-50-30-20-para-orcamento-3.webp)

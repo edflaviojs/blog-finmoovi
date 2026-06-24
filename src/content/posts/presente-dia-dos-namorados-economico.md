@@ -24,7 +24,7 @@ O Dia dos Namorados é uma data especial para casais e, muitas vezes, traz consi
 
 ## [Planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) e [Orçamento](/posts/como-criar-orcamento-pessoal)
 
-Antes de começar a procurar presentes, é essencial definir um [orçamento](/posts/regra-50-30-20-guia-completo). Saber quanto você pode gastar ajudará a tomar decisões mais conscientes. Vamos considerar um exemplo: João e Maria estão juntos há três anos e decidiram celebrar o Dia dos Namorados de forma especial. João ganha R$ 4.500 por mês, e Maria ganha R$ 3.800. Eles decidem reservar 5% de seus salários para o presente, o que dá um total de R$ 425. Com esse valor, eles podem planejar uma noite inesquecível.
+Antes de começar a procurar presentes, é essencial definir um [orçamento](/posts/regra-50-30-20-guia-completo). Saber quanto você pode gastar ajudará a tomar decisões mais conscientes. Vamos considerar um exemplo: João e Maria estão juntos há três anos e decidiram celebrar o Dia dos Namorados de forma especial. João ganha R$ 4.500 por mês, e Maria ganha R$ 3.800. Eles decidem reservar 5% de seus salários para o presente, o que dá um total de R$ 425. Com esse [valor](/glossario/valor), eles podem planejar uma noite inesquecível.
 
 ![Planejamento e Orçamento](/images/posts/presente-dia-dos-namorados-economico-2.webp)
 

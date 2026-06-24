@@ -28,7 +28,7 @@ Para começar a reorganizar suas finanças, você precisa entender onde seu [din
 Agora que você tem uma ideia clara de seus gastos, é hora de criar um [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar). Aqui estão algumas dicas para ajudá-lo a criar um [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) eficaz:
 1. **Defina seus objetivos financeiros**: O que você quer alcançar em termos financeiros? Quer pagar uma dívida, economizar para uma viagem ou comprar um imóvel?
 2. **Categorize seus gastos**: Divida seus gastos em categorias, como moradia, alimentação, transporte e entretenimento.
-3. **Atribua valores**: Atribua um valor para cada categoria com base em seus gastos médios.
+3. **Atribua valores**: Atribua um [valor](/glossario/valor) para cada categoria com base em seus gastos médios.
 4. **Priorize**: Priorize suas necessidades em relação aos seus desejos.
 5. **Revisite e ajuste**: Revisite seu orçamento regularmente e ajuste-o conforme necessário.
 
