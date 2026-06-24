@@ -29,7 +29,7 @@ Os gastos impulsivos são um grande problema para muitas pessoas. É fácil se d
 
 
 
-## Aproveitando os Benefícios do Cartão de Crédito
+## Aproveitando os [Benefícios](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-rende-mais-em-2026) do Cartão de Crédito
 O cartão de crédito pode ser uma ferramenta útil se usado com responsabilidade. Muitos cartões de crédito oferecem benefícios, como pontos ou cashback, que podem ser trocados por prêmios ou descontos. **Dica prática:** escolha um cartão de crédito que ofereça benefícios que sejam relevantes para você. Por exemplo, se você gosta de viajar, pode escolher um cartão de crédito que ofereça pontos que possam ser trocados por passagens aéreas.
 
 ## Monitorando os Gastos

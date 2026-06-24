@@ -24,7 +24,7 @@ Llegamos a la mitad del año, y es hora de parar y reflexionar sobre cómo está
 ## Por qué revisar el presupuesto
 Revisar tu presupuesto es importante porque las cosas cambian con el tiempo. Tu salario puede haber aumentado, tus gastos pueden haber cambiado, o puedes haber adquirido nuevas responsabilidades financieras. Además, la [inflación](/es/glossario/es-inflacao) puede haber afectado el valor de tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia), haciendo necesario ajustar tus gastos e inversiones.
 
-Por ejemplo, imagina que ganas $5.000 por mes y gastas $2.000 en alquiler, $1.000 en comida y $500 en transporte. Esto te deja $1.500 para otros gastos e inversiones. Sin embargo, si la inflación aumentó un 10% en los últimos 6 meses, el valor de tu dinero disminuyó. Necesitarás ajustar tus gastos e inversiones para mantener el mismo nivel de vida.
+Por ejemplo, imagina que ganas $5.000 por mes y gastas $2.000 en alquiler, $1.000 en comida y $500 en transporte. Esto te deja $1.500 para otros gastos e inversiones. Sin embargo, si la inflación aumentó un 10% en los últimos 6 meses, el valor de tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) disminuyó. Necesitarás ajustar tus gastos e inversiones para mantener el mismo nivel de vida.
 
 ![Por qué revisar el presupuesto](/images/posts/revisao-de-orcamento-2.svg)
 
@@ -41,7 +41,7 @@ Comienza verificando tus gastos de los últimos 6 meses. Esto incluye todos los 
 
 
 ### 2. Ajusta tus gastos
-Después de verificar tus gastos, ajústalos de acuerdo con tus necesidades y objetivos. Si notas que estás gastando mucho en una área, como restaurantes, intenta reducir esos gastos y reasignar el dinero a otras áreas, como [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) o inversiones.
+Después de verificar tus gastos, ajústalos de acuerdo con tus necesidades y objetivos. Si notas que estás gastando mucho en una área, como restaurantes, intenta reducir esos gastos y reasignar el [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado) a otras áreas, como [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) o inversiones.
 
 ### 3. Verifica tus ingresos
 Verifica tus ingresos de los últimos 6 meses y ajústalos de acuerdo con tus necesidades y objetivos. Si recibiste un aumento de salario, por ejemplo, puedes querer aumentar tus ahorros o inversiones.

@@ -39,7 +39,7 @@ There are several types of securities available in Tesouro Direto, each with its
 
 For example, if you invest R$5,000 in an LTN title with a 5-year term and 6% annual interest, you'll receive R$5,638.49 after maturity, considering annual [compound interest](/en/glossario/en-[juros](/en/glossario/en-juros)-compostos).
 
-## Risks
+## [Risks](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Although Tesouro Direto is considered a low-risk [investment](/en/posts/montando-carteira-diversificada-com-r-500), there are some risks to consider:
 
 * Inflation risk: if inflation increases, the real value of your investment may decrease.
@@ -65,7 +65,7 @@ Here's a table with the return simulation:
 ## Next Steps
 Now that you understand how Tesouro Direto works, it's time to evaluate if it makes sense for your investor profile. Consider your financial goals, investment term, and risk tolerance.
 
-If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) to minimize risks.
+If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) to minimize risks.
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 

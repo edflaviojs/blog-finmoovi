@@ -29,7 +29,7 @@ Los gastos impulsivos son un gran problema para muchas personas. Es fácil dejar
 
 
 
-## Aprovechando los Beneficios de la Tarjeta de Crédito
+## Aprovechando los [Beneficios](/es/posts/cdb-vs-tesouro-[selic](/es/posts/cotizaciones-semana-1-junio-2026)-qual-rende-mais-em-2026) de la Tarjeta de Crédito
 La tarjeta de crédito puede ser una herramienta útil si se utiliza con responsabilidad. Muchas tarjetas de crédito ofrecen beneficios, como puntos o cashback, que pueden ser canjeados por premios o descuentos. **Consejo práctico:** elige una tarjeta de crédito que ofrezca beneficios que sean relevantes para ti. Por ejemplo, si te gusta viajar, puedes elegir una tarjeta de crédito que ofrezca puntos que puedan ser canjeados por pasajes aéreos.
 
 ## Monitoreando los Gastos

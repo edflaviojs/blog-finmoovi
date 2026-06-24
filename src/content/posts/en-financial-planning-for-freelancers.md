@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Basic Planning
-When you're a freelancer, you don't have a fixed salary every month. This means your financial planning needs to be more flexible and adaptable. Let's start with the basics: recording all your expenses and income. This can be done with a [personal finance](/en/posts/30-day-rule-for-purchases) app, like FinMoovi, or even with a notebook. The important thing is to have a clear view of where your money is going.
+When you're a freelancer, you don't have a fixed salary every month. This means your [financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) needs to be more flexible and adaptable. Let's start with the basics: recording all your expenses and income. This can be done with a [personal finance](/en/posts/30-day-rule-for-purchases) app, like FinMoovi, or even with a notebook. The important thing is to have a clear view of where your money is going.
 
 For example, if you're a freelance professional who earns around $5,000 per month, but has months where you earn $8,000 and others where you earn only $3,000, you need to plan your expenses based on the average of the last 6 months. Additionally, it's essential to have an [emergency fund](/en/glossario/en-reserva-de-emergencia) to cover unexpected expenses.
 
@@ -50,7 +50,7 @@ Additionally, it's crucial to have an effective billing system to ensure you rec
 
 
 ## [Financial Education](/en/glossario/en-educacao-financeira)
-Financial education is essential for anyone, especially freelancers. This includes understanding basic financial concepts, such as interest, investments, and taxes. There are many resources available online, like [Investopedia](https://www.investopedia.com), that can help improve your financial knowledge.
+[Financial education](/en/posts/7-financial-mistakes-beginners) is essential for anyone, especially freelancers. This includes understanding basic financial concepts, such as interest, investments, and taxes. There are many resources available online, like [Investopedia](https://www.investopedia.com), that can help improve your financial knowledge.
 
 **Practical tip:** Set aside 1 hour per week to learn about [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and financial planning.
 

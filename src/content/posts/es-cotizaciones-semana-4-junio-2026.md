@@ -20,7 +20,7 @@ seo:
 
 La semana del 15 de junio al 22 de junio de 2026 ha sido de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, vamos a explorar los acontecimientos más destacados de la semana y ofrecer [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
 
-![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-4-mayo-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-4-junio-2026-inline-1.webp)
+![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-4-mayo-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-4-junio-2026-inline-1.webp)
 
 
 
@@ -38,7 +38,7 @@ La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/5-
 
 
 
-Es importante considerar que las decisiones sobre la tasa Selic tienen un impacto directo en las tasas de interés de los préstamos y depósitos, lo que a su vez afecta las inversiones en diferentes activos financieros. Los inversores deben estar atentos a estos cambios y ajustar sus estrategias de inversión según sea necesario.
+Es importante considerar que las decisiones sobre la tasa Selic tienen un impacto directo en las tasas de interés de los préstamos y depósitos, lo que a su vez afecta las [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en diferentes activos financieros. Los inversores deben estar atentos a estos cambios y ajustar sus estrategias de inversión según sea necesario.
 
 ## Consejo Práctico para el Inversor Individual
 

@@ -29,7 +29,7 @@ Impulsive expenses are a significant problem for many people. It's easy to get c
 
 
 
-## Taking Advantage of Credit Card Benefits
+## Taking Advantage of Credit Card [Benefits](/en/posts/cdb-vs-tesouro-[selic](/en/posts/quotes-semana-1-june-2026)-qual-rende-mais-em-2026)
 The credit card can be a useful tool if used responsibly. Many credit cards offer benefits, such as points or cashback, that can be redeemed for rewards or discounts. **Practical tip:** choose a credit card that offers benefits that are relevant to you. For example, if you like to travel, you may choose a credit card that offers points that can be redeemed for airline tickets.
 
 ## Monitoring Expenses

@@ -36,7 +36,7 @@ To decide whether you should invest or save, it's essential to have a clear fina
 **Practical tip:** Before investing, make sure you have an [emergency fund](/en/glossario/en-reserva-de-emergencia) equivalent to at least 3-6 months of [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro). This will help protect you from unexpected losses and ensure that you have enough [money](/en/posts/negotiating-discounts-on-fixed-bills) to cover your basic expenses.
 
 ## Investment Strategies
-If you decide to invest, it's essential to have a clear strategy. This can include diversifying your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce), i.e., spreading your [money](/en/posts/organizing-finances-as-a-freelancer) across different types of assets to reduce risk. Additionally, it's crucial to be aware of the fees and costs associated with investments, as they can eat into your returns.
+If you decide to invest, it's essential to have a clear strategy. This can include diversifying your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce), i.e., spreading your [money](/en/posts/organizing-finances-as-a-freelancer) across different types of assets to reduce risk. Additionally, it's crucial to be aware of the fees and costs associated with [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), as they can eat into your returns.
 
 Another strategy is to start investing small and gradually increase your investment. For example, if you're starting to invest, you can start with R$ 500 per month and increase to R$ 1,000 or more as you become more comfortable with the process.
 
@@ -57,4 +57,4 @@ Now that you understand the difference between investing and saving, it's time t
 
 
 ---
-**Ready to organize your finances? [Try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to organize your finances? [Try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/financial-planning-for-couples) is going.**

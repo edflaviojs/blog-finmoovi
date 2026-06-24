@@ -27,7 +27,7 @@ Por exemplo, se você é um profissional autônomo que ganha cerca de R$ 5.000 p
 Aqui está um exemplo de como você pode categorizar seus gastos:
 - Gastos fixos: R$ 2.000 (aluguel, conta de luz, internet, etc.)
 - Gastos variáveis: R$ 1.500 (alimentação fora, entretenimento, etc.)
-- Economia: R$ 1.000 (metade do que você ganha acima da média)
+- [Economia](/posts/cashback-inteligente): R$ 1.000 (metade do que você ganha acima da média)
 
 ![Gastos Fixos e Variáveis](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
 
@@ -50,7 +50,7 @@ Além disso, é fundamental ter um sistema de cobrança eficaz, para garantir qu
 
 
 ## [Educação Financeira](/glossario/educacao-financeira)
-Educação financeira é fundamental para qualquer pessoa, especialmente para autônomos. Isso inclui entender conceitos básicos de finanças, como juros, investimentos e impostos. Existem muitos recursos disponíveis online, como o [Investopedia](https://www.investopedia.com), que podem ajudar a melhorar seu conhecimento financeiro.
+[Educação financeira](/posts/7-erros-financeiros-iniciante) é fundamental para qualquer pessoa, especialmente para autônomos. Isso inclui entender conceitos básicos de finanças, como [juros](/glossario/juros), investimentos e impostos. Existem muitos recursos disponíveis online, como o [Investopedia](https://www.investopedia.com), que podem ajudar a melhorar seu conhecimento financeiro.
 
 **Dica prática:** Reserve 1 hora por semana para aprender sobre [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e planejamento financeiro.
 

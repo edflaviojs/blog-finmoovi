@@ -43,7 +43,7 @@ Investir sempre envolve riscos. O risco é a possibilidade de perder parte ou to
 
 
 ## Próximos passos
-Agora que você entendeu os conceitos básicos de investimento e [diversificação](/glossario/diversificacao), é hora de colocar esses conhecimentos em prática. Considere começar com pequenas quantias e aumentar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) à medida que você se torna mais confortável. Lembre-se de que a chave para o sucesso é a consistência e a paciência. Não tenha medo de buscar ajuda de um profissional financeiro se você não se sentir seguro para investir sozinho. Além disso, considere usar ferramentas como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) para ajudar a gerenciar seus investimentos de forma eficiente.
+Agora que você entendeu os conceitos básicos de investimento e [diversificação](/glossario/diversificacao), é hora de colocar esses conhecimentos em prática. Considere começar com pequenas quantias e aumentar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) à medida que você se torna mais confortável. Lembre-se de que a chave para o sucesso é a consistência e a paciência. Não tenha medo de buscar ajuda de um profissional financeiro se você não se sentir seguro para investir sozinho. Além disso, considere usar ferramentas como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) para ajudar a gerenciar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de forma eficiente.
 
 ![Próximos passos](/images/posts/montando-carteira-diversificada-com-r-500-6.webp)
 

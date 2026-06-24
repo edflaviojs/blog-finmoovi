@@ -30,7 +30,7 @@ A taxa Selic, atualmente em 12,25% ao ano, foi mantida pelo Comitê de Política
 
 ## Dica Prática para o Investidor
 
-Uma dica valiosa para os investidores pessoa física é diversificar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce), incluindo ativos em diferentes moedas. Com o [dólar](/posts/cotacoes-semana-4-junho-2026) e o euro estáveis, pode ser um bom momento para considerar investimentos em ativos internacionais, como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de [investimento](/posts/montando-carteira-diversificada-com-r-500) em dólares ou euros. Ferramentas como o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) podem ser muito úteis para acompanhar e gerenciar investimentos em múltiplas moedas, oferecendo uma visão clara e atualizada do seu portfólio.
+Uma dica valiosa para os investidores pessoa física é diversificar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce), incluindo ativos em diferentes moedas. Com o [dólar](/posts/cotacoes-semana-4-junho-2026) e o euro estáveis, pode ser um bom momento para considerar [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em ativos internacionais, como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de [investimento](/posts/montando-carteira-diversificada-com-r-500) em dólares ou euros. Ferramentas como o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) podem ser muito úteis para acompanhar e gerenciar investimentos em múltiplas moedas, oferecendo uma visão clara e atualizada do seu portfólio.
 
 ## O que Esperar para a Próxima Semana
 

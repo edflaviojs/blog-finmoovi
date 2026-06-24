@@ -52,7 +52,7 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-[gastos](/posts/metod
 
 **O erro:** Colocar [dinheiro](/posts/economize-na-conta-do-mercado) em algo porque "todo mundo está fazendo" (cripto, [ações](/glossario/acoes) da moda, etc).
 
-**A solução:** Antes de investir, monte sua reserva de emergência. Depois, comece pelo básico: [Tesouro Direto](/glossario/tesouro-direto) e CDBs. Só avance para [renda variável](/glossario/renda-variavel) quando entender os riscos.
+**A solução:** Antes de investir, monte sua reserva de emergência. Depois, comece pelo básico: [Tesouro Direto](/glossario/tesouro-direto) e CDBs. Só avance para [renda variável](/glossario/renda-variavel) quando entender os [riscos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-junho-2026)-qual-rende-mais-em-2026).
 
 ## 7. Não se pagar primeiro
 

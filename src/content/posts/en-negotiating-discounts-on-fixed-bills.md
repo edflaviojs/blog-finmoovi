@@ -33,14 +33,14 @@ Negotiating discounts is not just about asking for a lower price; it's about und
 To help you on your savings journey, there are several tools and resources available. The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information on how to manage your finances, including tips on how to negotiate with financial institutions. Additionally, the [Tesouro Direto](https://www.tesourodireto.com.br) can be an option to invest the saved [money](/en/posts/creating-an-emergency-fund), offering a safe way to grow your wealth over time.
 
 ## Challenges and Solutions
-One of the main challenges when negotiating discounts is knowing where to start. A practical approach is to start with the bills that have the greatest impact on your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). For example, if your electricity bill is the most expensive, start by negotiating a discount with the energy company. Another challenge is dealing with rejection. **Practical tip:** don't get discouraged by a no. Ask what's needed to get a discount and work on it. If the company can't offer a discount, ask about other benefits, such as free additional services.
+One of the main challenges when negotiating discounts is knowing where to start. A practical approach is to start with the bills that have the greatest impact on your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). For example, if your electricity bill is the most expensive, start by negotiating a discount with the energy company. Another challenge is dealing with rejection. **Practical tip:** don't get discouraged by a no. Ask what's needed to get a discount and work on it. If the company can't offer a discount, ask about other [benefits](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), such as free additional services.
 
 ![Ferramentas e Recursos](/images/posts/negociar-descontos-em-contas-fixas-4.webp)
 
 
 
 ## Start Today
-The key to saving money by negotiating discounts on fixed bills is taking action. Don't wait until your [budget](/en/posts/50-30-20-rule-complete-guide) is tight to start looking for ways to save. With small changes and a proactive approach, you can start to see a significant difference in your bank balance. Remember that every Real saved is a step towards your financial stability. 
+The key to saving [money](/en/posts/difference-between-investing-and-saving) by negotiating discounts on fixed bills is taking action. Don't wait until your [budget](/en/posts/50-30-20-rule-complete-guide) is tight to start looking for ways to save. With small changes and a proactive approach, you can start to see a significant difference in your bank balance. Remember that every Real saved is a step towards your financial stability. 
 
 ![Comece hoje](/images/posts/negociar-descontos-em-contas-fixas-6.webp)
 

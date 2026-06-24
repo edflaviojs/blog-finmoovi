@@ -33,7 +33,7 @@ Aquí está un ejemplo de cómo puedes categorizar tus gastos:
 
 
 
-**Consejo práctico:** Intenta reducir tus gastos variables en un 10% a 20% al mes para aumentar tu ahorro.
+**Consejo práctico:** Intenta reducir tus gastos variables en un 10% a 20% al mes para aumentar tu [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado).
 
 ## Inversiones y Reserva de Emergencia
 Además de ahorrar, es importante pensar en inversiones para el futuro. Esto puede incluir aplicar dinero en una [cuenta de ahorro](https://www.bcb.gov.br) o invertir en [tesoro directo](https://www.tesourodireto.com.br). La reserva de emergencia debe ser suficiente para cubrir 3 a 6 meses de gastos, en caso de que no tengas ingresos por un período.
@@ -50,7 +50,7 @@ Además, es fundamental tener un sistema de cobro eficaz, para garantizar que re
 
 
 ## [Educación Financiera](/es/glossario/es-educacao-financeira)
-La educación financiera es fundamental para cualquier persona, especialmente para autónomos. Esto incluye entender conceptos básicos de finanzas, como intereses, inversiones y impuestos. Existen muchos recursos disponibles en línea, como el [Investopedia](https://www.investopedia.com), que pueden ayudar a mejorar tu conocimiento financiero.
+La [educación financiera](/es/posts/7-errores-financieros-principiante) es fundamental para cualquier persona, especialmente para autónomos. Esto incluye entender conceptos básicos de finanzas, como intereses, inversiones y impuestos. Existen muchos recursos disponibles en línea, como el [Investopedia](https://www.investopedia.com), que pueden ayudar a mejorar tu conocimiento financiero.
 
 **Consejo práctico:** Reserva 1 hora a la semana para aprender sobre [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) y planeamiento financiero.
 
