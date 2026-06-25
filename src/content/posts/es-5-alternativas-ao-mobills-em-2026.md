@@ -30,7 +30,7 @@ Aquí te presentamos 5 alternativas al Mobills que puedes considerar:
 
 
 1. **Personal Capital**
-El Personal Capital es una aplicación de gestión financiera que ayuda a los usuarios a controlar sus gastos, crear presupuestos y invertir su dinero. Con el Personal Capital, puedes conectar tus cuentas bancarias y tarjetas de crédito para tener una visión general de tus finanzas.
+El Personal Capital es una aplicación de gestión financiera que ayuda a los usuarios a controlar sus gastos, crear presupuestos y invertir su [dinero](/es/posts/ahorra-en-las-compras-del-supermercado). Con el Personal Capital, puedes conectar tus cuentas bancarias y tarjetas de crédito para tener una visión general de tus finanzas.
 Pros:
 * Interfaz fácil de usar
 * Herramientas de inversión avanzadas
@@ -104,4 +104,4 @@ Aquí te presentamos una tabla comparativa de las 5 alternativas al Mobills:
 
 ## ¿Cuál elegir?
 La elección de la aplicación de gestión financiera correcta depende de tus necesidades y preferencias. Si eres un principiante, el Personal Capital o el Mint pueden ser buenas opciones. Si estás buscando recursos avanzados, el FinMoovi o el YNAB pueden ser mejores opciones. Si estás buscando una opción gratuita, el Spendee puede ser una buena elección.
-Recuerda que la gestión financiera es un proceso continuo y es importante encontrar una aplicación que se adapte a tus necesidades y estilo de vida. Puedes leer más sobre gestión financiera en [Investopedia](https://www.investopedia.com) o en [NerdWallet](https://www.nerdwallet.com). Además, es siempre una buena idea consultar el [Banco Central](https://www.bcb.gov.br) para obtener información sobre [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) y gestión de dinero.
+Recuerda que la gestión financiera es un proceso continuo y es importante encontrar una aplicación que se adapte a tus necesidades y estilo de vida. Puedes leer más sobre gestión financiera en [Investopedia](https://www.investopedia.com) o en [NerdWallet](https://www.nerdwallet.com). Además, es siempre una buena idea consultar el [Banco Central](https://www.bcb.gov.br) para obtener información sobre [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) y gestión de [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia).

@@ -35,7 +35,7 @@ O cartão de crédito pode ser uma ferramenta útil se usado com responsabilidad
 ## Monitorando os Gastos
 É importante monitorar os gastos no cartão de crédito regularmente. Isso pode ser feito através do extrato do cartão de crédito ou de [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). **Dica prática:** configure alertas para quando você ultrapassar um certo limite de gastos. Além disso, é importante rever os gastos mensais e ajustar o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) se necessário.
 
-![Aproveitando os [Benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) do Cartão de Crédito](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-4.webp)
+![Aproveitando os [Benefícios](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-maio-2026))-qual-rende-mais-em-2026) do Cartão de Crédito](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-4.webp)
 
 
 

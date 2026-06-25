@@ -27,7 +27,7 @@ It's crucial to distinguish between fixed and variable expenses. Fixed expenses 
 Here's an example of how you can categorize your expenses:
 - Fixed expenses: $2,000 (rent, electricity, internet, etc.)
 - Variable expenses: $1,500 (dining out, entertainment, etc.)
-- Savings: $1,000 (half of what you earn above average)
+- [Savings](/en/posts/financial-education-for-children): $1,000 (half of what you earn above average)
 
 ![Gastos Fixos e Variáveis](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
 
@@ -36,7 +36,7 @@ Here's an example of how you can categorize your expenses:
 **Practical tip:** Try to reduce your variable expenses by 10% to 20% per month to increase your savings.
 
 ## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and Emergency Fund
-In addition to saving, it's essential to think about [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) for the future. This can include putting [money](/en/posts/creating-an-emergency-fund) into a [savings account](https://www.bcb.gov.br) or investing in [treasury bonds](https://www.tesourodireto.com.br). The emergency fund should be sufficient to cover 3 to 6 months of expenses, in case you don't have income for a period.
+In addition to [saving](/en/posts/criar-reserva-de-emergencia), it's essential to think about [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) for the future. This can include putting [money](/en/posts/creating-an-emergency-fund) into a [savings account](https://www.bcb.gov.br) or investing in [treasury bonds](https://www.tesourodireto.com.br). The emergency fund should be sufficient to cover 3 to 6 months of expenses, in case you don't have income for a period.
 
 For example, if your monthly expenses are $3,500, you should have an emergency fund of $10,500 to $21,000. This may seem like a lot, but it's essential to ensure that you can pay your bills even in bad months.
 

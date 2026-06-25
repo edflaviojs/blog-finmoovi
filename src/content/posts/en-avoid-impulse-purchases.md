@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Impulse Purchases
-Have you ever been in a situation where you saw something you didn't need, but ended up buying it? This is common, especially when we're in stores or browsing the internet. Impulse purchases can be a big problem for [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), as they can lead to unnecessary expenses and negatively impact your budget. For example, imagine you earn $5,000 per month and spend $1,000 on impulse purchases. This means you're wasting 20% of your salary on non-essential things.
+Have you ever been in a situation where you saw something you didn't need, but ended up buying it? This is common, especially when we're in stores or browsing the internet. Impulse purchases can be a big problem for [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), as they can lead to unnecessary expenses and negatively impact your [budget](/en/posts/50-30-20-rule-complete-guide). For example, imagine you earn $5,000 per month and spend $1,000 on impulse purchases. This means you're wasting 20% of your salary on non-essential things.
 
 ## Understanding Behavior
 To avoid impulse purchases, it's essential to understand why they happen. In many cases, impulse purchases are motivated by emotions, such as happiness, sadness, or boredom. Additionally, advertising and social pressure can also influence our purchasing decisions. **Practical tip:** When you feel the urge to buy something, try waiting 24 hours before making the purchase. This can help reduce the likelihood of an impulse buy.
@@ -33,7 +33,7 @@ There are several strategies that can help avoid impulse purchases. One of them 
 There are several tools that can help avoid impulse purchases. One of them is the [Banco Central do Brasil](https://www.bcb.gov.br), which offers resources and information on [personal finance](/en/posts/30-day-rule-for-purchases) and economy. Another tool is the [Tesouro Direto](https://www.tesourodireto.com.br), which allows you to invest in public securities and earn returns. Additionally, there are apps like [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) that can help you track expenses and control your budget.
 
 ## The Power of [Financial Education](/en/glossario/en-educacao-financeira)
-Financial education is fundamental to avoiding impulse purchases and achieving financial stability. It's essential to understand concepts like interest, [inflation](/en/glossario/en-inflacao), and investments to make informed decisions about money. Additionally, it's crucial to learn how to manage stress and emotions to avoid impulse purchases. **Practical tip:** Read articles and books on [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and participate in courses or workshops to learn more about the subject.
+[Financial education](/en/posts/7-financial-mistakes-beginners) is fundamental to avoiding impulse purchases and achieving financial stability. It's essential to understand concepts like interest, [inflation](/en/glossario/en-inflacao), and investments to make informed decisions about money. Additionally, it's crucial to learn how to manage stress and emotions to avoid impulse purchases. **Practical tip:** Read articles and books on [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and participate in courses or workshops to learn more about the subject.
 
 ![Tools to Help](/images/posts/evite-compras-por-impulso-4.webp)
 

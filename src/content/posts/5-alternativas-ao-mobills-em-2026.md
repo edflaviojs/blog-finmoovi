@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introdução
-Se você está procurando por alternativas ao Mobills para gerenciar suas [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), você veio ao lugar certo! Neste artigo, vamos explorar 5 opções que podem ajudá-lo a controlar seus gastos, criar orçamentos e alcançar seus objetivos financeiros. Vamos começar!
+Se você está procurando por alternativas ao Mobills para gerenciar suas [finanças pessoais](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias), você veio ao lugar certo! Neste artigo, vamos explorar 5 opções que podem ajudá-lo a controlar seus gastos, criar orçamentos e alcançar seus objetivos financeiros. Vamos começar!
 
 ## O que é o Mobills?
 Antes de mergulharmos nas alternativas, é importante entender o que é o Mobills. O Mobills é um aplicativo de gestão financeira popular que ajuda os usuários a controlar seus gastos, criar orçamentos e monitorar suas contas. No entanto, como todos os aplicativos, ele tem suas limitações e pode não ser a melhor opção para todos.
@@ -30,7 +30,7 @@ Aqui estão 5 alternativas ao Mobills que você pode considerar:
 
 
 1. **Personal Capital**
-O Personal Capital é um aplicativo de gestão financeira que ajuda os usuários a controlar seus gastos, criar orçamentos e investir seu dinheiro. Com o Personal Capital, você pode conectar suas contas bancárias e cartões de crédito para ter uma visão geral de suas finanças.
+O Personal Capital é um aplicativo de gestão financeira que ajuda os usuários a controlar seus gastos, criar orçamentos e investir seu [dinheiro](/posts/cashback-inteligente). Com o Personal Capital, você pode conectar suas contas bancárias e cartões de crédito para ter uma visão geral de suas finanças.
 Prós:
 * Interface fácil de usar
 * Ferramentas de investimento avançadas

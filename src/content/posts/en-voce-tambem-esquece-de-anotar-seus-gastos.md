@@ -34,7 +34,7 @@ I discovered FinMoovi a few months ago, and my life changed. With FinMoovi, I ca
 Additionally, FinMoovi offers intelligent reports with AI, allowing me to have a clear view of my finances, even when offline. This is amazing! I can see exactly where I'm spending my [money](/en/posts/creating-an-emergency-fund) and make adjustments to improve my finances.
 
 ## Before vs After FinMoovi
-Before using FinMoovi, I was always stressed about my finances. I didn't know where I was spending my money, and I didn't have control over my expenses. I was always worried about not having enough money to pay the bills and was always trying to cut expenses unnecessarily.
+Before using FinMoovi, I was always stressed about my finances. I didn't know where I was spending my [money](/en/posts/criar-reserva-de-emergencia), and I didn't have control over my expenses. I was always worried about not having enough [money](/en/posts/difference-between-investing-and-saving) to pay the bills and was always trying to cut expenses unnecessarily.
 
 After starting to use FinMoovi, I was able to have a clear view of my finances and make adjustments to improve. I can see exactly where I'm spending my money and make informed decisions about how to spend my money. I'm no longer stressed about my finances and can enjoy life without worrying about money.
 

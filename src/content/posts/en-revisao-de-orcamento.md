@@ -22,7 +22,7 @@ translate: true
 We've reached the middle of the year, and it's time to stop and reflect on how our finances are doing. It's common to start the year with clear objectives and goals, but along the way, we can stray from the path. Reviewing your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) now is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals.
 
 ## Why Review Your [Budget](/en/posts/50-30-20-rule-complete-guide)?
-Reviewing your [budget](/en/posts/how-to-create-personal-budget) is important because things change over time. Your salary may have increased, your expenses may have changed, or you may have acquired new financial responsibilities. Additionally, [inflation](/en/glossario/en-inflacao) may have affected the value of your [money](/en/posts/30-day-rule-for-purchases), making it necessary to adjust your spending and [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce).
+Reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) is important because things change over time. Your salary may have increased, your expenses may have changed, or you may have acquired new financial responsibilities. Additionally, [inflation](/en/glossario/en-inflacao) may have affected the value of your [money](/en/posts/30-day-rule-for-purchases), making it necessary to adjust your spending and [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce).
 
 For example, imagine you earn R$ 5,000 per month and spend R$ 2,000 on rent, R$ 1,000 on food, and R$ 500 on transportation. This leaves R$ 1,500 for other expenses and [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce). However, if inflation has increased by 10% over the past 6 months, the value of your [money](/en/posts/avoid-impulse-purchases) has decreased. You'll need to adjust your spending and [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) to maintain the same standard of living.
 
@@ -34,7 +34,7 @@ For example, imagine you earn R$ 5,000 per month and spend R$ 2,000 on rent, R$ 
 Reviewing your budget is a simple process, but it requires attention and honesty. Here are some steps to follow:
 
 ### 1. Check Your Expenses
-Start by checking your expenses over the past 6 months. This includes all expenses, from utility bills to supermarket purchases. You can use an app like [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) to help track your expenses and identify areas where you can cut back.
+Start by checking your expenses over the past 6 months. This includes all expenses, from utility bills to supermarket purchases. You can use an app like [FinMoovi](/en/posts/5-alternativas-ao-[mobills](/en/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) to help track your expenses and identify areas where you can cut back.
 
 ![How to review your budget](/images/posts/revisao-de-orcamento-3.webp)
 

@@ -34,7 +34,7 @@ Descubrí el FinMoovi hace unos meses y mi vida cambió. Con el FinMoovi, puedo 
 Además, el FinMoovi ofrece informes inteligentes con IA, lo que me permite tener una visión clara de mis finanzas, incluso estando offline. ¡Es increíble! Puedo ver exactamente dónde estoy gastando mi [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) y hacer ajustes para mejorar mis finanzas.
 
 ## Antes vs Después del FinMoovi
-Antes de usar el FinMoovi, estaba siempre estresado con mis finanzas. No sabía dónde estaba gastando mi dinero y no tenía control sobre mis gastos. Estaba siempre preocupado por no tener suficiente dinero para pagar las cuentas y estaba siempre intentando cortar gastos de forma innecesaria.
+Antes de usar el FinMoovi, estaba siempre estresado con mis finanzas. No sabía dónde estaba gastando mi [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) y no tenía control sobre mis gastos. Estaba siempre preocupado por no tener suficiente [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado) para pagar las cuentas y estaba siempre intentando cortar gastos de forma innecesaria.
 
 Después de empezar a usar el FinMoovi, pude tener una visión clara de mis finanzas y hacer ajustes para mejorar. Puedo ver exactamente dónde estoy gastando mi dinero y tomar decisiones informadas sobre cómo gastar mi dinero. No estoy más estresado con mis finanzas y puedo disfrutar la vida sin preocuparme por el dinero.
 
