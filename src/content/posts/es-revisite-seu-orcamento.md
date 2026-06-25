@@ -31,7 +31,7 @@ Además, las condiciones financieras pueden cambiar significativamente en solo s
 
 
 ## Cómo Revisar Tu [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal)
-Revisar tu [presupuesto](/es/posts/como-crear-presupuesto-personal) no necesita ser un proceso complicado. Aquí están algunos pasos simples que puedes seguir:
+Revisar tu [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/5-alternativas-ao-mobills-em-2026)-personal) no necesita ser un proceso complicado. Aquí están algunos pasos simples que puedes seguir:
 
 ### 1. Verifica Tu Saldo Actual
 Comienza verificando tu saldo bancario actual. Esto incluye no solo tu cuenta corriente, sino también cualquier [ahorro](/es/posts/negociar-descuentos-en-cuentas-fijas), [inversión](/es/posts/montando-carteira-diversificada-com-r-500) o deuda que puedas tener. Por ejemplo, si tienes un salario de $5.000 por mes y gastas $3.000 en gastos fijos, debes tener una idea clara de cuánto estás ahorrando o gastando más allá de eso.
@@ -39,7 +39,7 @@ Comienza verificando tu saldo bancario actual. Esto incluye no solo tu cuenta co
 ### 2. Evalúa Tus Gastos
 Evalúa todos tus gastos del último semestre. Esto incluye gastos fijos como alquiler, servicios y suscripciones, así como gastos variables como compras, viajes y entretenimiento. Si notas que estás gastando demasiado en una área específica, puede ser hora de hacer ajustes.
 
-### 3. Ajusta Tu Presupuesto
+### 3. Ajusta Tu [Presupuesto](/es/posts/como-crear-presupuesto-personal)
 Con base en tu evaluación, ajusta tu presupuesto para el resto del año. Si identificaste áreas donde puedes recortar gastos, ahora es el momento de hacer cambios. Considera usar una herramienta como el app [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) para ayudarte a gestionar tus finanzas y mantener todo organizado.
 
 ### 4. Revisa Tus Metas

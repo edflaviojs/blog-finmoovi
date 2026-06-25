@@ -30,10 +30,10 @@ Existen varias estrategias que pueden ayudar a evitar compras por impulso. Una d
 
 
 ## Herramientas para Ayudar
-Existen varias herramientas que pueden ayudar a evitar compras por impulso. Una de ellas es el [Banco Central del Brasil](https://www.bcb.gov.br), que ofrece recursos y información sobre [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) y economía. Otra herramienta es el [Tesoro Directo](https://www.tesourodireto.com.br), que permite invertir en títulos públicos y obtener rendimientos. Además, existen aplicaciones como el FinMoovi que pueden ayudar a registrar gastos y controlar el presupuesto.
+Existen varias herramientas que pueden ayudar a evitar compras por impulso. Una de ellas es el [Banco Central del Brasil](https://www.bcb.gov.br), que ofrece recursos y información sobre [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) y economía. Otra herramienta es el [Tesoro Directo](https://www.tesourodireto.com.br), que permite invertir en títulos públicos y obtener rendimientos. Además, existen aplicaciones como el [FinMoovi](/es/posts/5-alternativas-ao-mobills-em-2026) que pueden ayudar a registrar gastos y controlar el presupuesto.
 
 ## El Poder de la [Educación Financiera](/es/glossario/es-educacao-financeira)
-La educación financiera es fundamental para evitar compras por impulso y alcanzar la estabilidad financiera. Es importante entender conceptos como intereses, [inflación](/es/glossario/es-inflacao) y inversiones para tomar decisiones informadas sobre dinero. Además, es importante aprender a gestionar el estrés y las emociones para evitar compras por impulso. **Consejo práctico:** Lee artículos y libros sobre finanzas personales y participa en cursos o talleres para aprender más sobre el tema.
+La educación financiera es fundamental para evitar compras por impulso y alcanzar la estabilidad financiera. Es importante entender conceptos como intereses, [inflación](/es/glossario/es-inflacao) y inversiones para tomar decisiones informadas sobre dinero. Además, es importante aprender a gestionar el estrés y las emociones para evitar compras por impulso. **Consejo práctico:** Lee artículos y libros sobre [finanzas personales](/es/posts/7-errores-financieros-principiante) y participa en cursos o talleres para aprender más sobre el tema.
 
 ![Herramientas para Ayudar](/images/posts/evite-compras-por-impulso-4.webp)
 

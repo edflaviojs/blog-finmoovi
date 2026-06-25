@@ -33,9 +33,9 @@ Os gastos impulsivos são um grande problema para muitas pessoas. É fácil se d
 O cartão de crédito pode ser uma ferramenta útil se usado com responsabilidade. Muitos cartões de crédito oferecem [benefícios](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-rende-mais-em-2026), como pontos ou cashback, que podem ser trocados por prêmios ou descontos. **Dica prática:** escolha um cartão de crédito que ofereça [benefícios](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-junho-2026)-qual-rende-mais-em-2026) que sejam relevantes para você. Por exemplo, se você gosta de viajar, pode escolher um cartão de crédito que ofereça pontos que possam ser trocados por passagens aéreas.
 
 ## Monitorando os Gastos
-É importante monitorar os gastos no cartão de crédito regularmente. Isso pode ser feito através do extrato do cartão de crédito ou de aplicativos de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). **Dica prática:** configure alertas para quando você ultrapassar um certo limite de gastos. Além disso, é importante rever os gastos mensais e ajustar o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) se necessário.
+É importante monitorar os gastos no cartão de crédito regularmente. Isso pode ser feito através do extrato do cartão de crédito ou de [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). **Dica prática:** configure alertas para quando você ultrapassar um certo limite de gastos. Além disso, é importante rever os gastos mensais e ajustar o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) se necessário.
 
-![Aproveitando os Benefícios do Cartão de Crédito](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-4.webp)
+![Aproveitando os [Benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) do Cartão de Crédito](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-4.webp)
 
 
 

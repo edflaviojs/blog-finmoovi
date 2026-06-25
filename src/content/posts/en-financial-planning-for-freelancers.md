@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Basic Planning
-When you're a freelancer, you don't have a fixed salary every month. This means your [financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) needs to be more flexible and adaptable. Let's start with the basics: recording all your expenses and income. This can be done with a [personal finance](/en/posts/30-day-rule-for-purchases) app, like FinMoovi, or even with a notebook. The important thing is to have a clear view of where your [money](/en/posts/avoid-impulse-purchases) is going.
+When you're a freelancer, you don't have a fixed salary every month. This means your [financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) needs to be more flexible and adaptable. Let's start with the basics: recording all your expenses and income. This can be done with a [personal finance](/en/posts/30-day-rule-for-purchases) app, like [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026), or even with a notebook. The important thing is to have a clear view of where your [money](/en/posts/avoid-impulse-purchases) is going.
 
 For example, if you're a freelance professional who earns around $5,000 per month, but has months where you earn $8,000 and others where you earn only $3,000, you need to plan your expenses based on the average of the last 6 months. Additionally, it's essential to have an [emergency fund](/en/glossario/en-reserva-de-emergencia) to cover unexpected expenses.
 
@@ -36,7 +36,7 @@ Here's an example of how you can categorize your expenses:
 **Practical tip:** Try to reduce your variable expenses by 10% to 20% per month to increase your savings.
 
 ## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and Emergency Fund
-In addition to saving, it's essential to think about [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) for the future. This can include putting money into a [savings account](https://www.bcb.gov.br) or investing in [treasury bonds](https://www.tesourodireto.com.br). The emergency fund should be sufficient to cover 3 to 6 months of expenses, in case you don't have income for a period.
+In addition to saving, it's essential to think about [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) for the future. This can include putting [money](/en/posts/creating-an-emergency-fund) into a [savings account](https://www.bcb.gov.br) or investing in [treasury bonds](https://www.tesourodireto.com.br). The emergency fund should be sufficient to cover 3 to 6 months of expenses, in case you don't have income for a period.
 
 For example, if your monthly expenses are $3,500, you should have an emergency fund of $10,500 to $21,000. This may seem like a lot, but it's essential to ensure that you can pay your bills even in bad months.
 

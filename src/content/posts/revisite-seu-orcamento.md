@@ -31,7 +31,7 @@ Além disso, as condições financeiras podem mudar significativamente ao longo 
 
 
 ## Como Revisar Seu [Orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas)
-Revisar seu orçamento não precisa ser um processo complicado. Aqui estão alguns passos simples que você pode seguir:
+Revisar seu [orçamento](/posts/5-alternativas-ao-mobills-em-2026) não precisa ser um processo complicado. Aqui estão alguns passos simples que você pode seguir:
 
 ### 1. Verifique Seu Saldo Atual
 Comece verificando seu saldo bancário atual. Isso inclui não apenas sua conta corrente, mas também qualquer [poupança](/glossario/poupanca), [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) ou dívidas que você possa ter. Por exemplo, se você tem um salário de R$ 5.000 por mês e gasta R$ 3.000 em despesas fixas, você deve ter uma ideia clara de quanto está economizando ou gastando além disso.

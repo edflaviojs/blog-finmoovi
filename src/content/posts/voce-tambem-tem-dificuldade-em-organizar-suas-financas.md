@@ -36,7 +36,7 @@ Mas há uma solução para esse problema. Eu descobri um aplicativo que pode aju
 Com o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos), você pode ter uma visão clara de suas finanças e tomar decisões informadas sobre como gerenciar seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz). O aplicativo também oferece relatórios inteligentes com a ajuda da IA, o que ajuda a identificar áreas onde você pode economizar e melhorar sua situação financeira.
 
 ## Como funciona
-Aqui está um exemplo de como o FinMoovi pode ser usado no dia a dia:
+Aqui está um exemplo de como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) pode ser usado no dia a dia:
 
 1. Você registra uma despesa em dólares durante uma viagem de negócios.
 2. O FinMoovi categoriza a despesa automaticamente como "Viagem" ou "Alimentação", dependendo do tipo de despesa.

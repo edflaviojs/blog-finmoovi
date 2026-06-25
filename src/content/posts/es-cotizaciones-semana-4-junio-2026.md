@@ -20,7 +20,7 @@ seo:
 
 La semana del 15 de junio al 22 de junio de 2026 ha sido de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, vamos a explorar los acontecimientos más destacados de la semana y ofrecer [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
 
-![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026)-semana-4-mayo-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-4-mayo-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-4-junio-2026-inline-1.webp)
+![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-4-mayo-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-4-mayo-2026)-semana-3-junio-2026)-semana-1-junio-2026)-semana-4-junio-2026-inline-1.webp)
 
 
 
@@ -42,7 +42,7 @@ Es importante considerar que las decisiones sobre la tasa Selic tienen un impact
 
 ## Consejo Práctico para el Inversor Individual
 
-Para los inversores individuales, es crucial diversificar su cartera de inversiones para minimizar los riesgos y maximizar los rendimientos. Una forma de hacerlo es considerar inversiones en múltiples monedas, lo que puede ayudar a proteger contra la [volatilidad](/es/glossario/es-volatilidade) de las tasas de cambio. Herramientas como FinMoovi pueden ser muy útiles para seguir y gestionar estas inversiones de manera eficiente. FinMoovi ofrece la posibilidad de monitorear y administrar inversiones en diferentes monedas, lo que facilita la toma de decisiones informadas y la optimización de la cartera de inversiones.
+Para los inversores individuales, es crucial diversificar su cartera de inversiones para minimizar los riesgos y maximizar los rendimientos. Una forma de hacerlo es considerar inversiones en múltiples monedas, lo que puede ayudar a proteger contra la [volatilidad](/es/glossario/es-volatilidade) de las tasas de cambio. Herramientas como [FinMoovi](/es/posts/5-alternativas-ao-mobills-em-2026) pueden ser muy útiles para seguir y gestionar estas inversiones de manera eficiente. FinMoovi ofrece la posibilidad de monitorear y administrar inversiones en diferentes monedas, lo que facilita la toma de decisiones informadas y la optimización de la cartera de inversiones.
 
 ## Qué Esperar para la Próxima Semana
 

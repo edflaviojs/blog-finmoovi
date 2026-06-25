@@ -22,7 +22,7 @@ translate: true
 Chegamos ao meio do ano, e é hora de parar e refletir sobre como estão nossas finanças. É comum começar o ano com objetivos e metas claras, mas ao longo do caminho, podemos nos desviar do rumo. Revisar seu [orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) agora é uma ótima oportunidade para ajustar suas finanças e garantir que você está no caminho certo para alcançar seus objetivos.
 
 ## Por que revisar o [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)?
-Revisar seu [orçamento](/posts/como-criar-orcamento-pessoal) é importante porque as coisas mudam ao longo do tempo. Seu salário pode ter aumentado, seus gastos podem ter mudado, ou você pode ter adquirido novas responsabilidades financeiras. Além disso, a [inflação](/glossario/inflacao) pode ter afetado o [valor](/glossario/valor) do seu [dinheiro](/posts/cashback-inteligente), tornando necessário ajustar seus gastos e [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce).
+Revisar seu [orçamento](/posts/como-criar-orcamento-pessoal) é importante porque as coisas mudam ao longo do tempo. Seu salário pode ter aumentado, seus gastos podem ter mudado, ou você pode ter adquirido novas responsabilidades financeiras. Além disso, a [inflação](/glossario/inflacao) pode ter afetado o [valor](/glossario/valor) do seu [dinheiro](/posts/cashback-inteligente), tornando necessário ajustar seus gastos e [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce).
 
 Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com aluguel, R$ 1.000 com comida e R$ 500 com transporte. Isso deixa R$ 1.500 para outros gastos e [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce). No entanto, se a inflação aumentou 10% nos últimos 6 meses, o valor do seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) diminuiu. Você precisará ajustar seus gastos e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para manter o mesmo padrão de vida.
 
@@ -34,7 +34,7 @@ Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com alug
 Revisar o orçamento é um processo simples, mas requer atenção e honestidade. Aqui estão alguns passos para seguir:
 
 ### 1. Verifique seus gastos
-Comece verificando seus gastos dos últimos 6 meses. Isso inclui todos os gastos, desde contas de serviços até compras de supermercado. Você pode usar um aplicativo como o FinMoovi para ajudar a rastrear seus gastos e identificar áreas onde pode cortar.
+Comece verificando seus gastos dos últimos 6 meses. Isso inclui todos os gastos, desde contas de serviços até compras de supermercado. Você pode usar um aplicativo como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) para ajudar a rastrear seus gastos e identificar áreas onde pode cortar.
 
 ![Como revisar o orçamento](/images/posts/revisao-de-orcamento-3.webp)
 

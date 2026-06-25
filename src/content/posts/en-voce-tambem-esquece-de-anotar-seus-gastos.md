@@ -22,7 +22,7 @@ You also forget to record your expenses? I know I do! It's easy to lose control 
 ## The Pain of Not Having Control
 The pain of not having control over finances is real. Imagine you're planning an international trip and need to record all your expenses in different currencies. You might think, "I'll write everything down in a notebook" or "I'll use any app to record my expenses." But in practice, it's not as easy as it seems. You might forget to record an expense or, worse, not have a way to record expenses in different currencies effectively.
 
-For example, imagine you're on a trip to the US and buy a snack in dollars. You need to record that expense in reals, but how will you do that? You'll need to exchange the currency, calculate the exchange rate, and record the expense. And what if you're in a place without internet? How will you record the expense? That's where FinMoovi comes in.
+For example, imagine you're on a trip to the US and buy a snack in dollars. You need to record that expense in reals, but how will you do that? You'll need to exchange the currency, calculate the exchange rate, and record the expense. And what if you're in a place without internet? How will you record the expense? That's where [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) comes in.
 
 ![A Dor de Não Ter Controle](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-2.webp)
 
@@ -31,7 +31,7 @@ For example, imagine you're on a trip to the US and buy a snack in dollars. You 
 ## The Solution: FinMoovi
 I discovered FinMoovi a few months ago, and my life changed. With FinMoovi, I can easily record my expenses using the Smart Capture feature by voice or OCR, which recognizes text in images. And the best part? FinMoovi automatically categorizes my expenses, so I no longer have to worry about writing everything down manually.
 
-Additionally, FinMoovi offers intelligent reports with AI, allowing me to have a clear view of my finances, even when offline. This is amazing! I can see exactly where I'm spending my money and make adjustments to improve my finances.
+Additionally, FinMoovi offers intelligent reports with AI, allowing me to have a clear view of my finances, even when offline. This is amazing! I can see exactly where I'm spending my [money](/en/posts/creating-an-emergency-fund) and make adjustments to improve my finances.
 
 ## Before vs After FinMoovi
 Before using FinMoovi, I was always stressed about my finances. I didn't know where I was spending my money, and I didn't have control over my expenses. I was always worried about not having enough money to pay the bills and was always trying to cut expenses unnecessarily.

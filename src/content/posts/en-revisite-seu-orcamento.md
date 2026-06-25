@@ -39,8 +39,8 @@ Start by checking your current bank balance. This includes not only your checkin
 ### 2. Evaluate Your Expenses
 Evaluate all your expenses from the last six months. This includes fixed expenses like rent, utility bills, and subscriptions, as well as variable expenses like purchases, trips, and entertainment. If you notice you're spending too much in a specific area, it might be time to make adjustments.
 
-### 3. Adjust Your [Budget](/en/posts/how-to-create-personal-budget)
-Based on your evaluation, adjust your budget for the rest of the year. If you identified areas where you can cut back on spending, now is the time to make changes. Consider using a tool like the [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) app to help manage your finances and keep everything organized.
+### 3. Adjust Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/5-alternativas-ao-mobills-em-2026))
+Based on your evaluation, adjust your [budget](/en/posts/how-to-create-personal-budget) for the rest of the year. If you identified areas where you can cut back on spending, now is the time to make changes. Consider using a tool like the [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) app to help manage your finances and keep everything organized.
 
 ### 4. Review Your Goals
 Finally, review your original financial goals. If you set goals at the beginning of the year, now is the time to assess your progress. If you're ahead, great! If not, adjust your goals or strategies to ensure you achieve what you want in the rest of the year.

@@ -16,7 +16,7 @@ seo:
   keywords: ["CDB","Tesouro Selic","inversiones","renta fija","riesgos","beneficios","cdb vs tesouro selic","¿cuál rinde más","renta fija comparación"]
 ---
 
-## Introducción al [CDB](/es/glossario/es-cdb) y [Tesouro Selic](/es/posts/cdb-vs-tesouro-[selic](/es/glossario/es-[selic](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026))-qual-e-melhor-para-voce)
+## Introducción al [CDB](/es/glossario/es-cdb) y [Tesouro Selic](/es/posts/cdb-vs-tesouro-[selic](/es/glossario/es-[selic](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026))-qual-e-melhor-para-voce)
 Cuando se trata de invertir, es importante entender las opciones disponibles y cómo pueden adaptarse a su perfil de inversionista. Dos de las inversiones más populares en Brasil son el CDB (Certificado de Depósito Bancario) y el [Tesouro Selic](/es/posts/cdb-vs-tesouro-[selic](/es/glossario/es-selic)-qual-e-melhor-para-voce). Pero, después de todo, ¿cuál de ellos rinde más en 2026? Para entender esto, vamos a sumergirnos en los detalles de cada uno.
 
 ### ¿Qué es CDB?
@@ -61,4 +61,4 @@ Ahora que usted tiene una idea mejor sobre el CDB y el Tesouro Selic, es hora de
 
 
 
-Para acompañar sus inversiones en un solo lugar, [pruebe FinMoovi gratis por 7 días](https://finmoovi.com) — multi-moneda, informes inteligentes y 100% offline.
+Para acompañar sus inversiones en un solo lugar, [pruebe [FinMoovi](/es/posts/5-alternativas-ao-mobills-em-2026) gratis por 7 días](https://finmoovi.com) — multi-moneda, informes inteligentes y 100% offline.

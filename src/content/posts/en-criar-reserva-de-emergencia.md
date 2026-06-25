@@ -41,4 +41,4 @@ Now that you have a clear idea of how to create and manage an emergency fund, it
 ![Start Today](/images/posts/criar-reserva-de-emergencia-6.webp)
 
 ---
-**The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/financial-[planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas)-for-couples) is really going.**
+**The next step is yours. [Try [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and discover where your [money](/en/posts/financial-[planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas)-for-couples) is really going.**
