@@ -16,13 +16,13 @@ seo:
   keywords: ["CDB","Tesouro Selic","investimentos","renda fixa","riscos","benefícios","cdb vs tesouro selic","qual rende mais","renda fixa comparação"]
 ---
 
-## Introdução ao CDB e [Tesouro Selic](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce)
-Quando se trata de investir, é importante entender as opções disponíveis e como elas podem se adequar ao seu perfil de investidor. Dois dos investimentos mais populares no Brasil são o CDB (Certificado de Depósito Bancário) e o Tesouro Selic. Mas, afinal, qual deles rende mais em 2026? Para entender isso, vamos mergulhar nos detalhes de cada um.
+## Introdução ao [CDB](/glossario/cdb) e [Tesouro Selic](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce)
+Quando se trata de investir, é importante entender as opções disponíveis e como elas podem se adequar ao seu perfil de investidor. Dois dos investimentos mais populares no Brasil são o CDB (Certificado de Depósito Bancário) e o Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-3-junho-2026)). Mas, afinal, qual deles rende mais em 2026? Para entender isso, vamos mergulhar nos detalhes de cada um.
 
 ### O que é CDB?
 O CDB é um tipo de investimento de [renda fixa](/glossario/renda-fixa) oferecido por bancos e instituições financeiras. Ele funciona como um empréstimo que você faz ao banco, e em troca, o banco paga uma taxa de [juros](/glossario/juros). O CDB pode ser pré-fixado, pós-fixado ou híbrido, cada um com sua própria forma de calcular os juros.
 
-### O que é Tesouro Selic?
+### O que é [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)?
 O Tesouro Selic, por outro lado, é um investimento de renda fixa emitido pelo Tesouro Nacional, com garantia do governo brasileiro. Ele é indexado à taxa Selic, que é a taxa básica de juros da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) definida pelo Banco Central do Brasil. Isso significa que o rendimento do Tesouro Selic acompanha as variações da taxa Selic.
 
 ## Rendimentos e Simulações
@@ -42,7 +42,7 @@ No entanto, esses números são simplificados e não consideram as possíveis va
 O CDB, embora seja considerado um investimento de baixo risco, não está completamente livre de riscos. O principal risco é o risco de crédito do banco emissor. Se o banco tiver problemas financeiros, pode haver dificuldade em resgatar o investimento. No entanto, o [Fundo Garantidor de Créditos (FGC)](https://www.fgc.org.br) oferece uma proteção de até R$250.000 por correntista e instituição financeira.
 
 ### Riscos do Tesouro Selic
-O Tesouro Selic, por ser um investimento com garantia do governo, é considerado de muito baixo risco. No entanto, o investidor está sujeito às variações da taxa Selic, o que pode afetar o rendimento. Além disso, como o Tesouro Selic é indexado à [inflação](/glossario/inflacao) (no caso do Tesouro IPCA), o investidor também pode ser afetado pelas variações dos índices de inflação.
+O Tesouro Selic, por ser um investimento com garantia do governo, é considerado de muito baixo risco. No entanto, o investidor está sujeito às variações da taxa Selic, o que pode afetar o rendimento. Além disso, como o Tesouro Selic é indexado à [inflação](/glossario/inflacao) (no caso do Tesouro [IPCA](/glossario/ipca)), o investidor também pode ser afetado pelas variações dos índices de inflação.
 
 ## Avaliando o Perfil de Investidor
 Ao decidir entre CDB e Tesouro Selic, é crucial avaliar seu perfil de investidor. Se você é um investidor conservador, que busca segurança e está disposto a abrir mão de um pouco de rendimento em troca de menor risco, o Tesouro Selic pode ser uma boa opção. Por outro lado, se você está disposto a assumir um risco um pouco maior em busca de um rendimento mais alto, o CDB pode ser mais atraente.

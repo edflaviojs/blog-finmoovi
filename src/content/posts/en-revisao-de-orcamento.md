@@ -41,7 +41,7 @@ Start by checking your expenses over the past 6 months. This includes all expens
 
 
 ### 2. Adjust Your Expenses
-After checking your expenses, adjust them according to your needs and goals. If you notice you're spending too much in one area, such as restaurants, try to reduce those expenses and reallocate the money to other areas, such as savings or investments.
+After checking your expenses, adjust them according to your needs and goals. If you notice you're spending too much in one area, such as restaurants, try to reduce those expenses and reallocate the [money](/en/posts/creating-an-emergency-fund) to other areas, such as [savings](/en/posts/financial-education-for-children) or investments.
 
 ### 3. Check Your Income
 Check your income over the past 6 months and adjust it according to your needs and goals. If you've received a salary increase, for example, you may want to increase your savings or investments.

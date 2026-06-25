@@ -22,7 +22,7 @@ Você também esquece de anotar seus gastos? Eu sei que eu sim! É fácil perder
 ## A Dor de Não Ter Controle
 A dor de não ter controle sobre as finanças é real. Imagine que você está planejando uma viagem internacional e precisa registrar todas as suas despesas em diferentes moedas. Você pode estar pensando: "Vou anotar tudo em um caderno" ou "Vou usar um aplicativo qualquer para registrar meus gastos". Mas, na prática, isso não é tão fácil quanto parece. Você pode esquecer de anotar alguma despesa, ou pior, pode não ter como registrar as despesas em diferentes moedas de forma eficaz.
 
-Por exemplo, imagine que você está em uma viagem nos EUA e compra um lanche em dólares. Você precisa registrar essa despesa em reais, mas como você vai fazer isso? Você vai precisar trocar a moeda, calcular a taxa de câmbio e registrar a despesa. E se você estiver em um lugar sem internet? Como você vai registrar a despesa? É aí que o FinMoovi entra em cena.
+Por exemplo, imagine que você está em uma viagem nos EUA e compra um lanche em dólares. Você precisa registrar essa despesa em reais, mas como você vai fazer isso? Você vai precisar trocar a [moeda](/glossario/moeda), calcular a taxa de [câmbio](/glossario/cambio) e registrar a despesa. E se você estiver em um lugar sem internet? Como você vai registrar a despesa? É aí que o FinMoovi entra em cena.
 
 ![A Dor de Não Ter Controle](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-2.webp)
 
@@ -52,7 +52,7 @@ Outro cenário prático é quando você está em um lugar sem internet. Com o Fi
 ## Experimente o FinMoovi
 Experimente o FinMoovi grátis por 7 dias e veja a diferença. Com o FinMoovi, você pode ter controle sobre suas finanças e melhorar sua saúde financeira. Você não precisa mais se preocupar em perder alguma despesa ou não ter como registrar suas despesas em diferentes moedas. O FinMoovi é a solução perfeita para quem quer ter controle sobre suas finanças e melhorar sua vida financeira.
 
-Além disso, você pode aprender mais sobre gestão de despesas e finanças pessoais no [Investopedia](https://www.investopedia.com). E se você está tendo problemas com dívidas, você pode consultar a [Serasa](https://www.serasa.com.br) para obter ajuda.
+Além disso, você pode aprender mais sobre gestão de despesas e [finanças pessoais](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) no [Investopedia](https://www.investopedia.com). E se você está tendo problemas com dívidas, você pode consultar a [Serasa](https://www.serasa.com.br) para obter ajuda.
 
 ![Experimente o FinMoovi](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-6.webp)
 

@@ -16,8 +16,8 @@ seo:
   keywords: ["CDB","Treasury Selic","investments","fixed income","risks","benefits","cdb vs treasury selic","which yields more","fixed income comparison"]
 ---
 
-## Introduction to [CDB](/en/glossario/en-cdb) and Treasury [Selic](/en/glossario/en-selic)
-When it comes to investing, it's essential to understand the available options and how they can fit your investor profile. Two of the most popular investments in Brazil are CDB (Certificate of Bank Deposit) and [Treasury Selic](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce). But, after all, which one yields more in 2026? To understand this, let's dive into the details of each.
+## Introduction to [CDB](/en/glossario/en-cdb) and Treasury [Selic](/en/glossario/en-[selic](/en/posts/quotes-semana-1-june-2026))
+When it comes to investing, it's essential to understand the available options and how they can fit your investor profile. Two of the most popular [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) in Brazil are CDB (Certificate of Bank Deposit) and [Treasury Selic](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce). But, after all, which one yields more in 2026? To understand this, let's dive into the details of each.
 
 ### What is CDB?
 CDB is a type of fixed-income [investment](/en/posts/montando-carteira-diversificada-com-r-500) offered by banks and financial institutions. It works like a loan you make to the bank, and in return, the bank pays an interest rate. CDB can be pre-fixed, post-fixed, or hybrid, each with its own way of calculating interest.

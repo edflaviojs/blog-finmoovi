@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Planejamento Básico
-Quando você é autônomo, não tem um salário fixo todo mês. Isso significa que seu planejamento financeiro precisa ser mais flexível e adaptável. Vamos começar com o básico: registrar todos os seus gastos e receitas. Isso pode ser feito com um aplicativo de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), como o FinMoovi, ou até mesmo com um caderno. O importante é ter uma visão clara de onde seu dinheiro está indo.
+Quando você é autônomo, não tem um salário fixo todo mês. Isso significa que seu [planejamento financeiro](/posts/como-criar-orcamento-pessoal) precisa ser mais flexível e adaptável. Vamos começar com o básico: registrar todos os seus gastos e receitas. Isso pode ser feito com um aplicativo de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), como o FinMoovi, ou até mesmo com um caderno. O importante é ter uma visão clara de onde seu dinheiro está indo.
 
 Por exemplo, se você é um profissional autônomo que ganha cerca de R$ 5.000 por mês, mas tem meses em que ganha R$ 8.000 e outros em que ganha apenas R$ 3.000, você precisa planejar seus gastos com base na média dos últimos 6 meses. Além disso, é fundamental ter uma [reserva de emergência](/glossario/reserva-de-emergencia) para cobrir despesas inesperadas.
 
@@ -35,7 +35,7 @@ Aqui está um exemplo de como você pode categorizar seus gastos:
 
 **Dica prática:** Tente reduzir seus gastos variáveis em 10% a 20% ao mês para aumentar sua [poupança](/glossario/poupanca).
 
-## [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e Reserva de Emergência
+## [Investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce) e Reserva de Emergência
 Além de economizar, é importante pensar em [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para o futuro. Isso pode incluir aplicar dinheiro em uma [conta poupança](https://www.bcb.gov.br) ou investir em [tesouro direto](https://www.tesourodireto.com.br). A reserva de emergência deve ser suficiente para cobrir 3 a 6 meses de despesas, caso você não tenha receita por um período.
 
 Por exemplo, se seus gastos mensais são de R$ 3.500, você deve ter uma reserva de emergência de R$ 10.500 a R$ 21.000. Isso pode parecer muito, mas é importante para garantir que você possa pagar suas contas mesmo em meses ruins.
@@ -50,7 +50,7 @@ Além disso, é fundamental ter um sistema de cobrança eficaz, para garantir qu
 
 
 ## [Educação Financeira](/glossario/educacao-financeira)
-[Educação financeira](/posts/7-erros-financeiros-iniciante) é fundamental para qualquer pessoa, especialmente para autônomos. Isso inclui entender conceitos básicos de finanças, como [juros](/glossario/juros), investimentos e impostos. Existem muitos recursos disponíveis online, como o [Investopedia](https://www.investopedia.com), que podem ajudar a melhorar seu conhecimento financeiro.
+[Educação financeira](/posts/7-erros-financeiros-iniciante) é fundamental para qualquer pessoa, especialmente para autônomos. Isso inclui entender conceitos básicos de finanças, como [juros](/glossario/juros), [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e impostos. Existem muitos recursos disponíveis online, como o [Investopedia](https://www.investopedia.com), que podem ajudar a melhorar seu conhecimento financeiro.
 
 **Dica prática:** Reserve 1 hora por semana para aprender sobre [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e planejamento financeiro.
 

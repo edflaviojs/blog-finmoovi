@@ -16,13 +16,13 @@ seo:
   keywords: ["CDB","Tesouro Selic","inversiones","renta fija","riesgos","beneficios","cdb vs tesouro selic","¿cuál rinde más","renta fija comparación"]
 ---
 
-## Introducción al [CDB](/es/glossario/es-cdb) y [Tesouro Selic](/es/posts/cdb-vs-tesouro-[selic](/es/glossario/es-[selic](/es/posts/cotizaciones-semana-1-junio-2026))-qual-e-melhor-para-voce)
-Cuando se trata de invertir, es importante entender las opciones disponibles y cómo pueden adaptarse a su perfil de inversionista. Dos de las inversiones más populares en Brasil son el CDB (Certificado de Depósito Bancario) y el [Tesouro Selic](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce). Pero, después de todo, ¿cuál de ellos rinde más en 2026? Para entender esto, vamos a sumergirnos en los detalles de cada uno.
+## Introducción al [CDB](/es/glossario/es-cdb) y [Tesouro Selic](/es/posts/cdb-vs-tesouro-[selic](/es/glossario/es-[selic](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026))-qual-e-melhor-para-voce)
+Cuando se trata de invertir, es importante entender las opciones disponibles y cómo pueden adaptarse a su perfil de inversionista. Dos de las inversiones más populares en Brasil son el CDB (Certificado de Depósito Bancario) y el [Tesouro Selic](/es/posts/cdb-vs-tesouro-[selic](/es/glossario/es-selic)-qual-e-melhor-para-voce). Pero, después de todo, ¿cuál de ellos rinde más en 2026? Para entender esto, vamos a sumergirnos en los detalles de cada uno.
 
 ### ¿Qué es CDB?
 El CDB es un tipo de inversión de renta fija ofrecida por bancos e instituciones financieras. Funciona como un préstamo que usted hace al banco, y a [cambio](/es/glossario/es-cambio), el banco paga una tasa de interés. El CDB puede ser pré-fijado, pos-fijado o híbrido, cada uno con su propia forma de calcular los intereses.
 
-### ¿Qué es Tesouro Selic?
+### ¿Qué es [Tesouro Selic](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)?
 El Tesouro Selic, por otro lado, es una inversión de renta fija emitida por el Tesouro Nacional, con garantía del gobierno brasileño. Está indexado a la tasa Selic, que es la tasa básica de interés de la [economía](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) definida por el Banco Central de Brasil. Esto significa que el rendimiento del Tesouro Selic acompaña las variaciones de la tasa Selic.
 
 ## Rendimientos y Simulaciones

@@ -1,69 +1,50 @@
 ---
 title: "Avoid Impulse Purchases"
-description: "Learn to control your expenses and save money by avoiding impulse purchases. Practical tips to improve your personal finances."
+description: "Learn to control your expenses and save money with practical tips and everyday examples."
 image: "/images/posts/evite-compras-por-impulso.webp"
 category: "dicas"
 locale: "en"
 tags: ["how to avoid impulse purchases","personal finance","economy","money"]
 author: "FinMoovi"
-publishedAt: 2026-06-15
-readingTime: 4
+publishedAt: 2026-06-25
+readingTime: 3
 featured: false
 translationKey: "evite-compras-por-impulso"
 seo:
   metaTitle: "Avoid Impulse Purchases"
-  metaDescription: "Learn to control your expenses and save money by avoiding impulse purchases. Practical tips to improve your personal finances."
+  metaDescription: "Learn to control your expenses and save money with practical tips and everyday examples."
   keywords: ["how to avoid impulse purchases","personal finance","economy","money"]
 ---
 
-## Understanding Impulse Buying
-When you're in a store or browsing online, it's easy to get carried away by the impulse to buy something you don't need. This can happen for various reasons, such as the influence of advertising, peer pressure, or the feeling that you deserve a treat. But at the end of the month, these impulse purchases can add up and affect your [budget](/en/posts/50-30-20-rule-complete-guide).
+## Impulse Purchases
+Have you ever been in a situation where you saw something you didn't need, but ended up buying it? This is common, especially when we're in stores or browsing the internet. Impulse purchases can be a big problem for personal finances, as they can lead to unnecessary expenses and negatively impact your budget. For example, imagine you earn $5,000 per month and spend $1,000 on impulse purchases. This means you're wasting 20% of your salary on non-essential things.
 
-Imagine you earn $5,000 per month and spend $1,500 on rent, $800 on food, and $500 on transportation. That leaves $2,200 for other expenses, such as leisure, health, and [savings](/en/posts/financial-education-for-children). If you spend $500 per month on impulse purchases, that means you're losing 23% of your available [money](/en/posts/30-day-rule-for-purchases).
+## Understanding Behavior
+To avoid impulse purchases, it's essential to understand why they happen. In many cases, impulse purchases are motivated by emotions, such as happiness, sadness, or boredom. Additionally, advertising and social pressure can also influence our purchasing decisions. **Practical tip:** When you feel the urge to buy something, try waiting 24 hours before making the purchase. This can help reduce the likelihood of an impulse buy.
 
-## Identifying Triggers
-To avoid impulse purchases, it's essential to identify the triggers that lead you to buy unnecessary things. These may include:
-* Being near stores or malls
-* The influence of social media advertising
-* Peer pressure from friends or family
-* The feeling that you deserve a treat
-* Boredom or lack of distraction
+## Strategies to Avoid Impulse Purchases
+There are several strategies that can help avoid impulse purchases. One of them is to create a budget and follow a spending plan. This can help identify areas where you can cut unnecessary expenses and allocate resources to more important things. Another strategy is to avoid stores and shopping websites when you're feeling emotionally vulnerable. Additionally, it's crucial to have a clear savings goal and work towards achieving it. For example, if you want to save $10,000 in a year, you'll need to save $833 per month.
 
-**Practical tip:** Make a list of your triggers and find ways to avoid them. For example, if you know you always buy unnecessary things when you're in a mall, try to avoid going there or only take the [money](/en/posts/creating-an-emergency-fund) you need for the purchases you need to make.
-
-![Identificando os Gatilhos](/images/posts/evite-compras-por-impulso-2.webp)
+![Understanding Behavior](/images/posts/evite-compras-por-impulso-2.webp)
 
 
 
-## Creating an Action Plan
-Once you've identified your triggers, it's time to create an action plan to avoid impulse purchases. This may include:
-* Setting a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) for unnecessary purchases
-* Creating a shopping list before going to the supermarket or store
-* Avoiding buying things you don't need
-* Finding ways to have fun without spending [money](/en/posts/difference-between-investing-and-[saving](/en/posts/criar-reserva-de-emergencia))
+## Tools to Help
+There are several tools that can help avoid impulse purchases. One of them is the [Banco Central do Brasil](https://www.bcb.gov.br), which offers resources and information on [personal finance](/en/posts/30-day-rule-for-purchases) and economy. Another tool is the [Tesouro Direto](https://www.tesourodireto.com.br), which allows you to invest in public securities and earn returns. Additionally, there are apps like FinMoovi that can help you track expenses and control your budget.
 
-For example, if you like to read, instead of buying books, you can go to the library or download reading apps that offer free books. If you like to cook, instead of buying expensive ingredients, you can look for recipes that use more affordable ingredients.
+## The Power of [Financial Education](/en/glossario/en-educacao-financeira)
+Financial education is fundamental to avoiding impulse purchases and achieving financial stability. It's essential to understand concepts like interest, [inflation](/en/glossario/en-inflacao), and investments to make informed decisions about money. Additionally, it's crucial to learn how to manage stress and emotions to avoid impulse purchases. **Practical tip:** Read articles and books on [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and participate in courses or workshops to learn more about the subject.
 
-## Track Your Expenses
-One of the main reasons people lose control of their expenses is the lack of tracking. It's essential to track all your expenses, including small ones, to get a clear idea of where your [money](/en/posts/financial-[planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas)-for-couples) is going. This can be done with a [financial management](/en/posts/montando-carteira-diversificada-com-r-500) app, such as [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), which allows you to track your expenses and create a personalized [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)).
-
-**Practical tip:** Track all your expenses for a month to get a clear idea of where your [money](/en/posts/financial-planning-for-freelancers) is going. This can help you identify areas where you can cut back and save [money](/en/posts/negotiating-discounts-on-fixed-bills).
-
-![Registre Seus Gastos](/images/posts/evite-compras-por-impulso-4.webp)
+![Tools to Help](/images/posts/evite-compras-por-impulso-4.webp)
 
 
-
-## Learn to Say No
-Another important tip to avoid impulse purchases is to learn to say no. This can be difficult, especially if you're a people-pleaser. However, it's essential to remember that you don't need to buy things to feel good or to please others.
-
-Imagine a friend is buying a new smartphone and you feel pressured to buy one too. Instead of giving in to the pressure, you can say that you don't need a new smartphone and that you're happy with what you have. This can be difficult, but it's essential to remember that you don't need to buy things to feel good.
 
 ## Start Today
-Now that you know how to avoid impulse purchases, it's time to start putting these tips into practice. Remember to be patient and persistent, as changing your spending habits can take time. But with a little effort and dedication, you can achieve your financial goals and have a more peaceful and secure life.
+You don't need to wait to start avoiding impulse purchases and improving your personal finances. Start today by tracking your expenses and creating a budget. Additionally, set clear savings goals and work towards achieving them. Remember that discipline and patience are essential to achieving financial stability.
 
-![Comece hoje](/images/posts/evite-compras-por-impulso-6.webp)
+![Start Today](/images/posts/evite-compras-por-impulso-6.webp)
 
 
 
 ---
-**Want to put theory into practice? [Download [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and start tracking your expenses today. No card, no commitment.**
+**Want to put theory into practice? [Download FinMoovi for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No card, no commitment.**

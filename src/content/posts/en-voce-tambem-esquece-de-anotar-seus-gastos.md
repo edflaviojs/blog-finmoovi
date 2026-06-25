@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introduction to the Problem
-You also forget to record your expenses? I know I do! It's easy to lose control over daily expenses, especially when traveling or just living life day to day. Even more so when dealing with different currencies, such as dollars and euros, in addition to the real. It's like our mind is always somewhere else, and before we know it, the month is over, and we don't know where all our money went.
+You also forget to record your expenses? I know I do! It's easy to lose control over daily expenses, especially when traveling or just living life day to day. Even more so when dealing with different currencies, such as dollars and euros, in addition to the real. It's like our mind is always somewhere else, and before we know it, the month is over, and we don't know where all our [money](/en/posts/avoid-impulse-purchases) went.
 
 ## The Pain of Not Having Control
 The pain of not having control over finances is real. Imagine you're planning an international trip and need to record all your expenses in different currencies. You might think, "I'll write everything down in a notebook" or "I'll use any app to record my expenses." But in practice, it's not as easy as it seems. You might forget to record an expense or, worse, not have a way to record expenses in different currencies effectively.
@@ -52,7 +52,7 @@ Another practical scenario is when you're in a place without internet. With FinM
 ## Try FinMoovi
 Try FinMoovi for free for 7 days and see the difference. With FinMoovi, you can have control over your finances and improve your financial health. You no longer have to worry about losing any expenses or not being able to record your expenses in different currencies. FinMoovi is the perfect solution for those who want to have control over their finances and improve their financial life.
 
-Additionally, you can learn more about expense management and personal finance on [Investopedia](https://www.investopedia.com). And if you're having problems with debt, you can consult [Serasa](https://www.serasa.com.br) for help.
+Additionally, you can learn more about expense management and [personal finance](/en/posts/30-day-rule-for-purchases) on [Investopedia](https://www.investopedia.com). And if you're having problems with debt, you can consult [Serasa](https://www.serasa.com.br) for help.
 
 ![Experimente o FinMoovi](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-6.webp)
 

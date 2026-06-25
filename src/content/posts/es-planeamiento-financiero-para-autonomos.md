@@ -35,8 +35,8 @@ Aquí está un ejemplo de cómo puedes categorizar tus gastos:
 
 **Consejo práctico:** Intenta reducir tus gastos variables en un 10% a 20% al mes para aumentar tu [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado).
 
-## Inversiones y Reserva de Emergencia
-Además de ahorrar, es importante pensar en inversiones para el futuro. Esto puede incluir aplicar dinero en una [cuenta de ahorro](https://www.bcb.gov.br) o invertir en [tesoro directo](https://www.tesourodireto.com.br). La reserva de emergencia debe ser suficiente para cubrir 3 a 6 meses de gastos, en caso de que no tengas ingresos por un período.
+## [Inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) y Reserva de Emergencia
+Además de ahorrar, es importante pensar en inversiones para el futuro. Esto puede incluir aplicar [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado) en una [cuenta de ahorro](https://www.bcb.gov.br) o invertir en [tesoro directo](https://www.tesourodireto.com.br). La reserva de emergencia debe ser suficiente para cubrir 3 a 6 meses de gastos, en caso de que no tengas ingresos por un período.
 
 Por ejemplo, si tus gastos mensuales son de R$ 3.500, debes tener una reserva de emergencia de R$ 10.500 a R$ 21.000. Esto puede parecer mucho, pero es importante para garantizar que puedas pagar tus cuentas incluso en meses malos.
 

@@ -17,7 +17,7 @@ seo:
 ---
 
 ## [Economy](/en/posts/30-day-rule-for-purchases) in Fixed Bills
-When we think about [saving](/en/posts/criar-reserva-de-emergencia) [money](/en/posts/avoid-impulse-purchases), we usually come up with the idea of cutting unnecessary [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) or increasing our income. However, there's a less conventional way to save: negotiating discounts on fixed bills. If you pay R$ 200 per month on water, electricity, and internet bills, a 10% discount can mean a [savings](/en/posts/financial-education-for-children) of R$ 20 per month, which may not seem like much, but over the course of a year, that adds up to R$ 240.
+When we think about [saving](/en/posts/criar-reserva-de-emergencia) [money](/en/posts/avoid-impulse-purchases), we usually come up with the idea of cutting unnecessary [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) or increasing our [income](/en/posts/montando-carteira-diversificada-com-r-500). However, there's a less conventional way to save: negotiating discounts on fixed bills. If you pay R$ 200 per month on water, electricity, and internet bills, a 10% discount can mean a [savings](/en/posts/financial-education-for-children) of R$ 20 per month, which may not seem like much, but over the course of a year, that adds up to R$ 240.
 
 ## Identifying Discount Opportunities
 To start negotiating discounts, it's essential to identify which fixed bills have potential for savings. These are usually the bills that have a significant price variation or are offered by multiple providers. For example, if you pay R$ 150 per month on your internet bill, it's worth researching other providers to see if they offer a similar plan at a lower price. **Practical tip:** make a list of all your fixed bills and their respective values to have a clear view of where there may be room for negotiation.
@@ -47,4 +47,4 @@ The key to saving [money](/en/posts/difference-between-investing-and-saving) by 
 
 
 ---
-**Want to put this into practice? [Test FinMoovi for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with automatic categorization and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with automatic categorization and visual reports.**
