@@ -16,7 +16,7 @@ seo:
   keywords: ["CDB","Treasury Selic","investments","fixed income","risks","benefits","cdb vs treasury selic","which yields more","fixed income comparison"]
 ---
 
-## Introduction to [CDB](/en/glossario/en-cdb) and Treasury [Selic](/en/glossario/en-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-4-june-2026)-semana-3-june-2026)-semana-1-june-2026))
+## Introduction to [CDB](/en/glossario/en-cdb) and Treasury [Selic](/en/glossario/en-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-semana-4-june-2026)-semana-3-june-2026)-semana-1-june-2026))
 When it comes to investing, it's essential to understand the available options and how they can fit your investor profile. Two of the most popular [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) in Brazil are CDB (Certificate of Bank Deposit) and [Treasury Selic](/en/posts/cdb-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce). But, after all, which one yields more in 2026? To understand this, let's dive into the details of each.
 
 ### What is CDB?

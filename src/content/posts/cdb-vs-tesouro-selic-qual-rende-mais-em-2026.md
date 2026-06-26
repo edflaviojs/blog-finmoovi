@@ -23,7 +23,7 @@ Quando se trata de investir, é importante entender as opções disponíveis e c
 O CDB é um tipo de investimento de [renda fixa](/glossario/renda-fixa) oferecido por bancos e instituições financeiras. Ele funciona como um empréstimo que você faz ao banco, e em troca, o banco paga uma taxa de [juros](/glossario/juros). O CDB pode ser pré-fixado, pós-fixado ou híbrido, cada um com sua própria forma de calcular os juros.
 
 ### O que é [Tesouro Selic](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026))-qual-e-melhor-para-voce)?
-O [Tesouro Selic](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-maio-2026)-qual-e-melhor-para-voce), por outro lado, é um investimento de renda fixa emitido pelo Tesouro Nacional, com garantia do governo brasileiro. Ele é indexado à taxa Selic, que é a taxa básica de juros da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) definida pelo Banco Central do Brasil. Isso significa que o rendimento do Tesouro Selic acompanha as variações da taxa Selic.
+O [Tesouro Selic](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-maio-2026)-qual-e-melhor-para-voce), por outro lado, é um investimento de renda fixa emitido pelo Tesouro Nacional, com garantia do governo brasileiro. Ele é indexado à taxa [Selic](/glossario/selic), que é a taxa básica de juros da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) definida pelo Banco Central do Brasil. Isso significa que o rendimento do [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) acompanha as variações da taxa Selic.
 
 ## Rendimentos e Simulações
 Para entender melhor os rendimentos, vamos considerar alguns exemplos. Suponha que você tenha R$1.000 para investir e esteja decidindo entre um CDB pré-fixado com 10% ao ano e um Tesouro Selic com a taxa Selic atual (suponha 6% ao ano).
@@ -61,4 +61,4 @@ Agora que você tem uma ideia melhor sobre o CDB e o Tesouro Selic, é hora de f
 
 
 
-Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.
+Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.

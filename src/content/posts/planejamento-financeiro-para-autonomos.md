@@ -36,7 +36,7 @@ Aqui está um exemplo de como você pode categorizar seus gastos:
 **Dica prática:** Tente reduzir seus gastos variáveis em 10% a 20% ao mês para aumentar sua [poupança](/glossario/poupanca).
 
 ## [Investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce) e Reserva de Emergência
-Além de economizar, é importante pensar em [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-rende-mais-em-2026) para o futuro. Isso pode incluir aplicar dinheiro em uma [conta poupança](https://www.bcb.gov.br) ou investir em [tesouro direto](https://www.tesourodireto.com.br). A reserva de emergência deve ser suficiente para cobrir 3 a 6 meses de despesas, caso você não tenha receita por um período.
+Além de economizar, é importante pensar em [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-rende-mais-em-2026) para o futuro. Isso pode incluir aplicar [dinheiro](/posts/criando-reserva-de-emergencia) em uma [conta poupança](https://www.bcb.gov.br) ou investir em [tesouro direto](https://www.tesourodireto.com.br). A reserva de emergência deve ser suficiente para cobrir 3 a 6 meses de despesas, caso você não tenha receita por um período.
 
 Por exemplo, se seus gastos mensais são de R$ 3.500, você deve ter uma reserva de emergência de R$ 10.500 a R$ 21.000. Isso pode parecer muito, mas é importante para garantir que você possa pagar suas contas mesmo em meses ruins.
 
@@ -50,7 +50,7 @@ Além disso, é fundamental ter um sistema de cobrança eficaz, para garantir qu
 
 
 ## [Educação Financeira](/glossario/educacao-financeira)
-[Educação financeira](/posts/7-erros-financeiros-iniciante) é fundamental para qualquer pessoa, especialmente para autônomos. Isso inclui entender conceitos básicos de finanças, como [juros](/glossario/juros), [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e impostos. Existem muitos recursos disponíveis online, como o [Investopedia](https://www.investopedia.com), que podem ajudar a melhorar seu conhecimento financeiro.
+[Educação financeira](/posts/7-erros-financeiros-iniciante) é fundamental para qualquer pessoa, especialmente para autônomos. Isso inclui entender conceitos básicos de finanças, como [juros](/glossario/juros), [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026))-qual-e-melhor-para-voce) e impostos. Existem muitos recursos disponíveis online, como o [Investopedia](https://www.investopedia.com), que podem ajudar a melhorar seu conhecimento financeiro.
 
 **Dica prática:** Reserve 1 hora por semana para aprender sobre [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e planejamento financeiro.
 

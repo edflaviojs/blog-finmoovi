@@ -52,7 +52,7 @@ Additionally, it's crucial to have an effective billing system to ensure you rec
 ## [Financial Education](/en/glossario/en-educacao-financeira)
 [Financial education](/en/posts/7-financial-mistakes-beginners) is essential for anyone, especially freelancers. This includes understanding basic financial concepts, such as interest, [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), and taxes. There are many resources available online, like [Investopedia](https://www.investopedia.com), that can help improve your financial knowledge.
 
-**Practical tip:** Set aside 1 hour per week to learn about [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and financial planning.
+**Practical tip:** Set aside 1 hour per week to learn about [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and [financial planning](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)).
 
 ## Start Today
 Don't delay your financial planning any longer. Start today by recording your expenses, planning your revenue, and investing in your future. Remember that financial planning is an ongoing process, and small changes can make a big difference over time.

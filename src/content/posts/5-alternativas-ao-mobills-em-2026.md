@@ -59,7 +59,7 @@ Grátis/Pago: Pago
 O Mint é um aplicativo de gestão financeira que ajuda os usuários a controlar seus gastos, criar orçamentos e monitorar suas contas. Com o Mint, você pode conectar suas contas bancárias e cartões de crédito para ter uma visão geral de suas finanças.
 Prós:
 * Interface fácil de usar
-* Ferramentas de orçamento avançadas
+* Ferramentas de [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) avançadas
 * Suporte ao cliente excelente
 Contras:
 * Pode ser confuso para iniciantes
@@ -70,7 +70,7 @@ Grátis/Pago: Grátis
 O YNAB é um aplicativo de gestão financeira que ajuda os usuários a controlar seus gastos, criar orçamentos e monitorar suas contas. Com o YNAB, você pode conectar suas contas bancárias e cartões de crédito para ter uma visão geral de suas finanças.
 Prós:
 * Interface fácil de usar
-* Ferramentas de orçamento avançadas
+* Ferramentas de [orçamento](/posts/como-criar-orcamento-pessoal) avançadas
 * Suporte ao cliente excelente
 Contras:
 * Pode ser caro para alguns usuários

@@ -26,7 +26,7 @@ Reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/meto
 
 For example, imagine you earn R$ 5,000 per month and spend R$ 2,000 on rent, R$ 1,000 on food, and R$ 500 on transportation. This leaves R$ 1,500 for other expenses and [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce). However, if inflation has increased by 10% over the past 6 months, the value of your [money](/en/posts/avoid-impulse-purchases) has decreased. You'll need to adjust your spending and [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) to maintain the same standard of living.
 
-![Why review your budget?](/images/posts/revisao-de-orcamento-2.svg)
+![Why review your [budget](/en/posts/how-to-create-personal-budget)?](/images/posts/revisao-de-orcamento-2.svg)
 
 
 
@@ -54,7 +54,7 @@ Here are some tips to keep your budget in order:
 *   Prioritize your needs over your desires
 *   Create an [emergency fund](/en/glossario/en-reserva-de-emergencia) to cover unexpected expenses
 *   Invest in your [financial education](/en/glossario/en-educacao-financeira) to make informed decisions
-*   Use a financial management app to help track your expenses and investments
+*   Use a [financial management](/en/posts/5-alternativas-ao-mobills-em-2026) app to help track your expenses and investments
 
 ![Tips to keep your budget in order](/images/posts/revisao-de-orcamento-4.webp)
 

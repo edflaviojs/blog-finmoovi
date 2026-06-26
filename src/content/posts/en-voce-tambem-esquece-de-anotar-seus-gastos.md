@@ -36,7 +36,7 @@ Additionally, FinMoovi offers intelligent reports with AI, allowing me to have a
 ## Before vs After FinMoovi
 Before using FinMoovi, I was always stressed about my finances. I didn't know where I was spending my [money](/en/posts/criar-reserva-de-emergencia), and I didn't have control over my expenses. I was always worried about not having enough [money](/en/posts/difference-between-investing-and-saving) to pay the bills and was always trying to cut expenses unnecessarily.
 
-After starting to use FinMoovi, I was able to have a clear view of my finances and make adjustments to improve. I can see exactly where I'm spending my money and make informed decisions about how to spend my money. I'm no longer stressed about my finances and can enjoy life without worrying about money.
+After starting to use FinMoovi, I was able to have a clear view of my finances and make adjustments to improve. I can see exactly where I'm spending my [money](/en/posts/financial-education-for-children) and make informed decisions about how to spend my [money](/en/posts/financial-planning-for-couples). I'm no longer stressed about my finances and can enjoy life without worrying about money.
 
 ![Antes vs Depois do FinMoovi](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-4.webp)
 

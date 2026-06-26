@@ -59,7 +59,7 @@ Gratuito/Pago: Pago
 El Mint es una aplicación de gestión financiera que ayuda a los usuarios a controlar sus gastos, crear presupuestos y monitorear sus cuentas. Con el Mint, puedes conectar tus cuentas bancarias y tarjetas de crédito para tener una visión general de tus finanzas.
 Pros:
 * Interfaz fácil de usar
-* Herramientas de presupuesto avanzadas
+* Herramientas de [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) avanzadas
 * Soporte al cliente excelente
 Contras:
 * Puede ser confuso para principiantes

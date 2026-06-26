@@ -24,7 +24,7 @@ Chegamos ao meio do ano, e é hora de parar e refletir sobre como estão nossas 
 ## Por que revisar o [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)?
 Revisar seu [orçamento](/posts/como-criar-orcamento-pessoal) é importante porque as coisas mudam ao longo do tempo. Seu salário pode ter aumentado, seus gastos podem ter mudado, ou você pode ter adquirido novas responsabilidades financeiras. Além disso, a [inflação](/glossario/inflacao) pode ter afetado o [valor](/glossario/valor) do seu [dinheiro](/posts/cashback-inteligente), tornando necessário ajustar seus gastos e [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce).
 
-Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com aluguel, R$ 1.000 com comida e R$ 500 com transporte. Isso deixa R$ 1.500 para outros gastos e [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-3-junho-2026))-qual-e-melhor-para-voce). No entanto, se a inflação aumentou 10% nos últimos 6 meses, o valor do seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) diminuiu. Você precisará ajustar seus gastos e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para manter o mesmo padrão de vida.
+Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com aluguel, R$ 1.000 com comida e R$ 500 com transporte. Isso deixa R$ 1.500 para outros gastos e [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-3-junho-2026))-qual-e-melhor-para-voce). No entanto, se a inflação aumentou 10% nos últimos 6 meses, o valor do seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) diminuiu. Você precisará ajustar seus gastos e [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026))-qual-rende-mais-em-2026) para manter o mesmo padrão de vida.
 
 ![Por que revisar o orçamento?](/images/posts/revisao-de-orcamento-2.svg)
 
@@ -44,7 +44,7 @@ Comece verificando seus gastos dos últimos 6 meses. Isso inclui todos os gastos
 Depois de verificar seus gastos, ajuste-os de acordo com suas necessidades e objetivos. Se você notar que está gastando muito em uma área, como restaurantes, tente reduzir esses gastos e realocar o dinheiro para outras áreas, como [poupança](/glossario/poupanca) ou [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce).
 
 ### 3. Verifique suas receitas
-Verifique suas receitas dos últimos 6 meses e ajuste-as de acordo com suas necessidades e objetivos. Se você recebeu um aumento de salário, por exemplo, você pode querer aumentar suas economias ou investimentos.
+Verifique suas receitas dos últimos 6 meses e ajuste-as de acordo com suas necessidades e objetivos. Se você recebeu um aumento de salário, por exemplo, você pode querer aumentar suas economias ou [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 
 ### 4. Ajuste seus investimentos
 Se você tem investimentos, como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de investimento, verifique se eles ainda estão alinhados com seus objetivos e ajuste-os de acordo. Você pode querer considerar investir em [Tesouro Direto](https://www.tesourodireto.com.br) ou outros investimentos de baixo risco.
