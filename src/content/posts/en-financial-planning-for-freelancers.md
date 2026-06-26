@@ -55,7 +55,7 @@ Additionally, it's crucial to have an effective billing system to ensure you rec
 **Practical tip:** Set aside 1 hour per week to learn about [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and [financial planning](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)).
 
 ## Start Today
-Don't delay your financial planning any longer. Start today by recording your expenses, planning your revenue, and investing in your future. Remember that financial planning is an ongoing process, and small changes can make a big difference over time.
+Don't delay your [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) any longer. Start today by recording your expenses, planning your revenue, and investing in your future. Remember that [financial planning](/en/posts/how-to-create-personal-budget) is an ongoing process, and small changes can make a big difference over time.
 
 ---
 

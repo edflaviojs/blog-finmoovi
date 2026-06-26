@@ -26,7 +26,7 @@ Reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/meto
 
 For example, imagine you earn R$ 5,000 per month and spend R$ 2,000 on rent, R$ 1,000 on food, and R$ 500 on transportation. This leaves R$ 1,500 for other expenses and [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce). However, if inflation has increased by 10% over the past 6 months, the value of your [money](/en/posts/avoid-impulse-purchases) has decreased. You'll need to adjust your spending and [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) to maintain the same standard of living.
 
-![Why review your [budget](/en/posts/how-to-create-personal-budget)?](/images/posts/revisao-de-orcamento-2.svg)
+![Why review your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas))?](/images/posts/revisao-de-orcamento-2.svg)
 
 
 
@@ -47,7 +47,7 @@ After checking your expenses, adjust them according to your needs and goals. If 
 Check your income over the past 6 months and adjust it according to your needs and goals. If you've received a salary increase, for example, you may want to increase your savings or investments.
 
 ### 4. Adjust Your Investments
-If you have investments, such as [stocks](/en/glossario/en-acoes) or investment funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.
+If you have investments, such as [stocks](/en/glossario/en-acoes) or [investment](/en/posts/montando-carteira-diversificada-com-r-500) funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.
 
 ## Tips to Keep Your Budget in Order
 Here are some tips to keep your budget in order:

@@ -44,7 +44,7 @@ Gratuito/Pago: Gratuito
 
 
 
-2. **FinMoovi**
+2. **[FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro)**
 El FinMoovi es una aplicación de gestión financiera que ofrece recursos avanzados como multi-moneda, sin conexión a Internet, captura inteligente por voz y categorización con IA. Con el FinMoovi, puedes controlar tus gastos, crear presupuestos y monitorear tus cuentas de forma eficiente.
 Pros:
 * Multi-moneda: te permite gestionar tus finanzas en diferentes monedas
@@ -70,7 +70,7 @@ Gratuito/Pago: Gratuito
 El YNAB es una aplicación de gestión financiera que ayuda a los usuarios a controlar sus gastos, crear presupuestos y monitorear sus cuentas. Con el YNAB, puedes conectar tus cuentas bancarias y tarjetas de crédito para tener una visión general de tus finanzas.
 Pros:
 * Interfaz fácil de usar
-* Herramientas de presupuesto avanzadas
+* Herramientas de [presupuesto](/es/posts/como-crear-presupuesto-personal) avanzadas
 * Soporte al cliente excelente
 Contras:
 * Puede ser caro para algunos usuarios

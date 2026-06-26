@@ -36,7 +36,7 @@ Além disso, o FinMoovi oferece relatórios inteligentes com IA, permitindo que 
 ## Antes vs Depois do FinMoovi
 Antes de usar o FinMoovi, eu estava sempre estressado com minhas finanças. Eu não sabia onde estava gastando meu [dinheiro](/posts/criando-reserva-de-emergencia) e não tinha controle sobre minhas despesas. Eu estava sempre preocupado em não ter [dinheiro](/posts/criar-reserva-de-emergencia) suficiente para pagar as contas e estava sempre tentando cortar gastos de forma desnecessária.
 
-Depois de começar a usar o FinMoovi, eu consegui ter uma visão clara de minhas finanças e fazer ajustes para melhorar. Eu posso ver exatamente onde estou gastando meu [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) e fazer escolhas informadas sobre como gastar meu dinheiro. Eu não estou mais estressado com minhas finanças e posso aproveitar a vida sem me preocupar com o dinheiro.
+Depois de começar a usar o FinMoovi, eu consegui ter uma visão clara de minhas finanças e fazer ajustes para melhorar. Eu posso ver exatamente onde estou gastando meu [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) e fazer escolhas informadas sobre como gastar meu [dinheiro](/posts/diferenca-entre-investir-e-poupar). Eu não estou mais estressado com minhas finanças e posso aproveitar a vida sem me preocupar com o [dinheiro](/posts/economizar-nas-compras-do-supermercado).
 
 ![Antes vs Depois do FinMoovi](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-4.webp)
 

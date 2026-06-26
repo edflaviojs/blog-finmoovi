@@ -36,13 +36,13 @@ Además, el FinMoovi ofrece informes inteligentes con IA, lo que me permite tene
 ## Antes vs Después del FinMoovi
 Antes de usar el FinMoovi, estaba siempre estresado con mis finanzas. No sabía dónde estaba gastando mi [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) y no tenía control sobre mis gastos. Estaba siempre preocupado por no tener suficiente [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado) para pagar las cuentas y estaba siempre intentando cortar gastos de forma innecesaria.
 
-Después de empezar a usar el FinMoovi, pude tener una visión clara de mis finanzas y hacer ajustes para mejorar. Puedo ver exactamente dónde estoy gastando mi [dinero](/es/posts/cashback-inteligente) y tomar decisiones informadas sobre cómo gastar mi [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito). No estoy más estresado con mis finanzas y puedo disfrutar la vida sin preocuparme por el dinero.
+Después de empezar a usar el FinMoovi, pude tener una visión clara de mis finanzas y hacer ajustes para mejorar. Puedo ver exactamente dónde estoy gastando mi [dinero](/es/posts/cashback-inteligente) y tomar decisiones informadas sobre cómo gastar mi [dinero](/es/posts/[consejos](/es/posts/7-errores-financieros-principiante)-para-controlar-gastos-en-la-tarjeta-de-credito). No estoy más estresado con mis finanzas y puedo disfrutar la vida sin preocuparme por el dinero.
 
 ![Antes vs Después del FinMoovi](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-4.webp)
 
 
 
-Según el [Banco Central del Brasil](https://www.bcb.gov.br), la gestión de gastos es fundamental para mantener la salud financiera. Y el [IBGE](https://www.ibge.gov.br) muestra que la mayoría de las personas en Brasil no tienen control sobre sus finanzas. ¡Es alarmante! Pero con el FinMoovi, puedo tener control sobre mis finanzas y mejorar mi salud financiera.
+Según el [Banco Central del Brasil](https://www.bcb.gov.br), la [gestión de gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) es fundamental para mantener la salud financiera. Y el [IBGE](https://www.ibge.gov.br) muestra que la mayoría de las personas en Brasil no tienen control sobre sus finanzas. ¡Es alarmante! Pero con el FinMoovi, puedo tener control sobre mis finanzas y mejorar mi salud financiera.
 
 ## Escenarios Prácticos de Uso
 Imagina que estás en un viaje internacional y necesitas registrar todos tus gastos en diferentes monedas. Con el FinMoovi, puedes registrar esos gastos fácilmente usando la funcionalidad de Smart Capture por voz o OCR, que reconoce texto en imágenes. Y lo mejor de todo: el FinMoovi categoriza automáticamente tus gastos, así que no tienes que preocuparte por anotar todo manualmente.

@@ -17,10 +17,10 @@ seo:
 ---
 
 ## Introdução ao [CDB](/glossario/cdb) e [Tesouro Selic](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce)
-Quando se trata de investir, é importante entender as opções disponíveis e como elas podem se adequar ao seu perfil de investidor. Dois dos investimentos mais populares no Brasil são o CDB (Certificado de Depósito Bancário) e o Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-3-junho-2026)). Mas, afinal, qual deles rende mais em 2026? Para entender isso, vamos mergulhar nos detalhes de cada um.
+Quando se trata de investir, é importante entender as opções disponíveis e como elas podem se adequar ao seu perfil de investidor. Dois dos [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) mais populares no Brasil são o CDB (Certificado de Depósito Bancário) e o Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-3-junho-2026)). Mas, afinal, qual deles rende mais em 2026? Para entender isso, vamos mergulhar nos detalhes de cada um.
 
 ### O que é CDB?
-O CDB é um tipo de investimento de [renda fixa](/glossario/renda-fixa) oferecido por bancos e instituições financeiras. Ele funciona como um empréstimo que você faz ao banco, e em troca, o banco paga uma taxa de [juros](/glossario/juros). O CDB pode ser pré-fixado, pós-fixado ou híbrido, cada um com sua própria forma de calcular os juros.
+O CDB é um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) de [renda fixa](/glossario/renda-fixa) oferecido por bancos e instituições financeiras. Ele funciona como um empréstimo que você faz ao banco, e em troca, o banco paga uma taxa de [juros](/glossario/juros). O CDB pode ser pré-fixado, pós-fixado ou híbrido, cada um com sua própria forma de calcular os juros.
 
 ### O que é [Tesouro Selic](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026))-qual-e-melhor-para-voce)?
 O [Tesouro Selic](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-maio-2026)-qual-e-melhor-para-voce), por outro lado, é um investimento de renda fixa emitido pelo Tesouro Nacional, com garantia do governo brasileiro. Ele é indexado à taxa [Selic](/glossario/selic), que é a taxa básica de juros da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) definida pelo Banco Central do Brasil. Isso significa que o rendimento do [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) acompanha as variações da taxa Selic.

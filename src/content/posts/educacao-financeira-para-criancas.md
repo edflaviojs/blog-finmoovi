@@ -21,7 +21,7 @@ Ensinar finanças às crianças é essencial para que elas desenvolvam hábitos 
 
 Uma forma eficaz de ensinar é usar exemplos do dia a dia. Se você ganha R$ 5.000 por mês e gasta R$ 1.500 com aluguel, R$ 800 com comida e R$ 500 com transporte, mostre às crianças como esses gastos se encaixam no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Isso ajuda a entender a importância de priorizar gastos.
 
-## Economia e [Poupança](/glossario/poupanca)
+## [Economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e [Poupança](/glossario/poupanca)
 Economizar é uma habilidade crucial que as crianças devem aprender desde cedo. Uma forma de incentivar a economia é criar um sistema de piggy bank ou uma conta poupança para elas. Por exemplo, se uma criança recebe R$ 20 por semana como mesada, ela pode guardar R$ 5 em uma conta poupança. Com o tempo, esse dinheiro pode ser usado para comprar algo que ela realmente deseja ou para investir em algo mais significativo.
 
 ## Investimento e Rendimentos
@@ -34,7 +34,7 @@ Economizar é uma habilidade crucial que as crianças devem aprender desde cedo.
 ## [Educação Financeira](/glossario/educacao-financeira) Avançada
 Quando as crianças entram na adolescência, elas podem aprender sobre conceitos financeiros mais avançados, como crédito e débito. É importante explicar a diferença entre usar um cartão de crédito e um cartão de débito, e como o crédito pode afetar a saúde financeira se não for gerenciado corretamente. Recursos como o [Banco Central do Brasil](https://www.bcb.gov.br) e o [Serasa](https://www.serasa.com.br) podem oferecer informações valiosas sobre gestão de crédito.
 
-## Planejamento Financeiro
+## [Planejamento Financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 O planejamento financeiro é uma habilidade que as crianças devem desenvolver para ter um futuro financeiro seguro. Isso inclui definir metas financeiras, criar um orçamento e investir em educação financeira contínua. Uma forma de ajudar as crianças a planejar é criar um plano de ação com metas curto e longo prazo. Por exemplo, uma meta curto prazo pode ser economizar R$ 500 para comprar um novo smartphone, enquanto uma meta longo prazo pode ser economizar para a faculdade.
 
 ![Educação Financeira Avançada](/images/posts/educacao-financeira-para-criancas-4.webp)

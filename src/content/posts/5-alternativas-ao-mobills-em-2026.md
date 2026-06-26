@@ -81,7 +81,7 @@ Grátis/Pago: Pago
 O Spendee é um aplicativo de gestão financeira que ajuda os usuários a controlar seus gastos, criar orçamentos e monitorar suas contas. Com o Spendee, você pode conectar suas contas bancárias e cartões de crédito para ter uma visão geral de suas finanças.
 Prós:
 * Interface fácil de usar
-* Ferramentas de orçamento avançadas
+* Ferramentas de [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro) avançadas
 * Suporte ao cliente excelente
 Contras:
 * Pode ser confuso para iniciantes
@@ -104,4 +104,4 @@ Aqui está uma tabela comparativa das 5 alternativas ao Mobills:
 
 ## Qual escolher?
 A escolha do aplicativo de gestão financeira certo depende das suas necessidades e preferências. Se você é um iniciante, o Personal Capital ou o Mint podem ser boas opções. Se você está procurando por recursos avançados, o FinMoovi ou o YNAB podem ser melhores opções. Se você está procurando por uma opção gratuita, o Spendee pode ser uma boa escolha.
-Lembre-se de que a gestão financeira é um processo contínuo e é importante encontrar um aplicativo que se adapte às suas necessidades e estilo de vida. Você pode ler mais sobre gestão financeira no [Investopedia](https://www.investopedia.com) ou no [NerdWallet](https://www.nerdwallet.com). Além disso, é sempre uma boa ideia consultar o [Banco Central](https://www.bcb.gov.br) para obter informações sobre [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e gestão de dinheiro.
+Lembre-se de que a gestão financeira é um processo contínuo e é importante encontrar um aplicativo que se adapte às suas necessidades e estilo de vida. Você pode ler mais sobre gestão financeira no [Investopedia](https://www.investopedia.com) ou no [NerdWallet](https://www.nerdwallet.com). Além disso, é sempre uma boa ideia consultar o [Banco Central](https://www.bcb.gov.br) para obter informações sobre [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e gestão de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz).

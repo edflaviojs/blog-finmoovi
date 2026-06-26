@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Planejamento Básico
-Quando você é autônomo, não tem um salário fixo todo mês. Isso significa que seu [planejamento financeiro](/posts/como-criar-orcamento-pessoal) precisa ser mais flexível e adaptável. Vamos começar com o básico: registrar todos os seus gastos e receitas. Isso pode ser feito com um aplicativo de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026), ou até mesmo com um caderno. O importante é ter uma visão clara de onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo.
+Quando você é autônomo, não tem um salário fixo todo mês. Isso significa que seu [planejamento financeiro](/posts/como-criar-orcamento-pessoal) precisa ser mais flexível e adaptável. Vamos começar com o básico: registrar todos os seus [gastos](/posts/metodo-50-30-20-para-salario-brasileiro) e receitas. Isso pode ser feito com um aplicativo de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026), ou até mesmo com um caderno. O importante é ter uma visão clara de onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo.
 
 Por exemplo, se você é um profissional autônomo que ganha cerca de R$ 5.000 por mês, mas tem meses em que ganha R$ 8.000 e outros em que ganha apenas R$ 3.000, você precisa planejar seus gastos com base na média dos últimos 6 meses. Além disso, é fundamental ter uma [reserva de emergência](/glossario/reserva-de-emergencia) para cobrir despesas inesperadas.
 
@@ -52,7 +52,7 @@ Além disso, é fundamental ter um sistema de cobrança eficaz, para garantir qu
 ## [Educação Financeira](/glossario/educacao-financeira)
 [Educação financeira](/posts/7-erros-financeiros-iniciante) é fundamental para qualquer pessoa, especialmente para autônomos. Isso inclui entender conceitos básicos de finanças, como [juros](/glossario/juros), [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026))-qual-e-melhor-para-voce) e impostos. Existem muitos recursos disponíveis online, como o [Investopedia](https://www.investopedia.com), que podem ajudar a melhorar seu conhecimento financeiro.
 
-**Dica prática:** Reserve 1 hora por semana para aprender sobre [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e planejamento financeiro.
+**Dica prática:** Reserve 1 hora por semana para aprender sobre [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme).
 
 ## Comece hoje
 Não adie mais seu planejamento financeiro. Comece hoje a registrar seus gastos, a planejar sua receita e a investir no seu futuro. Lembre-se de que o planejamento financeiro é um processo contínuo e que pequenas mudanças podem fazer uma grande diferença ao longo do tempo.
