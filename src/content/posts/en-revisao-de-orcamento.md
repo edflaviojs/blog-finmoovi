@@ -31,7 +31,7 @@ For example, imagine you earn R$ 5,000 per month and spend R$ 2,000 on rent, R$ 
 
 
 ## How to Review Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances))
-Reviewing your budget is a simple process, but it requires attention and honesty. Here are some steps to follow:
+Reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)) is a simple process, but it requires attention and honesty. Here are some steps to follow:
 
 ### 1. Check Your Expenses
 Start by checking your expenses over the past 6 months. This includes all expenses, from utility bills to supermarket purchases. You can use an app like [FinMoovi](/en/posts/5-alternativas-ao-[mobills](/en/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) to help track your expenses and identify areas where you can cut back.

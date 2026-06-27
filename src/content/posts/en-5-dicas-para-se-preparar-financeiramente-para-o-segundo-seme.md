@@ -20,7 +20,7 @@ seo:
 We've reached the middle of the year, and it's time to take stock of our financial situation. According to the [Instituto Brasileiro de Geografia e Estatística (IBGE)](https://www.ibge.gov.br), [inflation](/en/glossario/en-inflacao) in Brazil has been a challenge for many families. With rising prices, it's essential to have a solid financial plan to avoid surprises at the end of the month. In this post, we'll explore how to prepare financially for the second half of the year.
 
 ## Understanding Your Current Situation
-Before starting to plan, it's crucial to understand your current financial situation. This includes knowing how much you earn, how much you spend, and what your debts are. According to [Serasa](https://www.serasa.com.br), many Brazilians struggle to control their expenses, which can lead to financial problems. To avoid this, it's essential to have a rigorous control of your spending.
+Before starting to plan, it's crucial to understand your current financial situation. This includes knowing how much you earn, how much you spend, and what your debts are. According to [Serasa](https://www.serasa.com.br), many Brazilians struggle to control their [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro), which can lead to financial problems. To avoid this, it's essential to have a rigorous control of your spending.
 
 ## Defining Financial Goals
 Defining financial goals is vital to have a clear direction of where you want to go. This can include paying off debts, [saving](/en/posts/criar-reserva-de-emergencia) for a significant purchase, or simply having an [emergency fund](/en/glossario/en-reserva-de-emergencia). According to the [Banco Central do Brasil](https://www.bcb.gov.br), it's recommended to have an emergency fund equivalent to at least 3 months of expenses. Here are some tips to define your financial goals:
@@ -42,7 +42,7 @@ With your goals defined, it's time to create an action plan. This includes defin
 4. **Monitor**: Monitor your progress regularly and make necessary adjustments.
 
 ## Tools to Help
-There are many tools that can help you control your expenses and achieve your financial goals. One of them is [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026), which allows you to track your expenses and income in an easy and practical way. With FinMoovi, you can have a clear view of your financial situation and make necessary adjustments to achieve your goals.
+There are many tools that can help you control your expenses and achieve your financial goals. One of them is [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026), which allows you to track your expenses and income in an easy and practical way. With [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), you can have a clear view of your financial situation and make necessary adjustments to achieve your goals.
 
 ![Creating an Action Plan](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 

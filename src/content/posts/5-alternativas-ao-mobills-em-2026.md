@@ -37,7 +37,7 @@ Prós:
 * Suporte ao cliente excelente
 Contras:
 * Pode ser confuso para iniciantes
-* Taxas de investimento podem ser altas
+* Taxas de [investimento](/posts/tesouro-direto-para-iniciantes) podem ser altas
 Grátis/Pago: Grátis
 
 ![5 Alternativas ao Mobills](/images/posts/5-alternativas-ao-mobills-em-2026-3.webp)
@@ -90,7 +90,7 @@ Grátis/Pago: Grátis
 
 ## Tabela Comparativa
 Aqui está uma tabela comparativa das 5 alternativas ao Mobills:
-| Aplicativo | Interface | Ferramentas de Orçamento | Suporte ao Cliente | Grátis/Pago |
+| Aplicativo | Interface | Ferramentas de [Orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) | Suporte ao Cliente | Grátis/Pago |
 | --- | --- | --- | --- | --- |
 | Personal Capital | Fácil de usar | Avançadas | Excelente | Grátis |
 | FinMoovi | Fácil de usar | Avançadas | Excelente | Pago |

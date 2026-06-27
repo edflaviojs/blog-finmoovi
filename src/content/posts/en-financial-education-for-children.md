@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Basic Financial Teaching
-Teaching finances to children is essential for them to develop healthy habits regarding money. This starts with basic concepts, such as the difference between needs and desires. For example, a child may desire a toy worth R$ 100, but needs a pair of shoes worth R$ 50 to go to school. **Practical tip:** create a table with your expenses and income so that children can better understand how money is managed.
+Teaching finances to children is essential for them to develop healthy habits regarding [money](/en/posts/avoid-impulse-purchases). This starts with basic concepts, such as the difference between needs and desires. For example, a child may desire a toy worth R$ 100, but needs a pair of shoes worth R$ 50 to go to school. **Practical tip:** create a table with your expenses and income so that children can better understand how money is managed.
 
 An effective way to teach is to use everyday examples. If you earn R$ 5,000 per month and spend R$ 1,500 on rent, R$ 800 on food, and R$ 500 on transportation, show the children how these expenses fit into the [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). This helps to understand the importance of prioritizing expenses.
 
@@ -35,7 +35,7 @@ As children grow, they can learn about investments and returns. This can start w
 When children enter adolescence, they can learn about more advanced financial concepts, such as credit and debit. It's essential to explain the difference between using a credit card and a debit card, and how credit can affect financial health if not managed correctly. Resources like the [Banco Central do Brasil](https://www.bcb.gov.br) and the [Serasa](https://www.serasa.com.br) can provide valuable information on credit management.
 
 ## [Financial Planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
-[Financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) is a skill that children should develop to have a secure financial future. This includes setting financial goals, creating a [budget](/en/posts/50-30-20-rule-complete-guide), and investing in continuous financial education. One way to help children plan is to create an action plan with short-term and long-term goals. For example, a short-term goal can be to save R$ 500 to buy a new smartphone, while a long-term goal can be to save for college.
+[Financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) is a skill that children should develop to have a secure financial future. This includes setting financial goals, creating a [budget](/en/posts/50-30-20-rule-complete-guide), and investing in continuous [financial education](/en/posts/7-financial-mistakes-beginners). One way to help children plan is to create an action plan with short-term and long-term goals. For example, a short-term goal can be to save R$ 500 to buy a new smartphone, while a long-term goal can be to save for college.
 
 ![Educação Financeira Avançada](/images/posts/educacao-financeira-para-criancas-4.webp)
 

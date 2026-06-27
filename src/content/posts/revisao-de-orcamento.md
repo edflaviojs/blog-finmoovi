@@ -26,7 +26,7 @@ Revisar seu [orçamento](/posts/como-criar-orcamento-pessoal) é importante porq
 
 Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com aluguel, R$ 1.000 com comida e R$ 500 com transporte. Isso deixa R$ 1.500 para outros gastos e [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-3-junho-2026))-qual-e-melhor-para-voce). No entanto, se a inflação aumentou 10% nos últimos 6 meses, o valor do seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) diminuiu. Você precisará ajustar seus gastos e [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026))-qual-rende-mais-em-2026) para manter o mesmo padrão de vida.
 
-![Por que revisar o orçamento?](/images/posts/revisao-de-orcamento-2.svg)
+![Por que revisar o [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro)?](/images/posts/revisao-de-orcamento-2.svg)
 
 
 
@@ -34,7 +34,7 @@ Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com alug
 Revisar o orçamento é um processo simples, mas requer atenção e honestidade. Aqui estão alguns passos para seguir:
 
 ### 1. Verifique seus gastos
-Comece verificando seus gastos dos últimos 6 meses. Isso inclui todos os gastos, desde contas de serviços até compras de supermercado. Você pode usar um aplicativo como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) para ajudar a rastrear seus gastos e identificar áreas onde pode cortar.
+Comece verificando seus gastos dos últimos 6 meses. Isso inclui todos os gastos, desde contas de serviços até compras de supermercado. Você pode usar um aplicativo como o [FinMoovi](/posts/5-alternativas-ao-[mobills](/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) para ajudar a rastrear seus gastos e identificar áreas onde pode cortar.
 
 ![Como revisar o orçamento](/images/posts/revisao-de-orcamento-3.webp)
 

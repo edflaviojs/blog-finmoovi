@@ -37,7 +37,7 @@ Although cashback can be a great way to save money, it's essential to be aware o
 
 
 ## Start today
-Now that you know how to use cashback intelligently, it's time to start saving money. Remember that cashback is just one part of your personal finances. To have a complete view of your finances, it's also important to consider other aspects, such as investments and financial planning. Visit the [Investopedia](https://www.investopedia.com) to learn more about [personal finance](/en/posts/30-day-rule-for-purchases) and how to create a customized financial plan.
+Now that you know how to use cashback intelligently, it's time to start saving money. Remember that cashback is just one part of your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). To have a complete view of your finances, it's also important to consider other aspects, such as investments and [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Visit the [Investopedia](https://www.investopedia.com) to learn more about [personal finance](/en/posts/30-day-rule-for-purchases) and how to create a customized financial plan.
 
 ![Evitando armadilhas](/images/posts/cashback-inteligente-4.webp)
 

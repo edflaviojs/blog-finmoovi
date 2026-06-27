@@ -70,7 +70,7 @@ Gratuito/Pago: Gratuito
 El YNAB es una aplicación de gestión financiera que ayuda a los usuarios a controlar sus gastos, crear presupuestos y monitorear sus cuentas. Con el YNAB, puedes conectar tus cuentas bancarias y tarjetas de crédito para tener una visión general de tus finanzas.
 Pros:
 * Interfaz fácil de usar
-* Herramientas de [presupuesto](/es/posts/como-crear-presupuesto-personal) avanzadas
+* Herramientas de [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) avanzadas
 * Soporte al cliente excelente
 Contras:
 * Puede ser caro para algunos usuarios
@@ -81,7 +81,7 @@ Gratuito/Pago: Pago
 El Spendee es una aplicación de gestión financiera que ayuda a los usuarios a controlar sus gastos, crear presupuestos y monitorear sus cuentas. Con el Spendee, puedes conectar tus cuentas bancarias y tarjetas de crédito para tener una visión general de tus finanzas.
 Pros:
 * Interfaz fácil de usar
-* Herramientas de presupuesto avanzadas
+* Herramientas de [presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) avanzadas
 * Soporte al cliente excelente
 Contras:
 * Puede ser confuso para principiantes

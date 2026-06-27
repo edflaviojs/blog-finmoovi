@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Enseñanza Financiera Básica
-Enseñar finanzas a los niños es esencial para que desarrollen hábitos saludables en relación con el dinero. Esto comienza con conceptos básicos, como la diferencia entre necesidades y deseos. Por ejemplo, un niño puede desear un juguete de R$ 100, pero necesita un par de zapatos de R$ 50 para ir a la escuela. **Consejo práctico:** crea una tabla con tus gastos y ingresos para que los niños entiendan mejor cómo se gestiona el dinero.
+Enseñar finanzas a los niños es esencial para que desarrollen hábitos saludables en relación con el [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Esto comienza con conceptos básicos, como la diferencia entre necesidades y deseos. Por ejemplo, un niño puede desear un juguete de R$ 100, pero necesita un par de zapatos de R$ 50 para ir a la escuela. **Consejo práctico:** crea una tabla con tus gastos y ingresos para que los niños entiendan mejor cómo se gestiona el [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado).
 
 Una forma eficaz de enseñar es usar ejemplos del día a día. Si ganas R$ 5.000 por mes y gastas R$ 1.500 con alquiler, R$ 800 con comida y R$ 500 con transporte, muéstrales a los niños cómo estos gastos se ajustan al [presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Esto ayuda a entender la importancia de priorizar gastos.
 

@@ -23,7 +23,7 @@ Você já passou por uma situação em que viu algo que não precisava, mas acab
 Para evitar compras por impulso, é importante entender por que elas acontecem. Em muitos casos, as compras por impulso são motivadas por emoções, como felicidade, tristeza ou tédio. Além disso, a publicidade e a pressão social também podem influenciar nossas decisões de compra. **Dica prática:** Quando você sentir o impulso de comprar algo, tente esperar 24 horas antes de fazer a compra. Isso pode ajudar a reduzir a probabilidade de uma compra por impulso.
 
 ## Estratégias para Evitar Compras por Impulso
-Existem várias estratégias que podem ajudar a evitar compras por impulso. Uma delas é criar um orçamento e seguir um plano de gastos. Isso pode ajudar a identificar áreas em que você pode cortar gastos desnecessários e alocar recursos para coisas mais importantes. Outra estratégia é evitar lojas e sites de compras quando você estiver se sentindo emocionalmente vulnerável. Além disso, é importante ter um objetivo claro de [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) e trabalhar para alcançá-lo. Por exemplo, se você quer economizar R$ 10.000 em um ano, você precisará economizar R$ 833 por mês.
+Existem várias estratégias que podem ajudar a evitar compras por impulso. Uma delas é criar um [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro) e seguir um plano de gastos. Isso pode ajudar a identificar áreas em que você pode cortar gastos desnecessários e alocar recursos para coisas mais importantes. Outra estratégia é evitar lojas e sites de compras quando você estiver se sentindo emocionalmente vulnerável. Além disso, é importante ter um objetivo claro de [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) e trabalhar para alcançá-lo. Por exemplo, se você quer economizar R$ 10.000 em um ano, você precisará economizar R$ 833 por mês.
 
 ![Entendendo o Comportamento](/images/posts/evite-compras-por-impulso-2.webp)
 
@@ -47,4 +47,4 @@ Não é necessário esperar para começar a evitar compras por impulso e melhora
 
 
 ---
-**Quer sair da teoria? [Baixe o FinMoovi grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**
+**Quer sair da teoria? [Baixe o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**

@@ -20,7 +20,7 @@ seo:
 You also forget to record your [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro)? I know I do! It's easy to lose control over daily expenses, especially when traveling or just living life day to day. Even more so when dealing with different currencies, such as dollars and euros, in addition to the real. It's like our mind is always somewhere else, and before we know it, the month is over, and we don't know where all our [money](/en/posts/avoid-impulse-purchases) went.
 
 ## The Pain of Not Having Control
-The pain of not having control over finances is real. Imagine you're planning an international trip and need to record all your expenses in different currencies. You might think, "I'll write everything down in a notebook" or "I'll use any app to record my expenses." But in practice, it's not as easy as it seems. You might forget to record an expense or, worse, not have a way to record expenses in different currencies effectively.
+The pain of not having control over finances is real. Imagine you're [planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas) an international trip and need to record all your expenses in different currencies. You might think, "I'll write everything down in a notebook" or "I'll use any app to record my expenses." But in practice, it's not as easy as it seems. You might forget to record an expense or, worse, not have a way to record expenses in different currencies effectively.
 
 For example, imagine you're on a trip to the US and buy a snack in dollars. You need to record that expense in reals, but how will you do that? You'll need to exchange the currency, calculate the exchange rate, and record the expense. And what if you're in a place without internet? How will you record the expense? That's where [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) comes in.
 
@@ -52,7 +52,7 @@ Another practical scenario is when you're in a place without internet. With FinM
 ## Try FinMoovi
 Try FinMoovi for free for 7 days and see the difference. With FinMoovi, you can have control over your finances and improve your financial health. You no longer have to worry about losing any expenses or not being able to record your expenses in different currencies. FinMoovi is the perfect solution for those who want to have control over their finances and improve their financial life.
 
-Additionally, you can learn more about expense management and [personal finance](/en/posts/30-day-rule-for-purchases) on [Investopedia](https://www.investopedia.com). And if you're having problems with debt, you can consult [Serasa](https://www.serasa.com.br) for help.
+Additionally, you can learn more about [expense management](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) and [personal finance](/en/posts/30-day-rule-for-purchases) on [Investopedia](https://www.investopedia.com). And if you're having problems with debt, you can consult [Serasa](https://www.serasa.com.br) for help.
 
 ![Experimente o FinMoovi](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-6.webp)
 

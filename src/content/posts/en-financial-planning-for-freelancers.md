@@ -16,8 +16,8 @@ seo:
   keywords: ["financial planning for freelancers","personal finance","economy","money"]
 ---
 
-## Basic Planning
-When you're a freelancer, you don't have a fixed salary every month. This means your [financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) needs to be more flexible and adaptable. Let's start with the basics: recording all your expenses and income. This can be done with a [personal finance](/en/posts/30-day-rule-for-purchases) app, like [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026), or even with a notebook. The important thing is to have a clear view of where your [money](/en/posts/avoid-impulse-purchases) is going.
+## Basic [Planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas)
+When you're a freelancer, you don't have a fixed salary every month. This means your [financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) needs to be more flexible and adaptable. Let's start with the basics: recording all your expenses and [income](/en/posts/montando-carteira-diversificada-com-r-500). This can be done with a [personal finance](/en/posts/30-day-rule-for-purchases) app, like [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026), or even with a notebook. The important thing is to have a clear view of where your [money](/en/posts/avoid-impulse-purchases) is going.
 
 For example, if you're a freelance professional who earns around $5,000 per month, but has months where you earn $8,000 and others where you earn only $3,000, you need to plan your expenses based on the average of the last 6 months. Additionally, it's essential to have an [emergency fund](/en/glossario/en-reserva-de-emergencia) to cover unexpected expenses.
 

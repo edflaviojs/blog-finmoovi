@@ -28,7 +28,7 @@ Por ejemplo, imagina que estás en un viaje en los EE. UU. y compras un snack en
 
 
 
-## La Solución: FinMoovi
+## La Solución: [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro)
 Descubrí el FinMoovi hace unos meses y mi vida cambió. Con el FinMoovi, puedo registrar mis gastos fácilmente usando la funcionalidad de Smart Capture por voz o OCR, que reconoce texto en imágenes. Y lo mejor de todo: el FinMoovi categoriza automáticamente mis gastos, así que no tengo que preocuparme por anotar todo manualmente.
 
 Además, el FinMoovi ofrece informes inteligentes con IA, lo que me permite tener una visión clara de mis finanzas, incluso estando offline. ¡Es increíble! Puedo ver exactamente dónde estoy gastando mi [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) y hacer ajustes para mejorar mis finanzas.
@@ -52,7 +52,7 @@ Otro escenario práctico es cuando estás en un lugar sin internet. Con el FinMo
 ## Experimenta el FinMoovi
 Experimenta el FinMoovi gratis por 7 días y ve la diferencia. Con el FinMoovi, puedes tener control sobre tus finanzas y mejorar tu salud financiera. No tienes que preocuparte por perder algún gasto o no tener cómo registrar tus gastos en diferentes monedas. El FinMoovi es la solución perfecta para quien quiere tener control sobre sus finanzas y mejorar su vida financiera.
 
-Además, puedes aprender más sobre gestión de gastos y [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) en el [Investopedia](https://www.investopedia.com). Y si estás teniendo problemas con deudas, puedes consultar la [Serasa](https://www.serasa.com.br) para obtener ayuda.
+Además, puedes aprender más sobre [gestión de gastos](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) y [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) en el [Investopedia](https://www.investopedia.com). Y si estás teniendo problemas con deudas, puedes consultar la [Serasa](https://www.serasa.com.br) para obtener ayuda.
 
 ![Experimente o FinMoovi](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-6.webp)
 

@@ -55,7 +55,7 @@ Além disso, é fundamental ter um sistema de cobrança eficaz, para garantir qu
 **Dica prática:** Reserve 1 hora por semana para aprender sobre [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme).
 
 ## Comece hoje
-Não adie mais seu planejamento financeiro. Comece hoje a registrar seus gastos, a planejar sua receita e a investir no seu futuro. Lembre-se de que o planejamento financeiro é um processo contínuo e que pequenas mudanças podem fazer uma grande diferença ao longo do tempo.
+Não adie mais seu [planejamento financeiro](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-). Comece hoje a registrar seus gastos, a planejar sua receita e a investir no seu futuro. Lembre-se de que o planejamento financeiro é um processo contínuo e que pequenas mudanças podem fazer uma grande diferença ao longo do tempo.
 
 ---
 
