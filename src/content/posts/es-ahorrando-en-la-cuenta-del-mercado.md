@@ -40,7 +40,7 @@ Tener control sobre los gastos es esencial para mantener el [ahorro](/es/posts/a
 
 
 ## Comienza hoy
-No esperes más para empezar a ahorrar. Con pequeños cambios en tus hábitos de compras y un poco de planificación, puedes empezar a ver una diferencia significativa en tu cuenta bancaria. Recuerda que el ahorro es un proceso continuo y que cada pequeño paso cuenta. Así que comienza ahora y ve cómo tu situación financiera puede mejorar con el tiempo.
+No esperes más para empezar a ahorrar. Con pequeños cambios en tus hábitos de compras y un poco de planificación, puedes empezar a ver una diferencia significativa en tu cuenta bancaria. Recuerda que el [ahorro](/es/posts/cashback-inteligente) es un proceso continuo y que cada pequeño paso cuenta. Así que comienza ahora y ve cómo tu situación financiera puede mejorar con el tiempo.
 
 ![Comienza hoy](/images/posts/economize-na-conta-do-mercado-5.webp)
 

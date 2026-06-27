@@ -60,7 +60,7 @@ La regla 50-30-20 es uno de los métodos más simples y efectivos para administr
 
 ## Cómo Adaptar la Regla
 
-La 50-30-20 es un punto de partida, no una fórmula rígida. Si vives en una ciudad cara, tus necesidades pueden ser 60%. Si estás pagando deudas agresivamente, el ahorro puede ser 30%. La clave es tener un sistema.
+La 50-30-20 es un punto de partida, no una fórmula rígida. Si vives en una ciudad cara, tus necesidades pueden ser 60%. Si estás pagando deudas agresivamente, el [ahorro](/es/posts/cashback-inteligente) puede ser 30%. La clave es tener un sistema.
 
 ## Rastréalo Automáticamente
 

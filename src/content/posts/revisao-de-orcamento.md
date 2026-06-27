@@ -41,13 +41,13 @@ Comece verificando seus gastos dos últimos 6 meses. Isso inclui todos os gastos
 
 
 ### 2. Ajuste seus gastos
-Depois de verificar seus gastos, ajuste-os de acordo com suas necessidades e objetivos. Se você notar que está gastando muito em uma área, como restaurantes, tente reduzir esses gastos e realocar o dinheiro para outras áreas, como [poupança](/glossario/poupanca) ou [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-maio-2026))-qual-e-melhor-para-voce).
+Depois de verificar seus gastos, ajuste-os de acordo com suas necessidades e objetivos. Se você notar que está gastando muito em uma área, como restaurantes, tente reduzir esses gastos e realocar o [dinheiro](/posts/criando-reserva-de-emergencia) para outras áreas, como [poupança](/glossario/poupanca) ou [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-maio-2026))-qual-e-melhor-para-voce).
 
 ### 3. Verifique suas receitas
-Verifique suas receitas dos últimos 6 meses e ajuste-as de acordo com suas necessidades e objetivos. Se você recebeu um aumento de salário, por exemplo, você pode querer aumentar suas economias ou [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
+Verifique suas receitas dos últimos 6 meses e ajuste-as de acordo com suas necessidades e objetivos. Se você recebeu um aumento de salário, por exemplo, você pode querer aumentar suas economias ou [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/selic)-qual-rende-mais-em-2026).
 
 ### 4. Ajuste seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
-Se você tem investimentos, como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de investimento, verifique se eles ainda estão alinhados com seus objetivos e ajuste-os de acordo. Você pode querer considerar investir em [Tesouro Direto](https://www.tesourodireto.com.br) ou outros investimentos de baixo risco.
+Se você tem [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de investimento, verifique se eles ainda estão alinhados com seus objetivos e ajuste-os de acordo. Você pode querer considerar investir em [Tesouro Direto](https://www.tesourodireto.com.br) ou outros investimentos de baixo risco.
 
 ## Dicas para manter seu orçamento em ordem
 Aqui estão algumas dicas para manter seu orçamento em ordem:

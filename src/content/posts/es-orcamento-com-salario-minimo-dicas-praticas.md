@@ -53,7 +53,7 @@ Gastos variables, como transporte y alimentación fuera, pueden ser difíciles d
 
 
 ## Construyendo un [Ahorro](/es/posts/regla-de-los-30-dias-para-compras)
-Construir un ahorro es esencial para lidiar con imprevistos y alcanzar objetivos financieros de largo plazo. Aquí están algunas etapas para empezar:
+Construir un [ahorro](/es/posts/cashback-inteligente) es esencial para lidiar con imprevistos y alcanzar objetivos financieros de largo plazo. Aquí están algunas etapas para empezar:
 1. Defina metas: Establezca metas específicas, como crear un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) o ahorrar para una compra importante.
 2. Automatice: Configure transferencias automáticas de su cuenta corriente a su cuenta de ahorro.
 3. Aumente gradualmente: Aumente la cantidad ahorrada con el tiempo, a medida que su situación financiera mejore.

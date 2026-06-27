@@ -21,7 +21,7 @@ Enseñar finanzas a los niños es esencial para que desarrollen hábitos saludab
 
 Una forma eficaz de enseñar es usar ejemplos del día a día. Si ganas R$ 5.000 por mes y gastas R$ 1.500 con alquiler, R$ 800 con comida y R$ 500 con transporte, muéstrales a los niños cómo estos gastos se ajustan al [presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Esto ayuda a entender la importancia de priorizar gastos.
 
-## [Economía](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) y Ahorro
+## [Economía](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) y [Ahorro](/es/posts/ahorra-en-las-compras-del-supermercado)
 Ahorrar es una habilidad crucial que los niños deben aprender desde temprano. Una forma de fomentar el ahorro es crear un sistema de hucha o una cuenta de ahorro para ellos. Por ejemplo, si un niño recibe R$ 20 por semana como mesada, puede guardar R$ 5 en una cuenta de ahorro. Con el tiempo, este dinero puede ser utilizado para comprar algo que realmente desee o para invertir en algo más significativo.
 
 ## Inversión y Rendimientos
@@ -35,7 +35,7 @@ A medida que los niños crecen, pueden aprender sobre inversiones y rendimientos
 Cuando los niños entran en la adolescencia, pueden aprender sobre conceptos financieros más avanzados, como crédito y débito. Es importante explicar la diferencia entre usar una tarjeta de crédito y una tarjeta de débito, y cómo el crédito puede afectar la salud financiera si no se gestiona correctamente. Recursos como el [Banco Central do Brasil](https://www.bcb.gov.br) y el [Serasa](https://www.serasa.com.br) pueden ofrecer información valiosa sobre gestión de crédito.
 
 ## [Planificación Financiera](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
-La planificación financiera es una habilidad que los niños deben desarrollar para tener un futuro financiero seguro. Esto incluye definir metas financieras, crear un presupuesto e invertir en educación financiera continua. Una forma de ayudar a los niños a planificar es crear un plan de acción con metas a corto y largo plazo. Por ejemplo, una meta a corto plazo puede ser ahorrar R$ 500 para comprar un nuevo smartphone, mientras que una meta a largo plazo puede ser ahorrar para la universidad.
+La planificación financiera es una habilidad que los niños deben desarrollar para tener un futuro financiero seguro. Esto incluye definir metas financieras, crear un presupuesto e invertir en [educación financiera](/es/posts/7-errores-financieros-principiante) continua. Una forma de ayudar a los niños a planificar es crear un plan de acción con metas a corto y largo plazo. Por ejemplo, una meta a corto plazo puede ser ahorrar R$ 500 para comprar un nuevo smartphone, mientras que una meta a largo plazo puede ser ahorrar para la universidad.
 
 ![Educación Financiera Avançada](/images/posts/educacao-financeira-para-criancas-4.webp)
 

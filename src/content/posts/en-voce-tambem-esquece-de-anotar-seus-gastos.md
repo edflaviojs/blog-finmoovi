@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introduction to the Problem
-You also forget to record your expenses? I know I do! It's easy to lose control over daily expenses, especially when traveling or just living life day to day. Even more so when dealing with different currencies, such as dollars and euros, in addition to the real. It's like our mind is always somewhere else, and before we know it, the month is over, and we don't know where all our [money](/en/posts/avoid-impulse-purchases) went.
+You also forget to record your [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro)? I know I do! It's easy to lose control over daily expenses, especially when traveling or just living life day to day. Even more so when dealing with different currencies, such as dollars and euros, in addition to the real. It's like our mind is always somewhere else, and before we know it, the month is over, and we don't know where all our [money](/en/posts/avoid-impulse-purchases) went.
 
 ## The Pain of Not Having Control
 The pain of not having control over finances is real. Imagine you're planning an international trip and need to record all your expenses in different currencies. You might think, "I'll write everything down in a notebook" or "I'll use any app to record my expenses." But in practice, it's not as easy as it seems. You might forget to record an expense or, worse, not have a way to record expenses in different currencies effectively.
@@ -28,7 +28,7 @@ For example, imagine you're on a trip to the US and buy a snack in dollars. You 
 
 
 
-## The Solution: FinMoovi
+## The Solution: [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro)
 I discovered FinMoovi a few months ago, and my life changed. With FinMoovi, I can easily record my expenses using the Smart Capture feature by voice or OCR, which recognizes text in images. And the best part? FinMoovi automatically categorizes my expenses, so I no longer have to worry about writing everything down manually.
 
 Additionally, FinMoovi offers intelligent reports with AI, allowing me to have a clear view of my finances, even when offline. This is amazing! I can see exactly where I'm spending my [money](/en/posts/creating-an-emergency-fund) and make adjustments to improve my finances.

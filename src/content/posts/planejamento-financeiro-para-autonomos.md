@@ -16,7 +16,7 @@ seo:
   keywords: ["planejamento financeiro para autônomos","finanças pessoais","economia","dinheiro"]
 ---
 
-## Planejamento Básico
+## [Planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) Básico
 Quando você é autônomo, não tem um salário fixo todo mês. Isso significa que seu [planejamento financeiro](/posts/como-criar-orcamento-pessoal) precisa ser mais flexível e adaptável. Vamos começar com o básico: registrar todos os seus [gastos](/posts/metodo-50-30-20-para-salario-brasileiro) e receitas. Isso pode ser feito com um aplicativo de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026), ou até mesmo com um caderno. O importante é ter uma visão clara de onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo.
 
 Por exemplo, se você é um profissional autônomo que ganha cerca de R$ 5.000 por mês, mas tem meses em que ganha R$ 8.000 e outros em que ganha apenas R$ 3.000, você precisa planejar seus gastos com base na média dos últimos 6 meses. Além disso, é fundamental ter uma [reserva de emergência](/glossario/reserva-de-emergencia) para cobrir despesas inesperadas.
@@ -63,4 +63,4 @@ Não adie mais seu planejamento financeiro. Comece hoje a registrar seus gastos,
 
 
 
-**Quer ver isso funcionando na prática? [Comece grátis com o FinMoovi](https://finmoovi.com) — 7 dias para organizar suas finanças sem complicação.**
+**Quer ver isso funcionando na prática? [Comece grátis com o FinMoovi](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) — 7 dias para organizar suas finanças sem complicação.**

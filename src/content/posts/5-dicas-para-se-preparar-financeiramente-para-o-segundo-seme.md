@@ -23,7 +23,7 @@ Chegamos ao meio do ano e é hora de fazer um balanço de como está nossa situa
 Antes de começar a planejar, é importante entender sua situação financeira atual. Isso inclui saber quanto você ganha, quanto gasta e quais são suas dívidas. Segundo a [Serasa](https://www.serasa.com.br), muitos brasileiros têm dificuldade em controlar seus gastos e isso pode levar a problemas financeiros. Para evitar isso, é fundamental ter um controle rigoroso de seus gastos.
 
 ## Definindo Metas Financeiras
-Definir metas financeiras é essencial para ter um direção clara de onde você quer chegar. Isso pode incluir pagar dívidas, economizar para uma compra importante ou simplesmente ter uma [reserva de emergência](/glossario/reserva-de-emergencia). De acordo com o [Banco Central do Brasil](https://www.bcb.gov.br), é recomendável ter uma reserva de emergência equivalente a pelo menos 3 meses de despesas. Aqui estão algumas dicas para definir suas metas financeiras:
+Definir metas financeiras é essencial para ter um direção clara de onde você quer chegar. Isso pode incluir pagar dívidas, economizar para uma compra importante ou simplesmente ter uma [reserva de emergência](/glossario/reserva-de-emergencia). De acordo com o [Banco Central do Brasil](https://www.bcb.gov.br), é recomendável ter uma reserva de emergência equivalente a pelo menos 3 meses de despesas. Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para definir suas metas financeiras:
 1. **Seja específico**: Em vez de dizer "quero economizar", diga "quero economizar R$ 1.000,00 em 3 meses".
 2. **Seja mensurável**: Defina metas que possam ser medidas, como "reduzir gastos com alimentação em 20%".
 3. **Seja alcançável**: Defina metas que sejam realistas e possam ser alcançadas.
@@ -37,7 +37,7 @@ Definir metas financeiras é essencial para ter um direção clara de onde você
 ## Criando um Plano de Ação
 Com suas metas definidas, é hora de criar um plano de ação. Isso inclui definir como você vai alcançar suas metas e quais passos você precisa dar. Aqui estão algumas dicas para criar um plano de ação:
 1. **Priorize**: Priorize suas metas e defina quais são as mais importantes.
-2. **Crie um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)**: Crie um orçamento que inclua todas suas despesas e receitas.
+2. **Crie um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)**: Crie um [orçamento](/posts/como-criar-orcamento-pessoal) que inclua todas suas despesas e receitas.
 3. **Defina [ações](/glossario/acoes)**: Defina ações específicas que você precisa tomar para alcançar suas metas.
 4. **Monitore**: Monitore seu progresso regularmente e faça ajustes necessários.
 

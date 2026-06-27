@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introdução ao Problema
-Você também esquece de anotar seus gastos? Eu sei que eu sim! É fácil perder o controle sobre as despesas diárias, especialmente quando estamos viajando ou simplesmente vivendo a vida no dia a dia. Ainda mais quando estamos lidando com diferentes moedas, como dólares e euros, além do real. É como se nossa mente estivesse sempre em outro lugar, e antes que percebamos, o mês já acabou e não sabemos onde foi parar todo o nosso [dinheiro](/posts/cashback-inteligente).
+Você também esquece de anotar seus [gastos](/posts/metodo-50-30-20-para-salario-brasileiro)? Eu sei que eu sim! É fácil perder o controle sobre as despesas diárias, especialmente quando estamos viajando ou simplesmente vivendo a vida no dia a dia. Ainda mais quando estamos lidando com diferentes moedas, como dólares e euros, além do real. É como se nossa mente estivesse sempre em outro lugar, e antes que percebamos, o mês já acabou e não sabemos onde foi parar todo o nosso [dinheiro](/posts/cashback-inteligente).
 
 ## A Dor de Não Ter Controle
 A dor de não ter controle sobre as finanças é real. Imagine que você está planejando uma viagem internacional e precisa registrar todas as suas despesas em diferentes moedas. Você pode estar pensando: "Vou anotar tudo em um caderno" ou "Vou usar um aplicativo qualquer para registrar meus gastos". Mas, na prática, isso não é tão fácil quanto parece. Você pode esquecer de anotar alguma despesa, ou pior, pode não ter como registrar as despesas em diferentes moedas de forma eficaz.
@@ -28,7 +28,7 @@ Por exemplo, imagine que você está em uma viagem nos EUA e compra um lanche em
 
 
 
-## A Solução: FinMoovi
+## A Solução: [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro)
 Eu descobri o FinMoovi há alguns meses e minha vida mudou. Com o FinMoovi, eu posso facilmente registrar minhas despesas usando a funcionalidade de Smart Capture por voz ou OCR, que reconhece texto em imagens. E o melhor de tudo? O FinMoovi categoriza automaticamente minhas despesas, então eu não preciso mais me preocupar em anotar tudo manualmente.
 
 Além disso, o FinMoovi oferece relatórios inteligentes com IA, permitindo que eu tenha uma visão clara de minhas finanças, mesmo estando offline. Isso é incrível! Eu posso ver exatamente onde estou gastando meu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) e fazer ajustes para melhorar minhas finanças.

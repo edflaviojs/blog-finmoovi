@@ -23,7 +23,7 @@ Have you ever been in a situation where you saw something you didn't need, but e
 To avoid impulse purchases, it's essential to understand why they happen. In many cases, impulse purchases are motivated by emotions, such as happiness, sadness, or boredom. Additionally, advertising and social pressure can also influence our purchasing decisions. **Practical tip:** When you feel the urge to buy something, try waiting 24 hours before making the purchase. This can help reduce the likelihood of an impulse buy.
 
 ## Strategies to Avoid Impulse Purchases
-There are several strategies that can help avoid impulse purchases. One of them is to create a [budget](/en/posts/how-to-create-personal-budget) and follow a spending plan. This can help identify areas where you can cut unnecessary expenses and allocate resources to more important things. Another strategy is to avoid stores and shopping websites when you're feeling emotionally vulnerable. Additionally, it's crucial to have a clear savings goal and work towards achieving it. For example, if you want to save $10,000 in a year, you'll need to save $833 per month.
+There are several strategies that can help avoid impulse purchases. One of them is to create a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) and follow a spending plan. This can help identify areas where you can cut unnecessary expenses and allocate resources to more important things. Another strategy is to avoid stores and shopping websites when you're feeling emotionally vulnerable. Additionally, it's crucial to have a clear savings goal and work towards achieving it. For example, if you want to save $10,000 in a year, you'll need to save $833 per month.
 
 ![Understanding Behavior](/images/posts/evite-compras-por-impulso-2.webp)
 
@@ -47,4 +47,4 @@ You don't need to wait to start avoiding impulse purchases and improving your pe
 
 
 ---
-**Want to put theory into practice? [Download FinMoovi for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No card, no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No card, no commitment.**

@@ -33,7 +33,7 @@ Aqui estão 5 alternativas ao Mobills que você pode considerar:
 O Personal Capital é um aplicativo de gestão financeira que ajuda os usuários a controlar seus gastos, criar orçamentos e investir seu [dinheiro](/posts/cashback-inteligente). Com o Personal Capital, você pode conectar suas contas bancárias e cartões de crédito para ter uma visão geral de suas finanças.
 Prós:
 * Interface fácil de usar
-* Ferramentas de investimento avançadas
+* Ferramentas de [investimento](/posts/montando-carteira-diversificada-com-r-500) avançadas
 * Suporte ao cliente excelente
 Contras:
 * Pode ser confuso para iniciantes
@@ -44,7 +44,7 @@ Grátis/Pago: Grátis
 
 
 
-2. **FinMoovi**
+2. **[FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro)**
 O FinMoovi é um aplicativo de gestão financeira que oferece recursos avançados como multi-[moeda](/glossario/moeda), offline, smart capture por voz e categorização com IA. Com o FinMoovi, você pode controlar seus gastos, criar orçamentos e monitorar suas contas de forma eficiente.
 Prós:
 * Multi-moeda: permite que você gerencie suas finanças em diferentes moedas

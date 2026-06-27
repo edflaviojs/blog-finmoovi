@@ -37,7 +37,7 @@ Definir metas financieras es esencial para tener una dirección clara de hacia d
 ## Creando un Plan de Acción
 Con sus metas definidas, es hora de crear un plan de acción. Esto incluye definir cómo va a alcanzar sus metas y qué pasos necesita dar. Aquí hay algunas sugerencias para crear un plan de acción:
 1. **Priorice**: Priorice sus metas y defina cuáles son las más importantes.
-2. **Cree un [presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)**: Cree un presupuesto que incluya todos sus gastos y ingresos.
+2. **Cree un [presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)**: Cree un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) que incluya todos sus gastos y ingresos.
 3. **Defina [acciones](/es/glossario/es-acoes)**: Defina acciones específicas que necesita tomar para alcanzar sus metas.
 4. **Monitoree**: Monitoree su progreso regularmente y haga ajustes necesarios.
 
