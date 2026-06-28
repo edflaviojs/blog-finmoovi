@@ -16,7 +16,7 @@ seo:
   keywords: ["financial planning for couples","personal finance","economy","money"]
 ---
 
-When you're in a relationship, it's essential to remember that financial planning isn't just about you, but about both of you. This means you need to work together to achieve your financial goals. A good way to start is by creating a joint budget. For example, if you and your partner have a monthly salary of R$ 4,000 and R$ 5,000, respectively, you can start by allocating 50% of that amount to essential expenses like rent, bills, and food.
+When you're in a relationship, it's essential to remember that [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) isn't just about you, but about both of you. This means you need to work together to achieve your financial goals. A good way to start is by creating a joint [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). For example, if you and your partner have a monthly salary of R$ 4,000 and R$ 5,000, respectively, you can start by allocating 50% of that amount to essential expenses like rent, bills, and food.
 
 ## Basic Financial Planning
 It's fundamental to understand that basic financial planning starts with identifying your income and expenses. This includes everything from your salary to expenses on transportation, leisure, and health. **Practical tip:** Keep a detailed record of all your expenses for a month to better understand where your money is being spent. You can use a [personal finance](/en/posts/30-day-rule-for-purchases) app to help with this process.

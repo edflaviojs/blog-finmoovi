@@ -31,7 +31,7 @@ Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com alug
 
 
 ## Como revisar o [orçamento](/posts/5-alternativas-ao-mobills-em-2026)
-Revisar o orçamento é um processo simples, mas requer atenção e honestidade. Aqui estão alguns passos para seguir:
+Revisar o [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) é um processo simples, mas requer atenção e honestidade. Aqui estão alguns passos para seguir:
 
 ### 1. Verifique seus gastos
 Comece verificando seus gastos dos últimos 6 meses. Isso inclui todos os gastos, desde contas de serviços até compras de supermercado. Você pode usar um aplicativo como o [FinMoovi](/posts/5-alternativas-ao-[mobills](/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) para ajudar a rastrear seus gastos e identificar áreas onde pode cortar.
@@ -49,7 +49,7 @@ Verifique suas receitas dos últimos 6 meses e ajuste-as de acordo com suas nece
 ### 4. Ajuste seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
 Se você tem [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de [investimento](/posts/montando-carteira-diversificada-com-r-500), verifique se eles ainda estão alinhados com seus objetivos e ajuste-os de acordo. Você pode querer considerar investir em [Tesouro Direto](https://www.tesourodireto.com.br) ou outros investimentos de baixo risco.
 
-## Dicas para manter seu orçamento em ordem
+## Dicas para manter seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) em ordem
 Aqui estão algumas dicas para manter seu orçamento em ordem:
 *   Priorize suas necessidades sobre seus desejos
 *   Crie um fundo de emergência para cobrir gastos inesperados

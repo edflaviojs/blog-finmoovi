@@ -37,7 +37,7 @@ Aunque el cashback puede ser una excelente manera de ahorrar [dinero](/es/posts/
 
 
 ## Comienza hoy
-Ahora que sabes cómo usar el cashback de forma inteligente, es hora de comenzar a ahorrar dinero. Recuerda que el cashback es solo una parte de tus [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Para tener una visión completa de tus finanzas, es importante considerar otros aspectos, como inversiones y [planificación financiera](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Visita el [Investopedia](https://www.investopedia.com) para aprender más sobre [finanzas personales](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) y cómo crear un plan financiero personalizado.
+Ahora que sabes cómo usar el cashback de forma inteligente, es hora de comenzar a ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado). Recuerda que el cashback es solo una parte de tus [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Para tener una visión completa de tus finanzas, es importante considerar otros aspectos, como [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) y [planificación financiera](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Visita el [Investopedia](https://www.investopedia.com) para aprender más sobre [finanzas personales](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) y cómo crear un plan financiero personalizado.
 
 ![Evitando trampas](/images/posts/cashback-inteligente-4.webp)
 

@@ -37,7 +37,7 @@ Pros:
 * Soporte al cliente excelente
 Contras:
 * Puede ser confuso para principiantes
-* Tasas de inversión pueden ser altas
+* Tasas de [inversión](/es/posts/tesouro-direto-para-iniciantes) pueden ser altas
 Gratuito/Pago: Gratuito
 
 ![5 Alternativas al Mobills](/images/posts/5-alternativas-ao-mobills-em-2026-3.webp)
@@ -45,7 +45,7 @@ Gratuito/Pago: Gratuito
 
 
 2. **[FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro)**
-El FinMoovi es una aplicación de gestión financiera que ofrece recursos avanzados como multi-moneda, sin conexión a Internet, captura inteligente por voz y categorización con IA. Con el FinMoovi, puedes controlar tus gastos, crear presupuestos y monitorear tus cuentas de forma eficiente.
+El [FinMoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos) es una aplicación de gestión financiera que ofrece recursos avanzados como multi-moneda, sin conexión a Internet, captura inteligente por voz y categorización con IA. Con el FinMoovi, puedes controlar tus gastos, crear presupuestos y monitorear tus cuentas de forma eficiente.
 Pros:
 * Multi-moneda: te permite gestionar tus finanzas en diferentes monedas
 * Sin conexión a Internet: te permite acceder a tus finanzas incluso sin conexión a Internet

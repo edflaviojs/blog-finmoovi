@@ -30,14 +30,14 @@ To maximize your cashback, it's essential to use the program strategically. This
 
 
 ## Avoiding traps
-Although cashback can be a great way to save money, it's essential to be aware of potential traps. **Practical tip:** don't buy things you don't need just to earn cashback. Additionally, it's crucial to understand the interest rates and payment terms associated with credit cards that offer cashback. The [Serasa](https://www.serasa.com.br) offers valuable information on how to manage your credit and avoid financial traps.
+Although cashback can be a great way to save [money](/en/posts/creating-an-emergency-fund), it's essential to be aware of potential traps. **Practical tip:** don't buy things you don't need just to earn cashback. Additionally, it's crucial to understand the interest rates and payment terms associated with credit cards that offer cashback. The [Serasa](https://www.serasa.com.br) offers valuable information on how to manage your credit and avoid financial traps.
 
 ![Maximizando o cashback](/images/posts/cashback-inteligente-3.webp)
 
 
 
 ## Start today
-Now that you know how to use cashback intelligently, it's time to start saving money. Remember that cashback is just one part of your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). To have a complete view of your finances, it's also important to consider other aspects, such as [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) and [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Visit the [Investopedia](https://www.investopedia.com) to learn more about [personal finance](/en/posts/30-day-rule-for-purchases) and how to create a customized financial plan.
+Now that you know how to use cashback intelligently, it's time to start [saving](/en/posts/criar-reserva-de-emergencia) money. Remember that cashback is just one part of your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). To have a complete view of your finances, it's also important to consider other aspects, such as [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Visit the [Investopedia](https://www.investopedia.com) to learn more about [personal finance](/en/posts/30-day-rule-for-purchases) and how to create a customized financial plan.
 
 ![Evitando armadilhas](/images/posts/cashback-inteligente-4.webp)
 
