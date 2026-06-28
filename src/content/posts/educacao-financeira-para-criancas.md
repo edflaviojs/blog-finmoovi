@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Ensino Financeiro Básico
-Ensinar finanças às crianças é essencial para que elas desenvolvam hábitos saudáveis em relação ao dinheiro. Isso começa com conceitos básicos, como a diferença entre necessidades e desejos. Por exemplo, uma criança pode desejar um brinquedo de R$ 100, mas precisa de um par de sapatos de R$ 50 para ir à escola. **Dica prática:** crie uma tabela com suas despesas e receitas para que as crianças entendam melhor como o dinheiro é gerenciado.
+Ensinar finanças às crianças é essencial para que elas desenvolvam hábitos saudáveis em relação ao [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz). Isso começa com conceitos básicos, como a diferença entre necessidades e desejos. Por exemplo, uma criança pode desejar um brinquedo de R$ 100, mas precisa de um par de sapatos de R$ 50 para ir à escola. **Dica prática:** crie uma tabela com suas despesas e receitas para que as crianças entendam melhor como o dinheiro é gerenciado.
 
 Uma forma eficaz de ensinar é usar exemplos do dia a dia. Se você ganha R$ 5.000 por mês e gasta R$ 1.500 com aluguel, R$ 800 com comida e R$ 500 com transporte, mostre às crianças como esses gastos se encaixam no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Isso ajuda a entender a importância de priorizar gastos.
 
@@ -25,7 +25,7 @@ Uma forma eficaz de ensinar é usar exemplos do dia a dia. Se você ganha R$ 5.0
 Economizar é uma habilidade crucial que as crianças devem aprender desde cedo. Uma forma de incentivar a [economia](/posts/cashback-inteligente) é criar um sistema de piggy bank ou uma conta poupança para elas. Por exemplo, se uma criança recebe R$ 20 por semana como mesada, ela pode guardar R$ 5 em uma conta poupança. Com o tempo, esse dinheiro pode ser usado para comprar algo que ela realmente deseja ou para investir em algo mais significativo.
 
 ## Investimento e Rendimentos
-À medida que as crianças crescem, elas podem aprender sobre [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e rendimentos. Isso pode começar com conceitos básicos, como [juros](/glossario/juros) sobre uma conta poupança. Por exemplo, se uma criança tem R$ 1.000 em uma conta poupança que rende 5% de juros ao ano, ela receberá R$ 50 ao final do ano. **Dica prática:** use exemplos simples de investimento, como um [Tesouro Direto](https://www.tesourodireto.com.br), para mostrar como o dinheiro pode crescer com o tempo.
+À medida que as crianças crescem, elas podem aprender sobre [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce) e rendimentos. Isso pode começar com conceitos básicos, como [juros](/glossario/juros) sobre uma conta poupança. Por exemplo, se uma criança tem R$ 1.000 em uma conta poupança que rende 5% de juros ao ano, ela receberá R$ 50 ao final do ano. **Dica prática:** use exemplos simples de investimento, como um [Tesouro Direto](https://www.tesourodireto.com.br), para mostrar como o dinheiro pode crescer com o tempo.
 
 ![Economia e Poupança](/images/posts/educacao-financeira-para-criancas-2.webp)
 

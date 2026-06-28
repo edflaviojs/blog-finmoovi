@@ -90,7 +90,7 @@ Gratuito/Pago: Gratuito
 
 ## Tabla Comparativa
 Aquí te presentamos una tabla comparativa de las 5 alternativas al Mobills:
-| Aplicación | Interfaz | Herramientas de Presupuesto | Soporte al Cliente | Gratuito/Pago |
+| Aplicación | Interfaz | Herramientas de [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/reducir-gastos-fijos-mensuales)-personal) | Soporte al Cliente | Gratuito/Pago |
 | --- | --- | --- | --- | --- |
 | Personal Capital | Fácil de usar | Avanzadas | Excelente | Gratuito |
 | FinMoovi | Fácil de usar | Avanzadas | Excelente | Pago |

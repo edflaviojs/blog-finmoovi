@@ -30,7 +30,7 @@ Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com alug
 
 
 
-## Como revisar o orçamento
+## Como revisar o [orçamento](/posts/5-alternativas-ao-mobills-em-2026)
 Revisar o orçamento é um processo simples, mas requer atenção e honestidade. Aqui estão alguns passos para seguir:
 
 ### 1. Verifique seus gastos
@@ -47,7 +47,7 @@ Depois de verificar seus gastos, ajuste-os de acordo com suas necessidades e obj
 Verifique suas receitas dos últimos 6 meses e ajuste-as de acordo com suas necessidades e objetivos. Se você recebeu um aumento de salário, por exemplo, você pode querer aumentar suas economias ou [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/selic)-qual-rende-mais-em-2026).
 
 ### 4. Ajuste seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
-Se você tem [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de investimento, verifique se eles ainda estão alinhados com seus objetivos e ajuste-os de acordo. Você pode querer considerar investir em [Tesouro Direto](https://www.tesourodireto.com.br) ou outros investimentos de baixo risco.
+Se você tem [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de [investimento](/posts/montando-carteira-diversificada-com-r-500), verifique se eles ainda estão alinhados com seus objetivos e ajuste-os de acordo. Você pode querer considerar investir em [Tesouro Direto](https://www.tesourodireto.com.br) ou outros investimentos de baixo risco.
 
 ## Dicas para manter seu orçamento em ordem
 Aqui estão algumas dicas para manter seu orçamento em ordem:

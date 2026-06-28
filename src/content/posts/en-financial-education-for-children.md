@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Basic Financial Teaching
-Teaching finances to children is essential for them to develop healthy habits regarding [money](/en/posts/avoid-impulse-purchases). This starts with basic concepts, such as the difference between needs and desires. For example, a child may desire a toy worth R$ 100, but needs a pair of shoes worth R$ 50 to go to school. **Practical tip:** create a table with your expenses and income so that children can better understand how money is managed.
+Teaching finances to children is essential for them to develop healthy habits regarding [money](/en/posts/avoid-impulse-purchases). This starts with basic concepts, such as the difference between needs and desires. For example, a child may desire a toy worth R$ 100, but needs a pair of shoes worth R$ 50 to go to school. **Practical tip:** create a table with your expenses and income so that children can better understand how [money](/en/posts/creating-an-emergency-fund) is managed.
 
 An effective way to teach is to use everyday examples. If you earn R$ 5,000 per month and spend R$ 1,500 on rent, R$ 800 on food, and R$ 500 on transportation, show the children how these expenses fit into the [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). This helps to understand the importance of prioritizing expenses.
 
@@ -25,7 +25,7 @@ An effective way to teach is to use everyday examples. If you earn R$ 5,000 per 
 Saving is a crucial skill that children should learn from an early age. One way to encourage savings is to create a piggy bank system or a savings account for them. For example, if a child receives R$ 20 per week as an allowance, they can save R$ 5 in a savings account. Over time, this money can be used to buy something they really want or to invest in something more significant.
 
 ## Investment and Returns
-As children grow, they can learn about investments and returns. This can start with basic concepts, such as interest on a savings account. For example, if a child has R$ 1,000 in a savings account that earns 5% interest per year, they will receive R$ 50 at the end of the year. **Practical tip:** use simple investment examples, such as a [Tesouro Direto](https://www.tesourodireto.com.br), to show how money can grow over time.
+As children grow, they can learn about [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) and returns. This can start with basic concepts, such as interest on a savings account. For example, if a child has R$ 1,000 in a savings account that earns 5% interest per year, they will receive R$ 50 at the end of the year. **Practical tip:** use simple investment examples, such as a [Tesouro Direto](https://www.tesourodireto.com.br), to show how money can grow over time.
 
 ![Economia e Poupança](/images/posts/educacao-financeira-para-criancas-2.webp)
 

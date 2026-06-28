@@ -40,7 +40,7 @@ There are several tools that can help avoid impulse purchases. One of them is th
 
 
 ## Start Today
-You don't need to wait to start avoiding impulse purchases and improving your personal finances. Start today by tracking your expenses and creating a budget. Additionally, set clear savings goals and work towards achieving them. Remember that discipline and patience are essential to achieving financial stability.
+You don't need to wait to start avoiding impulse purchases and improving your personal finances. Start today by tracking your expenses and creating a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)). Additionally, set clear savings goals and work towards achieving them. Remember that discipline and patience are essential to achieving financial stability.
 
 ![Start Today](/images/posts/evite-compras-por-impulso-6.webp)
 

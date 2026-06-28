@@ -45,7 +45,7 @@ Grátis/Pago: Grátis
 
 
 2. **[FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro)**
-O FinMoovi é um aplicativo de gestão financeira que oferece recursos avançados como multi-[moeda](/glossario/moeda), offline, smart capture por voz e categorização com IA. Com o FinMoovi, você pode controlar seus gastos, criar orçamentos e monitorar suas contas de forma eficiente.
+O [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) é um aplicativo de gestão financeira que oferece recursos avançados como multi-[moeda](/glossario/moeda), offline, smart capture por voz e categorização com IA. Com o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), você pode controlar seus gastos, criar orçamentos e monitorar suas contas de forma eficiente.
 Prós:
 * Multi-moeda: permite que você gerencie suas finanças em diferentes moedas
 * Offline: permite que você acesse suas finanças mesmo sem conexão com a internet

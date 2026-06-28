@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Cashback: ¿Qué es y cómo funciona
-Imagina que estás haciendo compras en línea o en tiendas físicas y, al mismo tiempo, estás ganando dinero de vuelta. Esto es posible gracias al cashback, un programa de recompensa que devuelve una porcentagem del [valor](/es/glossario/es-valor) gastado en compras. El cashback puede ser ofrecido por bancos, tiendas o aplicativos especializados. Por ejemplo, si gastas $100 en una tienda que ofrece 5% de cashback, recibirás $5 de vuelta.
+Imagina que estás haciendo compras en línea o en tiendas físicas y, al mismo tiempo, estás ganando [dinero](/es/posts/ahorra-en-las-compras-del-supermercado) de vuelta. Esto es posible gracias al cashback, un programa de recompensa que devuelve una porcentagem del [valor](/es/glossario/es-valor) gastado en compras. El cashback puede ser ofrecido por bancos, tiendas o aplicativos especializados. Por ejemplo, si gastas $100 en una tienda que ofrece 5% de cashback, recibirás $5 de vuelta.
 
 ## Escogiendo el mejor programa de cashback
 Con tantas opciones de programas de cashback disponibles, es importante escoger el que mejor se adapte a tus necesidades. **Consejo práctico:** verifica las tasas de cashback ofrecidas por cada programa y compáralas con tus necesidades de compra. Además, es fundamental leer las condiciones de uso y entender cómo se calcula y paga el cashback. El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre cómo lidiar con programas de recompensa y cashback de forma segura.
@@ -30,7 +30,7 @@ Para maximizar tu cashback, es importante usar el programa de forma estratégica
 
 
 ## Evitando trampas
-Aunque el cashback puede ser una excelente manera de ahorrar dinero, es importante estar consciente de las trampas potenciales. **Consejo práctico:** no compres cosas que no necesitas solo para ganar cashback. Además, es fundamental entender las tasas de interés y las condiciones de pago asociadas a tarjetas de crédito que ofrecen cashback. El [Serasa](https://www.serasa.com.br) ofrece información valiosa sobre cómo gestionar tu crédito y evitar trampas financieras.
+Aunque el cashback puede ser una excelente manera de ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia), es importante estar consciente de las trampas potenciales. **Consejo práctico:** no compres cosas que no necesitas solo para ganar cashback. Además, es fundamental entender las tasas de interés y las condiciones de pago asociadas a tarjetas de crédito que ofrecen cashback. El [Serasa](https://www.serasa.com.br) ofrece información valiosa sobre cómo gestionar tu crédito y evitar trampas financieras.
 
 ![Maximizando el cashback](/images/posts/cashback-inteligente-3.webp)
 

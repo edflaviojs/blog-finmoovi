@@ -29,7 +29,7 @@ For example, imagine you're on a trip to the US and buy a snack in dollars. You 
 
 
 ## The Solution: [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro)
-I discovered FinMoovi a few months ago, and my life changed. With FinMoovi, I can easily record my expenses using the Smart Capture feature by voice or OCR, which recognizes text in images. And the best part? FinMoovi automatically categorizes my expenses, so I no longer have to worry about writing everything down manually.
+I discovered [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) a few months ago, and my life changed. With FinMoovi, I can easily record my expenses using the Smart Capture feature by voice or OCR, which recognizes text in images. And the best part? FinMoovi automatically categorizes my expenses, so I no longer have to worry about writing everything down manually.
 
 Additionally, FinMoovi offers intelligent reports with AI, allowing me to have a clear view of my finances, even when offline. This is amazing! I can see exactly where I'm spending my [money](/en/posts/creating-an-emergency-fund) and make adjustments to improve my finances.
 

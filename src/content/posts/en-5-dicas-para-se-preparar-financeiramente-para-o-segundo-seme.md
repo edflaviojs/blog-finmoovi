@@ -37,7 +37,7 @@ Defining financial goals is vital to have a clear direction of where you want to
 ## Creating an Action Plan
 With your goals defined, it's time to create an action plan. This includes defining how you'll achieve your goals and what steps you need to take. Here are some tips to create an action plan:
 1. **Prioritize**: Prioritize your goals and define which ones are the most important.
-2. **Create a [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)**: Create a [budget](/en/posts/50-30-20-rule-complete-guide) that includes all your expenses and income.
+2. **Create a [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)**: Create a [budget](/en/posts/50-30-20-rule-complete-guide) that includes all your expenses and [income](/en/posts/montando-carteira-diversificada-com-r-500).
 3. **Define actions**: Define specific actions you need to take to achieve your goals.
 4. **Monitor**: Monitor your progress regularly and make necessary adjustments.
 
@@ -49,4 +49,4 @@ There are many tools that can help you control your expenses and achieve your fi
 
 
 ## Conclusion
-Preparing financially for the second half of the year is essential to avoid financial problems and achieve your goals. With a solid financial plan and the right tools, you can have a clear view of your financial situation and make necessary adjustments to achieve your goals. Remember that the key to financial success is to have a rigorous control of your expenses and define clear financial goals. Use FinMoovi to control your expenses and avoid surprises at the end of the month.
+Preparing financially for the second half of the year is essential to avoid financial problems and achieve your goals. With a solid financial plan and the right tools, you can have a clear view of your financial situation and make necessary adjustments to achieve your goals. Remember that the key to financial success is to have a rigorous control of your expenses and define clear financial goals. Use [FinMoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) to control your expenses and avoid surprises at the end of the month.

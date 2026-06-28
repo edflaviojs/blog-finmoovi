@@ -29,7 +29,7 @@ Por ejemplo, imagina que estás en un viaje en los EE. UU. y compras un snack en
 
 
 ## La Solución: [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro)
-Descubrí el FinMoovi hace unos meses y mi vida cambió. Con el FinMoovi, puedo registrar mis gastos fácilmente usando la funcionalidad de Smart Capture por voz o OCR, que reconoce texto en imágenes. Y lo mejor de todo: el FinMoovi categoriza automáticamente mis gastos, así que no tengo que preocuparme por anotar todo manualmente.
+Descubrí el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) hace unos meses y mi vida cambió. Con el FinMoovi, puedo registrar mis gastos fácilmente usando la funcionalidad de Smart Capture por voz o OCR, que reconoce texto en imágenes. Y lo mejor de todo: el FinMoovi categoriza automáticamente mis gastos, así que no tengo que preocuparme por anotar todo manualmente.
 
 Además, el FinMoovi ofrece informes inteligentes con IA, lo que me permite tener una visión clara de mis finanzas, incluso estando offline. ¡Es increíble! Puedo ver exactamente dónde estoy gastando mi [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) y hacer ajustes para mejorar mis finanzas.
 

@@ -30,7 +30,7 @@ Existem várias estratégias que podem ajudar a evitar compras por impulso. Uma 
 
 
 ## Ferramentas para Ajudar
-Existem várias ferramentas que podem ajudar a evitar compras por impulso. Uma delas é o [Banco Central do Brasil](https://www.bcb.gov.br), que oferece recursos e informações sobre [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Outra ferramenta é o [Tesouro Direto](https://www.tesourodireto.com.br), que permite investir em títulos públicos e obter rendimentos. Além disso, existem aplicativos como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) que podem ajudar a registrar gastos e controlar o orçamento.
+Existem várias ferramentas que podem ajudar a evitar compras por impulso. Uma delas é o [Banco Central do Brasil](https://www.bcb.gov.br), que oferece recursos e informações sobre [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Outra ferramenta é o [Tesouro Direto](https://www.tesourodireto.com.br), que permite investir em títulos públicos e obter rendimentos. Além disso, existem aplicativos como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) que podem ajudar a registrar gastos e controlar o [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas).
 
 ## O Poder da [Educação Financeira](/glossario/educacao-financeira)
 A educação financeira é fundamental para evitar compras por impulso e alcançar a estabilidade financeira. É importante entender conceitos como [juros](/glossario/juros), [inflação](/glossario/inflacao) e [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce) para tomar decisões informadas sobre [dinheiro](/posts/criar-reserva-de-emergencia). Além disso, é importante aprender a gerenciar o estresse e as emoções para evitar compras por impulso. **Dica prática:** Leia artigos e livros sobre [finanças pessoais](/posts/7-erros-financeiros-iniciante) e participe de cursos ou workshops para aprender mais sobre o assunto.
@@ -40,7 +40,7 @@ A educação financeira é fundamental para evitar compras por impulso e alcanç
 
 
 ## Comece hoje
-Não é necessário esperar para começar a evitar compras por impulso e melhorar as [finanças pessoais](/posts/cashback-inteligente). Comece hoje mesmo a registrar seus gastos e a criar um orçamento. Além disso, defina metas claras de [economia](/posts/criando-reserva-de-emergencia) e trabalhe para alcançá-las. Lembre-se de que a disciplina e a paciência são fundamentais para alcançar a estabilidade financeira.
+Não é necessário esperar para começar a evitar compras por impulso e melhorar as [finanças pessoais](/posts/cashback-inteligente). Comece hoje mesmo a registrar seus gastos e a criar um [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar). Além disso, defina metas claras de [economia](/posts/criando-reserva-de-emergencia) e trabalhe para alcançá-las. Lembre-se de que a disciplina e a paciência são fundamentais para alcançar a estabilidade financeira.
 
 ![Comece hoje](/images/posts/evite-compras-por-impulso-6.webp)
 

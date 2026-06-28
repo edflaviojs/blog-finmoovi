@@ -41,7 +41,7 @@ Start by checking your expenses over the past 6 months. This includes all expens
 
 
 ### 2. Adjust Your Expenses
-After checking your expenses, adjust them according to your needs and goals. If you notice you're spending too much in one area, such as restaurants, try to reduce those expenses and reallocate the [money](/en/posts/creating-an-emergency-fund) to other areas, such as [savings](/en/posts/financial-education-for-children) or investments.
+After checking your expenses, adjust them according to your needs and goals. If you notice you're spending too much in one area, such as restaurants, try to reduce those expenses and reallocate the [money](/en/posts/creating-an-emergency-fund) to other areas, such as [savings](/en/posts/financial-education-for-children) or [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ### 3. Check Your Income
 Check your income over the past 6 months and adjust it according to your needs and goals. If you've received a salary increase, for example, you may want to increase your savings or investments.
@@ -49,7 +49,7 @@ Check your income over the past 6 months and adjust it according to your needs a
 ### 4. Adjust Your Investments
 If you have investments, such as [stocks](/en/glossario/en-acoes) or [investment](/en/posts/montando-carteira-diversificada-com-r-500) funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.
 
-## Tips to Keep Your Budget in Order
+## Tips to Keep Your [Budget](/en/posts/how-to-create-personal-budget) in Order
 Here are some tips to keep your budget in order:
 *   Prioritize your needs over your desires
 *   Create an [emergency fund](/en/glossario/en-reserva-de-emergencia) to cover unexpected expenses

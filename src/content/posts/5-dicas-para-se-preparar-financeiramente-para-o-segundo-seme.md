@@ -49,4 +49,4 @@ Existem muitas ferramentas que podem ajudar a controlar seus gastos e alcançar 
 
 
 ## Conclusão
-Se preparar financeiramente para o segundo semestre é fundamental para evitar problemas financeiros e alcançar suas metas. Com um plano financeiro sólido e as ferramentas certas, você pode ter uma visão clara de sua situação financeira e fazer ajustes necessários para alcançar suas metas. Lembre-se de que a chave para o sucesso financeiro é ter um controle rigoroso de seus gastos e definir metas financeiras claras. Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês.
+Se preparar financeiramente para o segundo semestre é fundamental para evitar problemas financeiros e alcançar suas metas. Com um plano financeiro sólido e as ferramentas certas, você pode ter uma visão clara de sua situação financeira e fazer ajustes necessários para alcançar suas metas. Lembre-se de que a chave para o sucesso financeiro é ter um controle rigoroso de seus gastos e definir metas financeiras claras. Use o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) para controlar seus gastos e não se surpreender no fim do mês.
