@@ -18,7 +18,7 @@ seo:
 
 ## Resumen Semanal del Mercado Financiero Brasileño: 22/6/2026 - 29/6/2026
 
-La semana que pasó fue de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del dólar y euro, el impacto de la tasa [Selic](/es/glossario/es-selic) en las inversiones y ofreceremos [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
+La semana que pasó fue de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del dólar y euro, el impacto de la tasa [Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) y ofreceremos [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
 
 ![Resumen Semanal del Mercado Financiero Brasileño: 22/6/2026 - 29/6/2026](/images/posts/es-cotizaciones-semana-5-junio-2026-inline-1.webp)
 
@@ -28,7 +28,7 @@ La semana que pasó fue de gran importancia para el mercado financiero brasileñ
 
 La semana del 22 de junio al 29 de junio de 2026 mostró una relativa estabilidad en las tasas de cambio, con el dólar estadounidense (USD) cerrando en R$ 5.17 y el euro (EUR) en R$ 5.89. Aunque hubo fluctuaciones diarias, la tendencia general fue de leve apreciación del real frente a estas monedas. Esto se debe en parte a la confianza de los inversores en la [economía](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña y a la expectativa de que el Banco Central mantendrá una política monetaria prudente.
 
-## La Selic y su Impacto en las Inversiones
+## La Selic y su Impacto en las [Inversiones](/es/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 La decisión del Banco Central de mantener la tasa Selic en su nivel actual tuvo un impacto mixto en el mercado. Por un lado, los inversores que buscan rendimientos más altos en instrumentos de renta fija pueden sentirse desanimados, ya que las tasas de interés no ofrecen el mismo atractivo que en el pasado. Por otro lado, la estabilidad en la tasa Selic puede beneficiar a los sectores que dependen del crédito, como el mercado inmobiliario y el consumo, al mantener las tasas de interés accesibles para los préstamos.
 

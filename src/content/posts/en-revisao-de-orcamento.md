@@ -49,8 +49,8 @@ Check your income over the past 6 months and adjust it according to your needs a
 ### 4. Adjust Your Investments
 If you have investments, such as [stocks](/en/glossario/en-acoes) or [investment](/en/posts/montando-carteira-diversificada-com-r-500) funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.
 
-## Tips to Keep Your [Budget](/en/posts/how-to-create-personal-budget) in Order
-Here are some tips to keep your budget in order:
+## Tips to Keep Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/controle-gastos-cartao-credito)) in Order
+Here are some tips to keep your [budget](/en/posts/how-to-create-personal-budget) in order:
 *   Prioritize your needs over your desires
 *   Create an [emergency fund](/en/glossario/en-reserva-de-emergencia) to cover unexpected expenses
 *   Invest in your [financial education](/en/glossario/en-educacao-financeira) to make informed decisions

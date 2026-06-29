@@ -24,7 +24,7 @@ An effective way to teach is to use everyday examples. If you earn R$ 5,000 per 
 ## [Economy](/en/posts/30-day-rule-for-purchases) and Savings
 [Saving](/en/posts/criar-reserva-de-emergencia) is a crucial skill that children should learn from an early age. One way to encourage savings is to create a piggy bank system or a savings account for them. For example, if a child receives R$ 20 per week as an allowance, they can save R$ 5 in a savings account. Over time, this [money](/en/posts/difference-between-investing-and-saving) can be used to buy something they really want or to invest in something more significant.
 
-## Investment and Returns
+## [Investment](/en/posts/montando-carteira-diversificada-com-r-500) and Returns
 As children grow, they can learn about [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and returns. This can start with basic concepts, such as interest on a savings account. For example, if a child has R$ 1,000 in a savings account that earns 5% interest per year, they will receive R$ 50 at the end of the year. **Practical tip:** use simple investment examples, such as a [Tesouro Direto](https://www.tesourodireto.com.br), to show how [money](/en/posts/financial-planning-for-couples) can grow over time.
 
 ![Economia e Poupança](/images/posts/educacao-financeira-para-criancas-2.webp)
@@ -32,7 +32,7 @@ As children grow, they can learn about [investments](/en/posts/[cdb](/en/glossar
 
 
 ## Advanced [Financial Education](/en/glossario/en-educacao-financeira)
-When children enter adolescence, they can learn about more advanced financial concepts, such as credit and debit. It's essential to explain the difference between using a credit card and a debit card, and how credit can affect financial health if not managed correctly. Resources like the [Banco Central do Brasil](https://www.bcb.gov.br) and the [Serasa](https://www.serasa.com.br) can provide valuable information on credit management.
+When children enter adolescence, they can learn about more advanced financial concepts, such as credit and debit. It's essential to explain the difference between using a [credit card](/en/posts/controle-gastos-cartao-credito) and a debit card, and how credit can affect financial health if not managed correctly. Resources like the [Banco Central do Brasil](https://www.bcb.gov.br) and the [Serasa](https://www.serasa.com.br) can provide valuable information on credit management.
 
 ## [Financial Planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 [Financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) is a skill that children should develop to have a secure financial future. This includes setting financial goals, creating a [budget](/en/posts/50-30-20-rule-complete-guide), and investing in continuous [financial education](/en/posts/7-financial-mistakes-beginners). One way to help children plan is to create an action plan with short-term and long-term goals. For example, a short-term goal can be to save R$ 500 to buy a new smartphone, while a long-term goal can be to save for college.

@@ -30,7 +30,7 @@ Ahora que tienes una idea clara de tus gastos, es hora de crear un [presupuesto]
 2. **Categoriza tus gastos**: Divide tus gastos en categorías, como vivienda, alimentación, transporte y entretenimiento.
 3. **Asigna valores**: Asigna un [valor](/es/glossario/es-valor) a cada categoría con base en tus gastos promedio.
 4. **Prioriza**: Prioriza tus necesidades en relación con tus deseos.
-5. **Revisa y ajusta**: Revisa tu [presupuesto](/es/posts/como-crear-presupuesto-personal) regularmente y ajusta según sea necesario.
+5. **Revisa y ajusta**: Revisa tu [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/controle-gastos-cartao-credito)-personal) regularmente y ajusta según sea necesario.
 
 ![Evaluando tus Gastos](/images/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas-2.webp)
 

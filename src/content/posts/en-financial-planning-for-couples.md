@@ -21,12 +21,12 @@ When you're in a relationship, it's essential to remember that [financial planni
 ## Basic Financial Planning
 It's fundamental to understand that basic financial planning starts with identifying your income and expenses. This includes everything from your salary to expenses on transportation, leisure, and health. **Practical tip:** Keep a detailed record of all your expenses for a month to better understand where your [money](/en/posts/avoid-impulse-purchases) is being spent. You can use a [personal finance](/en/posts/30-day-rule-for-purchases) app to help with this process.
 
-Once you have a clear idea of your finances, it's time to set goals. This can include saving for a home, paying off debts, or creating an [emergency fund](/en/glossario/en-reserva-de-emergencia). For example, if you both want to buy an apartment that costs R$ 200,000, you'll need to calculate how much you need to save each month to achieve this goal within a certain period.
+Once you have a clear idea of your finances, it's time to set goals. This can include [saving](/en/posts/criar-reserva-de-emergencia) for a home, paying off debts, or creating an [emergency fund](/en/glossario/en-reserva-de-emergencia). For example, if you both want to buy an apartment that costs R$ 200,000, you'll need to calculate how much you need to save each month to achieve this goal within a certain period.
 
 ## Debt Management
 Often, couples inherit debts from their individual financial pasts. It's crucial to address these debts together. This can mean creating a plan to pay off credit cards, loans, or other types of debts. One strategy is to focus on paying off the debts with the highest interest rates first, while making minimum payments on the others. Remember that the [Serasa](https://www.serasa.com.br) can be a useful resource to understand better about debt management and credit.
 
-## [Investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) and Savings
+## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and Savings
 In addition to paying off debts and expenses, it's important to start investing and saving for the future. This can mean opening a joint savings account or investing in products like [Tesouro Direto](https://www.tesourodireto.com.br). **Practical tip:** Invest a part of your savings in investment funds or [stocks](/en/glossario/en-acoes) to diversify your portfolio and potentially increase your earnings over time.
 
 ![Gerenciamento de dívidas](/images/posts/planejamento-financeiro-para-casais-2.webp)
@@ -34,7 +34,7 @@ In addition to paying off debts and expenses, it's important to start investing 
 
 
 ## [Financial Education](/en/glossario/en-educacao-financeira)
-Educating yourself about finances is crucial for making informed decisions. There are many resources available, such as books, online courses, and specialized websites. The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information about [economy](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) and finance. Additionally, sites like [Investopedia](https://www.investopedia.com) can be very useful for learning about [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and money management.
+Educating yourself about finances is crucial for making informed decisions. There are many resources available, such as books, online courses, and specialized websites. The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information about [economy](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) and finance. Additionally, sites like [Investopedia](https://www.investopedia.com) can be very useful for learning about [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and [money](/en/posts/controle-gastos-cartao-credito) management.
 
 ![Investimentos e poupança](/images/posts/planejamento-financeiro-para-casais-3.webp)
 

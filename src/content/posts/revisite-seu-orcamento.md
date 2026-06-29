@@ -39,7 +39,7 @@ Comece verificando seu saldo bancário atual. Isso inclui não apenas sua conta 
 ### 2. Avalie Suas Despesas
 Avalie todas as suas despesas do último semestre. Isso inclui despesas fixas como aluguel, contas de serviços e assinaturas, bem como despesas variáveis como compras, viagens e entretenimento. Se você perceber que está gastando muito em uma área específica, pode ser hora de fazer ajustes.
 
-### 3. Ajuste Seu Orçamento
+### 3. Ajuste Seu [Orçamento](/posts/controle-gastos-cartao-credito)
 Com base na sua avaliação, ajuste seu orçamento para o resto do ano. Se você identificou áreas onde pode cortar gastos, agora é o momento de fazer mudanças. Considere usar uma ferramenta como o app [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) para ajudar a gerenciar suas finanças e manter tudo organizado.
 
 ### 4. Revise Suas Metas

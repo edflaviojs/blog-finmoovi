@@ -56,7 +56,7 @@ Aqui estão algumas dicas para manter seu [orçamento](/posts/regra-50-30-20-gui
 *   Invista em sua [educação financeira](/glossario/educacao-financeira) para tomar decisões informadas
 *   Use um aplicativo de gestão de finanças para ajudar a rastrear seus gastos e [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
 
-![Dicas para manter seu orçamento em ordem](/images/posts/revisao-de-orcamento-4.webp)
+![Dicas para manter seu [orçamento](/posts/controle-gastos-cartao-credito) em ordem](/images/posts/revisao-de-orcamento-4.webp)
 
 
 

@@ -24,7 +24,7 @@ Uma forma eficaz de ensinar é usar exemplos do dia a dia. Se você ganha R$ 5.0
 ## [Economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e [Poupança](/glossario/poupanca)
 Economizar é uma habilidade crucial que as crianças devem aprender desde cedo. Uma forma de incentivar a [economia](/posts/cashback-inteligente) é criar um sistema de piggy bank ou uma conta poupança para elas. Por exemplo, se uma criança recebe R$ 20 por semana como mesada, ela pode guardar R$ 5 em uma conta poupança. Com o tempo, esse [dinheiro](/posts/criar-reserva-de-emergencia) pode ser usado para comprar algo que ela realmente deseja ou para investir em algo mais significativo.
 
-## Investimento e Rendimentos
+## [Investimento](/posts/montando-carteira-diversificada-com-r-500) e Rendimentos
 À medida que as crianças crescem, elas podem aprender sobre [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce) e rendimentos. Isso pode começar com conceitos básicos, como [juros](/glossario/juros) sobre uma conta poupança. Por exemplo, se uma criança tem R$ 1.000 em uma conta poupança que rende 5% de juros ao ano, ela receberá R$ 50 ao final do ano. **Dica prática:** use exemplos simples de investimento, como um [Tesouro Direto](https://www.tesourodireto.com.br), para mostrar como o [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) pode crescer com o tempo.
 
 ![Economia e Poupança](/images/posts/educacao-financeira-para-criancas-2.webp)
@@ -32,7 +32,7 @@ Economizar é uma habilidade crucial que as crianças devem aprender desde cedo.
 
 
 ## [Educação Financeira](/glossario/educacao-financeira) Avançada
-Quando as crianças entram na adolescência, elas podem aprender sobre conceitos financeiros mais avançados, como crédito e débito. É importante explicar a diferença entre usar um cartão de crédito e um cartão de débito, e como o crédito pode afetar a saúde financeira se não for gerenciado corretamente. Recursos como o [Banco Central do Brasil](https://www.bcb.gov.br) e o [Serasa](https://www.serasa.com.br) podem oferecer informações valiosas sobre gestão de crédito.
+Quando as crianças entram na adolescência, elas podem aprender sobre conceitos financeiros mais avançados, como crédito e débito. É importante explicar a diferença entre usar um [cartão de crédito](/posts/controle-gastos-cartao-credito) e um cartão de débito, e como o crédito pode afetar a saúde financeira se não for gerenciado corretamente. Recursos como o [Banco Central do Brasil](https://www.bcb.gov.br) e o [Serasa](https://www.serasa.com.br) podem oferecer informações valiosas sobre gestão de crédito.
 
 ## [Planejamento Financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 O planejamento financeiro é uma habilidade que as crianças devem desenvolver para ter um futuro financeiro seguro. Isso inclui definir metas financeiras, criar um [orçamento](/posts/como-criar-orcamento-pessoal) e investir em [educação financeira](/posts/7-erros-financeiros-iniciante) contínua. Uma forma de ajudar as crianças a planejar é criar um plano de ação com metas curto e longo prazo. Por exemplo, uma meta curto prazo pode ser economizar R$ 500 para comprar um novo smartphone, enquanto uma meta longo prazo pode ser economizar para a faculdade.

@@ -40,7 +40,7 @@ Start by checking your current bank balance. This includes not only your checkin
 Evaluate all your expenses from the last six months. This includes fixed expenses like rent, utility bills, and subscriptions, as well as variable expenses like purchases, trips, and entertainment. If you notice you're spending too much in a specific area, it might be time to make adjustments.
 
 ### 3. Adjust Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/5-alternativas-ao-mobills-em-2026))
-Based on your evaluation, adjust your [budget](/en/posts/how-to-create-personal-budget) for the rest of the year. If you identified areas where you can cut back on spending, now is the time to make changes. Consider using a tool like the [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) app to help manage your finances and keep everything organized.
+Based on your evaluation, adjust your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/controle-gastos-cartao-credito)) for the rest of the year. If you identified areas where you can cut back on spending, now is the time to make changes. Consider using a tool like the [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) app to help manage your finances and keep everything organized.
 
 ### 4. Review Your Goals
 Finally, review your original financial goals. If you set goals at the beginning of the year, now is the time to assess your progress. If you're ahead, great! If not, adjust your goals or strategies to ensure you achieve what you want in the rest of the year.
@@ -49,7 +49,7 @@ Finally, review your original financial goals. If you set goals at the beginning
 Let's consider a practical example. John is a professional who earns $6,000 per month. At the beginning of the year, he set a goal to save $10,000 for a trip. After a mid-year review, John realized he's spending more than expected on dining out and entertainment. He decides to cut back on these expenses by 20% and reallocate the [money](/en/posts/avoid-impulse-purchases) to his [savings](/en/posts/smart-cashback). With this change, John can still achieve his goal of saving $10,000 by the end of the year.
 
 ## Additional Tips
-Here are some additional tips to help keep your budget on track:
+Here are some additional tips to help keep your [budget](/en/posts/how-to-create-personal-budget) on track:
 - Regularly track your finances.
 - Consider automating your savings and payments.
 - Avoid debt whenever possible.

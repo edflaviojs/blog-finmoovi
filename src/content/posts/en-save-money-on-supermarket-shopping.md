@@ -58,4 +58,4 @@ You don't need to wait until next month to start saving on supermarket shopping.
 
 
 ---
-**Want to put theory into practice? [Download [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and start tracking your expenses today. No credit card, no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and start tracking your expenses today. No [credit card](/en/posts/controle-gastos-cartao-credito), no commitment.**

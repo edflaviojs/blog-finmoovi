@@ -26,7 +26,7 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-[gastos](/posts/metod
 
 ## 2. Gastar mais do que ganha
 
-**O erro:** Usar cartão de crédito como extensão da renda, parcelando tudo.
+**O erro:** Usar [cartão de crédito](/posts/controle-gastos-cartao-credito) como extensão da renda, parcelando tudo.
 
 **A solução:** Se a fatura do cartão passa de 30% da sua renda, você está gastando demais. Congele o cartão por um mês e use só débito.
 

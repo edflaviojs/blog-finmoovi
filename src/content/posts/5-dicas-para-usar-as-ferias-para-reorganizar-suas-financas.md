@@ -30,7 +30,7 @@ Agora que você tem uma ideia clara de seus gastos, é hora de criar um [orçame
 2. **Categorize seus gastos**: Divida seus gastos em categorias, como moradia, alimentação, transporte e entretenimento.
 3. **Atribua valores**: Atribua um [valor](/glossario/valor) para cada categoria com base em seus gastos médios.
 4. **Priorize**: Priorize suas necessidades em relação aos seus desejos.
-5. **Revisite e ajuste**: Revisite seu orçamento regularmente e ajuste-o conforme necessário.
+5. **Revisite e ajuste**: Revisite seu [orçamento](/posts/controle-gastos-cartao-credito) regularmente e ajuste-o conforme necessário.
 
 ![Avaliando seus Gastos](/images/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas-2.webp)
 

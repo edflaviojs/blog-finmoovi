@@ -16,7 +16,7 @@ seo:
   keywords: ["dicas para controlar gastos no cartão de crédito","finanças pessoais","economia","dinheiro"]
 ---
 
-## Entendendo o Cartão de Crédito
+## Entendendo o [Cartão de Crédito](/posts/controle-gastos-cartao-credito)
 O cartão de crédito é uma ferramenta conveniente para fazer compras, mas pode ser um grande problema se não for usado com responsabilidade. Imagine que você ganha R$ 5.000 por mês e decide usar seu cartão de crédito para comprar um smartphone de R$ 2.000. Se você não tiver [dinheiro](/posts/cashback-inteligente) suficiente para pagar a fatura, pode acabar pagando [juros](/glossario/juros) altos e se endividando.
 
 ## Definindo um [Orçamento](/posts/como-criar-orcamento-pessoal)
