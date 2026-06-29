@@ -50,7 +50,7 @@ Embora o Tesouro Direto seja considerado um [investimento](/posts/montando-carte
 
 
 
-Para mitigar esses [riscos](/posts/cdb-vs-tesouro-[selic](/glossario/selic)-qual-rende-mais-em-2026), é importante diversificar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) e avaliar seu perfil de risco antes de investir.
+Para mitigar esses [riscos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-5-junho-2026))-qual-rende-mais-em-2026), é importante diversificar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) e avaliar seu perfil de risco antes de investir.
 
 ## Simulação de Rendimento
 Vamos considerar um exemplo de simulação de rendimento. Se você investir R$1.000 em um título LTN com prazo de 2 anos e juros de 5% ao ano, você receberá R$1.102,50 após o vencimento, considerando juros compostos anualmente.

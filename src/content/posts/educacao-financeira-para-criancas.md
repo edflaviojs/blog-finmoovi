@@ -25,7 +25,7 @@ Uma forma eficaz de ensinar é usar exemplos do dia a dia. Se você ganha R$ 5.0
 Economizar é uma habilidade crucial que as crianças devem aprender desde cedo. Uma forma de incentivar a [economia](/posts/cashback-inteligente) é criar um sistema de piggy bank ou uma conta poupança para elas. Por exemplo, se uma criança recebe R$ 20 por semana como mesada, ela pode guardar R$ 5 em uma conta poupança. Com o tempo, esse [dinheiro](/posts/criar-reserva-de-emergencia) pode ser usado para comprar algo que ela realmente deseja ou para investir em algo mais significativo.
 
 ## Investimento e Rendimentos
-À medida que as crianças crescem, elas podem aprender sobre [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce) e rendimentos. Isso pode começar com conceitos básicos, como [juros](/glossario/juros) sobre uma conta poupança. Por exemplo, se uma criança tem R$ 1.000 em uma conta poupança que rende 5% de juros ao ano, ela receberá R$ 50 ao final do ano. **Dica prática:** use exemplos simples de investimento, como um [Tesouro Direto](https://www.tesourodireto.com.br), para mostrar como o dinheiro pode crescer com o tempo.
+À medida que as crianças crescem, elas podem aprender sobre [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce) e rendimentos. Isso pode começar com conceitos básicos, como [juros](/glossario/juros) sobre uma conta poupança. Por exemplo, se uma criança tem R$ 1.000 em uma conta poupança que rende 5% de juros ao ano, ela receberá R$ 50 ao final do ano. **Dica prática:** use exemplos simples de investimento, como um [Tesouro Direto](https://www.tesourodireto.com.br), para mostrar como o [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) pode crescer com o tempo.
 
 ![Economia e Poupança](/images/posts/educacao-financeira-para-criancas-2.webp)
 
@@ -49,4 +49,4 @@ Ensinar finanças às crianças é um processo contínuo que exige paciência e 
 
 
 ---
-**Pronto para organizar suas finanças? [Experimente o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.**
+**Pronto para organizar suas finanças? [Experimente o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/diferenca-entre-investir-e-poupar).**

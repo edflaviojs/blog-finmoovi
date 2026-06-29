@@ -37,11 +37,11 @@ Although cashback can be a great way to save [money](/en/posts/creating-an-emerg
 
 
 ## Start today
-Now that you know how to use cashback intelligently, it's time to start [saving](/en/posts/criar-reserva-de-emergencia) money. Remember that cashback is just one part of your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). To have a complete view of your finances, it's also important to consider other aspects, such as [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Visit the [Investopedia](https://www.investopedia.com) to learn more about [personal finance](/en/posts/30-day-rule-for-purchases) and how to create a customized financial plan.
+Now that you know how to use cashback intelligently, it's time to start [saving](/en/posts/criar-reserva-de-emergencia) [money](/en/posts/difference-between-investing-and-saving). Remember that cashback is just one part of your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). To have a complete view of your finances, it's also important to consider other aspects, such as [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Visit the [Investopedia](https://www.investopedia.com) to learn more about [personal finance](/en/posts/30-day-rule-for-purchases) and how to create a customized financial plan.
 
 ![Evitando armadilhas](/images/posts/cashback-inteligente-4.webp)
 
 
 
 ---
-**Want to put this into practice? [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with automatic categorization and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) and see how easy it is to control your finances with automatic categorization and visual reports.**

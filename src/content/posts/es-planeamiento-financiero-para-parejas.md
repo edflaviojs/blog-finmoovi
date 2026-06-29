@@ -19,7 +19,7 @@ seo:
 Cuando estás en una relación, es importante recordar que el planeamiento financiero no es solo sobre ti, sino sobre ustedes dos. Esto significa que ustedes necesitan trabajar juntos para alcanzar sus objetivos financieros. Una buena manera de empezar es crear un presupuesto conjunto. Por ejemplo, si tú y tu pareja tienen un salario de R$ 4.000 y R$ 5.000 por mes, respectivamente, ustedes pueden empezar a asignar el 50% de ese [valor](/es/glossario/es-valor) para gastos esenciales como alquiler, cuentas y comida.
 
 ## Planeamiento financiero básico
-Es fundamental entender que el planeamiento financiero básico comienza con la identificación de tus ingresos y gastos. Esto incluye todo, desde el salario hasta los gastos con transporte, ocio y salud. **Consejo práctico:** Haz un registro detallado de todos tus gastos durante un mes para entender mejor dónde se está gastando tu dinero. Puedes usar una aplicación de [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) para ayudarte en este proceso.
+Es fundamental entender que el planeamiento financiero básico comienza con la identificación de tus ingresos y gastos. Esto incluye todo, desde el salario hasta los gastos con transporte, ocio y salud. **Consejo práctico:** Haz un registro detallado de todos tus gastos durante un mes para entender mejor dónde se está gastando tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Puedes usar una aplicación de [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) para ayudarte en este proceso.
 
 Una vez que tengan una idea clara de sus finanzas, es hora de definir metas. Esto puede incluir ahorrar para una casa propia, pagar deudas o crear un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia). Por ejemplo, si desean comprar un apartamento que cuesta R$ 200.000, necesitarán calcular cuánto necesitan ahorrar por mes para alcanzar esa meta en un período determinado.
 
@@ -34,7 +34,7 @@ Además de pagar deudas y gastos, es importante empezar a invertir y ahorrar par
 
 
 ## [Educación financiera](/es/glossario/es-educacao-financeira)
-Educarse sobre finanzas es fundamental para tomar decisiones informadas. Existen muchos recursos disponibles, como libros, cursos en línea y sitios especializados. El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre [economía](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) y finanzas. Además, sitios como el [Investopedia](https://www.investopedia.com) pueden ser muy útiles para aprender sobre inversiones y gestión de dinero.
+Educarse sobre finanzas es fundamental para tomar decisiones informadas. Existen muchos recursos disponibles, como libros, cursos en línea y sitios especializados. El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre [economía](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) y finanzas. Además, sitios como el [Investopedia](https://www.investopedia.com) pueden ser muy útiles para aprender sobre inversiones y gestión de [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado).
 
 ![Inversiones y ahorro](/images/posts/planejamento-financeiro-para-casais-3.webp)
 

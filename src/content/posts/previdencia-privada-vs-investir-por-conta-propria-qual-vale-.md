@@ -42,7 +42,7 @@ Um exemplo de como funciona investir por conta própria: imagine que você inves
 | --- | --- | --- |
 | **Objetivo** | Renda mensal após aposentadoria | Acúmulo de patrimônio |
 | **Flexibilidade** | Baixa flexibilidade, pois os recursos são bloqueados até a aposentadoria | Alta flexibilidade, pois você pode vender ou comprar [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026))-qual-e-melhor-para-voce) a qualquer momento |
-| **Risco** | Baixo risco, pois os [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce) são geridos por profissionais | Alto risco, pois você é responsável por gerenciar os [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) |
+| **Risco** | Baixo risco, pois os [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-5-junho-2026))-qual-e-melhor-para-voce) são geridos por profissionais | Alto risco, pois você é responsável por gerenciar os [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) |
 | **Taxas** | Taxas de administração e carregamento | Taxas de administração e corretagem |
 | **Rendimento** | Rendimentos fixos ou variáveis, dependendo do plano | Rendimentos variáveis, dependendo do desempenho dos [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) |
 | **[Liquidez](/glossario/liquidez)** | Baixa liquidez, pois os recursos são bloqueados até a aposentadoria | Alta liquidez, pois você pode vender investimentos a qualquer momento |

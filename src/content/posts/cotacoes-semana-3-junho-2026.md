@@ -16,7 +16,7 @@ seo:
   keywords: ["cotação dólar hoje", "cotação euro", "resumo mercado financeiro", "selic"]
 ---
 
-## Resumo Semanal do Mercado Financeiro Brasileiro
+## Resumo Semanal do [Mercado Financeiro](/posts/cotacoes-semana-5-junho-2026) Brasileiro
 
 A semana de 08/06/2026 a 15/06/2026 foi marcada por movimentos interessantes no mercado financeiro brasileiro, com destaque para as taxas de [câmbio](/glossario/cambio) e a política monetária. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 

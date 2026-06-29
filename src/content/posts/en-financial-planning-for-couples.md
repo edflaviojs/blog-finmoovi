@@ -19,7 +19,7 @@ seo:
 When you're in a relationship, it's essential to remember that [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) isn't just about you, but about both of you. This means you need to work together to achieve your financial goals. A good way to start is by creating a joint [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). For example, if you and your partner have a monthly salary of R$ 4,000 and R$ 5,000, respectively, you can start by allocating 50% of that amount to essential expenses like rent, bills, and food.
 
 ## Basic Financial Planning
-It's fundamental to understand that basic financial planning starts with identifying your income and expenses. This includes everything from your salary to expenses on transportation, leisure, and health. **Practical tip:** Keep a detailed record of all your expenses for a month to better understand where your money is being spent. You can use a [personal finance](/en/posts/30-day-rule-for-purchases) app to help with this process.
+It's fundamental to understand that basic financial planning starts with identifying your income and expenses. This includes everything from your salary to expenses on transportation, leisure, and health. **Practical tip:** Keep a detailed record of all your expenses for a month to better understand where your [money](/en/posts/avoid-impulse-purchases) is being spent. You can use a [personal finance](/en/posts/30-day-rule-for-purchases) app to help with this process.
 
 Once you have a clear idea of your finances, it's time to set goals. This can include saving for a home, paying off debts, or creating an [emergency fund](/en/glossario/en-reserva-de-emergencia). For example, if you both want to buy an apartment that costs R$ 200,000, you'll need to calculate how much you need to save each month to achieve this goal within a certain period.
 
@@ -34,7 +34,7 @@ In addition to paying off debts and expenses, it's important to start investing 
 
 
 ## [Financial Education](/en/glossario/en-educacao-financeira)
-Educating yourself about finances is crucial for making informed decisions. There are many resources available, such as books, online courses, and specialized websites. The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information about economy and finance. Additionally, sites like [Investopedia](https://www.investopedia.com) can be very useful for learning about investments and money management.
+Educating yourself about finances is crucial for making informed decisions. There are many resources available, such as books, online courses, and specialized websites. The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information about [economy](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) and finance. Additionally, sites like [Investopedia](https://www.investopedia.com) can be very useful for learning about investments and money management.
 
 ![Investimentos e poupança](/images/posts/planejamento-financeiro-para-casais-3.webp)
 
