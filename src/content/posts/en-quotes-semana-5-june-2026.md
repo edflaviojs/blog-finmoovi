@@ -28,7 +28,7 @@ Na semana que passou, o dólar americano fechou em R$ 5,17, enquanto o euro cheg
 
 
 
-Por exemplo, se você está planejando uma viagem aos EUA, pode ser uma boa ideia comprar dólares agora, considerando o valor atual. Já se você tem investimentos em euros, pode ser uma boa ideia manter um olho nas taxas de câmbio para decidir o melhor momento para converter seu dinheiro.
+Por exemplo, se você está planejando uma viagem aos EUA, pode ser uma boa ideia comprar dólares agora, considerando o [valor](/en/glossario/en-valor) atual. Já se você tem investimentos em euros, pode ser uma boa ideia manter um olho nas taxas de câmbio para decidir o melhor momento para converter seu dinheiro.
 
 ## Taxa Selic e Impacto nos Investimentos
 
@@ -38,7 +38,7 @@ No entanto, é importante lembrar que a taxa Selic também pode afetar a inflaç
 
 ## Dica Prática para Investidores Individuais
 
-Uma dica prática para você, investidor individual, é diversificar seus investimentos. Isso significa não colocar todos os ovos na mesma cesta, ou seja, não investir todo o seu dinheiro em uma única coisa. Você pode investir em ações, [fundos](/en/glossario/en-fundos) de investimento, CDBs, LCI/LCs, e até mesmo em moedas estrangeiras.
+Uma dica prática para você, investidor individual, é diversificar seus investimentos. Isso significa não colocar todos os ovos na mesma cesta, ou seja, não investir todo o seu dinheiro em uma única coisa. Você pode investir em [ações](/en/glossario/en-acoes), [fundos](/en/glossario/en-fundos) de investimento, CDBs, LCI/LCs, e até mesmo em moedas estrangeiras.
 
 ![Dica Prática para Investidores Individuais](/images/posts/en-quotes-semana-5-june-2026-inline-3.webp)
 
@@ -56,5 +56,5 @@ E aí, pessoal? O que você achou do resumo da semana? Tem alguma dúvida ou com
 
 
 ---
-**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/30-day-rule-for-purchases) is going.**
+**Ready to track your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)? [Try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/30-day-rule-for-purchases) is going.**
 

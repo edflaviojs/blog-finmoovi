@@ -18,7 +18,7 @@ seo:
 
 ## Resumen Semanal del Mercado Financiero Brasileño: 22/6/2026 - 29/6/2026
 
-La semana que pasó fue de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del dólar y euro, el impacto de la tasa [Selic](/es/glossario/es-selic) en las inversiones y ofreceremos consejos prácticos para los inversores individuales.
+La semana que pasó fue de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del dólar y euro, el impacto de la tasa [Selic](/es/glossario/es-selic) en las inversiones y ofreceremos [consejos](/es/posts/7-errores-financieros-principiante) prácticos para los inversores individuales.
 
 ![Resumen Semanal del Mercado Financiero Brasileño: 22/6/2026 - 29/6/2026](/images/posts/es-cotizaciones-semana-5-junio-2026-inline-1.webp)
 
@@ -48,5 +48,5 @@ En resumen, la semana pasada trajo consigo una mezcla de estabilidad y decisione
 
 
 ---
-**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
+**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/ahorra-en-las-compras-del-supermercado).**
 

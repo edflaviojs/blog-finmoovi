@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Ensino Financeiro Básico
-Ensinar finanças às crianças é essencial para que elas desenvolvam hábitos saudáveis em relação ao [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz). Isso começa com conceitos básicos, como a diferença entre necessidades e desejos. Por exemplo, uma criança pode desejar um brinquedo de R$ 100, mas precisa de um par de sapatos de R$ 50 para ir à escola. **Dica prática:** crie uma tabela com suas despesas e receitas para que as crianças entendam melhor como o [dinheiro](/posts/criando-reserva-de-emergencia) é gerenciado.
+Ensinar finanças às crianças é essencial para que elas desenvolvam hábitos saudáveis em relação ao [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz). Isso começa com conceitos básicos, como a diferença entre necessidades e desejos. Por exemplo, uma criança pode desejar um brinquedo de R$ 100, mas precisa de um par de sapatos de R$ 50 para ir à escola. **Dica prática:** crie uma tabela com suas despesas e receitas para que as crianças entendam melhor como o [dinheiro](/posts/criando-reserva-de-emergencia) é gerenciado.
 
 Uma forma eficaz de ensinar é usar exemplos do dia a dia. Se você ganha R$ 5.000 por mês e gasta R$ 1.500 com aluguel, R$ 800 com comida e R$ 500 com transporte, mostre às crianças como esses gastos se encaixam no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Isso ajuda a entender a importância de priorizar gastos.
 
@@ -49,4 +49,4 @@ Ensinar finanças às crianças é um processo contínuo que exige paciência e 
 
 
 ---
-**Pronto para organizar suas finanças? [Experimente o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/diferenca-entre-investir-e-poupar).**
+**Pronto para organizar suas finanças? [Experimente o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/diferenca-entre-investir-e-poupar).**

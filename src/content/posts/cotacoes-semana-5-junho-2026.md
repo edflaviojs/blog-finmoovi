@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro: 22/06/2026 a 29/06/2026
 
-A semana que passou foi marcada por movimentações significativas no mercado financeiro brasileiro, especialmente quando se trata das taxas de câmbio e dos juros. Vamos mergulhar nos detalhes e entender como esses movimentos podem afetar seus investimentos e sua carteira.
+A semana que passou foi marcada por movimentações significativas no mercado financeiro brasileiro, especialmente quando se trata das taxas de [câmbio](/glossario/cambio) e dos juros. Vamos mergulhar nos detalhes e entender como esses movimentos podem afetar seus investimentos e sua carteira.
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro: 22/06/2026 a 29/06/2026](/images/posts/cotacoes-semana-5-junho-2026-inline-1.webp)
 
@@ -28,11 +28,11 @@ A semana que passou foi marcada por movimentações significativas no mercado fi
 
 Durante a semana de 22 a 29 de junho de 2026, o dólar americano (USD) e o euro (EUR) apresentaram comportamentos distintos em relação ao real (BRL). O dólar fechou a semana em R$ 5.17, mostrando uma relativa estabilidade em comparação com as semanas anteriores. Já o euro, por sua vez, foi negociado a R$ 5.89, indicando uma pequena valorização em relação ao real.
 
-Essas taxas de câmbio são importantes para investidores que têm exposição a ativos em moedas estrangeiras. Se você investe em ações ou fundos que têm componentes em dólares ou euros, é crucial entender como as flutuações cambiais podem impactar o valor de seus investimentos. Ferramentas como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) podem ser muito úteis para acompanhar seus investimentos em múltiplas moedas, oferecendo uma visão clara e atualizada de sua carteira.
+Essas taxas de câmbio são importantes para investidores que têm exposição a ativos em moedas estrangeiras. Se você investe em [ações](/glossario/acoes) ou [fundos](/glossario/fundos) que têm componentes em dólares ou euros, é crucial entender como as flutuações cambiais podem impactar o valor de seus investimentos. Ferramentas como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) podem ser muito úteis para acompanhar seus investimentos em múltiplas moedas, oferecendo uma visão clara e atualizada de sua carteira.
 
 ## Comentário sobre a Selic e Impacto nos Investimentos
 
-A taxa Selic, que é a taxa de juros básica da [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira, permaneceu estável durante a semana. A manutenção da Selic nos atuais patamares pode ter um impacto direto nos investimentos de [renda fixa](/glossario/renda-fixa), como títulos do Tesouro e CDBs. Investidores que buscam retorno com menor risco podem encontrar oportunidades atraentes nesse tipo de investimento, considerando as taxas atuais.
+A taxa Selic, que é a taxa de juros básica da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, permaneceu estável durante a semana. A manutenção da Selic nos atuais patamares pode ter um impacto direto nos investimentos de [renda fixa](/glossario/renda-fixa), como títulos do Tesouro e CDBs. Investidores que buscam retorno com menor risco podem encontrar oportunidades atraentes nesse tipo de investimento, considerando as taxas atuais.
 
 ![Comentário sobre a Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-5-junho-2026-inline-3.webp)
 
@@ -54,5 +54,5 @@ Com uma abordagem informada e uma ferramenta de gestão de investimentos confiá
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
+**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
 

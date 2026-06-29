@@ -26,8 +26,8 @@ Una vez que tengan una idea clara de sus finanzas, es hora de definir metas. Est
 ## Gestión de deudas
 Muchas veces, las parejas heredan deudas de sus pasados financieros individuales. Es crucial abordar esas deudas juntos. Esto puede significar crear un plan para pagar tarjetas de crédito, préstamos o otros tipos de deudas. Una estrategia es enfocarse en pagar las deudas con los intereses más altos primero, mientras hacen pagos mínimos en las otras. Recuerda que la [Serasa](https://www.serasa.com.br) puede ser una fuente útil para entender mejor sobre gestión de deudas y crédito.
 
-## Inversiones y [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado)
-Además de pagar deudas y gastos, es importante empezar a invertir y ahorrar para el futuro. Esto puede significar abrir una cuenta de ahorro conjunta o invertir en productos como el [Tesouro Direto](https://www.tesourodireto.com.br). **Consejo práctico:** Invierte una parte de tus ahorros en fondos de inversión o [acciones](/es/glossario/es-acoes) para diversificar tu cartera y potencialmente aumentar tus rendimientos a lo largo del tiempo.
+## [Inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) y [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado)
+Además de pagar deudas y gastos, es importante empezar a invertir y ahorrar para el futuro. Esto puede significar abrir una cuenta de [ahorro](/es/posts/cashback-inteligente) conjunta o invertir en productos como el [Tesouro Direto](https://www.tesourodireto.com.br). **Consejo práctico:** Invierte una parte de tus ahorros en fondos de inversión o [acciones](/es/glossario/es-acoes) para diversificar tu cartera y potencialmente aumentar tus rendimientos a lo largo del tiempo.
 
 ![Gestión de deudas](/images/posts/planejamento-financeiro-para-casais-2.webp)
 

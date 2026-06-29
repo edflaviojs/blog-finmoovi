@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Basic Financial Teaching
-Teaching finances to children is essential for them to develop healthy habits regarding [money](/en/posts/avoid-impulse-purchases). This starts with basic concepts, such as the difference between needs and desires. For example, a child may desire a toy worth R$ 100, but needs a pair of shoes worth R$ 50 to go to school. **Practical tip:** create a table with your expenses and income so that children can better understand how [money](/en/posts/creating-an-emergency-fund) is managed.
+Teaching finances to children is essential for them to develop healthy habits regarding [money](/en/posts/avoid-impulse-purchases). This starts with basic concepts, such as the difference between needs and desires. For example, a child may desire a toy worth R$ 100, but needs a pair of shoes worth R$ 50 to go to school. **Practical tip:** create a table with your [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) and income so that children can better understand how [money](/en/posts/creating-an-emergency-fund) is managed.
 
 An effective way to teach is to use everyday examples. If you earn R$ 5,000 per month and spend R$ 1,500 on rent, R$ 800 on food, and R$ 500 on transportation, show the children how these expenses fit into the [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). This helps to understand the importance of prioritizing expenses.
 
@@ -49,4 +49,4 @@ Teaching finances to children is a continuous process that requires patience and
 
 
 ---
-**Ready to organize your finances? [Try [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/financial-planning-for-freelancers) is going.**
+**Ready to organize your finances? [Try [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/financial-planning-for-freelancers) is going.**
