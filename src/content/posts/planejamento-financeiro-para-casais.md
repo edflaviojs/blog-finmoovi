@@ -26,7 +26,7 @@ Uma vez que vocês tenham uma ideia clara de suas finanças, é hora de definir 
 ## Gerenciamento de dívidas
 Muitas vezes, casais herdam dívidas de seus passados financeiros individuais. É crucial abordar essas dívidas juntos. Isso pode significar criar um plano para pagar cartões de crédito, empréstimos ou outros tipos de dívidas. Uma estratégia é focar em pagar as dívidas com os maiores [juros](/glossario/juros) primeiro, enquanto fazem pagamentos mínimos nas outras. Lembre-se de que a [Serasa](https://www.serasa.com.br) pode ser uma fonte útil para entender melhor sobre gestão de dívidas e crédito.
 
-## [Investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce) e [poupança](/glossario/poupanca)
+## [Investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce) e [poupança](/glossario/poupanca)
 Além de pagar dívidas e despesas, é importante começar a investir e poupar para o futuro. Isso pode significar abrir uma conta poupança conjunta ou investir em produtos como o [Tesouro Direto](https://www.tesourodireto.com.br). **Dica prática:** Invista uma parte de suas economias em [fundos](/glossario/fundos) de investimento ou [ações](/glossario/acoes) para diversificar sua carteira e potencialmente aumentar seus rendimentos ao longo do tempo.
 
 ![Gerenciamento de dívidas](/images/posts/planejamento-financeiro-para-casais-2.webp)
@@ -34,7 +34,7 @@ Além de pagar dívidas e despesas, é importante começar a investir e poupar p
 
 
 ## [Educação financeira](/glossario/educacao-financeira)
-Educar-se sobre finanças é fundamental para tomar decisões informadas. Existem muitos recursos disponíveis, como livros, cursos online e sites especializados. O [Banco Central do Brasil](https://www.bcb.gov.br) oferece informações valiosas sobre [economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e finanças. Além disso, sites como o [Investopedia](https://www.investopedia.com) podem ser muito úteis para aprender sobre [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e gestão de dinheiro.
+Educar-se sobre finanças é fundamental para tomar decisões informadas. Existem muitos recursos disponíveis, como livros, cursos online e sites especializados. O [Banco Central do Brasil](https://www.bcb.gov.br) oferece informações valiosas sobre [economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e finanças. Além disso, sites como o [Investopedia](https://www.investopedia.com) podem ser muito úteis para aprender sobre [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e gestão de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz).
 
 ![Investimentos e poupança](/images/posts/planejamento-financeiro-para-casais-3.webp)
 

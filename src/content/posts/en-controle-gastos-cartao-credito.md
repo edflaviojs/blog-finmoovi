@@ -20,7 +20,7 @@ seo:
 The credit card is a convenient tool for making purchases, but it can become a problem if not used responsibly. Imagine you earn R$ 4,000 per month and decide to use the card to buy a R$ 2,000 smartphone. If you don't have that amount available to pay the bill, you may end up in debt.
 
 ## Creating a [Budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-To avoid problems, it's essential to create a budget that includes all your income and expenses. Here's an example of how you can divide your budget:
+To avoid problems, it's essential to create a [budget](/en/posts/50-30-20-rule-complete-guide) that includes all your income and expenses. Here's an example of how you can divide your [budget](/en/posts/how-to-create-personal-budget):
 | Category | Percentage | Value (R$) |
 | --- | --- | --- |
 | Food | 30% | 1,200 |

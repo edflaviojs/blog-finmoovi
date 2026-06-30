@@ -40,7 +40,7 @@ Comienza verificando tu saldo bancario actual. Esto incluye no solo tu cuenta co
 Evalúa todos tus gastos del último semestre. Esto incluye gastos fijos como alquiler, servicios y suscripciones, así como gastos variables como compras, viajes y entretenimiento. Si notas que estás gastando demasiado en una área específica, puede ser hora de hacer ajustes.
 
 ### 3. Ajusta Tu [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/controle-gastos-cartao-credito)-personal)
-Con base en tu evaluación, ajusta tu presupuesto para el resto del año. Si identificaste áreas donde puedes recortar gastos, ahora es el momento de hacer cambios. Considera usar una herramienta como el app [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) para ayudarte a gestionar tus finanzas y mantener todo organizado.
+Con base en tu evaluación, ajusta tu [presupuesto](/es/posts/como-crear-presupuesto-personal) para el resto del año. Si identificaste áreas donde puedes recortar gastos, ahora es el momento de hacer cambios. Considera usar una herramienta como el app [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) para ayudarte a gestionar tus finanzas y mantener todo organizado.
 
 ### 4. Revisa Tus Metas
 Finalmente, revisa tus metas financieras originales. Si estableciste metas al comienzo del año, ahora es el momento de evaluar tu progreso. Si estás adelantado, ¡excelente! Si no, ajusta tus metas o estrategias para garantizar que alcances lo que quieres en el resto del año.

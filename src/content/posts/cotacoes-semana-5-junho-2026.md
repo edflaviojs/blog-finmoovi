@@ -18,17 +18,17 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro: 22/06/2026 a 29/06/2026
 
-A semana que passou foi marcada por movimentações significativas no mercado financeiro brasileiro, especialmente quando se trata das taxas de [câmbio](/glossario/cambio) e dos [juros](/glossario/juros). Vamos mergulhar nos detalhes e entender como esses movimentos podem afetar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e sua carteira.
+A semana que passou foi marcada por movimentações significativas no mercado financeiro brasileiro, especialmente quando se trata das taxas de [câmbio](/glossario/cambio) e dos [juros](/glossario/juros). Vamos mergulhar nos detalhes e entender como esses movimentos podem afetar seus [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-selic-qual-e-melhor-para-voce) e sua carteira.
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro: 22/06/2026 a 29/06/2026](/images/posts/cotacoes-semana-5-junho-2026-inline-1.webp)
 
 
 
-## Dólar e Euro: Tendência da Semana
+## [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana
 
 Durante a semana de 22 a 29 de junho de 2026, o dólar americano (USD) e o euro (EUR) apresentaram comportamentos distintos em relação ao real (BRL). O dólar fechou a semana em R$ 5.17, mostrando uma relativa estabilidade em comparação com as semanas anteriores. Já o euro, por sua vez, foi negociado a R$ 5.89, indicando uma pequena valorização em relação ao real.
 
-Essas taxas de câmbio são importantes para investidores que têm exposição a ativos em moedas estrangeiras. Se você investe em [ações](/glossario/acoes) ou [fundos](/glossario/fundos) que têm componentes em dólares ou euros, é crucial entender como as flutuações cambiais podem impactar o [valor](/glossario/valor) de seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Ferramentas como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) podem ser muito úteis para acompanhar seus investimentos em múltiplas moedas, oferecendo uma visão clara e atualizada de sua carteira.
+Essas taxas de câmbio são importantes para investidores que têm exposição a ativos em moedas estrangeiras. Se você investe em [ações](/glossario/acoes) ou [fundos](/glossario/fundos) que têm componentes em dólares ou euros, é crucial entender como as flutuações cambiais podem impactar o [valor](/glossario/valor) de seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Ferramentas como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) podem ser muito úteis para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) em múltiplas moedas, oferecendo uma visão clara e atualizada de sua carteira.
 
 ## Comentário sobre a [Selic](/glossario/selic) e Impacto nos Investimentos
 

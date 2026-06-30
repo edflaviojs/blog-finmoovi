@@ -19,8 +19,8 @@ seo:
 ## Entendendo o Cartão de Crédito
 O cartão de crédito é uma ferramenta conveniente para realizar compras, mas pode se tornar um problema se não for usado com responsabilidade. Imagine que você ganha R$ 4.000 por mês e decide usar o cartão para comprar um smartphone de R$ 2.000. Se você não tiver esse [valor](/glossario/valor) disponível para pagar a fatura, pode acabar se endividando.
 
-## Criando um [Orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-Para evitar problemas, é fundamental criar um orçamento que inclua todas as suas receitas e despesas. Aqui está um exemplo de como você pode dividir seu orçamento:
+## Criando um [Orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias)
+Para evitar problemas, é fundamental criar um [orçamento](/posts/como-criar-orcamento-pessoal) que inclua todas as suas receitas e despesas. Aqui está um exemplo de como você pode dividir seu orçamento:
 | Categoria | Percentual | Valor (R$) |
 | --- | --- | --- |
 | Alimentação | 30% | 1.200 |

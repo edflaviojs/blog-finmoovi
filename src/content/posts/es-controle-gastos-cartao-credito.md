@@ -20,7 +20,7 @@ seo:
 La tarjeta de crédito es una herramienta conveniente para realizar compras, pero puede convertirse en un problema si no se utiliza con responsabilidad. Imagina que ganas R$ 4.000 por mes y decides usar la tarjeta para comprar un smartphone de R$ 2.000. Si no tienes ese [valor](/es/glossario/es-valor) disponible para pagar la factura, puedes acabar endeudándote.
 
 ## Creando un [Presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-Para evitar problemas, es fundamental crear un presupuesto que incluya todas tus ingresos y gastos. Aquí está un ejemplo de cómo puedes dividir tu presupuesto:
+Para evitar problemas, es fundamental crear un [presupuesto](/es/posts/como-crear-presupuesto-personal) que incluya todas tus ingresos y gastos. Aquí está un ejemplo de cómo puedes dividir tu presupuesto:
 | Categoría | Porcentaje | Valor (R$) |
 | --- | --- | --- |
 | Alimentación | 30% | 1.200 |
@@ -44,7 +44,7 @@ Aquí están algunos pasos para monitorear tus gastos:
 
 ## Evitando el Endeudamiento
 Para evitar el endeudamiento, es fundamental pagar la factura de la tarjeta de crédito a tiempo y no superar el límite de crédito. Además, es importante tener una reserva de emergencia para cubrir gastos inesperados.
-Aquí están algunas consejos para evitar el endeudamiento:
+Aquí están algunas [consejos](/es/posts/7-errores-financieros-principiante) para evitar el endeudamiento:
 * No uses la tarjeta de crédito para compras impulsivas.
 * No compres más de lo que puedes pagar.
 * Paga la factura de la tarjeta de crédito a tiempo.
