@@ -376,5 +376,371 @@
     "target": "https://www.serasa.com.br",
     "status": "no-endpoint",
     "sentAt": "2026-06-25T16:26:36.130Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:39.197Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:39.552Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:39.878Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/cashback-inteligente/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:39.904Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/cashback-inteligente/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:40.291Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/cashback-inteligente/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:40.537Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/controle-gastos-cartao-credito/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:40.629Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/controle-gastos-cartao-credito/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:50.630Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/controle-gastos-cartao-credito/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:50.814Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/dicas-para-controlar-gastos-no-cartao-de-credito/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:50.883Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/dicas-para-controlar-gastos-no-cartao-de-credito/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:51.045Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/educacao-financeira-para-criancas/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:51.269Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/educacao-financeira-para-criancas/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:51.317Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/educacao-financeira-para-criancas/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:51.447Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/educacao-financeira-para-criancas/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:23:51.651Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:01.652Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:01.919Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:02.091Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/controle-gastos-cartao-credito/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:02.129Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/controle-gastos-cartao-credito/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:17.682Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/controle-gastos-cartao-credito/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:18.044Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/financial-education-for-children/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:18.129Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/financial-education-for-children/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:18.283Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/financial-education-for-children/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:18.401Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/financial-education-for-children/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:18.502Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/financial-planning-for-couples/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:18.625Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/financial-planning-for-couples/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:18.708Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/financial-planning-for-couples/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:18.747Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/financial-planning-for-couples/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:18.933Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/smart-cashback/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:18.950Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/smart-cashback/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:19.047Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/smart-cashback/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:19.285Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/tips-for-controlling-credit-card-expenses/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:19.305Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/tips-for-controlling-credit-card-expenses/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:19.402Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:31.672Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:31.862Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:31.933Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/cashback-inteligente/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:31.954Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/cashback-inteligente/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:32.088Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/cashback-inteligente/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:32.277Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:32.292Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:32.457Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/controle-gastos-cartao-credito/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:32.472Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/controle-gastos-cartao-credito/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:42.471Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/controle-gastos-cartao-credito/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:42.640Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/educacion-financiera-para-ninos/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:42.736Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/educacion-financiera-para-ninos/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:42.769Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/educacion-financiera-para-ninos/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:42.872Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/educacion-financiera-para-ninos/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:43.071Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/planeamiento-financiero-para-parejas/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:43.174Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/planeamiento-financiero-para-parejas/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:43.274Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/planeamiento-financiero-para-parejas/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:43.290Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/planeamiento-financiero-para-parejas/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:43.548Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/revisite-seu-orcamento/",
+    "target": "https://www.tesourodireto.com.br/",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:43.649Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/revisite-seu-orcamento/",
+    "target": "https://www.investopedia.com/",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:43.815Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/planejamento-financeiro-para-casais/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:43.931Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/planejamento-financeiro-para-casais/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:44.009Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/planejamento-financeiro-para-casais/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:44.234Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/planejamento-financeiro-para-casais/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:44.332Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/revisite-seu-orcamento/",
+    "target": "https://www.tesourodireto.com.br/",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:44.439Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/revisite-seu-orcamento/",
+    "target": "https://www.investopedia.com/",
+    "status": "no-endpoint",
+    "sentAt": "2026-06-30T16:24:44.583Z"
   }
 ]
