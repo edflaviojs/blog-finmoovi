@@ -20,7 +20,7 @@ seo:
 The credit card is a convenient tool for making purchases, but it can become a problem if not used responsibly. Imagine you earn R$ 4,000 per month and decide to use the card to buy a R$ 2,000 smartphone. If you don't have that amount available to pay the bill, you may end up in debt.
 
 ## Creating a [Budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-To avoid problems, it's essential to create a [budget](/en/posts/50-30-20-rule-complete-guide) that includes all your income and expenses. Here's an example of how you can divide your [budget](/en/posts/how-to-create-personal-budget):
+To avoid problems, it's essential to create a [budget](/en/posts/50-30-20-rule-complete-guide) that includes all your income and expenses. Here's an example of how you can divide your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)):
 | Category | Percentage | Value (R$) |
 | --- | --- | --- |
 | Food | 30% | 1,200 |
@@ -51,7 +51,7 @@ Here are some tips to avoid debt:
 * Have an emergency fund to cover unexpected expenses.
 
 ## Consulting Reliable Sources
-For more information on expense control and budgeting, you can consult reliable sources, such as the [Banco Central do Brasil](https://www.bcb.gov.br) or the [IBGE](https://www.ibge.gov.br). Additionally, you can consult [Serasa](https://www.serasa.com.br) to get information about your credit and avoid debt problems.
+For more information on [expense control](/en/posts/metodo-50-30-20-para-orcamento) and budgeting, you can consult reliable sources, such as the [Banco Central do Brasil](https://www.bcb.gov.br) or the [IBGE](https://www.ibge.gov.br). Additionally, you can consult [Serasa](https://www.serasa.com.br) to get information about your credit and avoid debt problems.
 ## Start with 5 minutes a day
 Start monitoring your expenses and creating a budget with just 5 minutes a day. Record your expenses and check if they are within the established budget. Over time, you'll become more aware of your expenses and can avoid debt. Remember that expense control is an ongoing process that requires discipline and responsibility.
 

@@ -20,7 +20,7 @@ seo:
 O cartão de crédito é uma ferramenta conveniente para realizar compras, mas pode se tornar um problema se não for usado com responsabilidade. Imagine que você ganha R$ 4.000 por mês e decide usar o cartão para comprar um smartphone de R$ 2.000. Se você não tiver esse [valor](/glossario/valor) disponível para pagar a fatura, pode acabar se endividando.
 
 ## Criando um [Orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias)
-Para evitar problemas, é fundamental criar um [orçamento](/posts/como-criar-orcamento-pessoal) que inclua todas as suas receitas e despesas. Aqui está um exemplo de como você pode dividir seu orçamento:
+Para evitar problemas, é fundamental criar um [orçamento](/posts/como-criar-orcamento-pessoal) que inclua todas as suas receitas e despesas. Aqui está um exemplo de como você pode dividir seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias):
 | Categoria | Percentual | Valor (R$) |
 | --- | --- | --- |
 | Alimentação | 30% | 1.200 |
@@ -31,7 +31,7 @@ Para evitar problemas, é fundamental criar um [orçamento](/posts/como-criar-or
 Com esse orçamento, você pode ver que tem R$ 1.200 disponíveis para alimentação e pode usar o cartão de crédito para compras nessa categoria, desde que não ultrapasse o limite.
 
 ## Monitorando os Gastos
-**Dica prática:** registre todos os seus gastos em um caderno ou use um aplicativo de controle de gastos para monitorar suas despesas. Isso ajudará a identificar áreas em que você pode cortar gastos desnecessários e evitar o endividamento.
+**Dica prática:** registre todos os seus gastos em um caderno ou use um aplicativo de [controle de gastos](/posts/metodo-50-30-20-para-orcamento) para monitorar suas despesas. Isso ajudará a identificar áreas em que você pode cortar gastos desnecessários e evitar o endividamento.
 Aqui estão alguns passos para monitorar seus gastos:
 1. Registre todos os gastos, incluindo compras pequenas, como café ou lanches.
 2. Categorize os gastos em grupos, como alimentação, moradia, transporte, etc.

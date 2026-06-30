@@ -34,7 +34,7 @@ Além de pagar dívidas e despesas, é importante começar a investir e poupar p
 
 
 ## [Educação financeira](/glossario/educacao-financeira)
-Educar-se sobre finanças é fundamental para tomar decisões informadas. Existem muitos recursos disponíveis, como livros, cursos online e sites especializados. O [Banco Central do Brasil](https://www.bcb.gov.br) oferece informações valiosas sobre [economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e finanças. Além disso, sites como o [Investopedia](https://www.investopedia.com) podem ser muito úteis para aprender sobre [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e gestão de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz).
+Educar-se sobre finanças é fundamental para tomar decisões informadas. Existem muitos recursos disponíveis, como livros, cursos online e sites especializados. O [Banco Central do Brasil](https://www.bcb.gov.br) oferece informações valiosas sobre [economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) e finanças. Além disso, sites como o [Investopedia](https://www.investopedia.com) podem ser muito úteis para aprender sobre [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-3-junho-2026))-qual-e-melhor-para-voce) e gestão de [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz).
 
 ![Investimentos e poupança](/images/posts/planejamento-financeiro-para-casais-3.webp)
 

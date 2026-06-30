@@ -19,11 +19,11 @@ seo:
 ## Entendendo o Cartão de Crédito
 O cartão de crédito é uma ferramenta conveniente para fazer compras, pagar contas e até mesmo obter descontos e cashback em determinadas transações. No entanto, se não for usado com responsabilidade, pode levar a problemas financeiros sérios. Por exemplo, se você tem um salário de R$ 5.000 por mês e acaba gastando R$ 2.000 no cartão de crédito, sem um planejamento adequado, você pode acabar com dificuldades para pagar a fatura no final do mês.
 
-## Estabelecendo um [Orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
+## Estabelecendo um [Orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias)
 Para controlar gastos no cartão de crédito, é fundamental estabelecer um orçamento realista. Isso significa que você precisa ter uma ideia clara de quanto ganha e quanto gasta todos os meses. Faça uma lista de todos os seus gastos mensais, incluindo contas de água, luz, aluguel, compras de supermercado, e, claro, gastos no cartão de crédito. **Dica prática:** use um aplicativo de gestão financeira para ajudar a trackear seus gastos e receber alertas quando estiver se aproximando do limite do seu cartão.
 
 ## Evitando Gastos Impulsivos
-Gastos impulsivos são uma das principais razões pelas quais as pessoas acabam com dívidas no cartão de crédito. Para evitar isso, é importante fazer uma pausa antes de fazer uma compra. Pergunte a si mesmo se realmente precisa daquilo e se tem dinheiro disponível para pagar. Além disso, defina um limite para gastos não essenciais, como jantares fora ou compras de roupas. Por exemplo, se você decidiu que pode gastar até R$ 500 por mês em gastos não essenciais, mantenha-se dentro desse limite.
+Gastos impulsivos são uma das principais razões pelas quais as pessoas acabam com dívidas no cartão de crédito. Para evitar isso, é importante fazer uma pausa antes de fazer uma compra. Pergunte a si mesmo se realmente precisa daquilo e se tem [dinheiro](/posts/cashback-inteligente) disponível para pagar. Além disso, defina um limite para gastos não essenciais, como jantares fora ou compras de roupas. Por exemplo, se você decidiu que pode gastar até R$ 500 por mês em gastos não essenciais, mantenha-se dentro desse limite.
 
 ![Estabelecendo um Orçamento](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-2.webp)
 

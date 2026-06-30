@@ -23,7 +23,7 @@ La tarjeta de crédito es una herramienta conveniente para hacer compras, pagar 
 Para controlar gastos en la tarjeta de crédito, es fundamental establecer un presupuesto realista. Esto significa que necesitas tener una idea clara de cuánto ganas y cuánto gastas todos los meses. Haz una lista de todos tus gastos mensuales, incluyendo cuentas de agua, luz, alquiler, compras de supermercado, y, por supuesto, gastos en la tarjeta de crédito. **Consejo práctico:** usa un aplicativo de gestión financiera para ayudarte a trackear tus gastos y recibir alertas cuando estés aproximándote al límite de tu tarjeta.
 
 ## Evitando Gastos Impulsivos
-Gastos impulsivos son una de las principales razones por las que las personas acaban con deudas en la tarjeta de crédito. Para evitar esto, es importante hacer una pausa antes de hacer una compra. Pregúntate a ti mismo si realmente necesitas eso y si tienes dinero disponible para pagar. Además, define un límite para gastos no esenciales, como cenas fuera o compras de ropa. Por ejemplo, si decidiste que puedes gastar hasta R$ 500 por mes en gastos no esenciales, mantente dentro de ese límite.
+Gastos impulsivos son una de las principales razones por las que las personas acaban con deudas en la tarjeta de crédito. Para evitar esto, es importante hacer una pausa antes de hacer una compra. Pregúntate a ti mismo si realmente necesitas eso y si tienes [dinero](/es/posts/ahorra-en-las-compras-del-supermercado) disponible para pagar. Además, define un límite para gastos no esenciales, como cenas fuera o compras de ropa. Por ejemplo, si decidiste que puedes gastar hasta R$ 500 por mes en gastos no esenciales, mantente dentro de ese límite.
 
 ![Estableciendo un Presupuesto](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-2.webp)
 
@@ -44,4 +44,4 @@ No esperes hasta que sea demasiado tarde para comenzar a controlar tus gastos en
 
 
 ---
-**El próximo paso es tuyo. [Prueba [FinMoovi](/es/posts/5-alternativas-ao-mobills-em-2026) gratis por 7 días](https://finmoovi.com) y descubre hacia dónde va tu dinero en realidad.**
+**El próximo paso es tuyo. [Prueba [FinMoovi](/es/posts/5-alternativas-ao-mobills-em-2026) gratis por 7 días](https://finmoovi.com) y descubre hacia dónde va tu [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) en realidad.**
