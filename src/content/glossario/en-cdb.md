@@ -3,11 +3,11 @@ term: "cdb"
 definition: "Understand what cdb is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 title: "cdb - Financial Glossary"
 description: "Understand what cdb is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-image: "/images/glossario/cdb.svg"
+image: "/images/glossario/cdb.webp"
 category: "basico"
 tags: ["cdb", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
-publishedAt: 2026-06-05
+publishedAt: 2026-07-01
 readingTime: 5
 locale: "en"
 translationKey: "glossario-cdb"
@@ -18,38 +18,44 @@ seo:
 ---
 
 ## What it is
-O CDB, ou Certificado de Depósito Bancário, é um tipo de investimento oferecido por bancos e instituições financeiras no Brasil. É basicamente um empréstimo que você faz ao banco, e em troca, você recebe um retorno sobre o valor investido. O CDB é uma opção popular para quem busca investir seu dinheiro com relativa segurança e liquidez. O valor mínimo para investir em CDB varia de banco para banco, mas geralmente é baixo, tornando-o acessível a muitas pessoas. Por exemplo, se você tem um salário de R$ 5.000 por mês, você pode investir uma parte desse valor em CDB e começar a ver seus rendimentos crescerem.
+O CDB, ou Certificado de Depósito Bancário, é um tipo de investimento oferecido por bancos e instituições financeiras no Brasil. Ele é basicamente um empréstimo que você faz ao banco, e em troca, você recebe um retorno sobre o valor investido. O CDB é uma opção popular para quem busca investir seu dinheiro com um nível de risco moderado e uma rentabilidade razoável. Imagine que você tem um salário de R$ 5.000 por mês e consegue poupar R$ 1.000 todo mês. Você pode investir esse valor em um CDB e receber um retorno de acordo com a rentabilidade oferecida pelo banco.
 
-* O CDB é um investimento de renda fixa
-* Oferecido por bancos e instituições financeiras
-* Valor mínimo de investimento varia de banco para banco
-* Retorno sobre o valor investido é pago em forma de juros
-* É considerado um investimento de baixo risco
+* O CDB pode ser de liquidez diária, semestral ou anual, o que significa que você pode resgatar seu investimento após um determinado período.
+* O retorno do CDB é calculado com base na taxa de juros oferecida pelo banco, que pode variar de acordo com o prazo de investimento e a instituição financeira.
+* O CDB é uma opção de investimento que pode ser feita por pessoas físicas ou jurídicas.
 
-O CDB é uma opção interessante para quem busca diversificar sua carteira de investimentos e não quer correr riscos muito altos. Além disso, o CDB é regulamentado pelo Banco Central do Brasil, o que garante um certo nível de segurança para os investidores.
+![What it is](/images/glossario/cdb-inline-1.webp)
+
+
+
+O CDB é regulamentado pelo Banco Central do Brasil, o que significa que há regras claras para sua oferta e comercialização. Além disso, o CDB é uma opção de investimento que pode ser feita por meio de bancos, corretoras de valores e outras instituições financeiras.
 
 ## How it works
-O CDB funciona da seguinte maneira: você deposita um valor em dinheiro no banco, e em troca, o banco lhe oferece um retorno sobre esse valor. O retorno é calculado com base na taxa de juros estabelecida pelo banco e é pago em forma de juros. O prazo de investimento em CDB pode variar de alguns dias a vários anos, dependendo do tipo de CDB escolhido. **Practical tip:** É importante ler atentamente as condições do CDB antes de investir, pois as taxas de juros e os prazos de investimento podem variar significativamente de um banco para outro.
+O CDB funciona de forma simples: você deposita um valor em uma conta de investimento e o banco usa esse valor para emprestar a outras pessoas ou empresas. Em troca, o banco paga um retorno sobre o valor investido, que é calculado com base na taxa de juros oferecida. O prazo de investimento pode variar de alguns dias a vários anos, e o retorno pode ser maior ou menor de acordo com o prazo escolhido. **Practical tip:** É importante ler atentamente as condições do CDB antes de investir, pois as taxas de juros e os prazos de investimento podem variar muito de uma instituição para outra.
 
-Por exemplo, se você investir R$ 10.000 em um CDB com taxa de juros de 10% ao ano, você receberá R$ 1.000 em juros ao final do ano, totalizando R$ 11.000. Além disso, o CDB pode ser utilizado como garantia para empréstimos ou outros investimentos, o que pode ser útil em certas situações.
+Por exemplo, imagine que você investe R$ 10.000 em um CDB com prazo de 1 ano e taxa de juros de 10% ao ano. Ao final do prazo, você receberá R$ 11.000, que é o valor inicial mais o retorno de R$ 1.000. **Practical tip:** É importante ter em mente que o CDB é um investimento de risco moderado, o que significa que há um risco de perda de valor, especialmente se o banco tiver problemas financeiros.
 
 ## Advantages
-O CDB tem várias vantagens que o tornam uma opção atraente para muitos investidores. Uma das principais vantagens é a segurança, pois o CDB é regulamentado pelo Banco Central do Brasil e é oferecido por instituições financeiras sólidas. Além disso, o CDB é uma opção de investimento de baixo risco, o que significa que você não corre o risco de perder todo o seu dinheiro. **Practical tip:** É importante diversificar sua carteira de investimentos, incluindo diferentes tipos de investimentos, como CDB, ações e fundos de investimento.
+O CDB tem várias vantagens para os investidores. Em primeiro lugar, ele é uma opção de investimento relativamente segura, pois é regulamentado pelo Banco Central e oferecido por instituições financeiras sólidas. Além disso, o CDB pode oferecer uma rentabilidade razoável, especialmente se você investir por um prazo mais longo. **Practical tip:** É importante diversificar seus investimentos, ou seja, não colocar todos os seus ovos na mesma cesta. Isso significa que você pode investir em diferentes tipos de investimentos, como CDB, ações, fundos de investimento, etc.
 
-Outra vantagem do CDB é a liquidez, pois você pode resgatar seu investimento a qualquer momento, embora possa haver penalidades por resgate antecipado. Além disso, o CDB é uma opção de investimento que pode ser feita com valores relativamente baixos, tornando-o acessível a muitas pessoas. Por exemplo, se você tem um salário de R$ 3.000 por mês, você pode investir R$ 500 por mês em CDB e começar a ver seus rendimentos crescerem.
+Outra vantagem do CDB é que ele é fácil de entender e acessar. Você pode investir em um CDB por meio de um banco ou corretora de valores, e o processo de investimento é geralmente rápido e simples. Além disso, o CDB é uma opção de investimento que pode ser feita por pessoas com diferentes níveis de renda, desde que você tenha um valor mínimo para investir.
+
+![Advantages](/images/glossario/cdb-inline-3.webp)
+
+
 
 ## Risks
-Embora o CDB seja considerado um investimento de baixo risco, há alguns riscos que você deve considerar antes de investir. Um dos principais riscos é o risco de crédito, que é o risco de que o banco não pague os juros ou o principal do investimento. Além disso, há o risco de liquidez, que é o risco de que você não possa resgatar seu investimento quando precisar. **Practical tip:** É importante pesquisar o banco e a instituição financeira antes de investir, para garantir que eles sejam sólidos e confiáveis.
+Embora o CDB seja considerado um investimento de risco moderado, há alguns riscos que você deve ter em mente. Em primeiro lugar, há o risco de perda de valor, especialmente se o banco tiver problemas financeiros. Além disso, há o risco de inflação, que pode reduzir o valor do seu investimento ao longo do tempo. **Practical tip:** É importante ter um plano de investimento de longo prazo e não se deixar levar por flutuações de curto prazo no mercado.
 
-Outro risco é o risco de inflação, que é o risco de que a inflação erode o valor do seu investimento. Por exemplo, se a inflação for alta, o valor do seu investimento em CDB pode não aumentar o suficiente para acompanhar a inflação, o que significa que o seu poder de compra pode ser reduzido. Além disso, há o risco de taxa de juros, que é o risco de que as taxas de juros mudem e afetem o valor do seu investimento.
+Outro risco do CDB é o risco de crédito, que é o risco de que o banco não pague o retorno do investimento. No entanto, é importante notar que o CDB é regulamentado pelo Banco Central, o que significa que há regras claras para sua oferta e comercialização. Além disso, os bancos são obrigados a manter um nível de capital mínimo para garantir a segurança dos investidores.
 
 ## Practical examples
-Vamos considerar alguns exemplos práticos de como o CDB pode ser utilizado. Por exemplo, se você tem um salário de R$ 8.000 por mês e você investe R$ 2.000 por mês em CDB, você pode ganhar R$ 200 por mês em juros, o que é um retorno de 10% ao ano. Além disso, se você investir R$ 50.000 em um CDB com taxa de juros de 12% ao ano, você receberá R$ 6.000 em juros ao final do ano, totalizando R$ 56.000.
+Vamos considerar alguns exemplos práticos de como o CDB pode ser usado. Imagine que você tem um salário de R$ 6.000 por mês e consegue poupar R$ 1.500 todo mês. Você pode investir esse valor em um CDB com prazo de 2 anos e taxa de juros de 12% ao ano. Ao final do prazo, você receberá R$ 38.000, que é o valor inicial mais o retorno de R$ 6.000.
 
-Outro exemplo é se você tem um objetivo de economizar R$ 10.000 em um ano, você pode investir R$ 833 por mês em CDB e alcançar seu objetivo em um ano. **Practical tip:** É importante definir seus objetivos de investimento antes de começar a investir, para garantir que você esteja investindo de forma eficaz e alcançando seus objetivos.
+Outro exemplo é o de uma pessoa que tem um valor de R$ 20.000 para investir e decide investir em um CDB com prazo de 5 anos e taxa de juros de 15% ao ano. Ao final do prazo, ela receberá R$ 33.000, que é o valor inicial mais o retorno de R$ 13.000. **Practical tip:** É importante ter em mente que o CDB é um investimento de longo prazo, o que significa que você deve ter paciência e não se deixar levar por flutuações de curto prazo no mercado.
 
 ## Start today
-Agora que você sabe mais sobre o CDB, é hora de começar a investir. Lembre-se de que o CDB é uma opção de investimento de baixo risco e pode ser uma boa opção para quem busca diversificar sua carteira de investimentos. **Practical tip:** É importante começar a investir o mais cedo possível, para que você possa aproveitar o poder do tempo e do compound interest. Então, não espere mais, comece a investir em CDB hoje mesmo e veja seus rendimentos crescerem ao longo do tempo.
+Agora que você sabe mais sobre o CDB, é hora de começar a investir. **Practical tip:** É importante começar a investir o mais cedo possível, pois o tempo é um grande aliado dos investidores. Além disso, é importante diversificar seus investimentos e não colocar todos os seus ovos na mesma cesta. Com um pouco de paciência e disciplina, você pode alcançar seus objetivos financeiros e ter uma vida mais segura e próspera. Então, não perca mais tempo e comece a investir em um CDB hoje mesmo! Você pode usar um app de investimento para começar a investir de forma fácil e rápida.
 
 ---
 

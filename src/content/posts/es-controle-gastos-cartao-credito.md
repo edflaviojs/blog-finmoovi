@@ -36,7 +36,7 @@ Aquí están algunos pasos para monitorear tus gastos:
 1. Registra todos los gastos, incluyendo compras pequeñas, como café o aperitivos.
 2. Categoriza los gastos en grupos, como alimentación, vivienda, transporte, etc.
 3. Verifica si los gastos están dentro del [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/reducir-gastos-fijos-mensuales)-personal) establecido.
-4. Ajusta el presupuesto si es necesario, para evitar el endeudamiento.
+4. Ajusta el [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal) si es necesario, para evitar el endeudamiento.
 
 ![Creando un Presupuesto](/images/posts/controle-gastos-cartao-credito-2.webp)
 

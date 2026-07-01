@@ -29,7 +29,7 @@ Para calcular a reserva necessária, é importante saber quais são suas despesa
 - Transporte
 - Laços de dívida, como [cartão de crédito](/posts/controle-gastos-cartao-credito) ou empréstimo
 
-**Dica prática:** Use um aplicativo de [finanças pessoais](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) para registrar seus gastos e ter uma visão clara de onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo. Isso ajudará a identificar áreas onde você pode cortar gastos e direcionar mais dinheiro para a reserva de emergência.
+**Dica prática:** Use um aplicativo de [finanças pessoais](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) para registrar seus gastos e ter uma visão clara de onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo. Isso ajudará a identificar áreas onde você pode cortar gastos e direcionar mais [dinheiro](/posts/criando-reserva-de-emergencia) para a reserva de emergência.
 
 ![Como calcular a reserva necessária](/images/posts/como-criar-uma-reserva-de-emergencia-2.webp)
 
@@ -39,7 +39,7 @@ Para calcular a reserva necessária, é importante saber quais são suas despesa
 Criar uma reserva de emergência requer disciplina e paciência. Aqui estão algumas estratégias para ajudar:
 - Defina um [valor](/glossario/valor) mensal para depositar na reserva
 - Automatize os depósitos para que seja mais fácil manter a rotina
-- Evite sacar dinheiro da reserva para gastos não essenciais
+- Evite sacar [dinheiro](/posts/criar-reserva-de-emergencia) da reserva para gastos não essenciais
 - Considere abrir uma conta [poupança](/glossario/poupanca) separada para a reserva de emergência, para que fique mais difícil acessar o dinheiro para gastos cotidianos
 
 Lembre-se de que a chave é começar pequeno e aumentar a reserva ao longo do tempo. Mesmo R$ 100 por mês podem fazer uma grande diferença ao longo de um ano.

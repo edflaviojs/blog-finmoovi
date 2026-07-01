@@ -21,8 +21,8 @@ translate: true
 ## Introduction
 We've reached the middle of the year, a perfect time to reflect on our finances and check if we're on the right track to achieving our financial objectives. Reviewing our [budget](/en/posts/50-30-20-rule-complete-guide) is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according to changes in our lives and the market.
 
-## Why Review Your Budget?
-Regularly reviewing your budget is essential for maintaining control over your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). This is because financial circumstances change over time. For example, you may have received a salary increase, changed jobs, gotten married, had children, or suffered a reduction in income. These changes directly impact your budget, and if not considered, can lead to financial problems, such as debt or lack of savings.
+## Why Review Your [Budget](/en/posts/controle-gastos-cartao-credito)?
+Regularly reviewing your [budget](/en/posts/how-to-create-personal-budget) is essential for maintaining control over your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). This is because financial circumstances change over time. For example, you may have received a salary increase, changed jobs, gotten married, had children, or suffered a reduction in income. These changes directly impact your budget, and if not considered, can lead to financial problems, such as debt or lack of savings.
 
 ### Practical Example
 Let's consider the example of John, a 35-year-old engineer who earns $8,000 per month. At the beginning of the year, he created a budget that allocated 30% of his income to housing expenses, 20% to transportation, 15% to food, 10% to leisure, and 25% to savings and debt. However, recently, John received a 15% salary increase, which raised his monthly income to $9,200. With this change, he needs to review his budget to decide how to allocate the increased income effectively.
@@ -50,7 +50,7 @@ There are several tools available to help with budget management. One example is
 In addition to regularly reviewing your budget, there are some strategies that can help keep your finances in order:
 
 - **Emergency savings**: Maintain an [emergency fund](/en/glossario/en-reserva-de-emergencia) that covers at least 3 to 6 months of expenses.
-- **[Investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)**: Consider investing part of your income in options like Treasury Direct, which offers a secure way to grow your wealth over time.
+- **[Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce)**: Consider investing part of your income in options like Treasury Direct, which offers a secure way to grow your wealth over time.
 - **[Financial education](/en/glossario/en-educacao-financeira)**: Continue learning about [personal finance](/en/posts/30-day-rule-for-purchases) and [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Websites like Investopedia offer a wide range of educational articles and resources.
 
 ![Strategies for Success](/images/posts/revisite-seu-orcamento-4.webp)

@@ -39,8 +39,8 @@ Para calcular la reserva necesaria, es importante saber cuáles son sus gastos m
 Crear una reserva de emergencia requiere disciplina y paciencia. Aquí están algunas estrategias para ayudar:
 - Defina un [valor](/es/glossario/es-valor) mensual para depositar en la reserva
 - Automatice los depósitos para que sea más fácil mantener la rutina
-- Evite sacar dinero de la reserva para gastos no esenciales
-- Considere abrir una cuenta de [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) separada para la reserva de emergencia, para que sea más difícil acceder al dinero para gastos cotidianos
+- Evite sacar [dinero](/es/posts/cashback-inteligente) de la reserva para gastos no esenciales
+- Considere abrir una cuenta de [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) separada para la reserva de emergencia, para que sea más difícil acceder al [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito) para gastos cotidianos
 
 Recuerde que la clave es comenzar pequeño y aumentar la reserva con el tiempo. Incluso R$ 100 por mes pueden hacer una gran diferencia a lo largo de un año.
 

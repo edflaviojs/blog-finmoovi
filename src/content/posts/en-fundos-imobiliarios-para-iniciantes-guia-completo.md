@@ -23,13 +23,13 @@ Real estate funds, also known as FIIs, are a type of investment that allows ordi
 FIIs are managed by specialized administrators who select the properties or real estate projects to invest in. They take care of everything, from buying and maintaining the properties to collecting rents and paying [dividends](/en/glossario/en-dividendos) to investors. You, as an investor, receive a share of the fund, which is a proportional part of the fund's assets. The value of your share can vary over time, depending on the performance of the properties in the fund.
 
 ## Benefits of Real Estate Funds
-One of the main benefits of FIIs is diversification. By investing in a real estate fund, you are diversifying your portfolio, as properties tend to have a different performance compared to stocks or bonds. Additionally, FIIs can offer a regular passive income, in the form of dividends, which can be attractive to those looking for a stable source of income. Consider, for example, investing R$5,000 in an FII that pays an 8% [dividend yield](/en/glossario/en-dividend-yield) per year. This means you could receive around R$400 per year, just for having your share in the fund.
+One of the main benefits of FIIs is diversification. By investing in a real estate fund, you are diversifying your portfolio, as properties tend to have a different performance compared to stocks or bonds. Additionally, FIIs can offer a regular passive income, in the form of dividends, which can be attractive to those looking for a stable source of income. Consider, for example, investing R$5,000 in an FII that pays an 8% [dividend yield](/en/glossario/en-dividend-[yield](/en/glossario/en-yield)) per year. This means you could receive around R$400 per year, just for having your share in the fund.
 
-![How do Real Estate Funds Work?](/images/posts/fundos-imobiliarios-para-iniciantes-guia-completo-2.webp)
+![How do Real Estate Funds Work?](/images/posts/[fundos](/en/glossario/en-fundos)-imobiliarios-para-iniciantes-guia-completo-2.webp)
 
 
 
-## Risks of Real Estate Funds
+## [Risks](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) of Real Estate Funds
 Although FIIs can be a great investment option, it's essential to be aware of the risks involved. One of the main risks is the vacancy risk, i.e., the risk that the properties in the fund remain unoccupied and do not generate revenue. Additionally, FIIs are also subject to market risks, such as fluctuations in property prices, and regulatory risks, such as changes in laws or regulations that affect the real estate sector. Evaluate whether it makes sense for your investor profile to consider these risks and how they can impact your investment.
 
 ## Return Simulations
@@ -40,7 +40,7 @@ To better understand how FIIs can behave, let's consider a simulation. Suppose y
 
 
 ## Regulatory Information and Education
-To invest in FIIs safely and informedly, it's essential to understand the regulations that govern them. In Brazil, FIIs are regulated by the [Comissão de Valores Mobiliários (CVM)](https://www.cvm.gov.br). The CVM provides detailed information about real estate funds, including their regulations, prospectuses, and financial reports. Additionally, websites like [Investopedia](https://www.investopedia.com) offer a wide range of articles and educational resources on real estate [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) and other financial topics.
+To invest in FIIs safely and informedly, it's essential to understand the regulations that govern them. In Brazil, FIIs are regulated by the [Comissão de Valores Mobiliários (CVM)](https://www.cvm.gov.br). The CVM provides detailed information about real estate funds, including their regulations, prospectuses, and financial reports. Additionally, websites like [Investopedia](https://www.investopedia.com) offer a wide range of articles and educational resources on real estate [investments](/en/posts/cdb-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and other financial topics.
 
 ## Next Steps
 Now that you have a better idea of how real estate funds work and what benefits and risks are involved, it's time to consider whether this type of investment makes sense for you. If you decide that FIIs are a good option, the next step is to choose a fund that aligns with your investment goals and risk profile. Remember to always read the fund's prospectus and understand the fees and expenses involved before investing. With the right information and a well-thought-out investment strategy, you can start building your wealth safely and sustainably.
@@ -49,4 +49,4 @@ Now that you have a better idea of how real estate funds work and what benefits 
 
 
 
-To track your investments in one place, [try [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.
+To track your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) in one place, [try [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.

@@ -29,7 +29,7 @@ To calculate the necessary fund, it's essential to know your monthly expenses. M
 - Transportation
 - Debt payments, such as [credit card](/en/posts/controle-gastos-cartao-credito) or loan
 
-**Practical tip:** Use a [personal finance](/en/posts/30-day-rule-for-purchases) app to track your expenses and get a clear view of where your [money](/en/posts/difference-between-investing-and-saving) is going. This will help you identify areas where you can cut back on spending and direct more money towards the emergency fund.
+**Practical tip:** Use a [personal finance](/en/posts/30-day-rule-for-purchases) app to track your expenses and get a clear view of where your [money](/en/posts/difference-between-investing-and-saving) is going. This will help you identify areas where you can cut back on spending and direct more [money](/en/posts/financial-education-for-children) towards the emergency fund.
 
 ![Como calcular a reserva necessária](/images/posts/como-criar-uma-reserva-de-emergencia-2.webp)
 
@@ -39,7 +39,7 @@ To calculate the necessary fund, it's essential to know your monthly expenses. M
 Creating an emergency fund requires discipline and patience. Here are some strategies to help:
 - Set a monthly value to deposit into the fund
 - Automate the deposits to make it easier to maintain the routine
-- Avoid withdrawing money from the fund for non-essential expenses
+- Avoid withdrawing [money](/en/posts/financial-planning-for-couples) from the fund for non-essential expenses
 - Consider opening a separate savings account for the emergency fund, to make it harder to access the money for daily expenses
 
 Remember that the key is to start small and increase the fund over time. Even R$ 100 per month can make a big difference over a year.

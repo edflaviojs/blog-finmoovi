@@ -21,7 +21,7 @@ translate: true
 ## Introdução
 Chegamos ao meio do ano, um momento perfeito para refletir sobre nossas finanças e verificar se estamos no caminho certo para alcançar nossos objetivos financeiros. A revisão do [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) é uma etapa crucial nesse processo, pois nos permite identificar áreas onde podemos melhorar e ajustar nossas estratégias de acordo com as mudanças em nossas vidas e no mercado.
 
-## Por Que Revisar o Orçamento?
+## Por Que Revisar o [Orçamento](/posts/como-criar-orcamento-pessoal)?
 Revisar o orçamento regularmente é fundamental para manter o controle sobre as [finanças pessoais](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias). Isso porque as circunstâncias financeiras mudam ao longo do tempo. Por exemplo, você pode ter recebido um aumento salarial, mudado de emprego, casado, tido filhos ou sofrido uma redução de renda. Essas mudanças impactam diretamente seu orçamento e, se não forem consideradas, podem levar a problemas financeiros, como dívidas ou falta de [poupança](/glossario/poupanca).
 
 ### Exemplo Prático
@@ -51,7 +51,7 @@ Além de revisar regularmente o orçamento, existem algumas estratégias que pod
 
 - **Poupança de emergência**: Mantenha uma [reserva de emergência](/glossario/reserva-de-emergencia) que cubra pelo menos 3 a 6 meses de despesas.
 - **[Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)**: Considere investir parte de sua renda em opções como [Tesouro Direto](https://www.tesourodireto.com.br/), que oferece uma forma segura de grower sua riqueza ao longo do tempo.
-- **[Educação financeira](/glossario/educacao-financeira)**: Continue aprendendo sobre [finanças pessoais](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e investimentos. Sites como [Investopedia](https://www.investopedia.com/) oferecem uma vasta gama de artigos e recursos educacionais.
+- **[Educação financeira](/glossario/educacao-financeira)**: Continue aprendendo sobre [finanças pessoais](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Sites como [Investopedia](https://www.investopedia.com/) oferecem uma vasta gama de artigos e recursos educacionais.
 
 ![Estratégias para o Sucesso](/images/posts/revisite-seu-orcamento-4.webp)
 

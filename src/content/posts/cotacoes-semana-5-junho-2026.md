@@ -44,13 +44,13 @@ No entanto, é importante lembrar que a Selic também influencia a atratividade 
 
 Para os investidores pessoa física, é fundamental diversificar a carteira para mitigar riscos. Isso pode incluir a alocação de parte do portfólio em investimentos em moedas estrangeiras, aproveitando as oportunidades de crescimento global. Além disso, manter uma [reserva de emergência](/glossario/reserva-de-emergencia) em ativos líquidos pode ser uma estratégia inteligente para enfrentar eventuais turbulências no mercado.
 
-Uma dica prática é utilizar [aplicativos financeiros](/posts/voce-tambem-esquece-de-anotar-seus-gastos), como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), para monitorar e gerenciar seus investimentos de forma eficiente. Com essas ferramentas, você pode ter uma visão clara de sua carteira, receber alertas sobre movimentos significativos no mercado e tomar decisões informadas sobre seus investimentos.
+Uma dica prática é utilizar [aplicativos financeiros](/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)), como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), para monitorar e gerenciar seus investimentos de forma eficiente. Com essas ferramentas, você pode ter uma visão clara de sua carteira, receber alertas sobre movimentos significativos no mercado e tomar decisões informadas sobre seus investimentos.
 
 ## O que Esperar para a Próxima Semana
 
 Para a próxima semana, os investidores devem ficar atentos às decisões do Comitê de Política Monetária (COPOM) sobre a taxa Selic e às notícias econômicas globais que possam impactar as taxas de câmbio. Além disso, é importante acompanhar os relatórios de empresas e setores que possam influenciar o desempenho do mercado de ações.
 
-Com uma abordagem informada e uma ferramenta de gestão de investimentos confiável, como o FinMoovi, você estará melhor preparado para navegar pelas complexidades do mercado financeiro e tomar decisões que alinham com seus objetivos financeiros. Mantenha-se informado, diversifique sua carteira e esteja pronto para aproveitar as oportunidades que o mercado oferece.
+Com uma abordagem informada e uma ferramenta de gestão de investimentos confiável, como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos), você estará melhor preparado para navegar pelas complexidades do mercado financeiro e tomar decisões que alinham com seus objetivos financeiros. Mantenha-se informado, diversifique sua carteira e esteja pronto para aproveitar as oportunidades que o mercado oferece.
 
 
 ---
