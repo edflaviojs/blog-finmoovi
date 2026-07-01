@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Definiendo la reserva de emergencia
-Una reserva de emergencia es una cantidad de dinero guardada para cubrir gastos inesperados o pérdida de ingresos. Es esencial tener una reserva para evitar deudas y mantener la estabilidad financiera. Por ejemplo, si usted gana R$ 5.000 por mes y pierde el empleo, una reserva de emergencia puede ayudar a pagar las cuentas mientras busca un nuevo trabajo.
+Una reserva de emergencia es una cantidad de [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) guardada para cubrir gastos inesperados o pérdida de ingresos. Es esencial tener una reserva para evitar deudas y mantener la estabilidad financiera. Por ejemplo, si usted gana R$ 5.000 por mes y pierde el empleo, una reserva de emergencia puede ayudar a pagar las cuentas mientras busca un nuevo trabajo.
 
 Una buena regla es tener entre 3 a 6 meses de gastos cubiertos por la reserva. Si sus gastos mensuales son de R$ 3.500, usted necesitaría una reserva de R$ 10.500 a R$ 21.000. Esto puede parecer mucho, pero es importante comenzar a ahorrar lo antes posible.
 
@@ -40,7 +40,7 @@ Crear una reserva de emergencia requiere disciplina y paciencia. Aquí están al
 - Defina un [valor](/es/glossario/es-valor) mensual para depositar en la reserva
 - Automatice los depósitos para que sea más fácil mantener la rutina
 - Evite sacar dinero de la reserva para gastos no esenciales
-- Considere abrir una cuenta de ahorro separada para la reserva de emergencia, para que sea más difícil acceder al dinero para gastos cotidianos
+- Considere abrir una cuenta de [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) separada para la reserva de emergencia, para que sea más difícil acceder al dinero para gastos cotidianos
 
 Recuerde que la clave es comenzar pequeño y aumentar la reserva con el tiempo. Incluso R$ 100 por mes pueden hacer una gran diferencia a lo largo de un año.
 

@@ -27,7 +27,7 @@ Once you have a clear idea of your finances, it's time to set goals. This can in
 Often, couples inherit debts from their individual financial pasts. It's crucial to address these debts together. This can mean creating a plan to pay off credit cards, loans, or other types of debts. One strategy is to focus on paying off the debts with the highest interest rates first, while making minimum payments on the others. Remember that the [Serasa](https://www.serasa.com.br) can be a useful resource to understand better about debt management and credit.
 
 ## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and Savings
-In addition to paying off debts and expenses, it's important to start investing and saving for the future. This can mean opening a joint savings account or investing in products like [Tesouro Direto](https://www.tesourodireto.com.br). **Practical tip:** Invest a part of your savings in investment funds or [stocks](/en/glossario/en-acoes) to diversify your portfolio and potentially increase your earnings over time.
+In addition to paying off debts and expenses, it's important to start investing and saving for the future. This can mean opening a joint savings account or investing in products like [Tesouro Direto](https://www.tesourodireto.com.br). **Practical tip:** Invest a part of your savings in [investment](/en/posts/montando-carteira-diversificada-com-r-500) funds or [stocks](/en/glossario/en-acoes) to diversify your portfolio and potentially increase your earnings over time.
 
 ![Gerenciamento de dívidas](/images/posts/planejamento-financeiro-para-casais-2.webp)
 
@@ -41,7 +41,7 @@ Educating yourself about finances is crucial for making informed decisions. Ther
 
 
 ## Start Today
-Don't wait until it's too late to start planning your finances. Share your financial goals and desires with your partner and start working together to achieve them. Remember that [financial planning](/en/posts/how-to-create-personal-budget) is an ongoing process that requires commitment and communication. With the right support and tools, you can build a secure and prosperous financial future together.
+Don't wait until it's too late to start planning your finances. Share your financial goals and desires with your partner and start working together to achieve them. Remember that [financial planning](/en/posts/how-to-create-personal-[budget](/en/posts/50-30-20-rule-complete-guide)) is an ongoing process that requires commitment and communication. With the right support and tools, you can build a secure and prosperous financial future together.
 
 ![Educação financeira](/images/posts/planejamento-financeiro-para-casais-4.webp)
 

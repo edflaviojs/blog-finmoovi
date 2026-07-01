@@ -16,7 +16,7 @@ seo:
   keywords: ["dicas para controlar gastos no cartão de crédito","finanças pessoais","economia","dinheiro"]
 ---
 
-## Entendendo o Cartão de Crédito
+## Entendendo o [Cartão de Crédito](/posts/controle-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-cartao-credito)
 O cartão de crédito é uma ferramenta conveniente para fazer compras, pagar contas e até mesmo obter descontos e cashback em determinadas transações. No entanto, se não for usado com responsabilidade, pode levar a problemas financeiros sérios. Por exemplo, se você tem um salário de R$ 5.000 por mês e acaba gastando R$ 2.000 no cartão de crédito, sem um planejamento adequado, você pode acabar com dificuldades para pagar a fatura no final do mês.
 
 ## Estabelecendo um [Orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias)

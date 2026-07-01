@@ -20,7 +20,7 @@ seo:
 The [credit card](/en/posts/controle-gastos-cartao-credito) is a convenient tool for making purchases, paying bills, and even getting discounts and cashback on certain transactions. However, if not used responsibly, it can lead to serious financial problems. For example, if you have a monthly salary of R$ 5,000 and end up spending R$ 2,000 on your credit card without proper planning, you may end up having difficulties paying the bill at the end of the month.
 
 ## Establishing a [Budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-To control credit card expenses, it's essential to establish a realistic [budget](/en/posts/50-30-20-rule-complete-guide). This means you need to have a clear idea of how much you earn and how much you spend each month. Make a list of all your monthly expenses, including water, electricity, rent, supermarket purchases, and, of course, credit card expenses. **Practical tip:** use a financial management app to help track your expenses and receive alerts when you're approaching your credit card limit.
+To control credit card [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro), it's essential to establish a realistic [budget](/en/posts/50-30-20-rule-complete-guide). This means you need to have a clear idea of how much you earn and how much you spend each month. Make a list of all your monthly expenses, including water, electricity, rent, supermarket purchases, and, of course, credit card expenses. **Practical tip:** use a financial management app to help track your expenses and receive alerts when you're approaching your credit card limit.
 
 ## Avoiding Impulsive Expenses
 Impulsive expenses are one of the main reasons people end up with credit card debt. To avoid this, it's essential to take a pause before making a purchase. Ask yourself if you really need it and if you have the [money](/en/posts/30-day-rule-for-purchases) available to pay for it. Additionally, set a limit for non-essential expenses, such as dining out or buying clothes. For example, if you've decided you can spend up to R$ 500 per month on non-essential expenses, stay within that limit.
@@ -44,4 +44,4 @@ Don't wait until it's too late to start controlling your credit card expenses. S
 
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/avoid-impulse-purchases) is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) and discover where your [money](/en/posts/avoid-impulse-purchases) is really going.**

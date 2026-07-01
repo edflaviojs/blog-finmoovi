@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Defining the [Emergency Fund](/en/glossario/en-reserva-de-emergencia)
-An emergency fund is an amount of money set aside to cover unexpected expenses or loss of income. It's essential to have a fund to avoid debt and maintain financial stability. For example, if you earn R$ 5,000 per month and lose your job, an emergency fund can help pay the bills while you look for a new job.
+An emergency fund is an amount of [money](/en/posts/avoid-impulse-purchases) set aside to cover unexpected expenses or loss of income. It's essential to have a fund to avoid debt and maintain financial stability. For example, if you earn R$ 5,000 per month and lose your job, an emergency fund can help pay the bills while you look for a new job.
 
 A good rule of thumb is to have between 3 to 6 months' worth of expenses covered by the fund. If your monthly expenses are R$ 3,500, you would need a fund of R$ 10,500 to R$ 21,000. This may seem like a lot, but it's crucial to start saving as soon as possible.
 
@@ -27,7 +27,7 @@ To calculate the necessary fund, it's essential to know your monthly expenses. M
 - Water, electricity, and internet bills
 - Groceries
 - Transportation
-- Debt payments, such as credit card or loan
+- Debt payments, such as [credit card](/en/posts/controle-gastos-cartao-credito) or loan
 
 **Practical tip:** Use a [personal finance](/en/posts/30-day-rule-for-purchases) app to track your expenses and get a clear view of where your money is going. This will help you identify areas where you can cut back on spending and direct more money towards the emergency fund.
 

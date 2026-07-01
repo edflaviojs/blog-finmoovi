@@ -35,8 +35,8 @@ Com esse [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro), você pod
 Aqui estão alguns passos para monitorar seus gastos:
 1. Registre todos os gastos, incluindo compras pequenas, como café ou lanches.
 2. Categorize os gastos em grupos, como alimentação, moradia, transporte, etc.
-3. Verifique se os gastos estão dentro do orçamento estabelecido.
-4. Ajuste o orçamento se necessário, para evitar o endividamento.
+3. Verifique se os gastos estão dentro do [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) estabelecido.
+4. Ajuste o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) se necessário, para evitar o endividamento.
 
 ![Criando um Orçamento](/images/posts/controle-gastos-cartao-credito-2.webp)
 

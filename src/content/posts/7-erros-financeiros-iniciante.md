@@ -6,6 +6,7 @@ category: "dicas"
 tags: ["erros financeiros", "finanças pessoais", "educação financeira", "dicas"]
 author: "FinMoovi"
 publishedAt: 2025-05-10
+updatedAt: 2026-07-01
 readingTime: 5
 featured: false
 locale: "pt"

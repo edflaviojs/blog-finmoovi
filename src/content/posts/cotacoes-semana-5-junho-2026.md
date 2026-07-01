@@ -30,9 +30,9 @@ Durante a semana de 22 a 29 de junho de 2026, o [dólar](/posts/cotacoes-semana-
 
 Essas taxas de câmbio são importantes para investidores que têm exposição a ativos em moedas estrangeiras. Se você investe em [ações](/glossario/acoes) ou [fundos](/glossario/fundos) que têm componentes em dólares ou euros, é crucial entender como as flutuações cambiais podem impactar o [valor](/glossario/valor) de seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Ferramentas como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) podem ser muito úteis para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) em múltiplas moedas, oferecendo uma visão clara e atualizada de sua carteira.
 
-## Comentário sobre a [Selic](/glossario/selic) e Impacto nos Investimentos
+## Comentário sobre a [Selic](/glossario/selic) e Impacto nos [Investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 
-A taxa Selic, que é a taxa de juros básica da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, permaneceu estável durante a semana. A manutenção da Selic nos atuais patamares pode ter um impacto direto nos investimentos de [renda fixa](/glossario/renda-fixa), como títulos do Tesouro e CDBs. Investidores que buscam retorno com menor risco podem encontrar oportunidades atraentes nesse tipo de investimento, considerando as taxas atuais.
+A taxa Selic, que é a taxa de juros básica da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, permaneceu estável durante a semana. A manutenção da Selic nos atuais patamares pode ter um impacto direto nos investimentos de [renda fixa](/glossario/renda-fixa), como títulos do Tesouro e CDBs. Investidores que buscam retorno com menor risco podem encontrar oportunidades atraentes nesse tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500), considerando as taxas atuais.
 
 ![Comentário sobre a Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-5-junho-2026-inline-3.webp)
 

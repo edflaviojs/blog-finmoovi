@@ -6,6 +6,7 @@ category: "dicas"
 tags: ["regra 50-30-20", "orçamento", "finanças pessoais", "método financeiro"]
 author: "FinMoovi"
 publishedAt: 2025-05-12
+updatedAt: 2026-07-01
 readingTime: 6
 featured: true
 locale: "pt"

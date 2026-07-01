@@ -20,7 +20,7 @@ seo:
 The credit card is a convenient tool for making purchases, but it can become a problem if not used responsibly. Imagine you earn R$ 4,000 per month and decide to use the card to buy a R$ 2,000 smartphone. If you don't have that amount available to pay the bill, you may end up in debt.
 
 ## Creating a [Budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-To avoid problems, it's essential to create a [budget](/en/posts/50-30-20-rule-complete-guide) that includes all your income and expenses. Here's an example of how you can divide your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)):
+To avoid problems, it's essential to create a [budget](/en/posts/50-30-20-rule-complete-guide) that includes all your [income](/en/posts/montando-carteira-diversificada-com-r-500) and expenses. Here's an example of how you can divide your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)):
 | Category | Percentage | Value (R$) |
 | --- | --- | --- |
 | Food | 30% | 1,200 |
@@ -28,7 +28,7 @@ To avoid problems, it's essential to create a [budget](/en/posts/50-30-20-rule-c
 | Transportation | 15% | 600 |
 | Leisure | 10% | 400 |
 | Other expenses | 20% | 800 |
-With this [budget](/en/posts/how-to-create-personal-budget), you can see that you have R$ 1,200 available for food and can use the credit card for purchases in this category, as long as you don't exceed the limit.
+With this [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas)), you can see that you have R$ 1,200 available for food and can use the credit card for purchases in this category, as long as you don't exceed the limit.
 
 ## Monitoring Expenses
 **Practical tip:** record all your expenses in a notebook or use an expense tracking app to monitor your spending. This will help you identify areas where you can cut unnecessary expenses and avoid debt.

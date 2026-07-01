@@ -20,7 +20,7 @@ seo:
 La tarjeta de crédito es una herramienta conveniente para realizar compras, pero puede convertirse en un problema si no se utiliza con responsabilidad. Imagina que ganas R$ 4.000 por mes y decides usar la tarjeta para comprar un smartphone de R$ 2.000. Si no tienes ese [valor](/es/glossario/es-valor) disponible para pagar la factura, puedes acabar endeudándote.
 
 ## Creando un [Presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-Para evitar problemas, es fundamental crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) que incluya todas tus ingresos y gastos. Aquí está un ejemplo de cómo puedes dividir tu [presupuesto](/es/posts/como-crear-presupuesto-personal):
+Para evitar problemas, es fundamental crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) que incluya todas tus ingresos y gastos. Aquí está un ejemplo de cómo puedes dividir tu [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal):
 | Categoría | Porcentaje | Valor (R$) |
 | --- | --- | --- |
 | Alimentación | 30% | 1.200 |
@@ -28,7 +28,7 @@ Para evitar problemas, es fundamental crear un [presupuesto](/es/posts/como-crea
 | Transporte | 15% | 600 |
 | Ocio | 10% | 400 |
 | Otros gastos | 20% | 800 |
-Con este presupuesto, puedes ver que tienes R$ 1.200 disponibles para alimentación y puedes usar la tarjeta de crédito para compras en esta categoría, siempre y cuando no superes el límite.
+Con este [presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar), puedes ver que tienes R$ 1.200 disponibles para alimentación y puedes usar la tarjeta de crédito para compras en esta categoría, siempre y cuando no superes el límite.
 
 ## Monitoreando los Gastos
 **Consejo práctico:** registra todos tus gastos en un cuaderno o usa una aplicación de [control de gastos](/es/posts/metodo-50-30-20-para-orcamento) para monitorear tus gastos. Esto te ayudará a identificar áreas en las que puedes recortar gastos innecesarios y evitar el endeudamiento.

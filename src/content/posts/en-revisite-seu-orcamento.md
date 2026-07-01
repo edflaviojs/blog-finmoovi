@@ -19,10 +19,10 @@ translate: true
 ---
 
 ## Introduction
-We've reached the middle of the year, a perfect time to reflect on our finances and check if we're on the right track to achieving our financial objectives. Reviewing our budget is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according to changes in our lives and the market.
+We've reached the middle of the year, a perfect time to reflect on our finances and check if we're on the right track to achieving our financial objectives. Reviewing our [budget](/en/posts/50-30-20-rule-complete-guide) is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according to changes in our lives and the market.
 
 ## Why Review Your Budget?
-Regularly reviewing your budget is essential for maintaining control over your personal finances. This is because financial circumstances change over time. For example, you may have received a salary increase, changed jobs, gotten married, had children, or suffered a reduction in income. These changes directly impact your budget, and if not considered, can lead to financial problems, such as debt or lack of savings.
+Regularly reviewing your budget is essential for maintaining control over your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). This is because financial circumstances change over time. For example, you may have received a salary increase, changed jobs, gotten married, had children, or suffered a reduction in income. These changes directly impact your budget, and if not considered, can lead to financial problems, such as debt or lack of savings.
 
 ### Practical Example
 Let's consider the example of John, a 35-year-old engineer who earns $8,000 per month. At the beginning of the year, he created a budget that allocated 30% of his income to housing expenses, 20% to transportation, 15% to food, 10% to leisure, and 25% to savings and debt. However, recently, John received a 15% salary increase, which raised his monthly income to $9,200. With this change, he needs to review his budget to decide how to allocate the increased income effectively.
