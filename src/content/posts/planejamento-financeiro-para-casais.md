@@ -27,7 +27,7 @@ Uma vez que vocês tenham uma ideia clara de suas finanças, é hora de definir 
 Muitas vezes, casais herdam dívidas de seus passados financeiros individuais. É crucial abordar essas dívidas juntos. Isso pode significar criar um plano para pagar cartões de crédito, empréstimos ou outros tipos de dívidas. Uma estratégia é focar em pagar as dívidas com os maiores [juros](/glossario/juros) primeiro, enquanto fazem pagamentos mínimos nas outras. Lembre-se de que a [Serasa](https://www.serasa.com.br) pode ser uma fonte útil para entender melhor sobre gestão de dívidas e crédito.
 
 ## [Investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce) e [poupança](/glossario/poupanca)
-Além de pagar dívidas e despesas, é importante começar a investir e poupar para o futuro. Isso pode significar abrir uma conta poupança conjunta ou investir em produtos como o [Tesouro Direto](https://www.tesourodireto.com.br). **Dica prática:** Invista uma parte de suas economias em [fundos](/glossario/fundos) de investimento ou [ações](/glossario/acoes) para diversificar sua carteira e potencialmente aumentar seus rendimentos ao longo do tempo.
+Além de pagar dívidas e despesas, é importante começar a investir e poupar para o futuro. Isso pode significar abrir uma conta poupança conjunta ou investir em produtos como o [Tesouro Direto](https://www.tesourodireto.com.br). **Dica prática:** Invista uma parte de suas economias em [fundos](/glossario/fundos) de [investimento](/posts/montando-carteira-diversificada-com-r-500) ou [ações](/glossario/acoes) para diversificar sua carteira e potencialmente aumentar seus rendimentos ao longo do tempo.
 
 ![Gerenciamento de dívidas](/images/posts/planejamento-financeiro-para-casais-2.webp)
 
@@ -48,4 +48,4 @@ Não espere até que seja tarde para começar a planejar suas finanças. Compart
 
 
 ---
-**Quer ver isso funcionando na prática? [Comece grátis com o FinMoovi](https://[finmoovi](/posts/5-alternativas-ao-mobills-em-2026).com) — 7 dias para organizar suas finanças sem complicação.**
+**Quer ver isso funcionando na prática? [Comece grátis com o FinMoovi](https://[finmoovi](/posts/5-alternativas-ao-[mobills](/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026).com) — 7 dias para organizar suas finanças sem complicação.**

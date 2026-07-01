@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Understanding Credit Cards
-The credit card is a convenient tool for making purchases, paying bills, and even getting discounts and cashback on certain transactions. However, if not used responsibly, it can lead to serious financial problems. For example, if you have a monthly salary of R$ 5,000 and end up spending R$ 2,000 on your credit card without proper planning, you may end up having difficulties paying the bill at the end of the month.
+The [credit card](/en/posts/controle-gastos-cartao-credito) is a convenient tool for making purchases, paying bills, and even getting discounts and cashback on certain transactions. However, if not used responsibly, it can lead to serious financial problems. For example, if you have a monthly salary of R$ 5,000 and end up spending R$ 2,000 on your credit card without proper planning, you may end up having difficulties paying the bill at the end of the month.
 
 ## Establishing a [Budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
 To control credit card expenses, it's essential to establish a realistic [budget](/en/posts/50-30-20-rule-complete-guide). This means you need to have a clear idea of how much you earn and how much you spend each month. Make a list of all your monthly expenses, including water, electricity, rent, supermarket purchases, and, of course, credit card expenses. **Practical tip:** use a financial management app to help track your expenses and receive alerts when you're approaching your credit card limit.
@@ -44,4 +44,4 @@ Don't wait until it's too late to start controlling your credit card expenses. S
 
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and discover where your money is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/avoid-impulse-purchases) is really going.**

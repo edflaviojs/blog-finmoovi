@@ -28,7 +28,7 @@ Para evitar problemas, é fundamental criar um [orçamento](/posts/como-criar-or
 | Transporte | 15% | 600 |
 | Lazer | 10% | 400 |
 | Outras despesas | 20% | 800 |
-Com esse orçamento, você pode ver que tem R$ 1.200 disponíveis para alimentação e pode usar o cartão de crédito para compras nessa categoria, desde que não ultrapasse o limite.
+Com esse [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro), você pode ver que tem R$ 1.200 disponíveis para alimentação e pode usar o cartão de crédito para compras nessa categoria, desde que não ultrapasse o limite.
 
 ## Monitorando os Gastos
 **Dica prática:** registre todos os seus gastos em um caderno ou use um aplicativo de [controle de gastos](/posts/metodo-50-30-20-para-orcamento) para monitorar suas despesas. Isso ajudará a identificar áreas em que você pode cortar gastos desnecessários e evitar o endividamento.
@@ -65,4 +65,4 @@ Comece a monitorar seus gastos e criar um orçamento com apenas 5 minutos por di
 
 
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

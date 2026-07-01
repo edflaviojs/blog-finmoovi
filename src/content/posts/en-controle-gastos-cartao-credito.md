@@ -28,7 +28,7 @@ To avoid problems, it's essential to create a [budget](/en/posts/50-30-20-rule-c
 | Transportation | 15% | 600 |
 | Leisure | 10% | 400 |
 | Other expenses | 20% | 800 |
-With this budget, you can see that you have R$ 1,200 available for food and can use the credit card for purchases in this category, as long as you don't exceed the limit.
+With this [budget](/en/posts/how-to-create-personal-budget), you can see that you have R$ 1,200 available for food and can use the credit card for purchases in this category, as long as you don't exceed the limit.
 
 ## Monitoring Expenses
 **Practical tip:** record all your expenses in a notebook or use an expense tracking app to monitor your spending. This will help you identify areas where you can cut unnecessary expenses and avoid debt.
@@ -65,4 +65,4 @@ Start monitoring your expenses and creating a budget with just 5 minutes a day. 
 
 
 
-**Want to automate this control? [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) — it automatically categorizes expenses and generates reports without effort.**
+**Want to automate this control? [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) — it automatically categorizes expenses and generates reports without effort.**

@@ -16,7 +16,7 @@ seo:
   keywords: ["cotação dólar hoje", "cotação euro", "resumo mercado financeiro", "selic"]
 ---
 
-## Resumo Semanal do Mercado Financeiro Brasileiro: 22/06/2026 a 29/06/2026
+## Resumo Semanal do [Mercado Financeiro](/posts/cotacoes-semana-4-maio-2026) Brasileiro: 22/06/2026 a 29/06/2026
 
 A semana que passou foi marcada por movimentações significativas no mercado financeiro brasileiro, especialmente quando se trata das taxas de [câmbio](/glossario/cambio) e dos [juros](/glossario/juros). Vamos mergulhar nos detalhes e entender como esses movimentos podem afetar seus [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-selic-qual-e-melhor-para-voce) e sua carteira.
 
@@ -44,7 +44,7 @@ No entanto, é importante lembrar que a Selic também influencia a atratividade 
 
 Para os investidores pessoa física, é fundamental diversificar a carteira para mitigar riscos. Isso pode incluir a alocação de parte do portfólio em investimentos em moedas estrangeiras, aproveitando as oportunidades de crescimento global. Além disso, manter uma [reserva de emergência](/glossario/reserva-de-emergencia) em ativos líquidos pode ser uma estratégia inteligente para enfrentar eventuais turbulências no mercado.
 
-Uma dica prática é utilizar aplicativos financeiros, como o FinMoovi, para monitorar e gerenciar seus investimentos de forma eficiente. Com essas ferramentas, você pode ter uma visão clara de sua carteira, receber alertas sobre movimentos significativos no mercado e tomar decisões informadas sobre seus investimentos.
+Uma dica prática é utilizar aplicativos financeiros, como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), para monitorar e gerenciar seus investimentos de forma eficiente. Com essas ferramentas, você pode ter uma visão clara de sua carteira, receber alertas sobre movimentos significativos no mercado e tomar decisões informadas sobre seus investimentos.
 
 ## O que Esperar para a Próxima Semana
 
