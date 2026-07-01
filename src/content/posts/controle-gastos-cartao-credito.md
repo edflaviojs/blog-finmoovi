@@ -51,7 +51,7 @@ Aqui estão algumas dicas para evitar o endividamento:
 * Tenha uma reserva de emergência para cobrir despesas inesperadas.
 
 ## Consultando Fontes Confiáveis
-Para obter mais informações sobre controle de gastos e orçamento, você pode consultar fontes confiáveis, como o [Banco Central do Brasil](https://www.bcb.gov.br) ou o [IBGE](https://www.ibge.gov.br). Além disso, você pode consultar o [Serasa](https://www.serasa.com.br) para obter informações sobre seu crédito e evitar problemas de endividamento.
+Para obter mais informações sobre [controle de gastos](/posts/voce-tambem-esquece-de-anotar-seus-gastos) e [orçamento](/posts/regra-50-30-20-guia-completo), você pode consultar fontes confiáveis, como o [Banco Central do Brasil](https://www.bcb.gov.br) ou o [IBGE](https://www.ibge.gov.br). Além disso, você pode consultar o [Serasa](https://www.serasa.com.br) para obter informações sobre seu crédito e evitar problemas de endividamento.
 ## Comece com 5 minutos por dia
 Comece a monitorar seus gastos e criar um orçamento com apenas 5 minutos por dia. Registre seus gastos e verifique se estão dentro do orçamento estabelecido. Com o tempo, você se tornará mais consciente de seus gastos e poderá evitar o endividamento. Lembre-se de que o controle de gastos é um processo contínuo e exige disciplina e responsabilidade.
 

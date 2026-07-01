@@ -35,7 +35,7 @@ With this [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento
 Here are some steps to monitor your expenses:
 1. Record all expenses, including small purchases, such as coffee or snacks.
 2. Categorize expenses into groups, such as food, housing, transportation, etc.
-3. Check if expenses are within the established budget.
+3. Check if expenses are within the established [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)).
 4. Adjust the budget if necessary to avoid debt.
 
 ![Creating a Budget](/images/posts/controle-gastos-cartao-credito-2.webp)

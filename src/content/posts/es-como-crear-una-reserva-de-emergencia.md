@@ -29,7 +29,7 @@ Para calcular la reserva necesaria, es importante saber cuáles son sus gastos m
 - Transporte
 - Deudas, como tarjeta de crédito o préstamo
 
-**Consejo práctico:** Use una aplicación de [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) para registrar sus gastos y tener una visión clara de dónde está yendo su dinero. Esto ayudará a identificar áreas donde puede recortar gastos y dirigir más dinero hacia la reserva de emergencia.
+**Consejo práctico:** Use una aplicación de [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) para registrar sus gastos y tener una visión clara de dónde está yendo su [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado). Esto ayudará a identificar áreas donde puede recortar gastos y dirigir más [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado) hacia la reserva de emergencia.
 
 ![Cómo calcular la reserva necesaria](/images/posts/como-criar-uma-reserva-de-emergencia-2.webp)
 

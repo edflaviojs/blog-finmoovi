@@ -27,9 +27,9 @@ Para calcular a reserva necessária, é importante saber quais são suas despesa
 - Contas de água, luz e internet
 - Supermercado
 - Transporte
-- Laços de dívida, como cartão de crédito ou empréstimo
+- Laços de dívida, como [cartão de crédito](/posts/controle-gastos-cartao-credito) ou empréstimo
 
-**Dica prática:** Use um aplicativo de [finanças pessoais](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) para registrar seus gastos e ter uma visão clara de onde seu dinheiro está indo. Isso ajudará a identificar áreas onde você pode cortar gastos e direcionar mais dinheiro para a reserva de emergência.
+**Dica prática:** Use um aplicativo de [finanças pessoais](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) para registrar seus gastos e ter uma visão clara de onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo. Isso ajudará a identificar áreas onde você pode cortar gastos e direcionar mais dinheiro para a reserva de emergência.
 
 ![Como calcular a reserva necessária](/images/posts/como-criar-uma-reserva-de-emergencia-2.webp)
 

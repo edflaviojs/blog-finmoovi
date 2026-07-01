@@ -38,13 +38,13 @@ A taxa Selic, que é a taxa de juros básica da [economia](/posts/5-[dicas](/pos
 
 
 
-No entanto, é importante lembrar que a Selic também influencia a atratividade de outros tipos de investimentos, como ações e [fundos imobiliários](/glossario/fundos-imobiliarios). Um ambiente de juros mais altos pode desviar a atenção de investidores para investimentos de renda fixa, potencialmente afetando a demanda e os preços de ativos de risco.
+No entanto, é importante lembrar que a Selic também influencia a atratividade de outros tipos de investimentos, como ações e [fundos imobiliários](/glossario/fundos-imobiliarios). Um ambiente de juros mais altos pode desviar a atenção de investidores para investimentos de [renda fixa](/posts/tesouro-direto-para-iniciantes), potencialmente afetando a demanda e os preços de ativos de risco.
 
 ## Dica Prática para o Investidor Pessoa Física
 
 Para os investidores pessoa física, é fundamental diversificar a carteira para mitigar riscos. Isso pode incluir a alocação de parte do portfólio em investimentos em moedas estrangeiras, aproveitando as oportunidades de crescimento global. Além disso, manter uma [reserva de emergência](/glossario/reserva-de-emergencia) em ativos líquidos pode ser uma estratégia inteligente para enfrentar eventuais turbulências no mercado.
 
-Uma dica prática é utilizar aplicativos financeiros, como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), para monitorar e gerenciar seus investimentos de forma eficiente. Com essas ferramentas, você pode ter uma visão clara de sua carteira, receber alertas sobre movimentos significativos no mercado e tomar decisões informadas sobre seus investimentos.
+Uma dica prática é utilizar [aplicativos financeiros](/posts/voce-tambem-esquece-de-anotar-seus-gastos), como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), para monitorar e gerenciar seus investimentos de forma eficiente. Com essas ferramentas, você pode ter uma visão clara de sua carteira, receber alertas sobre movimentos significativos no mercado e tomar decisões informadas sobre seus investimentos.
 
 ## O que Esperar para a Próxima Semana
 
