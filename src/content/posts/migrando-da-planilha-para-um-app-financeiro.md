@@ -46,7 +46,7 @@ De acordo com pesquisas, 70% das pessoas que usam planilhas desistem em 30 dias 
 Existem muitos apps financeiros disponíveis no mercado, cada um com suas próprias características e [benefícios](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-rende-mais-em-2026). Alguns exemplos incluem:
 * [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas): um app financeiro moderno que permite que você gerencie suas finanças de forma eficaz e fácil.
 * [Mobills](/posts/5-alternativas-ao-mobills-em-2026): um app financeiro que permite que você gerencie suas contas e cartões de crédito de forma centralizada.
-* Organizze: um app financeiro que permite que você gerencie suas finanças e contas de forma personalizada.
+* [Organizze](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su): um app financeiro que permite que você gerencie suas finanças e contas de forma personalizada.
 
 ## Checklist: Planilha ou App?
 Aqui está uma checklist para ajudá-lo a decidir se uma planilha ou um app financeiro é melhor para você:

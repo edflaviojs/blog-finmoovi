@@ -17,13 +17,13 @@ seo:
 ---
 
 ## O que são [Fundos Imobiliários](/glossario/[fundos](/glossario/fundos)-imobiliarios)?
-Os fundos imobiliários, também conhecidos como FIIs, são um tipo de investimento que permite aos investidores comuns terem acesso ao mercado imobiliário de forma mais acessível e diversificada. Em vez de comprar um imóvel inteiro, você pode investir uma quantia menor, como R$500 ou R$1.000, em um fundo que é composto por various imóveis ou direitos sobre imóveis. Isso significa que você pode ter uma parte de um prédio comercial, um shopping center ou até mesmo um conjunto de apartamentos, sem precisar comprar o imóvel todo.
+Os [fundos imobiliários](/glossario/fundos-imobiliarios), também conhecidos como FIIs, são um tipo de investimento que permite aos investidores comuns terem acesso ao mercado imobiliário de forma mais acessível e diversificada. Em vez de comprar um imóvel inteiro, você pode investir uma quantia menor, como R$500 ou R$1.000, em um fundo que é composto por various imóveis ou direitos sobre imóveis. Isso significa que você pode ter uma parte de um prédio comercial, um shopping center ou até mesmo um conjunto de apartamentos, sem precisar comprar o imóvel todo.
 
 ## Como Funcionam os Fundos Imobiliários?
 Os FIIs são geridos por administradores especializados que selecionam os imóveis ou projetos imobiliários para investir. Eles cuidam de tudo, desde a compra e manutenção dos imóveis até a cobrança de aluguéis e pagamento de [dividendos](/glossario/dividendos) aos investidores. Você, como investidor, recebe uma cota do fundo, que é uma parte proporcional do patrimônio do fundo. O valor de sua cota pode variar com o tempo, dependendo do desempenho dos imóveis no fundo.
 
 ## Benefícios dos Fundos Imobiliários
-Um dos principais benefícios dos FIIs é a [diversificação](/glossario/diversificacao). Ao investir em um fundo imobiliário, você está diversificando seu portfólio, pois os imóveis tendem a ter um desempenho diferente em relação às ações ou títulos. Além disso, os FIIs podem oferecer uma renda passiva regular, na forma de dividendos, o que pode ser atraente para quem busca uma fonte de renda estável. Considere, por exemplo, investir R$5.000 em um FII que pague um [dividend yield](/glossario/dividend-yield) de 8% ao ano. Isso significa que você poderia receber cerca de R$400 por ano, apenas por ter sua cota no fundo.
+Um dos principais benefícios dos FIIs é a [diversificação](/glossario/diversificacao). Ao investir em um fundo imobiliário, você está diversificando seu portfólio, pois os imóveis tendem a ter um desempenho diferente em relação às [ações](/glossario/acoes) ou títulos. Além disso, os FIIs podem oferecer uma renda passiva regular, na forma de dividendos, o que pode ser atraente para quem busca uma fonte de renda estável. Considere, por exemplo, investir R$5.000 em um FII que pague um [dividend yield](/glossario/dividend-yield) de 8% ao ano. Isso significa que você poderia receber cerca de R$400 por ano, apenas por ter sua cota no fundo.
 
 ![Como Funcionam os Fundos Imobiliários?](/images/posts/fundos-imobiliarios-para-iniciantes-guia-completo-2.webp)
 
@@ -49,4 +49,4 @@ Agora que você tem uma ideia melhor sobre como funcionam os fundos imobiliário
 
 
 
-Para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em um só lugar, [teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) — multi-moeda, relatórios inteligentes e 100% offline.
+Para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-rende-mais-em-2026) em um só lugar, [teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.

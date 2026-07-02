@@ -29,8 +29,8 @@ According to the [Banco Central do Brasil](https://www.bcb.gov.br), personal fin
 
 
 
-## Finding the Solution with FinMoovi
-But what if you had an easy and practical way to record all your expenses without having to carry a notebook or make notes all day? This is where FinMoovi comes in, a personal finance app that makes it easy for those looking to organize their expenses efficiently. With FinMoovi, you can simply take a picture of the receipt or say the purchase amount by voice, and the app will automatically record it. Additionally, FinMoovi offers automatic categorization, so you don't have to worry about classifying each expense.
+## Finding the Solution with [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026)
+But what if you had an easy and practical way to record all your expenses without having to carry a notebook or make notes all day? This is where FinMoovi comes in, a [personal finance](/en/posts/30-day-rule-for-purchases) app that makes it easy for those looking to organize their expenses efficiently. With FinMoovi, you can simply take a picture of the receipt or say the purchase amount by voice, and the app will automatically record it. Additionally, FinMoovi offers automatic categorization, so you don't have to worry about classifying each expense.
 
 ## Practical Scenarios for Using FinMoovi
 Imagine you're in a store and buy some products, but don't have time to record the expenses. With FinMoovi, you can:

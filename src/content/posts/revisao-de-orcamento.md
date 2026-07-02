@@ -30,7 +30,7 @@ Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com alug
 
 
 
-## Como revisar o [orçamento](/posts/5-alternativas-ao-mobills-em-2026)
+## Como revisar o [orçamento](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026)
 Revisar o [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) é um processo simples, mas requer atenção e honestidade. Aqui estão alguns passos para seguir:
 
 ### 1. Verifique seus gastos

@@ -51,7 +51,7 @@ Aquí están algunas [consejos](/es/posts/7-errores-financieros-principiante) pa
 * Ten una reserva de emergencia para cubrir gastos inesperados.
 
 ## Consultando Fuentes Confiables
-Para obtener más información sobre control de gastos y presupuesto, puedes consultar fuentes confiables, como el [Banco Central del Brasil](https://www.bcb.gov.br) o el [IBGE](https://www.ibge.gov.br). Además, puedes consultar el [Serasa](https://www.serasa.com.br) para obtener información sobre tu crédito y evitar problemas de endeudamiento.
+Para obtener más información sobre control de gastos y [presupuesto](/es/posts/como-crear-presupuesto-personal), puedes consultar fuentes confiables, como el [Banco Central del Brasil](https://www.bcb.gov.br) o el [IBGE](https://www.ibge.gov.br). Además, puedes consultar el [Serasa](https://www.serasa.com.br) para obtener información sobre tu crédito y evitar problemas de endeudamiento.
 ## Comienza con 5 minutos por día
 Comienza a monitorear tus gastos y crear un presupuesto con solo 5 minutos por día. Registra tus gastos y verifica si están dentro del presupuesto establecido. Con el tiempo, te volverás más consciente de tus gastos y podrás evitar el endeudamiento. Recuerda que el control de gastos es un proceso continuo y requiere disciplina y responsabilidad.
 
@@ -65,4 +65,4 @@ Comienza a monitorear tus gastos y crear un presupuesto con solo 5 minutos por d
 
 
 
-**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/5-alternativas-ao-mobills-em-2026) gratis por 7 días](https://[finmoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) gratis por 7 días](https://[finmoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

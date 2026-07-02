@@ -17,7 +17,7 @@ seo:
 ---
 
 ## ¿Qué son los [Fondos Inmobiliarios](/es/glossario/es-[fundos](/es/glossario/es-fundos)-imobiliarios)?
-Los fondos inmobiliarios, también conocidos como FIIs, son un tipo de inversión que permite a los inversores comunes tener acceso al mercado inmobiliario de forma más accesible y diversificada. En lugar de comprar un inmueble entero, puedes invertir una cantidad menor, como R$500 o R$1.000, en un fondo que está compuesto por varios inmuebles o derechos sobre inmuebles. Esto significa que puedes tener una parte de un edificio comercial, un centro comercial o incluso un conjunto de apartamentos, sin necesidad de comprar el inmueble entero.
+Los [fondos inmobiliarios](/es/glossario/es-fundos-imobiliarios), también conocidos como FIIs, son un tipo de inversión que permite a los inversores comunes tener acceso al mercado inmobiliario de forma más accesible y diversificada. En lugar de comprar un inmueble entero, puedes invertir una cantidad menor, como R$500 o R$1.000, en un fondo que está compuesto por varios inmuebles o derechos sobre inmuebles. Esto significa que puedes tener una parte de un edificio comercial, un centro comercial o incluso un conjunto de apartamentos, sin necesidad de comprar el inmueble entero.
 
 ## ¿Cómo Funcionan los Fondos Inmobiliarios?
 Los FIIs son gestionados por administradores especializados que seleccionan los inmueles o proyectos inmobiliarios para invertir. Ellos se encargan de todo, desde la compra y mantenimiento de los inmueles hasta la cobranza de alquileres y pago de [dividendos](/es/glossario/es-dividendos) a los inversores. Tú, como inversor, recibes una cuota del fondo, que es una parte proporcional del patrimonio del fondo. El [valor](/es/glossario/es-valor) de tu cuota puede variar con el tiempo, dependiendo del desempeño de los inmueles en el fondo.
@@ -29,8 +29,8 @@ Uno de los principales beneficios de los FIIs es la diversificación. Al inverti
 
 
 
-## [Riesgos](/es/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de los Fondos Inmobiliarios
-Aunque los FIIs pueden ser una excelente opción de inversión, es importante estar consciente de los riesgos involucrados. Uno de los principales riesgos es el riesgo de vacancia, o sea, el riesgo de que los inmueles en el fondo queden desocupados y no generen ingresos. Además, los FIIs también están sujetos a riesgos de mercado, como fluctuaciones en los precios de los inmueles, y riesgos regulatorios, como cambios en las leyes o regulaciones que afecten el sector inmobiliario. Evalúa si tiene sentido para tu perfil de inversor considerar estos riesgos y cómo pueden impactar tu inversión.
+## [Riesgos](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-selic-qual-rende-mais-em-2026) de los Fondos Inmobiliarios
+Aunque los FIIs pueden ser una excelente opción de inversión, es importante estar consciente de los [riesgos](/es/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) involucrados. Uno de los principales riesgos es el riesgo de vacancia, o sea, el riesgo de que los inmueles en el fondo queden desocupados y no generen ingresos. Además, los FIIs también están sujetos a riesgos de mercado, como fluctuaciones en los precios de los inmueles, y riesgos regulatorios, como cambios en las leyes o regulaciones que afecten el sector inmobiliario. Evalúa si tiene sentido para tu perfil de inversor considerar estos riesgos y cómo pueden impactar tu inversión.
 
 ## Simulaciones de Rendimiento
 Para entender mejor cómo los FIIs pueden comportarse, vamos a considerar una simulación. Supongamos que inviertes R$10.000 en un FII que tiene un patrimonio de R$100.000.000 y paga un dividendo del 9% al año. Si el fondo mantiene su desempeño y el valor del patrimonio no varía, podrías recibir alrededor de R$900 al año en dividendos. Sin embargo, si el valor del patrimonio del fondo aumenta a R$120.000.000, el valor de tu cuota también aumentaría, pudiendo generar una [ganancia de capital](/es/glossario/es-ganho-de-capital), además de los dividendos.
@@ -49,4 +49,4 @@ Ahora que tienes una idea mejor sobre cómo funcionan los fondos inmobiliarios y
 
 
 
-Para acompañar tus [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) en un solo lugar, [prueba [FinMoovi](/es/posts/5-alternativas-ao-mobills-em-2026) gratis por 7 días](https://finmoovi.com) — multi-divisa, informes inteligentes y 100% offline.
+Para acompañar tus [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) en un solo lugar, [prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) gratis por 7 días](https://finmoovi.com) — multi-divisa, informes inteligentes y 100% offline.

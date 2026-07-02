@@ -64,4 +64,4 @@ La 50-30-20 es un punto de partida, no una fórmula rígida. Si vives en una ciu
 
 ## Rastréalo Automáticamente
 
-Con [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), cada transacción se categoriza automáticamente en necesidades, deseos y ahorro. Ves tu desglose 50-30-20 en tiempo real sin esfuerzo manual.
+Con [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), cada transacción se categoriza automáticamente en necesidades, deseos y [ahorro](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos). Ves tu desglose 50-30-20 en tiempo real sin esfuerzo manual.

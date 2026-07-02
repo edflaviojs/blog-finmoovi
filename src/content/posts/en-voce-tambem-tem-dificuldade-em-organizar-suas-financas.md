@@ -36,7 +36,7 @@ But there is a solution to this problem. I discovered an app that can help organ
 With [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026), you can get a clear picture of your finances and make informed decisions about how to manage your [money](/en/posts/30-day-rule-for-purchases). The app also offers intelligent reports with the help of AI, which helps identify areas where you can save and improve your financial situation.
 
 ## How it Works
-Here's an example of how FinMoovi can be used in your daily life:
+Here's an example of how [FinMoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) can be used in your daily life:
 
 1. You record an expense in dollars during a business trip.
 2. FinMoovi automatically categorizes the expense as "Travel" or "Food", depending on the type of expense.

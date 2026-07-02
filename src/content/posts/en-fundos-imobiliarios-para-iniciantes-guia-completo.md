@@ -29,11 +29,11 @@ One of the main benefits of FIIs is diversification. By investing in a real esta
 
 
 
-## [Risks](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) of Real Estate Funds
-Although FIIs can be a great investment option, it's essential to be aware of the risks involved. One of the main risks is the vacancy risk, i.e., the risk that the properties in the fund remain unoccupied and do not generate revenue. Additionally, FIIs are also subject to market risks, such as fluctuations in property prices, and regulatory risks, such as changes in laws or regulations that affect the real estate sector. Evaluate whether it makes sense for your investor profile to consider these risks and how they can impact your investment.
+## [Risks](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-selic-qual-rende-mais-em-2026) of Real Estate Funds
+Although FIIs can be a great investment option, it's essential to be aware of the [risks](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) involved. One of the main risks is the vacancy risk, i.e., the risk that the properties in the fund remain unoccupied and do not generate revenue. Additionally, FIIs are also subject to market risks, such as fluctuations in property prices, and regulatory risks, such as changes in laws or regulations that affect the real estate sector. Evaluate whether it makes sense for your investor profile to consider these risks and how they can impact your investment.
 
 ## Return Simulations
-To better understand how FIIs can behave, let's consider a simulation. Suppose you invest R$10,000 in an FII that has assets of R$100,000,000 and pays a 9% dividend yield per year. If the fund maintains its performance and the value of the assets does not vary, you could receive around R$900 per year in dividends. However, if the value of the fund's assets increases to R$120,000,000, the value of your share would also increase, potentially generating a [capital gain](/en/glossario/en-ganho-de-capital), in addition to the dividends.
+To better understand how FIIs can behave, let's consider a simulation. Suppose you invest R$10,000 in an FII that has assets of R$100,000,000 and pays a 9% [dividend yield](/en/glossario/en-dividend-yield) per year. If the fund maintains its performance and the value of the assets does not vary, you could receive around R$900 per year in dividends. However, if the value of the fund's assets increases to R$120,000,000, the value of your share would also increase, potentially generating a [capital gain](/en/glossario/en-ganho-de-capital), in addition to the dividends.
 
 ![Risks of Real Estate Funds](/images/posts/fundos-imobiliarios-para-iniciantes-guia-completo-4.webp)
 
@@ -49,4 +49,4 @@ Now that you have a better idea of how real estate funds work and what benefits 
 
 
 
-To track your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) in one place, [try [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.
+To track your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) in one place, [try [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — multi-currency, intelligent reports, and 100% offline.

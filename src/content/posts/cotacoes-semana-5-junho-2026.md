@@ -28,7 +28,7 @@ A semana que passou foi marcada por movimentações significativas no mercado fi
 
 Durante a semana de 22 a 29 de junho de 2026, o [dólar](/posts/cotacoes-semana-3-junho-2026) americano (USD) e o euro (EUR) apresentaram comportamentos distintos em relação ao real (BRL). O [dólar](/posts/cotacoes-semana-4-junho-2026) fechou a semana em R$ 5.17, mostrando uma relativa estabilidade em comparação com as semanas anteriores. Já o euro, por sua vez, foi negociado a R$ 5.89, indicando uma pequena valorização em relação ao real.
 
-Essas taxas de câmbio são importantes para investidores que têm exposição a ativos em moedas estrangeiras. Se você investe em [ações](/glossario/acoes) ou [fundos](/glossario/fundos) que têm componentes em dólares ou euros, é crucial entender como as flutuações cambiais podem impactar o [valor](/glossario/valor) de seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Ferramentas como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) podem ser muito úteis para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) em múltiplas moedas, oferecendo uma visão clara e atualizada de sua carteira.
+Essas taxas de câmbio são importantes para investidores que têm exposição a ativos em moedas estrangeiras. Se você investe em [ações](/glossario/acoes) ou [fundos](/glossario/fundos) que têm componentes em dólares ou euros, é crucial entender como as flutuações cambiais podem impactar o [valor](/glossario/valor) de seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Ferramentas como o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) podem ser muito úteis para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) em múltiplas moedas, oferecendo uma visão clara e atualizada de sua carteira.
 
 ## Comentário sobre a [Selic](/glossario/selic) e Impacto nos [Investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 
@@ -54,5 +54,5 @@ Com uma abordagem informada e uma ferramenta de gestão de investimentos confiá
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
+**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
 

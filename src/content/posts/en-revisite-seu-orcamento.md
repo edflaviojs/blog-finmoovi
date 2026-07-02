@@ -22,7 +22,7 @@ translate: true
 We've reached the middle of the year, a perfect time to reflect on our finances and check if we're on the right track to achieving our financial objectives. Reviewing our [budget](/en/posts/50-30-20-rule-complete-guide) is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according to changes in our lives and the market.
 
 ## Why Review Your [Budget](/en/posts/controle-gastos-cartao-credito)?
-Regularly reviewing your [budget](/en/posts/how-to-create-personal-budget) is essential for maintaining control over your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). This is because financial circumstances change over time. For example, you may have received a salary increase, changed jobs, gotten married, had children, or suffered a reduction in income. These changes directly impact your budget, and if not considered, can lead to financial problems, such as debt or lack of savings.
+Regularly reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) is essential for maintaining control over your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). This is because financial circumstances change over time. For example, you may have received a salary increase, changed jobs, gotten married, had children, or suffered a reduction in income. These changes directly impact your budget, and if not considered, can lead to financial problems, such as debt or lack of savings.
 
 ### Practical Example
 Let's consider the example of John, a 35-year-old engineer who earns $8,000 per month. At the beginning of the year, he created a budget that allocated 30% of his income to housing expenses, 20% to transportation, 15% to food, 10% to leisure, and 25% to savings and debt. However, recently, John received a 15% salary increase, which raised his monthly income to $9,200. With this change, he needs to review his budget to decide how to allocate the increased income effectively.
@@ -44,7 +44,7 @@ Reviewing your budget involves some simple yet important steps:
 
 
 ### Useful Tools
-There are several tools available to help with budget management. One example is the [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) app, which offers features to track expenses, create customized budgets, and set financial goals. Using such tools can make the budget review and management process much more efficient.
+There are several tools available to help with budget management. One example is the [FinMoovi](/en/posts/5-alternativas-ao-[mobills](/en/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) app, which offers features to track expenses, create customized budgets, and set financial goals. Using such tools can make the budget review and management process much more efficient.
 
 ## Strategies for Success
 In addition to regularly reviewing your budget, there are some strategies that can help keep your finances in order:

@@ -40,7 +40,7 @@ Criar uma reserva de emergência requer disciplina e paciência. Aqui estão alg
 - Defina um [valor](/glossario/valor) mensal para depositar na reserva
 - Automatize os depósitos para que seja mais fácil manter a rotina
 - Evite sacar [dinheiro](/posts/criar-reserva-de-emergencia) da reserva para gastos não essenciais
-- Considere abrir uma conta [poupança](/glossario/poupanca) separada para a reserva de emergência, para que fique mais difícil acessar o dinheiro para gastos cotidianos
+- Considere abrir uma conta [poupança](/glossario/poupanca) separada para a reserva de emergência, para que fique mais difícil acessar o [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) para gastos cotidianos
 
 Lembre-se de que a chave é começar pequeno e aumentar a reserva ao longo do tempo. Mesmo R$ 100 por mês podem fazer uma grande diferença ao longo de um ano.
 
@@ -61,4 +61,4 @@ Para mais informações sobre como gerenciar suas finanças e criar uma reserva 
 Não espere até que seja tarde demais para começar a criar sua reserva de emergência. Comece a economizar hoje, mesmo que seja um pequeno valor. Lembre-se de que cada real conta e que a disciplina é a chave para alcançar seus objetivos financeiros.
 
 ---
-**Quer sair da teoria? [Baixe o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**
+**Quer sair da teoria? [Baixe o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**

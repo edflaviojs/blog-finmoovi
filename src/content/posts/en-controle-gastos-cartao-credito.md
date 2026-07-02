@@ -53,7 +53,7 @@ Here are some tips to avoid debt:
 ## Consulting Reliable Sources
 For more information on [expense control](/en/posts/metodo-50-30-20-para-orcamento) and budgeting, you can consult reliable sources, such as the [Banco Central do Brasil](https://www.bcb.gov.br) or the [IBGE](https://www.ibge.gov.br). Additionally, you can consult [Serasa](https://www.serasa.com.br) to get information about your credit and avoid debt problems.
 ## Start with 5 minutes a day
-Start monitoring your expenses and creating a budget with just 5 minutes a day. Record your expenses and check if they are within the established budget. Over time, you'll become more aware of your expenses and can avoid debt. Remember that expense control is an ongoing process that requires discipline and responsibility.
+Start monitoring your expenses and creating a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/reduce-fixed-expenses)) with just 5 minutes a day. Record your expenses and check if they are within the established budget. Over time, you'll become more aware of your expenses and can avoid debt. Remember that expense control is an ongoing process that requires discipline and responsibility.
 
 ![Avoiding Debt](/images/posts/controle-gastos-cartao-credito-4.webp)
 

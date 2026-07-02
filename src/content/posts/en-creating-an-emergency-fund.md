@@ -40,7 +40,7 @@ Creating an emergency fund requires discipline and patience. Here are some strat
 - Set a monthly value to deposit into the fund
 - Automate the deposits to make it easier to maintain the routine
 - Avoid withdrawing [money](/en/posts/financial-planning-for-couples) from the fund for non-essential expenses
-- Consider opening a separate savings account for the emergency fund, to make it harder to access the money for daily expenses
+- Consider opening a separate savings account for the emergency fund, to make it harder to access the [money](/en/posts/financial-planning-for-freelancers) for daily expenses
 
 Remember that the key is to start small and increase the fund over time. Even R$ 100 per month can make a big difference over a year.
 
@@ -61,4 +61,4 @@ For more information on managing your finances and creating an emergency fund, y
 Don't wait until it's too late to start creating your emergency fund. Start saving today, even if it's a small amount. Remember that every real counts, and discipline is the key to achieving your financial goals.
 
 ---
-**Want to put theory into practice? [Download [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No card, no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and start tracking your expenses today. No card, no commitment.**
