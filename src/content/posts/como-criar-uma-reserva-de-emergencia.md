@@ -22,7 +22,7 @@ Uma reserva de emergência é uma quantia de [dinheiro](/posts/cashback-intelige
 Uma boa regra é ter entre 3 a 6 meses de despesas cobertas pela reserva. Se suas despesas mensais são de R$ 3.500, você precisaria de uma reserva de R$ 10.500 a R$ 21.000. Isso pode parecer muito, mas é importante começar a economizar o quanto antes.
 
 ## Como calcular a reserva necessária
-Para calcular a reserva necessária, é importante saber quais são suas despesas mensais. Faça uma lista de todos os gastos, incluindo:
+Para calcular a reserva necessária, é importante saber quais são suas despesas mensais. Faça uma lista de todos os [gastos](/posts/metodo-50-30-20-para-salario-brasileiro), incluindo:
 - Aluguel ou prestação da casa
 - Contas de água, luz e internet
 - Supermercado
@@ -61,4 +61,4 @@ Para mais informações sobre como gerenciar suas finanças e criar uma reserva 
 Não espere até que seja tarde demais para começar a criar sua reserva de emergência. Comece a economizar hoje, mesmo que seja um pequeno valor. Lembre-se de que cada real conta e que a disciplina é a chave para alcançar seus objetivos financeiros.
 
 ---
-**Quer sair da teoria? [Baixe o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**
+**Quer sair da teoria? [Baixe o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**

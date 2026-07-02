@@ -20,10 +20,10 @@ seo:
 Have you ever found yourself at the checkout, paying a bill or buying something, and thought: "I'll write this down later"? Only to forget by the end of the day and miss recording it. This happens to a lot of people. A busy life and lack of organization can turn what seems like a simple task into a real headache.
 
 ## The Pain of Not Tracking Expenses
-Imagine buying breakfast, lunch, and dinner out every day. These are small expenses, but they can add up to a significant amount by the end of the month. If you don't record these expenses, you might end up exceeding your credit limit or running out of money sooner than you think. Moreover, without precise control over expenses, it's difficult to make realistic financial planning. It's like trying to reach a destination without a map.
+Imagine buying breakfast, lunch, and dinner out every day. These are small expenses, but they can add up to a significant amount by the end of the month. If you don't record these expenses, you might end up exceeding your credit limit or running out of money sooner than you think. Moreover, without precise control over expenses, it's difficult to make realistic [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). It's like trying to reach a destination without a map.
 
 ## The Importance of Recording Expenses
-According to the [Banco Central do Brasil](https://www.bcb.gov.br), personal financial management is fundamental for the country's economic stability. Knowing how and where your money is being spent is the first step to making informed decisions about your finances. However, a survey by the [IBGE](https://www.ibge.gov.br) showed that many people in Brazil have difficulty controlling their expenses, which can lead to serious financial problems.
+According to the [Banco Central do Brasil](https://www.bcb.gov.br), personal [financial management](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) is fundamental for the country's economic stability. Knowing how and where your money is being spent is the first step to making informed decisions about your finances. However, a survey by the [IBGE](https://www.ibge.gov.br) showed that many people in Brazil have difficulty controlling their expenses, which can lead to serious financial problems.
 
 ![A Dor de Não Acompanhar os Gastos](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-2.webp)
 

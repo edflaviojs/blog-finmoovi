@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Defining the [Emergency Fund](/en/glossario/en-reserva-de-emergencia)
-An emergency fund is an amount of [money](/en/posts/avoid-impulse-purchases) set aside to cover unexpected expenses or loss of income. It's essential to have a fund to avoid debt and maintain financial stability. For example, if you earn R$ 5,000 per month and lose your job, an emergency fund can help pay the bills while you look for a new job.
+An emergency fund is an amount of [money](/en/posts/avoid-impulse-purchases) set aside to cover unexpected [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) or loss of income. It's essential to have a fund to avoid debt and maintain financial stability. For example, if you earn R$ 5,000 per month and lose your job, an emergency fund can help pay the bills while you look for a new job.
 
 A good rule of thumb is to have between 3 to 6 months' worth of expenses covered by the fund. If your monthly expenses are R$ 3,500, you would need a fund of R$ 10,500 to R$ 21,000. This may seem like a lot, but it's crucial to start [saving](/en/posts/criar-reserva-de-emergencia) as soon as possible.
 
@@ -61,4 +61,4 @@ For more information on managing your finances and creating an emergency fund, y
 Don't wait until it's too late to start creating your emergency fund. Start saving today, even if it's a small amount. Remember that every real counts, and discipline is the key to achieving your financial goals.
 
 ---
-**Want to put theory into practice? [Download [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and start tracking your expenses today. No card, no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/5-alternativas-ao-[mobills](/en/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and start tracking your expenses today. No card, no commitment.**

@@ -49,4 +49,4 @@ Ensinar finanças às crianças é um processo contínuo que exige paciência e 
 
 
 ---
-**Pronto para organizar suas finanças? [Experimente o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) grátis](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/diferenca-entre-investir-e-poupar).**
+**Pronto para organizar suas finanças? [Experimente o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/diferenca-entre-investir-e-poupar).**

@@ -29,7 +29,7 @@ Uno de los principales beneficios de los FIIs es la diversificación. Al inverti
 
 
 
-## [Riesgos](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-selic-qual-rende-mais-em-2026) de los Fondos Inmobiliarios
+## [Riesgos](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/posts/cotizaciones-semana-1-junio-2026)-qual-rende-mais-em-2026) de los Fondos Inmobiliarios
 Aunque los FIIs pueden ser una excelente opción de inversión, es importante estar consciente de los [riesgos](/es/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) involucrados. Uno de los principales riesgos es el riesgo de vacancia, o sea, el riesgo de que los inmueles en el fondo queden desocupados y no generen ingresos. Además, los FIIs también están sujetos a riesgos de mercado, como fluctuaciones en los precios de los inmueles, y riesgos regulatorios, como cambios en las leyes o regulaciones que afecten el sector inmobiliario. Evalúa si tiene sentido para tu perfil de inversor considerar estos riesgos y cómo pueden impactar tu inversión.
 
 ## Simulaciones de Rendimiento
@@ -49,4 +49,4 @@ Ahora que tienes una idea mejor sobre cómo funcionan los fondos inmobiliarios y
 
 
 
-Para acompañar tus [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) en un solo lugar, [prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) gratis por 7 días](https://finmoovi.com) — multi-divisa, informes inteligentes y 100% offline.
+Para acompañar tus [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) en un solo lugar, [prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/es/posts/5-alternativas-ao-mobills-em-2026)-em-2026) gratis por 7 días](https://finmoovi.com) — multi-divisa, informes inteligentes y 100% offline.

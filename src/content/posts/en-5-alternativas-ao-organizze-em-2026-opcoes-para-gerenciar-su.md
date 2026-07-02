@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introduction
-Managing personal finances is an essential task for anyone who wants to have control over their expenses and savings. With the help of finance apps, it's possible to have a clear view of where the [money](/en/posts/30-day-rule-for-purchases) is being spent and make informed decisions to improve the financial situation. In this article, we'll explore 5 alternatives to Organizze, one of the most popular finance apps on the market.
+Managing [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) is an essential task for anyone who wants to have control over their expenses and savings. With the help of finance apps, it's possible to have a clear view of where the [money](/en/posts/30-day-rule-for-purchases) is being spent and make informed decisions to improve the financial situation. In this article, we'll explore 5 alternatives to Organizze, one of the most popular finance apps on the market.
 
 ## Alternative 1: GuiaBolso
 GuiaBolso is a finance app that allows users to track their expenses, income, and bank accounts in one place. With it, it's possible to create budgets, set financial goals, and receive alerts for excessive spending.
@@ -37,7 +37,7 @@ FinMoovi also allows users to create budgets and set financial goals, making it 
 Pros:
 * Multi-currency, allowing finance management in different countries
 * Smart capture by voice for easy expense recording
-* Categorization with AI to help understand where the money is being spent
+* Categorization with AI to help understand where the [money](/en/posts/avoid-impulse-purchases) is being spent
 Cons:
 * May require payment to use some advanced features
 * The learning curve can be steep for beginner users

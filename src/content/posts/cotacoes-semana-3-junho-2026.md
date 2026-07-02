@@ -48,5 +48,5 @@ Em resumo, a semana foi marcada por estabilidade no [dólar](/posts/cotacoes-sem
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz).**
+**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz).**
 

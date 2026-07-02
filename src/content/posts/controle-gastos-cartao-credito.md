@@ -65,4 +65,4 @@ Comece a monitorar seus gastos e criar um orçamento com apenas 5 minutos por di
 
 
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

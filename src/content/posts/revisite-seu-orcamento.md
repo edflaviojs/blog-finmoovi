@@ -34,7 +34,7 @@ Vamos considerar o exemplo de João, um engenheiro de 35 anos que ganha R$ 8.000
 ## Como Revisar o Orçamento
 A revisão do orçamento envolve alguns passos simples, mas importantes:
 
-1. **Liste todas as suas receitas e despesas**: Faça uma lista detalhada de todas as suas fontes de renda e despesas mensais. Isso inclui salário, renda de [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce), aluguel, contas de serviços, alimentação, transporte, entre outros.
+1. **Liste todas as suas receitas e despesas**: Faça uma lista detalhada de todas as suas fontes de renda e despesas mensais. Isso inclui salário, renda de [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce), aluguel, contas de serviços, alimentação, transporte, entre outros.
 2. **Categorize as despesas**: Organize as despesas em categorias, como moradia, transporte, alimentação, lazer, etc.
 3. **Avalie as despesas**: Verifique se há despesas que podem ser reduzidas ou eliminadas. Por exemplo, você pode negociar um melhor plano de telefone com sua operadora ou cancelar assinaturas de serviços que não usa.
 4. **Ajuste o orçamento**: Com base na sua nova situação financeira e nos ajustes necessários, atualize seu orçamento. Certifique-se de que as alocações para cada categoria ainda sejam adequadas.
@@ -44,7 +44,7 @@ A revisão do orçamento envolve alguns passos simples, mas importantes:
 
 
 ### Ferramentas Úteis
-Existem várias ferramentas disponíveis para ajudar na gestão do orçamento. Um exemplo é o app [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026), que oferece recursos para acompanhar despesas, criar orçamentos personalizados e estabelecer metas financeiras. Utilizar tais ferramentas pode tornar o processo de revisão e gestão do orçamento muito mais eficiente.
+Existem várias ferramentas disponíveis para ajudar na gestão do orçamento. Um exemplo é o app [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026), que oferece recursos para acompanhar despesas, criar orçamentos personalizados e estabelecer metas financeiras. Utilizar tais ferramentas pode tornar o processo de revisão e gestão do orçamento muito mais eficiente.
 
 ## Estratégias para o Sucesso
 Além de revisar regularmente o orçamento, existem algumas estratégias que podem ajudar a manter as finanças em ordem:

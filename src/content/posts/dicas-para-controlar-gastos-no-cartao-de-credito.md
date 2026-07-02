@@ -44,4 +44,4 @@ Não espere até que seja tarde demais para começar a controlar seus gastos no 
 
 
 ---
-**O próximo passo é seu. [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) e descubra para onde seu [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) está indo de verdade.**
+**O próximo passo é seu. [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) e descubra para onde seu [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) está indo de verdade.**
