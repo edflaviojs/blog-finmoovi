@@ -22,7 +22,7 @@ Nas [férias](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-a
 Reorganizar as finanças significa revisar e ajustar como você ganha, economiza e gasta [dinheiro](/posts/criar-reserva-de-emergencia). Isso pode incluir criar ou ajustar um [orçamento](/posts/como-criar-orcamento-pessoal), pagar dívidas, aumentar a [poupança](/glossario/poupanca) e investir em seu futuro. É um processo que requer atenção, disciplina e comprometimento, mas que pode levar a uma vida financeira mais estável e tranquila.
 
 ## Por que as [Férias](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) São um Momento Ideal?
-As férias oferecem um espaço de tempo relativamente longo para se concentrar em si mesmo e em seus objetivos financeiros. Sem as pressões do dia a dia, você pode dedicar tempo a entender melhor sua situação financeira, identificar áreas para melhoria e planejar estratégias para alcançar suas metas. Além disso, as férias podem ser um momento para refletir sobre seus gastos e hábitos de consumo, identificando onde é possível cortar despesas desnecessárias.
+As férias oferecem um espaço de tempo relativamente longo para se concentrar em si mesmo e em seus objetivos financeiros. Sem as pressões do dia a dia, você pode dedicar tempo a entender melhor sua situação financeira, identificar áreas para melhoria e planejar estratégias para alcançar suas metas. Além disso, as férias podem ser um momento para refletir sobre seus [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e hábitos de consumo, identificando onde é possível cortar despesas desnecessárias.
 
 ## Dicas para Reorganizar suas Finanças
 Aqui estão algumas dicas práticas para você começar a reorganizar suas finanças durante as férias:

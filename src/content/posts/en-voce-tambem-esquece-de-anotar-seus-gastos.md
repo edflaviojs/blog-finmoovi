@@ -44,9 +44,9 @@ Imagine you're in a store and buy some products, but don't have time to record t
 - Access intelligent reports with AI, even offline, and have a clear view of your finances in different currencies, such as BRL, USD, or EUR.
 
 ## Before vs After FinMoovi
-**Before:** You spend hours trying to organize your expenses, making notes on pieces of paper or in a notebook, and still end up forgetting to record some expenses. At the end of the month, you find yourself trying to do math in your head, trying to remember where you spent all the money.
+**Before:** You spend hours trying to organize your expenses, making notes on pieces of paper or in a notebook, and still end up forgetting to record some expenses. At the end of the month, you find yourself trying to do math in your head, trying to remember where you spent all the [money](/en/posts/creating-an-emergency-fund).
 
-**After:** With FinMoovi, you have all your expenses recorded in an easy and quick way. You can see exactly where your money is being spent, and make informed decisions about how to save or invest. At the end of the month, you have a clear and accurate report of your finances, without having to spend hours doing math.
+**After:** With FinMoovi, you have all your expenses recorded in an easy and quick way. You can see exactly where your [money](/en/posts/criar-reserva-de-emergencia) is being spent, and make informed decisions about how to save or invest. At the end of the month, you have a clear and accurate report of your finances, without having to spend hours doing math.
 
 ![Antes vs Depois do FinMoovi](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-6.webp)
 

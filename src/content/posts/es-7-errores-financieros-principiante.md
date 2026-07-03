@@ -24,7 +24,7 @@ El error #1: no saber a dónde va tu [dinero](/es/posts/ahorrando-en-la-cuenta-d
 
 ## 2. Sin [Fondo de Emergencia](/es/glossario/es-reserva-de-emergencia)
 
-La vida pasa. Sin 3-6 meses de gastos ahorrados, cualquier imprevisto se convierte en crisis financiera. Empieza con $1.000 como primera meta.
+La vida pasa. Sin 3-6 meses de [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) ahorrados, cualquier imprevisto se convierte en crisis financiera. Empieza con $1.000 como primera meta.
 
 ## 3. Ignorar Gastos Pequeños
 

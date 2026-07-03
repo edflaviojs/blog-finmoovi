@@ -52,7 +52,7 @@ The 50-30-20 rule is one of the simplest and most effective methods for managing
 
 ## What Counts as "Savings" (20%)
 
-- [Emergency fund](/en/glossario/en-reserva-de-emergencia) (3-6 months of expenses)
+- [Emergency fund](/en/glossario/en-reserva-de-emergencia) (3-6 months of [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme))
 - Retirement contributions
 - Extra debt payments
 - [Investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)

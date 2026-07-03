@@ -24,7 +24,7 @@ The #1 mistake: not knowing where your [money](/en/posts/30-day-rule-for-purchas
 
 ## 2. No [Emergency Fund](/en/glossario/en-reserva-de-emergencia)
 
-Life happens. Without 3-6 months of expenses saved, any unexpected event becomes a financial crisis. Start with $1,000 as your first milestone.
+Life happens. Without 3-6 months of [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) saved, any unexpected event becomes a financial crisis. Start with $1,000 as your first milestone.
 
 ## 3. Ignoring Small Expenses
 

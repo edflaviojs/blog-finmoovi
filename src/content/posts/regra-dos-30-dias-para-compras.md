@@ -53,4 +53,4 @@ Não espere mais para começar a usar a regra dos 30 dias. Hoje é o dia para co
 
 
 ---
-**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**
+**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)).com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**

@@ -52,7 +52,7 @@ La regla 50-30-20 es uno de los métodos más simples y efectivos para administr
 
 ## ¿Qué Cuenta como "[Ahorro](/es/posts/ahorra-en-las-compras-del-supermercado)"? (20%)
 
-- [Fondo de emergencia](/es/glossario/es-reserva-de-emergencia) (3-6 meses de gastos)
+- [Fondo de emergencia](/es/glossario/es-reserva-de-emergencia) (3-6 meses de [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme))
 - Aportes para jubilación
 - Pagos extra de deudas
 - [Inversiones](/es/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)

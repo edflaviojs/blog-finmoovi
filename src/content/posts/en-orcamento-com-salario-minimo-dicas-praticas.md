@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Creating a Realistic [Budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-To create an effective [budget](/en/posts/50-30-20-rule-complete-guide) with a minimum wage, it's crucial to understand that it's not about cutting all expenses, but rather managing your resources intelligently. Let's consider an example with a salary of R$ 2,400.00, which is slightly above the minimum wage in Brazil.
+To create an effective [budget](/en/posts/50-30-20-rule-complete-guide) with a minimum wage, it's crucial to understand that it's not about cutting all [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), but rather managing your resources intelligently. Let's consider an example with a salary of R$ 2,400.00, which is slightly above the minimum wage in Brazil.
 
 A general rule for dividing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) is as follows:
 | Category | Percentage of Salary |

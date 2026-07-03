@@ -16,8 +16,8 @@ seo:
   keywords: ["consejos para controlar gastos en la tarjeta de crédito","finanzas personales","economía","dinero"]
 ---
 
-## Entendiendo la [Tarjeta de Crédito](/es/posts/controle-gastos-cartao-credito)
-La tarjeta de crédito es una herramienta conveniente para hacer compras, pagar cuentas y hasta obtener descuentos y cashback en determinadas transacciones. Sin embargo, si no se utiliza con responsabilidad, puede llevar a problemas financieros serios. Por ejemplo, si tienes un salario de R$ 5.000 por mes y acabas gastando R$ 2.000 en la tarjeta de crédito, sin un planeamiento adecuado, puedes acabar con dificultades para pagar la factura al final del mes.
+## Entendiendo la [Tarjeta de Crédito](/es/posts/controle-[gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)-cartao-credito)
+La [tarjeta de crédito](/es/posts/controle-gastos-cartao-credito) es una herramienta conveniente para hacer compras, pagar cuentas y hasta obtener descuentos y cashback en determinadas transacciones. Sin embargo, si no se utiliza con responsabilidad, puede llevar a problemas financieros serios. Por ejemplo, si tienes un salario de R$ 5.000 por mes y acabas gastando R$ 2.000 en la tarjeta de crédito, sin un planeamiento adecuado, puedes acabar con dificultades para pagar la factura al final del mes.
 
 ## Estableciendo un [Presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
 Para controlar gastos en la tarjeta de crédito, es fundamental establecer un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) realista. Esto significa que necesitas tener una idea clara de cuánto ganas y cuánto gastas todos los meses. Haz una lista de todos tus gastos mensuales, incluyendo cuentas de agua, luz, alquiler, compras de supermercado, y, por supuesto, gastos en la tarjeta de crédito. **Consejo práctico:** usa un aplicativo de [gestión financiera](/es/posts/montando-carteira-diversificada-com-r-500) para ayudarte a trackear tus gastos y recibir alertas cuando estés aproximándote al límite de tu tarjeta.

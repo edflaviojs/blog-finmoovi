@@ -35,7 +35,7 @@ A gift doesn't have to be expensive to be meaningful. Here are some tips to find
 - **Outdoor Walk**: Plan a walk in a park or at the beach. Bring a picnic and enjoy nature together. Cost: R$ 20 to R$ 50.
 
 ## Managing Finances with [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
-To help manage your finances and stay within your [budget](/en/posts/reduce-fixed-[expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro)), the [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) app can be a useful tool. With it, you can track your expenses, set financial goals, and receive alerts not to exceed the established limit.
+To help manage your finances and stay within your [budget](/en/posts/reduce-fixed-[expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro)), the [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) app can be a useful tool. With it, you can track your [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), set financial goals, and receive alerts not to exceed the established limit.
 
 ## Celebrating with Creativity
 Creativity is the key to an economic and memorable Valentine's Day. Here are some ideas to celebrate with style without spending too much:

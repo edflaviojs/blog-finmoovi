@@ -30,7 +30,7 @@ Para evitar problemas, é fundamental criar um [orçamento](/posts/como-criar-or
 | Outras despesas | 20% | 800 |
 Com esse [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro), você pode ver que tem R$ 1.200 disponíveis para alimentação e pode usar o cartão de crédito para compras nessa categoria, desde que não ultrapasse o limite.
 
-## Monitorando os Gastos
+## Monitorando os [Gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 **Dica prática:** registre todos os seus gastos em um caderno ou use um aplicativo de [controle de gastos](/posts/metodo-50-30-20-para-orcamento) para monitorar suas despesas. Isso ajudará a identificar áreas em que você pode cortar gastos desnecessários e evitar o endividamento.
 Aqui estão alguns passos para monitorar seus gastos:
 1. Registre todos os gastos, incluindo compras pequenas, como café ou lanches.

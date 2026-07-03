@@ -19,7 +19,7 @@ seo:
 ## Entendendo o [Método 50-30-20](/posts/metodo-50-30-20-para-salario-brasileiro)
 O método 50-30-20 é uma estratégia simples e eficaz para gerenciar suas finanças. A ideia é dividir seu salário em três categorias principais: necessidades, desejos e [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-usar-as-ferias-para-reorganizar-suas-financas). Com isso, você pode ter um controle melhor sobre onde seu [dinheiro](/posts/diferenca-entre-investir-e-poupar) está sendo gasto e como pode ser otimizado.
 
-- **Necessidades (50%):** Inclui despesas essenciais como aluguel, comida, contas de água, luz, internet, transporte e outros gastos básicos.
+- **Necessidades (50%):** Inclui despesas essenciais como aluguel, comida, contas de água, luz, internet, transporte e outros [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) básicos.
 - **Desejos (30%):** Aqui você inclui gastos que não são essenciais, mas que melhoram sua [qualidade](/glossario/qualidade) de vida, como entretenimento, viagens, hobbies e compras pessoais.
 - **[Economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) (20%):** Esta parte do seu salário deve ser destinada à [poupança](/glossario/poupanca), [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), pagamento de dívidas e [fundos](/glossario/fundos) de emergência.
 

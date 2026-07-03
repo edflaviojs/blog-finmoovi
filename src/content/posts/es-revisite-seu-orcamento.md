@@ -34,7 +34,7 @@ Vamos a considerar el ejemplo de João, un ingeniero de 35 años que gana R$ 8.0
 ## Cómo Revisar el Presupuesto
 La revisión del presupuesto implica algunos pasos simples, pero importantes:
 
-1. **Lista todos tus ingresos y gastos**: Haz una lista detallada de todas tus fuentes de ingresos y gastos mensuales. Esto incluye salario, ingresos de [inversiones](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/glossario/es-[selic](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026))-qual-e-melhor-para-voce), alquiler, cuentas de servicios, alimentación, transporte, etc.
+1. **Lista todos tus ingresos y gastos**: Haz una lista detallada de todas tus fuentes de ingresos y gastos mensuales. Esto incluye salario, ingresos de [inversiones](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/glossario/es-[selic](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-3-junio-2026)-semana-1-junio-2026)-semana-3-junio-2026)-semana-1-junio-2026))-qual-e-melhor-para-voce), alquiler, cuentas de servicios, alimentación, transporte, etc.
 2. **Categoriza los gastos**: Organiza los gastos en categorías, como vivienda, transporte, alimentación, ocio, etc.
 3. **Evalúa los gastos**: Verifica si hay gastos que puedan reducirse o eliminarse. Por ejemplo, puedes negociar un mejor plan de teléfono con tu operadora o cancelar suscripciones de servicios que no usas.
 4. **Ajusta el presupuesto**: Con base en tu nueva situación financiera y los ajustes necesarios, actualiza tu presupuesto. Asegúrate de que las asignaciones para cada categoría aún sean adecuadas.
@@ -50,7 +50,7 @@ Existen varias herramientas disponibles para ayudar en la gestión del presupues
 Además de revisar regularmente el presupuesto, existen algunas estrategias que pueden ayudar a mantener las finanzas en orden:
 
 - **Ahorro de emergencia**: Mantén una reserva de emergencia que cubra al menos 3 a 6 meses de gastos.
-- **[Inversiones](/es/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)**: Considera invertir parte de tus ingresos en opciones como [Tesouro Direto](https://www.tesourodireto.com.br/), que ofrece una forma segura de aumentar tu riqueza con el tiempo.
+- **[Inversiones](/es/posts/cdb-vs-tesouro-[selic](/es/glossario/es-selic)-qual-rende-mais-em-2026)**: Considera invertir parte de tus ingresos en opciones como [Tesouro Direto](https://www.tesourodireto.com.br/), que ofrece una forma segura de aumentar tu riqueza con el tiempo.
 - **[Educación financiera](/es/glossario/es-educacao-financeira)**: Continúa aprendiendo sobre [finanzas personales](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) y [inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce). Sitios como [Investopedia](https://www.investopedia.com/) ofrecen una amplia gama de artículos y recursos educativos.
 
 ![Estrategias para el Éxito](/images/posts/revisite-seu-orcamento-4.webp)

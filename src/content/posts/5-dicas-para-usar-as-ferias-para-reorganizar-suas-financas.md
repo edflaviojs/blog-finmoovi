@@ -16,7 +16,7 @@ seo:
   keywords: ["finanças pessoais","reorganizar finanças","férias","economia","planejamento financeiro","organizar finanças férias","planejamento financeiro meio do ano"]
 ---
 
-Você está ansioso para suas [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) e quer aproveitar esse tempo para reorganizar suas finanças? É uma ótima ideia! As férias são um momento perfeito para refletir sobre seus gastos, criar um [orçamento](/posts/como-criar-orcamento-pessoal) e planejar seu futuro financeiro. Neste post, vamos explorar como você pode usar suas férias para reorganizar suas finanças e começar a construir uma vida financeira mais saudável.
+Você está ansioso para suas [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) e quer aproveitar esse tempo para reorganizar suas finanças? É uma ótima ideia! As férias são um momento perfeito para refletir sobre seus [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), criar um [orçamento](/posts/como-criar-orcamento-pessoal) e planejar seu futuro financeiro. Neste post, vamos explorar como você pode usar suas férias para reorganizar suas finanças e começar a construir uma vida financeira mais saudável.
 
 ## Introdução às [Finanças Pessoais](/posts/7-erros-financeiros-iniciante)
 Antes de começar, é importante entender que as [finanças pessoais](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) são como um jogo de xadrez: você precisa ter uma estratégia para vencer. De acordo com o IBGE, mais de 60% dos brasileiros não têm um [orçamento](/posts/regra-50-30-20-guia-completo) planejado, o que pode levar a problemas financeiros. Portanto, é fundamental criar um plano para gerenciar seus gastos e alcançar seus objetivos financeiros.

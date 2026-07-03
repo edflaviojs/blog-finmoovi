@@ -35,7 +35,7 @@ Aqui estão alguns exemplos de produtos que você pode escolher para economizar:
 * Em vez de comprar pão branco, escolha pão integral ou pão de centeio.
 * Em vez de comprar carne de boi, escolha carne de frango ou peixe.
 
-## Evitando gastos desnecessários
+## Evitando [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) desnecessários
 Outra forma de economizar nas compras do supermercado é evitar gastos desnecessários. Isso inclui não comprar produtos que não são necessários, como alimentos processados ou bebidas alcoólicas. Além disso, é importante evitar comprar produtos que estão em promoção, mas que não são necessários.
 
 Por exemplo, se você vê um produto em promoção, mas não precisa dele, não o compre. Em vez disso, compre apenas os produtos que você precisa e que estão dentro do seu [orçamento](/posts/como-criar-orcamento-pessoal).

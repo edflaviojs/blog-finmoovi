@@ -66,7 +66,7 @@ O segredo é monitorar. Com o **[FinMoovi](/posts/voce-tambem-tem-dificuldade-em
 - Dívidas altas (priorize quitação antes)
 - [Renda variável](/glossario/renda-variavel) (use a média dos últimos 3 meses)
 
-Nesses casos, comece com qualquer percentual de [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) — mesmo 5% já é um começo.
+Nesses casos, comece com qualquer percentual de [economia](/posts/como-reduzir-[gastos](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-se-preparar-financeiramente-para-o-segundo-seme)-fixos-mensais-de-forma-eficaz) — mesmo 5% já é um começo.
 
 ---
 

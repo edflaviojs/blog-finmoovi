@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introdução às Planilhas de [Gastos](/posts/metodo-50-30-20-para-salario-brasileiro)
-As planilhas de gastos são uma ferramenta poderosa para gerenciar suas [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Elas oferecem flexibilidade, são gratuitas e podem ser customizadas de acordo com as suas necessidades. Com uma [planilha](/posts/migrando-da-planilha-para-um-app-financeiro), você pode registrar todos os seus gastos, criar um [orçamento](/posts/como-criar-orcamento-pessoal) e acompanhar sua situação financeira de forma detalhada. No entanto, apesar de todas essas vantagens, muitas pessoas desistem de usar planilhas de gastos após um curto período de tempo.
+As planilhas de [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) são uma ferramenta poderosa para gerenciar suas [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). Elas oferecem flexibilidade, são gratuitas e podem ser customizadas de acordo com as suas necessidades. Com uma [planilha](/posts/migrando-da-planilha-para-um-app-financeiro), você pode registrar todos os seus gastos, criar um [orçamento](/posts/como-criar-orcamento-pessoal) e acompanhar sua situação financeira de forma detalhada. No entanto, apesar de todas essas vantagens, muitas pessoas desistem de usar planilhas de gastos após um curto período de tempo.
 
 ## Vantagens e Desvantagens das Planilhas de Gastos
 As planilhas de gastos têm várias vantagens, como:

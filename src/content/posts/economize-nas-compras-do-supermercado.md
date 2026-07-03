@@ -28,7 +28,7 @@ Uma lista de compras bem organizada pode ajudar a evitar compras impulsive e a g
 * Planeje suas refeições para a semana e faça uma lista de compras com base nisso.
 
 ## Escolha o supermercado certo
-A escolha do supermercado também pode afetar seus gastos. Alguns supermercados oferecem preços mais baixos do que outros, especialmente para itens básicos como arroz, feijão e macarrão. É importante comparar os preços dos supermercados da sua região e escolher o que oferece os melhores preços.
+A escolha do supermercado também pode afetar seus [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Alguns supermercados oferecem preços mais baixos do que outros, especialmente para itens básicos como arroz, feijão e macarrão. É importante comparar os preços dos supermercados da sua região e escolher o que oferece os melhores preços.
 
 ![Organize sua lista de compras](/images/posts/economize-nas-compras-do-supermercado-2.webp)
 
