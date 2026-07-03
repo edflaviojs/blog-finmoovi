@@ -50,8 +50,8 @@ Existem várias ferramentas disponíveis para ajudar na gestão do orçamento. U
 Além de revisar regularmente o orçamento, existem algumas estratégias que podem ajudar a manter as finanças em ordem:
 
 - **Poupança de emergência**: Mantenha uma [reserva de emergência](/glossario/reserva-de-emergencia) que cubra pelo menos 3 a 6 meses de despesas.
-- **[Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)**: Considere investir parte de sua renda em opções como [Tesouro Direto](https://www.tesourodireto.com.br/), que oferece uma forma segura de grower sua riqueza ao longo do tempo.
-- **[Educação financeira](/glossario/educacao-financeira)**: Continue aprendendo sobre [finanças pessoais](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Sites como [Investopedia](https://www.investopedia.com/) oferecem uma vasta gama de artigos e recursos educacionais.
+- **[Investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-3-junho-2026))-qual-e-melhor-para-voce)**: Considere investir parte de sua renda em opções como [Tesouro Direto](https://www.tesourodireto.com.br/), que oferece uma forma segura de grower sua riqueza ao longo do tempo.
+- **[Educação financeira](/glossario/educacao-financeira)**: Continue aprendendo sobre [finanças pessoais](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-junho-2026)-qual-rende-mais-em-2026). Sites como [Investopedia](https://www.investopedia.com/) oferecem uma vasta gama de artigos e recursos educacionais.
 
 ![Estratégias para o Sucesso](/images/posts/revisite-seu-orcamento-4.webp)
 

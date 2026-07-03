@@ -61,4 +61,4 @@ Para mais informações sobre como gerenciar suas finanças e criar uma reserva 
 Não espere até que seja tarde demais para começar a criar sua reserva de emergência. Comece a economizar hoje, mesmo que seja um pequeno valor. Lembre-se de que cada real conta e que a disciplina é a chave para alcançar seus objetivos financeiros.
 
 ---
-**Quer sair da teoria? [Baixe o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**
+**Quer sair da teoria? [Baixe o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**

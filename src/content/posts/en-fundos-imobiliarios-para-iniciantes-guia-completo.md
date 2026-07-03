@@ -17,7 +17,7 @@ seo:
 ---
 
 ## What are Real Estate Funds?
-Real estate funds, also known as FIIs, are a type of investment that allows ordinary investors to access the real estate market in a more accessible and diversified way. Instead of buying a whole property, you can invest a smaller amount, such as R$500 or R$1,000, in a fund that is composed of various properties or rights over properties. This means you can have a part of a commercial building, a shopping center, or even a set of apartments, without having to buy the whole property.
+Real estate funds, also known as FIIs, are a type of [investment](/en/posts/montando-carteira-diversificada-com-r-500) that allows ordinary investors to access the real estate market in a more accessible and diversified way. Instead of buying a whole property, you can invest a smaller amount, such as R$500 or R$1,000, in a fund that is composed of various properties or rights over properties. This means you can have a part of a commercial building, a shopping center, or even a set of apartments, without having to buy the whole property.
 
 ## How do Real Estate Funds Work?
 FIIs are managed by specialized administrators who select the properties or real estate projects to invest in. They take care of everything, from buying and maintaining the properties to collecting rents and paying [dividends](/en/glossario/en-dividendos) to investors. You, as an investor, receive a share of the fund, which is a proportional part of the fund's assets. The value of your share can vary over time, depending on the performance of the properties in the fund.
@@ -29,7 +29,7 @@ One of the main benefits of FIIs is diversification. By investing in a real esta
 
 
 
-## [Risks](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-selic-qual-rende-mais-em-2026) of Real Estate Funds
+## [Risks](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/quotes-semana-1-june-2026)-qual-rende-mais-em-2026) of Real Estate Funds
 Although FIIs can be a great investment option, it's essential to be aware of the [risks](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) involved. One of the main risks is the vacancy risk, i.e., the risk that the properties in the fund remain unoccupied and do not generate revenue. Additionally, FIIs are also subject to market risks, such as fluctuations in property prices, and regulatory risks, such as changes in laws or regulations that affect the real estate sector. Evaluate whether it makes sense for your investor profile to consider these risks and how they can impact your investment.
 
 ## Return Simulations

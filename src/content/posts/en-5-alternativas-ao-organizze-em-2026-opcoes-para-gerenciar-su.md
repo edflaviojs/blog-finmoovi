@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introduction
-Managing [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) is an essential task for anyone who wants to have control over their expenses and savings. With the help of finance apps, it's possible to have a clear view of where the [money](/en/posts/30-day-rule-for-purchases) is being spent and make informed decisions to improve the financial situation. In this article, we'll explore 5 alternatives to Organizze, one of the most popular finance apps on the market.
+Managing [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) is an essential task for anyone who wants to have control over their [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) and savings. With the help of finance apps, it's possible to have a clear view of where the [money](/en/posts/30-day-rule-for-purchases) is being spent and make informed decisions to improve the financial situation. In this article, we'll explore 5 alternatives to Organizze, one of the most popular finance apps on the market.
 
 ## Alternative 1: GuiaBolso
 GuiaBolso is a finance app that allows users to track their expenses, income, and bank accounts in one place. With it, it's possible to create budgets, set financial goals, and receive alerts for excessive spending.
@@ -31,7 +31,7 @@ Cons:
 * Does not offer offline support
 Price: Free
 
-## Alternative 2: FinMoovi
+## Alternative 2: [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro)
 FinMoovi is a finance app that stands out for its ability to handle multiple currencies, allowing users to manage their finances in different countries. Additionally, FinMoovi offers features like smart capture by voice, categorization with AI, and offline support, making it an attractive option for those who need flexibility and efficiency.
 FinMoovi also allows users to create budgets and set financial goals, making it a complete tool for managing finances.
 Pros:

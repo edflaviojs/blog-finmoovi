@@ -25,7 +25,7 @@ We've reached the middle of the year, a perfect time to reflect on our finances 
 Regularly reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) is essential for maintaining control over your [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas). This is because financial circumstances change over time. For example, you may have received a salary increase, changed jobs, gotten married, had children, or suffered a reduction in income. These changes directly impact your [budget](/en/posts/5-alternativas-ao-mobills-em-2026), and if not considered, can lead to financial problems, such as debt or lack of savings.
 
 ### Practical Example
-Let's consider the example of John, a 35-year-old engineer who earns $8,000 per month. At the beginning of the year, he created a [budget](/en/posts/how-to-create-personal-budget) that allocated 30% of his income to housing expenses, 20% to transportation, 15% to food, 10% to leisure, and 25% to savings and debt. However, recently, John received a 15% salary increase, which raised his monthly income to $9,200. With this change, he needs to review his budget to decide how to allocate the increased income effectively.
+Let's consider the example of John, a 35-year-old engineer who earns $8,000 per month. At the beginning of the year, he created a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas)) that allocated 30% of his income to housing expenses, 20% to transportation, 15% to food, 10% to leisure, and 25% to savings and debt. However, recently, John received a 15% salary increase, which raised his monthly income to $9,200. With this change, he needs to review his budget to decide how to allocate the increased income effectively.
 
 ![Why Review Your Budget?](/images/posts/revisite-seu-orcamento-2.webp)
 
@@ -34,7 +34,7 @@ Let's consider the example of John, a 35-year-old engineer who earns $8,000 per 
 ## How to Review Your Budget
 Reviewing your budget involves some simple yet important steps:
 
-1. **List all your income and expenses**: Make a detailed list of all your sources of income and monthly expenses. This includes salary, investment income, rent, utility bills, food, transportation, and more.
+1. **List all your income and expenses**: Make a detailed list of all your sources of income and monthly expenses. This includes salary, [investment](/en/posts/montando-carteira-diversificada-com-r-500) income, rent, utility bills, food, transportation, and more.
 2. **Categorize expenses**: Organize expenses into categories, such as housing, transportation, food, leisure, etc.
 3. **Evaluate expenses**: Check if there are expenses that can be reduced or eliminated. For example, you may be able to negotiate a better phone plan with your operator or cancel subscription services you don't use.
 4. **Adjust the budget**: Based on your new financial situation and necessary adjustments, update your budget. Ensure that the allocations for each category are still adequate.
