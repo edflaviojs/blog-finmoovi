@@ -27,7 +27,7 @@ Regularly reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/
 ### Practical Example
 Let's consider the example of John, a 35-year-old engineer who earns $8,000 per month. At the beginning of the year, he created a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas)) that allocated 30% of his income to housing expenses, 20% to transportation, 15% to food, 10% to leisure, and 25% to savings and debt. However, recently, John received a 15% salary increase, which raised his monthly income to $9,200. With this change, he needs to review his [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) to decide how to allocate the increased income effectively.
 
-![Why Review Your Budget?](/images/posts/revisite-seu-orcamento-2.webp)
+![Why Review Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar))?](/images/posts/revisite-seu-orcamento-2.webp)
 
 
 

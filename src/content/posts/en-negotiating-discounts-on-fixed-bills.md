@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Saving on Fixed Bills
-When we think about saving money, we usually focus on cutting unnecessary expenses, such as eating out less or canceling unused subscriptions. However, there's another way to save that often goes unnoticed: negotiating discounts on fixed bills. If you pay R$ 150 per month on your electricity bill, for example, a successful negotiation can reduce that amount to R$ 120, resulting in a savings of R$ 30 per month, or R$ 360 per year.
+When we think about saving [money](/en/posts/avoid-impulse-purchases), we usually focus on cutting unnecessary [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), such as eating out less or canceling unused subscriptions. However, there's another way to save that often goes unnoticed: negotiating discounts on fixed bills. If you pay R$ 150 per month on your electricity bill, for example, a successful negotiation can reduce that amount to R$ 120, resulting in a savings of R$ 30 per month, or R$ 360 per year.
 
 ## Types of Fixed Bills
 There are several fixed bills that we can negotiate, including:

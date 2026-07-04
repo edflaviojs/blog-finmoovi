@@ -21,7 +21,7 @@ Administrar las [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-fi
 
 ## Alternativa 1: GuiaBolso
 El GuiaBolso es un aplicativo de finanzas que permite a los usuarios seguir sus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), ingresos y cuentas bancarias en un solo lugar. Con él, es posible crear presupuestos, definir metas financieras y recibir alertas de gastos excesivos. 
-El GuiaBolso también ofrece herramientas de inversión y crédito, lo que lo convierte en una opción completa para administrar las finanzas.
+El GuiaBolso también ofrece herramientas de [inversión](/es/posts/montando-carteira-diversificada-com-r-500) y crédito, lo que lo convierte en una opción completa para administrar las finanzas.
 Pros:
 * Interfaz intuitiva y fácil de usar
 * Ofrece herramientas de inversión y crédito
@@ -102,5 +102,5 @@ Precio: Gratis
 
 ## ¿Cuál elegir?
 La elección del aplicativo de finanzas correcto depende de las necesidades individuales de cada usuario. Si necesitas administrar tus finanzas en diferentes países, el FinMoovi puede ser la mejor opción. Si estás buscando una opción gratuita y fácil de usar, el GuiaBolso o el Mobills pueden ser buenas elecciones. Si estás buscando una opción completa que ofrezca herramientas de inversión y crédito, el ContaAzul o el Nubank pueden ser buenas opciones.
-Recuerda que es importante hacer una investigación detallada y leer las [evaluaciones de los usuarios](https://www.investopedia.com) antes de tomar una decisión. Además, es importante recordar que la gestión financiera es un proceso continuo y que es importante revisar y ajustar tus finanzas regularmente para garantizar que estás en el camino correcto.
+Recuerda que es importante hacer una investigación detallada y leer las [evaluaciones de los usuarios](https://www.investopedia.com) antes de tomar una decisión. Además, es importante recordar que la [gestión financiera](/es/posts/orcamento-com-salario-minimo-dicas-praticas) es un proceso continuo y que es importante revisar y ajustar tus finanzas regularmente para garantizar que estás en el camino correcto.
 Para más información sobre gestión financiera, puedes visitar el sitio web del [Banco Central](https://www.bcb.gov.br) o el sitio web de la [NerdWallet](https://www.nerdwallet.com).

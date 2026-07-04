@@ -20,7 +20,7 @@ seo:
 Managing [personal finances](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) is an essential task for anyone who wants to have control over their [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) and savings. With the help of finance apps, it's possible to have a clear view of where the [money](/en/posts/30-day-rule-for-purchases) is being spent and make informed decisions to improve the financial situation. In this article, we'll explore 5 alternatives to Organizze, one of the most popular finance apps on the market.
 
 ## Alternative 1: GuiaBolso
-GuiaBolso is a finance app that allows users to track their [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), income, and bank accounts in one place. With it, it's possible to create budgets, set financial goals, and receive alerts for excessive spending.
+GuiaBolso is a [finance app](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) that allows users to track their [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), income, and bank accounts in one place. With it, it's possible to create budgets, set financial goals, and receive alerts for excessive spending.
 GuiaBolso also offers [investment](/en/posts/montando-carteira-diversificada-com-r-500) and credit tools, making it a complete option for managing finances.
 Pros:
 * Intuitive and easy-to-use interface
@@ -102,5 +102,5 @@ Price: Free
 
 ## Which one to choose?
 The choice of the right finance app depends on the individual needs of each user. If you need to manage your finances in different countries, FinMoovi may be the best option. If you're looking for a free and easy-to-use option, GuiaBolso or Mobills may be good choices. If you're looking for a complete option that offers investment and credit tools, ContaAzul or Nubank may be good options.
-Remember to do a thorough research and read user reviews before making a decision. Additionally, remember that financial management is an ongoing process, and it's essential to review and adjust your finances regularly to ensure you're on the right track.
+Remember to do a thorough research and read user reviews before making a decision. Additionally, remember that [financial management](/en/posts/orcamento-com-salario-minimo-dicas-praticas) is an ongoing process, and it's essential to review and adjust your finances regularly to ensure you're on the right track.
 For more information on financial management, you can visit the [Banco Central](https://www.bcb.gov.br) website or the [NerdWallet](https://www.nerdwallet.com) website.

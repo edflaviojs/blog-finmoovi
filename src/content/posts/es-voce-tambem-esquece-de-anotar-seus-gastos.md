@@ -44,9 +44,9 @@ Imagina que estás en una tienda y compras algunos productos, pero no tienes tie
 - Acceder a informes inteligentes con IA, incluso sin conexión a Internet, y tener una visión clara de tus finanzas en diferentes monedas, como BRL, USD o EUR.
 
 ## Antes vs Después de FinMoovi
-**Antes:** Pasas horas tratando de organizar tus despesas, haciendo anotaciones en pedazos de papel o en un cuaderno, y aún así acabas olvidando de registrar algunos gastos. Al final del mes, te encuentras tratando de hacer cálculos de cabeza, tratando de recordar dónde gastaste todo el dinero.
+**Antes:** Pasas horas tratando de organizar tus despesas, haciendo anotaciones en pedazos de papel o en un cuaderno, y aún así acabas olvidando de registrar algunos gastos. Al final del mes, te encuentras tratando de hacer cálculos de cabeza, tratando de recordar dónde gastaste todo el [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado).
 
-**Después:** Con FinMoovi, tienes todos tus gastos registrados de forma fácil y rápida. Puedes ver exactamente dónde se está gastando tu dinero, y puedes tomar decisiones informadas sobre cómo ahorrar o invertir. Al final del mes, tienes un informe claro y preciso de tus finanzas, sin necesidad de pasar horas haciendo cálculos.
+**Después:** Con FinMoovi, tienes todos tus gastos registrados de forma fácil y rápida. Puedes ver exactamente dónde se está gastando tu [dinero](/es/posts/cashback-inteligente), y puedes tomar decisiones informadas sobre cómo ahorrar o invertir. Al final del mes, tienes un informe claro y preciso de tus finanzas, sin necesidad de pasar horas haciendo cálculos.
 
 ![Antes vs Después de FinMoovi](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-6.webp)
 

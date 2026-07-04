@@ -19,7 +19,7 @@ seo:
 ## Introduction to the Problem
 Have you ever found yourself at the checkout, paying a bill or buying something, and thought: "I'll write this down later"? Only to forget by the end of the day and miss recording it. This happens to a lot of people. A busy life and lack of organization can turn what seems like a simple task into a real headache.
 
-## The Pain of Not Tracking Expenses
+## The Pain of Not Tracking [Expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro)
 Imagine buying breakfast, lunch, and dinner out every day. These are small expenses, but they can add up to a significant amount by the end of the month. If you don't record these expenses, you might end up exceeding your credit limit or running out of [money](/en/posts/avoid-impulse-purchases) sooner than you think. Moreover, without precise control over expenses, it's difficult to make realistic [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). It's like trying to reach a destination without a map.
 
 ## The Importance of Recording Expenses
@@ -52,7 +52,7 @@ Imagine you're in a store and buy some products, but don't have time to record t
 
 
 
-## Technology in Favor of Financial Organization
+## Technology in Favor of [Financial Organization](/en/posts/migrando-da-planilha-para-um-app-financeiro)
 According to [Investopedia](https://www.investopedia.com), technology has been increasingly used to help people manage their finances more efficiently. With apps like FinMoovi, it's possible to have precise control over expenses and make more realistic financial plans. Additionally, [Serasa](https://www.serasa.com.br) highlights the importance of having good financial management to avoid problems such as delinquency.
 
 ## Try FinMoovi
