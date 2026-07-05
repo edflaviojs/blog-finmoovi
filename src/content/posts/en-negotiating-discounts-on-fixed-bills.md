@@ -16,7 +16,7 @@ seo:
   keywords: ["how to negotiate discounts on fixed bills","personal finance","economy","money"]
 ---
 
-## Saving on Fixed Bills
+## [Saving](/en/posts/criar-reserva-de-emergencia) on Fixed Bills
 When we think about saving [money](/en/posts/avoid-impulse-purchases), we usually focus on cutting unnecessary [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), such as eating out less or canceling unused subscriptions. However, there's another way to save that often goes unnoticed: negotiating discounts on fixed bills. If you pay R$ 150 per month on your electricity bill, for example, a successful negotiation can reduce that amount to R$ 120, resulting in a savings of R$ 30 per month, or R$ 360 per year.
 
 ## Types of Fixed Bills
@@ -39,14 +39,14 @@ Before starting to negotiate, it's essential to be prepared. **Practical tip:** 
 There are several techniques you can use to negotiate discounts on fixed bills. One of them is the "reference price technique". In this technique, you research the prices offered by other providers and use that information as a basis for your negotiation. For example, if you find out that another internet provider is offering a similar plan for R$ 70 per month, you can use that information to argue that your current provider should offer a discount. Another technique is the "cancellation threat technique". In this technique, you threaten to cancel the bill if you don't receive a discount. However, it's essential to use this technique with care, as you don't want to lose the bill if it's not necessary.
 
 ## Additional Resources
-If you're having trouble negotiating discounts on fixed bills, there are additional resources that can help. For example, you can use the [Banco Central do Brasil](https://www.bcb.gov.br) website to research interest rates and other financial data. Additionally, the [Tesouro Direto](https://www.tesourodireto.com.br) website offers information on [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) and [economy](/en/posts/30-day-rule-for-purchases). If you're having problems with debt, the [Serasa](https://www.serasa.com.br) website can be helpful.
+If you're having trouble negotiating discounts on fixed bills, there are additional resources that can help. For example, you can use the [Banco Central do Brasil](https://www.bcb.gov.br) website to research interest rates and other financial data. Additionally, the [Tesouro Direto](https://www.tesourodireto.com.br) website offers information on [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and [economy](/en/posts/30-day-rule-for-purchases). If you're having problems with debt, the [Serasa](https://www.serasa.com.br) website can be helpful.
 
 ![Técnicas de Negociação](/images/posts/negociar-descontos-em-contas-fixas-4.webp)
 
 
 
 ## Start Today
-Now that you know how to negotiate discounts on fixed bills, it's time to start. Remember that negotiation is a skill that can be developed with practice, so don't get discouraged if you don't get a discount on the first try. With time and patience, you can save money and improve your financial health. To help you manage your finances, you can use tools like [Investopedia](https://www.investopedia.com) to learn more about [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and [economy](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias).
+Now that you know how to negotiate discounts on fixed bills, it's time to start. Remember that negotiation is a skill that can be developed with practice, so don't get discouraged if you don't get a discount on the first try. With time and patience, you can save [money](/en/posts/controle-gastos-cartao-credito) and improve your financial health. To help you manage your finances, you can use tools like [Investopedia](https://www.investopedia.com) to learn more about [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and [economy](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias).
 
 ![Comece hoje](/images/posts/negociar-descontos-em-contas-fixas-6.webp)
 

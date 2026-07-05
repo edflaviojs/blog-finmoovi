@@ -24,7 +24,7 @@ Antes de começar a planejar para o segundo semestre, é fundamental entender su
 
 ## Definindo Metas Financeiras para o Segundo Semestre
 Agora que você entende sua situação financeira atual, é hora de definir metas financeiras para o segundo semestre. Isso pode incluir economizar para uma viagem, pagar dívidas ou criar um fundo de emergência. Aqui estão algumas dicas para ajudá-lo a definir metas financeiras:
-1. **Seja específico**: Em vez de dizer "eu quero economizar dinheiro", diga "eu quero economizar R$ 1.000,00 para uma viagem".
+1. **Seja específico**: Em vez de dizer "eu quero economizar [dinheiro](/posts/cashback-inteligente)", diga "eu quero economizar R$ 1.000,00 para uma viagem".
 2. **Seja realista**: Certifique-se de que suas metas sejam alcançáveis com base em sua situação financeira atual.
 3. **Seja responsável**: Certifique-se de que suas metas estejam alinhadas com seus valores e prioridades.
 4. **Monitore seu progresso**: Use o FinMoovi para registrar seu progresso e fazer ajustes conforme necessário.
@@ -33,7 +33,7 @@ Agora que você entende sua situação financeira atual, é hora de definir meta
 
 
 
-## Criando um Orçamento para o Segundo Semestre
+## Criando um [Orçamento](/posts/como-criar-orcamento-pessoal) para o Segundo Semestre
 Agora que você tem metas financeiras definidas, é hora de criar um orçamento para o segundo semestre. Isso inclui decidir como você vai alocar sua renda para alcançar suas metas. Aqui estão algumas dicas para ajudá-lo a criar um orçamento:
 1. **Aloque 50% de sua renda para necessidades básicas**: Isso inclui gastos com moradia, alimentação, transporte e serviços essenciais.
 2. **Aloque 30% de sua renda para desejos**: Isso inclui gastos com lazer, entretenimento e hobbies.

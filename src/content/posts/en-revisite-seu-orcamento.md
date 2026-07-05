@@ -50,8 +50,8 @@ There are several tools available to help with budget management. One example is
 In addition to regularly reviewing your budget, there are some strategies that can help keep your finances in order:
 
 - **Emergency savings**: Maintain an [emergency fund](/en/glossario/en-reserva-de-emergencia) that covers at least 3 to 6 months of expenses.
-- **[Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-[selic](/en/posts/quotes-semana-1-june-2026))-qual-e-melhor-para-voce)**: Consider investing part of your income in options like Treasury Direct, which offers a secure way to grow your wealth over time.
-- **[Financial education](/en/glossario/en-educacao-financeira)**: Continue learning about [personal finance](/en/posts/30-day-rule-for-purchases) and [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Websites like Investopedia offer a wide range of educational articles and resources.
+- **[Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-4-june-2026)-semana-3-june-2026)-semana-1-june-2026))-qual-e-melhor-para-voce)**: Consider investing part of your income in options like Treasury Direct, which offers a secure way to grow your wealth over time.
+- **[Financial education](/en/glossario/en-educacao-financeira)**: Continue learning about [personal finance](/en/posts/30-day-rule-for-purchases) and [investments](/en/posts/cdb-vs-tesouro-[selic](/en/glossario/en-selic)-qual-rende-mais-em-2026). Websites like Investopedia offer a wide range of educational articles and resources.
 
 ![Strategies for Success](/images/posts/revisite-seu-orcamento-4.webp)
 

@@ -16,7 +16,7 @@ seo:
   keywords: ["how to avoid impulse purchases","personal finance","economy","money"]
 ---
 
-When you're at the mall or browsing the internet, it's easy to get carried away by offers and make impulse purchases. But if you're not careful, these purchases can blow your budget and affect your financial stability. Imagine you earn $5,000 per month and spend $1,000 on impulse purchases - that's 20% of your salary!
+When you're at the mall or browsing the internet, it's easy to get carried away by offers and make impulse purchases. But if you're not careful, these purchases can blow your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and affect your financial stability. Imagine you earn $5,000 per month and spend $1,000 on impulse purchases - that's 20% of your salary!
 
 ## Control Your Spending
 To avoid impulse purchases, it's essential to understand where your money is going. **Practical tip:** keep a record of all your expenses for a month, including small purchases like a coffee or a snack. This will help you identify spending patterns and areas where you can cut back on expenses. For example, if you spend $500 per month on restaurants, maybe it's time to start cooking at home.
@@ -48,4 +48,4 @@ Now that you know how to avoid impulse purchases, it's time to take action. Reme
 
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and discover where your money is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and discover where your money is really going.**

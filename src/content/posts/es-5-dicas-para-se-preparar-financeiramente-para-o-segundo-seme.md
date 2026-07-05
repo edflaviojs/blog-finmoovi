@@ -24,7 +24,7 @@ Antes de empezar a planificar para el segundo semestre, es fundamental entender 
 
 ## Definiendo Metas Financieras para el Segundo Semestre
 Ahora que entiendes tu situación financiera actual, es hora de definir metas financieras para el segundo semestre. Esto puede incluir ahorrar para un viaje, pagar deudas o crear un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia). Aquí te presentamos algunas sugerencias para ayudarte a definir metas financieras:
-1. **Sé específico**: En lugar de decir "quiero ahorrar dinero", di "quiero ahorrar R$ 1.000,00 para un viaje".
+1. **Sé específico**: En lugar de decir "quiero ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia)", di "quiero ahorrar R$ 1.000,00 para un viaje".
 2. **Sé realista**: Asegúrate de que tus metas sean alcanzables con base en tu situación financiera actual.
 3. **Sé responsable**: Asegúrate de que tus metas estén alineadas con tus valores y prioridades.
 4. **Monitorea tu progreso**: Usa el FinMoovi para registrar tu progreso y hacer ajustes según sea necesario.
@@ -45,7 +45,7 @@ Gestionar deudas y gastos es fundamental para alcanzar tus metas financieras. Aq
 1. **Paga tus deudas más caras primero**: Esto incluye deudas con intereses altos, como tarjetas de crédito.
 2. **Negocia con tus acreedores**: Si estás teniendo dificultades para pagar tus deudas, negocia con tus acreedores para encontrar una solución.
 3. **Corta gastos innecesarios**: Esto incluye gastos con artículos que no son esenciales, como compras impulsivas.
-4. **Usa el método de la "envelope"**: Separa tu dinero en sobres para diferentes categorías de gastos, como alimentación y transporte.
+4. **Usa el método de la "envelope"**: Separa tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) en sobres para diferentes categorías de gastos, como alimentación y transporte.
 
 ![Creando un Presupuesto para el Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
