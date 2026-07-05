@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introdução
-Estamos já no meio do ano e é hora de refletir sobre como estamos lidando com nossas finanças. Com base nos dados do [Instituto Brasileiro de Geografia e Estatística (IBGE)](https://www.ibge.gov.br), sabemos que a maioria dos brasileiros tem dificuldade em gerenciar suas finanças de forma eficaz. É comum perceber que os gastos são maiores do que a renda, levando a uma situação financeira complicada. Neste post, vamos discutir como se preparar financeiramente para o segundo semestre, com dicas práticas e acessíveis para ajudá-lo a controlar seus gastos e alcançar seus objetivos financeiros.
+Estamos já no meio do ano e é hora de refletir sobre como estamos lidando com nossas finanças. Com base nos dados do [Instituto Brasileiro de Geografia e Estatística (IBGE)](https://www.ibge.gov.br), sabemos que a maioria dos brasileiros tem dificuldade em gerenciar suas finanças de forma eficaz. É comum perceber que os gastos são maiores do que a renda, levando a uma situação financeira complicada. Neste post, vamos discutir como se preparar financeiramente para o segundo semestre, com [dicas](/posts/7-erros-financeiros-iniciante) práticas e acessíveis para ajudá-lo a controlar seus gastos e alcançar seus objetivos financeiros.
 
 ## Entendendo sua Situação Financeira Atual
 Antes de começar a planejar para o segundo semestre, é fundamental entender sua situação financeira atual. Isso inclui saber quanto você ganha, quanto você gasta e quais são suas dívidas. Você pode usar o [aplicativo FinMoovi](https://www.[finmoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026).com.br) para ajudá-lo a controlar seus gastos e entender melhor sua situação financeira. Com o FinMoovi, você pode registrar todos os seus gastos e receitas, criar um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) personalizado e receber alertas quando estiver ultrapassando seus limites.
@@ -37,7 +37,7 @@ Agora que você entende sua situação financeira atual, é hora de definir meta
 Agora que você tem metas financeiras definidas, é hora de criar um orçamento para o segundo semestre. Isso inclui decidir como você vai alocar sua renda para alcançar suas metas. Aqui estão algumas dicas para ajudá-lo a criar um orçamento:
 1. **Aloque 50% de sua renda para necessidades básicas**: Isso inclui gastos com moradia, alimentação, transporte e serviços essenciais.
 2. **Aloque 30% de sua renda para desejos**: Isso inclui gastos com lazer, entretenimento e hobbies.
-3. **Aloque 20% de sua renda para metas financeiras**: Isso inclui gastos com economia, dívidas e [fundos](/glossario/fundos) de emergência.
+3. **Aloque 20% de sua renda para metas financeiras**: Isso inclui gastos com [economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), dívidas e [fundos](/glossario/fundos) de emergência.
 4. **Revisite seu orçamento regularmente**: Use o FinMoovi para revisitar seu orçamento e fazer ajustes conforme necessário.
 
 ## Gerenciando Dívidas e Gastos

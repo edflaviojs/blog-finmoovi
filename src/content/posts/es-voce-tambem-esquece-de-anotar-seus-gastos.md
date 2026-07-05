@@ -19,7 +19,7 @@ seo:
 ## Introducción al Problema
 ¿Alguna vez te has encontrado en la caja, pagando una cuenta o comprando algo, y has pensado: "Voy a anotar esto más tarde"? Solo que, cuando llega el final del día, ya no recuerdas esa compra, y acabas olvidando de registrarla. Esto le sucede a mucha gente. La vida ajetreada y la falta de organización pueden transformar lo que parece una tarea simple en un verdadero dolor de cabeza.
 
-## El Dolor de No Acompanar los Gastos
+## El Dolor de No Acompanar los [Gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro)
 Imagina que estás comprando el desayuno, almuerzo y cena fuera todos los días. Son pequeños gastos, pero que pueden sumar una buena cantidad de [dinero](/es/posts/ahorra-en-las-compras-del-supermercado) al final del mes. Si no registras estas despesas, puedes acabar superando tu límite de crédito o quedarte sin [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) antes de lo que imaginas. Además, sin un control preciso de los gastos, es difícil hacer un [planeamiento financiero](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) realista. Es como tratar de llegar a un destino sin un mapa.
 
 ## La Importancia de Registrar los Gastos
@@ -52,7 +52,7 @@ Imagina que estás en una tienda y compras algunos productos, pero no tienes tie
 
 
 
-## La Tecnología a Favor de la Organización Financiera
+## La Tecnología a Favor de la [Organización Financiera](/es/posts/migrando-da-planilha-para-um-app-financeiro)
 Según [Investopedia](https://www.investopedia.com), la tecnología ha sido cada vez más utilizada para ayudar a las personas a gestionar sus finanzas de forma más eficiente. Con aplicaciones como FinMoovi, es posible tener un control preciso de los gastos y hacer planeamientos financieros más realistas. Además, [Serasa](https://www.serasa.com.br) destaca la importancia de tener una buena gestión financiera para evitar problemas como la inadimplencia.
 
 ## Experimenta FinMoovi

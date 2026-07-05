@@ -20,7 +20,7 @@ seo:
 Você já se pegou na frente do caixa, pagando uma conta ou comprando algo, e pensou: "Vou anotar isso mais tarde"? Só que, quando chega o fim do dia, você já nem lembra mais daquela compra, e acaba esquecendo de registrar. Isso acontece com muita gente. A vida corrida e a falta de organização podem transformar o que parece uma tarefa simples em uma verdadeira dor de cabeça.
 
 ## A Dor de Não Acompanhar os [Gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
-Imagine que você está comprando o café da manhã, almoço e jantar fora todos os dias. São pequenos gastos, mas que podem somar uma boa grana no fim do mês. Se você não registrar essas despesas, pode acabar ultrapassando o seu limite de crédito ou ficar sem [dinheiro](/posts/cashback-inteligente) antes do que imagina. Além disso, sem um controle preciso dos gastos, fica difícil fazer um [planejamento financeiro](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-se-preparar-financeiramente-para-o-segundo-seme) realista. É como tentar chegar a um destino sem um mapa.
+Imagine que você está comprando o café da manhã, almoço e jantar fora todos os dias. São pequenos [gastos](/posts/metodo-50-30-20-para-salario-brasileiro), mas que podem somar uma boa grana no fim do mês. Se você não registrar essas despesas, pode acabar ultrapassando o seu limite de crédito ou ficar sem [dinheiro](/posts/cashback-inteligente) antes do que imagina. Além disso, sem um controle preciso dos gastos, fica difícil fazer um [planejamento financeiro](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-se-preparar-financeiramente-para-o-segundo-seme) realista. É como tentar chegar a um destino sem um mapa.
 
 ## A Importância de Registrar os Gastos
 De acordo com o [Banco Central do Brasil](https://www.bcb.gov.br), a gestão financeira pessoal é fundamental para a estabilidade econômica do país. Saber como e onde seu [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) está sendo gasto é o primeiro passo para tomar decisões informadas sobre suas finanças. No entanto, uma pesquisa do [IBGE](https://www.ibge.gov.br) mostrou que muitas pessoas no Brasil têm dificuldade em controlar seus gastos, o que pode levar a problemas financeiros sérios.
@@ -46,7 +46,7 @@ Imagine que você está em uma loja e compra alguns produtos, mas não tem tempo
 ## Antes vs Depois do FinMoovi
 **Antes:** Você gasta horas tentando organizar suas despesas, fazendo anotações em pedaços de papel ou em um caderno, e ainda assim acaba esquecendo de registrar alguns gastos. No fim do mês, você se pega tentando fazer contas de cabeça, tentando lembrar onde foi que gastou todo o [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz).
 
-**Depois:** Com o FinMoovi, você tem todos os seus gastos registrados de forma fácil e rápida. Você pode ver exatamente onde seu dinheiro está sendo gasto, e pode tomar decisões informadas sobre como economizar ou investir. No fim do mês, você tem um relatório claro e preciso de suas finanças, sem precisar passar horas fazendo contas.
+**Depois:** Com o FinMoovi, você tem todos os seus gastos registrados de forma fácil e rápida. Você pode ver exatamente onde seu [dinheiro](/posts/controle-gastos-cartao-credito) está sendo gasto, e pode tomar decisões informadas sobre como economizar ou investir. No fim do mês, você tem um relatório claro e preciso de suas finanças, sem precisar passar horas fazendo contas.
 
 ![Antes vs Depois do FinMoovi](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-6.webp)
 

@@ -27,11 +27,11 @@ Revisar o [orçamento](/posts/controle-gastos-cartao-credito) regularmente é fu
 ### Exemplo Prático
 Vamos considerar o exemplo de João, um engenheiro de 35 anos que ganha R$ 8.000 por mês. No início do ano, ele criou um [orçamento](/posts/5-alternativas-ao-mobills-em-2026) que alocava 30% de sua renda para despesas com moradia, 20% para transporte, 15% para alimentação, 10% para lazer e 25% para poupança e dívidas. No entanto, recentemente, João recebeu um aumento de 15% em seu salário, o que aumentou sua renda para R$ 9.200 por mês. Com essa mudança, ele precisará revisar seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) para decidir como alocar o aumento de renda de forma eficaz.
 
-![Por Que Revisar o Orçamento?](/images/posts/revisite-seu-orcamento-2.webp)
+![Por Que Revisar o [Orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)?](/images/posts/revisite-seu-orcamento-2.webp)
 
 
 
-## Como Revisar o Orçamento
+## Como Revisar o [Orçamento](/posts/regra-50-30-20-guia-completo)
 A revisão do orçamento envolve alguns passos simples, mas importantes:
 
 1. **Liste todas as suas receitas e despesas**: Faça uma lista detalhada de todas as suas fontes de renda e despesas mensais. Isso inclui salário, renda de [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce), aluguel, contas de serviços, alimentação, transporte, entre outros.

@@ -33,7 +33,7 @@ Now that you understand your current financial situation, it's time to define fi
 
 
 
-## Creating a Budget for the Second Half of the Year
+## Creating a [Budget](/en/posts/50-30-20-rule-complete-guide) for the Second Half of the Year
 Now that you have defined financial goals, it's time to create a budget for the second half of the year. This includes deciding how you'll allocate your income to achieve your goals. Here are some tips to help you create a budget:
 1. **Allocate 50% of your income to basic needs**: This includes expenses for housing, food, transportation, and essential services.
 2. **Allocate 30% of your income to desires**: This includes expenses for leisure, entertainment, and hobbies.
@@ -45,7 +45,7 @@ Managing debt and expenses is crucial to achieving your financial goals. Here ar
 1. **Pay off your most expensive debts first**: This includes debts with high interest rates, such as credit cards.
 2. **Negotiate with your creditors**: If you're having trouble paying off your debts, negotiate with your creditors to find a solution.
 3. **Cut unnecessary expenses**: This includes expenses for non-essential items, such as impulse purchases.
-4. **Use the envelope method**: Divide your money into envelopes for different expense categories, such as food and transportation.
+4. **Use the envelope method**: Divide your [money](/en/posts/avoid-impulse-purchases) into envelopes for different expense categories, such as food and transportation.
 
 ![Creating a Budget for the Second Half of the Year](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 

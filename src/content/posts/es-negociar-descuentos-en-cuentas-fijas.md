@@ -17,7 +17,7 @@ seo:
 ---
 
 ## [Economía](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) en Cuentas Fijas
-Cuando pensamos en ahorrar dinero, generalmente nos concentramos en cortar gastos innecesarios, como comprar menos fuera o cancelar suscripciones que no usamos. Sin embargo, hay otra forma de ahorrar que muchas veces pasa desapercibida: negociar descuentos en cuentas fijas. Si usted paga R$ 150 por mes en su cuenta de luz, por ejemplo, una negociación exitosa puede reducir ese [valor](/es/glossario/es-valor) a R$ 120, resultando en un ahorro de R$ 30 por mes, o R$ 360 por año.
+Cuando pensamos en ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia), generalmente nos concentramos en cortar gastos innecesarios, como comprar menos fuera o cancelar suscripciones que no usamos. Sin embargo, hay otra forma de ahorrar que muchas veces pasa desapercibida: negociar descuentos en cuentas fijas. Si usted paga R$ 150 por mes en su cuenta de luz, por ejemplo, una negociación exitosa puede reducir ese [valor](/es/glossario/es-valor) a R$ 120, resultando en un [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) de R$ 30 por mes, o R$ 360 por año.
 
 ## Tipos de Cuentas Fijas
 Existen varias cuentas fijas que podemos negociar, incluyendo:
