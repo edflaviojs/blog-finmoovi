@@ -33,7 +33,7 @@ Ahora que entiendes tu situación financiera actual, es hora de definir metas fi
 
 
 
-## Creando un Presupuesto para el Segundo Semestre
+## Creando un [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/controle-gastos-cartao-credito)-personal) para el Segundo Semestre
 Ahora que tienes metas financieras definidas, es hora de crear un presupuesto para el segundo semestre. Esto incluye decidir cómo vas a asignar tu renta para alcanzar tus metas. Aquí te presentamos algunas sugerencias para ayudarte a crear un presupuesto:
 1. **Asigna el 50% de tu renta para necesidades básicas**: Esto incluye gastos con vivienda, alimentación, transporte y servicios esenciales.
 2. **Asigna el 30% de tu renta para deseos**: Esto incluye gastos con ocio, entretenimiento y hobbies.

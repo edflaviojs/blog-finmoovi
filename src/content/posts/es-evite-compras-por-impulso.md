@@ -18,8 +18,8 @@ seo:
 
 Cuando estás en un centro comercial o navegando por internet, es fácil dejarse llevar por las ofertas y compras por impulso. Pero, si no tienes cuidado, estas compras pueden acabar con tu presupuesto y afectar tu estabilidad financiera. Imagina que ganas R$ 5.000 por mes y gastas R$ 1.000 en compras por impulso - ¡eso es el 20% de tu salario!
 
-## Controle tus gastos
-Para evitar compras por impulso, es importante entender dónde está yendo tu dinero. **Consejo práctico:** haz un registro de todos tus gastos durante un mes, incluyendo compras pequeñas como un café o un snack. Esto te ayudará a identificar patrones de gasto y áreas donde puedes cortar gastos. Por ejemplo, si gastas R$ 500 por mes en restaurantes, tal vez sea hora de empezar a cocinar en casa.
+## Controle tus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
+Para evitar compras por impulso, es importante entender dónde está yendo tu [dinero](/es/posts/ahorra-en-las-compras-del-supermercado). **Consejo práctico:** haz un registro de todos tus gastos durante un mes, incluyendo compras pequeñas como un café o un snack. Esto te ayudará a identificar patrones de gasto y áreas donde puedes cortar gastos. Por ejemplo, si gastas R$ 500 por mes en restaurantes, tal vez sea hora de empezar a cocinar en casa.
 
 Además, es importante tener un presupuesto realista y seguir un plan de gastos. Esto puede incluir asignar un porcentaje de tu salario para gastos fijos, como alquiler y cuentas, y otro porcentaje para gastos variables, como entretenimiento y compras. El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece recursos útiles para ayudar a crear un presupuesto y gestionar tus finanzas.
 

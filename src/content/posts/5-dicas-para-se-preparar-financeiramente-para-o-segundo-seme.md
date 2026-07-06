@@ -34,7 +34,7 @@ Agora que você entende sua situação financeira atual, é hora de definir meta
 
 
 ## Criando um [Orçamento](/posts/como-criar-orcamento-pessoal) para o Segundo Semestre
-Agora que você tem metas financeiras definidas, é hora de criar um orçamento para o segundo semestre. Isso inclui decidir como você vai alocar sua renda para alcançar suas metas. Aqui estão algumas dicas para ajudá-lo a criar um orçamento:
+Agora que você tem metas financeiras definidas, é hora de criar um [orçamento](/posts/controle-gastos-cartao-credito) para o segundo semestre. Isso inclui decidir como você vai alocar sua renda para alcançar suas metas. Aqui estão algumas dicas para ajudá-lo a criar um orçamento:
 1. **Aloque 50% de sua renda para necessidades básicas**: Isso inclui gastos com moradia, alimentação, transporte e serviços essenciais.
 2. **Aloque 30% de sua renda para desejos**: Isso inclui gastos com lazer, entretenimento e hobbies.
 3. **Aloque 20% de sua renda para metas financeiras**: Isso inclui gastos com [economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), dívidas e [fundos](/glossario/fundos) de emergência.
@@ -45,7 +45,7 @@ Gerenciar dívidas e gastos é fundamental para alcançar suas metas financeiras
 1. **Pague suas dívidas mais caras primeiro**: Isso inclui dívidas com [juros](/glossario/juros) altos, como cartões de crédito.
 2. **Negocie com seus credores**: Se você está tendo dificuldade em pagar suas dívidas, negocie com seus credores para encontrar uma solução.
 3. **Corte gastos desnecessários**: Isso inclui gastos com itens que não são essenciais, como compras impulsivas.
-4. **Use o método da "envelope"**: Separe seu dinheiro em envelopes para diferentes categorias de gastos, como alimentação e transporte.
+4. **Use o método da "envelope"**: Separe seu [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) em envelopes para diferentes categorias de gastos, como alimentação e transporte.
 
 ![Criando um Orçamento para o Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
