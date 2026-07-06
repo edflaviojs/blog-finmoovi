@@ -34,7 +34,7 @@ Um exemplo de como funciona o CDB: você investe R$ 10.000,00 em um CDB com taxa
 
 O Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026)) é um tipo de investimento oferecido pelo governo federal, e é considerado um dos investimentos mais seguros do mercado. Ele funciona como um título de dívida pública, onde você empresta [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz) ao governo, e em troca, o governo paga um juro sobre o valor investido. A taxa de juros do Tesouro [Selic](/glossario/[selic](/posts/cotacoes-semana-5-junho-2026)) é definida pela taxa [Selic](/glossario/[selic](/posts/cotacoes-semana-1-julho-2026)), que é a taxa de juros básica da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira.
 
-Um exemplo de como funciona o [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026): você investe R$ 10.000,00 em um Tesouro Selic com taxa de juros de 12% ao ano. No final do ano, você receberá R$ 11.200,00, sendo R$ 10.000,00 o valor investido e R$ 1.200,00 o juro.
+Um exemplo de como funciona o [Tesouro Selic](/posts/cdb-vs-tesouro-[selic](/glossario/selic)-qual-rende-mais-em-2026): você investe R$ 10.000,00 em um [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) com taxa de juros de 12% ao ano. No final do ano, você receberá R$ 11.200,00, sendo R$ 10.000,00 o valor investido e R$ 1.200,00 o juro.
 
 ## Tabela comparativa
 

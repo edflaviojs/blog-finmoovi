@@ -16,7 +16,7 @@ seo:
   keywords: ["cómo evitar compras por impulso","finanzas personales","economía","dinero"]
 ---
 
-Cuando estás en un centro comercial o navegando por internet, es fácil dejarse llevar por las ofertas y compras por impulso. Pero, si no tienes cuidado, estas compras pueden acabar con tu presupuesto y afectar tu estabilidad financiera. Imagina que ganas R$ 5.000 por mes y gastas R$ 1.000 en compras por impulso - ¡eso es el 20% de tu salario!
+Cuando estás en un centro comercial o navegando por internet, es fácil dejarse llevar por las ofertas y compras por impulso. Pero, si no tienes cuidado, estas compras pueden acabar con tu [presupuesto](/es/posts/como-crear-presupuesto-personal) y afectar tu estabilidad financiera. Imagina que ganas R$ 5.000 por mes y gastas R$ 1.000 en compras por impulso - ¡eso es el 20% de tu salario!
 
 ## Controle tus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 Para evitar compras por impulso, es importante entender dónde está yendo tu [dinero](/es/posts/ahorra-en-las-compras-del-supermercado). **Consejo práctico:** haz un registro de todos tus gastos durante un mes, incluyendo compras pequeñas como un café o un snack. Esto te ayudará a identificar patrones de gasto y áreas donde puedes cortar gastos. Por ejemplo, si gastas R$ 500 por mes en restaurantes, tal vez sea hora de empezar a cocinar en casa.
@@ -41,7 +41,7 @@ Finalmente, es importante aprender a decir no a las compras por impulso. Esto pu
 
 
 ## Comienza hoy
-Ahora que sabes cómo evitar compras por impulso, es hora de empezar a actuar. Recuerda que el control de gastos es un proceso continuo, y que es importante ser paciente y consistente. Con el tiempo y la práctica, puedes desarrollar hábitos de gasto más saludables y alcanzar tus objetivos financieros. Para más información sobre [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), puedes visitar el [Investopedia](https://www.investopedia.com).
+Ahora que sabes cómo evitar compras por impulso, es hora de empezar a actuar. Recuerda que el [control de gastos](/es/posts/controle-gastos-cartao-credito) es un proceso continuo, y que es importante ser paciente y consistente. Con el tiempo y la práctica, puedes desarrollar hábitos de gasto más saludables y alcanzar tus objetivos financieros. Para más información sobre [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), puedes visitar el [Investopedia](https://www.investopedia.com).
 
 ![Aprende a decir no](/images/posts/evite-compras-por-impulso-4.webp)
 

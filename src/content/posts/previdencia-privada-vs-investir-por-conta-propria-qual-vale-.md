@@ -44,7 +44,7 @@ Um exemplo de como funciona investir por conta própria: imagine que você inves
 | **Flexibilidade** | Baixa flexibilidade, pois os recursos são bloqueados até a aposentadoria | Alta flexibilidade, pois você pode vender ou comprar [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-4-junho-2026))-qual-e-melhor-para-voce) a qualquer momento |
 | **Risco** | Baixo risco, pois os [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-5-junho-2026))-qual-e-melhor-para-voce) são geridos por profissionais | Alto risco, pois você é responsável por gerenciar os [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-julho-2026))-qual-e-melhor-para-voce) |
 | **Taxas** | Taxas de administração e carregamento | Taxas de administração e corretagem |
-| **Rendimento** | Rendimentos fixos ou variáveis, dependendo do plano | Rendimentos variáveis, dependendo do desempenho dos [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) |
+| **Rendimento** | Rendimentos fixos ou variáveis, dependendo do plano | Rendimentos variáveis, dependendo do desempenho dos [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/selic)-qual-rende-mais-em-2026) |
 | **[Liquidez](/glossario/liquidez)** | Baixa liquidez, pois os recursos são bloqueados até a aposentadoria | Alta liquidez, pois você pode vender [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) a qualquer momento |
 
 ![Tabela Comparativa](/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale--4.webp)
@@ -56,7 +56,7 @@ Um exemplo de como funciona investir por conta própria: imagine que você inves
 A previdência privada é uma boa opção para você se:
 
 * Você está procurando por uma renda mensal garantida após a aposentadoria;
-* Você não tem experiência em investimentos e prefere que um profissional gerencie seus recursos;
+* Você não tem experiência em [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e prefere que um profissional gerencie seus recursos;
 * Você está disposto a bloquear seus recursos por um longo período de tempo em troca de uma renda mensal garantida.
 
 ## Quando Escolher Investir por Conta Própria

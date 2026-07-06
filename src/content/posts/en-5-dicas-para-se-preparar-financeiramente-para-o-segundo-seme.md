@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introduction
-We're already halfway through the year, and it's time to reflect on how we're handling our finances. Based on data from the [Instituto Brasileiro de Geografia e Estatística (IBGE)](https://www.ibge.gov.br), we know that most Brazilians struggle to manage their finances effectively. It's common to realize that expenses are higher than income, leading to a complicated financial situation. In this post, we'll discuss how to prepare financially for the second half of the year, with practical and accessible tips to help you control your expenses and achieve your financial goals.
+We're already halfway through the year, and it's time to reflect on how we're handling our finances. Based on data from the [Instituto Brasileiro de Geografia e Estatística (IBGE)](https://www.ibge.gov.br), we know that most Brazilians struggle to manage their finances effectively. It's common to realize that expenses are higher than [income](/en/posts/montando-carteira-diversificada-com-r-500), leading to a complicated financial situation. In this post, we'll discuss how to prepare financially for the second half of the year, with practical and accessible tips to help you control your expenses and achieve your financial goals.
 
 ## Understanding Your Current Financial Situation
 Before starting to plan for the second half of the year, it's essential to understand your current financial situation. This includes knowing how much you earn, how much you spend, and what your debts are. You can use the [FinMoovi app](https://www.[finmoovi](/en/posts/5-alternativas-ao-mobills-em-2026).com.br) to help you control your expenses and better understand your financial situation. With [FinMoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), you can record all your expenses and income, create a personalized [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), and receive alerts when you're exceeding your limits.
@@ -38,7 +38,7 @@ Now that you have defined financial goals, it's time to create a [budget](/en/po
 1. **Allocate 50% of your income to basic needs**: This includes expenses for housing, food, transportation, and essential services.
 2. **Allocate 30% of your income to desires**: This includes expenses for leisure, entertainment, and hobbies.
 3. **Allocate 20% of your income to financial goals**: This includes expenses for savings, debts, and emergency funds.
-4. **Review your [budget](/en/posts/how-to-create-personal-budget) regularly**: Use FinMoovi to review your budget and make adjustments as needed.
+4. **Review your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas)) regularly**: Use FinMoovi to review your budget and make adjustments as needed.
 
 ## Managing Debt and Expenses
 Managing debt and expenses is crucial to achieving your financial goals. Here are some tips to help you manage debt and expenses:

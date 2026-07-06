@@ -18,7 +18,7 @@ seo:
 
 ## Resumen Semanal del Mercado Financiero Brasileño
 
-La semana del 29 de junio al 6 de julio de 2026 ha sido de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos los detalles más relevantes que afectan a los inversores individuales y a la economía en general.
+La semana del 29 de junio al 6 de julio de 2026 ha sido de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos los detalles más relevantes que afectan a los inversores individuales y a la [economía](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) en general.
 
 ![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-cotizaciones-semana-1-julio-2026-inline-1.webp)
 
@@ -26,7 +26,7 @@ La semana del 29 de junio al 6 de julio de 2026 ha sido de gran importancia para
 
 ## Tendencia del Dólar y Euro
 
-En lo que respecta a las tasas de cambio, el dólar estadounidense (USD) se mantuvo estable en relación con el real brasileño (BRL), cerrando la semana en aproximadamente R$ 5.18. Por otro lado, el euro (EUR) también mostró una tendencia estable, cotizando alrededor de R$ 5.92. Estas tasas de cambio son cruciales para los brasileños que realizan compras en línea en el exterior, viajan al extranjero o tienen inversiones en monedas extranjeras. Es importante destacar que, para aquellos que desean seguir de cerca sus inversiones en múltiples monedas, herramientas como el app [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) pueden ser muy útiles, ofreciendo una visión clara y actualizada de sus inversiones en diferentes divisas.
+En lo que respecta a las tasas de cambio, el dólar estadounidense (USD) se mantuvo estable en relación con el real brasileño (BRL), cerrando la semana en aproximadamente R$ 5.18. Por otro lado, el euro (EUR) también mostró una tendencia estable, cotizando alrededor de R$ 5.92. Estas tasas de cambio son cruciales para los brasileños que realizan compras en línea en el exterior, viajan al extranjero o tienen inversiones en monedas extranjeras. Es importante destacar que, para aquellos que desean seguir de cerca sus inversiones en múltiples monedas, herramientas como el app [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/es/posts/5-alternativas-ao-mobills-em-2026)-em-2026) pueden ser muy útiles, ofreciendo una visión clara y actualizada de sus inversiones en diferentes divisas.
 
 ## La [Selic](/es/glossario/es-selic) y su Impacto en las Inversiones
 

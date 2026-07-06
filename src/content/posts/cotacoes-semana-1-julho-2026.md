@@ -26,13 +26,13 @@ A semana que passou foi marcada por movimentos interessantes no mercado financei
 
 ## Dólar e Euro: Tendência da Semana
 
-Durante a semana de 29/06/2026 a 06/07/2026, o dólar americano (USD) fechou em R$ 5.18, enquanto o euro (EUR) alcançou R$ 5.92. Esses valores refletem uma estabilidade relativa em relação às semanas anteriores, mas é importante lembrar que o mercado de câmbio é extremamente volátil e pode sofrer influências de各种 fatores, incluindo decisões políticas, econômicas e até mesmo eventos globais.
+Durante a semana de 29/06/2026 a 06/07/2026, o dólar americano (USD) fechou em R$ 5.18, enquanto o euro (EUR) alcançou R$ 5.92. Esses valores refletem uma estabilidade relativa em relação às semanas anteriores, mas é importante lembrar que o mercado de [câmbio](/glossario/cambio) é extremamente volátil e pode sofrer influências de各种 fatores, incluindo decisões políticas, econômicas e até mesmo eventos globais.
 
 A tendência de estabilidade pode ser vista como uma oportunidade para os investidores que estão considerando investir em ativos em moedas estrangeiras. No entanto, é fundamental manter um olho atento às notícias econômicas e políticas, pois elas podem alterar rapidamente o cenário.
 
 ## Comentário sobre a Selic e Impacto nos Investimentos
 
-A taxa Selic, que é a taxa básica de juros da economia brasileira, continua a ser um fator crucial para os investimentos. A decisão do Comitê de Política Monetária (COPOM) de manter ou alterar a Selic pode influenciar diretamente os juros dos investimentos, como CDBs, LCI e LCA, e também afeta a atratividade dos investimentos em [renda fixa](/glossario/renda-fixa).
+A taxa Selic, que é a taxa básica de juros da [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator crucial para os investimentos. A decisão do Comitê de Política Monetária (COPOM) de manter ou alterar a Selic pode influenciar diretamente os juros dos investimentos, como CDBs, [LCI e LCA](/glossario/lci-e-lca), e também afeta a atratividade dos investimentos em [renda fixa](/glossario/renda-fixa).
 
 ![Comentário sobre a Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-1-julho-2026-inline-3.webp)
 
@@ -42,7 +42,7 @@ Para os investidores, é importante entender como as mudanças na Selic podem im
 
 ## Dica Prática para o Investidor Pessoa Física
 
-Uma dica prática para os investidores pessoa física é diversificar seus investimentos. Isso inclui não apenas investir em diferentes tipos de ativos, como ações, renda fixa e fundos, mas também considerar investimentos em múltiplas moedas. O [FinMoovi](https://[finmoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026).com.br/) é uma ferramenta útil que ajuda a acompanhar e gerenciar investimentos em diferentes moedas, tornando mais fácil para os investidores manterem seu portfólio diversificado e atualizado.
+Uma dica prática para os investidores pessoa física é diversificar seus investimentos. Isso inclui não apenas investir em diferentes tipos de ativos, como ações, renda fixa e [fundos](/glossario/fundos), mas também considerar investimentos em múltiplas moedas. O [FinMoovi](https://[finmoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026).com.br/) é uma ferramenta útil que ajuda a acompanhar e gerenciar investimentos em diferentes moedas, tornando mais fácil para os investidores manterem seu portfólio diversificado e atualizado.
 
 Além disso, é fundamental manter uma [reserva de emergência](/glossario/reserva-de-emergencia) e ter um plano de investimento de longo prazo, considerando os objetivos financeiros e o perfil de risco de cada investidor.
 

@@ -30,8 +30,8 @@ La economía es un concepto importante para que los niños aprendan, ya que ayud
 
 
 
-## Enseñanza de finanzas personales
-La enseñanza de finanzas personales a niños puede comenzar con conceptos simples, como la diferencia entre necesidades y deseos. Por ejemplo, una necesidad es algo que es esencial para la vida, como comida y refugio, mientras que un deseo es algo que se quiere, pero no es necesario, como un juguete.
+## Enseñanza de [finanzas personales](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
+La enseñanza de [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) a niños puede comenzar con conceptos simples, como la diferencia entre necesidades y deseos. Por ejemplo, una necesidad es algo que es esencial para la vida, como comida y refugio, mientras que un deseo es algo que se quiere, pero no es necesario, como un juguete.
 
 Una forma de enseñar esto es crear un presupuesto familiar que incluya los gastos básicos y los objetivos financieros. Por ejemplo, si la familia tiene un presupuesto de R$ 5.000 por mes, puede ser necesario priorizar los gastos básicos, como alquiler y comida, y después decidir cómo utilizar el resto para alcanzar los objetivos financieros.
 

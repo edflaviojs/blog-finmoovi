@@ -27,7 +27,7 @@ Additionally, it's crucial to have a realistic [budget](/en/posts/50-30-20-rule-
 Another important step to avoid impulse purchases is to identify your triggers. What situations or emotions lead you to make impulse purchases? Is it when you're stressed or bored? Is it when you see a special offer or discount? Once you've identified your triggers, you can start developing strategies to deal with them in a healthier way. For example, if you tend to make impulse purchases when you're stressed, try finding other ways to relax, such as meditating or exercising.
 
 ## Create a Shopping Plan
-Before making a purchase, it's essential to have a plan. **Practical tip:** make a shopping list before going to the mall or making online purchases, and try to stick to it. Additionally, it's crucial to research and compare prices before making a purchase. This can help you avoid impulse purchases and ensure you're getting the best value for your money. The [Serasa](https://www.serasa.com.br) offers useful resources to help you manage your purchases and avoid debt.
+Before making a purchase, it's essential to have a plan. **Practical tip:** make a shopping list before going to the mall or making online purchases, and try to stick to it. Additionally, it's crucial to research and compare prices before making a purchase. This can help you avoid impulse purchases and ensure you're getting the best value for your [money](/en/posts/criar-reserva-de-emergencia). The [Serasa](https://www.serasa.com.br) offers useful resources to help you manage your purchases and avoid debt.
 
 ![Identifique seus gatilhos](/images/posts/evite-compras-por-impulso-2.webp)
 
@@ -48,4 +48,4 @@ Now that you know how to avoid impulse purchases, it's time to take action. Reme
 
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and discover where your money is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and discover where your [money](/en/posts/difference-between-investing-and-saving) is really going.**

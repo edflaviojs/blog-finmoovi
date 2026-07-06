@@ -21,7 +21,7 @@ Teaching [personal finance](/en/posts/30-day-rule-for-purchases) to children is 
 
 A practical way to start is by giving children an allowance, which they can use to buy things they want, such as toys or sweets. However, it's essential to teach that the allowance should also be used to save and help with family expenses. For example, if the allowance is R$ 100 per month, the child can decide to save R$ 20 to buy a more expensive toy in the future.
 
-## Importance of Economy
+## Importance of [Economy](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
 The economy is an important concept for children to learn, as it helps them understand that money is not infinite and that it's necessary to make choices about how to use it. For example, if a child wants to buy a new video game that costs R$ 200, they may need to save for several months to reach that goal.
 
 **Practical tip:** Create a "jar" system for the child, where they can divide their allowance into different jars for different goals, such as a jar for saving, one for spending, and one for donating. This helps visualize financial goals and make conscious choices about how to use money.
@@ -40,7 +40,7 @@ A way to teach this is by creating a family budget that includes basic expenses 
 
 
 ## Resources for Financial Education
-There are many resources available to help educate children about personal finance, including books, games, and apps. For example, the [Banco Central do Brasil](https://www.bcb.gov.br) offers educational resources for children and teenagers, including games and interactive activities.
+There are many resources available to help educate children about [personal finance](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), including books, games, and apps. For example, the [Banco Central do Brasil](https://www.bcb.gov.br) offers educational resources for children and teenagers, including games and interactive activities.
 
 Additionally, there are apps, such as [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026), that can help children better understand how to manage money and achieve financial goals. These apps can be a useful tool for teaching personal finance in a practical and fun way.
 

@@ -7,7 +7,7 @@ image: "/images/glossario/hedge.webp"
 category: "basico"
 tags: ["hedge", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
-publishedAt: 2026-06-10
+publishedAt: 2026-07-06
 readingTime: 5
 locale: "en"
 translationKey: "glossario-hedge"
@@ -18,53 +18,52 @@ seo:
 ---
 
 ## What it is
-A hedge, em termos financeiros, é uma estratégia de investimento que visa reduzir o risco de perdas em um portfólio de investimentos. Isso é feito por meio da compra ou venda de ativos financeiros, como ações, opções ou futuros, que têm um relacionamento inverso com o ativo que se deseja proteger. Em outras palavras, uma hedge é como um seguro para o seu portfólio de investimentos, ajudando a minimizar as perdas em caso de flutuações no mercado.
+A hedge, no mundo financeiro, é uma estratégia de investimento que visa reduzir o risco de perdas em uma carteira de investimentos. Imagine que você tem um investimento em ações de uma empresa de tecnologia, mas está preocupado que o valor dessas ações possa cair devido a mudanças no mercado. Uma hedge pode ser usada para proteger seu investimento contra essa perda potencial. Isso é feito investindo em um ativo que tende a se mover em direção oposta ao seu investimento original, de modo que se o valor do seu investimento cair, o valor da hedge aumente, compensando a perda.
 
-Algumas das principais razões pelas quais as pessoas usam hedge incluem:
-* Proteger contra perdas em um investimento específico
-* Reduzir o risco de um portfólio de investimentos
-* Aumentar a rentabilidade de um investimento
-* Diversificar um portfólio de investimentos
+* Investimentos em ações
+* Investimentos em títulos
+* Investimentos em commodities
+Isso pode parecer complicado, mas é como ter um seguro para o seu investimento. Você paga uma pequena quantia para ter a proteção, e se nada der errado, você não perde nada, mas se o mercado mudar contra você, a hedge ajuda a minimizar as perdas.
 
 ![What it is](/images/glossario/hedge-inline-1.webp)
 
 
 
 ## How it works
-Uma hedge funciona basicamente da seguinte maneira: você compra um ativo financeiro que tem um relacionamento inverso com o ativo que se deseja proteger. Por exemplo, se você tem uma carteira de ações de empresas de tecnologia e está preocupado com a possibilidade de uma crise no setor, você pode comprar opções de venda (put options) dessas ações. Se o valor das ações cair, o valor das opções de venda aumentará, compensando as perdas na carteira de ações.
+Uma hedge funciona basicamente como um contrato entre dois investidores, onde um deles se compromete a comprar ou vender um ativo a um preço determinado no futuro. Por exemplo, se você tem ações de uma empresa de tecnologia e acha que o valor delas pode cair, você pode comprar uma opção de venda (put) dessas ações. Se o valor das ações cair, você pode exercer a opção e vender as ações pelo preço acordado, evitando a perda. **Practical tip:** É importante entender que uma hedge não é uma aposta contra o mercado, mas sim uma forma de gerenciar o risco.
 
-Outro exemplo é a compra de ouro como uma hedge contra a inflação. Se a inflação aumentar, o valor do ouro tende a aumentar também, pois é considerado um ativo de valor seguro. Se você tiver uma parte do seu portfólio investida em ouro, você estará protegido contra as perdas causadas pela inflação.
+Se você tem um salário de R$5.000 por mês e investe 10% disso em ações, você tem R$500 investidos. Se você acha que o valor dessas ações pode cair 10% nos próximos meses, você pode comprar uma hedge para proteger seu investimento. Se o valor das ações cair 10%, você perderia R$50, mas com a hedge, você pode minimizar essa perda.
 
 ## Advantages
-As principais vantagens de usar uma hedge incluem:
-* Redução do risco de perdas em um investimento específico
-* Aumento da rentabilidade de um investimento
-* Diversificação de um portfólio de investimentos
-* Proteção contra flutuações no mercado
+As hedges têm várias vantagens para os investidores. Elas permitem que os investidores protejam seus investimentos contra perdas potenciais, o que pode ser especialmente útil em mercados voláteis. Além disso, as hedges podem ser usadas para especular sobre o movimento do mercado, o que pode ser uma forma de ganhar dinheiro se você estiver correto. **Practical tip:** É importante lembrar que as hedges também têm custos, então é importante avaliar se o custo da hedge é justo em relação ao risco que você está tentando mitigar.
 
-**Practical tip:** Ao considerar uma hedge, é importante lembrar que não é uma estratégia de investimento sem riscos. É importante avaliar cuidadosamente os custos e os benefícios de uma hedge antes de decidir se é a estratégia certa para você.
+* Reduzir o risco de perdas
+* Proteger o patrimônio
+* Ganhar dinheiro com a especulação
+Se você tem um salário de R$8.000 por mês e investe 20% disso em ações, você tem R$1.600 investidos. Se você acha que o valor dessas ações pode cair 20% nos próximos meses, você pode comprar uma hedge para proteger seu investimento. Se o valor das ações cair 20%, você perderia R$320, mas com a hedge, você pode minimizar essa perda.
 
 ![Advantages](/images/glossario/hedge-inline-3.webp)
 
 
 
 ## Risks
-Embora as hedges possam ser uma ferramenta útil para reduzir o risco de perdas em um investimento, elas também envolvem riscos. Alguns dos principais riscos incluem:
-* Custo: as hedges podem ser caras, especialmente se você estiver comprando opções ou futuros.
-* Complexidade: as hedges podem ser complexas e difíceis de entender, especialmente para investidores iniciantes.
-* Risco de perda: se a hedge não for bem-sucedida, você pode perder dinheiro.
+No entanto, as hedges também têm riscos. Se você comprar uma hedge e o mercado se mover em sua favor, você pode perder o dinheiro que gastou na hedge. Além disso, as hedges podem ser complexas e difíceis de entender, o que pode levar a erros de investimento. **Practical tip:** É importante fazer uma pesquisa cuidadosa e entender completamente como a hedge funciona antes de investir.
 
-**Practical tip:** É importante lembrar que as hedges não são uma estratégia de investimento de longo prazo. Elas devem ser usadas como uma ferramenta de curto prazo para proteger contra flutuações no mercado.
+* Perder o dinheiro investido na hedge
+* Não entender como a hedge funciona
+* Escolher a hedge errada
+Se você tem um salário de R$3.000 por mês e investe 5% disso em ações, você tem R$150 investidos. Se você acha que o valor dessas ações pode cair 10% nos próximos meses, você pode comprar uma hedge para proteger seu investimento. Se o valor das ações cair 10%, você perderia R$15, mas com a hedge, você pode minimizar essa perda.
 
 ## Practical examples
-Vamos considerar um exemplo prático. Suponha que você tem um salário de R$ 5.000 por mês e você investe R$ 1.000 por mês em uma carteira de ações de empresas de tecnologia. Se você estiver preocupado com a possibilidade de uma crise no setor, você pode comprar opções de venda (put options) dessas ações por R$ 500. Se o valor das ações cair, o valor das opções de venda aumentará, compensando as perdas na carteira de ações.
+Vamos considerar alguns exemplos práticos de como as hedges podem ser usadas. Imagine que você tem um investimento em ações de uma empresa de tecnologia e acha que o valor delas pode cair devido a mudanças no mercado. Você pode comprar uma opção de venda (put) dessas ações para proteger seu investimento. Se o valor das ações cair, você pode exercer a opção e vender as ações pelo preço acordado, evitando a perda.
 
-Outro exemplo é a compra de um fundo de investimento em ouro como uma hedge contra a inflação. Se a inflação aumentar, o valor do ouro tende a aumentar também, pois é considerado um ativo de valor seguro. Se você tiver uma parte do seu portfólio investida em ouro, você estará protegido contra as perdas causadas pela inflação.
-
-**Practical tip:** É importante diversificar seu portfólio de investimentos para reduzir o risco de perdas. Isso pode incluir investir em diferentes tipos de ativos, como ações, títulos, imóveis e commodities.
+* Comprar uma opção de venda (put) de ações
+* Comprar uma opção de compra (call) de ações
+* Investir em um fundo de hedge
+Se você tem um salário de R$6.000 por mês e investe 15% disso em ações, você tem R$900 investidos. Se você acha que o valor dessas ações pode cair 15% nos próximos meses, você pode comprar uma hedge para proteger seu investimento. Se o valor das ações cair 15%, você perderia R$135, mas com a hedge, você pode minimizar essa perda.
 
 ## Start today
-Agora que você entende o que é uma hedge e como ela funciona, é hora de começar a pensar em como você pode usar essa estratégia de investimento para proteger seu portfólio de investimentos. Lembre-se de que as hedges não são uma estratégia de investimento sem riscos, mas elas podem ser uma ferramenta útil para reduzir o risco de perdas em um investimento. **Practical tip:** Comece pequeno e vá aumentando gradualmente sua exposição às hedges. Além disso, é importante lembrar que a educação financeira é fundamental para tomar decisões informadas sobre seus investimentos. Continue aprendendo e se educando sobre as diferentes estratégias de investimento disponíveis, e você estará bem equipado para alcançar seus objetivos financeiros.
+Agora que você entende o que é uma hedge e como ela funciona, é hora de começar a investir de forma segura. Lembre-se de que as hedges são uma ferramenta poderosa para gerenciar o risco, mas é importante entender completamente como elas funcionam antes de investir. **Practical tip:** Comece com pequenas quantias e aumente gradualmente à medida que você se torna mais confortável com as hedges. Com a ajuda de um aplicativo de investimentos, como o Nubank, você pode começar a investir de forma segura e fácil. Então, não espere mais e comece a proteger seu patrimônio hoje mesmo!
 
 ---
 
