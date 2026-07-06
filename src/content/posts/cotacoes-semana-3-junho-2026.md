@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do [Mercado Financeiro](/posts/cotacoes-semana-5-junho-2026) Brasileiro
 
-A semana de 08/06/2026 a 15/06/2026 foi marcada por movimentos interessantes no mercado financeiro brasileiro, com destaque para as taxas de [câmbio](/glossario/cambio) e a política monetária. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
+A semana de 08/06/2026 a 15/06/2026 foi marcada por movimentos interessantes no [mercado financeiro](/posts/cotacoes-semana-1-julho-2026) brasileiro, com destaque para as taxas de [câmbio](/glossario/cambio) e a política monetária. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro](/images/posts/cotacoes-semana-3-junho-2026-inline-1.webp)
 

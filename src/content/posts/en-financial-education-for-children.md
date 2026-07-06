@@ -30,8 +30,8 @@ The economy is an important concept for children to learn, as it helps them unde
 
 
 
-## Teaching Personal Finance
-Teaching personal finance to children can start with simple concepts, such as the difference between needs and wants. For example, a need is something essential for life, such as food and shelter, while a want is something desired but not necessary, such as a toy.
+## Teaching [Personal Finance](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)
+Teaching [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) to children can start with simple concepts, such as the difference between needs and wants. For example, a need is something essential for life, such as food and shelter, while a want is something desired but not necessary, such as a toy.
 
 A way to teach this is by creating a family budget that includes basic expenses and financial goals. For example, if the family has a budget of R$ 5,000 per month, it may be necessary to prioritize basic expenses, such as rent and food, and then decide how to use the remaining amount to achieve financial goals.
 

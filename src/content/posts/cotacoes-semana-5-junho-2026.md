@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do [Mercado Financeiro](/posts/cotacoes-semana-4-maio-2026) Brasileiro: 22/06/2026 a 29/06/2026
 
-A semana que passou foi marcada por movimentações significativas no mercado financeiro brasileiro, especialmente quando se trata das taxas de [câmbio](/glossario/cambio) e dos [juros](/glossario/juros). Vamos mergulhar nos detalhes e entender como esses movimentos podem afetar seus [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-selic-qual-e-melhor-para-voce) e sua carteira.
+A semana que passou foi marcada por movimentações significativas no [mercado financeiro](/posts/cotacoes-semana-1-julho-2026) brasileiro, especialmente quando se trata das taxas de [câmbio](/glossario/cambio) e dos [juros](/glossario/juros). Vamos mergulhar nos detalhes e entender como esses movimentos podem afetar seus [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-selic-qual-e-melhor-para-voce) e sua carteira.
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro: 22/06/2026 a 29/06/2026](/images/posts/cotacoes-semana-5-junho-2026-inline-1.webp)
 

@@ -27,7 +27,7 @@ Now that you understand your current financial situation, it's time to define fi
 1. **Be specific**: Instead of saying "I want to save [money](/en/posts/30-day-rule-for-purchases)," say "I want to save $1,000 for a trip."
 2. **Be realistic**: Make sure your goals are achievable based on your current financial situation.
 3. **Be responsible**: Ensure your goals align with your values and priorities.
-4. **Monitor your progress**: Use FinMoovi to track your progress and make adjustments as needed.
+4. **Monitor your progress**: Use [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) to track your progress and make adjustments as needed.
 
 ![Understanding Your Current Financial Situation](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-2.webp)
 
@@ -38,7 +38,7 @@ Now that you have defined financial goals, it's time to create a [budget](/en/po
 1. **Allocate 50% of your income to basic needs**: This includes expenses for housing, food, transportation, and essential services.
 2. **Allocate 30% of your income to desires**: This includes expenses for leisure, entertainment, and hobbies.
 3. **Allocate 20% of your income to financial goals**: This includes expenses for savings, debts, and emergency funds.
-4. **Review your budget regularly**: Use FinMoovi to review your budget and make adjustments as needed.
+4. **Review your [budget](/en/posts/how-to-create-personal-budget) regularly**: Use FinMoovi to review your budget and make adjustments as needed.
 
 ## Managing Debt and Expenses
 Managing debt and expenses is crucial to achieving your financial goals. Here are some tips to help you manage debt and expenses:

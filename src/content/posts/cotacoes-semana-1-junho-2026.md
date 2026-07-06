@@ -20,7 +20,7 @@ seo:
 
 A semana de 28/05/2026 a 04/06/2026 foi marcada por movimentos significativos no mercado financeiro brasileiro, com destaque para as [cotações](/posts/cotacoes-semana-4-maio-2026) do [dólar](/posts/cotacoes-semana-5-junho-2026) e do euro em relação ao real. Além disso, a taxa [Selic](/glossario/selic) continuou a influenciar as decisões de [investimento](/posts/tesouro-direto-para-iniciantes) dos brasileiros.
 
-## Dólar e Euro: Tendência da Semana
+## [Dólar](/posts/cotacoes-semana-1-julho-2026) e Euro: Tendência da Semana
 
 O dólar americano fechou a semana em R$ 5,03, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou a cotação de R$ 5,84, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes para os investidores que possuem ativos em moedas estrangeiras, pois podem impactar diretamente o [valor](/glossario/valor) de seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-). Por exemplo, se você tem R$ 1.000 investidos em um fundo que acompanha o desempenho do euro, a valorização do euro pode aumentar o valor do seu [investimento](/posts/montando-carteira-diversificada-com-r-500) em reais.
 

@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do [Mercado Financeiro](/posts/cotacoes-semana-5-junho-2026) Brasileiro
 
-A semana de 20/05/2026 a 27/05/2026 foi marcada por movimentações significativas no mercado financeiro brasileiro, com destaque para as variações nas taxas de [câmbio](/glossario/cambio) e a manutenção da taxa [Selic](/glossario/selic). Vamos mergulhar nos detalhes e entender como esses eventos afetam os investidores pessoa física.
+A semana de 20/05/2026 a 27/05/2026 foi marcada por movimentações significativas no [mercado financeiro](/posts/cotacoes-semana-1-julho-2026) brasileiro, com destaque para as variações nas taxas de [câmbio](/glossario/cambio) e a manutenção da taxa [Selic](/glossario/selic). Vamos mergulhar nos detalhes e entender como esses eventos afetam os investidores pessoa física.
 
 ## [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana
 

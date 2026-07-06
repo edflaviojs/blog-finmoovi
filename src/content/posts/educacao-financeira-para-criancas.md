@@ -17,7 +17,7 @@ seo:
 ---
 
 ## [Educação financeira](/glossario/educacao-financeira) básica
-Ensinar finanças pessoais para crianças é essencial para que elas desenvolvam hábitos saudáveis em relação ao dinheiro. Isso começa com a compreensão básica de que o dinheiro não é infinito e que é necessário trabalhar para ganhar. Por exemplo, se um pai ganha R$ 5.000 por mês e a família gasta R$ 3.000 em despesas básicas, a criança pode começar a entender que o restante pode ser usado para economizar ou investir.
+Ensinar [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) para crianças é essencial para que elas desenvolvam hábitos saudáveis em relação ao dinheiro. Isso começa com a compreensão básica de que o dinheiro não é infinito e que é necessário trabalhar para ganhar. Por exemplo, se um pai ganha R$ 5.000 por mês e a família gasta R$ 3.000 em despesas básicas, a criança pode começar a entender que o restante pode ser usado para economizar ou investir.
 
 Uma forma prática de começar é dar uma mesada para as crianças, que elas podem usar para comprar coisas que querem, como brinquedos ou doces. No entanto, é importante ensinar que a mesada também deve ser usada para economizar e ajudar em despesas da família. Por exemplo, se a mesada for de R$ 100 por mês, a criança pode decidir guardar R$ 20 para comprar um brinquedo mais caro no futuro.
 
@@ -42,7 +42,7 @@ Uma forma de ensinar isso é criar um orçamento familiar que inclua as despesas
 ## Recursos para educação financeira
 Existem muitos recursos disponíveis para ajudar a educar as crianças sobre finanças pessoais, incluindo livros, jogos e aplicativos. Por exemplo, o [Banco Central do Brasil](https://www.bcb.gov.br) oferece recursos educacionais para crianças e adolescentes, incluindo jogos e atividades interativas.
 
-Além disso, existem aplicativos, como o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026), que podem ajudar as crianças a entender melhor como gerenciar o dinheiro e alcançar os objetivos financeiros. Esses aplicativos podem ser uma ferramenta útil para ensinar finanças pessoais de forma prática e divertida.
+Além disso, existem aplicativos, como o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026), que podem ajudar as crianças a entender melhor como gerenciar o dinheiro e alcançar os objetivos financeiros. Esses aplicativos podem ser uma ferramenta útil para ensinar finanças pessoais de forma prática e divertida.
 
 ![Recursos para educação financeira](/images/posts/educacao-financeira-para-criancas-4.webp)
 

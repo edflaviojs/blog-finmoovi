@@ -46,7 +46,7 @@ Depois de verificar seus gastos, ajuste-os de acordo com suas necessidades e obj
 ### 3. Verifique suas receitas
 Verifique suas receitas dos últimos 6 meses e ajuste-as de acordo com suas necessidades e objetivos. Se você recebeu um aumento de salário, por exemplo, você pode querer aumentar suas economias ou [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-5-junho-2026))-qual-rende-mais-em-2026).
 
-### 4. Ajuste seus [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce)
+### 4. Ajuste seus [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-julho-2026))-qual-e-melhor-para-voce)
 Se você tem [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de [investimento](/posts/montando-carteira-diversificada-com-r-500), verifique se eles ainda estão alinhados com seus objetivos e ajuste-os de acordo. Você pode querer considerar investir em [Tesouro Direto](https://www.tesourodireto.com.br) ou outros [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) de baixo risco.
 
 ## Dicas para manter seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) em ordem
