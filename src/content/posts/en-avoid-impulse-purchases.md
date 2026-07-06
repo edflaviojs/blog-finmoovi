@@ -19,7 +19,7 @@ seo:
 When you're at the mall or browsing the internet, it's easy to get carried away by offers and make impulse purchases. But if you're not careful, these purchases can blow your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and affect your financial stability. Imagine you earn $5,000 per month and spend $1,000 on impulse purchases - that's 20% of your salary!
 
 ## Control Your Spending
-To avoid impulse purchases, it's essential to understand where your [money](/en/posts/creating-an-emergency-fund) is going. **Practical tip:** keep a record of all your [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) for a month, including small purchases like a coffee or a snack. This will help you identify spending patterns and areas where you can cut back on expenses. For example, if you spend $500 per month on restaurants, maybe it's time to start cooking at home.
+To avoid impulse purchases, it's essential to understand where your [money](/en/posts/creating-an-emergency-fund) is going. **Practical tip:** keep a record of all your [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) for a month, including small purchases like a coffee or a snack. This will help you identify spending patterns and areas where you can cut back on [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro). For example, if you spend $500 per month on restaurants, maybe it's time to start cooking at home.
 
 Additionally, it's crucial to have a realistic [budget](/en/posts/50-30-20-rule-complete-guide) and follow a spending plan. This can include allocating a percentage of your salary to fixed expenses, such as rent and bills, and another percentage to variable expenses, such as entertainment and purchases. The [Banco Central do Brasil](https://www.bcb.gov.br) offers useful resources to help you create a [budget](/en/posts/controle-gastos-cartao-credito) and manage your finances.
 
@@ -48,4 +48,4 @@ Now that you know how to avoid impulse purchases, it's time to take action. Reme
 
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and discover where your [money](/en/posts/difference-between-investing-and-saving) is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-[mobills](/en/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and discover where your [money](/en/posts/difference-between-investing-and-saving) is really going.**

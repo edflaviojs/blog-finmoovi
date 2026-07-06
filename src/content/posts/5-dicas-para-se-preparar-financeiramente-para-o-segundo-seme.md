@@ -27,7 +27,7 @@ Agora que você entende sua situação financeira atual, é hora de definir meta
 1. **Seja específico**: Em vez de dizer "eu quero economizar [dinheiro](/posts/cashback-inteligente)", diga "eu quero economizar R$ 1.000,00 para uma viagem".
 2. **Seja realista**: Certifique-se de que suas metas sejam alcançáveis com base em sua situação financeira atual.
 3. **Seja responsável**: Certifique-se de que suas metas estejam alinhadas com seus valores e prioridades.
-4. **Monitore seu progresso**: Use o FinMoovi para registrar seu progresso e fazer ajustes conforme necessário.
+4. **Monitore seu progresso**: Use o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) para registrar seu progresso e fazer ajustes conforme necessário.
 
 ![Entendendo sua Situação Financeira Atual](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-2.webp)
 
@@ -47,7 +47,7 @@ Gerenciar dívidas e gastos é fundamental para alcançar suas metas financeiras
 3. **Corte gastos desnecessários**: Isso inclui gastos com itens que não são essenciais, como compras impulsivas.
 4. **Use o método da "envelope"**: Separe seu [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) em envelopes para diferentes categorias de gastos, como alimentação e transporte.
 
-![Criando um Orçamento para o Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
+![Criando um [Orçamento](/posts/regra-50-30-20-guia-completo) para o Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
 
 

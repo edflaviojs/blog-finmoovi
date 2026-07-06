@@ -20,7 +20,7 @@ seo:
 
 Olá, leitores! É hora de fazer um balanço do que aconteceu no mercado financeiro brasileiro esta semana. Vamos mergulhar nos principais pontos que afetam o seu bolso e as suas finanças.
 
-![Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026](/images/posts/en-quotes-semana-1-july-2026-inline-1.webp)
+![Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026](/images/posts/en-[quotes](/en/posts/quotes-semana-1-june-2026)-semana-1-july-2026-inline-1.webp)
 
 
 
@@ -44,9 +44,9 @@ Para os investidores individuais, uma dica valiosa é manter a diversificação 
 
 Para a próxima semana, é esperado que o mercado continue a acompanhar de perto as decisões econômicas globais e as notícias locais. A estabilidade do dólar e do euro pode continuar, mas é sempre bom estar preparado para possíveis surpresas. Mantenha-se informado sobre as tendências do mercado e ajuste suas estratégias de investimento conforme necessário. Lembre-se de que a previsão é uma ferramenta útil, mas a flexibilidade e a diversificação são suas melhores aliadas no mundo dos investimentos.
 
-Em resumo, esta semana foi marcada pela estabilidade das moedas estrangeiras e pela importância de entender o impacto da Selic nos investimentos. Com as ferramentas certas, como o FinMoovi, e uma abordagem bem pensada, você pode navegar pelo mercado financeiro com mais confiança. Até a próxima semana, quando traremos mais notícias e dicas para ajudá-lo a gerenciar suas finanças de forma eficaz!
+Em resumo, esta semana foi marcada pela estabilidade das moedas estrangeiras e pela importância de entender o impacto da Selic nos investimentos. Com as ferramentas certas, como o [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro), e uma abordagem bem pensada, você pode navegar pelo mercado financeiro com mais confiança. Até a próxima semana, quando traremos mais notícias e dicas para ajudá-lo a gerenciar suas finanças de forma eficaz!
 
 
 ---
-**Ready to track your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/30-day-rule-for-purchases) is going.**
+**Ready to track your [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-selic-qual-e-melhor-para-voce)? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/30-day-rule-for-purchases) is going.**
 

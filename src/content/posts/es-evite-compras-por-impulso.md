@@ -16,7 +16,7 @@ seo:
   keywords: ["cómo evitar compras por impulso","finanzas personales","economía","dinero"]
 ---
 
-Cuando estás en un centro comercial o navegando por internet, es fácil dejarse llevar por las ofertas y compras por impulso. Pero, si no tienes cuidado, estas compras pueden acabar con tu [presupuesto](/es/posts/como-crear-presupuesto-personal) y afectar tu estabilidad financiera. Imagina que ganas R$ 5.000 por mes y gastas R$ 1.000 en compras por impulso - ¡eso es el 20% de tu salario!
+Cuando estás en un centro comercial o navegando por internet, es fácil dejarse llevar por las ofertas y compras por impulso. Pero, si no tienes cuidado, estas compras pueden acabar con tu [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) y afectar tu estabilidad financiera. Imagina que ganas R$ 5.000 por mes y gastas R$ 1.000 en compras por impulso - ¡eso es el 20% de tu salario!
 
 ## Controle tus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 Para evitar compras por impulso, es importante entender dónde está yendo tu [dinero](/es/posts/ahorra-en-las-compras-del-supermercado). **Consejo práctico:** haz un registro de todos tus gastos durante un mes, incluyendo compras pequeñas como un café o un snack. Esto te ayudará a identificar patrones de gasto y áreas donde puedes cortar gastos. Por ejemplo, si gastas R$ 500 por mes en restaurantes, tal vez sea hora de empezar a cocinar en casa.
@@ -48,4 +48,4 @@ Ahora que sabes cómo evitar compras por impulso, es hora de empezar a actuar. R
 
 
 ---
-**El próximo paso es tuyo. [Prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/es/posts/5-alternativas-ao-mobills-em-2026)-em-2026) gratis por 7 días](https://finmoovi.com) y descubre hacia dónde está yendo tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) de verdad.**
+**El próximo paso es tuyo. [Prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/es/posts/5-alternativas-ao-mobills-em-2026)-em-2026) gratis por 7 días](https://[finmoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro).com) y descubre hacia dónde está yendo tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) de verdad.**

@@ -30,7 +30,7 @@ En lo que respecta a las tasas de cambio, el dólar estadounidense (USD) se mant
 
 ## La [Selic](/es/glossario/es-selic) y su Impacto en las Inversiones
 
-La tasa Selic, que es la tasa de interés básica de la economía brasileña fijada por el Comité de Política Monetaria (COPOM) del Banco Central, ha sido un tema de gran interés en la semana. Aunque no hubo cambios significativos en la tasa Selic durante esta semana, es fundamental entender su impacto en las inversiones. La Selic influencia directamente las tasas de interés de los préstamos y depósitos en el país, lo que a su vez afecta la rentabilidad de ciertas inversiones, como los títulos de renta fija. Los inversores deben considerar estos movimientos al tomar decisiones sobre sus carteras de inversiones.
+La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) brasileña fijada por el Comité de Política Monetaria (COPOM) del Banco Central, ha sido un tema de gran interés en la semana. Aunque no hubo cambios significativos en la tasa Selic durante esta semana, es fundamental entender su impacto en las inversiones. La Selic influencia directamente las tasas de interés de los préstamos y depósitos en el país, lo que a su vez afecta la rentabilidad de ciertas inversiones, como los títulos de renta fija. Los inversores deben considerar estos movimientos al tomar decisiones sobre sus carteras de inversiones.
 
 ![La Selic y su Impacto en las Inversiones](/images/posts/es-cotizaciones-semana-1-julio-2026-inline-3.webp)
 
@@ -42,7 +42,7 @@ Para los inversores individuales, es crucial mantener una estrategia diversifica
 
 ## Qué Esperar para la Próxima Semana
 
-En la próxima semana, los inversores deben estar atentos a las decisiones del Banco Central respecto a la tasa Selic, así como a cualquier movimiento significativo en las tasas de cambio. La economía global también juega un papel importante, y eventos como las decisiones de política monetaria en otros países pueden influir en el mercado financiero brasileño. Mantenerse informado y utilizar herramientas de seguimiento de inversiones puede ayudar a los inversores a tomar decisiones informadas y a ajustar sus estrategias según sea necesario.
+En la próxima semana, los inversores deben estar atentos a las decisiones del Banco Central respecto a la tasa Selic, así como a cualquier movimiento significativo en las tasas de cambio. La [economía](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) global también juega un papel importante, y eventos como las decisiones de política monetaria en otros países pueden influir en el mercado financiero brasileño. Mantenerse informado y utilizar herramientas de seguimiento de inversiones puede ayudar a los inversores a tomar decisiones informadas y a ajustar sus estrategias según sea necesario.
 
 En resumen, la semana del 29 de junio al 6 de julio de 2026 ha sido de estabilidad en las tasas de cambio y de atención a las decisiones del Banco Central. Los inversores individuales deben permanecer vigilantes y considerar la diversificación y el seguimiento de sus inversiones como clave para el éxito en el mercado financiero brasileño. Con la ayuda de herramientas como FinMoovi, pueden navegar por el complejo mundo de las inversiones con más confianza y precisión.
 
