@@ -862,5 +862,185 @@
     "target": "https://www.investopedia.com",
     "status": "no-endpoint",
     "sentAt": "2026-07-02T16:06:10.247Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.gov.br/receitafederal",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:31:59.987Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/economize-nas-ferias/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:00.321Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/economize-nas-ferias/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:00.578Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/economize-nas-ferias/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:00.689Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.gov.br/receitafederal",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:01.511Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/avoid-impulse-purchases/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:01.792Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/avoid-impulse-purchases/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:01.936Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/economize-nas-ferias/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:01.961Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/economize-nas-ferias/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:02.059Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/economize-nas-ferias/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:02.236Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/negotiating-discounts-on-fixed-bills/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:02.438Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/negotiating-discounts-on-fixed-bills/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:02.618Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/orcamento-para-casal-dividindo-despesas/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:02.657Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/orcamento-para-casal-dividindo-despesas/",
+    "target": "https://www.gov.br/receitafederal",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:03.483Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme/",
+    "target": "https://www.gov.br/receitafederal",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:04.303Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/economize-nas-ferias/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:04.321Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/economize-nas-ferias/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:04.425Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/economize-nas-ferias/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:04.602Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/evite-compras-por-impulso/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:04.826Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/evite-compras-por-impulso/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:04.987Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/negociar-descuentos-en-cuentas-fijas/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:05.100Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/negociar-descuentos-en-cuentas-fijas/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:05.312Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/orcamento-para-casal-dividindo-despesas/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:05.335Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/orcamento-para-casal-dividindo-despesas/",
+    "target": "https://www.gov.br/receitafederal",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:06.157Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/evite-compras-por-impulso/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:06.296Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/evite-compras-por-impulso/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:06.528Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/negociar-descontos-em-contas-fixas/",
+    "target": "https://www.serasa.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:06.717Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/negociar-descontos-em-contas-fixas/",
+    "target": "https://www.investopedia.com",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:06.802Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/orcamento-para-casal-dividindo-despesas/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:06.819Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/orcamento-para-casal-dividindo-despesas/",
+    "target": "https://www.gov.br/receitafederal",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-07T16:32:07.665Z"
   }
 ]
