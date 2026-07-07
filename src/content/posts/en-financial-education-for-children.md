@@ -22,7 +22,7 @@ Teaching [personal finance](/en/posts/30-day-rule-for-purchases) to children is 
 A practical way to start is by giving children an allowance, which they can use to buy things they want, such as toys or sweets. However, it's essential to teach that the allowance should also be used to save and help with family expenses. For example, if the allowance is R$ 100 per month, the child can decide to save R$ 20 to buy a more expensive toy in the future.
 
 ## Importance of [Economy](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
-The economy is an important concept for children to learn, as it helps them understand that money is not infinite and that it's necessary to make choices about how to use it. For example, if a child wants to buy a new video game that costs R$ 200, they may need to save for several months to reach that goal.
+The [economy](/en/posts/avoid-impulse-purchases) is an important concept for children to learn, as it helps them understand that money is not infinite and that it's necessary to make choices about how to use it. For example, if a child wants to buy a new video game that costs R$ 200, they may need to save for several months to reach that goal.
 
 **Practical tip:** Create a "jar" system for the child, where they can divide their allowance into different jars for different goals, such as a jar for saving, one for spending, and one for donating. This helps visualize financial goals and make conscious choices about how to use money.
 
@@ -33,7 +33,7 @@ The economy is an important concept for children to learn, as it helps them unde
 ## Teaching [Personal Finance](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)
 Teaching [personal finance](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) to children can start with simple concepts, such as the difference between needs and wants. For example, a need is something essential for life, such as food and shelter, while a want is something desired but not necessary, such as a toy.
 
-A way to teach this is by creating a family [budget](/en/posts/50-30-20-rule-complete-guide) that includes basic expenses and financial goals. For example, if the family has a budget of R$ 5,000 per month, it may be necessary to prioritize basic expenses, such as rent and food, and then decide how to use the remaining amount to achieve financial goals.
+A way to teach this is by creating a family [budget](/en/posts/50-30-20-rule-complete-guide) that includes basic expenses and financial goals. For example, if the family has a [budget](/en/posts/controle-gastos-cartao-credito) of R$ 5,000 per month, it may be necessary to prioritize basic expenses, such as rent and food, and then decide how to use the remaining amount to achieve financial goals.
 
 ![Ensino de finanças pessoais](/images/posts/educacao-financeira-para-criancas-3.webp)
 

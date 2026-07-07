@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026
 
-A semana que passou foi marcada por movimentos interessantes no mercado financeiro brasileiro, com o dólar e o euro apresentando tendências que podem influenciar diretamente os investimentos de quem acompanha o mercado. Neste resumo, vamos explorar o que aconteceu com as principais moedas, como a taxa [Selic](/glossario/selic) impactou os investimentos e dar uma dica prática para os investidores pessoa física.
+A semana que passou foi marcada por movimentos interessantes no mercado financeiro brasileiro, com o dólar e o euro apresentando tendências que podem influenciar diretamente os [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) de quem acompanha o mercado. Neste resumo, vamos explorar o que aconteceu com as principais moedas, como a taxa [Selic](/glossario/selic) impactou os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e dar uma dica prática para os investidores pessoa física.
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026](/images/posts/cotacoes-semana-1-julho-2026-inline-1.webp)
 

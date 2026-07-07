@@ -16,7 +16,7 @@ seo:
   keywords: ["presupuesto parejas","dividir gastos","finanzas personales","matrimonio","economía","dividir gastos parejas","finanzas para dos"]
 ---
 
-## Definiendo el Presupuesto
+## Definiendo el [Presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
 Para empezar, es importante entender que un presupuesto eficaz para parejas implica considerar las necesidades, deseos y objetivos financieros de ambos socios. Vamos considerar un ejemplo: João y Maria, una pareja con salarios de R$ 4.000 y R$ 3.500, respectivamente. Ellos necesitan decidir cómo dividir sus gastos de forma justa.
 
 ### Ejemplo de Gastos
@@ -67,4 +67,4 @@ Para mantener el presupuesto bajo control, dedica algunos minutos todos los día
 
 ---
 
-**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/es/posts/5-alternativas-ao-mobills-em-2026)-em-2026) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

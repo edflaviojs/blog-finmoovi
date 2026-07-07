@@ -21,7 +21,7 @@ Ensinar [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-f
 
 Uma forma prática de começar é dar uma mesada para as crianças, que elas podem usar para comprar coisas que querem, como brinquedos ou doces. No entanto, é importante ensinar que a mesada também deve ser usada para economizar e ajudar em despesas da família. Por exemplo, se a mesada for de R$ 100 por mês, a criança pode decidir guardar R$ 20 para comprar um brinquedo mais caro no futuro.
 
-## Importância da economia
+## Importância da [economia](/posts/como-criar-uma-reserva-de-emergencia)
 A economia é um conceito importante para as crianças aprenderem, pois ajuda a entender que o dinheiro não é infinito e que é necessário fazer escolhas sobre como usá-lo. Por exemplo, se uma criança quer comprar um novo jogo de videogame que custa R$ 200, ela pode precisar economizar durante vários meses para alcançar esse objetivo.
 
 **Dica prática:** Crie um sistema de "jarras" para a criança, onde ela pode dividir sua mesada em diferentes jarras para diferentes objetivos, como uma jarra para economizar, uma para gastar e uma para doar. Isso ajuda a visualizar os objetivos financeiros e a fazer escolhas conscientes sobre como usar o dinheiro.
@@ -33,7 +33,7 @@ A economia é um conceito importante para as crianças aprenderem, pois ajuda a 
 ## Ensino de [finanças pessoais](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 O ensino de [finanças pessoais](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) para crianças pode começar com conceitos simples, como a diferença entre necessidades e desejos. Por exemplo, uma necessidade é algo que é essencial para a vida, como comida e abrigo, enquanto um desejo é algo que é querido, mas não necessário, como um brinquedo.
 
-Uma forma de ensinar isso é criar um orçamento familiar que inclua as despesas básicas e os objetivos financeiros. Por exemplo, se a família tem um orçamento de R$ 5.000 por mês, pode ser necessário priorizar as despesas básicas, como aluguel e comida, e depois decidir como usar o restante para alcançar os objetivos financeiros.
+Uma forma de ensinar isso é criar um [orçamento](/posts/como-criar-orcamento-pessoal) familiar que inclua as despesas básicas e os objetivos financeiros. Por exemplo, se a família tem um orçamento de R$ 5.000 por mês, pode ser necessário priorizar as despesas básicas, como aluguel e comida, e depois decidir como usar o restante para alcançar os objetivos financeiros.
 
 ![Ensino de finanças pessoais](/images/posts/educacao-financeira-para-criancas-3.webp)
 

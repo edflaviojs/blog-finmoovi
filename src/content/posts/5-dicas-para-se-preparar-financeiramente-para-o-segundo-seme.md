@@ -38,7 +38,7 @@ Agora que você tem metas financeiras definidas, é hora de criar um [orçamento
 1. **Aloque 50% de sua renda para necessidades básicas**: Isso inclui gastos com moradia, alimentação, transporte e serviços essenciais.
 2. **Aloque 30% de sua renda para desejos**: Isso inclui gastos com lazer, entretenimento e hobbies.
 3. **Aloque 20% de sua renda para metas financeiras**: Isso inclui gastos com [economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), dívidas e [fundos](/glossario/fundos) de emergência.
-4. **Revisite seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) regularmente**: Use o FinMoovi para revisitar seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) e fazer ajustes conforme necessário.
+4. **Revisite seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) regularmente**: Use o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) para revisitar seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) e fazer ajustes conforme necessário.
 
 ## Gerenciando Dívidas e Gastos
 Gerenciar dívidas e gastos é fundamental para alcançar suas metas financeiras. Aqui estão algumas dicas para ajudá-lo a gerenciar dívidas e gastos:

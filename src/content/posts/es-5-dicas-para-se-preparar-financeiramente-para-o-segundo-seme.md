@@ -38,7 +38,7 @@ Ahora que tienes metas financieras definidas, es hora de crear un [presupuesto](
 1. **Asigna el 50% de tu renta para necesidades básicas**: Esto incluye gastos con vivienda, alimentación, transporte y servicios esenciales.
 2. **Asigna el 30% de tu renta para deseos**: Esto incluye gastos con ocio, entretenimiento y hobbies.
 3. **Asigna el 20% de tu renta para metas financieras**: Esto incluye gastos con [ahorro](/es/posts/ahorra-en-las-compras-del-supermercado), deudas y fondos de emergencia.
-4. **Revisa tu [presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) regularmente**: Usa el FinMoovi para revisar tu presupuesto y hacer ajustes según sea necesario.
+4. **Revisa tu [presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) regularmente**: Usa el FinMoovi para revisar tu [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/reducir-gastos-fijos-mensuales)-personal) y hacer ajustes según sea necesario.
 
 ## Gestionando Deudas y Gastos
 Gestionar deudas y gastos es fundamental para alcanzar tus metas financieras. Aquí te presentamos algunas sugerencias para ayudarte a gestionar deudas y gastos:

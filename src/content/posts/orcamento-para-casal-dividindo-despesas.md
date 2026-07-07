@@ -16,7 +16,7 @@ seo:
   keywords: ["orçamento casal","dividir despesas","finanças pessoais","casamento","economia","dividir despesas casal","finanças a dois"]
 ---
 
-## Definindo o Orçamento
+## Definindo o [Orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
 Para começar, é importante entender que um orçamento eficaz para casais envolve a consideração das necessidades, desejos e objetivos financeiros de ambos os parceiros. Vamos considerar um exemplo: João e Maria, um casal com salários de R$ 4.000 e R$ 3.500, respectivamente. Eles precisam decidir como dividir suas despesas de forma justa.
 
 ### Exemplo de Despesas
@@ -67,4 +67,4 @@ Para manter o orçamento sob controle, dedique alguns minutos todos os dias para
 
 ---
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

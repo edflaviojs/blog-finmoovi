@@ -21,8 +21,8 @@ Enseñar [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-
 
 Una forma práctica de comenzar es dar una mesada a los niños, que ellos pueden utilizar para comprar cosas que quieren, como juguetes o dulces. Sin embargo, es importante enseñar que la mesada también debe ser utilizada para ahorrar y ayudar en gastos de la familia. Por ejemplo, si la mesada es de R$ 100 por mes, el niño puede decidir guardar R$ 20 para comprar un juguete más caro en el futuro.
 
-## Importancia de la economía
-La economía es un concepto importante para que los niños aprendan, ya que ayuda a entender que el dinero no es infinito y que es necesario tomar decisiones sobre cómo utilizarlo. Por ejemplo, si un niño quiere comprar un nuevo juego de videojuegos que cuesta R$ 200, él puede necesitar ahorrar durante varios meses para alcanzar ese objetivo.
+## Importancia de la [economía](/es/posts/ahorrando-en-la-cuenta-de-energia)
+La [economía](/es/posts/ahorrando-en-la-cuenta-del-mercado) es un concepto importante para que los niños aprendan, ya que ayuda a entender que el dinero no es infinito y que es necesario tomar decisiones sobre cómo utilizarlo. Por ejemplo, si un niño quiere comprar un nuevo juego de videojuegos que cuesta R$ 200, él puede necesitar ahorrar durante varios meses para alcanzar ese objetivo.
 
 **Consejo práctico:** Crea un sistema de "tarros" para el niño, donde él puede dividir su mesada en diferentes tarros para diferentes objetivos, como un tarro para ahorrar, uno para gastar y uno para donar. Esto ayuda a visualizar los objetivos financieros y a tomar decisiones conscientes sobre cómo utilizar el dinero.
 

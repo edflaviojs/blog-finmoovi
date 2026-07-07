@@ -16,7 +16,7 @@ seo:
   keywords: ["couple's budget","dividing expenses","personal finance","marriage","economy","couple's expenses","finance for two"]
 ---
 
-## Defining the Budget
+## Defining the [Budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
 To start, it's essential to understand that an effective budget for couples involves considering the needs, desires, and financial goals of both partners. Let's consider an example: João and Maria, a couple with salaries of R$ 4,000 and R$ 3,500, respectively. They need to decide how to divide their expenses fairly.
 
 ### Example of Expenses
@@ -59,7 +59,7 @@ Here are the steps to organize the budget:
 To keep finances in order, it's crucial to have a control system. This can include using electronic spreadsheets or financial apps. The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information on [financial management](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) and planning.
 
 ## Start with 5 minutes a day
-To keep the budget under control, dedicate a few minutes each day to review expenses and update the budget. This can be done during breakfast or before bed. Remember that the key to success is consistency and communication between partners. Visit the [Receita Federal](https://www.gov.br/receitafederal) website for more information on financial planning and taxation.
+To keep the budget under control, dedicate a few minutes each day to review expenses and update the budget. This can be done during breakfast or before bed. Remember that the key to success is consistency and communication between partners. Visit the [Receita Federal](https://www.gov.br/receitafederal) website for more information on [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) and taxation.
 
 ![Gerenciando as Finanças](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
 
