@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026
 
-A semana que passou foi marcada por movimentos interessantes no mercado financeiro brasileiro, com o dólar e o euro apresentando tendências que podem influenciar diretamente os [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) de quem acompanha o mercado. Neste resumo, vamos explorar o que aconteceu com as principais moedas, como a taxa [Selic](/glossario/selic) impactou os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e dar uma dica prática para os investidores pessoa física.
+A semana que passou foi marcada por movimentos interessantes no mercado financeiro brasileiro, com o [dólar](/posts/cotacoes-semana-1-junho-2026) e o euro apresentando tendências que podem influenciar diretamente os [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-selic-qual-e-melhor-para-voce) de quem acompanha o mercado. Neste resumo, vamos explorar o que aconteceu com as principais moedas, como a taxa [Selic](/glossario/selic) impactou os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e dar uma dica prática para os investidores pessoa física.
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026](/images/posts/cotacoes-semana-1-julho-2026-inline-1.webp)
 
@@ -30,7 +30,7 @@ Durante a semana de 29/06/2026 a 06/07/2026, o dólar americano (USD) fechou em 
 
 A tendência de estabilidade pode ser vista como uma oportunidade para os investidores que estão considerando investir em ativos em moedas estrangeiras. No entanto, é fundamental manter um olho atento às notícias econômicas e políticas, pois elas podem alterar rapidamente o cenário.
 
-## Comentário sobre a Selic e Impacto nos Investimentos
+## Comentário sobre a Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
 
 A taxa Selic, que é a taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator crucial para os investimentos. A decisão do Comitê de Política Monetária (COPOM) de manter ou alterar a Selic pode influenciar diretamente os juros dos investimentos, como CDBs, [LCI e LCA](/glossario/lci-e-lca), e também afeta a atratividade dos investimentos em [renda fixa](/glossario/renda-fixa).
 

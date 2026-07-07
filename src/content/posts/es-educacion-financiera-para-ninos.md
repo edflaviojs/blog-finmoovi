@@ -17,7 +17,7 @@ seo:
 ---
 
 ## [Educación financiera](/es/glossario/es-educacao-financeira) básica
-Enseñar [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) a niños es esencial para que desarrollen hábitos saludables en relación con el dinero. Esto comienza con la comprensión básica de que el dinero no es infinito y que es necesario trabajar para ganar. Por ejemplo, si un padre gana R$ 5.000 por mes y la familia gasta R$ 3.000 en gastos básicos, el niño puede comenzar a entender que el resto puede ser utilizado para ahorrar o invertir.
+Enseñar [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) a niños es esencial para que desarrollen hábitos saludables en relación con el [dinero](/es/posts/ahorrando-en-las-compras-del-supermercado). Esto comienza con la comprensión básica de que el [dinero](/es/posts/cashback-inteligente) no es infinito y que es necesario trabajar para ganar. Por ejemplo, si un padre gana R$ 5.000 por mes y la familia gasta R$ 3.000 en gastos básicos, el niño puede comenzar a entender que el resto puede ser utilizado para ahorrar o invertir.
 
 Una forma práctica de comenzar es dar una mesada a los niños, que ellos pueden utilizar para comprar cosas que quieren, como juguetes o dulces. Sin embargo, es importante enseñar que la mesada también debe ser utilizada para ahorrar y ayudar en gastos de la familia. Por ejemplo, si la mesada es de R$ 100 por mes, el niño puede decidir guardar R$ 20 para comprar un juguete más caro en el futuro.
 

@@ -28,7 +28,7 @@ Antes de mais nada, é fundamental ter um planejamento financeiro sólido. Isso 
 Aqui estão algumas dicas práticas para economizar nas férias de julho:
 - Planeje com antecedência: Quanto mais cedo você planejar, mais chances terá de encontrar ofertas e descontos.
 - Escolha destinos mais acessíveis: Em vez de escolher destinos internacionais, considere opções nacionais que sejam mais baratas.
-- Use aplicativos de viagem: O app FinMoovi, por exemplo, pode ajudar a encontrar ofertas e descontos em passagens e hospedagens.
+- Use aplicativos de viagem: O app [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026), por exemplo, pode ajudar a encontrar ofertas e descontos em passagens e hospedagens.
 - Cozinhe em vez de comer fora: Se você estiver em um apartamento ou casa, cozinhe em vez de comer fora para economizar dinheiro.
 - Evite gastos desnecessários: Seja consciente dos seus gastos e evite comprar coisas desnecessárias.
 
@@ -39,7 +39,7 @@ Aqui estão algumas dicas práticas para economizar nas férias de julho:
 ## Orçamento e Controle de Gastos
 Um orçamento bem definido e o controle de gastos são fundamentais para economizar nas férias. É importante ter uma ideia clara de quanto você pode gastar e onde você pode cortar gastos desnecessários. O [Banco Central do Brasil](https://www.bcb.gov.br) oferece dicas e ferramentas para ajudar a gerenciar o orçamento e controlar os gastos.
 
-## Investimentos e Poupança
+## Investimentos e [Poupança](/glossario/poupanca)
 Além de economizar nas férias, é importante pensar em investimentos e poupança para o futuro. O [Tesouro Direto](https://www.tesourodireto.com.br) é uma opção de investimento segura e rentável para os brasileiros. Além disso, é importante ter uma poupança para emergências e imprevistos.
 
 ![Orçamento e Controle de Gastos](/images/posts/economize-nas-ferias-4.webp)

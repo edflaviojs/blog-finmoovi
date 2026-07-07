@@ -19,7 +19,7 @@ translate: true
 ---
 
 ## Introduction
-The July vacation is a highly anticipated time for many Brazilians, an opportunity to relax, travel, and enjoy time with family and friends. However, it's common for these periods of leisure to be accompanied by excessive spending, compromising the family budget and generating financial stress. In this article, we'll explore practical tips to save money on your July vacation without sacrificing fun.
+The July vacation is a highly anticipated time for many Brazilians, an opportunity to relax, travel, and enjoy time with family and friends. However, it's common for these periods of leisure to be accompanied by excessive spending, compromising the family budget and generating financial stress. In this article, we'll explore practical tips to save [money](/en/posts/30-day-rule-for-purchases) on your July vacation without sacrificing fun.
 
 ## Financial Planning
 First and foremost, it's essential to have a solid financial plan. This includes defining a budget for the vacation, considering all possible expenses, from transportation and accommodation to food and activities. A practical example is the case of a family of four, with a monthly salary of R$ 8,000.00. If they decide to travel to the Northeast, the cost of airfare can range from R$ 500.00 to R$ 1,000.00 per person, depending on the time and airline. Additionally, the cost of accommodation can range from R$ 100.00 to R$ 300.00 per night, depending on the type of accommodation chosen.
@@ -28,7 +28,7 @@ First and foremost, it's essential to have a solid financial plan. This includes
 Here are some practical tips to save money on your July vacation:
 - Plan ahead: The earlier you plan, the more chances you'll have to find deals and discounts.
 - Choose more affordable destinations: Instead of choosing international destinations, consider national options that are more affordable.
-- Use travel apps: The FinMoovi app, for example, can help you find deals and discounts on transportation and accommodation.
+- Use travel apps: The [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) app, for example, can help you find deals and discounts on transportation and accommodation.
 - Cook instead of eating out: If you're in an apartment or house, cook instead of eating out to save money.
 - Avoid unnecessary expenses: Be aware of your spending and avoid buying unnecessary things.
 

@@ -30,7 +30,7 @@ To maximize your cashback, it's crucial to understand how it works and how you c
 
 
 ## Avoiding traps
-Although cashback can be a great way to save [money](/en/posts/30-day-rule-for-purchases), it's essential to be aware of the traps. For example, some cashback programs may have high fees or interest rates, so it's crucial to read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is not a substitute for responsible financial management. It's crucial to have a budget and prioritize your expenses before making purchases. You can learn more about responsible financial management on the [Banco Central do Brasil](https://www.bcb.gov.br) website.
+Although cashback can be a great way to save [money](/en/posts/30-day-rule-for-purchases), it's essential to be aware of the traps. For example, some cashback programs may have high fees or interest rates, so it's crucial to read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is not a substitute for responsible [financial management](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su). It's crucial to have a [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and prioritize your expenses before making purchases. You can learn more about responsible financial management on the [Banco Central do Brasil](https://www.bcb.gov.br) website.
 
 ![Maximizando o seu cashback](/images/posts/cashback-inteligente-3.webp)
 

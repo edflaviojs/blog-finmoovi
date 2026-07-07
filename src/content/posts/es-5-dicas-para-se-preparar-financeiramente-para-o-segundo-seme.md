@@ -47,7 +47,7 @@ Gestionar deudas y gastos es fundamental para alcanzar tus metas financieras. Aq
 3. **Corta gastos innecesarios**: Esto incluye gastos con artículos que no son esenciales, como compras impulsivas.
 4. **Usa el método de la "envelope"**: Separa tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) en sobres para diferentes categorías de gastos, como alimentación y transporte.
 
-![Creando un Presupuesto para el Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
+![Creando un [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal) para el Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
 
 

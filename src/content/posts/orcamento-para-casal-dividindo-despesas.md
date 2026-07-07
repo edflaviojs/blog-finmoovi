@@ -16,7 +16,7 @@ seo:
   keywords: ["orçamento casal","dividir despesas","finanças pessoais","casamento","economia","dividir despesas casal","finanças a dois"]
 ---
 
-## Definindo o [Orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
+## Definindo o [Orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias)
 Para começar, é importante entender que um orçamento eficaz para casais envolve a consideração das necessidades, desejos e objetivos financeiros de ambos os parceiros. Vamos considerar um exemplo: João e Maria, um casal com salários de R$ 4.000 e R$ 3.500, respectivamente. Eles precisam decidir como dividir suas despesas de forma justa.
 
 ### Exemplo de Despesas
@@ -59,7 +59,7 @@ Aqui estão os passos para organizar o orçamento:
 Para manter as finanças em ordem, é crucial ter um sistema de controle. Isso pode incluir o uso de planilhas eletrônicas ou aplicativos financeiros. O [Banco Central do Brasil](https://www.bcb.gov.br) oferece informações valiosas sobre gestão financeira e planejamento.
 
 ## Comece com 5 minutos por dia
-Para manter o orçamento sob controle, dedique alguns minutos todos os dias para revisar as despesas e atualizar o orçamento. Isso pode ser feito durante o café da manhã ou antes de dormir. Lembre-se de que a chave para o sucesso é a consistência e a comunicação entre os parceiros. Visite o site da [Receita Federal](https://www.gov.br/receitafederal) para obter mais informações sobre planejamento financeiro e tributação.
+Para manter o orçamento sob controle, dedique alguns minutos todos os dias para revisar as despesas e atualizar o orçamento. Isso pode ser feito durante o café da manhã ou antes de dormir. Lembre-se de que a chave para o sucesso é a consistência e a comunicação entre os parceiros. Visite o site da [Receita Federal](https://www.gov.br/receitafederal) para obter mais informações sobre [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e tributação.
 
 ![Gerenciando as Finanças](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
 

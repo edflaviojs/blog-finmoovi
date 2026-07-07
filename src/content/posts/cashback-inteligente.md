@@ -30,7 +30,7 @@ Para maximizar o seu cashback, é importante entender como ele funciona e como v
 
 
 ## Evitando armadilhas
-Embora o cashback possa ser uma ótima maneira de economizar dinheiro, é importante estar ciente das armadilhas. Por exemplo, alguns programas de cashback podem ter taxas ou [juros](/glossario/juros) altos, então é importante ler os termos e condições antes de se inscrever. Além disso, é importante lembrar que o cashback não é um substituto para uma gestão financeira responsável. É importante ter um orçamento e priorizar suas despesas antes de fazer compras. Você pode aprender mais sobre gestão financeira responsável no site do [Banco Central do Brasil](https://www.bcb.gov.br).
+Embora o cashback possa ser uma ótima maneira de economizar dinheiro, é importante estar ciente das armadilhas. Por exemplo, alguns programas de cashback podem ter taxas ou [juros](/glossario/juros) altos, então é importante ler os termos e condições antes de se inscrever. Além disso, é importante lembrar que o cashback não é um substituto para uma gestão financeira responsável. É importante ter um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) e priorizar suas despesas antes de fazer compras. Você pode aprender mais sobre gestão financeira responsável no site do [Banco Central do Brasil](https://www.bcb.gov.br).
 
 ![Maximizando o seu cashback](/images/posts/cashback-inteligente-3.webp)
 
@@ -44,4 +44,4 @@ Agora que você sabe como usar cashback de forma inteligente, é hora de começa
 
 
 ---
-**Quer colocar isso em prática? [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) e veja como é fácil controlar suas finanças com categorização automática e relatórios visuais.**
+**Quer colocar isso em prática? [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://finmoovi.com) e veja como é fácil controlar suas finanças com categorização automática e relatórios visuais.**

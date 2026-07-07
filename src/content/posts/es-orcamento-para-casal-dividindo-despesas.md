@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Definiendo el [Presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-Para empezar, es importante entender que un presupuesto eficaz para parejas implica considerar las necesidades, deseos y objetivos financieros de ambos socios. Vamos considerar un ejemplo: João y Maria, una pareja con salarios de R$ 4.000 y R$ 3.500, respectivamente. Ellos necesitan decidir cómo dividir sus gastos de forma justa.
+Para empezar, es importante entender que un presupuesto eficaz para parejas implica considerar las necesidades, deseos y objetivos financieros de ambos socios. Vamos considerar un ejemplo: João y Maria, una pareja con salarios de R$ 4.000 y R$ 3.500, respectivamente. Ellos necesitan decidir cómo dividir sus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) de forma justa.
 
 ### Ejemplo de Gastos
 Aquí está una tabla con los gastos mensuales de la pareja:
@@ -59,7 +59,7 @@ Aquí están los pasos para organizar el presupuesto:
 Para mantener las finanzas en orden, es crucial tener un sistema de control. Esto puede incluir el uso de hojas de cálculo electrónicas o aplicaciones financieras. El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre gestión financiera y planificación.
 
 ## Comienza con 5 minutos por día
-Para mantener el presupuesto bajo control, dedica algunos minutos todos los días para revisar los gastos y actualizar el presupuesto. Esto puede hacerse durante el desayuno o antes de dormir. Recuerda que la clave para el éxito es la consistencia y la comunicación entre los socios. Visita el sitio web de la [Receita Federal](https://www.gov.br/receitafederal) para obtener más información sobre planificación financiera y tributación.
+Para mantener el presupuesto bajo control, dedica algunos minutos todos los días para revisar los gastos y actualizar el presupuesto. Esto puede hacerse durante el desayuno o antes de dormir. Recuerda que la clave para el éxito es la consistencia y la comunicación entre los socios. Visita el sitio web de la [Receita Federal](https://www.gov.br/receitafederal) para obtener más información sobre [planificación financiera](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) y tributación.
 
 ![Gestionando las Finanzas](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
 

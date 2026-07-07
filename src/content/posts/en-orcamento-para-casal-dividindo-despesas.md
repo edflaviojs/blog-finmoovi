@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Defining the [Budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-To start, it's essential to understand that an effective budget for couples involves considering the needs, desires, and financial goals of both partners. Let's consider an example: João and Maria, a couple with salaries of R$ 4,000 and R$ 3,500, respectively. They need to decide how to divide their expenses fairly.
+To start, it's essential to understand that an effective [budget](/en/posts/50-30-20-rule-complete-guide) for couples involves considering the needs, desires, and financial goals of both partners. Let's consider an example: João and Maria, a couple with salaries of R$ 4,000 and R$ 3,500, respectively. They need to decide how to divide their expenses fairly.
 
 ### Example of Expenses
 Here is a table with the couple's monthly expenses:
@@ -42,7 +42,7 @@ A common way to divide expenses is to consider the proportion of salaries. In th
 
 Based on this, they can calculate each person's share of each expense category.
 
-## Organizing the Budget
+## Organizing the [Budget](/en/posts/controle-gastos-cartao-credito)
 Here are the steps to organize the budget:
 1. **List all expenses**: Include all fixed and variable expenses.
 2. **Define the proportion**: Calculate the proportion of salaries to divide expenses.
