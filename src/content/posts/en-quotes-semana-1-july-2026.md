@@ -20,7 +20,7 @@ seo:
 
 Olá, leitores! É hora de fazer um balanço do que aconteceu no mercado financeiro brasileiro esta semana. Vamos mergulhar nos principais pontos que afetam o seu bolso e as suas finanças.
 
-![Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026](/images/posts/en-[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-4-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-1-july-2026-inline-1.webp)
+![Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026](/images/posts/en-[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-4-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-1-july-2026-inline-1.webp)
 
 
 

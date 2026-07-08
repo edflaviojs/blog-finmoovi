@@ -37,11 +37,11 @@ Although cashback can be a great way to save [money](/en/posts/30-day-rule-for-p
 
 
 ## Start today
-Now that you know how to use cashback intelligently, it's time to start saving [money](/en/posts/avoid-impulse-purchases). Remember to choose a cashback program that suits your needs and read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is only part of responsible financial management. You can learn more about responsible financial management on the [Investopedia](https://www.investopedia.com) website.
+Now that you know how to use cashback intelligently, it's time to start [saving](/en/posts/criar-reserva-de-emergencia) [money](/en/posts/avoid-impulse-purchases). Remember to choose a cashback program that suits your needs and read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is only part of responsible financial management. You can learn more about responsible financial management on the [Investopedia](https://www.investopedia.com) website.
 
 ![Evitando armadilhas](/images/posts/cashback-inteligente-4.webp)
 
 
 
 ---
-**Want to put this into practice? [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with automatic categorization and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) and see how easy it is to control your finances with automatic categorization and visual reports.**

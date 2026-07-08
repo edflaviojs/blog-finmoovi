@@ -47,7 +47,7 @@ Here are the steps to organize the [budget](/en/posts/how-to-create-personal-[bu
 1. **List all expenses**: Include all fixed and variable expenses.
 2. **Define the proportion**: Calculate the proportion of salaries to divide expenses.
 3. **Assign values**: Assign the corresponding value to each expense based on the defined proportion.
-4. **Review and adjust**: Review the budget regularly and adjust as necessary.
+4. **Review and adjust**: Review the [budget](/en/posts/how-to-create-personal-budget) regularly and adjust as necessary.
 
 **Practical tip:** It's essential to have a reserve for unexpected expenses. A good rule is to reserve between 10% and 20% of the total budget for emergencies.
 
@@ -67,4 +67,4 @@ To keep the budget under control, dedicate a few minutes each day to review expe
 
 ---
 
-**Want to automate this control? [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) — it automatically categorizes expenses and generates reports without effort.**
+**Want to automate this control? [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) — it automatically categorizes expenses and generates reports without effort.**

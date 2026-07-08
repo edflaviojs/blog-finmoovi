@@ -42,7 +42,7 @@ Una forma común de dividir los gastos es considerar la proporción de los salar
 
 Con base en esto, ellos pueden calcular la parte de cada uno en cada categoría de gasto.
 
-## Organizando el Presupuesto
+## Organizando el [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal)
 Aquí están los pasos para organizar el presupuesto:
 1. **Lista todos los gastos**: Incluye todos los gastos fijos y variables.
 2. **Define la proporción**: Calcula la proporción de los salarios para dividir los gastos.

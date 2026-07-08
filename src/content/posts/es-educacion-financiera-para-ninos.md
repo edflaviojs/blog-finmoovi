@@ -24,7 +24,7 @@ Una forma práctica de comenzar es dar una mesada a los niños, que ellos pueden
 ## Importancia de la [economía](/es/posts/ahorrando-en-la-cuenta-de-energia)
 La [economía](/es/posts/ahorrando-en-la-cuenta-del-mercado) es un concepto importante para que los niños aprendan, ya que ayuda a entender que el [dinero](/es/posts/como-crear-una-reserva-de-emergencia) no es infinito y que es necesario tomar decisiones sobre cómo utilizarlo. Por ejemplo, si un niño quiere comprar un nuevo juego de videojuegos que cuesta R$ 200, él puede necesitar ahorrar durante varios meses para alcanzar ese objetivo.
 
-**Consejo práctico:** Crea un sistema de "tarros" para el niño, donde él puede dividir su mesada en diferentes tarros para diferentes objetivos, como un tarro para ahorrar, uno para gastar y uno para donar. Esto ayuda a visualizar los objetivos financieros y a tomar decisiones conscientes sobre cómo utilizar el dinero.
+**Consejo práctico:** Crea un sistema de "tarros" para el niño, donde él puede dividir su mesada en diferentes tarros para diferentes objetivos, como un tarro para ahorrar, uno para gastar y uno para donar. Esto ayuda a visualizar los objetivos financieros y a tomar decisiones conscientes sobre cómo utilizar el [dinero](/es/posts/consejos-para-controlar-gastos-en-la-tarjeta-de-credito).
 
 ![Importancia de la economía](/images/posts/educacao-financeira-para-criancas-2.webp)
 
@@ -33,7 +33,7 @@ La [economía](/es/posts/ahorrando-en-la-cuenta-del-mercado) es un concepto impo
 ## Enseñanza de [finanzas personales](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 La enseñanza de [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) a niños puede comenzar con conceptos simples, como la diferencia entre necesidades y deseos. Por ejemplo, una necesidad es algo que es esencial para la vida, como comida y refugio, mientras que un deseo es algo que se quiere, pero no es necesario, como un juguete.
 
-Una forma de enseñar esto es crear un [presupuesto](/es/posts/como-crear-presupuesto-personal) familiar que incluya los gastos básicos y los objetivos financieros. Por ejemplo, si la familia tiene un presupuesto de R$ 5.000 por mes, puede ser necesario priorizar los gastos básicos, como alquiler y comida, y después decidir cómo utilizar el resto para alcanzar los objetivos financieros.
+Una forma de enseñar esto es crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/controle-gastos-cartao-credito)-personal) familiar que incluya los gastos básicos y los objetivos financieros. Por ejemplo, si la familia tiene un presupuesto de R$ 5.000 por mes, puede ser necesario priorizar los gastos básicos, como alquiler y comida, y después decidir cómo utilizar el resto para alcanzar los objetivos financieros.
 
 ![Enseñanza de finanzas personales](/images/posts/educacao-financeira-para-criancas-3.webp)
 

@@ -43,11 +43,11 @@ Uma forma comum de dividir as despesas é considerar a proporção dos salários
 Com base nisso, eles podem calcular a parcela de cada um em cada categoria de despesa.
 
 ## Organizando o [Orçamento](/posts/como-criar-orcamento-pessoal)
-Aqui estão os passos para organizar o orçamento:
+Aqui estão os passos para organizar o [orçamento](/posts/controle-gastos-cartao-credito):
 1. **Liste todas as despesas**: Inclua todas as despesas fixas e variáveis.
 2. **Defina a proporção**: Calcule a proporção dos salários para dividir as despesas.
 3. **Atribua valores**: Atribua o valor correspondente a cada despesa com base na proporção definida.
-4. **Revisite e ajuste**: Revisite o orçamento regularmente e ajuste conforme necessário.
+4. **Revisite e ajuste**: Revisite o [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro) regularmente e ajuste conforme necessário.
 
 **Dica prática:** É importante ter uma reserva para imprevistos. Uma boa regra é reservar entre 10% a 20% do orçamento total para emergências.
 
