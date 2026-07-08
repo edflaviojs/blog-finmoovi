@@ -42,14 +42,14 @@ Uma forma de ensinar isso é criar um [orçamento](/posts/como-criar-orcamento-p
 ## Recursos para educação financeira
 Existem muitos recursos disponíveis para ajudar a educar as crianças sobre [finanças pessoais](/posts/7-erros-financeiros-iniciante), incluindo livros, jogos e aplicativos. Por exemplo, o [Banco Central do Brasil](https://www.bcb.gov.br) oferece recursos educacionais para crianças e adolescentes, incluindo jogos e atividades interativas.
 
-Além disso, existem aplicativos, como o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026), que podem ajudar as crianças a entender melhor como gerenciar o dinheiro e alcançar os objetivos financeiros. Esses aplicativos podem ser uma ferramenta útil para ensinar [finanças pessoais](/posts/cashback-inteligente) de forma prática e divertida.
+Além disso, existem aplicativos, como o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026), que podem ajudar as crianças a entender melhor como gerenciar o [dinheiro](/posts/economizar-nas-compras-do-supermercado) e alcançar os objetivos financeiros. Esses aplicativos podem ser uma ferramenta útil para ensinar [finanças pessoais](/posts/cashback-inteligente) de forma prática e divertida.
 
 ![Recursos para educação financeira](/images/posts/educacao-financeira-para-criancas-4.webp)
 
 
 
 ## Comece hoje
-Não é necessário ser um especialista em finanças para ensinar as crianças sobre dinheiro. O importante é começar a conversar sobre o assunto e encontrar formas práticas de ensinar conceitos financeiros. Com um pouco de criatividade e paciência, é possível ajudar as crianças a desenvolver hábitos saudáveis em relação ao dinheiro e promover uma educação financeira sólida desde cedo.
+Não é necessário ser um especialista em finanças para ensinar as crianças sobre [dinheiro](/posts/economize-na-conta-de-energia). O importante é começar a conversar sobre o assunto e encontrar formas práticas de ensinar conceitos financeiros. Com um pouco de criatividade e paciência, é possível ajudar as crianças a desenvolver hábitos saudáveis em relação ao dinheiro e promover uma educação financeira sólida desde cedo.
 
 ---
 

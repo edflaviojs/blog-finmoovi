@@ -42,7 +42,7 @@ A way to teach this is by creating a family [budget](/en/posts/50-30-20-rule-com
 ## Resources for Financial Education
 There are many resources available to help educate children about [personal finance](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), including books, games, and apps. For example, the [Banco Central do Brasil](https://www.bcb.gov.br) offers educational resources for children and teenagers, including games and interactive activities.
 
-Additionally, there are apps, such as [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026), that can help children better understand how to manage money and achieve financial goals. These apps can be a useful tool for teaching [personal finance](/en/posts/7-financial-mistakes-beginners) in a practical and fun way.
+Additionally, there are apps, such as [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026), that can help children better understand how to manage [money](/en/posts/negotiating-discounts-on-fixed-bills) and achieve financial goals. These apps can be a useful tool for teaching [personal finance](/en/posts/7-financial-mistakes-beginners) in a practical and fun way.
 
 ![Recursos para educação financeira](/images/posts/educacao-financeira-para-criancas-4.webp)
 
@@ -53,4 +53,4 @@ You don't need to be a finance expert to teach children about money. The importa
 
 ---
 
-**Want to put this into practice? [Test FinMoovi for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with automatic categorization and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with automatic categorization and visual reports.**

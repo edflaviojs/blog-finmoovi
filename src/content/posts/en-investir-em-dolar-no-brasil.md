@@ -69,10 +69,10 @@ Before investing in dollars, it's essential to consider the following precaution
 For more information on dollar investment, you can visit the website of the [Banco Central do Brasil](https://www.bcb.gov.br) or the [Tesouro Direto](https://www.tesourodireto.com.br).
 
 ## Next Steps
-Now that you better understand how to invest in dollars in Brazil, it's essential to assess whether it makes sense for your investor profile and financial goals. Consider investing in dollars as a way to diversify your investment portfolio and protect your assets against fluctuations in the Brazilian economy. Additionally, remember that investing in dollars involves risks and it's essential to consider these risks before investing.
+Now that you better understand how to invest in dollars in Brazil, it's essential to assess whether it makes sense for your investor profile and financial goals. Consider investing in dollars as a way to diversify your investment portfolio and protect your assets against fluctuations in the Brazilian [economy](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Additionally, remember that investing in dollars involves risks and it's essential to consider these risks before investing.
 
 ![Next Steps](/images/posts/investir-em-dolar-no-brasil-6.webp)
 
 
 
-To track your investments in one place, [try [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.
+To track your investments in one place, [try [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — multi-currency, intelligent reports, and 100% offline.

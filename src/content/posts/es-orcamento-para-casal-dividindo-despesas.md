@@ -43,7 +43,7 @@ Una forma común de dividir los gastos es considerar la proporción de los salar
 Con base en esto, ellos pueden calcular la parte de cada uno en cada categoría de gasto.
 
 ## Organizando el [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal)
-Aquí están los pasos para organizar el presupuesto:
+Aquí están los pasos para organizar el [presupuesto](/es/posts/como-crear-presupuesto-personal):
 1. **Lista todos los gastos**: Incluye todos los gastos fijos y variables.
 2. **Define la proporción**: Calcula la proporción de los salarios para dividir los gastos.
 3. **Asigna valores**: Asigna el valor correspondiente a cada gasto con base en la proporción definida.
@@ -67,4 +67,4 @@ Para mantener el presupuesto bajo control, dedica algunos minutos todos los día
 
 ---
 
-**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/es/posts/5-alternativas-ao-mobills-em-2026)-em-2026) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/es/posts/5-alternativas-ao-mobills-em-2026)-em-2026) gratis por 7 días](https://[finmoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

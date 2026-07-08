@@ -47,9 +47,9 @@ Here are the steps to organize the [budget](/en/posts/how-to-create-personal-[bu
 1. **List all expenses**: Include all fixed and variable expenses.
 2. **Define the proportion**: Calculate the proportion of salaries to divide expenses.
 3. **Assign values**: Assign the corresponding value to each expense based on the defined proportion.
-4. **Review and adjust**: Review the [budget](/en/posts/how-to-create-personal-budget) regularly and adjust as necessary.
+4. **Review and adjust**: Review the [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas)) regularly and adjust as necessary.
 
-**Practical tip:** It's essential to have a reserve for unexpected expenses. A good rule is to reserve between 10% and 20% of the total budget for emergencies.
+**Practical tip:** It's essential to have a reserve for unexpected expenses. A good rule is to reserve between 10% and 20% of the total [budget](/en/posts/organize-couple-finances) for emergencies.
 
 ![Organizando o Orçamento](/images/posts/orcamento-para-casal-dividindo-despesas-3.webp)
 

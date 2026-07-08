@@ -33,14 +33,14 @@ Muitos casais enfrentam o desafio de lidar com dívidas, seja em cartões de cr�
 Além de gerenciar despesas e dívidas, os casais também devem considerar investimentos e poupança. Isso pode incluir a criação de uma reserva de emergência, investimentos em [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de investimento, ou até mesmo a compra de um imóvel. **Dica prática:** considere investir em um [Tesouro Direto](https://www.tesourodireto.com.br), que oferece uma forma segura e rentável de investir seu dinheiro. Além disso, é importante estar por dentro das tendências econômicas e financeiras atuais, o que pode ser feito acompanhando sites como o do [Banco Central do Brasil](https://www.bcb.gov.br) ou o [IBGE](https://www.ibge.gov.br).
 
 ## [Educação Financeira](/glossario/educacao-financeira)
-A educação financeira é fundamental para que os casais possam tomar decisões informadas sobre suas finanças. Isso pode incluir a leitura de livros sobre [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), a participação em cursos ou workshops, ou até mesmo a consultoria com um planejador financeiro. Uma boa fonte de informações é o site da [Investopedia](https://www.investopedia.com), que oferece artigos, vídeos e cursos sobre uma ampla gama de tópicos financeiros.
+A [educação financeira](/posts/7-erros-financeiros-iniciante) é fundamental para que os casais possam tomar decisões informadas sobre suas finanças. Isso pode incluir a leitura de livros sobre [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), a participação em cursos ou workshops, ou até mesmo a consultoria com um planejador financeiro. Uma boa fonte de informações é o site da [Investopedia](https://www.investopedia.com), que oferece artigos, vídeos e cursos sobre uma ampla gama de tópicos financeiros.
 
 ![Investimentos e Poupança](/images/posts/planejamento-financeiro-para-casais-4.webp)
 
 
 
 ## Comece hoje
-Não importa em que estágio você e seu parceiro estejam em termos de planejamento financeiro, o importante é começar a trabalhar juntos hoje. Comunicação, comprometimento e uma visão clara dos objetivos financeiros são as chaves para o sucesso. Então, não espere mais – comece a construir um futuro financeiro mais seguro e próspero para você e seu parceiro.
+Não importa em que estágio você e seu parceiro estejam em termos de [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), o importante é começar a trabalhar juntos hoje. Comunicação, comprometimento e uma visão clara dos objetivos financeiros são as chaves para o sucesso. Então, não espere mais – comece a construir um futuro financeiro mais seguro e próspero para você e seu parceiro.
 
 ![Comece hoje](/images/posts/planejamento-financeiro-para-casais-6.webp)
 

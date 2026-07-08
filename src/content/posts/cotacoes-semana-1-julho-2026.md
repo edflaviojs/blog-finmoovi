@@ -44,13 +44,13 @@ Para os investidores, é importante entender como as mudanças na Selic podem im
 
 Uma dica prática para os investidores pessoa física é diversificar seus investimentos. Isso inclui não apenas investir em diferentes tipos de ativos, como [ações](/glossario/acoes), renda fixa e [fundos](/glossario/fundos), mas também considerar investimentos em múltiplas moedas. O [FinMoovi](https://[finmoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026).com.br/) é uma ferramenta útil que ajuda a acompanhar e gerenciar investimentos em diferentes moedas, tornando mais fácil para os investidores manterem seu portfólio diversificado e atualizado.
 
-Além disso, é fundamental manter uma [reserva de emergência](/glossario/reserva-de-emergencia) e ter um plano de investimento de longo prazo, considerando os objetivos financeiros e o perfil de risco de cada investidor.
+Além disso, é fundamental manter uma [reserva de emergência](/glossario/reserva-de-emergencia) e ter um plano de [investimento](/posts/montando-carteira-diversificada-com-r-500) de longo prazo, considerando os objetivos financeiros e o perfil de risco de cada investidor.
 
 ## O que Esperar para a Próxima Semana
 
 Para a próxima semana, é importante estar atento às notícias econômicas e políticas que possam influenciar o mercado financeiro. A continuação da estabilidade no mercado de câmbio pode ser um cenário provável, mas é sempre bom estar preparado para possíveis mudanças.
 
-Além disso, os investidores devem continuar a monitorar as decisões do COPOM e como elas podem afetar os juros e os investimentos. Com a ajuda de ferramentas como o FinMoovi, é possível manter um acompanhamento detalhado dos investimentos e tomar decisões informadas para alcançar os objetivos financeiros.
+Além disso, os investidores devem continuar a monitorar as decisões do COPOM e como elas podem afetar os juros e os investimentos. Com a ajuda de ferramentas como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), é possível manter um acompanhamento detalhado dos investimentos e tomar decisões informadas para alcançar os objetivos financeiros.
 
 Em resumo, a semana que passou foi marcada por estabilidade no mercado de câmbio e uma taxa Selic que continua a influenciar os investimentos. Com a [diversificação](/glossario/diversificacao) dos investimentos e o uso de ferramentas práticas como o FinMoovi, os investidores pessoa física podem navegar pelo mercado financeiro com mais confiança e alcançar seus objetivos financeiros.
 

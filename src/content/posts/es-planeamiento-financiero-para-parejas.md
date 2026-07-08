@@ -33,14 +33,14 @@ Muchas parejas enfrentan el desafío de lidiar con deudas, sea en tarjetas de cr
 Además de gestionar gastos y deudas, las parejas también deben considerar inversiones y ahorro. Esto puede incluir la creación de una reserva de emergencia, inversiones en acciones o fondos de inversión, o incluso la compra de un inmueble. **Consejo práctico:** considera invertir en un [Tesouro Direto](https://www.tesourodireto.com.br), que ofrece una forma segura y rentable de invertir tu dinero. Además, es importante estar al tanto de las tendencias económicas y financieras actuales, lo que puede hacerse siguiendo sitios como el del [Banco Central del Brasil](https://www.bcb.gov.br) o el [IBGE](https://www.ibge.gov.br).
 
 ## [Educación Financiera](/es/glossario/es-educacao-financeira)
-La educación financiera es fundamental para que las parejas puedan tomar decisiones informadas sobre sus finanzas. Esto puede incluir la lectura de libros sobre [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), la participación en cursos o talleres, o incluso la consultoría con un planificador financiero. Una buena fuente de información es el sitio web de [Investopedia](https://www.investopedia.com), que ofrece artículos, vídeos y cursos sobre una amplia gama de temas financieros.
+La [educación financiera](/es/posts/7-errores-financieros-principiante) es fundamental para que las parejas puedan tomar decisiones informadas sobre sus finanzas. Esto puede incluir la lectura de libros sobre [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), la participación en cursos o talleres, o incluso la consultoría con un planificador financiero. Una buena fuente de información es el sitio web de [Investopedia](https://www.investopedia.com), que ofrece artículos, vídeos y cursos sobre una amplia gama de temas financieros.
 
 ![Inversiones y Ahorro](/images/posts/planejamento-financeiro-para-casais-4.webp)
 
 
 
 ## Comienza hoy
-No importa en qué etapa estés tú y tu pareja en términos de planeamiento financiero, lo importante es comenzar a trabajar juntos hoy. Comunicación, compromiso y una visión clara de los objetivos financieros son las claves para el éxito. Así que no esperes más – comienza a construir un futuro financiero más seguro y próspero para ti y tu pareja.
+No importa en qué etapa estés tú y tu pareja en términos de [planeamiento financiero](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), lo importante es comenzar a trabajar juntos hoy. Comunicación, compromiso y una visión clara de los objetivos financieros son las claves para el éxito. Así que no esperes más – comienza a construir un futuro financiero más seguro y próspero para ti y tu pareja.
 
 ![Comienza hoy](/images/posts/planejamento-financeiro-para-casais-6.webp)
 

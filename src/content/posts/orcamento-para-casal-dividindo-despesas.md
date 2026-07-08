@@ -49,7 +49,7 @@ Aqui estão os passos para organizar o [orçamento](/posts/controle-gastos-carta
 3. **Atribua valores**: Atribua o valor correspondente a cada despesa com base na proporção definida.
 4. **Revisite e ajuste**: Revisite o [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro) regularmente e ajuste conforme necessário.
 
-**Dica prática:** É importante ter uma reserva para imprevistos. Uma boa regra é reservar entre 10% a 20% do orçamento total para emergências.
+**Dica prática:** É importante ter uma reserva para imprevistos. Uma boa regra é reservar entre 10% a 20% do [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) total para emergências.
 
 ![Organizando o Orçamento](/images/posts/orcamento-para-casal-dividindo-despesas-3.webp)
 
@@ -67,4 +67,4 @@ Para manter o orçamento sob controle, dedique alguns minutos todos os dias para
 
 ---
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

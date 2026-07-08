@@ -17,17 +17,17 @@ seo:
 ---
 
 ## Introdução ao Investimento em Dólar
-Investir em dólar pode ser uma forma de diversificar seu portfólio de investimentos e proteger seu patrimônio contra flutuações na economia brasileira. No entanto, é importante entender como funciona o mercado de dólar e quais são os riscos e benefícios envolvidos. Vamos começar com o básico: o que é o dólar americano e por que ele é importante para os investidores brasileiros?
+Investir em dólar pode ser uma forma de diversificar seu portfólio de investimentos e proteger seu patrimônio contra flutuações na [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira. No entanto, é importante entender como funciona o mercado de dólar e quais são os riscos e benefícios envolvidos. Vamos começar com o básico: o que é o dólar americano e por que ele é importante para os investidores brasileiros?
 
-O dólar americano é a moeda oficial dos Estados Unidos e é amplamente utilizada em transações internacionais. No Brasil, o dólar é usado como uma forma de investimento, pois pode ser comprado e vendido em bolsas de valores e corretoras de câmbio. Se você está considerando investir em dólar, é importante avaliar se faz sentido para seu perfil de investidor e objetivos financeiros.
+O dólar americano é a moeda oficial dos Estados Unidos e é amplamente utilizada em transações internacionais. No Brasil, o dólar é usado como uma forma de investimento, pois pode ser comprado e vendido em bolsas de valores e corretoras de [câmbio](/glossario/cambio). Se você está considerando investir em dólar, é importante avaliar se faz sentido para seu perfil de investidor e objetivos financeiros.
 
 ## Como Investir em Dólar no Brasil
 Existem várias formas de investir em dólar no Brasil, incluindo:
 
 * Compra de dólar em espécie: você pode comprar dólar em espécie em uma casa de câmbio ou em uma agência bancária.
 * Investimento em títulos de dólar: você pode investir em títulos de dólar, como títulos do Tesouro americano ou títulos de empresas americanas.
-* Investimento em fundos de investimento em dólar: você pode investir em fundos de investimento que têm como objetivo investir em dólar.
-* Investimento em ações de empresas americanas: você pode investir em ações de empresas americanas que são negociadas em bolsas de valores americanas.
+* Investimento em [fundos](/glossario/fundos) de investimento em dólar: você pode investir em fundos de investimento que têm como objetivo investir em dólar.
+* Investimento em [ações](/glossario/acoes) de empresas americanas: você pode investir em ações de empresas americanas que são negociadas em bolsas de valores americanas.
 
 ![Como Investir em Dólar no Brasil](/images/posts/investir-em-dolar-no-brasil-2.webp)
 
@@ -75,4 +75,4 @@ Agora que você entende melhor como investir em dólar no Brasil, é importante 
 
 
 
-Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) — multi-moeda, relatórios inteligentes e 100% offline.
+Para acompanhar seus investimentos em um só lugar, [teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://finmoovi.com) — multi-moeda, relatórios inteligentes e 100% offline.
