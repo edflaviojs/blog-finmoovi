@@ -27,7 +27,7 @@ Ahora que entiendes tu situación financiera actual, es hora de definir metas fi
 1. **Sé específico**: En lugar de decir "quiero ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia)", di "quiero ahorrar R$ 1.000,00 para un viaje".
 2. **Sé realista**: Asegúrate de que tus metas sean alcanzables con base en tu situación financiera actual.
 3. **Sé responsable**: Asegúrate de que tus metas estén alineadas con tus valores y prioridades.
-4. **Monitorea tu progreso**: Usa el FinMoovi para registrar tu progreso y hacer ajustes según sea necesario.
+4. **Monitorea tu progreso**: Usa el [FinMoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos) para registrar tu progreso y hacer ajustes según sea necesario.
 
 ![Entendiendo tu Situación Financiera Actual](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-2.webp)
 
@@ -52,5 +52,5 @@ Gestionar deudas y gastos es fundamental para alcanzar tus metas financieras. Aq
 
 
 ## Conclusión
-Prepararse financieramente para el segundo semestre es fundamental para alcanzar tus metas financieras y tener una vida más tranquila. Con los consejos prácticos y accesibles presentados en este post, puedes crear un presupuesto personalizado, gestionar deudas y gastos y alcanzar tus metas financieras. Recuerda que el [Banco Central de Brasil](https://www.bcb.gov.br) y la [Receita Federal](https://www.gov.br/receitafederal) ofrecen recursos y información valiosa para ayudarte a gestionar tus finanzas. Además, el [Serasa](https://www.serasa.com.br) puede ayudarte a entender mejor tu situación financiera y a encontrar soluciones para tus problemas financieros.
+Prepararse financieramente para el segundo semestre es fundamental para alcanzar tus metas financieras y tener una vida más tranquila. Con los consejos prácticos y accesibles presentados en este post, puedes crear un [presupuesto](/es/posts/como-crear-presupuesto-personal) personalizado, gestionar deudas y gastos y alcanzar tus metas financieras. Recuerda que el [Banco Central de Brasil](https://www.bcb.gov.br) y la [Receita Federal](https://www.gov.br/receitafederal) ofrecen recursos y información valiosa para ayudarte a gestionar tus finanzas. Además, el [Serasa](https://www.serasa.com.br) puede ayudarte a entender mejor tu situación financiera y a encontrar soluciones para tus problemas financieros.
 Usa el FinMoovi para controlar tus gastos y no sorprenderte al final del mes.

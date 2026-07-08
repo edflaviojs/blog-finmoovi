@@ -19,7 +19,7 @@ translate: true
 ---
 
 ## Introdução
-As férias de julho são um momento aguardado por muitos brasileiros, uma oportunidade para relaxar, viajar e aproveitar o tempo com a família e amigos. No entanto, é comum que esses períodos de lazer sejam accompaniedos de gastos excessivos, comprometendo o orçamento familiar e gerando estresse financeiro. Neste artigo, vamos explorar dicas práticas para economizar nas férias de julho sem comprometer a diversão.
+As [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) de julho são um momento aguardado por muitos brasileiros, uma oportunidade para relaxar, viajar e aproveitar o tempo com a família e amigos. No entanto, é comum que esses períodos de lazer sejam accompaniedos de gastos excessivos, comprometendo o orçamento familiar e gerando estresse financeiro. Neste artigo, vamos explorar dicas práticas para economizar nas férias de julho sem comprometer a diversão.
 
 ## Planejamento Financeiro
 Antes de mais nada, é fundamental ter um planejamento financeiro sólido. Isso inclui definir um orçamento para as férias, considerando todos os gastos possíveis, desde passagens e hospedagem até alimentação e atividades. Um exemplo prático é o caso de uma família de quatro pessoas, com um salário mensal de R$ 8.000,00. Se eles decidirem viajar para o Nordeste, o custo da passagem aérea pode variar de R$ 500,00 a R$ 1.000,00 por pessoa, dependendo da época e da companhia aérea. Além disso, o custo da hospedagem pode variar de R$ 100,00 a R$ 300,00 por noite, dependendo do tipo de acomodação escolhida.
@@ -28,7 +28,7 @@ Antes de mais nada, é fundamental ter um planejamento financeiro sólido. Isso 
 Aqui estão algumas dicas práticas para economizar nas férias de julho:
 - Planeje com antecedência: Quanto mais cedo você planejar, mais chances terá de encontrar ofertas e descontos.
 - Escolha destinos mais acessíveis: Em vez de escolher destinos internacionais, considere opções nacionais que sejam mais baratas.
-- Use aplicativos de viagem: O app [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026), por exemplo, pode ajudar a encontrar ofertas e descontos em passagens e hospedagens.
+- Use aplicativos de viagem: O app [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026), por exemplo, pode ajudar a encontrar ofertas e descontos em passagens e hospedagens.
 - Cozinhe em vez de comer fora: Se você estiver em um apartamento ou casa, cozinhe em vez de comer fora para economizar dinheiro.
 - Evite gastos desnecessários: Seja consciente dos seus gastos e evite comprar coisas desnecessárias.
 

@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Definiendo el [Presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-Para empezar, es importante entender que un presupuesto eficaz para parejas implica considerar las necesidades, deseos y objetivos financieros de ambos socios. Vamos considerar un ejemplo: João y Maria, una pareja con salarios de R$ 4.000 y R$ 3.500, respectivamente. Ellos necesitan decidir cómo dividir sus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) de forma justa.
+Para empezar, es importante entender que un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/controle-gastos-cartao-credito)-personal) eficaz para parejas implica considerar las necesidades, deseos y objetivos financieros de ambos socios. Vamos considerar un ejemplo: João y Maria, una pareja con salarios de R$ 4.000 y R$ 3.500, respectivamente. Ellos necesitan decidir cómo dividir sus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) de forma justa.
 
 ### Ejemplo de Gastos
 Aquí está una tabla con los gastos mensuales de la pareja:

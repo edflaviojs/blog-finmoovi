@@ -38,7 +38,7 @@ Now that you have defined financial goals, it's time to create a [budget](/en/po
 1. **Allocate 50% of your income to basic needs**: This includes expenses for housing, food, transportation, and essential services.
 2. **Allocate 30% of your income to desires**: This includes expenses for leisure, entertainment, and hobbies.
 3. **Allocate 20% of your income to financial goals**: This includes expenses for savings, debts, and emergency funds.
-4. **Review your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas)) regularly**: Use FinMoovi to review your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) and make adjustments as needed.
+4. **Review your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas)) regularly**: Use [FinMoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) to review your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) and make adjustments as needed.
 
 ## Managing Debt and Expenses
 Managing debt and expenses is crucial to achieving your financial goals. Here are some tips to help you manage debt and expenses:
@@ -53,4 +53,4 @@ Managing debt and expenses is crucial to achieving your financial goals. Here ar
 
 ## Conclusion
 Preparing financially for the second half of the year is essential to achieving your financial goals and having a more peaceful life. With the practical and accessible tips presented in this post, you can create a personalized [budget](/en/posts/how-to-create-personal-[budget](/en/posts/reduce-fixed-expenses)), manage debt and expenses, and achieve your financial goals. Remember that the [Banco Central do Brasil](https://www.bcb.gov.br) and the [Receita Federal](https://www.gov.br/receitafederal) offer valuable resources and information to help you manage your finances. Additionally, [Serasa](https://www.serasa.com.br) can help you better understand your financial situation and find solutions to your financial problems.
-Use FinMoovi to control your expenses and avoid surprises at the end of the month.
+Use [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) to control your expenses and avoid surprises at the end of the month.

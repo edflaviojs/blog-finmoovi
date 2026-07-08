@@ -24,9 +24,9 @@ A semana que passou foi marcada por movimentos interessantes no mercado financei
 
 
 
-## Dólar e Euro: Tendência da Semana
+## [Dólar](/posts/cotacoes-semana-3-junho-2026) e Euro: Tendência da Semana
 
-Durante a semana de 29/06/2026 a 06/07/2026, o dólar americano (USD) fechou em R$ 5.18, enquanto o euro (EUR) alcançou R$ 5.92. Esses valores refletem uma estabilidade relativa em relação às semanas anteriores, mas é importante lembrar que o mercado de [câmbio](/glossario/cambio) é extremamente volátil e pode sofrer influências de各种 fatores, incluindo decisões políticas, econômicas e até mesmo eventos globais.
+Durante a semana de 29/06/2026 a 06/07/2026, o [dólar](/posts/cotacoes-semana-4-junho-2026) americano (USD) fechou em R$ 5.18, enquanto o euro (EUR) alcançou R$ 5.92. Esses valores refletem uma estabilidade relativa em relação às semanas anteriores, mas é importante lembrar que o mercado de [câmbio](/glossario/cambio) é extremamente volátil e pode sofrer influências de各种 fatores, incluindo decisões políticas, econômicas e até mesmo eventos globais.
 
 A tendência de estabilidade pode ser vista como uma oportunidade para os investidores que estão considerando investir em ativos em moedas estrangeiras. No entanto, é fundamental manter um olho atento às notícias econômicas e políticas, pois elas podem alterar rapidamente o cenário.
 

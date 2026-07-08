@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Definindo o [Orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias)
-Para começar, é importante entender que um orçamento eficaz para casais envolve a consideração das necessidades, desejos e objetivos financeiros de ambos os parceiros. Vamos considerar um exemplo: João e Maria, um casal com salários de R$ 4.000 e R$ 3.500, respectivamente. Eles precisam decidir como dividir suas despesas de forma justa.
+Para começar, é importante entender que um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) eficaz para casais envolve a consideração das necessidades, desejos e objetivos financeiros de ambos os parceiros. Vamos considerar um exemplo: João e Maria, um casal com salários de R$ 4.000 e R$ 3.500, respectivamente. Eles precisam decidir como dividir suas despesas de forma justa.
 
 ### Exemplo de Despesas
 Aqui está uma tabela com as despesas mensais do casal:
@@ -42,7 +42,7 @@ Uma forma comum de dividir as despesas é considerar a proporção dos salários
 
 Com base nisso, eles podem calcular a parcela de cada um em cada categoria de despesa.
 
-## Organizando o Orçamento
+## Organizando o [Orçamento](/posts/como-criar-orcamento-pessoal)
 Aqui estão os passos para organizar o orçamento:
 1. **Liste todas as despesas**: Inclua todas as despesas fixas e variáveis.
 2. **Defina a proporção**: Calcule a proporção dos salários para dividir as despesas.
