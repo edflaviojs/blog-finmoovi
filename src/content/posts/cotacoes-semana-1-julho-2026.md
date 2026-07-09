@@ -32,13 +32,13 @@ A tendência de estabilidade pode ser vista como uma oportunidade para os invest
 
 ## Comentário sobre a Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
 
-A taxa Selic, que é a taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator crucial para os investimentos. A decisão do Comitê de Política Monetária (COPOM) de manter ou alterar a Selic pode influenciar diretamente os juros dos investimentos, como CDBs, [LCI e LCA](/glossario/lci-e-lca), e também afeta a atratividade dos investimentos em [renda fixa](/glossario/renda-fixa).
+A taxa Selic, que é a taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator crucial para os [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-). A decisão do Comitê de Política Monetária (COPOM) de manter ou alterar a Selic pode influenciar diretamente os juros dos investimentos, como CDBs, [LCI e LCA](/glossario/lci-e-lca), e também afeta a atratividade dos investimentos em [renda fixa](/glossario/renda-fixa).
 
 ![Comentário sobre a Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-1-julho-2026-inline-3.webp)
 
 
 
-Para os investidores, é importante entender como as mudanças na Selic podem impactar seus investimentos. Por exemplo, uma elevação na Selic pode tornar os investimentos em renda fixa mais atraentes, pois oferecem juros mais altos, mas também pode aumentar o custo do crédito para as empresas e consumidores.
+Para os investidores, é importante entender como as mudanças na Selic podem impactar seus investimentos. Por exemplo, uma elevação na Selic pode tornar os investimentos em [renda fixa](/posts/tesouro-direto-para-iniciantes) mais atraentes, pois oferecem juros mais altos, mas também pode aumentar o custo do crédito para as empresas e consumidores.
 
 ## Dica Prática para o Investidor Pessoa Física
 

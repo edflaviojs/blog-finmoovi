@@ -17,12 +17,12 @@ seo:
 ---
 
 ## Introduction to the Problem
-Have you ever found yourself at the end of the month, looking at your bank statement and wondering where your money went? It's like your daily and monthly expenses are a puzzle, and you can't find all the pieces. I've been there too, and I know I'm not alone. According to a study by the [Banco Central do Brasil](https://www.bcb.gov.br), many people in Brazil have difficulty controlling their finances due to a lack of organization and expense tracking.
+Have you ever found yourself at the end of the month, looking at your bank statement and wondering where your [money](/en/posts/30-day-rule-for-purchases) went? It's like your daily and monthly expenses are a puzzle, and you can't find all the pieces. I've been there too, and I know I'm not alone. According to a study by the [Banco Central do Brasil](https://www.bcb.gov.br), many people in Brazil have difficulty controlling their finances due to a lack of organization and expense tracking.
 
 ## The Pain of Not Knowing Where Your Money Goes
-Imagine you're always traveling for work, buying things in different currencies, like dollars and euros, in addition to the real. Each purchase, each meal, each fuel stop... it's like a small drop in the ocean, but at the end of the month, those drops turn into a tsunami of expenses. And then, you wonder: "Where did I spend so much money?" It's frustrating, isn't it? Additionally, according to the [IBGE](https://www.ibge.gov.br), inflation in Brazil can reach 10% per year, which means the value of your money is decreasing every day.
+Imagine you're always traveling for work, buying things in different currencies, like dollars and euros, in addition to the real. Each purchase, each meal, each fuel stop... it's like a small drop in the ocean, but at the end of the month, those drops turn into a tsunami of expenses. And then, you wonder: "Where did I spend so much money?" It's frustrating, isn't it? Additionally, according to the [IBGE](https://www.ibge.gov.br), [inflation](/en/glossario/en-inflacao) in Brazil can reach 10% per year, which means the value of your money is decreasing every day.
 
-## The Solution: FinMoovi
+## The Solution: [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026)
 But, what if I told you there's a solution to this problem? It's FinMoovi, an app that helps you control your finances in an easy and effective way. With FinMoovi, you can record your expenses using the Smart Capture feature by voice or OCR, and the app will automatically categorize your expenses. It's like having a personal assistant that helps you organize your expenses and understand where your money is being spent.
 
 ![A Dor de Não Saber Onde o Dinheiro Vai](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-2.webp)

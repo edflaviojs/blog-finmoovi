@@ -22,7 +22,7 @@ Ensinar [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-f
 Uma forma prática de começar é dar uma mesada para as crianças, que elas podem usar para comprar coisas que querem, como brinquedos ou doces. No entanto, é importante ensinar que a mesada também deve ser usada para economizar e ajudar em despesas da família. Por exemplo, se a mesada for de R$ 100 por mês, a criança pode decidir guardar R$ 20 para comprar um brinquedo mais caro no futuro.
 
 ## Importância da [economia](/posts/como-criar-uma-reserva-de-emergencia)
-A [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) é um conceito importante para as crianças aprenderem, pois ajuda a entender que o [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) não é infinito e que é necessário fazer escolhas sobre como usá-lo. Por exemplo, se uma criança quer comprar um novo jogo de videogame que custa R$ 200, ela pode precisar economizar durante vários meses para alcançar esse objetivo.
+A [economia](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz) é um conceito importante para as crianças aprenderem, pois ajuda a entender que o [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) não é infinito e que é necessário fazer escolhas sobre como usá-lo. Por exemplo, se uma criança quer comprar um novo jogo de videogame que custa R$ 200, ela pode precisar economizar durante vários meses para alcançar esse objetivo.
 
 **Dica prática:** Crie um sistema de "jarras" para a criança, onde ela pode dividir sua mesada em diferentes jarras para diferentes objetivos, como uma jarra para economizar, uma para gastar e uma para doar. Isso ajuda a visualizar os objetivos financeiros e a fazer escolhas conscientes sobre como usar o [dinheiro](/posts/diferenca-entre-investir-e-poupar).
 
@@ -49,7 +49,7 @@ Além disso, existem aplicativos, como o [FinMoovi](/posts/5-[alternativas](/pos
 
 
 ## Comece hoje
-Não é necessário ser um especialista em finanças para ensinar as crianças sobre [dinheiro](/posts/economize-na-conta-de-energia). O importante é começar a conversar sobre o assunto e encontrar formas práticas de ensinar conceitos financeiros. Com um pouco de criatividade e paciência, é possível ajudar as crianças a desenvolver hábitos saudáveis em relação ao dinheiro e promover uma educação financeira sólida desde cedo.
+Não é necessário ser um especialista em finanças para ensinar as crianças sobre [dinheiro](/posts/economize-na-conta-de-energia). O importante é começar a conversar sobre o assunto e encontrar formas práticas de ensinar conceitos financeiros. Com um pouco de criatividade e paciência, é possível ajudar as crianças a desenvolver hábitos saudáveis em relação ao [dinheiro](/posts/economize-na-conta-do-mercado) e promover uma educação financeira sólida desde cedo.
 
 ---
 

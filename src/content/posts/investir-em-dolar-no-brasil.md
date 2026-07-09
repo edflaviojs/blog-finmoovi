@@ -17,9 +17,9 @@ seo:
 ---
 
 ## Introdução ao Investimento em Dólar
-Investir em dólar pode ser uma forma de diversificar seu portfólio de investimentos e proteger seu patrimônio contra flutuações na [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira. No entanto, é importante entender como funciona o mercado de dólar e quais são os riscos e benefícios envolvidos. Vamos começar com o básico: o que é o dólar americano e por que ele é importante para os investidores brasileiros?
+Investir em dólar pode ser uma forma de diversificar seu portfólio de investimentos e proteger seu patrimônio contra flutuações na [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira. No entanto, é importante entender como funciona o mercado de dólar e quais são os riscos e benefícios envolvidos. Vamos começar com o básico: o que é o dólar americano e por que ele é importante para os investidores brasileiros?
 
-O dólar americano é a moeda oficial dos Estados Unidos e é amplamente utilizada em transações internacionais. No Brasil, o dólar é usado como uma forma de investimento, pois pode ser comprado e vendido em bolsas de valores e corretoras de [câmbio](/glossario/cambio). Se você está considerando investir em dólar, é importante avaliar se faz sentido para seu perfil de investidor e objetivos financeiros.
+O dólar americano é a [moeda](/glossario/moeda) oficial dos Estados Unidos e é amplamente utilizada em transações internacionais. No Brasil, o dólar é usado como uma forma de investimento, pois pode ser comprado e vendido em bolsas de valores e corretoras de [câmbio](/glossario/cambio). Se você está considerando investir em dólar, é importante avaliar se faz sentido para seu perfil de investidor e objetivos financeiros.
 
 ## Como Investir em Dólar no Brasil
 Existem várias formas de investir em dólar no Brasil, incluindo:
@@ -33,14 +33,14 @@ Existem várias formas de investir em dólar no Brasil, incluindo:
 
 
 
-Vamos considerar um exemplo: se você investir R$1.000 em dólar a uma taxa de câmbio de R$4,50 por dólar, você receberá aproximadamente 222 dólares. Se o valor do dólar aumentar para R$5,00, o valor do seu investimento aumentará para R$1.111.
+Vamos considerar um exemplo: se você investir R$1.000 em dólar a uma taxa de câmbio de R$4,50 por dólar, você receberá aproximadamente 222 dólares. Se o [valor](/glossario/valor) do dólar aumentar para R$5,00, o valor do seu investimento aumentará para R$1.111.
 
 ## Riscos do Investimento em Dólar
 Investir em dólar envolve riscos, incluindo:
 
 * Risco de flutuação cambial: o valor do dólar pode flutuar em relação ao real, o que pode afetar o valor do seu investimento.
 * Risco de [inflação](/glossario/inflacao): a inflação nos Estados Unidos pode afetar o valor do dólar.
-* Risco de juros: as taxas de juros nos Estados Unidos podem afetar o valor do dólar.
+* Risco de [juros](/glossario/juros): as taxas de juros nos Estados Unidos podem afetar o valor do dólar.
 * Risco de [liquidez](/glossario/liquidez): pode ser difícil vender seu investimento em dólar rapidamente e a um preço justo.
 
 É importante considerar esses riscos antes de investir em dólar e avaliar se faz sentido para seu perfil de investidor e objetivos financeiros.
@@ -69,7 +69,7 @@ Antes de investir em dólar, é importante considerar os seguintes cuidados:
 Para obter mais informações sobre investimento em dólar, você pode visitar o site do [Banco Central do Brasil](https://www.bcb.gov.br) ou do [Tesouro Direto](https://www.tesourodireto.com.br).
 
 ## Próximos passos
-Agora que você entende melhor como investir em dólar no Brasil, é importante avaliar se faz sentido para seu perfil de investidor e objetivos financeiros. Considere investir em dólar como uma forma de diversificar seu portfólio de investimentos e proteger seu patrimônio contra flutuações na economia brasileira. Além disso, é importante lembrar que investir em dólar envolve riscos e é importante considerar esses riscos antes de investir.
+Agora que você entende melhor como investir em dólar no Brasil, é importante avaliar se faz sentido para seu perfil de investidor e objetivos financeiros. Considere investir em dólar como uma forma de diversificar seu portfólio de investimentos e proteger seu patrimônio contra flutuações na [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) brasileira. Além disso, é importante lembrar que investir em dólar envolve riscos e é importante considerar esses riscos antes de investir.
 
 ![Próximos passos](/images/posts/investir-em-dolar-no-brasil-6.webp)
 

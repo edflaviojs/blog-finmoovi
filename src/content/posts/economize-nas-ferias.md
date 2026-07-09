@@ -22,7 +22,7 @@ translate: true
 As [férias](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) de julho são um momento aguardado por muitos brasileiros, uma oportunidade para relaxar, viajar e aproveitar o tempo com a família e amigos. No entanto, é comum que esses períodos de lazer sejam accompaniedos de gastos excessivos, comprometendo o orçamento familiar e gerando estresse financeiro. Neste artigo, vamos explorar dicas práticas para economizar nas [férias](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) de julho sem comprometer a diversão.
 
 ## [Planejamento Financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
-Antes de mais nada, é fundamental ter um planejamento financeiro sólido. Isso inclui definir um orçamento para as férias, considerando todos os gastos possíveis, desde passagens e hospedagem até alimentação e atividades. Um exemplo prático é o caso de uma família de quatro pessoas, com um salário mensal de R$ 8.000,00. Se eles decidirem viajar para o Nordeste, o custo da passagem aérea pode variar de R$ 500,00 a R$ 1.000,00 por pessoa, dependendo da época e da companhia aérea. Além disso, o custo da hospedagem pode variar de R$ 100,00 a R$ 300,00 por noite, dependendo do tipo de acomodação escolhida.
+Antes de mais nada, é fundamental ter um planejamento financeiro sólido. Isso inclui definir um orçamento para as [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), considerando todos os gastos possíveis, desde passagens e hospedagem até alimentação e atividades. Um exemplo prático é o caso de uma família de quatro pessoas, com um salário mensal de R$ 8.000,00. Se eles decidirem viajar para o Nordeste, o custo da passagem aérea pode variar de R$ 500,00 a R$ 1.000,00 por pessoa, dependendo da época e da companhia aérea. Além disso, o custo da hospedagem pode variar de R$ 100,00 a R$ 300,00 por noite, dependendo do tipo de acomodação escolhida.
 
 ## Dicas para Economizar
 Aqui estão algumas dicas práticas para economizar nas férias de julho:
@@ -39,7 +39,7 @@ Aqui estão algumas dicas práticas para economizar nas férias de julho:
 ## Orçamento e Controle de Gastos
 Um orçamento bem definido e o controle de gastos são fundamentais para economizar nas férias. É importante ter uma ideia clara de quanto você pode gastar e onde você pode cortar gastos desnecessários. O [Banco Central do Brasil](https://www.bcb.gov.br) oferece dicas e ferramentas para ajudar a gerenciar o orçamento e controlar os gastos.
 
-## Investimentos e [Poupança](/glossario/poupanca)
+## [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e [Poupança](/glossario/poupanca)
 Além de economizar nas férias, é importante pensar em investimentos e poupança para o futuro. O [Tesouro Direto](https://www.tesourodireto.com.br) é uma opção de investimento segura e rentável para os brasileiros. Além disso, é importante ter uma poupança para emergências e imprevistos.
 
 ![Orçamento e Controle de Gastos](/images/posts/economize-nas-ferias-4.webp)

@@ -22,7 +22,7 @@ Teaching [personal finance](/en/posts/30-day-rule-for-purchases) to children is 
 A practical way to start is by giving children an allowance, which they can use to buy things they want, such as toys or sweets. However, it's essential to teach that the allowance should also be used to save and help with family expenses. For example, if the allowance is R$ 100 per month, the child can decide to save R$ 20 to buy a more expensive toy in the future.
 
 ## Importance of [Economy](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas)
-The [economy](/en/posts/avoid-impulse-purchases) is an important concept for children to learn, as it helps them understand that [money](/en/posts/financial-planning-for-couples) is not infinite and that it's necessary to make choices about how to use it. For example, if a child wants to buy a new video game that costs R$ 200, they may need to save for several months to reach that goal.
+The [economy](/en/posts/avoid-impulse-purchases) is an important concept for children to learn, as it helps them understand that [money](/en/posts/financial-[planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas)-for-couples) is not infinite and that it's necessary to make choices about how to use it. For example, if a child wants to buy a new video game that costs R$ 200, they may need to save for several months to reach that goal.
 
 **Practical tip:** Create a "jar" system for the child, where they can divide their allowance into different jars for different goals, such as a jar for [saving](/en/posts/criar-reserva-de-emergencia), one for spending, and one for donating. This helps visualize financial goals and make conscious choices about how to use [money](/en/posts/financial-planning-for-freelancers).
 
@@ -49,7 +49,7 @@ Additionally, there are apps, such as [FinMoovi](/en/posts/5-alternativas-ao-mob
 
 
 ## Start Today
-You don't need to be a finance expert to teach children about money. The important thing is to start talking about the subject and finding practical ways to teach financial concepts. With a little creativity and patience, it's possible to help children develop healthy habits regarding money and promote solid financial education from an early age.
+You don't need to be a finance expert to teach children about [money](/en/posts/organizing-finances-as-a-freelancer). The important thing is to start talking about the subject and finding practical ways to teach financial concepts. With a little creativity and patience, it's possible to help children develop healthy habits regarding money and promote solid financial education from an early age.
 
 ---
 

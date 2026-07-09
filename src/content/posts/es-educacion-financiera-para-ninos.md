@@ -49,7 +49,7 @@ Además, existen aplicaciones, como el [FinMoovi](/es/posts/5-[alternativas](/es
 
 
 ## Comienza hoy
-No es necesario ser un experto en finanzas para enseñar a los niños sobre dinero. Lo importante es comenzar a conversar sobre el tema y encontrar formas prácticas de enseñar conceptos financieros. Con un poco de creatividad y paciencia, es posible ayudar a los niños a desarrollar hábitos saludables en relación con el dinero y promover una educación financiera sólida desde temprano.
+No es necesario ser un experto en finanzas para enseñar a los niños sobre [dinero](/es/posts/crear-reserva-de-emergencia). Lo importante es comenzar a conversar sobre el tema y encontrar formas prácticas de enseñar conceptos financieros. Con un poco de creatividad y paciencia, es posible ayudar a los niños a desarrollar hábitos saludables en relación con el [dinero](/es/posts/diferencia-entre-invertir-y-ahorrar) y promover una educación financiera sólida desde temprano.
 
 ---
 

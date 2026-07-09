@@ -29,7 +29,7 @@ Aquí están algunos consejos prácticos para ahorrar en las vacaciones de julio
 - Planea con anticipación: Cuanto más temprano planees, más oportunidades tendrás de encontrar ofertas y descuentos.
 - Elige destinos más accesibles: En lugar de elegir destinos internacionales, considera opciones nacionales que sean más baratas.
 - Usa aplicativos de viaje: La app [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/es/posts/5-alternativas-ao-mobills-em-2026)-em-2026), por ejemplo, puede ayudarte a encontrar ofertas y descuentos en pasajes y hospedajes.
-- Cocina en lugar de comer fuera: Si estás en un apartamento o casa, cocina en lugar de comer fuera para ahorrar dinero.
+- Cocina en lugar de comer fuera: Si estás en un apartamento o casa, cocina en lugar de comer fuera para ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia).
 - Evita gastos innecesarios: Sé consciente de tus gastos y evita comprar cosas innecesarias.
 
 ![Planeamiento Financiero](/images/posts/economize-nas-ferias-2.webp)
@@ -39,7 +39,7 @@ Aquí están algunos consejos prácticos para ahorrar en las vacaciones de julio
 ## Presupuesto y Control de Gastos
 Un presupuesto bien definido y el control de gastos son fundamentales para ahorrar en las vacaciones. Es importante tener una idea clara de cuánto puedes gastar y dónde puedes cortar gastos innecesarios. El [Banco Central do Brasil](https://www.bcb.gov.br) ofrece consejos y herramientas para ayudar a gestionar el presupuesto y controlar los gastos.
 
-## Inversiones y [Ahorro](/es/posts/ahorra-en-las-compras-del-supermercado)
+## [Inversiones](/es/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) y [Ahorro](/es/posts/ahorra-en-las-compras-del-supermercado)
 Además de ahorrar en las vacaciones, es importante pensar en inversiones y ahorro para el futuro. El [Tesouro Direto](https://www.tesourodireto.com.br) es una opción de inversión segura y rentable para los brasileños. Además, es importante tener un ahorro para emergencias e imprevistos.
 
 ![Presupuesto y Control de Gastos](/images/posts/economize-nas-ferias-4.webp)
