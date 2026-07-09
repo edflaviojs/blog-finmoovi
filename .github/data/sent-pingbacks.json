@@ -1042,5 +1042,59 @@
     "target": "https://www.gov.br/receitafederal",
     "status": "no-endpoint",
     "sentAt": "2026-07-07T16:32:07.665Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/financial-planning-for-couples/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-09T16:28:10.980Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/investir-em-dolar-no-brasil/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-09T16:28:11.799Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/investir-em-dolar-no-brasil/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-09T16:28:11.993Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/investir-em-dolar-no-brasil/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-09T16:28:12.016Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/investir-em-dolar-no-brasil/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-09T16:28:12.084Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/planeamiento-financiero-para-parejas/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-09T16:28:12.121Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/investir-em-dolar-no-brasil/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-09T16:28:12.134Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/investir-em-dolar-no-brasil/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-09T16:28:12.200Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/pt/posts/planejamento-financeiro-para-casais/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-09T16:28:12.241Z"
   }
 ]
