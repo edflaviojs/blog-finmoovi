@@ -33,7 +33,7 @@ La [economía](/es/posts/ahorrando-en-la-cuenta-del-mercado) es un concepto impo
 ## Enseñanza de [finanzas personales](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 La enseñanza de [finanzas personales](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) a niños puede comenzar con conceptos simples, como la diferencia entre necesidades y deseos. Por ejemplo, una necesidad es algo que es esencial para la vida, como comida y refugio, mientras que un deseo es algo que se quiere, pero no es necesario, como un juguete.
 
-Una forma de enseñar esto es crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/controle-gastos-cartao-credito)-personal) familiar que incluya los gastos básicos y los objetivos financieros. Por ejemplo, si la familia tiene un [presupuesto](/es/posts/como-crear-presupuesto-personal) de R$ 5.000 por mes, puede ser necesario priorizar los gastos básicos, como alquiler y comida, y después decidir cómo utilizar el resto para alcanzar los objetivos financieros.
+Una forma de enseñar esto es crear un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/controle-gastos-cartao-credito)-personal) familiar que incluya los gastos básicos y los objetivos financieros. Por ejemplo, si la familia tiene un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal) de R$ 5.000 por mes, puede ser necesario priorizar los gastos básicos, como alquiler y comida, y después decidir cómo utilizar el resto para alcanzar los objetivos financieros.
 
 ![Enseñanza de finanzas personales](/images/posts/educacao-financeira-para-criancas-3.webp)
 
@@ -53,4 +53,4 @@ No es necesario ser un experto en finanzas para enseñar a los niños sobre [din
 
 ---
 
-**¿Quieres poner esto en práctica? [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) y vea cómo es fácil controlar tus finanzas con categorización automática y informes visuales.**
+**¿Quieres poner esto en práctica? [Prueba [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) y vea cómo es fácil controlar tus finanzas con categorización automática y informes visuales.**

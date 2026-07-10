@@ -20,7 +20,7 @@ seo:
 When it comes to finances, it's common for couples to have different goals and priorities. However, it's essential that both partners are aligned and work together to achieve their financial objectives. This starts with creating a joint [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), which takes into account both partners' expenses and income. For example, if you and your partner have salaries of R$ 4,000 and R$ 5,000, respectively, it's crucial to know how these values are distributed in expenses such as rent (R$ 2,000), utility bills (R$ 300), and food (R$ 1,500).
 
 ## Defining Priorities
-It's essential for couples to define financial priorities together. This can include anything from buying a home to building an [emergency fund](/en/glossario/en-reserva-de-emergencia). **Practical tip:** use the 50/30/20 rule, where 50% of the [budget](/en/posts/50-30-20-rule-complete-guide) goes to essential expenses, 30% to non-essential expenses, and 20% to savings and investments. Additionally, it's vital to have a clear view of where the [money](/en/posts/avoid-impulse-purchases) is being spent. A useful tool for this is a financial control app, which can help track expenses and income more effectively.
+It's essential for couples to define financial priorities together. This can include anything from buying a home to building an [emergency fund](/en/glossario/en-reserva-de-emergencia). **Practical tip:** use the 50/30/20 rule, where 50% of the [budget](/en/posts/50-30-20-rule-complete-guide) goes to essential expenses, 30% to non-essential expenses, and 20% to savings and [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce). Additionally, it's vital to have a clear view of where the [money](/en/posts/avoid-impulse-purchases) is being spent. A useful tool for this is a financial control app, which can help track expenses and income more effectively.
 
 ## Debt Management
 Many couples face the challenge of dealing with debt, whether it's credit card debt, personal loans, or vehicle [financing](/en/glossario/en-financiamento). It's crucial to address these debts jointly and create a plan to pay them off. This can involve negotiating lower interest rates, consolidating debt, or adopting aggressive payment strategies. For more information on debt management, you can visit the [Serasa](https://www.serasa.com.br) website, which offers tools and resources to help manage your finances.
@@ -29,7 +29,7 @@ Many couples face the challenge of dealing with debt, whether it's credit card d
 
 
 
-## Investments and Savings
+## [Investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and Savings
 In addition to managing expenses and debt, couples should also consider investments and savings. This can include creating an emergency fund, investing in stocks or investment funds, or even buying a property. **Practical tip:** consider investing in a [Tesouro Direto](https://www.tesourodireto.com.br), which offers a safe and profitable way to invest your money. Additionally, it's essential to stay up-to-date with current economic and financial trends, which can be done by following websites like the [Banco Central do Brasil](https://www.bcb.gov.br) or the [IBGE](https://www.ibge.gov.br).
 
 ## [Financial Education](/en/glossario/en-educacao-financeira)

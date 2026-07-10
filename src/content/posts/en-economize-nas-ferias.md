@@ -25,7 +25,7 @@ The July [vacation](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
 First and foremost, it's essential to have a solid financial plan. This includes defining a budget for the vacation, considering all possible expenses, from transportation and accommodation to food and activities. A practical example is the case of a family of four, with a monthly salary of R$ 8,000.00. If they decide to travel to the Northeast, the cost of airfare can range from R$ 500.00 to R$ 1,000.00 per person, depending on the time and airline. Additionally, the cost of accommodation can range from R$ 100.00 to R$ 300.00 per night, depending on the type of accommodation chosen.
 
 ## Tips to Save [Money](/en/posts/avoid-impulse-purchases)
-Here are some practical tips to save money on your July vacation:
+Here are some practical tips to save [money](/en/posts/creating-an-emergency-fund) on your July vacation:
 - Plan ahead: The earlier you plan, the more chances you'll have to find deals and discounts.
 - Choose more affordable destinations: Instead of choosing international destinations, consider national options that are more affordable.
 - Use travel apps: The [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) app, for example, can help you find deals and discounts on transportation and accommodation.
@@ -36,10 +36,10 @@ Here are some practical tips to save money on your July vacation:
 
 
 
-## Budget and Expense Control
+## Budget and [Expense Control](/en/posts/controle-gastos-cartao-credito)
 A well-defined budget and expense control are crucial to saving money on vacation. It's essential to have a clear idea of how much you can spend and where you can cut unnecessary expenses. The [Banco Central do Brasil](https://www.bcb.gov.br) offers tips and tools to help manage your budget and control expenses.
 
-## [Investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) and Savings
+## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and Savings
 In addition to saving money on vacation, it's essential to think about [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and savings for the future. The [Tesouro Direto](https://www.tesourodireto.com.br) is a secure and profitable investment option for Brazilians. Additionally, it's essential to have savings for emergencies and unexpected events.
 
 ![Budget and Expense Control](/images/posts/economize-nas-ferias-4.webp)

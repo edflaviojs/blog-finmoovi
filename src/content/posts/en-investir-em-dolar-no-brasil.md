@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introduction to Dollar Investment
-Investing in dollars can be a way to diversify your investment portfolio and protect your assets against fluctuations in the Brazilian [economy](/en/posts/30-day-rule-for-purchases). However, it's essential to understand how the dollar market works and what [risks](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and benefits are involved. Let's start with the basics: what is the US dollar and why is it important for Brazilian investors?
+Investing in dollars can be a way to diversify your investment portfolio and protect your assets against fluctuations in the Brazilian [economy](/en/posts/30-day-rule-for-purchases). However, it's essential to understand how the dollar market works and what [risks](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-rende-mais-em-2026) and benefits are involved. Let's start with the basics: what is the US dollar and why is it important for Brazilian investors?
 
 The US dollar is the official currency of the United States and is widely used in international transactions. In Brazil, the dollar is used as a form of investment, as it can be bought and sold on stock exchanges and currency exchange offices. If you're considering investing in dollars, it's crucial to assess whether it makes sense for your investor profile and financial goals.
 
@@ -35,7 +35,7 @@ There are several ways to invest in dollars in Brazil, including:
 
 Let's consider an example: if you invest R$1,000 in dollars at an exchange rate of R$4.50 per dollar, you'll receive approximately 222 dollars. If the dollar's value increases to R$5.00, the value of your investment will increase to R$1,111.
 
-## Risks of Dollar Investment
+## [Risks](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) of Dollar Investment
 Investing in dollars involves risks, including:
 
 * Exchange rate fluctuation risk: the dollar's value can fluctuate against the real, affecting the value of your investment.
@@ -75,4 +75,4 @@ Now that you better understand how to invest in dollars in Brazil, it's essentia
 
 
 
-To track your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) in one place, [try [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — multi-currency, intelligent reports, and 100% offline.
+To track your [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) in one place, [try [FinMoovi](/en/posts/5-alternativas-ao-[mobills](/en/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — multi-currency, intelligent reports, and 100% offline.
