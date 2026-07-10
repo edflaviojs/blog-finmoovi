@@ -19,7 +19,7 @@ seo:
 ## Expense Control
 Imagine you earn R$ 5,000 per month and spend R$ 1,500 on fixed expenses, such as rent, electricity, and internet. This means you have R$ 3,500 available to spend on other things, like food, leisure, and shopping. However, if you don't control your expenses, it's easy to exceed this limit and end up with credit card debt.
 
-One way to avoid this is to create a budget and track your expenses. **Practical tip:** You can use a financial management app to record all your expenses and have a clear view of where your money is going. For example, if you spend R$ 500 per month on dining out, you can try to reduce that amount to R$ 300 and save R$ 200.
+One way to avoid this is to create a [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and track your expenses. **Practical tip:** You can use a [financial management](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) app to record all your expenses and have a clear view of where your money is going. For example, if you spend R$ 500 per month on dining out, you can try to reduce that amount to R$ 300 and save R$ 200.
 
 ## Credit Card Expenses
 Credit cards can be a useful tool for making online or in-store purchases, but they can also be a trap for those who don't know how to control their expenses. It's essential to remember that a credit card is not free money and that you'll need to pay all expenses made with interest and fees.

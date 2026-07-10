@@ -56,7 +56,7 @@ Here are the steps to organize the [budget](/en/posts/how-to-create-personal-[bu
 
 
 ## Managing Finances
-To keep finances in order, it's crucial to have a control system. This can include using electronic spreadsheets or financial apps. The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information on [financial management](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) and planning.
+To keep finances in order, it's crucial to have a control system. This can include using electronic spreadsheets or [financial apps](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos). The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information on [financial management](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) and planning.
 
 ## Start with 5 minutes a day
 To keep the [budget](/en/posts/how-to-create-personal-[budget](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)) under control, dedicate a few minutes each day to review expenses and update the [budget](/en/posts/how-to-create-personal-[budget](/en/posts/reduce-fixed-expenses)). This can be done during breakfast or before bed. Remember that the key to success is consistency and communication between partners. Visit the [Receita Federal](https://www.gov.br/receitafederal) website for more information on [financial planning](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) and taxation.

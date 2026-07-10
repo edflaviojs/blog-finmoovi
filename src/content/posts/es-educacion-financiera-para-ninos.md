@@ -53,4 +53,4 @@ No es necesario ser un experto en finanzas para enseñar a los niños sobre [din
 
 ---
 
-**¿Quieres poner esto en práctica? [Prueba [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) y vea cómo es fácil controlar tus finanzas con categorización automática y informes visuales.**
+**¿Quieres poner esto en práctica? [Prueba [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) y vea cómo es fácil controlar tus finanzas con [categorización automática](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) y informes visuales.**

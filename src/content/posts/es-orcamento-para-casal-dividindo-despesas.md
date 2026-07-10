@@ -49,7 +49,7 @@ Aquí están los pasos para organizar el [presupuesto](/es/posts/como-crear-[pre
 3. **Asigna valores**: Asigna el valor correspondiente a cada gasto con base en la proporción definida.
 4. **Revisa y ajusta**: Revisa el [presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) regularmente y ajusta según sea necesario.
 
-**Consejo práctico:** Es importante tener una reserva para imprevistos. Una buena regla es reservar entre 10% a 20% del presupuesto total para emergencias.
+**Consejo práctico:** Es importante tener una reserva para imprevistos. Una buena regla es reservar entre 10% a 20% del [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/reducir-gastos-fijos-mensuales)-personal) total para emergencias.
 
 ![Organizando el Presupuesto](/images/posts/orcamento-para-casal-dividindo-despesas-3.webp)
 

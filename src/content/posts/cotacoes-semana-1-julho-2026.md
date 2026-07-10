@@ -52,9 +52,9 @@ Para a próxima semana, é importante estar atento às notícias econômicas e p
 
 Além disso, os investidores devem continuar a monitorar as decisões do COPOM e como elas podem afetar os juros e os investimentos. Com a ajuda de ferramentas como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), é possível manter um acompanhamento detalhado dos investimentos e tomar decisões informadas para alcançar os objetivos financeiros.
 
-Em resumo, a semana que passou foi marcada por estabilidade no mercado de câmbio e uma taxa Selic que continua a influenciar os investimentos. Com a [diversificação](/glossario/diversificacao) dos investimentos e o uso de ferramentas práticas como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos), os investidores pessoa física podem navegar pelo mercado financeiro com mais confiança e alcançar seus objetivos financeiros.
+Em resumo, a semana que passou foi marcada por estabilidade no mercado de câmbio e uma taxa Selic que continua a influenciar os investimentos. Com a [diversificação](/glossario/diversificacao) dos investimentos e o uso de ferramentas práticas como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)), os investidores pessoa física podem navegar pelo mercado financeiro com mais confiança e alcançar seus objetivos financeiros.
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
+**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) de graça](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
 

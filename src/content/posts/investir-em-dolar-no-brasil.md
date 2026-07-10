@@ -16,8 +16,8 @@ seo:
   keywords: ["investir em dólar","investimento em dólar","dólar americano","investimento no exterior","investimento em moeda estrangeira","investimento seguro","investir dólar brasil","comprar dólar investimento","dolarizar carteira"]
 ---
 
-## Introdução ao Investimento em Dólar
-Investir em dólar pode ser uma forma de diversificar seu portfólio de [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e proteger seu patrimônio contra flutuações na [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira. No entanto, é importante entender como funciona o mercado de dólar e quais são os riscos e benefícios envolvidos. Vamos começar com o básico: o que é o dólar americano e por que ele é importante para os investidores brasileiros?
+## Introdução ao Investimento em [Dólar](/posts/cotacoes-semana-1-julho-2026)
+Investir em dólar pode ser uma forma de diversificar seu portfólio de [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce) e proteger seu patrimônio contra flutuações na [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira. No entanto, é importante entender como funciona o mercado de dólar e quais são os riscos e benefícios envolvidos. Vamos começar com o básico: o que é o dólar americano e por que ele é importante para os investidores brasileiros?
 
 O dólar americano é a [moeda](/glossario/moeda) oficial dos Estados Unidos e é amplamente utilizada em transações internacionais. No Brasil, o dólar é usado como uma forma de investimento, pois pode ser comprado e vendido em bolsas de valores e corretoras de [câmbio](/glossario/cambio). Se você está considerando investir em dólar, é importante avaliar se faz sentido para seu perfil de investidor e objetivos financeiros.
 
@@ -69,7 +69,7 @@ Antes de investir em dólar, é importante considerar os seguintes cuidados:
 Para obter mais informações sobre investimento em dólar, você pode visitar o site do [Banco Central do Brasil](https://www.bcb.gov.br) ou do [Tesouro Direto](https://www.tesourodireto.com.br).
 
 ## Próximos passos
-Agora que você entende melhor como investir em dólar no Brasil, é importante avaliar se faz sentido para seu perfil de investidor e objetivos financeiros. Considere investir em dólar como uma forma de diversificar seu portfólio de investimentos e proteger seu patrimônio contra flutuações na [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) brasileira. Além disso, é importante lembrar que investir em dólar envolve riscos e é importante considerar esses riscos antes de investir.
+Agora que você entende melhor como investir em dólar no Brasil, é importante avaliar se faz sentido para seu perfil de investidor e objetivos financeiros. Considere investir em dólar como uma forma de diversificar seu portfólio de [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e proteger seu patrimônio contra flutuações na [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) brasileira. Além disso, é importante lembrar que investir em dólar envolve riscos e é importante considerar esses riscos antes de investir.
 
 ![Próximos passos](/images/posts/investir-em-dolar-no-brasil-6.webp)
 

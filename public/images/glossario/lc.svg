@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="transparent"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="rgba(128,128,128,0.06)" stroke="rgba(128,128,128,0.15)" stroke-width="1"/>
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  
+  <circle cx="1020" cy="94.5" r="84.40292387269437" fill="#8B5CF6" opacity="0.03"/>
+  <circle cx="180" cy="504" r="44.726436636410654" fill="#EC4899" opacity="0.04"/>
+  <path d="M140 308 L220 281 L300 270 L380 285 L460 316 L540 297 L620 307 L700 283 L780 293 L860 313 L940 303 L1020 327 L1060 530 L140 530 Z" fill="#8B5CF6" opacity="0.15"/>
+  <path d="M140 308 L220 281 L300 270 L380 285 L460 316 L540 297 L620 307 L700 283 L780 293 L860 313 L940 303 L1020 327" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M140 326 L220 308 L300 318 L380 334 L460 343 L540 339 L620 354 L700 364 L780 378 L860 377 L940 391 L1020 375 L1060 530 L140 530 Z" fill="#EC4899" opacity="0.12"/>
+  <path d="M140 326 L220 308 L300 318 L380 334 L460 343 L540 339 L620 354 L700 364 L780 378 L860 377 L940 391 L1020 375" stroke="#EC4899" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M140 429 L220 403 L300 377 L380 399 L460 415 L540 443 L620 453 L700 470 L780 464 L860 450 L940 459 L1020 488 L1060 530 L140 530 Z" fill="#8B949E" opacity="0.09"/>
+  <path d="M140 429 L220 403 L300 377 L380 399 L460 415 L540 443 L620 453 L700 470 L780 464 L860 450 L940 459 L1020 488" stroke="#8B949E" stroke-width="2" fill="none" opacity="0.8"/>
+</svg>
