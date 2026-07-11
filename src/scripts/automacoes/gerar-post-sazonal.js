@@ -212,12 +212,24 @@ Responda neste formato:
     const keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
     const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
-    if (!titleMatch || !contentMatch) throw new Error('Formato inválido da API.');
-
-    const title = titleMatch[1].trim();
-    const meta = metaMatch ? metaMatch[1].trim() : '';
-    const keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : topic.keywords;
-    const content = contentMatch[1].trim();
+    let title, meta, keywords, content;
+    if (titleMatch && contentMatch) {
+      title = titleMatch[1].trim();
+      meta = metaMatch ? metaMatch[1].trim() : '';
+      keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : topic.keywords;
+      content = contentMatch[1].trim();
+    } else if (result && result.trim().length > 300 && /^#{1,2}\s/m.test(result)) {
+      // Fallback: modelo respondeu em markdown puro sem os delimitadores.
+      // Mesmo comportamento tolerante de parsePostContent() em kie-ai.js.
+      const h1 = result.match(/^#\s+(.+)$/m);
+      title = (h1 ? h1[1] : result.split('\n').find(l => l.trim()).replace(/^#+\s*/, '')).trim();
+      content = result.replace(/^#\s+.+\r?\n?/m, '').trim();
+      meta = '';
+      keywords = topic.keywords;
+      console.log('ℹ️ Delimitadores ausentes — usando fallback markdown (título do primeiro H1).');
+    } else {
+      throw new Error('Formato inválido da API.');
+    }
     const allKeywords = [...new Set([...keywords, ...topic.keywords])];
     const slugPt = createSlug(title);
 

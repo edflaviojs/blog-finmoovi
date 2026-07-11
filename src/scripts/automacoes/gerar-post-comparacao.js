@@ -192,14 +192,24 @@ Responda neste formato:
       }
     }
 
-    if (!titleMatch || !contentMatch) {
+    let title, meta, keywords, content;
+    if (titleMatch && contentMatch) {
+      title = titleMatch[1].trim();
+      meta = metaMatch ? metaMatch[1].trim() : '';
+      keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : comp.keywords;
+      content = contentMatch[1].trim();
+    } else if (result && result.trim().length > 300 && /^#{1,2}\s/m.test(result)) {
+      // Fallback: modelo respondeu em markdown puro (ex.: "# Título") sem os delimitadores.
+      // Mesmo comportamento tolerante de parsePostContent() em kie-ai.js.
+      const h1 = result.match(/^#\s+(.+)$/m);
+      title = (h1 ? h1[1] : result.split('\n').find(l => l.trim()).replace(/^#+\s*/, '')).trim();
+      content = result.replace(/^#\s+.+\r?\n?/m, '').trim();
+      meta = '';
+      keywords = comp.keywords;
+      console.log('ℹ️ Delimitadores ausentes — usando fallback markdown (título do primeiro H1).');
+    } else {
       throw new Error(`Formato inválido após 3 tentativas. Última resposta (500 chars): ${(result || '').substring(0, 500)}`);
     }
-
-    const title = titleMatch[1].trim();
-    const meta = metaMatch ? metaMatch[1].trim() : '';
-    const keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : comp.keywords;
-    const content = contentMatch[1].trim();
     const allKeywords = [...new Set([...keywords, ...comp.keywords])];
     const slugPt = createSlug(title);
 
