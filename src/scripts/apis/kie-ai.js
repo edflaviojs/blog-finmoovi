@@ -112,7 +112,8 @@ export async function generateText(prompt, options = {}) {
         const data = await response.json();
         const content = data.choices?.[0]?.message?.content || '';
         if (content) {
-          if (p > 0) console.log(`ℹ️ Texto gerado via fallback: ${provider.name} (${useModel}).`);
+          const via = p > 0 ? ` (fallback #${p})` : ' (primário)';
+          console.log(`🤖 Texto gerado via ${provider.name} — ${useModel}${via}`);
           return content;
         }
         errors.push(`${provider.name}: resposta vazia`);
