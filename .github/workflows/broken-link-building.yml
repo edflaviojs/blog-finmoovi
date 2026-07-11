@@ -22,8 +22,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install tsx
-        run: npm install -g tsx
+      - name: Install dependencies
+        run: npm ci
 
       - name: Run Broken Link Finder
         run: node --import tsx scripts/broken-link-finder.js
