@@ -37,10 +37,10 @@ Here are some practical tips to save [money](/en/posts/creating-an-emergency-fun
 
 
 ## Budget and [Expense Control](/en/posts/controle-gastos-cartao-credito)
-A well-defined budget and expense control are crucial to [saving](/en/posts/criar-reserva-de-emergencia) money on vacation. It's essential to have a clear idea of how much you can spend and where you can cut unnecessary expenses. The [Banco Central do Brasil](https://www.bcb.gov.br) offers tips and tools to help manage your budget and control expenses.
+A well-defined budget and expense control are crucial to [saving](/en/posts/criar-reserva-de-emergencia) [money](/en/posts/financial-education-for-children) on vacation. It's essential to have a clear idea of how much you can spend and where you can cut unnecessary expenses. The [Banco Central do Brasil](https://www.bcb.gov.br) offers tips and tools to help manage your budget and control expenses.
 
 ## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and Savings
-In addition to saving money on vacation, it's essential to think about [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and savings for the future. The [Tesouro Direto](https://www.tesourodireto.com.br) is a secure and profitable investment option for Brazilians. Additionally, it's essential to have savings for emergencies and unexpected events.
+In addition to saving [money](/en/posts/financial-planning-for-couples) on vacation, it's essential to think about [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and savings for the future. The [Tesouro Direto](https://www.tesourodireto.com.br) is a secure and profitable investment option for Brazilians. Additionally, it's essential to have savings for emergencies and unexpected events.
 
 ![Budget and Expense Control](/images/posts/economize-nas-ferias-4.webp)
 

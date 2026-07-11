@@ -42,7 +42,7 @@ Agora que você tem metas financeiras definidas, é hora de criar um [orçamento
 
 ## Gerenciando Dívidas e Gastos
 Gerenciar dívidas e gastos é fundamental para alcançar suas metas financeiras. Aqui estão algumas dicas para ajudá-lo a gerenciar dívidas e gastos:
-1. **Pague suas dívidas mais caras primeiro**: Isso inclui dívidas com [juros](/glossario/juros) altos, como cartões de crédito.
+1. **Pague suas dívidas mais caras primeiro**: Isso inclui dívidas com [juros](/glossario/juros) altos, como cartões de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-).
 2. **Negocie com seus credores**: Se você está tendo dificuldade em pagar suas dívidas, negocie com seus credores para encontrar uma solução.
 3. **Corte gastos desnecessários**: Isso inclui gastos com itens que não são essenciais, como compras impulsivas.
 4. **Use o método da "envelope"**: Separe seu [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) em envelopes para diferentes categorias de gastos, como alimentação e transporte.

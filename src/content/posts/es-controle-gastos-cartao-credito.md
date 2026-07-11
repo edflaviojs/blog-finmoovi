@@ -16,7 +16,7 @@ seo:
   keywords: ["tarjeta de crédito","control de gastos","presupuesto","finanzas personales","endeudamiento","dinero","controlar tarjeta crédito","gastos tarjeta","no endeudarte"]
 ---
 
-## Entendiendo la Tarjeta de Crédito
+## Entendiendo la [Tarjeta de Crédito](/es/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)
 La tarjeta de crédito es una herramienta conveniente para realizar compras, pero puede convertirse en un problema si no se utiliza con responsabilidad. Imagina que ganas R$ 4.000 por mes y decides usar la tarjeta para comprar un smartphone de R$ 2.000. Si no tienes ese [valor](/es/glossario/es-valor) disponible para pagar la factura, puedes acabar endeudándote.
 
 ## Creando un [Presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)

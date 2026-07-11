@@ -16,7 +16,7 @@ seo:
   keywords: ["cartão de crédito","controle de gastos","orçamento","finanças pessoais","endividamento","dinheiro","controlar cartão crédito","gastos cartão","não se endividar"]
 ---
 
-## Entendendo o Cartão de Crédito
+## Entendendo o [Cartão de Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)
 O cartão de crédito é uma ferramenta conveniente para realizar compras, mas pode se tornar um problema se não for usado com responsabilidade. Imagine que você ganha R$ 4.000 por mês e decide usar o cartão para comprar um smartphone de R$ 2.000. Se você não tiver esse [valor](/glossario/valor) disponível para pagar a fatura, pode acabar se endividando.
 
 ## Criando um [Orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias)

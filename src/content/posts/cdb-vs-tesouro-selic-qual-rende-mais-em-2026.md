@@ -39,7 +39,7 @@ No entanto, esses números são simplificados e não consideram as possíveis va
 
 ## Riscos
 ### Riscos do CDB
-O CDB, embora seja considerado um investimento de baixo risco, não está completamente livre de riscos. O principal risco é o risco de crédito do banco emissor. Se o banco tiver problemas financeiros, pode haver dificuldade em resgatar o investimento. No entanto, o [Fundo Garantidor de Créditos (FGC)](https://www.fgc.org.br) oferece uma proteção de até R$250.000 por correntista e instituição financeira.
+O CDB, embora seja considerado um investimento de baixo risco, não está completamente livre de riscos. O principal risco é o risco de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) do banco emissor. Se o banco tiver problemas financeiros, pode haver dificuldade em resgatar o investimento. No entanto, o [Fundo Garantidor de Créditos (FGC)](https://www.fgc.org.br) oferece uma proteção de até R$250.000 por correntista e instituição financeira.
 
 ### Riscos do Tesouro Selic
 O Tesouro Selic, por ser um investimento com garantia do governo, é considerado de muito baixo risco. No entanto, o investidor está sujeito às variações da taxa Selic, o que pode afetar o rendimento. Além disso, como o Tesouro Selic é indexado à [inflação](/glossario/inflacao) (no caso do Tesouro [IPCA](/glossario/ipca)), o investidor também pode ser afetado pelas variações dos índices de inflação.

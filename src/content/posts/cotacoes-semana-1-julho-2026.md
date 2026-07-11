@@ -38,7 +38,7 @@ A taxa Selic, que é a taxa básica de [juros](/glossario/juros) da [economia](/
 
 
 
-Para os investidores, é importante entender como as mudanças na Selic podem impactar seus investimentos. Por exemplo, uma elevação na Selic pode tornar os investimentos em [renda fixa](/posts/tesouro-direto-para-iniciantes) mais atraentes, pois oferecem juros mais altos, mas também pode aumentar o custo do crédito para as empresas e consumidores.
+Para os investidores, é importante entender como as mudanças na Selic podem impactar seus investimentos. Por exemplo, uma elevação na Selic pode tornar os investimentos em [renda fixa](/posts/tesouro-direto-para-iniciantes) mais atraentes, pois oferecem juros mais altos, mas também pode aumentar o custo do [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) para as empresas e consumidores.
 
 ## Dica Prática para o Investidor Pessoa Física
 
@@ -56,5 +56,5 @@ Em resumo, a semana que passou foi marcada por estabilidade no mercado de câmbi
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) de graça](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
+**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) de graça](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)).com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
 

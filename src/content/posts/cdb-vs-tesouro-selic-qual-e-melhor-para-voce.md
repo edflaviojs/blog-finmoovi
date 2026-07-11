@@ -43,7 +43,7 @@ Um exemplo de como funciona o [Tesouro Selic](/posts/cdb-vs-tesouro-[selic](/glo
 | Taxa de juros | 8% a 12% ao ano | 10% a 14% ao ano |
 | Liquidez | Diária, semestral ou anual | Diária |
 | Tributação | Tributado de acordo com a tabela de imposto de renda | Isento de imposto de renda |
-| Risco | Risco de crédito do banco | Risco de crédito do governo |
+| Risco | Risco de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) do banco | Risco de crédito do governo |
 | Minimo de investimento | R$ 1.000,00 | R$ 30,00 |
 | Prazo de investimento | 30 dias a 5 anos | 30 dias a 10 anos |
 

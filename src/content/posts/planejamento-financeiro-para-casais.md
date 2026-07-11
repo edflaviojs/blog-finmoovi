@@ -23,7 +23,7 @@ Quando se trata de finanças, é comum que os casais tenham objetivos e priorida
 É importante que os casais definam prioridades financeiras juntos. Isso pode incluir desde a compra de uma casa própria até a formação de uma [reserva de emergência](/glossario/reserva-de-emergencia). **Dica prática:** use a regra dos 50/30/20, onde 50% do orçamento vai para despesas essenciais, 30% para despesas não essenciais e 20% para [poupança](/glossario/poupanca) e [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce). Além disso, é fundamental ter uma visão clara de onde o [dinheiro](/posts/cashback-inteligente) está sendo gasto. Uma ferramenta útil para isso é o aplicativo de controle financeiro, que pode ajudar a acompanhar as despesas e receitas de forma mais eficaz.
 
 ## Gestão de Dívidas
-Muitos casais enfrentam o desafio de lidar com dívidas, seja em cartões de crédito, empréstimos pessoais ou financiamentos de veículos. É crucial abordar essas dívidas de forma conjunta e criar um plano para quitá-las. Isso pode envolver a negociação de taxas de [juros](/glossario/juros) mais baixas, a consolidação de dívidas ou a adoção de estratégias de pagamento agressivas. Para mais informações sobre gestão de dívidas, você pode consultar o site da [Serasa](https://www.serasa.com.br), que oferece ferramentas e recursos para ajudar a gerenciar suas finanças.
+Muitos casais enfrentam o desafio de lidar com dívidas, seja em cartões de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), empréstimos pessoais ou financiamentos de veículos. É crucial abordar essas dívidas de forma conjunta e criar um plano para quitá-las. Isso pode envolver a negociação de taxas de [juros](/glossario/juros) mais baixas, a consolidação de dívidas ou a adoção de estratégias de pagamento agressivas. Para mais informações sobre gestão de dívidas, você pode consultar o site da [Serasa](https://www.serasa.com.br), que oferece ferramentas e recursos para ajudar a gerenciar suas finanças.
 
 ![Definindo Prioridades](/images/posts/planejamento-financeiro-para-casais-2.webp)
 
@@ -47,4 +47,4 @@ Não importa em que estágio você e seu parceiro estejam em termos de [planejam
 
 
 ---
-**O próximo passo é seu. [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://finmoovi.com) e descubra para onde seu dinheiro está indo de verdade.**
+**O próximo passo é seu. [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo de verdade.**

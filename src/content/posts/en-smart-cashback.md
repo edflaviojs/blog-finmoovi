@@ -37,7 +37,7 @@ Although cashback can be a great way to save [money](/en/posts/30-day-rule-for-p
 
 
 ## Start today
-Now that you know how to use cashback intelligently, it's time to start [saving](/en/posts/criar-reserva-de-emergencia) [money](/en/posts/avoid-impulse-purchases). Remember to choose a cashback program that suits your needs and read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is only part of responsible [financial management](/en/posts/orcamento-com-salario-minimo-dicas-praticas). You can learn more about responsible financial management on the [Investopedia](https://www.investopedia.com) website.
+Now that you know how to use cashback intelligently, it's time to start [saving](/en/posts/criar-reserva-de-emergencia) [money](/en/posts/avoid-impulse-purchases). Remember to choose a cashback program that suits your needs and read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is only part of responsible [financial management](/en/posts/orcamento-com-salario-minimo-dicas-praticas). You can learn more about responsible [financial management](/en/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) on the [Investopedia](https://www.investopedia.com) website.
 
 ![Evitando armadilhas](/images/posts/cashback-inteligente-4.webp)
 

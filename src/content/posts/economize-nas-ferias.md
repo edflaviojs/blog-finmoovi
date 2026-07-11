@@ -36,10 +36,10 @@ Aqui estão algumas dicas práticas para economizar nas férias de julho:
 
 
 
-## Orçamento e Controle de Gastos
+## Orçamento e [Controle de Gastos](/posts/controle-gastos-cartao-credito)
 Um orçamento bem definido e o controle de gastos são fundamentais para economizar nas férias. É importante ter uma ideia clara de quanto você pode gastar e onde você pode cortar gastos desnecessários. O [Banco Central do Brasil](https://www.bcb.gov.br) oferece dicas e ferramentas para ajudar a gerenciar o orçamento e controlar os gastos.
 
-## [Investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce) e [Poupança](/glossario/poupanca)
+## [Investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-julho-2026))-qual-e-melhor-para-voce) e [Poupança](/glossario/poupanca)
 Além de economizar nas férias, é importante pensar em [investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce) e poupança para o futuro. O [Tesouro Direto](https://www.tesourodireto.com.br) é uma opção de investimento segura e rentável para os brasileiros. Além disso, é importante ter uma poupança para emergências e imprevistos.
 
 ![Orçamento e Controle de Gastos](/images/posts/economize-nas-ferias-4.webp)

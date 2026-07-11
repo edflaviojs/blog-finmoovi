@@ -35,7 +35,7 @@ No entanto, pesquisas mostram que 70% das pessoas desistem de usar planilhas de 
 Um app de finanças pode ser uma solução mais eficaz para gerenciar seus gastos e [finanças pessoais](/posts/7-erros-financeiros-iniciante). Alguns dos principais [benefícios](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-rende-mais-em-2026) dos apps de finanças incluem:
 - **Consistência**: Os apps podem ajudá-lo a manter um registro consistente dos seus gastos, enviando lembretes e notificações para garantir que você não esqueça de registrar nada.
 - **Mobilidade**: Com um app, você pode registrar seus gastos a qualquer momento e em qualquer lugar, usando seu smartphone.
-- **Automação**: Muitos apps de finanças podem ser conectados às suas contas bancárias e cartões de crédito, permitindo que os gastos sejam registrados automaticamente.
+- **Automação**: Muitos apps de finanças podem ser conectados às suas contas bancárias e cartões de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), permitindo que os gastos sejam registrados automaticamente.
 - **Voz**: Alguns apps permitem que você registre gastos usando comandos de voz, tornando o processo ainda mais rápido e conveniente.
 
 Existem vários apps de finanças disponíveis no mercado, incluindo o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos), [Mobills](/posts/5-alternativas-ao-mobills-em-2026) e [Organizze](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su). Cada um deles tem suas próprias características e vantagens, então é importante escolher o que melhor se adequa às suas necessidades.

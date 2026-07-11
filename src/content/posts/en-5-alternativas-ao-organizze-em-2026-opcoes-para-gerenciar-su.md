@@ -103,4 +103,4 @@ Price: Free
 ## Which one to choose?
 The choice of the right finance app depends on the individual needs of each user. If you need to manage your finances in different countries, FinMoovi may be the best option. If you're looking for a free and easy-to-use option, GuiaBolso or Mobills may be good choices. If you're looking for a complete option that offers investment and credit tools, ContaAzul or Nubank may be good options.
 Remember to do a thorough research and read user reviews before making a decision. Additionally, remember that [financial management](/en/posts/orcamento-com-salario-minimo-dicas-praticas) is an ongoing process, and it's essential to review and adjust your finances regularly to ensure you're on the right track.
-For more information on financial management, you can visit the [Banco Central](https://www.bcb.gov.br) website or the [NerdWallet](https://www.nerdwallet.com) website.
+For more information on [financial management](/en/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), you can visit the [Banco Central](https://www.bcb.gov.br) website or the [NerdWallet](https://www.nerdwallet.com) website.

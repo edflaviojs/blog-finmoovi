@@ -30,7 +30,7 @@ Here are 5 alternatives to Mobills that you may consider:
 
 
 1. **Personal Capital**
-Personal Capital is a financial management app that helps users control their expenses, create budgets, and invest their [money](/en/posts/avoid-impulse-purchases). With Personal Capital, you can connect your bank accounts and credit cards to get an overview of your finances.
+Personal Capital is a [financial management](/en/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) app that helps users control their expenses, create budgets, and invest their [money](/en/posts/avoid-impulse-purchases). With Personal Capital, you can connect your bank accounts and credit cards to get an overview of your finances.
 Pros:
 * Easy-to-use interface
 * Advanced [investment](/en/posts/montando-carteira-diversificada-com-r-500) tools

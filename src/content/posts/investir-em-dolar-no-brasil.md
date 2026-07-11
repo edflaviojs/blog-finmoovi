@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introdução ao Investimento em [Dólar](/posts/cotacoes-semana-1-julho-2026)
-Investir em dólar pode ser uma forma de diversificar seu portfólio de [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce) e proteger seu patrimônio contra flutuações na [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira. No entanto, é importante entender como funciona o mercado de dólar e quais são os riscos e benefícios envolvidos. Vamos começar com o básico: o que é o dólar americano e por que ele é importante para os investidores brasileiros?
+Investir em [dólar](/posts/cotacoes-semana-1-junho-2026) pode ser uma forma de diversificar seu portfólio de [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce) e proteger seu patrimônio contra flutuações na [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira. No entanto, é importante entender como funciona o mercado de [dólar](/posts/cotacoes-semana-3-junho-2026) e quais são os riscos e benefícios envolvidos. Vamos começar com o básico: o que é o dólar americano e por que ele é importante para os investidores brasileiros?
 
 O dólar americano é a [moeda](/glossario/moeda) oficial dos Estados Unidos e é amplamente utilizada em transações internacionais. No Brasil, o dólar é usado como uma forma de investimento, pois pode ser comprado e vendido em bolsas de valores e corretoras de [câmbio](/glossario/cambio). Se você está considerando investir em dólar, é importante avaliar se faz sentido para seu perfil de investidor e objetivos financeiros.
 

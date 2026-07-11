@@ -42,7 +42,7 @@ Now that you have defined financial goals, it's time to create a [budget](/en/po
 
 ## Managing Debt and Expenses
 Managing debt and expenses is crucial to achieving your financial goals. Here are some tips to help you manage debt and expenses:
-1. **Pay off your most expensive debts first**: This includes debts with high interest rates, such as credit cards.
+1. **Pay off your most expensive debts first**: This includes debts with high interest rates, such as [credit](/en/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) cards.
 2. **Negotiate with your creditors**: If you're having trouble paying off your debts, negotiate with your creditors to find a solution.
 3. **Cut unnecessary expenses**: This includes expenses for non-essential items, such as impulse purchases.
 4. **Use the envelope method**: Divide your [money](/en/posts/avoid-impulse-purchases) into envelopes for different expense categories, such as food and transportation.

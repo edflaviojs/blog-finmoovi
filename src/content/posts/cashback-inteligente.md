@@ -30,7 +30,7 @@ Para maximizar o seu cashback, é importante entender como ele funciona e como v
 
 
 ## Evitando armadilhas
-Embora o cashback possa ser uma ótima maneira de economizar [dinheiro](/posts/como-criar-uma-reserva-de-emergencia), é importante estar ciente das armadilhas. Por exemplo, alguns programas de cashback podem ter taxas ou [juros](/glossario/juros) altos, então é importante ler os termos e condições antes de se inscrever. Além disso, é importante lembrar que o cashback não é um substituto para uma gestão financeira responsável. É importante ter um [orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) e priorizar suas despesas antes de fazer compras. Você pode aprender mais sobre gestão financeira responsável no site do [Banco Central do Brasil](https://www.bcb.gov.br).
+Embora o cashback possa ser uma ótima maneira de economizar [dinheiro](/posts/como-criar-uma-reserva-de-emergencia), é importante estar ciente das armadilhas. Por exemplo, alguns programas de cashback podem ter taxas ou [juros](/glossario/juros) altos, então é importante ler os termos e condições antes de se inscrever. Além disso, é importante lembrar que o cashback não é um substituto para uma [gestão financeira](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) responsável. É importante ter um [orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) e priorizar suas despesas antes de fazer compras. Você pode aprender mais sobre gestão financeira responsável no site do [Banco Central do Brasil](https://www.bcb.gov.br).
 
 ![Maximizando o seu cashback](/images/posts/cashback-inteligente-3.webp)
 

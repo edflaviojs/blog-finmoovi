@@ -44,7 +44,7 @@ Embora o Tesouro Direto seja considerado um [investimento](/posts/montando-carte
 
 * Risco de inflação: se a inflação aumentar, o valor real do seu investimento pode diminuir.
 * Risco de liquidez: se você precisar resgatar seus títulos antes do vencimento, pode haver perda de juros.
-* Risco de crédito: embora o governo seja considerado um devedor de baixo risco, ainda existe o risco de default.
+* Risco de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-): embora o governo seja considerado um devedor de baixo risco, ainda existe o risco de default.
 
 ![Riscos](/images/posts/tesouro-direto-para-iniciantes-4.webp)
 

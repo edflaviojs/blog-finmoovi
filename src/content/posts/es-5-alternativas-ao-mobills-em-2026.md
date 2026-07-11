@@ -30,7 +30,7 @@ Aquí te presentamos 5 alternativas al Mobills que puedes considerar:
 
 
 1. **Personal Capital**
-El Personal Capital es una aplicación de gestión financiera que ayuda a los usuarios a controlar sus gastos, crear presupuestos y invertir su [dinero](/es/posts/ahorra-en-las-compras-del-supermercado). Con el Personal Capital, puedes conectar tus cuentas bancarias y tarjetas de crédito para tener una visión general de tus finanzas.
+El Personal Capital es una aplicación de [gestión financiera](/es/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) que ayuda a los usuarios a controlar sus gastos, crear presupuestos y invertir su [dinero](/es/posts/ahorra-en-las-compras-del-supermercado). Con el Personal Capital, puedes conectar tus cuentas bancarias y tarjetas de crédito para tener una visión general de tus finanzas.
 Pros:
 * Interfaz fácil de usar
 * Herramientas de [inversión](/es/posts/montando-carteira-diversificada-com-r-500) avanzadas

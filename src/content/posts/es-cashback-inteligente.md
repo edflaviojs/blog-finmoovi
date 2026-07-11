@@ -37,7 +37,7 @@ Aunque el cashback puede ser una excelente manera de ahorrar [dinero](/es/posts/
 
 
 ## Comienza hoy
-Ahora que sabes cómo usar cashback de forma inteligente, es hora de comenzar a ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Recuerda escoger un programa de cashback que se adapte a tus necesidades y leer los términos y condiciones antes de inscribirte. Además, es importante recordar que el cashback es solo una parte de una gestión financiera responsable. Puedes aprender más sobre gestión financiera responsable en el sitio del [Investopedia](https://www.investopedia.com). 
+Ahora que sabes cómo usar cashback de forma inteligente, es hora de comenzar a ahorrar [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia). Recuerda escoger un programa de cashback que se adapte a tus necesidades y leer los términos y condiciones antes de inscribirte. Además, es importante recordar que el cashback es solo una parte de una [gestión financiera](/es/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) responsable. Puedes aprender más sobre gestión financiera responsable en el sitio del [Investopedia](https://www.investopedia.com). 
 
 ![Evitando armadilhas](/images/posts/cashback-inteligente-4.webp)
 

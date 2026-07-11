@@ -42,7 +42,7 @@ Ahora que tienes metas financieras definidas, es hora de crear un [presupuesto](
 
 ## Gestionando Deudas y Gastos
 Gestionar deudas y gastos es fundamental para alcanzar tus metas financieras. Aquí te presentamos algunas sugerencias para ayudarte a gestionar deudas y gastos:
-1. **Paga tus deudas más caras primero**: Esto incluye deudas con intereses altos, como tarjetas de crédito.
+1. **Paga tus deudas más caras primero**: Esto incluye deudas con intereses altos, como tarjetas de [crédito](/es/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-).
 2. **Negocia con tus acreedores**: Si estás teniendo dificultades para pagar tus deudas, negocia con tus acreedores para encontrar una solución.
 3. **Corta gastos innecesarios**: Esto incluye gastos con artículos que no son esenciales, como compras impulsivas.
 4. **Usa el método de la "envelope"**: Separa tu [dinero](/es/posts/ahorrando-en-la-cuenta-del-mercado) en sobres para diferentes categorías de gastos, como alimentación y transporte.
