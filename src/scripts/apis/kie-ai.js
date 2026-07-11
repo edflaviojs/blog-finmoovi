@@ -8,66 +8,132 @@ import { generateCoverImage, generateCoverImageSync, generateInlineImage } from 
 import { saveSVGImage } from './svg-generator.js';
 import { config } from '../../../site.config.ts';
 
-const GROQ_API_BASE = 'https://api.groq.com/openai/v1';
-const GROQ_API_KEY = process.env.GROQ_API_KEY || process.env.KIE_API_KEY;
-
-if (!GROQ_API_KEY) {
-  console.warn('⚠️ GROQ_API_KEY not configured - text generation will fail');
-}
+// Provedores de geração de texto (todos compatíveis com a API OpenAI), em
+// ordem de prioridade/fallback. Cada um se auto-habilita conforme as
+// credenciais presentes no ambiente. Ver getTextProviders() abaixo.
 
 // Re-export image functions for backward compatibility
 export { generateCoverImage, generateCoverImageSync, generateInlineImage };
 
 /**
- * Generate text content using Groq (with retry on rate limit)
+ * Retorna a lista ordenada de provedores de texto habilitados.
+ * Ordem = prioridade de fallback: Cerebras → Groq → Cloudflare.
+ * Um provedor só entra na lista se suas credenciais existirem — assim,
+ * adicionar/remover um secret ativa/desativa o provedor sem mudar código.
+ */
+function getTextProviders() {
+  const providers = [];
+
+  // 1. Cerebras — mesmo Llama 3.3 70B, 1M tokens/dia e 60K TPM (requer CEREBRAS_API_KEY)
+  if (process.env.CEREBRAS_API_KEY) {
+    providers.push({
+      name: 'cerebras',
+      url: 'https://api.cerebras.ai/v1/chat/completions',
+      apiKey: process.env.CEREBRAS_API_KEY,
+      model: 'llama-3.3-70b',
+    });
+  }
+
+  // 2. Groq — substituto oficial do llama-3.3-70b (desligado em 16/08/2026)
+  const groqKey = process.env.GROQ_API_KEY || process.env.KIE_API_KEY;
+  if (groqKey) {
+    providers.push({
+      name: 'groq',
+      url: 'https://api.groq.com/openai/v1/chat/completions',
+      apiKey: groqKey,
+      model: 'openai/gpt-oss-120b',
+    });
+  }
+
+  // 3. Cloudflare Workers AI — rede de segurança (credenciais já existentes)
+  if (process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_AI_TOKEN) {
+    providers.push({
+      name: 'cloudflare',
+      url: `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions`,
+      apiKey: process.env.CLOUDFLARE_AI_TOKEN,
+      model: '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
+    });
+  }
+
+  return providers;
+}
+
+/**
+ * Gera texto com roteamento entre múltiplos provedores (API compatível OpenAI).
+ * Tenta cada provedor na ordem; em rate limit (429) faz backoff curto e retenta
+ * o mesmo; em erro/queda ou 429 esgotado, cai para o próximo provedor. Só lança
+ * exceção se TODOS falharem. Mesma assinatura/retorno de antes (string).
  */
 export async function generateText(prompt, options = {}) {
   const {
     maxTokens = 4000,
     temperature = 0.7,
-    model = 'llama-3.3-70b-versatile',
-    retries = 3,
+    model,             // override opcional — aplicado apenas ao provedor primário
+    retries = 2,       // tentativas por provedor em caso de 429
   } = options;
 
-  for (let attempt = 1; attempt <= retries; attempt++) {
-    const response = await fetch(`${GROQ_API_BASE}/chat/completions`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${GROQ_API_KEY}`,
-      },
-      body: JSON.stringify({
-        model,
-        messages: [
-          {
-            role: 'system',
-            content: config.ai.personality
-          },
-          {
-            role: 'user',
-            content: prompt
-          }
-        ],
-        max_tokens: maxTokens,
-        temperature,
-      }),
-    });
-
-    if (response.ok) {
-      const data = await response.json();
-      return data.choices?.[0]?.message?.content || '';
-    }
-
-    if (response.status === 429 && attempt < retries) {
-      const retryAfter = Math.ceil(30 * attempt);
-      console.log(`⏳ Rate limit atingido. Aguardando ${retryAfter}s antes de tentar novamente (tentativa ${attempt}/${retries})...`);
-      await new Promise(r => setTimeout(r, retryAfter * 1000));
-      continue;
-    }
-
-    const error = await response.text();
-    throw new Error(`Groq text generation failed (HTTP ${response.status}): ${error}`);
+  const providers = getTextProviders();
+  if (providers.length === 0) {
+    throw new Error('Nenhum provedor de IA configurado (defina CEREBRAS_API_KEY, GROQ_API_KEY/KIE_API_KEY ou CLOUDFLARE_ACCOUNT_ID+CLOUDFLARE_AI_TOKEN).');
   }
+
+  const errors = [];
+
+  for (let p = 0; p < providers.length; p++) {
+    const provider = providers[p];
+    const useModel = (p === 0 && model) ? model : provider.model;
+
+    for (let attempt = 1; attempt <= retries; attempt++) {
+      let response;
+      try {
+        response = await fetch(provider.url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${provider.apiKey}`,
+          },
+          body: JSON.stringify({
+            model: useModel,
+            messages: [
+              { role: 'system', content: config.ai.personality },
+              { role: 'user', content: prompt },
+            ],
+            max_tokens: maxTokens,
+            temperature,
+          }),
+        });
+      } catch (err) {
+        errors.push(`${provider.name}: erro de rede (${err.message})`);
+        console.log(`⚠️ ${provider.name}: erro de rede — tentando próximo provedor...`);
+        break; // queda de rede → próximo provedor
+      }
+
+      if (response.ok) {
+        const data = await response.json();
+        const content = data.choices?.[0]?.message?.content || '';
+        if (content) {
+          if (p > 0) console.log(`ℹ️ Texto gerado via fallback: ${provider.name} (${useModel}).`);
+          return content;
+        }
+        errors.push(`${provider.name}: resposta vazia`);
+        break; // resposta vazia → próximo provedor
+      }
+
+      if (response.status === 429 && attempt < retries) {
+        const wait = Math.ceil(20 * attempt);
+        console.log(`⏳ ${provider.name}: rate limit (429). Aguardando ${wait}s (tentativa ${attempt}/${retries})...`);
+        await new Promise(r => setTimeout(r, wait * 1000));
+        continue; // retenta o MESMO provedor
+      }
+
+      const errText = await response.text().catch(() => '');
+      errors.push(`${provider.name}: HTTP ${response.status} ${errText.slice(0, 200)}`);
+      console.log(`⚠️ ${provider.name} falhou (HTTP ${response.status}) — tentando próximo provedor...`);
+      break; // erro não-recuperável nesse provedor → próximo
+    }
+  }
+
+  throw new Error(`Todos os provedores de IA falharam:\n- ${errors.join('\n- ')}`);
 }
 
 /**
