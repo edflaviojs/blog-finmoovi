@@ -151,12 +151,12 @@ async function main() {
 
   // Validate env vars
   if (!PINTEREST_ACCESS_TOKEN) {
-    console.error('ERROR: PINTEREST_ACCESS_TOKEN env var is required');
-    process.exit(1);
+    console.log('⏭️  PINTEREST_ACCESS_TOKEN não configurado — pulando publicação no Pinterest (app pendente de aprovação).');
+    process.exit(0);
   }
   if (!PINTEREST_BOARD_ID) {
-    console.error('ERROR: PINTEREST_BOARD_ID env var is required');
-    process.exit(1);
+    console.log('⏭️  PINTEREST_BOARD_ID não configurado — pulando publicação no Pinterest.');
+    process.exit(0);
   }
 
   // Load tracking data
