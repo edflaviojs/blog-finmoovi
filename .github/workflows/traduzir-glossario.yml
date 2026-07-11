@@ -41,5 +41,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "glossário: traduzir termos para EN e ES [auto]"
+            git pull --rebase origin main || true
             git push
           fi

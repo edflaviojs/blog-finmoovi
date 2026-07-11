@@ -49,5 +49,6 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "chore: update social distribution tracking [skip ci]"
+            git pull --rebase origin main || true
             git push
           fi

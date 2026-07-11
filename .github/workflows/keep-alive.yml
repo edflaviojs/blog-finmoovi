@@ -22,4 +22,5 @@ jobs:
           git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
           git add .github/keep-alive.log
           git commit -m "chore: keep-alive ping" || echo "No changes"
+          git pull --rebase origin main || true
           git push || echo "Nothing to push"
