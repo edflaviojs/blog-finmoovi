@@ -7,7 +7,7 @@ image: "/images/glossario/nubank.webp"
 category: "basico"
 tags: ["nubank", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
-publishedAt: 2026-06-16
+publishedAt: 2026-07-11
 readingTime: 5
 locale: "es"
 translationKey: "glossario-nubank"
@@ -17,57 +17,72 @@ seo:
   keywords: ["nubank", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
-## Qué es Nubank
-Nubank es un banco digital brasileño que ofrece servicios financieros innovadores y accesibles a través de una aplicación móvil. Fue fundado en 2013 y desde entonces ha revolucionado la forma en que las personas manejan sus finanzas personales. Con Nubank, puedes crear una cuenta corriente, obtener una tarjeta de crédito y realizar transacciones financieras de manera rápida y segura.
+## Qué es
 
-* Características clave de Nubank:
- + Sin tarifas mensuales
- + Sin tarifas de mantenimiento
- + Tarjeta de crédito sin anualidad
- + Interfaz de usuario intuitiva y fácil de usar
- + Soporte al cliente 24/7
+Nubank es una fintech brasileña que ofrece una cuenta digital y una tarjeta de crédito sin tarifas de mantenimiento. En lugar de una sucursal física, todo se maneja desde una app que puedes descargar en tu celular. La empresa nació en 2013 con la idea de simplificar la vida financiera, y hoy cuenta con millones de usuarios en Brasil y otros países de América Latina. En términos simples, Nubank es como un banco “de bolsillo” que te permite pagar, ahorrar y controlar tus gastos sin la burocracia de los bancos tradicionales.
 
-![Qué es Nubank](/images/glossario/nubank-inline-1.webp)
+![Qué es](/images/glossario/nubank-inline-1.webp)
 
 
-
-Con Nubank, puedes tener control total sobre tus finanzas, recibir notificaciones en tiempo real sobre tus transacciones y realizar pagos y transferencias de manera rápida y segura.
 
 ## Cómo funciona
-Nubank funciona a través de una aplicación móvil que puedes descargar en tu teléfono inteligente. Una vez que creas tu cuenta, puedes acceder a una variedad de servicios financieros, como la creación de una cuenta corriente, la solicitud de una tarjeta de crédito y la realización de transacciones financieras. La aplicación es muy fácil de usar y te permite tener control total sobre tus finanzas en cualquier momento y en cualquier lugar.
 
-**Consejo práctico:** Asegúrate de leer y entender los términos y condiciones de cada servicio financiero antes de solicitarlo. Por ejemplo, si solicitas una tarjeta de crédito, asegúrate de entender el límite de crédito, la tasa de interés y las tarifas asociadas.
+Al abrir una cuenta en Nubank, recibes una tarjeta de crédito virtual y, si lo deseas, una tarjeta física de plástico. Todo el proceso se hace en la app: subes una foto del documento, confirmas tu identidad y listo, la tarjeta llega en unos días. La app muestra en tiempo real cada movimiento, permite bloquear o desbloquear la tarjeta con un solo toque y te envía notificaciones de cada gasto. Además, puedes crear “subcuentas” para organizar tus finanzas, como una para gastos fijos (alquiler, luz) y otra para ocio.
+
+- **Registro:** descarga la app, ingresa tus datos y verifica tu identidad con selfie y documento.  
+- **Aprobación:** en minutos recibes la respuesta; si es aprobada, la tarjeta se envía a tu domicilio.  
+- **Uso:** paga en tiendas físicas con NFC (cerca del lector) o en línea ingresando el número de la tarjeta.  
 
 ## Ventajas
-Nubank ofrece una variedad de ventajas para sus usuarios, incluyendo:
-* Sin tarifas mensuales ni de mantenimiento
-* Tarjeta de crédito sin anualidad
-* Interfaz de usuario intuitiva y fácil de usar
-* Soporte al cliente 24/7
-* Acceso a servicios financieros innovadores y accesibles
 
-**Consejo práctico:** Aprovecha al máximo las ventajas de Nubank creando un presupuesto y estableciendo metas financieras claras. Por ejemplo, si ganas R$5.000 al mes, puedes asignar R$1.000 para ahorro y R$1.500 para gastos personales.
+Nubank se destaca por eliminar muchas de las comisiones que cobran los bancos tradicionales. No hay cuota mensual, ni cargos por transferencias entre cuentas Nubank, y la tarjeta de crédito no tiene tarifa de emisión. La app es intuitiva y te muestra gráficos de tus gastos, lo que facilita el control del presupuesto. Además, el programa de recompensas “Rewards” permite acumular puntos que puedes canjear por productos o viajes. Otro punto a favor es la atención al cliente 24/7 vía chat, que suele ser más rápida que en los bancos convencionales.
 
 ![Ventajas](/images/glossario/nubank-inline-3.webp)
 
 
 
-## Riesgos
-Al igual que con cualquier servicio financiero, existen riesgos asociados con el uso de Nubank. Algunos de los riesgos más comunes incluyen:
-* Riesgo de fraude: es importante proteger tus datos personales y financieros para evitar el fraude.
-* Riesgo de endeudamiento: es importante establecer un presupuesto y no gastar más de lo que puedes pagar.
-* Riesgo de pérdida de dinero: es importante tener cuidado al realizar transacciones financieras y asegurarte de que estás enviando dinero a la persona correcta.
+- **Sin tarifas ocultas:** olvídate de cargos por mantenimiento o por usar la tarjeta.  
+- **Control en tiempo real:** cada compra aparece al instante en la app, con categoría automática.  
+- **Recompensas flexibles:** canjea puntos por lo que realmente necesitas, sin fechas de vencimiento estrictas.  
+- **Seguridad:** bloquea la tarjeta con un solo clic y recibe alertas de cualquier intento sospechoso.  
 
-**Consejo práctico:** Asegúrate de leer y entender los términos y condiciones de cada servicio financiero antes de solicitarlo. Por ejemplo, si solicitas una tarjeta de crédito, asegúrate de entender el límite de crédito, la tasa de interés y las tarifas asociadas.
+## Riesgos
+
+Aunque Nubank es una opción muy cómoda, no está exenta de riesgos. Al ser una fintech, depende de la conectividad a internet; si la app falla o tu móvil se queda sin señal, podrías quedar sin acceso a tu dinero momentáneamente. Además, la tarjeta de crédito tiene un límite que se ajusta según tu historial y tus ingresos; si lo usas al máximo, el score de crédito (puntuación crediticia) puede verse afectado negativamente. Por último, aunque la empresa está regulada por el Banco Central de Brasil, la garantía de fondos está cubierta por el Fondo Garantidor de Créditos (FGC) solo hasta R$ 250.000 por cliente; si mantienes saldos muy altos, deberías diversificar.
+
+- **Dependencia tecnológica:** sin internet, la app no funciona.  
+- **Límite de crédito:** usar todo el límite puede bajar tu score.  
+- **Cobertura del FGC:** solo protege hasta cierto monto; diversifica tus cuentas.  
 
 ## Ejemplos prácticos
-Aquí hay algunos ejemplos prácticos de cómo puedes usar Nubank para mejorar tus finanzas personales:
-* Crear un presupuesto: si ganas R$3.000 al mes, puedes asignar R$1.000 para ahorro, R$1.000 para gastos personales y R$1.000 para pagar deudas.
-* Establecer metas financieras: si quieres ahorrar R$10.000 en un año, puedes establecer una meta de ahorro de R$833 al mes.
-* Realizar transacciones financieras: si necesitas enviar dinero a un amigo, puedes usar la aplicación de Nubank para realizar una transferencia rápida y segura.
+
+Imagina que tienes un salario mensual de R$ 4.500. Con Nubank puedes organizar tus finanzas de la siguiente manera:
+
+- **Alquiler y servicios:** R$ 1.200 (subcuenta “Gastos fijos”).  
+- **Alimentación:** R$ 800 (subcuenta “Comida”).  
+- **Transporte:** R$ 300 (subcuenta “Movilidad”).  
+- **Ocio y suscripciones:** R$ 500 (subcuenta “Entretenimiento”).  
+- **Ahorro automático:** R$ 600 se transfieren a la cuenta de ahorro Nubank cada día de pago.  
+
+Si además utilizas la tarjeta de crédito para pagar el supermercado (R$ 800) y la factura de internet (R$ 120), puedes pagar el total en la fecha de vencimiento sin generar intereses, siempre y cuando pagues el saldo completo. **Consejo práctico:** paga el total de la tarjeta antes de la fecha de corte para evitar cargos de intereses y mantener tu score alto.
+
+Otro caso: un profesional con salario de R$ 7.200 quiere invertir en su educación. Con la función “Nubank Rewards”, cada R$ 1 gastado en cursos online genera 1 punto. Si destina R$ 1.200 al año en cursos, acumulará 1.200 puntos, que pueden canjearse por umbilical de viajes o descuentos en la tienda de la app. **Consejo práctico:** revisa mensualmente el resumen de puntos y elige canjearlos antes de que expiren.
 
 ## Cómo empezar
-Empieza hoy a mejorar tus finanzas personales con Nubank. Descarga la aplicación, crea tu cuenta y comienza a explorar los servicios financieros que te ofrece. Recuerda que la clave para el éxito financiero es establecer un presupuesto, establecer metas financieras claras y tener cuidado al realizar transacciones financieras. **Consejo práctico:** Asegúrate de leer y entender los términos y condiciones de cada servicio financiero antes de solicitarlo. ¡No esperes más, empieza hoy a tomar control de tus finanzas personales!
+
+Abrir tu cuenta Nubank es rápido y no cuesta nada. Solo necesitas un smartphone con Android o iOS, tu CPF (número de identificación fiscal) y una cuenta de correo. Sigue estos pasos:
+
+- **Descarga la app:** busca “Nubank” en la tienda de apps y pulsa “Instalar”.  
+- **Regístrate:** ingresa tu nombre completo, CPF, e‑mail y crea una contraseña segura.  
+- **Verifica tu identidad:** toma una foto del documento y una selfie; el proceso tarda pocos minutos.  
+- **Solicita la tarjeta:** elige entre la versión virtual (inmediata) o la física (entrega en 5‑7 días).  
+- **Activa la cuenta:** al recibir la tarjeta, escanéala en la app y define un PIN (código personal).  
+
+Una vez activada, configura tus notificaciones, crea subcuentas y establece un límite de gasto mensual que se ajuste a tu salario. **Consejo práctico:** activa la opción de “Ahorro automático” para destinar un porcentaje fijo de tu ingreso a la cuenta de ahorro cada día de pago.
+
+## Empieza hoy
+
+No esperes a que el próximo mes sea diferente; con Nubank puedes tomar el control de tu dinero desde hoy. Descarga la app, abre tu cuenta y empieza a organizar tus gastos con la claridad que mereces. ¡Tu futuro financiero te lo agradecerá!
 
 ---
 

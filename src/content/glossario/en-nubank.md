@@ -7,7 +7,7 @@ image: "/images/glossario/nubank.webp"
 category: "basico"
 tags: ["nubank", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
-publishedAt: 2026-06-16
+publishedAt: 2026-07-11
 readingTime: 5
 locale: "en"
 translationKey: "glossario-nubank"
@@ -18,53 +18,79 @@ seo:
 ---
 
 ## What it is
-O Nubank é um banco digital brasileiro que oferece serviços financeiros inovadores e acessíveis. Ele foi fundado em 2013 e desde então tem crescido rapidamente, tornando-se um dos bancos digitais mais populares do país. O Nubank é conhecido por sua abordagem sem burocracia e sem cobrança de taxas excessivas, o que o torna uma opção atraente para muitas pessoas que buscam uma experiência bancária mais simples e transparente.
 
-* Cartão de crédito sem anuidade
-* Conta corrente sem taxas de manutenção
-* Empréstimos pessoais com taxas competitivas
-* Investimentos em renda fixa e variável
+Nubank é uma fintech brasileira que funciona como banco digital: oferece conta corrente, cartão de crédito sem anuidade e opções de investimento, tudo gerenciado pelo celular. Não há agência física, o que reduz custos e permite tarifas mais baixas.  
 
 ![What it is](/images/glossario/nubank-inline-1.webp)
 
 
 
-O Nubank também oferece um aplicativo móvel que permite aos usuários gerenciar suas contas e realizar transações de forma fácil e segura. Com o aplicativo, é possível verificar o saldo, pagar contas, transferir dinheiro e muito mais.
+- Conta digital com transferências ilimitadas (TED/DOC) gratuitas  
+- Cartão de crédito internacional sem anuidade  
+- Programa de pontos que pode ser trocado por produtos ou descontos  
+- Empréstimos pessoais com juros competitivos  
+- Nubank Invest (CDBs e fundos) para quem quer começar a investir  
 
 ## How it works
-O Nubank funciona de forma similar a um banco tradicional, mas com algumas diferenças importantes. Em vez de ter agências físicas, o Nubank opera principalmente online e por meio de seu aplicativo móvel. Isso significa que os usuários podem acessar seus serviços e gerenciar suas contas de forma remota, a qualquer hora e em qualquer lugar.
 
-O Nubank também utiliza tecnologia de ponta para garantir a segurança e a privacidade dos dados dos usuários. Isso inclui a utilização de criptografia avançada e autenticação de dois fatores para proteger as contas e transações.
+Tudo acontece dentro do app: você baixa, cria um login, envia foto do documento e, em poucos minutos, tem a conta pronta. O cartão de crédito chega em até 10 dias e já pode ser usado para compras online ou físicas. Quando você paga a fatura, o dinheiro sai da conta Nubank, que funciona como uma conta corrente tradicional, mas com interface mais simples.  
 
-**Practical tip:** Sempre verifique se você está acessando o aplicativo do Nubank de forma segura, utilizando uma conexão de internet confiável e um dispositivo protegido por senha ou biometria.
+- Baixe o app na loja do seu celular  
+- Cadastre CPF, RG e selfie para validação de identidade  
+- Escolha entre abrir conta, solicitar cartão ou investir  
+- Receba o cartão e ative-o pelo app com um toque  
+- Use o QR Code ou a chave Pix para receber e enviar dinheiro  
 
 ## Advantages
-O Nubank oferece várias vantagens em relação aos bancos tradicionais. Algumas das principais vantagens incluem:
-* Taxas mais baixas: o Nubank não cobra taxas de manutenção ou anuidade em muitos de seus serviços, o que pode economizar dinheiro para os usuários.
-* Maior conveniência: o aplicativo móvel do Nubank permite que os usuários gerenciem suas contas e realizem transações de forma fácil e rápida.
-* Maior transparência: o Nubank é conhecido por sua abordagem transparente e sem burocracia, o que pode ser atraente para pessoas que buscam uma experiência bancária mais simples e honesta.
 
-**Practical tip:** Sempre leia as condições e termos dos serviços do Nubank antes de assinar, para garantir que você entendeu todos os custos e benefícios.
+A proposta do Nubank é tornar o serviço bancário mais transparente e barato. Por não ter filiais, a empresa consegue eliminar a maioria das tarifas cobradas pelos bancos tradicionais. Além disso, o atendimento é feito por chat 24 h, o que costuma ser mais rápido que o telefone de bancos antigos.  
 
 ![Advantages](/images/glossario/nubank-inline-3.webp)
 
 
 
-## Risks
-Como qualquer instituição financeira, o Nubank também apresenta alguns riscos. Alguns dos principais riscos incluem:
-* Risco de segurança: como qualquer aplicativo ou serviço online, o Nubank pode ser vulnerável a ataques cibernéticos ou violações de dados.
-* Risco de crédito: o Nubank oferece empréstimos pessoais e cartões de crédito, o que pode ser arriscado se os usuários não gerenciarem suas dívidas de forma responsável.
-* Risco de mercado: os investimentos oferecidos pelo Nubank podem ser afetados por flutuações no mercado, o que pode resultar em perdas para os investidores.
+- **Zero anuidade** no cartão de crédito  
+- Transferências e DOCs gratuitos e ilimitados  
+- Saques na rede Banco24Horas sem taxa (até 4 por mês)  
+- Controle total pelo celular: bloqueio, limite e fatura em tempo real  
+- Programa de recompensas simples, sem regras complicadas  
 
-**Practical tip:** Sempre diversifique seus investimentos e não coloque todos os seus ovos em uma única cesta, para minimizar o risco de perdas.
+## Risks
+
+Mesmo com muitas vantagens, usar um banco totalmente digital tem alguns pontos de atenção. Primeiro, a dependência de internet: se o celular travar ou a rede cair, você pode ficar sem acesso imediato ao dinheiro. Segundo, o limite de crédito pode ser ajustado automaticamente pelo algoritmo, o que às vezes surpreende quem está acostumado a limites fixos. Por fim, embora o Fundo Garantidor de Créditos (FGC) cubra até R$ 250 mil por instituição, o valor total depositado ainda está sujeito a riscos de mercado nos investimentos.  
+
+- Necessidade de conexão estável para transações  
+- Limite de crédito sujeito a revisões automáticas  
+- Cobertura do FGC limitada a R$ 250 mil por CPF  
+- Investimentos podem perder valor em cenários de alta volatilidade  
 
 ## Practical examples
-Vamos considerar alguns exemplos práticos de como o Nubank pode ser útil para pessoas com diferentes níveis de renda. Por exemplo, se você ganha R$ 5.000 por mês e está procurando por uma opção de cartão de crédito sem anuidade, o Nubank pode ser uma boa escolha. Com o cartão de crédito do Nubank, você pode fazer compras e pagamentos sem se preocupar com taxas excessivas.
 
-Outro exemplo é se você está procurando por uma opção de investimento para sua renda extra. O Nubank oferece opções de investimento em renda fixa e variável, o que pode ser uma boa opção para pessoas que buscam uma forma de crescer seu patrimônio de forma segura e transparente.
+Imagine três amigos que recebem salários diferentes e decidem usar Nubank para organizar a vida financeira.  
+
+- **Ana**, que ganha R$ 3.200, usa o cartão para pagar as compras do supermercado e paga a fatura integralmente todo mês. Ela aproveita o programa de pontos e troca 1.500 pontos por um vale‑presente de R$ 50, economizando na próxima compra.  
+- **Bruno**, com salário de R$ 5.500, abre a conta digital e programa o débito automático da conta de luz. Ele ainda faz um depósito mensal de R$ 1.000 no Nubank Invest, rendendo cerca de 8 % ao ano em CDBs, o que gera aproximadamente R$ 80 de juros ao final do primeiro ano.  
+- **Carla**, que recebe R$ 7.800, solicita um empréstimo pessoal de R$ 5.000 para reformar a casa. O contrato tem taxa de 1,9 % ao mês, e ela paga em 12 parcelas de R$ 466, o que cabe no orçamento sem precisar recorrer a cartões com juros mais altos.  
+
+**Practical tip:** sempre pague a fatura do cartão Nubank antes da data de vencimento para evitar juros e manter o score de crédito em alta.  
+
+**Practical tip:** use a função “Objetivo” do app para separar dinheiro para viagens ou emergências; o saldo fica bloqueado e rende automaticamente.  
+
+**Practical tip:** configure alertas de limite de crédito e de saldo baixo; assim você evita surpresas e controla melhor os gastos.  
+
+## How to start
+
+Abrir uma conta Nubank é rápido e não custa nada. Você só precisa de um smartphone, CPF válido e um e‑mail. O processo pode ser concluído em menos de 10 minutos, e o cartão chega em casa sem custo de emissão.  
+
+- Acesse a loja de aplicativos (Google Play ou App Store) e instale o Nubank  
+- Clique em “Criar conta”, informe CPF, nome completo e data de nascimento  
+- Tire uma foto do documento de identidade e uma selfie para verificação facial  
+- Defina uma senha de 6 dígitos e aceite os termos de uso  
+- Aguarde a aprovação (geralmente instantânea) e comece a usar a conta  
 
 ## Start today
-Se você está procurando por uma opção de banco digital que seja simples, transparente e acessível, o Nubank pode ser uma boa escolha. Com seu aplicativo móvel fácil de usar e seus serviços financeiros inovadores, o Nubank pode ser uma ótima opção para pessoas que buscam uma experiência bancária mais moderna e conveniente. **Practical tip:** Baixe o aplicativo do Nubank e comece a explorar seus serviços hoje mesmo, para ver como ele pode ajudar a melhorar sua vida financeira.
+
+Não espere o próximo salário para mudar a forma como lida com o dinheiro. Baixe o Nubank agora, abra sua conta em poucos minutos e comece a aproveitar tarifas zero, controle total pelo celular e a possibilidade de investir com segurança. Seu futuro financeiro agradece!
 
 ---
 

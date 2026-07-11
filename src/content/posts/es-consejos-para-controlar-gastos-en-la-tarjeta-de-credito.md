@@ -19,10 +19,10 @@ seo:
 ## Control de Gastos
 Imagina que ganas $ 5.000 por mes y gastas $ 1.500 en gastos fijos, como alquiler, cuenta de luz y internet. Eso significa que tienes $ 3.500 disponibles para gastar en otras cosas, como comida, ocio y compras. Sin embargo, si no controlas tus gastos, es fácil superar ese límite y acabar con deudas en la tarjeta de crédito.
 
-Una forma de evitar esto es crear un presupuesto y llevar un registro de tus gastos. **Consejo práctico:** Puedes usar una aplicación de gestión financiera para registrar todos tus gastos y tener una visión clara de dónde está yendo tu dinero. Por ejemplo, si gastas $ 500 por mes en comida fuera, puedes intentar reducir ese [valor](/es/glossario/es-valor) a $ 300 y ahorrar $ 200.
+Una forma de evitar esto es crear un presupuesto y llevar un registro de tus gastos. **Consejo práctico:** Puedes usar una aplicación de gestión financiera para registrar todos tus gastos y tener una visión clara de dónde está yendo tu [dinero](/es/posts/ahorra-en-las-compras-del-supermercado). Por ejemplo, si gastas $ 500 por mes en comida fuera, puedes intentar reducir ese [valor](/es/glossario/es-valor) a $ 300 y ahorrar $ 200.
 
 ## Gastos en la Tarjeta de Crédito
-Las tarjetas de crédito pueden ser una herramienta útil para hacer compras en línea o en tiendas, pero también pueden ser una trampa para aquellos que no saben controlar sus gastos. Es importante recordar que la tarjeta de crédito no es dinero gratuito y que tendrás que pagar todos los gastos realizados con intereses y tasas.
+Las tarjetas de crédito pueden ser una herramienta útil para hacer compras en línea o en tiendas, pero también pueden ser una trampa para aquellos que no saben controlar sus gastos. Es importante recordar que la tarjeta de crédito no es [dinero](/es/posts/ahorrando-en-la-cuenta-de-energia) gratuito y que tendrás que pagar todos los gastos realizados con intereses y tasas.
 
 Para evitar problemas, es fundamental tener un límite de gastos en la tarjeta de crédito y no superarlo. Además, es importante pagar la factura de la tarjeta de crédito a tiempo y no dejar que los intereses se acumulen. Puedes consultar el sitio web del [Banco Central del Brasil](https://www.bcb.gov.br) para saber más sobre cómo lidiar con tarjetas de crédito y deudas.
 

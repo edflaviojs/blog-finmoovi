@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Joint Planning
-When it comes to finances, it's common for couples to have different goals and priorities. However, it's essential that both partners are aligned and work together to achieve their financial objectives. This starts with creating a joint [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), which takes into account both partners' expenses and income. For example, if you and your partner have salaries of R$ 4,000 and R$ 5,000, respectively, it's crucial to know how these values are distributed in expenses such as rent (R$ 2,000), utility bills (R$ 300), and food (R$ 1,500).
+When it comes to finances, it's common for couples to have different goals and priorities. However, it's essential that both partners are aligned and work together to achieve their financial objectives. This starts with creating a joint [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), which takes into account both partners' [expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro) and income. For example, if you and your partner have salaries of R$ 4,000 and R$ 5,000, respectively, it's crucial to know how these values are distributed in expenses such as rent (R$ 2,000), utility bills (R$ 300), and food (R$ 1,500).
 
 ## Defining Priorities
 It's essential for couples to define financial priorities together. This can include anything from buying a home to building an [emergency fund](/en/glossario/en-reserva-de-emergencia). **Practical tip:** use the 50/30/20 rule, where 50% of the [budget](/en/posts/50-30-20-rule-complete-guide) goes to essential expenses, 30% to non-essential expenses, and 20% to savings and [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce). Additionally, it's vital to have a clear view of where the [money](/en/posts/avoid-impulse-purchases) is being spent. A useful tool for this is a financial control app, which can help track expenses and income more effectively.
@@ -47,4 +47,4 @@ No matter what stage you and your partner are at in terms of [financial planning
 
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and discover where your [money](/en/posts/criar-reserva-de-emergencia) is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/5-alternativas-ao-[mobills](/en/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) for free for 7 days](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and discover where your [money](/en/posts/criar-reserva-de-emergencia) is really going.**
