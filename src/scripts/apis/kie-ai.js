@@ -24,13 +24,14 @@ export { generateCoverImage, generateCoverImageSync, generateInlineImage };
 function getTextProviders() {
   const providers = [];
 
-  // 1. Cerebras — mesmo Llama 3.3 70B, 1M tokens/dia e 60K TPM (requer CEREBRAS_API_KEY)
+  // 1. Cerebras — gpt-oss-120b, 1M tokens/dia e 60K TPM (requer CEREBRAS_API_KEY)
+  //    (llama-3.3-70b saiu do endpoint gratuito padrão — retornava 404)
   if (process.env.CEREBRAS_API_KEY) {
     providers.push({
       name: 'cerebras',
       url: 'https://api.cerebras.ai/v1/chat/completions',
       apiKey: process.env.CEREBRAS_API_KEY,
-      model: 'llama-3.3-70b',
+      model: 'gpt-oss-120b',
     });
   }
 
