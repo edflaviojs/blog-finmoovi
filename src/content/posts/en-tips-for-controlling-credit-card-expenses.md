@@ -31,7 +31,7 @@ To avoid problems, it's crucial to have a spending limit on your credit card and
 
 
 ## Savings Tips
-There are many ways to save money and reduce credit card expenses. Here are some tips:
+There are many ways to save [money](/en/posts/difference-between-investing-and-saving) and reduce credit card expenses. Here are some tips:
 * Shop at discount stores or during sales
 * Cook at home instead of eating out
 * Use public transportation or a bike instead of a car
@@ -47,7 +47,7 @@ There are many ways to save money and reduce credit card expenses. Here are some
 If you're having trouble paying your debts, it's essential to seek professional help. You can visit the [Serasa](https://www.serasa.com.br) website to learn more about dealing with debt and improving your credit. Additionally, it's crucial to understand how interest and fees work and how they can affect your credit card expenses. You can visit the [Investopedia](https://www.investopedia.com) website to learn more about [personal finance](/en/posts/30-day-rule-for-purchases) and [economy](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme).
 
 ## Start Today
-Don't wait any longer to start controlling your credit card expenses. With the practical tips and information provided, you can start saving money and improving your financial management. Remember that the key to success is discipline and patience. **Practical tip:** You can start recording your expenses today and create a [budget](/en/posts/50-30-20-rule-complete-guide) for the next month.
+Don't wait any longer to start controlling your credit card expenses. With the practical tips and information provided, you can start [saving](/en/posts/criar-reserva-de-emergencia) money and improving your financial management. Remember that the key to success is discipline and patience. **Practical tip:** You can start recording your expenses today and create a [budget](/en/posts/50-30-20-rule-complete-guide) for the next month.
 
 ![Informações Adicionais](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-4.webp)
 

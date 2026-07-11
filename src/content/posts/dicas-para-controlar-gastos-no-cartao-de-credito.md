@@ -21,7 +21,7 @@ Imagine que você ganha R$ 5.000 por mês e gasta R$ 1.500 com despesas fixas, c
 
 Uma forma de evitar isso é criar um [orçamento](/posts/como-criar-orcamento-pessoal) e acompanhar seus gastos. **Dica prática:** Você pode usar um aplicativo de gestão financeira para registrar todos os seus gastos e ter uma visão clara de onde seu [dinheiro](/posts/cashback-inteligente) está indo. Por exemplo, se você gasta R$ 500 por mês com comida fora, pode tentar reduzir esse [valor](/glossario/valor) para R$ 300 e economizar R$ 200.
 
-## Gastos no Cartão de Crédito
+## Gastos no [Cartão de Crédito](/posts/controle-gastos-cartao-credito)
 Os cartões de crédito podem ser uma ferramenta útil para fazer compras online ou em lojas, mas também podem ser uma armadilha para os que não sabem controlar seus gastos. É importante lembrar que o cartão de crédito não é [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) grátis e que você precisará pagar todos os gastos feitos com [juros](/glossario/juros) e taxas.
 
 Para evitar problemas, é fundamental ter um limite de gastos no cartão de crédito e não ultrapassá-lo. Além disso, é importante pagar a fatura do cartão de crédito em dia e não deixar que os juros se acumulem. Você pode consultar o site do [Banco Central do Brasil](https://www.bcb.gov.br) para saber mais sobre como lidar com cartões de crédito e dívidas.
@@ -31,7 +31,7 @@ Para evitar problemas, é fundamental ter um limite de gastos no cartão de cré
 
 
 ## Dicas para Economizar
-Existem muitas formas de economizar dinheiro e reduzir os gastos no cartão de crédito. Aqui estão algumas dicas:
+Existem muitas formas de economizar [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) e reduzir os gastos no cartão de crédito. Aqui estão algumas dicas:
 * Faça compras em lojas de desconto ou em liquidações
 * Cozinhe em casa em vez de comer fora
 * Use transporte público ou bicicleta em vez de carro

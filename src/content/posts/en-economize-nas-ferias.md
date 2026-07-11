@@ -28,7 +28,7 @@ First and foremost, it's essential to have a solid financial plan. This includes
 Here are some practical tips to save [money](/en/posts/creating-an-emergency-fund) on your July vacation:
 - Plan ahead: The earlier you plan, the more chances you'll have to find deals and discounts.
 - Choose more affordable destinations: Instead of choosing international destinations, consider national options that are more affordable.
-- Use travel apps: The [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) app, for example, can help you find deals and discounts on transportation and accommodation.
+- Use travel apps: The [FinMoovi](/en/posts/5-alternativas-ao-[mobills](/en/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) app, for example, can help you find deals and discounts on transportation and accommodation.
 - Cook instead of eating out: If you're in an apartment or house, cook instead of eating out to save [money](/en/posts/difference-between-investing-and-saving).
 - Avoid unnecessary expenses: Be aware of your spending and avoid buying unnecessary things.
 
@@ -36,7 +36,7 @@ Here are some practical tips to save [money](/en/posts/creating-an-emergency-fun
 
 
 
-## Budget and [Expense Control](/en/posts/controle-gastos-cartao-credito)
+## [Budget](/en/posts/how-to-create-personal-budget) and [Expense Control](/en/posts/controle-gastos-cartao-credito)
 A well-defined budget and [expense control](/en/posts/metodo-50-30-20-para-orcamento) are crucial to [saving](/en/posts/criar-reserva-de-emergencia) [money](/en/posts/financial-education-for-children) on vacation. It's essential to have a clear idea of how much you can spend and where you can cut unnecessary expenses. The [Banco Central do Brasil](https://www.bcb.gov.br) offers tips and tools to help manage your budget and control expenses.
 
 ## [Investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) and Savings

@@ -36,11 +36,11 @@ Aqui estão algumas dicas práticas para economizar nas férias de julho:
 
 
 
-## Orçamento e [Controle de Gastos](/posts/controle-gastos-cartao-credito)
+## [Orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) e [Controle de Gastos](/posts/controle-gastos-cartao-credito)
 Um orçamento bem definido e o [controle de gastos](/posts/metodo-50-30-20-para-orcamento) são fundamentais para economizar nas férias. É importante ter uma ideia clara de quanto você pode gastar e onde você pode cortar gastos desnecessários. O [Banco Central do Brasil](https://www.bcb.gov.br) oferece dicas e ferramentas para ajudar a gerenciar o orçamento e controlar os gastos.
 
 ## [Investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-julho-2026))-qual-e-melhor-para-voce) e [Poupança](/glossario/poupanca)
-Além de economizar nas férias, é importante pensar em [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce) e poupança para o futuro. O [Tesouro Direto](https://www.tesourodireto.com.br) é uma opção de investimento segura e rentável para os brasileiros. Além disso, é importante ter uma poupança para emergências e imprevistos.
+Além de economizar nas férias, é importante pensar em [investimentos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-junho-2026))-qual-e-melhor-para-voce) e poupança para o futuro. O [Tesouro Direto](https://www.tesourodireto.com.br) é uma opção de [investimento](/posts/montando-carteira-diversificada-com-r-500) segura e rentável para os brasileiros. Além disso, é importante ter uma poupança para emergências e imprevistos.
 
 ![Orçamento e Controle de Gastos](/images/posts/economize-nas-ferias-4.webp)
 
