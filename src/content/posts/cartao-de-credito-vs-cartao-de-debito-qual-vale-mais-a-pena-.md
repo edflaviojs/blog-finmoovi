@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introdução
-Quando se trata de gerenciar as [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), uma das decisões mais importantes é escolher entre cartão de crédito e cartão de débito. Ambos os tipos de cartões têm seus prós e contras, e a escolha certa depende do seu perfil financeiro e de como você lida com o dinheiro. Neste artigo, vamos explorar como funcionam os cartões de crédito e débito, suas vantagens e desvantagens, e ajudá-lo a decidir qual é o melhor para você.
+Quando se trata de gerenciar as [finanças pessoais](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias), uma das decisões mais importantes é escolher entre cartão de crédito e cartão de débito. Ambos os tipos de cartões têm seus prós e contras, e a escolha certa depende do seu perfil financeiro e de como você lida com o dinheiro. Neste artigo, vamos explorar como funcionam os cartões de crédito e débito, suas vantagens e desvantagens, e ajudá-lo a decidir qual é o melhor para você.
 
 ## Como funciona o Cartão de Crédito
 O cartão de crédito é um tipo de cartão que permite que você compre agora e pague depois. Quando você faz uma compra com um cartão de crédito, o banco emite o pagamento ao vendedor e você se compromete a pagar o [valor](/glossario/valor) da compra, mais [juros](/glossario/juros) e taxas, se não pagar o saldo total até a data de vencimento. Os juros podem variar de 10% a 20% ao mês, dependendo do banco e do seu histórico de crédito.
@@ -61,7 +61,7 @@ No entanto, é importante lembrar que o cartão de crédito pode ser perigoso se
 O cartão de débito pode ser uma boa opção se você:
 
 * Quer evitar dívidas e juros
-* Tem um orçamento limitado e precisa controlar seus gastos
+* Tem um orçamento limitado e precisa controlar seus [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 * Não quer se preocupar com taxas de juros ou anuidade
 * Quer ter mais controle sobre seus gastos e evitar compras impulsivas
 

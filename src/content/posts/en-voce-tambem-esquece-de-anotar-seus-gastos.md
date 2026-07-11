@@ -33,14 +33,14 @@ But, what if I told you there's a solution to this problem? It's [FinMoovi](/en/
 Let's say you're on a business trip and need to buy a gift for a friend. You take out your phone, open FinMoovi, and record the expense using your camera. The app will automatically categorize the expense as "Gifts" and calculate the value in reals, even if you bought it in dollars or euros. Additionally, FinMoovi's intelligent reports with AI help identify patterns and provide a clear view of your finances, even when you're offline.
 
 ## Before vs After FinMoovi
-Before using FinMoovi, I was always lost when it came to my finances. I didn't know where my [money](/en/posts/financial-education-for-children) was being spent, and I had no control over my expenses. But, after starting to use FinMoovi, I was able to organize my finances effectively. I can see exactly where my money is being spent, and I can make adjustments to save more. According to [Investopedia](https://www.investopedia.com), [expense control](/en/posts/controle-gastos-cartao-credito) is one of the keys to achieving financial stability.
+Before using FinMoovi, I was always lost when it came to my finances. I didn't know where my [money](/en/posts/financial-education-for-children) was being spent, and I had no control over my expenses. But, after starting to use FinMoovi, I was able to organize my finances effectively. I can see exactly where my [money](/en/posts/financial-planning-for-couples) is being spent, and I can make adjustments to save more. According to [Investopedia](https://www.investopedia.com), [expense control](/en/posts/controle-gastos-cartao-credito) is one of the keys to achieving financial stability.
 
 ![Cenários Práticos de Uso](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-4.webp)
 
 
 
 ## Data and Statistics
-According to a study by [Serasa](https://www.serasa.com.br), 70% of Brazilians have no control over their finances, and 60% don't know how much they spend per month. This means that most people in Brazil are vulnerable to financial problems, such as a lack of money for emergencies or the inability to achieve financial goals. But, with FinMoovi, it's possible to change this reality.
+According to a study by [Serasa](https://www.serasa.com.br), 70% of Brazilians have no control over their finances, and 60% don't know how much they spend per month. This means that most people in Brazil are vulnerable to financial problems, such as a lack of [money](/en/posts/financial-planning-for-freelancers) for emergencies or the inability to achieve financial goals. But, with FinMoovi, it's possible to change this reality.
 
 ## Conclusion of My Experience
 I can say that FinMoovi has changed the way I control my finances. It's like having a personal assistant that helps me stay organized and on the right track. And, the best part is that FinMoovi is easy to use and accessible to anyone. So, if you're looking for a solution to control your finances effectively, I recommend trying FinMoovi. 

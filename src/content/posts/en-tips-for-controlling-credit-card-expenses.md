@@ -21,8 +21,8 @@ Imagine you earn R$ 5,000 per month and spend R$ 1,500 on fixed expenses, such a
 
 One way to avoid this is to create a [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and track your expenses. **Practical tip:** You can use a [financial management](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) app to record all your expenses and have a clear view of where your [money](/en/posts/avoid-impulse-purchases) is going. For example, if you spend R$ 500 per month on dining out, you can try to reduce that amount to R$ 300 and save R$ 200.
 
-## Credit Card Expenses
-Credit cards can be a useful tool for making online or in-store purchases, but they can also be a trap for those who don't know how to control their expenses. It's essential to remember that a credit card is not free money and that you'll need to pay all expenses made with interest and fees.
+## [Credit Card](/en/posts/controle-gastos-cartao-credito) Expenses
+Credit cards can be a useful tool for making online or in-store purchases, but they can also be a trap for those who don't know how to control their expenses. It's essential to remember that a credit card is not free [money](/en/posts/creating-an-emergency-fund) and that you'll need to pay all expenses made with interest and fees.
 
 To avoid problems, it's crucial to have a spending limit on your credit card and not exceed it. Additionally, it's essential to pay your credit card bill on time and not let interest accumulate. You can visit the [Banco Central do Brasil](https://www.bcb.gov.br) website to learn more about dealing with credit cards and debt.
 

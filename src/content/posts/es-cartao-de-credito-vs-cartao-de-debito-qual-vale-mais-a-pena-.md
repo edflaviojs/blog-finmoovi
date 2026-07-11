@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introducción
-Cuando se trata de gestionar las [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), una de las decisiones más importantes es elegir entre tarjeta de crédito y tarjeta de débito. Ambos los tipos de tarjetas tienen sus pros y contras, y la elección correcta depende de su perfil financiero y de cómo usted lidia con el dinero. En este artículo, vamos a explorar cómo funcionan las tarjetas de crédito y débito, sus ventajas y desventajas, y ayudarlo a decidir cuál es la mejor para usted.
+Cuando se trata de gestionar las [finanzas personales](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), una de las decisiones más importantes es elegir entre tarjeta de crédito y tarjeta de débito. Ambos los tipos de tarjetas tienen sus pros y contras, y la elección correcta depende de su perfil financiero y de cómo usted lidia con el [dinero](/es/posts/ahorra-en-las-compras-del-supermercado). En este artículo, vamos a explorar cómo funcionan las tarjetas de crédito y débito, sus ventajas y desventajas, y ayudarlo a decidir cuál es la mejor para usted.
 
 ## Cómo funciona la Tarjeta de Crédito
 La tarjeta de crédito es un tipo de tarjeta que permite que usted compre ahora y pague después. Cuando usted hace una compra con una tarjeta de crédito, el banco emite el pago al vendedor y usted se compromete a pagar el [valor](/es/glossario/es-valor) de la compra, más intereses y tasas, si no paga el saldo total hasta la fecha de vencimiento. Los intereses pueden variar de 10% a 20% al mes, dependiendo del banco y de su historial de crédito.
@@ -61,7 +61,7 @@ No obstante, es importante recordar que la tarjeta de crédito puede ser peligro
 La tarjeta de débito puede ser una buena opción si usted:
 
 * Quiere evitar deudas y intereses
-* Tiene un presupuesto limitado y necesita controlar sus gastos
+* Tiene un presupuesto limitado y necesita controlar sus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 * No quiere preocuparse por tasas de interés o anualidad
 * Quiere tener más control sobre sus gastos y evitar compras impulsivas
 
