@@ -259,6 +259,13 @@ async function main() {
     console.log(`✅ Post PT gerado: ${post.title}`);
 
     const slugPt = createSlug(post.title);
+
+    // Guard: evita duplicar translationKey já existente (o validador i18n bloquearia o push).
+    if (existsSync(join(POSTS_DIR, `${slugPt}.md`))) {
+      console.log(`⚠️ Post "${slugPt}" já existe — pulando para evitar duplicata de translationKey.`);
+      return;
+    }
+
     const today = new Date().toISOString().split('T')[0];
 
     // 2. Generate cover image (AI-powered with SVG fallback)
