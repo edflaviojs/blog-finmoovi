@@ -16,7 +16,7 @@ const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 // AI Provider detection (same as setup.js)
 async function callAI(prompt) {
   const providers = [
-    { key: 'GROQ_API_KEY', url: 'https://api.groq.com/openai/v1/chat/completions', model: 'llama-3.3-70b-versatile', format: 'openai' },
+    { key: 'GROQ_API_KEY', url: 'https://api.groq.com/openai/v1/chat/completions', model: 'openai/gpt-oss-120b', format: 'openai' },
     { key: 'OPENAI_API_KEY', url: 'https://api.openai.com/v1/chat/completions', model: 'gpt-4o-mini', format: 'openai' },
     { key: 'ANTHROPIC_API_KEY', url: 'https://api.anthropic.com/v1/messages', model: 'claude-sonnet-4-20250514', format: 'anthropic' },
     { key: 'KIE_API_KEY', url: 'https://api.kie.ai/v1/chat/completions', model: 'kie-default', format: 'openai' },
