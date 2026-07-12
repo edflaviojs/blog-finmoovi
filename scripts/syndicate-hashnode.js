@@ -5,7 +5,8 @@
  *
  * Secrets necessários:
  *   HASHNODE_TOKEN          - Personal Access Token (hashnode.com/settings/developer)
- *   HASHNODE_PUBLICATION_ID - ID da sua publication no Hashnode
+ *   HASHNODE_PUBLICATION_ID - (opcional) ID da publication; se ausente, é
+ *                             descoberto automaticamente a partir do token.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -20,7 +21,29 @@ const SITE_URL = 'https://blog.finmoovi.com';
 const MAX_PER_RUN = 2;
 
 const TOKEN = process.env.HASHNODE_TOKEN;
-const PUBLICATION_ID = process.env.HASHNODE_PUBLICATION_ID;
+let PUBLICATION_ID = process.env.HASHNODE_PUBLICATION_ID;
+
+async function hashnodeGraphQL(query, variables) {
+  const res = await fetch('https://gql.hashnode.com/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': TOKEN },
+    body: JSON.stringify({ query, variables }),
+  });
+  const text = await res.text();
+  let json;
+  try { json = JSON.parse(text); }
+  catch { throw new Error(`Resposta não-JSON (HTTP ${res.status}) — endpoint bloqueado? ${text.slice(0, 120)}`); }
+  if (json.errors) throw new Error(JSON.stringify(json.errors).slice(0, 300));
+  return json.data;
+}
+
+async function resolvePublicationId() {
+  const data = await hashnodeGraphQL(`query { me { publications(first: 1) { edges { node { id title } } } } }`);
+  const node = data?.me?.publications?.edges?.[0]?.node;
+  if (!node) throw new Error('Nenhuma publication encontrada na conta.');
+  console.log(`Publication descoberta: "${node.title}" (${node.id})`);
+  return node.id;
+}
 
 function loadSynced() {
   try { return JSON.parse(fs.readFileSync(SYNCED_FILE, 'utf-8')); } catch { return []; }
@@ -79,22 +102,16 @@ async function publishToHashnode(post) {
     },
   };
 
-  const res = await fetch('https://gql.hashnode.com/', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Authorization': TOKEN },
-    body: JSON.stringify({ query, variables }),
-  });
-  const json = await res.json();
-  if (json.errors) throw new Error(`Hashnode: ${JSON.stringify(json.errors).slice(0, 300)}`);
-  const p = json.data?.publishPost?.post;
-  if (!p) throw new Error(`Hashnode: resposta inesperada ${JSON.stringify(json).slice(0, 200)}`);
+  const data = await hashnodeGraphQL(query, variables);
+  const p = data?.publishPost?.post;
+  if (!p) throw new Error('Hashnode: resposta inesperada (sem post)');
   return p;
 }
 
 async function main() {
   console.log('=== Sindicação Hashnode ===');
-  if (!TOKEN || !PUBLICATION_ID) {
-    console.log('⏭️  HASHNODE_TOKEN/HASHNODE_PUBLICATION_ID não configurados — pulando.');
+  if (!TOKEN) {
+    console.log('⏭️  HASHNODE_TOKEN não configurado — pulando.');
     return;
   }
 
@@ -103,6 +120,11 @@ async function main() {
   const unsynced = getEnglishPosts().filter(p => !done.has(p.file));
   console.log(`Posts não sincronizados: ${unsynced.length}`);
   if (!unsynced.length) { console.log('Nada a fazer.'); return; }
+
+  if (!PUBLICATION_ID) {
+    try { PUBLICATION_ID = await resolvePublicationId(); }
+    catch (e) { console.error(`❌ Não consegui descobrir a publication: ${e.message}`); process.exit(1); }
+  }
 
   const toSync = unsynced.slice(0, MAX_PER_RUN);
   let ok = 0;
