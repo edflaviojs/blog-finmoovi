@@ -1,0 +1,43 @@
+name: Atualizar Índice de Endividamento
+
+on:
+  schedule:
+    # Dia 5 de cada mês às 12h UTC (o BCB divulga a série com defasagem mensal)
+    - cron: '0 12 5 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar-endividamento:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Coletar dados do Banco Central
+        run: node scripts/fetch-endividamento.js
+
+      - name: Commit e push
+        run: |
+          git add src/data/endividamento.json
+          if git diff --cached --quiet; then
+            echo "Sem alteração nos dados de endividamento"
+          else
+            git commit -m "chore: atualizar Índice de Endividamento (dados BCB) [bot]"
+            git pull --rebase origin main || true
+            git push
+          fi

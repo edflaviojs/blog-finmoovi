@@ -1,0 +1,263 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+import { config } from '../../../site.config';
+import { authors } from '@/data/authors';
+import data from '@/data/endividamento.json';
+
+const author = authors['ed-flavio'];
+const site = config.siteUrl;
+const pageUrl = `${site}/estudos/endividamento-das-familias`;
+
+const endiv = data.endividamento;
+const compr = data.comprometimento;
+const first = endiv.series[0];
+const latest = endiv.latest;
+const deltaPP = (latest.value - first.value);
+const growthPct = ((latest.value / first.value - 1) * 100);
+
+const fmt = (v: number) => v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const fmtMonthYear = (iso: string) => new Date(iso).toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
+const firstYear = first.date.slice(0, 4);
+const latestYear = latest.date.slice(0, 4);
+const updatedLabel = new Date(data.updatedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+
+const title = 'Índice FinMoovi de Endividamento das Famílias';
+const description = `Estudo com dados do Banco Central: o endividamento das famílias brasileiras chegou a ${fmt(latest.value)}% da renda anual em ${fmtMonthYear(latest.date)} — alta de ${fmt(deltaPP)} pontos desde ${firstYear}.`;
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Estudos', url: '/estudos/endividamento-das-familias' },
+  { name: 'Endividamento das Famílias', url: '/estudos/endividamento-das-familias' },
+];
+
+const datasetSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: title,
+  description,
+  url: pageUrl,
+  temporalCoverage: `${first.date}/${latest.date}`,
+  dateModified: data.updatedAt,
+  variableMeasured: [endiv.label, compr.label],
+  creator: { '@type': 'Organization', name: config.brand.name, url: config.app.url },
+  isBasedOn: data.source.url,
+  sameAs: data.source.api,
+  license: 'https://www.bcb.gov.br',
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  url: pageUrl,
+  datePublished: data.updatedAt,
+  dateModified: data.updatedAt,
+  author: { '@type': 'Person', '@id': `${author.url}#person`, name: author.name, url: author.url, jobTitle: author.jobTitle },
+  publisher: {
+    '@type': 'Organization', name: config.brand.name,
+    logo: { '@type': 'ImageObject', url: `${site}/images/logo.png` },
+    publishingPrinciples: `${site}/politica-editorial`,
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+  isBasedOn: data.source.url,
+};
+
+const chartSeries = endiv.series.map(p => ({ d: p.date, v: p.value }));
+---
+
+<BaseLayout title={title} description={description}
+  keywords={['endividamento das famílias', 'índice de endividamento', 'dívidas brasileiro', 'comprometimento de renda', 'dados banco central']}>
+  <SchemaBreadcrumb items={breadcrumbItems} />
+  <script type="application/ld+json" set:html={JSON.stringify(datasetSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <Header />
+
+  <main class="estudo-page">
+    <div class="container">
+      <header class="estudo-header">
+        <span class="estudo-badge">Estudo · Dados do Banco Central</span>
+        <h1>{title}</h1>
+        <p class="estudo-lead">
+          O endividamento das famílias brasileiras em relação à renda acumulada de 12 meses chegou a
+          <strong>{fmt(latest.value)}%</strong> em {fmtMonthYear(latest.date)} — uma alta de
+          <strong>{fmt(deltaPP)} pontos percentuais</strong> ({fmt(growthPct)}%) desde {firstYear}.
+        </p>
+        <p class="estudo-meta">
+          Por <a href={author.i18nPaths.pt} rel="author">{author.name}</a> ·
+          Atualizado em {updatedLabel} · Fonte: Banco Central do Brasil
+        </p>
+      </header>
+
+      <section class="estudo-stats">
+        <div class="stat-card highlight">
+          <span class="stat-value">{fmt(latest.value)}%</span>
+          <span class="stat-label">Endividamento das famílias<br/>(% da renda anual, {fmtMonthYear(latest.date)})</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">{fmt(compr.latest.value)}%</span>
+          <span class="stat-label">Comprometimento de renda<br/>com o serviço da dívida</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">+{fmt(deltaPP)} p.p.</span>
+          <span class="stat-label">Alta do endividamento<br/>de {firstYear} a {latestYear}</span>
+        </div>
+      </section>
+
+      <section class="estudo-chart-section">
+        <h2>Evolução do endividamento ({firstYear}–{latestYear})</h2>
+        <div class="chart-container">
+          <canvas id="chart" width="900" height="360"></canvas>
+        </div>
+        <p class="chart-caption">
+          Endividamento das famílias com o Sistema Financeiro Nacional em relação à renda acumulada dos
+          últimos 12 meses. Máximo no período: {fmt(endiv.max.value)}% ({fmtMonthYear(endiv.max.date)}).
+        </p>
+      </section>
+
+      <section class="estudo-text">
+        <h2>O que os dados mostram</h2>
+        <p>
+          Desde {firstYear}, o endividamento das famílias brasileiras cresceu de {fmt(first.value)}% para
+          {fmt(latest.value)}% da renda anual — praticamente metade de tudo o que uma família ganha em um ano
+          está comprometido com dívidas. Em paralelo, o comprometimento mensal de renda com o serviço da
+          dívida (juros e parcelas) está em {fmt(compr.latest.value)}%.
+        </p>
+        <p>
+          Na prática, isso reforça a importância de organizar o orçamento, priorizar a quitação de dívidas
+          caras e construir uma reserva. Ferramentas gratuitas ajudam: veja a
+          <a href="/ferramentas/calculadora-reserva">calculadora de reserva de emergência</a> e a
+          <a href="/ferramentas/calculadora-orcamento">calculadora de orçamento 50-30-20</a>.
+        </p>
+      </section>
+
+      <section class="estudo-metodo">
+        <h2>Metodologia e fonte</h2>
+        <p>
+          Os dados vêm do <strong>Sistema Gerenciador de Séries Temporais (SGS)</strong> do
+          <a href={data.source.url} target="_blank" rel="noopener">Banco Central do Brasil</a>:
+          série <strong>29037</strong> (endividamento das famílias com o SFN em relação à renda acumulada
+          de 12 meses) e série <strong>29034</strong> (comprometimento de renda das famílias com o serviço da
+          dívida). Os valores são coletados diretamente da API pública do BCB e a página é
+          <strong>atualizada automaticamente</strong> a cada novo dado divulgado.
+        </p>
+      </section>
+
+      <section class="estudo-cite">
+        <h2>Como citar este estudo</h2>
+        <blockquote>
+          Índice FinMoovi de Endividamento das Famílias, {config.brand.name} Blog, com dados do Banco
+          Central do Brasil (SGS 29037/29034). Disponível em: {pageUrl}. Acesso em {updatedLabel}.
+        </blockquote>
+      </section>
+
+      <InlineAppCTA variant="full" locale="pt" />
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/json" id="endiv-series" set:html={JSON.stringify(chartSeries)} />
+  <script>
+    const raw = document.getElementById('endiv-series');
+    const series = JSON.parse(raw ? raw.textContent : '[]');
+    const canvas = document.getElementById('chart');
+    if (canvas && series.length) {
+      const ctx = canvas.getContext('2d');
+      const W = canvas.width, H = canvas.height, padL = 50, padR = 20, padT = 20, padB = 30;
+      const values = series.map(p => p.v);
+      const maxV = Math.max(...values) * 1.02;
+      const minV = Math.min(...values) * 0.95;
+      const xStep = (W - padL - padR) / (series.length - 1);
+      const yScale = (H - padT - padB) / (maxV - minV);
+
+      ctx.clearRect(0, 0, W, H);
+      // grid + y labels
+      ctx.strokeStyle = '#30363d'; ctx.lineWidth = 0.5; ctx.fillStyle = '#6e7681'; ctx.font = '11px Inter, sans-serif';
+      for (let g = 0; g <= 4; g++) {
+        const y = padT + (H - padT - padB) * (g / 4);
+        ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(W - padR, y); ctx.stroke();
+        const val = maxV - (maxV - minV) * (g / 4);
+        ctx.fillText(val.toFixed(0) + '%', 8, y + 4);
+      }
+      // x labels (anos)
+      let lastYear = '';
+      for (let i = 0; i < series.length; i++) {
+        const yr = series[i].d.slice(0, 4);
+        if (yr !== lastYear && (parseInt(yr) % 3 === 0)) {
+          lastYear = yr;
+          const x = padL + i * xStep;
+          ctx.fillText(yr, x - 12, H - 10);
+        }
+      }
+      // area + line
+      ctx.beginPath();
+      for (let i = 0; i < series.length; i++) {
+        const x = padL + i * xStep;
+        const y = H - padB - (series[i].v - minV) * yScale;
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = '#f85149'; ctx.lineWidth = 2.5; ctx.stroke();
+      ctx.lineTo(padL + (series.length - 1) * xStep, H - padB);
+      ctx.lineTo(padL, H - padB); ctx.closePath();
+      ctx.fillStyle = 'rgba(248, 81, 73, 0.08)'; ctx.fill();
+    }
+  </script>
+</BaseLayout>
+
+<style>
+  .estudo-page { padding: 2rem 0 4rem; }
+  .estudo-header { max-width: 820px; margin: 0 auto 2rem; }
+  .estudo-badge {
+    display: inline-block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.05em; color: #f85149; background: rgba(248,81,73,0.12);
+    padding: 3px 10px; border-radius: 999px; margin-bottom: 1rem;
+  }
+  .estudo-header h1 { color: var(--text-primary); font-size: 2.1rem; line-height: 1.2; margin-bottom: 1rem; }
+  .estudo-lead { color: var(--text-secondary); font-size: 1.15rem; line-height: 1.6; margin-bottom: 0.75rem; }
+  .estudo-lead :global(strong) { color: var(--text-primary); }
+  .estudo-meta { color: var(--text-tertiary); font-size: 0.85rem; }
+  .estudo-meta a { color: var(--text-link); }
+
+  .estudo-stats {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+    max-width: 820px; margin: 0 auto 2.5rem;
+  }
+  .stat-card {
+    background: var(--bg-secondary); border: 1px solid var(--border-default);
+    border-radius: 12px; padding: 1.25rem; text-align: center;
+    display: flex; flex-direction: column; gap: 0.4rem;
+  }
+  .stat-card.highlight { border-color: #f85149; }
+  .stat-value { font-size: 1.8rem; font-weight: 700; color: var(--text-primary); }
+  .stat-card.highlight .stat-value { color: #f85149; }
+  .stat-label { font-size: 0.75rem; color: var(--text-secondary); line-height: 1.4; }
+
+  .estudo-chart-section, .estudo-text, .estudo-metodo, .estudo-cite { max-width: 820px; margin: 0 auto 2.5rem; }
+  .estudo-chart-section h2, .estudo-text h2, .estudo-metodo h2, .estudo-cite h2 {
+    color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem;
+  }
+  .chart-container {
+    width: 100%; overflow-x: auto; background: var(--bg-secondary);
+    border: 1px solid var(--border-default); border-radius: 12px; padding: 1rem;
+  }
+  canvas { width: 100%; height: auto; }
+  .chart-caption { font-size: 0.8rem; color: var(--text-tertiary); margin-top: 0.75rem; line-height: 1.5; }
+  .estudo-text p, .estudo-metodo p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; }
+  .estudo-text a, .estudo-metodo a { color: var(--text-link); text-decoration: underline; text-underline-offset: 3px; }
+  .estudo-text :global(strong), .estudo-metodo :global(strong) { color: var(--text-primary); }
+  .estudo-cite blockquote {
+    background: var(--bg-secondary); border-left: 3px solid #00F0FF;
+    border-radius: 8px; padding: 1rem 1.25rem; color: var(--text-secondary);
+    font-size: 0.9rem; line-height: 1.6; margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .estudo-stats { grid-template-columns: 1fr; }
+    .estudo-header h1 { font-size: 1.6rem; }
+  }
+</style>
