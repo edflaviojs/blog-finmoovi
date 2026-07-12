@@ -74,6 +74,12 @@ async function main() {
     console.log(`✅ ${batch.length} URLs enviadas ao IndexNow.`);
   } else {
     const body = await res.text().catch(() => '');
+    // 403 SiteVerificationNotCompleted = chave recém-criada ainda validando.
+    // Não é erro real: sai limpo (exit 0) e tenta de novo no próximo ciclo agendado.
+    if (res.status === 403) {
+      console.log(`⏳ Verificação da chave ainda em andamento (HTTP 403). Tentará de novo no próximo ciclo. ${body.slice(0, 150)}`);
+      return;
+    }
     console.log(`⚠️ Falha (HTTP ${res.status}): ${body.slice(0, 300)}`);
     process.exit(1);
   }
