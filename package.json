@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run validate:i18n && npm run generate && astro build",
+    "build": "npm run validate:i18n && npm run generate && astro build && npm run validate:schema",
+    "validate:schema": "node scripts/validate-schema.js",
     "preview": "astro preview",
     "astro": "astro",
     "postbuild": "pagefind --site dist",

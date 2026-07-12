@@ -1,5 +1,6 @@
 ---
 import { config } from '../../../site.config';
+import { resolveAuthor } from '@/data/authors';
 
 interface Props {
   title: string;
@@ -15,6 +16,10 @@ interface Props {
 
 const { title, description, image, url, publishedTime, modifiedTime, author = config.content.defaultAuthor, category, keywords = [] } = Astro.props;
 
+// Autor real (Person) resolvido do registro — consistente com a assinatura
+// visível e a página /autor. Reforça E-E-A-T em conteúdo YMYL (finanças).
+const authorObj = resolveAuthor(author);
+
 const schema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -25,9 +30,12 @@ const schema = {
   "datePublished": publishedTime,
   "dateModified": modifiedTime || publishedTime,
   "author": {
-    "@type": "Organization",
-    "name": author,
-    "url": config.app.url
+    "@type": "Person",
+    "@id": `${authorObj.url}#person`,
+    "name": authorObj.name,
+    "url": authorObj.url,
+    "jobTitle": authorObj.jobTitle,
+    ...(authorObj.sameAs.length > 0 && { "sameAs": authorObj.sameAs })
   },
   "publisher": {
     "@type": "Organization",

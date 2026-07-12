@@ -14,6 +14,7 @@ import NewsletterPopup from '@components/shared/NewsletterPopup.astro';
 import Giscus from '@components/shared/Giscus.astro';
 import ArticleRating from '@components/shared/ArticleRating.astro';
 import RelatedPosts from '@components/posts/RelatedPosts.astro';
+import { resolveAuthor } from '@/data/authors';
 
 interface Props {
   title: string;
@@ -30,6 +31,7 @@ interface Props {
 }
 
 const { title, description, image, publishedTime, author, keywords, category, readingTime, headings = [], slug, alternates } = Astro.props;
+const authorObj = resolveAuthor(author);
 const postUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const postSlug = Astro.url.pathname.replace(/\//g, '-').replace(/^-|-$/g, '');
 
@@ -80,7 +82,7 @@ const schemaBreadcrumbItems = [
             {category && <span class="post-category" data-i18n={`cat.${category}`}>{category}</span>}
             <h1 class="post-title">{title}</h1>
             <div class="post-meta">
-              {author && <span class="post-author">{byLabel} {author}</span>}
+              {author && <span class="post-author">{byLabel} <a href={authorObj.url} rel="author">{authorObj.name}</a></span>}
               {publishedTime && (
                 <time datetime={publishedTime}>
                   {new Date(publishedTime).toLocaleDateString(dateLang, { day: '2-digit', month: 'long', year: 'numeric' })}

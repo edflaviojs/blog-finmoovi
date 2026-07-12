@@ -4,6 +4,12 @@ import { config } from '../../../site.config';
 const site = config.siteUrl;
 const blogTitle = `${config.brand.name} ${config.brand.blogSuffix}`;
 
+// sameAs dinâmico: app + quaisquer perfis sociais já preenchidos (URLs http).
+// Ao preencher config.social com LinkedIn/YouTube/etc., o schema se atualiza só.
+const socialProfiles = Object.values(config.social || {})
+  .filter((v): v is string => typeof v === 'string' && /^https?:\/\//.test(v));
+const orgSameAs = [config.app.url, ...socialProfiles];
+
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -18,9 +24,7 @@ const websiteSchema = {
       "@type": "ImageObject",
       "url": `${site}/images/logo.png`
     },
-    "sameAs": [
-      config.app.url
-    ]
+    "sameAs": orgSameAs
   },
   "potentialAction": {
     "@type": "SearchAction",
