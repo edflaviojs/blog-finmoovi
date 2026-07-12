@@ -1,0 +1,22 @@
+# Consolidacao de posts duplicados (canibalizacao SEO) - 2026-07-12
+# Cada post removido redireciona 301 para o post "vencedor" do mesmo tema (PT/EN/ES).
+
+# --- Reserva de emergencia -> como-criar-uma-reserva-de-emergencia ---
+/posts/criar-reserva-de-emergencia  /posts/como-criar-uma-reserva-de-emergencia  301
+/en/posts/en-criar-reserva-de-emergencia  /en/posts/en-creating-an-emergency-fund  301
+/es/posts/es-crear-reserva-de-emergencia  /es/posts/es-como-crear-una-reserva-de-emergencia  301
+/posts/criando-reserva-de-emergencia  /posts/como-criar-uma-reserva-de-emergencia  301
+/es/posts/es-creando-reserva-de-emergencia  /es/posts/es-como-crear-una-reserva-de-emergencia  301
+
+# --- Metodo 50/30/20 -> metodo-50-30-20-para-orcamento ---
+/posts/metodo-50-30-20-para-salario-brasileiro  /posts/metodo-50-30-20-para-orcamento  301
+/en/posts/en-metodo-50-30-20-para-salario-brasileiro  /en/posts/en-metodo-50-30-20-para-orcamento  301
+/es/posts/es-metodo-50-30-20-para-salario-brasileiro  /es/posts/es-metodo-50-30-20-para-orcamento  301
+/posts/regra-50-30-20-guia-completo  /posts/metodo-50-30-20-para-orcamento  301
+/en/posts/en-50-30-20-rule-complete-guide  /en/posts/en-metodo-50-30-20-para-orcamento  301
+/es/posts/es-regla-50-30-20-guia-completa  /es/posts/es-metodo-50-30-20-para-orcamento  301
+
+# --- CDB vs Tesouro Selic -> cdb-vs-tesouro-selic-qual-rende-mais-em-2026 ---
+/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce  /posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026  301
+/en/posts/en-cdb-vs-tesouro-selic-qual-e-melhor-para-voce  /en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026  301
+/es/posts/es-cdb-vs-tesouro-selic-qual-e-melhor-para-voce  /es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026  301
