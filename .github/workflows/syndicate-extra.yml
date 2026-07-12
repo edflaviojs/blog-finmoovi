@@ -2,7 +2,7 @@ name: Sindicação Extra (Hashnode + Tumblr + Blogger)
 
 on:
   schedule:
-    - cron: '0 13 * * 1,3,5' # Seg/Qua/Sex 13h UTC
+    - cron: '0 13 * * 2,5' # Ter/Sex 13h UTC (moderado: 2x/semana, máx 2 por vez)
   workflow_dispatch:
 
 permissions:

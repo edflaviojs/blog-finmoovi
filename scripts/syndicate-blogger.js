@@ -73,10 +73,24 @@ async function getAccessToken() {
   return json.access_token;
 }
 
+// Frases de chamada variadas (evita pegada de link repetido/automático)
+const ANCHORS = [
+  'Leia o artigo completo no FinMoovi Blog',
+  'Continue lendo no FinMoovi',
+  'Veja o guia completo no FinMoovi Blog',
+  'Confira o post completo',
+  'Saiba mais no FinMoovi Blog',
+  'Leia mais sobre isso no FinMoovi',
+];
+function pickAnchor(slug) {
+  const h = [...slug].reduce((a, c) => a + c.charCodeAt(0), 0);
+  return ANCHORS[h % ANCHORS.length];
+}
+
 async function publishToBlogger(post, accessToken) {
   const canonical = `${SITE_URL}/posts/${post.slug}/`;
   const content = `<p>${esc(post.description)}</p>` +
-    `<p><a href="${canonical}" rel="canonical">Leia o artigo completo no FinMoovi Blog »</a></p>`;
+    `<p><a href="${canonical}">${esc(pickAnchor(post.slug))} »</a></p>`;
 
   const res = await fetch(`https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts/`, {
     method: 'POST',
