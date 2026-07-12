@@ -1,0 +1,61 @@
+name: Sindicação Extra (Hashnode + Tumblr + Blogger)
+
+on:
+  schedule:
+    - cron: '0 13 * * 1,3,5' # Seg/Qua/Sex 13h UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  syndicate-extra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sindicar Hashnode
+        env:
+          HASHNODE_TOKEN: ${{ secrets.HASHNODE_TOKEN }}
+          HASHNODE_PUBLICATION_ID: ${{ secrets.HASHNODE_PUBLICATION_ID }}
+        run: node scripts/syndicate-hashnode.js
+
+      - name: Sindicar Tumblr
+        env:
+          TUMBLR_CLIENT_ID: ${{ secrets.TUMBLR_CLIENT_ID }}
+          TUMBLR_CLIENT_SECRET: ${{ secrets.TUMBLR_CLIENT_SECRET }}
+          TUMBLR_REFRESH_TOKEN: ${{ secrets.TUMBLR_REFRESH_TOKEN }}
+          TUMBLR_BLOG: ${{ secrets.TUMBLR_BLOG }}
+        run: node scripts/syndicate-tumblr.js
+
+      - name: Sindicar Blogger
+        env:
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
+        run: node scripts/syndicate-blogger.js
+
+      - name: Commit tracking
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/synced-hashnode.json .github/data/synced-tumblr.json .github/data/synced-blogger.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Sem mudanças no tracking."
+          else
+            git commit -m "chore: atualizar tracking de sindicação extra [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          fi
