@@ -30,10 +30,10 @@ But, what if I told you there's a solution to this problem? It's [FinMoovi](/en/
 
 
 ## Practical Usage Scenarios
-Let's say you're on a business trip and need to buy a gift for a friend. You take out your phone, open FinMoovi, and record the expense using your camera. The app will automatically categorize the expense as "Gifts" and calculate the value in reals, even if you bought it in dollars or euros. Additionally, FinMoovi's intelligent reports with AI help identify patterns and provide a clear view of your finances, even when you're offline.
+Let's say you're on a business trip and need to buy a gift for a friend. You take out your phone, open [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), and record the expense using your camera. The app will automatically categorize the expense as "Gifts" and calculate the value in reals, even if you bought it in dollars or euros. Additionally, FinMoovi's intelligent reports with AI help identify patterns and provide a clear view of your finances, even when you're offline.
 
 ## Before vs After FinMoovi
-Before using FinMoovi, I was always lost when it came to my finances. I didn't know where my [money](/en/posts/financial-education-for-children) was being spent, and I had no control over my expenses. But, after starting to use FinMoovi, I was able to organize my finances effectively. I can see exactly where my [money](/en/posts/financial-planning-for-couples) is being spent, and I can make adjustments to save more. According to [Investopedia](https://www.investopedia.com), [expense control](/en/posts/controle-gastos-cartao-credito) is one of the keys to achieving financial stability.
+Before using FinMoovi, I was always lost when it came to my finances. I didn't know where my [money](/en/posts/financial-education-for-children) was being spent, and I had no control over my expenses. But, after starting to use FinMoovi, I was able to organize my finances effectively. I can see exactly where my [money](/en/posts/financial-[planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas)-for-couples) is being spent, and I can make adjustments to save more. According to [Investopedia](https://www.investopedia.com), [expense control](/en/posts/controle-gastos-cartao-credito) is one of the keys to achieving financial stability.
 
 ![Cenários Práticos de Uso](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-4.webp)
 

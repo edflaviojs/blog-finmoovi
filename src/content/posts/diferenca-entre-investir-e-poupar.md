@@ -50,7 +50,7 @@ Antes de investir, é fundamental analisar o risco. Isso inclui entender o tipo 
 Por exemplo, se você está perto de se aposentar, você pode querer investir em ativos mais seguros, como títulos ou fundos de investimento de baixo risco. No entanto, se você é mais jovem e tem um horizonte de tempo mais longo, você pode estar mais disposto a correr [riscos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-5-junho-2026))-qual-rende-mais-em-2026) e investir em ativos mais voláteis.
 
 ## Comece hoje
-Agora que você entende a diferença entre investir e poupar, é hora de começar a planejar seu futuro financeiro. Lembre-se de que investir e poupar são ambos importantes, e a chave é encontrar um equilíbrio que funcione para você. Com um plano financeiro claro e uma estratégia de investimento bem definida, você pode alcançar seus objetivos financeiros e construir um futuro mais seguro.
+Agora que você entende a [diferença entre investir e poupar](/posts/diferenca-entre-investir-e-poupar-o-que-realmente-importa), é hora de começar a planejar seu futuro financeiro. Lembre-se de que investir e poupar são ambos importantes, e a chave é encontrar um equilíbrio que funcione para você. Com um plano financeiro claro e uma estratégia de investimento bem definida, você pode alcançar seus objetivos financeiros e construir um futuro mais seguro.
 
 ![Comece hoje](/images/posts/diferenca-entre-investir-e-poupar-6.webp)
 
