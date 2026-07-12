@@ -123,7 +123,12 @@ async function main() {
 
   if (!PUBLICATION_ID) {
     try { PUBLICATION_ID = await resolvePublicationId(); }
-    catch (e) { console.error(`❌ Não consegui descobrir a publication: ${e.message}`); process.exit(1); }
+    catch (e) {
+      // A API GraphQL do Hashnode passou a exigir plano Pro (desde 13/05/2026).
+      // No plano free ela retorna HTML/erro — pulamos sem derrubar o workflow.
+      console.log(`⏭️  Hashnode indisponível no plano free (a API GraphQL exige Pro desde 05/2026). Pulando. Detalhe: ${e.message}`);
+      return;
+    }
   }
 
   const toSync = unsynced.slice(0, MAX_PER_RUN);
