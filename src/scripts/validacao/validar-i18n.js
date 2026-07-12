@@ -40,6 +40,21 @@ function parseFrontmatter(content) {
   return fm;
 }
 
+// --- Detecção de canibalização de SEO ---
+// Bloqueia quando 2+ posts PT distintos miram o mesmo tema/palavra-chave.
+// Séries periódicas (cotações semanais, glossário, meses) são ignoradas.
+const STOPWORDS = new Set(['de','da','do','das','dos','para','por','com','e','em','o','a','as','os','um','uma','no','na','nas','nos','ao','aos','se','sua','seu','suas','seus','que','qual','quais','como','ou','vs','sem','sobre','the','of','to','for','and','in','el','la','los','las','y','del','guia','completo','completa','complete','guide','dicas','tips','passo','melhor','mais','menos','voce','you','rende','vale','pena','realmente','importa','2025','2026','2027']);
+const SERIE_RE = /(semana|semanal|cotacoes|cotizaciones|quotes|week|glossario|glossary|glosario|janeiro|fevereiro|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|january|february|march|may|june|july|august|september|october|november|december|enero|febrero|marzo|mayo|junio|julio|septiembre|octubre|noviembre|diciembre)/;
+
+function coreTokens(slug) {
+  return new Set(slug.split('-').map(t => t.trim()).filter(t => t && t.length > 1 && !STOPWORDS.has(t)));
+}
+function jaccardSim(a, b) {
+  const inter = [...a].filter(x => b.has(x)).length;
+  const uni = new Set([...a, ...b]).size;
+  return uni ? inter / uni : 0;
+}
+
 function main() {
   console.log('🔍 Validando consistência i18n...\n');
 
@@ -112,6 +127,23 @@ function main() {
   for (const [key, locales] of Object.entries(keyMap)) {
     if (translatedMonths.test(key)) {
       errors.push(`❌ translationKey "${key}" contém mês traduzido (deve usar PT como base)`);
+    }
+  }
+
+  // 5. Canibalização: posts PT distintos com o mesmo núcleo de palavras-chave
+  const ptCanibal = posts
+    .filter(p => p.locale === 'pt')
+    .map(p => { const slug = p.file.replace(/\.md$/, ''); return { slug, core: coreTokens(slug) }; })
+    .filter(p => !SERIE_RE.test(p.slug)); // séries periódicas nunca são canibalização
+  for (let i = 0; i < ptCanibal.length; i++) {
+    for (let j = i + 1; j < ptCanibal.length; j++) {
+      const A = ptCanibal[i], B = ptCanibal[j];
+      const shared = [...A.core].filter(x => B.core.has(x));
+      if (shared.length >= 3 || jaccardSim(A.core, B.core) >= 0.7) {
+        errors.push(`❌ CANIBALIZAÇÃO: 2 posts PT competem pelo mesmo tema (${shared.join(', ')}):`);
+        errors.push(`   - ${A.slug}`);
+        errors.push(`   - ${B.slug}`);
+      }
     }
   }
 
