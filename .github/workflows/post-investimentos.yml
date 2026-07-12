@@ -41,6 +41,17 @@ jobs:
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: node src/scripts/automacoes/gerar-post-investimentos.js
 
+      - name: Auto-sincronizar i18n (rede de segurança)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: node src/scripts/validacao/sincronizar-i18n.js --no-validate
+
       - name: Validar consistência i18n
         run: node src/scripts/validacao/validar-i18n.js
 

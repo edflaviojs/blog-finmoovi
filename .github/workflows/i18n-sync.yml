@@ -1,16 +1,16 @@
-name: Post Sazonal Semanal
+name: Sincronizar i18n (auto-corretor PT/EN/ES)
 
 on:
   schedule:
-    # Sextas-feiras às 7h BRT (10h UTC)
-    - cron: '0 10 * * 5'
+    # Diário às 5h UTC (antes dos workflows de geração) — mantém a base sincronizada
+    - cron: '0 5 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  gerar-post:
+  sincronizar-i18n:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,17 +31,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Gerar post sazonal
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
-          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
-          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
-        run: node src/scripts/automacoes/gerar-post-sazonal.js
-
-      - name: Auto-sincronizar i18n (rede de segurança)
+      - name: Auto-sincronizar i18n (gera traduções faltantes + commita)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
@@ -50,10 +40,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        run: node src/scripts/validacao/sincronizar-i18n.js --no-validate
-
-      - name: Validar consistência i18n
-        run: node src/scripts/validacao/validar-i18n.js
+        run: node src/scripts/validacao/sincronizar-i18n.js
 
       - name: Push changes
         run: |

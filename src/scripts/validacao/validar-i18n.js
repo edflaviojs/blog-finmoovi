@@ -101,9 +101,9 @@ function main() {
     if (localeCount !== 3) {
       const missing = ['pt', 'en', 'es'].filter(l => !locales[l]);
       if (localeCount === 1) {
-        warnings.push(`⚠️ translationKey "${key}" só tem 1 locale (${Object.keys(locales)[0]}) — faltam: ${missing.join(', ')}`);
+        errors.push(`❌ translationKey "${key}" só tem 1 locale (${Object.keys(locales)[0]}) — faltam: ${missing.join(', ')}`);
       } else if (localeCount === 2) {
-        warnings.push(`⚠️ translationKey "${key}" tem 2 locales — falta: ${missing.join(', ')}`);
+        errors.push(`❌ translationKey "${key}" tem 2 locales — falta: ${missing.join(', ')}`);
       }
     }
   }
