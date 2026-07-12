@@ -6,6 +6,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
+import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -157,7 +158,9 @@ function chooseTopic(insights) {
  * Generate post via Groq
  */
 async function generatePost(topic) {
+  const avoidBlock = coveredThemesBlock(POSTS_DIR);
   const prompt = `Você é um redator especialista em finanças pessoais para o blog ${config.brand.name}.
+${avoidBlock}
 Escreva um artigo completo e profissional sobre: "${topic}"
 
 REGRAS:
@@ -344,6 +347,13 @@ async function main() {
   // 2. Choose topic
   const topic = chooseTopic(insights);
   console.log(`📝 Tópico escolhido: "${topic}"\n`);
+
+  // Anti-canibalização: pula sem gastar API se o tema já está coberto.
+  const canibal = isThemeCovered(topic, POSTS_DIR);
+  if (canibal.covered) {
+    console.log(`⚠️ Anti-canibalização: "${topic}" conflita com "${canibal.conflictSlug}" (${canibal.shared.join(', ')}). Abortando sem gastar API.`);
+    return;
+  }
 
   // 3. Generate post in PT
   console.log('🇧🇷 Gerando post em português...');

@@ -6,6 +6,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateBlogPost, generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
+import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -245,11 +246,19 @@ async function main() {
     }
   }
 
+  // Anti-canibalização: pula sem gastar API se o tema já está coberto.
+  const canibal = isThemeCovered(topic, POSTS_DIR);
+  if (canibal.covered) {
+    console.log(`⚠️ Anti-canibalização: "${topic}" conflita com "${canibal.conflictSlug}" (${canibal.shared.join(', ')}). Abortando sem gastar API.`);
+    return;
+  }
+
   try {
     // 1. Generate PT post
     const post = await generateBlogPost(topic, {
       category: 'dicas',
       keywords: [topic, 'finanças pessoais', 'economia', 'dinheiro'],
+      avoidThemes: coveredThemesBlock(POSTS_DIR),
     });
 
     if (!post.title || !post.content) {

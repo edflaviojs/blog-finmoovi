@@ -1,5 +1,6 @@
 import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
+import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -276,8 +277,16 @@ async function main() {
     }
   }
 
+  // Anti-canibalização: pula sem gastar API se o tema já está coberto.
+  const canibal = isThemeCovered(topic.title, POSTS_DIR);
+  if (canibal.covered) {
+    console.log(`⚠️ Anti-canibalização: "${topic.title}" conflita com "${canibal.conflictSlug}" (${canibal.shared.join(', ')}). Abortando sem gastar API.`);
+    return;
+  }
+  const avoidBlock = coveredThemesBlock(POSTS_DIR);
+
   const promptFn = PROMPTS_BY_TYPE[topic.type] || PROMPTS_BY_TYPE.feature;
-  const prompt = promptFn(topic);
+  const prompt = `${avoidBlock}\n` + promptFn(topic);
 
   try {
     let result;

@@ -16,6 +16,7 @@
 
 import { readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
+import { SERIE_RE, coreTokens, jaccardSim } from '../lib/seo-guard.js';
 
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 
@@ -41,19 +42,9 @@ function parseFrontmatter(content) {
 }
 
 // --- Detecção de canibalização de SEO ---
-// Bloqueia quando 2+ posts PT distintos miram o mesmo tema/palavra-chave.
-// Séries periódicas (cotações semanais, glossário, meses) são ignoradas.
-const STOPWORDS = new Set(['de','da','do','das','dos','para','por','com','e','em','o','a','as','os','um','uma','no','na','nas','nos','ao','aos','se','sua','seu','suas','seus','que','qual','quais','como','ou','vs','sem','sobre','the','of','to','for','and','in','el','la','los','las','y','del','guia','completo','completa','complete','guide','dicas','tips','passo','melhor','mais','menos','voce','you','rende','vale','pena','realmente','importa','2025','2026','2027']);
-const SERIE_RE = /(semana|semanal|cotacoes|cotizaciones|quotes|week|glossario|glossary|glosario|janeiro|fevereiro|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|january|february|march|may|june|july|august|september|october|november|december|enero|febrero|marzo|mayo|junio|julio|septiembre|octubre|noviembre|diciembre)/;
-
-function coreTokens(slug) {
-  return new Set(slug.split('-').map(t => t.trim()).filter(t => t && t.length > 1 && !STOPWORDS.has(t)));
-}
-function jaccardSim(a, b) {
-  const inter = [...a].filter(x => b.has(x)).length;
-  const uni = new Set([...a, ...b]).size;
-  return uni ? inter / uni : 0;
-}
+// Lógica centralizada em ../lib/seo-guard.js (fonte única): a MESMA usada pelos
+// geradores para pular temas já cobertos ANTES de gastar API. Bloqueia quando
+// 2+ posts PT distintos miram o mesmo tema; séries periódicas são ignoradas.
 
 function main() {
   console.log('🔍 Validando consistência i18n...\n');

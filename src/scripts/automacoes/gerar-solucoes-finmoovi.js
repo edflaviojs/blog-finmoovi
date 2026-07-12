@@ -7,6 +7,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
+import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -275,7 +276,16 @@ async function main() {
     }
   }
 
+  // Anti-canibalização: pula sem gastar a API cara de geração se o tema já está coberto.
+  const canibal = isThemeCovered(topic.problem, POSTS_DIR);
+  if (canibal.covered) {
+    console.log(`⚠️ Anti-canibalização: "${topic.problem}" conflita com "${canibal.conflictSlug}" (${canibal.shared.join(', ')}). Abortando sem gastar API.`);
+    return;
+  }
+  const avoidBlock = coveredThemesBlock(POSTS_DIR);
+
   const prompt = `
+${avoidBlock}
 Escreva um post de blog em português brasileiro sobre o seguinte problema financeiro do dia a dia e como o app ${config.app.name} resolve:
 
 PROBLEMA: ${topic.problem}

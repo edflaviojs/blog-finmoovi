@@ -145,6 +145,7 @@ export async function generateBlogPost(topic, options = {}) {
   const {
     category = 'dicas',
     keywords = [],
+    avoidThemes = '',   // bloco anti-canibalização opcional (temas já cobertos)
   } = options;
 
   const ctaVariations = [
@@ -160,6 +161,7 @@ export async function generateBlogPost(topic, options = {}) {
   const selectedCta = ctaVariations[ctaIndex];
 
   const textPrompt = `
+${avoidThemes}
 Escreva um artigo de blog sobre: "${topic}"
 
 REGRAS DE ESTILO (obrigatórias):
