@@ -53,7 +53,7 @@ La tarjeta de crédito puede ser una buena opción si usted:
 * Tiene un historial de crédito bueno y puede pagar el saldo total hasta la fecha de vencimiento
 * Quiere construir o mejorar su historial de crédito
 * Necesita un límite de crédito mayor para hacer compras o pagar cuentas
-* Quiere aprovechar los [beneficios](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/glossario/es-[selic](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-1-junio-2026)-semana-1-julio-2026))-qual-rende-mais-em-2026) de programa de recompensas o cashback
+* Quiere aprovechar los [beneficios](/es/posts/[cdb](/es/glossario/es-cdb)-vs-tesouro-[selic](/es/glossario/es-[selic](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/[cotizaciones](/es/posts/cotizaciones-semana-1-junio-2026)-semana-1-julio-2026)-semana-1-junio-2026)-semana-1-julio-2026))-qual-rende-mais-em-2026) de programa de recompensas o cashback
 
 No obstante, es importante recordar que la tarjeta de crédito puede ser peligrosa si usted no tiene disciplina para pagar el saldo total hasta la fecha de vencimiento. Los intereses pueden acumularse rápidamente, y usted puede acabar pagando mucho más que el valor original de la compra.
 
