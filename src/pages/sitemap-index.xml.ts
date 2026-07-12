@@ -29,6 +29,8 @@ export const GET: APIRoute = async () => {
     { url: '/guia-30-dias', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/checklist-financeiro', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/ferramentas/calculadora-juros-compostos', priority: '0.8', changefreq: 'monthly', lastmod: today },
+    { url: '/ferramentas/calculadora-financiamento', priority: '0.8', changefreq: 'monthly', lastmod: today },
+    { url: '/ferramentas/calculadora-aposentadoria', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/ferramentas/calculadora-orcamento', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/ferramentas/conversor-moedas', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/ferramentas/simulador-investimento', priority: '0.8', changefreq: 'monthly', lastmod: today },

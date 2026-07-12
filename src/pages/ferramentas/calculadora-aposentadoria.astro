@@ -1,0 +1,302 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const isEmbed = Astro.url.searchParams.get('embed') === 'true';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Ferramentas', url: '/ferramentas' },
+  { name: 'Calculadora de Aposentadoria', url: '/ferramentas/calculadora-aposentadoria' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que é a regra dos 4%?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A regra dos 4% é uma referência de planejamento que estima que você pode retirar cerca de 4% do seu patrimônio por ano, ajustado pela inflação, com baixo risco de acabar com o dinheiro. Assim, o patrimônio necessário é aproximadamente 25 vezes o seu gasto anual." }
+    },
+    {
+      "@type": "Question",
+      "name": "Como calcular quanto preciso para me aposentar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiplique a renda anual desejada pelo inverso da taxa de retirada. Com 4% ao ano: patrimônio = renda mensal × 12 ÷ 0,04, ou seja, 25 vezes o gasto anual. Por exemplo, para R$ 5.000/mês (R$ 60.000/ano) você precisa de cerca de R$ 1,5 milhão." }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é taxa de retirada segura?",
+      "acceptedAnswer": { "@type": "Answer", "text": "É o percentual do patrimônio que você retira por ano para viver sem, idealmente, esgotar o valor investido. Taxas menores (3–4%) são mais conservadoras; taxas maiores exigem um patrimônio menor, mas com mais risco." }
+    },
+    {
+      "@type": "Question",
+      "name": "Por que usar rentabilidade real (acima da inflação)?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Usar a rentabilidade real (descontada a inflação) faz o resultado já vir em poder de compra de hoje, evitando superestimar o patrimônio futuro. É a forma mais honesta de planejar aposentadoria no longo prazo." }
+    }
+  ]
+};
+
+const Layout = isEmbed ? EmbedLayout : BaseLayout;
+const layoutProps = isEmbed
+  ? { title: 'Calculadora de Aposentadoria / Independência Financeira' }
+  : {
+      title: 'Calculadora de Aposentadoria e Independência Financeira',
+      description: 'Descubra quanto você precisa para se aposentar e em quanto tempo chega lá. Usa a regra dos 4% e rentabilidade real para um planejamento honesto.',
+      keywords: ['calculadora aposentadoria', 'independência financeira', 'regra dos 4%', 'quanto preciso para me aposentar', 'FIRE', 'liberdade financeira']
+    };
+---
+
+<Layout {...layoutProps}>
+  {!isEmbed && <SchemaBreadcrumb items={breadcrumbItems} />}
+  {!isEmbed && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {!isEmbed && <Header />}
+
+  <main class="tool-page">
+    <div class="container">
+      {!isEmbed && (
+        <header class="tool-header">
+          <nav class="tool-breadcrumb">
+            <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Aposentadoria</span>
+          </nav>
+          <h1>Calculadora de Aposentadoria e Independência Financeira</h1>
+          <p class="tool-subtitle">Descubra quanto patrimônio você precisa para viver de renda e em quanto tempo chega lá.</p>
+        </header>
+      )}
+
+      <div class="calculator-layout">
+        <div class="calculator-form">
+          <div class="form-group">
+            <label for="renda">Renda mensal desejada (R$)</label>
+            <input type="number" id="renda" value="5000" min="0" step="100" />
+          </div>
+          <div class="form-group">
+            <label for="retirada">Taxa de retirada (% ao ano)</label>
+            <input type="number" id="retirada" value="4" min="1" max="10" step="0.1" />
+          </div>
+          <div class="form-group">
+            <label for="atual">Patrimônio atual (R$)</label>
+            <input type="number" id="atual" value="20000" min="0" step="1000" />
+          </div>
+          <div class="form-group">
+            <label for="aporte">Aporte mensal (R$)</label>
+            <input type="number" id="aporte" value="1000" min="0" step="100" />
+          </div>
+          <div class="form-group">
+            <label for="rent">Rentabilidade real (% ao ano)</label>
+            <input type="number" id="rent" value="4" min="0" max="30" step="0.1" />
+          </div>
+          <button class="calc-btn" id="calc-btn">Calcular</button>
+        </div>
+
+        <div class="calculator-results" id="results" style="display:none;">
+          <div class="result-cards">
+            <div class="result-card highlight">
+              <span class="result-label">Patrimônio necessário</span>
+              <span class="result-value" id="r-target">R$ 0</span>
+            </div>
+            <div class="result-card">
+              <span class="result-label">Tempo até atingir</span>
+              <span class="result-value" id="r-time">—</span>
+            </div>
+            <div class="result-card">
+              <span class="result-label">Total aportado</span>
+              <span class="result-value" id="r-contrib">R$ 0</span>
+            </div>
+          </div>
+          <p class="compare-note" id="note"></p>
+          <div class="chart-container">
+            <canvas id="chart" width="600" height="300"></canvas>
+          </div>
+        </div>
+      </div>
+
+      {!isEmbed && <InlineAppCTA variant="full" locale="pt" />}
+
+      {!isEmbed && (
+        <section class="tool-faq">
+          <h2>Perguntas Frequentes</h2>
+          <details>
+            <summary>O que é a regra dos 4%?</summary>
+            <p>É uma referência que estima que você pode retirar cerca de <strong>4% do patrimônio por ano</strong> (ajustado pela inflação) com baixo risco de acabar o dinheiro. O patrimônio necessário fica em torno de <strong>25 vezes o gasto anual</strong>.</p>
+          </details>
+          <details>
+            <summary>Como calcular quanto preciso para me aposentar?</summary>
+            <p>Patrimônio = renda mensal × 12 ÷ taxa de retirada. Com 4%: para R$ 5.000/mês você precisa de cerca de <strong>R$ 1,5 milhão</strong>.</p>
+          </details>
+          <details>
+            <summary>O que é taxa de retirada segura?</summary>
+            <p>É o percentual do patrimônio que você retira por ano sem, idealmente, esgotar o valor investido. Taxas menores (3–4%) são mais conservadoras.</p>
+          </details>
+          <details>
+            <summary>Por que usar rentabilidade real?</summary>
+            <p>A rentabilidade real (descontada a inflação) faz o resultado já vir em <strong>poder de compra de hoje</strong>, evitando superestimar o patrimônio futuro.</p>
+          </details>
+        </section>
+      )}
+    </div>
+  </main>
+
+  {!isEmbed && <Footer />}
+</Layout>
+
+<script>
+  function formatCurrency(value) {
+    return 'R$ ' + Math.round(value).toLocaleString('pt-BR');
+  }
+
+  function calculate() {
+    const renda = parseFloat(document.getElementById('renda').value) || 0;
+    const retirada = (parseFloat(document.getElementById('retirada').value) || 4) / 100;
+    const atual = parseFloat(document.getElementById('atual').value) || 0;
+    const aporte = parseFloat(document.getElementById('aporte').value) || 0;
+    const rent = (parseFloat(document.getElementById('rent').value) || 0) / 100;
+
+    const alvo = retirada > 0 ? (renda * 12) / retirada : 0;
+    const im = Math.pow(1 + rent, 1 / 12) - 1;
+
+    const CAP = 1200; // 100 anos
+    let saldo = atual, months = 0;
+    const data = [atual];
+    while (saldo < alvo && months < CAP) {
+      saldo = saldo * (1 + im) + aporte;
+      months++;
+      data.push(saldo);
+    }
+
+    document.getElementById('r-target').textContent = formatCurrency(alvo);
+
+    const timeEl = document.getElementById('r-time');
+    const contribEl = document.getElementById('r-contrib');
+    const note = document.getElementById('note');
+
+    if (saldo >= alvo) {
+      const anos = Math.floor(months / 12), meses = months % 12;
+      timeEl.textContent = (anos > 0 ? anos + ' ano' + (anos > 1 ? 's' : '') : '') +
+        (meses > 0 ? (anos > 0 ? ' e ' : '') + meses + ' mês' + (meses > 1 ? 'es' : '') : (anos === 0 ? 'imediato' : ''));
+      const totalAportado = atual + aporte * months;
+      contribEl.textContent = formatCurrency(totalAportado);
+      const rendimento = saldo - totalAportado;
+      note.innerHTML = `Do total, cerca de <strong>${formatCurrency(rendimento)}</strong> vêm dos rendimentos — o resto você aporta. Valores em poder de compra de hoje.`;
+    } else {
+      timeEl.textContent = '+100 anos';
+      contribEl.textContent = formatCurrency(atual + aporte * months);
+      note.innerHTML = 'Com esse aporte e rentabilidade, você não atinge o alvo em 100 anos. Tente <strong>aumentar o aporte</strong> ou <strong>reduzir a renda desejada</strong>.';
+    }
+
+    document.getElementById('results').style.display = 'block';
+    drawChart(data, alvo, months);
+  }
+
+  function drawChart(data, alvo, months) {
+    const canvas = document.getElementById('chart');
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width, H = canvas.height, padding = 40;
+    ctx.clearRect(0, 0, W, H);
+
+    const pts = data.length;
+    const maxVal = Math.max(alvo, data[data.length - 1]) * 1.05 || 1;
+    const xStep = (W - padding * 2) / ((pts - 1) || 1);
+    const yScale = (H - padding * 2) / maxVal;
+
+    ctx.strokeStyle = '#30363d'; ctx.lineWidth = 0.5;
+    for (let g = 0; g <= 4; g++) {
+      const y = padding + (H - padding * 2) * (g / 4);
+      ctx.beginPath(); ctx.moveTo(padding, y); ctx.lineTo(W - padding, y); ctx.stroke();
+      ctx.fillStyle = '#6e7681'; ctx.font = '10px Inter, sans-serif';
+      ctx.fillText(formatCurrency(maxVal * (1 - g / 4)), 0, y + 4);
+    }
+
+    // Linha do alvo
+    const yAlvo = H - padding - alvo * yScale;
+    ctx.strokeStyle = '#d29922'; ctx.lineWidth = 1.5; ctx.setLineDash([5, 4]);
+    ctx.beginPath(); ctx.moveTo(padding, yAlvo); ctx.lineTo(W - padding, yAlvo); ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Curva do patrimônio
+    ctx.strokeStyle = '#3fb950'; ctx.lineWidth = 2.5; ctx.beginPath();
+    for (let k = 0; k < pts; k++) {
+      const x = padding + k * xStep;
+      const y = H - padding - data[k] * yScale;
+      k === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+
+    ctx.fillStyle = '#3fb950'; ctx.fillRect(W - 160, 10, 12, 12);
+    ctx.fillStyle = '#f0f6fc'; ctx.font = '11px Inter, sans-serif'; ctx.fillText('Patrimônio', W - 144, 20);
+    ctx.fillStyle = '#d29922'; ctx.fillRect(W - 160, 28, 12, 12);
+    ctx.fillStyle = '#f0f6fc'; ctx.fillText('Meta', W - 144, 38);
+  }
+
+  document.getElementById('calc-btn').addEventListener('click', calculate);
+  document.querySelectorAll('.calculator-form input').forEach(input => {
+    input.addEventListener('keyup', function(e) { if (e.key === 'Enter') calculate(); });
+  });
+  calculate();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-breadcrumb { font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; }
+  .tool-breadcrumb a { color: var(--text-link); text-decoration: none; }
+  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; }
+  .tool-subtitle { color: var(--text-secondary); font-size: 1rem; }
+
+  .calculator-layout { display: grid; gap: 2rem; margin-bottom: 2rem; }
+  .calculator-form {
+    background: var(--bg-secondary); border: 1px solid var(--border-default);
+    border-radius: 12px; padding: 1.5rem;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+  .form-group label { color: var(--text-secondary); font-size: 0.8rem; font-weight: 500; }
+  .form-group input {
+    background: var(--bg-tertiary); border: 1px solid var(--border-default);
+    border-radius: 8px; padding: 0.7rem; color: var(--text-primary); font-size: 1rem;
+  }
+  .form-group input:focus { outline: none; border-color: var(--accent-primary); }
+  .calc-btn {
+    grid-column: 1 / -1; padding: 0.8rem;
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+    color: #fff; font-weight: 600; font-size: 1rem; border: none; border-radius: 8px;
+    cursor: pointer; transition: transform 0.2s;
+  }
+  .calc-btn:hover { transform: translateY(-1px); }
+
+  .calculator-results {
+    background: var(--bg-secondary); border: 1px solid var(--border-default);
+    border-radius: 12px; padding: 1.5rem;
+  }
+  .result-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem; }
+  .result-card {
+    background: var(--bg-tertiary); border-radius: 8px; padding: 1rem;
+    text-align: center; display: flex; flex-direction: column; gap: 0.3rem;
+  }
+  .result-card.highlight { border: 1px solid #3fb950; }
+  .result-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
+  .result-value { font-size: 1.2rem; font-weight: 700; color: var(--text-primary); }
+  .result-card.highlight .result-value { color: #3fb950; }
+  .compare-note { color: var(--text-secondary); font-size: 0.85rem; margin: 0.5rem 0 1rem; line-height: 1.5; }
+  .compare-note :global(strong) { color: var(--text-primary); }
+  .chart-container { width: 100%; overflow-x: auto; }
+  canvas { width: 100%; height: auto; }
+
+  .tool-faq { margin-top: 2rem; }
+  .tool-faq h2 { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; }
+  .tool-faq details {
+    background: var(--bg-secondary); border: 1px solid var(--border-default);
+    border-radius: 8px; margin-bottom: 0.5rem; padding: 1rem;
+  }
+  .tool-faq summary { color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.95rem; }
+  .tool-faq details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+
+  @media (max-width: 640px) {
+    .calculator-form { grid-template-columns: 1fr; }
+    .result-cards { grid-template-columns: 1fr; }
+  }
+</style>

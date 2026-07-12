@@ -1,0 +1,303 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import EmbedLayout from '@layouts/EmbedLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+
+const isEmbed = Astro.url.searchParams.get('embed') === 'true';
+
+const breadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Ferramentas', url: '/ferramentas' },
+  { name: 'Calculadora de Financiamento', url: '/ferramentas/calculadora-financiamento' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre SAC e Price?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No sistema Price a parcela é fixa do início ao fim. No sistema SAC a amortização é constante e as parcelas começam mais altas e vão diminuindo ao longo do tempo. No total, o SAC costuma pagar menos juros que o Price." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual sistema paga menos juros: SAC ou Price?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Na maioria dos casos o SAC paga menos juros no total, porque amortiza o saldo devedor mais rápido. Em compensação, as primeiras parcelas do SAC são mais altas que as do Price." }
+    },
+    {
+      "@type": "Question",
+      "name": "Como é calculada a parcela do financiamento?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No Price: parcela = PV × i ÷ (1 − (1+i)^−n). No SAC: parcela = amortização (PV÷n) + saldo devedor × i, com o saldo diminuindo a cada mês. PV é o valor financiado, i a taxa mensal e n o número de parcelas." }
+    },
+    {
+      "@type": "Question",
+      "name": "A entrada reduz o valor financiado?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim. O valor financiado é o preço do bem menos a entrada. Quanto maior a entrada, menor o valor financiado e menos juros você paga no total." }
+    }
+  ]
+};
+
+const Layout = isEmbed ? EmbedLayout : BaseLayout;
+const layoutProps = isEmbed
+  ? { title: 'Calculadora de Financiamento (SAC x Price)' }
+  : {
+      title: 'Calculadora de Financiamento SAC x Price Grátis',
+      description: 'Simule seu financiamento imobiliário ou de veículo comparando SAC e Price: veja a primeira e a última parcela, o total pago e quanto paga de juros em cada sistema.',
+      keywords: ['calculadora financiamento', 'sac ou price', 'simulador financiamento imobiliário', 'financiamento de veículo', 'calcular parcela financiamento', 'quanto paga de juros']
+    };
+---
+
+<Layout {...layoutProps}>
+  {!isEmbed && <SchemaBreadcrumb items={breadcrumbItems} />}
+  {!isEmbed && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {!isEmbed && <Header />}
+
+  <main class="tool-page">
+    <div class="container">
+      {!isEmbed && (
+        <header class="tool-header">
+          <nav class="tool-breadcrumb">
+            <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Financiamento</span>
+          </nav>
+          <h1>Calculadora de Financiamento (SAC × Price)</h1>
+          <p class="tool-subtitle">Compare os dois sistemas de amortização e descubra quanto vai pagar de parcela e de juros no seu financiamento.</p>
+        </header>
+      )}
+
+      <div class="calculator-layout">
+        <div class="calculator-form">
+          <div class="form-group">
+            <label for="valor">Valor do bem (R$)</label>
+            <input type="number" id="valor" value="300000" min="0" step="1000" />
+          </div>
+          <div class="form-group">
+            <label for="entrada">Entrada (R$)</label>
+            <input type="number" id="entrada" value="60000" min="0" step="1000" />
+          </div>
+          <div class="form-group">
+            <label for="taxa">Taxa de juros (% ao ano)</label>
+            <input type="number" id="taxa" value="10" min="0" max="100" step="0.1" />
+          </div>
+          <div class="form-group">
+            <label for="prazo">Prazo (meses)</label>
+            <input type="number" id="prazo" value="360" min="1" max="600" step="1" />
+          </div>
+          <button class="calc-btn" id="calc-btn">Calcular</button>
+        </div>
+
+        <div class="calculator-results" id="results" style="display:none;">
+          <div class="compare-grid">
+            <div class="compare-col">
+              <h3 class="compare-title">SAC <small>(parcela decrescente)</small></h3>
+              <div class="compare-row"><span>1ª parcela</span><strong id="sac-first">R$ 0</strong></div>
+              <div class="compare-row"><span>Última parcela</span><strong id="sac-last">R$ 0</strong></div>
+              <div class="compare-row"><span>Total pago</span><strong id="sac-total">R$ 0</strong></div>
+              <div class="compare-row highlight"><span>Total de juros</span><strong id="sac-interest">R$ 0</strong></div>
+            </div>
+            <div class="compare-col">
+              <h3 class="compare-title">Price <small>(parcela fixa)</small></h3>
+              <div class="compare-row"><span>Parcela fixa</span><strong id="price-first">R$ 0</strong></div>
+              <div class="compare-row"><span>Última parcela</span><strong id="price-last">R$ 0</strong></div>
+              <div class="compare-row"><span>Total pago</span><strong id="price-total">R$ 0</strong></div>
+              <div class="compare-row highlight"><span>Total de juros</span><strong id="price-interest">R$ 0</strong></div>
+            </div>
+          </div>
+          <p class="compare-note" id="compare-note"></p>
+          <div class="chart-container">
+            <canvas id="chart" width="600" height="300"></canvas>
+          </div>
+        </div>
+      </div>
+
+      {!isEmbed && <InlineAppCTA variant="full" locale="pt" />}
+
+      {!isEmbed && (
+        <section class="tool-faq">
+          <h2>Perguntas Frequentes</h2>
+          <details>
+            <summary>Qual a diferença entre SAC e Price?</summary>
+            <p>No sistema <strong>Price</strong> a parcela é fixa do início ao fim. No <strong>SAC</strong> a amortização é constante e as parcelas começam mais altas e vão diminuindo. No total, o SAC costuma pagar menos juros.</p>
+          </details>
+          <details>
+            <summary>Qual sistema paga menos juros?</summary>
+            <p>Na maioria dos casos o <strong>SAC</strong> paga menos juros no total, porque amortiza o saldo devedor mais rápido. Em troca, as primeiras parcelas do SAC são mais altas.</p>
+          </details>
+          <details>
+            <summary>Como é calculada a parcela?</summary>
+            <p>Price: <strong>parcela = PV × i ÷ (1 − (1+i)⁻ⁿ)</strong>. SAC: <strong>parcela = PV÷n + saldo × i</strong>, com o saldo caindo a cada mês. PV é o valor financiado, i a taxa mensal e n o número de parcelas.</p>
+          </details>
+          <details>
+            <summary>A entrada reduz o valor financiado?</summary>
+            <p>Sim. O valor financiado é o preço do bem menos a entrada. Quanto maior a entrada, menos juros você paga no total.</p>
+          </details>
+        </section>
+      )}
+    </div>
+  </main>
+
+  {!isEmbed && <Footer />}
+</Layout>
+
+<script>
+  function formatCurrency(value) {
+    return 'R$ ' + value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  }
+
+  function calculate() {
+    const valor = parseFloat(document.getElementById('valor').value) || 0;
+    const entrada = parseFloat(document.getElementById('entrada').value) || 0;
+    const taxaAno = (parseFloat(document.getElementById('taxa').value) || 0) / 100;
+    const n = parseInt(document.getElementById('prazo').value) || 1;
+
+    const pv = Math.max(valor - entrada, 0);
+    // Taxa mensal equivalente à taxa anual efetiva
+    const i = Math.pow(1 + taxaAno, 1 / 12) - 1;
+
+    // ── Price (parcela fixa) ──
+    const priceParcela = i > 0 ? pv * i / (1 - Math.pow(1 + i, -n)) : pv / n;
+    const priceTotal = priceParcela * n;
+    const priceInterest = priceTotal - pv;
+
+    // ── SAC (amortização constante) ──
+    const amort = pv / n;
+    const sacFirst = amort + pv * i;
+    const sacLast = amort + amort * i; // saldo no último mês = amort
+    const sacInterest = i * pv * (n + 1) / 2;
+    const sacTotal = pv + sacInterest;
+
+    document.getElementById('sac-first').textContent = formatCurrency(sacFirst);
+    document.getElementById('sac-last').textContent = formatCurrency(sacLast);
+    document.getElementById('sac-total').textContent = formatCurrency(sacTotal);
+    document.getElementById('sac-interest').textContent = formatCurrency(sacInterest);
+
+    document.getElementById('price-first').textContent = formatCurrency(priceParcela);
+    document.getElementById('price-last').textContent = formatCurrency(priceParcela);
+    document.getElementById('price-total').textContent = formatCurrency(priceTotal);
+    document.getElementById('price-interest').textContent = formatCurrency(priceInterest);
+
+    const economia = priceInterest - sacInterest;
+    const note = document.getElementById('compare-note');
+    if (economia > 0) {
+      note.innerHTML = `No total, o <strong>SAC</strong> paga <strong>${formatCurrency(economia)}</strong> a menos de juros que o Price — mas a 1ª parcela é ${formatCurrency(sacFirst - priceParcela)} mais alta.`;
+    } else {
+      note.textContent = '';
+    }
+
+    document.getElementById('results').style.display = 'block';
+    drawChart(pv, amort, i, priceParcela, n);
+  }
+
+  function drawChart(pv, amort, i, priceParcela, n) {
+    const canvas = document.getElementById('chart');
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width, H = canvas.height, padding = 40;
+    ctx.clearRect(0, 0, W, H);
+
+    const sac = [], price = [];
+    let saldo = pv;
+    for (let k = 0; k < n; k++) {
+      sac.push(amort + saldo * i);
+      price.push(priceParcela);
+      saldo -= amort;
+    }
+    const maxVal = Math.max(sac[0], priceParcela) * 1.05;
+    const xStep = (W - padding * 2) / (n - 1 || 1);
+    const yScale = (H - padding * 2) / maxVal;
+
+    ctx.strokeStyle = '#30363d'; ctx.lineWidth = 0.5;
+    for (let g = 0; g <= 4; g++) {
+      const y = padding + (H - padding * 2) * (g / 4);
+      ctx.beginPath(); ctx.moveTo(padding, y); ctx.lineTo(W - padding, y); ctx.stroke();
+      ctx.fillStyle = '#6e7681'; ctx.font = '10px Inter, sans-serif';
+      ctx.fillText(formatCurrency(maxVal * (1 - g / 4)), 0, y + 4);
+    }
+
+    function line(data, color, width) {
+      ctx.strokeStyle = color; ctx.lineWidth = width; ctx.beginPath();
+      for (let k = 0; k < n; k++) {
+        const x = padding + k * xStep;
+        const y = H - padding - data[k] * yScale;
+        k === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+    }
+    line(sac, '#3fb950', 2.5);   // SAC decrescente
+    line(price, '#58a6ff', 2.5); // Price fixa
+
+    ctx.fillStyle = '#3fb950'; ctx.fillRect(W - 160, 10, 12, 12);
+    ctx.fillStyle = '#f0f6fc'; ctx.font = '11px Inter, sans-serif'; ctx.fillText('SAC', W - 144, 20);
+    ctx.fillStyle = '#58a6ff'; ctx.fillRect(W - 160, 28, 12, 12);
+    ctx.fillStyle = '#f0f6fc'; ctx.fillText('Price', W - 144, 38);
+  }
+
+  document.getElementById('calc-btn').addEventListener('click', calculate);
+  document.querySelectorAll('.calculator-form input').forEach(input => {
+    input.addEventListener('keyup', function(e) { if (e.key === 'Enter') calculate(); });
+  });
+  calculate();
+</script>
+
+<style>
+  .tool-page { padding: 2rem 0 4rem; }
+  .tool-header { margin-bottom: 2rem; }
+  .tool-breadcrumb { font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; }
+  .tool-breadcrumb a { color: var(--text-link); text-decoration: none; }
+  .tool-header h1 { color: var(--text-primary); font-size: 2rem; margin-bottom: 0.5rem; }
+  .tool-subtitle { color: var(--text-secondary); font-size: 1rem; }
+
+  .calculator-layout { display: grid; gap: 2rem; margin-bottom: 2rem; }
+  .calculator-form {
+    background: var(--bg-secondary); border: 1px solid var(--border-default);
+    border-radius: 12px; padding: 1.5rem;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+  .form-group label { color: var(--text-secondary); font-size: 0.8rem; font-weight: 500; }
+  .form-group input {
+    background: var(--bg-tertiary); border: 1px solid var(--border-default);
+    border-radius: 8px; padding: 0.7rem; color: var(--text-primary); font-size: 1rem;
+  }
+  .form-group input:focus { outline: none; border-color: var(--accent-primary); }
+  .calc-btn {
+    grid-column: 1 / -1; padding: 0.8rem;
+    background: linear-gradient(135deg, #00F0FF, #A91079);
+    color: #fff; font-weight: 600; font-size: 1rem; border: none; border-radius: 8px;
+    cursor: pointer; transition: transform 0.2s;
+  }
+  .calc-btn:hover { transform: translateY(-1px); }
+
+  .calculator-results {
+    background: var(--bg-secondary); border: 1px solid var(--border-default);
+    border-radius: 12px; padding: 1.5rem;
+  }
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .compare-col { background: var(--bg-tertiary); border-radius: 8px; padding: 1rem; }
+  .compare-title { color: var(--text-primary); font-size: 1rem; margin-bottom: 0.75rem; }
+  .compare-title small { color: var(--text-tertiary); font-weight: 400; font-size: 0.7rem; }
+  .compare-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.4rem 0; border-top: 1px solid var(--border-default); }
+  .compare-row span { color: var(--text-secondary); font-size: 0.8rem; }
+  .compare-row strong { color: var(--text-primary); font-size: 0.95rem; }
+  .compare-row.highlight strong { color: #3fb950; }
+  .compare-note { color: var(--text-secondary); font-size: 0.85rem; margin: 0.5rem 0 1rem; line-height: 1.5; }
+  .compare-note :global(strong) { color: var(--text-primary); }
+  .chart-container { width: 100%; overflow-x: auto; }
+  canvas { width: 100%; height: auto; }
+
+  .tool-faq { margin-top: 2rem; }
+  .tool-faq h2 { color: var(--text-primary); font-size: 1.4rem; margin-bottom: 1rem; }
+  .tool-faq details {
+    background: var(--bg-secondary); border: 1px solid var(--border-default);
+    border-radius: 8px; margin-bottom: 0.5rem; padding: 1rem;
+  }
+  .tool-faq summary { color: var(--text-primary); font-weight: 600; cursor: pointer; font-size: 0.95rem; }
+  .tool-faq details p { color: var(--text-secondary); margin-top: 0.75rem; line-height: 1.6; font-size: 0.9rem; }
+
+  @media (max-width: 640px) {
+    .calculator-form { grid-template-columns: 1fr; }
+    .compare-grid { grid-template-columns: 1fr; }
+  }
+</style>
