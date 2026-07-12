@@ -1,5 +1,6 @@
 ---
 import { config } from '../../../site.config';
+import { EDITORIAL_POLICY_PATH } from '@/data/authors';
 
 const site = config.siteUrl;
 const blogTitle = `${config.brand.name} ${config.brand.blogSuffix}`;
@@ -24,7 +25,8 @@ const websiteSchema = {
       "@type": "ImageObject",
       "url": `${site}/images/logo.png`
     },
-    "sameAs": orgSameAs
+    "sameAs": orgSameAs,
+    "publishingPrinciples": `${site}${EDITORIAL_POLICY_PATH}`
   },
   "potentialAction": {
     "@type": "SearchAction",
@@ -46,11 +48,6 @@ const softwareSchema = {
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "BRL"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "ratingCount": "150"
   }
 };
 ---

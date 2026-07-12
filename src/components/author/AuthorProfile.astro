@@ -1,0 +1,150 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import { getCollection } from 'astro:content';
+import { config } from '../../../site.config';
+import { authors, personSchema, authorHref, EDITORIAL_POLICY_PATH } from '@/data/authors';
+
+interface Props {
+  locale?: 'pt' | 'en' | 'es';
+}
+const { locale = 'pt' } = Astro.props;
+
+const author = authors['ed-flavio'];
+
+// Strings localizadas
+const T = {
+  pt: {
+    role: 'Editor de finanças pessoais',
+    about: 'Sobre o autor', areas: 'Áreas de especialidade', recent: 'Artigos recentes',
+    editorial: 'Leia nossa política editorial',
+    bio: author.description,
+    levels: { 'Graduação': 'Graduação', 'Pós-graduação': 'Pós-graduação' } as Record<string, string>,
+    connector: 'em', dateLoc: 'pt-BR', postPrefix: '/posts',
+  },
+  en: {
+    role: 'Personal finance editor',
+    about: 'About the author', areas: 'Areas of expertise', recent: 'Recent articles',
+    editorial: 'Read our editorial policy',
+    bio: "Ed Flávio is the editor of FinMoovi Blog. With a bachelor's degree in Business Administration and a postgraduate degree in Financial Management, he writes about personal finance, budgeting and investing to make financial education accessible to everyone.",
+    levels: { 'Graduação': "Bachelor's degree", 'Pós-graduação': 'Postgraduate degree' } as Record<string, string>,
+    connector: 'in', dateLoc: 'en-US', postPrefix: '/en/posts',
+  },
+  es: {
+    role: 'Editor de finanzas personales',
+    about: 'Sobre el autor', areas: 'Áreas de especialidad', recent: 'Artículos recientes',
+    editorial: 'Lee nuestra política editorial',
+    bio: 'Ed Flávio es el editor de FinMoovi Blog. Graduado en Administración de Empresas y posgraduado en Gestión Financiera, escribe sobre finanzas personales, presupuesto e inversiones para hacer la educación financiera accesible para todos.',
+    levels: { 'Graduação': 'Grado', 'Pós-graduação': 'Posgrado' } as Record<string, string>,
+    connector: 'en', dateLoc: 'es-ES', postPrefix: '/es/posts',
+  },
+}[locale];
+
+// Posts recentes no idioma da página
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const localePosts = allPosts
+  .filter(p => {
+    const l = p.data.locale || (p.slug.startsWith('en-') ? 'en' : p.slug.startsWith('es-') ? 'es' : 'pt');
+    return l === locale;
+  })
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())
+  .slice(0, 9);
+
+const schema = { '@context': 'https://schema.org', ...personSchema(author) };
+
+const metaDescription = `${author.name} — ${T.role}. ${T.bio}`.slice(0, 300);
+
+// hreflang para as 3 versões da página de autor
+const alternates = { pt: author.i18nPaths.pt, en: author.i18nPaths.en, es: author.i18nPaths.es };
+---
+
+<BaseLayout title={author.name} description={metaDescription} alternates={alternates}
+  keywords={[author.name, ...author.knowsAbout, 'autor']}>
+  <Header />
+
+  <main class="autor-page">
+    <div class="container">
+      <header class="autor-header">
+        <h1 class="autor-title">{author.name}</h1>
+        <p class="autor-role">{T.role}</p>
+        <ul class="autor-credenciais">
+          {author.credentials.map(c => (
+            <li>🎓 {T.levels[c.level] || c.level} {T.connector} {c.name}</li>
+          ))}
+        </ul>
+      </header>
+
+      <div class="autor-content">
+        <section class="autor-section">
+          <h2>{T.about}</h2>
+          <p>{T.bio}</p>
+          <p><a class="autor-link" href={EDITORIAL_POLICY_PATH}>{T.editorial} →</a></p>
+        </section>
+
+        <section class="autor-section">
+          <h2>{T.areas}</h2>
+          <div class="autor-tags">
+            {author.knowsAbout.map(t => <span class="autor-tag">{t}</span>)}
+          </div>
+        </section>
+
+        <section class="autor-section">
+          <h2>{T.recent}</h2>
+          <div class="autor-posts">
+            {localePosts.map(post => (
+              <a class="autor-post" href={`${T.postPrefix}/${post.slug}`}>
+                <span class="autor-post-title">{post.data.title}</span>
+                <time datetime={post.data.publishedAt.toISOString()}>
+                  {post.data.publishedAt.toLocaleDateString(T.dateLoc, { day: '2-digit', month: 'short', year: 'numeric' })}
+                </time>
+              </a>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</BaseLayout>
+
+<style>
+  .autor-page { padding: var(--space-8) 0 var(--space-16); }
+  .autor-header { text-align: center; margin-bottom: var(--space-10); }
+  .autor-title {
+    font-size: var(--text-4xl);
+    background: var(--gradient-cta);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: var(--space-2);
+  }
+  .autor-role { font-size: var(--text-lg); color: var(--text-secondary); margin-bottom: var(--space-4); }
+  .autor-credenciais { list-style: none; padding: 0; display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; }
+  .autor-credenciais li {
+    font-size: var(--text-sm); color: var(--text-primary);
+    background: var(--bg-secondary); border: 1px solid var(--border-default);
+    border-radius: var(--radius-full); padding: var(--space-2) var(--space-4);
+  }
+  .autor-content { max-width: 800px; margin: 0 auto; }
+  .autor-section { margin-bottom: var(--space-10); }
+  .autor-section h2 { font-size: var(--text-2xl); margin-bottom: var(--space-4); color: var(--text-primary); }
+  .autor-section p { color: var(--text-secondary); line-height: var(--leading-relaxed); margin-bottom: var(--space-3); }
+  .autor-link { color: #00F0FF; text-decoration: underline; text-underline-offset: 3px; }
+  .autor-tags { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+  .autor-tag {
+    font-size: var(--text-sm); color: var(--text-secondary);
+    background: var(--bg-tertiary); border: 1px solid var(--border-default);
+    border-radius: var(--radius-md); padding: var(--space-2) var(--space-3);
+  }
+  .autor-posts { display: grid; grid-template-columns: 1fr; gap: var(--space-3); }
+  .autor-post {
+    display: flex; justify-content: space-between; gap: var(--space-4); align-items: baseline;
+    padding: var(--space-4); background: var(--bg-secondary);
+    border: 1px solid var(--border-default); border-radius: var(--radius-lg);
+    transition: border-color var(--transition-fast);
+  }
+  .autor-post:hover { border-color: #00F0FF; }
+  .autor-post-title { color: var(--text-primary); font-weight: 500; }
+  .autor-post time { color: var(--text-secondary); font-size: var(--text-sm); white-space: nowrap; }
+</style>

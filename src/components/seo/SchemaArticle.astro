@@ -1,6 +1,6 @@
 ---
 import { config } from '../../../site.config';
-import { resolveAuthor } from '@/data/authors';
+import { resolveAuthor, EDITORIAL_POLICY_PATH } from '@/data/authors';
 
 interface Props {
   title: string;
@@ -43,7 +43,8 @@ const schema = {
     "logo": {
       "@type": "ImageObject",
       "url": `${config.siteUrl}/images/logo.png`
-    }
+    },
+    "publishingPrinciples": `${config.siteUrl}${EDITORIAL_POLICY_PATH}`
   },
   "mainEntityOfPage": {
     "@type": "WebPage",

@@ -36,6 +36,10 @@ export const GET: APIRoute = async () => {
     { url: '/categorias/dicas', priority: '0.7', changefreq: 'daily', lastmod: today },
     { url: '/categorias/orcamento', priority: '0.7', changefreq: 'weekly', lastmod: today },
     { url: '/categorias/cotacoes', priority: '0.7', changefreq: 'weekly', lastmod: today },
+    { url: '/autor/ed-flavio', priority: '0.6', changefreq: 'weekly', lastmod: today },
+    { url: '/en/author/ed-flavio', priority: '0.5', changefreq: 'weekly', lastmod: today },
+    { url: '/es/autor/ed-flavio', priority: '0.5', changefreq: 'weekly', lastmod: today },
+    { url: '/politica-editorial', priority: '0.4', changefreq: 'yearly', lastmod: today },
   ];
 
   const i18nStaticPages = staticPages.flatMap(page =>

@@ -1,0 +1,51 @@
+---
+import { config } from '../../../site.config';
+
+/**
+ * CTA "Adicione como Fonte Preferida no Google".
+ * Preferred Sources virou sinal global (2026), inclusive em AI Overviews/AI Mode.
+ * Custo ~zero; pede ao leitor engajado para marcar o blog como fonte preferida.
+ */
+interface Props { locale?: 'pt' | 'en' | 'es'; }
+const { locale = 'pt' } = Astro.props;
+
+const brand = config.brand.name;
+const T = {
+  pt: {
+    title: 'Gostou do conteúdo?',
+    body: `No Google, toque em <strong>“⋮ / Fontes preferidas”</strong> nas notícias e adicione o <strong>${brand}</strong> — assim você vê mais dos nossos artigos e nos ajuda a crescer.`,
+  },
+  en: {
+    title: 'Enjoying the content?',
+    body: `On Google, tap <strong>“⋮ / Preferred sources”</strong> in the news area and add <strong>${brand}</strong> — you'll see more of our articles and help us grow.`,
+  },
+  es: {
+    title: '¿Te gustó el contenido?',
+    body: `En Google, toca <strong>“⋮ / Fuentes preferidas”</strong> en las noticias y añade <strong>${brand}</strong> — verás más de nuestros artículos y nos ayudas a crecer.`,
+  },
+}[locale];
+---
+
+<aside class="pref-source" aria-label="Fonte preferida">
+  <span class="pref-source-icon">⭐</span>
+  <div class="pref-source-text">
+    <strong class="pref-source-title">{T.title}</strong>
+    <p set:html={T.body}></p>
+  </div>
+</aside>
+
+<style>
+  .pref-source {
+    display: flex; gap: var(--space-4); align-items: center;
+    max-width: 800px; margin: var(--space-8) auto;
+    padding: var(--space-5) var(--space-6);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-left: 3px solid #00F0FF;
+    border-radius: var(--radius-lg);
+  }
+  .pref-source-icon { font-size: 1.75rem; line-height: 1; }
+  .pref-source-title { display: block; color: var(--text-primary); margin-bottom: var(--space-1); }
+  .pref-source-text p { color: var(--text-secondary); font-size: var(--text-sm); line-height: var(--leading-relaxed); margin: 0; }
+  .pref-source-text :global(strong) { color: var(--text-primary); }
+</style>

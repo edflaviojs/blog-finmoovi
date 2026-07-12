@@ -6,6 +6,7 @@ import PostGrid from '@components/posts/PostGrid.astro';
 import { config } from '../../site.config';
 import Sidebar from '@components/sidebar/Sidebar.astro';
 import SchemaWebsite from '@components/seo/SchemaWebsite.astro';
+import PreferredSourceCTA from '@components/shared/PreferredSourceCTA.astro';
 import { getCollection } from 'astro:content';
 
 // Strictly filter by locale PT only
@@ -234,6 +235,8 @@ const categoryLabels: Record<string, string> = {
         </div>
       </div>
     </section>
+
+    <PreferredSourceCTA locale="pt" />
   </main>
 
   <Footer />

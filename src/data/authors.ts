@@ -19,12 +19,16 @@ export interface Author {
   description: string;
   credentials: Credential[];
   knowsAbout: string[];
-  url: string;      // URL absoluta da página de autor
+  url: string;      // URL absoluta canônica (PT) — usada como @id da entidade Person
+  i18nPaths: Record<'pt' | 'en' | 'es', string>; // caminho da página de autor por idioma
   sameAs: string[]; // perfis oficiais (LinkedIn etc.) — preencher quando houver
   image?: string;
 }
 
 const base = config.siteUrl;
+
+/** Caminho da página de política editorial (E-E-A-T / confiança YMYL). */
+export const EDITORIAL_POLICY_PATH = '/politica-editorial';
 
 export const authors: Record<string, Author> = {
   'ed-flavio': {
@@ -45,6 +49,11 @@ export const authors: Record<string, Author> = {
       'controle de gastos',
     ],
     url: `${base}/autor/ed-flavio`,
+    i18nPaths: {
+      pt: '/autor/ed-flavio',
+      en: '/en/author/ed-flavio',
+      es: '/es/autor/ed-flavio',
+    },
     sameAs: [], // adicionar LinkedIn/YouTube quando disponível (também alimenta o Person schema)
   },
 };
@@ -71,6 +80,11 @@ export function resolveAuthor(name?: string): Author {
     if (bySlug) return bySlug;
   }
   return defaultAuthor;
+}
+
+/** Caminho (relativo) da página de autor no idioma dado. */
+export function authorHref(author: Author, locale: string = 'pt'): string {
+  return author.i18nPaths[(locale as 'pt' | 'en' | 'es')] || author.i18nPaths.pt;
 }
 
 /** JSON-LD Person para um autor (usado na página de autor e no Article). */

@@ -1,0 +1,95 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import { config } from '../../site.config';
+import { authors } from '@/data/authors';
+
+const brand = config.brand.name;
+const author = authors['ed-flavio'];
+---
+
+<BaseLayout
+  title="Política Editorial"
+  description={`Como o ${brand} Blog produz, revisa e mantém seu conteúdo de finanças pessoais: fontes, checagem de fatos, independência e correções.`}
+  keywords={['política editorial', 'como revisamos', 'fontes', 'checagem de fatos', brand]}
+>
+  <Header />
+
+  <main class="editorial-page">
+    <div class="container">
+      <header class="editorial-header">
+        <h1 class="editorial-title">Política Editorial</h1>
+        <p class="editorial-subtitle">Como produzimos e mantemos o conteúdo do {brand} Blog.</p>
+      </header>
+
+      <div class="editorial-content">
+        <section class="editorial-section">
+          <h2>Nosso compromisso</h2>
+          <p>
+            O {brand} Blog existe para tornar a educação financeira <strong>clara, prática e confiável</strong>.
+            Todo conteúdo é publicado sob a supervisão editorial de
+            <a href={author.i18nPaths.pt} class="editorial-link">{author.name}</a>,
+            {author.jobTitle.toLowerCase()},
+            {author.credentials.map(c => `${c.level.toLowerCase()} em ${c.name}`).join(' e ')}.
+          </p>
+        </section>
+
+        <section class="editorial-section">
+          <h2>Fontes e checagem de fatos</h2>
+          <p>
+            Dados, taxas e referências são baseados em <strong>fontes públicas e oficiais</strong> — como
+            Banco Central do Brasil, IBGE, Tesouro Direto, Receita Federal e CVM — sempre que aplicável.
+            Priorizamos informações verificáveis e evitamos promessas de retorno ou recomendações de
+            investimento específicas.
+          </p>
+        </section>
+
+        <section class="editorial-section">
+          <h2>Revisão e atualização</h2>
+          <p>
+            Os artigos passam por revisão editorial antes da publicação. Conteúdo sensível à data
+            (cotações, calendário fiscal, sazonais) é atualizado periodicamente, e a data de publicação
+            fica visível em cada artigo.
+          </p>
+        </section>
+
+        <section class="editorial-section">
+          <h2>Independência</h2>
+          <p>
+            O conteúdo educativo é independente. Quando mencionamos o app {config.app.name}, deixamos claro
+            que é o produto que mantém este blog — mas as dicas funcionam com ou sem ele.
+          </p>
+        </section>
+
+        <section class="editorial-section">
+          <h2>Correções</h2>
+          <p>
+            Encontrou um erro ou informação desatualizada? Escreva para
+            <a href={`mailto:${config.email.replyTo}`} class="editorial-link">{config.email.replyTo}</a>.
+            Corrigimos com transparência.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .editorial-page { padding: var(--space-8) 0 var(--space-16); }
+  .editorial-header { text-align: center; margin-bottom: var(--space-10); }
+  .editorial-title {
+    font-size: var(--text-4xl);
+    background: var(--gradient-cta);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: var(--space-3);
+  }
+  .editorial-subtitle { font-size: var(--text-lg); color: var(--text-secondary); }
+  .editorial-content { max-width: 760px; margin: 0 auto; }
+  .editorial-section { margin-bottom: var(--space-10); }
+  .editorial-section h2 { font-size: var(--text-2xl); margin-bottom: var(--space-3); color: var(--text-primary); }
+  .editorial-section p { color: var(--text-secondary); line-height: var(--leading-relaxed); }
+  .editorial-link { color: #00F0FF; text-decoration: underline; text-underline-offset: 3px; }
+</style>
