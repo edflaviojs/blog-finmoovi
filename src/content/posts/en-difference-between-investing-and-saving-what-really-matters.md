@@ -29,11 +29,11 @@ The difference lies in the goal and the timeline. If the goal is to pay the elec
 
 Savings still have their place, especially for people with low risk tolerance. In Brazil, the return on a savings account follows the rule of the Reference Rate (TR) + 0.5% per month when the Selic rate is above 8.5% per year. In practice, this usually yields between 0.3% and 0.5% per month, barely covering inflation.  
 
-![Como funciona a poupança  ](/images/posts/diferenca-entre-investir-e-poupar-o-que-realmente-importa-2.webp)
+![Como funciona a [poupança](/en/glossario/en-poupanca)  ](/images/posts/diferenca-entre-investir-e-poupar-o-que-realmente-importa-2.webp)
 
 Imagine you earn R$4,500 a month and manage to set aside 10% (R$450) every month. After a year, with the savings account yielding 0.4% per month, you would have roughly R$5,590. If annual inflation is 4%, your purchasing power has basically not changed.  
 
-The advantage of a savings account is liquidity: the money is available at any time, without bureaucracy. But the opportunity cost – what you miss out on by not investing in higher‑yield options – can be high.
+The advantage of a savings account is [liquidity](/en/glossario/en-liquidez): the money is available at any time, without bureaucracy. But the opportunity cost – what you miss out on by not investing in higher‑yield options – can be high.
 
 ## Types of Investments for Those Earning Between R$3,000 and R$8,000  
 
@@ -49,7 +49,7 @@ If you still have doubts, it’s worth checking the official sites of the [Centr
 
 ## Difference Over the Time Horizon  
 
-The main reason investing outperforms a savings account is time. The longer the period, the greater the effect of [compound interest](/en/glossario/en-juros-compostos).  
+The main reason investing outperforms a savings account is time. The longer the period, the greater the effect of [compound interest](/en/glossario/en-[juros](/en/glossario/en-juros)-compostos).  
 
 ![Diferença no horizonte de tempo  ](/images/posts/diferenca-entre-investir-e-poupar-o-que-realmente-importa-4.webp)
 
@@ -64,10 +64,10 @@ If you aim to buy a car in three years, a mix of Tesouro Selic + fixed‑inc
 
 ## Start Today  
 
-Don’t wait for the next sale or the end of the month to put theory into practice. Choose an amount that fits your budget, open an account with a trustworthy brokerage, and make your first contribution. Every cent you don’t invest is a cent less of potential growth.  
+Don’t wait for the next sale or the end of the month to put theory into practice. Choose an amount that fits your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), open an account with a trustworthy brokerage, and make your first contribution. Every cent you don’t invest is a cent less of potential growth.  
 
 ![Comece hoje  ](/images/posts/diferenca-entre-investir-e-poupar-o-que-realmente-importa-6.webp)
 
 ---  
 
-**The next step is yours. [Teste o [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) and discover where your money is really going.**
+**The next step is yours. [Teste o [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and discover where your money is really going.**

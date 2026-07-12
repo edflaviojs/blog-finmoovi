@@ -41,8 +41,8 @@ A vantagem da poupança é a liquidez: o dinheiro fica disponível a qualquer mo
 
 | Perfil de renda | Estratégia recomendada | Por que funciona |
 |-----------------|------------------------|------------------|
-| R$3.000 a R$5.000 | Tesouro Direto (Tesouro Selic) | Baixo risco, retorno maior que a poupança, liquidez diária |
-| R$5.001 a R$8.000 | Fundos de renda fixa ou multimercado | [Diversificação](/glossario/diversificacao), possibilidade de ganhos superiores ao Tesouro Selic |
+| R$3.000 a R$5.000 | [Tesouro Direto](/glossario/tesouro-direto) (Tesouro Selic) | Baixo risco, retorno maior que a poupança, liquidez diária |
+| R$5.001 a R$8.000 | Fundos de [renda fixa](/glossario/renda-fixa) ou multimercado | [Diversificação](/glossario/diversificacao), possibilidade de ganhos superiores ao Tesouro Selic |
 | R$8.000+ | Ações e ETFs (ex: BOVA11) | Potencial de valorização a longo prazo, porém exige mais acompanhamento |
 
 **Exemplo prático:** João ganha R$6.000 e decide destinar 15% (R$900) para investir. Ele coloca R$600 no Tesouro Selic (rentabilidade média de 0,6% ao mês) e R$300 em um fundo de renda fixa que rende 0,8% ao mês. Em 12 meses, o Tesouro renderá cerca de R$7.300 e o fundo R$3.660, totalizando R$10.960 – bem mais que a poupança faria com o mesmo aporte.
@@ -59,7 +59,7 @@ A principal razão pela qual investir supera a poupança está no tempo. Quanto 
 
 - **Curto prazo (até 12 meses):** a poupança pode ser suficiente se a prioridade for segurança e acesso rápido.  
 - **Médio prazo (1 a 5 anos):** o Tesouro Selic ou fundos de renda fixa já começam a fazer diferença.  
-- **Longo prazo (acima de 5 anos):** ações, ETFs e fundos multimercado entram em cena, pois a volatilidade se suaviza e o potencial de retorno aumenta.  
+- **Longo prazo (acima de 5 anos):** ações, ETFs e fundos multimercado entram em cena, pois a [volatilidade](/glossario/volatilidade) se suaviza e o potencial de retorno aumenta.  
 
 Se você tem um objetivo de comprar um carro em três anos, um mix de Tesouro Selic + fundos de renda fixa pode ser a combinação ideal. Já para a aposentadoria, que está a 30 anos de distância, a alocação em [renda variável](/glossario/renda-variavel) traz maior chance de alcançar um patrimônio confortável.
 
@@ -68,7 +68,7 @@ Se você tem um objetivo de comprar um carro em três anos, um mix de Tesouro Se
 
 ## Comece hoje  
 
-Não espere a próxima promoção ou o fim do mês para colocar a teoria em prática. Escolha um valor que caiba no seu orçamento, abra uma conta em uma corretora confiável e faça seu primeiro aporte. Cada centavo que você deixa de investir é um centavo a menos de potencial crescimento.  
+Não espere a próxima promoção ou o fim do mês para colocar a teoria em prática. Escolha um valor que caiba no seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), abra uma conta em uma corretora confiável e faça seu primeiro aporte. Cada centavo que você deixa de investir é um centavo a menos de potencial crescimento.  
 
 ![Comece hoje  ](/images/posts/diferenca-entre-investir-e-poupar-o-que-realmente-importa-6.webp)
 
@@ -76,4 +76,4 @@ Não espere a próxima promoção ou o fim do mês para colocar a teoria em prá
 
 ---  
 
-**O próximo passo é seu. [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) e descubra para onde seu dinheiro está indo de verdade.**
+**O próximo passo é seu. [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://finmoovi.com) e descubra para onde seu dinheiro está indo de verdade.**

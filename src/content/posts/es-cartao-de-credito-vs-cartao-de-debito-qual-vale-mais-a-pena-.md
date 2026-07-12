@@ -53,7 +53,7 @@ La tarjeta de crédito puede ser una buena opción si usted:
 * Tiene un historial de crédito bueno y puede pagar el saldo total hasta la fecha de vencimiento
 * Quiere construir o mejorar su historial de crédito
 * Necesita un límite de crédito mayor para hacer compras o pagar cuentas
-* Quiere aprovechar los beneficios de programa de recompensas o cashback
+* Quiere aprovechar los [beneficios](/es/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de programa de recompensas o cashback
 
 No obstante, es importante recordar que la tarjeta de crédito puede ser peligrosa si usted no tiene disciplina para pagar el saldo total hasta la fecha de vencimiento. Los intereses pueden acumularse rápidamente, y usted puede acabar pagando mucho más que el valor original de la compra.
 
@@ -61,7 +61,7 @@ No obstante, es importante recordar que la tarjeta de crédito puede ser peligro
 La tarjeta de débito puede ser una buena opción si usted:
 
 * Quiere evitar deudas y intereses
-* Tiene un presupuesto limitado y necesita controlar sus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
+* Tiene un [presupuesto](/es/posts/como-crear-presupuesto-personal) limitado y necesita controlar sus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 * No quiere preocuparse por tasas de interés o anualidad
 * Quiere tener más control sobre sus gastos y evitar compras impulsivas
 

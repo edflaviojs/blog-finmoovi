@@ -27,13 +27,13 @@ La diferencia está en el objetivo y en el tiempo. Si la meta es pagar la cuenta
 
 ## Cómo funciona la cuenta de ahorros  
 
-La cuenta de ahorros aún tiene su lugar, principalmente para quienes tienen poca tolerancia al riesgo. En Brasil, la remuneración de la cuenta de ahorros sigue la regla de la Tasa Referencial (TR) + 0,5% al mes cuando la Selic está por encima del 8,5% anual. En la práctica, esto suele rendir entre 0,3% y 0,5% al mes, lo que apenas cubre la inflación.  
+La cuenta de ahorros aún tiene su lugar, principalmente para quienes tienen poca tolerancia al riesgo. En Brasil, la remuneración de la cuenta de ahorros sigue la regla de la Tasa Referencial (TR) + 0,5% al mes cuando la [Selic](/es/glossario/es-selic) está por encima del 8,5% anual. En la práctica, esto suele rendir entre 0,3% y 0,5% al mes, lo que apenas cubre la inflación.  
 
-![Como funciona a poupança  ](/images/posts/diferenca-entre-investir-e-poupar-o-que-realmente-importa-2.webp)
+![Como funciona a [poupança](/es/glossario/es-poupanca)  ](/images/posts/diferenca-entre-investir-e-poupar-o-que-realmente-importa-2.webp)
 
 Imagina que recibas R$4.500 de salario y logres reservar el 10% (R$450) cada mes. Después de un año, con la cuenta de ahorros rindiendo 0,4% al mes, tendrías aproximadamente R$5.590. Si la inflación anual es del 4%, tu poder de compra prácticamente no cambió.  
 
-La ventaja de la cuenta de ahorros es la liquidez: el dinero está disponible en cualquier momento, sin burocracia. Pero el costo de oportunidad – lo que dejas de ganar al no invertir en opciones más rentables – puede ser alto.
+La ventaja de la cuenta de ahorros es la [liquidez](/es/glossario/es-liquidez): el dinero está disponible en cualquier momento, sin burocracia. Pero el costo de oportunidad – lo que dejas de ganar al no invertir en opciones más rentables – puede ser alto.
 
 ## Tipos de inversión para quienes ganan de R$3 mil a R$8 mil  
 
@@ -64,10 +64,10 @@ Si tienes un objetivo de comprar un coche en tres años, una combinación de Tes
 
 ## Empieza hoy  
 
-No esperes la próxima promoción o el fin de mes para poner la teoría en práctica. Elige una cantidad que quepa en tu presupuesto, abre una cuenta en una corredora confiable y haz tu primer aporte. Cada centavo que dejas de invertir es un centavo menos de potencial crecimiento.  
+No esperes la próxima promoción o el fin de mes para poner la teoría en práctica. Elige una cantidad que quepa en tu [presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), abre una cuenta en una corredora confiable y haz tu primer aporte. Cada centavo que dejas de invertir es un centavo menos de potencial crecimiento.  
 
 ![Comece hoje  ](/images/posts/diferenca-entre-investir-e-poupar-o-que-realmente-importa-6.webp)
 
 ---  
 
-**El siguiente paso es tuyo. [Prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-mobills-em-2026) gratis por 7 días](https://finmoovi.com) y descubre a dónde realmente va tu dinero.**
+**El siguiente paso es tuyo. [Prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/es/posts/5-alternativas-ao-mobills-em-2026)-em-2026) gratis por 7 días](https://finmoovi.com) y descubre a dónde realmente va tu dinero.**
