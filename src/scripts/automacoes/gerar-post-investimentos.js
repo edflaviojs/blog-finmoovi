@@ -210,14 +210,23 @@ REGRAS DE ESTILO:
       if (attempt < 3) { await new Promise(r => setTimeout(r, 15000)); }
     }
 
-    if (!titleMatch || !contentMatch) {
+    let title, meta, keywords, content;
+    if (titleMatch && contentMatch) {
+      title = titleMatch[1].trim();
+      meta = metaMatch ? metaMatch[1].trim() : '';
+      keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : topicKeywords;
+      content = contentMatch[1].trim();
+    } else if (result && result.trim().length > 300 && /^#{1,2}\s/m.test(result)) {
+      // Fallback: modelo respondeu em markdown puro (ex.: "# Título") sem os delimitadores.
+      const h1 = result.match(/^#\s+(.+)$/m);
+      title = (h1 ? h1[1] : result.split('\n').find(l => l.trim()).replace(/^#+\s*/, '')).trim();
+      content = result.replace(/^#\s+.+\r?\n?/m, '').trim();
+      meta = '';
+      keywords = topicKeywords;
+      console.log('ℹ️ Delimitadores ausentes — usando fallback markdown (título do primeiro H1).');
+    } else {
       throw new Error(`Formato inválido após 3 tentativas. Última resposta: ${(result || '').substring(0, 500)}`);
     }
-
-    const title = titleMatch[1].trim();
-    const meta = metaMatch ? metaMatch[1].trim() : '';
-    const keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : topicKeywords;
-    const content = contentMatch[1].trim();
     const allKeywords = [...new Set([...keywords, ...topicKeywords])];
     const slugPt = createSlug(title);
 
