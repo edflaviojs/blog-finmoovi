@@ -18,7 +18,7 @@ seo:
 
 ## Resumen Semanal del Mercado Financiero Brasileño: 22/6/2026 - 29/6/2026
 
-La semana que pasó fue de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del dólar y euro, el impacto de la tasa [Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y ofreceremos [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
+La semana que pasó fue de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y euro, el impacto de la tasa [Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y ofreceremos [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
 
 ![Resumen Semanal del Mercado Financiero Brasileño: 22/6/2026 - 29/6/2026](/images/posts/es-cotizaciones-semana-5-junio-2026-inline-1.webp)
 
@@ -44,7 +44,7 @@ Para los inversores individuales, es crucial diversificar su cartera de [inversi
 
 En la próxima semana, los inversores deberán estar atentos a las decisiones económicas clave y a los indicadores macroeconómicos que puedan influir en las tasas de cambio y las tasas de interés. La evolución de la [inflación](/es/glossario/es-inflacao), el desempeño del empleo y las declaraciones de los líderes económicos pueden ofrecer pistas sobre las tendencias futuras del mercado. Mantenerse informado y estar preparado para ajustar la estrategia de inversión según sea necesario será fundamental para navegar por el complejo panorama económico.
 
-En resumen, la semana pasada trajo consigo una mezcla de estabilidad y decisiones importantes para el mercado financiero brasileño. Los inversores deben seguir de cerca los desarrollos en las tasas de cambio, la tasa Selic y otros indicadores económicos para tomar decisiones informadas. Con la ayuda de herramientas como FinMoovi, los inversores individuales pueden estar mejor equipados para navegar por los mercados financieros y alcanzar sus objetivos de inversión.
+En resumen, la semana pasada trajo consigo una mezcla de estabilidad y decisiones importantes para el mercado financiero brasileño. Los inversores deben seguir de cerca los desarrollos en las tasas de cambio, la tasa Selic y otros indicadores económicos para tomar decisiones informadas. Con la ayuda de herramientas como [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), los inversores individuales pueden estar mejor equipados para navegar por los mercados financieros y alcanzar sus objetivos de inversión.
 
 
 ---

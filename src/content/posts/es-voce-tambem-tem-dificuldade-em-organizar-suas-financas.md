@@ -36,7 +36,7 @@ Pero hay una solución para este problema. Descubrí una aplicación que puede a
 Con el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026), puedes tener una visión clara de tus finanzas y tomar decisiones informadas sobre cómo gestionar tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia). La aplicación también ofrece informes inteligentes con la ayuda de la IA, lo que ayuda a identificar áreas donde puedes ahorrar y mejorar tu situación financiera.
 
 ## Cómo funciona
-Aquí está un ejemplo de cómo el FinMoovi puede ser utilizado en el día a día:
+Aquí está un ejemplo de cómo el [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) puede ser utilizado en el día a día:
 
 1. Registra un gasto en dólares durante un viaje de negocios.
 2. El FinMoovi categoriza el gasto automáticamente como "Viaje" o "Alimentación", dependiendo del tipo de gasto.

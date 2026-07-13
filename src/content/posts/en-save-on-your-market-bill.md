@@ -20,7 +20,7 @@ seo:
 Imagine you can save around R$ 50,00 per week on your market bill. This may not seem like much, but over the course of a year, you'd be saving approximately R$ 2,600,00. With this amount, you could take a trip, pay off debts, or invest in an [emergency fund](/en/glossario/en-reserva-de-emergencia). The key to achieving this [savings](/en/posts/en-financial-education-for-children) lies in small changes to your shopping habits.
 
 ## [Planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) is Fundamental
-To start saving, it's essential to plan your purchases. This includes making a list of everything you need to buy and sticking to it. Avoid impulse buying, as this can lead to unnecessary [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Additionally, try buying in bulk, especially for non-perishable items like rice, beans, and pasta. Buying in bulk can be cheaper in the long run. **Practical tip:** Create a weekly budget and set aside time to plan your meals and purchases.
+To start saving, it's essential to plan your purchases. This includes making a list of everything you need to buy and sticking to it. Avoid impulse buying, as this can lead to unnecessary [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Additionally, try buying in bulk, especially for non-perishable items like rice, beans, and pasta. Buying in bulk can be cheaper in the long run. **Practical tip:** Create a weekly [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) and set aside time to plan your meals and purchases.
 
 ## Choosing the Best Prices
 Another way to save is to compare prices between different stores. This can be done online or by physically visiting the stores. Often, you can find deals and discounts that aren't available everywhere. Also, consider buying generic or store-brand products, which are usually cheaper than well-known brands. A tip is also to check prices on market days or at local markets, where you can find more affordable prices for fruits, vegetables, and meats.
@@ -47,4 +47,4 @@ Don't wait any longer to start saving. With small changes to your shopping habit
 
 
 ---
-**The next step is yours. [Try [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/en-organizing-finances-as-a-freelancer) is really going.**
+**The next step is yours. [Try [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) and discover where your [money](/en/posts/en-organizing-finances-as-a-freelancer) is really going.**

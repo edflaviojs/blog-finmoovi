@@ -19,9 +19,9 @@ translate: true
 ---
 
 ## Introduction
-We've reached the middle of the year, a perfect time to reflect on our finances and check if we're on the right track to achieving our financial objectives. Reviewing our budget is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according to changes in our lives and the market.
+We've reached the middle of the year, a perfect time to reflect on our finances and check if we're on the right track to achieving our financial objectives. Reviewing our [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according to changes in our lives and the market.
 
-## Why Review Your Budget?
+## Why Review Your [Budget](/en/posts/en-organize-couple-finances)?
 Regularly reviewing your [budget](/en/posts/en-how-to-create-personal-budget) is essential for maintaining control over your [personal finances](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). This is because financial circumstances change over time. For example, you may have received a salary increase, changed jobs, gotten married, had children, or suffered a reduction in income. These changes directly impact your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026), and if not considered, can lead to financial problems, such as debt or lack of savings.
 
 ### Practical Example

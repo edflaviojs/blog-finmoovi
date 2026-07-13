@@ -19,7 +19,7 @@ seo:
 ## O que são [Fundos Imobiliários](/glossario/fundos-imobiliarios)?
 Os [fundos imobiliários](/glossario/fundos-imobiliarios), também conhecidos como FIIs, são um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) que permite aos investidores comuns terem acesso ao mercado imobiliário de forma mais acessível e diversificada. Em vez de comprar um imóvel inteiro, você pode investir uma quantia menor, como R$500 ou R$1.000, em um fundo que é composto por various imóveis ou direitos sobre imóveis. Isso significa que você pode ter uma parte de um prédio comercial, um shopping center ou até mesmo um conjunto de apartamentos, sem precisar comprar o imóvel todo.
 
-## Como Funcionam os Fundos Imobiliários?
+## Como Funcionam os [Fundos](/glossario/fundos) Imobiliários?
 Os FIIs são geridos por administradores especializados que selecionam os imóveis ou projetos imobiliários para investir. Eles cuidam de tudo, desde a compra e manutenção dos imóveis até a cobrança de aluguéis e pagamento de [dividendos](/glossario/dividendos) aos investidores. Você, como investidor, recebe uma cota do fundo, que é uma parte proporcional do patrimônio do fundo. O [valor](/glossario/valor) de sua cota pode variar com o tempo, dependendo do desempenho dos imóveis no fundo.
 
 ## Benefícios dos Fundos Imobiliários
@@ -49,5 +49,5 @@ Agora que você tem uma ideia melhor sobre como funcionam os fundos imobiliário
 
 
 
-Para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em um só lugar, [teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.
+Para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em um só lugar, [teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que são [Fundos Imobiliários](/glossario/fundos-imobiliarios)?","acceptedAnswer":{"@type":"Answer","text":"Os fundos imobiliários, também conhecidos como FIIs, são um tipo de investimento que permite aos investidores comuns terem acesso ao mercado imobiliário de forma mais acessível e diversificada. Em vez de comprar um imóvel inteiro, você pode investir uma quantia menor, como R$500 ou R$1.000, em um fu"}},{"@type":"Question","name":"Como Funcionam os Fundos Imobiliários?","acceptedAnswer":{"@type":"Answer","text":"Os FIIs são geridos por administradores especializados que selecionam os imóveis ou projetos imobiliários para investir. Eles cuidam de tudo, desde a compra e manutenção dos imóveis até a cobrança de aluguéis e pagamento de dividendos aos investidores. Você, como investidor, recebe uma cota do fundo"}}]} -->

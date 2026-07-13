@@ -22,7 +22,7 @@ La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significat
 
 ## [Dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) y Euro: Tendencia de la Semana
 
-El dólar estadounidense cerró la semana en R$ 5,03, mostrando una ligera estabilidad en relación con la semana anterior. El euro, cotizado a R$ 5,85, también mantuvo una tendencia de estabilidad con variaciones mínimas a lo largo de la semana. Esta relativa calma en las tasas de cambio es un alivio para los importadores y turistas, pero puede significar menos oportunidades para los inversores que apuestan por variaciones cambiarias.
+El [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) estadounidense cerró la semana en R$ 5,03, mostrando una ligera estabilidad en relación con la semana anterior. El euro, cotizado a R$ 5,85, también mantuvo una tendencia de estabilidad con variaciones mínimas a lo largo de la semana. Esta relativa calma en las tasas de cambio es un alivio para los importadores y turistas, pero puede significar menos oportunidades para los inversores que apuestan por variaciones cambiarias.
 
 ## Selic e Impacto en las [Inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 
@@ -39,4 +39,4 @@ Para la próxima semana, es importante estar atento a las decisiones económicas
 En resumen, la semana estuvo marcada por estabilidad en las tasas de cambio y mantenimiento de la tasa Selic, lo que puede influir en las estrategias de inversión. Diversificar la cartera, incluyendo inversiones en diferentes monedas, y utilizar herramientas de gestión como [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) puede ser una estrategia inteligente para maximizar los rendimientos y minimizar los riesgos. Manténgase atento a las noticias económicas y ajuste su plan de inversión según los cambios en el mercado.
 
 ---
-**¿Listo para seguir tus inversiones? [Prueba [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).**
+**¿Listo para seguir tus inversiones? [Prueba [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) gratis](https://[finmoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).**

@@ -33,8 +33,8 @@ Now that you understand your current financial situation, it's time to define fi
 
 
 
-## Creating a Budget for the Second Half of the Year
-Now that you have defined financial goals, it's time to create a budget for the second half of the year. This includes deciding how you'll allocate your income to achieve your goals. Here are some tips to help you create a [budget](/en/posts/en-how-to-create-personal-budget):
+## Creating a [Budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) for the Second Half of the Year
+Now that you have defined financial goals, it's time to create a [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) for the second half of the year. This includes deciding how you'll allocate your income to achieve your goals. Here are some tips to help you create a [budget](/en/posts/en-how-to-create-personal-budget):
 1. **Allocate 50% of your income to basic needs**: This includes expenses for housing, food, transportation, and essential services.
 2. **Allocate 30% of your income to desires**: This includes expenses for leisure, entertainment, and hobbies.
 3. **Allocate 20% of your income to financial goals**: This includes expenses for savings, debts, and emergency funds.

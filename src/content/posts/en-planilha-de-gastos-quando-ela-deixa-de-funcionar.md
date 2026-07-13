@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introduction to Expense Spreadsheets
-Expense spreadsheets are a powerful tool for managing your [personal finances](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). They offer flexibility, are free, and can be customized to meet your needs. With a [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), you can record all your [expenses](/en/posts/en-metodo-50-30-20-para-orcamento), create a budget, and track your financial situation in detail. However, despite all these advantages, many people give up using expense spreadsheets after a short period.
+Expense spreadsheets are a powerful tool for managing your [personal finances](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). They offer flexibility, are free, and can be customized to meet your needs. With a [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), you can record all your [expenses](/en/posts/en-metodo-50-30-20-para-orcamento), create a [budget](/en/posts/en-how-to-create-personal-budget), and track your financial situation in detail. However, despite all these advantages, many people give up using expense spreadsheets after a short period.
 
 ## Advantages and Disadvantages of Expense Spreadsheets
 Expense spreadsheets have several advantages, such as:

@@ -53,4 +53,4 @@ Gestionar deudas y gastos es fundamental para alcanzar tus metas financieras. Aq
 
 ## Conclusión
 Prepararse financieramente para el segundo semestre es fundamental para alcanzar tus metas financieras y tener una vida más tranquila. Con los consejos prácticos y accesibles presentados en este post, puedes crear un [presupuesto](/es/posts/es-como-crear-presupuesto-personal) personalizado, gestionar deudas y gastos y alcanzar tus metas financieras. Recuerda que el [Banco Central de Brasil](https://www.bcb.gov.br) y la [Receita Federal](https://www.gov.br/receitafederal) ofrecen recursos y información valiosa para ayudarte a gestionar tus finanzas. Además, el [Serasa](https://www.serasa.com.br) puede ayudarte a entender mejor tu situación financiera y a encontrar soluciones para tus problemas financieros.
-Usa el FinMoovi para controlar tus gastos y no sorprenderte al final del mes.
+Usa el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) para controlar tus gastos y no sorprenderte al final del mes.

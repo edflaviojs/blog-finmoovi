@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Introduction to [Dollar](/en/posts/en-quotes-semana-1-july-2026) [Investment](/en/posts/en-montando-carteira-diversificada-com-r-500)
-Investing in dollars can be a way to diversify your investment portfolio and protect your assets against fluctuations in the Brazilian [economy](/en/posts/en-30-day-rule-for-purchases). However, it's essential to understand how the dollar market works and what [risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and benefits are involved. Let's start with the basics: what is the US dollar and why is it important for Brazilian investors?
+Investing in dollars can be a way to diversify your investment portfolio and protect your assets against fluctuations in the Brazilian [economy](/en/posts/en-30-day-rule-for-purchases). However, it's essential to understand how the [dollar](/en/posts/en-quotes-semana-1-june-2026) market works and what [risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and benefits are involved. Let's start with the basics: what is the US dollar and why is it important for Brazilian investors?
 
 The US dollar is the official currency of the United States and is widely used in international transactions. In Brazil, the dollar is used as a form of investment, as it can be bought and sold on stock exchanges and currency exchange offices. If you're considering investing in dollars, it's crucial to assess whether it makes sense for your investor profile and financial goals.
 
@@ -75,4 +75,4 @@ Now that you better understand how to invest in dollars in Brazil, it's essentia
 
 
 
-To track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in one place, [try [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.
+To track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in one place, [try [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — multi-currency, intelligent reports, and 100% offline.

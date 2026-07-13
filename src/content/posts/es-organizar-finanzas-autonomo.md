@@ -30,7 +30,7 @@ Por ejemplo, si notas que estás gastando R$ 1.500 por mes con comida fuera, pue
 
 
 
-## Planificación Tributaria
+## [Planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) Tributaria
 Como autónomo, eres responsable de tu propio recolimiento de impuestos, lo que puede ser un desafío. Es importante entender cómo funcionan los impuestos para autónomos y cómo planificar tu tributación de forma eficaz. Esto puede incluir la deducción de gastos profesionales, como materiales de trabajo, uso de vehículo y hasta parte de la cuenta de luz y internet de tu casa, si trabajas desde casa.
 
 **Consejo práctico:** Mantén todos los recibos y notas fiscales de gastos que puedan ser deducidos de tu impuesto de renta. Esto puede ahorrar una cantidad significativa de [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) al final del año.
@@ -57,4 +57,4 @@ No importa dónde estés en tu jornada financiera, lo importante es comenzar a t
 
 
 ---
-**¿Listo para organizar tus finanzas? [Experimenta [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de hacia dónde va tu [dinero](/es/posts/es-planeamiento-financiero-para-parejas).**
+**¿Listo para organizar tus finanzas? [Experimenta [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://[finmoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026).com) — en 5 minutos ya tienes una visión clara de hacia dónde va tu [dinero](/es/posts/es-planeamiento-financiero-para-parejas).**

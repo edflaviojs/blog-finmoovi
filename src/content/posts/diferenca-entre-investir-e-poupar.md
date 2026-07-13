@@ -57,4 +57,4 @@ Agora que você entende a [diferença entre investir e poupar](/posts/diferenca-
 
 
 ---
-**Pronto para organizar suas finanças? [Experimente o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/economize-na-conta-do-mercado).**
+**Pronto para organizar suas finanças? [Experimente o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis](https://[finmoovi](/posts/5-alternativas-ao-mobills-em-2026).com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/economize-na-conta-do-mercado).**

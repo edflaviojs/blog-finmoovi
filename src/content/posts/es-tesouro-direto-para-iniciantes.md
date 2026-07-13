@@ -71,5 +71,5 @@ Si usted decide invertir en el Tesouro Direto, es importante leer atentamente la
 
 
 
-Para acompañar sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en un solo lugar, [pruebe [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) — multi-divisa, informes inteligentes y 100% sin conexión.
+Para acompañar sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en un solo lugar, [pruebe [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026).com) — multi-divisa, informes inteligentes y 100% sin conexión.
 Nota: He mantenido los nombres de las imágenes y los enlaces tal como estaban en el texto original, ya que no había instrucciones específicas para cambiarlos. Si es necesario, puedo cambiarlos para que coincidan con el contenido traducido.

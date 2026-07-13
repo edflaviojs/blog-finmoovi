@@ -18,13 +18,13 @@ seo:
 
 ## Resumen Semanal del Mercado Financiero Brasileño
 
-La semana del 8 al 15 de junio de 2026 ha sido de gran interés para los inversores brasileños, con movimientos significativos en las principales divisas y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del dólar y euro, el impacto de la [tasa Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y ofreceremos [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
+La semana del 8 al 15 de junio de 2026 ha sido de gran interés para los inversores brasileños, con movimientos significativos en las principales divisas y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y euro, el impacto de la [tasa Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y ofreceremos [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
 
 ![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-cotizaciones-semana-3-junio-2026-inline-1.webp)
 
 
 
-## Tendencia del Dólar y Euro
+## Tendencia del [Dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) y Euro
 
 La semana comenzó con el dólar cotizando alrededor de R$ 5.05 y cerró en R$ 5.08, lo que indica una leve apreciación de la divisa estadounidense frente al real brasileño. Por otro lado, el euro inició la semana en R$ 5.85 y cerró en R$ 5.88, mostrando también una ligera tendencia al alza. Estos movimientos pueden ser atribuidos a factores como la política monetaria de los Estados Unidos, la situación económica en Europa y las expectativas de crecimiento en Brasil.
 

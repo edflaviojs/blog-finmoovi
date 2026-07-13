@@ -49,4 +49,4 @@ Agora que você entendeu os conceitos básicos de investimento e [diversificaç�
 
 
 
-Para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em um só lugar, [teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis por 7 dias](https://finmoovi.com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.
+Para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em um só lugar, [teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-mobills-em-2026).com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.

@@ -33,7 +33,7 @@ The [economy](/en/posts/en-avoid-impulse-purchases) is an important concept for 
 ## Teaching [Personal Finance](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)
 Teaching [personal finance](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) to children can start with simple concepts, such as the difference between needs and wants. For example, a need is something essential for life, such as food and shelter, while a want is something desired but not necessary, such as a toy.
 
-A way to teach this is by creating a family budget that includes basic expenses and financial goals. For example, if the family has a budget of R$ 5,000 per month, it may be necessary to prioritize basic expenses, such as rent and food, and then decide how to use the remaining amount to achieve financial goals.
+A way to teach this is by creating a family [budget](/en/posts/en-how-to-create-personal-budget) that includes basic expenses and financial goals. For example, if the family has a [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) of R$ 5,000 per month, it may be necessary to prioritize basic expenses, such as rent and food, and then decide how to use the remaining amount to achieve financial goals.
 
 ![Ensino de finanças pessoais](/images/posts/educacao-financeira-para-criancas-3.webp)
 

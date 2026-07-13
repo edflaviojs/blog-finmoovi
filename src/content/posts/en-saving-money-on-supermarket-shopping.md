@@ -38,7 +38,7 @@ Here are some examples of products you can choose to save [money](/en/posts/en-f
 ## Avoiding Unnecessary [Expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 Another way to save [money](/en/posts/en-organizing-finances-as-a-freelancer) on supermarket shopping is to avoid unnecessary expenses. This includes not buying products that are not necessary, such as processed foods or alcoholic beverages. Additionally, it's essential to avoid buying products that are on sale but not needed.
 
-For example, if you see a product on sale, but you don't need it, don't buy it. Instead, buy only the products you need and that are within your budget.
+For example, if you see a product on sale, but you don't need it, don't buy it. Instead, buy only the products you need and that are within your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias).
 
 ![Evitando gastos desnecessários](/images/posts/economizar-nas-compras-do-supermercado-3.webp)
 
@@ -57,4 +57,4 @@ There are many apps and tools that can help you [save money](/en/posts/en-reduce
 Now that you know how to save [money](/en/posts/en-save-on-your-market-bill) on supermarket shopping, it's time to start putting these tips into practice. Remember that saving is a continuous process, and every small change can make a big difference in the long run. So, start today by making changes to your supermarket shopping and see how you can save [money](/en/posts/en-saving-on-your-energy-bill).
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/en-tips-for-controlling-credit-card-expenses) is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) and discover where your [money](/en/posts/en-tips-for-controlling-credit-card-expenses) is really going.**

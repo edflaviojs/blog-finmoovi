@@ -58,4 +58,4 @@ Não é necessário esperar até o próximo mês para começar a economizar nas 
 
 
 ---
-**Quer sair da teoria? [Baixe o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**
+**Quer sair da teoria? [Baixe o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-mobills-em-2026).com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**

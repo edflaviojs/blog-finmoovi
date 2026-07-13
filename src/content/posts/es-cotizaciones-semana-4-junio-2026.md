@@ -24,7 +24,7 @@ La semana del 15 de junio al 22 de junio de 2026 ha sido de gran importancia par
 
 
 
-## Tendencia del Dólar y Euro
+## Tendencia del [Dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y Euro
 
 En cuanto a las tasas de cambio, el dólar estadounidense (USD) se mantuvo en una tendencia de estabilidad frente al real brasileño (BRL), cerrando la semana en aproximadamente R$ 5.16. Por otro lado, el euro (EUR) experimentó una ligera apreciación, alcanzando los R$ 5.91. Estos movimientos reflejan la dinámica global de los mercados financieros y las expectativas económicas tanto en Brasil como en el exterior.
 
@@ -42,7 +42,7 @@ Es importante considerar que las decisiones sobre la tasa Selic tienen un impact
 
 ## Consejo Práctico para el Inversor Individual
 
-Para los inversores individuales, es crucial diversificar su cartera de inversiones para minimizar los riesgos y maximizar los rendimientos. Una forma de hacerlo es considerar inversiones en múltiples monedas, lo que puede ayudar a proteger contra la [volatilidad](/es/glossario/es-volatilidade) de las tasas de cambio. Herramientas como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) pueden ser muy útiles para seguir y gestionar estas inversiones de manera eficiente. FinMoovi ofrece la posibilidad de monitorear y administrar inversiones en diferentes monedas, lo que facilita la toma de decisiones informadas y la optimización de la cartera de inversiones.
+Para los inversores individuales, es crucial diversificar su cartera de inversiones para minimizar los riesgos y maximizar los rendimientos. Una forma de hacerlo es considerar inversiones en múltiples monedas, lo que puede ayudar a proteger contra la [volatilidad](/es/glossario/es-volatilidade) de las tasas de cambio. Herramientas como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) pueden ser muy útiles para seguir y gestionar estas inversiones de manera eficiente. [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) ofrece la posibilidad de monitorear y administrar inversiones en diferentes monedas, lo que facilita la toma de decisiones informadas y la optimización de la cartera de inversiones.
 
 ## Qué Esperar para la Próxima Semana
 

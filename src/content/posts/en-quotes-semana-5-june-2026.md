@@ -30,7 +30,7 @@ Na semana que passou, o dólar americano fechou em R$ 5,17, enquanto o euro cheg
 
 Por exemplo, se você está planejando uma viagem aos EUA, pode ser uma boa ideia comprar dólares agora, considerando o [valor](/en/glossario/en-valor) atual. Já se você tem investimentos em euros, pode ser uma boa ideia manter um olho nas taxas de câmbio para decidir o melhor momento para converter seu dinheiro.
 
-## Taxa Selic e Impacto nos Investimentos
+## Taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) e Impacto nos Investimentos
 
 A taxa Selic, que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um tema importante para os investidores. A taxa Selic atual pode influenciar diretamente os juros dos investimentos, como CDBs e LCI/LCs. Se a taxa Selic subir, os juros dos investimentos também podem subir, o que pode ser bom para os investidores.
 
@@ -56,5 +56,5 @@ E aí, pessoal? O que você achou do resumo da semana? Tem alguma dúvida ou com
 
 
 ---
-**Ready to track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)? [Try [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
+**Ready to track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)? [Try [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
 

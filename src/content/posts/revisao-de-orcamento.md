@@ -49,7 +49,7 @@ Verifique suas receitas dos últimos 6 meses e ajuste-as de acordo com suas nece
 ### 4. Ajuste seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Se você tem [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de [investimento](/posts/montando-carteira-diversificada-com-r-500), verifique se eles ainda estão alinhados com seus objetivos e ajuste-os de acordo. Você pode querer considerar investir em [Tesouro Direto](https://www.tesourodireto.com.br) ou outros [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) de baixo risco.
 
-## Dicas para manter seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) em ordem
+## [Dicas](/posts/7-erros-financeiros-iniciante) para manter seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) em ordem
 Aqui estão algumas dicas para manter seu [orçamento](/posts/metodo-50-30-20-para-orcamento) em ordem:
 *   Priorize suas necessidades sobre seus desejos
 *   Crie um fundo de emergência para cobrir gastos inesperados

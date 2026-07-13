@@ -30,7 +30,7 @@ The Selic rate, currently at 12.25% per year, was maintained by the Monetary Pol
 
 ## Practical Tip for Investors
 
-A valuable tip for individual investors is to diversify their [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), including assets in different currencies. With the dollar and euro stable, it may be a good time to consider international [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), such as [stocks](/en/glossario/en-acoes) or [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) funds in dollars or euros. Tools like [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) can be very useful for tracking and managing investments in multiple currencies, offering a clear and updated view of your portfolio.
+A valuable tip for individual investors is to diversify their [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), including assets in different currencies. With the [dollar](/en/posts/en-quotes-semana-1-july-2026) and euro stable, it may be a good time to consider international [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), such as [stocks](/en/glossario/en-acoes) or [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) funds in dollars or euros. Tools like [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) can be very useful for tracking and managing investments in multiple currencies, offering a clear and updated view of your portfolio.
 
 ## What to Expect for Next Week
 
@@ -39,4 +39,4 @@ For the next week, it's important to pay attention to global economic decisions,
 In summary, the week was marked by stability in exchange rates and maintenance of the Selic rate, which can influence investment strategies. Diversifying the portfolio, including investments in different currencies, and using management tools like [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) can be an intelligent strategy to maximize returns and minimize risks. Stay tuned to economic news and adjust your investment plan according to market changes.
 
 ---
-**Ready to track your investments? [Try [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
+**Ready to track your investments? [Try [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**

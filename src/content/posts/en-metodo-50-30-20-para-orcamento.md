@@ -37,7 +37,7 @@ To start applying the 50-30-20 method, you need to have a clear view of your cur
 
 1. **List your income:** Note down all your monthly earnings, including salary, [investment](/en/posts/en-tesouro-direto-para-iniciantes) returns, etc.
 2. **List your expenses:** Separate your expenses into needs and desires. Include here service bills, supermarket purchases, transportation, leisure, etc.
-3. **Calculate the percentage:** Based on your income and expenses, calculate the percentage that each category occupies in your budget.
+3. **Calculate the percentage:** Based on your income and expenses, calculate the percentage that each category occupies in your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias).
 4. **Adjust your expenses:** If necessary, make adjustments so that your [budget](/en/posts/en-how-to-create-personal-budget) fits the 50-30-20 method.
 
 ![Organizando suas Finanças](/images/posts/metodo-50-30-20-para-orcamento-2.webp)
@@ -74,4 +74,4 @@ To keep your [budget](/en/posts/en-how-to-create-personal-budget) under control,
 - Note down new expenses or income.
 - Review your [budget](/en/posts/en-how-to-create-personal-budget) to ensure it's within the planned.
 
-**Want to automate this control? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) — it automatically categorizes expenses and generates reports without effort.**
+**Want to automate this control? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) — it automatically categorizes expenses and generates reports without effort.**

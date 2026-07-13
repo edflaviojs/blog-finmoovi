@@ -69,4 +69,4 @@ Gestionar sus finanzas no necesita ser una tarea sobrehumana. Comience dedicando
 
 
 
-**¿Quiere automatizar este control? [Pruebe [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quiere automatizar este control? [Pruebe [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

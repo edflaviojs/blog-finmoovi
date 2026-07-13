@@ -18,7 +18,7 @@ seo:
 
 ## Weekly Summary of the Brazilian Financial Market
 
-The past week was marked by relative stability in the [foreign exchange](/en/glossario/en-cambio) market, with the commercial dollar closing at R$ 5.03 and the euro at R$ 5.84. Let's analyze how these numbers affect our finances and [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
+The past week was marked by relative stability in the [foreign exchange](/en/glossario/en-cambio) market, with the commercial [dollar](/en/posts/en-quotes-semana-1-july-2026) closing at R$ 5.03 and the euro at R$ 5.84. Let's analyze how these numbers affect our finances and [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ## Dollar and Euro: Weekly Trend
 
@@ -38,5 +38,5 @@ For next week, it's important to pay attention to economic and political news th
 
 
 ---
-**Ready to track your investments? [Try [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
+**Ready to track your investments? [Try [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
 

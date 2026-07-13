@@ -53,4 +53,4 @@ Gerenciar dívidas e gastos é fundamental para alcançar suas metas financeiras
 
 ## Conclusão
 Preparar-se financeiramente para o segundo semestre é fundamental para alcançar suas metas financeiras e ter uma vida mais tranquila. Com as dicas práticas e acessíveis apresentadas neste post, você pode criar um orçamento personalizado, gerenciar dívidas e gastos e alcançar suas metas financeiras. Lembre-se de que o [Banco Central do Brasil](https://www.bcb.gov.br) e a [Receita Federal](https://www.gov.br/receitafederal) oferecem recursos e informações valiosas para ajudá-lo a gerenciar suas finanças. Além disso, o [Serasa](https://www.serasa.com.br) pode ajudá-lo a entender melhor sua situação financeira e a encontrar soluções para seus problemas financeiros.
-Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês.
+Use o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) para controlar seus gastos e não se surpreender no fim do mês.

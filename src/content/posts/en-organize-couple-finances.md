@@ -19,7 +19,7 @@ seo:
 ## Joint Finances
 When you're in a relationship, it's important that you and your partner are aligned on finances. This means you should have a clear view of how you're spending your [money](/en/posts/en-30-day-rule-for-purchases) and how you can save together. Let's say you and your partner earn R$ 5,000 and R$ 6,000 per month, respectively. If you don't have a plan, it's easy to spend all the [money](/en/posts/en-financial-planning-for-couples) without knowing where it's going.
 
-A good idea is to create a budget together, considering all monthly [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) like rent, food, transportation, etc. For example, if you pay R$ 2,500 in rent and R$ 1,000 in food per month, that's already R$ 3,500 in fixed expenses. It's also important to consider variable expenses like entertainment and leisure.
+A good idea is to create a [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) together, considering all monthly [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) like rent, food, transportation, etc. For example, if you pay R$ 2,500 in rent and R$ 1,000 in food per month, that's already R$ 3,500 in fixed expenses. It's also important to consider variable expenses like entertainment and leisure.
 
 ## Expenses and [Savings](/en/posts/en-financial-education-for-children)
 It's essential that you and your partner have an open conversation about expenses and [savings](/en/posts/en-smart-cashback). **Practical tip:** create a "fun [money](/en/posts/en-organizing-finances-as-a-freelancer)" category in your [budget](/en/posts/en-how-to-create-personal-budget) so you can spend a little on things you enjoy without feeling guilty. For example, you might decide to spend R$ 500 per month on restaurants and movies.
@@ -42,4 +42,4 @@ Another common challenge is lack of communication about finances. It's important
 Now that you know how to organize couple finances, it's time to start working toward a more secure and prosperous financial future. Remember that communication and planning are key to success. Start talking to your partner about your financial goals and create a plan to achieve them.
 
 ---
-**Ready to organize your finances? [Try [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-saving-on-your-energy-bill) is going.**
+**Ready to organize your finances? [Try [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-saving-on-your-energy-bill) is going.**

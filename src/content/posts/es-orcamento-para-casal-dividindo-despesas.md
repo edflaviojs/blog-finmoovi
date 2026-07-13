@@ -67,4 +67,4 @@ Para mantener el [presupuesto](/es/posts/es-como-crear-presupuesto-personal) baj
 
 ---
 
-**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) gratis por 7 días](https://[finmoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

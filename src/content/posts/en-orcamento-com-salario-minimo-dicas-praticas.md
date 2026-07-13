@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Creating a Realistic [Budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)
-To create an effective budget with a minimum wage, it's crucial to understand that it's not about cutting all [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), but rather managing your resources intelligently. Let's consider an example with a salary of R$ 2,400.00, which is slightly above the minimum wage in Brazil.
+To create an effective [budget](/en/posts/en-organize-couple-finances) with a minimum wage, it's crucial to understand that it's not about cutting all [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), but rather managing your resources intelligently. Let's consider an example with a salary of R$ 2,400.00, which is slightly above the minimum wage in Brazil.
 
 A general rule for dividing your [budget](/en/posts/en-how-to-create-personal-budget) is as follows:
 | Category | Percentage of Salary |
@@ -69,4 +69,4 @@ Managing your finances doesn't have to be a superhuman task. Start by dedicating
 
 
 
-**Want to automate this control? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) — it automatically categorizes expenses and generates reports with no effort.**
+**Want to automate this control? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) — it automatically categorizes expenses and generates reports with no effort.**

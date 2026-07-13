@@ -21,7 +21,7 @@ translate: true
 ## Introduction
 We've reached the middle of the year, and it's time to stop and reflect on how our finances are doing. It's common to start the year with clear objectives and goals, but along the way, we can stray from the path. Reviewing your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) now is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals.
 
-## Why Review Your Budget?
+## Why Review Your [Budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas)?
 Reviewing your [budget](/en/posts/en-how-to-create-personal-budget) is important because things change over time. Your salary may have increased, your [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) may have changed, or you may have acquired new financial responsibilities. Additionally, [inflation](/en/glossario/en-inflacao) may have affected the value of your [money](/en/posts/en-30-day-rule-for-purchases), making it necessary to adjust your spending and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 
 For example, imagine you earn R$ 5,000 per month and spend R$ 2,000 on rent, R$ 1,000 on food, and R$ 500 on transportation. This leaves R$ 1,500 for other expenses and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). However, if inflation has increased by 10% over the past 6 months, the value of your [money](/en/posts/en-avoid-impulse-purchases) has decreased. You'll need to adjust your spending and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) to maintain the same standard of living.
@@ -61,4 +61,4 @@ Here are some tips to keep your [budget](/en/posts/en-how-to-create-personal-bud
 
 
 ## Conclusion
-Reviewing your budget mid-year is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals. Remember to check your expenses, adjust your spending and investments, and keep your budget in order. With a little discipline and planning, you can achieve your financial goals and live a more secure and prosperous life. For more information on [financial planning](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias), visit the [Banco Central do Brasil](https://www.bcb.gov.br) website.
+Reviewing your [budget](/en/posts/en-organize-couple-finances) mid-year is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals. Remember to check your expenses, adjust your spending and investments, and keep your budget in order. With a little discipline and planning, you can achieve your financial goals and live a more secure and prosperous life. For more information on [financial planning](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias), visit the [Banco Central do Brasil](https://www.bcb.gov.br) website.

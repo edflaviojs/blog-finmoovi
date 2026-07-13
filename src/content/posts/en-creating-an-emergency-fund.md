@@ -27,7 +27,7 @@ To calculate the necessary fund, it's essential to know your monthly expenses. M
 - Water, electricity, and internet bills
 - Groceries
 - Transportation
-- Debt payments, such as credit card or loan
+- Debt payments, such as [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) or loan
 
 **Practical tip:** Use a [personal finance](/en/posts/en-30-day-rule-for-purchases) app to track your expenses and get a clear view of where your [money](/en/posts/en-difference-between-investing-and-saving) is going. This will help you identify areas where you can cut back on spending and direct more [money](/en/posts/en-financial-education-for-children) towards the emergency fund.
 
@@ -61,4 +61,4 @@ For more information on managing your finances and creating an emergency fund, y
 Don't wait until it's too late to start creating your emergency fund. Start saving today, even if it's a small amount. Remember that every real counts, and discipline is the key to achieving your financial goals.
 
 ---
-**Want to put theory into practice? [Download [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No card, no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and start tracking your expenses today. No card, no commitment.**

@@ -28,7 +28,7 @@ Nesta semana, o [mercado financeiro](/posts/cotacoes-semana-1-julho-2026) brasil
 
 A taxa de câmbio entre o real brasileiro e as principais moedas estrangeiras foi um dos pontos de destaque da semana. O [dólar](/posts/cotacoes-semana-3-junho-2026) americano fechou a semana em R$ 5,16, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou R$ 5,91, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes, especialmente para aqueles que investem em ativos em moedas estrangeiras ou planejam viagens internacionais.
 
-## Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Selic](/glossario/selic) e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator chave para os investidores. Embora não tenha havido alterações significativas na taxa durante a semana, a expectativa é de que o Banco Central continue a monitorar a [inflação](/glossario/inflacao) e ajuste as taxas de juros conforme necessário. Isso pode afetar diretamente os rendimentos de [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) como CDBs, [LCI e LCA](/glossario/lci-e-lca), tornando essencial para os investidores pessoa física estar atentos às mudanças nas taxas de juros e ajustar suas estratégias de [investimento](/posts/montando-carteira-diversificada-com-r-500) de acordo.
 
@@ -48,5 +48,5 @@ Em resumo, a semana foi marcada por estabilidade no [dólar](/posts/cotacoes-sem
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
+**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) de graça](https://[finmoovi](/posts/5-alternativas-ao-mobills-em-2026).com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
 

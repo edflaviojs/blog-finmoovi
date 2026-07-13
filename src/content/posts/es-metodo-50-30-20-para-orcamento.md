@@ -74,4 +74,4 @@ Para mantener su [presupuesto](/es/posts/es-como-crear-presupuesto-personal) baj
 - Anotar nuevos gastos o ingresos.
 - Revisar su [presupuesto](/es/posts/es-como-crear-presupuesto-personal) para garantizar que está dentro del planeado.
 
-**¿Quiere automatizar este control? [Pruebe [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quiere automatizar este control? [Pruebe [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

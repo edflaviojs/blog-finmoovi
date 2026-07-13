@@ -47,11 +47,11 @@ There are many ways to save [money](/en/posts/en-difference-between-investing-an
 If you're having trouble paying your debts, it's essential to seek professional help. You can visit the [Serasa](https://www.serasa.com.br) website to learn more about dealing with debt and improving your credit. Additionally, it's crucial to understand how interest and fees work and how they can affect your credit card expenses. You can visit the [Investopedia](https://www.investopedia.com) website to learn more about [personal finance](/en/posts/en-30-day-rule-for-purchases) and [economy](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme).
 
 ## Start Today
-Don't wait any longer to start controlling your credit card expenses. With the practical tips and information provided, you can start saving [money](/en/posts/en-difference-between-investing-and-saving) and improving your [financial management](/en/posts/en-montando-carteira-diversificada-com-r-500). Remember that the key to success is discipline and patience. **Practical tip:** You can start recording your expenses today and create a budget for the next month.
+Don't wait any longer to start controlling your credit card expenses. With the practical tips and information provided, you can start saving [money](/en/posts/en-difference-between-investing-and-saving) and improving your [financial management](/en/posts/en-montando-carteira-diversificada-com-r-500). Remember that the key to success is discipline and patience. **Practical tip:** You can start recording your expenses today and create a [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) for the next month.
 
 ![Informações Adicionais](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-4.webp)
 
 
 
 ---
-**Want to put theory into practice? [Download [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and start recording your expenses today. No card, no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro).com) and start recording your expenses today. No card, no commitment.**

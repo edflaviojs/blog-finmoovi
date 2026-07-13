@@ -20,7 +20,7 @@ seo:
 
 La semana del 28 de mayo al 4 de junio de 2026 trajo cambios significativos en el mercado financiero brasileño. En este resumen, exploraremos las tendencias del [dólar](/es/posts/es-cotizaciones-semana-4-mayo-2026) y euro, el impacto de la [Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) y ofreceremos [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
 
-## Dólar y Euro: Tendencia de la Semana
+## [Dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y Euro: Tendencia de la Semana
 
 El dólar estadounidense cerró la semana en R$ 5.03, mostrando una leve estabilidad en comparación con las semanas anteriores. Por otro lado, el euro se mantuvo en R$ 5.84, reflejando la [volatilidad](/es/glossario/es-volatilidade) del mercado internacional. Esta estabilidad relativa puede ser un alivio para los importadores y viajeros, pero también puede influir en las decisiones de [inversión](/es/posts/es-tesouro-direto-para-iniciantes) de aquellos que buscan oportunidades en monedas extranjeras. Es importante destacar que la cotización de estas monedas puede variar rápidamente, por lo que estar al tanto de las últimas noticias y tendencias es crucial.
 
@@ -38,5 +38,5 @@ A medida que nos acercamos a la próxima semana, es importante estar atento a lo
 
 
 ---
-**¿Listo para seguir tus inversiones? [Prueba [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/es-organizar-finanzas-autonomo).**
+**¿Listo para seguir tus inversiones? [Prueba [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) gratis](https://[finmoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/es-organizar-finanzas-autonomo).**
 

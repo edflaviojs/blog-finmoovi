@@ -23,7 +23,7 @@ When it comes to finances, it's common for couples to have different goals and p
 It's essential for couples to define financial priorities together. This can include anything from buying a home to building an [emergency fund](/en/glossario/en-reserva-de-emergencia). **Practical tip:** use the 50/30/20 rule, where 50% of the budget goes to essential expenses, 30% to non-essential expenses, and 20% to savings and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Additionally, it's vital to have a clear view of where the [money](/en/posts/en-avoid-impulse-purchases) is being spent. A useful tool for this is a [financial control app](/en/posts/en-5-alternativas-ao-mobills-em-2026), which can help track expenses and income more effectively.
 
 ## Debt Management
-Many couples face the challenge of dealing with debt, whether it's credit card debt, personal loans, or vehicle [financing](/en/glossario/en-financiamento). It's crucial to address these debts jointly and create a plan to pay them off. This can involve negotiating lower interest rates, consolidating debt, or adopting aggressive payment strategies. For more information on debt management, you can visit the [Serasa](https://www.serasa.com.br) website, which offers tools and resources to help manage your finances.
+Many couples face the challenge of dealing with debt, whether it's [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) debt, personal loans, or vehicle [financing](/en/glossario/en-financiamento). It's crucial to address these debts jointly and create a plan to pay them off. This can involve negotiating lower interest rates, consolidating debt, or adopting aggressive payment strategies. For more information on debt management, you can visit the [Serasa](https://www.serasa.com.br) website, which offers tools and resources to help manage your finances.
 
 ![Definindo Prioridades](/images/posts/planejamento-financeiro-para-casais-2.webp)
 
@@ -47,4 +47,4 @@ No matter what stage you and your partner are at in terms of [financial planning
 
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and discover where your money is really going.**
+**The next step is yours. [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and discover where your money is really going.**

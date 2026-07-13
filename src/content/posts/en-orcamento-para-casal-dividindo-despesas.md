@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Defining the [Budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)
-To start, it's essential to understand that an effective budget for couples involves considering the needs, desires, and financial goals of both partners. Let's consider an example: João and Maria, a couple with salaries of R$ 4,000 and R$ 3,500, respectively. They need to decide how to divide their expenses fairly.
+To start, it's essential to understand that an effective [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) for couples involves considering the needs, desires, and financial goals of both partners. Let's consider an example: João and Maria, a couple with salaries of R$ 4,000 and R$ 3,500, respectively. They need to decide how to divide their expenses fairly.
 
 ### Example of Expenses
 Here is a table with the couple's monthly expenses:
@@ -67,4 +67,4 @@ To keep the [budget](/en/posts/en-how-to-create-personal-budget) under control, 
 
 ---
 
-**Want to automate this control? [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) — it automatically categorizes expenses and generates reports without effort.**
+**Want to automate this control? [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro).com) — it automatically categorizes expenses and generates reports without effort.**

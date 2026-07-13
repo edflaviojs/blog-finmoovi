@@ -25,7 +25,7 @@ Existen muchos tipos de [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-ren
 - **Títulos**: Son emitidos por empresas o gobiernos para levantar capital. Ofrecen una [renta fija](/es/glossario/es-renda-fixa) y un retorno del capital invertido después de un período determinado.
 - **Fondos de Inversión**: Son como una cesta que contiene diferentes activos, como acciones y títulos. Permiten que inviertas en una variedad de activos con una sola inversión.
 
-## Planificación y Objetivos
+## [Planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) y Objetivos
 Antes de empezar a invertir, es importante definir tus objetivos y planificar cómo alcanzarás esos objetivos. Considera lo que deseas alcanzar con tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). ¿Estás buscando una renta extra, ahorrar para una casa propia o planificar tu jubilación? ¿Cuánto tiempo tienes para invertir? Tu perfil de riesgo también es crucial. Algunas personas están dispuestas a correr más riesgos en busca de mayores rendimientos, mientras que otras prefieren [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) más seguras, aunque los rendimientos sean menores.
 
 ![Tipos de Inversiones](/images/posts/montando-carteira-diversificada-com-r-500-2.webp)
@@ -49,4 +49,4 @@ Ahora que has entendido los conceptos básicos de inversión y diversificación,
 
 
 
-Para acompañar tus inversiones en un solo lugar, [prueba el [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis por 7 días](https://finmoovi.com) — multi-moneda, informes inteligentes y 100% offline.
+Para acompañar tus inversiones en un solo lugar, [prueba el [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis por 7 días](https://[finmoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026).com) — multi-moneda, informes inteligentes y 100% offline.

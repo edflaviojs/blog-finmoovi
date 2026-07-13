@@ -42,7 +42,7 @@ Una forma de enseñar esto es crear un [presupuesto](/es/posts/es-como-crear-pre
 ## Recursos para educación financiera
 Existen muchos recursos disponibles para ayudar a educar a los niños sobre [finanzas personales](/es/posts/es-7-errores-financieros-principiante), incluyendo libros, juegos y aplicaciones. Por ejemplo, el [Banco Central del Brasil](https://www.bcb.gov.br) ofrece recursos educativos para niños y adolescentes, incluyendo juegos y actividades interactivas.
 
-Además, existen aplicaciones, como el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026), que pueden ayudar a los niños a entender mejor cómo gestionar el dinero y alcanzar los objetivos financieros. Estas aplicaciones pueden ser una herramienta útil para enseñar [finanzas personales](/es/posts/es-ahorra-en-las-compras-del-supermercado) de forma práctica y divertida.
+Además, existen aplicaciones, como el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026), que pueden ayudar a los niños a entender mejor cómo gestionar el [dinero](/es/posts/es-evite-compras-por-impulso) y alcanzar los objetivos financieros. Estas aplicaciones pueden ser una herramienta útil para enseñar [finanzas personales](/es/posts/es-ahorra-en-las-compras-del-supermercado) de forma práctica y divertida.
 
 ![Recursos para educación financiera](/images/posts/educacao-financeira-para-criancas-4.webp)
 
@@ -53,4 +53,4 @@ No es necesario ser un experto en finanzas para enseñar a los niños sobre [din
 
 ---
 
-**¿Quieres poner esto en práctica? [Prueba [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) y vea cómo es fácil controlar tus finanzas con [categorización automática](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) y informes visuales.**
+**¿Quieres poner esto en práctica? [Prueba [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) y vea cómo es fácil controlar tus finanzas con [categorización automática](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) y informes visuales.**

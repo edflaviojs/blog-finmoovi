@@ -20,7 +20,7 @@ Creating a [personal budget](/en/glossario/en-orcamento-pessoal) doesn't have to
 
 ## Why Have a Personal [Budget](/en/posts/en-organize-couple-finances)?
 
-Without a [budget](/en/posts/en-reduce-fixed-expenses), your [money](/en/posts/en-30-day-rule-for-purchases) simply disappears. Studies show that people who track their expenses save on average 20% more than those who don't.
+Without a [budget](/en/posts/en-reduce-fixed-expenses), your [money](/en/posts/en-30-day-rule-for-purchases) simply disappears. Studies show that people who track their [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) save on average 20% more than those who don't.
 
 A good [budget](/en/posts/en-metodo-50-30-20-para-orcamento) helps you:
 - Know exactly where your [money](/en/posts/en-financial-planning-for-couples) goes
