@@ -25,7 +25,12 @@ const schema = {
   "@type": "Article",
   "headline": title,
   "description": description,
-  "image": image ? [image] : undefined,
+  "image": image ? {
+    "@type": "ImageObject",
+    "url": image.startsWith('http') ? image : `${config.siteUrl}${image}`,
+    "width": 1200,
+    "height": 750
+  } : undefined,
   "url": url,
   "datePublished": publishedTime,
   "dateModified": modifiedTime || publishedTime,

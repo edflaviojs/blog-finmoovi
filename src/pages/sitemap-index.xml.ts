@@ -66,18 +66,21 @@ export const GET: APIRoute = async () => {
   const postPages = [
     ...ptPosts.map(post => ({
       url: `/posts/${post.slug}`,
+      image: post.data.image ? `${site}${post.data.image}` : null,
       lastmod: (post.data.updatedAt || post.data.publishedAt).toISOString().split('T')[0],
       priority: post.data.featured ? '0.9' : '0.7',
       changefreq: 'monthly',
     })),
     ...enPosts.map(post => ({
       url: `/en/posts/${post.slug}`,
+      image: post.data.image ? `${site}${post.data.image}` : null,
       lastmod: (post.data.updatedAt || post.data.publishedAt).toISOString().split('T')[0],
       priority: post.data.featured ? '0.9' : '0.7',
       changefreq: 'monthly',
     })),
     ...esPosts.map(post => ({
       url: `/es/posts/${post.slug}`,
+      image: post.data.image ? `${site}${post.data.image}` : null,
       lastmod: (post.data.updatedAt || post.data.publishedAt).toISOString().split('T')[0],
       priority: post.data.featured ? '0.9' : '0.7',
       changefreq: 'monthly',
@@ -91,18 +94,21 @@ export const GET: APIRoute = async () => {
   const glossarioPages = [
     ...ptGlossario.map(term => ({
       url: `/glossario/${term.slug}`,
+      image: term.data.image ? `${site}${term.data.image}` : null,
       lastmod: term.data.publishedAt.toISOString().split('T')[0],
       priority: '0.5',
       changefreq: 'monthly',
     })),
     ...enGlossario.map(term => ({
       url: `/en/glossario/${term.slug}`,
+      image: term.data.image ? `${site}${term.data.image}` : null,
       lastmod: term.data.publishedAt.toISOString().split('T')[0],
       priority: '0.5',
       changefreq: 'monthly',
     })),
     ...esGlossario.map(term => ({
       url: `/es/glossario/${term.slug}`,
+      image: term.data.image ? `${site}${term.data.image}` : null,
       lastmod: term.data.publishedAt.toISOString().split('T')[0],
       priority: '0.5',
       changefreq: 'monthly',
@@ -113,7 +119,8 @@ export const GET: APIRoute = async () => {
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${allPages.map(page => `  <url>
     <loc>${site}${page.url}</loc>
     <lastmod>${page.lastmod || today}</lastmod>
@@ -122,6 +129,8 @@ ${allPages.map(page => `  <url>
       (page as any).alternates ? (page as any).alternates.map((alt: any) =>
         `\n    <xhtml:link rel="alternate" hreflang="${alt.hreflang}" href="${alt.href}" />`
       ).join('') : ''
+    }${
+      (page as any).image ? `\n    <image:image><image:loc>${(page as any).image}</image:loc></image:image>` : ''
     }
   </url>`).join('\n')}
 </urlset>`;

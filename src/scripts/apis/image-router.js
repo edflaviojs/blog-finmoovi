@@ -198,10 +198,11 @@ async function callProvider(provider, prompt, slug, destination, dir) {
   const filename = `${slug}.webp`;
   const fullPath = join(dir, filename);
 
-  // Otimiza para webp q78 (reduz ~80% o peso, melhora LCP). Fallback: grava o original.
+  // Padroniza em 1200x750 (>=1200px p/ og:image e rich results) + webp q78
+  // (reduz ~80% o peso, melhora LCP). Fallback: grava o original.
   let outBuffer = imageBuffer;
   try {
-    outBuffer = await sharp(imageBuffer).webp({ quality: 78, effort: 6 }).toBuffer();
+    outBuffer = await sharp(imageBuffer).resize(1200, 750, { fit: 'cover' }).webp({ quality: 78, effort: 6 }).toBuffer();
   } catch (err) {
     console.warn(`   ⚠️ Falha ao otimizar imagem (${err.message}) — gravando original`);
   }
