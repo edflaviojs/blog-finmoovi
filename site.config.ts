@@ -60,6 +60,17 @@ export const config: SiteConfig = {
   content: {
     categories: ['dicas', 'orcamento', 'investimentos', 'cotacoes', 'ferramentas', 'glossario'] as const,
     glossaryCategories: ['basico', 'investimentos', 'credito', 'impostos', 'mercado'] as const,
+    // Fonte ÚNICA das categorias exibidas no menu "Categorias" (header + mobile) e no
+    // rodapé. Adicione uma categoria aqui e ela aparece automaticamente nos 3 lugares
+    // (desde que já tenha ao menos 1 post publicado — evita link para página vazia/404).
+    // UX: mantenha ~6-8 categorias no máximo. O dropdown do header rola se passar disso,
+    // mas listas muito longas confundem — prefira curar as mais importantes aqui.
+    categoryNav: [
+      { slug: 'dicas', label: 'Dicas' },
+      { slug: 'orcamento', label: 'Orçamento' },
+      { slug: 'investimentos', label: 'Investimentos' },
+      { slug: 'cotacoes', label: 'Cotações' },
+    ],
     niche: {
       pt: 'finanças pessoais',
       en: 'personal finance',

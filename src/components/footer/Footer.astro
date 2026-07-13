@@ -1,13 +1,16 @@
 ---
 import { config } from '../../../site.config';
+import { getNavCategories } from '@/utils/nav-categories';
 
 const currentYear = new Date().getFullYear();
 const { brand } = config;
 
+// Categorias dinâmicas (mesma fonte do menu) + seções fixas do blog.
+const navCategories = await getNavCategories();
+
 const footerLinks = {
   blog: [
-    { label: 'Dicas Financeiras', href: '/categorias/dicas', i18n: 'footer.link.dicas' },
-    { label: 'Cotações', href: '/categorias/cotacoes', i18n: 'footer.link.cotacoes' },
+    ...navCategories.map(c => ({ label: c.label, href: c.href, i18n: undefined as string | undefined })),
     { label: 'Glossário', href: '/glossario', i18n: 'footer.link.glossario' },
     { label: 'Ferramentas', href: '/ferramentas', i18n: 'footer.link.ferramentas' },
     { label: 'Estudos', href: '/estudos', i18n: 'footer.link.estudos' },

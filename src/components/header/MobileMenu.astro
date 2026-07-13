@@ -1,15 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
+import { getNavCategories } from '@/utils/nav-categories';
 
-// Categorias de artigo com posts (evita link para página 404).
-const CAT_LABELS: Record<string, string> = {
-  dicas: 'Dicas', orcamento: 'Orçamento', investimentos: 'Investimentos', cotacoes: 'Cotações',
-};
-const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'pt');
-const catSet = new Set(posts.map(p => p.data.category));
-const categorias = Object.entries(CAT_LABELS)
-  .filter(([slug]) => catSet.has(slug))
-  .map(([slug, label]) => ({ slug, label, href: `/categorias/${slug}` }));
+// Categorias do menu — fonte única em site.config (content.categoryNav).
+const categorias = await getNavCategories();
 
 const navItems = [
   { label: 'Ferramentas', href: '/ferramentas', i18n: 'nav.ferramentas' },

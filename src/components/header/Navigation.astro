@@ -1,16 +1,10 @@
 ---
 import { config } from '../../../site.config';
-import { getCollection } from 'astro:content';
+import { getNavCategories } from '@/utils/nav-categories';
 
-// Categorias de artigo que REALMENTE têm posts (evita link para página 404).
-const CAT_LABELS: Record<string, string> = {
-  dicas: 'Dicas', orcamento: 'Orçamento', investimentos: 'Investimentos', cotacoes: 'Cotações',
-};
-const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'pt');
-const catSet = new Set(posts.map(p => p.data.category));
-const categorias = Object.entries(CAT_LABELS)
-  .filter(([slug]) => catSet.has(slug))
-  .map(([slug, label]) => ({ slug, label, href: `/categorias/${slug}` }));
+// Categorias do menu — fonte única em site.config (content.categoryNav), filtradas
+// pelas que já têm posts. Adicionar categoria lá reflete aqui automaticamente.
+const categorias = await getNavCategories();
 
 const navItems = [
   { label: 'Ferramentas', key: 'nav.ferramentas', href: '/ferramentas' },
@@ -115,6 +109,9 @@ const inCategorias = currentPath.startsWith('/categorias/');
     z-index: 100;
     flex-direction: column;
     gap: var(--space-1);
+    /* Salvaguarda p/ muitas categorias: rola em vez de estourar a tela */
+    max-height: 70vh;
+    overflow-y: auto;
   }
 
   .nav-dropdown:hover .nav-submenu,
