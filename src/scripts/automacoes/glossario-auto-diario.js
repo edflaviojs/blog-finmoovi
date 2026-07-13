@@ -96,7 +96,10 @@ async function main() {
 
     // Gerar termos para a letra atual
     const terms = POPULAR_TERMS[currentLetter] || [`${currentLetter}termo financeiro`];
-    const selectedTerm = terms[0]; // Pega o primeiro termo da lista
+    // Usa TODOS os termos da letra (~5), não só o [0]: escolhe o primeiro que ainda não
+    // foi criado. Evita travar quando o ciclo A-Z dá a volta (aí o terms[0] já existiria).
+    const slugify = (t) => sanitizeFilename(t.toLowerCase().replace(/\s+/g, '-'));
+    const selectedTerm = terms.find(t => !existsSync(join(GLOSSARIO_DIR, `${slugify(t)}.md`))) || terms[0];
 
     console.log(`📚 Gerando glossário para: ${selectedTerm}`);
 
