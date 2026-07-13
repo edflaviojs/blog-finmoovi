@@ -7,6 +7,7 @@
 import { generateCoverImage, generateCoverImageSync, generateInlineImage } from './image-router.js';
 import { saveSVGImage } from './svg-generator.js';
 import { config } from '../../../site.config.ts';
+import { FACT_GUARD_PROMPT } from '../lib/fact-guard.js';
 
 // Provedores de geração de texto (todos compatíveis com a API OpenAI), em
 // ordem de prioridade/fallback. Cada um se auto-habilita conforme as
@@ -162,6 +163,7 @@ export async function generateBlogPost(topic, options = {}) {
 
   const textPrompt = `
 ${avoidThemes}
+${FACT_GUARD_PROMPT}
 Escreva um artigo de blog sobre: "${topic}"
 
 REGRAS DE ESTILO (obrigatórias):
