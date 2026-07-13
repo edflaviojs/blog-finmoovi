@@ -1,0 +1,159 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import { config } from '../../site.config';
+
+const brand = config.brand.name;
+const contactEmail = 'finmoovi@gmail.com';
+const updated = '13 de julho de 2026';
+---
+
+<BaseLayout
+  title={`Política de Privacidade — ${brand} Blog`}
+  description={`Como o ${brand} Blog coleta, usa, compartilha e protege seus dados: cookies, retenção, direitos do usuário (LGPD e GDPR) e segurança.`}
+  keywords={['política de privacidade', 'privacidade', 'LGPD', 'GDPR', 'cookies', brand]}
+>
+  <Header />
+
+  <main class="legal-page">
+    <div class="container">
+      <article class="legal-content post-content">
+        <h1>Política de Privacidade</h1>
+        <p class="legal-updated">Última atualização: {updated}</p>
+
+        <p>
+          Esta Política de Privacidade explica como o <strong>{brand} Blog</strong> ({config.siteUrl}) coleta,
+          usa, compartilha, retém e protege informações quando você visita o site, assina nossa newsletter ou
+          interage com nossos conteúdos. Levamos sua privacidade a sério e coletamos o mínimo necessário.
+        </p>
+
+        <h2>1. Quem somos</h2>
+        <p>
+          O {brand} Blog é um site de educação financeira. Para qualquer questão sobre privacidade ou seus
+          dados, entre em contato pelo e-mail <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+        </p>
+
+        <h2>2. Quais dados coletamos</h2>
+        <p><strong>Dados que você nos fornece:</strong></p>
+        <ul>
+          <li><strong>E-mail</strong> — quando você assina a newsletter (opcionalmente com o idioma e a origem da inscrição).</li>
+          <li><strong>Comentários</strong> — se você comenta, os comentários são processados pelo Giscus e ficam vinculados à sua conta do <strong>GitHub</strong>, conforme a política de privacidade do GitHub.</li>
+        </ul>
+        <p><strong>Dados coletados automaticamente:</strong></p>
+        <ul>
+          <li><strong>Métricas de audiência agregadas</strong> — usamos o Cloudflare Web Analytics, que é <strong>sem cookies</strong> e não identifica você individualmente (páginas vistas, país aproximado, referências, tipo de dispositivo, de forma agregada).</li>
+          <li><strong>Preferências salvas no seu navegador</strong> — tema (claro/escuro), idioma e avaliações de artigo são guardados <strong>localmente</strong> (localStorage) no seu dispositivo; não são enviados a servidores nem nos identificam.</li>
+          <li><strong>Dados técnicos de conexão</strong> — como qualquer site, nosso provedor de hospedagem/CDN pode processar temporariamente o endereço IP e o user-agent para entregar as páginas e por segurança.</li>
+        </ul>
+        <p>Não coletamos dados financeiros, de pagamento ou categorias sensíveis por meio do blog.</p>
+
+        <h2>3. Para que usamos os dados (finalidade)</h2>
+        <ul>
+          <li>Enviar a newsletter e o material que você solicitou;</li>
+          <li>Publicar e moderar comentários;</li>
+          <li>Entender, de forma agregada, quais conteúdos são úteis e melhorar o site;</li>
+          <li>Garantir a segurança, prevenir abuso e cumprir obrigações legais.</li>
+        </ul>
+        <p>
+          <strong>Bases legais (LGPD/GDPR):</strong> consentimento (newsletter e comentários), legítimo interesse
+          (métricas agregadas, segurança) e cumprimento de obrigação legal, quando aplicável.
+        </p>
+
+        <h2>4. Compartilhamento de informações</h2>
+        <p>
+          <strong>Não vendemos seus dados.</strong> Compartilhamos apenas com prestadores de serviço
+          (operadores) necessários para o funcionamento do site, e apenas na medida necessária:
+        </p>
+        <ul>
+          <li><strong>Cloudflare</strong> — hospedagem/CDN e análise de audiência (sem cookies).</li>
+          <li><strong>Resend</strong> — envio dos e-mails da newsletter.</li>
+          <li><strong>GitHub (Giscus)</strong> — hospedagem e exibição dos comentários.</li>
+        </ul>
+        <p>
+          Podemos divulgar informações se exigido por lei ou para proteger direitos e a segurança do serviço.
+          Links para sites de terceiros (inclusive redes sociais) têm suas próprias políticas de privacidade,
+          pelas quais não somos responsáveis.
+        </p>
+
+        <h2>5. Cookies e rastreamento</h2>
+        <p>
+          O {brand} Blog <strong>não usa cookies próprios de rastreamento nem publicidade comportamental</strong>.
+          Nossa análise de audiência (Cloudflare Web Analytics) é <strong>sem cookies</strong>. Usamos apenas o
+          <strong>armazenamento local (localStorage)</strong> do seu navegador para lembrar suas preferências
+          (tema e idioma) — você pode limpá-lo a qualquer momento nas configurações do navegador.
+        </p>
+        <p>
+          Se você interagir com <strong>comentários (Giscus/GitHub)</strong> ou com conteúdos incorporados de
+          terceiros (por exemplo, botões ou embeds de redes sociais), esses serviços podem definir seus próprios
+          cookies, conforme as respectivas políticas.
+        </p>
+
+        <h2>6. Retenção de dados</h2>
+        <ul>
+          <li><strong>E-mail da newsletter:</strong> mantido enquanto você estiver inscrito. Ao cancelar (link em cada e-mail), removemos você da lista.</li>
+          <li><strong>Comentários:</strong> permanecem visíveis enquanto você os mantiver publicados no GitHub; você pode editá-los ou excluí-los na sua conta.</li>
+          <li><strong>Métricas agregadas:</strong> retidas de forma agregada/anônima pelo período do provedor de analytics.</li>
+          <li><strong>Preferências locais:</strong> ficam no seu dispositivo até você limpá-las.</li>
+        </ul>
+
+        <h2>7. Seus direitos</h2>
+        <p>
+          Conforme a <strong>LGPD</strong> (Brasil) e o <strong>GDPR / UK GDPR</strong> (UE/Reino Unido) — e leis
+          equivalentes —, você pode solicitar: <strong>acesso</strong>, <strong>correção</strong>,
+          <strong>exclusão</strong>, <strong>portabilidade</strong>, <strong>oposição</strong> ao tratamento e a
+          <strong>revogação do consentimento</strong>.
+        </p>
+        <ul>
+          <li>Para <strong>cancelar a newsletter</strong>: use o link de descadastro em qualquer e-mail.</li>
+          <li>Para exercer os demais direitos: escreva para <a href={`mailto:${contactEmail}`}>{contactEmail}</a>. Responderemos nos prazos legais aplicáveis.</li>
+        </ul>
+
+        <h2>8. Segurança</h2>
+        <p>
+          Adotamos medidas técnicas e organizacionais razoáveis para proteger seus dados: conexão criptografada
+          (HTTPS) em todo o site, uso de provedores confiáveis e acesso restrito às informações. Nenhum método de
+          transmissão ou armazenamento é 100% seguro, mas trabalhamos para reduzir riscos.
+        </p>
+
+        <h2>9. Transferências internacionais</h2>
+        <p>
+          Alguns provedores (como Cloudflare, Resend e GitHub) podem processar dados em servidores fora do seu
+          país, inclusive nos Estados Unidos e na União Europeia. Nesses casos, os dados são tratados com as
+          salvaguardas exigidas pela legislação aplicável.
+        </p>
+
+        <h2>10. Crianças e adolescentes</h2>
+        <p>
+          O blog não é direcionado a menores de 16 anos e não coletamos intencionalmente dados dessas pessoas. Se
+          identificarmos coleta indevida, removeremos os dados.
+        </p>
+
+        <h2>11. Alterações nesta política</h2>
+        <p>
+          Podemos atualizar esta Política periodicamente. A data de "última atualização" no topo indica a versão
+          vigente. Mudanças relevantes serão sinalizadas no site.
+        </p>
+
+        <p>
+          <strong>Dúvidas?</strong> Fale com a gente: <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .legal-page { padding: var(--space-8) 0 var(--space-16); }
+  .legal-content { max-width: 800px; margin: 0 auto; }
+  .legal-content h1 {
+    font-size: var(--text-4xl);
+    background: var(--gradient-cta);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: var(--space-2);
+  }
+  .legal-updated { color: var(--text-tertiary); font-size: var(--text-sm); margin-bottom: var(--space-8); }
+  .legal-content a { color: #00F0FF; text-decoration: underline; text-underline-offset: 2px; }
+</style>
