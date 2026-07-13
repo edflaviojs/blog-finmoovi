@@ -96,6 +96,15 @@ SEO de imagens (`11b8809` + `a6fb02f`):
 - **Capas padronizadas em 1200×750** (357 imagens; proporção 1.6 preservada) + pipeline
   passa a gerar nesse tamanho, atendendo a recomendação de ≥1200px do Google.
 
+Alt descritivo (IA de visão):
+- Schema ganhou o campo `imageAlt`; render usa `imageAlt || título` nos covers canônicos,
+  PostCard/PostGrid e grid da home (fallback seguro, sem regressão).
+- `src/scripts/automacoes/gerar-alt-imagens.js` + workflow `gerar-alt-imagens.yml` descrevem
+  a **cena** de cada capa via IA de visão (Groq `llama-4-scout`; converte p/ JPEG 768px;
+  throttle 2,5s + retry 429 + circuit breaker) e gravam `imageAlt` localizado (pt/en/es).
+- Workflow: disparo manual + **agenda 3×/dia (lote 60)** idempotente até todas terem alt.
+  Ex.: *"Caderno de couro marrom, calculadora e moedas sobre mármore branco com plantas."*
+
 ---
 
 ## Arquitetura Atual do Blog
