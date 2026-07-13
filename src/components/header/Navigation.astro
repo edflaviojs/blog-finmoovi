@@ -1,9 +1,18 @@
 ---
 import { config } from '../../../site.config';
+import { getCollection } from 'astro:content';
+
+// Categorias de artigo que REALMENTE têm posts (evita link para página 404).
+const CAT_LABELS: Record<string, string> = {
+  dicas: 'Dicas', orcamento: 'Orçamento', investimentos: 'Investimentos', cotacoes: 'Cotações',
+};
+const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'pt');
+const catSet = new Set(posts.map(p => p.data.category));
+const categorias = Object.entries(CAT_LABELS)
+  .filter(([slug]) => catSet.has(slug))
+  .map(([slug, label]) => ({ slug, label, href: `/categorias/${slug}` }));
 
 const navItems = [
-  { label: 'Início', key: 'nav.inicio', href: '/' },
-  { label: 'Dicas', key: 'nav.dicas', href: '/categorias/dicas' },
   { label: 'Ferramentas', key: 'nav.ferramentas', href: '/ferramentas' },
   { label: 'Estudos', key: 'nav.estudos', href: '/estudos' },
   { label: 'Glossário', key: 'nav.glossario', href: '/glossario' },
@@ -11,10 +20,27 @@ const navItems = [
 ];
 
 const currentPath = Astro.url.pathname;
+const inCategorias = currentPath.startsWith('/categorias/');
 ---
 
 <nav class="nav-desktop" aria-label="Navegação principal">
   <ul class="nav-list">
+    <li>
+      <a href="/" class:list={['nav-link', { active: currentPath === '/' }]} data-i18n="nav.inicio">Início</a>
+    </li>
+    <li class="nav-dropdown">
+      <a
+        href={categorias[0]?.href || '/categorias/dicas'}
+        class:list={['nav-link', 'nav-dropdown-toggle', { active: inCategorias }]}
+        aria-haspopup="true"
+        data-i18n="nav.categorias"
+      >Categorias ▾</a>
+      <ul class="nav-submenu">
+        {categorias.map(c => (
+          <li><a href={c.href} class:list={['nav-sublink', { active: currentPath === c.href }]}>{c.label}</a></li>
+        ))}
+      </ul>
+    </li>
     {navItems.map(item => (
       <li>
         <a
@@ -69,6 +95,49 @@ const currentPath = Astro.url.pathname;
   .nav-link.active {
     color: var(--accent-primary);
     background: rgba(88, 166, 255, 0.1);
+  }
+
+  .nav-dropdown { position: relative; }
+  .nav-dropdown-toggle { cursor: pointer; }
+
+  .nav-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    margin-top: var(--space-1);
+    padding: var(--space-2);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .nav-dropdown:hover .nav-submenu,
+  .nav-dropdown:focus-within .nav-submenu {
+    display: flex;
+  }
+
+  .nav-sublink {
+    display: block;
+    padding: var(--space-2) var(--space-3);
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+  }
+
+  .nav-sublink:hover {
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
+  }
+
+  .nav-sublink.active {
+    color: var(--accent-primary);
   }
 
   .nav-cta {
