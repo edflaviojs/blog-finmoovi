@@ -77,9 +77,14 @@ cadeia de rede de ~11.873ms, imagens pesadas (−2.132 KiB), render-blocking e f
   geração passam por esse caminho (nenhum grava imagem direto).
 - `sharp` declarado como dependência (antes só vinha transitivamente do Astro).
 
-Pendências abertas desta sessão (em andamento):
-- Proxy CORS via Cloudflare Function para as cotações (elimina erros de console CORS/timeout).
-- Tokenização do ciano `#00F0FF` (reprova contraste no tema claro; hardcoded em 46 arquivos).
+Pendências desta sessão — RESOLVIDAS:
+- ✅ Proxy CORS (`1e97d18`): `functions/api/cotacoes.js` (combina AwesomeAPI/brapi/BCB no
+  edge, 1 JSON) + `functions/api/moedas.js` (genérico, usado pelo conversor). CotacaoBar e
+  conversor passam a fazer requests same-origin — sem erros de CORS. IBOV segue em fallback
+  estático (brapi/token demo instável; `/last/IBOV` da AwesomeAPI virou 404).
+- ✅ Tokenização do ciano (`d28bfd1`): novo token `--brand-cyan` (escuro #00F0FF idêntico,
+  claro #0e7490 = 5.03:1). Substituídas as ocorrências hex em 43 arquivos; tema escuro
+  pixel-idêntico, tema claro com contraste WCAG ≥4.5:1.
 
 ---
 
