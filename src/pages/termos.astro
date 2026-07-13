@@ -1,0 +1,108 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import { config } from '../../site.config';
+
+const brand = config.brand.name;
+const contactEmail = 'finmoovi@gmail.com';
+const updated = '13 de julho de 2026';
+---
+
+<BaseLayout
+  title={`Termos de Uso — ${brand} Blog`}
+  description={`Termos e condições de uso do ${brand} Blog: natureza do conteúdo, uso permitido, propriedade intelectual, isenção de responsabilidade e contato.`}
+  keywords={['termos de uso', 'termos e condições', brand, 'blog']}
+>
+  <Header />
+
+  <main class="legal-page">
+    <div class="container">
+      <article class="legal-content post-content">
+        <h1>Termos de Uso</h1>
+        <p class="legal-updated">Última atualização: {updated}</p>
+
+        <p>
+          Estes Termos regem o uso do <strong>{brand} Blog</strong> ({config.siteUrl}). Ao acessar ou usar o
+          site, você concorda com estes Termos. Se não concordar, por favor não utilize o blog.
+        </p>
+
+        <h2>1. Natureza do conteúdo</h2>
+        <p>
+          O {brand} Blog publica conteúdo <strong>educativo e informativo</strong> sobre finanças pessoais. As
+          informações têm caráter geral e <strong>não constituem consultoria ou recomendação financeira, de
+          investimentos, tributária ou jurídica</strong>. Você é o único responsável pelas decisões que tomar com
+          base no conteúdo. Sempre avalie sua situação e, quando necessário, procure um profissional habilitado.
+        </p>
+
+        <h2>2. Uso permitido</h2>
+        <p>Você pode ler, compartilhar links e citar trechos com a devida atribuição e link para a fonte. É vedado:</p>
+        <ul>
+          <li>Copiar ou republicar artigos integralmente sem autorização;</li>
+          <li>Usar o conteúdo para fins ilícitos, enganosos ou que violem direitos de terceiros;</li>
+          <li>Coletar dados do site de forma automatizada (scraping) sem autorização;</li>
+          <li>Tentar comprometer a segurança ou a disponibilidade do site.</li>
+        </ul>
+
+        <h2>3. Propriedade intelectual</h2>
+        <p>
+          Os textos, marca, logotipo, layout e demais elementos do {brand} Blog são protegidos por direitos de
+          propriedade intelectual. O uso não autorizado sujeita o infrator às sanções cabíveis. Marcas de terceiros
+          citadas pertencem aos seus respectivos titulares.
+        </p>
+
+        <h2>4. Newsletter e comentários</h2>
+        <p>
+          Ao assinar a newsletter, você concorda em receber e-mails do blog (pode cancelar a qualquer momento pelo
+          link de descadastro). Os comentários são processados pelo Giscus e ficam vinculados à sua conta do GitHub;
+          você é responsável pelo que publica e deve manter respeito e civilidade. Podemos remover comentários que
+          violem estes Termos ou a lei.
+        </p>
+
+        <h2>5. Links e serviços de terceiros</h2>
+        <p>
+          O blog pode conter links para sites de terceiros e usar serviços externos (por exemplo, hospedagem,
+          análise de audiência e envio de e-mails). Não controlamos nem nos responsabilizamos pelo conteúdo e pelas
+          políticas desses terceiros.
+        </p>
+
+        <h2>6. Isenção de garantias e responsabilidade</h2>
+        <p>
+          O conteúdo é fornecido "no estado em que se encontra", sem garantias de exatidão, atualidade ou adequação a
+          um fim específico. Na máxima extensão permitida pela lei, o {brand} não se responsabiliza por perdas ou
+          danos decorrentes do uso do site ou de decisões tomadas com base no conteúdo.
+        </p>
+
+        <h2>7. Privacidade</h2>
+        <p>
+          O tratamento de dados é descrito na nossa <a href="/privacidade">Política de Privacidade</a> e o uso de
+          cookies na <a href="/cookies">Política de Cookies</a>.
+        </p>
+
+        <h2>8. Alterações</h2>
+        <p>
+          Podemos atualizar estes Termos periodicamente. A data de "última atualização" indica a versão vigente. O
+          uso continuado do site após alterações implica concordância com os novos Termos.
+        </p>
+
+        <h2>9. Contato</h2>
+        <p>Dúvidas sobre estes Termos? Fale com a gente: <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.</p>
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .legal-page { padding: var(--space-8) 0 var(--space-16); }
+  .legal-content { max-width: 800px; margin: 0 auto; }
+  .legal-content h1 {
+    font-size: var(--text-4xl);
+    background: var(--gradient-cta);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: var(--space-2);
+  }
+  .legal-updated { color: var(--text-tertiary); font-size: var(--text-sm); margin-bottom: var(--space-8); }
+  .legal-content a { color: #00F0FF; text-decoration: underline; text-underline-offset: 2px; }
+</style>

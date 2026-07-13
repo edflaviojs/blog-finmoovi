@@ -1,0 +1,92 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import { config } from '../../site.config';
+
+const brand = config.brand.name;
+const contactEmail = 'finmoovi@gmail.com';
+const updated = '13 de julho de 2026';
+---
+
+<BaseLayout
+  title={`Política de Cookies — ${brand} Blog`}
+  description={`Como o ${brand} Blog usa cookies e armazenamento local: analytics sem cookies, preferências no navegador, cookies de terceiros e como gerenciar.`}
+  keywords={['política de cookies', 'cookies', 'privacidade', brand]}
+>
+  <Header />
+
+  <main class="legal-page">
+    <div class="container">
+      <article class="legal-content post-content">
+        <h1>Política de Cookies</h1>
+        <p class="legal-updated">Última atualização: {updated}</p>
+
+        <p>
+          Esta Política explica como o <strong>{brand} Blog</strong> usa cookies e tecnologias semelhantes. Ela
+          complementa a nossa <a href="/privacidade">Política de Privacidade</a>.
+        </p>
+
+        <h2>1. O que são cookies</h2>
+        <p>
+          Cookies são pequenos arquivos guardados no seu navegador quando você visita um site. Além deles, sites
+          podem usar o <strong>armazenamento local (localStorage)</strong>, que fica apenas no seu dispositivo.
+        </p>
+
+        <h2>2. Como usamos (resumo honesto)</h2>
+        <p>
+          O {brand} Blog <strong>não usa cookies próprios de rastreamento nem de publicidade comportamental</strong>.
+        </p>
+        <ul>
+          <li><strong>Análise de audiência sem cookies:</strong> usamos o Cloudflare Web Analytics, que é <strong>cookieless</strong> e mede o uso do site de forma agregada, sem identificar você.</li>
+          <li><strong>Preferências no seu navegador (localStorage):</strong> guardamos o <strong>tema</strong> (claro/escuro), o <strong>idioma</strong> e avaliações de artigo apenas no seu dispositivo, para lembrar suas escolhas. Não são enviados a servidores.</li>
+        </ul>
+
+        <h2>3. Cookies de terceiros</h2>
+        <p>
+          Alguns recursos, quando você interage com eles, podem definir cookies próprios, conforme as políticas de
+          cada serviço:
+        </p>
+        <ul>
+          <li><strong>Comentários (Giscus / GitHub):</strong> ao usar os comentários, o GitHub pode definir cookies de sessão/autenticação.</li>
+          <li><strong>Conteúdos e botões de redes sociais</strong> eventualmente incorporados podem usar cookies dos respectivos provedores.</li>
+        </ul>
+        <p>Não controlamos os cookies de terceiros — consulte as políticas de privacidade de cada serviço.</p>
+
+        <h2>4. Como gerenciar cookies</h2>
+        <p>Você tem controle total. Na maioria dos navegadores é possível:</p>
+        <ul>
+          <li>Excluir cookies já armazenados;</li>
+          <li>Bloquear cookies (todos ou site a site);</li>
+          <li>Navegar em modo privado/anônimo;</li>
+          <li>Limpar o armazenamento local do site.</li>
+        </ul>
+        <p>Para saber mais, consulte <a href="https://www.aboutcookies.org" target="_blank" rel="noopener noreferrer">aboutcookies.org</a>.</p>
+
+        <h2>5. Retenção</h2>
+        <p>
+          Cookies de sessão são apagados ao fechar o navegador; cookies persistentes de terceiros seguem a validade
+          definida por cada provedor. As preferências em localStorage ficam até você limpá-las.
+        </p>
+
+        <h2>6. Contato</h2>
+        <p>Dúvidas sobre cookies? Fale com a gente: <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.</p>
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .legal-page { padding: var(--space-8) 0 var(--space-16); }
+  .legal-content { max-width: 800px; margin: 0 auto; }
+  .legal-content h1 {
+    font-size: var(--text-4xl);
+    background: var(--gradient-cta);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: var(--space-2);
+  }
+  .legal-updated { color: var(--text-tertiary); font-size: var(--text-sm); margin-bottom: var(--space-8); }
+  .legal-content a { color: #00F0FF; text-decoration: underline; text-underline-offset: 2px; }
+</style>
