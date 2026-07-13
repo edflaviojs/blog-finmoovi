@@ -117,13 +117,21 @@ async function describeImage(imageBuffer, mime, locale, topic) {
 }
 
 async function run() {
-  let processed = 0, skipped = 0, errors = 0;
+  let processed = 0, skipped = 0, errors = 0, consecutiveErrors = 0;
+  let aborted = false;
 
   for (const col of COLLECTIONS) {
-    if (!existsSync(col.dir)) continue;
+    if (aborted || !existsSync(col.dir)) continue;
     for (const file of readdirSync(col.dir)) {
       if (!file.endsWith('.md')) continue;
       if (processed >= LIMIT) break;
+      // Circuit breaker: muitas falhas seguidas = provável teto diário → para
+      // (a agenda 3x/dia retoma depois, de forma idempotente).
+      if (consecutiveErrors >= 8) {
+        console.warn('\n🛑 8 falhas seguidas — provável limite diário de API. Abortando; a agenda retoma depois.');
+        aborted = true;
+        break;
+      }
 
       const full = join(col.dir, file);
       const raw = readFileSync(full, 'utf-8');
@@ -155,10 +163,12 @@ async function run() {
         if (out === raw) { console.warn(`   ⚠️ não encontrei a linha image: em ${file}`); errors++; continue; }
         writeFileSync(full, out, 'utf-8');
         processed++;
+        consecutiveErrors = 0;
         console.log(`✅ [${locale}] ${file}\n   → ${alt}`);
         await sleep(THROTTLE_MS);
       } catch (e) {
         errors++;
+        consecutiveErrors++;
         console.warn(`❌ ${file}: ${e.message}`);
       }
     }
