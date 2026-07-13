@@ -60,63 +60,39 @@
 
 <script>
   async function fetchCotacoes() {
-    // AwesomeAPI - USD, EUR, BTC (gratuita, sem chave)
+    // 1 request same-origin ao proxy /api/cotacoes (Cloudflare Function) — sem CORS.
     try {
-      const res = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-USD');
-      if (res.ok) {
-        const data = await res.json();
-        const usd = data.USDBRL;
-        updateCotacao('usdbrl', parseFloat(usd.bid).toFixed(2), parseFloat(usd.pctChange));
-        const eur = data.EURBRL;
-        updateCotacao('eurbrl', parseFloat(eur.bid).toFixed(2), parseFloat(eur.pctChange));
-        const btc = data.BTCUSD;
-        const btcVal = parseFloat(btc.bid);
-        updateCotacao('btcusd', btcVal > 1000 ? Math.round(btcVal).toLocaleString('en-US') : btcVal.toFixed(2), parseFloat(btc.pctChange));
-      }
-    } catch (e) {
-      updateCotacao('usdbrl', '5.67', 0);
-      updateCotacao('eurbrl', '6.18', 0);
-      updateCotacao('btcusd', '104,250', 0);
-    }
+      const res = await fetch('/api/cotacoes');
+      if (!res.ok) throw new Error('http ' + res.status);
+      const d = await res.json();
 
-    // Brapi.dev - IBOV (requer token para CORS, usar com token gratuito)
-    try {
-      const res = await fetch('https://brapi.dev/api/quote/%5EBVSP?token=demo');
-      if (res.ok) {
-        const data = await res.json();
-        if (data.results && data.results[0]) {
-          const ibov = data.results[0];
-          const val = Math.round(ibov.regularMarketPrice).toLocaleString('pt-BR');
-          updateCotacao('ibov', val, ibov.regularMarketChangePercent);
-        }
+      updateCotacao('usdbrl', d.usdbrl ? d.usdbrl.value.toFixed(2) : '5.67', d.usdbrl ? d.usdbrl.pct : 0);
+      updateCotacao('eurbrl', d.eurbrl ? d.eurbrl.value.toFixed(2) : '6.18', d.eurbrl ? d.eurbrl.pct : 0);
+      if (d.btcusd) {
+        const v = d.btcusd.value;
+        updateCotacao('btcusd', v > 1000 ? Math.round(v).toLocaleString('en-US') : v.toFixed(2), d.btcusd.pct);
+      } else {
+        updateCotacao('btcusd', '104,250', 0);
       }
-    } catch (e) {
-      // Fallback: tentar AwesomeAPI para IBOV
-      try {
-        const res2 = await fetch('https://economia.awesomeapi.com.br/last/IBOV');
-        if (res2.ok) {
-          const data2 = await res2.json();
-          if (data2.IBOV) {
-            updateCotacao('ibov', parseFloat(data2.IBOV.bid).toLocaleString('pt-BR', {maximumFractionDigits: 0}), parseFloat(data2.IBOV.pctChange || 0));
-          }
-        }
-      } catch (e2) {
+      if (d.ibov) {
+        updateCotacao('ibov', Math.round(d.ibov.value).toLocaleString('pt-BR'), d.ibov.pct);
+      } else {
         updateCotacao('ibov', '138.420', 0);
       }
-    }
-
-    // Banco Central do Brasil - SELIC (API oficial, gratuita)
-    try {
-      const res = await fetch('https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json');
-      if (res.ok) {
-        const data = await res.json();
-        const selic = parseFloat(data[0].valor).toFixed(2);
+      if (d.selic !== null && d.selic !== undefined) {
+        const selic = d.selic.toFixed(2);
         const el1 = document.getElementById('cot-selic');
         const el2 = document.getElementById('cot-selic2');
         if (el1) el1.textContent = selic + '%';
         if (el2) el2.textContent = selic + '%';
       }
-    } catch (e) { /* mantém valor estático */ }
+    } catch (e) {
+      // Proxy indisponível (ex.: dev local sem Functions) → valores estáticos
+      updateCotacao('usdbrl', '5.67', 0);
+      updateCotacao('eurbrl', '6.18', 0);
+      updateCotacao('btcusd', '104,250', 0);
+      updateCotacao('ibov', '138.420', 0);
+    }
   }
 
   function updateCotacao(pair, value, pctChange) {

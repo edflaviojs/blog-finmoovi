@@ -140,8 +140,8 @@ const layoutProps = isEmbed
 
   async function fetchRates() {
     try {
-      // Mesma API do ticker (AwesomeAPI) para consistência de valores
-      const res = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,GBP-BRL,ARS-BRL,BTC-BRL');
+      // Proxy same-origin (Cloudflare Function) — dados da AwesomeAPI, sem CORS
+      const res = await fetch('/api/moedas?pairs=USD-BRL,EUR-BRL,GBP-BRL,ARS-BRL,BTC-BRL');
       if (!res.ok) throw new Error('API error');
       const data = await res.json();
 
