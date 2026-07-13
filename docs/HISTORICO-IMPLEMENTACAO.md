@@ -105,6 +105,35 @@ Alt descritivo (IA de visão):
 - Workflow: disparo manual + **agenda 3×/dia (lote 60)** idempotente até todas terem alt.
   Ex.: *"Caderno de couro marrom, calculadora e moedas sobre mármore branco com plantas."*
 
+Navegação, geradores e conteúdo (2026-07-13):
+- **Menu/rodapé dinâmico** (`151f598`): fonte única `content.categoryNav` (site.config) +
+  helper `src/utils/nav-categories.ts`; header, mobile e **rodapé** leem de lá — categoria
+  nova aparece nos 3 automaticamente. Dropdown com `max-height`+scroll (muitas categorias).
+- **Geradores mais robustos** (`ecf0d9a`): fallback markdown em investimentos/bofu/orçamento
+  (evita falha "Formato inválido" quando a IA responde sem os delimitadores).
+- **Rebalance de categorias** (`f4235aa`): `sazonal`→orçamento e `solucoes`→ferramentas
+  (dicas era 54% por ser alimentada por ~5 geradores). Gerador DIÁRIO mantido intocado
+  (lógica acoplada de "1 dica/dia").
+- **Glossário** (`342d31a`): passa a usar todos os ~5 termos por letra (não só o [0]),
+  evitando travar quando o ciclo A-Z dá a volta.
+
+### 📅 Calendário de geração de conteúdo (horário de Brasília)
+
+Todos os dias: **05h** sazonal-mercados (condicional, perto de feriado) · **06h** dica ·
+**08h** termo de glossário.
+
+| Dia | Hora | Gera |
+|---|---|---|
+| Seg | 07h / 09h | Cotações / Orçamento |
+| Ter | 04h / 07h | Glossário extra / Post inteligente (categoria adaptativa) |
+| Qua | 06h / 08h | Investimentos / Ferramentas (solucoes-finmoovi) |
+| Qui | 04h / 07h | Glossário extra / Ferramentas (BOFU) |
+| Sex | 07h / 09h | Orçamento (sazonal) / Investimentos (comparação) |
+| Sáb | 04h | Glossário extra |
+| Dia 1 | 06h | Atualização de posts antigos (não cria novo) |
+
+Volume/semana (se tudo rodar): ~10 glossário, até 7 dicas, 8 posts de outras categorias.
+
 ---
 
 ## Arquitetura Atual do Blog
