@@ -1,7 +1,10 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-07-13T13:08:37.864Z",
   "siteUrl": "https://blog.finmoovi.com/",
-  "period": null,
+  "period": {
+    "startDate": "2026-06-15",
+    "endDate": "2026-07-13"
+  },
   "hasData": false,
   "totals": {
     "queries": 0,
