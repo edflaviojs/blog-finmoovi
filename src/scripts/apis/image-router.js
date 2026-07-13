@@ -14,6 +14,7 @@
 
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
+import sharp from 'sharp';
 import { saveSVGImage } from './svg-generator.js';
 import { config } from '../../../site.config.ts';
 
@@ -196,9 +197,17 @@ async function callProvider(provider, prompt, slug, destination, dir) {
 
   const filename = `${slug}.webp`;
   const fullPath = join(dir, filename);
-  writeFileSync(fullPath, imageBuffer);
 
-  const sizeKB = (imageBuffer.length / 1024).toFixed(0);
+  // Otimiza para webp q78 (reduz ~80% o peso, melhora LCP). Fallback: grava o original.
+  let outBuffer = imageBuffer;
+  try {
+    outBuffer = await sharp(imageBuffer).webp({ quality: 78, effort: 6 }).toBuffer();
+  } catch (err) {
+    console.warn(`   ⚠️ Falha ao otimizar imagem (${err.message}) — gravando original`);
+  }
+  writeFileSync(fullPath, outBuffer);
+
+  const sizeKB = (outBuffer.length / 1024).toFixed(0);
   console.log(`   📸 ${sizeKB}KB saved → /images/${destination}/${filename}`);
 
   return `/images/${destination}/${filename}`;
