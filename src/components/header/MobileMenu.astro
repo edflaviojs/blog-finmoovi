@@ -25,7 +25,7 @@ const navItems = [
 </button>
 
 <div class="mobile-overlay" id="mobile-overlay"></div>
-<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
   <nav class="mobile-nav" aria-label="Menu mobile">
     <ul class="mobile-nav-list">
       <li>
@@ -60,6 +60,7 @@ const navItems = [
   function openMenu() {
     toggle?.setAttribute('aria-expanded', 'true');
     menu?.setAttribute('aria-hidden', 'false');
+    if (menu) menu.inert = false;
     overlay?.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
@@ -67,6 +68,7 @@ const navItems = [
   function closeMenu() {
     toggle?.setAttribute('aria-expanded', 'false');
     menu?.setAttribute('aria-hidden', 'true');
+    if (menu) menu.inert = true;
     overlay?.classList.remove('active');
     document.body.style.overflow = '';
   }

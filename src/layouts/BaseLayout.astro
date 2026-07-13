@@ -97,6 +97,9 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage} />
 
+  <!-- Preconnect: Cloudflare Web Analytics (reduz latência do beacon) -->
+  <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
+
   <!-- Fonts (self-hosted for performance) -->
   <link rel="preload" href="/fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/inter-latin-700.woff2" as="font" type="font/woff2" crossorigin />
@@ -125,8 +128,24 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
     "description": config.siteDescription.pt
   })} />
 
-  <!-- Theme (must load before body to prevent flash) -->
-  <script is:inline src="/scripts/theme.js"></script>
+  <!-- Theme (inline para evitar request render-blocking e flash de tema) -->
+  <script is:inline>
+    (function() {
+      var saved = null;
+      try { saved = localStorage.getItem('fm-theme'); } catch(e) {}
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        var hasSaved = false;
+        try { hasSaved = !!localStorage.getItem('fm-theme'); } catch(ex) {}
+        if (!hasSaved) {
+          document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+  </script>
 </head>
 <body>
   <slot />

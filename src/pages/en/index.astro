@@ -194,7 +194,7 @@ const categoryLabels: Record<string, string> = {
                   </div>
                   <div class="hero-secondary-content">
                     <span class="hero-secondary-category">{categoryLabels[card.category] || card.category}</span>
-                    <h3 class="hero-secondary-title">{card.title}</h3>
+                    <h2 class="hero-secondary-title">{card.title}</h2>
                     <time datetime={card.date.toISOString()}>
                       {card.date.toLocaleDateString('en-US', { day: '2-digit', month: 'short' })}
                     </time>

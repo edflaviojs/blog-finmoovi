@@ -16,7 +16,7 @@ const langs = [
     <span class="lang-current-flag" id="lang-current-flag">🇧🇷</span>
   </button>
 
-  <div class="lang-dropdown" id="lang-dropdown" aria-hidden="true">
+  <div class="lang-dropdown" id="lang-dropdown" aria-hidden="true" inert>
     {langs.map(l => (
       <button class="lang-option" data-lang={l.code} data-flag={l.flag}>
         <span class="lang-flag">{l.flag}</span>
@@ -53,7 +53,7 @@ const langs = [
   if (toggle) toggle.addEventListener('click', function() {
     var isOpen = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!isOpen));
-    if (dropdown) dropdown.setAttribute('aria-hidden', String(isOpen));
+    if (dropdown) { dropdown.setAttribute('aria-hidden', String(isOpen)); dropdown.inert = isOpen; }
   });
 
   options.forEach(function(btn) {
@@ -61,7 +61,7 @@ const langs = [
       var lang = btn.getAttribute('data-lang') || 'pt';
       try { localStorage.setItem('fm-lang', lang); } catch(e) {}
       if (toggle) toggle.setAttribute('aria-expanded', 'false');
-      if (dropdown) dropdown.setAttribute('aria-hidden', 'true');
+      if (dropdown) { dropdown.setAttribute('aria-hidden', 'true'); dropdown.inert = true; }
 
       // Try to find alternate hreflang link for the target language
       var alternateLink = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]');
@@ -107,7 +107,7 @@ const langs = [
     var switcher = document.getElementById('lang-switcher');
     if (switcher && !switcher.contains(e.target)) {
       if (toggle) toggle.setAttribute('aria-expanded', 'false');
-      if (dropdown) dropdown.setAttribute('aria-hidden', 'true');
+      if (dropdown) { dropdown.setAttribute('aria-hidden', 'true'); dropdown.inert = true; }
     }
   });
 
