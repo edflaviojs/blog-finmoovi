@@ -42,6 +42,7 @@ export const GET: APIRoute = async () => {
     { url: '/en/author/ed-flavio', priority: '0.5', changefreq: 'weekly', lastmod: today },
     { url: '/es/autor/ed-flavio', priority: '0.5', changefreq: 'weekly', lastmod: today },
     { url: '/politica-editorial', priority: '0.4', changefreq: 'yearly', lastmod: today },
+    { url: '/estudos', priority: '0.6', changefreq: 'monthly', lastmod: today },
     { url: '/estudos/endividamento-das-familias', priority: '0.7', changefreq: 'monthly', lastmod: today },
   ];
 
