@@ -2,6 +2,7 @@
 title: "5 Dicas para Reorganizar suas Finanças nas Férias"
 description: "Reorganize suas finanças nas férias com 5 dicas práticas e acessíveis."
 image: "/images/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias.webp"
+imageAlt: "Faixa dourada e azul em ondas sobre fundo dourado escuro e azul marinho."
 category: "dicas"
 locale: "pt"
 tags: ["finanças pessoais","férias","reorganização financeira","orçamento","economia","organizar finanças férias","planejamento financeiro meio do ano"]

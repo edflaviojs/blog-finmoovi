@@ -2,6 +2,7 @@
 title: "5 Dicas para se Preparar Financeiramente para o Segundo Semestre"
 description: "Prepare-se para o segundo semestre com dicas financeiras práticas e acessíveis."
 image: "/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme.webp"
+imageAlt: "Mesa de madeira com laptop, xícara, caneta e plantas em vasos."
 category: "dicas"
 locale: "pt"
 tags: ["finanças pessoais","segundo semestre","planejamento financeiro","economia","gastos","segundo semestre financeiro","revisão metas financeiras"]
