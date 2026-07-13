@@ -86,6 +86,16 @@ Pendências desta sessão — RESOLVIDAS:
   claro #0e7490 = 5.03:1). Substituídas as ocorrências hex em 43 arquivos; tema escuro
   pixel-idêntico, tema claro com contraste WCAG ≥4.5:1.
 
+SEO de imagens (`11b8809` + `a6fb02f`):
+- **Sitemap de imagens**: extensão Google Image (`<image:image>`) com URL absoluta em cada
+  post/glossário (354 imagens indexáveis).
+- **og:image**: `width`/`height` (1200×750) + `og:image:alt`. Criado `og-default.png` raster
+  1200×750 (o padrão apontava p/ um `.png` inexistente — social da home estava quebrado).
+- **Schema**: `image` do Article agora é `ImageObject` (URL absoluta + 1200×750).
+- **alt**: corrigido `alt=""` vazio das imagens de hero/cards em en/es (usa o título).
+- **Capas padronizadas em 1200×750** (357 imagens; proporção 1.6 preservada) + pipeline
+  passa a gerar nesse tamanho, atendendo a recomendação de ≥1200px do Google.
+
 ---
 
 ## Arquitetura Atual do Blog
