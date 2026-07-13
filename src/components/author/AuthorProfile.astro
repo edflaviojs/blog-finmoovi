@@ -12,6 +12,8 @@ interface Props {
 const { locale = 'pt' } = Astro.props;
 
 const author = authors['ed-flavio'];
+// Caminho relativo da foto (author.image é absoluta e alimenta o Person schema).
+const avatar = author.image ? author.image.replace(config.siteUrl, '') : '';
 
 // Strings localizadas
 const T = {
@@ -66,6 +68,7 @@ const alternates = { pt: author.i18nPaths.pt, en: author.i18nPaths.en, es: autho
   <main class="autor-page">
     <div class="container">
       <header class="autor-header">
+        {avatar && <img class="autor-avatar" src={avatar} alt={author.name} width="140" height="140" loading="eager" decoding="async" />}
         <h1 class="autor-title">{author.name}</h1>
         <p class="autor-role">{T.role}</p>
         <ul class="autor-credenciais">
@@ -113,6 +116,11 @@ const alternates = { pt: author.i18nPaths.pt, en: author.i18nPaths.en, es: autho
 <style>
   .autor-page { padding: var(--space-8) 0 var(--space-16); }
   .autor-header { text-align: center; margin-bottom: var(--space-10); }
+  .autor-avatar {
+    width: 140px; height: 140px; border-radius: 50%; object-fit: cover;
+    display: block; margin: 0 auto var(--space-4);
+    border: 2px solid var(--border-default);
+  }
   .autor-title {
     font-size: var(--text-4xl);
     background: var(--gradient-cta);

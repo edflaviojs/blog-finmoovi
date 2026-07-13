@@ -33,7 +33,7 @@ export const EDITORIAL_POLICY_PATH = '/politica-editorial';
 export const authors: Record<string, Author> = {
   'ed-flavio': {
     slug: 'ed-flavio',
-    name: 'Ed Flávio',
+    name: 'Ed Flávio José de Sousa',
     jobTitle: 'Editor de finanças pessoais',
     description:
       'Ed Flávio é o editor do FinMoovi Blog. Graduado em Administração de Empresas e pós-graduado em Gestão Financeira, escreve sobre finanças pessoais, orçamento e investimentos com o objetivo de tornar a educação financeira acessível para todos os brasileiros.',
@@ -57,6 +57,7 @@ export const authors: Record<string, Author> = {
     sameAs: [
       'https://www.linkedin.com/in/edflaviojs/',
     ], // adicionar YouTube/X quando disponível (também alimenta o Person schema)
+    image: `${base}/images/authors/ed-flavio.webp`,
   },
 };
 
