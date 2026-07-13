@@ -52,6 +52,35 @@
 - Blog agora é link direto para https://blog.finmoovi.com
 - BLOG_URL atualizado em constants/index.ts
 
+### Sessão 2026-07-13 — Performance, Acessibilidade e Imagens (Lighthouse)
+
+Contexto: auditoria PageSpeed/Lighthouse da home apontou **Desempenho 76**, LCP 5,7s,
+cadeia de rede de ~11.873ms, imagens pesadas (−2.132 KiB), render-blocking e falhas de A11y.
+
+**Commit `5772b2e` — perf(a11y): caminho crítico + acessibilidade**
+- CotacaoBar: fetch das APIs (AwesomeAPI/brapi/BCB) adiado para `load` + `requestIdleCallback`
+  — sai do caminho crítico de renderização (era a origem da latência de ~11,8s).
+- BaseLayout: `theme.js` agora **inline** no `<head>` (remove 1 request render-blocking)
+  + `preconnect` para `static.cloudflareinsights.com`.
+- LanguageSwitcher e MobileMenu: atributo `inert` quando fechados
+  (corrige "aria-hidden com descendentes focáveis").
+- Hero: `hero-secondary-title` de `<h3>` → `<h2>` (corrige ordem de títulos) em pt/en/es
+  — a classe mantém o tamanho visual idêntico.
+- tokens.css: `--text-tertiary` ajustado para contraste WCAG ≥4.5:1 nos dois temas
+  (escuro #6e7681→#818892 = 4.84:1; claro #8b949e→#68707a = 4.71:1), preservando a hierarquia.
+
+**Commit `b6dce45` — perf(images): recompressão webp + pipeline**
+- 233 capas de posts/glossário recomprimidas para **webp q78** (dimensões preservadas):
+  **−69,6 MB** no total. Hero da home 551KB → 94KB (melhora direta de LCP).
+- `image-router.js`: buffers de IA passam por `sharp` (webp q78) antes de gravar, com
+  fallback ao original — **imagens futuras já nascem leves**. Confirmado: os 18 scripts de
+  geração passam por esse caminho (nenhum grava imagem direto).
+- `sharp` declarado como dependência (antes só vinha transitivamente do Astro).
+
+Pendências abertas desta sessão (em andamento):
+- Proxy CORS via Cloudflare Function para as cotações (elimina erros de console CORS/timeout).
+- Tokenização do ciano `#00F0FF` (reprova contraste no tema claro; hardcoded em 46 arquivos).
+
 ---
 
 ## Arquitetura Atual do Blog
