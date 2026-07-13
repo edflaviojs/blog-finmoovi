@@ -94,7 +94,7 @@ const blogTitle = `${brand} ${config.brand.blogSuffix}`;
 <style>
   .sobre-page { padding: var(--space-8) 0 var(--space-16); }
   .sobre-header { text-align: center; margin-bottom: var(--space-12); }
-  .sobre-title { font-size: var(--text-4xl); background: linear-gradient(135deg, #00F0FF, #A91079); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: var(--space-4); }
+  .sobre-title { font-size: var(--text-4xl); background: linear-gradient(135deg, var(--brand-cyan), #A91079); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: var(--space-4); }
   .sobre-subtitle { font-size: var(--text-lg); color: var(--text-secondary); }
   .sobre-content { max-width: 800px; margin: 0 auto; }
   .sobre-section { margin-bottom: var(--space-12); }
@@ -107,17 +107,17 @@ const blogTitle = `${brand} ${config.brand.blogSuffix}`;
   .sobre-card h3 { font-size: var(--text-base); margin-bottom: var(--space-2); }
   .sobre-card p { font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: 0; }
   .sobre-cta-box { text-align: center; padding: var(--space-10); background: var(--gradient-card); border: 1px solid var(--border-default); border-radius: var(--radius-xl); position: relative; overflow: hidden; }
-  .sobre-cta-box::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(135deg, #00F0FF, #A91079); }
+  .sobre-cta-box::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(135deg, var(--brand-cyan), #A91079); }
   .sobre-cta-box h2 { margin-bottom: var(--space-3); }
   .sobre-cta-box p { margin-bottom: var(--space-6); text-align: center; }
   .sobre-cta-actions { display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; }
   .sobre-btn { padding: var(--space-3) var(--space-6); border-radius: var(--radius-full); font-weight: 600; font-size: var(--text-sm); transition: all var(--transition-fast); }
-  .sobre-btn.primary { background: linear-gradient(135deg, #00F0FF, #A91079); color: #fff; }
+  .sobre-btn.primary { background: linear-gradient(135deg, var(--brand-cyan), #A91079); color: #fff; }
   .sobre-btn.primary:hover { opacity: 0.9; transform: translateY(-1px); }
   .sobre-btn.secondary { background: var(--bg-tertiary); color: var(--text-primary); border: 1px solid var(--border-default); }
-  .sobre-btn.secondary:hover { border-color: #00F0FF; }
-  .sobre-link { color: #00F0FF; text-decoration: underline; text-underline-offset: 3px; }
+  .sobre-btn.secondary:hover { border-color: var(--brand-cyan); }
+  .sobre-link { color: var(--brand-cyan); text-decoration: underline; text-underline-offset: 3px; }
   .sobre-social { display: flex; gap: var(--space-4); flex-wrap: wrap; }
   .social-link { padding: var(--space-2) var(--space-4); background: var(--bg-tertiary); border: 1px solid var(--border-default); border-radius: var(--radius-md); font-size: var(--text-sm); color: var(--text-secondary); transition: all var(--transition-fast); }
-  .social-link:hover { border-color: #00F0FF; color: #00F0FF; }
+  .social-link:hover { border-color: var(--brand-cyan); color: var(--brand-cyan); }
 </style>

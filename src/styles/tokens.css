@@ -26,6 +26,7 @@
   --accent-red: #f85149;
   --accent-yellow: #d29922;
   --accent-purple: #bc8cff;
+  --brand-cyan: #00F0FF; /* ciano da marca (tema escuro: brilhante) */
 
   /* Gradients */
   --gradient-hero: linear-gradient(135deg, #58a6ff 0%, #bc8cff 100%);
@@ -105,6 +106,7 @@
   --accent-red: #cf222e;
   --accent-yellow: #9a6700;
   --accent-purple: #8250df;
+  --brand-cyan: #0e7490; /* ciano da marca (tema claro: escurecido p/ contraste WCAG >=4.5:1) */
 
   /* Gradients */
   --gradient-hero: linear-gradient(135deg, #0969da 0%, #8250df 100%);
