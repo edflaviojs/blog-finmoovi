@@ -101,11 +101,15 @@ export const config: SiteConfig = {
 
   // ─── REDES SOCIAIS ─────────────────────────────────────────────────
   social: {
-    twitter: '',
-    instagram: '',
-    linkedin: '',
+    twitter: 'https://x.com/finmoovi',
+    instagram: 'https://www.instagram.com/finmoovi/',
+    linkedin: 'https://www.linkedin.com/company/finmoovi',
     github: 'edflaviojs/blog-finmoovi',
-    youtube: '',
+    youtube: 'https://www.youtube.com/@FinMoovi',
+    facebook: 'https://www.facebook.com/finmoovi',
+    pinterest: 'https://pt.pinterest.com/finmoovi/',
+    bluesky: 'https://bsky.app/profile/finmoovi.bsky.social',
+    substack: 'https://finmoovi.substack.com/',
   },
 
   // ─── ANALYTICS ─────────────────────────────────────────────────────

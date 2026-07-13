@@ -85,6 +85,10 @@ export interface SocialConfig {
   linkedin?: string;
   github?: string;
   youtube?: string;
+  facebook?: string;
+  pinterest?: string;
+  bluesky?: string;
+  substack?: string;
 }
 
 export interface AnalyticsConfig {
