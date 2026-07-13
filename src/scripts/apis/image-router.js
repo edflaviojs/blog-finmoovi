@@ -208,6 +208,14 @@ async function callProvider(provider, prompt, slug, destination, dir) {
   }
   writeFileSync(fullPath, outBuffer);
 
+  // Variantes responsivas (srcset): 400w e 800w a partir da base 1200w
+  for (const w of [400, 800]) {
+    try {
+      const variant = await sharp(outBuffer).resize(w, null, { withoutEnlargement: true }).webp({ quality: 78, effort: 6 }).toBuffer();
+      writeFileSync(join(dir, `${slug}-${w}.webp`), variant);
+    } catch (e) { /* variante é opcional */ }
+  }
+
   const sizeKB = (outBuffer.length / 1024).toFixed(0);
   console.log(`   📸 ${sizeKB}KB saved → /images/${destination}/${filename}`);
 

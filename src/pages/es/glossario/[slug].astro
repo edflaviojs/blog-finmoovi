@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
+import { imgSrcset } from '@/utils/responsive-image';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import CTAVariado from '@components/glossario/CTAVariado.astro';
@@ -72,7 +73,7 @@ const faqSchema = {
         <!-- Cover Image -->
         {term.data.image && (
           <div class="glossario-cover">
-            <img src={term.data.image} alt={term.data.imageAlt || term.data.term} loading="lazy" width="1200" height="630" />
+            <img src={term.data.image} srcset={imgSrcset(term.data.image)} sizes="(min-width: 768px) 720px, 100vw" alt={term.data.imageAlt || term.data.term} loading="lazy" width="1200" height="630" />
           </div>
         )}
 

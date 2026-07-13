@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import { imgSrcset } from '@/utils/responsive-image';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import Sidebar from '@components/sidebar/Sidebar.astro';
@@ -99,7 +100,7 @@ const schemaBreadcrumbItems = [
 
           {image && (
             <div class="post-cover">
-              <img src={image} alt={imageAlt || title} width="720" height="405" fetchpriority="high" />
+              <img src={image} srcset={imgSrcset(image)} sizes="(min-width: 768px) 720px, 100vw" alt={imageAlt || title} width="720" height="405" fetchpriority="high" />
             </div>
           )}
 

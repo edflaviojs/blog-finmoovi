@@ -6,6 +6,7 @@ import PostGrid from '@components/posts/PostGrid.astro';
 import { config } from '../../../site.config';
 import Sidebar from '@components/sidebar/Sidebar.astro';
 import { getCollection } from 'astro:content';
+import { imgSrcset } from '@/utils/responsive-image';
 
 // Strictly filter by locale ES only
 const allPosts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'es');
@@ -170,7 +171,7 @@ const categoryLabels: Record<string, string> = {
           <div class="hero-grid">
             <a href={heroContent.href} class="hero-main">
               <div class="hero-main-image">
-                {heroContent.image && <img src={heroContent.image} alt={heroContent.title} loading="eager" width="800" height="450" fetchpriority="high" />}
+                {heroContent.image && <img src={heroContent.image} srcset={imgSrcset(heroContent.image)} sizes="(min-width: 1024px) 800px, 100vw" alt={heroContent.title} loading="eager" width="800" height="450" fetchpriority="high" />}
                 <div class="hero-main-overlay"></div>
               </div>
               <div class="hero-main-content">
@@ -190,7 +191,7 @@ const categoryLabels: Record<string, string> = {
                 <a href={card.href} class="hero-secondary-card">
                   <div class="hero-secondary-image">
                     {card.image ? (
-                      <img src={card.image} alt={card.title} loading="lazy" width="400" height="225" />
+                      <img src={card.image} srcset={imgSrcset(card.image)} sizes="90px" alt={card.title} loading="lazy" width="400" height="225" />
                     ) : (
                       <div class={`hero-secondary-placeholder hero-placeholder-${card.type}`}></div>
                     )}

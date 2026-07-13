@@ -1,4 +1,6 @@
 ---
+import { imgSrcset } from '@/utils/responsive-image';
+
 interface Props {
   title: string;
   description: string;
@@ -17,7 +19,7 @@ const { title, description, image, imageAlt, href, category, date, readingTime }
   <a href={href} class="post-card-link" aria-label={`Ler: ${title}`}>
     {image && (
       <div class="post-card-image">
-        <img src={image} alt={imageAlt || title} loading="lazy" width="400" height="225" />
+        <img src={image} srcset={imgSrcset(image)} sizes="(min-width: 640px) 400px, 100vw" alt={imageAlt || title} loading="lazy" width="400" height="225" />
       </div>
     )}
 
