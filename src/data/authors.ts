@@ -54,7 +54,9 @@ export const authors: Record<string, Author> = {
       en: '/en/author/ed-flavio',
       es: '/es/autor/ed-flavio',
     },
-    sameAs: [], // adicionar LinkedIn/YouTube quando disponível (também alimenta o Person schema)
+    sameAs: [
+      'https://www.linkedin.com/in/edflaviojs/',
+    ], // adicionar YouTube/X quando disponível (também alimenta o Person schema)
   },
 };
 
