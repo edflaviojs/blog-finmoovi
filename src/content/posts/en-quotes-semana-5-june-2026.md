@@ -48,7 +48,7 @@ Além disso, é importante ter um acompanhamento constante dos seus investimento
 
 ## O que Esperar para a Próxima Semana
 
-Para a próxima semana, é importante manter um olho nas notícias econômicas, especialmente as relacionadas à taxa Selic e às taxas de câmbio. Além disso, é fundamental continuar diversificando seus investimentos e acompanhando seus investimentos de perto.
+Para a próxima semana, é importante manter um olho nas notícias econômicas, especialmente as relacionadas à taxa [Selic](/en/posts/en-quotes-week-4-may-2026) e às taxas de câmbio. Além disso, é fundamental continuar diversificando seus investimentos e acompanhando seus investimentos de perto.
 
 Lembre-se de que o mercado financeiro é volátil e pode mudar rapidamente. Portanto, é importante estar preparado e ter um plano de investimento bem definido.
 

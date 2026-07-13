@@ -26,10 +26,10 @@ CDB is a type of fixed-income [investment](/en/posts/en-montando-carteira-divers
 Treasury [Selic](/en/posts/en-quotes-semana-1-july-2026), on the other hand, is a fixed-income investment issued by the National Treasury, with a guarantee from the Brazilian government. It is indexed to the [Selic](/en/posts/en-quotes-semana-1-june-2026) rate, which is the basic interest rate of the [economy](/en/posts/en-30-day-rule-for-purchases) defined by the Central Bank of Brazil. This means that the [yield](/en/glossario/en-yield) of Treasury [Selic](/en/posts/en-quotes-semana-2-july-2026) follows the variations of the [Selic](/en/posts/en-quotes-semana-3-june-2026) rate.
 
 ## Yields and Simulations
-To better understand the yields, let's consider some examples. Suppose you have R$1,000 to invest and are deciding between a pre-fixed CDB with 10% per year and a Treasury [Selic](/en/posts/en-quotes-semana-4-june-2026) with the current Selic rate (suppose 6% per year).
+To better understand the yields, let's consider some examples. Suppose you have R$1,000 to invest and are deciding between a pre-fixed CDB with 10% per year and a Treasury [Selic](/en/posts/en-quotes-semana-4-june-2026) with the current [Selic](/en/posts/en-quotes-semana-5-june-2026) rate (suppose 6% per year).
 
 - **CDB:** With the pre-fixed CDB at 10% per year, after 1 year, you would have approximately R$1,100 (R$1,000 in capital + R$100 in interest).
-- **Treasury Selic:** With Treasury Selic at 6% per year, after 1 year, you would have approximately R$1,060 (R$1,000 in capital + R$60 in interest).
+- **Treasury [Selic](/en/posts/en-quotes-week-4-may-2026):** With Treasury Selic at 6% per year, after 1 year, you would have approximately R$1,060 (R$1,000 in capital + R$60 in interest).
 
 ![Rendimentos e Simulações](/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026-2.webp)
 

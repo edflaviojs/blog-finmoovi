@@ -24,7 +24,7 @@ Without a [budget](/en/posts/en-reduce-fixed-expenses), your [money](/en/posts/e
 
 A good [budget](/en/posts/en-metodo-50-30-20-para-orcamento) helps you:
 - Know exactly where your [money](/en/posts/en-financial-planning-for-couples) goes
-- Identify unnecessary expenses
+- Identify unnecessary [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 - Set and achieve financial goals
 - Reduce financial stress
 

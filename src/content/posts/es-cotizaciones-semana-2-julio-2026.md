@@ -18,7 +18,7 @@ seo:
 
 ## Resumo da semana (6 a 13 de julho de 2026)
 
-A semana foi agitada nos mercados de câmbio e, como sempre, a taxa Selic continua mexendo com a gente que tem dinheiro investido. Vamos ao que interessa: como o dólar e o euro se comportaram, o que a Selic fez do nosso bolso e, claro, um conselho prático para quem quer proteger a carteira. Ah, e já adiantando: o app [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) facilita acompanhar tudo isso em tempo real, sem precisar ficar pulando de site em site.
+A semana foi agitada nos mercados de câmbio e, como sempre, a taxa [Selic](/es/glossario/es-selic) continua mexendo com a gente que tem dinheiro investido. Vamos ao que interessa: como o dólar e o euro se comportaram, o que a Selic fez do nosso bolso e, claro, um conselho prático para quem quer proteger a carteira. Ah, e já adiantando: o app [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) facilita acompanhar tudo isso em tempo real, sem precisar ficar pulando de site em site.
 
 ### 1. Dólar e euro: tendência da semana
 
@@ -35,7 +35,7 @@ Se você tem dívidas ou compras programadas em dólares ou euros (viagem, impor
 
 A taxa Selic ficou em **13,75 % ao ano**, como já estava prevista nas últimas reuniões do Copom. Essa taxa alta tem dois efeitos claros:
 
-1. **[Renda fixa](/es/glossario/es-renda-fixa) mais atrativa** – Títulos do [Tesouro Direto](/es/glossario/es-tesouro-direto) e CDBs que pagam próximo da Selic continuam entregando bons rendimentos. Se você ainda não tem uma parte da carteira nesses papéis, vale a pena considerar, especialmente porque o risco de crédito é baixo.
+1. **[Renda fixa](/es/glossario/es-renda-fixa) mais atrativa** – Títulos do [Tesouro Direto](/es/glossario/es-tesouro-direto) e CDBs que pagam próximo da Selic continuam entregando bons rendimentos. Se você ainda não tem uma parte da carteira nesses papéis, vale a pena considerar, especialmente porque o risco de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) é baixo.
 
 2. **Custo de oportunidade para [ações](/es/glossario/es-acoes)** – Quanto maior a Selic, mais caro fica o dinheiro emprestado. Isso costuma deixar o mercado de ações mais “cauteloso”, já que empresas sentem o peso dos juros nos seus custos de capital. Na prática, as ações de setores mais sensíveis a crédito (como construção e varejo) tiveram desempenho mais fraco nesta semana.
 
@@ -57,5 +57,5 @@ A taxa Selic ficou em **13,75 % ao ano**, como já estava prevista nas última
 
 
 ---
-**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado).**
+**¿Listo para seguir tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado).**
 

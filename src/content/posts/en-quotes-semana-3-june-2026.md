@@ -44,5 +44,5 @@ Em resumo, a semana que passou foi marcada por estabilidade no câmbio e uma tax
 
 
 ---
-**Ready to track your [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)? [Try [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
+**Ready to track your [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)? [Try [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) for free](https://[finmoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
 

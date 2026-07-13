@@ -48,7 +48,7 @@ Para los inversores individuales, es crucial diversificar su cartera de inversio
 
 En la próxima semana, los inversores deben estar atentos a las noticias económicas tanto nacionales como internacionales, que pueden influir en las tasas de cambio y las decisiones de inversión. La evolución de la inflación, el desempleo y las políticas fiscales serán temas clave a seguir. Además, es importante mantenerse informado sobre las tendencias globales y cómo pueden afectar la [economía](/es/posts/es-ahorrando-en-la-cuenta-de-energia) brasileña y, por ende, las inversiones.
 
-En resumen, la semana del 15 al 22 de junio de 2026 ha sido de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de cambio y decisiones clave por parte del Banco Central. Los inversores individuales deben estar preparados para ajustar sus estrategias de inversión según sea necesario, considerando la diversificación de sus carteras y el uso de herramientas como FinMoovi para seguir y gestionar sus inversiones de manera eficiente.
+En resumen, la semana del 15 al 22 de junio de 2026 ha sido de gran importancia para el [mercado financiero](/es/posts/es-cotizaciones-semana-5-junio-2026) brasileño, con movimientos significativos en las tasas de cambio y decisiones clave por parte del Banco Central. Los inversores individuales deben estar preparados para ajustar sus estrategias de inversión según sea necesario, considerando la diversificación de sus carteras y el uso de herramientas como [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) para seguir y gestionar sus inversiones de manera eficiente.
 
 
 ---

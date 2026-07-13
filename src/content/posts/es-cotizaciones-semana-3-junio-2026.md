@@ -30,7 +30,7 @@ La semana comenzó con el [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026
 
 ## La Selic y su Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ha sido un tema de gran interés en las últimas semanas. El Banco Central decidió mantener la tasa en su nivel actual, lo que ha tenido un impacto directo en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). La decisión de no alterar la tasa Selic puede influir en la rentabilidad de las inversiones a corto plazo, como los títulos públicos y los depósitos a plazo fijo. Es importante que los inversores consideren estas decisiones al momento de diversificar su cartera.
+La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ha sido un tema de gran interés en las últimas semanas. El Banco Central decidió mantener la tasa en su nivel actual, lo que ha tenido un impacto directo en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). La decisión de no alterar la tasa Selic puede influir en la rentabilidad de las [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) a corto plazo, como los títulos públicos y los depósitos a plazo fijo. Es importante que los inversores consideren estas decisiones al momento de diversificar su cartera.
 
 ![La Selic y su Impacto en las Inversiones](/images/posts/es-cotizaciones-semana-3-junio-2026-inline-3.webp)
 
@@ -42,7 +42,7 @@ Para los inversores individuales, es crucial mantener una visión a largo plazo 
 
 ## Qué Esperar para la Próxima Semana
 
-En la próxima semana, los inversores deben estar atentos a las decisiones económicas clave que puedan influir en el [valor](/es/glossario/es-valor) del [dólar](/es/posts/es-cotizaciones-semana-4-junio-2026) y el euro frente al real. La política monetaria, las noticias económicas globales y las expectativas de crecimiento en Brasil serán factores importantes a considerar. Además, es fundamental mantenerse informado sobre las tendencias del mercado y ajustar las estrategias de inversión según sea necesario.
+En la próxima semana, los inversores deben estar atentos a las decisiones económicas clave que puedan influir en el [valor](/es/glossario/es-valor) del [dólar](/es/posts/es-cotizaciones-semana-4-junio-2026) y el euro frente al real. La política monetaria, las noticias económicas globales y las expectativas de crecimiento en Brasil serán factores importantes a considerar. Además, es fundamental mantenerse informado sobre las tendencias del mercado y ajustar las estrategias de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) según sea necesario.
 
 En resumen, la semana del 8 al 15 de junio de 2026 ha sido de movimientos significativos en el [mercado financiero](/es/posts/es-cotizaciones-semana-5-junio-2026) brasileño. Los inversores deben estar preparados para adaptarse a los cambios y considerar herramientas como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) para gestionar sus inversiones de manera efectiva. Con una visión clara y una estrategia bien planificada, es posible navegar con éxito por los desafíos y oportunidades del mercado financiero.
 

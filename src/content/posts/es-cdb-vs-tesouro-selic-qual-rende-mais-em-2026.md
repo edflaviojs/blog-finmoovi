@@ -29,7 +29,7 @@ El Tesouro [Selic](/es/glossario/es-selic), por otro lado, es una inversión de 
 Para entender mejor los rendimientos, vamos a considerar algunos ejemplos. Supongamos que usted tiene R$1.000 para invertir y está decidiendo entre un CDB pré-fijado con 10% al año y un Tesouro [Selic](/es/posts/es-cotizaciones-semana-3-junio-2026) con la tasa [Selic](/es/posts/es-cotizaciones-semana-4-junio-2026) actual (supongamos 6% al año).
 
 - **CDB:** Con el CDB pré-fijado a 10% al año, después de 1 año, usted tendría aproximadamente R$1.100 (R$1.000 de capital + R$100 de intereses).
-- **Tesouro Selic:** Con el Tesouro Selic a 6% al año, después de 1 año, usted tendría aproximadamente R$1.060 (R$1.000 de capital + R$60 de intereses).
+- **Tesouro [Selic](/es/posts/es-cotizaciones-semana-4-mayo-2026):** Con el Tesouro [Selic](/es/posts/es-cotizaciones-semana-5-junio-2026) a 6% al año, después de 1 año, usted tendría aproximadamente R$1.060 (R$1.000 de capital + R$60 de intereses).
 
 ![Rendimientos y Simulaciones](/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026-2.webp)
 
