@@ -18,7 +18,7 @@ seo:
 
 ## Resumo Semanal do [Mercado Financeiro](/posts/cotacoes-semana-5-junho-2026) Brasileiro: 15/06/2026 a 22/06/2026
 
-Nesta semana, o [mercado financeiro](/posts/cotacoes-semana-1-julho-2026) brasileiro apresentou movimentos interessantes, especialmente em relação às taxas de [câmbio](/glossario/cambio) e às decisões do Banco Central. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/glossario/selic)-qual-e-melhor-para-voce).
+Nesta semana, o [mercado financeiro](/posts/cotacoes-semana-1-julho-2026) brasileiro apresentou movimentos interessantes, especialmente em relação às taxas de [câmbio](/glossario/cambio) e às decisões do Banco Central. Vamos mergulhar nos principais acontecimentos e entender como eles podem afetar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro: 15/06/2026 a 22/06/2026](/images/posts/cotacoes-semana-4-junho-2026-inline-1.webp)
 
@@ -28,9 +28,9 @@ Nesta semana, o [mercado financeiro](/posts/cotacoes-semana-1-julho-2026) brasil
 
 A taxa de câmbio entre o real brasileiro e as principais moedas estrangeiras foi um dos pontos de destaque da semana. O [dólar](/posts/cotacoes-semana-3-junho-2026) americano fechou a semana em R$ 5,16, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou R$ 5,91, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes, especialmente para aqueles que investem em ativos em moedas estrangeiras ou planejam viagens internacionais.
 
-## Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce)
+## Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator chave para os investidores. Embora não tenha havido alterações significativas na taxa durante a semana, a expectativa é de que o Banco Central continue a monitorar a [inflação](/glossario/inflacao) e ajuste as taxas de juros conforme necessário. Isso pode afetar diretamente os rendimentos de [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) como CDBs, [LCI e LCA](/glossario/lci-e-lca), tornando essencial para os investidores pessoa física estar atentos às mudanças nas taxas de juros e ajustar suas estratégias de [investimento](/posts/montando-carteira-diversificada-com-r-500) de acordo.
+A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator chave para os investidores. Embora não tenha havido alterações significativas na taxa durante a semana, a expectativa é de que o Banco Central continue a monitorar a [inflação](/glossario/inflacao) e ajuste as taxas de juros conforme necessário. Isso pode afetar diretamente os rendimentos de [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) como CDBs, [LCI e LCA](/glossario/lci-e-lca), tornando essencial para os investidores pessoa física estar atentos às mudanças nas taxas de juros e ajustar suas estratégias de [investimento](/posts/montando-carteira-diversificada-com-r-500) de acordo.
 
 ![Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-4-junho-2026-inline-3.webp)
 
@@ -42,11 +42,11 @@ Uma dica valiosa para os investidores é diversificar seus [investimentos](/post
 
 ## O que Esperar para a Próxima Semana
 
-Para a próxima semana, é importante manter o foco nas decisões do Banco Central, especialmente em relação à Selic, e nos movimentos das taxas de câmbio. Além disso, os investidores devem estar atentos às notícias econômicas globais, que podem influenciar o mercado financeiro brasileiro. Com o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)), você pode ficar por dentro das últimas tendências e ajustar sua estratégia de [investimento](/posts/tesouro-direto-para-iniciantes) de acordo com as mudanças no mercado.
+Para a próxima semana, é importante manter o foco nas decisões do Banco Central, especialmente em relação à Selic, e nos movimentos das taxas de câmbio. Além disso, os investidores devem estar atentos às notícias econômicas globais, que podem influenciar o mercado financeiro brasileiro. Com o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos), você pode ficar por dentro das últimas tendências e ajustar sua estratégia de [investimento](/posts/tesouro-direto-para-iniciantes) de acordo com as mudanças no mercado.
 
 Em resumo, a semana foi marcada por estabilidade no [dólar](/posts/cotacoes-semana-4-maio-2026) e valorização do euro em relação ao real, enquanto a Selic continua a ser um fator importante para os investimentos. A [diversificação](/glossario/diversificacao) e o acompanhamento constante do mercado são chaves para o sucesso dos investidores pessoa física. Com as ferramentas certas, como o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas), é possível navegar pelo mercado financeiro com mais confiança e alcançar seus objetivos financeiros.
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)) de graça](https://[finmoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026).com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
+**Pronto para acompanhar seus investimentos? [Experimente o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/cashback-inteligente).**
 

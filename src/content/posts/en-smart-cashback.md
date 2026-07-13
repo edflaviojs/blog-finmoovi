@@ -30,18 +30,18 @@ To maximize your cashback, it's crucial to understand how it works and how you c
 
 
 ## Avoiding traps
-Although cashback can be a great way to save [money](/en/posts/30-day-rule-for-purchases), it's essential to be aware of the traps. For example, some cashback programs may have high fees or interest rates, so it's crucial to read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is not a substitute for responsible [financial management](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su). It's crucial to have a [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) and prioritize your [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) before making purchases. You can learn more about responsible [financial management](/en/posts/montando-carteira-diversificada-com-r-500) on the [Banco Central do Brasil](https://www.bcb.gov.br) website.
+Although cashback can be a great way to save [money](/en/posts/en-30-day-rule-for-purchases), it's essential to be aware of the traps. For example, some cashback programs may have high fees or interest rates, so it's crucial to read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is not a substitute for responsible [financial management](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su). It's crucial to have a [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) and prioritize your [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) before making purchases. You can learn more about responsible [financial management](/en/posts/en-montando-carteira-diversificada-com-r-500) on the [Banco Central do Brasil](https://www.bcb.gov.br) website.
 
 ![Maximizando o seu cashback](/images/posts/cashback-inteligente-3.webp)
 
 
 
 ## Start today
-Now that you know how to use cashback intelligently, it's time to start [saving](/en/posts/criar-reserva-de-emergencia) [money](/en/posts/avoid-impulse-purchases). Remember to choose a cashback program that suits your needs and read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is only part of responsible [financial management](/en/posts/orcamento-com-salario-minimo-dicas-praticas). You can learn more about responsible [financial management](/en/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) on the [Investopedia](https://www.investopedia.com) website.
+Now that you know how to use cashback intelligently, it's time to start saving [money](/en/posts/en-avoid-impulse-purchases). Remember to choose a cashback program that suits your needs and read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is only part of responsible [financial management](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas). You can learn more about responsible [financial management](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) on the [Investopedia](https://www.investopedia.com) website.
 
 ![Evitando armadilhas](/images/posts/cashback-inteligente-4.webp)
 
 
 
 ---
-**Want to put this into practice? [Test [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) and visual reports.**

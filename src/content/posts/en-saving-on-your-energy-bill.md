@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Reducing Energy Consumption
-To start [saving](/en/posts/criar-reserva-de-emergencia) on your energy bill, it's essential to understand that small changes in your daily routine can make a big difference. Imagine you spend around R$ 150 per month on electricity. With a few simple changes, you can reduce this amount to R$ 100, saving R$ 50 per month. This may seem like a small amount, but over a year, you'd be saving R$ 600.
+To start saving on your energy bill, it's essential to understand that small changes in your daily routine can make a big difference. Imagine you spend around R$ 150 per month on electricity. With a few simple changes, you can reduce this amount to R$ 100, saving R$ 50 per month. This may seem like a small amount, but over a year, you'd be saving R$ 600.
 
 One of the main causes of excessive energy spending is the unnecessary use of electronic devices. Often, we leave the TV, computer, or refrigerator on even when we're not using them. This not only increases your energy bill but also reduces the lifespan of your appliances. **Practical tip:** Turn off all electronic devices when not in use, including phone and laptop chargers, as they continue to consume energy even when the device is fully charged.
 
@@ -31,9 +31,9 @@ For example, if you're paying R$ 200 per month for energy and can reduce that to
 
 
 ## Behavioral Changes
-Daily behavioral changes can also make a big difference in energy [savings](/en/posts/financial-education-for-children). Simple things, like lowering the thermostat in winter or raising it in summer, can help reduce energy consumption. Additionally, using natural light during the day and turning off lights when not in use are habits that can be adopted to save energy.
+Daily behavioral changes can also make a big difference in energy [savings](/en/posts/en-financial-education-for-children). Simple things, like lowering the thermostat in winter or raising it in summer, can help reduce energy consumption. Additionally, using natural light during the day and turning off lights when not in use are habits that can be adopted to save energy.
 
-## [Planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas) and Monitoring
+## [Planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) and Monitoring
 To really understand where you can save energy, it's essential to monitor your energy consumption. Check your energy bill regularly and identify the periods when consumption is higher. This can help identify usage patterns that can be adjusted. Consider investing in an energy meter that can provide detailed information about energy consumption in your home.
 
 ## Additional Tips
@@ -47,11 +47,11 @@ To really understand where you can save energy, it's essential to monitor your e
 
 
 ## Start Today
-Don't wait any longer to start saving on your energy bill. With small changes in your daily routine and investing in efficient appliances, you can make a big difference in your monthly [budget](/en/posts/50-30-20-rule-complete-guide). Remember, every real saved is a step towards financial security and peace of mind.
+Don't wait any longer to start saving on your energy bill. With small changes in your daily routine and investing in efficient appliances, you can make a big difference in your monthly budget. Remember, every real saved is a step towards financial security and peace of mind.
 
 ![Comece hoje](/images/posts/economize-na-conta-de-energia-5.svg)
 
 
 
 ---
-**Want to put this into practice? [Test [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) and visual reports.**

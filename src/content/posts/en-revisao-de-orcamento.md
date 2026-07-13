@@ -19,46 +19,46 @@ translate: true
 ---
 
 ## Introduction
-We've reached the middle of the year, and it's time to stop and reflect on how our finances are doing. It's common to start the year with clear objectives and goals, but along the way, we can stray from the path. Reviewing your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) now is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals.
+We've reached the middle of the year, and it's time to stop and reflect on how our finances are doing. It's common to start the year with clear objectives and goals, but along the way, we can stray from the path. Reviewing your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) now is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals.
 
-## Why Review Your [Budget](/en/posts/50-30-20-rule-complete-guide)?
-Reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/metodo-50-30-20-para-salario-brasileiro)) is important because things change over time. Your salary may have increased, your [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) may have changed, or you may have acquired new financial responsibilities. Additionally, [inflation](/en/glossario/en-inflacao) may have affected the value of your [money](/en/posts/30-day-rule-for-purchases), making it necessary to adjust your spending and [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/glossario/en-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-4-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-4-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026))-qual-e-melhor-para-voce).
+## Why Review Your Budget?
+Reviewing your [budget](/en/posts/en-how-to-create-personal-budget) is important because things change over time. Your salary may have increased, your [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) may have changed, or you may have acquired new financial responsibilities. Additionally, [inflation](/en/glossario/en-inflacao) may have affected the value of your [money](/en/posts/en-30-day-rule-for-purchases), making it necessary to adjust your spending and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 
-For example, imagine you earn R$ 5,000 per month and spend R$ 2,000 on rent, R$ 1,000 on food, and R$ 500 on transportation. This leaves R$ 1,500 for other expenses and [investments](/en/posts/cdb-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce). However, if inflation has increased by 10% over the past 6 months, the value of your [money](/en/posts/avoid-impulse-purchases) has decreased. You'll need to adjust your spending and [investments](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) to maintain the same standard of living.
+For example, imagine you earn R$ 5,000 per month and spend R$ 2,000 on rent, R$ 1,000 on food, and R$ 500 on transportation. This leaves R$ 1,500 for other expenses and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). However, if inflation has increased by 10% over the past 6 months, the value of your [money](/en/posts/en-avoid-impulse-purchases) has decreased. You'll need to adjust your spending and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) to maintain the same standard of living.
 
-![Why review your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/orcamento-com-salario-minimo-dicas-praticas))?](/images/posts/revisao-de-orcamento-2.svg)
+![Why review your [budget](/en/posts/en-how-to-create-personal-budget)?](/images/posts/revisao-de-orcamento-2.svg)
 
 
 
-## How to Review Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances))
-Reviewing your [budget](/en/posts/how-to-create-personal-[budget](/en/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)) is a simple process, but it requires attention and honesty. Here are some steps to follow:
+## How to Review Your [Budget](/en/posts/en-how-to-create-personal-budget)
+Reviewing your [budget](/en/posts/en-how-to-create-personal-budget) is a simple process, but it requires attention and honesty. Here are some steps to follow:
 
 ### 1. Check Your Expenses
-Start by checking your expenses over the past 6 months. This includes all expenses, from utility bills to supermarket purchases. You can use an app like [FinMoovi](/en/posts/5-alternativas-ao-[mobills](/en/posts/migrando-da-planilha-para-um-app-financeiro)-em-2026) to help track your expenses and identify areas where you can cut back.
+Start by checking your expenses over the past 6 months. This includes all expenses, from utility bills to supermarket purchases. You can use an app like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) to help track your expenses and identify areas where you can cut back.
 
 ![How to review your budget](/images/posts/revisao-de-orcamento-3.webp)
 
 
 
 ### 2. Adjust Your Expenses
-After checking your expenses, adjust them according to your needs and goals. If you notice you're spending too much in one area, such as restaurants, try to reduce those expenses and reallocate the [money](/en/posts/creating-an-emergency-fund) to other areas, such as [savings](/en/posts/financial-education-for-children) or [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
+After checking your expenses, adjust them according to your needs and goals. If you notice you're spending too much in one area, such as restaurants, try to reduce those expenses and reallocate the [money](/en/posts/en-creating-an-emergency-fund) to other areas, such as [savings](/en/posts/en-financial-education-for-children) or [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ### 3. Check Your Income
-Check your income over the past 6 months and adjust it according to your needs and goals. If you've received a salary increase, for example, you may want to increase your savings or [investments](/en/posts/cdb-vs-tesouro-selic-qual-e-melhor-para-voce).
+Check your income over the past 6 months and adjust it according to your needs and goals. If you've received a salary increase, for example, you may want to increase your savings or [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 
 ### 4. Adjust Your Investments
-If you have investments, such as [stocks](/en/glossario/en-acoes) or [investment](/en/posts/montando-carteira-diversificada-com-r-500) funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.
+If you have investments, such as [stocks](/en/glossario/en-acoes) or [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.
 
-## Tips to Keep Your [Budget](/en/posts/how-to-create-personal-[budget](/en/posts/controle-gastos-cartao-credito)) in Order
-Here are some tips to keep your [budget](/en/posts/how-to-create-personal-budget) in order:
+## Tips to Keep Your [Budget](/en/posts/en-how-to-create-personal-budget) in Order
+Here are some tips to keep your [budget](/en/posts/en-how-to-create-personal-budget) in order:
 *   Prioritize your needs over your desires
 *   Create an [emergency fund](/en/glossario/en-reserva-de-emergencia) to cover unexpected expenses
 *   Invest in your [financial education](/en/glossario/en-educacao-financeira) to make informed decisions
-*   Use a [financial management](/en/posts/5-alternativas-ao-mobills-em-2026) app to help track your expenses and investments
+*   Use a [financial management](/en/posts/en-5-alternativas-ao-mobills-em-2026) app to help track your expenses and investments
 
 ![Tips to keep your budget in order](/images/posts/revisao-de-orcamento-4.webp)
 
 
 
 ## Conclusion
-Reviewing your budget mid-year is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals. Remember to check your expenses, adjust your spending and investments, and keep your budget in order. With a little discipline and planning, you can achieve your financial goals and live a more secure and prosperous life. For more information on [financial planning](/en/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), visit the [Banco Central do Brasil](https://www.bcb.gov.br) website.
+Reviewing your budget mid-year is a great opportunity to adjust your finances and ensure you're on the right track to achieving your goals. Remember to check your expenses, adjust your spending and investments, and keep your budget in order. With a little discipline and planning, you can achieve your financial goals and live a more secure and prosperous life. For more information on [financial planning](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias), visit the [Banco Central do Brasil](https://www.bcb.gov.br) website.

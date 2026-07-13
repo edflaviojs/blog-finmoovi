@@ -21,9 +21,9 @@ translate: true
 ## Planeando el Día de los Enamorados con Responsabilidad
 El Día de los Enamorados es una fecha especial para celebrar el amor y la unión con aquellos que amamos. No obstante, no es necesario comprometer nuestras finanzas para hacer de este día un momento inolvidable. Con un poco de creatividad y planeamiento, es posible tener un Día de los Enamorados económico y al mismo tiempo significativo.
 
-Para empezar, es importante definir un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal) para las celebraciones. Considerando que el salario medio en Brasil varía de R$ 2.500 a R$ 4.000, es razonable reservar entre 5% a 10% de este [valor](/es/glossario/es-valor) para el Día de los Enamorados. Esto significa que, dependiendo de tu salario, podrías tener un [presupuesto](/es/posts/reducir-[gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro)-fijos-mensuales) de R$ 125 a R$ 400.
+Para empezar, es importante definir un [presupuesto](/es/posts/es-como-crear-presupuesto-personal) para las celebraciones. Considerando que el salario medio en Brasil varía de R$ 2.500 a R$ 4.000, es razonable reservar entre 5% a 10% de este [valor](/es/glossario/es-valor) para el Día de los Enamorados. Esto significa que, dependiendo de tu salario, podrías tener un [presupuesto](/es/posts/es-reducir-gastos-fijos-mensuales) de R$ 125 a R$ 400.
 
-## [Consejos](/es/posts/7-errores-financieros-principiante) para un Regalo Económico
+## [Consejos](/es/posts/es-7-errores-financieros-principiante) para un Regalo Económico
 Un regalo no necesita ser caro para ser significativo. Aquí están algunas sugerencias para encontrar el regalo perfecto sin romper el banco:
 - Haz algo con tus propias manos: Un regalo hecho con cariño y dedicación puede ser mucho más especial que algo comprado en una tienda.
 - Opta por experiencias: En lugar de regalar objetos, considera dar experiencias, como entradas para un show, una cena en un restaurante o una clase de cocina juntos.
@@ -34,8 +34,8 @@ Un regalo no necesita ser caro para ser significativo. Aquí están algunas suge
 - **Cena en Casa**: Cocina el plato favorito de tu pareja en casa. Compra los ingredientes necesarios y decora la mesa para crear una atmósfera romántica. Costo: R$ 50 a R$ 100.
 - **Paseo al Aire Libre**: Planea un paseo en un parque o en la playa. Lleva un picnic y disfruta de la naturaleza juntos. Costo: R$ 20 a R$ 50.
 
-## Administrando las Finanzas con el [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
-Para ayudar a administrar tus finanzas y mantenerse dentro del [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal), la aplicación [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) puede ser una herramienta útil. Con ella, puedes seguir tus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), definir metas financieras y recibir alertas para no superar el límite establecido.
+## Administrando las Finanzas con el [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas)
+Para ayudar a administrar tus finanzas y mantenerse dentro del [presupuesto](/es/posts/es-como-crear-presupuesto-personal), la aplicación [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) puede ser una herramienta útil. Con ella, puedes seguir tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), definir metas financieras y recibir alertas para no superar el límite establecido.
 
 ## Celebrando con Creatividad
 La creatividad es la clave para un Día de los Enamorados económico y memorable. Aquí están algunas ideas para celebrar con estilo sin gastar mucho:
@@ -48,4 +48,4 @@ La creatividad es la clave para un Día de los Enamorados económico y memorable
 
 
 ## 
-El Día de los Enamorados no necesita ser una carga financiera. Con un poco de creatividad y planeamiento, es posible celebrar el amor de manera económica y significativa. Recuerda que lo más importante es el tiempo que pasas con tu pareja, no el precio del regalo. Por lo tanto, no tengas miedo de ser creativo y encontrar maneras de celebrar que sean personales y económicas. Con el apoyo de herramientas como el [FinMoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos) para administrar tus finanzas, puedes centrarte en lo que realmente importa: el amor y la conexión con tu pareja. Celebra el Día de los Enamorados de manera responsable y inolvidable!
+El Día de los Enamorados no necesita ser una carga financiera. Con un poco de creatividad y planeamiento, es posible celebrar el amor de manera económica y significativa. Recuerda que lo más importante es el tiempo que pasas con tu pareja, no el precio del regalo. Por lo tanto, no tengas miedo de ser creativo y encontrar maneras de celebrar que sean personales y económicas. Con el apoyo de herramientas como el [FinMoovi](/es/posts/es-voce-tambem-esquece-de-anotar-seus-gastos) para administrar tus finanzas, puedes centrarte en lo que realmente importa: el amor y la conexión con tu pareja. Celebra el Día de los Enamorados de manera responsable y inolvidable!

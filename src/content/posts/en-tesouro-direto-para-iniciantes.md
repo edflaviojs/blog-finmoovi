@@ -24,7 +24,7 @@ For example, if you invest R$1,000 in an LTN title with a 1-year term and 5% ann
 ## Advantages of Tesouro Direto
 One of the main advantages of Tesouro Direto is security. Since the securities are issued by the government, the risk of default is very low. Additionally, the interest rates are predefined, which means you know exactly how much you'll receive at the end of the term.
 
-Another advantage is [liquidity](/en/glossario/en-liquidez). You can redeem your securities before maturity, although you may lose interest. This is useful if you need the [money](/en/posts/30-day-rule-for-purchases) before the term.
+Another advantage is [liquidity](/en/glossario/en-liquidez). You can redeem your securities before maturity, although you may lose interest. This is useful if you need the [money](/en/posts/en-30-day-rule-for-purchases) before the term.
 
 ![Vantagens do Tesouro Direto](/images/posts/tesouro-direto-para-iniciantes-2.webp)
 
@@ -37,20 +37,20 @@ There are several types of securities available in Tesouro Direto, each with its
 * NTN (Notas do Tesouro Nacional): securities with terms of 1 to 30 years and fixed or variable interest rates.
 * LCI (Letras do Tesouro Nacional com índice de inflação): securities with terms of 1 to 5 years and fixed interest rates plus an [inflation](/en/glossario/en-inflacao) adjustment.
 
-For example, if you invest R$5,000 in an LTN title with a 5-year term and 6% annual interest, you'll receive R$5,638.49 after maturity, considering annual [compound interest](/en/glossario/en-[juros](/en/glossario/en-juros)-compostos).
+For example, if you invest R$5,000 in an LTN title with a 5-year term and 6% annual interest, you'll receive R$5,638.49 after maturity, considering annual [compound interest](/en/glossario/en-juros-compostos).
 
-## [Risks](/en/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-Although Tesouro Direto is considered a low-risk [investment](/en/posts/montando-carteira-diversificada-com-r-500), there are some risks to consider:
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+Although Tesouro Direto is considered a low-risk [investment](/en/posts/en-montando-carteira-diversificada-com-r-500), there are some risks to consider:
 
 * Inflation risk: if inflation increases, the real value of your investment may decrease.
 * Liquidity risk: if you need to redeem your securities before maturity, you may lose interest.
-* [Credit](/en/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) risk: although the government is considered a low-risk borrower, there is still a risk of default.
+* [Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) risk: although the government is considered a low-risk borrower, there is still a risk of default.
 
 ![Riscos](/images/posts/tesouro-direto-para-iniciantes-4.webp)
 
 
 
-To mitigate these risks, it's essential to diversify your [investments](/en/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) and assess your risk profile before investing.
+To mitigate these risks, it's essential to diversify your [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) and assess your risk profile before investing.
 
 ## Return Simulation
 Let's consider an example of a return simulation. If you invest R$1,000 in an LTN title with a 2-year term and 5% annual interest, you'll receive R$1,102.50 after maturity, considering annual [compound interest](/en/glossario/en-juros-compostos).
@@ -65,10 +65,10 @@ Here's a table with the return simulation:
 ## Next Steps
 Now that you understand how Tesouro Direto works, it's time to evaluate if it makes sense for your investor profile. Consider your financial goals, investment term, and risk tolerance.
 
-If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-[selic](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-4-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-qual-e-melhor-para-voce) to minimize risks.
+If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) to minimize risks.
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 
 
 
-To track your [investments](/en/posts/cdb-vs-tesouro-[selic](/en/glossario/en-selic)-qual-e-melhor-para-voce) in one place, [try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-currency, intelligent reports, and 100% offline.
+To track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in one place, [try [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.

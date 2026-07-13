@@ -16,8 +16,8 @@ seo:
   keywords: ["presupuesto parejas","dividir gastos","finanzas personales","matrimonio","economía","dividir gastos parejas","finanzas para dos"]
 ---
 
-## Definiendo el [Presupuesto](/es/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-Para empezar, es importante entender que un [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/controle-gastos-cartao-credito)-personal) eficaz para parejas implica considerar las necesidades, deseos y objetivos financieros de ambos socios. Vamos considerar un ejemplo: João y Maria, una pareja con salarios de R$ 4.000 y R$ 3.500, respectivamente. Ellos necesitan decidir cómo dividir sus [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) de forma justa.
+## Definiendo el [Presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias)
+Para empezar, es importante entender que un [presupuesto](/es/posts/es-como-crear-presupuesto-personal) eficaz para parejas implica considerar las necesidades, deseos y objetivos financieros de ambos socios. Vamos considerar un ejemplo: João y Maria, una pareja con salarios de R$ 4.000 y R$ 3.500, respectivamente. Ellos necesitan decidir cómo dividir sus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) de forma justa.
 
 ### Ejemplo de Gastos
 Aquí está una tabla con los gastos mensuales de la pareja:
@@ -42,24 +42,24 @@ Una forma común de dividir los gastos es considerar la proporción de los salar
 
 Con base en esto, ellos pueden calcular la parte de cada uno en cada categoría de gasto.
 
-## Organizando el [Presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/metodo-50-30-20-para-salario-brasileiro)-personal)
-Aquí están los pasos para organizar el [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/organizar-finanzas-pareja)-personal):
+## Organizando el [Presupuesto](/es/posts/es-como-crear-presupuesto-personal)
+Aquí están los pasos para organizar el [presupuesto](/es/posts/es-como-crear-presupuesto-personal):
 1. **Lista todos los gastos**: Incluye todos los gastos fijos y variables.
 2. **Define la proporción**: Calcula la proporción de los salarios para dividir los gastos.
 3. **Asigna valores**: Asigna el valor correspondiente a cada gasto con base en la proporción definida.
-4. **Revisa y ajusta**: Revisa el [presupuesto](/es/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) regularmente y ajusta según sea necesario.
+4. **Revisa y ajusta**: Revisa el [presupuesto](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) regularmente y ajusta según sea necesario.
 
-**Consejo práctico:** Es importante tener una reserva para imprevistos. Una buena regla es reservar entre 10% a 20% del [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/reducir-gastos-fijos-mensuales)-personal) total para emergencias.
+**Consejo práctico:** Es importante tener una reserva para imprevistos. Una buena regla es reservar entre 10% a 20% del [presupuesto](/es/posts/es-como-crear-presupuesto-personal) total para emergencias.
 
 ![Organizando el Presupuesto](/images/posts/orcamento-para-casal-dividindo-despesas-3.webp)
 
 
 
 ## Gestionando las Finanzas
-Para mantener las finanzas en orden, es crucial tener un sistema de control. Esto puede incluir el uso de hojas de cálculo electrónicas o aplicaciones financieras. El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre [gestión financiera](/es/posts/montando-carteira-diversificada-com-r-500) y [planificación](/es/posts/orcamento-com-salario-minimo-dicas-praticas).
+Para mantener las finanzas en orden, es crucial tener un sistema de control. Esto puede incluir el uso de hojas de cálculo electrónicas o aplicaciones financieras. El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre [gestión financiera](/es/posts/es-montando-carteira-diversificada-com-r-500) y [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas).
 
 ## Comienza con 5 minutos por día
-Para mantener el [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regla-50-30-20-guia-completa)-personal) bajo control, dedica algunos minutos todos los días para revisar los gastos y actualizar el [presupuesto](/es/posts/como-crear-presupuesto-personal). Esto puede hacerse durante el desayuno o antes de dormir. Recuerda que la clave para el éxito es la consistencia y la comunicación entre los socios. Visita el sitio web de la [Receita Federal](https://www.gov.br/receitafederal) para obtener más información sobre [planificación financiera](/es/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas) y tributación.
+Para mantener el [presupuesto](/es/posts/es-como-crear-presupuesto-personal) bajo control, dedica algunos minutos todos los días para revisar los gastos y actualizar el [presupuesto](/es/posts/es-como-crear-presupuesto-personal). Esto puede hacerse durante el desayuno o antes de dormir. Recuerda que la clave para el éxito es la consistencia y la comunicación entre los socios. Visita el sitio web de la [Receita Federal](https://www.gov.br/receitafederal) para obtener más información sobre [planificación financiera](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) y tributación.
 
 ![Gestionando las Finanzas](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
 
@@ -67,4 +67,4 @@ Para mantener el [presupuesto](/es/posts/como-crear-[presupuesto](/es/posts/regl
 
 ---
 
-**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/5-[alternativas](/es/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/es/posts/5-alternativas-ao-mobills-em-2026)-em-2026) gratis por 7 días](https://[finmoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quieres automatizar este control? [Prueba [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

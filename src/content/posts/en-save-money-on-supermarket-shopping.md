@@ -16,10 +16,10 @@ seo:
   keywords: ["how to save money on supermarket shopping","personal finance","economy","money"]
 ---
 
-## [Planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas) is Key
+## [Planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) is Key
 When we go to the supermarket, it's common to buy more than we need, especially if we don't have a clear plan of what we want to buy. This can lead to excessive spending and food waste. To avoid this, it's essential to make a shopping list before going to the supermarket. For example, if you spend around $500 per week on supermarket shopping for a family of four, you can start reducing that amount by identifying the essential items and those that can be cut.
 
-A practical example is the case of a person who earns $5,000 per month and spends around $1,500 on dining out. If that person starts cooking at home and planning their shopping, they can easily reduce that amount to $1,000, [saving](/en/posts/criar-reserva-de-emergencia) $500 per month.
+A practical example is the case of a person who earns $5,000 per month and spends around $1,500 on dining out. If that person starts cooking at home and planning their shopping, they can easily reduce that amount to $1,000, saving $500 per month.
 
 ## Organize Your Shopping List
 A well-organized shopping list can help avoid impulse purchases and ensure that you only buy what you need. Here are some tips to organize your shopping list:
@@ -45,17 +45,17 @@ An example is the case of a person who spends $200 per week at a supermarket and
 
 
 
-## Track Your [Expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro)
-Tracking your [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) is crucial to understanding where your [money](/en/posts/30-day-rule-for-purchases) is going and how you can save. It's essential to record all your expenses, including supermarket shopping, and check if you're within your [budget](/en/posts/50-30-20-rule-complete-guide).
+## Track Your [Expenses](/en/posts/en-metodo-50-30-20-para-orcamento)
+Tracking your [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) is crucial to understanding where your [money](/en/posts/en-30-day-rule-for-purchases) is going and how you can save. It's essential to record all your expenses, including supermarket shopping, and check if you're within your budget.
 
-**Practical tip:** Use a expense tracking app to record your expenses and track your [budget](/en/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). This can help identify areas where you can cut back on spending and save.
+**Practical tip:** Use a expense tracking app to record your expenses and track your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). This can help identify areas where you can cut back on spending and save.
 
 ## Start Today
-You don't need to wait until next month to start saving on supermarket shopping. You can start today by making a shopping list and planning your meals for the week. Remember that small changes can lead to significant [savings](/en/posts/financial-education-for-children) over time.
+You don't need to wait until next month to start saving on supermarket shopping. You can start today by making a shopping list and planning your meals for the week. Remember that small changes can lead to significant [savings](/en/posts/en-financial-education-for-children) over time.
 
 ![Start today](/images/posts/economize-nas-compras-do-supermercado-6.webp)
 
 
 
 ---
-**Want to put theory into practice? [Download [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) and start tracking your expenses today. No [credit card](/en/posts/controle-gastos-cartao-credito), no commitment.**
+**Want to put theory into practice? [Download [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No credit card, no commitment.**

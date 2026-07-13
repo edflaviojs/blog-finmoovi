@@ -20,7 +20,7 @@ seo:
 Estamos já no meio do ano e é hora de refletir sobre como estamos lidando com nossas finanças. Com base nos dados do [Instituto Brasileiro de Geografia e Estatística (IBGE)](https://www.ibge.gov.br), sabemos que a maioria dos brasileiros tem dificuldade em gerenciar suas finanças de forma eficaz. É comum perceber que os gastos são maiores do que a renda, levando a uma situação financeira complicada. Neste post, vamos discutir como se preparar financeiramente para o segundo semestre, com [dicas](/posts/7-erros-financeiros-iniciante) práticas e acessíveis para ajudá-lo a controlar seus gastos e alcançar seus objetivos financeiros.
 
 ## Entendendo sua Situação Financeira Atual
-Antes de começar a planejar para o segundo semestre, é fundamental entender sua situação financeira atual. Isso inclui saber quanto você ganha, quanto você gasta e quais são suas dívidas. Você pode usar o [aplicativo FinMoovi](https://www.[finmoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026).com.br) para ajudá-lo a controlar seus gastos e entender melhor sua situação financeira. Com o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), você pode registrar todos os seus gastos e receitas, criar um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) personalizado e receber alertas quando estiver ultrapassando seus limites.
+Antes de começar a planejar para o segundo semestre, é fundamental entender sua situação financeira atual. Isso inclui saber quanto você ganha, quanto você gasta e quais são suas dívidas. Você pode usar o [aplicativo FinMoovi](https://www.finmoovi.com.br) para ajudá-lo a controlar seus gastos e entender melhor sua situação financeira. Com o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), você pode registrar todos os seus gastos e receitas, criar um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) personalizado e receber alertas quando estiver ultrapassando seus limites.
 
 ## Definindo Metas Financeiras para o Segundo Semestre
 Agora que você entende sua situação financeira atual, é hora de definir metas financeiras para o segundo semestre. Isso pode incluir economizar para uma viagem, pagar dívidas ou criar um fundo de emergência. Aqui estão algumas dicas para ajudá-lo a definir metas financeiras:
@@ -34,10 +34,10 @@ Agora que você entende sua situação financeira atual, é hora de definir meta
 
 
 ## Criando um [Orçamento](/posts/como-criar-orcamento-pessoal) para o Segundo Semestre
-Agora que você tem metas financeiras definidas, é hora de criar um [orçamento](/posts/controle-gastos-cartao-credito) para o segundo semestre. Isso inclui decidir como você vai alocar sua renda para alcançar suas metas. Aqui estão algumas dicas para ajudá-lo a criar um [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro):
+Agora que você tem metas financeiras definidas, é hora de criar um [orçamento](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) para o segundo semestre. Isso inclui decidir como você vai alocar sua renda para alcançar suas metas. Aqui estão algumas dicas para ajudá-lo a criar um [orçamento](/posts/metodo-50-30-20-para-orcamento):
 1. **Aloque 50% de sua renda para necessidades básicas**: Isso inclui gastos com moradia, alimentação, transporte e serviços essenciais.
 2. **Aloque 30% de sua renda para desejos**: Isso inclui gastos com lazer, entretenimento e hobbies.
-3. **Aloque 20% de sua renda para metas financeiras**: Isso inclui gastos com [economia](/posts/5-dicas-para-usar-as-ferias-para-reorganizar-suas-financas), dívidas e [fundos](/glossario/fundos) de emergência.
+3. **Aloque 20% de sua renda para metas financeiras**: Isso inclui gastos com [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), dívidas e [fundos](/glossario/fundos) de emergência.
 4. **Revisite seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) regularmente**: Use o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) para revisitar seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) e fazer ajustes conforme necessário.
 
 ## Gerenciando Dívidas e Gastos
@@ -47,7 +47,7 @@ Gerenciar dívidas e gastos é fundamental para alcançar suas metas financeiras
 3. **Corte gastos desnecessários**: Isso inclui gastos com itens que não são essenciais, como compras impulsivas.
 4. **Use o método da "envelope"**: Separe seu [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) em envelopes para diferentes categorias de gastos, como alimentação e transporte.
 
-![Criando um [Orçamento](/posts/regra-50-30-20-guia-completo) para o Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
+![Criando um [Orçamento](/posts/metodo-50-30-20-para-orcamento) para o Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
 
 

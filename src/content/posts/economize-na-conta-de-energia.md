@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Reduzindo o Consumo
-Imagine que você paga cerca de R$ 200 por mês em sua conta de energia. Isso pode parecer um [valor](/glossario/valor) razoável, mas se você souber como reduzir esse consumo, pode economizar cerca de R$ 50 por mês, o que é equivalente a R$ 600 por ano. Isso pode ser alcançado com algumas mudanças simples em seu dia a dia. Por exemplo, se você tem um salário de R$ 5.000 por mês, uma redução de R$ 50 na conta de energia pode significar uma [economia](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz) de 1% do seu salário.
+Imagine que você paga cerca de R$ 200 por mês em sua conta de energia. Isso pode parecer um [valor](/glossario/valor) razoável, mas se você souber como reduzir esse consumo, pode economizar cerca de R$ 50 por mês, o que é equivalente a R$ 600 por ano. Isso pode ser alcançado com algumas mudanças simples em seu dia a dia. Por exemplo, se você tem um salário de R$ 5.000 por mês, uma redução de R$ 50 na conta de energia pode significar uma [economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) de 1% do seu salário.
 
 Uma das principais razões para o alto consumo de energia é o uso excessivo de aparelhos eletrônicos. Muitas pessoas deixam a televisão, o computador e outros aparelhos ligados mesmo quando não estão em uso. Isso pode aumentar significativamente a conta de energia. Além disso, o uso de lâmpadas incandescentes também pode contribuir para o alto consumo de energia.
 
@@ -59,4 +59,4 @@ Agora que você sabe como economizar na conta de energia, é hora de começar a 
 
 
 ---
-**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)).com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**
+**Cansado de [planilha](/posts/migrando-da-planilha-para-um-app-financeiro)? [Teste o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) grátis](https://finmoovi.com) e controle seus gastos com IA, multi-[moeda](/glossario/moeda) e relatórios que fazem sentido.**

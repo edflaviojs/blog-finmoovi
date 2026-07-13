@@ -16,8 +16,8 @@ seo:
   keywords: ["orçamento","salário mínimo","finanças pessoais","gerenciamento financeiro","economia","planejamento","orçamento salário mínimo","economizar ganhando pouco","controle gastos"]
 ---
 
-## Criando um [Orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) Realista
-Para criar um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) eficaz com salário mínimo, é crucial entender que não se trata de cortar todos os [gastos](/posts/metodo-50-30-20-para-salario-brasileiro), mas sim de gerenciar seus recursos de forma inteligente. Vamos considerar um exemplo com um salário de R$ 2.400,00, que é um pouco acima do salário mínimo no Brasil.
+## Criando um [Orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) Realista
+Para criar um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) eficaz com salário mínimo, é crucial entender que não se trata de cortar todos os [gastos](/posts/metodo-50-30-20-para-orcamento), mas sim de gerenciar seus recursos de forma inteligente. Vamos considerar um exemplo com um salário de R$ 2.400,00, que é um pouco acima do salário mínimo no Brasil.
 
 Uma regra geral para dividir seu [orçamento](/posts/como-criar-orcamento-pessoal) é a seguinte:
 | Categoria | Percentual do Salário |
@@ -69,4 +69,4 @@ Gerenciar suas finanças não precisa ser uma tarefa sobre-humana. Comece dedica
 
 
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

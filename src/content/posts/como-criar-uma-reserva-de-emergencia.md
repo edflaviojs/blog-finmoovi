@@ -22,14 +22,14 @@ Uma reserva de emergência é uma quantia de [dinheiro](/posts/cashback-intelige
 Uma boa regra é ter entre 3 a 6 meses de despesas cobertas pela reserva. Se suas despesas mensais são de R$ 3.500, você precisaria de uma reserva de R$ 10.500 a R$ 21.000. Isso pode parecer muito, mas é importante começar a economizar o quanto antes.
 
 ## Como calcular a reserva necessária
-Para calcular a reserva necessária, é importante saber quais são suas despesas mensais. Faça uma lista de todos os [gastos](/posts/metodo-50-30-20-para-salario-brasileiro), incluindo:
+Para calcular a reserva necessária, é importante saber quais são suas despesas mensais. Faça uma lista de todos os [gastos](/posts/metodo-50-30-20-para-orcamento), incluindo:
 - Aluguel ou prestação da casa
 - Contas de água, luz e internet
 - Supermercado
 - Transporte
-- Laços de dívida, como [cartão de crédito](/posts/controle-[gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)-cartao-credito) ou empréstimo
+- Laços de dívida, como [cartão de crédito](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) ou empréstimo
 
-**Dica prática:** Use um aplicativo de [finanças pessoais](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias) para registrar seus gastos e ter uma visão clara de onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo. Isso ajudará a identificar áreas onde você pode cortar gastos e direcionar mais [dinheiro](/posts/criando-reserva-de-emergencia) para a reserva de emergência.
+**Dica prática:** Use um aplicativo de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) para registrar seus gastos e ter uma visão clara de onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo. Isso ajudará a identificar áreas onde você pode cortar gastos e direcionar mais [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) para a reserva de emergência.
 
 ![Como calcular a reserva necessária](/images/posts/como-criar-uma-reserva-de-emergencia-2.webp)
 
@@ -39,7 +39,7 @@ Para calcular a reserva necessária, é importante saber quais são suas despesa
 Criar uma reserva de emergência requer disciplina e paciência. Aqui estão algumas estratégias para ajudar:
 - Defina um [valor](/glossario/valor) mensal para depositar na reserva
 - Automatize os depósitos para que seja mais fácil manter a rotina
-- Evite sacar [dinheiro](/posts/criar-reserva-de-emergencia) da reserva para gastos não essenciais
+- Evite sacar [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) da reserva para gastos não essenciais
 - Considere abrir uma conta [poupança](/glossario/poupanca) separada para a reserva de emergência, para que fique mais difícil acessar o [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) para gastos cotidianos
 
 Lembre-se de que a chave é começar pequeno e aumentar a reserva ao longo do tempo. Mesmo R$ 100 por mês podem fazer uma grande diferença ao longo de um ano.
@@ -61,4 +61,4 @@ Para mais informações sobre como gerenciar suas finanças e criar uma reserva 
 Não espere até que seja tarde demais para começar a criar sua reserva de emergência. Comece a economizar hoje, mesmo que seja um pequeno valor. Lembre-se de que cada real conta e que a disciplina é a chave para alcançar seus objetivos financeiros.
 
 ---
-**Quer sair da teoria? [Baixe o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**
+**Quer sair da teoria? [Baixe o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**

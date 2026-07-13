@@ -16,7 +16,7 @@ seo:
   keywords: ["orçamento casal","dividir despesas","finanças pessoais","casamento","economia","dividir despesas casal","finanças a dois"]
 ---
 
-## Definindo o [Orçamento](/posts/5-[dicas](/posts/7-erros-financeiros-iniciante)-para-reorganizar-suas-financas-nas-ferias)
+## Definindo o [Orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
 Para começar, é importante entender que um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) eficaz para casais envolve a consideração das necessidades, desejos e objetivos financeiros de ambos os parceiros. Vamos considerar um exemplo: João e Maria, um casal com salários de R$ 4.000 e R$ 3.500, respectivamente. Eles precisam decidir como dividir suas despesas de forma justa.
 
 ### Exemplo de Despesas
@@ -43,11 +43,11 @@ Uma forma comum de dividir as despesas é considerar a proporção dos salários
 Com base nisso, eles podem calcular a parcela de cada um em cada categoria de despesa.
 
 ## Organizando o [Orçamento](/posts/como-criar-orcamento-pessoal)
-Aqui estão os passos para organizar o [orçamento](/posts/controle-gastos-cartao-credito):
+Aqui estão os passos para organizar o [orçamento](/posts/dicas-para-controlar-gastos-no-cartao-de-credito):
 1. **Liste todas as despesas**: Inclua todas as despesas fixas e variáveis.
 2. **Defina a proporção**: Calcule a proporção dos salários para dividir as despesas.
 3. **Atribua valores**: Atribua o valor correspondente a cada despesa com base na proporção definida.
-4. **Revisite e ajuste**: Revisite o [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro) regularmente e ajuste conforme necessário.
+4. **Revisite e ajuste**: Revisite o [orçamento](/posts/metodo-50-30-20-para-orcamento) regularmente e ajuste conforme necessário.
 
 **Dica prática:** É importante ter uma reserva para imprevistos. Uma boa regra é reservar entre 10% a 20% do [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) total para emergências.
 
@@ -59,7 +59,7 @@ Aqui estão os passos para organizar o [orçamento](/posts/controle-gastos-carta
 Para manter as finanças em ordem, é crucial ter um sistema de controle. Isso pode incluir o uso de planilhas eletrônicas ou [aplicativos financeiros](/posts/voce-tambem-esquece-de-anotar-seus-gastos). O [Banco Central do Brasil](https://www.bcb.gov.br) oferece informações valiosas sobre [gestão financeira](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) e planejamento.
 
 ## Comece com 5 minutos por dia
-Para manter o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) sob controle, dedique alguns minutos todos os dias para revisar as despesas e atualizar o [orçamento](/posts/regra-50-30-20-guia-completo). Isso pode ser feito durante o café da manhã ou antes de dormir. Lembre-se de que a chave para o sucesso é a consistência e a comunicação entre os parceiros. Visite o site da [Receita Federal](https://www.gov.br/receitafederal) para obter mais informações sobre [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e tributação.
+Para manter o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) sob controle, dedique alguns minutos todos os dias para revisar as despesas e atualizar o [orçamento](/posts/metodo-50-30-20-para-orcamento). Isso pode ser feito durante o café da manhã ou antes de dormir. Lembre-se de que a chave para o sucesso é a consistência e a comunicação entre os parceiros. Visite o site da [Receita Federal](https://www.gov.br/receitafederal) para obter mais informações sobre [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e tributação.
 
 ![Gerenciando as Finanças](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
 
@@ -67,4 +67,4 @@ Para manter o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcion
 
 ---
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-[alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)-ao-[mobills](/posts/5-alternativas-ao-mobills-em-2026)-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

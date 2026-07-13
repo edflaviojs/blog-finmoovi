@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Reduciendo el Consumo
-Imagina que pagas alrededor de R$ 200 por mes en tu cuenta de energía. Esto puede parecer un [valor](/es/glossario/es-valor) razonable, pero si sabes cómo reducir ese consumo, puedes ahorrar alrededor de R$ 50 por mes, lo que es equivalente a R$ 600 por año. Esto puede lograrse con algunos cambios simples en tu día a día. Por ejemplo, si tienes un salario de R$ 5.000 por mes, una reducción de R$ 50 en la cuenta de energía puede significar un [ahorro](/es/posts/regla-de-los-30-dias-para-compras) del 1% de tu salario.
+Imagina que pagas alrededor de R$ 200 por mes en tu cuenta de energía. Esto puede parecer un [valor](/es/glossario/es-valor) razonable, pero si sabes cómo reducir ese consumo, puedes ahorrar alrededor de R$ 50 por mes, lo que es equivalente a R$ 600 por año. Esto puede lograrse con algunos cambios simples en tu día a día. Por ejemplo, si tienes un salario de R$ 5.000 por mes, una reducción de R$ 50 en la cuenta de energía puede significar un [ahorro](/es/posts/es-regla-de-los-30-dias-para-compras) del 1% de tu salario.
 
 Una de las principales razones para el alto consumo de energía es el uso excesivo de aparatos electrónicos. Muchas personas dejan la televisión, el computador y otros aparatos encendidos incluso cuando no están en uso. Esto puede aumentar significativamente la cuenta de energía. Además, el uso de lámparas incandescentes también puede contribuir al alto consumo de energía.
 
@@ -35,7 +35,7 @@ Apagar los aparatos electrónicos cuando no están en uso es otra forma de reduc
 
 Además, es importante verificar si los aparatos que estás comprando tienen la certificación de eficiencia energética. Esto puede garantizar que estás comprando aparatos que van a consumir menos energía y durar más tiempo.
 
-## [Economía](/es/posts/ahorrando-en-la-cuenta-del-mercado) en el Día a Día
+## [Economía](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) en el Día a Día
 Aquí hay algunas sugerencias para ahorrar energía en el día a día:
 * Apaga las luces y aparatos cuando no estén en uso
 * Usa lámparas LED en lugar de lámparas incandescentes
@@ -43,13 +43,13 @@ Aquí hay algunas sugerencias para ahorrar energía en el día a día:
 * Usa un termostato para controlar la temperatura en tu casa
 
 ## Control de Consumo
-Es importante verificar regularmente la cuenta de energía para saber cuánto estás consumiendo y dónde está el mayor consumo. Esto puede ayudar a identificar áreas donde puedes reducir el consumo y ahorrar [dinero](/es/posts/organizar-finanzas-autonomo).
+Es importante verificar regularmente la cuenta de energía para saber cuánto estás consumiendo y dónde está el mayor consumo. Esto puede ayudar a identificar áreas donde puedes reducir el consumo y ahorrar [dinero](/es/posts/es-organizar-finanzas-autonomo).
 
 ![Economia no Dia a Dia](/images/posts/economize-na-conta-de-energia-3.svg)
 
 
 
-**Consejo práctico:** Verifica si la empresa de energía eléctrica ofrece un servicio de monitoreo de consumo. Esto puede ayudar a identificar áreas donde puedes reducir el consumo y ahorrar [dinero](/es/posts/planeamiento-financiero-para-parejas).
+**Consejo práctico:** Verifica si la empresa de energía eléctrica ofrece un servicio de monitoreo de consumo. Esto puede ayudar a identificar áreas donde puedes reducir el consumo y ahorrar [dinero](/es/posts/es-planeamiento-financiero-para-parejas).
 
 ## Comienza hoy
 Ahora que sabes cómo ahorrar en la cuenta de energía, es hora de comenzar a actuar. Comienza apagando las luces y aparatos cuando no estén en uso y cambia las lámparas incandescentes por lámparas LED. Con estos simples cambios, puedes ahorrar alrededor de R$ 50 por mes y alcanzar tus objetivos financieros.
@@ -59,4 +59,4 @@ Ahora que sabes cómo ahorrar en la cuenta de energía, es hora de comenzar a ac
 
 
 ---
-**¿Cansado de planilla? [Prueba [FinMoovi](/es/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://[finmoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro).com) y controla tus [gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro) con IA, multi-moneda y reportes que tienen sentido.**
+**¿Cansado de planilla? [Prueba [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://finmoovi.com) y controla tus [gastos](/es/posts/es-metodo-50-30-20-para-orcamento) con IA, multi-moneda y reportes que tienen sentido.**

@@ -18,10 +18,10 @@ draft: false
 translate: true
 ---
 
-## [Planning](/en/posts/orcamento-com-salario-minimo-dicas-praticas) a Responsible Valentine's Day
+## [Planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) a Responsible Valentine's Day
 Valentine's Day is a special occasion to celebrate love and unity with those we love. However, it's not necessary to compromise our finances to make this day unforgettable. With a little creativity and planning, it's possible to have an economic and meaningful Valentine's Day.
 
-To start, it's essential to define a [budget](/en/posts/50-30-20-rule-complete-guide) for the celebrations. Considering that the average salary in Brazil ranges from R$ 2,500 to R$ 4,000, it's reasonable to allocate 5% to 10% of this value for Valentine's Day. This means that, depending on your salary, you could have a [budget](/en/posts/how-to-create-personal-[budget](/en/posts/organize-couple-finances)) of R$ 125 to R$ 400.
+To start, it's essential to define a budget for the celebrations. Considering that the average salary in Brazil ranges from R$ 2,500 to R$ 4,000, it's reasonable to allocate 5% to 10% of this value for Valentine's Day. This means that, depending on your salary, you could have a [budget](/en/posts/en-how-to-create-personal-budget) of R$ 125 to R$ 400.
 
 ## Tips for an Economic Gift
 A gift doesn't have to be expensive to be meaningful. Here are some tips to find the perfect gift without breaking the bank:
@@ -34,8 +34,8 @@ A gift doesn't have to be expensive to be meaningful. Here are some tips to find
 - **Home-Cooked Dinner**: Cook your partner's favorite dish at home. Buy the necessary ingredients and decorate the table to create a romantic atmosphere. Cost: R$ 50 to R$ 100.
 - **Outdoor Walk**: Plan a walk in a park or at the beach. Bring a picnic and enjoy nature together. Cost: R$ 20 to R$ 50.
 
-## Managing Finances with [FinMoovi](/en/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
-To help manage your finances and stay within your [budget](/en/posts/reduce-fixed-[expenses](/en/posts/metodo-50-30-20-para-salario-brasileiro)), the [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) app can be a useful tool. With it, you can track your [expenses](/en/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), set financial goals, and receive alerts not to exceed the established limit.
+## Managing Finances with [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas)
+To help manage your finances and stay within your [budget](/en/posts/en-reduce-fixed-expenses), the [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) app can be a useful tool. With it, you can track your [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), set financial goals, and receive alerts not to exceed the established limit.
 
 ## Celebrating with Creativity
 Creativity is the key to an economic and memorable Valentine's Day. Here are some ideas to celebrate with style without spending too much:
@@ -48,4 +48,4 @@ Creativity is the key to an economic and memorable Valentine's Day. Here are som
 
 
 ## Conclusion
-Valentine's Day doesn't have to be a financial burden. With a little creativity and planning, it's possible to celebrate love in an economic and meaningful way. Remember that what matters most is the time you spend with your partner, not the price of the gift. So, don't be afraid to be creative and find ways to celebrate that are personal and economic. With the support of tools like [FinMoovi](/en/posts/voce-tambem-esquece-de-anotar-seus-gastos) to manage your finances, you can focus on what really matters: love and connection with your partner. Celebrate Valentine's Day in a responsible and unforgettable way!
+Valentine's Day doesn't have to be a financial burden. With a little creativity and planning, it's possible to celebrate love in an economic and meaningful way. Remember that what matters most is the time you spend with your partner, not the price of the gift. So, don't be afraid to be creative and find ways to celebrate that are personal and economic. With the support of tools like [FinMoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) to manage your finances, you can focus on what really matters: love and connection with your partner. Celebrate Valentine's Day in a responsible and unforgettable way!

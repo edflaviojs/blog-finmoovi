@@ -24,7 +24,7 @@ Olá, pessoal! É hora de fazer um resumo da semana no mercado financeiro brasil
 
 Na semana que passou, o dólar americano fechou em R$ 5,17, enquanto o euro chegou a R$ 5,89. Isso significa que, em comparação com a semana anterior, o dólar subiu um pouco, enquanto o euro manteve uma estabilidade relativa. Essa flutuação pode ser interessante para quem tem investimentos em moedas estrangeiras ou está planejando viajar para o exterior.
 
-![Dólar e Euro: Tendência Semanal](/images/posts/en-[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/[quotes](/en/posts/quotes-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-1-june-2026)-semana-1-july-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-4-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-3-june-2026)-semana-1-june-2026)-semana-5-june-2026-inline-1.webp)
+![Dólar e Euro: Tendência Semanal](/images/posts/en-quotes-semana-5-june-2026-inline-1.webp)
 
 
 
@@ -44,7 +44,7 @@ Uma dica prática para você, investidor individual, é diversificar seus invest
 
 
 
-Além disso, é importante ter um acompanhamento constante dos seus investimentos. O [FinMoovi](/en/posts/5-alternativas-ao-mobills-em-2026) é uma ferramenta que pode ajudar você a fazer isso, permitindo que você acompanhe seus investimentos em múltiplas moedas e obtenha insights valiosos para tomar decisões informadas.
+Além disso, é importante ter um acompanhamento constante dos seus investimentos. O [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) é uma ferramenta que pode ajudar você a fazer isso, permitindo que você acompanhe seus investimentos em múltiplas moedas e obtenha insights valiosos para tomar decisões informadas.
 
 ## O que Esperar para a Próxima Semana
 
@@ -56,5 +56,5 @@ E aí, pessoal? O que você achou do resumo da semana? Tem alguma dúvida ou com
 
 
 ---
-**Ready to track your [investments](/en/posts/[cdb](/en/glossario/en-cdb)-vs-tesouro-selic-qual-e-melhor-para-voce)? [Try [FinMoovi](/en/posts/migrando-da-planilha-para-um-app-financeiro) for free](https://[finmoovi](/en/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/30-day-rule-for-purchases) is going.**
+**Ready to track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)? [Try [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
 

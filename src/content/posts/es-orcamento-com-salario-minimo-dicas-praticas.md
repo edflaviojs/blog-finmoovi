@@ -17,7 +17,7 @@ seo:
 ---
 
 ## Creando un Orçamento Realista
-Para crear un orçamento eficaz con salário mínimo, es crucial entender que no se trata de cortar todos los [gastos](/es/posts/metodo-50-30-20-para-salario-brasileiro), sino de gestionar sus recursos de forma inteligente. Vamos considerar un ejemplo con un salário de R$ 2.400,00, que es un poco más del salário mínimo en Brasil.
+Para crear un orçamento eficaz con salário mínimo, es crucial entender que no se trata de cortar todos los [gastos](/es/posts/es-metodo-50-30-20-para-orcamento), sino de gestionar sus recursos de forma inteligente. Vamos considerar un ejemplo con un salário de R$ 2.400,00, que es un poco más del salário mínimo en Brasil.
 
 Una regla general para dividir su orçamento es la siguiente:
 | Categoría | Porcentaje del Salário |
@@ -28,7 +28,7 @@ Una regla general para dividir su orçamento es la siguiente:
 | Salud y Bienestar | 10% |
 | Educación y Desarrollo | 5% |
 | Ocio y Entretenimiento | 5% |
-| [Ahorro](/es/posts/ahorra-en-las-compras-del-supermercado) y Emergencia | 10% |
+| [Ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) y Emergencia | 10% |
 
 Con base en esta división, para un salário de R$ 2.400,00:
 - Vivienda: R$ 720,00
@@ -37,13 +37,13 @@ Con base en esta división, para un salário de R$ 2.400,00:
 - Salud y Bienestar: R$ 240,00
 - Educación y Desarrollo: R$ 120,00
 - Ocio y Entretenimiento: R$ 120,00
-- [Ahorro](/es/posts/negociar-descuentos-en-cuentas-fijas) y Emergencia: R$ 240,00
+- [Ahorro](/es/posts/es-negociar-descuentos-en-cuentas-fijas) y Emergencia: R$ 240,00
 
 ## Priorizando Necesidades
-Es importante priorizar necesidades sobre deseos. **Consejo práctico:** Haga una lista de todo lo que gasta en un mes e identifique dónde puede cortar [gastos](/es/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) superfluos. Por ejemplo, si gasta R$ 100,00 por semana en aperitivos y comidas fuera, intente reducir a R$ 50,00, ahorrando R$ 200,00 por mes.
+Es importante priorizar necesidades sobre deseos. **Consejo práctico:** Haga una lista de todo lo que gasta en un mes e identifique dónde puede cortar [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) superfluos. Por ejemplo, si gasta R$ 100,00 por semana en aperitivos y comidas fuera, intente reducir a R$ 50,00, ahorrando R$ 200,00 por mes.
 
 ## Gestionando Gastos Variables
-Gastos variables, como transporte y alimentación fuera, pueden ser difíciles de controlar. Aquí están algunas [consejos](/es/posts/7-errores-financieros-principiante) para gestionar estos gastos:
+Gastos variables, como transporte y alimentación fuera, pueden ser difíciles de controlar. Aquí están algunas [consejos](/es/posts/es-7-errores-financieros-principiante) para gestionar estos gastos:
 1. Plan de alimentación: Cocine en casa y lleve tupper a trabajar.
 2. Transporte: Considere compartir coche, usar bicicleta o caminar para distancias cortas.
 3. Ocio: Encuentre actividades gratuitas o de bajo costo, como parques, bibliotecas o noches de juegos con amigos.
@@ -52,8 +52,8 @@ Gastos variables, como transporte y alimentación fuera, pueden ser difíciles d
 
 
 
-## Construyendo un [Ahorro](/es/posts/regla-de-los-30-dias-para-compras)
-Construir un [ahorro](/es/posts/cashback-inteligente) es esencial para lidiar con imprevistos y alcanzar objetivos financieros de largo plazo. Aquí están algunas etapas para empezar:
+## Construyendo un [Ahorro](/es/posts/es-regla-de-los-30-dias-para-compras)
+Construir un [ahorro](/es/posts/es-cashback-inteligente) es esencial para lidiar con imprevistos y alcanzar objetivos financieros de largo plazo. Aquí están algunas etapas para empezar:
 1. Defina metas: Establezca metas específicas, como crear un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) o ahorrar para una compra importante.
 2. Automatice: Configure transferencias automáticas de su cuenta corriente a su cuenta de ahorro.
 3. Aumente gradualmente: Aumente la cantidad ahorrada con el tiempo, a medida que su situación financiera mejore.
@@ -69,4 +69,4 @@ Gestionar sus finanzas no necesita ser una tarea sobrehumana. Comience dedicando
 
 
 
-**¿Quiere automatizar este control? [Pruebe [FinMoovi](/es/posts/migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/voce-tambem-esquece-de-anotar-seus-gastos).com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**
+**¿Quiere automatizar este control? [Pruebe [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://finmoovi.com) — él categoriza gastos automáticamente y genera informes sin esfuerzo.**

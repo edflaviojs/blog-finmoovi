@@ -24,7 +24,7 @@ Por exemplo, se você investir R$1.000 em um título LTN com prazo de 1 ano e ju
 ## Vantagens do Tesouro Direto
 Uma das principais vantagens do Tesouro Direto é a segurança. Como os títulos são emitidos pelo governo, o risco de default (ou inadimplência) é muito baixo. Além disso, os juros são pré-definidos, o que significa que você sabe exatamente quanto vai receber ao final do prazo.
 
-Outra vantagem é a [liquidez](/glossario/liquidez). Você pode resgatar seus títulos antes do vencimento, embora possa haver perda de juros. Isso é útil se você precisar do [dinheiro](/posts/como-reduzir-[gastos](/posts/metodo-50-30-20-para-salario-brasileiro)-fixos-mensais-de-forma-eficaz) antes do prazo.
+Outra vantagem é a [liquidez](/glossario/liquidez). Você pode resgatar seus títulos antes do vencimento, embora possa haver perda de juros. Isso é útil se você precisar do [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) antes do prazo.
 
 ![Vantagens do Tesouro Direto](/images/posts/tesouro-direto-para-iniciantes-2.webp)
 
@@ -39,8 +39,8 @@ Existem vários tipos de títulos disponíveis no Tesouro Direto, cada um com su
 
 Por exemplo, se você investir R$5.000 em um título LTN com prazo de 5 anos e juros de 6% ao ano, você receberá R$5.638,49 após o vencimento, considerando [juros compostos](/glossario/juros-compostos) anualmente.
 
-## [Riscos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-junho-2026)-qual-rende-mais-em-2026)
-Embora o Tesouro Direto seja considerado um [investimento](/posts/montando-carteira-diversificada-com-r-500) de baixo risco, existem alguns [riscos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-4-maio-2026)-qual-rende-mais-em-2026) a considerar:
+## [Riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+Embora o Tesouro Direto seja considerado um [investimento](/posts/montando-carteira-diversificada-com-r-500) de baixo risco, existem alguns [riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) a considerar:
 
 * Risco de inflação: se a inflação aumentar, o valor real do seu investimento pode diminuir.
 * Risco de liquidez: se você precisar resgatar seus títulos antes do vencimento, pode haver perda de juros.
@@ -50,7 +50,7 @@ Embora o Tesouro Direto seja considerado um [investimento](/posts/montando-carte
 
 
 
-Para mitigar esses [riscos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-5-junho-2026))-qual-rende-mais-em-2026), é importante diversificar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) e avaliar seu perfil de risco antes de investir.
+Para mitigar esses [riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), é importante diversificar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) e avaliar seu perfil de risco antes de investir.
 
 ## Simulação de Rendimento
 Vamos considerar um exemplo de simulação de rendimento. Se você investir R$1.000 em um título LTN com prazo de 2 anos e juros de 5% ao ano, você receberá R$1.102,50 após o vencimento, considerando juros compostos anualmente.
@@ -65,10 +65,10 @@ Aqui está uma tabela com a simulação de rendimento:
 ## Próximos passos
 Agora que você entendeu como funciona o Tesouro Direto, é hora de avaliar se faz sentido para seu perfil de investidor. Considere seus objetivos financeiros, prazo de investimento e tolerância ao risco.
 
-Se você decidir investir no Tesouro Direto, é importante ler atentamente as condições e prazos de cada título antes de investir. Além disso, é recomendável diversificar seus [investimentos](/posts/[cdb](/glossario/cdb)-vs-tesouro-[selic](/posts/cotacoes-semana-1-junho-2026)-qual-e-melhor-para-voce) para minimizar os [riscos](/posts/cdb-vs-tesouro-[selic](/glossario/[selic](/posts/cotacoes-semana-1-julho-2026))-qual-rende-mais-em-2026).
+Se você decidir investir no Tesouro Direto, é importante ler atentamente as condições e prazos de cada título antes de investir. Além disso, é recomendável diversificar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para minimizar os [riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 
 
 
-Para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-[selic](/posts/cotacoes-semana-3-junho-2026)-qual-e-melhor-para-voce) em um só lugar, [teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.
+Para acompanhar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em um só lugar, [teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://finmoovi.com) — multi-[moeda](/glossario/moeda), relatórios inteligentes e 100% offline.

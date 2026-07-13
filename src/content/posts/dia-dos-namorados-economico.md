@@ -21,7 +21,7 @@ translate: true
 ## Planejando o Dia dos Namorados com Responsabilidade
 O Dia dos Namorados é uma data especial para celebrar o amor e a união com aqueles que amamos. No entanto, não é necessário comprometer nossas finanças para fazer deste dia um momento inesquecível. Com um pouco de criatividade e [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas), é possível ter um Dia dos Namorados econômico e ao mesmo tempo significativo.
 
-Para começar, é importante definir um [orçamento](/posts/como-criar-orcamento-pessoal) para as comemorações. Considerando que o salário médio no Brasil varia de R$ 2.500 a R$ 4.000, é razoável reservar entre 5% a 10% deste [valor](/glossario/valor) para o Dia dos Namorados. Isso significa que, dependendo do seu salário, você poderia ter um [orçamento](/posts/regra-50-30-20-guia-completo) de R$ 125 a R$ 400.
+Para começar, é importante definir um [orçamento](/posts/como-criar-orcamento-pessoal) para as comemorações. Considerando que o salário médio no Brasil varia de R$ 2.500 a R$ 4.000, é razoável reservar entre 5% a 10% deste [valor](/glossario/valor) para o Dia dos Namorados. Isso significa que, dependendo do seu salário, você poderia ter um [orçamento](/posts/metodo-50-30-20-para-orcamento) de R$ 125 a R$ 400.
 
 ## [Dicas](/posts/7-erros-financeiros-iniciante) para um Presente Econômico
 Um presente não precisa ser caro para ser significativo. Aqui estão algumas dicas para encontrar o presente perfeito sem quebrar o banco:
@@ -35,7 +35,7 @@ Um presente não precisa ser caro para ser significativo. Aqui estão algumas di
 - **Passeio ao Ar Livre**: Planeje um passeio em um parque ou na praia. Leve um piquenique e aproveite a natureza juntos. Custo: R$ 20 a R$ 50.
 
 ## Gerenciando as Finanças com o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
-Para ajudar a gerenciar suas finanças e manter-se dentro do [orçamento](/posts/metodo-50-30-20-para-salario-brasileiro), o app [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) pode ser uma ferramenta útil. Com ele, você pode acompanhar suas despesas, definir metas financeiras e receber alertas para não ultrapassar o limite estabelecido.
+Para ajudar a gerenciar suas finanças e manter-se dentro do [orçamento](/posts/metodo-50-30-20-para-orcamento), o app [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) pode ser uma ferramenta útil. Com ele, você pode acompanhar suas despesas, definir metas financeiras e receber alertas para não ultrapassar o limite estabelecido.
 
 ## Comemorando com Criatividade
 A criatividade é a chave para um Dia dos Namorados econômico e memorável. Aqui estão algumas ideias para comemorar com estilo sem gastar muito:
@@ -48,4 +48,4 @@ A criatividade é a chave para um Dia dos Namorados econômico e memorável. Aqu
 
 
 ## Conclusão
-O Dia dos Namorados não precisa ser um fardo financeiro. Com um pouco de criatividade e planejamento, é possível celebrar o amor de forma econômica e significativa. Lembre-se de que o mais importante é o tempo que você passa com seu parceiro, não o preço do presente. Portanto, não tenha medo de ser criativo e encontrar maneiras de comemorar que sejam pessoais e econômicas. Com o apoio de ferramentas como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-[gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)) para gerenciar suas finanças, você pode se concentrar no que realmente importa: o amor e a conexão com seu parceiro. Celebre o Dia dos Namorados de forma responsável e inesquecível!
+O Dia dos Namorados não precisa ser um fardo financeiro. Com um pouco de criatividade e planejamento, é possível celebrar o amor de forma econômica e significativa. Lembre-se de que o mais importante é o tempo que você passa com seu parceiro, não o preço do presente. Portanto, não tenha medo de ser criativo e encontrar maneiras de comemorar que sejam pessoais e econômicas. Com o apoio de ferramentas como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) para gerenciar suas finanças, você pode se concentrar no que realmente importa: o amor e a conexão com seu parceiro. Celebre o Dia dos Namorados de forma responsável e inesquecível!
