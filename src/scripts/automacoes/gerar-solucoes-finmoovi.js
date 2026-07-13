@@ -228,7 +228,7 @@ function savePost(slug, data) {
 title: "${data.title.replace(/"/g, '\\"')}"
 description: "${data.meta.replace(/"/g, '\\"')}"
 image: "${data.imagePath}"
-category: "dicas"
+category: "ferramentas"
 locale: "${data.locale}"
 tags: ${JSON.stringify(data.keywords || [])}
 author: "${config.content.defaultAuthor}"
