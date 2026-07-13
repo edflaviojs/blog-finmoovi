@@ -98,5 +98,65 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "cotacoes-semana-2-julho-2026",
+    "title": "Resumo Semanal: Dólar a R$ 5.11 — Semana 2 de julho",
+    "url": "https://blog.finmoovi.com/posts/cotacoes-semana-2-julho-2026",
+    "submittedAt": "2026-07-13T17:06:56.344Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1789722273
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "cashback-inteligente",
+    "title": "Cashback Inteligente",
+    "url": "https://blog.finmoovi.com/posts/cashback-inteligente",
+    "submittedAt": "2026-07-13T17:06:57.127Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1789722274
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "economize-nas-ferias",
+    "title": "Economize nas Férias",
+    "url": "https://blog.finmoovi.com/posts/economize-nas-ferias",
+    "submittedAt": "2026-07-13T17:06:57.614Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1789722276
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
