@@ -159,6 +159,9 @@ const categoryLabels: Record<string, string> = {
   title={`${config.brand.name} ${config.brand.blogSuffix}`}
   description={config.siteDescription.es}
   keywords={config.content.defaultKeywords.es.split(', ')}
+  preloadImage={heroContent?.image}
+  preloadImageSrcset={heroContent?.image ? imgSrcset(heroContent.image) : undefined}
+  preloadImageSizes="(min-width: 1024px) 800px, 100vw"
 >
   keywords={['finanzas personales', 'control financiero', 'educación financiera', 'presupuesto', 'inversiones']}
 >

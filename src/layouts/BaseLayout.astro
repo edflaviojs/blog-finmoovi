@@ -12,6 +12,9 @@ interface Props {
   keywords?: string[];
   noindex?: boolean;
   alternates?: { pt?: string; en?: string; es?: string };
+  preloadImage?: string;
+  preloadImageSrcset?: string;
+  preloadImageSizes?: string;
 }
 
 const blogTitle = `${config.brand.name} ${config.brand.blogSuffix}`;
@@ -25,7 +28,10 @@ const {
   author = config.content.defaultAuthor,
   keywords = config.content.defaultKeywords.pt.split(', '),
   noindex = false,
-  alternates
+  alternates,
+  preloadImage,
+  preloadImageSrcset,
+  preloadImageSizes
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -102,6 +108,18 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
 
   <!-- Preconnect: Cloudflare Web Analytics (reduz latência do beacon) -->
   <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
+
+  <!-- Preload da imagem LCP (herói/capa) — inicia o download antes de descobrir o <img> -->
+  {preloadImage && (
+    <link
+      rel="preload"
+      as="image"
+      href={preloadImage}
+      imagesrcset={preloadImageSrcset}
+      imagesizes={preloadImageSizes}
+      fetchpriority="high"
+    />
+  )}
 
   <!-- Fonts (self-hosted for performance) -->
   <link rel="preload" href="/fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin />

@@ -71,6 +71,9 @@ const schemaBreadcrumbItems = [
   author={author}
   keywords={keywords}
   alternates={alternates}
+  preloadImage={image}
+  preloadImageSrcset={image ? imgSrcset(image) : undefined}
+  preloadImageSizes="(min-width: 768px) 720px, 100vw"
 >
   <ReadingProgress />
   <SchemaBreadcrumb items={schemaBreadcrumbItems} />
