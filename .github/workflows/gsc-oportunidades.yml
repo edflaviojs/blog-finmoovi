@@ -1,0 +1,46 @@
+name: GSC - Digest de Oportunidades
+
+on:
+  schedule:
+    # Segunda-feira às 07h UTC (GSC tem defasagem de ~2-3 dias; semanal basta)
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gsc-oportunidades:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Analisar oportunidades do GSC
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ vars.GSC_SITE_URL || 'https://blog.finmoovi.com/' }}
+        run: node src/scripts/automacoes/gsc-oportunidades.js
+
+      - name: Commit e push
+        run: |
+          git add .github/data/gsc-oportunidades.json press/gsc-oportunidades.md
+          if git diff --cached --quiet; then
+            echo "Sem alteração nas oportunidades do GSC"
+          else
+            git commit -m "chore: atualizar digest de oportunidades do GSC [bot]"
+            git pull --rebase origin main || true
+            git push
+          fi

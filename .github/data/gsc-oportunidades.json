@@ -1,0 +1,18 @@
+{
+  "generatedAt": null,
+  "siteUrl": "https://blog.finmoovi.com/",
+  "period": null,
+  "hasData": false,
+  "totals": {
+    "queries": 0,
+    "pages": 0,
+    "impressions": 0,
+    "clicks": 0
+  },
+  "opportunities": {
+    "strikingDistance": [],
+    "lowCtr": [],
+    "gaps": [],
+    "cannibalization": []
+  }
+}
