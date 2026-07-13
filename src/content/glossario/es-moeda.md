@@ -18,9 +18,9 @@ seo:
 ---
 
 ## Qué es la moeda
-La moeda es un término financiero que se refiere a la unidad de cuenta y medio de cambio de un país. En Brasil, la moeda oficial es el Real (R$). La moeda es utilizada para comprar bienes y servicios, pagar deudas y ahorrar. En resumen, la moeda es el dinero que usamos en nuestro día a día.
+La moeda es un término financiero que se refiere a la unidad de cuenta y medio de [cambio](/es/glossario/es-cambio) de un país. En Brasil, la moeda oficial es el Real (R$). La moeda es utilizada para comprar bienes y servicios, pagar deudas y ahorrar. En resumen, la moeda es el dinero que usamos en nuestro día a día.
 
-La moeda puede ser física, como los billetes y monedas, o digital, como el dinero en nuestras cuentas bancarias o en aplicaciones de pagos. En la actualidad, la mayoría de las transacciones se realizan de manera digital, lo que ha facilitado la gestión del dinero y ha reducido la necesidad de llevar efectivo.
+La moeda puede ser física, como los billetes y monedas, o digital, como el dinero en nuestras cuentas bancarias o en [aplicaciones](/es/posts/es-5-alternativas-ao-mobills-em-2026) de pagos. En la actualidad, la mayoría de las transacciones se realizan de manera digital, lo que ha facilitado la gestión del dinero y ha reducido la necesidad de llevar efectivo.
 
 ![Qué es la moeda](/images/glossario/moeda-inline-1.webp)
 
@@ -40,7 +40,7 @@ La moeda tiene varias ventajas, como:
 * Permite ahorrar para el futuro, lo que es importante para planes como la jubilación o la compra de una casa.
 * Es una forma segura de llevar dinero, ya que los billetes y monedas están diseñados para ser difíciles de falsificar.
 
-**Consejo práctico:** Es importante tener un presupuesto y seguirlo, para asegurarse de que se está gastando el dinero de manera responsable y no se está acumulando deuda.
+**Consejo práctico:** Es importante tener un [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) y seguirlo, para asegurarse de que se está gastando el dinero de manera responsable y no se está acumulando deuda.
 
 ![Ventajas](/images/glossario/moeda-inline-3.webp)
 
@@ -48,7 +48,7 @@ La moeda tiene varias ventajas, como:
 
 ## Riesgos
 La moeda también tiene algunos riesgos, como:
-* La inflación, que es el aumento del precio de los bienes y servicios con el tiempo.
+* La [inflación](/es/glossario/es-inflacao), que es el aumento del precio de los bienes y servicios con el tiempo.
 * La devaluación, que es la disminución del valor de la moeda en relación con otras moedas.
 * El riesgo de pérdida, si se pierde o se roba el dinero.
 

@@ -37,7 +37,7 @@ Quando você adquire uma opção, paga um prêmio ao vendedor (também chamado d
 
 ## Vantagens
 
-As opções oferecem flexibilidade e alavancagem, permitindo que você participe de grandes movimentos de preço com um investimento inicial bem menor que o necessário para comprar o ativo à vista. Elas também servem como ferramenta de proteção de carteira, reduzindo riscos em momentos de alta volatilidade.
+As opções oferecem flexibilidade e alavancagem, permitindo que você participe de grandes movimentos de preço com um investimento inicial bem menor que o necessário para comprar o ativo à vista. Elas também servem como ferramenta de proteção de carteira, reduzindo riscos em momentos de alta [volatilidade](/glossario/volatilidade).
 
 ![Vantagens](/images/glossario/opcao-inline-3.webp)
 
@@ -45,12 +45,12 @@ As opções oferecem flexibilidade e alavancagem, permitindo que você participe
 
 - **Alavancagem:** com R$ 500 de prêmio você pode controlar R$ 20.000 em ações.  
 - **Proteção:** um investidor que tem ações pode comprar puts para limitar perdas se o preço cair.  
-- **Diversificação:** permite montar estratégias que combinam diferentes cenários de mercado, como spreads e straddles.  
+- **[Diversificação](/glossario/diversificacao):** permite montar estratégias que combinam diferentes cenários de mercado, como spreads e straddles.  
 - **Liquidez:** opções de ações de empresas brasileiras costumam ter boa negociação nas bolsas.
 
 ## Riscos
 
-Apesar das vantagens, as opções carregam riscos que não podem ser ignorados. O principal risco é a perda total do prêmio pago, que pode acontecer se a opção expirar fora do dinheiro (out‑of‑the‑money). Além disso, estratégias mais avançadas podem gerar perdas ilimitadas, especialmente quando você vende opções sem cobertura.
+Apesar das vantagens, as opções carregam riscos que não podem ser ignorados. O principal risco é a perda total do prêmio pago, que pode acontecer se a opção expirar fora do [dinheiro](/posts/cashback-inteligente) (out‑of‑the‑money). Além disso, estratégias mais avançadas podem gerar perdas ilimitadas, especialmente quando você vende opções sem cobertura.
 
 - **Perda total do prêmio:** se a ação não atingir o preço de exercício, o dinheiro investido desaparece.  
 - **Complexidade:** entender grego das opções (Delta, Gamma, Theta) exige estudo e prática.  
@@ -69,7 +69,7 @@ Outro exemplo: você tem um salário de R$ 8.000 e possui ações da Ambev (ABEV
 
 ## Como começar
 
-Se você nunca operou com opções, o melhor caminho é começar devagar, usando apenas uma pequena parte do seu capital. Primeiro, abra uma conta em uma corretora que ofereça plataforma de negociação de derivativos – muitas delas têm aplicativos intuitivos, como o **Rico** ou o **Clear**, que funcionam como um amigo que te ajuda a entender cada passo. Depois, siga estas etapas:
+Se você nunca operou com opções, o melhor caminho é começar devagar, usando apenas uma pequena parte do seu capital. Primeiro, abra uma conta em uma corretora que ofereça plataforma de negociação de derivativos – muitas delas têm [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) intuitivos, como o **Rico** ou o **Clear**, que funcionam como um amigo que te ajuda a entender cada passo. Depois, siga estas etapas:
 
 - **Estude o básico:** leia artigos, assista a vídeos e pratique com simuladores antes de colocar dinheiro real.  
 - **Defina o objetivo:** proteja sua carteira, busque alavancagem ou apenas aprenda a operar? Seu objetivo vai determinar a estratégia.  

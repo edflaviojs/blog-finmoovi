@@ -37,15 +37,15 @@ Webull funciona de manera similar a otras plataformas de inversión en línea. L
 ## Ventajas
 Las ventajas de utilizar Webull son numerosas. **Consejo práctico:** siempre es importante investigar y comparar las comisiones y tarifas de diferentes plataformas antes de tomar una decisión. Algunas de las ventajas más significativas de Webull incluyen:
  
-* Comisiones bajas: Webull ofrece comisiones más bajas que muchas plataformas tradicionales de corretaje, lo que puede ayudar a los inversores a ahorrar dinero a largo plazo.
+* Comisiones bajas: Webull ofrece comisiones más bajas que muchas plataformas tradicionales de corretaje, lo que puede ayudar a los inversores a ahorrar [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) a largo plazo.
 * Acceso a una amplia variedad de instrumentos financieros: Webull ofrece acceso a una amplia variedad de acciones, opciones, ETFs y otros instrumentos financieros, lo que permite a los inversores diversificar sus carteras y alcanzar sus objetivos de inversión.
 * Herramientas de análisis y gráficos en tiempo real: Webull ofrece una variedad de herramientas de análisis y gráficos en tiempo real, lo que puede ayudar a los inversores a tomar decisiones informadas sobre sus inversiones.
 
 ## Riesgos
 Aunque Webull ofrece muchas ventajas, también hay riesgos asociados con la inversión en el mercado de valores. **Consejo práctico:** siempre es importante investigar y entender los riesgos asociados con cualquier inversión antes de tomar una decisión. Algunos de los riesgos más significativos incluyen:
  
-* Riesgo de pérdida: el mercado de valores puede ser volátil, y los inversores pueden perder dinero si sus inversiones no rinden como se esperaba.
-* Riesgo de liquidez: algunos instrumentos financieros pueden ser difíciles de vender rápidamente, lo que puede hacer que los inversores tengan dificultades para acceder a su dinero cuando lo necesiten.
+* Riesgo de pérdida: el mercado de valores puede ser volátil, y los inversores pueden perder [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) si sus inversiones no rinden como se esperaba.
+* Riesgo de [liquidez](/es/glossario/es-liquidez): algunos instrumentos financieros pueden ser difíciles de vender rápidamente, lo que puede hacer que los inversores tengan dificultades para acceder a su dinero cuando lo necesiten.
 * Riesgo de fraude: como con cualquier plataforma en línea, hay un riesgo de fraude o robo de identidad, por lo que es importante tomar medidas para proteger su cuenta y su información personal.
 
 ![Ventajas](/images/glossario/webull-inline-3.webp)
@@ -53,7 +53,7 @@ Aunque Webull ofrece muchas ventajas, también hay riesgos asociados con la inve
 
 
 ## Ejemplos prácticos
-Supongamos que usted es un inversor individual con un salario de R$5.000 al mes y quiere comenzar a invertir en el mercado de valores. Usted decide depositar R$1.000 en su cuenta de Webull y comenzar a comprar acciones de empresas que considere prometedoras. **Consejo práctico:** siempre es importante diversificar su cartera para minimizar el riesgo, por lo que considere invertir en una variedad de instrumentos financieros. Por ejemplo, usted podría invertir R$500 en acciones de una empresa de tecnología, R$300 en un ETF que sigue el índice de valores de São Paulo, y R$200 en una opción de compra de una empresa de consumo.
+Supongamos que usted es un inversor individual con un salario de R$5.000 al mes y quiere comenzar a invertir en el mercado de valores. Usted decide depositar R$1.000 en su cuenta de Webull y comenzar a comprar acciones de empresas que considere prometedoras. **Consejo práctico:** siempre es importante diversificar su cartera para minimizar el riesgo, por lo que considere invertir en una variedad de instrumentos financieros. Por ejemplo, usted podría invertir R$500 en acciones de una empresa de tecnología, R$300 en un [ETF](/es/glossario/es-etf) que sigue el índice de valores de São Paulo, y R$200 en una opción de compra de una empresa de consumo.
 
 * Ejemplo de cómo Webull puede ayudar:
  + Usted puede utilizar las herramientas de análisis de Webull para investigar y comparar las acciones de diferentes empresas antes de tomar una decisión.

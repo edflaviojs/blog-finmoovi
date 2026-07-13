@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é Cheque Especial?
 
-Cheque especial é um limite de crédito que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o cheque especial — e paga juros altíssimos por isso.
+Cheque especial é um limite de crédito que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o cheque especial — e paga [juros](/glossario/juros) altíssimos por isso.
 
 ## Por que é tão perigoso
 
@@ -34,12 +34,12 @@ Se você ficar R$ 1.000 negativos por 30 dias com juros de 12% ao mês:
 3. **Configure alertas** — aviso quando saldo ficar baixo
 4. **Se precisar de crédito** — empréstimo pessoal tem juros 5x menores
 
-## Alternativas mais baratas
+## [Alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) mais baratas
 
 | Tipo de crédito | Juros mensais |
 |----------------|---------------|
 | Cheque especial | 8-15% |
-| Cartão de crédito (rotativo) | 12-16% |
+| [Cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) (rotativo) | 12-16% |
 | Empréstimo pessoal | 2-5% |
 | Empréstimo consignado | 1-2% |
 | Antecipação FGTS | 1-2% |

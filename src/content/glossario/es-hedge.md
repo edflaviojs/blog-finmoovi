@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-El término "hedge" se refiere a una estrategia financiera utilizada para reducir o eliminar el riesgo de pérdidas en una inversión o posición financiera. En otras palabras, es una forma de proteger tus inversiones contra posibles caídas en el mercado. Imagina que tienes una cartera de acciones de una empresa que ha estado creciendo bien, pero temes que el mercado pueda bajar y afectar el valor de tus acciones. Un hedge te permitiría reducir ese riesgo.
+El término "hedge" se refiere a una estrategia financiera utilizada para reducir o eliminar el riesgo de pérdidas en una inversión o posición financiera. En otras palabras, es una forma de proteger tus inversiones contra posibles caídas en el mercado. Imagina que tienes una cartera de acciones de una empresa que ha estado creciendo bien, pero temes que el mercado pueda bajar y afectar el [valor](/es/glossario/es-valor) de tus acciones. Un hedge te permitiría reducir ese riesgo.
 
 ## Cómo funciona
 Un hedge funciona básicamente como un seguro para tus inversiones. Cuando crees un hedge, estás creando una posición financiera que se mueve en dirección opuesta a la de tu inversión original. Por ejemplo, si tienes acciones de una empresa y crees que el mercado puede bajar, puedes crear un hedge comprando una opción de venta (también conocida como "put") de esas mismas acciones. De esta forma, si el mercado baja, el valor de tus acciones disminuirá, pero el valor de tu opción de venta aumentará, compensando así la pérdida.
@@ -37,7 +37,7 @@ Un hedge funciona básicamente como un seguro para tus inversiones. Cuando crees
 Las ventajas de utilizar un hedge son claras: te permiten reducir el riesgo de pérdidas en tus inversiones y proteger tu patrimonio. **Consejo práctico:** siempre es importante diversificar tus inversiones para reducir el riesgo, y un hedge puede ser una forma de hacerlo. Además, un hedge puede ayudarte a dormir mejor por la noche, sabiendo que has tomado medidas para proteger tus inversiones.
 
 ## Riesgos
-Sin embargo, también hay riesgos asociados con los hedges. **Consejo práctico:** es importante entender que un hedge no es una forma de hacer dinero, sino de reducir el riesgo. Si el mercado sube, tu hedge puede perder valor, lo que significa que habrás gastado dinero en una estrategia que no te ha beneficiado. Además, los hedges pueden ser complejos y requerir un conocimiento avanzado de los mercados financieros.
+Sin embargo, también hay riesgos asociados con los hedges. **Consejo práctico:** es importante entender que un hedge no es una forma de hacer [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado), sino de reducir el riesgo. Si el mercado sube, tu hedge puede perder valor, lo que significa que habrás gastado [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) en una estrategia que no te ha beneficiado. Además, los hedges pueden ser complejos y requerir un conocimiento avanzado de los mercados financieros.
 
 ![Ventajas](/images/glossario/hedge-inline-3.webp)
 
@@ -46,7 +46,7 @@ Sin embargo, también hay riesgos asociados con los hedges. **Consejo práctico:
 * Algunos riesgos asociados con los hedges incluyen:
  + Pérdida de valor si el mercado sube
  + Costos de transacción y comisiones
- + Riesgo de liquidez si no puedes vender tu hedge cuando lo necesites
+ + Riesgo de [liquidez](/es/glossario/es-liquidez) si no puedes vender tu hedge cuando lo necesites
 
 ## Ejemplos prácticos
 Imagina que eres un empleado con un salario de R$5.000 al mes y has invertido R$10.000 en acciones de una empresa. Si el mercado baja un 10%, tu inversión valdrá R$9.000. Sin embargo, si has creado un hedge comprando una opción de venta de esas acciones, podrías recuperar parte de la pérdida. **Consejo práctico:** siempre es importante investigar y entender los costos y riesgos asociados con un hedge antes de invertir.

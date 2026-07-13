@@ -11,16 +11,16 @@ readingTime: 1
 
 ## What is Emergency Fund?
 
-An emergency fund is a financial cushion that protects you from unexpected events. It's the money you can access quickly when something unexpected happens.
+An emergency fund is a financial cushion that protects you from unexpected events. It's the [money](/en/posts/en-30-day-rule-for-purchases) you can access quickly when something unexpected happens.
 
 ## How much to save?
 
-The recommendation is to have between **3 to 6 months** of your monthly expenses. If you spend R$ 3,000/month, your ideal reserve is between R$ 9,000 and R$ 18,000.
+The recommendation is to have between **3 to 6 months** of your monthly [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). If you spend R$ 3,000/month, your ideal reserve is between R$ 9,000 and R$ 18,000.
 
 ## Where to keep it?
 
-The reserve needs to have **daily liquidity** (immediate access):
-- Tesouro Selic
+The reserve needs to have **daily [liquidity](/en/glossario/en-liquidez)** (immediate access):
+- Tesouro [Selic](/en/glossario/en-selic)
 - CDB with daily liquidity (100% CDI or more)
 - Remunerated account
 

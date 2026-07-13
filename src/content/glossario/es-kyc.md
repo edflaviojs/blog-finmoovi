@@ -18,10 +18,10 @@ seo:
 ---
 
 ## Qué es
-El término "KYC" se refiere a "Know Your Customer" (Conoce a tu Cliente), un proceso que las instituciones financieras y empresas utilizan para verificar la identidad de sus clientes y evaluar el riesgo de lavado de dinero o financiamiento del terrorismo. En otras palabras, es un conjunto de medidas para asegurarse de que los clientes sean quienes dicen ser y no estén involucrados en actividades ilícitas.
+El término "KYC" se refiere a "Know Your Customer" (Conoce a tu Cliente), un proceso que las instituciones financieras y empresas utilizan para verificar la identidad de sus clientes y evaluar el riesgo de lavado de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) o [financiamiento](/es/glossario/es-financiamento) del terrorismo. En otras palabras, es un conjunto de medidas para asegurarse de que los clientes sean quienes dicen ser y no estén involucrados en actividades ilícitas.
 
 ## Cómo funciona
-El proceso KYC implica la recopilación y verificación de información personal y financiera de los clientes, como nombre, dirección, número de identificación, ingresos y ocupación. Las instituciones financieras utilizan esta información para evaluar el riesgo de cada cliente y determinar si es necesario realizar una verificación más exhaustiva. Por ejemplo, si un cliente tiene un salario de R$5.000 al mes y quiere abrir una cuenta de ahorro, la institución financiera puede requerir documentación adicional para verificar su ingreso y ocupación.
+El proceso KYC implica la recopilación y verificación de información personal y financiera de los clientes, como nombre, dirección, número de identificación, ingresos y ocupación. Las instituciones financieras utilizan esta información para evaluar el riesgo de cada cliente y determinar si es necesario realizar una verificación más exhaustiva. Por ejemplo, si un cliente tiene un salario de R$5.000 al mes y quiere abrir una cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado), la institución financiera puede requerir documentación adicional para verificar su ingreso y ocupación.
 
 ![Qué es](/images/glossario/kyc-inline-1.webp)
 

@@ -18,9 +18,9 @@ seo:
 ---
 
 ## O que é
-O termo "usura" refere-se à prática de emprestar dinheiro a juros excessivos, muitas vezes de forma abusiva. Isso significa que o valor dos juros é tão alto que torna difícil para o devedor pagar a dívida. No Brasil, a usura é considerada ilegal e é regulamentada pelo Código Penal, que define como usura a cobrança de juros acima de 12% ao ano.
+O termo "usura" refere-se à prática de emprestar dinheiro a [juros](/glossario/juros) excessivos, muitas vezes de forma abusiva. Isso significa que o valor dos juros é tão alto que torna difícil para o devedor pagar a dívida. No Brasil, a usura é considerada ilegal e é regulamentada pelo Código Penal, que define como usura a cobrança de juros acima de 12% ao ano.
 
-A usura pode ocorrer em diferentes situações, como empréstimos pessoais, cartões de crédito, financiamentos de imóveis, entre outros. É importante entender que a usura não é apenas um problema para as pessoas que estão endividadas, mas também pode afetar a economia como um todo. **Dica prática:** sempre verifique as taxas de juros antes de contratar um empréstimo ou financiamento.
+A usura pode ocorrer em diferentes situações, como empréstimos pessoais, cartões de crédito, financiamentos de imóveis, entre outros. É importante entender que a usura não é apenas um problema para as pessoas que estão endividadas, mas também pode afetar a [economia](/posts/5-alternativas-ao-mobills-em-2026) como um todo. **Dica prática:** sempre verifique as taxas de juros antes de contratar um empréstimo ou [financiamento](/glossario/financiamento).
 
 ![O que é](/images/glossario/usura-inline-1.webp)
 
@@ -51,7 +51,7 @@ Os riscos associados à usura são significativos e podem ter consequências gra
 * Dano ao crédito
 * Estresse e ansiedade
 
-**Dica prática:** sempre verifique a reputação do credor antes de contratar um empréstimo ou financiamento. Além disso, é importante entender que a usura não é apenas um problema para as pessoas que estão endividadas, mas também pode afetar a economia como um todo.
+**Dica prática:** sempre verifique a reputação do credor antes de contratar um empréstimo ou financiamento. Além disso, é importante entender que a usura não é apenas um problema para as pessoas que estão endividadas, mas também pode afetar a [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) como um todo.
 
 ## Exemplos práticos
 Vamos considerar um exemplo prático. João tem um salário de R$ 5.000 por mês e precisa de um empréstimo de R$ 20.000 para pagar uma conta médica. Ele encontra um credor que oferece um empréstimo com juros de 25% ao ano. Isso significa que João precisará pagar R$ 5.000 apenas em juros no primeiro ano, além do valor principal do empréstimo.

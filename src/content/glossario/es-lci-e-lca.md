@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que são LCI e LCA?
 
-LCI (Letra de Crédito Imobiliário) e LCA (Letra de Crédito do Agronegócio) são investimentos de renda fixa emitidos por bancos. A grande vantagem: são **isentos de Imposto de Renda** para pessoa física.
+LCI (Letra de [Crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário) e LCA (Letra de Crédito do Agronegócio) são investimentos de [renda fixa](/es/glossario/es-renda-fixa) emitidos por bancos. A grande vantagem: são **isentos de [Imposto de Renda](/es/glossario/es-imposto-de-renda)** para pessoa física.
 
 ## Diferencia entre LCI e LCA
 

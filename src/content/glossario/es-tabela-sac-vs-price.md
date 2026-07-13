@@ -8,7 +8,7 @@ publishedAt: 2026-06-06
 ---
 
 ## Entendiendo la Tabela SAC
-La Tabela SAC es un método de cálculo de prestaciones que mantiene el valor de la amortización (parte del pago que reduce el saldo deudor) constante a lo largo del financiamiento. Esto significa que, aunque el valor de la prestación disminuye a lo largo del tiempo debido a la reducción de los intereses, la parte que efectivamente paga el préstamo (amortización) permanece la misma.
+La Tabela SAC es un método de cálculo de prestaciones que mantiene el valor de la [amortización](/es/glossario/es-amortizacao) (parte del pago que reduce el saldo deudor) constante a lo largo del [financiamiento](/es/glossario/es-financiamento). Esto significa que, aunque el valor de la prestación disminuye a lo largo del tiempo debido a la reducción de los intereses, la parte que efectivamente paga el préstamo (amortización) permanece la misma.
 
 ## Entendiendo la Tabela Price
 Ya la Tabela Price es un método que mantiene el valor de la prestación constante a lo largo del financiamiento. En este caso, la amortización y los intereses varían en cada prestación. Al inicio del financiamiento, una gran parte de la prestación se destina al pago de intereses, y solo una pequeña parte se utiliza para amortizar el préstamo. A medida que el financiamiento avanza, la parte destinada a los intereses disminuye, y la parte que amortiza el préstamo aumenta.
@@ -32,4 +32,4 @@ La elección entre la Tabela SAC y la Tabela Price depende de tu perfil de finan
 | Amortización | Constante | Variable |
 | Intereses | Disminuyen a lo largo del tiempo | Varían, pero la prestación total permanece constante |
 
-En resumen, entender la diferencia entre la Tabela SAC y la Tabela Price es fundamental para tomar decisiones informadas sobre financiamientos y préstamos, considerando los intereses, la amortización y el impacto en tu presupuesto.
+En resumen, entender la diferencia entre la Tabela SAC y la Tabela Price es fundamental para tomar decisiones informadas sobre financiamientos y préstamos, considerando los intereses, la amortización y el impacto en tu [presupuesto](/es/posts/es-5-alternativas-ao-mobills-em-2026).

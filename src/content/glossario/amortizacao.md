@@ -15,7 +15,7 @@ Amortização é o ato de pagar o valor principal de uma dívida aos poucos. Cad
 
 ## Tipos de amortização
 
-### Tabela SAC (Sistema de Amortização Constante)
+### [Tabela SAC](/glossario/tabela-sac) (Sistema de Amortização Constante)
 
 - Amortização fixa em todas as parcelas
 - Parcelas começam maiores e diminuem
@@ -29,10 +29,10 @@ Amortização é o ato de pagar o valor principal de uma dívida aos poucos. Cad
 
 ## Exemplo prático
 
-Financiamento de R$ 100.000 em 30 anos a 10% a.a.:
+[Financiamento](/glossario/financiamento) de R$ 100.000 em 30 anos a 10% a.a.:
 - **SAC:** primeira parcela ~R$ 1.111, última ~R$ 282. Total pago: ~R$ 250.000
 - **Price:** todas as parcelas ~R$ 877. Total pago: ~R$ 316.000
 
 ## Amortização extraordinária
 
-Você pode fazer pagamentos extras para reduzir o saldo devedor mais rápido. Isso economiza milhares em juros. Sempre que tiver dinheiro sobrando, considere amortizar suas dívidas.
+Você pode fazer pagamentos extras para reduzir o saldo devedor mais rápido. Isso economiza milhares em juros. Sempre que tiver [dinheiro](/posts/cashback-inteligente) sobrando, considere amortizar suas dívidas.

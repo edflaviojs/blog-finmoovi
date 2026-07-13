@@ -20,7 +20,7 @@ seo:
 ## What it is
 O termo "fundos" é comumente usado no contexto de investimentos financeiros, e se refere a um tipo de investimento coletivo, onde o dinheiro de vários investidores é reunido e aplicado em diferentes ativos, como ações, títulos, imóveis, etc. Imagine que você tem R$ 1.000 para investir, mas não sabe exatamente onde aplicar. Em vez de tentar fazer isso sozinho, você pode investir em um fundo que é gerido por profissionais experientes. Eles vão distribuir seu dinheiro em uma variedade de ativos, tentando maximizar os retornos e minimizar os riscos.
 
-Os fundos podem ser de diferentes tipos, como fundos de ações, fundos de renda fixa, fundos imobiliários, etc. Cada tipo de fundo tem seus próprios objetivos e estratégias de investimento. Por exemplo, um fundo de ações pode investir em empresas que têm potencial de crescimento, enquanto um fundo de renda fixa pode investir em títulos de empresas ou do governo, buscando uma renda estável.
+Os fundos podem ser de diferentes tipos, como fundos de ações, fundos de [renda fixa](/en/glossario/en-renda-fixa), fundos imobiliários, etc. Cada tipo de fundo tem seus próprios objetivos e estratégias de investimento. Por exemplo, um fundo de ações pode investir em empresas que têm potencial de crescimento, enquanto um fundo de renda fixa pode investir em títulos de empresas ou do governo, buscando uma renda estável.
 
 ![What it is](/images/glossario/fundos-inline-1.webp)
 
@@ -36,7 +36,7 @@ Quando você investe em um fundo, você está basicamente comprando uma parte de
 Por exemplo, se você investir R$ 5.000 em um fundo de ações, e o fundo tem um valor total de R$ 1 milhão, você é dono de 0,5% desse fundo. Se o fundo valorizar 10% em um mês, o valor da sua parte também aumentará 10%, para R$ 5.500. **Practical tip:** é importante ler o prospecto do fundo antes de investir, para entender como a taxa de administração é cobrada e como o fundo é gerido.
 
 ## Advantages
-Os fundos oferecem várias vantagens para os investidores. Uma das principais vantagens é a diversificação. Quando você investe em um fundo, você está investindo em uma variedade de ativos, o que pode reduzir o risco de perda. Além disso, os fundos são geridos por profissionais experientes, que têm acesso a informações e recursos que você pode não ter.
+Os fundos oferecem várias vantagens para os investidores. Uma das principais vantagens é a [diversificação](/en/glossario/en-diversificacao). Quando você investe em um fundo, você está investindo em uma variedade de ativos, o que pode reduzir o risco de perda. Além disso, os fundos são geridos por profissionais experientes, que têm acesso a informações e recursos que você pode não ter.
 
 Outra vantagem é a liquidez. Muitos fundos permitem que você resgate seu investimento a qualquer momento, o que pode ser útil se você precisar de dinheiro rapidamente. **Practical tip:** é importante entender as regras de resgate do fundo antes de investir, para evitar surpresas desagradáveis.
 
@@ -48,7 +48,7 @@ Outra vantagem é a liquidez. Muitos fundos permitem que você resgate seu inves
 * Gerenciamento profissional: os fundos são geridos por profissionais experientes
 * Liquidez: muitos fundos permitem que você resgate seu investimento a qualquer momento
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Como qualquer investimento, os fundos também envolvem riscos. Um dos principais riscos é o risco de perda. Se o fundo investir em ativos que não valorizam, o valor da sua parte pode diminuir. Além disso, os fundos também estão sujeitos a riscos de mercado, como mudanças na economia ou na política.
 
 Outro risco é o risco de liquidez. Se muitos investidores decidirem resgatar seu investimento ao mesmo tempo, o fundo pode ter dificuldade em pagar todos os resgates, o que pode afetar o valor da sua parte. **Practical tip:** é importante diversificar seus investimentos, para reduzir o risco de perda.

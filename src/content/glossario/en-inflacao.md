@@ -11,7 +11,7 @@ readingTime: 1
 
 ## What is Inflação?
 
-Inflation is the general increase in prices. When inflation rises, the same amount of money buys fewer things. That's why R$ 100 today buy less than R$ 100 did 10 years ago.
+Inflation is the general increase in prices. When inflation rises, the same amount of [money](/en/posts/en-30-day-rule-for-purchases) buys fewer things. That's why R$ 100 today buy less than R$ 100 did 10 years ago.
 
 ## Como é medida no Brasil?
 
@@ -19,7 +19,7 @@ The main index is the **IPCA** (Índice de Preços ao Consumidor Amplo), calcula
 
 ## Why does it matter? for your finances?
 
-If your investments yield less than inflation, you're **losing money** in real terms. Example:
+If your investments [yield](/en/glossario/en-yield) less than inflation, you're **losing [money](/en/posts/en-avoid-impulse-purchases)** in real terms. Example:
 - Inflation: 5% per year
 - Savings: 6% per year
 - Real gain: only 1%
@@ -28,5 +28,5 @@ If your investments yield less than inflation, you're **losing money** in real t
 
 - Invest in assets that yield above inflation
 - Tesouro IPCA+ guarantees real returns
-- Diversify between fixed and variable income
+- Diversify between fixed and [variable income](/en/glossario/en-renda-variavel)
 - Track the monthly IPCA

@@ -48,12 +48,12 @@ As opções trazem flexibilidade e podem ser usadas tanto para proteger investim
 
 
 
-- **Alavancagem:** com um pequeno prêmio você controla uma quantidade maior de ativos.  
+- **[Alavancagem](/en/glossario/en-alavancagem):** com um pequeno prêmio você controla uma quantidade maior de ativos.  
 - **Proteção (hedge):** permite limitar perdas em uma carteira de ações.  
 - **Renda extra:** ao vender opções, você recebe o prêmio como renda adicional.  
-- **Diversificação:** abre possibilidades de estratégias que não existem em investimentos tradicionais.
+- **[Diversificação](/en/glossario/en-diversificacao):** abre possibilidades de estratégias que não existem em investimentos tradicionais.
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Apesar das vantagens, as opções carregam riscos que não podem ser ignorados.  
 

@@ -25,8 +25,8 @@ Meta financeira é um objetivo concreto para seu dinheiro. Não é "quero econom
 
 ### Curto prazo (até 1 ano)
 
-- Montar reserva de emergência de R$ 15.000
-- Quitar cartão de crédito de R$ 3.000
+- Montar [reserva de emergência](/glossario/reserva-de-emergencia) de R$ 15.000
+- Quitar [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) de R$ 3.000
 - Juntar R$ 5.000 para viagem
 
 ### Médio prazo (1-5 anos)
@@ -37,7 +37,7 @@ Meta financeira é um objetivo concreto para seu dinheiro. Não é "quero econom
 
 ### Longo prazo (5+ anos)
 
-- Independência financeira (R$ 1.500.000)
+- [Independência financeira](/glossario/independencia-financeira) (R$ 1.500.000)
 - Aposentadoria complementar
 - Comprar imóvel à vista
 
@@ -46,7 +46,7 @@ Meta financeira é um objetivo concreto para seu dinheiro. Não é "quero econom
 1. Defina o valor total e o prazo
 2. Divida pelo número de meses (aporte mensal necessário)
 3. Automatize a transferência mensal
-4. Acompanhe o progresso (apps como FinMoovi ajudam)
+4. Acompanhe o progresso (apps como [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) ajudam)
 5. Celebre marcos intermediários (25%, 50%, 75%)
 
 ## Dica

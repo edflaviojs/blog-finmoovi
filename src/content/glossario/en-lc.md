@@ -23,7 +23,7 @@ A Letra de Crédito (LC) é um tipo de instrumento financeiro utilizado para gar
 * A LC é emitida pelo banco do comprador
 * O vendedor recebe o pagamento do banco se o comprador não pagar
 * A LC pode ser utilizada para pagamentos nacionais ou internacionais
-* É comum em transações de grande valor, como compras de mercadorias ou serviços
+* É comum em transações de grande [valor](/en/glossario/en-valor), como compras de mercadorias ou serviços
 
 ![What it is](/images/glossario/lc-inline-1.webp)
 
@@ -46,7 +46,7 @@ As LCs oferecem várias vantagens tanto para o comprador quanto para o vendedor.
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Embora as LCs sejam uma forma segura de pagamento, elas também envolvem alguns riscos. Um dos principais riscos é o risco de fraude, pois as LCs podem ser falsificadas ou alteradas. Além disso, as LCs podem ser utilizadas para fins ilegais, como lavagem de dinheiro ou evasão fiscal. **Practical tip:** É importante verificar a autenticidade da LC antes de aceitá-la, e também é importante manter registros precisos das transações.
 
 **Practical tip:** É importante trabalhar com um banco confiável e experiente em LCs para minimizar os riscos.

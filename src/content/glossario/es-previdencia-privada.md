@@ -11,7 +11,7 @@ readingTime: 2
 
 ## ¿Qué es Previdência Privada?
 
-Previdência Privada é um investimento de longo prazo pensado para a aposentadoria. Você contribui mensalmente e, no futuro, resgata o valor acumulado (com rendimentos). É um complemento à aposentadoria do INSS.
+Previdência Privada é um investimento de longo prazo pensado para a aposentadoria. Você contribui mensalmente e, no futuro, resgata o [valor](/es/glossario/es-valor) acumulado (com rendimentos). É um complemento à aposentadoria do INSS.
 
 ## PGBL vs. VGBL
 
@@ -47,7 +47,7 @@ Previdência Privada é um investimento de longo prazo pensado para a aposentado
 
 ## Desventajas
 
-- Taxas de administração altas (muitos fundos cobram 1-2%)
+- Taxas de administração altas (muitos [fundos](/es/glossario/es-fundos) cobram 1-2%)
 - Taxa de carregamento (alguns cobram na entrada)
 - Rendimento pode ser inferior a investir por conta própria
 - Pouca flexibilidade

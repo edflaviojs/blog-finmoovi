@@ -21,7 +21,7 @@ seo:
 Ações são partes de propriedade de uma empresa que podem ser compradas e vendidas por investidores. Quando você compra uma ação, você está basicamente comprando uma pequena parte daquela empresa. Isso significa que, se a empresa cresce e se torna mais valiosa, o valor da sua ação também aumenta. Por exemplo, imagine que você comprou uma ação da empresa XYZ por R$ 50 e, após um ano, a empresa lança um novo produto que se torna um sucesso, fazendo com que o valor da ação suba para R$ 75. Você poderia vender sua ação por R$ 75 e ter um lucro de R$ 25.
 
  
-As ações são negociadas em bolsas de valores, como a B3 no Brasil, e podem ser compradas e vendidas por meio de corretoras de valores. É importante entender que as ações são um tipo de investimento de risco, o que significa que há a possibilidade de perder dinheiro se a empresa não se sair bem.
+As ações são negociadas em bolsas de valores, como a B3 no Brasil, e podem ser compradas e vendidas por meio de corretoras de valores. É importante entender que as ações são um tipo de investimento de risco, o que significa que há a possibilidade de perder [dinheiro](/posts/cashback-inteligente) se a empresa não se sair bem.
 
 ![O que é](/images/glossario/acoes-inline-1.webp)
 
@@ -30,14 +30,14 @@ As ações são negociadas em bolsas de valores, como a B3 no Brasil, e podem se
 ## Como funciona
 Quando você compra uma ação, você está comprando uma parte daquela empresa e se torna um acionista. As empresas emitem ações para levantar capital para financiar suas operações e projetos. Os preços das ações são determinados pelo mercado, ou seja, pelo equilíbrio entre a oferta e a demanda por aquela ação. Se muitas pessoas querem comprar uma ação, o preço tende a subir, e se muitas pessoas querem vender, o preço tende a cair.
 
-* Ações ordinárias: dão aos acionistas o direito de votar nas decisões da empresa e receber dividendos, que são pagamentos feitos pela empresa aos seus acionistas a partir dos lucros.
+* Ações ordinárias: dão aos acionistas o direito de votar nas decisões da empresa e receber [dividendos](/glossario/dividendos), que são pagamentos feitos pela empresa aos seus acionistas a partir dos lucros.
 * Ações preferenciais: não dão o direito de votar, mas têm prioridade sobre as ações ordinárias no recebimento de dividendos e no caso de liquidação da empresa.
 
 ## Vantagens
 As ações oferecem várias vantagens para os investidores, incluindo:
 * Potencial de alto retorno: as ações têm o potencial de oferecer retornos mais altos do que outros investimentos, como títulos ou contas poupança.
 * Liquidez: as ações podem ser facilmente compradas e vendidas em bolsas de valores.
-* Diversificação: as ações permitem que os investidores diversifiquem seus portfólios, reduzindo o risco de perda.
+* [Diversificação](/glossario/diversificacao): as ações permitem que os investidores diversifiquem seus portfólios, reduzindo o risco de perda.
 
 **Dica prática:** _Para começar a investir em ações, é importante definir seus objetivos financeiros e tolerância ao risco. Isso ajudará a determinar qual tipo de ação é mais adequado para você._
 
@@ -61,7 +61,7 @@ Vamos considerar um exemplo. Imagine que você tem um salário de R$ 5.000 por m
 **Dica prática:** _É importante monitorar regularmente o desempenho de suas ações e ajustar seu portfólio conforme necessário. Isso pode envolver vender ações que não estão se saindo bem e comprar novas ações que têm potencial de crescimento._
 
 ## Comece hoje
-Agora que você entende melhor o que são ações e como elas funcionam, é hora de começar a investir. Lembre-se de que investir em ações é uma jornada de longo prazo e que é importante ser paciente e disciplinado. Com as **dicas práticas** certas e um pouco de conhecimento, você pode começar a construir sua riqueza e alcançar seus objetivos financeiros. Então, não espere mais! Comece a investir em ações hoje e veja seu dinheiro crescer ao longo do tempo.
+Agora que você entende melhor o que são ações e como elas funcionam, é hora de começar a investir. Lembre-se de que investir em ações é uma jornada de longo prazo e que é importante ser paciente e disciplinado. Com as **[dicas](/posts/7-erros-financeiros-iniciante) práticas** certas e um pouco de conhecimento, você pode começar a construir sua riqueza e alcançar seus objetivos financeiros. Então, não espere mais! Comece a investir em ações hoje e veja seu dinheiro crescer ao longo do tempo.
 
 ---
 

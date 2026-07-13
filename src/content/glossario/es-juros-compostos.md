@@ -9,9 +9,9 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## O que são Juros Compostos?
+## O que são [Juros](/es/glossario/es-juros) Compostos?
 
-Juros compostos são juros calculados sobre o valor original **mais** os juros já acumulados. Diferente dos juros simples (que incidem só sobre o valor inicial), os compostos crescem exponencialmente.
+Juros compostos são juros calculados sobre o [valor](/es/glossario/es-valor) original **mais** os juros já acumulados. Diferente dos juros simples (que incidem só sobre o valor inicial), os compostos crescem exponencialmente.
 
 ## Ejemplo práctico
 

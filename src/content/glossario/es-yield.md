@@ -18,10 +18,10 @@ seo:
 ---
 
 ## Qué es
-El término financiero "yield" se refiere a la rentabilidad o el rendimiento de una inversión, es decir, el retorno que obtienes por el dinero que inviertes. En otras palabras, es la ganancia que obtienes en relación con el capital invertido. Por ejemplo, si inviertes R$1.000 en una acción y obtienes un rendimiento del 10%, tu yield sería de R$100.
+El término financiero "yield" se refiere a la rentabilidad o el rendimiento de una inversión, es decir, el retorno que obtienes por el [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) que inviertes. En otras palabras, es la ganancia que obtienes en relación con el capital invertido. Por ejemplo, si inviertes R$1.000 en una acción y obtienes un rendimiento del 10%, tu yield sería de R$100.
 
 ## Cómo funciona
-El yield funciona de manera que te permite comparar la rentabilidad de diferentes inversiones. Por ejemplo, si tienes dos opciones de inversión, una con un rendimiento del 8% y otra con un rendimiento del 12%, es probable que elijas la segunda opción porque tiene un yield más alto. Sin embargo, es importante tener en cuenta que el yield no es lo único que debes considerar al tomar decisiones de inversión. También debes considerar el riesgo asociado con cada inversión, ya que una inversión con un yield más alto puede tener un riesgo más alto.
+El yield funciona de manera que te permite comparar la rentabilidad de diferentes [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Por ejemplo, si tienes dos opciones de inversión, una con un rendimiento del 8% y otra con un rendimiento del 12%, es probable que elijas la segunda opción porque tiene un yield más alto. Sin embargo, es importante tener en cuenta que el yield no es lo único que debes considerar al tomar decisiones de inversión. También debes considerar el riesgo asociado con cada inversión, ya que una inversión con un yield más alto puede tener un riesgo más alto.
 
 ![Qué es](/images/glossario/yield-inline-1.webp)
 
@@ -29,7 +29,7 @@ El yield funciona de manera que te permite comparar la rentabilidad de diferente
 
 * El yield se puede calcular de diferentes maneras, dependiendo del tipo de inversión.
 * El yield puede ser fijo o variable, dependiendo del tipo de inversión.
-* El yield puede ser afectado por factores como la inflación, los intereses y el riesgo.
+* El yield puede ser afectado por factores como la [inflación](/es/glossario/es-inflacao), los intereses y el riesgo.
 
 El yield es un concepto importante en finanzas porque te permite evaluar la rentabilidad de tus inversiones y tomar decisiones informadas. Por ejemplo, si tienes un salario de R$5.000 al mes y quieres invertir R$1.000 en una acción, debes considerar el yield que obtendrás en relación con el riesgo que estás dispuesto a asumir.
 
@@ -69,7 +69,7 @@ Para empezar a invertir y obtener un buen yield, debes seguir estos pasos:
 * Debes revisar regularmente tus inversiones para asegurarte de que siguen siendo rentables.
 
 ## Empieza hoy
-No esperes más para empezar a invertir y obtener un buen yield. Con un poco de investigación y planificación, puedes empezar a construir una cartera de inversiones que te brinde una buena rentabilidad y te ayude a alcanzar tus objetivos financieros. **Consejo práctico:** debes empezar a invertir lo antes posible para aprovechar el poder del interés compuesto. ¡Empieza hoy y comienza a construir un futuro financiero más seguro!
+No esperes más para empezar a invertir y obtener un buen yield. Con un poco de investigación y planificación, puedes empezar a construir una cartera de inversiones que te brinde una buena rentabilidad y te ayude a alcanzar tus objetivos financieros. **Consejo práctico:** debes empezar a invertir lo antes posible para aprovechar el poder del [interés compuesto](/es/glossario/es-juros-compostos). ¡Empieza hoy y comienza a construir un futuro financiero más seguro!
 
 ---
 

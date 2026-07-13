@@ -11,7 +11,7 @@ readingTime: 1
 
 ## O que é Financiamento?
 
-Financiamento é quando um banco empresta dinheiro para você comprar algo de valor alto (casa, carro, etc.) e você paga de volta em parcelas ao longo de anos. O bem comprado fica como garantia — se você parar de pagar, o banco pode tomar.
+Financiamento é quando um banco empresta [dinheiro](/posts/cashback-inteligente) para você comprar algo de [valor](/glossario/valor) alto (casa, carro, etc.) e você paga de volta em parcelas ao longo de anos. O bem comprado fica como garantia — se você parar de pagar, o banco pode tomar.
 
 ## Tipos comuns
 
@@ -29,9 +29,9 @@ Financiamento é quando um banco empresta dinheiro para você comprar algo de va
 - Entrada: quanto mais, melhor
 - Carro fica alienado ao banco
 
-## Dicas para financiar bem
+## [Dicas](/posts/7-erros-financeiros-iniciante) para financiar bem
 
-1. **Dê a maior entrada possível** — reduz juros totais
+1. **Dê a maior entrada possível** — reduz [juros](/glossario/juros) totais
 2. **Escolha o menor prazo que cabe no bolso** — menos juros
 3. **Compare taxas entre bancos** — diferença pode ser enorme
 4. **Prefira SAC** — paga menos juros no total

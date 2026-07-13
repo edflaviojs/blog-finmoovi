@@ -8,8 +8,8 @@ relatedTerms: ["Dividendos","Ações","Rendimento"]
 publishedAt: 2026-06-11
 ---
 
-## Introduction to Dividend Yield
-When we invest in stocks, one of the main reasons is the possibility of receiving dividends. Dividends are payments made by companies to their shareholders, representing a portion of the profits obtained. However, to understand how attractive a stock investment is in terms of dividends, we need to consider the Dividend Yield.
+## Introduction to Dividend [Yield](/en/glossario/en-yield)
+When we invest in stocks, one of the main reasons is the possibility of receiving [dividends](/en/glossario/en-dividendos). Dividends are payments made by companies to their shareholders, representing a portion of the profits obtained. However, to understand how attractive a stock investment is in terms of dividends, we need to consider the Dividend Yield.
 
 ## What is the Dividend Yield?
 The Dividend Yield is calculated by dividing the annual value of dividends paid per share by the current share price. This gives us a percentage that represents the annual return that an investor can expect to receive in dividends for each dollar invested in the stock.
@@ -41,4 +41,4 @@ To better understand the attractiveness of different stocks, we can compare thei
 In this table, we see that company Y offers the highest Dividend Yield, which may make it more attractive to investors seeking dividend income. However, it's essential to remember that the Dividend Yield is just one of many considerations when investing in stocks.
 
 ## Conclusion
-The Dividend Yield is a valuable tool for investors seeking to understand the potential return of their stocks. By considering the Dividend Yield, you can make more informed decisions about where to invest your money. Remember that, in addition to the Dividend Yield, it's crucial to consider other factors, such as the company's financial health, the sector it operates in, and growth prospects. With this information, you'll be better prepared to navigate the world of stock investments.
+The Dividend Yield is a valuable tool for investors seeking to understand the potential return of their stocks. By considering the Dividend Yield, you can make more informed decisions about where to invest your [money](/en/posts/en-30-day-rule-for-purchases). Remember that, in addition to the Dividend Yield, it's crucial to consider other factors, such as the company's financial health, the sector it operates in, and growth prospects. With this information, you'll be better prepared to navigate the world of stock [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026).

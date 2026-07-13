@@ -11,7 +11,7 @@ readingTime: 1
 
 ## What is Wealth Management?
 
-Wealth Management (gestão de patrimônio) is a premium financial service that takes care of all aspects of a person's financial life: investments, taxes, inheritance, insurance, and long-term planning.
+Wealth Management (gestão de patrimônio) is a premium financial service that takes care of all aspects of a person's financial life: [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), taxes, inheritance, insurance, and long-term planning.
 
 ## For whom is it
 
@@ -52,4 +52,4 @@ Even without a wealth manager, you can:
 2. Use PGBL to reduce IR
 3. Have adequate insurance
 4. Keep organized records
-5. Use apps like FinMoovi for total control
+5. Use apps like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for total control

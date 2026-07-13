@@ -13,7 +13,7 @@ readingTime: 2
 
 Renda Variável is everything that doesn't have a guaranteed return. The price goes up and down according to the market. You can earn a lot — or lose. It includes stocks, real estate funds, ETFs, cryptocurrencies, and derivatives.
 
-## Diferença para Renda Fixa
+## Diferença para [Renda Fixa](/en/glossario/en-renda-fixa)
 
 | | Renda Fixa | Renda Variável |
 |--|-----------|---------------|
@@ -26,12 +26,12 @@ Renda Variável is everything that doesn't have a guaranteed return. The price g
 ## Principais investimentos de renda variável
 
 1. **Ações** — pieces of companies
-2. **Fundos Imobiliários (FIIs)** — shares of funds that invest in real estate
+2. **[Fundos](/en/glossario/en-fundos) Imobiliários (FIIs)** — shares of funds that invest in real estate
 3. **ETFs** — funds that replicate indexes
 4. **Criptomoedas** — decentralized digital assets
 5. **Derivativos** — futures contracts, options (advanced)
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 - Perda de capital (your investment may be worth less)
 - Volatilidade (daily fluctuations)
@@ -40,4 +40,4 @@ Renda Variável is everything that doesn't have a guaranteed return. The price g
 
 ## Regra de ouro
 
-Only invest in renda variável with money you won't need in the next 5 years. And always have your emergency reserve in renda fixa before starting.
+Only invest in renda variável with [money](/en/posts/en-30-day-rule-for-purchases) you won't need in the next 5 years. And always have your emergency reserve in renda fixa before starting.

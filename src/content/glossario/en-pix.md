@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is PIX?
 
-PIX is the instant payment system created by the Banco Central in 2020. It allows you to transfer money in up to 10 seconds, 24 hours a day, 7 days a week — including holidays. It's free for individuals.
+PIX is the instant payment system created by the Banco Central in 2020. It allows you to transfer [money](/en/posts/en-30-day-rule-for-purchases) in up to 10 seconds, 24 hours a day, 7 days a week — including holidays. It's free for individuals.
 
 ## How does it work?
 
@@ -45,4 +45,4 @@ PIX is the instant payment system created by the Banco Central in 2020. It allow
 
 ## PIX and financial control
 
-PIX makes it easier to track expenses because all transactions are recorded in the statement. Apps like FinMoovi automatically categorize your PIX transactions so you know exactly where your money is going.
+PIX makes it easier to track expenses because all transactions are recorded in the statement. Apps like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) automatically categorize your PIX transactions so you know exactly where your money is going.

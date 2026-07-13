@@ -19,7 +19,7 @@ seo:
 
 ## O que é
 
-Renda fixa é um conjunto de investimentos em que você já sabe, antes de aplicar, qual será a forma de remuneração e, geralmente, quando receberá o dinheiro de volta. Diferente da bolsa de ações, onde o retorno depende do desempenho das empresas, na renda fixa o pagamento pode ser um juros pré‑definido (como em um CDB) ou atrelado a um índice (como o IPCA). Por isso, ela costuma ser a primeira escolha de quem quer segurança e previsibilidade no bolso.
+Renda fixa é um conjunto de investimentos em que você já sabe, antes de aplicar, qual será a forma de remuneração e, geralmente, quando receberá o [dinheiro](/posts/cashback-inteligente) de volta. Diferente da bolsa de ações, onde o retorno depende do desempenho das empresas, na renda fixa o pagamento pode ser um juros pré‑definido (como em um CDB) ou atrelado a um índice (como o IPCA). Por isso, ela costuma ser a primeira escolha de quem quer segurança e previsibilidade no bolso.
 
 ![O que é](/images/glossario/renda-fixa-inline-1.webp)
 
@@ -47,7 +47,7 @@ A renda fixa traz benefícios que combinam bem com quem tem salário entre R$3.0
 - **Previsibilidade:** Você sabe quanto vai receber ao final do investimento, o que facilita o planejamento de despesas mensais.
 - **Baixo risco:** A maioria dos títulos tem garantia do FGC ou do governo, reduzindo a chance de perda total.
 - **Liquidez variável:** Alguns títulos permitem resgate antecipado (como CDBs com liquidez diária), enquanto outros têm prazos mais longos, mas ainda assim costumam ter mercado secundário.
-- **Diversificação:** Mesmo quem tem apenas a poupança pode melhorar a carteira ao incluir CDBs, LCIs (Letras de Crédito Imobiliário) ou Tesouro Selic.
+- **Diversificação:** Mesmo quem tem apenas a poupança pode melhorar a carteira ao incluir CDBs, LCIs (Letras de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário) ou Tesouro Selic.
 
 ## Riscos
 
@@ -64,9 +64,9 @@ Vamos colocar a teoria no dia a dia usando salários típicos:
 
 - **Cenário 1 – Salário R$4.500:** João decide aplicar 10 % do salário (R$450) em um CDB com rendimento de 110 % do CDI (aprox. 6,5% ao ano). Em 12 meses, ele receberá cerca de R$480, já que o juros compõe R$30.
 - **Cenário 2 – Salário R$6.200:** Maria investe R$620 em um Tesouro Selic (rendimento atrelado à taxa Selic, 13,75% ao ano). Após um ano, seu saldo será aproximadamente R$700, considerando a taxa atual.
-- **Cenário 3 – Salário R$8.000:** Carlos compra uma LCI de 95 % do CDI, isenta de imposto de renda, com prazo de 24 meses. Ele coloca R$800 por mês (R$9.600 ao todo) e, ao final, terá cerca de R$10.500, já que a isenção de IR aumenta o retorno líquido.
+- **Cenário 3 – Salário R$8.000:** Carlos compra uma LCI de 95 % do CDI, isenta de [imposto de renda](/glossario/imposto-de-renda), com prazo de 24 meses. Ele coloca R$800 por mês (R$9.600 ao todo) e, ao final, terá cerca de R$10.500, já que a isenção de IR aumenta o retorno líquido.
 
-**Dica prática:** Se o seu objetivo é montar uma reserva de emergência, prefira títulos com liquidez diária, como o Tesouro Selic ou CDBs que permitam resgate a qualquer momento.
+**Dica prática:** Se o seu objetivo é montar uma [reserva de emergência](/glossario/reserva-de-emergencia), prefira títulos com liquidez diária, como o Tesouro Selic ou CDBs que permitam resgate a qualquer momento.
 
 **Dica prática:** Quando a inflação estiver alta, dê preferência a títulos atrelados ao IPCA (Tesouro IPCA+), pois eles garantem rendimento acima da variação dos preços.
 

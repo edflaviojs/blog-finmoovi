@@ -34,7 +34,7 @@ Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vist
 - Delaying payments
 - Having a negative name (SPC/Serasa)
 - Many credit inquiries in a short time
-- Using too much of the credit card limit
+- Using too much of the [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) limit
 
 ## How to improve your score
 
@@ -47,7 +47,7 @@ Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vist
 ## Why the score matters
 
 With a high score you can get:
-- Lower interest rates on financing
+- Lower interest rates on [financing](/en/glossario/en-financiamento)
 - Higher credit card limits
 - Easier approval for rentals
 - Better conditions on loans

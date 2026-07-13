@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Nubank es una fintech brasileña que ofrece una cuenta digital y una tarjeta de crédito sin tarifas de mantenimiento. En lugar de una sucursal física, todo se maneja desde una app que puedes descargar en tu celular. La empresa nació en 2013 con la idea de simplificar la vida financiera, y hoy cuenta con millones de usuarios en Brasil y otros países de América Latina. En términos simples, Nubank es como un banco “de bolsillo” que te permite pagar, ahorrar y controlar tus gastos sin la burocracia de los bancos tradicionales.
+Nubank es una fintech brasileña que ofrece una cuenta digital y una tarjeta de crédito sin tarifas de mantenimiento. En lugar de una sucursal física, todo se maneja desde una app que puedes descargar en tu celular. La empresa nació en 2013 con la idea de simplificar la vida financiera, y hoy cuenta con millones de usuarios en Brasil y otros países de América Latina. En términos simples, Nubank es como un banco “de bolsillo” que te permite pagar, ahorrar y controlar tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) sin la burocracia de los bancos tradicionales.
 
 ![Qué es](/images/glossario/nubank-inline-1.webp)
 
@@ -35,7 +35,7 @@ Al abrir una cuenta en Nubank, recibes una tarjeta de crédito virtual y, si lo 
 
 ## Ventajas
 
-Nubank se destaca por eliminar muchas de las comisiones que cobran los bancos tradicionales. No hay cuota mensual, ni cargos por transferencias entre cuentas Nubank, y la tarjeta de crédito no tiene tarifa de emisión. La app es intuitiva y te muestra gráficos de tus gastos, lo que facilita el control del presupuesto. Además, el programa de recompensas “Rewards” permite acumular puntos que puedes canjear por productos o viajes. Otro punto a favor es la atención al cliente 24/7 vía chat, que suele ser más rápida que en los bancos convencionales.
+Nubank se destaca por eliminar muchas de las comisiones que cobran los bancos tradicionales. No hay cuota mensual, ni cargos por transferencias entre cuentas Nubank, y la tarjeta de crédito no tiene tarifa de emisión. La app es intuitiva y te muestra gráficos de tus gastos, lo que facilita el control del [presupuesto](/es/posts/es-5-alternativas-ao-mobills-em-2026). Además, el programa de recompensas “Rewards” permite acumular puntos que puedes canjear por productos o viajes. Otro punto a favor es la atención al cliente 24/7 vía chat, que suele ser más rápida que en los bancos convencionales.
 
 ![Ventajas](/images/glossario/nubank-inline-3.webp)
 

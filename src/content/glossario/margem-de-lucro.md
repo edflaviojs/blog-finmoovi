@@ -32,7 +32,7 @@ Margem de lucro é quanto sobra de cada real que entra. Se uma empresa fatura R$
 
 ## Exemplo prático (loja de roupas)
 
-| | Valor | Margem |
+| | [Valor](/glossario/valor) | Margem |
 |--|-------|--------|
 | Faturamento | R$ 50.000 | - |
 | Custo das roupas | R$ 20.000 | Bruta: 60% |
@@ -42,11 +42,11 @@ Margem de lucro é quanto sobra de cada real que entra. Se uma empresa fatura R$
 
 ## Para que serve (investidor)
 
-Ao analisar ações, a margem de lucro mostra:
+Ao analisar [ações](/glossario/acoes), a margem de lucro mostra:
 - Empresas com margens altas têm vantagem competitiva
 - Margens crescentes indicam eficiência melhorando
 - Margens muito baixas indicam negócio frágil
 
-## Para finanças pessoais
+## Para [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)
 
-Você também tem uma "margem": quanto sobra do seu salário após todos os gastos. Se ganha R$ 5.000 e sobram R$ 1.000, sua margem pessoal é 20%. O ideal é pelo menos 20% (regra 50-30-20).
+Você também tem uma "margem": quanto sobra do seu salário após todos os [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Se ganha R$ 5.000 e sobram R$ 1.000, sua margem pessoal é 20%. O ideal é pelo menos 20% (regra 50-30-20).

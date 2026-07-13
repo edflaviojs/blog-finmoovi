@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-La bolsa de valores es un mercado donde se compran y venden acciones de empresas, que representan una parte de la propiedad de esas empresas. Imagina que tienes una tienda y quieres expandirla, pero necesitas dinero para hacerlo. Una forma de obtener ese dinero es vendiendo partes de tu tienda a inversores, a cambio de una cantidad de dinero. Estas partes se llaman "acciones". La bolsa de valores es como un lugar donde se reúnen muchos dueños de tiendas (empresas) que quieren vender partes de sus tiendas (acciones) a personas que quieren invertir su dinero.
+La bolsa de valores es un mercado donde se compran y venden acciones de empresas, que representan una parte de la propiedad de esas empresas. Imagina que tienes una tienda y quieres expandirla, pero necesitas [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) para hacerlo. Una forma de obtener ese [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) es vendiendo partes de tu tienda a inversores, a cambio de una cantidad de dinero. Estas partes se llaman "acciones". La bolsa de valores es como un lugar donde se reúnen muchos dueños de tiendas (empresas) que quieren vender partes de sus tiendas (acciones) a personas que quieren invertir su dinero.
 
 La bolsa de valores es un lugar donde se pueden comprar y vender acciones de empresas de todo tipo, desde pequeñas empresas familiares hasta grandes corporaciones. Los precios de las acciones varían constantemente, dependiendo de la oferta y la demanda en el mercado. Por ejemplo, si una empresa está haciendo muy bien y los inversores creen que seguirá creciendo, el precio de sus acciones probablemente subirá. Por otro lado, si una empresa está pasando por dificultades, el precio de sus acciones puede bajar.
 
@@ -31,7 +31,7 @@ La bolsa de valores funciona de la siguiente manera: las empresas que desean ven
 
 Algunos términos importantes que debes conocer son:
 * Acciones: representan una parte de la propiedad de una empresa
-* Dividendos: son pagos que las empresas hacen a los accionistas (inversores) como parte de sus ganancias
+* [Dividendos](/es/glossario/es-dividendos): son pagos que las empresas hacen a los accionistas (inversores) como parte de sus ganancias
 * Cotización: es el precio actual de una acción en el mercado de valores
 * Comisión: es el cargo que se paga a los corredores de valores por comprar o vender acciones
 
@@ -51,7 +51,7 @@ Invertir en la bolsa de valores puede ser una excelente forma de crecer tu patri
 ## Riesgos
 Invertir en la bolsa de valores también conlleva riesgos. Algunos de los riesgos más comunes son:
 * Riesgo de pérdida de capital: si la empresa no tiene un buen desempeño, el precio de las acciones puede bajar
-* Riesgo de volatilidad: los precios de las acciones pueden fluctuar significativamente en un corto período de tiempo
+* Riesgo de [volatilidad](/es/glossario/es-volatilidade): los precios de las acciones pueden fluctuar significativamente en un corto período de tiempo
 * Riesgo de liquidez: si no hay suficientes compradores o vendedores en el mercado, puede ser difícil vender tus acciones
 
 **Consejo práctico:** es importante investigar y analizar las empresas antes de invertir en ellas. Por ejemplo, si estás considerando invertir en una empresa de tecnología, debes investigar su historial de crecimiento, su competencia y su posición en el mercado.

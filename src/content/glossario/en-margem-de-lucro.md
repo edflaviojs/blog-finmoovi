@@ -22,7 +22,7 @@ Profit margin is what's left over from each real that comes in. If a company bil
 
 ### Operating Margin
 
-- (Revenue - Costs - Operating Expenses) ÷ Revenue × 100
+- (Revenue - Costs - Operating [Expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)) ÷ Revenue × 100
 - Shows efficiency of operation
 
 ### Net Margin
@@ -47,6 +47,6 @@ When analyzing stocks, the profit margin shows:
 - Increasing margins indicate improving efficiency
 - Very low margins indicate a fragile business
 
-## For personal finance
+## For [personal finance](/en/posts/en-30-day-rule-for-purchases)
 
 You also have a "margin": how much is left over from your salary after all expenses. If you earn R$ 5,000 and R$ 1,000 is left over, your personal margin is 20%. The ideal is at least 20% (50-30-20 rule).

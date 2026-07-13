@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A taxa Selic é um conceito fundamental no mundo das finanças brasileiras. Ela é a taxa de juros básica da economia, definida pelo Comitê de Política Monetária (Copom) do Banco Central do Brasil. Em outras palavras, é a taxa de juros que os bancos pagam para emprestar dinheiro ao governo e, por sua vez, influencia as taxas de juros de todos os outros empréstimos e investimentos no país. Por exemplo, se você tem um salário de R$ 5.000 por mês e está pensando em investir em um fundo de renda fixa, a taxa Selic pode afetar diretamente o retorno do seu investimento.
+A taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) é um conceito fundamental no mundo das finanças brasileiras. Ela é a taxa de [juros](/en/glossario/en-juros) básica da economia, definida pelo Comitê de Política Monetária (Copom) do Banco Central do Brasil. Em outras palavras, é a taxa de juros que os bancos pagam para emprestar dinheiro ao governo e, por sua vez, influencia as taxas de juros de todos os outros empréstimos e investimentos no país. Por exemplo, se você tem um salário de R$ 5.000 por mês e está pensando em investir em um fundo de [renda fixa](/en/glossario/en-renda-fixa), a taxa Selic pode afetar diretamente o retorno do seu investimento.
 
 * A taxa Selic é usada como referência para calcular as taxas de juros de empréstimos e investimentos
 * Ela é definida pelo Copom do Banco Central do Brasil
@@ -52,7 +52,7 @@ A taxa Selic tem várias vantagens para a economia brasileira. Uma das principai
 
 A taxa Selic também pode influenciar o mercado de trabalho. Quando a taxa Selic é baixa, os empréstimos se tornam mais baratos e as empresas podem investir mais em expansão e contratação de funcionários, o que pode reduzir o desemprego. Por exemplo, se você é um empresário com um salário de R$ 8.000 por mês e está pensando em expandir seu negócio, uma taxa Selic baixa pode tornar os empréstimos mais acessíveis e baratos.
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 A taxa Selic também tem riscos associados. Uma das principais desvantagens é que ela pode afetar negativamente o crescimento econômico do país. Quando a taxa Selic é alta, os empréstimos se tornam mais caros e as pessoas tendem a poupar mais e gastar menos, o que pode reduzir o crescimento econômico. Além disso, a taxa Selic pode influenciar o valor do real em relação a outras moedas, o que pode afetar as exportações e importações do país.
 
 * A taxa Selic pode afetar negativamente o crescimento econômico do país

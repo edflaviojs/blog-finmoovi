@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é
-O ETF, ou Exchange-Traded Fund, é um tipo de investimento que permite aos investidores ter uma carteira diversificada de ativos, como ações, títulos, commodities, etc., por meio de um único investimento. É como se você comprasse uma pequena parte de uma grande carteira de investimentos, que é negociada em bolsa de valores, como as ações. Isso significa que você pode comprar e vender ETFs durante o dia, assim como faria com ações, e ainda ter a diversificação de uma carteira de investimentos.
+O ETF, ou Exchange-Traded Fund, é um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) que permite aos investidores ter uma carteira diversificada de ativos, como ações, títulos, commodities, etc., por meio de um único investimento. É como se você comprasse uma pequena parte de uma grande carteira de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), que é negociada em [bolsa de valores](/glossario/bolsa-de-valores), como as ações. Isso significa que você pode comprar e vender ETFs durante o dia, assim como faria com ações, e ainda ter a [diversificação](/glossario/diversificacao) de uma carteira de investimentos.
 
 O ETF é uma opção interessante para quem quer começar a investir, pois oferece uma forma simples e acessível de diversificar sua carteira. Além disso, os ETFs são geralmente mais baratos do que os fundos de investimento tradicionais, pois não têm custos de gestão tão altos.
 

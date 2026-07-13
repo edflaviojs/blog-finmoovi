@@ -15,13 +15,13 @@ IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sob
 
 ## Onde o IOF aparece
 
-### Investimentos (renda fixa)
+### Investimentos ([renda fixa](/glossario/renda-fixa))
 
 - Incide sobre rendimentos resgatados em menos de 30 dias
 - Começa em 96% no dia 1 e vai a 0% no dia 30
 - Após 30 dias: isento de IOF
 
-### Cartão de crédito internacional
+### [Cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional
 
 - 4,38% sobre compras em moeda estrangeira
 - Incide sobre o valor total da compra
@@ -38,7 +38,7 @@ IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sob
 
 ## Dica prática
 
-Se você investiu em CDB ou Tesouro Selic, espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a reserva de emergência.
+Se você investiu em CDB ou [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a [reserva de emergência](/glossario/reserva-de-emergencia).
 
 ## Tabela regressiva do IOF (investimentos)
 

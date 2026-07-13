@@ -9,10 +9,10 @@ publishedAt: 2026-06-04
 ---
 
 ## O que é Spread Bancário?
-O spread bancário é uma das principais fontes de lucro para os bancos. Ele é calculado como a diferença entre a taxa de juros que o banco paga para emprestar dinheiro (taxa de captação) e a taxa de juros que o banco cobra para emprestar o mesmo dinheiro (taxa de empréstimo).
+O spread bancário é uma das principais fontes de lucro para os bancos. Ele é calculado como a diferença entre a taxa de [juros](/glossario/juros) que o banco paga para emprestar [dinheiro](/posts/cashback-inteligente) (taxa de captação) e a taxa de juros que o banco cobra para emprestar o mesmo [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) (taxa de empréstimo).
 
 ## Como funciona o Spread Bancário?
-Imagine que você deposita R$ 1.000,00 em uma conta poupança. O banco pode pagar uma taxa de juros de 0,5% ao mês para você ter o dinheiro lá. Isso significa que o banco pagará R$ 5,00 em juros por mês (0,5% de R$ 1.000,00). Agora, imagine que o banco empresta esse mesmo dinheiro para outra pessoa, cobrando uma taxa de juros de 2,0% ao mês. O banco ganhará R$ 20,00 em juros por mês (2,0% de R$ 1.000,00). A diferença entre essas duas taxas é o spread bancário, que nesse caso é de 1,5% (2,0% - 0,5%).
+Imagine que você deposita R$ 1.000,00 em uma conta [poupança](/glossario/poupanca). O banco pode pagar uma taxa de juros de 0,5% ao mês para você ter o dinheiro lá. Isso significa que o banco pagará R$ 5,00 em juros por mês (0,5% de R$ 1.000,00). Agora, imagine que o banco empresta esse mesmo dinheiro para outra pessoa, cobrando uma taxa de juros de 2,0% ao mês. O banco ganhará R$ 20,00 em juros por mês (2,0% de R$ 1.000,00). A diferença entre essas duas taxas é o spread bancário, que nesse caso é de 1,5% (2,0% - 0,5%).
 
 ## Exemplos Práticos
 Vamos considerar alguns exemplos para entender melhor como o spread bancário funciona:

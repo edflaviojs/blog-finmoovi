@@ -20,12 +20,12 @@ Valor Presente é quanto vale HOJE um dinheiro que você vai receber no FUTURO. 
 Onde:
 - VP = Valor Presente
 - VF = Valor Futuro
-- i = taxa de juros
+- i = taxa de [juros](/es/glossario/es-juros)
 - n = número de períodos
 
 ## Ejemplo práctico
 
-Alguém te oferece R$ 10.000 daqui a 2 anos. Com a Selic a 13% ao ano, quanto isso vale hoje?
+Alguém te oferece R$ 10.000 daqui a 2 anos. Com a [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026) a 13% ao ano, quanto isso vale hoje?
 
 VP = 10.000 ÷ (1,13)² = 10.000 ÷ 1,2769 = **R$ 7.831**
 
@@ -35,7 +35,7 @@ Ou seja: receber R$ 10.000 daqui a 2 anos é a mesma coisa que receber R$ 7.831 
 
 1. **Comparar investimentos** com prazos diferentes
 2. **Avaliar propostas** ("pago R$ 50.000 à vista ou R$ 60.000 em 12x?")
-3. **Precificar títulos** de renda fixa
+3. **Precificar títulos** de [renda fixa](/es/glossario/es-renda-fixa)
 4. **Decisões de negócios** (vale a pena esse projeto?)
 
 ## Aplicação no dia a dia

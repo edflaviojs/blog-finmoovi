@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Webull é uma plataforma de investimentos que permite aos usuários comprar e vender ações, opções, ETFs (Exchange-Traded Funds) e outros ativos financeiros. É uma alternativa popular para as tradicionais corretoras de valores mobiliários, oferecendo uma interface mais moderna e acessível. Imagine que você tem um salário de R$ 5.000 por mês e quer começar a investir uma parte disso. Com a Webull, você pode fazer isso de forma fácil e segura.
+Webull é uma plataforma de investimentos que permite aos usuários comprar e vender [ações](/en/glossario/en-acoes), opções, ETFs (Exchange-Traded Funds) e outros ativos financeiros. É uma alternativa popular para as tradicionais corretoras de valores mobiliários, oferecendo uma interface mais moderna e acessível. Imagine que você tem um salário de R$ 5.000 por mês e quer começar a investir uma parte disso. Com a Webull, você pode fazer isso de forma fácil e segura.
 
 * A plataforma é regulamentada pela SEC (Securities and Exchange Commission) nos EUA, o que garante um certo nível de segurança e confiabilidade.
 * A Webull também oferece uma variedade de ferramentas de análise e recursos educacionais para ajudar os investidores a tomar decisões informadas.
@@ -40,9 +40,9 @@ A Webull oferece várias vantagens em relação às tradicionais corretoras de v
 * Ferramentas de análise: A Webull oferece uma variedade de ferramentas de análise e recursos educacionais para ajudar os investidores a tomar decisões informadas.
 * Acesso móvel: A plataforma tem uma interface móvel, permitindo que você acompanhe seus investimentos e faça operações de qualquer lugar.
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Como qualquer investimento, a Webull também envolve riscos. Alguns dos principais riscos incluem:
-* Risco de perda: Você pode perder dinheiro se os ativos financeiros que você comprou diminuírem de valor.
+* Risco de perda: Você pode perder dinheiro se os ativos financeiros que você comprou diminuírem de [valor](/en/glossario/en-valor).
 * Risco de volatilidade: Os preços dos ativos financeiros podem ser voláteis, o que significa que eles podem subir ou descer rapidamente.
 * Risco de liquidez: Você pode ter dificuldade em vender seus ativos financeiros rapidamente, o que pode afetar o preço que você obtém.
 

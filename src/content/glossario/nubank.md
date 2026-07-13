@@ -19,7 +19,7 @@ seo:
 
 ## O que é
 
-Nubank é uma fintech brasileira que oferece serviços financeiros totalmente digitais, como conta corrente, cartão de crédito sem anuidade e empréstimos. Em vez de agências físicas, tudo é gerenciado pelo aplicativo, que funciona como um banco tradicional, mas com tarifas bem menores e atendimento mais ágil.
+Nubank é uma fintech brasileira que oferece serviços financeiros totalmente digitais, como conta corrente, [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) sem anuidade e empréstimos. Em vez de agências físicas, tudo é gerenciado pelo aplicativo, que funciona como um banco tradicional, mas com tarifas bem menores e atendimento mais ágil.
 
 ![O que é](/images/glossario/nubank-inline-1.webp)
 
@@ -32,7 +32,7 @@ A conta Nubank funciona como uma conta corrente comum: você recebe salário, pa
 - **Abertura:** basta baixar o app, inserir CPF e documentos; a aprovação costuma ser instantânea.  
 - **Cartão:** ao solicitar, o cartão chega em até 10 dias úteis e já vem pronto para uso.  
 - **Pagamentos:** QR Code, NFC (aproximação) ou digitação do número da conta são aceitos.  
-- **Investimentos:** a NuConta permite aplicar em CDBs e fundos com rendimento automático.
+- **Investimentos:** a NuConta permite aplicar em CDBs e [fundos](/glossario/fundos) com rendimento automático.
 
 ## Vantagens
 
@@ -44,7 +44,7 @@ Usar o Nubank traz benefícios que facilitam a vida de quem ganha entre R$3.000 
 
 - **Zero anuidade:** o cartão de crédito não cobra taxa anual, o que economiza até R$300 por ano.  
 - **Tarifas reduzidas:** transferências (TED/DOC) são gratuitas, ao contrário de muitos bancos tradicionais.  
-- **Controle em tempo real:** o app mostra cada gasto imediatamente, ajudando no planejamento financeiro.  
+- **Controle em tempo real:** o app mostra cada gasto imediatamente, ajudando no [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme).  
 - **Programa de pontos:** o Nubank Rewards (opcional) converte gastos em pontos que podem ser trocados por passagens ou produtos.  
 - **Atendimento 24/7:** chat no app resolve dúvidas em poucos minutos, sem precisar esperar na fila.
 
@@ -52,7 +52,7 @@ Usar o Nubank traz benefícios que facilitam a vida de quem ganha entre R$3.000 
 
 Apesar das vantagens, é importante estar ciente de alguns cuidados.
 
-- **Limite de crédito:** o limite inicial pode ser conservador; usar todo o limite pode gerar juros altos se não pagar a fatura integral.  
+- **Limite de crédito:** o limite inicial pode ser conservador; usar todo o limite pode gerar [juros](/glossario/juros) altos se não pagar a fatura integral.  
 - **Dependência digital:** se o celular travar ou a internet cair, você fica sem acesso imediato ao dinheiro.  
 - **Segurança:** embora o app tenha autenticação de dois fatores, golpes de phishing ainda podem acontecer.  
 - **Ausência de agências:** quem prefere atendimento presencial pode sentir falta de um balcão para resolver questões mais complexas.

@@ -9,7 +9,7 @@ publishedAt: 2026-06-11
 ---
 
 ## Introdução ao Dividend Yield
-Quando investimos em ações, uma das principais razões é a possibilidade de receber dividendos. Os dividendos são pagamentos feitos pelas empresas aos seus acionistas, representando uma parte dos lucros obtidos. No entanto, para entender o quão atraente é um investimento em ações em termos de dividendos, precisamos considerar o Dividend Yield.
+Quando investimos em [ações](/glossario/acoes), uma das principais razões é a possibilidade de receber [dividendos](/glossario/dividendos). Os dividendos são pagamentos feitos pelas empresas aos seus acionistas, representando uma parte dos lucros obtidos. No entanto, para entender o quão atraente é um investimento em ações em termos de dividendos, precisamos considerar o Dividend Yield.
 
 ## O que é o Dividend Yield?
 O Dividend Yield é calculado dividindo o valor anual dos dividendos pagos por ação pelo preço atual da ação. Isso nos dá uma porcentagem que representa o retorno anual que um investidor pode esperar receber em dividendos por cada real investido na ação.
@@ -41,4 +41,4 @@ Para entender melhor a atração de diferentes ações, podemos comparar seus Di
 Nessa tabela, vemos que a empresa Y oferece o maior Dividend Yield, o que pode torná-la mais atraente para investidores que buscam rendimento em dividendos. No entanto, é importante lembrar que o Dividend Yield é apenas uma das muitas considerações ao investir em ações.
 
 ## Conclusão
-O Dividend Yield é uma ferramenta valiosa para investidores que buscam entender o potencial de rendimento de suas ações. Ao considerar o Dividend Yield, você pode tomar decisões mais informadas sobre onde investir seu dinheiro. Lembre-se de que, além do Dividend Yield, é importante considerar outros fatores, como a saúde financeira da empresa, o setor em que atua e as perspectivas de crescimento. Com essas informações, você estará mais preparado para navegar no mundo dos investimentos em ações.
+O Dividend Yield é uma ferramenta valiosa para investidores que buscam entender o potencial de rendimento de suas ações. Ao considerar o Dividend Yield, você pode tomar decisões mais informadas sobre onde investir seu [dinheiro](/posts/cashback-inteligente). Lembre-se de que, além do Dividend Yield, é importante considerar outros fatores, como a saúde financeira da empresa, o setor em que atua e as perspectivas de crescimento. Com essas informações, você estará mais preparado para navegar no mundo dos [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em ações.

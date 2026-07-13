@@ -28,12 +28,12 @@ La diversificación es una estrategia financiera que consiste en distribuir tus 
 
 
 
-La diversificación es importante porque el mercado financiero es impredecible y puede ser afectado por muchos factores, como la economía, la política y los eventos globales. Al distribuir tus inversiones, puedes reducir el riesgo de perder dinero si uno de los activos se desempeña mal.
+La diversificación es importante porque el mercado financiero es impredecible y puede ser afectado por muchos factores, como la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026), la política y los eventos globales. Al distribuir tus inversiones, puedes reducir el riesgo de perder dinero si uno de los activos se desempeña mal.
 
 ## Cómo funciona
 La diversificación funciona porque diferentes activos tienen diferentes niveles de riesgo y rendimiento. Por ejemplo, las acciones pueden ser más riesgosas que los bonos, pero también pueden ofrecer rendimientos más altos. Al combinar diferentes activos, puedes crear un portafolio que sea más estable y tenga un mejor rendimiento a largo plazo. **Consejo práctico:** es importante investigar y entender los diferentes activos antes de invertir, para asegurarte de que estás tomando decisiones informadas.
 
-Por ejemplo, si tienes un salario de R$6.000 al mes y decides invertir R$1.500 en acciones, R$1.000 en bonos y R$500 en una cuenta de ahorro, estás diversificando tus inversiones. Si las acciones suben de valor, puedes obtener ganancias, pero si bajan, los bonos y la cuenta de ahorro pueden ayudar a amortiguar la pérdida.
+Por ejemplo, si tienes un salario de R$6.000 al mes y decides invertir R$1.500 en acciones, R$1.000 en bonos y R$500 en una cuenta de ahorro, estás diversificando tus inversiones. Si las acciones suben de [valor](/es/glossario/es-valor), puedes obtener ganancias, pero si bajan, los bonos y la cuenta de ahorro pueden ayudar a amortiguar la pérdida.
 
 ## Ventajas
 La diversificación tiene varias ventajas, como:
@@ -51,9 +51,9 @@ La diversificación tiene varias ventajas, como:
 Aunque la diversificación puede reducir el riesgo, no elimina completamente el riesgo de perder dinero. Algunos de los riesgos asociados con la diversificación incluyen:
 * Riesgo de mercado: el mercado financiero puede ser impredecible y puede afectar el valor de tus inversiones
 * Riesgo de crédito: si una empresa o gobierno emite bonos, hay un riesgo de que no puedan pagar los intereses o el principal
-* Riesgo de liquidez: si necesitas acceder a tu dinero rápidamente, puede ser difícil vender tus inversiones sin perder valor
+* Riesgo de [liquidez](/es/glossario/es-liquidez): si necesitas acceder a tu dinero rápidamente, puede ser difícil vender tus inversiones sin perder valor
 
-**Consejo práctico:** es importante tener un plan de emergencia y una reserva de efectivo para cubrir gastos inesperados, para que no tengas que vender tus inversiones en un momento inoportuno.
+**Consejo práctico:** es importante tener un plan de emergencia y una reserva de efectivo para cubrir [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) inesperados, para que no tengas que vender tus inversiones en un momento inoportuno.
 
 ## Ejemplos prácticos
 Aquí hay algunos ejemplos prácticos de cómo la diversificación puede funcionar en la vida real:

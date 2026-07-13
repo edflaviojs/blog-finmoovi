@@ -21,7 +21,7 @@ seo:
 O termo "zero coupon" refere-se a um tipo de investimento em títulos que não paga juros periódicos, ou seja, não há cupons de juros. Em vez disso, o investidor recebe o valor total do investimento, incluindo o principal e os juros, no vencimento do título. Isso significa que o investidor não recebe pagamentos regulares, mas sim um pagamento único no final do período de investimento.
 
  
-O conceito de zero coupon pode parecer um pouco estranho, mas é importante entender que esses títulos são emitidos por empresas ou governos para levantar capital. Eles são uma forma de financiamento que pode ser atraente para investidores que buscam uma rentabilidade mais alta em um período mais longo.
+O conceito de zero coupon pode parecer um pouco estranho, mas é importante entender que esses títulos são emitidos por empresas ou governos para levantar capital. Eles são uma forma de [financiamento](/glossario/financiamento) que pode ser atraente para investidores que buscam uma rentabilidade mais alta em um período mais longo.
 
 ![O que é](/images/glossario/zero-coupon-inline-1.webp)
 
@@ -37,7 +37,7 @@ Um título zero coupon é emitido com um desconto em relação ao seu valor nomi
 As principais vantagens dos títulos zero coupon são:
 * Rentabilidade mais alta em um período mais longo
 * Não há pagamentos periódicos, o que pode ser atraente para investidores que buscam uma rentabilidade mais alta em um período mais longo
-* Os títulos zero coupon podem ser uma forma de diversificar um portfólio de investimentos
+* Os títulos zero coupon podem ser uma forma de diversificar um portfólio de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 * Eles podem ser uma opção para investidores que buscam uma rentabilidade mais estável em um período mais longo
 
  
@@ -49,10 +49,10 @@ As principais vantagens dos títulos zero coupon são:
 
 ## Riscos
 Os principais riscos dos títulos zero coupon são:
-* Risco de crédito: o risco de que o emissor do título não pague o valor nominal no vencimento
+* Risco de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-): o risco de que o emissor do título não pague o valor nominal no vencimento
 * Risco de liquidez: o risco de que o investidor não possa vender o título antes do vencimento
 * Risco de taxa de juros: o risco de que a taxa de juros do mercado aumente, reduzindo o valor do título
-* Risco de inflação: o risco de que a inflação aumente, reduzindo o valor real do investimento
+* Risco de [inflação](/glossario/inflacao): o risco de que a inflação aumente, reduzindo o valor real do investimento
 
  
 **Dica prática:** É importante avaliar cuidadosamente os riscos antes de investir em títulos zero coupon. Isso pode incluir a análise da saúde financeira do emissor, a avaliação do prazo de vencimento e a consideração da taxa de juros do mercado.

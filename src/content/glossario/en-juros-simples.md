@@ -29,7 +29,7 @@ R$ 1,000 at 10% per year for 3 years (simple interest):
 - Interest = 1,000 × 0.10 × 3 = R$ 300
 - Total: R$ 1,300
 
-Compare with compound interest:
+Compare with [compound interest](/en/glossario/en-juros-compostos):
 - Year 1: 1,000 × 1.10 = R$ 1,100
 - Year 2: 1,100 × 1.10 = R$ 1,210
 - Year 3: 1,210 × 1.10 = R$ 1,331
@@ -45,4 +45,4 @@ In practice, simple interest is rare. They appear in:
 
 ## Why does it matter? to know
 
-Understanding the difference between simple and compound interest is fundamental. In the real world, almost everything uses compound interest — and that makes a huge difference in the long run, both for investments and debts.
+Understanding the difference between simple and compound interest is fundamental. In the real world, almost everything uses compound interest — and that makes a huge difference in the long run, both for [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and debts.

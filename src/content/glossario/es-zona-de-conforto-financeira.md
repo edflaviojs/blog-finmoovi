@@ -11,7 +11,7 @@ readingTime: 2
 
 ## ¿Qué es Zona de Conforto Financeira?
 
-É o estado onde suas finanças estão organizadas e você não vive com medo do fim do mês. Significa ter: gastos sob controle, reserva de emergência formada, dívidas quitadas e investimentos crescendo.
+É o estado onde suas finanças estão organizadas e você não vive com medo do fim do mês. Significa ter: [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) sob controle, reserva de emergência formada, dívidas quitadas e investimentos crescendo.
 
 ## Os 5 pilares da zona de conforto financeira
 
@@ -23,7 +23,7 @@ readingTime: 2
 ### 2. Reserva de emergência completa
 
 - 6 a 12 meses de gastos guardados
-- Em investimento com liquidez diária
+- Em investimento com [liquidez](/es/glossario/es-liquidez) diária
 
 ### 3. Sem dívidas caras
 
@@ -45,7 +45,7 @@ readingTime: 2
 
 ## Como chegar lá
 
-1. Monte um orçamento (saiba para onde vai seu dinheiro)
+1. Monte um [orçamento](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) (saiba para onde vai seu dinheiro)
 2. Quite dívidas caras primeiro
 3. Monte a reserva de emergência
 4. Comece a investir (mesmo que pouco)

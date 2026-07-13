@@ -11,14 +11,14 @@ readingTime: 1
 
 ## ¿Qué son Dividendos?
 
-Dividendos son la parte del beneficio que una empresa distribuye a sus accionistas. Si tienes acciones de una empresa que paga dividendos, recibes dinero periódicamente sin necesidad de vender tus acciones.
+Dividendos son la parte del beneficio que una empresa distribuye a sus accionistas. Si tienes acciones de una empresa que paga dividendos, recibes [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) periódicamente sin necesidad de vender tus acciones.
 
 ## ¿Cómo funciona?
 
 1. La empresa tiene beneficio en el trimestre/año
 2. El consejo decide distribuir parte de ese beneficio
 3. Quien tenía acciones en la "fecha con" recibe los dividendos
-4. El dinero cae directo en tu cuenta de corredor
+4. El [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) cae directo en tu cuenta de corredor
 
 ## Dividendos en Brasil
 

@@ -24,9 +24,9 @@ O IPCA acompanha os preços de uma "cesta" de produtos e serviços que as famíl
 
 ## Por que o IPCA importa para você
 
-1. **Seu dinheiro perde valor:** se o IPCA é 5% ao ano, R$ 100 hoje valem R$ 95 daqui a um ano
+1. **Seu dinheiro perde [valor](/es/glossario/es-valor):** se o IPCA é 5% ao ano, R$ 100 hoje valem R$ 95 daqui a um ano
 2. **Investimentos:** rendimentos abaixo do IPCA significam que você está perdendo dinheiro
-3. **Selic:** o Banco Central sobe ou desce a Selic para controlar o IPCA
+3. **[Selic](/es/glossario/es-selic):** o Banco Central sobe ou desce a [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026) para controlar o IPCA
 4. **Reajustes:** aluguéis, planos de saúde e salários são reajustados pelo IPCA
 
 ## IPCA e investimentos

@@ -19,7 +19,7 @@ seo:
 
 ## O que é
 A bolsa de valores é um mercado onde as ações de empresas são compradas e vendidas. Imagine que você é dono de uma pequena parte de uma empresa, como a Petrobras ou a Vale. Essa parte é representada por uma ação, que pode ser comprada ou vendida na bolsa de valores. O preço da ação varia de acordo com a oferta e a demanda, ou seja, com a quantidade de pessoas que querem comprar ou vender a ação. 
-O preço da ação também é influenciado pelo desempenho da empresa, pela economia do país e por eventos globais. Por exemplo, se a Petrobras anuncia um aumento na produção de petróleo, o preço de suas ações pode subir, pois os investidores esperam que a empresa tenha mais lucro.
+O preço da ação também é influenciado pelo desempenho da empresa, pela [economia](/posts/5-alternativas-ao-mobills-em-2026) do país e por eventos globais. Por exemplo, se a Petrobras anuncia um aumento na produção de petróleo, o preço de suas ações pode subir, pois os investidores esperam que a empresa tenha mais lucro.
 
 * Ações: representam a propriedade de uma parte de uma empresa
 * Títulos: representam empréstimos feitos a empresas ou governos
@@ -37,7 +37,7 @@ Por exemplo, se muitos investidores querem comprar ações da Vale, o preço da 
 
 ## Vantagens
 A bolsa de valores oferece várias vantagens para os investidores, como:
-* Diversificação: permite que os investidores distribuam seu dinheiro em diferentes ações e setores, reduzindo o risco
+* [Diversificação](/glossario/diversificacao): permite que os investidores distribuam seu [dinheiro](/posts/cashback-inteligente) em diferentes ações e setores, reduzindo o risco
 * Liquidez: os investidores podem comprar e vender ações rapidamente, pois há um mercado ativo
 * Potencial de crescimento: as ações podem aumentar de valor ao longo do tempo, proporcionando um retorno sobre o investimento
 * Rendimento: as ações podem pagar dividendos, que são parte do lucro da empresa distribuído aos acionistas
@@ -51,7 +51,7 @@ A bolsa de valores oferece várias vantagens para os investidores, como:
 ## Riscos
 A bolsa de valores também envolve riscos, como:
 * Risco de perda: os investidores podem perder dinheiro se as ações caírem de valor
-* Risco de volatilidade: os preços das ações podem variar rapidamente, o que pode ser difícil de gerenciar
+* Risco de [volatilidade](/glossario/volatilidade): os preços das ações podem variar rapidamente, o que pode ser difícil de gerenciar
 * Risco de liquidez: os investidores podem ter dificuldade em vender ações rapidamente, especialmente se o mercado estiver em baixa
 
 **Dica prática:** É fundamental ter uma estratégia de investimento clara e não se deixar levar pelas emoções. Por exemplo, se você investiu R$ 5.000 em ações da Petrobras e o preço caiu 10%, não é necessário vender as ações imediatamente. Pode ser melhor esperar e ver como o mercado se comporta.

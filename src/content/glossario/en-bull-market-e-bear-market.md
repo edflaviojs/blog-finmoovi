@@ -9,7 +9,7 @@ publishedAt: 2026-06-06
 ---
 
 ## What are Bull Market and Bear Market?
-When it comes to investments, it's common to hear the terms "Bull Market" and "Bear Market". These terms are used to describe the trends of the stock market and can influence your investment decisions.
+When it comes to [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), it's common to hear the terms "Bull Market" and "Bear Market". These terms are used to describe the trends of the stock market and can influence your [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) decisions.
 
 ## Bull Market
 A Bull Market is a period when the stock market is on the rise, with stock prices consistently going up. This usually happens during periods of economic growth, when companies are generating profits and people are optimistic about the future. During a Bull Market, investors tend to buy more stocks, which increases demand and, consequently, prices.

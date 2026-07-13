@@ -18,10 +18,10 @@ seo:
 ---
 
 ## Qué es
-El impuesto de renda es un tema que puede parecer complicado, pero en realidad es bastante simple una vez que se entiende. El impuesto de renda es un tipo de impuesto que se aplica a la renta o ingresos que una persona recibe, ya sea por su trabajo, inversiones o cualquier otra fuente de ingresos. En Brasil, el impuesto de renda es administrado por la Receita Federal y se aplica a todos los ciudadanos que tienen ingresos superiores a un cierto límite.
+El impuesto de renda es un tema que puede parecer complicado, pero en realidad es bastante simple una vez que se entiende. El impuesto de renda es un tipo de impuesto que se aplica a la renta o ingresos que una persona recibe, ya sea por su trabajo, [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) o cualquier otra fuente de ingresos. En Brasil, el impuesto de renda es administrado por la Receita Federal y se aplica a todos los ciudadanos que tienen ingresos superiores a un cierto límite.
 
 ## Cómo funciona
-El impuesto de renda se calcula sobre la base de la renta bruta, que es el total de los ingresos que una persona recibe en un año. La renta bruta se reduce por ciertos gastos y deducciones, como gastos médicos, donaciones a instituciones de caridad y pagos de hipoteca, para obtener la renta líquida. Luego, se aplica una tasa de impuesto a la renta líquida, que varía según el nivel de ingresos. Por ejemplo, si una persona tiene una renta bruta de R$ 5.000 por mes, y deduce R$ 1.000 por gastos médicos y donaciones, su renta líquida sería de R$ 4.000 por mes. Si la tasa de impuesto es del 20%, el impuesto de renda sería de R$ 800 por mes.
+El impuesto de renda se calcula sobre la base de la renta bruta, que es el total de los ingresos que una persona recibe en un año. La renta bruta se reduce por ciertos [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) y deducciones, como gastos médicos, donaciones a instituciones de caridad y pagos de hipoteca, para obtener la renta líquida. Luego, se aplica una tasa de impuesto a la renta líquida, que varía según el nivel de ingresos. Por ejemplo, si una persona tiene una renta bruta de R$ 5.000 por mes, y deduce R$ 1.000 por gastos médicos y donaciones, su renta líquida sería de R$ 4.000 por mes. Si la tasa de impuesto es del 20%, el impuesto de renda sería de R$ 800 por mes.
 
 ![Qué es](/images/glossario/imposto-de-renda-inline-1.webp)
 

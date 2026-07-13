@@ -34,7 +34,7 @@ Um zero coupon é emitido com um desconto sobre o valor nominal, que é o valor 
 **Practical tip:** É importante lembrar que os zero coupons têm um risco de crédito, ou seja, o risco de que a empresa ou governo que emitiu o título não pague o valor nominal no vencimento.
 
 ## Advantages
-Os zero coupons têm algumas vantagens sobre outros tipos de investimentos. Uma delas é a simplicidade, pois você não precisa se preocupar com pagamentos de juros periódicos. Além disso, os zero coupons podem ser mais seguros do que outros investimentos, pois você sabe exatamente quanto receberá no vencimento. Outra vantagem é que os zero coupons podem ser mais rentáveis do que outros investimentos de baixo risco, como a poupança.
+Os zero coupons têm algumas vantagens sobre outros tipos de investimentos. Uma delas é a simplicidade, pois você não precisa se preocupar com pagamentos de juros periódicos. Além disso, os zero coupons podem ser mais seguros do que outros investimentos, pois você sabe exatamente quanto receberá no vencimento. Outra vantagem é que os zero coupons podem ser mais rentáveis do que outros investimentos de baixo risco, como a [poupança](/en/glossario/en-poupanca).
 
 * Segurança: os zero coupons são considerados investimentos de baixo risco, pois você sabe exatamente quanto receberá no vencimento.
 * Rentabilidade: os zero coupons podem ser mais rentáveis do que outros investimentos de baixo risco, como a poupança.
@@ -44,10 +44,10 @@ Os zero coupons têm algumas vantagens sobre outros tipos de investimentos. Uma 
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 No entanto, os zero coupons também têm alguns riscos. Um deles é o risco de crédito, que mencionei anteriormente. Outro risco é o risco de inflação, que pode reduzir o valor real do dinheiro que você receberá no vencimento. Além disso, os zero coupons podem ter um risco de liquidez, ou seja, o risco de que você não possa vender o título antes do vencimento.
 
-**Practical tip:** É importante diversificar seus investimentos para reduzir o risco de crédito e outros riscos. Isso significa que você deve investir em diferentes tipos de ativos, como ações, títulos de dívida e fundos de investimento.
+**Practical tip:** É importante diversificar seus investimentos para reduzir o risco de crédito e outros riscos. Isso significa que você deve investir em diferentes tipos de ativos, como ações, títulos de dívida e [fundos](/en/glossario/en-fundos) de investimento.
 
 ## Practical examples
 Vamos considerar um exemplo prático. Suponha que você ganhe R$5.000,00 por mês e queira investir R$1.000,00 por mês em zero coupons. Você pode comprar zero coupons com prazo de 5 anos e valor nominal de R$1.000,00. Durante os 5 anos, você não receberá juros, mas no final do período, você receberá R$1.000,00 por cada zero coupon que comprou. Isso significa que você terá um rendimento de R$5.000,00, que é a diferença entre o valor nominal e o valor pago.

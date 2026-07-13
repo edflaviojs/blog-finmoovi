@@ -9,7 +9,7 @@ locale: "pt"
 readingTime: 2
 ---
 
-## O que são Juros Simples?
+## O que são [Juros](/glossario/juros) Simples?
 
 Juros simples são calculados apenas sobre o valor original (principal). Não importa quanto tempo passe, os juros são sempre calculados sobre o mesmo valor inicial. É o tipo mais básico de juros.
 
@@ -29,7 +29,7 @@ R$ 1.000 a 10% ao ano por 3 anos (juros simples):
 - Juros = 1.000 × 0,10 × 3 = R$ 300
 - Total: R$ 1.300
 
-Compare com juros compostos:
+Compare com [juros compostos](/glossario/juros-compostos):
 - Ano 1: 1.000 × 1,10 = R$ 1.100
 - Ano 2: 1.100 × 1,10 = R$ 1.210
 - Ano 3: 1.210 × 1,10 = R$ 1.331
@@ -45,4 +45,4 @@ Na prática, juros simples são raros. Aparecem em:
 
 ## Por que importa saber
 
-Entender a diferença entre juros simples e compostos é fundamental. No mundo real, quase tudo usa juros compostos — e isso faz uma diferença enorme no longo prazo, tanto para investimentos quanto para dívidas.
+Entender a diferença entre juros simples e compostos é fundamental. No mundo real, quase tudo usa juros compostos — e isso faz uma diferença enorme no longo prazo, tanto para [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) quanto para dívidas.

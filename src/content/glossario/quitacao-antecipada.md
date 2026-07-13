@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é Quitação Antecipada?
 
-Quitação antecipada é pagar uma dívida (financiamento, empréstimo, consórcio) antes do prazo final. Quando você faz isso, tem direito a desconto nos juros que seriam cobrados no futuro. É um direito garantido pelo Código de Defesa do Consumidor.
+Quitação antecipada é pagar uma dívida ([financiamento](/glossario/financiamento), empréstimo, consórcio) antes do prazo final. Quando você faz isso, tem direito a desconto nos juros que seriam cobrados no futuro. É um direito garantido pelo Código de Defesa do Consumidor.
 
 ## Seus direitos
 
@@ -25,7 +25,7 @@ Quitação antecipada é pagar uma dívida (financiamento, empréstimo, consórc
 Exemplo: financiamento de R$ 200.000 em 30 anos a 10% a.a.
 - Total que pagaria: ~R$ 632.000
 - Se quitar em 15 anos: ~R$ 387.000
-- **Economia: R$ 245.000** (quase o valor do imóvel!)
+- **[Economia](/posts/5-alternativas-ao-mobills-em-2026): R$ 245.000** (quase o valor do imóvel!)
 
 ## Quando vale a pena quitar
 
@@ -33,12 +33,12 @@ Exemplo: financiamento de R$ 200.000 em 30 anos a 10% a.a.
 - Juros da dívida são maiores que rendimento dos investimentos
 - Financiamento imobiliário com taxa alta (>9% a.a.)
 - Empréstimos pessoais e consignados
-- Quando tem dinheiro parado rendendo menos
+- Quando tem [dinheiro](/posts/cashback-inteligente) parado rendendo menos
 
 ❌ Não vale a pena:
 - Juros da dívida são menores que seus investimentos rendem
 - Financiamento com taxa muito baixa (<7% a.a.)
-- Se vai ficar sem reserva de emergência
+- Se vai ficar sem [reserva de emergência](/glossario/reserva-de-emergencia)
 
 ## Como fazer
 

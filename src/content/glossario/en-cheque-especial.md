@@ -34,12 +34,12 @@ If you are R$ 1,000 overdrawn for 30 days with interest rates of 12% per month:
 3. **Set up alerts** — warning when the balance is low
 4. **If you need credit** — a personal loan has interest rates 5 times lower
 
-## Cheaper alternatives
+## Cheaper [alternatives](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)
 
 | Type of credit | Monthly interest |
 |----------------|---------------|
 | Overdraft | 8-15% |
-| Credit card (revolving) | 12-16% |
+| [Credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) (revolving) | 12-16% |
 | Personal loan | 2-5% |
 | Payroll loan | 1-2% |
 | FGTS anticipation | 1-2% |

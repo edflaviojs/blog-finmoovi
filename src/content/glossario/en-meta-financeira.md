@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is Financial Goal?
 
-Financial goal is a concrete objective for your money. It's not "I want to save more" — it's "I want to save R$ 10,000 by December 2025 to make a down payment on a car". The more specific, the higher the chance of achieving it.
+Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule-for-purchases). It's not "I want to save more" — it's "I want to save R$ 10,000 by December 2025 to make a down payment on a car". The more specific, the higher the chance of achieving it.
 
 ## How to define good goals (SMART method)
 
@@ -25,7 +25,7 @@ Financial goal is a concrete objective for your money. It's not "I want to save 
 
 ### Short term (up to 1 year)
 
-- Build an emergency fund of R$ 15,000
+- Build an [emergency fund](/en/glossario/en-reserva-de-emergencia) of R$ 15,000
 - Pay off a credit card debt of R$ 3,000
 - Save R$ 5,000 for a trip
 
@@ -37,7 +37,7 @@ Financial goal is a concrete objective for your money. It's not "I want to save 
 
 ### Long term (5+ years)
 
-- Achieve financial independence (R$ 1,500,000)
+- Achieve [financial independence](/en/glossario/en-independencia-financeira) (R$ 1,500,000)
 - Supplemental retirement
 - Buy a property outright
 
@@ -46,7 +46,7 @@ Financial goal is a concrete objective for your money. It's not "I want to save 
 1. Define the total value and deadline
 2. Divide by the number of months (monthly contribution needed)
 3. Automate the monthly transfer
-4. Track progress (apps like FinMoovi can help)
+4. Track progress (apps like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) can help)
 5. Celebrate intermediate milestones (25%, 50%, 75%)
 
 ## Tip

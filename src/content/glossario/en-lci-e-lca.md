@@ -15,7 +15,7 @@ LCI (Letra de Crédito Imobiliário) and LCA (Letra de Crédito do Agronegócio)
 
 ## Difference between LCI and LCA
 
-The only difference is the destination of the money:
+The only difference is the destination of the [money](/en/posts/en-30-day-rule-for-purchases):
 - **LCI:** the bank uses it to finance the real estate sector
 - **LCA:** the bank uses it to finance the agribusiness
 
@@ -25,8 +25,8 @@ For the investor, they work in the same way.
 
 - Exemption from IR (higher net income)
 - Protection by FGC up to R$ 250,000
-- Yield generally linked to CDI (85-100%)
-- Security similar to CDB
+- [Yield](/en/glossario/en-yield) generally linked to CDI (85-100%)
+- Security similar to [CDB](/en/glossario/en-cdb)
 
 ## Disadvantages
 
@@ -48,6 +48,6 @@ In this example, they yield the same. But an LCI of 90% of CDI already beats the
 
 ## When to invest in LCI/LCA
 
-- When you won't need the money for at least 90 days
+- When you won't need the [money](/en/posts/en-avoid-impulse-purchases) for at least 90 days
 - To diversify fixed-income investments
 - When you find rates above 90% of CDI

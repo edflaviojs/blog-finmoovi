@@ -37,13 +37,13 @@ Nesses casos, é crucial calcular os juros para saber exatamente quanto você pa
 ## Advantages
 Os juros podem ser benéficos quando você está do lado do investidor. Eles podem aumentar seu patrimônio ao longo do tempo, especialmente se você optar por investimentos de longo prazo com taxas de juros atraentes. Além disso, juros podem ser uma fonte de renda passiva, o que significa que você pode ganhar dinheiro sem precisar trabalhar ativamente por ele.
 
-No entanto, é importante escolher investimentos seguros e que sejam adequados para o seu perfil de risco. **Practical tip:** Diversifique seus investimentos para minimizar riscos. Por exemplo, você pode investir parte do seu dinheiro em títulos de renda fixa, como CDBs ou LCI/LCA, e outra parte em ações ou fundos de investimento.
+No entanto, é importante escolher investimentos seguros e que sejam adequados para o seu perfil de risco. **Practical tip:** Diversifique seus investimentos para minimizar riscos. Por exemplo, você pode investir parte do seu dinheiro em títulos de [renda fixa](/en/glossario/en-renda-fixa), como CDBs ou LCI/LCA, e outra parte em ações ou [fundos](/en/glossario/en-fundos) de investimento.
 
 ![Advantages](/images/glossario/juros-inline-3.webp)
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Do outro lado da moeda, os juros também podem ser um risco significativo se você não gerenciar bem suas finanças. Tomar empréstimos com taxas de juros altas pode levar a uma dívida crescente e difícil de pagar. Além disso, investimentos com taxas de juros muito altas podem ser mais arriscados, pois geralmente vêm com um risco maior de perda de capital.
 
 **Practical tip:** Nunca tome um empréstimo sem ter um plano claro de como pagá-lo. Considere sua renda mensal e reserve uma parte para a quitação da dívida. Por exemplo, se você ganha R$ 5.500,00 por mês e tem um empréstimo de R$ 10.000,00 com juros de 15% ao ano, planeje pagar pelo menos R$ 1.000,00 por mês para evitar que a dívida cresça descontroladamente.

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é Tesouro Direto
-O Tesouro Direto é um investimento em títulos públicos emitidos pelo governo brasileiro, que oferece uma forma segura e rentável de aplicar seu dinheiro. Basicamente, você está emprestando dinheiro ao governo, que promete pagar você de volta com juros. É como um empréstimo, mas ao invés de emprestar para uma pessoa ou empresa, você está emprestando para o governo. Os títulos do Tesouro Direto são emitidos pela Secretaria do Tesouro Nacional e são negociados na bolsa de valores.
+O Tesouro Direto é um investimento em títulos públicos emitidos pelo governo brasileiro, que oferece uma forma segura e rentável de aplicar seu [dinheiro](/posts/cashback-inteligente). Basicamente, você está emprestando dinheiro ao governo, que promete pagar você de volta com juros. É como um empréstimo, mas ao invés de emprestar para uma pessoa ou empresa, você está emprestando para o governo. Os títulos do Tesouro Direto são emitidos pela Secretaria do Tesouro Nacional e são negociados na [bolsa de valores](/glossario/bolsa-de-valores).
 
 Os títulos do Tesouro Direto podem ser classificados em dois principais tipos: títulos prefixados e títulos pós-fixados. Os títulos prefixados oferecem uma taxa de juros fixa durante todo o período de investimento, enquanto os títulos pós-fixados têm uma taxa de juros que varia de acordo com a inflação ou outras taxas de juros de referência. Por exemplo, se você investir R$ 1.000 em um título prefixado com taxa de juros de 10% ao ano, você receberá R$ 100 de juros por ano, totalizando R$ 1.100 ao final do período de investimento.
 
@@ -35,7 +35,7 @@ O Tesouro Direto funciona da seguinte forma: você compra um título do Tesouro 
 As vantagens do Tesouro Direto incluem:
 * Rendimento fixo e seguro: o Tesouro Direto oferece uma taxa de juros fixa e segura, o que pode ser atraente para investidores que buscam um retorno estável.
 * Liquidez: os títulos do Tesouro Direto podem ser vendidos na bolsa de valores a qualquer momento, o que oferece uma certa liquidez.
-* Diversificação: o Tesouro Direto pode ser uma forma de diversificar sua carteira de investimentos, reduzindo o risco de perda de valor.
+* [Diversificação](/glossario/diversificacao): o Tesouro Direto pode ser uma forma de diversificar sua carteira de investimentos, reduzindo o risco de perda de valor.
 * Isenção de impostos: os rendimentos do Tesouro Direto são isentos de impostos para investidores pessoa física, o que pode ser um benefício significativo.
 
 **Dica prática:** É importante lembrar que o Tesouro Direto não é um investimento de curto prazo. Se você precisa do dinheiro em curto prazo, pode ser melhor optar por um investimento mais líquido, como uma poupança ou um fundo de investimento de curto prazo.
@@ -46,7 +46,7 @@ As vantagens do Tesouro Direto incluem:
 
 ## Riscos
 Os riscos do Tesouro Direto incluem:
-* Risco de crédito: o governo pode não pagar os juros ou o principal do título, o que pode resultar em perda de valor.
+* Risco de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-): o governo pode não pagar os juros ou o principal do título, o que pode resultar em perda de valor.
 * Risco de liquidez: os títulos do Tesouro Direto podem não ser facilmente vendidos na bolsa de valores, o que pode resultar em perda de valor.
 * Risco de inflação: a inflação pode reduzir o valor real do título, o que pode resultar em perda de valor.
 

@@ -11,7 +11,7 @@ readingTime: 2
 
 ## ¿Qué es Sobregiro?
 
-Sobregiro é um limite de crédito que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o sobregiro — e paga juros altíssimos por isso.
+Sobregiro é um limite de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o sobregiro — e paga [juros](/es/glossario/es-juros) altíssimos por isso.
 
 ## Por que é tão perigoso
 
@@ -34,7 +34,7 @@ Se você ficar R$ 1.000 negativos por 30 dias com juros de 12% ao mês:
 3. **Configure alertas** — aviso quando saldo ficar baixo
 4. **Se precisar de crédito** — empréstimo pessoal tem juros 5x menores
 
-## Alternativas mais baratas
+## [Alternativas](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) mais baratas
 
 | Tipo de crédito | Juros mensais |
 |----------------|---------------|

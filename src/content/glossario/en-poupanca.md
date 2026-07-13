@@ -25,7 +25,7 @@ A poupança é a conta de depósito mais conhecida no Brasil. Ela funciona como 
 
 
 
-- **Rendimento:** a taxa é calculada com base na taxa Selic (taxa básica de juros) e na Taxa Referencial (TR), que costuma ficar próxima de zero.
+- **Rendimento:** a taxa é calculada com base na taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) (taxa básica de juros) e na Taxa Referencial (TR), que costuma ficar próxima de zero.
 - **Garantia:** o Fundo Garantidor de Créditos (FGC) cobre até R$250 mil por pessoa, caso o banco quebre.
 - **Liquidez:** o dinheiro fica disponível no mesmo dia útil, o que a torna ideal para emergências.
 
@@ -48,14 +48,14 @@ A poupança tem alguns pontos fortes que a deixam no topo da lista de quem quer 
 - **Segurança:** o FGC protege seu dinheiro até R$250 mil por instituição.
 - **Facilidade:** abrir a conta costuma levar poucos minutos, e não há taxa de manutenção.
 - **Liquidez imediata:** o saldo fica disponível no mesmo dia, perfeito para emergências como conserto de carro ou despesa médica inesperada.
-- **Isenção de imposto de renda:** ao contrário de muitos investimentos, a poupança não cobra IR (Imposto de Renda) sobre os rendimentos.
+- **Isenção de [imposto de renda](/en/glossario/en-imposto-de-renda):** ao contrário de muitos investimentos, a poupança não cobra IR (Imposto de Renda) sobre os rendimentos.
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Mesmo sendo “segura”, a poupança tem limitações que podem comprometer seu objetivo de fazer o dinheiro crescer.
 
 - **Rendimento baixo:** quando a Selic está em patamares menores, a taxa da poupança pode ficar abaixo da inflação, fazendo o poder de compra diminuir.
-- **Oportunidade perdida:** ao deixar todo o dinheiro na poupança, você perde a chance de investir em opções com retornos maiores, como CDBs, Tesouro Direto ou fundos de renda fixa.
+- **Oportunidade perdida:** ao deixar todo o dinheiro na poupança, você perde a chance de investir em opções com retornos maiores, como CDBs, [Tesouro Direto](/en/glossario/en-tesouro-direto) ou fundos de renda fixa.
 - **Dependência de política monetária:** mudanças na taxa Selic afetam diretamente o rendimento, então períodos de juros baixos reduzem o ganho.
 
 ## Practical examples

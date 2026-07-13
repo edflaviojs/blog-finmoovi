@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is Financiamento?
 
-Financiamento is when a bank lends you money to buy something of high value (house, car, etc.) and you pay it back in installments over the years. The purchased asset serves as collateral — if you stop paying, the bank can take it.
+Financiamento is when a bank lends you [money](/en/posts/en-30-day-rule-for-purchases) to buy something of high value (house, car, etc.) and you pay it back in installments over the years. The purchased asset serves as collateral — if you stop paying, the bank can take it.
 
 ## Common Types
 
@@ -32,7 +32,7 @@ Financiamento is when a bank lends you money to buy something of high value (hou
 ## Tips to finance well
 
 1. **Make the largest down payment possible** — reduces total interest
-2. **Choose the shortest term that fits your budget** — less interest
+2. **Choose the shortest term that fits your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026)** — less interest
 3. **Compare rates between banks** — the difference can be huge
 4. **Prefer SAC** — pays less interest in total
 5. **Amortize whenever possible** — every extra R$ 1,000 saves thousands

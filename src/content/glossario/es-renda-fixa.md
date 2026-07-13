@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-La renta fija es un tipo de inversión donde sabes de antemano cuál será el rendimiento que vas a recibir. A diferencia de la renta variable (acciones), aquí el emisor del título – ya sea el gobierno, un banco o una empresa – se compromete a pagar intereses periódicos y a devolver el capital al vencimiento. En términos simples, es como prestar tu dinero a alguien que te promete devolverte el préstamo con un “interés” acordado.
+La renta fija es un tipo de inversión donde sabes de antemano cuál será el rendimiento que vas a recibir. A diferencia de la [renta variable](/es/glossario/es-renda-variavel) (acciones), aquí el emisor del título – ya sea el gobierno, un banco o una empresa – se compromete a pagar intereses periódicos y a devolver el capital al vencimiento. En términos simples, es como prestar tu dinero a alguien que te promete devolverte el préstamo con un “interés” acordado.
 
 ![Qué es](/images/glossario/renda-fixa-inline-1.webp)
 
@@ -30,7 +30,7 @@ La renta fija es un tipo de inversión donde sabes de antemano cuál será el re
 Cuando compras un título de renta fija, estás adquiriendo un crédito que el emisor debe honrar. El proceso se resume en tres pasos básicos:
 
 - **Emisión:** El emisor lanza el título al mercado con una tasa de interés (llamada “cupón”) y un plazo de vencimiento (por ejemplo, 2, 5 o 10 años).  
-- **Pago de intereses:** Cada mes o cada año recibes un pago fijo, que no cambia aunque la economía se altere.  
+- **Pago de intereses:** Cada mes o cada año recibes un pago fijo, que no cambia aunque la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) se altere.  
 - **Reembolso del principal:** Al llegar la fecha de vencimiento, el emisor devuelve el valor nominal (el monto que invertiste inicialmente).  
 
 Esta estructura te permite planificar tus finanzas porque sabes cuánto vas a recibir y cuándo.
@@ -43,7 +43,7 @@ Invertir en renta fija tiene varios puntos a favor que la hacen atractiva para l
 
 
 
-- **Previsibilidad:** Sabes exactamente cuánto ganarás, lo que facilita armar un presupuesto mensual.  
+- **Previsibilidad:** Sabes exactamente cuánto ganarás, lo que facilita armar un [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) mensual.  
 - **Liquidez:** Muchos títulos pueden venderse antes del vencimiento en el mercado secundario, aunque el precio varíe.  
 - **Diversificación:** Añadir renta fija a tu portafolio reduce la exposición a la volatilidad de la bolsa.  
 
@@ -74,7 +74,7 @@ En cada caso, el flujo de caja es predecible y puedes usar los intereses para cu
 Dar el primer paso hacia la renta fija es más fácil de lo que parece. Solo sigue estos pasos:
 
 - **Abre una cuenta en una corredora o banco que ofrezca productos de renta fija**; la mayoría permite hacerlo en línea en pocos minutos.  
-- **Define tu objetivo:** ¿Quieres ahorrar para la entrada de una casa, crear un fondo de emergencia o generar ingresos mensuales?  
+- **Define tu objetivo:** ¿Quieres ahorrar para la entrada de una casa, crear un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) o generar ingresos mensuales?  
 - **Elige el título adecuado:** Según tu horizonte de tiempo y tolerancia al riesgo, selecciona entre Tesouro Selic, CDBs, LCI/LCA o bonos corporativos.  
 - **Programa aportes automáticos:** Configura que un porcentaje de tu sueldo (por ejemplo, R$ 300) se transfiera automáticamente a tu inversión cada mes.  
 

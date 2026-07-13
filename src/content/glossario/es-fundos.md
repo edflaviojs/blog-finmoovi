@@ -31,7 +31,7 @@ Los fondos ofrecen una forma accesible para que las personas con diferentes nive
 * Fondos de inversión inmobiliaria: Invierten en propiedades y proyectos inmobiliarios
 
 ## Cómo funciona
-Los fondos funcionan de la siguiente manera: los inversores compran participaciones del fondo, y el dinero se utiliza para invertir en una cartera diversificada de activos. La empresa que administra el fondo se encarga de seleccionar las inversiones, gestionar el riesgo y distribuir los rendimientos entre los inversores. Los rendimientos pueden ser en forma de dividendos, intereses o ganancias de capital.
+Los fondos funcionan de la siguiente manera: los inversores compran participaciones del fondo, y el [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) se utiliza para invertir en una cartera diversificada de activos. La empresa que administra el fondo se encarga de seleccionar las inversiones, gestionar el riesgo y distribuir los rendimientos entre los inversores. Los rendimientos pueden ser en forma de [dividendos](/es/glossario/es-dividendos), intereses o ganancias de capital.
 
 Por ejemplo, si inviertes R$1.000 en un fondo de acciones y el fondo genera un rendimiento del 10% anual, tu inversión valdrá R$1.100 al final del año. **Consejo práctico:** Es importante investigar y entender los objetivos de inversión del fondo, así como los costos asociados, antes de tomar una decisión.
 
@@ -54,7 +54,7 @@ Los fondos ofrecen varias ventajas para los inversores, incluyendo:
 Aunque los fondos pueden ofrecer varias ventajas, también conllevan riesgos. Algunos de los riesgos asociados con los fondos incluyen:
 * Riesgo de mercado: Los fondos pueden estar expuestos a los movimientos del mercado, lo que puede afectar el valor de la inversión.
 * Riesgo de crédito: Los fondos que invierten en bonos y otros instrumentos de deuda pueden estar expuestos al riesgo de crédito, lo que puede afectar el valor de la inversión.
-* Riesgo de liquidez: Los fondos pueden tener dificultades para vender activos rápidamente en caso de que los inversores deseen retirar su dinero.
+* Riesgo de [liquidez](/es/glossario/es-liquidez): Los fondos pueden tener dificultades para vender activos rápidamente en caso de que los inversores deseen retirar su [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).
 
 **Consejo práctico:** Es importante leer y entender el prospecto del fondo y los informes financieros antes de invertir. Por ejemplo, si estás considerando invertir en un fondo de acciones, es importante investigar la estrategia de inversión del fondo y los costos asociados.
 

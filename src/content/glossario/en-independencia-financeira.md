@@ -11,11 +11,11 @@ readingTime: 2
 
 ## What is Financial Independence?
 
-Financial independence is when your investments generate enough income to pay all your bills — without having to work. You work because you want to, not because you need to.
+Financial independence is when your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) generate enough income to pay all your bills — without having to work. You work because you want to, not because you need to.
 
 ## The Formula
 
-**Necessary Assets = Annual Expenses × 25**
+**Necessary Assets = Annual [Expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) × 25**
 
 This is based on the "4% rule": you can withdraw 4% of your assets per year without depleting them.
 

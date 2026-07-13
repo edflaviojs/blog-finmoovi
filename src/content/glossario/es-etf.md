@@ -18,9 +18,9 @@ seo:
 ---
 
 ## Qué es
-Un ETF, o Exchange-Traded Fund, es un tipo de inversión que combina características de los fondos mutuos y las acciones. En otras palabras, es un fondo que se negocia en una bolsa de valores, como las acciones, pero ofrece diversificación como un fondo mutuo. Esto significa que, al invertir en un ETF, estás comprando una pequeña parte de un portafolio diversificado de acciones, bonos o otros activos.
+Un ETF, o Exchange-Traded Fund, es un tipo de inversión que combina características de los fondos mutuos y las acciones. En otras palabras, es un fondo que se negocia en una [bolsa de valores](/es/glossario/es-bolsa-de-valores), como las acciones, pero ofrece diversificación como un fondo mutuo. Esto significa que, al invertir en un ETF, estás comprando una pequeña parte de un portafolio diversificado de acciones, bonos o otros activos.
 
-Un ejemplo para entender mejor: imagina que quieres invertir en el mercado de tecnología, pero no quieres poner todo tu dinero en una sola acción, como la de una empresa de tecnología brasileña. Un ETF de tecnología te permite invertir en un portafolio que incluye acciones de varias empresas de tecnología, reduciendo así el riesgo.
+Un ejemplo para entender mejor: imagina que quieres invertir en el mercado de tecnología, pero no quieres poner todo tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en una sola acción, como la de una empresa de tecnología brasileña. Un ETF de tecnología te permite invertir en un portafolio que incluye acciones de varias empresas de tecnología, reduciendo así el riesgo.
 
 ![Qué es](/images/glossario/etf-inline-1.webp)
 
@@ -41,7 +41,7 @@ Las ventajas de invertir en ETFs son varias:
 ## Riesgos
 Aunque los ETFs ofrecen varias ventajas, también conllevan riesgos. Algunos de estos riesgos incluyen:
 * Riesgo de mercado: el valor de tu inversión puede disminuir si el mercado en general o el sector específico en el que estás invertido experimenta una caída.
-* Riesgo de liquidez: aunque los ETFs se negocian en una bolsa de valores, en algunos casos, puede ser difícil vender unidades del fondo rápidamente a un precio justo.
+* Riesgo de [liquidez](/es/glossario/es-liquidez): aunque los ETFs se negocian en una bolsa de valores, en algunos casos, puede ser difícil vender unidades del fondo rápidamente a un precio justo.
 * Riesgo de gestión: el desempeño del gestor del fondo puede afectar el rendimiento del ETF.
 
 ![Ventajas](/images/glossario/etf-inline-3.webp)
@@ -59,7 +59,7 @@ Otro ejemplo sería invertir en un ETF de bonos del gobierno brasileño. Si est�
 Para empezar a invertir en ETFs, primero debes abrir una cuenta en una corredora de valores. Luego, investiga y selecciona los ETFs que mejor se ajusten a tus objetivos de inversión y tu tolerancia al riesgo. **Consejo práctico:** **Comienza con pequeñas cantidades** y aumenta gradualmente tu inversión a medida que te sientas más cómodo con el proceso.
 
 ## Empieza hoy
-No esperes más para empezar a construir tu futuro financiero. Invertir en ETFs puede ser una excelente manera de diversificar tu cartera y alcanzar tus objetivos financieros. Recuerda, la clave es la disciplina y la paciencia. ¡Así que comienza hoy y observa cómo tu dinero puede crecer con el tiempo!
+No esperes más para empezar a construir tu futuro financiero. Invertir en ETFs puede ser una excelente manera de diversificar tu cartera y alcanzar tus objetivos financieros. Recuerda, la clave es la disciplina y la paciencia. ¡Así que comienza hoy y observa cómo tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) puede crecer con el tiempo!
 
 ---
 

@@ -9,7 +9,7 @@ publishedAt: 2026-06-13
 ---
 
 ## Introduction to Alavancagem
-Alavancagem is a fundamental concept in the world of finance that can be both beneficial and dangerous, depending on how it is used. In essence, alavancagem allows investors to use resources that are not their own to increase the potential return on an investment. This can be done through loans, lines of credit, or other financial instruments.
+Alavancagem is a fundamental concept in the world of finance that can be both beneficial and dangerous, depending on how it is used. In essence, alavancagem allows investors to use resources that are not their own to increase the potential return on an investment. This can be done through loans, lines of [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), or other financial instruments.
 
 ## How Alavancagem Works
 Imagine you want to buy a property worth $25,000 (approximately R$ 200,000). You have $6,250 (approximately R$ 50,000) to use as a down payment and can get a loan of $18,750 (approximately R$ 150,000) to cover the rest of the cost. If the property value increases to $31,250 (approximately R$ 250,000), you will have a profit of $6,250 (approximately R$ 50,000), which represents a 100% return on your initial investment of $6,250. However, if the property value falls to $18,750 (approximately R$ 150,000), you will have a loss of $6,250 (approximately R$ 50,000), which represents a 100% loss of your initial investment.
@@ -40,4 +40,4 @@ Alavancagem increases both the potential for profit and the risk of loss. It's e
 | With Alavancagem | $6,250 (down payment) + $18,750 (loan) = $25,000 | $31,250 | $6,250 | 100% |
 
 ## Conclusion
-Alavancagem is a powerful tool that can increase the potential return on an investment, but also increases the risk of loss. It's crucial to understand how alavancagem works and how it can affect your investments. Additionally, it's essential to have a well-defined investment strategy and carefully consider the risks and benefits before using alavancagem. If you are considering using alavancagem, it's recommended to consult a financial professional for personalized guidance.
+Alavancagem is a powerful tool that can increase the potential return on an investment, but also increases the risk of loss. It's crucial to understand how alavancagem works and how it can affect your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Additionally, it's essential to have a well-defined investment strategy and carefully consider the risks and benefits before using alavancagem. If you are considering using alavancagem, it's recommended to consult a financial professional for personalized guidance.

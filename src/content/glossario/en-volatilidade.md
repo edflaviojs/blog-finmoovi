@@ -11,22 +11,22 @@ readingTime: 2
 
 ## What is Volatility?
 
-Volatility is the intensity with which the price of an investment rises and falls. A volatile asset can appreciate 5% in one day and fall 3% the next. The higher the volatility, the higher the risk — but also the higher the potential for gain.
+Volatility is the intensity with which the price of an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) rises and falls. A volatile asset can appreciate 5% in one day and fall 3% the next. The higher the volatility, the higher the risk — but also the higher the potential for gain.
 
 ## Examples of volatility
 
 | Asset | Volatility | Typical daily variation |
 |-------|-------------|----------------------|
 | Savings | Almost zero | 0% |
-| Treasury Selic | Very low | 0.03% |
+| Treasury [Selic](/en/glossario/en-selic) | Very low | 0.03% |
 | Stocks (Ibovespa) | Medium | 1-2% |
-| Bitcoin | Very high | 3-10% |
+| [Bitcoin](/en/glossario/en-bitcoin) | Very high | 3-10% |
 | Meme coins | Extreme | 10-50% |
 
 ## Is volatility bad?
 
 Not necessarily. It depends on your profile:
-- **Conservative:** volatility is stress. Prefer fixed income.
+- **Conservative:** volatility is stress. Prefer [fixed income](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 - **Moderate:** accepts some oscillation in exchange for higher returns.
 - **Daring:** uses volatility to their advantage (buys on dips).
 

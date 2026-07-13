@@ -11,11 +11,11 @@ readingTime: 2
 
 ## O que é Urgência Financeira?
 
-Urgência financeira é qualquer situação inesperada que exige dinheiro que você não planejou gastar. Pode ser uma demissão, um problema de saúde, um conserto no carro ou um eletrodoméstico que quebrou.
+Urgência financeira é qualquer situação inesperada que exige [dinheiro](/posts/cashback-inteligente) que você não planejou gastar. Pode ser uma demissão, um problema de saúde, um conserto no carro ou um eletrodoméstico que quebrou.
 
 ## Exemplos comuns
 
-- Perda de emprego (precisa de 3-6 meses de gastos)
+- Perda de emprego (precisa de 3-6 meses de [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme))
 - Emergência médica (cirurgia, tratamento)
 - Conserto do carro (R$ 2.000-5.000)
 - Eletrodoméstico quebrado (geladeira, máquina de lavar)
@@ -24,7 +24,7 @@ Urgência financeira é qualquer situação inesperada que exige dinheiro que vo
 
 ## Como se preparar
 
-A melhor proteção contra urgências financeiras é a **reserva de emergência**:
+A melhor proteção contra urgências financeiras é a **[reserva de emergência](/glossario/reserva-de-emergencia)**:
 - 6 meses de gastos para CLT
 - 12 meses para autônomos/PJ
 - Em investimento com liquidez diária (Tesouro Selic, CDB)
@@ -33,7 +33,7 @@ A melhor proteção contra urgências financeiras é a **reserva de emergência*
 
 Se a urgência chegou e você não tem reserva:
 
-1. **Não use cheque especial** (juros de 15%/mês)
+1. **Não use [cheque especial](/glossario/cheque-especial)** (juros de 15%/mês)
 2. **Não use rotativo do cartão** (juros de 16%/mês)
 3. Peça empréstimo consignado (juros de 1-2%/mês)
 4. Antecipe FGTS ou 13º

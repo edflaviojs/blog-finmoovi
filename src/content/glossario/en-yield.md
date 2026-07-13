@@ -31,7 +31,7 @@ O rendimento é uma medida importante para avaliar a performance de um investime
 * Pode variar dependendo do tipo de investimento e do período de tempo
 
 ## How it works
-O rendimento funciona de forma diferente dependendo do tipo de investimento. Por exemplo, em um investimento em ações, o rendimento pode ser gerado por meio de dividendos, que são pagamentos feitos pela empresa aos acionistas. Já em um investimento em títulos de dívida, o rendimento é gerado por meio de juros, que são pagamentos feitos pelo emitente do título ao investidor.
+O rendimento funciona de forma diferente dependendo do tipo de investimento. Por exemplo, em um investimento em [ações](/en/glossario/en-acoes), o rendimento pode ser gerado por meio de dividendos, que são pagamentos feitos pela empresa aos acionistas. Já em um investimento em títulos de dívida, o rendimento é gerado por meio de [juros](/en/glossario/en-juros), que são pagamentos feitos pelo emitente do título ao investidor.
 
 **Practical tip:** É importante entender que o rendimento não é o mesmo que o valor do investimento. Por exemplo, se você investir R$ 1.000 em um fundo de investimento e o valor do fundo aumentar para R$ 1.200, o rendimento seria de 20% (R$ 200 / R$ 1.000), mas o valor do investimento seria de R$ 1.200.
 
@@ -50,7 +50,7 @@ O rendimento oferece várias vantagens para os investidores. Uma das principais 
 
 **Practical tip:** É importante diversificar os investimentos para minimizar o risco e maximizar o rendimento. Por exemplo, se você investir todo o seu dinheiro em uma única ação, você estará correndo o risco de perder tudo se a empresa falhar. Já se você investir em uma carteira diversificada de ações, títulos de dívida e outros investimentos, você estará reduzindo o risco e aumentando as chances de gerar lucro.
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 O rendimento também envolve riscos. Um dos principais riscos é o risco de perda de capital, que ocorre quando o valor do investimento diminui. Além disso, o rendimento também pode ser afetado por fatores como inflação, taxas de juros e risco de crédito.
 
 * O risco de perda de capital é um dos principais riscos do rendimento

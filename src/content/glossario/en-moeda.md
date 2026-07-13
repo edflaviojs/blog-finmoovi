@@ -40,7 +40,7 @@ A moeda tem muitas vantagens, como:
 * Poupar e investir: a moeda permite que as pessoas poupem e invistam para o futuro.
 * **Practical tip:** Use um aplicativo de finanças para acompanhar suas despesas e receitas e ter uma visão clara do seu dinheiro.
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 No entanto, a moeda também tem riscos, como:
 * Inflação: a inflação é quando o valor da moeda diminui ao longo do tempo, o que significa que o mesmo valor de dinheiro pode comprar menos coisas.
 * Desemprego: se você perder seu emprego, você pode não ter dinheiro para comprar as coisas que você precisa.
@@ -54,9 +54,9 @@ No entanto, a moeda também tem riscos, como:
 ## Practical examples
 Vamos considerar alguns exemplos práticos de como a moeda funciona na vida real. Se você ganha R$ 4.000 por mês e gasta R$ 3.000 com contas e alimentos, você ainda tem R$ 1.000 para poupar ou investir. Você pode usar esse dinheiro para:
 * Poupar em uma conta bancária para ter uma reserva para emergências.
-* Investir em ações ou títulos para tentar aumentar seu patrimônio.
+* Investir em [ações](/en/glossario/en-acoes) ou títulos para tentar aumentar seu patrimônio.
 * Comprar um bem, como uma casa ou um carro.
-* **Practical tip:** Sempre verifique as taxas de juros e as condições antes de investir ou tomar um empréstimo.
+* **Practical tip:** Sempre verifique as taxas de [juros](/en/glossario/en-juros) e as condições antes de investir ou tomar um empréstimo.
 
 ## Start today
 Agora que você entende melhor como a moeda funciona, é hora de começar a gerenciar seu dinheiro de forma eficaz. **Practical tip:** Use um aplicativo de finanças para acompanhar suas despesas e receitas e ter uma visão clara do seu dinheiro. Lembre-se de que a moeda é um ferramenta poderosa que pode ser usada para melhorar sua vida financeira. Com um pouco de planejamento e disciplina, você pode alcançar seus objetivos financeiros e ter uma vida mais segura e próspera. Então, comece hoje mesmo a gerenciar seu dinheiro de forma eficaz e a construir um futuro financeiro mais brilhante!

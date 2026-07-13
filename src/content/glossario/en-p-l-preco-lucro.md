@@ -28,7 +28,7 @@ Let's consider two examples to better understand how P/L works:
 
 
 
-Although both examples have a P/L of 10, the investment choice depends on other factors, such as the sector, company growth, and overall financial health.
+Although both examples have a P/L of 10, the [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) choice depends on other factors, such as the sector, company growth, and overall financial health.
 
 ## Comparative Table
 Here is a comparative table to illustrate the difference in P/L between different companies:
@@ -44,4 +44,4 @@ In this table, Company C has a higher P/L, which may indicate that investors are
 ## Why P/L is Important
 The P/L is an important measure because it helps investors evaluate if the price of a stock is fair compared to the company's financial performance. A high P/L may indicate that the stock is overvalued, while a low P/L may indicate that the stock is undervalued. However, it is crucial to consider P/L in conjunction with other financial metrics and market factors to make informed investment decisions.
 
-To stay on top of your finances and monitor the performance of your stocks, consider using a financial management app. These apps can help you track the price of your stocks, calculate P/L, and more, making it easier to make smart investment decisions.
+To stay on top of your finances and monitor the performance of your stocks, consider using a [financial management](/en/posts/en-5-alternativas-ao-mobills-em-2026) app. These apps can help you track the price of your stocks, calculate P/L, and more, making it easier to make smart investment decisions.

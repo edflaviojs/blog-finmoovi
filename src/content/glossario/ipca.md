@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é IPCA?
 
-O IPCA (Índice Nacional de Preços ao Consumidor Amplo) é o termômetro oficial da inflação no Brasil. Ele mede quanto os preços subiram (ou caíram) em um determinado período. É calculado pelo IBGE todo mês.
+O IPCA (Índice Nacional de Preços ao Consumidor Amplo) é o termômetro oficial da [inflação](/glossario/inflacao) no Brasil. Ele mede quanto os preços subiram (ou caíram) em um determinado período. É calculado pelo IBGE todo mês.
 
 ## O que ele mede
 
@@ -24,9 +24,9 @@ O IPCA acompanha os preços de uma "cesta" de produtos e serviços que as famíl
 
 ## Por que o IPCA importa para você
 
-1. **Seu dinheiro perde valor:** se o IPCA é 5% ao ano, R$ 100 hoje valem R$ 95 daqui a um ano
-2. **Investimentos:** rendimentos abaixo do IPCA significam que você está perdendo dinheiro
-3. **Selic:** o Banco Central sobe ou desce a Selic para controlar o IPCA
+1. **Seu [dinheiro](/posts/cashback-inteligente) perde valor:** se o IPCA é 5% ao ano, R$ 100 hoje valem R$ 95 daqui a um ano
+2. **[Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026):** rendimentos abaixo do IPCA significam que você está perdendo dinheiro
+3. **[Selic](/glossario/selic):** o Banco Central sobe ou desce a Selic para controlar o IPCA
 4. **Reajustes:** aluguéis, planos de saúde e salários são reajustados pelo IPCA
 
 ## IPCA e investimentos

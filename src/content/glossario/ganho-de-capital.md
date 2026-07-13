@@ -11,11 +11,11 @@ readingTime: 2
 
 ## O que é Ganho de Capital?
 
-Ganho de capital é o lucro que você tem quando vende algo por mais do que pagou. Comprou uma ação por R$ 20 e vendeu por R$ 30? Seu ganho de capital é R$ 10. Esse lucro pode ser tributado pelo Imposto de Renda.
+Ganho de capital é o lucro que você tem quando vende algo por mais do que pagou. Comprou uma ação por R$ 20 e vendeu por R$ 30? Seu ganho de capital é R$ 10. Esse lucro pode ser tributado pelo [Imposto de Renda](/glossario/imposto-de-renda).
 
 ## Onde incide
 
-- Venda de ações (acima de R$ 20.000/mês)
+- Venda de [ações](/glossario/acoes) (acima de R$ 20.000/mês)
 - Venda de imóveis
 - Venda de criptomoedas (acima de R$ 35.000/mês)
 - Venda de veículos com lucro

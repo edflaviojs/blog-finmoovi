@@ -15,7 +15,7 @@ Independência financeira é quando seus investimentos geram renda suficiente pa
 
 ## A fórmula
 
-**Patrimônio necessário = Gastos anuais × 25**
+**Patrimônio necessário = [Gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) anuais × 25**
 
 Isso é baseado na "regra dos 4%": você pode retirar 4% do patrimônio por ano sem que ele acabe.
 
@@ -31,7 +31,7 @@ Com R$ 1,5 milhão investidos rendendo 8% ao ano, você teria R$ 120.000/ano (R$
 
 Depende de quanto você poupa:
 
-| Taxa de poupança | Tempo para IF |
+| Taxa de [poupança](/es/glossario/es-poupanca) | Tempo para IF |
 |-----------------|---------------|
 | 10% da renda | 51 anos |
 | 20% da renda | 37 anos |

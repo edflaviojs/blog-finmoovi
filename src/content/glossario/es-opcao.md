@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Una **opción** es un contrato que te da el derecho, pero no la obligación, de comprar o vender un activo (como acciones, divisas o commodities) a un precio preestablecido y dentro de un plazo determinado. Piensa en ella como una reserva de precio: pagas una pequeña suma hoy para asegurarte de que podrás comprar o vender más adelante al precio que acordaste. En el mundo de las finanzas personales, las opciones pueden servir para proteger tus inversiones o para intentar obtener ganancias extra sin comprometer todo tu capital.
+Una **opción** es un contrato que te da el derecho, pero no la obligación, de comprar o vender un activo (como acciones, divisas o commodities) a un precio preestablecido y dentro de un plazo determinado. Piensa en ella como una reserva de precio: pagas una pequeña suma hoy para asegurarte de que podrás comprar o vender más adelante al precio que acordaste. En el mundo de las [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), las opciones pueden servir para proteger tus inversiones o para intentar obtener ganancias extra sin comprometer todo tu capital.
 
 ![Qué es](/images/glossario/opcao-inline-1.webp)
 
@@ -56,7 +56,7 @@ Las opciones ofrecen varios beneficios que pueden ser útiles incluso para quien
 Como todo instrumento financiero, las opciones conllevan riesgos que no debes subestimar:
 
 - **Pérdida total de la prima:** si la opción expira sin valor, la suma pagada desaparece.
-- **Complejidad:** entender conceptos como volatilidad, delta y vencimiento requiere estudio; un error puede costar más de lo esperado.
+- **Complejidad:** entender conceptos como [volatilidad](/es/glossario/es-volatilidade), delta y vencimiento requiere estudio; un error puede costar más de lo esperado.
 - **Apalancamiento excesivo:** aunque la prima sea baja, la exposición al activo subyacente puede ser alta, generando pérdidas indirectas.
 - **Liquidez:** no todas las opciones tienen suficiente movimiento en el mercado, lo que dificulta comprar o vender a buen precio.
 
@@ -74,14 +74,14 @@ En cada caso, la prima representa una fracción del capital total (entre 1% y 3%
 
 Si decides probar las opciones, sigue estos pasos para no meter la pata:
 
-- **Educación básica:** dedica al menos una hora a la semana a leer artículos o ver videos sobre opciones; plataformas como YouTube y blogs de finanzas personales son un buen punto de partida.
+- **Educación básica:** dedica al menos una hora a la semana a leer artículos o ver videos sobre opciones; plataformas como YouTube y blogs de [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) son un buen punto de partida.
 - **Abre una cuenta en una corredora:** elige una que ofrezca una app amigable (por ejemplo, la app de XP Investimentos) y que permita operar con opciones sin comisiones exageradas.
 - **Define tu objetivo:** decide si buscas protección, ingreso extra o especulación; eso determinará el tipo de opción que comprarás.
 - **Empieza con una pequeña prima:** no arriesgues más del 2% de tu patrimonio en la primera operación; así, si la opción expira sin valor, la pérdida será mínima.
 - **Usa una hoja de cálculo:** registra cada operación (activo, tipo, precio de ejercicio, prima, vencimiento) para evaluar resultados y aprender de los errores.
 - **Revisa el vencimiento:** nunca dejes una opción sin supervisar; si el mercado se mueve a tu favor, actúa antes de que expire.
 
-**Consejo práctico:** **Mantén un fondo de emergencia separado antes de operar con opciones**, así evitas tocar dinero destinado a gastos esenciales.
+**Consejo práctico:** **Mantén un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) separado antes de operar con opciones**, así evitas tocar dinero destinado a gastos esenciales.
 
 **Consejo práctico:** **No te dejes llevar por la emoción**; si la acción sube rápidamente, evalúa si ejercer la opción o venderla en el mercado para asegurar ganancias.
 

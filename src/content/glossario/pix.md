@@ -45,4 +45,4 @@ PIX é o sistema de pagamentos instantâneos criado pelo Banco Central em 2020. 
 
 ## PIX e controle financeiro
 
-O PIX facilita o rastreamento de gastos porque todas as transações ficam registradas no extrato. Apps como o FinMoovi categorizam automaticamente seus PIX para você saber exatamente para onde vai seu dinheiro.
+O PIX facilita o rastreamento de [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) porque todas as transações ficam registradas no extrato. Apps como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) categorizam automaticamente seus PIX para você saber exatamente para onde vai seu dinheiro.

@@ -17,8 +17,8 @@ Volatilidade é a intensidade com que o preço de um investimento sobe e desce. 
 
 | Ativo | Volatilidade | Variação típica diária |
 |-------|-------------|----------------------|
-| Poupança | Quase zero | 0% |
-| Tesouro Selic | Muito baixa | 0,03% |
+| [Poupança](/es/glossario/es-poupanca) | Quase zero | 0% |
+| [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) | Muito baixa | 0,03% |
 | Ações (Ibovespa) | Média | 1-2% |
 | Bitcoin | Muito alta | 3-10% |
 | Meme coins | Extrema | 10-50% |
@@ -26,7 +26,7 @@ Volatilidade é a intensidade com que o preço de um investimento sobe e desce. 
 ## Volatilidade é ruim?
 
 Não necessariamente. Depende do seu perfil:
-- **Conservador:** volatilidade é estresse. Prefira renda fixa.
+- **Conservador:** volatilidade é estresse. Prefira [renda fixa](/es/glossario/es-renda-fixa).
 - **Moderado:** aceita alguma oscilação em troca de mais retorno.
 - **Arrojado:** usa a volatilidade a seu favor (compra nas quedas).
 

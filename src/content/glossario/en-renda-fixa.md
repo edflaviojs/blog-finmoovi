@@ -33,14 +33,14 @@ Quando você compra um título de renda fixa, está adquirindo um contrato que p
 
 - **Previsibilidade:** Você sabe quanto vai receber, o que facilita o planejamento de gastos e metas.  
 - **Segurança:** A maioria dos títulos de renda fixa emitidos por bancos ou pelo Tesouro Nacional tem garantia do Fundo Garantidor de Créditos (FGC) até R$250 mil por pessoa e por instituição.  
-- **Liquidez:** Alguns títulos permitem resgate antes do vencimento sem grandes perdas, como fundos DI ou Tesouro Selic.  
-- **Diversificação:** Mesmo quem tem pouco dinheiro pode montar uma carteira equilibrada, reduzindo a dependência de investimentos mais voláteis.
+- **Liquidez:** Alguns títulos permitem resgate antes do vencimento sem grandes perdas, como fundos DI ou Tesouro [Selic](/en/posts/en-quotes-semana-1-july-2026).  
+- **[Diversificação](/en/glossario/en-diversificacao):** Mesmo quem tem pouco dinheiro pode montar uma carteira equilibrada, reduzindo a dependência de investimentos mais voláteis.
 
 ![Advantages](/images/glossario/renda-fixa-inline-3.webp)
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 - **Risco de crédito:** Se o emissor (banco ou empresa) falir, você pode perder parte ou todo o capital. Por isso, prefira instituições bem avaliadas ou títulos garantidos pelo FGC.  
 - **Risco de taxa de juros:** Quando a taxa de juros sobe, o preço dos títulos já emitidos cai. Se precisar vender antes do vencimento, pode receber menos do que pagou.  
@@ -61,7 +61,7 @@ Se você tem um salário de R$7.200 e consegue destinar 15% (R$1.080) para a ren
 1. **Abra uma conta em uma corretora:** Escolha uma que tenha interface simples e taxas baixas. Eu uso o app **Rico**, que é bem intuitivo e tem um tutorial passo a passo – parece que um amigo me mostrou.  
 2. **Defina seu objetivo:** Quer guardar para a entrada da casa própria, montar um fundo de emergência ou garantir a aposentadoria? Cada meta pode ter um prazo diferente, e isso determina o tipo de título que você deve escolher.  
 3. **Monte um plano de aporte:** Decida quanto vai investir todo mês. **Practical tip:** Comece com um valor que não comprometa seu orçamento, como 5% a 10% da renda, e aumente gradualmente quando houver aumento salarial.  
-4. **Escolha os títulos:** Para curto prazo (até 2 anos), o Tesouro Selic ou CDBs de liquidez diária são ideais. Para médio prazo (2 a 5 anos), considere LCIs (Letras de Crédito Imobiliário) que são isentas de Imposto de Renda. Para longo prazo, os Tesouros IPCA+ protegem contra a inflação.  
+4. **Escolha os títulos:** Para curto prazo (até 2 anos), o Tesouro Selic ou CDBs de liquidez diária são ideais. Para médio prazo (2 a 5 anos), considere LCIs (Letras de Crédito Imobiliário) que são isentas de [Imposto de Renda](/en/glossario/en-imposto-de-renda). Para longo prazo, os Tesouros IPCA+ protegem contra a inflação.  
 5. **Acompanhe a performance:** Use o app da corretora para ver o rendimento diário. **Practical tip:** Reserve 15 minutos na primeira semana de cada mês para conferir se os investimentos ainda estão alinhados com seus objetivos.  
 6. **Rebalanceie quando necessário:** Se a sua situação mudar (aumento de salário, mudança de meta), ajuste a alocação. **Practical tip:** Quando receber um aumento, direcione ao menos 30% da diferença para a renda fixa antes de pensar em gastos extras.
 

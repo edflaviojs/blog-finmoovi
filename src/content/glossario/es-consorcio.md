@@ -24,7 +24,7 @@ Consorcio es un sistema donde varias personas se unen para comprar algo (coche, 
 ## Ventajas
 
 - No tiene intereses (solo tasa de administración de 10-20% del total)
-- Disciplina de ahorro forzado
+- Disciplina de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) forzado
 - Poder de compra al contado (carta de crédito)
 - Puede usar FGC para puja (inmuebles)
 
@@ -32,7 +32,7 @@ Consorcio es un sistema donde varias personas se unen para comprar algo (coche, 
 
 - No sabe cuándo será beneficiado
 - La tasa de administración puede ser alta
-- El dinero queda bloqueado hasta ser beneficiado o hasta que el grupo termine
+- El [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) queda bloqueado hasta ser beneficiado o hasta que el grupo termine
 - Las cuotas pueden ser reajustadas
 
 ## Consorcio vs. Financiación

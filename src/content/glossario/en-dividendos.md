@@ -11,14 +11,14 @@ readingTime: 1
 
 ## What are Dividends?
 
-Dividends are the portion of a company's profit that is distributed to its shareholders. If you own shares of a company that pays dividends, you receive money periodically without having to sell your shares.
+Dividends are the portion of a company's profit that is distributed to its shareholders. If you own shares of a company that pays dividends, you receive [money](/en/posts/en-30-day-rule-for-purchases) periodically without having to sell your shares.
 
 ## How does it work?
 
 1. The company makes a profit in the quarter/year
 2. The board decides to distribute part of that profit
 3. Those who held shares on the "ex-date" receive the dividends
-4. The money is directly deposited into your brokerage account
+4. The [money](/en/posts/en-avoid-impulse-purchases) is directly deposited into your brokerage account
 
 ## Dividends in Brazil
 

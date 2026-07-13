@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is Tabela SAC?
 
-SAC (Sistema de Amortização Constante) is a loan repayment method where the amortization amount (the part that reduces the debt) is the same for all installments. As the interest decreases as the outstanding balance falls, the installments become smaller over time.
+SAC (Sistema de Amortização Constante) is a loan repayment method where the [amortization](/en/glossario/en-amortizacao) amount (the part that reduces the debt) is the same for all installments. As the interest decreases as the outstanding balance falls, the installments become smaller over time.
 
 ## How does it work?
 
@@ -21,7 +21,7 @@ SAC (Sistema de Amortização Constante) is a loan repayment method where the am
 
 ## Practical example
 
-Financing of R$ 120,000 in 10 years (120 months) at 1% per month:
+[Financing](/en/glossario/en-financiamento) of R$ 120,000 in 10 years (120 months) at 1% per month:
 - Monthly amortization: R$ 120,000 ÷ 120 = R$ 1,000
 - 1st installment: R$ 1,000 + R$ 1,200 (interest) = **R$ 2,200**
 - 60th installment: R$ 1,000 + R$ 610 = **R$ 1,610**
@@ -38,7 +38,7 @@ Financing of R$ 120,000 in 10 years (120 months) at 1% per month:
 
 ## When to choose SAC
 
-- When your income allows you to pay larger installments at the beginning
+- When your [income](/en/posts/en-montando-carteira-diversificada-com-r-500) allows you to pay larger installments at the beginning
 - When you want to save on total interest
 - For long-term financing (the difference is huge)
 - When you plan to amortize ahead of schedule

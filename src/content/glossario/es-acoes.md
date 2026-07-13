@@ -35,7 +35,7 @@ Cuando compras una acción, estás comprando una pequeña parte de la empresa. S
 
 **Consejo práctico:** Es importante investigar sobre la empresa antes de comprar acciones, para entender su historial de desempeño y sus perspectivas futuras. Puedes hacer esto leyendo informes financieros y noticias sobre la empresa.
 
-Las acciones también pueden generar dividendos, que son pagos que la empresa hace a sus accionistas como forma de distribuir sus ganancias. Por ejemplo, si tienes 10 acciones de una empresa que paga un dividendo anual de R$5 por acción, recibirás R$50 al año.
+Las acciones también pueden generar [dividendos](/es/glossario/es-dividendos), que son pagos que la empresa hace a sus accionistas como forma de distribuir sus ganancias. Por ejemplo, si tienes 10 acciones de una empresa que paga un dividendo anual de R$5 por acción, recibirás R$50 al año.
 
 ## Ventajas
 Las acciones ofrecen varias ventajas, como:
@@ -55,12 +55,12 @@ Las acciones también pueden ser una forma de ahorrar para el largo plazo, como 
 ## Riesgos
 Las acciones también conllevan riesgos, como:
 * La posibilidad de perder dinero si la empresa no tiene un buen desempeño
-* La volatilidad del mercado, que puede hacer que el valor de tus acciones fluctúe
+* La [volatilidad](/es/glossario/es-volatilidade) del mercado, que puede hacer que el valor de tus acciones fluctúe
 * La falta de liquidez, que puede hacer que sea difícil vender tus acciones cuando lo necesites
 
-**Consejo práctico:** Es importante entender que las acciones son una inversión a largo plazo, y no debes invertir dinero que necesites en el corto plazo. Puedes hacer esto invirtiendo solo el dinero que estás dispuesto a perder, y manteniendo una reserva de emergencia para cubrir tus gastos básicos.
+**Consejo práctico:** Es importante entender que las acciones son una inversión a largo plazo, y no debes invertir dinero que necesites en el corto plazo. Puedes hacer esto invirtiendo solo el dinero que estás dispuesto a perder, y manteniendo una reserva de emergencia para cubrir tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) básicos.
 
-Las acciones también pueden ser afectadas por factores externos, como la economía y la política. Por ejemplo, si hay una recesión económica, el valor de tus acciones puede disminuir.
+Las acciones también pueden ser afectadas por factores externos, como la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) y la política. Por ejemplo, si hay una recesión económica, el valor de tus acciones puede disminuir.
 
 ## Ejemplos prácticos
 Imagina que tienes un salario de R$5.000 al mes y decides invertir R$1.000 en acciones. Puedes comprar 20 acciones de una empresa a R$50 cada una. Si el valor de la acción aumenta a R$60, puedes vender tus acciones y obtener una ganancia de R$200.

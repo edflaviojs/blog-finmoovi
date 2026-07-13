@@ -11,7 +11,7 @@ readingTime: 1
 
 ## O que é Orçamento Pessoal?
 
-Orçamento pessoal é um plano que mostra quanto dinheiro entra, quanto sai e para onde vai. É a ferramenta mais básica e poderosa das finanças pessoais. Sem orçamento, você está dirigindo no escuro.
+Orçamento pessoal é um plano que mostra quanto dinheiro entra, quanto sai e para onde vai. É a ferramenta mais básica e poderosa das [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su). Sem orçamento, você está dirigindo no escuro.
 
 ## Como montar um orçamento
 
@@ -25,7 +25,7 @@ Orçamento pessoal é um plano que mostra quanto dinheiro entra, quanto sai e pa
 ### Passo 2: Liste todas as despesas
 
 **Fixas (não mudam):**
-- Aluguel/financiamento
+- Aluguel/[financiamento](/glossario/financiamento)
 - Condomínio
 - Plano de saúde
 - Internet/telefone
@@ -44,7 +44,7 @@ Orçamento pessoal é um plano que mostra quanto dinheiro entra, quanto sai e pa
 
 ## Ferramentas para orçamento
 
-- **FinMoovi** — app com categorização automática por IA
+- **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** — app com categorização automática por IA
 - Planilha simples (Google Sheets)
 - Caderno e caneta (funciona!)
 

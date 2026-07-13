@@ -17,7 +17,7 @@ Foreign Exchange is the exchange of one currency for another. When you buy dolla
 
 - **USD/BRL = 5,50** means that 1 dollar costs R$ 5,50
 - The rate changes every second in the market
-- It is influenced by interest rates, inflation, politics, and capital flow
+- It is influenced by interest rates, [inflation](/en/glossario/en-inflacao), politics, and capital flow
 
 ## Types of Foreign Exchange
 
@@ -32,9 +32,9 @@ Foreign Exchange is the exchange of one currency for another. When you buy dolla
 1. **Buy in small amounts** — don't try to time the best moment
 2. **Compare exchange offices** — spreads vary greatly
 3. **Avoid airports** — rates are the worst
-4. **International debit card** — usually better than cash
+4. **International [debit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)** — usually better than cash
 5. **IOF:** 4,38% on card, 1,1% in cash
 
-## Foreign Exchange and investments
+## Foreign Exchange and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Investing in dollar-denominated assets (international ETFs, BDRs) is a way to protect yourself from the devaluation of the real. When the dollar rises, your international investments appreciate in reals.

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Ações são uma forma de investimento que permite que você compre uma parte de uma empresa. Imagine que você é dono de uma pequena loja de roupas e quer expandir seu negócio. Você pode vender ações da sua loja para outros investidores, que então se tornam donos de uma parte da sua empresa. Em troca, você recebe o dinheiro necessário para expandir seu negócio. As ações são negociadas em bolsas de valores, como a B3 no Brasil, e seu valor pode variar de acordo com o desempenho da empresa.
+Ações são uma forma de investimento que permite que você compre uma parte de uma empresa. Imagine que você é dono de uma pequena loja de roupas e quer expandir seu negócio. Você pode vender ações da sua loja para outros investidores, que então se tornam donos de uma parte da sua empresa. Em troca, você recebe o dinheiro necessário para expandir seu negócio. As ações são negociadas em bolsas de valores, como a B3 no Brasil, e seu [valor](/en/glossario/en-valor) pode variar de acordo com o desempenho da empresa.
 
 As ações são uma forma de investimento de longo prazo, pois o valor delas pode flutuar ao longo do tempo. No entanto, se você investir em ações de empresas sólidas e bem geridas, é possível obter retornos significativos ao longo do tempo. Por exemplo, se você investir R$ 5.000 em ações de uma empresa que paga dividendos anuais de 5%, você receberá R$ 250 por ano, o que é um retorno de 5% sobre o seu investimento.
 
@@ -46,7 +46,7 @@ As ações oferecem várias vantagens, incluindo:
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 No entanto, as ações também envolvem riscos, incluindo:
 * **Risco de perda**: o valor das ações pode cair, o que significa que você pode perder dinheiro se vender as ações por um preço mais baixo do que o que você pagou por elas.
 * **Risco de volatilidade**: o preço das ações pode flutuar rapidamente, o que pode ser estressante se você não estiver preparado.
@@ -63,7 +63,7 @@ Aqui estão algumas dicas práticas para investir em ações:
 * **Monitore seu investimento**: é importante monitorar seu investimento regularmente para garantir que ele esteja alinhado com seus objetivos financeiros.
 
 ## Start today
-Agora que você entende melhor como as ações funcionam, é hora de começar a investir. **Practical tip:** Você pode usar um aplicativo de investimento, como o Nubank, para começar a investir em ações. O Nubank oferece uma plataforma fácil de usar e baixas taxas de transação, o que torna mais acessível para você começar a investir. Lembre-se de que o investimento em ações envolve riscos, mas também oferece o potencial de crescimento e dividendos. Então, não hesite em começar a investir hoje mesmo e alcançar seus objetivos financeiros.
+Agora que você entende melhor como as ações funcionam, é hora de começar a investir. **Practical tip:** Você pode usar um aplicativo de investimento, como o [Nubank](/en/glossario/en-nubank), para começar a investir em ações. O Nubank oferece uma plataforma fácil de usar e baixas taxas de transação, o que torna mais acessível para você começar a investir. Lembre-se de que o investimento em ações envolve riscos, mas também oferece o potencial de crescimento e dividendos. Então, não hesite em começar a investir hoje mesmo e alcançar seus objetivos financeiros.
 
 ---
 

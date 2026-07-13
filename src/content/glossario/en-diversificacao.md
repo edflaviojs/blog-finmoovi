@@ -24,7 +24,7 @@ Listas de ativos para diversificar incluem:
 * Ações de empresas
 * Títulos de dívida
 * Imóveis
-* Fundos de investimento
+* [Fundos](/en/glossario/en-fundos) de investimento
 * Outros ativos, como commodities ou criptomoedas
 
 ![What it is](/images/glossario/diversificacao-inline-1.webp)
@@ -37,7 +37,7 @@ A diversificação funciona porque diferentes ativos têm diferentes ciclos de v
 ## Advantages
 A diversificação tem várias vantagens, incluindo a redução do risco de perda de valor, a possibilidade de aumentar os ganhos a longo prazo e a tranquilidade de saber que seu dinheiro está distribuído de forma segura. Além disso, a diversificação também pode ajudar a reduzir o estresse e a ansiedade causados pela incerteza do mercado. **Practical tip:** É importante diversificar seus investimentos de acordo com seu perfil de risco e objetivos financeiros. Por exemplo, se você é mais conservador, pode querer colocar mais dinheiro em títulos de dívida e menos em ações.
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Embora a diversificação seja uma estratégia segura, também há riscos envolvidos. Por exemplo, se você diversificar demais, pode acabar perdendo a oportunidade de ganhos mais altos em um ativo específico. Além disso, a diversificação também pode ser complicada e requerer mais tempo e esforço para gerenciar. **Practical tip:** É importante lembrar que a diversificação não é uma estratégia de "comprar e esquecer", mas sim uma estratégia de gerenciamento ativo. Você precisa monitorar seus investimentos regularmente e fazer ajustes conforme necessário.
 
 ![Advantages](/images/glossario/diversificacao-inline-3.webp)
@@ -45,7 +45,7 @@ Embora a diversificação seja uma estratégia segura, também há riscos envolv
 
 
 ## Practical examples
-Imagine que você tem um salário de R$ 5.000 por mês e decide investir R$ 1.000 por mês em diferentes ativos. Você pode colocar R$ 300 em ações de empresas, R$ 300 em títulos de dívida, R$ 200 em um fundo de investimento e R$ 200 em uma aplicação mais segura, como um poupança. Com o tempo, você pode ajustar esses valores de acordo com seu perfil de risco e objetivos financeiros. Por exemplo, se você está se aproximando da aposentadoria, pode querer colocar mais dinheiro em títulos de dívida e menos em ações. Você também pode usar um app de investimento para ajudar a gerenciar seus investimentos e fazer ajustes conforme necessário.
+Imagine que você tem um salário de R$ 5.000 por mês e decide investir R$ 1.000 por mês em diferentes ativos. Você pode colocar R$ 300 em ações de empresas, R$ 300 em títulos de dívida, R$ 200 em um fundo de investimento e R$ 200 em uma aplicação mais segura, como um [poupança](/en/glossario/en-poupanca). Com o tempo, você pode ajustar esses valores de acordo com seu perfil de risco e objetivos financeiros. Por exemplo, se você está se aproximando da aposentadoria, pode querer colocar mais dinheiro em títulos de dívida e menos em ações. Você também pode usar um app de investimento para ajudar a gerenciar seus investimentos e fazer ajustes conforme necessário.
 
 ## Start today
 Agora que você sabe o que é diversificação e como ela funciona, é hora de começar a aplicar essa estratégia em sua vida financeira. **Practical tip:** Comece pequeno e vá aumentando gradualmente. Não é necessário ter muito dinheiro para começar a diversificar seus investimentos. Você pode começar com um pequeno valor e ir aumentando ao longo do tempo. Além disso, é importante lembrar que a diversificação é uma estratégia de longo prazo, então não se preocupe se você não ver resultados imediatos. Com paciência e disciplina, você pode alcançar seus objetivos financeiros e ter uma vida mais segura e próspera.

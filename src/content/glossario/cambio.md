@@ -17,7 +17,7 @@ Câmbio é a troca de uma moeda por outra. Quando você compra dólares para via
 
 - **USD/BRL = 5,50** significa que 1 dólar custa R$ 5,50
 - A taxa muda a cada segundo no mercado
-- É influenciada por juros, inflação, política e fluxo de capitais
+- É influenciada por [juros](/glossario/juros), [inflação](/glossario/inflacao), política e fluxo de capitais
 
 ## Tipos de câmbio
 
@@ -27,12 +27,12 @@ Câmbio é a troca de uma moeda por outra. Quando você compra dólares para via
 | Turismo | Compra de moeda para viagem | Maior (3-5%) |
 | Paralelo | Mercado informal (ilegal) | Variável |
 
-## Dicas para comprar moeda estrangeira
+## [Dicas](/posts/7-erros-financeiros-iniciante) para comprar moeda estrangeira
 
 1. **Compre aos poucos** — não tente acertar o melhor momento
 2. **Compare casas de câmbio** — spreads variam muito
 3. **Evite aeroportos** — taxas são as piores
-4. **Cartão de débito internacional** — geralmente melhor que dinheiro em espécie
+4. **[Cartão de débito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional** — geralmente melhor que dinheiro em espécie
 5. **IOF:** 4,38% no cartão, 1,1% em espécie
 
 ## Câmbio e investimentos

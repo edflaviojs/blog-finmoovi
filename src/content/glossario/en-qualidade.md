@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Qualidade, no contexto financeiro, é a ideia de priorizar **valor real** em vez de quantidade. Em vez de comprar o maior número de coisas, você busca produtos, serviços ou investimentos que realmente entregam o que prometem, duram mais e trazem benefícios sustentáveis. Essa postura evita gastos desnecessários e ajuda a construir um patrimônio mais sólido ao longo do tempo.  
+Qualidade, no contexto financeiro, é a ideia de priorizar **[valor](/en/glossario/en-valor) real** em vez de quantidade. Em vez de comprar o maior número de coisas, você busca produtos, serviços ou investimentos que realmente entregam o que prometem, duram mais e trazem benefícios sustentáveis. Essa postura evita gastos desnecessários e ajuda a construir um patrimônio mais sólido ao longo do tempo.  
 
 ![What it is](/images/glossario/qualidade-inline-1.webp)
 
@@ -49,7 +49,7 @@ Focar em qualidade traz benefícios que vão além do bolso. Primeiro, você red
 - Maior previsibilidade nos orçamentos mensais.  
 - Construção de um histórico de compras inteligentes que aumenta a autoconfiança.  
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Apesar das vantagens, a busca pela qualidade pode trazer alguns desafios. O principal risco é cair na armadilha do “preço alto = melhor”. Nem tudo que custa mais tem qualidade superior; algumas marcas cobram apenas pelo nome. Além disso, ao focar demais em qualidade, pode‑se postergar decisões importantes, como investir o dinheiro que está parado esperando a “opção perfeita”.  
 
@@ -71,7 +71,7 @@ Outro exemplo: um salário de R$7.000 e a decisão de contratar um plano de inte
 - **Plano X:** R$80/mês, velocidade limitada, risco de quedas frequentes.  
 - **Plano Y:** R$150/mês, velocidade alta e suporte 24h.  
 
-Com o Plano Y, você evita perder tempo em chamadas de suporte e garante que o home office funcione sem interrupções, o que pode representar um ganho de R$300‑R$500 por mês em produtividade.  
+Com o Plano Y, você evita perder tempo em chamadas de suporte e garante que o home office funcione sem interrupções, o que pode representar um ganho de R$300‑[R$500](/en/posts/en-montando-carteira-diversificada-com-r-500) por mês em produtividade.  
 
 **Practical tip:** Avalie o custo total de propriedade (CTP) antes de comprar; inclua preço, manutenção e tempo de vida útil.  
 

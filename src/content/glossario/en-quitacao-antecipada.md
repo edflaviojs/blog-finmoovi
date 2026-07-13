@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is Early Payoff?
 
-Early payoff is paying off a debt (financing, loan, consortium) before the final deadline. When you do this, you are entitled to a discount on the interest that would be charged in the future. It's a right guaranteed by the Consumer Defense Code.
+Early payoff is paying off a debt ([financing](/en/glossario/en-financiamento), loan, [consortium](/en/glossario/en-consorcio)) before the final deadline. When you do this, you are entitled to a discount on the interest that would be charged in the future. It's a right guaranteed by the Consumer Defense Code.
 
 ## Your rights
 
@@ -30,10 +30,10 @@ Example: financing of R$ 200,000 in 30 years at 10% per year.
 ## When it's worth paying off
 
 ✅ Worth it:
-- Interest on the debt is higher than the return on your investments
+- Interest on the debt is higher than the return on your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 - Real estate financing with high rates (>9% per year)
 - Personal and consigned loans
-- When you have idle money earning less
+- When you have idle [money](/en/posts/en-30-day-rule-for-purchases) earning less
 
 ❌ Not worth it:
 - Interest on the debt is lower than what your investments yield

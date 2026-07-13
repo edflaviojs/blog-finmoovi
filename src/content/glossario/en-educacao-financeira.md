@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is Financial Education?
 
-Financial education is about learning to handle money intelligently. It's not about getting rich quickly — it's about understanding how money works to make better decisions in your daily life.
+Financial education is about learning to handle [money](/en/posts/en-30-day-rule-for-purchases) intelligently. It's not about getting rich quickly — it's about understanding how money works to make better decisions in your daily life.
 
 ## The 4 Pillars
 
@@ -39,7 +39,7 @@ Financial education is about learning to handle money intelligently. It's not ab
 ### 4. Investing
 
 - Understanding risk vs. return
-- Starting early (compound interest)
+- Starting early ([compound interest](/en/glossario/en-juros-compostos))
 - Diversifying
 - Having patience (long-term)
 
@@ -51,8 +51,8 @@ Unfortunately, financial education is not a priority in the Brazilian school cur
 
 1. Write down all your expenses for 30 days
 2. Create a simple budget
-3. Pay off expensive debts (checking account, overdraft)
+3. Pay off expensive debts (checking account, [overdraft](/en/glossario/en-cheque-especial))
 4. Build an emergency reserve
 5. Start investing (even R$ 50/month)
 6. Read 1 finance book per quarter
-7. Use FinMoovi to automate control
+7. Use [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) to automate control

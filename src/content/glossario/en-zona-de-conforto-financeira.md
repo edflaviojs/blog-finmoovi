@@ -29,13 +29,13 @@ It's the state where your finances are organized and you don't live in fear of t
 
 - Zero special check
 - Zero credit card revolving
-- Financing under control (installment < 30% of income)
+- [Financing](/en/glossario/en-financiamento) under control (installment < 30% of income)
 
 ### 4. Growing investments
 
 - Regular monthly contributions
 - Diversified portfolio
-- Return above inflation (IPCA)
+- Return above [inflation](/en/glossario/en-inflacao) (IPCA)
 
 ### 5. Protection (insurances)
 
@@ -45,7 +45,7 @@ It's the state where your finances are organized and you don't live in fear of t
 
 ## How to get there
 
-1. Create a budget (know where your money is going)
+1. Create a [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) (know where your [money](/en/posts/en-30-day-rule-for-purchases) is going)
 2. Pay off expensive debts first
 3. Build the emergency reserve
 4. Start investing (even if it's a little)

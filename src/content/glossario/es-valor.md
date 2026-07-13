@@ -20,7 +20,7 @@ seo:
 ## Qué es
 El término financiero "valor" se refiere al precio o cantidad de dinero que se asigna a un activo, como una acción, una obligación, un bien inmueble, etc. En otras palabras, es la cantidad de dinero que alguien está dispuesto a pagar por algo. Por ejemplo, si compras una casa por R$ 250.000, el valor de la casa es de R$ 250.000. 
 
-El valor de un activo puede variar con el tiempo debido a diferentes factores, como la oferta y la demanda, la inflación, la economía en general, etc. Por ejemplo, si la economía está en recesión, el valor de una casa puede disminuir, mientras que si la economía está en auge, el valor de la casa puede aumentar.
+El valor de un activo puede variar con el tiempo debido a diferentes factores, como la oferta y la demanda, la [inflación](/es/glossario/es-inflacao), la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) en general, etc. Por ejemplo, si la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) está en recesión, el valor de una casa puede disminuir, mientras que si la economía está en auge, el valor de la casa puede aumentar.
 
 ![Qué es](/images/glossario/valor-inline-1.webp)
 
@@ -49,7 +49,7 @@ Sin embargo, el valor de un activo también puede ser un factor de riesgo. Por e
 * Algunos de los riesgos asociados con el valor de un activo incluyen:
  + Riesgo de mercado: el valor de un activo puede disminuir debido a cambios en el mercado.
  + Riesgo de inflación: la inflación puede disminuir el valor del dinero, lo que significa que el valor de un activo puede disminuir.
- + Riesgo de liquidez: si no hay suficientes compradores para un activo, el valor del activo puede disminuir.
+ + Riesgo de [liquidez](/es/glossario/es-liquidez): si no hay suficientes compradores para un activo, el valor del activo puede disminuir.
 
 ## Ejemplos prácticos
 Por ejemplo, supongamos que tienes un salario de R$ 5.000 al mes y estás considerando comprar una casa que cuesta R$ 200.000. Si el valor de la casa aumenta un 10% en un año, el valor de la casa será de R$ 220.000. 

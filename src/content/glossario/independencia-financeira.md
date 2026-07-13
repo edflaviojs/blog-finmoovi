@@ -11,11 +11,11 @@ readingTime: 2
 
 ## O que é Independência Financeira?
 
-Independência financeira é quando seus investimentos geram renda suficiente para pagar todas as suas contas — sem precisar trabalhar. Você trabalha porque quer, não porque precisa.
+Independência financeira é quando seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) geram renda suficiente para pagar todas as suas contas — sem precisar trabalhar. Você trabalha porque quer, não porque precisa.
 
 ## A fórmula
 
-**Patrimônio necessário = Gastos anuais × 25**
+**Patrimônio necessário = [Gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) anuais × 25**
 
 Isso é baseado na "regra dos 4%": você pode retirar 4% do patrimônio por ano sem que ele acabe.
 
@@ -31,7 +31,7 @@ Com R$ 1,5 milhão investidos rendendo 8% ao ano, você teria R$ 120.000/ano (R$
 
 Depende de quanto você poupa:
 
-| Taxa de poupança | Tempo para IF |
+| Taxa de [poupança](/glossario/poupanca) | Tempo para IF |
 |-----------------|---------------|
 | 10% da renda | 51 anos |
 | 20% da renda | 37 anos |

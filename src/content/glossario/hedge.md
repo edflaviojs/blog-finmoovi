@@ -18,10 +18,10 @@ seo:
 ---
 
 ## O que é
-O termo "hedge" é um conceito financeiro que pode parecer complexo, mas é mais simples do que você imagina. Basicamente, um hedge é uma estratégia de investimento que visa reduzir o risco de perdas em uma carteira de investimentos. Isso é feito investindo em ativos que têm um comportamento oposto ao do ativo original, de modo que se o valor do ativo original cair, o valor do ativo hedge aumente, compensando a perda.
+O termo "hedge" é um conceito financeiro que pode parecer complexo, mas é mais simples do que você imagina. Basicamente, um hedge é uma estratégia de investimento que visa reduzir o risco de perdas em uma carteira de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Isso é feito investindo em ativos que têm um comportamento oposto ao do ativo original, de modo que se o valor do ativo original cair, o valor do ativo hedge aumente, compensando a perda.
 
 ## 
-Um exemplo simples para ilustrar isso: imagine que você tem R$ 5.000 investidos em ações de uma empresa de tecnologia. Para reduzir o risco de perdas, você decide investir R$ 1.000 em um fundo que investe em títulos do governo. Se a empresa de tecnologia tiver uma crise e o valor de suas ações cair 10%, você perderá R$ 500. No entanto, se o valor dos títulos do governo aumentar 5% devido à crise, você ganhará R$ 50, reduzindo sua perda para R$ 450. Isso é um exemplo básico de hedge.
+Um exemplo simples para ilustrar isso: imagine que você tem R$ 5.000 investidos em [ações](/glossario/acoes) de uma empresa de tecnologia. Para reduzir o risco de perdas, você decide investir R$ 1.000 em um fundo que investe em títulos do governo. Se a empresa de tecnologia tiver uma crise e o valor de suas ações cair 10%, você perderá R$ 500. No entanto, se o valor dos títulos do governo aumentar 5% devido à crise, você ganhará R$ 50, reduzindo sua perda para R$ 450. Isso é um exemplo básico de hedge.
 
 ![O que é](/images/glossario/hedge-inline-1.webp)
 
@@ -40,7 +40,7 @@ A estratégia de hedge funciona investindo em ativos que têm uma correlação n
 As vantagens de usar uma estratégia de hedge incluem:
 * Redução do risco de perdas: o hedge pode ajudar a reduzir o risco de perdas em uma carteira de investimentos.
 * Proteção contra mudanças nos mercados: o hedge pode ajudar a proteger contra mudanças nos mercados, como mudanças nas taxas de juros ou nos preços das commodities.
-* Diversificação da carteira: o hedge pode ajudar a diversificar a carteira de investimentos, reduzindo a dependência de um único ativo.
+* [Diversificação](/glossario/diversificacao) da carteira: o hedge pode ajudar a diversificar a carteira de investimentos, reduzindo a dependência de um único ativo.
 
 ## 
 **Dica prática:** É importante lembrar que o hedge não é uma estratégia de investimento que pode ser usada por todos. É fundamental ter uma boa compreensão dos mercados e dos riscos envolvidos antes de investir em uma estratégia de hedge.
@@ -53,7 +53,7 @@ As vantagens de usar uma estratégia de hedge incluem:
 Os riscos de usar uma estratégia de hedge incluem:
 * Custo: o hedge pode ser caro, especialmente se você estiver investindo em ativos complexos.
 * Complexidade: o hedge pode ser complexo e difícil de entender, especialmente para investidores iniciantes.
-* Risco de perda: o hedge não é uma garantia de que você não perderá dinheiro. Se o ativo hedge não funcionar como esperado, você pode perder dinheiro.
+* Risco de perda: o hedge não é uma garantia de que você não perderá [dinheiro](/posts/cashback-inteligente). Se o ativo hedge não funcionar como esperado, você pode perder dinheiro.
 
 ## 
 **Dica prática:** É importante lembrar que o hedge é uma estratégia de investimento que deve ser usada com moderação. É fundamental ter uma carteira de investimentos diversificada e não depender apenas do hedge para proteger seus investimentos.

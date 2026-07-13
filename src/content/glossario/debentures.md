@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que são Debêntures?
 
-Debêntures são títulos de dívida emitidos por empresas. Quando você compra uma debênture, está emprestando dinheiro para a empresa — e ela te paga juros por isso. É como um CDB, mas emitido por empresas (não bancos).
+Debêntures são títulos de dívida emitidos por empresas. Quando você compra uma debênture, está emprestando [dinheiro](/posts/cashback-inteligente) para a empresa — e ela te paga juros por isso. É como um CDB, mas emitido por empresas (não bancos).
 
 ## Tipos
 
@@ -31,12 +31,12 @@ Debêntures são títulos de dívida emitidos por empresas. Quando você compra 
 
 - Rendimento geralmente maior que CDB e Tesouro
 - Debêntures incentivadas são isentas de IR
-- Diversificação da renda fixa
+- [Diversificação](/glossario/diversificacao) da [renda fixa](/glossario/renda-fixa)
 - Prazos variados (2 a 15 anos)
 
 ## Riscos
 
-- **Risco de crédito:** empresa pode não pagar (não tem FGC)
+- **Risco de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-):** empresa pode não pagar (não tem FGC)
 - **Risco de liquidez:** pode ser difícil vender antes do vencimento
 - **Risco de mercado:** preço pode oscilar se vender antes
 

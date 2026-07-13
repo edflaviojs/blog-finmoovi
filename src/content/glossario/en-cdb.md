@@ -36,7 +36,7 @@ O CDB funciona de forma simples: você deposita um valor em uma conta de investi
 Por exemplo, imagine que você investe R$ 10.000 em um CDB com prazo de 1 ano e taxa de juros de 10% ao ano. Ao final do prazo, você receberá R$ 11.000, que é o valor inicial mais o retorno de R$ 1.000. **Practical tip:** É importante ter em mente que o CDB é um investimento de risco moderado, o que significa que há um risco de perda de valor, especialmente se o banco tiver problemas financeiros.
 
 ## Advantages
-O CDB tem várias vantagens para os investidores. Em primeiro lugar, ele é uma opção de investimento relativamente segura, pois é regulamentado pelo Banco Central e oferecido por instituições financeiras sólidas. Além disso, o CDB pode oferecer uma rentabilidade razoável, especialmente se você investir por um prazo mais longo. **Practical tip:** É importante diversificar seus investimentos, ou seja, não colocar todos os seus ovos na mesma cesta. Isso significa que você pode investir em diferentes tipos de investimentos, como CDB, ações, fundos de investimento, etc.
+O CDB tem várias vantagens para os investidores. Em primeiro lugar, ele é uma opção de investimento relativamente segura, pois é regulamentado pelo Banco Central e oferecido por instituições financeiras sólidas. Além disso, o CDB pode oferecer uma rentabilidade razoável, especialmente se você investir por um prazo mais longo. **Practical tip:** É importante diversificar seus investimentos, ou seja, não colocar todos os seus ovos na mesma cesta. Isso significa que você pode investir em diferentes tipos de investimentos, como CDB, [ações](/en/glossario/en-acoes), [fundos](/en/glossario/en-fundos) de investimento, etc.
 
 Outra vantagem do CDB é que ele é fácil de entender e acessar. Você pode investir em um CDB por meio de um banco ou corretora de valores, e o processo de investimento é geralmente rápido e simples. Além disso, o CDB é uma opção de investimento que pode ser feita por pessoas com diferentes níveis de renda, desde que você tenha um valor mínimo para investir.
 
@@ -44,7 +44,7 @@ Outra vantagem do CDB é que ele é fácil de entender e acessar. Você pode inv
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Embora o CDB seja considerado um investimento de risco moderado, há alguns riscos que você deve ter em mente. Em primeiro lugar, há o risco de perda de valor, especialmente se o banco tiver problemas financeiros. Além disso, há o risco de inflação, que pode reduzir o valor do seu investimento ao longo do tempo. **Practical tip:** É importante ter um plano de investimento de longo prazo e não se deixar levar por flutuações de curto prazo no mercado.
 
 Outro risco do CDB é o risco de crédito, que é o risco de que o banco não pague o retorno do investimento. No entanto, é importante notar que o CDB é regulamentado pelo Banco Central, o que significa que há regras claras para sua oferta e comercialização. Além disso, os bancos são obrigados a manter um nível de capital mínimo para garantir a segurança dos investidores.

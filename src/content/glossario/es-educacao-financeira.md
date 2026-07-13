@@ -50,9 +50,9 @@ Desafortunadamente, la educación financiera no es prioridad en el currículo es
 ## Cómo empezar
 
 1. Anote todos sus gastos por 30 días
-2. Monte un presupuesto simple
+2. Monte un [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) simple
 3. Pague deudas caras (cheque especial, rotativo)
 4. Monte una reserva de emergencia
 5. Empiece a invertir (incluso R$ 50/mes)
 6. Lea 1 libro de finanzas por trimestre
-7. Use el FinMoovi para automatizar el control
+7. Use el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) para automatizar el control

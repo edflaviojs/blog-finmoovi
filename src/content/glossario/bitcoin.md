@@ -20,21 +20,21 @@ Bitcoin (BTC) é a primeira e mais conhecida criptomoeda do mundo. Foi criada em
 - Existe um limite de 21 milhões de bitcoins que podem existir
 - Novas unidades são criadas por "mineração" (computadores resolvendo problemas matemáticos)
 
-## Bitcoin como investimento
+## Bitcoin como [investimento](/posts/montando-carteira-diversificada-com-r-500)
 
 | Vantagem | Desvantagem |
 |----------|-------------|
-| Potencial de alta valorização | Volatilidade extrema |
+| Potencial de alta valorização | [Volatilidade](/glossario/volatilidade) extrema |
 | Descentralizado | Não regulamentado no Brasil |
 | Escassez programada | Pode perder 50%+ em meses |
 | Funciona 24/7 | Complexo para iniciantes |
 
 ## Quanto investir?
 
-A recomendação geral é: **no máximo 5% do seu patrimônio** em criptomoedas. Nunca invista dinheiro que você não pode perder. Bitcoin é altamente volátil.
+A recomendação geral é: **no máximo 5% do seu patrimônio** em criptomoedas. Nunca invista [dinheiro](/posts/cashback-inteligente) que você não pode perder. Bitcoin é altamente volátil.
 
 ## Como comprar no Brasil
 
 1. Abra conta em uma exchange (Mercado Bitcoin, Binance, Foxbit)
-2. Faça um depósito via PIX
+2. Faça um depósito via [PIX](/glossario/pix)
 3. Compre a quantidade desejada (pode comprar frações)

@@ -8,7 +8,7 @@ publishedAt: 2026-06-06
 ---
 
 ## Entendendo a Tabela SAC
-A Tabela SAC é um método de cálculo de prestações que mantém o valor da amortização (parte do pagamento que reduz o saldo devedor) constante ao longo do financiamento. Isso significa que, embora o valor da prestação diminua ao longo do tempo devido à redução dos juros, a parte que efetivamente paga o empréstimo (amortização) permanece a mesma.
+A Tabela SAC é um método de cálculo de prestações que mantém o valor da [amortização](/glossario/amortizacao) (parte do pagamento que reduz o saldo devedor) constante ao longo do [financiamento](/glossario/financiamento). Isso significa que, embora o valor da prestação diminua ao longo do tempo devido à redução dos juros, a parte que efetivamente paga o empréstimo (amortização) permanece a mesma.
 
 ## Entendendo a Tabela Price
 Já a Tabela Price é um método que mantém o valor da prestação constante ao longo do financiamento. Nesse caso, a amortização e os juros variam em cada prestação. No início do financiamento, uma grande parte da prestação é destinada ao pagamento de juros, e apenas uma pequena parte é utilizada para amortizar o empréstimo. À medida que o financiamento avança, a parte destinada aos juros diminui, e a parte que amortiza o empréstimo aumenta.
@@ -32,4 +32,4 @@ A escolha entre a Tabela SAC e a Tabela Price depende do seu perfil de financiam
 | Amortização | Constante | Variável |
 | Juros | Diminuem ao longo do tempo | Variam, mas a prestação total permanece constante |
 
-Em resumo, entender a diferença entre a Tabela SAC e a Tabela Price é fundamental para tomar decisões informadas sobre financiamentos e empréstimos, considerando os juros, a amortização e o impacto no seu orçamento.
+Em resumo, entender a diferença entre a Tabela SAC e a Tabela Price é fundamental para tomar decisões informadas sobre financiamentos e empréstimos, considerando os juros, a amortização e o impacto no seu [orçamento](/posts/5-alternativas-ao-mobills-em-2026).

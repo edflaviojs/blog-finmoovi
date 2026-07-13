@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-La **poupança** es la cuenta de ahorro que ofrecen los bancos en Brasil. Funciona como una “caja fuerte” digital donde puedes guardar parte de tu ingreso y, a cambio, el banco te paga un pequeño interés mensual. No es un producto complicado: simplemente depositas dinero y lo dejas “trabajar” mientras tú lo utilizas para tus gastos cotidianos. En otras palabras, es la forma más sencilla de crear un colchón financiero sin necesidad de ser experto en inversiones.
+La **poupança** es la cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) que ofrecen los bancos en Brasil. Funciona como una “caja fuerte” digital donde puedes guardar parte de tu ingreso y, a cambio, el banco te paga un pequeño interés mensual. No es un producto complicado: simplemente depositas dinero y lo dejas “trabajar” mientras tú lo utilizas para tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) cotidianos. En otras palabras, es la forma más sencilla de crear un colchón financiero sin necesidad de ser experto en inversiones.
 
 ![Qué es](/images/glossario/poupanca-inline-1.webp)
 
@@ -42,7 +42,7 @@ Tener una poupança trae varios beneficios que la hacen atractiva para cualquier
 
 
 - **Seguridad:** el dinero está protegido por el Fondo Garantidor de Créditos (FGC) hasta R$ 250.000 por institución.  
-- **Liquidez:** puedes retirar tu dinero en cualquier momento sin penalizaciones, a diferencia de algunos productos de inversión.  
+- **[Liquidez](/es/glossario/es-liquidez):** puedes retirar tu dinero en cualquier momento sin penalizaciones, a diferencia de algunos productos de inversión.  
 - **Simplicidad:** no necesitas entender conceptos como “rentabilidad compuesta” o “benchmark”; el banco se encarga de todo.  
 - **Acceso digital:** la mayoría de los bancos permiten gestionar la poupança desde la app, como si fuera una conversación con un amigo que te recuerda ahorrar.  
 
@@ -51,7 +51,7 @@ Tener una poupança trae varios beneficios que la hacen atractiva para cualquier
 Aunque la poupança es considerada de bajo riesgo, no está exenta de inconvenientes que conviene conocer.  
 
 - **Baja rentabilidad:** el interés suele ser menor que el de otras inversiones, como los fondos de renta fija o las CDBs (Certificados de Depósito Bancario).  
-- **Inflación:** si la inflación supera el rendimiento de la poupança, tu poder adquisitivo disminuye con el tiempo.  
+- **[Inflación](/es/glossario/es-inflacao):** si la inflación supera el rendimiento de la poupança, tu poder adquisitivo disminuye con el tiempo.  
 - **Costos ocultos:** algunos bancos cobran tarifas de mantenimiento o cobros por transferencias externas; revisa siempre la tabla de tarifas.  
 
 ## Ejemplos prácticos

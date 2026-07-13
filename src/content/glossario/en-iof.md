@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is IOF?
 
-IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to various financial operations: loans, exchange, insurance, and even investments redeemed in less than 30 days.
+IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to various financial operations: loans, exchange, insurance, and even [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) redeemed in less than 30 days.
 
 ## Where IOF appears
 
@@ -21,12 +21,12 @@ IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to var
 - Starts at 96% on day 1 and goes to 0% on day 30
 - After 30 days: exempt from IOF
 
-### International credit card
+### International [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)
 
 - 4.38% on purchases in foreign currency
 - Applies to the total purchase value
 
-### Loans and financing
+### Loans and [financing](/en/glossario/en-financiamento)
 
 - 0.38% fixed + 0.0082% per day on the value
 - Charged at the time of hiring
@@ -38,7 +38,7 @@ IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to var
 
 ## Practical tip
 
-If you invested in CDB or Tesouro Selic, wait at least 30 days to redeem. This way you won't pay IOF on the income. This is an important rule for emergency reserve.
+If you invested in CDB or Tesouro [Selic](/en/glossario/en-selic), wait at least 30 days to redeem. This way you won't pay IOF on the income. This is an important rule for emergency reserve.
 
 ## IOF regression table (investments)
 

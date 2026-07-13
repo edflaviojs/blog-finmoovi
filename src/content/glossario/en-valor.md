@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-O termo "valor" é fundamental no mundo das finanças, especialmente quando se trata de investimentos e economia. Em resumo, o valor se refere ao preço ou ao valor de troca de um ativo, como ações, imóveis, ou até mesmo produtos cotidianos. No contexto de investimentos, o valor de um ativo pode flutuar com base em various fatores, como a oferta e a demanda, a economia em geral, e as perspectivas futuras do ativo em questão. Por exemplo, se você investiu R$5,000 em ações de uma empresa que está crescendo rapidamente, o valor dessas ações pode aumentar para R$6,500 em um curto período de tempo, dependendo do desempenho da empresa e da percepção do mercado.
+O termo "valor" é fundamental no mundo das finanças, especialmente quando se trata de investimentos e economia. Em resumo, o valor se refere ao preço ou ao valor de troca de um ativo, como [ações](/en/glossario/en-acoes), imóveis, ou até mesmo produtos cotidianos. No contexto de investimentos, o valor de um ativo pode flutuar com base em various fatores, como a oferta e a demanda, a economia em geral, e as perspectivas futuras do ativo em questão. Por exemplo, se você investiu R$5,000 em ações de uma empresa que está crescendo rapidamente, o valor dessas ações pode aumentar para R$6,500 em um curto período de tempo, dependendo do desempenho da empresa e da percepção do mercado.
 
 O valor também pode ser influenciado por fatores como a inflação, as taxas de juros, e as políticas governamentais. É importante entender que o valor de um ativo não é estático e pode mudar rapidamente, o que pode afetar seu portfólio de investimentos. **Practical tip:** Sempre faça uma pesquisa detalhada antes de investir em qualquer ativo, e considere diversificar seu portfólio para minimizar os riscos.
 
@@ -40,7 +40,7 @@ O valor de um ativo é determinado por uma combinação de fatores, incluindo a 
 O valor de um ativo pode oferecer várias vantagens, especialmente se você investir de forma inteligente. Aqui estão algumas delas:
 * Potencial de crescimento: se você investir em um ativo que está crescendo rapidamente, o valor do seu investimento pode aumentar significativamente
 * Renda passiva: se você investir em um ativo que gera renda, como um imóvel ou uma ação, você pode receber renda passiva
-* Diversificação: se você diversificar seu portfólio de investimentos, você pode minimizar os riscos e maximizar os retornos
+* [Diversificação](/en/glossario/en-diversificacao): se você diversificar seu portfólio de investimentos, você pode minimizar os riscos e maximizar os retornos
 * Segurança: se você investir em um ativo seguro, como um título de dívida, você pode ter uma fonte de renda estável
 
 **Practical tip:** É importante diversificar seu portfólio de investimentos para minimizar os riscos e maximizar os retornos.
@@ -49,7 +49,7 @@ O valor de um ativo pode oferecer várias vantagens, especialmente se você inve
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 No entanto, o valor de um ativo também pode envolver riscos, especialmente se você não entender completamente o mercado ou não diversificar seu portfólio. Aqui estão alguns riscos que você deve considerar:
 * Risco de perda: se o valor do ativo diminuir, você pode perder dinheiro
 * Risco de inflação: se a inflação estiver alta, o valor do ativo pode diminuir

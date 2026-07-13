@@ -11,14 +11,14 @@ readingTime: 2
 
 ## What are Debentures?
 
-Debentures are debt securities issued by companies. When you buy a debenture, you are lending money to the company — and they pay you interest for it. It's like a CDB, but issued by companies (not banks).
+Debentures are debt securities issued by companies. When you buy a debenture, you are lending [money](/en/posts/en-30-day-rule-for-purchases) to the company — and they pay you interest for it. It's like a CDB, but issued by companies (not banks).
 
 ## Types
 
 ### Common Debentures
 
 - Taxed by IR (regressive table)
-- No FGC guarantee
+- No [FGC guarantee](/en/glossario/en-garantia-fgc)
 - Yield generally CDI + spread
 
 ### Incentivized Debentures
@@ -36,7 +36,7 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 
 ## Risks
 
-- **Credit risk:** company may not pay (no FGC)
+- **[Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) risk:** company may not pay (no FGC)
 - **Liquidity risk:** it may be difficult to sell before maturity
 - **Market risk:** price may fluctuate if sold before
 
@@ -44,7 +44,7 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 
 Before investing, check:
 
-1. **Company rating** (credit score: AAA is the best)
+1. **Company rating** ([credit score](/en/glossario/en-score-de-credito): AAA is the best)
 2. **Company sector** (stable sectors are safer)
 3. **Guarantees** (real, floating, unsecured)
 4. **Term** (the longer, the higher the risk)

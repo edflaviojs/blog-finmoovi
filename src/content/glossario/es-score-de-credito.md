@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es Score de Crédito?
+## ¿Qué es Score de [Crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)?
 
 Score de crédito é uma nota de 0 a 1000 que os birôs de crédito (Serasa, SPC, Boa Vista) dão para você. Essa nota indica para bancos e lojas qual a chance de você pagar suas contas em dia.
 
@@ -47,7 +47,7 @@ Score de crédito é uma nota de 0 a 1000 que os birôs de crédito (Serasa, SPC
 ## Por que o score importa
 
 Com score alto você consegue:
-- Taxas de juros menores em financiamentos
+- Taxas de [juros](/es/glossario/es-juros) menores em financiamentos
 - Limites maiores no cartão de crédito
 - Aprovação mais fácil em aluguéis
 - Melhores condições em empréstimos

@@ -47,7 +47,7 @@ Outras vantagens do KYC incluem:
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Embora o KYC seja um processo importante para prevenir atividades ilícitas, também há riscos associados a ele. **Practical tip:** um dos principais riscos é a violação de dados, que pode ocorrer se as informações coletadas forem armazenadas de forma insegura ou se forem acessadas por pessoas não autorizadas.
 
 Outros riscos incluem:
@@ -58,7 +58,7 @@ Outros riscos incluem:
 ## Practical examples
 Vamos considerar um exemplo prático. Imagine que você é um trabalhador que ganha R$ 5.000 por mês e deseja abrir uma conta em um banco para depositar seu salário. O banco solicita que você forneça documentos e informações pessoais, como nome, endereço e número de CPF, para realizar o processo de KYC. **Practical tip:** é importante fornecer informações precisas e atualizadas para evitar atrasos ou problemas na aprovação da conta.
 
-Outro exemplo é o caso de uma pessoa que deseja investir em ações e precisa abrir uma conta em uma corretora de valores. A corretora solicita que a pessoa forneça informações sobre sua renda e ocupação, para verificar se ela tem capacidade financeira para investir. **Practical tip:** é importante ter uma boa compreensão de seus objetivos financeiros e capacidade de investimento antes de abrir uma conta em uma corretora de valores.
+Outro exemplo é o caso de uma pessoa que deseja investir em [ações](/en/glossario/en-acoes) e precisa abrir uma conta em uma corretora de valores. A corretora solicita que a pessoa forneça informações sobre sua renda e ocupação, para verificar se ela tem capacidade financeira para investir. **Practical tip:** é importante ter uma boa compreensão de seus objetivos financeiros e capacidade de investimento antes de abrir uma conta em uma corretora de valores.
 
 ## Start today
 Agora que você entende o que é o KYC e como ele funciona, é hora de começar a utilizar essas informações para melhorar sua experiência financeira. **Practical tip:** comece verificando se as instituições financeiras que você utiliza cumprem com as regulamentações de KYC e se elas têm uma boa reputação em termos de segurança e conformidade. Além disso, certifique-se de fornecer informações precisas e atualizadas sempre que necessário, para evitar atrasos ou problemas na aprovação de contas. Com essas dicas práticas, você estará mais preparado para lidar com o processo de KYC e para proteger sua segurança financeira.

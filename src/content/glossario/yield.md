@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é
-O termo "yield" é frequentemente usado no contexto de investimentos e finanças, mas o que ele realmente significa? Em português, "yield" é traduzido como "rendimento" ou "retorno". No mundo dos investimentos, o yield refere-se ao retorno que você obtém sobre um investimento, geralmente expresso como uma porcentagem. Por exemplo, se você investe R$ 1.000 em uma aplicação que oferece um yield de 10% ao ano, você pode esperar receber R$ 100 em rendimentos ao longo de um ano, totalizando R$ 1.100.
+O termo "yield" é frequentemente usado no contexto de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e finanças, mas o que ele realmente significa? Em português, "yield" é traduzido como "rendimento" ou "retorno". No mundo dos investimentos, o yield refere-se ao retorno que você obtém sobre um investimento, geralmente expresso como uma porcentagem. Por exemplo, se você investe R$ 1.000 em uma aplicação que oferece um yield de 10% ao ano, você pode esperar receber R$ 100 em rendimentos ao longo de um ano, totalizando R$ 1.100.
 
 Isso pode parecer simples, mas é importante entender que o yield pode variar dependendo do tipo de investimento e das condições de mercado. Além disso, o yield não é apenas sobre a taxa de retorno, mas também sobre a liquidez e o risco associado ao investimento.
 
@@ -38,7 +38,7 @@ Alguns investimentos populares que oferecem yield incluem:
 ## Vantagens
 O yield oferece várias vantagens para os investidores, incluindo:
 * Rendimento regular: O yield pode fornecer uma fonte de renda regular, o que pode ser particularmente atraente para aqueles que buscam uma renda passiva.
-* Diversificação: Investir em diferentes tipos de ativos com yield pode ajudar a diversificar o seu portfólio e reduzir o risco.
+* [Diversificação](/glossario/diversificacao): Investir em diferentes tipos de ativos com yield pode ajudar a diversificar o seu portfólio e reduzir o risco.
 * Potencial de crescimento: Alguns investimentos com yield, como ações de empresas que pagam dividendos, podem oferecer potencial de crescimento a longo prazo.
 
 No entanto, é importante lembrar que o yield não é o único fator a considerar ao investir. **Dica prática:** Sempre avalie o risco associado ao investimento e certifique-se de que ele alinha com os seus objetivos financeiros e tolerância ao risco.
@@ -49,11 +49,11 @@ No entanto, é importante lembrar que o yield não é o único fator a considera
 
 ## Riscos
 Como qualquer investimento, o yield também envolve riscos. Alguns dos principais riscos incluem:
-* Risco de crédito: O risco de que o emissor do título ou a empresa não honre seus compromissos de pagamento.
+* Risco de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-): O risco de que o emissor do título ou a empresa não honre seus compromissos de pagamento.
 * Risco de mercado: O risco de que o valor do investimento flutue devido a mudanças nas condições de mercado.
 * Risco de liquidez: O risco de que você não possa vender o investimento rapidamente o suficiente ou pelo preço desejado.
 
-**Dica prática:** Para mitigar esses riscos, é importante diversificar o seu portfólio e manter uma reserva de emergência para cobrir despesas inesperadas.
+**Dica prática:** Para mitigar esses riscos, é importante diversificar o seu portfólio e manter uma [reserva de emergência](/glossario/reserva-de-emergencia) para cobrir despesas inesperadas.
 
 ## Exemplos práticos
 Vamos considerar alguns exemplos práticos de como o yield pode funcionar na vida real. Suponha que você ganha R$ 5.000 por mês e deseja investir 10% do seu salário, ou R$ 500, em um fundo de investimento com um yield de 9% ao ano. Ao longo de um ano, você pode esperar receber R$ 45 em rendimentos, o que pode ser reinvestido para aumentar o seu patrimônio.

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A bolsa de valores, também conhecida como mercado de ações, é um local onde as pessoas compram e vendem pequenas partes de empresas, conhecidas como ações. Imagine que você é dono de uma pequena parte de uma empresa, como a Nubank ou a Magazine Luiza. Quando a empresa vai bem, o valor da sua ação aumenta, e você pode vendê-la por um preço mais alto do que o que pagou. É como ter uma pequena parte de um negócio que pode crescer e gerar lucros.
+A bolsa de valores, também conhecida como mercado de ações, é um local onde as pessoas compram e vendem pequenas partes de empresas, conhecidas como ações. Imagine que você é dono de uma pequena parte de uma empresa, como a [Nubank](/en/glossario/en-nubank) ou a Magazine Luiza. Quando a empresa vai bem, o valor da sua ação aumenta, e você pode vendê-la por um preço mais alto do que o que pagou. É como ter uma pequena parte de um negócio que pode crescer e gerar lucros.
 
 * Ações: pequenas partes de empresas que podem ser compradas e vendidas
 * Títulos: documentos que representam a propriedade de ações ou outros investimentos
@@ -38,7 +38,7 @@ A bolsa de valores funciona como um leilão, onde as pessoas oferecem preços pa
 ## Advantages
 Investir na bolsa de valores pode ser uma ótima maneira de crescer seu patrimônio ao longo do tempo. Aqui estão algumas vantagens de investir na bolsa de valores:
 * Possibilidade de altos retornos: as ações podem aumentar de valor rapidamente, gerando lucros significativos
-* Diversificação: investir na bolsa de valores permite diversificar seu portfólio, reduzindo o risco de perda
+* [Diversificação](/en/glossario/en-diversificacao): investir na bolsa de valores permite diversificar seu portfólio, reduzindo o risco de perda
 * Liquidez: as ações podem ser compradas e vendidas rapidamente, permitindo que você acesse seu dinheiro quando necessário
 
 **Practical tip:** É importante diversificar seu portfólio, investindo em diferentes tipos de ações e setores. Por exemplo, se você investe R$ 1.000 por mês em ações de empresas de tecnologia, é uma boa ideia também investir em ações de empresas de outros setores, como saúde ou finanças.
@@ -47,7 +47,7 @@ Investir na bolsa de valores pode ser uma ótima maneira de crescer seu patrimô
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 No entanto, investir na bolsa de valores também envolve riscos. Aqui estão alguns dos principais riscos:
 * Perda de valor: as ações podem diminuir de valor, resultando em perdas significativas
 * Volatilidade: o preço das ações pode variar rapidamente, tornando difícil prever o desempenho do mercado

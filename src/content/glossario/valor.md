@@ -22,8 +22,8 @@ O termo "valor" é fundamental no mundo das finanças, mas o que ele realmente s
 
 ## 
 Para entender melhor como o valor funciona, vamos considerar alguns exemplos práticos. Se você ganha R$ 5.000 por mês e gasta R$ 3.000 com despesas fixas, o valor do seu tempo pode ser calculado com base na sua capacidade de gerar renda. Se você decidir investir R$ 1.000 em uma aplicação que rende 10% ao ano, o valor desse investimento aumentará com o tempo. Aqui estão alguns pontos importantes a considerar:
-* O valor pode variar ao longo do tempo devido a mudanças no mercado ou na economia.
-* O valor de um investimento ou ativo pode ser influenciado por fatores como inflação, juros e taxas de câmbio.
+* O valor pode variar ao longo do tempo devido a mudanças no mercado ou na [economia](/posts/5-alternativas-ao-mobills-em-2026).
+* O valor de um investimento ou ativo pode ser influenciado por fatores como [inflação](/glossario/inflacao), juros e taxas de câmbio.
 * É importante considerar o risco envolvido ao determinar o valor de um investimento ou ativo.
 
 ![O que é](/images/glossario/valor-inline-1.webp)
@@ -39,10 +39,10 @@ As vantagens de entender e gerenciar o valor de seus investimentos e ativos são
 
 ## Riscos
 No entanto, é importante estar ciente dos riscos envolvidos ao investir e gerenciar o valor de seus ativos. **Dica prática:** é fundamental fazer uma análise cuidadosa do mercado e das condições econômicas antes de tomar qualquer decisão de investimento. Além disso, é importante considerar a sua tolerância ao risco e o seu prazo de investimento. Aqui estão alguns riscos a considerar:
-* Perda de valor devido a mudanças no mercado ou na economia
+* Perda de valor devido a mudanças no mercado ou na [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
 * Risco de inflação, que pode reduzir o valor real de seus investimentos
 * Risco de juros, que pode aumentar o custo de empréstimos ou reduzir o valor de seus investimentos
-* Risco de liquidez, que pode dificultar a venda de ativos ou investimentos
+* Risco de [liquidez](/glossario/liquidez), que pode dificultar a venda de ativos ou investimentos
 
 ## Exemplos práticos
 Vamos considerar alguns exemplos práticos para ilustrar como o valor funciona. Se você ganha R$ 6.000 por mês e decide investir R$ 1.500 em uma aplicação que rende 12% ao ano, o valor desse investimento aumentará com o tempo. **Dica prática:** é importante considerar a sua capacidade de gerar renda e o seu prazo de investimento ao determinar o valor de seus investimentos. Aqui estão alguns exemplos de como o valor pode variar:

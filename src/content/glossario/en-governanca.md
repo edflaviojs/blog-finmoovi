@@ -24,7 +24,7 @@ A governança é um termo que pode parecer complicado, mas é mais simples do qu
 * Criação de um orçamento realista
 * Implementação de controles para evitar gastos excessivos
 * Monitoramento constante das finanças
-A governança não se limita a grandes empresas; é uma prática essencial para qualquer pessoa que queira ter controle sobre suas finanças. Ao adotar boas práticas de governança, você pode evitar problemas financeiros, como dívidas desnecessárias ou a falta de poupança para o futuro.
+A governança não se limita a grandes empresas; é uma prática essencial para qualquer pessoa que queira ter controle sobre suas finanças. Ao adotar boas práticas de governança, você pode evitar problemas financeiros, como dívidas desnecessárias ou a falta de [poupança](/en/glossario/en-poupanca) para o futuro.
 
 ![What it is](/images/glossario/governanca-inline-1.webp)
 
@@ -44,10 +44,10 @@ Outra vantagem importante é a tranquilidade que vem com o conhecimento de que s
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Embora a governança seja essencial para a saúde financeira, existem riscos associados à sua implementação. Um dos principais riscos é a rigidez excessiva, onde o plano financeiro se torna tão restritivo que não permite flexibilidade para mudanças ou oportunidades inesperadas. **Practical tip:** É crucial encontrar um equilíbrio entre disciplina financeira e flexibilidade para adaptações necessárias.
 
-Outro risco é a falta de conhecimento ou habilidades para gerenciar as finanças de forma eficaz. Isso pode levar a decisões ruins, como investimentos de alto risco ou a falta de diversificação nos investimentos. Para mitigar esses riscos, é importante buscar educação financeira e, se necessário, consultar um profissional.
+Outro risco é a falta de conhecimento ou habilidades para gerenciar as finanças de forma eficaz. Isso pode levar a decisões ruins, como investimentos de alto risco ou a falta de [diversificação](/en/glossario/en-diversificacao) nos investimentos. Para mitigar esses riscos, é importante buscar educação financeira e, se necessário, consultar um profissional.
 
 ## Practical examples
 Um exemplo prático de governança em ação é a criação de um fundo de emergência. Imagine que você ganha R$ 4.000 por mês e decide que quer ter um fundo de emergência que cubra três meses de despesas, o que seria R$ 12.000. Com um plano de governança, você pode estabelecer uma meta para alcançar esse valor em um determinado período, por exemplo, seis meses, e trabalhar consistentemente para alcançá-la.

@@ -27,7 +27,7 @@ A poupança é a conta bancária mais conhecida no Brasil para guardar dinheiro 
 
 ## Como funciona
 
-Quando você coloca dinheiro na poupança, o banco calcula o rendimento com base na Taxa Referencial (TR) + 0,5 % ao mês, ou 70 % da taxa Selic quando ela está acima de 8,5 % ao ano. O cálculo é feito automaticamente e o crédito aparece na sua conta no dia do aniversário do depósito.
+Quando você coloca dinheiro na poupança, o banco calcula o rendimento com base na Taxa Referencial (TR) + 0,5 % ao mês, ou 70 % da taxa Selic quando ela está acima de 8,5 % ao ano. O cálculo é feito automaticamente e o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) aparece na sua conta no dia do aniversário do depósito.
 
 - **Depósito:** pode ser feito a qualquer momento, por transferência, DOC, TED ou até mesmo em caixa eletrônico.  
 - **Rendimento:** só é creditado a cada 30 dias, na data de aniversário da aplicação.  
@@ -44,7 +44,7 @@ A poupança tem alguns pontos que a tornam atrativa para quem está começando a
 - **Segurança:** o FGC protege até R$ 250 mil por banco, então seu dinheiro está praticamente garantido.  
 - **Facilidade:** não exige conhecimento técnico; basta abrir a conta e começar a depositar.  
 - **Liquidez imediata:** pode retirar o dinheiro a qualquer momento, o que ajuda em emergências.  
-- **Isenção de imposto de renda:** ao contrário de muitos investimentos, a poupança não paga IR sobre os rendimentos.
+- **Isenção de [imposto de renda](/glossario/imposto-de-renda):** ao contrário de muitos investimentos, a poupança não paga IR sobre os rendimentos.
 
 ## Riscos
 
@@ -69,11 +69,11 @@ Esses números mostram que, mesmo com juros modestos, a disciplina de aportar re
 Se você ainda não tem uma conta poupança, siga estes passos simples para colocar o dinheiro trabalhando para você.
 
 - **Abra a conta:** vá ao seu banco ou use o app do banco; a abertura costuma ser gratuita e leva poucos minutos.  
-- **Defina o valor:** escolha um percentual do seu salário que caiba no orçamento – **Dica prática:** comece com 5 % e aumente gradualmente.  
+- **Defina o valor:** escolha um percentual do seu salário que caiba no [orçamento](/posts/5-alternativas-ao-mobills-em-2026) – **Dica prática:** comece com 5 % e aumente gradualmente.  
 - **Automatize:** programe transferências automáticas logo após o pagamento; assim você não esquece de depositar.  
 - **Acompanhe o extrato:** verifique mensalmente o rendimento; isso ajuda a manter o hábito e a entender o crescimento.  
 - **Reavalie anualmente:** se a taxa Selic mudar, considere diversificar; **Dica prática:** compare a poupança com CDBs de 100 % do CDI para ver se vale a pena mudar parte do dinheiro.  
-- **Mantenha a reserva de emergência:** a poupança é ideal para esse fundo, pois permite saque rápido sem perdas; **Dica prática:** mantenha pelo menos 3 a 6 meses de despesas guardados aqui.
+- **Mantenha a [reserva de emergência](/glossario/reserva-de-emergencia):** a poupança é ideal para esse fundo, pois permite saque rápido sem perdas; **Dica prática:** mantenha pelo menos 3 a 6 meses de despesas guardados aqui.
 
 ## Comece hoje
 

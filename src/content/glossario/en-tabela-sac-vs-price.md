@@ -8,7 +8,7 @@ publishedAt: 2026-06-06
 ---
 
 ## Understanding the Tabela SAC
-The Tabela SAC is a method of calculating installments that keeps the amortization value (the part of the payment that reduces the outstanding balance) constant throughout the financing. This means that, although the installment value decreases over time due to reduced interest, the part that actually pays off the loan (amortization) remains the same.
+The Tabela SAC is a method of calculating installments that keeps the [amortization](/en/glossario/en-amortizacao) value (the part of the payment that reduces the outstanding balance) constant throughout the [financing](/en/glossario/en-financiamento). This means that, although the installment value decreases over time due to reduced interest, the part that actually pays off the loan (amortization) remains the same.
 
 ## Understanding the Tabela Price
 On the other hand, the Tabela Price is a method that keeps the installment value constant throughout the financing. In this case, the amortization and interest vary with each installment. At the beginning of the financing, a large part of the installment is used to pay interest, and only a small part is used to amortize the loan. As the financing progresses, the part used to pay interest decreases, and the part that amortizes the loan increases.
@@ -24,7 +24,7 @@ Let's consider an example to better understand the difference between these two 
 - Installments 1 to 12: $443 USD (amortization and interest vary, but the installment value remains constant)
 
 ## Comparison
-The choice between the Tabela SAC and the Tabela Price depends on your financing profile and the conditions offered by the lender. The Tabela SAC may be more advantageous for those who prioritize constant reduction of the outstanding balance, while the Tabela Price offers the advantage of having fixed installments, which can be easier to manage budget-wise.
+The choice between the Tabela SAC and the Tabela Price depends on your financing profile and the conditions offered by the lender. The Tabela SAC may be more advantageous for those who prioritize constant reduction of the outstanding balance, while the Tabela Price offers the advantage of having fixed installments, which can be easier to manage [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026)-wise.
 
 | Feature | Tabela SAC | Tabela Price |
 | --- | --- | --- |
@@ -32,4 +32,4 @@ The choice between the Tabela SAC and the Tabela Price depends on your financing
 | Amortization | Constant | Variable |
 | Interest | Decreases over time | Varies, but the total installment remains constant |
 
-In summary, understanding the difference between the Tabela SAC and the Tabela Price is essential for making informed decisions about financing and loans, considering interest, amortization, and the impact on your budget.
+In summary, understanding the difference between the Tabela SAC and the Tabela Price is essential for making informed decisions about financing and loans, considering interest, amortization, and the impact on your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias).

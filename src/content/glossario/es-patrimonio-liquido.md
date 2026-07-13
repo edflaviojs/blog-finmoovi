@@ -18,7 +18,7 @@ Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem
 ### Seus Ativos (o que você tem)
 
 - Dinheiro em conta e investimentos
-- Imóveis (valor de mercado)
+- Imóveis ([valor](/es/glossario/es-valor) de mercado)
 - Veículos (valor de mercado)
 - Outros bens de valor
 
@@ -27,7 +27,7 @@ Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem
 - Financiamento imobiliário (saldo devedor)
 - Financiamento de veículo
 - Empréstimos pessoais
-- Cartão de crédito (fatura em aberto)
+- Cartão de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) (fatura em aberto)
 - Outras dívidas
 
 ### Exemplo

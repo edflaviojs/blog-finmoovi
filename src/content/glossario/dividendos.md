@@ -11,18 +11,18 @@ readingTime: 1
 
 ## O que são Dividendos?
 
-Dividendos são a parcela do lucro que uma empresa distribui aos seus acionistas. Se você tem ações de uma empresa que paga dividendos, você recebe dinheiro periodicamente sem precisar vender suas ações.
+Dividendos são a parcela do lucro que uma empresa distribui aos seus acionistas. Se você tem [ações](/glossario/acoes) de uma empresa que paga dividendos, você recebe [dinheiro](/posts/cashback-inteligente) periodicamente sem precisar vender suas ações.
 
 ## Como funciona
 
 1. A empresa tem lucro no trimestre/ano
 2. O conselho decide distribuir parte desse lucro
 3. Quem tinha ações na "data com" recebe os dividendos
-4. O dinheiro cai direto na sua conta da corretora
+4. O [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) cai direto na sua conta da corretora
 
 ## Dividendos no Brasil
 
-- São **isentos de Imposto de Renda** para pessoa física
+- São **isentos de [Imposto de Renda](/glossario/imposto-de-renda)** para pessoa física
 - Empresas brasileiras são obrigadas a distribuir no mínimo 25% do lucro
 - Setores que mais pagam: bancos, elétricas, telecomunicações
 

@@ -17,7 +17,7 @@ Net Worth = Assets - Liabilities. In other words: everything you have minus ever
 
 ### Your Assets (what you have)
 
-- Money in account and investments
+- [Money](/en/posts/en-30-day-rule-for-purchases) in account and investments
 - Real estate (market value)
 - Vehicles (market value)
 - Other valuable assets
@@ -25,9 +25,9 @@ Net Worth = Assets - Liabilities. In other words: everything you have minus ever
 ### Your Liabilities (what you owe)
 
 - Mortgage (outstanding balance)
-- Vehicle financing
+- Vehicle [financing](/en/glossario/en-financiamento)
 - Personal loans
-- Credit card (open bill)
+- [Credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) (open bill)
 - Other debts
 
 ### Example

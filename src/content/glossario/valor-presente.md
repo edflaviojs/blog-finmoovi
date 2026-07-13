@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é Valor Presente?
 
-Valor Presente é quanto vale HOJE um dinheiro que você vai receber no FUTURO. R$ 1.000 daqui a 1 ano valem menos que R$ 1.000 hoje — porque hoje você poderia investir e ter mais no futuro.
+Valor Presente é quanto vale HOJE um [dinheiro](/posts/cashback-inteligente) que você vai receber no FUTURO. R$ 1.000 daqui a 1 ano valem menos que R$ 1.000 hoje — porque hoje você poderia investir e ter mais no futuro.
 
 ## Fórmula
 
@@ -20,7 +20,7 @@ Valor Presente é quanto vale HOJE um dinheiro que você vai receber no FUTURO. 
 Onde:
 - VP = Valor Presente
 - VF = Valor Futuro
-- i = taxa de juros
+- i = taxa de [juros](/glossario/juros)
 - n = número de períodos
 
 ## Exemplo prático
@@ -33,9 +33,9 @@ Ou seja: receber R$ 10.000 daqui a 2 anos é a mesma coisa que receber R$ 7.831 
 
 ## Para que serve
 
-1. **Comparar investimentos** com prazos diferentes
+1. **Comparar [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)** com prazos diferentes
 2. **Avaliar propostas** ("pago R$ 50.000 à vista ou R$ 60.000 em 12x?")
-3. **Precificar títulos** de renda fixa
+3. **Precificar títulos** de [renda fixa](/glossario/renda-fixa)
 4. **Decisões de negócios** (vale a pena esse projeto?)
 
 ## Aplicação no dia a dia

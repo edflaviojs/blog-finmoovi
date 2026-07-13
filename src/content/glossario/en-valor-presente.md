@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is Present Value?
 
-Present Value is what a future amount of money is worth TODAY. R$ 1,000 in 1 year is worth less than R$ 1,000 today — because today you could invest it and have more in the future.
+Present Value is what a future amount of [money](/en/posts/en-30-day-rule-for-purchases) is worth TODAY. R$ 1,000 in 1 year is worth less than R$ 1,000 today — because today you could invest it and have more in the future.
 
 ## Formula
 
@@ -25,7 +25,7 @@ Where:
 
 ## Practical example
 
-Someone offers you R$ 10,000 in 2 years. With the Selic rate at 13% per year, what is it worth today?
+Someone offers you R$ 10,000 in 2 years. With the [Selic](/en/glossario/en-selic) rate at 13% per year, what is it worth today?
 
 PV = 10,000 ÷ (1.13)² = 10,000 ÷ 1.2769 = **R$ 7,831**
 
@@ -43,7 +43,7 @@ In other words: receiving R$ 10,000 in 2 years is the same as receiving R$ 7,831
 When a store offers "12 installments with no interest of R$ 100 or R$ 1,000 upfront":
 - 12 installments = R$ 1,200 in total
 - But the present value of 12 installments of R$ 100 is less than R$ 1,200
-- If you can invest the money at 1%/month, paying in installments and investing the difference is better
+- If you can invest the [money](/en/posts/en-avoid-impulse-purchases) at 1%/month, paying in installments and investing the difference is better
 
 ## Simple rule
 

@@ -9,10 +9,10 @@ publishedAt: 2026-06-04
 ---
 
 ## ¿Qué es Spread Bancário?
-El spread bancario es una de las principales fuentes de lucro para los bancos. Se calcula como la diferencia entre la tasa de interés que el banco paga para prestar dinero (tasa de captación) y la tasa de interés que el banco cobra para prestar el mismo dinero (tasa de préstamo).
+El spread bancario es una de las principales fuentes de lucro para los bancos. Se calcula como la diferencia entre la tasa de interés que el banco paga para prestar [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) (tasa de captación) y la tasa de interés que el banco cobra para prestar el mismo dinero (tasa de préstamo).
 
 ## ¿Cómo funciona el Spread Bancário?
-Imagina que depositas R$ 1.000,00 en una cuenta de ahorro. El banco puede pagar una tasa de interés de 0,5% al mes para que tengas el dinero allí. Esto significa que el banco pagará R$ 5,00 en intereses por mes (0,5% de R$ 1.000,00). Ahora, imagina que el banco presta ese mismo dinero a otra persona, cobrando una tasa de interés de 2,0% al mes. El banco ganará R$ 20,00 en intereses por mes (2,0% de R$ 1.000,00). La diferencia entre esas dos tasas es el spread bancario, que en este caso es de 1,5% (2,0% - 0,5%).
+Imagina que depositas R$ 1.000,00 en una cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado). El banco puede pagar una tasa de interés de 0,5% al mes para que tengas el dinero allí. Esto significa que el banco pagará R$ 5,00 en intereses por mes (0,5% de R$ 1.000,00). Ahora, imagina que el banco presta ese mismo dinero a otra persona, cobrando una tasa de interés de 2,0% al mes. El banco ganará R$ 20,00 en intereses por mes (2,0% de R$ 1.000,00). La diferencia entre esas dos tasas es el spread bancario, que en este caso es de 1,5% (2,0% - 0,5%).
 
 ## Ejemplos Prácticos
 Vamos considerar algunos ejemplos para entender mejor cómo funciona el spread bancario:

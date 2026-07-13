@@ -9,7 +9,7 @@ publishedAt: 2026-06-06
 ---
 
 ## O que são Bull Market e Bear Market?
-Quando se fala em investimentos, é comum ouvir os termos "Bull Market" e "Bear Market". Esses termos são usados para descrever as tendências do mercado de ações e podem influenciar suas decisões de investimento.
+Quando se fala em [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), é comum ouvir os termos "Bull Market" e "Bear Market". Esses termos são usados para descrever as tendências do mercado de [ações](/glossario/acoes) e podem influenciar suas decisões de [investimento](/posts/montando-carteira-diversificada-com-r-500).
 
 ## Bull Market
 Um Bull Market é um período em que o mercado de ações está em alta, com os preços das ações subindo consistentemente. Isso geralmente ocorre durante períodos de crescimento econômico, quando as empresas estão gerando lucros e as pessoas estão otimistas sobre o futuro. Durante um Bull Market, os investidores tendem a comprar mais ações, o que aumenta a demanda e, consequentemente, os preços.
@@ -40,4 +40,4 @@ Aqui está uma tabela comparativa entre os dois:
 | Demanda | Alta | Baixa |
 | Oferta | Baixa | Alta |
 
-Em resumo, é importante entender as diferenças entre Bull Market e Bear Market para tomar decisões informadas sobre seus investimentos. Se você estiver investindo durante um Bull Market, é provável que suas ações aumentem de valor. No entanto, se você estiver investindo durante um Bear Market, é provável que suas ações percam valor. É sempre importante diversificar seus investimentos e ter um plano de longo prazo para minimizar os riscos.
+Em resumo, é importante entender as diferenças entre Bull Market e Bear Market para tomar decisões informadas sobre seus investimentos. Se você estiver investindo durante um Bull Market, é provável que suas ações aumentem de [valor](/glossario/valor). No entanto, se você estiver investindo durante um Bear Market, é provável que suas ações percam valor. É sempre importante diversificar seus investimentos e ter um plano de longo prazo para minimizar os riscos.

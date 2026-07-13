@@ -16,7 +16,7 @@ Meta financeira é um objetivo concreto para seu dinheiro. Não é "quero econom
 ## Como definir boas metas (método SMART)
 
 - **S**pecífica: "Juntar R$ 10.000" (não "economizar mais")
-- **M**ensurável: valor exato que pode acompanhar
+- **M**ensurável: [valor](/es/glossario/es-valor) exato que pode acompanhar
 - **A**lcançável: possível com sua renda atual
 - **R**elevante: importante para você
 - **T**emporal: com prazo definido
@@ -26,7 +26,7 @@ Meta financeira é um objetivo concreto para seu dinheiro. Não é "quero econom
 ### Curto prazo (até 1 ano)
 
 - Montar reserva de emergência de R$ 15.000
-- Quitar cartão de crédito de R$ 3.000
+- Quitar cartão de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) de R$ 3.000
 - Juntar R$ 5.000 para viagem
 
 ### Médio prazo (1-5 anos)
@@ -46,7 +46,7 @@ Meta financeira é um objetivo concreto para seu dinheiro. Não é "quero econom
 1. Defina o valor total e o prazo
 2. Divida pelo número de meses (aporte mensal necessário)
 3. Automatize a transferência mensal
-4. Acompanhe o progresso (apps como FinMoovi ajudam)
+4. Acompanhe o progresso (apps como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) ajudam)
 5. Celebre marcos intermediários (25%, 50%, 75%)
 
 ## Dica
