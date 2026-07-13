@@ -1,0 +1,44 @@
+name: Fact Firewall (anti-alucinacao)
+
+on:
+  schedule:
+    # Diario 05h UTC — pega fabricacoes logo apos as gerações de conteudo.
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fact-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Rodar Fact Firewall
+        run: node src/scripts/validacao/fact-guard.js
+
+      - name: Validar consistência i18n
+        run: node src/scripts/validacao/validar-i18n.js
+
+      - name: Push changes
+        run: |
+          git pull --rebase origin main || true
+          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+            git push
+          else
+            echo "No changes to push"
+          fi
