@@ -6,6 +6,17 @@ import { config } from '../../site.config';
 
 const brand = config.brand.name;
 const blogTitle = `${brand} ${config.brand.blogSuffix}`;
+const contactEmail = 'finmoovi@gmail.com';
+const socials = [
+  { label: 'Instagram', href: config.social.instagram },
+  { label: 'X (Twitter)', href: config.social.twitter },
+  { label: 'YouTube', href: config.social.youtube },
+  { label: 'Facebook', href: config.social.facebook },
+  { label: 'LinkedIn', href: config.social.linkedin },
+  { label: 'Pinterest', href: config.social.pinterest },
+  { label: 'Bluesky', href: config.social.bluesky },
+  { label: 'Substack', href: config.social.substack },
+].filter(s => s.href);
 ---
 
 <BaseLayout
@@ -18,15 +29,15 @@ const blogTitle = `${brand} ${config.brand.blogSuffix}`;
   <main class="sobre-page">
     <div class="container">
       <header class="sobre-header">
-        <h1 class="sobre-title" data-i18n="sobre.title">Sobre o ${brand} ${config.brand.blogSuffix}</h1>
-        <p class="sobre-subtitle" data-i18n="sobre.subtitle">Educação financeira acessível para todos os brasileiros</p>
+        <h1 class="sobre-title" data-i18n="sobre.title">Sobre o {brand} {config.brand.blogSuffix}</h1>
+        <p class="sobre-subtitle" data-i18n="sobre.subtitle">Educação financeira acessível a todos</p>
       </header>
 
       <div class="sobre-content">
         <section class="sobre-section">
           <h2>Nossa Missão</h2>
           <p>
-            O ${brand} Blog nasceu com um objetivo claro: <strong>democratizar a educação financeira no Brasil</strong>.
+            O {brand} Blog nasceu com um objetivo claro: <strong>democratizar a educação financeira</strong>.
             Acreditamos que todo mundo merece ter acesso a informações claras, práticas e sem jargão sobre como
             organizar suas finanças pessoais.
           </p>
@@ -63,10 +74,10 @@ const blogTitle = `${brand} ${config.brand.blogSuffix}`;
         </section>
 
         <section class="sobre-section">
-          <h2>Sobre o ${brand}</h2>
+          <h2>Sobre o {brand}</h2>
           <p>
-            O <strong>${brand}</strong> é um app de controle financeiro inteligente, criado no Brasil para brasileiros
-            (e para quem vive com múltiplas moedas). Com ele você controla gastos, acompanha investimentos e
+            O <strong>{brand}</strong> é um app de controle financeiro inteligente, feito para quem quer organizar
+            suas finanças em múltiplas moedas (R$, €, $, £). Com ele você controla gastos, acompanha investimentos e
             alcança objetivos financeiros — tudo offline, com IA e multi-moeda.
           </p>
           <p>
@@ -78,7 +89,7 @@ const blogTitle = `${brand} ${config.brand.blogSuffix}`;
         <section class="sobre-section sobre-cta">
           <div class="sobre-cta-box">
             <h2>Quer organizar suas finanças?</h2>
-            <p>Teste o ${config.app.name} grátis por 7 dias. Sem cartão de crédito. Cancele quando quiser.</p>
+            <p>Teste o {config.app.name} grátis por 7 dias. Sem cartão de crédito. Cancele quando quiser.</p>
             <div class="sobre-cta-actions">
               <a href="/app" class="sobre-btn primary">Experimentar Grátis</a>
               <a href="/" class="sobre-btn secondary">Ver o Blog</a>
@@ -90,15 +101,15 @@ const blogTitle = `${brand} ${config.brand.blogSuffix}`;
           <h2>Contato</h2>
           <p>
             Tem sugestões de conteúdo, encontrou algum erro ou quer colaborar?
-            Entre em contato pelo email <a href="mailto:${config.email.replyTo}" class="sobre-link">${config.email.replyTo}</a>.
+            Entre em contato pelo email <a href={`mailto:${contactEmail}`} class="sobre-link">{contactEmail}</a>.
           </p>
           <p>
-            Siga o ${brand} nas redes sociais para mais dicas rápidas:
+            Siga o {brand} nas redes sociais para mais dicas rápidas:
           </p>
           <div class="sobre-social">
-            <a href="#" target="_blank" rel="noopener" class="social-link">Instagram</a>
-            <a href="#" target="_blank" rel="noopener" class="social-link">Twitter/X</a>
-            <a href="#" target="_blank" rel="noopener" class="social-link">YouTube</a>
+            {socials.map(s => (
+              <a href={s.href} target="_blank" rel="noopener" class="social-link">{s.label}</a>
+            ))}
           </div>
         </section>
       </div>
