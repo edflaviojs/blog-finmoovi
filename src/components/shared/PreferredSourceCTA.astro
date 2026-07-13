@@ -10,18 +10,27 @@ interface Props { locale?: 'pt' | 'en' | 'es'; }
 const { locale = 'pt' } = Astro.props;
 
 const brand = config.brand.name;
+// Deeplink oficial do Google (Search Central): domínio no parâmetro q (subdomínio elegível).
+const domain = config.siteUrl.replace(/^https?:\/\//, '').replace(/\/$/, '');
+const prefUrl = `https://google.com/preferences/source?q=${domain}`;
 const T = {
   pt: {
     title: 'Gostou do conteúdo?',
-    body: `No Google, toque em <strong>“⋮ / Fontes preferidas”</strong> nas notícias e adicione o <strong>${brand}</strong> — assim você vê mais dos nossos artigos e nos ajuda a crescer.`,
+    body: `Adicione o <strong>${brand}</strong> como <strong>fonte preferida</strong> no Google e veja mais dos nossos artigos nas notícias e no AI Mode.`,
+    cta: '⭐ Adicionar como fonte preferida',
+    note: 'Abre no Google (é preciso estar logado). Leva 1 clique.',
   },
   en: {
     title: 'Enjoying the content?',
-    body: `On Google, tap <strong>“⋮ / Preferred sources”</strong> in the news area and add <strong>${brand}</strong> — you'll see more of our articles and help us grow.`,
+    body: `Add <strong>${brand}</strong> as a <strong>preferred source</strong> on Google to see more of our articles in news and AI Mode.`,
+    cta: '⭐ Add as preferred source',
+    note: 'Opens on Google (you must be signed in). One click.',
   },
   es: {
     title: '¿Te gustó el contenido?',
-    body: `En Google, toca <strong>“⋮ / Fuentes preferidas”</strong> en las noticias y añade <strong>${brand}</strong> — verás más de nuestros artículos y nos ayudas a crecer.`,
+    body: `Añade <strong>${brand}</strong> como <strong>fuente preferida</strong> en Google y verás más de nuestros artículos en noticias y AI Mode.`,
+    cta: '⭐ Añadir como fuente preferida',
+    note: 'Se abre en Google (debes iniciar sesión). Un clic.',
   },
 }[locale];
 ---
@@ -31,6 +40,8 @@ const T = {
   <div class="pref-source-text">
     <strong class="pref-source-title">{T.title}</strong>
     <p set:html={T.body}></p>
+    <a class="pref-source-btn" href={prefUrl} target="_blank" rel="noopener">{T.cta}</a>
+    <span class="pref-source-note">{T.note}</span>
   </div>
 </aside>
 
@@ -48,4 +59,14 @@ const T = {
   .pref-source-title { display: block; color: var(--text-primary); margin-bottom: var(--space-1); }
   .pref-source-text p { color: var(--text-secondary); font-size: var(--text-sm); line-height: var(--leading-relaxed); margin: 0; }
   .pref-source-text :global(strong) { color: var(--text-primary); }
+  .pref-source-btn {
+    display: inline-block; margin-top: var(--space-3);
+    padding: var(--space-2) var(--space-4);
+    background: var(--gradient-cta); color: #fff;
+    font-size: var(--text-sm); font-weight: 600;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+  }
+  .pref-source-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+  .pref-source-note { display: block; margin-top: var(--space-2); color: var(--text-tertiary); font-size: var(--text-xs); }
 </style>
