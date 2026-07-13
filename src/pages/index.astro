@@ -143,6 +143,7 @@ const postsForGrid = recentPosts.map(post => ({
   title: post.data.title,
   description: post.data.description,
   image: post.data.image,
+  imageAlt: post.data.imageAlt,
   href: `/posts/${post.slug}`,
   category: post.data.category,
   date: post.data.publishedAt.toISOString(),

@@ -72,7 +72,7 @@ const faqSchema = {
         <!-- Cover Image -->
         {term.data.image && (
           <div class="glossario-cover">
-            <img src={term.data.image} alt={term.data.term} loading="lazy" width="1200" height="630" />
+            <img src={term.data.image} alt={term.data.imageAlt || term.data.term} loading="lazy" width="1200" height="630" />
           </div>
         )}
 

@@ -3,20 +3,21 @@ interface Props {
   title: string;
   description: string;
   image?: string;
+  imageAlt?: string;
   href: string;
   category?: string;
   date?: string;
   readingTime?: number;
 }
 
-const { title, description, image, href, category, date, readingTime } = Astro.props;
+const { title, description, image, imageAlt, href, category, date, readingTime } = Astro.props;
 ---
 
 <article class="post-card">
   <a href={href} class="post-card-link" aria-label={`Ler: ${title}`}>
     {image && (
       <div class="post-card-image">
-        <img src={image} alt={title} loading="lazy" width="400" height="225" />
+        <img src={image} alt={imageAlt || title} loading="lazy" width="400" height="225" />
       </div>
     )}
 

@@ -21,6 +21,7 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  imageAlt?: string;
   publishedTime?: string;
   author?: string;
   keywords?: string[];
@@ -31,7 +32,7 @@ interface Props {
   alternates?: { pt?: string; en?: string; es?: string };
 }
 
-const { title, description, image, publishedTime, author, keywords, category, readingTime, headings = [], slug, alternates } = Astro.props;
+const { title, description, image, imageAlt, publishedTime, author, keywords, category, readingTime, headings = [], slug, alternates } = Astro.props;
 const authorObj = resolveAuthor(author);
 const postUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const postSlug = Astro.url.pathname.replace(/\//g, '-').replace(/^-|-$/g, '');
@@ -98,7 +99,7 @@ const schemaBreadcrumbItems = [
 
           {image && (
             <div class="post-cover">
-              <img src={image} alt={title} width="720" height="405" fetchpriority="high" />
+              <img src={image} alt={imageAlt || title} width="720" height="405" fetchpriority="high" />
             </div>
           )}
 

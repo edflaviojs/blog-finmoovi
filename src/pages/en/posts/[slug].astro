@@ -55,6 +55,7 @@ if (esPost) alternates.es = `/es/posts/${esPost.slug}`;
   title={post.data.seo?.metaTitle || post.data.title}
   description={post.data.seo?.metaDescription || post.data.description}
   image={post.data.image}
+  imageAlt={post.data.imageAlt}
   publishedTime={post.data.publishedAt.toISOString()}
   author={post.data.author}
   keywords={post.data.seo?.keywords || post.data.tags}
