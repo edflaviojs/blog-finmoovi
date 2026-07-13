@@ -26,7 +26,7 @@ El CDB es un tipo de inversión de renta fija ofrecida por bancos e institucione
 El Tesouro [Selic](/es/glossario/es-selic), por otro lado, es una inversión de renta fija emitida por el Tesouro Nacional, con garantía del gobierno brasileño. Está indexado a la tasa [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026), que es la tasa básica de interés de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) definida por el Banco Central de Brasil. Esto significa que el rendimiento del Tesouro [Selic](/es/posts/es-cotizaciones-semana-1-junio-2026) acompaña las variaciones de la tasa [Selic](/es/posts/es-cotizaciones-semana-2-julio-2026).
 
 ## Rendimientos y Simulaciones
-Para entender mejor los rendimientos, vamos a considerar algunos ejemplos. Supongamos que usted tiene R$1.000 para invertir y está decidiendo entre un CDB pré-fijado con 10% al año y un Tesouro Selic con la tasa Selic actual (supongamos 6% al año).
+Para entender mejor los rendimientos, vamos a considerar algunos ejemplos. Supongamos que usted tiene R$1.000 para invertir y está decidiendo entre un CDB pré-fijado con 10% al año y un Tesouro [Selic](/es/posts/es-cotizaciones-semana-3-junio-2026) con la tasa [Selic](/es/posts/es-cotizaciones-semana-4-junio-2026) actual (supongamos 6% al año).
 
 - **CDB:** Con el CDB pré-fijado a 10% al año, después de 1 año, usted tendría aproximadamente R$1.100 (R$1.000 de capital + R$100 de intereses).
 - **Tesouro Selic:** Con el Tesouro Selic a 6% al año, después de 1 año, usted tendría aproximadamente R$1.060 (R$1.000 de capital + R$60 de intereses).

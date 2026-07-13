@@ -18,7 +18,7 @@ seo:
 
 ## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-3-junio-2026) Brasileño
 
-La semana del 29 de junio al 6 de julio de 2026 ha sido de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos los detalles más relevantes que afectan a los inversores individuales y a la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) en general.
+La semana del 29 de junio al 6 de julio de 2026 ha sido de gran importancia para el [mercado financiero](/es/posts/es-cotizaciones-semana-4-junio-2026) brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos los detalles más relevantes que afectan a los inversores individuales y a la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) en general.
 
 ![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-cotizaciones-semana-1-julio-2026-inline-1.webp)
 
@@ -42,7 +42,7 @@ Para los inversores individuales, es crucial mantener una estrategia diversifica
 
 ## Qué Esperar para la Próxima Semana
 
-En la próxima semana, los inversores deben estar atentos a las decisiones del Banco Central respecto a la tasa Selic, así como a cualquier movimiento significativo en las tasas de cambio. La [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) global también juega un papel importante, y eventos como las decisiones de política monetaria en otros países pueden influir en el mercado financiero brasileño. Mantenerse informado y utilizar herramientas de seguimiento de inversiones puede ayudar a los inversores a tomar decisiones informadas y a ajustar sus estrategias según sea necesario.
+En la próxima semana, los inversores deben estar atentos a las decisiones del Banco Central respecto a la tasa Selic, así como a cualquier movimiento significativo en las tasas de cambio. La [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) global también juega un papel importante, y eventos como las decisiones de política monetaria en otros países pueden influir en el [mercado financiero](/es/posts/es-cotizaciones-semana-4-mayo-2026) brasileño. Mantenerse informado y utilizar herramientas de seguimiento de inversiones puede ayudar a los inversores a tomar decisiones informadas y a ajustar sus estrategias según sea necesario.
 
 En resumen, la semana del 29 de junio al 6 de julio de 2026 ha sido de estabilidad en las tasas de cambio y de atención a las decisiones del Banco Central. Los inversores individuales deben permanecer vigilantes y considerar la diversificación y el seguimiento de sus inversiones como clave para el éxito en el mercado financiero brasileño. Con la ayuda de herramientas como FinMoovi, pueden navegar por el complejo mundo de las inversiones con más confianza y precisión.
 

@@ -16,9 +16,9 @@ seo:
   keywords: ["cotización dólar hoy", "cotización euro", "resumen mercado financiero", "selic"]
 ---
 
-## Resumen Semanal del Mercado Financiero Brasileño
+## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-3-junio-2026) Brasileño
 
-La semana del 15 de junio al 22 de junio de 2026 ha sido de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, vamos a explorar los acontecimientos más destacados de la semana y ofrecer [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
+La semana del 15 de junio al 22 de junio de 2026 ha sido de gran importancia para el [mercado financiero](/es/posts/es-cotizaciones-semana-4-mayo-2026) brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, vamos a explorar los acontecimientos más destacados de la semana y ofrecer [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
 
 ![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-cotizaciones-semana-4-junio-2026-inline-1.webp)
 

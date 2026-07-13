@@ -38,9 +38,9 @@ Uma dica prática para investidores individuais é diversificar seus investiment
 
 
 ## O que Esperar para a Próxima Semana
-Para a próxima semana, é difícil prever com certeza o que acontecerá no mercado financeiro. No entanto, é importante estar atento às notícias econômicas e políticas, pois elas podem afetar as taxas de câmbio e os investimentos. Além disso, é fundamental continuar monitorando a Selic e ajustar sua estratégia de investimento de acordo. Com o [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas), você pode facilmente acompanhar as mudanças no mercado e tomar decisões informadas sobre seus investimentos.
+Para a próxima semana, é difícil prever com certeza o que acontecerá no mercado financeiro. No entanto, é importante estar atento às notícias econômicas e políticas, pois elas podem afetar as taxas de câmbio e os investimentos. Além disso, é fundamental continuar monitorando a [Selic](/en/posts/en-quotes-semana-5-june-2026) e ajustar sua estratégia de investimento de acordo. Com o [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas), você pode facilmente acompanhar as mudanças no mercado e tomar decisões informadas sobre seus investimentos.
 
-Em resumo, a semana que passou foi marcada por estabilidade no câmbio e uma taxa Selic que continua sendo um fator importante para os investidores. Lembre-se de diversificar seus investimentos e estar atento às mudanças no mercado. Com o [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), você pode facilmente trackear seus investimentos e tomar decisões informadas. Até a próxima semana!
+Em resumo, a semana que passou foi marcada por estabilidade no câmbio e uma taxa [Selic](/en/posts/en-quotes-week-4-may-2026) que continua sendo um fator importante para os investidores. Lembre-se de diversificar seus investimentos e estar atento às mudanças no mercado. Com o [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), você pode facilmente trackear seus investimentos e tomar decisões informadas. Até a próxima semana!
 
 
 ---

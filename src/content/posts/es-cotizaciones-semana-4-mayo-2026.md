@@ -18,7 +18,7 @@ seo:
 
 ## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-3-junio-2026) Brasileño
 
-La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significativos en el mercado financiero brasileño, con destaque para las variaciones en las tasas de [cambio](/es/glossario/es-cambio) y el mantenimiento de la [tasa Selic](/es/glossario/es-selic). Vamos a profundizar en los detalles y entender cómo estos eventos afectan a los inversores individuales.
+La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significativos en el [mercado financiero](/es/posts/es-cotizaciones-semana-4-junio-2026) brasileño, con destaque para las variaciones en las tasas de [cambio](/es/glossario/es-cambio) y el mantenimiento de la [tasa Selic](/es/glossario/es-selic). Vamos a profundizar en los detalles y entender cómo estos eventos afectan a los inversores individuales.
 
 ## [Dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) y Euro: Tendencia de la Semana
 
@@ -34,7 +34,7 @@ Un consejo valioso para los inversores individuales es diversificar sus [inversi
 
 ## Qué Esperar para la Próxima Semana
 
-Para la próxima semana, es importante estar atento a las decisiones económicas globales, como las reuniones de la Reserva Federal (FED) en EE.UU. y del Banco Central Europeo (BCE), que pueden influir en las tasas de interés y, consecuentemente, en las tasas de cambio. Además, el desempeño de las principales economías mundiales y las noticias sobre comercio internacional también pueden afectar el mercado financiero brasileño. Con la ayuda de herramientas de gestión de inversiones y manteniéndose informado, los inversores pueden tomar decisiones más acertadas y aprovechar las oportunidades que surgen en el mercado.
+Para la próxima semana, es importante estar atento a las decisiones económicas globales, como las reuniones de la Reserva Federal (FED) en EE.UU. y del Banco Central Europeo (BCE), que pueden influir en las tasas de interés y, consecuentemente, en las tasas de cambio. Además, el desempeño de las principales economías mundiales y las noticias sobre comercio internacional también pueden afectar el [mercado financiero](/es/posts/es-cotizaciones-semana-5-junio-2026) brasileño. Con la ayuda de herramientas de gestión de inversiones y manteniéndose informado, los inversores pueden tomar decisiones más acertadas y aprovechar las oportunidades que surgen en el mercado.
 
 En resumen, la semana estuvo marcada por estabilidad en las tasas de cambio y mantenimiento de la tasa Selic, lo que puede influir en las estrategias de inversión. Diversificar la cartera, incluyendo inversiones en diferentes monedas, y utilizar herramientas de gestión como [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) puede ser una estrategia inteligente para maximizar los rendimientos y minimizar los riesgos. Manténgase atento a las noticias económicas y ajuste su plan de inversión según los cambios en el mercado.
 

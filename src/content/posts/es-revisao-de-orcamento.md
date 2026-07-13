@@ -44,13 +44,13 @@ Comienza verificando tus gastos de los últimos 6 meses. Esto incluye todos los 
 Después de verificar tus gastos, ajústalos de acuerdo con tus necesidades y objetivos. Si notas que estás gastando mucho en una área, como restaurantes, intenta reducir esos gastos y reasignar el [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) a otras áreas, como [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) o [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 
 ### 3. Verifica tus ingresos
-Verifica tus ingresos de los últimos 6 meses y ajústalos de acuerdo con tus necesidades y objetivos. Si recibiste un aumento de salario, por ejemplo, puedes querer aumentar tus ahorros o inversiones.
+Verifica tus ingresos de los últimos 6 meses y ajústalos de acuerdo con tus necesidades y objetivos. Si recibiste un aumento de salario, por ejemplo, puedes querer aumentar tus ahorros o [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ### 4. Ajusta tus inversiones
 Si tienes inversiones, como [acciones](/es/glossario/es-acoes) o fondos de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500), verifica si aún están alineadas con tus objetivos y ajústalas de acuerdo. Puedes querer considerar invertir en [Tesouro Direto](https://www.tesourodireto.com.br) o otras inversiones de bajo riesgo.
 
 ## [Consejos](/es/posts/es-7-errores-financieros-principiante) para mantener tu [presupuesto](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) en orden
-Aquí están algunos consejos para mantener tu presupuesto en orden:
+Aquí están algunos consejos para mantener tu [presupuesto](/es/posts/es-reducir-gastos-fijos-mensuales) en orden:
 *   Prioriza tus necesidades sobre tus deseos
 *   Crea un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) para cubrir gastos inesperados
 *   Invierte en tu [educación financiera](/es/glossario/es-educacao-financeira) para tomar decisiones informadas

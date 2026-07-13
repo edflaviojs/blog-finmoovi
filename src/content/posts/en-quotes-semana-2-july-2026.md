@@ -26,9 +26,9 @@ A semana foi marcada por oscilações nos mercados internacionais e pelo movimen
 
 ## 1. Dólar e Euro – Tendência da Semana
 
-- **Dólar (USD/BRL = R$ 5,11)** – Depois de fechar a semana anterior em R$ 5,08, o dólar subiu gradualmente, ganhando cerca de 0,6 % até chegar a R$ 5,11. A alta foi puxada pelos dados de inflação dos EUA, que surpreenderam para cima, e pela expectativa de que o Fed mantenha as taxas de juros elevadas por mais tempo. Na prática, isso significa que, se você costuma comprar produtos importados ou viajar para o exterior, o bolso vai sentir um peso extra.
+- **Dólar (USD/BRL = R$ 5,11)** – Depois de fechar a semana anterior em R$ 5,08, o dólar subiu gradualmente, ganhando cerca de 0,6 % até chegar a R$ 5,11. A alta foi puxada pelos dados de inflação dos EUA, que surpreenderam para cima, e pela expectativa de que o Fed mantenha as taxas de [juros](/en/glossario/en-juros) elevadas por mais tempo. Na prática, isso significa que, se você costuma comprar produtos importados ou viajar para o exterior, o bolso vai sentir um peso extra.
 
-- **Euro (EUR/BRL = R$ 5,83)** – O euro também subiu, mas em ritmo mais tímido, avançando 0,3 % na mesma janela. A diferença entre a cotação do euro e do dólar ainda está em torno de R$ 0,72, o que indica que o real está mais fraco frente à moeda única europeia. Se você tem alguma viagem planejada para a Europa ou pensa em investir em [fundos](/en/glossario/en-fundos) que compram ativos lá, vale ficar de olho.
+- **Euro (EUR/BRL = R$ 5,83)** – O euro também subiu, mas em ritmo mais tímido, avançando 0,3 % na mesma janela. A diferença entre a cotação do euro e do dólar ainda está em torno de R$ 0,72, o que indica que o real está mais fraco frente à [moeda](/en/glossario/en-moeda) única europeia. Se você tem alguma viagem planejada para a Europa ou pensa em investir em [fundos](/en/glossario/en-fundos) que compram ativos lá, vale ficar de olho.
 
 A boa notícia é que a volatilidade não foi tão agressiva; os pares oscilaram dentro de faixas estreitas, o que traz um pouco de tranquilidade para quem tem investimentos atrelados a moedas estrangeiras.
 
@@ -42,7 +42,7 @@ Nesta segunda‑feira, o Copom decidiu manter a taxa Selic em **13,75 % ao ano
 
 1. **[Renda fixa](/en/glossario/en-renda-fixa)** – Os títulos públicos (Tesouro Selic) continuam rendendo próximo da taxa oficial, o que os mantém como “porto seguro” para quem quer preservar o capital sem muita exposição ao risco. Se você tem dinheiro guardado na [poupança](/en/glossario/en-poupanca), vale a pena migrar para o Tesouro Selic ou para CDBs de bancos sólidos que pagam um percentual do CDI.
 
-2. **Renda variável** – Juros altos tendem a deixar as ações mais caras, pois o custo de oportunidade de investir em empresas aumenta. Setores como consumo e varejo podem sentir pressão, enquanto utilities (energia, água) costumam ser mais resilientes. Se você tem carteira de ações, pense em reforçar posições em empresas que pagam dividendos consistentes – elas costumam se sair melhor quando a taxa está alta.
+2. **Renda variável** – Juros altos tendem a deixar as [ações](/en/glossario/en-acoes) mais caras, pois o custo de oportunidade de investir em empresas aumenta. Setores como consumo e varejo podem sentir pressão, enquanto utilities (energia, água) costumam ser mais resilientes. Se você tem carteira de ações, pense em reforçar posições em empresas que pagam dividendos consistentes – elas costumam se sair melhor quando a taxa está alta.
 
 ## 3. Dica Prática para o Investidor Individual
 
@@ -57,9 +57,9 @@ Eu costumo recomendar o **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2
 
 - **Investimentos:** Com a Selic estável, a busca por alternativas de renda fixa com rentabilidade acima do CDI deve crescer. Também pode surgir alguma oportunidade em fundos de crédito privado, que costumam se beneficiar de juros mais altos.
 
-**Resumo rápido:** Dólar e euro subiram, a Selic ficou firme e sua carteira precisa se adaptar a juros altos. Aproveite ferramentas como o FinMoovi para monitorar tudo de forma simples e continue diversificando para reduzir riscos. Boa semana de investimentos!
+**Resumo rápido:** Dólar e euro subiram, a Selic ficou firme e sua carteira precisa se adaptar a juros altos. Aproveite ferramentas como o [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) para monitorar tudo de forma simples e continue diversificando para reduzir riscos. Boa semana de investimentos!
 
 
 ---
-**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
+**Ready to track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
 

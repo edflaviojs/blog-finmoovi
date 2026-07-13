@@ -16,9 +16,9 @@ seo:
   keywords: ["cotización dólar hoy", "cotización euro", "resumen mercado financiero", "selic"]
 ---
 
-## Resumen Semanal del Mercado Financiero Brasileño: 22/6/2026 - 29/6/2026
+## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-3-junio-2026) Brasileño: 22/6/2026 - 29/6/2026
 
-La semana que pasó fue de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y euro, el impacto de la tasa [Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y ofreceremos [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
+La semana que pasó fue de gran importancia para el [mercado financiero](/es/posts/es-cotizaciones-semana-4-junio-2026) brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y euro, el impacto de la tasa [Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y ofreceremos [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
 
 ![Resumen Semanal del Mercado Financiero Brasileño: 22/6/2026 - 29/6/2026](/images/posts/es-cotizaciones-semana-5-junio-2026-inline-1.webp)
 

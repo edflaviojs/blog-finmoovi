@@ -16,7 +16,7 @@ seo:
   keywords: ["dollar quote today", "euro quote", "financial market summary", "selic"]
 ---
 
-## Weekly Summary of the Brazilian Financial Market
+## Weekly Summary of the Brazilian [Financial Market](/en/posts/en-quotes-semana-5-june-2026)
 
 The past week was marked by relative stability in the [foreign exchange](/en/glossario/en-cambio) market, with the commercial [dollar](/en/posts/en-quotes-semana-1-july-2026) closing at R$ 5.03 and the euro at R$ 5.84. Let's analyze how these numbers affect our finances and [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
@@ -30,7 +30,7 @@ The [Selic rate](/en/glossario/en-selic), which is the [economy](/en/posts/en-5-
 
 ## Practical Tip for Individual Investors
 
-A practical tip for individual investors is to diversify your investment portfolio. With the dollar at R$ 5.03 and the euro at R$ 5.84, it may be a good time to invest in foreign currency assets. Additionally, it's important not to forget investing in [fixed income](/en/glossario/en-renda-fixa), such as treasury bonds, to have a more stable income source. Remember that [diversification](/en/glossario/en-diversificacao) is the key to minimizing risks and maximizing gains.
+A practical tip for individual investors is to diversify your investment portfolio. With the [dollar](/en/posts/en-quotes-semana-4-june-2026) at R$ 5.03 and the euro at R$ 5.84, it may be a good time to invest in foreign currency assets. Additionally, it's important not to forget investing in [fixed income](/en/glossario/en-renda-fixa), such as treasury bonds, to have a more stable income source. Remember that [diversification](/en/glossario/en-diversificacao) is the key to minimizing risks and maximizing gains.
 
 ## What to Expect for Next Week
 

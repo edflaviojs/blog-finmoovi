@@ -23,7 +23,7 @@ A semana foi agitada nos mercados de câmbio e, como sempre, a taxa Selic contin
 ### 1. Dólar e euro: tendência da semana
 
 - **Dólar (USD/BRL) – R$ 5,11**  
-  O real ganhou um tiquinho contra o dólar ao longo dos últimos sete dias. Na segunda‑feira, a cotação estava em torno de R$ 5,15; até sexta‑feira já estava em R$ 5,11. A queda foi impulsionada pela notícia de que a Reserva Federal dos EUA manteve a taxa de juros estável, o que tirou um pouco da pressão de compra de dólares por investidores internacionais.
+  O real ganhou um tiquinho contra o dólar ao longo dos últimos sete dias. Na segunda‑feira, a cotação estava em torno de R$ 5,15; até sexta‑feira já estava em R$ 5,11. A queda foi impulsionada pela notícia de que a Reserva Federal dos EUA manteve a taxa de [juros](/es/glossario/es-juros) estável, o que tirou um pouco da pressão de compra de dólares por investidores internacionais.
 
 - **Euro (EUR/BRL) – R$ 5,83**  
   O euro também recuou, mas de forma mais discreta. Partiu de R$ 5,90 no início da semana e fechou em R$ 5,83. A zona do euro ainda lida com incertezas sobre a política monetária, e a falta de novidades fortes fez o euro perder apenas alguns centavos frente ao real.
@@ -37,11 +37,11 @@ A taxa Selic ficou em **13,75 % ao ano**, como já estava prevista nas última
 
 1. **[Renda fixa](/es/glossario/es-renda-fixa) mais atrativa** – Títulos do [Tesouro Direto](/es/glossario/es-tesouro-direto) e CDBs que pagam próximo da Selic continuam entregando bons rendimentos. Se você ainda não tem uma parte da carteira nesses papéis, vale a pena considerar, especialmente porque o risco de crédito é baixo.
 
-2. **Custo de oportunidade para ações** – Quanto maior a Selic, mais caro fica o dinheiro emprestado. Isso costuma deixar o mercado de ações mais “cauteloso”, já que empresas sentem o peso dos juros nos seus custos de capital. Na prática, as ações de setores mais sensíveis a crédito (como construção e varejo) tiveram desempenho mais fraco nesta semana.
+2. **Custo de oportunidade para [ações](/es/glossario/es-acoes)** – Quanto maior a Selic, mais caro fica o dinheiro emprestado. Isso costuma deixar o mercado de ações mais “cauteloso”, já que empresas sentem o peso dos juros nos seus custos de capital. Na prática, as ações de setores mais sensíveis a crédito (como construção e varejo) tiveram desempenho mais fraco nesta semana.
 
 ### 3. Conselho prático para o investidor individual
 
-**Monte um “cushion” cambial**: se você tem gastos futuros em dólares ou euros, abra uma conta em moeda estrangeira (ou use um fundo cambial) e compre um pouquinho a cada mês. Assim, quando a cotação subir, você já tem parte do dinheiro comprado a preço mais baixo. É como fazer um “preço fixo” para a viagem ou a compra daquele notebook que você tem de olho.
+**Monte um “cushion” cambial**: se você tem [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) futuros em dólares ou euros, abra uma conta em [moeda](/es/glossario/es-moeda) estrangeira (ou use um fundo cambial) e compre um pouquinho a cada mês. Assim, quando a cotação subir, você já tem parte do dinheiro comprado a preço mais baixo. É como fazer um “preço fixo” para a viagem ou a compra daquele notebook que você tem de olho.
 
 **Dica de amigo:** eu uso o [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) para monitorar essas contas em diferentes moedas. O app mostra a evolução da taxa de câmbio, avisa quando o dólar está em alta e ainda permite criar metas de compra. É como ter um assistente pessoal de finanças no bolso.
 
@@ -57,5 +57,5 @@ A taxa Selic ficou em **13,75 % ao ano**, como já estava prevista nas última
 
 
 ---
-**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
+**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado).**
 

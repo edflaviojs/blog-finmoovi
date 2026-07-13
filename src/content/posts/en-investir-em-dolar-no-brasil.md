@@ -19,13 +19,13 @@ seo:
 ## Introduction to [Dollar](/en/posts/en-quotes-semana-1-july-2026) [Investment](/en/posts/en-montando-carteira-diversificada-com-r-500)
 Investing in dollars can be a way to diversify your investment portfolio and protect your assets against fluctuations in the Brazilian [economy](/en/posts/en-30-day-rule-for-purchases). However, it's essential to understand how the [dollar](/en/posts/en-quotes-semana-1-june-2026) market works and what [risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and benefits are involved. Let's start with the basics: what is the US [dollar](/en/posts/en-quotes-semana-2-july-2026) and why is it important for Brazilian investors?
 
-The US [dollar](/en/posts/en-quotes-semana-3-june-2026) is the official currency of the United States and is widely used in international transactions. In Brazil, the dollar is used as a form of investment, as it can be bought and sold on stock exchanges and currency exchange offices. If you're considering investing in dollars, it's crucial to assess whether it makes sense for your investor profile and financial goals.
+The US [dollar](/en/posts/en-quotes-semana-3-june-2026) is the official currency of the United States and is widely used in international transactions. In Brazil, the [dollar](/en/posts/en-quotes-semana-4-june-2026) is used as a form of investment, as it can be bought and sold on stock exchanges and currency exchange offices. If you're considering investing in dollars, it's crucial to assess whether it makes sense for your investor profile and financial goals.
 
 ## How to Invest in Dollars in Brazil
 There are several ways to invest in dollars in Brazil, including:
 
 * Buying dollars in cash: you can buy dollars in cash at a currency exchange office or a bank branch.
-* Investing in dollar-denominated securities: you can invest in dollar-denominated securities, such as US Treasury bonds or securities issued by American companies.
+* Investing in [dollar](/en/posts/en-quotes-semana-5-june-2026)-denominated securities: you can invest in dollar-denominated securities, such as US Treasury bonds or securities issued by American companies.
 * Investing in dollar investment funds: you can invest in investment funds that aim to invest in dollars.
 * Investing in American company stocks: you can invest in stocks of American companies listed on US stock exchanges.
 

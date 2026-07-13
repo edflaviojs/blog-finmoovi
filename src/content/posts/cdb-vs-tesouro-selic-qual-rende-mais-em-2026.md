@@ -35,7 +35,7 @@ Para entender melhor os rendimentos, vamos considerar alguns exemplos. Suponha q
 
 
 
-No entanto, esses números são simplificados e não consideram as possíveis variações da taxa Selic ao longo do ano, que podem afetar o rendimento do Tesouro Selic. Além disso, os juros do CDB podem ser superiores, mas também podem ser influenciados pela credibilidade do banco emissor.
+No entanto, esses números são simplificados e não consideram as possíveis variações da taxa [Selic](/posts/cotacoes-semana-3-junho-2026) ao longo do ano, que podem afetar o rendimento do Tesouro [Selic](/posts/cotacoes-semana-4-junho-2026). Além disso, os juros do CDB podem ser superiores, mas também podem ser influenciados pela credibilidade do banco emissor.
 
 ## Riscos
 ### Riscos do CDB
