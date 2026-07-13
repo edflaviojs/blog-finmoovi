@@ -131,6 +131,16 @@ export async function onRequestOptions(context) {
   });
 }
 
+// Logo oficial FinMoovi (PNG hospedado no blog) — padrão único de cabeçalho dos emails
+function logoHeaderHTML() {
+  return `<div style="text-align:center;margin:0 0 28px;">
+        <a href="${siteConfig.siteUrl}" style="text-decoration:none;display:inline-block;">
+          <img src="${siteConfig.siteUrl}/email/finmoovi-logo.png" width="40" height="40" alt="${siteConfig.brandName}" style="display:inline-block;vertical-align:middle;border:1px solid #30363d;border-radius:10px;" />
+          <span style="vertical-align:middle;padding-left:10px;font-size:22px;font-weight:700;letter-spacing:-0.5px;color:#00F0FF;background:linear-gradient(135deg,${siteConfig.colors.gradientStart},${siteConfig.colors.gradientEnd});-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">${siteConfig.brandName}</span>
+        </a>
+      </div>`;
+}
+
 function getWelcomeEmailHTML(email, lang = 'pt') {
   const brand = siteConfig.brandName;
   const niche = siteConfig.niche || { pt: 'finanças pessoais', en: 'personal finance', es: 'finanzas personales' };
@@ -171,6 +181,7 @@ function getWelcomeEmailHTML(email, lang = 'pt') {
 <body style="margin:0;padding:0;background:#0d1117;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
   <div style="max-width:600px;margin:0 auto;padding:40px 20px;">
     <div style="background:#161b22;border:1px solid #30363d;border-radius:12px;padding:40px;text-align:center;">
+      ${logoHeaderHTML()}
       <h1 style="color:#f0f6fc;font-size:24px;margin-bottom:16px;">${t.title}</h1>
       <p style="color:#8b949e;font-size:16px;line-height:1.6;margin-bottom:24px;">${t.subtitle}</p>
       <div style="background:#21262d;border-radius:8px;padding:20px;margin-bottom:24px;text-align:left;">
@@ -313,6 +324,7 @@ function getLeadMagnetEmailHTML(email, lang, source) {
 <body style="margin:0;padding:0;background:#0d1117;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
   <div style="max-width:600px;margin:0 auto;padding:40px 20px;">
     <div style="background:#161b22;border:1px solid #30363d;border-radius:12px;padding:40px;">
+      ${logoHeaderHTML()}
       <h1 style="color:#f0f6fc;font-size:22px;margin-bottom:12px;text-align:center;">${c.title}</h1>
       <p style="color:#8b949e;font-size:15px;line-height:1.6;margin-bottom:24px;text-align:center;">${c.intro}</p>
       <div style="background:#21262d;border-radius:8px;padding:24px;margin-bottom:24px;">

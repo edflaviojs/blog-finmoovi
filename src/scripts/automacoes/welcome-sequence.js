@@ -14,6 +14,15 @@ const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
+// Logo oficial FinMoovi (PNG hospedado no blog) — padrão único de cabeçalho dos emails
+const logoHeader = `
+      <div style="text-align:center;margin:0 0 28px;">
+        <a href="${config.siteUrl}" style="text-decoration:none;display:inline-block;">
+          <img src="${config.siteUrl}/email/finmoovi-logo.png" width="40" height="40" alt="${config.brand.name}" style="display:inline-block;vertical-align:middle;border:1px solid #30363d;border-radius:10px;" />
+          <span style="vertical-align:middle;padding-left:10px;font-size:22px;font-weight:700;letter-spacing:-0.5px;color:#00F0FF;background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">${config.brand.name}</span>
+        </a>
+      </div>`;
+
 const SEQUENCES = {
   pt: [
     {
@@ -23,6 +32,7 @@ const SEQUENCES = {
 <div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;color:#e6edf3;">
   <div style="background:linear-gradient(135deg,${config.brand.colors.ctaGradientStart},${config.brand.colors.ctaGradientEnd});padding:3px;border-radius:12px;">
     <div style="background:#0d1117;padding:32px;border-radius:10px;">
+      ${logoHeader}
       <h1 style="color:#fff;font-size:24px;margin:0 0 16px;">Bem-vindo ao ${config.brand.name} ${config.brand.blogSuffix}! 🎉</h1>
       <p style="color:#8b949e;line-height:1.7;">Estamos felizes em ter você aqui. A partir de agora, você vai receber dicas práticas de finanças pessoais toda semana.</p>
       <p style="color:#8b949e;line-height:1.7;">Para começar, preparamos algo especial:</p>
@@ -39,6 +49,7 @@ const SEQUENCES = {
       html: `
 <div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;color:#e6edf3;">
   <div style="background:#0d1117;padding:32px;border-radius:12px;border:1px solid #30363d;">
+    ${logoHeader}
     <h1 style="color:#fff;font-size:22px;margin:0 0 16px;">Os posts que todo mundo está lendo 🔥</h1>
     <p style="color:#8b949e;line-height:1.7;">Separei os 3 posts mais acessados para você não perder nada:</p>
     <div style="margin:20px 0;">
@@ -62,6 +73,7 @@ const SEQUENCES = {
       html: `
 <div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;color:#e6edf3;">
   <div style="background:#0d1117;padding:32px;border-radius:12px;border:1px solid #30363d;">
+    ${logoHeader}
     <h1 style="color:#fff;font-size:22px;margin:0 0 16px;">Já tentou controlar gastos e desistiu? 🤔</h1>
     <p style="color:#8b949e;line-height:1.7;">Eu sei como é. Planilhas são chatas. Apps complicados cansam. Mas e se você pudesse apenas <strong style="color:#fff;">FALAR</strong> seus gastos?</p>
     <p style="color:#8b949e;line-height:1.7;">Com o <strong style="color:#fff;">${config.brand.name}</strong>, é exatamente assim:</p>
