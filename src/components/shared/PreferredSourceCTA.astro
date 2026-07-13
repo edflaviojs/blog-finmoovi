@@ -16,21 +16,24 @@ const prefUrl = `https://google.com/preferences/source?q=${domain}`;
 const T = {
   pt: {
     title: 'Gostou do conteúdo?',
-    body: `Adicione o <strong>${brand}</strong> como <strong>fonte preferida</strong> no Google e veja mais dos nossos artigos nas notícias e no AI Mode.`,
+    body: `Adicione o <strong>${brand}</strong> como <strong>fonte preferida</strong> no Google: você passa a ver mais dos nossos artigos nas notícias e nas respostas de IA.`,
+    how: `Na página do Google que abrir, procure por <strong>${brand}</strong> e toque no nome para adicioná-lo às suas fontes.`,
     cta: '⭐ Adicionar como fonte preferida',
-    note: 'Abre no Google (é preciso estar logado). Leva 1 clique.',
+    note: 'Recurso do Google (é preciso estar logado). Se o FinMoovi ainda não aparecer, é porque estamos ganhando presença — tente novamente em breve.',
   },
   en: {
     title: 'Enjoying the content?',
-    body: `Add <strong>${brand}</strong> as a <strong>preferred source</strong> on Google to see more of our articles in news and AI Mode.`,
+    body: `Add <strong>${brand}</strong> as a <strong>preferred source</strong> on Google to see more of our articles in news and AI answers.`,
+    how: `On the Google page that opens, search for <strong>${brand}</strong> and tap the name to add it to your sources.`,
     cta: '⭐ Add as preferred source',
-    note: 'Opens on Google (you must be signed in). One click.',
+    note: 'Google feature (you must be signed in). If FinMoovi doesn’t appear yet, we’re still gaining presence — try again soon.',
   },
   es: {
     title: '¿Te gustó el contenido?',
-    body: `Añade <strong>${brand}</strong> como <strong>fuente preferida</strong> en Google y verás más de nuestros artículos en noticias y AI Mode.`,
+    body: `Añade <strong>${brand}</strong> como <strong>fuente preferida</strong> en Google y verás más de nuestros artículos en noticias y respuestas de IA.`,
+    how: `En la página de Google que se abre, busca <strong>${brand}</strong> y toca el nombre para añadirlo a tus fuentes.`,
     cta: '⭐ Añadir como fuente preferida',
-    note: 'Se abre en Google (debes iniciar sesión). Un clic.',
+    note: 'Función de Google (debes iniciar sesión). Si FinMoovi aún no aparece, estamos ganando presencia — inténtalo pronto.',
   },
 }[locale];
 ---
@@ -41,6 +44,7 @@ const T = {
     <strong class="pref-source-title">{T.title}</strong>
     <p set:html={T.body}></p>
     <a class="pref-source-btn" href={prefUrl} target="_blank" rel="noopener">{T.cta}</a>
+    <p class="pref-source-how" set:html={T.how}></p>
     <span class="pref-source-note">{T.note}</span>
   </div>
 </aside>
@@ -68,5 +72,7 @@ const T = {
     transition: all var(--transition-fast);
   }
   .pref-source-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+  .pref-source-how { margin: var(--space-3) 0 0; color: var(--text-secondary); font-size: var(--text-sm); line-height: var(--leading-relaxed); }
+  .pref-source-how :global(strong) { color: var(--text-primary); }
   .pref-source-note { display: block; margin-top: var(--space-2); color: var(--text-tertiary); font-size: var(--text-xs); }
 </style>

@@ -14,6 +14,7 @@ import NewsletterPopup from '@components/shared/NewsletterPopup.astro';
 import Giscus from '@components/shared/Giscus.astro';
 import ArticleRating from '@components/shared/ArticleRating.astro';
 import RelatedPosts from '@components/posts/RelatedPosts.astro';
+import PreferredSourceCTA from '@components/shared/PreferredSourceCTA.astro';
 import { resolveAuthor, authorHref } from '@/data/authors';
 
 interface Props {
@@ -122,6 +123,8 @@ const schemaBreadcrumbItems = [
           {category && slug && (
             <RelatedPosts currentSlug={slug} category={category} locale={locale} />
           )}
+
+          <PreferredSourceCTA locale={locale} />
         </article>
 
         <aside class="post-sidebar">
