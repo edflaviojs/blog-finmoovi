@@ -2,6 +2,7 @@
 title: "Como criar uma reserva de emergência"
 description: "Aprenda a criar uma reserva de emergência para proteger seu futuro financeiro em caso de imprevistos. Dicas práticas e exemplos reais."
 image: "/images/posts/como-criar-uma-reserva-de-emergencia.webp"
+imageAlt: "Capa de couro marrom, calculadora, moedas e plantas sobre fundo branco marmorizado."
 category: "dicas"
 locale: "pt"
 tags: ["como criar uma reserva de emergência","finanças pessoais","economia","dinheiro"]

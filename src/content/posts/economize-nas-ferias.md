@@ -2,6 +2,7 @@
 title: "Economize nas Férias"
 description: "Dicas práticas para economizar nas férias de julho sem comprometer a diversão."
 image: "/images/posts/economize-nas-ferias.webp"
+imageAlt: "Gráfico colorido com linhas e engrenagem em tons de azul, verde e laranja."
 category: "dicas"
 tags:
   - "economia"

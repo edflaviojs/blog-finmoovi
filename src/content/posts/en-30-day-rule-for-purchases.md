@@ -2,6 +2,7 @@
 title: "30-Day Rule for Purchases"
 description: "Learn to use the 30-day rule for purchases and save money with practical personal finance tips."
 image: "/images/posts/regra-dos-30-dias-para-compras.svg"
+imageAlt: "Black background with scattered blue and orange dots and a dotted blue line."
 category: "dicas"
 locale: "en"
 tags: ["how to use the 30-day rule for purchases","personal finance","economy","money"]

@@ -2,6 +2,7 @@
 title: "Resumo Semanal: Dólar a R$ 5.03 — Semana 4 de maio"
 description: "Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para investidores. Semana 4 de maio 2026."
 image: "/images/posts/cotacoes-semana-4-maio-2026.webp"
+imageAlt: "Árvore com folhas de dinheiro em ilha flutuante sobre água."
 category: "cotacoes"
 tags: ["cotações", "dólar", "euro", "mercado financeiro", "selic"]
 author: "FinMoovi"

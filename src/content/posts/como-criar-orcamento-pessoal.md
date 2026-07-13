@@ -2,6 +2,7 @@
 title: "Como Criar um Orçamento Pessoal em 5 Passos Simples"
 description: "Aprenda a montar um orçamento pessoal eficiente que funciona na prática. Método testado para organizar suas finanças em menos de 30 minutos."
 image: "/images/posts/orcamento-pessoal.svg"
+imageAlt: "Gráfico de velas coloridas em fundo preto com círculos semi-transparentes."
 category: "orcamento"
 tags: ["orçamento", "finanças pessoais", "planejamento financeiro", "controle de gastos"]
 author: "FinMoovi"

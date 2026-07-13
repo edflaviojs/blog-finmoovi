@@ -2,6 +2,7 @@
 title: "Economize na Conta do Mercado"
 description: "Dicas práticas para reduzir gastos semestrais em até R$ 1.000,00 e melhorar suas finanças pessoais."
 image: "/images/posts/economize-na-conta-do-mercado.webp"
+imageAlt: "Mão sobre uma mesa com moedas empilhadas e uma plantinha brotando."
 category: "dicas"
 locale: "pt"
 tags: ["como economizar na conta do mercado toda semana","finanças pessoais","economia","dinheiro"]

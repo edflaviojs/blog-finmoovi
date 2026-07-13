@@ -2,6 +2,7 @@
 title: "Economizar nas compras do supermercado"
 description: "Aprenda a economizar nas compras do supermercado com dicas práticas e simples. Descubra como reduzir gastos e aumentar sua economia."
 image: "/images/posts/economizar-nas-compras-do-supermercado.webp"
+imageAlt: "Homem e mulher em supermercado com carrinho de compras e embalagens de produtos."
 category: "dicas"
 locale: "pt"
 tags: ["como economizar nas compras do supermercado","finanças pessoais","economia","dinheiro"]

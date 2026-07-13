@@ -2,6 +2,7 @@
 title: "5 Alternatives to Mobills in 2026"
 description: "Discover the best financial management apps to replace Mobills in 2026."
 image: "/images/posts/5-alternativas-ao-mobills-em-2026.webp"
+imageAlt: "Blue and yellow abstract shapes on a light gray background."
 category: "ferramentas"
 locale: "en"
 tags: ["Mobills","FinMoovi","financial management","apps","economy","budget","alternative to Mobills","financial control app","replace Mobills","better than Mobills"]

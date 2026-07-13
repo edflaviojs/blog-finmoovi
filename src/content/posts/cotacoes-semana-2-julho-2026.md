@@ -2,6 +2,7 @@
 title: "Resumo Semanal: Dólar a R$ 5.11 — Semana 2 de julho"
 description: "Resumo semanal do mercado financeiro: dólar, euro, Selic e dicas para investidores. Semana 2 de julho 2026."
 image: "/images/posts/cotacoes-semana-2026-07-13.webp"
+imageAlt: "Caderno, calculadora e moedas sobre fundo de mármore com folhas de plantas."
 category: "cotacoes"
 tags: ["cotações","dólar","euro","mercado financeiro","selic"]
 author: "FinMoovi"

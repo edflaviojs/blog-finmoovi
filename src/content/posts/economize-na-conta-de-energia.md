@@ -2,6 +2,7 @@
 title: "Economize na Conta de Energia"
 description: "Aprenda a reduzir sua conta de energia elétrica com dicas práticas e economize dinheiro."
 image: "/images/posts/economize-na-conta-de-energia.svg"
+imageAlt: "Gráfico com pontos laranja e verde em fundo preto e linha pontilhada."
 category: "dicas"
 locale: "pt"
 tags: ["como economizar na conta de energia","finanças pessoais","economia","dinheiro"]

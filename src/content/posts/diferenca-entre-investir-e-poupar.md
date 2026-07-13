@@ -2,6 +2,7 @@
 title: "Diferença entre Investir e Poupar"
 description: "Entenda a diferença entre investir e poupar para tomar decisões financeiras informadas e alcançar seus objetivos."
 image: "/images/posts/diferenca-entre-investir-e-poupar.webp"
+imageAlt: "Computador e monitor em uma mesa de madeira com uma xícara de café."
 category: "dicas"
 locale: "pt"
 tags: ["diferença entre investir e poupar","finanças pessoais","economia","dinheiro"]

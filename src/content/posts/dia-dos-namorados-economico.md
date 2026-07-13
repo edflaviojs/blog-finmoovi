@@ -2,6 +2,7 @@
 title: "Dia dos Namorados Econômico"
 description: "Celebre o amor sem comprometer suas finanças, dicas práticas e criativas para um Dia dos Namorados econômico."
 image: "/images/posts/dia-dos-namorados-economico.webp"
+imageAlt: "Duas pilhas de moedas em um fundo branco com sombra."
 category: "dicas"
 tags:
   - "dia dos namorados"
