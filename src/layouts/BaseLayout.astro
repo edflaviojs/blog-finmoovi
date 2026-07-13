@@ -67,7 +67,9 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
   <meta name="keywords" content={keywords.join(', ')} />
   <meta name="author" content={author} />
   <link rel="canonical" href={canonicalURL} />
-  {noindex && <meta name="robots" content="noindex, nofollow" />}
+  {noindex
+    ? <meta name="robots" content="noindex, nofollow" />
+    : <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1" />}
 
   <!-- hreflang -->
   {hasI18nVersion && (
