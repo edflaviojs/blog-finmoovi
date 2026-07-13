@@ -2,6 +2,7 @@
 title: "Private Pension vs Investing on Your Own: Which Is Worth It in 2026?"
 description: "The right choice for your financial future"
 image: "/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-.webp"
+imageAlt: "Laptop, monitor, keyboard, mouse, and coffee cup on a wooden desk near a window."
 category: "investimentos"
 locale: "en"
 tags: ["Private pension","Investing on your own","Financial planning","Personal finance","Investments","is private pension worth it","pgbl vs vgbl","retirement investing alone"]

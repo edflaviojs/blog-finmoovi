@@ -2,6 +2,7 @@
 title: "Budgeting with Minimum Wage: Practical Tips"
 description: "Learn how to create an effective budget with a minimum wage, managing your finances intelligently and achieving financial stability."
 image: "/images/posts/orcamento-com-salario-minimo-dicas-praticas.webp"
+imageAlt: "Brown leather journal, pen, calculator, coins, and green plants on white marble surface."
 category: "orcamento"
 locale: "en"
 tags: ["budget","minimum wage","personal finance","financial management","economy","planning","minimum wage budget","saving on a low income","expense control"]

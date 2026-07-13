@@ -2,6 +2,7 @@
 title: "Financial Education for Children"
 description: "Learn how to teach personal finance to children and teenagers, promoting solid financial education from an early age."
 image: "/images/posts/educacao-financeira-para-criancas.webp"
+imageAlt: "Brown leather book, calculator, coins, and green leaves on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["financial education for children","personal finance","economy","money"]

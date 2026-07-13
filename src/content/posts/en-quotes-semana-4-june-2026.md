@@ -2,6 +2,7 @@
 title: "Weekly Summary: Dollar at R$ 5.16 — Week 4 of june"
 description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 4 of june 2026."
 image: "/images/posts/cotacoes-semana-2026-06-22.webp"
+imageAlt: "Brown leather journal, calculator, coins, and green leaves on white marble surface."
 category: "cotacoes"
 tags: ["quotes","dollar","euro","financial market","selic"]
 author: "FinMoovi"

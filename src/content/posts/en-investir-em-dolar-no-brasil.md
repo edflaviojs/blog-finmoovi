@@ -2,6 +2,7 @@
 title: "Investing in Dollar in Brazil"
 description: "Learn how to invest in dollars in Brazil safely and intelligently, considering the risks and benefits."
 image: "/images/posts/investir-em-dolar-no-brasil.webp"
+imageAlt: "Three people sitting at a table with a laptop and bills."
 category: "investimentos"
 locale: "en"
 tags: ["investing in dollars","dollar investment","US dollar","foreign investment","foreign currency investment","safe investment","investing in dollars in Brazil","buying dollars for investment","dollarizing portfolio"]

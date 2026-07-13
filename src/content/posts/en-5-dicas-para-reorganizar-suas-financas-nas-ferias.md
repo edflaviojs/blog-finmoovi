@@ -2,6 +2,7 @@
 title: "5 Tips to Reorganize Your Finances on Vacation"
 description: "Reorganize your finances on vacation with 5 practical and accessible tips."
 image: "/images/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias.webp"
+imageAlt: "Golden and teal wavy lines on dark blue and gold gradient background."
 category: "dicas"
 locale: "en"
 tags: ["personal finance","vacation","financial reorganization","budget","economy","organize finances vacation","mid-year financial planning"]

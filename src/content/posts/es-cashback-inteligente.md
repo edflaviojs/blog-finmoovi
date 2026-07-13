@@ -2,6 +2,7 @@
 title: "Cashback Inteligente"
 description: "Aprende a usar cashback de forma inteligente y ahorra dinero en compras del día a día."
 image: "/images/posts/cashback-inteligente.webp"
+imageAlt: "Cuaderno marrón, calculadora negra y monedas sobre fondo de mármol con plantas."
 category: "dicas"
 locale: "es"
 tags: ["cómo usar cashback de forma inteligente","finanzas personales","economía","dinero"]

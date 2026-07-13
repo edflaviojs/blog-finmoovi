@@ -2,6 +2,7 @@
 title: "Smart Cashback"
 description: "Learn how to use cashback intelligently and save money on your daily purchases."
 image: "/images/posts/cashback-inteligente.webp"
+imageAlt: "Brown leather wallet, calculator, coins, and potted plants on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["how to use cashback intelligently","personal finance","economy","money"]

@@ -2,6 +2,7 @@
 title: "Ahorrá en las compras del supermercado"
 description: "Aprende a ahorrar en las compras del supermercado con consejos prácticos y ejemplos reales. Reduce tus gastos y aumenta tu ahorro."
 image: "/images/posts/economize-nas-compras-do-supermercado.webp"
+imageAlt: "Diseño abstracto con formas doradas y fondo degradado de colores oscuros."
 category: "dicas"
 locale: "es"
 tags: ["cómo ahorrar en las compras del supermercado","finanzas personales","ahorro","dinero"]

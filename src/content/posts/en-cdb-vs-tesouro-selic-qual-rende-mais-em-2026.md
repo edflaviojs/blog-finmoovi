@@ -2,6 +2,7 @@
 title: "CDB vs Treasury Selic: Which Yields More in 2026"
 description: "Discover which investment option is more profitable between CDB and Treasury Selic in 2026, considering risks and benefits."
 image: "/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026.webp"
+imageAlt: "Two yellow crescent shapes on dark blue background with thin green line."
 category: "investimentos"
 locale: "en"
 tags: ["CDB","Treasury Selic","investments","fixed income","risks","benefits","cdb vs treasury selic","which yields more","fixed income comparison"]
