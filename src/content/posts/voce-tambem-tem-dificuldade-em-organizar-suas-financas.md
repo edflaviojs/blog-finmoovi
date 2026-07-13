@@ -69,7 +69,7 @@ Aqui está um exemplo de como o FinMoovi pode mudar sua vida financeira:
 * Você tem uma visão clara de suas finanças e pode identificar áreas onde pode economizar.
 * Você se sente mais tranquilo e confiante ao pensar em suas finanças.
 
-De acordo com estatísticas, pessoas que usam aplicativos de gerenciamento de despesas como o FinMoovi tendem a economizar mais e ter uma melhor saúde financeira. Por exemplo, um estudo mostrou que pessoas que usam aplicativos de gerenciamento de despesas têm uma probabilidade 30% maior de alcançar seus objetivos financeiros.
+De acordo com estatísticas, pessoas que usam aplicativos de gerenciamento de despesas como o FinMoovi tendem a economizar mais e ter uma melhor saúde financeira.
 
 ## Experimente o FinMoovi
 Se você está cansado de se sentir perdido e estressado com suas finanças, experimente o FinMoovi. Com o FinMoovi, você pode ter uma visão clara de suas finanças e tomar decisões informadas sobre como gerenciar seu [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito). Além disso, o FinMoovi é fácil de usar e oferece recursos como categorização automática de gastos e relatórios inteligentes com a ajuda da IA.

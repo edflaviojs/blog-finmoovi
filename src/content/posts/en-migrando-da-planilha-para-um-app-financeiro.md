@@ -40,7 +40,7 @@ A financial app can be a good option for you if:
 * You need automation: financial apps can automate financial tasks, such as bill payments and [money](/en/posts/en-30-day-rule-for-purchases) transfers.
 * You need alerts: financial apps can provide alerts and notifications to help you stay on track.
 
-According to research, 70% of people who use spreadsheets give up within 30 days due to lack of consistency. This happens because spreadsheets can be difficult to keep updated and consistent, especially if you have a busy life.
+ This happens because spreadsheets can be difficult to keep updated and consistent, especially if you have a busy life.
 
 ## Examples of Financial Apps
 There are many financial apps available in the market, each with its own features and [benefits](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Some examples include:

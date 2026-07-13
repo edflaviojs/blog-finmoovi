@@ -25,7 +25,7 @@ As planilhas de gastos têm várias vantagens, como:
 - **Gratuitas**: A maioria das planilhas de gastos é gratuita, o que as torna acessíveis a todos.
 - **Customizáveis**: Você pode adaptar a planilha para se adequar ao seu estilo de vida e hábitos de gastos.
 
-No entanto, pesquisas mostram que 70% das pessoas desistem de usar planilhas de gastos em 30 dias por falta de consistência. Isso ocorre porque manter uma planilha de gastos atualizada requer disciplina e tempo. Além disso, é fácil esquecer de registrar alguns gastos ou não ter acesso à planilha quando necessário.
+ Isso ocorre porque manter uma planilha de gastos atualizada requer disciplina e tempo. Além disso, é fácil esquecer de registrar alguns gastos ou não ter acesso à planilha quando necessário.
 
 ![Vantagens e Desvantagens das Planilhas de Gastos](/images/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar-2.webp)
 

@@ -40,7 +40,7 @@ Um app financeiro pode ser uma boa opção para você se:
 * Você precisa de automação: os apps financeiros podem automatizar tarefas financeiras, como o pagamento de contas e a transferência de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz).
 * Você precisa de voz: os apps financeiros podem fornecer alertas e notificações para ajudá-lo a se manter no caminho certo.
 
-De acordo com pesquisas, 70% das pessoas que usam planilhas desistem em 30 dias por falta de consistência. Isso ocorre porque as planilhas podem ser difíceis de manter atualizadas e consistentes, especialmente se você tiver uma vida ocupada.
+ Isso ocorre porque as planilhas podem ser difíceis de manter atualizadas e consistentes, especialmente se você tiver uma vida ocupada.
 
 ## Exemplos de Apps Financeiros
 Existem muitos apps financeiros disponíveis no mercado, cada um com suas próprias características e [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Alguns exemplos incluem:
