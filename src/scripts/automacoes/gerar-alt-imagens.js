@@ -16,6 +16,10 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
+import sharp from 'sharp';
+
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+const THROTTLE_MS = 2500; // ~24 req/min, abaixo do limite do Groq free
 
 const ROOT = process.cwd();
 const COLLECTIONS = [
@@ -29,21 +33,22 @@ const FORCE = args.includes('--force');
 
 const LANG = { pt: 'Portuguese (Brazil)', en: 'English', es: 'Spanish' };
 
-// --- Provedores de visão (OpenAI-compatível) ---
+// --- Provedores de visão (OpenAI-compatível). Groq primário (confiável);
+// Cloudflare como fallback (o modelo exige aceite de "agreement" → costuma dar 403). ---
 const VISION = [
-  {
-    name: 'Cloudflare Workers AI',
-    enabled: !!(process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_AI_TOKEN),
-    url: `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions`,
-    apiKey: process.env.CLOUDFLARE_AI_TOKEN,
-    model: '@cf/meta/llama-3.2-11b-vision-instruct',
-  },
   {
     name: 'Groq',
     enabled: !!process.env.GROQ_API_KEY,
     url: 'https://api.groq.com/openai/v1/chat/completions',
     apiKey: process.env.GROQ_API_KEY,
     model: process.env.GROQ_VISION_MODEL || 'meta-llama/llama-4-scout-17b-16e-instruct',
+  },
+  {
+    name: 'Cloudflare Workers AI',
+    enabled: !!(process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_AI_TOKEN),
+    url: `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions`,
+    apiKey: process.env.CLOUDFLARE_AI_TOKEN,
+    model: '@cf/meta/llama-3.2-11b-vision-instruct',
   },
 ];
 
@@ -68,34 +73,44 @@ async function describeImage(imageBuffer, mime, locale, topic) {
 
   let lastErr;
   for (const provider of providers) {
-    try {
-      const res = await fetch(provider.url, {
-        method: 'POST',
-        headers: { 'Authorization': `Bearer ${provider.apiKey}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: provider.model,
-          max_tokens: 80,
-          temperature: 0.4,
-          messages: [{
-            role: 'user',
-            content: [
-              { type: 'text', text: prompt },
-              { type: 'image_url', image_url: { url: dataUrl } },
-            ],
-          }],
-        }),
-        signal: AbortSignal.timeout(60000),
-      });
-      if (!res.ok) throw new Error(`${provider.name} HTTP ${res.status}: ${(await res.text()).slice(0, 120)}`);
-      const json = await res.json();
-      let alt = json.choices?.[0]?.message?.content?.trim();
-      if (!alt) throw new Error(`${provider.name} sem conteúdo`);
-      alt = alt.replace(/^["']|["']$/g, '').replace(/\s+/g, ' ').trim();
-      if (alt.length > 160) alt = alt.slice(0, 157).trimEnd() + '…';
-      return alt;
-    } catch (e) {
-      lastErr = e;
-      console.warn(`   ⚠️ ${e.message}`);
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const res = await fetch(provider.url, {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${provider.apiKey}`, 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            model: provider.model,
+            max_tokens: 80,
+            temperature: 0.4,
+            messages: [{
+              role: 'user',
+              content: [
+                { type: 'text', text: prompt },
+                { type: 'image_url', image_url: { url: dataUrl } },
+              ],
+            }],
+          }),
+          signal: AbortSignal.timeout(60000),
+        });
+        // Rate limit / indisponível → espera e tenta de novo
+        if (res.status === 429 || res.status === 503) {
+          const wait = 20000 * (attempt + 1);
+          console.warn(`   ⏳ ${provider.name} ${res.status} — aguardando ${wait / 1000}s`);
+          await sleep(wait);
+          continue;
+        }
+        if (!res.ok) throw new Error(`${provider.name} HTTP ${res.status}: ${(await res.text()).slice(0, 120)}`);
+        const json = await res.json();
+        let alt = json.choices?.[0]?.message?.content?.trim();
+        if (!alt) throw new Error(`${provider.name} sem conteúdo`);
+        alt = alt.replace(/^["']|["']$/g, '').replace(/\s+/g, ' ').trim();
+        if (alt.length > 160) alt = alt.slice(0, 157).trimEnd() + '…';
+        return alt;
+      } catch (e) {
+        lastErr = e;
+        console.warn(`   ⚠️ ${e.message}`);
+        break; // erro não-429 → próximo provedor
+      }
     }
   }
   throw lastErr;
@@ -123,10 +138,11 @@ async function run() {
 
       const locale = detectLocale(data, file);
       const topic = data[col.key] || data.title || '';
-      const mime = data.image.endsWith('.png') ? 'image/png' : data.image.endsWith('.jpg') || data.image.endsWith('.jpeg') ? 'image/jpeg' : 'image/webp';
 
       try {
-        const alt = await describeImage(readFileSync(imgPath), mime, locale, topic);
+        // Converte p/ JPEG 768px: compatível com toda API de visão e reduz o consumo de tokens
+        const jpeg = await sharp(readFileSync(imgPath)).resize(768, null, { withoutEnlargement: true }).jpeg({ quality: 82 }).toBuffer();
+        const alt = await describeImage(jpeg, 'image/jpeg', locale, topic);
         // Inserção cirúrgica: adiciona a linha imageAlt logo após a linha image,
         // preservando todo o resto do frontmatter (sem re-serializar).
         const yamlAlt = `imageAlt: "${alt.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`;
@@ -140,6 +156,7 @@ async function run() {
         writeFileSync(full, out, 'utf-8');
         processed++;
         console.log(`✅ [${locale}] ${file}\n   → ${alt}`);
+        await sleep(THROTTLE_MS);
       } catch (e) {
         errors++;
         console.warn(`❌ ${file}: ${e.message}`);
