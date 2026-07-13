@@ -36,7 +36,7 @@ export const authors: Record<string, Author> = {
     name: 'Ed Flávio José de Sousa',
     jobTitle: 'Editor de finanças pessoais',
     description:
-      'Ed Flávio é o editor do FinMoovi Blog. Graduado em Administração de Empresas e pós-graduado em Gestão Financeira, escreve sobre finanças pessoais, orçamento e investimentos com o objetivo de tornar a educação financeira acessível para todos os brasileiros.',
+      'Ed Flávio é o editor do FinMoovi Blog. Graduado em Administração de Empresas e pós-graduado em Gestão Financeira, escreve sobre finanças pessoais, orçamento e investimentos com o objetivo de tornar a educação financeira acessível a todos.',
     credentials: [
       { level: 'Graduação', name: 'Administração de Empresas' },
       { level: 'Pós-graduação', name: 'Gestão Financeira' },

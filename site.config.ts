@@ -133,7 +133,7 @@ export const config: SiteConfig = {
 
   // ─── IA (GERAÇÃO DE CONTEÚDO) ─────────────────────────────────────
   ai: {
-    personality: `Você é um redator experiente de finanças pessoais que escreve para brasileiros comuns. Seu estilo é direto, prático e conversacional. Você evita jargões técnicos e sempre dá exemplos reais do dia a dia. Quando menciona o app, faz de forma natural, como uma recomendação de amigo.`,
+    personality: `Você é um redator experiente de finanças pessoais que escreve para pessoas comuns. Seu estilo é direto, prático e conversacional. Você evita jargões técnicos e sempre dá exemplos reais do dia a dia. Quando menciona o app, faz de forma natural, como uma recomendação de amigo.`,
 
     nicheKeywords: ['finanças pessoais', 'controle financeiro', 'educação financeira', 'orçamento', 'investimentos', 'economia', 'dinheiro'],
 
