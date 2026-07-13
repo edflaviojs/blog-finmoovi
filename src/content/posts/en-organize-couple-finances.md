@@ -39,7 +39,7 @@ Challenges often arise when managing couple finances. For example, one partner m
 Another common challenge is lack of communication about finances. It's important that you have regular conversations about how you're feeling about [money](/en/posts/en-save-on-your-market-bill) and if there's anything that needs to change.
 
 ## Start Today
-Now that you know how to organize couple finances, it's time to start working toward a more secure and prosperous financial future. Remember that communication and planning are key to success. Start talking to your partner about your financial goals and create a plan to achieve them.
+Now that you know how to organize couple finances, it's time to start working toward a more secure and prosperous financial future. Remember that communication and [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) are key to success. Start talking to your partner about your financial goals and create a plan to achieve them.
 
 ---
 **Ready to organize your finances? [Try [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-saving-on-your-energy-bill) is going.**

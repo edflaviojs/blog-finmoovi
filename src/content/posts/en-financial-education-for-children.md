@@ -53,4 +53,4 @@ You don't need to be a finance expert to teach children about [money](/en/posts/
 
 ---
 
-**Want to put this into practice? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) and visual reports.**

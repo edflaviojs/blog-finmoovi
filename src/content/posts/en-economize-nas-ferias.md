@@ -36,7 +36,7 @@ Here are some practical tips to save [money](/en/posts/en-creating-an-emergency-
 
 
 
-## [Budget](/en/posts/en-how-to-create-personal-budget) and Expense Control
+## [Budget](/en/posts/en-how-to-create-personal-budget) and [Expense Control](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos)
 A well-defined [budget](/en/posts/en-how-to-create-personal-budget) and [expense control](/en/posts/en-metodo-50-30-20-para-orcamento) are crucial to saving [money](/en/posts/en-financial-education-for-children) on vacation. It's essential to have a clear idea of how much you can spend and where you can cut unnecessary expenses. The [Banco Central do Brasil](https://www.bcb.gov.br) offers tips and tools to help manage your [budget](/en/posts/en-how-to-create-personal-budget) and control expenses.
 
 ## [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and Savings

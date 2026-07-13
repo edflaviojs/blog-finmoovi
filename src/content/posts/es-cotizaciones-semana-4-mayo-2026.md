@@ -16,7 +16,7 @@ seo:
   keywords: ["cotización dólar hoy", "cotización euro", "resumen mercado financiero", "selic"]
 ---
 
-## Resumen Semanal del Mercado Financiero Brasileño
+## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-3-junio-2026) Brasileño
 
 La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significativos en el mercado financiero brasileño, con destaque para las variaciones en las tasas de [cambio](/es/glossario/es-cambio) y el mantenimiento de la [tasa Selic](/es/glossario/es-selic). Vamos a profundizar en los detalles y entender cómo estos eventos afectan a los inversores individuales.
 
@@ -30,7 +30,7 @@ La tasa Selic, actualmente en 12,25% anual, fue mantenida por el Comité de Pol�
 
 ## Consejo Práctico para el Inversor
 
-Un consejo valioso para los inversores individuales es diversificar sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), incluyendo activos en diferentes monedas. Con el dólar y el euro estables, puede ser un buen momento para considerar [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) internacionales, como [acciones](/es/glossario/es-acoes) o fondos de inversión en dólares o euros. Herramientas como [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) pueden ser muy útiles para seguir y gestionar inversiones en múltiples monedas, ofreciendo una visión clara y actualizada de su cartera.
+Un consejo valioso para los inversores individuales es diversificar sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), incluyendo activos en diferentes monedas. Con el [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) y el euro estables, puede ser un buen momento para considerar [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) internacionales, como [acciones](/es/glossario/es-acoes) o fondos de inversión en dólares o euros. Herramientas como [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) pueden ser muy útiles para seguir y gestionar inversiones en múltiples monedas, ofreciendo una visión clara y actualizada de su cartera.
 
 ## Qué Esperar para la Próxima Semana
 

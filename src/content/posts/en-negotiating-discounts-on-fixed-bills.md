@@ -53,4 +53,4 @@ Now that you know how to negotiate discounts on fixed bills, it's time to start.
 
 
 ---
-**Want to put this into practice? [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and see how easy it is to control your finances with automatic categorization and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) and visual reports.**

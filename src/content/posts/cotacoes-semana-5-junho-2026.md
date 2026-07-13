@@ -50,7 +50,7 @@ Uma dica prática é utilizar [aplicativos financeiros](/posts/voce-tambem-esque
 
 Para a próxima semana, os investidores devem ficar atentos às decisões do Comitê de Política Monetária (COPOM) sobre a taxa Selic e às notícias econômicas globais que possam impactar as taxas de câmbio. Além disso, é importante acompanhar os relatórios de empresas e setores que possam influenciar o desempenho do mercado de ações.
 
-Com uma abordagem informada e uma ferramenta de gestão de investimentos confiável, como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos), você estará melhor preparado para navegar pelas complexidades do mercado financeiro e tomar decisões que alinham com seus objetivos financeiros. Mantenha-se informado, diversifique sua carteira e esteja pronto para aproveitar as oportunidades que o mercado oferece.
+Com uma abordagem informada e uma ferramenta de gestão de investimentos confiável, como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos), você estará melhor preparado para navegar pelas complexidades do [mercado financeiro](/posts/cotacoes-semana-2-julho-2026) e tomar decisões que alinham com seus objetivos financeiros. Mantenha-se informado, diversifique sua carteira e esteja pronto para aproveitar as oportunidades que o mercado oferece.
 
 
 ---

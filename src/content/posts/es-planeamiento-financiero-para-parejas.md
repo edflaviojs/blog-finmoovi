@@ -29,7 +29,7 @@ Muchas parejas enfrentan el desafío de lidiar con deudas, sea en tarjetas de [c
 
 
 
-## [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y Ahorro
+## [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y [Ahorro](/es/posts/es-regla-de-los-30-dias-para-compras)
 Además de gestionar gastos y deudas, las parejas también deben considerar [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y ahorro. Esto puede incluir la creación de una reserva de emergencia, [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en acciones o fondos de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500), o incluso la compra de un inmueble. **Consejo práctico:** considera invertir en un [Tesouro Direto](https://www.tesourodireto.com.br), que ofrece una forma segura y rentable de invertir tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado). Además, es importante estar al tanto de las tendencias económicas y financieras actuales, lo que puede hacerse siguiendo sitios como el del [Banco Central del Brasil](https://www.bcb.gov.br) o el [IBGE](https://www.ibge.gov.br).
 
 ## [Educación Financiera](/es/glossario/es-educacao-financeira)

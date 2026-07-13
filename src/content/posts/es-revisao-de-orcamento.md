@@ -31,7 +31,7 @@ Por ejemplo, imagina que ganas $5.000 por mes y gastas $2.000 en alquiler, $1.00
 
 
 ## Cómo revisar el [presupuesto](/es/posts/es-como-crear-presupuesto-personal)
-Revisar el presupuesto es un proceso simple, pero requiere atención y honestidad. Aquí están algunos pasos para seguir:
+Revisar el [presupuesto](/es/posts/es-organizar-finanzas-pareja) es un proceso simple, pero requiere atención y honestidad. Aquí están algunos pasos para seguir:
 
 ### 1. Verifica tus gastos
 Comienza verificando tus gastos de los últimos 6 meses. Esto incluye todos los gastos, desde cuentas de servicios hasta compras de supermercado. Puedes usar una aplicación como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) para ayudarte a rastrear tus gastos e identificar áreas donde puedes cortar.
@@ -49,7 +49,7 @@ Verifica tus ingresos de los últimos 6 meses y ajústalos de acuerdo con tus ne
 ### 4. Ajusta tus inversiones
 Si tienes inversiones, como [acciones](/es/glossario/es-acoes) o fondos de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500), verifica si aún están alineadas con tus objetivos y ajústalas de acuerdo. Puedes querer considerar invertir en [Tesouro Direto](https://www.tesourodireto.com.br) o otras inversiones de bajo riesgo.
 
-## [Consejos](/es/posts/es-7-errores-financieros-principiante) para mantener tu presupuesto en orden
+## [Consejos](/es/posts/es-7-errores-financieros-principiante) para mantener tu [presupuesto](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) en orden
 Aquí están algunos consejos para mantener tu presupuesto en orden:
 *   Prioriza tus necesidades sobre tus deseos
 *   Crea un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) para cubrir gastos inesperados

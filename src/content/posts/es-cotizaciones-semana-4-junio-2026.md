@@ -26,9 +26,9 @@ La semana del 15 de junio al 22 de junio de 2026 ha sido de gran importancia par
 
 ## Tendencia del [Dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y Euro
 
-En cuanto a las tasas de cambio, el dólar estadounidense (USD) se mantuvo en una tendencia de estabilidad frente al real brasileño (BRL), cerrando la semana en aproximadamente R$ 5.16. Por otro lado, el euro (EUR) experimentó una ligera apreciación, alcanzando los R$ 5.91. Estos movimientos reflejan la dinámica global de los mercados financieros y las expectativas económicas tanto en Brasil como en el exterior.
+En cuanto a las tasas de cambio, el [dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) estadounidense (USD) se mantuvo en una tendencia de estabilidad frente al real brasileño (BRL), cerrando la semana en aproximadamente R$ 5.16. Por otro lado, el euro (EUR) experimentó una ligera apreciación, alcanzando los R$ 5.91. Estos movimientos reflejan la dinámica global de los mercados financieros y las expectativas económicas tanto en Brasil como en el exterior.
 
-La estabilidad del dólar puede ser vista como una señal positiva para la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ya que puede ayudar a controlar la [inflación](/es/glossario/es-inflacao) y mantener la competitividad de las exportaciones. Sin embargo, es importante tener en cuenta que las tasas de cambio pueden ser volátiles y están sujetas a cambios repentinos debido a factores políticos y económicos.
+La estabilidad del [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) puede ser vista como una señal positiva para la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ya que puede ayudar a controlar la [inflación](/es/glossario/es-inflacao) y mantener la competitividad de las exportaciones. Sin embargo, es importante tener en cuenta que las tasas de cambio pueden ser volátiles y están sujetas a cambios repentinos debido a factores políticos y económicos.
 
 ## Comentario sobre la [Selic](/es/glossario/es-selic) e Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 

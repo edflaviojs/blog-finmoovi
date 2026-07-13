@@ -54,4 +54,4 @@ Não espere mais para começar a controlar seus gastos no cartão de crédito. C
 
 
 ---
-**Quer sair da teoria? [Baixe o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://finmoovi.com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**
+**Quer sair da teoria? [Baixe o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) e comece a registrar seus gastos hoje. Sem cartão, sem compromisso.**

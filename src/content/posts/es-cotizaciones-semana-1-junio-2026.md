@@ -16,13 +16,13 @@ seo:
   keywords: ["cotización dólar hoy", "cotización euro", "resumen mercado financiero", "selic"]
 ---
 
-## Resumen Semanal del Mercado Financiero Brasileño
+## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-3-junio-2026) Brasileño
 
 La semana del 28 de mayo al 4 de junio de 2026 trajo cambios significativos en el mercado financiero brasileño. En este resumen, exploraremos las tendencias del [dólar](/es/posts/es-cotizaciones-semana-4-mayo-2026) y euro, el impacto de la [Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) y ofreceremos [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
 
 ## [Dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y Euro: Tendencia de la Semana
 
-El dólar estadounidense cerró la semana en R$ 5.03, mostrando una leve estabilidad en comparación con las semanas anteriores. Por otro lado, el euro se mantuvo en R$ 5.84, reflejando la [volatilidad](/es/glossario/es-volatilidade) del mercado internacional. Esta estabilidad relativa puede ser un alivio para los importadores y viajeros, pero también puede influir en las decisiones de [inversión](/es/posts/es-tesouro-direto-para-iniciantes) de aquellos que buscan oportunidades en monedas extranjeras. Es importante destacar que la cotización de estas monedas puede variar rápidamente, por lo que estar al tanto de las últimas noticias y tendencias es crucial.
+El [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) estadounidense cerró la semana en R$ 5.03, mostrando una leve estabilidad en comparación con las semanas anteriores. Por otro lado, el euro se mantuvo en R$ 5.84, reflejando la [volatilidad](/es/glossario/es-volatilidade) del mercado internacional. Esta estabilidad relativa puede ser un alivio para los importadores y viajeros, pero también puede influir en las decisiones de [inversión](/es/posts/es-tesouro-direto-para-iniciantes) de aquellos que buscan oportunidades en monedas extranjeras. Es importante destacar que la cotización de estas monedas puede variar rápidamente, por lo que estar al tanto de las últimas noticias y tendencias es crucial.
 
 ## La Selic y su Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 

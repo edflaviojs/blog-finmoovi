@@ -32,7 +32,7 @@ Por exemplo, se você está planejando uma viagem aos EUA, pode ser uma boa idei
 
 ## Taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) e Impacto nos Investimentos
 
-A taxa Selic, que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um tema importante para os investidores. A taxa Selic atual pode influenciar diretamente os juros dos investimentos, como CDBs e LCI/LCs. Se a taxa Selic subir, os juros dos investimentos também podem subir, o que pode ser bom para os investidores.
+A taxa [Selic](/en/posts/en-quotes-semana-1-june-2026), que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um tema importante para os investidores. A taxa [Selic](/en/posts/en-quotes-semana-2-july-2026) atual pode influenciar diretamente os juros dos investimentos, como CDBs e LCI/LCs. Se a taxa Selic subir, os juros dos investimentos também podem subir, o que pode ser bom para os investidores.
 
 No entanto, é importante lembrar que a taxa Selic também pode afetar a inflação e a economia como um todo. Portanto, é fundamental manter um olho nas notícias econômicas e ajustar seus investimentos de acordo.
 

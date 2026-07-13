@@ -48,7 +48,7 @@ Além disso, é fundamental manter uma [reserva de emergência](/glossario/reser
 
 ## O que Esperar para a Próxima Semana
 
-Para a próxima semana, é importante estar atento às notícias econômicas e políticas que possam influenciar o mercado financeiro. A continuação da estabilidade no mercado de câmbio pode ser um cenário provável, mas é sempre bom estar preparado para possíveis mudanças.
+Para a próxima semana, é importante estar atento às notícias econômicas e políticas que possam influenciar o [mercado financeiro](/posts/cotacoes-semana-2-julho-2026). A continuação da estabilidade no mercado de câmbio pode ser um cenário provável, mas é sempre bom estar preparado para possíveis mudanças.
 
 Além disso, os investidores devem continuar a monitorar as decisões do COPOM e como elas podem afetar os juros e os investimentos. Com a ajuda de ferramentas como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), é possível manter um acompanhamento detalhado dos investimentos e tomar decisões informadas para alcançar os objetivos financeiros.
 

@@ -82,4 +82,4 @@ Além disso, é importante lembrar que a [educação financeira](/glossario/educ
 
 E se você está procurando por uma forma de investir seu [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito), recomendo que você visite o site do [Tesouro Direto](https://www.tesourodireto.com.br) para obter informações sobre como investir em [títulos públicos](/posts/tesouro-direto-para-iniciantes).
 
-Lembre-se de que a gestão financeira é um processo contínuo, e é importante estar sempre informado e atualizado sobre as melhores práticas para gerenciar seu [dinheiro](/posts/diferenca-entre-investir-e-poupar). Com a ajuda do FinMoovi e de fontes confiáveis de informação, você pode ter uma vida financeira saudável e alcançar seus objetivos financeiros.
+Lembre-se de que a gestão financeira é um processo contínuo, e é importante estar sempre informado e atualizado sobre as melhores práticas para gerenciar seu [dinheiro](/posts/diferenca-entre-investir-e-poupar). Com a ajuda do [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) e de fontes confiáveis de informação, você pode ter uma vida financeira saudável e alcançar seus objetivos financeiros.

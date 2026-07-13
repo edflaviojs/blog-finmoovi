@@ -29,7 +29,7 @@ O [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), por outr
 Para entender melhor os rendimentos, vamos considerar alguns exemplos. Suponha que você tenha R$1.000 para investir e esteja decidindo entre um CDB pré-fixado com 10% ao ano e um [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) com a taxa [Selic](/posts/cotacoes-semana-1-julho-2026) atual (suponha 6% ao ano).
 
 - **CDB:** Com o CDB pré-fixado a 10% ao ano, após 1 ano, você teria aproximadamente R$1.100 (R$1.000 de capital + R$100 de juros).
-- **Tesouro Selic:** Com o Tesouro Selic a 6% ao ano, após 1 ano, você teria aproximadamente R$1.060 (R$1.000 de capital + R$60 de juros).
+- **Tesouro [Selic](/posts/cotacoes-semana-1-junho-2026):** Com o Tesouro [Selic](/posts/cotacoes-semana-2-julho-2026) a 6% ao ano, após 1 ano, você teria aproximadamente R$1.060 (R$1.000 de capital + R$60 de juros).
 
 ![Rendimentos e Simulações](/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026-2.webp)
 

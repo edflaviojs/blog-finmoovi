@@ -44,7 +44,7 @@ Se você é um investidor individual, é importante diversificar seus investimen
 
 Para a próxima semana, é difícil prever com certeza o que acontecerá no mercado financeiro. No entanto, é importante estar atento às notícias econômicas e políticas, pois elas podem afetar as taxas de câmbio e as taxas de juros. Além disso, é importante revisar regularmente seus investimentos e ajustar sua estratégia de acordo com as mudanças no mercado. Com o [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), você pode facilmente acompanhar suas finanças e tomar decisões informadas para alcançar seus objetivos financeiros.
 
-Em resumo, essa semana foi marcada por uma leve alta do dólar e uma estabilidade na taxa Selic. É importante estar atento às taxas de câmbio e às taxas de juros para tomar decisões informadas sobre seus investimentos. Com a ajuda do [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), você pode facilmente acompanhar seus investimentos e alcançar seus objetivos financeiros. Até a próxima semana!
+Em resumo, essa semana foi marcada por uma leve alta do dólar e uma estabilidade na taxa [Selic](/en/posts/en-quotes-semana-2-july-2026). É importante estar atento às taxas de câmbio e às taxas de juros para tomar decisões informadas sobre seus investimentos. Com a ajuda do [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), você pode facilmente acompanhar seus investimentos e alcançar seus objetivos financeiros. Até a próxima semana!
 
 
 ---

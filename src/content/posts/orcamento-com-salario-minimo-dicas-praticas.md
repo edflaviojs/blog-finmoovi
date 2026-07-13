@@ -43,7 +43,7 @@ Com base nessa divisão, para um salário de R$ 2.400,00:
 É importante priorizar necessidades sobre desejos. **Dica prática:** Faça uma lista de tudo o que você gasta em um mês e identifique onde pode cortar despesas supérfluas. Por exemplo, se você gasta R$ 100,00 por semana em lanches e refeições fora, tente reduzir para R$ 50,00, economizando R$ 200,00 por mês.
 
 ## Gerenciando Despesas Variáveis
-Despesas variáveis, como transporte e alimentação fora, podem ser difíceis de controlar. Aqui estão algumas dicas para gerenciar essas despesas:
+Despesas variáveis, como transporte e alimentação fora, podem ser difíceis de controlar. Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para gerenciar essas despesas:
 1. Plano de alimentação: Cozinhe em casa e leve marmita para o trabalho.
 2. Transporte: Considere carpooling, usar bicicleta ou caminhar para curtas distâncias.
 3. Entretenimento: Encontre atividades gratuitas ou de baixo custo, como parques, bibliotecas ou noites de jogos com amigos.

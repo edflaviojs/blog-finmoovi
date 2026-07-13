@@ -16,7 +16,7 @@ seo:
   keywords: ["cotización dólar hoy", "cotización euro", "resumen mercado financiero", "selic"]
 ---
 
-## Resumen Semanal del Mercado Financiero Brasileño
+## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-3-junio-2026) Brasileño
 
 La semana del 29 de junio al 6 de julio de 2026 ha sido de gran importancia para el mercado financiero brasileño, con movimientos significativos en las tasas de [cambio](/es/glossario/es-cambio) y decisiones clave por parte del Banco Central. En este resumen, exploraremos los detalles más relevantes que afectan a los inversores individuales y a la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) en general.
 
@@ -26,7 +26,7 @@ La semana del 29 de junio al 6 de julio de 2026 ha sido de gran importancia para
 
 ## Tendencia del [Dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) y Euro
 
-En lo que respecta a las tasas de cambio, el dólar estadounidense (USD) se mantuvo estable en relación con el real brasileño (BRL), cerrando la semana en aproximadamente R$ 5.18. Por otro lado, el euro (EUR) también mostró una tendencia estable, cotizando alrededor de R$ 5.92. Estas tasas de cambio son cruciales para los brasileños que realizan compras en línea en el exterior, viajan al extranjero o tienen [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en monedas extranjeras. Es importante destacar que, para aquellos que desean seguir de cerca sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en múltiples monedas, herramientas como el app [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) pueden ser muy útiles, ofreciendo una visión clara y actualizada de sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en diferentes divisas.
+En lo que respecta a las tasas de cambio, el [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) estadounidense (USD) se mantuvo estable en relación con el real brasileño (BRL), cerrando la semana en aproximadamente R$ 5.18. Por otro lado, el euro (EUR) también mostró una tendencia estable, cotizando alrededor de R$ 5.92. Estas tasas de cambio son cruciales para los brasileños que realizan compras en línea en el exterior, viajan al extranjero o tienen [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en monedas extranjeras. Es importante destacar que, para aquellos que desean seguir de cerca sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en múltiples monedas, herramientas como el app [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) pueden ser muy útiles, ofreciendo una visión clara y actualizada de sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en diferentes divisas.
 
 ## La [Selic](/es/glossario/es-selic) y su Impacto en las Inversiones
 

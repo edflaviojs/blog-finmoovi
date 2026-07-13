@@ -20,9 +20,9 @@ seo:
 
 The past week was marked by relative stability in the [foreign exchange](/en/glossario/en-cambio) market, with the commercial [dollar](/en/posts/en-quotes-semana-1-july-2026) closing at R$ 5.03 and the euro at R$ 5.84. Let's analyze how these numbers affect our finances and [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
-## Dollar and Euro: Weekly Trend
+## [Dollar](/en/posts/en-quotes-semana-2-july-2026) and Euro: Weekly Trend
 
-The dollar showed a slight increase throughout the week, but nothing that caused major impacts on [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). The euro maintained a stability trend, which is good for those with [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in foreign currency. With the euro at R$ 5.84, it's a good time to evaluate whether to diversify your [investment](/en/posts/en-tesouro-direto-para-iniciantes) portfolio with euro-denominated assets. Tools like [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) can help track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in multiple currencies, making it easier to manage your wealth.
+The [dollar](/en/posts/en-quotes-semana-3-june-2026) showed a slight increase throughout the week, but nothing that caused major impacts on [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). The euro maintained a stability trend, which is good for those with [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in foreign currency. With the euro at R$ 5.84, it's a good time to evaluate whether to diversify your [investment](/en/posts/en-tesouro-direto-para-iniciantes) portfolio with euro-denominated assets. Tools like [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) can help track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in multiple currencies, making it easier to manage your wealth.
 
 ## [Selic](/en/posts/en-quotes-week-4-may-2026) and Impact on Investments
 

@@ -16,9 +16,9 @@ seo:
   keywords: ["dollar quote today", "euro quote", "financial market summary", "selic"]
 ---
 
-## Weekly Summary of the Brazilian Financial Market
+## Weekly Summary of the Brazilian [Financial Market](/en/posts/en-quotes-semana-2-july-2026)
 
-The week of May 20-26, 2026 was marked by significant movements in the Brazilian financial market, with highlights in exchange rate variations and the maintenance of the [Selic rate](/en/glossario/en-selic). Let's dive into the details and understand how these events affect individual investors.
+The week of May 20-26, 2026 was marked by significant movements in the Brazilian [financial market](/en/posts/en-quotes-semana-3-june-2026), with highlights in exchange rate variations and the maintenance of the [Selic rate](/en/glossario/en-selic). Let's dive into the details and understand how these events affect individual investors.
 
 ## [Dollar](/en/posts/en-quotes-semana-1-june-2026) and Euro: Weekly Trend
 

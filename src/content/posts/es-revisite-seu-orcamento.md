@@ -25,7 +25,7 @@ Llegamos a la mitad del año, un momento perfecto para reflexionar sobre nuestra
 Revisar el [presupuesto](/es/posts/es-organizar-finanzas-pareja) regularmente es fundamental para mantener el control sobre las [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). Esto se debe a que las circunstancias financieras cambian con el tiempo. Por ejemplo, puedes haber recibido un aumento salarial, cambiado de trabajo, te has casado, tienes hijos o has sufrido una reducción de ingresos. Estos cambios impactan directamente tu [presupuesto](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) y, si no se consideran, pueden llevar a problemas financieros, como deudas o falta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado).
 
 ### Ejemplo Práctico
-Vamos a considerar el ejemplo de João, un ingeniero de 35 años que gana R$ 8.000 por mes. Al inicio del año, creó un presupuesto que asignaba el 30% de sus ingresos a gastos de vivienda, el 20% a transporte, el 15% a alimentación, el 10% a ocio y el 25% a [ahorro](/es/posts/es-cashback-inteligente) y deudas. Sin embargo, recientemente, João recibió un aumento del 15% en su salario, lo que aumentó sus ingresos a R$ 9.200 por mes. Con este [cambio](/es/glossario/es-cambio), él necesita revisar su presupuesto para decidir cómo asignar el aumento de ingresos de manera eficaz.
+Vamos a considerar el ejemplo de João, un ingeniero de 35 años que gana R$ 8.000 por mes. Al inicio del año, creó un [presupuesto](/es/posts/es-reducir-gastos-fijos-mensuales) que asignaba el 30% de sus ingresos a gastos de vivienda, el 20% a transporte, el 15% a alimentación, el 10% a ocio y el 25% a [ahorro](/es/posts/es-cashback-inteligente) y deudas. Sin embargo, recientemente, João recibió un aumento del 15% en su salario, lo que aumentó sus ingresos a R$ 9.200 por mes. Con este [cambio](/es/glossario/es-cambio), él necesita revisar su presupuesto para decidir cómo asignar el aumento de ingresos de manera eficaz.
 
 ![Por Qué Revisar el Presupuesto?](/images/posts/revisite-seu-orcamento-2.webp)
 
@@ -49,7 +49,7 @@ Existen varias herramientas disponibles para ayudar en la gestión del presupues
 ## Estrategias para el Éxito
 Además de revisar regularmente el presupuesto, existen algunas estrategias que pueden ayudar a mantener las finanzas en orden:
 
-- **Ahorro de emergencia**: Mantén una reserva de emergencia que cubra al menos 3 a 6 meses de gastos.
+- **[Ahorro](/es/posts/es-regla-de-los-30-dias-para-compras) de emergencia**: Mantén una reserva de emergencia que cubra al menos 3 a 6 meses de gastos.
 - **[Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)**: Considera invertir parte de tus ingresos en opciones como [Tesouro Direto](https://www.tesourodireto.com.br/), que ofrece una forma segura de aumentar tu riqueza con el tiempo.
 - **[Educación financiera](/es/glossario/es-educacao-financeira)**: Continúa aprendiendo sobre [finanzas personales](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) y [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Sitios como [Investopedia](https://www.investopedia.com/) ofrecen una amplia gama de artículos y recursos educativos.
 

@@ -24,9 +24,9 @@ La semana que pasó fue de gran importancia para el mercado financiero brasileñ
 
 
 
-## Tendencias del Dólar y Euro
+## Tendencias del [Dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) y Euro
 
-La semana del 22 de junio al 29 de junio de 2026 mostró una relativa estabilidad en las tasas de cambio, con el dólar estadounidense (USD) cerrando en R$ 5.17 y el euro (EUR) en R$ 5.89. Aunque hubo fluctuaciones diarias, la tendencia general fue de leve apreciación del real frente a estas monedas. Esto se debe en parte a la confianza de los inversores en la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña y a la expectativa de que el Banco Central mantendrá una política monetaria prudente.
+La semana del 22 de junio al 29 de junio de 2026 mostró una relativa estabilidad en las tasas de cambio, con el [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) estadounidense (USD) cerrando en R$ 5.17 y el euro (EUR) en R$ 5.89. Aunque hubo fluctuaciones diarias, la tendencia general fue de leve apreciación del real frente a estas monedas. Esto se debe en parte a la confianza de los inversores en la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña y a la expectativa de que el Banco Central mantendrá una política monetaria prudente.
 
 ## La Selic y su Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 

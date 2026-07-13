@@ -42,7 +42,7 @@ A common way to divide expenses is to consider the proportion of salaries. In th
 
 Based on this, they can calculate each person's share of each expense category.
 
-## Organizing the Budget
+## Organizing the [Budget](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar)
 Here are the steps to organize the [budget](/en/posts/en-how-to-create-personal-budget):
 1. **List all expenses**: Include all fixed and variable expenses.
 2. **Define the proportion**: Calculate the proportion of salaries to divide expenses.
