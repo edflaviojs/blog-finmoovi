@@ -8,6 +8,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
+import { analyzeContent } from '../lib/fact-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -240,6 +241,15 @@ Responda neste formato:
     } else {
       throw new Error('Formato inválido da API.');
     }
+    // Fact-guard: limpa alucinação antes de salvar; bloqueia se mutilaria.
+    const fg = analyzeContent(content);
+    if (fg.blocked) {
+      console.log(`⛔ Fact-guard bloqueou (${fg.reason}). Não publica; regenera no próximo ciclo.`);
+      return;
+    }
+    if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
+    content = fg.cleaned;
+
     const allKeywords = [...new Set([...keywords, ...topic.keywords])];
     const slugPt = createSlug(title);
 
@@ -262,12 +272,11 @@ Responda neste formato:
     const esPost = await translatePost({ title, meta, keywords: allKeywords, content: processedContent }, 'es');
     savePost(`es-${slugPt}`, { ...esPost, keywords: esPost.keywords, content: esPost.content, imagePath, locale: 'es', today, translationKey: slugPt });
 
-    // Git
-    execSync('git add -A', { stdio: 'inherit' });
+    // Commit por whitelist (push fica com o workflow).
+    execSync('git add src/content/posts public/images/posts', { stdio: 'inherit' });
     const safeTitle = title.substring(0, 50).replace(/"/g, '\\"').replace(/`/g, '');
-    execSync(`git commit -m "feat: post sazonal — ${safeTitle}"`, { stdio: 'inherit' });
-    execSync('git push', { stdio: 'inherit' });
-    console.log('🎉 Post sazonal publicado!');
+    execSync(`git -c commit.gpgsign=false commit -m "feat: post sazonal — ${safeTitle}"`, { stdio: 'inherit' });
+    console.log('🎉 Post gerado com sucesso (push fica com o workflow).');
 
   } catch (error) {
     console.error('❌ Erro:', error.message);

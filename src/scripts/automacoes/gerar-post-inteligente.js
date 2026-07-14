@@ -7,6 +7,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
+import { analyzeContent } from '../lib/fact-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -319,11 +320,16 @@ tags:
 ${post.keywords.slice(0, 5).map(k => `  - "${k.trim()}"`).join('\n')}
 author: "${config.content.defaultAuthor}"
 publishedAt: ${date}
+readingTime: ${Math.ceil(post.content.split(/\s+/).length / 200)}
 locale: "${locale}"
 translationKey: "${translationKey}"
 featured: false
 draft: false
 translate: true
+seo:
+  metaTitle: "${post.title.replace(/"/g, '\\"')}"
+  metaDescription: "${post.description.replace(/"/g, '\\"')}"
+  keywords: ${JSON.stringify(post.keywords.slice(0, 7).map(k => k.trim()))}
 ---
 
 ${post.content}
@@ -359,6 +365,16 @@ async function main() {
   console.log('🇧🇷 Gerando post em português...');
   const response = await generatePost(topic);
   const post = parseResponse(response);
+
+  // Fact-guard: limpa alucinação antes de salvar; bloqueia se mutilaria.
+  const fg = analyzeContent(post.content);
+  if (fg.blocked) {
+    console.log(`⛔ Fact-guard bloqueou (${fg.reason}). Não publica; regenera no próximo ciclo.`);
+    return;
+  }
+  if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
+  post.content = fg.cleaned;
+
   const slug = slugify(post.title);
   console.log(`  Título: ${post.title}`);
 

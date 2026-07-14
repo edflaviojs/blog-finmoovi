@@ -7,6 +7,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateBlogPost, generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
+import { analyzeContent } from '../lib/fact-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -264,6 +265,15 @@ async function main() {
     if (!post.title || !post.content) {
       throw new Error('API retornou post vazio ou incompleto.');
     }
+
+    // Fact-guard: limpa alucinação antes de salvar; bloqueia se mutilaria.
+    const fg = analyzeContent(post.content);
+    if (fg.blocked) {
+      console.log(`⛔ Fact-guard bloqueou (${fg.reason}). Não publica; regenera no próximo ciclo.`);
+      return;
+    }
+    if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
+    post.content = fg.cleaned;
 
     console.log(`✅ Post PT gerado: ${post.title}`);
 

@@ -8,6 +8,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
+import { analyzeContent } from '../lib/fact-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -58,73 +59,73 @@ const FALLBACK_TOPICS = [
   {
     problem: 'Dificuldade em anotar todas as despesas do dia',
     feature: 'Smart Capture por voz',
-    scenario: 'Você está no ônibus, comprou um café, almoçou fora... e esqueceu de anotar. Com o ${config.app.name}, basta dizer "café 5 reais" ou "almoço 28 reais" e a despesa é registrada automaticamente por comando de voz.',
-    keywords: ['controle de gastos por voz', 'anotar despesas automaticamente', 'app financeiro por voz', 'smart capture ${config.app.name.toLowerCase()}']
+    scenario: `Você está no ônibus, comprou um café, almoçou fora... e esqueceu de anotar. Com o ${config.app.name}, basta dizer "café 5 reais" ou "almoço 28 reais" e a despesa é registrada automaticamente por comando de voz.`,
+    keywords: ['controle de gastos por voz', 'anotar despesas automaticamente', 'app financeiro por voz', `smart capture ${config.app.name.toLowerCase()}`]
   },
   {
     problem: 'Fazer lista de supermercado na mão e perder o controle do total',
     feature: 'Smart Capture para lista de compras',
-    scenario: 'Imagine estar no supermercado e simplesmente dizer: "1 kg de feijão 8,99" ou "leite integral 6,50". O ${config.app.name} vai criando sua lista com os valores em tempo real. Quando chegar no caixa, você sabe exatamente quanto vai pagar.',
+    scenario: `Imagine estar no supermercado e simplesmente dizer: "1 kg de feijão 8,99" ou "leite integral 6,50". O ${config.app.name} vai criando sua lista com os valores em tempo real. Quando chegar no caixa, você sabe exatamente quanto vai pagar.`,
     keywords: ['lista de supermercado automática', 'controle gastos supermercado', 'app lista compras', 'quanto gastei no mercado']
   },
   {
     problem: 'Receber comprovantes e notas em papel e nunca organizar',
     feature: 'Smart Capture por imagem (OCR)',
-    scenario: 'Tirou foto do cupom fiscal? O ${config.app.name} lê automaticamente o valor, a data e o estabelecimento. Sem digitar nada. Funciona com notas fiscais, recibos, extratos impressos e até comprovantes de Pix.',
+    scenario: `Tirou foto do cupom fiscal? O ${config.app.name} lê automaticamente o valor, a data e o estabelecimento. Sem digitar nada. Funciona com notas fiscais, recibos, extratos impressos e até comprovantes de Pix.`,
     keywords: ['escanear nota fiscal', 'app que lê cupom fiscal', 'ocr finanças pessoais', 'digitalizar recibos']
   },
   {
     problem: 'Não saber pra onde está indo o dinheiro todo mês',
     feature: 'Categorização automática e relatórios inteligentes',
-    scenario: 'O ${config.app.name} categoriza cada gasto automaticamente (alimentação, transporte, lazer, contas fixas). No fim do mês, você vê gráficos claros mostrando exatamente onde seu dinheiro foi — sem precisar classificar nada manualmente.',
+    scenario: `O ${config.app.name} categoriza cada gasto automaticamente (alimentação, transporte, lazer, contas fixas). No fim do mês, você vê gráficos claros mostrando exatamente onde seu dinheiro foi — sem precisar classificar nada manualmente.`,
     keywords: ['para onde vai meu dinheiro', 'categorizar gastos automaticamente', 'relatório financeiro pessoal', 'controle gastos mensais']
   },
   {
     problem: 'Ter dinheiro em várias moedas e não conseguir acompanhar',
     feature: 'Multi-moeda com conversão automática',
-    scenario: 'Trabalha com dólar, recebe em real, tem euros guardados? O ${config.app.name} consolida tudo em um único dashboard com conversão automática em tempo real. Você vê seu patrimônio total sem precisar fazer contas.',
+    scenario: `Trabalha com dólar, recebe em real, tem euros guardados? O ${config.app.name} consolida tudo em um único dashboard com conversão automática em tempo real. Você vê seu patrimônio total sem precisar fazer contas.`,
     keywords: ['controle financeiro multi moeda', 'app dólar real euro', 'converter moedas automaticamente', 'finanças pessoais multi currency']
   },
   {
     problem: 'Medo de colocar dados financeiros em apps online',
     feature: '100% offline e criptografia local',
-    scenario: 'O ${config.app.name} funciona 100% offline. Seus dados ficam no SEU dispositivo, com criptografia de ponta a ponta. Nenhum servidor externo tem acesso às suas informações financeiras. Privacidade total.',
+    scenario: `O ${config.app.name} funciona 100% offline. Seus dados ficam no SEU dispositivo, com criptografia de ponta a ponta. Nenhum servidor externo tem acesso às suas informações financeiras. Privacidade total.`,
     keywords: ['app financeiro offline', 'app financeiro seguro', 'privacidade dados financeiros', 'controle gastos sem internet']
   },
   {
     problem: 'Esquecer de pagar contas e levar multas',
     feature: 'Alertas inteligentes e lembretes',
-    scenario: 'O ${config.app.name} te avisa antes do vencimento: aluguel, cartão, internet, academia. Você define as datas uma vez e o app cuida do resto. Chega de multas por esquecimento.',
+    scenario: `O ${config.app.name} te avisa antes do vencimento: aluguel, cartão, internet, academia. Você define as datas uma vez e o app cuida do resto. Chega de multas por esquecimento.`,
     keywords: ['lembrete contas a pagar', 'app avisa vencimento', 'não esquecer boleto', 'alerta conta atrasada']
   },
   {
     problem: 'Ter metas financeiras mas nunca acompanhar o progresso',
     feature: 'Metas com acompanhamento visual',
-    scenario: 'Quer juntar para uma viagem? Comprar um carro? Montar reserva de emergência? O ${config.app.name} mostra o progresso visual de cada meta, quanto falta e quanto tempo vai levar no ritmo atual.',
+    scenario: `Quer juntar para uma viagem? Comprar um carro? Montar reserva de emergência? O ${config.app.name} mostra o progresso visual de cada meta, quanto falta e quanto tempo vai levar no ritmo atual.`,
     keywords: ['app meta financeira', 'acompanhar objetivo financeiro', 'juntar dinheiro para viagem', 'quanto falta para minha meta']
   },
   {
     problem: 'Digitar gastos é chato e você sempre desiste',
     feature: 'Lançamento por texto natural (digitação inteligente)',
-    scenario: 'Sem formulários complicados. No ${config.app.name} você digita como fala: "uber 23,50", "netflix mensal", "presente mãe 150". A IA entende o valor, a categoria e a data automaticamente.',
+    scenario: `Sem formulários complicados. No ${config.app.name} você digita como fala: "uber 23,50", "netflix mensal", "presente mãe 150". A IA entende o valor, a categoria e a data automaticamente.`,
     keywords: ['app financeiro fácil de usar', 'lançar gastos rápido', 'controle financeiro simples', 'app intuitivo finanças']
   },
   {
     problem: 'Querer entender seus padrões de gastos mas não ter tempo',
     feature: 'Insights automáticos com IA',
-    scenario: 'O ${config.app.name} analisa seus padrões e te mostra: "Você gastou 40% mais em delivery este mês", "Seu gasto com transporte caiu 15%", "Se manter esse ritmo, atinge sua meta em 3 meses".',
+    scenario: `O ${config.app.name} analisa seus padrões e te mostra: "Você gastou 40% mais em delivery este mês", "Seu gasto com transporte caiu 15%", "Se manter esse ritmo, atinge sua meta em 3 meses".`,
     keywords: ['insights financeiros automáticos', 'análise gastos inteligente', 'padrão de gastos', 'onde economizar dinheiro']
   },
   {
     problem: 'Usar planilha Excel mas esquecer de atualizar',
     feature: 'Substitui planilhas com zero esforço',
-    scenario: 'Planilhas exigem disciplina diária. O ${config.app.name} é tão fácil que você usa sem perceber — um comando de voz no café, uma foto do recibo, um texto rápido. Os relatórios se geram sozinhos.',
+    scenario: `Planilhas exigem disciplina diária. O ${config.app.name} é tão fácil que você usa sem perceber — um comando de voz no café, uma foto do recibo, um texto rápido. Os relatórios se geram sozinhos.`,
     keywords: ['substituir planilha financeira', 'app melhor que excel finanças', 'controle gastos sem planilha', 'alternativa planilha financeira']
   },
   {
     problem: 'Dividir despesas com parceiro/roommate e sempre ter confusão',
     feature: 'Contas compartilhadas e split',
-    scenario: 'Quem pagou a conta de luz? Quanto cada um deve do mercado? O ${config.app.name} permite marcar gastos compartilhados e calcular automaticamente quem deve o quê, sem discussão.',
+    scenario: `Quem pagou a conta de luz? Quanto cada um deve do mercado? O ${config.app.name} permite marcar gastos compartilhados e calcular automaticamente quem deve o quê, sem discussão.`,
     keywords: ['dividir despesas casal', 'app dividir contas', 'split gastos roommate', 'quem deve quanto']
   },
 ];
@@ -270,7 +271,7 @@ async function main() {
   const existingFiles = readdirSync(POSTS_DIR).filter(f => f.endsWith('.md') && !f.startsWith('en-') && !f.startsWith('es-'));
   for (const file of existingFiles) {
     const content = readFileSync(join(POSTS_DIR, file), 'utf-8');
-    if (content.includes(`publishedAt: ${today}`) && content.includes('"${config.app.name.toLowerCase()}"') && content.includes('"smart capture"')) {
+    if (content.includes(`publishedAt: ${today}`) && content.includes('category: "ferramentas"') && content.includes(`"${config.app.name.toLowerCase()}"`)) {
       console.log(`⚠️ Já existe um post de soluções gerado hoje (${file}). Abortando.`);
       return;
     }
@@ -333,7 +334,16 @@ Responda EXATAMENTE neste formato:
     const title = titleMatch[1].trim();
     const meta = metaMatch ? metaMatch[1].trim() : '';
     const keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : topic.keywords;
-    const content = contentMatch[1].trim();
+    const contentRaw = contentMatch[1].trim();
+
+    // Fact-guard: limpa alucinação antes de salvar; bloqueia se mutilaria.
+    const fg = analyzeContent(contentRaw);
+    if (fg.blocked) {
+      console.log(`⛔ Fact-guard bloqueou (${fg.reason}). Não publica; regenera no próximo ciclo.`);
+      return;
+    }
+    if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
+    const content = fg.cleaned;
 
     // Merge topic keywords with AI-generated ones
     const allKeywords = [...new Set([...keywords, ...topic.keywords, config.app.name.toLowerCase(), config.content.niche.pt])];
@@ -398,13 +408,12 @@ Responda EXATAMENTE neste formato:
     });
     console.log('✅ ES salvo');
 
-    // Git commit & push
+    // Commit por whitelist (push fica com o workflow).
     console.log('📦 Fazendo commit...');
-    execSync('git add -A', { stdio: 'inherit' });
+    execSync('git add src/content/posts public/images/posts', { stdio: 'inherit' });
     const safeTitle = title.substring(0, 50).replace(/"/g, '\\"').replace(/`/g, '');
-    execSync(`git commit -m "feat: post solução ${config.app.name} — ${safeTitle}"`, { stdio: 'inherit' });
-    execSync('git push', { stdio: 'inherit' });
-    console.log('🎉 Post publicado com sucesso!');
+    execSync(`git -c commit.gpgsign=false commit -m "feat: post solução ${config.app.name} — ${safeTitle}"`, { stdio: 'inherit' });
+    console.log('🎉 Post gerado com sucesso (push fica com o workflow).');
 
   } catch (error) {
     console.error('❌ Erro:', error.message);

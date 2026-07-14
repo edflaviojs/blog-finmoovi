@@ -1,6 +1,7 @@
 import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
+import { analyzeContent } from '../lib/fact-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -328,6 +329,15 @@ async function main() {
     } else {
       throw new Error(`Formato inválido após 3 tentativas. Última resposta: ${(result || '').substring(0, 500)}`);
     }
+    // Fact-guard: limpa alucinação antes de salvar; bloqueia se mutilaria.
+    const fg = analyzeContent(content);
+    if (fg.blocked) {
+      console.log(`⛔ Fact-guard bloqueou (${fg.reason}). Não publica; regenera no próximo ciclo.`);
+      return;
+    }
+    if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
+    content = fg.cleaned;
+
     const allKeywords = [...new Set([...keywords, ...topic.keywords])];
     const slugPt = createSlug(title);
 
