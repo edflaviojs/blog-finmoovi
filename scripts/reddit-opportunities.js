@@ -15,7 +15,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const ROOT = join(__dirname, '..');
 
-// Config
+// ⚙️ AJUSTE POR NICHO: subreddits não são deriváveis do config — ao replicar o
+// template para outro nicho, edite esta lista com os subreddits do novo tema.
 const SUBREDDITS = [
   'financaspessoais',
   'investimentos',

@@ -77,12 +77,12 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
     ? <meta name="robots" content="noindex, nofollow" />
     : <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1" />}
 
-  <!-- hreflang -->
-  {hasI18nVersion && (
+  <!-- hreflang (T8: só emite se o blog tem 2+ idiomas configurados) -->
+  {hasI18nVersion && config.locales.length > 1 && (
     <>
-      <link rel="alternate" hreflang="pt" href={finalHrefPt} />
-      <link rel="alternate" hreflang="en" href={finalHrefEn} />
-      <link rel="alternate" hreflang="es" href={finalHrefEs} />
+      {config.locales.includes('pt') && <link rel="alternate" hreflang="pt" href={finalHrefPt} />}
+      {config.locales.includes('en') && <link rel="alternate" hreflang="en" href={finalHrefEn} />}
+      {config.locales.includes('es') && <link rel="alternate" hreflang="es" href={finalHrefEs} />}
       <link rel="alternate" hreflang="x-default" href={finalHrefPt} />
     </>
   )}
@@ -136,7 +136,7 @@ const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es
 
   <!-- PWA -->
   <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#0d1117" />
+  <meta name="theme-color" content={config.brand.colors.background || '#0d1117'} />
 
   <!-- Organization Schema -->
   <script type="application/ld+json" set:html={JSON.stringify({

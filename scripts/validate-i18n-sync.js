@@ -13,12 +13,14 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { config } from "../site.config.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const POSTS_DIR = path.resolve(__dirname, "../src/content/posts");
 const GLOSSARIO_DIR = path.resolve(__dirname, "../src/content/glossario");
 
-const LOCALES = ["pt", "en", "es"];
+// T8: locales exigidos vêm do config (modo 1 idioma valida só o(s) configurado(s))
+const LOCALES = [...config.locales];
 
 const PT_WORDS_BLOCKED_IN_EN = [
   "metodo", "orcamento", "financeiro", "financeira", "planilha", "dicas",
@@ -37,7 +39,8 @@ const PT_WORDS_BLOCKED_IN_ES = [
   "resumo", "aprenda", "app financeiro"
 ];
 
-const ALLOWED_PT_TERMS = ["tesouro direto", "selic", "cdi", "ipca", "finmoovi", "pgbl", "vgbl"];
+// ⚙️ AJUSTE POR NICHO: termos técnicos PT permitidos em EN/ES (+ a marca, sempre dinâmica).
+const ALLOWED_PT_TERMS = ["tesouro direto", "selic", "cdi", "ipca", "pgbl", "vgbl", config.brand.name.toLowerCase()];
 
 let errors = [];
 

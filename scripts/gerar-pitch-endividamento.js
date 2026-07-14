@@ -16,11 +16,15 @@
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
+import { SITE_URL, BRAND_NAME, BLOG_NAME } from './lib/site.js';
+import { defaultAuthor } from '../src/data/authors.ts';
 
 const ROOT = process.cwd();
 const DATA = join(ROOT, 'src', 'data', 'endividamento.json');
 const PRESS_DIR = join(ROOT, 'press');
-const STUDY_URL = 'https://blog.finmoovi.com/estudos/endividamento-das-familias';
+// ⚙️ MÓDULO DE NICHO (finanças): o estudo de endividamento é específico deste nicho.
+// Ao replicar o template, substitua/remova este módulo (fetch-endividamento + pitch + página).
+const STUDY_URL = `${SITE_URL}/estudos/endividamento-das-familias`;
 
 const fmt = v => v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const monthYear = iso => new Date(iso).toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
@@ -79,7 +83,7 @@ Estudo completo (com série histórica e gráficos): ${STUDY_URL}
 ${oferta} Fico à disposição.
 
 Abraço,
-Ed Flávio — editor, FinMoovi Blog
+${defaultAuthor.name} — editor, ${BLOG_NAME}
 [seu e-mail/telefone]`;
 }
 
@@ -104,7 +108,7 @@ function main() {
   const compr = fmt(d.comprometimento.latest.value);
   const when = monthYear(d.endividamento.latest.date);
 
-  let md = `# Rascunhos de divulgação — Índice FinMoovi de Endividamento\n\n`;
+  let md = `# Rascunhos de divulgação — Índice ${BRAND_NAME} de Endividamento\n\n`;
   md += `> Gerado automaticamente a partir dos dados reais do BCB. **Não enviado.**\n`;
   md += `> Antes de enviar: personalize \`[nome do jornalista]\`, confirme o contato de pauta no site do veículo, e envie **1 por vez**. Anexe \`endividamento-serie.csv\`.\n\n`;
   md += `**Números atuais:** endividamento ${endiv}% da renda anual (${when}); comprometimento de renda ${compr}%. Estudo: ${STUDY_URL}\n\n---\n\n`;

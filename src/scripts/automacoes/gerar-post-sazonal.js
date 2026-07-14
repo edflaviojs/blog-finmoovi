@@ -143,8 +143,12 @@ function getUpcomingTopic() {
   const currentMonth = now.getMonth() + 1;
   const currentDay = now.getDate();
 
+  // T2: calendário do config tem precedência ({month, day, topic, keywords}); hardcoded = fallback.
+  const calendario = (config.ai?.seasonalCalendar?.length ? config.ai.seasonalCalendar : CALENDARIO_FINANCEIRO)
+    .filter(i => i && i.month && i.day && i.topic && Array.isArray(i.keywords));
+
   // Find topic whose date is 10-20 days from now
-  for (const item of CALENDARIO_FINANCEIRO) {
+  for (const item of calendario) {
     const targetDate = new Date(now.getFullYear(), item.month - 1, item.day);
     const daysUntil = Math.ceil((targetDate - now) / 86400000);
     if (daysUntil >= 10 && daysUntil <= 20) {
@@ -153,7 +157,7 @@ function getUpcomingTopic() {
   }
 
   // Fallback: next upcoming event
-  const sorted = CALENDARIO_FINANCEIRO.map(item => {
+  const sorted = calendario.map(item => {
     const targetDate = new Date(now.getFullYear(), item.month - 1, item.day);
     if (targetDate < now) targetDate.setFullYear(targetDate.getFullYear() + 1);
     return { ...item, daysUntil: Math.floor((targetDate - now) / 86400000) };
@@ -261,16 +265,20 @@ Responda neste formato:
     savePost(slugPt, { title, meta, keywords: allKeywords, content: processedContent, imagePath, locale: 'pt', today, translationKey: slugPt });
 
     // EN
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 Traduzindo EN...');
-    const enPost = await translatePost({ title, meta, keywords: allKeywords, content: processedContent }, 'en');
-    savePost(`en-${slugPt}`, { ...enPost, keywords: enPost.keywords, content: enPost.content, imagePath, locale: 'en', today, translationKey: slugPt });
+    if (config.locales.includes('en')) {
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 Traduzindo EN...');
+      const enPost = await translatePost({ title, meta, keywords: allKeywords, content: processedContent }, 'en');
+      savePost(`en-${slugPt}`, { ...enPost, keywords: enPost.keywords, content: enPost.content, imagePath, locale: 'en', today, translationKey: slugPt });
+    }
 
     // ES
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 Traduzindo ES...');
-    const esPost = await translatePost({ title, meta, keywords: allKeywords, content: processedContent }, 'es');
-    savePost(`es-${slugPt}`, { ...esPost, keywords: esPost.keywords, content: esPost.content, imagePath, locale: 'es', today, translationKey: slugPt });
+    if (config.locales.includes('es')) {
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 Traduzindo ES...');
+      const esPost = await translatePost({ title, meta, keywords: allKeywords, content: processedContent }, 'es');
+      savePost(`es-${slugPt}`, { ...esPost, keywords: esPost.keywords, content: esPost.content, imagePath, locale: 'es', today, translationKey: slugPt });
+    }
 
     // Commit por whitelist (push fica com o workflow).
     execSync('git add src/content/posts public/images/posts', { stdio: 'inherit' });

@@ -8,6 +8,7 @@
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { BRAND_NAME } from './lib/site.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -32,7 +33,7 @@ pending.sort((a, b) => b.dr - a.dr);
 
 // Output formatado
 console.log('═══════════════════════════════════════════════════════');
-console.log('  DIRECTORY SUBMISSIONS — FinMoovi');
+console.log(`  DIRECTORY SUBMISSIONS — ${BRAND_NAME}`);
 console.log('═══════════════════════════════════════════════════════');
 console.log(`  Última atualização: ${updatedAt}`);
 console.log(`  Total: ${submissions.length} diretórios`);

@@ -347,15 +347,19 @@ async function main() {
 
     savePost(slugPt, { title, meta, keywords: allKeywords, content: processed, imagePath, locale: 'pt', today, translationKey: slugPt });
 
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 EN...');
-    const en = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'en');
-    savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
+    if (config.locales.includes('en')) {
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 EN...');
+      const en = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'en');
+      savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
+    }
 
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 ES...');
-    const es = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'es');
-    savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
+    if (config.locales.includes('es')) {
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 ES...');
+      const es = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'es');
+      savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
+    }
 
     execSync('node src/scripts/automacoes/internal-linking.js', { stdio: 'inherit' });
     execSync(`git add "${POSTS_DIR}" "${IMAGES_DIR}"`, { stdio: 'inherit' });

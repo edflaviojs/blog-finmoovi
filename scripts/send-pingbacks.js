@@ -2,12 +2,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
+import { SITE_URL, MAIN_DOMAIN, userAgent, config } from './lib/site.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'src', 'content', 'posts');
 const PINGBACKS_FILE = path.join(ROOT, '.github', 'data', 'sent-pingbacks.json');
-const SITE_URL = 'https://blog.finmoovi.com';
+const UA = userAgent('Pingback');
 const DAYS_THRESHOLD = 7;
 
 function loadSentPingbacks() {
@@ -49,7 +50,10 @@ function getRecentPosts() {
         slug = slug.replace(/^es-/, '');
       }
 
-      const sourceUrl = `${SITE_URL}/${locale}/posts/${slug}/`;
+      // Locale padrão NÃO tem prefixo na URL (prefixDefaultLocale: false)
+      const sourceUrl = locale === config.defaultLocale
+        ? `${SITE_URL}/posts/${slug}/`
+        : `${SITE_URL}/${locale}/posts/${slug}/`;
 
       posts.push({
         file,
@@ -73,7 +77,7 @@ function extractExternalLinks(markdownContent) {
     try {
       const parsed = new URL(url);
       // Exclude internal links
-      if (parsed.hostname.includes('finmoovi.com')) return false;
+      if (parsed.hostname.includes(MAIN_DOMAIN)) return false;
       // Exclude common non-content URLs
       if (parsed.hostname.includes('github.com')) return false;
       if (parsed.hostname.includes('googleapis.com')) return false;
@@ -89,7 +93,7 @@ async function discoverPingbackEndpoint(targetUrl) {
   try {
     const response = await fetch(targetUrl, {
       method: 'HEAD',
-      headers: { 'User-Agent': 'FinMoovi-Pingback/1.0' },
+      headers: { 'User-Agent': UA },
       signal: AbortSignal.timeout(10000),
     });
 
@@ -107,7 +111,7 @@ async function discoverPingbackEndpoint(targetUrl) {
     // If HEAD didn't reveal it, try GET and parse HTML for <link rel="pingback">
     const getResponse = await fetch(targetUrl, {
       method: 'GET',
-      headers: { 'User-Agent': 'FinMoovi-Pingback/1.0' },
+      headers: { 'User-Agent': UA },
       signal: AbortSignal.timeout(15000),
     });
 
@@ -144,7 +148,7 @@ async function sendPingback(endpoint, sourceUrl, targetUrl) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/xml',
-      'User-Agent': 'FinMoovi-Pingback/1.0',
+      'User-Agent': UA,
     },
     body: xml,
     signal: AbortSignal.timeout(15000),

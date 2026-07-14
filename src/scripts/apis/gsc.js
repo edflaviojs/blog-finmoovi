@@ -19,9 +19,10 @@
  */
 
 import { createSign } from 'crypto';
+import { config } from '../../../site.config.ts';
 
 const SCOPE = 'https://www.googleapis.com/auth/webmasters.readonly';
-const DEFAULT_SITE_URL = 'https://blog.finmoovi.com/';
+const DEFAULT_SITE_URL = `${config.siteUrl.replace(/\/$/, '')}/`;
 
 /** URL da propriedade no GSC (env com fallback para o domínio do blog). */
 export const GSC_SITE_URL = process.env.GSC_SITE_URL || DEFAULT_SITE_URL;

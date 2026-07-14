@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { SITE_URL, BRAND_NAME, userAgent } from './lib/site.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -21,9 +22,9 @@ const TIMEOUT_MS = 8000;
 const MAX_TOTAL_REQUESTS = 100;
 const DELAY_MIN_MS = 1000;
 const DELAY_MAX_MS = 2000;
-const USER_AGENT = 'FinMoovi-LinkChecker/1.0 (https://blog.finmoovi.com)';
+const USER_AGENT = `${userAgent('LinkChecker')} (${SITE_URL})`;
 
-// Sites to crawl for broken links
+// ⚙️ AJUSTE POR NICHO: sites concorrentes/referência do novo tema ao replicar.
 const COMPETITOR_SITES = [
   'https://www.mobills.com.br/blog/',
   'https://www.organizze.com.br/blog/',
@@ -270,7 +271,7 @@ function saveOpportunities(opportunities) {
 
 // --- Main execution ---
 async function main() {
-  log('=== FinMoovi Broken Link Finder ===');
+  log(`=== ${BRAND_NAME} Broken Link Finder ===`);
   log(`Max sites per run: ${MAX_SITES_PER_RUN}`);
   log(`Max pages per site: ${MAX_PAGES_PER_SITE}`);
   log(`Max total requests: ${MAX_TOTAL_REQUESTS}`);

@@ -375,38 +375,42 @@ Responda EXATAMENTE neste formato:
     console.log(`📄 PT: ${ptPath}`);
 
     // Translate EN
-    console.log('⏳ Aguardando 30s (rate limit)...');
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 Traduzindo EN...');
-    const enPost = await translatePost({ title, meta, keywords: allKeywords, processedContent: processedContentPt }, 'en');
-    savePost(`en-${slugPt}`, {
-      title: enPost.title,
-      meta: enPost.meta,
-      keywords: enPost.keywords,
-      content: enPost.content,
-      imagePath,
-      locale: 'en',
-      today,
-      translationKey: slugPt,
-    });
-    console.log('✅ EN salvo');
+    if (config.locales.includes('en')) {
+      console.log('⏳ Aguardando 30s (rate limit)...');
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 Traduzindo EN...');
+      const enPost = await translatePost({ title, meta, keywords: allKeywords, processedContent: processedContentPt }, 'en');
+      savePost(`en-${slugPt}`, {
+        title: enPost.title,
+        meta: enPost.meta,
+        keywords: enPost.keywords,
+        content: enPost.content,
+        imagePath,
+        locale: 'en',
+        today,
+        translationKey: slugPt,
+      });
+      console.log('✅ EN salvo');
+    }
 
     // Translate ES
-    console.log('⏳ Aguardando 30s (rate limit)...');
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 Traduzindo ES...');
-    const esPost = await translatePost({ title, meta, keywords: allKeywords, processedContent: processedContentPt }, 'es');
-    savePost(`es-${slugPt}`, {
-      title: esPost.title,
-      meta: esPost.meta,
-      keywords: esPost.keywords,
-      content: esPost.content,
-      imagePath,
-      locale: 'es',
-      today,
-      translationKey: slugPt,
-    });
-    console.log('✅ ES salvo');
+    if (config.locales.includes('es')) {
+      console.log('⏳ Aguardando 30s (rate limit)...');
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 Traduzindo ES...');
+      const esPost = await translatePost({ title, meta, keywords: allKeywords, processedContent: processedContentPt }, 'es');
+      savePost(`es-${slugPt}`, {
+        title: esPost.title,
+        meta: esPost.meta,
+        keywords: esPost.keywords,
+        content: esPost.content,
+        imagePath,
+        locale: 'es',
+        today,
+        translationKey: slugPt,
+      });
+      console.log('✅ ES salvo');
+    }
 
     // Commit por whitelist (push fica com o workflow).
     console.log('📦 Fazendo commit...');

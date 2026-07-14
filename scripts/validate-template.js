@@ -88,6 +88,53 @@ if (statSync(DIST_DIR, { throwIfNoEntry: false })) {
   warnings++;
 }
 
+// === CHECK 1B (T9): SOURCE scan for old brand leaks (scripts, components, functions) ===
+// Só ativa quando a marca configurada NÃO é FinMoovi (i.e., num blog filho após setup).
+console.log('━━━ Check 1B: Source scan (scripts/, src/, functions/) ━━━\n');
+
+if (config.brand.name.toLowerCase() !== 'finmoovi') {
+  let srcLeaks = 0;
+  const SRC_SCAN_SKIP = [...SKIP, 'validate-template.js', '.claude', 'press', 'social', 'reports', '.github'];
+
+  function scanSource(dir) {
+    try {
+      const entries = readdirSync(dir);
+      for (const entry of entries) {
+        const fullPath = join(dir, entry);
+        if (SRC_SCAN_SKIP.some(s => fullPath.includes(s))) continue;
+        if (SKIP_CONTENT.some(s => fullPath.includes(s))) continue;
+        const stat = statSync(fullPath);
+        if (stat.isDirectory()) { scanSource(fullPath); continue; }
+        if (!/\.(js|ts|astro|css|json|mjs)$/.test(entry)) continue;
+        const content = readFileSync(fullPath, 'utf-8');
+        for (const pattern of oldBrandPatterns) {
+          pattern.lastIndex = 0;
+          const matches = content.match(pattern);
+          if (matches) {
+            const rel = fullPath.replace(process.cwd() + '\\', '').replace(process.cwd() + '/', '');
+            console.log(`  ❌ SOURCE LEAK: ${rel} — "${matches[0]}" (${matches.length}x)`);
+            srcLeaks += matches.length;
+            errors++;
+          }
+        }
+      }
+    } catch (e) { /* skip */ }
+  }
+
+  scanSource(join(process.cwd(), 'scripts'));
+  scanSource(SRC_DIR);
+  scanSource(join(process.cwd(), 'functions'));
+  scanSource(join(process.cwd(), 'public'));
+
+  if (srcLeaks === 0) {
+    console.log('  ✅ No old brand references in source files\n');
+  } else {
+    console.log(`\n  ❌ Found ${srcLeaks} source leaks — a marca antiga ainda está no código\n`);
+  }
+} else {
+  console.log('  ⏭️  Pulado (marca ainda é FinMoovi — blog-mãe)\n');
+}
+
 // === CHECK 2: Source files for unresolved ${config...} in single-quoted strings ===
 console.log('━━━ Check 2: Broken template literals in source ━━━━━━━━━\n');
 
@@ -154,6 +201,8 @@ const requiredFields = [
   ['ai.personality', config.ai?.personality],
   ['siteUrl', config.siteUrl],
   ['siteDescription.pt', config.siteDescription?.pt],
+  ['content.categoryNav', config.content?.categoryNav?.length > 0],
+  ['locales', config.locales?.length > 0],
 ];
 
 let missingFields = 0;

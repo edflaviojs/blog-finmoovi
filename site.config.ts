@@ -41,6 +41,7 @@ export const config: SiteConfig = {
       gradientEnd: '#A91079',
     },
     colors: {
+      background: '#0d1117',
       primary: '#58a6ff',
       secondary: '#bc8cff',
       ctaGradientStart: '#00F0FF',
@@ -88,6 +89,8 @@ export const config: SiteConfig = {
   app: {
     name: 'FinMoovi',
     url: 'https://finmoovi.com',
+    schemaCategory: 'FinanceApplication', // Schema.org SoftwareApplication category
+    priceCurrency: 'BRL',
     features: {
       pt: ['Multi-moeda (BRL, USD, EUR)', 'Smart Capture por voz e OCR', 'Relatórios inteligentes com IA', '100% offline e seguro', 'Categorização automática'],
       en: ['Multi-currency (BRL, USD, EUR)', 'Voice & OCR Smart Capture', 'AI-powered smart reports', '100% offline & secure', 'Auto-categorization'],

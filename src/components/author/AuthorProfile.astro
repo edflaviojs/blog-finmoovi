@@ -4,21 +4,22 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import { getCollection } from 'astro:content';
 import { config } from '../../../site.config';
-import { authors, personSchema, authorHref, EDITORIAL_POLICY_PATH } from '@/data/authors';
+import { defaultAuthor, personSchema, authorHref, EDITORIAL_POLICY_PATH } from '@/data/authors';
 
 interface Props {
   locale?: 'pt' | 'en' | 'es';
 }
 const { locale = 'pt' } = Astro.props;
 
-const author = authors['ed-flavio'];
+const author = defaultAuthor;
 // Caminho relativo da foto (author.image é absoluta e alimenta o Person schema).
 const avatar = author.image ? author.image.replace(config.siteUrl, '') : '';
 
 // Strings localizadas
+// Role/bio vêm do authors.ts (fonte única E-E-A-T); aqui só UI genérica localizada.
 const T = {
   pt: {
-    role: 'Editor de finanças pessoais',
+    role: author.jobTitle,
     about: 'Sobre o autor', areas: 'Áreas de especialidade', recent: 'Artigos recentes',
     editorial: 'Leia nossa política editorial',
     bio: author.description,
@@ -26,18 +27,18 @@ const T = {
     connector: 'em', dateLoc: 'pt-BR', postPrefix: '/posts',
   },
   en: {
-    role: 'Personal finance editor',
+    role: author.i18n?.en?.jobTitle || author.jobTitle,
     about: 'About the author', areas: 'Areas of expertise', recent: 'Recent articles',
     editorial: 'Read our editorial policy',
-    bio: "Ed Flávio is the editor of FinMoovi Blog. With a bachelor's degree in Business Administration and a postgraduate degree in Financial Management, he writes about personal finance, budgeting and investing to make financial education accessible to everyone.",
+    bio: author.i18n?.en?.description || author.description,
     levels: { 'Graduação': "Bachelor's degree", 'Pós-graduação': 'Postgraduate degree' } as Record<string, string>,
     connector: 'in', dateLoc: 'en-US', postPrefix: '/en/posts',
   },
   es: {
-    role: 'Editor de finanzas personales',
+    role: author.i18n?.es?.jobTitle || author.jobTitle,
     about: 'Sobre el autor', areas: 'Áreas de especialidad', recent: 'Artículos recientes',
     editorial: 'Lee nuestra política editorial',
-    bio: 'Ed Flávio es el editor de FinMoovi Blog. Graduado en Administración de Empresas y posgraduado en Gestión Financiera, escribe sobre finanzas personales, presupuesto e inversiones para hacer la educación financiera accesible para todos.',
+    bio: author.i18n?.es?.description || author.description,
     levels: { 'Graduação': 'Grado', 'Pós-graduação': 'Posgrado' } as Record<string, string>,
     connector: 'en', dateLoc: 'es-ES', postPrefix: '/es/posts',
   },

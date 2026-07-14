@@ -17,8 +17,11 @@
 import { readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { SERIE_RE, coreTokens, jaccardSim } from '../lib/seo-guard.js';
+import { config } from '../../../site.config.ts';
 
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
+// T8: locales exigidos vêm do config (modo 1 idioma = valida só o(s) configurado(s))
+const LOCALES = [...config.locales];
 
 function getPostLocale(filename) {
   if (filename.startsWith('en-')) return 'en';
@@ -88,28 +91,24 @@ function main() {
   }
 
   for (const [key, locales] of Object.entries(keyMap)) {
-    const localeCount = Object.keys(locales).length;
-    if (localeCount !== 3) {
-      const missing = ['pt', 'en', 'es'].filter(l => !locales[l]);
-      if (localeCount === 1) {
-        errors.push(`❌ translationKey "${key}" só tem 1 locale (${Object.keys(locales)[0]}) — faltam: ${missing.join(', ')}`);
-      } else if (localeCount === 2) {
-        errors.push(`❌ translationKey "${key}" tem 2 locales — falta: ${missing.join(', ')}`);
-      }
+    const present = LOCALES.filter(l => locales[l]).length;
+    if (present !== LOCALES.length) {
+      const missing = LOCALES.filter(l => !locales[l]);
+      errors.push(`❌ translationKey "${key}" tem ${present}/${LOCALES.length} locales — faltam: ${missing.join(', ')}`);
     }
   }
 
-  // 3. Contagem por locale deve ser igual
-  const countPt = posts.filter(p => p.locale === 'pt').length;
-  const countEn = posts.filter(p => p.locale === 'en').length;
-  const countEs = posts.filter(p => p.locale === 'es').length;
+  // 3. Contagem por locale deve ser igual (entre os locales configurados)
+  const counts = Object.fromEntries(LOCALES.map(l => [l, posts.filter(p => p.locale === l).length]));
+  console.log(`📊 Posts: ${LOCALES.map(l => `${l.toUpperCase()}=${counts[l]}`).join(', ')}`);
 
-  console.log(`📊 Posts: PT=${countPt}, EN=${countEn}, ES=${countEs}`);
-
-  if (countPt !== countEn || countPt !== countEs) {
-    warnings.push(`⚠️ Contagem de posts desigual: PT=${countPt}, EN=${countEn}, ES=${countEs}`);
-    if (Math.abs(countPt - countEn) > 2 || Math.abs(countPt - countEs) > 2) {
-      errors.push(`❌ Diferença > 2 posts entre locales: PT=${countPt}, EN=${countEn}, ES=${countEs}`);
+  const base = counts[LOCALES[0]];
+  for (const l of LOCALES.slice(1)) {
+    if (counts[l] !== base) {
+      warnings.push(`⚠️ Contagem de posts desigual: ${LOCALES[0].toUpperCase()}=${base}, ${l.toUpperCase()}=${counts[l]}`);
+      if (Math.abs(base - counts[l]) > 2) {
+        errors.push(`❌ Diferença > 2 posts entre locales: ${LOCALES[0].toUpperCase()}=${base}, ${l.toUpperCase()}=${counts[l]}`);
+      }
     }
   }
 

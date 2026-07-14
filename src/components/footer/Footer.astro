@@ -94,7 +94,7 @@ const socials = [
     <div class="footer-bottom">
       <p data-i18n="footer.copyright">&copy; {currentYear} {brand.name}. Todos os direitos reservados.</p>
       <p class="footer-disclaimer" data-i18n="footer.disclaimer">
-        Este blog tem caráter educativo. Não constitui recomendação de investimento.
+        Este blog tem caráter educativo. Não constitui recomendação.
       </p>
     </div>
   </div>
@@ -135,7 +135,7 @@ const socials = [
     width: 32px;
     height: 32px;
     background: var(--bg-primary);
-    border: 1px solid rgba(0, 240, 255, 0.2);
+    border: 1px solid rgba(var(--brand-cyan-rgb), 0.2);
     border-radius: var(--radius-md);
   }
 
@@ -145,7 +145,7 @@ const socials = [
   }
 
   .footer-logo .logo-blog {
-    background: linear-gradient(135deg, var(--brand-cyan), #A91079);
+    background: linear-gradient(135deg, var(--brand-cyan), var(--brand-gradient-end));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

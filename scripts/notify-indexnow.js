@@ -10,11 +10,20 @@
  * Uso: node scripts/notify-indexnow.js        (envia de verdade)
  *      node scripts/notify-indexnow.js --dry   (só mostra, não envia)
  */
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
 import { dirname } from 'path';
+import { BLOG_HOST } from './lib/site.js';
 
-const HOST = 'blog.finmoovi.com';
-const KEY = '9759488a420163b008fa2ca312612541';
+const HOST = BLOG_HOST;
+// Chave IndexNow: env INDEXNOW_KEY ou auto-descoberta do arquivo public/<key>.txt
+// (num blog novo, gere uma chave em bing.com/indexnow e salve public/<key>.txt).
+function discoverKey() {
+  if (process.env.INDEXNOW_KEY) return process.env.INDEXNOW_KEY;
+  const f = readdirSync('public').find(n => /^[a-f0-9]{16,64}\.txt$/i.test(n));
+  if (!f) throw new Error('Chave IndexNow não encontrada (public/<key>.txt ausente e INDEXNOW_KEY não definida).');
+  return f.replace(/\.txt$/i, '');
+}
+const KEY = discoverKey();
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const SITEMAP_URL = `https://${HOST}/sitemap-index.xml`;
 const TRACKING = '.github/data/indexnow-submitted.json';

@@ -125,8 +125,11 @@ async function main() {
   console.log('⚖️ Gerando post de comparação...');
 
   const weekOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (86400000 * 7));
-  const topicIndex = weekOfYear % COMPARACOES.length;
-  const comp = COMPARACOES[topicIndex];
+  // T2: pool do config tem precedência ({a, b, keywords}); o hardcoded vira fallback/exemplo.
+  const pool = (config.ai?.comparisonTopics?.length ? config.ai.comparisonTopics : COMPARACOES)
+    .filter(c => c && c.a && c.b && Array.isArray(c.keywords));
+  const topicIndex = weekOfYear % pool.length;
+  const comp = pool[topicIndex];
 
   console.log(`📝 ${comp.a} vs ${comp.b}`);
   const today = new Date().toISOString().split('T')[0];
@@ -239,15 +242,19 @@ Responda neste formato:
 
     savePost(slugPt, { title, meta, keywords: allKeywords, content: processed, imagePath, locale: 'pt', today, translationKey: slugPt });
 
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 EN...');
-    const en = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'en');
-    savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
+    if (config.locales.includes('en')) {
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 EN...');
+      const en = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'en');
+      savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
+    }
 
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 ES...');
-    const es = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'es');
-    savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
+    if (config.locales.includes('es')) {
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 ES...');
+      const es = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'es');
+      savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
+    }
 
     // Commit por whitelist (push fica com o workflow).
     execSync('git add src/content/posts public/images/posts', { stdio: 'inherit' });
