@@ -41,6 +41,7 @@ export const config: SiteConfig = {
       gradientEnd: '#A91079',
     },
     colors: {
+      background: '#0d1117',
       primary: '#58a6ff',
       secondary: '#bc8cff',
       ctaGradientStart: '#00F0FF',

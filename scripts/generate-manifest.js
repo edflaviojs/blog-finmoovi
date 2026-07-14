@@ -15,8 +15,8 @@ const manifest = {
   description: config.siteDescription.pt,
   start_url: '/',
   display: 'standalone',
-  background_color: '#0d1117',
-  theme_color: '#0d1117',
+  background_color: config.brand.colors.background || '#0d1117',
+  theme_color: config.brand.colors.background || '#0d1117',
   icons: [
     {
       src: '/favicon.svg',
