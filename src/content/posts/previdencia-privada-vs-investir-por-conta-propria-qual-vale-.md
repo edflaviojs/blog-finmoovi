@@ -2,6 +2,7 @@
 title: "Previdência privada vs Investir por conta própria: qual vale mais a pena em 2026?"
 description: "Escolha certa para o seu futuro financeiro"
 image: "/images/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-.webp"
+imageAlt: "Computador, celular e caneca em mesa de madeira com monitores ao fundo."
 category: "investimentos"
 locale: "pt"
 tags: ["Previdência privada","Investir por conta própria","Planejamento financeiro","Finanças pessoais","Investimentos","previdência privada vale a pena","pgbl vs vgbl","aposentadoria investir sozinho"]

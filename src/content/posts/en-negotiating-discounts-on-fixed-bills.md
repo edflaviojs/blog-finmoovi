@@ -2,6 +2,7 @@
 title: "Negotiating Discounts on Fixed Bills"
 description: "Learn to save money by negotiating discounts on fixed bills, such as water, electricity, and internet, and organize your personal finances."
 image: "/images/posts/negociar-descontos-em-contas-fixas.webp"
+imageAlt: "Yellow wavy arrow on a blue gradient background."
 category: "dicas"
 locale: "en"
 tags: ["how to negotiate discounts on fixed bills","personal finance","economy","money"]

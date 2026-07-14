@@ -2,6 +2,7 @@
 title: "Weekly Summary: Dollar at R$ 5.08 — Week 3 of june"
 description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 3 of june 2026."
 image: "/images/posts/cotacoes-semana-2026-06-15.webp"
+imageAlt: "Blurry financial charts and graphs on a dark blue background with green, red, and blue lines."
 category: "cotacoes"
 tags: ["quotes","dollar","euro","financial market","selic"]
 author: "FinMoovi"

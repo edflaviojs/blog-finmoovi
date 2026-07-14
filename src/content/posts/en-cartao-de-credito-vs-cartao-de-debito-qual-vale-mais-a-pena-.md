@@ -2,6 +2,7 @@
 title: "Credit Card vs Debit Card: Which is Worth it in 2026?"
 description: "Choose between credit card and debit card with knowledge."
 image: "/images/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-.webp"
+imageAlt: "Yellow and blue curved shapes on a beige background with a shadow underneath."
 category: "investimentos"
 locale: "en"
 tags: ["credit card","debit card","personal finance","financial management","credit","debit","credit vs debit","credit card advantages","when to use debit"]

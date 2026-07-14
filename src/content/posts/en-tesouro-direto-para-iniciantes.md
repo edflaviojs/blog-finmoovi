@@ -2,6 +2,7 @@
 title: "Tesouro Direto for Beginners"
 description: "Complete guide to investing in Tesouro Direto, explaining how it works, advantages and disadvantages, along with practical examples."
 image: "/images/posts/tesouro-direto-para-iniciantes.webp"
+imageAlt: "Yellow and blue curved shapes on a dark blue background and floor."
 category: "investimentos"
 locale: "en"
 tags: ["Tesouro Direto","investment","fixed income","public securities","personal finance","economy","tesouro direto for beginners","how to invest in tesouro direto","tesouro selic"]

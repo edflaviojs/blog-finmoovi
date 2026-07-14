@@ -2,6 +2,7 @@
 title: "Tips for Controlling Credit Card Expenses"
 description: "Learn to control your credit card expenses with practical and effective tips for better financial management."
 image: "/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito.webp"
+imageAlt: "Multicolored graph lines on dark blue background with blurred lights and icons."
 category: "dicas"
 locale: "en"
 tags: ["tips for controlling credit card expenses","personal finance","economy","money"]

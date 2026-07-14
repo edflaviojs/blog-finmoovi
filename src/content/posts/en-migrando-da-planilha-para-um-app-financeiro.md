@@ -2,6 +2,7 @@
 title: "Migrating from Spreadsheets to a Financial App"
 description: "Learn how to migrate from spreadsheets to a financial app and organize your finances effectively."
 image: "/images/posts/migrando-da-planilha-para-um-app-financeiro.webp"
+imageAlt: "Two laptops, coffee cup, and office supplies on a desk near a window."
 category: "ferramentas"
 locale: "en"
 tags: ["financial app","spreadsheet","personal finance","financial organization","FinMoovi","Mobills","Organizze","migrate spreadsheet app","start using financial app","leave spreadsheet"]

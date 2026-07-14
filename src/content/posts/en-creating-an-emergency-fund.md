@@ -2,6 +2,7 @@
 title: "Creating an Emergency Fund"
 description: "Learn how to create an emergency fund to protect your financial future in case of unexpected events. Practical tips and real-life examples."
 image: "/images/posts/como-criar-uma-reserva-de-emergencia.webp"
+imageAlt: "Brown leather journal, calculator, coins, and potted plants on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["how to create an emergency fund","personal finance","economy","money"]

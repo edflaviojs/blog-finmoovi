@@ -2,6 +2,7 @@
 title: "You're Not Alone in Struggling to Organize Your Finances"
 description: "Struggling to organize your finances? Discover how FinMoovi can help."
 image: "/images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas.webp"
+imageAlt: "Two women sitting on a couch, holding and examining banknotes and financial documents."
 category: "dicas"
 locale: "en"
 tags: ["personal finance","financial organization","automatic categorization","financial apps","expense management","money","economy","finance apps","finmoovi"]

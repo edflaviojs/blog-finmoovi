@@ -2,6 +2,7 @@
 title: "Building a Diversified Portfolio with R$500"
 description: "Learn how to build a diversified portfolio with just R$500, understanding the basic concepts of investment and risk management."
 image: "/images/posts/montando-carteira-diversificada-com-r-500.webp"
+imageAlt: "Man holding phone sits on couch with two women and open laptop nearby."
 category: "investimentos"
 locale: "en"
 tags: ["investment","diversified portfolio","R$500","risks","financial management","income","diversify investments","invest 500 reals"]

@@ -2,6 +2,7 @@
 title: "You Also Forget to Record Your Expenses?"
 description: "Discover how FinMoovi can help you control your finances in an easy and effective way."
 image: "/images/posts/voce-tambem-esquece-de-anotar-seus-gastos.webp"
+imageAlt: "Brown leather book, calculator, coins, plant on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["personal finance","expense control","financial apps","FinMoovi","expense management","automatic categorization","finance app","expense control","finmoovi"]

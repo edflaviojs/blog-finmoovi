@@ -1,6 +1,7 @@
 ---
 term: "Foreign Exchange"
 image: "/images/glossario/en-cambio.svg"
+imageAlt: "Multicolored line graph on a dark background with black border."
 definition: "The exchange of one currency for another. The exchange rate determines how much one currency is worth relative to another."
 category: "basico"
 locale: "en"

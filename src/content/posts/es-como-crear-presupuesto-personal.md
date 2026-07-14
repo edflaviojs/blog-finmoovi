@@ -2,6 +2,7 @@
 title: "Cómo Crear un Presupuesto Personal en 5 Pasos Simples"
 description: "Aprende a armar un presupuesto personal eficiente que funciona en la práctica. Método probado para organizar tus finanzas en menos de 30 minutos."
 image: "/images/posts/orcamento-pessoal.svg"
+imageAlt: "Gráfico de velas con colores naranja y azul sobre fondo negro."
 category: "orcamento"
 tags: ["presupuesto", "finanzas personales", "planificación financiera", "control de gastos"]
 author: "FinMoovi"

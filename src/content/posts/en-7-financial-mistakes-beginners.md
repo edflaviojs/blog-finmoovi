@@ -2,6 +2,7 @@
 title: "7 Financial Mistakes Every Beginner Makes (And How to Avoid Them)"
 description: "Discover the most common mistakes people make when starting to organize their finances and learn how to avoid them with practical tips."
 image: "/images/posts/erros-financeiros.svg"
+imageAlt: "Green and yellow gradient bars on black background, varying heights."
 category: "dicas"
 tags: ["financial mistakes", "personal finance", "financial education", "tips"]
 author: "FinMoovi"

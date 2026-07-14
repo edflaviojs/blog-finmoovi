@@ -2,6 +2,7 @@
 title: "Avoid Impulse Purchases"
 description: "Learn to control your spending and save money with practical tips and everyday examples."
 image: "/images/posts/evite-compras-por-impulso.webp"
+imageAlt: "Wavy blue and gold metallic ribbon on beige background with subtle shadows."
 category: "dicas"
 locale: "en"
 tags: ["how to avoid impulse purchases","personal finance","economy","money"]

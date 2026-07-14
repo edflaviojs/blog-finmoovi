@@ -1,6 +1,7 @@
 ---
 term: "CDI"
 image: "/images/glossario/cdi.svg"
+imageAlt: "Gráfico de velas com fundo preto e destaques em verde e vermelho."
 definition: "Certificado de Depósito Interbancário. Taxa de referência para investimentos de renda fixa no Brasil. Acompanha de perto a taxa Selic."
 category: "investimentos"
 relatedTerms: ["Selic", "CDB", "Renda Fixa"]

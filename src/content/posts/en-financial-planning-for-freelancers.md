@@ -2,6 +2,7 @@
 title: "Financial Planning for Freelancers"
 description: "Learn to manage your finances as a freelancer and achieve financial stability. Practical tips and real-life examples."
 image: "/images/posts/planejamento-financeiro-para-autonomos.webp"
+imageAlt: "Blurry graph with multicolored lines and dots on dark blue background with text."
 category: "dicas"
 locale: "en"
 tags: ["financial planning for freelancers","personal finance","economy","money"]

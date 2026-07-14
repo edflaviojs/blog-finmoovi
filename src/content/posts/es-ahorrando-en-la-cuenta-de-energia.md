@@ -2,6 +2,7 @@
 title: "Ahorrando en la Cuenta de Energía"
 description: "Aprende a reducir tu cuenta de energía eléctrica con consejos prácticos y ahorra dinero."
 image: "/images/posts/economize-na-conta-de-energia.svg"
+imageAlt: "Gráfico con puntos de colores naranja y verde sobre fondo negro con línea diagonal."
 category: "dicas"
 locale: "es"
 tags: ["cómo ahorrar en la cuenta de energía","finanzas personales","economía","dinero"]

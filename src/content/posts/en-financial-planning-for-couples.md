@@ -2,6 +2,7 @@
 title: "Financial Planning for Couples"
 description: "Learn to manage your finances together and achieve your financial goals. Practical tips and strategies for couples."
 image: "/images/posts/planejamento-financeiro-para-casais.webp"
+imageAlt: "Golden ribbon wrapping around a small blue house on a dark blue background."
 category: "dicas"
 locale: "en"
 tags: ["financial planning for couples","personal finance","economy","money"]

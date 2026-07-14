@@ -2,6 +2,7 @@
 title: "Negociar Descuentos en Cuentas Fijas"
 description: "Aprenda a ahorrar dinero negociando descuentos en cuentas fijas, como agua, luz e internet, y organice sus finanzas personales."
 image: "/images/posts/negociar-descontos-em-contas-fixas.webp"
+imageAlt: "Una flecha amarilla curva sobre fondo azul degradado de izquierda a derecha."
 category: "dicas"
 locale: "es"
 tags: ["cómo negociar descuentos en cuentas fijas","finanzas personales","economía","dinero"]

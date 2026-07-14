@@ -2,6 +2,7 @@
 title: "Save Money on Vacation"
 description: "Learn how to save money on your July vacation without sacrificing fun, with practical tips and financial planning."
 image: "/images/posts/economize-nas-ferias.webp"
+imageAlt: "Blurry graph with multicolored lines and shapes on dark background, green gear visible."
 category: "dicas"
 tags:
   - "vacation budget"

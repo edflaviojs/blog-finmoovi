@@ -2,6 +2,7 @@
 title: "Organizar Finanças Autônomo"
 description: "Aprenda a gerenciar seu dinheiro de forma eficaz como autônomo, com dicas práticas e exemplos reais para economizar e crescer financeiramente."
 image: "/images/posts/organizar-financas-autonomo.webp"
+imageAlt: "Mão segurando uma pilha de moedas de ouro sobre fundo escuro."
 category: "dicas"
 locale: "pt"
 tags: ["como organizar finanças sendo autônomo","finanças pessoais","economia","dinheiro"]

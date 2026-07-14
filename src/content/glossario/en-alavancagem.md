@@ -4,6 +4,7 @@ definition: "Alavancagem is a financial strategy that involves the use of loans 
 category: "mercado"
 locale: "en"
 image: "/images/glossario/alavancagem.webp"
+imageAlt: "Pink geometric shape and wavy blue and pink ribbons on white platform."
 relatedTerms: ["Risco","Investimento","Dívida"]
 publishedAt: 2026-06-13
 ---

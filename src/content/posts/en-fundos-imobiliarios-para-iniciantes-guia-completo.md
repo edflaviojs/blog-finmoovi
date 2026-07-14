@@ -2,6 +2,7 @@
 title: "Fundos Imobiliários for Beginners: Complete Guide"
 description: "Learn how to invest in real estate funds safely and profitably, starting with R$500 or more. Understand the risks and benefits."
 image: "/images/posts/fundos-imobiliarios-para-iniciantes-guia-completo.webp"
+imageAlt: "Three people sitting with tablets in a room with white and wood walls."
 category: "investimentos"
 locale: "en"
 tags: ["real estate funds","real estate investment","passive income","investing in properties","FIIs","real estate funds for beginners","how to invest in FIIs","passive income FIIs"]

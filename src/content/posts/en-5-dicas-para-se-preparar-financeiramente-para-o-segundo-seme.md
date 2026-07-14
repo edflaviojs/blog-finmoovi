@@ -2,6 +2,7 @@
 title: "5 Tips to Prepare Financially for the Second Half of the Year"
 description: "Prepare for the second half of the year with practical and accessible financial tips."
 image: "/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme.webp"
+imageAlt: "Laptop on wooden desk with mug, pen, and potted plant nearby."
 category: "dicas"
 locale: "en"
 tags: ["personal finance","second half of the year","financial planning","economy","expenses","second half of the financial year","reviewing financial goals"]

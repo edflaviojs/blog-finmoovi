@@ -2,6 +2,7 @@
 title: "Organizing Finances as a Freelancer"
 description: "Discover how to organize your finances as a freelancer and achieve financial stability. Practical tips and real-life examples for you."
 image: "/images/posts/organizar-financas-autonomo.webp"
+imageAlt: "Man in suit holds stack of gold coins in outstretched hand."
 category: "dicas"
 locale: "en"
 tags: ["how to organize finances as a freelancer","personal finance","economy","money"]

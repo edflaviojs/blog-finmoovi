@@ -2,6 +2,7 @@
 title: "How to Organize Couple Finances"
 description: "Learn how to manage couple finances effectively and achieve common goals."
 image: "/images/posts/organizar-financas-de-casal.jpg"
+imageAlt: "Couple and woman sitting with laptops and books on a purple background."
 category: "dicas"
 tags: ["couple finances", "personal finance", "money management", "budget"]
 author: "FinMoovi"

@@ -2,6 +2,7 @@
 title: "Budget for Couples: Dividing Expenses"
 description: "Learn how to divide expenses fairly with your partner, creating a healthy and balanced budget for the couple."
 image: "/images/posts/orcamento-para-casal-dividindo-despesas.webp"
+imageAlt: "Golden and dark blue infinity symbol on a gray background with a shadow."
 category: "orcamento"
 locale: "en"
 tags: ["couple's budget","dividing expenses","personal finance","marriage","economy","couple's expenses","finance for two"]

@@ -2,6 +2,7 @@
 title: "Expense Spreadsheet: When It Stops Working"
 description: "Discover when a free expense spreadsheet stops being effective and how an app can help."
 image: "/images/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar.webp"
+imageAlt: "Laptop and monitor on a desk with a cup, plant, and office supplies nearby."
 category: "ferramentas"
 locale: "en"
 tags: ["expense spreadsheet","personal finance","finance app","expense management","budget","free expense spreadsheet","spreadsheet limitations","spreadsheet vs app when to switch"]

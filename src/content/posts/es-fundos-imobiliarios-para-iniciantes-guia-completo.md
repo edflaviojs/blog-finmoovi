@@ -2,6 +2,7 @@
 title: "Guía Completa de Fondos Inmobiliarios para Principiantes"
 description: "Aprende a invertir en fondos inmobiliarios con seguridad y rentabilidad, comenzando con R$500 o más. Entiende los riesgos y beneficios."
 image: "/images/posts/fundos-imobiliarios-para-iniciantes-guia-completo.webp"
+imageAlt: "Tres personas sentadas sonriendo mientras miran tabletas en un ambiente de oficina."
 category: "investimentos"
 locale: "es"
 tags: ["fondos inmobiliarios","inversión inmobiliaria","renta pasiva","invertir en inmuebles","FIIs","fondos inmobiliarios principiante","fii como invertir","renta pasiva fii"]

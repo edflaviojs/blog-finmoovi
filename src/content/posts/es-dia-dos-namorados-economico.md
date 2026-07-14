@@ -2,6 +2,7 @@
 title: "Día de los Enamorados Económico"
 description: "Celebra el Día de los Enamorados de manera responsable y sin gastar una fortuna. Descubre cómo planificar un día especial con un presupuesto de R$ 125 a R$ 400."
 image: "/images/posts/dia-dos-namorados-economico.webp"
+imageAlt: "Dos pilas de monedas de oro sobre fondo blanco."
 category: "dicas"
 tags:
   - "Día de los Enamorados"

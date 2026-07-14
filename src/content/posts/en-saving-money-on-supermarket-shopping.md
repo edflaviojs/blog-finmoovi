@@ -2,6 +2,7 @@
 title: "Saving Money on Supermarket Shopping"
 description: "Learn to save money on supermarket shopping with practical and simple tips. Discover how to reduce expenses and increase your savings."
 image: "/images/posts/economizar-nas-compras-do-supermercado.webp"
+imageAlt: "Man and woman in a grocery store with shopping cart and products."
 category: "dicas"
 locale: "en"
 tags: ["how to save money on supermarket shopping","personal finance","economy","money"]

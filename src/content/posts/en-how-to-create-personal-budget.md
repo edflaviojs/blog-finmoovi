@@ -2,6 +2,7 @@
 title: "How to Create a Personal Budget in 5 Simple Steps"
 description: "Learn how to build an efficient personal budget that works in practice. A proven method to organize your finances in less than 30 minutes."
 image: "/images/posts/orcamento-pessoal.svg"
+imageAlt: "Colorful stock market chart on black background with orange and blue bars."
 category: "orcamento"
 tags: ["budget", "personal finance", "financial planning", "expense control"]
 author: "FinMoovi"

@@ -2,6 +2,7 @@
 title: "Migrando da Planilha para um App Financeiro"
 description: "Aprenda como migrar da planilha para um app financeiro e organize suas finanças de forma eficaz."
 image: "/images/posts/migrando-da-planilha-para-um-app-financeiro.webp"
+imageAlt: "Dois laptops coloridos em uma mesa com uma xícara de café ao lado."
 category: "ferramentas"
 locale: "pt"
 tags: ["app financeiro","planilha","finanças pessoais","organização financeira","FinMoovi","Mobills","Organizze","migrar planilha app","começar usar app finanças","sair da planilha"]

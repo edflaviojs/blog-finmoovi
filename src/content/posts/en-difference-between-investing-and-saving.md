@@ -2,6 +2,7 @@
 title: "Difference between Investing and Saving"
 description: "Understand the difference between investing and saving to make informed financial decisions and achieve your goals."
 image: "/images/posts/diferenca-entre-investir-e-poupar.webp"
+imageAlt: "Laptop and monitor on a wooden desk with a coffee cup and plants."
 category: "dicas"
 locale: "en"
 tags: ["difference between investing and saving","personal finance","economy","money"]

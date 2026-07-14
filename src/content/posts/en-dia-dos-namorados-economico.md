@@ -2,6 +2,7 @@
 title: "Economic Valentine's Day"
 description: "Learn how to celebrate Valentine's Day without breaking the bank, with creative and practical tips for a memorable and affordable celebration."
 image: "/images/posts/dia-dos-namorados-economico.webp"
+imageAlt: "Two stacks of gold coins on a white surface and background."
 category: "dicas"
 tags:
   - "Valentine's Day"

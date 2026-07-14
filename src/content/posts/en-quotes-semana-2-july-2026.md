@@ -2,6 +2,7 @@
 title: "Weekly Summary: Dollar at R$ 5.11 — Week 2 of july"
 description: "Weekly financial market summary: dollar, euro, Selic and tips for investors. Week 2 of july 2026."
 image: "/images/posts/cotacoes-semana-2026-07-13.webp"
+imageAlt: "Brown leather book, calculator, coins, and green leaves on white marble surface."
 category: "cotacoes"
 tags: ["quotes","dollar","euro","financial market","selic"]
 author: "FinMoovi"

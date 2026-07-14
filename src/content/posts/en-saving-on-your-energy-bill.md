@@ -2,6 +2,7 @@
 title: "Saving on Your Energy Bill"
 description: "Practical tips to reduce energy expenses and save money in your monthly budget."
 image: "/images/posts/economize-na-conta-de-energia.svg"
+imageAlt: "Black background with scattered orange and green dots and a green dotted line."
 category: "dicas"
 locale: "en"
 tags: ["how to save on energy bills","personal finance","economy","money"]
