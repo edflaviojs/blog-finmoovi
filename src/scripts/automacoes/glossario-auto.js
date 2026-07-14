@@ -4,6 +4,7 @@
  * Gera termos do glossário financeiro em 3 idiomas via Groq
  */
 
+import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
@@ -129,11 +130,20 @@ function saveGlossaryTerm(slug, data) {
   const frontmatter = `---
 term: "${data.term.replace(/"/g, '\\"')}"
 definition: "${data.definition.replace(/"/g, '\\"')}"
+title: "${data.term.replace(/"/g, '\\"')}"
+description: "${data.definition.replace(/"/g, '\\"')}"
 category: "${data.category}"
 locale: "${data.locale}"
 image: "${data.image || ''}"
 relatedTerms: ${JSON.stringify(data.relatedTerms || [])}
+author: "${config.content.defaultAuthor}"
 publishedAt: ${data.today}
+readingTime: 5
+translationKey: "${data.translationKey || ''}"
+seo:
+  metaTitle: "${data.term.replace(/"/g, '\\"')}"
+  metaDescription: "${data.definition.replace(/"/g, '\\"')}"
+  keywords: ${JSON.stringify(data.relatedTerms || [])}
 ---
 
 ${data.content}
@@ -237,13 +247,15 @@ async function main() {
       relatedTerms: ptContent.relatedTerms,
       today,
       content: contentWithImages,
+      translationKey: `glossario-${slugPt}`,
     });
     console.log(`📄 PT salvo: ${ptPath}`);
 
     // 5. Translate to EN
     console.log('🌐 Traduzindo para inglês...');
     const enContent = await translateTerm(termData, ptContent, 'en');
-    const slugEn = 'en-' + createSlug(enContent.term);
+    // Filename SEMPRE derivado do slug PT (nunca do termo traduzido) — invariante do i18n-sync.
+    const slugEn = `en-${slugPt}`;
     const enContentWithImages = await insertInlineImages(enContent.content, slugEn);
 
     const enPath = saveGlossaryTerm(slugEn, {
@@ -255,13 +267,14 @@ async function main() {
       relatedTerms: ptContent.relatedTerms,
       today,
       content: enContentWithImages,
+      translationKey: `glossario-${slugPt}`,
     });
     console.log(`📄 EN salvo: ${enPath}`);
 
     // 6. Translate to ES
     console.log('🌐 Traduzindo para espanhol...');
     const esContent = await translateTerm(termData, ptContent, 'es');
-    const slugEs = 'es-' + createSlug(esContent.term);
+    const slugEs = `es-${slugPt}`;
     const esContentWithImages = await insertInlineImages(esContent.content, slugEs);
 
     const esPath = saveGlossaryTerm(slugEs, {
@@ -273,6 +286,7 @@ async function main() {
       relatedTerms: ptContent.relatedTerms,
       today,
       content: esContentWithImages,
+      translationKey: `glossario-${slugPt}`,
     });
     console.log(`📄 ES salvo: ${esPath}`);
 

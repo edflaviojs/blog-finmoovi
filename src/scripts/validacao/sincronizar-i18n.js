@@ -105,7 +105,7 @@ async function main() {
   if (createdAll.length > 0 && !NO_COMMIT) {
     try {
       for (const f of createdAll) execSync(`git add "${f}"`, { stdio: 'inherit' });
-      execSync(`git commit -m "i18n: auto-sincronizar ${createdAll.length} traducao(oes) faltante(s) [bot]"`, { stdio: 'inherit' });
+      execSync(`git -c commit.gpgsign=false commit -m "i18n: auto-sincronizar ${createdAll.length} traducao(oes) faltante(s) [bot]"`, { stdio: 'inherit' });
       console.log(`\n📦 Commit criado com ${createdAll.length} arquivo(s).`);
     } catch (err) {
       console.log(`\n⚠️ Falha ao commitar: ${err.message}`);
