@@ -16,7 +16,8 @@ const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const SOCIAL_DIR = join(process.cwd(), 'social');
 
 function parseFrontmatter(content) {
-  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  // CRLF-safe (mesmo padrão do internal-linking): posts salvos no Windows usam \r\n
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return { fm: {}, body: content };
   const fmRaw = match[1];
   const title = fmRaw.match(/title:\s*"?([^"\n]+)"?/)?.[1]?.trim() || '';

@@ -29,7 +29,7 @@ function insertBanners() {
     let content = readFileSync(filePath, 'utf-8');
 
     // Skip if already has banners
-    if (content.includes('Dica ${config.brand.name}:') || content.includes('Parceiro:')) {
+    if (content.includes(`Dica ${config.brand.name}:`) || content.includes('Parceiro:')) {
       continue;
     }
 
@@ -47,13 +47,13 @@ function insertBanners() {
       const insertPos = h2Matches[1].index;
       const newBody = body.slice(0, insertPos) + BANNER_CTA + '\n' + body.slice(insertPos);
 
-      // Add Loovi banner before the last section
-      const lastH2 = h2Matches[h2Matches.length - 1];
-      if (lastH2) {
-        const finalBody = newBody.slice(0, -100) + BANNER_LOOVI + newBody.slice(-100);
+      // Add Loovi banner at the last paragraph break (never cuts markdown mid-word)
+      const lastBreak = newBody.lastIndexOf('\n\n');
+      if (lastBreak !== -1) {
+        const finalBody = newBody.slice(0, lastBreak) + BANNER_LOOVI + newBody.slice(lastBreak);
         content = frontmatter + finalBody;
       } else {
-        content = frontmatter + newBody;
+        content = frontmatter + newBody + '\n' + BANNER_LOOVI;
       }
     } else {
       // Short post: add banner at the end
