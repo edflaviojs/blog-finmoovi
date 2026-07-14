@@ -143,8 +143,12 @@ function getUpcomingTopic() {
   const currentMonth = now.getMonth() + 1;
   const currentDay = now.getDate();
 
+  // T2: calendário do config tem precedência ({month, day, topic, keywords}); hardcoded = fallback.
+  const calendario = (config.ai?.seasonalCalendar?.length ? config.ai.seasonalCalendar : CALENDARIO_FINANCEIRO)
+    .filter(i => i && i.month && i.day && i.topic && Array.isArray(i.keywords));
+
   // Find topic whose date is 10-20 days from now
-  for (const item of CALENDARIO_FINANCEIRO) {
+  for (const item of calendario) {
     const targetDate = new Date(now.getFullYear(), item.month - 1, item.day);
     const daysUntil = Math.ceil((targetDate - now) / 86400000);
     if (daysUntil >= 10 && daysUntil <= 20) {
@@ -153,7 +157,7 @@ function getUpcomingTopic() {
   }
 
   // Fallback: next upcoming event
-  const sorted = CALENDARIO_FINANCEIRO.map(item => {
+  const sorted = calendario.map(item => {
     const targetDate = new Date(now.getFullYear(), item.month - 1, item.day);
     if (targetDate < now) targetDate.setFullYear(targetDate.getFullYear() + 1);
     return { ...item, daysUntil: Math.floor((targetDate - now) / 86400000) };

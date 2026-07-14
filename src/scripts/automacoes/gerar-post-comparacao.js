@@ -125,8 +125,11 @@ async function main() {
   console.log('⚖️ Gerando post de comparação...');
 
   const weekOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (86400000 * 7));
-  const topicIndex = weekOfYear % COMPARACOES.length;
-  const comp = COMPARACOES[topicIndex];
+  // T2: pool do config tem precedência ({a, b, keywords}); o hardcoded vira fallback/exemplo.
+  const pool = (config.ai?.comparisonTopics?.length ? config.ai.comparisonTopics : COMPARACOES)
+    .filter(c => c && c.a && c.b && Array.isArray(c.keywords));
+  const topicIndex = weekOfYear % pool.length;
+  const comp = pool[topicIndex];
 
   console.log(`📝 ${comp.a} vs ${comp.b}`);
   const today = new Date().toISOString().split('T')[0];
