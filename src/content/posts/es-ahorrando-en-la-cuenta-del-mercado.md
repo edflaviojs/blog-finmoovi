@@ -2,6 +2,7 @@
 title: "Ahorrando en la Cuenta del Mercado"
 description: "Consejos prácticos para reducir gastos semestrales en hasta R$ 1.000,00 y mejorar tus finanzas personales."
 image: "/images/posts/economize-na-conta-do-mercado.webp"
+imageAlt: "Mano sobre una mesa con monedas apiladas y una planta en crecimiento."
 category: "dicas"
 locale: "es"
 tags: ["cómo ahorrar en la cuenta del mercado cada semana","finanzas personales","economía","dinero"]

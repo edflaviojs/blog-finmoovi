@@ -4,6 +4,7 @@ definition: "Entienda qué es zero coupon, cómo funciona, ventajas, riesgos y e
 title: "zero coupon - Glosario Financiero"
 description: "Entienda qué es zero coupon, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/zero-coupon.webp"
+imageAlt: "Letra \"zero\" en blanco sobre fondo púrpura con iluminación azul y rosa."
 category: "basico"
 tags: ["zero coupon", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

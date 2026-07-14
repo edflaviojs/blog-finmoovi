@@ -2,6 +2,7 @@
 title: "Ahorrando en las compras del supermercado"
 description: "Aprende a ahorrar en las compras del supermercado con consejos prácticos y sencillos. Descubre cómo reducir gastos y aumentar tu economía."
 image: "/images/posts/economizar-nas-compras-do-supermercado.webp"
+imageAlt: "Un hombre y una mujer sonriendo en un supermercado con carrito de compras."
 category: "dicas"
 locale: "es"
 tags: ["cómo ahorrar en las compras del supermercado","finanzas personales","economía","dinero"]

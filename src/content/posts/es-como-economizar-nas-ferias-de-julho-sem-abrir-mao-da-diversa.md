@@ -2,6 +2,7 @@
 title: "Cómo ahorrar en las vacaciones de julio sin renunciar a la diversión"
 description: "Descubre siete pasos prácticos para disfrutar de tus vacaciones de julio sin que tus finanzas sufran, con ejemplos reales y herramientas fáciles de usar."
 image: "/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa.webp"
+imageAlt: "Un cuaderno marrón, una calculadora y monedas sobre una superficie blanca con una planta."
 category: "dicas"
 tags:
   - "vacaciones"

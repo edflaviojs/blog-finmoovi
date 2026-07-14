@@ -1,6 +1,7 @@
 ---
 term: "Early Payoff"
 image: "/images/glossario/en-quitacao-antecipada.svg"
+imageAlt: "Colorful pie chart on black background with gray, orange, teal, and dark gray sections."
 definition: "Paying off a debt before its due date, usually with a discount on interest. A right guaranteed by Brazilian consumer law."
 category: "credito"
 locale: "en"

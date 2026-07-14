@@ -4,6 +4,7 @@ definition: "Understand what fundos is, how it works, advantages, risks and prac
 title: "fundos - Financial Glossary"
 description: "Understand what fundos is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/fundos.svg"
+imageAlt: "Multicolored line graph on dark background with black and green hues."
 category: "basico"
 tags: ["fundos", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

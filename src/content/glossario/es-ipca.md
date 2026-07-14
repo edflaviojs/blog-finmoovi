@@ -1,6 +1,7 @@
 ---
 term: "IPCA (Índice de Precios al Consumidor)"
 image: "/images/glossario/es-ipca.svg"
+imageAlt: "Gráfico circular con secciones naranjas, azules, grises y negras en fondo negro."
 definition: "El índice oficial de inflación de Brasil, medido por el IBGE. Rastrea la variación de precios de productos y servicios consumidos por las familias."
 category: "basico"
 locale: "es"

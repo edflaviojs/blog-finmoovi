@@ -2,6 +2,7 @@
 title: "Como economizar nas férias de julho sem abrir mão da diversão"
 description: "Descubra 7 estratégias práticas para cortar custos nas férias de julho e ainda aproveitar ao máximo, usando planejamento e ferramentas como o FinMoovi."
 image: "/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa.webp"
+imageAlt: "Capa de couro marrom, calculadora azul e moedas sobre fundo branco com planta."
 category: "dicas"
 tags:
   - "férias de julho"

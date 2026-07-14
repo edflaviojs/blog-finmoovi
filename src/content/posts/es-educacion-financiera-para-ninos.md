@@ -2,6 +2,7 @@
 title: "Educación financiera para niños"
 description: "Aprende a enseñar finanzas personales a niños y adolescentes, promoviendo una educación financiera sólida desde temprano."
 image: "/images/posts/educacao-financeira-para-criancas.webp"
+imageAlt: "Cuaderno marrón con calculadora, monedas y hojas verdes sobre fondo de mármol blanco."
 category: "dicas"
 locale: "es"
 tags: ["educación financiera para niños","finanzas personales","economía","dinero"]

@@ -2,6 +2,7 @@
 title: "How to Save on a July Vacation Without Giving Up the Fun"
 description: "Practical tips to enjoy your July holidays without breaking the bank, using simple budgeting tricks and the FinMoovi app."
 image: "/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa.webp"
+imageAlt: "Brown leather journal, calculator, coins, and green leaves on white marble surface."
 category: "dicas"
 tags:
   - "July vacation"

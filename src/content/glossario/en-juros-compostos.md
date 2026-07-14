@@ -1,6 +1,7 @@
 ---
 term: "Compound Interest"
 image: "/images/glossario/en-juros-compostos.svg"
+imageAlt: "Teal and orange dots on black background with teal dashed line."
 definition: "Interest calculated on both the initial principal and the accumulated interest from previous periods. The snowball effect of money."
 category: "basico"
 locale: "en"

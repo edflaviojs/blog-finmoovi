@@ -2,6 +2,7 @@
 title: "Resumen Semanal: Dólar a R$ 5.18 — Semana 1 de julio"
 description: "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 1 de julio 2026."
 image: "/images/posts/cotacoes-semana-2026-07-06.webp"
+imageAlt: "Un cuaderno marrón con calculadora y monedas sobre fondo blanco con hojas verdes."
 category: "cotacoes"
 tags: ["cotizaciones","dólar","euro","mercado financiero","selic"]
 author: "FinMoovi"

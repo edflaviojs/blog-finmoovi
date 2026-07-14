@@ -2,6 +2,7 @@
 title: "CDB vs Tesouro Selic: ¿Cuál Rinde Más en 2026"
 description: "Descubre cuál opción de inversión es más rentable entre CDB y Tesouro Selic en 2026, considerando riesgos y beneficios."
 image: "/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026.webp"
+imageAlt: "Dos formas amarillas curvas en un fondo azul oscuro con un punto amarillo."
 category: "investimentos"
 locale: "es"
 tags: ["CDB","Tesouro Selic","inversiones","renta fija","riesgos","beneficios","cdb vs tesouro selic","¿cuál rinde más","renta fija comparación"]

@@ -1,6 +1,7 @@
 ---
 term: "Financial Comfort Zone"
 image: "/images/glossario/en-zona-de-conforto-financeira.svg"
+imageAlt: "Purple and pink candlestick chart on black background with thin white lines."
 definition: "The state where a person has enough resources to cover expenses and maintain their lifestyle without financial stress."
 category: "basico"
 locale: "en"

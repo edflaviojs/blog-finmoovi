@@ -2,6 +2,7 @@
 title: "Tarjeta de crédito vs Tarjeta de débito: ¿Cuál vale más la pena en 2026?"
 description: "Elige entre tarjeta de crédito y débito con conocimiento de causa."
 image: "/images/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-.webp"
+imageAlt: "Doble curva de colores azul y amarillo sobre fondo beige."
 category: "investimentos"
 locale: "es"
 tags: ["tarjeta de crédito","tarjeta de débito","finanzas personales","gestión financiera","crédito","débito","crédito vs débito","ventajas tarjeta crédito","cuando usar débito"]

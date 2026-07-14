@@ -1,6 +1,7 @@
 ---
 term: "Puntaje de Crédito"
 image: "/images/glossario/es-score-de-credito.svg"
+imageAlt: "Gráfico de velas con colores magenta y cian en fondo negro."
 definition: "Un puntaje numérico que indica la probabilidad de que una persona pague sus cuentas a tiempo. Va de 0 a 1000 en Brasil."
 category: "credito"
 locale: "es"

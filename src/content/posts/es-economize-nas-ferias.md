@@ -2,6 +2,7 @@
 title: "Ahorrando en las Vacaciones"
 description: "Aprende a ahorrar en tus vacaciones de julio sin comprometer la diversión. Consejos prácticos para planificar tus gastos y disfrutar de tu tiempo libre."
 image: "/images/posts/economize-nas-ferias.webp"
+imageAlt: "Gráfico de líneas con colores brillantes en pantalla oscura con texto en portugués."
 category: "dicas"
 tags:
   - "ahorro"

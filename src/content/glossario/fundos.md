@@ -4,6 +4,7 @@ definition: "Entenda o que é fundos, como funciona, vantagens, riscos e exemplo
 title: "fundos - Glossário Financeiro"
 description: "Entenda o que é fundos, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/fundos.svg"
+imageAlt: "Gráfico de linhas coloridas em tons de verde, laranja e cinza em fundo preto."
 category: "basico"
 tags: ["fundos", "glossário", "finanças"]
 author: "FinMoovi"

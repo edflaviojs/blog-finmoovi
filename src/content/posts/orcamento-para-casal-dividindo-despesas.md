@@ -2,6 +2,7 @@
 title: "Orçamento para Casal: Dividindo Despesas"
 description: "Aprenda a dividir despesas de forma justa com seu parceiro, criando um orçamento saudável e equilibrado para o casal."
 image: "/images/posts/orcamento-para-casal-dividindo-despesas.webp"
+imageAlt: "Um símbolo de infinito dourado e azul em um fundo cinza claro."
 category: "orcamento"
 locale: "pt"
 tags: ["orçamento casal","dividir despesas","finanças pessoais","casamento","economia","dividir despesas casal","finanças a dois"]

@@ -2,6 +2,7 @@
 title: "Resumen Semanal: Dólar a R$ 5.17 — Semana 5 de junio"
 description: "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 5 de junio 2026."
 image: "/images/posts/cotacoes-semana-2026-06-29.webp"
+imageAlt: "Cuaderno marrón, calculadora y monedas sobre fondo blanco con hojas verdes."
 category: "cotacoes"
 tags: ["cotizaciones","dólar","euro","mercado financiero","selic"]
 author: "FinMoovi"

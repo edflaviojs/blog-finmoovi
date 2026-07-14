@@ -2,6 +2,7 @@
 title: "Regra dos 30 Dias para Compras"
 description: "Aprenda a usar a regra dos 30 dias para compras e economize dinheiro com dicas práticas de finanças pessoais."
 image: "/images/posts/regra-dos-30-dias-para-compras.svg"
+imageAlt: "Pontos laranja e azul em fundo preto com linha pontilhada azul diagonal."
 category: "dicas"
 locale: "pt"
 tags: ["como usar a regra dos 30 dias para compras","finanças pessoais","economia","dinheiro"]

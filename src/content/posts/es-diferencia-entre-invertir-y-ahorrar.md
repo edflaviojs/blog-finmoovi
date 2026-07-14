@@ -2,6 +2,7 @@
 title: "Diferencia entre Invertir y Ahorrar"
 description: "Entienda la diferencia entre invertir y ahorrar para tomar decisiones financieras informadas y alcanzar sus objetivos."
 image: "/images/posts/diferenca-entre-investir-e-poupar.webp"
+imageAlt: "Mesa de madera con laptop, monitor, taza de café y plantas en macetas."
 category: "dicas"
 locale: "es"
 tags: ["diferencia entre invertir y ahorrar","finanzas personales","economía","dinero"]

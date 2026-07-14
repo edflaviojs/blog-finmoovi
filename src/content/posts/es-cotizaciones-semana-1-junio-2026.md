@@ -2,6 +2,7 @@
 title: "Resumen Semanal: Dólar a R$ 5.03 — Semana 1 de junio"
 description: "Resumen semanal del mercado financiero: dólar, euro, Selic y consejos para inversores. Semana 1 de junio 2026."
 image: "/images/posts/es-cotizaciones-semana-1-junio-2026.svg"
+imageAlt: "Gráfico de líneas en colores verde, rojo y gris sobre fondo negro."
 category: "cotacoes"
 tags: ["cotizaciones","dólar","euro","mercado financiero","selic"]
 author: "FinMoovi"

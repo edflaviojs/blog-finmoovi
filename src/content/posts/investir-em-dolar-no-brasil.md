@@ -2,6 +2,7 @@
 title: "Investir em Dólar no Brasil"
 description: "Aprenda a investir em dólar no Brasil de forma segura e inteligente, considerando os riscos e benefícios."
 image: "/images/posts/investir-em-dolar-no-brasil.webp"
+imageAlt: "Três pessoas analisam documentos e tablet em uma mesa de madeira."
 category: "investimentos"
 locale: "pt"
 tags: ["investir em dólar","investimento em dólar","dólar americano","investimento no exterior","investimento em moeda estrangeira","investimento seguro","investir dólar brasil","comprar dólar investimento","dolarizar carteira"]
