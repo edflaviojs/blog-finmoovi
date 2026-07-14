@@ -32,7 +32,7 @@ La estabilidad del [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) puede
 
 ## Comentario sobre la [Selic](/es/glossario/es-selic) e Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ha sido un tema de gran interés en la semana. El Banco Central decidió mantener la tasa Selic en su nivel actual, lo que puede influir en las decisiones de inversión de los brasileños. Una tasa Selic estable puede significar que los rendimientos de las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en reales pueden ser más atractivos, aunque también puede limitar el crecimiento económico si no se acompaña de medidas para estimular la inversión y el consumo.
+La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ha sido un tema de gran interés en la semana. El Banco Central decidió mantener la tasa Selic en su nivel actual, lo que puede influir en las decisiones de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) de los brasileños. Una tasa Selic estable puede significar que los rendimientos de las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en reales pueden ser más atractivos, aunque también puede limitar el crecimiento económico si no se acompaña de medidas para estimular la inversión y el consumo.
 
 ![Comentario sobre la Selic e Impacto en las Inversiones](/images/posts/es-cotizaciones-semana-4-junio-2026-inline-3.webp)
 
@@ -42,7 +42,7 @@ Es importante considerar que las decisiones sobre la tasa Selic tienen un impact
 
 ## Consejo Práctico para el Inversor Individual
 
-Para los inversores individuales, es crucial diversificar su cartera de inversiones para minimizar los riesgos y maximizar los rendimientos. Una forma de hacerlo es considerar inversiones en múltiples monedas, lo que puede ayudar a proteger contra la [volatilidad](/es/glossario/es-volatilidade) de las tasas de cambio. Herramientas como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) pueden ser muy útiles para seguir y gestionar estas inversiones de manera eficiente. [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) ofrece la posibilidad de monitorear y administrar inversiones en diferentes monedas, lo que facilita la toma de decisiones informadas y la optimización de la cartera de inversiones.
+Para los inversores individuales, es crucial diversificar su cartera de [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) para minimizar los riesgos y maximizar los rendimientos. Una forma de hacerlo es considerar inversiones en múltiples monedas, lo que puede ayudar a proteger contra la [volatilidad](/es/glossario/es-volatilidade) de las tasas de cambio. Herramientas como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) pueden ser muy útiles para seguir y gestionar estas inversiones de manera eficiente. [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) ofrece la posibilidad de monitorear y administrar inversiones en diferentes monedas, lo que facilita la toma de decisiones informadas y la optimización de la cartera de inversiones.
 
 ## Qué Esperar para la Próxima Semana
 

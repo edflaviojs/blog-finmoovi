@@ -30,7 +30,7 @@ La semana comenzó con el [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026
 
 ## La Selic y su Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ha sido un tema de gran interés en las últimas semanas. El Banco Central decidió mantener la tasa en su nivel actual, lo que ha tenido un impacto directo en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). La decisión de no alterar la tasa Selic puede influir en la rentabilidad de las [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) a corto plazo, como los títulos públicos y los depósitos a plazo fijo. Es importante que los inversores consideren estas decisiones al momento de diversificar su cartera.
+La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ha sido un tema de gran interés en las últimas semanas. El Banco Central decidió mantener la tasa en su nivel actual, lo que ha tenido un impacto directo en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). La decisión de no alterar la tasa Selic puede influir en la rentabilidad de las [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) a corto plazo, como los [títulos públicos](/es/posts/es-tesouro-direto-para-iniciantes) y los depósitos a plazo fijo. Es importante que los inversores consideren estas decisiones al momento de diversificar su cartera.
 
 ![La Selic y su Impacto en las Inversiones](/images/posts/es-cotizaciones-semana-3-junio-2026-inline-3.webp)
 

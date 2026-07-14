@@ -35,7 +35,7 @@ An example of how private pension works: imagine that you invest R$ 500 per mont
 
 Investing on your own means that you choose the [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and manage your [money](/en/posts/en-30-day-rule-for-purchases) yourself. This can include [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in [stocks](/en/glossario/en-acoes), bonds, [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) funds, real estate, among others. This option offers more flexibility and control over [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), but also requires more knowledge and skill to manage risks.
 
-An example of how investing on your own works: imagine that you invest R$ 1,000 per month in a stock investment fund, with an administration fee of 1.5% per year. If the fund has an average performance of 10% per year, you can have a patrimony of approximately R$ 300,000 after 10 years.
+An example of how investing on your own works: imagine that you invest R$ 1,000 per month in a [stock](/en/glossario/en-stock) investment fund, with an administration fee of 1.5% per year. If the fund has an average performance of 10% per year, you can have a patrimony of approximately R$ 300,000 after 10 years.
 
 ## Comparative Table
 

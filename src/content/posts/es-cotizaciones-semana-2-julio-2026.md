@@ -18,9 +18,9 @@ seo:
 
 ## Resumo da semana (6 a 13 de julho de 2026)
 
-A semana foi agitada nos mercados de câmbio e, como sempre, a taxa [Selic](/es/glossario/es-selic) continua mexendo com a gente que tem dinheiro investido. Vamos ao que interessa: como o dólar e o euro se comportaram, o que a Selic fez do nosso bolso e, claro, um conselho prático para quem quer proteger a carteira. Ah, e já adiantando: o app [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) facilita acompanhar tudo isso em tempo real, sem precisar ficar pulando de site em site.
+A semana foi agitada nos mercados de câmbio e, como sempre, a taxa [Selic](/es/glossario/es-selic) continua mexendo com a gente que tem dinheiro investido. Vamos ao que interessa: como o [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) e o euro se comportaram, o que a Selic fez do nosso bolso e, claro, um conselho prático para quem quer proteger a carteira. Ah, e já adiantando: o app [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) facilita acompanhar tudo isso em tempo real, sem precisar ficar pulando de site em site.
 
-### 1. Dólar e euro: tendência da semana
+### 1. [Dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) e euro: tendência da semana
 
 - **Dólar (USD/BRL) – R$ 5,11**  
   O real ganhou um tiquinho contra o dólar ao longo dos últimos sete dias. Na segunda‑feira, a cotação estava em torno de R$ 5,15; até sexta‑feira já estava em R$ 5,11. A queda foi impulsionada pela notícia de que a Reserva Federal dos EUA manteve a taxa de [juros](/es/glossario/es-juros) estável, o que tirou um pouco da pressão de compra de dólares por investidores internacionais.

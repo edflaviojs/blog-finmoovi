@@ -44,7 +44,7 @@ The anxiety of snagging the “best deal” often leads to impulse purchases. St
 That leaves **R$ 460** for extra spending. If the vacation is in July, earmark **R$ 200** of that amount for the trip, keeping R$ 260 for the rest of the month.  
 
 ### Handy tool  
-The **FinMoovi** app lets you create specific categories – “July Vacation” – and track in real time how much you’ve already spent, helping you stick to the ceiling you set.  
+The **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)** app lets you create specific categories – “July Vacation” – and track in real time how much you’ve already spent, helping you stick to the ceiling you set.  
 
 ---  
 
@@ -78,7 +78,7 @@ That’s a **R$ 140** saving per person. If you’re traveling with a group, t
 
 ## 4. Smart lodging: Airbnb, hostels, or house swapping  
 
-### Money‑saving strategies  
+### [Money](/en/posts/en-30-day-rule-for-purchases)‑saving strategies  
 - **Airbnb**: look for “private rooms” in residential neighborhoods; the price gap to a 3‑star hotel can be 40 %–60 %.  
 - **Hostels**: dorm beds cost between R$ 40 and R$ 80 per night.  
 - **Friends/Family house**: trade favors (like pet‑sitting) and skip the nightly fee entirely.  

@@ -34,13 +34,13 @@ A boa notícia é que a volatilidade não foi tão agressiva; os pares oscilaram
 
 ## 2. [Selic](/en/posts/en-quotes-semana-1-june-2026) e o Impacto nos Investimentos
 
-Nesta segunda‑feira, o Copom decidiu manter a taxa Selic em **13,75 % ao ano**. O Comitê explicou que a inflação ainda está acima da meta e que, por enquanto, não há espaço para cortes. Para o investidor, isso tem duas consequências práticas:
+Nesta segunda‑feira, o Copom decidiu manter a taxa [Selic](/en/posts/en-quotes-semana-3-june-2026) em **13,75 % ao ano**. O Comitê explicou que a inflação ainda está acima da meta e que, por enquanto, não há espaço para cortes. Para o investidor, isso tem duas consequências práticas:
 
 ![2. Selic e o Impacto nos Investimentos](/images/posts/en-quotes-semana-2-july-2026-inline-3.webp)
 
 
 
-1. **[Renda fixa](/en/glossario/en-renda-fixa)** – Os títulos públicos (Tesouro Selic) continuam rendendo próximo da taxa oficial, o que os mantém como “porto seguro” para quem quer preservar o capital sem muita exposição ao risco. Se você tem dinheiro guardado na [poupança](/en/glossario/en-poupanca), vale a pena migrar para o Tesouro Selic ou para CDBs de bancos sólidos que pagam um percentual do [CDI](/en/glossario/en-cdi).
+1. **[Renda fixa](/en/glossario/en-renda-fixa)** – Os títulos públicos (Tesouro [Selic](/en/posts/en-quotes-semana-4-june-2026)) continuam rendendo próximo da taxa oficial, o que os mantém como “porto seguro” para quem quer preservar o capital sem muita exposição ao risco. Se você tem dinheiro guardado na [poupança](/en/glossario/en-poupanca), vale a pena migrar para o Tesouro Selic ou para CDBs de bancos sólidos que pagam um percentual do [CDI](/en/glossario/en-cdi).
 
 2. **Renda variável** – Juros altos tendem a deixar as [ações](/en/glossario/en-acoes) mais caras, pois o custo de oportunidade de investir em empresas aumenta. Setores como consumo e varejo podem sentir pressão, enquanto utilities (energia, água) costumam ser mais resilientes. Se você tem carteira de ações, pense em reforçar posições em empresas que pagam dividendos consistentes – elas costumam se sair melhor quando a taxa está alta.
 

@@ -29,13 +29,13 @@ A semana passou sem grandes surpresas nos principais indicadores, mas alguns mov
 
 - **Dólar (USD/BRL = R$ 5,11)** – O real se manteve estável em torno de R$ 5,10‑5,12. O dólar acabou a semana levemente mais fraco (cerca de 0,3 %), puxado por dados de [inflação](/glossario/inflacao) nos EUA que ficaram abaixo do esperado. Na prática, isso significa que a compra de produtos importados ou de viagens ao exterior ficou um pouquinho mais barata, mas ainda longe de representar uma diferença significativa no seu dia a dia.  
 
-- **Euro (EUR/BRL = R$ 5,83)** – O euro seguiu a mesma direção do dólar, recuando cerca de 0,2 % ao final da semana. A queda foi impulsionada por um enfraquecimento da zona‑euro diante das discussões sobre a política monetária do BCE. Para quem tem contas ou investimentos em euros, a boa notícia é que a cotação está mais favorável para quem deseja trazer o dinheiro de volta ao Brasil.  
+- **Euro (EUR/BRL = R$ 5,83)** – O euro seguiu a mesma direção do dólar, recuando cerca de 0,2 % ao final da semana. A queda foi impulsionada por um enfraquecimento da zona‑euro diante das discussões sobre a política monetária do BCE. Para quem tem contas ou investimentos em euros, a boa notícia é que a cotação está mais favorável para quem deseja trazer o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta ao Brasil.  
 
 Em resumo: tanto o dólar quanto o euro mostraram leve desvalorização frente ao real, mas a variação foi pequena demais para mudar drasticamente suas decisões de compra ou investimento.
 
-## Selic e o Impacto nos Investimentos  
+## [Selic](/glossario/selic) e o Impacto nos Investimentos  
 
-A taxa Selic continuou em **13,75 % ao ano**, nível que se manteve após a última reunião do Copom. Essa taxa alta ainda é o principal “freio” da inflação, mas também encarece o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-). Para quem tem dinheiro aplicado em renda fixa, isso traz duas consequências claras:
+A taxa Selic continuou em **13,75 % ao ano**, nível que se manteve após a última reunião do Copom. Essa taxa alta ainda é o principal “freio” da inflação, mas também encarece o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-). Para quem tem [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) aplicado em renda fixa, isso traz duas consequências claras:
 
 ![Selic e o Impacto nos Investimentos  ](/images/posts/cotacoes-semana-2-julho-2026-inline-3.webp)
 
@@ -49,7 +49,7 @@ Em termos práticos: quem já tem parte do patrimônio em títulos atrelados à 
 
 ## Dica Prática para o Investidor Pessoa Física  
 
-**Monte uma “cobertura” cambial simples:** se você tem despesas previstas em dólares ou euros (viagem, compra de eletrônicos, estudos no exterior), considere comprar uma pequena fração da moeda quando o real estiver mais forte. Com o dólar a R$ 5,11 e o euro a R$ 5,83, ainda há espaço para proteger seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) contra eventuais alta nos próximos meses.  
+**Monte uma “cobertura” cambial simples:** se você tem despesas previstas em dólares ou euros (viagem, compra de eletrônicos, estudos no exterior), considere comprar uma pequena fração da [moeda](/glossario/moeda) quando o real estiver mais forte. Com o dólar a R$ 5,11 e o euro a R$ 5,83, ainda há espaço para proteger seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) contra eventuais alta nos próximos meses.  
 
 Para quem não quer lidar com corretoras internacionais, o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** facilita esse processo. O app permite acompanhar a cotação das moedas em tempo real, definir alertas de preço e até comprar pequenas quantias de dólar ou euro diretamente da sua conta bancária, tudo de forma prática e sem burocracia.
 

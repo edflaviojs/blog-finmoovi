@@ -31,7 +31,7 @@ Julho é o mês mais esperado por quem quer fugir da rotina, mas também o perí
 ## 1. Defina um teto de gasto antes de reservar
 
 ### Por que isso importa?
-A ansiedade de garantir a “melhor oferta” costuma levar a compras impulsivas. Comece anotando quanto você pode destinar ao lazer sem mexer na reserva de emergência (geralmente 3 a 6 meses de despesas).
+A ansiedade de garantir a “melhor oferta” costuma levar a compras impulsivas. Comece anotando quanto você pode destinar ao lazer sem mexer na [reserva de emergência](/glossario/reserva-de-emergencia) (geralmente 3 a 6 meses de despesas).
 
 ![1. Defina um teto de gasto antes de reservar](/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa-2.webp)
 
@@ -43,10 +43,10 @@ A ansiedade de garantir a “melhor oferta” costuma levar a compras impulsivas
 - Despesas fixas mensais (aluguel, contas, transporte): R$ 1.500
 - Reserva de emergência: R$ 500 (10 % da renda)
 
-Sobram **R$ 460** para gastos extras. Se as férias ocorrem em julho, reserve **R$ 200** desse valor para a viagem, mantendo R$ 260 para o restante do mês.
+Sobram **R$ 460** para gastos extras. Se as férias ocorrem em julho, reserve **R$ 200** desse [valor](/glossario/valor) para a viagem, mantendo R$ 260 para o restante do mês.
 
 ### Ferramenta útil
-O **app FinMoovi** permite criar categorias específicas – “Férias de julho” – e acompanhar em tempo real o quanto já foi consumido, ajudando a respeitar o teto estabelecido.
+O **app [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** permite criar categorias específicas – “Férias de julho” – e acompanhar em tempo real o quanto já foi consumido, ajudando a respeitar o teto estabelecido.
 
 ---
 
@@ -130,7 +130,7 @@ Se você gastar R$ 80 em restaurantes, a diferença são **R$ 35** por dia. 
 ## 7. Controle de gastos em tempo real
 
 ### Como não perder o rumo
-Mesmo com o melhor planejamento, imprevistos acontecem. Use o **FinMoovi** para registrar cada despesa (até as de poucos centavos) e receber alertas quando estiver próximo do limite diário. O app ainda gera relatórios mensais que mostram onde foi possível cortar custos para a próxima viagem.
+Mesmo com o melhor planejamento, imprevistos acontecem. Use o **[FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** para registrar cada despesa (até as de poucos centavos) e receber alertas quando estiver próximo do limite diário. O app ainda gera relatórios mensais que mostram onde foi possível cortar custos para a próxima viagem.
 
 ---
 
