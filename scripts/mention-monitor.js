@@ -15,14 +15,15 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { BRAND_NAME, MAIN_DOMAIN, BLOG_HOST } from './lib/site.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // --- Configuration ---
-const BRAND_TERMS = ['FinMoovi', 'finmoovi'];
-const SITE_DOMAIN = 'finmoovi.com';
-const BLOG_DOMAIN = 'blog.finmoovi.com';
+const BRAND_TERMS = [BRAND_NAME, BRAND_NAME.toLowerCase()];
+const SITE_DOMAIN = MAIN_DOMAIN;
+const BLOG_DOMAIN = BLOG_HOST;
 const MAX_RESULTS = 20;
 const REQUEST_DELAY_MIN_MS = 3000;
 const REQUEST_DELAY_MAX_MS = 5000;
@@ -61,9 +62,10 @@ function extractContext(html, term) {
 }
 
 function hasLinkToSite(html) {
+  const escaped = (d) => d.replace(/\./g, '\\.');
   const linkPatterns = [
-    /href\s*=\s*["'][^"']*finmoovi\.com[^"']*["']/i,
-    /href\s*=\s*["'][^"']*blog\.finmoovi\.com[^"']*["']/i,
+    new RegExp(`href\\s*=\\s*["'][^"']*${escaped(SITE_DOMAIN)}[^"']*["']`, 'i'),
+    new RegExp(`href\\s*=\\s*["'][^"']*${escaped(BLOG_DOMAIN)}[^"']*["']`, 'i'),
   ];
   return linkPatterns.some((pattern) => pattern.test(html));
 }
@@ -81,7 +83,7 @@ function extractTitle(html) {
 async function searchViaAPI(apiKey, cseId) {
   log('Using Google Custom Search API...');
   const results = [];
-  const query = 'finmoovi -site:finmoovi.com -site:github.com';
+  const query = `${BRAND_NAME.toLowerCase()} -site:${SITE_DOMAIN} -site:github.com`;
 
   // dateRestrict=w1 limits to past week
   const url = new URL('https://www.googleapis.com/customsearch/v1');
@@ -150,7 +152,7 @@ async function searchViaAPI(apiKey, cseId) {
 async function searchViaFallback() {
   log('Using Google scraping fallback (no API key configured)...');
   const results = [];
-  const query = 'finmoovi -site:finmoovi.com -site:github.com';
+  const query = `${BRAND_NAME.toLowerCase()} -site:${SITE_DOMAIN} -site:github.com`;
   const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}&tbs=qdr:w&num=${MAX_RESULTS}`;
 
   try {
@@ -183,7 +185,7 @@ async function searchViaFallback() {
         decodedUrl.includes('google.com') ||
         decodedUrl.includes('youtube.com') ||
         decodedUrl.includes('webcache.') ||
-        decodedUrl.includes('finmoovi.com') ||
+        decodedUrl.includes(SITE_DOMAIN) ||
         decodedUrl.includes('github.com') ||
         seenUrls.has(decodedUrl)
       ) {
@@ -200,7 +202,7 @@ async function searchViaFallback() {
       if (
         decodedUrl.includes('google.com') ||
         decodedUrl.includes('youtube.com') ||
-        decodedUrl.includes('finmoovi.com') ||
+        decodedUrl.includes(SITE_DOMAIN) ||
         decodedUrl.includes('github.com') ||
         seenUrls.has(decodedUrl)
       ) {
@@ -257,7 +259,7 @@ async function checkPage(pageUrl) {
 
     const hasLink = hasLinkToSite(html);
     const title = extractTitle(html);
-    const context = extractContext(html, 'finmoovi');
+    const context = extractContext(html, BRAND_NAME.toLowerCase());
 
     return {
       foundAt: new Date().toISOString(),
@@ -276,7 +278,7 @@ async function checkPage(pageUrl) {
 // --- Main ---
 
 async function main() {
-  log('=== FinMoovi Brand Mention Monitor ===');
+  log(`=== ${BRAND_NAME} Brand Mention Monitor ===`);
   log(`Looking for unlinked mentions of "${BRAND_TERMS.join('", "')}"`);
 
   // Ensure data directory exists
@@ -346,7 +348,7 @@ async function main() {
 
     if (mention.hasLink) {
       linkedMentions++;
-      log(`    Has link to finmoovi.com`);
+      log(`    Has link to ${SITE_DOMAIN}`);
     } else {
       unlinkedMentions++;
       log(`    NO link - outreach opportunity!`);

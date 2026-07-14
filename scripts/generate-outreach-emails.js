@@ -8,6 +8,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { BRAND_NAME, BLOG_HOST } from './lib/site.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -44,8 +45,8 @@ ${opportunity.suggestedReplacement}
 Espero que ajude seus leitores!
 
 Atenciosamente,
-Equipe FinMoovi
-blog.finmoovi.com`,
+Equipe ${BRAND_NAME}
+${BLOG_HOST}`,
   };
 }
 
@@ -62,14 +63,14 @@ ${opportunity.suggestedReplacement}
 Hope it helps your readers!
 
 Best regards,
-FinMoovi Team
-blog.finmoovi.com`,
+${BRAND_NAME} Team
+${BLOG_HOST}`,
   };
 }
 
 // --- Main ---
 function main() {
-  log('=== FinMoovi Outreach Email Generator ===');
+  log(`=== ${BRAND_NAME} Outreach Email Generator ===`);
   log('');
 
   // Load opportunities

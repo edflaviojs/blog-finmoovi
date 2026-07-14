@@ -12,12 +12,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
+import { SITE_URL, BLOG_NAME, NICHE, tagSlug } from './lib/site.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'src', 'content', 'posts');
 const SYNCED_FILE = path.join(ROOT, '.github', 'data', 'synced-hashnode.json');
-const SITE_URL = 'https://blog.finmoovi.com';
 const MAX_PER_RUN = 2;
 
 const TOKEN = process.env.HASHNODE_TOKEN;
@@ -81,12 +81,12 @@ function tagObjects(tags) {
   const objs = tags
     .map(t => ({ name: t, slug: t.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().split(/\s+/).join('-').slice(0, 40) }))
     .filter(t => t.slug.length >= 2);
-  return objs.length ? objs.slice(0, 5) : [{ name: 'Personal Finance', slug: 'personal-finance' }];
+  return objs.length ? objs.slice(0, 5) : [{ name: NICHE.en, slug: tagSlug(NICHE.en) }];
 }
 
 async function publishToHashnode(post) {
   const canonical = canonicalUrl(post.slug);
-  const body = post.content.trim() + `\n\n---\n\n*Originally published at [FinMoovi Blog](${canonical})*`;
+  const body = post.content.trim() + `\n\n---\n\n*Originally published at [${BLOG_NAME}](${canonical})*`;
 
   const query = `mutation PublishPost($input: PublishPostInput!) {
     publishPost(input: $input) { post { id url slug } }

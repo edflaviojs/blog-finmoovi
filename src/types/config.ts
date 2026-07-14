@@ -31,6 +31,8 @@ export interface BrandColors {
   accentGreen: string;
   /** Error/negative color */
   accentRed: string;
+  /** Dark background base (PWA manifest theme/background). Default: #0d1117 */
+  background?: string;
 }
 
 export interface BrandDomains {
@@ -53,11 +55,20 @@ export interface Brand {
   domains: BrandDomains;
 }
 
+export interface CategoryNavItem {
+  /** Category slug (must exist in `categories`) */
+  slug: string;
+  /** Display label shown in header/mobile/footer menus */
+  label: string;
+}
+
 export interface ContentConfig {
   /** Post categories for this niche (used in frontmatter schema) */
   categories: readonly string[];
   /** Glossary/term categories */
   glossaryCategories: readonly string[];
+  /** Single source of truth for the "Categorias" menu (header + mobile + footer) */
+  categoryNav: readonly CategoryNavItem[];
   /** Niche description per locale (used in AI prompts and meta) */
   niche: LocaleStrings;
   /** Default author name for posts */
@@ -75,8 +86,14 @@ export interface AppConfig {
   features: { pt: string[]; en: string[]; es: string[] };
   /** CTA button text */
   ctaText: LocaleStrings;
+  /** CTA card/banner title */
+  ctaTitle: LocaleStrings;
   /** Small note below CTA */
   ctaNote: LocaleStrings;
+  /** Schema.org SoftwareApplication applicationCategory (e.g., FinanceApplication) */
+  schemaCategory?: string;
+  /** Schema.org offer priceCurrency (e.g., BRL, USD) */
+  priceCurrency?: string;
 }
 
 export interface SocialConfig {

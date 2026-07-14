@@ -15,12 +15,12 @@
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { SITE_URL, NICHE_KEYWORDS, tagSlug } from './lib/site.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const POSTS_DIR = join(ROOT, 'src', 'content', 'posts');
 const TRACKING_FILE = join(ROOT, '.github', 'data', 'pinterest-published.json');
-const SITE_URL = 'https://blog.finmoovi.com';
 const MAX_PINS_PER_RUN = 3;
 const DAYS_LOOKBACK = 14;
 
@@ -33,7 +33,8 @@ const PINTEREST_BOARD_ID = process.env.PINTEREST_BOARD_ID;
  * Parse frontmatter from a markdown file
  */
 function parseFrontmatter(content) {
-  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  // CRLF-safe (mesmo padrão do internal-linking)
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return null;
 
   const frontmatter = {};
@@ -62,25 +63,12 @@ function parseFrontmatter(content) {
  * Generate Pinterest-optimized description (max 150 chars with hashtags)
  */
 function generatePinDescription(title, category, tags) {
-  const hashtags = [
-    '#financaspessoais',
-    '#educacaofinanceira',
-    '#dinheiro',
-    '#economia',
-  ];
+  // Hashtags base derivadas das keywords do nicho no config
+  const hashtags = NICHE_KEYWORDS.slice(0, 4).map(k => `#${tagSlug(k)}`);
 
-  // Add category-specific hashtag
-  const categoryHashtags = {
-    orcamento: '#orcamento',
-    investimentos: '#investimentos',
-    dicas: '#dicasfinanceiras',
-    cotacoes: '#cotacoes',
-    ferramentas: '#ferramentas',
-    glossario: '#glossariofinanceiro',
-  };
-
-  if (category && categoryHashtags[category]) {
-    hashtags.unshift(categoryHashtags[category]);
+  // Hashtag específica da categoria do post
+  if (category) {
+    hashtags.unshift(`#${tagSlug(category)}`);
   }
 
   // Build description: title + hashtags, max 150 chars

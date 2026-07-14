@@ -20,12 +20,12 @@
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { SITE_URL, NICHE, userAgent, tagSlug, BRAND_NAME } from './lib/site.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const POSTS_DIR = join(ROOT, 'src', 'content', 'posts');
 const TRACKING_FILE = join(ROOT, '.github', 'data', 'social-bookmarks.json');
-const SITE_URL = 'https://blog.finmoovi.com';
 const MAX_SUBMISSIONS_PER_RUN = 5;
 const DAYS_LOOKBACK = 7;
 
@@ -37,7 +37,8 @@ const RAINDROP_COLLECTION_ID = process.env.RAINDROP_COLLECTION_ID || '-1'; // -1
  * Parse frontmatter from a markdown file
  */
 function parseFrontmatter(content) {
-  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  // CRLF-safe (mesmo padrão do internal-linking)
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return null;
 
   const frontmatter = {};
@@ -81,7 +82,7 @@ async function submitToRaindrop({ url, title, tags }) {
     const body = {
       link: url,
       title,
-      tags: tags ? tags.split(',').map(t => t.trim()) : ['finmoovi', 'financas'],
+      tags: tags ? tags.split(',').map(t => t.trim()) : [tagSlug(BRAND_NAME), tagSlug(NICHE.pt)],
       collection: { '$id': parseInt(RAINDROP_COLLECTION_ID) },
     };
 
@@ -141,7 +142,7 @@ async function submitToMix({ url, title }) {
       method: 'HEAD',
       redirect: 'follow',
       headers: {
-        'User-Agent': 'FinMoovi-Bot/1.0',
+        'User-Agent': userAgent('Bot'),
       },
     });
 
@@ -220,7 +221,8 @@ async function main() {
 
   for (const post of toSubmit) {
     const postUrl = getPostUrl(post.slug);
-    const tagStr = post.category ? `finmoovi,financas,${post.category}` : 'finmoovi,financas';
+    const baseTags = `${tagSlug(BRAND_NAME)},${tagSlug(NICHE.pt)}`;
+    const tagStr = post.category ? `${baseTags},${post.category}` : baseTags;
 
     console.log(`Submitting: ${post.title}`);
     console.log(`  URL: ${postUrl}`);

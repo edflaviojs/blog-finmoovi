@@ -2,12 +2,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
+import { SITE_URL, MAIN_DOMAIN, userAgent, config } from './lib/site.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'src', 'content', 'posts');
 const WEBMENTIONS_FILE = path.join(ROOT, '.github', 'data', 'sent-webmentions.json');
-const SITE_URL = 'https://blog.finmoovi.com';
+const UA = `${userAgent('Webmention')} (${SITE_URL})`;
 const DAYS_THRESHOLD = 7;
 const MAX_SENDS = 10;
 const DELAY_MS = 2000;
@@ -56,7 +57,10 @@ function getRecentPosts() {
         slug = slug.replace(/^es-/, '');
       }
 
-      const sourceUrl = `${SITE_URL}/${locale}/posts/${slug}/`;
+      // Locale padrão NÃO tem prefixo na URL (prefixDefaultLocale: false)
+      const sourceUrl = locale === config.defaultLocale
+        ? `${SITE_URL}/posts/${slug}/`
+        : `${SITE_URL}/${locale}/posts/${slug}/`;
 
       posts.push({ file, sourceUrl, content });
     } catch (err) {
@@ -74,7 +78,7 @@ function extractExternalLinks(markdownContent) {
   return [...new Set(matches)].filter(url => {
     try {
       const parsed = new URL(url);
-      if (parsed.hostname.includes('finmoovi.com')) return false;
+      if (parsed.hostname.includes(MAIN_DOMAIN)) return false;
       if (parsed.hostname.includes('github.com')) return false;
       if (parsed.hostname.includes('googleapis.com')) return false;
       if (parsed.pathname.match(/\.(png|jpg|jpeg|gif|svg|css|js|woff|ico)$/i)) return false;
@@ -90,7 +94,7 @@ async function discoverWebmentionEndpoint(targetUrl) {
     const response = await fetch(targetUrl, {
       method: 'GET',
       headers: {
-        'User-Agent': 'FinMoovi-Webmention/1.0 (https://blog.finmoovi.com)',
+        'User-Agent': UA,
         'Accept': 'text/html',
       },
       signal: AbortSignal.timeout(15000),
@@ -154,7 +158,7 @@ async function sendWebmention(endpoint, sourceUrl, targetUrl) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
-      'User-Agent': 'FinMoovi-Webmention/1.0 (https://blog.finmoovi.com)',
+      'User-Agent': UA,
     },
     body: body.toString(),
     signal: AbortSignal.timeout(15000),

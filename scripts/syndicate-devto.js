@@ -2,12 +2,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
+import { SITE_URL, BLOG_NAME, NICHE, tagSlug } from './lib/site.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'src', 'content', 'posts');
 const SYNCED_FILE = path.join(ROOT, '.github', 'data', 'synced-devto.json');
-const SITE_URL = 'https://blog.finmoovi.com';
 const MAX_PER_RUN = 2;
 
 const DEVTO_API_KEY = process.env.DEVTO_API_KEY;
@@ -65,7 +65,7 @@ function buildCanonicalUrl(slug) {
 
 function buildDevtoBody(post) {
   const canonicalUrl = buildCanonicalUrl(post.slug);
-  const footer = `\n\n---\n\n*Originally published at [FinMoovi Blog](${canonicalUrl})*`;
+  const footer = `\n\n---\n\n*Originally published at [${BLOG_NAME}](${canonicalUrl})*`;
   return post.content.trim() + footer;
 }
 
@@ -82,8 +82,8 @@ function sanitizeTag(tag) {
   return cleaned;
 }
 
-// Fallback tags for finance posts when original tags are too long
-const FALLBACK_TAGS = ['personalfinance', 'money', 'budgeting', 'fintech'];
+// Fallback tags derivadas do nicho do config (quando as tags do post são inválidas p/ dev.to)
+const FALLBACK_TAGS = [tagSlug(NICHE.en).slice(0, 20), 'blog'].filter(t => t.length >= 2);
 
 async function postToDevto(post) {
   const canonicalUrl = buildCanonicalUrl(post.slug);

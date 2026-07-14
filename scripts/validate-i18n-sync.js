@@ -13,6 +13,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { config } from "../site.config.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const POSTS_DIR = path.resolve(__dirname, "../src/content/posts");
@@ -37,7 +38,8 @@ const PT_WORDS_BLOCKED_IN_ES = [
   "resumo", "aprenda", "app financeiro"
 ];
 
-const ALLOWED_PT_TERMS = ["tesouro direto", "selic", "cdi", "ipca", "finmoovi", "pgbl", "vgbl"];
+// ⚙️ AJUSTE POR NICHO: termos técnicos PT permitidos em EN/ES (+ a marca, sempre dinâmica).
+const ALLOWED_PT_TERMS = ["tesouro direto", "selic", "cdi", "ipca", "pgbl", "vgbl", config.brand.name.toLowerCase()];
 
 let errors = [];
 

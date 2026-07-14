@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { config, MAIN_DOMAIN } from './lib/site.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -11,13 +12,14 @@ const MAX_TOTAL = 30;
 const DELAY_MIN_MS = 5000;
 const DELAY_MAX_MS = 8000;
 
+// Queries derivadas do nicho no config (fórmulas clássicas de prospecção de guest post)
 const QUERIES = [
-  { query: 'finanças pessoais escreva para nós', language: 'pt' },
-  { query: 'personal finance write for us', language: 'en' },
-  { query: 'finanzas personales escribe para nosotros', language: 'es' },
-  { query: 'finanças colabore conosco', language: 'pt' },
-  { query: 'finance blog guest post', language: 'en' },
-  { query: 'finance contribute', language: 'en' },
+  { query: `${config.content.niche.pt} escreva para nós`, language: 'pt' },
+  { query: `${config.content.niche.en} write for us`, language: 'en' },
+  { query: `${config.content.niche.es} escribe para nosotros`, language: 'es' },
+  { query: `${config.content.niche.pt} colabore conosco`, language: 'pt' },
+  { query: `${config.content.niche.en} blog guest post`, language: 'en' },
+  { query: `${config.content.niche.en} contribute`, language: 'en' },
 ];
 
 const USER_AGENTS = [
@@ -197,8 +199,8 @@ async function main() {
         continue;
       }
 
-      // Skip finmoovi.com
-      if (result.url.includes('finmoovi.com')) continue;
+      // Skip o próprio domínio
+      if (result.url.includes(MAIN_DOMAIN)) continue;
 
       const opportunity = {
         foundAt: today,

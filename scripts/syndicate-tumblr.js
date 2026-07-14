@@ -13,12 +13,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
+import { SITE_URL, BRAND_NAME, BLOG_NAME } from './lib/site.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'src', 'content', 'posts');
 const SYNCED_FILE = path.join(ROOT, '.github', 'data', 'synced-tumblr.json');
-const SITE_URL = 'https://blog.finmoovi.com';
 const MAX_PER_RUN = 2;
 
 const CLIENT_ID = process.env.TUMBLR_CLIENT_ID;
@@ -71,12 +71,12 @@ async function getAccessToken() {
 
 // Frases de chamada variadas (evita pegada de link repetido/automático)
 const ANCHORS = [
-  'Leia o artigo completo no FinMoovi Blog',
-  'Continue lendo no FinMoovi',
-  'Veja o guia completo no FinMoovi Blog',
+  `Leia o artigo completo no ${BLOG_NAME}`,
+  `Continue lendo no ${BRAND_NAME}`,
+  `Veja o guia completo no ${BLOG_NAME}`,
   'Confira o post completo',
-  'Saiba mais no FinMoovi Blog',
-  'Leia mais sobre isso no FinMoovi',
+  `Saiba mais no ${BLOG_NAME}`,
+  `Leia mais sobre isso no ${BRAND_NAME}`,
 ];
 function pickAnchor(slug) {
   const h = [...slug].reduce((a, c) => a + c.charCodeAt(0), 0);

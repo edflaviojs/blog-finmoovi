@@ -10,19 +10,18 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { BLOG_HOST, NICHE_KEYWORDS } from './lib/site.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const ROOT = join(__dirname, '..');
 
-// Config
+// Queries derivadas das keywords do nicho no config (mesmo tamanho de pool: 6)
+const YEAR = new Date().getFullYear();
 const QUERIES = [
-  '"controle financeiro" 2026',
-  '"app finanças pessoais"',
-  '"calculadora juros compostos"',
-  '"reserva de emergência como fazer"',
-  '"orçamento pessoal dicas"',
-  '"finanças pessoais" dicas 2026'
+  ...NICHE_KEYWORDS.slice(0, 4).map(k => `"${k}"`),
+  `"${NICHE_KEYWORDS[0]}" dicas ${YEAR}`,
+  `"${NICHE_KEYWORDS[1] || NICHE_KEYWORDS[0]}" ${YEAR}`,
 ];
 
 const MAX_RESULTS_PER_QUERY = 5;
@@ -38,7 +37,7 @@ const OUTPUT_DIR = join(ROOT, '.github', 'data');
 const OUTPUT_PATH = join(OUTPUT_DIR, 'google-alerts-results.json');
 
 // Own domain to exclude from results
-const OWN_DOMAIN = 'blog.finmoovi.com';
+const OWN_DOMAIN = BLOG_HOST;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
