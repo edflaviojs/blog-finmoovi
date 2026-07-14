@@ -95,7 +95,7 @@ const faqSchema = {
 
   <Footer />
 
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  {sorted.length > 0 && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </BaseLayout>
 
 <style>

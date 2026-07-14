@@ -15,6 +15,7 @@
     "validate": "node --import tsx scripts/validate-template.js",
     "validate:i18n": "node --import tsx scripts/validate-i18n-sync.js",
     "demo-content": "node --import tsx scripts/generate-demo-content.js",
+    "reset:nicho": "node --import tsx scripts/reset-nicho.js",
     "setup:web": "node --import tsx scripts/setup-web.js",
     "setup": "node --import tsx scripts/setup.js"
   },
