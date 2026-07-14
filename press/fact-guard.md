@@ -1,33 +1,8 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-07-13T13:51:03.132Z
-**Posts:** 144 · limpos: 8 · bloqueados p/ revisao: 0 · com flags: 25
+**Gerado em:** 2026-07-14T07:09:35.145Z
+**Posts:** 144 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 25
 
-## ✂️ Cortes aplicados (citacao/estatistica sem fonte confiavel)
-
-**como-criar-orcamento-pessoal.md**
-- cortado: _Pesquisas mostram que **78% dos brasileiros** que mantêm um [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) conseguem economizar mais do que aqueles que não fazem nenhum controle._
-
-**en-how-to-create-personal-budget.md**
-- cortado: _Studies show that people who track their [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) save on average 20% more than those who don't._
-
-**en-migrando-da-planilha-para-um-app-financeiro.md**
-- cortado: _According to research, 70% of people who use spreadsheets give up within 30 days due to lack of consistency._
-
-**en-planilha-de-gastos-quando-ela-deixa-de-funcionar.md**
-- cortado: _However, research shows that 70% of people give up using expense spreadsheets within 30 days due to lack of consistency._
-
-**en-voce-tambem-tem-dificuldade-em-organizar-suas-financas.md**
-- cortado: _For example, a study showed that people who use [expense management](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) apps have a 30% higher chance of achieving their financial goals._
-
-**migrando-da-planilha-para-um-app-financeiro.md**
-- cortado: _De acordo com pesquisas, 70% das pessoas que usam planilhas desistem em 30 dias por falta de consistência._
-
-**planilha-de-gastos-quando-ela-deixa-de-funcionar.md**
-- cortado: _No entanto, pesquisas mostram que 70% das pessoas desistem de usar planilhas de gastos em 30 dias por falta de consistência._
-
-**voce-tambem-tem-dificuldade-em-organizar-suas-financas.md**
-- cortado: _Por exemplo, um estudo mostrou que pessoas que usam aplicativos de gerenciamento de despesas têm uma probabilidade 30% maior de alcançar seus objetivos financeiros._
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
 
