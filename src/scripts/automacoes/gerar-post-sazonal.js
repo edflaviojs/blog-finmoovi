@@ -265,16 +265,20 @@ Responda neste formato:
     savePost(slugPt, { title, meta, keywords: allKeywords, content: processedContent, imagePath, locale: 'pt', today, translationKey: slugPt });
 
     // EN
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 Traduzindo EN...');
-    const enPost = await translatePost({ title, meta, keywords: allKeywords, content: processedContent }, 'en');
-    savePost(`en-${slugPt}`, { ...enPost, keywords: enPost.keywords, content: enPost.content, imagePath, locale: 'en', today, translationKey: slugPt });
+    if (config.locales.includes('en')) {
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 Traduzindo EN...');
+      const enPost = await translatePost({ title, meta, keywords: allKeywords, content: processedContent }, 'en');
+      savePost(`en-${slugPt}`, { ...enPost, keywords: enPost.keywords, content: enPost.content, imagePath, locale: 'en', today, translationKey: slugPt });
+    }
 
     // ES
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 Traduzindo ES...');
-    const esPost = await translatePost({ title, meta, keywords: allKeywords, content: processedContent }, 'es');
-    savePost(`es-${slugPt}`, { ...esPost, keywords: esPost.keywords, content: esPost.content, imagePath, locale: 'es', today, translationKey: slugPt });
+    if (config.locales.includes('es')) {
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 Traduzindo ES...');
+      const esPost = await translatePost({ title, meta, keywords: allKeywords, content: processedContent }, 'es');
+      savePost(`es-${slugPt}`, { ...esPost, keywords: esPost.keywords, content: esPost.content, imagePath, locale: 'es', today, translationKey: slugPt });
+    }
 
     // Commit por whitelist (push fica com o workflow).
     execSync('git add src/content/posts public/images/posts', { stdio: 'inherit' });

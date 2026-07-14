@@ -19,7 +19,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const POSTS_DIR = path.resolve(__dirname, "../src/content/posts");
 const GLOSSARIO_DIR = path.resolve(__dirname, "../src/content/glossario");
 
-const LOCALES = ["pt", "en", "es"];
+// T8: locales exigidos vêm do config (modo 1 idioma valida só o(s) configurado(s))
+const LOCALES = [...config.locales];
 
 const PT_WORDS_BLOCKED_IN_EN = [
   "metodo", "orcamento", "financeiro", "financeira", "planilha", "dicas",

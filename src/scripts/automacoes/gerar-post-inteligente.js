@@ -390,14 +390,18 @@ async function main() {
   savePost(post, slug, 'pt', imagePath);
 
   // 7. Translate and save EN
-  console.log('🇺🇸 Traduzindo para inglês...');
-  const enPost = await translatePost(post, 'en');
-  savePost(enPost, slug, 'en', imagePath);
+  if (config.locales.includes('en')) {
+    console.log('🇺🇸 Traduzindo para inglês...');
+    const enPost = await translatePost(post, 'en');
+    savePost(enPost, slug, 'en', imagePath);
+  }
 
   // 8. Translate and save ES
-  console.log('🇪🇸 Traduzindo para espanhol...');
-  const esPost = await translatePost(post, 'es');
-  savePost(esPost, slug, 'es', imagePath);
+  if (config.locales.includes('es')) {
+    console.log('🇪🇸 Traduzindo para espanhol...');
+    const esPost = await translatePost(post, 'es');
+    savePost(esPost, slug, 'es', imagePath);
+  }
 
   // 9. Git commit
   try {

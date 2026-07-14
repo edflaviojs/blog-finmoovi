@@ -1,11 +1,16 @@
 ---
-const langs = [
+import { config } from '../../../site.config';
+
+const ALL_LANGS = [
   { code: 'pt', flag: '🇧🇷', label: 'Português' },
   { code: 'en', flag: '🇺🇸', label: 'English' },
   { code: 'es', flag: '🇪🇸', label: 'Español' },
 ];
+// T8: só os idiomas configurados; com 1 idioma o switcher não renderiza.
+const langs = ALL_LANGS.filter(l => config.locales.includes(l.code));
 ---
 
+{langs.length > 1 && (
 <div class="lang-switcher" id="lang-switcher">
   <button class="lang-toggle" id="lang-toggle" aria-label="Selecionar idioma" aria-expanded="false">
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -26,6 +31,7 @@ const langs = [
     ))}
   </div>
 </div>
+)}
 
 <script>
   var toggle = document.getElementById('lang-toggle');

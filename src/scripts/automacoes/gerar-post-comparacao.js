@@ -242,15 +242,19 @@ Responda neste formato:
 
     savePost(slugPt, { title, meta, keywords: allKeywords, content: processed, imagePath, locale: 'pt', today, translationKey: slugPt });
 
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 EN...');
-    const en = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'en');
-    savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
+    if (config.locales.includes('en')) {
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 EN...');
+      const en = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'en');
+      savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
+    }
 
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 ES...');
-    const es = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'es');
-    savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
+    if (config.locales.includes('es')) {
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 ES...');
+      const es = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'es');
+      savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
+    }
 
     // Commit por whitelist (push fica com o workflow).
     execSync('git add src/content/posts public/images/posts', { stdio: 'inherit' });

@@ -310,52 +310,56 @@ async function main() {
     console.log(`📄 PT salvo: ${ptPath}`);
 
     // 5. Translate to EN (wait 30s to avoid rate limit)
-    console.log('⏳ Aguardando 30s para evitar rate limit...');
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 Traduzindo para inglês...');
-    const enPost = await translatePost({
-      title: post.title,
-      meta: post.meta,
-      keywords: post.keywords,
-      processedContent: processedContentPt,
-    }, 'en');
+    if (config.locales.includes('en')) {
+      console.log('⏳ Aguardando 30s para evitar rate limit...');
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 Traduzindo para inglês...');
+      const enPost = await translatePost({
+        title: post.title,
+        meta: post.meta,
+        keywords: post.keywords,
+        processedContent: processedContentPt,
+      }, 'en');
 
-    const slugEn = 'en-' + createSlug(enPost.title);
-    const enPath = savePost(slugEn, {
-      title: enPost.title,
-      meta: enPost.meta,
-      keywords: enPost.keywords,
-      content: enPost.content,
-      imagePath, // same cover image
-      locale: 'en',
-      today,
-      translationKey: slugPt,
-    });
-    console.log(`📄 EN salvo: ${enPath}`);
+      const slugEn = 'en-' + createSlug(enPost.title);
+      const enPath = savePost(slugEn, {
+        title: enPost.title,
+        meta: enPost.meta,
+        keywords: enPost.keywords,
+        content: enPost.content,
+        imagePath, // same cover image
+        locale: 'en',
+        today,
+        translationKey: slugPt,
+      });
+      console.log(`📄 EN salvo: ${enPath}`);
+    }
 
     // 6. Translate to ES (wait 30s to avoid rate limit)
-    console.log('⏳ Aguardando 30s para evitar rate limit...');
-    await new Promise(r => setTimeout(r, 30000));
-    console.log('🌐 Traduzindo para espanhol...');
-    const esPost = await translatePost({
-      title: post.title,
-      meta: post.meta,
-      keywords: post.keywords,
-      processedContent: processedContentPt,
-    }, 'es');
+    if (config.locales.includes('es')) {
+      console.log('⏳ Aguardando 30s para evitar rate limit...');
+      await new Promise(r => setTimeout(r, 30000));
+      console.log('🌐 Traduzindo para espanhol...');
+      const esPost = await translatePost({
+        title: post.title,
+        meta: post.meta,
+        keywords: post.keywords,
+        processedContent: processedContentPt,
+      }, 'es');
 
-    const slugEs = 'es-' + createSlug(esPost.title);
-    const esPath = savePost(slugEs, {
-      title: esPost.title,
-      meta: esPost.meta,
-      keywords: esPost.keywords,
-      content: esPost.content,
-      imagePath, // same cover image
-      locale: 'es',
-      today,
-      translationKey: slugPt,
-    });
-    console.log(`📄 ES salvo: ${esPath}`);
+      const slugEs = 'es-' + createSlug(esPost.title);
+      const esPath = savePost(slugEs, {
+        title: esPost.title,
+        meta: esPost.meta,
+        keywords: esPost.keywords,
+        content: esPost.content,
+        imagePath, // same cover image
+        locale: 'es',
+        today,
+        translationKey: slugPt,
+      });
+      console.log(`📄 ES salvo: ${esPath}`);
+    }
 
     // 6.5. Add internal links (glossary terms)
     console.log('🔗 Adicionando internal links...');

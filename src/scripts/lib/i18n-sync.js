@@ -24,8 +24,10 @@
 import { readdirSync, readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { generateText } from '../apis/kie-ai.js';
+import { config } from '../../../site.config.ts';
 
-export const LOCALES = ['pt', 'en', 'es'];
+// T8: sincroniza apenas os locales configurados (modo 1 idioma = nada a sincronizar)
+export const LOCALES = [...config.locales];
 export const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 export const GLOSSARIO_DIR = join(process.cwd(), 'src', 'content', 'glossario');
 
@@ -341,9 +343,9 @@ export function scanGlossario() {
   })).filter(g => g.missing.length > 0);
 }
 
-/** Escolhe o arquivo-fonte para uma lacuna: prioriza PT, senão EN, senão ES. */
+/** Escolhe o arquivo-fonte para uma lacuna: prioriza o locale padrão, depois os demais. */
 export function pickSource(present) {
-  for (const l of ['pt', 'en', 'es']) {
+  for (const l of [config.defaultLocale, ...LOCALES.filter(x => x !== config.defaultLocale)]) {
     if (present[l]) return { file: present[l], locale: l };
   }
   return null;

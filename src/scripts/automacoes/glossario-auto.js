@@ -252,43 +252,47 @@ async function main() {
     console.log(`📄 PT salvo: ${ptPath}`);
 
     // 5. Translate to EN
-    console.log('🌐 Traduzindo para inglês...');
-    const enContent = await translateTerm(termData, ptContent, 'en');
-    // Filename SEMPRE derivado do slug PT (nunca do termo traduzido) — invariante do i18n-sync.
-    const slugEn = `en-${slugPt}`;
-    const enContentWithImages = await insertInlineImages(enContent.content, slugEn);
+    if (config.locales.includes('en')) {
+      console.log('🌐 Traduzindo para inglês...');
+      const enContent = await translateTerm(termData, ptContent, 'en');
+      // Filename SEMPRE derivado do slug PT (nunca do termo traduzido) — invariante do i18n-sync.
+      const slugEn = `en-${slugPt}`;
+      const enContentWithImages = await insertInlineImages(enContent.content, slugEn);
 
-    const enPath = saveGlossaryTerm(slugEn, {
-      term: enContent.term,
-      definition: enContent.definition,
-      category: termData.category,
-      locale: 'en',
-      image: imagePath,
-      relatedTerms: ptContent.relatedTerms,
-      today,
-      content: enContentWithImages,
-      translationKey: `glossario-${slugPt}`,
-    });
-    console.log(`📄 EN salvo: ${enPath}`);
+      const enPath = saveGlossaryTerm(slugEn, {
+        term: enContent.term,
+        definition: enContent.definition,
+        category: termData.category,
+        locale: 'en',
+        image: imagePath,
+        relatedTerms: ptContent.relatedTerms,
+        today,
+        content: enContentWithImages,
+        translationKey: `glossario-${slugPt}`,
+      });
+      console.log(`📄 EN salvo: ${enPath}`);
+    }
 
     // 6. Translate to ES
-    console.log('🌐 Traduzindo para espanhol...');
-    const esContent = await translateTerm(termData, ptContent, 'es');
-    const slugEs = `es-${slugPt}`;
-    const esContentWithImages = await insertInlineImages(esContent.content, slugEs);
+    if (config.locales.includes('es')) {
+      console.log('🌐 Traduzindo para espanhol...');
+      const esContent = await translateTerm(termData, ptContent, 'es');
+      const slugEs = `es-${slugPt}`;
+      const esContentWithImages = await insertInlineImages(esContent.content, slugEs);
 
-    const esPath = saveGlossaryTerm(slugEs, {
-      term: esContent.term,
-      definition: esContent.definition,
-      category: termData.category,
-      locale: 'es',
-      image: imagePath,
-      relatedTerms: ptContent.relatedTerms,
-      today,
-      content: esContentWithImages,
-      translationKey: `glossario-${slugPt}`,
-    });
-    console.log(`📄 ES salvo: ${esPath}`);
+      const esPath = saveGlossaryTerm(slugEs, {
+        term: esContent.term,
+        definition: esContent.definition,
+        category: termData.category,
+        locale: 'es',
+        image: imagePath,
+        relatedTerms: ptContent.relatedTerms,
+        today,
+        content: esContentWithImages,
+        translationKey: `glossario-${slugPt}`,
+      });
+      console.log(`📄 ES salvo: ${esPath}`);
+    }
 
     // 7. Git commit all
     const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario');

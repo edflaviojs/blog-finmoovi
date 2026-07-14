@@ -144,15 +144,19 @@ async function main() {
   paths.push(savePost(slug, { title, meta: post.meta, keywords, content, imagePath, locale: 'pt', today, translationKey: slug }));
   console.log(`✅ PT: ${title}`);
 
-  await new Promise(r => setTimeout(r, 30000));
-  const en = await translatePost({ title, meta: post.meta, keywords, content }, 'en');
-  paths.push(savePost(`en-${slug}`, { ...en, imagePath, locale: 'en', today, translationKey: slug }));
-  console.log('🌐 EN ok');
+  if (config.locales.includes('en')) {
+    await new Promise(r => setTimeout(r, 30000));
+    const en = await translatePost({ title, meta: post.meta, keywords, content }, 'en');
+    paths.push(savePost(`en-${slug}`, { ...en, imagePath, locale: 'en', today, translationKey: slug }));
+    console.log('🌐 EN ok');
+  }
 
-  await new Promise(r => setTimeout(r, 30000));
-  const es = await translatePost({ title, meta: post.meta, keywords, content }, 'es');
-  paths.push(savePost(`es-${slug}`, { ...es, imagePath, locale: 'es', today, translationKey: slug }));
-  console.log('🌐 ES ok');
+  if (config.locales.includes('es')) {
+    await new Promise(r => setTimeout(r, 30000));
+    const es = await translatePost({ title, meta: post.meta, keywords, content }, 'es');
+    paths.push(savePost(`es-${slug}`, { ...es, imagePath, locale: 'es', today, translationKey: slug }));
+    console.log('🌐 ES ok');
+  }
 
   // Tracking (feriado coberto neste ano).
   track[year] = [...(track[year] || []), holiday.id];
