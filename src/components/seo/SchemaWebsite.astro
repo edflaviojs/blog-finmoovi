@@ -33,21 +33,21 @@ const websiteSchema = {
     "target": `${site}/?q={search_term_string}`,
     "query-input": "required name=search_term_string"
   },
-  "inLanguage": ["pt-BR", "en-US", "es-ES"]
+  "inLanguage": config.locales.map(l => ({ pt: 'pt-BR', en: 'en-US', es: 'es-ES' })[l] || l)
 };
 
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": config.app.name,
-  "applicationCategory": "FinanceApplication",
+  "applicationCategory": config.app.schemaCategory || 'FinanceApplication',
   "operatingSystem": "Android, iOS, Web",
   "url": config.app.url,
   "description": config.app.features.pt.join('. ') + '.',
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "BRL"
+    "priceCurrency": config.app.priceCurrency || 'BRL'
   }
 };
 ---

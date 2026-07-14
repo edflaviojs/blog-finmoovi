@@ -23,6 +23,8 @@ export interface Author {
   i18nPaths: Record<'pt' | 'en' | 'es', string>; // caminho da página de autor por idioma
   sameAs: string[]; // perfis oficiais (LinkedIn etc.) — preencher quando houver
   image?: string;
+  /** Título e bio localizados (EN/ES) p/ a página de autor; fallback = jobTitle/description (PT). */
+  i18n?: Partial<Record<'en' | 'es', { jobTitle: string; description: string }>>;
 }
 
 const base = config.siteUrl;
@@ -58,6 +60,16 @@ export const authors: Record<string, Author> = {
       'https://www.linkedin.com/in/edflaviojs/',
     ], // adicionar YouTube/X quando disponível (também alimenta o Person schema)
     image: `${base}/images/authors/ed-flavio.webp`,
+    i18n: {
+      en: {
+        jobTitle: 'Personal finance editor',
+        description: "Ed Flávio is the editor of FinMoovi Blog. With a bachelor's degree in Business Administration and a postgraduate degree in Financial Management, he writes about personal finance, budgeting and investing to make financial education accessible to everyone.",
+      },
+      es: {
+        jobTitle: 'Editor de finanzas personales',
+        description: 'Ed Flávio es el editor de FinMoovi Blog. Graduado en Administración de Empresas y posgraduado en Gestión Financiera, escribe sobre finanzas personales, presupuesto e inversiones para hacer la educación financiera accesible para todos.',
+      },
+    },
   },
 };
 

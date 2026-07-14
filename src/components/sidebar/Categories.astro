@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { config } from '../../../site.config';
 
 const urlPath = Astro.url.pathname;
 let locale = 'pt';
@@ -13,27 +14,21 @@ const allPosts = await getCollection('posts', ({ data }) =>
 const countByCategory = (cat: string) => allPosts.filter(p => p.data.category === cat).length;
 const localePrefix = locale === 'pt' ? '' : `/${locale}`;
 
-const headingMap: Record<string, string> = {
-  pt: 'Categorias',
-  en: 'Categories',
-  es: 'Categorías',
-};
-
-const categoryNames: Record<string, Record<string, string>> = {
-  pt: { dicas: 'Dicas Financeiras', orcamento: 'Orçamento', investimentos: 'Investimentos', cotacoes: 'Cotações', ferramentas: 'Ferramentas' },
+// ⚙️ AJUSTE POR NICHO: labels EN/ES por slug (fallback = label PT do config).
+const LOCALIZED_LABELS: Record<string, Record<string, string>> = {
   en: { dicas: 'Financial Tips', orcamento: 'Budget', investimentos: 'Investments', cotacoes: 'Quotes', ferramentas: 'Tools' },
   es: { dicas: 'Consejos', orcamento: 'Presupuesto', investimentos: 'Inversiones', cotacoes: 'Cotizaciones', ferramentas: 'Herramientas' },
 };
 
-const labels = categoryNames[locale] || categoryNames.pt;
+const COLORS = ['var(--accent-primary)', 'var(--accent-green)', 'var(--accent-purple)', 'var(--accent-yellow)', 'var(--accent-red)'];
 
-const categories = [
-  { label: labels.dicas, href: `${localePrefix}/categorias/dicas`, count: countByCategory('dicas'), color: 'var(--accent-primary)' },
-  { label: labels.orcamento, href: `${localePrefix}/categorias/orcamento`, count: countByCategory('orcamento'), color: 'var(--accent-green)' },
-  { label: labels.investimentos, href: `${localePrefix}/categorias/investimentos`, count: countByCategory('investimentos'), color: 'var(--accent-purple)' },
-  { label: labels.cotacoes, href: `${localePrefix}/categorias/cotacoes`, count: countByCategory('cotacoes'), color: 'var(--accent-yellow)' },
-  { label: labels.ferramentas, href: `${localePrefix}/categorias/ferramentas`, count: countByCategory('ferramentas'), color: 'var(--accent-red)' },
-];
+// Fonte ÚNICA: config.content.categoryNav (mesma do menu/rodapé).
+const categories = config.content.categoryNav.map((c, i) => ({
+  label: locale === 'pt' ? c.label : (LOCALIZED_LABELS[locale]?.[c.slug] || c.label),
+  href: `${localePrefix}/categorias/${c.slug}`,
+  count: countByCategory(c.slug),
+  color: COLORS[i % COLORS.length],
+}));
 ---
 
 <div class="sidebar-widget categories-widget">
@@ -43,7 +38,7 @@ const categories = [
       <li>
         <a href={cat.href} class="category-link">
           <span class="category-dot" style={`background: ${cat.color}`}></span>
-          <span class="category-label" data-i18n={cat.i18n}>{cat.label}</span>
+          <span class="category-label">{cat.label}</span>
           <span class="category-count">{cat.count}</span>
         </a>
       </li>

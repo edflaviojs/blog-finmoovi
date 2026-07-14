@@ -1,27 +1,30 @@
 ---
+import { config } from '../../../site.config';
+
 const urlPath = Astro.url?.pathname || '';
 let locale = 'pt';
 if (urlPath.startsWith('/en/')) locale = 'en';
 else if (urlPath.startsWith('/es/')) locale = 'es';
 
+// Texto do nicho vem do config (template-safe p/ qualquer tema)
 const texts = {
   pt: {
     title: 'Newsletter Semanal',
-    desc: 'Receba as melhores dicas de finanças toda semana no seu email.',
+    desc: `Receba as melhores dicas de ${config.content.niche.pt} toda semana no seu email.`,
     placeholder: 'seu@email.com',
     btn: 'Inscrever',
     privacy: 'Sem spam. Cancele quando quiser.'
   },
   en: {
     title: 'Weekly Newsletter',
-    desc: 'Get the best finance tips delivered to your inbox every week.',
+    desc: `Get the best ${config.content.niche.en} tips delivered to your inbox every week.`,
     placeholder: 'your@email.com',
     btn: 'Subscribe',
     privacy: 'No spam. Unsubscribe anytime.'
   },
   es: {
     title: 'Newsletter Semanal',
-    desc: 'Recibe los mejores consejos de finanzas cada semana en tu email.',
+    desc: `Recibe los mejores consejos de ${config.content.niche.es} cada semana en tu email.`,
     placeholder: 'tu@email.com',
     btn: 'Suscribirse',
     privacy: 'Sin spam. Cancela cuando quieras.'
