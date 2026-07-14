@@ -131,9 +131,9 @@ export const config: SiteConfig = {
   // ─── COMENTÁRIOS (GISCUS) ──────────────────────────────────────────
   giscus: {
     repo: 'edflaviojs/blog-finmoovi',
-    repoId: '',
+    repoId: 'R_kgDOShiqMg',
     category: 'Announcements',
-    categoryId: '',
+    categoryId: 'DIC_kwDOShiqMs4DBKbU',
   },
 
   // ─── EMAIL ─────────────────────────────────────────────────────────
