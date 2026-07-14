@@ -10,8 +10,12 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { createInterface } from 'readline';
+import { pathToFileURL } from 'url';
 
-const rl = createInterface({ input: process.stdin, output: process.stdout });
+// Só abre o readline/roda o wizard quando executado diretamente (npm run setup).
+// Quando importado (ex.: pelo setup-web.js), apenas exporta as funções de IA.
+const isMain = !!process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+const rl = isMain ? createInterface({ input: process.stdin, output: process.stdout }) : null;
 
 function ask(question, defaultVal = '') {
   return new Promise(resolve => {
@@ -138,7 +142,7 @@ async function callKieAI(prompt, maxTokens = 2000) {
  * Detect available AI provider and call it
  * Priority: GROQ > OpenAI (ChatGPT) > Anthropic (Claude) > Kie.ai
  */
-function detectAIProvider() {
+export function detectAIProvider() {
   if (process.env.GROQ_API_KEY) return { name: 'GROQ (Llama 3.3 70B)', call: callGroq };
   if (process.env.OPENAI_API_KEY) return { name: 'OpenAI (GPT-4o mini)', call: callOpenAI };
   if (process.env.ANTHROPIC_API_KEY) return { name: 'Anthropic (Claude)', call: callAnthropic };
@@ -152,7 +156,7 @@ async function callAI(prompt, maxTokens = 2000) {
   return provider.call(prompt, maxTokens);
 }
 
-async function generateWithAI(brandName, niche_pt, niche_en, niche_es, productDescription) {
+export async function generateWithAI(brandName, niche_pt, niche_en, niche_es, productDescription) {
   const provider = detectAIProvider();
   console.log(`\n🤖 Gerando conteúdo personalizado via ${provider.name}...\n`);
 
@@ -198,18 +202,36 @@ Generate a JSON object with EXACTLY this structure (no markdown, just raw JSON):
     "es": "Short tagline in spanish (3-5 words)"
   },
   "aiPersonality": "AI writer personality prompt in Portuguese (1-2 sentences describing tone and style for blog posts)",
+  "nicheKeywords": ["core keyword 1", "core keyword 2", "core keyword 3", "core keyword 4", "core keyword 5"],
+  "categoryNav": [
+    {"slug": "category-slug-1", "label": "Label em Português 1"},
+    {"slug": "category-slug-2", "label": "Label em Português 2"},
+    {"slug": "category-slug-3", "label": "Label em Português 3"},
+    {"slug": "category-slug-4", "label": "Label em Português 4"}
+  ],
+  "glossaryCategories": ["glossary-cat-1", "glossary-cat-2", "glossary-cat-3"],
   "dailyTopics": ["topic suggestion 1", "topic suggestion 2", "topic suggestion 3", "topic suggestion 4", "topic suggestion 5"],
   "seasonalCalendar": [
-    {"month": 1, "topic": "seasonal topic for January related to the niche"},
-    {"month": 3, "topic": "seasonal topic for March"},
-    {"month": 5, "topic": "seasonal topic for May"},
-    {"month": 7, "topic": "seasonal topic for July"},
-    {"month": 9, "topic": "seasonal topic for September"},
-    {"month": 11, "topic": "seasonal topic for November"}
+    {"month": 1, "day": 15, "topic": "seasonal topic for January related to the niche", "keywords": ["keyword 1", "keyword 2"]},
+    {"month": 3, "day": 1, "topic": "seasonal topic for March", "keywords": ["keyword"]},
+    {"month": 5, "day": 10, "topic": "seasonal topic for May", "keywords": ["keyword"]},
+    {"month": 7, "day": 1, "topic": "seasonal topic for July", "keywords": ["keyword"]},
+    {"month": 9, "day": 15, "topic": "seasonal topic for September", "keywords": ["keyword"]},
+    {"month": 11, "day": 1, "topic": "seasonal topic for November", "keywords": ["keyword"]}
   ],
-  "comparisonTopics": ["comparison topic 1 vs X", "topic 2 vs Y", "topic 3 vs Z"],
-  "solutionTopics": ["how the product solves problem 1", "how it solves problem 2", "how it solves problem 3"]
+  "comparisonTopics": [
+    {"a": "Thing A", "b": "Thing B", "keywords": ["a vs b", "which is better"]},
+    {"a": "Thing C", "b": "Thing D", "keywords": ["c vs d"]},
+    {"a": "Thing E", "b": "Thing F", "keywords": ["e vs f"]}
+  ],
+  "solutionTopics": [
+    {"topic": "real user problem the product solves 1", "keywords": ["keyword 1", "keyword 2"]},
+    {"topic": "real user problem 2", "keywords": ["keyword"]},
+    {"topic": "real user problem 3", "keywords": ["keyword"]}
+  ]
 }
+
+categoryNav must be a curated subset of categories (4-6 max) with Portuguese display labels — it powers the site menus.
 
 Categories should be slug-friendly (lowercase, no accents, no spaces — use hyphens).
 Features should describe the product's main selling points.
@@ -232,7 +254,7 @@ IMPORTANT: Return ONLY the JSON, no explanation, no markdown code blocks.`;
   }
 }
 
-function getGenericDefaults(brandName, niche_pt, niche_en, niche_es) {
+export function getGenericDefaults(brandName, niche_pt, niche_en, niche_es) {
   return {
     categories: ['dicas', 'guias', 'reviews', 'noticias', 'ferramentas', 'glossario'],
     features: {
@@ -258,11 +280,48 @@ function getGenericDefaults(brandName, niche_pt, niche_en, niche_es) {
       es: `${niche_es} accesible`,
     },
     aiPersonality: `Você é um redator experiente de ${niche_pt} que escreve para brasileiros. Seu estilo é direto, prático e conversacional.`,
+    nicheKeywords: [niche_pt, `dicas de ${niche_pt}`, `guia de ${niche_pt}`],
+    categoryNav: [
+      { slug: 'dicas', label: 'Dicas' },
+      { slug: 'guias', label: 'Guias' },
+      { slug: 'reviews', label: 'Reviews' },
+      { slug: 'noticias', label: 'Notícias' },
+    ],
+    glossaryCategories: ['basico', 'intermediario', 'avancado'],
     dailyTopics: [`dica 1 sobre ${niche_pt}`, `dica 2 sobre ${niche_pt}`, `dica 3 sobre ${niche_pt}`],
     seasonalCalendar: [],
     comparisonTopics: [],
     solutionTopics: [],
   };
+}
+
+/**
+ * Normaliza a resposta da IA para os formatos EXATOS que os geradores consomem
+ * (entradas fora do formato são descartadas — os geradores também filtram, T2).
+ */
+export function normalizeAIData(d, fallback) {
+  if (!d) return null;
+  const out = { ...fallback, ...d };
+  out.categoryNav = Array.isArray(d.categoryNav)
+    ? d.categoryNav.filter(c => c && c.slug && c.label).slice(0, 6)
+    : fallback.categoryNav;
+  if (!out.categoryNav.length) out.categoryNav = fallback.categoryNav;
+  out.glossaryCategories = Array.isArray(d.glossaryCategories) && d.glossaryCategories.length
+    ? d.glossaryCategories.filter(g => typeof g === 'string')
+    : fallback.glossaryCategories;
+  out.nicheKeywords = Array.isArray(d.nicheKeywords) && d.nicheKeywords.length
+    ? d.nicheKeywords.filter(k => typeof k === 'string')
+    : fallback.nicheKeywords;
+  out.seasonalCalendar = (Array.isArray(d.seasonalCalendar) ? d.seasonalCalendar : [])
+    .filter(i => i && i.month && i.topic)
+    .map(i => ({ month: i.month, day: i.day || 1, topic: i.topic, keywords: Array.isArray(i.keywords) ? i.keywords : [] }));
+  out.comparisonTopics = (Array.isArray(d.comparisonTopics) ? d.comparisonTopics : [])
+    .filter(c => c && c.a && c.b)
+    .map(c => ({ a: c.a, b: c.b, keywords: Array.isArray(c.keywords) ? c.keywords : [] }));
+  out.solutionTopics = (Array.isArray(d.solutionTopics) ? d.solutionTopics : [])
+    .filter(s => s && s.topic)
+    .map(s => ({ topic: s.topic, keywords: Array.isArray(s.keywords) ? s.keywords : [] }));
+  return out;
 }
 
 async function main() {
@@ -320,13 +379,29 @@ async function main() {
   const cfProjectName = await ask('Nome do projeto no Cloudflare Pages', slugify(brandName) + '-blog');
   const authorName = await ask('Nome do autor padrão', brandName);
 
+  // === Idiomas, social & extras ===
+  console.log('\n━━━━━ 6/6 IDIOMAS, SOCIAL & EXTRAS ━━━━━━━━━━━━━━━\n');
+  const localesAnswer = await ask('Idiomas do blog (separados por vírgula — ex.: pt,en,es ou só pt)', 'pt,en,es');
+  const locales = localesAnswer.split(',').map(l => l.trim().toLowerCase()).filter(l => ['pt', 'en', 'es'].includes(l));
+  if (!locales.length) locales.push('pt');
+  const defaultLocale = locales[0];
+  const schemaCategory = await ask('Categoria Schema.org do app (ex.: FinanceApplication, HealthApplication, WebApplication)', 'WebApplication');
+  const priceCurrency = await ask('Moeda (schema.org priceCurrency)', 'BRL');
+  const backgroundColor = await ask('Cor de fundo dark (hex)', '#0d1117');
+  const socialTwitter = await ask('Twitter/X (URL completa; vazio = não tem)', '');
+  const socialInstagram = await ask('Instagram (URL completa; vazio = não tem)', '');
+  const socialYoutube = await ask('YouTube (URL completa; vazio = não tem)', '');
+  const socialLinkedin = await ask('LinkedIn (URL completa; vazio = não tem)', '');
+  const giscusRepo = await ask('Repo do giscus p/ comentários (owner/repo; vazio = desativado)', '');
+
   // === AI Generation ===
   let aiData = null;
   if (aiProvider) {
     aiData = await generateWithAI(brandName, niche_pt, niche_en, niche_es, productDescription);
   }
 
-  const data = aiData || getGenericDefaults(brandName, niche_pt, niche_en, niche_es);
+  const fallbackData = getGenericDefaults(brandName, niche_pt, niche_en, niche_es);
+  const data = normalizeAIData(aiData, fallbackData) || fallbackData;
 
   if (aiData) {
     console.log('✅ Conteúdo gerado com IA:');
@@ -353,8 +428,8 @@ export const config: SiteConfig = {
   siteName: '${brandName} Blog',
   siteUrl: 'https://${blogDomain}',
   siteDescription: ${JSON.stringify(data.siteDescription, null, 4)},
-  defaultLocale: 'pt',
-  locales: ['pt', 'en', 'es'],
+  defaultLocale: '${defaultLocale}',
+  locales: ${JSON.stringify(locales)},
 
   brand: {
     name: '${brandName}',
@@ -366,6 +441,7 @@ export const config: SiteConfig = {
       gradientEnd: '${gradientEnd}',
     },
     colors: {
+      background: '${backgroundColor}',
       primary: '${colorPrimary}',
       secondary: '#bc8cff',
       ctaGradientStart: '${gradientStart}',
@@ -383,7 +459,9 @@ export const config: SiteConfig = {
 
   content: {
     categories: ${JSON.stringify(data.categories)} as const,
-    glossaryCategories: ['basico', 'intermediario', 'avancado'] as const,
+    glossaryCategories: ${JSON.stringify(data.glossaryCategories)} as const,
+    // Fonte ÚNICA do menu "Categorias" (header + mobile + rodapé + sidebar)
+    categoryNav: ${JSON.stringify(data.categoryNav, null, 6)},
     niche: {
       pt: '${niche_pt}',
       en: '${niche_en}',
@@ -400,6 +478,8 @@ export const config: SiteConfig = {
   app: {
     name: '${appName}',
     url: '${appUrl}',
+    schemaCategory: '${schemaCategory}',
+    priceCurrency: '${priceCurrency}',
     features: ${JSON.stringify(data.features, null, 6)},
     ctaText: ${JSON.stringify(data.ctaText, null, 6)},
     ctaTitle: ${JSON.stringify(data.ctaTitle, null, 6)},
@@ -407,19 +487,22 @@ export const config: SiteConfig = {
   },
 
   social: {
-    twitter: '',
-    instagram: '',
-    linkedin: '',
+    twitter: '${socialTwitter}',
+    instagram: '${socialInstagram}',
+    linkedin: '${socialLinkedin}',
     github: '',
-    youtube: '',
+    youtube: '${socialYoutube}',
   },
 
   analytics: {
+    // Crie o site em dash.cloudflare.com > Web Analytics e cole o token aqui
     cloudflareBeaconToken: '',
   },
 
   giscus: {
-    repo: '',
+    // Após criar o repo: ative Discussions, instale github.com/apps/giscus
+    // e preencha repoId/categoryId gerados em giscus.app
+    repo: '${giscusRepo}',
     repoId: '',
     category: 'Announcements',
     categoryId: '',
@@ -432,7 +515,7 @@ export const config: SiteConfig = {
 
   ai: {
     personality: \`${data.aiPersonality || `Você é um redator experiente de ${niche_pt} que escreve para brasileiros. Seu estilo é direto, prático e conversacional. Quando menciona o app ${appName}, faz de forma natural.`}\`,
-    nicheKeywords: ${JSON.stringify(data.categories)},
+    nicheKeywords: ${JSON.stringify(data.nicheKeywords)},
     dailyTopics: ${JSON.stringify(data.dailyTopics, null, 4)},
     seasonalCalendar: ${JSON.stringify(data.seasonalCalendar || [], null, 4)},
     comparisonTopics: ${JSON.stringify(data.comparisonTopics || [], null, 4)},
@@ -514,8 +597,10 @@ ${aiData ? '║  🤖 CTAs, categorias e temas foram gerados com IA.          �
   rl.close();
 }
 
-main().catch(e => {
-  console.error('Erro no setup:', e.message);
-  rl.close();
-  process.exit(1);
-});
+if (isMain) {
+  main().catch(e => {
+    console.error('Erro no setup:', e.message);
+    rl.close();
+    process.exit(1);
+  });
+}

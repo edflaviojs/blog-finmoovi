@@ -220,7 +220,7 @@ function slugify(str) {
     .replace(/^-|-$/g, '');
 }
 
-function generateConfig(data) {
+function generateConfig(data, ai) {
   const brandName = data.brandName;
   const appName = data.appName || brandName;
   const blogDomain = data.blogDomain;
@@ -230,34 +230,28 @@ function generateConfig(data) {
   const nicheEs = data.nicheEs;
   const author = data.author || brandName;
   const cfProjectName = slugify(brandName) + '-blog';
+  const esc = (s) => String(s).replace(/'/g, "\\'");
 
   return `import type { SiteConfig } from './src/types/config';
 
 export const config: SiteConfig = {
   siteName: '${brandName} Blog',
   siteUrl: 'https://${blogDomain}',
-  siteDescription: {
-    pt: 'Dicas e conteúdo sobre ${nichePt}. Blog oficial do ${brandName}.',
-    en: 'Tips and content about ${nicheEn}. Official ${brandName} blog.',
-    es: 'Consejos y contenido sobre ${nicheEs}. Blog oficial de ${brandName}.',
-  },
+  siteDescription: ${JSON.stringify(ai.siteDescription, null, 4)},
   defaultLocale: 'pt',
   locales: ['pt', 'en', 'es'],
 
   brand: {
     name: '${brandName}',
     blogSuffix: 'Blog',
-    tagline: {
-      pt: '${nichePt} acessível para todos',
-      en: 'Accessible ${nicheEn} for everyone',
-      es: '${nicheEs} accesible para todos',
-    },
+    tagline: ${JSON.stringify(ai.tagline, null, 6)},
     logo: {
       svgPath: 'M12 44 L24 28 L34 38 L44 20 L52 28',
       gradientStart: '${data.gradientStart}',
       gradientEnd: '${data.gradientEnd}',
     },
     colors: {
+      background: '#0d1117',
       primary: '${data.colorPrimary}',
       secondary: '#bc8cff',
       ctaGradientStart: '${data.gradientStart}',
@@ -274,8 +268,10 @@ export const config: SiteConfig = {
   },
 
   content: {
-    categories: ['dicas', 'guias', 'reviews', 'noticias', 'ferramentas', 'glossario'] as const,
-    glossaryCategories: ['basico', 'intermediario', 'avancado'] as const,
+    categories: ${JSON.stringify(ai.categories)} as const,
+    glossaryCategories: ${JSON.stringify(ai.glossaryCategories)} as const,
+    // Fonte ÚNICA do menu "Categorias" (header + mobile + rodapé + sidebar)
+    categoryNav: ${JSON.stringify(ai.categoryNav, null, 6)},
     niche: {
       pt: '${nichePt}',
       en: '${nicheEn}',
@@ -292,18 +288,12 @@ export const config: SiteConfig = {
   app: {
     name: '${appName}',
     url: '${data.appUrl}',
-    features: {
-      pt: ['Funcionalidade principal 1', 'Funcionalidade 2', 'Funcionalidade 3', 'Funcionalidade 4'],
-      en: ['Main feature 1', 'Feature 2', 'Feature 3', 'Feature 4'],
-      es: ['Función principal 1', 'Función 2', 'Función 3', 'Función 4'],
-    },
-    ctaText: { pt: 'Experimentar Grátis', en: 'Try Free', es: 'Probar Gratis' },
-    ctaTitle: {
-      pt: 'Organize ${nichePt} com o ${appName}',
-      en: 'Organize your ${nicheEn} with ${appName}',
-      es: 'Organiza tus ${nicheEs} con ${appName}',
-    },
-    ctaNote: { pt: 'Sem cartão de crédito.', en: 'No credit card required.', es: 'Sin tarjeta de crédito.' },
+    schemaCategory: 'WebApplication',
+    priceCurrency: 'BRL',
+    features: ${JSON.stringify(ai.features, null, 6)},
+    ctaText: ${JSON.stringify(ai.ctaText, null, 6)},
+    ctaTitle: ${JSON.stringify(ai.ctaTitle, null, 6)},
+    ctaNote: ${JSON.stringify(ai.ctaNote, null, 6)},
   },
 
   social: { twitter: '', instagram: '', linkedin: '', github: '', youtube: '' },
@@ -315,12 +305,12 @@ export const config: SiteConfig = {
   },
 
   ai: {
-    personality: 'Você é um redator experiente de ${nichePt} que escreve para brasileiros. Seu estilo é direto, prático e conversacional. Quando menciona o app ${appName}, faz de forma natural.',
-    nicheKeywords: ['dicas', 'guias', 'reviews', 'noticias', 'ferramentas', 'glossario'],
-    dailyTopics: ['dica 1 sobre ${nichePt}', 'dica 2 sobre ${nichePt}', 'dica 3 sobre ${nichePt}'],
-    seasonalCalendar: [],
-    comparisonTopics: [],
-    solutionTopics: [],
+    personality: '${esc(ai.aiPersonality || `Você é um redator experiente de ${nichePt} que escreve para brasileiros. Seu estilo é direto, prático e conversacional. Quando menciona o app ${appName}, faz de forma natural.`)}',
+    nicheKeywords: ${JSON.stringify(ai.nicheKeywords)},
+    dailyTopics: ${JSON.stringify(ai.dailyTopics, null, 4)},
+    seasonalCalendar: ${JSON.stringify(ai.seasonalCalendar || [], null, 4)},
+    comparisonTopics: ${JSON.stringify(ai.comparisonTopics || [], null, 4)},
+    solutionTopics: ${JSON.stringify(ai.solutionTopics || [], null, 4)},
   },
 
   bot: { name: '${brandName} Bot', email: 'bot@${mainDomain}' },
@@ -339,22 +329,33 @@ const server = createServer(async (req, res) => {
   if (req.method === 'POST' && req.url === '/api/setup') {
     let body = '';
     req.on('data', chunk => { body += chunk; });
-    req.on('end', () => {
+    req.on('end', async () => {
       try {
         const data = JSON.parse(body);
 
-        // 1. Generate config
-        const configContent = generateConfig(data);
-        writeFileSync(join(ROOT, 'site.config.ts'), configContent, 'utf-8');
-
-        // 2. Set env var if AI key provided
+        // 1. Set env var if AI key provided (ANTES de gerar — a IA usa esta chave)
         if (data.aiKey) {
           const envMap = { groq: 'GROQ_API_KEY', openai: 'OPENAI_API_KEY', anthropic: 'ANTHROPIC_API_KEY', kie: 'KIE_API_KEY' };
           const envVar = envMap[data.aiProvider] || 'GROQ_API_KEY';
           process.env[envVar] = data.aiKey;
         }
 
-        // 3. Run generate
+        // 2. Gera conteúdo com IA (T4 — antes o formulário coletava a chave e nunca a usava)
+        const { generateWithAI, getGenericDefaults, normalizeAIData, detectAIProvider } = await import('./setup.js');
+        const fallback = getGenericDefaults(data.brandName, data.nichePt, data.nicheEn, data.nicheEs);
+        let ai = fallback;
+        if (detectAIProvider()) {
+          try {
+            const raw = await generateWithAI(data.brandName, data.nichePt, data.nicheEn, data.nicheEs, data.productDescription || '');
+            ai = normalizeAIData(raw, fallback) || fallback;
+          } catch { /* fallback genérico */ }
+        }
+
+        // 3. Generate config (com dados da IA ou fallback)
+        const configContent = generateConfig(data, ai);
+        writeFileSync(join(ROOT, 'site.config.ts'), configContent, 'utf-8');
+
+        // 4. Run generate
         try {
           execSync('npm run generate', { cwd: ROOT, stdio: 'pipe', timeout: 30000 });
         } catch (e) {
