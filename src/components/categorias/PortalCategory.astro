@@ -50,9 +50,11 @@ const localeTag = locale === 'pt' ? 'pt-BR' : locale === 'es' ? 'es-ES' : 'en-US
 const fmtLong = (d: Date) => d.toLocaleDateString(localeTag, { day: '2-digit', month: 'long', year: 'numeric' });
 const fmtShort = (d: Date) => d.toLocaleDateString(localeTag, { day: 'numeric', month: 'short' });
 
+// SEM teto: a contagem do topo promete N artigos — todos aparecem na página
+// (destaque + 6 na grade + o restante inteiro na lista compacta)
 const destaque = posts[0];
 const grade = posts.slice(1, 7);
-const resto = posts.slice(7, 19);
+const resto = posts.slice(7);
 ---
 
 <BaseLayout title={T.title} description={T.desc} alternates={alternates}>
