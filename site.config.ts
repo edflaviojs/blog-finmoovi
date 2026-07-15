@@ -202,41 +202,6 @@ export const config: SiteConfig = {
   // manter eventos passados aqui não quebra nada.
   seasonal: {
     events: [
-      // ⚠️⚠️ DEMO PARA VALIDAÇÃO NO PREVIEW — REMOVER ANTES DO MERGE NO MAIN ⚠️⚠️
-      // (janelas forçadas p/ julho/2026 só para o usuário ver os temas natal e
-      // blackfriday funcionando; a cópia é a real dos eventos de verdade)
-      {
-        id: 'DEMO-natal-REMOVER', theme: 'natal', icon: '🎄',
-        start: '2026-07-01', end: '2026-07-31', eventDate: '2026-07-25',
-        locales: ['pt', 'en', 'es'],
-        href: { pt: '/categorias/dicas', en: '/en/categorias/dicas', es: '/es/categorias/dicas' },
-        title: { pt: 'Natal no azul.', en: 'Holidays in the green.', es: 'Navidad sin deudas.' },
-        highlight: { pt: 'Presenteie sem dívida.', en: 'Gift without debt.', es: 'Regala sin deuda.' },
-        text: {
-          pt: 'Décimo terceiro, presentes e ceia: organize os gastos de dezembro antes que eles organizem você.',
-          en: 'Bonus, gifts and dinner: organize your December spending before it organizes you.',
-          es: 'Aguinaldo, regalos y cena: organiza los gastos de diciembre antes de que te organicen a ti.',
-        },
-        cta: { pt: 'Organizar o fim de ano →', en: 'Plan the holidays →', es: 'Organizar el fin de año →' },
-        ticker: { pt: '🎄 Faltam {dias} dias para o Natal — planeje os presentes sem estourar o orçamento', en: '🎄 {dias} days until Christmas — plan your gifts', es: '🎄 Faltan {dias} días para Navidad' },
-        tickerToday: { pt: '🎄 Feliz Natal!', en: '🎄 Merry Christmas!', es: '🎄 ¡Feliz Navidad!' },
-      },
-      {
-        id: 'DEMO-blackfriday-REMOVER', theme: 'blackfriday', icon: '🛍️',
-        start: '2026-07-01', end: '2026-07-31', eventDate: '2026-07-31',
-        locales: ['pt', 'en', 'es'],
-        href: { pt: '/ferramentas/calculadora-orcamento', en: '/ferramentas/calculadora-orcamento', es: '/ferramentas/calculadora-orcamento' },
-        title: { pt: 'Black Friday.', en: 'Black Friday.', es: 'Black Friday.' },
-        highlight: { pt: 'Sem cilada.', en: 'No traps.', es: 'Sin trampas.' },
-        text: {
-          pt: 'Defina o orçamento antes das ofertas: a calculadora 50-30-20 mostra quanto você pode gastar sem se endividar.',
-          en: 'Set your budget before the deals drop: the 50-30-20 calculator shows how much you can spend.',
-          es: 'Define tu presupuesto antes de las ofertas.',
-        },
-        cta: { pt: 'Planejar minhas compras →', en: 'Plan my shopping →', es: 'Planificar mis compras →' },
-        ticker: { pt: '🛍️ Faltam {dias} dias para a Black Friday — planeje as compras', en: '🛍️ {dias} days until Black Friday', es: '🛍️ Faltan {dias} días para el Black Friday' },
-      },
-      // ⚠️⚠️ FIM DOS DEMOS ⚠️⚠️
       {
         id: 'black-friday-2026', theme: 'blackfriday', icon: '🛍️',
         start: '2026-11-12', end: '2026-11-28', eventDate: '2026-11-27',
