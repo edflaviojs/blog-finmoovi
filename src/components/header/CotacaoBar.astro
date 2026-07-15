@@ -1,6 +1,9 @@
 ---
 // CotacaoBar — Ticker animado: data, clima, cotações reais, indicadores BCB,
-// último post do blog e dica do dia
+// último post do blog e dica do dia.
+// O conjunto de itens é renderizado 4x (cotacao-group) e a animação desloca
+// exatamente 1 grupo (-25%): loop contínuo sem salto em qualquer largura de
+// tela (com 2 cópias, telas largas viam espaço vazio antes do reinício).
 import { getCollection } from 'astro:content';
 
 const urlPath = Astro.url.pathname;
@@ -14,7 +17,7 @@ const posts = await getCollection('posts', ({ data }) => !data.draft && data.loc
 const latest = posts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())[0];
 const latestUrl = latest ? `${localePrefix}/posts/${latest.slug}` : null;
 const latestTitle = latest
-  ? (latest.data.title.length > 55 ? latest.data.title.slice(0, 55).trim() + '…' : latest.data.title)
+  ? (latest.data.title.length > 38 ? latest.data.title.slice(0, 38).trim() + '…' : latest.data.title)
   : null;
 
 const labels = {
@@ -22,110 +25,66 @@ const labels = {
   en: { novo: '📰 New on the blog', dica: '💡 Tip of the day' },
   es: { novo: '📰 Nuevo en el blog', dica: '💡 Consejo del día' },
 }[locale];
+
+const COPIES = [0, 1, 2, 3];
 ---
 
 <div class="cotacao-bar">
   <div class="cotacao-ticker">
     <div class="cotacao-track" aria-label="Cotações em tempo real">
-      <span class="cotacao-item">
-        <span class="cotacao-value" id="cot-data">--</span>
-      </span>
-      <span class="cotacao-item" id="clima-item" style="display:none">
-        <span class="cotacao-label" id="clima-city">--</span>
-        <span class="cotacao-value" id="clima-temp">--</span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">USD/BRL</span>
-        <span class="cotacao-value" id="cot-usdbrl">--</span>
-        <span class="cotacao-change" id="cot-usdbrl-change"></span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">EUR/BRL</span>
-        <span class="cotacao-value" id="cot-eurbrl">--</span>
-        <span class="cotacao-change" id="cot-eurbrl-change"></span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">BTC/USD</span>
-        <span class="cotacao-value" id="cot-btcusd">--</span>
-        <span class="cotacao-change" id="cot-btcusd-change"></span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">IBOV</span>
-        <span class="cotacao-value" id="cot-ibov">--</span>
-        <span class="cotacao-change" id="cot-ibov-change"></span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">SELIC</span>
-        <span class="cotacao-value" id="cot-selic">--</span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">IPCA 12M</span>
-        <span class="cotacao-value" id="cot-ipca">--</span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">CDI</span>
-        <span class="cotacao-value" id="cot-cdi">--</span>
-      </span>
-      {latestTitle && (
-        <a class="cotacao-item cotacao-post" href={latestUrl}>
-          <span class="cotacao-label">{labels.novo}</span>
-          <span class="cotacao-text">{latestTitle}</span>
-        </a>
-      )}
-      <span class="cotacao-item">
-        <span class="cotacao-label">{labels.dica}</span>
-        <span class="cotacao-text" id="cot-dica">--</span>
-      </span>
-      <!-- Duplicado para loop infinito -->
-      <span class="cotacao-item">
-        <span class="cotacao-value" id="cot-data2">--</span>
-      </span>
-      <span class="cotacao-item" id="clima-item2" style="display:none">
-        <span class="cotacao-label" id="clima-city2">--</span>
-        <span class="cotacao-value" id="clima-temp2">--</span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">USD/BRL</span>
-        <span class="cotacao-value" id="cot-usdbrl2">--</span>
-        <span class="cotacao-change" id="cot-usdbrl-change2"></span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">EUR/BRL</span>
-        <span class="cotacao-value" id="cot-eurbrl2">--</span>
-        <span class="cotacao-change" id="cot-eurbrl-change2"></span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">BTC/USD</span>
-        <span class="cotacao-value" id="cot-btcusd2">--</span>
-        <span class="cotacao-change" id="cot-btcusd-change2"></span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">IBOV</span>
-        <span class="cotacao-value" id="cot-ibov2">--</span>
-        <span class="cotacao-change" id="cot-ibov-change2"></span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">SELIC</span>
-        <span class="cotacao-value" id="cot-selic2">--</span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">IPCA 12M</span>
-        <span class="cotacao-value" id="cot-ipca2">--</span>
-      </span>
-      <span class="cotacao-item">
-        <span class="cotacao-label">CDI</span>
-        <span class="cotacao-value" id="cot-cdi2">--</span>
-      </span>
-      {latestTitle && (
-        <a class="cotacao-item cotacao-post" href={latestUrl}>
-          <span class="cotacao-label">{labels.novo}</span>
-          <span class="cotacao-text">{latestTitle}</span>
-        </a>
-      )}
-      <span class="cotacao-item">
-        <span class="cotacao-label">{labels.dica}</span>
-        <span class="cotacao-text" id="cot-dica2">--</span>
-      </span>
+      {COPIES.map((copy) => (
+        <div class="cotacao-group" aria-hidden={copy > 0 ? 'true' : undefined}>
+          <span class="cotacao-item">
+            <span class="cotacao-value js-data">--</span>
+          </span>
+          <span class="cotacao-item js-clima" style="display:none">
+            <span class="cotacao-label js-clima-city">--</span>
+            <span class="cotacao-value js-clima-temp">--</span>
+          </span>
+          <span class="cotacao-item">
+            <span class="cotacao-label">USD/BRL</span>
+            <span class="cotacao-value js-usdbrl">--</span>
+            <span class="cotacao-change js-usdbrl-change"></span>
+          </span>
+          <span class="cotacao-item">
+            <span class="cotacao-label">EUR/BRL</span>
+            <span class="cotacao-value js-eurbrl">--</span>
+            <span class="cotacao-change js-eurbrl-change"></span>
+          </span>
+          <span class="cotacao-item">
+            <span class="cotacao-label">BTC/USD</span>
+            <span class="cotacao-value js-btcusd">--</span>
+            <span class="cotacao-change js-btcusd-change"></span>
+          </span>
+          <span class="cotacao-item">
+            <span class="cotacao-label">IBOV</span>
+            <span class="cotacao-value js-ibov">--</span>
+            <span class="cotacao-change js-ibov-change"></span>
+          </span>
+          <span class="cotacao-item">
+            <span class="cotacao-label">SELIC</span>
+            <span class="cotacao-value js-selic">--</span>
+          </span>
+          <span class="cotacao-item">
+            <span class="cotacao-label">IPCA 12M</span>
+            <span class="cotacao-value js-ipca">--</span>
+          </span>
+          <span class="cotacao-item">
+            <span class="cotacao-label">CDI</span>
+            <span class="cotacao-value js-cdi">--</span>
+          </span>
+          {latestTitle && (
+            <a class="cotacao-item cotacao-post" href={latestUrl}>
+              <span class="cotacao-label">{labels.novo}</span>
+              <span class="cotacao-text">{latestTitle}</span>
+            </a>
+          )}
+          <span class="cotacao-item">
+            <span class="cotacao-label">{labels.dica}</span>
+            <span class="cotacao-text js-dica">--</span>
+          </span>
+        </div>
+      ))}
     </div>
   </div>
 </div>
@@ -147,11 +106,9 @@ const labels = {
     { match: (c) => c >= 95, emoji: '⛈️', pt: 'tempestade', en: 'storm', es: 'tormenta' },
   ];
 
-  function setPair(idBase, text) {
-    const el1 = document.getElementById(idBase);
-    const el2 = document.getElementById(idBase + '2');
-    if (el1) el1.textContent = text;
-    if (el2) el2.textContent = text;
+  // Preenche o mesmo campo em TODAS as 4 cópias do loop
+  function setAll(cls, text) {
+    document.querySelectorAll('.' + cls).forEach((el) => { el.textContent = text; });
   }
 
   function capitalize(s) {
@@ -165,11 +122,11 @@ const labels = {
     const semana = hoje.toLocaleDateString(localeTag, { weekday: 'long' })
       .split('-').map(capitalize).join('-');
     const resto = hoje.toLocaleDateString(localeTag, { day: 'numeric', month: 'long' });
-    setPair('cot-data', '📅 ' + semana + ', ' + resto);
+    setAll('js-data', '📅 ' + semana + ', ' + resto);
 
     const list = tips[pageLang] || tips.pt;
     const dayOfYear = Math.floor((hoje.getTime() - new Date(hoje.getFullYear(), 0, 0).getTime()) / 86400000);
-    setPair('cot-dica', list[dayOfYear % list.length]);
+    setAll('js-dica', list[dayOfYear % list.length]);
   }
 
   async function fetchCotacoes() {
@@ -194,13 +151,13 @@ const labels = {
         updateCotacao('ibov', '--', null);
       }
       if (d.selic !== null && d.selic !== undefined) {
-        setPair('cot-selic', d.selic.toFixed(2) + '%');
+        setAll('js-selic', d.selic.toFixed(2) + '%');
       }
       if (d.ipca !== null && d.ipca !== undefined) {
-        setPair('cot-ipca', d.ipca.toFixed(2) + '%');
+        setAll('js-ipca', d.ipca.toFixed(2) + '%');
       }
       if (d.cdi !== null && d.cdi !== undefined) {
-        setPair('cot-cdi', d.cdi.toFixed(2) + '%');
+        setAll('js-cdi', d.cdi.toFixed(2) + '%');
       }
     } catch (e) {
       // Proxy indisponível (ex.: dev local sem Functions) → mantém "--" inicial
@@ -220,39 +177,31 @@ const labels = {
         : null;
       const emoji = cond ? cond.emoji : '🌤';
       const condLabel = cond ? capitalize(cond[pageLang] || cond.pt) : '';
-      const temp = d.temp + '°C' + (condLabel ? ' ' + condLabel : '');
-      [['clima-city', 'clima-temp', 'clima-item'], ['clima-city2', 'clima-temp2', 'clima-item2']].forEach(([cityId, tempId, itemId]) => {
-        const cityEl = document.getElementById(cityId);
-        const tempEl = document.getElementById(tempId);
-        const itemEl = document.getElementById(itemId);
-        if (cityEl) cityEl.textContent = emoji + ' ' + city;
-        if (tempEl) tempEl.textContent = temp;
-        if (itemEl) itemEl.style.display = '';
-      });
+      setAll('js-clima-city', emoji + ' ' + city);
+      setAll('js-clima-temp', d.temp + '°C' + (condLabel ? ' ' + condLabel : ''));
+      document.querySelectorAll('.js-clima').forEach((el) => { el.style.display = ''; });
     } catch (e) {
       // Sem clima → item permanece oculto
     }
   }
 
   function updateCotacao(pair, value, pctChange) {
-    const el1 = document.getElementById('cot-' + pair);
-    const el2 = document.getElementById('cot-' + pair + '2');
-    const ch1 = document.getElementById('cot-' + pair + '-change');
-    const ch2 = document.getElementById('cot-' + pair + '-change2');
-
-    if (el1) el1.textContent = value;
-    if (el2) el2.textContent = value;
+    setAll('js-' + pair, value);
 
     if (pctChange !== undefined && pctChange !== null) {
       var sign = pctChange >= 0 ? '+' : '';
       var cls = pctChange >= 0 ? 'positive' : 'negative';
       var text = sign + pctChange.toFixed(2) + '%';
-      if (ch1) { ch1.textContent = text; ch1.className = 'cotacao-change ' + cls; }
-      if (ch2) { ch2.textContent = text; ch2.className = 'cotacao-change ' + cls; }
+      document.querySelectorAll('.js-' + pair + '-change').forEach((el) => {
+        el.textContent = text;
+        el.className = el.className.replace(/ (positive|negative)/g, '') + ' ' + cls;
+      });
     } else {
       // Fonte sem % de variação → limpa o badge em vez de manter um valor velho
-      if (ch1) { ch1.textContent = ''; ch1.className = 'cotacao-change'; }
-      if (ch2) { ch2.textContent = ''; ch2.className = 'cotacao-change'; }
+      document.querySelectorAll('.js-' + pair + '-change').forEach((el) => {
+        el.textContent = '';
+        el.className = el.className.replace(/ (positive|negative)/g, '');
+      });
     }
   }
 
@@ -295,9 +244,17 @@ const labels = {
 
   .cotacao-track {
     display: flex;
-    gap: var(--space-8);
-    animation: ticker 45s linear infinite;
+    animation: ticker 35s linear infinite;
     white-space: nowrap;
+  }
+
+  /* Cada grupo é 1 cópia completa dos itens; o padding-right faz o papel do
+     gap entre grupos — assim translateX(-25%) avança exatamente 1 grupo. */
+  .cotacao-group {
+    display: flex;
+    gap: var(--space-8);
+    padding-right: var(--space-8);
+    flex-shrink: 0;
   }
 
   .cotacao-item {
@@ -349,9 +306,8 @@ const labels = {
 
   @keyframes ticker {
     0% { transform: translateX(0); }
-    /* -50% ignora o gap ENTRE as duas metades duplicadas → salto visível a
-       cada volta. Compensar meio gap deixa o encaixe do loop perfeito. */
-    100% { transform: translateX(calc(-50% - var(--space-8) / 2)); }
+    /* 4 grupos idênticos → deslocar 1 grupo = -25% exatos, emenda invisível */
+    100% { transform: translateX(-25%); }
   }
 
   .cotacao-bar:hover .cotacao-track {
