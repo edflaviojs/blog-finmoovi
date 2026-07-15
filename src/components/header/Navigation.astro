@@ -1,19 +1,34 @@
 ---
 import { getNavCategories } from '@/utils/nav-categories';
+import { categoryLabel, type Locale } from '@/utils/home-data';
 
 // Navegação portal: pills planas e deslizáveis (desktop e mobile).
 // Categorias — fonte única em site.config (content.categoryNav), filtradas
 // pelas que já têm posts. Adicionar categoria lá reflete aqui automaticamente.
 // "Sobre" saiu do menu e vive no footer (decisão do redesign portal).
-const categorias = await getNavCategories();
+const navCategorias = await getNavCategories();
 
+// Em /en e /es as pills apontam para as páginas localizadas (Fase 3) com
+// label no idioma; em pt fica tudo idêntico ao que já estava em produção.
+const currentPath = Astro.url.pathname;
+let locale: Locale = 'pt';
+if (currentPath === '/en' || currentPath.startsWith('/en/')) locale = 'en';
+else if (currentPath === '/es' || currentPath.startsWith('/es/')) locale = 'es';
+const prefix = locale === 'pt' ? '' : `/${locale}`;
+
+const categorias = navCategorias.map(c => ({
+  slug: c.slug,
+  label: locale === 'pt' ? c.label : categoryLabel(locale, c.slug),
+  href: `${prefix}/categorias/${c.slug}`,
+}));
+
+// Ferramentas e Glossário têm índice en/es; Estudos só existe em pt.
 const fixedItems = [
-  { label: 'Ferramentas', key: 'nav.ferramentas', href: '/ferramentas' },
-  { label: 'Glossário', key: 'nav.glossario', href: '/glossario' },
+  { label: 'Ferramentas', key: 'nav.ferramentas', href: `${prefix}/ferramentas` },
+  { label: 'Glossário', key: 'nav.glossario', href: `${prefix}/glossario` },
   { label: 'Estudos', key: 'nav.estudos', href: '/estudos' },
 ];
 
-const currentPath = Astro.url.pathname;
 const isActive = (href: string) =>
   currentPath === href || (href !== '/' && currentPath.startsWith(href));
 ---

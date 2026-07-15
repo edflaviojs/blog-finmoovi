@@ -97,7 +97,7 @@ export async function getHomeData(locale: Locale) {
     // até 8 cards: as fileiras são carrosséis-esteira e precisam de estoque p/ girar
     const cards = posts.filter(p => p.data.category === cat.slug).slice(0, 8).map(p => toCard(prefix, p));
     if (cards.length >= 2) {
-      rows.push({ slug: cat.slug, label: categoryLabel(locale, cat.slug), href: `/categorias/${cat.slug}`, cards });
+      rows.push({ slug: cat.slug, label: categoryLabel(locale, cat.slug), href: `${prefix}/categorias/${cat.slug}`, cards });
     }
   }
 
