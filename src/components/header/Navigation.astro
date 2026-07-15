@@ -56,9 +56,11 @@ const isActive = (href: string) =>
     background: var(--bg-tertiary);
   }
 
+  /* Desktop: ativa em pill suave (mockup); mobile: gradiente do portal */
   .pill.active {
-    background: var(--gradient-cta);
-    color: #fff;
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-color: var(--border-default);
   }
 
   /* Mobile: as pills descem para a segunda linha do header, com borda */
@@ -78,7 +80,8 @@ const isActive = (href: string) =>
 
     .pill.active {
       border-color: transparent;
-      background: var(--gradient-cta);
+      background: linear-gradient(90deg, #00c8d7, #A91079);
+      color: #fff;
     }
   }
 </style>

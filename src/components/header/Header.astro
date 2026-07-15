@@ -148,20 +148,22 @@ const blogTitle = `${brand.name} ${brand.blogSuffix}`;
     margin-left: 2px;
   }
 
-  /* Mobile: linha 1 = logo + ações alinhadas; linha 2 = pills (Navigation) */
+  /* Mobile: linha 1 = logo + ações SEMPRE na mesma linha (logo encolhe se
+     precisar); linha 2 = pills (Navigation, flex-basis 100%) */
   @media (max-width: 767px) {
     .header-inner {
       gap: var(--space-2);
       justify-content: space-between;
     }
 
-    .logo { gap: var(--space-2); }
-    .logo-icon { width: 30px; height: 30px; }
-    .logo-icon svg { width: 16px; height: 16px; }
-    .logo-text { font-size: var(--text-base); }
+    .logo { gap: var(--space-1); flex: 1 1 auto; min-width: 0; }
+    .logo-icon { width: 28px; height: 28px; flex-shrink: 0; }
+    .logo-icon svg { width: 15px; height: 15px; }
+    .logo-text { font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-    .header-right { gap: 6px; margin-left: 0; }
-    .icon-btn { width: 32px; height: 32px; }
-    .header-cta { font-size: 12.5px; padding: 8px 13px; }
+    .header-right { gap: 4px; margin-left: 0; flex-shrink: 0; }
+    .icon-btn { width: 31px; height: 31px; }
+    .icon-btn svg { width: 14px; height: 14px; }
+    .header-cta { font-size: 12px; padding: 7px 11px; }
   }
 </style>

@@ -1,4 +1,4 @@
-import type { SiteConfig } from './src/types/config';
+﻿import type { SiteConfig } from './src/types/config';
 
 /**
  * ═══════════════════════════════════════════════════════════════════════
@@ -142,7 +142,7 @@ export const config: SiteConfig = {
         cta: { pt: 'Conhecer o multi-moeda →', en: 'See multi-currency →', es: 'Conocer multi-moneda →' },
       },
       {
-        theme: 'funil', icon: '🎯', href: 'https://finmoovi.com/funil-interativo',
+        theme: 'funil', icon: '🎯', href: 'https://app.finmoovi.com/funil-interativo',
         title: { pt: 'Qual é o seu', en: "What's your", es: '¿Cuál es tu' },
         highlight: { pt: 'perfil financeiro?', en: 'financial profile?', es: 'perfil financiero?' },
         text: {
@@ -165,7 +165,7 @@ export const config: SiteConfig = {
       },
     ],
     rail: {
-      theme: 'funil', icon: '🎯', href: 'https://finmoovi.com/funil-interativo',
+      theme: 'funil', icon: '🎯', href: 'https://app.finmoovi.com/funil-interativo',
       title: { pt: 'Qual é o seu perfil financeiro?', en: "What's your financial profile?", es: '¿Cuál es tu perfil financiero?' },
       text: { pt: 'Funil interativo · resultado em 2 minutos', en: 'Interactive funnel · results in 2 minutes', es: 'Embudo interactivo · resultado en 2 minutos' },
       cta: { pt: 'Descobrir agora →', en: 'Find out now →', es: 'Descubrir ahora →' },

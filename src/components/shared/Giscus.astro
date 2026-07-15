@@ -42,6 +42,34 @@ const giscusEnabled = repoId && categoryId;
   </p>
 </section>
 
+<script>
+  // Sincroniza o tema do Giscus com o toggle dark/light do blog.
+  // O iframe só aceita mudança via postMessage depois de carregado.
+  function giscusTheme(): string {
+    return document.documentElement.dataset.theme === 'light' ? 'light' : 'dark_dimmed';
+  }
+
+  function pushGiscusTheme() {
+    const frame = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+    frame?.contentWindow?.postMessage(
+      { giscus: { setConfig: { theme: giscusTheme() } } },
+      'https://giscus.app'
+    );
+  }
+
+  // Ao carregar: se o tema atual difere do embed inicial (dark_dimmed), ajusta
+  // assim que o iframe ficar pronto (giscus envia uma mensagem ao montar)
+  addEventListener('message', (e) => {
+    if (e.origin === 'https://giscus.app') pushGiscusTheme();
+  });
+
+  // Ao alternar o tema no blog (muda data-theme no <html>)
+  new MutationObserver(pushGiscusTheme).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme'],
+  });
+</script>
+
 <style>
   .comments-section {
     margin-top: var(--space-12);

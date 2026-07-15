@@ -142,6 +142,8 @@ const slides = base.map((_, i) => base[(i + offset) % base.length]);
     line-height: 1.1;
     max-width: 18ch;
     text-wrap: balance;
+    /* explícito: headings globais definem color e apagariam o branco no tema claro */
+    color: #fff;
   }
 
   .bb-copy h2 em {

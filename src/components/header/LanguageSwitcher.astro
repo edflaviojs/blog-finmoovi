@@ -69,11 +69,16 @@ const langs = ALL_LANGS.filter(l => config.locales.includes(l.code));
       if (toggle) toggle.setAttribute('aria-expanded', 'false');
       if (dropdown) { dropdown.setAttribute('aria-hidden', 'true'); dropdown.inert = true; }
 
-      // Try to find alternate hreflang link for the target language
+      // Try to find alternate hreflang link for the target language.
+      // Usa só o PATHNAME do alternate: mantém o usuário no host atual
+      // (produção ou preview) em vez de pular para a URL absoluta de produção.
       var alternateLink = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]');
       if (alternateLink) {
-        window.location.href = alternateLink.getAttribute('href');
-        return;
+        try {
+          var altUrl = new URL(alternateLink.getAttribute('href'), window.location.origin);
+          window.location.href = altUrl.pathname + altUrl.search;
+          return;
+        } catch (err) { /* cai no fallback path-based abaixo */ }
       }
 
       // Fallback: navigate using path-based logic

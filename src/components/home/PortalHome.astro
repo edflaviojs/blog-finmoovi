@@ -1,4 +1,4 @@
----
+﻿---
 import BillboardCarousel from './BillboardCarousel.astro';
 import AdSlot from './AdSlot.astro';
 import { imgSrcset } from '@/utils/responsive-image';
@@ -21,6 +21,17 @@ const localeTag = locale === 'pt' ? 'pt-BR' : locale === 'es' ? 'es-ES' : 'en-US
 const fmtLong = (d: Date) => d.toLocaleDateString(localeTag, { day: '2-digit', month: 'long', year: 'numeric' });
 const fmtShort = (d: Date) => d.toLocaleDateString(localeTag, { day: 'numeric', month: 'short' });
 
+// Todas as ferramentas reais do blog (páginas em /ferramentas/*)
+const TOOLS = [
+  { href: '/ferramentas/conversor-moedas', label: { pt: 'Conversor de moedas', en: 'Currency converter', es: 'Conversor de monedas' } },
+  { href: '/ferramentas/calculadora-juros-compostos', label: { pt: 'Juros compostos', en: 'Compound interest', es: 'Interés compuesto' } },
+  { href: '/ferramentas/calculadora-orcamento', label: { pt: 'Orçamento 50-30-20', en: '50-30-20 budget', es: 'Presupuesto 50-30-20' } },
+  { href: '/ferramentas/calculadora-reserva', label: { pt: 'Reserva ideal', en: 'Emergency fund', es: 'Fondo de emergencia' } },
+  { href: '/ferramentas/simulador-investimento', label: { pt: 'Simulador de investimentos', en: 'Investment simulator', es: 'Simulador de inversiones' } },
+  { href: '/ferramentas/calculadora-financiamento', label: { pt: 'Financiamento', en: 'Loan calculator', es: 'Financiación' } },
+  { href: '/ferramentas/calculadora-aposentadoria', label: { pt: 'Aposentadoria', en: 'Retirement', es: 'Jubilación' } },
+];
+
 const T = {
   pt: {
     agora: 'AGORA', novoNoBlog: 'Novo no blog', emDestaque: '🔥 Em destaque', ferramentas: '🧮 Ferramentas',
@@ -31,7 +42,6 @@ const T = {
     disclaimer: '⚖️ Conteúdo exclusivamente educativo. O FinMoovi Blog não faz recomendações de investimento — cada decisão financeira é pessoal; considere consultar um profissional certificado.',
     newsTitle: 'O resumo que protege seu bolso', newsSub: 'Cotações da semana, o melhor do blog e 1 dica acionável.', newsSub2: 'Toda sexta, de graça, sem spam.',
     newsPh: 'seu@email.com', newsBtn: 'Quero receber',
-    tools: ['Conversor de moedas', 'Juros compostos', 'Método 50-30-20', 'Reserva ideal'],
   },
   en: {
     agora: 'NOW', novoNoBlog: 'New on the blog', emDestaque: '🔥 Featured', ferramentas: '🧮 Tools',
@@ -42,7 +52,6 @@ const T = {
     disclaimer: '⚖️ Educational content only. FinMoovi Blog does not provide investment advice — every financial decision is personal; consider consulting a certified professional.',
     newsTitle: 'The digest that protects your wallet', newsSub: 'Weekly quotes, the best of the blog and 1 actionable tip.', newsSub2: 'Every Friday, free, no spam.',
     newsPh: 'you@email.com', newsBtn: 'Subscribe',
-    tools: ['Currency converter', 'Compound interest', '50-30-20 method', 'Emergency fund'],
   },
   es: {
     agora: 'AHORA', novoNoBlog: 'Nuevo en el blog', emDestaque: '🔥 Destacados', ferramentas: '🧮 Herramientas',
@@ -53,7 +62,6 @@ const T = {
     disclaimer: '⚖️ Contenido exclusivamente educativo. FinMoovi Blog no hace recomendaciones de inversión — cada decisión financiera es personal; considera consultar a un profesional certificado.',
     newsTitle: 'El resumen que protege tu bolsillo', newsSub: 'Cotizaciones de la semana, lo mejor del blog y 1 consejo accionable.', newsSub2: 'Cada viernes, gratis, sin spam.',
     newsPh: 'tu@email.com', newsBtn: 'Quiero recibirlo',
-    tools: ['Conversor de monedas', 'Interés compuesto', 'Método 50-30-20', 'Fondo de emergencia'],
   },
 }[locale];
 ---
@@ -133,7 +141,7 @@ const T = {
       <div class="widget reveal in">
         <h4>{T.ferramentas}</h4>
         <div class="chips">
-          {T.tools.map(tool => <a href={`${prefix}/ferramentas`}>{tool}</a>)}
+          {TOOLS.map(tool => <a href={tool.href}>{tool.label[locale]}</a>)}
         </div>
       </div>
     </aside>
@@ -283,7 +291,10 @@ const T = {
   </div>
 </section>
 
-<BillboardCarousel locale={locale} offset={2} />
+<!-- margem negativa anula o margin-top do Footer: sem faixa branca entre eles -->
+<div class="bb-bottom">
+  <BillboardCarousel locale={locale} offset={2} />
+</div>
 
 <script>
   // ===== Reveal ao rolar
@@ -345,6 +356,8 @@ const T = {
 
   .only-mobile { display: none; }
 
+  .bb-bottom { margin-bottom: calc(var(--space-20) * -1); }
+
   /* ===== Faixa AGORA ===== */
   .breaking { background: var(--bg-tertiary); border-bottom: 1px solid var(--border-muted); font-size: var(--text-sm); }
   .breaking-in { display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-4); }
@@ -360,7 +373,6 @@ const T = {
     grid-template-columns: 1fr 1fr 320px;
     grid-template-areas: "hero hero rail" "c2 c3 rail";
     gap: var(--space-5);
-    align-items: start;
     margin-top: var(--space-6);
   }
 
@@ -370,6 +382,11 @@ const T = {
   .a-rail { grid-area: rail; }
 
   /* ===== Cards ===== */
+  /* Gradiente do portal fixo (paleta do mockup aprovado): independe de tema */
+  :global(:root) {
+    --portal-grad: linear-gradient(90deg, #00c8d7, #A91079);
+  }
+
   .pcard {
     background: var(--bg-secondary);
     border: 1px solid var(--border-muted);
@@ -377,7 +394,16 @@ const T = {
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    height: 100%; /* cards da mesma fileira sempre com a mesma altura */
   }
+
+  .pcard > a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .pcard-body { flex: 1; }
 
   .pcard:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 
@@ -396,7 +422,7 @@ const T = {
     font-weight: 800;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    background: var(--gradient-cta);
+    background: var(--portal-grad);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -428,7 +454,7 @@ const T = {
     font-family: var(--font-mono, monospace);
     font-size: 18px;
     font-weight: 700;
-    background: var(--gradient-cta);
+    background: var(--portal-grad);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -467,7 +493,7 @@ const T = {
   .resume-info .eyebrow { display: block; margin-bottom: 2px; }
   .resume-info h3 { margin: 0 0 var(--space-2); font-size: 15.5px; letter-spacing: -0.01em; color: var(--text-primary); }
   .resume-bar { height: 5px; border-radius: 3px; background: var(--bg-tertiary); overflow: hidden; max-width: 320px; }
-  .resume-bar i { display: block; height: 100%; border-radius: 3px; background: var(--gradient-cta); }
+  .resume-bar i { display: block; height: 100%; border-radius: 3px; background: var(--portal-grad); }
   .resume-info small { color: var(--text-tertiary); font-size: 11.5px; }
   .resume-cta { background: var(--gradient-cta); color: #fff; font-size: 13px; font-weight: 700; padding: 9px 20px; border-radius: var(--radius-full); white-space: nowrap; transition: transform var(--transition-fast); }
   .resume-cta:hover { transform: translateY(-2px); }
@@ -479,19 +505,19 @@ const T = {
   .manchete h2 a:hover { color: var(--accent-primary); }
   .manchete ul { list-style: none; margin: 0; padding: 0; }
   .manchete li { position: relative; padding: var(--space-2) 0 var(--space-2) 14px; border-top: 1px solid var(--border-muted); font-size: 15px; font-weight: 450; }
-  .manchete li::before { content: ""; position: absolute; left: 0; top: 9px; bottom: 9px; width: 3px; border-radius: 2px; background: linear-gradient(180deg, var(--brand-gradient-start), var(--brand-gradient-end)); }
+  .manchete li::before { content: ""; position: absolute; left: 0; top: 9px; bottom: 9px; width: 3px; border-radius: 2px; background: linear-gradient(180deg, #00c8d7, #A91079); }
   .manchete li a { color: var(--text-secondary); }
   .manchete li a:hover { color: var(--text-primary); }
 
   .manchete.right { text-align: right; }
   .manchete.right h2 { margin-left: auto; }
   .manchete.right li { padding: var(--space-2) 14px var(--space-2) 0; }
-  .manchete.right li::before { left: auto; right: 0; background: linear-gradient(180deg, var(--brand-gradient-end), var(--brand-gradient-start)); }
+  .manchete.right li::before { left: auto; right: 0; background: linear-gradient(180deg, #A91079, #00c8d7); }
 
   /* ===== Seções ===== */
   .section-head { display: flex; align-items: baseline; gap: var(--space-3); margin: var(--space-10) 0 var(--space-4); }
   .section-head h2 { margin: 0; font-size: 21px; letter-spacing: -0.02em; color: var(--text-primary); }
-  .section-head .bar { width: 34px; height: 4px; border-radius: 2px; background: var(--gradient-cta); align-self: center; }
+  .section-head .bar { width: 34px; height: 4px; border-radius: 2px; background: var(--portal-grad); align-self: center; }
   .section-head .all { margin-left: auto; font-size: 13px; font-weight: 700; color: var(--accent-primary); }
 
   .row-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4); }
@@ -540,7 +566,8 @@ const T = {
   .news-bg { position: absolute; inset: 0; background: radial-gradient(80% 140% at 15% 0%, rgba(var(--brand-cyan-rgb), 0.16), transparent 50%), radial-gradient(70% 130% at 90% 100%, rgba(169, 16, 121, 0.22), transparent 55%); }
   .news-in { position: relative; max-width: 720px; margin: 0 auto; padding: var(--space-12) var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); align-items: center; text-align: center; color: #fff; }
   .news-ico { font-size: 40px; line-height: 1; }
-  .news-in h2 { margin: 0; font-size: clamp(22px, 3vw, 34px); letter-spacing: -0.02em; text-wrap: balance; }
+  /* cor explícita: headings globais têm color própria e apagariam o branco */
+  .news-in h2 { margin: 0; font-size: clamp(22px, 3vw, 34px); letter-spacing: -0.02em; text-wrap: balance; color: #fff; }
   .news-in p { margin: 0 0 var(--space-2); color: #93a5b6; font-size: 15px; line-height: 1.65; }
   .news-form { display: flex; gap: var(--space-2); flex-wrap: wrap; justify-content: center; width: 100%; }
   .news-form input { background: #161b22; border: 1px solid #2a3441; color: #fff; border-radius: var(--radius-full); padding: 13px 20px; font-size: var(--text-sm); flex: 1 1 240px; max-width: 340px; text-align: center; }
