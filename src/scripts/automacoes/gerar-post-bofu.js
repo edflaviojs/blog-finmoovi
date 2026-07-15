@@ -52,12 +52,15 @@ REGRAS:
 8. Mínimo 1000 palavras, 5+ seções H2
 9. O último H2: "Qual escolher?" com recomendação por perfil
 10. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+11. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 
 Responda neste formato:
 ---TITULO---
 [título SEO, 50-60 chars, keyword no início]
 ---META---
 [meta description, max 155 chars]
+---HEADLINE---
+[headline de ticker, máximo 40 caracteres]
 ---KEYWORDS---
 [5-7 keywords separadas por vírgula]
 ---CONTEUDO---
@@ -77,12 +80,15 @@ REGRAS:
 7. Mínimo 1000 palavras, 5+ seções H2
 8. CTA final: "Quer testar o que funciona offline e por voz? ${config.app.name} tem 7 dias grátis"
 9. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+10. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 
 Responda neste formato:
 ---TITULO---
 [título SEO, 50-60 chars]
 ---META---
 [meta description, max 155 chars]
+---HEADLINE---
+[headline de ticker, máximo 40 caracteres]
 ---KEYWORDS---
 [5-7 keywords]
 ---CONTEUDO---
@@ -101,12 +107,15 @@ REGRAS:
 6. Mínimo 1200 palavras, 6+ seções H2
 7. CTA final: "Teste você mesmo — ${config.app.name} tem 7 dias grátis sem cartão"
 8. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+9. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 
 Responda neste formato:
 ---TITULO---
 [título SEO, 50-60 chars]
 ---META---
 [meta description, max 155 chars]
+---HEADLINE---
+[headline de ticker, máximo 40 caracteres]
 ---KEYWORDS---
 [5-7 keywords]
 ---CONTEUDO---
@@ -128,12 +137,15 @@ REGRAS:
 9. Mínimo 800 palavras, 4-5 seções H2
 10. CTA sutil no final
 11. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+12. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 
 Responda neste formato:
 ---TITULO---
 [título SEO, 50-60 chars]
 ---META---
 [meta description, max 155 chars]
+---HEADLINE---
+[headline de ticker, máximo 40 caracteres]
 ---KEYWORDS---
 [5-7 keywords]
 ---CONTEUDO---
@@ -153,12 +165,15 @@ REGRAS:
 7. Mínimo 800 palavras, 4-5 seções H2
 8. CTA: "Se a planilha não está funcionando, teste o ${config.app.name} por 7 dias"
 9. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+10. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 
 Responda neste formato:
 ---TITULO---
 [título SEO, 50-60 chars]
 ---META---
 [meta description, max 155 chars]
+---HEADLINE---
+[headline de ticker, máximo 40 caracteres]
 ---KEYWORDS---
 [5-7 keywords]
 ---CONTEUDO---
@@ -207,6 +222,8 @@ Respond in this format:
 [translated title]
 ---META---
 [translated meta description]
+---HEADLINE---
+[translated ticker headline, max 40 characters]
 ---KEYWORDS---
 [translated keywords, comma separated]
 ---CONTEUDO---
@@ -215,18 +232,21 @@ Respond in this format:
 Original:
 Title: ${post.title}
 Meta: ${post.meta}
+Ticker headline: ${post.headline || post.title.slice(0, 40)}
 Keywords: ${(post.keywords || []).join(', ')}
 Content:
 ${post.content}
 `;
   const result = await generateText(prompt, { maxTokens: 5000, temperature: 0.3 });
   const t = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
-  const m = result.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+  const m = result.match(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/);
+  const h = result.match(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
   const k = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
   const c = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
   return {
     title: t ? t[1].trim() : post.title,
     meta: m ? m[1].trim() : post.meta,
+    headline: (h ? h[1].trim().replace(/^["']|["']$/g, '') : '').slice(0, 40),
     keywords: k ? k[1].trim().split(',').map(x => x.trim()) : post.keywords,
     content: c ? c[1].trim() : post.content,
   };
@@ -236,7 +256,7 @@ function savePost(slug, data) {
   const frontmatter = `---
 title: "${data.title.replace(/"/g, '\\"')}"
 description: "${data.meta.replace(/"/g, '\\"')}"
-image: "${data.imagePath}"
+${data.headline ? `tickerHeadline: "${data.headline.replace(/"/g, '\\"')}"\n` : ''}image: "${data.imagePath}"
 category: "ferramentas"
 locale: "${data.locale}"
 tags: ${JSON.stringify(data.keywords || [])}
@@ -291,7 +311,7 @@ async function main() {
 
   try {
     let result;
-    let titleMatch, metaMatch, keywordsMatch, contentMatch;
+    let titleMatch, metaMatch, headlineMatch, keywordsMatch, contentMatch;
 
     for (let attempt = 1; attempt <= 3; attempt++) {
       result = await generateText(prompt, { maxTokens: 5000, temperature: attempt === 1 ? 0.7 : 0.5 });
@@ -303,7 +323,8 @@ async function main() {
       }
 
       titleMatch = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
-      metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+      metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/);
+      headlineMatch = result.match(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
       keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
       contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
@@ -312,10 +333,12 @@ async function main() {
       if (attempt < 3) { await new Promise(r => setTimeout(r, 15000)); }
     }
 
-    let title, meta, keywords, content;
+    let title, meta, headline, keywords, content;
     if (titleMatch && contentMatch) {
       title = titleMatch[1].trim();
       meta = metaMatch ? metaMatch[1].trim() : '';
+      // Headline do ticker: opcional, com teto rígido de 40 chars
+      headline = (headlineMatch ? headlineMatch[1].trim().replace(/^["']|["']$/g, '') : '').slice(0, 40);
       keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : topic.keywords;
       content = contentMatch[1].trim();
     } else if (result && result.trim().length > 300 && /^#{1,2}\s/m.test(result)) {
@@ -324,6 +347,7 @@ async function main() {
       title = (h1 ? h1[1] : result.split('\n').find(l => l.trim()).replace(/^#+\s*/, '')).trim();
       content = result.replace(/^#\s+.+\r?\n?/m, '').trim();
       meta = '';
+      headline = '';
       keywords = topic.keywords;
       console.log('ℹ️ Delimitadores ausentes — usando fallback markdown (título do primeiro H1).');
     } else {
@@ -345,19 +369,19 @@ async function main() {
     const imagePath = await generateCoverImage(title, slugPt, 'posts');
     const processed = await insertInlineImages(content, slugPt);
 
-    savePost(slugPt, { title, meta, keywords: allKeywords, content: processed, imagePath, locale: 'pt', today, translationKey: slugPt });
+    savePost(slugPt, { title, meta, headline, keywords: allKeywords, content: processed, imagePath, locale: 'pt', today, translationKey: slugPt });
 
     if (config.locales.includes('en')) {
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 EN...');
-      const en = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'en');
+      const en = await translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'en');
       savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
     }
 
     if (config.locales.includes('es')) {
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 ES...');
-      const es = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'es');
+      const es = await translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'es');
       savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
     }
 

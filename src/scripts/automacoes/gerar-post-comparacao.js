@@ -69,6 +69,8 @@ Respond in this format:
 [translated title]
 ---META---
 [translated meta description]
+---HEADLINE---
+[translated ticker headline, max 40 characters]
 ---KEYWORDS---
 [translated keywords, comma separated]
 ---CONTEUDO---
@@ -77,18 +79,21 @@ Respond in this format:
 Original:
 Title: ${post.title}
 Meta: ${post.meta}
+Ticker headline: ${post.headline || post.title.slice(0, 40)}
 Keywords: ${(post.keywords || []).join(', ')}
 Content:
 ${post.content}
 `;
   const result = await generateText(prompt, { maxTokens: 5000, temperature: 0.3 });
   const t = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
-  const m = result.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+  const m = result.match(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/);
+  const h = result.match(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
   const k = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
   const c = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
   return {
     title: t ? t[1].trim() : post.title,
     meta: m ? m[1].trim() : post.meta,
+    headline: (h ? h[1].trim().replace(/^["']|["']$/g, '') : '').slice(0, 40),
     keywords: k ? k[1].trim().split(',').map(x => x.trim()) : post.keywords,
     content: c ? c[1].trim() : post.content,
   };
@@ -98,7 +103,7 @@ function savePost(slug, data) {
   const frontmatter = `---
 title: "${data.title.replace(/"/g, '\\"')}"
 description: "${data.meta.replace(/"/g, '\\"')}"
-image: "${data.imagePath}"
+${data.headline ? `tickerHeadline: "${data.headline.replace(/"/g, '\\"')}"\n` : ''}image: "${data.imagePath}"
 category: "investimentos"
 locale: "${data.locale}"
 tags: ${JSON.stringify(data.keywords || [])}
@@ -165,12 +170,15 @@ REGRAS:
 8. Tom: educativo, claro, sem jargão técnico excessivo
 9. Inclua números reais quando possível (taxas, rendimentos)
 10. Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, Tesouro Direto https://www.tesourodireto.com.br, CVM https://www.cvm.gov.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+11. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 
 Responda neste formato:
 ---TITULO---
 [título]
 ---META---
 [meta description, max 155 chars]
+---HEADLINE---
+[headline de ticker, máximo 40 caracteres]
 ---KEYWORDS---
 [5-7 keywords]
 ---CONTEUDO---
@@ -179,7 +187,7 @@ Responda neste formato:
 
   try {
     let result;
-    let titleMatch, metaMatch, keywordsMatch, contentMatch;
+    let titleMatch, metaMatch, headlineMatch, keywordsMatch, contentMatch;
 
     for (let attempt = 1; attempt <= 3; attempt++) {
       result = await generateText(prompt, { maxTokens: 5000, temperature: attempt === 1 ? 0.7 : 0.5 });
@@ -194,7 +202,8 @@ Responda neste formato:
       }
 
       titleMatch = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
-      metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+      metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/);
+      headlineMatch = result.match(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
       keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
       contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
@@ -206,10 +215,12 @@ Responda neste formato:
       }
     }
 
-    let title, meta, keywords, content;
+    let title, meta, headline, keywords, content;
     if (titleMatch && contentMatch) {
       title = titleMatch[1].trim();
       meta = metaMatch ? metaMatch[1].trim() : '';
+      // Headline do ticker: opcional, com teto rígido de 40 chars
+      headline = (headlineMatch ? headlineMatch[1].trim().replace(/^["']|["']$/g, '') : '').slice(0, 40);
       keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : comp.keywords;
       content = contentMatch[1].trim();
     } else if (result && result.trim().length > 300 && /^#{1,2}\s/m.test(result)) {
@@ -219,6 +230,7 @@ Responda neste formato:
       title = (h1 ? h1[1] : result.split('\n').find(l => l.trim()).replace(/^#+\s*/, '')).trim();
       content = result.replace(/^#\s+.+\r?\n?/m, '').trim();
       meta = '';
+      headline = '';
       keywords = comp.keywords;
       console.log('ℹ️ Delimitadores ausentes — usando fallback markdown (título do primeiro H1).');
     } else {
@@ -240,19 +252,19 @@ Responda neste formato:
     const imagePath = await generateCoverImage(title, slugPt, 'posts');
     const processed = await insertInlineImages(content, slugPt);
 
-    savePost(slugPt, { title, meta, keywords: allKeywords, content: processed, imagePath, locale: 'pt', today, translationKey: slugPt });
+    savePost(slugPt, { title, meta, headline, keywords: allKeywords, content: processed, imagePath, locale: 'pt', today, translationKey: slugPt });
 
     if (config.locales.includes('en')) {
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 EN...');
-      const en = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'en');
+      const en = await translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'en');
       savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
     }
 
     if (config.locales.includes('es')) {
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 ES...');
-      const es = await translatePost({ title, meta, keywords: allKeywords, content: processed }, 'es');
+      const es = await translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'es');
       savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
     }
 
