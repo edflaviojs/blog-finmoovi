@@ -13,7 +13,9 @@ const langs = ALL_LANGS.filter(l => config.locales.includes(l.code));
 {langs.length > 1 && (
 <div class="lang-switcher" id="lang-switcher">
   <!-- Bolinha com a sigla do idioma atual (estilo do mockup portal) -->
-  <button class="lang-toggle" id="lang-toggle" aria-label="Selecionar idioma" aria-expanded="false">
+  <!-- aria-label começa com a sigla visível ("PT — ...") — o axe exige que o
+       texto visível esteja contido no nome acessível (label-content-name-mismatch) -->
+  <button class="lang-toggle" id="lang-toggle" aria-label="PT — Selecionar idioma" aria-expanded="false">
     <span class="lang-current-code" id="lang-current-code">PT</span>
   </button>
 
@@ -119,7 +121,10 @@ const langs = ALL_LANGS.filter(l => config.locales.includes(l.code));
   });
 
   function updateLang(lang) {
-    if (currentCode) currentCode.textContent = (lang || 'pt').toUpperCase();
+    var sigla = (lang || 'pt').toUpperCase();
+    if (currentCode) currentCode.textContent = sigla;
+    // aria-label acompanha a sigla visível (regra label-content-name-mismatch)
+    if (toggle) toggle.setAttribute('aria-label', sigla + ' — Selecionar idioma');
     checks.forEach(function(c) {
       c.style.display = c.getAttribute('data-check') === lang ? 'inline' : 'none';
     });

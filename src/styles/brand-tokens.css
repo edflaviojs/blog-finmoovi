@@ -15,4 +15,5 @@
   --brand-accent-red: #f85149;
   --brand-background: #0d1117;
   --brand-gradient: linear-gradient(135deg, #00F0FF 0%, #A91079 100%);
+  --portal-grad: linear-gradient(90deg, #00c8d7, #A91079);
 }

@@ -195,6 +195,8 @@ Respond in this exact format:
 [translated title]
 ---META---
 [translated meta description]
+---HEADLINE---
+[translated ticker headline, max 40 characters]
 ---KEYWORDS---
 [translated keywords, comma separated]
 ---CONTEUDO---
@@ -204,6 +206,7 @@ Original post:
 
 Title: ${post.title}
 Meta: ${post.meta}
+Ticker headline: ${post.headline || post.title.slice(0, 40)}
 Keywords: ${(post.keywords || []).join(', ')}
 Content:
 ${post.processedContent}
@@ -212,13 +215,16 @@ ${post.processedContent}
   const result = await generateText(prompt, { maxTokens: 5000, temperature: 0.3 });
 
   const titleMatch = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
-  const metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+  const metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/);
+  const headlineMatch = result.match(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
   const keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
   const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
   return {
     title: titleMatch ? titleMatch[1].trim() : post.title,
     meta: metaMatch ? metaMatch[1].trim() : post.meta,
+    // Headline do ticker: opcional, com teto rígido de 40 chars
+    headline: (headlineMatch ? headlineMatch[1].trim().replace(/^["']|["']$/g, '') : '').slice(0, 40),
     keywords: keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : post.keywords,
     content: contentMatch ? contentMatch[1].trim() : post.processedContent,
   };
@@ -228,7 +234,7 @@ function savePost(slug, data) {
   const frontmatter = `---
 title: "${data.title.replace(/"/g, '\\"')}"
 description: "${data.meta.replace(/"/g, '\\"')}"
-image: "${data.imagePath}"
+${data.headline ? `tickerHeadline: "${data.headline.replace(/"/g, '\\"')}"\n` : ''}image: "${data.imagePath}"
 category: "ferramentas"
 locale: "${data.locale}"
 tags: ${JSON.stringify(data.keywords || [])}
@@ -307,12 +313,15 @@ REGRAS DO POST:
 11. NÃO use "em conclusão" ou "para finalizar"
 12. Inclua uma seção comparando "antes vs depois" do ${config.app.name}
 13. Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, IBGE https://www.ibge.gov.br, Serasa https://www.serasa.com.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+14. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 
 Responda EXATAMENTE neste formato:
 ---TITULO---
 [título do post]
 ---META---
 [meta description para SEO, max 155 caracteres]
+---HEADLINE---
+[headline de ticker, máximo 40 caracteres]
 ---KEYWORDS---
 [5-7 keywords separadas por vírgula]
 ---CONTEUDO---
@@ -323,7 +332,8 @@ Responda EXATAMENTE neste formato:
     const result = await generateText(prompt, { maxTokens: 4000, temperature: 0.7 });
 
     const titleMatch = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
-    const metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+    const metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/);
+    const headlineMatch = result.match(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
     const keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
     const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
@@ -333,6 +343,8 @@ Responda EXATAMENTE neste formato:
 
     const title = titleMatch[1].trim();
     const meta = metaMatch ? metaMatch[1].trim() : '';
+    // Headline do ticker: opcional, com teto rígido de 40 chars
+    const headline = (headlineMatch ? headlineMatch[1].trim().replace(/^["']|["']$/g, '') : '').slice(0, 40);
     const keywords = keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : topic.keywords;
     const contentRaw = contentMatch[1].trim();
 
@@ -365,6 +377,7 @@ Responda EXATAMENTE neste formato:
     const ptPath = savePost(slugPt, {
       title,
       meta,
+      headline,
       keywords: allKeywords,
       content: processedContentPt,
       imagePath,
@@ -379,10 +392,11 @@ Responda EXATAMENTE neste formato:
       console.log('⏳ Aguardando 30s (rate limit)...');
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 Traduzindo EN...');
-      const enPost = await translatePost({ title, meta, keywords: allKeywords, processedContent: processedContentPt }, 'en');
+      const enPost = await translatePost({ title, meta, headline, keywords: allKeywords, processedContent: processedContentPt }, 'en');
       savePost(`en-${slugPt}`, {
         title: enPost.title,
         meta: enPost.meta,
+        headline: enPost.headline,
         keywords: enPost.keywords,
         content: enPost.content,
         imagePath,
@@ -398,10 +412,11 @@ Responda EXATAMENTE neste formato:
       console.log('⏳ Aguardando 30s (rate limit)...');
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 Traduzindo ES...');
-      const esPost = await translatePost({ title, meta, keywords: allKeywords, processedContent: processedContentPt }, 'es');
+      const esPost = await translatePost({ title, meta, headline, keywords: allKeywords, processedContent: processedContentPt }, 'es');
       savePost(`es-${slugPt}`, {
         title: esPost.title,
         meta: esPost.meta,
+        headline: esPost.headline,
         keywords: esPost.keywords,
         content: esPost.content,
         imagePath,

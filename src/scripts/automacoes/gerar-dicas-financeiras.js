@@ -80,6 +80,8 @@ Respond in this exact format:
 [translated title]
 ---META---
 [translated meta description]
+---HEADLINE---
+[translated ticker headline, max 40 characters]
 ---KEYWORDS---
 [translated keywords, comma separated]
 ---CONTEUDO---
@@ -89,6 +91,7 @@ Original post:
 
 Title: ${post.title}
 Meta: ${post.meta}
+Ticker headline: ${post.headline || post.title.slice(0, 40)}
 Keywords: ${(post.keywords || []).join(', ')}
 Content:
 ${post.processedContent}
@@ -98,13 +101,16 @@ ${post.processedContent}
 
   // Parse translated content
   const titleMatch = result.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
-  const metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+  const metaMatch = result.match(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/);
+  const headlineMatch = result.match(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
   const keywordsMatch = result.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
   const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
   return {
     title: titleMatch ? titleMatch[1].trim() : post.title,
     meta: metaMatch ? metaMatch[1].trim() : post.meta,
+    // Headline do ticker: opcional, com teto rígido de 40 chars
+    headline: (headlineMatch ? headlineMatch[1].trim().replace(/^["']|["']$/g, '') : '').slice(0, 40),
     keywords: keywordsMatch ? keywordsMatch[1].trim().split(',').map(k => k.trim()) : post.keywords,
     content: contentMatch ? contentMatch[1].trim() : post.processedContent,
   };
@@ -198,7 +204,7 @@ function savePost(slug, data, isFeatured = false) {
   const frontmatter = `---
 title: "${data.title.replace(/"/g, '\\"')}"
 description: "${data.meta.replace(/"/g, '\\"')}"
-image: "${data.imagePath}"
+${data.headline ? `tickerHeadline: "${data.headline.replace(/"/g, '\\"')}"\n` : ''}image: "${data.imagePath}"
 category: "dicas"
 locale: "${data.locale}"
 tags: ${JSON.stringify(data.keywords || [])}
@@ -300,6 +306,7 @@ async function main() {
     const ptPath = savePost(slugPt, {
       title: post.title,
       meta: post.meta,
+      headline: post.headline || '',
       keywords: post.keywords,
       content: processedContentPt,
       imagePath,
@@ -317,6 +324,7 @@ async function main() {
       const enPost = await translatePost({
         title: post.title,
         meta: post.meta,
+        headline: post.headline || '',
         keywords: post.keywords,
         processedContent: processedContentPt,
       }, 'en');
@@ -325,6 +333,7 @@ async function main() {
       const enPath = savePost(slugEn, {
         title: enPost.title,
         meta: enPost.meta,
+        headline: enPost.headline,
         keywords: enPost.keywords,
         content: enPost.content,
         imagePath, // same cover image
@@ -343,6 +352,7 @@ async function main() {
       const esPost = await translatePost({
         title: post.title,
         meta: post.meta,
+        headline: post.headline || '',
         keywords: post.keywords,
         processedContent: processedContentPt,
       }, 'es');
@@ -351,6 +361,7 @@ async function main() {
       const esPath = savePost(slugEs, {
         title: esPost.title,
         meta: esPost.meta,
+        headline: esPost.headline,
         keywords: esPost.keywords,
         content: esPost.content,
         imagePath, // same cover image

@@ -169,17 +169,19 @@ async function main() {
   rmPath('public/data/statistics.json');
 
   log('\n━━ 5/5 Menus e ticker ━━');
+  // Needles CURTOS de propósito: casam pela chave i18n (estável) e não pelo
+  // href, que virou template literal no redesign portal (`${prefix}/...`).
   stripLines('src/components/header/Navigation.astro', [
-    "{ label: 'Ferramentas', key: 'nav.ferramentas', href: '/ferramentas' },",
-    "{ label: 'Estudos', key: 'nav.estudos', href: '/estudos' },",
+    "key: 'nav.ferramentas'",
+    "key: 'nav.estudos'",
   ]);
   stripLines('src/components/header/MobileMenu.astro', [
-    "{ label: 'Ferramentas', href: '/ferramentas', i18n: 'nav.ferramentas' },",
-    "{ label: 'Estudos', href: '/estudos', i18n: 'nav.estudos' },",
+    "i18n: 'nav.ferramentas'",
+    "i18n: 'nav.estudos'",
   ]);
   stripLines('src/components/footer/Footer.astro', [
-    "{ label: 'Ferramentas', href: '/ferramentas', i18n: 'footer.link.ferramentas' },",
-    "{ label: 'Estudos', href: '/estudos', i18n: 'footer.link.estudos' },",
+    "i18n: 'footer.link.ferramentas'",
+    "i18n: 'footer.link.estudos'",
   ]);
   stripLines('src/components/header/Header.astro', [
     "import CotacaoBar from './CotacaoBar.astro';",
@@ -195,9 +197,15 @@ async function main() {
 Próximos passos:
   1. npm run demo-content   → gera os 3 primeiros posts do NOVO nicho via IA
   2. npm run build          → valida (i18n + schema + template)
-  3. Adaptar módulos de nicho restantes (⚙️ no código):
+  3. Adaptar no site.config.ts (redesign portal):
+     content.tools → [] ou as ferramentas do NOVO nicho (as páginas /ferramentas
+     foram apagadas; a home só mostra o widget se a lista não estiver vazia);
+     ads (billboard/rail/mid) → campanhas do novo produto;
+     brand.colors.portalGradientStart/End → gradiente do novo portal
+  4. Adaptar módulos de nicho restantes (⚙️ no código):
      /app (copy do produto), NewsletterPopup (lead magnet), CTAVariado (pool),
      functions/api/cotacoes|moedas (apagar se não usar), authors.ts (novo autor),
+     sitemap-index.xml.ts (URLs hardcoded de landings/ferramentas/estudos),
      subreddits (reddit-opportunities), sites concorrentes (broken-link-finder)
 `);
 }

@@ -186,6 +186,7 @@ REGRAS DE ESTILO (obrigatórias):
 ESTRUTURA:
 - Título SEO (50-60 caracteres, keyword no início)
 - Meta descrição (150-160 caracteres)
+- Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 - Conteúdo com 800-1200 palavras, 4-6 seções com H2
 - Keywords para SEO: ${keywords.join(', ')}
 
@@ -194,6 +195,8 @@ Formato de saída (use exatamente este formato):
 [título aqui]
 ---META---
 [meta descrição aqui]
+---HEADLINE---
+[headline de ticker, máximo 40 caracteres]
 ---KEYWORDS---
 [keyword1, keyword2, keyword3]
 ---CONTEUDO---
@@ -220,17 +223,22 @@ function parsePostContent(text) {
   const sections = {
     title: '',
     meta: '',
+    headline: '',
     keywords: [],
     content: '',
   };
 
   const titleMatch = text.match(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/);
-  const metaMatch = text.match(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
+  // lookahead para HEADLINE (novo bloco entre META e KEYWORDS); respostas
+  // antigas sem o bloco caem no |$ e a headline fica '' (opcional)
+  const metaMatch = text.match(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/);
+  const headlineMatch = text.match(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/);
   const keywordsMatch = text.match(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/);
   const contentMatch = text.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
   if (titleMatch) sections.title = titleMatch[1].trim();
   if (metaMatch) sections.meta = metaMatch[1].trim();
+  if (headlineMatch) sections.headline = headlineMatch[1].trim().replace(/^["']|["']$/g, '').slice(0, 40);
   if (keywordsMatch) sections.keywords = keywordsMatch[1].trim().split(',').map(k => k.trim());
   if (contentMatch) sections.content = contentMatch[1].trim();
 

@@ -40,6 +40,8 @@ Respond in this exact format:
 [translated title]
 ---META---
 [translated meta description]
+---HEADLINE---
+[translated ticker headline, max 40 characters]
 ---KEYWORDS---
 [translated keywords, comma separated]
 ---CONTEUDO---
@@ -48,6 +50,7 @@ Respond in this exact format:
 Original post:
 Title: ${post.title}
 Meta: ${post.meta}
+Ticker headline: ${post.headline || post.title.slice(0, 40)}
 Keywords: ${(post.keywords || []).join(', ')}
 Content:
 ${post.content}`;
@@ -55,7 +58,9 @@ ${post.content}`;
   const g = (re) => (r.match(re) || [])[1]?.trim();
   return {
     title: g(/---TITULO---\s*([\s\S]*?)(?=---META---|$)/) || post.title,
-    meta: g(/---META---\s*([\s\S]*?)(?=---KEYWORDS---|$)/) || post.meta,
+    meta: g(/---META---\s*([\s\S]*?)(?=---HEADLINE---|---KEYWORDS---|$)/) || post.meta,
+    // Headline do ticker: opcional, com teto rígido de 40 chars
+    headline: (g(/---HEADLINE---\s*([\s\S]*?)(?=---KEYWORDS---|$)/) || '').replace(/^["']|["']$/g, '').slice(0, 40),
     keywords: (g(/---KEYWORDS---\s*([\s\S]*?)(?=---CONTEUDO---|$)/) || '').split(',').map(k => k.trim()).filter(Boolean),
     content: g(/---CONTEUDO---\s*([\s\S]*?)$/) || post.content,
   };
@@ -65,7 +70,7 @@ function savePost(slug, d) {
   const fm = `---
 title: "${d.title.replace(/"/g, '\\"')}"
 description: "${(d.meta || '').replace(/"/g, '\\"')}"
-image: "${d.imagePath}"
+${d.headline ? `tickerHeadline: "${d.headline.replace(/"/g, '\\"')}"\n` : ''}image: "${d.imagePath}"
 category: "dicas"
 locale: "${d.locale}"
 tags: ${JSON.stringify(d.keywords && d.keywords.length ? d.keywords : ['finanças'])}
@@ -141,19 +146,21 @@ async function main() {
 
   const keywords = [...new Set([...(post.keywords || []), ...holiday.keywords])];
   const paths = [];
-  paths.push(savePost(slug, { title, meta: post.meta, keywords, content, imagePath, locale: 'pt', today, translationKey: slug }));
+  // Headline do ticker: generateBlogPost (módulo compartilhado) não gera headline — fallback ''.
+  const headline = post.headline || '';
+  paths.push(savePost(slug, { title, meta: post.meta, headline, keywords, content, imagePath, locale: 'pt', today, translationKey: slug }));
   console.log(`✅ PT: ${title}`);
 
   if (config.locales.includes('en')) {
     await new Promise(r => setTimeout(r, 30000));
-    const en = await translatePost({ title, meta: post.meta, keywords, content }, 'en');
+    const en = await translatePost({ title, meta: post.meta, headline, keywords, content }, 'en');
     paths.push(savePost(`en-${slug}`, { ...en, imagePath, locale: 'en', today, translationKey: slug }));
     console.log('🌐 EN ok');
   }
 
   if (config.locales.includes('es')) {
     await new Promise(r => setTimeout(r, 30000));
-    const es = await translatePost({ title, meta: post.meta, keywords, content }, 'es');
+    const es = await translatePost({ title, meta: post.meta, headline, keywords, content }, 'es');
     paths.push(savePost(`es-${slug}`, { ...es, imagePath, locale: 'es', today, translationKey: slug }));
     console.log('🌐 ES ok');
   }

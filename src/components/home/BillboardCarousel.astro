@@ -183,28 +183,39 @@ const slides = base.map((_, i) => base[(i + offset) % base.length]);
 
   .bb-dots {
     position: absolute;
-    bottom: 12px;
+    bottom: 4px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 8px;
+    gap: 0;
     z-index: 3;
   }
 
+  /* Botão 24×24 (alvo de toque mínimo WCAG/Lighthouse); a bolinha visível
+     de 9px é desenhada no ::before, então o visual continua discreto */
   .bb-dots :global(button) {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .bb-dots :global(button)::before {
+    content: "";
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    border: 0;
     background: rgba(255, 255, 255, 0.35);
-    cursor: pointer;
-    padding: 0;
     transition: all 0.25s;
   }
 
-  .bb-dots :global(button.on) {
+  .bb-dots :global(button.on)::before {
     background: #fff;
-    width: 24px;
+    width: 22px;
     border-radius: 6px;
   }
 
