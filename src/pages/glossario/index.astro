@@ -110,7 +110,8 @@ const faqSchema = {
 
   .glossario-title {
     font-size: var(--text-4xl);
-    background: linear-gradient(135deg, var(--brand-cyan), #A91079);
+    letter-spacing: -0.02em;
+    background: var(--portal-grad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -158,12 +159,24 @@ const faqSchema = {
     margin-bottom: var(--space-8);
   }
 
+  /* Letra no padrão dos cabeçalhos de seção do portal (barra gradiente) */
   .letter-heading {
-    font-size: var(--text-3xl);
-    color: var(--brand-cyan);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--text-2xl);
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
     margin-bottom: var(--space-4);
-    padding-bottom: var(--space-2);
-    border-bottom: 1px solid var(--border-muted);
+  }
+
+  .letter-heading::before {
+    content: "";
+    width: 34px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--portal-grad);
+    flex-shrink: 0;
   }
 
   .terms-list {
@@ -172,17 +185,20 @@ const faqSchema = {
     gap: var(--space-3);
   }
 
-  /* Accordion */
+  /* Accordion — cards na linguagem da home portal */
   .term-accordion {
     background: var(--bg-secondary);
-    border: 1px solid var(--border-default);
+    border: 1px solid var(--border-muted);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    transition: border-color var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+    transition: border-color var(--transition-fast), transform 0.25s ease, box-shadow 0.25s ease;
   }
 
   .term-accordion:hover {
-    border-color: rgba(0, 240, 255, 0.3);
+    border-color: var(--border-default);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
   }
 
   .term-accordion[open] {
@@ -216,8 +232,8 @@ const faqSchema = {
     justify-content: center;
     width: 28px;
     height: 28px;
-    background: rgba(0, 240, 255, 0.1);
-    color: var(--brand-cyan);
+    background: var(--portal-grad);
+    color: #fff;
     border-radius: var(--radius-full);
     font-size: var(--text-sm);
     font-weight: 700;
