@@ -143,6 +143,38 @@ const schemaBreadcrumbItems = [
   <Footer />
 </BaseLayout>
 
+<script>
+  // Rastreador de leitura — alimenta o "Continue lendo" da home.
+  // Grava {url, title, progress, ts} no localStorage enquanto o leitor rola;
+  // ≥95% = leu tudo → limpa (a home só sugere leituras pela metade).
+  const KEY = 'fm-reading';
+  let ticking = false;
+  function trackReading() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      ticking = false;
+      const h = document.documentElement.scrollHeight - innerHeight;
+      if (h <= 0) return;
+      const progress = Math.min(1, scrollY / h);
+      try {
+        if (progress >= 0.95) {
+          const cur = JSON.parse(localStorage.getItem(KEY) || 'null');
+          if (cur && cur.url === location.pathname) localStorage.removeItem(KEY);
+        } else if (progress > 0.05) {
+          localStorage.setItem(KEY, JSON.stringify({
+            url: location.pathname,
+            title: document.querySelector('h1')?.textContent?.trim() || document.title,
+            progress,
+            ts: Date.now(),
+          }));
+        }
+      } catch (e) { /* sem localStorage → sem rastreio */ }
+    });
+  }
+  addEventListener('scroll', trackReading, { passive: true });
+</script>
+
 <style>
   .post-page {
     padding: var(--space-8) 0 var(--space-16);

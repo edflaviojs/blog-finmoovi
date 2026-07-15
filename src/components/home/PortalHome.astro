@@ -1,0 +1,579 @@
+---
+import BillboardCarousel from './BillboardCarousel.astro';
+import AdSlot from './AdSlot.astro';
+import { imgSrcset } from '@/utils/responsive-image';
+import { categoryLabel, type Locale } from '@/utils/home-data';
+
+/**
+ * Home portal (mockup v9 aprovado em 2026-07-15): página longa estilo portal
+ * com hero+rail, manchetes-respiro, fileiras por categoria, listas compactas,
+ * publicidade própria, glossário, newsletter e Continue lendo.
+ * UM componente para os 3 idiomas — as index.astro viram invólucros finos.
+ */
+interface Props {
+  locale: Locale;
+  data: any; // retorno de getHomeData(locale)
+}
+const { locale, data } = Astro.props;
+const { hero, secondary, destaque, mancheteInvestimentos, mancheteCotacoes, rows, ultimas, termoDia, termoChips, fresh, prefix } = data;
+
+const localeTag = locale === 'pt' ? 'pt-BR' : locale === 'es' ? 'es-ES' : 'en-US';
+const fmtLong = (d: Date) => d.toLocaleDateString(localeTag, { day: '2-digit', month: 'long', year: 'numeric' });
+const fmtShort = (d: Date) => d.toLocaleDateString(localeTag, { day: 'numeric', month: 'short' });
+
+const T = {
+  pt: {
+    agora: 'AGORA', novoNoBlog: 'Novo no blog', emDestaque: '🔥 Em destaque', ferramentas: '🧮 Ferramentas',
+    verTudo: 'Ver tudo →', ultimasTitle: 'Últimas do blog', minLeitura: 'min de leitura',
+    continueTitle: '📖 Continue lendo', retomar: 'Retomar leitura →', parou: 'Você parou em',
+    termoDia: '📚 Termo do dia:', termoSub: 'Aprenda um conceito de finanças por dia, explicado sem complicação.',
+    verGlossario: 'Ver glossário completo →',
+    disclaimer: '⚖️ Conteúdo exclusivamente educativo. O FinMoovi Blog não faz recomendações de investimento — cada decisão financeira é pessoal; considere consultar um profissional certificado.',
+    newsTitle: 'O resumo que protege seu bolso', newsSub: 'Cotações da semana, o melhor do blog e 1 dica acionável.', newsSub2: 'Toda sexta, de graça, sem spam.',
+    newsPh: 'seu@email.com', newsBtn: 'Quero receber',
+    tools: ['Conversor de moedas', 'Juros compostos', 'Método 50-30-20', 'Reserva ideal'],
+  },
+  en: {
+    agora: 'NOW', novoNoBlog: 'New on the blog', emDestaque: '🔥 Featured', ferramentas: '🧮 Tools',
+    verTudo: 'See all →', ultimasTitle: 'Latest from the blog', minLeitura: 'min read',
+    continueTitle: '📖 Continue reading', retomar: 'Resume reading →', parou: 'You stopped at',
+    termoDia: '📚 Term of the day:', termoSub: 'Learn one finance concept a day, explained simply.',
+    verGlossario: 'See full glossary →',
+    disclaimer: '⚖️ Educational content only. FinMoovi Blog does not provide investment advice — every financial decision is personal; consider consulting a certified professional.',
+    newsTitle: 'The digest that protects your wallet', newsSub: 'Weekly quotes, the best of the blog and 1 actionable tip.', newsSub2: 'Every Friday, free, no spam.',
+    newsPh: 'you@email.com', newsBtn: 'Subscribe',
+    tools: ['Currency converter', 'Compound interest', '50-30-20 method', 'Emergency fund'],
+  },
+  es: {
+    agora: 'AHORA', novoNoBlog: 'Nuevo en el blog', emDestaque: '🔥 Destacados', ferramentas: '🧮 Herramientas',
+    verTudo: 'Ver todo →', ultimasTitle: 'Lo último del blog', minLeitura: 'min de lectura',
+    continueTitle: '📖 Sigue leyendo', retomar: 'Retomar lectura →', parou: 'Te quedaste en',
+    termoDia: '📚 Término del día:', termoSub: 'Aprende un concepto de finanzas al día, explicado sin complicación.',
+    verGlossario: 'Ver glosario completo →',
+    disclaimer: '⚖️ Contenido exclusivamente educativo. FinMoovi Blog no hace recomendaciones de inversión — cada decisión financiera es personal; considera consultar a un profesional certificado.',
+    newsTitle: 'El resumen que protege tu bolsillo', newsSub: 'Cotizaciones de la semana, lo mejor del blog y 1 consejo accionable.', newsSub2: 'Cada viernes, gratis, sin spam.',
+    newsPh: 'tu@email.com', newsBtn: 'Quiero recibirlo',
+    tools: ['Conversor de monedas', 'Interés compuesto', 'Método 50-30-20', 'Fondo de emergencia'],
+  },
+}[locale];
+---
+
+{fresh && (
+  <div class="breaking">
+    <div class="container breaking-in">
+      <span class="dot" aria-hidden="true"></span><b>{T.agora}</b>
+      <a href={fresh.href}>{T.novoNoBlog}: {fresh.title}</a>
+    </div>
+  </div>
+)}
+
+<BillboardCarousel locale={locale} offset={0} />
+
+<div class="container">
+  <!-- HERO + RAIL (rail preenche a altura toda — grid por áreas) -->
+  <div class="home-grid">
+    {hero && (
+      <article class="pcard a-hero reveal in">
+        <a href={hero.href}>
+          <div class="pcard-thumb hero-thumb">
+            {hero.image
+              ? <img src={hero.image} srcset={imgSrcset(hero.image)} sizes="(min-width: 1024px) 900px, 100vw" alt={hero.imageAlt || hero.title} loading="eager" fetchpriority="high" width="800" height="450" />
+              : <div class="pcard-ph"></div>}
+          </div>
+          <div class="pcard-body">
+            <span class="eyebrow">{categoryLabel(locale, hero.category)}</span>
+            <h1 class="hero-title">{hero.title}</h1>
+            <p class="hero-desc">{hero.description}</p>
+            <div class="meta">
+              <time datetime={hero.date.toISOString()}>{fmtLong(hero.date)}</time>
+              {hero.readingTime && <span> · {hero.readingTime} {T.minLeitura}</span>}
+            </div>
+          </div>
+        </a>
+      </article>
+    )}
+
+    {mancheteInvestimentos && (
+      <section class="manchete in-grid only-mobile reveal in">
+        <span class="eyebrow">{categoryLabel(locale, mancheteInvestimentos.main.category)}</span>
+        <h2><a href={mancheteInvestimentos.main.href}>{mancheteInvestimentos.main.title}</a></h2>
+        <ul>
+          {mancheteInvestimentos.subs.map((s: any) => <li><a href={s.href}>{s.title}</a></li>)}
+        </ul>
+      </section>
+    )}
+
+    {secondary.map((c: any, i: number) => (
+      <article class={`pcard reveal in a-c${i + 2}`}>
+        <a href={c.href}>
+          <div class="pcard-thumb">
+            {c.image
+              ? <img src={c.image} srcset={imgSrcset(c.image)} sizes="(min-width: 1024px) 600px, 100vw" alt={c.imageAlt || c.title} loading="lazy" width="400" height="225" />
+              : <div class="pcard-ph"></div>}
+          </div>
+          <div class="pcard-body">
+            <span class="eyebrow">{categoryLabel(locale, c.category)}</span>
+            <h3>{c.title}</h3>
+            <div class="meta"><time datetime={c.date.toISOString()}>{fmtShort(c.date)}</time></div>
+          </div>
+        </a>
+      </article>
+    ))}
+
+    <aside class="rail a-rail">
+      <div class="widget reveal in">
+        <h4>{T.emDestaque}</h4>
+        <ol class="top-list">
+          {destaque.map((c: any) => <li><a href={c.href}>{c.title}</a></li>)}
+        </ol>
+      </div>
+      <div class="reveal in">
+        <AdSlot locale={locale} variant="rail" />
+      </div>
+      <div class="widget reveal in">
+        <h4>{T.ferramentas}</h4>
+        <div class="chips">
+          {T.tools.map(tool => <a href={`${prefix}/ferramentas`}>{tool}</a>)}
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Continue lendo (preenchido pelo navegador via localStorage) -->
+  <div class="resume reveal" id="resume-reading" hidden
+    data-title={T.continueTitle} data-resume={T.retomar} data-stopped={T.parou}>
+    <div class="resume-info">
+      <span class="eyebrow">{T.continueTitle}</span>
+      <h3 id="resume-title"></h3>
+      <div class="resume-bar"><i id="resume-bar-fill"></i></div>
+      <small id="resume-note"></small>
+    </div>
+    <a class="resume-cta" id="resume-link" href="#">{T.retomar}</a>
+  </div>
+
+  {mancheteInvestimentos && (
+    <section class="manchete only-desktop reveal">
+      <span class="eyebrow">{categoryLabel(locale, mancheteInvestimentos.main.category)}</span>
+      <h2><a href={mancheteInvestimentos.main.href}>{mancheteInvestimentos.main.title}</a></h2>
+      <ul>
+        {mancheteInvestimentos.subs.map((s: any) => <li><a href={s.href}>{s.title}</a></li>)}
+      </ul>
+    </section>
+  )}
+
+  {rows[0] && (
+    <>
+      <div class="section-head reveal">
+        <span class="bar" aria-hidden="true"></span>
+        <h2>{rows[0].label}</h2>
+        {locale === 'pt' && <a class="all" href={rows[0].href}>{T.verTudo}</a>}
+      </div>
+      <div class="row-4">
+        {rows[0].cards.map((c: any) => (
+          <article class="pcard reveal">
+            <a href={c.href}>
+              <div class="pcard-thumb">
+                {c.image
+                  ? <img src={c.image} srcset={imgSrcset(c.image)} sizes="(min-width: 768px) 400px, 100vw" alt={c.imageAlt || c.title} loading="lazy" width="400" height="225" />
+                  : <div class="pcard-ph"></div>}
+              </div>
+              <div class="pcard-body">
+                <h3>{c.title}</h3>
+                <div class="meta"><time datetime={c.date.toISOString()}>{fmtShort(c.date)}</time></div>
+              </div>
+            </a>
+          </article>
+        ))}
+      </div>
+    </>
+  )}
+
+  {ultimas.length > 0 && (
+    <>
+      <div class="section-head reveal">
+        <span class="bar" aria-hidden="true"></span>
+        <h2>{T.ultimasTitle}</h2>
+        <a class="all" href={`${prefix}/posts/page/1`}>{T.verTudo}</a>
+      </div>
+      <div class="mini-wrap">
+        {ultimas.map((c: any) => (
+          <a class="mini reveal" href={c.href}>
+            <div class="mini-thumb">
+              {c.image
+                ? <img src={c.image} srcset={imgSrcset(c.image)} sizes="92px" alt="" loading="lazy" width="92" height="66" />
+                : <div class="pcard-ph"></div>}
+            </div>
+            <div>
+              <span class="eyebrow">{categoryLabel(locale, c.category)}</span>
+              <h3>{c.title}</h3>
+            </div>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+
+  <div class="ad-strip-wrap reveal">
+    <AdSlot locale={locale} variant="strip" />
+  </div>
+
+  {mancheteCotacoes && (
+    <section class="manchete right reveal">
+      <span class="eyebrow">{categoryLabel(locale, mancheteCotacoes.main.category)}</span>
+      <h2><a href={mancheteCotacoes.main.href}>{mancheteCotacoes.main.title}</a></h2>
+      <ul>
+        {mancheteCotacoes.subs.map((s: any) => <li><a href={s.href}>{s.title}</a></li>)}
+      </ul>
+    </section>
+  )}
+
+  {rows[1] && (
+    <>
+      <div class="section-head reveal">
+        <span class="bar" aria-hidden="true"></span>
+        <h2>{rows[1].label}</h2>
+        {locale === 'pt' && <a class="all" href={rows[1].href}>{T.verTudo}</a>}
+      </div>
+      <div class="row-4">
+        {rows[1].cards.map((c: any) => (
+          <article class="pcard reveal">
+            <a href={c.href}>
+              <div class="pcard-thumb">
+                {c.image
+                  ? <img src={c.image} srcset={imgSrcset(c.image)} sizes="(min-width: 768px) 400px, 100vw" alt={c.imageAlt || c.title} loading="lazy" width="400" height="225" />
+                  : <div class="pcard-ph"></div>}
+              </div>
+              <div class="pcard-body">
+                <h3>{c.title}</h3>
+                <div class="meta"><time datetime={c.date.toISOString()}>{fmtShort(c.date)}</time></div>
+              </div>
+            </a>
+          </article>
+        ))}
+      </div>
+    </>
+  )}
+
+  <p class="home-disclaimer reveal">{T.disclaimer}</p>
+
+  {termoDia && (
+    <div class="gloss reveal">
+      <div class="gloss-line">{T.termoDia} <a href={termoDia.href}><b>{termoDia.term}</b></a></div>
+      <small class="gloss-sub">{T.termoSub}</small>
+      <div class="chips">
+        {termoChips.map((t: any) => <a href={t.href}>{t.term}</a>)}
+        <a href={`${prefix}/glossario`} class="chip-all">{T.verGlossario}</a>
+      </div>
+    </div>
+  )}
+</div>
+
+<!-- NEWSLETTER full-bleed -->
+<section class="news-band reveal">
+  <div class="news-bg" aria-hidden="true"></div>
+  <div class="news-in">
+    <span class="news-ico" aria-hidden="true">📬</span>
+    <h2>{T.newsTitle}</h2>
+    <p>{T.newsSub}<br>{T.newsSub2}</p>
+    <form class="news-form" id="portal-news-form" data-lang={locale}>
+      <input type="email" name="email" placeholder={T.newsPh} aria-label={T.newsPh} required />
+      <button type="submit">{T.newsBtn}</button>
+    </form>
+    <p class="news-msg" id="portal-news-msg" aria-live="polite"></p>
+  </div>
+</section>
+
+<BillboardCarousel locale={locale} offset={2} />
+
+<script>
+  // ===== Reveal ao rolar
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal:not(.in)').forEach((el) => io.observe(el));
+
+  // ===== Continue lendo — lê o progresso salvo pelo PostLayout (localStorage)
+  try {
+    const raw = localStorage.getItem('fm-reading');
+    if (raw) {
+      const r = JSON.parse(raw);
+      const fresh = r && r.url && r.title && r.progress > 0.05 && r.progress < 0.95
+        && Date.now() - (r.ts || 0) < 30 * 24 * 60 * 60 * 1000;
+      if (fresh) {
+        const box = document.getElementById('resume-reading') as HTMLElement;
+        (document.getElementById('resume-title') as HTMLElement).textContent = r.title;
+        (document.getElementById('resume-bar-fill') as HTMLElement).style.width = Math.round(r.progress * 100) + '%';
+        (document.getElementById('resume-note') as HTMLElement).textContent =
+          `${box.dataset.stopped} ${Math.round(r.progress * 100)}%`;
+        (document.getElementById('resume-link') as HTMLAnchorElement).href = r.url;
+        box.hidden = false;
+      }
+    }
+  } catch (e) { /* sem localStorage → sem faixa */ }
+
+  // ===== Newsletter (mesmo endpoint /api/newsletter já usado na sidebar)
+  const form = document.getElementById('portal-news-form') as HTMLFormElement;
+  const msg = document.getElementById('portal-news-msg') as HTMLElement;
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, lang: form.dataset.lang, source: 'home-portal' }),
+      });
+      const data = await res.json();
+      msg.textContent = data.message || data.error || '...';
+      if (res.ok) form.reset();
+    } catch (err) {
+      msg.textContent = '⚠️';
+    }
+  });
+</script>
+
+<style>
+  /* ===== Motion ===== */
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .dot { animation: none; }
+  }
+
+  .only-mobile { display: none; }
+
+  /* ===== Faixa AGORA ===== */
+  .breaking { background: var(--bg-tertiary); border-bottom: 1px solid var(--border-muted); font-size: var(--text-sm); }
+  .breaking-in { display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-4); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-red); animation: pulse 1.6s ease infinite; flex-shrink: 0; }
+  @keyframes pulse { 50% { opacity: 0.35; transform: scale(0.8); } }
+  .breaking b { color: var(--accent-red); font-size: 11px; letter-spacing: 0.1em; }
+  .breaking a { font-weight: 600; color: var(--text-primary); }
+  .breaking a:hover { color: var(--accent-primary); }
+
+  /* ===== Grid principal ===== */
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 320px;
+    grid-template-areas: "hero hero rail" "c2 c3 rail";
+    gap: var(--space-5);
+    align-items: start;
+    margin-top: var(--space-6);
+  }
+
+  .a-hero { grid-area: hero; }
+  .a-c2 { grid-area: c2; }
+  .a-c3 { grid-area: c3; }
+  .a-rail { grid-area: rail; }
+
+  /* ===== Cards ===== */
+  .pcard {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-muted);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .pcard:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+  .pcard-thumb { aspect-ratio: 16 / 9; overflow: hidden; background: var(--bg-tertiary); }
+  .hero-thumb { aspect-ratio: 21 / 9; }
+
+  .pcard-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.35s ease; }
+  .pcard:hover .pcard-thumb img { transform: scale(1.06); }
+
+  .pcard-ph { width: 100%; height: 100%; background: linear-gradient(120deg, var(--bg-tertiary), var(--bg-elevated)); }
+
+  .pcard-body { padding: var(--space-4) var(--space-5) var(--space-5); }
+
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--gradient-cta);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-title { margin: var(--space-2) 0; font-size: clamp(22px, 2.6vw, 34px); line-height: 1.15; letter-spacing: -0.02em; text-wrap: balance; color: var(--text-primary); }
+  .hero-desc { margin: 0; color: var(--text-secondary); font-size: var(--text-sm); }
+  .pcard h3 { margin: var(--space-1) 0; font-size: 17px; line-height: 1.3; letter-spacing: -0.01em; color: var(--text-primary); }
+  .meta { margin-top: var(--space-2); font-size: var(--text-xs); color: var(--text-tertiary); }
+
+  /* ===== Rail ===== */
+  .rail { display: flex; flex-direction: column; gap: var(--space-5); }
+
+  .widget {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-muted);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-5);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .widget h4 { margin: 0 0 var(--space-3); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-tertiary); text-align: center; }
+
+  .top-list { list-style: none; margin: 0; padding: 0; counter-reset: n; }
+  .top-list li { counter-increment: n; display: flex; gap: var(--space-3); padding: var(--space-2) 0; border-top: 1px solid var(--border-muted); font-size: var(--text-sm); font-weight: 600; line-height: 1.35; }
+  .top-list li:first-child { border-top: 0; padding-top: 0; }
+  .top-list li::before {
+    content: counter(n, decimal-leading-zero);
+    font-family: var(--font-mono, monospace);
+    font-size: 18px;
+    font-weight: 700;
+    background: var(--gradient-cta);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .top-list a { color: var(--text-primary); }
+  .top-list a:hover { color: var(--accent-primary); }
+
+  .chips { display: flex; gap: var(--space-2); flex-wrap: wrap; justify-content: center; }
+  .chips a {
+    border: 1px solid var(--border-muted);
+    background: var(--bg-tertiary);
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+  }
+  .chips a:hover { color: var(--text-primary); border-color: var(--brand-cyan); transform: translateY(-2px); }
+
+  /* ===== Continue lendo ===== */
+  .resume {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-muted);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-5);
+    margin-top: var(--space-6);
+    box-shadow: var(--shadow-sm);
+    flex-wrap: wrap;
+  }
+
+  .resume-info { flex: 1; min-width: 220px; }
+  .resume-info .eyebrow { display: block; margin-bottom: 2px; }
+  .resume-info h3 { margin: 0 0 var(--space-2); font-size: 15.5px; letter-spacing: -0.01em; color: var(--text-primary); }
+  .resume-bar { height: 5px; border-radius: 3px; background: var(--bg-tertiary); overflow: hidden; max-width: 320px; }
+  .resume-bar i { display: block; height: 100%; border-radius: 3px; background: var(--gradient-cta); }
+  .resume-info small { color: var(--text-tertiary); font-size: 11.5px; }
+  .resume-cta { background: var(--gradient-cta); color: #fff; font-size: 13px; font-weight: 700; padding: 9px 20px; border-radius: var(--radius-full); white-space: nowrap; transition: transform var(--transition-fast); }
+  .resume-cta:hover { transform: translateY(-2px); }
+
+  /* ===== Manchetes-respiro ===== */
+  .manchete { padding: var(--space-6) 0 var(--space-2); border-top: 1px solid var(--border-muted); margin-top: var(--space-8); }
+  .manchete h2 { margin: var(--space-1) 0 var(--space-4); font-size: clamp(24px, 3.2vw, 38px); line-height: 1.12; letter-spacing: -0.025em; max-width: 26ch; text-wrap: balance; }
+  .manchete h2 a { color: var(--text-primary); }
+  .manchete h2 a:hover { color: var(--accent-primary); }
+  .manchete ul { list-style: none; margin: 0; padding: 0; }
+  .manchete li { position: relative; padding: var(--space-2) 0 var(--space-2) 14px; border-top: 1px solid var(--border-muted); font-size: 15px; font-weight: 450; }
+  .manchete li::before { content: ""; position: absolute; left: 0; top: 9px; bottom: 9px; width: 3px; border-radius: 2px; background: linear-gradient(180deg, var(--brand-gradient-start), var(--brand-gradient-end)); }
+  .manchete li a { color: var(--text-secondary); }
+  .manchete li a:hover { color: var(--text-primary); }
+
+  .manchete.right { text-align: right; }
+  .manchete.right h2 { margin-left: auto; }
+  .manchete.right li { padding: var(--space-2) 14px var(--space-2) 0; }
+  .manchete.right li::before { left: auto; right: 0; background: linear-gradient(180deg, var(--brand-gradient-end), var(--brand-gradient-start)); }
+
+  /* ===== Seções ===== */
+  .section-head { display: flex; align-items: baseline; gap: var(--space-3); margin: var(--space-10) 0 var(--space-4); }
+  .section-head h2 { margin: 0; font-size: 21px; letter-spacing: -0.02em; color: var(--text-primary); }
+  .section-head .bar { width: 34px; height: 4px; border-radius: 2px; background: var(--gradient-cta); align-self: center; }
+  .section-head .all { margin-left: auto; font-size: 13px; font-weight: 700; color: var(--accent-primary); }
+
+  .row-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4); }
+
+  /* ===== Lista compacta ===== */
+  .mini-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0 var(--space-10); }
+  .mini { display: flex; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--border-muted); align-items: center; }
+  .mini-thumb { width: 92px; height: 66px; border-radius: var(--radius-md); flex-shrink: 0; overflow: hidden; background: var(--bg-tertiary); }
+  .mini-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .mini h3 { margin: 3px 0 0; font-size: 15.5px; line-height: 1.3; letter-spacing: -0.01em; color: var(--text-primary); }
+  .mini:hover h3 { color: var(--accent-primary); }
+
+  .ad-strip-wrap { margin: var(--space-8) 0; }
+
+  /* ===== Disclaimer ===== */
+  .home-disclaimer {
+    text-align: center;
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+    max-width: 66ch;
+    margin: var(--space-4) auto 0;
+    line-height: 1.6;
+  }
+
+  /* ===== Glossário ===== */
+  .gloss {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-muted);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6) var(--space-5);
+    margin-top: var(--space-10);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+    text-align: center;
+  }
+
+  .gloss-line { color: var(--text-primary); }
+  .gloss-line a b { color: var(--accent-primary); }
+  .gloss-sub { color: var(--text-tertiary); font-size: 12.5px; margin-top: -6px; }
+  .chip-all { color: var(--accent-primary) !important; }
+
+  /* ===== Newsletter full-bleed ===== */
+  .news-band { position: relative; margin-top: var(--space-12); overflow: hidden; background: #0d1117; }
+  .news-bg { position: absolute; inset: 0; background: radial-gradient(80% 140% at 15% 0%, rgba(var(--brand-cyan-rgb), 0.16), transparent 50%), radial-gradient(70% 130% at 90% 100%, rgba(169, 16, 121, 0.22), transparent 55%); }
+  .news-in { position: relative; max-width: 720px; margin: 0 auto; padding: var(--space-12) var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); align-items: center; text-align: center; color: #fff; }
+  .news-ico { font-size: 40px; line-height: 1; }
+  .news-in h2 { margin: 0; font-size: clamp(22px, 3vw, 34px); letter-spacing: -0.02em; text-wrap: balance; }
+  .news-in p { margin: 0 0 var(--space-2); color: #93a5b6; font-size: 15px; line-height: 1.65; }
+  .news-form { display: flex; gap: var(--space-2); flex-wrap: wrap; justify-content: center; width: 100%; }
+  .news-form input { background: #161b22; border: 1px solid #2a3441; color: #fff; border-radius: var(--radius-full); padding: 13px 20px; font-size: var(--text-sm); flex: 1 1 240px; max-width: 340px; text-align: center; }
+  .news-form input::placeholder { color: #64748b; }
+  .news-form button { background: var(--gradient-cta); color: #fff; border: 0; font-weight: 800; font-size: var(--text-sm); padding: 13px 28px; border-radius: var(--radius-full); cursor: pointer; transition: transform var(--transition-fast); }
+  .news-form button:hover { transform: translateY(-2px); }
+  .news-msg { margin: 0; font-size: 13px; color: #3fca86; min-height: 1.2em; }
+
+  /* ===== Mobile ===== */
+  @media (max-width: 900px) {
+    .only-mobile { display: block; }
+    .only-desktop { display: none; }
+
+    .home-grid { display: flex; flex-direction: column; }
+    .row-4, .mini-wrap { grid-template-columns: 1fr 1fr; }
+    .mini-wrap { gap: 0 var(--space-4); }
+
+    .manchete.right { text-align: left; }
+    .manchete.right h2 { margin-left: 0; }
+    .manchete.right li { padding: var(--space-2) 0 var(--space-2) 14px; }
+    .manchete.right li::before { right: auto; left: 0; }
+    .manchete.in-grid { margin-top: 0; padding-top: var(--space-5); }
+
+    .resume { flex-direction: column; text-align: center; }
+    .resume-bar { margin-inline: auto; }
+    .resume-cta { margin-inline: auto; }
+  }
+
+  @media (max-width: 560px) {
+    .row-4, .mini-wrap { grid-template-columns: 1fr; }
+  }
+
+  @media (min-width: 901px) {
+    .only-desktop { display: block; }
+  }
+</style>

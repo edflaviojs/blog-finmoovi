@@ -1,0 +1,92 @@
+---
+import { config } from '../../../site.config';
+
+/**
+ * Slot de publicidade própria (estático, sem JS).
+ * variant="rail" → retângulo vertical na coluna lateral
+ * variant="strip" → faixa horizontal no meio do conteúdo
+ */
+interface Props {
+  locale: 'pt' | 'en' | 'es';
+  variant: 'rail' | 'strip';
+}
+const { locale, variant } = Astro.props;
+const ad = variant === 'rail' ? config.ads.rail : config.ads.mid;
+---
+
+<a class={`ad-slot ad-${variant} ad-theme-${ad.theme}`} href={ad.href} target="_blank" rel="noopener">
+  <span class="ad-icon" aria-hidden="true">{ad.icon}</span>
+  <span class="ad-copy">
+    <strong>{ad.title[locale]}</strong>
+    <small>{ad.text[locale]}</small>
+  </span>
+  <span class="ad-cta">{ad.cta[locale]}</span>
+</a>
+
+<style>
+  .ad-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    color: #fff;
+    overflow: hidden;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+  }
+
+  .ad-slot:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .ad-theme-voz { background: linear-gradient(105deg, #0d1117 30%, #12303a 70%, #3a1030); }
+  .ad-theme-moedas { background: linear-gradient(105deg, #04141f, #0a3d33 60%, #04141f); }
+  .ad-theme-funil { background: radial-gradient(130% 160% at 15% 0%, #56123f 0%, #16070f 60%); }
+  .ad-theme-offline { background: linear-gradient(105deg, #071a12, #103a24 60%, #071a12); }
+
+  .ad-rail {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-3);
+    min-height: 240px;
+  }
+
+  .ad-strip { min-height: 96px; flex-wrap: wrap; }
+
+  .ad-icon { font-size: 34px; line-height: 1; }
+
+  .ad-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ad-rail .ad-copy { align-items: center; }
+
+  .ad-copy strong {
+    font-size: clamp(15px, 2vw, 21px);
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+
+  .ad-copy small {
+    font-size: 13px;
+    color: #a9c3d2;
+  }
+
+  .ad-cta {
+    background: var(--brand-cyan);
+    color: #062126;
+    font-weight: 800;
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .ad-theme-funil .ad-cta { background: #ff9d5c; color: #33130a; }
+  .ad-theme-moedas .ad-cta { background: #6ff2b5; color: #04291a; }
+  .ad-theme-offline .ad-cta { background: #8be89f; color: #0a2912; }
+</style>

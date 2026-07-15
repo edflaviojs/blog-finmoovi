@@ -1,0 +1,216 @@
+---
+import { config } from '../../../site.config';
+
+/**
+ * Carrossel billboard full-bleed (borda a borda da tela).
+ * Slides vêm de config.ads.billboard — banners próprios, 100% estáticos.
+ * Altura fixa (sem sobressalto), desliza sozinho a cada 5s, arrastável
+ * (dedo/mouse), bolinhas clicáveis, pausa no hover.
+ */
+interface Props {
+  locale: 'pt' | 'en' | 'es';
+  /** desloca a ordem dos slides (o billboard do rodapé começa diferente) */
+  offset?: number;
+}
+const { locale, offset = 0 } = Astro.props;
+
+const base = config.ads.billboard;
+const slides = base.map((_, i) => base[(i + offset) % base.length]);
+---
+
+<div class="bb" data-billboard>
+  <div class="bb-track">
+    {slides.map(s => (
+      <div class={`bb-slide bb-${s.theme}`}>
+        <div class="bb-in">
+          <span class="bb-icon" aria-hidden="true">{s.icon}</span>
+          <div class="bb-copy">
+            <h2>{s.title[locale]} <em>{s.highlight[locale]}</em></h2>
+            <p>{s.text[locale]}</p>
+          </div>
+          <a class="bb-cta" href={s.href} target="_blank" rel="noopener">{s.cta[locale]}</a>
+        </div>
+      </div>
+    ))}
+  </div>
+  <div class="bb-dots" role="tablist" aria-label="Selecionar anúncio"></div>
+</div>
+
+<script>
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.querySelectorAll('[data-billboard]').forEach((bb) => {
+    const track = bb.querySelector('.bb-track') as HTMLElement;
+    const slides = [...track.children];
+    const dotsBox = bb.querySelector('.bb-dots') as HTMLElement;
+    if (dotsBox.childElementCount > 0) return; // já inicializado
+    let cur = 0;
+    let timer: ReturnType<typeof setInterval> | null = null;
+    let startX: number | null = null;
+
+    slides.forEach((_, i) => {
+      const d = document.createElement('button');
+      d.setAttribute('role', 'tab');
+      d.setAttribute('aria-label', 'Anúncio ' + (i + 1));
+      if (i === 0) d.classList.add('on');
+      d.addEventListener('click', () => { go(i); restart(); });
+      dotsBox.appendChild(d);
+    });
+    const dots = [...dotsBox.children];
+
+    function go(i: number) {
+      dots[cur].classList.remove('on');
+      cur = (i + slides.length) % slides.length;
+      dots[cur].classList.add('on');
+      track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+    }
+    function next() { go(cur + 1); }
+    function prev() { go(cur - 1); }
+    function restart() { if (timer) clearInterval(timer); if (!reduced) timer = setInterval(next, 5000); }
+
+    bb.addEventListener('mouseenter', () => { if (timer) clearInterval(timer); });
+    bb.addEventListener('mouseleave', restart);
+    bb.addEventListener('pointerdown', (e) => { startX = (e as PointerEvent).clientX; if (timer) clearInterval(timer); });
+    bb.addEventListener('pointerup', (e) => {
+      if (startX === null) return;
+      const dx = (e as PointerEvent).clientX - startX;
+      if (Math.abs(dx) > 40) { if (dx < 0) next(); else prev(); }
+      startX = null;
+      restart();
+    });
+    bb.addEventListener('pointercancel', () => { startX = null; restart(); });
+
+    restart();
+  });
+</script>
+
+<style>
+  .bb {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    touch-action: pan-y;
+    user-select: none;
+  }
+
+  .bb-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.55s cubic-bezier(0.3, 0.7, 0.3, 1);
+    will-change: transform;
+  }
+
+  .bb-slide {
+    flex: 0 0 100%;
+    position: relative;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+
+  .bb-slide::before { content: ""; position: absolute; inset: 0; }
+
+  /* Climas visuais por tema — gradientes animados, cada campanha com o seu */
+  .bb-voz::before { background: linear-gradient(115deg, #0d1117, #0e3540 30%, #4d1140 70%, #0d1117); background-size: 300% 300%; animation: bb-drift 9s ease infinite; }
+  .bb-moedas::before { background: linear-gradient(120deg, #04141f, #0a3d33 45%, #04141f); background-size: 250% 250%; animation: bb-drift 11s ease infinite reverse; }
+  .bb-funil::before { background: radial-gradient(120% 170% at 20% 0%, #56123f 0%, #16070f 55%), radial-gradient(90% 120% at 90% 100%, rgba(255, 120, 40, 0.35), transparent 60%); animation: bb-glow 4.5s ease infinite; }
+  .bb-offline::before { background: linear-gradient(100deg, #071a12, #103a24 50%, #071a12); background-size: 280% 280%; animation: bb-drift 10s ease infinite; }
+
+  @keyframes bb-drift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  @keyframes bb-glow { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.25); } }
+
+  .bb-in {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: clamp(14px, 3.5vw, 44px);
+    padding: 20px 24px 34px;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 100%;
+  }
+
+  .bb-icon { font-size: clamp(42px, 6vw, 80px); line-height: 1; }
+
+  .bb-copy h2 {
+    margin: 0;
+    font-size: clamp(22px, 3.4vw, 44px);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    max-width: 18ch;
+    text-wrap: balance;
+  }
+
+  .bb-copy h2 em {
+    font-style: normal;
+    background: linear-gradient(90deg, var(--brand-cyan), #ff5ec4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bb-copy p {
+    margin: 6px 0 0;
+    color: #a7c4d2;
+    font-size: clamp(13px, 1.4vw, 16px);
+    max-width: 52ch;
+  }
+
+  .bb-cta {
+    background: var(--brand-cyan);
+    color: #062126;
+    font-weight: 800;
+    padding: 13px 28px;
+    border-radius: var(--radius-full);
+    font-size: 15px;
+    white-space: nowrap;
+    transition: transform var(--transition-fast);
+  }
+
+  .bb-cta:hover { transform: scale(1.06); }
+  .bb-moedas .bb-cta { background: #6ff2b5; color: #04291a; }
+  .bb-funil .bb-cta { background: #ff9d5c; color: #33130a; }
+  .bb-offline .bb-cta { background: #8be89f; color: #0a2912; }
+
+  .bb-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 3;
+  }
+
+  .bb-dots :global(button) {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 0;
+    background: rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.25s;
+  }
+
+  .bb-dots :global(button.on) {
+    background: #fff;
+    width: 24px;
+    border-radius: 6px;
+  }
+
+  @media (max-width: 767px) {
+    .bb { height: 330px; }
+    .bb-in { flex-direction: column; text-align: center; gap: 8px; padding: 18px 18px 36px; }
+    .bb-icon { font-size: 42px; }
+    .bb-copy h2 { max-width: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bb-slide::before { animation: none; }
+    .bb-track { transition: none; }
+  }
+</style>
