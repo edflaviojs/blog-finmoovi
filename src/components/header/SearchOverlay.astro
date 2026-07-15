@@ -136,7 +136,9 @@ const T = {
 
   .search-results:empty { display: none; }
 
-  .search-results a {
+  /* Resultados são injetados via innerHTML em runtime → precisam de :global()
+     (o escopo do Astro não alcança elementos criados depois do build) */
+  .search-results :global(a) {
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -145,19 +147,19 @@ const T = {
     transition: background var(--transition-fast);
   }
 
-  .search-results a:first-child { border-top: 0; }
+  .search-results :global(a:first-child) { border-top: 0; }
 
-  .search-results a:hover {
+  .search-results :global(a:hover) {
     background: var(--bg-tertiary);
   }
 
-  .sr-title {
+  .search-results :global(.sr-title) {
     font-size: var(--text-sm);
     font-weight: 600;
     color: var(--text-primary);
   }
 
-  .sr-excerpt {
+  .search-results :global(.sr-excerpt) {
     font-size: var(--text-xs);
     color: var(--text-secondary);
     line-height: 1.5;
@@ -167,13 +169,13 @@ const T = {
     overflow: hidden;
   }
 
-  .sr-excerpt :global(mark) {
+  .search-results :global(.sr-excerpt mark) {
     background: transparent;
     color: var(--brand-cyan);
     font-weight: 700;
   }
 
-  .search-empty {
+  .search-results :global(.search-empty) {
     padding: var(--space-4) var(--space-5);
     font-size: var(--text-sm);
     color: var(--text-tertiary);
