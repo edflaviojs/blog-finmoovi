@@ -5,6 +5,7 @@
 // exatamente 1 grupo (-25%): loop contínuo sem salto em qualquer largura de
 // tela (com 2 cópias, telas largas viam espaço vazio antes do reinício).
 import { getCollection } from 'astro:content';
+import { getActiveSeasonalEvents } from '@/utils/seasonal';
 
 const urlPath = Astro.url.pathname;
 let locale = 'pt';
@@ -28,6 +29,19 @@ const labels = {
   en: { novo: '📰 New on the blog', dica: '💡 Tip of the day' },
   es: { novo: '📰 Nuevo en el blog', dica: '💡 Consejo del día' },
 }[locale];
+
+// Eventos sazonais ativos (config.seasonal) com mensagem de ticker: a
+// contagem regressiva ("{dias}") é calculada no NAVEGADOR — precisa mesmo
+// que o build do dia atrase. Fica oculto até o script preencher.
+const loc = locale as 'pt' | 'en' | 'es';
+const seasonalItems = getActiveSeasonalEvents(locale)
+  .filter(e => e.ticker)
+  .map(e => ({
+    href: e.href[loc],
+    eventDate: e.eventDate,
+    msg: (e.ticker as Record<string, string>)[loc],
+    msgToday: e.tickerToday ? e.tickerToday[loc] : (e.ticker as Record<string, string>)[loc],
+  }));
 
 const COPIES = [0, 1, 2, 3];
 ---
@@ -86,6 +100,13 @@ const COPIES = [0, 1, 2, 3];
             <span class="cotacao-label">{labels.dica}</span>
             <span class="cotacao-text js-dica">--</span>
           </a>
+          {seasonalItems.map(s => (
+            <a class="cotacao-item cotacao-post js-seasonal" href={s.href}
+              data-event-date={s.eventDate} data-msg={s.msg} data-msg-today={s.msgToday}
+              style="display:none">
+              <span class="cotacao-text js-seasonal-text"></span>
+            </a>
+          ))}
         </div>
       ))}
     </div>
@@ -132,6 +153,35 @@ const COPIES = [0, 1, 2, 3];
     const list = tips[pageLang] || tips.pt;
     const dayOfYear = Math.floor((hoje.getTime() - new Date(hoje.getFullYear(), 0, 0).getTime()) / 86400000);
     setAll('js-dica', list[dayOfYear % list.length]);
+
+    fillSeasonal();
+  }
+
+  // Contagem regressiva sazonal: substitui {dias} pela contagem REAL do
+  // navegador (o item vem oculto do servidor; janela ativa = build diário)
+  function fillSeasonal() {
+    const t = new Date();
+    const t0 = new Date(t.getFullYear(), t.getMonth(), t.getDate()).getTime();
+    document.querySelectorAll('.js-seasonal').forEach((el) => {
+      const parts = (el.getAttribute('data-event-date') || '').split('-').map(Number);
+      if (parts.length !== 3) return;
+      const days = Math.round((new Date(parts[0], parts[1] - 1, parts[2]).getTime() - t0) / 86400000);
+      let msg = '';
+      if (days > 0) {
+        msg = (el.getAttribute('data-msg') || '').replace('{dias}', String(days));
+        if (days === 1) {
+          // singular por idioma: "Faltam 1 dias" → "Falta 1 dia" etc.
+          msg = msg.replace('Faltam 1 dias', 'Falta 1 dia').replace('Faltan 1 días', 'Falta 1 día')
+            .replace('1 days', '1 day').replace('1 dias', '1 dia').replace('1 días', '1 día');
+        }
+      } else if (days === 0) {
+        msg = el.getAttribute('data-msg-today') || '';
+      }
+      if (!msg) return; // dia seguinte ao evento (janela ainda aberta) → não exibe
+      const span = el.querySelector('.js-seasonal-text');
+      if (span) span.textContent = msg;
+      el.style.display = '';
+    });
   }
 
   async function fetchCotacoes() {

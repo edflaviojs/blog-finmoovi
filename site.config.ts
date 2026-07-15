@@ -193,6 +193,114 @@ export const config: SiteConfig = {
     },
   },
 
+  // ─── SAZONAL (banners por data comemorativa) ───────────────────────
+  // Eventos com janela EXPLÍCITA (start/end, inclusive): dentro dela o slide
+  // entra no BillboardCarousel (à frente das campanhas fixas) e o ticker ganha
+  // a contagem regressiva. Fora da janela o evento é ignorado no build (o bot
+  // rebuilda diariamente → entrada/saída automáticas). Datas móveis (Carnaval,
+  // Páscoa, Dia das Mães) mudam por ano — RENOVAR as ocorrências anualmente;
+  // manter eventos passados aqui não quebra nada.
+  seasonal: {
+    events: [
+      {
+        id: 'black-friday-2026', theme: 'blackfriday', icon: '🛍️',
+        start: '2026-11-12', end: '2026-11-28', eventDate: '2026-11-27',
+        locales: ['pt', 'en', 'es'],
+        href: { pt: '/ferramentas/calculadora-orcamento', en: '/ferramentas/calculadora-orcamento', es: '/ferramentas/calculadora-orcamento' },
+        title: { pt: 'Black Friday.', en: 'Black Friday.', es: 'Black Friday.' },
+        highlight: { pt: 'Sem cilada.', en: 'No traps.', es: 'Sin trampas.' },
+        text: {
+          pt: 'Defina o orçamento antes das ofertas: a calculadora 50-30-20 mostra quanto você pode gastar sem se endividar.',
+          en: 'Set your budget before the deals drop: the 50-30-20 calculator shows how much you can spend without going into debt.',
+          es: 'Define tu presupuesto antes de las ofertas: la calculadora 50-30-20 muestra cuánto puedes gastar sin endeudarte.',
+        },
+        cta: { pt: 'Planejar minhas compras →', en: 'Plan my shopping →', es: 'Planificar mis compras →' },
+        ticker: { pt: '🛍️ Faltam {dias} dias para a Black Friday — planeje as compras', en: '🛍️ {dias} days until Black Friday — plan your shopping', es: '🛍️ Faltan {dias} días para el Black Friday — planifica tus compras' },
+        tickerToday: { pt: '🛍️ Black Friday é HOJE — compre com orçamento, não por impulso', en: '🛍️ Black Friday is TODAY — shop with a budget, not on impulse', es: '🛍️ El Black Friday es HOY — compra con presupuesto, no por impulso' },
+      },
+      {
+        id: 'natal-2026', theme: 'natal', icon: '🎄',
+        start: '2026-12-10', end: '2026-12-26', eventDate: '2026-12-25',
+        locales: ['pt', 'en', 'es'],
+        href: { pt: '/categorias/dicas', en: '/en/categorias/dicas', es: '/es/categorias/dicas' },
+        title: { pt: 'Natal no azul.', en: 'Holidays in the green.', es: 'Navidad sin deudas.' },
+        highlight: { pt: 'Presenteie sem dívida.', en: 'Gift without debt.', es: 'Regala sin deuda.' },
+        text: {
+          pt: 'Décimo terceiro, presentes e ceia: organize os gastos de dezembro antes que eles organizem você.',
+          en: 'Bonus, gifts and dinner: organize your December spending before it organizes you.',
+          es: 'Aguinaldo, regalos y cena: organiza los gastos de diciembre antes de que te organicen a ti.',
+        },
+        cta: { pt: 'Organizar o fim de ano →', en: 'Plan the holidays →', es: 'Organizar el fin de año →' },
+        ticker: { pt: '🎄 Faltam {dias} dias para o Natal — planeje os presentes sem estourar o orçamento', en: '🎄 {dias} days until Christmas — plan your gifts without breaking the budget', es: '🎄 Faltan {dias} días para Navidad — planifica los regalos sin romper el presupuesto' },
+        tickerToday: { pt: '🎄 Feliz Natal! Celebre com quem importa — as contas já estão planejadas', en: '🎄 Merry Christmas! Celebrate with the ones who matter', es: '🎄 ¡Feliz Navidad! Celebra con quienes importan' },
+      },
+      {
+        id: 'ano-novo-2027', theme: 'anonovo', icon: '✨',
+        start: '2026-12-27', end: '2027-01-05', eventDate: '2027-01-01',
+        locales: ['pt', 'en', 'es'],
+        href: { pt: '/ferramentas/calculadora-reserva', en: '/ferramentas/calculadora-reserva', es: '/ferramentas/calculadora-reserva' },
+        title: { pt: '2027 começa agora.', en: '2027 starts now.', es: '2027 empieza ahora.' },
+        highlight: { pt: 'Metas no papel.', en: 'Goals on paper.', es: 'Metas en papel.' },
+        text: {
+          pt: 'Comece o ano com reserva de emergência e metas claras — a virada financeira começa no planejamento.',
+          en: 'Start the year with an emergency fund and clear goals — the financial turnaround starts with a plan.',
+          es: 'Empieza el año con fondo de emergencia y metas claras — el cambio financiero empieza en el plan.',
+        },
+        cta: { pt: 'Definir minhas metas →', en: 'Set my goals →', es: 'Definir mis metas →' },
+        ticker: { pt: '✨ Faltam {dias} dias para 2027 — comece o ano com metas financeiras', en: '✨ {dias} days until 2027 — start the year with financial goals', es: '✨ Faltan {dias} días para 2027 — empieza el año con metas financieras' },
+        tickerToday: { pt: '✨ Feliz 2027! Primeiro dia é dia de planejar o ano', en: '✨ Happy 2027! Day one is planning day', es: '✨ ¡Feliz 2027! El primer día es día de planear el año' },
+      },
+      {
+        id: 'carnaval-2027', theme: 'carnaval', icon: '🎭',
+        start: '2027-01-25', end: '2027-02-10', eventDate: '2027-02-09',
+        locales: ['pt'],
+        href: { pt: '/categorias/orcamento', en: '/categorias/orcamento', es: '/categorias/orcamento' },
+        title: { pt: 'Carnaval é folia.', en: 'Carnival.', es: 'Carnaval.' },
+        highlight: { pt: 'Não é fatura.', en: 'On budget.', es: 'Con presupuesto.' },
+        text: {
+          pt: 'Fantasia, bloco e viagem cabem no orçamento — se você reservar a grana antes de cair na folia.',
+          en: 'Costumes, parades and travel fit the budget — if you set the money aside first.',
+          es: 'Disfraz, desfile y viaje caben en el presupuesto — si reservas el dinero antes.',
+        },
+        cta: { pt: 'Curtir sem estourar →', en: 'Enjoy on budget →', es: 'Disfrutar sin pasarse →' },
+        ticker: { pt: '🎭 Faltam {dias} dias para o Carnaval — reserve a grana da folia', en: '🎭 {dias} days until Carnival', es: '🎭 Faltan {dias} días para el Carnaval' },
+        tickerToday: { pt: '🎭 É Carnaval! Curta com a grana já reservada', en: '🎭 It’s Carnival!', es: '🎭 ¡Es Carnaval!' },
+      },
+      {
+        id: 'imposto-de-renda-2027', theme: 'ir', icon: '🦁',
+        start: '2027-03-01', end: '2027-04-30', eventDate: '2027-04-30',
+        locales: ['pt'],
+        href: { pt: '/categorias/dicas', en: '/categorias/dicas', es: '/categorias/dicas' },
+        title: { pt: 'Imposto de Renda.', en: 'Income tax.', es: 'Impuesto de renta.' },
+        highlight: { pt: 'Sem susto.', en: 'No stress.', es: 'Sin sustos.' },
+        text: {
+          pt: 'Declare com calma: separe os comprovantes agora e fuja da multa por atraso no fim do prazo.',
+          en: 'File calmly: gather your documents now and avoid the late fee at the deadline.',
+          es: 'Declara con calma: junta tus comprobantes ahora y evita la multa por atraso.',
+        },
+        cta: { pt: 'Ver o passo a passo →', en: 'See the guide →', es: 'Ver la guía →' },
+        ticker: { pt: '🦁 Faltam {dias} dias para o prazo do IR — declare sem correria', en: '🦁 {dias} days until the tax deadline', es: '🦁 Faltan {dias} días para el plazo fiscal' },
+        tickerToday: { pt: '🦁 ÚLTIMO DIA do prazo do IR — declare agora e fuja da multa', en: '🦁 Tax deadline is TODAY', es: '🦁 HOY vence el plazo fiscal' },
+      },
+      {
+        id: 'dia-das-maes-2027', theme: 'maes', icon: '💐',
+        start: '2027-04-24', end: '2027-05-09', eventDate: '2027-05-09',
+        locales: ['pt'],
+        href: { pt: '/ferramentas/calculadora-orcamento', en: '/ferramentas/calculadora-orcamento', es: '/ferramentas/calculadora-orcamento' },
+        title: { pt: 'Dia das Mães.', en: "Mother's Day.", es: 'Día de la Madre.' },
+        highlight: { pt: 'Sem aperto.', en: 'No squeeze.', es: 'Sin apuros.' },
+        text: {
+          pt: 'Homenagem não precisa virar dívida: planeje o presente com antecedência e presenteie sem culpa.',
+          en: "A tribute shouldn't become debt: plan the gift ahead and give guilt-free.",
+          es: 'El homenaje no debe volverse deuda: planifica el regalo con anticipación.',
+        },
+        cta: { pt: 'Planejar o presente →', en: 'Plan the gift →', es: 'Planificar el regalo →' },
+        ticker: { pt: '💐 Faltam {dias} dias para o Dia das Mães — planeje o presente', en: "💐 {dias} days until Mother's Day", es: '💐 Faltan {dias} días para el Día de la Madre' },
+        tickerToday: { pt: '💐 Feliz Dia das Mães — celebre sem estourar o orçamento', en: "💐 Happy Mother's Day!", es: '💐 ¡Feliz Día de la Madre!' },
+      },
+    ],
+  },
+
   // ─── REDES SOCIAIS ─────────────────────────────────────────────────
   social: {
     twitter: 'https://x.com/finmoovi',

@@ -1,9 +1,12 @@
 ---
 import { config } from '../../../site.config';
+import { getActiveSeasonalEvents } from '@/utils/seasonal';
 
 /**
  * Carrossel billboard full-bleed (borda a borda da tela).
  * Slides vêm de config.ads.billboard — banners próprios, 100% estáticos.
+ * Eventos sazonais ativos (config.seasonal) entram NA FRENTE das campanhas
+ * fixas e saem sozinhos quando a janela fecha (build diário do bot).
  * Altura fixa (sem sobressalto), desliza sozinho a cada 5s, arrastável
  * (dedo/mouse), bolinhas clicáveis, pausa no hover.
  */
@@ -14,7 +17,13 @@ interface Props {
 }
 const { locale, offset = 0 } = Astro.props;
 
-const base = config.ads.billboard;
+// Sazonais primeiro (destaque no carrossel do topo, offset 0); o href
+// sazonal é por idioma — normalizado aqui para a mesma forma dos fixos
+const seasonalSlides = getActiveSeasonalEvents(locale).map(e => ({
+  theme: e.theme, icon: e.icon, href: e.href[locale as 'pt' | 'en' | 'es'],
+  title: e.title, highlight: e.highlight, text: e.text, cta: e.cta,
+}));
+const base = [...seasonalSlides, ...config.ads.billboard];
 const slides = base.map((_, i) => base[(i + offset) % base.length]);
 ---
 
@@ -120,6 +129,21 @@ const slides = base.map((_, i) => base[(i + offset) % base.length]);
 
   @keyframes bb-drift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
   @keyframes bb-glow { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.25); } }
+
+  /* ===== Temas SAZONAIS (config.seasonal) — mesma linguagem dos fixos:
+     gradiente escuro animado + CTA em cor viva literal (contraste nos 2 temas) */
+  .bb-natal::before { background: linear-gradient(115deg, #0d1117, #0b3d2e 32%, #5a1620 68%, #0d1117); background-size: 300% 300%; animation: bb-drift 10s ease infinite; }
+  .bb-natal .bb-cta { background: #f2c94c; color: #2a1e04; }
+  .bb-anonovo::before { background: linear-gradient(115deg, #0d1117, #14285c 40%, #6e5308 75%, #0d1117); background-size: 300% 300%; animation: bb-drift 11s ease infinite; }
+  .bb-anonovo .bb-cta { background: #ffd75e; color: #2a2104; }
+  .bb-carnaval::before { background: linear-gradient(115deg, #2a0845, #7b1fa2 38%, #0d7a5f 72%, #2a0845); background-size: 300% 300%; animation: bb-drift 9s ease infinite; }
+  .bb-carnaval .bb-cta { background: #ffd93d; color: #33270a; }
+  .bb-blackfriday::before { background: linear-gradient(115deg, #050505, #1c1c1c 45%, #3a2405 78%, #050505); background-size: 300% 300%; animation: bb-drift 10s ease infinite; }
+  .bb-blackfriday .bb-cta { background: #ffb300; color: #241800; }
+  .bb-maes::before { background: linear-gradient(115deg, #2b0a1e, #8c2a5c 45%, #c96a8d 80%, #2b0a1e); background-size: 300% 300%; animation: bb-drift 11s ease infinite; }
+  .bb-maes .bb-cta { background: #ffb3c9; color: #38101f; }
+  .bb-ir::before { background: linear-gradient(115deg, #0d1117, #23301a 40%, #6e5a12 75%, #0d1117); background-size: 300% 300%; animation: bb-drift 10s ease infinite; }
+  .bb-ir .bb-cta { background: #e4c65b; color: #2a2104; }
 
   .bb-in {
     position: relative;
