@@ -1,4 +1,4 @@
-import type { SiteConfig } from './src/types/config';
+﻿import type { SiteConfig } from './src/types/config';
 
 /**
  * ═══════════════════════════════════════════════════════════════════════
@@ -110,6 +110,71 @@ export const config: SiteConfig = {
       pt: 'Sem cartão de crédito. Cancele quando quiser.',
       en: 'No credit card required. Cancel anytime.',
       es: 'Sin tarjeta de crédito. Cancela cuando quieras.',
+    },
+  },
+
+  // ─── PUBLICIDADE PRÓPRIA (home portal) ─────────────────────────────
+  // Banners 100% estáticos (zero JS de terceiros → zero impacto no PageSpeed).
+  // Trocar campanha = editar aqui. theme define o clima visual do slide
+  // (voz | moedas | funil | offline — gradientes animados no BillboardCarousel).
+  ads: {
+    billboard: [
+      {
+        theme: 'voz', icon: '🎙️', href: 'https://finmoovi.com',
+        title: { pt: 'Fale.', en: 'Speak.', es: 'Habla.' },
+        highlight: { pt: 'Está lançado.', en: "It's logged.", es: 'Está registrado.' },
+        text: {
+          pt: 'Smart Capture por voz: "gastei 87 reais no mercado" vira um lançamento completo no FinMoovi.',
+          en: 'Voice Smart Capture: "spent 87 on groceries" becomes a complete entry in FinMoovi.',
+          es: 'Smart Capture por voz: "gasté 87 en el mercado" se convierte en un registro completo en FinMoovi.',
+        },
+        cta: { pt: 'Testar grátis por 7 dias →', en: 'Try free for 7 days →', es: 'Probar gratis 7 días →' },
+      },
+      {
+        theme: 'moedas', icon: '💱', href: 'https://finmoovi.com',
+        title: { pt: '3 moedas.', en: '3 currencies.', es: '3 monedas.' },
+        highlight: { pt: '1 app.', en: '1 app.', es: '1 app.' },
+        text: {
+          pt: 'Real, dólar e euro convivendo na mesma carteira, com conversão automática em tempo real.',
+          en: 'Real, dollar and euro living in the same wallet, with automatic real-time conversion.',
+          es: 'Real, dólar y euro conviviendo en la misma cartera, con conversión automática en tiempo real.',
+        },
+        cta: { pt: 'Conhecer o multi-moeda →', en: 'See multi-currency →', es: 'Conocer multi-moneda →' },
+      },
+      {
+        theme: 'funil', icon: '🎯', href: 'https://app.finmoovi.com/funil-interativo',
+        title: { pt: 'Qual é o seu', en: "What's your", es: '¿Cuál es tu' },
+        highlight: { pt: 'perfil financeiro?', en: 'financial profile?', es: 'perfil financiero?' },
+        text: {
+          pt: 'Responda o funil interativo e receba um diagnóstico personalizado em 2 minutos.',
+          en: 'Answer the interactive funnel and get a personalized diagnosis in 2 minutes.',
+          es: 'Responde el embudo interactivo y recibe un diagnóstico personalizado en 2 minutos.',
+        },
+        cta: { pt: 'Fazer o teste →', en: 'Take the test →', es: 'Hacer el test →' },
+      },
+      {
+        theme: 'offline', icon: '📶', href: 'https://finmoovi.com',
+        title: { pt: 'Sem sinal?', en: 'No signal?', es: '¿Sin señal?' },
+        highlight: { pt: 'Sem problema.', en: 'No problem.', es: 'Sin problema.' },
+        text: {
+          pt: 'O FinMoovi funciona 100% offline e sincroniza tudo quando você voltar a ter internet.',
+          en: 'FinMoovi works 100% offline and syncs everything when you are back online.',
+          es: 'FinMoovi funciona 100% offline y sincroniza todo cuando vuelvas a tener internet.',
+        },
+        cta: { pt: 'Ver como funciona →', en: 'See how it works →', es: 'Ver cómo funciona →' },
+      },
+    ],
+    rail: {
+      theme: 'funil', icon: '🎯', href: 'https://app.finmoovi.com/funil-interativo',
+      title: { pt: 'Qual é o seu perfil financeiro?', en: "What's your financial profile?", es: '¿Cuál es tu perfil financiero?' },
+      text: { pt: 'Funil interativo · resultado em 2 minutos', en: 'Interactive funnel · results in 2 minutes', es: 'Embudo interactivo · resultado en 2 minutos' },
+      cta: { pt: 'Descobrir agora →', en: 'Find out now →', es: 'Descubrir ahora →' },
+    },
+    mid: {
+      theme: 'voz', icon: '📱', href: 'https://finmoovi.com',
+      title: { pt: 'Cansado de planilhas? O FinMoovi organiza tudo por você.', en: 'Tired of spreadsheets? FinMoovi organizes everything for you.', es: '¿Cansado de planillas? FinMoovi organiza todo por ti.' },
+      text: { pt: 'Multi-moeda · Offline · Categorização automática', en: 'Multi-currency · Offline · Auto-categorization', es: 'Multi-moneda · Offline · Categorización automática' },
+      cta: { pt: 'Experimentar →', en: 'Try it →', es: 'Probar →' },
     },
   },
 

@@ -81,37 +81,39 @@
   --sidebar-width: 320px;
 }
 
-/* Light Mode */
+/* Light Mode — paleta do mockup portal aprovado (2026-07-15):
+   página fria #f4f7fb com cards brancos, azul vivo e gradiente DA MARCA
+   (o antigo verde→azul no --gradient-cta deixava tudo apagado/verde) */
 :root[data-theme="light"] {
   /* Background */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f6f8fa;
-  --bg-tertiary: #f0f2f5;
-  --bg-elevated: #e1e4e8;
+  --bg-primary: #f4f7fb;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #eaf0f7;
+  --bg-elevated: #dde6f0;
 
   /* Text */
-  --text-primary: #1f2328;
-  --text-secondary: #656d76;
-  --text-tertiary: #68707a;
-  --text-link: #0969da;
+  --text-primary: #0d1117;
+  --text-secondary: #47546a;
+  --text-tertiary: #7b8798;
+  --text-link: #2f6fed;
 
   /* Borders */
-  --border-default: #d0d7de;
-  --border-muted: #e1e4e8;
-  --border-accent: #0969da;
+  --border-default: #dbe4ee;
+  --border-muted: #e7edf5;
+  --border-accent: #2f6fed;
 
   /* Accent */
-  --accent-primary: #0969da;
-  --accent-green: #1a7f37;
-  --accent-red: #cf222e;
+  --accent-primary: #2f6fed;
+  --accent-green: #1a9e5c;
+  --accent-red: #d13c4b;
   --accent-yellow: #9a6700;
   --accent-purple: #8250df;
   --brand-cyan: #0e7490; /* ciano da marca (tema claro: escurecido p/ contraste WCAG >=4.5:1) */
 
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #0969da 0%, #8250df 100%);
-  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f6f8fa 100%);
-  --gradient-cta: linear-gradient(135deg, #1a7f37 0%, #0969da 100%);
+  --gradient-hero: linear-gradient(135deg, #2f6fed 0%, #8250df 100%);
+  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f4f7fb 100%);
+  --gradient-cta: linear-gradient(135deg, #00c8d7 0%, #A91079 100%);
 
   /* Glass Morphism */
   --glass-bg: rgba(255, 255, 255, 0.85);

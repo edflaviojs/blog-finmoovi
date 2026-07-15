@@ -260,14 +260,17 @@ const socials = [
 
   .footer-bottom p { margin: 0; }
 
-  /* Mobile: tudo centralizado, grupos separados por fio, títulos com
-     risquinho gradiente, links em chips uniformes */
+  /* Mobile luxe: leve e discreto — tipografia menor, chips finos e fantasma,
+     ritmo apertado, separadores quase invisíveis */
   @media (max-width: 767px) {
+    .footer-hairline { margin-bottom: var(--space-8); }
+    .footer { padding-bottom: var(--space-5); }
+
     .footer-grid { text-align: center; }
 
     .footer-grid > div {
-      padding: var(--space-6) 0;
-      border-top: 1px solid #151d28;
+      padding: var(--space-5) 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.045);
     }
 
     .footer-grid > div:first-child {
@@ -281,39 +284,74 @@ const socials = [
       align-items: center;
     }
 
-    .footer-description { margin-inline: auto; }
+    .footer-description {
+      margin: var(--space-2) auto 0;
+      font-size: 12px;
+      max-width: 30ch;
+      line-height: 1.6;
+      color: #6c7a8a;
+    }
 
-    .footer-title { margin-bottom: var(--space-4); }
+    .footer-title {
+      margin-bottom: var(--space-3);
+      font-size: 9.5px;
+      letter-spacing: 0.28em;
+      color: #5b6b7a;
+    }
 
     .footer-title::after {
       content: "";
       display: block;
-      width: 26px;
-      height: 2px;
+      width: 20px;
+      height: 1.5px;
       border-radius: 1px;
-      background: var(--gradient-cta);
-      margin: 9px auto 0;
+      background: linear-gradient(90deg, #00c8d7, #A91079);
+      opacity: 0.7;
+      margin: 7px auto 0;
     }
 
     .footer-list {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 9px;
+      gap: 6px;
     }
 
     .footer-list a {
       display: inline-block;
-      border: 1px solid #202a37;
-      background: rgba(255, 255, 255, 0.02);
-      padding: 8px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      background: transparent;
+      padding: 5px 12px;
       border-radius: var(--radius-full);
-      font-size: 13px;
-      color: #9fb0c1;
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: #8494a5;
     }
 
-    .footer-list a:hover { border-color: var(--brand-cyan); }
+    .footer-list a:hover { border-color: var(--brand-cyan); color: #cfe3ee; }
 
-    .footer-socials { margin-top: 0; }
+    .footer-socials {
+      margin-top: 0;
+      padding-top: var(--space-5);
+      gap: var(--space-2);
+    }
+
+    .footer-socials a {
+      width: 29px;
+      height: 29px;
+      font-size: 9px;
+      color: #71808f;
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-bottom {
+      margin-top: var(--space-4);
+      padding-top: var(--space-4);
+      font-size: 10.5px;
+      color: #56636f;
+    }
+
+    .footer-disclaimer { font-size: 10px; color: #4c5865; }
   }
 </style>

@@ -15,13 +15,16 @@ const T = {
 
 <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Buscar no blog" hidden>
   <div class="search-box">
-    <input
-      type="search"
-      id="search-input"
-      placeholder={T.placeholder}
-      aria-label={T.placeholder}
-      autocomplete="off"
-    />
+    <div class="search-input-wrap">
+      <input
+        type="search"
+        id="search-input"
+        placeholder={T.placeholder}
+        aria-label={T.placeholder}
+        autocomplete="off"
+      />
+      <button class="search-close" id="search-close" aria-label="Fechar busca">✕</button>
+    </div>
     <div class="search-results" id="search-results" data-empty={T.empty} data-hint={T.hint} data-unavailable={T.unavailable}></div>
   </div>
 </div>
@@ -69,7 +72,7 @@ const T = {
       return;
     }
     const search = await pf.search(q);
-    const items = await Promise.all(search.results.slice(0, 8).map((r: any) => r.data()));
+    const items = await Promise.all(search.results.slice(0, 20).map((r: any) => r.data()));
     if (!items.length) {
       results.innerHTML = `<div class="search-empty">${results.dataset.empty} "${q.replace(/</g, '&lt;')}"</div>`;
       return;
@@ -82,6 +85,7 @@ const T = {
   document.addEventListener('click', (e) => {
     const t = e.target as HTMLElement;
     if (t.closest('#search-toggle')) { open(); }
+    if (t.closest('#search-close')) { close(); }
     if (t === overlay) { close(); }
   });
   document.addEventListener('keydown', (e) => {
@@ -109,15 +113,40 @@ const T = {
     padding: 0 var(--space-4);
   }
 
+  .search-input-wrap { position: relative; }
+
   #search-input {
     width: 100%;
     background: var(--bg-secondary);
     border: 1px solid var(--border-default);
     color: var(--text-primary);
     border-radius: var(--radius-xl);
-    padding: var(--space-4) var(--space-6);
+    padding: var(--space-4) 52px var(--space-4) var(--space-6);
     font-size: var(--text-lg);
     box-shadow: var(--shadow-lg);
+  }
+
+  .search-close {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid var(--border-default);
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    font-size: 14px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: all var(--transition-fast);
+  }
+
+  .search-close:hover {
+    color: var(--text-primary);
+    border-color: var(--brand-cyan);
   }
 
   #search-input:focus {
@@ -130,8 +159,10 @@ const T = {
     background: var(--bg-secondary);
     border: 1px solid var(--border-default);
     border-radius: var(--radius-xl);
-    overflow: hidden;
+    overflow-y: auto; /* muitos resultados → rola em vez de cortar */
+    max-height: min(58vh, 520px);
     box-shadow: var(--shadow-lg);
+    overscroll-behavior: contain;
   }
 
   .search-results:empty { display: none; }
