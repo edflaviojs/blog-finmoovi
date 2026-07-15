@@ -11,6 +11,8 @@ const UPSTREAM = {
   ibovBrapi: (token) => 'https://brapi.dev/api/quote/%5EBVSP?token=' + (token || 'demo'),
   ibovAwesome: 'https://economia.awesomeapi.com.br/last/IBOV',
   selic: 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json',
+  ipca: 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.13522/dados/ultimos/1?formato=json',
+  cdi: 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.4389/dados/ultimos/1?formato=json',
   // Fallbacks que aceitam requisições de data center (AwesomeAPI bloqueia tráfego
   // vindo do edge da Cloudflare — funciona no navegador, falha no Worker)
   erApi: 'https://open.er-api.com/v6/latest/USD',
@@ -48,7 +50,7 @@ async function fetchJson(url, timeoutMs = 5000) {
 }
 
 async function buildData(env) {
-  const out = { usdbrl: null, eurbrl: null, btcusd: null, ibov: null, selic: null };
+  const out = { usdbrl: null, eurbrl: null, btcusd: null, ibov: null, selic: null, ipca: null, cdi: null };
 
   // AwesomeAPI — USD, EUR, BTC (com % de variação)
   try {
@@ -90,11 +92,15 @@ async function buildData(env) {
     } catch (e2) { /* mantém null */ }
   }
 
-  // SELIC — Banco Central (API oficial)
-  try {
-    const d = await fetchJson(UPSTREAM.selic);
-    if (d && d[0]) out.selic = parseFloat(d[0].valor);
-  } catch (e) { /* mantém null → cliente usa valor estático */ }
+  // SELIC + IPCA 12m + CDI — Banco Central (API oficial), em paralelo
+  const [selicR, ipcaR, cdiR] = await Promise.allSettled([
+    fetchJson(UPSTREAM.selic),
+    fetchJson(UPSTREAM.ipca),
+    fetchJson(UPSTREAM.cdi),
+  ]);
+  if (selicR.status === 'fulfilled' && selicR.value && selicR.value[0]) out.selic = parseFloat(selicR.value[0].valor);
+  if (ipcaR.status === 'fulfilled' && ipcaR.value && ipcaR.value[0]) out.ipca = parseFloat(ipcaR.value[0].valor);
+  if (cdiR.status === 'fulfilled' && cdiR.value && cdiR.value[0]) out.cdi = parseFloat(cdiR.value[0].valor);
 
   return out;
 }

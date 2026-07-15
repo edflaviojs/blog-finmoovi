@@ -1,10 +1,39 @@
 ---
-// CotacaoBar — Ticker animado de cotações com dados reais
+// CotacaoBar — Ticker animado: data, clima, cotações reais, indicadores BCB,
+// último post do blog e dica do dia
+import { getCollection } from 'astro:content';
+
+const urlPath = Astro.url.pathname;
+let locale = 'pt';
+if (urlPath.startsWith('/en/') || urlPath === '/en') locale = 'en';
+else if (urlPath.startsWith('/es/') || urlPath === '/es') locale = 'es';
+
+const localePrefix = locale === 'pt' ? '' : `/${locale}`;
+
+const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === locale);
+const latest = posts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())[0];
+const latestUrl = latest ? `${localePrefix}/posts/${latest.slug}` : null;
+const latestTitle = latest
+  ? (latest.data.title.length > 55 ? latest.data.title.slice(0, 55).trim() + '…' : latest.data.title)
+  : null;
+
+const labels = {
+  pt: { novo: '📰 Novo no blog', dica: '💡 Dica do dia' },
+  en: { novo: '📰 New on the blog', dica: '💡 Tip of the day' },
+  es: { novo: '📰 Nuevo en el blog', dica: '💡 Consejo del día' },
+}[locale];
 ---
 
 <div class="cotacao-bar">
   <div class="cotacao-ticker">
     <div class="cotacao-track" aria-label="Cotações em tempo real">
+      <span class="cotacao-item">
+        <span class="cotacao-value" id="cot-data">--</span>
+      </span>
+      <span class="cotacao-item" id="clima-item" style="display:none">
+        <span class="cotacao-label" id="clima-city">--</span>
+        <span class="cotacao-value" id="clima-temp">--</span>
+      </span>
       <span class="cotacao-item">
         <span class="cotacao-label">USD/BRL</span>
         <span class="cotacao-value" id="cot-usdbrl">--</span>
@@ -29,11 +58,32 @@
         <span class="cotacao-label">SELIC</span>
         <span class="cotacao-value" id="cot-selic">--</span>
       </span>
-      <span class="cotacao-item" id="clima-item" style="display:none">
-        <span class="cotacao-label" id="clima-city">--</span>
-        <span class="cotacao-value" id="clima-temp">--</span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">IPCA 12M</span>
+        <span class="cotacao-value" id="cot-ipca">--</span>
+      </span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">CDI</span>
+        <span class="cotacao-value" id="cot-cdi">--</span>
+      </span>
+      {latestTitle && (
+        <a class="cotacao-item cotacao-post" href={latestUrl}>
+          <span class="cotacao-label">{labels.novo}</span>
+          <span class="cotacao-text">{latestTitle}</span>
+        </a>
+      )}
+      <span class="cotacao-item">
+        <span class="cotacao-label">{labels.dica}</span>
+        <span class="cotacao-text" id="cot-dica">--</span>
       </span>
       <!-- Duplicado para loop infinito -->
+      <span class="cotacao-item">
+        <span class="cotacao-value" id="cot-data2">--</span>
+      </span>
+      <span class="cotacao-item" id="clima-item2" style="display:none">
+        <span class="cotacao-label" id="clima-city2">--</span>
+        <span class="cotacao-value" id="clima-temp2">--</span>
+      </span>
       <span class="cotacao-item">
         <span class="cotacao-label">USD/BRL</span>
         <span class="cotacao-value" id="cot-usdbrl2">--</span>
@@ -58,15 +108,62 @@
         <span class="cotacao-label">SELIC</span>
         <span class="cotacao-value" id="cot-selic2">--</span>
       </span>
-      <span class="cotacao-item" id="clima-item2" style="display:none">
-        <span class="cotacao-label" id="clima-city2">--</span>
-        <span class="cotacao-value" id="clima-temp2">--</span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">IPCA 12M</span>
+        <span class="cotacao-value" id="cot-ipca2">--</span>
+      </span>
+      <span class="cotacao-item">
+        <span class="cotacao-label">CDI</span>
+        <span class="cotacao-value" id="cot-cdi2">--</span>
+      </span>
+      {latestTitle && (
+        <a class="cotacao-item cotacao-post" href={latestUrl}>
+          <span class="cotacao-label">{labels.novo}</span>
+          <span class="cotacao-text">{latestTitle}</span>
+        </a>
+      )}
+      <span class="cotacao-item">
+        <span class="cotacao-label">{labels.dica}</span>
+        <span class="cotacao-text" id="cot-dica2">--</span>
       </span>
     </div>
   </div>
 </div>
 
 <script>
+  import tips from '../../data/ticker-tips.json';
+
+  // Idioma da página (definido pelo BaseLayout no <html lang>)
+  const pageLang = (document.documentElement.lang || 'pt').slice(0, 2);
+
+  // Condições WMO da Open-Meteo agrupadas → emoji + rótulo por idioma
+  const WEATHER_CONDITIONS = [
+    { match: (c) => c <= 1, emoji: '☀️', pt: 'ensolarado', en: 'sunny', es: 'soleado' },
+    { match: (c) => c === 2, emoji: '⛅', pt: 'poucas nuvens', en: 'partly cloudy', es: 'poco nublado' },
+    { match: (c) => c === 3, emoji: '☁️', pt: 'nublado', en: 'cloudy', es: 'nublado' },
+    { match: (c) => c === 45 || c === 48, emoji: '🌫️', pt: 'névoa', en: 'fog', es: 'niebla' },
+    { match: (c) => (c >= 51 && c <= 67) || (c >= 80 && c <= 82), emoji: '🌧️', pt: 'chuva', en: 'rain', es: 'lluvia' },
+    { match: (c) => (c >= 71 && c <= 77) || c === 85 || c === 86, emoji: '❄️', pt: 'neve', en: 'snow', es: 'nieve' },
+    { match: (c) => c >= 95, emoji: '⛈️', pt: 'tempestade', en: 'storm', es: 'tormenta' },
+  ];
+
+  function setPair(idBase, text) {
+    const el1 = document.getElementById(idBase);
+    const el2 = document.getElementById(idBase + '2');
+    if (el1) el1.textContent = text;
+    if (el2) el2.textContent = text;
+  }
+
+  function fillDataEDica() {
+    const localeTag = pageLang === 'pt' ? 'pt-BR' : pageLang === 'es' ? 'es-ES' : 'en-US';
+    const hoje = new Date();
+    setPair('cot-data', '📅 ' + hoje.toLocaleDateString(localeTag, { weekday: 'short', day: 'numeric', month: 'short' }));
+
+    const list = tips[pageLang] || tips.pt;
+    const dayOfYear = Math.floor((hoje.getTime() - new Date(hoje.getFullYear(), 0, 0).getTime()) / 86400000);
+    setPair('cot-dica', list[dayOfYear % list.length]);
+  }
+
   async function fetchCotacoes() {
     // 1 request same-origin ao proxy /api/cotacoes (Cloudflare Function) — sem CORS.
     try {
@@ -89,11 +186,13 @@
         updateCotacao('ibov', '--', null);
       }
       if (d.selic !== null && d.selic !== undefined) {
-        const selic = d.selic.toFixed(2);
-        const el1 = document.getElementById('cot-selic');
-        const el2 = document.getElementById('cot-selic2');
-        if (el1) el1.textContent = selic + '%';
-        if (el2) el2.textContent = selic + '%';
+        setPair('cot-selic', d.selic.toFixed(2) + '%');
+      }
+      if (d.ipca !== null && d.ipca !== undefined) {
+        setPair('cot-ipca', d.ipca.toFixed(2) + '%');
+      }
+      if (d.cdi !== null && d.cdi !== undefined) {
+        setPair('cot-cdi', d.cdi.toFixed(2) + '%');
       }
     } catch (e) {
       // Proxy indisponível (ex.: dev local sem Functions) → mantém "--" inicial
@@ -108,12 +207,17 @@
       const d = await res.json();
       if (!d || d.temp === null || d.temp === undefined) return;
       const city = d.city || 'Local';
-      const temp = d.temp + '°C';
+      const cond = d.code !== null && d.code !== undefined
+        ? WEATHER_CONDITIONS.find((w) => w.match(d.code))
+        : null;
+      const emoji = cond ? cond.emoji : '🌤';
+      const condLabel = cond ? (cond[pageLang] || cond.pt) : '';
+      const temp = d.temp + '°C' + (condLabel ? ' ' + condLabel : '');
       [['clima-city', 'clima-temp', 'clima-item'], ['clima-city2', 'clima-temp2', 'clima-item2']].forEach(([cityId, tempId, itemId]) => {
         const cityEl = document.getElementById(cityId);
         const tempEl = document.getElementById(tempId);
         const itemEl = document.getElementById(itemId);
-        if (cityEl) cityEl.textContent = '🌤 ' + city;
+        if (cityEl) cityEl.textContent = emoji + ' ' + city;
         if (tempEl) tempEl.textContent = temp;
         if (itemEl) itemEl.style.display = '';
       });
@@ -147,6 +251,7 @@
   // Inicia as cotações FORA do caminho crítico de renderização:
   // espera o load e um momento ocioso, para não atrasar LCP/FCP.
   function startCotacoes() {
+    fillDataEDica();
     fetchCotacoes();
     fetchClima();
     setInterval(fetchCotacoes, 5 * 60 * 1000);
@@ -183,7 +288,7 @@
   .cotacao-track {
     display: flex;
     gap: var(--space-8);
-    animation: ticker 30s linear infinite;
+    animation: ticker 60s linear infinite;
     white-space: nowrap;
   }
 
@@ -217,6 +322,21 @@
 
   .cotacao-change.negative {
     color: var(--accent-red);
+  }
+
+  /* Textos longos (último post, dica do dia) — sans-serif, sem mono */
+  .cotacao-text {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .cotacao-post {
+    text-decoration: none;
+  }
+
+  .cotacao-post:hover .cotacao-text {
+    text-decoration: underline;
+    color: var(--accent-primary, var(--text-primary));
   }
 
   @keyframes ticker {

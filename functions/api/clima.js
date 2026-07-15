@@ -28,18 +28,21 @@ export async function onRequestGet(context) {
   const city = cf.city || null;
 
   if (!lat || !lon) {
-    return new Response(JSON.stringify({ city: null, temp: null }), { status: 200, headers });
+    return new Response(JSON.stringify({ city: null, temp: null, code: null }), { status: 200, headers });
   }
 
   try {
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m`;
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code`;
     const res = await fetch(url, { signal: AbortSignal.timeout(4000) });
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const d = await res.json();
     const temp = d && d.current ? Math.round(d.current.temperature_2m) : null;
-    return new Response(JSON.stringify({ city, temp }), { status: 200, headers });
+    // weather_code WMO: 0-1 limpo, 2 parcial, 3 nublado, 45-48 névoa,
+    // 51-67/80-82 chuva, 71-77/85-86 neve, 95+ tempestade (cliente traduz)
+    const code = d && d.current && d.current.weather_code !== undefined ? d.current.weather_code : null;
+    return new Response(JSON.stringify({ city, temp, code }), { status: 200, headers });
   } catch (e) {
-    return new Response(JSON.stringify({ city, temp: null }), { status: 200, headers });
+    return new Response(JSON.stringify({ city, temp: null, code: null }), { status: 200, headers });
   }
 }
 
