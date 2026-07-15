@@ -18,8 +18,8 @@ const isActive = (href: string) =>
   currentPath === href || (href !== '/' && currentPath.startsWith(href));
 ---
 
+<!-- Sem pill "Início": a logo já leva à home (convenção universal) -->
 <nav class="nav-pills" aria-label="Navegação principal">
-  <a href="/" class:list={['pill', { active: currentPath === '/' }]} data-i18n="nav.inicio">Início</a>
   {categorias.map(c => (
     <a href={c.href} class:list={['pill', { active: isActive(c.href) }]}>{c.label}</a>
   ))}
