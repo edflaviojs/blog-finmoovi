@@ -70,7 +70,7 @@ const INLINE_STYLES = [
 const PROMPT_TEMPLATES = {
   cover: (topic) => COVER_STYLES[Math.floor(Math.random() * COVER_STYLES.length)](topic),
   glossary: (topic) =>
-    `Abstract elegant visualization representing the ${config.content.niche.en} concept of ${topic}, minimalist premium quality, soft gradient lighting, professional editorial style, geometric shapes blended with subtle human elements, neutral soft gradient background, cyan and magenta accent colors, purely abstract with clean unmarked surfaces`,
+    `Premium 3D editorial illustration representing the ${config.content.niche.en} concept of ${topic}, concrete symbolic objects as the main subject (choose what best fits the concept: stacked golden coins, rising 3D bar chart, glass piggy bank, balance scale, vault, growing plant in a coin jar), centered composition with strong focal point and depth of field, dark navy premium background, cyan and magenta rim lighting, soft studio light, glossy materials, high detail, professional financial magazine cover style, clean unmarked surfaces`,
   inline: (topic) => INLINE_STYLES[Math.floor(Math.random() * INLINE_STYLES.length)](topic),
 };
 

@@ -27,7 +27,11 @@
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">SELIC</span>
-        <span class="cotacao-value" id="cot-selic">14.75%</span>
+        <span class="cotacao-value" id="cot-selic">--</span>
+      </span>
+      <span class="cotacao-item" id="clima-item" style="display:none">
+        <span class="cotacao-label" id="clima-city">--</span>
+        <span class="cotacao-value" id="clima-temp">--</span>
       </span>
       <!-- Duplicado para loop infinito -->
       <span class="cotacao-item">
@@ -52,7 +56,11 @@
       </span>
       <span class="cotacao-item">
         <span class="cotacao-label">SELIC</span>
-        <span class="cotacao-value" id="cot-selic2">14.75%</span>
+        <span class="cotacao-value" id="cot-selic2">--</span>
+      </span>
+      <span class="cotacao-item" id="clima-item2" style="display:none">
+        <span class="cotacao-label" id="clima-city2">--</span>
+        <span class="cotacao-value" id="clima-temp2">--</span>
       </span>
     </div>
   </div>
@@ -66,18 +74,19 @@
       if (!res.ok) throw new Error('http ' + res.status);
       const d = await res.json();
 
-      updateCotacao('usdbrl', d.usdbrl ? d.usdbrl.value.toFixed(2) : '5.67', d.usdbrl ? d.usdbrl.pct : 0);
-      updateCotacao('eurbrl', d.eurbrl ? d.eurbrl.value.toFixed(2) : '6.18', d.eurbrl ? d.eurbrl.pct : 0);
+      // Sem dado real → "--". Nunca exibir valor congelado com cara de cotação real.
+      updateCotacao('usdbrl', d.usdbrl ? d.usdbrl.value.toFixed(2) : '--', d.usdbrl ? d.usdbrl.pct : null);
+      updateCotacao('eurbrl', d.eurbrl ? d.eurbrl.value.toFixed(2) : '--', d.eurbrl ? d.eurbrl.pct : null);
       if (d.btcusd) {
         const v = d.btcusd.value;
         updateCotacao('btcusd', v > 1000 ? Math.round(v).toLocaleString('en-US') : v.toFixed(2), d.btcusd.pct);
       } else {
-        updateCotacao('btcusd', '104,250', 0);
+        updateCotacao('btcusd', '--', null);
       }
       if (d.ibov) {
         updateCotacao('ibov', Math.round(d.ibov.value).toLocaleString('pt-BR'), d.ibov.pct);
       } else {
-        updateCotacao('ibov', '138.420', 0);
+        updateCotacao('ibov', '--', null);
       }
       if (d.selic !== null && d.selic !== undefined) {
         const selic = d.selic.toFixed(2);
@@ -87,11 +96,29 @@
         if (el2) el2.textContent = selic + '%';
       }
     } catch (e) {
-      // Proxy indisponível (ex.: dev local sem Functions) → valores estáticos
-      updateCotacao('usdbrl', '5.67', 0);
-      updateCotacao('eurbrl', '6.18', 0);
-      updateCotacao('btcusd', '104,250', 0);
-      updateCotacao('ibov', '138.420', 0);
+      // Proxy indisponível (ex.: dev local sem Functions) → mantém "--" inicial
+      // ou o último valor real recebido. Nunca inventar números.
+    }
+  }
+
+  async function fetchClima() {
+    try {
+      const res = await fetch('/api/clima');
+      if (!res.ok) return;
+      const d = await res.json();
+      if (!d || d.temp === null || d.temp === undefined) return;
+      const city = d.city || 'Local';
+      const temp = d.temp + '°C';
+      [['clima-city', 'clima-temp', 'clima-item'], ['clima-city2', 'clima-temp2', 'clima-item2']].forEach(([cityId, tempId, itemId]) => {
+        const cityEl = document.getElementById(cityId);
+        const tempEl = document.getElementById(tempId);
+        const itemEl = document.getElementById(itemId);
+        if (cityEl) cityEl.textContent = '🌤 ' + city;
+        if (tempEl) tempEl.textContent = temp;
+        if (itemEl) itemEl.style.display = '';
+      });
+    } catch (e) {
+      // Sem clima → item permanece oculto
     }
   }
 
@@ -110,6 +137,10 @@
       var text = sign + pctChange.toFixed(2) + '%';
       if (ch1) { ch1.textContent = text; ch1.className = 'cotacao-change ' + cls; }
       if (ch2) { ch2.textContent = text; ch2.className = 'cotacao-change ' + cls; }
+    } else {
+      // Fonte sem % de variação → limpa o badge em vez de manter um valor velho
+      if (ch1) { ch1.textContent = ''; ch1.className = 'cotacao-change'; }
+      if (ch2) { ch2.textContent = ''; ch2.className = 'cotacao-change'; }
     }
   }
 
@@ -117,6 +148,7 @@
   // espera o load e um momento ocioso, para não atrasar LCP/FCP.
   function startCotacoes() {
     fetchCotacoes();
+    fetchClima();
     setInterval(fetchCotacoes, 5 * 60 * 1000);
   }
   function scheduleCotacoes() {

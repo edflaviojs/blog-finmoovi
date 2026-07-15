@@ -10,6 +10,16 @@ const UPSTREAM = {
   ibovBrapi: 'https://brapi.dev/api/quote/%5EBVSP?token=demo',
   ibovAwesome: 'https://economia.awesomeapi.com.br/last/IBOV',
   selic: 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json',
+  // Fallbacks que aceitam requisições de data center (AwesomeAPI bloqueia tráfego
+  // vindo do edge da Cloudflare — funciona no navegador, falha no Worker)
+  erApi: 'https://open.er-api.com/v6/latest/USD',
+  coinbaseBtc: 'https://api.coinbase.com/v2/prices/BTC-USD/spot',
+};
+
+// AwesomeAPI/brapi rejeitam requisições sem User-Agent de navegador
+const BROWSER_HEADERS = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36',
+  'Accept': 'application/json',
 };
 
 function corsHeaders(request) {
@@ -29,6 +39,7 @@ function corsHeaders(request) {
 async function fetchJson(url, timeoutMs = 5000) {
   const res = await fetch(url, {
     signal: AbortSignal.timeout(timeoutMs),
+    headers: BROWSER_HEADERS,
     cf: { cacheTtl: 120, cacheEverything: true }, // cacheia upstream no edge
   });
   if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -38,13 +49,32 @@ async function fetchJson(url, timeoutMs = 5000) {
 async function buildData() {
   const out = { usdbrl: null, eurbrl: null, btcusd: null, ibov: null, selic: null };
 
-  // AwesomeAPI — USD, EUR, BTC
+  // AwesomeAPI — USD, EUR, BTC (com % de variação)
   try {
     const d = await fetchJson(UPSTREAM.awesome);
     if (d.USDBRL) out.usdbrl = { value: parseFloat(d.USDBRL.bid), pct: parseFloat(d.USDBRL.pctChange) };
     if (d.EURBRL) out.eurbrl = { value: parseFloat(d.EURBRL.bid), pct: parseFloat(d.EURBRL.pctChange) };
     if (d.BTCUSD) out.btcusd = { value: parseFloat(d.BTCUSD.bid), pct: parseFloat(d.BTCUSD.pctChange) };
-  } catch (e) { /* mantém null → cliente usa fallback estático */ }
+  } catch (e) { /* cai nos fallbacks abaixo */ }
+
+  // Fallback USD/EUR — open.er-api.com (sem % de variação; pct null = cliente não exibe)
+  if (!out.usdbrl || !out.eurbrl) {
+    try {
+      const d = await fetchJson(UPSTREAM.erApi);
+      if (d && d.rates && d.rates.BRL) {
+        if (!out.usdbrl) out.usdbrl = { value: d.rates.BRL, pct: null };
+        if (!out.eurbrl && d.rates.EUR) out.eurbrl = { value: d.rates.BRL / d.rates.EUR, pct: null };
+      }
+    } catch (e) { /* mantém null → cliente mostra "--" */ }
+  }
+
+  // Fallback BTC — Coinbase (sem % de variação)
+  if (!out.btcusd) {
+    try {
+      const d = await fetchJson(UPSTREAM.coinbaseBtc);
+      if (d && d.data && d.data.amount) out.btcusd = { value: parseFloat(d.data.amount), pct: null };
+    } catch (e) { /* mantém null → cliente mostra "--" */ }
+  }
 
   // IBOV — brapi.dev (token demo é instável; timeout curto), fallback AwesomeAPI
   try {
