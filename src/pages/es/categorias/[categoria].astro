@@ -3,10 +3,10 @@ import PortalCategory from '@components/categorias/PortalCategory.astro';
 import { getCategoryPaths } from '@/utils/category-data';
 
 export async function getStaticPaths() {
-  return getCategoryPaths('pt');
+  return getCategoryPaths('es');
 }
 
 const { category, posts, alternates } = Astro.props;
 ---
 
-<PortalCategory locale="pt" category={category} posts={posts} alternates={alternates} />
+<PortalCategory locale="es" category={category} posts={posts} alternates={alternates} />

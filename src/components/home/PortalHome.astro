@@ -177,7 +177,7 @@ const T = {
       <div class="section-head reveal">
         <span class="bar" aria-hidden="true"></span>
         <h2>{rows[0].label}</h2>
-        {locale === 'pt' && <a class="all" href={rows[0].href}>{T.verTudo}</a>}
+        <a class="all" href={rows[0].href}>{T.verTudo}</a>
       </div>
       <div class="row-carousel reveal" data-carousel-row data-direction="left">
         <div class="row-track">
@@ -245,7 +245,7 @@ const T = {
       <div class="section-head reveal">
         <span class="bar" aria-hidden="true"></span>
         <h2>{rows[1].label}</h2>
-        {locale === 'pt' && <a class="all" href={rows[1].href}>{T.verTudo}</a>}
+        <a class="all" href={rows[1].href}>{T.verTudo}</a>
       </div>
       <div class="row-carousel reveal" data-carousel-row data-direction="right">
         <div class="row-track">
@@ -455,11 +455,7 @@ const T = {
   .a-rail { grid-area: rail; }
 
   /* ===== Cards ===== */
-  /* Gradiente do portal fixo (paleta do mockup aprovado): independe de tema */
-  :global(:root) {
-    --portal-grad: linear-gradient(90deg, #00c8d7, #A91079);
-  }
-
+  /* --portal-grad vive em tokens.css (compartilhado com categorias/glossário/ferramentas) */
   .pcard {
     background: var(--bg-secondary);
     border: 1px solid var(--border-muted);

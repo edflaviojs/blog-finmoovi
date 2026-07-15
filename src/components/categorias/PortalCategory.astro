@@ -1,0 +1,198 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Header from '@components/header/Header.astro';
+import Footer from '@components/footer/Footer.astro';
+import AdSlot from '@components/home/AdSlot.astro';
+import { imgSrcset } from '@/utils/responsive-image';
+import type { Locale, HomeCard } from '@/utils/home-data';
+
+/**
+ * Página de categoria estilo portal (Fase 3 do redesign): destaque grande +
+ * grade de cards + banner promo + lista compacta, herdando o visual da home.
+ * UM componente para os 3 idiomas — os [categoria].astro são invólucros finos.
+ */
+interface Props {
+  locale: Locale;
+  category: string;
+  posts: HomeCard[];
+  alternates?: { pt?: string; en?: string; es?: string };
+}
+const { locale, category, posts, alternates } = Astro.props;
+
+// Nomes completos por idioma. Os de PT são os MESMOS títulos que a página
+// antiga usava — preserva <title>/description já indexados (SEO).
+const FULL_LABEL: Record<Locale, Record<string, string>> = {
+  pt: { dicas: 'Dicas Financeiras', orcamento: 'Orçamento', investimentos: 'Investimentos', cotacoes: 'Cotações & Mercado', ferramentas: 'Ferramentas', glossario: 'Glossário' },
+  en: { dicas: 'Financial Tips', orcamento: 'Budget', investimentos: 'Investments', cotacoes: 'Quotes & Market', ferramentas: 'Tools', glossario: 'Glossary' },
+  es: { dicas: 'Consejos Financieros', orcamento: 'Presupuesto', investimentos: 'Inversiones', cotacoes: 'Cotizaciones y Mercado', ferramentas: 'Herramientas', glossario: 'Glosario' },
+};
+const categoryName = FULL_LABEL[locale][category] || category;
+
+const T = {
+  pt: {
+    title: `${categoryName} - Artigos e Dicas`,
+    desc: `Todos os artigos sobre ${categoryName.toLowerCase()}. Dicas práticas e educação financeira.`,
+    artigo: 'artigo', artigos: 'artigos', mais: 'Mais artigos', minLeitura: 'min de leitura',
+  },
+  en: {
+    title: `${categoryName} - Articles and Tips`,
+    desc: `All articles about ${categoryName.toLowerCase()}. Practical tips and financial education.`,
+    artigo: 'article', artigos: 'articles', mais: 'More articles', minLeitura: 'min read',
+  },
+  es: {
+    title: `${categoryName} - Artículos y Consejos`,
+    desc: `Todos los artículos sobre ${categoryName.toLowerCase()}. Consejos prácticos y educación financiera.`,
+    artigo: 'artículo', artigos: 'artículos', mais: 'Más artículos', minLeitura: 'min de lectura',
+  },
+}[locale];
+
+const localeTag = locale === 'pt' ? 'pt-BR' : locale === 'es' ? 'es-ES' : 'en-US';
+const fmtLong = (d: Date) => d.toLocaleDateString(localeTag, { day: '2-digit', month: 'long', year: 'numeric' });
+const fmtShort = (d: Date) => d.toLocaleDateString(localeTag, { day: 'numeric', month: 'short' });
+
+const destaque = posts[0];
+const grade = posts.slice(1, 7);
+const resto = posts.slice(7, 19);
+---
+
+<BaseLayout title={T.title} description={T.desc} alternates={alternates}>
+  <Header />
+
+  <main class="cat-page">
+    <div class="container">
+      <div class="section-head head-top">
+        <span class="bar" aria-hidden="true"></span>
+        <h1>{categoryName}</h1>
+        <span class="count">{posts.length} {posts.length === 1 ? T.artigo : T.artigos}</span>
+      </div>
+
+      {destaque && (
+        <article class="pcard pcard-hero">
+          <a href={destaque.href}>
+            <div class="pcard-thumb hero-thumb">
+              {destaque.image
+                ? <img src={destaque.image} srcset={imgSrcset(destaque.image)} sizes="(min-width: 1024px) 1100px, 100vw" alt={destaque.imageAlt || destaque.title} loading="eager" fetchpriority="high" width="800" height="343" />
+                : <div class="pcard-ph"></div>}
+            </div>
+            <div class="pcard-body">
+              <h2 class="hero-title">{destaque.title}</h2>
+              {destaque.description && <p class="hero-desc">{destaque.description}</p>}
+              <div class="meta">
+                <time datetime={destaque.date.toISOString()}>{fmtLong(destaque.date)}</time>
+                {destaque.readingTime && <span> · {destaque.readingTime} {T.minLeitura}</span>}
+              </div>
+            </div>
+          </a>
+        </article>
+      )}
+
+      {grade.length > 0 && (
+        <div class="cat-grid">
+          {grade.map((c) => (
+            <article class="pcard">
+              <a href={c.href}>
+                <div class="pcard-thumb">
+                  {c.image
+                    ? <img src={c.image} srcset={imgSrcset(c.image)} sizes="(min-width: 768px) 400px, 100vw" alt={c.imageAlt || c.title} loading="lazy" width="400" height="225" />
+                    : <div class="pcard-ph"></div>}
+                </div>
+                <div class="pcard-body">
+                  <h3>{c.title}</h3>
+                  <div class="meta"><time datetime={c.date.toISOString()}>{fmtShort(c.date)}</time></div>
+                </div>
+              </a>
+            </article>
+          ))}
+        </div>
+      )}
+
+      <div class="promo-wrap">
+        <AdSlot locale={locale} variant="strip" />
+      </div>
+
+      {resto.length > 0 && (
+        <>
+          <div class="section-head">
+            <span class="bar" aria-hidden="true"></span>
+            <h2>{T.mais}</h2>
+          </div>
+          <div class="mini-wrap">
+            {resto.map((c) => (
+              <a class="mini" href={c.href}>
+                <div class="mini-thumb">
+                  {c.image
+                    ? <img src={c.image} srcset={imgSrcset(c.image)} sizes="92px" alt="" loading="lazy" width="92" height="66" />
+                    : <div class="pcard-ph"></div>}
+                </div>
+                <div>
+                  <h3>{c.title}</h3>
+                  <div class="meta"><time datetime={c.date.toISOString()}>{fmtShort(c.date)}</time></div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .cat-page { padding: var(--space-6) 0 var(--space-16); }
+
+  /* ===== Cabeçalho de seção (mesma linguagem da home) ===== */
+  .section-head { display: flex; align-items: baseline; gap: var(--space-3); margin: var(--space-10) 0 var(--space-4); }
+  .section-head.head-top { margin-top: var(--space-4); margin-bottom: var(--space-5); }
+  .section-head h1 { margin: 0; font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.02em; color: var(--text-primary); }
+  .section-head h2 { margin: 0; font-size: 21px; letter-spacing: -0.02em; color: var(--text-primary); }
+  .section-head .bar { width: 34px; height: 4px; border-radius: 2px; background: var(--portal-grad); align-self: center; flex-shrink: 0; }
+  .section-head .count { margin-left: auto; color: var(--text-tertiary); font-size: var(--text-sm); white-space: nowrap; }
+
+  /* ===== Cards (mesma linguagem da home) ===== */
+  .pcard {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-muted);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .pcard:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .pcard > a { display: flex; flex-direction: column; height: 100%; }
+  .pcard-thumb { aspect-ratio: 16 / 9; overflow: hidden; background: var(--bg-tertiary); }
+  .hero-thumb { aspect-ratio: 21 / 9; }
+  .pcard-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.35s ease; }
+  .pcard:hover .pcard-thumb img { transform: scale(1.06); }
+  .pcard-ph { width: 100%; height: 100%; background: linear-gradient(120deg, var(--bg-tertiary), var(--bg-elevated)); }
+  .pcard-body { padding: var(--space-4) var(--space-5) var(--space-5); flex: 1; }
+  .pcard h3 { margin: var(--space-1) 0; font-size: 17px; line-height: 1.3; letter-spacing: -0.01em; color: var(--text-primary); }
+  .meta { margin-top: var(--space-2); font-size: var(--text-xs); color: var(--text-tertiary); }
+
+  .hero-title { margin: var(--space-1) 0 var(--space-2); font-size: clamp(22px, 2.6vw, 32px); line-height: 1.15; letter-spacing: -0.02em; text-wrap: balance; color: var(--text-primary); }
+  .hero-desc { margin: 0; color: var(--text-secondary); font-size: var(--text-sm); }
+
+  .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); margin-top: var(--space-5); }
+
+  .promo-wrap { margin: var(--space-10) 0 0; }
+
+  /* ===== Lista compacta (mesma linguagem da home) ===== */
+  .mini-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0 var(--space-10); }
+  .mini { display: flex; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--border-muted); align-items: center; }
+  .mini-thumb { width: 92px; height: 66px; border-radius: var(--radius-md); flex-shrink: 0; overflow: hidden; background: var(--bg-tertiary); }
+  .mini-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .mini h3 { margin: 0; font-size: 15.5px; line-height: 1.3; letter-spacing: -0.01em; color: var(--text-primary); }
+  .mini:hover h3 { color: var(--accent-primary); }
+  .mini .meta { margin-top: 3px; }
+
+  @media (max-width: 900px) {
+    .cat-grid { grid-template-columns: 1fr 1fr; }
+    .mini-wrap { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 560px) {
+    .cat-grid { grid-template-columns: 1fr; }
+    .section-head.head-top { flex-wrap: wrap; }
+  }
+</style>
