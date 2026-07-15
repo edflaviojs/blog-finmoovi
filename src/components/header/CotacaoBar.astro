@@ -17,7 +17,7 @@ const posts = await getCollection('posts', ({ data }) => !data.draft && data.loc
 const latest = posts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())[0];
 const latestUrl = latest ? `${localePrefix}/posts/${latest.slug}` : null;
 const latestTitle = latest
-  ? (latest.data.title.length > 38 ? latest.data.title.slice(0, 38).trim() + '…' : latest.data.title)
+  ? (latest.data.title.length > 28 ? latest.data.title.slice(0, 28).trim() + '…' : latest.data.title)
   : null;
 
 const labels = {
@@ -244,7 +244,11 @@ const COPIES = [0, 1, 2, 3];
 
   .cotacao-track {
     display: flex;
-    animation: ticker 35s linear infinite;
+    /* CRÍTICO: sem max-content a track herda a largura da TELA e o
+       translateX(-25%) desloca 25% do viewport — nunca fecha o loop.
+       Com max-content, -25% = exatamente 1 dos 4 grupos = emenda perfeita. */
+    width: max-content;
+    animation: ticker 25s linear infinite;
     white-space: nowrap;
   }
 
