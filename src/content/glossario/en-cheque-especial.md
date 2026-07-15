@@ -1,6 +1,7 @@
 ---
 term: "Overdraft"
 image: "/images/glossario/en-cheque-especial.svg"
+imageAlt: "Green and orange candlestick chart on black background with thin border."
 definition: "A pre-approved credit line linked to your checking account. One of the most expensive forms of credit in Brazil."
 category: "credito"
 locale: "en"

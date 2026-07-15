@@ -4,6 +4,7 @@ definition: "Bull Market e Bear Market son términos usados para describir las t
 category: "mercado"
 locale: "es"
 image: "/images/glossario/bull-market-e-bear-market.webp"
+imageAlt: "Dos figuras geométricas de un oso rosa y otro azul enfrentadas en oscuridad."
 relatedTerms: ["Risco","Investimento","Rentabilidade"]
 publishedAt: 2026-06-06
 ---

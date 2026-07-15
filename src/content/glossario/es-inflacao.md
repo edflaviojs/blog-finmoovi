@@ -1,6 +1,7 @@
 ---
 term: "Inflación"
 image: "/images/glossario/es-inflacao.svg"
+imageAlt: "Gráfico lineal con puntos de datos en tonos de azul y morado sobre fondo negro."
 definition: "El aumento general y continuo de los precios de bienes y servicios. Reduce el poder adquisitivo del dinero con el tiempo."
 category: "basico"
 locale: "es"

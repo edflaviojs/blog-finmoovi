@@ -1,6 +1,7 @@
 ---
 term: "PIX"
 image: "/images/glossario/en-pix.svg"
+imageAlt: "Black background with scattered blue and orange dots and a dotted blue line."
 definition: "Brazil's instant payment system created by the Central Bank. Allows free transfers 24/7 between any bank accounts."
 category: "basico"
 locale: "en"

@@ -1,6 +1,7 @@
 ---
 term: "Quitação Antecipada"
 image: "/images/glossario/quitacao-antecipada.svg"
+imageAlt: "Gráfico de linhas em tons de azul e roxo em fundo preto."
 definition: "Pagamento total ou parcial de uma dívida antes do prazo previsto. Garante desconto nos juros futuros e é um direito do consumidor."
 category: "credito"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]

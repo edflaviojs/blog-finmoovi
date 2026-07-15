@@ -4,6 +4,7 @@ definition: "Understand what cdb is, how it works, advantages, risks and practic
 title: "cdb - Financial Glossary"
 description: "Understand what cdb is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/cdb.webp"
+imageAlt: "Pink and blue letters CDB on a light blue and pink background."
 category: "basico"
 tags: ["cdb", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

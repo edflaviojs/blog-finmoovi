@@ -2,6 +2,7 @@
 title: "Do you lose track of your spending when traveling using different currencies?"
 description: "Find out how to keep your budget on track even when swapping euros, dollars, and reais during your trip. Meet FinMoovi's multi‑currency feature."
 image: "/images/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-.webp"
+imageAlt: "Three laptops and monitor on a desk with a coffee mug and plant nearby."
 category: "ferramentas"
 locale: "en"
 tags: ["travel","spending control","multi‑currency","FinMoovi","personal finance","travel budget","financial app","multi‑currency","travel","finance","finmoovi"]

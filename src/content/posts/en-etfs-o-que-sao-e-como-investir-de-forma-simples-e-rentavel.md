@@ -2,6 +2,7 @@
 title: "ETFs: What They Are and How to Invest Simply and Profitably"
 description: "Discover what ETFs are, how they work, their advantages and cautions. See practical examples and take the first steps to invest safely and with diversification."
 image: "/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel.webp"
+imageAlt: "Multicolored stock market graph on dark background with ETF text."
 category: "investimentos"
 locale: "en"
 tags: ["ETFs","fund investment","stock market","diversification","risk and return","investment portfolio","personal finance","what is an ETF","how to invest in ETFs","ETFs for beginners"]

@@ -2,6 +2,7 @@
 title: "Você perde o controle dos gastos quando viaja usando moedas diferentes?"
 description: "Descubra como manter seu orçamento em dia mesmo trocando euros, dólares e reais durante a viagem. Conheça o recurso multi‑moeda do FinMoovi."
 image: "/images/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-.webp"
+imageAlt: "Três dispositivos eletrônicos com imagens de ondas coloridas sobre uma mesa com xícara."
 category: "ferramentas"
 locale: "pt"
 tags: ["viagem","controle de gastos","multi‑moeda","FinMoovi","finanças pessoais","orçamento viagem","app financeiro","multimoeda","viagens","financeiro","finmoovi"]
