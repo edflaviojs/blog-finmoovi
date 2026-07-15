@@ -15,7 +15,9 @@ const blogTitle = `${brand.name} ${brand.blogSuffix}`;
 
   <header class="header">
     <div class="container header-inner">
-      <a href="/" class="logo" aria-label={`${blogTitle} - Home`}>
+      <!-- sem aria-label: o texto visível "FinMooviBlog" é o nome acessível
+           (o antigo "... - Home" não continha o texto visível → axe reprovava) -->
+      <a href="/" class="logo">
         <div class="logo-icon">
           <svg width="20" height="20" viewBox="0 0 64 64" fill="none">
             <path d={brand.logo.svgPath} stroke="url(#logoGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>

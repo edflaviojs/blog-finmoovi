@@ -69,7 +69,9 @@ const socials = [
       </div>
 
       <div class="footer-section">
-        <h4 class="footer-title" data-i18n="footer.blog">Blog</h4>
+        <!-- p, não heading: títulos decorativos do rodapé quebravam a ordem
+             h2→h4 apontada pelo Lighthouse (heading-order) -->
+        <p class="footer-title" data-i18n="footer.blog">Blog</p>
         <ul class="footer-list">
           {footerLinks.blog.map(link => (
             <li><a href={link.href} data-i18n={link.i18n}>{link.label}</a></li>
@@ -78,7 +80,7 @@ const socials = [
       </div>
 
       <div class="footer-section">
-        <h4 class="footer-title" data-i18n="footer.app">App</h4>
+        <p class="footer-title" data-i18n="footer.app">App</p>
         <ul class="footer-list">
           {footerLinks.app.map(link => (
             <li><a href={link.href} data-i18n={link.i18n}>{link.label}</a></li>
@@ -87,7 +89,7 @@ const socials = [
       </div>
 
       <div class="footer-section">
-        <h4 class="footer-title" data-i18n="footer.legal">Legal</h4>
+        <p class="footer-title" data-i18n="footer.legal">Legal</p>
         <ul class="footer-list">
           {footerLinks.legal.map(link => (
             <li><a href={link.href} data-i18n={link.i18n}>{link.label}</a></li>
@@ -98,7 +100,11 @@ const socials = [
 
     <div class="footer-socials">
       {socials.map(s => (
-        <a href={s.href} target="_blank" rel="noopener" aria-label={s.label}>{socialInitials[s.label] || s.label.slice(0, 2).toUpperCase()}</a>
+        <a href={s.href} target="_blank" rel="noopener" aria-label={`${socialInitials[s.label] || s.label.slice(0, 2).toUpperCase()} · ${s.label}`}>
+          <!-- o aria-label começa pela inicial visível ("IG · Instagram"):
+               o axe exige o texto visível contido no nome acessível -->
+          {socialInitials[s.label] || s.label.slice(0, 2).toUpperCase()}
+        </a>
       ))}
     </div>
 
@@ -182,12 +188,13 @@ const socials = [
     line-height: 1.65;
   }
 
+  /* Tons do rodapé calibrados p/ contraste >=4.5:1 sobre #0a0e14 (WCAG AA) */
   .footer-title {
     margin: 0 0 var(--space-4);
     font-size: 11px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: #6b7a8b;
+    color: #8b9aab;
     font-weight: 700;
   }
 
@@ -244,14 +251,14 @@ const socials = [
     border-top: 1px solid #1a2330;
     text-align: center;
     font-size: var(--text-xs);
-    color: #6b7a8b;
+    color: #8b9aab;
     display: flex;
     flex-direction: column;
     gap: var(--space-1);
   }
 
   .footer-disclaimer {
-    color: #5d6b7a;
+    color: #7e8c9c;
     font-size: 11.5px;
     max-width: 60ch;
     margin: 0 auto;
@@ -289,14 +296,14 @@ const socials = [
       font-size: 12px;
       max-width: 30ch;
       line-height: 1.6;
-      color: #6c7a8a;
+      color: #8494a5;
     }
 
     .footer-title {
       margin-bottom: var(--space-3);
       font-size: 9.5px;
       letter-spacing: 0.28em;
-      color: #5b6b7a;
+      color: #8b9aab;
     }
 
     .footer-title::after {
@@ -341,7 +348,7 @@ const socials = [
       width: 29px;
       height: 29px;
       font-size: 9px;
-      color: #71808f;
+      color: #8494a5;
       border-color: rgba(255, 255, 255, 0.08);
     }
 
@@ -349,9 +356,9 @@ const socials = [
       margin-top: var(--space-4);
       padding-top: var(--space-4);
       font-size: 10.5px;
-      color: #56636f;
+      color: #8494a5;
     }
 
-    .footer-disclaimer { font-size: 10px; color: #4c5865; }
+    .footer-disclaimer { font-size: 10px; color: #7e8c9c; }
   }
 </style>
