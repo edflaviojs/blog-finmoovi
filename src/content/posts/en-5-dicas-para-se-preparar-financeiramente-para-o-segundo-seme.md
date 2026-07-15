@@ -38,7 +38,7 @@ Now that you understand your current financial situation, it's time to define fi
 Now that you have defined financial goals, it's time to create a [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) for the second half of the year. This includes deciding how you'll allocate your income to achieve your goals. Here are some tips to help you create a [budget](/en/posts/en-how-to-create-personal-budget):
 1. **Allocate 50% of your income to basic needs**: This includes expenses for housing, food, transportation, and essential services.
 2. **Allocate 30% of your income to desires**: This includes expenses for leisure, entertainment, and hobbies.
-3. **Allocate 20% of your income to financial goals**: This includes expenses for savings, debts, and emergency funds.
+3. **Allocate 20% of your income to financial goals**: This includes expenses for [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet), debts, and emergency funds.
 4. **Review your [budget](/en/posts/en-how-to-create-personal-budget) regularly**: Use [FinMoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) to review your [budget](/en/posts/en-how-to-create-personal-budget) and make adjustments as needed.
 
 ## Managing Debt and Expenses

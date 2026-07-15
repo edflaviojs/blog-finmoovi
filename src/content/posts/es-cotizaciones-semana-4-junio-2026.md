@@ -33,7 +33,7 @@ La estabilidad del [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) puede
 
 ## Comentario sobre la [Selic](/es/glossario/es-selic) e Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ha sido un tema de gran interés en la semana. El Banco Central decidió mantener la tasa Selic en su nivel actual, lo que puede influir en las decisiones de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) de los brasileños. Una tasa Selic estable puede significar que los rendimientos de las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en reales pueden ser más atractivos, aunque también puede limitar el crecimiento económico si no se acompaña de medidas para estimular la inversión y el consumo.
+La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ha sido un tema de gran interés en la semana. El Banco Central decidió mantener la tasa Selic en su nivel actual, lo que puede influir en las decisiones de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) de los brasileños. Una tasa Selic estable puede significar que los rendimientos de las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en reales pueden ser más atractivos, aunque también puede limitar el crecimiento económico si no se acompaña de medidas para estimular la [inversión](/es/posts/es-tesouro-direto-para-iniciantes) y el consumo.
 
 ![Comentario sobre la Selic e Impacto en las Inversiones](/images/posts/es-cotizaciones-semana-4-junio-2026-inline-3.webp)
 

@@ -45,7 +45,7 @@ Start by checking your expenses over the past 6 months. This includes all expens
 After checking your expenses, adjust them according to your needs and goals. If you notice you're spending too much in one area, such as restaurants, try to reduce those expenses and reallocate the [money](/en/posts/en-creating-an-emergency-fund) to other areas, such as [savings](/en/posts/en-financial-education-for-children) or [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
 ### 3. Check Your Income
-Check your income over the past 6 months and adjust it according to your needs and goals. If you've received a salary increase, for example, you may want to increase your savings or [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
+Check your income over the past 6 months and adjust it according to your needs and goals. If you've received a salary increase, for example, you may want to increase your [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) or [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 
 ### 4. Adjust Your Investments
 If you have investments, such as [stocks](/en/glossario/en-acoes) or [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.

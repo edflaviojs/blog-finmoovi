@@ -23,8 +23,8 @@ A semana foi agitada nos mercados de câmbio e, como sempre, a taxa [Selic](/es/
 
 ### 1. [Dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) e euro: tendência da semana
 
-- **Dólar (USD/BRL) – R$ 5,11**  
-  O real ganhou um tiquinho contra o dólar ao longo dos últimos sete dias. Na segunda‑feira, a cotação estava em torno de R$ 5,15; até sexta‑feira já estava em R$ 5,11. A queda foi impulsionada pela notícia de que a Reserva Federal dos EUA manteve a taxa de [juros](/es/glossario/es-juros) estável, o que tirou um pouco da pressão de compra de dólares por investidores internacionais.
+- **[Dólar](/es/posts/es-cotizaciones-semana-3-junio-2026) (USD/BRL) – R$ 5,11**  
+  O real ganhou um tiquinho contra o [dólar](/es/posts/es-cotizaciones-semana-4-junio-2026) ao longo dos últimos sete dias. Na segunda‑feira, a cotação estava em torno de R$ 5,15; até sexta‑feira já estava em R$ 5,11. A queda foi impulsionada pela notícia de que a Reserva Federal dos EUA manteve a taxa de [juros](/es/glossario/es-juros) estável, o que tirou um pouco da pressão de compra de dólares por investidores internacionais.
 
 - **Euro (EUR/BRL) – R$ 5,83**  
   O euro também recuou, mas de forma mais discreta. Partiu de R$ 5,90 no início da semana e fechou em R$ 5,83. A zona do euro ainda lida com incertezas sobre a política monetária, e a falta de novidades fortes fez o euro perder apenas alguns centavos frente ao real.

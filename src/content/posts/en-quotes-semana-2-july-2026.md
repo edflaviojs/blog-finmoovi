@@ -41,14 +41,14 @@ Nesta segunda‑feira, o Copom decidiu manter a taxa [Selic](/en/posts/en-quotes
 
 
 
-1. **[Renda fixa](/en/glossario/en-renda-fixa)** – Os títulos públicos (Tesouro [Selic](/en/posts/en-quotes-semana-4-june-2026)) continuam rendendo próximo da taxa oficial, o que os mantém como “porto seguro” para quem quer preservar o capital sem muita exposição ao risco. Se você tem dinheiro guardado na [poupança](/en/glossario/en-poupanca), vale a pena migrar para o Tesouro Selic ou para CDBs de bancos sólidos que pagam um percentual do [CDI](/en/glossario/en-cdi).
+1. **[Renda fixa](/en/glossario/en-renda-fixa)** – Os títulos públicos (Tesouro [Selic](/en/posts/en-quotes-semana-4-june-2026)) continuam rendendo próximo da taxa oficial, o que os mantém como “porto seguro” para quem quer preservar o capital sem muita exposição ao risco. Se você tem dinheiro guardado na [poupança](/en/glossario/en-poupanca), vale a pena migrar para o Tesouro [Selic](/en/posts/en-quotes-semana-5-june-2026) ou para CDBs de bancos sólidos que pagam um percentual do [CDI](/en/glossario/en-cdi).
 
 2. **Renda variável** – Juros altos tendem a deixar as [ações](/en/glossario/en-acoes) mais caras, pois o custo de oportunidade de investir em empresas aumenta. Setores como consumo e varejo podem sentir pressão, enquanto utilities (energia, água) costumam ser mais resilientes. Se você tem carteira de ações, pense em reforçar posições em empresas que pagam dividendos consistentes – elas costumam se sair melhor quando a taxa está alta.
 
 ## 3. Dica Prática para o Investidor Individual
 
 **Use um app que consolide tudo em um só lugar.**  
-Eu costumo recomendar o **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)** como se fosse um amigo que entende de finanças. Ele permite acompanhar suas aplicações em reais, dólares e euros, além de mostrar a performance em tempo real. Assim, você vê de cara se a variação do dólar está afetando seu fundo de investimento no exterior ou se aquele [CDB](/en/glossario/en-cdb) está rendendo acima da Selic. A visualização integrada evita surpresas na hora de fazer a declaração de imposto.
+Eu costumo recomendar o **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)** como se fosse um amigo que entende de finanças. Ele permite acompanhar suas aplicações em reais, dólares e euros, além de mostrar a performance em tempo real. Assim, você vê de cara se a variação do dólar está afetando seu fundo de investimento no exterior ou se aquele [CDB](/en/glossario/en-cdb) está rendendo acima da [Selic](/en/posts/en-quotes-week-4-may-2026). A visualização integrada evita surpresas na hora de fazer a declaração de imposto.
 
 ## 4. O Que Esperar na Próxima Semana
 

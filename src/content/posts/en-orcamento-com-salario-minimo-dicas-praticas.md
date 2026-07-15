@@ -53,7 +53,7 @@ Variable expenses, such as transportation and eating out, can be challenging to 
 
 
 
-## Building Savings
+## Building [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet)
 Building savings is essential for dealing with unexpected expenses and achieving long-term financial goals. Here are some steps to get started:
 1. Set goals: Establish specific goals, such as creating an [emergency fund](/en/glossario/en-reserva-de-emergencia) or saving for a significant purchase.
 2. Automate: Set up automatic transfers from your checking account to your savings account.

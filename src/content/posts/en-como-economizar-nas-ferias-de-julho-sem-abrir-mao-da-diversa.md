@@ -25,7 +25,7 @@ seo:
 ---
 
 ## Introduction  
-July is the most anticipated month for anyone looking to escape the routine, but it’s also the period when prices tend to rise – airfare, hotels, and even the electricity bill for summer homes. If you earn around **R$ 3,000** a month, like most formal‑sector workers, it’s easy to blow past your budget and end the month with a red‑ink bank account. The good news is that, with a simple plan and a few habit tweaks, you can enjoy your vacation without compromising your finances. Below are seven steps that will turn your July trip into an economical and enjoyable experience.  
+July is the most anticipated month for anyone looking to escape the routine, but it’s also the period when prices tend to rise – airfare, hotels, and even the electricity bill for summer homes. If you earn around **R$ 3,000** a month, like most formal‑sector workers, it’s easy to blow past your budget and end the month with a red‑ink bank account. The good news is that, with a simple plan and a few habit tweaks, you can enjoy your [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) without compromising your finances. Below are seven steps that will turn your July trip into an economical and enjoyable experience.  
 
 ---  
 
@@ -125,7 +125,7 @@ If you’d spend R$ 80 on restaurants, the difference is **R$ 35** per day. 
 ## 7. Real‑time expense monitoring  
 
 ### How to stay on track  
-Even the best plan can hit unexpected bumps. Use **FinMoovi** to log every expense (even a few cents) and get alerts when you’re near your daily limit. The app also generates monthly reports that show where you could cut costs for your next trip.  
+Even the best plan can hit unexpected bumps. Use **[FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** to log every expense (even a few cents) and get alerts when you’re near your daily limit. The app also generates monthly reports that show where you could cut costs for your next trip.  
 
 ---  
 

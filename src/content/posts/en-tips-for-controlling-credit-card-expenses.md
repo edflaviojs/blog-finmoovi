@@ -31,7 +31,7 @@ To avoid problems, it's crucial to have a spending limit on your credit card and
 
 
 
-## Savings Tips
+## [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) Tips
 There are many ways to save [money](/en/posts/en-difference-between-investing-and-saving) and reduce credit card expenses. Here are some tips:
 * Shop at discount stores or during sales
 * Cook at home instead of eating out

@@ -31,7 +31,7 @@ En lo que respecta a las tasas de cambio, el [dólar](/es/posts/es-cotizaciones-
 
 ## La [Selic](/es/glossario/es-selic) y su Impacto en las [Inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 
-La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) brasileña fijada por el Comité de Política Monetaria (COPOM) del Banco Central, ha sido un tema de gran interés en la semana. Aunque no hubo cambios significativos en la tasa Selic durante esta semana, es fundamental entender su impacto en las inversiones. La Selic influencia directamente las tasas de interés de los préstamos y depósitos en el país, lo que a su vez afecta la rentabilidad de ciertas inversiones, como los títulos de renta fija. Los inversores deben considerar estos movimientos al tomar decisiones sobre sus carteras de inversiones.
+La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) brasileña fijada por el Comité de Política Monetaria (COPOM) del Banco Central, ha sido un tema de gran interés en la semana. Aunque no hubo cambios significativos en la tasa Selic durante esta semana, es fundamental entender su impacto en las inversiones. La Selic influencia directamente las tasas de interés de los préstamos y depósitos en el país, lo que a su vez afecta la rentabilidad de ciertas inversiones, como los títulos de [renta fija](/es/posts/es-tesouro-direto-para-iniciantes). Los inversores deben considerar estos movimientos al tomar decisiones sobre sus carteras de inversiones.
 
 ![La Selic y su Impacto en las Inversiones](/images/posts/es-cotizaciones-semana-1-julio-2026-inline-3.webp)
 

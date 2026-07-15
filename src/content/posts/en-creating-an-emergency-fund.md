@@ -41,7 +41,7 @@ Creating an emergency fund requires discipline and patience. Here are some strat
 - Set a monthly value to deposit into the fund
 - Automate the deposits to make it easier to maintain the routine
 - Avoid withdrawing [money](/en/posts/en-financial-planning-for-couples) from the fund for non-essential expenses
-- Consider opening a separate savings account for the emergency fund, to make it harder to access the [money](/en/posts/en-financial-planning-for-freelancers) for [daily expenses](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos)
+- Consider opening a separate [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) account for the emergency fund, to make it harder to access the [money](/en/posts/en-financial-planning-for-freelancers) for [daily expenses](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos)
 
 Remember that the key is to start small and increase the fund over time. Even R$ 100 per month can make a big difference over a year.
 

@@ -19,7 +19,7 @@ seo:
 
 ## Resumo da Semana (06/07 – 13/07/2026)
 
-A semana passou sem grandes surpresas nos principais indicadores, mas alguns movimentos ainda merecem atenção, principalmente se você tem [dinheiro](/posts/cashback-inteligente) guardado em dólar ou euro, ou pensa em aplicar em [renda fixa](/glossario/renda-fixa). Vamos ao que realmente importa para o seu bolso.
+A semana passou sem grandes surpresas nos principais indicadores, mas alguns movimentos ainda merecem atenção, principalmente se você tem [dinheiro](/posts/cashback-inteligente) guardado em [dólar](/posts/cotacoes-semana-1-julho-2026) ou euro, ou pensa em aplicar em [renda fixa](/glossario/renda-fixa). Vamos ao que realmente importa para o seu bolso.
 
 ![Resumo da Semana (06/07 – 13/07/2026)](/images/posts/cotacoes-semana-2-julho-2026-inline-1.webp)
 
@@ -43,7 +43,7 @@ A taxa Selic continuou em **13,75 % ao ano**, nível que se manteve após a ú
 
 1. **[Tesouro Direto](/glossario/tesouro-direto) e CDBs** – Os títulos atrelados à Selic ([Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), CDBs pós‑fixados) continuam rendendo próximo ao índice, o que ainda os torna a opção mais segura e rentável para quem quer preservar o capital.  
 
-2. **[Fundos](/glossario/fundos) de [Renda Variável](/glossario/renda-variavel)** – O custo de oportunidade de manter dinheiro em [ações](/glossario/acoes) ou [fundos imobiliários](/glossario/fundos-imobiliarios) sobe, já que a taxa livre de risco está alta. Se você ainda não tem uma [reserva de emergência](/glossario/reserva-de-emergencia) bem estruturada, pode ser mais prudente priorizar a segurança antes de buscar retornos mais agressivos.  
+2. **[Fundos](/glossario/fundos) de [Renda Variável](/glossario/renda-variavel)** – O custo de oportunidade de manter [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) em [ações](/glossario/acoes) ou [fundos imobiliários](/glossario/fundos-imobiliarios) sobe, já que a taxa livre de risco está alta. Se você ainda não tem uma [reserva de emergência](/glossario/reserva-de-emergencia) bem estruturada, pode ser mais prudente priorizar a segurança antes de buscar retornos mais agressivos.  
 
 Em termos práticos: quem já tem parte do patrimônio em títulos atrelados à Selic está bem posicionado; quem ainda não tem reserva, deve focar em produtos de baixo risco antes de abrir mão da segurança.
 

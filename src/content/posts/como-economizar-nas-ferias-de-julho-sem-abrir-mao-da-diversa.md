@@ -25,7 +25,7 @@ seo:
 ---
 
 ## Introdução
-Julho é o mês mais esperado por quem quer fugir da rotina, mas também o período em que os preços tendem a subir – passagens aéreas, hotéis e até a conta de energia nas casas de veraneio. Se você ganha cerca de **R$ 3.000** por mês, como a maioria dos trabalhadores formais, pode ser fácil sair do orçamento e acabar no fim do mês com a conta bancária no vermelho. A boa notícia é que, com um planejamento simples e algumas trocas de hábito, é possível curtir as férias sem comprometer suas finanças. A seguir, apresento sete passos que vão transformar a sua viagem de julho em uma experiência econômica e prazerosa.
+Julho é o mês mais esperado por quem quer fugir da rotina, mas também o período em que os preços tendem a subir – passagens aéreas, hotéis e até a conta de energia nas casas de veraneio. Se você ganha cerca de **R$ 3.000** por mês, como a maioria dos trabalhadores formais, pode ser fácil sair do orçamento e acabar no fim do mês com a conta bancária no vermelho. A boa notícia é que, com um planejamento simples e algumas trocas de hábito, é possível curtir as [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) sem comprometer suas finanças. A seguir, apresento sete passos que vão transformar a sua viagem de julho em uma experiência econômica e prazerosa.
 
 ---
 
@@ -77,7 +77,7 @@ Para trajetos de até 800 km, o ônibus costuma ser 30 % mais barato que o c
 - Viagem 600 km de carro: combustível (R$ 250) + pedágios (R$ 70) = R$ 320
 - Passagem de ônibus: R$ 180
 
-A economia aqui pode chegar a **R$ 140** por pessoa. Se estiver viajando em grupo, vale ainda mais, pois o custo do carro pode ser dividido, mas ainda assim o ônibus costuma ser a opção mais barata.
+A [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) aqui pode chegar a **R$ 140** por pessoa. Se estiver viajando em grupo, vale ainda mais, pois o custo do carro pode ser dividido, mas ainda assim o ônibus costuma ser a opção mais barata.
 
 ---
 

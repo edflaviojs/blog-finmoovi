@@ -41,7 +41,7 @@ Finalmente, é importante aprender a dizer não a compras por impulso. Isso pode
 
 
 ## Comece hoje
-Agora que você sabe como evitar compras por impulso, é hora de começar a agir. Lembre-se de que o [controle de gastos](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) é um processo contínuo, e que é importante ser paciente e consistente. Com o tempo e a prática, você pode desenvolver hábitos de gasto mais saudáveis e alcançar seus objetivos financeiros. Para mais informações sobre [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), você pode visitar o [Investopedia](https://www.investopedia.com).
+Agora que você sabe [como evitar compras por impulso](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso), é hora de começar a agir. Lembre-se de que o [controle de gastos](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) é um processo contínuo, e que é importante ser paciente e consistente. Com o tempo e a prática, você pode desenvolver hábitos de gasto mais saudáveis e alcançar seus objetivos financeiros. Para mais informações sobre [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), você pode visitar o [Investopedia](https://www.investopedia.com).
 
 ![Aprenda a dizer não](/images/posts/evite-compras-por-impulso-4.webp)
 

@@ -25,14 +25,14 @@ seo:
 ---
 
 ## Introducción  
-Julio es el mes más esperado por quien quiere escapar de la rutina, pero también el periodo en que los precios tienden a subir: pasajes aéreos, hoteles e incluso la cuenta de energía en las casas de veraneo. Si ganas alrededor de **R$ 3.000** al mes, como la mayoría de los trabajadores formales, puede ser fácil salir del presupuesto y terminar el mes con la cuenta bancaria en rojo. La buena noticia es que, con una planificación sencilla y algunos cambios de hábito, es posible disfrutar de las vacaciones sin comprometer tus finanzas. A continuación, presento siete pasos que transformarán tu viaje de julio en una experiencia económica y placentera.  
+Julio es el mes más esperado por quien quiere escapar de la rutina, pero también el periodo en que los precios tienden a subir: pasajes aéreos, hoteles e incluso la cuenta de energía en las casas de veraneo. Si ganas alrededor de **R$ 3.000** al mes, como la mayoría de los trabajadores formales, puede ser fácil salir del presupuesto y terminar el mes con la cuenta bancaria en rojo. La buena noticia es que, con una planificación sencilla y algunos cambios de hábito, es posible disfrutar de las [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) sin comprometer tus finanzas. A continuación, presento siete pasos que transformarán tu viaje de julio en una experiencia económica y placentera.  
 
 ---  
 
 ## 1. Define un techo de gasto antes de reservar  
 
 ### ¿Por qué es importante?  
-La ansiedad de conseguir la “mejor oferta” suele llevar a compras impulsivas. Empieza anotando cuánto puedes destinar al ocio sin tocar tu reserva de emergencia (generalmente de 3 a 6 meses de gastos).  
+La ansiedad de conseguir la “mejor oferta” suele llevar a compras impulsivas. Empieza anotando cuánto puedes destinar al ocio sin tocar tu reserva de emergencia (generalmente de 3 a 6 meses de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)).  
 
 ![1. Defina un techo de gasto antes de reservar](/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa-2.webp)  
 

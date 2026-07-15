@@ -34,7 +34,7 @@ Here's an example of how you can categorize your expenses:
 
 
 
-**Practical tip:** Try to reduce your variable expenses by 10% to 20% per month to increase your savings.
+**Practical tip:** Try to reduce your variable expenses by 10% to 20% per month to increase your [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet).
 
 ## [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and Emergency Fund
 In addition to saving, it's essential to think about [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) for the future. This can include putting [money](/en/posts/en-creating-an-emergency-fund) into a [savings account](https://www.bcb.gov.br) or investing in [treasury bonds](https://www.tesourodireto.com.br). The emergency fund should be sufficient to cover 3 to 6 months of expenses, in case you don't have income for a period.
