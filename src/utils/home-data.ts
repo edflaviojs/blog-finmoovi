@@ -94,7 +94,8 @@ export async function getHomeData(locale: Locale) {
   const rows: { slug: string; label: string; href: string; cards: HomeCard[] }[] = [];
   for (const cat of config.content.categoryNav) {
     if (rows.length >= 2) break;
-    const cards = posts.filter(p => p.data.category === cat.slug).slice(0, 4).map(p => toCard(prefix, p));
+    // até 8 cards: as fileiras são carrosséis-esteira e precisam de estoque p/ girar
+    const cards = posts.filter(p => p.data.category === cat.slug).slice(0, 8).map(p => toCard(prefix, p));
     if (cards.length >= 2) {
       rows.push({ slug: cat.slug, label: categoryLabel(locale, cat.slug), href: `/categorias/${cat.slug}`, cards });
     }
