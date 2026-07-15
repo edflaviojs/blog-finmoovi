@@ -35,9 +35,6 @@ export const GET: APIRoute = async () => {
     { url: '/ferramentas/conversor-moedas', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/ferramentas/simulador-investimento', priority: '0.8', changefreq: 'monthly', lastmod: today },
     { url: '/ferramentas/calculadora-reserva', priority: '0.8', changefreq: 'monthly', lastmod: today },
-    { url: '/categorias/dicas', priority: '0.7', changefreq: 'daily', lastmod: today },
-    { url: '/categorias/orcamento', priority: '0.7', changefreq: 'weekly', lastmod: today },
-    { url: '/categorias/cotacoes', priority: '0.7', changefreq: 'weekly', lastmod: today },
     { url: '/autor/ed-flavio', priority: '0.6', changefreq: 'weekly', lastmod: today },
     { url: '/en/author/ed-flavio', priority: '0.5', changefreq: 'weekly', lastmod: today },
     { url: '/es/autor/ed-flavio', priority: '0.5', changefreq: 'weekly', lastmod: today },
@@ -87,6 +84,23 @@ export const GET: APIRoute = async () => {
     })),
   ];
 
+  // Categorias — dinâmicas (Fase 3: /categorias existe em pt/en/es). Mesma
+  // regra das páginas: só entra idioma com ≥1 post na categoria, e o hreflang
+  // só aponta para os idiomas que também têm a categoria.
+  const postsByLocale: Record<string, typeof posts> = { pt: ptPosts, en: enPosts, es: esPosts };
+  const categoryPages = locales.flatMap(locale => {
+    const cats = [...new Set(postsByLocale[locale].map(p => p.data.category))];
+    return cats.map(cat => ({
+      url: `${localePrefixes[locale]}/categorias/${cat}`,
+      priority: '0.7',
+      changefreq: 'daily',
+      lastmod: today,
+      alternates: locales
+        .filter(l => postsByLocale[l].some(p => p.data.category === cat))
+        .map(l => ({ hreflang: l, href: `${site}${localePrefixes[l]}/categorias/${cat}` })),
+    }));
+  });
+
   const ptGlossario = glossario.filter(t => t.data.locale === 'pt' || (!t.data.locale && !t.slug.startsWith('en-') && !t.slug.startsWith('es-')));
   const enGlossario = glossario.filter(t => t.data.locale === 'en' || t.slug.startsWith('en-'));
   const esGlossario = glossario.filter(t => t.data.locale === 'es' || t.slug.startsWith('es-'));
@@ -115,7 +129,7 @@ export const GET: APIRoute = async () => {
     })),
   ];
 
-  const allPages = [...i18nStaticPages, ...ptStaticOnly, ...postPages, ...glossarioPages];
+  const allPages = [...i18nStaticPages, ...ptStaticOnly, ...categoryPages, ...postPages, ...glossarioPages];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
