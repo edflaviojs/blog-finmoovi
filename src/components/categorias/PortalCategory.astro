@@ -33,16 +33,19 @@ const T = {
     title: `${categoryName} - Artigos e Dicas`,
     desc: `Todos os artigos sobre ${categoryName.toLowerCase()}. Dicas práticas e educação financeira.`,
     artigo: 'artigo', artigos: 'artigos', mais: 'Mais artigos', minLeitura: 'min de leitura',
+    verTodos: (n: number) => `Ver todos os ${n} artigos`,
   },
   en: {
     title: `${categoryName} - Articles and Tips`,
     desc: `All articles about ${categoryName.toLowerCase()}. Practical tips and financial education.`,
     artigo: 'article', artigos: 'articles', mais: 'More articles', minLeitura: 'min read',
+    verTodos: (n: number) => `See all ${n} articles`,
   },
   es: {
     title: `${categoryName} - Artículos y Consejos`,
     desc: `Todos los artículos sobre ${categoryName.toLowerCase()}. Consejos prácticos y educación financiera.`,
     artigo: 'artículo', artigos: 'artículos', mais: 'Más artículos', minLeitura: 'min de lectura',
+    verTodos: (n: number) => `Ver todos los ${n} artículos`,
   },
 }[locale];
 
@@ -50,8 +53,9 @@ const localeTag = locale === 'pt' ? 'pt-BR' : locale === 'es' ? 'es-ES' : 'en-US
 const fmtLong = (d: Date) => d.toLocaleDateString(localeTag, { day: '2-digit', month: 'long', year: 'numeric' });
 const fmtShort = (d: Date) => d.toLocaleDateString(localeTag, { day: 'numeric', month: 'short' });
 
-// SEM teto: a contagem do topo promete N artigos — todos aparecem na página
-// (destaque + 6 na grade + o restante inteiro na lista compacta)
+// Todos os artigos estão no HTML (SEO), mas "Mais artigos" abre mostrando só
+// 12 — o excedente fica oculto e o botão "Ver todos" revela sem recarregar.
+const MINI_VISIBLE = 12;
 const destaque = posts[0];
 const grade = posts.slice(1, 7);
 const resto = posts.slice(7);
@@ -119,8 +123,8 @@ const resto = posts.slice(7);
             <h2>{T.mais}</h2>
           </div>
           <div class="mini-wrap">
-            {resto.map((c) => (
-              <a class="mini" href={c.href}>
+            {resto.map((c, i) => (
+              <a class:list={['mini', { 'mini-extra': i >= MINI_VISIBLE }]} href={c.href} hidden={i >= MINI_VISIBLE}>
                 <div class="mini-thumb">
                   {c.image
                     ? <img src={c.image} srcset={imgSrcset(c.image)} sizes="92px" alt="" loading="lazy" width="92" height="66" />
@@ -133,6 +137,11 @@ const resto = posts.slice(7);
               </a>
             ))}
           </div>
+          {resto.length > MINI_VISIBLE && (
+            <div class="see-all-wrap" id="cat-see-all-wrap">
+              <button type="button" class="see-all" id="cat-see-all">{T.verTodos(posts.length)}</button>
+            </div>
+          )}
         </>
       )}
     </div>
@@ -140,6 +149,16 @@ const resto = posts.slice(7);
 
   <Footer />
 </BaseLayout>
+
+<script>
+  // "Ver todos": revela os artigos ocultos da lista compacta e some o botão
+  const seeAll = document.getElementById('cat-see-all');
+  seeAll?.addEventListener('click', () => {
+    document.querySelectorAll('.mini-extra').forEach((el) => el.removeAttribute('hidden'));
+    const wrap = document.getElementById('cat-see-all-wrap');
+    if (wrap) wrap.hidden = true;
+  });
+</script>
 
 <style>
   .cat-page { padding: var(--space-6) 0 var(--space-16); }
@@ -187,6 +206,23 @@ const resto = posts.slice(7);
   .mini h3 { margin: 0; font-size: 15.5px; line-height: 1.3; letter-spacing: -0.01em; color: var(--text-primary); }
   .mini:hover h3 { color: var(--accent-primary); }
   .mini .meta { margin-top: 3px; }
+
+  /* .mini é display:flex — sem esta regra o atributo hidden perderia a briga */
+  .mini[hidden] { display: none; }
+
+  .see-all-wrap { display: flex; justify-content: center; margin-top: var(--space-6); }
+  .see-all {
+    background: var(--gradient-cta);
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 11px 26px;
+    border-radius: var(--radius-full);
+    transition: transform var(--transition-fast);
+  }
+  .see-all:hover { transform: translateY(-2px); }
 
   @media (max-width: 900px) {
     .cat-grid { grid-template-columns: 1fr 1fr; }
