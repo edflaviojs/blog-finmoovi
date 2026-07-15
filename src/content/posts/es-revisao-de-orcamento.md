@@ -2,6 +2,7 @@
 title: "Revisión de Presupuesto"
 description: "Aprende a revisar tu presupuesto y ajustar tus finanzas para alcanzar tus objetivos financieros. Consejos prácticos y ejemplos para ayudarte a gestionar tus gastos e inversiones."
 image: "/images/posts/revisao-de-orcamento.webp"
+imageAlt: "Gráfico de líneas con colores verde, rojo y naranja en pantalla oscura con texto."
 category: "dicas"
 tags:
   - "presupuesto"

@@ -1,6 +1,7 @@
 ---
 term: "Amortização"
 image: "/images/glossario/amortizacao.svg"
+imageAlt: "Gráfico de linha com fundo escuro e linhas em azul e laranja."
 definition: "Processo de pagamento gradual de uma dívida ao longo do tempo, reduzindo o saldo devedor a cada parcela paga."
 category: "credito"
 relatedTerms: ["Juros Compostos", "Financiamento", "Tabela SAC"]

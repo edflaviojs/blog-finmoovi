@@ -2,6 +2,7 @@
 title: "Planilla de Gastos: Cuando Ella Deja de Funcionar"
 description: "Descubre cuándo una planilla de gastos gratuita deja de ser eficaz y cómo un app puede ayudar."
 image: "/images/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar.webp"
+imageAlt: "Computadora portátil y monitor en escritorio con taza, bolígrafos y blocs de notas."
 category: "ferramentas"
 locale: "es"
 tags: ["planilla de gastos","finanzas personales","app de finanzas","gestión de gastos","presupuesto","planilla gastos gratuita","limitaciones planilla","planilla vs app cuando cambiar"]

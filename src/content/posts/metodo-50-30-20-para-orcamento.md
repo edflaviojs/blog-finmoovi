@@ -2,6 +2,7 @@
 title: "Método 50-30-20 para Orçamento"
 description: "Aprenda a aplicar o método 50-30-20 no seu salário brasileiro para um orçamento saudável e alcançar suas metas financeiras."
 image: "/images/posts/metodo-50-30-20-para-orcamento.webp"
+imageAlt: "Um texto em branco sobre um fundo azul com contorno dourado no centro."
 category: "orcamento"
 locale: "pt"
 tags: ["orçamento pessoal","método 50-30-20","salário brasileiro","finanças pessoais","controle de gastos","economia","regra 50 30 20","como dividir salário","método orçamento"]

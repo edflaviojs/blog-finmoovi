@@ -2,6 +2,7 @@
 title: "Cómo evitar compras impulsivas y proteger tu bolsillo"
 description: "Aprende estrategias prácticas para frenar el impulso de comprar, con ejemplos reales y consejos que se ajustan a tu presupuesto. Controla tu dinero hoy."
 image: "/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso.webp"
+imageAlt: "Mesa de madera con una laptop, monitor, tableta y tres tazas de café."
 category: "dicas"
 locale: "es"
 tags: ["cómo evitar compras impulsivas","finanzas personales","economía","dinero"]

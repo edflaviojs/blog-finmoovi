@@ -1,6 +1,7 @@
 ---
 term: "Bitcoin"
 image: "/images/glossario/en-bitcoin.svg"
+imageAlt: "Pie chart with four colored sections on black background."
 definition: "The first and most well-known cryptocurrency. A decentralized digital currency that operates without banks or governments."
 category: "investimentos"
 locale: "en"

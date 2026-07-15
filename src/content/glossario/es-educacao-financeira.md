@@ -1,6 +1,7 @@
 ---
 term: "Educación Financiera"
 image: "/images/glossario/es-educacao-financeira.svg"
+imageAlt: "Gráfico de barras con degradado de colores sobre fondo negro."
 definition: "El conjunto de conocimientos y habilidades que te ayudan a tomar mejores decisiones sobre dinero, gastos, ahorro e inversiones."
 category: "basico"
 locale: "es"

@@ -2,6 +2,7 @@
 title: "Organizar Finanças de Casal"
 description: "Aprenda a gerenciar as finanças do casal de forma eficaz e alcançar metas em comum."
 image: "/images/posts/organizar-financas-de-casal.jpg"
+imageAlt: "Três pessoas sentadas com livros e laptops em ambiente escuro com tons de azul."
 category: "dicas"
 locale: "pt"
 tags: ["como organizar finanças de casal","finanças pessoais","economia","dinheiro"]

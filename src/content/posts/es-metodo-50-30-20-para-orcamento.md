@@ -2,6 +2,7 @@
 title: "Método 50-30-20 para Presupuesto"
 description: "Aprenda a aplicar el método 50-30-20 en su salario brasileño para un presupuesto saludable y alcanzar sus metas financieras."
 image: "/images/posts/metodo-50-30-20-para-orcamento.webp"
+imageAlt: "Un diseño gráfico con texto \"Método 50-30-20\" en un fondo azul con dorado."
 category: "orcamento"
 locale: "es"
 tags: ["presupuesto personal","método 50-30-20","salario brasileño","finanzas personales","control de gastos","economía","regla 50 30 20","como dividir salario","método presupuesto"]

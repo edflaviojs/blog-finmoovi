@@ -2,6 +2,7 @@
 title: "Como evitar compras por impulso e proteger seu bolso"
 description: "Aprenda estratégias práticas para frear o impulso de comprar, com exemplos reais e dicas que cabem no seu orçamento. Controle seu dinheiro hoje."
 image: "/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso.webp"
+imageAlt: "Móveis de madeira com computador, laptop e canecas em ambiente com iluminação natural."
 category: "dicas"
 locale: "pt"
 tags: ["como evitar compras por impulso","finanças pessoais","economia","dinheiro"]

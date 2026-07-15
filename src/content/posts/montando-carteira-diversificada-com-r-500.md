@@ -2,6 +2,7 @@
 title: "Montando Carteira Diversificada com R$500"
 description: "Aprenda a montar uma carteira diversificada com apenas R$500, entendendo os conceitos básicos de investimento e gerenciamento de riscos."
 image: "/images/posts/montando-carteira-diversificada-com-r-500.webp"
+imageAlt: "Homem sorri com celular na mão sentado com duas mulheres no sofá."
 category: "investimentos"
 locale: "pt"
 tags: ["investimento","carteira diversificada","R$500","riscos","gerenciamento financeiro","rendimento","diversificar investimentos","investir 500 reais"]

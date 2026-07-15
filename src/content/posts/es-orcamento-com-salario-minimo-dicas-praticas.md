@@ -2,6 +2,7 @@
 title: "Orçamento com Salário Mínimo: Dicas Práticas"
 description: "Aprenda a criar um orçamento eficaz con salário mínimo, gestionando sus finanzas de forma inteligente y alcanzando estabilidad financiera."
 image: "/images/posts/orcamento-com-salario-minimo-dicas-praticas.webp"
+imageAlt: "Cuaderno marrón, calculadora negra, monedas y hojas verdes sobre fondo blanco."
 category: "orcamento"
 locale: "es"
 tags: ["orçamento","salário mínimo","finanzas personales","gestión financiera","economía","planificación","orçamento salário mínimo","economizar ganhando poco","control gastos"]

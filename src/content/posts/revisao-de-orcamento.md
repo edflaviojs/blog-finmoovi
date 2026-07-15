@@ -2,6 +2,7 @@
 title: "Revisão de Orçamento"
 description: "Revisite seu orçamento no meio do ano e ajuste suas finanças para alcançar seus objetivos."
 image: "/images/posts/revisao-de-orcamento.webp"
+imageAlt: "Gráfico de linhas com ondas verdes e laranja em fundo escuro com números."
 category: "dicas"
 tags:
   - "orçamento"

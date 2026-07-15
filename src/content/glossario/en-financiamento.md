@@ -1,6 +1,7 @@
 ---
 term: "Financing"
 image: "/images/glossario/en-financiamento.svg"
+imageAlt: "Black background with cyan and magenta candlestick charts and lines."
 definition: "A long-term loan for purchasing high-value assets like real estate or vehicles, where the asset serves as collateral."
 category: "credito"
 locale: "en"

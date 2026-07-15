@@ -2,6 +2,7 @@
 title: "Presupuesto para Parejas: Dividiendo Gastos"
 description: "Aprende a dividir gastos de forma justa con tu pareja, creando un presupuesto saludable y equilibrado para la pareja."
 image: "/images/posts/orcamento-para-casal-dividindo-despesas.webp"
+imageAlt: "Cinta dorada y azul en forma de infinito sobre fondo gris claro."
 category: "orcamento"
 locale: "es"
 tags: ["presupuesto parejas","dividir gastos","finanzas personales","matrimonio","economía","dividir gastos parejas","finanzas para dos"]

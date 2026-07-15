@@ -1,6 +1,7 @@
 ---
 term: "Simple Interest"
 image: "/images/glossario/en-juros-simples.svg"
+imageAlt: "Black background with scattered red and green dots and a diagonal green line."
 definition: "Interest calculated only on the initial principal amount. Unlike compound interest, it does not generate interest on interest."
 category: "basico"
 locale: "en"

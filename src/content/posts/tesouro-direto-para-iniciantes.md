@@ -2,6 +2,7 @@
 title: "Tesouro Direto para Iniciantes"
 description: "Guia completo sobre investimento em Tesouro Direto, explicando como funciona, vantagens e desvantagens, além de exemplos práticos."
 image: "/images/posts/tesouro-direto-para-iniciantes.webp"
+imageAlt: "Duas faixas curvas, uma amarela e uma azul, sobre fundo escuro."
 category: "investimentos"
 locale: "pt"
 tags: ["Tesouro Direto","investimento","renda fixa","títulos públicos","financeira pessoal","economia","tesouro direto iniciante","como investir tesouro direto","tesouro selic"]

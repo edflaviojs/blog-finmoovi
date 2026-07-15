@@ -2,6 +2,7 @@
 title: "How to Avoid Impulse Purchases and Protect Your Wallet"
 description: "Learn practical strategies to curb the urge to buy, with real-life examples and budget-friendly tips. Take control of your money today."
 image: "/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso.webp"
+imageAlt: "Laptop and monitor on wooden desk with coffee cups and a cellphone."
 category: "dicas"
 locale: "en"
 tags: ["how to avoid impulse purchases","personal finance","savings","money"]

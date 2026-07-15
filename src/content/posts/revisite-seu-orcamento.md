@@ -2,6 +2,7 @@
 title: "Revisite Seu Orçamento"
 description: "Revisão de orçamento no meio do ano: dicas práticas para você"
 image: "/images/posts/revisite-seu-orcamento.webp"
+imageAlt: "Câmera sobre uma mesa com moedas, uma calculadora e um caderno de couro marrom."
 category: "dicas"
 tags:
   - "orçamento"

@@ -2,6 +2,7 @@
 title: "Fundos Imobiliários para Iniciantes: Guia Completo"
 description: "Aprenda a investir em fundos imobiliários com segurança e rentabilidade, começando com R$500 ou mais. Entenda os riscos e benefícios."
 image: "/images/posts/fundos-imobiliarios-para-iniciantes-guia-completo.webp"
+imageAlt: "Três pessoas sentadas em um sofá com tablets nas mãos em um ambiente claro."
 category: "investimentos"
 locale: "pt"
 tags: ["fundos imobiliários","investimento imobiliário","renda passiva","investir em imóveis","FIIs","fundos imobiliários iniciante","fii como investir","renda passiva fii"]

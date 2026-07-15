@@ -2,6 +2,7 @@
 title: "Guía Completa para Principiantes sobre Tesouro Direto"
 description: "Guía completa sobre inversión en Tesouro Direto, explicando cómo funciona, ventajas y desventajas, además de ejemplos prácticos."
 image: "/images/posts/tesouro-direto-para-iniciantes.webp"
+imageAlt: "Doble curva de colores amarillo y azul sobre fondo oscuro."
 category: "investimentos"
 locale: "es"
 tags: ["Tesouro Direto","inversión","renta fija","títulos públicos","finanzas personales","economía","tesouro direto para principiantes","cómo invertir en tesouro direto","tesouro selic"]

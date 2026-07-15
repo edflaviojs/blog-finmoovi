@@ -2,6 +2,7 @@
 title: "Planejamento Financeiro para Casais"
 description: "Aprenda a gerenciar suas finanças em conjunto e alcance seus objetivos financeiros. Dicas práticas e estratégias para casais."
 image: "/images/posts/planejamento-financeiro-para-casais.webp"
+imageAlt: "Casa azul com janelas amarelas dentro de uma faixa dourada em fundo escuro."
 category: "dicas"
 locale: "pt"
 tags: ["planejamento financeiro para casais","finanças pessoais","economia","dinheiro"]

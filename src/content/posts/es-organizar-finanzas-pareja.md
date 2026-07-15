@@ -2,6 +2,7 @@
 title: "Cómo Organizar las Finanzas de Pareja"
 description: "Aprende a gestionar las finanzas de pareja de manera eficaz y alcanzar metas comunes."
 image: "/images/posts/organizar-financas-de-casal.jpg"
+imageAlt: "Ilustración de pareja sentada en un sofá revisando finanzas con libros y dispositivos."
 category: "dicas"
 tags: ["finanzas de pareja", "finanzas personales", "gestión del dinero", "presupuesto"]
 author: "FinMoovi"

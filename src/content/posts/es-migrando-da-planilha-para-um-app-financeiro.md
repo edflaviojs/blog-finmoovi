@@ -2,6 +2,7 @@
 title: "Migrando de la Hoja de Cálculo a una App Financiera"
 description: "Aprenda cómo migrar de la hoja de cálculo a una app financiera y organice sus finanzas de forma eficaz."
 image: "/images/posts/migrando-da-planilha-para-um-app-financeiro.webp"
+imageAlt: "Dos laptops con fondos coloridos sobre una mesa con una taza de café."
 category: "ferramentas"
 locale: "es"
 tags: ["app financiera","hoja de cálculo","finanzas personales","organización financiera","FinMoovi","Mobills","Organizze","migrar hoja de cálculo app","comenzar usar app finanzas","salir de la hoja de cálculo"]

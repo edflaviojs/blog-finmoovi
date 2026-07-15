@@ -2,6 +2,7 @@
 title: "Planejamento Financeiro para Autônomos"
 description: "Aprenda a gerenciar suas finanças como autônomo e alcance a estabilidade financeira. Dicas práticas e exemplos reais."
 image: "/images/posts/planejamento-financeiro-para-autonomos.webp"
+imageAlt: "Gráfico colorido com linhas onduladas e pontos em tons de azul, verde e amarelo."
 category: "dicas"
 locale: "pt"
 tags: ["planejamento financeiro para autônomos","finanças pessoais","economia","dinheiro"]

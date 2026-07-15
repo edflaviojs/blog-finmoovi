@@ -2,6 +2,7 @@
 title: "Invertir en Dólar en Brasil"
 description: "Aprende a invertir en dólar en Brasil de forma segura e inteligente, considerando los riesgos y beneficios."
 image: "/images/posts/investir-em-dolar-no-brasil.webp"
+imageAlt: "Tres personas sentadas en una mesa con una tableta y dinero en efectivo."
 category: "investimentos"
 locale: "es"
 tags: ["invertir en dólar","inversión en dólar","dólar americano","inversión en el exterior","inversión en moneda extranjera","inversión segura","invertir dólar brasil","comprar dólar inversión","dolarizar cartera"]

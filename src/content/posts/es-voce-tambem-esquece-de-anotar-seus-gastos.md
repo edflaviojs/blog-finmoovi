@@ -2,6 +2,7 @@
 title: "También olvidas anotar tus gastos"
 description: "Descubre cómo FinMoovi puede ayudarte a controlar tus finanzas de forma fácil y eficaz."
 image: "/images/posts/voce-tambem-esquece-de-anotar-seus-gastos.webp"
+imageAlt: "Un cuaderno marrón, una calculadora negra y monedas sobre una superficie blanca con plantas."
 category: "dicas"
 locale: "es"
 tags: ["finanzas personales","control de gastos","aplicativos financieros","FinMoovi","gestión de despesas","categorización automática","aplicativo de finanzas","control de despesas","finmoovi"]

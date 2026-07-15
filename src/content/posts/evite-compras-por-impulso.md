@@ -2,6 +2,7 @@
 title: "Evite compras por impulso"
 description: "Aprenda a controlar seus gastos e economizar dinheiro com dicas práticas e exemplos do dia a dia."
 image: "/images/posts/evite-compras-por-impulso.webp"
+imageAlt: "Uma faixa curva azul e dourada em um fundo branco."
 category: "dicas"
 locale: "pt"
 tags: ["como evitar compras por impulso","finanças pessoais","economia","dinheiro"]
