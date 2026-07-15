@@ -167,6 +167,7 @@ Escreva um artigo completo e profissional sobre: "${topic}"
 REGRAS:
 - Título criativo e otimizado para SEO (máximo 65 caracteres)
 - Meta description (máximo 155 caracteres)
+- Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário", "Férias baratas? O truque é este")
 - 5-7 keywords relevantes separadas por vírgula
 - Conteúdo com 800-1200 palavras
 - Use headers H2 e H3 para estruturar
@@ -183,6 +184,8 @@ Responda EXATAMENTE neste formato:
 [título aqui]
 ---META---
 [meta description]
+---HEADLINE---
+[headline de ticker, máximo 40 caracteres]
 ---KEYWORDS---
 [keywords separadas por vírgula]
 ---CONTEUDO---
@@ -198,6 +201,7 @@ Responda EXATAMENTE neste formato:
 function parseResponse(response) {
   const titleMatch = response.match(/---TITULO---\n(.+)/);
   const metaMatch = response.match(/---META---\n(.+)/);
+  const headlineMatch = response.match(/---HEADLINE---\n(.+)/);
   const keywordsMatch = response.match(/---KEYWORDS---\n(.+)/);
   const contentMatch = response.match(/---CONTEUDO---\n([\s\S]+)/);
 
@@ -205,9 +209,16 @@ function parseResponse(response) {
     throw new Error('Failed to parse AI response');
   }
 
+  // Headline do ticker: opcional (posts antigos/respostas sem o campo caem
+  // no corte automático do título no CotacaoBar); teto rígido de 40 chars
+  const headline = headlineMatch
+    ? headlineMatch[1].trim().replace(/^["']|["']$/g, '').slice(0, 40)
+    : '';
+
   return {
     title: titleMatch[1].trim().replace(/^["']|["']$/g, ''),
     description: (metaMatch ? metaMatch[1].trim() : '').replace(/^["']|["']$/g, ''),
+    headline,
     keywords: keywordsMatch ? keywordsMatch[1].split(',').map(k => k.trim()) : [],
     content: contentMatch[1].trim()
   };
@@ -289,6 +300,8 @@ Respond in this exact format:
 [translated title]
 ---META---
 [translated meta description]
+---HEADLINE---
+[translated ticker headline, max 40 characters]
 ---KEYWORDS---
 [translated keywords, comma separated]
 ---CONTEUDO---
@@ -296,6 +309,7 @@ Respond in this exact format:
 
 Original post:
 Title: ${post.title}
+Ticker headline: ${post.headline || post.title.slice(0, 40)}
 Content:
 ${post.content}`;
 
@@ -314,7 +328,7 @@ function savePost(post, slug, locale, imagePath) {
   const frontmatter = `---
 title: "${post.title.replace(/"/g, '\\"')}"
 description: "${post.description.replace(/"/g, '\\"')}"
-image: "${imagePath}"
+${post.headline ? `tickerHeadline: "${post.headline.replace(/"/g, '\\"')}"\n` : ''}image: "${imagePath}"
 category: "dicas"
 tags:
 ${post.keywords.slice(0, 5).map(k => `  - "${k.trim()}"`).join('\n')}

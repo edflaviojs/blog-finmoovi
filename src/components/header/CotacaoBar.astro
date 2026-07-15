@@ -16,8 +16,11 @@ const localePrefix = locale === 'pt' ? '' : `/${locale}`;
 const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === locale);
 const latest = posts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())[0];
 const latestUrl = latest ? `${localePrefix}/posts/${latest.slug}` : null;
+// Prefere a headline curta escrita pela IA para o ticker; sem ela (posts
+// antigos), corta o título mecanicamente
 const latestTitle = latest
-  ? (latest.data.title.length > 28 ? latest.data.title.slice(0, 28).trim() + '…' : latest.data.title)
+  ? (latest.data.tickerHeadline
+      || (latest.data.title.length > 28 ? latest.data.title.slice(0, 28).trim() + '…' : latest.data.title))
   : null;
 
 const labels = {
@@ -121,7 +124,9 @@ const COPIES = [0, 1, 2, 3];
     // Dia da semana por extenso com iniciais maiúsculas: "Quarta-Feira, 15 de julho"
     const semana = hoje.toLocaleDateString(localeTag, { weekday: 'long' })
       .split('-').map(capitalize).join('-');
-    const resto = hoje.toLocaleDateString(localeTag, { day: 'numeric', month: 'long' });
+    // Mês com inicial maiúscula: "15 de Julho" (mantém "de" minúsculo)
+    const resto = hoje.toLocaleDateString(localeTag, { day: 'numeric', month: 'long' })
+      .split(' ').map((w) => (w === 'de' ? w : capitalize(w))).join(' ');
     setAll('js-data', '📅 ' + semana + ', ' + resto);
 
     const list = tips[pageLang] || tips.pt;
@@ -248,7 +253,7 @@ const COPIES = [0, 1, 2, 3];
        translateX(-25%) desloca 25% do viewport — nunca fecha o loop.
        Com max-content, -25% = exatamente 1 dos 4 grupos = emenda perfeita. */
     width: max-content;
-    animation: ticker 25s linear infinite;
+    animation: ticker 30s linear infinite;
     white-space: nowrap;
   }
 
