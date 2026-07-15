@@ -154,10 +154,18 @@ const labels = {
     if (el2) el2.textContent = text;
   }
 
+  function capitalize(s) {
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+
   function fillDataEDica() {
     const localeTag = pageLang === 'pt' ? 'pt-BR' : pageLang === 'es' ? 'es-ES' : 'en-US';
     const hoje = new Date();
-    setPair('cot-data', '📅 ' + hoje.toLocaleDateString(localeTag, { weekday: 'short', day: 'numeric', month: 'short' }));
+    // Dia da semana por extenso com iniciais maiúsculas: "Quarta-Feira, 15 de julho"
+    const semana = hoje.toLocaleDateString(localeTag, { weekday: 'long' })
+      .split('-').map(capitalize).join('-');
+    const resto = hoje.toLocaleDateString(localeTag, { day: 'numeric', month: 'long' });
+    setPair('cot-data', '📅 ' + semana + ', ' + resto);
 
     const list = tips[pageLang] || tips.pt;
     const dayOfYear = Math.floor((hoje.getTime() - new Date(hoje.getFullYear(), 0, 0).getTime()) / 86400000);
@@ -211,7 +219,7 @@ const labels = {
         ? WEATHER_CONDITIONS.find((w) => w.match(d.code))
         : null;
       const emoji = cond ? cond.emoji : '🌤';
-      const condLabel = cond ? (cond[pageLang] || cond.pt) : '';
+      const condLabel = cond ? capitalize(cond[pageLang] || cond.pt) : '';
       const temp = d.temp + '°C' + (condLabel ? ' ' + condLabel : '');
       [['clima-city', 'clima-temp', 'clima-item'], ['clima-city2', 'clima-temp2', 'clima-item2']].forEach(([cityId, tempId, itemId]) => {
         const cityEl = document.getElementById(cityId);
@@ -288,7 +296,7 @@ const labels = {
   .cotacao-track {
     display: flex;
     gap: var(--space-8);
-    animation: ticker 60s linear infinite;
+    animation: ticker 45s linear infinite;
     white-space: nowrap;
   }
 
@@ -341,7 +349,9 @@ const labels = {
 
   @keyframes ticker {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    /* -50% ignora o gap ENTRE as duas metades duplicadas → salto visível a
+       cada volta. Compensar meio gap deixa o encaixe do loop perfeito. */
+    100% { transform: translateX(calc(-50% - var(--space-8) / 2)); }
   }
 
   .cotacao-bar:hover .cotacao-track {
