@@ -91,7 +91,7 @@ A [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme
 **Cálculo:**
 - Hotel 3★ em Florianópolis (julho): R$ 350/noite
 - Quarto no Airbnb: R$ 180/noite
-- Economia: **R$ 170** por noite. Em uma viagem de 5 dias, isso representa **R$ 850** economizados.
+- [Economia](/posts/como-criar-uma-reserva-de-emergencia): **R$ 170** por noite. Em uma viagem de 5 dias, isso representa **R$ 850** economizados.
 
 ---
 
@@ -110,7 +110,7 @@ Levar lanches, preparar café da manhã no próprio alojamento ou fazer compras 
 - Jantar (restaurante barato): R$ 25
 - Total: **R$ 45**
 
-Se você gastar R$ 80 em restaurantes, a diferença são **R$ 35** por dia. Em 5 dias, isso representa **R$ 175** de economia.
+Se você gastar R$ 80 em restaurantes, a diferença são **R$ 35** por dia. Em 5 dias, isso representa **R$ 175** de [economia](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso).
 
 ---
 

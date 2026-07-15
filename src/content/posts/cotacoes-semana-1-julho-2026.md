@@ -19,7 +19,7 @@ seo:
 
 ## Resumo Semanal do [Mercado Financeiro](/posts/cotacoes-semana-4-maio-2026) Brasileiro: 29/06/2026 a 06/07/2026
 
-A semana que passou foi marcada por movimentos interessantes no [mercado financeiro](/posts/cotacoes-semana-5-junho-2026) brasileiro, com o [dólar](/posts/cotacoes-semana-1-junho-2026) e o euro apresentando tendências que podem influenciar diretamente os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de quem acompanha o mercado. Neste resumo, vamos explorar o que aconteceu com as principais moedas, como a taxa [Selic](/glossario/selic) impactou os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e dar uma dica prática para os investidores pessoa física.
+A semana que passou foi marcada por movimentos interessantes no [mercado financeiro](/posts/cotacoes-semana-5-junho-2026) brasileiro, com o [dólar](/posts/cotacoes-semana-1-junho-2026) e o euro apresentando tendências que podem influenciar diretamente os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de quem acompanha o mercado. Neste resumo, vamos explorar o que aconteceu com as principais moedas, como a [taxa](/glossario/taxa) [Selic](/glossario/selic) impactou os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e dar uma dica prática para os investidores pessoa física.
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026](/images/posts/cotacoes-semana-1-julho-2026-inline-1.webp)
 

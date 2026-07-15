@@ -31,7 +31,7 @@ O [dólar](/posts/cotacoes-semana-4-maio-2026) americano (USD) fechou a semana e
 
 ## [Selic](/glossario/selic) e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-A taxa [Selic](/posts/cotacoes-semana-2-julho-2026), que é a taxa básica de [juros](/glossario/juros) da [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira, permaneceu estável durante a semana. No entanto, é importante lembrar que as decisões do Comitê de Política Monetária (COPOM) sobre a Selic podem influenciar diretamente os juros de empréstimos e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Uma taxa Selic mais alta pode tornar os empréstimos mais caros, mas também pode aumentar os rendimentos de investimentos como títulos públicos e CDBs. É fundamental acompanhar essas decisões para ajustar suas estratégias de [investimento](/posts/tesouro-direto-para-iniciantes).
+A [taxa](/glossario/taxa) [Selic](/posts/cotacoes-semana-2-julho-2026), que é a taxa básica de [juros](/glossario/juros) da [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira, permaneceu estável durante a semana. No entanto, é importante lembrar que as decisões do Comitê de Política Monetária (COPOM) sobre a Selic podem influenciar diretamente os juros de empréstimos e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Uma taxa Selic mais alta pode tornar os empréstimos mais caros, mas também pode aumentar os rendimentos de investimentos como títulos públicos e CDBs. É fundamental acompanhar essas decisões para ajustar suas estratégias de [investimento](/posts/tesouro-direto-para-iniciantes).
 
 ![Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-3-junho-2026-inline-3.webp)
 

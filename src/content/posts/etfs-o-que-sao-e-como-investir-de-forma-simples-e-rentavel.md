@@ -18,7 +18,7 @@ seo:
 
 ## O que são ETFs
 
-ETF é a sigla para **Exchange Traded Fund**, ou Fundo de Índice negociado em bolsa. Em termos simples, um ETF reúne um conjunto de ativos – ações, títulos, commodities – e reproduz o desempenho de um índice, como o Ibovespa ou o S&P 500. Cada cota do ETF pode ser comprada ou vendida na bolsa como se fosse uma ação comum, o que traz praticidade e liquidez.
+ETF é a sigla para **Exchange Traded Fund**, ou Fundo de Índice negociado em bolsa. Em termos simples, um ETF reúne um conjunto de ativos – ações, títulos, commodities – e reproduz o desempenho de um índice, como o Ibovespa ou o S&P 500. Cada cota do ETF pode ser comprada ou vendida na bolsa como se fosse uma ação comum, o que traz praticidade e [liquidez](/glossario/liquidez).
 
 > **Primeira aparição:** “ETF” (Exchange Traded Fund) – fundo que replica um índice e é negociado como ação.
 
@@ -34,7 +34,7 @@ A gestão do fundo pode ser **passiva** (simplesmente segue o índice) ou **ativ
 
 ### Exemplo de rendimento
 
-Imagine que você investe **R$1.000** em um ETF que replica o índice de renda fixa, com rentabilidade média de 6 % ao ano. Em um ano, seu investimento renderia:
+Imagine que você investe **R$1.000** em um ETF que replica o índice de [renda fixa](/glossario/renda-fixa), com rentabilidade média de 6 % ao ano. Em um ano, seu [investimento](/posts/montando-carteira-diversificada-com-r-500) renderia:
 
 - Valor investido: R$1.000
 - Rentabilidade: 6 % → R$60
@@ -58,7 +58,7 @@ Se, ao invés disso, você aplicasse o mesmo valor em um CDB com 6,2 % ao ano,
 2. **Defina o objetivo** – se o foco é longo prazo, um ETF de ações pode ser adequado; para renda fixa, procure ETFs que acompanhem o CDI ou o [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 3. **Monte um plano de aporte** – por exemplo, investir **R$500** todo mês em um ETF de ações brasileiras.
 4. **Faça a ordem de compra** – selecione o ticker (código) do ETF, informe a quantidade e confirme a operação.
-5. **Acompanhe a performance** – use relatórios mensais ou um app de finanças para ver como seu investimento evolui.
+5. **Acompanhe a performance** – use relatórios mensais ou um [app de finanças](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) para ver como seu investimento evolui.
 
 ![Como começar a investir](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-4.webp)
 
@@ -76,7 +76,7 @@ Se, ao invés disso, você aplicasse o mesmo valor em um CDB com 6,2 % ao ano,
 
 ## Riscos e cuidados
 
-- **Volatilidade** – ETFs de ações podem oscilar bastante em curto prazo. Avalie seu horizonte de investimento antes de aplicar.
+- **[Volatilidade](/glossario/volatilidade)** – ETFs de ações podem oscilar bastante em curto prazo. Avalie seu horizonte de investimento antes de aplicar.
 - **Taxa de administração** – Mesmo baixa, ela reduz a rentabilidade, principalmente em períodos de baixa performance do índice.
 - **Risco de mercado** – Se o índice cair, seu investimento também cairá. Não há garantia de capital.
 - **Liquidação** – Embora a cotação seja imediata, a liquidação financeira ocorre em D+2 (dois dias úteis após a compra).

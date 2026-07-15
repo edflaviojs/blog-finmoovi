@@ -31,7 +31,7 @@ Nessa semana, o dólar americano fechou em R$ 5,16, enquanto o euro chegou a R$ 
 
 ## [Selic](/en/glossario/en-selic) e Impacto nos Investimentos
 
-A taxa [Selic](/en/posts/en-quotes-semana-1-july-2026), que é a taxa básica de [juros](/en/glossario/en-juros) da economia brasileira, permaneceu estável em 12,25% ao ano. Isso é bom para quem tem investimentos em [renda fixa](/en/glossario/en-renda-fixa), como CDBs ou títulos públicos, pois significa que você continuará a receber juros a uma taxa razoável. No entanto, para quem está pensando em tomar empréstimos, como um financiamento imobiliário, uma taxa [Selic](/en/posts/en-quotes-semana-1-june-2026) mais alta pode significar juros mais caros. É importante considerar isso antes de tomar qualquer decisão de investimento ou financiamento.
+A [taxa](/en/glossario/en-taxa) [Selic](/en/posts/en-quotes-semana-1-july-2026), que é a taxa básica de [juros](/en/glossario/en-juros) da economia brasileira, permaneceu estável em 12,25% ao ano. Isso é bom para quem tem investimentos em [renda fixa](/en/glossario/en-renda-fixa), como CDBs ou títulos públicos, pois significa que você continuará a receber juros a uma taxa razoável. No entanto, para quem está pensando em tomar empréstimos, como um financiamento imobiliário, uma taxa [Selic](/en/posts/en-quotes-semana-1-june-2026) mais alta pode significar juros mais caros. É importante considerar isso antes de tomar qualquer decisão de investimento ou financiamento.
 
 ![Selic e Impacto nos Investimentos](/images/posts/en-quotes-semana-4-june-2026-inline-3.webp)
 

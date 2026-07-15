@@ -27,7 +27,7 @@ Nesta semana, o [mercado financeiro](/posts/cotacoes-semana-1-julho-2026) brasil
 
 ## [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana
 
-A taxa de câmbio entre o real brasileiro e as principais moedas estrangeiras foi um dos pontos de destaque da semana. O [dólar](/posts/cotacoes-semana-3-junho-2026) americano fechou a semana em R$ 5,16, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou R$ 5,91, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes, especialmente para aqueles que investem em ativos em moedas estrangeiras ou planejam viagens internacionais.
+A [taxa](/glossario/taxa) de câmbio entre o real brasileiro e as principais moedas estrangeiras foi um dos pontos de destaque da semana. O [dólar](/posts/cotacoes-semana-3-junho-2026) americano fechou a semana em R$ 5,16, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou R$ 5,91, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes, especialmente para aqueles que investem em ativos em moedas estrangeiras ou planejam viagens internacionais.
 
 ## [Selic](/glossario/selic) e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 

@@ -24,7 +24,7 @@ ETF es la sigla de **Exchange Traded Fund**, o Fondo Cotizado en Bolsa. En térm
 
 ## Cómo funciona en la práctica
 
-Cuando compras 10 cuotas de un ETF que replica el Ibovespa, estás, en la práctica, invirtiendo en todas las empresas que componen ese índice (en la misma proporción). Si el Ibovespa sube un 2 %, el valor de tus cuotas también sube aproximadamente un 2 %.
+Cuando compras 10 cuotas de un ETF que replica el Ibovespa, estás, en la práctica, invirtiendo en todas las empresas que componen ese índice (en la misma proporción). Si el Ibovespa sube un 2 %, el [valor](/es/glossario/es-valor) de tus cuotas también sube aproximadamente un 2 %.
 
 ![Como funciona na prática](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-2.webp)
 
@@ -32,13 +32,13 @@ La gestión del fondo puede ser **pasiva** (simplemente sigue el índice) o **ac
 
 ### Ejemplo de rendimiento
 
-Imagina que inviertes **R$1.000** en un ETF que replica el índice de renta fija, con rentabilidad media del 6 % al año. En un año, tu inversión rendiría:
+Imagina que inviertes **R$1.000** en un ETF que replica el índice de renta fija, con rentabilidad media del 6 % al año. En un año, tu [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) rendiría:
 
 - Valor invertido: R$1.000
 - Rentabilidad: 6 % → R$60
 - Valor al final del año: **R$1.060**
 
-Si, en cambio, hubieras colocado el mismo monto en un CDB con 6,2 % al año, la diferencia sería de solo R$2, mostrando cómo las comisiones de administración de los ETFs pueden impactar el resultado final.
+Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un CDB con 6,2 % al año, la diferencia sería de solo R$2, mostrando cómo las comisiones de administración de los ETFs pueden impactar el resultado final.
 
 ## Ventajas de los ETFs
 
@@ -53,10 +53,10 @@ Si, en cambio, hubieras colocado el mismo monto en un CDB con 6,2 % al año, l
 ## Cómo comenzar a invertir
 
 1. **Abre una cuenta en un corredor** – elige uno que ofrezca comisión de corretaje cero o reducida para ETFs.  
-2. **Define el objetivo** – si el foco es a largo plazo, un ETF de acciones puede ser adecuado; para renta fija, busca ETFs que sigan el CDI o el Tesoro Selic.  
+2. **Define el objetivo** – si el foco es a largo plazo, un ETF de acciones puede ser adecuado; para renta fija, busca ETFs que sigan el CDI o el Tesoro [Selic](/es/glossario/es-selic).  
 3. **Elabora un plan de aporte** – por ejemplo, invertir **R$500** cada mes en un ETF de acciones brasileñas.  
 4. **Realiza la orden de compra** – selecciona el ticker (código) del ETF, indica la cantidad y confirma la operación.  
-5. **Sigue el desempeño** – usa reportes mensuales o una app de finanzas para ver cómo evoluciona tu inversión.
+5. **Sigue el desempeño** – usa reportes mensuales o una [app de finanzas](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) para ver cómo evoluciona tu inversión.
 
 ![Como começar a investir](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-4.webp)
 

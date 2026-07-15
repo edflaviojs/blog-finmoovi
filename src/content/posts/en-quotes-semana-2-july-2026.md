@@ -19,7 +19,7 @@ seo:
 
 ## Resumo da Semana (07/06 – 13/07/2026)
 
-A semana foi marcada por oscilações nos mercados internacionais e pelo movimento da taxa [Selic](/en/glossario/en-selic) aqui no Brasil. Vamos ao que interessa: como o dólar e o euro se comportaram, o que a [Selic](/en/posts/en-quotes-semana-1-july-2026) fez com a sua carteira e um truque prático para você que quer ficar no controle dos seus investimentos.
+A semana foi marcada por oscilações nos mercados internacionais e pelo movimento da [taxa](/en/glossario/en-taxa) [Selic](/en/glossario/en-selic) aqui no Brasil. Vamos ao que interessa: como o dólar e o euro se comportaram, o que a [Selic](/en/posts/en-quotes-semana-1-july-2026) fez com a sua carteira e um truque prático para você que quer ficar no controle dos seus investimentos.
 
 ![Resumo da Semana (07/06 – 13/07/2026)](/images/posts/en-quotes-semana-2-july-2026-inline-1.webp)
 

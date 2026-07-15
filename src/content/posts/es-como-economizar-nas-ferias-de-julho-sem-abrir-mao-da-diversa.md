@@ -122,7 +122,7 @@ Si gastas R$ 80 en restaurantes, la diferencia son **R$ 35** por día. En 5 
 
 ---  
 
-## 7. Control de gastos en tiempo real  
+## 7. [Control de gastos](/es/posts/es-metodo-50-30-20-para-orcamento) en tiempo real  
 
 ### Cómo no perder el rumbo  
 Incluso con la mejor planificación, los imprevistos aparecen. Usa el **[FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** para registrar cada gasto (hasta los de pocos centavos) y recibir alertas cuando estés cerca del límite diario. La app también genera reportes mensuales que muestran dónde fue posible recortar costos para el próximo viaje.  
@@ -139,7 +139,7 @@ Incluso con la mejor planificación, los imprevistos aparecen. Usa el **[FinMoov
 | 4 | Alojamiento en Airbnb/hostal | R$ 850 en 5 noches |
 | 5 | Cocinar parte de las comidas | R$ 175 en 5 días |
 | 6 | Priorizar actividades gratuitas | R$ 40‑R$ 80 por día |
-| 7 | Monitorear gastos con FinMoovi | Evita sorpresas de último minuto |
+| 7 | Monitorear gastos con [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) | Evita sorpresas de último minuto |
 
 ---  
 

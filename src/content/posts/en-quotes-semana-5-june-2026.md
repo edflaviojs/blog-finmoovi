@@ -19,7 +19,7 @@ seo:
 
 # Resumo Semanal do Mercado Financeiro Brasileiro: 22/06 a 29/06/2026
 
-Olá, pessoal! É hora de fazer um resumo da semana no mercado financeiro brasileiro. Vamos falar sobre o que aconteceu com o dólar e o euro, a taxa [Selic](/en/glossario/en-selic) e como isso pode afetar seus investimentos. Além disso, vamos dar uma dica prática para você, investidor individual, e o que esperar para a próxima semana.
+Olá, pessoal! É hora de fazer um resumo da semana no mercado financeiro brasileiro. Vamos falar sobre o que aconteceu com o dólar e o euro, a [taxa](/en/glossario/en-taxa) [Selic](/en/glossario/en-selic) e como isso pode afetar seus investimentos. Além disso, vamos dar uma dica prática para você, investidor individual, e o que esperar para a próxima semana.
 
 ## Dólar e Euro: Tendência Semanal
 

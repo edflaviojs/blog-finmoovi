@@ -29,7 +29,7 @@ A previdência privada é um plano de [investimento](/posts/tesouro-direto-para-
 
 
 
-Um exemplo de como funciona a previdência privada: imagine que você investe R$ 500 por mês durante 20 anos em um plano de previdência privada com uma taxa de [juros](/glossario/juros) de 8% ao ano. Ao final desse período, você terá investido cerca de R$ 120.000, e poderá receber uma renda mensal de aproximadamente R$ 2.500 após a aposentadoria.
+Um exemplo de como funciona a previdência privada: imagine que você investe R$ 500 por mês durante 20 anos em um plano de previdência privada com uma [taxa](/glossario/taxa) de [juros](/glossario/juros) de 8% ao ano. Ao final desse período, você terá investido cerca de R$ 120.000, e poderá receber uma renda mensal de aproximadamente R$ 2.500 após a aposentadoria.
 
 ## Como funciona Investir por Conta Própria
 

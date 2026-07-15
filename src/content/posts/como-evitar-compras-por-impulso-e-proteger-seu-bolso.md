@@ -47,7 +47,7 @@ Criar novos hábitos requer pequenas vitórias diárias. Substitua a ida ao shop
 ## Ferramentas que ajudam
 
 - **Apps de controle financeiro**: permitem categorizar gastos e visualizar o quanto você está próximo do limite mensal. Muitos oferecem alertas personalizados.
-- **Cartões de débito com bloqueio por categoria**: alguns bancos permitem bloquear temporariamente compras em lojas de vestuário ou eletrônicos, evitando o impulso na hora.
+- **Cartões de [débito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) com bloqueio por categoria**: alguns bancos permitem bloquear temporariamente compras em lojas de vestuário ou eletrônicos, evitando o impulso na hora.
 - **Lista de desejos online**: ao invés de comprar imediatamente, adicione o item a uma lista. Revisite a lista depois de uma semana; se ainda estiver lá, talvez seja realmente necessário.
 
 Para quem prefere fontes oficiais, o Banco Central do Brasil disponibiliza orientações sobre consumo consciente em seu portal de [educação financeira](/glossario/educacao-financeira): [Banco Central – Educação Financeira](https://www.bcb.gov.br). Também vale a pena conferir [dicas](/posts/7-erros-financeiros-iniciante) de prevenção de compras indevidas no site da Serasa: [Serasa – Controle de Gastos](https://www.serasa.com.br).
@@ -62,4 +62,4 @@ Pegue um papel ou abra o seu app agora mesmo e registre o próximo gasto que sen
 
 ---
 
-**Pronto para organizar suas finanças? [Experimente o FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.**
+**Pronto para organizar suas finanças? [Experimente o FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/cashback-inteligente).**

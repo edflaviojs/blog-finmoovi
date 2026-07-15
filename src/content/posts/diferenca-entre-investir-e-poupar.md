@@ -25,7 +25,7 @@ Para entender melhor a diferença, imagine que você ganha R$ 5.000 por mês e d
 ## [Riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e Retornos
 Um dos principais motivos pelos quais as pessoas optam por investir em vez de poupar é o potencial de retorno. [Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de alto risco podem oferecer retornos mais altos, mas também vêm com a possibilidade de perdas significativas. Por exemplo, se você investir R$ 1.000 em ações e o mercado de ações subir, você pode ganhar R$ 1.500 ou mais. No entanto, se o mercado cair, você pode perder uma parte significativa do seu investimento.
 
-Já a poupança, por outro lado, é geralmente mais segura, mas os retornos são menores. Em uma conta de poupança, você pode ganhar cerca de 0,5% a 1% de [juros](/glossario/juros) ao mês, o que é uma taxa de retorno relativamente baixa.
+Já a poupança, por outro lado, é geralmente mais segura, mas os retornos são menores. Em uma conta de poupança, você pode ganhar cerca de 0,5% a 1% de [juros](/glossario/juros) ao mês, o que é uma [taxa](/glossario/taxa) de retorno relativamente baixa.
 
 ![Riscos e Retornos](/images/posts/diferenca-entre-investir-e-poupar-2.webp)
 

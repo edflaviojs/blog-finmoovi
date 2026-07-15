@@ -27,15 +27,15 @@ A semana passou sem grandes surpresas nos principais indicadores, mas alguns mov
 
 ## [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana  
 
-- **[Dólar](/posts/cotacoes-semana-3-junho-2026) (USD/BRL = R$ 5,11)** – O real se manteve estável em torno de R$ 5,10‑5,12. O dólar acabou a semana levemente mais fraco (cerca de 0,3 %), puxado por dados de [inflação](/glossario/inflacao) nos EUA que ficaram abaixo do esperado. Na prática, isso significa que a compra de produtos importados ou de viagens ao exterior ficou um pouquinho mais barata, mas ainda longe de representar uma diferença significativa no seu dia a dia.  
+- **[Dólar](/posts/cotacoes-semana-3-junho-2026) (USD/BRL = R$ 5,11)** – O real se manteve estável em torno de R$ 5,10‑5,12. O [dólar](/posts/cotacoes-semana-4-junho-2026) acabou a semana levemente mais fraco (cerca de 0,3 %), puxado por dados de [inflação](/glossario/inflacao) nos EUA que ficaram abaixo do esperado. Na prática, isso significa que a compra de produtos importados ou de viagens ao exterior ficou um pouquinho mais barata, mas ainda longe de representar uma diferença significativa no seu dia a dia.  
 
-- **Euro (EUR/BRL = R$ 5,83)** – O euro seguiu a mesma direção do dólar, recuando cerca de 0,2 % ao final da semana. A queda foi impulsionada por um enfraquecimento da zona‑euro diante das discussões sobre a política monetária do BCE. Para quem tem contas ou investimentos em euros, a boa notícia é que a cotação está mais favorável para quem deseja trazer o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta ao Brasil.  
+- **Euro (EUR/BRL = R$ 5,83)** – O euro seguiu a mesma direção do [dólar](/posts/cotacoes-semana-4-maio-2026), recuando cerca de 0,2 % ao final da semana. A queda foi impulsionada por um enfraquecimento da zona‑euro diante das discussões sobre a política monetária do BCE. Para quem tem contas ou investimentos em euros, a boa notícia é que a cotação está mais favorável para quem deseja trazer o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta ao Brasil.  
 
 Em resumo: tanto o dólar quanto o euro mostraram leve desvalorização frente ao real, mas a variação foi pequena demais para mudar drasticamente suas decisões de compra ou investimento.
 
 ## [Selic](/glossario/selic) e o Impacto nos Investimentos  
 
-A taxa Selic continuou em **13,75 % ao ano**, nível que se manteve após a última reunião do Copom. Essa taxa alta ainda é o principal “freio” da inflação, mas também encarece o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-). Para quem tem [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) aplicado em renda fixa, isso traz duas consequências claras:
+A [taxa](/glossario/taxa) Selic continuou em **13,75 % ao ano**, nível que se manteve após a última reunião do Copom. Essa taxa alta ainda é o principal “freio” da inflação, mas também encarece o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-). Para quem tem [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) aplicado em renda fixa, isso traz duas consequências claras:
 
 ![Selic e o Impacto nos Investimentos  ](/images/posts/cotacoes-semana-2-julho-2026-inline-3.webp)
 

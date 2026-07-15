@@ -18,7 +18,7 @@ seo:
 
 ## What ETFs Are
 
-ETF stands for **Exchange Traded Fund**, a market‑traded index fund. In simple terms, an ETF bundles a set of assets – stocks, bonds, commodities – and tracks the performance of an index, such as the Ibovespa or the S&P 500. Each ETF share can be bought or sold on the exchange just like a regular stock, which provides convenience and [liquidity](/en/glossario/en-liquidez).
+ETF stands for **Exchange Traded Fund**, a market‑traded index fund. In simple terms, an ETF bundles a set of assets – stocks, bonds, commodities – and tracks the performance of an index, such as the Ibovespa or the S&P 500. Each ETF share can be bought or sold on the exchange just like a regular [stock](/en/glossario/en-stock), which provides convenience and [liquidity](/en/glossario/en-liquidez).
 
 > **First appearance:** “ETF” (Exchange Traded Fund) – a fund that replicates an index and trades like a stock.
 
@@ -30,15 +30,15 @@ When you buy 10 shares of an ETF that tracks the Ibovespa, you’re effectively 
 
 The fund’s management can be **passive** (simply follows the index) or **active** (seeks to beat the index). Most ETFs in Brazil are passive, which keeps management fees low.
 
-### Yield Example
+### [Yield](/en/glossario/en-yield) Example
 
-Imagine you invest **R$1,000** in an ETF that tracks a fixed‑income index, with an average return of 6 % per year. After one year, your investment would yield:
+Imagine you invest **R$1,000** in an ETF that tracks a fixed‑income index, with an average return of 6 % per year. After one year, your [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) would yield:
 
 - Invested amount: R$1,000  
 - Return: 6 % → R$60  
 - Value at the end of the year: **R$1,060**
 
-If, instead, you placed the same amount in a CDB earning 6.2 % per year, the difference would be just R$2, illustrating how ETF management fees can affect the final outcome.
+If, instead, you placed the same amount in a [CDB](/en/glossario/en-cdb) earning 6.2 % per year, the difference would be just R$2, illustrating how ETF management fees can affect the final outcome.
 
 ## Benefits of ETFs
 
@@ -56,7 +56,7 @@ If, instead, you placed the same amount in a CDB earning 6.2 % per year, the d
 2. **Set your goal** – if you’re focused on the long term, a stock ETF may be suitable; for fixed income, look for ETFs that track the CDI or the Tesouro [Selic](/en/glossario/en-selic).  
 3. **Create a contribution plan** – for example, invest **R$500** each month in a Brazilian stock ETF.  
 4. **Place the purchase order** – select the ETF’s ticker (code), enter the quantity, and confirm the trade.  
-5. **Monitor performance** – use monthly reports or a finance app to see how your investment evolves.
+5. **Monitor performance** – use monthly reports or a [finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) to see how your investment evolves.
 
 ![Como começar a investir](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-4.webp)
 

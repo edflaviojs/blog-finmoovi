@@ -34,7 +34,7 @@ Existem várias formas de investir em dólar no Brasil, incluindo:
 
 
 
-Vamos considerar um exemplo: se você investir R$1.000 em dólar a uma taxa de câmbio de R$4,50 por dólar, você receberá aproximadamente 222 dólares. Se o [valor](/glossario/valor) do dólar aumentar para R$5,00, o valor do seu investimento aumentará para R$1.111.
+Vamos considerar um exemplo: se você investir R$1.000 em dólar a uma [taxa](/glossario/taxa) de câmbio de R$4,50 por dólar, você receberá aproximadamente 222 dólares. Se o [valor](/glossario/valor) do dólar aumentar para R$5,00, o valor do seu investimento aumentará para R$1.111.
 
 ## Riscos do Investimento em Dólar
 Investir em dólar envolve riscos, incluindo:

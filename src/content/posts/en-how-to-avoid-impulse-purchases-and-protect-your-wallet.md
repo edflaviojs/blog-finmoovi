@@ -16,7 +16,7 @@ seo:
   keywords: ["how to avoid impulse purchases","personal finance","savings","money"]
 ---
 
-When the online shopping cart gets full and the credit‑card bill arrives before you even notice, frustration hits hard. The good news is that this behavior can be tamed with a few simple daily tweaks. Let’s get to what really works.
+When the online shopping cart gets full and the [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)‑card bill arrives before you even notice, frustration hits hard. The good news is that this behavior can be tamed with a few simple daily tweaks. Let’s get to what really works.
 
 ## Understand the purchase trigger
 
@@ -28,7 +28,7 @@ A well‑defined [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-na
 
 ![Monte um plano de gastos realista](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-2.webp)
 
-**Practical tip:** Keep a simple spreadsheet or a finance app (like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)) where you log every expense in real time. When the leisure limit reaches 80 % of the budget, the app will send you an alert.
+**Practical tip:** Keep a simple spreadsheet or a finance app (like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)) where you log every expense in real time. When the leisure limit reaches 80 % of the [budget](/en/posts/en-how-to-create-personal-budget), the app will send you an alert.
 
 ## Use the 30‑day rule
 

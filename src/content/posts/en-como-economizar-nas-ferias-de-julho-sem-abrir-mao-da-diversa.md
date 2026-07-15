@@ -25,7 +25,7 @@ seo:
 ---
 
 ## Introduction  
-July is the most anticipated month for anyone looking to escape the routine, but it’s also the period when prices tend to rise – airfare, hotels, and even the electricity bill for summer homes. If you earn around **R$ 3,000** a month, like most formal‑sector workers, it’s easy to blow past your budget and end the month with a red‑ink bank account. The good news is that, with a simple plan and a few habit tweaks, you can enjoy your [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) without compromising your finances. Below are seven steps that will turn your July trip into an economical and enjoyable experience.  
+July is the most anticipated month for anyone looking to escape the routine, but it’s also the period when prices tend to rise – airfare, hotels, and even the electricity bill for summer homes. If you earn around **R$ 3,000** a month, like most formal‑sector workers, it’s easy to blow past your [budget](/en/posts/en-how-to-create-personal-budget) and end the month with a red‑ink bank account. The good news is that, with a simple plan and a few habit tweaks, you can enjoy your [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) without compromising your finances. Below are seven steps that will turn your July trip into an economical and enjoyable experience.  
 
 ---  
 
@@ -139,7 +139,7 @@ Even the best plan can hit unexpected bumps. Use **[FinMoovi](/en/posts/en-5-alt
 | 4 | Stay in Airbnb/hostel | R$ 850 for 5 nights |
 | 5 | Cook part of your meals | R$ 175 for 5 days |
 | 6 | Prioritize free activities | R$ 40‑R$ 80 per day |
-| 7 | Track spending with FinMoovi | Avoids last‑minute surprises |
+| 7 | Track spending with [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) | Avoids last‑minute surprises |
 
 ---  
 

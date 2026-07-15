@@ -70,7 +70,7 @@ O cartão de débito pode ser uma boa opção se você:
 
 
 
-No entanto, é importante lembrar que o cartão de débito pode ter taxas de manutenção e transação, e você pode precisar pagar uma taxa para manter a conta corrente ativa.
+No entanto, é importante lembrar que o cartão de débito pode ter taxas de manutenção e transação, e você pode precisar pagar uma [taxa](/glossario/taxa) para manter a conta corrente ativa.
 
 ## Veredicto
 Em resumo, a escolha entre cartão de crédito e cartão de débito depende do seu perfil financeiro e de como você lida com o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia). Se você tem disciplina para pagar o saldo total até a data de vencimento e quer construir ou melhorar seu histórico de crédito, o cartão de crédito pode ser uma boa opção. No entanto, se você quer evitar dívidas e juros e ter mais controle sobre seus gastos, o cartão de débito pode ser a melhor escolha.
