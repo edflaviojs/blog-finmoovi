@@ -1,0 +1,73 @@
+---
+// Aviso de cookies estilo mini-popup (Terra-like): pequeno, centralizado na
+// base, some ao aceitar e não volta (localStorage). Renderizado pelo Footer,
+// logo presente em todas as páginas sem tocar em cada uma.
+const path = Astro.url.pathname;
+const locale = path.startsWith('/en/') || path === '/en' ? 'en'
+  : path.startsWith('/es/') || path === '/es' ? 'es' : 'pt';
+
+const T = {
+  pt: { pre: 'usa cookies para melhorar sua experiência, conforme a', link: 'Política de Privacidade', btn: 'Continuar', policy: '/privacidade' },
+  en: { pre: 'uses cookies to improve your experience, as per our', link: 'Privacy Policy', btn: 'Continue', policy: '/privacidade' },
+  es: { pre: 'usa cookies para mejorar tu experiencia, según la', link: 'Política de Privacidad', btn: 'Continuar', policy: '/privacidade' },
+}[locale];
+---
+
+<div class="cookie-notice" id="cookie-notice" role="dialog" aria-label="Aviso de cookies" hidden>
+  <p><b>FinMoovi Blog</b> {T.pre} <a href={T.policy}>{T.link}</a>.</p>
+  <button id="cookie-accept">{T.btn}</button>
+</div>
+
+<script>
+  const KEY = 'fm-cookie-ok';
+  const el = document.getElementById('cookie-notice') as HTMLElement;
+  const btn = document.getElementById('cookie-accept') as HTMLButtonElement;
+  try {
+    if (!localStorage.getItem(KEY)) el.hidden = false;
+  } catch (e) { /* sem localStorage → não exibe */ }
+  btn.addEventListener('click', () => {
+    try { localStorage.setItem(KEY, '1'); } catch (e) {}
+    el.remove();
+  });
+</script>
+
+<style>
+  .cookie-notice {
+    position: fixed;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    z-index: var(--z-toast);
+    width: min(92vw, 300px);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+    box-shadow: var(--shadow-lg);
+    font-size: 12px;
+    line-height: 1.55;
+    color: var(--text-secondary);
+    text-align: center;
+  }
+
+  .cookie-notice p { margin: 0; }
+  .cookie-notice b { color: var(--text-primary); }
+
+  .cookie-notice a {
+    color: var(--accent-primary);
+    font-weight: 600;
+  }
+
+  .cookie-notice button {
+    display: block;
+    margin: var(--space-2) auto 0;
+    background: var(--gradient-cta);
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12.5px;
+    padding: 7px 26px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+  }
+</style>

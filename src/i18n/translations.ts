@@ -57,6 +57,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'footer.termos': 'Termos de Uso',
     'footer.cookies': 'Cookies',
     'footer.copyright': `© ${new Date().getFullYear()} ${brand}. Todos os direitos reservados.`,
+    'footer.disclaimer': 'O conteúdo deste blog é educativo e não constitui recomendação de investimento.',
 
     // Glossario
     'glossario.title': 'Glossário',
@@ -163,6 +164,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'footer.termos': 'Terms of Use',
     'footer.cookies': 'Cookies',
     'footer.copyright': `© ${new Date().getFullYear()} ${brand}. All rights reserved.`,
+    'footer.disclaimer': 'The content of this blog is educational and does not constitute investment advice.',
 
     // Glossario
     'glossario.title': 'Glossary',
@@ -269,6 +271,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'footer.termos': 'Términos de Uso',
     'footer.cookies': 'Cookies',
     'footer.copyright': `© ${new Date().getFullYear()} ${brand}. Todos los derechos reservados.`,
+    'footer.disclaimer': 'El contenido de este blog es educativo y no constituye una recomendación de inversión.',
 
     // Glossario
     'glossario.title': 'Glosario',

@@ -1,6 +1,8 @@
 ---
 import { config } from '../../../site.config';
 import { getNavCategories } from '@/utils/nav-categories';
+import CookieNotice from '../shared/CookieNotice.astro';
+import BackToTop from '../shared/BackToTop.astro';
 
 const currentYear = new Date().getFullYear();
 const { brand } = config;
@@ -14,6 +16,7 @@ const footerLinks = {
     { label: 'Glossário', href: '/glossario', i18n: 'footer.link.glossario' },
     { label: 'Ferramentas', href: '/ferramentas', i18n: 'footer.link.ferramentas' },
     { label: 'Estudos', href: '/estudos', i18n: 'footer.link.estudos' },
+    { label: 'Sobre', href: '/sobre', i18n: 'nav.sobre' },
   ],
   app: [
     { label: `Baixar ${config.app.name}`, href: '/app', i18n: 'footer.link.baixar' },
@@ -26,6 +29,12 @@ const footerLinks = {
     { label: 'Termos de Uso', href: '/termos', i18n: 'footer.link.termos' },
     { label: 'Cookies', href: '/cookies', i18n: 'footer.link.cookies' },
   ]
+};
+
+// Iniciais para as bolinhas de redes sociais
+const socialInitials: Record<string, string> = {
+  Instagram: 'IG', X: 'X', YouTube: 'YT', Facebook: 'FB',
+  LinkedIn: 'IN', Pinterest: 'Pin', Bluesky: 'BS', Substack: 'SS',
 };
 
 const socials = [
@@ -41,6 +50,7 @@ const socials = [
 ---
 
 <footer class="footer">
+  <div class="footer-hairline" aria-hidden="true"></div>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
@@ -56,11 +66,6 @@ const socials = [
         <p class="footer-description" data-i18n="footer.desc">
           {config.siteDescription.pt}
         </p>
-        <div class="footer-social">
-          {socials.map(s => (
-            <a href={s.href} target="_blank" rel="noopener" aria-label={s.label}>{s.label}</a>
-          ))}
-        </div>
       </div>
 
       <div class="footer-section">
@@ -91,60 +96,77 @@ const socials = [
       </div>
     </div>
 
+    <div class="footer-socials">
+      {socials.map(s => (
+        <a href={s.href} target="_blank" rel="noopener" aria-label={s.label}>{socialInitials[s.label] || s.label.slice(0, 2).toUpperCase()}</a>
+      ))}
+    </div>
+
     <div class="footer-bottom">
       <p data-i18n="footer.copyright">&copy; {currentYear} {brand.name}. Todos os direitos reservados.</p>
       <p class="footer-disclaimer" data-i18n="footer.disclaimer">
-        Este blog tem caráter educativo. Não constitui recomendação.
+        O conteúdo deste blog é educativo e não constitui recomendação de investimento.
       </p>
     </div>
   </div>
 </footer>
 
+<CookieNotice />
+<BackToTop />
+
 <style>
+  /* Footer luxe: sempre escuro (nos dois temas), fio gradiente no topo */
   .footer {
-    background: var(--bg-secondary);
-    border-top: 1px solid var(--border-default);
-    padding: var(--space-16) 0 var(--space-8);
+    background: #0a0e14;
+    color: #b9c6d4;
+    padding: 0 0 var(--space-8);
     margin-top: var(--space-20);
+  }
+
+  .footer-hairline {
+    height: 2px;
+    background: var(--gradient-cta);
+    opacity: 0.85;
+    margin-bottom: var(--space-12);
   }
 
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-8);
+    gap: 0;
   }
 
   @media (min-width: 768px) {
     .footer-grid {
-      grid-template-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: var(--space-8);
     }
   }
 
   .footer-logo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: var(--space-3);
-    text-decoration: none;
-    margin-bottom: var(--space-4);
+    gap: var(--space-2);
   }
 
-  .footer-logo .logo-icon {
+  .logo-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
-    background: var(--bg-primary);
-    border: 1px solid rgba(var(--brand-cyan-rgb), 0.2);
+    width: 30px;
+    height: 30px;
+    background: #0d1117;
+    border: 1px solid rgba(var(--brand-cyan-rgb), 0.25);
     border-radius: var(--radius-md);
   }
 
-  .footer-logo .logo-text {
+  .logo-text {
     font-weight: 700;
-    color: var(--text-primary);
+    font-size: var(--text-base);
+    color: #ffffff;
   }
 
-  .footer-logo .logo-blog {
+  .logo-blog {
     background: linear-gradient(135deg, var(--brand-cyan), var(--brand-gradient-end));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,72 +175,145 @@ const socials = [
   }
 
   .footer-description {
-    color: var(--text-secondary);
-    font-size: var(--text-sm);
-    line-height: var(--leading-relaxed);
-    max-width: 300px;
-  }
-
-  .footer-social {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2) var(--space-3);
-    margin-top: var(--space-4);
-  }
-
-  .footer-social a {
-    color: var(--text-secondary);
-    font-size: var(--text-xs);
-    transition: color var(--transition-fast);
-  }
-
-  .footer-social a:hover {
-    color: var(--accent-primary);
+    font-size: 13.5px;
+    color: #7e8c9c;
+    margin: var(--space-3) 0 0;
+    max-width: 32ch;
+    line-height: 1.65;
   }
 
   .footer-title {
-    color: var(--text-primary);
-    font-size: var(--text-sm);
-    font-weight: 600;
-    margin-bottom: var(--space-4);
+    margin: 0 0 var(--space-4);
+    font-size: 11px;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
-    letter-spacing: var(--tracking-wide);
+    color: #6b7a8b;
+    font-weight: 700;
   }
 
   .footer-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-3);
-  }
-
-  .footer-list a {
-    color: var(--text-secondary);
-    font-size: var(--text-sm);
-    transition: color var(--transition-fast);
-  }
-
-  .footer-list a:hover {
-    color: var(--accent-primary);
-  }
-
-  .footer-bottom {
-    margin-top: var(--space-12);
-    padding-top: var(--space-8);
-    border-top: 1px solid var(--border-muted);
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
-    align-items: center;
-    text-align: center;
+    font-size: var(--text-sm);
   }
 
-  .footer-bottom p {
-    color: var(--text-tertiary);
+  .footer-list a {
+    color: #aab8c6;
+    transition: color var(--transition-fast);
+  }
+
+  .footer-list a:hover { color: #ffffff; }
+
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    margin-top: var(--space-10);
+    padding-top: var(--space-6);
+    border-top: 1px solid #151d28;
+  }
+
+  .footer-socials a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #232d3a;
+    display: grid;
+    place-items: center;
+    font-size: 11px;
+    font-weight: 800;
+    color: #94a3b3;
+    transition: all var(--transition-base);
+  }
+
+  .footer-socials a:hover {
+    border-color: var(--brand-cyan);
+    color: var(--brand-cyan);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(var(--brand-cyan-rgb), 0.18);
+  }
+
+  .footer-bottom {
+    margin-top: var(--space-6);
+    padding-top: var(--space-5);
+    border-top: 1px solid #1a2330;
+    text-align: center;
     font-size: var(--text-xs);
-    margin-bottom: 0;
+    color: #6b7a8b;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
   }
 
   .footer-disclaimer {
-    font-style: italic;
+    color: #5d6b7a;
+    font-size: 11.5px;
+    max-width: 60ch;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .footer-bottom p { margin: 0; }
+
+  /* Mobile: tudo centralizado, grupos separados por fio, títulos com
+     risquinho gradiente, links em chips uniformes */
+  @media (max-width: 767px) {
+    .footer-grid { text-align: center; }
+
+    .footer-grid > div {
+      padding: var(--space-6) 0;
+      border-top: 1px solid #151d28;
+    }
+
+    .footer-grid > div:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-description { margin-inline: auto; }
+
+    .footer-title { margin-bottom: var(--space-4); }
+
+    .footer-title::after {
+      content: "";
+      display: block;
+      width: 26px;
+      height: 2px;
+      border-radius: 1px;
+      background: var(--gradient-cta);
+      margin: 9px auto 0;
+    }
+
+    .footer-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 9px;
+    }
+
+    .footer-list a {
+      display: inline-block;
+      border: 1px solid #202a37;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 13px;
+      color: #9fb0c1;
+    }
+
+    .footer-list a:hover { border-color: var(--brand-cyan); }
+
+    .footer-socials { margin-top: 0; }
   }
 </style>

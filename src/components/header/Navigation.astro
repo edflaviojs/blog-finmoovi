@@ -1,155 +1,84 @@
 ---
-import { config } from '../../../site.config';
 import { getNavCategories } from '@/utils/nav-categories';
 
-// Categorias do menu — fonte única em site.config (content.categoryNav), filtradas
+// Navegação portal: pills planas e deslizáveis (desktop e mobile).
+// Categorias — fonte única em site.config (content.categoryNav), filtradas
 // pelas que já têm posts. Adicionar categoria lá reflete aqui automaticamente.
+// "Sobre" saiu do menu e vive no footer (decisão do redesign portal).
 const categorias = await getNavCategories();
 
-const navItems = [
+const fixedItems = [
   { label: 'Ferramentas', key: 'nav.ferramentas', href: '/ferramentas' },
-  { label: 'Estudos', key: 'nav.estudos', href: '/estudos' },
   { label: 'Glossário', key: 'nav.glossario', href: '/glossario' },
-  { label: 'Sobre', key: 'nav.sobre', href: '/sobre' },
+  { label: 'Estudos', key: 'nav.estudos', href: '/estudos' },
 ];
 
 const currentPath = Astro.url.pathname;
-const inCategorias = currentPath.startsWith('/categorias/');
+const isActive = (href: string) =>
+  currentPath === href || (href !== '/' && currentPath.startsWith(href));
 ---
 
-<nav class="nav-desktop" aria-label="Navegação principal">
-  <ul class="nav-list">
-    <li>
-      <a href="/" class:list={['nav-link', { active: currentPath === '/' }]} data-i18n="nav.inicio">Início</a>
-    </li>
-    <li class="nav-dropdown">
-      <a
-        href={categorias[0]?.href || '/categorias/dicas'}
-        class:list={['nav-link', 'nav-dropdown-toggle', { active: inCategorias }]}
-        aria-haspopup="true"
-        data-i18n="nav.categorias"
-      >Categorias ▾</a>
-      <ul class="nav-submenu">
-        {categorias.map(c => (
-          <li><a href={c.href} class:list={['nav-sublink', { active: currentPath === c.href }]}>{c.label}</a></li>
-        ))}
-      </ul>
-    </li>
-    {navItems.map(item => (
-      <li>
-        <a
-          href={item.href}
-          class:list={['nav-link', { active: currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href)) }]}
-          data-i18n={item.key}
-        >
-          {item.label}
-        </a>
-      </li>
-    ))}
-  </ul>
-
-  <a href={config.app.url} target="_blank" rel="noopener noreferrer" class="nav-cta" data-i18n="nav.baixarApp">
-    Baixar App
-  </a>
+<nav class="nav-pills" aria-label="Navegação principal">
+  <a href="/" class:list={['pill', { active: currentPath === '/' }]} data-i18n="nav.inicio">Início</a>
+  {categorias.map(c => (
+    <a href={c.href} class:list={['pill', { active: isActive(c.href) }]}>{c.label}</a>
+  ))}
+  {fixedItems.map(item => (
+    <a href={item.href} class:list={['pill', { active: isActive(item.href) }]} data-i18n={item.key}>{item.label}</a>
+  ))}
 </nav>
 
 <style>
-  .nav-desktop {
-    display: none;
-    align-items: center;
-    gap: var(--space-6);
-  }
-
-  @media (min-width: 768px) {
-    .nav-desktop {
-      display: flex;
-    }
-  }
-
-  .nav-list {
+  .nav-pills {
     display: flex;
-    align-items: center;
     gap: var(--space-1);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    min-width: 0;
   }
 
-  .nav-link {
+  .nav-pills::-webkit-scrollbar { display: none; }
+
+  .pill {
     padding: var(--space-2) var(--space-3);
     color: var(--text-secondary);
-    font-size: var(--text-sm);
-    font-weight: 500;
-    border-radius: var(--radius-md);
-    transition: all var(--transition-fast);
-  }
-
-  .nav-link:hover {
-    color: var(--text-primary);
-    background: var(--bg-tertiary);
-  }
-
-  .nav-link.active {
-    color: var(--accent-primary);
-    background: rgba(88, 166, 255, 0.1);
-  }
-
-  .nav-dropdown { position: relative; }
-  .nav-dropdown-toggle { cursor: pointer; }
-
-  .nav-submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 200px;
-    margin-top: var(--space-1);
-    padding: var(--space-2);
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-default);
-    border-radius: var(--radius-md);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    z-index: 100;
-    flex-direction: column;
-    gap: var(--space-1);
-    /* Salvaguarda p/ muitas categorias: rola em vez de estourar a tela */
-    max-height: 70vh;
-    overflow-y: auto;
-  }
-
-  .nav-dropdown:hover .nav-submenu,
-  .nav-dropdown:focus-within .nav-submenu {
-    display: flex;
-  }
-
-  .nav-sublink {
-    display: block;
-    padding: var(--space-2) var(--space-3);
-    color: var(--text-secondary);
-    font-size: var(--text-sm);
-    border-radius: var(--radius-sm);
-    transition: all var(--transition-fast);
-  }
-
-  .nav-sublink:hover {
-    color: var(--text-primary);
-    background: var(--bg-tertiary);
-  }
-
-  .nav-sublink.active {
-    color: var(--accent-primary);
-  }
-
-  .nav-cta {
-    padding: var(--space-2) var(--space-4);
-    background: var(--gradient-cta);
-    color: #fff;
     font-size: var(--text-sm);
     font-weight: 600;
     border-radius: var(--radius-full);
+    border: 1px solid transparent;
+    white-space: nowrap;
     transition: all var(--transition-fast);
   }
 
-  .nav-cta:hover {
-    opacity: 0.9;
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-glow);
+  .pill:hover {
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
+  }
+
+  .pill.active {
+    background: var(--gradient-cta);
+    color: #fff;
+  }
+
+  /* Mobile: as pills descem para a segunda linha do header, com borda */
+  @media (max-width: 767px) {
+    .nav-pills {
+      order: 3;
+      flex-basis: 100%;
+      padding: var(--space-1) 0 var(--space-2);
+    }
+
+    .pill {
+      border-color: var(--border-muted);
+      background: var(--bg-primary);
+      font-size: 13px;
+      padding: 7px 14px;
+    }
+
+    .pill.active {
+      border-color: transparent;
+      background: var(--gradient-cta);
+    }
   }
 </style>
