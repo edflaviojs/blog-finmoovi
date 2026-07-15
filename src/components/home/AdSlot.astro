@@ -55,6 +55,68 @@ const promo = variant === 'rail' ? config.ads.rail : config.ads.mid;
     text-align: center;
     gap: var(--space-3);
     min-height: 240px;
+    position: relative;
+  }
+
+  /* ===== MOTION do banner lateral: quebra o bloco estático da coluna =====
+     4 camadas: brilho magenta orbitando + varredura de luz diagonal +
+     ícone flutuando + CTA pulsando com anel de energia */
+  .promo-rail::before {
+    content: "";
+    position: absolute;
+    inset: -45%;
+    background: radial-gradient(circle at 28% 22%, rgba(255, 94, 196, 0.38), transparent 52%);
+    animation: promo-orbit 7s linear infinite;
+    pointer-events: none;
+  }
+
+  .promo-rail::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, transparent 32%, rgba(255, 255, 255, 0.16) 48%, transparent 62%);
+    transform: translateX(-130%);
+    animation: promo-shine 3.8s ease infinite;
+    pointer-events: none;
+  }
+
+  .promo-rail .promo-icon,
+  .promo-rail .promo-copy,
+  .promo-rail .promo-cta {
+    position: relative;
+    z-index: 1;
+  }
+
+  .promo-rail .promo-icon {
+    animation: promo-float 2.8s ease-in-out infinite;
+  }
+
+  .promo-rail .promo-cta {
+    animation: promo-cta-pulse 2.2s ease infinite;
+  }
+
+  @keyframes promo-orbit {
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes promo-shine {
+    0% { transform: translateX(-130%); }
+    55%, 100% { transform: translateX(130%); }
+  }
+
+  @keyframes promo-float {
+    0%, 100% { transform: translateY(0) rotate(-5deg) scale(1); }
+    50% { transform: translateY(-9px) rotate(6deg) scale(1.1); }
+  }
+
+  @keyframes promo-cta-pulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 157, 92, 0.55); }
+    50% { transform: scale(1.06); box-shadow: 0 0 0 14px rgba(255, 157, 92, 0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .promo-rail::before, .promo-rail::after,
+    .promo-rail .promo-icon, .promo-rail .promo-cta { animation: none; }
   }
 
   .promo-strip { min-height: 96px; flex-wrap: wrap; }
