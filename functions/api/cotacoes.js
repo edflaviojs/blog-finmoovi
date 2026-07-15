@@ -7,7 +7,8 @@ import siteConfig from '../_config.json';
 
 const UPSTREAM = {
   awesome: 'https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-USD',
-  ibovBrapi: 'https://brapi.dev/api/quote/%5EBVSP?token=demo',
+  // Token real via env BRAPI_TOKEN (painel Cloudflare Pages); 'demo' é instável
+  ibovBrapi: (token) => 'https://brapi.dev/api/quote/%5EBVSP?token=' + (token || 'demo'),
   ibovAwesome: 'https://economia.awesomeapi.com.br/last/IBOV',
   selic: 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json',
   // Fallbacks que aceitam requisições de data center (AwesomeAPI bloqueia tráfego
@@ -46,7 +47,7 @@ async function fetchJson(url, timeoutMs = 5000) {
   return res.json();
 }
 
-async function buildData() {
+async function buildData(env) {
   const out = { usdbrl: null, eurbrl: null, btcusd: null, ibov: null, selic: null };
 
   // AwesomeAPI — USD, EUR, BTC (com % de variação)
@@ -78,7 +79,7 @@ async function buildData() {
 
   // IBOV — brapi.dev (token demo é instável; timeout curto), fallback AwesomeAPI
   try {
-    const d = await fetchJson(UPSTREAM.ibovBrapi, 2500);
+    const d = await fetchJson(UPSTREAM.ibovBrapi(env && env.BRAPI_TOKEN), 2500);
     if (d.results && d.results[0]) {
       out.ibov = { value: d.results[0].regularMarketPrice, pct: d.results[0].regularMarketChangePercent };
     }
@@ -101,7 +102,7 @@ async function buildData() {
 export async function onRequestGet(context) {
   const headers = corsHeaders(context.request);
   try {
-    const data = await buildData();
+    const data = await buildData(context.env);
     return new Response(JSON.stringify(data), { status: 200, headers });
   } catch (e) {
     return new Response(JSON.stringify({ error: true }), { status: 200, headers });
