@@ -3,6 +3,10 @@ import { config } from '../../../site.config';
 
 /**
  * Slot de publicidade própria (estático, sem JS).
+ * IMPORTANTE: classes "promo-*" de propósito — nomes com "ad-" (ad-slot,
+ * ad-rail...) estão nas listas dos bloqueadores de anúncio (EasyList) e os
+ * banners sumiam para usuários com adblock. São banners PRÓPRIOS, não ads
+ * de terceiros.
  * variant="rail" → retângulo vertical na coluna lateral
  * variant="strip" → faixa horizontal no meio do conteúdo
  */
@@ -11,20 +15,20 @@ interface Props {
   variant: 'rail' | 'strip';
 }
 const { locale, variant } = Astro.props;
-const ad = variant === 'rail' ? config.ads.rail : config.ads.mid;
+const promo = variant === 'rail' ? config.ads.rail : config.ads.mid;
 ---
 
-<a class={`ad-slot ad-${variant} ad-theme-${ad.theme}`} href={ad.href} target="_blank" rel="noopener">
-  <span class="ad-icon" aria-hidden="true">{ad.icon}</span>
-  <span class="ad-copy">
-    <strong>{ad.title[locale]}</strong>
-    <small>{ad.text[locale]}</small>
+<a class={`promo-slot promo-${variant} promo-theme-${promo.theme}`} href={promo.href} target="_blank" rel="noopener">
+  <span class="promo-icon" aria-hidden="true">{promo.icon}</span>
+  <span class="promo-copy">
+    <strong>{promo.title[locale]}</strong>
+    <small>{promo.text[locale]}</small>
   </span>
-  <span class="ad-cta">{ad.cta[locale]}</span>
+  <span class="promo-cta">{promo.cta[locale]}</span>
 </a>
 
 <style>
-  .ad-slot {
+  .promo-slot {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,50 +40,52 @@ const ad = variant === 'rail' ? config.ads.rail : config.ads.mid;
     transition: transform var(--transition-base), box-shadow var(--transition-base);
   }
 
-  .ad-slot:hover {
+  .promo-slot:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
   }
 
-  .ad-theme-voz { background: linear-gradient(105deg, #0d1117 30%, #12303a 70%, #3a1030); }
-  .ad-theme-moedas { background: linear-gradient(105deg, #04141f, #0a3d33 60%, #04141f); }
-  .ad-theme-funil { background: radial-gradient(130% 160% at 15% 0%, #56123f 0%, #16070f 60%); }
-  .ad-theme-offline { background: linear-gradient(105deg, #071a12, #103a24 60%, #071a12); }
+  .promo-theme-voz { background: linear-gradient(105deg, #0d1117 30%, #12303a 70%, #3a1030); }
+  .promo-theme-moedas { background: linear-gradient(105deg, #04141f, #0a3d33 60%, #04141f); }
+  .promo-theme-funil { background: radial-gradient(130% 160% at 15% 0%, #56123f 0%, #16070f 60%); }
+  .promo-theme-offline { background: linear-gradient(105deg, #071a12, #103a24 60%, #071a12); }
 
-  .ad-rail {
+  .promo-rail {
     flex-direction: column;
     text-align: center;
     gap: var(--space-3);
     min-height: 240px;
   }
 
-  .ad-strip { min-height: 96px; flex-wrap: wrap; }
+  .promo-strip { min-height: 96px; flex-wrap: wrap; }
 
-  .ad-icon { font-size: 34px; line-height: 1; }
+  .promo-icon { font-size: 34px; line-height: 1; }
 
-  .ad-copy {
+  .promo-copy {
     display: flex;
     flex-direction: column;
     gap: 2px;
   }
 
-  .ad-rail .ad-copy { align-items: center; }
+  .promo-rail .promo-copy { align-items: center; }
 
-  .ad-copy strong {
+  .promo-copy strong {
     font-size: clamp(15px, 2vw, 21px);
     letter-spacing: -0.01em;
     line-height: 1.25;
     color: #fff;
   }
 
-  .ad-copy small {
+  .promo-copy small {
     font-size: 13px;
     color: #a9c3d2;
   }
 
-  .ad-cta {
-    background: var(--brand-cyan);
-    color: #062126;
+  /* Cores literais: o fundo do banner é sempre escuro, o botão precisa ser
+     vivo nos dois temas (var(--brand-cyan) escurece no tema claro) */
+  .promo-cta {
+    background: #00F0FF;
+    color: #04262b;
     font-weight: 800;
     padding: 8px 16px;
     border-radius: var(--radius-full);
@@ -87,7 +93,7 @@ const ad = variant === 'rail' ? config.ads.rail : config.ads.mid;
     white-space: nowrap;
   }
 
-  .ad-theme-funil .ad-cta { background: #ff9d5c; color: #33130a; }
-  .ad-theme-moedas .ad-cta { background: #6ff2b5; color: #04291a; }
-  .ad-theme-offline .ad-cta { background: #8be89f; color: #0a2912; }
+  .promo-theme-funil .promo-cta { background: #ff9d5c; color: #33130a; }
+  .promo-theme-moedas .promo-cta { background: #6ff2b5; color: #04291a; }
+  .promo-theme-offline .promo-cta { background: #8be89f; color: #0a2912; }
 </style>

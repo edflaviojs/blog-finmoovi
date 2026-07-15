@@ -165,6 +165,7 @@ const schemaBreadcrumbItems = [
           localStorage.setItem(KEY, JSON.stringify({
             url: location.pathname,
             title: document.querySelector('h1')?.textContent?.trim() || document.title,
+            img: document.querySelector<HTMLMetaElement>('meta[property="og:image"]')?.content || '',
             progress,
             ts: Date.now(),
           }));

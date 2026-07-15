@@ -12,13 +12,9 @@ const langs = ALL_LANGS.filter(l => config.locales.includes(l.code));
 
 {langs.length > 1 && (
 <div class="lang-switcher" id="lang-switcher">
+  <!-- Bolinha com a sigla do idioma atual (estilo do mockup portal) -->
   <button class="lang-toggle" id="lang-toggle" aria-label="Selecionar idioma" aria-expanded="false">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="10"/>
-      <line x1="2" y1="12" x2="22" y2="12"/>
-      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-    </svg>
-    <span class="lang-current-flag" id="lang-current-flag">🇧🇷</span>
+    <span class="lang-current-code" id="lang-current-code">PT</span>
   </button>
 
   <div class="lang-dropdown" id="lang-dropdown" aria-hidden="true" inert>
@@ -36,7 +32,7 @@ const langs = ALL_LANGS.filter(l => config.locales.includes(l.code));
 <script>
   var toggle = document.getElementById('lang-toggle');
   var dropdown = document.getElementById('lang-dropdown');
-  var currentFlag = document.getElementById('lang-current-flag');
+  var currentCode = document.getElementById('lang-current-code');
   var options = document.querySelectorAll('.lang-option');
   var checks = document.querySelectorAll('.lang-check');
 
@@ -123,8 +119,7 @@ const langs = ALL_LANGS.filter(l => config.locales.includes(l.code));
   });
 
   function updateLang(lang) {
-    var flags = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸' };
-    if (currentFlag) currentFlag.textContent = flags[lang] || '🇧🇷';
+    if (currentCode) currentCode.textContent = (lang || 'pt').toUpperCase();
     checks.forEach(function(c) {
       c.style.display = c.getAttribute('data-check') === lang ? 'inline' : 'none';
     });
@@ -138,28 +133,39 @@ const langs = ALL_LANGS.filter(l => config.locales.includes(l.code));
   }
 
   .lang-toggle {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-    padding: var(--space-2) var(--space-3);
-    border-radius: var(--radius-md);
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
     color: var(--text-secondary);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    cursor: pointer;
+    flex-shrink: 0;
     transition: all var(--transition-fast);
-    border: 1px solid transparent;
   }
 
   .lang-toggle:hover {
     color: var(--text-primary);
-    background: var(--bg-tertiary);
+    border-color: var(--brand-cyan);
+    transform: scale(1.06);
   }
 
   .lang-toggle[aria-expanded="true"] {
-    background: rgba(var(--brand-cyan-rgb), 0.06);
-    border-color: rgba(var(--brand-cyan-rgb), 0.15);
+    border-color: var(--brand-cyan);
+    color: var(--text-primary);
   }
 
-  .lang-current-flag {
-    font-size: 13px;
+  .lang-current-code {
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+
+  @media (max-width: 767px) {
+    .lang-toggle { width: 31px; height: 31px; }
+    .lang-current-code { font-size: 9.5px; }
   }
 
   .lang-dropdown {

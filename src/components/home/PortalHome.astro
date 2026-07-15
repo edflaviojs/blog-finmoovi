@@ -150,6 +150,9 @@ const T = {
   <!-- Continue lendo (preenchido pelo navegador via localStorage) -->
   <div class="resume reveal" id="resume-reading" hidden
     data-title={T.continueTitle} data-resume={T.retomar} data-stopped={T.parou}>
+    <div class="resume-thumb" id="resume-thumb" hidden>
+      <img id="resume-img" src="" alt="" loading="lazy" width="74" height="54" />
+    </div>
     <div class="resume-info">
       <span class="eyebrow">{T.continueTitle}</span>
       <h3 id="resume-title"></h3>
@@ -221,7 +224,7 @@ const T = {
     </>
   )}
 
-  <div class="ad-strip-wrap reveal">
+  <div class="promo-strip-wrap reveal">
     <AdSlot locale={locale} variant="strip" />
   </div>
 
@@ -276,7 +279,11 @@ const T = {
   )}
 </div>
 
-<!-- NEWSLETTER full-bleed -->
+<!-- Carrossel de banners (penúltima seção) -->
+<BillboardCarousel locale={locale} offset={2} />
+
+<!-- NEWSLETTER full-bleed — ÚLTIMA seção antes do rodapé, sempre CLARA nos
+     dois temas: quebra visual proposital entre o carrossel e o rodapé escuros -->
 <section class="news-band reveal">
   <div class="news-bg" aria-hidden="true"></div>
   <div class="news-in">
@@ -290,11 +297,6 @@ const T = {
     <p class="news-msg" id="portal-news-msg" aria-live="polite"></p>
   </div>
 </section>
-
-<!-- margem negativa anula o margin-top do Footer: sem faixa branca entre eles -->
-<div class="bb-bottom">
-  <BillboardCarousel locale={locale} offset={2} />
-</div>
 
 <script>
   // ===== Reveal ao rolar
@@ -314,6 +316,11 @@ const T = {
         && Date.now() - (r.ts || 0) < 30 * 24 * 60 * 60 * 1000;
       if (fresh) {
         const box = document.getElementById('resume-reading') as HTMLElement;
+        if (r.img) {
+          const img = document.getElementById('resume-img') as HTMLImageElement;
+          img.src = r.img;
+          (document.getElementById('resume-thumb') as HTMLElement).hidden = false;
+        }
         (document.getElementById('resume-title') as HTMLElement).textContent = r.title;
         (document.getElementById('resume-bar-fill') as HTMLElement).style.width = Math.round(r.progress * 100) + '%';
         (document.getElementById('resume-note') as HTMLElement).textContent =
@@ -355,8 +362,6 @@ const T = {
   }
 
   .only-mobile { display: none; }
-
-  .bb-bottom { margin-bottom: calc(var(--space-20) * -1); }
 
   /* ===== Faixa AGORA ===== */
   .breaking { background: var(--bg-tertiary); border-bottom: 1px solid var(--border-muted); font-size: var(--text-sm); }
@@ -489,6 +494,9 @@ const T = {
     flex-wrap: wrap;
   }
 
+  .resume-thumb { width: 74px; height: 54px; border-radius: var(--radius-md); overflow: hidden; flex-shrink: 0; background: var(--bg-tertiary); }
+  .resume-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
   .resume-info { flex: 1; min-width: 220px; }
   .resume-info .eyebrow { display: block; margin-bottom: 2px; }
   .resume-info h3 { margin: 0 0 var(--space-2); font-size: 15.5px; letter-spacing: -0.01em; color: var(--text-primary); }
@@ -530,7 +538,7 @@ const T = {
   .mini h3 { margin: 3px 0 0; font-size: 15.5px; line-height: 1.3; letter-spacing: -0.01em; color: var(--text-primary); }
   .mini:hover h3 { color: var(--accent-primary); }
 
-  .ad-strip-wrap { margin: var(--space-8) 0; }
+  .promo-strip-wrap { margin: var(--space-8) 0; }
 
   /* ===== Disclaimer ===== */
   .home-disclaimer {
@@ -561,20 +569,23 @@ const T = {
   .gloss-sub { color: var(--text-tertiary); font-size: 12.5px; margin-top: -6px; }
   .chip-all { color: var(--accent-primary) !important; }
 
-  /* ===== Newsletter full-bleed ===== */
-  .news-band { position: relative; margin-top: var(--space-12); overflow: hidden; background: #0d1117; }
-  .news-bg { position: absolute; inset: 0; background: radial-gradient(80% 140% at 15% 0%, rgba(var(--brand-cyan-rgb), 0.16), transparent 50%), radial-gradient(70% 130% at 90% 100%, rgba(169, 16, 121, 0.22), transparent 55%); }
-  .news-in { position: relative; max-width: 720px; margin: 0 auto; padding: var(--space-12) var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); align-items: center; text-align: center; color: #fff; }
+  /* ===== Newsletter full-bleed — banda CLARA nos dois temas =====
+     Fica entre o carrossel (escuro) e o rodapé (escuro): a cor clara com
+     brilhos da marca cria a quebra visual pedida no design. A margem
+     negativa colapsa com o margin-top do Footer → cola direto no rodapé. */
+  .news-band { position: relative; margin-top: 0; margin-bottom: calc(var(--space-20) * -1); overflow: hidden; background: #eef3fa; }
+  .news-bg { position: absolute; inset: 0; background: radial-gradient(80% 140% at 15% 0%, rgba(0, 200, 215, 0.14), transparent 50%), radial-gradient(70% 130% at 90% 100%, rgba(169, 16, 121, 0.10), transparent 55%); }
+  .news-in { position: relative; max-width: 720px; margin: 0 auto; padding: var(--space-12) var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); align-items: center; text-align: center; color: #0d1117; }
   .news-ico { font-size: 40px; line-height: 1; }
-  /* cor explícita: headings globais têm color própria e apagariam o branco */
-  .news-in h2 { margin: 0; font-size: clamp(22px, 3vw, 34px); letter-spacing: -0.02em; text-wrap: balance; color: #fff; }
-  .news-in p { margin: 0 0 var(--space-2); color: #93a5b6; font-size: 15px; line-height: 1.65; }
+  /* cores explícitas: a banda é clara independentemente do tema */
+  .news-in h2 { margin: 0; font-size: clamp(22px, 3vw, 34px); letter-spacing: -0.02em; text-wrap: balance; color: #0d1117; }
+  .news-in p { margin: 0 0 var(--space-2); color: #47546a; font-size: 15px; line-height: 1.65; }
   .news-form { display: flex; gap: var(--space-2); flex-wrap: wrap; justify-content: center; width: 100%; }
-  .news-form input { background: #161b22; border: 1px solid #2a3441; color: #fff; border-radius: var(--radius-full); padding: 13px 20px; font-size: var(--text-sm); flex: 1 1 240px; max-width: 340px; text-align: center; }
-  .news-form input::placeholder { color: #64748b; }
-  .news-form button { background: var(--gradient-cta); color: #fff; border: 0; font-weight: 800; font-size: var(--text-sm); padding: 13px 28px; border-radius: var(--radius-full); cursor: pointer; transition: transform var(--transition-fast); }
+  .news-form input { background: #ffffff; border: 1px solid #c9d6e6; color: #0d1117; border-radius: var(--radius-full); padding: 13px 20px; font-size: var(--text-sm); flex: 1 1 240px; max-width: 340px; text-align: center; }
+  .news-form input::placeholder { color: #8b99ab; }
+  .news-form button { background: linear-gradient(90deg, #00c8d7, #A91079); color: #fff; border: 0; font-weight: 800; font-size: var(--text-sm); padding: 13px 28px; border-radius: var(--radius-full); cursor: pointer; transition: transform var(--transition-fast); }
   .news-form button:hover { transform: translateY(-2px); }
-  .news-msg { margin: 0; font-size: 13px; color: #3fca86; min-height: 1.2em; }
+  .news-msg { margin: 0; font-size: 13px; color: #1a9e5c; min-height: 1.2em; }
 
   /* ===== Mobile ===== */
   @media (max-width: 900px) {
@@ -591,9 +602,13 @@ const T = {
     .manchete.right li::before { right: auto; left: 0; }
     .manchete.in-grid { margin-top: 0; padding-top: var(--space-5); }
 
-    .resume { flex-direction: column; text-align: center; }
+    /* Continue lendo compacto e elegante no mobile (sem thumb, tudo centrado) */
+    .resume { flex-direction: column; text-align: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); }
+    .resume-thumb { display: none; }
+    .resume-info { min-width: 0; }
+    .resume-info h3 { font-size: 15px; }
     .resume-bar { margin-inline: auto; }
-    .resume-cta { margin-inline: auto; }
+    .resume-cta { margin-inline: auto; margin-top: var(--space-1); }
   }
 
   @media (max-width: 560px) {

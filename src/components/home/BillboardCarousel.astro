@@ -148,7 +148,8 @@ const slides = base.map((_, i) => base[(i + offset) % base.length]);
 
   .bb-copy h2 em {
     font-style: normal;
-    background: linear-gradient(90deg, var(--brand-cyan), #ff5ec4);
+    /* literal: var(--brand-cyan) escurece no tema claro e apagava o destaque */
+    background: linear-gradient(90deg, #00F0FF, #ff5ec4);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -162,8 +163,9 @@ const slides = base.map((_, i) => base[(i + offset) % base.length]);
   }
 
   .bb-cta {
-    background: var(--brand-cyan);
-    color: #062126;
+    /* ciano vivo literal + texto quase-preto: contraste alto nos 2 temas */
+    background: #00F0FF;
+    color: #04262b;
     font-weight: 800;
     padding: 13px 28px;
     border-radius: var(--radius-full);
@@ -173,6 +175,8 @@ const slides = base.map((_, i) => base[(i + offset) % base.length]);
   }
 
   .bb-cta:hover { transform: scale(1.06); }
+  /* Slide voz: botão no gradiente da marca com texto branco — pop imediato */
+  .bb-voz .bb-cta { background: linear-gradient(90deg, #00c8d7, #A91079); color: #fff; }
   .bb-moedas .bb-cta { background: #6ff2b5; color: #04291a; }
   .bb-funil .bb-cta { background: #ff9d5c; color: #33130a; }
   .bb-offline .bb-cta { background: #8be89f; color: #0a2912; }
