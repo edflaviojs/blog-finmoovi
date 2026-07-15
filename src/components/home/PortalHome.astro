@@ -279,8 +279,10 @@ const T = {
   )}
 </div>
 
-<!-- Carrossel de banners (penúltima seção) -->
-<BillboardCarousel locale={locale} offset={2} />
+<!-- Carrossel de banners (penúltima seção) — com respiro suave após o conteúdo -->
+<div class="bb-pre-news">
+  <BillboardCarousel locale={locale} offset={2} />
+</div>
 
 <!-- NEWSLETTER full-bleed — ÚLTIMA seção antes do rodapé, sempre CLARA nos
      dois temas: quebra visual proposital entre o carrossel e o rodapé escuros -->
@@ -362,6 +364,10 @@ const T = {
   }
 
   .only-mobile { display: none; }
+
+  /* Respiro entre o fim do conteúdo (glossário) e o carrossel de banners —
+     mesma cadência das demais seções, sem a emenda seca */
+  .bb-pre-news { margin-top: var(--space-12); }
 
   /* ===== Faixa AGORA ===== */
   .breaking { background: var(--bg-tertiary); border-bottom: 1px solid var(--border-muted); font-size: var(--text-sm); }
