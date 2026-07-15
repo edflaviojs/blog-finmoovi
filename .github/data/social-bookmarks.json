@@ -158,5 +158,85 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "como-evitar-compras-por-impulso-e-proteger-seu-bolso",
+    "title": "Como evitar compras por impulso e proteger seu bolso",
+    "url": "https://blog.finmoovi.com/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso",
+    "submittedAt": "2026-07-15T16:13:22.143Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1791530180
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel",
+    "title": "ETFs: o que são e como investir de forma simples e rentável",
+    "url": "https://blog.finmoovi.com/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel",
+    "submittedAt": "2026-07-15T16:13:22.814Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1791530182
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-",
+    "title": "Você perde o controle dos gastos quando viaja usando moedas diferentes?",
+    "url": "https://blog.finmoovi.com/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-",
+    "submittedAt": "2026-07-15T16:13:23.330Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1791530186
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa",
+    "title": "Como economizar nas férias de julho sem abrir mão da diversão",
+    "url": "https://blog.finmoovi.com/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa",
+    "submittedAt": "2026-07-15T16:13:23.698Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1791530187
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
