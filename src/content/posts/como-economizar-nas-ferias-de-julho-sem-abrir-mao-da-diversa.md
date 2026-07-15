@@ -25,7 +25,7 @@ seo:
 ---
 
 ## Introdução
-Julho é o mês mais esperado por quem quer fugir da rotina, mas também o período em que os preços tendem a subir – passagens aéreas, hotéis e até a conta de energia nas casas de veraneio. Se você ganha cerca de **R$ 3.000** por mês, como a maioria dos trabalhadores formais, pode ser fácil sair do orçamento e acabar no fim do mês com a conta bancária no vermelho. A boa notícia é que, com um planejamento simples e algumas trocas de hábito, é possível curtir as [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) sem comprometer suas finanças. A seguir, apresento sete passos que vão transformar a sua viagem de julho em uma experiência econômica e prazerosa.
+Julho é o mês mais esperado por quem quer fugir da rotina, mas também o período em que os preços tendem a subir – passagens aéreas, hotéis e até a conta de energia nas casas de veraneio. Se você ganha cerca de **R$ 3.000** por mês, como a maioria dos trabalhadores formais, pode ser fácil sair do [orçamento](/posts/como-criar-orcamento-pessoal) e acabar no fim do mês com a conta bancária no vermelho. A boa notícia é que, com um planejamento simples e algumas trocas de hábito, é possível curtir as [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) sem comprometer suas finanças. A seguir, apresento sete passos que vão transformar a sua viagem de julho em uma experiência econômica e prazerosa.
 
 ---
 
@@ -83,7 +83,7 @@ A [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme
 
 ## 4. Hospedagem inteligente: Airbnb, hostels ou troca de casas
 
-### Estratégias de economia
+### Estratégias de [economia](/posts/cashback-inteligente)
 - **Airbnb**: procure “quartos privados” em bairros residenciais; a diferença para um hotel de 3 estrelas pode ser de 40 % a 60 %.
 - **Hostels**: camas em dormitórios custam entre R$ 40 e R$ 80 por noite.
 - **Casa de amigos/família**: troque favores (cuidar de pets, por exemplo) e economize a diária inteira.

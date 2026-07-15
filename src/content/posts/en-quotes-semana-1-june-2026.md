@@ -31,7 +31,7 @@ The [Selic rate](/en/glossario/en-selic), which is the [economy](/en/posts/en-5-
 
 ## Practical Tip for Individual Investors
 
-A practical tip for individual investors is to diversify your investment portfolio. With the [dollar](/en/posts/en-quotes-semana-4-june-2026) at R$ 5.03 and the euro at R$ 5.84, it may be a good time to invest in foreign currency assets. Additionally, it's important not to forget investing in [fixed income](/en/glossario/en-renda-fixa), such as treasury bonds, to have a more stable income source. Remember that [diversification](/en/glossario/en-diversificacao) is the key to minimizing risks and maximizing gains.
+A practical tip for individual investors is to diversify your [investment portfolio](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel). With the [dollar](/en/posts/en-quotes-semana-4-june-2026) at R$ 5.03 and the euro at R$ 5.84, it may be a good time to invest in foreign currency assets. Additionally, it's important not to forget investing in [fixed income](/en/glossario/en-renda-fixa), such as treasury bonds, to have a more stable income source. Remember that [diversification](/en/glossario/en-diversificacao) is the key to minimizing risks and maximizing gains.
 
 ## What to Expect for Next Week
 

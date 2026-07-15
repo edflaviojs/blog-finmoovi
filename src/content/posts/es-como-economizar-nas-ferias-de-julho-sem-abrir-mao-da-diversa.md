@@ -25,7 +25,7 @@ seo:
 ---
 
 ## Introducción  
-Julio es el mes más esperado por quien quiere escapar de la rutina, pero también el periodo en que los precios tienden a subir: pasajes aéreos, hoteles e incluso la cuenta de energía en las casas de veraneo. Si ganas alrededor de **R$ 3.000** al mes, como la mayoría de los trabajadores formales, puede ser fácil salir del presupuesto y terminar el mes con la cuenta bancaria en rojo. La buena noticia es que, con una planificación sencilla y algunos cambios de hábito, es posible disfrutar de las [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) sin comprometer tus finanzas. A continuación, presento siete pasos que transformarán tu viaje de julio en una experiencia económica y placentera.  
+Julio es el mes más esperado por quien quiere escapar de la rutina, pero también el periodo en que los precios tienden a subir: pasajes aéreos, hoteles e incluso la cuenta de energía en las casas de veraneo. Si ganas alrededor de **R$ 3.000** al mes, como la mayoría de los trabajadores formales, puede ser fácil salir del [presupuesto](/es/posts/es-como-crear-presupuesto-personal) y terminar el mes con la cuenta bancaria en rojo. La buena noticia es que, con una planificación sencilla y algunos cambios de hábito, es posible disfrutar de las [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) sin comprometer tus finanzas. A continuación, presento siete pasos que transformarán tu viaje de julio en una experiencia económica y placentera.  
 
 ---  
 
@@ -73,7 +73,7 @@ Para trayectos de hasta 800 km, el autobús suele ser un 30 % más barato qu
 - Viaje 600 km en coche: combustible (R$ 250) + peajes (R$ 70) = R$ 320  
 - Pasaje de autobús: R$ 180  
 
-El ahorro aquí puede llegar a **R$ 140** por persona. Si viajas en grupo, vale aún más, ya que el costo del coche se puede dividir, pero el autobús sigue siendo la opción más barata.  
+El [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) aquí puede llegar a **R$ 140** por persona. Si viajas en grupo, vale aún más, ya que el costo del coche se puede dividir, pero el autobús sigue siendo la opción más barata.  
 
 ---  
 

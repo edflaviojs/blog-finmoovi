@@ -25,9 +25,9 @@ A semana passou sem grandes surpresas nos principais indicadores, mas alguns mov
 
 
 
-## Dólar e Euro: Tendência da Semana  
+## [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana  
 
-- **Dólar (USD/BRL = R$ 5,11)** – O real se manteve estável em torno de R$ 5,10‑5,12. O dólar acabou a semana levemente mais fraco (cerca de 0,3 %), puxado por dados de [inflação](/glossario/inflacao) nos EUA que ficaram abaixo do esperado. Na prática, isso significa que a compra de produtos importados ou de viagens ao exterior ficou um pouquinho mais barata, mas ainda longe de representar uma diferença significativa no seu dia a dia.  
+- **[Dólar](/posts/cotacoes-semana-3-junho-2026) (USD/BRL = R$ 5,11)** – O real se manteve estável em torno de R$ 5,10‑5,12. O dólar acabou a semana levemente mais fraco (cerca de 0,3 %), puxado por dados de [inflação](/glossario/inflacao) nos EUA que ficaram abaixo do esperado. Na prática, isso significa que a compra de produtos importados ou de viagens ao exterior ficou um pouquinho mais barata, mas ainda longe de representar uma diferença significativa no seu dia a dia.  
 
 - **Euro (EUR/BRL = R$ 5,83)** – O euro seguiu a mesma direção do dólar, recuando cerca de 0,2 % ao final da semana. A queda foi impulsionada por um enfraquecimento da zona‑euro diante das discussões sobre a política monetária do BCE. Para quem tem contas ou investimentos em euros, a boa notícia é que a cotação está mais favorável para quem deseja trazer o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta ao Brasil.  
 

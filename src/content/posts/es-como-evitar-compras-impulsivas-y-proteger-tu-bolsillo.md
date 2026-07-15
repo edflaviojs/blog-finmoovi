@@ -22,7 +22,7 @@ Cuando el carrito de compras online se llena y la cuenta de la tarjeta llega ant
 
 La mayoría de las compras impulsivas ocurre cuando estamos cansados, estresados o simplemente aburridos. En esos momentos, la pantalla del celular o el escaparate de la tienda parece ofrecer una solución rápida: “Un regalo para mí”. Reconocer el estado emocional que precede la compra ya es la mitad de la batalla. Anota rápidamente lo que sientes antes de hacer clic en “finalizar compra”. Esa pausa de 30 segundos suele ser suficiente para percibir que la necesidad es momentánea.
 
-## Elabora un plan de gastos realista
+## Elabora un plan de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) realista
 
 Un [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) bien definido reduce la sensación de escasez que alimenta el impulso. Supongamos que recibes un salario de R$ 4.500. Después de pagar alquiler, cuentas de agua y luz, transporte y alimentación, quizás te queden R$ 800 para gastos variables. Destina, por ejemplo, R$ 300 para ocio y regalos. Cuando ese monto se agote, la regla es detenerse. Al visualizar el límite, la compra impulsiva pierde el brillo de “descuento irresistible”.
 
@@ -46,7 +46,7 @@ Crear nuevos hábitos requiere pequeñas victorias diarias. Sustituye la ida al 
 - **Tarjetas de débito con bloqueo por categoría**: algunos bancos permiten bloquear temporalmente compras en tiendas de ropa o electrónica, evitando el impulso en el momento.
 - **Lista de deseos online**: en lugar de comprar inmediatamente, añade el artículo a una lista. Revisa la lista después de una semana; si todavía está allí, quizá sea realmente necesario.
 
-Para quienes prefieren fuentes oficiales, el Banco Central de Brasil ofrece orientaciones sobre consumo consciente en su portal de [educación financiera](/es/glossario/es-educacao-financeira): [Banco Central – Educación Financiera](https://www.bcb.gov.br). También vale la pena consultar consejos de prevención de compras indebidas en el sitio de Serasa: [Serasa – Control de Gastos](https://www.serasa.com.br).
+Para quienes prefieren fuentes oficiales, el Banco Central de Brasil ofrece orientaciones sobre consumo consciente en su portal de [educación financiera](/es/glossario/es-educacao-financeira): [Banco Central – Educación Financiera](https://www.bcb.gov.br). También vale la pena consultar [consejos](/es/posts/es-7-errores-financieros-principiante) de prevención de compras indebidas en el sitio de Serasa: [Serasa – Control de Gastos](https://www.serasa.com.br).
 
 ## Empieza hoy
 

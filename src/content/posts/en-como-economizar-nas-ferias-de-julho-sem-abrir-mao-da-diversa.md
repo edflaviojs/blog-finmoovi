@@ -32,7 +32,7 @@ July is the most anticipated month for anyone looking to escape the routine, but
 ## 1. Set a spending ceiling before you book  
 
 ### Why does it matter?  
-The anxiety of snagging the “best deal” often leads to impulse purchases. Start by writing down how much you can allocate to leisure without touching your emergency reserve (usually 3 to 6 months of expenses).  
+The anxiety of snagging the “best deal” often leads to impulse purchases. Start by writing down how much you can allocate to leisure without touching your emergency reserve (usually 3 to 6 months of [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)).  
 
 ![1. Set a spending ceiling before you book](/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa-2.webp)  
 
@@ -87,7 +87,7 @@ That’s a **R$ 140** saving per person. If you’re traveling with a group, t
 **Calculation:**  
 - 3‑star hotel in Florianópolis (July): R$ 350/night  
 - Airbnb room: R$ 180/night  
-- Savings: **R$ 170** per night. Over a 5‑day trip, that’s **R$ 850** saved.  
+- [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet): **R$ 170** per night. Over a 5‑day trip, that’s **R$ 850** saved.  
 
 ---  
 

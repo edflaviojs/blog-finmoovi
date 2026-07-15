@@ -26,7 +26,7 @@ Existen varias formas de invertir en dólar en Brasil, incluyendo:
 
 * Compra de dólar en efectivo: puedes comprar dólar en efectivo en una casa de cambio o en una agencia bancaria.
 * Inversión en títulos de dólar: puedes invertir en títulos de dólar, como títulos del Tesoro americano o títulos de empresas americanas.
-* Inversión en fondos de inversión en dólar: puedes invertir en fondos de inversión que tienen como objetivo invertir en dólar.
+* [Inversión en fondos](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) de inversión en dólar: puedes invertir en fondos de inversión que tienen como objetivo invertir en dólar.
 * Inversión en acciones de empresas americanas: puedes invertir en acciones de empresas americanas que son negociadas en bolsas de valores americanas.
 
 ![Cómo Invertir en Dólar en Brasil](/images/posts/investir-em-dolar-no-brasil-2.webp)

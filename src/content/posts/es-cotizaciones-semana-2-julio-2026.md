@@ -44,11 +44,11 @@ A taxa Selic ficou em **13,75 % ao ano**, como já estava prevista nas última
 
 **Monte um “cushion” cambial**: se você tem [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) futuros em dólares ou euros, abra uma conta em [moeda](/es/glossario/es-moeda) estrangeira (ou use um fundo cambial) e compre um pouquinho a cada mês. Assim, quando a cotação subir, você já tem parte do dinheiro comprado a preço mais baixo. É como fazer um “preço fixo” para a viagem ou a compra daquele notebook que você tem de olho.
 
-**Dica de amigo:** eu uso o [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) para monitorar essas contas em diferentes moedas. O app mostra a evolução da taxa de câmbio, avisa quando o dólar está em alta e ainda permite criar metas de compra. É como ter um assistente pessoal de finanças no bolso.
+**Dica de amigo:** eu uso o [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) para monitorar essas contas em diferentes moedas. O app mostra a evolução da taxa de câmbio, avisa quando o [dólar](/es/posts/es-cotizaciones-semana-4-mayo-2026) está em alta e ainda permite criar metas de compra. É como ter um assistente pessoal de finanças no bolso.
 
 ### 4. O que esperar para a próxima semana
 
-- **Câmbio:** A expectativa é de que o dólar continue estável, mas fique de olho nas decisões da Fed. Se houver qualquer mudança de postura, o real pode reagir rapidamente. O euro pode sofrer mais volatilidade se a União Europeia decidir por ajustes na taxa de juros.
+- **Câmbio:** A expectativa é de que o [dólar](/es/posts/es-cotizaciones-semana-5-junio-2026) continue estável, mas fique de olho nas decisões da Fed. Se houver qualquer mudança de postura, o real pode reagir rapidamente. O euro pode sofrer mais volatilidade se a União Europeia decidir por ajustes na taxa de juros.
 
 - **Selic:** O Copom tem reunião agendada para o final de julho. Se a inflação continuar alta, a tendência é manter a taxa ou até subir um ponto. Caso isso aconteça, a renda fixa ficará ainda mais vantajosa, enquanto as ações podem sentir mais pressão.
 

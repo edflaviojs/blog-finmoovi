@@ -24,7 +24,7 @@ Most impulse buys happen when we’re tired, stressed, or simply bored. In those
 
 ## Build a realistic spending plan
 
-A well‑defined budget reduces the sense of scarcity that fuels the impulse. Suppose you earn R$ 4,500. After paying rent, water and electricity bills, transportation, and food, you might have R$ 800 left for variable expenses. Allocate, for example, R$ 300 for leisure and gifts. When that amount runs out, the rule is to stop. Seeing the limit makes the “irresistible discount” lose its sparkle.
+A well‑defined [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) reduces the sense of scarcity that fuels the impulse. Suppose you earn R$ 4,500. After paying rent, water and electricity bills, transportation, and food, you might have R$ 800 left for variable [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Allocate, for example, R$ 300 for leisure and gifts. When that amount runs out, the rule is to stop. Seeing the limit makes the “irresistible discount” lose its sparkle.
 
 ![Monte um plano de gastos realista](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-2.webp)
 
