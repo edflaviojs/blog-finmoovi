@@ -171,6 +171,38 @@ export interface AIConfig {
 /** Visual theme of a promo slide/slot (drives the animated gradient) */
 export type AdTheme = 'voz' | 'moedas' | 'funil' | 'offline';
 
+/** Visual theme of a seasonal billboard slide (CSS in BillboardCarousel) */
+export type SeasonalTheme = 'natal' | 'anonovo' | 'carnaval' | 'blackfriday' | 'maes' | 'ir';
+
+export interface SeasonalEvent {
+  /** Unique id, include the year (e.g. 'natal-2026') — occurrences are explicit */
+  id: string;
+  theme: SeasonalTheme;
+  icon: string;
+  /** Display window (inclusive), YYYY-MM-DD. Outside it the event is ignored at build. */
+  start: string;
+  end: string;
+  /** Date of the event itself (drives the ticker countdown) */
+  eventDate: string;
+  /** Locales where the event shows (e.g. Carnaval = ['pt']) */
+  locales: readonly string[];
+  /** Destination per locale (post, category or tool related to the date) */
+  href: LocaleStrings;
+  title: LocaleStrings;
+  highlight: LocaleStrings;
+  text: LocaleStrings;
+  cta: LocaleStrings;
+  /** Ticker countdown message; '{dias}' is replaced client-side */
+  ticker?: LocaleStrings;
+  /** Ticker message shown on the event day itself */
+  tickerToday?: LocaleStrings;
+}
+
+export interface SeasonalConfig {
+  /** Explicit occurrences (moving dates change per year — renew annually; past events are ignored) */
+  events: SeasonalEvent[];
+}
+
 export interface AdBillboardSlide {
   theme: AdTheme;
   icon: string;
@@ -229,6 +261,7 @@ export interface SiteConfig {
   content: ContentConfig;
   app: AppConfig;
   ads: AdsConfig;
+  seasonal: SeasonalConfig;
   social: SocialConfig;
   analytics: AnalyticsConfig;
   giscus: GiscusConfig;

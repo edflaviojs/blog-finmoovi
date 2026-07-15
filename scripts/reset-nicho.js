@@ -201,6 +201,7 @@ Próximos passos:
      content.tools → [] ou as ferramentas do NOVO nicho (as páginas /ferramentas
      foram apagadas; a home só mostra o widget se a lista não estiver vazia);
      ads (billboard/rail/mid) → campanhas do novo produto;
+     seasonal.events → datas comemorativas do novo nicho (ou [] p/ desativar);
      brand.colors.portalGradientStart/End → gradiente do novo portal
   4. Adaptar módulos de nicho restantes (⚙️ no código):
      /app (copy do produto), NewsletterPopup (lead magnet), CTAVariado (pool),
