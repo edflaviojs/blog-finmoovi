@@ -33,6 +33,10 @@ export interface BrandColors {
   accentRed: string;
   /** Dark background base (PWA manifest theme/background). Default: #0d1117 */
   background?: string;
+  /** Portal gradient start (section bars, eyebrows, chips). Default: ctaGradientStart */
+  portalGradientStart?: string;
+  /** Portal gradient end. Default: ctaGradientEnd */
+  portalGradientEnd?: string;
 }
 
 export interface BrandDomains {
@@ -62,6 +66,13 @@ export interface CategoryNavItem {
   label: string;
 }
 
+export interface ToolItem {
+  /** Tool page path (e.g., /ferramentas/conversor-moedas) */
+  href: string;
+  /** Display label per locale */
+  label: LocaleStrings;
+}
+
 export interface ContentConfig {
   /** Post categories for this niche (used in frontmatter schema) */
   categories: readonly string[];
@@ -69,6 +80,8 @@ export interface ContentConfig {
   glossaryCategories: readonly string[];
   /** Single source of truth for the "Categorias" menu (header + mobile + footer) */
   categoryNav: readonly CategoryNavItem[];
+  /** Tools listed in the home portal rail (and anywhere else tools are promoted) */
+  tools: readonly ToolItem[];
   /** Niche description per locale (used in AI prompts and meta) */
   niche: LocaleStrings;
   /** Default author name for posts */
@@ -155,6 +168,37 @@ export interface AIConfig {
   solutionTopics: Array<{ topic: string; keywords: string[] }>;
 }
 
+/** Visual theme of a promo slide/slot (drives the animated gradient) */
+export type AdTheme = 'voz' | 'moedas' | 'funil' | 'offline';
+
+export interface AdBillboardSlide {
+  theme: AdTheme;
+  icon: string;
+  href: string;
+  title: LocaleStrings;
+  highlight: LocaleStrings;
+  text: LocaleStrings;
+  cta: LocaleStrings;
+}
+
+export interface AdSlotItem {
+  theme: AdTheme;
+  icon: string;
+  href: string;
+  title: LocaleStrings;
+  text: LocaleStrings;
+  cta: LocaleStrings;
+}
+
+export interface AdsConfig {
+  /** Full-bleed billboard carousel slides (home top/bottom) */
+  billboard: AdBillboardSlide[];
+  /** Vertical promo in the home rail */
+  rail: AdSlotItem;
+  /** Horizontal promo strip (home middle, category pages, mid-article) */
+  mid: AdSlotItem;
+}
+
 export interface BotConfig {
   /** Git bot name for automated commits */
   name: string;
@@ -184,6 +228,7 @@ export interface SiteConfig {
   brand: Brand;
   content: ContentConfig;
   app: AppConfig;
+  ads: AdsConfig;
   social: SocialConfig;
   analytics: AnalyticsConfig;
   giscus: GiscusConfig;

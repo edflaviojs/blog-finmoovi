@@ -48,6 +48,10 @@ export const config: SiteConfig = {
       ctaGradientEnd: '#A91079',
       accentGreen: '#3fb950',
       accentRed: '#f85149',
+      // Gradiente do portal (barras de seção, eyebrows, chips) — vira o token
+      // CSS --portal-grad via `npm run generate`
+      portalGradientStart: '#00c8d7',
+      portalGradientEnd: '#A91079',
     },
     domains: {
       main: 'finmoovi.com',
@@ -71,6 +75,17 @@ export const config: SiteConfig = {
       { slug: 'orcamento', label: 'Orçamento' },
       { slug: 'investimentos', label: 'Investimentos' },
       { slug: 'cotacoes', label: 'Cotações' },
+    ],
+    // Ferramentas exibidas no rail da home portal (páginas em /ferramentas/*).
+    // Adicionar/remover ferramenta aqui reflete na home automaticamente.
+    tools: [
+      { href: '/ferramentas/conversor-moedas', label: { pt: 'Conversor de moedas', en: 'Currency converter', es: 'Conversor de monedas' } },
+      { href: '/ferramentas/calculadora-juros-compostos', label: { pt: 'Juros compostos', en: 'Compound interest', es: 'Interés compuesto' } },
+      { href: '/ferramentas/calculadora-orcamento', label: { pt: 'Orçamento 50-30-20', en: '50-30-20 budget', es: 'Presupuesto 50-30-20' } },
+      { href: '/ferramentas/calculadora-reserva', label: { pt: 'Reserva ideal', en: 'Emergency fund', es: 'Fondo de emergencia' } },
+      { href: '/ferramentas/simulador-investimento', label: { pt: 'Simulador de investimentos', en: 'Investment simulator', es: 'Simulador de inversiones' } },
+      { href: '/ferramentas/calculadora-financiamento', label: { pt: 'Financiamento', en: 'Loan calculator', es: 'Financiación' } },
+      { href: '/ferramentas/calculadora-aposentadoria', label: { pt: 'Aposentadoria', en: 'Retirement', es: 'Jubilación' } },
     ],
     niche: {
       pt: 'finanças pessoais',

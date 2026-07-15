@@ -3,6 +3,7 @@ import BillboardCarousel from './BillboardCarousel.astro';
 import AdSlot from './AdSlot.astro';
 import { imgSrcset } from '@/utils/responsive-image';
 import { categoryLabel, type Locale } from '@/utils/home-data';
+import { config } from '../../../site.config';
 
 /**
  * Home portal (mockup v9 aprovado em 2026-07-15): página longa estilo portal
@@ -21,16 +22,8 @@ const localeTag = locale === 'pt' ? 'pt-BR' : locale === 'es' ? 'es-ES' : 'en-US
 const fmtLong = (d: Date) => d.toLocaleDateString(localeTag, { day: '2-digit', month: 'long', year: 'numeric' });
 const fmtShort = (d: Date) => d.toLocaleDateString(localeTag, { day: 'numeric', month: 'short' });
 
-// Todas as ferramentas reais do blog (páginas em /ferramentas/*)
-const TOOLS = [
-  { href: '/ferramentas/conversor-moedas', label: { pt: 'Conversor de moedas', en: 'Currency converter', es: 'Conversor de monedas' } },
-  { href: '/ferramentas/calculadora-juros-compostos', label: { pt: 'Juros compostos', en: 'Compound interest', es: 'Interés compuesto' } },
-  { href: '/ferramentas/calculadora-orcamento', label: { pt: 'Orçamento 50-30-20', en: '50-30-20 budget', es: 'Presupuesto 50-30-20' } },
-  { href: '/ferramentas/calculadora-reserva', label: { pt: 'Reserva ideal', en: 'Emergency fund', es: 'Fondo de emergencia' } },
-  { href: '/ferramentas/simulador-investimento', label: { pt: 'Simulador de investimentos', en: 'Investment simulator', es: 'Simulador de inversiones' } },
-  { href: '/ferramentas/calculadora-financiamento', label: { pt: 'Financiamento', en: 'Loan calculator', es: 'Financiación' } },
-  { href: '/ferramentas/calculadora-aposentadoria', label: { pt: 'Aposentadoria', en: 'Retirement', es: 'Jubilación' } },
-];
+// Ferramentas do rail — fonte única no site.config (content.tools)
+const TOOLS = config.content.tools;
 
 const T = {
   pt: {
@@ -138,12 +131,14 @@ const T = {
       <div class="reveal in">
         <AdSlot locale={locale} variant="rail" />
       </div>
-      <div class="widget reveal in">
-        <h4>{T.ferramentas}</h4>
-        <div class="chips">
-          {TOOLS.map(tool => <a href={tool.href}>{tool.label[locale]}</a>)}
+      {TOOLS.length > 0 && (
+        <div class="widget reveal in">
+          <h4>{T.ferramentas}</h4>
+          <div class="chips">
+            {TOOLS.map(tool => <a href={tool.href}>{tool.label[locale]}</a>)}
+          </div>
         </div>
-      </div>
+      )}
     </aside>
   </div>
 

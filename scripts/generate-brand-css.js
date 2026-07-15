@@ -18,6 +18,9 @@ function hexToRgbTriplet(hex) {
 }
 
 const background = config.brand.colors.background || '#0d1117';
+// Gradiente do portal (Fase 4): parametrizado, com fallback nas cores do CTA
+const portalStart = config.brand.colors.portalGradientStart || config.brand.colors.ctaGradientStart;
+const portalEnd = config.brand.colors.portalGradientEnd || config.brand.colors.ctaGradientEnd;
 
 const css = `/* ═══════════════════════════════════════════════════════════
  * BRAND TOKENS — Auto-generated from site.config.ts
@@ -36,6 +39,7 @@ const css = `/* ═════════════════════�
   --brand-accent-red: ${config.brand.colors.accentRed};
   --brand-background: ${background};
   --brand-gradient: linear-gradient(135deg, ${config.brand.colors.ctaGradientStart} 0%, ${config.brand.colors.ctaGradientEnd} 100%);
+  --portal-grad: linear-gradient(90deg, ${portalStart}, ${portalEnd});
 }
 `;
 
