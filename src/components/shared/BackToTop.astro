@@ -1,0 +1,50 @@
+---
+// Botão "voltar ao topo": aparece após ~2 telas de rolagem.
+// Renderizado pelo Footer → presente em todas as páginas.
+---
+
+<button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+<script>
+  const btn = document.getElementById('back-to-top') as HTMLButtonElement;
+  addEventListener('scroll', () => {
+    btn.classList.toggle('show', scrollY > innerHeight * 2);
+  }, { passive: true });
+  btn.addEventListener('click', () => {
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+  });
+</script>
+
+<style>
+  .back-to-top {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: var(--z-toast);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--border-default);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    transition: opacity var(--transition-base), transform var(--transition-base);
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .back-to-top:hover {
+    border-color: var(--brand-cyan);
+    color: var(--brand-cyan);
+  }
+</style>

@@ -32,7 +32,7 @@ const labels = {
 const COPIES = [0, 1, 2, 3];
 ---
 
-<div class="cotacao-bar">
+<div class="cotacao-bar loading" id="cotacao-bar">
   <div class="cotacao-ticker">
     <div class="cotacao-track" aria-label="Cotações em tempo real">
       {COPIES.map((copy) => (
@@ -214,7 +214,11 @@ const COPIES = [0, 1, 2, 3];
   // espera o load e um momento ocioso, para não atrasar LCP/FCP.
   function startCotacoes() {
     fillDataEDica();
-    fetchCotacoes();
+    // Skeleton shimmer até a primeira resposta chegar (sucesso ou falha)
+    fetchCotacoes().finally(() => {
+      const bar = document.getElementById('cotacao-bar');
+      if (bar) bar.classList.remove('loading');
+    });
     fetchClima();
     setInterval(fetchCotacoes, 5 * 60 * 1000);
   }
@@ -321,5 +325,24 @@ const COPIES = [0, 1, 2, 3];
 
   .cotacao-bar:hover .cotacao-track {
     animation-play-state: paused;
+  }
+
+  /* Skeleton shimmer enquanto os dados reais não chegam */
+  .cotacao-bar.loading .cotacao-value,
+  .cotacao-bar.loading .cotacao-change {
+    color: transparent !important;
+    background: linear-gradient(90deg, var(--bg-tertiary) 25%, var(--border-muted) 50%, var(--bg-tertiary) 75%);
+    background-size: 200% 100%;
+    animation: cotacao-shimmer 1.2s linear infinite;
+    border-radius: 5px;
+  }
+
+  @keyframes cotacao-shimmer {
+    to { background-position: -200% 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cotacao-bar.loading .cotacao-value,
+    .cotacao-bar.loading .cotacao-change { animation: none; }
   }
 </style>

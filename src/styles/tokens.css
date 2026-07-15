@@ -76,7 +76,7 @@
   --z-toast: 400;
 
   /* Container */
-  --container-max: 1200px;
+  --container-max: 1600px; /* portal largo — conteúdo perto das margens */
   --container-content: 720px;
   --sidebar-width: 320px;
 }
