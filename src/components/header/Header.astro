@@ -4,6 +4,7 @@ import Navigation from './Navigation.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import SearchOverlay from './SearchOverlay.astro';
+import SeasonalDecor from '../shared/SeasonalDecor.astro';
 import { config } from '../../../site.config';
 
 const { brand } = config;
@@ -18,6 +19,7 @@ const blogTitle = `${brand.name} ${brand.blogSuffix}`;
       <!-- sem aria-label: o texto visível "FinMooviBlog" é o nome acessível
            (o antigo "... - Home" não continha o texto visível → axe reprovava) -->
       <a href="/" class="logo">
+        <SeasonalDecor />
         <div class="logo-icon">
           <svg width="20" height="20" viewBox="0 0 64 64" fill="none">
             <path d={brand.logo.svgPath} stroke="url(#logoGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -122,6 +124,8 @@ const blogTitle = `${brand.name} ${brand.blogSuffix}`;
     gap: var(--space-3);
     text-decoration: none;
     flex-shrink: 0;
+    /* âncora da decoração sazonal (SeasonalDecor é absolute) */
+    position: relative;
   }
 
   .logo-icon {

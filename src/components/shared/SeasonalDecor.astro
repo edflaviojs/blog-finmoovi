@@ -1,0 +1,105 @@
+---
+import { getActiveDecorEvent } from '@/utils/seasonal';
+
+/**
+ * Decoração sazonal site-wide (Fase B): micro-toque CURADO sobre a logo do
+ * header — estilo Google Doodle, nunca papel de parede. SVGs desenhados uma
+ * vez e reutilizados todo ano; entram/saem sozinhos pela janela `decor` do
+ * config.seasonal (build diário do bot). Zero JS, aria-hidden, respeita
+ * prefers-reduced-motion.
+ */
+const urlPath = Astro.url.pathname;
+let locale = 'pt';
+if (urlPath.startsWith('/en/') || urlPath === '/en') locale = 'en';
+else if (urlPath.startsWith('/es/') || urlPath === '/es') locale = 'es';
+
+const event = getActiveDecorEvent(locale);
+const theme = event ? event.theme : null;
+---
+
+{theme === 'natal' && (
+  <span class="sdecor sdecor-natal" aria-hidden="true">
+    <!-- Gorro de Papai Noel inclinado sobre o canto da logo -->
+    <svg viewBox="0 0 40 30" width="24" height="18" fill="none">
+      <path d="M6 21 C7 10 15 4 23 5 C30 6 33 10 33 14 L28 13 C26 9 20 9 16 12 C12 15 11 18 11 21 Z" fill="#e0393e"/>
+      <circle cx="34" cy="15" r="4.2" fill="#fff"/>
+      <rect x="3" y="19" width="27" height="7.5" rx="3.75" fill="#fff"/>
+    </svg>
+  </span>
+)}
+
+{theme === 'anonovo' && (
+  <span class="sdecor sdecor-anonovo" aria-hidden="true">
+    <!-- Brilhos dourados de réveillon -->
+    <svg viewBox="0 0 24 24" width="13" height="13" class="spark s1">
+      <path d="M12 0 L14.4 9.6 L24 12 L14.4 14.4 L12 24 L9.6 14.4 L0 12 L9.6 9.6 Z" fill="#ffd75e"/>
+    </svg>
+    <svg viewBox="0 0 24 24" width="8" height="8" class="spark s2">
+      <path d="M12 0 L14.4 9.6 L24 12 L14.4 14.4 L12 24 L9.6 14.4 L0 12 L9.6 9.6 Z" fill="#ffe9a8"/>
+    </svg>
+  </span>
+)}
+
+{theme === 'carnaval' && (
+  <span class="sdecor sdecor-carnaval" aria-hidden="true">
+    <!-- Confetes e serpentina -->
+    <svg viewBox="0 0 36 22" width="26" height="16" fill="none">
+      <path d="M2 16 Q7 8 13 12 T24 6" stroke="#ffd93d" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="27" cy="4" r="2.2" fill="#c04df9"/>
+      <circle cx="32" cy="10" r="1.8" fill="#00e0c6"/>
+      <circle cx="21" cy="14" r="1.6" fill="#ff5ec4"/>
+      <rect x="29" y="15" width="3.4" height="3.4" rx="0.8" fill="#ffd93d" transform="rotate(24 30.7 16.7)"/>
+    </svg>
+  </span>
+)}
+
+{theme === 'maes' && (
+  <span class="sdecor sdecor-maes" aria-hidden="true">
+    <!-- Flor delicada -->
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none">
+      <circle cx="12" cy="6" r="4" fill="#ff9ec4"/>
+      <circle cx="17.7" cy="10.1" r="4" fill="#ff9ec4"/>
+      <circle cx="15.5" cy="16.8" r="4" fill="#ffb3c9"/>
+      <circle cx="8.5" cy="16.8" r="4" fill="#ffb3c9"/>
+      <circle cx="6.3" cy="10.1" r="4" fill="#ff9ec4"/>
+      <circle cx="12" cy="12" r="3.4" fill="#ffd75e"/>
+    </svg>
+  </span>
+)}
+
+<style>
+  .sdecor {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    line-height: 0;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+  }
+
+  /* Gorro apoiado no canto superior esquerdo da logo-icon */
+  .sdecor-natal { top: -10px; left: -8px; transform: rotate(-20deg); }
+
+  .sdecor-anonovo { top: -7px; right: -7px; width: 18px; height: 18px; }
+  .sdecor-anonovo .s1 { position: absolute; top: 0; right: 0; animation: sdecor-twinkle 2.2s ease-in-out infinite; }
+  .sdecor-anonovo .s2 { position: absolute; top: 11px; right: 12px; animation: sdecor-twinkle 2.2s ease-in-out 1.1s infinite; }
+
+  .sdecor-carnaval { top: -11px; left: -4px; }
+
+  .sdecor-maes { top: -8px; right: -6px; transform: rotate(12deg); }
+
+  @keyframes sdecor-twinkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.35; transform: scale(0.72); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sdecor-anonovo .s1, .sdecor-anonovo .s2 { animation: none; }
+  }
+
+  /* Logo compacta no mobile: decorações levemente menores/reposicionadas */
+  @media (max-width: 767px) {
+    .sdecor-natal { top: -8px; left: -6px; }
+    .sdecor-natal svg { width: 19px; height: 14px; }
+    .sdecor-carnaval svg { width: 21px; height: 13px; }
+  }
+</style>

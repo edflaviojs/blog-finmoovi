@@ -47,6 +47,7 @@ const PROVIDERS = [
 
 const POSTS_IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 const GLOSSARIO_IMAGES_DIR = join(process.cwd(), 'public', 'images', 'glossario');
+const SAZONAL_IMAGES_DIR = join(process.cwd(), 'public', 'images', 'sazonal');
 
 // --- Prompt Templates ---
 
@@ -72,6 +73,11 @@ const PROMPT_TEMPLATES = {
   glossary: (topic) =>
     `Premium 3D editorial illustration representing the ${config.content.niche.en} concept of ${topic}, concrete symbolic objects as the main subject (choose what best fits the concept: stacked golden coins, rising 3D bar chart, glass piggy bank, balance scale, vault, growing plant in a coin jar), centered composition with strong focal point and depth of field, dark navy premium background, cyan and magenta rim lighting, soft studio light, glossy materials, high detail, professional financial magazine cover style, clean unmarked surfaces`,
   inline: (topic) => INLINE_STYLES[Math.floor(Math.random() * INLINE_STYLES.length)](topic),
+  // Fase C — key visual de campanha sazonal (fundo do slide billboard):
+  // cena escura e cinematográfica, assunto à DIREITA (o texto do slide fica
+  // à esquerda), sem pessoas em close, sem texto
+  seasonal: (topic) =>
+    `Premium advertising campaign key visual for ${topic}, cinematic 3D still-life scene, elegant symbolic objects arranged on the RIGHT side of a wide dark scene, left half mostly empty dark background for copy space, deep dark navy background, dramatic rim lighting with subtle festive accents, glossy high-end materials, luxury brand aesthetic, international agency quality, wide banner composition, clean unmarked surfaces`,
 };
 
 // --- Core Functions ---
@@ -87,7 +93,9 @@ const PROMPT_TEMPLATES = {
  * @returns {Promise<string>} local path like /images/posts/slug.webp
  */
 export async function generateAIImage(topic, slug, destination = 'posts', promptType = 'cover') {
-  const dir = destination === 'posts' ? POSTS_IMAGES_DIR : GLOSSARIO_IMAGES_DIR;
+  const dir = destination === 'posts' ? POSTS_IMAGES_DIR
+    : destination === 'sazonal' ? SAZONAL_IMAGES_DIR
+    : GLOSSARIO_IMAGES_DIR;
   if (!existsSync(dir)) {
     mkdirSync(dir, { recursive: true });
   }

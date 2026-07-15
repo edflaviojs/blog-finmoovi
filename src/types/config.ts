@@ -196,6 +196,19 @@ export interface SeasonalEvent {
   ticker?: LocaleStrings;
   /** Ticker message shown on the event day itself */
   tickerToday?: LocaleStrings;
+  /**
+   * Site-wide decoration (Fase B): curated SVG touch on the logo (Santa hat,
+   * sparkle, confetti...) driven by the event theme. Window defaults to the
+   * banner window; set start earlier (e.g. 30 days before) if desired.
+   */
+  decor?: { start?: string; end?: string };
+  /**
+   * Approved AI art (Fase C): background image path for the billboard slide
+   * (e.g. /images/sazonal/natal-2026-candidato-2.webp). The weekly workflow
+   * generates CANDIDATES; a human approves by setting this field. Unset = the
+   * slide uses the CSS gradient theme only.
+   */
+  art?: string;
 }
 
 export interface SeasonalConfig {

@@ -1,0 +1,55 @@
+name: Gerar Arte Sazonal (candidatos p/ aprovação)
+
+on:
+  schedule:
+    # Segundas às 8h UTC — olha os eventos sazonais dos próximos 45 dias
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  gerar-arte:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gerar candidatos de arte sazonal
+        env:
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node --import tsx src/scripts/automacoes/gerar-arte-sazonal.js
+
+      - name: Commit candidatos (se houver)
+        run: |
+          git add public/images/sazonal
+          if git diff --cached --quiet; then
+            echo "Sem candidatos novos"
+          else
+            # [skip ci]: imagens não usadas até a aprovação humana no config
+            git commit -m "arte sazonal: candidatos para aprovacao [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          fi

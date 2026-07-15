@@ -18,3 +18,15 @@ export function getActiveSeasonalEvents(locale: string, today: string = todayISO
     e => e.locales.includes(locale) && e.start <= today && today <= e.end
   );
 }
+
+/**
+ * Evento com DECORAÇÃO site-wide ativa (Fase B). A janela do decor pode
+ * começar antes da do banner (ex.: 30 dias); no máximo 1 decor por vez —
+ * vale o primeiro da lista.
+ */
+export function getActiveDecorEvent(locale: string, today: string = todayISO()): SeasonalEvent | null {
+  return (config.seasonal?.events || []).find(e =>
+    e.decor && e.locales.includes(locale)
+    && (e.decor.start || e.start) <= today && today <= (e.decor.end || e.end)
+  ) || null;
+}

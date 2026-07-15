@@ -22,6 +22,7 @@ const { locale, offset = 0 } = Astro.props;
 const seasonalSlides = getActiveSeasonalEvents(locale).map(e => ({
   theme: e.theme, icon: e.icon, href: e.href[locale as 'pt' | 'en' | 'es'],
   title: e.title, highlight: e.highlight, text: e.text, cta: e.cta,
+  art: e.art, // arte IA APROVADA (Fase C) — sem ela, vale só o tema CSS
 }));
 const base = [...seasonalSlides, ...config.ads.billboard];
 const slides = base.map((_, i) => base[(i + offset) % base.length]);
@@ -31,6 +32,11 @@ const slides = base.map((_, i) => base[(i + offset) % base.length]);
   <div class="bb-track">
     {slides.map(s => (
       <div class={`bb-slide bb-${s.theme}`}>
+        {(s as any).art && (
+          <div class="bb-artbg" aria-hidden="true"
+            style={`background-image: linear-gradient(100deg, rgba(4,7,12,0.88) 22%, rgba(4,7,12,0.42) 58%, rgba(4,7,12,0.28) 100%), url('${(s as any).art}')`}>
+          </div>
+        )}
         <div class="bb-in">
           <span class="bb-icon" aria-hidden="true">{s.icon}</span>
           <div class="bb-copy">
@@ -120,6 +126,15 @@ const slides = base.map((_, i) => base[(i + offset) % base.length]);
   }
 
   .bb-slide::before { content: ""; position: absolute; inset: 0; }
+
+  /* Arte IA aprovada (Fase C): cobre o gradiente do tema com a imagem +
+     véu escuro à esquerda garantindo a legibilidade do texto */
+  .bb-artbg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center right;
+  }
 
   /* Climas visuais por tema — gradientes animados, cada campanha com o seu */
   .bb-voz::before { background: linear-gradient(115deg, #0d1117, #0e3540 30%, #4d1140 70%, #0d1117); background-size: 300% 300%; animation: bb-drift 9s ease infinite; }
