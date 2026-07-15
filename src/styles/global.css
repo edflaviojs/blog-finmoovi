@@ -211,3 +211,43 @@ input, textarea, select {
 .post-content td {
   color: var(--text-secondary);
 }
+
+/* ============================================
+   Ferramentas — pele portal (Fase 3)
+   As 7 calculadoras compartilham as mesmas classes (.tool-header, .calc-btn,
+   .calculator-*, .tool-faq); esta skin única evita repetir CSS em cada página.
+   `main.tool-page` dá a especificidade p/ vencer os estilos scoped locais.
+   ============================================ */
+main.tool-page .tool-header h1 {
+  letter-spacing: -0.02em;
+  background: var(--portal-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main.tool-page .calculator-form,
+main.tool-page .calculator-results {
+  border-color: var(--border-muted);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Gradiente do portal no botão (o antigo usava var(--brand-cyan), que
+   escurece no tema claro) + pill como os CTAs da home */
+main.tool-page .calc-btn {
+  background: var(--portal-grad);
+  border-radius: var(--radius-full);
+}
+
+main.tool-page .tool-faq details {
+  border-color: var(--border-muted);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+main.tool-page .tool-faq details:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
