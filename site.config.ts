@@ -202,26 +202,6 @@ export const config: SiteConfig = {
   // manter eventos passados aqui não quebra nada.
   seasonal: {
     events: [
-      // ⚠️⚠️ DEMO PARA VALIDAÇÃO NO PREVIEW (Fases B+C) — REMOVER ANTES DO MERGE ⚠️⚠️
-      // Mostra: gorro de Natal na logo (decor) + slide com arte de fundo (art
-      // aponta p/ uma capa existente só para validar o layout do véu/legibilidade)
-      {
-        id: 'DEMO-faseBC-REMOVER', theme: 'natal', icon: '🎄',
-        start: '2026-07-01', end: '2026-07-31', eventDate: '2026-07-25',
-        decor: {},
-        art: '/images/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-.webp',
-        locales: ['pt', 'en', 'es'],
-        href: { pt: '/categorias/dicas', en: '/en/categorias/dicas', es: '/es/categorias/dicas' },
-        title: { pt: 'Natal no azul.', en: 'Holidays in the green.', es: 'Navidad sin deudas.' },
-        highlight: { pt: 'Presenteie sem dívida.', en: 'Gift without debt.', es: 'Regala sin deuda.' },
-        text: {
-          pt: 'DEMO Fases B+C: gorro na logo + slide com arte de fundo e véu de legibilidade.',
-          en: 'DEMO phases B+C: logo hat + slide with background art.',
-          es: 'DEMO fases B+C.',
-        },
-        cta: { pt: 'Organizar o fim de ano →', en: 'Plan the holidays →', es: 'Organizar el fin de año →' },
-      },
-      // ⚠️⚠️ FIM DO DEMO ⚠️⚠️
       {
         id: 'black-friday-2026', theme: 'blackfriday', icon: '🛍️',
         start: '2026-11-12', end: '2026-11-28', eventDate: '2026-11-27',
