@@ -221,6 +221,7 @@ export const config: SiteConfig = {
       {
         id: 'natal-2026', theme: 'natal', icon: '🎄',
         start: '2026-12-10', end: '2026-12-26', eventDate: '2026-12-25',
+        decor: { start: '2026-11-25' }, // gorro na logo 30 dias antes
         locales: ['pt', 'en', 'es'],
         href: { pt: '/categorias/dicas', en: '/en/categorias/dicas', es: '/es/categorias/dicas' },
         title: { pt: 'Natal no azul.', en: 'Holidays in the green.', es: 'Navidad sin deudas.' },
@@ -237,6 +238,7 @@ export const config: SiteConfig = {
       {
         id: 'ano-novo-2027', theme: 'anonovo', icon: '✨',
         start: '2026-12-27', end: '2027-01-05', eventDate: '2027-01-01',
+        decor: {}, // brilhos na logo, mesma janela do banner (emenda com o Natal)
         locales: ['pt', 'en', 'es'],
         href: { pt: '/ferramentas/calculadora-reserva', en: '/ferramentas/calculadora-reserva', es: '/ferramentas/calculadora-reserva' },
         title: { pt: '2027 começa agora.', en: '2027 starts now.', es: '2027 empieza ahora.' },
@@ -253,6 +255,7 @@ export const config: SiteConfig = {
       {
         id: 'carnaval-2027', theme: 'carnaval', icon: '🎭',
         start: '2027-01-25', end: '2027-02-10', eventDate: '2027-02-09',
+        decor: { start: '2027-01-10' }, // confetes na logo 30 dias antes
         locales: ['pt'],
         href: { pt: '/categorias/orcamento', en: '/categorias/orcamento', es: '/categorias/orcamento' },
         title: { pt: 'Carnaval é folia.', en: 'Carnival.', es: 'Carnaval.' },
@@ -285,6 +288,7 @@ export const config: SiteConfig = {
       {
         id: 'dia-das-maes-2027', theme: 'maes', icon: '💐',
         start: '2027-04-24', end: '2027-05-09', eventDate: '2027-05-09',
+        decor: { start: '2027-04-09' }, // flor na logo 30 dias antes
         locales: ['pt'],
         href: { pt: '/ferramentas/calculadora-orcamento', en: '/ferramentas/calculadora-orcamento', es: '/ferramentas/calculadora-orcamento' },
         title: { pt: 'Dia das Mães.', en: "Mother's Day.", es: 'Día de la Madre.' },
