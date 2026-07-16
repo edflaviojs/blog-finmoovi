@@ -19,7 +19,7 @@ const blogTitle = `${brand.name} ${brand.blogSuffix}`;
       <!-- sem aria-label: o texto visível "FinMooviBlog" é o nome acessível
            (o antigo "... - Home" não continha o texto visível → axe reprovava) -->
       <a href="/" class="logo">
-        <SeasonalDecor />
+        <SeasonalDecor part="logo" />
         <div class="logo-icon">
           <svg width="20" height="20" viewBox="0 0 64 64" fill="none">
             <path d={brand.logo.svgPath} stroke="url(#logoGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -46,6 +46,9 @@ const blogTitle = `${brand.name} ${brand.blogSuffix}`;
       </div>
     </div>
   </header>
+
+  <!-- Camada sazonal site-wide: varal de luzinhas no header + partículas -->
+  <SeasonalDecor part="site" />
 
   <SearchOverlay />
 </div>

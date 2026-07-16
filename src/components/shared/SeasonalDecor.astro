@@ -2,12 +2,19 @@
 import { getActiveDecorEvent } from '@/utils/seasonal';
 
 /**
- * Decoração sazonal site-wide (Fase B): micro-toque CURADO sobre a logo do
- * header — estilo Google Doodle, nunca papel de parede. SVGs desenhados uma
- * vez e reutilizados todo ano; entram/saem sozinhos pela janela `decor` do
- * config.seasonal (build diário do bot). Zero JS, aria-hidden, respeita
- * prefers-reduced-motion.
+ * Decoração sazonal site-wide (Fase B) em DUAS camadas premium:
+ *   part="logo" → ornamento sobre a logo (gorro, brilhos, confete, flor)
+ *   part="site" → varal de luzinhas sob o header (natal) + partículas caindo
+ *                 pela página (neve / poeira dourada / confete / pétalas)
+ * SVG/CSS puro (zero JS), aria-hidden, pointer-events none, respeita
+ * prefers-reduced-motion (partículas somem, luzes ficam estáticas).
+ * Entra/sai sozinho pela janela `decor` do config.seasonal (build diário).
  */
+interface Props {
+  part?: 'logo' | 'site';
+}
+const { part = 'logo' } = Astro.props;
+
 const urlPath = Astro.url.pathname;
 let locale = 'pt';
 if (urlPath.startsWith('/en/') || urlPath === '/en') locale = 'en';
@@ -15,91 +22,283 @@ else if (urlPath.startsWith('/es/') || urlPath === '/es') locale = 'es';
 
 const event = getActiveDecorEvent(locale);
 const theme = event ? event.theme : null;
+
+// Pseudo-aleatório DETERMINÍSTICO por índice (builds estáveis, sem Math.random)
+const rnd = (i: number, salt: number) => ((i * 73 + salt * 137) % 100) / 100;
+
+// Partículas por tema: neve (natal), poeira dourada (anonovo),
+// confete colorido (carnaval), pétalas (maes)
+const PARTICLE_COUNT: Record<string, number> = { natal: 16, anonovo: 12, carnaval: 18, maes: 10 };
+const count = theme ? (PARTICLE_COUNT[theme] || 0) : 0;
+const particles = Array.from({ length: count }, (_, i) => ({
+  left: Math.round(rnd(i, 1) * 98),
+  size: theme === 'carnaval' ? 6 + Math.round(rnd(i, 2) * 5) : 4 + Math.round(rnd(i, 2) * 5),
+  dur: (theme === 'maes' ? 14 : 10) + Math.round(rnd(i, 3) * 10),
+  delay: Math.round(rnd(i, 4) * 20),
+  op: 0.35 + rnd(i, 5) * 0.45,
+  hue: i % 5,
+}));
+
+// Varal de luzinhas (só natal): cor + comprimento do fio alternados
+const LIGHT_COLORS = ['#ff5757', '#ffd75e', '#6ff2b5', '#00e0ff'];
+const lights = theme === 'natal'
+  ? Array.from({ length: 24 }, (_, i) => ({
+      color: LIGHT_COLORS[i % LIGHT_COLORS.length],
+      cord: 5 + Math.round(rnd(i, 7) * 9),
+      delay: (i % 6) * 0.35,
+    }))
+  : [];
 ---
 
-{theme === 'natal' && (
+{part === 'logo' && theme === 'natal' && (
   <span class="sdecor sdecor-natal" aria-hidden="true">
-    <!-- Gorro de Papai Noel inclinado sobre o canto da logo -->
-    <svg viewBox="0 0 40 30" width="24" height="18" fill="none">
-      <path d="M6 21 C7 10 15 4 23 5 C30 6 33 10 33 14 L28 13 C26 9 20 9 16 12 C12 15 11 18 11 21 Z" fill="#e0393e"/>
-      <circle cx="34" cy="15" r="4.2" fill="#fff"/>
-      <rect x="3" y="19" width="27" height="7.5" rx="3.75" fill="#fff"/>
+    <!-- Gorro de Papai Noel premium: gradientes, brilho e pompom com volume -->
+    <svg viewBox="0 0 48 36" width="34" height="27" fill="none">
+      <defs>
+        <linearGradient id="sdHat" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ff5b5b"/><stop offset="1" stop-color="#b8121f"/>
+        </linearGradient>
+        <radialGradient id="sdPom" cx="0.35" cy="0.3" r="1">
+          <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ccd6e0"/>
+        </radialGradient>
+        <linearGradient id="sdFur" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dde6ee"/>
+        </linearGradient>
+      </defs>
+      <path d="M8 26 C9 12 19 4 29 5 C38 6 42 12 41 18 L35 15 C32 9 24 10 20 14 C16 18 14 22 14 26 Z" fill="url(#sdHat)"/>
+      <path d="M13 17 C15 11 20 8 25 8" stroke="#fff" stroke-opacity="0.4" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="42" cy="19" r="5.6" fill="url(#sdPom)"/>
+      <circle cx="40.2" cy="17.2" r="1.7" fill="#fff"/>
+      <rect x="4" y="24" width="35" height="9.5" rx="4.75" fill="url(#sdFur)"/>
     </svg>
   </span>
 )}
 
-{theme === 'anonovo' && (
+{part === 'logo' && theme === 'anonovo' && (
   <span class="sdecor sdecor-anonovo" aria-hidden="true">
-    <!-- Brilhos dourados de réveillon -->
-    <svg viewBox="0 0 24 24" width="13" height="13" class="spark s1">
+    <svg viewBox="0 0 24 24" width="17" height="17" class="spark s1">
       <path d="M12 0 L14.4 9.6 L24 12 L14.4 14.4 L12 24 L9.6 14.4 L0 12 L9.6 9.6 Z" fill="#ffd75e"/>
     </svg>
-    <svg viewBox="0 0 24 24" width="8" height="8" class="spark s2">
+    <svg viewBox="0 0 24 24" width="10" height="10" class="spark s2">
       <path d="M12 0 L14.4 9.6 L24 12 L14.4 14.4 L12 24 L9.6 14.4 L0 12 L9.6 9.6 Z" fill="#ffe9a8"/>
     </svg>
+    <svg viewBox="0 0 24 24" width="7" height="7" class="spark s3">
+      <path d="M12 0 L14.4 9.6 L24 12 L14.4 14.4 L12 24 L9.6 14.4 L0 12 L9.6 9.6 Z" fill="#fff3c9"/>
+    </svg>
   </span>
 )}
 
-{theme === 'carnaval' && (
+{part === 'logo' && theme === 'carnaval' && (
   <span class="sdecor sdecor-carnaval" aria-hidden="true">
-    <!-- Confetes e serpentina -->
-    <svg viewBox="0 0 36 22" width="26" height="16" fill="none">
-      <path d="M2 16 Q7 8 13 12 T24 6" stroke="#ffd93d" stroke-width="2" stroke-linecap="round"/>
-      <circle cx="27" cy="4" r="2.2" fill="#c04df9"/>
-      <circle cx="32" cy="10" r="1.8" fill="#00e0c6"/>
-      <circle cx="21" cy="14" r="1.6" fill="#ff5ec4"/>
-      <rect x="29" y="15" width="3.4" height="3.4" rx="0.8" fill="#ffd93d" transform="rotate(24 30.7 16.7)"/>
+    <svg viewBox="0 0 44 28" width="33" height="21" fill="none">
+      <path d="M2 20 Q9 9 17 14 T31 7" stroke="#ffd93d" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M8 24 Q14 18 20 21" stroke="#00e0c6" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="34" cy="5" r="2.8" fill="#c04df9"/>
+      <circle cx="40" cy="12" r="2.2" fill="#00e0c6"/>
+      <circle cx="27" cy="17" r="2" fill="#ff5ec4"/>
+      <rect x="36" y="18" width="4.2" height="4.2" rx="1" fill="#ffd93d" transform="rotate(24 38.1 20.1)"/>
+      <rect x="24" y="2" width="3.6" height="3.6" rx="0.9" fill="#ff5757" transform="rotate(-18 25.8 3.8)"/>
     </svg>
   </span>
 )}
 
-{theme === 'maes' && (
+{part === 'logo' && theme === 'maes' && (
   <span class="sdecor sdecor-maes" aria-hidden="true">
-    <!-- Flor delicada -->
-    <svg viewBox="0 0 24 24" width="14" height="14" fill="none">
-      <circle cx="12" cy="6" r="4" fill="#ff9ec4"/>
-      <circle cx="17.7" cy="10.1" r="4" fill="#ff9ec4"/>
-      <circle cx="15.5" cy="16.8" r="4" fill="#ffb3c9"/>
-      <circle cx="8.5" cy="16.8" r="4" fill="#ffb3c9"/>
-      <circle cx="6.3" cy="10.1" r="4" fill="#ff9ec4"/>
-      <circle cx="12" cy="12" r="3.4" fill="#ffd75e"/>
+    <svg viewBox="0 0 24 24" width="19" height="19" fill="none">
+      <circle cx="12" cy="6" r="4.2" fill="#ff9ec4"/>
+      <circle cx="17.7" cy="10.1" r="4.2" fill="#ff8ab8"/>
+      <circle cx="15.5" cy="16.8" r="4.2" fill="#ffb3c9"/>
+      <circle cx="8.5" cy="16.8" r="4.2" fill="#ffb3c9"/>
+      <circle cx="6.3" cy="10.1" r="4.2" fill="#ff8ab8"/>
+      <circle cx="12" cy="12" r="3.6" fill="#ffd75e"/>
+    </svg>
+    <svg viewBox="0 0 24 24" width="9" height="9" class="mini-flor" fill="none">
+      <circle cx="12" cy="7" r="4.5" fill="#ffb3c9"/>
+      <circle cx="16.5" cy="13" r="4.5" fill="#ff9ec4"/>
+      <circle cx="7.5" cy="13" r="4.5" fill="#ff9ec4"/>
+      <circle cx="12" cy="12" r="3.2" fill="#ffe9a8"/>
     </svg>
   </span>
+)}
+
+{part === 'site' && lights.length > 0 && (
+  <div class="sd-lights" aria-hidden="true">
+    {lights.map(l => (
+      <span class="sd-bulb" style={`--c:${l.color}; --cord:${l.cord}px; animation-delay:${l.delay}s`}></span>
+    ))}
+  </div>
+)}
+
+{part === 'site' && count > 0 && (
+  <div class={`sd-particles sd-${theme}`} aria-hidden="true">
+    {particles.map(p => (
+      <span class="sd-p" style={`left:${p.left}%; --size:${p.size}px; --op:${p.op}; --hue:${p.hue}; animation-duration:${p.dur}s; animation-delay:-${p.delay}s`}>
+        <i></i>
+      </span>
+    ))}
+  </div>
 )}
 
 <style>
+  /* ===== Ornamento da logo ===== */
   .sdecor {
     position: absolute;
     pointer-events: none;
     z-index: 2;
     line-height: 0;
-    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.4));
   }
 
-  /* Gorro apoiado no canto superior esquerdo da logo-icon */
-  .sdecor-natal { top: -10px; left: -8px; transform: rotate(-20deg); }
+  .sdecor-natal { top: -15px; left: -11px; transform: rotate(-22deg); }
 
-  .sdecor-anonovo { top: -7px; right: -7px; width: 18px; height: 18px; }
+  .sdecor-anonovo { top: -9px; right: -9px; width: 24px; height: 24px; }
   .sdecor-anonovo .s1 { position: absolute; top: 0; right: 0; animation: sdecor-twinkle 2.2s ease-in-out infinite; }
-  .sdecor-anonovo .s2 { position: absolute; top: 11px; right: 12px; animation: sdecor-twinkle 2.2s ease-in-out 1.1s infinite; }
+  .sdecor-anonovo .s2 { position: absolute; top: 13px; right: 15px; animation: sdecor-twinkle 2.2s ease-in-out 0.7s infinite; }
+  .sdecor-anonovo .s3 { position: absolute; top: 2px; right: 19px; animation: sdecor-twinkle 2.2s ease-in-out 1.4s infinite; }
 
-  .sdecor-carnaval { top: -11px; left: -4px; }
+  .sdecor-carnaval { top: -14px; left: -7px; }
 
-  .sdecor-maes { top: -8px; right: -6px; transform: rotate(12deg); }
+  .sdecor-maes { top: -11px; right: -8px; transform: rotate(12deg); }
+  .sdecor-maes .mini-flor { position: absolute; top: 15px; right: 16px; }
 
   @keyframes sdecor-twinkle {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.35; transform: scale(0.72); }
+    0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); }
+    50% { opacity: 0.3; transform: scale(0.65) rotate(24deg); }
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .sdecor-anonovo .s1, .sdecor-anonovo .s2 { animation: none; }
+  /* ===== Varal de luzinhas (natal) — pendurado na borda inferior do header ===== */
+  .sd-lights {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    display: flex;
+    justify-content: space-around;
+    pointer-events: none;
+    z-index: 3;
   }
 
-  /* Logo compacta no mobile: decorações levemente menores/reposicionadas */
+  .sd-bulb {
+    position: relative;
+    top: 0;
+    width: 9px;
+    height: 12px;
+    margin-top: var(--cord);
+    background: var(--c);
+    border-radius: 46% 46% 50% 50% / 38% 38% 62% 62%;
+    box-shadow: 0 0 8px 1.5px var(--c);
+    animation: sd-glow 2.4s ease-in-out infinite;
+  }
+
+  /* fio de cada lâmpada + rosca */
+  .sd-bulb::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(-1 * var(--cord) - 2px);
+    width: 1.5px;
+    height: calc(var(--cord) + 2px);
+    background: rgba(255, 255, 255, 0.28);
+  }
+
+  .sd-bulb::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -2.5px;
+    transform: translateX(-50%);
+    width: 4.5px;
+    height: 3px;
+    border-radius: 1px;
+    background: #9aa6b2;
+  }
+
+  @keyframes sd-glow {
+    0%, 100% { filter: brightness(1); box-shadow: 0 0 8px 1.5px var(--c); }
+    50% { filter: brightness(0.55); box-shadow: 0 0 3px 0.5px var(--c); }
+  }
+
+  /* ===== Partículas caindo pela página ===== */
+  .sd-particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 250; /* acima do conteúdo, abaixo de modais (300) */
+    overflow: hidden;
+  }
+
+  .sd-p {
+    position: absolute;
+    top: -6vh;
+    width: var(--size);
+    height: var(--size);
+    opacity: var(--op);
+    animation-name: sd-fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .sd-p i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    animation: sd-sway 3.6s ease-in-out infinite alternate;
+  }
+
+  @keyframes sd-fall {
+    to { transform: translateY(112vh); }
+  }
+
+  @keyframes sd-sway {
+    from { transform: translateX(-9px) rotate(-14deg); }
+    to { transform: translateX(9px) rotate(14deg); }
+  }
+
+  /* Neve: flocos brancos com leve brilho */
+  .sd-natal .sd-p i {
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #ffffff, #dbe9f4 70%);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.55);
+  }
+
+  /* Poeira dourada do réveillon */
+  .sd-anonovo .sd-p i {
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #fff3c9, #ffd75e 70%);
+    box-shadow: 0 0 7px rgba(255, 215, 94, 0.75);
+  }
+
+  /* Confete de Carnaval: retângulos coloridos girando */
+  .sd-carnaval .sd-p i {
+    height: 55%;
+    border-radius: 2px;
+  }
+  .sd-carnaval .sd-p[style*="--hue:0"] i { background: #ffd93d; }
+  .sd-carnaval .sd-p[style*="--hue:1"] i { background: #c04df9; }
+  .sd-carnaval .sd-p[style*="--hue:2"] i { background: #00e0c6; }
+  .sd-carnaval .sd-p[style*="--hue:3"] i { background: #ff5ec4; }
+  .sd-carnaval .sd-p[style*="--hue:4"] i { background: #ff5757; }
+
+  /* Pétalas do Dia das Mães */
+  .sd-maes .sd-p i {
+    border-radius: 62% 38% 60% 40% / 45% 60% 40% 55%;
+    background: linear-gradient(135deg, #ffb3c9, #ff8ab8);
+  }
+
+  /* Mobile: menos partículas, luzes mais compactas */
   @media (max-width: 767px) {
-    .sdecor-natal { top: -8px; left: -6px; }
-    .sdecor-natal svg { width: 19px; height: 14px; }
-    .sdecor-carnaval svg { width: 21px; height: 13px; }
+    .sd-p:nth-child(n+9) { display: none; }
+    .sd-bulb:nth-child(n+13) { display: none; }
+    .sdecor-natal { top: -12px; left: -8px; }
+    .sdecor-natal svg { width: 27px; height: 21px; }
+    .sdecor-carnaval svg { width: 26px; height: 17px; }
+  }
+
+  /* Acessibilidade: sem movimento — partículas somem, luzes ficam acesas */
+  @media (prefers-reduced-motion: reduce) {
+    .sd-particles { display: none; }
+    .sd-bulb, .sdecor-anonovo .spark { animation: none; }
   }
 </style>
