@@ -41,10 +41,12 @@ const particles = Array.from({ length: count }, (_, i) => ({
 
 // Varal de luzinhas (só natal): cor + comprimento do fio alternados
 const LIGHT_COLORS = ['#ff5757', '#ffd75e', '#6ff2b5', '#00e0ff'];
+// Fios longos (28-42px): as lâmpadas descem ABAIXO da faixa "AGORA" da home
+// (~36px), sem cobrir o texto — só os fios finos cruzam a faixa
 const lights = theme === 'natal'
   ? Array.from({ length: 24 }, (_, i) => ({
       color: LIGHT_COLORS[i % LIGHT_COLORS.length],
-      cord: 5 + Math.round(rnd(i, 7) * 9),
+      cord: 28 + Math.round(rnd(i, 7) * 14),
       delay: (i % 6) * 0.35,
     }))
   : [];

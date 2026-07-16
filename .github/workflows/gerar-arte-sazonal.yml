@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: ${{ github.workflow }}
@@ -43,13 +44,44 @@ jobs:
         run: node --import tsx src/scripts/automacoes/gerar-arte-sazonal.js
 
       - name: Commit candidatos (se houver)
+        id: commit
         run: |
           git add public/images/sazonal
           if git diff --cached --quiet; then
             echo "Sem candidatos novos"
+            echo "committed=false" >> "$GITHUB_OUTPUT"
           else
-            # [skip ci]: imagens não usadas até a aprovação humana no config
+            # skip do CI: as imagens não são usadas até a aprovação humana no config
             git commit -m "arte sazonal: candidatos para aprovacao [skip ci]"
             git pull --rebase origin main || true
             git push
+            echo "committed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # Aviso ATIVO para o dono: issue no GitHub com as imagens embutidas →
+      # o GitHub manda a notificação por e-mail automaticamente
+      - name: Abrir issue de aprovação
+        if: steps.commit.outputs.committed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          files=$(git show --name-only --pretty=format: HEAD | grep '^public/images/sazonal/' || true)
+          {
+            echo "O workflow gerou candidatos de arte para os próximos eventos sazonais."
+            echo ""
+            echo "**Para aprovar um candidato:** defina no evento correspondente em \`site.config.ts\`:"
+            echo '```'
+            echo "art: '/images/sazonal/<arquivo>.webp'"
+            echo '```'
+            echo "(ou peça ao Claude: \"aprova o candidato N do <evento>\")."
+            echo "Sem aprovação, o slide continua usando o tema CSS — nada muda no site."
+            echo ""
+            for f in $files; do
+              echo "### ${f#public/images/sazonal/}"
+              echo "![candidato](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/raw/main/$f)"
+              echo ""
+            done
+          } > /tmp/issue-body.md
+          gh issue create \
+            --title "🎨 Arte sazonal: candidatos aguardando sua aprovação" \
+            --body-file /tmp/issue-body.md
