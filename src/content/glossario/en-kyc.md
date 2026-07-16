@@ -4,6 +4,7 @@ definition: "Understand what kyc is, how it works, advantages, risks and practic
 title: "kyc - Financial Glossary"
 description: "Understand what kyc is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/kyc.webp"
+imageAlt: "Three pink paper-like objects on a white surface casting a shadow."
 category: "basico"
 tags: ["kyc", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

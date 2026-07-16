@@ -4,6 +4,7 @@ definition: "Entenda o que é taxa, como funciona, vantagens, riscos e exemplos 
 title: "taxa - Glossário Financeiro"
 description: "Entenda o que é taxa, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/taxa.webp"
+imageAlt: "Pilhas de moedas de ouro, algumas em um vaso com planta, em fundo escuro."
 category: "basico"
 tags: ["taxa", "glossário", "finanças"]
 author: "FinMoovi"

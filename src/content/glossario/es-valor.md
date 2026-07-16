@@ -4,6 +4,7 @@ definition: "Entienda qué es valor, cómo funciona, ventajas, riesgos y ejemplo
 title: "valor - Glosario Financiero"
 description: "Entienda qué es valor, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/valor.webp"
+imageAlt: "Una figura geométrica de colores rosados, azules y morados sobre fondo claro."
 category: "basico"
 tags: ["valor", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

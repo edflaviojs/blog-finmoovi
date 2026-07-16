@@ -1,6 +1,7 @@
 ---
 term: "IOF (Financial Operations Tax)"
 image: "/images/glossario/en-iof.svg"
+imageAlt: "Black background with purple and pink line graph trending downward."
 definition: "A federal tax on financial operations including loans, foreign exchange, insurance, and securities transactions."
 category: "impostos"
 locale: "en"

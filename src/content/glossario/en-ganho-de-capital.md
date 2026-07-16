@@ -1,6 +1,7 @@
 ---
 term: "Capital Gain"
 image: "/images/glossario/en-ganho-de-capital.svg"
+imageAlt: "Black background with green and yellow line graph and teal data points."
 definition: "The profit obtained from selling an asset for more than its purchase price. Subject to income tax in most cases."
 category: "impostos"
 locale: "en"

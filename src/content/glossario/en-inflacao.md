@@ -1,6 +1,7 @@
 ---
 term: "Inflation"
 image: "/images/glossario/en-inflacao.svg"
+imageAlt: "Black background with scattered purple and teal dots and a dotted teal line."
 definition: "The general and continuous increase in prices of goods and services. It reduces the purchasing power of money over time."
 category: "basico"
 locale: "en"

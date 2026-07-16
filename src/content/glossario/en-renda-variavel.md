@@ -1,6 +1,7 @@
 ---
 term: "Variable Income"
 image: "/images/glossario/en-renda-variavel.svg"
+imageAlt: "Multicolored line graph on black background with dark gray square."
 definition: "Investments where returns are not guaranteed and depend on market conditions. Examples: stocks, REITs, ETFs."
 category: "investimentos"
 locale: "en"
