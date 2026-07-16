@@ -4,6 +4,7 @@ definition: "O P/L (Preço/Lucro) é uma medida financeira que indica o preço d
 category: "mercado"
 locale: "pt"
 image: "/images/glossario/p-l-preco-lucro.webp"
+imageAlt: "Silhueta roxa de mulher contra fundo bege com letras P/L em roxo escuro."
 relatedTerms: ["Lucro por Ação","Preço de Ação","Retorno sobre o Patrimônio Líquido"]
 publishedAt: 2026-06-09
 ---

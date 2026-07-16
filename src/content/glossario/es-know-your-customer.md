@@ -1,6 +1,7 @@
 ---
 term: "Know Your Customer (KYC)"
 image: "/images/glossario/es-know-your-customer.svg"
+imageAlt: "Gráfico de líneas en colores sobre fondo oscuro en un rectángulo."
 definition: "Un proceso de verificación usado por instituciones financieras para confirmar la identidad de sus clientes y prevenir fraude y lavado de dinero."
 category: "mercado"
 locale: "es"

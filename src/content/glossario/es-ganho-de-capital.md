@@ -1,6 +1,7 @@
 ---
 term: "Ganancia de Capital"
 image: "/images/glossario/es-ganho-de-capital.svg"
+imageAlt: "Gráfico de barras con degradado rosa y morado en fondo negro."
 definition: "La ganancia obtenida al vender un activo por más de su precio de compra. Sujeta a impuesto sobre la renta en la mayoría de los casos."
 category: "impostos"
 locale: "es"

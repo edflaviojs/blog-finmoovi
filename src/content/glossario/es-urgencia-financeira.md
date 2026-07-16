@@ -1,6 +1,7 @@
 ---
 term: "Emergencia Financiera"
 image: "/images/glossario/es-urgencia-financeira.svg"
+imageAlt: "Gráfico circular con secciones naranjas, azules, grises y negras en fondo negro."
 definition: "Una situación inesperada que requiere uso inmediato de recursos financieros, como emergencias médicas o pérdida de empleo."
 category: "basico"
 locale: "es"

@@ -1,6 +1,7 @@
 ---
 term: "LCI e LCA"
 image: "/images/glossario/lci-e-lca.svg"
+imageAlt: "Gráfico com pontos coloridos e linha pontilhada em fundo preto."
 definition: "Letras de Crédito Imobiliário e do Agronegócio. Investimentos de renda fixa isentos de Imposto de Renda para pessoa física."
 category: "investimentos"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]

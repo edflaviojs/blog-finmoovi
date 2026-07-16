@@ -4,6 +4,7 @@ definition: "Entienda qué es governança, cómo funciona, ventajas, riesgos y e
 title: "governança - Glosario Financiero"
 description: "Entienda qué es governança, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/governanca.webp"
+imageAlt: "Un objeto curvo azul y rosa sobre fondo degradado rosa y azul."
 category: "basico"
 tags: ["governança", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

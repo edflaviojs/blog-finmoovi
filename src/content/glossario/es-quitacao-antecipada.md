@@ -1,6 +1,7 @@
 ---
 term: "Pago Anticipado"
 image: "/images/glossario/es-quitacao-antecipada.svg"
+imageAlt: "Gráfico de líneas en colores naranja, azul y gris sobre fondo negro."
 definition: "Pagar una deuda antes de su vencimiento, generalmente con descuento en intereses. Un derecho garantizado por la ley del consumidor brasileña."
 category: "credito"
 locale: "es"

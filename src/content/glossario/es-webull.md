@@ -4,6 +4,7 @@ definition: "Entienda qué es webull, cómo funciona, ventajas, riesgos y ejempl
 title: "webull - Glosario Financiero"
 description: "Entienda qué es webull, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/webull.webp"
+imageAlt: "Tres formas ovaladas color rosa y azul sobre fondo degradado rosa y azul."
 category: "basico"
 tags: ["webull", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

@@ -1,6 +1,7 @@
 ---
 term: "Liquidez"
 image: "/images/glossario/liquidez.svg"
+imageAlt: "Gráfico de barras coloridas em tons de rosa e roxo em fundo preto."
 definition: "Facilidade e velocidade com que um ativo pode ser convertido em dinheiro sem perda significativa de valor."
 category: "investimentos"
 relatedTerms: ["Reserva de Emergência", "CDB", "Tesouro Direto"]

@@ -4,6 +4,7 @@ definition: "Understand what valor is, how it works, advantages, risks and pract
 title: "valor - Financial Glossary"
 description: "Understand what valor is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/valor.webp"
+imageAlt: "A multicolored geometric sculpture on a white surface against a white background."
 category: "basico"
 tags: ["valor", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

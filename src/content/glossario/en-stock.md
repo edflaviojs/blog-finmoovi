@@ -4,6 +4,7 @@ definition: "Understand what stock is, how it works, advantages, risks and pract
 title: "stock - Financial Glossary"
 description: "Understand what stock is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/stock.webp"
+imageAlt: "Pastel blue and pink gradient background with no objects or text."
 category: "basico"
 tags: ["stock", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

@@ -1,6 +1,7 @@
 ---
 term: "Fundos Imobiliários"
 image: "/images/glossario/fundos-imobiliarios.svg"
+imageAlt: "Gráfico de barras coloridas em degradê vermelho e verde sobre fundo preto."
 definition: "Fundos que investem em imóveis ou títulos ligados ao setor imobiliário. Pagam rendimentos mensais e são negociados na bolsa."
 category: "investimentos"
 relatedTerms: ["Dividendos", "Renda Variável", "Bolsa de Valores"]

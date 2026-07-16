@@ -4,6 +4,7 @@ definition: "Entienda qué es opcão, cómo funciona, ventajas, riesgos y ejempl
 title: "opcão - Glosario Financiero"
 description: "Entienda qué es opcão, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/opcao.webp"
+imageAlt: "Superficie blanca lisa con gradientes de gris claro en el fondo."
 category: "basico"
 tags: ["opcão", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

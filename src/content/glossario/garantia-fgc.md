@@ -1,6 +1,7 @@
 ---
 term: "Garantia FGC"
 image: "/images/glossario/garantia-fgc.svg"
+imageAlt: "Gráfico de pizza com fatias laranja, verde, cinza e preta em fundo preto."
 definition: "Proteção oferecida pelo Fundo Garantidor de Créditos que cobre até R$ 250.000 por CPF por instituição em caso de falência do banco."
 category: "basico"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]

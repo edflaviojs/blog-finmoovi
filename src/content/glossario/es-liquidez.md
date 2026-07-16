@@ -1,6 +1,7 @@
 ---
 term: "Liquidez"
 image: "/images/glossario/es-liquidez.svg"
+imageAlt: "Gráfico de línea verde y naranja en fondo negro con un círculo marrón."
 definition: "La facilidad y rapidez con la que un activo puede convertirse en efectivo sin pérdida significativa de valor."
 category: "investimentos"
 locale: "es"

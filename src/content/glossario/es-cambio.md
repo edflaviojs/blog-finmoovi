@@ -1,6 +1,7 @@
 ---
 term: "Cambio"
 image: "/images/glossario/es-cambio.svg"
+imageAlt: "Gráfico de línea morada en un fondo negro con degradado rosa."
 definition: "El intercambio de una moneda por otra. El tipo de cambio determina cuánto vale una moneda en relación con otra."
 category: "basico"
 locale: "es"

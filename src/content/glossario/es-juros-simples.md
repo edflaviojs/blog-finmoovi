@@ -1,6 +1,7 @@
 ---
 term: "Interés Simple"
 image: "/images/glossario/es-juros-simples.svg"
+imageAlt: "Gráfico circular con secciones naranjas, azules, grises y negras en fondo negro."
 definition: "Interés calculado solo sobre el monto del capital inicial. A diferencia del interés compuesto, no genera interés sobre interés."
 category: "basico"
 locale: "es"

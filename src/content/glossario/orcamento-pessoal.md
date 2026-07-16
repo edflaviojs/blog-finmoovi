@@ -1,6 +1,7 @@
 ---
 term: "Orçamento Pessoal"
 image: "/images/glossario/orcamento-pessoal.svg"
+imageAlt: "Gráfico de velas coloridas em laranja e azul contra fundo preto."
 definition: "Planejamento financeiro que organiza receitas e despesas mensais. Permite visualizar para onde vai seu dinheiro e identificar oportunidades de economia."
 category: "basico"
 relatedTerms: ["Reserva de Emergência", "Regra 50-30-20", "Controle Financeiro"]

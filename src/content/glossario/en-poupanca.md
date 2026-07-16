@@ -4,6 +4,7 @@ definition: "Understand what poupança is, how it works, advantages, risks and p
 title: "poupança - Financial Glossary"
 description: "Understand what poupança is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/poupanca.webp"
+imageAlt: "Two geometric shapes on pink background, one pink, one blue and purple."
 category: "basico"
 tags: ["poupança", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
