@@ -3,6 +3,7 @@ title: "7 Alternativas à Planilha Google para Finanças – Guia Atualizado 202
 description: "Descubra 5 apps reais (incluindo FinMoovi) que substituem a planilha Google. Comparativo, prós, contras e recomendação por perfil."
 tickerHeadline: "A planilha que já não serve"
 image: "/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza.webp"
+imageAlt: "Três pessoas reunidas em mesa com laptop, papéis e celular."
 category: "ferramentas"
 locale: "pt"
 tags: ["alternativas planilha google","apps finanças 2026","FinMoovi review","controle de gastos","app financeiro offline","alternativa planilha google","controle gastos sem planilha","app financeiro vs planilha"]

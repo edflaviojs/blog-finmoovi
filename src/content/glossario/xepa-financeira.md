@@ -4,6 +4,7 @@ definition: "Entenda o que é xepa financeira, como funciona, vantagens, riscos 
 title: "xepa financeira - Glossário Financeiro"
 description: "Entenda o que é xepa financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/xepa-financeira.webp"
+imageAlt: "Silhouette de cabeça humana em azul sobre fundo rosa claro e chão rosa."
 category: "basico"
 tags: ["xepa financeira", "glossário", "finanças"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Understand what uro is, how it works, advantages, risks and practic
 title: "uro - Financial Glossary"
 description: "Understand what uro is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/uro.webp"
+imageAlt: "Stacks of gold coins, white bars, and a jar with coins and a plant."
 category: "basico"
 tags: ["uro", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

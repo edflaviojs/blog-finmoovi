@@ -3,6 +3,7 @@ title: "7 Alternatives to Google Sheets for Finance – Updated Guide 2026"
 description: "Discover 5 real apps (including FinMoovi) that replace Google Sheets. Comparison, pros, cons, and profile‑based recommendation."
 tickerHeadline: "The spreadsheet that no longer works"
 image: "/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza.webp"
+imageAlt: "Three people sitting at a table with laptop, phone, and papers."
 category: "ferramentas"
 locale: "en"
 tags: ["alternatives google sheets","finance apps 2026","FinMoovi review","expense tracking","offline finance app","google sheets alternative","expense tracking without sheets","finance app vs spreadsheet"]

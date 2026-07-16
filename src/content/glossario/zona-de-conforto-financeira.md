@@ -1,6 +1,7 @@
 ---
 term: "Zona de Conforto Financeira"
 image: "/images/glossario/zona-de-conforto-financeira.svg"
+imageAlt: "Gráfico de velas com caixas rosa e azuis em fundo preto."
 definition: "Situação onde a pessoa tem renda suficiente para cobrir gastos, reserva de emergência formada e investimentos crescendo. Estado de tranquilidade financeira."
 category: "basico"
 relatedTerms: ["Reserva de Emergência", "Orçamento Pessoal", "Patrimônio Líquido"]

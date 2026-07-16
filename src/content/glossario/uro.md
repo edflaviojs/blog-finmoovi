@@ -4,6 +4,7 @@ definition: "Entenda o que é uro, como funciona, vantagens, riscos e exemplos p
 title: "uro - Glossário Financeiro"
 description: "Entenda o que é uro, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/uro.webp"
+imageAlt: "Pilhas de moedas de ouro e gráfico com uma pequena planta em vaso."
 category: "basico"
 tags: ["uro", "glossário", "finanças"]
 author: "FinMoovi"

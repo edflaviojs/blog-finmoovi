@@ -4,6 +4,7 @@ definition: "Entenda o que é qualidade, como funciona, vantagens, riscos e exem
 title: "qualidade - Glossário Financeiro"
 description: "Entenda o que é qualidade, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/qualidade.webp"
+imageAlt: "Colher de plástico rosa em formato sinuoso sobre fundo rosa claro."
 category: "basico"
 tags: ["qualidade", "glossário", "finanças"]
 author: "FinMoovi"

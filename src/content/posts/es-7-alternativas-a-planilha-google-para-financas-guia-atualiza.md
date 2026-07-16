@@ -3,6 +3,7 @@ title: "7 Alternativas a la Hoja de Cálculo de Google para Finanzas – Guía A
 description: "Descubre 5 apps reales (incluyendo FinMoovi) que sustituyen la hoja de cálculo de Google. Comparativa, pros, contras y recomendación por perfil."
 tickerHeadline: "La hoja que ya no sirve"
 image: "/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza.webp"
+imageAlt: "Tres personas sonriendo mientras miran documentos y dispositivos cerca de una laptop plateada."
 category: "ferramentas"
 locale: "es"
 tags: ["alternativas hoja de cálculo google","apps finanzas 2026","FinMoovi review","control de gastos","app financiero offline","alternativa hoja de cálculo google","control gastos sin hoja de cálculo","app financiero vs hoja de cálculo"]
