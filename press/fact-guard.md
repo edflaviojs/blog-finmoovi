@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-07-15T07:13:23.706Z
-**Posts:** 147 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 25
+**Gerado em:** 2026-07-16T07:21:15.015Z
+**Posts:** 156 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 26
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -22,6 +22,9 @@
 **en-5-dicas-para-reorganizar-suas-financas-nas-ferias.md**
 - _According to the Brazilian Institute of Geography and Statistics (IBGE), in 2022, most Brazilians (64._
 - _According to Serasa, in 2022, almost 60% of Brazilians used apps to control their finances, showing the growing awareness of the importance of personal [financial management](/en/posts/en-cartao-de-cr_
+
+**en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel.md**
+- _, IMAB11) in 70/30 or 60/40 ratios, according to your profile._
 
 **en-orcamento-para-casal-dividindo-despesas.md**
 - _In the case of João and Maria, they can decide to divide expenses according to the percentage of their salaries in relation to the total._
