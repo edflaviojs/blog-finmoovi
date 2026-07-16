@@ -121,7 +121,7 @@ const ctas = {
 };
 
 const badges = { pt: 'App Gratuito', en: 'Free App', es: 'App Gratuita' };
-const ctaButtons = { pt: config.app.ctaText.pt + ' →', en: config.app.ctaText.en + ' →', es: config.app.ctaText.es + ' →' };
+const ctaButtons = { pt: config.app.ctaText.pt, en: config.app.ctaText.en, es: config.app.ctaText.es };
 
 const pool = ctas[locale] || ctas.pt;
 const index = seed !== undefined ? seed % pool.length : Math.floor(Math.random() * pool.length);
@@ -131,92 +131,113 @@ const ctaBtn = ctaButtons[locale] || ctaButtons.pt;
 ---
 
 <aside class={`cta-variado cta-variado--${variant}`}>
-  <div class="cta-variado-badge">{badge}</div>
+  <span class="cta-variado-eyebrow">{appName} · {badge}</span>
   <h4 class="cta-variado-title">{cta.title}</h4>
   {variant === 'full' && <p class="cta-variado-desc">{cta.desc}</p>}
-  <a href={appUrl} class="cta-variado-btn" target="_blank" rel="noopener">
-    {ctaBtn}
-  </a>
+  <a href={appUrl} class="cta-variado-btn" target="_blank" rel="noopener">{ctaBtn}<span class="cta-variado-arrow" aria-hidden="true">→</span></a>
 </aside>
 
 <style>
+  /* Aparte editorial — parte da leitura, sem cara de banner */
   .cta-variado {
     margin: var(--space-8) 0;
-    padding: var(--space-6);
-    background: var(--gradient-card);
-    border: 1px solid var(--border-default);
-    border-radius: var(--radius-lg);
+    padding: 1.15rem 1.5rem 1.25rem 1.6rem;
     position: relative;
-    overflow: hidden;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(90deg,
+      color-mix(in srgb, var(--accent-primary) 6%, transparent),
+      transparent 62%);
   }
 
   .cta-variado::before {
     content: '';
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(135deg, var(--brand-cyan), var(--brand-gradient-end));
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, var(--brand-cyan), var(--accent-primary));
   }
 
-  .cta-variado-badge {
-    display: inline-block;
-    padding: 2px var(--space-3);
-    background: rgba(63, 185, 80, 0.15);
-    color: var(--accent-green);
-    border-radius: var(--radius-full);
-    font-size: var(--text-xs);
-    font-weight: 600;
-    margin-bottom: var(--space-3);
+  .cta-variado-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.55rem;
+  }
+
+  .cta-variado-eyebrow::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--brand-cyan);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-cyan) 22%, transparent);
   }
 
   .cta-variado-title {
     font-size: var(--text-lg);
     color: var(--text-primary);
-    margin-bottom: var(--space-2);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.4rem;
+    line-height: 1.35;
   }
 
   .cta-variado-desc {
     font-size: var(--text-sm);
     color: var(--text-secondary);
-    margin-bottom: var(--space-4);
+    margin-bottom: 0.85rem;
     line-height: var(--leading-relaxed);
   }
 
   .cta-variado-btn {
-    display: inline-block;
-    padding: var(--space-3) var(--space-5);
-    background: linear-gradient(135deg, var(--brand-cyan), var(--brand-gradient-end));
-    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-link);
     font-weight: 600;
     font-size: var(--text-sm);
-    border-radius: var(--radius-full);
     text-decoration: none;
-    transition: all var(--transition-fast);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: border-color var(--transition-fast);
+  }
+
+  .cta-variado-arrow {
+    transition: transform var(--transition-fast);
   }
 
   .cta-variado-btn:hover {
-    opacity: 0.9;
-    transform: translateY(-1px);
-    color: #fff;
+    border-bottom-color: currentColor;
+    color: var(--text-link);
   }
 
+  .cta-variado-btn:hover .cta-variado-arrow {
+    transform: translateX(3px);
+  }
+
+  /* Compact: título + eyebrow numa linha */
   .cta-variado--compact {
-    padding: var(--space-4) var(--space-5);
+    padding: 0.9rem 1.25rem 0.9rem 1.4rem;
     display: flex;
     align-items: center;
     gap: var(--space-4);
     flex-wrap: wrap;
   }
 
+  .cta-variado--compact .cta-variado-eyebrow {
+    margin-bottom: 0;
+  }
+
   .cta-variado--compact .cta-variado-title {
     font-size: var(--text-base);
     margin-bottom: 0;
     flex: 1;
-  }
-
-  .cta-variado--compact .cta-variado-badge {
-    margin-bottom: 0;
   }
 </style>

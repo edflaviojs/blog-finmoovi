@@ -79,13 +79,13 @@ const faqSchema = {
           </div>
         )}
 
-        <CTAVariado seed={term.slug.length} />
+        <CTAVariado seed={term.slug.length} locale="en" />
 
         <div class="glossario-post-content post-content">
           <Content />
         </div>
 
-        <CTAVariado seed={term.slug.length + 5} />
+        <CTAVariado seed={term.slug.length + 5} locale="en" />
 
         {relatedTerms.length > 0 && (
           <section class="related-terms">
