@@ -186,7 +186,9 @@ const lights = theme === 'natal'
     top: 0;
     width: 9px;
     height: 12px;
-    margin-top: var(--cord);
+    /* --cord2 permite alongar os fios por media query (o --cord vem inline) */
+    --cord2: var(--cord);
+    margin-top: var(--cord2);
     background: var(--c);
     border-radius: 46% 46% 50% 50% / 38% 38% 62% 62%;
     box-shadow: 0 0 8px 1.5px var(--c);
@@ -199,9 +201,9 @@ const lights = theme === 'natal'
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: calc(-1 * var(--cord) - 2px);
+    top: calc(-1 * var(--cord2) - 2px);
     width: 1.5px;
-    height: calc(var(--cord) + 2px);
+    height: calc(var(--cord2) + 2px);
     background: rgba(255, 255, 255, 0.28);
   }
 
@@ -289,10 +291,12 @@ const lights = theme === 'natal'
     background: linear-gradient(135deg, #ffb3c9, #ff8ab8);
   }
 
-  /* Mobile: menos partículas, luzes mais compactas */
+  /* Mobile: menos partículas, luzes mais compactas E com fios mais longos
+     (a faixa AGORA quebra em 2 linhas no mobile — as lâmpadas descem além dela) */
   @media (max-width: 767px) {
     .sd-p:nth-child(n+9) { display: none; }
     .sd-bulb:nth-child(n+13) { display: none; }
+    .sd-bulb { --cord2: calc(var(--cord) + 28px); }
     .sdecor-natal { top: -12px; left: -8px; }
     .sdecor-natal svg { width: 27px; height: 21px; }
     .sdecor-carnaval svg { width: 26px; height: 17px; }
