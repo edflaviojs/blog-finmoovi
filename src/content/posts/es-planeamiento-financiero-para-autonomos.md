@@ -51,7 +51,7 @@ Además, es fundamental tener un sistema de cobro eficaz, para garantizar que re
 
 
 ## [Educación Financiera](/es/glossario/es-educacao-financeira)
-La [educación financiera](/es/posts/es-7-errores-financieros-principiante) es fundamental para cualquier persona, especialmente para autónomos. Esto incluye entender conceptos básicos de finanzas, como intereses, [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y impuestos. Existen muchos recursos disponibles en línea, como el [Investopedia](https://www.investopedia.com), que pueden ayudar a mejorar tu conocimiento financiero.
+La [educación financiera](/es/posts/es-7-errores-financieros-principiante) es fundamental para cualquier persona, especialmente para autónomos. Esto incluye entender conceptos básicos de finanzas, como intereses, [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y impuestos. Existen muchos recursos disponibles en línea, como el [Investopedia](https://www.investopedia.com), que pueden ayudar a mejorar tu conocimiento [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-).
 
 **Consejo práctico:** Reserva 1 hora a la semana para aprender sobre [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) y planeamiento financiero.
 

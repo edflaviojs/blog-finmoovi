@@ -94,7 +94,7 @@ Here is a comparison table of the 5 alternatives to Mobills:
 | App | Interface | Budgeting Tools | Customer Support | Free/Paid |
 | --- | --- | --- | --- | --- |
 | Personal Capital | Easy to use | Advanced | Excellent | Free |
-| FinMoovi | Easy to use | Advanced | Excellent | Paid |
+| [FinMoovi](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) | Easy to use | Advanced | Excellent | Paid |
 | Mint | Easy to use | Advanced | Excellent | Free |
 | YNAB | Easy to use | Advanced | Excellent | Paid |
 | Spendee | Easy to use | Advanced | Excellent | Free |

@@ -40,7 +40,7 @@ With [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), you can get a c
 Here's an example of how [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) can be used in your daily life:
 
 1. You record an expense in dollars during a business trip.
-2. FinMoovi automatically categorizes the expense as "Travel" or "Food", depending on the type of expense.
+2. FinMoovi automatically categorizes the expense as "[Travel](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)" or "Food", depending on the type of expense.
 3. You can view all your expenses on a single screen, including expenses in different currencies.
 4. FinMoovi offers intelligent reports that help identify areas where you can save and improve your financial situation.
 

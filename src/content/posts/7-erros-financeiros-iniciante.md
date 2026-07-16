@@ -48,7 +48,7 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-
 
 **O erro:** Economizar "para o futuro" sem um objetivo claro.
 
-**A solução:** Defina metas específicas: "R$ 10.000 para viagem em dezembro" ou "R$ 50.000 para entrada do apartamento em 2 anos". Metas claras motivam.
+**A solução:** Defina metas específicas: "R$ 10.000 para [viagem](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) em dezembro" ou "R$ 50.000 para entrada do apartamento em 2 anos". Metas claras motivam.
 
 ## 6. Investir sem entender
 

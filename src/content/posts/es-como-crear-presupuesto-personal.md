@@ -27,7 +27,7 @@ Un buen [presupuesto](/es/posts/es-metodo-50-30-20-para-orcamento) te ayuda a:
 - Saber exactamente a dónde va tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado)
 - Identificar gastos innecesarios
 - Definir y alcanzar metas financieras
-- Reducir el estrés financiero
+- Reducir el estrés [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)
 
 ## Paso 1: Calcula tu Ingreso Neto
 

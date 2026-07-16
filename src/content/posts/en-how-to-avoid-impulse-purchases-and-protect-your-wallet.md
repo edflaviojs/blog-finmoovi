@@ -29,11 +29,11 @@ A well‑defined [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-na
 
 ![Monte um plano de gastos realista](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-2.webp)
 
-**Practical tip:** Keep a simple spreadsheet or a finance app (like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)) where you log every expense in real time. When the leisure limit reaches 80 % of the [budget](/en/posts/en-how-to-create-personal-budget), the app will send you an alert.
+**Practical tip:** Keep a simple [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) or a finance app (like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)) where you log every expense in real time. When the leisure limit reaches 80 % of the [budget](/en/posts/en-how-to-create-personal-budget), the app will send you an alert.
 
 ## Use the 30‑day rule
 
-The 30‑day rule is one of the most effective tricks. When you want to buy something outside the budget, write down the item and the price, but only make the purchase after 30 days. If you still feel the need, go ahead; if not, the desire usually disappears. Imagine you saw a pair of sneakers for R$ 350. Write it down, wait a month, and by the end you’ll notice you’ve already spent R$ 200 on other priorities. The impulse turns into a conscious decision.
+The 30‑day rule is one of the most effective tricks. When you want to buy something outside the [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas), write down the item and the price, but only make the purchase after 30 days. If you still feel the need, go ahead; if not, the desire usually disappears. Imagine you saw a pair of sneakers for R$ 350. Write it down, wait a month, and by the end you’ll notice you’ve already spent R$ 200 on other priorities. The impulse turns into a conscious decision.
 
 ## Turn the urge into a habit
 

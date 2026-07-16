@@ -65,7 +65,7 @@ Here's a checklist to help you decide if a spreadsheet or a financial app is bet
 
 
 ## Conclusion
-If you're using a spreadsheet to manage your finances, it's essential to consider if it's working for you. If you're having trouble keeping your finances updated and consistent, or if you need more mobility and automation, a financial app can be a good option for you. If the spreadsheet isn't working, try FinMoovi for 7 days and see how it can help you manage your finances effectively and easily. With FinMoovi, you can access features such as:
+If you're using a spreadsheet to manage your finances, it's essential to consider if it's working for you. If you're having trouble keeping your finances updated and consistent, or if you need more mobility and automation, a financial app can be a good option for you. If the spreadsheet isn't working, try [FinMoovi](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) for 7 days and see how it can help you manage your finances effectively and easily. With FinMoovi, you can access features such as:
 * Account and credit card management
 * Automation of financial tasks
 * Personalized alerts and notifications

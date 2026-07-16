@@ -35,7 +35,7 @@ Here are some tips to [save money](/en/posts/en-reduce-fixed-expenses):
 Having common financial goals is essential for you and your partner to work toward the same objective. This can include saving for a house, paying off debt, or creating an [emergency fund](/en/glossario/en-reserva-de-emergencia). Let's say you want to save R$ 20,000 for a house down payment. This means you need to save R$ 1,667 per month for a year.
 
 ## Challenges and Solutions
-Challenges often arise when managing couple finances. For example, one partner might have expensive taste while the other is more frugal. **Practical tip:** create an "expense tracking" system so you can monitor your spending and discuss it regularly.
+Challenges often arise when managing couple finances. For example, one partner might have expensive taste while the other is more frugal. **Practical tip:** create an "[expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza)" system so you can monitor your spending and discuss it regularly.
 
 Another common challenge is lack of communication about finances. It's important that you have regular conversations about how you're feeling about [money](/en/posts/en-save-on-your-market-bill) and if there's anything that needs to change.
 

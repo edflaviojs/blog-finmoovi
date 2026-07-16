@@ -44,7 +44,7 @@ Invertir siempre implica riesgos. El riesgo es la posibilidad de perder parte o 
 
 
 ## Próximos Pasos
-Ahora que has entendido los conceptos básicos de inversión y [diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel), es hora de poner esos conocimientos en práctica. Considera empezar con pequeñas cantidades y aumentar tus inversiones a medida que te sientas más cómodo. Recuerda que la clave para el éxito es la consistencia y la paciencia. No tengas miedo de buscar ayuda de un profesional financiero si no te sientes seguro para invertir solo. Además, considera usar herramientas como el [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) para ayudar a gestionar tus inversiones de forma eficiente.
+Ahora que has entendido los conceptos básicos de inversión y [diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel), es hora de poner esos conocimientos en práctica. Considera empezar con pequeñas cantidades y aumentar tus inversiones a medida que te sientas más cómodo. Recuerda que la clave para el éxito es la consistencia y la paciencia. No tengas miedo de buscar ayuda de un profesional [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) si no te sientes seguro para invertir solo. Además, considera usar herramientas como el [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) para ayudar a gestionar tus inversiones de forma eficiente.
 
 ![Próximos pasos](/images/posts/montando-carteira-diversificada-com-r-500-6.webp)
 

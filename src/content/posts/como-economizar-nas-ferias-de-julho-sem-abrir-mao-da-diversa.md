@@ -128,7 +128,7 @@ Se você gastar R$ 80 em restaurantes, a diferença são **R$ 35** por dia. 
 
 ---
 
-## 7. Controle de gastos em tempo real
+## 7. [Controle de gastos](/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza) em tempo real
 
 ### Como não perder o rumo
 Mesmo com o melhor planejamento, imprevistos acontecem. Use o **[FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** para registrar cada despesa (até as de poucos centavos) e receber alertas quando estiver próximo do limite diário. O app ainda gera relatórios mensais que mostram onde foi possível cortar custos para a próxima viagem.
@@ -137,7 +137,7 @@ Mesmo com o melhor planejamento, imprevistos acontecem. Use o **[FinMoovi](/post
 
 ## Checklist rápido para as férias de julho
 
-| ✅ | Ação | Economia estimada |
+| ✅ | Ação | [Economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) estimada |
 |---|------|-------------------|
 | 1 | Definir teto de gasto | Mantém orçamento intacto |
 | 2 | Escolher destino off‑season | Até R$ 600 na passagem |

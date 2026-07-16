@@ -50,7 +50,7 @@ Additionally, there are apps, such as [FinMoovi](/en/posts/en-5-alternativas-ao-
 
 
 ## Start Today
-You don't need to be a finance expert to teach children about [money](/en/posts/en-organizing-finances-as-a-freelancer). The important thing is to start talking about the subject and finding practical ways to teach financial concepts. With a little creativity and patience, it's possible to help children develop healthy habits regarding [money](/en/posts/en-financial-planning-for-couples) and promote solid financial education from an early age.
+You don't need to be a [finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) expert to teach children about [money](/en/posts/en-organizing-finances-as-a-freelancer). The important thing is to start talking about the subject and finding practical ways to teach financial concepts. With a little creativity and patience, it's possible to help children develop healthy habits regarding [money](/en/posts/en-financial-planning-for-couples) and promote solid financial education from an early age.
 
 ---
 

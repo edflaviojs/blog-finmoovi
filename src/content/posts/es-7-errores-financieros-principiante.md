@@ -17,7 +17,7 @@ seo:
   keywords: ["errores financieros", "finanzas para principiantes", "cómo ahorrar", "control financiero"]
 ---
 
-Empezar tu camino financiero es emocionante, pero es fácil caer en trampas comunes. Aquí están los 7 errores que casi todo principiante comete — y cómo evitarlos.
+Empezar tu camino [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) es emocionante, pero es fácil caer en trampas comunes. Aquí están los 7 errores que casi todo principiante comete — y cómo evitarlos.
 
 ## 1. No Rastrear [Gastos](/es/posts/es-metodo-50-30-20-para-orcamento)
 

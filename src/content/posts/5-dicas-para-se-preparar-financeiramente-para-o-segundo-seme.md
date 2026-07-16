@@ -24,7 +24,7 @@ Estamos já no meio do ano e é hora de refletir sobre como estamos lidando com 
 Antes de começar a planejar para o segundo semestre, é fundamental entender sua situação financeira atual. Isso inclui saber quanto você ganha, quanto você gasta e quais são suas dívidas. Você pode usar o [aplicativo FinMoovi](https://www.finmoovi.com.br) para ajudá-lo a controlar seus gastos e entender melhor sua situação financeira. Com o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), você pode registrar todos os seus gastos e receitas, criar um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) personalizado e receber alertas quando estiver ultrapassando seus limites.
 
 ## Definindo Metas Financeiras para o Segundo Semestre
-Agora que você entende sua situação financeira atual, é hora de definir metas financeiras para o segundo semestre. Isso pode incluir economizar para uma viagem, pagar dívidas ou criar um fundo de emergência. Aqui estão algumas dicas para ajudá-lo a definir metas financeiras:
+Agora que você entende sua situação financeira atual, é hora de definir metas financeiras para o segundo semestre. Isso pode incluir economizar para uma [viagem](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-), pagar dívidas ou criar um fundo de emergência. Aqui estão algumas dicas para ajudá-lo a definir metas financeiras:
 1. **Seja específico**: Em vez de dizer "eu quero economizar [dinheiro](/posts/cashback-inteligente)", diga "eu quero economizar R$ 1.000,00 para uma viagem".
 2. **Seja realista**: Certifique-se de que suas metas sejam alcançáveis com base em sua situação financeira atual.
 3. **Seja responsável**: Certifique-se de que suas metas estejam alinhadas com seus valores e prioridades.

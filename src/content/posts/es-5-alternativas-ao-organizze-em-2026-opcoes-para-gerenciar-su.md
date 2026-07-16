@@ -33,7 +33,7 @@ Contras:
 Precio: Gratis
 
 ## Alternativa 2: [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro)
-El FinMoovi es un aplicativo de finanzas que se destaca por su capacidad para manejar múltiples monedas, lo que permite a los usuarios administrar sus finanzas en diferentes países. Además, el FinMoovi ofrece recursos como captura inteligente por voz, categorización con IA y soporte offline, lo que lo convierte en una opción atractiva para aquellos que necesitan flexibilidad y eficiencia.
+El [FinMoovi](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) es un aplicativo de finanzas que se destaca por su capacidad para manejar múltiples monedas, lo que permite a los usuarios administrar sus finanzas en diferentes países. Además, el FinMoovi ofrece recursos como captura inteligente por voz, categorización con IA y soporte offline, lo que lo convierte en una opción atractiva para aquellos que necesitan flexibilidad y eficiencia.
 El FinMoovi también permite que los usuarios creen presupuestos y definan metas financieras, lo que lo convierte en una herramienta completa para administrar las finanzas.
 Pros:
 * Multi-monedas, lo que permite administrar finanzas en diferentes países

@@ -28,7 +28,7 @@ Um bom [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) te
 - Saber exatamente para onde vai seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz)
 - Identificar [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) desnecessários
 - Criar uma [reserva de emergência](/glossario/reserva-de-emergencia)
-- Alcançar objetivos financeiros (viagem, casa, aposentadoria)
+- Alcançar objetivos financeiros ([viagem](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-), casa, aposentadoria)
 
 ## Passo 1: Liste todas as suas receitas
 

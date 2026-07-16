@@ -31,11 +31,11 @@ Um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) bem de
 
 
 
-**Dica prática:** Mantenha uma planilha simples ou um app de finanças (como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)) onde você registre, em tempo real, cada gasto. Quando o limite de lazer chegar a 80 % do previsto, o próprio app enviará um alerta.
+**Dica prática:** Mantenha uma [planilha](/posts/migrando-da-planilha-para-um-app-financeiro) simples ou um app de finanças (como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)) onde você registre, em tempo real, cada gasto. Quando o limite de lazer chegar a 80 % do previsto, o próprio app enviará um alerta.
 
 ## Use a regra dos 30 dias
 
-A regra dos 30 dias é um dos truques mais eficazes. Quando quiser comprar algo fora do orçamento, anote o item e o valor, mas só efetue a compra depois de 30 dias. Se ainda sentir necessidade, faça a compra; se não, o desejo normalmente desaparece. Imagine que você viu um par de tênis de R$ 350. Anote, espere o mês e, ao final, perceba que já gastou R$ 200 em outras prioridades. O impulso se transforma em decisão consciente.
+A regra dos 30 dias é um dos truques mais eficazes. Quando quiser comprar algo fora do [orçamento](/posts/como-criar-orcamento-pessoal), anote o item e o valor, mas só efetue a compra depois de 30 dias. Se ainda sentir necessidade, faça a compra; se não, o desejo normalmente desaparece. Imagine que você viu um par de tênis de R$ 350. Anote, espere o mês e, ao final, perceba que já gastou R$ 200 em outras prioridades. O impulso se transforma em decisão consciente.
 
 ## Transforme a vontade em hábito
 

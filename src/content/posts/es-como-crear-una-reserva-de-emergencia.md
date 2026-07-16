@@ -50,7 +50,7 @@ Recuerde que la clave es comenzar pequeño y aumentar la reserva con el tiempo. 
 
 
 ## Importancia de la reserva de emergencia
-Tener una reserva de emergencia es crucial para la salud financiera. Sin ella, usted puede encontrarse en una situación difícil si pierde el empleo, tiene una emergencia médica o necesita hacer una reparación costosa en su casa. Además, una reserva de emergencia puede ayudar a reducir el estrés financiero y mejorar la calidad de vida.
+Tener una reserva de emergencia es crucial para la salud financiera. Sin ella, usted puede encontrarse en una situación difícil si pierde el empleo, tiene una emergencia médica o necesita hacer una reparación costosa en su casa. Además, una reserva de emergencia puede ayudar a reducir el estrés [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) y mejorar la calidad de vida.
 
 Para más información sobre cómo gestionar sus finanzas y crear una reserva de emergencia, usted puede visitar el sitio web del [Banco Central del Brasil](https://www.bcb.gov.br) o del [Tesoro Directo](https://www.tesourodireto.com.br).
 

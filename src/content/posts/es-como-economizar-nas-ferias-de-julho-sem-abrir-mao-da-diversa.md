@@ -25,7 +25,7 @@ seo:
 ---
 
 ## Introducción  
-Julio es el mes más esperado por quien quiere escapar de la rutina, pero también el periodo en que los precios tienden a subir: pasajes aéreos, hoteles e incluso la cuenta de energía en las casas de veraneo. Si ganas alrededor de **R$ 3.000** al mes, como la mayoría de los trabajadores formales, puede ser fácil salir del [presupuesto](/es/posts/es-como-crear-presupuesto-personal) y terminar el mes con la cuenta bancaria en rojo. La buena noticia es que, con una planificación sencilla y algunos cambios de hábito, es posible disfrutar de las [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) sin comprometer tus finanzas. A continuación, presento siete pasos que transformarán tu viaje de julio en una experiencia económica y placentera.  
+Julio es el mes más esperado por quien quiere escapar de la rutina, pero también el periodo en que los precios tienden a subir: pasajes aéreos, hoteles e incluso la cuenta de energía en las casas de veraneo. Si ganas alrededor de **R$ 3.000** al mes, como la mayoría de los trabajadores formales, puede ser fácil salir del [presupuesto](/es/posts/es-como-crear-presupuesto-personal) y terminar el mes con la cuenta bancaria en rojo. La buena noticia es que, con una [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) sencilla y algunos cambios de hábito, es posible disfrutar de las [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) sin comprometer tus finanzas. A continuación, presento siete pasos que transformarán tu viaje de julio en una experiencia económica y placentera.  
 
 ---  
 
@@ -133,7 +133,7 @@ Incluso con la mejor planificación, los imprevistos aparecen. Usa el **[FinMoov
 
 | ✅ | Acción | Ahorro estimado |
 |---|--------|-----------------|
-| 1 | Definir techo de gasto | Mantiene el presupuesto intacto |
+| 1 | Definir techo de gasto | Mantiene el [presupuesto](/es/posts/es-organizar-finanzas-pareja) intacto |
 | 2 | Elegir destino off‑season | Hasta R$ 600 en el pasaje |
 | 3 | Optar por autobús o coche compartido | R$ 100‑R$ 200 por trayecto |
 | 4 | Alojamiento en Airbnb/hostal | R$ 850 en 5 noches |

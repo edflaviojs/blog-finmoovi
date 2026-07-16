@@ -31,7 +31,7 @@ A semana passou sem grandes surpresas nos principais indicadores, mas alguns mov
 
 - **Euro (EUR/BRL = R$ 5,83)** – O euro seguiu a mesma direção do [dólar](/posts/cotacoes-semana-4-maio-2026), recuando cerca de 0,2 % ao final da semana. A queda foi impulsionada por um enfraquecimento da zona‑euro diante das discussões sobre a política monetária do BCE. Para quem tem contas ou investimentos em euros, a boa notícia é que a cotação está mais favorável para quem deseja trazer o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta ao Brasil.  
 
-Em resumo: tanto o dólar quanto o euro mostraram leve desvalorização frente ao real, mas a variação foi pequena demais para mudar drasticamente suas decisões de compra ou investimento.
+Em resumo: tanto o [dólar](/posts/cotacoes-semana-5-junho-2026) quanto o euro mostraram leve desvalorização frente ao real, mas a variação foi pequena demais para mudar drasticamente suas decisões de compra ou investimento.
 
 ## [Selic](/glossario/selic) e o Impacto nos Investimentos  
 
@@ -65,5 +65,5 @@ Para quem não quer lidar com corretoras internacionais, o **[FinMoovi](/posts/5
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
+**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito).**
 

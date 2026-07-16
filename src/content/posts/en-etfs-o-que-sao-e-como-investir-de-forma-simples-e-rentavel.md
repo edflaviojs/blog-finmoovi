@@ -19,7 +19,7 @@ seo:
 
 ## What ETFs Are
 
-ETF stands for **Exchange Traded Fund**, a market‑traded index fund. In simple terms, an ETF bundles a set of assets – stocks, bonds, commodities – and tracks the performance of an index, such as the Ibovespa or the S&P 500. Each ETF share can be bought or sold on the exchange just like a regular [stock](/en/glossario/en-stock), which provides convenience and [liquidity](/en/glossario/en-liquidez).
+[ETF](/en/glossario/en-etf) stands for **Exchange Traded Fund**, a market‑traded index fund. In simple terms, an ETF bundles a set of assets – stocks, bonds, commodities – and tracks the performance of an index, such as the Ibovespa or the S&P 500. Each ETF share can be bought or sold on the exchange just like a regular [stock](/en/glossario/en-stock), which provides convenience and [liquidity](/en/glossario/en-liquidez).
 
 > **First appearance:** “ETF” (Exchange Traded Fund) – a fund that replicates an index and trades like a stock.
 
@@ -54,10 +54,10 @@ If, instead, you placed the same amount in a [CDB](/en/glossario/en-cdb) earning
 ## How to Start Investing
 
 1. **Open a brokerage account** – choose one that offers zero or reduced commission fees for ETFs.  
-2. **Set your goal** – if you’re focused on the long term, a stock ETF may be suitable; for fixed income, look for ETFs that track the CDI or the Tesouro [Selic](/en/glossario/en-selic).  
+2. **Set your goal** – if you’re focused on the long term, a stock ETF may be suitable; for fixed income, look for ETFs that track the [CDI](/en/glossario/en-cdi) or the Tesouro [Selic](/en/glossario/en-selic).  
 3. **Create a contribution plan** – for example, invest **R$500** each month in a Brazilian stock ETF.  
 4. **Place the purchase order** – select the ETF’s ticker (code), enter the quantity, and confirm the trade.  
-5. **Monitor performance** – use monthly reports or a [finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) to see how your investment evolves.
+5. **Monitor performance** – use monthly reports or a [finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) to see how your [investment](/en/posts/en-tesouro-direto-para-iniciantes) evolves.
 
 ![Como começar a investir](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-4.webp)
 
@@ -100,4 +100,4 @@ Remember that investing is a marathon, not a 100‑meter sprint. Assess whether 
 
 ---
 
-**To track all your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in one place, [try FinMoovi free for 7 days](https://finmoovi.com) — multi‑currency, smart reports, and 100% offline.**
+**To track all your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in one place, [try FinMoovi free for 7 days](https://finmoovi.com) — [multi‑currency](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-), smart reports, and 100% offline.**

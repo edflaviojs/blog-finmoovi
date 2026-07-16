@@ -51,7 +51,7 @@ Além disso, é fundamental ter um sistema de cobrança eficaz, para garantir qu
 
 
 ## [Educação Financeira](/glossario/educacao-financeira)
-[Educação financeira](/posts/7-erros-financeiros-iniciante) é fundamental para qualquer pessoa, especialmente para autônomos. Isso inclui entender conceitos básicos de finanças, como [juros](/glossario/juros), [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e impostos. Existem muitos recursos disponíveis online, como o [Investopedia](https://www.investopedia.com), que podem ajudar a melhorar seu conhecimento financeiro.
+[Educação financeira](/posts/7-erros-financeiros-iniciante) é fundamental para qualquer pessoa, especialmente para autônomos. Isso inclui entender conceitos básicos de finanças, como [juros](/glossario/juros), [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e impostos. Existem muitos recursos disponíveis online, como o [Investopedia](https://www.investopedia.com), que podem ajudar a melhorar seu conhecimento [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-).
 
 **Dica prática:** Reserve 1 hora por semana para aprender sobre [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) e [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme).
 

@@ -19,7 +19,7 @@ seo:
 
 ## Qué son los ETFs
 
-ETF es la sigla de **Exchange Traded Fund**, o Fondo Cotizado en Bolsa. En términos simples, un ETF reúne un conjunto de activos – acciones, bonos, materias primas – y reproduce el desempeño de un índice, como el Ibovespa o el S&P 500. Cada cuota del ETF puede comprarse o venderse en la bolsa como si fuera una acción común, lo que brinda practicidad y [liquidez](/es/glossario/es-liquidez).
+[ETF](/es/glossario/es-etf) es la sigla de **Exchange Traded Fund**, o Fondo Cotizado en Bolsa. En términos simples, un ETF reúne un conjunto de activos – acciones, bonos, materias primas – y reproduce el desempeño de un índice, como el Ibovespa o el S&P 500. Cada cuota del ETF puede comprarse o venderse en la bolsa como si fuera una acción común, lo que brinda practicidad y [liquidez](/es/glossario/es-liquidez).
 
 > **Primera aparición:** “ETF” (Exchange Traded Fund) – fondo que replica un índice y se negocia como acción.
 
@@ -39,7 +39,7 @@ Imagina que inviertes **R$1.000** en un ETF que replica el índice de renta fija
 - Rentabilidad: 6 % → R$60
 - Valor al final del año: **R$1.060**
 
-Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un CDB con 6,2 % al año, la diferencia sería de solo R$2, mostrando cómo las comisiones de administración de los ETFs pueden impactar el resultado final.
+Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un [CDB](/es/glossario/es-cdb) con 6,2 % al año, la diferencia sería de solo R$2, mostrando cómo las comisiones de administración de los ETFs pueden impactar el resultado final.
 
 ## Ventajas de los ETFs
 
@@ -54,10 +54,10 @@ Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un
 ## Cómo comenzar a invertir
 
 1. **Abre una cuenta en un corredor** – elige uno que ofrezca comisión de corretaje cero o reducida para ETFs.  
-2. **Define el objetivo** – si el foco es a largo plazo, un ETF de acciones puede ser adecuado; para renta fija, busca ETFs que sigan el CDI o el Tesoro [Selic](/es/glossario/es-selic).  
+2. **Define el objetivo** – si el foco es a largo plazo, un ETF de acciones puede ser adecuado; para renta fija, busca ETFs que sigan el [CDI](/es/glossario/es-cdi) o el Tesoro [Selic](/es/glossario/es-selic).  
 3. **Elabora un plan de aporte** – por ejemplo, invertir **R$500** cada mes en un ETF de acciones brasileñas.  
 4. **Realiza la orden de compra** – selecciona el ticker (código) del ETF, indica la cantidad y confirma la operación.  
-5. **Sigue el desempeño** – usa reportes mensuales o una [app de finanzas](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) para ver cómo evoluciona tu inversión.
+5. **Sigue el desempeño** – usa reportes mensuales o una [app de finanzas](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) para ver cómo evoluciona tu [inversión](/es/posts/es-tesouro-direto-para-iniciantes).
 
 ![Como começar a investir](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-4.webp)
 

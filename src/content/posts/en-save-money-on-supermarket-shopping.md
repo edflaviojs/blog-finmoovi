@@ -49,7 +49,7 @@ An example is the case of a person who spends $200 per week at a supermarket and
 ## Track Your [Expenses](/en/posts/en-metodo-50-30-20-para-orcamento)
 Tracking your [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) is crucial to understanding where your [money](/en/posts/en-30-day-rule-for-purchases) is going and how you can save. It's essential to record all your expenses, including supermarket shopping, and check if you're within your [budget](/en/posts/en-how-to-create-personal-budget).
 
-**Practical tip:** Use a expense tracking app to record your expenses and track your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). This can help identify areas where you can cut back on spending and save.
+**Practical tip:** Use a [expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza) app to record your expenses and track your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). This can help identify areas where you can cut back on spending and save.
 
 ## Start Today
 You don't need to wait until next month to start saving on supermarket shopping. You can start today by making a shopping list and planning your meals for the week. Remember that small changes can lead to significant [savings](/en/posts/en-financial-education-for-children) over time.

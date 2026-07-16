@@ -18,7 +18,7 @@ seo:
 ---
 
 ## [Economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) na Conta do Mercado
-Imagine que você possa economizar cerca de R$ 50,00 por semana na conta do mercado. Isso pode não parecer muito, mas ao longo de um ano, você estaria economizando aproximadamente R$ 2.600,00. Com essa quantia, você poderia realizar uma viagem, pagar dívidas ou investir em um fundo de emergência. A chave para alcançar essa [economia](/posts/economize-na-conta-de-energia) está em pequenas mudanças nos seus hábitos de compras.
+Imagine que você possa economizar cerca de R$ 50,00 por semana na conta do mercado. Isso pode não parecer muito, mas ao longo de um ano, você estaria economizando aproximadamente R$ 2.600,00. Com essa quantia, você poderia realizar uma [viagem](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-), pagar dívidas ou investir em um fundo de emergência. A chave para alcançar essa [economia](/posts/economize-na-conta-de-energia) está em pequenas mudanças nos seus hábitos de compras.
 
 ## [Planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) é Fundamental
 Para começar a economizar, é importante planejar suas compras. Isso inclui fazer uma lista de tudo o que você precisa comprar e stick a ela. Evite comprar impulsivamente, pois isso pode levar a [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) desnecessários. Além disso, tente comprar em quantidades maiores, especialmente para itens não perecíveis, como arroz, feijão e macarrão. Comprar em bulk pode ser mais barato a longo prazo. **Dica prática:** Faça um [orçamento](/posts/como-criar-orcamento-pessoal) semanal e reserve um tempo para planejar suas refeições e compras.

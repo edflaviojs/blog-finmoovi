@@ -75,4 +75,4 @@ Se você está usando uma planilha para gerenciar suas finanças, é importante 
 
 
 
-Não perca mais tempo com planilhas complicadas e difíceis de manter. Teste o FinMoovi hoje mesmo e descubra como ele pode ajudá-lo a alcançar seus objetivos financeiros. Clique no link abaixo para começar sua jornada para uma [gestão financeira](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) mais eficaz. [Se a planilha não está funcionando, teste o FinMoovi por 7 dias](link para o FinMoovi)
+Não perca mais tempo com planilhas complicadas e difíceis de manter. Teste o [FinMoovi](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) hoje mesmo e descubra como ele pode ajudá-lo a alcançar seus objetivos financeiros. Clique no link abaixo para começar sua jornada para uma [gestão financeira](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) mais eficaz. [Se a planilha não está funcionando, teste o FinMoovi por 7 dias](link para o FinMoovi)

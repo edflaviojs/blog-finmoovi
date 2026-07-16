@@ -65,7 +65,7 @@ Aquí está una lista de verificación para ayudarlo a decidir si una hoja de c�
 
 
 ## Conclusión
-Si usted está usando una hoja de cálculo para gestionar sus finanzas, es importante considerar si ella está funcionando para usted. Si usted está teniendo dificultades para mantener sus finanzas actualizadas y consistentes, o si usted necesita más movilidad y automatización, una app financiera puede ser una buena opción para usted. Si la hoja de cálculo no está funcionando, pruebe el [FinMoovi](/es/posts/es-voce-tambem-esquece-de-anotar-seus-gastos) por 7 días y vea cómo él puede ayudarlo a gestionar sus finanzas de forma eficaz y fácil. Con el FinMoovi, usted puede tener acceso a recursos como:
+Si usted está usando una hoja de cálculo para gestionar sus finanzas, es importante considerar si ella está funcionando para usted. Si usted está teniendo dificultades para mantener sus finanzas actualizadas y consistentes, o si usted necesita más movilidad y automatización, una app financiera puede ser una buena opción para usted. Si la hoja de cálculo no está funcionando, pruebe el [FinMoovi](/es/posts/es-voce-tambem-esquece-de-anotar-seus-gastos) por 7 días y vea cómo él puede ayudarlo a gestionar sus finanzas de forma eficaz y fácil. Con el [FinMoovi](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-), usted puede tener acceso a recursos como:
 * Gestión de cuentas y tarjetas de crédito
 * Automatización de tareas financieras
 * Alertas y notificaciones personalizados

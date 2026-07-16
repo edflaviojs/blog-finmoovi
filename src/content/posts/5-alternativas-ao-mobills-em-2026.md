@@ -94,7 +94,7 @@ Aqui está uma tabela comparativa das 5 alternativas ao Mobills:
 | Aplicativo | Interface | Ferramentas de [Orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) | Suporte ao Cliente | Grátis/Pago |
 | --- | --- | --- | --- | --- |
 | Personal Capital | Fácil de usar | Avançadas | Excelente | Grátis |
-| FinMoovi | Fácil de usar | Avançadas | Excelente | Pago |
+| [FinMoovi](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) | Fácil de usar | Avançadas | Excelente | Pago |
 | Mint | Fácil de usar | Avançadas | Excelente | Grátis |
 | YNAB | Fácil de usar | Avançadas | Excelente | Pago |
 | Spendee | Fácil de usar | Avançadas | Excelente | Grátis |

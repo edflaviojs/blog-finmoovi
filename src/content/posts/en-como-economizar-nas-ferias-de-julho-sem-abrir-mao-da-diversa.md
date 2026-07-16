@@ -40,7 +40,7 @@ The anxiety of snagging the “best deal” often leads to impulse purchases. St
 - Gross salary: R$ 3,000  
 - Deductions (INSS, IR): ~R$ 540 → **R$ 2,460 net**  
 - Fixed monthly expenses (rent, bills, transport): R$ 1,500  
-- Emergency reserve: R$ 500 (10 % of income)  
+- Emergency reserve: R$ 500 (10 % of [income](/en/posts/en-montando-carteira-diversificada-com-r-500))  
 
 That leaves **R$ 460** for extra spending. If the vacation is in July, earmark **R$ 200** of that amount for the trip, keeping R$ 260 for the rest of the month.  
 
@@ -152,4 +152,4 @@ Even the best plan can hit unexpected bumps. Use **[FinMoovi](/en/posts/en-5-alt
 
 ## Conclusion  
 
-Saving on a July vacation doesn’t mean giving up the fun; it’s about making conscious choices and using tools that simplify expense tracking. By setting a limit, picking cheaper destinations, optimizing transport and lodging, preparing your own meals, and focusing on low‑cost activities, you can enjoy the trip with financial peace of mind. Remember: every real you save now can be reinvested in a new experience or bolster your emergency reserve. Get ready, plan, and enjoy the best of Brazilian summer – stress‑free and without red‑ink accounts. Safe travels and happy savings!
+Saving on a July vacation doesn’t mean giving up the fun; it’s about making conscious choices and using tools that simplify [expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza). By setting a limit, picking cheaper destinations, optimizing transport and lodging, preparing your own meals, and focusing on low‑cost activities, you can enjoy the trip with financial peace of mind. Remember: every real you save now can be reinvested in a new experience or bolster your emergency reserve. Get ready, plan, and enjoy the best of Brazilian summer – stress‑free and without red‑ink accounts. Safe travels and happy savings!
