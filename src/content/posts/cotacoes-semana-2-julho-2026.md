@@ -29,9 +29,9 @@ A semana passou sem grandes surpresas nos principais indicadores, mas alguns mov
 
 - **[Dólar](/posts/cotacoes-semana-3-junho-2026) (USD/BRL = R$ 5,11)** – O real se manteve estável em torno de R$ 5,10‑5,12. O [dólar](/posts/cotacoes-semana-4-junho-2026) acabou a semana levemente mais fraco (cerca de 0,3 %), puxado por dados de [inflação](/glossario/inflacao) nos EUA que ficaram abaixo do esperado. Na prática, isso significa que a compra de produtos importados ou de viagens ao exterior ficou um pouquinho mais barata, mas ainda longe de representar uma diferença significativa no seu dia a dia.  
 
-- **Euro (EUR/BRL = R$ 5,83)** – O euro seguiu a mesma direção do [dólar](/posts/cotacoes-semana-4-maio-2026), recuando cerca de 0,2 % ao final da semana. A queda foi impulsionada por um enfraquecimento da zona‑euro diante das discussões sobre a política monetária do BCE. Para quem tem contas ou investimentos em euros, a boa notícia é que a cotação está mais favorável para quem deseja trazer o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta ao Brasil.  
+- **Euro (EUR/BRL = R$ 5,83)** – O euro seguiu a mesma direção do [dólar](/posts/cotacoes-semana-4-maio-2026), recuando cerca de 0,2 % ao final da semana. A queda foi impulsionada por um enfraquecimento da zona‑euro diante das discussões sobre a política monetária do BCE. Para quem tem contas ou [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) em euros, a boa notícia é que a cotação está mais favorável para quem deseja trazer o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta ao Brasil.  
 
-Em resumo: tanto o [dólar](/posts/cotacoes-semana-5-junho-2026) quanto o euro mostraram leve desvalorização frente ao real, mas a variação foi pequena demais para mudar drasticamente suas decisões de compra ou investimento.
+Em resumo: tanto o [dólar](/posts/cotacoes-semana-5-junho-2026) quanto o euro mostraram leve desvalorização frente ao real, mas a variação foi pequena demais para mudar drasticamente suas decisões de compra ou [investimento](/posts/montando-carteira-diversificada-com-r-500).
 
 ## [Selic](/glossario/selic) e o Impacto nos Investimentos  
 

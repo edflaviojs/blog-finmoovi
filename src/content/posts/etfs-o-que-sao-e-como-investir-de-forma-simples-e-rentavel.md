@@ -25,7 +25,7 @@ ETF é a sigla para **Exchange Traded Fund**, ou Fundo de Índice negociado em b
 
 ## Como funciona na prática
 
-Quando você compra 10 cotas de um ETF que replica o Ibovespa, está, na prática, investindo em todas as empresas que compõem esse índice (na mesma proporção). Se o Ibovespa subir 2 %, o valor das suas cotas também sobe aproximadamente 2 %.
+Quando você compra 10 cotas de um ETF que replica o Ibovespa, está, na prática, investindo em todas as empresas que compõem esse índice (na mesma proporção). Se o Ibovespa subir 2 %, o [valor](/glossario/valor) das suas cotas também sobe aproximadamente 2 %.
 
 ![Como funciona na prática](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-2.webp)
 
@@ -41,7 +41,7 @@ Imagine que você investe **R$1.000** em um ETF que replica o índice de [renda 
 - Rentabilidade: 6 % → R$60
 - Valor ao final do ano: **R$1.060**
 
-Se, ao invés disso, você aplicasse o mesmo valor em um CDB com 6,2 % ao ano, a diferença seria de apenas R$2, mostrando como as taxas de administração dos ETFs podem impactar o resultado final.
+Se, ao invés disso, você aplicasse o mesmo valor em um [CDB](/glossario/cdb) com 6,2 % ao ano, a diferença seria de apenas R$2, mostrando como as taxas de administração dos ETFs podem impactar o resultado final.
 
 ## Vantagens dos ETFs
 
@@ -55,7 +55,7 @@ Se, ao invés disso, você aplicasse o mesmo valor em um CDB com 6,2 % ao ano,
 
 ## Como começar a investir
 
-1. **Abra uma conta em corretora** – escolha uma que ofereça taxa de corretagem zero ou reduzida para ETFs.
+1. **Abra uma conta em corretora** – escolha uma que ofereça [taxa](/glossario/taxa) de corretagem zero ou reduzida para ETFs.
 2. **Defina o objetivo** – se o foco é longo prazo, um ETF de ações pode ser adequado; para renda fixa, procure ETFs que acompanhem o CDI ou o [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 3. **Monte um plano de aporte** – por exemplo, investir **R$500** todo mês em um ETF de ações brasileiras.
 4. **Faça a ordem de compra** – selecione o ticker (código) do ETF, informe a quantidade e confirme a operação.

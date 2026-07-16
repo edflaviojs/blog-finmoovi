@@ -29,7 +29,7 @@ A well‑defined [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-na
 
 ![Monte um plano de gastos realista](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-2.webp)
 
-**Practical tip:** Keep a simple [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) or a finance app (like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)) where you log every expense in real time. When the leisure limit reaches 80 % of the [budget](/en/posts/en-how-to-create-personal-budget), the app will send you an alert.
+**Practical tip:** Keep a simple [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) or a [finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) (like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)) where you log every expense in real time. When the leisure limit reaches 80 % of the [budget](/en/posts/en-how-to-create-personal-budget), the app will send you an alert.
 
 ## Use the 30‑day rule
 
@@ -43,7 +43,7 @@ Creating new habits requires small daily wins. Swap a trip to the mall for a wal
 
 ## Tools that help
 
-- **Finance‑tracking apps**: let you categorize expenses and see how close you are to your monthly limit. Many offer custom alerts.
+- **[Finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)‑tracking apps**: let you categorize expenses and see how close you are to your monthly limit. Many offer custom alerts.
 - **Debit cards with category blocking**: some banks let you temporarily block purchases in clothing or electronics stores, preventing the impulse at the moment.
 - **Online wish list**: instead of buying right away, add the item to a list. Review the list after a week; if it’s still there, maybe it’s truly needed.
 

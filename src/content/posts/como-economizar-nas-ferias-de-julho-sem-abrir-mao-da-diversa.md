@@ -139,13 +139,13 @@ Mesmo com o melhor planejamento, imprevistos acontecem. Use o **[FinMoovi](/post
 
 | ✅ | Ação | [Economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) estimada |
 |---|------|-------------------|
-| 1 | Definir teto de gasto | Mantém orçamento intacto |
+| 1 | Definir teto de gasto | Mantém [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) intacto |
 | 2 | Escolher destino off‑season | Até R$ 600 na passagem |
 | 3 | Optar por ônibus ou carona | R$ 100‑R$ 200 por trajeto |
 | 4 | Hospedagem em Airbnb/hostel | R$ 850 em 5 noites |
 | 5 | Cozinhar parte das refeições | R$ 175 em 5 dias |
 | 6 | Priorizar atividades gratuitas | R$ 40‑R$ 80 por dia |
-| 7 | Monitorar gastos com FinMoovi | Evita surpresas de última hora |
+| 7 | Monitorar gastos com [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) | Evita surpresas de última hora |
 
 ---
 

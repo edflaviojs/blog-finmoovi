@@ -19,7 +19,7 @@ seo:
 
 ## ¿Alguna vez te has sentido perdido al intentar sumar [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) en diferentes monedas?
 
-Te entiendo. ¿Quién no ha llegado a casa después de un viaje a Europa y se ha quedado dando vueltas tratando de descubrir cuánto gastó realmente? Compras un souvenir en euros, pagas la cena en dólares en el aeropuerto y, al volver, todavía tienes esa cuenta de taxi en reales. Cuando abres la hoja de cálculo, ves una columna llena de “R$ 0,00” al lado de “€ 0,00” y “US$ 0,00” y te das cuenta de que nunca más vas a poder cerrar el mes sin un cálculo loco.
+Te entiendo. ¿Quién no ha llegado a casa después de un viaje a Europa y se ha quedado dando vueltas tratando de descubrir cuánto gastó realmente? Compras un souvenir en euros, pagas la cena en dólares en el aeropuerto y, al volver, todavía tienes esa cuenta de taxi en reales. Cuando abres la [hoja de cálculo](/es/posts/es-migrando-da-planilha-para-um-app-financeiro), ves una columna llena de “R$ 0,00” al lado de “€ 0,00” y “US$ 0,00” y te das cuenta de que nunca más vas a poder cerrar el mes sin un cálculo loco.
 
 Este escenario es más común de lo que imaginamos. El problema no está en la falta de voluntad, sino en la dificultad de lidiar con tipos de [cambio](/es/glossario/es-cambio), conversiones manuales y el miedo a equivocarse con los números.
 

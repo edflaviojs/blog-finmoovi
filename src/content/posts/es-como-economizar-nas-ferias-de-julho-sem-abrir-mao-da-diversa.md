@@ -25,7 +25,7 @@ seo:
 ---
 
 ## Introducción  
-Julio es el mes más esperado por quien quiere escapar de la rutina, pero también el periodo en que los precios tienden a subir: pasajes aéreos, hoteles e incluso la cuenta de energía en las casas de veraneo. Si ganas alrededor de **R$ 3.000** al mes, como la mayoría de los trabajadores formales, puede ser fácil salir del [presupuesto](/es/posts/es-como-crear-presupuesto-personal) y terminar el mes con la cuenta bancaria en rojo. La buena noticia es que, con una [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) sencilla y algunos cambios de hábito, es posible disfrutar de las [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) sin comprometer tus finanzas. A continuación, presento siete pasos que transformarán tu viaje de julio en una experiencia económica y placentera.  
+Julio es el mes más esperado por quien quiere escapar de la rutina, pero también el periodo en que los precios tienden a subir: pasajes aéreos, hoteles e incluso la cuenta de energía en las casas de veraneo. Si ganas alrededor de **R$ 3.000** al mes, como la mayoría de los trabajadores formales, puede ser fácil salir del [presupuesto](/es/posts/es-como-crear-presupuesto-personal) y terminar el mes con la cuenta bancaria en rojo. La buena noticia es que, con una [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) sencilla y algunos cambios de hábito, es posible disfrutar de las [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) sin comprometer tus finanzas. A continuación, presento siete pasos que transformarán tu [viaje](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) de julio en una experiencia económica y placentera.  
 
 ---  
 
@@ -79,7 +79,7 @@ El [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) aquí puede lle
 
 ## 4. Alojamiento inteligente: Airbnb, hostales o intercambio de casas  
 
-### Estrategias de ahorro  
+### Estrategias de [ahorro](/es/posts/es-regla-de-los-30-dias-para-compras)  
 - **Airbnb**: busca “habitaciones privadas” en barrios residenciales; la diferencia con un hotel de 3 estrellas puede ser del 40 % al 60 %.  
 - **Hostales**: camas en dormitorios cuestan entre R$ 40 y R$ 80 por noche.  
 - **Casa de amigos/familia**: intercambia favores (cuidar mascotas, por ejemplo) y ahorra la tarifa completa.  

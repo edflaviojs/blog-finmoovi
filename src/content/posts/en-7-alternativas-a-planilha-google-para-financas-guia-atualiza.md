@@ -30,7 +30,7 @@ On top of that, most sheets don’t provide robust **security** (anyone with the
 ## 1. [Mobills](/en/posts/en-5-alternativas-ao-mobills-em-2026) – The Brazilian classic
 
 **Description**  
-Mobills is one of Brazil’s oldest personal‑finance apps. In two sentences, it offers expense control, budget planning, and goal visualization, all in a colorful, intuitive interface.
+Mobills is one of Brazil’s oldest personal‑finance apps. In two sentences, it offers expense control, [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) planning, and goal visualization, all in a colorful, intuitive interface.
 
 ![1. Mobills – O clássico brasileiro](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-2.webp)
 
@@ -67,7 +67,7 @@ Basic free version (with ads) – Pro version at R$ 19.90/month or R$ 199.90
 
 ---
 
-## 3. Organizze – The app focused on businesses and freelancers
+## 3. [Organizze](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) – The app focused on businesses and freelancers
 
 **Description**  
 Organizze was initially built for small entrepreneurs, but its friendly interface also works for household users. It lets you manage cash flow, track income and expenses, and generate tax reports with a few clicks.

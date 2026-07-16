@@ -31,7 +31,7 @@ Um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) bem de
 
 
 
-**Dica prática:** Mantenha uma [planilha](/posts/migrando-da-planilha-para-um-app-financeiro) simples ou um app de finanças (como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)) onde você registre, em tempo real, cada gasto. Quando o limite de lazer chegar a 80 % do previsto, o próprio app enviará um alerta.
+**Dica prática:** Mantenha uma [planilha](/posts/migrando-da-planilha-para-um-app-financeiro) simples ou um [app de finanças](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) (como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)) onde você registre, em tempo real, cada gasto. Quando o limite de lazer chegar a 80 % do previsto, o próprio app enviará um alerta.
 
 ## Use a regra dos 30 dias
 
@@ -47,7 +47,7 @@ Criar novos hábitos requer pequenas vitórias diárias. Substitua a ida ao shop
 
 ## Ferramentas que ajudam
 
-- **Apps de controle financeiro**: permitem categorizar gastos e visualizar o quanto você está próximo do limite mensal. Muitos oferecem alertas personalizados.
+- **Apps de controle [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)**: permitem categorizar gastos e visualizar o quanto você está próximo do limite mensal. Muitos oferecem alertas personalizados.
 - **Cartões de [débito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) com bloqueio por categoria**: alguns bancos permitem bloquear temporariamente compras em lojas de vestuário ou eletrônicos, evitando o impulso na hora.
 - **Lista de desejos online**: ao invés de comprar imediatamente, adicione o item a uma lista. Revisite a lista depois de uma semana; se ainda estiver lá, talvez seja realmente necessário.
 

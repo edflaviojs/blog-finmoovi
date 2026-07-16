@@ -35,7 +35,7 @@ Imagine a seguinte situação:
 - **Dia 3:** No aeroporto de Londres, decide fazer um lanche rápido e paga **£ 12** (aproximadamente **US$ 16**). Você registra “12” no seu bloco de notas, mas não sabe se é libra ou dólar.
 - **Dia 7:** De volta ao Brasil, paga o último táxi da viagem em **R$ 80**. Tudo isso agora está espalhado em anotações diferentes, sem nenhuma conversão.
 
-Quando chega a hora de fechar o orçamento, você tem que abrir um conversor online, buscar a cotação da data de cada gasto e fazer contas mentalmente. O risco de erro é alto, e o tempo gasto – que poderia ser usado para aproveitar a viagem – se transforma em uma tarefa burocrática. Além disso, a falta de visão consolidada impede que você perceba, por exemplo, que está gastando muito com alimentação ou que poderia ter negociado um desconto em algum serviço.
+Quando chega a hora de fechar o [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), você tem que abrir um conversor online, buscar a cotação da data de cada gasto e fazer contas mentalmente. O risco de erro é alto, e o tempo gasto – que poderia ser usado para aproveitar a viagem – se transforma em uma tarefa burocrática. Além disso, a falta de visão consolidada impede que você perceba, por exemplo, que está gastando muito com alimentação ou que poderia ter negociado um desconto em algum serviço.
 
 ## A solução que chega como um amigo de confiança: [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)
 
@@ -53,7 +53,7 @@ Ao abrir o FinMoovi pela primeira vez, escolha o real (R$) como moeda padrão. V
 
 
 ### 2. Crie categorias de despesa
-Monte categorias como “Aeroporto”, “Restaurantes”, “Lembretes de Souvenir” e “Transporte”. Cada categoria pode ter um limite diário ou total, ajudando a controlar os gastos em tempo real.
+Monte categorias como “Aeroporto”, “Restaurantes”, “Lembretes de Souvenir” e “Transporte”. Cada categoria pode ter um limite diário ou total, ajudando a controlar os [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) em tempo real.
 
 ### 3. Registre a despesa na moeda local
 Ao comprar aquele ingresso em Paris, abra o app, clique em “+ Nova Despesa”, selecione a categoria “Lazer” e, no campo de [valor](/glossario/valor), digite **30**. Logo abaixo, há um menu suspenso onde você escolhe **Euro (EUR)**. O FinMoovi traz a cotação do dia (por exemplo, 1 EUR = R$ 5,40) e mostra o valor convertido automaticamente (**R$ 162,00**). Você ainda pode adicionar uma nota “Museu do Louvre”.
@@ -91,7 +91,7 @@ Esses números são baseados em relatos de usuários do FinMoovi que compararam 
 ## Dicas extras para não perder o rumo financeiro na viagem
 
 1. **Desative notificações de conversão automática no cartão:** Alguns cartões oferecem “conversão automática” que pode incluir tarifas extras. Verifique a política do seu banco antes de usar.
-2. **Use o recurso de “cotação fixa”** do FinMoovi quando quiser travar a taxa de câmbio de uma compra importante (como um ingresso de show) e evitar variações.
+2. **Use o recurso de “cotação fixa”** do FinMoovi quando quiser travar a [taxa](/glossario/taxa) de câmbio de uma compra importante (como um ingresso de show) e evitar variações.
 3. **Faça backup diário** das suas despesas. O FinMoovi sincroniza com a nuvem, mas é sempre bom ter um registro local caso precise consultar offline.
 
 ## Conclusão amigável

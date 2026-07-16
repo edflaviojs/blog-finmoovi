@@ -101,7 +101,7 @@ Bringing snacks, preparing breakfast at your accommodation, or shopping at local
 **Daily cost example:**  
 - Breakfast (coffee + bread): R$ 8  
 - Lunch (home‑cooked meal): R$ 12  
-- Dinner (budget restaurant): R$ 25  
+- Dinner ([budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) restaurant): R$ 25  
 - **Total: R$ 45**  
 
 If you’d spend R$ 80 on restaurants, the difference is **R$ 35** per day. Over 5 days, that’s **R$ 175** saved.  
@@ -133,7 +133,7 @@ Even the best plan can hit unexpected bumps. Use **[FinMoovi](/en/posts/en-5-alt
 
 | ✅ | Action | Estimated savings |
 |---|--------|-------------------|
-| 1 | Set a spending ceiling | Keeps budget intact |
+| 1 | Set a spending ceiling | Keeps [budget](/en/posts/en-organize-couple-finances) intact |
 | 2 | Pick an off‑season destination | Up to R$ 600 on airfare |
 | 3 | Choose bus or car‑pool | R$ 100‑R$ 200 per leg |
 | 4 | Stay in Airbnb/hostel | R$ 850 for 5 nights |

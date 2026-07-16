@@ -29,7 +29,7 @@ Un [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias)
 
 ![Monte um plano de gastos realista](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-2.webp)
 
-**Consejo práctico:** Mantén una [hoja de cálculo](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) simple o una app de finanzas (como el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)) donde registres, en tiempo real, cada gasto. Cuando el límite de ocio llegue al 80 % de lo previsto, la propia app enviará una alerta.
+**Consejo práctico:** Mantén una [hoja de cálculo](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) simple o una [app de finanzas](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) (como el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)) donde registres, en tiempo real, cada gasto. Cuando el límite de ocio llegue al 80 % de lo previsto, la propia app enviará una alerta.
 
 ## Aplica la regla de los 30 días
 
@@ -43,7 +43,7 @@ Crear nuevos hábitos requiere pequeñas victorias diarias. Sustituye la ida al 
 
 ## Herramientas que ayudan
 
-- **Apps de control financiero**: permiten categorizar gastos y visualizar cuán cerca estás del límite mensual. Muchos ofrecen alertas personalizadas.
+- **Apps de control [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)**: permiten categorizar gastos y visualizar cuán cerca estás del límite mensual. Muchos ofrecen alertas personalizadas.
 - **Tarjetas de [débito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) con bloqueo por categoría**: algunos bancos permiten bloquear temporalmente compras en tiendas de ropa o electrónica, evitando el impulso en el momento.
 - **Lista de deseos online**: en lugar de comprar inmediatamente, añade el artículo a una lista. Revisa la lista después de una semana; si todavía está allí, quizá sea realmente necesario.
 
