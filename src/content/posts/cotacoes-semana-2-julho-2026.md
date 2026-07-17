@@ -35,7 +35,7 @@ Em resumo: tanto o [dólar](/posts/cotacoes-semana-5-junho-2026) quanto o euro m
 
 ## [Selic](/glossario/selic) e o Impacto nos Investimentos  
 
-A [taxa](/glossario/taxa) Selic continuou em **13,75 % ao ano**, nível que se manteve após a última reunião do Copom. Essa taxa alta ainda é o principal “freio” da inflação, mas também encarece o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-). Para quem tem [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) aplicado em renda fixa, isso traz duas consequências claras:
+A [taxa](/glossario/taxa) Selic continuou em **13,75 % ao ano**, nível que se manteve após a última reunião do Copom. Essa taxa alta ainda é o principal “freio” da inflação, mas também encarece o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-). Para quem tem [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) aplicado em [renda fixa](/posts/tesouro-direto-para-iniciantes), isso traz duas consequências claras:
 
 ![Selic e o Impacto nos Investimentos  ](/images/posts/cotacoes-semana-2-julho-2026-inline-3.webp)
 
@@ -49,7 +49,7 @@ Em termos práticos: quem já tem parte do patrimônio em títulos atrelados à 
 
 ## Dica Prática para o Investidor Pessoa Física  
 
-**Monte uma “cobertura” cambial simples:** se você tem despesas previstas em dólares ou euros (viagem, compra de eletrônicos, estudos no exterior), considere comprar uma pequena fração da [moeda](/glossario/moeda) quando o real estiver mais forte. Com o dólar a R$ 5,11 e o euro a R$ 5,83, ainda há espaço para proteger seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) contra eventuais alta nos próximos meses.  
+**Monte uma “cobertura” cambial simples:** se você tem despesas previstas em dólares ou euros ([viagem](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-), compra de eletrônicos, estudos no exterior), considere comprar uma pequena fração da [moeda](/glossario/moeda) quando o real estiver mais forte. Com o dólar a R$ 5,11 e o euro a R$ 5,83, ainda há espaço para proteger seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) contra eventuais alta nos próximos meses.  
 
 Para quem não quer lidar com corretoras internacionais, o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** facilita esse processo. O app permite acompanhar a cotação das moedas em tempo real, definir alertas de preço e até comprar pequenas quantias de dólar ou euro diretamente da sua conta bancária, tudo de forma prática e sem burocracia.
 

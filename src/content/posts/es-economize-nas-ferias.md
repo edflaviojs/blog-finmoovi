@@ -41,7 +41,7 @@ Aquí están algunos consejos prácticos para ahorrar en las vacaciones de julio
 Un [presupuesto](/es/posts/es-reducir-gastos-fijos-mensuales) bien definido y el [control de gastos](/es/posts/es-voce-tambem-esquece-de-anotar-seus-gastos) son fundamentales para ahorrar en las vacaciones. Es importante tener una idea clara de cuánto puedes gastar y dónde puedes cortar gastos innecesarios. El [Banco Central do Brasil](https://www.bcb.gov.br) ofrece consejos y herramientas para ayudar a gestionar el presupuesto y controlar los gastos.
 
 ## [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y [Ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado)
-Además de ahorrar en las vacaciones, es importante pensar en [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y [ahorro](/es/posts/es-regla-de-los-30-dias-para-compras) para el futuro. El [Tesouro Direto](https://www.tesourodireto.com.br) es una opción de [inversión segura](/es/posts/es-investir-em-dolar-no-brasil) y rentable para los brasileños. Además, es importante tener un ahorro para emergencias e imprevistos.
+Además de ahorrar en las vacaciones, es importante pensar en [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y [ahorro](/es/posts/es-regla-de-los-30-dias-para-compras) para el futuro. El [Tesouro Direto](https://www.tesourodireto.com.br) es una opción de [inversión segura](/es/posts/es-investir-em-dolar-no-brasil) y rentable para los brasileños. Además, es importante tener un [ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus) para emergencias e imprevistos.
 
 ![Presupuesto y Control de Gastos](/images/posts/economize-nas-ferias-4.webp)
 

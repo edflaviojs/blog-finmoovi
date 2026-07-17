@@ -38,7 +38,7 @@ Aquí están algunos consejos prácticos para que comiences a reorganizar tus fi
 
 
 ## Técnicas para Ahorrar
-Además de reorganizar tus finanzas, es importante adoptar hábitos que promuevan el ahorro. Esto puede incluir:
+Además de reorganizar tus finanzas, es importante adoptar hábitos que promuevan el [ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus). Esto puede incluir:
 - Comprar en promoción y planificar compras con antelación.
 - Reducir el uso de servicios de entrega y preparar comidas en casa.
 - Cancelar suscripciones y servicios no utilizados.

@@ -30,7 +30,7 @@ Many couples face the challenge of dealing with debt, whether it's [credit card]
 
 
 
-## [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and Savings
+## [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and [Savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income)
 In addition to managing expenses and debt, couples should also consider [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and savings. This can include creating an emergency fund, investing in stocks or [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) funds, or even buying a property. **Practical tip:** consider investing in a [Tesouro Direto](https://www.tesourodireto.com.br), which offers a safe and profitable way to invest your [money](/en/posts/en-creating-an-emergency-fund). Additionally, it's essential to stay up-to-date with current economic and financial trends, which can be done by following websites like the [Banco Central do Brasil](https://www.bcb.gov.br) or the [IBGE](https://www.ibge.gov.br).
 
 ## [Financial Education](/en/glossario/en-educacao-financeira)

@@ -82,7 +82,7 @@ Organizze foi criado inicialmente para pequenos empreendedores, mas sua interfac
 **Prós**
 - Ferramentas de fluxo de caixa que ajudam a visualizar receitas e despesas em ciclos mensais.
 - Exportação de relatórios em formatos compatíveis com contabilidade (CSV, XLS).
-- Suporte a cartões de crédito e débito com conciliação automática.
+- Suporte a cartões de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) e débito com conciliação automática.
 
 **Contras**
 - Não possui captura por voz nem recursos avançados de IA para categorização.
@@ -158,7 +158,7 @@ A escolha do melhor app depende do seu **perfil financeiro** e da **necessidade 
 | **Usuário básico que quer sair da planilha** | Controle simples, sem precisar de várias moedas ou IA avançada. | **Mobills** – oferece tudo que a maioria dos iniciantes precisa, com versão gratuita suficiente para começar. |
 | **Viajante ou quem lida com diferentes moedas** | Conversão automática, uso offline e captura prática. | **FinMoovi** – a combinação de multi‑moeda, funcionamento offline e smart capture por voz faz dele a escolha mais completa. |
 | **Freelancer/pequeno empreendedor** | Fluxo de caixa, relatórios fiscais e integração com cartões. | **Organizze** – foco em negócios e relatórios prontos para contabilidade. |
-| **Quem quer mudar hábitos e criar “bolsões” de economia** | Metas de economia, alertas de gasto excessivo. | **Money Lover** – sistema de envelopes virtuais e alertas personalizados. |
+| **Quem quer mudar hábitos e criar “bolsões” de [economia](/posts/cashback-inteligente)** | Metas de economia, alertas de gasto excessivo. | **Money Lover** – sistema de envelopes virtuais e alertas personalizados. |
 | **Adeptos de método rigoroso e comunidade** | Metodologia de orçamento, relatórios profundos. | **YNAB** – embora não tenha IA, a filosofia de “dar trabalho ao dinheiro” pode transformar sua relação com finanças. |
 
 **Dica final:** Se ainda está em dúvida, experimente duas opções simultaneamente (as versões gratuitas permitem). Use-as por duas semanas cada e veja qual fluxo se encaixa melhor no seu dia a dia. Lembre‑se de que a ferramenta só é tão boa quanto a disciplina que você mantém ao registrar suas despesas.

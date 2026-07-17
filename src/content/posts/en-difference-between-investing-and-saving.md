@@ -25,7 +25,7 @@ To better understand the difference, imagine that you earn R$ 5,000 per month an
 ## Risks and Returns
 One of the main reasons people choose to invest instead of saving is the potential for returns. High-risk [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) can offer higher returns, but they also come with the possibility of significant losses. For example, if you invest R$ 1,000 in stocks and the [stock](/en/glossario/en-stock) market rises, you may earn R$ 1,500 or more. However, if the market falls, you may lose a significant portion of your investment.
 
-On the other hand, saving is generally safer, but the returns are lower. In a savings account, you may earn around 0.5% to 1% interest per month, which is a relatively low rate of return.
+On the other hand, saving is generally safer, but the returns are lower. In a [savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) account, you may earn around 0.5% to 1% interest per month, which is a relatively low rate of return.
 
 ![Riscos e Retornos](/images/posts/diferenca-entre-investir-e-poupar-2.webp)
 

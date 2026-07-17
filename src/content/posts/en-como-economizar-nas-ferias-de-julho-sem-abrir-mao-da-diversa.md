@@ -131,7 +131,7 @@ Even the best plan can hit unexpected bumps. Use **[FinMoovi](/en/posts/en-5-alt
 
 ## Quick checklist for July vacation  
 
-| ✅ | Action | Estimated savings |
+| ✅ | Action | Estimated [savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) |
 |---|--------|-------------------|
 | 1 | Set a spending ceiling | Keeps [budget](/en/posts/en-organize-couple-finances) intact |
 | 2 | Pick an off‑season destination | Up to R$ 600 on airfare |

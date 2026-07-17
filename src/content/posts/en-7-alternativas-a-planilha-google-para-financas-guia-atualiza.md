@@ -71,7 +71,7 @@ Basic free version (with ads) – Pro version at R$ 19.90/month or R$ 199.90
 ## 3. [Organizze](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) – The app focused on businesses and freelancers
 
 **Description**  
-Organizze was initially built for small entrepreneurs, but its friendly interface also works for household users. It lets you manage cash flow, track income and expenses, and generate tax reports with a few clicks.
+Organizze was initially built for small entrepreneurs, but its friendly interface also works for household users. It lets you manage cash flow, track income and [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), and generate tax reports with a few clicks.
 
 ![3. Organizze – O app focado em negócios e freelancers](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-4.webp)
 
@@ -89,7 +89,7 @@ Limited Free plan – Premium starting at R$ 12.90/month.
 
 ---
 
-## 4. Money Lover – The habit‑focused app
+## 4. [Money](/en/posts/en-avoid-impulse-purchases) Lover – The habit‑focused app
 
 **Description**  
 Money Lover blends expense tracking with habit‑change techniques, such as savings goals and “overspend” alerts. In two sentences, it offers a calendar view that highlights days you exceeded your budget and lets you create “money envelopes” for specific projects.

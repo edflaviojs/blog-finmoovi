@@ -87,7 +87,7 @@ El [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) aquí puede lle
 **Cálculo:**  
 - Hotel 3★ en Florianópolis (julio): R$ 350/noche  
 - Habitación en Airbnb: R$ 180/noche  
-- Ahorro: **R$ 170** por noche. En un viaje de 5 días, eso representa **R$ 850** ahorrados.  
+- [Ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus): **R$ 170** por noche. En un viaje de 5 días, eso representa **R$ 850** ahorrados.  
 
 ---  
 

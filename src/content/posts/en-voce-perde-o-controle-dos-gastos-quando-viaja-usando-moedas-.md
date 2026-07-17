@@ -17,7 +17,7 @@ seo:
   keywords: ["travel","spending control","multi‑currency","FinMoovi","personal finance","travel budget","financial app","multi‑currency","travel","finance","finmoovi"]
 ---
 
-## Have you ever felt lost trying to add up expenses in different currencies?
+## Have you ever felt lost trying to add up [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) in different currencies?
 
 I get you. Who hasn’t gotten home after a trip to Europe and been stuck trying to figure out how much was actually spent? You buy a souvenir in euros, pay for dinner in dollars at the airport, and when you get back you still have that taxi receipt in reais. When you open the spreadsheet you see a column full of “R$ 0,00” next to “€ 0,00” and “US$ 0,00” and realize you’ll never be able to close the month without a crazy calculation.
 
@@ -39,7 +39,7 @@ When it’s time to close the [budget](/en/posts/en-5-dicas-para-reorganizar-sua
 
 That’s exactly when I discovered **[FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)**, a [personal finance](/en/posts/en-30-day-rule-for-purchases) app that, among many features, includes a **multi‑currency** tool designed for travelers. No fanfare, it lets you log each expense in the currency it was made; the app automatically converts it to your base currency (usually reais) using the day’s rate. All of this happens in real time, without opening spreadsheets or hunting for exchange rates.
 
-The cool thing is that FinMoovi isn’t just another “currency calculator.” It integrates with your monthly budget, flags when you’re close to exceeding the limit of each category (food, transport, leisure) and also shows charts that clearly display how much of your money is being spent in each currency. It’s like having a travel assistant that handles the numbers while you enjoy the scenery.
+The cool thing is that FinMoovi isn’t just another “currency calculator.” It integrates with your monthly budget, flags when you’re close to exceeding the limit of each category (food, transport, leisure) and also shows charts that clearly display how much of your [money](/en/posts/en-avoid-impulse-purchases) is being spent in each currency. It’s like having a travel assistant that handles the numbers while you enjoy the scenery.
 
 ## Step‑by‑step: how to use the multi‑currency feature in practice
 

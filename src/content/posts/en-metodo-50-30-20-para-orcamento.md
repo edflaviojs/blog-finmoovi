@@ -31,7 +31,7 @@ Let's consider a salary of R$ 4,000.00 per month. Applying the 50-30-20 method, 
 | --- | --- | --- |
 | Needs | 50% | 2,000.00 |
 | Desires | 30% | 1,200.00 |
-| Savings | 20% | 800.00 |
+| [Savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) | 20% | 800.00 |
 
 ## Organizing your Finances
 To start applying the 50-30-20 method, you need to have a clear view of your current finances. This includes knowing exactly how much you earn, how much you spend, and where you spend.
