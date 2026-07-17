@@ -42,7 +42,7 @@ Aqui está um exemplo de como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2
 1. Você registra uma despesa em dólares durante uma [viagem](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) de negócios.
 2. O [FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) categoriza a despesa automaticamente como "Viagem" ou "Alimentação", dependendo do tipo de despesa.
 3. Você pode visualizar todos os seus gastos em uma única tela, incluindo os gastos em diferentes moedas.
-4. O FinMoovi oferece relatórios inteligentes que ajudam a identificar áreas onde você pode economizar e melhorar sua situação financeira.
+4. O [FinMoovi](/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-) oferece relatórios inteligentes que ajudam a identificar áreas onde você pode economizar e melhorar sua situação financeira.
 
 ![Como funciona](/images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas-4.webp)
 

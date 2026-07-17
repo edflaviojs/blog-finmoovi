@@ -40,7 +40,7 @@ Con el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026), puedes tener 
 Aquí está un ejemplo de cómo el [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) puede ser utilizado en el día a día:
 
 1. Registra un gasto en dólares durante un [viaje](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) de negocios.
-2. El FinMoovi categoriza el gasto automáticamente como "Viaje" o "Alimentación", dependiendo del tipo de gasto.
+2. El [FinMoovi](/es/posts/es-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-) categoriza el gasto automáticamente como "Viaje" o "Alimentación", dependiendo del tipo de gasto.
 3. Puedes visualizar todos tus gastos en una sola pantalla, incluyendo los gastos en diferentes monedas.
 4. El FinMoovi ofrece informes inteligentes que ayudan a identificar áreas donde puedes ahorrar y mejorar tu situación financiera.
 

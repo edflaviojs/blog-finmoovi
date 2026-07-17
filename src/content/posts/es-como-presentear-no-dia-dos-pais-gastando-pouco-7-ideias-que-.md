@@ -25,11 +25,11 @@ Con un poco de creatividad y planificación, puedes sorprender a tu papá sin qu
 
 ## 1️⃣ Define un límite de gasto antes de nada
 
-Antes de empezar a navegar por internet, fija un techo. Usa la regla del **30 %**: lo ideal es que el valor gastado en regalos no supere el 30 % de tu presupuesto de ocio o de “extras” del mes.
+Antes de empezar a navegar por internet, fija un techo. Usa la regla del **30 %**: lo ideal es que el [valor](/es/glossario/es-valor) gastado en regalos no supere el 30 % de tu presupuesto de ocio o de “extras” del mes.
 
 ![1️⃣ Define un límite de gasto antes de nada](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--2.webp)
 
-> **Consejo práctico:** Abre el **FinMoovi**, registra tu salario, gastos fijos y crea una categoría “Día del Padre”. Define un valor máximo (p.ej.: 150 R$) y deja que la app te avise cuando estés cerca del límite.
+> **Consejo práctico:** Abre el **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)**, registra tu salario, gastos fijos y crea una categoría “Día del Padre”. Define un valor máximo (p.ej.: 150 R$) y deja que la app te avise cuando estés cerca del límite.
 
 ## 2️⃣ Ideas de regalo que cuestan menos de R$ 50
 
@@ -51,7 +51,7 @@ El **cashback inteligente** puede devolver hasta el 12 % del valor gastado en 
 
 ![3️⃣ Aprovecha el poder del **cashback** y los cupones](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--4.webp)
 
-1. **Elige una app de cashback** (FinMoovi tiene integración con socios que ofrecen cashback).  
+1. **Elige una app de cashback** ([FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) tiene integración con socios que ofrecen cashback).  
 2. **Activa cupones** antes de finalizar la compra – sitios como *Cuponomia* o *Méliuz* suelen tener códigos válidos.  
 3. **Paga con tarjeta de crédito** que ofrezca cashback extra (hasta 1 % adicional).
 

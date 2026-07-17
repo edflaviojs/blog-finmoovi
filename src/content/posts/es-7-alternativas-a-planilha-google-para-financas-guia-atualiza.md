@@ -92,10 +92,10 @@ Plan Free limitado – Plan Premium a partir de R$ 12,90/mes.
 ## 4. Money Lover – La app con foco en hábitos de consumo
 
 **Descripción**  
-Money Lover combina control de gastos con técnicas de [cambio](/es/glossario/es-cambio) de hábito, como metas de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) y alertas de “gasto excesivo”. En dos frases, trae una visualización de calendario que destaca los días en que superaste el presupuesto y permite crear “bolsillos” de dinero para proyectos específicos.
+Money Lover combina control de gastos con técnicas de [cambio](/es/glossario/es-cambio) de hábito, como metas de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) y alertas de “gasto excesivo”. En dos frases, trae una visualización de calendario que destaca los días en que superaste el presupuesto y permite crear “bolsillos” de [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) para proyectos específicos.
 
 **Pros**
-- Sistema de “bolsillos” (sobres virtuales) que ayuda a separar dinero para viajes, coche o emergencias.
+- Sistema de “bolsillos” (sobres virtuales) que ayuda a separar [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) para viajes, coche o emergencias.
 - Alertas de gasto excesivo configurables por categoría o [valor](/es/glossario/es-valor).
 - Disponible en portugués, inglés y español, facilitando uso por quien tiene familia bilingüe.
 

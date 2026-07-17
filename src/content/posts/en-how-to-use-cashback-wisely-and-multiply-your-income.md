@@ -20,7 +20,7 @@ seo:
 
 ## Cashback as a Real Ally
 
-When you pay for a snack that costs R$ 35.00 with a card that gives 2% back, the return looks tiny – R$ 0.70. But if you treat that amount as extra income, it can become a genuine boost to your budget. The idea isn’t to expect cashback to cover everything at once, but to make every cent returned work for you.
+When you pay for a snack that costs R$ 35.00 with a card that gives 2% back, the return looks tiny – R$ 0.70. But if you treat that amount as extra income, it can become a genuine boost to your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). The idea isn’t to expect cashback to cover everything at once, but to make every cent returned work for you.
 
 ## Choose the Right Card and Combine Benefits
 
@@ -28,14 +28,14 @@ Not every card offers the same return rate. Some give 1.5% on all purchases, oth
 
 ![Escolha o cartão certo e combine benefícios](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-2.webp)
 
-- **If your salary is between R$ 3,000 and R$ 5,000** and most expenses are food and transport, choose a card that offers 4% cashback at supermarkets and 2% at gas stations.  
+- **If your salary is between R$ 3,000 and R$ 5,000** and most [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) are food and transport, choose a card that offers 4% cashback at supermarkets and 2% at gas stations.  
 - **If you earn between R$ 6,000 and R$ 8,000**, it’s worth considering a premium card that returns 3% on all purchases, even if the annual fee is higher, because the spending volume compensates.
 
 **Practical tip:** before signing up, do a quick calculation of the annual fee versus the expected cashback. If the fee is R$ 120 per year, you need to generate at least R$ 4,000 in spending with a 3% return for the benefit to outweigh the cost.
 
 ## Turn Cashback into “Reserve [Money](/en/posts/en-30-day-rule-for-purchases)”
 
-Many people simply use the returned credit to pay the card bill. That eliminates the immediate benefit and misses the chance to build a reserve. Keep the cashback in a separate account – it can be a checking account with automatic [yield](/en/glossario/en-yield) or a digital account that offers 100 % of the CDI.
+Many people simply use the returned credit to pay the card bill. That eliminates the immediate benefit and misses the chance to build a reserve. Keep the cashback in a separate account – it can be a checking account with automatic [yield](/en/glossario/en-yield) or a digital account that offers 100 % of the [CDI](/en/glossario/en-cdi).
 
 **Practical example:**  
 - Monthly salary: R$ 4,500.00  

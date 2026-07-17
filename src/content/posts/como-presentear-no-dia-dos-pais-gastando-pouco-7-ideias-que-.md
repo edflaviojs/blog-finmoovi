@@ -25,13 +25,13 @@ Com um pouco de criatividade e planejamento, você pode surpreender seu paizão 
 
 ## 1️⃣ Defina um limite de gasto antes de tudo
 
-Antes de sair navegando pela internet, fixe um teto. Use a regra dos **30 %**: o ideal é que o valor gasto com presentes não ultrapasse 30 % da sua verba de lazer ou de “extras” do mês.
+Antes de sair navegando pela internet, fixe um teto. Use a regra dos **30 %**: o ideal é que o [valor](/glossario/valor) gasto com presentes não ultrapasse 30 % da sua verba de lazer ou de “extras” do mês.
 
 ![1️⃣ Defina um limite de gasto antes de tudo](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--2.webp)
 
 
 
-> **Dica prática:** Abra o **FinMoovi**, registre seu salário, despesas fixas e crie uma categoria “Dia dos Pais”. Defina um valor máximo (ex.: R$ 150) e deixe o app avisar quando estiver perto do limite.
+> **Dica prática:** Abra o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)**, registre seu salário, despesas fixas e crie uma categoria “Dia dos Pais”. Defina um valor máximo (ex.: R$ 150) e deixe o app avisar quando estiver perto do limite.
 
 ## 2️⃣ Ideias de presente que custam menos de R$ 50
 
@@ -55,7 +55,7 @@ O **cashback inteligente** pode devolver até 12 % do valor gasto em lojas par
 
 
 
-1. **Escolha um app de cashback** (FinMoovi tem integração com parceiros que oferecem cashback).
+1. **Escolha um app de cashback** ([FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) tem integração com parceiros que oferecem cashback).
 2. **Ative cupons** antes de finalizar a compra – sites como *Cuponomia* ou *Méliuz* costumam ter códigos válidos.
 3. **Pague com cartão de crédito** que ofereça cashback extra (até 1 % adicional).
 
@@ -88,7 +88,7 @@ O IBGE aponta que a renda média mensal dos trabalhadores brasileiros em 2023 fo
 Crie uma lista no FinMoovi com itens que gostaria de dar ao pai. Cada vez que houver promoção, adicione o preço reduzido. Assim, você compra no momento certo e evita compras por impulso.
 
 ### 5.3. **Divida o valor em parcelas menores**
-Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **parcelamento sem juros**. Mas atenção: registre cada parcela no FinMoovi para não esquecer de pagar e acabar gastando mais no próximo mês.
+Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **parcelamento sem [juros](/glossario/juros)**. Mas atenção: registre cada parcela no FinMoovi para não esquecer de pagar e acabar gastando mais no próximo mês.
 
 ## 6️⃣ Dicas finais para não sair no vermelho
 

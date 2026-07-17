@@ -29,7 +29,7 @@ Before you start browsing the internet, set a ceiling. Use the **30 %** rule: 
 
 ![1️⃣ Set a spending limit first](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--2.webp)
 
-> **Practical tip:** Open **FinMoovi**, log your salary, fixed expenses and create a “Father’s Day” category. Set a maximum amount (e.g., R$ 150) and let the app warn you when you’re close to the limit.
+> **Practical tip:** Open **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)**, log your salary, fixed expenses and create a “Father’s Day” category. Set a maximum amount (e.g., R$ 150) and let the app warn you when you’re close to the limit.
 
 ## 2️⃣ Gift ideas under R$ 50
 
@@ -74,7 +74,7 @@ Smart **cashback** can return up to 12 % of the amount spent at partner stores
 ## 5️⃣ Early planning: the strategy that saves your wallet
 
 ### 5.1. **Start saving already in January**
-IBGE reports that the average monthly income of Brazilian workers in 2023 was **R$ 2,600**. If you set aside R$ 10 per week, you’ll already have R$ 40 by March – money that can be used as part of the gift.
+IBGE reports that the average monthly income of Brazilian workers in 2023 was **R$ 2,600**. If you set aside R$ 10 per week, you’ll already have R$ 40 by March – [money](/en/posts/en-30-day-rule-for-purchases) that can be used as part of the gift.
 
 ![5️⃣ Early planning: the strategy that saves your wallet](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--6.webp)
 

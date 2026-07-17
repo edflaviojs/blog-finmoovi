@@ -31,7 +31,7 @@ Além disso, a maioria das planilhas não oferece **segurança** robusta (qualqu
 ## 1. [Mobills](/posts/5-alternativas-ao-mobills-em-2026) – O clássico brasileiro
 
 **Descrição**
-O Mobills é um dos aplicativos mais antigos do Brasil para gestão de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Em duas frases, ele oferece controle de despesas, planejamento de orçamento e visualização de metas, tudo em uma interface colorida e intuitiva.
+O Mobills é um dos aplicativos mais antigos do Brasil para gestão de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Em duas frases, ele oferece controle de despesas, planejamento de [orçamento](/posts/como-criar-orcamento-pessoal) e visualização de metas, tudo em uma interface colorida e intuitiva.
 
 ![1. Mobills – O clássico brasileiro](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-2.webp)
 
@@ -165,7 +165,7 @@ A escolha do melhor app depende do seu **perfil financeiro** e da **necessidade 
 
 > Para aprofundar seu conhecimento sobre categorias automáticas e IA em finanças, confira este artigo da [Investopedia sobre budgeting apps](https://www.investopedia.com/best-budgeting-apps-4587865).
 
-> Se quiser comparar custos e benefícios de cada app com base em avaliações de usuários, o site da [NerdWallet](https://www.nerdwallet.com) tem análises detalhadas e atualizadas.
+> Se quiser comparar custos e [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de cada app com base em avaliações de usuários, o site da [NerdWallet](https://www.nerdwallet.com) tem análises detalhadas e atualizadas.
 
 ---
 

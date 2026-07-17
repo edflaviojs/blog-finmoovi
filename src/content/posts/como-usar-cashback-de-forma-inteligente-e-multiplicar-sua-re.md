@@ -20,11 +20,11 @@ seo:
 
 ## Cashback como aliado de verdade
 
-Quando você paga um lanche de R$ 35,00 com um cartão que devolve 2% de volta, o retorno parece pequeno – R$ 0,70. Mas se esse valor for tratado como renda extra, ele pode virar um verdadeiro reforço no orçamento. A ideia não é esperar que o cashback cubra tudo de uma vez, mas fazer com que cada centavo devolvido trabalhe a seu favor.
+Quando você paga um lanche de R$ 35,00 com um cartão que devolve 2% de volta, o retorno parece pequeno – R$ 0,70. Mas se esse [valor](/glossario/valor) for tratado como renda extra, ele pode virar um verdadeiro reforço no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). A ideia não é esperar que o cashback cubra tudo de uma vez, mas fazer com que cada centavo devolvido trabalhe a seu favor.
 
 ## Escolha o cartão certo e combine benefícios
 
-Nem todo cartão oferece a mesma taxa de retorno. Alguns dão 1,5% em todas as compras, outros dão 5% em categorias específicas (como supermercados ou postos de gasolina) e 1% no resto. A chave está em alinhar o cartão ao seu padrão de consumo.
+Nem todo cartão oferece a mesma [taxa](/glossario/taxa) de retorno. Alguns dão 1,5% em todas as compras, outros dão 5% em categorias específicas (como supermercados ou postos de gasolina) e 1% no resto. A chave está em alinhar o cartão ao seu padrão de consumo.
 
 ![Escolha o cartão certo e combine benefícios](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-2.webp)
 
@@ -37,7 +37,7 @@ Nem todo cartão oferece a mesma taxa de retorno. Alguns dão 1,5% em todas as c
 
 ## Transforme o cashback em “dinheiro de reserva”
 
-Muitas pessoas simplesmente usam o crédito devolvido para pagar a fatura do cartão. Isso elimina o benefício imediato, mas perde a oportunidade de criar uma reserva. Reserve o cashback em uma conta separada – pode ser uma conta corrente com rendimento automático ou uma conta digital que ofereça rendimento de 100% do CDI.
+Muitas pessoas simplesmente usam o crédito devolvido para pagar a fatura do cartão. Isso elimina o benefício imediato, mas perde a oportunidade de criar uma reserva. Reserve o cashback em uma conta separada – pode ser uma conta corrente com rendimento automático ou uma conta digital que ofereça rendimento de 100% do [CDI](/glossario/cdi).
 
 Exemplo prático:
 - Salário mensal: R$ 4.500,00
@@ -48,7 +48,7 @@ Ao depositar esses R$ 60,00 em uma conta de rendimento, você acumula R$ 720,00 
 
 ## Use o cashback para “pagar dívidas” de forma inteligente
 
-Se você tem dívidas com [juros](/glossario/juros) acima de 10% ao ano (como rotativo de cartão ou [cheque especial](/glossario/cheque-especial)), o cashback pode ser um aliado para reduzir esses encargos. Cada centavo que você devolve tem um custo de oportunidade menor que o juros da dívida, então aplicar o cashback para amortizar a dívida gera economia real.
+Se você tem dívidas com [juros](/glossario/juros) acima de 10% ao ano (como rotativo de cartão ou [cheque especial](/glossario/cheque-especial)), o cashback pode ser um aliado para reduzir esses encargos. Cada centavo que você devolve tem um custo de oportunidade menor que o juros da dívida, então aplicar o cashback para amortizar a dívida gera [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) real.
 
 ![Use o cashback para “pagar dívidas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
 

@@ -78,7 +78,7 @@ Organizze was initially built for small entrepreneurs, but its friendly interfac
 **Pros**  
 - Cash‑flow tools that help you see income and expenses in monthly cycles.  
 - Export of reports in accounting‑friendly formats (CSV, XLS).  
-- Support for credit and debit cards with automatic reconciliation.
+- Support for [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) and debit cards with automatic reconciliation.
 
 **Cons**  
 - No voice capture or advanced AI categorization.  
@@ -159,7 +159,7 @@ The best app depends on your **financial profile** and the **features you need**
 
 > To dive deeper into automatic categories and AI in finance, check out this Investopedia article on budgeting apps: https://www.investopedia.com/best-budgeting-apps-4587865.
 
-> If you want to compare costs and benefits based on user reviews, NerdWallet offers detailed and up‑to‑date analyses: https://www.nerdwallet.com.
+> If you want to compare costs and [benefits](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) based on user reviews, NerdWallet offers detailed and up‑to‑date analyses: https://www.nerdwallet.com.
 
 ---
 
