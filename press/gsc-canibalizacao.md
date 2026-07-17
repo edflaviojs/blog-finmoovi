@@ -1,5 +1,7 @@
 # 🔀 Canibalização por query (GSC) — propostas de consolidação
 
 **Propriedade:** https://blog.finmoovi.com/
+**Período:** 2026-06-19 → 2026-07-17
+**Gerado em:** 2026-07-17T09:12:07.752Z
 
-> ⏳ **Aguardando dados do GSC.** Este relatório lista pares de páginas que competem pela mesma busca (canibalização real, medida pelo GSC) e sugere consolidação/redirect manual. A automação adiciona sozinha apenas o link seguro (post mais fraco → mais forte); mesclar/redirecionar/apagar página é decisão sua. Preenche-se semanalmente conforme o blog ganha tráfego.
+_Nenhuma canibalização por query no período._
