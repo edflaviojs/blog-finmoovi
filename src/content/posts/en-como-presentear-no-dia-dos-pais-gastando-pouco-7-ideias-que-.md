@@ -3,6 +3,7 @@ title: "How to Gift on Father's Day Without Spending Much: 7 Budget‑Friendly I
 description: "Discover 7 Father's Day gift ideas that won’t blow your budget. Practical, economical, and easy‑to‑implement tips."
 tickerHeadline: "Cheap gift, happy dad"
 image: "/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-.webp"
+imageAlt: "Laptop and monitor on a wooden desk with a coffee cup nearby."
 category: "orcamento"
 locale: "en"
 tags: ["Budget-friendly Father's Day","cheap gifts","creative ideas","expense control","FinMoovi","family budget","cheap Father's Day gift","economical Father's Day"]

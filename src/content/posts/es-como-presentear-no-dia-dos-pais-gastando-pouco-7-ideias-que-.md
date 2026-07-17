@@ -3,6 +3,7 @@ title: "Cómo Regalar en el Día del Padre Gastando Poco: 7 Ideas que Caben en e
 description: "Descubre 7 ideas de regalo para el Día del Padre que no rompen el presupuesto. Consejos prácticos, económicos y fáciles de aplicar."
 tickerHeadline: "Regalo barato, papá feliz"
 image: "/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-.webp"
+imageAlt: "Computadora portátil y monitor con fondos de pantalla coloridos en una mesa con taza."
 category: "orcamento"
 locale: "es"
 tags: ["Día del Padre económico","regalos baratos","ideas creativas","control de gastos","FinMoovi","presupuesto familiar","regalo día del padre barato","día del padre económico"]

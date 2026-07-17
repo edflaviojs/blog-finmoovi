@@ -4,6 +4,7 @@ definition: "Understand what venda a descoberto is, how it works, advantages, ri
 title: "venda a descoberto - Financial Glossary"
 description: "Understand what venda a descoberto is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/venda-a-descoberto.webp"
+imageAlt: "Stacks of coins, a jar with coins and a plant on a dark background."
 category: "basico"
 tags: ["venda a descoberto", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

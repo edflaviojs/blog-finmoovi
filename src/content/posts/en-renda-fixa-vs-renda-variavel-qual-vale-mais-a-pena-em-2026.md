@@ -3,6 +3,7 @@ title: "Fixed Income vs Variable Income: Which Is Worth It in 2026?"
 description: "Discover the differences between fixed and variable income, pros, cons and how to choose the best option for your financial profile in 2026."
 tickerHeadline: "Which investment yields more?"
 image: "/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Brown leather journal, calculators, coins, and green plant on white marble surface."
 category: "investimentos"
 locale: "en"
 tags: ["fixed income","variable income","investment 2026","investor profile","finmoovi","fixed vs variable income"]

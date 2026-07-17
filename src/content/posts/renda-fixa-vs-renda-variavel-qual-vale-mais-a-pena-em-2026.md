@@ -3,6 +3,7 @@ title: "Renda fixa vs Renda variável: qual vale mais a pena em 2026?"
 description: "Descubra as diferenças entre renda fixa e variável, prós, contras e como escolher a melhor opção para seu perfil financeiro em 2026."
 tickerHeadline: "Qual investimento rende mais?"
 image: "/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Caderno de couro, duas calculadoras e moedas sobre fundo de mármore com folhas."
 category: "investimentos"
 locale: "pt"
 tags: ["renda fixa","renda variável","investimento 2026","perfil de investidor","finmoovi","renda fixa vs variável"]

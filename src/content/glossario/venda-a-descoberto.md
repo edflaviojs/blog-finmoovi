@@ -4,6 +4,7 @@ definition: "Entenda o que é venda a descoberto, como funciona, vantagens, risc
 title: "venda a descoberto - Glossário Financeiro"
 description: "Entenda o que é venda a descoberto, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/venda-a-descoberto.webp"
+imageAlt: "moedas empilhadas e em jarra de vidro com planta, em fundo escuro."
 category: "basico"
 tags: ["venda a descoberto", "glossário", "finanças"]
 author: "FinMoovi"

@@ -3,6 +3,7 @@ title: "Como Presentear no Dia dos Pais Gastando Pouco: 7 Ideias que Cabem no Bo
 description: "Descubra 7 ideias de presente para o Dia dos Pais que não estouram o orçamento. Dicas práticas, econômicas e fáceis de colocar em prática."
 tickerHeadline: "Presente barato, pai feliz"
 image: "/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-.webp"
+imageAlt: "Computador e monitor com imagens coloridas na tela em uma mesa de madeira."
 category: "orcamento"
 locale: "pt"
 tags: ["Dia dos Pais econômico","presentes baratos","ideias criativas","controle de gastos","FinMoovi","orçamento familiar","presente dia dos pais barato","dia dos pais econômico"]
