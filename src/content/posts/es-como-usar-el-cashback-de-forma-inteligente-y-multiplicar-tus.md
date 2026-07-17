@@ -3,6 +3,7 @@ title: "Cómo usar el cashback de forma inteligente y multiplicar tus ingresos"
 description: "Descubre, en lenguaje sencillo, estrategias prácticas para transformar el cashback en ahorro real y generar ingresos extra en tu día a día."
 tickerHeadline: "Cashback que rinde más"
 image: "/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re.webp"
+imageAlt: "Cuatro personas sentadas en una mesa con papeles y una planta al fondo."
 category: "dicas"
 locale: "es"
 tags: ["cómo usar cashback de forma inteligente","finanzas personales","ahorro","dinero"]

@@ -3,6 +3,7 @@ title: "How to Use Cashback Wisely and Multiply Your Income"
 description: "Discover, in plain language, practical strategies to turn cashback into real savings and even generate extra earnings in your daily life."
 tickerHeadline: "Cashback that earns more"
 image: "/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re.webp"
+imageAlt: "Four people sitting around table with papers and glasses in a room with plant."
 category: "dicas"
 locale: "en"
 tags: ["how to use cashback wisely","personal finance","savings","money"]
