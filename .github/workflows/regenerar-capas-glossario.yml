@@ -1,0 +1,71 @@
+name: Regenerar capas antigas do glossário (estilo 3D)
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Capas a regenerar nesta rodada (padrão 25). Use 2 para testar.'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Só listar o que seria regenerado (true/false)'
+        required: false
+        default: 'false'
+  # Conta-gotas: 1x/dia regenera um lote (25) até acabar; depois vira no-op.
+  # Horário deslocado dos outros jobs (alt roda 9/15/21 UTC).
+  schedule:
+    - cron: '30 12 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  regenerar-capas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # git log das imagens precisa do histórico completo
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Regenerar lote de capas
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+        run: |
+          LIMIT="${{ github.event.inputs.limit }}"
+          if [ -z "$LIMIT" ]; then LIMIT="25"; fi
+          ARGS="--limit $LIMIT"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          node --import tsx src/scripts/automacoes/regenerar-capas-glossario.js $ARGS
+
+      - name: Commit e push
+        run: |
+          git add public/images/glossario src/content/glossario
+          if git diff --cached --quiet; then
+            echo "Nenhuma capa regenerada para commitar"
+          else
+            git commit -m "content(design): regenerar capas do glossario no estilo 3D novo (lote diario)"
+            git pull --rebase origin main || true
+            git push
+          fi
