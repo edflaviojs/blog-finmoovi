@@ -16,7 +16,7 @@ concurrency:
 jobs:
   gsc-index-monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30 # ~7s/URL x 439 URLs, com concorrência de 8 → folga generosa
     steps:
       - name: Checkout
         uses: actions/checkout@v4

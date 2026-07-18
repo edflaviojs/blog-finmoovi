@@ -37,8 +37,9 @@ const JSON_OUT = join(DATA_DIR, 'gsc-index-status.json');
 const MD_OUT = join(PRESS_DIR, 'gsc-index-monitor.md');
 
 const SITEMAP_URL = `${GSC_SITE_URL.replace(/\/$/, '')}/sitemap-index.xml`;
-const INSPECT_DELAY_MS = 400; // conservador vs. o limite da API (~600/min)
-const INDEX_ALERT_DAYS = 7; // dias fora do índice antes de alertar (raiz "/" é isenta — ver seção 2 do IMPLEMENTACAO-fix)
+const BATCH_SIZE = 8; // chamadas concorrentes por lote (bem abaixo do ~600/min documentado)
+const BATCH_DELAY_MS = 300; // pausa entre lotes
+const INDEX_ALERT_DAYS = 7; // dias fora do índice antes de alertar (home de cada locale é isenta)
 
 const INDEXED_VERDICTS = new Set(['PASS']);
 
@@ -86,18 +87,28 @@ async function ensureSitemapRegistered() {
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+/**
+ * A URL Inspection API costuma levar ~6-7s por chamada (latência normal dela,
+ * não é rate limit) — sequencial demoraria ~45min para 439 URLs. Processa em
+ * lotes concorrentes (ainda bem dentro do limite documentado de ~600/min).
+ */
 async function inspectAll(urls) {
   const results = [];
-  for (let i = 0; i < urls.length; i++) {
-    const url = urls[i];
-    try {
-      const r = await inspectUrl(url);
-      results.push({ url, ...r, checkedAt: new Date().toISOString(), error: null });
-    } catch (err) {
-      results.push({ url, error: err.message, checkedAt: new Date().toISOString() });
-    }
-    if (i < urls.length - 1) await sleep(INSPECT_DELAY_MS);
-    if ((i + 1) % 50 === 0) console.log(`  ...inspecionadas ${i + 1}/${urls.length}`);
+  for (let i = 0; i < urls.length; i += BATCH_SIZE) {
+    const batch = urls.slice(i, i + BATCH_SIZE);
+    const batchResults = await Promise.all(
+      batch.map(async url => {
+        try {
+          const r = await inspectUrl(url);
+          return { url, ...r, checkedAt: new Date().toISOString(), error: null };
+        } catch (err) {
+          return { url, error: err.message, checkedAt: new Date().toISOString() };
+        }
+      }),
+    );
+    results.push(...batchResults);
+    console.log(`  ...inspecionadas ${Math.min(i + BATCH_SIZE, urls.length)}/${urls.length}`);
+    if (i + BATCH_SIZE < urls.length) await sleep(BATCH_DELAY_MS);
   }
   return results;
 }
