@@ -4,9 +4,13 @@
  * Reads recent posts (last 14 days) from src/content/posts/
  * and publishes them as pins via Pinterest API v5.
  *
- * Env vars required:
- *   PINTEREST_ACCESS_TOKEN - Pinterest API access token
+ * Env vars (preferencial — token renovado a cada execução, nunca expira):
+ *   PINTEREST_CLIENT_ID + PINTEREST_CLIENT_SECRET + PINTEREST_REFRESH_TOKEN
  *   PINTEREST_BOARD_ID - Target board ID
+ * Fallback (access token estático — expira em ~30 dias, evitar):
+ *   PINTEREST_ACCESS_TOKEN
+ *
+ * Autorização única para obter o refresh token: scripts/pinterest-auth.js
  *
  * Tracking: .github/data/pinterest-published.json
  * Max: 3 pins per execution
@@ -26,8 +30,35 @@ const DAYS_LOOKBACK = 14;
 
 // Pinterest API config
 const PINTEREST_API_BASE = 'https://api.pinterest.com/v5';
-const PINTEREST_ACCESS_TOKEN = process.env.PINTEREST_ACCESS_TOKEN;
 const PINTEREST_BOARD_ID = process.env.PINTEREST_BOARD_ID;
+const PINTEREST_CLIENT_ID = process.env.PINTEREST_CLIENT_ID;
+const PINTEREST_CLIENT_SECRET = process.env.PINTEREST_CLIENT_SECRET;
+const PINTEREST_REFRESH_TOKEN = process.env.PINTEREST_REFRESH_TOKEN;
+
+// Preenchido em main(): via refresh token (preferencial) ou env estática
+let PINTEREST_ACCESS_TOKEN = process.env.PINTEREST_ACCESS_TOKEN || null;
+
+/**
+ * Troca o refresh token por um access token novo (access tokens do Pinterest
+ * expiram em ~30 dias — o refresh garante que a automação nunca morra).
+ */
+async function refreshAccessToken() {
+  const basic = Buffer.from(`${PINTEREST_CLIENT_ID}:${PINTEREST_CLIENT_SECRET}`).toString('base64');
+  const res = await fetch(`${PINTEREST_API_BASE}/oauth/token`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Basic ${basic}`,
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: new URLSearchParams({
+      grant_type: 'refresh_token',
+      refresh_token: PINTEREST_REFRESH_TOKEN,
+    }),
+  });
+  const text = await res.text();
+  if (!res.ok) throw new Error(`Refresh do token falhou (${res.status}): ${text}`);
+  return JSON.parse(text).access_token;
+}
 
 /**
  * Parse frontmatter from a markdown file
@@ -137,9 +168,21 @@ async function publishPin({ title, description, link, imageUrl, boardId }) {
 async function main() {
   console.log('=== Pinterest Auto-Publish ===\n');
 
+  // Preferencial: refresh token → access token fresco a cada execução
+  if (PINTEREST_REFRESH_TOKEN && PINTEREST_CLIENT_ID && PINTEREST_CLIENT_SECRET) {
+    try {
+      PINTEREST_ACCESS_TOKEN = await refreshAccessToken();
+      console.log('🔑 Access token renovado via refresh token.');
+    } catch (err) {
+      console.error(`❌ ${err.message}`);
+      console.error('   Refresh token expirado/revogado? Rode scripts/pinterest-auth.js de novo e atualize o secret PINTEREST_REFRESH_TOKEN.');
+      process.exit(1);
+    }
+  }
+
   // Validate env vars
   if (!PINTEREST_ACCESS_TOKEN) {
-    console.log('⏭️  PINTEREST_ACCESS_TOKEN não configurado — pulando publicação no Pinterest (app pendente de aprovação).');
+    console.log('⏭️  Credenciais Pinterest não configuradas (PINTEREST_REFRESH_TOKEN+CLIENT_ID+CLIENT_SECRET ou PINTEREST_ACCESS_TOKEN) — pulando publicação.');
     process.exit(0);
   }
   if (!PINTEREST_BOARD_ID) {
