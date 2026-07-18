@@ -21,7 +21,11 @@
 import { createSign } from 'crypto';
 import { config } from '../../../site.config.ts';
 
-const SCOPE = 'https://www.googleapis.com/auth/webmasters.readonly';
+const SCOPE_READONLY = 'https://www.googleapis.com/auth/webmasters.readonly';
+// Escopo de ESCRITA — só necessário para submeter sitemap (sitemaps.submit).
+// Exige que a service account esteja como usuário "Completo" (não "Restrito")
+// na propriedade do GSC, senão a chamada volta 403.
+const SCOPE_FULL = 'https://www.googleapis.com/auth/webmasters';
 const DEFAULT_SITE_URL = `${config.siteUrl.replace(/\/$/, '')}/`;
 
 /** URL da propriedade no GSC (env com fallback para o domínio do blog). */
@@ -54,15 +58,16 @@ function base64url(input) {
     .replace(/\//g, '_');
 }
 
-let cachedToken = null; // { token, exp } — reaproveita dentro do mesmo processo.
+const cachedTokens = {}; // { [scope]: { token, exp } } — reaproveita dentro do mesmo processo.
 
 /**
  * Assina um JWT (RS256) e troca por um access token OAuth2 (grant jwt-bearer).
  * Lança se as credenciais forem inválidas ou a troca falhar.
  */
-async function getAccessToken() {
+async function getAccessToken(scope = SCOPE_READONLY) {
   const now = Math.floor(Date.now() / 1000);
-  if (cachedToken && cachedToken.exp > now + 60) return cachedToken.token;
+  const cached = cachedTokens[scope];
+  if (cached && cached.exp > now + 60) return cached.token;
 
   const sa = loadServiceAccount();
   if (!sa) throw new Error('GSC: service account ausente ou inválida');
@@ -71,7 +76,7 @@ async function getAccessToken() {
   const header = { alg: 'RS256', typ: 'JWT' };
   const claim = {
     iss: sa.client_email,
-    scope: SCOPE,
+    scope,
     aud: tokenUri,
     iat: now,
     exp: now + 3600,
@@ -99,8 +104,8 @@ async function getAccessToken() {
 
   const data = await res.json();
   if (!data.access_token) throw new Error('GSC: resposta de token sem access_token');
-  cachedToken = { token: data.access_token, exp: now + (data.expires_in || 3600) };
-  return cachedToken.token;
+  cachedTokens[scope] = { token: data.access_token, exp: now + (data.expires_in || 3600) };
+  return cachedTokens[scope].token;
 }
 
 /**
@@ -147,8 +152,84 @@ export async function querySearchAnalytics({
   return data.rows || [];
 }
 
+/**
+ * Lista os sitemaps já REGISTRADOS na propriedade do GSC (leitura).
+ * Retorna [] se nenhum sitemap foi submetido — mesmo que o arquivo exista
+ * no servidor, o Google só o processa depois de ser registrado aqui.
+ * @returns {Promise<Array<{ path: string, lastSubmitted?: string, isPending?: boolean, lastDownloaded?: string, errors?: string, warnings?: string }>>}
+ */
+export async function listSitemaps() {
+  const token = await getAccessToken(SCOPE_READONLY);
+  const site = encodeURIComponent(GSC_SITE_URL);
+  const res = await fetch(`https://searchconsole.googleapis.com/webmasters/v3/sites/${site}/sitemaps`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`GSC: sitemaps.list falhou (${res.status}): ${text}`);
+  }
+  const data = await res.json();
+  return data.sitemap || [];
+}
+
+/**
+ * Registra um sitemap na propriedade do GSC (ESCRITA — exige a service account
+ * como usuário "Completo"/proprietário na propriedade, não apenas "Restrito").
+ * @param {string} feedpath  URL absoluta do sitemap (ex.: https://blog.finmoovi.com/sitemap-index.xml)
+ */
+export async function submitSitemap(feedpath) {
+  const token = await getAccessToken(SCOPE_FULL);
+  const site = encodeURIComponent(GSC_SITE_URL);
+  const feed = encodeURIComponent(feedpath);
+  const res = await fetch(
+    `https://searchconsole.googleapis.com/webmasters/v3/sites/${site}/sitemaps/${feed}`,
+    { method: 'PUT', headers: { Authorization: `Bearer ${token}` } },
+  );
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`GSC: sitemaps.submit falhou (${res.status}): ${text}`);
+  }
+}
+
+/**
+ * Consulta o status de indexação REAL de uma URL (URL Inspection API — a mesma
+ * informação da ferramenta "Inspecionar URL" do painel, via API oficial).
+ * @param {string} inspectionUrl  URL absoluta a inspecionar
+ * @returns {Promise<{ verdict: string, coverageState: string, robotsTxtState: string, indexingState: string, lastCrawlTime: string|null, pageFetchState: string, googleCanonical: string|null, userCanonical: string|null }>}
+ */
+export async function inspectUrl(inspectionUrl) {
+  const token = await getAccessToken(SCOPE_READONLY);
+  const res = await fetch('https://searchconsole.googleapis.com/v1/urlInspection/index:inspect', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ inspectionUrl, siteUrl: GSC_SITE_URL }),
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`GSC: urlInspection falhou (${res.status}): ${text}`);
+  }
+  const data = await res.json();
+  const r = data.inspectionResult?.indexStatusResult || {};
+  return {
+    verdict: r.verdict || 'UNKNOWN',
+    coverageState: r.coverageState || 'unknown',
+    robotsTxtState: r.robotsTxtState || 'unknown',
+    indexingState: r.indexingState || 'unknown',
+    lastCrawlTime: r.lastCrawlTime || null,
+    pageFetchState: r.pageFetchState || 'unknown',
+    googleCanonical: r.googleCanonical || null,
+    userCanonical: r.userCanonical || null,
+  };
+}
+
 export default {
   GSC_SITE_URL,
   hasGscCredentials,
   querySearchAnalytics,
+  listSitemaps,
+  submitSitemap,
+  inspectUrl,
 };

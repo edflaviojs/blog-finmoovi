@@ -1,0 +1,56 @@
+name: GSC - Monitor de Indexacao
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # diário, 08h UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write # abre/atualiza a issue de alerta (→ e-mail)
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  gsc-index-monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Monitorar indexação (sitemap + URL Inspection API)
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ vars.GSC_SITE_URL || 'https://blog.finmoovi.com/' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node src/scripts/automacoes/gsc-index-monitor.js
+
+      - name: Commit e push
+        run: |
+          git add .github/data/gsc-index-status.json press/gsc-index-monitor.md
+          if git diff --cached --quiet; then
+            echo "Sem alteração no monitor de indexação"
+          else
+            git commit -m "chore: atualizar monitor de indexacao do GSC [bot]"
+            git pull --rebase origin main || true
+            git push
+          fi
