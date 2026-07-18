@@ -28,7 +28,8 @@ const CLIENT_ID = process.env.PINTEREST_CLIENT_ID || '1591124';
 const CLIENT_SECRET = process.env.PINTEREST_CLIENT_SECRET;
 const PORT = 8085;
 const DEFAULT_REDIRECT = `http://localhost:${PORT}/callback`;
-const SCOPES = 'boards:read,pins:read,pins:write';
+// boards:write é exigido pelo POST /v5/pins (gravar o pin no board)
+const SCOPES = 'boards:read,boards:write,pins:read,pins:write';
 
 const args = Object.fromEntries(
   process.argv.slice(2).filter(a => a.startsWith('--')).map(a => {
