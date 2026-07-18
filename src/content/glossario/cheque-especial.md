@@ -1,7 +1,6 @@
 ---
 term: "Cheque Especial"
-image: "/images/glossario/cheque-especial.svg"
-imageAlt: "Gráfico de linha com linhas azul, verde e laranja em fundo preto."
+image: "/images/glossario/cheque-especial.webp"
 definition: "Crédito pré-aprovado vinculado à conta corrente com juros altíssimos (8-15% ao mês). Uma das formas mais caras de crédito no Brasil."
 category: "credito"
 relatedTerms: ["Score de Crédito", "Juros Compostos", "Financiamento"]

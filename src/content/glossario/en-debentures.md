@@ -1,7 +1,6 @@
 ---
 term: "Debentures"
-image: "/images/glossario/en-debentures.svg"
-imageAlt: "A line graph on a black background with teal, orange, and white lines."
+image: "/images/glossario/en-debentures.webp"
 definition: "Debt securities issued by companies to raise capital. The investor lends money to the company in exchange for interest."
 category: "investimentos"
 locale: "en"

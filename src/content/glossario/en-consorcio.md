@@ -1,7 +1,6 @@
 ---
 term: "Consortium"
-image: "/images/glossario/en-consorcio.svg"
-imageAlt: "Black background with scattered pink and teal dots and a teal dotted line."
+image: "/images/glossario/en-consorcio.webp"
 definition: "A group purchasing system where participants contribute monthly to a common fund and are periodically selected to receive the full amount."
 category: "credito"
 locale: "en"

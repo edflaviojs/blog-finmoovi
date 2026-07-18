@@ -4,7 +4,6 @@ definition: "The Dividend Yield is a measure that calculates the relationship be
 category: "mercado"
 locale: "en"
 image: "/images/glossario/dividend-yield.webp"
-imageAlt: "Teal and white shapes with a pink line and arrow on a gray background."
 relatedTerms: ["Dividendos","Ações","Rendimento"]
 publishedAt: 2026-06-11
 ---

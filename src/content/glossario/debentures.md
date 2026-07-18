@@ -1,7 +1,6 @@
 ---
 term: "Debêntures"
-image: "/images/glossario/debentures.svg"
-imageAlt: "Gráfico de barras coloridas em tons de rosa e roxo em fundo preto."
+image: "/images/glossario/debentures.webp"
 definition: "Títulos de dívida emitidos por empresas para captar dinheiro. O investidor empresta para a empresa e recebe juros em troca."
 category: "investimentos"
 relatedTerms: ["Renda Fixa", "CDI", "Tesouro Direto"]

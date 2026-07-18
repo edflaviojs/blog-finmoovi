@@ -1,7 +1,6 @@
 ---
 term: "Financial Education"
-image: "/images/glossario/en-educacao-financeira.svg"
-imageAlt: "Colorful pie chart on a black background with four sections."
+image: "/images/glossario/en-educacao-financeira.webp"
 definition: "The set of knowledge and skills that help you make better decisions about money, spending, saving, and investing."
 category: "basico"
 locale: "en"

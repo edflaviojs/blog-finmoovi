@@ -4,7 +4,6 @@ definition: "Entienda qué es diversificação, cómo funciona, ventajas, riesgo
 title: "diversificação - Glosario Financiero"
 description: "Entienda qué es diversificação, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/diversificacao.webp"
-imageAlt: "Cuatro círculos de colores rosa, azul y verde en un fondo blanco."
 category: "basico"
 tags: ["diversificação", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
