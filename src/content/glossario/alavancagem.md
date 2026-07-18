@@ -4,7 +4,6 @@ definition: "A alavancagem é uma estratégia financeira que envolve o uso de em
 category: "mercado"
 locale: "pt"
 image: "/images/glossario/alavancagem.webp"
-imageAlt: "Um prisma hexagonal rosa e uma onda de vidro azul e rosa em base branca."
 relatedTerms: ["Risco","Investimento","Dívida"]
 publishedAt: 2026-06-13
 ---
