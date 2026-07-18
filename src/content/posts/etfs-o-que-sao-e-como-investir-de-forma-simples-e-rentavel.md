@@ -56,7 +56,7 @@ Se, ao invés disso, você aplicasse o mesmo valor em um [CDB](/glossario/cdb) c
 ## Como começar a investir
 
 1. **Abra uma conta em corretora** – escolha uma que ofereça [taxa](/glossario/taxa) de corretagem zero ou reduzida para ETFs.
-2. **Defina o objetivo** – se o foco é longo prazo, um ETF de ações pode ser adequado; para renda fixa, procure ETFs que acompanhem o [CDI](/glossario/cdi) ou o [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
+2. **Defina o objetivo** – se o foco é longo prazo, um ETF de ações pode ser adequado; para [renda fixa](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026), procure ETFs que acompanhem o [CDI](/glossario/cdi) ou o [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 3. **Monte um plano de aporte** – por exemplo, investir **R$500** todo mês em um ETF de ações brasileiras.
 4. **Faça a ordem de compra** – selecione o ticker (código) do ETF, informe a quantidade e confirme a operação.
 5. **Acompanhe a performance** – use relatórios mensais ou um [app de finanças](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) para ver como seu [investimento](/posts/tesouro-direto-para-iniciantes) evolui.

@@ -32,14 +32,14 @@ Imagine a seguinte situação:
 
 
 - **Dia 1:** Você desembarca em Paris e compra um ingresso para o museu por **€ 30**. No seu celular, anota “30” e esquece que é euro.
-- **Dia 3:** No aeroporto de Londres, decide fazer um lanche rápido e paga **£ 12** (aproximadamente **US$ 16**). Você registra “12” no seu bloco de notas, mas não sabe se é libra ou dólar.
+- **Dia 3:** No aeroporto de Londres, decide fazer um lanche rápido e paga **£ 12** (aproximadamente **US$ 16**). Você registra “12” no seu bloco de notas, mas não sabe se é libra ou [dólar](/posts/cotacoes-semana-1-julho-2026).
 - **Dia 7:** De volta ao Brasil, paga o último táxi da viagem em **R$ 80**. Tudo isso agora está espalhado em anotações diferentes, sem nenhuma conversão.
 
 Quando chega a hora de fechar o [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), você tem que abrir um conversor online, buscar a cotação da data de cada gasto e fazer contas mentalmente. O risco de erro é alto, e o tempo gasto – que poderia ser usado para aproveitar a viagem – se transforma em uma tarefa burocrática. Além disso, a falta de visão consolidada impede que você perceba, por exemplo, que está gastando muito com alimentação ou que poderia ter negociado um desconto em algum serviço.
 
 ## A solução que chega como um amigo de confiança: [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)
 
-Foi justamente nessa hora que descobri o **FinMoovi**, um aplicativo de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) que, entre várias funções, tem um recurso **multi‑[moeda](/glossario/moeda)** pensado para viajantes. Sem fanfarra, ele permite que você registre cada despesa na moeda em que ela foi feita; o app converte automaticamente para a sua moeda base (geralmente real) usando a cotação do dia. Tudo isso acontece em tempo real, sem precisar abrir planilhas ou procurar taxas de câmbio.
+Foi justamente nessa hora que descobri o **[FinMoovi](/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)**, um aplicativo de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) que, entre várias funções, tem um recurso **multi‑[moeda](/glossario/moeda)** pensado para viajantes. Sem fanfarra, ele permite que você registre cada despesa na moeda em que ela foi feita; o app converte automaticamente para a sua moeda base (geralmente real) usando a cotação do dia. Tudo isso acontece em tempo real, sem precisar abrir planilhas ou procurar taxas de câmbio.
 
 O legal é que o FinMoovi não é só mais um “calculadora de câmbio”. Ele se integra ao seu [orçamento](/posts/como-criar-orcamento-pessoal) mensal, sinaliza quando você está perto de ultrapassar o limite de cada categoria (alimentação, transporte, lazer) e ainda traz gráficos que mostram, de forma clara, quanto do seu [dinheiro](/posts/cashback-inteligente) está sendo gasto em cada moeda. É como ter um assistente de viagem que cuida dos números enquanto você curte a paisagem.
 

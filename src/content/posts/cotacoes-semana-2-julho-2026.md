@@ -61,7 +61,7 @@ Para quem não quer lidar com corretoras internacionais, o **[FinMoovi](/posts/5
 
 - **Mercado de ações:** O Ibovespa deve ficar sensível ao desempenho das empresas de commodities e ao fluxo de capitais estrangeiros. Fique de olho nas notícias de exportação de soja e minério de ferro, pois elas costumam mover o índice.
 
-**Resumo rápido:** dólar e euro levemente mais fracos, Selic alta ainda protege a renda fixa, e uma cobertura cambial simples pode ser a jogada inteligente para quem tem despesas em moedas estrangeiras. Use o [FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) para monitorar tudo isso em um só lugar e tomar decisões mais tranquilas. Boa semana de investimentos!
+**Resumo rápido:** dólar e euro levemente mais fracos, Selic alta ainda protege a [renda fixa](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026), e uma cobertura cambial simples pode ser a jogada inteligente para quem tem despesas em moedas estrangeiras. Use o [FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) para monitorar tudo isso em um só lugar e tomar decisões mais tranquilas. Boa semana de investimentos!
 
 
 ---

@@ -42,7 +42,7 @@ Aquí está un ejemplo de cómo el [FinMoovi](/es/posts/es-5-alternativas-ao-org
 1. Registra un gasto en dólares durante un [viaje](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) de negocios.
 2. El [FinMoovi](/es/posts/es-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-) categoriza el gasto automáticamente como "Viaje" o "Alimentación", dependiendo del tipo de gasto.
 3. Puedes visualizar todos tus gastos en una sola pantalla, incluyendo los gastos en diferentes monedas.
-4. El FinMoovi ofrece informes inteligentes que ayudan a identificar áreas donde puedes ahorrar y mejorar tu situación financiera.
+4. El [FinMoovi](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) ofrece informes inteligentes que ayudan a identificar áreas donde puedes ahorrar y mejorar tu situación financiera.
 
 ![Cómo funciona](/images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas-4.webp)
 

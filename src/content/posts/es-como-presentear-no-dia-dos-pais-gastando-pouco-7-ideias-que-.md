@@ -26,11 +26,11 @@ Con un poco de creatividad y planificación, puedes sorprender a tu papá sin qu
 
 ## 1️⃣ Define un límite de gasto antes de nada
 
-Antes de empezar a navegar por internet, fija un techo. Usa la regla del **30 %**: lo ideal es que el [valor](/es/glossario/es-valor) gastado en regalos no supere el 30 % de tu presupuesto de ocio o de “extras” del mes.
+Antes de empezar a navegar por internet, fija un techo. Usa la regla del **30 %**: lo ideal es que el [valor](/es/glossario/es-valor) gastado en regalos no supere el 30 % de tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) de ocio o de “extras” del mes.
 
 ![1️⃣ Define un límite de gasto antes de nada](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--2.webp)
 
-> **Consejo práctico:** Abre el **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)**, registra tu salario, gastos fijos y crea una categoría “Día del Padre”. Define un valor máximo (p.ej.: 150 R$) y deja que la app te avise cuando estés cerca del límite.
+> **Consejo práctico:** Abre el **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)**, registra tu salario, [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) fijos y crea una categoría “Día del Padre”. Define un valor máximo (p.ej.: 150 R$) y deja que la app te avise cuando estés cerca del límite.
 
 ## 2️⃣ Ideas de regalo que cuestan menos de R$ 50
 

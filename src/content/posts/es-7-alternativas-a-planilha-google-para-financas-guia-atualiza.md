@@ -78,7 +78,7 @@ Organizze fue creado inicialmente para pequeños emprendedores, pero su interfaz
 **Pros**
 - Herramientas de flujo de caja que ayudan a visualizar ingresos y gastos en ciclos mensuales.
 - Exportación de informes en formatos compatibles con contabilidad (CSV, XLS).
-- Soporte a tarjetas de crédito y débito con conciliación automática.
+- Soporte a tarjetas de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) y débito con conciliación automática.
 
 **Contras**
 - No posee captura por voz ni recursos avanzados de IA para categorización.
@@ -116,7 +116,7 @@ YNAB sigue la filosofía de “dar a cada peso un trabajo”, incentivando al us
 ![5. YNAB (You Need A Budget) – O método “Orçamento Real”](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-6.webp)
 
 **Pros**
-- Metodología comprobada que ayuda a cambiar la relación con el dinero y reducir deudas.
+- Metodología comprobada que ayuda a cambiar la relación con el [dinero](/es/posts/es-cashback-inteligente) y reducir deudas.
 - Sincroniza con bancos vía importación de archivos CSV, manteniendo la privacidad de los datos.
 - Informes detallados de “dónde estuvo tu dinero” que facilitan la revisión mensual.
 

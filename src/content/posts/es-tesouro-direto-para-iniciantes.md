@@ -64,7 +64,7 @@ Aquí está una tabla con la simulación de rendimiento:
 | 2 | R$1.050,00 | R$52,50 | R$1.102,50 |
 
 ## Próximos pasos
-Ahora que usted entiende cómo funciona el Tesouro Direto, es hora de evaluar si tiene sentido para su perfil de inversor. Considere sus objetivos financieros, plazo de inversión y tolerancia al riesgo.
+Ahora que usted entiende cómo funciona el Tesouro Direto, es hora de evaluar si tiene sentido para su [perfil de inversor](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026). Considere sus objetivos financieros, plazo de inversión y tolerancia al riesgo.
 
 Si usted decide invertir en el Tesouro Direto, es importante leer atentamente las condiciones y plazos de cada título antes de invertir. Además, es recomendable diversificar sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para minimizar los riesgos.
 

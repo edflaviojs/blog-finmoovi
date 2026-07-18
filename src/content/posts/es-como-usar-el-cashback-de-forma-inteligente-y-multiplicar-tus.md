@@ -33,7 +33,7 @@ No todas las tarjetas ofrecen la misma tasa de retorno. Algunas dan 1,5% en toda
 
 **Consejo práctico:** antes de abrir la cuenta, haz un cálculo rápido de la anualidad versus el cashback esperado. Si la anualidad es de R$ 120,00 al año, necesitas generar al menos R$ 4.000 en gastos con un 3% de retorno para que el beneficio supere el costo.
 
-## Transforma el cashback en “dinero de reserva”
+## Transforma el cashback en “[dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) de reserva”
 
 Muchas personas simplemente usan el crédito devuelto para pagar la factura de la tarjeta. Eso elimina el beneficio inmediato, pero pierde la oportunidad de crear una reserva. Reserva el cashback en una cuenta separada – puede ser una cuenta corriente con rendimiento automático o una cuenta digital que ofrezca rendimiento del 100% del [CDI](/es/glossario/es-cdi).
 
@@ -45,7 +45,7 @@ Al depositar esos R$ 60,00 en una cuenta de rendimiento, acumulas R$ 720,00 al f
 
 ## Usa el cashback para “pagar deudas” de forma inteligente
 
-Si tienes deudas con intereses superiores al 10% anual (como rotativo de tarjeta o [sobregiro](/es/glossario/es-cheque-especial)), el cashback puede ser un aliado para reducir esos cargos. Cada centavo que recibes tiene un costo de oportunidad menor que los intereses de la deuda, por lo que aplicar el cashback para amortizar la deuda genera ahorro real.
+Si tienes deudas con intereses superiores al 10% anual (como rotativo de tarjeta o [sobregiro](/es/glossario/es-cheque-especial)), el cashback puede ser un aliado para reducir esos cargos. Cada centavo que recibes tiene un costo de oportunidad menor que los intereses de la deuda, por lo que aplicar el cashback para amortizar la deuda genera [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) real.
 
 ![Use o cashback para “pagar dívidas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
 

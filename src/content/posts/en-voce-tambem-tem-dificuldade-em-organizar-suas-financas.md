@@ -42,7 +42,7 @@ Here's an example of how [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-
 1. You record an expense in dollars during a business trip.
 2. [FinMoovi](/en/posts/en-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-) automatically categorizes the expense as "[Travel](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)" or "Food", depending on the type of expense.
 3. You can view all your expenses on a single screen, including expenses in different currencies.
-4. FinMoovi offers intelligent reports that help identify areas where you can save and improve your financial situation.
+4. [FinMoovi](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) offers intelligent reports that help identify areas where you can save and improve your financial situation.
 
 ![Como funciona](/images/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas-4.webp)
 

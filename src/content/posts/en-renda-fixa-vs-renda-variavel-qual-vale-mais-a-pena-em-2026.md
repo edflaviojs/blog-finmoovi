@@ -20,7 +20,7 @@ seo:
 
 ## Introduction
 
-If you’ve just opened an account at a bank or received your first paycheck, the first big question is usually: **where to put the money?** There isn’t a one‑size‑fits‑all answer. In 2026, the two most talked‑about categories are **fixed income** and **variable income**. Each has its own advantages, risks, and ideal moments to use. In this article we’ll look at both sides of the coin, compare the key criteria, and help you decide which matches your goal, risk tolerance, and time horizon. Oh, and at the end we’ll point you to a handy tool – **FinMoovi** – that makes tracking any choice you make a breeze.
+If you’ve just opened an account at a bank or received your first paycheck, the first big question is usually: **where to put the [money](/en/posts/en-30-day-rule-for-purchases)?** There isn’t a one‑size‑fits‑all answer. In 2026, the two most talked‑about categories are **fixed income** and **[variable income](/en/glossario/en-renda-variavel)**. Each has its own advantages, risks, and ideal moments to use. In this article we’ll look at both sides of the coin, compare the key criteria, and help you decide which matches your goal, risk tolerance, and time horizon. Oh, and at the end we’ll point you to a handy tool – **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)** – that makes tracking any choice you make a breeze.
 
 ---
 
@@ -32,7 +32,7 @@ Fixed income includes investments where the remuneration (interest or yield) is 
 
 | Product | Where to Find | Average Rate 2024‑2025* | Features |
 |---------|----------------|-----------------------|----------|
-| CDB (Bank Deposit Certificate) | Commercial banks | 108 % of CDI (≈ 13.2% a year) | FGC guarantee up to R$ 250 k per institution |
+| CDB (Bank Deposit Certificate) | Commercial banks | 108 % of CDI (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-garantia-fgc) up to R$ 250 k per institution |
 | Treasury Direct – Selic | Federal government | 12.8 % a year (Selic 2026) | Daily liquidity, low sovereign risk |
 | LCIs/LCAs (Real Estate/Agricultural Credit Letters) | Banks, brokerages | 107 % of CDI (≈ 13 % a year) | IR‑exempt, FGC protection |
 | Corporate Debentures | Brokerages | 9 %‑12 % a year (depending on rating) | Credit risk of the issuing company |
@@ -107,7 +107,7 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 
 ## When to Choose Fixed Income
 
-1. **Short‑term goal** – If you need the money within up to 2 years (e.g., emergency fund, vacation), fixed income ensures the capital stays preserved.  
+1. **Short‑term goal** – If you need the money within up to 2 years (e.g., [emergency fund](/en/glossario/en-reserva-de-emergencia), vacation), fixed income ensures the capital stays preserved.  
 2. **Conservative profile** – Those who can’t tolerate seeing their investment value swing prefer the safety of a CDB or Treasury.  
 3. **High‑interest environment** – When the Selic is above 12 % a year, fixed income already offers very attractive returns.  
 4. **Need for income** – LCIs/LCAs and some debentures pay monthly interest, generating a stable cash flow.

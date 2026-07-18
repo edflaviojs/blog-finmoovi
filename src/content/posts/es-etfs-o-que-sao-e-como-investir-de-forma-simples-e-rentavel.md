@@ -33,7 +33,7 @@ La gestión del fondo puede ser **pasiva** (simplemente sigue el índice) o **ac
 
 ### Ejemplo de rendimiento
 
-Imagina que inviertes **R$1.000** en un ETF que replica el índice de renta fija, con rentabilidad media del 6 % al año. En un año, tu [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) rendiría:
+Imagina que inviertes **R$1.000** en un ETF que replica el índice de [renta fija](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026), con rentabilidad media del 6 % al año. En un año, tu [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) rendiría:
 
 - Valor invertido: R$1.000
 - Rentabilidad: 6 % → R$60

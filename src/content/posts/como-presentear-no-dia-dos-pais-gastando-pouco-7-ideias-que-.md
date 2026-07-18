@@ -91,7 +91,7 @@ Crie uma lista no FinMoovi com itens que gostaria de dar ao pai. Cada vez que ho
 ### 5.3. **Divida o valor em parcelas menores**
 Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **parcelamento sem [juros](/glossario/juros)**. Mas atenção: registre cada parcela no FinMoovi para não esquecer de pagar e acabar gastando mais no próximo mês.
 
-## 6️⃣ Dicas finais para não sair no vermelho
+## 6️⃣ [Dicas](/posts/7-erros-financeiros-iniciante) finais para não sair no vermelho
 
 | # | Dica | Por quê? |
 |---|------|----------|
@@ -99,7 +99,7 @@ Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **p
 | 2 | **Evite “última hora”** | Comprar de última hora geralmente custa mais. |
 | 3 | **Combine presentes com amigos da família** | Dividir o custo permite um presente maior por menos. |
 | 4 | **Use a regra dos 30 dias** (para compras não essenciais) | Dá tempo para refletir se é realmente necessário. |
-| 5 | **Registre tudo no FinMoovi** | Controle total dos gastos, evita surpresas no fim do mês. |
+| 5 | **Registre tudo no FinMoovi** | Controle total dos [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), evita surpresas no fim do mês. |
 
 ## 7️⃣ Conclusão: presente que cabe no bolso e no coração
 

@@ -31,7 +31,7 @@ La semana del 22 de junio al 29 de junio de 2026 mostró una relativa estabilida
 
 ## La Selic y su Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-La decisión del Banco Central de mantener la tasa Selic en su nivel actual tuvo un impacto mixto en el mercado. Por un lado, los inversores que buscan rendimientos más altos en instrumentos de renta fija pueden sentirse desanimados, ya que las tasas de interés no ofrecen el mismo atractivo que en el pasado. Por otro lado, la estabilidad en la tasa Selic puede beneficiar a los sectores que dependen del [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), como el mercado inmobiliario y el consumo, al mantener las tasas de interés accesibles para los préstamos.
+La decisión del Banco Central de mantener la tasa Selic en su nivel actual tuvo un impacto mixto en el mercado. Por un lado, los inversores que buscan rendimientos más altos en instrumentos de [renta fija](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) pueden sentirse desanimados, ya que las tasas de interés no ofrecen el mismo atractivo que en el pasado. Por otro lado, la estabilidad en la tasa Selic puede beneficiar a los sectores que dependen del [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), como el mercado inmobiliario y el consumo, al mantener las tasas de interés accesibles para los préstamos.
 
 ![La Selic y su Impacto en las Inversiones](/images/posts/es-cotizaciones-semana-5-junio-2026-inline-3.webp)
 

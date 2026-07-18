@@ -64,7 +64,7 @@ Here's a table with the return simulation:
 | 2 | R$1,050.00 | R$52.50 | R$1,102.50 |
 
 ## Next Steps
-Now that you understand how Tesouro Direto works, it's time to evaluate if it makes sense for your investor profile. Consider your financial goals, investment term, and risk tolerance.
+Now that you understand how Tesouro Direto works, it's time to evaluate if it makes sense for your [investor profile](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026). Consider your financial goals, investment term, and risk tolerance.
 
 If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) to minimize risks.
 

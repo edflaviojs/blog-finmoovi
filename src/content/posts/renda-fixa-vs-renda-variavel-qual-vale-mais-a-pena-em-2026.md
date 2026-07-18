@@ -20,7 +20,7 @@ seo:
 
 ## Introdução
 
-Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro salário, a primeira grande dúvida costuma ser: **onde colocar o dinheiro?** A resposta não é única. Em 2026, as duas categorias mais faladas são **renda fixa** e **renda variável**. Cada uma tem vantagens, riscos e momentos ideais de uso. Neste artigo, vamos analisar os dois lados da moeda, comparar critérios importantes e ajudar você a decidir qual combina mais com seu objetivo, tolerância ao risco e horizonte de tempo. Ah, e ao final vamos indicar uma ferramenta prática – o **FinMoovi** – que facilita o acompanhamento de qualquer escolha que você faça.
+Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro salário, a primeira grande dúvida costuma ser: **onde colocar o dinheiro?** A resposta não é única. Em 2026, as duas categorias mais faladas são **renda fixa** e **renda variável**. Cada uma tem vantagens, riscos e momentos ideais de uso. Neste artigo, vamos analisar os dois lados da moeda, comparar critérios importantes e ajudar você a decidir qual combina mais com seu objetivo, tolerância ao risco e horizonte de tempo. Ah, e ao final vamos indicar uma ferramenta prática – o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – que facilita o acompanhamento de qualquer escolha que você faça.
 
 ---
 
@@ -64,7 +64,7 @@ A renda variável reúne ativos cujo retorno **não é garantido** e depende da 
 
 | Produto | Onde encontrar | Rentabilidade média 2024‑2025* | Características |
 |---------|----------------|-------------------------------|-----------------|
-| Ações de empresas listadas | Bolsa de Valores (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta volatilidade, dividendos eventuais |
+| Ações de empresas listadas | [Bolsa de Valores](/glossario/bolsa-de-valores) (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta volatilidade, dividendos eventuais |
 | ETFs (Fundos de Índice) | Corretoras | 11 %‑18 % a.a. (ex.: BOVA11) | Diversificação automática, taxa de administração baixa |
 | Fundos de Investimento Imobiliário (FIIs) | Corretoras | 7 %‑9 % a.a. (rendimento mensal) | Recebimento de aluguéis, risco de vacância |
 | Criptomoedas | Exchanges | Varia muito (ex.: BTC 2024: +30 % a.a.) | Altíssima volatilidade, risco regulatório |
@@ -85,7 +85,7 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 1. **Volatilidade** – Oscilações diárias podem causar medo e decisões precipitadas.
 2. **Risco de perda total** – Empresas podem falir, ações podem ficar sem valor.
 3. **Necessidade de acompanhamento** – Requer estudo, leitura de notícias e, às vezes, análise técnica.
-4. **Impostos mais complexos** – Ganho de capital tributado em 15 % (para ações) e 20 % (para outros ativos).
+4. **Impostos mais complexos** – [Ganho de capital](/glossario/ganho-de-capital) tributado em 15 % (para ações) e 20 % (para outros ativos).
 
 ---
 
@@ -100,7 +100,7 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 | **Proteção contra inflação** | Moderada (dependendo do indexador) | Boa (empresas podem repassar inflação) |
 | **Implicação tributária** | IR regressivo (15 %‑22,5 %) ou isento (LCI/LCA) | IR de 15 % (ações) ou 20 % (demais) |
 | **Complexidade de gestão** | Simples (apenas escolher o título) | Mais complexa (análise de mercado) |
-| **Adequado para** | Conservadores, curto/médio prazo, reserva de emergência | Agressivos, médio/longo prazo, busca de crescimento |
+| **Adequado para** | Conservadores, curto/médio prazo, [reserva de emergência](/glossario/reserva-de-emergencia) | Agressivos, médio/longo prazo, busca de crescimento |
 | **Exemplo de produto** | Tesouro Selic 2026 (12,8 % a.a.) | BOVA11 ETF (Ibovespa) – 15 % a.a. |
 
 ![Tabela comparativa](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-4.webp)
@@ -151,7 +151,7 @@ Não existe “melhor” absoluto; a escolha depende **do seu perfil, prazo e ob
 
 Por outro lado, se você tem **tempo de sobra**, aceita a montanha‑russa dos mercados e quer buscar retornos que superem a inflação de forma confortável, a **renda variável** pode ser a principal alavanca de crescimento. A recomendação mais equilibrada costuma ser **misturar os dois mundos**: manter uma parcela segura (renda fixa) e destinar o restante a oportunidades de maior retorno (renda variável).
 
-Independentemente da escolha, a **gestão e o acompanhamento** são essenciais. É aqui que o **FinMoovi** entra como seu aliado: o app permite registrar cada aplicação, acompanhar a rentabilidade em tempo real, definir metas de curto e longo prazo e receber alertas quando a alocação ficar fora do planejado. Assim, você controla suas finanças sem precisar ser um analista de mercado.
+Independentemente da escolha, a **gestão e o acompanhamento** são essenciais. É aqui que o **[FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** entra como seu aliado: o app permite registrar cada aplicação, acompanhar a rentabilidade em tempo real, definir metas de curto e longo prazo e receber alertas quando a alocação ficar fora do planejado. Assim, você controla suas finanças sem precisar ser um analista de mercado.
 
 > **Dica prática:** Comece com 70 % em renda fixa e 30 % em renda variável. Conforme ganhar confiança e observar a volatilidade, vá ajustando a proporção até encontrar o ponto que combine segurança e potencial de ganho.
 

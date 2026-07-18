@@ -34,7 +34,7 @@ Price: Free
 
 ## Alternative 2: [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro)
 [FinMoovi](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) is a finance app that stands out for its ability to handle multiple currencies, allowing users to manage their finances in different countries. Additionally, [FinMoovi](/en/posts/en-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-) offers features like smart capture by voice, categorization with AI, and offline support, making it an attractive option for those who need flexibility and efficiency.
-FinMoovi also allows users to create budgets and set financial goals, making it a complete tool for managing finances.
+[FinMoovi](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) also allows users to create budgets and set financial goals, making it a complete tool for managing finances.
 Pros:
 * Multi-currency, allowing finance management in different countries
 * Smart capture by voice for easy expense recording

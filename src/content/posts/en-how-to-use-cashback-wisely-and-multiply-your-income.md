@@ -35,7 +35,7 @@ Not every card offers the same return rate. Some give 1.5% on all purchases, oth
 
 ## Turn Cashback into “Reserve [Money](/en/posts/en-30-day-rule-for-purchases)”
 
-Many people simply use the returned credit to pay the card bill. That eliminates the immediate benefit and misses the chance to build a reserve. Keep the cashback in a separate account – it can be a checking account with automatic [yield](/en/glossario/en-yield) or a digital account that offers 100 % of the [CDI](/en/glossario/en-cdi).
+Many people simply use the returned [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) to pay the card bill. That eliminates the immediate benefit and misses the chance to build a reserve. Keep the cashback in a separate account – it can be a checking account with automatic [yield](/en/glossario/en-yield) or a digital account that offers 100 % of the [CDI](/en/glossario/en-cdi).
 
 **Practical example:**  
 - Monthly salary: R$ 4,500.00  
@@ -77,7 +77,7 @@ These numbers give you clarity to adjust the strategy over time.
 
 ## Start Today
 
-The first action doesn’t need to be complex: choose a card that offers the best cashback for your spending pattern, open a separate account to receive the money back, and record everything in your finance app. In less than 30 days you’ll already see the difference in your budget.
+The first action doesn’t need to be complex: choose a card that offers the best cashback for your spending pattern, open a separate account to receive the [money](/en/posts/en-avoid-impulse-purchases) back, and record everything in your finance app. In less than 30 days you’ll already see the difference in your budget.
 
 ---
 **The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover where your money is really going.**

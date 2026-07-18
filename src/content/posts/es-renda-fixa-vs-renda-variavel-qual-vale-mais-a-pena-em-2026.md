@@ -20,7 +20,7 @@ seo:
 
 ## Introducción  
 
-Si acabas de abrir una cuenta en un banco o de recibir tu primer sueldo, la primera gran duda suele ser: **¿dónde colocar el dinero?** No hay una única respuesta. En 2026, las dos categorías más comentadas son **renta fija** y **renta variable**. Cada una tiene ventajas, riesgos y momentos ideales de uso. En este artículo analizaremos ambos lados de la moneda, compararemos criterios importantes y te ayudaremos a decidir cuál combina mejor con tu objetivo, tolerancia al riesgo y horizonte de tiempo. Ah, y al final te recomendaremos una herramienta práctica – el **FinMoovi** – que facilita el seguimiento de cualquier elección que hagas.  
+Si acabas de abrir una cuenta en un banco o de recibir tu primer sueldo, la primera gran duda suele ser: **¿dónde colocar el dinero?** No hay una única respuesta. En 2026, las dos categorías más comentadas son **renta fija** y **[renta variable](/es/glossario/es-renda-variavel)**. Cada una tiene ventajas, riesgos y momentos ideales de uso. En este artículo analizaremos ambos lados de la moneda, compararemos criterios importantes y te ayudaremos a decidir cuál combina mejor con tu objetivo, tolerancia al riesgo y horizonte de tiempo. Ah, y al final te recomendaremos una herramienta práctica – el **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** – que facilita el seguimiento de cualquier elección que hagas.  
 
 ---  
 
@@ -62,7 +62,7 @@ La renta variable reúne activos cuyo retorno **no está garantizado** y depende
 
 | Producto | Dónde encontrar | Rentabilidad media 2024‑2025* | Características |
 |----------|----------------|-------------------------------|-----------------|
-| Acciones de empresas listadas | Bolsa de Valores (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta volatilidad, dividendos eventuales |
+| Acciones de empresas listadas | [Bolsa de Valores](/es/glossario/es-bolsa-de-valores) (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta volatilidad, dividendos eventuales |
 | ETFs (Fondos de Índice) | Corredoras | 11 %‑18 % a.a. (ej.: BOVA11) | Diversificación automática, baja comisión de gestión |
 | Fondos de Inversión Inmobiliaria (FIIs) | Corredoras | 7 %‑9 % a.a. (rendimiento mensual) | Recepción de alquileres, riesgo de vacancia |
 | Criptomonedas | Exchanges | Varía mucho (ej.: BTC 2024: +30 % a.a.) | Altísima volatilidad, riesgo regulatorio |
@@ -83,7 +83,7 @@ En la práctica, al comprar una acción te conviertes en socio de la empresa. Tu
 1. **Volatilidad** – Oscilaciones diarias pueden generar miedo y decisiones precipitadas.  
 2. **Riesgo de pérdida total** – Las empresas pueden quebrar, las acciones pueden quedar sin valor.  
 3. **Necesidad de seguimiento** – Requiere estudio, lectura de noticias y, a veces, análisis técnico.  
-4. **Impuestos más complejos** – Ganancia de capital tributada al 15 % (para acciones) y 20 % (para otros activos).  
+4. **Impuestos más complejos** – [Ganancia de capital](/es/glossario/es-ganho-de-capital) tributada al 15 % (para acciones) y 20 % (para otros activos).  
 
 ---  
 
@@ -145,7 +145,7 @@ No existe un “mejor” absoluto; la elección depende **de tu perfil, plazo y 
 
 Por otro lado, si tienes **tiempo de sobra**, aceptas la montaña rusa de los mercados y buscas retornos que superen la inflación de forma cómoda, la **renta variable** puede ser la principal palanca de crecimiento. La recomendación más equilibrada suele ser **mezclar ambos mundos**: mantener una porción segura (renta fija) y destinar el resto a oportunidades de mayor retorno (renta variable).  
 
-Independientemente de la elección, la **gestión y el seguimiento** son esenciales. Aquí es donde el **FinMoovi** entra como tu aliado: la app permite registrar cada inversión, seguir la rentabilidad en tiempo real, definir metas a corto y largo plazo y recibir alertas cuando la asignación se salga del plan. Así, controlas tus finanzas sin necesidad de ser analista de mercado.  
+Independientemente de la elección, la **gestión y el seguimiento** son esenciales. Aquí es donde el **[FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** entra como tu aliado: la app permite registrar cada inversión, seguir la rentabilidad en tiempo real, definir metas a corto y largo plazo y recibir alertas cuando la asignación se salga del plan. Así, controlas tus finanzas sin necesidad de ser analista de mercado.  
 
 > **Consejo práctico:** Comienza con un 70 % en renta fija y 30 % en renta variable. Conforme ganes confianza y observes la volatilidad, ajusta la proporción hasta encontrar el punto que combine seguridad y potencial de ganancia.  
 

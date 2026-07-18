@@ -35,9 +35,9 @@ Nem todo cartão oferece a mesma [taxa](/glossario/taxa) de retorno. Alguns dão
 
 **Dica prática:** antes de fechar a conta, faça um cálculo rápido da anuidade versus o cashback esperado. Se a anuidade for R$ 120,00 ao ano, você precisa gerar pelo menos R$ 4.000 em gastos com 3% de retorno para que o benefício supere o custo.
 
-## Transforme o cashback em “dinheiro de reserva”
+## Transforme o cashback em “[dinheiro](/posts/cashback-inteligente) de reserva”
 
-Muitas pessoas simplesmente usam o crédito devolvido para pagar a fatura do cartão. Isso elimina o benefício imediato, mas perde a oportunidade de criar uma reserva. Reserve o cashback em uma conta separada – pode ser uma conta corrente com rendimento automático ou uma conta digital que ofereça rendimento de 100% do [CDI](/glossario/cdi).
+Muitas pessoas simplesmente usam o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) devolvido para pagar a fatura do cartão. Isso elimina o benefício imediato, mas perde a oportunidade de criar uma reserva. Reserve o cashback em uma conta separada – pode ser uma conta corrente com rendimento automático ou uma conta digital que ofereça rendimento de 100% do [CDI](/glossario/cdi).
 
 Exemplo prático:
 - Salário mensal: R$ 4.500,00

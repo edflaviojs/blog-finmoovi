@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Introduction to [CDB](/en/glossario/en-cdb) and Treasury [Selic](/en/glossario/en-selic)
-When it comes to investing, it's essential to understand the available options and how they can fit your investor profile. Two of the most popular [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) in Brazil are CDB (Certificate of Bank Deposit) and [Treasury Selic](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). But, after all, which one yields more in 2026? To understand this, let's dive into the details of each.
+When it comes to investing, it's essential to understand the available options and how they can fit your [investor profile](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026). Two of the most popular [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) in Brazil are CDB (Certificate of Bank Deposit) and [Treasury Selic](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). But, after all, which one yields more in 2026? To understand this, let's dive into the details of each.
 
 ### What is CDB?
 CDB is a type of fixed-income [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) offered by banks and financial institutions. It works like a loan you make to the bank, and in return, the bank pays an interest rate. CDB can be pre-fixed, post-fixed, or hybrid, each with its own way of calculating interest.

@@ -48,7 +48,7 @@ Aqui está um exemplo de como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2
 
 
 
-Além disso, o FinMoovi também oferece recursos como:
+Além disso, o [FinMoovi](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) também oferece recursos como:
 
 * Registros de despesas por voz ou OCR
 * Categorização automática de gastos

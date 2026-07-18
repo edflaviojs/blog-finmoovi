@@ -43,7 +43,7 @@ Para os investidores, é importante entender como as mudanças na Selic podem im
 
 ## Dica Prática para o Investidor Pessoa Física
 
-Uma dica prática para os investidores pessoa física é diversificar seus investimentos. Isso inclui não apenas investir em diferentes tipos de ativos, como [ações](/glossario/acoes), renda fixa e [fundos](/glossario/fundos), mas também considerar investimentos em múltiplas moedas. O [FinMoovi](https://finmoovi.com.br/) é uma ferramenta útil que ajuda a acompanhar e gerenciar investimentos em diferentes moedas, tornando mais fácil para os investidores manterem seu portfólio diversificado e atualizado.
+Uma dica prática para os investidores pessoa física é diversificar seus investimentos. Isso inclui não apenas investir em diferentes tipos de ativos, como [ações](/glossario/acoes), [renda fixa](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) e [fundos](/glossario/fundos), mas também considerar investimentos em múltiplas moedas. O [FinMoovi](https://finmoovi.com.br/) é uma ferramenta útil que ajuda a acompanhar e gerenciar investimentos em diferentes moedas, tornando mais fácil para os investidores manterem seu portfólio diversificado e atualizado.
 
 Além disso, é fundamental manter uma [reserva de emergência](/glossario/reserva-de-emergencia) e ter um plano de [investimento](/posts/montando-carteira-diversificada-com-r-500) de longo prazo, considerando os objetivos financeiros e o perfil de risco de cada investidor.
 

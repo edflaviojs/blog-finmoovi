@@ -31,7 +31,7 @@ On top of that, most sheets don’t provide robust **security** (anyone with the
 ## 1. [Mobills](/en/posts/en-5-alternativas-ao-mobills-em-2026) – The Brazilian classic
 
 **Description**  
-Mobills is one of Brazil’s oldest personal‑finance apps. In two sentences, it offers expense control, [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) planning, and goal visualization, all in a colorful, intuitive interface.
+Mobills is one of Brazil’s oldest personal‑finance apps. In two sentences, it offers [expense control](/en/posts/en-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-), [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) planning, and goal visualization, all in a colorful, intuitive interface.
 
 ![1. Mobills – O clássico brasileiro](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-2.webp)
 
@@ -92,7 +92,7 @@ Limited Free plan – Premium starting at R$ 12.90/month.
 ## 4. [Money](/en/posts/en-avoid-impulse-purchases) Lover – The habit‑focused app
 
 **Description**  
-Money Lover blends expense tracking with habit‑change techniques, such as savings goals and “overspend” alerts. In two sentences, it offers a calendar view that highlights days you exceeded your budget and lets you create “money envelopes” for specific projects.
+[Money](/en/posts/en-creating-an-emergency-fund) Lover blends expense tracking with habit‑change techniques, such as savings goals and “overspend” alerts. In two sentences, it offers a calendar view that highlights days you exceeded your budget and lets you create “money envelopes” for specific projects.
 
 **Pros**  
 - “Envelopes” (virtual pockets) that help you set aside money for trips, a car, or emergencies.  

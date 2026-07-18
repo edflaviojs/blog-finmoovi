@@ -26,7 +26,7 @@ With a bit of creativity and planning, you can surprise your dad without blowing
 
 ## 1️⃣ Set a spending limit first
 
-Before you start browsing the internet, set a ceiling. Use the **30 %** rule: ideally, the amount spent on gifts shouldn’t exceed 30 % of your leisure or “extra” budget for the month.
+Before you start browsing the internet, set a ceiling. Use the **30 %** rule: ideally, the amount spent on gifts shouldn’t exceed 30 % of your leisure or “extra” [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) for the month.
 
 ![1️⃣ Set a spending limit first](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--2.webp)
 
@@ -52,7 +52,7 @@ Smart **cashback** can return up to 12 % of the amount spent at partner stores
 
 ![3️⃣ Leverage **cashback** and coupons](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--4.webp)
 
-1. **Choose a cashback app** (FinMoovi integrates with partners that offer cashback).  
+1. **Choose a cashback app** ([FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) integrates with partners that offer cashback).  
 2. **Activate coupons** before checkout – sites like *Cuponomia* or *Méliuz* usually have valid codes.  
 3. **Pay with a credit card** that offers extra cashback (up to 1 % additional).
 
