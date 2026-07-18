@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-07-17T07:14:16.280Z
-**Posts:** 159 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 26
+**Gerado em:** 2026-07-18T06:59:16.243Z
+**Posts:** 168 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 27
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -78,6 +78,9 @@
 
 **previdencia-privada-vs-investir-por-conta-propria-qual-vale-.md**
 - _Esses planos são oferecidos por instituições financeiras e seguradoras, e podem ser personalizados de acordo com as necessidades e objetivos do investidor._
+
+**renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026.md**
+- _**Flexibilidade** – É possível montar carteiras de acordo com setores, temas (tecnologia, energia limpa) ou risco._
 
 **revisao-de-orcamento.md**
 - _Depois de verificar seus gastos, ajuste-os de acordo com suas necessidades e objetivos._
