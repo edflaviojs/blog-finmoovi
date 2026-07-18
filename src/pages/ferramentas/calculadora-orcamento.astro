@@ -46,7 +46,7 @@ const layoutProps = isEmbed
   {!isEmbed && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   {!isEmbed && <Header />}
 
-  <main class="tool-page">
+  <main class="tool-page" data-pagefind-body>
     <div class="container">
       {!isEmbed && (
         <header class="tool-header">
