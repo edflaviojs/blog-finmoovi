@@ -88,6 +88,8 @@ export interface ContentConfig {
   defaultAuthor: string;
   /** Default SEO keywords per locale */
   defaultKeywords: LocaleStrings;
+  /** Complement of the home page <title> (brand + suffix ≈ 50-60 chars) */
+  homeTitleSuffix: LocaleStrings;
 }
 
 export interface AppConfig {

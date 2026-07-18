@@ -14,7 +14,7 @@ const data = await getHomeData('pt');
 ---
 
 <BaseLayout
-  title={`${config.brand.name} ${config.brand.blogSuffix}`}
+  title={`${config.brand.name} ${config.brand.blogSuffix} — ${config.content.homeTitleSuffix.pt}`}
   description={config.siteDescription.pt}
   keywords={config.content.defaultKeywords.pt.split(', ')}
   preloadImage={data.hero?.image}

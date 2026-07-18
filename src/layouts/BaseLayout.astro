@@ -36,7 +36,10 @@ const {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(image, Astro.site);
-const fullTitle = title === blogTitle ? title : `${title} | ${blogTitle}`;
+// startsWith (não só ===): a home passa "FinMoovi Blog — <sufixo descritivo>"
+// para o title já nascer com 50-60 chars (recomendação de SEO); sem isso o
+// título ficaria duplicado ("...Gastos | FinMoovi Blog | FinMoovi Blog").
+const fullTitle = title.startsWith(blogTitle) ? title : `${title} | ${blogTitle}`;
 
 // i18n: detect current locale and compute base path
 const path = Astro.url.pathname;

@@ -12,7 +12,7 @@ const data = await getHomeData('es');
 ---
 
 <BaseLayout
-  title={`${config.brand.name} ${config.brand.blogSuffix}`}
+  title={`${config.brand.name} ${config.brand.blogSuffix} — ${config.content.homeTitleSuffix.es}`}
   description={config.siteDescription.es}
   preloadImage={data.hero?.image}
   preloadImageSrcset={data.hero?.image ? imgSrcset(data.hero.image) : undefined}

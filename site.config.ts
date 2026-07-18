@@ -98,6 +98,13 @@ export const config: SiteConfig = {
       en: 'personal finance, financial control, financial education, budget',
       es: 'finanzas personales, control financiero, educación financiera, presupuesto',
     },
+    // Complemento do <title> da home (marca + suffix = ~55-58 chars, faixa
+    // ideal 50-60 recomendada por SEO — o title "nu" tinha só 13 chars).
+    homeTitleSuffix: {
+      pt: 'Educação Financeira e Controle de Gastos',
+      en: 'Personal Finance Tips & Money Management',
+      es: 'Educación Financiera y Control de Gastos',
+    },
   },
 
   // ─── APP/PRODUTO PROMOVIDO (CTA) ──────────────────────────────────
