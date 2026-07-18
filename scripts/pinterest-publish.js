@@ -39,6 +39,75 @@ const PINTEREST_REFRESH_TOKEN = process.env.PINTEREST_REFRESH_TOKEN;
 let PINTEREST_ACCESS_TOKEN = process.env.PINTEREST_ACCESS_TOKEN || null;
 
 /**
+ * Dias restantes até o refresh token expirar. O token do Pinterest é um JWT
+ * cujo payload traz iat (emissão) e exp (DURAÇÃO em segundos, ~60 dias).
+ * Retorna null se não der para decodificar.
+ */
+function refreshTokenDaysLeft() {
+  try {
+    // Formato: pinr.<header>.<payload>.<assinatura> — payload é a parte [2]
+    const payload = JSON.parse(
+      Buffer.from(PINTEREST_REFRESH_TOKEN.split('.')[2], 'base64').toString('utf-8'),
+    );
+    if (!payload.iat || !payload.exp) return null;
+    const expiresAtMs = (payload.iat + payload.exp) * 1000;
+    return Math.floor((expiresAtMs - Date.now()) / 86400000);
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Lembrete automático de renovação: com ≤7 dias de validade restante, abre uma
+ * issue no GitHub (que dispara e-mail ao dono) com o passo a passo. Deduplica
+ * por título para não abrir issue repetida a cada execução.
+ */
+async function openRenewalIssueIfNeeded(daysLeft) {
+  const ghToken = process.env.GITHUB_TOKEN;
+  const repo = process.env.GITHUB_REPOSITORY; // ex.: edflaviojs/blog-finmoovi
+  if (!ghToken || !repo) return;
+
+  const title = '📌 Renovar o refresh token do Pinterest (vence em breve)';
+  const headers = {
+    Authorization: `Bearer ${ghToken}`,
+    Accept: 'application/vnd.github+json',
+    'Content-Type': 'application/json',
+  };
+
+  // Já existe issue aberta com esse título? Então não duplica.
+  const existing = await fetch(
+    `https://api.github.com/repos/${repo}/issues?state=open&per_page=50`,
+    { headers },
+  ).then(r => (r.ok ? r.json() : []));
+  if (Array.isArray(existing) && existing.some(i => i.title === title)) return;
+
+  const body = [
+    `O refresh token do Pinterest expira em **~${daysLeft} dia(s)**. Sem renovação, a publicação automática de pins para de funcionar.`,
+    '',
+    '**Renovar (≈2 minutos):**',
+    '```powershell',
+    'cd "C:\\Users\\Ed Flávio\\Desktop\\CLAUDE-CODE\\FINMOOVI\\blog-finmoovi"',
+    '$env:PINTEREST_CLIENT_SECRET = "<App secret — portal Pinterest, botão Gerenciar>"',
+    'node scripts/pinterest-auth.js',
+    '```',
+    '1. Abrir a URL que o script imprimir (logado na conta da marca) → **Aprovar**;',
+    '2. Colar o comando `gh secret set PINTEREST_REFRESH_TOKEN ...` que o script imprime pronto;',
+    '3. Fechar esta issue.',
+    '',
+    'Alternativa: abrir o Claude Code na pasta FINMOOVI e pedir "renove o token do Pinterest".',
+    'Guia completo: `docs/HISTORICO-IMPLEMENTACAO.md` (seção Pinterest).',
+  ].join('\n');
+
+  const res = await fetch(`https://api.github.com/repos/${repo}/issues`, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({ title, body, labels: ['manutencao'] }),
+  });
+  if (res.ok) console.log('🔔 Issue de renovação do token aberta (e-mail a caminho).');
+  else console.error(`Aviso: falha ao abrir issue de renovação (${res.status}).`);
+}
+
+/**
  * Troca o refresh token por um access token novo (access tokens do Pinterest
  * expiram em ~30 dias — o refresh garante que a automação nunca morra).
  */
@@ -170,6 +239,12 @@ async function main() {
 
   // Preferencial: refresh token → access token fresco a cada execução
   if (PINTEREST_REFRESH_TOKEN && PINTEREST_CLIENT_ID && PINTEREST_CLIENT_SECRET) {
+    // Lembrete automático: issue no GitHub (→ e-mail) quando faltar ≤7 dias
+    const daysLeft = refreshTokenDaysLeft();
+    if (daysLeft !== null) {
+      console.log(`🗓️  Refresh token válido por mais ~${daysLeft} dia(s).`);
+      if (daysLeft <= 7) await openRenewalIssueIfNeeded(daysLeft);
+    }
     try {
       PINTEREST_ACCESS_TOKEN = await refreshAccessToken();
       console.log('🔑 Access token renovado via refresh token.');

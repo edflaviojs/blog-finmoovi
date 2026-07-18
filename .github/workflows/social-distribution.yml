@@ -8,6 +8,8 @@ on:
 
 permissions:
   contents: write
+  # Lembrete automático de renovação do refresh token do Pinterest (issue → e-mail)
+  issues: write
 
 concurrency:
   group: ${{ github.workflow }}
@@ -41,6 +43,8 @@ jobs:
           # Fallback legado (token estático, expira em ~30 dias)
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
           PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
+          # Para abrir a issue de lembrete de renovação do token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node --import tsx scripts/pinterest-publish.js
 
       - name: Run Social Bookmarking

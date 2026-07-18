@@ -224,3 +224,34 @@ npm run preview  # preview do build
 ### APIs em uso:
 - **AwesomeAPI** (cotações): `https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-USD` — gratuita, sem chave
 - **Kie.AI** (conteúdo): precisa de API key nos secrets do GitHub
+- **Pinterest API v5** (distribuição de pins): ver seção abaixo
+
+---
+
+## 📌 Pinterest — Automação de Pins (configurada em 2026-07-18)
+
+**App:** "FinMoovi Blog Pin Automation" (ID 1591124) · **Board:** "Finanças Pessoais" (`1105282002239944961`, público)
+**Status:** OAuth + secrets + fluxo de refresh 100% prontos; **upgrade Trial → Standard SOLICITADO em 18/07** (vídeo demo enviado). Enquanto Trial, o Pinterest bloqueia pins em produção (403 code 29) e os runs agendados falham de forma limpa (0/3, tracking intacto). **Quando o Standard for aprovado, NADA precisa ser configurado** — o próximo run agendado publica sozinho.
+
+**Como funciona:** `social-distribution.yml` roda seg/qua/sex 15h UTC → `scripts/pinterest-publish.js` pega posts pt dos últimos 14 dias com imagem, monta pin (capa + título + hashtags + link) e publica até 3/run no board. Tracking: `.github/data/pinterest-published.json`.
+
+**Secrets no repo:** `PINTEREST_CLIENT_ID` (1591124) · `PINTEREST_CLIENT_SECRET` · `PINTEREST_REFRESH_TOKEN` · `PINTEREST_BOARD_ID`. O access token é renovado automaticamente a cada execução via refresh token.
+
+### 🔄 RENOVAÇÃO DO REFRESH TOKEN (a cada ~60 dias — próximo vencimento ≈ 16/09/2026)
+
+O refresh token do Pinterest expira em ~60 dias. Sinais de vencimento: e-mail do GitHub "Run failed: Social Distribution" + log do passo "Run Pinterest Publish" dizendo `Refresh do token falhou`. Há também um evento no Google Calendar de lembrete alguns dias antes. **Passo a passo (≈2 minutos):**
+
+1. Abrir o PowerShell na pasta do blog:
+   ```powershell
+   cd "C:\Users\Ed Flávio\Desktop\CLAUDE-CODE\FINMOOVI\blog-finmoovi"
+   $env:PINTEREST_CLIENT_SECRET = "<App secret — portal Pinterest, botão Gerenciar>"
+   node scripts/pinterest-auth.js
+   ```
+2. Abrir no navegador a URL que o script imprimir (logado na conta Pinterest da marca) → **Aprovar**.
+3. O script imprime o `refresh_token` novo e o comando pronto — colar no terminal:
+   ```powershell
+   gh secret set PINTEREST_REFRESH_TOKEN --repo edflaviojs/blog-finmoovi --body "<refresh_token novo>"
+   ```
+4. (Opcional) Testar: `gh workflow run social-distribution.yml` e conferir o log.
+
+Obs.: o Redirect URI `http://localhost:8085/callback` já está cadastrado no app — não precisa mexer no portal. Se pedir o passo a passo ao Claude, ele conhece o fluxo (memória `project_blog_pinterest_api`).
