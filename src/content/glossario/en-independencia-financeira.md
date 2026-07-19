@@ -1,7 +1,6 @@
 ---
 term: "Financial Independence"
-image: "/images/glossario/en-independencia-financeira.svg"
-imageAlt: "Colorful pie chart on black background with gray, purple, teal, and dark sections."
+image: "/images/glossario/en-independencia-financeira.webp"
 definition: "The state where your passive income covers all your living expenses without needing to work."
 category: "basico"
 locale: "en"

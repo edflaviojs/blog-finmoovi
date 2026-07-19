@@ -1,7 +1,6 @@
 ---
 term: "Liquidity"
-image: "/images/glossario/en-liquidez.svg"
-imageAlt: "A bar graph on a black background with teal and red gradient bars."
+image: "/images/glossario/en-liquidez.webp"
 definition: "The ease and speed with which an asset can be converted into cash without significant loss of value."
 category: "investimentos"
 locale: "en"

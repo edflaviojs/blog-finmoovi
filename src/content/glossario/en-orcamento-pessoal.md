@@ -1,7 +1,6 @@
 ---
 term: "Personal Budget"
-image: "/images/glossario/en-orcamento-pessoal.svg"
-imageAlt: "Colorful pie chart on black background divided into four sections."
+image: "/images/glossario/en-orcamento-pessoal.webp"
 definition: "A financial plan that organizes income and expenses, helping you understand where your money goes and how to save more."
 category: "basico"
 locale: "en"
