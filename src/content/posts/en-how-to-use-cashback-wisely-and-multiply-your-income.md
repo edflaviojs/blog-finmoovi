@@ -22,7 +22,7 @@ seo:
 
 When you pay for a snack that costs R$ 35.00 with a card that gives 2% back, the return looks tiny – R$ 0.70. But if you treat that amount as extra income, it can become a genuine boost to your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). The idea isn’t to expect cashback to cover everything at once, but to make every cent returned work for you.
 
-## Choose the Right Card and Combine Benefits
+## Choose the Right Card and Combine [Benefits](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Not every card offers the same return rate. Some give 1.5% on all purchases, others give 5% on specific categories (like supermarkets or gas stations) and 1% on the rest. The key is to align the card with your spending pattern.
 
@@ -80,4 +80,4 @@ These numbers give you clarity to adjust the strategy over time.
 The first action doesn’t need to be complex: choose a card that offers the best cashback for your spending pattern, open a separate account to receive the [money](/en/posts/en-avoid-impulse-purchases) back, and record everything in your finance app. In less than 30 days you’ll already see the difference in your budget.
 
 ---
-**The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover where your money is really going.**
+**The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/en-creating-an-emergency-fund) is really going.**

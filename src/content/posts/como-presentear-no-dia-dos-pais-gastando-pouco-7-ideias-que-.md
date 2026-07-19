@@ -58,7 +58,7 @@ O **cashback inteligente** pode devolver até 12 % do valor gasto em lojas par
 
 1. **Escolha um app de cashback** ([FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) tem integração com parceiros que oferecem cashback).
 2. **Ative cupons** antes de finalizar a compra – sites como *Cuponomia* ou *Méliuz* costumam ter códigos válidos.
-3. **Pague com cartão de crédito** que ofereça cashback extra (até 1 % adicional).
+3. **Pague com [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)** que ofereça cashback extra (até 1 % adicional).
 
 > **Resultado:** um presente de R$ 120 pode gerar até R$ 14 de volta, reduzindo o custo efetivo.
 
@@ -79,7 +79,7 @@ O **cashback inteligente** pode devolver até 12 % do valor gasto em lojas par
 ## 5️⃣ Planejamento antecipado: a estratégia que salva seu bolso
 
 ### 5.1. **Comece a economizar já em janeiro**
-O IBGE aponta que a renda média mensal dos trabalhadores brasileiros em 2023 foi de **R$ 2.600**. Se você reservar R$ 10 por semana, já terá R$ 40 em março – dinheiro que pode ser usado como parte do presente.
+O IBGE aponta que a renda média mensal dos trabalhadores brasileiros em 2023 foi de **R$ 2.600**. Se você reservar R$ 10 por semana, já terá R$ 40 em março – [dinheiro](/posts/cashback-inteligente) que pode ser usado como parte do presente.
 
 ![5️⃣ Planejamento antecipado: a estratégia que salva seu bolso](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--6.webp)
 

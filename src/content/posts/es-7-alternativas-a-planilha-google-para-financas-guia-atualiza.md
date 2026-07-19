@@ -31,7 +31,7 @@ Además, la mayoría de las hojas no ofrece **seguridad** robusta (cualquier per
 ## 1. [Mobills](/es/posts/es-5-alternativas-ao-mobills-em-2026) – El clásico brasileño
 
 **Descripción**  
-Mobills es uno de los aplicativos más antiguos de Brasil para gestión de [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). En dos frases, ofrece control de gastos, planificación de presupuesto y visualización de metas, todo en una interfaz colorida e intuitiva.
+Mobills es uno de los aplicativos más antiguos de Brasil para gestión de [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). En dos frases, ofrece control de gastos, planificación de [presupuesto](/es/posts/es-como-crear-presupuesto-personal) y visualización de metas, todo en una interfaz colorida e intuitiva.
 
 ![1. Mobills – O clássico brasileiro](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-2.webp)
 
@@ -118,7 +118,7 @@ YNAB sigue la filosofía de “dar a cada peso un trabajo”, incentivando al us
 **Pros**
 - Metodología comprobada que ayuda a cambiar la relación con el [dinero](/es/posts/es-cashback-inteligente) y reducir deudas.
 - Sincroniza con bancos vía importación de archivos CSV, manteniendo la privacidad de los datos.
-- Informes detallados de “dónde estuvo tu dinero” que facilitan la revisión mensual.
+- Informes detallados de “dónde estuvo tu [dinero](/es/posts/es-como-crear-una-reserva-de-emergencia)” que facilitan la revisión mensual.
 
 **Contras**
 - No posee captura por voz ni recursos de IA para categorización automática; todo depende de la entrada manual.

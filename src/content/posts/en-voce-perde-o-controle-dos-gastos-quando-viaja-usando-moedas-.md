@@ -44,7 +44,7 @@ The cool thing is that [FinMoovi](/en/posts/en-como-presentear-no-dia-dos-pais-g
 ## Step‑by‑step: how to use the multi‑currency feature in practice
 
 ### 1. Set your base currency  
-When you open FinMoovi for the first time, choose the real (R$) as the default currency. You can change it anytime in the settings, but keeping reais makes it easier to track your family budget.
+When you open FinMoovi for the first time, choose the real (R$) as the default currency. You can change it anytime in the settings, but keeping reais makes it easier to track your family [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas).
 
 ![Passo a passo: como usar o recurso multi‑moeda na prática](/images/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas--4.webp)
 
@@ -55,7 +55,7 @@ Set up categories like “Airport,” “Restaurants,” “Souvenir Reminders,�
 When you buy that ticket in Paris, open the app, tap “+ New Expense,” select the “Leisure” category and, in the amount field, type **30**. Right below, there’s a dropdown where you choose **Euro (EUR)**. FinMoovi pulls the day’s rate (for example, 1 EUR = R$ 5.40) and shows the converted value automatically (**R$ 162.00**). You can also add a note like “Louvre Museum.”
 
 ### 4. Save and view the summary  
-After saving, the expense appears on your main dashboard. At the top you see the total spent in reais, but when you open the “Details by Currency” tab you’ll notice **€ 30**, **£ 12** and **R$ 80** listed separately, all converted. This makes it easy to see how each currency is impacting your budget.
+After saving, the expense appears on your main dashboard. At the top you see the total spent in reais, but when you open the “Details by Currency” tab you’ll notice **€ 30**, **£ 12** and **R$ 80** listed separately, all converted. This makes it easy to see how each currency is impacting your [budget](/en/posts/en-organize-couple-finances).
 
 ### 5. Adjust the limit if needed  
 If you realize you’ve already spent a lot on food in London, just edit the “Food” category limit to avoid surprises on the final bill. The app will send notifications when you’re close to the ceiling.

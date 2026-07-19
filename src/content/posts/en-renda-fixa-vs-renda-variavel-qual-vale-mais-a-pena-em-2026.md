@@ -35,7 +35,7 @@ Fixed income includes investments where the remuneration (interest or yield) is 
 | CDB (Bank Deposit Certificate) | Commercial banks | 108 % of CDI (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-garantia-fgc) up to R$ 250 k per institution |
 | Treasury Direct – Selic | Federal government | 12.8 % a year (Selic 2026) | Daily liquidity, low sovereign risk |
 | LCIs/LCAs (Real Estate/Agricultural Credit Letters) | Banks, brokerages | 107 % of CDI (≈ 13 % a year) | IR‑exempt, FGC protection |
-| Corporate Debentures | Brokerages | 9 %‑12 % a year (depending on rating) | Credit risk of the issuing company |
+| Corporate [Debentures](/en/glossario/en-debentures) | Brokerages | 9 %‑12 % a year (depending on rating) | Credit risk of the issuing company |
 
 *Rates based on data from the Central Bank and Treasury Direct up to December 2025.
 
@@ -62,7 +62,7 @@ Variable income gathers assets whose return **is not guaranteed** and depends on
 
 | Product | Where to Find | Average Return 2024‑2025* | Features |
 |---------|----------------|---------------------------|----------|
-| Listed company stocks | Stock exchange (B3) | 12 %‑20 % a year (Ibovespa index) | High volatility, occasional dividends |
+| Listed company stocks | Stock exchange (B3) | 12 %‑20 % a year (Ibovespa index) | High [volatility](/en/glossario/en-volatilidade), occasional [dividends](/en/glossario/en-dividendos) |
 | ETFs (Index Funds) | Brokerages | 11 %‑18 % a year (e.g., BOVA11) | Automatic diversification, low management fee |
 | Real Estate Investment Funds (FIIs) | Brokerages | 7 %‑9 % a year (monthly yield) | Rental income, vacancy risk |
 | Cryptocurrencies | Exchanges | Varies widely (e.g., BTC 2024: +30 % a year) | Extremely volatile, regulatory risk |
@@ -107,7 +107,7 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 
 ## When to Choose Fixed Income
 
-1. **Short‑term goal** – If you need the money within up to 2 years (e.g., [emergency fund](/en/glossario/en-reserva-de-emergencia), vacation), fixed income ensures the capital stays preserved.  
+1. **Short‑term goal** – If you need the money within up to 2 years (e.g., [emergency fund](/en/glossario/en-reserva-de-emergencia), [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)), fixed income ensures the capital stays preserved.  
 2. **Conservative profile** – Those who can’t tolerate seeing their investment value swing prefer the safety of a CDB or Treasury.  
 3. **High‑interest environment** – When the Selic is above 12 % a year, fixed income already offers very attractive returns.  
 4. **Need for income** – LCIs/LCAs and some debentures pay monthly interest, generating a stable cash flow.
@@ -145,7 +145,7 @@ There is no absolute “best”; the choice depends **on your profile, timeline,
 
 On the other hand, if you have **plenty of time**, can handle the market’s roller‑coaster, and want returns that comfortably beat inflation, **variable income** can be the main growth lever. The most balanced recommendation is usually to **mix both worlds**: keep a safe slice (fixed income) and allocate the rest to higher‑return opportunities (variable income).
 
-Regardless of the choice, **management and monitoring** are essential. That’s where **FinMoovi** comes in as your ally: the app lets you log each investment, track performance in real time, set short‑ and long‑term goals, and receive alerts when your allocation drifts off plan. That way, you stay in control without needing to be a market analyst.
+Regardless of the choice, **management and monitoring** are essential. That’s where **[FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** comes in as your ally: the app lets you log each investment, track performance in real time, set short‑ and long‑term goals, and receive alerts when your allocation drifts off plan. That way, you stay in control without needing to be a market analyst.
 
 > **Practical tip:** Start with 70 % in fixed income and 30 % in variable income. As you gain confidence and observe volatility, adjust the proportion until you find the sweet spot between safety and upside potential.
 

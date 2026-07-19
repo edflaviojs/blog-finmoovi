@@ -30,7 +30,7 @@ Before you start browsing the internet, set a ceiling. Use the **30 %** rule: 
 
 ![1️⃣ Set a spending limit first](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--2.webp)
 
-> **Practical tip:** Open **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)**, log your salary, fixed expenses and create a “Father’s Day” category. Set a maximum amount (e.g., R$ 150) and let the app warn you when you’re close to the limit.
+> **Practical tip:** Open **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)**, log your salary, fixed [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) and create a “Father’s Day” category. Set a maximum amount (e.g., R$ 150) and let the app warn you when you’re close to the limit.
 
 ## 2️⃣ Gift ideas under R$ 50
 
@@ -54,7 +54,7 @@ Smart **cashback** can return up to 12 % of the amount spent at partner stores
 
 1. **Choose a cashback app** ([FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) integrates with partners that offer cashback).  
 2. **Activate coupons** before checkout – sites like *Cuponomia* or *Méliuz* usually have valid codes.  
-3. **Pay with a credit card** that offers extra cashback (up to 1 % additional).
+3. **Pay with a [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)** that offers extra cashback (up to 1 % additional).
 
 > **Result:** a R$ 120 gift can generate up to R$ 14 back, lowering the effective cost.
 

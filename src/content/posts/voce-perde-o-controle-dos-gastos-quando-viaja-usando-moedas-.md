@@ -19,7 +19,7 @@ seo:
 
 ## Você já se sentiu perdido ao tentar somar despesas em moedas diferentes?
 
-Eu te entendo. Quem nunca chegou em casa depois de uma viagem à Europa e ficou encucado tentando descobrir quanto realmente gastou? Você compra um souvenir em euros, paga o jantar em dólares no aeroporto e, ao voltar, ainda tem aquela conta de táxi em reais. Quando abre a planilha, vê uma coluna cheia de “R$ 0,00” ao lado de “€ 0,00” e “US$ 0,00” e percebe que nunca mais vai conseguir fechar o mês sem um cálculo maluco.
+Eu te entendo. Quem nunca chegou em casa depois de uma viagem à Europa e ficou encucado tentando descobrir quanto realmente gastou? Você compra um souvenir em euros, paga o jantar em dólares no aeroporto e, ao voltar, ainda tem aquela conta de táxi em reais. Quando abre a [planilha](/posts/migrando-da-planilha-para-um-app-financeiro), vê uma coluna cheia de “R$ 0,00” ao lado de “€ 0,00” e “US$ 0,00” e percebe que nunca mais vai conseguir fechar o mês sem um cálculo maluco.
 
 Esse cenário é mais comum do que imaginamos. O problema não está na falta de vontade, mas na dificuldade de lidar com taxas de [câmbio](/glossario/cambio), conversões manuais e o medo de errar nos números.
 
@@ -81,7 +81,7 @@ Esses números são baseados em relatos de usuários do FinMoovi que compararam 
 
 ## Dados que reforçam a importância de um controle preciso
 
-- **Câmbio flutuante:** O Banco Central do Brasil registra variações diárias de até **5 %** em relação ao dólar e ao euro, o que pode impactar significativamente o valor final das despesas quando convertidas após a viagem. (Fonte: [Banco Central do Brasil](https://www.bcb.gov.br))
+- **Câmbio flutuante:** O Banco Central do Brasil registra variações diárias de até **5 %** em relação ao [dólar](/posts/cotacoes-semana-1-junho-2026) e ao euro, o que pode impactar significativamente o valor final das despesas quando convertidas após a viagem. (Fonte: [Banco Central do Brasil](https://www.bcb.gov.br))
 - **Gastos inesperados:** Segundo a [Investopedia](https://www.investopedia.com), viajantes que não monitoram suas despesas em tempo real tendem a exceder o orçamento em até **30 %**, principalmente por compras impulsivas em moeda estrangeira.
 
 ![Dados que reforçam a importância de um controle preciso](/images/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas--6.webp)

@@ -75,7 +75,7 @@ El **cashback inteligente** puede devolver hasta el 12 % del valor gastado en 
 ## 5️⃣ Planificación anticipada: la estrategia que salva tu bolsillo
 
 ### 5.1. **Empieza a ahorrar ya en enero**
-El IBGE indica que el ingreso medio mensual de los trabajadores brasileños en 2023 fue de **2.600 R$**. Si reservas 10 R$ por semana, ya tendrás 40 R$ en marzo – dinero que puedes usar como parte del regalo.
+El IBGE indica que el ingreso medio mensual de los trabajadores brasileños en 2023 fue de **2.600 R$**. Si reservas 10 R$ por semana, ya tendrás 40 R$ en marzo – [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) que puedes usar como parte del regalo.
 
 ![5️⃣ Planificación anticipada: la estrategia que salva tu bolsillo](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--6.webp)
 
@@ -85,7 +85,7 @@ Crea una lista en FinMoovi con los ítems que te gustaría dar a papá. Cada vez
 ### 5.3. **Divide el valor en cuotas más pequeñas**
 Si optas por un regalo más caro (p.ej.: smartwatch), verifica si la tienda ofrece **cuotas sin intereses**. Pero atención: registra cada cuota en FinMoovi para no olvidar pagar y acabar gastando más el mes siguiente.
 
-## 6️⃣ Consejos finales para no entrar en números rojos
+## 6️⃣ [Consejos](/es/posts/es-7-errores-financieros-principiante) finales para no entrar en números rojos
 
 | # | Consejo | ¿Por qué? |
 |---|---------|-----------|

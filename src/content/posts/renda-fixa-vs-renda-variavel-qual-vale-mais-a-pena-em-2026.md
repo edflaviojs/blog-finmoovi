@@ -20,7 +20,7 @@ seo:
 
 ## Introdução
 
-Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro salário, a primeira grande dúvida costuma ser: **onde colocar o dinheiro?** A resposta não é única. Em 2026, as duas categorias mais faladas são **renda fixa** e **renda variável**. Cada uma tem vantagens, riscos e momentos ideais de uso. Neste artigo, vamos analisar os dois lados da moeda, comparar critérios importantes e ajudar você a decidir qual combina mais com seu objetivo, tolerância ao risco e horizonte de tempo. Ah, e ao final vamos indicar uma ferramenta prática – o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – que facilita o acompanhamento de qualquer escolha que você faça.
+Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro salário, a primeira grande dúvida costuma ser: **onde colocar o [dinheiro](/posts/cashback-inteligente)?** A resposta não é única. Em 2026, as duas categorias mais faladas são **renda fixa** e **[renda variável](/glossario/renda-variavel)**. Cada uma tem vantagens, riscos e momentos ideais de uso. Neste artigo, vamos analisar os dois lados da moeda, comparar critérios importantes e ajudar você a decidir qual combina mais com seu objetivo, tolerância ao risco e horizonte de tempo. Ah, e ao final vamos indicar uma ferramenta prática – o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – que facilita o acompanhamento de qualquer escolha que você faça.
 
 ---
 
@@ -35,8 +35,8 @@ A renda fixa engloba investimentos nos quais a remuneração (juros ou rendiment
 | Produto | Onde encontrar | Taxa média 2024‑2025* | Características |
 |---------|----------------|-----------------------|-----------------|
 | CDB (Certificado de Depósito Bancário) | Bancos comerciais | 108 % do CDI (aprox. 13,2% a.a.) | Garantia do FGC até R$ 250 mil por instituição |
-| Tesouro Direto – Selic | Governo Federal | 12,8 % a.a. (Tesouro Selic 2026) | Liquidez diária, risco soberano baixo |
-| LCIs/LCAs (Letras de Crédito Imobiliário/Agrícola) | Bancos, corretoras | 107 % do CDI (≈ 13 % a.a.) | Isento de IR, FGC protege |
+| [Tesouro Direto](/glossario/tesouro-direto) – Selic | Governo Federal | 12,8 % a.a. (Tesouro Selic 2026) | Liquidez diária, risco soberano baixo |
+| LCIs/LCAs (Letras de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário/Agrícola) | Bancos, corretoras | 107 % do CDI (≈ 13 % a.a.) | Isento de IR, FGC protege |
 | Debêntures de empresas | Corretoras | 9 %‑12 % a.a. (dependendo rating) | Risco de crédito da empresa emissora |
 
 *Taxas baseadas em dados do Banco Central e do Tesouro Direto até dezembro de 2025.
@@ -65,7 +65,7 @@ A renda variável reúne ativos cujo retorno **não é garantido** e depende da 
 | Produto | Onde encontrar | Rentabilidade média 2024‑2025* | Características |
 |---------|----------------|-------------------------------|-----------------|
 | Ações de empresas listadas | [Bolsa de Valores](/glossario/bolsa-de-valores) (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta volatilidade, dividendos eventuais |
-| ETFs (Fundos de Índice) | Corretoras | 11 %‑18 % a.a. (ex.: BOVA11) | Diversificação automática, taxa de administração baixa |
+| ETFs (Fundos de Índice) | Corretoras | 11 %‑18 % a.a. (ex.: BOVA11) | [Diversificação](/glossario/diversificacao) automática, taxa de administração baixa |
 | Fundos de Investimento Imobiliário (FIIs) | Corretoras | 7 %‑9 % a.a. (rendimento mensal) | Recebimento de aluguéis, risco de vacância |
 | Criptomoedas | Exchanges | Varia muito (ex.: BTC 2024: +30 % a.a.) | Altíssima volatilidade, risco regulatório |
 

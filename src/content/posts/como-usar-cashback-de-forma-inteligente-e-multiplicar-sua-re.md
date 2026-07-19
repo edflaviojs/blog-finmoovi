@@ -22,7 +22,7 @@ seo:
 
 Quando você paga um lanche de R$ 35,00 com um cartão que devolve 2% de volta, o retorno parece pequeno – R$ 0,70. Mas se esse [valor](/glossario/valor) for tratado como renda extra, ele pode virar um verdadeiro reforço no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). A ideia não é esperar que o cashback cubra tudo de uma vez, mas fazer com que cada centavo devolvido trabalhe a seu favor.
 
-## Escolha o cartão certo e combine benefícios
+## Escolha o cartão certo e combine [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Nem todo cartão oferece a mesma [taxa](/glossario/taxa) de retorno. Alguns dão 1,5% em todas as compras, outros dão 5% em categorias específicas (como supermercados ou postos de gasolina) e 1% no resto. A chave está em alinhar o cartão ao seu padrão de consumo.
 
@@ -83,7 +83,7 @@ Esses números dão clareza para ajustar a estratégia ao longo do tempo.
 
 ## Comece hoje
 
-A primeira ação não precisa ser complexa: escolha um cartão que ofereça o melhor cashback para o seu padrão de consumo, abra uma conta separada para receber o dinheiro de volta e registre tudo no seu app de finanças. Em menos de 30 dias, você já verá a diferença no seu orçamento.
+A primeira ação não precisa ser complexa: escolha um cartão que ofereça o melhor cashback para o seu padrão de consumo, abra uma conta separada para receber o dinheiro de volta e registre tudo no seu app de finanças. Em menos de 30 dias, você já verá a diferença no seu [orçamento](/posts/como-criar-orcamento-pessoal).
 
 ---
 **O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu dinheiro está indo de verdade.**

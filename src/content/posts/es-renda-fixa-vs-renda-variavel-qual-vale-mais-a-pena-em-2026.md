@@ -20,7 +20,7 @@ seo:
 
 ## Introducción  
 
-Si acabas de abrir una cuenta en un banco o de recibir tu primer sueldo, la primera gran duda suele ser: **¿dónde colocar el dinero?** No hay una única respuesta. En 2026, las dos categorías más comentadas son **renta fija** y **[renta variable](/es/glossario/es-renda-variavel)**. Cada una tiene ventajas, riesgos y momentos ideales de uso. En este artículo analizaremos ambos lados de la moneda, compararemos criterios importantes y te ayudaremos a decidir cuál combina mejor con tu objetivo, tolerancia al riesgo y horizonte de tiempo. Ah, y al final te recomendaremos una herramienta práctica – el **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** – que facilita el seguimiento de cualquier elección que hagas.  
+Si acabas de abrir una cuenta en un banco o de recibir tu primer sueldo, la primera gran duda suele ser: **¿dónde colocar el [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado)?** No hay una única respuesta. En 2026, las dos categorías más comentadas son **renta fija** y **[renta variable](/es/glossario/es-renda-variavel)**. Cada una tiene ventajas, riesgos y momentos ideales de uso. En este artículo analizaremos ambos lados de la moneda, compararemos criterios importantes y te ayudaremos a decidir cuál combina mejor con tu objetivo, tolerancia al riesgo y horizonte de tiempo. Ah, y al final te recomendaremos una herramienta práctica – el **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** – que facilita el seguimiento de cualquier elección que hagas.  
 
 ---  
 
@@ -35,11 +35,11 @@ La renta fija engloba inversiones en las que la remuneración (interés o rendim
 | CDB (Certificado de Depósito Bancario) | Bancos comerciales | 108 % del CDI (aprox. 13,2 % a.a.) | Garantía del FGC hasta R$ 250 mil por institución |
 | Tesoro Directo – Selic | Gobierno Federal | 12,8 % a.a. (Tesoro Selic 2026) | Liquidez diaria, riesgo soberano bajo |
 | LCIs/LCAs (Letras de Crédito Inmobiliario/Agrícola) | Bancos, corredoras | 107 % del CDI (≈ 13 % a.a.) | Exento de IR, FGC protege |
-| Debentures de empresas | Corredoras | 9 %‑12 % a.a. (dependiendo del rating) | Riesgo de crédito de la empresa emisora |
+| [Debentures](/es/glossario/es-debentures) de empresas | Corredoras | 9 %‑12 % a.a. (dependiendo del rating) | Riesgo de crédito de la empresa emisora |
 
 *Basado en datos del Banco Central y del Tesoro Directo hasta diciembre de 2025.  
 
-La lógica es simple: prestas dinero (o compras títulos) y recibes intereses a lo largo del tiempo. El **principal** (valor invertido) suele devolverse al vencimiento o puede rescatarse antes, según el producto. Como la remuneración está vinculada a índices como el CDI o la Selic, la variación de la tasa de interés en el país afecta directamente el retorno.  
+La lógica es simple: prestas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) (o compras títulos) y recibes intereses a lo largo del tiempo. El **principal** (valor invertido) suele devolverse al vencimiento o puede rescatarse antes, según el producto. Como la remuneración está vinculada a índices como el CDI o la Selic, la variación de la tasa de interés en el país afecta directamente el retorno.  
 
 ### Ventajas de la renta fija  
 
@@ -62,7 +62,7 @@ La renta variable reúne activos cuyo retorno **no está garantizado** y depende
 
 | Producto | Dónde encontrar | Rentabilidad media 2024‑2025* | Características |
 |----------|----------------|-------------------------------|-----------------|
-| Acciones de empresas listadas | [Bolsa de Valores](/es/glossario/es-bolsa-de-valores) (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta volatilidad, dividendos eventuales |
+| Acciones de empresas listadas | [Bolsa de Valores](/es/glossario/es-bolsa-de-valores) (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta [volatilidad](/es/glossario/es-volatilidade), [dividendos](/es/glossario/es-dividendos) eventuales |
 | ETFs (Fondos de Índice) | Corredoras | 11 %‑18 % a.a. (ej.: BOVA11) | Diversificación automática, baja comisión de gestión |
 | Fondos de Inversión Inmobiliaria (FIIs) | Corredoras | 7 %‑9 % a.a. (rendimiento mensual) | Recepción de alquileres, riesgo de vacancia |
 | Criptomonedas | Exchanges | Varía mucho (ej.: BTC 2024: +30 % a.a.) | Altísima volatilidad, riesgo regulatorio |
