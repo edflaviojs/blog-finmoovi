@@ -318,5 +318,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "cotacoes-semana-3-julho-2026",
+    "title": "Resumo Semanal: Dólar a R$ 5.11 — Semana 3 de julho",
+    "url": "https://blog.finmoovi.com/posts/cotacoes-semana-3-julho-2026",
+    "submittedAt": "2026-07-20T16:19:45.441Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1796332527
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "tecnica-dos-envelopes-digitais-guia-pratico-para-2024",
+    "title": "Técnica dos Envelopes Digitais: Guia Prático para 2024",
+    "url": "https://blog.finmoovi.com/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024",
+    "submittedAt": "2026-07-20T16:19:46.471Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1796332530
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
