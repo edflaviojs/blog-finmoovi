@@ -1,0 +1,58 @@
+{
+  "slug": "juros-compostos",
+  "term": "Juros Compostos",
+  "category": "basico",
+  "keyword": "Juros Compostos",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você acha que juros compostos é papo de rico, olha esse número: R$ 500 por mês viram 3,2 milhões. Presta atenção.",
+      "onScreenText": "R$ 500 → R$ 3,2 mi",
+      "visual": { "type": "number", "note": "R$ 3.200.000 conta subindo de 0, brilho ciano→magenta" },
+      "durationSec": 5
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Juros compostos é juros sobre juros. R$ 10 mil a 10% ao ano não crescem em linha reta: em 30 anos viram 174 mil.",
+      "onScreenText": "R$ 10 mil → R$ 174 mil",
+      "visual": { "type": "chart", "note": "curva exponencial vs reta dos juros simples, 30 anos no eixo X" },
+      "durationSec": 13
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Quer saber quando seu dinheiro dobra? Regra dos 72: divide 72 pela taxa. A 12% ao ano, dobra em 6 anos.",
+      "onScreenText": "72 ÷ 12 = 6 anos",
+      "visual": { "type": "formula", "note": "72 ÷ taxa = anos; números encaixando animados" },
+      "durationSec": 11
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "E o tempo é tudo. Começar aos 25 dá 3,2 milhões; esperar até os 35 derruba pra 1,1 milhão. Dinheiro sem controle é dinheiro dos outros.",
+      "onScreenText": "25 anos → 3× mais",
+      "visual": { "type": "chart", "note": "duas barras: idade 25 vs 35, a de 25 quase o triplo" },
+      "durationSec": 13
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Roda essa conta com os seus números na calculadora grátis do FinMoovi — link na descrição.",
+      "onScreenText": "Calculadora grátis",
+      "visual": { "type": "statement", "note": "ícone do app + seta pra descrição" },
+      "durationSec": 6
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Agora imagina esse mesmo efeito trabalhando contra você numa dívida do cartão.",
+      "onScreenText": "E na dívida?",
+      "visual": { "type": "statement", "note": "curva vermelha subindo, corte seco" },
+      "durationSec": 4
+    }
+  ],
+  "cta": { "text": "Calculadora de juros compostos grátis no FinMoovi", "target": "blog" },
+  "totalDurationSec": 52
+}
