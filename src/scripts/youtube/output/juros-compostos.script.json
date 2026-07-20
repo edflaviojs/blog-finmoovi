@@ -3,6 +3,7 @@
   "term": "Juros Compostos",
   "category": "basico",
   "keyword": "Juros Compostos",
+  "nextVideoTitle": "Dívida do cartão",
   "scenes": [
     {
       "id": 1,
@@ -39,18 +40,18 @@
     {
       "id": 5,
       "role": "cta",
-      "narration": "Roda essa conta com os seus números na calculadora grátis do FinMoovi — link na descrição.",
-      "onScreenText": "Calculadora grátis",
-      "visual": { "type": "statement", "note": "ícone do app + seta pra descrição" },
+      "narration": "Roda essa conta com os seus números na calculadora grátis do FinMoovi.",
+      "onScreenText": "Roda com os SEUS números",
+      "visual": { "type": "statement", "note": "título + pill 'Link na descrição' + seta descendo" },
       "durationSec": 6
     },
     {
       "id": 6,
       "role": "outro",
-      "narration": "Agora imagina esse mesmo efeito trabalhando contra você numa dívida do cartão.",
-      "onScreenText": "E na dívida?",
-      "visual": { "type": "statement", "note": "curva vermelha subindo, corte seco" },
-      "durationSec": 4
+      "narration": "E esse mesmo efeito trabalha contra você na dívida do cartão.",
+      "onScreenText": "Isso trabalha CONTRA você na dívida",
+      "visual": { "type": "statement", "note": "card do próximo vídeo + seta apontando" },
+      "durationSec": 5
     }
   ],
   "cta": { "text": "Calculadora de juros compostos grátis no FinMoovi", "target": "blog" },
