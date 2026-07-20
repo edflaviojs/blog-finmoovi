@@ -23,3 +23,6 @@ Thumbs.db
 # Pagefind
 public/pagefind/
 .wrangler/
+
+# Automação Playwright do app ABANDONADA — contém arquivo sensível (passphrase). NUNCA commitar.
+app-capture/

@@ -4,7 +4,10 @@ import { Short, ShortScript, totalFrames } from './Short';
 import { AppBrollLong, AppBrollShort } from './AppBroll';
 import { AppScrollLong, AppScrollShort } from './AppScroll';
 import { Cards3DLong, Cards3DShort } from './Cards3D';
+import { CreditCards3DLong, CreditCards3DShort } from './CreditCards3D';
+import { CartoesCountUpLong, CartoesCountUpShort } from './CartoesCountUp';
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
+import { cartoes } from './broll/cartoes';
 import roteiro from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
 const FPS = 30;
@@ -74,6 +77,93 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="CreditCards3DShort"
+        component={CreditCards3DShort}
+        durationInFrames={210}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CreditCards3DLong"
+        component={CreditCards3DLong}
+        durationInFrames={210}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="CartoesCountUpShort"
+        component={CartoesCountUpShort}
+        durationInFrames={210}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CartoesCountUpLong"
+        component={CartoesCountUpLong}
+        durationInFrames={210}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      {/* Cartões nos estilos FOOTAGE (mesmos componentes, trimBefore da tela de Cartões) */}
+      <Composition
+        id="CartoesFrameShort"
+        component={AppBrollShort}
+        durationInFrames={240}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: cartoes.footageFrame }}
+      />
+      <Composition
+        id="CartoesFrameLong"
+        component={AppBrollLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: cartoes.footageFrame }}
+      />
+      <Composition
+        id="CartoesScrollShort"
+        component={AppScrollShort}
+        durationInFrames={360}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: cartoes.footageFrame }}
+      />
+      <Composition
+        id="CartoesScrollLong"
+        component={AppScrollLong}
+        durationInFrames={360}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: cartoes.footageFrame }}
+      />
+      <Composition
+        id="CartoesScreen3DShort"
+        component={AppScreen3DShort}
+        durationInFrames={240}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: cartoes.footageFrame }}
+      />
+      <Composition
+        id="CartoesScreen3DLong"
+        component={AppScreen3DLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: cartoes.footageFrame }}
       />
       <Composition
         id="AppScreen3DShort"

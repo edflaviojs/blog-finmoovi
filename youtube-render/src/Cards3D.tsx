@@ -1,20 +1,12 @@
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill } from 'remotion';
 import { Background } from './scenes';
-import { BRAND, DISPLAY, BODY, gradientText } from './theme';
+import { BRAND, DISPLAY } from './theme';
+import { Pop3D, panel as card } from './broll/card3d-kit';
 
 // Estilo 3D "data-driven": recria os cards do app FinMoovi nativamente (dados
 // reais) e os faz SALTAR em 3D (perspectiva + profundidade + float). Controle
 // total, sem depender do vídeo achatado — e escala nítido em qualquer formato.
-
-const card = (extra: React.CSSProperties = {}): React.CSSProperties => ({
-  background: 'linear-gradient(160deg, #1b2230, #12161f)',
-  border: '1px solid rgba(255,255,255,0.08)',
-  borderRadius: 28,
-  boxShadow: '0 30px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(139,92,246,0.15)',
-  fontFamily: BODY,
-  color: BRAND.text,
-  ...extra,
-});
+// Helpers Pop3D/card(panel) vêm do kit compartilhado ./broll/card3d-kit.
 
 // Card grande do saldo
 const BalanceCard: React.FC = () => (
@@ -43,26 +35,6 @@ const AccountCard: React.FC<{ name: string; value: string; color: string; initia
     </div>
   </div>
 );
-
-// Um card que "salta" em 3D: vem de longe (translateZ) girando, e flutua.
-const Pop3D: React.FC<{ delay: number; rotY: number; children: React.ReactNode }> = ({ delay, rotY, children }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const s = spring({ frame, fps, delay, config: { damping: 14, mass: 0.8 } });
-  const tz = interpolate(s, [0, 1], [-900, 0]);
-  const op = interpolate(s, [0, 1], [0, 1]);
-  const float = Math.sin((frame - delay) / 28) * 10;
-  const ry = interpolate(s, [0, 1], [rotY - 25, rotY]) + Math.sin((frame - delay) / 45) * 2.5;
-  return (
-    <div style={{
-      opacity: op,
-      transform: `translateY(${float}px) translateZ(${tz}px) rotateY(${ry}deg) rotateX(5deg)`,
-      transformStyle: 'preserve-3d',
-    }}>
-      {children}
-    </div>
-  );
-};
 
 const Scene3D: React.FC = () => (
   <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', perspective: 1600 }}>

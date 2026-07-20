@@ -3,3 +3,8 @@ out/
 .remotion/
 public/app-rec.mp4
 assets/
+# Biblioteca de clipes de b-roll (artefatos pesados) — NUNCA no git.
+# Ela vive em FINMOOVI/VIDEOS-BROLL/ (fora deste repo); este ignore é defensivo.
+VIDEOS-BROLL/
+*.mp4
+*.mov
