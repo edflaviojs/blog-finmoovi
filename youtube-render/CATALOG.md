@@ -82,7 +82,18 @@ Nubank conciliado · Saldo Atual R$ 3.754,91 · Receitas R$ 6.500 · Despesas R$
 | D · Tela 3D | ✅ | ✅ | `ExtratoScreen3DShort` / `ExtratoScreen3DLong` |
 
 **TELA EXTRATO = 10/10 clipes** em `VIDEOS-BROLL/3-extrato/`.
-### 5. Balanço — ⬜
+### 5. Balanço Mensal — dados: `src/broll/balanco.ts` · footage frame 19200 (~640s)
+Total Receitas R$ 10.000 · Total Despesas R$ 5.044,99 · Saldo Final R$ 4.955,01 · Saldo em Contas R$ 6.604,93. **Só vertical (5 clipes — decisão do dono).**
+
+| Estilo | Short | Composição |
+|--------|:---:|-----------|
+| C · 3D cards | ✅ | `Balanco3DShort` |
+| E · Donut de despesas (novo) | ✅ | `BalancoDonutShort` |
+| A · Moldura | ✅ | `BalancoFrameShort` |
+| B · Scroll | ✅ | `BalancoScrollShort` |
+| D · Tela 3D | ✅ | `BalancoScreen3DShort` |
+
+**TELA BALANÇO = 5/5 clipes** em `VIDEOS-BROLL/4-balanco/` (só vertical).
 ### 6. Compras — ⬜ · footage ~720s (Modo Compras) / ~840s (relatório)
 ### 7. Planejamento — ⬜
 ### 8. Smart Capture (voz/texto/imagem/compra) — ⬜
