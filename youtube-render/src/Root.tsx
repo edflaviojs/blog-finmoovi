@@ -10,8 +10,8 @@ import { FluxoCaixa3DLong, FluxoCaixa3DShort } from './FluxoCaixa3D';
 import { FluxoBarrasLong, FluxoBarrasShort } from './FluxoBarras';
 import { Extrato3DLong, Extrato3DShort } from './Extrato3D';
 import { ExtratoListaLong, ExtratoListaShort } from './ExtratoLista';
-import { Balanco3DShort } from './Balanco3D';
-import { BalancoDonutShort } from './BalancoDonut';
+import { Balanco3DShort, Balanco3DLong } from './Balanco3D';
+import { BalancoDonutShort, BalancoDonutLong } from './BalancoDonut';
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
 import { cartoes } from './broll/cartoes';
 import { fluxo } from './broll/fluxo';
@@ -390,6 +390,50 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1080}
         height={1920}
+        defaultProps={{ trimBefore: balanco.footageFrame }}
+      />
+      {/* Balanço horizontais (long) — completar 10/10 */}
+      <Composition
+        id="Balanco3DLong"
+        component={Balanco3DLong}
+        durationInFrames={210}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="BalancoDonutLong"
+        component={BalancoDonutLong}
+        durationInFrames={210}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="BalancoFrameLong"
+        component={AppBrollLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: balanco.footageFrame }}
+      />
+      <Composition
+        id="BalancoScrollLong"
+        component={AppScrollLong}
+        durationInFrames={360}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: balanco.footageFrame }}
+      />
+      <Composition
+        id="BalancoScreen3DLong"
+        component={AppScreen3DLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
         defaultProps={{ trimBefore: balanco.footageFrame }}
       />
       <Composition

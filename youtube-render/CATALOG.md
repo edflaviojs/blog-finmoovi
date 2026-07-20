@@ -83,17 +83,17 @@ Nubank conciliado · Saldo Atual R$ 3.754,91 · Receitas R$ 6.500 · Despesas R$
 
 **TELA EXTRATO = 10/10 clipes** em `VIDEOS-BROLL/3-extrato/`.
 ### 5. Balanço Mensal — dados: `src/broll/balanco.ts` · footage frame 19200 (~640s)
-Total Receitas R$ 10.000 · Total Despesas R$ 5.044,99 · Saldo Final R$ 4.955,01 · Saldo em Contas R$ 6.604,93. **Só vertical (5 clipes — decisão do dono).**
+Total Receitas R$ 10.000 · Total Despesas R$ 5.044,99 · Saldo Final R$ 4.955,01 · Saldo em Contas R$ 6.604,93.
 
-| Estilo | Short | Composição |
-|--------|:---:|-----------|
-| C · 3D cards | ✅ | `Balanco3DShort` |
-| E · Donut de despesas (novo) | ✅ | `BalancoDonutShort` |
-| A · Moldura | ✅ | `BalancoFrameShort` |
-| B · Scroll | ✅ | `BalancoScrollShort` |
-| D · Tela 3D | ✅ | `BalancoScreen3DShort` |
+| Estilo | Short | Long | Composição |
+|--------|:---:|:---:|-----------|
+| C · 3D cards | ✅ | ✅ | `Balanco3DShort` / `Balanco3DLong` |
+| E · Donut de despesas (novo) | ✅ | ✅ | `BalancoDonutShort` / `BalancoDonutLong` |
+| A · Moldura | ✅ | ✅ | `BalancoFrameShort` / `BalancoFrameLong` |
+| B · Scroll | ✅ | ✅ | `BalancoScrollShort` / `BalancoScrollLong` |
+| D · Tela 3D | ✅ | ✅ | `BalancoScreen3DShort` / `BalancoScreen3DLong` |
 
-**TELA BALANÇO = 5/5 clipes** em `VIDEOS-BROLL/4-balanco/` (só vertical).
+**TELA BALANÇO = 10/10 clipes** em `VIDEOS-BROLL/4-balanco/`.
 ### 6. Compras — ⬜ · footage ~720s (Modo Compras) / ~840s (relatório)
 ### 7. Planejamento — ⬜
 ### 8. Smart Capture (voz/texto/imagem/compra) — ⬜
