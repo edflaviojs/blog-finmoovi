@@ -1,3 +1,5 @@
 node_modules/
 out/
 .remotion/
+public/app-rec.mp4
+assets/
