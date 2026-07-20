@@ -1,6 +1,7 @@
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate } from 'remotion';
 import { Background } from './scenes';
 import { Phone, Halo } from './AppBroll';
+import { RoamingWatermark } from './broll/watermark';
 
 // Estilo 3D com a TELA ORIGINAL do app (o vídeo real): o celular flutua no
 // espaço e gira suavemente em 3D (rotateY/rotateX), com entrada em profundidade
@@ -29,9 +30,9 @@ const Rotating: React.FC<{ h: number; trimBefore: number; amp?: number }> = ({ h
 };
 
 export const AppScreen3DShort: React.FC<{ trimBefore?: number }> = ({ trimBefore = 150 }) => (
-  <AbsoluteFill><Background /><Rotating h={1360} trimBefore={trimBefore} amp={13} /></AbsoluteFill>
+  <AbsoluteFill><Background /><Rotating h={1360} trimBefore={trimBefore} amp={13} /><RoamingWatermark /></AbsoluteFill>
 );
 
 export const AppScreen3DLong: React.FC<{ trimBefore?: number }> = ({ trimBefore = 150 }) => (
-  <AbsoluteFill><Background /><Rotating h={900} trimBefore={trimBefore} amp={16} /></AbsoluteFill>
+  <AbsoluteFill><Background /><Rotating h={900} trimBefore={trimBefore} amp={16} /><RoamingWatermark /></AbsoluteFill>
 );

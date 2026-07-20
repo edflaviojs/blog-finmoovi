@@ -4,6 +4,7 @@ import { BRAND, DISPLAY, BODY } from './theme';
 import { Pop3D, panel } from './broll/card3d-kit';
 import { HeroCard } from './CreditCards3D';
 import { cartoes, brl, signColor } from './broll/cartoes';
+import { RoamingWatermark } from './broll/watermark';
 
 // Estilo NOVO "count-up": o cartão (Mastercard Itaú) salta em 3D e a FATURA
 // conta de R$ 0 até o valor real, com a barra de limite enchendo. Reveal punchy
@@ -52,8 +53,8 @@ const Scene: React.FC = () => (
 );
 
 export const CartoesCountUpShort: React.FC = () => (
-  <AbsoluteFill><Background /><Scene /></AbsoluteFill>
+  <AbsoluteFill><Background /><Scene /><RoamingWatermark /></AbsoluteFill>
 );
 export const CartoesCountUpLong: React.FC = () => (
-  <AbsoluteFill><Background /><Scene /></AbsoluteFill>
+  <AbsoluteFill><Background /><Scene /><RoamingWatermark /></AbsoluteFill>
 );

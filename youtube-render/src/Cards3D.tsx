@@ -2,6 +2,7 @@ import { AbsoluteFill } from 'remotion';
 import { Background } from './scenes';
 import { BRAND, DISPLAY } from './theme';
 import { Pop3D, panel as card } from './broll/card3d-kit';
+import { RoamingWatermark } from './broll/watermark';
 
 // Estilo 3D "data-driven": recria os cards do app FinMoovi nativamente (dados
 // reais) e os faz SALTAR em 3D (perspectiva + profundidade + float). Controle
@@ -48,8 +49,8 @@ const Scene3D: React.FC = () => (
 );
 
 export const Cards3DShort: React.FC = () => (
-  <AbsoluteFill><Background /><Scene3D /></AbsoluteFill>
+  <AbsoluteFill><Background /><Scene3D /><RoamingWatermark /></AbsoluteFill>
 );
 export const Cards3DLong: React.FC = () => (
-  <AbsoluteFill><Background /><Scene3D /></AbsoluteFill>
+  <AbsoluteFill><Background /><Scene3D /><RoamingWatermark /></AbsoluteFill>
 );

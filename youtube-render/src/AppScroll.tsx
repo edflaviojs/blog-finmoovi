@@ -1,6 +1,7 @@
 import { AbsoluteFill, useCurrentFrame, interpolate } from 'remotion';
 import { Background } from './scenes';
 import { Phone, Halo } from './AppBroll';
+import { RoamingWatermark } from './broll/watermark';
 
 // B-roll estilo SCROLL: usa um trecho da gravação em que a tela rola (o próprio
 // footage já contém a rolagem). Sem inclinação, movimento mínimo — a rolagem é a
@@ -19,6 +20,7 @@ export const AppScrollShort: React.FC<{ trimBefore?: number }> = ({ trimBefore =
           <Phone h={1560} trimBefore={trimBefore} />
         </div>
       </AbsoluteFill>
+      <RoamingWatermark />
     </AbsoluteFill>
   );
 };
@@ -36,6 +38,7 @@ export const AppScrollLong: React.FC<{ trimBefore?: number }> = ({ trimBefore = 
           <Phone h={1000} trimBefore={trimBefore} />
         </div>
       </AbsoluteFill>
+      <RoamingWatermark />
     </AbsoluteFill>
   );
 };

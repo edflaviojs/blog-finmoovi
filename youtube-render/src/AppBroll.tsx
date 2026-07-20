@@ -1,6 +1,7 @@
 import { AbsoluteFill, OffthreadVideo, staticFile, useCurrentFrame, interpolate } from 'remotion';
-import { Background, Watermark } from './scenes';
+import { Background } from './scenes';
 import { BRAND } from './theme';
+import { RoamingWatermark } from './broll/watermark';
 
 // B-roll do APP FinMoovi: a gravação real (formato de celular ~624×914) montada
 // numa moldura de celular flutuante com brilho da marca. Serve pros dois formatos.
@@ -43,13 +44,13 @@ export const AppBrollLong: React.FC<{ trimBefore?: number }> = ({ trimBefore = 1
   return (
     <AbsoluteFill>
       <Background />
-      <Watermark />
       <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
         <Halo />
         <div style={{ transform: `translateY(${float}px) scale(${zoom}) rotate(-4deg)` }}>
           <Phone h={920} trimBefore={trimBefore} />
         </div>
       </AbsoluteFill>
+      <RoamingWatermark />
     </AbsoluteFill>
   );
 };
@@ -68,6 +69,7 @@ export const AppBrollShort: React.FC<{ trimBefore?: number }> = ({ trimBefore = 
           <Phone h={1480} trimBefore={trimBefore} />
         </div>
       </AbsoluteFill>
+      <RoamingWatermark />
     </AbsoluteFill>
   );
 };

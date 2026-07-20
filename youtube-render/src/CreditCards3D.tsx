@@ -3,6 +3,7 @@ import { Background } from './scenes';
 import { BRAND, DISPLAY, BODY } from './theme';
 import { Pop3D, panel } from './broll/card3d-kit';
 import { cartoes, signColor } from './broll/cartoes';
+import { RoamingWatermark } from './broll/watermark';
 
 // Estilo 3D "data-driven" (padrão Cards3D): recria a tela de CARTÕES DE CRÉDITO
 // do FinMoovi nativamente (dados reais em ./broll/cartoes) e faz os cards
@@ -82,8 +83,8 @@ const Scene3D: React.FC = () => (
 );
 
 export const CreditCards3DShort: React.FC = () => (
-  <AbsoluteFill><Background /><Scene3D /></AbsoluteFill>
+  <AbsoluteFill><Background /><Scene3D /><RoamingWatermark /></AbsoluteFill>
 );
 export const CreditCards3DLong: React.FC = () => (
-  <AbsoluteFill><Background /><Scene3D /></AbsoluteFill>
+  <AbsoluteFill><Background /><Scene3D /><RoamingWatermark /></AbsoluteFill>
 );
