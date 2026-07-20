@@ -7,7 +7,8 @@
  * Providers:
  * 1. Cloudflare Workers AI (FLUX.1-schnell) — free, fast global edge
  * 2. Together.ai (FLUX.1-schnell) — reliable backup
- * 3. SVG fallback — always works, no external dependency
+ * 3. Pollinations.ai (FLUX) — free, keyless reinforcement before SVG
+ * 4. SVG fallback — always works, no external dependency
  *
  * Adding a new provider: just add an entry to PROVIDERS array.
  */
@@ -37,11 +38,23 @@ const PROVIDERS = [
     enabled: !!process.env.TOGETHER_API_KEY,
     endpoint: 'https://api.together.xyz/v1/images/generations',
     apiKey: process.env.TOGETHER_API_KEY,
-    model: 'black-forest-labs/FLUX.1-schnell-Free',
+    model: 'black-forest-labs/FLUX.1-schnell',
     maxWidth: 1152,
     maxHeight: 640,
     steps: 4,
     format: 'openai',
+  },
+  {
+    // Grátis e SEM chave — reforço independente antes de cair no SVG.
+    name: 'Pollinations.ai',
+    enabled: true,
+    endpoint: 'https://image.pollinations.ai/prompt/',
+    apiKey: null,
+    model: 'flux',
+    maxWidth: 1152,
+    maxHeight: 640,
+    steps: 4,
+    format: 'pollinations',
   },
 ];
 
@@ -133,68 +146,81 @@ export async function generateAIImage(topic, slug, destination = 'posts', prompt
 async function callProvider(provider, prompt, slug, destination, dir) {
   console.log(`🎨 [${provider.name}] Generating image...`);
 
-  let body;
-  let headers;
-
-  if (provider.format === 'cloudflare') {
-    body = {
-      prompt,
-      negative_prompt: NEGATIVE_PROMPT,
-      width: provider.maxWidth,
-      height: provider.maxHeight,
-      num_steps: provider.steps,
-    };
-    headers = {
-      'Authorization': `Bearer ${provider.apiKey}`,
-      'Content-Type': 'application/json',
-    };
-  } else {
-    body = {
-      model: provider.model,
-      prompt,
-      negative_prompt: NEGATIVE_PROMPT,
-      width: provider.maxWidth,
-      height: provider.maxHeight,
-      steps: provider.steps,
-      n: 1,
-      response_format: 'b64_json',
-    };
-    headers = {
-      'Authorization': `Bearer ${provider.apiKey}`,
-      'Content-Type': 'application/json',
-    };
-  }
-
-  const response = await fetch(provider.endpoint, {
-    method: 'POST',
-    headers,
-    body: JSON.stringify(body),
-    signal: AbortSignal.timeout(60000),
-  });
-
-  if (!response.ok) {
-    const errBody = await response.text().catch(() => '');
-    throw new Error(`HTTP ${response.status}: ${errBody.substring(0, 150)}`);
-  }
-
   let imageBuffer;
 
-  if (provider.format === 'cloudflare') {
-    const data = await response.json();
-    if (data.result && data.result.image) {
-      imageBuffer = Buffer.from(data.result.image, 'base64');
-    } else {
-      throw new Error('Cloudflare AI returned no image data');
+  if (provider.format === 'pollinations') {
+    // Provedor grátis SEM chave: o prompt vai na própria URL e a resposta são
+    // os bytes da imagem (GET, não POST). Sem negative_prompt (não suportado).
+    const seed = Math.floor(Math.random() * 1_000_000_000);
+    const url = `${provider.endpoint}${encodeURIComponent(prompt)}?width=${provider.maxWidth}&height=${provider.maxHeight}&model=${provider.model}&nologo=true&seed=${seed}`;
+    const response = await fetch(url, { method: 'GET', signal: AbortSignal.timeout(90000) });
+    if (!response.ok) {
+      const errBody = await response.text().catch(() => '');
+      throw new Error(`HTTP ${response.status}: ${errBody.substring(0, 150)}`);
     }
+    imageBuffer = Buffer.from(await response.arrayBuffer());
   } else {
-    const data = await response.json();
-    if (data.data && data.data[0]) {
-      if (data.data[0].b64_json) {
-        imageBuffer = Buffer.from(data.data[0].b64_json, 'base64');
-      } else if (data.data[0].url) {
-        const imgResponse = await fetch(data.data[0].url);
-        if (!imgResponse.ok) throw new Error('Failed to download image from URL');
-        imageBuffer = Buffer.from(await imgResponse.arrayBuffer());
+    let body;
+    let headers;
+
+    if (provider.format === 'cloudflare') {
+      body = {
+        prompt,
+        negative_prompt: NEGATIVE_PROMPT,
+        width: provider.maxWidth,
+        height: provider.maxHeight,
+        num_steps: provider.steps,
+      };
+      headers = {
+        'Authorization': `Bearer ${provider.apiKey}`,
+        'Content-Type': 'application/json',
+      };
+    } else {
+      body = {
+        model: provider.model,
+        prompt,
+        negative_prompt: NEGATIVE_PROMPT,
+        width: provider.maxWidth,
+        height: provider.maxHeight,
+        steps: provider.steps,
+        n: 1,
+        response_format: 'b64_json',
+      };
+      headers = {
+        'Authorization': `Bearer ${provider.apiKey}`,
+        'Content-Type': 'application/json',
+      };
+    }
+
+    const response = await fetch(provider.endpoint, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(60000),
+    });
+
+    if (!response.ok) {
+      const errBody = await response.text().catch(() => '');
+      throw new Error(`HTTP ${response.status}: ${errBody.substring(0, 150)}`);
+    }
+
+    if (provider.format === 'cloudflare') {
+      const data = await response.json();
+      if (data.result && data.result.image) {
+        imageBuffer = Buffer.from(data.result.image, 'base64');
+      } else {
+        throw new Error('Cloudflare AI returned no image data');
+      }
+    } else {
+      const data = await response.json();
+      if (data.data && data.data[0]) {
+        if (data.data[0].b64_json) {
+          imageBuffer = Buffer.from(data.data[0].b64_json, 'base64');
+        } else if (data.data[0].url) {
+          const imgResponse = await fetch(data.data[0].url);
+          if (!imgResponse.ok) throw new Error('Failed to download image from URL');
+          imageBuffer = Buffer.from(await imgResponse.arrayBuffer());
+        }
       }
     }
   }
