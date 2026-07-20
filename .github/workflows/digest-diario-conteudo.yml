@@ -1,0 +1,46 @@
+name: Digest Diario de Conteudo (7h Lisboa)
+
+on:
+  schedule:
+    # Lisboa está em UTC+1 no verão (WEST) e UTC+0 no inverno (WET).
+    # Rodamos às 06h e 07h UTC; o passo abaixo só executa quando forem
+    # exatamente 07h em Lisboa — assim envia 1 e-mail/dia às 7h locais o ano todo.
+    - cron: '0 6 * * *'
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # historico completo p/ git log --since detectar os commits das ultimas 24h
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Enviar digest (somente às 7h de Lisboa)
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
+        run: |
+          HORA=$(TZ=Europe/Lisbon date +%H)
+          if [ "$HORA" != "07" ]; then
+            echo "Hora em Lisboa=$HORA — não são 07h. Pulando (evita e-mail duplicado)."
+            exit 0
+          fi
+          node src/scripts/automacoes/digest-diario-conteudo.js
