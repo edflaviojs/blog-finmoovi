@@ -31,7 +31,7 @@ A última semana foi marcada por oscilações nos mercados globais, mas o cenár
 ### Dólar (USD/BRL)  
 O real ganhou alguns centavos frente ao dólar, que recuou 0,4 % ao longo da semana. O movimento foi impulsionado por duas coisas:  
 
-1. **Dados de inflação dos EUA** – O CPI de junho veio um ponto percentual abaixo das expectativas, aliviando a pressão sobre o Federal Reserve.  
+1. **Dados de [inflação](/glossario/inflacao) dos EUA** – O CPI de junho veio um ponto percentual abaixo das expectativas, aliviando a pressão sobre o Federal Reserve.  
 2. **Fluxos de capitais** – Investidores internacionais retiraram parte dos recursos de ativos de risco, mas a queda do dólar foi mais moderada porque o Brasil continua atraente graças à taxa Selic ainda alta.  
 
 Em termos práticos, quem comprou dólares no início da semana viu um ganho de cerca de R$ 0,02 por moeda. Não é nada que vá mudar sua conta bancária, mas já dá uma ideia da direção.
@@ -54,8 +54,8 @@ A taxa Selic permanece em **13,75 % ao ano**, a mesma da última reunião do C
 
 
 
-- **Renda fixa ainda atrativa** – CDBs, LCIs/LCAs e fundos DI continuam rendendo acima de 13 % ao ano, superando a inflação e a maioria dos títulos do [Tesouro Direto](/glossario/tesouro-direto).  
-- **Custo de oportunidade** – Se você tem dinheiro parado na poupança ou em investimentos de baixa rentabilidade, está perdendo dinheiro. Cada ponto percentual a menos na Selic reduz o spread entre a taxa de juros e o rendimento de [alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) como [fundos imobiliários](/glossario/fundos-imobiliarios) ou ações.  
+- **[Renda fixa](/glossario/renda-fixa) ainda atrativa** – CDBs, LCIs/LCAs e fundos DI continuam rendendo acima de 13 % ao ano, superando a inflação e a maioria dos títulos do [Tesouro Direto](/glossario/tesouro-direto).  
+- **Custo de oportunidade** – Se você tem [dinheiro](/posts/cashback-inteligente) parado na poupança ou em investimentos de baixa rentabilidade, está perdendo dinheiro. Cada ponto percentual a menos na Selic reduz o spread entre a taxa de juros e o rendimento de [alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) como [fundos imobiliários](/glossario/fundos-imobiliarios) ou ações.  
 
 Em resumo, a Selic alta ainda protege a rentabilidade da renda fixa, mas também eleva o custo de empréstimos e financiamentos, pressionando o consumo.
 
@@ -63,7 +63,7 @@ Em resumo, a Selic alta ainda protege a rentabilidade da renda fixa, mas também
 
 ## 3. Dica Prática para o Investidor Pessoa Física  
 
-**Rebalanceie sua carteira a cada trimestre**. Muitas pessoas deixam o “mix” de ativos parado por anos, esquecendo que a volatilidade do mercado pode mudar a proporção de risco e retorno. Use a regra de 60 % em renda fixa (CDBs, Tesouro IPCA) e 40 % em [renda variável](/glossario/renda-variavel) (ações, fundos imobiliários). Se, ao fim de três meses, a renda fixa passou de 60 % para 70 % por causa de valorização dos títulos, venda parte desses títulos e compre mais ações ou fundos. Isso mantém o perfil de risco alinhado ao seu objetivo e ainda aproveita a alta dos juros.
+**Rebalanceie sua carteira a cada trimestre**. Muitas pessoas deixam o “mix” de ativos parado por anos, esquecendo que a [volatilidade](/glossario/volatilidade) do mercado pode mudar a proporção de risco e retorno. Use a regra de 60 % em renda fixa (CDBs, Tesouro IPCA) e 40 % em [renda variável](/glossario/renda-variavel) (ações, fundos imobiliários). Se, ao fim de três meses, a renda fixa passou de 60 % para 70 % por causa de valorização dos títulos, venda parte desses títulos e compre mais ações ou fundos. Isso mantém o perfil de risco alinhado ao seu objetivo e ainda aproveita a alta dos juros.
 
 ---
 
@@ -71,7 +71,7 @@ Em resumo, a Selic alta ainda protege a rentabilidade da renda fixa, mas também
 
 - **Dados de inflação dos EUA** – O CPI de julho será divulgado na segunda‑feira e pode trazer nova pressão sobre o Fed. Se a inflação cair ainda mais, o dólar pode continuar a desvalorizar.  
 - **Decisão do BCE** – A reunião do Banco Central Europeu está marcada para o meio da semana; um tom mais dovish pode puxar o euro para baixo.  
-- **Política fiscal brasileira** – O governo deve apresentar ajustes no orçamento. Qualquer mudança que aumente o déficit pode gerar dúvidas sobre a estabilidade cambial.  
+- **Política fiscal brasileira** – O governo deve apresentar ajustes no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Qualquer mudança que aumente o déficit pode gerar dúvidas sobre a estabilidade cambial.  
 
 Fique de olho nesses indicadores; eles costumam mover o real mais que qualquer outra coisa.
 

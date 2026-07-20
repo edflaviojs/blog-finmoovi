@@ -92,7 +92,7 @@ Limited Free plan – Premium starting at R$ 12.90/month.
 ## 4. [Money](/en/posts/en-avoid-impulse-purchases) Lover – The habit‑focused app
 
 **Description**  
-[Money](/en/posts/en-creating-an-emergency-fund) Lover blends expense tracking with habit‑change techniques, such as savings goals and “overspend” alerts. In two sentences, it offers a calendar view that highlights days you exceeded your budget and lets you create “[money](/en/posts/en-difference-between-investing-and-saving) envelopes” for specific projects.
+[Money](/en/posts/en-creating-an-emergency-fund) Lover blends expense tracking with habit‑change techniques, such as [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) goals and “overspend” alerts. In two sentences, it offers a calendar view that highlights days you exceeded your [budget](/en/posts/en-how-to-create-personal-budget) and lets you create “[money](/en/posts/en-difference-between-investing-and-saving) envelopes” for specific projects.
 
 **Pros**  
 - “Envelopes” (virtual pockets) that help you set aside [money](/en/posts/en-financial-education-for-children) for trips, a car, or emergencies.  

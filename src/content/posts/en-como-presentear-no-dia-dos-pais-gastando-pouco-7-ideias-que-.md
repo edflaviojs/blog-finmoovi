@@ -22,7 +22,7 @@ seo:
 
 Father’s Day is coming and, like any holiday, the temptation to spend more than planned is huge. But who said an expensive gift = a better gift?
 
-With a bit of creativity and planning, you can surprise your dad without blowing up the bill. Ready for the step‑by‑step?
+With a bit of creativity and [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas), you can surprise your dad without blowing up the bill. Ready for the step‑by‑step?
 
 ## 1️⃣ Set a spending limit first
 
@@ -83,7 +83,7 @@ IBGE reports that the average monthly income of Brazilian workers in 2023 was **
 Create a list in [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) with items you’d like to give dad. Whenever there’s a promotion, add the reduced price. That way you buy at the right moment and avoid impulse purchases.
 
 ### 5.3. **Split the amount into smaller installments**
-If you opt for a pricier gift (e.g., a smartwatch), see if the store offers **interest‑free installments**. But pay attention: record each installment in FinMoovi so you don’t forget to pay and end up spending more next month.
+If you opt for a pricier gift (e.g., a smartwatch), see if the store offers **interest‑free installments**. But pay attention: record each installment in [FinMoovi](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) so you don’t forget to pay and end up spending more next month.
 
 ## 6️⃣ Final tips to avoid going into the red
 

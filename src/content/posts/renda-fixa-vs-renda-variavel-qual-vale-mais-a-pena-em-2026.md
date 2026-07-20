@@ -20,7 +20,7 @@ seo:
 
 ## Introdução
 
-Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro salário, a primeira grande dúvida costuma ser: **onde colocar o [dinheiro](/posts/cashback-inteligente)?** A resposta não é única. Em 2026, as duas categorias mais faladas são **renda fixa** e **[renda variável](/glossario/renda-variavel)**. Cada uma tem vantagens, riscos e momentos ideais de uso. Neste artigo, vamos analisar os dois lados da moeda, comparar critérios importantes e ajudar você a decidir qual combina mais com seu objetivo, tolerância ao risco e horizonte de tempo. Ah, e ao final vamos indicar uma ferramenta prática – o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – que facilita o acompanhamento de qualquer escolha que você faça.
+Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro salário, a primeira grande dúvida costuma ser: **onde colocar o [dinheiro](/posts/cashback-inteligente)?** A resposta não é única. Em 2026, as duas categorias mais faladas são **[renda fixa](/glossario/renda-fixa)** e **[renda variável](/glossario/renda-variavel)**. Cada uma tem vantagens, riscos e momentos ideais de uso. Neste artigo, vamos analisar os dois lados da moeda, comparar critérios importantes e ajudar você a decidir qual combina mais com seu objetivo, tolerância ao risco e horizonte de tempo. Ah, e ao final vamos indicar uma ferramenta prática – o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – que facilita o acompanhamento de qualquer escolha que você faça.
 
 ---
 
@@ -35,7 +35,7 @@ A renda fixa engloba investimentos nos quais a remuneração (juros ou rendiment
 | Produto | Onde encontrar | Taxa média 2024‑2025* | Características |
 |---------|----------------|-----------------------|-----------------|
 | CDB (Certificado de Depósito Bancário) | Bancos comerciais | 108 % do CDI (aprox. 13,2% a.a.) | Garantia do FGC até R$ 250 mil por instituição |
-| [Tesouro Direto](/glossario/tesouro-direto) – Selic | Governo Federal | 12,8 % a.a. ([Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) 2026) | Liquidez diária, risco soberano baixo |
+| [Tesouro Direto](/glossario/tesouro-direto) – Selic | Governo Federal | 12,8 % a.a. ([Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) 2026) | [Liquidez](/glossario/liquidez) diária, risco soberano baixo |
 | LCIs/LCAs (Letras de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário/Agrícola) | Bancos, corretoras | 107 % do CDI (≈ 13 % a.a.) | Isento de IR, FGC protege |
 | [Debêntures](/glossario/debentures) de empresas | Corretoras | 9 %‑12 % a.a. (dependendo rating) | Risco de crédito da empresa emissora |
 
@@ -52,9 +52,9 @@ A lógica é simples: você empresta [dinheiro](/posts/como-criar-uma-reserva-de
 
 ### Desvantagens da renda fixa
 
-1. **Rentabilidade limitada** – Quando a inflação sobe, a renda fixa pode ficar atrás de investimentos mais agressivos.
+1. **Rentabilidade limitada** – Quando a [inflação](/glossario/inflacao) sobe, a renda fixa pode ficar atrás de investimentos mais agressivos.
 2. **Dependência da taxa Selic** – Se o Banco Central mantiver juros baixos por muito tempo, os retornos caem.
-3. **Possível “custo de oportunidade”** – Dinheiro preso em um CDB de 5 anos rende menos que ações que podem subir 30 % em seis meses.
+3. **Possível “custo de oportunidade”** – [Dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) preso em um CDB de 5 anos rende menos que ações que podem subir 30 % em seis meses.
 
 ---
 
@@ -111,7 +111,7 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 
 ## Quando escolher a renda fixa
 
-1. **Objetivo de curto prazo** – Se você precisa do dinheiro em até 2 anos (ex.: reserva de emergência, viagem), a renda fixa garante que o capital ficará preservado.
+1. **Objetivo de curto prazo** – Se você precisa do [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) em até 2 anos (ex.: reserva de emergência, viagem), a renda fixa garante que o capital ficará preservado.
 2. **Perfil conservador** – Quem não tolera ver o valor da aplicação oscilar prefere a segurança de um CDB ou Tesouro.
 3. **Ambiente de juros altos** – Quando a Selic está acima de 12 % a.a., a renda fixa já oferece retornos bastante atrativos.
 4. **Necessidade de renda** – LCIs/LCAs e alguns debêntures pagam juros mensais, gerando fluxo de caixa estável.

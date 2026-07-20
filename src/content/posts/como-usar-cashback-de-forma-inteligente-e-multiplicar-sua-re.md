@@ -37,7 +37,7 @@ Nem todo cartão oferece a mesma [taxa](/glossario/taxa) de retorno. Alguns dão
 
 ## Transforme o cashback em “[dinheiro](/posts/cashback-inteligente) de reserva”
 
-Muitas pessoas simplesmente usam o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) devolvido para pagar a fatura do cartão. Isso elimina o benefício imediato, mas perde a oportunidade de criar uma reserva. Reserve o cashback em uma conta separada – pode ser uma conta corrente com rendimento automático ou uma conta digital que ofereça rendimento de 100% do [CDI](/glossario/cdi).
+Muitas pessoas simplesmente usam o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) devolvido para pagar a fatura do cartão. Isso elimina o benefício imediato, mas perde a oportunidade de criar uma reserva. Reserve o cashback em uma conta separada – pode ser uma conta corrente com [rendimento](/posts/montando-carteira-diversificada-com-r-500) automático ou uma conta digital que ofereça rendimento de 100% do [CDI](/glossario/cdi).
 
 Exemplo prático:
 - Salário mensal: R$ 4.500,00
@@ -83,7 +83,7 @@ Esses números dão clareza para ajustar a estratégia ao longo do tempo.
 
 ## Comece hoje
 
-A primeira ação não precisa ser complexa: escolha um cartão que ofereça o melhor cashback para o seu padrão de consumo, abra uma conta separada para receber o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta e registre tudo no seu app de finanças. Em menos de 30 dias, você já verá a diferença no seu [orçamento](/posts/como-criar-orcamento-pessoal).
+A primeira ação não precisa ser complexa: escolha um cartão que ofereça o melhor cashback para o seu padrão de consumo, abra uma conta separada para receber o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta e registre tudo no seu [app de finanças](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar). Em menos de 30 dias, você já verá a diferença no seu [orçamento](/posts/como-criar-orcamento-pessoal).
 
 ---
 **O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) está indo de verdade.**

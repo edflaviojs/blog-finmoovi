@@ -18,13 +18,13 @@ seo:
 
 ## Resumen del dólar y el euro en Brasil (13 – 20 julio 2026)
 
-Esta semana el real mostró una ligera recuperación frente a las dos monedas más importantes. El **dólar** se mantuvo en torno a **R$ 5,11**, una caída de 0,3 % respecto al lunes, mientras que el **euro** quedó en **R$ 5,84**, bajando 0,5 % en el mismo período. La presión bajista vino principalmente de dos factores: la publicación de datos de inflación más suaves en EE. UU. y la expectativa de que la Reserva Federal mantenga la política monetaria estable. En Brasil, la noticia más relevante fue la decisión de la autoridad monetaria de **mantener la Selic en 13,75 %**, lo que quitó un posible impulso alcista al real.
+Esta semana el real mostró una ligera recuperación frente a las dos monedas más importantes. El **dólar** se mantuvo en torno a **R$ 5,11**, una caída de 0,3 % respecto al lunes, mientras que el **euro** quedó en **R$ 5,84**, bajando 0,5 % en el mismo período. La presión bajista vino principalmente de dos factores: la publicación de datos de [inflación](/es/glossario/es-inflacao) más suaves en EE. UU. y la expectativa de que la Reserva Federal mantenga la política monetaria estable. En Brasil, la noticia más relevante fue la decisión de la autoridad monetaria de **mantener la [Selic](/es/glossario/es-selic) en 13,75 %**, lo que quitó un posible impulso alcista al real.
 
 ![Resumen del dólar y el euro en Brasil (13 – 20 julio 2026)](/images/posts/es-cotizaciones-semana-3-julio-2026-inline-1.webp)
 
 
 
-En la práctica, si tenés una cuenta en dólares para pagar la universidad de tu hijo o para viajar, ahora vas a recibir un poquito más de reales por cada dólar que cambies. Lo mismo ocurre con el euro: si planeás unas vacaciones a Europa, tu presupuesto en reales te rinde un poco más.
+En la práctica, si tenés una cuenta en dólares para pagar la universidad de tu hijo o para viajar, ahora vas a recibir un poquito más de reales por cada dólar que cambies. Lo mismo ocurre con el euro: si planeás unas [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) a Europa, tu presupuesto en reales te rinde un poco más.
 
 ---
 
@@ -36,7 +36,7 @@ La **Selic** es la tasa de referencia que el Banco Central de Brasil utiliza par
 2. **Acciones y fondos:** Un entorno de tasas estables favorece a las empresas con deuda alta, porque sus costos de [financiamiento](/es/glossario/es-financiamento) no aumentan. Los sectores de consumo y energía mostraron una ligera recuperación, pero sigue habiendo [volatilidad](/es/glossario/es-volatilidade) por la incertidumbre global.  
 3. **Inversiones en el exterior:** Con el real fortaleciendo frente al dólar y al euro, los activos internacionales (ETF de EE. UU., acciones europeas) se vuelven un poco más caros para los brasileños. Sin embargo, la diversificación sigue siendo clave para protegerse de cualquier sacudida local.
 
-En resumen, la Selic estable brinda un **escenario de “cambio de marcha”**: no hay presión para subir los rendimientos de la renta fija, pero tampoco hay riesgo de una subida abrupta que pueda afectar a los activos de riesgo.
+En resumen, la Selic estable brinda un **escenario de “[cambio](/es/glossario/es-cambio) de marcha”**: no hay presión para subir los rendimientos de la renta fija, pero tampoco hay riesgo de una subida abrupta que pueda afectar a los activos de riesgo.
 
 ---
 
@@ -68,5 +68,5 @@ En conclusión, la semana pasada mostró una ligera recuperación del real y una
 
 
 ---
-**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
+**¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado).**
 

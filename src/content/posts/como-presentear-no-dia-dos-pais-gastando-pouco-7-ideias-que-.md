@@ -22,7 +22,7 @@ seo:
 
 O Dia dos Pais está chegando e, como todo feriado, a tentação de gastar mais do que o planejado é grande. Mas quem disse que presente caro = presente melhor?
 
-Com um pouco de criatividade e planejamento, você pode surpreender seu paizão sem estourar a conta. Vamos ao passo a passo?
+Com um pouco de criatividade e [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas), você pode surpreender seu paizão sem estourar a conta. Vamos ao passo a passo?
 
 ## 1️⃣ Defina um limite de gasto antes de tudo
 
@@ -89,7 +89,7 @@ O IBGE aponta que a renda média mensal dos trabalhadores brasileiros em 2023 fo
 Crie uma lista no [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) com itens que gostaria de dar ao pai. Cada vez que houver promoção, adicione o preço reduzido. Assim, você compra no momento certo e evita compras por impulso.
 
 ### 5.3. **Divida o valor em parcelas menores**
-Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **parcelamento sem [juros](/glossario/juros)**. Mas atenção: registre cada parcela no FinMoovi para não esquecer de pagar e acabar gastando mais no próximo mês.
+Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **parcelamento sem [juros](/glossario/juros)**. Mas atenção: registre cada parcela no [FinMoovi](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) para não esquecer de pagar e acabar gastando mais no próximo mês.
 
 ## 6️⃣ [Dicas](/posts/7-erros-financeiros-iniciante) finais para não sair no vermelho
 

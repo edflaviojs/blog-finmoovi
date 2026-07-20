@@ -20,7 +20,7 @@ seo:
 
 ## Cashback as a Real Ally
 
-When you pay for a snack that costs R$ 35.00 with a card that gives 2% back, the return looks tiny – R$ 0.70. But if you treat that amount as extra income, it can become a genuine boost to your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). The idea isn’t to expect cashback to cover everything at once, but to make every cent returned work for you.
+When you pay for a snack that costs R$ 35.00 with a card that gives 2% back, the return looks tiny – R$ 0.70. But if you treat that amount as extra [income](/en/posts/en-montando-carteira-diversificada-com-r-500), it can become a genuine boost to your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). The idea isn’t to expect cashback to cover everything at once, but to make every cent returned work for you.
 
 ## Choose the Right Card and Combine [Benefits](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
@@ -62,7 +62,7 @@ To avoid missing these opportunities, make a habit of checking the card app ever
 
 ## Automate the Process and Track Results
 
-Discipline is what turns cashback from a one‑off detail into a profitable habit. Use a personal‑finance app (like **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)**, which I recommend because it simplifies viewing all your accounts) to automatically record the amount received and where you sent it.
+Discipline is what turns cashback from a one‑off detail into a profitable habit. Use a personal‑[finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) (like **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)**, which I recommend because it simplifies viewing all your accounts) to automatically record the amount received and where you sent it.
 
 ![Automatize o processo e acompanhe os resultados](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-6.webp)
 

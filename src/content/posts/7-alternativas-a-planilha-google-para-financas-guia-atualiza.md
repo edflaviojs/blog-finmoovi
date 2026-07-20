@@ -122,9 +122,9 @@ YNAB segue a filosofia de “dar a cada real um trabalho”, incentivando o usu�
 
 
 **Prós**
-- Metodologia comprovada que ajuda a mudar a relação com o dinheiro e reduzir dívidas.
+- Metodologia comprovada que ajuda a mudar a relação com o [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) e reduzir dívidas.
 - Sincroniza com bancos via importação de arquivos CSV, mantendo a privacidade dos dados.
-- Relatórios detalhados de “onde seu dinheiro foi” que facilitam a revisão mensal.
+- Relatórios detalhados de “onde seu [dinheiro](/posts/diferenca-entre-investir-e-poupar) foi” que facilitam a revisão mensal.
 
 **Contras**
 - Não possui captura por voz nem recursos de IA para categorização automática; tudo depende de entrada manual.

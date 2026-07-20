@@ -35,7 +35,7 @@ No todas las tarjetas ofrecen la misma tasa de retorno. Algunas dan 1,5% en toda
 
 ## Transforma el cashback en “[dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) de reserva”
 
-Muchas personas simplemente usan el [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) devuelto para pagar la factura de la tarjeta. Eso elimina el beneficio inmediato, pero pierde la oportunidad de crear una reserva. Reserva el cashback en una cuenta separada – puede ser una cuenta corriente con rendimiento automático o una cuenta digital que ofrezca rendimiento del 100% del [CDI](/es/glossario/es-cdi).
+Muchas personas simplemente usan el [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) devuelto para pagar la factura de la tarjeta. Eso elimina el beneficio inmediato, pero pierde la oportunidad de crear una reserva. Reserva el cashback en una cuenta separada – puede ser una cuenta corriente con [rendimiento](/es/posts/es-montando-carteira-diversificada-com-r-500) automático o una cuenta digital que ofrezca rendimiento del 100% del [CDI](/es/glossario/es-cdi).
 
 - Salario mensual: R$ 4.500,00
 - Gastos mensuales con tarjeta: R$ 2.000,00 (supermercado, combustible, delivery)
@@ -76,6 +76,6 @@ Estos números dan claridad para ajustar la estrategia a lo largo del tiempo.
 
 ## Empieza hoy
 
-La primera acción no necesita ser compleja: elige una tarjeta que ofrezca el mejor cashback para tu patrón de consumo, abre una cuenta separada para recibir el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) de vuelta y registra todo en tu app de finanzas. En menos de 30 días, ya verás la diferencia en tu presupuesto.
+La primera acción no necesita ser compleja: elige una tarjeta que ofrezca el mejor cashback para tu patrón de consumo, abre una cuenta separada para recibir el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) de vuelta y registra todo en tu app de finanzas. En menos de 30 días, ya verás la diferencia en tu [presupuesto](/es/posts/es-como-crear-presupuesto-personal).
 
 **El siguiente paso es tuyo. [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) y descubre a dónde va realmente tu [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado).**

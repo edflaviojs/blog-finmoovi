@@ -26,13 +26,13 @@ If you’ve just opened an account at a bank or received your first paycheck, th
 
 ## How Fixed Income Works
 
-Fixed income includes investments where the remuneration (interest or yield) is already **pre‑defined** or has a maximum limit. The investor knows, at the moment of application, what the return rate will be or, at the very least, the range of variation. The main products are:
+Fixed income includes [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) where the remuneration (interest or [yield](/en/glossario/en-yield)) is already **pre‑defined** or has a maximum limit. The investor knows, at the moment of application, what the return rate will be or, at the very least, the range of variation. The main products are:
 
 ![How Fixed Income Works](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-2.webp)
 
 | Product | Where to Find | Average Rate 2024‑2025* | Features |
 |---------|----------------|-----------------------|----------|
-| CDB (Bank Deposit Certificate) | Commercial banks | 108 % of CDI (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-garantia-fgc) up to R$ 250 k per institution |
+| [CDB](/en/glossario/en-cdb) (Bank Deposit Certificate) | Commercial banks | 108 % of CDI (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-garantia-fgc) up to R$ 250 k per institution |
 | Treasury Direct – [Selic](/en/glossario/en-selic) | Federal government | 12.8 % a year (Selic 2026) | Daily [liquidity](/en/glossario/en-liquidez), low sovereign risk |
 | LCIs/LCAs (Real Estate/Agricultural [Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Letters) | Banks, brokerages | 107 % of CDI (≈ 13 % a year) | IR‑exempt, FGC protection |
 | Corporate [Debentures](/en/glossario/en-debentures) | Brokerages | 9 %‑12 % a year (depending on rating) | Credit risk of the issuing company |
@@ -52,7 +52,7 @@ The logic is simple: you lend [money](/en/posts/en-avoid-impulse-purchases) (or 
 
 1. **Limited profitability** – When [inflation](/en/glossario/en-inflacao) rises, fixed income can fall behind more aggressive investments.  
 2. **Dependence on the Selic rate** – If the Central Bank keeps rates low for a long period, returns drop.  
-3. **Possible “opportunity cost”** – Money locked in a 5‑year CDB earns less than stocks that could jump 30 % in six months.
+3. **Possible “opportunity cost”** – [Money](/en/posts/en-creating-an-emergency-fund) locked in a 5‑year CDB earns less than stocks that could jump 30 % in six months.
 
 ---
 
@@ -62,7 +62,7 @@ Variable income gathers assets whose return **is not guaranteed** and depends on
 
 | Product | Where to Find | Average Return 2024‑2025* | Features |
 |---------|----------------|---------------------------|----------|
-| Listed company stocks | Stock exchange (B3) | 12 %‑20 % a year (Ibovespa index) | High [volatility](/en/glossario/en-volatilidade), occasional [dividends](/en/glossario/en-dividendos) |
+| Listed company stocks | [Stock](/en/glossario/en-stock) exchange (B3) | 12 %‑20 % a year (Ibovespa index) | High [volatility](/en/glossario/en-volatilidade), occasional [dividends](/en/glossario/en-dividendos) |
 | ETFs (Index Funds) | Brokerages | 11 %‑18 % a year (e.g., BOVA11) | Automatic diversification, low management fee |
 | Real Estate Investment Funds (FIIs) | Brokerages | 7 %‑9 % a year (monthly yield) | Rental income, vacancy risk |
 | Cryptocurrencies | Exchanges | Varies widely (e.g., BTC 2024: +30 % a year) | Extremely volatile, regulatory risk |

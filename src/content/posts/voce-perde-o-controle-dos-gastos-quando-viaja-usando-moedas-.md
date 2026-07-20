@@ -41,12 +41,12 @@ Quando chega a hora de fechar o [orçamento](/posts/5-dicas-para-reorganizar-sua
 
 Foi justamente nessa hora que descobri o **[FinMoovi](/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)**, um aplicativo de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) que, entre várias funções, tem um recurso **multi‑[moeda](/glossario/moeda)** pensado para viajantes. Sem fanfarra, ele permite que você registre cada despesa na moeda em que ela foi feita; o app converte automaticamente para a sua moeda base (geralmente real) usando a cotação do dia. Tudo isso acontece em tempo real, sem precisar abrir planilhas ou procurar taxas de câmbio.
 
-O legal é que o FinMoovi não é só mais um “calculadora de câmbio”. Ele se integra ao seu [orçamento](/posts/como-criar-orcamento-pessoal) mensal, sinaliza quando você está perto de ultrapassar o limite de cada categoria (alimentação, transporte, lazer) e ainda traz gráficos que mostram, de forma clara, quanto do seu [dinheiro](/posts/cashback-inteligente) está sendo gasto em cada moeda. É como ter um assistente de viagem que cuida dos números enquanto você curte a paisagem.
+O legal é que o [FinMoovi](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) não é só mais um “calculadora de câmbio”. Ele se integra ao seu [orçamento](/posts/como-criar-orcamento-pessoal) mensal, sinaliza quando você está perto de ultrapassar o limite de cada categoria (alimentação, transporte, lazer) e ainda traz gráficos que mostram, de forma clara, quanto do seu [dinheiro](/posts/cashback-inteligente) está sendo gasto em cada moeda. É como ter um assistente de viagem que cuida dos números enquanto você curte a paisagem.
 
 ## Passo a passo: como usar o recurso multi‑moeda na prática
 
 ### 1. Defina sua moeda base
-Ao abrir o FinMoovi pela primeira vez, escolha o real (R$) como moeda padrão. Você pode mudar a qualquer momento nas configurações, mas manter o real facilita o acompanhamento do seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) familiar.
+Ao abrir o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) pela primeira vez, escolha o real (R$) como moeda padrão. Você pode mudar a qualquer momento nas configurações, mas manter o real facilita o acompanhamento do seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) familiar.
 
 ![Passo a passo: como usar o recurso multi‑moeda na prática](/images/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas--4.webp)
 

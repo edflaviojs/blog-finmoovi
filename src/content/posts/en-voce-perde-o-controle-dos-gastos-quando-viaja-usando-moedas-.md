@@ -44,7 +44,7 @@ The cool thing is that [FinMoovi](/en/posts/en-como-presentear-no-dia-dos-pais-g
 ## Step‑by‑step: how to use the multi‑currency feature in practice
 
 ### 1. Set your base currency  
-When you open FinMoovi for the first time, choose the real (R$) as the default currency. You can change it anytime in the settings, but keeping reais makes it easier to track your family [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas).
+When you open [FinMoovi](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) for the first time, choose the real (R$) as the default currency. You can change it anytime in the settings, but keeping reais makes it easier to track your family [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas).
 
 ![Passo a passo: como usar o recurso multi‑moeda na prática](/images/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas--4.webp)
 
@@ -78,7 +78,7 @@ These numbers come from FinMoovi users who compared their experience before and 
 ## Data that underline the importance of precise control
 
 - **Floating exchange rates:** Brazil’s Central Bank records daily fluctuations of up to **5 %** against the [dollar](/en/posts/en-quotes-semana-1-july-2026) and euro, which can significantly affect the final value of expenses when converted after the trip. (Source: [Banco Central do Brasil](https://www.bcb.gov.br))  
-- **Unexpected spending:** According to [Investopedia](https://www.investopedia.com), travelers who don’t monitor expenses in real time tend to exceed their budget by up to **30 %**, mainly due to impulse purchases in foreign currency.
+- **Unexpected spending:** According to [Investopedia](https://www.investopedia.com), travelers who don’t monitor expenses in real time tend to exceed their [budget](/en/posts/en-reduce-fixed-expenses) by up to **30 %**, mainly due to impulse purchases in foreign currency.
 
 ![Dados que reforçam a importância de um controle preciso](/images/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas--6.webp)
 

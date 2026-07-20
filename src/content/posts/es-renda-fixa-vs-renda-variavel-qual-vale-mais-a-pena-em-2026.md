@@ -32,14 +32,14 @@ La renta fija engloba inversiones en las que la remuneración (interés o rendim
 
 | Producto | Dónde encontrar | Tasa media 2024‑2025* | Características |
 |----------|----------------|-----------------------|-----------------|
-| CDB (Certificado de Depósito Bancario) | Bancos comerciales | 108 % del CDI (aprox. 13,2 % a.a.) | Garantía del FGC hasta R$ 250 mil por institución |
+| [CDB](/es/glossario/es-cdb) (Certificado de Depósito Bancario) | Bancos comerciales | 108 % del [CDI](/es/glossario/es-cdi) (aprox. 13,2 % a.a.) | Garantía del FGC hasta R$ 250 mil por institución |
 | Tesoro Directo – [Selic](/es/glossario/es-selic) | Gobierno Federal | 12,8 % a.a. (Tesoro Selic 2026) | [Liquidez](/es/glossario/es-liquidez) diaria, riesgo soberano bajo |
-| LCIs/LCAs (Letras de Crédito Inmobiliario/Agrícola) | Bancos, corredoras | 107 % del CDI (≈ 13 % a.a.) | Exento de IR, FGC protege |
+| LCIs/LCAs (Letras de [Crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Inmobiliario/Agrícola) | Bancos, corredoras | 107 % del CDI (≈ 13 % a.a.) | Exento de IR, FGC protege |
 | [Debentures](/es/glossario/es-debentures) de empresas | Corredoras | 9 %‑12 % a.a. (dependiendo del rating) | Riesgo de crédito de la empresa emisora |
 
 *Basado en datos del Banco Central y del Tesoro Directo hasta diciembre de 2025.  
 
-La lógica es simple: prestas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) (o compras títulos) y recibes intereses a lo largo del tiempo. El **principal** (valor invertido) suele devolverse al vencimiento o puede rescatarse antes, según el producto. Como la remuneración está vinculada a índices como el CDI o la Selic, la variación de la tasa de interés en el país afecta directamente el retorno.  
+La lógica es simple: prestas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) (o compras títulos) y recibes intereses a lo largo del tiempo. El **principal** ([valor](/es/glossario/es-valor) invertido) suele devolverse al vencimiento o puede rescatarse antes, según el producto. Como la remuneración está vinculada a índices como el CDI o la Selic, la variación de la tasa de interés en el país afecta directamente el retorno.  
 
 ### Ventajas de la renta fija  
 
@@ -141,7 +141,7 @@ En la práctica, al comprar una acción te conviertes en socio de la empresa. Tu
 
 ## Veredicto  
 
-No existe un “mejor” absoluto; la elección depende **de tu perfil, plazo y objetivo**. Si aún estás formando el hábito de ahorrar, temes que tu dinero “desaparezca” y necesitas liquidez, la **renta fija** debe ser la base de tu cartera. Protege tu capital, ofrece rendimiento estable y permite construir una reserva de emergencia.  
+No existe un “mejor” absoluto; la elección depende **de tu perfil, plazo y objetivo**. Si aún estás formando el hábito de ahorrar, temes que tu [dinero](/es/posts/es-cashback-inteligente) “desaparezca” y necesitas liquidez, la **renta fija** debe ser la base de tu cartera. Protege tu capital, ofrece rendimiento estable y permite construir una reserva de emergencia.  
 
 Por otro lado, si tienes **tiempo de sobra**, aceptas la montaña rusa de los mercados y buscas retornos que superen la inflación de forma cómoda, la **renta variable** puede ser la principal palanca de crecimiento. La recomendación más equilibrada suele ser **mezclar ambos mundos**: mantener una porción segura (renta fija) y destinar el resto a oportunidades de mayor retorno (renta variable).  
 
