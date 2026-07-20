@@ -1,0 +1,24 @@
+{
+  "name": "finmoovi-youtube-render",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Fábrica de vídeo (Remotion) do canal FinMoovi — ISOLADA do blog Astro. O CF Pages não instala estas deps (package.json próprio). Ver IMPLEMENTACAO20 F1.3.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "render:test": "remotion render src/index.ts Test out/test.mp4",
+    "studio": "remotion studio src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^5.6.0"
+  }
+}
