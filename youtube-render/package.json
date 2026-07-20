@@ -9,6 +9,8 @@
   },
   "scripts": {
     "render:test": "remotion render src/index.ts Test out/test.mp4",
+    "render:short": "remotion render src/index.ts Short out/juros-compostos.mp4",
+    "still": "remotion still src/index.ts Short out/frame.png",
     "studio": "remotion studio src/index.ts"
   },
   "dependencies": {
