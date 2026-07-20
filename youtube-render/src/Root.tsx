@@ -2,6 +2,7 @@ import { Composition } from 'remotion';
 import { Test } from './Test';
 import { Short, ShortScript, totalFrames } from './Short';
 import { AppBrollLong, AppBrollShort } from './AppBroll';
+import { AppScrollLong, AppScrollShort } from './AppScroll';
 import roteiro from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
 const FPS = 30;
@@ -37,6 +38,24 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={{ trimBefore: 150 }}
+      />
+      <Composition
+        id="AppScrollLong"
+        component={AppScrollLong}
+        durationInFrames={360}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: 120 }}
+      />
+      <Composition
+        id="AppScrollShort"
+        component={AppScrollShort}
+        durationInFrames={360}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: 120 }}
       />
       <Composition
         id="Test"

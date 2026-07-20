@@ -8,7 +8,7 @@ import { BRAND } from './theme';
 
 const REC_W = 624, REC_H = 914; // dimensões da gravação
 
-const Phone: React.FC<{ h: number; trimBefore: number }> = ({ h, trimBefore }) => {
+export const Phone: React.FC<{ h: number; trimBefore: number }> = ({ h, trimBefore }) => {
   const w = Math.round((h * REC_W) / REC_H);
   return (
     <div style={{
@@ -28,7 +28,7 @@ const Phone: React.FC<{ h: number; trimBefore: number }> = ({ h, trimBefore }) =
 };
 
 // Brilho radial atrás do celular
-const Halo: React.FC = () => (
+export const Halo: React.FC = () => (
   <div style={{
     position: 'absolute', width: 900, height: 900, borderRadius: '50%',
     background: `radial-gradient(circle, ${BRAND.violet}55 0%, transparent 60%)`, filter: 'blur(40px)',
