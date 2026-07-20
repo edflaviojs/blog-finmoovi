@@ -37,14 +37,20 @@ async function capture(browser, calc, fmt) {
   const context = await browser.newContext({
     viewport: fmt.viewport, deviceScaleFactor: fmt.dsf,
     isMobile: !!fmt.isMobile, hasTouch: !!fmt.isMobile,
+    colorScheme: 'dark', // canal é escuro (#0d1117) — força tema escuro
     recordVideo: { dir, size: fmt.size },
   });
-  // pré-aceita o cookie (chave real do blog) → banner nunca aparece
-  await context.addInitScript(() => { try { localStorage.setItem('fm-cookie-ok', '1'); } catch (e) {} });
+  // pré-aceita cookie + força TEMA ESCURO (chaves reais do blog) antes de carregar
+  await context.addInitScript(() => {
+    try { localStorage.setItem('fm-cookie-ok', '1'); localStorage.setItem('fm-theme', 'dark'); } catch (e) {}
+  });
   const page = await context.newPage();
   try {
     await page.goto(`${BASE}/${calc.slug}/`, { waitUntil: 'networkidle', timeout: 45000 });
-    await page.evaluate(() => { const el = document.getElementById('cookie-notice'); if (el) el.remove(); }).catch(() => {});
+    await page.evaluate(() => {
+      const el = document.getElementById('cookie-notice'); if (el) el.remove();
+      document.documentElement.setAttribute('data-theme', 'dark'); // garante escuro
+    }).catch(() => {});
     await sleep(1000);
     if (calc.btn) {
       await page.click(calc.btn).catch(() => {});
