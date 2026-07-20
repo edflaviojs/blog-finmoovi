@@ -133,4 +133,7 @@ Modo Compras · Feijão R$ 1,99 · Bolacha R$ 7,98 · Açúcar R$ 1,98 · Total 
 **TELA SMART CAPTURE = 10/10 clipes** em `VIDEOS-BROLL/7-smart-capture/`.
 
 ### — Planejamento — ⏭️ PULADO (dono não inseriu dados).
-### 9. Calculadoras do blog — ⬜ (capturar de blog.finmoovi.com/ferramentas via Playwright)
+### 8. Calculadoras do blog — captura via Playwright (`scripts/capture-calcs.mjs`)
+Fonte: `blog.finmoovi.com/ferramentas/` (público, real). Cada calculadora em desktop 16:9 + celular 9:16 = **14 clipes**. Pré-aceita cookie (`localStorage fm-cookie-ok`), clica Calcular, mostra resultado + gráfico, rola. Reusa o Playwright de `../app-capture/node_modules` (via createRequire). webm → mp4 (scale 1920×1080 / 1080×1920).
+
+7 calculadoras: juros-compostos · financiamento · aposentadoria · orcamento · reserva · simulador-investimento · conversor-moedas. Em `VIDEOS-BROLL/8-calculadoras/`.
