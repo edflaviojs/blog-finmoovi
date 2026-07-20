@@ -23,9 +23,11 @@ const CALCS = [
   { slug: 'conversor-moedas', btn: null, wait: '#result-main' },
 ];
 
+// IMPORTANTE: recordVideo.size DEVE ser = viewport (senão o Playwright não escala,
+// deixa o conteúdo num canto). Upscale p/ 1920x1080 / 1080x1920 é feito no ffmpeg.
 const FORMATS = [
   { name: 'desktop-16-9', viewport: { width: 1280, height: 720 }, dsf: 1, size: { width: 1280, height: 720 } },
-  { name: 'phone-9-16', viewport: { width: 432, height: 768 }, dsf: 2, isMobile: true, size: { width: 864, height: 1536 } },
+  { name: 'phone-9-16', viewport: { width: 540, height: 960 }, dsf: 1, isMobile: true, size: { width: 540, height: 960 } },
 ];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -68,7 +70,7 @@ async function capture(browser, calc, fmt) {
 (async () => {
   const browser = await chromium.launch({ headless: true });
   const calcs = process.env.SMOKE ? [CALCS[0]] : CALCS;
-  const fmts = process.env.SMOKE ? [FORMATS[0]] : FORMATS;
+  const fmts = process.env.SMOKE ? [FORMATS[0]] : (process.env.PHONE ? [FORMATS[1]] : FORMATS);
   for (const calc of calcs) {
     for (const fmt of fmts) {
       await capture(browser, calc, fmt);
