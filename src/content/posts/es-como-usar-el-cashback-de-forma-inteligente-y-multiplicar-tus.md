@@ -22,7 +22,7 @@ seo:
 
 Cuando pagas un snack de R$ 35,00 con una tarjeta que devuelve el 2% del gasto, el retorno parece pequeño – R$ 0,70. Pero si ese [valor](/es/glossario/es-valor) se trata como ingreso extra, puede convertirse en un verdadero refuerzo para tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). La idea no es esperar que el cashback cubra todo de una vez, sino hacer que cada centavo devuelto trabaje a tu favor.
 
-## Elige la tarjeta adecuada y combina beneficios
+## Elige la tarjeta adecuada y combina [beneficios](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 No todas las tarjetas ofrecen la misma tasa de retorno. Algunas dan 1,5% en todas las compras, otras dan 5% en categorías específicas (como supermercados o estaciones de gasolina) y 1% en el resto. La clave está en alinear la tarjeta con tu patrón de consumo.
 
@@ -35,7 +35,7 @@ No todas las tarjetas ofrecen la misma tasa de retorno. Algunas dan 1,5% en toda
 
 ## Transforma el cashback en “[dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) de reserva”
 
-Muchas personas simplemente usan el crédito devuelto para pagar la factura de la tarjeta. Eso elimina el beneficio inmediato, pero pierde la oportunidad de crear una reserva. Reserva el cashback en una cuenta separada – puede ser una cuenta corriente con rendimiento automático o una cuenta digital que ofrezca rendimiento del 100% del [CDI](/es/glossario/es-cdi).
+Muchas personas simplemente usan el [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) devuelto para pagar la factura de la tarjeta. Eso elimina el beneficio inmediato, pero pierde la oportunidad de crear una reserva. Reserva el cashback en una cuenta separada – puede ser una cuenta corriente con rendimiento automático o una cuenta digital que ofrezca rendimiento del 100% del [CDI](/es/glossario/es-cdi).
 
 - Salario mensual: R$ 4.500,00
 - Gastos mensuales con tarjeta: R$ 2.000,00 (supermercado, combustible, delivery)

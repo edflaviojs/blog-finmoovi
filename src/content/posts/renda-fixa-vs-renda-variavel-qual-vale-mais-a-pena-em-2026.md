@@ -35,13 +35,13 @@ A renda fixa engloba investimentos nos quais a remuneração (juros ou rendiment
 | Produto | Onde encontrar | Taxa média 2024‑2025* | Características |
 |---------|----------------|-----------------------|-----------------|
 | CDB (Certificado de Depósito Bancário) | Bancos comerciais | 108 % do CDI (aprox. 13,2% a.a.) | Garantia do FGC até R$ 250 mil por instituição |
-| [Tesouro Direto](/glossario/tesouro-direto) – Selic | Governo Federal | 12,8 % a.a. (Tesouro Selic 2026) | Liquidez diária, risco soberano baixo |
+| [Tesouro Direto](/glossario/tesouro-direto) – Selic | Governo Federal | 12,8 % a.a. ([Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) 2026) | Liquidez diária, risco soberano baixo |
 | LCIs/LCAs (Letras de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário/Agrícola) | Bancos, corretoras | 107 % do CDI (≈ 13 % a.a.) | Isento de IR, FGC protege |
-| Debêntures de empresas | Corretoras | 9 %‑12 % a.a. (dependendo rating) | Risco de crédito da empresa emissora |
+| [Debêntures](/glossario/debentures) de empresas | Corretoras | 9 %‑12 % a.a. (dependendo rating) | Risco de crédito da empresa emissora |
 
 *Taxas baseadas em dados do Banco Central e do Tesouro Direto até dezembro de 2025.
 
-A lógica é simples: você empresta dinheiro (ou compra títulos) e recebe juros ao longo do tempo. O **principal** (valor investido) costuma ser devolvido no vencimento ou pode ser resgatado antes, dependendo do produto. Como a remuneração está atrelada a índices como o CDI ou a Selic, a variação da taxa de juros no país afeta diretamente o retorno.
+A lógica é simples: você empresta [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) (ou compra títulos) e recebe juros ao longo do tempo. O **principal** (valor investido) costuma ser devolvido no vencimento ou pode ser resgatado antes, dependendo do produto. Como a remuneração está atrelada a índices como o CDI ou a Selic, a variação da taxa de juros no país afeta diretamente o retorno.
 
 ### Vantagens da renda fixa
 
@@ -64,7 +64,7 @@ A renda variável reúne ativos cujo retorno **não é garantido** e depende da 
 
 | Produto | Onde encontrar | Rentabilidade média 2024‑2025* | Características |
 |---------|----------------|-------------------------------|-----------------|
-| Ações de empresas listadas | [Bolsa de Valores](/glossario/bolsa-de-valores) (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta volatilidade, dividendos eventuais |
+| Ações de empresas listadas | [Bolsa de Valores](/glossario/bolsa-de-valores) (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta [volatilidade](/glossario/volatilidade), [dividendos](/glossario/dividendos) eventuais |
 | ETFs (Fundos de Índice) | Corretoras | 11 %‑18 % a.a. (ex.: BOVA11) | [Diversificação](/glossario/diversificacao) automática, taxa de administração baixa |
 | Fundos de Investimento Imobiliário (FIIs) | Corretoras | 7 %‑9 % a.a. (rendimento mensal) | Recebimento de aluguéis, risco de vacância |
 | Criptomoedas | Exchanges | Varia muito (ex.: BTC 2024: +30 % a.a.) | Altíssima volatilidade, risco regulatório |

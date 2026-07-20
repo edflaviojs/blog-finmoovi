@@ -46,7 +46,7 @@ By depositing those R$ 60 into a yielding account, you accumulate R$ 720 at 
 
 ## Use Cashback to “Pay Off Debt” Smartly
 
-If you have debts with interest above 10 % per year (like credit‑card revolving or [overdraft](/en/glossario/en-cheque-especial)), cashback can be an ally to reduce those charges. Each cent you get back has a lower opportunity cost than the debt interest, so applying cashback to amortize the debt generates real savings.
+If you have debts with interest above 10 % per year (like credit‑card revolving or [overdraft](/en/glossario/en-cheque-especial)), cashback can be an ally to reduce those charges. Each cent you get back has a lower opportunity cost than the debt interest, so applying cashback to amortize the debt generates real [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet).
 
 ![Use o cashback para “pagar dívidas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
 
@@ -77,7 +77,7 @@ These numbers give you clarity to adjust the strategy over time.
 
 ## Start Today
 
-The first action doesn’t need to be complex: choose a card that offers the best cashback for your spending pattern, open a separate account to receive the [money](/en/posts/en-avoid-impulse-purchases) back, and record everything in your finance app. In less than 30 days you’ll already see the difference in your budget.
+The first action doesn’t need to be complex: choose a card that offers the best cashback for your spending pattern, open a separate account to receive the [money](/en/posts/en-avoid-impulse-purchases) back, and record everything in your finance app. In less than 30 days you’ll already see the difference in your [budget](/en/posts/en-how-to-create-personal-budget).
 
 ---
 **The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/en-creating-an-emergency-fund) is really going.**

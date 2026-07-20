@@ -27,7 +27,7 @@ There are several ways to invest in dollars in Brazil, including:
 
 * Buying dollars in cash: you can buy dollars in cash at a currency exchange office or a bank branch.
 * Investing in [dollar](/en/posts/en-quotes-semana-5-june-2026)-denominated securities: you can invest in [dollar](/en/posts/en-quotes-week-4-may-2026)-denominated securities, such as US Treasury bonds or securities issued by American companies.
-* Investing in dollar investment funds: you can invest in investment funds that aim to invest in dollars.
+* Investing in [dollar](/en/posts/en-quotes-semana-3-july-2026) investment funds: you can invest in investment funds that aim to invest in dollars.
 * Investing in American company stocks: you can invest in stocks of American companies listed on US stock exchanges.
 
 ![How to Invest in Dollars in Brazil](/images/posts/investir-em-dolar-no-brasil-2.webp)

@@ -29,7 +29,7 @@ La semana que pasó fue de gran importancia para el [mercado financiero](/es/pos
 
 La semana del 22 de junio al 29 de junio de 2026 mostró una relativa estabilidad en las tasas de cambio, con el [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) estadounidense (USD) cerrando en R$ 5.17 y el euro (EUR) en R$ 5.89. Aunque hubo fluctuaciones diarias, la tendencia general fue de leve apreciación del real frente a estas monedas. Esto se debe en parte a la confianza de los inversores en la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña y a la expectativa de que el Banco Central mantendrá una política monetaria prudente.
 
-## La Selic y su Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## La [Selic](/es/posts/es-cotizaciones-semana-3-julio-2026) y su Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 La decisión del Banco Central de mantener la tasa Selic en su nivel actual tuvo un impacto mixto en el mercado. Por un lado, los inversores que buscan rendimientos más altos en instrumentos de [renta fija](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) pueden sentirse desanimados, ya que las tasas de interés no ofrecen el mismo atractivo que en el pasado. Por otro lado, la estabilidad en la tasa Selic puede beneficiar a los sectores que dependen del [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), como el mercado inmobiliario y el consumo, al mantener las tasas de interés accesibles para los préstamos.
 

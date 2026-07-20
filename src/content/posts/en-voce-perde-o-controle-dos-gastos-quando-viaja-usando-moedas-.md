@@ -67,7 +67,7 @@ When you get back to Brazil, go to “Reports.” FinMoovi generates a summary w
 
 | **Situation** | **Before FinMoovi** | **After FinMoovi** |
 |---|---|---|
-| **Time spent closing the budget** | 2‑3 hours (manual conversion, spreadsheets) | 10‑15 minutes (data already converted) |
+| **Time spent closing the [budget](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar)** | 2‑3 hours (manual conversion, spreadsheets) | 10‑15 minutes (data already converted) |
 | **Likelihood of calculation error** | High (≈ 20 % chance) | Near zero (automatic conversion) |
 | **Consolidated view of spending** | Fragmented (different currencies in separate notes) | Single view in reais with currency‑by‑currency details |
 | **Category limit control** | Manual, relies on memory | Real‑time alerts, easy adjustments |
@@ -77,7 +77,7 @@ These numbers come from FinMoovi users who compared their experience before and 
 
 ## Data that underline the importance of precise control
 
-- **Floating exchange rates:** Brazil’s Central Bank records daily fluctuations of up to **5 %** against the dollar and euro, which can significantly affect the final value of expenses when converted after the trip. (Source: [Banco Central do Brasil](https://www.bcb.gov.br))  
+- **Floating exchange rates:** Brazil’s Central Bank records daily fluctuations of up to **5 %** against the [dollar](/en/posts/en-quotes-semana-1-july-2026) and euro, which can significantly affect the final value of expenses when converted after the trip. (Source: [Banco Central do Brasil](https://www.bcb.gov.br))  
 - **Unexpected spending:** According to [Investopedia](https://www.investopedia.com), travelers who don’t monitor expenses in real time tend to exceed their budget by up to **30 %**, mainly due to impulse purchases in foreign currency.
 
 ![Dados que reforçam a importância de um controle preciso](/images/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas--6.webp)

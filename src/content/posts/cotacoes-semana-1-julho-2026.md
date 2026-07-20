@@ -31,7 +31,7 @@ Durante a semana de 29/06/2026 a 06/07/2026, o [dólar](/posts/cotacoes-semana-4
 
 A tendência de estabilidade pode ser vista como uma oportunidade para os investidores que estão considerando investir em ativos em moedas estrangeiras. No entanto, é fundamental manter um olho atento às notícias econômicas e políticas, pois elas podem alterar rapidamente o cenário.
 
-## Comentário sobre a Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Comentário sobre a [Selic](/posts/cotacoes-semana-3-julho-2026) e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 A taxa Selic, que é a taxa básica de [juros](/glossario/juros) da [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira, continua a ser um fator crucial para os [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-). A decisão do Comitê de Política Monetária (COPOM) de manter ou alterar a Selic pode influenciar diretamente os juros dos investimentos, como CDBs, [LCI e LCA](/glossario/lci-e-lca), e também afeta a atratividade dos investimentos em [renda fixa](/glossario/renda-fixa).
 

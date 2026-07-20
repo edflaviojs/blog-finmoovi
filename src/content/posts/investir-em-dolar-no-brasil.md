@@ -22,7 +22,7 @@ Investir em [dólar](/posts/cotacoes-semana-1-junho-2026) pode ser uma forma de 
 
 O [dólar](/posts/cotacoes-semana-4-maio-2026) americano é a [moeda](/glossario/moeda) oficial dos Estados Unidos e é amplamente utilizada em transações internacionais. No Brasil, o [dólar](/posts/cotacoes-semana-5-junho-2026) é usado como uma forma de [investimento](/posts/tesouro-direto-para-iniciantes), pois pode ser comprado e vendido em bolsas de valores e corretoras de [câmbio](/glossario/cambio). Se você está considerando investir em [dólar](/posts/cotacoes-semana-2-julho-2026), é importante avaliar se faz sentido para seu [perfil de investidor](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) e objetivos financeiros.
 
-## Como Investir em Dólar no Brasil
+## Como Investir em [Dólar](/posts/cotacoes-semana-3-julho-2026) no Brasil
 Existem várias formas de investir em dólar no Brasil, incluindo:
 
 * Compra de dólar em espécie: você pode comprar dólar em espécie em uma casa de câmbio ou em uma agência bancária.

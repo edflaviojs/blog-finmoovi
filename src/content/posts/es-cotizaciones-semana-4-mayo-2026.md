@@ -25,7 +25,7 @@ La semana del 20 al 27 de mayo de 2026 estuvo marcada por movimientos significat
 
 El [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) estadounidense cerró la semana en R$ 5,03, mostrando una ligera estabilidad en relación con la semana anterior. El euro, cotizado a R$ 5,85, también mantuvo una tendencia de estabilidad con variaciones mínimas a lo largo de la semana. Esta relativa calma en las tasas de cambio es un alivio para los importadores y turistas, pero puede significar menos oportunidades para los inversores que apuestan por variaciones cambiarias.
 
-## Selic e Impacto en las [Inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
+## [Selic](/es/posts/es-cotizaciones-semana-3-julio-2026) e Impacto en las [Inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 
 La tasa Selic, actualmente en 12,25% anual, fue mantenida por el Comité de Política Monetária (Copom) del Banco Central. Esta decisión busca controlar la [inflación](/es/glossario/es-inflacao) y mantener la estabilidad económica. Para los inversores, el mantenimiento de la Selic significa que las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) con tasas de interés prefijadas, como los títulos del [Tesouro Direto](/es/posts/es-tesouro-direto-para-iniciantes), continuarán ofreciendo rendimientos atractivos, especialmente cuando se comparan con otras opciones de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) de bajo riesgo.
 

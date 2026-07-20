@@ -70,7 +70,7 @@ O **cashback inteligente** pode devolver até 12 % do valor gasto em lojas par
 
 ### 4.2. Vinho ou cerveja artesanal caseira
 - **Materiais:** garrafas reutilizadas, rótulo personalizado (impressão em casa).
-- **Investimento:** R$ 30‑R$ 40 pelos insumos.
+- **[Investimento](/posts/montando-carteira-diversificada-com-r-500):** R$ 30‑R$ 40 pelos insumos.
 
 ### 4.3. Kit “Manutenção do Carro”
 - **Itens:** óleo, filtro de ar, pano de microfibra.
@@ -86,7 +86,7 @@ O IBGE aponta que a renda média mensal dos trabalhadores brasileiros em 2023 fo
 
 
 ### 5.2. **Use listas de desejos**
-Crie uma lista no FinMoovi com itens que gostaria de dar ao pai. Cada vez que houver promoção, adicione o preço reduzido. Assim, você compra no momento certo e evita compras por impulso.
+Crie uma lista no [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) com itens que gostaria de dar ao pai. Cada vez que houver promoção, adicione o preço reduzido. Assim, você compra no momento certo e evita compras por impulso.
 
 ### 5.3. **Divida o valor em parcelas menores**
 Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **parcelamento sem [juros](/glossario/juros)**. Mas atenção: registre cada parcela no FinMoovi para não esquecer de pagar e acabar gastando mais no próximo mês.

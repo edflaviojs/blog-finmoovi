@@ -66,7 +66,7 @@ Smart **cashback** can return up to 12 % of the amount spent at partner stores
 
 ### 4.2. Homemade craft beer or wine
 - **Materials:** reused bottles, custom label (printed at home).  
-- **Investment:** R$ 30‑R$ 40 for the supplies.
+- **[Investment](/en/posts/en-montando-carteira-diversificada-com-r-500):** R$ 30‑R$ 40 for the supplies.
 
 ### 4.3. “Car Maintenance” kit
 - **Items:** oil, air filter, microfiber cloth.  
@@ -80,7 +80,7 @@ IBGE reports that the average monthly income of Brazilian workers in 2023 was **
 ![5️⃣ Early planning: the strategy that saves your wallet](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--6.webp)
 
 ### 5.2. **Use wish lists**
-Create a list in FinMoovi with items you’d like to give dad. Whenever there’s a promotion, add the reduced price. That way you buy at the right moment and avoid impulse purchases.
+Create a list in [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) with items you’d like to give dad. Whenever there’s a promotion, add the reduced price. That way you buy at the right moment and avoid impulse purchases.
 
 ### 5.3. **Split the amount into smaller installments**
 If you opt for a pricier gift (e.g., a smartwatch), see if the store offers **interest‑free installments**. But pay attention: record each installment in FinMoovi so you don’t forget to pay and end up spending more next month.

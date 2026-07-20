@@ -22,7 +22,7 @@ Invertir en [dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) puede ser un
 
 El [dólar](/es/posts/es-cotizaciones-semana-4-junio-2026) americano es la moneda oficial de los Estados Unidos y es ampliamente utilizada en transacciones internacionales. En Brasil, el [dólar](/es/posts/es-cotizaciones-semana-4-mayo-2026) es utilizado como una forma de [inversión](/es/posts/es-tesouro-direto-para-iniciantes), ya que puede ser comprado y vendido en bolsas de valores y corredores de [cambio](/es/glossario/es-cambio). Si estás considerando invertir en [dólar](/es/posts/es-cotizaciones-semana-5-junio-2026), es importante evaluar si tiene sentido para tu [perfil de inversor](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) y objetivos financieros.
 
-## Cómo Invertir en Dólar en Brasil
+## Cómo Invertir en [Dólar](/es/posts/es-cotizaciones-semana-3-julio-2026) en Brasil
 Existen varias formas de invertir en dólar en Brasil, incluyendo:
 
 * Compra de dólar en efectivo: puedes comprar dólar en efectivo en una casa de cambio o en una agencia bancaria.

@@ -29,7 +29,7 @@ La semana del 8 al 15 de junio de 2026 ha sido de gran interés para los inverso
 
 La semana comenzó con el [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) cotizando alrededor de R$ 5.05 y cerró en R$ 5.08, lo que indica una leve apreciación de la divisa estadounidense frente al real brasileño. Por otro lado, el euro inició la semana en R$ 5.85 y cerró en R$ 5.88, mostrando también una ligera tendencia al alza. Estos movimientos pueden ser atribuidos a factores como la política monetaria de los Estados Unidos, la situación económica en Europa y las expectativas de crecimiento en Brasil.
 
-## La Selic y su Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## La [Selic](/es/posts/es-cotizaciones-semana-3-julio-2026) y su Impacto en las [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 La tasa Selic, que es la tasa de interés básica de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileña, ha sido un tema de gran interés en las últimas semanas. El Banco Central decidió mantener la tasa en su nivel actual, lo que ha tenido un impacto directo en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). La decisión de no alterar la tasa Selic puede influir en la rentabilidad de las [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) a corto plazo, como los [títulos públicos](/es/posts/es-tesouro-direto-para-iniciantes) y los depósitos a plazo fijo. Es importante que los inversores consideren estas decisiones al momento de diversificar su cartera.
 

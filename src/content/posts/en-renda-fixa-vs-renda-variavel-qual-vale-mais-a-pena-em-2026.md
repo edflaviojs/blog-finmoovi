@@ -33,13 +33,13 @@ Fixed income includes investments where the remuneration (interest or yield) is 
 | Product | Where to Find | Average Rate 2024‑2025* | Features |
 |---------|----------------|-----------------------|----------|
 | CDB (Bank Deposit Certificate) | Commercial banks | 108 % of CDI (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-garantia-fgc) up to R$ 250 k per institution |
-| Treasury Direct – Selic | Federal government | 12.8 % a year (Selic 2026) | Daily liquidity, low sovereign risk |
-| LCIs/LCAs (Real Estate/Agricultural Credit Letters) | Banks, brokerages | 107 % of CDI (≈ 13 % a year) | IR‑exempt, FGC protection |
+| Treasury Direct – [Selic](/en/glossario/en-selic) | Federal government | 12.8 % a year (Selic 2026) | Daily [liquidity](/en/glossario/en-liquidez), low sovereign risk |
+| LCIs/LCAs (Real Estate/Agricultural [Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Letters) | Banks, brokerages | 107 % of CDI (≈ 13 % a year) | IR‑exempt, FGC protection |
 | Corporate [Debentures](/en/glossario/en-debentures) | Brokerages | 9 %‑12 % a year (depending on rating) | Credit risk of the issuing company |
 
 *Rates based on data from the Central Bank and Treasury Direct up to December 2025.
 
-The logic is simple: you lend money (or buy bonds) and receive interest over time. The **principal** (the amount invested) is usually returned at maturity or can be redeemed early, depending on the product. Because the remuneration is linked to indexes like the CDI or Selic, changes in the country’s interest rates affect the return directly.
+The logic is simple: you lend [money](/en/posts/en-avoid-impulse-purchases) (or buy bonds) and receive interest over time. The **principal** (the amount invested) is usually returned at maturity or can be redeemed early, depending on the product. Because the remuneration is linked to indexes like the CDI or Selic, changes in the country’s interest rates affect the return directly.
 
 ### Advantages of Fixed Income
 
@@ -50,7 +50,7 @@ The logic is simple: you lend money (or buy bonds) and receive interest over tim
 
 ### Disadvantages of Fixed Income
 
-1. **Limited profitability** – When inflation rises, fixed income can fall behind more aggressive investments.  
+1. **Limited profitability** – When [inflation](/en/glossario/en-inflacao) rises, fixed income can fall behind more aggressive investments.  
 2. **Dependence on the Selic rate** – If the Central Bank keeps rates low for a long period, returns drop.  
 3. **Possible “opportunity cost”** – Money locked in a 5‑year CDB earns less than stocks that could jump 30 % in six months.
 

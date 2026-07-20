@@ -52,7 +52,7 @@ A taxa Selic ficou em **13,75 % ao ano**, como já estava prevista nas última
 
 - **Selic:** O Copom tem reunião agendada para o final de julho. Se a inflação continuar alta, a tendência é manter a taxa ou até subir um ponto. Caso isso aconteça, a renda fixa ficará ainda mais vantajosa, enquanto as ações podem sentir mais pressão.
 
-- **Investimentos:** Aproveite a estabilidade cambial para rebalancear a carteira. Se a parte em renda fixa está abaixo do desejado, aumente a exposição. Se quiser diversificar, considere [fundos](/es/glossario/es-fundos) internacionais que já trazem o dólar ou o euro no mix.
+- **Investimentos:** Aproveite a estabilidade cambial para rebalancear a carteira. Se a parte em renda fixa está abaixo do desejado, aumente a exposição. Se quiser diversificar, considere [fundos](/es/glossario/es-fundos) internacionais que já trazem o [dólar](/es/posts/es-cotizaciones-semana-3-julio-2026) ou o euro no mix.
 
 **Resumo rápido:** o real ganhou força contra o dólar e o euro, a Selic segue alta, e a melhor jogada agora é proteger seu poder de compra com um “cushion” cambial e manter uma boa parcela da carteira em renda fixa. E não esqueça: o [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) deixa tudo isso mais simples, então vale a pena dar uma olhada!
 

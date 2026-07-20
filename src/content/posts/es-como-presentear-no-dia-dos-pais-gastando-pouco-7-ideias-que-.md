@@ -54,7 +54,7 @@ El **cashback inteligente** puede devolver hasta el 12 % del valor gastado en 
 
 1. **Elige una app de cashback** ([FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) tiene integración con socios que ofrecen cashback).  
 2. **Activa cupones** antes de finalizar la compra – sitios como *Cuponomia* o *Méliuz* suelen tener códigos válidos.  
-3. **Paga con tarjeta de crédito** que ofrezca cashback extra (hasta 1 % adicional).
+3. **Paga con [tarjeta de crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)** que ofrezca cashback extra (hasta 1 % adicional).
 
 > **Resultado:** un regalo de 120 R$ puede generar hasta 14 R$ de vuelta, reduciendo el costo efectivo.
 
@@ -80,7 +80,7 @@ El IBGE indica que el ingreso medio mensual de los trabajadores brasileños en 2
 ![5️⃣ Planificación anticipada: la estrategia que salva tu bolsillo](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--6.webp)
 
 ### 5.2. **Usa listas de deseos**
-Crea una lista en FinMoovi con los ítems que te gustaría dar a papá. Cada vez que haya una promoción, añade el precio reducido. Así, compras en el momento correcto y evitas compras impulsivas.
+Crea una lista en [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) con los ítems que te gustaría dar a papá. Cada vez que haya una promoción, añade el precio reducido. Así, compras en el momento correcto y evitas compras impulsivas.
 
 ### 5.3. **Divide el valor en cuotas más pequeñas**
 Si optas por un regalo más caro (p.ej.: smartwatch), verifica si la tienda ofrece **cuotas sin intereses**. Pero atención: registra cada cuota en FinMoovi para no olvidar pagar y acabar gastando más el mes siguiente.

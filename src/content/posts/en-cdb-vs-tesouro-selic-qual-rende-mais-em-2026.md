@@ -30,7 +30,7 @@ Treasury [Selic](/en/posts/en-quotes-semana-1-july-2026), on the other hand, is 
 To better understand the yields, let's consider some examples. Suppose you have R$1,000 to invest and are deciding between a pre-fixed CDB with 10% per year and a Treasury [Selic](/en/posts/en-quotes-semana-4-june-2026) with the current [Selic](/en/posts/en-quotes-semana-5-june-2026) rate (suppose 6% per year).
 
 - **CDB:** With the pre-fixed CDB at 10% per year, after 1 year, you would have approximately R$1,100 (R$1,000 in capital + R$100 in interest).
-- **Treasury [Selic](/en/posts/en-quotes-week-4-may-2026):** With Treasury Selic at 6% per year, after 1 year, you would have approximately R$1,060 (R$1,000 in capital + R$60 in interest).
+- **Treasury [Selic](/en/posts/en-quotes-week-4-may-2026):** With Treasury [Selic](/en/posts/en-quotes-semana-3-july-2026) at 6% per year, after 1 year, you would have approximately R$1,060 (R$1,000 in capital + R$60 in interest).
 
 ![Rendimentos e Simulações](/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026-2.webp)
 

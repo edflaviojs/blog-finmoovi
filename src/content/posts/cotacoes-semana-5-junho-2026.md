@@ -33,7 +33,7 @@ Essas taxas de câmbio são importantes para investidores que têm exposição a
 
 ## Comentário sobre a [Selic](/glossario/selic) e Impacto nos [Investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 
-A [taxa](/glossario/taxa) Selic, que é a taxa de juros básica da [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira, permaneceu estável durante a semana. A manutenção da Selic nos atuais patamares pode ter um impacto direto nos investimentos de [renda fixa](/glossario/renda-fixa), como títulos do Tesouro e CDBs. Investidores que buscam retorno com menor risco podem encontrar oportunidades atraentes nesse tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500), considerando as taxas atuais.
+A [taxa](/glossario/taxa) [Selic](/posts/cotacoes-semana-3-julho-2026), que é a taxa de juros básica da [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) brasileira, permaneceu estável durante a semana. A manutenção da Selic nos atuais patamares pode ter um impacto direto nos investimentos de [renda fixa](/glossario/renda-fixa), como títulos do Tesouro e CDBs. Investidores que buscam retorno com menor risco podem encontrar oportunidades atraentes nesse tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500), considerando as taxas atuais.
 
 ![Comentário sobre a Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-5-junho-2026-inline-3.webp)
 

@@ -54,7 +54,7 @@ Eu costumo recomendar o **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2
 
 - **Câmbio:** A expectativa é que o dólar continue em alta, mas com menos força, já que os indicadores de emprego nos EUA devem mostrar alguma desaceleração. O euro pode se estabilizar em torno de R$ 5,80, a menos que surjam novidades sobre a crise de energia na Europa.
 
-- **Selic:** O mercado ainda espera que o Copom mantenha a taxa em 13,75 % nas próximas reuniões, mas fique de olho nos comunicados de inflação. Qualquer surpresa pode abrir espaço para uma revisão.
+- **[Selic](/en/posts/en-quotes-semana-3-july-2026):** O mercado ainda espera que o Copom mantenha a taxa em 13,75 % nas próximas reuniões, mas fique de olho nos comunicados de inflação. Qualquer surpresa pode abrir espaço para uma revisão.
 
 - **Investimentos:** Com a Selic estável, a busca por alternativas de renda fixa com rentabilidade acima do CDI deve crescer. Também pode surgir alguma oportunidade em fundos de crédito privado, que costumam se beneficiar de juros mais altos.
 

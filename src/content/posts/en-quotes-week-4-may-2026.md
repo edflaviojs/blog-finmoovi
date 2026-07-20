@@ -27,7 +27,7 @@ The [US dollar](/en/posts/en-investir-em-dolar-no-brasil) closed the week at R$ 
 
 ## [Selic](/en/posts/en-quotes-semana-5-june-2026) and Impact on [Investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 
-The Selic rate, currently at 12.25% per year, was maintained by the Monetary Policy Committee (Copom) of the Central Bank. This decision aims to control [inflation](/en/glossario/en-inflacao) and maintain economic stability. For investors, the maintenance of Selic means that interest rate-fixed [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), such as [Treasury Direct](/en/glossario/en-tesouro-direto) titles, will continue to offer attractive returns, especially when compared to other low-risk [investment](/en/posts/en-tesouro-direto-para-iniciantes) options.
+The [Selic](/en/posts/en-quotes-semana-3-july-2026) rate, currently at 12.25% per year, was maintained by the Monetary Policy Committee (Copom) of the Central Bank. This decision aims to control [inflation](/en/glossario/en-inflacao) and maintain economic stability. For investors, the maintenance of Selic means that interest rate-fixed [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), such as [Treasury Direct](/en/glossario/en-tesouro-direto) titles, will continue to offer attractive returns, especially when compared to other low-risk [investment](/en/posts/en-tesouro-direto-para-iniciantes) options.
 
 ## Practical Tip for Investors
 

@@ -116,9 +116,9 @@ YNAB follows the philosophy of “giving every real a job,” encouraging users 
 ![5. YNAB (You Need A Budget) – O método “Orçamento Real”](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-6.webp)
 
 **Pros**  
-- Proven methodology that helps change your relationship with money and cut debt.  
+- Proven methodology that helps change your relationship with [money](/en/posts/en-financial-planning-for-couples) and cut debt.  
 - Syncs with banks via CSV import, keeping your data private.  
-- Detailed “where your money went” reports that simplify monthly reviews.
+- Detailed “where your [money](/en/posts/en-financial-planning-for-freelancers) went” reports that simplify monthly reviews.
 
 **Cons**  
 - No voice capture or AI automatic categorization; everything relies on manual entry.  

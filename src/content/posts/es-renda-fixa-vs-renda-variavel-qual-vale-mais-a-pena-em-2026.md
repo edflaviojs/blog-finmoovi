@@ -33,7 +33,7 @@ La renta fija engloba inversiones en las que la remuneración (interés o rendim
 | Producto | Dónde encontrar | Tasa media 2024‑2025* | Características |
 |----------|----------------|-----------------------|-----------------|
 | CDB (Certificado de Depósito Bancario) | Bancos comerciales | 108 % del CDI (aprox. 13,2 % a.a.) | Garantía del FGC hasta R$ 250 mil por institución |
-| Tesoro Directo – Selic | Gobierno Federal | 12,8 % a.a. (Tesoro Selic 2026) | Liquidez diaria, riesgo soberano bajo |
+| Tesoro Directo – [Selic](/es/glossario/es-selic) | Gobierno Federal | 12,8 % a.a. (Tesoro Selic 2026) | [Liquidez](/es/glossario/es-liquidez) diaria, riesgo soberano bajo |
 | LCIs/LCAs (Letras de Crédito Inmobiliario/Agrícola) | Bancos, corredoras | 107 % del CDI (≈ 13 % a.a.) | Exento de IR, FGC protege |
 | [Debentures](/es/glossario/es-debentures) de empresas | Corredoras | 9 %‑12 % a.a. (dependiendo del rating) | Riesgo de crédito de la empresa emisora |
 
@@ -50,9 +50,9 @@ La lógica es simple: prestas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-en
 
 ### Desventajas de la renta fija  
 
-1. **Rentabilidad limitada** – Cuando la inflación sube, la renta fija puede quedar atrás de inversiones más agresivas.  
+1. **Rentabilidad limitada** – Cuando la [inflación](/es/glossario/es-inflacao) sube, la renta fija puede quedar atrás de inversiones más agresivas.  
 2. **Dependencia de la tasa Selic** – Si el Banco Central mantiene los intereses bajos por mucho tiempo, los retornos caen.  
-3. **Posible “costo de oportunidad”** – Dinero atrapado en un CDB a 5 años rinde menos que acciones que pueden subir 30 % en seis meses.  
+3. **Posible “costo de oportunidad”** – [Dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) atrapado en un CDB a 5 años rinde menos que acciones que pueden subir 30 % en seis meses.  
 
 ---  
 
@@ -107,7 +107,7 @@ En la práctica, al comprar una acción te conviertes en socio de la empresa. Tu
 
 ## Cuándo elegir la renta fija  
 
-1. **Objetivo a corto plazo** – Si necesitas el dinero en hasta 2 años (ej.: reserva de emergencia, viaje), la renta fija garantiza que el capital se preserve.  
+1. **Objetivo a corto plazo** – Si necesitas el [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) en hasta 2 años (ej.: reserva de emergencia, viaje), la renta fija garantiza que el capital se preserve.  
 2. **Perfil conservador** – Quien no tolera ver oscilar el valor de la inversión prefiere la seguridad de un CDB o Tesoro.  
 3. **Entorno de intereses altos** – Cuando la Selic está por encima del 12 % a.a., la renta fija ya ofrece retornos bastante atractivos.  
 4. **Necesidad de ingresos** – LCIs/LCAs y algunas debentures pagan intereses mensuales, generando flujo de caja estable.  

@@ -27,7 +27,7 @@ The [dollar](/en/posts/en-quotes-semana-3-june-2026) showed a slight increase th
 
 ## [Selic](/en/posts/en-quotes-week-4-may-2026) and Impact on Investments
 
-The [Selic rate](/en/glossario/en-selic), which is the [economy](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)'s base [interest](/en/glossario/en-juros) rate, continues to be an important factor for investments. With the Selic at 12.25% per year, fixed-income investments, such as treasury bonds, continue attracting the attention of many investors. However, it's important to remember that high interest rates can also increase [financing](/en/glossario/en-financiamento) costs for businesses and consumers, which can affect economic growth. Therefore, it's essential to keep an eye on economic news and adjust your [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) strategy accordingly.
+The [Selic rate](/en/glossario/en-selic), which is the [economy](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)'s base [interest](/en/glossario/en-juros) rate, continues to be an important factor for investments. With the [Selic](/en/posts/en-quotes-semana-3-july-2026) at 12.25% per year, fixed-income investments, such as treasury bonds, continue attracting the attention of many investors. However, it's important to remember that high interest rates can also increase [financing](/en/glossario/en-financiamento) costs for businesses and consumers, which can affect economic growth. Therefore, it's essential to keep an eye on economic news and adjust your [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) strategy accordingly.
 
 ## Practical Tip for Individual Investors
 

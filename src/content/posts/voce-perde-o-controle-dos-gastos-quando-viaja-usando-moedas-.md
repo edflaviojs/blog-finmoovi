@@ -46,7 +46,7 @@ O legal é que o FinMoovi não é só mais um “calculadora de câmbio”. Ele 
 ## Passo a passo: como usar o recurso multi‑moeda na prática
 
 ### 1. Defina sua moeda base
-Ao abrir o FinMoovi pela primeira vez, escolha o real (R$) como moeda padrão. Você pode mudar a qualquer momento nas configurações, mas manter o real facilita o acompanhamento do seu orçamento familiar.
+Ao abrir o FinMoovi pela primeira vez, escolha o real (R$) como moeda padrão. Você pode mudar a qualquer momento nas configurações, mas manter o real facilita o acompanhamento do seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) familiar.
 
 ![Passo a passo: como usar o recurso multi‑moeda na prática](/images/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas--4.webp)
 
@@ -59,7 +59,7 @@ Monte categorias como “Aeroporto”, “Restaurantes”, “Lembretes de Souve
 Ao comprar aquele ingresso em Paris, abra o app, clique em “+ Nova Despesa”, selecione a categoria “Lazer” e, no campo de [valor](/glossario/valor), digite **30**. Logo abaixo, há um menu suspenso onde você escolhe **Euro (EUR)**. O FinMoovi traz a cotação do dia (por exemplo, 1 EUR = R$ 5,40) e mostra o valor convertido automaticamente (**R$ 162,00**). Você ainda pode adicionar uma nota “Museu do Louvre”.
 
 ### 4. Salve e veja o resumo
-Depois de salvar, a despesa aparece no seu painel principal. No canto superior, você vê o total gasto em reais, mas ao abrir a aba “Detalhes por Moeda”, percebe que ainda tem **€ 30**, **£ 12** e **R$ 80** listados separadamente, tudo convertido. Assim, fica fácil perceber quanto cada moeda está impactando seu orçamento.
+Depois de salvar, a despesa aparece no seu painel principal. No canto superior, você vê o total gasto em reais, mas ao abrir a aba “Detalhes por Moeda”, percebe que ainda tem **€ 30**, **£ 12** e **R$ 80** listados separadamente, tudo convertido. Assim, fica fácil perceber quanto cada moeda está impactando seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar).
 
 ### 5. Ajuste o limite se precisar
 Se perceber que já gastou muito em alimentação em Londres, basta editar o limite da categoria “Alimentação” para evitar surpresas na conta final. O app enviará notificações quando estiver perto de ultrapassar o teto.

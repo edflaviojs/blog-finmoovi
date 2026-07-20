@@ -31,7 +31,7 @@ Además, la mayoría de las hojas no ofrece **seguridad** robusta (cualquier per
 ## 1. [Mobills](/es/posts/es-5-alternativas-ao-mobills-em-2026) – El clásico brasileño
 
 **Descripción**  
-Mobills es uno de los aplicativos más antiguos de Brasil para gestión de [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). En dos frases, ofrece control de gastos, planificación de [presupuesto](/es/posts/es-como-crear-presupuesto-personal) y visualización de metas, todo en una interfaz colorida e intuitiva.
+Mobills es uno de los aplicativos más antiguos de Brasil para gestión de [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). En dos frases, ofrece [control de gastos](/es/posts/es-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-), planificación de [presupuesto](/es/posts/es-como-crear-presupuesto-personal) y visualización de metas, todo en una interfaz colorida e intuitiva.
 
 ![1. Mobills – O clássico brasileiro](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-2.webp)
 
@@ -52,7 +52,7 @@ Gratuito (con anuncios) – Plan Premium a partir de R$ 14,90/mes.
 ## 2. FinMoovi – El nuevo competidor multifuncional
 
 **Descripción**  
-FinMoovi llega al mercado como una app “todo-en-uno” que combina control de gastos, presupuesto y además permite operar en varias monedas. En dos frases, destaca **captura inteligente por voz**, **categorización automática con IA** y **funcionamiento offline**, ideal para quien no quiere depender de internet todo el tiempo.
+FinMoovi llega al mercado como una app “todo-en-uno” que combina [control de gastos](/es/posts/es-metodo-50-30-20-para-orcamento), presupuesto y además permite operar en varias monedas. En dos frases, destaca **captura inteligente por voz**, **categorización automática con IA** y **funcionamiento offline**, ideal para quien no quiere depender de internet todo el tiempo.
 
 **Pros**
 - **Multi‑moneda:** convierte automáticamente valores en dólares, euros o reales, usando tasas actualizadas del Banco Central.

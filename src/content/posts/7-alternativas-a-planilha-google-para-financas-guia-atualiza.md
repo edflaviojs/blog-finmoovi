@@ -44,7 +44,7 @@ O Mobills é um dos aplicativos mais antigos do Brasil para gestão de [finança
 
 **Contras**
 - A versão gratuita tem limite de categorias e não permite exportar relatórios em PDF.
-- Não oferece suporte a múltiplas moedas, o que pode ser um problema para quem viaja ou faz compras em dólar.
+- Não oferece suporte a múltiplas moedas, o que pode ser um problema para quem viaja ou faz compras em [dólar](/posts/cotacoes-semana-1-julho-2026).
 
 **Preço**
 Gratuito (com anúncios) – Plano Premium a partir de R$ 14,90/mês.
@@ -99,7 +99,7 @@ Plano Free limitado – Plano Premium a partir de R$ 12,90/mês.
 Money Lover combina controle de despesas com técnicas de mudança de hábito, como metas de [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e alertas de “gasto excessivo”. Em duas frases, ele traz um visual de calendário que destaca os dias em que você ultrapassou o orçamento e permite criar “bolsões” de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) para projetos específicos.
 
 **Prós**
-- Sistema de “bolsões” (envelopes virtuais) que ajuda a separar dinheiro para viagens, carro ou emergências.
+- Sistema de “bolsões” (envelopes virtuais) que ajuda a separar [dinheiro](/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re) para viagens, carro ou emergências.
 - Alertas de gasto excessivo configuráveis por categoria ou [valor](/glossario/valor).
 - Disponível em português, inglês e espanhol, facilitando uso por quem tem família bilíngue.
 

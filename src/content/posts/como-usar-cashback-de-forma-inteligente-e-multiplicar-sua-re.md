@@ -83,7 +83,7 @@ Esses números dão clareza para ajustar a estratégia ao longo do tempo.
 
 ## Comece hoje
 
-A primeira ação não precisa ser complexa: escolha um cartão que ofereça o melhor cashback para o seu padrão de consumo, abra uma conta separada para receber o dinheiro de volta e registre tudo no seu app de finanças. Em menos de 30 dias, você já verá a diferença no seu [orçamento](/posts/como-criar-orcamento-pessoal).
+A primeira ação não precisa ser complexa: escolha um cartão que ofereça o melhor cashback para o seu padrão de consumo, abra uma conta separada para receber o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta e registre tudo no seu app de finanças. Em menos de 30 dias, você já verá a diferença no seu [orçamento](/posts/como-criar-orcamento-pessoal).
 
 ---
-**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu dinheiro está indo de verdade.**
+**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) está indo de verdade.**
