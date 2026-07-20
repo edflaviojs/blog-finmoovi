@@ -46,7 +46,12 @@ jobs:
       - name: Commit candidatos (se houver)
         id: commit
         run: |
-          git add public/images/sazonal
+          # A pasta só existe quando o script gera candidatos; nas semanas sem
+          # evento sazonal na janela ela não existe e `git add` num caminho
+          # inexistente aborta (exit 128). Só adiciona se a pasta existir.
+          if [ -d public/images/sazonal ]; then
+            git add public/images/sazonal
+          fi
           if git diff --cached --quiet; then
             echo "Sem candidatos novos"
             echo "committed=false" >> "$GITHUB_OUTPUT"
