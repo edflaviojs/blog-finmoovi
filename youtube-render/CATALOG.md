@@ -70,7 +70,18 @@ Mastercard Itaú · Fatura R$ 1.240,00 · Limite R$ 5.000,00 · Disponível R$ 3
 
 **TELA FLUXO = 10/10 clipes** em `VIDEOS-BROLL/2-fluxo-caixa/`.
 
-### 4. Extrato — ⬜ · footage ~480s (Nubank conciliado)
+### 4. Extrato — dados: `src/broll/extrato.ts` · footage frame 14400 (~480s)
+Nubank conciliado · Saldo Atual R$ 3.754,91 · Receitas R$ 6.500 · Despesas R$ 3.395,09.
+
+| Estilo | Short | Long | Composição |
+|--------|:---:|:---:|-----------|
+| C · 3D cards | ✅ | ✅ | `Extrato3DShort` / `Extrato3DLong` |
+| E · Lista lançamentos (novo) | ✅ | ✅ | `ExtratoListaShort` / `ExtratoListaLong` |
+| A · Moldura | ✅ | ✅ | `ExtratoFrameShort` / `ExtratoFrameLong` |
+| B · Scroll | ✅ | ✅ | `ExtratoScrollShort` / `ExtratoScrollLong` |
+| D · Tela 3D | ✅ | ✅ | `ExtratoScreen3DShort` / `ExtratoScreen3DLong` |
+
+**TELA EXTRATO = 10/10 clipes** em `VIDEOS-BROLL/3-extrato/`.
 ### 5. Balanço — ⬜
 ### 6. Compras — ⬜ · footage ~720s (Modo Compras) / ~840s (relatório)
 ### 7. Planejamento — ⬜

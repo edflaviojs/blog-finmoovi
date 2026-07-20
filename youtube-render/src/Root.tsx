@@ -8,9 +8,12 @@ import { CreditCards3DLong, CreditCards3DShort } from './CreditCards3D';
 import { CartoesCountUpLong, CartoesCountUpShort } from './CartoesCountUp';
 import { FluxoCaixa3DLong, FluxoCaixa3DShort } from './FluxoCaixa3D';
 import { FluxoBarrasLong, FluxoBarrasShort } from './FluxoBarras';
+import { Extrato3DLong, Extrato3DShort } from './Extrato3D';
+import { ExtratoListaLong, ExtratoListaShort } from './ExtratoLista';
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
 import { cartoes } from './broll/cartoes';
 import { fluxo } from './broll/fluxo';
+import { extrato } from './broll/extrato';
 import roteiro from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
 const FPS = 30;
@@ -254,6 +257,93 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ trimBefore: fluxo.footageFrame }}
+      />
+      {/* ── TELA 3: EXTRATO ── */}
+      <Composition
+        id="Extrato3DShort"
+        component={Extrato3DShort}
+        durationInFrames={210}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Extrato3DLong"
+        component={Extrato3DLong}
+        durationInFrames={210}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ExtratoListaShort"
+        component={ExtratoListaShort}
+        durationInFrames={210}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ExtratoListaLong"
+        component={ExtratoListaLong}
+        durationInFrames={210}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ExtratoFrameShort"
+        component={AppBrollShort}
+        durationInFrames={240}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: extrato.footageFrame }}
+      />
+      <Composition
+        id="ExtratoFrameLong"
+        component={AppBrollLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: extrato.footageFrame }}
+      />
+      <Composition
+        id="ExtratoScrollShort"
+        component={AppScrollShort}
+        durationInFrames={360}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: extrato.footageFrame }}
+      />
+      <Composition
+        id="ExtratoScrollLong"
+        component={AppScrollLong}
+        durationInFrames={360}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: extrato.footageFrame }}
+      />
+      <Composition
+        id="ExtratoScreen3DShort"
+        component={AppScreen3DShort}
+        durationInFrames={240}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: extrato.footageFrame }}
+      />
+      <Composition
+        id="ExtratoScreen3DLong"
+        component={AppScreen3DLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: extrato.footageFrame }}
       />
       <Composition
         id="AppScreen3DShort"
