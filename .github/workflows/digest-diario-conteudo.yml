@@ -38,9 +38,12 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
         run: |
-          HORA=$(TZ=Europe/Lisbon date +%H)
-          if [ "$HORA" != "07" ]; then
-            echo "Hora em Lisboa=$HORA — não são 07h. Pulando (evita e-mail duplicado)."
-            exit 0
+          # Guarda de horário só no agendamento; execução manual (workflow_dispatch) sempre envia p/ teste.
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            HORA=$(TZ=Europe/Lisbon date +%H)
+            if [ "$HORA" != "07" ]; then
+              echo "Hora em Lisboa=$HORA — não são 07h. Pulando (evita e-mail duplicado)."
+              exit 0
+            fi
           fi
           node src/scripts/automacoes/digest-diario-conteudo.js
