@@ -77,7 +77,7 @@ These numbers give you clarity to adjust the strategy over time.
 
 ## Start Today
 
-The first action doesn’t need to be complex: choose a card that offers the best cashback for your spending pattern, open a separate account to receive the [money](/en/posts/en-avoid-impulse-purchases) back, and record everything in your finance app. In less than 30 days you’ll already see the difference in your [budget](/en/posts/en-how-to-create-personal-budget).
+The first action doesn’t need to be complex: choose a card that offers the best cashback for your spending pattern, open a separate account to receive the [money](/en/posts/en-avoid-impulse-purchases) back, and record everything in your [finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) app. In less than 30 days you’ll already see the difference in your [budget](/en/posts/en-how-to-create-personal-budget).
 
 ---
 **The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/en-creating-an-emergency-fund) is really going.**

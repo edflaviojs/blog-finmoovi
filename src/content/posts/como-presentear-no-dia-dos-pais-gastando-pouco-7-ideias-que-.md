@@ -99,13 +99,13 @@ Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **p
 | 2 | **Evite “última hora”** | Comprar de última hora geralmente custa mais. |
 | 3 | **Combine presentes com amigos da família** | Dividir o custo permite um presente maior por menos. |
 | 4 | **Use a regra dos 30 dias** (para compras não essenciais) | Dá tempo para refletir se é realmente necessário. |
-| 5 | **Registre tudo no FinMoovi** | Controle total dos [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), evita surpresas no fim do mês. |
+| 5 | **Registre tudo no [FinMoovi](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)** | Controle total dos [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), evita surpresas no fim do mês. |
 
 ## 7️⃣ Conclusão: presente que cabe no bolso e no coração
 
 Presentear o pai não precisa ser sinônimo de gasto exagerado. Com um limite bem definido, aproveitando cashback, cupons e ideias DIY, você demonstra carinho e ainda mantém a saúde financeira da família. Lembre‑se de que o valor simbólico de um gesto costuma ser maior do que o preço de um objeto caro.
 
-> **Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês.**
+> **Use o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) para controlar seus gastos e não se surpreender no fim do mês.**
 
 ---
 

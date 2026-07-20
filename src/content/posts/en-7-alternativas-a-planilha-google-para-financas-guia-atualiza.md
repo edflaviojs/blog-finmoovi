@@ -52,7 +52,7 @@ Free (with ads) – Premium plan from R$ 14.90/month.
 ## 2. FinMoovi – The new multifunctional competitor
 
 **Description**  
-FinMoovi arrives as an “all‑in‑one” app that combines expense control, budgeting, and multi‑currency handling. In two sentences, it highlights **smart voice capture**, **AI‑driven automatic categorization**, and **offline operation**, perfect for anyone who doesn’t want to rely on the internet all the time.
+FinMoovi arrives as an “all‑in‑one” app that combines [expense control](/en/posts/en-metodo-50-30-20-para-orcamento), budgeting, and multi‑currency handling. In two sentences, it highlights **smart voice capture**, **AI‑driven automatic categorization**, and **offline operation**, perfect for anyone who doesn’t want to rely on the internet all the time.
 
 **Pros**  
 - **Multi‑currency:** automatically converts amounts in dollars, euros, or reais using the Central Bank’s latest rates.  
@@ -152,7 +152,7 @@ The best app depends on your **financial profile** and the **features you need**
 | **Basic user who wants to leave the spreadsheet** | Simple control, no need for multiple currencies or advanced AI. | **Mobills** – provides everything most beginners need, with a free tier sufficient to start. |
 | **Traveler or anyone dealing with different currencies** | Automatic conversion, offline use, and quick capture. | **FinMoovi** – the mix of multi‑currency, offline capability, and smart voice capture makes it the most complete choice. |
 | **Freelancer/small business owner** | Cash flow, tax reports, and card integration. | **Organizze** – business‑focused with ready‑to‑use accounting reports. |
-| **Habit‑changer who wants “envelopes”** | Savings goals, overspend alerts. | **Money Lover** – virtual envelopes and customizable alerts. |
+| **Habit‑changer who wants “envelopes”** | [Savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) goals, overspend alerts. | **Money Lover** – virtual envelopes and customizable alerts. |
 | **Method‑lover who wants a strong community** | Rigorous budgeting methodology and deep reports. | **YNAB** – despite lacking AI, its “give every real a job” philosophy can transform your financial habits. |
 
 **Final tip:** If you’re still unsure, try two apps at once (the free versions let you do that). Use each for two weeks and see which workflow fits your daily routine better. Remember, a tool is only as good as the discipline you keep when logging your expenses.

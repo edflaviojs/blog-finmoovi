@@ -52,7 +52,7 @@ Gratuito (con anuncios) – Plan Premium a partir de R$ 14,90/mes.
 ## 2. FinMoovi – El nuevo competidor multifuncional
 
 **Descripción**  
-FinMoovi llega al mercado como una app “todo-en-uno” que combina [control de gastos](/es/posts/es-metodo-50-30-20-para-orcamento), presupuesto y además permite operar en varias monedas. En dos frases, destaca **captura inteligente por voz**, **categorización automática con IA** y **funcionamiento offline**, ideal para quien no quiere depender de internet todo el tiempo.
+FinMoovi llega al mercado como una app “todo-en-uno” que combina [control de gastos](/es/posts/es-metodo-50-30-20-para-orcamento), [presupuesto](/es/posts/es-organizar-finanzas-pareja) y además permite operar en varias monedas. En dos frases, destaca **captura inteligente por voz**, **categorización automática con IA** y **funcionamiento offline**, ideal para quien no quiere depender de internet todo el tiempo.
 
 **Pros**
 - **Multi‑moneda:** convierte automáticamente valores en dólares, euros o reales, usando tasas actualizadas del Banco Central.
@@ -61,7 +61,7 @@ FinMoovi llega al mercado como una app “todo-en-uno” que combina [control de
 
 **Contras**
 - La IA aún puede equivocarse en categorías muy específicas, requiriendo revisión manual ocasional.
-- La versión completa (sin anuncios) tiene costo mensual que puede ser alto para quien tiene presupuesto ajustado.
+- La versión completa (sin anuncios) tiene costo mensual que puede ser alto para quien tiene [presupuesto](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) ajustado.
 
 **Precio**  
 Versión básica gratuita (con anuncios) – Versión Pro a R$ 19,90/mes o R$ 199,90/año.

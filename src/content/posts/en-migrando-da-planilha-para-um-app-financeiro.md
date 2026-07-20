@@ -21,7 +21,7 @@ seo:
 If you're one of the people who use spreadsheets to manage your finances, you're not alone. Many of us started using spreadsheets because of their flexibility, free access, and customization. However, as time passes, we may realize that the spreadsheet is no longer sufficient to meet our financial needs. In this article, we'll explore how migrating from a spreadsheet to a financial app can be a good option for you.
 
 ## Advantages of Spreadsheets
-Before we talk about financial apps, it's essential to recognize the advantages of spreadsheets. They are:
+Before we talk about [financial apps](/en/posts/en-tecnica-dos-envelopes-digitais-guia-pratico-para-2024), it's essential to recognize the advantages of spreadsheets. They are:
 * Flexible: you can create customized columns and rows to meet your specific needs.
 * Free: most spreadsheets are free, which is a significant benefit for those who are starting to manage their finances.
 * Customizable: you can personalize your spreadsheet to include only the information that's important to you.

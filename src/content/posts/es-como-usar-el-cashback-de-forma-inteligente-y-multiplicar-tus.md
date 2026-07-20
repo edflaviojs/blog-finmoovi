@@ -76,6 +76,6 @@ Estos números dan claridad para ajustar la estrategia a lo largo del tiempo.
 
 ## Empieza hoy
 
-La primera acción no necesita ser compleja: elige una tarjeta que ofrezca el mejor cashback para tu patrón de consumo, abre una cuenta separada para recibir el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) de vuelta y registra todo en tu app de finanzas. En menos de 30 días, ya verás la diferencia en tu [presupuesto](/es/posts/es-como-crear-presupuesto-personal).
+La primera acción no necesita ser compleja: elige una tarjeta que ofrezca el mejor cashback para tu patrón de consumo, abre una cuenta separada para recibir el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) de vuelta y registra todo en tu [app de finanzas](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar). En menos de 30 días, ya verás la diferencia en tu [presupuesto](/es/posts/es-como-crear-presupuesto-personal).
 
 **El siguiente paso es tuyo. [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) y descubre a dónde va realmente tu [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado).**

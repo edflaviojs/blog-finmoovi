@@ -32,7 +32,7 @@ Fixed income includes [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende
 
 | Product | Where to Find | Average Rate 2024‑2025* | Features |
 |---------|----------------|-----------------------|----------|
-| [CDB](/en/glossario/en-cdb) (Bank Deposit Certificate) | Commercial banks | 108 % of CDI (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-garantia-fgc) up to R$ 250 k per institution |
+| [CDB](/en/glossario/en-cdb) (Bank Deposit Certificate) | Commercial banks | 108 % of [CDI](/en/glossario/en-cdi) (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-garantia-fgc) up to R$ 250 k per institution |
 | Treasury Direct – [Selic](/en/glossario/en-selic) | Federal government | 12.8 % a year (Selic 2026) | Daily [liquidity](/en/glossario/en-liquidez), low sovereign risk |
 | LCIs/LCAs (Real Estate/Agricultural [Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Letters) | Banks, brokerages | 107 % of CDI (≈ 13 % a year) | IR‑exempt, FGC protection |
 | Corporate [Debentures](/en/glossario/en-debentures) | Brokerages | 9 %‑12 % a year (depending on rating) | Credit risk of the issuing company |
@@ -63,7 +63,7 @@ Variable income gathers assets whose return **is not guaranteed** and depends on
 | Product | Where to Find | Average Return 2024‑2025* | Features |
 |---------|----------------|---------------------------|----------|
 | Listed company stocks | [Stock](/en/glossario/en-stock) exchange (B3) | 12 %‑20 % a year (Ibovespa index) | High [volatility](/en/glossario/en-volatilidade), occasional [dividends](/en/glossario/en-dividendos) |
-| ETFs (Index Funds) | Brokerages | 11 %‑18 % a year (e.g., BOVA11) | Automatic diversification, low management fee |
+| ETFs (Index Funds) | Brokerages | 11 %‑18 % a year (e.g., BOVA11) | Automatic [diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel), low management fee |
 | Real Estate Investment Funds (FIIs) | Brokerages | 7 %‑9 % a year (monthly yield) | Rental income, vacancy risk |
 | Cryptocurrencies | Exchanges | Varies widely (e.g., BTC 2024: +30 % a year) | Extremely volatile, regulatory risk |
 
@@ -99,7 +99,7 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 | **Tax implication** | Regressive IR (15 %‑22.5 %) or exempt (LCI/LCA) | IR of 15 % (stocks) or 20 % (others) |
 | **Management complexity** | Simple (just pick the bond) | More complex (market analysis) |
 | **Suitable for** | Conservatives, short/medium term, emergency reserve | Aggressive, medium/long term, growth seekers |
-| **Product example** | Selic Treasury 2026 (12.8 % a year) | BOVA11 ETF (Ibovespa) – 15 % a year |
+| **Product example** | Selic Treasury 2026 (12.8 % a year) | BOVA11 [ETF](/en/glossario/en-etf) (Ibovespa) – 15 % a year |
 
 ![Comparative Table](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-4.webp)
 
@@ -107,7 +107,7 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 
 ## When to Choose Fixed Income
 
-1. **Short‑term goal** – If you need the money within up to 2 years (e.g., [emergency fund](/en/glossario/en-reserva-de-emergencia), [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)), fixed income ensures the capital stays preserved.  
+1. **Short‑term goal** – If you need the [money](/en/posts/en-difference-between-investing-and-saving) within up to 2 years (e.g., [emergency fund](/en/glossario/en-reserva-de-emergencia), [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)), fixed income ensures the capital stays preserved.  
 2. **Conservative profile** – Those who can’t tolerate seeing their investment value swing prefer the safety of a CDB or Treasury.  
 3. **High‑interest environment** – When the Selic is above 12 % a year, fixed income already offers very attractive returns.  
 4. **Need for income** – LCIs/LCAs and some debentures pay monthly interest, generating a stable cash flow.

@@ -57,7 +57,7 @@ Aquí están los pasos para organizar el [presupuesto](/es/posts/es-como-crear-p
 
 
 ## Gestionando las Finanzas
-Para mantener las finanzas en orden, es crucial tener un sistema de control. Esto puede incluir el uso de hojas de cálculo electrónicas o aplicaciones financieras. El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre [gestión financiera](/es/posts/es-montando-carteira-diversificada-com-r-500) y [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas).
+Para mantener las finanzas en orden, es crucial tener un sistema de control. Esto puede incluir el uso de hojas de cálculo electrónicas o [aplicaciones financieras](/es/posts/es-tecnica-dos-envelopes-digitais-guia-pratico-para-2024). El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre [gestión financiera](/es/posts/es-montando-carteira-diversificada-com-r-500) y [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas).
 
 ## Comienza con 5 minutos por día
 Para mantener el [presupuesto](/es/posts/es-como-crear-presupuesto-personal) bajo control, dedica algunos minutos todos los días para revisar los gastos y actualizar el [presupuesto](/es/posts/es-como-crear-presupuesto-personal). Esto puede hacerse durante el desayuno o antes de dormir. Recuerda que la clave para el éxito es la consistencia y la comunicación entre los socios. Visita el sitio web de la [Receita Federal](https://www.gov.br/receitafederal) para obtener más información sobre [planificación financiera](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) y tributación.

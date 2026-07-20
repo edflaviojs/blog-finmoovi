@@ -93,13 +93,13 @@ If you opt for a pricier gift (e.g., a smartwatch), see if the store offers **in
 | 2 | **Avoid “last‑minute” purchases** | Buying at the last minute usually costs more. |
 | 3 | **Combine gifts with family friends** | Splitting the cost allows a bigger gift for less. |
 | 4 | **Use the 30‑day rule** (for non‑essential purchases) | Gives time to reflect if it’s truly needed. |
-| 5 | **Log everything in FinMoovi** | Full control of expenses, avoids surprises at month‑end. |
+| 5 | **Log everything in [FinMoovi](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)** | Full control of expenses, avoids surprises at month‑end. |
 
 ## 7️⃣ Conclusion: a gift that fits both the wallet and the heart
 
 Gifting dad doesn’t have to mean extravagant spending. With a well‑defined limit, leveraging cashback, coupons, and DIY ideas, you show affection while keeping the family’s financial health intact. Remember that the symbolic value of a gesture is often greater than the price of an expensive object.
 
-> **Use FinMoovi to track your spending and avoid surprises at the end of the month.**
+> **Use [FinMoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) to track your spending and avoid surprises at the end of the month.**
 
 ---
 

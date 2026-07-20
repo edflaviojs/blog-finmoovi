@@ -26,7 +26,7 @@ Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro sal
 
 ## Como funciona a renda fixa
 
-A renda fixa engloba investimentos nos quais a remuneração (juros ou rendimento) já está **pré‑definida** ou tem um limite máximo. O investidor sabe, no momento da aplicação, qual será a taxa de retorno ou, no mínimo, qual o intervalo de variação. Os principais produtos são:
+A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario/juros) ou rendimento) já está **pré‑definida** ou tem um limite máximo. O investidor sabe, no momento da aplicação, qual será a taxa de retorno ou, no mínimo, qual o intervalo de variação. Os principais produtos são:
 
 ![Como funciona a renda fixa](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-2.webp)
 
@@ -35,7 +35,7 @@ A renda fixa engloba investimentos nos quais a remuneração (juros ou rendiment
 | Produto | Onde encontrar | Taxa média 2024‑2025* | Características |
 |---------|----------------|-----------------------|-----------------|
 | CDB (Certificado de Depósito Bancário) | Bancos comerciais | 108 % do CDI (aprox. 13,2% a.a.) | Garantia do FGC até R$ 250 mil por instituição |
-| [Tesouro Direto](/glossario/tesouro-direto) – Selic | Governo Federal | 12,8 % a.a. ([Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) 2026) | [Liquidez](/glossario/liquidez) diária, risco soberano baixo |
+| [Tesouro Direto](/glossario/tesouro-direto) – [Selic](/posts/cotacoes-semana-1-julho-2026) | Governo Federal | 12,8 % a.a. ([Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) 2026) | [Liquidez](/glossario/liquidez) diária, risco soberano baixo |
 | LCIs/LCAs (Letras de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário/Agrícola) | Bancos, corretoras | 107 % do CDI (≈ 13 % a.a.) | Isento de IR, FGC protege |
 | [Debêntures](/glossario/debentures) de empresas | Corretoras | 9 %‑12 % a.a. (dependendo rating) | Risco de crédito da empresa emissora |
 
@@ -54,7 +54,7 @@ A lógica é simples: você empresta [dinheiro](/posts/como-criar-uma-reserva-de
 
 1. **Rentabilidade limitada** – Quando a [inflação](/glossario/inflacao) sobe, a renda fixa pode ficar atrás de investimentos mais agressivos.
 2. **Dependência da taxa Selic** – Se o Banco Central mantiver juros baixos por muito tempo, os retornos caem.
-3. **Possível “custo de oportunidade”** – [Dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) preso em um CDB de 5 anos rende menos que ações que podem subir 30 % em seis meses.
+3. **Possível “custo de oportunidade”** – [Dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) preso em um CDB de 5 anos rende menos que [ações](/glossario/acoes) que podem subir 30 % em seis meses.
 
 ---
 
@@ -65,7 +65,7 @@ A renda variável reúne ativos cujo retorno **não é garantido** e depende da 
 | Produto | Onde encontrar | Rentabilidade média 2024‑2025* | Características |
 |---------|----------------|-------------------------------|-----------------|
 | Ações de empresas listadas | [Bolsa de Valores](/glossario/bolsa-de-valores) (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta [volatilidade](/glossario/volatilidade), [dividendos](/glossario/dividendos) eventuais |
-| ETFs (Fundos de Índice) | Corretoras | 11 %‑18 % a.a. (ex.: BOVA11) | [Diversificação](/glossario/diversificacao) automática, taxa de administração baixa |
+| ETFs ([Fundos](/glossario/fundos) de Índice) | Corretoras | 11 %‑18 % a.a. (ex.: BOVA11) | [Diversificação](/glossario/diversificacao) automática, taxa de administração baixa |
 | Fundos de Investimento Imobiliário (FIIs) | Corretoras | 7 %‑9 % a.a. (rendimento mensal) | Recebimento de aluguéis, risco de vacância |
 | Criptomoedas | Exchanges | Varia muito (ex.: BTC 2024: +30 % a.a.) | Altíssima volatilidade, risco regulatório |
 
@@ -147,7 +147,7 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 
 ## Veredicto
 
-Não existe “melhor” absoluto; a escolha depende **do seu perfil, prazo e objetivo**. Se você ainda está formando o hábito de economizar, tem medo de ver seu dinheiro “desaparecer” e precisa de liquidez, a **renda fixa** deve ser a base da sua carteira. Ela protege seu capital, oferece rendimento estável e ainda permite a construção de uma reserva de emergência.
+Não existe “melhor” absoluto; a escolha depende **do seu perfil, prazo e objetivo**. Se você ainda está formando o hábito de economizar, tem medo de ver seu [dinheiro](/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re) “desaparecer” e precisa de liquidez, a **renda fixa** deve ser a base da sua carteira. Ela protege seu capital, oferece rendimento estável e ainda permite a construção de uma reserva de emergência.
 
 Por outro lado, se você tem **tempo de sobra**, aceita a montanha‑russa dos mercados e quer buscar retornos que superem a inflação de forma confortável, a **renda variável** pode ser a principal alavanca de crescimento. A recomendação mais equilibrada costuma ser **misturar os dois mundos**: manter uma parcela segura (renda fixa) e destinar o restante a oportunidades de maior retorno (renda variável).
 

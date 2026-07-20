@@ -26,14 +26,14 @@ Si acabas de abrir una cuenta en un banco o de recibir tu primer sueldo, la prim
 
 ## Cómo funciona la renta fija  
 
-La renta fija engloba inversiones en las que la remuneración (interés o rendimiento) ya está **pre‑definida** o tiene un límite máximo. El inversor sabe, en el momento de la aplicación, cuál será la tasa de retorno o, al menos, cuál es el rango de variación. Los principales productos son:  
+La renta fija engloba [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en las que la remuneración (interés o rendimiento) ya está **pre‑definida** o tiene un límite máximo. El inversor sabe, en el momento de la aplicación, cuál será la tasa de retorno o, al menos, cuál es el rango de variación. Los principales productos son:  
 
 ![Cómo funciona la renta fija](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-2.webp)  
 
 | Producto | Dónde encontrar | Tasa media 2024‑2025* | Características |
 |----------|----------------|-----------------------|-----------------|
 | [CDB](/es/glossario/es-cdb) (Certificado de Depósito Bancario) | Bancos comerciales | 108 % del [CDI](/es/glossario/es-cdi) (aprox. 13,2 % a.a.) | Garantía del FGC hasta R$ 250 mil por institución |
-| Tesoro Directo – [Selic](/es/glossario/es-selic) | Gobierno Federal | 12,8 % a.a. (Tesoro Selic 2026) | [Liquidez](/es/glossario/es-liquidez) diaria, riesgo soberano bajo |
+| Tesoro Directo – [Selic](/es/glossario/es-selic) | Gobierno Federal | 12,8 % a.a. (Tesoro [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026) 2026) | [Liquidez](/es/glossario/es-liquidez) diaria, riesgo soberano bajo |
 | LCIs/LCAs (Letras de [Crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Inmobiliario/Agrícola) | Bancos, corredoras | 107 % del CDI (≈ 13 % a.a.) | Exento de IR, FGC protege |
 | [Debentures](/es/glossario/es-debentures) de empresas | Corredoras | 9 %‑12 % a.a. (dependiendo del rating) | Riesgo de crédito de la empresa emisora |
 
@@ -99,7 +99,7 @@ En la práctica, al comprar una acción te conviertes en socio de la empresa. Tu
 | **Implicación tributaria** | IR regresivo (15 %‑22,5 %) o exento (LCI/LCA) | IR del 15 % (acciones) o 20 % (demás) |
 | **Complejidad de gestión** | Simple (solo elegir el título) | Más compleja (análisis de mercado) |
 | **Adecuado para** | Conservadores, corto/medio plazo, reserva de emergencia | Agresivos, medio/largo plazo, búsqueda de crecimiento |
-| **Ejemplo de producto** | Tesoro Selic 2026 (12,8 % a.a.) | BOVA11 ETF (Ibovespa) – 15 % a.a. |
+| **Ejemplo de producto** | Tesoro Selic 2026 (12,8 % a.a.) | BOVA11 [ETF](/es/glossario/es-etf) (Ibovespa) – 15 % a.a. |
 
 ![Tabla comparativa](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-4.webp)  
 

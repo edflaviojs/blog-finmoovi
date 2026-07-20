@@ -46,7 +46,7 @@ A diferença entre dólar e euro ficou praticamente a mesma (cerca de R$ 0,73)
 
 ---
 
-## 2. Selic e Impacto nos Investimentos  
+## 2. Selic e Impacto nos [Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)  
 
 A taxa Selic permanece em **13,75 % ao ano**, a mesma da última reunião do Copom. O Comitê optou por manter a taxa, sinalizando que ainda há “cautela” até ver mais consistência na inflação. Para o investidor pessoa física, isso significa:
 
@@ -54,8 +54,8 @@ A taxa Selic permanece em **13,75 % ao ano**, a mesma da última reunião do C
 
 
 
-- **[Renda fixa](/glossario/renda-fixa) ainda atrativa** – CDBs, LCIs/LCAs e fundos DI continuam rendendo acima de 13 % ao ano, superando a inflação e a maioria dos títulos do [Tesouro Direto](/glossario/tesouro-direto).  
-- **Custo de oportunidade** – Se você tem [dinheiro](/posts/cashback-inteligente) parado na poupança ou em investimentos de baixa rentabilidade, está perdendo dinheiro. Cada ponto percentual a menos na Selic reduz o spread entre a taxa de juros e o rendimento de [alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) como [fundos imobiliários](/glossario/fundos-imobiliarios) ou ações.  
+- **[Renda fixa](/glossario/renda-fixa) ainda atrativa** – CDBs, LCIs/LCAs e [fundos](/glossario/fundos) DI continuam rendendo acima de 13 % ao ano, superando a inflação e a maioria dos títulos do [Tesouro Direto](/glossario/tesouro-direto).  
+- **Custo de oportunidade** – Se você tem [dinheiro](/posts/cashback-inteligente) parado na [poupança](/glossario/poupanca) ou em investimentos de baixa rentabilidade, está perdendo [dinheiro](/posts/como-criar-uma-reserva-de-emergencia). Cada ponto percentual a menos na Selic reduz o spread entre a taxa de juros e o rendimento de [alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) como [fundos imobiliários](/glossario/fundos-imobiliarios) ou [ações](/glossario/acoes).  
 
 Em resumo, a Selic alta ainda protege a rentabilidade da renda fixa, mas também eleva o custo de empréstimos e financiamentos, pressionando o consumo.
 

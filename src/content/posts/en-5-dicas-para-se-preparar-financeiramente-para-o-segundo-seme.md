@@ -46,7 +46,7 @@ Managing debt and expenses is crucial to achieving your financial goals. Here ar
 1. **Pay off your most expensive debts first**: This includes debts with high interest rates, such as [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) cards.
 2. **Negotiate with your creditors**: If you're having trouble paying off your debts, negotiate with your creditors to find a solution.
 3. **Cut unnecessary expenses**: This includes expenses for non-essential items, such as impulse purchases.
-4. **Use the envelope method**: Divide your [money](/en/posts/en-avoid-impulse-purchases) into envelopes for different expense categories, such as food and transportation.
+4. **Use the [envelope method](/en/posts/en-tecnica-dos-envelopes-digitais-guia-pratico-para-2024)**: Divide your [money](/en/posts/en-avoid-impulse-purchases) into envelopes for different expense categories, such as food and transportation.
 
 ![Creating a [Budget](/en/posts/en-how-to-create-personal-budget) for the Second Half of the Year](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 

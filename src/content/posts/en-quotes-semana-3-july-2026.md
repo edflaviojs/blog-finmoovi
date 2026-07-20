@@ -30,21 +30,21 @@ A última semana foi movimentada para quem acompanha o mercado brasileiro. O dó
 
 - **Euro**: O euro seguiu um caminho mais estável, variando entre **R$ 5,80** e **R$ 5,86**. A principal razão foi a ausência de notícias econômicas relevantes na zona do euro, o que manteve o par em um “range” estreito. Para quem compra produtos importados da Europa ou tem investimentos atrelados ao euro, a variação foi praticamente neutra.
 
-## 2. Selic e o Impacto nos Investimentos
+## 2. [Selic](/en/glossario/en-selic) e o Impacto nos Investimentos
 
-A taxa Selic permaneceu em **13,75 % ao ano**, conforme decisão do Copom na última reunião (21 de junho). A manutenção da taxa alta tem duas consequências claras:
+A taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) permaneceu em **13,75 % ao ano**, conforme decisão do Copom na última reunião (21 de junho). A manutenção da taxa alta tem duas consequências claras:
 
 ![2. Selic e o Impacto nos Investimentos](/images/posts/en-quotes-semana-3-july-2026-inline-3.webp)
 
 
 
-1. **[Renda fixa](/en/glossario/en-renda-fixa) mais atrativa** – Títulos do [Tesouro Direto](/en/glossario/en-tesouro-direto), CDBs e LCIs/LCAs continuam oferecendo retornos acima de 13 % ao ano. Para quem ainda tem parte da carteira em [poupança](/en/glossario/en-poupanca), a diferença entre 0,5 % da poupança e 13 % da renda fixa é enorme. Trocar a poupança por um título do Tesouro Selic pode render dezenas de milhares a mais em cinco anos.
+1. **[Renda fixa](/en/glossario/en-renda-fixa) mais atrativa** – Títulos do [Tesouro Direto](/en/glossario/en-tesouro-direto), CDBs e LCIs/LCAs continuam oferecendo retornos acima de 13 % ao ano. Para quem ainda tem parte da carteira em [poupança](/en/glossario/en-poupanca), a diferença entre 0,5 % da poupança e 13 % da renda fixa é enorme. Trocar a poupança por um título do Tesouro [Selic](/en/posts/en-quotes-semana-1-june-2026) pode render dezenas de milhares a mais em cinco anos.
 
-2. **Custo de crédito mais elevado** – Empréstimos, financiamentos e cartões de crédito ficam mais caros. Se você tem dívida, a regra de ouro continua: quanto maior a Selic, maior o juros que você paga. Reduzir o saldo devedor ou renegociar a dívida passa a ser ainda mais urgente.
+2. **Custo de crédito mais elevado** – Empréstimos, financiamentos e cartões de crédito ficam mais caros. Se você tem dívida, a regra de ouro continua: quanto maior a Selic, maior o [juros](/en/glossario/en-juros) que você paga. Reduzir o saldo devedor ou renegociar a dívida passa a ser ainda mais urgente.
 
 ## 3. Dica Prática para Investidores Individuais
 
-**Faça uma “revisão de moeda” na sua carteira**. Abra o seu app de controle (por exemplo, o **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)**) e veja quanto dinheiro está guardado em reais, dólares e euros. Se a maior parte está em reais, considere alocar **5 % a 10 %** em ativos atrelados ao dólar (como [fundos](/en/glossario/en-fundos) cambiais ou BDRs de empresas americanas) e, se houver necessidade de proteção contra a variação do euro, um pequeno fundo de moedas europeias pode ser suficiente. Essa [diversificação](/en/glossario/en-diversificacao) simples ajuda a suavizar o impacto de oscilações cambiais e ainda abre portas para oportunidades de ganho quando as moedas valorizarem.
+**Faça uma “revisão de [moeda](/en/glossario/en-moeda)” na sua carteira**. Abra o seu app de controle (por exemplo, o **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)**) e veja quanto dinheiro está guardado em reais, dólares e euros. Se a maior parte está em reais, considere alocar **5 % a 10 %** em ativos atrelados ao dólar (como [fundos](/en/glossario/en-fundos) cambiais ou BDRs de empresas americanas) e, se houver necessidade de proteção contra a variação do euro, um pequeno fundo de moedas europeias pode ser suficiente. Essa [diversificação](/en/glossario/en-diversificacao) simples ajuda a suavizar o impacto de oscilações cambiais e ainda abre portas para oportunidades de ganho quando as moedas valorizarem.
 
 ## 4. O Que Esperar na Próxima Semana
 

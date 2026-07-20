@@ -52,7 +52,7 @@ When you open [FinMoovi](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mai
 Set up categories like “Airport,” “Restaurants,” “Souvenir Reminders,” and “Transport.” Each category can have a daily or total limit, helping you control spending in real time.
 
 ### 3. Log the expense in the local currency  
-When you buy that ticket in Paris, open the app, tap “+ New Expense,” select the “Leisure” category and, in the amount field, type **30**. Right below, there’s a dropdown where you choose **Euro (EUR)**. FinMoovi pulls the day’s rate (for example, 1 EUR = R$ 5.40) and shows the converted value automatically (**R$ 162.00**). You can also add a note like “Louvre Museum.”
+When you buy that ticket in Paris, open the app, tap “+ New Expense,” select the “Leisure” category and, in the amount field, type **30**. Right below, there’s a dropdown where you choose **Euro (EUR)**. [FinMoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) pulls the day’s rate (for example, 1 EUR = R$ 5.40) and shows the converted value automatically (**R$ 162.00**). You can also add a note like “Louvre Museum.”
 
 ### 4. Save and view the summary  
 After saving, the expense appears on your main dashboard. At the top you see the total spent in reais, but when you open the “Details by Currency” tab you’ll notice **€ 30**, **£ 12** and **R$ 80** listed separately, all converted. This makes it easy to see how each currency is impacting your [budget](/en/posts/en-organize-couple-finances).
@@ -61,7 +61,7 @@ After saving, the expense appears on your main dashboard. At the top you see the
 If you realize you’ve already spent a lot on food in London, just edit the “Food” category limit to avoid surprises on the final bill. The app will send notifications when you’re close to the ceiling.
 
 ### 6. Final trip report  
-When you get back to Brazil, go to “Reports.” FinMoovi generates a summary with pie charts showing the distribution of spending by currency and by category. You can export the report as PDF or CSV and even share it with your travel partner.
+When you get back to Brazil, go to “Reports.” [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) generates a summary with pie charts showing the distribution of spending by currency and by category. You can export the report as PDF or CSV and even share it with your travel partner.
 
 ## Before vs. after: the difference FinMoovi makes
 

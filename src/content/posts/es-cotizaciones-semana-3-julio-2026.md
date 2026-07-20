@@ -24,17 +24,17 @@ Esta semana el real mostró una ligera recuperación frente a las dos monedas m�
 
 
 
-En la práctica, si tenés una cuenta en dólares para pagar la universidad de tu hijo o para viajar, ahora vas a recibir un poquito más de reales por cada dólar que cambies. Lo mismo ocurre con el euro: si planeás unas [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) a Europa, tu presupuesto en reales te rinde un poco más.
+En la práctica, si tenés una cuenta en dólares para pagar la universidad de tu hijo o para viajar, ahora vas a recibir un poquito más de reales por cada dólar que cambies. Lo mismo ocurre con el euro: si planeás unas [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) a Europa, tu [presupuesto](/es/posts/es-como-crear-presupuesto-personal) en reales te rinde un poco más.
 
 ---
 
-## Comentario sobre la Selic y su impacto en las inversiones
+## Comentario sobre la Selic y su impacto en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 La **Selic** es la tasa de referencia que el Banco Central de Brasil utiliza para controlar la inflación. Al quedarse en **13,75 %**, la autoridad envía la señal de que no ve necesidad de subirla para frenar los precios. ¿Qué significa esto para vos, inversor individual?
 
-1. **Renta fija:** Los bonos del Tesoro y los CDBs que ya estaban atados a la Selic siguen ofreciendo rendimientos similares. Si tenés un CDB a 100 % de la Selic, tu ganancia será de aproximadamente **13,75 % anual**, lo que sigue siendo atractivo frente a la inflación (que se espera que cierre el año en torno al 4 %).  
+1. **Renta fija:** Los bonos del Tesoro y los CDBs que ya estaban atados a la Selic siguen ofreciendo rendimientos similares. Si tenés un [CDB](/es/glossario/es-cdb) a 100 % de la Selic, tu ganancia será de aproximadamente **13,75 % anual**, lo que sigue siendo atractivo frente a la inflación (que se espera que cierre el año en torno al 4 %).  
 2. **Acciones y fondos:** Un entorno de tasas estables favorece a las empresas con deuda alta, porque sus costos de [financiamiento](/es/glossario/es-financiamento) no aumentan. Los sectores de consumo y energía mostraron una ligera recuperación, pero sigue habiendo [volatilidad](/es/glossario/es-volatilidade) por la incertidumbre global.  
-3. **Inversiones en el exterior:** Con el real fortaleciendo frente al dólar y al euro, los activos internacionales (ETF de EE. UU., acciones europeas) se vuelven un poco más caros para los brasileños. Sin embargo, la diversificación sigue siendo clave para protegerse de cualquier sacudida local.
+3. **Inversiones en el exterior:** Con el real fortaleciendo frente al dólar y al euro, los activos internacionales ([ETF](/es/glossario/es-etf) de EE. UU., acciones europeas) se vuelven un poco más caros para los brasileños. Sin embargo, la diversificación sigue siendo clave para protegerse de cualquier sacudida local.
 
 En resumen, la Selic estable brinda un **escenario de “[cambio](/es/glossario/es-cambio) de marcha”**: no hay presión para subir los rendimientos de la renta fija, pero tampoco hay riesgo de una subida abrupta que pueda afectar a los activos de riesgo.
 

@@ -56,7 +56,7 @@ Ao abrir o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) pela pri
 Monte categorias como “Aeroporto”, “Restaurantes”, “Lembretes de Souvenir” e “Transporte”. Cada categoria pode ter um limite diário ou total, ajudando a controlar os [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) em tempo real.
 
 ### 3. Registre a despesa na moeda local
-Ao comprar aquele ingresso em Paris, abra o app, clique em “+ Nova Despesa”, selecione a categoria “Lazer” e, no campo de [valor](/glossario/valor), digite **30**. Logo abaixo, há um menu suspenso onde você escolhe **Euro (EUR)**. O FinMoovi traz a cotação do dia (por exemplo, 1 EUR = R$ 5,40) e mostra o valor convertido automaticamente (**R$ 162,00**). Você ainda pode adicionar uma nota “Museu do Louvre”.
+Ao comprar aquele ingresso em Paris, abra o app, clique em “+ Nova Despesa”, selecione a categoria “Lazer” e, no campo de [valor](/glossario/valor), digite **30**. Logo abaixo, há um menu suspenso onde você escolhe **Euro (EUR)**. O [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) traz a cotação do dia (por exemplo, 1 EUR = R$ 5,40) e mostra o valor convertido automaticamente (**R$ 162,00**). Você ainda pode adicionar uma nota “Museu do Louvre”.
 
 ### 4. Salve e veja o resumo
 Depois de salvar, a despesa aparece no seu painel principal. No canto superior, você vê o total gasto em reais, mas ao abrir a aba “Detalhes por Moeda”, percebe que ainda tem **€ 30**, **£ 12** e **R$ 80** listados separadamente, tudo convertido. Assim, fica fácil perceber quanto cada moeda está impactando seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar).

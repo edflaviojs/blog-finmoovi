@@ -83,7 +83,7 @@ El IBGE indica que el ingreso medio mensual de los trabajadores brasileños en 2
 Crea una lista en [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) con los ítems que te gustaría dar a papá. Cada vez que haya una promoción, añade el precio reducido. Así, compras en el momento correcto y evitas compras impulsivas.
 
 ### 5.3. **Divide el valor en cuotas más pequeñas**
-Si optas por un regalo más caro (p.ej.: smartwatch), verifica si la tienda ofrece **cuotas sin intereses**. Pero atención: registra cada cuota en FinMoovi para no olvidar pagar y acabar gastando más el mes siguiente.
+Si optas por un regalo más caro (p.ej.: smartwatch), verifica si la tienda ofrece **cuotas sin intereses**. Pero atención: registra cada cuota en [FinMoovi](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) para no olvidar pagar y acabar gastando más el mes siguiente.
 
 ## 6️⃣ [Consejos](/es/posts/es-7-errores-financieros-principiante) finales para no entrar en números rojos
 
@@ -93,7 +93,7 @@ Si optas por un regalo más caro (p.ej.: smartwatch), verifica si la tienda ofre
 | 2 | **Evita “última hora”** | Comprar a último momento suele ser más caro. |
 | 3 | **Combina regalos con amigos de la familia** | Dividir el costo permite un regalo mayor por menos. |
 | 4 | **Aplica la regla de los 30 días** (para compras no esenciales) | Da tiempo para reflexionar si realmente es necesario. |
-| 5 | **Registra todo en FinMoovi** | Control total de los gastos, evita sorpresas al fin de mes. |
+| 5 | **Registra todo en [FinMoovi](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)** | Control total de los gastos, evita sorpresas al fin de mes. |
 
 ## 7️⃣ Conclusión: regalo que cabe en el bolsillo y en el corazón
 
