@@ -2,6 +2,7 @@ import { AbsoluteFill, interpolate, random, spring, useCurrentFrame, useVideoCon
 import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 import { FinMooviIcon } from './icon';
 import { KaraokeCaption } from './captions';
+import { IconBurst } from './icons-fx';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Fundo vivo: gradiente escuro + manchas de luz que respiram + partículas subindo
@@ -99,6 +100,7 @@ const SceneShell: React.FC<{ scene: Scene; children: React.ReactNode }> = ({ sce
           {children}
         </div>
       </AbsoluteFill>
+      <IconBurst narration={scene.narration} totalFrames={totalFrames} />
       <KaraokeCaption narration={scene.narration} totalFrames={totalFrames} />
     </AbsoluteFill>
   );
