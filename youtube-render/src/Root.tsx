@@ -6,8 +6,11 @@ import { AppScrollLong, AppScrollShort } from './AppScroll';
 import { Cards3DLong, Cards3DShort } from './Cards3D';
 import { CreditCards3DLong, CreditCards3DShort } from './CreditCards3D';
 import { CartoesCountUpLong, CartoesCountUpShort } from './CartoesCountUp';
+import { FluxoCaixa3DLong, FluxoCaixa3DShort } from './FluxoCaixa3D';
+import { FluxoBarrasLong, FluxoBarrasShort } from './FluxoBarras';
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
 import { cartoes } from './broll/cartoes';
+import { fluxo } from './broll/fluxo';
 import roteiro from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
 const FPS = 30;
@@ -164,6 +167,93 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ trimBefore: cartoes.footageFrame }}
+      />
+      {/* ── TELA 2: FLUXO DE CAIXA ── */}
+      <Composition
+        id="FluxoCaixa3DShort"
+        component={FluxoCaixa3DShort}
+        durationInFrames={210}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FluxoCaixa3DLong"
+        component={FluxoCaixa3DLong}
+        durationInFrames={210}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="FluxoBarrasShort"
+        component={FluxoBarrasShort}
+        durationInFrames={210}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FluxoBarrasLong"
+        component={FluxoBarrasLong}
+        durationInFrames={210}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="FluxoFrameShort"
+        component={AppBrollShort}
+        durationInFrames={240}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: fluxo.footageFrame }}
+      />
+      <Composition
+        id="FluxoFrameLong"
+        component={AppBrollLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: fluxo.footageFrame }}
+      />
+      <Composition
+        id="FluxoScrollShort"
+        component={AppScrollShort}
+        durationInFrames={360}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: fluxo.footageFrame }}
+      />
+      <Composition
+        id="FluxoScrollLong"
+        component={AppScrollLong}
+        durationInFrames={360}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: fluxo.footageFrame }}
+      />
+      <Composition
+        id="FluxoScreen3DShort"
+        component={AppScreen3DShort}
+        durationInFrames={240}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: fluxo.footageFrame }}
+      />
+      <Composition
+        id="FluxoScreen3DLong"
+        component={AppScreen3DLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: fluxo.footageFrame }}
       />
       <Composition
         id="AppScreen3DShort"
