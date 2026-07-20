@@ -4,6 +4,7 @@ import { Short, ShortScript, totalFrames } from './Short';
 import { AppBrollLong, AppBrollShort } from './AppBroll';
 import { AppScrollLong, AppScrollShort } from './AppScroll';
 import { Cards3DLong, Cards3DShort } from './Cards3D';
+import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
 import roteiro from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
 const FPS = 30;
@@ -73,6 +74,24 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="AppScreen3DShort"
+        component={AppScreen3DShort}
+        durationInFrames={240}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: 150 }}
+      />
+      <Composition
+        id="AppScreen3DLong"
+        component={AppScreen3DLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: 150 }}
       />
       <Composition
         id="Test"
