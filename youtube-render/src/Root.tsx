@@ -14,6 +14,7 @@ import { Balanco3DShort, Balanco3DLong } from './Balanco3D';
 import { BalancoDonutShort, BalancoDonutLong } from './BalancoDonut';
 import { Compras3DShort, Compras3DLong } from './Compras3D';
 import { ComprasCarrinhoShort, ComprasCarrinhoLong } from './ComprasCarrinho';
+import { DashboardHero } from './DashboardHero';
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
 import { cartoes } from './broll/cartoes';
 import { fluxo } from './broll/fluxo';
@@ -526,6 +527,27 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         defaultProps={{ trimBefore: compras.footageFrame }}
       />
+      {/* ── DASHBOARD (coração do app) — 20 clipes: dark/light · pt/en/es · BRL/EUR + transições ── */}
+      <Composition id="DashDarkPtBrlShort" component={DashboardHero} durationInFrames={210} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL' }} />
+      <Composition id="DashDarkPtBrlLong" component={DashboardHero} durationInFrames={210} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL' }} />
+      <Composition id="DashLightPtBrlShort" component={DashboardHero} durationInFrames={210} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'light', lang: 'pt', currency: 'BRL' }} />
+      <Composition id="DashLightPtBrlLong" component={DashboardHero} durationInFrames={210} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'light', lang: 'pt', currency: 'BRL' }} />
+      <Composition id="DashDarkEnBrlShort" component={DashboardHero} durationInFrames={210} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'dark', lang: 'en', currency: 'BRL' }} />
+      <Composition id="DashDarkEnBrlLong" component={DashboardHero} durationInFrames={210} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'dark', lang: 'en', currency: 'BRL' }} />
+      <Composition id="DashLightEnBrlShort" component={DashboardHero} durationInFrames={210} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'light', lang: 'en', currency: 'BRL' }} />
+      <Composition id="DashLightEnBrlLong" component={DashboardHero} durationInFrames={210} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'light', lang: 'en', currency: 'BRL' }} />
+      <Composition id="DashDarkEsEurShort" component={DashboardHero} durationInFrames={210} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'dark', lang: 'es', currency: 'EUR' }} />
+      <Composition id="DashDarkEsEurLong" component={DashboardHero} durationInFrames={210} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'dark', lang: 'es', currency: 'EUR' }} />
+      <Composition id="DashLightEsEurShort" component={DashboardHero} durationInFrames={210} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'light', lang: 'es', currency: 'EUR' }} />
+      <Composition id="DashLightEsEurLong" component={DashboardHero} durationInFrames={210} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'light', lang: 'es', currency: 'EUR' }} />
+      <Composition id="DashDarkPtEurShort" component={DashboardHero} durationInFrames={210} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'EUR' }} />
+      <Composition id="DashDarkPtEurLong" component={DashboardHero} durationInFrames={210} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'EUR' }} />
+      <Composition id="DashMorphThemeShort" component={DashboardHero} durationInFrames={240} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL', morph: 'theme' }} />
+      <Composition id="DashMorphThemeLong" component={DashboardHero} durationInFrames={240} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL', morph: 'theme' }} />
+      <Composition id="DashMorphCurrencyShort" component={DashboardHero} durationInFrames={240} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL', morph: 'currency' }} />
+      <Composition id="DashMorphCurrencyLong" component={DashboardHero} durationInFrames={240} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL', morph: 'currency' }} />
+      <Composition id="DashMorphLangShort" component={DashboardHero} durationInFrames={300} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL', morph: 'lang' }} />
+      <Composition id="DashMorphLangLong" component={DashboardHero} durationInFrames={300} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL', morph: 'lang' }} />
       <Composition
         id="AppScreen3DShort"
         component={AppScreen3DShort}

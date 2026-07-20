@@ -49,13 +49,25 @@ Mastercard Itaú · Fatura R$ 1.240,00 · Limite R$ 5.000,00 · Disponível R$ 3
 
 **TELA CARTÕES = 10/10 clipes prontos** em `VIDEOS-BROLL/1-cartoes/` (nomes claros por estilo+formato).
 
-### 2. Dashboard — dados inline em `Cards3D.tsx`
-| Estilo | Short | Long | Composição |
-|--------|:---:|:---:|-----------|
-| C · 3D cards | ✅ | ✅ | `Cards3DShort` / `Cards3DLong` |
-| A · Moldura | ✅ | ✅ | `AppBrollShort` / `AppBrollLong` (trimBefore 150) |
-| B · Scroll | 🟡 | 🟡 | `AppScrollShort` / `AppScrollLong` |
-| D · Tela 3D | ✅ | ✅ | `AppScreen3DShort` / `AppScreen3DLong` |
+### 2. Dashboard (CORAÇÃO do app) — `DashboardHero.tsx` + dados `src/broll/dashboard.ts`
+**20 clipes**: parametrizado por tema (dark/light) · idioma (pt/en/es) · moeda (BRL/EUR) + **transições animadas** (tema, moeda, idioma). Light mode e EN recriados nativamente (não existem na gravação). Dados reais BRL + EUR.
+
+| Variação | Short | Long |
+|---|:---:|:---:|
+| Dark · PT · R$ | ✅ | ✅ |
+| Light · PT · R$ | ✅ | ✅ |
+| Dark · EN · R$ | ✅ | ✅ |
+| Light · EN · R$ | ✅ | ✅ |
+| Dark · ES · € | ✅ | ✅ |
+| Light · ES · € | ✅ | ✅ |
+| Dark · PT · € | ✅ | ✅ |
+| **Transição TEMA** (dark→light) | ✅ | ✅ |
+| **Transição MOEDA** (R$→€) | ✅ | ✅ |
+| **Transição IDIOMA** (PT→EN→ES) | ✅ | ✅ |
+
+Comps: `Dash{DarkPtBrl,LightPtBrl,DarkEnBrl,LightEnBrl,DarkEsEur,LightEsEur,DarkPtEur,MorphTheme,MorphCurrency,MorphLang}{Short,Long}`. **20/20** em `VIDEOS-BROLL/6-dashboard/`.
+
+Estilos footage antigos do dashboard (gravação PT-BRL escuro): `Cards3D*` (recriação legada), `AppBroll*`/`AppScroll*`/`AppScreen3D*` (trimBefore 150).
 
 ### 3. Fluxo de caixa — dados: `src/broll/fluxo.ts` · footage frame 17700 (~590s)
 "Fluxo de Caixa · Análise completa" · Saldo Atual R$ 6.604,93 · Saldo Projetado R$ 4.955,03 · Receitas R$ 10.000 · Despesas R$ 5.044,99.
