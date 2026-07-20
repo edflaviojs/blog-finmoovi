@@ -1,7 +1,6 @@
 ---
 term: "Dividendos"
-image: "/images/glossario/es-dividendos.svg"
-imageAlt: "Gráfico circular con secciones gris, negra, verde y naranja en fondo negro."
+image: "/images/glossario/es-dividendos.webp"
 definition: "Una porción de las ganancias de una empresa distribuida a los accionistas. Una forma de ingreso pasivo de inversiones en acciones."
 category: "investimentos"
 locale: "es"

@@ -1,7 +1,6 @@
 ---
 term: "Present Value"
-image: "/images/glossario/en-valor-presente.svg"
-imageAlt: "Teal and orange gradient bars on black background in a bar graph."
+image: "/images/glossario/en-valor-presente.webp"
 definition: "The current worth of a future sum of money, discounted at a specific interest rate. A fundamental concept in financial analysis."
 category: "mercado"
 locale: "en"

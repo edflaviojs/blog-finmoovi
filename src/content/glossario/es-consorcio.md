@@ -1,7 +1,6 @@
 ---
 term: "Consorcio"
-image: "/images/glossario/es-consorcio.svg"
-imageAlt: "Gráfico circular con secciones naranjas, azules, grises y negras en fondo negro."
+image: "/images/glossario/es-consorcio.webp"
 definition: "Un sistema de compra grupal donde los participantes contribuyen mensualmente a un fondo común y son seleccionados periódicamente para recibir el monto total."
 category: "credito"
 locale: "es"

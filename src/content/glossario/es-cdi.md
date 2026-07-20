@@ -1,7 +1,6 @@
 ---
 term: "CDI"
-image: "/images/glossario/es-cdi.svg"
-imageAlt: "Gráfico de líneas en colores verde, gris y amarillo sobre fondo negro."
+image: "/images/glossario/es-cdi.webp"
 definition: "Certificado de Depósito Interbancario. La tasa de referencia para inversiones de renta fija en Brasil. Sigue de cerca la tasa Selic."
 category: "investimentos"
 locale: "es"
