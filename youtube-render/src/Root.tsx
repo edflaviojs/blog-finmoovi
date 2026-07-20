@@ -17,6 +17,7 @@ import { ComprasCarrinhoShort, ComprasCarrinhoLong } from './ComprasCarrinho';
 import { DashboardHero } from './DashboardHero';
 import { SmartCapture3DShort, SmartCapture3DLong } from './SmartCapture3D';
 import { SmartCaptureVozShort, SmartCaptureVozLong } from './SmartCaptureVoz';
+import { AppTourShort, AppMosaicoShort, AppCarrosselShort, AppNumerosShort, AppQuadShort, AppTourLong, AppMosaicoLong, AppCarrosselLong, AppNumerosLong, AppQuadLong } from './AppOverview';
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
 import { cartoes } from './broll/cartoes';
 import { fluxo } from './broll/fluxo';
@@ -562,6 +563,17 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="SmartScrollLong" component={AppScrollLong} durationInFrames={360} fps={FPS} width={1920} height={1080} defaultProps={{ trimBefore: smartCapture.footageFrame }} />
       <Composition id="SmartScreen3DShort" component={AppScreen3DShort} durationInFrames={240} fps={FPS} width={1080} height={1920} defaultProps={{ trimBefore: smartCapture.footageFrame }} />
       <Composition id="SmartScreen3DLong" component={AppScreen3DLong} durationInFrames={240} fps={FPS} width={1920} height={1080} defaultProps={{ trimBefore: smartCapture.footageFrame }} />
+      {/* ── APANHADO GERAL DO APP (5 montagens combinando telas) ── */}
+      <Composition id="AppTour" component={AppTourShort} durationInFrames={416} fps={FPS} width={1080} height={1920} />
+      <Composition id="AppMosaico" component={AppMosaicoShort} durationInFrames={210} fps={FPS} width={1080} height={1920} />
+      <Composition id="AppCarrossel" component={AppCarrosselShort} durationInFrames={300} fps={FPS} width={1080} height={1920} />
+      <Composition id="AppNumeros" component={AppNumerosShort} durationInFrames={188} fps={FPS} width={1080} height={1920} />
+      <Composition id="AppQuad" component={AppQuadShort} durationInFrames={210} fps={FPS} width={1080} height={1920} />
+      <Composition id="AppTourLong" component={AppTourLong} durationInFrames={416} fps={FPS} width={1920} height={1080} />
+      <Composition id="AppMosaicoLong" component={AppMosaicoLong} durationInFrames={210} fps={FPS} width={1920} height={1080} />
+      <Composition id="AppCarrosselLong" component={AppCarrosselLong} durationInFrames={300} fps={FPS} width={1920} height={1080} />
+      <Composition id="AppNumerosLong" component={AppNumerosLong} durationInFrames={188} fps={FPS} width={1920} height={1080} />
+      <Composition id="AppQuadLong" component={AppQuadLong} durationInFrames={210} fps={FPS} width={1920} height={1080} />
       <Composition
         id="AppScreen3DShort"
         component={AppScreen3DShort}

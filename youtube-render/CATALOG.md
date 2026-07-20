@@ -32,6 +32,17 @@ sem ela (dono pediu "só daqui pra frente").
 
 ---
 
+## Apanhado geral do app (montagens que JUNTAM todas as telas) — `AppOverview.tsx`
+5 estilos × 2 formatos = **10 clipes** em `VIDEOS-BROLL/9-apanhado-geral/`:
+| Estilo | Comp (vertical / horizontal) |
+|---|---|
+| App Tour (todas as telas c/ transições) | `AppTour` / `AppTourLong` |
+| Mosaico flutuante (colagem 3D) | `AppMosaico` / `AppMosaicoLong` |
+| Carrossel 3D coverflow | `AppCarrossel` / `AppCarrosselLong` |
+| O app em números (contadores) | `AppNumeros` / `AppNumerosLong` |
+| Quadro 4 telas | `AppQuad` / `AppQuadLong` |
+Celulares dimensionados por `useVideoConfig().height` (proporcional aos 2 formatos).
+
 ## Matriz
 
 Legenda: ✅ pronto e validado · 🟡 registrado (falta render/validar) · ⬜ a fazer
