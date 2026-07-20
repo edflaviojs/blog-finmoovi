@@ -12,11 +12,14 @@ import { Extrato3DLong, Extrato3DShort } from './Extrato3D';
 import { ExtratoListaLong, ExtratoListaShort } from './ExtratoLista';
 import { Balanco3DShort, Balanco3DLong } from './Balanco3D';
 import { BalancoDonutShort, BalancoDonutLong } from './BalancoDonut';
+import { Compras3DShort, Compras3DLong } from './Compras3D';
+import { ComprasCarrinhoShort, ComprasCarrinhoLong } from './ComprasCarrinho';
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
 import { cartoes } from './broll/cartoes';
 import { fluxo } from './broll/fluxo';
 import { extrato } from './broll/extrato';
 import { balanco } from './broll/balanco';
+import { compras } from './broll/compras';
 import roteiro from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
 const FPS = 30;
@@ -435,6 +438,93 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ trimBefore: balanco.footageFrame }}
+      />
+      {/* ── TELA 5: COMPRAS (Modo Compras) ── */}
+      <Composition
+        id="Compras3DShort"
+        component={Compras3DShort}
+        durationInFrames={210}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Compras3DLong"
+        component={Compras3DLong}
+        durationInFrames={210}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ComprasCarrinhoShort"
+        component={ComprasCarrinhoShort}
+        durationInFrames={210}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ComprasCarrinhoLong"
+        component={ComprasCarrinhoLong}
+        durationInFrames={210}
+        fps={FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="ComprasFrameShort"
+        component={AppBrollShort}
+        durationInFrames={240}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: compras.footageFrame }}
+      />
+      <Composition
+        id="ComprasFrameLong"
+        component={AppBrollLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: compras.footageFrame }}
+      />
+      <Composition
+        id="ComprasScrollShort"
+        component={AppScrollShort}
+        durationInFrames={360}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: compras.footageFrame }}
+      />
+      <Composition
+        id="ComprasScrollLong"
+        component={AppScrollLong}
+        durationInFrames={360}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: compras.footageFrame }}
+      />
+      <Composition
+        id="ComprasScreen3DShort"
+        component={AppScreen3DShort}
+        durationInFrames={240}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ trimBefore: compras.footageFrame }}
+      />
+      <Composition
+        id="ComprasScreen3DLong"
+        component={AppScreen3DLong}
+        durationInFrames={240}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ trimBefore: compras.footageFrame }}
       />
       <Composition
         id="AppScreen3DShort"

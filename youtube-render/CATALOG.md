@@ -94,7 +94,18 @@ Total Receitas R$ 10.000 · Total Despesas R$ 5.044,99 · Saldo Final R$ 4.955,0
 | D · Tela 3D | ✅ | ✅ | `BalancoScreen3DShort` / `BalancoScreen3DLong` |
 
 **TELA BALANÇO = 10/10 clipes** em `VIDEOS-BROLL/4-balanco/`.
-### 6. Compras — ⬜ · footage ~720s (Modo Compras) / ~840s (relatório)
+### 6. Compras (Modo Compras) — dados: `src/broll/compras.ts` · footage frame 22350 (~745s)
+Modo Compras · Feijão R$ 1,99 · Bolacha R$ 7,98 · Açúcar R$ 1,98 · Total R$ 11,95.
+
+| Estilo | Short | Long | Composição |
+|--------|:---:|:---:|-----------|
+| C · 3D cards | ✅ | ✅ | `Compras3DShort` / `Compras3DLong` |
+| E · Carrinho enchendo (novo) | ✅ | ✅ | `ComprasCarrinhoShort` / `ComprasCarrinhoLong` |
+| A · Moldura | ✅ | ✅ | `ComprasFrameShort` / `ComprasFrameLong` |
+| B · Scroll | ✅ | ✅ | `ComprasScrollShort` / `ComprasScrollLong` |
+| D · Tela 3D | ✅ | ✅ | `ComprasScreen3DShort` / `ComprasScreen3DLong` |
+
+**TELA COMPRAS = 10/10 clipes** em `VIDEOS-BROLL/5-compras/`.
 ### 7. Planejamento — ⬜
 ### 8. Smart Capture (voz/texto/imagem/compra) — ⬜
 ### 9. Calculadoras do blog — ⬜ (capturar de blog.finmoovi.com/ferramentas via Playwright)
