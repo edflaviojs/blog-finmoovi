@@ -25,10 +25,14 @@ const PillLockup: React.FC<{ scale?: number }> = ({ scale = 1 }) => (
   </div>
 );
 
-// PASSEANDO: a plaquinha pequena flutua devagar pela tela toda, em vários sentidos
-// (trajetória suave tipo Lissajous — X e Y com frequências diferentes). Nunca sai
-// da tela. Elegante e discreta; sempre visível; sem canto fixo.
-export const RoamingWatermark: React.FC<{ scale?: number }> = ({ scale = 0.82 }) => {
+// ⛔ MARCA D'ÁGUA DESATIVADA a pedido do dono (20/07 — "não estou gostando").
+// Todos os b-rolls a partir da tela 3 (Extrato) saem SEM marca. Para REATIVAR,
+// basta remover esta linha (o render passeando está logo abaixo, intacto).
+export const RoamingWatermark: React.FC<{ scale?: number }> = () => null;
+
+// PASSEANDO (INATIVO): a plaquinha pequena flutua devagar pela tela toda, em vários
+// sentidos (trajetória Lissajous). Mantido p/ reativação futura.
+const RoamingWatermarkImpl: React.FC<{ scale?: number }> = ({ scale = 0.82 }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
   const wmW = 250 * scale, wmH = 66 * scale, margin = 44;
