@@ -119,5 +119,18 @@ Modo Compras · Feijão R$ 1,99 · Bolacha R$ 7,98 · Açúcar R$ 1,98 · Total 
 
 **TELA COMPRAS = 10/10 clipes** em `VIDEOS-BROLL/5-compras/`.
 ### 7. Planejamento — ⬜
-### 8. Smart Capture (voz/texto/imagem/compra) — ⬜
+### 7. Smart Capture (FinMoovi Quick) — dados: `src/broll/smartcapture.ts` · footage frame 23250 (~775s)
+4 modos: Texto/Voz/Imagem/Compras.
+
+| Estilo | Short | Long | Composição |
+|--------|:---:|:---:|-----------|
+| C · Menu 3D (4 tiles) | ✅ | ✅ | `SmartCapture3DShort` / `SmartCapture3DLong` |
+| E · Captura por voz (novo) | ✅ | ✅ | `SmartCaptureVozShort` / `SmartCaptureVozLong` |
+| A · Moldura | ✅ | ✅ | `SmartFrameShort` / `SmartFrameLong` |
+| B · Scroll | ✅ | ✅ | `SmartScrollShort` / `SmartScrollLong` |
+| D · Tela 3D | ✅ | ✅ | `SmartScreen3DShort` / `SmartScreen3DLong` |
+
+**TELA SMART CAPTURE = 10/10 clipes** em `VIDEOS-BROLL/7-smart-capture/`.
+
+### — Planejamento — ⏭️ PULADO (dono não inseriu dados).
 ### 9. Calculadoras do blog — ⬜ (capturar de blog.finmoovi.com/ferramentas via Playwright)

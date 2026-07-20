@@ -15,12 +15,15 @@ import { BalancoDonutShort, BalancoDonutLong } from './BalancoDonut';
 import { Compras3DShort, Compras3DLong } from './Compras3D';
 import { ComprasCarrinhoShort, ComprasCarrinhoLong } from './ComprasCarrinho';
 import { DashboardHero } from './DashboardHero';
+import { SmartCapture3DShort, SmartCapture3DLong } from './SmartCapture3D';
+import { SmartCaptureVozShort, SmartCaptureVozLong } from './SmartCaptureVoz';
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
 import { cartoes } from './broll/cartoes';
 import { fluxo } from './broll/fluxo';
 import { extrato } from './broll/extrato';
 import { balanco } from './broll/balanco';
 import { compras } from './broll/compras';
+import { smartCapture } from './broll/smartcapture';
 import roteiro from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
 const FPS = 30;
@@ -548,6 +551,17 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="DashMorphCurrencyLong" component={DashboardHero} durationInFrames={240} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL', morph: 'currency' }} />
       <Composition id="DashMorphLangShort" component={DashboardHero} durationInFrames={300} fps={FPS} width={1080} height={1920} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL', morph: 'lang' }} />
       <Composition id="DashMorphLangLong" component={DashboardHero} durationInFrames={300} fps={FPS} width={1920} height={1080} defaultProps={{ theme: 'dark', lang: 'pt', currency: 'BRL', morph: 'lang' }} />
+      {/* ── TELA SMART CAPTURE (FinMoovi Quick) ── */}
+      <Composition id="SmartCapture3DShort" component={SmartCapture3DShort} durationInFrames={210} fps={FPS} width={1080} height={1920} />
+      <Composition id="SmartCapture3DLong" component={SmartCapture3DLong} durationInFrames={210} fps={FPS} width={1920} height={1080} />
+      <Composition id="SmartCaptureVozShort" component={SmartCaptureVozShort} durationInFrames={240} fps={FPS} width={1080} height={1920} />
+      <Composition id="SmartCaptureVozLong" component={SmartCaptureVozLong} durationInFrames={240} fps={FPS} width={1920} height={1080} />
+      <Composition id="SmartFrameShort" component={AppBrollShort} durationInFrames={240} fps={FPS} width={1080} height={1920} defaultProps={{ trimBefore: smartCapture.footageFrame }} />
+      <Composition id="SmartFrameLong" component={AppBrollLong} durationInFrames={240} fps={FPS} width={1920} height={1080} defaultProps={{ trimBefore: smartCapture.footageFrame }} />
+      <Composition id="SmartScrollShort" component={AppScrollShort} durationInFrames={360} fps={FPS} width={1080} height={1920} defaultProps={{ trimBefore: smartCapture.footageFrame }} />
+      <Composition id="SmartScrollLong" component={AppScrollLong} durationInFrames={360} fps={FPS} width={1920} height={1080} defaultProps={{ trimBefore: smartCapture.footageFrame }} />
+      <Composition id="SmartScreen3DShort" component={AppScreen3DShort} durationInFrames={240} fps={FPS} width={1080} height={1920} defaultProps={{ trimBefore: smartCapture.footageFrame }} />
+      <Composition id="SmartScreen3DLong" component={AppScreen3DLong} durationInFrames={240} fps={FPS} width={1920} height={1080} defaultProps={{ trimBefore: smartCapture.footageFrame }} />
       <Composition
         id="AppScreen3DShort"
         component={AppScreen3DShort}
