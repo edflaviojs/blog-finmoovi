@@ -11,7 +11,7 @@ import { SceneSfx } from './audio/sfx';
 // ─────────────────────────────────────────────────────────────────────────────
 const Particles: React.FC = () => {
   const frame = useCurrentFrame();
-  const dots = new Array(28).fill(0);
+  const dots = new Array(24).fill(0);
   return (
     <AbsoluteFill>
       {dots.map((_, i) => {
@@ -21,10 +21,11 @@ const Particles: React.FC = () => {
         const y = (1920 - ((frame * speed * 6) + random(`o${i}`) * 1920)) % 1920;
         const twinkle = 0.15 + 0.35 * (0.5 + 0.5 * Math.sin(frame / 12 + i));
         const color = i % 2 === 0 ? BRAND.cyan : BRAND.magenta;
+        // sem filter:blur — pontinhos pequenos ficam ok crus (e o render voa).
         return (
           <div key={i} style={{
             position: 'absolute', left: x, top: y, width: size, height: size,
-            borderRadius: '50%', background: color, opacity: twinkle, filter: 'blur(1px)',
+            borderRadius: '50%', background: color, opacity: twinkle,
           }} />
         );
       })}
@@ -32,23 +33,28 @@ const Particles: React.FC = () => {
   );
 };
 
+// Manchas de luz da marca. Usam radial-gradient (glow suave NATIVO, barato) no lugar
+// de filter:blur() gigante — MESMO visual bokeh, mas SEM o custo de reblur por frame.
+// Ganho grande de velocidade de render (era o gargalo no runner do Actions).
+const glow = (color: string) => `radial-gradient(circle at center, ${color} 0%, transparent 66%)`;
+
 export const Background: React.FC = () => {
   const frame = useCurrentFrame();
   const drift = Math.sin(frame / 40) * 40;
-  const pulse = 0.13 + 0.05 * Math.sin(frame / 30);
+  const pulse = 0.16 + 0.05 * Math.sin(frame / 30);
   return (
     <AbsoluteFill style={{ backgroundColor: BRAND.bg, overflow: 'hidden' }}>
       <div style={{
-        position: 'absolute', top: 180 + drift, left: -160, width: 720, height: 720,
-        borderRadius: '50%', background: BRAND.cyan, opacity: pulse + 0.04, filter: 'blur(170px)',
+        position: 'absolute', top: -180 + drift, left: -260, width: 1100, height: 1100,
+        background: glow(BRAND.cyan), opacity: pulse + 0.05,
       }} />
       <div style={{
-        position: 'absolute', bottom: 120 - drift, right: -200, width: 800, height: 800,
-        borderRadius: '50%', background: BRAND.magenta, opacity: pulse, filter: 'blur(180px)',
+        position: 'absolute', bottom: -280 - drift, right: -320, width: 1240, height: 1240,
+        background: glow(BRAND.magenta), opacity: pulse,
       }} />
       <div style={{
-        position: 'absolute', top: '38%', left: '30%', width: 500, height: 500,
-        borderRadius: '50%', background: BRAND.violet, opacity: 0.10, filter: 'blur(160px)',
+        position: 'absolute', top: '28%', left: '16%', width: 840, height: 840,
+        background: glow(BRAND.violet), opacity: 0.13,
       }} />
       <Particles />
     </AbsoluteFill>
