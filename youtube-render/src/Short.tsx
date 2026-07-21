@@ -16,14 +16,16 @@ export type ShotVisual = {
   from?: number;
   to?: number;
   prefix?: string;
-  icon?: 'money' | 'coins' | 'growth' | 'clock' | 'card' | 'warning' | 'question' | 'mind';
+  icon?: 'money' | 'coins' | 'growth' | 'clock' | 'card' | 'warning' | 'question' | 'mind'
+    | 'piggy' | 'bank' | 'target' | 'trophy' | 'bulb' | 'hourglass' | 'wallet' | 'fire' | 'chart-down' | 'shield';
   metaphor?: 'bola-neve' | 'avalanche' | 'escorregao';
   note?: string;
 };
 export type Shot = {
   anchor: string;
   visual: ShotVisual;
-  sfx?: 'boom' | 'whoosh' | 'coin' | 'alert' | 'avalanche' | 'slide';
+  sfx?: 'boom' | 'whoosh' | 'coin' | 'alert' | 'avalanche' | 'slide'
+    | 'kaching' | 'typewriter' | 'keyboard' | 'pop';
 };
 
 // intro: legada { big, sub } OU v3 { frase, counter? }. Ambas convivem (backward compat).

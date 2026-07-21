@@ -23,3 +23,18 @@ Nomes do contrato → arquivo (`resolveShotSfx` em `src/audio/sfx.tsx`):
 |---|---|---|
 | `avalanche.ogg` | metáfora avalanche (rumble) | **sintetizado** (ffmpeg `sine`, senos 48/71/95 Hz com envelope) — CC0/domínio público |
 | `slide.ogg` | escorregão (apito descendo cômico) | **sintetizado** (ffmpeg `sine`, sequência de tons 1500→360 Hz) — CC0/domínio público |
+
+## SFX novos v3.1 (som do dinheiro melhor + digitação)
+
+Compostos de amostras **Kenney CC0** reais (baixadas do registro [soundcn](https://github.com/kapishdima/soundcn),
+`License.txt` de cada pack confirma **CC0 1.0**), mixadas com o ffmpeg embutido do Remotion
+(`amix`/`adelay`/`volume`). Codec **Opus** em contêiner `.ogg` (o ffmpeg do Remotion não traz
+encoder Vorbis; Chromium/Remotion decodificam Ogg/Opus normalmente). Nomes do contrato →
+arquivo: `kaching`→kaching · `typewriter`→typewriter · `keyboard`→keyboard · `pop`→pop.
+
+| Arquivo | Uso | Origem (amostras Kenney CC0 compostas) |
+|---|---|---|
+| `kaching.ogg` | caixa registradora (dinheiro/venda) | interface-sounds · `bong_001` (sino) + `confirmation_003` (jingle) + casino-audio · `chips-stack-1` (gaveta) |
+| `typewriter.ogg` | máquina de escrever (texto digitado) | interface-sounds · `click_001` ×3 (teclas) + `bong_001` (sino do carro) |
+| `keyboard.ogg` | teclado (rajada de digitação ~0,4s) | interface-sounds · `tick_001` ×6 (teclas suaves) |
+| `pop.ogg` | bolha/pop suave | interface-sounds · `pluck_001` + `drop_001` (corpo) |

@@ -110,10 +110,112 @@ const ExtraIcons: Record<'question' | 'mind', React.FC> = {
   ),
 };
 
-export type ShotIconKey = IconKey | 'question' | 'mind';
+// Ícones NOVOS do motor de shots (v3.1) — mesma linguagem visual (SVG vetor,
+// gradiente da marca #fxg, traços grossos, acentos cyan/violet/magenta no escuro).
+type NewIconKey = 'piggy' | 'bank' | 'target' | 'trophy' | 'bulb' | 'hourglass' | 'wallet' | 'fire' | 'chart-down' | 'shield';
+const NewIcons: Record<NewIconKey, React.FC> = {
+  // cofrinho (poupar/economizar)
+  piggy: () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <ellipse cx="48" cy="56" rx="34" ry="26" fill="none" stroke="url(#fxg)" strokeWidth="6" />
+      <path d="M20 46 q-8 4 -6 12" fill="none" stroke="url(#fxg)" strokeWidth="6" strokeLinecap="round" />
+      <circle cx="72" cy="54" r="10" fill="none" stroke="url(#fxg)" strokeWidth="5" />
+      <circle cx="72" cy="54" r="2.6" fill={BRAND.magenta} />
+      <path d="M30 32 l12 8 l-14 6 Z" fill="url(#fxg)" />
+      <rect x="42" y="28" width="16" height="7" rx="3" fill={BRAND.cyan} />
+      <rect x="33" y="79" width="6" height="13" rx="3" fill="url(#fxg)" />
+      <rect x="57" y="79" width="6" height="13" rx="3" fill="url(#fxg)" />
+    </svg>
+  ),
+  // banco (instituição/segurança)
+  bank: () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <path d="M18 40 L50 20 L82 40 Z" fill="none" stroke="url(#fxg)" strokeWidth="6" strokeLinejoin="round" />
+      <circle cx="50" cy="33" r="3" fill={BRAND.cyan} />
+      <rect x="27" y="46" width="6" height="27" rx="3" fill="url(#fxg)" />
+      <rect x="47" y="46" width="6" height="27" rx="3" fill="url(#fxg)" />
+      <rect x="67" y="46" width="6" height="27" rx="3" fill="url(#fxg)" />
+      <rect x="18" y="77" width="64" height="7" rx="3" fill="url(#fxg)" />
+    </svg>
+  ),
+  // alvo (meta/objetivo)
+  target: () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <circle cx="50" cy="50" r="34" fill="none" stroke="url(#fxg)" strokeWidth="6" />
+      <circle cx="50" cy="50" r="20" fill="none" stroke="url(#fxg)" strokeWidth="5" />
+      <circle cx="50" cy="50" r="6" fill={BRAND.magenta} />
+    </svg>
+  ),
+  // troféu (conquista/vitória)
+  trophy: () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <path d="M34 24 h32 v14 a16 16 0 0 1 -32 0 Z" fill="none" stroke="url(#fxg)" strokeWidth="6" strokeLinejoin="round" />
+      <path d="M34 30 h-10 a10 10 0 0 0 12 12" fill="none" stroke="url(#fxg)" strokeWidth="5" />
+      <path d="M66 30 h10 a10 10 0 0 1 -12 12" fill="none" stroke="url(#fxg)" strokeWidth="5" />
+      <rect x="47" y="54" width="6" height="13" rx="3" fill="url(#fxg)" />
+      <rect x="38" y="66" width="24" height="8" rx="2" fill="url(#fxg)" />
+      <rect x="32" y="78" width="36" height="8" rx="2" fill="url(#fxg)" />
+    </svg>
+  ),
+  // lâmpada (ideia/dica)
+  bulb: () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <circle cx="50" cy="42" r="22" fill="none" stroke="url(#fxg)" strokeWidth="6" />
+      <path d="M44 46 l6 -10 l6 10" fill="none" stroke={BRAND.cyan} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+      <rect x="42" y="63" width="16" height="5" rx="2.5" fill="url(#fxg)" />
+      <rect x="44" y="71" width="12" height="5" rx="2.5" fill="url(#fxg)" />
+      <rect x="46" y="79" width="8" height="5" rx="2.5" fill={BRAND.magenta} />
+      <line x1="16" y1="30" x2="24" y2="34" stroke={BRAND.cyan} strokeWidth="4" strokeLinecap="round" />
+      <line x1="84" y1="30" x2="76" y2="34" stroke={BRAND.magenta} strokeWidth="4" strokeLinecap="round" />
+      <line x1="50" y1="8" x2="50" y2="16" stroke={BRAND.violet} strokeWidth="4" strokeLinecap="round" />
+    </svg>
+  ),
+  // ampulheta (tempo/prazo)
+  hourglass: () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <rect x="28" y="18" width="44" height="7" rx="2" fill="url(#fxg)" />
+      <rect x="28" y="75" width="44" height="7" rx="2" fill="url(#fxg)" />
+      <path d="M36 25 L64 25 L52 50 L64 75 L36 75 L48 50 Z" fill="none" stroke="url(#fxg)" strokeWidth="5" strokeLinejoin="round" />
+      <path d="M45 36 L55 36 L50 48 Z" fill={BRAND.cyan} />
+      <path d="M44 74 L56 74 L50 60 Z" fill={BRAND.magenta} />
+    </svg>
+  ),
+  // carteira (dinheiro à mão/orçamento)
+  wallet: () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <rect x="18" y="30" width="64" height="42" rx="8" fill="none" stroke="url(#fxg)" strokeWidth="6" />
+      <rect x="24" y="38" width="42" height="4" rx="2" fill="url(#fxg)" opacity="0.6" />
+      <rect x="54" y="44" width="32" height="16" rx="5" fill={BRAND.panel} stroke="url(#fxg)" strokeWidth="5" />
+      <circle cx="63" cy="52" r="3.4" fill={BRAND.magenta} />
+    </svg>
+  ),
+  // fogo (em alta/urgência)
+  fire: () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <path d="M52 14 C60 30 74 34 74 54 a24 24 0 0 1 -48 0 C26 40 38 40 40 28 C46 38 44 26 52 14 Z" fill="none" stroke="url(#fxg)" strokeWidth="6" strokeLinejoin="round" />
+      <path d="M50 46 C56 52 58 57 58 62 a8 8 0 0 1 -16 0 C42 55 46 52 50 46 Z" fill={BRAND.magenta} opacity="0.9" />
+    </svg>
+  ),
+  // gráfico caindo (queda/perda) — espelho do growth
+  'chart-down': () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <path d="M16 24 L40 48 L56 36 L86 76" fill="none" stroke="url(#fxg)" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M70 76 L86 76 L86 60" fill="none" stroke="url(#fxg)" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
+  // escudo (proteção/segurança)
+  shield: () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <path d="M50 14 L80 26 V50 C80 68 66 80 50 88 C34 80 20 68 20 50 V26 Z" fill="none" stroke="url(#fxg)" strokeWidth="6" strokeLinejoin="round" />
+      <path d="M37 50 L47 61 L64 39" fill="none" stroke={BRAND.cyan} strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
+};
 
-// Mapa de ícones do MOTOR DE SHOTS (superset dos gatilhos: + question + mind).
-export const SHOT_ICONS: Record<ShotIconKey, React.FC> = { ...Icons, ...ExtraIcons };
+export type ShotIconKey = IconKey | 'question' | 'mind' | NewIconKey;
+
+// Mapa de ícones do MOTOR DE SHOTS (superset dos gatilhos: + curiosidade + v3.1).
+export const SHOT_ICONS: Record<ShotIconKey, React.FC> = { ...Icons, ...ExtraIcons, ...NewIcons };
 
 const HOLD = 40; // ~1,3s: quanto o ícone fica na tela após o gatilho
 

@@ -732,6 +732,39 @@ const ShotMetaphor: React.FC<{ metaphor?: string; life: number }> = ({ metaphor,
   return <MetaSnowball life={life} />; // 'bola-neve' (default)
 };
 
+// Texto DIGITADO (máquina de escrever): aparece caractere a caractere ao longo de
+// ~0,5–0,8s do início do shot, com um caret piscando durante a digitação (some ao
+// terminar). Usado em shots statement/list/formula cujo sfx é 'typewriter'/'keyboard'
+// — o som e a digitação entram JUNTOS (o pop das transições dá lugar a este efeito).
+const ShotTypewriter: React.FC<{ text: string; life: number; gradient?: boolean }> = ({ text, life, gradient }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const chars = Array.from(text);
+  // Janela de digitação: ~0,65s, limitada pela vida do shot (deixa folga pra ler).
+  const typeFrames = Math.max(1, Math.min(Math.round(fps * 0.65), life - 4));
+  const shown = Math.round(
+    interpolate(frame, [0, typeFrames], [0, chars.length], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }),
+  );
+  const typing = frame < typeFrames && shown < chars.length;
+  const blinkOn = Math.floor(frame / 7) % 2 === 0; // pisca ~4×/s
+  const visible = chars.slice(0, shown).join('');
+  return (
+    <div style={{ textAlign: 'center', maxWidth: 940, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
+      <span style={{
+        fontFamily: DISPLAY, fontSize: 82, fontWeight: 900, lineHeight: 1.12,
+        whiteSpace: 'pre-wrap', ...(gradient ? gradientText : { color: BRAND.text }),
+      }}>{visible}</span>
+      {typing && (
+        <span style={{
+          display: 'inline-block', width: 8, height: 74, marginLeft: 6,
+          background: BRAND.cyan, borderRadius: 3, opacity: blinkOn ? 1 : 0.12,
+          alignSelf: 'center',
+        }} />
+      )}
+    </div>
+  );
+};
+
 // Um shot: entra com pop+slide e mostra seu visual pela sua vida.
 const ShotView: React.FC<{ shot: Shot; life: number; base: Scene; revealFrame: number; durationFrames: number }> = ({ shot, life, base, revealFrame, durationFrames }) => {
   const frame = useCurrentFrame();
@@ -741,7 +774,13 @@ const ShotView: React.FC<{ shot: Shot; life: number; base: Scene; revealFrame: n
   const tx = interpolate(pop, [0, 1], [40, 0]);
   const kb = interpolate(frame, [0, life], [1, 1.05], { extrapolateRight: 'clamp' });
   const v = shot.visual;
+  // Entrada DIGITADA quando o shot de texto tem sfx de teclado/máquina de escrever.
+  const typed = shot.sfx === 'typewriter' || shot.sfx === 'keyboard';
+  const isTextShot = v.type === 'statement' || v.type === 'list' || v.type === 'formula';
   const inner = (() => {
+    if (typed && isTextShot) {
+      return <ShotTypewriter text={v.text ?? base.onScreenText ?? ''} life={life} gradient={v.type === 'formula'} />;
+    }
     switch (v.type) {
       case 'number': return <ShotNumber text={v.text ?? base.onScreenText} />;
       case 'counter': return <ShotCounter from={v.from} to={v.to} prefix={v.prefix} life={life} />;
@@ -791,15 +830,27 @@ const ShotSfxTrack: React.FC<{ scene: Scene; timing?: SceneTiming | null; totalF
   const { fps } = useVideoConfig();
   const shots = scene.shots || [];
   const starts = shotStartFrames(scene, timing, fps, totalFrames);
+  // Guarda anti-repetição (belt-and-suspenders): se o som deste shot for IDÊNTICO
+  // ao ÚLTIMO som DISPARADO, pula (silêncio) — evita cansar com o mesmo efeito em
+  // shots seguidos. Compara o ARQUIVO resolvido (o que realmente toca), então dois
+  // nomes de contrato que caem no mesmo .ogg também são deduplicados. Shots sem sfx
+  // não contam como "disparo" (não alteram o último som).
+  let prevFile: string | null = null;
+  const fires: { i: number; from: number; file: string }[] = [];
+  shots.forEach((shot, i) => {
+    if (!shot.sfx) return;
+    const file = resolveShotSfx(shot.sfx);
+    if (file === prevFile) return;
+    prevFile = file;
+    fires.push({ i, from: starts[i], file });
+  });
   return (
     <>
-      {shots.map((shot, i) =>
-        shot.sfx ? (
-          <Sequence key={i} from={starts[i]} durationInFrames={Math.round(fps * 2)}>
-            <Audio src={staticFile(resolveShotSfx(shot.sfx))} volume={SHOT_SFX_VOLUME} />
-          </Sequence>
-        ) : null,
-      )}
+      {fires.map((f) => (
+        <Sequence key={f.i} from={f.from} durationInFrames={Math.round(fps * 2)}>
+          <Audio src={staticFile(f.file)} volume={SHOT_SFX_VOLUME} />
+        </Sequence>
+      ))}
     </>
   );
 };

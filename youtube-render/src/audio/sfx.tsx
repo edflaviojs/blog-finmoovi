@@ -27,10 +27,15 @@ const SFX_VOLUME = 0.5;
 // Guarda: se o arquivo do som não existir (download falhou), cai num som que
 // existe (fallback), sem quebrar o render (evita staticFile 404).
 // ─────────────────────────────────────────────────────────────────────────────
-export type ShotSfxName = 'boom' | 'whoosh' | 'coin' | 'alert' | 'avalanche' | 'slide';
+export type ShotSfxName =
+  | 'boom' | 'whoosh' | 'coin' | 'alert' | 'avalanche' | 'slide'
+  | 'kaching' | 'typewriter' | 'keyboard' | 'pop';
 
 // basenames presentes em public/sfx/ (sem extensão).
-const AVAILABLE_SFX = new Set(['boom', 'money', 'coins', 'growth', 'clock', 'card', 'warning', 'avalanche', 'slide']);
+const AVAILABLE_SFX = new Set([
+  'boom', 'money', 'coins', 'growth', 'clock', 'card', 'warning', 'avalanche', 'slide',
+  'kaching', 'typewriter', 'keyboard', 'pop',
+]);
 
 // nome do contrato → basename preferido.
 const SHOT_SFX: Record<ShotSfxName, string> = {
@@ -40,11 +45,16 @@ const SHOT_SFX: Record<ShotSfxName, string> = {
   alert: 'warning',
   avalanche: 'avalanche',
   slide: 'slide',
+  kaching: 'kaching',
+  typewriter: 'typewriter',
+  keyboard: 'keyboard',
+  pop: 'pop',
 };
 
 // fallback caso o basename preferido não exista em public/sfx/.
 const SHOT_SFX_FALLBACK: Record<ShotSfxName, string> = {
   boom: 'boom', whoosh: 'growth', coin: 'coins', alert: 'warning', avalanche: 'warning', slide: 'growth',
+  kaching: 'coins', typewriter: 'clock', keyboard: 'clock', pop: 'coins',
 };
 
 export function resolveShotSfx(name: string): string {
