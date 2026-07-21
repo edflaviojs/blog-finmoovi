@@ -26,7 +26,7 @@ A ideia dos envelopes digitais é a mesma dos envelopes de papel que você coloc
 
 ## Configurar seus envelopes no app
 
-1. **Escolha um aplicativo** – Use um app de finanças pessoais que permita criar “categorias” ou “envelopes”. Exemplos populares são o [Mobills](/posts/5-alternativas-ao-mobills-em-2026) e o [FinMoovi](https://finmoovi.com).
+1. **Escolha um aplicativo** – Use um app de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) que permita criar “categorias” ou “envelopes”. Exemplos populares são o [Mobills](/posts/5-alternativas-ao-mobills-em-2026) e o [FinMoovi](https://finmoovi.com).
 2. **Crie as categorias** – Comece com as cinco mais básicas:
    - Alimentação
    - Transporte
@@ -57,7 +57,7 @@ Depois de receber o salário, siga este passo‑a‑passo:
 
 Esse processo leva menos de 5 minutos e já deixa seu orçamento “pronto para usar”.
 
-## Monitorar e ajustar gastos
+## Monitorar e ajustar [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 
 1. **Registre cada despesa** – Seja no celular, no computador ou até falando com assistente de voz.
 2. **Verifique o saldo** – Quando um envelope ficar próximo de zero, o app enviará notificação.

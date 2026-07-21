@@ -39,13 +39,13 @@ La renta fija engloba [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende
 
 *Basado en datos del Banco Central y del Tesoro Directo hasta diciembre de 2025.  
 
-La lógica es simple: prestas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) (o compras títulos) y recibes intereses a lo largo del tiempo. El **principal** ([valor](/es/glossario/es-valor) invertido) suele devolverse al vencimiento o puede rescatarse antes, según el producto. Como la remuneración está vinculada a índices como el CDI o la Selic, la variación de la tasa de interés en el país afecta directamente el retorno.  
+La lógica es simple: prestas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) (o compras títulos) y recibes intereses a lo largo del tiempo. El **principal** ([valor](/es/glossario/es-valor) invertido) suele devolverse al vencimiento o puede rescatarse antes, según el producto. Como la remuneración está vinculada a índices como el CDI o la [Selic](/es/posts/es-cotizaciones-semana-1-junio-2026), la variación de la tasa de interés en el país afecta directamente el retorno.  
 
 ### Ventajas de la renta fija  
 
 1. **Previsibilidad** – Sabes cuánto vas a ganar o, al menos, tienes un piso garantizado.  
 2. **Bajo riesgo de pérdida de capital** – En la mayoría de los casos, el riesgo está limitado al emisor (banco o gobierno).  
-3. **Liquidez** – Tesoro Selic y algunos CDB permiten rescate en cualquier momento, sin gran penalidad.  
+3. **Liquidez** – Tesoro [Selic](/es/posts/es-cotizaciones-semana-2-julio-2026) y algunos CDB permiten rescate en cualquier momento, sin gran penalidad.  
 4. **Exención de IR** – LCIs y LCAs están exentas, lo que aumenta el rendimiento neto.  
 
 ### Desventajas de la renta fija  

@@ -16,9 +16,9 @@ seo:
   keywords: ["cotización dólar hoy", "cotización euro", "resumen mercado financiero", "selic"]
 ---
 
-## Resumen del dólar y el euro en Brasil (13 – 20 julio 2026)
+## Resumen del [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y el euro en Brasil (13 – 20 julio 2026)
 
-Esta semana el real mostró una ligera recuperación frente a las dos monedas más importantes. El **dólar** se mantuvo en torno a **R$ 5,11**, una caída de 0,3 % respecto al lunes, mientras que el **euro** quedó en **R$ 5,84**, bajando 0,5 % en el mismo período. La presión bajista vino principalmente de dos factores: la publicación de datos de [inflación](/es/glossario/es-inflacao) más suaves en EE. UU. y la expectativa de que la Reserva Federal mantenga la política monetaria estable. En Brasil, la noticia más relevante fue la decisión de la autoridad monetaria de **mantener la [Selic](/es/glossario/es-selic) en 13,75 %**, lo que quitó un posible impulso alcista al real.
+Esta semana el real mostró una ligera recuperación frente a las dos monedas más importantes. El **[dólar](/es/posts/es-cotizaciones-semana-1-junio-2026)** se mantuvo en torno a **R$ 5,11**, una caída de 0,3 % respecto al lunes, mientras que el **euro** quedó en **R$ 5,84**, bajando 0,5 % en el mismo período. La presión bajista vino principalmente de dos factores: la publicación de datos de [inflación](/es/glossario/es-inflacao) más suaves en EE. UU. y la expectativa de que la Reserva Federal mantenga la política monetaria estable. En Brasil, la noticia más relevante fue la decisión de la autoridad monetaria de **mantener la [Selic](/es/glossario/es-selic) en 13,75 %**, lo que quitó un posible impulso alcista al real.
 
 ![Resumen del dólar y el euro en Brasil (13 – 20 julio 2026)](/images/posts/es-cotizaciones-semana-3-julio-2026-inline-1.webp)
 

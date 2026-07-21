@@ -99,7 +99,7 @@ Si optas por un regalo más caro (p.ej.: smartwatch), verifica si la tienda ofre
 
 Regalar a papá no tiene que ser sinónimo de gasto exagerado. Con un límite bien definido, aprovechando cashback, cupones e ideas DIY, demuestras cariño y mantienes la salud financiera de la familia. Recuerda que el valor simbólico de un gesto suele ser mayor que el precio de un objeto caro.
 
-> **Usa FinMoovi para controlar tus gastos y no llevarte sorpresas al fin del mes.**
+> **Usa [FinMoovi](/es/posts/es-voce-tambem-esquece-de-anotar-seus-gastos) para controlar tus gastos y no llevarte sorpresas al fin del mes.**
 
 ---
 

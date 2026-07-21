@@ -26,7 +26,7 @@ La idea de los sobres digitales es la misma que la de los sobres de papel donde 
 
 ## Configurar tus sobres en la app  
 
-1. **Elige una aplicación** – Usa una app de finanzas personales que permita crear “categorías” o “sobres”. Ejemplos populares son [Mobills](/es/posts/es-5-alternativas-ao-mobills-em-2026) y [FinMoovi](https://finmoovi.com).  
+1. **Elige una aplicación** – Usa una app de [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) que permita crear “categorías” o “sobres”. Ejemplos populares son [Mobills](/es/posts/es-5-alternativas-ao-mobills-em-2026) y [FinMoovi](https://finmoovi.com).  
 2. **Crea las categorías** – Empieza con las cinco más básicas:  
    - Alimentación  
    - Transporte  
@@ -55,7 +55,7 @@ Después de recibir el sueldo, sigue estos pasos:
 
 Este proceso lleva menos de 5 minutos y deja tu presupuesto “listo para usar”.  
 
-## Monitorear y ajustar los gastos  
+## Monitorear y ajustar los [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)  
 
 1. **Registra cada gasto** – Ya sea en el móvil, en el ordenador o incluso hablando con un asistente de voz.  
 2. **Revisa el saldo** – Cuando un sobre se acerque a cero, la app enviará una notificación.  

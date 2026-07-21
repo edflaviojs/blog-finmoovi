@@ -53,7 +53,7 @@ After you receive your salary, follow this step‑by‑step:
 2. **Distribute the amount** – Tap each envelope and enter the limit you set in the table. The app will show the remaining balance (it should be zero).  
 3. **Reserve the money right away** – If the app lets you “lock” or “mark as saved”, do it. That way you won’t spend what should stay in the emergency reserve.
 
-This process takes less than 5 minutes and leaves your budget “ready to use”.
+This process takes less than 5 minutes and leaves your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) “ready to use”.
 
 ## Monitoring and adjusting spending
 
@@ -71,7 +71,7 @@ For someone earning R$2,000, the margin for error is small; someone earning R$8,
 
 1. **Open the monthly report** – Most apps generate pie or bar charts that show the actual spending distribution.  
 2. **Compare with the plan** – Identify categories that exceeded expectations.  
-3. **Plan the next round** – If the food envelope was 15 % over, consider reducing the allocation or looking for alternatives (farmers’ markets, bulk purchases).
+3. **Plan the next round** – If the food envelope was 15 % over, consider reducing the allocation or looking for [alternatives](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) (farmers’ markets, bulk purchases).
 
 This habit of review turns control into continuous learning, preventing small slip‑ups from becoming big debts.
 

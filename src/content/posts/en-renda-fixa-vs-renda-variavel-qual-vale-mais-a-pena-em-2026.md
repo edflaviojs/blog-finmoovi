@@ -64,7 +64,7 @@ Variable income gathers assets whose return **is not guaranteed** and depends on
 |---------|----------------|---------------------------|----------|
 | Listed company stocks | [Stock](/en/glossario/en-stock) exchange (B3) | 12 %‑20 % a year (Ibovespa index) | High [volatility](/en/glossario/en-volatilidade), occasional [dividends](/en/glossario/en-dividendos) |
 | ETFs (Index Funds) | Brokerages | 11 %‑18 % a year (e.g., BOVA11) | Automatic [diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel), low management fee |
-| Real Estate Investment Funds (FIIs) | Brokerages | 7 %‑9 % a year (monthly yield) | Rental income, vacancy risk |
+| [Real Estate Investment](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo) Funds (FIIs) | Brokerages | 7 %‑9 % a year (monthly yield) | Rental income, vacancy risk |
 | Cryptocurrencies | Exchanges | Varies widely (e.g., BTC 2024: +30 % a year) | Extremely volatile, regulatory risk |
 
 *Return based on historical performance of the Ibovespa and main ETFs up to December 2025.
@@ -141,7 +141,7 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 
 ## Verdict
 
-There is no absolute “best”; the choice depends **on your profile, timeline, and goal**. If you’re still building the habit of saving, fear seeing your money “disappear,” and need liquidity, **fixed income** should be the foundation of your portfolio. It protects your capital, offers stable returns, and still allows you to build an emergency reserve.
+There is no absolute “best”; the choice depends **on your profile, timeline, and goal**. If you’re still building the habit of saving, fear seeing your [money](/en/posts/en-financial-education-for-children) “disappear,” and need liquidity, **fixed income** should be the foundation of your portfolio. It protects your capital, offers stable returns, and still allows you to build an emergency reserve.
 
 On the other hand, if you have **plenty of time**, can handle the market’s roller‑coaster, and want returns that comfortably beat inflation, **variable income** can be the main growth lever. The most balanced recommendation is usually to **mix both worlds**: keep a safe slice (fixed income) and allocate the rest to higher‑return opportunities (variable income).
 

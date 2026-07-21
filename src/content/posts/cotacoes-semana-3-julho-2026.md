@@ -32,15 +32,15 @@ A última semana foi marcada por oscilações nos mercados globais, mas o cenár
 O real ganhou alguns centavos frente ao dólar, que recuou 0,4 % ao longo da semana. O movimento foi impulsionado por duas coisas:  
 
 1. **Dados de [inflação](/glossario/inflacao) dos EUA** – O CPI de junho veio um ponto percentual abaixo das expectativas, aliviando a pressão sobre o Federal Reserve.  
-2. **Fluxos de capitais** – Investidores internacionais retiraram parte dos recursos de ativos de risco, mas a queda do dólar foi mais moderada porque o Brasil continua atraente graças à taxa Selic ainda alta.  
+2. **Fluxos de capitais** – Investidores internacionais retiraram parte dos recursos de ativos de risco, mas a queda do dólar foi mais moderada porque o Brasil continua atraente graças à taxa [Selic](/glossario/selic) ainda alta.  
 
-Em termos práticos, quem comprou dólares no início da semana viu um ganho de cerca de R$ 0,02 por moeda. Não é nada que vá mudar sua conta bancária, mas já dá uma ideia da direção.
+Em termos práticos, quem comprou dólares no início da semana viu um ganho de cerca de R$ 0,02 por [moeda](/glossario/moeda). Não é nada que vá mudar sua conta bancária, mas já dá uma ideia da direção.
 
 ### Euro (EUR/BRL)  
 O euro subiu 0,3 % na mesma janela, terminando em R$ 5,84. A alta foi alimentada por:
 
 - **Reforço do eurozona** após a divulgação de que a Alemanha registrou crescimento inesperado no trimestre.  
-- **Expectativa de cortes tardios** no Banco Central Europeu, que ainda mantém a taxa de juros acima de 4 %.  
+- **Expectativa de cortes tardios** no Banco Central Europeu, que ainda mantém a taxa de [juros](/glossario/juros) acima de 4 %.  
 
 A diferença entre dólar e euro ficou praticamente a mesma (cerca de R$ 0,73), o que indica que o real está respondendo de forma equilibrada a ambas as moedas.
 
@@ -79,7 +79,7 @@ Fique de olho nesses indicadores; eles costumam mover o real mais que qualquer o
 
 ### [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026): seu aliado nas múltiplas moedas  
 
-Gerenciar investimentos em diferentes moedas pode ser confuso, mas o **FinMoovi** simplifica tudo. Com ele você acompanha a cotação do dólar, euro e outras moedas em tempo real, além de visualizar a performance dos seus ativos em reais ou em moeda estrangeira. É como ter um assistente financeiro no bolso, pronto para te lembrar quando é hora de rebalancear ou de aproveitar uma oportunidade cambial.
+Gerenciar investimentos em diferentes moedas pode ser confuso, mas o **[FinMoovi](/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)** simplifica tudo. Com ele você acompanha a cotação do dólar, euro e outras moedas em tempo real, além de visualizar a performance dos seus ativos em reais ou em moeda estrangeira. É como ter um assistente financeiro no bolso, pronto para te lembrar quando é hora de rebalancear ou de aproveitar uma oportunidade cambial.
 
 ---
 
@@ -87,5 +87,5 @@ Em síntese, a semana foi de leve recuperação do real frente ao dólar e ao eu
 
 
 ---
-**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu dinheiro.**
+**Pronto para acompanhar seus investimentos? [Experimente o FinMoovi de graça](https://finmoovi.com) — em 5 minutos você terá uma visão clara de para onde está indo seu [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso).**
 

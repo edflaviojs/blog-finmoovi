@@ -20,7 +20,7 @@ seo:
 
 ## Introdução
 
-Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro salário, a primeira grande dúvida costuma ser: **onde colocar o [dinheiro](/posts/cashback-inteligente)?** A resposta não é única. Em 2026, as duas categorias mais faladas são **[renda fixa](/glossario/renda-fixa)** e **[renda variável](/glossario/renda-variavel)**. Cada uma tem vantagens, riscos e momentos ideais de uso. Neste artigo, vamos analisar os dois lados da moeda, comparar critérios importantes e ajudar você a decidir qual combina mais com seu objetivo, tolerância ao risco e horizonte de tempo. Ah, e ao final vamos indicar uma ferramenta prática – o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – que facilita o acompanhamento de qualquer escolha que você faça.
+Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro salário, a primeira grande dúvida costuma ser: **onde colocar o [dinheiro](/posts/cashback-inteligente)?** A resposta não é única. Em 2026, as duas categorias mais faladas são **[renda fixa](/glossario/renda-fixa)** e **[renda variável](/glossario/renda-variavel)**. Cada uma tem vantagens, riscos e momentos ideais de uso. Neste artigo, vamos analisar os dois lados da [moeda](/glossario/moeda), comparar critérios importantes e ajudar você a decidir qual combina mais com seu objetivo, tolerância ao risco e horizonte de tempo. Ah, e ao final vamos indicar uma ferramenta prática – o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – que facilita o acompanhamento de qualquer escolha que você faça.
 
 ---
 
@@ -41,19 +41,19 @@ A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario
 
 *Taxas baseadas em dados do Banco Central e do Tesouro Direto até dezembro de 2025.
 
-A lógica é simples: você empresta [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) (ou compra títulos) e recebe juros ao longo do tempo. O **principal** (valor investido) costuma ser devolvido no vencimento ou pode ser resgatado antes, dependendo do produto. Como a remuneração está atrelada a índices como o CDI ou a Selic, a variação da taxa de juros no país afeta diretamente o retorno.
+A lógica é simples: você empresta [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) (ou compra títulos) e recebe juros ao longo do tempo. O **principal** ([valor](/glossario/valor) investido) costuma ser devolvido no vencimento ou pode ser resgatado antes, dependendo do produto. Como a remuneração está atrelada a índices como o CDI ou a [Selic](/glossario/selic), a variação da taxa de juros no país afeta diretamente o retorno.
 
 ### Vantagens da renda fixa
 
 1. **Previsibilidade** – Você sabe quanto vai ganhar ou, no mínimo, tem um piso garantido.
 2. **Baixo risco de perda de capital** – Na maioria dos casos, o risco é limitado ao emissor (banco ou governo).
-3. **Liquidez** – Tesouro Selic e alguns CDBs permitem resgate a qualquer momento, sem grande penalidade.
+3. **Liquidez** – Tesouro [Selic](/posts/cotacoes-semana-1-junho-2026) e alguns CDBs permitem resgate a qualquer momento, sem grande penalidade.
 4. **Isenção de IR** – LCIs e LCAs são isentas, o que aumenta o rendimento líquido.
 
 ### Desvantagens da renda fixa
 
 1. **Rentabilidade limitada** – Quando a [inflação](/glossario/inflacao) sobe, a renda fixa pode ficar atrás de investimentos mais agressivos.
-2. **Dependência da taxa Selic** – Se o Banco Central mantiver juros baixos por muito tempo, os retornos caem.
+2. **Dependência da taxa [Selic](/posts/cotacoes-semana-2-julho-2026)** – Se o Banco Central mantiver juros baixos por muito tempo, os retornos caem.
 3. **Possível “custo de oportunidade”** – [Dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) preso em um CDB de 5 anos rende menos que [ações](/glossario/acoes) que podem subir 30 % em seis meses.
 
 ---

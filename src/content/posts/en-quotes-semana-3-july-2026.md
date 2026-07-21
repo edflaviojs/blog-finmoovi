@@ -32,7 +32,7 @@ A última semana foi movimentada para quem acompanha o mercado brasileiro. O dó
 
 ## 2. [Selic](/en/glossario/en-selic) e o Impacto nos Investimentos
 
-A taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) permaneceu em **13,75 % ao ano**, conforme decisão do Copom na última reunião (21 de junho). A manutenção da taxa alta tem duas consequências claras:
+A [taxa](/en/glossario/en-taxa) [Selic](/en/posts/en-quotes-semana-1-july-2026) permaneceu em **13,75 % ao ano**, conforme decisão do Copom na última reunião (21 de junho). A manutenção da taxa alta tem duas consequências claras:
 
 ![2. Selic e o Impacto nos Investimentos](/images/posts/en-quotes-semana-3-july-2026-inline-3.webp)
 
@@ -40,7 +40,7 @@ A taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) permaneceu em **13,75 %
 
 1. **[Renda fixa](/en/glossario/en-renda-fixa) mais atrativa** – Títulos do [Tesouro Direto](/en/glossario/en-tesouro-direto), CDBs e LCIs/LCAs continuam oferecendo retornos acima de 13 % ao ano. Para quem ainda tem parte da carteira em [poupança](/en/glossario/en-poupanca), a diferença entre 0,5 % da poupança e 13 % da renda fixa é enorme. Trocar a poupança por um título do Tesouro [Selic](/en/posts/en-quotes-semana-1-june-2026) pode render dezenas de milhares a mais em cinco anos.
 
-2. **Custo de crédito mais elevado** – Empréstimos, financiamentos e cartões de crédito ficam mais caros. Se você tem dívida, a regra de ouro continua: quanto maior a Selic, maior o [juros](/en/glossario/en-juros) que você paga. Reduzir o saldo devedor ou renegociar a dívida passa a ser ainda mais urgente.
+2. **Custo de crédito mais elevado** – Empréstimos, financiamentos e cartões de crédito ficam mais caros. Se você tem dívida, a regra de ouro continua: quanto maior a [Selic](/en/posts/en-quotes-semana-2-july-2026), maior o [juros](/en/glossario/en-juros) que você paga. Reduzir o saldo devedor ou renegociar a dívida passa a ser ainda mais urgente.
 
 ## 3. Dica Prática para Investidores Individuais
 
@@ -50,7 +50,7 @@ A taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) permaneceu em **13,75 %
 
 - **Câmbio**: O dólar tende a ficar próximo de **R$ 5,10**, mas fique de olho nos próximos relatórios de inflação dos EUA (agora previstos para 24/07). Um número acima do esperado pode empurrar o dólar de volta ao topo da semana.
 
-- **Selic**: Não há nova reunião do Copom até o final de agosto, então a taxa deve permanecer estável. Contudo, o Banco Central pode usar o **Fundo de Garantia de Taxas** para ajustar a liquidez, o que pode gerar pequenos movimentos nos juros de curto prazo.
+- **[Selic](/en/posts/en-quotes-semana-3-june-2026)**: Não há nova reunião do Copom até o final de agosto, então a taxa deve permanecer estável. Contudo, o Banco Central pode usar o **Fundo de Garantia de Taxas** para ajustar a liquidez, o que pode gerar pequenos movimentos nos juros de curto prazo.
 
 - **Ações**: O índice Ibovespa está em recuperação moderada, impulsionado por setores de commodities e tecnologia. Se você tem exposição a essas áreas, pode ser um bom momento para analisar se vale a pena reforçar a posição ou apenas manter o plano de longo prazo.
 

@@ -33,13 +33,13 @@ The second half of the year is usually busier: vacations, end‑of‑year partie
 ## Why focus on the second half?
 
 ### 1. Market seasonality  
-Historically, some sectors tend to rise in the second half – tourism, retail, energy, and technology. This “high season” can create profit opportunities, but it also brings volatility that needs attention.
+Historically, some sectors tend to rise in the second half – tourism, retail, energy, and technology. This “high season” can create profit opportunities, but it also brings [volatility](/en/glossario/en-volatilidade) that needs attention.
 
 ### 2. Annual goal‑adjustment point  
 If you haven’t yet hit your savings or return target, the second half is the last chance to correct the course before the fiscal year ends.
 
 ### 3. Preparation for the next year  
-Building an emergency reserve and allocating money to long‑term assets already in the second half guarantees peace of mind to start 2025 with a ready‑to‑go portfolio.
+Building an emergency reserve and allocating [money](/en/posts/en-30-day-rule-for-purchases) to long‑term assets already in the second half guarantees peace of mind to start 2025 with a ready‑to‑go portfolio.
 
 ---
 
@@ -58,13 +58,13 @@ Building an emergency reserve and allocating money to long‑term assets already
 
 After paying the bills, calculate how much is left for new investments. In the example above, the person has **R$ 1.700,00** of free margin (3.500 – 1.800). If you allocate 30 % of that margin to new contributions, the monthly contribution will be **R$ 510,00**.
 
-> **Practical tip:** Use the app **FinMoovi** to record these inflows and outflows. It lets you categorize each expense and instantly shows how much you can invest each month.
+> **Practical tip:** Use the app **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)** to record these inflows and outflows. It lets you categorize each expense and instantly shows how much you can invest each month.
 
 ### Step 2 – Define your time horizon
 
 - **Short term (up to 12 months):** goal to use the money this year (travel, buying an appliance).
 - **Medium term (1‑3 years):** goals like a down‑payment for a house or a car.
-- **Long term (5 years or more):** retirement, financial independence.
+- **Long term (5 years or more):** retirement, [financial independence](/en/glossario/en-independencia-financeira).
 
 For the second half, most people focus on **short and medium term**, but don’t forget to set aside a piece for the long term.
 
@@ -141,7 +141,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 Yes. Begin with Tesouro Selic, which has daily liquidity and protects capital. As the reserve grows, diversify.
 
 **2. How much should I allocate to FIIs?**  
-It depends on your passive‑income goal. An allocation of 10‑20 % usually yields monthly dividends without hurting diversification.
+It depends on your passive‑income goal. An allocation of 10‑20 % usually yields monthly [dividends](/en/glossario/en-dividendos) without hurting diversification.
 
 **3. Is it safe to buy international ETFs?**  
 It’s possible through brokers that offer access to BDRs or overseas investment funds. Check custody fees and taxes.

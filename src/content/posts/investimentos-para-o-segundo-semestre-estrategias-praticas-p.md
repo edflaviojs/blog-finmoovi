@@ -39,7 +39,7 @@ Historicamente, alguns setores se valorizam no segundo semestre – turismo, var
 Se você ainda não atingiu sua meta de poupança ou de retorno, o segundo semestre representa a última chance de corrigir o percurso antes do fechamento do exercício fiscal.
 
 ### 3. Preparação para o próximo ano
-Construir uma reserva de emergência e alocar recursos em ativos de longo prazo já no segundo semestre garante tranquilidade para iniciar 2025 com a carteira pronta.
+Construir uma [reserva de emergência](/glossario/reserva-de-emergencia) e alocar recursos em ativos de longo prazo já no segundo semestre garante tranquilidade para iniciar 2025 com a carteira pronta.
 
 ---
 
@@ -60,13 +60,13 @@ Construir uma reserva de emergência e alocar recursos em ativos de longo prazo 
 
 Depois de pagar as contas, calcule quanto sobra para novos investimentos. No exemplo acima, a pessoa tem **R$ 1.700,00** de margem livre (3.500 – 1.800). Se destinar 30 % dessa margem a novos aportes, o aporte mensal será **R$ 510,00**.
 
-> **Dica prática:** Use o app **FinMoovi** para registrar essas entradas e saídas. Ele permite categorizar cada gasto e já mostra quanto pode ser investido a cada mês.
+> **Dica prática:** Use o app **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** para registrar essas entradas e saídas. Ele permite categorizar cada gasto e já mostra quanto pode ser investido a cada mês.
 
 ### Passo 2 – Defina seu horizonte de tempo
 
 - **Curto prazo (até 12 meses):** objetivo de usar o dinheiro ainda neste ano (viagens, compra de eletrodoméstico).
 - **Médio prazo (1‑3 anos):** metas como entrada para imóvel ou carro.
-- **Longo prazo (5 anos ou mais):** aposentadoria, independência financeira.
+- **Longo prazo (5 anos ou mais):** aposentadoria, [independência financeira](/glossario/independencia-financeira).
 
 Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**, mas não deixe de reservar parte para o longo prazo.
 
@@ -77,7 +77,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 | **Tesouro Selic** (renda fixa) | Baixo | Reserva de emergência e aporte de segurança |
 | **CDBs com liquidez diária** | Baixo‑médio | Complemento ao Selic, rendimento acima da poupança |
 | **Fundos de índice (ETF) de ações** | Médio‑alto | Exposição a setores sazonais (varejo, energia) |
-| **Fundos imobiliários (FIIs)** | Médio | Recebimento de aluguéis mensais, boa para quem quer renda passiva |
+| **[Fundos imobiliários](/glossario/fundos-imobiliarios) (FIIs)** | Médio | Recebimento de aluguéis mensais, boa para quem quer renda passiva |
 | **Criptomoedas ou ativos alternativos** | Alto | Apenas 5 % da carteira, para quem aceita volatilidade |
 
 #### Exemplo de alocação para quem ganha R$ 3.500,00
@@ -98,7 +98,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 
 3. **Energia:** O aumento do consumo de ar‑condicionado no outono (maio‑setembro) eleva o preço de energia. FIIs de energia ou ações de utilities podem se beneficiar.
 
-> **Ferramenta:** O FinMoovi tem alertas de mercado que avisam quando os preços de ETFs ou FIIs ultrapassam limites pré‑definidos, ajudando a entrar na hora certa.
+> **Ferramenta:** O [FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) tem alertas de mercado que avisam quando os preços de ETFs ou FIIs ultrapassam limites pré‑definidos, ajudando a entrar na hora certa.
 
 ### Passo 5 – Monitore e ajuste a cada trimestre
 

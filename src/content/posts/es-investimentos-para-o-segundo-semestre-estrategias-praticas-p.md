@@ -33,7 +33,7 @@ El segundo semestre suele ser más agitado: vacaciones, fiestas de fin de año y
 ## ¿Por qué enfocarse en el segundo semestre?
 
 ### 1. Seasonalidad del mercado  
-Históricamente, algunos sectores se valorizan en la segunda mitad del año – turismo, comercio minorista, energía y tecnología. Esta “temporada alta” puede generar oportunidades de ganancia, pero también trae volatilidad que exige atención.
+Históricamente, algunos sectores se valorizan en la segunda mitad del año – turismo, comercio minorista, energía y tecnología. Esta “temporada alta” puede generar oportunidades de ganancia, pero también trae [volatilidad](/es/glossario/es-volatilidade) que exige atención.
 
 ### 2. Punto de ajuste de metas anuales  
 Si aún no alcanzaste tu meta de ahorro o de retorno, el segundo semestre representa la última oportunidad de corregir el rumbo antes del cierre del ejercicio fiscal.
@@ -58,13 +58,13 @@ Construir una reserva de emergencia y colocar recursos en activos de largo plazo
 
 Después de pagar las cuentas, calcula cuánto sobra para nuevos aportes. En el ejemplo anterior, la persona tiene **R$ 1.700,00** de margen libre (3.500 – 1.800). Si destinas el 30 % de ese margen a nuevos aportes, el aporte mensual será **R$ 510,00**.
 
-> **Consejo práctico:** Usa la app **FinMoovi** para registrar esas entradas y salidas. Permite categorizar cada gasto y ya muestra cuánto puedes invertir cada mes.
+> **Consejo práctico:** Usa la app **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** para registrar esas entradas y salidas. Permite categorizar cada gasto y ya muestra cuánto puedes invertir cada mes.
 
 ### Paso 2 – Define tu horizonte de tiempo
 
 - **Corto plazo (hasta 12 meses):** objetivo de usar el dinero aún este año (viajes, compra de electrodoméstico).  
 - **Mediano plazo (1‑3 años):** metas como entrada para vivienda o auto.  
-- **Largo plazo (5 años o más):** jubilación, independencia financiera.
+- **Largo plazo (5 años o más):** jubilación, [independencia financiera](/es/glossario/es-independencia-financeira).
 
 Para el segundo semestre, la mayoría de la gente se concentra en **corto y mediano plazo**, pero no dejes de reservar una parte para el largo plazo.
 
@@ -75,7 +75,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 | **Tesoro Selic** (renta fija)     | Bajo   | Reserva de emergencia y aporte de seguridad |
 | **CDBs con liquidez diaria**       | Bajo‑medio | Complemento al Selic, rendimiento superior al ahorro |
 | **Fondos índice (ETF) de acciones**| Medio‑alto | Exposición a sectores estacionales (comercio, energía) |
-| **Fondos inmobiliarios (FIIs)**    | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
+| **[Fondos inmobiliarios](/es/glossario/es-fundos-imobiliarios) (FIIs)**    | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
 | **Criptomonedas o activos alternativos** | Alto | Solo 5 % de la cartera, para quien acepta volatilidad |
 
 #### Ejemplo de asignación para quien gana R$ 3.500,00
@@ -96,7 +96,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 3. **Energía:** El aumento del consumo de aire acondicionado en otoño (mayo‑septiembre) eleva el precio de la energía. FIIs de energía o acciones de utilities pueden beneficiarse.  
 
-> **Herramienta:** FinMoovi tiene alertas de mercado que avisan cuando los precios de ETFs o FIIs superan límites predefinidos, ayudándote a entrar en el momento justo.
+> **Herramienta:** [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) tiene alertas de mercado que avisan cuando los precios de ETFs o FIIs superan límites predefinidos, ayudándote a entrar en el momento justo.
 
 ### Paso 5 – Monitorea y ajusta cada trimestre
 

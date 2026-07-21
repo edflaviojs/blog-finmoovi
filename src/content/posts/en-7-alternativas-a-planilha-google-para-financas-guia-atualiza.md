@@ -71,7 +71,7 @@ Basic free version (with ads) – Pro version at R$ 19.90/month or R$ 199.90
 ## 3. [Organizze](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) – The app focused on businesses and freelancers
 
 **Description**  
-Organizze was initially built for small entrepreneurs, but its friendly interface also works for household users. It lets you manage cash flow, track income and [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), and generate tax reports with a few clicks.
+Organizze was initially built for small entrepreneurs, but its friendly interface also works for household users. It lets you manage cash flow, track [income](/en/posts/en-montando-carteira-diversificada-com-r-500) and [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), and generate tax reports with a few clicks.
 
 ![3. Organizze – O app focado em negócios e freelancers](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-4.webp)
 
@@ -149,7 +149,7 @@ The best app depends on your **financial profile** and the **features you need**
 
 | Profile | Main need | Best option |
 |--------|-----------|-------------|
-| **Basic user who wants to leave the spreadsheet** | Simple control, no need for multiple currencies or advanced AI. | **Mobills** – provides everything most beginners need, with a free tier sufficient to start. |
+| **Basic user who wants to leave the [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro)** | Simple control, no need for multiple currencies or advanced AI. | **Mobills** – provides everything most beginners need, with a free tier sufficient to start. |
 | **Traveler or anyone dealing with different currencies** | Automatic conversion, offline use, and quick capture. | **FinMoovi** – the mix of multi‑currency, offline capability, and smart voice capture makes it the most complete choice. |
 | **Freelancer/small business owner** | Cash flow, tax reports, and card integration. | **Organizze** – business‑focused with ready‑to‑use accounting reports. |
 | **Habit‑changer who wants “envelopes”** | [Savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) goals, overspend alerts. | **Money Lover** – virtual envelopes and customizable alerts. |
