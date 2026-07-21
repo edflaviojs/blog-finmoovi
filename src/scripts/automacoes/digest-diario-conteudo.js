@@ -16,7 +16,7 @@ const DIGEST_TO = process.env.DIGEST_TO || 'finmoovi@gmail.com';
 
 // Pastas de conteúdo versionado (relativas à raiz do repo) e a rota pública de cada uma.
 const CONTENT_SOURCES = [
-  { dir: 'src/content/posts', route: 'post', label: 'Posts' },
+  { dir: 'src/content/posts', route: 'posts', label: 'Posts' },
   { dir: 'src/content/glossario', route: 'glossario', label: 'Glossário' }
 ];
 
@@ -65,9 +65,11 @@ function describeFile(filePath) {
   if (!fileName.endsWith('.md')) return null;
 
   let locale = 'pt';
-  let base = fileName.replace(/\.md$/, '');
-  if (base.startsWith('en-')) { locale = 'en'; base = base.slice(3); }
-  else if (base.startsWith('es-')) { locale = 'es'; base = base.slice(3); }
+  const base = fileName.replace(/\.md$/, '');
+  // O slug do Astro MANTÉM o prefixo de locale (ex.: es-yahoo-finance) — detectar o
+  // idioma pelo prefixo, mas NÃO cortá-lo, senão a URL do e-mail fica errada (404).
+  if (base.startsWith('en-')) locale = 'en';
+  else if (base.startsWith('es-')) locale = 'es';
 
   const basePath = locale === 'pt' ? '' : `/${locale}`;
   const url = `${config.siteUrl}${basePath}/${source.route}/${base}`;
