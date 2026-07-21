@@ -38,3 +38,17 @@ arquivo: `kaching`→kaching · `typewriter`→typewriter · `keyboard`→keyboa
 | `typewriter.ogg` | máquina de escrever (texto digitado) | interface-sounds · `click_001` ×3 (teclas) + `bong_001` (sino do carro) |
 | `keyboard.ogg` | teclado (rajada de digitação ~0,4s) | interface-sounds · `tick_001` ×6 (teclas suaves) |
 | `pop.ogg` | bolha/pop suave | interface-sounds · `pluck_001` + `drop_001` (corpo) |
+
+## SFX novos v3.2 (mais sons + mãozinha do link + assinatura)
+
+Mesma abordagem: amostras **Kenney CC0** reais (registro [soundcn](https://github.com/kapishdima/soundcn),
+`License.txt` confirma **CC0 1.0**), compostas com o ffmpeg embutido do Remotion
+(`@remotion/compositor-win32-x64-msvc` — build enxuto: só `volume`/`adelay`/`amix`/`asetrate`/`aresample`/`apad`/`atrim`).
+Codec **Opus** em `.ogg`, 48 kHz. Nomes do contrato: `click`→click · `ding`→ding · `thud`→thud · `sparkle`→sparkle.
+
+| Arquivo | Uso | Origem (amostras Kenney CC0 compostas) |
+|---|---|---|
+| `click.ogg` | clique de mouse nítido (mãozinha no link `clique-link`) | interface-sounds · `click_002` (press) + `click_003` (release, +40ms) + impact-sounds · `impactGeneric_light_000` (corpo, pitch↓) — 128 kbps |
+| `ding.ogg` | sino suave único (pontos da assinatura final) | interface-sounds · `bong_001` (sino) + 2 cópias atrasadas/atenuadas = cauda de reverb |
+| `thud.ogg` | impacto surdo/suave | impact-sounds · `impactSoft_medium_000` + `impactSoft_heavy_001`, ambos com pitch↓ (`asetrate`) para abafar |
+| `sparkle.ogg` | brilho/glitter curto (varredura da assinatura) | interface-sounds · `glass_001/002/003/005` com pitch↑ crescente e defasagem = shimmer ascendente |

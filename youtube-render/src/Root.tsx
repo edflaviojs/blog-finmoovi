@@ -1,6 +1,6 @@
 import { Composition, staticFile } from 'remotion';
 import { Test } from './Test';
-import { Short, ShortScript, ShortTiming, totalFrames, totalFramesFrom, sceneDurationsSec, introFramesFor } from './Short';
+import { Short, ShortScript, ShortTiming, totalFrames, totalFramesFrom, sceneDurationsSec, introFramesFor, SIGNATURE_FRAMES } from './Short';
 import { AppBrollLong, AppBrollShort } from './AppBroll';
 import { AppScrollLong, AppScrollShort } from './AppScroll';
 import { Cards3DLong, Cards3DShort } from './Cards3D';
@@ -38,10 +38,10 @@ const shortMetadata = async () => {
     const res = await fetch(staticFile(`audio/${script.slug}/timing.json`));
     if (!res.ok) throw new Error('sem timing');
     const timing = (await res.json()) as ShortTiming;
-    const durationInFrames = Math.max(1, totalFramesFrom(sceneDurationsSec(script, timing), FPS)) + introFrames;
+    const durationInFrames = Math.max(1, totalFramesFrom(sceneDurationsSec(script, timing), FPS)) + introFrames + SIGNATURE_FRAMES;
     return { durationInFrames, props: { script, timing } };
   } catch {
-    return { durationInFrames: totalFrames(script, FPS) + introFrames, props: { script, timing: null as ShortTiming } };
+    return { durationInFrames: totalFrames(script, FPS) + introFrames + SIGNATURE_FRAMES, props: { script, timing: null as ShortTiming } };
   }
 };
 
@@ -52,7 +52,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Short"
         component={Short}
-        durationInFrames={totalFrames(script, FPS) + introFrames}
+        durationInFrames={totalFrames(script, FPS) + introFrames + SIGNATURE_FRAMES}
         fps={FPS}
         width={1080}
         height={1920}

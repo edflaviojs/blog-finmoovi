@@ -192,9 +192,10 @@ export const DynamicIntro: React.FC<{
         </Sequence>
       )}
 
-      {/* ícones de curiosidade flutuando (somem quando o contador entra) */}
-      <CuriosityIcon which="question" x={110} y={430} delay={8} fadeAt={counterStart - 4} />
-      <CuriosityIcon which="mind" x={760} y={330} delay={16} fadeAt={counterStart - 4} />
+      {/* ícones de curiosidade MULTICOLOR crescendo (somem quando o contador entra) */}
+      {INTRO_CURIOSITY.map((c, i) => (
+        <CuriosityIcon key={i} which={c.which} x={c.x} y={c.y} delay={c.delay} color={c.color} glow={c.glow} fadeAt={counterStart - 4} />
+      ))}
 
       {/* frase com ênfase */}
       <div style={{
@@ -225,15 +226,18 @@ export const DynamicIntro: React.FC<{
   );
 };
 
-// Ícone de curiosidade que POPa e flutua num canto da intro.
-const CuriosityIcon: React.FC<{ which: ShotIconKey; x: number; y: number; delay: number; fadeAt?: number }> = ({ which, x, y, delay, fadeAt }) => {
+// Ícone de curiosidade que CRESCE (do pequeno ao cheio, com spring) e flutua num
+// canto da intro. `color` = cor viva sólida (intro multicolor "pra chamar a atenção");
+// `glow` = cor do halo (drop-shadow) combinando com a cor do ícone.
+const CuriosityIcon: React.FC<{ which: ShotIconKey; x: number; y: number; delay: number; color: string; glow: string; fadeAt?: number }> = ({ which, x, y, delay, color, glow, fadeAt }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const pop = spring({ frame: frame - delay, fps, config: { damping: 11, mass: 0.4 } });
-  const scale = interpolate(pop, [0, 1], [0, 1.15]);
+  const pop = spring({ frame: frame - delay, fps, config: { damping: 10, mass: 0.6, stiffness: 120 } });
+  // COMEÇA PEQUENO (~0,2) e CRESCE até o tamanho cheio (leve overshoot p/ pop).
+  const scale = interpolate(pop, [0, 1], [0.2, 1.12]);
   const float = Math.sin((frame - delay) / 7) * 12;
   const rot = Math.sin((frame - delay) / 11) * 8;
-  const inOpacity = interpolate(pop, [0, 0.4], [0, 1], { extrapolateRight: 'clamp' });
+  const inOpacity = interpolate(frame - delay, [0, 5], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const outOpacity = fadeAt != null ? interpolate(frame, [fadeAt, fadeAt + 10], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 1;
   const Comp = SHOT_ICONS[which];
   return (
@@ -241,12 +245,23 @@ const CuriosityIcon: React.FC<{ which: ShotIconKey; x: number; y: number; delay:
       position: 'absolute', left: x, top: y,
       transform: `translateY(${float}px) scale(${scale}) rotate(${rot}deg)`,
       opacity: Math.min(inOpacity, outOpacity),
-      filter: 'drop-shadow(0 8px 30px rgba(34,211,238,0.45))',
+      filter: `drop-shadow(0 8px 30px ${glow})`,
     }}>
-      <Comp />
+      <Comp color={color} />
     </div>
   );
 };
+
+// Ícones de curiosidade da intro dinâmica: cada um numa COR VIVA DISTINTA, crescendo
+// escalonados (staggered). Espalhados nas faixas superior/inferior (fora do miolo
+// onde entram a frase e o contador). "pra chamar a atenção mesmo!"
+const INTRO_CURIOSITY: { which: ShotIconKey; x: number; y: number; delay: number; color: string; glow: string }[] = [
+  { which: 'question', x: 120, y: 360, delay: 4, color: BRAND.cyan, glow: 'rgba(34,211,238,0.5)' },
+  { which: 'mind', x: 780, y: 300, delay: 12, color: BRAND.magenta, glow: 'rgba(214,33,156,0.5)' },
+  { which: 'question', x: 800, y: 1360, delay: 20, color: BRAND.yellow, glow: 'rgba(253,224,71,0.5)' },
+  { which: 'mind', x: 110, y: 1300, delay: 28, color: BRAND.violet, glow: 'rgba(139,92,246,0.5)' },
+  { which: 'question', x: 460, y: 1500, delay: 36, color: '#3fb950', glow: 'rgba(63,185,80,0.5)' },
+];
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Casca de cena: Ken Burns contínuo no miolo (o visual central nunca fica vazio).
@@ -318,12 +333,18 @@ export const SceneAudioLayer: React.FC<{ scene: Scene; timing?: SceneTiming | nu
   const { fps } = useVideoConfig();
   const durationSec = timing?.durationSec ?? scene.durationSec;
   const totalFrames = Math.max(1, Math.round(durationSec * fps));
+  const hasShots = !!(scene.shots && scene.shots.length);
   return (
     <AbsoluteFill>
       {timing?.audioFile && <Audio src={staticFile(timing.audioFile)} />}
       <SceneSfx narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
-      {scene.shots && scene.shots.length ? <ShotSfxTrack scene={scene} timing={timing} totalFrames={totalFrames} /> : null}
-      <IconBurst narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
+      {hasShots ? <ShotSfxTrack scene={scene} timing={timing} totalFrames={totalFrames} /> : null}
+      {/* Cena COM shots: os shots são donos da coreografia visual (cada âncora tem
+          seu ícone/visual). O IconBurst legado (gatilho por palavra-chave, top:300)
+          fica DESLIGADO aqui — senão desenharia um 2º ícone SOBRE o do shot, às vezes
+          o MESMO (as "duas setas" que o dono reclamou). Cenas legadas (sem shots)
+          seguem com IconBurst. (requisito 5) */}
+      {!hasShots && <IconBurst narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />}
       <KaraokeCaption narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
     </AbsoluteFill>
   );
@@ -551,6 +572,118 @@ const SceneOutro: React.FC<{ scene: Scene; nextTitle?: string }> = ({ scene, nex
   );
 };
 
+// ─────────────────────────────────────────────────────────────────────────────
+// ASSINATURA FINAL (brand sting TECH PREMIUM) ~2,5s — on-brand fintech escuro
+// (owner: script font "não combina com o app"). Sequência: (1) a tela escurece
+// (overlay suave); (2) os 3 PONTOS ASCENDENTES do ícone da marca acendem um a um
+// (ciano→violeta→magenta), cada um com um 'ding' suave; (3) "FinMoovi" monta LETRA
+// POR LETRA em Unbounded (fonte oficial); (4) uma VARREDURA de luz em gradiente
+// (ciano→violeta→magenta) cruza o wordmark uma vez + sparkle. Segura e termina.
+// ─────────────────────────────────────────────────────────────────────────────
+const SIG_DOT_FRAMES = [12, 24, 36]; // frame em que cada ponto acende (staggered)
+const SIG_DOTS = [
+  { cx: 18, cy: 74, r: 11, color: BRAND.cyan },
+  { cx: 50, cy: 46, r: 11, color: BRAND.violet },
+  { cx: 82, cy: 22, r: 12, color: BRAND.magenta },
+];
+const SIG_WORD = 'FinMoovi';
+const SIG_LETTERS_AT = 42; // início da montagem do wordmark
+
+export const SignatureOutro: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  // (1) overlay escuro entra suave.
+  const darken = interpolate(frame, [0, 16], [0, 0.9], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  // (3) letras montam uma a uma (slide/fade nítido).
+  const letters = Array.from(SIG_WORD);
+
+  // (4) varredura de luz cruza o wordmark uma vez.
+  const sweepP = interpolate(frame, [58, 74], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const sweepX = interpolate(sweepP, [0, 1], [-70, 170]); // % do container
+  const sweepOn = sweepP > 0 && sweepP < 1;
+
+  // linha ascendente conectando os pontos (desenha conforme os pontos acendem).
+  const lineOffset = interpolate(frame, [SIG_DOT_FRAMES[0], SIG_DOT_FRAMES[2] + 6], [100, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const lineOpacity = interpolate(frame, [SIG_DOT_FRAMES[0], SIG_DOT_FRAMES[0] + 6], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: 40 }}>
+      {/* overlay que escurece a cena/marca d'água por baixo (zIndex 0 → SEMPRE atrás
+          do ícone/wordmark, que ficam em zIndex 1; senão o overlay absoluto pintaria
+          por cima dos elementos estáticos e apagaria os pontos). */}
+      <AbsoluteFill style={{ background: BRAND.bg, opacity: darken, zIndex: 0 }} />
+
+      {/* dings dos 3 pontos (suaves) + sparkle na varredura */}
+      {SIG_DOT_FRAMES.map((f, i) => (
+        <Sequence key={i} from={f} durationInFrames={Math.round(fps * 0.6)}>
+          <Audio src={staticFile('sfx/ding.ogg')} volume={0.3} />
+        </Sequence>
+      ))}
+      <Sequence from={58} durationInFrames={Math.round(fps * 0.8)}>
+        <Audio src={staticFile('sfx/sparkle.ogg')} volume={0.28} />
+      </Sequence>
+
+      {/* ícone da marca com os 3 pontos ascendentes acendendo um a um */}
+      <svg width={280} height={280} viewBox="0 0 100 100" fill="none" style={{ position: 'relative', zIndex: 1 }}>
+        <defs>
+          <linearGradient id="sig-line" x1="0" y1="100" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor={BRAND.cyan} />
+            <stop offset="50%" stopColor={BRAND.violet} />
+            <stop offset="100%" stopColor={BRAND.magenta} />
+          </linearGradient>
+        </defs>
+        <path
+          d="M18 74 L50 46 L82 22" stroke="url(#sig-line)" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round"
+          pathLength={100} strokeDasharray={100} strokeDashoffset={lineOffset} opacity={lineOpacity}
+        />
+        {SIG_DOTS.map((d, i) => {
+          const appear = spring({ frame: frame - SIG_DOT_FRAMES[i], fps, config: { damping: 11, mass: 0.5, stiffness: 130 } });
+          const s = interpolate(appear, [0, 1], [0, 1.15]);
+          const rise = interpolate(appear, [0, 1], [16, 0]);
+          const op = interpolate(frame - SIG_DOT_FRAMES[i], [0, 4], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+          // brilho no instante em que acende.
+          const flareR = frame >= SIG_DOT_FRAMES[i] ? interpolate(frame - SIG_DOT_FRAMES[i], [0, 12], [d.r, d.r * 2.6], { extrapolateRight: 'clamp' }) : d.r;
+          const flareOp = frame >= SIG_DOT_FRAMES[i] ? interpolate(frame - SIG_DOT_FRAMES[i], [0, 12], [0.5, 0], { extrapolateRight: 'clamp' }) : 0;
+          return (
+            <g key={i} transform={`translate(0 ${rise})`} opacity={op}>
+              <circle cx={d.cx} cy={d.cy} r={flareR} fill={d.color} opacity={flareOp} />
+              <circle cx={d.cx} cy={d.cy} r={d.r * s} fill={d.color} />
+            </g>
+          );
+        })}
+      </svg>
+
+      {/* wordmark "FinMoovi" montando letra por letra + varredura de luz */}
+      <div style={{ position: 'relative', zIndex: 1, overflow: 'hidden', padding: '6px 10px' }}>
+        <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 900, fontSize: 108, letterSpacing: -1, lineHeight: 1 }}>
+          {letters.map((ch, i) => {
+            const appear = spring({ frame: frame - (SIG_LETTERS_AT + i * 2), fps, config: { damping: 16, mass: 0.5 } });
+            const op = interpolate(appear, [0, 1], [0, 1]);
+            const ty = interpolate(appear, [0, 1], [22, 0]);
+            const isFin = i < 3; // "Fin" branco, "Moovi" gradiente
+            return (
+              <span key={i} style={{
+                display: 'inline-block', opacity: op, transform: `translateY(${ty}px)`,
+                ...(isFin ? { color: BRAND.text } : gradientText),
+              }}>{ch}</span>
+            );
+          })}
+        </div>
+        {/* varredura de luz em gradiente da marca cruzando o wordmark uma vez */}
+        {sweepOn && (
+          <div style={{
+            position: 'absolute', top: 0, bottom: 0, left: `${sweepX}%`, width: '32%',
+            background: 'linear-gradient(100deg, transparent 0%, rgba(34,211,238,0.45) 35%, rgba(139,92,246,0.6) 50%, rgba(214,33,156,0.45) 65%, transparent 100%)',
+            transform: 'skewX(-14deg)', mixBlendMode: 'screen', pointerEvents: 'none',
+          }} />
+        )}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 // ═════════════════════════════════════════════════════════════════════════════
 // MOTOR DE SHOTS (contract v3) — quando a cena traz `shots`, o miolo troca a cada
 // palavra-âncora: cada shot COMEÇA no frame REAL da sua âncora (timing.json), com
@@ -644,8 +777,11 @@ const ShotIcon: React.FC<{ icon?: ShotIconKey }> = ({ icon }) => {
   const frame = useCurrentFrame();
   const float = Math.sin(frame / 8) * 12;
   const Comp = SHOT_ICONS[icon || 'money'] || SHOT_ICONS.money;
+  // Ícones de shot MUITO MAIORES (owner: "muito pequenos"): ~1,7× o tamanho antigo
+  // (2,2 → 3,8). O SVG-base é 150px → ~570px na tela, centrado no miolo: livre da
+  // marca d'água (topo ~66) e da faixa de legenda (bottom:300).
   return (
-    <div style={{ transform: `translateY(${float}px) scale(2.2)`, filter: 'drop-shadow(0 12px 44px rgba(139,92,246,0.5))' }}>
+    <div style={{ transform: `translateY(${float}px) scale(3.8)`, filter: 'drop-shadow(0 12px 44px rgba(139,92,246,0.5))' }}>
       <Comp />
     </div>
   );
@@ -726,9 +862,84 @@ const MetaSlip: React.FC<{ life: number }> = ({ life }) => {
   );
 };
 
+// Fração da VIDA do shot em que a mãozinha PRESSIONA o link (após viajar até ele).
+// Fonte ÚNICA da verdade: o VISUAL (MetaClickLink) e o SFX (ShotSfxTrack) usam a
+// MESMA fórmula → o som 'click' toca EXATAMENTE no frame do toque. Ver requisito 4.
+const CLICK_PRESS_FRAC = 0.58;
+export const clickPressOffset = (life: number) => Math.round(life * CLICK_PRESS_FRAC);
+
+// metáfora 'clique-link': uma mãozinha (cursor 👆 em SVG nativo, cores da marca)
+// viaja numa curva até a pílula "Link na descrição", PRESSIONA (pílula afunda +
+// flash) no frame do 'click'. O som é agendado no MESMO frame (ver ShotSfxTrack).
+const MetaClickLink: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 900, H = 520;
+  const press = clickPressOffset(life);
+  // Viagem da mão até o link (ease-out); depois: pressiona e segura.
+  const travel = interpolate(frame, [0, press], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  // Curva quadrática (Bézier) do canto até o ponto de clique na pílula.
+  const P0 = { x: 780, y: 470 }, P1 = { x: 790, y: 210 }, P2 = { x: 470, y: 250 };
+  const t = travel, mt = 1 - t;
+  const hx = mt * mt * P0.x + 2 * mt * t * P1.x + t * t * P2.x;
+  const hy = mt * mt * P0.y + 2 * mt * t * P1.y + t * t * P2.y;
+  // "Toque": leve mergulho da mão no instante do clique (dip curto e volta).
+  const dip = frame >= press ? interpolate(frame, [press, press + 3, press + 9], [0, 14, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 0;
+  // Pílula afunda (scale/translate) + brilho no clique; depois assenta.
+  const pressed = interpolate(frame, [press, press + 2, press + 10], [0, 1, 0.25], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const pillScale = 1 - pressed * 0.06;
+  const pillY = pressed * 6;
+  const pillGlow = pressed;
+  // Flash/anel expandindo do ponto de clique.
+  const ringP = frame >= press ? interpolate(frame, [press, press + 16], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 0;
+  const ringR = ringP * 120;
+  const ringOp = ringP > 0 ? interpolate(ringP, [0, 1], [0.6, 0]) : 0;
+  const flash = frame >= press ? interpolate(frame, [press, press + 2, press + 10], [0, 0.5, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 0;
+  return (
+    <div style={{ position: 'relative', width: W, height: H }}>
+      {/* pílula "Link na descrição" (mesmo estilo da CTA) */}
+      <div style={{
+        position: 'absolute', left: 0, right: 0, top: 168, display: 'flex', justifyContent: 'center',
+      }}>
+        <div style={{
+          display: 'inline-flex', alignItems: 'center', gap: 16,
+          padding: '20px 40px', borderRadius: 999, border: `3px solid ${BRAND.cyan}`,
+          background: `rgba(34,211,238,${0.10 + pillGlow * 0.22})`,
+          fontFamily: BODY, fontWeight: 800, fontSize: 46, color: BRAND.text,
+          transform: `translateY(${pillY}px) scale(${pillScale})`,
+          boxShadow: pillGlow > 0 ? `0 0 ${Math.round(pillGlow * 46)}px rgba(34,211,238,${pillGlow * 0.7})` : '0 8px 30px rgba(0,0,0,0.35)',
+        }}>
+          <FinMooviIcon size={44} idSuffix="clk" />
+          Link na descrição
+        </div>
+      </div>
+      {/* anel de clique + mãozinha */}
+      <svg width={W} height={H} style={{ position: 'absolute', left: 0, top: 0, pointerEvents: 'none' }}>
+        <defs>
+          <linearGradient id="hand-g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor={BRAND.cyan} />
+            <stop offset="100%" stopColor={BRAND.violet} />
+          </linearGradient>
+        </defs>
+        {ringP > 0 && ringP < 1 && (
+          <circle cx={470} cy={232} r={ringR} fill="none" stroke={BRAND.cyan} strokeWidth={5} opacity={ringOp} />
+        )}
+        {/* cursor de mão apontando (fingertip ~ (30,8) no grupo local) */}
+        <g transform={`translate(${hx - 30} ${hy - 8 + dip})`}>
+          <path
+            d="M24 6 a8 8 0 0 1 16 0 v34 l12 3 a12 12 0 0 1 9 11 v14 a16 16 0 0 1 -16 16 h-18 a16 16 0 0 1 -13 -7 l-14 -20 a7 7 0 0 1 10 -9 l6 6 v-58 a8 8 0 0 1 8 -8 Z"
+            fill={BRAND.panel} stroke="url(#hand-g)" strokeWidth={5} strokeLinejoin="round" strokeLinecap="round"
+          />
+        </g>
+      </svg>
+      <AbsoluteFill style={{ background: '#fff', opacity: flash, pointerEvents: 'none' }} />
+    </div>
+  );
+};
+
 const ShotMetaphor: React.FC<{ metaphor?: string; life: number }> = ({ metaphor, life }) => {
   if (metaphor === 'avalanche') return <MetaAvalanche life={life} />;
   if (metaphor === 'escorregao') return <MetaSlip life={life} />;
+  if (metaphor === 'clique-link') return <MetaClickLink life={life} />;
   return <MetaSnowball life={life} />; // 'bola-neve' (default)
 };
 
@@ -842,7 +1053,15 @@ const ShotSfxTrack: React.FC<{ scene: Scene; timing?: SceneTiming | null; totalF
     const file = resolveShotSfx(shot.sfx);
     if (file === prevFile) return;
     prevFile = file;
-    fires.push({ i, from: starts[i], file });
+    // metáfora 'clique-link': o som dispara no FRAME DO TOQUE (start + press), não
+    // no início do shot — alinhado ao MetaClickLink pela MESMA fórmula (fonte única).
+    let from = starts[i];
+    if (shot.visual.type === 'metaphor' && shot.visual.metaphor === 'clique-link') {
+      const end = i < shots.length - 1 ? starts[i + 1] : totalFrames;
+      const life = Math.max(1, end - starts[i]);
+      from = starts[i] + clickPressOffset(life);
+    }
+    fires.push({ i, from, file });
   });
   return (
     <>

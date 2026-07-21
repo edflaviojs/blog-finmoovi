@@ -29,12 +29,14 @@ const SFX_VOLUME = 0.5;
 // ─────────────────────────────────────────────────────────────────────────────
 export type ShotSfxName =
   | 'boom' | 'whoosh' | 'coin' | 'alert' | 'avalanche' | 'slide'
-  | 'kaching' | 'typewriter' | 'keyboard' | 'pop';
+  | 'kaching' | 'typewriter' | 'keyboard' | 'pop'
+  | 'click' | 'ding' | 'thud' | 'sparkle';
 
 // basenames presentes em public/sfx/ (sem extensão).
 const AVAILABLE_SFX = new Set([
   'boom', 'money', 'coins', 'growth', 'clock', 'card', 'warning', 'avalanche', 'slide',
   'kaching', 'typewriter', 'keyboard', 'pop',
+  'click', 'ding', 'thud', 'sparkle',
 ]);
 
 // nome do contrato → basename preferido.
@@ -49,12 +51,17 @@ const SHOT_SFX: Record<ShotSfxName, string> = {
   typewriter: 'typewriter',
   keyboard: 'keyboard',
   pop: 'pop',
+  click: 'click',
+  ding: 'ding',
+  thud: 'thud',
+  sparkle: 'sparkle',
 };
 
 // fallback caso o basename preferido não exista em public/sfx/.
 const SHOT_SFX_FALLBACK: Record<ShotSfxName, string> = {
   boom: 'boom', whoosh: 'growth', coin: 'coins', alert: 'warning', avalanche: 'warning', slide: 'growth',
   kaching: 'coins', typewriter: 'clock', keyboard: 'clock', pop: 'coins',
+  click: 'pop', ding: 'clock', thud: 'boom', sparkle: 'coins',
 };
 
 export function resolveShotSfx(name: string): string {

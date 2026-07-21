@@ -2,12 +2,13 @@ import { AbsoluteFill, Sequence, useVideoConfig } from 'remotion';
 import { TransitionSeries, linearTiming } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
-import { Background, Watermark, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro } from './scenes';
+import { Background, Watermark, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro, SignatureOutro } from './scenes';
 import { BackgroundMusic } from './audio/music';
 
 export const TRANSITION_FRAMES = 8;
 export const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s) antes das cenas
 export const INTRO_FRAMES_V3 = 120; // intro dinâmica v3 (~4s): frase + contador crescente
+export const SIGNATURE_FRAMES = 75; // assinatura final da marca (~2,5s) depois da última cena
 
 // ── CONTRACT v3 — "SHOTS" ────────────────────────────────────────────────────
 export type ShotVisual = {
@@ -18,14 +19,15 @@ export type ShotVisual = {
   prefix?: string;
   icon?: 'money' | 'coins' | 'growth' | 'clock' | 'card' | 'warning' | 'question' | 'mind'
     | 'piggy' | 'bank' | 'target' | 'trophy' | 'bulb' | 'hourglass' | 'wallet' | 'fire' | 'chart-down' | 'shield';
-  metaphor?: 'bola-neve' | 'avalanche' | 'escorregao';
+  metaphor?: 'bola-neve' | 'avalanche' | 'escorregao' | 'clique-link';
   note?: string;
 };
 export type Shot = {
   anchor: string;
   visual: ShotVisual;
   sfx?: 'boom' | 'whoosh' | 'coin' | 'alert' | 'avalanche' | 'slide'
-    | 'kaching' | 'typewriter' | 'keyboard' | 'pop';
+    | 'kaching' | 'typewriter' | 'keyboard' | 'pop'
+    | 'click' | 'ding' | 'thud' | 'sparkle';
 };
 
 // intro: legada { big, sub } OU v3 { frase, counter? }. Ambas convivem (backward compat).
@@ -112,6 +114,8 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
   const { fps } = useVideoConfig();
   const durations = sceneDurationsSec(script, timing);
   const frames = sceneFramesFrom(durations, fps);
+  // Comprimento do conteúdo (cenas + transições) — a assinatura entra logo após.
+  const contentFrames = totalFramesFrom(durations, fps);
 
   const children: React.ReactNode[] = [];
   script.scenes.forEach((scene, i) => {
@@ -169,6 +173,11 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
             <SceneAudioLayer scene={scene} timing={sceneTimingFor(timing, scene, i)} />
           </Sequence>
         ))}
+      </Sequence>
+      {/* Assinatura final da marca (~2,5s) — entra após a última cena. A duração da
+          composição é estendida em +SIGNATURE_FRAMES no Root (calculateMetadata). */}
+      <Sequence from={introFrames + contentFrames} durationInFrames={SIGNATURE_FRAMES}>
+        <SignatureOutro />
       </Sequence>
     </AbsoluteFill>
   );
