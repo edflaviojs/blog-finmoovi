@@ -777,6 +777,31 @@ const SceneTitle: React.FC<{ scene: Scene }> = ({ scene }) => {
   );
 };
 
+// Pílula "Link na descrição" + seta descendo — linguagem compartilhada entre
+// SceneCta e SceneApp (extraída p/ manter as duas cenas de CTA consistentes).
+const LinkNaDescricaoPill: React.FC<{ bounce: number }> = ({ bounce }) => (
+  <>
+    <div style={{
+      display: 'inline-flex', alignItems: 'center', gap: 16,
+      padding: '18px 34px', borderRadius: 999, border: `3px solid ${BRAND.cyan}`,
+      background: 'rgba(34,211,238,0.10)', fontFamily: BODY, fontWeight: 800, fontSize: 46, color: BRAND.text,
+    }}>
+      Link na descrição
+    </div>
+    <div style={{ marginTop: 20 + bounce, display: 'flex', justifyContent: 'center' }}>
+      <svg width="90" height="90" viewBox="0 0 100 100" fill="none">
+        <path d="M50 12 L50 74 M28 54 L50 78 L72 54" stroke="url(#cta-grad)" strokeWidth="11" strokeLinecap="round" strokeLinejoin="round" />
+        <defs>
+          <linearGradient id="cta-grad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor={BRAND.cyan} />
+            <stop offset="100%" stopColor={BRAND.magenta} />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </>
+);
+
 // CTA chamativa: título + linha "Link na descrição" + seta descendo animada.
 const SceneCta: React.FC<{ scene: Scene }> = ({ scene }) => {
   const frame = useCurrentFrame();
@@ -789,24 +814,133 @@ const SceneCta: React.FC<{ scene: Scene }> = ({ scene }) => {
       <div style={{ fontFamily: DISPLAY, fontSize: 76, fontWeight: 900, ...gradientText, lineHeight: 1.1 }}>
         {scene.onScreenText}
       </div>
+      <div style={{ marginTop: 34 }}>
+        <LinkNaDescricaoPill bounce={bounce} />
+      </div>
+    </div>
+  );
+};
+
+// APP (R7): mockup 3D do FinMoovi com a calculadora animada — cena de CTA premium.
+// Entra no cue[0] ("calculadora"), badge GRÁTIS pipoca no cue[1], gráfico acelera/brilha
+// no cue[2] ("gráfico"). Sem cues/timing → mesmo padrão de fallback proporcional já usado
+// em SceneList/SceneChart (nunca fica travado).
+const SceneApp: React.FC<{ scene: Scene; timing?: SceneTiming | null; sceneFrames: number }> = ({ scene, timing, sceneFrames }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const reveal = useReveal(); // entrada do telefone/UI — cue[0] ("calculadora")
+  const reveals = cueFramesFor(scene, timing, fps); // frames reais casados (ascendente)
+  const revealSpan = Math.max(1, sceneFrames - reveal);
+  // badge "GRÁTIS" no cue[1]; aceleração/brilho do gráfico no cue[2]. Sem casar palavra
+  // real (timing ausente), cai numa distribuição proporcional do tempo restante da cena.
+  const badgeFrame = reveals.length > 1 ? reveals[1] : reveal + Math.round(revealSpan * 0.32);
+  const chartBoostFrame = reveals.length > 2 ? reveals[2] : reveal + Math.round(revealSpan * 0.62);
+  const glowOn = frame >= chartBoostFrame;
+
+  // Entrada do telefone: sobe de "longe" (translateZ) girando, mesma linguagem do Pop3D
+  // do card3d-kit, mas ancorada na revelação real da fala (não no frame 0 da cena).
+  const enter = spring({ frame: frame - reveal, fps, config: { damping: 13, mass: 0.7 } });
+  const phoneOpacity = interpolate(frame, [reveal - 2, reveal + 6], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const tz = interpolate(enter, [0, 1], [-560, 0]);
+  const settleTilt = interpolate(enter, [0, 1], [-30, 0]);
+  const drift = Math.sin((frame - reveal) / 60) * 4; // deriva lenta contínua (nunca estático)
+  const riseY = interpolate(enter, [0, 1], [70, 0]);
+  const scale = interpolate(enter, [0, 1], [0.82, 1]);
+
+  // Headline (onScreenText) acima do telefone, sincronizada com a mesma revelação.
+  const headlineOp = interpolate(frame, [reveal - 4, reveal + 4], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const headlineY = interpolate(frame, [reveal - 4, reveal + 10], [26, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  // Badge GRÁTIS: pop com spring, começa em 0 (invisível) antes do seu frame.
+  const badgeS = spring({ frame: frame - badgeFrame, fps, config: { damping: 11, mass: 0.5 } });
+  const badgeScale = interpolate(badgeS, [0, 1], [0, 1]);
+  const badgeRot = interpolate(badgeS, [0, 1], [-14, -6]);
+
+  // Mini gráfico da calculadora: progresso escalonado (mesmo helper do SceneChart),
+  // com um "boost" extra a partir do cue[2] p/ a curva acelerar/brilhar.
+  const W = 260, H = 150, pad = 16, N = 28;
+  const baseP = stagedProgress(frame, reveals, reveal, sceneFrames, 60);
+  const boostP = interpolate(frame, [chartBoostFrame, sceneFrames - 4], [0, 0.35], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const p = Math.min(1, baseP + boostP);
+  const drawN = Math.max(0, Math.floor(p * N));
+  const path: string[] = [];
+  for (let i = 0; i <= drawN; i++) {
+    const x = pad + (i / N) * (W - pad * 2);
+    const y = H - pad - Math.pow(i / N, 2.1) * (H - pad * 2);
+    path.push(`${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`);
+  }
+  const hx = pad + (drawN / N) * (W - pad * 2);
+  const hy = H - pad - Math.pow(drawN / N, 2.1) * (H - pad * 2);
+  // Contador ilustrativo (chrome de UI da calculadora, não vem da narração) subindo
+  // junto com a cabeça da linha — "quanto o SEU dinheiro faz".
+  const COUNTER_TARGET = 12480;
+  const counterShown = `R$ ${formatPtBR(Math.round(p * COUNTER_TARGET), 0)}`;
+  const bounce = Math.abs(Math.sin(frame / 9)) * 22;
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 26 }}>
       <div style={{
-        marginTop: 34, display: 'inline-flex', alignItems: 'center', gap: 16,
-        padding: '18px 34px', borderRadius: 999, border: `3px solid ${BRAND.cyan}`,
-        background: 'rgba(34,211,238,0.10)', fontFamily: BODY, fontWeight: 800, fontSize: 46, color: BRAND.text,
+        opacity: headlineOp, transform: `translateY(${headlineY}px)`, fontFamily: DISPLAY, fontWeight: 900,
+        fontSize: 64, ...gradientText, textAlign: 'center', maxWidth: 920, lineHeight: 1.14,
       }}>
-        Link na descrição
+        {scene.onScreenText}
       </div>
-      <div style={{ marginTop: 20 + bounce, display: 'flex', justifyContent: 'center' }}>
-        <svg width="90" height="90" viewBox="0 0 100 100" fill="none">
-          <path d="M50 12 L50 74 M28 54 L50 78 L72 54" stroke="url(#cta-grad)" strokeWidth="11" strokeLinecap="round" strokeLinejoin="round" />
-          <defs>
-            <linearGradient id="cta-grad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor={BRAND.cyan} />
-              <stop offset="100%" stopColor={BRAND.magenta} />
-            </linearGradient>
-          </defs>
-        </svg>
+      <div style={{ perspective: 1400 }}>
+        <div style={{
+          position: 'relative', opacity: phoneOpacity, transformStyle: 'preserve-3d',
+          transform: `translateZ(${tz}px) translateY(${riseY}px) rotateY(${settleTilt + drift}deg) rotateX(4deg) scale(${scale})`,
+        }}>
+          {/* moldura do telefone */}
+          <div style={{
+            width: 380, height: 620, borderRadius: 54, position: 'relative', overflow: 'hidden',
+            background: 'linear-gradient(165deg, #1b2230, #0d1117)', border: '10px solid rgba(255,255,255,0.08)',
+            boxShadow: '0 40px 100px rgba(0,0,0,0.6), 0 0 0 1px rgba(139,92,246,0.18)', padding: '24px 20px',
+          }}>
+            {/* notch */}
+            <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: 120, height: 22, background: '#000', borderRadius: '0 0 16px 16px' }} />
+            {/* header: ícone + wordmark FinMoovi */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 18 }}>
+              <FinMooviIcon size={28} idSuffix="phoneapp" />
+              <div style={{ fontFamily: DISPLAY, fontWeight: 800, fontSize: 20 }}>
+                <span style={{ color: BRAND.text }}>Fin</span><span style={gradientText}>Moovi</span>
+              </div>
+            </div>
+            {/* tela da calculadora */}
+            <div style={{ marginTop: 18, background: BRAND.panel, borderRadius: 24, padding: '16px 14px', border: '1px solid rgba(255,255,255,0.06)' }}>
+              <div style={{ fontFamily: BODY, fontWeight: 700, fontSize: 15, color: BRAND.sub, marginBottom: 8 }}>Juros compostos</div>
+              <svg width={W} height={H}>
+                <defs>
+                  <linearGradient id="app-chart-g" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stopColor={BRAND.cyan} />
+                    <stop offset="50%" stopColor={BRAND.violet} />
+                    <stop offset="100%" stopColor={BRAND.magenta} />
+                  </linearGradient>
+                </defs>
+                <line x1={pad} y1={H - pad} x2={W - pad} y2={H - pad} stroke={BRAND.sub} strokeWidth={2} opacity={0.3} />
+                {drawN > 0 && (
+                  <path d={path.join(' ')} fill="none" stroke="url(#app-chart-g)" strokeWidth={glowOn ? 8 : 6} strokeLinecap="round"
+                    style={{ filter: glowOn ? `drop-shadow(0 0 10px ${BRAND.magenta})` : undefined }} />
+                )}
+                {drawN > 0 && <circle cx={hx} cy={hy} r={glowOn ? 11 : 8} fill={BRAND.magenta} opacity={0.35} />}
+                {drawN > 0 && <circle cx={hx} cy={hy} r={glowOn ? 8 : 6} fill={BRAND.magenta} />}
+              </svg>
+              <div style={{ marginTop: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                <div style={{ fontFamily: BODY, fontWeight: 600, fontSize: 13, color: BRAND.sub }}>seu dinheiro</div>
+                <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 24, ...gradientText, fontVariantNumeric: 'tabular-nums' }}>{counterShown}</div>
+              </div>
+            </div>
+          </div>
+          {/* badge GRÁTIS — pipoca no cue[1] */}
+          <div style={{
+            position: 'absolute', top: -14, right: -10, transform: `scale(${badgeScale}) rotate(${badgeRot}deg)`,
+            opacity: badgeScale, background: BRAND.gradient, color: BRAND.bg, fontFamily: DISPLAY, fontWeight: 900,
+            fontSize: 24, letterSpacing: 0.5, padding: '10px 20px', borderRadius: 999, boxShadow: '0 10px 30px rgba(214,33,156,0.5)',
+          }}>
+            GRÁTIS
+          </div>
+        </div>
       </div>
+      <LinkNaDescricaoPill bounce={bounce} />
     </div>
   );
 };
@@ -850,12 +984,14 @@ const SceneOutro: React.FC<{ scene: Scene; nextTitle?: string }> = ({ scene, nex
 };
 
 // Dispatcher — o role tem prioridade (cta/outro têm cena própria); senão usa visual.type.
-// visual.type 'app' (só no cta) cai graciosamente no SceneCta até a cena dedicada existir.
+// visual.type 'app' no role 'cta' usa a cena dedicada SceneApp (mockup 3D + calculadora);
+// 'app' fora do cta (ou cta sem visual.type 'app') cai graciosamente no SceneCta.
 export const SceneRenderer: React.FC<{ scene: Scene; nextTitle?: string; timing?: SceneTiming | null }> = ({ scene, nextTitle, timing }) => {
   const { fps } = useVideoConfig();
   const durationSec = timing?.durationSec ?? scene.durationSec;
   const sceneFrames = Math.max(1, Math.round(durationSec * fps));
   const inner = (() => {
+    if (scene.role === 'cta' && scene.visual.type === 'app') return <SceneApp scene={scene} timing={timing} sceneFrames={sceneFrames} />;
     if (scene.role === 'cta') return <SceneCta scene={scene} />;
     if (scene.role === 'outro') return <SceneOutro scene={scene} nextTitle={nextTitle} />;
     switch (scene.visual.type) {
