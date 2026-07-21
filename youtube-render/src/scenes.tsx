@@ -212,24 +212,52 @@ const SceneNumber: React.FC<{ scene: Scene }> = ({ scene }) => {
   );
 };
 
-const SceneChart: React.FC<{ scene: Scene }> = ({ scene }) => {
+// A curva exponencial só entra quando a FALA chega no cue (revealFrame, calculado
+// pelo SceneRenderer com o mesmo revealFrameFor do SceneShell). Antes disso, só a
+// régua (eixo + linha tracejada de referência) desenha devagar — o centro nunca
+// fica vazio, mas o "resultado" (curva) só aparece com a voz. Depois de completa,
+// mantém micro-vida (dot pulsando + glow respirando) pro resto da cena.
+const SceneChart: React.FC<{ scene: Scene; revealFrame?: number; durationFrames?: number }> = ({ scene, revealFrame = 0, durationFrames }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const W = 920, H = 560, pad = 44;
-  const p = spring({ frame, fps, config: { damping: 200 }, durationInFrames: 50 });
+  const total = durationFrames ?? Math.max(1, Math.round(scene.durationSec * fps));
+
+  // Início do desenho da curva: no cue, com clamp em 70% (cue tarde demais →
+  // antecipa) para sempre sobrar espaço de desenho até o fim.
+  const curveStart = Math.min(revealFrame, Math.round(total * 0.7));
+  // Fim do desenho: ~90% da cena, com mínimo de 40 frames de janela.
+  const curveEnd = Math.max(curveStart + 40, Math.round(total * 0.9));
+
+  // Linha tracejada de referência: desenha devagar ANTES do cue (motion sutil
+  // enquanto a curva ainda não entrou).
+  const linProgress = curveStart > 4
+    ? interpolate(frame, [0, curveStart], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
+    : 1;
+  // Curva exponencial: praticamente ausente antes do cue (stub de 2%), desenha
+  // suave do cue até curveEnd com ease-out.
+  const curveProgress = interpolate(frame, [curveStart, curveEnd], [0.02, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic),
+  });
+
   const N = 40;
-  const drawN = Math.floor(p * N);
+  const drawN = Math.max(0, Math.floor(curveProgress * N));
+  const drawLinN = Math.max(0, Math.floor(linProgress * N));
   const exp: string[] = [], lin: string[] = [];
-  for (let i = 0; i <= drawN; i++) {
+  for (let i = 0; i <= N; i++) {
     const x = pad + (i / N) * (W - pad * 2);
     const yExp = H - pad - Math.pow(i / N, 2.2) * (H - pad * 2);
     const yLin = H - pad - (i / N) * (H - pad * 2) * 0.55;
-    exp.push(`${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${yExp.toFixed(1)}`);
-    lin.push(`${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${yLin.toFixed(1)}`);
+    if (i <= drawLinN) lin.push(`${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${yLin.toFixed(1)}`);
+    if (i <= drawN) exp.push(`${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${yExp.toFixed(1)}`);
   }
   const hx = pad + (drawN / N) * (W - pad * 2);
   const hy = H - pad - Math.pow(drawN / N, 2.2) * (H - pad * 2);
   const pulse = 12 + Math.sin(frame / 5) * 4;
+  // Depois de completa, a curva respira (glow sutil) pra nunca ler como "parada".
+  const isComplete = frame >= curveEnd;
+  const breathe = isComplete ? 0.5 + 0.5 * Math.sin((frame - curveEnd) / 14) : 0;
+  const glowStd = 3 + breathe * 3;
   return (
     <div style={{ textAlign: 'center' }}>
       <svg width={W} height={H}>
@@ -239,10 +267,19 @@ const SceneChart: React.FC<{ scene: Scene }> = ({ scene }) => {
             <stop offset="50%" stopColor={BRAND.violet} />
             <stop offset="100%" stopColor={BRAND.magenta} />
           </linearGradient>
+          {isComplete && (
+            <filter id="chart-glow" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation={glowStd} result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          )}
         </defs>
         <line x1={pad} y1={H - pad} x2={W - pad} y2={H - pad} stroke={BRAND.sub} strokeWidth={2} opacity={0.35} />
         <path d={lin.join(' ')} fill="none" stroke={BRAND.sub} strokeWidth={5} opacity={0.55} strokeDasharray="10 12" />
-        <path d={exp.join(' ')} fill="none" stroke="url(#cg)" strokeWidth={10} strokeLinecap="round" />
+        <path d={exp.join(' ')} fill="none" stroke="url(#cg)" strokeWidth={10} strokeLinecap="round" filter={isComplete ? 'url(#chart-glow)' : undefined} />
         {drawN > 0 && <circle cx={hx} cy={hy} r={pulse} fill={BRAND.magenta} opacity={0.35} />}
         {drawN > 0 && <circle cx={hx} cy={hy} r={13} fill={BRAND.magenta} />}
       </svg>
@@ -375,12 +412,17 @@ const SceneOutro: React.FC<{ scene: Scene; nextTitle?: string }> = ({ scene, nex
 
 // Dispatcher — o role tem prioridade (cta/outro têm cena própria); senão usa visual.type.
 export const SceneRenderer: React.FC<{ scene: Scene; nextTitle?: string; timing?: SceneTiming | null }> = ({ scene, nextTitle, timing }) => {
+  const { fps } = useVideoConfig();
+  // Mesmo cue (revealFrameFor) que o SceneShell usa pro punch — repassado ao
+  // SceneChart pra sincronizar o DESENHO da curva com a fala, não só o soco.
+  const revealFrame = revealFrameFor(scene, timing, fps);
+  const durationFrames = Math.max(1, Math.round((timing?.durationSec ?? scene.durationSec) * fps));
   const inner = (() => {
     if (scene.role === 'cta') return <SceneCta scene={scene} />;
     if (scene.role === 'outro') return <SceneOutro scene={scene} nextTitle={nextTitle} />;
     switch (scene.visual.type) {
       case 'number': return <SceneNumber scene={scene} />;
-      case 'chart': return <SceneChart scene={scene} />;
+      case 'chart': return <SceneChart scene={scene} revealFrame={revealFrame} durationFrames={durationFrames} />;
       case 'formula': return <SceneFormula scene={scene} />;
       case 'title': return <SceneTitle scene={scene} />;
       case 'list':
