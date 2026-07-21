@@ -1,27 +1,44 @@
+import React from 'react';
 import { AbsoluteFill, Sequence, useVideoConfig } from 'remotion';
-import { TransitionSeries, linearTiming } from '@remotion/transitions';
+import { TransitionSeries, linearTiming, TransitionPresentation } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
-import { Background, Watermark, SceneRenderer, SceneAudioLayer, ShockIntro } from './scenes';
+import { Background, Watermark, SceneRenderer, SceneAudioTrack, SceneCaptionTrack, ShockIntro, HeroOrb, CinemaGrain, Vignette } from './scenes';
 import { BackgroundMusic } from './audio/music';
 
 export const TRANSITION_FRAMES = 8;
 export const INTRO_FRAMES = 45; // abertura disruptiva (~1,5s) antes das cenas
+
+type IntroStyle = 'contraste' | 'contagem' | 'timer' | 'meio' | 'objeto' | 'classic';
 
 export type ShortScript = {
   slug: string;
   term: string;
   keyword: string;
   nextVideoTitle?: string;
-  intro?: { big: string; sub: string };
+  intro?: { big: string; sub: string; style?: IntroStyle };
   scenes: Array<{
     id?: number;
     role: string;
     narration: string;
     onScreenText?: string;
+    cue?: string;
+    cues?: string[];
     visual: { type: string; note?: string };
     durationSec: number;
   }>;
+};
+
+// Transição informada pelo PAR de cenas (R4c): continuidade direcional em vez de
+// alternância cega. Ex.: número→gráfico desliza p/ baixo (rumo à origem do eixo Y).
+const pickTransition = (a: ShortScript['scenes'][number], b: ShortScript['scenes'][number]): TransitionPresentation<Record<string, unknown>> => {
+  const at = a.visual.type, bt = b.visual.type;
+  if (at === 'number' && bt === 'chart') return slide({ direction: 'from-bottom' });
+  if (bt === 'chart') return slide({ direction: 'from-right' });
+  if (bt === 'number') return slide({ direction: 'from-left' });
+  if (at === 'chart') return slide({ direction: 'from-bottom' });
+  if (b.role === 'outro' || b.role === 'cta') return fade();
+  return fade();
 };
 
 // Timing REAL gerado pelo TTS (tts-short.js): áudio + palavras com start/end da fala.
@@ -87,7 +104,7 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
       children.push(
         <TransitionSeries.Transition
           key={`t${i}`}
-          presentation={i % 2 === 0 ? fade() : slide({ direction: 'from-right' })}
+          presentation={pickTransition(scene, script.scenes[i + 1])}
           timing={linearTiming({ durationInFrames: TRANSITION_FRAMES })}
         />,
       );
@@ -105,6 +122,8 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
   }
 
   const introFrames = script.intro ? INTRO_FRAMES : 0;
+  const sceneTypes = script.scenes.map((s) => s.visual.type);
+  const sceneRoles = script.scenes.map((s) => s.role);
 
   return (
     <AbsoluteFill>
@@ -113,22 +132,36 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
       <Watermark />
       {script.intro && (
         <Sequence durationInFrames={INTRO_FRAMES}>
-          <ShockIntro big={script.intro.big} sub={script.intro.sub} />
+          <ShockIntro big={script.intro.big} sub={script.intro.sub} style={script.intro.style} />
         </Sequence>
       )}
       <Sequence from={introFrames}>
+        {/* HERO BRIDGE (R4b): orbe da marca que viaja entre âncoras — atrás do conteúdo,
+            aparece nas transições p/ o centro nunca ficar vazio. */}
+        <HeroOrb starts={masterStarts} types={sceneTypes} roles={sceneRoles} />
         <TransitionSeries>{children}</TransitionSeries>
-        {/* Trilho MESTRE: áudio + legenda + ícones + SFX, sequencial e SEM sobreposição. */}
+        {/* Trilho MESTRE de ÁUDIO (narração + SFX): duração DESCONTADA das transições,
+            p/ a voz não empilhar no cruzamento. */}
         {script.scenes.map((scene, i) => (
           <Sequence
-            key={`al${i}`}
+            key={`au${i}`}
             from={masterStarts[i]}
             durationInFrames={Math.max(1, frames[i] - (i < script.scenes.length - 1 ? TRANSITION_FRAMES : 0))}
           >
-            <SceneAudioLayer scene={scene} timing={sceneTimingFor(timing, scene, i)} />
+            <SceneAudioTrack scene={scene} timing={sceneTimingFor(timing, scene, i)} />
+          </Sequence>
+        ))}
+        {/* Trilho MESTRE VISUAL (legenda + ícones): duração CHEIA (R4a) — sem o desconto,
+            então a legenda NÃO abre buraco na transição (palavras têm timing real). */}
+        {script.scenes.map((scene, i) => (
+          <Sequence key={`cap${i}`} from={masterStarts[i]} durationInFrames={frames[i]}>
+            <SceneCaptionTrack scene={scene} timing={sceneTimingFor(timing, scene, i)} />
           </Sequence>
         ))}
       </Sequence>
+      {/* CINEMA FINISH (R6): grão + vinheta por cima de tudo, bem sutis. */}
+      <CinemaGrain />
+      <Vignette />
     </AbsoluteFill>
   );
 };
