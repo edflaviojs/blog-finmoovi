@@ -1,7 +1,6 @@
 ---
 term: "Patrimonio Neto"
-image: "/images/glossario/es-patrimonio-liquido.svg"
-imageAlt: "Gráfico de barras con degradado de rojo a verde sobre fondo negro."
+image: "/images/glossario/es-patrimonio-liquido.webp"
 definition: "El valor total de tus activos menos todas tus deudas y obligaciones."
 category: "basico"
 locale: "es"

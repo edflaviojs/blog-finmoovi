@@ -1,7 +1,6 @@
 ---
 term: "Renta Variable"
-image: "/images/glossario/es-renda-variavel.svg"
-imageAlt: "Gráfico de velas con colores magenta y cian sobre fondo negro."
+image: "/images/glossario/es-renda-variavel.webp"
 definition: "Inversiones donde los retornos no están garantizados y dependen de las condiciones del mercado. Ejemplos: acciones, fondos inmobiliarios, ETFs."
 category: "investimentos"
 locale: "es"

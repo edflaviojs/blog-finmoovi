@@ -1,7 +1,6 @@
 ---
 term: "Fondo de Emergencia"
-image: "/images/glossario/es-reserva-de-emergencia.svg"
-imageAlt: "Gráfico circular con secciones rojas, verdes, grises y negras en fondo negro."
+image: "/images/glossario/es-reserva-de-emergencia.webp"
 definition: "Dinero reservado para cubrir gastos inesperados o pérdida de ingresos. Idealmente de 3 a 6 meses de gastos esenciales."
 category: "basico"
 locale: "es"

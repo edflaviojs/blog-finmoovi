@@ -1,7 +1,6 @@
 ---
 term: "Wealth Management"
-image: "/images/glossario/es-wealth-management.svg"
-imageAlt: "Gráfico de velas con colores rojo y verde en fondo negro."
+image: "/images/glossario/es-wealth-management.webp"
 definition: "Servicio profesional de asesoría financiera para personas de alto patrimonio, cubriendo inversiones, planificación fiscal y patrimonial."
 category: "investimentos"
 locale: "es"

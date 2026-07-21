@@ -1,7 +1,6 @@
 ---
 term: "LCI y LCA"
-image: "/images/glossario/es-lci-e-lca.svg"
-imageAlt: "Gráfico de velas con colores magenta y cian en fondo negro."
+image: "/images/glossario/es-lci-e-lca.webp"
 definition: "Letras de Crédito Inmobiliario (LCI) y Letras de Crédito del Agronegocio (LCA). Inversiones de renta fija exentas de impuesto para personas físicas."
 category: "investimentos"
 locale: "es"

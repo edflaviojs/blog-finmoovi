@@ -1,7 +1,6 @@
 ---
 term: "Meta Financiera"
-image: "/images/glossario/es-meta-financeira.svg"
-imageAlt: "Gráfico de barras coloridas en degradado sobre fondo negro."
+image: "/images/glossario/es-meta-financeira.webp"
 definition: "Un objetivo financiero específico y medible con un plazo definido. Ejemplos: fondo de emergencia, compra de casa, jubilación."
 category: "basico"
 locale: "es"

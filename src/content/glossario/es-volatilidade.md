@@ -1,7 +1,6 @@
 ---
 term: "Volatilidad"
-image: "/images/glossario/es-volatilidade.svg"
-imageAlt: "Gráfico de líneas superpuestas en colores azul, naranja, gris oscuro y claro en negro."
+image: "/images/glossario/es-volatilidade.webp"
 definition: "El grado de variación en el precio de un activo financiero a lo largo del tiempo. Mayor volatilidad significa mayor riesgo y retorno potencial."
 category: "mercado"
 locale: "es"

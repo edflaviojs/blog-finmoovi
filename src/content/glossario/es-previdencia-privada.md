@@ -1,7 +1,6 @@
 ---
 term: "Pensión Privada"
-image: "/images/glossario/es-previdencia-privada.svg"
-imageAlt: "Gráfico con puntos naranjas y azules en un fondo negro con línea diagonal."
+image: "/images/glossario/es-previdencia-privada.webp"
 definition: "Un plan de inversión a largo plazo para la jubilación que complementa la seguridad social pública. Disponible como planes PGBL o VGBL."
 category: "investimentos"
 locale: "es"

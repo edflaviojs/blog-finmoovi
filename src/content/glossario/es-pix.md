@@ -1,7 +1,6 @@
 ---
 term: "PIX"
-image: "/images/glossario/es-pix.svg"
-imageAlt: "Gráfico de línea con colores azul, verde y naranja en fondo negro."
+image: "/images/glossario/es-pix.webp"
 definition: "El sistema de pagos instantáneos de Brasil creado por el Banco Central. Permite transferencias gratuitas 24/7 entre cualquier cuenta bancaria."
 category: "basico"
 locale: "es"
