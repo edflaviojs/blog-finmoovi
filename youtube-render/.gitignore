@@ -2,6 +2,10 @@ node_modules/
 out/
 .remotion/
 public/app-rec.mp4
+# Áudio gerado pelo TTS (narração por cena + timing.json) — artefatos, regerados no CI.
+public/audio/
+*.mp3
+*.wav
 assets/
 # Biblioteca de clipes de b-roll (artefatos pesados) — NUNCA no git.
 # Ela vive em FINMOOVI/VIDEOS-BROLL/ (fora deste repo); este ignore é defensivo.
