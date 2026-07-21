@@ -1,6 +1,6 @@
-import { Composition } from 'remotion';
+import { Composition, staticFile } from 'remotion';
 import { Test } from './Test';
-import { Short, ShortScript, totalFrames } from './Short';
+import { Short, ShortScript, ShortTiming, totalFrames, totalFramesFrom, sceneDurationsSec } from './Short';
 import { AppBrollLong, AppBrollShort } from './AppBroll';
 import { AppScrollLong, AppScrollShort } from './AppScroll';
 import { Cards3DLong, Cards3DShort } from './Cards3D';
@@ -30,6 +30,20 @@ import roteiro from '../../src/scripts/youtube/output/juros-compostos.script.jso
 const FPS = 30;
 const script = roteiro as ShortScript;
 
+// Carrega o timing.json do TTS (se existir) → voz + timing real no Short.
+// Sem o arquivo (preview local sem áudio gerado), cai no timing autoral do roteiro.
+const shortMetadata = async () => {
+  try {
+    const res = await fetch(staticFile(`audio/${script.slug}/timing.json`));
+    if (!res.ok) throw new Error('sem timing');
+    const timing = (await res.json()) as ShortTiming;
+    const durationInFrames = Math.max(1, totalFramesFrom(sceneDurationsSec(script, timing), FPS));
+    return { durationInFrames, props: { script, timing } };
+  } catch {
+    return { durationInFrames: totalFrames(script, FPS), props: { script, timing: null as ShortTiming } };
+  }
+};
+
 // Formato Short: vertical 1080×1920, 30fps.
 export const RemotionRoot: React.FC = () => {
   return (
@@ -41,7 +55,8 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1080}
         height={1920}
-        defaultProps={{ script }}
+        defaultProps={{ script, timing: null as ShortTiming }}
+        calculateMetadata={shortMetadata}
       />
       <Composition
         id="AppBrollLong"

@@ -42,13 +42,28 @@ export function activeIndex(timings: WordTiming[], frame: number): number {
   return active;
 }
 
+// Converte os timestamps REAIS do TTS/Whisper (segundos) em WordTiming (frames).
+// Usado quando o timing.json existe — no lugar da distribuição sintética acima.
+export function wordTimingsFromReal(
+  words: { word: string; start: number; end: number }[],
+  fps: number,
+): WordTiming[] {
+  return words.map((w, i) => ({
+    word: w.word,
+    start: Math.round(w.start * fps),
+    end: Math.round(w.end * fps),
+    line: Math.floor(i / WORDS_PER_LINE),
+    emphasis: isEmphasisWord(w.word),
+  }));
+}
+
 const BASE = 56;
 const EMPHASIS = 88; // destaque bem maior
 
-export const KaraokeCaption: React.FC<{ narration: string; totalFrames: number }> = ({ narration, totalFrames }) => {
+export const KaraokeCaption: React.FC<{ narration: string; totalFrames: number; words?: { word: string; start: number; end: number }[] }> = ({ narration, totalFrames, words }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const timings = layoutWords(narration, totalFrames);
+  const timings = words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, totalFrames);
   const active = activeIndex(timings, frame);
 
   const currentLine = timings[active]?.line ?? 0;

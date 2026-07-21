@@ -12,6 +12,7 @@ export type ShortScript = {
   keyword: string;
   nextVideoTitle?: string;
   scenes: Array<{
+    id?: number;
     role: string;
     narration: string;
     onScreenText?: string;
@@ -20,25 +21,63 @@ export type ShortScript = {
   }>;
 };
 
-export const sceneFrames = (script: ShortScript, fps: number) =>
-  script.scenes.map((s) => Math.max(1, Math.round(s.durationSec * fps)));
+// Timing REAL gerado pelo TTS (tts-short.js): áudio + palavras com start/end da fala.
+export type SceneTiming = {
+  id: number;
+  role?: string;
+  narration?: string;
+  audioFile: string;
+  durationSec: number;
+  words: { word: string; start: number; end: number }[];
+};
 
-// Duração total já descontando as sobreposições das transições.
-export const totalFrames = (script: ShortScript, fps: number) => {
-  const frames = sceneFrames(script, fps);
-  const transitions = Math.max(0, script.scenes.length - 1) * TRANSITION_FRAMES;
+export type ShortTiming = {
+  slug: string;
+  provider?: string;
+  voice?: string;
+  scenes: SceneTiming[];
+  totalDurationSec: number;
+} | null;
+
+// Timing da cena i (casa por id, com fallback por índice).
+const sceneTimingFor = (
+  timing: ShortTiming,
+  scene: ShortScript['scenes'][number],
+  i: number,
+): SceneTiming | null => {
+  if (!timing?.scenes?.length) return null;
+  const id = scene.id ?? i + 1;
+  return timing.scenes.find((s) => String(s.id) === String(id)) ?? timing.scenes[i] ?? null;
+};
+
+// Duração de cada cena (seg): a MEDIDA do TTS (timing) ou a autoral do roteiro.
+export const sceneDurationsSec = (script: ShortScript, timing: ShortTiming): number[] =>
+  script.scenes.map((s, i) => sceneTimingFor(timing, s, i)?.durationSec || s.durationSec);
+
+export const sceneFramesFrom = (durationsSec: number[], fps: number) =>
+  durationsSec.map((d) => Math.max(1, Math.round(d * fps)));
+
+// Total já descontando as sobreposições das transições.
+export const totalFramesFrom = (durationsSec: number[], fps: number) => {
+  const frames = sceneFramesFrom(durationsSec, fps);
+  const transitions = Math.max(0, durationsSec.length - 1) * TRANSITION_FRAMES;
   return frames.reduce((a, b) => a + b, 0) - transitions;
 };
 
-export const Short: React.FC<{ script: ShortScript }> = ({ script }) => {
+// Compat: duração total só pelo roteiro (sem áudio/timing).
+export const totalFrames = (script: ShortScript, fps: number) =>
+  totalFramesFrom(sceneDurationsSec(script, null), fps);
+
+export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({ script, timing = null }) => {
   const { fps } = useVideoConfig();
-  const frames = sceneFrames(script, fps);
+  const durations = sceneDurationsSec(script, timing);
+  const frames = sceneFramesFrom(durations, fps);
 
   const children: React.ReactNode[] = [];
   script.scenes.forEach((scene, i) => {
     children.push(
       <TransitionSeries.Sequence key={`s${i}`} durationInFrames={frames[i]}>
-        <SceneRenderer scene={scene} nextTitle={script.nextVideoTitle} />
+        <SceneRenderer scene={scene} nextTitle={script.nextVideoTitle} timing={sceneTimingFor(timing, scene, i)} />
       </TransitionSeries.Sequence>,
     );
     if (i < script.scenes.length - 1) {

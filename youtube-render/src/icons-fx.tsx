@@ -1,6 +1,6 @@
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { BRAND } from './theme';
-import { layoutWords, activeIndex } from './captions';
+import { layoutWords, activeIndex, wordTimingsFromReal } from './captions';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Ícones sincronizados com a fala: quando uma palavra-gatilho é dita (dinheiro,
@@ -85,10 +85,10 @@ const Icons: Record<IconKey, React.FC> = {
 
 const HOLD = 40; // ~1,3s: quanto o ícone fica na tela após o gatilho
 
-export const IconBurst: React.FC<{ narration: string; totalFrames: number }> = ({ narration, totalFrames }) => {
+export const IconBurst: React.FC<{ narration: string; totalFrames: number; words?: { word: string; start: number; end: number }[] }> = ({ narration, totalFrames, words }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const timings = layoutWords(narration, totalFrames);
+  const timings = words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, totalFrames);
 
   // Gatilho mais recente ainda "vivo" (dentro da janela HOLD) — segura o ícone
   // por ~1,3s em vez de só no frame da palavra (senão pisca e some).

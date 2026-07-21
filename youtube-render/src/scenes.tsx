@@ -1,4 +1,4 @@
-import { AbsoluteFill, interpolate, random, spring, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
+import { AbsoluteFill, Audio, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
 import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 import { FinMooviIcon } from './icon';
 import { KaraokeCaption } from './captions';
@@ -84,10 +84,13 @@ type Scene = {
   durationSec: number;
 };
 
-const SceneShell: React.FC<{ scene: Scene; children: React.ReactNode }> = ({ scene, children }) => {
+type SceneTiming = { audioFile?: string; durationSec?: number; words?: { word: string; start: number; end: number }[] };
+
+const SceneShell: React.FC<{ scene: Scene; timing?: SceneTiming | null; children: React.ReactNode }> = ({ scene, timing, children }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const totalFrames = Math.max(1, Math.round(scene.durationSec * fps));
+  const durationSec = timing?.durationSec ?? scene.durationSec;
+  const totalFrames = Math.max(1, Math.round(durationSec * fps));
   // Ken Burns: leve zoom-in contínuo + deriva — nada fica parado.
   const kb = interpolate(frame, [0, totalFrames], [1.0, 1.08], { extrapolateRight: 'clamp' });
   const enter = spring({ frame, fps, config: { damping: 16, mass: 0.6 } });
@@ -95,13 +98,14 @@ const SceneShell: React.FC<{ scene: Scene; children: React.ReactNode }> = ({ sce
   const enterY = interpolate(enter, [0, 1], [40, 0]);
   return (
     <AbsoluteFill>
+      {timing?.audioFile && <Audio src={staticFile(timing.audioFile)} />}
       <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: 380, paddingLeft: 60, paddingRight: 60 }}>
         <div style={{ transform: `scale(${kb * enterScale}) translateY(${enterY}px)`, textAlign: 'center' }}>
           {children}
         </div>
       </AbsoluteFill>
-      <IconBurst narration={scene.narration} totalFrames={totalFrames} />
-      <KaraokeCaption narration={scene.narration} totalFrames={totalFrames} />
+      <IconBurst narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
+      <KaraokeCaption narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
     </AbsoluteFill>
   );
 };
@@ -292,7 +296,7 @@ const SceneOutro: React.FC<{ scene: Scene; nextTitle?: string }> = ({ scene, nex
 };
 
 // Dispatcher — o role tem prioridade (cta/outro têm cena própria); senão usa visual.type.
-export const SceneRenderer: React.FC<{ scene: Scene; nextTitle?: string }> = ({ scene, nextTitle }) => {
+export const SceneRenderer: React.FC<{ scene: Scene; nextTitle?: string; timing?: SceneTiming | null }> = ({ scene, nextTitle, timing }) => {
   const inner = (() => {
     if (scene.role === 'cta') return <SceneCta scene={scene} />;
     if (scene.role === 'outro') return <SceneOutro scene={scene} nextTitle={nextTitle} />;
@@ -306,5 +310,5 @@ export const SceneRenderer: React.FC<{ scene: Scene; nextTitle?: string }> = ({ 
       default: return <SceneStatement scene={scene} />;
     }
   })();
-  return <SceneShell scene={scene}>{inner}</SceneShell>;
+  return <SceneShell scene={scene} timing={timing}>{inner}</SceneShell>;
 };
