@@ -3,7 +3,8 @@ name: YouTube — Renderizar Short (completo)
 # Produz o Short inteiro na nuvem (IP limpo, sem o throttle do Edge local):
 # TTS por cena + Whisper (timing real) → legendas SRT ×3 → render Remotion
 # (voz + SFX + música + karaokê sincronizado). Sobe o MP4 + .srt como artefato.
-# Manual por ora; vira cron 1/dia na F1.5. Upload ao YouTube = F1.4.
+# Com upload=true, publica no YouTube (PRIVADO até a auditoria da API) — F1.4.
+# Manual por ora; vira cron 1/dia na F1.5.
 
 on:
   workflow_dispatch:
@@ -12,6 +13,19 @@ on:
         description: 'Slug do roteiro (src/scripts/youtube/output/<slug>.script.json)'
         required: false
         default: 'juros-compostos'
+      upload:
+        description: 'Publicar no YouTube após render (privado até auditoria)'
+        type: boolean
+        required: false
+        default: false
+
+# Necessário para commitar o tracking do upload (.github/data/youtube-published.json).
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-short-${{ github.event.inputs.slug || 'juros-compostos' }}
+  cancel-in-progress: false
 
 jobs:
   render:
@@ -21,6 +35,8 @@ jobs:
       SLUG: ${{ github.event.inputs.slug || 'juros-compostos' }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
@@ -59,3 +75,30 @@ jobs:
             youtube-render/out/*.mp4
             youtube-render/public/audio/${{ github.event.inputs.slug || 'juros-compostos' }}/*.srt
           if-no-files-found: error
+
+      - name: Publicar no YouTube (privado até auditoria)
+        if: ${{ github.event.inputs.upload == 'true' }}
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          # LLM grátis p/ metadados (fallback determinístico se ausente)
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/youtube/upload-short.js --slug="$SLUG"
+
+      - name: Commitar tracking do upload
+        if: ${{ github.event.inputs.upload == 'true' }}
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/youtube-published.json
+          if git diff --staged --quiet; then
+            echo "Sem mudanças no tracking (nada novo publicado)."
+          else
+            git commit -m "chore: update youtube upload tracking [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          fi
