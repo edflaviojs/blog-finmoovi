@@ -1,0 +1,38 @@
+name: YouTube — Amostras de Voz (Edge pt-BR)
+
+# Gera todas as vozes pt-BR do Edge (masc + fem) num IP limpo (sem o throttle
+# que atrapalha a geração local em lote) e sobe como artefato p/ o dono escolher.
+# Manual: Actions → este workflow → "Run workflow".
+
+on:
+  workflow_dispatch:
+    inputs:
+      texto:
+        description: 'Texto das amostras (opcional; usa um padrão de finanças se vazio)'
+        required: false
+        default: ''
+
+jobs:
+  amostras:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Gerar amostras de voz
+        env:
+          SAMPLE_TEXT: ${{ github.event.inputs.texto }}
+        run: node src/scripts/youtube/voz-samples.js
+
+      - name: Subir artefato (vozes pt-BR)
+        uses: actions/upload-artifact@v4
+        with:
+          name: vozes-edge-ptbr
+          path: voz-samples/
+          if-no-files-found: error
