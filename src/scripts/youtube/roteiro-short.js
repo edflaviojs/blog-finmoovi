@@ -50,8 +50,8 @@ function readTerm(slug) {
 }
 
 function buildPrompt(t) {
-  return `Você é o roteirista do canal de YouTube do FinMoovi (finanças pessoais em PT-BR).
-Crie o roteiro de um YOUTUBE SHORT (vídeo vertical, motion graphics, estilo rápido e direto tipo "Fireship") sobre o termo do glossário abaixo.
+  return `Você é um ROTEIRISTA CINEMATOGRÁFICO de finanças do canal FinMoovi (PT-BR): engaja, cria mistério, instiga emoção e prende a atenção do PRIMEIRO ao ÚLTIMO segundo. Escreve como uma CONVERSA DE AMIGO brasileiro — informal, fluido, com gírias leves — NUNCA formal, "escrito" ou robótico.
+Crie o roteiro de um YOUTUBE SHORT (vertical, motion graphics) sobre o termo do glossário abaixo.
 
 TERMO: "${t.term}"
 DEFINIÇÃO: ${t.definition}
@@ -61,13 +61,13 @@ ${t.body}
 REGRAS OBRIGATÓRIAS (o roteiro é rejeitado se violar):
 1. Duração total entre 45 e 55 segundos (soma dos durationSec das cenas).
 2. Estrutura de cenas nesta ordem: 1 cena "hook" → 2 a 3 cenas "beat" → 1 cena "cta" → 1 cena "outro".
-3. HOOK (cold open, 0-5s): quebre uma ilusão comum ("Se você acha que...") e FALE a palavra-chave "${t.term}" já na narração desta primeira cena. Termine em gancho seco. Proibido definição/enrolação.
+3. HOOK (cold open, 0-5s): gancho FORTE e EMOCIONAL que já FALA a palavra-chave "${t.term}" nos primeiros segundos (o YouTube transcreve a voz — é obrigatório p/ SEO). Crie urgência ou curiosidade e emende num exemplo. Exemplos de TOM (imite a energia, não copie): "Os juros compostos podem estar te matando — e eu te explico por quê. Olha esse exemplo…" · "Se você acha que ${t.term} é papo de rico… olha só esse número." Termine puxando o exemplo/número. Proibido definição/enrolação.
 4. É UMA HISTÓRIA SÓ: o vídeo desenvolve UM único assunto (o do gancho), aprofundando do hook até a CTA. Cada cena COMPLEMENTA e dá sequência à anterior — É PROIBIDO cada cena abrir um assunto novo/desconexo. Os BEATS explicam o PORQUÊ/COMO dos números (dê NEXO: a audiência tem que pensar "que informação útil e relevante!"), usando os valores reais do conteúdo de apoio.
 5. CTA (penúltima cena, NUNCA no fim): recado rápido de valor indicando o app FinMoovi grátis OU a calculadora do blog. Volte imediatamente ao tom de conteúdo.
 6. OUTRO (última cena, open loop): SEM "tchau/obrigado/até a próxima". Reflexão forte + gancho de curiosidade.
 7. Insira EXATAMENTE 1 vez, ao longo do roteiro (de preferência num beat ou na CTA), o bordão do canal: "${BORDAO}"
 8. "onScreenText": curtíssimo (máx ~40 caracteres), de preferência número/símbolo (R$, %, ×) — o texto na tela é mínimo.
-9. "narration": conversa de amigo, leve e direta — NUNCA robótica nem publicitária. Frases CURTAS com RESPIRO (uma ideia por frase, separadas por ponto; não emende duas ideias sem pausa). A última frase de cada cena deve puxar naturalmente a próxima.
+9. "narration": conversa de amigo, leve e direta — NUNCA robótica nem publicitária. A PONTUAÇÃO COMANDA A RESPIRAÇÃO da voz (TTS): vírgula = pausa curta, reticências (…) = suspense, ponto = nova ideia. NUNCA emende duas ideias sem pontuação — CERTO: "quem começa aos 25, junta quase o triplo…"; ERRADO: "quem começa aos 25 junta quase o triplo". Fuja do formalês escrito ("Agora, esse efeito trabalha…") e use o falado ("Agora pensa comigo:… joga contra você!"). A última frase de cada cena puxa a próxima.
 10. "visual.type" só pode ser um destes (motion graphics, SEM vídeo de estoque): ${VISUAL_TYPES.join(', ')}.
     - title = cartão de título · number = número gigante animado · chart = gráfico/simulação animada · list = itens revelados · formula = fórmula (ex.: regra dos 72) · statement = frase de impacto.
 

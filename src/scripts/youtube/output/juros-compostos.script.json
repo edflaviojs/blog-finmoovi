@@ -8,39 +8,39 @@
     {
       "id": 1,
       "role": "hook",
-      "narration": "Se você acha que juros compostos é papo de rico, olha só esse número.",
-      "onScreenText": "R$ 500 por mês",
+      "narration": "Se você acha que juros compostos é papo de rico… olha só esse número.",
+      "onScreenText": "R$ 500",
       "visual": { "type": "number", "note": "R$ 500 surge sozinho, grande, brilho ciano→magenta" },
       "durationSec": 5
     },
     {
       "id": 2,
       "role": "beat",
-      "narration": "Esses 500 reais, guardados todo mês, viram 3,2 milhões. E não é sorte. É juro rendendo em cima de juro, mês depois de mês.",
+      "narration": "Esses 500 reais, guardados todo mês, viram 3,2 milhões. E não é sorte, não. É juro rendendo em cima de juro, mês após mês.",
       "onScreenText": "→ R$ 3,2 milhões",
       "visual": { "type": "chart", "note": "curva exponencial subindo de 500 até 3,2 milhões" },
-      "durationSec": 10
+      "durationSec": 11
     },
     {
       "id": 3,
       "role": "beat",
-      "narration": "E o segredo não é guardar muito. É dar tempo pro dinheiro se multiplicar sozinho. Igual bola de neve descendo a ladeira.",
+      "narration": "Mas o segredo não é guardar muito. É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche.",
       "onScreenText": "o tempo faz o trabalho",
-      "visual": { "type": "statement", "note": "bola de neve crescendo / frase de impacto" },
-      "durationSec": 9
+      "visual": { "type": "statement", "note": "bola de neve virando avalanche / frase de impacto" },
+      "durationSec": 11
     },
     {
       "id": 4,
       "role": "beat",
-      "narration": "Por isso começar cedo muda tudo. Quem começa aos 25 junta quase o triplo de quem começou aos 35. Dinheiro sem controle é dinheiro dos outros.",
+      "narration": "E é aqui que a maioria escorrega: quem começa aos 25, junta quase o triplo de quem começou aos 35. Dez aninhos de atraso… custam uma fortuna. Porque dinheiro sem controle é dinheiro dos outros.",
       "onScreenText": "25 anos ≈ 3× mais",
       "visual": { "type": "chart", "note": "duas barras: idade 25 quase o triplo da idade 35" },
-      "durationSec": 12
+      "durationSec": 13
     },
     {
       "id": 5,
       "role": "cta",
-      "narration": "Quer ver quanto os seus 500 reais podem render? Roda a conta na calculadora grátis do FinMoovi. O link tá aqui embaixo.",
+      "narration": "Bora fazer essa conta com os seus números? A calculadora do FinMoovi é grátis, e o link tá logo aqui embaixo.",
       "onScreenText": "Roda a SUA conta",
       "visual": { "type": "statement", "note": "título + pill 'Link na descrição' + seta descendo" },
       "durationSec": 8
@@ -48,12 +48,12 @@
     {
       "id": 6,
       "role": "outro",
-      "narration": "Agora, esse mesmo efeito trabalha contra você. Na dívida do cartão, o juro composto rende pro banco. Te explico no próximo.",
+      "narration": "Agora pensa comigo: esse mesmo efeito que faz o seu dinheiro crescer também trabalha contra você! Olha: na dívida do cartão, o juro composto rende muito, mas muito dinheiro… pro banco. Quer saber como virar esse jogo? Te explico no próximo vídeo.",
       "onScreenText": "no cartão, joga CONTRA você",
       "visual": { "type": "statement", "note": "card do próximo vídeo + seta apontando" },
-      "durationSec": 8
+      "durationSec": 13
     }
   ],
   "cta": { "text": "Calculadora de juros compostos grátis no FinMoovi", "target": "blog" },
-  "totalDurationSec": 52
+  "totalDurationSec": 61
 }
