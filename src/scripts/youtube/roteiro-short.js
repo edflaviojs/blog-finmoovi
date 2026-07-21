@@ -15,7 +15,7 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
-import { validateShortScript, BORDAO, VISUAL_TYPES } from './lib/schema-short.js';
+import { validateShortScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX } from './lib/schema-short.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -58,20 +58,52 @@ DEFINIÇÃO: ${t.definition}
 CONTEÚDO DE APOIO (use os números/exemplos reais daqui):
 ${t.body}
 
-REGRAS OBRIGATÓRIAS (o roteiro é rejeitado se violar):
+════════ REGRAS DE ESTRUTURA (o roteiro é rejeitado se violar) ════════
 1. Duração total entre 45 e 55 segundos (soma dos durationSec das cenas).
-2. Estrutura de cenas nesta ordem: 1 cena "hook" → 2 a 3 cenas "beat" → 1 cena "cta" → 1 cena "outro".
-3. HOOK (cold open, 0-5s): gancho FORTE e EMOCIONAL que já FALA a palavra-chave "${t.term}" nos primeiros segundos (o YouTube transcreve a voz — é obrigatório p/ SEO). Crie urgência ou curiosidade e emende num exemplo. Exemplos de TOM (imite a energia, não copie): "Os juros compostos podem estar te matando — e eu te explico por quê. Olha esse exemplo…" · "Se você acha que ${t.term} é papo de rico… olha só esse número." Termine puxando o exemplo/número. Proibido definição/enrolação.
-4. É UMA HISTÓRIA SÓ: o vídeo desenvolve UM único assunto (o do gancho), aprofundando do hook até a CTA. Cada cena COMPLEMENTA e dá sequência à anterior — É PROIBIDO cada cena abrir um assunto novo/desconexo. Os BEATS explicam o PORQUÊ/COMO dos números (dê NEXO: a audiência tem que pensar "que informação útil e relevante!"), usando os valores reais do conteúdo de apoio.
-5. CTA (penúltima cena, NUNCA no fim): recado rápido de valor indicando o app FinMoovi grátis OU a calculadora do blog. Volte imediatamente ao tom de conteúdo.
-6. OUTRO (última cena, open loop): SEM "tchau/obrigado/até a próxima". Reflexão forte + gancho de curiosidade.
-7. Insira EXATAMENTE 1 vez, ao longo do roteiro (de preferência num beat ou na CTA), o bordão do canal: "${BORDAO}"
-8. "onScreenText": curtíssimo (máx ~40 caracteres), de preferência número/símbolo (R$, %, ×) — o texto na tela é mínimo.
-9. "narration": conversa de amigo, leve e direta — NUNCA robótica nem publicitária. A PONTUAÇÃO COMANDA A RESPIRAÇÃO da voz (TTS): vírgula = pausa curta, reticências (…) = suspense, ponto = nova ideia. NUNCA emende duas ideias sem pontuação — CERTO: "quem começa aos 25, junta quase o triplo…"; ERRADO: "quem começa aos 25 junta quase o triplo". Fuja do formalês escrito ("Agora, esse efeito trabalha…") e use o falado ("Agora pensa comigo:… joga contra você!"). A última frase de cada cena puxa a próxima.
-10. "visual.type" só pode ser um destes (motion graphics, SEM vídeo de estoque): ${VISUAL_TYPES.join(', ')}.
-    - title = cartão de título · number = número gigante animado · chart = gráfico/simulação animada · list = itens revelados · formula = fórmula (ex.: regra dos 72) · statement = frase de impacto.
-11. "cue" (SINCRONIA voz↔imagem, OBRIGATÓRIO): uma palavra EXATA da narração desta cena — o motion graphic dá o SOCO de destaque quando essa palavra for FALADA (o visual já fica na tela, NUNCA some/deixa a tela vazia). Escolha a palavra-chave do visual (normalmente o número/termo). Ex.: visual "25 anos" → cue "25"; visual "R$ 500" → cue "500".
-12. "intro" (ABERTURA DISRUPTIVA, OBRIGATÓRIO): abre o vídeo com impacto pra parar o dedo do usuário. "big" = o número/frase MAIS CHOCANTE do vídeo (normalmente o RESULTADO final, ex.: "R$ 3.200.000"); "sub" = pergunta de curiosidade que o vídeo vai responder (ex.: "Como R$ 500 viram isso?"). Entra ~1,5s antes da narração, com boom + flash.
+2. Cenas nesta ordem: 1 "hook" → 2 a 3 "beat" → 1 "cta" → 1 "outro".
+3. HOOK (cold open, 0-5s): gancho FORTE e EMOCIONAL que já FALA a palavra-chave "${t.term}" nos primeiros segundos (o YouTube transcreve a voz — obrigatório p/ SEO). Crie urgência/curiosidade e emende num exemplo. TOM (imite a energia, não copie): "Se você acha que ${t.term} é papo de rico… olha só esse número." Termine puxando o exemplo/número. Proibido definição/enrolação.
+4. É UMA HISTÓRIA SÓ: o vídeo desenvolve UM único assunto (o do gancho), do hook até a CTA. Cada cena COMPLEMENTA a anterior — PROIBIDO abrir assunto novo/desconexo. Os BEATS explicam o PORQUÊ/COMO dos números (dê NEXO), com os valores reais do conteúdo de apoio.
+5. CTA (penúltima cena, NUNCA no fim): recado rápido de valor indicando o app FinMoovi grátis OU a calculadora do blog. Volte já ao tom de conteúdo.
+6. OUTRO (última cena, open loop): SEM "tchau/obrigado/até a próxima". Reflexão forte + gancho de curiosidade que puxa o PRÓXIMO vídeo. Preencha "nextVideoTitle" com o tema do próximo Short.
+7. Insira EXATAMENTE 1 vez (de preferência num beat ou na CTA) o bordão do canal: "${BORDAO}"
+
+════════ SHOTS — COREOGRAFIA POR PALAVRA (o coração do v3) ════════
+O dono quer MUITO MOVIMENTO: "a cada 2-3 segundos muda a tela — gráficos, ícones, imagens". Cada cena tem "shots": um ARRAY de 1 a 6 visuais rápidos que ENTRAM na tela no exato momento em que a palavra-âncora é FALADA.
+
+Um shot = { "anchor": "palavra", "visual": { "type": …, … }, "sfx": "…" (opcional) }.
+- "anchor": uma palavra EXATA da narração DESTA cena. Os shots seguem a ORDEM em que as palavras são faladas.
+- "visual.type" (só estes, motion graphics, SEM vídeo de estoque): ${VISUAL_TYPES.join(', ')}.
+    · number = número gigante ("text": "R$ 500") · counter = número CORRENDO ("from", "to", "prefix": "R$") · chart = gráfico/barras/curva · icon = ícone ("icon" do catálogo) · metaphor = animação da metáfora ("metaphor" do catálogo) · statement = frase-soco ("text") · formula = fórmula (regra dos 72) · list = itens revelados.
+- "icon" ∈ {${ICONS.join(', ')}}. "metaphor" ∈ {${METAPHORS.join(', ')}}. "sfx" ∈ {${SFX.join(', ')}}.
+- "text" curtíssimo (≤40 chars). "note" = 1 linha de direção de arte.
+
+REGRA A — RITMO (movimento constante): nenhum visual pode ficar parado mais de ~3s de narração. Na prática: no MÁXIMO ~8-10 palavras entre uma âncora e a próxima. Cena de 11s → ~3-5 shots.
+
+REGRA B — SINCRONIA SEMÂNTICA (a mais importante — NUNCA viole): o visual de um shot só pode mostrar valores/ideias que estão sendo ditos NAQUELA âncora ou que JÁ foram ditos antes. NUNCA mostre um número/ideia ANTES da voz chegar nele.
+  ✗ ERRADO: a voz diz "vejam esses 500 reais" e a tela já sobe um gráfico até 3,2 milhões (a voz ainda nem falou o resultado).
+  ✓ CERTO: em "500 reais" o shot mostra 500; o counter/gráfico até 3,2 milhões só dispara na âncora onde a voz FALA "milhões".
+  ✗ ERRADO: a voz diz "é aqui que a maioria escorrega" e já começa o gráfico de 25 anos (ainda não falou de idade).
+  ✓ CERTO: o gráfico das idades 25 vs 35 só entra nas âncoras "25" e "35".
+
+REGRA C — METÁFORAS LITERAIS (o dono AMA): quando a narração usar uma metáfora FÍSICA, crie um shot "metaphor" que ANIMA de verdade o que foi dito, com o "sfx" casado.
+  · "que nem bola de neve descendo a ladeira" → metaphor "bola-neve" (bolinha rola e derruba algo), sfx "whoosh".
+  · "vira uma avalanche" → metaphor "avalanche", sfx "avalanche" (neve caindo).
+  · "é aqui que a maioria escorrega" → metaphor "escorregao", sfx "slide" (pode ser CÔMICO — o dono curte o humor no escorregão).
+  PREFIRA usar na narração metáforas que existem no catálogo (${METAPHORS.join(', ')}); se usar outra, represente com um shot "icon" coerente.
+
+════════ FALA FLUIDA — PONTUAÇÃO = RESPIRAÇÃO (regra do dono) ════════
+A pontuação existe SÓ para comandar o respiro da voz (TTS). Vírgula/ponto/reticências = a voz respira ali. Vírgula gramatical onde um falante NÃO respiraria é PROIBIDA. TESTE FINAL: leia em voz alta — se o respiro cair no lugar errado, reescreva.
+  ✗ ERRADO: "Dez aninhos de atraso, custam uma fortuna." (o TTS respira depois de "atraso" — fica horrível)
+  ✓ CERTO: "Dez aninhos de atraso custam uma fortuna." (um respiro só)
+  ✗ ERRADO: "E não é sorte, não." (ninguém fala com vírgula aí)
+  ✓ CERTO: "E não é sorte não." (tudo junto)
+  ✗ ERRADO: "o juro composto rende muito, mas muito dinheiro… pro banco." (picotado, não sai fluido)
+  ✓ CERTO: quebre só onde um falante realmente respiraria PARA DAR EFEITO — ex.: "esse mesmo juro rende uma fortuna… só que pro banco."
+Use reticências (…) para SUSPENSE de efeito, não para picotar frase. A última frase de cada cena puxa a próxima.
+
+════════ INTRO (abertura disruptiva) ════════
+"intro.frase" = frase de CURIOSIDADE que para o dedo, com as palavras de ÊNFASE marcadas entre *asteriscos* (o render dá destaque nelas). Ex.: "*Você ACREDITA* que R$ 500 podem virar *R$ 3,2 MILHÕES*???".
+"intro.counter" = { "from", "to", "prefix" } — um contador que sobe do início ao resultado (ex.: 500 → 3200000). "from" < "to", números puros (sem pontos/símbolos).
 
 Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste formato exato:
 {
@@ -79,16 +111,21 @@ Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste f
   "term": "${t.term}",
   "category": "${t.category}",
   "keyword": "${t.term}",
-  "intro": { "big": "número/frase-choque", "sub": "pergunta de curiosidade" },
+  "nextVideoTitle": "tema do próximo Short",
+  "intro": {
+    "frase": "*Você ACREDITA* que … *resultado-choque*???",
+    "counter": { "from": 500, "to": 3200000, "prefix": "R$" }
+  },
   "scenes": [
     {
       "id": 1,
       "role": "hook",
       "narration": "…",
-      "onScreenText": "…",
-      "cue": "palavra-exata-da-narração",
-      "visual": { "type": "title", "note": "descrição curta do que anima em tela" },
-      "durationSec": 5
+      "durationSec": 5,
+      "shots": [
+        { "anchor": "palavra1", "visual": { "type": "statement", "text": "…", "note": "…" }, "sfx": "boom" },
+        { "anchor": "palavra2", "visual": { "type": "number", "text": "R$ 500", "note": "…" }, "sfx": "whoosh" }
+      ]
     }
   ],
   "cta": { "text": "…", "target": "app" },

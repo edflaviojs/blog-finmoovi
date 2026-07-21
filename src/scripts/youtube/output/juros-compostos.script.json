@@ -4,63 +4,83 @@
   "category": "basico",
   "keyword": "Juros Compostos",
   "nextVideoTitle": "Dívida do cartão",
-  "intro": { "big": "R$ 3.200.000", "sub": "Como R$ 500 viram isso?" },
+  "intro": {
+    "frase": "*Você ACREDITA* que R$ 500 podem virar *R$ 3,2 MILHÕES*???",
+    "counter": { "from": 500, "to": 3200000, "prefix": "R$" }
+  },
   "scenes": [
     {
       "id": 1,
       "role": "hook",
       "narration": "Se você acha que juros compostos é papo de rico… olha só esse número.",
-      "onScreenText": "R$ 500",
-      "cue": "número",
-      "visual": { "type": "number", "note": "R$ 500 surge sozinho, grande, brilho ciano→magenta" },
-      "durationSec": 5
+      "durationSec": 5,
+      "shots": [
+        { "anchor": "compostos", "visual": { "type": "statement", "text": "JUROS COMPOSTOS", "note": "termo crava no centro com brilho ciano→magenta" }, "sfx": "boom" },
+        { "anchor": "número", "visual": { "type": "number", "text": "R$ 500", "note": "R$ 500 surge gigante sozinho na tela" }, "sfx": "whoosh" }
+      ]
     },
     {
       "id": 2,
       "role": "beat",
-      "narration": "Esses 500 reais, guardados todo mês, viram 3,2 milhões. E não é sorte, não. É juro rendendo em cima de juro, mês após mês.",
-      "onScreenText": "→ R$ 3,2 milhões",
-      "cue": "viram",
-      "visual": { "type": "chart", "note": "curva exponencial subindo de 500 até 3,2 milhões" },
-      "durationSec": 11
+      "narration": "Esses 500 reais, guardados todo mês, viram 3,2 milhões. E não é sorte não. É juro rendendo em cima de juro, mês após mês.",
+      "durationSec": 10,
+      "shots": [
+        { "anchor": "reais", "visual": { "type": "number", "text": "R$ 500 / mês", "note": "500 com ícone de calendário, pulsando" }, "sfx": "coin" },
+        { "anchor": "milhões", "visual": { "type": "counter", "from": 500, "to": 3200000, "prefix": "R$", "note": "contador dispara de 500 até 3,2 mi" }, "sfx": "whoosh" },
+        { "anchor": "sorte", "visual": { "type": "icon", "icon": "question", "note": "interrogação; a palavra 'sorte' aparece riscada" } },
+        { "anchor": "juro", "visual": { "type": "statement", "text": "juro sobre juro", "note": "moedas se empilham, uma sobre a outra" }, "sfx": "coin" }
+      ]
     },
     {
       "id": 3,
       "role": "beat",
       "narration": "Mas o segredo não é guardar muito. É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche.",
-      "onScreenText": "o tempo faz o trabalho",
-      "cue": "bola",
-      "visual": { "type": "statement", "note": "bola de neve virando avalanche / frase de impacto" },
-      "durationSec": 11
+      "durationSec": 10,
+      "shots": [
+        { "anchor": "tempo", "visual": { "type": "icon", "icon": "clock", "note": "relógio girando rápido" }, "sfx": "whoosh" },
+        { "anchor": "multiplicar", "visual": { "type": "statement", "text": "× sozinho", "note": "símbolo × se duplica na tela" } },
+        { "anchor": "bola", "visual": { "type": "metaphor", "metaphor": "bola-neve", "note": "bolinha de neve começa a rolar na ladeira e cresce" }, "sfx": "whoosh" },
+        { "anchor": "avalanche", "visual": { "type": "metaphor", "metaphor": "avalanche", "note": "a bola vira avalanche e derruba tudo pela frente" }, "sfx": "avalanche" }
+      ]
     },
     {
       "id": 4,
       "role": "beat",
-      "narration": "E é aqui que a maioria escorrega: quem começa aos 25, junta quase o triplo de quem começou aos 35. Dez aninhos de atraso… custam uma fortuna. Porque dinheiro sem controle é dinheiro dos outros.",
-      "onScreenText": "25 anos ≈ 3× mais",
-      "cue": "25",
-      "visual": { "type": "chart", "note": "duas barras: idade 25 quase o triplo da idade 35" },
-      "durationSec": 13
+      "narration": "E é aqui que a maioria escorrega: quem começa aos 25 junta quase o triplo de quem começou aos 35. Dez aninhos de atraso custam uma fortuna. Porque dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 11,
+      "shots": [
+        { "anchor": "escorrega", "visual": { "type": "metaphor", "metaphor": "escorregao", "note": "boneco escorrega numa casca de banana, cômico" }, "sfx": "slide" },
+        { "anchor": "25", "visual": { "type": "chart", "note": "barra da idade 25 sobe bem alta" }, "sfx": "boom" },
+        { "anchor": "triplo", "visual": { "type": "number", "text": "≈ 3× mais", "note": "selo 3× destaca a diferença" }, "sfx": "coin" },
+        { "anchor": "35", "visual": { "type": "chart", "note": "segunda barra, idade 35, bem menor ao lado" } },
+        { "anchor": "controle", "visual": { "type": "statement", "text": "sem controle = dos outros", "note": "bordão do canal crava na tela" } }
+      ]
     },
     {
       "id": 5,
       "role": "cta",
       "narration": "Bora fazer essa conta com os seus números? A calculadora do FinMoovi é grátis, e o link tá logo aqui embaixo.",
-      "onScreenText": "Roda a SUA conta",
-      "cue": "calculadora",
-      "visual": { "type": "statement", "note": "título + pill 'Link na descrição' + seta descendo" },
-      "durationSec": 8
+      "durationSec": 7,
+      "shots": [
+        { "anchor": "conta", "visual": { "type": "statement", "text": "a SUA conta", "note": "campos da calculadora surgem" } },
+        { "anchor": "calculadora", "visual": { "type": "statement", "text": "FinMoovi · grátis", "note": "UI da calculadora do FinMoovi na tela" }, "sfx": "whoosh" },
+        { "anchor": "embaixo", "visual": { "type": "statement", "text": "Link ↓", "note": "seta apontando pra descrição/baixo" }, "sfx": "slide" }
+      ]
     },
     {
       "id": 6,
       "role": "outro",
-      "narration": "Agora pensa comigo: esse mesmo efeito que faz o seu dinheiro crescer também trabalha contra você! Olha: na dívida do cartão, o juro composto rende muito, mas muito dinheiro… pro banco. Quer saber como virar esse jogo? Te explico no próximo vídeo.",
-      "onScreenText": "no cartão, joga CONTRA você",
-      "cue": "cartão",
-      "visual": { "type": "statement", "note": "card do próximo vídeo + seta apontando" },
-      "durationSec": 13
+      "narration": "Agora pensa comigo: esse mesmo efeito que faz o seu dinheiro crescer também trabalha contra você! Na dívida do cartão, esse mesmo juro rende uma fortuna… só que pro banco. Quer saber como virar esse jogo? Te explico no próximo vídeo.",
+      "durationSec": 11,
+      "shots": [
+        { "anchor": "crescer", "visual": { "type": "icon", "icon": "growth", "note": "seta verde subindo" } },
+        { "anchor": "contra", "visual": { "type": "statement", "text": "CONTRA você", "note": "a seta vira e fica vermelha" }, "sfx": "alert" },
+        { "anchor": "cartão", "visual": { "type": "icon", "icon": "card", "note": "cartão de crédito surge" }, "sfx": "whoosh" },
+        { "anchor": "banco", "visual": { "type": "counter", "from": 100, "to": 9000, "prefix": "R$", "note": "juro corre, mas empilha do lado do banco" }, "sfx": "coin" },
+        { "anchor": "próximo", "visual": { "type": "statement", "text": "Dívida do cartão", "note": "card do próximo vídeo, open loop" }, "sfx": "boom" }
+      ]
     }
   ],
   "cta": { "text": "Calculadora de juros compostos grátis no FinMoovi", "target": "blog" },
-  "totalDurationSec": 61
+  "totalDurationSec": 54
 }
