@@ -1,0 +1,61 @@
+name: YouTube — Renderizar Short (completo)
+
+# Produz o Short inteiro na nuvem (IP limpo, sem o throttle do Edge local):
+# TTS por cena + Whisper (timing real) → legendas SRT ×3 → render Remotion
+# (voz + SFX + música + karaokê sincronizado). Sobe o MP4 + .srt como artefato.
+# Manual por ora; vira cron 1/dia na F1.5. Upload ao YouTube = F1.4.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Slug do roteiro (src/scripts/youtube/output/<slug>.script.json)'
+        required: false
+        default: 'juros-compostos'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      SLUG: ${{ github.event.inputs.slug || 'juros-compostos' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Instalar dependências (blog)
+        run: npm ci
+
+      - name: Gerar áudio + timing (TTS + Whisper)
+        env:
+          TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
+        run: node src/scripts/youtube/tts-short.js --slug="$SLUG"
+
+      - name: Gerar legendas SRT ×3 (pt/en/es)
+        env:
+          TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/youtube/srt-short.js --slug="$SLUG"
+
+      - name: Instalar dependências (render)
+        working-directory: youtube-render
+        run: npm ci
+
+      - name: Renderizar Short
+        working-directory: youtube-render
+        run: npx remotion render src/index.ts Short "out/$SLUG.mp4"
+
+      - name: Subir artefato (MP4 + legendas)
+        uses: actions/upload-artifact@v4
+        with:
+          name: short-${{ github.event.inputs.slug || 'juros-compostos' }}
+          path: |
+            youtube-render/out/*.mp4
+            youtube-render/public/audio/${{ github.event.inputs.slug || 'juros-compostos' }}/*.srt
+          if-no-files-found: error
