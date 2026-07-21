@@ -1,6 +1,6 @@
 import { Composition, staticFile } from 'remotion';
 import { Test } from './Test';
-import { Short, ShortScript, ShortTiming, totalFrames, totalFramesFrom, sceneDurationsSec, INTRO_FRAMES } from './Short';
+import { Short, ShortScript, ShortTiming, totalFrames, totalFramesFrom, sceneDurationsSec, introFramesFor } from './Short';
 import { AppBrollLong, AppBrollShort } from './AppBroll';
 import { AppScrollLong, AppScrollShort } from './AppScroll';
 import { Cards3DLong, Cards3DShort } from './Cards3D';
@@ -32,7 +32,7 @@ const script = roteiro as ShortScript;
 
 // Carrega o timing.json do TTS (se existir) → voz + timing real no Short.
 // Sem o arquivo (preview local sem áudio gerado), cai no timing autoral do roteiro.
-const introFrames = script.intro ? INTRO_FRAMES : 0;
+const introFrames = introFramesFor(script);
 const shortMetadata = async () => {
   try {
     const res = await fetch(staticFile(`audio/${script.slug}/timing.json`));

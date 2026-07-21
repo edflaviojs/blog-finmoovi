@@ -83,6 +83,38 @@ const Icons: Record<IconKey, React.FC> = {
   ),
 };
 
+// Ícones EXTRA de curiosidade (usados no motor de shots e na intro dinâmica):
+// interrogação + "mind-blown". Mesmo estilo de marca (SVG vetor, gradiente da marca).
+const ExtraIcons: Record<'question' | 'mind', React.FC> = {
+  question: () => (
+    <svg width="150" height="150" viewBox="0 0 100 100"><G />
+      <circle cx="50" cy="50" r="40" fill="none" stroke="url(#fxg)" strokeWidth="6" />
+      <path d="M37 40 a13 13 0 1 1 21 10 c-6 4 -8 7 -8 13" fill="none" stroke={BRAND.cyan} strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="50" cy="74" r="4.5" fill={BRAND.magenta} />
+    </svg>
+  ),
+  mind: () => (
+    <svg width="160" height="160" viewBox="0 0 100 100"><G />
+      {Array.from({ length: 8 }).map((_, i) => {
+        const a = (i / 8) * Math.PI * 2;
+        return (
+          <line key={i}
+            x1={50 + Math.cos(a) * 18} y1={30 + Math.sin(a) * 18}
+            x2={50 + Math.cos(a) * 31} y2={30 + Math.sin(a) * 31}
+            stroke={i % 2 ? BRAND.magenta : BRAND.cyan} strokeWidth="5" strokeLinecap="round" />
+        );
+      })}
+      <circle cx="50" cy="30" r="16" fill="url(#fxg)" opacity="0.9" />
+      <path d="M32 92 v-13 a18 18 0 0 1 36 0 v13" fill="none" stroke="url(#fxg)" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
+};
+
+export type ShotIconKey = IconKey | 'question' | 'mind';
+
+// Mapa de ícones do MOTOR DE SHOTS (superset dos gatilhos: + question + mind).
+export const SHOT_ICONS: Record<ShotIconKey, React.FC> = { ...Icons, ...ExtraIcons };
+
 const HOLD = 40; // ~1,3s: quanto o ícone fica na tela após o gatilho
 
 export const IconBurst: React.FC<{ narration: string; totalFrames: number; words?: { word: string; start: number; end: number }[] }> = ({ narration, totalFrames, words }) => {

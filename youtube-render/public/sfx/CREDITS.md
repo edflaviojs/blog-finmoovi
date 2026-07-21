@@ -13,3 +13,13 @@ Efeitos sonoros do canal (disparados nos gatilhos de `icons-fx.tsx`).
 | `clock.ogg` | clock (anos/tempo) | interface-sounds · tick_002 |
 | `card.ogg` | card (cartão/dívida) | casino-audio · card-slide-1 |
 | `warning.ogg` | warning (erro/cuidado) | interface-sounds · error_003 |
+
+## SFX de nível de shot (contract v3)
+
+Nomes do contrato → arquivo (`resolveShotSfx` em `src/audio/sfx.tsx`):
+`boom`→boom · `whoosh`→growth · `coin`→money · `alert`→warning · `avalanche`→avalanche · `slide`→slide.
+
+| Arquivo | Uso | Origem |
+|---|---|---|
+| `avalanche.ogg` | metáfora avalanche (rumble) | **sintetizado** (ffmpeg `sine`, senos 48/71/95 Hz com envelope) — CC0/domínio público |
+| `slide.ogg` | escorregão (apito descendo cômico) | **sintetizado** (ffmpeg `sine`, sequência de tons 1500→360 Hz) — CC0/domínio público |

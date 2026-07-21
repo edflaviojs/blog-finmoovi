@@ -2,24 +2,59 @@ import { AbsoluteFill, Sequence, useVideoConfig } from 'remotion';
 import { TransitionSeries, linearTiming } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
-import { Background, Watermark, SceneRenderer, SceneAudioLayer, ShockIntro } from './scenes';
+import { Background, Watermark, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro } from './scenes';
 import { BackgroundMusic } from './audio/music';
 
 export const TRANSITION_FRAMES = 8;
-export const INTRO_FRAMES = 45; // abertura disruptiva (~1,5s) antes das cenas
+export const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s) antes das cenas
+export const INTRO_FRAMES_V3 = 120; // intro dinâmica v3 (~4s): frase + contador crescente
+
+// ── CONTRACT v3 — "SHOTS" ────────────────────────────────────────────────────
+export type ShotVisual = {
+  type: 'number' | 'counter' | 'chart' | 'icon' | 'metaphor' | 'statement' | 'formula' | 'list';
+  text?: string;
+  from?: number;
+  to?: number;
+  prefix?: string;
+  icon?: 'money' | 'coins' | 'growth' | 'clock' | 'card' | 'warning' | 'question' | 'mind';
+  metaphor?: 'bola-neve' | 'avalanche' | 'escorregao';
+  note?: string;
+};
+export type Shot = {
+  anchor: string;
+  visual: ShotVisual;
+  sfx?: 'boom' | 'whoosh' | 'coin' | 'alert' | 'avalanche' | 'slide';
+};
+
+// intro: legada { big, sub } OU v3 { frase, counter? }. Ambas convivem (backward compat).
+export type IntroSpec = {
+  big?: string;
+  sub?: string;
+  frase?: string;
+  counter?: { from: number; to: number; prefix?: string };
+};
+
+// intro v3 = tem `frase`. Só então usamos a DynamicIntro / INTRO_FRAMES_V3.
+export const isV3Intro = (intro?: IntroSpec | null): boolean => !!intro && typeof intro.frase === 'string' && intro.frase.length > 0;
+
+// Frames da abertura conforme o tipo de intro (v3 ~4s, legada ~1,5s, nenhuma 0).
+export const introFramesFor = (script: ShortScript): number =>
+  !script.intro ? 0 : isV3Intro(script.intro) ? INTRO_FRAMES_V3 : INTRO_FRAMES;
 
 export type ShortScript = {
   slug: string;
   term: string;
   keyword: string;
   nextVideoTitle?: string;
-  intro?: { big: string; sub: string };
+  intro?: IntroSpec;
   scenes: Array<{
     id?: number;
     role: string;
     narration: string;
     onScreenText?: string;
-    visual: { type: string; note?: string };
+    cue?: string;
+    visual?: { type: string; note?: string };
+    shots?: Shot[];
     durationSec: number;
   }>;
 };
@@ -104,7 +139,7 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
     }
   }
 
-  const introFrames = script.intro ? INTRO_FRAMES : 0;
+  const introFrames = introFramesFor(script);
 
   return (
     <AbsoluteFill>
@@ -112,8 +147,12 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
       <BackgroundMusic />
       <Watermark />
       {script.intro && (
-        <Sequence durationInFrames={INTRO_FRAMES}>
-          <ShockIntro big={script.intro.big} sub={script.intro.sub} />
+        <Sequence durationInFrames={introFrames}>
+          {isV3Intro(script.intro) ? (
+            <DynamicIntro frase={script.intro.frase || ''} counter={script.intro.counter} frames={introFrames} />
+          ) : (
+            <ShockIntro big={script.intro.big || ''} sub={script.intro.sub || ''} />
+          )}
         </Sequence>
       )}
       <Sequence from={introFrames}>

@@ -20,6 +20,40 @@ const SFX: Record<IconKey, string> = {
 
 const SFX_VOLUME = 0.5;
 
+// ─────────────────────────────────────────────────────────────────────────────
+// SFX de NÍVEL DE SHOT (contract v3): o campo `sfx` do shot dispara um som no
+// frame inicial do shot. Nomes do contrato → arquivo em public/sfx/.
+// 'avalanche' (rumble) e 'slide' (apito descendo cômico) foram adicionados.
+// Guarda: se o arquivo do som não existir (download falhou), cai num som que
+// existe (fallback), sem quebrar o render (evita staticFile 404).
+// ─────────────────────────────────────────────────────────────────────────────
+export type ShotSfxName = 'boom' | 'whoosh' | 'coin' | 'alert' | 'avalanche' | 'slide';
+
+// basenames presentes em public/sfx/ (sem extensão).
+const AVAILABLE_SFX = new Set(['boom', 'money', 'coins', 'growth', 'clock', 'card', 'warning', 'avalanche', 'slide']);
+
+// nome do contrato → basename preferido.
+const SHOT_SFX: Record<ShotSfxName, string> = {
+  boom: 'boom',
+  whoosh: 'growth',
+  coin: 'money',
+  alert: 'warning',
+  avalanche: 'avalanche',
+  slide: 'slide',
+};
+
+// fallback caso o basename preferido não exista em public/sfx/.
+const SHOT_SFX_FALLBACK: Record<ShotSfxName, string> = {
+  boom: 'boom', whoosh: 'growth', coin: 'coins', alert: 'warning', avalanche: 'warning', slide: 'growth',
+};
+
+export function resolveShotSfx(name: string): string {
+  const key = (name in SHOT_SFX ? name : 'boom') as ShotSfxName;
+  const preferred = SHOT_SFX[key];
+  const base = AVAILABLE_SFX.has(preferred) ? preferred : SHOT_SFX_FALLBACK[key];
+  return `sfx/${base}.ogg`;
+}
+
 export const SceneSfx: React.FC<{
   narration: string;
   totalFrames: number;

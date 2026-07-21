@@ -1,9 +1,13 @@
-import { AbsoluteFill, Audio, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
+import { AbsoluteFill, Audio, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig, Easing, Sequence } from 'remotion';
 import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 import { FinMooviIcon } from './icon';
 import { KaraokeCaption } from './captions';
-import { IconBurst } from './icons-fx';
-import { SceneSfx } from './audio/sfx';
+import { IconBurst, SHOT_ICONS, ShotIconKey } from './icons-fx';
+import { SceneSfx, resolveShotSfx } from './audio/sfx';
+import type { Shot } from './Short';
+
+// Formatação pt-BR de números (contadores): 3200000 → "3.200.000".
+const nfBR = new Intl.NumberFormat('pt-BR');
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Fundo vivo: gradiente escuro + manchas de luz que respiram + partículas subindo
@@ -110,6 +114,141 @@ export const ShockIntro: React.FC<{ big: string; sub: string }> = ({ big, sub })
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
+// ABERTURA DINÂMICA v3 — frase com tipografia GIGANTE nas palavras de ênfase
+// (marcadas com *asterisco*), ícones de curiosidade (interrogação + mind-blown)
+// flutuando, e então um CONTADOR que sobe de `from` até `to` com a FONTE CRESCENDO
+// junto do valor (aceleração eased), terminando num soco/flash. ~4s, algo mudando
+// a cada ~1,5s, com boom + whoosh.
+// ─────────────────────────────────────────────────────────────────────────────
+type FraseToken = { text: string; emph: boolean };
+function parseFrase(frase: string): FraseToken[] {
+  const out: FraseToken[] = [];
+  const re = /\*([^*]+)\*|(\S+)/g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(frase))) {
+    if (m[1] != null) {
+      // grupo de ênfase: quebra em PALAVRAS (cada uma gigante) p/ poder quebrar
+      // linha e nunca estourar a largura da tela num único span.
+      for (const w of m[1].trim().split(/\s+/).filter(Boolean)) out.push({ text: w, emph: true });
+    } else {
+      out.push({ text: m[2], emph: false });
+    }
+  }
+  return out;
+}
+
+export const DynamicIntro: React.FC<{
+  frase: string;
+  counter?: { from: number; to: number; prefix?: string };
+  frames: number;
+}> = ({ frase, counter, frames }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const tokens = parseFrase(frase);
+
+  // Fase A: frase + ícones de curiosidade. Fase B (se houver contador): contador crescente.
+  const counterStart = counter ? Math.round(frames * 0.46) : frames + 1; // ~2,2s
+  const hasCounter = !!counter && frame >= counterStart - 8;
+
+  // slam inicial (boom) + flash de entrada e flash final (soco do contador).
+  const slamFlash = interpolate(frame, [0, 2, 12], [0.9, 0.5, 0], { extrapolateRight: 'clamp' });
+  const endFlash = counter ? interpolate(frame, [frames - 8, frames - 4, frames], [0, 0.6, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 0;
+
+  // A frase sobe e diminui um pouco quando o contador entra (dá lugar ao número).
+  const shift = counter
+    ? interpolate(frame, [counterStart - 8, counterStart + 8], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
+    : 0;
+  const fraseScale = interpolate(shift, [0, 1], [1, 0.72]);
+  const fraseY = interpolate(shift, [0, 1], [0, -260]);
+
+  // Contador: valor sobe de from→to com aceleração; a FONTE cresce junto do valor.
+  let counterEl: React.ReactNode = null;
+  if (counter) {
+    const cl = frame - counterStart;
+    const p = interpolate(cl, [0, frames - counterStart - 6], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.in(Easing.cubic) });
+    const val = Math.round(counter.from + (counter.to - counter.from) * p);
+    const size = interpolate(p, [0, 1], [96, 210]);
+    const punch = interpolate(frame, [frames - 10, frames - 4, frames], [1, 1.12, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+    const glow = 30 + Math.sin(frame / 5) * 14;
+    const appear = spring({ frame: cl, fps, config: { damping: 13, mass: 0.5 } });
+    counterEl = (
+      <div style={{
+        opacity: interpolate(appear, [0, 1], [0, 1]),
+        transform: `scale(${interpolate(appear, [0, 1], [0.6, 1]) * punch})`,
+        ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: size, lineHeight: 1.02,
+        filter: `drop-shadow(0 0 ${glow}px rgba(139,92,246,0.55))`, textAlign: 'center',
+      }}>
+        {counter.prefix || ''}{nfBR.format(val)}
+      </div>
+    );
+  }
+
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: 40 }}>
+      <Audio src={staticFile('sfx/boom.ogg')} volume={0.9} />
+      {counter && (
+        <Sequence from={counterStart - 6} durationInFrames={Math.round(fps * 1.5)}>
+          <Audio src={staticFile(resolveShotSfx('whoosh'))} volume={0.55} />
+        </Sequence>
+      )}
+
+      {/* ícones de curiosidade flutuando (somem quando o contador entra) */}
+      <CuriosityIcon which="question" x={110} y={430} delay={8} fadeAt={counterStart - 4} />
+      <CuriosityIcon which="mind" x={760} y={330} delay={16} fadeAt={counterStart - 4} />
+
+      {/* frase com ênfase */}
+      <div style={{
+        display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'baseline',
+        gap: '10px 22px', width: 940, maxWidth: '92%', textAlign: 'center',
+        transform: `translateY(${fraseY}px) scale(${fraseScale})`,
+      }}>
+        {tokens.map((tk, i) => {
+          const s = spring({ frame: frame - i * 2, fps, config: { damping: 14, mass: 0.5 } });
+          const sc = tk.emph ? interpolate(s, [0, 1], [1.35, 1]) : interpolate(s, [0, 1], [0.75, 1]);
+          const y = interpolate(s, [0, 1], [26, 0]);
+          return (
+            <span key={i} style={{
+              display: 'inline-block', transform: `scale(${sc}) translateY(${y}px)`,
+              fontFamily: DISPLAY, fontWeight: 900, lineHeight: 1.05,
+              fontSize: tk.emph ? 90 : 50,
+              ...(tk.emph ? gradientText : { color: BRAND.text }),
+              filter: tk.emph ? 'drop-shadow(0 0 34px rgba(139,92,246,0.5))' : undefined,
+            }}>{tk.text}</span>
+          );
+        })}
+      </div>
+
+      {hasCounter && counterEl}
+
+      <AbsoluteFill style={{ background: '#fff', opacity: Math.max(slamFlash, endFlash), pointerEvents: 'none' }} />
+    </AbsoluteFill>
+  );
+};
+
+// Ícone de curiosidade que POPa e flutua num canto da intro.
+const CuriosityIcon: React.FC<{ which: ShotIconKey; x: number; y: number; delay: number; fadeAt?: number }> = ({ which, x, y, delay, fadeAt }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const pop = spring({ frame: frame - delay, fps, config: { damping: 11, mass: 0.4 } });
+  const scale = interpolate(pop, [0, 1], [0, 1.15]);
+  const float = Math.sin((frame - delay) / 7) * 12;
+  const rot = Math.sin((frame - delay) / 11) * 8;
+  const inOpacity = interpolate(pop, [0, 0.4], [0, 1], { extrapolateRight: 'clamp' });
+  const outOpacity = fadeAt != null ? interpolate(frame, [fadeAt, fadeAt + 10], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 1;
+  const Comp = SHOT_ICONS[which];
+  return (
+    <div style={{
+      position: 'absolute', left: x, top: y,
+      transform: `translateY(${float}px) scale(${scale}) rotate(${rot}deg)`,
+      opacity: Math.min(inOpacity, outOpacity),
+      filter: 'drop-shadow(0 8px 30px rgba(34,211,238,0.45))',
+    }}>
+      <Comp />
+    </div>
+  );
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
 // Casca de cena: Ken Burns contínuo no miolo (o visual central nunca fica vazio).
 // ─────────────────────────────────────────────────────────────────────────────
 type Scene = {
@@ -117,7 +256,8 @@ type Scene = {
   narration: string;
   onScreenText?: string;
   cue?: string;
-  visual: { type: string; note?: string };
+  visual?: { type: string; note?: string };
+  shots?: Shot[];
   durationSec: number;
 };
 
@@ -182,6 +322,7 @@ export const SceneAudioLayer: React.FC<{ scene: Scene; timing?: SceneTiming | nu
     <AbsoluteFill>
       {timing?.audioFile && <Audio src={staticFile(timing.audioFile)} />}
       <SceneSfx narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
+      {scene.shots && scene.shots.length ? <ShotSfxTrack scene={scene} timing={timing} totalFrames={totalFrames} /> : null}
       <IconBurst narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
       <KaraokeCaption narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
     </AbsoluteFill>
@@ -410,6 +551,259 @@ const SceneOutro: React.FC<{ scene: Scene; nextTitle?: string }> = ({ scene, nex
   );
 };
 
+// ═════════════════════════════════════════════════════════════════════════════
+// MOTOR DE SHOTS (contract v3) — quando a cena traz `shots`, o miolo troca a cada
+// palavra-âncora: cada shot COMEÇA no frame REAL da sua âncora (timing.json), com
+// corte snappy (spring pop + leve slide). O 1º shot abre em 0 (miolo nunca vazio);
+// os seguintes entram na sua âncora (sincronia semântica: "500" aparece quando a
+// voz diz "500"). Sem timing.json → distribui as âncoras pela posição da palavra
+// na narração. Preserva a cena de visual único (backward compat) intacta.
+// ═════════════════════════════════════════════════════════════════════════════
+const SHOT_MIN_GAP = 5; // frames mínimos entre shots (corte perceptível)
+
+function findAnchorIndex(normWords: string[], anchor: string, from: number): number {
+  const a = normSync(anchor || '');
+  if (!a) return -1;
+  for (let j = Math.max(0, from); j < normWords.length; j++) {
+    const wn = normWords[j];
+    if (wn === a || (a.length >= 2 && wn.includes(a)) || (wn.length >= 2 && a.includes(wn))) return j;
+  }
+  return -1;
+}
+
+// Frame inicial (local da cena) de cada shot.
+function shotStartFrames(scene: Scene, timing: SceneTiming | null | undefined, fps: number, totalFrames: number): number[] {
+  const shots = scene.shots || [];
+  const n = shots.length;
+  if (!n) return [];
+  const words = timing?.words;
+  const raw: number[] = new Array(n).fill(-1);
+
+  if (words && words.length) {
+    const normWords = words.map((w) => normSync(w.word));
+    let searchFrom = 0;
+    for (let i = 0; i < n; i++) {
+      const idx = findAnchorIndex(normWords, shots[i].anchor, searchFrom);
+      if (idx >= 0) { raw[i] = Math.round(words[idx].start * fps); searchFrom = idx + 1; }
+    }
+  } else {
+    // Fallback sem timing: proporcional à posição da palavra na narração.
+    const nw = (scene.narration || '').trim().split(/\s+/).filter(Boolean).map(normSync);
+    let searchFrom = 0;
+    for (let i = 0; i < n; i++) {
+      const idx = findAnchorIndex(nw, shots[i].anchor, searchFrom);
+      if (idx >= 0) { raw[i] = Math.round((idx / Math.max(1, nw.length)) * totalFrames); searchFrom = idx + 1; }
+    }
+  }
+
+  // Âncoras não encontradas → palpite proporcional pelo índice do shot.
+  for (let i = 0; i < n; i++) if (raw[i] < 0) raw[i] = Math.round((i / n) * totalFrames);
+
+  // 1º shot abre a cena (miolo nunca vazio); depois: estritamente crescente c/ gap.
+  const out: number[] = [];
+  for (let i = 0; i < n; i++) {
+    let v = i === 0 ? 0 : Math.max(raw[i], out[i - 1] + SHOT_MIN_GAP);
+    v = Math.min(v, Math.max(0, totalFrames - 1));
+    if (i > 0) v = Math.max(v, out[i - 1] + SHOT_MIN_GAP);
+    out.push(v);
+  }
+  return out;
+}
+
+// Cena-pseudo para reaproveitar SceneStatement/SceneFormula/SceneChart dentro do shot.
+const pseudoScene = (base: Scene, text?: string): Scene => ({
+  role: base.role, narration: base.narration, visual: base.visual,
+  durationSec: base.durationSec, onScreenText: text,
+});
+
+// ── Visuais de shot (vida = duração do shot) ─────────────────────────────────
+const ShotNumber: React.FC<{ text?: string }> = ({ text }) => {
+  const frame = useCurrentFrame();
+  const glow = 24 + Math.sin(frame / 7) * 12;
+  return (
+    <div style={{ ...gradientText, fontFamily: DISPLAY, fontSize: 148, fontWeight: 900, lineHeight: 1.05, filter: `drop-shadow(0 0 ${glow}px rgba(139,92,246,0.55))` }}>
+      {text}
+    </div>
+  );
+};
+
+const ShotCounter: React.FC<{ from?: number; to?: number; prefix?: string; life: number }> = ({ from = 0, to = 0, prefix = '', life }) => {
+  const frame = useCurrentFrame();
+  const p = interpolate(frame, [0, Math.max(1, life - 4)], [0, 1], { extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const val = Math.round(from + (to - from) * p);
+  const size = interpolate(p, [0, 1], [112, 168]);
+  const glow = 24 + Math.sin(frame / 6) * 12;
+  return (
+    <div style={{ ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: size, lineHeight: 1.05, filter: `drop-shadow(0 0 ${glow}px rgba(139,92,246,0.5))` }}>
+      {prefix}{nfBR.format(val)}
+    </div>
+  );
+};
+
+const ShotIcon: React.FC<{ icon?: ShotIconKey }> = ({ icon }) => {
+  const frame = useCurrentFrame();
+  const float = Math.sin(frame / 8) * 12;
+  const Comp = SHOT_ICONS[icon || 'money'] || SHOT_ICONS.money;
+  return (
+    <div style={{ transform: `translateY(${float}px) scale(2.2)`, filter: 'drop-shadow(0 12px 44px rgba(139,92,246,0.5))' }}>
+      <Comp />
+    </div>
+  );
+};
+
+// ── Metáforas animadas (SVG nativo, literais) ────────────────────────────────
+// bola-neve: bola desce a ladeira crescendo e derruba blocos no fim.
+const MetaSnowball: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 900, H = 520;
+  const p = interpolate(frame, [0, life], [0, 1], { extrapolateRight: 'clamp', easing: Easing.in(Easing.quad) });
+  const x0 = 110, x1 = 720, y0 = 130, y1 = 380;
+  const cx = x0 + (x1 - x0) * p, cy = y0 + (y1 - y0) * p;
+  const r = 20 + p * 74;
+  const blocks = [{ bx: 748, by: 392 }, { bx: 792, by: 392 }, { bx: 770, by: 356 }];
+  return (
+    <svg width={W} height={H}>
+      <line x1={60} y1={110} x2={820} y2={400} stroke={BRAND.sub} strokeWidth={10} opacity={0.5} strokeLinecap="round" />
+      {blocks.map((b, i) => {
+        const kp = interpolate(frame, [life * 0.78, life], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+        const tx = kp * (46 + i * 22), ty = -kp * (110 + i * 20), rr = kp * (200 + i * 90);
+        return <rect key={i} x={b.bx} y={b.by} width={30} height={30} rx={6} fill={i % 2 ? BRAND.violet : BRAND.magenta} transform={`translate(${tx} ${ty}) rotate(${rr} ${b.bx + 15} ${b.by + 15})`} />;
+      })}
+      <circle cx={cx} cy={cy} r={r} fill="#eaf6ff" stroke={BRAND.cyan} strokeWidth={4} />
+      <circle cx={cx - r * 0.3} cy={cy - r * 0.32} r={r * 0.26} fill="#ffffff" opacity={0.85} />
+      <circle cx={cx + r * 0.25} cy={cy + r * 0.2} r={r * 0.14} fill={BRAND.cyan} opacity={0.5} />
+    </svg>
+  );
+};
+
+// avalanche: rajada de partículas de neve caindo do topo + tremor de tela.
+const MetaAvalanche: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 900, H = 560;
+  const shake = Math.sin(frame * 2.3) * interpolate(frame, [0, life], [18, 3], { extrapolateRight: 'clamp' });
+  const flakes = new Array(64).fill(0);
+  return (
+    <div style={{ transform: `translateX(${shake}px)` }}>
+      <svg width={W} height={H}>
+        {flakes.map((_, i) => {
+          const x = random('ax' + i) * W;
+          const speed = 0.6 + random('as' + i) * 1.7;
+          const size = 4 + random('az' + i) * 11;
+          const y = (((frame * speed * 15) + random('ao' + i) * H) % (H + 80)) - 40;
+          const op = 0.45 + 0.5 * random('aq' + i);
+          return <circle key={i} cx={x} cy={y} r={size} fill={i % 3 ? '#eaf6ff' : BRAND.cyan} opacity={op} />;
+        })}
+      </svg>
+    </div>
+  );
+};
+
+// escorregão: figura escorrega (casca de banana), pernas pro alto, cai e quica.
+const MetaSlip: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const tilt = interpolate(frame, [0, life * 0.25, life * 0.5], [0, -14, -98], { extrapolateRight: 'clamp' });
+  const fallY = interpolate(frame, [life * 0.35, life * 0.62], [0, 150], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const bounce = frame > life * 0.62 ? Math.abs(Math.sin((frame - life * 0.62) / 5)) * Math.max(0, 34 - (frame - life * 0.62)) : 0;
+  return (
+    <svg width={700} height={560}>
+      <defs>
+        <linearGradient id="slip-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      <line x1={80} y1={452} x2={620} y2={452} stroke={BRAND.sub} strokeWidth={8} opacity={0.4} strokeLinecap="round" />
+      <path d="M300 442 q34 -22 66 -4 q-12 18 -38 15 q-20 -3 -28 -11 Z" fill={BRAND.yellow} stroke="#b59b00" strokeWidth={3} />
+      <g transform={`translate(0 ${fallY - bounce}) rotate(${tilt} 360 448)`}>
+        <circle cx={360} cy={252} r={34} fill="none" stroke="url(#slip-g)" strokeWidth={8} />
+        <line x1={360} y1={286} x2={360} y2={382} stroke="url(#slip-g)" strokeWidth={11} strokeLinecap="round" />
+        <line x1={360} y1={312} x2={306} y2={278} stroke="url(#slip-g)" strokeWidth={9} strokeLinecap="round" />
+        <line x1={360} y1={312} x2={420} y2={286} stroke="url(#slip-g)" strokeWidth={9} strokeLinecap="round" />
+        <line x1={360} y1={382} x2={316} y2={430} stroke="url(#slip-g)" strokeWidth={10} strokeLinecap="round" />
+        <line x1={360} y1={382} x2={404} y2={430} stroke="url(#slip-g)" strokeWidth={10} strokeLinecap="round" />
+      </g>
+    </svg>
+  );
+};
+
+const ShotMetaphor: React.FC<{ metaphor?: string; life: number }> = ({ metaphor, life }) => {
+  if (metaphor === 'avalanche') return <MetaAvalanche life={life} />;
+  if (metaphor === 'escorregao') return <MetaSlip life={life} />;
+  return <MetaSnowball life={life} />; // 'bola-neve' (default)
+};
+
+// Um shot: entra com pop+slide e mostra seu visual pela sua vida.
+const ShotView: React.FC<{ shot: Shot; life: number; base: Scene; revealFrame: number; durationFrames: number }> = ({ shot, life, base, revealFrame, durationFrames }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const pop = spring({ frame, fps, config: { damping: 12, mass: 0.5 } });
+  const scale = interpolate(pop, [0, 1], [0.7, 1]);
+  const tx = interpolate(pop, [0, 1], [40, 0]);
+  const kb = interpolate(frame, [0, life], [1, 1.05], { extrapolateRight: 'clamp' });
+  const v = shot.visual;
+  const inner = (() => {
+    switch (v.type) {
+      case 'number': return <ShotNumber text={v.text ?? base.onScreenText} />;
+      case 'counter': return <ShotCounter from={v.from} to={v.to} prefix={v.prefix} life={life} />;
+      case 'chart': return <SceneChart scene={pseudoScene(base, v.text ?? base.onScreenText)} revealFrame={Math.min(revealFrame, 4)} durationFrames={life} />;
+      case 'icon': return <ShotIcon icon={v.icon} />;
+      case 'metaphor': return <ShotMetaphor metaphor={v.metaphor} life={life} />;
+      case 'formula': return <SceneFormula scene={pseudoScene(base, v.text ?? base.onScreenText)} />;
+      case 'list':
+      case 'statement':
+      default: return <SceneStatement scene={pseudoScene(base, v.text ?? base.onScreenText)} />;
+    }
+  })();
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: 380, paddingLeft: 60, paddingRight: 60 }}>
+      <div style={{ transform: `translateX(${tx}px) scale(${scale * kb})`, textAlign: 'center' }}>
+        {inner}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// Sequência de shots da cena — cada um no seu frame-âncora, contíguos (sem vazio).
+const SceneShots: React.FC<{ scene: Scene; timing?: SceneTiming | null; durationFrames: number }> = ({ scene, timing, durationFrames }) => {
+  const { fps } = useVideoConfig();
+  const shots = scene.shots || [];
+  const starts = shotStartFrames(scene, timing, fps, durationFrames);
+  return (
+    <AbsoluteFill>
+      {shots.map((shot, i) => {
+        const start = starts[i];
+        const end = i < shots.length - 1 ? starts[i + 1] : durationFrames;
+        const life = Math.max(1, end - start);
+        return (
+          <Sequence key={i} from={start} durationInFrames={life}>
+            <ShotView shot={shot} life={life} base={scene} revealFrame={0} durationFrames={life} />
+          </Sequence>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
+// Trilho de SFX dos shots (no trilho MESTRE de áudio): cada shot com `sfx` dispara
+// seu som no frame de início do shot (volume abafado sob a narração).
+const SHOT_SFX_VOLUME = 0.45;
+const ShotSfxTrack: React.FC<{ scene: Scene; timing?: SceneTiming | null; totalFrames: number }> = ({ scene, timing, totalFrames }) => {
+  const { fps } = useVideoConfig();
+  const shots = scene.shots || [];
+  const starts = shotStartFrames(scene, timing, fps, totalFrames);
+  return (
+    <>
+      {shots.map((shot, i) =>
+        shot.sfx ? (
+          <Sequence key={i} from={starts[i]} durationInFrames={Math.round(fps * 2)}>
+            <Audio src={staticFile(resolveShotSfx(shot.sfx))} volume={SHOT_SFX_VOLUME} />
+          </Sequence>
+        ) : null,
+      )}
+    </>
+  );
+};
+
 // Dispatcher — o role tem prioridade (cta/outro têm cena própria); senão usa visual.type.
 export const SceneRenderer: React.FC<{ scene: Scene; nextTitle?: string; timing?: SceneTiming | null }> = ({ scene, nextTitle, timing }) => {
   const { fps } = useVideoConfig();
@@ -417,10 +811,14 @@ export const SceneRenderer: React.FC<{ scene: Scene; nextTitle?: string; timing?
   // SceneChart pra sincronizar o DESENHO da curva com a fala, não só o soco.
   const revealFrame = revealFrameFor(scene, timing, fps);
   const durationFrames = Math.max(1, Math.round((timing?.durationSec ?? scene.durationSec) * fps));
+  // v3: se a cena traz `shots`, o motor de shots substitui o visual único central.
+  if (scene.shots && scene.shots.length) {
+    return <SceneShots scene={scene} timing={timing} durationFrames={durationFrames} />;
+  }
   const inner = (() => {
     if (scene.role === 'cta') return <SceneCta scene={scene} />;
     if (scene.role === 'outro') return <SceneOutro scene={scene} nextTitle={nextTitle} />;
-    switch (scene.visual.type) {
+    switch (scene.visual?.type) {
       case 'number': return <SceneNumber scene={scene} />;
       case 'chart': return <SceneChart scene={scene} revealFrame={revealFrame} durationFrames={durationFrames} />;
       case 'formula': return <SceneFormula scene={scene} />;
