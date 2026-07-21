@@ -91,6 +91,21 @@ REGRA C — METÁFORAS LITERAIS (o dono AMA): quando a narração usar uma metá
   · "é aqui que a maioria escorrega" → metaphor "escorregao", sfx "slide" (pode ser CÔMICO — o dono curte o humor no escorregão).
   PREFIRA usar na narração metáforas que existem no catálogo (${METAPHORS.join(', ')}); se usar outra, represente com um shot "icon" coerente.
 
+REGRA D — SFX: TEMPERO, NÃO METRÔNOMO (feedback do dono: "tem muito som e ícone repetido, isso cansa"). Regras de variedade sonora:
+  · SFX em NO MÁXIMO ~metade dos shots do vídeo inteiro — a maioria dos shots NÃO precisa de som, silêncio também é ritmo.
+  · NUNCA repita o mesmo sfx em dois shots consecutivos (contando só entre os shots que TÊM som).
+  · Ao longo do vídeo inteiro, use pelo menos 3-4 sons DIFERENTES do catálogo (${SFX.join(', ')}).
+  · Para o "som do dinheiro" (contador subindo, valor em reais aparecendo), PREFIRA "kaching" (caixa registradora) — "coin" fica como alternativa leve, não os dois toda hora.
+  · Em shots "statement"/"list"/"formula" (o texto surge digitado/revelado), combine com "typewriter" ou "keyboard" em vez de um sfx de dinheiro.
+
+REGRA E — ÍCONES: NÃO REPITA (catálogo agora tem ${ICONS.length}: ${ICONS.join(', ')}). Cada ícone usado no vídeo aparece no MÁXIMO 1 vez — escolha o mais específico pro momento (ex.: "piggy" poupança, "bank" banco, "target" meta, "trophy" conquista, "bulb" ideia/insight, "hourglass" tempo passando, "wallet" carteira/gasto, "fire" urgência, "chart-down" queda/perda, "shield" proteção).
+
+════════ UNIDADE NA PRIMEIRA MENÇÃO (regra do dono) ════════
+Toda unidade (anos, %, R$, meses…) é FALADA por extenso na PRIMEIRA menção; nas menções seguintes, se o contexto já deixou claro do que se trata, pode falar só o número — sem repetir a unidade.
+  ✓ CERTO: "quem começa aos 25 anos junta quase o triplo de quem começou aos 35." (a unidade "anos" foi dita na 1ª vez; na 2ª, "aos 35" já é claro pelo contexto)
+  ✗ ERRADO: "quem começa aos 25 junta quase o triplo de quem começou aos 35." (a unidade "anos" nunca foi dita)
+  ✗ ERRADO: "quem começa aos 25 anos junta quase o triplo de quem começou aos 35 anos." (repetição desnecessária da unidade)
+
 ════════ FALA FLUIDA — PONTUAÇÃO = RESPIRAÇÃO (regra do dono) ════════
 A pontuação existe SÓ para comandar o respiro da voz (TTS). Vírgula/ponto/reticências = a voz respira ali. Vírgula gramatical onde um falante NÃO respiraria é PROIBIDA. TESTE FINAL: leia em voz alta — se o respiro cair no lugar errado, reescreva.
   ✗ ERRADO: "Dez aninhos de atraso, custam uma fortuna." (o TTS respira depois de "atraso" — fica horrível)

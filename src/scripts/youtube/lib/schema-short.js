@@ -52,10 +52,13 @@ const LEGACY_VISUAL_TYPES = ['title', 'number', 'chart', 'list', 'formula', 'sta
 export const METAPHORS = ['bola-neve', 'avalanche', 'escorregao'];
 
 // Ícones disponíveis para shots do tipo 'icon'
-export const ICONS = ['money', 'coins', 'growth', 'clock', 'card', 'warning', 'question', 'mind'];
+export const ICONS = [
+  'money', 'coins', 'growth', 'clock', 'card', 'warning', 'question', 'mind',
+  'piggy', 'bank', 'target', 'trophy', 'bulb', 'hourglass', 'wallet', 'fire', 'chart-down', 'shield',
+];
 
 // Efeitos sonoros do catálogo (sfx do shot)
-export const SFX = ['boom', 'whoosh', 'coin', 'alert', 'avalanche', 'slide'];
+export const SFX = ['boom', 'whoosh', 'coin', 'alert', 'avalanche', 'slide', 'kaching', 'typewriter', 'keyboard', 'pop'];
 
 // Limites de shots por cena (movimento constante, sem poluir)
 export const MIN_SHOTS = 1;
@@ -179,6 +182,7 @@ export function validateShortScript(script) {
 
   // --- Validação por cena (+ coreografia de shots) ---
   let total = 0;
+  const allShotsInOrder = [];
   scenes.forEach((s, i) => {
     const tag = `cena ${i + 1} (${s.role || '?'})`;
     if (!SHORT_ROLES.includes(s.role)) errors.push(`${tag}: role inválido`);
@@ -191,6 +195,7 @@ export function validateShortScript(script) {
     // --- SHOTS (coreografia por palavra) ---
     const { shots, legacy } = resolveShots(s);
     if (legacy) warnings.push(`${tag}: formato legado (visual+cue) — normalizado para 1 shot`);
+    allShotsInOrder.push(...shots);
 
     if (shots.length < MIN_SHOTS) {
       errors.push(`${tag}: sem shots (esperado ${MIN_SHOTS}–${MAX_SHOTS})`);
@@ -242,6 +247,29 @@ export function validateShortScript(script) {
         errors.push(`${stag}: sfx "${shot.sfx}" fora do catálogo (${SFX.join('/')})`);
       }
     });
+  });
+
+  // --- Variedade de som/ícone (feedback do dono pós-v3 — SEMPRE aviso, nunca erro) ---
+  const shotsWithSfx = allShotsInOrder.filter(sh => sh && sh.sfx);
+  for (let i = 1; i < shotsWithSfx.length; i++) {
+    if (shotsWithSfx[i].sfx === shotsWithSfx[i - 1].sfx) {
+      warnings.push(`sfx "${shotsWithSfx[i].sfx}" repetido em dois shots consecutivos (som é tempero, intercale)`);
+    }
+  }
+  if (allShotsInOrder.length > 0) {
+    const sfxRatio = shotsWithSfx.length / allShotsInOrder.length;
+    if (sfxRatio > 0.6) {
+      warnings.push(`${Math.round(sfxRatio * 100)}% dos shots têm sfx (ideal ≤ ~metade — nem todo shot precisa de som)`);
+    }
+  }
+  const iconCounts = {};
+  allShotsInOrder.forEach(sh => {
+    if (sh && sh.visual && sh.visual.type === 'icon' && sh.visual.icon) {
+      iconCounts[sh.visual.icon] = (iconCounts[sh.visual.icon] || 0) + 1;
+    }
+  });
+  Object.entries(iconCounts).forEach(([icon, count]) => {
+    if (count > 1) warnings.push(`ícone "${icon}" repetido ${count}× no vídeo (varie — há ${ICONS.length} ícones no catálogo)`);
   });
 
   // --- Duração total ---

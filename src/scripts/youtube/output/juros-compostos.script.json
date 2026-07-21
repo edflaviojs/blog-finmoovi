@@ -16,7 +16,7 @@
       "durationSec": 5,
       "shots": [
         { "anchor": "compostos", "visual": { "type": "statement", "text": "JUROS COMPOSTOS", "note": "termo crava no centro com brilho ciano→magenta" }, "sfx": "boom" },
-        { "anchor": "número", "visual": { "type": "number", "text": "R$ 500", "note": "R$ 500 surge gigante sozinho na tela" }, "sfx": "whoosh" }
+        { "anchor": "número", "visual": { "type": "number", "text": "R$ 500", "note": "R$ 500 surge gigante sozinho na tela" } }
       ]
     },
     {
@@ -25,7 +25,7 @@
       "narration": "Esses 500 reais, guardados todo mês, viram 3,2 milhões. E não é sorte não. É juro rendendo em cima de juro, mês após mês.",
       "durationSec": 10,
       "shots": [
-        { "anchor": "reais", "visual": { "type": "number", "text": "R$ 500 / mês", "note": "500 com ícone de calendário, pulsando" }, "sfx": "coin" },
+        { "anchor": "reais", "visual": { "type": "number", "text": "R$ 500 / mês", "note": "500 com ícone de calendário, pulsando" }, "sfx": "kaching" },
         { "anchor": "milhões", "visual": { "type": "counter", "from": 500, "to": 3200000, "prefix": "R$", "note": "contador dispara de 500 até 3,2 mi" }, "sfx": "whoosh" },
         { "anchor": "sorte", "visual": { "type": "icon", "icon": "question", "note": "interrogação; a palavra 'sorte' aparece riscada" } },
         { "anchor": "juro", "visual": { "type": "statement", "text": "juro sobre juro", "note": "moedas se empilham, uma sobre a outra" }, "sfx": "coin" }
@@ -37,7 +37,7 @@
       "narration": "Mas o segredo não é guardar muito. É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche.",
       "durationSec": 10,
       "shots": [
-        { "anchor": "tempo", "visual": { "type": "icon", "icon": "clock", "note": "relógio girando rápido" }, "sfx": "whoosh" },
+        { "anchor": "tempo", "visual": { "type": "icon", "icon": "clock", "note": "relógio girando rápido" } },
         { "anchor": "multiplicar", "visual": { "type": "statement", "text": "× sozinho", "note": "símbolo × se duplica na tela" } },
         { "anchor": "bola", "visual": { "type": "metaphor", "metaphor": "bola-neve", "note": "bolinha de neve começa a rolar na ladeira e cresce" }, "sfx": "whoosh" },
         { "anchor": "avalanche", "visual": { "type": "metaphor", "metaphor": "avalanche", "note": "a bola vira avalanche e derruba tudo pela frente" }, "sfx": "avalanche" }
@@ -46,12 +46,12 @@
     {
       "id": 4,
       "role": "beat",
-      "narration": "E é aqui que a maioria escorrega: quem começa aos 25 junta quase o triplo de quem começou aos 35. Dez aninhos de atraso custam uma fortuna. Porque dinheiro sem controle é dinheiro dos outros.",
+      "narration": "E é aqui que a maioria escorrega: quem começa aos 25 anos junta quase o triplo de quem começou aos 35. Dez aninhos de atraso custam uma fortuna. Porque dinheiro sem controle é dinheiro dos outros.",
       "durationSec": 11,
       "shots": [
         { "anchor": "escorrega", "visual": { "type": "metaphor", "metaphor": "escorregao", "note": "boneco escorrega numa casca de banana, cômico" }, "sfx": "slide" },
-        { "anchor": "25", "visual": { "type": "chart", "note": "barra da idade 25 sobe bem alta" }, "sfx": "boom" },
-        { "anchor": "triplo", "visual": { "type": "number", "text": "≈ 3× mais", "note": "selo 3× destaca a diferença" }, "sfx": "coin" },
+        { "anchor": "25", "visual": { "type": "chart", "note": "barra da idade 25 sobe bem alta" } },
+        { "anchor": "triplo", "visual": { "type": "number", "text": "≈ 3× mais", "note": "selo 3× destaca a diferença" } },
         { "anchor": "35", "visual": { "type": "chart", "note": "segunda barra, idade 35, bem menor ao lado" } },
         { "anchor": "controle", "visual": { "type": "statement", "text": "sem controle = dos outros", "note": "bordão do canal crava na tela" } }
       ]
@@ -62,9 +62,9 @@
       "narration": "Bora fazer essa conta com os seus números? A calculadora do FinMoovi é grátis, e o link tá logo aqui embaixo.",
       "durationSec": 7,
       "shots": [
-        { "anchor": "conta", "visual": { "type": "statement", "text": "a SUA conta", "note": "campos da calculadora surgem" } },
-        { "anchor": "calculadora", "visual": { "type": "statement", "text": "FinMoovi · grátis", "note": "UI da calculadora do FinMoovi na tela" }, "sfx": "whoosh" },
-        { "anchor": "embaixo", "visual": { "type": "statement", "text": "Link ↓", "note": "seta apontando pra descrição/baixo" }, "sfx": "slide" }
+        { "anchor": "conta", "visual": { "type": "statement", "text": "a SUA conta", "note": "campos da calculadora surgem, um a um" }, "sfx": "keyboard" },
+        { "anchor": "calculadora", "visual": { "type": "statement", "text": "FinMoovi · grátis", "note": "UI da calculadora do FinMoovi na tela" }, "sfx": "kaching" },
+        { "anchor": "embaixo", "visual": { "type": "statement", "text": "Link ↓", "note": "seta apontando pra descrição/baixo" } }
       ]
     },
     {
@@ -75,9 +75,9 @@
       "shots": [
         { "anchor": "crescer", "visual": { "type": "icon", "icon": "growth", "note": "seta verde subindo" } },
         { "anchor": "contra", "visual": { "type": "statement", "text": "CONTRA você", "note": "a seta vira e fica vermelha" }, "sfx": "alert" },
-        { "anchor": "cartão", "visual": { "type": "icon", "icon": "card", "note": "cartão de crédito surge" }, "sfx": "whoosh" },
-        { "anchor": "banco", "visual": { "type": "counter", "from": 100, "to": 9000, "prefix": "R$", "note": "juro corre, mas empilha do lado do banco" }, "sfx": "coin" },
-        { "anchor": "próximo", "visual": { "type": "statement", "text": "Dívida do cartão", "note": "card do próximo vídeo, open loop" }, "sfx": "boom" }
+        { "anchor": "cartão", "visual": { "type": "icon", "icon": "card", "note": "cartão de crédito surge" } },
+        { "anchor": "banco", "visual": { "type": "counter", "from": 100, "to": 9000, "prefix": "R$", "note": "juro corre, mas empilha do lado do banco" }, "sfx": "kaching" },
+        { "anchor": "próximo", "visual": { "type": "statement", "text": "Dívida do cartão", "note": "card do próximo vídeo, open loop" } }
       ]
     }
   ],
