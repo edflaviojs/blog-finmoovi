@@ -33,6 +33,12 @@
  * ≥1 'beat', 1 'cta' no PENÚLTIMO lugar, 1 'outro' no fim, duração 30–60s,
  * bordão presente 1×, shots 1–6/cena com âncoras que aparecem na narração e em
  * ordem de fala, tipos/ícones/metáforas/sfx do catálogo. Regras leves = aviso.
+ *
+ * CONTRATO v3.3 — SHOTS "app" (b-roll nativo do app FinMoovi, regra do dono
+ * 21/07: "em todos os shorts colocar ao menos 2 b-rolls do nosso app"):
+ * visual.type "app" exige "app" ∈ APP_SCREENS. ERRO se o vídeo tiver 0 shots
+ * "app"; AVISO se tiver só 1 (meta ≥2); AVISO se a cena "cta" não tiver
+ * nenhum shot "app".
  */
 
 // Bordão oficial do canal (PRD 3b — inserir 1× por vídeo)
@@ -43,7 +49,9 @@ export const SHORT_ROLES = ['hook', 'beat', 'cta', 'outro'];
 
 // Tipos de visual de um SHOT — MOTION GRAPHICS apenas (decisão do dono 20/07).
 // 'broll' (vídeo de estoque) fica FORA da F1 de propósito.
-export const VISUAL_TYPES = ['number', 'counter', 'chart', 'icon', 'metaphor', 'statement', 'formula', 'list'];
+// 'app' (v3.3): NÃO é vídeo de estoque — é a tela NATIVA do app FinMoovi
+// recriada (b-roll do produto). Exige o campo "app" ∈ APP_SCREENS.
+export const VISUAL_TYPES = ['number', 'counter', 'chart', 'icon', 'metaphor', 'statement', 'formula', 'list', 'app'];
 
 // Tipo legado 'title' (formato antigo) — mapeado para 'statement' na normalização.
 const LEGACY_VISUAL_TYPES = ['title', 'number', 'chart', 'list', 'formula', 'statement'];
@@ -56,6 +64,12 @@ export const METAPHORS = ['bola-neve', 'avalanche', 'escorregao', 'clique-link']
 export const ICONS = [
   'money', 'coins', 'growth', 'clock', 'card', 'warning', 'question', 'mind',
   'piggy', 'bank', 'target', 'trophy', 'bulb', 'hourglass', 'wallet', 'fire', 'chart-down', 'shield',
+];
+
+// Telas do app FinMoovi disponíveis para shots do tipo 'app' (v3.3 — b-roll
+// nativo do produto, regra do dono 21/07: ≥2 por vídeo, 1 sempre na CTA).
+export const APP_SCREENS = [
+  'dashboard', 'cartoes', 'fluxo', 'extrato', 'balanco', 'compras', 'smartcapture', 'calculadora',
 ];
 
 // Efeitos sonoros do catálogo (sfx do shot)
@@ -189,6 +203,7 @@ export function validateShortScript(script) {
   // --- Validação por cena (+ coreografia de shots) ---
   let total = 0;
   const allShotsInOrder = [];
+  let ctaSceneHasApp = false;
   scenes.forEach((s, i) => {
     const tag = `cena ${i + 1} (${s.role || '?'})`;
     if (!SHORT_ROLES.includes(s.role)) errors.push(`${tag}: role inválido`);
@@ -202,6 +217,9 @@ export function validateShortScript(script) {
     const { shots, legacy } = resolveShots(s);
     if (legacy) warnings.push(`${tag}: formato legado (visual+cue) — normalizado para 1 shot`);
     allShotsInOrder.push(...shots);
+    if (s.role === 'cta' && shots.some(sh => sh && sh.visual && sh.visual.type === 'app')) {
+      ctaSceneHasApp = true;
+    }
 
     if (shots.length < MIN_SHOTS) {
       errors.push(`${tag}: sem shots (esperado ${MIN_SHOTS}–${MAX_SHOTS})`);
@@ -236,6 +254,9 @@ export function validateShortScript(script) {
         }
         if (v.type === 'icon' && !ICONS.includes(v.icon)) {
           errors.push(`${stag}: ícone precisa de "icon" do catálogo (${ICONS.join('/')})`);
+        }
+        if (v.type === 'app' && !APP_SCREENS.includes(v.app)) {
+          errors.push(`${stag}: shot "app" precisa de "app" do catálogo (${APP_SCREENS.join('/')})`);
         }
         if (v.type === 'counter') {
           const from = asNumber(v.from);
@@ -302,6 +323,18 @@ export function validateShortScript(script) {
   Object.entries(iconCounts).forEach(([icon, count]) => {
     if (count > 1) warnings.push(`ícone "${icon}" repetido ${count}× no vídeo (varie — há ${ICONS.length} ícones no catálogo)`);
   });
+
+  // --- Shots "app" (regra do dono 21/07: "em todos os shorts colocar ao menos
+  // 2 b-rolls do nosso app") ---
+  const appShotsCount = allShotsInOrder.filter(sh => sh && sh.visual && sh.visual.type === 'app').length;
+  if (appShotsCount === 0) {
+    errors.push('nenhum shot "app" no vídeo (regra do dono: todo Short precisa de ≥2 b-rolls nativos do app FinMoovi)');
+  } else if (appShotsCount === 1) {
+    warnings.push('apenas 1 shot "app" no vídeo (meta: ≥2 b-rolls do app por vídeo)');
+  }
+  if (!ctaSceneHasApp) {
+    warnings.push('a cena "cta" não tem nenhum shot "app" (ideal: o app/calculadora aparecendo antes do clique no link)');
+  }
 
   // --- Duração total ---
   const totalRounded = Math.round(total);

@@ -15,7 +15,7 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
-import { validateShortScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX, MAX_SFX_REPEATS } from './lib/schema-short.js';
+import { validateShortScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX, MAX_SFX_REPEATS, APP_SCREENS } from './lib/schema-short.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -72,9 +72,9 @@ O dono quer MUITO MOVIMENTO: "a cada 2-3 segundos muda a tela — gráficos, íc
 
 Um shot = { "anchor": "palavra", "visual": { "type": …, … }, "sfx": "…" (opcional) }.
 - "anchor": uma palavra EXATA da narração DESTA cena. Os shots seguem a ORDEM em que as palavras são faladas.
-- "visual.type" (só estes, motion graphics, SEM vídeo de estoque): ${VISUAL_TYPES.join(', ')}.
-    · number = número gigante ("text": "R$ 500") · counter = número CORRENDO ("from", "to", "prefix": "R$") · chart = gráfico/barras/curva · icon = ícone ("icon" do catálogo) · metaphor = animação da metáfora ("metaphor" do catálogo) · statement = frase-soco ("text") · formula = fórmula (regra dos 72) · list = itens revelados.
-- "icon" ∈ {${ICONS.join(', ')}}. "metaphor" ∈ {${METAPHORS.join(', ')}}. "sfx" ∈ {${SFX.join(', ')}}.
+- "visual.type" (motion graphics OU tela real do app — SEM vídeo de estoque/filmagem): ${VISUAL_TYPES.join(', ')}.
+    · number = número gigante ("text": "R$ 500") · counter = número CORRENDO ("from", "to", "prefix": "R$") · chart = gráfico/barras/curva · icon = ícone ("icon" do catálogo) · metaphor = animação da metáfora ("metaphor" do catálogo) · statement = frase-soco ("text") · formula = fórmula (regra dos 72) · list = itens revelados · app = tela NATIVA do app FinMoovi recriada de verdade ("app" do catálogo — ver REGRA F).
+- "icon" ∈ {${ICONS.join(', ')}}. "metaphor" ∈ {${METAPHORS.join(', ')}}. "sfx" ∈ {${SFX.join(', ')}}. "app" ∈ {${APP_SCREENS.join(', ')}} (só quando visual.type="app").
 - "text" curtíssimo (≤40 chars). "note" = 1 linha de direção de arte.
 
 REGRA A — RITMO (movimento constante): nenhum visual pode ficar parado mais de ~3s de narração. Na prática: no MÁXIMO ~8-10 palavras entre uma âncora e a próxima. Cena de 11s → ~3-5 shots.
@@ -104,6 +104,12 @@ REGRA D — SFX: TEMPERO, NÃO METRÔNOMO (feedback do dono: "tem muito som e í
     ✗ ERRADO: "kaching" em 3 shots seguidos, ou as 3 vezes concentradas na mesma metade do vídeo — cansa e não é "tempero".
 
 REGRA E — ÍCONES: NÃO REPITA (catálogo agora tem ${ICONS.length}: ${ICONS.join(', ')}). Cada ícone usado no vídeo aparece no MÁXIMO 1 vez — escolha o mais específico pro momento (ex.: "piggy" poupança, "bank" banco, "target" meta, "trophy" conquista, "bulb" ideia/insight, "hourglass" tempo passando, "wallet" carteira/gasto, "fire" urgência, "chart-down" queda/perda, "shield" proteção).
+
+REGRA F — B-ROLL DO APP FinMoovi (regra do dono 21/07: "em todos os shorts colocar ao menos 2 b-rolls do nosso app"): TODO Short precisa de NO MÍNIMO 2 shots "type":"app" (tela nativa do FinMoovi recriada de verdade — não é filmagem/vídeo de estoque). Distribua assim:
+  · 1 SEMPRE na cena CTA — o app (normalmente "calculadora") aparecendo pouco antes do momento de clicar no link, no espírito de "olha como fica no app" logo antes do clique.
+  · ≥1 em algum BEAT onde a narração JUSTIFIQUE mostrar o app — momentos de falar em controlar dinheiro, ver saldo, fatura, fluxo de caixa, planejamento ("olha como fica no app"). NUNCA force um shot de app onde a história não sustenta além desses dois momentos — a REGRA B (sincronia semântica) continua valendo: a tela mostrada tem que bater com o que está sendo dito naquela âncora.
+  As 8 telas disponíveis (escolha a mais coerente com a âncora): "app" ∈ {${APP_SCREENS.join(', ')}}.
+    · dashboard = saldos e visão geral das contas · cartoes = cartões de crédito e fatura · fluxo = fluxo de caixa · extrato = lançamentos/extrato · balanco = receitas × despesas do mês · compras = modo compras/carrinho · smartcapture = lançar gasto por voz · calculadora = calculadora de juros/simulação (ideal na CTA).
 
 ════════ UNIDADE NA PRIMEIRA MENÇÃO (regra do dono) ════════
 Toda unidade (anos, %, R$, meses…) é FALADA por extenso na PRIMEIRA menção; nas menções seguintes, se o contexto já deixou claro do que se trata, pode falar só o número — sem repetir a unidade.

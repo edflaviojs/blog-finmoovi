@@ -28,7 +28,8 @@
         { "anchor": "reais", "visual": { "type": "number", "text": "R$ 500 / mês", "note": "500 com ícone de calendário, pulsando" }, "sfx": "kaching" },
         { "anchor": "milhões", "visual": { "type": "counter", "from": 500, "to": 3200000, "prefix": "R$", "note": "contador dispara de 500 até 3,2 mi" }, "sfx": "sparkle" },
         { "anchor": "sorte", "visual": { "type": "icon", "icon": "question", "note": "interrogação; a palavra 'sorte' aparece riscada" } },
-        { "anchor": "juro", "visual": { "type": "statement", "text": "juro sobre juro", "note": "moedas se empilham, uma sobre a outra" }, "sfx": "coin" }
+        { "anchor": "juro", "visual": { "type": "statement", "text": "juro sobre juro", "note": "moedas se empilham, uma sobre a outra" }, "sfx": "coin" },
+        { "anchor": "mês", "visual": { "type": "app", "app": "dashboard", "note": "dashboard do FinMoovi com o saldo crescendo mês após mês" } }
       ]
     },
     {
@@ -63,7 +64,7 @@
       "durationSec": 7,
       "shots": [
         { "anchor": "conta", "visual": { "type": "statement", "text": "a SUA conta", "note": "campos da calculadora surgem, um a um" }, "sfx": "keyboard" },
-        { "anchor": "calculadora", "visual": { "type": "statement", "text": "FinMoovi · grátis", "note": "UI da calculadora do FinMoovi na tela" }, "sfx": "ding" },
+        { "anchor": "calculadora", "visual": { "type": "app", "app": "calculadora", "note": "calculadora do FinMoovi com a curva subindo" }, "sfx": "ding" },
         { "anchor": "embaixo", "visual": { "type": "metaphor", "metaphor": "clique-link", "note": "mãozinha percorre a tela, acha o botão do link e clica" }, "sfx": "click" }
       ]
     },
