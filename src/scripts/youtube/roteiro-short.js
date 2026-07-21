@@ -15,7 +15,7 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
-import { validateShortScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX } from './lib/schema-short.js';
+import { validateShortScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX, MAX_SFX_REPEATS } from './lib/schema-short.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -89,6 +89,7 @@ REGRA C — METÁFORAS LITERAIS (o dono AMA): quando a narração usar uma metá
   · "que nem bola de neve descendo a ladeira" → metaphor "bola-neve" (bolinha rola e derruba algo), sfx "whoosh".
   · "vira uma avalanche" → metaphor "avalanche", sfx "avalanche" (neve caindo).
   · "é aqui que a maioria escorrega" → metaphor "escorregao", sfx "slide" (pode ser CÔMICO — o dono curte o humor no escorregão).
+  · sempre que a narração mandar CLICAR/TOCAR no link (tipicamente na CTA): metaphor "clique-link" (uma mãozinha/cursor percorre a tela, acha o botão do link e CLICA), sfx "click", na âncora onde isso é dito.
   PREFIRA usar na narração metáforas que existem no catálogo (${METAPHORS.join(', ')}); se usar outra, represente com um shot "icon" coerente.
 
 REGRA D — SFX: TEMPERO, NÃO METRÔNOMO (feedback do dono: "tem muito som e ícone repetido, isso cansa"). Regras de variedade sonora:
@@ -97,6 +98,10 @@ REGRA D — SFX: TEMPERO, NÃO METRÔNOMO (feedback do dono: "tem muito som e í
   · Ao longo do vídeo inteiro, use pelo menos 3-4 sons DIFERENTES do catálogo (${SFX.join(', ')}).
   · Para o "som do dinheiro" (contador subindo, valor em reais aparecendo), PREFIRA "kaching" (caixa registradora) — "coin" fica como alternativa leve, não os dois toda hora.
   · Em shots "statement"/"list"/"formula" (o texto surge digitado/revelado), combine com "typewriter" ou "keyboard" em vez de um sfx de dinheiro.
+  · 4 sons novos pro repertório (menos repetição, mais variedade) — use quando fizer sentido em vez de recair sempre nos mesmos 3-4: "click" (clique/toque em botão ou link), "ding" (sininho suave — insight, "ahá", uma sacada), "thud" (impacto seco — queda, perda, tombo), "sparkle" (brilho/cintilado — revelação, resultado bonito surgindo).
+  · LIMITE DURO DE REPETIÇÃO: o MESMO sfx pode aparecer NO MÁXIMO ${MAX_SFX_REPEATS} vezes no vídeo inteiro (senão o roteiro é REJEITADO). Se aparecer as ${MAX_SFX_REPEATS} vezes, elas precisam ficar BEM ESPAÇADAS — uma perto do início, uma no meio, uma perto do fim do vídeo (nunca duas juntas/na mesma parte).
+    ✓ CERTO: "kaching" no 1º shot do vídeo (início), some por um bom tempo, volta lá pelo meio, e a 3ª vez só perto do final.
+    ✗ ERRADO: "kaching" em 3 shots seguidos, ou as 3 vezes concentradas na mesma metade do vídeo — cansa e não é "tempero".
 
 REGRA E — ÍCONES: NÃO REPITA (catálogo agora tem ${ICONS.length}: ${ICONS.join(', ')}). Cada ícone usado no vídeo aparece no MÁXIMO 1 vez — escolha o mais específico pro momento (ex.: "piggy" poupança, "bank" banco, "target" meta, "trophy" conquista, "bulb" ideia/insight, "hourglass" tempo passando, "wallet" carteira/gasto, "fire" urgência, "chart-down" queda/perda, "shield" proteção).
 

@@ -49,7 +49,8 @@ export const VISUAL_TYPES = ['number', 'counter', 'chart', 'icon', 'metaphor', '
 const LEGACY_VISUAL_TYPES = ['title', 'number', 'chart', 'list', 'formula', 'statement'];
 
 // Catálogo de METÁFORAS animadas (o dono quer a metáfora LITERAL na tela + som)
-export const METAPHORS = ['bola-neve', 'avalanche', 'escorregao'];
+// 'clique-link' (v3.2): mãozinha/cursor percorre a tela, acha o botão do link e CLICA — pareia com sfx 'click'.
+export const METAPHORS = ['bola-neve', 'avalanche', 'escorregao', 'clique-link'];
 
 // Ícones disponíveis para shots do tipo 'icon'
 export const ICONS = [
@@ -58,7 +59,12 @@ export const ICONS = [
 ];
 
 // Efeitos sonoros do catálogo (sfx do shot)
-export const SFX = ['boom', 'whoosh', 'coin', 'alert', 'avalanche', 'slide', 'kaching', 'typewriter', 'keyboard', 'pop'];
+// v3.2 adiciona: 'click' (clique de mouse — cliques/links), 'ding' (sininho suave — insights),
+// 'thud' (impacto seco — quedas/perdas), 'sparkle' (brilho/cintilado — revelações).
+export const SFX = ['boom', 'whoosh', 'coin', 'alert', 'avalanche', 'slide', 'kaching', 'typewriter', 'keyboard', 'pop', 'click', 'ding', 'thud', 'sparkle'];
+
+// Máximo de vezes que o MESMO sfx pode aparecer no vídeo inteiro (regra do dono 21/07).
+export const MAX_SFX_REPEATS = 3;
 
 // Limites de shots por cena (movimento constante, sem poluir)
 export const MIN_SHOTS = 1;
@@ -261,6 +267,31 @@ export function validateShortScript(script) {
     if (sfxRatio > 0.6) {
       warnings.push(`${Math.round(sfxRatio * 100)}% dos shots têm sfx (ideal ≤ ~metade — nem todo shot precisa de som)`);
     }
+  }
+
+  // --- Repetição de SFX (regra do dono 21/07 — "o mesmo som só pode repetir no
+  // máximo 3 vezes por vídeo... quando aparecer 3 vezes tem que ser início, meio
+  // e fim... bem espaçado") ---
+  const totalShots = allShotsInOrder.length;
+  if (totalShots > 0) {
+    const sfxIndices = {};
+    allShotsInOrder.forEach((sh, idx) => {
+      if (sh && sh.sfx) (sfxIndices[sh.sfx] = sfxIndices[sh.sfx] || []).push(idx);
+    });
+    Object.entries(sfxIndices).forEach(([sfx, idxs]) => {
+      const count = idxs.length;
+      if (count > MAX_SFX_REPEATS) {
+        errors.push(`sfx "${sfx}" repete ${count}× no vídeo (máximo ${MAX_SFX_REPEATS}× — varie o som)`);
+      } else if (count === MAX_SFX_REPEATS) {
+        // posição de cada ocorrência = índice do shot / total de shots (0..1), dividida em 3 terços
+        const thirds = new Set(idxs.map(i => Math.min(2, Math.floor((i / totalShots) * 3))));
+        if (thirds.size < 3) {
+          warnings.push(`sfx "${sfx}" aparece ${MAX_SFX_REPEATS}× mas mal espaçado (precisa 1 no início, 1 no meio e 1 no fim do vídeo — não concentrado na mesma parte)`);
+        }
+      } else if (count === 2 && Math.abs(idxs[1] - idxs[0]) <= 3) {
+        warnings.push(`sfx "${sfx}" aparece 2× muito perto uma da outra (${Math.abs(idxs[1] - idxs[0])} shots de distância — espace mais)`);
+      }
+    });
   }
   const iconCounts = {};
   allShotsInOrder.forEach(sh => {

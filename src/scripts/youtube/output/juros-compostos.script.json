@@ -26,7 +26,7 @@
       "durationSec": 10,
       "shots": [
         { "anchor": "reais", "visual": { "type": "number", "text": "R$ 500 / mês", "note": "500 com ícone de calendário, pulsando" }, "sfx": "kaching" },
-        { "anchor": "milhões", "visual": { "type": "counter", "from": 500, "to": 3200000, "prefix": "R$", "note": "contador dispara de 500 até 3,2 mi" }, "sfx": "whoosh" },
+        { "anchor": "milhões", "visual": { "type": "counter", "from": 500, "to": 3200000, "prefix": "R$", "note": "contador dispara de 500 até 3,2 mi" }, "sfx": "sparkle" },
         { "anchor": "sorte", "visual": { "type": "icon", "icon": "question", "note": "interrogação; a palavra 'sorte' aparece riscada" } },
         { "anchor": "juro", "visual": { "type": "statement", "text": "juro sobre juro", "note": "moedas se empilham, uma sobre a outra" }, "sfx": "coin" }
       ]
@@ -51,7 +51,7 @@
       "shots": [
         { "anchor": "escorrega", "visual": { "type": "metaphor", "metaphor": "escorregao", "note": "boneco escorrega numa casca de banana, cômico" }, "sfx": "slide" },
         { "anchor": "25", "visual": { "type": "chart", "note": "barra da idade 25 sobe bem alta" } },
-        { "anchor": "triplo", "visual": { "type": "number", "text": "≈ 3× mais", "note": "selo 3× destaca a diferença" } },
+        { "anchor": "triplo", "visual": { "type": "number", "text": "≈ 3× mais", "note": "selo 3× destaca a diferença" }, "sfx": "kaching" },
         { "anchor": "35", "visual": { "type": "chart", "note": "segunda barra, idade 35, bem menor ao lado" } },
         { "anchor": "controle", "visual": { "type": "statement", "text": "sem controle = dos outros", "note": "bordão do canal crava na tela" } }
       ]
@@ -63,8 +63,8 @@
       "durationSec": 7,
       "shots": [
         { "anchor": "conta", "visual": { "type": "statement", "text": "a SUA conta", "note": "campos da calculadora surgem, um a um" }, "sfx": "keyboard" },
-        { "anchor": "calculadora", "visual": { "type": "statement", "text": "FinMoovi · grátis", "note": "UI da calculadora do FinMoovi na tela" }, "sfx": "kaching" },
-        { "anchor": "embaixo", "visual": { "type": "statement", "text": "Link ↓", "note": "seta apontando pra descrição/baixo" } }
+        { "anchor": "calculadora", "visual": { "type": "statement", "text": "FinMoovi · grátis", "note": "UI da calculadora do FinMoovi na tela" }, "sfx": "ding" },
+        { "anchor": "embaixo", "visual": { "type": "metaphor", "metaphor": "clique-link", "note": "mãozinha percorre a tela, acha o botão do link e clica" }, "sfx": "click" }
       ]
     },
     {
