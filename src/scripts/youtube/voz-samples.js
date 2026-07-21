@@ -15,25 +15,13 @@ const OUT = join(process.cwd(), 'voz-samples');
 const TEXT = (process.env.SAMPLE_TEXT && process.env.SAMPLE_TEXT.trim())
   || 'No próximo minuto você vai entender por que quem controla o próprio dinheiro sai na frente. Juros compostos: R$ 500 por mês viram 3,2 milhões. Vamos aos números.';
 
+// ⚠️ O edge-tts (Read-Aloud do Edge) só expõe ESTAS 3 vozes pt-BR (verificado na
+// lista oficial /voices/list). As demais vozes Azure pt-BR (Humberto, Julio, Fabio…)
+// NÃO estão disponíveis no caminho grátis — só no Azure/Google oficial (pago).
 const VOICES = [
-  ['M', 'pt-BR-AntonioNeural'],
-  ['M', 'pt-BR-FabioNeural'],
-  ['M', 'pt-BR-DonatoNeural'],
-  ['M', 'pt-BR-HumbertoNeural'],
-  ['M', 'pt-BR-JulioNeural'],
-  ['M', 'pt-BR-NicolauNeural'],
-  ['M', 'pt-BR-ValerioNeural'],
-  ['M', 'pt-BR-MacerioMultilingualNeural'],
+  ['M', 'pt-BR-AntonioNeural'],            // única masculina grátis
   ['F', 'pt-BR-FranciscaNeural'],
-  ['F', 'pt-BR-BrendaNeural'],
-  ['F', 'pt-BR-ElzaNeural'],
-  ['F', 'pt-BR-GiovannaNeural'],
-  ['F', 'pt-BR-LeilaNeural'],
-  ['F', 'pt-BR-LeticiaNeural'],
-  ['F', 'pt-BR-ManuelaNeural'],
-  ['F', 'pt-BR-ThalitaNeural'],
-  ['F', 'pt-BR-YaraNeural'],
-  ['F', 'pt-BR-ThalitaMultilingualNeural'],
+  ['F', 'pt-BR-ThalitaMultilingualNeural'], // a mais natural
 ];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
