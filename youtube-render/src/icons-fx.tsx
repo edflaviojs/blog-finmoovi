@@ -12,7 +12,7 @@ import { layoutWords, activeIndex, wordTimingsFromReal } from './captions';
 
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^\p{L}\p{N}]/gu, '');
 
-type IconKey = 'money' | 'coins' | 'growth' | 'clock' | 'card' | 'warning';
+export type IconKey = 'money' | 'coins' | 'growth' | 'clock' | 'card' | 'warning';
 
 // palavra normalizada → ícone (a 1ª que casar vence). SFX associado vem na F1.2.
 const TRIGGERS: Array<{ words: string[]; icon: IconKey }> = [
@@ -24,7 +24,7 @@ const TRIGGERS: Array<{ words: string[]; icon: IconKey }> = [
   { words: ['contra', 'erro', 'cuidado', 'perde', 'perder', 'armadilha'], icon: 'warning' },
 ];
 
-function iconFor(word: string): IconKey | null {
+export function iconFor(word: string): IconKey | null {
   if (/R\$/i.test(word)) return 'money'; // "R$" sozinho vira só "r" ao normalizar
   const n = norm(word);
   for (const t of TRIGGERS) if (t.words.includes(n)) return t.icon;

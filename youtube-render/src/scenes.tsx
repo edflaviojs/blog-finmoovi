@@ -3,6 +3,7 @@ import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 import { FinMooviIcon } from './icon';
 import { KaraokeCaption } from './captions';
 import { IconBurst } from './icons-fx';
+import { SceneSfx } from './audio/sfx';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Fundo vivo: gradiente escuro + manchas de luz que respiram + partículas subindo
@@ -99,6 +100,7 @@ const SceneShell: React.FC<{ scene: Scene; timing?: SceneTiming | null; children
   return (
     <AbsoluteFill>
       {timing?.audioFile && <Audio src={staticFile(timing.audioFile)} />}
+      <SceneSfx narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
       <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: 380, paddingLeft: 60, paddingRight: 60 }}>
         <div style={{ transform: `scale(${kb * enterScale}) translateY(${enterY}px)`, textAlign: 'center' }}>
           {children}
