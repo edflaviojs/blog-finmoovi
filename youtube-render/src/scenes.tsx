@@ -1,4 +1,4 @@
-import { AbsoluteFill, Audio, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
+import { AbsoluteFill, Audio, interpolate, random, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
 import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 import { FinMooviIcon } from './icon';
 import { KaraokeCaption } from './captions';
@@ -81,28 +81,60 @@ type Scene = {
   role: string;
   narration: string;
   onScreenText?: string;
+  cue?: string;
   visual: { type: string; note?: string };
   durationSec: number;
 };
 
 type SceneTiming = { audioFile?: string; durationSec?: number; words?: { word: string; start: number; end: number }[] };
 
+const normSync = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+
+// Frame (local da cena) em que o VISUAL central deve SURGIR — sincronizado com a
+// FALA. Prioridade: "cue" do roteiro (palavra-gatilho) → 1ª palavra de ênfase
+// (número/R$/%) → 0. Assim o gráfico dos "25 anos" só entra quando a voz diz "25".
+function revealFrameFor(scene: Scene, timing: SceneTiming | null | undefined, fps: number): number {
+  const words = timing?.words;
+  if (!words || !words.length) return 0;
+  if (scene.cue) {
+    const c = normSync(scene.cue);
+    const w = words.find((x) => normSync(x.word) === c || (c.length >= 2 && normSync(x.word).includes(c)));
+    if (w) return Math.max(0, Math.round(w.start * fps));
+  }
+  const emph = words.find((x) => /\d/.test(x.word) || /[%×]/.test(x.word) || /r\$/i.test(x.word));
+  if (emph) return Math.max(0, Math.round(emph.start * fps));
+  return 0;
+}
+
+// Entrada do visual — usa o frame LOCAL (0 no momento do reveal), então a animação
+// e os motion graphics internos (contagem, gráfico) começam quando a fala chega.
+const RevealedVisual: React.FC<{ kb: number; children: React.ReactNode }> = ({ kb, children }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const enter = spring({ frame, fps, config: { damping: 16, mass: 0.6 } });
+  const enterScale = interpolate(enter, [0, 1], [0.9, 1]);
+  const enterY = interpolate(enter, [0, 1], [40, 0]);
+  return (
+    <div style={{ transform: `scale(${kb * enterScale}) translateY(${enterY}px)`, textAlign: 'center' }}>
+      {children}
+    </div>
+  );
+};
+
 const SceneShell: React.FC<{ scene: Scene; timing?: SceneTiming | null; children: React.ReactNode }> = ({ scene, timing, children }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const durationSec = timing?.durationSec ?? scene.durationSec;
   const totalFrames = Math.max(1, Math.round(durationSec * fps));
-  // Ken Burns: leve zoom-in contínuo + deriva — nada fica parado.
+  // Ken Burns: leve zoom-in contínuo — nada fica parado (roda a cena inteira).
   const kb = interpolate(frame, [0, totalFrames], [1.0, 1.08], { extrapolateRight: 'clamp' });
-  const enter = spring({ frame, fps, config: { damping: 16, mass: 0.6 } });
-  const enterScale = interpolate(enter, [0, 1], [0.9, 1]);
-  const enterY = interpolate(enter, [0, 1], [40, 0]);
+  const reveal = revealFrameFor(scene, timing, fps);
   return (
     <AbsoluteFill>
       <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: 380, paddingLeft: 60, paddingRight: 60 }}>
-        <div style={{ transform: `scale(${kb * enterScale}) translateY(${enterY}px)`, textAlign: 'center' }}>
-          {children}
-        </div>
+        <Sequence from={reveal} layout="none">
+          <RevealedVisual kb={kb}>{children}</RevealedVisual>
+        </Sequence>
       </AbsoluteFill>
     </AbsoluteFill>
   );

@@ -70,6 +70,7 @@ REGRAS OBRIGATÓRIAS (o roteiro é rejeitado se violar):
 9. "narration": conversa de amigo, leve e direta — NUNCA robótica nem publicitária. A PONTUAÇÃO COMANDA A RESPIRAÇÃO da voz (TTS): vírgula = pausa curta, reticências (…) = suspense, ponto = nova ideia. NUNCA emende duas ideias sem pontuação — CERTO: "quem começa aos 25, junta quase o triplo…"; ERRADO: "quem começa aos 25 junta quase o triplo". Fuja do formalês escrito ("Agora, esse efeito trabalha…") e use o falado ("Agora pensa comigo:… joga contra você!"). A última frase de cada cena puxa a próxima.
 10. "visual.type" só pode ser um destes (motion graphics, SEM vídeo de estoque): ${VISUAL_TYPES.join(', ')}.
     - title = cartão de título · number = número gigante animado · chart = gráfico/simulação animada · list = itens revelados · formula = fórmula (ex.: regra dos 72) · statement = frase de impacto.
+11. "cue" (SINCRONIA voz↔imagem, OBRIGATÓRIO): uma palavra EXATA da narração desta cena — o motion graphic só APARECE quando essa palavra for FALADA. Escolha a palavra-chave do visual (normalmente o número/termo). Ex.: visual "25 anos" → cue "25"; visual "R$ 500" → cue "500" (ou a palavra logo antes de o número surgir). NUNCA deixe a imagem aparecer antes da fala.
 
 Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste formato exato:
 {
@@ -83,6 +84,7 @@ Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste f
       "role": "hook",
       "narration": "…",
       "onScreenText": "…",
+      "cue": "palavra-exata-da-narração",
       "visual": { "type": "title", "note": "descrição curta do que anima em tela" },
       "durationSec": 5
     }
