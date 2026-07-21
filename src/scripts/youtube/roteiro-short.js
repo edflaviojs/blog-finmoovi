@@ -15,7 +15,7 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
-import { validateShortScript, BORDAO, VISUAL_TYPES, INTRO_STYLES } from './lib/schema-short.js';
+import { validateShortScript, BORDAO, VISUAL_TYPES } from './lib/schema-short.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -50,53 +50,28 @@ function readTerm(slug) {
 }
 
 function buildPrompt(t) {
-  return `Você é ROTEIRISTA de Shorts de finanças do canal FinMoovi (PT-BR), craque em retenção. Escreva o roteiro de UM YOUTUBE SHORT vertical (motion graphics, SEM vídeo de estoque) sobre o termo abaixo, em JSON.
+  return `Você é um ROTEIRISTA CINEMATOGRÁFICO de finanças do canal FinMoovi (PT-BR): engaja, cria mistério, instiga emoção e prende a atenção do PRIMEIRO ao ÚLTIMO segundo. Escreve como uma CONVERSA DE AMIGO brasileiro — informal, fluido, com gírias leves — NUNCA formal, "escrito" ou robótico.
+Crie o roteiro de um YOUTUBE SHORT (vertical, motion graphics) sobre o termo do glossário abaixo.
 
 TERMO: "${t.term}"
 DEFINIÇÃO: ${t.definition}
-CONTEÚDO DE APOIO (use SÓ números/exemplos reais daqui):
+CONTEÚDO DE APOIO (use os números/exemplos reais daqui):
 ${t.body}
 
-## VOZ: BATE-PAPO ENTRE AMIGOS
-Escreva como um amigo brasileiro mandando um áudio pra UMA pessoa. Não é locução, não é anúncio.
-- Fale com "você"/"cê", direto na cara da pessoa.
-- Use o falado: perguntas retóricas ("cê tá ligado quanto isso dá?"), comandos de atenção ("olha isso", "pensa comigo", "segura essa"), autocorreção ("uns 300… não, quase 400").
-- PROIBIDO conectivo de texto escrito: "além disso", "portanto", "é importante ressaltar", "no entanto", "dessa forma". ERRADO: "Além disso, os juros incidem…". CERTO: "E tem mais: o juro rende em cima do juro…".
-- Ensine com NEXO — a pessoa tem que pensar "caramba, que útil". Não empilhe adjetivo, mostre o porquê com número real.
-
-## PONTUAÇÃO = RESPIRAÇÃO DA VOZ (TTS)
-Vírgula = pausa curta · reticências (…) = suspense · ponto = ideia nova. NUNCA emende duas ideias sem pontuação. CERTO: "quem começa aos 25, junta quase o triplo…". ERRADO: "quem começa aos 25 junta quase o triplo". Fuja do formalês ("Agora, esse efeito trabalha…"); use o falado ("Agora pensa comigo:… joga contra você!").
-
-## VOZ ≠ TELA (nunca duplicar)
-É PROIBIDO a narração ler o onScreenText em voz alta. O visual MOSTRA o número; a voz dá o SIGNIFICADO. Se a tela diz "R$ 3,2 mi", a voz NÃO fala "três vírgula dois milhões" — fala o que aquilo QUER dizer.
-
-## ESTRUTURA (nesta ordem exata)
-1 "hook" → 2-3 "beat" → 1 "cta" (PENÚLTIMA) → 1 "outro" (última). É UMA HISTÓRIA SÓ: tudo aprofunda o assunto do gancho; NENHUMA cena abre tema novo.
-- HOOK (0-5s): gancho forte que já FALA a palavra-chave "${t.term}" nos primeiros segundos (o YouTube transcreve a voz = SEO). Cria curiosidade/urgência e emenda no exemplo. SEM definição, SEM enrolação. O visual do hook NÃO pode ser "number" (a intro já deu o soco do número — varie).
-- BEATS: explicam o PORQUÊ/COMO com os VALORES REAIS do apoio.
-- CTA: recado rápido de valor — app FinMoovi grátis OU calculadora do blog — e volta na hora pro conteúdo.
-- OUTRO (open loop): SEM "tchau/obrigado/até a próxima". Reflexão forte + gancho de curiosidade pro próximo vídeo.
-- BORDÃO: insira EXATAMENTE 1× no roteiro todo (num beat ou na cta): "${BORDAO}"
-- CALLBACK: o outro RETOMA uma expressão/imagem do hook (fecha o loop na cabeça da pessoa).
-- "nextVideoTitle": título curto do próximo tema; no outro, mande "link na descrição".
-
-## intro (ABERTURA que para o dedo)
-"big" = o número/frase MAIS chocante (normalmente o resultado final). "sub" = pergunta de curiosidade que o vídeo responde. "style" = arquétipo de gancho visual (escolha o que MELHOR casa com o tema e escreva big/sub pra CASAR com ele):
-- contraste = split-screen, dois valores comparáveis correndo lado a lado (ex.: quem começou cedo × tarde). big precisa de dois valores.
-- contagem = valor derretendo/caindo (dinheiro evaporando, poder de compra sumindo).
-- timer = pergunta-desafio + contagem 3-2-1 (provoca "cê sabe?").
-- meio = começa NO MEIO da simulação, gráfico já disparando (ótimo p/ crescimento exponencial).
-- objeto = soco de objeto físico (moeda/cartão batendo na tela).
-
-## Campos por cena
-- "narration": bate-papo, do jeito acima. A última frase puxa a próxima cena.
-- "onScreenText": ≤ ~40 caracteres, de preferência número/símbolo (R$, %, ×). Mínimo.
-- "visual.type": um de ${VISUAL_TYPES.join(', ')} (title=cartão de título · number=número gigante · chart=gráfico/simulação · list=itens revelados · formula=fórmula ex. regra dos 72 · statement=frase de impacto). "app" (mockup do app) SÓ na cena cta.
-- "visual.note": descrição curta do que anima.
-- "cues": 1 a 4 PALAVRAS EXATAS da narração desta cena (na ordem falada). O elemento visual ENTRA na tela exatamente quando aquela palavra é falada. cues[0] = palavra em que o visual PRINCIPAL entra; as seguintes = revelações encenadas (marcos do gráfico, itens da lista). Para chart, escolha 2-4 palavras-marco. Cada cue TEM que existir, letra por letra, na narration da cena.
-
-## Duração
-Alvo 45-55s (soma dos durationSec). Máx absoluto 58s, mín 30s.
+REGRAS OBRIGATÓRIAS (o roteiro é rejeitado se violar):
+1. Duração total entre 45 e 55 segundos (soma dos durationSec das cenas).
+2. Estrutura de cenas nesta ordem: 1 cena "hook" → 2 a 3 cenas "beat" → 1 cena "cta" → 1 cena "outro".
+3. HOOK (cold open, 0-5s): gancho FORTE e EMOCIONAL que já FALA a palavra-chave "${t.term}" nos primeiros segundos (o YouTube transcreve a voz — é obrigatório p/ SEO). Crie urgência ou curiosidade e emende num exemplo. Exemplos de TOM (imite a energia, não copie): "Os juros compostos podem estar te matando — e eu te explico por quê. Olha esse exemplo…" · "Se você acha que ${t.term} é papo de rico… olha só esse número." Termine puxando o exemplo/número. Proibido definição/enrolação.
+4. É UMA HISTÓRIA SÓ: o vídeo desenvolve UM único assunto (o do gancho), aprofundando do hook até a CTA. Cada cena COMPLEMENTA e dá sequência à anterior — É PROIBIDO cada cena abrir um assunto novo/desconexo. Os BEATS explicam o PORQUÊ/COMO dos números (dê NEXO: a audiência tem que pensar "que informação útil e relevante!"), usando os valores reais do conteúdo de apoio.
+5. CTA (penúltima cena, NUNCA no fim): recado rápido de valor indicando o app FinMoovi grátis OU a calculadora do blog. Volte imediatamente ao tom de conteúdo.
+6. OUTRO (última cena, open loop): SEM "tchau/obrigado/até a próxima". Reflexão forte + gancho de curiosidade.
+7. Insira EXATAMENTE 1 vez, ao longo do roteiro (de preferência num beat ou na CTA), o bordão do canal: "${BORDAO}"
+8. "onScreenText": curtíssimo (máx ~40 caracteres), de preferência número/símbolo (R$, %, ×) — o texto na tela é mínimo.
+9. "narration": conversa de amigo, leve e direta — NUNCA robótica nem publicitária. A PONTUAÇÃO COMANDA A RESPIRAÇÃO da voz (TTS): vírgula = pausa curta, reticências (…) = suspense, ponto = nova ideia. NUNCA emende duas ideias sem pontuação — CERTO: "quem começa aos 25, junta quase o triplo…"; ERRADO: "quem começa aos 25 junta quase o triplo". Fuja do formalês escrito ("Agora, esse efeito trabalha…") e use o falado ("Agora pensa comigo:… joga contra você!"). A última frase de cada cena puxa a próxima.
+10. "visual.type" só pode ser um destes (motion graphics, SEM vídeo de estoque): ${VISUAL_TYPES.join(', ')}.
+    - title = cartão de título · number = número gigante animado · chart = gráfico/simulação animada · list = itens revelados · formula = fórmula (ex.: regra dos 72) · statement = frase de impacto.
+11. "cue" (SINCRONIA voz↔imagem, OBRIGATÓRIO): uma palavra EXATA da narração desta cena — o motion graphic dá o SOCO de destaque quando essa palavra for FALADA (o visual já fica na tela, NUNCA some/deixa a tela vazia). Escolha a palavra-chave do visual (normalmente o número/termo). Ex.: visual "25 anos" → cue "25"; visual "R$ 500" → cue "500".
+12. "intro" (ABERTURA DISRUPTIVA, OBRIGATÓRIO): abre o vídeo com impacto pra parar o dedo do usuário. "big" = o número/frase MAIS CHOCANTE do vídeo (normalmente o RESULTADO final, ex.: "R$ 3.200.000"); "sub" = pergunta de curiosidade que o vídeo vai responder (ex.: "Como R$ 500 viram isso?"). Entra ~1,5s antes da narração, com boom + flash.
 
 Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste formato exato:
 {
@@ -104,16 +79,15 @@ Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste f
   "term": "${t.term}",
   "category": "${t.category}",
   "keyword": "${t.term}",
-  "nextVideoTitle": "título curto do próximo vídeo",
-  "intro": { "big": "número/frase-choque", "sub": "pergunta de curiosidade", "style": "${INTRO_STYLES.join('|')}" },
+  "intro": { "big": "número/frase-choque", "sub": "pergunta de curiosidade" },
   "scenes": [
     {
       "id": 1,
       "role": "hook",
       "narration": "…",
       "onScreenText": "…",
-      "cues": ["palavra-exata-1", "palavra-exata-2"],
-      "visual": { "type": "statement", "note": "o que anima em tela" },
+      "cue": "palavra-exata-da-narração",
+      "visual": { "type": "title", "note": "descrição curta do que anima em tela" },
       "durationSec": 5
     }
   ],

@@ -4,58 +4,63 @@
   "category": "basico",
   "keyword": "Juros Compostos",
   "nextVideoTitle": "Dívida do cartão",
-  "intro": {
-    "big": "R$ 3,2 mi × R$ 1,1 mi",
-    "sub": "Mesma grana. Por que a diferença?",
-    "style": "contraste"
-  },
+  "intro": { "big": "R$ 3.200.000", "sub": "Como R$ 500 viram isso?" },
   "scenes": [
     {
       "id": 1,
       "role": "hook",
-      "narration": "Dois amigos, mesma grana no bolso… e juros compostos separando eles por milhões. Segura essa.",
-      "onScreenText": "2 amigos, 1 escolha",
-      "cues": ["amigos", "milhões"],
-      "visual": { "type": "statement", "note": "duas silhuetas lado a lado, uma placa de valor bem maior surge sobre a segunda" },
+      "narration": "Se você acha que juros compostos é papo de rico… olha só esse número.",
+      "onScreenText": "R$ 500",
+      "cue": "número",
+      "visual": { "type": "number", "note": "R$ 500 surge sozinho, grande, brilho ciano→magenta" },
       "durationSec": 5
     },
     {
       "id": 2,
       "role": "beat",
-      "narration": "Pensa comigo: dez mil parados, a dez por cento. O juro simples só mexe no valor inicial… o composto rende em cima do que já rendeu. Por isso um vira uma coisa, e o outro dispara.",
-      "onScreenText": "R$ 40 mil vs R$ 174 mil",
-      "cues": ["dez", "simples", "composto", "dispara"],
-      "visual": { "type": "chart", "note": "duas curvas partindo de R$ 10 mil: a simples reta em ~40 mil, a composta disparando pra ~174 mil aos 30 anos" },
-      "durationSec": 12
+      "narration": "Esses 500 reais, guardados todo mês, viram 3,2 milhões. E não é sorte, não. É juro rendendo em cima de juro, mês após mês.",
+      "onScreenText": "→ R$ 3,2 milhões",
+      "cue": "viram",
+      "visual": { "type": "chart", "note": "curva exponencial subindo de 500 até 3,2 milhões" },
+      "durationSec": 11
     },
     {
       "id": 3,
       "role": "beat",
-      "narration": "E é aqui que o bicho pega: quem começou aos vinte e cinco junta quase o triplo de quem esperou dez aninhos. Dez anos de atraso… custam uma fortuna. Porque dinheiro sem controle é dinheiro dos outros.",
-      "onScreenText": "25 anos ≈ 3× mais",
-      "cues": ["triplo", "atraso", "fortuna"],
-      "visual": { "type": "chart", "note": "duas barras crescendo: idade 25 quase o triplo da idade 35, o gap piscando" },
-      "durationSec": 13
+      "narration": "Mas o segredo não é guardar muito. É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche.",
+      "onScreenText": "o tempo faz o trabalho",
+      "cue": "bola",
+      "visual": { "type": "statement", "note": "bola de neve virando avalanche / frase de impacto" },
+      "durationSec": 11
     },
     {
       "id": 4,
-      "role": "cta",
-      "narration": "Bora ver quanto o SEU dinheiro faz? A calculadora do FinMoovi é grátis… joga os seus números lá e olha o gráfico dispara.",
-      "onScreenText": "Roda a SUA conta",
-      "cues": ["calculadora", "grátis", "gráfico"],
-      "visual": { "type": "app", "note": "mockup do app FinMoovi com a calculadora aberta, curva subindo + pill 'Link na descrição'" },
-      "durationSec": 8
+      "role": "beat",
+      "narration": "E é aqui que a maioria escorrega: quem começa aos 25, junta quase o triplo de quem começou aos 35. Dez aninhos de atraso… custam uma fortuna. Porque dinheiro sem controle é dinheiro dos outros.",
+      "onScreenText": "25 anos ≈ 3× mais",
+      "cue": "25",
+      "visual": { "type": "chart", "note": "duas barras: idade 25 quase o triplo da idade 35" },
+      "durationSec": 13
     },
     {
       "id": 5,
+      "role": "cta",
+      "narration": "Bora fazer essa conta com os seus números? A calculadora do FinMoovi é grátis, e o link tá logo aqui embaixo.",
+      "onScreenText": "Roda a SUA conta",
+      "cue": "calculadora",
+      "visual": { "type": "statement", "note": "título + pill 'Link na descrição' + seta descendo" },
+      "durationSec": 8
+    },
+    {
+      "id": 6,
       "role": "outro",
-      "narration": "Lembra dos dois amigos? O que começou cedo não é mais inteligente, não… só deu tempo pro dinheiro trabalhar. E esse mesmo efeito vira contra você na dívida do cartão. Como? Te conto no próximo… link na descrição.",
-      "onScreenText": "e no cartão? joga CONTRA",
-      "cues": ["amigos", "cartão", "próximo"],
-      "visual": { "type": "statement", "note": "as duas silhuetas do hook voltam, seta vira vermelha apontando pro card do próximo vídeo" },
-      "durationSec": 12
+      "narration": "Agora pensa comigo: esse mesmo efeito que faz o seu dinheiro crescer também trabalha contra você! Olha: na dívida do cartão, o juro composto rende muito, mas muito dinheiro… pro banco. Quer saber como virar esse jogo? Te explico no próximo vídeo.",
+      "onScreenText": "no cartão, joga CONTRA você",
+      "cue": "cartão",
+      "visual": { "type": "statement", "note": "card do próximo vídeo + seta apontando" },
+      "durationSec": 13
     }
   ],
   "cta": { "text": "Calculadora de juros compostos grátis no FinMoovi", "target": "blog" },
-  "totalDurationSec": 50
+  "totalDurationSec": 61
 }
