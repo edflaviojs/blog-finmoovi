@@ -37,6 +37,13 @@ const args = Object.fromEntries(
   }),
 );
 
+// Correções de PRONÚNCIA aplicadas só ao texto que vai pro TTS (a legenda/roteiro
+// e o SRT mantêm a grafia real). Ex.: o Edge lê "FinMoovi" como "fin-moví"; a
+// grafia "Fin Múvi" faz ele falar "fin-múuvi" (correto).
+export function pronounce(text) {
+  return String(text).replace(/finmoovi/gi, 'Fin Múvi');
+}
+
 // Normaliza p/ comparar palavra do roteiro × palavra do Whisper (sem acento/pontuação/caixa).
 export function normalizeWord(w) {
   return String(w).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
@@ -155,8 +162,8 @@ async function main() {
     const narration = (scene.narration || '').trim();
     if (!narration) { console.log(`  cena ${id}: sem narração — pulada`); continue; }
 
-    // 1) voz (mesmo provedor p/ todas as cenas do vídeo)
-    const { audio, ext, voice } = await synthesizeSpeech(narration, { providerName: provider });
+    // 1) voz (mesmo provedor p/ todas as cenas; grafia fonética só no áudio)
+    const { audio, ext, voice } = await synthesizeSpeech(pronounce(narration), { providerName: provider });
     voiceUsed = voice;
     const audioName = `scene-${id}.${ext}`;
     writeFileSync(join(audioDir, audioName), audio);

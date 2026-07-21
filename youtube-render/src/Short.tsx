@@ -1,8 +1,8 @@
-import { AbsoluteFill, useVideoConfig } from 'remotion';
+import { AbsoluteFill, Sequence, useVideoConfig } from 'remotion';
 import { TransitionSeries, linearTiming } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
-import { Background, Watermark, SceneRenderer } from './scenes';
+import { Background, Watermark, SceneRenderer, SceneAudioLayer } from './scenes';
 import { BackgroundMusic } from './audio/music';
 
 export const TRANSITION_FRAMES = 8;
@@ -92,12 +92,32 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
     }
   });
 
+  // Início de cada cena no timeline global (desconta as sobreposições das transições).
+  const masterStarts: number[] = [];
+  {
+    let prefix = 0;
+    for (let i = 0; i < frames.length; i++) {
+      masterStarts.push(Math.max(0, prefix - i * TRANSITION_FRAMES));
+      prefix += frames[i];
+    }
+  }
+
   return (
     <AbsoluteFill>
       <Background />
       <BackgroundMusic />
       <Watermark />
       <TransitionSeries>{children}</TransitionSeries>
+      {/* Trilho MESTRE: áudio + legenda + ícones + SFX, sequencial e SEM sobreposição. */}
+      {script.scenes.map((scene, i) => (
+        <Sequence
+          key={`al${i}`}
+          from={masterStarts[i]}
+          durationInFrames={Math.max(1, frames[i] - (i < script.scenes.length - 1 ? TRANSITION_FRAMES : 0))}
+        >
+          <SceneAudioLayer scene={scene} timing={sceneTimingFor(timing, scene, i)} />
+        </Sequence>
+      ))}
     </AbsoluteFill>
   );
 };

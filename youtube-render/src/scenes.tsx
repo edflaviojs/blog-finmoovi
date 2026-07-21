@@ -99,13 +99,26 @@ const SceneShell: React.FC<{ scene: Scene; timing?: SceneTiming | null; children
   const enterY = interpolate(enter, [0, 1], [40, 0]);
   return (
     <AbsoluteFill>
-      {timing?.audioFile && <Audio src={staticFile(timing.audioFile)} />}
-      <SceneSfx narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
       <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: 380, paddingLeft: 60, paddingRight: 60 }}>
         <div style={{ transform: `scale(${kb * enterScale}) translateY(${enterY}px)`, textAlign: 'center' }}>
           {children}
         </div>
       </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// Camada de ÁUDIO + LEGENDA + ícones + SFX de UMA cena. Vai num trilho MESTRE
+// (Sequence sequencial, sem a sobreposição de 8f das transições) para a legenda e o
+// áudio NÃO empilharem com a cena vizinha no cruzamento. O visual segue com crossfade.
+export const SceneAudioLayer: React.FC<{ scene: Scene; timing?: SceneTiming | null }> = ({ scene, timing }) => {
+  const { fps } = useVideoConfig();
+  const durationSec = timing?.durationSec ?? scene.durationSec;
+  const totalFrames = Math.max(1, Math.round(durationSec * fps));
+  return (
+    <AbsoluteFill>
+      {timing?.audioFile && <Audio src={staticFile(timing.audioFile)} />}
+      <SceneSfx narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
       <IconBurst narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
       <KaraokeCaption narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
     </AbsoluteFill>

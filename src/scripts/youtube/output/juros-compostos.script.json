@@ -8,50 +8,50 @@
     {
       "id": 1,
       "role": "hook",
-      "narration": "Se você acha que juros compostos é papo de rico, olha esse número: R$ 500 por mês viram 3,2 milhões. Presta atenção.",
-      "onScreenText": "R$ 500 → R$ 3,2 mi",
-      "visual": { "type": "number", "note": "R$ 3.200.000 conta subindo de 0, brilho ciano→magenta" },
+      "narration": "Se você acha que juros compostos é papo de rico, olha só esse número.",
+      "onScreenText": "R$ 500 por mês",
+      "visual": { "type": "number", "note": "R$ 500 surge sozinho, grande, brilho ciano→magenta" },
       "durationSec": 5
     },
     {
       "id": 2,
       "role": "beat",
-      "narration": "Juros compostos é juros sobre juros. R$ 10 mil a 10% ao ano não crescem em linha reta: em 30 anos viram 174 mil.",
-      "onScreenText": "R$ 10 mil → R$ 174 mil",
-      "visual": { "type": "chart", "note": "curva exponencial vs reta dos juros simples, 30 anos no eixo X" },
-      "durationSec": 13
+      "narration": "Esses 500 reais, guardados todo mês, viram 3,2 milhões. E não é sorte. É juro rendendo em cima de juro, mês depois de mês.",
+      "onScreenText": "→ R$ 3,2 milhões",
+      "visual": { "type": "chart", "note": "curva exponencial subindo de 500 até 3,2 milhões" },
+      "durationSec": 10
     },
     {
       "id": 3,
       "role": "beat",
-      "narration": "Quer saber quando seu dinheiro dobra? Regra dos 72: divide 72 pela taxa. A 12% ao ano, dobra em 6 anos.",
-      "onScreenText": "72 ÷ 12 = 6 anos",
-      "visual": { "type": "formula", "note": "72 ÷ taxa = anos; números encaixando animados" },
-      "durationSec": 11
+      "narration": "E o segredo não é guardar muito. É dar tempo pro dinheiro se multiplicar sozinho. Igual bola de neve descendo a ladeira.",
+      "onScreenText": "o tempo faz o trabalho",
+      "visual": { "type": "statement", "note": "bola de neve crescendo / frase de impacto" },
+      "durationSec": 9
     },
     {
       "id": 4,
       "role": "beat",
-      "narration": "E o tempo é tudo. Começar aos 25 dá 3,2 milhões; esperar até os 35 derruba pra 1,1 milhão. Dinheiro sem controle é dinheiro dos outros.",
-      "onScreenText": "25 anos → 3× mais",
-      "visual": { "type": "chart", "note": "duas barras: idade 25 vs 35, a de 25 quase o triplo" },
-      "durationSec": 13
+      "narration": "Por isso começar cedo muda tudo. Quem começa aos 25 junta quase o triplo de quem começou aos 35. Dinheiro sem controle é dinheiro dos outros.",
+      "onScreenText": "25 anos ≈ 3× mais",
+      "visual": { "type": "chart", "note": "duas barras: idade 25 quase o triplo da idade 35" },
+      "durationSec": 12
     },
     {
       "id": 5,
       "role": "cta",
-      "narration": "Roda essa conta com os seus números na calculadora grátis do FinMoovi.",
-      "onScreenText": "Roda com os SEUS números",
+      "narration": "Quer ver quanto os seus 500 reais podem render? Roda a conta na calculadora grátis do FinMoovi. O link tá aqui embaixo.",
+      "onScreenText": "Roda a SUA conta",
       "visual": { "type": "statement", "note": "título + pill 'Link na descrição' + seta descendo" },
-      "durationSec": 6
+      "durationSec": 8
     },
     {
       "id": 6,
       "role": "outro",
-      "narration": "E esse mesmo efeito trabalha contra você na dívida do cartão.",
-      "onScreenText": "Isso trabalha CONTRA você na dívida",
+      "narration": "Agora, esse mesmo efeito trabalha contra você. Na dívida do cartão, o juro composto rende pro banco. Te explico no próximo.",
+      "onScreenText": "no cartão, joga CONTRA você",
       "visual": { "type": "statement", "note": "card do próximo vídeo + seta apontando" },
-      "durationSec": 5
+      "durationSec": 8
     }
   ],
   "cta": { "text": "Calculadora de juros compostos grátis no FinMoovi", "target": "blog" },
