@@ -4,6 +4,7 @@
   "category": "basico",
   "keyword": "Juros Compostos",
   "nextVideoTitle": "Dívida do cartão",
+  "intro": { "big": "R$ 3.200.000", "sub": "Como R$ 500 viram isso?" },
   "scenes": [
     {
       "id": 1,

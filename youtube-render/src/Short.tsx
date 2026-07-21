@@ -2,16 +2,18 @@ import { AbsoluteFill, Sequence, useVideoConfig } from 'remotion';
 import { TransitionSeries, linearTiming } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
-import { Background, Watermark, SceneRenderer, SceneAudioLayer } from './scenes';
+import { Background, Watermark, SceneRenderer, SceneAudioLayer, ShockIntro } from './scenes';
 import { BackgroundMusic } from './audio/music';
 
 export const TRANSITION_FRAMES = 8;
+export const INTRO_FRAMES = 45; // abertura disruptiva (~1,5s) antes das cenas
 
 export type ShortScript = {
   slug: string;
   term: string;
   keyword: string;
   nextVideoTitle?: string;
+  intro?: { big: string; sub: string };
   scenes: Array<{
     id?: number;
     role: string;
@@ -102,22 +104,31 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
     }
   }
 
+  const introFrames = script.intro ? INTRO_FRAMES : 0;
+
   return (
     <AbsoluteFill>
       <Background />
       <BackgroundMusic />
       <Watermark />
-      <TransitionSeries>{children}</TransitionSeries>
-      {/* Trilho MESTRE: áudio + legenda + ícones + SFX, sequencial e SEM sobreposição. */}
-      {script.scenes.map((scene, i) => (
-        <Sequence
-          key={`al${i}`}
-          from={masterStarts[i]}
-          durationInFrames={Math.max(1, frames[i] - (i < script.scenes.length - 1 ? TRANSITION_FRAMES : 0))}
-        >
-          <SceneAudioLayer scene={scene} timing={sceneTimingFor(timing, scene, i)} />
+      {script.intro && (
+        <Sequence durationInFrames={INTRO_FRAMES}>
+          <ShockIntro big={script.intro.big} sub={script.intro.sub} />
         </Sequence>
-      ))}
+      )}
+      <Sequence from={introFrames}>
+        <TransitionSeries>{children}</TransitionSeries>
+        {/* Trilho MESTRE: áudio + legenda + ícones + SFX, sequencial e SEM sobreposição. */}
+        {script.scenes.map((scene, i) => (
+          <Sequence
+            key={`al${i}`}
+            from={masterStarts[i]}
+            durationInFrames={Math.max(1, frames[i] - (i < script.scenes.length - 1 ? TRANSITION_FRAMES : 0))}
+          >
+            <SceneAudioLayer scene={scene} timing={sceneTimingFor(timing, scene, i)} />
+          </Sequence>
+        ))}
+      </Sequence>
     </AbsoluteFill>
   );
 };

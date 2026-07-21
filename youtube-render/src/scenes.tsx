@@ -1,4 +1,4 @@
-import { AbsoluteFill, Audio, interpolate, random, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
+import { AbsoluteFill, Audio, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
 import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 import { FinMooviIcon } from './icon';
 import { KaraokeCaption } from './captions';
@@ -81,7 +81,36 @@ export const Watermark: React.FC = () => {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Casca de cena: Ken Burns contínuo no miolo + legenda karaokê embaixo.
+// ABERTURA DISRUPTIVA (#1): o número-choque SLAM na tela com boom + flash + shake,
+// e a pergunta de curiosidade surge embaixo. Para o dedo do usuário nos 1,5s iniciais.
+// ─────────────────────────────────────────────────────────────────────────────
+export const ShockIntro: React.FC<{ big: string; sub: string }> = ({ big, sub }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const slam = spring({ frame, fps, config: { damping: 9, mass: 0.7 } });
+  const scale = interpolate(slam, [0, 1], [2.6, 1]);
+  const flash = interpolate(frame, [0, 2, 12], [1, 0.7, 0], { extrapolateRight: 'clamp' });
+  const shake = frame < 10 ? Math.sin(frame * 3) * (1 - frame / 10) * 10 : 0;
+  const subIn = spring({ frame: frame - 14, fps, config: { damping: 14 } });
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+      <Audio src={staticFile('sfx/boom.ogg')} volume={0.9} />
+      <div style={{
+        ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: 132, lineHeight: 1,
+        transform: `scale(${scale}) translateX(${shake}px)`, textAlign: 'center', padding: '0 40px',
+        filter: 'drop-shadow(0 0 50px rgba(139,92,246,0.6))',
+      }}>{big}</div>
+      <div style={{
+        marginTop: 34, fontFamily: BODY, fontWeight: 800, fontSize: 56, color: BRAND.text, textAlign: 'center',
+        opacity: interpolate(subIn, [0, 1], [0, 1]), transform: `translateY(${interpolate(subIn, [0, 1], [24, 0])}px)`,
+      }}>{sub}</div>
+      <AbsoluteFill style={{ background: '#fff', opacity: flash, pointerEvents: 'none' }} />
+    </AbsoluteFill>
+  );
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Casca de cena: Ken Burns contínuo no miolo (o visual central nunca fica vazio).
 // ─────────────────────────────────────────────────────────────────────────────
 type Scene = {
   role: string;
@@ -112,21 +141,6 @@ function revealFrameFor(scene: Scene, timing: SceneTiming | null | undefined, fp
   return 0;
 }
 
-// Entrada do visual — usa o frame LOCAL (0 no momento do reveal), então a animação
-// e os motion graphics internos (contagem, gráfico) começam quando a fala chega.
-const RevealedVisual: React.FC<{ kb: number; children: React.ReactNode }> = ({ kb, children }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const enter = spring({ frame, fps, config: { damping: 16, mass: 0.6 } });
-  const enterScale = interpolate(enter, [0, 1], [0.9, 1]);
-  const enterY = interpolate(enter, [0, 1], [40, 0]);
-  return (
-    <div style={{ transform: `scale(${kb * enterScale}) translateY(${enterY}px)`, textAlign: 'center' }}>
-      {children}
-    </div>
-  );
-};
-
 const SceneShell: React.FC<{ scene: Scene; timing?: SceneTiming | null; children: React.ReactNode }> = ({ scene, timing, children }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -134,13 +148,24 @@ const SceneShell: React.FC<{ scene: Scene; timing?: SceneTiming | null; children
   const totalFrames = Math.max(1, Math.round(durationSec * fps));
   // Ken Burns: leve zoom-in contínuo — nada fica parado (roda a cena inteira).
   const kb = interpolate(frame, [0, totalFrames], [1.0, 1.08], { extrapolateRight: 'clamp' });
+  // Entrada no INÍCIO da cena → o centro NUNCA fica vazio.
+  const enter = spring({ frame, fps, config: { damping: 16, mass: 0.6 } });
+  const enterScale = interpolate(enter, [0, 1], [0.9, 1]);
+  const enterY = interpolate(enter, [0, 1], [40, 0]);
+  // O cue não ESCONDE mais o visual; ele dá um SOCO sincronizado (pulse + flash)
+  // no instante em que a palavra é falada. Assim: sincronia + nunca vazio.
   const reveal = revealFrameFor(scene, timing, fps);
+  const punch = reveal > 2 ? interpolate(frame, [reveal - 1, reveal + 4, reveal + 16], [1, 1.13, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 1;
+  const flash = reveal > 2 ? interpolate(frame, [reveal, reveal + 3, reveal + 14], [0, 0.5, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 0;
   return (
     <AbsoluteFill>
       <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: 380, paddingLeft: 60, paddingRight: 60 }}>
-        <Sequence from={reveal} layout="none">
-          <RevealedVisual kb={kb}>{children}</RevealedVisual>
-        </Sequence>
+        <div style={{
+          transform: `scale(${kb * enterScale * punch}) translateY(${enterY}px)`, textAlign: 'center',
+          filter: flash > 0 ? `drop-shadow(0 0 ${Math.round(flash * 50)}px ${BRAND.cyan})` : undefined,
+        }}>
+          {children}
+        </div>
       </AbsoluteFill>
     </AbsoluteFill>
   );
