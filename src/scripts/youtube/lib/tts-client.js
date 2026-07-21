@@ -2,70 +2,110 @@
  * Cliente de ÁUDIO do canal do YouTube (F1.2 — IMPLEMENTACAO20).
  *
  * Duas responsabilidades, desacopladas:
- *   1. VOZ (TTS)  — sintetiza narração pt-BR, com FALLBACK entre provedores
- *      (mesmo padrão do image-router do blog):
- *        1º Google Cloud TTS — Chirp 3 HD pt-BR   (GOOGLE_TTS_API_KEY)
- *        2º Azure AI Speech  — Neural pt-BR        (AZURE_SPEECH_KEY + AZURE_SPEECH_REGION)
- *   2. TIMESTAMPS — Whisper via Together devolve o start/end REAL de cada
- *      palavra do áudio gerado (TOGETHER_TTS_API_KEY). Independe do provedor
- *      de voz — troca a voz sem mexer no timing.
+ *   1. VOZ (TTS) — sintetiza narração pt-BR com FALLBACK entre provedores
+ *      (padrão do image-router). Ordem:
+ *        1º edge  — Microsoft Edge Read-Aloud (vozes neurais = as MESMAS do Azure),
+ *                   pt-BR autêntico, GRÁTIS e SEM chave. Provedor PRIMÁRIO. (dep: msedge-tts)
+ *        2º piper — TTS offline (licença MIT), 100% local, nunca depende de rede.
+ *                   Só entra se PIPER_BIN + PIPER_MODEL apontarem o binário e o
+ *                   modelo pt-BR (baixados no workflow do Actions). Saída .wav.
+ *        3º azure — Azure AI Speech oficial (SLA), só entra se AZURE_SPEECH_KEY + REGION.
+ *   2. TIMESTAMPS — Whisper via Together devolve o start/end REAL de cada palavra
+ *      do áudio gerado (TOGETHER_TTS_API_KEY). Independe do provedor de voz —
+ *      troca a voz sem mexer no timing.
  *
- * As chaves vivem só como secrets do GitHub (não no ambiente local). Um
- * provedor só entra na lista se suas credenciais existirem — adicionar/remover
- * um secret liga/desliga o provedor sem tocar no código.
+ * Decisão (20-21/07): edge-tts é o caminho grátis + brasileiro autêntico; Piper é
+ * a rede de segurança offline (licença comercial-OK); voz "premium" (Azure HD /
+ * clonada) fica como upgrade futuro. Ver seção 10 do doc IMPLEMENTACAO20.
  *
- * A VOZ ainda não foi escolhida pelo dono (ele vai ouvir as amostras). Os nomes
- * em VOICES são PLACEHOLDERS pareados (mesmo registro nos dois provedores);
- * trocar é 1 linha. Ver seção 10 do doc IMPLEMENTACAO20.
+ * A voz padrão (VOICES.edge) ainda será trocada pelo timbre profissional que o
+ * dono escolher entre as vozes pt-BR do Edge — é 1 linha.
  */
 
-// Voz padrão por provedor — PLACEHOLDER até o dono escolher ouvindo as amostras.
-// Pareadas de propósito (mesmo gênero/registro) p/ um fallback não trocar o
-// timbre do canal. Formato Google: `<locale>-Chirp3-HD-<Nome>`; Azure: `<Nome>Neural`.
+// Voz padrão por provedor. `edge` usa nomes de voz da Microsoft (`pt-BR-<Nome>Neural`);
+// `azure` idem; `piper` usa o caminho do modelo .onnx (via env).
 export const VOICES = {
-  google: { languageCode: 'pt-BR', name: 'pt-BR-Chirp3-HD-Charon' }, // ♂ (placeholder)
-  azure: { languageCode: 'pt-BR', name: 'pt-BR-AntonioNeural' },     // ♂ (placeholder, pareada)
+  edge: { name: 'pt-BR-AntonioNeural' },   // PLACEHOLDER — trocar pelo timbre escolhido
+  azure: { languageCode: 'pt-BR', name: 'pt-BR-AntonioNeural' },
+  piper: { model: process.env.PIPER_MODEL },
 };
 
-// Escapa texto p/ dentro do SSML do Azure.
 function escapeXml(s) {
   return String(s).replace(/[<>&'"]/g, (c) => (
     { '<': '&lt;', '>': '&gt;', '&': '&amp;', "'": '&apos;', '"': '&quot;' }[c]
   ));
 }
 
-// ── Provedores de VOZ (cada um retorna null se não estiver configurado) ──
-
-function googleProvider() {
-  const key = process.env.GOOGLE_TTS_API_KEY;
-  if (!key) return null;
+// ── Provedor 1: Edge Read-Aloud (grátis, sem chave, primário) ──
+function edgeProvider() {
   return {
-    name: 'google',
+    name: 'edge',
+    ext: 'mp3',
     async synth(text, voice) {
-      const res = await fetch(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${key}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          input: { text },
-          voice: { languageCode: voice.languageCode, name: voice.name },
-          audioConfig: { audioEncoding: 'MP3' },
-        }),
-        signal: AbortSignal.timeout(60000),
-      });
-      if (!res.ok) throw new Error(`google HTTP ${res.status}: ${(await res.text().catch(() => '')).slice(0, 200)}`);
-      const data = await res.json();
-      if (!data.audioContent) throw new Error('google: resposta sem audioContent');
-      return Buffer.from(data.audioContent, 'base64');
+      const { MsEdgeTTS, OUTPUT_FORMAT } = await import('msedge-tts');
+      let lastErr;
+      // O endpoint do Edge às vezes fecha o stream cedo (turn.end não chega) — retenta.
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+          const tts = new MsEdgeTTS();
+          await tts.setMetadata(voice.name, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3);
+          const { audioStream } = tts.toStream(text);
+          const chunks = [];
+          await new Promise((res, rej) => {
+            audioStream.on('data', (c) => chunks.push(c));
+            audioStream.on('end', res);
+            audioStream.on('error', rej);
+          });
+          const buf = Buffer.concat(chunks);
+          if (buf.length < 3000) throw new Error('áudio curto/truncado');
+          return buf;
+        } catch (err) {
+          lastErr = err;
+          if (attempt < 3) await new Promise((r) => setTimeout(r, 1500 * attempt));
+        }
+      }
+      throw lastErr;
     },
   };
 }
 
+// ── Provedor 2: Piper offline (MIT) — só se configurado (PIPER_BIN + PIPER_MODEL) ──
+function piperProvider() {
+  const bin = process.env.PIPER_BIN;
+  const model = process.env.PIPER_MODEL;
+  if (!bin || !model) return null;
+  return {
+    name: 'piper',
+    ext: 'wav',
+    async synth(text) {
+      const { spawn } = await import('child_process');
+      const { readFile, unlink } = await import('fs/promises');
+      const os = await import('os');
+      const path = await import('path');
+      const out = path.join(os.tmpdir(), `piper-${process.pid}-${Math.floor(Math.random() * 1e9)}.wav`);
+      await new Promise((res, rej) => {
+        const p = spawn(bin, ['-m', model, '-f', out]);
+        p.on('error', rej);
+        p.on('close', (code) => (code === 0 ? res() : rej(new Error(`piper saiu com código ${code}`))));
+        p.stdin.write(text);
+        p.stdin.end();
+      });
+      const buf = await readFile(out);
+      unlink(out).catch(() => {});
+      if (buf.length < 3000) throw new Error('piper: áudio vazio');
+      return buf;
+    },
+  };
+}
+
+// ── Provedor 3: Azure oficial — só se AZURE_SPEECH_KEY + AZURE_SPEECH_REGION ──
 function azureProvider() {
   const key = process.env.AZURE_SPEECH_KEY;
   const region = process.env.AZURE_SPEECH_REGION;
   if (!key || !region) return null;
   return {
     name: 'azure',
+    ext: 'mp3',
     async synth(text, voice) {
       const ssml = `<speak version="1.0" xml:lang="${voice.languageCode}"><voice name="${voice.name}">${escapeXml(text)}</voice></speak>`;
       const res = await fetch(`https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`, {
@@ -86,24 +126,24 @@ function azureProvider() {
 }
 
 /**
- * Provedores de voz habilitados, em ordem de prioridade (Google → Azure).
+ * Provedores de voz habilitados, em ordem de prioridade (edge → piper → azure).
+ * O edge está sempre presente (não precisa de chave).
  */
 export function getTtsProviders() {
-  return [googleProvider(), azureProvider()].filter(Boolean);
+  return [edgeProvider(), piperProvider(), azureProvider()].filter(Boolean);
 }
 
 /**
- * Nome do provedor primário disponível (ou null). O gerador escolhe UMA vez por
- * vídeo e passa `providerName` em todas as cenas — assim um vídeo nunca mistura
- * vozes de provedores diferentes.
+ * Nome do provedor primário disponível. O gerador escolhe UMA vez por vídeo e
+ * passa `providerName` em todas as cenas — assim um vídeo nunca mistura vozes.
  */
 export function pickProvider() {
   return getTtsProviders()[0]?.name ?? null;
 }
 
 /**
- * Sintetiza `text` em mp3 (Buffer). Tenta o provedor pedido (ou o primário) e,
- * em falha, cai para o próximo. Retorna { audio, provider, voice }.
+ * Sintetiza `text` em áudio (Buffer). Tenta o provedor pedido (ou o primário) e,
+ * em falha, cai para o próximo. Retorna { audio, provider, voice, ext }.
  *
  * @param {string} text
  * @param {{ voices?: object, providerName?: string }} [opts]
@@ -111,21 +151,19 @@ export function pickProvider() {
 export async function synthesizeSpeech(text, { voices = VOICES, providerName } = {}) {
   const providers = getTtsProviders();
   if (!providers.length) {
-    throw new Error('Nenhum provedor de TTS configurado (defina GOOGLE_TTS_API_KEY, ou AZURE_SPEECH_KEY + AZURE_SPEECH_REGION).');
+    throw new Error('Nenhum provedor de TTS disponível (edge deveria estar sempre presente — verifique a dep msedge-tts).');
   }
-  // Ordena começando pelo provedor pedido (se houver), mantendo os demais como fallback.
   const ordered = providerName
     ? [...providers.filter((p) => p.name === providerName), ...providers.filter((p) => p.name !== providerName)]
     : providers;
 
   const errors = [];
   for (const p of ordered) {
-    const voice = voices[p.name];
-    if (!voice) { errors.push(`${p.name}: sem voz definida em VOICES`); continue; }
+    const voice = voices[p.name] || {};
     try {
       const audio = await p.synth(text, voice);
       if (!audio || audio.length < 500) throw new Error('áudio vazio/curto demais');
-      return { audio, provider: p.name, voice: voice.name };
+      return { audio, provider: p.name, ext: p.ext, voice: voice.name || p.name };
     } catch (err) {
       errors.push(`${p.name}: ${err.message}`);
     }
@@ -136,17 +174,17 @@ export async function synthesizeSpeech(text, { voices = VOICES, providerName } =
 /**
  * Timestamps REAIS por palavra do áudio (Whisper via Together). Devolve
  * [{ word, start, end }] em segundos. Usado p/ substituir o timing sintético do
- * karaokê (captions.tsx) e sincronizar ícones/SFX.
+ * karaokê (captions.tsx) e sincronizar ícones/SFX. Aceita mp3 ou wav.
  *
- * @param {Buffer} audioBuffer  mp3 gerado pelo TTS
- * @param {{ language?: string }} [opts]
+ * @param {Buffer} audioBuffer
+ * @param {{ language?: string, ext?: string }} [opts]
  */
-export async function transcribeWords(audioBuffer, { language = 'pt' } = {}) {
+export async function transcribeWords(audioBuffer, { language = 'pt', ext = 'mp3' } = {}) {
   const key = process.env.TOGETHER_TTS_API_KEY;
   if (!key) throw new Error('TOGETHER_TTS_API_KEY ausente (necessária p/ os timestamps do Whisper).');
 
   const fd = new FormData();
-  fd.append('file', new Blob([audioBuffer]), 'audio.mp3');
+  fd.append('file', new Blob([audioBuffer]), `audio.${ext}`);
   fd.append('model', 'openai/whisper-large-v3');
   fd.append('language', language);
   fd.append('response_format', 'verbose_json');
@@ -164,16 +202,16 @@ export async function transcribeWords(audioBuffer, { language = 'pt' } = {}) {
   return words.map((w) => ({ word: w.word, start: w.start, end: w.end }));
 }
 
-// Auto-teste manual: `node src/scripts/youtube/lib/tts-client.js "frase" out.mp3`
-// (usa as env vars presentes; gera o mp3 e imprime os timestamps do Whisper).
+// Auto-teste manual: `node src/scripts/youtube/lib/tts-client.js "frase" out`
+// (gera o áudio com o provedor disponível e imprime os timestamps do Whisper).
 if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('lib/tts-client.js')) {
   const text = process.argv[2] || 'Dinheiro sem controle é dinheiro dos outros.';
-  const out = process.argv[3];
+  const outBase = process.argv[3];
   const { writeFileSync } = await import('fs');
-  console.log('Provedores de voz habilitados:', getTtsProviders().map((p) => p.name).join(', ') || '(nenhum)');
-  const { audio, provider, voice } = await synthesizeSpeech(text);
-  console.log(`✓ TTS via ${provider} (${voice}) — ${audio.length} bytes`);
-  if (out) { writeFileSync(out, audio); console.log(`  salvo em ${out}`); }
-  const words = await transcribeWords(audio);
+  console.log('Provedores de voz:', getTtsProviders().map((p) => p.name).join(', ') || '(nenhum)');
+  const { audio, provider, voice, ext } = await synthesizeSpeech(text);
+  console.log(`✓ TTS via ${provider} (${voice}) — ${audio.length} bytes .${ext}`);
+  if (outBase) { writeFileSync(`${outBase}.${ext}`, audio); console.log(`  salvo em ${outBase}.${ext}`); }
+  const words = await transcribeWords(audio, { ext });
   console.log(`✓ Whisper: ${words.length} palavras`, JSON.stringify(words.slice(0, 8)));
 }

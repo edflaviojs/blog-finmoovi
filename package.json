@@ -22,6 +22,7 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
     "astro": "^4.16.0",
+    "msedge-tts": "^2.0.7",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
