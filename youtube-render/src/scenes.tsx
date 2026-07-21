@@ -4,7 +4,16 @@ import { FinMooviIcon } from './icon';
 import { KaraokeCaption } from './captions';
 import { IconBurst, SHOT_ICONS, ShotIconKey } from './icons-fx';
 import { SceneSfx, resolveShotSfx } from './audio/sfx';
-import type { Shot } from './Short';
+import type { Shot, AppScreen } from './Short';
+// Biblioteca de b-roll NATIVO (React puro, sem OffthreadVideo) — cada tela é uma
+// composição 1080×1920 completa; o AppShot (v3.3) as monta escaladas num celular.
+import { DashboardHero } from './DashboardHero';
+import { CartoesCountUpShort } from './CartoesCountUp';
+import { FluxoBarrasShort } from './FluxoBarras';
+import { ExtratoListaShort } from './ExtratoLista';
+import { BalancoDonutShort } from './BalancoDonut';
+import { ComprasCarrinhoShort } from './ComprasCarrinho';
+import { SmartCaptureVozShort } from './SmartCaptureVoz';
 
 // Formatação pt-BR de números (contadores): 3200000 → "3.200.000".
 const nfBR = new Intl.NumberFormat('pt-BR');
@@ -976,6 +985,177 @@ const ShotTypewriter: React.FC<{ text: string; life: number; gradient?: boolean 
   );
 };
 
+// ═════════════════════════════════════════════════════════════════════════════
+// SHOT DE APP NATIVO (v3.3) — b-roll das telas do FinMoovi recriadas em React puro
+// (NUNCA a gravação app-rec.mp4 / OffthreadVideo — gitignored, ausente na CI). Cada
+// tela é uma composição 1080×1920 completa (mesmo pixel-art do estúdio); aqui ela é
+// ESCALADA e montada dentro de um CELULAR flutuante no miolo do shot, livre da faixa
+// de legenda (paddingBottom:380 do ShotView) e da marca d'água (topo).
+// ─────────────────────────────────────────────────────────────────────────────
+// Tela virtual = tamanho nativo das composições (9:16). Escalamos por igual → sem
+// distorção. SCREEN_H folgado p/ caber sob a marca e acima da legenda mesmo com o
+// pop/zoom do ShotView.
+const APP_SCREEN_H = 1080;
+const APP_SCREEN_W = Math.round(APP_SCREEN_H * (1080 / 1920)); // 608
+const APP_SCALE = APP_SCREEN_W / 1080; // = APP_SCREEN_H/1920 (escala uniforme)
+
+// Halo de brilho da marca ATRÁS do celular — radial-gradient NATIVO (sem filter:blur,
+// seguindo o padrão de perf do fundo desta cena: glow barato, render voa).
+const AppHalo: React.FC = () => (
+  <div style={{
+    position: 'absolute', width: 980, height: 980, borderRadius: '50%',
+    background: `radial-gradient(circle at center, ${BRAND.violet}55 0%, transparent 62%)`,
+    pointerEvents: 'none',
+  }} />
+);
+
+// Moldura de celular flutuante (linguagem do Phone/AppBroll, mas SEM vídeo): a tela
+// virtual 1080×1920 é escalada p/ dentro do vidro arredondado (overflow:hidden).
+const PhoneShot: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const frame = useCurrentFrame();
+  const float = Math.sin(frame / 26) * 6; // deriva suave contínua (nunca "parado")
+  return (
+    <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <AppHalo />
+      <div style={{
+        transform: `translateY(${float}px)`,
+        width: APP_SCREEN_W + 28, height: APP_SCREEN_H + 28, padding: 14, borderRadius: 52,
+        background: '#05070a',
+        boxShadow: '0 45px 120px rgba(139,92,246,0.5), 0 0 0 2px rgba(255,255,255,0.06), inset 0 0 0 2px rgba(255,255,255,0.03)',
+      }}>
+        <div style={{ width: APP_SCREEN_W, height: APP_SCREEN_H, borderRadius: 40, overflow: 'hidden', background: BRAND.bg, position: 'relative' }}>
+          {/* tela virtual em tamanho nativo, escalada por igual (origem no topo-esq) */}
+          <div style={{ position: 'relative', width: 1080, height: 1920, transform: `scale(${APP_SCALE})`, transformOrigin: 'top left' }}>
+            {children}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// CALCULADORA (nova, nativa) — tela de Juros Compostos do FinMoovi: campos de entrada
+// + curva exponencial subindo + contador crescendo. Composição 1080×1920 completa
+// (como as demais telas), animada pela VIDA do shot (`life`). Salva do design do commit
+// revertido 0d4f1b6, adaptada p/ o ciclo de vida do shot.
+const CALC_INPUTS = [
+  { label: 'Valor inicial', value: 'R$ 1.000' },
+  { label: 'Aporte mensal', value: 'R$ 300' },
+  { label: 'Taxa', value: '1% a.m.' },
+  { label: 'Período', value: '25 anos' },
+];
+const CALC_TARGET = 486000; // resultado ilustrativo (crome de UI, não vem da narração)
+
+const AppCalculadora: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const W = 900, H = 470, pad = 46, N = 40;
+
+  // Curva desenha do ~15% ao ~80% da vida do shot; depois respira (glow) — sempre há
+  // movimento (cabeça pulsando + brilho) pro resto da vida.
+  const drawStart = Math.round(life * 0.15);
+  const drawEnd = Math.max(drawStart + 12, Math.round(life * 0.8));
+  const p = interpolate(frame, [drawStart, drawEnd], [0.02, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic),
+  });
+  const drawN = Math.max(0, Math.floor(p * N));
+  const path: string[] = [];
+  for (let i = 0; i <= drawN; i++) {
+    const x = pad + (i / N) * (W - pad * 2);
+    const y = H - pad - Math.pow(i / N, 2.2) * (H - pad * 2);
+    path.push(`${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`);
+  }
+  const hx = pad + (drawN / N) * (W - pad * 2);
+  const hy = H - pad - Math.pow(drawN / N, 2.2) * (H - pad * 2);
+  const isComplete = frame >= drawEnd;
+  const breathe = isComplete ? 0.5 + 0.5 * Math.sin((frame - drawEnd) / 12) : 0;
+  const headPulse = 12 + Math.sin(frame / 5) * 4;
+  const val = Math.round(p * CALC_TARGET);
+
+  return (
+    <AbsoluteFill>
+      <Background />
+      <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: 28, padding: '0 60px' }}>
+        {/* header: marca + título da calculadora */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+          <FinMooviIcon size={44} idSuffix="calc" />
+          <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 52, color: BRAND.text }}>Juros Compostos</div>
+        </div>
+
+        {/* campos de entrada (chips) entrando escalonados */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 16, maxWidth: 940 }}>
+          {CALC_INPUTS.map((f, i) => {
+            const s = spring({ frame, fps, delay: 4 + i * 5, config: { damping: 15, mass: 0.6 } });
+            const op = interpolate(s, [0, 1], [0, 1]);
+            const ty = interpolate(s, [0, 1], [22, 0]);
+            return (
+              <div key={i} style={{
+                opacity: op, transform: `translateY(${ty}px)`,
+                display: 'flex', flexDirection: 'column', gap: 4,
+                padding: '16px 26px', borderRadius: 18,
+                background: 'linear-gradient(160deg, #1b2230, #12161f)', border: '1px solid rgba(255,255,255,0.08)',
+              }}>
+                <div style={{ fontFamily: BODY, fontWeight: 700, fontSize: 24, color: BRAND.sub }}>{f.label}</div>
+                <div style={{ fontFamily: DISPLAY, fontWeight: 800, fontSize: 40, color: BRAND.text }}>{f.value}</div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* gráfico da curva exponencial subindo */}
+        <svg width={W} height={H}>
+          <defs>
+            <linearGradient id="calc-cg" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor={BRAND.cyan} />
+              <stop offset="50%" stopColor={BRAND.violet} />
+              <stop offset="100%" stopColor={BRAND.magenta} />
+            </linearGradient>
+          </defs>
+          <line x1={pad} y1={H - pad} x2={W - pad} y2={H - pad} stroke={BRAND.sub} strokeWidth={2} opacity={0.35} />
+          {drawN > 0 && (
+            <path d={path.join(' ')} fill="none" stroke="url(#calc-cg)" strokeWidth={10} strokeLinecap="round" strokeLinejoin="round"
+              style={{ filter: isComplete ? `drop-shadow(0 0 ${Math.round(6 + breathe * 8)}px ${BRAND.magenta})` : undefined }} />
+          )}
+          {drawN > 0 && <circle cx={hx} cy={hy} r={headPulse} fill={BRAND.magenta} opacity={0.35} />}
+          {drawN > 0 && <circle cx={hx} cy={hy} r={13} fill={BRAND.magenta} />}
+        </svg>
+
+        {/* contador do resultado subindo com a curva */}
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontFamily: BODY, fontWeight: 700, fontSize: 28, color: BRAND.sub }}>Seu dinheiro rende</div>
+          <div style={{ ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: 96, lineHeight: 1.05 }}>
+            R$ {nfBR.format(val)}
+          </div>
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// Resolve a tela nativa (composição 1080×1920) para cada valor de `app`.
+// Desconhecido → null (o AppShot cai no fallback statement, nunca quebra).
+const appScreenElement = (app: AppScreen | undefined, life: number): React.ReactNode | null => {
+  switch (app) {
+    case 'dashboard': return <DashboardHero theme="dark" lang="pt" currency="BRL" />;
+    case 'cartoes': return <CartoesCountUpShort />;
+    case 'fluxo': return <FluxoBarrasShort />;
+    case 'extrato': return <ExtratoListaShort />;
+    case 'balanco': return <BalancoDonutShort />;
+    case 'compras': return <ComprasCarrinhoShort />;
+    case 'smartcapture': return <SmartCaptureVozShort />;
+    case 'calculadora': return <AppCalculadora life={life} />;
+    default: return null;
+  }
+};
+
+// Shot de app: tela nativa dentro do celular flutuante. `app` inválido → fallback
+// gracioso (statement com a nota do shot), sem OffthreadVideo, sem crash.
+const AppShot: React.FC<{ app?: AppScreen; note?: string; base: Scene; life: number }> = ({ app, note, base, life }) => {
+  const screen = appScreenElement(app, life);
+  if (!screen) return <SceneStatement scene={pseudoScene(base, note ?? base.onScreenText)} />;
+  return <PhoneShot>{screen}</PhoneShot>;
+};
+
 // Um shot: entra com pop+slide e mostra seu visual pela sua vida.
 const ShotView: React.FC<{ shot: Shot; life: number; base: Scene; revealFrame: number; durationFrames: number }> = ({ shot, life, base, revealFrame, durationFrames }) => {
   const frame = useCurrentFrame();
@@ -998,6 +1178,7 @@ const ShotView: React.FC<{ shot: Shot; life: number; base: Scene; revealFrame: n
       case 'chart': return <SceneChart scene={pseudoScene(base, v.text ?? base.onScreenText)} revealFrame={Math.min(revealFrame, 4)} durationFrames={life} />;
       case 'icon': return <ShotIcon icon={v.icon} />;
       case 'metaphor': return <ShotMetaphor metaphor={v.metaphor} life={life} />;
+      case 'app': return <AppShot app={v.app} note={v.note} base={base} life={life} />;
       case 'formula': return <SceneFormula scene={pseudoScene(base, v.text ?? base.onScreenText)} />;
       case 'list':
       case 'statement':

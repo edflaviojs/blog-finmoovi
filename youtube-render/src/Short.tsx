@@ -11,8 +11,12 @@ export const INTRO_FRAMES_V3 = 120; // intro dinâmica v3 (~4s): frase + contado
 export const SIGNATURE_FRAMES = 75; // assinatura final da marca (~2,5s) depois da última cena
 
 // ── CONTRACT v3 — "SHOTS" ────────────────────────────────────────────────────
+// Telas nativas do app disponíveis para o shot de b-roll `app` (v3.3).
+export type AppScreen =
+  | 'dashboard' | 'cartoes' | 'fluxo' | 'extrato' | 'balanco' | 'compras' | 'smartcapture' | 'calculadora';
+
 export type ShotVisual = {
-  type: 'number' | 'counter' | 'chart' | 'icon' | 'metaphor' | 'statement' | 'formula' | 'list';
+  type: 'number' | 'counter' | 'chart' | 'icon' | 'metaphor' | 'statement' | 'formula' | 'list' | 'app';
   text?: string;
   from?: number;
   to?: number;
@@ -20,6 +24,8 @@ export type ShotVisual = {
   icon?: 'money' | 'coins' | 'growth' | 'clock' | 'card' | 'warning' | 'question' | 'mind'
     | 'piggy' | 'bank' | 'target' | 'trophy' | 'bulb' | 'hourglass' | 'wallet' | 'fire' | 'chart-down' | 'shield';
   metaphor?: 'bola-neve' | 'avalanche' | 'escorregao' | 'clique-link';
+  // b-roll de app nativo (v3.3): qual tela do FinMoovi renderizar dentro do celular.
+  app?: AppScreen;
   note?: string;
 };
 export type Shot = {
