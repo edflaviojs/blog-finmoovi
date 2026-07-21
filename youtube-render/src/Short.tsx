@@ -3,6 +3,7 @@ import { TransitionSeries, linearTiming } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
 import { Background, Watermark, SceneRenderer } from './scenes';
+import { BackgroundMusic } from './audio/music';
 
 export const TRANSITION_FRAMES = 8;
 
@@ -94,6 +95,7 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
   return (
     <AbsoluteFill>
       <Background />
+      <BackgroundMusic />
       <Watermark />
       <TransitionSeries>{children}</TransitionSeries>
     </AbsoluteFill>

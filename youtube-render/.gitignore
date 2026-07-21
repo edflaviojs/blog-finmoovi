@@ -6,6 +6,8 @@ public/app-rec.mp4
 public/audio/
 *.mp3
 *.wav
+# exceção: trilha de fundo (placeholder versionado; o dono troca pela YT Audio Library)
+!public/music/*.mp3
 assets/
 # Biblioteca de clipes de b-roll (artefatos pesados) — NUNCA no git.
 # Ela vive em FINMOOVI/VIDEOS-BROLL/ (fora deste repo); este ignore é defensivo.
