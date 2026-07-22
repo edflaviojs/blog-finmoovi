@@ -1,0 +1,188 @@
+{
+  "slug": "acoes",
+  "term": "ações",
+  "category": "basico",
+  "keyword": "ações",
+  "nextVideoTitle": "Como receber dividendos sem trabalhar mais",
+  "intro": {
+    "frase": "*Você ACREDITA* que R$ 500 pode virar *R$ 3.200.000*???",
+    "counter": {
+      "from": 500,
+      "to": 3200000,
+      "prefix": "R$"
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você acha que ações é papo de rico… olha só esse número, R$ 500 virou R$ 3.200.000!",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "ações",
+          "visual": {
+            "type": "statement",
+            "text": "ações",
+            "note": "fonte grande"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "500",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500",
+            "note": "animado"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "3.200.000",
+          "visual": {
+            "type": "number",
+            "text": "R$ 3.200.000",
+            "note": "impacto visual"
+          },
+          "sfx": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Uma ação é um pedacinho da empresa. Compra ação da XYZ por cinquenta reais, e se a empresa lança um sucesso, o preço sobe para setenta e cinco reais, gerando lucro de vinte e cinco reais.",
+      "durationSec": 13,
+      "shots": [
+        {
+          "anchor": "ação",
+          "visual": {
+            "type": "icon",
+            "icon": "growth",
+            "note": "seta subindo"
+          },
+          "sfx": null
+        },
+        {
+          "anchor": "XYZ",
+          "visual": {
+            "type": "chart",
+            "text": "XYZ",
+            "note": "gráfico de barras"
+          },
+          "sfx": null
+        },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 50",
+            "note": "valor inicial"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "setenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 75",
+            "note": "valor após sucesso"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "lucro",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 25",
+            "note": "ganho líquido"
+          },
+          "sfx": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "É como uma bola de neve descendo a ladeira: começa pequena, rola, ganha velocidade e vira uma avalanche de ganhos. Use a calculadora do FinMoovi e vê o resultado em tempo real.",
+      "durationSec": 13,
+      "shots": [
+        {
+          "anchor": "bola",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve",
+            "note": "bola rolando"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "avalanche",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche",
+            "note": "neve caindo"
+          },
+          "sfx": "avalanche"
+        },
+        {
+          "anchor": "Use",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "tela simulador"
+          },
+          "sfx": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "cta",
+      "narration": "Dinheiro sem controle é dinheiro dos outros. Quer descobrir quanto suas ações podem render? Clique na calculadora do FinMoovi, simule seu lucro e veja tudo em poucos cliques, é grátis!",
+      "durationSec": 9,
+      "shots": [
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle é dinheiro dos outros",
+            "note": "frase de efeito"
+          },
+          "sfx": null
+        },
+        {
+          "anchor": "Clique",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "tela de simulação"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "outro",
+      "narration": "E se você quiser saber como receber dividendos sem trabalhar mais, fica ligado no próximo vídeo.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "dividendos",
+          "visual": {
+            "type": "icon",
+            "icon": "bulb",
+            "note": "ideia brilhante"
+          },
+          "sfx": null
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Simule seu lucro na calculadora do FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 52
+}
