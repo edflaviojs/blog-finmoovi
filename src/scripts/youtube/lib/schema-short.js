@@ -125,6 +125,83 @@ function asNumber(v) {
   return null;
 }
 
+// === v3.6 — "DENTES" no anti-repetição (helpers usados por roteiro-short.js) ===
+// A checagem em si roda em roteiro-short.js (depende do CONTEXTO de vídeos
+// anteriores, que validateShortScript não conhece — o validador continua
+// puramente estrutural, sem estado externo). Aqui só ficam os helpers puros
+// de comparação/detecção, reaproveitáveis e testáveis isoladamente.
+
+// Quebra uma frase em palavras comparáveis: acento/caixa-insensível (via
+// norm()), remove "*" (marcação de ênfase) e qualquer pontuação — sobra só
+// letras/dígitos. Usado pelo check "molde de intro repetido".
+export function wordsForOverlap(text) {
+  return norm(text)
+    .replace(/\*/g, '')
+    .split(/[^0-9a-z]+/)
+    .filter(Boolean);
+}
+
+// Maior sequência de palavras CONTÍGUAS compartilhada entre duas frases
+// (DP de maior substring comum, a nível de palavra). Retorna as palavras do
+// trecho comum (array, na ordem em que aparecem) ou [] se nenhuma sequência
+// de tamanho >= minWords for compartilhada.
+export function longestSharedWordRun(textA, textB, minWords = 3) {
+  const a = wordsForOverlap(textA);
+  const b = wordsForOverlap(textB);
+  if (a.length < minWords || b.length < minWords) return [];
+  const dp = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+  let best = 0;
+  let bestEnd = 0;
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      if (a[i - 1] === b[j - 1]) {
+        dp[i][j] = dp[i - 1][j - 1] + 1;
+        if (dp[i][j] > best) {
+          best = dp[i][j];
+          bestEnd = i;
+        }
+      }
+    }
+  }
+  if (best < minWords) return [];
+  return a.slice(bestEnd - best, bestEnd);
+}
+
+// Números por extenso PROIBIDOS em texto de TELA (intro.frase, onScreenText,
+// shot.visual.text) — na narração falada pode (o TTS lê naturalmente).
+// Lista fechada pedida: unidades 1-10, dezenas 20-90 — estas SEMPRE são o
+// próprio número por extenso ("cinquenta" nunca é outra coisa), então
+// disparam sempre. cem/cento/mil/milhão(ões)/bilhão(ões) já são o padrão
+// ACEITO do canal quando seguem um algarismo (ex.: "R$ 3,2 milhões",
+// "500 mil", "1 bilhão" — ver exemplo canônico do prompt) — só contam como
+// "por extenso" quando NÃO há um algarismo logo antes (ex.: "R$ mil",
+// "cem reais", sem nenhum dígito). Acento-insensível (via norm(), que já
+// tira acentos) e por fronteira de palavra (\b).
+const ALWAYS_SPELLED_WORDS = [
+  'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez',
+  'vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta', 'oitenta', 'noventa',
+];
+const UNIT_SPELLED_WORDS = ['cem', 'cento', 'mil', 'milhao', 'milhoes', 'bilhao', 'bilhoes'];
+const ALWAYS_SPELLED_REGEX = new RegExp(`\\b(?:${ALWAYS_SPELLED_WORDS.join('|')})\\b`, 'i');
+const UNIT_SPELLED_REGEX = new RegExp(`\\b(?:${UNIT_SPELLED_WORDS.join('|')})\\b`, 'gi');
+// Há um algarismo "colado" (só símbolo de moeda/pontuação/espaço no meio) logo
+// antes da posição testada? Ex.: "...3,2 " antes de "milhões" → true.
+const DIGIT_JUST_BEFORE_REGEX = /\d[\d.,]*[^0-9a-z]{0,3}$/i;
+
+// Testa se um texto de TELA contém algum número por extenso do catálogo acima.
+export function hasSpelledOutNumber(text) {
+  if (!text) return false;
+  const clean = norm(text).replace(/\*/g, '');
+  if (ALWAYS_SPELLED_REGEX.test(clean)) return true;
+  let m;
+  UNIT_SPELLED_REGEX.lastIndex = 0;
+  while ((m = UNIT_SPELLED_REGEX.exec(clean))) {
+    const before = clean.slice(0, m.index);
+    if (!DIGIT_JUST_BEFORE_REGEX.test(before)) return true; // sem algarismo antes → por extenso de verdade
+  }
+  return false;
+}
+
 /**
  * Resolve os shots de uma cena. Cena v3 usa `shots`; cena legada (`visual`+`cue`,
  * sem shots) é normalizada para 1 shot. Retorna { shots, legacy }.

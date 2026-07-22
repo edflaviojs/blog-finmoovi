@@ -15,7 +15,7 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
-import { validateShortScript, sanitizeScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX, MAX_SFX_REPEATS, APP_SCREENS } from './lib/schema-short.js';
+import { validateShortScript, sanitizeScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX, MAX_SFX_REPEATS, APP_SCREENS, longestSharedWordRun, hasSpelledOutNumber } from './lib/schema-short.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync, realpathSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -146,7 +146,7 @@ export function buildAntiRepetitionBlock(context) {
         : '—';
       return `[${label}: estilo de intro ${c.style || '—'} · frase de intro "${c.frase || '—'}" · metáforas: ${metas} · histórias: ${stories}]`;
     });
-    return `🚫 ANTI-REPETIÇÃO — os vídeos anteriores do canal usaram: ${parts.join(' ')}. É PROIBIDO: repetir o MESMO estilo de intro do vídeo mais recente; reutilizar qualquer uma dessas metáforas principais; repetir ou parafrasear essas frases/histórias. Crie uma intro com formato DIFERENTE e um momento-história NOVO, com exemplo original adaptado ao tema deste termo.`;
+    return `🚫 ANTI-REPETIÇÃO — os vídeos anteriores do canal usaram: ${parts.join(' ')}. É PROIBIDO: repetir o MESMO estilo de intro do vídeo mais recente; reutilizar qualquer uma dessas metáforas principais; repetir ou parafrasear essas frases/histórias. Crie uma intro com formato DIFERENTE e um momento-história NOVO, com exemplo original adaptado ao tema deste termo. Se a sua frase de intro couber no molde "Você ACREDITA que X pode virar Y", ela será REJEITADA — invente outra construção.`;
   };
   let block = render(0); // 0 = sem corte nas frases-história
   if (block.length <= MAX) return block;
@@ -176,6 +176,7 @@ ${antiRep ? `\n${antiRep}\n` : ''}
 6. OUTRO (última cena, open loop): SEM "tchau/obrigado/até a próxima". Reflexão forte + gancho de curiosidade que puxa o PRÓXIMO vídeo. Preencha "nextVideoTitle" com o tema do próximo Short.
 7. Insira EXATAMENTE 1 vez (de preferência num beat ou na CTA) o bordão do canal: "${BORDAO}"
 8. NARRAÇÃO — diga sempre "vídeo", NUNCA "Short"/"Shorts": é sempre "te explico no próximo vídeo", jamais "no próximo short" (a hashtag #Shorts fica só nos metadados do upload, nunca na fala).
+9. NA TELA (intro.frase, onScreenText, "text" de shots) números são SEMPRE algarismos (R$ 50, 75%, 3x) — por extenso é PROIBIDO na tela (na narração falada pode).
 
 ════════ SHOTS — COREOGRAFIA POR PALAVRA (o coração do v3) ════════
 O dono quer MUITO MOVIMENTO: "a cada 2-3 segundos muda a tela — gráficos, ícones, imagens". Cada cena tem "shots": um ARRAY de 1 a 6 visuais rápidos que ENTRAM na tela no exato momento em que a palavra-âncora é FALADA.
@@ -321,7 +322,74 @@ function buildCorrectiveBlock(errors, warnings) {
   return block;
 }
 
-async function generateScript(t, { retries = 4, antiRep = '' } = {}) {
+/**
+ * CHECAGENS DURAS pós-geração (v3.6 — "dar dentes" ao anti-repetição, que até
+ * aqui era só o bloco 🚫 no prompt: ADVISORY-ONLY, e o LLM repetiu o mesmo
+ * molde de intro 3× seguidas mesmo com o bloco). Tratadas EXATAMENTE como
+ * erros do validador: entram no bloco corretivo da tentativa seguinte e
+ * contam como falha (a tentativa é descartada e regenerada). Rodam AQUI (não
+ * dentro de validateShortScript) porque dependem do CONTEXTO de vídeos
+ * anteriores (`recentContext`) — o validador continua puramente estrutural,
+ * sem estado externo, e sua assinatura não muda.
+ *   a) intro.frase não pode compartilhar ≥3 palavras CONTÍGUAS (acento/caixa-
+ *      insensível, ignorando "*"/pontuação) com nenhuma frase de intro
+ *      publicada recente — pega o "molde" (ex.: "você acredita que") mesmo
+ *      quando os números/valores mudam.
+ *   b) intro.style precisa DIFERIR do estilo do vídeo mais recente (era só
+ *      aviso em roteiro-short.js; v3.6 vira erro duro).
+ *   c) números por extenso são PROIBIDOS em texto de TELA (intro.frase,
+ *      onScreenText de cena, "text" de shot) — a narração falada pode.
+ */
+export function runHardAntiRepetitionChecks(script, recentContext) {
+  const errors = [];
+  const intro = (script && script.intro) || {};
+  const frase = typeof intro.frase === 'string' ? intro.frase : '';
+  const list = (recentContext || []).filter(Boolean);
+
+  // (a) molde de intro repetido
+  if (frase) {
+    for (const prev of list) {
+      if (!prev.frase) continue;
+      const shared = longestSharedWordRun(frase, prev.frase, 3);
+      if (shared.length >= 3) {
+        errors.push(`intro.frase repete o molde do vídeo anterior ("${shared.join(' ')}") — crie uma construção totalmente diferente`);
+        break;
+      }
+    }
+  }
+
+  // (b) intro.style igual ao do vídeo mais recente
+  const prevStyle = list[0] && list[0].style;
+  const curStyle = intro.style;
+  if (prevStyle && curStyle && String(curStyle).trim().toLowerCase() === String(prevStyle).trim().toLowerCase()) {
+    errors.push(`intro.style repete o estilo do vídeo mais recente ("${curStyle}") — use um formato diferente (pergunta/desafio/afirmacao/contagem)`);
+  }
+
+  // (c) números por extenso em texto de TELA
+  const screenTexts = [];
+  if (frase) screenTexts.push(['intro.frase', frase]);
+  const scenes = Array.isArray(script && script.scenes) ? script.scenes : [];
+  scenes.forEach((s, i) => {
+    const tag = `cena ${i + 1} (${(s && s.role) || '?'})`;
+    if (s && typeof s.onScreenText === 'string' && s.onScreenText) {
+      screenTexts.push([`${tag} onScreenText`, s.onScreenText]);
+    }
+    const shots = Array.isArray(s && s.shots) ? s.shots : [];
+    shots.forEach((sh, j) => {
+      const text = sh && sh.visual && typeof sh.visual.text === 'string' ? sh.visual.text : '';
+      if (text) screenTexts.push([`${tag} shot ${j + 1} visual.text`, text]);
+    });
+  });
+  for (const [where, text] of screenTexts) {
+    if (hasSpelledOutNumber(text)) {
+      errors.push(`${where}: números na tela devem ser ALGARISMOS (R$ 50), nunca por extenso ("${text}")`);
+    }
+  }
+
+  return errors;
+}
+
+async function generateScript(t, { retries = 4, antiRep = '', recentContext = [] } = {}) {
   const basePrompt = buildPrompt(t, antiRep);
   let lastErr;
   let corrective = ''; // bloco corretivo acumulado da última reprovação de validação
@@ -342,12 +410,16 @@ async function generateScript(t, { retries = 4, antiRep = '' } = {}) {
     // Resgata quase-erros óbvios (sfx/icon/anchor/totalDurationSec) antes de validar
     sanitizeScript(script);
     const { ok, errors, warnings } = validateShortScript(script);
+    // v3.6: checagens duras de anti-repetição/números na tela, tratadas como
+    // erros do validador (dependem do contexto de vídeos anteriores).
+    const hardErrors = runHardAntiRepetitionChecks(script, recentContext);
     warnings.forEach(w => console.log(`   ⚠️ ${w}`));
-    if (ok) return { script, warnings };
-    lastErr = `validação falhou (tentativa ${attempt}): ${errors.join('; ')}`;
+    const allErrors = [...errors, ...hardErrors];
+    if (ok && hardErrors.length === 0) return { script, warnings };
+    lastErr = `validação falhou (tentativa ${attempt}): ${allErrors.join('; ')}`;
     console.log(`⚠️ ${lastErr} — regenerando...`);
     // Próxima tentativa recebe o prompt-base + correção pontual dos erros
-    corrective = buildCorrectiveBlock(errors, warnings);
+    corrective = buildCorrectiveBlock(allErrors, warnings);
   }
   throw new Error(lastErr || 'não foi possível gerar um roteiro válido');
 }
@@ -363,18 +435,11 @@ async function main() {
   const antiRep = buildAntiRepetitionBlock(recent);
   if (antiRep) console.log(`🚫 Anti-repetição ativa: ${recent.length} vídeo(s) anterior(es) no contexto (${recent.map(r => r.slug).join(', ')}).\n`);
 
-  const { script, warnings } = await generateScript(t, { antiRep });
-
-  // Aviso (não-erro) se o estilo de intro repetir o do vídeo mais recente. Optei
-  // por checar aqui (em vez de passar previousIntroStyle p/ validateShortScript):
-  // é a opção mais limpa — o contexto já está carregado neste escopo e mantém a
-  // assinatura de validateShortScript intocada (schema-short.js só ganhou o passo
-  // do sanitizador). O validador continua puramente estrutural, sem estado externo.
-  const prevStyle = recent[0] && recent[0].style;
-  const curStyle = script.intro && script.intro.style;
-  if (prevStyle && curStyle && String(curStyle).trim().toLowerCase() === String(prevStyle).trim().toLowerCase()) {
-    console.log(`   ⚠️ intro.style "${curStyle}" é IGUAL ao do vídeo mais recente — o ideal é variar o formato da intro (pergunta/desafio/afirmacao/contagem).`);
-  }
+  // v3.6: intro.frase (molde repetido), intro.style (igual ao mais recente) e
+  // números por extenso na tela agora são CHECAGENS DURAS dentro de
+  // generateScript (ver runHardAntiRepetitionChecks) — reprovam a tentativa e
+  // disparam o retry corretivo, em vez de só um aviso no console.
+  const { script, warnings } = await generateScript(t, { antiRep, recentContext: recent });
 
   if (!existsSync(OUTPUT_DIR)) mkdirSync(OUTPUT_DIR, { recursive: true });
   const outPath = join(OUTPUT_DIR, `${slug}.script.json`);
