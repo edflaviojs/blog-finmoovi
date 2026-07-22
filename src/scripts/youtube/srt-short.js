@@ -26,7 +26,7 @@ const TRANSITION_FRAMES = 8;
 // youtube-render/src/Short.tsx (introFramesFor). Qualquer mudança lá exige
 // mudança AQUI também, senão a legenda volta a dessincronizar da voz.
 const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s)
-const INTRO_FRAMES_V3 = 120; // intro dinâmica v3 (~4s): frase + contador
+const INTRO_FRAMES_V3 = 45; // intro dinâmica v3 COMPRIMIDA (45f/1,5s): voz entra no ~seg 1
 const AUDIO_ROOT = join(process.cwd(), 'youtube-render', 'public', 'audio');
 const OUTPUT_DIR = join(dirname(fileURLToPath(import.meta.url)), 'output');
 
@@ -62,7 +62,8 @@ export function masterStarts(scenes) {
 // from={introFrames}>`, ou seja, o tempo global de qualquer cena = introSeconds +
 // masterStarts[i] + offset-dentro-da-cena. Sem somar a intro aqui, a legenda
 // aparece ANTES da voz (bug corrigido em 2026-07-22 — ver commit
-// "fix(youtube): SRT do YouTube agora soma a intro de 4s").
+// "fix(youtube): SRT do YouTube agora soma a intro de 4s"). A v3 foi COMPRIMIDA
+// para 45f/1,5s (voz entra no ~seg 1, não no 4) — INTRO_FRAMES_V3/FPS = 1,5.
 // v3 = tem `intro.frase` OU `intro.counter`; legada = só `{big, sub}`; sem intro = 0.
 export function introSecondsFor(script) {
   const intro = script && script.intro;

@@ -8,7 +8,7 @@ import roteiroFixture from '../../src/scripts/youtube/output/juros-compostos.scr
 
 export const TRANSITION_FRAMES = 8;
 export const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s) antes das cenas
-export const INTRO_FRAMES_V3 = 120; // intro dinâmica v3 (~4s): frase + contador crescente
+export const INTRO_FRAMES_V3 = 45; // intro dinâmica v3 COMPRIMIDA (45f/1,5s): voz entra no ~seg 1
 export const SIGNATURE_FRAMES = 75; // assinatura final da marca (~2,5s) depois da última cena
 
 // ── CONTRACT v3 — "SHOTS" ────────────────────────────────────────────────────
@@ -161,7 +161,7 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
   }
 
   // OFFSET ÚNICO DA INTRO (v3.5): TODA a linha do tempo pós-intro deriva deste MESMO
-  // valor — v3 dinâmica = INTRO_FRAMES_V3 (120), legada = INTRO_FRAMES (45), sem intro
+  // valor — v3 dinâmica = INTRO_FRAMES_V3 (45f/1,5s), legada = INTRO_FRAMES (45), sem intro
   // = 0. O `<Sequence from={introFrames}>` abaixo embrulha o VISUAL (TransitionSeries)
   // E o trilho MESTRE (áudio + legenda + ícones + SFX) juntos, então voz e legenda
   // NUNCA divergem da abertura (a legenda não começa antes da voz). Nada de constante

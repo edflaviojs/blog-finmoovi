@@ -144,8 +144,13 @@ export const ShockIntro: React.FC<{ big: string; sub: string }> = ({ big, sub })
 // ABERTURA DINÂMICA v3 — frase com tipografia GIGANTE nas palavras de ênfase
 // (marcadas com *asterisco*), ícones de curiosidade (interrogação + mind-blown)
 // flutuando, e então um CONTADOR que sobe de `from` até `to` com a FONTE CRESCENDO
-// junto do valor (aceleração eased), terminando num soco/flash. ~4s, algo mudando
-// a cada ~1,5s, com boom + whoosh.
+// junto do valor, terminando num soco/flash.
+// COMPRIMIDA p/ 45f/1,5s (voz entra no ~seg 1, não no 4 — exigência do dono): as
+// fases SOBREPÕEM em vez de se enfileirar. Frase entra em SOCO (springs curtos,
+// todas as palavras de ênfase juntas, ~frames 0–10); ícones pipocam quase
+// simultâneos (delays 0–5); contador rola RÁPIDO (~frames 14–40, ease-out, fonte
+// crescendo); flash/punch final ~40–45. boom no frame 0 + whoosh sobreposto ao
+// contador.
 // ─────────────────────────────────────────────────────────────────────────────
 type FraseToken = { text: string; emph: boolean };
 function parseFrase(frase: string): FraseToken[] {
@@ -173,8 +178,9 @@ export const DynamicIntro: React.FC<{
   const { fps } = useVideoConfig();
   const tokens = parseFrase(frase);
 
-  // Fase A: frase + ícones de curiosidade. Fase B (se houver contador): contador crescente.
-  const counterStart = counter ? Math.round(frames * 0.46) : frames + 1; // ~2,2s
+  // Fases SOBREPOSTAS (45f/1,5s): frase (soco) + ícones ocupam 0–~14; o contador rola
+  // por cima a partir de ~frame 14 (0,31×frames) até ~40. Nada é sequenciado à toa.
+  const counterStart = counter ? Math.round(frames * 0.31) : frames + 1; // ~frame 14
   const hasCounter = !!counter && frame >= counterStart - 8;
 
   // slam inicial (boom) + flash de entrada e flash final (soco do contador).
@@ -192,12 +198,14 @@ export const DynamicIntro: React.FC<{
   let counterEl: React.ReactNode = null;
   if (counter) {
     const cl = frame - counterStart;
-    const p = interpolate(cl, [0, frames - counterStart - 6], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.in(Easing.cubic) });
+    // Rolagem RÁPIDA com ease-OUT: já a meio-caminho no miolo da janela (frame ~20
+    // = mid-roll com a fonte bem crescida), assentando antes do flash final.
+    const p = interpolate(cl, [0, frames - counterStart - 6], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
     const val = Math.round(counter.from + (counter.to - counter.from) * p);
     const size = interpolate(p, [0, 1], [96, 210]);
     const punch = interpolate(frame, [frames - 10, frames - 4, frames], [1, 1.12, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
     const glow = 30 + Math.sin(frame / 5) * 14;
-    const appear = spring({ frame: cl, fps, config: { damping: 13, mass: 0.5 } });
+    const appear = spring({ frame: cl, fps, config: { damping: 12, mass: 0.4, stiffness: 190 } });
     counterEl = (
       <div style={{
         opacity: interpolate(appear, [0, 1], [0, 1]),
@@ -231,7 +239,9 @@ export const DynamicIntro: React.FC<{
         transform: `translateY(${fraseY}px) scale(${fraseScale})`,
       }}>
         {tokens.map((tk, i) => {
-          const s = spring({ frame: frame - i * 2, fps, config: { damping: 14, mass: 0.5 } });
+          // SOCO: sem stagger (i*2) — a frase inteira crava junta, ~frames 0–10, com
+          // spring curto/rígido (não é rush-cut, é murro). Overshoot leve nas ênfases.
+          const s = spring({ frame, fps, config: { damping: 11, mass: 0.4, stiffness: 200 } });
           const sc = tk.emph ? interpolate(s, [0, 1], [1.35, 1]) : interpolate(s, [0, 1], [0.75, 1]);
           const y = interpolate(s, [0, 1], [26, 0]);
           return (
@@ -279,15 +289,16 @@ const CuriosityIcon: React.FC<{ which: ShotIconKey; x: number; y: number; delay:
   );
 };
 
-// Ícones de curiosidade da intro dinâmica: cada um numa COR VIVA DISTINTA, crescendo
-// escalonados (staggered). Espalhados nas faixas superior/inferior (fora do miolo
-// onde entram a frase e o contador). "pra chamar a atenção mesmo!"
+// Ícones de curiosidade da intro dinâmica: cada um numa COR VIVA DISTINTA. Na v3
+// COMPRIMIDA (45f) eles PIPOCAM quase simultâneos (delays 0–5, não mais 4–36) —
+// escalonamento só o suficiente pro pop, sem esperar. Espalhados nas faixas
+// superior/inferior (fora do miolo onde entram a frase e o contador).
 const INTRO_CURIOSITY: { which: ShotIconKey; x: number; y: number; delay: number; color: string; glow: string }[] = [
-  { which: 'question', x: 120, y: 360, delay: 4, color: BRAND.cyan, glow: 'rgba(34,211,238,0.5)' },
-  { which: 'mind', x: 780, y: 300, delay: 12, color: BRAND.magenta, glow: 'rgba(214,33,156,0.5)' },
-  { which: 'question', x: 800, y: 1360, delay: 20, color: BRAND.yellow, glow: 'rgba(253,224,71,0.5)' },
-  { which: 'mind', x: 110, y: 1300, delay: 28, color: BRAND.violet, glow: 'rgba(139,92,246,0.5)' },
-  { which: 'question', x: 460, y: 1500, delay: 36, color: '#3fb950', glow: 'rgba(63,185,80,0.5)' },
+  { which: 'question', x: 120, y: 360, delay: 0, color: BRAND.cyan, glow: 'rgba(34,211,238,0.5)' },
+  { which: 'mind', x: 780, y: 300, delay: 2, color: BRAND.magenta, glow: 'rgba(214,33,156,0.5)' },
+  { which: 'question', x: 800, y: 1360, delay: 3, color: BRAND.yellow, glow: 'rgba(253,224,71,0.5)' },
+  { which: 'mind', x: 110, y: 1300, delay: 4, color: BRAND.violet, glow: 'rgba(139,92,246,0.5)' },
+  { which: 'question', x: 460, y: 1500, delay: 5, color: '#3fb950', glow: 'rgba(63,185,80,0.5)' },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
