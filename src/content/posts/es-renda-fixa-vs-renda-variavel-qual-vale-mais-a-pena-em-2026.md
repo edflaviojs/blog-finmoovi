@@ -51,7 +51,7 @@ La lógica es simple: prestas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-en
 ### Desventajas de la renta fija  
 
 1. **Rentabilidad limitada** – Cuando la [inflación](/es/glossario/es-inflacao) sube, la renta fija puede quedar atrás de inversiones más agresivas.  
-2. **Dependencia de la tasa Selic** – Si el Banco Central mantiene los intereses bajos por mucho tiempo, los retornos caen.  
+2. **Dependencia de la tasa [Selic](/es/posts/es-cotizaciones-semana-3-julio-2026)** – Si el Banco Central mantiene los intereses bajos por mucho tiempo, los retornos caen.  
 3. **Posible “costo de oportunidad”** – [Dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) atrapado en un CDB a 5 años rinde menos que acciones que pueden subir 30 % en seis meses.  
 
 ---  
@@ -93,7 +93,7 @@ En la práctica, al comprar una acción te conviertes en socio de la empresa. Tu
 |----------|------------|----------------|
 | **Previsibilidad de retorno** | Alta (tasas pre‑definidas) | Baja (depende del mercado) |
 | **Riesgo de pérdida de capital** | Bajo a moderado (FGC, riesgo soberano) | Alto a moderado (empresa, sector) |
-| **Liquidez** | Generalmente alta (Tesoro Selic, CDBs) | Variable (acciones pueden ser muy líquidas, FIIs menos) |
+| **Liquidez** | Generalmente alta (Tesoro [Selic](/es/posts/es-cotizaciones-semana-3-junio-2026), CDBs) | Variable (acciones pueden ser muy líquidas, FIIs menos) |
 | **Rentabilidad media (2024‑2025)** | 12 %‑13 % a.a. (CDI, Selic) | 12 %‑20 % a.a. (Ibovespa, ETFs) |
 | **Protección contra inflación** | Moderada (según el indexador) | Buena (las empresas pueden traspasar la inflación) |
 | **Implicación tributaria** | IR regresivo (15 %‑22,5 %) o exento (LCI/LCA) | IR del 15 % (acciones) o 20 % (demás) |

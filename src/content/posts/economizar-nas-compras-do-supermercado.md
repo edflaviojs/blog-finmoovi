@@ -25,7 +25,7 @@ Por exemplo, se você precisa comprar leite, pão e ovos, verifique os preços d
 ## Escolhendo os produtos certos
 Outra dica importante é escolher produtos que sejam mais baratos, mas que ainda atendam às suas necessidades. Por exemplo, em vez de comprar carne de boi, você pode optar por carne de frango ou peixe, que são mais baratas. Além disso, é importante verificar a data de validade dos produtos e escolher os que têm mais tempo de validade.
 
-**Dica prática:** Verifique os preços dos produtos em diferentes supermercados e lojas de desconto antes de fazer uma compra. Você pode usar um aplicativo de comparação de preços para ajudar nessa tarefa.
+**Dica prática:** Verifique os preços dos produtos em diferentes supermercados e lojas de desconto antes de fazer uma compra. Você pode usar um aplicativo de [comparação](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) de preços para ajudar nessa tarefa.
 
 ![Escolhendo os produtos certos](/images/posts/economizar-nas-compras-do-supermercado-2.webp)
 

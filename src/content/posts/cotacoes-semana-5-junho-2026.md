@@ -43,7 +43,7 @@ No entanto, é importante lembrar que a Selic também influencia a atratividade 
 
 ## Dica Prática para o Investidor Pessoa Física
 
-Para os investidores pessoa física, é fundamental diversificar a carteira para mitigar riscos. Isso pode incluir a alocação de parte do portfólio em investimentos em moedas estrangeiras, aproveitando as oportunidades de crescimento global. Além disso, manter uma [reserva de emergência](/glossario/reserva-de-emergencia) em ativos líquidos pode ser uma estratégia inteligente para enfrentar eventuais turbulências no mercado.
+Para os investidores pessoa física, é fundamental diversificar a carteira para mitigar [riscos](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico). Isso pode incluir a alocação de parte do portfólio em investimentos em moedas estrangeiras, aproveitando as oportunidades de crescimento global. Além disso, manter uma [reserva de emergência](/glossario/reserva-de-emergencia) em ativos líquidos pode ser uma estratégia inteligente para enfrentar eventuais turbulências no mercado.
 
 Uma dica prática é utilizar [aplicativos financeiros](/posts/voce-tambem-esquece-de-anotar-seus-gastos), como o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), para monitorar e gerenciar seus investimentos de forma eficiente. Com essas ferramentas, você pode ter uma visão clara de sua carteira, receber alertas sobre movimentos significativos no mercado e tomar decisões informadas sobre seus investimentos.
 

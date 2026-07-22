@@ -19,9 +19,9 @@ seo:
 
 ## Entender la técnica de los sobres digitales  
 
-La idea de los sobres digitales es la misma que la de los sobres de papel donde colocas dinero físico para cada categoría (alimentación, transporte, ocio, etc.). La diferencia es que todo queda en el móvil o en el ordenador, lo que elimina el riesgo de perder billetes y permite informes instantáneos.  
+La idea de los sobres digitales es la misma que la de los sobres de papel donde colocas [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) físico para cada categoría (alimentación, transporte, ocio, etc.). La diferencia es que todo queda en el móvil o en el ordenador, lo que elimina el riesgo de perder billetes y permite informes instantáneos.  
 
-- **¿Por qué funciona?** Cuando “destinas” un monto a un sobre, deja de ser dinero libre; pasa a ser “específico”. Esta visualización reduce las compras impulsivas.  
+- **¿Por qué funciona?** Cuando “destinas” un monto a un sobre, deja de ser [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) libre; pasa a ser “específico”. Esta visualización reduce las compras impulsivas.  
 - **¿Quién puede usarlo?** Cualquier persona que reciba ingresos mensuales – de R$2.000 a R$8.000 – y quiera tener claridad sobre a dónde va cada centavo.  
 
 ## Configurar tus sobres en la app  

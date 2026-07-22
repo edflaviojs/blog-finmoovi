@@ -41,7 +41,7 @@ Los pagos mínimos te mantienen endeudado para siempre por el [interés compuest
 
 ## 6. No Definir Metas Financieras
 
-Sin metas claras, ahorrar se siente inútil. Define para qué estás ahorrando: fondo de emergencia, [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias), casa, jubilación.
+Sin metas claras, ahorrar se siente inútil. Define para qué estás ahorrando: fondo de emergencia, [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias), casa, [jubilación](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico).
 
 ## 7. Intentar Hacer Todo a la Vez
 

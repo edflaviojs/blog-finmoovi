@@ -37,7 +37,7 @@ Como autônomo, você é responsável por seu próprio recolhimento de impostos,
 **Dica prática:** Mantenha todos os recibos e notas fiscais de despesas que possam ser deduzidas do seu [imposto de renda](/glossario/imposto-de-renda). Isso pode economizar uma quantidade significativa de [dinheiro](/posts/economize-na-conta-de-energia) no final do ano.
 
 ## Investindo para o Futuro
-Além de gerenciar suas finanças atuais, é crucial pensar no futuro. Isso inclui planejar aposentadoria, investir em educação ou em um negócio próprio, e até mesmo comprar uma casa. Para autônomos, investir pode parecer um desafio devido à [renda variável](/glossario/renda-variavel), mas existem estratégias que podem ajudar.
+Além de gerenciar suas finanças atuais, é crucial pensar no futuro. Isso inclui planejar [aposentadoria](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico), investir em educação ou em um negócio próprio, e até mesmo comprar uma casa. Para autônomos, investir pode parecer um desafio devido à [renda variável](/glossario/renda-variavel), mas existem estratégias que podem ajudar.
 
 Uma opção é investir uma porcentagem fixa de sua renda mensal, independentemente do [valor](/glossario/valor). Por exemplo, se você decide investir 10% de sua renda, em um mês de R$ 8.000, você investiria R$ 800, e em um mês de R$ 3.000, investiria R$ 300. **Dica prática:** Comece com [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de baixo risco, como títulos de dívida ou [fundos](/glossario/fundos) de [investimento](/posts/tesouro-direto-para-iniciantes), e ajuste sua estratégia à medida que você se torna mais confortável com o [investimento](/posts/montando-carteira-diversificada-com-r-500).
 

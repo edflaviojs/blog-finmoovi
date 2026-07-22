@@ -37,7 +37,7 @@ Como autónomo, eres responsable de tu propio recolimiento de impuestos, lo que 
 **Consejo práctico:** Mantén todos los recibos y notas fiscales de gastos que puedan ser deducidos de tu impuesto de renta. Esto puede ahorrar una cantidad significativa de [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) al final del año.
 
 ## Invertir para el Futuro
-Además de gestionar tus finanzas actuales, es crucial pensar en el futuro. Esto incluye planificar la jubilación, invertir en educación o en un negocio propio, y hasta comprar una casa. Para autónomos, invertir puede parecer un desafío debido a la [renta variable](/es/glossario/es-renda-variavel), pero existen estrategias que pueden ayudar.
+Además de gestionar tus finanzas actuales, es crucial pensar en el futuro. Esto incluye planificar la [jubilación](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico), invertir en educación o en un negocio propio, y hasta comprar una casa. Para autónomos, invertir puede parecer un desafío debido a la [renta variable](/es/glossario/es-renda-variavel), pero existen estrategias que pueden ayudar.
 
 Una opción es invertir un porcentaje fijo de tu ingreso mensual, independientemente del [valor](/es/glossario/es-valor). Por ejemplo, si decides invertir 10% de tu ingreso, en un mes de R$ 8.000, invertirías R$ 800, y en un mes de R$ 3.000, invertirías R$ 300. **Consejo práctico:** Comienza con [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de bajo riesgo, como títulos de deuda o fondos de [inversión](/es/posts/es-tesouro-direto-para-iniciantes), y ajusta tu estrategia a medida que te sientas más cómodo con la [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500).
 

@@ -90,7 +90,7 @@ If you opt for a pricier gift (e.g., a smartwatch), see if the store offers **in
 | # | Tip | Why? |
 |---|------|----------|
 | 1 | **Prioritize what he really likes** | Conscious spending = higher satisfaction. |
-| 2 | **Avoid “last‑minute” purchases** | Buying at the last minute usually costs more. |
+| 2 | **Avoid “last‑minute” purchases** | Buying at the last minute usually [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) more. |
 | 3 | **Combine gifts with family friends** | Splitting the cost allows a bigger gift for less. |
 | 4 | **Use the 30‑day rule** (for non‑essential purchases) | Gives time to reflect if it’s truly needed. |
 | 5 | **Log everything in [FinMoovi](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)** | Full control of expenses, avoids surprises at month‑end. |

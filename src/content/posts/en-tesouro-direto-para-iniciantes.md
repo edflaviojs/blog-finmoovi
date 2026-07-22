@@ -43,7 +43,7 @@ For example, if you invest R$5,000 in an LTN title with a 5-year term and 6% ann
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Although Tesouro Direto is considered a low-risk [investment](/en/posts/en-montando-carteira-diversificada-com-r-500), there are some risks to consider:
 
-* Inflation risk: if inflation increases, the real value of your investment may decrease.
+* Inflation risk: if inflation increases, the real value of your [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) may decrease.
 * Liquidity risk: if you need to redeem your securities before maturity, you may lose interest.
 * [Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) risk: although the government is considered a low-risk borrower, there is still a risk of default.
 

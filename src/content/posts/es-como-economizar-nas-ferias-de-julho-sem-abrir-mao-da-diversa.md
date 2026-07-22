@@ -98,7 +98,7 @@ Llevar snacks, preparar el desayuno en el propio alojamiento o hacer compras en 
 
 ![5. Alimentación: cocinar vs comer fuera](/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa-6.webp)  
 
-**Ejemplo de costos diarios:**  
+**Ejemplo de [costos](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) diarios:**  
 - Desayuno (café + pan): R$ 8  
 - Almuerzo (plato hecho en casa): R$ 12  
 - Cena (restaurante barato): R$ 25  

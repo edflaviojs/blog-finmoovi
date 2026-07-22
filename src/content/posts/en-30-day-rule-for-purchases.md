@@ -20,7 +20,7 @@ seo:
 ## 30-Day Rule: What is it?
 The 30-day rule is a simple and effective technique to avoid impulse purchases and save [money](/en/posts/en-organizing-finances-as-a-freelancer). The idea is that, before buying something that's not essential, you should wait 30 days. This helps determine if the item is really necessary or if the desire to buy it was just an impulse.
 
-For example, imagine you're walking through a mall and see a watch that costs R$ 500. You might think it's an amazing watch and that you need it, but if you wait 30 days, you might discover it's not that necessary after all. Maybe you have a watch at home that's still working fine, or maybe you can find a cheaper option online.
+For example, imagine you're walking through a mall and see a watch that [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) R$ 500. You might think it's an amazing watch and that you need it, but if you wait 30 days, you might discover it's not that necessary after all. Maybe you have a watch at home that's still working fine, or maybe you can find a cheaper option online.
 
 ## How to Apply the 30-Day Rule
 To apply the 30-day rule, you need to create a system to record the purchases you want to make. This can be a note-taking app on your phone, a notebook, or even a file on your computer. When you see something you want to buy, write down the item, price, and date. Then, wait 30 days before deciding if you still want to buy the item.

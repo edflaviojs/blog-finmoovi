@@ -18,7 +18,7 @@ seo:
 
 ## Resumo da Semana (13/07 – 20/07/2026)
 
-A última semana foi marcada por oscilações nos mercados globais, mas o cenário brasileiro se manteve relativamente estável. O dólar fechou a semana em **R$ 5,11** e o euro em **R$ 5,84**, ambos com pequenas variações que refletiram notícias de política monetária dos EUA e da zona euro. Vamos aos detalhes que realmente importam para o seu bolso.
+A última semana foi marcada por oscilações nos mercados globais, mas o cenário brasileiro se manteve relativamente estável. O [dólar](/posts/cotacoes-semana-1-julho-2026) fechou a semana em **R$ 5,11** e o euro em **R$ 5,84**, ambos com pequenas variações que refletiram notícias de política monetária dos EUA e da zona euro. Vamos aos detalhes que realmente importam para o seu bolso.
 
 ![Resumo da Semana (13/07 – 20/07/2026)](/images/posts/cotacoes-semana-3-julho-2026-inline-1.webp)
 
@@ -26,13 +26,13 @@ A última semana foi marcada por oscilações nos mercados globais, mas o cenár
 
 ---
 
-## 1. Dólar e Euro: Tendência da Semana  
+## 1. [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana  
 
 ### Dólar (USD/BRL)  
 O real ganhou alguns centavos frente ao dólar, que recuou 0,4 % ao longo da semana. O movimento foi impulsionado por duas coisas:  
 
 1. **Dados de [inflação](/glossario/inflacao) dos EUA** – O CPI de junho veio um ponto percentual abaixo das expectativas, aliviando a pressão sobre o Federal Reserve.  
-2. **Fluxos de capitais** – Investidores internacionais retiraram parte dos recursos de ativos de risco, mas a queda do dólar foi mais moderada porque o Brasil continua atraente graças à taxa [Selic](/glossario/selic) ainda alta.  
+2. **Fluxos de capitais** – Investidores internacionais retiraram parte dos recursos de ativos de risco, mas a queda do dólar foi mais moderada porque o Brasil continua atraente graças à [taxa](/glossario/taxa) [Selic](/glossario/selic) ainda alta.  
 
 Em termos práticos, quem comprou dólares no início da semana viu um ganho de cerca de R$ 0,02 por [moeda](/glossario/moeda). Não é nada que vá mudar sua conta bancária, mas já dá uma ideia da direção.
 
@@ -63,7 +63,7 @@ Em resumo, a Selic alta ainda protege a rentabilidade da renda fixa, mas também
 
 ## 3. Dica Prática para o Investidor Pessoa Física  
 
-**Rebalanceie sua carteira a cada trimestre**. Muitas pessoas deixam o “mix” de ativos parado por anos, esquecendo que a [volatilidade](/glossario/volatilidade) do mercado pode mudar a proporção de risco e retorno. Use a regra de 60 % em renda fixa (CDBs, Tesouro IPCA) e 40 % em [renda variável](/glossario/renda-variavel) (ações, fundos imobiliários). Se, ao fim de três meses, a renda fixa passou de 60 % para 70 % por causa de valorização dos títulos, venda parte desses títulos e compre mais ações ou fundos. Isso mantém o perfil de risco alinhado ao seu objetivo e ainda aproveita a alta dos juros.
+**Rebalanceie sua carteira a cada trimestre**. Muitas pessoas deixam o “mix” de ativos parado por anos, esquecendo que a [volatilidade](/glossario/volatilidade) do mercado pode mudar a proporção de risco e retorno. Use a regra de 60 % em renda fixa (CDBs, Tesouro [IPCA](/glossario/ipca)) e 40 % em [renda variável](/glossario/renda-variavel) (ações, fundos imobiliários). Se, ao fim de três meses, a renda fixa passou de 60 % para 70 % por causa de valorização dos títulos, venda parte desses títulos e compre mais ações ou fundos. Isso mantém o perfil de risco alinhado ao seu objetivo e ainda aproveita a alta dos juros.
 
 ---
 

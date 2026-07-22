@@ -39,7 +39,7 @@ La tasa [Selic](/es/posts/es-cotizaciones-semana-3-julio-2026), que es la tasa d
 
 
 
-Es importante considerar que las decisiones sobre la tasa Selic tienen un impacto directo en las tasas de interés de los préstamos y depósitos, lo que a su vez afecta las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en diferentes activos financieros. Los inversores deben estar atentos a estos cambios y ajustar sus estrategias de inversión según sea necesario.
+Es importante considerar que las decisiones sobre la tasa Selic tienen un impacto directo en las tasas de interés de los préstamos y depósitos, lo que a su vez afecta las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en diferentes activos financieros. Los inversores deben estar atentos a estos cambios y ajustar sus estrategias de [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) según sea necesario.
 
 ## Consejo Práctico para el Inversor Individual
 

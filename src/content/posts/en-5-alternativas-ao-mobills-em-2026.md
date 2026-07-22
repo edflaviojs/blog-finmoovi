@@ -64,7 +64,7 @@ Pros:
 * Excellent customer support
 Cons:
 * Can be confusing for beginners
-* Investment fees may be high
+* [Investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) fees may be high
 Free/Paid: Free
 
 4. **You Need a [Budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) (YNAB)**

@@ -24,16 +24,16 @@ seo:
   keywords: ["investimentos segundo semestre","carteira de investimentos 2024","estratégia de investimento","renda fixa","ações","FinMoovi app"]
 ---
 
-# Investimentos para o segundo semestre: estratégias práticas para 2024
+# Investimentos para o [segundo semestre](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme): estratégias práticas para 2024
 
-O segundo semestre costuma ser mais agitado: férias, festas de fim de ano e a expectativa de um novo ciclo econômico. Se você ainda não tem um plano definido para os próximos seis meses, este artigo traz um roteiro passo‑a‑passo para montar uma carteira que combine segurança e potencial de crescimento, usando exemplos reais do cotidiano brasileiro.
+O segundo semestre costuma ser mais agitado: [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), festas de fim de ano e a expectativa de um novo ciclo econômico. Se você ainda não tem um plano definido para os próximos seis meses, este artigo traz um roteiro passo‑a‑passo para montar uma carteira que combine segurança e potencial de crescimento, usando exemplos reais do cotidiano brasileiro.
 
 ---
 
 ## Por que focar no segundo semestre?
 
 ### 1. Sazonalidade de mercado
-Historicamente, alguns setores se valorizam no segundo semestre – turismo, varejo, energia e tecnologia. Essa “temporada alta” pode gerar oportunidades de ganho, mas também traz volatilidade que exige atenção.
+Historicamente, alguns setores se valorizam no segundo semestre – turismo, varejo, energia e tecnologia. Essa “temporada alta” pode gerar oportunidades de ganho, mas também traz [volatilidade](/glossario/volatilidade) que exige atenção.
 
 ### 2. Ponto de ajuste de metas anuais
 Se você ainda não atingiu sua meta de poupança ou de retorno, o segundo semestre representa a última chance de corrigir o percurso antes do fechamento do exercício fiscal.
@@ -145,7 +145,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 Sim. Comece com o Tesouro Selic, que tem liquidez diária e protege o capital. À medida que a reserva cresce, diversifique.
 
 **2. Quanto devo alocar em FIIs?**
-Depende do seu objetivo de renda passiva. Uma alocação de 10‑20 % costuma gerar dividendos mensais sem comprometer a diversificação.
+Depende do seu objetivo de renda passiva. Uma alocação de 10‑20 % costuma gerar [dividendos](/glossario/dividendos) mensais sem comprometer a [diversificação](/glossario/diversificacao).
 
 **3. É seguro comprar ETFs internacionais?**
 É possível via corretoras que oferecem acesso a BDRs ou fundos de investimento no exterior. Avalie custos de custódia e impostos.

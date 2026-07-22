@@ -35,7 +35,7 @@ A practical tip for individual investors is to diversify your [investment portfo
 
 ## What to Expect for Next Week
 
-For next week, it's important to pay attention to economic and political news that may affect the foreign exchange market and interest rates. Additionally, it's essential to continue monitoring your investment portfolio and adjust your strategy according to market changes. With the help of tools like [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), it's easier to track your investments and make informed decisions. We'll continue monitoring the market and bringing updates and practical tips for you.
+For next week, it's important to pay attention to economic and political news that may affect the foreign exchange market and interest rates. Additionally, it's essential to continue monitoring your [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) portfolio and adjust your strategy according to market changes. With the help of tools like [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), it's easier to track your investments and make informed decisions. We'll continue monitoring the market and bringing updates and practical tips for you.
 
 
 ---

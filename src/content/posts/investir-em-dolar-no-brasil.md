@@ -26,7 +26,7 @@ O [dólar](/posts/cotacoes-semana-4-maio-2026) americano é a [moeda](/glossario
 Existem várias formas de investir em dólar no Brasil, incluindo:
 
 * Compra de dólar em espécie: você pode comprar dólar em espécie em uma casa de câmbio ou em uma agência bancária.
-* Investimento em títulos de dólar: você pode investir em títulos de dólar, como títulos do Tesouro americano ou títulos de empresas americanas.
+* [Investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) em títulos de dólar: você pode investir em títulos de dólar, como títulos do Tesouro americano ou títulos de empresas americanas.
 * Investimento em [fundos](/glossario/fundos) de investimento em dólar: você pode investir em fundos de investimento que têm como objetivo investir em dólar.
 * Investimento em [ações](/glossario/acoes) de empresas americanas: você pode investir em ações de empresas americanas que são negociadas em bolsas de valores americanas.
 

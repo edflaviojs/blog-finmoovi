@@ -25,7 +25,7 @@ For example, if you need to buy milk, bread, and eggs, check the prices of these
 ## Choosing the Right Products
 Another important tip is to choose products that are cheaper but still meet your needs. For example, instead of buying beef, you can opt for chicken or fish, which are cheaper. Additionally, it's essential to check the expiration date of products and choose the ones with a longer shelf life.
 
-**Practical Tip:** Check the prices of products in different supermarkets and discount stores before making a purchase. You can use a price comparison app to help with this task.
+**Practical Tip:** Check the prices of products in different supermarkets and discount stores before making a purchase. You can use a price [comparison](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) app to help with this task.
 
 ![Escolhendo os produtos certos](/images/posts/economizar-nas-compras-do-supermercado-2.webp)
 

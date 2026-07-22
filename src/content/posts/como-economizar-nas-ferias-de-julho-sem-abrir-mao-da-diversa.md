@@ -104,7 +104,7 @@ Levar lanches, preparar café da manhã no próprio alojamento ou fazer compras 
 
 
 
-**Exemplo de custos diários:**
+**Exemplo de [custos](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) diários:**
 - Café da manhã (café + pão): R$ 8
 - Almoço (prato feito em casa): R$ 12
 - Jantar (restaurante barato): R$ 25

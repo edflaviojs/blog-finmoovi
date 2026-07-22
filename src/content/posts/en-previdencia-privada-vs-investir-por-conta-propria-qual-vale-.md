@@ -21,7 +21,7 @@ seo:
 
 When it comes to [financial planning](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias), one of the main concerns is ensuring a good retirement. Two popular options for achieving this goal are [private pension](/en/glossario/en-previdencia-privada) and investing on your own. However, many people wonder: which is the best choice? In this article, we will explore the pros and cons of both options, creating a comparative table to help you decide.
 
-## How Private Pension Works
+## How [Private Pension](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) Works
 
 Private pension is a long-term [investment](/en/posts/en-tesouro-direto-para-iniciantes) plan that offers a monthly income after retirement. These plans are offered by financial institutions and insurance companies, and can be customized according to the investor's needs and objectives. Private pension can be done through plans such as VGBL (Vida Gerador de Benefício Livre) or PGBL (Plano Gerador de Benefício Livre).
 

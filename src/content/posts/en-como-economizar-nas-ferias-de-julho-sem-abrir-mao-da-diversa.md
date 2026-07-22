@@ -125,7 +125,7 @@ If you’d spend R$ 80 on restaurants, the difference is **R$ 35** per day. 
 ## 7. Real‑time expense monitoring  
 
 ### How to stay on track  
-Even the best plan can hit unexpected bumps. Use **[FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** to log every expense (even a few cents) and get alerts when you’re near your daily limit. The app also generates monthly reports that show where you could cut costs for your next trip.  
+Even the best plan can hit unexpected bumps. Use **[FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** to log every expense (even a few cents) and get alerts when you’re near your daily limit. The app also generates monthly reports that show where you could cut [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) for your next trip.  
 
 ---  
 

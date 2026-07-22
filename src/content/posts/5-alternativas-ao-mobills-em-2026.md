@@ -64,7 +64,7 @@ Prós:
 * Suporte ao cliente excelente
 Contras:
 * Pode ser confuso para iniciantes
-* Taxas de investimento podem ser altas
+* Taxas de [investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) podem ser altas
 Grátis/Pago: Grátis
 
 4. **You Need a Budget (YNAB)**

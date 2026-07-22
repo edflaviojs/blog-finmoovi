@@ -26,7 +26,7 @@ seo:
 
 # Investments for the Second Half: Practical Strategies for 2024
 
-The second half of the year is usually busier: vacations, end‑of‑year parties, and the expectation of a new economic cycle. If you still don’t have a plan for the next six months, this article gives you a step‑by‑step roadmap to build a portfolio that blends safety and growth potential, using real‑life examples from everyday Brazil.
+The [second half of the year](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) is usually busier: vacations, end‑of‑year parties, and the expectation of a new economic cycle. If you still don’t have a plan for the next six months, this article gives you a step‑by‑step roadmap to build a portfolio that blends safety and growth potential, using real‑life examples from everyday Brazil.
 
 ---
 
@@ -72,8 +72,8 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 | Asset type                               | Risk       | Recommendation for 2nd half |
 |------------------------------------------|------------|------------------------------|
-| **Tesouro Selic** (fixed income)        | Low        | Emergency reserve and safety contribution |
-| **CDBs with daily liquidity**           | Low‑medium | Complement to Selic, returns above savings |
+| **Tesouro [Selic](/en/glossario/en-selic)** (fixed income)        | Low        | Emergency reserve and safety contribution |
+| **CDBs with daily [liquidity](/en/glossario/en-liquidez)**           | Low‑medium | Complement to Selic, returns above savings |
 | **Index funds (ETF) of stocks**         | Medium‑high| Exposure to seasonal sectors (retail, energy) |
 | **Real‑estate funds (FIIs)**             | Medium     | Monthly rent receipts, good for passive income |
 | **Cryptocurrencies or alternative assets** | High       | Only 5 % of the portfolio, for those who accept volatility |
@@ -82,7 +82,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 - **Tesouro Selic:** 30 % (R$ 153,00) – immediate liquidity.  
 - **CDBs from mid‑size banks:** 20 % (R$ 102,00) – higher yield than the Selic rate.  
-- **ETF BOVA11 (IBOVESPA):** 25 % (R$ 128,00) – exposure to the stock market.  
+- **ETF BOVA11 (IBOVESPA):** 25 % (R$ 128,00) – exposure to the [stock](/en/glossario/en-stock) market.  
 - **FIIs (e.g., KNRI11):** 20 % (R$ 102,00) – monthly rental income.  
 - **Cryptocurrencies:** 5 % (R$ 25,00) – controlled risk, can be used as “upside potential”.
 
@@ -96,7 +96,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 3. **Energy:** Higher air‑conditioner use in the autumn (May‑September) lifts energy prices. Energy FIIs or utility stocks can benefit.
 
-> **Tool:** FinMoovi offers market alerts that notify you when ETF or FII prices cross predefined limits, helping you enter at the right moment.
+> **Tool:** [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) offers market alerts that notify you when ETF or FII prices cross predefined limits, helping you enter at the right moment.
 
 ### Step 5 – Monitor and adjust each quarter
 

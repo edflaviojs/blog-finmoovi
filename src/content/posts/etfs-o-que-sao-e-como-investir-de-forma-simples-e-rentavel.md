@@ -77,7 +77,7 @@ Se, ao invés disso, você aplicasse o mesmo valor em um [CDB](/glossario/cdb) c
 
 ## Riscos e cuidados
 
-- **[Volatilidade](/glossario/volatilidade)** – ETFs de ações podem oscilar bastante em curto prazo. Avalie seu horizonte de investimento antes de aplicar.
+- **[Volatilidade](/glossario/volatilidade)** – ETFs de ações podem oscilar bastante em curto prazo. Avalie seu horizonte de [investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) antes de aplicar.
 - **Taxa de administração** – Mesmo baixa, ela reduz a rentabilidade, principalmente em períodos de baixa performance do índice.
 - **Risco de mercado** – Se o índice cair, seu investimento também cairá. Não há garantia de capital.
 - **Liquidação** – Embora a cotação seja imediata, a liquidação financeira ocorre em D+2 (dois dias úteis após a compra).

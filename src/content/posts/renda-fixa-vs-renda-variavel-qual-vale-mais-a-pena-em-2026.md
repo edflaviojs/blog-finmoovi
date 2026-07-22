@@ -26,7 +26,7 @@ Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro sal
 
 ## Como funciona a renda fixa
 
-A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario/juros) ou rendimento) já está **pré‑definida** ou tem um limite máximo. O investidor sabe, no momento da aplicação, qual será a taxa de retorno ou, no mínimo, qual o intervalo de variação. Os principais produtos são:
+A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario/juros) ou rendimento) já está **pré‑definida** ou tem um limite máximo. O investidor sabe, no momento da aplicação, qual será a [taxa](/glossario/taxa) de retorno ou, no mínimo, qual o intervalo de variação. Os principais produtos são:
 
 ![Como funciona a renda fixa](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-2.webp)
 
@@ -34,7 +34,7 @@ A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario
 
 | Produto | Onde encontrar | Taxa média 2024‑2025* | Características |
 |---------|----------------|-----------------------|-----------------|
-| CDB (Certificado de Depósito Bancário) | Bancos comerciais | 108 % do CDI (aprox. 13,2% a.a.) | Garantia do FGC até R$ 250 mil por instituição |
+| [CDB](/glossario/cdb) (Certificado de Depósito Bancário) | Bancos comerciais | 108 % do [CDI](/glossario/cdi) (aprox. 13,2% a.a.) | Garantia do FGC até R$ 250 mil por instituição |
 | [Tesouro Direto](/glossario/tesouro-direto) – [Selic](/posts/cotacoes-semana-1-julho-2026) | Governo Federal | 12,8 % a.a. ([Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) 2026) | [Liquidez](/glossario/liquidez) diária, risco soberano baixo |
 | LCIs/LCAs (Letras de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário/Agrícola) | Bancos, corretoras | 107 % do CDI (≈ 13 % a.a.) | Isento de IR, FGC protege |
 | [Debêntures](/glossario/debentures) de empresas | Corretoras | 9 %‑12 % a.a. (dependendo rating) | Risco de crédito da empresa emissora |
@@ -95,8 +95,8 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 |----------|------------|----------------|
 | **Previsibilidade de retorno** | Alta (taxas pré‑definidas) | Baixa (depende do mercado) |
 | **Risco de perda de capital** | Baixo a moderado (FGC, risco soberano) | Alto a moderado (empresa, setor) |
-| **Liquidez** | Geralmente alta (Tesouro Selic, CDBs) | Variável (ações podem ter alta liquidez, FIIs menos) |
-| **Rentabilidade média (2024‑2025)** | 12 %‑13 % a.a. (CDI, Selic) | 12 %‑20 % a.a. (Ibovespa, ETFs) |
+| **Liquidez** | Geralmente alta (Tesouro [Selic](/posts/cotacoes-semana-3-julho-2026), CDBs) | Variável (ações podem ter alta liquidez, FIIs menos) |
+| **Rentabilidade média (2024‑2025)** | 12 %‑13 % a.a. (CDI, [Selic](/posts/cotacoes-semana-3-junho-2026)) | 12 %‑20 % a.a. (Ibovespa, ETFs) |
 | **Proteção contra inflação** | Moderada (dependendo do indexador) | Boa (empresas podem repassar inflação) |
 | **Implicação tributária** | IR regressivo (15 %‑22,5 %) ou isento (LCI/LCA) | IR de 15 % (ações) ou 20 % (demais) |
 | **Complexidade de gestão** | Simples (apenas escolher o título) | Mais complexa (análise de mercado) |

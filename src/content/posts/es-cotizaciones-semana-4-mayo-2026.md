@@ -31,7 +31,7 @@ La tasa Selic, actualmente en 12,25% anual, fue mantenida por el Comité de Pol�
 
 ## Consejo Práctico para el Inversor
 
-Un consejo valioso para los inversores individuales es diversificar sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), incluyendo activos en diferentes monedas. Con el [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) y el euro estables, puede ser un buen momento para considerar [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) internacionales, como [acciones](/es/glossario/es-acoes) o fondos de inversión en dólares o euros. Herramientas como [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) pueden ser muy útiles para seguir y gestionar inversiones en múltiples monedas, ofreciendo una visión clara y actualizada de su cartera.
+Un consejo valioso para los inversores individuales es diversificar sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), incluyendo activos en diferentes monedas. Con el [dólar](/es/posts/es-cotizaciones-semana-2-julio-2026) y el euro estables, puede ser un buen momento para considerar [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) internacionales, como [acciones](/es/glossario/es-acoes) o fondos de [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) en dólares o euros. Herramientas como [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) pueden ser muy útiles para seguir y gestionar inversiones en múltiples monedas, ofreciendo una visión clara y actualizada de su cartera.
 
 ## Qué Esperar para la Próxima Semana
 

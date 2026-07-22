@@ -108,7 +108,7 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 ## When to Choose Fixed Income
 
 1. **Short‑term goal** – If you need the [money](/en/posts/en-difference-between-investing-and-saving) within up to 2 years (e.g., [emergency fund](/en/glossario/en-reserva-de-emergencia), [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)), fixed income ensures the capital stays preserved.  
-2. **Conservative profile** – Those who can’t tolerate seeing their investment value swing prefer the safety of a CDB or Treasury.  
+2. **Conservative profile** – Those who can’t tolerate seeing their [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) value swing prefer the safety of a CDB or Treasury.  
 3. **High‑interest environment** – When the Selic is above 12 % a year, fixed income already offers very attractive returns.  
 4. **Need for income** – LCIs/LCAs and some debentures pay monthly interest, generating a stable cash flow.
 
@@ -145,7 +145,7 @@ There is no absolute “best”; the choice depends **on your profile, timeline,
 
 On the other hand, if you have **plenty of time**, can handle the market’s roller‑coaster, and want returns that comfortably beat inflation, **variable income** can be the main growth lever. The most balanced recommendation is usually to **mix both worlds**: keep a safe slice (fixed income) and allocate the rest to higher‑return opportunities (variable income).
 
-Regardless of the choice, **management and monitoring** are essential. That’s where **[FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** comes in as your ally: the app lets you log each investment, track performance in real time, set short‑ and long‑term goals, and receive alerts when your allocation drifts off plan. That way, you stay in control without needing to be a market analyst.
+Regardless of the choice, **management and monitoring** are essential. That’s where **[FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** comes in as your ally: the app lets you log each [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico), track performance in real time, set short‑ and long‑term goals, and receive alerts when your allocation drifts off plan. That way, you stay in control without needing to be a market analyst.
 
 > **Practical tip:** Start with 70 % in fixed income and 30 % in variable income. As you gain confidence and observe volatility, adjust the proportion until you find the sweet spot between safety and upside potential.
 

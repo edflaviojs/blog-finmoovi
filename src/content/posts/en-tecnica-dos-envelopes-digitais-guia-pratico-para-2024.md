@@ -51,7 +51,7 @@ After you receive your salary, follow this step‑by‑step:
 
 1. **Open the app and record the total income** – For example, R$5,000.  
 2. **Distribute the amount** – Tap each envelope and enter the limit you set in the table. The app will show the remaining balance (it should be zero).  
-3. **Reserve the money right away** – If the app lets you “lock” or “mark as saved”, do it. That way you won’t spend what should stay in the emergency reserve.
+3. **Reserve the [money](/en/posts/en-avoid-impulse-purchases) right away** – If the app lets you “lock” or “mark as saved”, do it. That way you won’t spend what should stay in the emergency reserve.
 
 This process takes less than 5 minutes and leaves your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) “ready to use”.
 
@@ -87,4 +87,4 @@ With just 5 minutes daily, you keep total control and still have time to enjoy l
 
 ---
 
-**Want to automate this control? [Try FinMoovi free for 7 days](https://finmoovi.com) — it categorizes expenses automatically and generates reports effortlessly.**
+**Want to automate this control? [Try FinMoovi free for 7 days](https://finmoovi.com) — it categorizes [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) automatically and generates reports effortlessly.**

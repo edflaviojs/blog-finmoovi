@@ -41,7 +41,7 @@ Minimum payments keep you in debt forever due to [compound interest](/en/glossar
 
 ## 6. Not Setting Financial Goals
 
-Without clear goals, saving feels pointless. Define what you're saving for: emergency fund, [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias), house, retirement.
+Without clear goals, saving feels pointless. Define what you're saving for: emergency fund, [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias), house, [retirement](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico).
 
 ## 7. Trying to Do Everything at Once
 

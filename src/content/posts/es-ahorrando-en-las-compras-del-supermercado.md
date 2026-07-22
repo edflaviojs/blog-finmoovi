@@ -25,7 +25,7 @@ Por ejemplo, si necesitas comprar leche, pan y huevos, verifica los precios de e
 ## Elegir los productos correctos
 Otra sugerencia importante es elegir productos que sean más baratos, pero que aún satisfagan tus necesidades. Por ejemplo, en lugar de comprar carne de vaca, puedes optar por carne de pollo o pescado, que son más baratos. Además, es importante verificar la fecha de caducidad de los productos y elegir los que tienen más tiempo de caducidad.
 
-**Consejo práctico:** Verifica los precios de los productos en diferentes supermercados y tiendas de descuento antes de hacer una compra. Puedes usar una aplicación de comparación de precios para ayudarte en esta tarea.
+**Consejo práctico:** Verifica los precios de los productos en diferentes supermercados y tiendas de descuento antes de hacer una compra. Puedes usar una aplicación de [comparación](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) de precios para ayudarte en esta tarea.
 
 ![Elegir los productos correctos](/images/posts/economizar-nas-compras-do-supermercado-2.webp)
 

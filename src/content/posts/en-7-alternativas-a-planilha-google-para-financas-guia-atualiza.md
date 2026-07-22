@@ -108,7 +108,7 @@ Free with ads – Pro version at R$ 9.90/month.
 
 ---
 
-## 5. YNAB (You Need A Budget) – The “Real Budget” method
+## 5. YNAB (You Need A [Budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas)) – The “Real Budget” method
 
 **Description**  
 YNAB follows the philosophy of “giving every real a job,” encouraging users to plan each expense before it happens. Although it’s an American app, it’s gaining fans in Brazil thanks to multilingual support and a strong user community.
@@ -136,7 +136,7 @@ YNAB follows the philosophy of “giving every real a job,” encouraging users 
 | **Mobills** | No | Yes | No | Yes (limited) | R$ 14.90/month |
 | **FinMoovi** | Yes | Yes | Yes | Yes (ads) | R$ 19.90/month |
 | **Organizze** | No | Yes | No | Yes (limited) | R$ 12.90/month |
-| **Money Lover** | No | Yes | No | Yes (ads) | R$ 9.90/month |
+| **[Money](/en/posts/en-negotiating-discounts-on-fixed-bills) Lover** | No | Yes | No | Yes (ads) | R$ 9.90/month |
 | **YNAB** | No | Yes* | No | No | US$ 84/year |
 
 \* Offline for viewing; syncing still requires internet.

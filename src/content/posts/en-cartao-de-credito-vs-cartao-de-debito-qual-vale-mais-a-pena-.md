@@ -34,7 +34,7 @@ A debit card, on the other hand, is a type of card that allows you to buy now an
 
 For example, if you buy a product for $1,000 with a debit card, the amount will be debited immediately from your checking account, and you won't have to worry about interest or fees.
 
-## Comparison Table
+## [Comparison](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) Table
 | Criteria | Credit Card | Debit Card |
 | --- | --- | --- |
 | Functioning | Buy now, pay later | Buy now, pay immediately |

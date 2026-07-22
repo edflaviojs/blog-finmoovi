@@ -24,9 +24,9 @@ seo:
   keywords: ["inversiones","segundo semestre","estrategias prácticas","2024","cartera","seguridad","crecimiento"]
 ---
 
-# Inversiones para el segundo semestre: estrategias prácticas para 2024
+# Inversiones para el [segundo semestre](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme): estrategias prácticas para 2024
 
-El segundo semestre suele ser más agitado: vacaciones, fiestas de fin de año y la expectativa de un nuevo ciclo económico. Si aún no tienes un plan definido para los próximos seis meses, este artículo te ofrece un paso‑a‑paso para armar una cartera que combine seguridad y potencial de crecimiento, usando ejemplos reales del día a día en Brasil.
+El segundo semestre suele ser más agitado: [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias), fiestas de fin de año y la expectativa de un nuevo ciclo económico. Si aún no tienes un plan definido para los próximos seis meses, este artículo te ofrece un paso‑a‑paso para armar una cartera que combine seguridad y potencial de crecimiento, usando ejemplos reales del día a día en Brasil.
 
 ---
 
@@ -73,7 +73,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 | Tipo de activo                     | Riesgo | Indicación para 2.º semestre |
 |------------------------------------|--------|-------------------------------|
 | **Tesoro Selic** (renta fija)     | Bajo   | Reserva de emergencia y aporte de seguridad |
-| **CDBs con liquidez diaria**       | Bajo‑medio | Complemento al Selic, rendimiento superior al ahorro |
+| **CDBs con [liquidez](/es/glossario/es-liquidez) diaria**       | Bajo‑medio | Complemento al Selic, rendimiento superior al ahorro |
 | **Fondos índice (ETF) de acciones**| Medio‑alto | Exposición a sectores estacionales (comercio, energía) |
 | **[Fondos inmobiliarios](/es/glossario/es-fundos-imobiliarios) (FIIs)**    | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
 | **Criptomonedas o activos alternativos** | Alto | Solo 5 % de la cartera, para quien acepta volatilidad |
@@ -121,7 +121,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 ### Inversor agresivo
 
 - **30 % en renta fija**, 45 % en ETFs y acciones de sectores estacionales, 20 % en FIIs de nicho, 5 % en criptomonedas.  
-- Acepta mayor volatilidad a cambio de retornos superiores.
+- Acepta mayor volatilidad a [cambio](/es/glossario/es-cambio) de retornos superiores.
 
 ---
 
@@ -141,7 +141,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 Sí. Empieza con el Tesoro Selic, que tiene liquidez diaria y protege el capital. A medida que la reserva crezca, diversifica.
 
 **2. ¿Cuánto debo asignar a FIIs?**  
-Depende de tu objetivo de ingresos pasivos. Una asignación del 10‑20 % suele generar dividendos mensuales sin comprometer la diversificación.
+Depende de tu objetivo de ingresos pasivos. Una asignación del 10‑20 % suele generar [dividendos](/es/glossario/es-dividendos) mensuales sin comprometer la diversificación.
 
 **3. ¿Es seguro comprar ETFs internacionales?**  
 Es posible mediante corredoras que ofrecen acceso a BDRs o fondos de inversión en el exterior. Evalúa costos de custodia e impuestos.

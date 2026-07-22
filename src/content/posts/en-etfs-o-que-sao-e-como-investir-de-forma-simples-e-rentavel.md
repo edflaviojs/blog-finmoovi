@@ -73,7 +73,7 @@ If, instead, you placed the same amount in a [CDB](/en/glossario/en-cdb) earning
 
 ## Risks and Precautions
 
-- **[Volatility](/en/glossario/en-volatilidade)** – Stock ETFs can swing a lot in the short term. Assess your investment horizon before allocating.  
+- **[Volatility](/en/glossario/en-volatilidade)** – Stock ETFs can swing a lot in the short term. Assess your [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) horizon before allocating.  
 - **Management fee** – Even when low, it reduces returns, especially during periods of weak index performance.  
 - **Market risk** – If the index falls, your investment will also fall. There’s no capital guarantee.  
 - **Settlement** – Although the price is immediate, the financial settlement occurs on D+2 (two business days after purchase).  

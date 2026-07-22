@@ -56,7 +56,7 @@ A [taxa](/en/glossario/en-taxa) [Selic](/en/posts/en-quotes-semana-1-july-2026) 
 
 ---
 
-**Resumo rápido:** Dólar em leve queda, euro estável, Selic alta mantendo a renda fixa em alta e o crédito caro. Revise a alocação cambial da sua carteira usando o **[FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** – ele acompanha múltiplas moedas e ajuda a tomar decisões mais informadas. Na próxima semana, fique atento ao calendário de inflação dos EUA e continue aproveitando a rentabilidade da renda fixa enquanto protege seu patrimônio contra a volatilidade cambial. Boa semana de investimentos!
+**Resumo rápido:** Dólar em leve queda, euro estável, [Selic](/en/posts/en-quotes-semana-4-june-2026) alta mantendo a renda fixa em alta e o crédito caro. Revise a alocação cambial da sua carteira usando o **[FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** – ele acompanha múltiplas moedas e ajuda a tomar decisões mais informadas. Na próxima semana, fique atento ao calendário de inflação dos EUA e continue aproveitando a rentabilidade da renda fixa enquanto protege seu patrimônio contra a volatilidade cambial. Boa semana de investimentos!
 
 
 ---

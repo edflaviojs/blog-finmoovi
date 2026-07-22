@@ -50,7 +50,7 @@ Preço: Pago (com opção de teste gratuito)
 
 ## Alternativa 3: [Mobills](/posts/5-alternativas-ao-mobills-em-2026)
 O Mobills é um aplicativo de finanças que permite aos usuários gerenciar suas despesas, receitas e contas bancárias de forma simples e intuitiva. Com ele, é possível criar orçamentos, definir metas financeiras e receber alertas de gastos excessivos.
-O Mobills também oferece ferramentas de investimento e crédito, tornando-o uma opção completa para gerenciar as finanças.
+O Mobills também oferece ferramentas de [investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) e crédito, tornando-o uma opção completa para gerenciar as finanças.
 Prós:
 * Interface simples e fácil de usar
 * Oferece ferramentas de investimento e crédito

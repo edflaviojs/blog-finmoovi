@@ -43,7 +43,7 @@ Por ejemplo, si usted invierte R$5.000 en un título LTN con plazo de 5 años y 
 ## [Riesgos](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Aunque el Tesouro Direto es considerado una [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) de bajo riesgo, existen algunos riesgos a considerar:
 
-* Riesgo de inflación: si la inflación aumenta, el valor real de su inversión puede disminuir.
+* Riesgo de inflación: si la inflación aumenta, el valor real de su [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) puede disminuir.
 * Riesgo de liquidez: si usted necesita rescatar sus títulos antes del vencimiento, puede haber pérdida de intereses.
 * Riesgo de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-): aunque el gobierno es considerado un deudor de bajo riesgo, aún existe el riesgo de incumplimiento.
 

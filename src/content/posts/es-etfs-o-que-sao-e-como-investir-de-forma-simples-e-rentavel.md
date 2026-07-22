@@ -73,7 +73,7 @@ Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un
 
 ## Riesgos y cuidados
 
-- **[Volatilidad](/es/glossario/es-volatilidade)** – Los ETFs de acciones pueden oscilar bastante a corto plazo. Evalúa tu horizonte de inversión antes de aplicar.  
+- **[Volatilidad](/es/glossario/es-volatilidade)** – Los ETFs de acciones pueden oscilar bastante a corto plazo. Evalúa tu horizonte de [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) antes de aplicar.  
 - **Comisión de administración** – Aunque baja, reduce la rentabilidad, especialmente en períodos de bajo desempeño del índice.  
 - **Riesgo de mercado** – Si el índice cae, tu inversión también caerá. No hay garantía de capital.  
 - **Liquidación** – Aunque la cotización sea inmediata, la liquidación financiera ocurre en D+2 (dos días hábiles después de la compra).  

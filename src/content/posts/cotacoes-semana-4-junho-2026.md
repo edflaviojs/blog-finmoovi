@@ -39,7 +39,7 @@ A Selic, taxa básica de [juros](/glossario/juros) da [economia](/posts/5-dicas-
 
 ## Dica Prática para o Investidor Pessoa Física
 
-Uma dica valiosa para os investidores é diversificar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), considerando não apenas ativos em real, mas também em outras moedas. Com o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), é possível acompanhar facilmente seus investimentos em múltiplas moedas, o que pode ajudar a mitigar riscos e aproveitar oportunidades de crescimento. Além disso, é fundamental manter uma [reserva de emergência](/glossario/reserva-de-emergencia) para lidar com imprevistos e manter a tranquilidade financeira.
+Uma dica valiosa para os investidores é diversificar seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), considerando não apenas ativos em real, mas também em outras moedas. Com o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro), é possível acompanhar facilmente seus investimentos em múltiplas moedas, o que pode ajudar a mitigar [riscos](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) e aproveitar oportunidades de crescimento. Além disso, é fundamental manter uma [reserva de emergência](/glossario/reserva-de-emergencia) para lidar com imprevistos e manter a tranquilidade financeira.
 
 ## O que Esperar para a Próxima Semana
 

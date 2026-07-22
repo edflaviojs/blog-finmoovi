@@ -37,7 +37,7 @@ As a freelancer, it's essential to think about the future and make [investments]
 
 
 
-**Practical tip:** Start by investing in a [savings account](/en/glossario/en-poupanca) or a low-risk investment fund. This will help ensure you have a reserve of [money](/en/posts/en-save-on-your-market-bill) for the future without taking unnecessary risks.
+**Practical tip:** Start by investing in a [savings account](/en/glossario/en-poupanca) or a low-risk [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) fund. This will help ensure you have a reserve of [money](/en/posts/en-save-on-your-market-bill) for the future without taking unnecessary risks.
 
 ## Cash Flow Control
 Cash flow control is fundamental for freelancers. Without a fixed salary, it's easy to get lost in managing your [money](/en/posts/en-saving-money-on-supermarket-shopping) and end up with cash flow problems. To avoid this, it's essential to create a cash flow control plan. Here are some tips:
