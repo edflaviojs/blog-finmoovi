@@ -437,3 +437,92 @@ export function validateShortScript(script) {
 
   return { ok: errors.length === 0, errors, warnings };
 }
+
+// Mapas de confusão comum entre catálogos (o LLM às vezes troca som por ícone,
+// ou usa um sinônimo próximo). Aplicados ANTES de deletar/rebaixar o campo.
+const SFX_ALIASES = { warning: 'alert', tick: 'keyboard' };
+const ICON_ALIASES = { alert: 'warning' };
+
+/**
+ * SANITIZADOR — resgata quase-erros ÓBVIOS antes da validação, sem afrouxar as
+ * regras de verdade. Chamado por roteiro-short.js ANTES de validateShortScript.
+ * Cada correção é registrada como uma linha de aviso no console. Mutação in-place
+ * do objeto recebido (também é retornado).
+ *
+ * O que corrige (apenas near-misses seguros):
+ *   - shot.sfx fora do catálogo SFX → mapeia confusões conhecidas
+ *     ('warning'→'alert', 'tick'→'keyboard'); senão DELETA o campo (som é opcional).
+ *   - shot.anchor com VÁRIAS palavras → se a 1ª palavra (≥3 chars, sem acento/caixa)
+ *     aparece na narração da cena, vira essa palavra; senão tenta a ÚLTIMA;
+ *     senão deixa para o validador rejeitar.
+ *   - shot.visual.icon fora do catálogo ICONS → mapa reverso ('alert'→'warning');
+ *     senão vira 'question'.
+ *   - totalDurationSec ≠ soma das cenas → recalcula a partir da soma.
+ *
+ * NÃO auto-corrige (continuam erros duros p/ o retry corretivo resolver):
+ *   sincronia semântica, momento-história, contagem/tempo de shots "app", regras do hook.
+ */
+export function sanitizeScript(script) {
+  if (!script || typeof script !== 'object') return script;
+  const log = (msg) => console.log(`🧼 sanitizer: ${msg}`);
+  const scenes = Array.isArray(script.scenes) ? script.scenes : [];
+
+  scenes.forEach((scene, i) => {
+    const tag = `cena ${i + 1} (${(scene && scene.role) || '?'})`;
+    const narr = norm(scene && scene.narration);
+    const shots = Array.isArray(scene && scene.shots) ? scene.shots : [];
+    shots.forEach((shot, j) => {
+      if (!shot || typeof shot !== 'object') return;
+      const stag = `${tag} shot ${j + 1}`;
+
+      // 1. sfx fora do catálogo → mapear confusão conhecida, senão remover
+      if (shot.sfx != null && !SFX.includes(shot.sfx)) {
+        const mapped = SFX_ALIASES[String(shot.sfx).toLowerCase()];
+        if (mapped && SFX.includes(mapped)) {
+          log(`${stag}: sfx "${shot.sfx}" → "${mapped}" (confusão comum de catálogo)`);
+          shot.sfx = mapped;
+        } else {
+          log(`${stag}: sfx "${shot.sfx}" fora do catálogo — removido (som é opcional)`);
+          delete shot.sfx;
+        }
+      }
+
+      // 2. anchor com múltiplas palavras → 1 palavra que aparece na narração
+      if (typeof shot.anchor === 'string' && shot.anchor.trim().split(/\s+/).length > 1) {
+        const words = shot.anchor.trim().split(/\s+/);
+        const first = words[0];
+        const last = words[words.length - 1];
+        let pick = null;
+        if (first.length >= 3 && narr.includes(norm(first))) pick = first;
+        else if (last.length >= 3 && narr.includes(norm(last))) pick = last;
+        if (pick) {
+          log(`${stag}: anchor "${shot.anchor}" tem várias palavras → "${pick}" (uma palavra que aparece na narração)`);
+          shot.anchor = pick;
+        }
+      }
+
+      // 3. icon fora do catálogo → mapa reverso, senão 'question'
+      const v = shot.visual;
+      if (v && typeof v === 'object' && v.type === 'icon' && v.icon != null && !ICONS.includes(v.icon)) {
+        const mapped = ICON_ALIASES[String(v.icon).toLowerCase()];
+        if (mapped && ICONS.includes(mapped)) {
+          log(`${stag}: icon "${v.icon}" → "${mapped}" (confusão comum de catálogo)`);
+          v.icon = mapped;
+        } else {
+          log(`${stag}: icon "${v.icon}" fora do catálogo → "question"`);
+          v.icon = 'question';
+        }
+      }
+    });
+  });
+
+  // 4. totalDurationSec ≠ soma das cenas → recalcula a partir da soma
+  const sum = scenes.reduce((a, s) => a + (Number(s && s.durationSec) || 0), 0);
+  if (Number.isFinite(sum) && sum > 0 && script.totalDurationSec != null &&
+      Math.abs(Number(script.totalDurationSec) - sum) > 1) {
+    log(`totalDurationSec ${script.totalDurationSec} ≠ soma das cenas (${sum}) — corrigido para ${sum}`);
+    script.totalDurationSec = sum;
+  }
+
+  return script;
+}

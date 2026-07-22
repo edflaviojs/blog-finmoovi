@@ -119,6 +119,7 @@ export async function generateText(prompt, options = {}) {
           return content;
         }
         errors.push(`${provider.name}: resposta vazia`);
+        console.log(`⚠️ ${provider.name}: resposta vazia — tentando próximo provedor...`);
         break; // resposta vazia → próximo provedor
       }
 

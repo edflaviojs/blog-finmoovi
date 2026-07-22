@@ -15,7 +15,7 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
-import { validateShortScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX, MAX_SFX_REPEATS, APP_SCREENS } from './lib/schema-short.js';
+import { validateShortScript, sanitizeScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX, MAX_SFX_REPEATS, APP_SCREENS } from './lib/schema-short.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -71,10 +71,11 @@ ${t.body}
 O dono quer MUITO MOVIMENTO: "a cada 2-3 segundos muda a tela — gráficos, ícones, imagens". Cada cena tem "shots": um ARRAY de 1 a 6 visuais rápidos que ENTRAM na tela no exato momento em que a palavra-âncora é FALADA.
 
 Um shot = { "anchor": "palavra", "visual": { "type": …, … }, "sfx": "…" (opcional) }.
-- "anchor": uma palavra EXATA da narração DESTA cena. Os shots seguem a ORDEM em que as palavras são faladas.
+- "anchor": uma palavra EXATA da narração DESTA cena. É EXATAMENTE UMA palavra (uma só — NUNCA uma frase, nunca duas ou mais palavras; ex.: "comprar", não "comprar uma ação"). Os shots seguem a ORDEM em que as palavras são faladas.
 - "visual.type" (motion graphics OU tela real do app — SEM vídeo de estoque/filmagem): ${VISUAL_TYPES.join(', ')}.
     · number = número gigante ("text": "R$ 500") · counter = número CORRENDO ("from", "to", "prefix": "R$") · chart = gráfico/barras/curva · icon = ícone ("icon" do catálogo) · metaphor = animação da metáfora ("metaphor" do catálogo) · statement = frase-soco ("text") · formula = fórmula (regra dos 72) · list = itens revelados · app = tela NATIVA do app FinMoovi recriada de verdade ("app" do catálogo — ver REGRA F).
 - "icon" ∈ {${ICONS.join(', ')}}. "metaphor" ∈ {${METAPHORS.join(', ')}}. "sfx" ∈ {${SFX.join(', ')}}. "app" ∈ {${APP_SCREENS.join(', ')}} (só quando visual.type="app").
+- ⚠️ SONS e ÍCONES têm catálogos DIFERENTES e não se misturam. O "sfx" SÓ pode ser um destes sons: {${SFX.join(', ')}}. "warning" é ÍCONE, não som (não existe sfx "warning"); "tick"/"warning" não são sfx. Se precisar de alerta sonoro, o som é "alert".
 - "text" curtíssimo (≤40 chars). "note" = 1 linha de direção de arte.
 
 REGRA A — RITMO (movimento constante): nenhum visual pode ficar parado mais de ~3s de narração. Na prática: no MÁXIMO ~8-10 palavras entre uma âncora e a próxima. Cena de 11s → ~3-5 shots. EXCEÇÃO: shots "app" — ver REGRA G — precisam do OPOSTO: ficar parados ~4-5s.
@@ -180,10 +181,26 @@ function extractJson(text) {
   return JSON.parse(s.slice(start, end + 1));
 }
 
-async function generateScript(t, { retries = 2 } = {}) {
-  const prompt = buildPrompt(t);
+// Monta o bloco corretivo anexado ao prompt na tentativa SEGUINTE a uma
+// validação reprovada: lista os erros EXATOS do validador (obrigatórios) e até
+// ~5 avisos como melhorias opcionais. O prompt-base continua sendo enviado.
+function buildCorrectiveBlock(errors, warnings) {
+  const lines = ['⚠️ SUA TENTATIVA ANTERIOR FOI REJEITADA. Corrija EXATAMENTE estes erros e gere o roteiro completo novamente:'];
+  errors.forEach(e => lines.push(`- ${e}`));
+  const topWarnings = (warnings || []).slice(0, 5);
+  if (topWarnings.length) {
+    lines.push('melhore também:');
+    topWarnings.forEach(w => lines.push(`- ${w}`));
+  }
+  return lines.join('\n');
+}
+
+async function generateScript(t, { retries = 4 } = {}) {
+  const basePrompt = buildPrompt(t);
   let lastErr;
+  let corrective = ''; // bloco corretivo acumulado da última reprovação de validação
   for (let attempt = 1; attempt <= retries; attempt++) {
+    const prompt = corrective ? `${basePrompt}\n\n${corrective}` : basePrompt;
     const raw = await generateText(prompt, { maxTokens: 2200, temperature: 0.6 });
     let script;
     try {
@@ -191,13 +208,18 @@ async function generateScript(t, { retries = 2 } = {}) {
     } catch (err) {
       lastErr = `parse falhou (tentativa ${attempt}): ${err.message}`;
       console.log(`⚠️ ${lastErr} — regenerando...`);
+      corrective = ''; // falha de parse: mantém o comportamento atual (mesmo prompt-base)
       continue;
     }
+    // Resgata quase-erros óbvios (sfx/icon/anchor/totalDurationSec) antes de validar
+    sanitizeScript(script);
     const { ok, errors, warnings } = validateShortScript(script);
     warnings.forEach(w => console.log(`   ⚠️ ${w}`));
     if (ok) return { script, warnings };
     lastErr = `validação falhou (tentativa ${attempt}): ${errors.join('; ')}`;
     console.log(`⚠️ ${lastErr} — regenerando...`);
+    // Próxima tentativa recebe o prompt-base + correção pontual dos erros
+    corrective = buildCorrectiveBlock(errors, warnings);
   }
   throw new Error(lastErr || 'não foi possível gerar um roteiro válido');
 }
