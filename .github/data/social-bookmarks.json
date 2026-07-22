@@ -358,5 +358,45 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "previdencia-privada-2026-vale-a-pena-guia-pratico",
+    "title": "Previdência privada 2026: vale a pena? Guia prático",
+    "url": "https://blog.finmoovi.com/posts/previdencia-privada-2026-vale-a-pena-guia-pratico",
+    "submittedAt": "2026-07-22T16:14:44.273Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1798232551
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "investimentos-para-o-segundo-semestre-estrategias-praticas-p",
+    "title": "Investimentos para o segundo semestre: estratégias práticas para 2024",
+    "url": "https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p",
+    "submittedAt": "2026-07-22T16:14:44.852Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1798232555
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
