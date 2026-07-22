@@ -3,10 +3,10 @@
   "term": "ações",
   "category": "basico",
   "keyword": "ações",
-  "nextVideoTitle": "O que são fundos de investimento?",
+  "nextVideoTitle": "Como escolher a ação certa antes que o preço dispare",
   "intro": {
     "style": "afirmacao",
-    "frase": "*Você ACREDITA* que R$ 50 podem virar *R$ 75*???",
+    "frase": "*Você ACREDITA* que R$ cinquenta pode virar *R$ setenta e cinco*???",
     "counter": {
       "from": 50,
       "to": 75,
@@ -17,152 +17,208 @@
     {
       "id": 1,
       "role": "hook",
-      "narration": "Se você acha que ações são só para milionários, dá uma olhada nesse número: comprou uma ação da XYZ por R$ 50, e hoje vale R$ 75.",
+      "narration": "Ações são a parte que transforma R$ cinquenta num bilhete de ouro, imagine a ação subindo pra R$ setenta e cinco.",
       "durationSec": 5,
       "shots": [
         {
-          "anchor": "ações",
+          "anchor": "Ações",
           "visual": {
             "type": "statement",
-            "text": "ações são só para milionários?"
+            "text": "Ações",
+            "note": "Título forte"
           },
           "sfx": "boom"
         },
         {
-          "anchor": "R$",
+          "anchor": "cinquenta",
           "visual": {
             "type": "number",
-            "text": "R$ 50"
+            "text": "R$ 50",
+            "note": "Valor inicial"
           },
-          "sfx": "coin"
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "setenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 75",
+            "note": "Valor final"
+          },
+          "sfx": "kaching"
         }
       ]
     },
     {
       "id": 2,
       "role": "beat",
-      "narration": "Quando você compra uma ação, vira sócio da empresa. Se muita gente quer comprar, o preço sobe; se vende, o preço cai. É como uma montanha-russa: subindo quando a empresa lança um sucesso, descendo quando tem crise. Veja tudo isso no app, que mostra sua carteira em tempo real, com gráficos de alta precisão.",
-      "durationSec": 10,
+      "narration": "Quando você compra, vira sócio da empresa, participa dos lucros, mas também sente o risco.",
+      "durationSec": 12,
       "shots": [
+        {
+          "anchor": "compra",
+          "visual": {
+            "type": "icon",
+            "icon": "growth",
+            "note": "Compra de ação"
+          },
+          "sfx": null
+        },
         {
           "anchor": "sócio",
           "visual": {
             "type": "icon",
-            "icon": "growth"
-          }
-        },
-        {
-          "anchor": "sobe",
-          "visual": {
-            "type": "chart"
-          }
-        },
-        {
-          "anchor": "subindo",
-          "visual": {
-            "type": "metaphor",
-            "metaphor": "montanha-russa"
+            "icon": "bulb",
+            "note": "Se tornar sócio"
           },
-          "sfx": "whoosh"
+          "sfx": null
         },
         {
-          "anchor": "descendo",
+          "anchor": "lucros",
           "visual": {
-            "type": "metaphor",
-            "metaphor": "montanha-russa"
+            "type": "icon",
+            "icon": "money",
+            "note": "Participar dos lucros"
           },
-          "sfx": "slide"
+          "sfx": null
         },
         {
-          "anchor": "quando",
+          "anchor": "risco",
           "visual": {
-            "type": "app",
-            "app": "dashboard"
-          }
+            "type": "icon",
+            "icon": "warning",
+            "note": "Risco do investimento"
+          },
+          "sfx": "alert"
         }
       ]
     },
     {
       "id": 3,
       "role": "beat",
-      "narration": "Se a ação da XYZ subiu de R$ 50 para R$ 75, seu lucro foi R$ 25. Mas lembre-se: o risco está sempre lá, e perder dinheiro pode acontecer. Dinheiro sem controle é dinheiro dos outros.",
-      "durationSec": 10,
+      "narration": "É como uma montanha‑russa: sobe quando a demanda explode, desce quando tudo cai. Dinheiro sem controle é dinheiro dos outros. Abra a calculadora do FinMoovi e veja o potencial.",
+      "durationSec": 12,
       "shots": [
         {
-          "anchor": "lucro",
+          "anchor": "sobe",
           "visual": {
-            "type": "number",
-            "text": "R$ 25"
+            "type": "metaphor",
+            "metaphor": "montanha-russa",
+            "note": "Subida"
           },
-          "sfx": "kaching"
+          "sfx": "whoosh"
         },
         {
-          "anchor": "risco",
+          "anchor": "desce",
           "visual": {
-            "type": "icon",
-            "icon": "warning"
-          }
+            "type": "metaphor",
+            "metaphor": "montanha-russa",
+            "note": "Descida"
+          },
+          "sfx": "slide"
         },
         {
           "anchor": "Dinheiro",
           "visual": {
             "type": "statement",
-            "text": "Dinheiro sem controle é dinheiro dos outros."
+            "text": "Dinheiro sem controle é dinheiro dos outros.",
+            "note": "Bordão do canal"
           },
-          "sfx": "ding"
+          "sfx": null
+        },
+        {
+          "anchor": "dos",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Mostra a calculadora"
+          },
+          "sfx": null
         }
       ]
     },
     {
       "id": 4,
-      "role": "cta",
-      "narration": "Quer saber quanto suas ações podem render? Clique aqui e abre a calculadora do FinMoovi pra simular tudo.",
-      "durationSec": 8,
+      "role": "beat",
+      "narration": "Ações dão dividendos, mas podem despencar. Escolha ordinárias se quiser voto, ou preferenciais se quiser prioridade nos dividendos.",
+      "durationSec": 10,
       "shots": [
         {
-          "anchor": "Clique",
+          "anchor": "dividendos",
           "visual": {
-            "type": "metaphor",
-            "metaphor": "clique-link"
+            "type": "icon",
+            "icon": "coins",
+            "note": "Dividendos"
           },
-          "sfx": "click"
+          "sfx": "ding"
         },
         {
-          "anchor": "aqui",
+          "anchor": "ordinárias",
           "visual": {
-            "type": "app",
-            "app": "calculadora"
-          }
+            "type": "statement",
+            "text": "Ordinárias",
+            "note": "Direito a voto"
+          },
+          "sfx": null
+        },
+        {
+          "anchor": "preferenciais",
+          "visual": {
+            "type": "statement",
+            "text": "Preferenciais",
+            "note": "Prioridade nos dividendos"
+          },
+          "sfx": null
         }
       ]
     },
     {
       "id": 5,
-      "role": "outro",
-      "narration": "E se eu te contar que dá para proteger seu dinheiro das quedas? No próximo vídeo, descubra o que são fundos de investimento.",
-      "durationSec": 12,
+      "role": "cta",
+      "narration": "Quer testar? Abra a calculadora do FinMoovi, insira R$ cinquenta e veja o potencial.",
+      "durationSec": 6,
       "shots": [
         {
-          "anchor": "proteger",
+          "anchor": "Abra",
           "visual": {
-            "type": "icon",
-            "icon": "shield"
-          }
+            "type": "app",
+            "app": "calculadora",
+            "note": "Tela da calculadora"
+          },
+          "sfx": null
         },
+        {
+          "anchor": "cinquenta",
+          "visual": {
+            "type": "number",
+            "text": "R$ 50",
+            "note": "Valor de exemplo"
+          },
+          "sfx": "coin"
+        }
+      ],
+      "cta": {
+        "text": "Teste agora na calculadora do FinMoovi",
+        "target": "app"
+      }
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "No próximo vídeo vamos te mostrar como escolher a ação certa antes que o preço dispare. Fica ligado!",
+      "durationSec": 5,
+      "shots": [
         {
           "anchor": "próximo",
           "visual": {
             "type": "statement",
-            "text": "Fundos de investimento?"
+            "text": "Próximo vídeo",
+            "note": "Open loop"
           },
-          "sfx": "sparkle"
+          "sfx": null
         }
       ]
     }
   ],
-  "cta": {
-    "text": "Baixe o FinMoovi e use a calculadora grátis!",
-    "target": "app"
-  },
-  "totalDurationSec": 45
+  "totalDurationSec": 50
 }
