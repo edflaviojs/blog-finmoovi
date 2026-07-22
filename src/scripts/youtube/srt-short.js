@@ -17,11 +17,18 @@
 
 import { generateText } from '../apis/kie-ai.js';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
-import { join } from 'path';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 
 const FPS = 30;
 const TRANSITION_FRAMES = 8;
+// Frames da abertura — ESPELHO de INTRO_FRAMES / INTRO_FRAMES_V3 em
+// youtube-render/src/Short.tsx (introFramesFor). Qualquer mudança lá exige
+// mudança AQUI também, senão a legenda volta a dessincronizar da voz.
+const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s)
+const INTRO_FRAMES_V3 = 120; // intro dinâmica v3 (~4s): frase + contador
 const AUDIO_ROOT = join(process.cwd(), 'youtube-render', 'public', 'audio');
+const OUTPUT_DIR = join(dirname(fileURLToPath(import.meta.url)), 'output');
 
 const args = Object.fromEntries(
   process.argv.slice(2).filter((a) => a.startsWith('--')).map((a) => {
@@ -47,6 +54,21 @@ export function masterStarts(scenes) {
     prefix += frames[i];
   }
   return starts;
+}
+
+// Segundos de abertura conforme o tipo de intro do roteiro — ESPELHO de
+// `introFramesFor()` (+ `isV3Intro()`) em youtube-render/src/Short.tsx. Lá, TODO
+// o trilho mestre (áudio/legenda/ícones/SFX) fica dentro de `<Sequence
+// from={introFrames}>`, ou seja, o tempo global de qualquer cena = introSeconds +
+// masterStarts[i] + offset-dentro-da-cena. Sem somar a intro aqui, a legenda
+// aparece ANTES da voz (bug corrigido em 2026-07-22 — ver commit
+// "fix(youtube): SRT do YouTube agora soma a intro de 4s").
+// v3 = tem `intro.frase` OU `intro.counter`; legada = só `{big, sub}`; sem intro = 0.
+export function introSecondsFor(script) {
+  const intro = script && script.intro;
+  if (!intro) return 0;
+  const isV3 = (typeof intro.frase === 'string' && intro.frase.length > 0) || !!intro.counter;
+  return (isV3 ? INTRO_FRAMES_V3 : INTRO_FRAMES) / FPS;
 }
 
 // Agrupa palavras (com start/end global) em blocos de legenda legíveis.
@@ -101,9 +123,16 @@ async function main() {
   const starts = masterStarts(scenes);
   const dir = join(AUDIO_ROOT, slug);
 
-  // PT — timestamps reais offsetados p/ o global.
+  // Roteiro (script.json) só p/ saber o tipo de intro — timing.json não carrega
+  // essa informação (ver tts-short.js).
+  const scriptPath = join(OUTPUT_DIR, `${slug}.script.json`);
+  if (!existsSync(scriptPath)) throw new Error(`roteiro não encontrado (${scriptPath}) — rode antes do srt-short.js`);
+  const script = JSON.parse(readFileSync(scriptPath, 'utf-8'));
+  const introSec = introSecondsFor(script);
+
+  // PT — timestamps reais offsetados p/ o global (intro + cena/transição).
   const ptWords = [];
-  scenes.forEach((s, i) => (s.words || []).forEach((w) => ptWords.push({ word: w.word, start: starts[i] + w.start, end: starts[i] + w.end })));
+  scenes.forEach((s, i) => (s.words || []).forEach((w) => ptWords.push({ word: w.word, start: introSec + starts[i] + w.start, end: introSec + starts[i] + w.end })));
   writeFileSync(join(dir, `${slug}.pt.srt`), toSrt(chunkCues(ptWords)), 'utf-8');
   console.log(`✓ pt — ${chunkCues(ptWords).length} blocos`);
 
@@ -114,8 +143,8 @@ async function main() {
       for (let i = 0; i < scenes.length; i++) {
         const s = scenes[i];
         if (!s.words?.length || !s.narration) continue;
-        const speechStart = starts[i] + s.words[0].start;
-        const speechEnd = starts[i] + s.words[s.words.length - 1].end;
+        const speechStart = introSec + starts[i] + s.words[0].start;
+        const speechEnd = introSec + starts[i] + s.words[s.words.length - 1].end;
         const translated = await translate(s.narration, lang);
         distributeWords(translated, speechStart, speechEnd).forEach((w) => langWords.push(w));
       }

@@ -50,6 +50,9 @@ export type IntroSpec = {
 export const isV3Intro = (intro?: IntroSpec | null): boolean => !!intro && typeof intro.frase === 'string' && intro.frase.length > 0;
 
 // Frames da abertura conforme o tipo de intro (v3 ~4s, legada ~1,5s, nenhuma 0).
+// ESPELHADO em `introSecondsFor()` de src/scripts/youtube/srt-short.js (gerador
+// do SRT) — qualquer mudança aqui exige a mesma mudança lá, senão a legenda do
+// YouTube dessincroniza da voz (bug corrigido em 2026-07-22).
 export const introFramesFor = (script: ShortScript): number =>
   !script.intro ? 0 : isV3Intro(script.intro) ? INTRO_FRAMES_V3 : INTRO_FRAMES;
 
