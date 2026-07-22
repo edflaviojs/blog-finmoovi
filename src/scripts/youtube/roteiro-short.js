@@ -69,9 +69,10 @@ CONTEÚDO DE APOIO (use os números/exemplos reais daqui):
 ${truncateBody(t.body)}
 
 ════════ REGRAS DE ESTRUTURA (o roteiro é rejeitado se violar) ════════
+⚠️ os valores/números que aparecem nos EXEMPLOS destas regras (R$ 500, R$ 3,2 milhões, 25/35 anos etc.) pertencem a OUTRO vídeo — é PROIBIDO usá-los; use SOMENTE números reais do CONTEÚDO DE APOIO do termo atual ("${t.term}").
 1. Duração total entre 45 e 55 segundos (soma dos durationSec das cenas).
 2. Cenas nesta ordem: 1 "hook" → 2 a 3 "beat" → 1 "cta" → 1 "outro".
-3. HOOK (cold open, 0-5s): gancho FORTE e EMOCIONAL que já FALA a palavra-chave "${t.term}" nos primeiros segundos (o YouTube transcreve a voz — obrigatório p/ SEO). Crie urgência/curiosidade e emende num exemplo. TOM (imite a energia, não copie): "Se você acha que ${t.term} é papo de rico… olha só esse número." Termine puxando o exemplo/número. Proibido definição/enrolação.
+3. HOOK (cold open, 0-5s): gancho FORTE e EMOCIONAL que já FALA a palavra-chave "${t.term}" nos primeiros segundos (o YouTube transcreve a voz — obrigatório p/ SEO). Crie urgência/curiosidade e emende num exemplo. TOM (EXEMPLO de formato — NUNCA copie os valores; imite só a energia): "Se você acha que ${t.term} é papo de rico… olha só esse número." Termine puxando o exemplo/número. Proibido definição/enrolação.
 4. É UMA HISTÓRIA SÓ: o vídeo desenvolve UM único assunto (o do gancho), do hook até a CTA. Cada cena COMPLEMENTA a anterior — PROIBIDO abrir assunto novo/desconexo. Os BEATS explicam o PORQUÊ/COMO dos números (dê NEXO), com os valores reais do conteúdo de apoio.
 5. CTA (penúltima cena, NUNCA no fim): recado rápido de valor indicando o app FinMoovi grátis OU a calculadora do blog. Volte já ao tom de conteúdo.
 6. OUTRO (última cena, open loop): SEM "tchau/obrigado/até a próxima". Reflexão forte + gancho de curiosidade que puxa o PRÓXIMO vídeo. Preencha "nextVideoTitle" com o tema do próximo Short.
@@ -150,8 +151,8 @@ A pontuação existe SÓ para comandar o respiro da voz (TTS). Vírgula/ponto/re
 Use reticências (…) para SUSPENSE de efeito, não para picotar frase. A última frase de cada cena puxa a próxima.
 
 ════════ INTRO (abertura disruptiva) ════════
-"intro.frase" = frase de CURIOSIDADE que para o dedo, com as palavras de ÊNFASE marcadas entre *asteriscos* (o render dá destaque nelas). Ex.: "*Você ACREDITA* que R$ 500 podem virar *R$ 3,2 MILHÕES*???".
-"intro.counter" = { "from", "to", "prefix" } — um contador que sobe do início ao resultado (ex.: 500 → 3200000). "from" < "to", números puros (sem pontos/símbolos).
+"intro.frase" = frase de CURIOSIDADE que para o dedo, com as palavras de ÊNFASE marcadas entre *asteriscos* (o render dá destaque nelas). Ex. (EXEMPLO de formato — NUNCA copie os valores, use os números reais de "${t.term}"): "*Você ACREDITA* que R$ 500 podem virar *R$ 3,2 MILHÕES*???".
+"intro.counter" = { "from", "to", "prefix" } — um contador que sobe do início ao resultado (ex., EXEMPLO de formato — NUNCA copie os valores: 500 → 3200000). "from" < "to", números puros (sem pontos/símbolos), usando os números reais do termo atual.
 
 Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste formato exato:
 {

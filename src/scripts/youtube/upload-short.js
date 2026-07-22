@@ -64,19 +64,51 @@ function sanitizeText(s, max) {
   return max ? clean.slice(0, max) : clean;
 }
 
-// Normaliza uma hashtag: só letras/números, prefixo #.
-function normHashtag(tag) {
-  const body = String(tag || '').replace(/^#+/, '').replace(/[^\p{L}\p{N}]/gu, '');
-  return body ? `#${body}` : '';
+// Preposições/artigos PT que só são descartados quando aparecem SOZINHOS
+// (uma hashtag de 1 palavra só); dentro de uma frase multi-palavra eles ficam
+// (viram parte do CamelCase), pra não quebrar o sentido da frase.
+const PT_STOPWORDS = new Set(['de', 'em', 'com', 'para', 'e', 'o', 'a', 'do', 'da']);
+
+// Divide uma frase em palavras (letras/números unicode), sem stripar acentos.
+function splitWords(s) {
+  return String(s || '').split(/[^\p{L}\p{N}]+/u).filter(Boolean);
 }
 
-// PascalCase a partir de uma frase (para hashtag/keyword).
-function pascal(s) {
-  return String(s || '')
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .split(/[^\p{L}\p{N}]+/u).filter(Boolean)
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join('');
+// Constrói UM hashtag em CamelCase (token único, mantém acentos) a partir de
+// uma frase/tag crua — ex.: "investimento em ações" → "#InvestimentoEmAções".
+// Frases de 1 palavra só que sejam stopword PT (ex.: "em") são descartadas.
+function buildHashtag(raw) {
+  const body = String(raw || '').replace(/^#+/, '').trim();
+  if (!body) return '';
+  const words = splitWords(body);
+  if (!words.length) return '';
+  if (words.length === 1 && PT_STOPWORDS.has(words[0].toLowerCase())) return '';
+  const camel = words.map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join('');
+  return camel ? `#${camel}` : '';
+}
+
+// Divide o bloco cru de hashtags em frases, preservando frases multi-palavra:
+// se houver '#', cada token começa num '#' (a frase vai até o próximo '#');
+// sem '#', usa vírgula como separador (espaço quebraria frases multi-palavra).
+function splitHashtagPhrases(raw) {
+  const s = String(raw || '').trim();
+  if (!s) return [];
+  if (s.includes('#')) return s.split(/(?=#)/).map((x) => x.trim()).filter(Boolean);
+  return s.split(',').map((x) => x.trim()).filter(Boolean);
+}
+
+// Monta a lista final de hashtags a partir de frases cruas: token único cada
+// (CamelCase), sem stopword solta, dedup case-insensitive, no máx 5 — #Shorts
+// sempre por último.
+function buildHashtagList(rawList) {
+  const out = [];
+  for (const raw of rawList || []) {
+    const tag = buildHashtag(raw);
+    if (!tag || tag.toLowerCase() === '#shorts') continue; // #Shorts é sempre adicionado no fim
+    if (out.some((x) => x.toLowerCase() === tag.toLowerCase())) continue;
+    out.push(tag);
+  }
+  return [...out.slice(0, 4), '#Shorts'];
 }
 
 // ─── roteiro ─────────────────────────────────────────────────────────────────
@@ -144,7 +176,7 @@ Dados do roteiro:
     return {
       title: title.replace(/^["']|["']$/g, ''),
       descriptionHook: description,
-      hashtags: hashtagsRaw.split(/[\s,]+/).map(normHashtag).filter(Boolean),
+      hashtags: splitHashtagPhrases(hashtagsRaw),
       tags: tagsRaw.split(',').map((t) => t.trim()).filter(Boolean),
     };
   } catch (err) {
@@ -161,7 +193,7 @@ function deterministicMeta(script) {
     `Entenda ${script.term} de um jeito simples e rápido.\n` +
     `${script?.cta?.text || 'Coloque em prática com as ferramentas grátis do FinMoovi.'}`;
   const hashtags = [
-    normHashtag(pascal(kw)),
+    buildHashtag(kw),
     '#FinançasPessoais',
     '#EducaçãoFinanceira',
     '#Investimentos',
@@ -181,16 +213,8 @@ function buildMetadata(raw, script) {
 
   const title = sanitizeText(raw.title, 100) || sanitizeText(`${script.keyword}`, 100);
 
-  // Hashtags: garante #Shorts, dedup, no máx 5, primeira = mais específica.
-  let hashtags = [];
-  for (const h of raw.hashtags) {
-    const n = normHashtag(h);
-    if (n && n.toLowerCase() !== '#shorts' && !hashtags.some((x) => x.toLowerCase() === n.toLowerCase())) {
-      hashtags.push(n);
-    }
-  }
-  hashtags = hashtags.slice(0, 4);
-  hashtags.push('#Shorts');
+  // Hashtags: token único (CamelCase), sem stopword solta, dedup, no máx 5 (#Shorts sempre por último).
+  const hashtags = buildHashtagList(raw.hashtags);
 
   const hook = sanitizeText(raw.descriptionHook, 1500);
   const description = sanitizeText([
