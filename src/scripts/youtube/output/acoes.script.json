@@ -3,12 +3,12 @@
   "term": "ações",
   "category": "basico",
   "keyword": "ações",
-  "nextVideoTitle": "Como receber dividendos sem trabalhar mais",
+  "nextVideoTitle": "Como os dividendos podem gerar renda passiva",
   "intro": {
-    "frase": "*Você ACREDITA* que R$ 500 pode virar *R$ 3.200.000*???",
+    "frase": "*Você ACREDITA* que R$ 50 podem virar *R$ 75*???",
     "counter": {
-      "from": 500,
-      "to": 3200000,
+      "from": 50,
+      "to": 75,
       "prefix": "R$"
     }
   },
@@ -16,173 +16,170 @@
     {
       "id": 1,
       "role": "hook",
-      "narration": "Se você acha que ações é papo de rico… olha só esse número, R$ 500 virou R$ 3.200.000!",
+      "narration": "Ações: pensa que é só papo de rico? Então se liga, compra uma ação por R$ 50 e, um ano depois, ela sobe pra R$ 75.",
       "durationSec": 5,
       "shots": [
         {
           "anchor": "ações",
           "visual": {
             "type": "statement",
-            "text": "ações",
-            "note": "fonte grande"
+            "text": "Ações"
           },
           "sfx": "boom"
         },
         {
-          "anchor": "500",
+          "anchor": "R$",
           "visual": {
             "type": "number",
-            "text": "R$ 500",
-            "note": "animado"
+            "text": "R$ 50"
           },
           "sfx": "whoosh"
-        },
-        {
-          "anchor": "3.200.000",
-          "visual": {
-            "type": "number",
-            "text": "R$ 3.200.000",
-            "note": "impacto visual"
-          },
-          "sfx": null
         }
       ]
     },
     {
       "id": 2,
       "role": "beat",
-      "narration": "Uma ação é um pedacinho da empresa. Compra ação da XYZ por cinquenta reais, e se a empresa lança um sucesso, o preço sobe para setenta e cinco reais, gerando lucro de vinte e cinco reais.",
-      "durationSec": 13,
+      "narration": "Quando você compra uma ação, vira sócio da empresa, ganha direito a voto e a dividendos. Na B3, essas partes são negociadas como figurinhas. É como uma bola de neve descendo a ladeira: começa pequena, mas vira uma avalanche de ganhos.",
+      "durationSec": 12,
       "shots": [
         {
           "anchor": "ação",
           "visual": {
             "type": "icon",
-            "icon": "growth",
-            "note": "seta subindo"
-          },
-          "sfx": null
+            "icon": "money"
+          }
         },
         {
-          "anchor": "XYZ",
+          "anchor": "bola",
           "visual": {
-            "type": "chart",
-            "text": "XYZ",
-            "note": "gráfico de barras"
+            "type": "metaphor",
+            "metaphor": "bola-neve"
           },
-          "sfx": null
+          "sfx": "whoosh"
         },
         {
-          "anchor": "cinquenta",
+          "anchor": "avalanche",
           "visual": {
-            "type": "number",
-            "text": "R$ 50",
-            "note": "valor inicial"
+            "type": "metaphor",
+            "metaphor": "avalanche"
           },
-          "sfx": "typewriter"
+          "sfx": "avalanche"
         },
         {
-          "anchor": "setenta",
+          "anchor": "ganhos",
           "visual": {
-            "type": "number",
-            "text": "R$ 75",
-            "note": "valor após sucesso"
+            "type": "icon",
+            "icon": "growth"
           },
-          "sfx": "kaching"
-        },
-        {
-          "anchor": "lucro",
-          "visual": {
-            "type": "statement",
-            "text": "R$ 25",
-            "note": "ganho líquido"
-          },
-          "sfx": null
+          "sfx": "sparkle"
         }
       ]
     },
     {
       "id": 3,
       "role": "beat",
-      "narration": "É como uma bola de neve descendo a ladeira: começa pequena, rola, ganha velocidade e vira uma avalanche de ganhos. Use a calculadora do FinMoovi e vê o resultado em tempo real.",
-      "durationSec": 13,
+      "narration": "Mas tem risco: se a empresa falhar, sua ação pode despencar. Existem duas classes: ordinárias dão voto e dividendos, preferenciais dão prioridade nos lucros. No nosso app, o dashboard mostra como suas ações estão evoluindo.",
+      "durationSec": 12,
       "shots": [
         {
-          "anchor": "bola",
+          "anchor": "risco",
           "visual": {
-            "type": "metaphor",
-            "metaphor": "bola-neve",
-            "note": "bola rolando"
+            "type": "icon",
+            "icon": "warning"
           },
-          "sfx": "sparkle"
+          "sfx": "alert"
         },
         {
-          "anchor": "avalanche",
+          "anchor": "despencar",
           "visual": {
-            "type": "metaphor",
-            "metaphor": "avalanche",
-            "note": "neve caindo"
+            "type": "icon",
+            "icon": "chart-down"
           },
-          "sfx": "avalanche"
+          "sfx": "thud"
         },
         {
-          "anchor": "Use",
+          "anchor": "ordinárias",
+          "visual": {
+            "type": "statement",
+            "text": "Ordinárias"
+          }
+        },
+        {
+          "anchor": "preferenciais",
+          "visual": {
+            "type": "statement",
+            "text": "Preferenciais"
+          }
+        },
+        {
+          "anchor": "prioridade",
           "visual": {
             "type": "app",
-            "app": "calculadora",
-            "note": "tela simulador"
-          },
-          "sfx": null
+            "app": "dashboard"
+          }
         }
       ]
     },
     {
       "id": 4,
-      "role": "cta",
-      "narration": "Dinheiro sem controle é dinheiro dos outros. Quer descobrir quanto suas ações podem render? Clique na calculadora do FinMoovi, simule seu lucro e veja tudo em poucos cliques, é grátis!",
-      "durationSec": 9,
+      "role": "beat",
+      "narration": "A grande vantagem é multiplicar seu dinheiro enquanto o mercado trabalha por você. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 12,
       "shots": [
         {
-          "anchor": "Dinheiro",
+          "anchor": "vantagem",
           "visual": {
-            "type": "statement",
-            "text": "Dinheiro sem controle é dinheiro dos outros",
-            "note": "frase de efeito"
+            "type": "icon",
+            "icon": "trophy"
           },
-          "sfx": null
+          "sfx": "ding"
         },
         {
-          "anchor": "Clique",
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle é dinheiro dos outros."
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer simular quanto suas ações podem render? Clica na calculadora do FinMoovi, é grátis!",
+      "durationSec": 6,
+      "shots": [
+        {
+          "anchor": "suas",
           "visual": {
             "type": "app",
-            "app": "calculadora",
-            "note": "tela de simulação"
+            "app": "calculadora"
           },
           "sfx": "click"
         }
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "role": "outro",
-      "narration": "E se você quiser saber como receber dividendos sem trabalhar mais, fica ligado no próximo vídeo.",
-      "durationSec": 12,
+      "narration": "E no próximo short vamos descobrir como os dividendos podem virar renda passiva.",
+      "durationSec": 6,
       "shots": [
         {
-          "anchor": "dividendos",
+          "anchor": "próximo",
           "visual": {
-            "type": "icon",
-            "icon": "bulb",
-            "note": "ideia brilhante"
+            "type": "statement",
+            "text": "Próximo"
           },
-          "sfx": null
+          "sfx": "pop"
         }
       ]
     }
   ],
   "cta": {
-    "text": "Simule seu lucro na calculadora do FinMoovi",
+    "text": "Simule seus ganhos agora",
     "target": "app"
   },
-  "totalDurationSec": 52
+  "totalDurationSec": 53
 }
