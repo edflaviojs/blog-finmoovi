@@ -1,12 +1,12 @@
 # GSC — Monitor de Indexação
 
-Gerado em: 2026-07-21T10:19:21.588Z
+Gerado em: 2026-07-22T10:18:42.024Z
 Propriedade: https://blog.finmoovi.com/
 
 ## Resumo
 
-- **26/454** URLs indexadas
-- **428** não indexadas
+- **29/460** URLs indexadas
+- **431** não indexadas
 - **0** com erro na inspeção
 - **0** página(s) de conteúdo fora do índice há ≥7 dias
 
@@ -16,9 +16,9 @@ Propriedade: https://blog.finmoovi.com/
 
 ## Por motivo (não indexadas)
 
-- Discovered - currently not indexed: 342
-- URL is unknown to Google: 75
-- Page with redirect: 7
+- URL is unknown to Google: 66
+- Discovered - currently not indexed: 353
+- Page with redirect: 8
 - Crawled - currently not indexed: 1
 - Redirect error: 3
 
