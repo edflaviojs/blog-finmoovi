@@ -2,7 +2,7 @@ import { AbsoluteFill, Sequence, useVideoConfig } from 'remotion';
 import { TransitionSeries, linearTiming } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
-import { Background, Watermark, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro, SignatureOutro } from './scenes';
+import { Background, Watermark, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro, SignatureOutro, computeGlobalShotSfxFires } from './scenes';
 import { BackgroundMusic } from './audio/music';
 
 export const TRANSITION_FRAMES = 8;
@@ -153,6 +153,17 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
 
   const introFrames = introFramesFor(script);
 
+  // Cooldown GLOBAL de SFX de shot (v3.4): calcula, pro vídeo INTEIRO, quais disparos
+  // sobrevivem ao cooldown de 8s entre cenas (evita o mesmo som repetir cedo demais
+  // mesmo atravessando cenas). `masterStarts` já é o frame GLOBAL do trilho mestre.
+  const shotSfxFiresByScene = computeGlobalShotSfxFires(
+    script.scenes,
+    script.scenes.map((scene, i) => sceneTimingFor(timing, scene, i)),
+    masterStarts,
+    frames,
+    fps,
+  );
+
   return (
     <AbsoluteFill>
       <Background />
@@ -176,7 +187,7 @@ export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({
             from={masterStarts[i]}
             durationInFrames={Math.max(1, frames[i] - (i < script.scenes.length - 1 ? TRANSITION_FRAMES : 0))}
           >
-            <SceneAudioLayer scene={scene} timing={sceneTimingFor(timing, scene, i)} />
+            <SceneAudioLayer scene={scene} timing={sceneTimingFor(timing, scene, i)} shotSfxFires={shotSfxFiresByScene[i]} />
           </Sequence>
         ))}
       </Sequence>

@@ -338,7 +338,7 @@ const SceneShell: React.FC<{ scene: Scene; timing?: SceneTiming | null; children
 // Camada de ÁUDIO + LEGENDA + ícones + SFX de UMA cena. Vai num trilho MESTRE
 // (Sequence sequencial, sem a sobreposição de 8f das transições) para a legenda e o
 // áudio NÃO empilharem com a cena vizinha no cruzamento. O visual segue com crossfade.
-export const SceneAudioLayer: React.FC<{ scene: Scene; timing?: SceneTiming | null }> = ({ scene, timing }) => {
+export const SceneAudioLayer: React.FC<{ scene: Scene; timing?: SceneTiming | null; shotSfxFires?: ShotSfxFire[] }> = ({ scene, timing, shotSfxFires }) => {
   const { fps } = useVideoConfig();
   const durationSec = timing?.durationSec ?? scene.durationSec;
   const totalFrames = Math.max(1, Math.round(durationSec * fps));
@@ -346,8 +346,16 @@ export const SceneAudioLayer: React.FC<{ scene: Scene; timing?: SceneTiming | nu
   return (
     <AbsoluteFill>
       {timing?.audioFile && <Audio src={staticFile(timing.audioFile)} />}
-      <SceneSfx narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />
-      {hasShots ? <ShotSfxTrack scene={scene} timing={timing} totalFrames={totalFrames} /> : null}
+      {/* SFX legado por PALAVRA-CHAVE (SceneSfx: iconFor/dinheiro→coin, crescer→whoosh
+          etc.) — só para cenas SEM shots (v3.4). Em cenas COM shots, o ShotSfxTrack
+          já é dono da trilha sonora (um som por âncora); manter o SceneSfx ligado aqui
+          fazia CADA palavra-gatilho na narração (dinheiro/juro/cartão...) disparar um
+          2º som SOBRE o sfx do shot — dobrando (às vezes triplicando) a repetição,
+          mesmo com o validador limitando ≤3× por vídeo no roteiro (o SceneSfx dispara
+          por PALAVRA, não por shot, e não é limitado pelo roteiro). Espelha exatamente
+          o gate do IconBurst logo abaixo. */}
+      {!hasShots && <SceneSfx narration={scene.narration} totalFrames={totalFrames} words={timing?.words} />}
+      {hasShots ? <ShotSfxTrack fires={shotSfxFires ?? []} /> : null}
       {/* Cena COM shots: os shots são donos da coreografia visual (cada âncora tem
           seu ícone/visual). O IconBurst legado (gatilho por palavra-chave, top:300)
           fica DESLIGADO aqui — senão desenharia um 2º ícone SOBRE o do shot, às vezes
@@ -1215,20 +1223,20 @@ const SceneShots: React.FC<{ scene: Scene; timing?: SceneTiming | null; duration
   );
 };
 
-// Trilho de SFX dos shots (no trilho MESTRE de áudio): cada shot com `sfx` dispara
-// seu som no frame de início do shot (volume abafado sob a narração).
-const SHOT_SFX_VOLUME = 0.45;
-const ShotSfxTrack: React.FC<{ scene: Scene; timing?: SceneTiming | null; totalFrames: number }> = ({ scene, timing, totalFrames }) => {
-  const { fps } = useVideoConfig();
+// Um disparo de SFX de shot já RESOLVIDO: arquivo real (.ogg) + frame de início
+// LOCAL (dentro da cena). `i` = índice do shot de origem (chave estável p/ o React).
+export type ShotSfxFire = { i: number; from: number; file: string };
+
+// Disparos CANDIDATOS de SFX dos shots de UMA cena (sem cooldown entre cenas — só o
+// dedup local de não repetir o MESMO som em shots CONSECUTIVOS da mesma cena). Serve
+// de entrada para o cooldown GLOBAL (computeGlobalShotSfxFires), que olha o vídeo
+// inteiro. Compara o ARQUIVO resolvido (o que realmente toca), então dois nomes de
+// contrato que caem no mesmo .ogg também são deduplicados.
+function shotSfxCandidatesFor(scene: Scene, timing: SceneTiming | null | undefined, fps: number, totalFrames: number): ShotSfxFire[] {
   const shots = scene.shots || [];
   const starts = shotStartFrames(scene, timing, fps, totalFrames);
-  // Guarda anti-repetição (belt-and-suspenders): se o som deste shot for IDÊNTICO
-  // ao ÚLTIMO som DISPARADO, pula (silêncio) — evita cansar com o mesmo efeito em
-  // shots seguidos. Compara o ARQUIVO resolvido (o que realmente toca), então dois
-  // nomes de contrato que caem no mesmo .ogg também são deduplicados. Shots sem sfx
-  // não contam como "disparo" (não alteram o último som).
   let prevFile: string | null = null;
-  const fires: { i: number; from: number; file: string }[] = [];
+  const fires: ShotSfxFire[] = [];
   shots.forEach((shot, i) => {
     if (!shot.sfx) return;
     const file = resolveShotSfx(shot.sfx);
@@ -1244,6 +1252,49 @@ const ShotSfxTrack: React.FC<{ scene: Scene; timing?: SceneTiming | null; totalF
     }
     fires.push({ i, from, file });
   });
+  return fires;
+}
+
+// COOLDOWN GLOBAL (v3.4): o MESMO som (arquivo resolvido) não repete dentro de
+// 240 frames (~8s a 30fps) em NENHUMA parte do vídeo, mesmo atravessando cenas —
+// evita cansar o ouvido quando duas cenas próximas usam o mesmo efeito de shot
+// (ex.: 'coin' na cena 2 e de novo na cena 4, poucos segundos depois). Estende o
+// dedup local (só shots consecutivos da MESMA cena) do shotSfxCandidatesFor acima.
+export const SHOT_SFX_COOLDOWN_FRAMES = 240;
+
+// Calcula, para TODAS as cenas do vídeo, os disparos de SFX de shot já filtrados
+// pelo cooldown global. `sceneStartFrames[i]` = frame GLOBAL (mesmo referencial do
+// trilho mestre) em que a cena i começa; `sceneTotalFrames[i]` = duração em frames
+// da cena i. Retorna um array paralelo a `scenes`, cada item já pronto pra passar a
+// <ShotSfxTrack fires={...} /> daquela cena (frames ainda LOCAIS à cena).
+export function computeGlobalShotSfxFires(
+  scenes: Scene[],
+  timings: (SceneTiming | null | undefined)[],
+  sceneStartFrames: number[],
+  sceneTotalFrames: number[],
+  fps: number,
+): ShotSfxFire[][] {
+  const lastFireGlobalByFile = new Map<string, number>();
+  return scenes.map((scene, i) => {
+    if (!scene.shots || !scene.shots.length) return [];
+    const candidates = shotSfxCandidatesFor(scene, timings[i], fps, sceneTotalFrames[i]);
+    const kept: ShotSfxFire[] = [];
+    for (const c of candidates) {
+      const globalFrom = (sceneStartFrames[i] ?? 0) + c.from;
+      const last = lastFireGlobalByFile.get(c.file);
+      if (last != null && globalFrom - last < SHOT_SFX_COOLDOWN_FRAMES) continue; // dentro do cooldown → silencia
+      lastFireGlobalByFile.set(c.file, globalFrom);
+      kept.push(c);
+    }
+    return kept;
+  });
+}
+
+// Trilho de SFX dos shots (no trilho MESTRE de áudio): cada disparo já vem PRONTO
+// (resolvido + filtrado pelo cooldown global) via `fires` — ver computeGlobalShotSfxFires.
+const SHOT_SFX_VOLUME = 0.45;
+const ShotSfxTrack: React.FC<{ fires: ShotSfxFire[] }> = ({ fires }) => {
+  const { fps } = useVideoConfig();
   return (
     <>
       {fires.map((f) => (
