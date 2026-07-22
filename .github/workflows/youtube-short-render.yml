@@ -4,7 +4,11 @@ name: YouTube — Renderizar Short (completo)
 # TTS por cena + Whisper (timing real) → legendas SRT ×3 → render Remotion
 # (voz + SFX + música + karaokê sincronizado). Sobe o MP4 + .srt como artefato.
 # Com upload=true, publica no YouTube (PRIVADO até a auditoria da API) — F1.4.
-# Manual por ora; vira cron 1/dia na F1.5.
+#
+# F1.5 — cron diário: 06:30 UTC o job escolhe sozinho o PRÓXIMO termo do
+# glossário (alfabético, sem repetir), GERA o roteiro fresco, comita, renderiza
+# e publica. No disparo manual (workflow_dispatch) o comportamento é o de antes:
+# slug + upload vêm dos inputs e o roteiro já tem que existir.
 
 on:
   workflow_dispatch:
@@ -18,21 +22,27 @@ on:
         type: boolean
         required: false
         default: false
+  schedule:
+    # 06:30 UTC todo dia: o vídeo fica pronto ~07h UTC e o dono publica de manhã
+    # (Lisboa/BR). Horário ajustável — é só mudar o cron aqui.
+    - cron: '30 6 * * *'
 
-# Necessário para commitar o tracking do upload (.github/data/youtube-published.json).
+# Necessário para commitar o roteiro gerado + o tracking do upload.
 permissions:
   contents: write
 
+# No cron, todas as execuções compartilham UM grupo fixo ("daily") para
+# serializar (evita corrida no tracking / publicação dupla). No disparo manual,
+# o grupo é por slug — assim um manual não trava outro nem o cron. A expressão
+# só usa contexto de evento (não usa saída de step), então é válida aqui.
 concurrency:
-  group: youtube-short-${{ github.event.inputs.slug || 'juros-compostos' }}
+  group: youtube-short-${{ github.event_name == 'schedule' && 'daily' || github.event.inputs.slug || 'juros-compostos' }}
   cancel-in-progress: false
 
 jobs:
   render:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    env:
-      SLUG: ${{ github.event.inputs.slug || 'juros-compostos' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,15 +52,84 @@ jobs:
         with:
           node-version: '22'
 
+      # F1.5 — resolve o modo da execução:
+      #   • schedule → escolhe o próximo termo; se o glossário esgotou, marca
+      #     skip=true e o resto do job é pulado (sucesso neutro, sem falha).
+      #     SLUG resolvido, UPLOAD=true, GENERATE=true (gera o roteiro fresco).
+      #   • workflow_dispatch → SLUG/UPLOAD vêm dos inputs, GENERATE=false.
+      - name: Resolver slug e modo
+        id: resolve
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            set +e
+            SLUG="$(node src/scripts/youtube/pick-next-short.js)"
+            CODE=$?
+            set -e
+            if [ "$CODE" = "78" ]; then
+              echo "glossário esgotado 🎉 — nada a fazer hoje."
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            if [ "$CODE" != "0" ]; then
+              echo "❌ pick-next-short falhou (code $CODE)"
+              exit "$CODE"
+            fi
+            echo "🎬 termo do dia: $SLUG"
+            {
+              echo "SLUG=$SLUG"
+              echo "UPLOAD=true"
+              echo "GENERATE=true"
+            } >> "$GITHUB_ENV"
+          else
+            {
+              echo "SLUG=${{ github.event.inputs.slug || 'juros-compostos' }}"
+              echo "UPLOAD=${{ github.event.inputs.upload }}"
+              echo "GENERATE=false"
+            } >> "$GITHUB_ENV"
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
       - name: Instalar dependências (blog)
+        if: steps.resolve.outputs.skip != 'true'
         run: npm ci
 
+      # Só no cron: gera o roteiro fresco do termo escolhido (usa o LLM grátis).
+      # Se a validação falhar mesmo após os retries internos, o step falha e o
+      # job inteiro falha — o e-mail de falha do GitHub é o alerta (sem sistemas
+      # de notificação extras).
+      - name: Gerar roteiro do termo (cron)
+        if: steps.resolve.outputs.skip != 'true' && env.GENERATE == 'true'
+        env:
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/youtube/roteiro-short.js --slug="$SLUG"
+
+      # Comita o roteiro gerado (mesmo padrão do tracking) para o render ser
+      # reproduzível e o histórico ficar registrado.
+      - name: Commitar roteiro gerado (cron)
+        if: steps.resolve.outputs.skip != 'true' && env.GENERATE == 'true'
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add "src/scripts/youtube/output/$SLUG.script.json"
+          if git diff --staged --quiet; then
+            echo "Sem mudanças no roteiro (nada a commitar)."
+          else
+            git commit -m "chore: roteiro do Short $SLUG [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          fi
+
       - name: Gerar áudio + timing (TTS + Whisper)
+        if: steps.resolve.outputs.skip != 'true'
         env:
           TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
         run: node src/scripts/youtube/tts-short.js --slug="$SLUG"
 
       - name: Gerar legendas SRT ×3 (pt/en/es)
+        if: steps.resolve.outputs.skip != 'true'
         env:
           TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
@@ -60,24 +139,27 @@ jobs:
         run: node src/scripts/youtube/srt-short.js --slug="$SLUG"
 
       - name: Instalar dependências (render)
+        if: steps.resolve.outputs.skip != 'true'
         working-directory: youtube-render
         run: npm ci
 
       - name: Renderizar Short
+        if: steps.resolve.outputs.skip != 'true'
         working-directory: youtube-render
         run: npx remotion render src/index.ts Short "out/$SLUG.mp4"
 
       - name: Subir artefato (MP4 + legendas)
+        if: steps.resolve.outputs.skip != 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: short-${{ github.event.inputs.slug || 'juros-compostos' }}
+          name: short-${{ env.SLUG }}
           path: |
             youtube-render/out/*.mp4
-            youtube-render/public/audio/${{ github.event.inputs.slug || 'juros-compostos' }}/*.srt
+            youtube-render/public/audio/${{ env.SLUG }}/*.srt
           if-no-files-found: error
 
       - name: Publicar no YouTube (privado até auditoria)
-        if: ${{ github.event.inputs.upload == 'true' }}
+        if: steps.resolve.outputs.skip != 'true' && env.UPLOAD == 'true'
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
@@ -90,7 +172,7 @@ jobs:
         run: node src/scripts/youtube/upload-short.js --slug="$SLUG"
 
       - name: Commitar tracking do upload
-        if: ${{ github.event.inputs.upload == 'true' }}
+        if: steps.resolve.outputs.skip != 'true' && env.UPLOAD == 'true'
         run: |
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
