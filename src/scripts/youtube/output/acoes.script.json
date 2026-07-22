@@ -3,10 +3,10 @@
   "term": "ações",
   "category": "basico",
   "keyword": "ações",
-  "nextVideoTitle": "Como a volatilidade pode transformar seu bolso",
+  "nextVideoTitle": "investimentos de renda fixa",
   "intro": {
     "style": "afirmacao",
-    "frase": "*Já pensou* que R$ 50 pode virar *R$ 75*???",
+    "frase": "*Compre uma ação* por *R$ 50* e veja como pode valer *R$ 75*!",
     "counter": {
       "from": 50,
       "to": 75,
@@ -17,139 +17,120 @@
     {
       "id": 1,
       "role": "hook",
-      "narration": "Ações são a chance de ter um pedacinho da empresa e lucrar com isso. Por exemplo, R$ 50.",
+      "narration": "Se você acha que ações é papo de rico… olha só esse número. Compre uma ação por R$ 50 e veja como pode valer R$ 75!",
       "durationSec": 5,
       "shots": [
         {
-          "anchor": "Ações",
+          "anchor": "ações",
           "visual": {
             "type": "statement",
             "text": "Ações",
-            "note": "texto grande"
+            "note": "Introdução ao termo"
           },
           "sfx": "boom"
         },
         {
-          "anchor": "R$",
+          "anchor": "R$ 50",
           "visual": {
             "type": "number",
             "text": "R$ 50",
-            "note": "número destacado"
-          }
+            "note": "Valor inicial da ação"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "R$ 75",
+          "visual": {
+            "type": "number",
+            "text": "R$ 75",
+            "note": "Valor final da ação"
+          },
+          "sfx": "kaching"
         }
       ]
     },
     {
       "id": 2,
       "role": "beat",
-      "narration": "Imagine comprar uma ação por R$ 50. Um ano depois, a empresa lança um sucesso e o preço sobe para R$ 75, gerando R$ 25 de lucro. É como subir numa montanha‑russa e depois descer, mas quem fica firme sai ganhando. Dinheiro sem controle é dinheiro dos outros.",
-      "durationSec": 13,
+      "narration": "Isso acontece porque as ações são partes de propriedade de uma empresa. Quando você compra uma ação, você está comprando uma pequena parte daquela empresa. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 15,
       "shots": [
         {
-          "anchor": "comprar",
+          "anchor": "propriedade",
           "visual": {
-            "type": "number",
-            "text": "R$ 50",
-            "note": "valor da compra"
-          }
-        },
-        {
-          "anchor": "sobe",
-          "visual": {
-            "type": "number",
-            "text": "R$ 75",
-            "note": "valor após alta"
-          }
-        },
-        {
-          "anchor": "subir",
-          "visual": {
-            "type": "metaphor",
-            "metaphor": "montanha-russa",
-            "note": "subida"
+            "type": "icon",
+            "icon": "target",
+            "note": "Alvo da propriedade"
           },
-          "sfx": "whoosh"
+          "sfx": "ding"
         },
         {
-          "anchor": "descer",
+          "anchor": "empresa",
           "visual": {
-            "type": "metaphor",
-            "metaphor": "montanha-russa",
-            "note": "descida"
+            "type": "icon",
+            "icon": "bank",
+            "note": "Instituição financeira"
           },
-          "sfx": "slide"
+          "sfx": "typewriter"
         },
         {
-          "anchor": "Dinheiro",
+          "anchor": "controle",
           "visual": {
-            "type": "statement",
-            "text": "Dinheiro sem controle é dinheiro dos outros.",
-            "note": "slogan"
-          }
+            "type": "icon",
+            "icon": "shield",
+            "note": "Proteção do dinheiro"
+          },
+          "sfx": "thud"
         }
       ]
     },
     {
       "id": 3,
       "role": "beat",
-      "narration": "Existem duas categorias: ações ordinárias dão voto e dividendos, já as preferenciais dão prioridade nos lucros. Ver seu mix no dashboard ajuda a controlar risco. Mas se a empresa falhar, você pode perder tudo.",
-      "durationSec": 13,
+      "narration": "As ações ordinárias dão aos acionistas o direito de votar nas decisões da empresa e receber dividendos. Já as ações preferenciais não dão o direito de votar, mas têm prioridade sobre as ações ordinárias no recebimento de dividendos.",
+      "durationSec": 15,
       "shots": [
         {
           "anchor": "ordinárias",
           "visual": {
-            "type": "list",
-            "text": "Ordinárias",
-            "note": "voto, dividendos"
-          }
+            "type": "icon",
+            "icon": "mind",
+            "note": "Pensamento crítico"
+          },
+          "sfx": "sparkle"
         },
         {
           "anchor": "preferenciais",
           "visual": {
-            "type": "list",
-            "text": "Preferenciais",
-            "note": "prioridade, lucro"
-          }
+            "type": "icon",
+            "icon": "hourglass",
+            "note": "Tempo passando"
+          },
+          "sfx": "pop"
         },
         {
-          "anchor": "dashboard",
-          "visual": {
-            "type": "app",
-            "app": "dashboard",
-            "note": "visão de portfólio"
-          }
-        },
-        {
-          "anchor": "perder",
+          "anchor": "dividendos",
           "visual": {
             "type": "icon",
-            "icon": "warning",
-            "note": "risco de perda"
+            "icon": "money",
+            "note": "Recompensa financeira"
           },
-          "sfx": "alert"
+          "sfx": "coin"
         }
       ]
     },
     {
       "id": 4,
       "role": "cta",
-      "narration": "Quer simular seu ganho? Use a calculadora do FinMoovi, é grátis e fácil. Clique no link e teste agora.",
-      "durationSec": 6,
+      "narration": "Baixe o app FinMoovi e descubra como as ações podem ser uma ótima opção de investimento. É grátis e fácil de usar!",
+      "durationSec": 5,
       "shots": [
         {
-          "anchor": "Quer",
+          "anchor": "app",
           "visual": {
             "type": "app",
             "app": "calculadora",
-            "note": "simulador de ganhos"
-          }
-        },
-        {
-          "anchor": "Clique",
-          "visual": {
-            "type": "statement",
-            "text": "Clique no link e teste agora!",
-            "note": "chamada para ação"
+            "note": "Tela de cálculo do app"
           },
           "sfx": "click"
         }
@@ -158,23 +139,24 @@
     {
       "id": 5,
       "role": "outro",
-      "narration": "E no próximo vídeo vamos descobrir como a volatilidade pode transformar seu bolso. Não perca!",
-      "durationSec": 8,
+      "narration": "Agora que você sabe o que são ações, é hora de começar a investir. Qual será o próximo passo na sua jornada financeira? Veja no próximo vídeo!",
+      "durationSec": 10,
       "shots": [
         {
           "anchor": "próximo",
           "visual": {
-            "type": "statement",
-            "text": "Próximo vídeo: volatilidade que transforma seu bolso",
-            "note": "teaser"
-          }
+            "type": "icon",
+            "icon": "fire",
+            "note": "Urgência e motivação"
+          },
+          "sfx": "whoosh"
         }
       ]
     }
   ],
   "cta": {
-    "text": "Abra a calculadora e veja seu potencial",
+    "text": "Baixe o app FinMoovi",
     "target": "app"
   },
-  "totalDurationSec": 45
+  "totalDurationSec": 50
 }
