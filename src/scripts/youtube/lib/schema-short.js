@@ -146,10 +146,20 @@ function resolveShots(scene) {
  * { anchor, ok, estSec } — `ok=false`/`estSec=null` quando a âncora não foi
  * localizada na narração (nesse caso o erro já é reportado em outro ponto).
  */
-export function estimateShotScreenTimes(scene) {
+/**
+ * Núcleo compartilhado por estimateShotScreenTimes() e pelo sanitizador: para
+ * uma cena, faz a MESMA varredura com cursor que o validador (forward-scan,
+ * acento/caixa-insensível) e devolve, por shot, o índice da palavra-âncora na
+ * narração (`positions[j]` = índice 0-based da palavra, ou null se a âncora não
+ * for localizada em ordem de fala). Também expõe `rawWords` (as palavras da
+ * narração ORIGINAL, para reescrever âncoras) e os números para o cálculo de
+ * tempo de tela.
+ */
+function shotWordPositions(scene) {
   const { shots } = resolveShots(scene || {});
   const dur = Number(scene && scene.durationSec) || 0;
   const narr = norm(scene && scene.narration);
+  const rawWords = String((scene && scene.narration) || '').trim().split(/\s+/).filter(Boolean);
   const words = [...narr.matchAll(/\S+/g)];
   const totalWords = words.length;
 
@@ -167,6 +177,12 @@ export function estimateShotScreenTimes(scene) {
     while (wordCursor + 1 < words.length && words[wordCursor + 1].index <= at) wordCursor++;
     positions.push(wordCursor);
   }
+
+  return { shots, dur, narr, rawWords, totalWords, positions };
+}
+
+export function estimateShotScreenTimes(scene) {
+  const { shots, dur, totalWords, positions } = shotWordPositions(scene);
 
   return shots.map((shot, j) => {
     const pos = positions[j];
@@ -443,6 +459,31 @@ export function validateShortScript(script) {
 const SFX_ALIASES = { warning: 'alert', tick: 'keyboard' };
 const ICON_ALIASES = { alert: 'warning' };
 
+// Metas de tempo de tela dos shots "app" (mesmos números do validador v3.4)
+const APP_TARGET_SEC = 4.5; // meta de tela
+const APP_FLOOR_SEC = 2.5;  // piso duro (abaixo disso o validador dá ERRO)
+
+// Reproduz EXATAMENTE a checagem de ordem de fala do validador: varre os shots
+// em ordem, com cursor de caractere, exigindo que cada âncora apareça (acento/
+// caixa-insensível) em posição >= à âncora anterior. true = passa no validador.
+function forwardScanOk(narr, shots) {
+  let cursor = 0;
+  for (const sh of shots) {
+    const a = sh && typeof sh.anchor === 'string' ? norm(sh.anchor) : '';
+    if (!a) return false;
+    const at = narr.indexOf(a, cursor);
+    if (at === -1) return false;
+    cursor = at + a.length;
+  }
+  return true;
+}
+
+// Limpa pontuação nas bordas de uma palavra da narração (para virar âncora limpa)
+function trimWord(w) {
+  const t = String(w || '').replace(/^[^0-9A-Za-zÀ-ÿ]+|[^0-9A-Za-zÀ-ÿ]+$/g, '');
+  return t || String(w || '');
+}
+
 /**
  * SANITIZADOR — resgata quase-erros ÓBVIOS antes da validação, sem afrouxar as
  * regras de verdade. Chamado por roteiro-short.js ANTES de validateShortScript.
@@ -533,6 +574,121 @@ export function sanitizeScript(script) {
         }
       }
     });
+  });
+
+  // === RESCUE PASS 1 — ORDENAR shots pela posição de fala (v3.4, 22/07) ===
+  // O LLM acerta a narração mas às vezes LISTA os shots fora da ordem em que as
+  // âncoras são faladas ("fora de ordem de fala"). Aqui, se TODAS as âncoras da
+  // cena aparecem na narração, reordenamos os shots pela 1ª ocorrência (estável).
+  // Roda DEPOIS dos resgates de âncora acima (âncoras já corrigidas entram na
+  // ordenação) e só aplica se a ordem resultante realmente passa no forward-scan.
+  scenes.forEach((scene, i) => {
+    const shots = Array.isArray(scene && scene.shots) ? scene.shots : null;
+    if (!shots || shots.length < 2) return;
+    const tag = `cena ${i + 1} (${(scene && scene.role) || '?'})`;
+    const narr = norm(scene.narration);
+    const posOf = shots.map(sh => {
+      const a = sh && typeof sh.anchor === 'string' ? norm(sh.anchor) : '';
+      if (!a) return null;
+      const at = narr.indexOf(a);
+      return at === -1 ? null : at;
+    });
+    if (posOf.some(p => p == null)) return;          // alguma âncora sequer existe → não é caso de ordem
+    if (forwardScanOk(narr, shots)) return;          // já está em ordem → nada a fazer
+    const order = shots.map((sh, idx) => ({ sh, idx, p: posOf[idx] }))
+      .sort((a, b) => a.p - b.p || a.idx - b.idx);   // ordenação estável por posição de fala
+    const sorted = order.map(o => o.sh);
+    if (!forwardScanOk(narr, sorted)) return;        // ordenação não resolveu (duplicatas) → deixa p/ validador
+    scene.shots = sorted;
+    log(`${tag}: shots reordenados para a ordem de fala (${order.map(o => o.idx + 1).join('→')})`);
+  });
+
+  // === RESCUE PASS 2 — ANTECIPAR âncora de shot "app" p/ segurar a tela (v3.4) ===
+  // Shots "app" precisam de ~4.5s de tela (piso duro 2.5s). Quando um app segura
+  // pouco (ex.: ~2.4s), caminhamos a âncora para uma palavra ANTERIOR (≥3 chars),
+  // sempre DEPOIS da âncora do shot anterior, até estimar ≥4.5s (ou o melhor que
+  // der). Antecipar reduz o tempo do shot ANTERIOR — se isso derrubaria um app
+  // anterior abaixo do piso, paramos ali. Se nem o melhor alcança 2.5s, deixamos
+  // para o validador (o retry reestrutura). Roda DEPOIS da ordenação.
+  scenes.forEach((scene, i) => {
+    const shots = Array.isArray(scene && scene.shots) ? scene.shots : null;
+    if (!shots || shots.length === 0) return;
+    const tag = `cena ${i + 1} (${(scene && scene.role) || '?'})`;
+    shots.forEach((shot, j) => {
+      if (!shot || !shot.visual || shot.visual.type !== 'app') return;
+      const base = estimateShotScreenTimes(scene);
+      if (!base[j] || !base[j].ok) return;
+      const origEst = base[j].estSec;
+      if (origEst >= APP_TARGET_SEC) return;         // já segura o suficiente
+      const wp = shotWordPositions(scene);
+      const startWord = wp.positions[j];
+      if (startWord == null) return;
+      // limite inferior: estritamente depois da âncora anterior (ou 0 se for o 1º)
+      let lower;
+      if (j === 0) lower = 0;
+      else if (wp.positions[j - 1] == null) return;   // âncora anterior perdida → não arrisca a ordem
+      else lower = wp.positions[j - 1] + 1;
+
+      const origAnchor = shot.anchor;
+      let best = null; // { anchor, est }
+      for (let k = startWord - 1; k >= lower; k--) {
+        const cand = trimWord(wp.rawWords[k]);
+        if (!cand || norm(cand).length < 3) continue;
+        shot.anchor = cand;
+        const est2 = estimateShotScreenTimes(scene);
+        // toda âncora ainda resolvível e em ordem? (senão a candidata quebrou algo)
+        if (!est2.every(e => e && e.ok)) { shot.anchor = origAnchor; continue; }
+        // nenhum app ANTERIOR pode cair abaixo do piso por causa da antecipação
+        let prevAppOk = true;
+        for (let p = 0; p < j; p++) {
+          const pv = shots[p] && shots[p].visual;
+          if (pv && pv.type === 'app' && est2[p].ok && est2[p].estSec < APP_FLOOR_SEC) { prevAppOk = false; break; }
+        }
+        if (!prevAppOk) { shot.anchor = origAnchor; break; } // para na fronteira do app anterior
+        best = { anchor: cand, est: est2[j].estSec };
+        shot.anchor = origAnchor;                     // restaura enquanto procura o melhor
+        if (best.est >= APP_TARGET_SEC) break;        // alcançou a meta, para
+      }
+      if (best && best.est >= APP_FLOOR_SEC) {
+        shot.anchor = best.anchor;
+        const o = Math.round(origEst * 10) / 10;
+        const n = Math.round(best.est * 10) / 10;
+        log(`${tag} shot ${j + 1}: app "${shot.visual.app}" âncora "${origAnchor}"→"${best.anchor}" antecipada (tempo de tela ~${o}s→~${n}s)`);
+      }
+      // se o melhor ainda < 2.5s, mantém a âncora original e deixa o validador barrar
+    });
+  });
+
+  // === RESCUE PASS 3 — DESCARTAR shot com âncora impossível (último recurso) ===
+  // Depois de todos os resgates de âncora, se a âncora AINDA não aparece na
+  // narração (ex.: "R$", símbolos, palavras <3 chars ausentes), removemos o shot
+  // — mas só se a cena tiver ≥2 shots (nunca esvazia a cena) e nunca se remover
+  // um app deixaria o vídeo com <2 shots "app" (aí fica p/ o validador/retry).
+  let appShotCount = 0;
+  scenes.forEach(scene => {
+    const shots = Array.isArray(scene && scene.shots) ? scene.shots : [];
+    shots.forEach(sh => { if (sh && sh.visual && sh.visual.type === 'app') appShotCount++; });
+  });
+  scenes.forEach((scene, i) => {
+    const shots = Array.isArray(scene && scene.shots) ? scene.shots : null;
+    if (!shots || shots.length < 2) return;          // cena de 1 shot → deixa p/ o validador
+    const tag = `cena ${i + 1} (${(scene && scene.role) || '?'})`;
+    const narr = norm(scene.narration);
+    for (let j = shots.length - 1; j >= 0; j--) {
+      const shot = shots[j];
+      const a = shot && typeof shot.anchor === 'string' ? norm(shot.anchor) : '';
+      const resolvable = a && narr.indexOf(a) !== -1;
+      if (resolvable) continue;
+      if (shots.length < 2) break;                   // não esvazia a cena
+      const isApp = shot && shot.visual && shot.visual.type === 'app';
+      if (isApp && appShotCount - 1 < 2) {
+        log(`${tag} shot ${j + 1}: âncora "${shot && shot.anchor}" impossível, mas é app e removê-lo deixaria <2 b-rolls do app — mantido p/ o validador/retry`);
+        continue;
+      }
+      shots.splice(j, 1);
+      if (isApp) appShotCount--;
+      log(`${tag} shot ${j + 1}: âncora "${shot && shot.anchor}" não aparece na narração — shot REMOVIDO (último recurso; a cena ainda tem ${shots.length} shot(s))`);
+    }
   });
 
   // 4. totalDurationSec ≠ soma das cenas → recalcula a partir da soma
