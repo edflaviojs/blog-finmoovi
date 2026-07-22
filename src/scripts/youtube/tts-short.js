@@ -22,7 +22,7 @@
  */
 
 import { synthesizeSpeech, transcribeWords, pickProvider, getTtsProviders, warmUpTts } from './lib/tts-client.js';
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -166,6 +166,33 @@ function readScript(slug) {
   return JSON.parse(readFileSync(path, 'utf-8'));
 }
 
+// ── Síntese + validação de UMA cena (F1.5) ──
+// Extraído do loop principal p/ ser reaproveitado na re-síntese de "voz única"
+// (Fix 2): mesma lógica de tentativas/validação/backoff, só muda QUAL provedor
+// pedir em cada tentativa (via `providerForAttempt(attempt)`).
+async function synthesizeValidatedScene({ id, narration, wordCount, minDurationSec, fallbackDurationSec, providerForAttempt, logSuffix = '' }) {
+  let audio, ext, voice, providerUsed, whisper, speechEnd, succeededAttempt;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    const providerForThisAttempt = providerForAttempt(attempt);
+
+    ({ audio, ext, voice, provider: providerUsed } = await synthesizeSpeech(pronounce(narration), { providerName: providerForThisAttempt }));
+    whisper = await transcribeWords(audio, { ext });
+    speechEnd = whisper.length ? whisper[whisper.length - 1].end : fallbackDurationSec;
+
+    if (!isAudioBroken(speechEnd, wordCount)) {
+      succeededAttempt = attempt;
+      return { audio, ext, voice, provider: providerUsed, whisper, speechEnd, succeededAttempt };
+    }
+
+    console.log(`  ⚠ cena ${id}${logSuffix}: áudio suspeito (${speechEnd.toFixed(2)}s p/ ${wordCount} palavras, mínimo ${minDurationSec.toFixed(2)}s) — tentativa ${attempt}/${MAX_ATTEMPTS}`);
+
+    if (attempt === MAX_ATTEMPTS) {
+      throw new Error(`cena ${id}: áudio do TTS veio quebrado (${speechEnd.toFixed(2)}s para ${wordCount} palavras) após ${MAX_ATTEMPTS} tentativas`);
+    }
+    await sleep(RETRY_BACKOFF_MS[attempt - 1]);
+  }
+}
+
 async function main() {
   const slug = args.slug && args.slug !== true ? String(args.slug) : 'juros-compostos';
   const script = readScript(slug);
@@ -181,12 +208,14 @@ async function main() {
 
   // Aquecimento do edge-tts: a 1ª conexão do processo às vezes volta um stub
   // truncado (cold start). Esquentamos com uma micro-frase descartada ANTES da
-  // cena 1 — falha aqui é inofensiva (só loga e segue).
+  // cena 1 — warmUpTts() já valida o áudio e retenta internamente (até 5x); só
+  // seguimos sem aquecimento válido depois de esgotar as tentativas (os retries
+  // por cena ainda protegem a síntese real).
   try {
-    await warmUpTts();
-    console.log('   (edge-tts aquecido)\n');
+    const warm = await warmUpTts();
+    console.log(`   (edge-tts aquecido — ${warm.attempt}ª tentativa, ${warm.bytes} bytes)\n`);
   } catch (err) {
-    console.log(`   (aquecimento do TTS falhou — seguindo assim mesmo: ${err.message})\n`);
+    console.log(`   ⚠ aquecimento do TTS esgotou as tentativas — seguindo assim mesmo: ${err.message}\n`);
   }
 
   const audioDir = join(AUDIO_ROOT, slug);
@@ -194,6 +223,11 @@ async function main() {
 
   const outScenes = [];
   let voiceUsed = null;
+  // Provedor "efetivo" desta síntese — começa no primário e, se alguma cena
+  // precisar escalar (4ª tentativa forçando o próximo da cadeia), passa a ser
+  // usado como primário nas cenas SEGUINTES também (Fix 2 — 1 voz por vídeo).
+  let effectiveProvider = provider;
+  let unifiedProvider = null; // setado na 1ª vez que uma escalada "salva" uma cena
 
   for (const scene of scenes) {
     const id = scene.id ?? outScenes.length + 1;
@@ -204,31 +238,29 @@ async function main() {
 
     const wordCount = narration.split(/\s+/).filter(Boolean).length;
     const minDurationSec = minExpectedDurationSec(wordCount);
+    const fallbackDurationSec = scene.durationSec || 3;
+    const primaryForThisScene = effectiveProvider;
 
-    let audio, ext, voice, whisper, speechEnd, succeededAttempt;
-    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-      // Retry com o MESMO provedor nas tentativas 2 e 3; na última tentativa (4ª),
-      // se houver mais de um provedor na cadeia, força o próximo (edge quebrando
-      // stub repetido → tenta piper/azure em vez de insistir no mesmo defeito).
-      const idx = providerChain.indexOf(provider);
+    // Retry com o MESMO provedor nas tentativas 2 e 3; na última tentativa (4ª),
+    // se houver mais de um provedor na cadeia, força o próximo (edge quebrando
+    // stub repetido → tenta piper/azure em vez de insistir no mesmo defeito).
+    const providerForAttempt = (attempt) => {
+      const idx = providerChain.indexOf(primaryForThisScene);
       const forceNext = attempt === MAX_ATTEMPTS && providerChain.length > 1;
-      const providerForAttempt = forceNext ? providerChain[(idx + 1) % providerChain.length] : provider;
+      return forceNext ? providerChain[(idx + 1) % providerChain.length] : primaryForThisScene;
+    };
 
-      ({ audio, ext, voice } = await synthesizeSpeech(pronounce(narration), { providerName: providerForAttempt }));
-      whisper = await transcribeWords(audio, { ext });
-      speechEnd = whisper.length ? whisper[whisper.length - 1].end : (scene.durationSec || 3);
+    const { audio, ext, voice, provider: providerUsed, whisper, speechEnd, succeededAttempt } = await synthesizeValidatedScene({
+      id, narration, wordCount, minDurationSec, fallbackDurationSec, providerForAttempt,
+    });
 
-      if (!isAudioBroken(speechEnd, wordCount)) {
-        succeededAttempt = attempt;
-        break;
-      }
-
-      console.log(`  ⚠ cena ${id}: áudio suspeito (${speechEnd.toFixed(2)}s p/ ${wordCount} palavras, mínimo ${minDurationSec.toFixed(2)}s) — tentativa ${attempt}/${MAX_ATTEMPTS}`);
-
-      if (attempt === MAX_ATTEMPTS) {
-        throw new Error(`cena ${id}: áudio do TTS veio quebrado (${speechEnd.toFixed(2)}s para ${wordCount} palavras) após 4 tentativas`);
-      }
-      await sleep(RETRY_BACKOFF_MS[attempt - 1]);
+    // Escalada aconteceu (provedor real ≠ o que era primário p/ esta cena): a
+    // partir de agora, force esse provedor em todas as cenas seguintes — e
+    // lembre disso p/ re-sintetizar as cenas ANTERIORES no fim (voz única).
+    if (providerUsed !== primaryForThisScene && !unifiedProvider) {
+      unifiedProvider = providerUsed;
+      effectiveProvider = providerUsed;
+      console.log(`  🔀 cena ${id} escalou p/ "${providerUsed}" — provedor forçado nas próximas cenas (voz única por vídeo)`);
     }
 
     // áudio validado — persiste + segue p/ alinhamento
@@ -247,13 +279,59 @@ async function main() {
       audioFile: `audio/${slug}/${audioName}`, // relativo a youtube-render/public
       durationSec,
       words,
+      _providerUsed: providerUsed, // interno — removido antes de gravar timing.json
+      _fallbackDurationSec: fallbackDurationSec,
     });
     const retrySuffix = succeededAttempt > 1 ? ` (${succeededAttempt}ª tentativa)` : '';
     console.log(`  ✓ cena ${id} [${scene.role || '-'}] — ${durationSec}s · ${words.length} palavras (${whisper.length} do Whisper)${retrySuffix}`);
   }
 
+  // ── Fix 2: uma voz só por vídeo ──
+  // Se alguma cena escalou p/ outro provedor, as cenas ANTERIORES a ela ainda
+  // usam a voz original — re-sintetiza essas cenas minoritárias com o provedor
+  // que "salvou o dia" (o Whisper roda de novo sobre o áudio final de cada uma).
+  if (unifiedProvider) {
+    const minorityScenes = outScenes.filter((s) => s._providerUsed !== unifiedProvider);
+    if (minorityScenes.length) {
+      console.log(`\n🎙️ voz unificada: re-sintetizando cenas ${minorityScenes.map((s) => s.id).join(', ')} com ${unifiedProvider} (voz única por vídeo)`);
+
+      for (const outScene of minorityScenes) {
+        const wordCount = outScene.narration.split(/\s+/).filter(Boolean).length;
+        const minDurationSec = minExpectedDurationSec(wordCount);
+
+        const { audio, ext, voice, provider: providerUsed, whisper, speechEnd } = await synthesizeValidatedScene({
+          id: outScene.id,
+          narration: outScene.narration,
+          wordCount,
+          minDurationSec,
+          fallbackDurationSec: outScene._fallbackDurationSec,
+          providerForAttempt: () => unifiedProvider, // sem escalada aqui — já é o provedor-alvo
+          logSuffix: ' [re-síntese p/ voz única]',
+        });
+
+        // remove o áudio antigo (extensão pode mudar entre provedores, ex.: mp3 → wav)
+        const oldPath = join(audioDir, `scene-${outScene.id}.${outScene.audioFile.split('.').pop()}`);
+        if (existsSync(oldPath)) { try { unlinkSync(oldPath); } catch { /* melhor esforço */ } }
+
+        const audioName = `scene-${outScene.id}.${ext}`;
+        writeFileSync(join(audioDir, audioName), audio);
+
+        outScene.audioFile = `audio/${slug}/${audioName}`;
+        outScene.durationSec = +(speechEnd + TAIL_PAD).toFixed(3);
+        outScene.words = alignWords(outScene.narration, whisper, speechEnd);
+        outScene._providerUsed = providerUsed;
+        voiceUsed = voice;
+
+        console.log(`  ✓ cena ${outScene.id} re-sintetizada com ${providerUsed} — ${outScene.durationSec}s · ${outScene.words.length} palavras`);
+      }
+    }
+  }
+
+  // limpa os campos internos antes de gravar
+  for (const s of outScenes) { delete s._providerUsed; delete s._fallbackDurationSec; }
+
   const totalDurationSec = +outScenes.reduce((a, s) => a + s.durationSec, 0).toFixed(3);
-  const timing = { slug, provider, voice: voiceUsed, scenes: outScenes, totalDurationSec };
+  const timing = { slug, provider: unifiedProvider || provider, voice: voiceUsed, scenes: outScenes, totalDurationSec };
   writeFileSync(join(audioDir, 'timing.json'), JSON.stringify(timing, null, 2), 'utf-8');
 
   console.log(`\n✅ ${outScenes.length} cenas · ${totalDurationSec}s total`);

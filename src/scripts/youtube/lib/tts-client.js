@@ -84,14 +84,48 @@ function edgeProvider() {
   };
 }
 
+// Aquecimento (F1.5): a 1ª síntese do processo às vezes volta um stub truncado
+// SEM lançar erro — o stub de "Olá." passaria despercebido se só checássemos que
+// a promise resolveu. Por isso validamos o próprio áudio de aquecimento (mesmo
+// piso de bytes usado p/ detectar stub em edgeProvider) e retentamos.
+const WARMUP_TEXT = 'Olá.';
+const WARMUP_MIN_BYTES = 3000; // mesmo piso de "áudio curto/truncado" do edgeProvider
+const WARMUP_MAX_ATTEMPTS = 5;
+const WARMUP_BACKOFF_MS = [1000, 2000, 4000, 8000]; // antes das tentativas 2, 3, 4 e 5
+
 /**
  * Aquecimento do edge-tts: sintetiza uma micro-frase ("Olá.") numa conexão nova e
- * DESCARTA o resultado, só p/ absorver o "cold start" (a 1ª conexão do processo às
- * vezes volta um stub truncado). Falha aqui é NÃO-FATAL — o chamador deve engolir
- * (ver tts-short.js main()). Não retorna áudio; serve só p/ "esquentar" o caminho.
+ * DESCARTA o áudio, só p/ absorver o "cold start" (a 1ª conexão do processo às
+ * vezes volta um stub truncado). Ao contrário da versão anterior, agora VALIDA o
+ * próprio áudio de aquecimento (bytes ≥ WARMUP_MIN_BYTES) e RETENTA até
+ * WARMUP_MAX_ATTEMPTS vezes com backoff — um aquecimento que também sai truncado
+ * não "esquenta" nada, só desperdiça o efeito de absorção.
+ *
+ * Falha após esgotar as tentativas ainda é NÃO-FATAL p/ quem chama — o chamador
+ * deve logar um aviso claro e seguir (ver tts-short.js main()); os retries por
+ * cena continuam protegendo a síntese real.
+ *
+ * @returns {Promise<{attempt:number, bytes:number}>}
  */
 export async function warmUpTts() {
-  await edgeSynthOnce('Olá.', VOICES.edge.name);
+  let lastErr;
+  for (let attempt = 1; attempt <= WARMUP_MAX_ATTEMPTS; attempt++) {
+    try {
+      const buf = await edgeSynthOnce(WARMUP_TEXT, VOICES.edge.name);
+      if (buf.length >= WARMUP_MIN_BYTES) {
+        console.log(`   (aquecimento tentativa ${attempt}/${WARMUP_MAX_ATTEMPTS}: OK — ${buf.length} bytes)`);
+        return { attempt, bytes: buf.length };
+      }
+      lastErr = new Error(`áudio de aquecimento suspeito (${buf.length} bytes, mínimo ${WARMUP_MIN_BYTES})`);
+    } catch (err) {
+      lastErr = err;
+    }
+    console.log(`   (aquecimento tentativa ${attempt}/${WARMUP_MAX_ATTEMPTS}: falhou — ${lastErr.message})`);
+    if (attempt < WARMUP_MAX_ATTEMPTS) {
+      await new Promise((resolve) => setTimeout(resolve, WARMUP_BACKOFF_MS[attempt - 1]));
+    }
+  }
+  throw lastErr;
 }
 
 // ── Provedor 2: Piper offline (MIT) — só se configurado (PIPER_BIN + PIPER_MODEL) ──
