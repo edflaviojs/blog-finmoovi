@@ -885,6 +885,12 @@ const MetaSlip: React.FC<{ life: number }> = ({ life }) => {
 const CLICK_PRESS_FRAC = 0.58;
 export const clickPressOffset = (life: number) => Math.round(life * CLICK_PRESS_FRAC);
 
+// Fração da VIDA do shot em que a BOLHA (metáfora 'bolha') ESTOURA. Mesma ideia do
+// clickPressOffset: fonte ÚNICA da verdade para o VISUAL (MetaBubble) e o SFX
+// ('pop', agendado no ShotSfxTrack pela MESMA fórmula) → o som toca no frame do POP.
+const BUBBLE_POP_FRAC = 0.72;
+export const bubblePopOffset = (life: number) => Math.round(life * BUBBLE_POP_FRAC);
+
 // metáfora 'clique-link': uma mãozinha (cursor 👆 em SVG nativo, cores da marca)
 // viaja numa curva até a pílula "Link na descrição", PRESSIONA (pílula afunda +
 // flash) no frame do 'click'. O som é agendado no MESMO frame (ver ShotSfxTrack).
@@ -953,11 +959,216 @@ const MetaClickLink: React.FC<{ life: number }> = ({ life }) => {
   );
 };
 
+// ── Metáforas NOVAS (v3.5) — mesma linguagem SVG nativa da marca, vida = shot ─────
+const clamp01 = (v: number) => Math.max(0, Math.min(1, v));
+
+// foguete: pequeno foguete acende e SOBE íngreme, com rastro brilhante (crescimento/
+// decolagem). Acelera (ease-in) do canto inferior-esquerdo ao topo-direito. Casa com 'whoosh'.
+const MetaRocket: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 720, H = 560;
+  const p = interpolate(frame, [0, life], [0, 1], { extrapolateRight: 'clamp', easing: Easing.in(Easing.cubic) });
+  const x0 = 150, y0 = 480, x1 = 560, y1 = 70;
+  const cx = x0 + (x1 - x0) * p, cy = y0 + (y1 - y0) * p;
+  const trail = new Array(14).fill(0);
+  const flick = 0.6 + 0.4 * Math.sin(frame * 0.9); // chama tremulando
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="rkt-g" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="50%" stopColor={BRAND.violet} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      {/* rastro brilhante do trajeto já percorrido (esmaece pra trás) */}
+      {trail.map((_, i) => {
+        const tp = Math.max(0, p - (i + 1) * 0.05);
+        const tx = x0 + (x1 - x0) * tp, ty = y0 + (y1 - y0) * tp;
+        const op = p > 0.02 ? (1 - i / trail.length) * 0.5 : 0;
+        return <circle key={i} cx={tx} cy={ty} r={Math.max(2, 16 - i * 0.9)} fill="url(#rkt-g)" opacity={op} />;
+      })}
+      {/* foguete (nariz apontando pro trajeto, ~45°) */}
+      <g transform={`translate(${cx} ${cy}) rotate(45)`}>
+        <path d={`M-8 20 Q0 ${20 + 34 * flick} 8 20 Q0 30 -8 20 Z`} fill={BRAND.yellow} opacity={0.9} />
+        <path d={`M-5 20 Q0 ${20 + 20 * flick} 5 20 Q0 26 -5 20 Z`} fill={BRAND.magenta} />
+        <path d="M-10 20 L-22 30 L-10 6 Z" fill="url(#rkt-g)" />
+        <path d="M10 20 L22 30 L10 6 Z" fill="url(#rkt-g)" />
+        <path d="M0 -34 C14 -14 14 6 10 20 L-10 20 C-14 6 -14 -14 0 -34 Z" fill={BRAND.panel} stroke="url(#rkt-g)" strokeWidth={5} strokeLinejoin="round" />
+        <circle cx={0} cy={-8} r={7} fill={BRAND.cyan} />
+      </g>
+    </svg>
+  );
+};
+
+// semente: a semente CAI, BROTA e cresce numa arvorezinha ao longo do shot
+// (paciência/longo prazo). Casa com 'sparkle'.
+const MetaSeed: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 700, H = 560, ground = 470, cx = W / 2;
+  const drop = interpolate(frame, [0, life * 0.18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const seedY = 150 + (ground - 150) * drop;
+  const sprout = interpolate(frame, [life * 0.18, life * 0.5], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const grow = interpolate(frame, [life * 0.5, life * 0.95], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const trunkH = 40 + grow * 150;
+  const canopyR = grow * 92;
+  const sway = Math.sin(frame / 14) * 3 * grow;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="seed-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+      </defs>
+      <line x1={90} y1={ground} x2={610} y2={ground} stroke={BRAND.sub} strokeWidth={8} opacity={0.4} strokeLinecap="round" />
+      {/* semente caindo (some quando o broto começa) */}
+      {sprout < 0.02 && <ellipse cx={cx} cy={seedY} rx={12} ry={16} fill={BRAND.yellow} stroke="#b59b00" strokeWidth={3} />}
+      {/* broto: caule + 2 folhas, crescendo do zero */}
+      {sprout > 0 && grow < 0.02 && (
+        <g transform={`translate(${cx} ${ground}) scale(${sprout})`}>
+          <line x1={0} y1={0} x2={0} y2={-48} stroke="url(#seed-g)" strokeWidth={8} strokeLinecap="round" />
+          <ellipse cx={-16} cy={-36} rx={16} ry={9} fill={BRAND.cyan} opacity={0.9} transform="rotate(-30 -16 -36)" />
+          <ellipse cx={16} cy={-42} rx={16} ry={9} fill={BRAND.violet} opacity={0.9} transform="rotate(30 16 -42)" />
+        </g>
+      )}
+      {/* árvore crescendo (tronco + copa em camadas) */}
+      {grow > 0 && (
+        <g transform={`translate(${cx} ${ground}) rotate(${sway})`}>
+          <rect x={-9} y={-trunkH} width={18} height={trunkH} rx={7} fill="url(#seed-g)" />
+          <circle cx={0} cy={-trunkH} r={canopyR} fill={BRAND.violet} opacity={0.28} />
+          <circle cx={-canopyR * 0.5} cy={-trunkH + 10} r={canopyR * 0.6} fill={BRAND.cyan} opacity={0.35} />
+          <circle cx={canopyR * 0.5} cy={-trunkH + 10} r={canopyR * 0.6} fill={BRAND.magenta} opacity={0.3} />
+          <circle cx={0} cy={-trunkH - canopyR * 0.4} r={canopyR * 0.55} fill={BRAND.cyan} opacity={0.3} />
+        </g>
+      )}
+    </svg>
+  );
+};
+
+// montanha-russa: um trilho com subidas e descidas e um carrinho percorrendo os
+// altos e baixos (volatilidade — ideal p/ ações). Casa com 'whoosh'.
+const MetaRollercoaster: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 900, H = 520;
+  const p = interpolate(frame, [0, life], [0, 1], { extrapolateRight: 'clamp' });
+  const x0 = 70, x1 = 830;
+  const yAt = (t: number) => 300 - Math.sin(t * Math.PI * 2.2) * 130 - Math.sin(t * Math.PI * 4.5 + 0.6) * 45;
+  const N = 60;
+  const pts: string[] = [];
+  for (let i = 0; i <= N; i++) {
+    const t = i / N;
+    pts.push(`${i === 0 ? 'M' : 'L'}${(x0 + (x1 - x0) * t).toFixed(1)},${yAt(t).toFixed(1)}`);
+  }
+  const cxp = x0 + (x1 - x0) * p, cyp = yAt(p);
+  const dt = 0.01, ahead = clamp01(p + dt), behind = clamp01(p - dt);
+  const ang = Math.atan2(yAt(ahead) - yAt(behind), (x1 - x0) * (ahead - behind)) * 180 / Math.PI;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="rc-g" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="50%" stopColor={BRAND.violet} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      <path d={pts.join(' ')} fill="none" stroke="url(#rc-g)" strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" opacity={0.9} />
+      <g transform={`translate(${cxp} ${cyp}) rotate(${ang})`}>
+        <rect x={-26} y={-34} width={52} height={26} rx={7} fill={BRAND.panel} stroke="url(#rc-g)" strokeWidth={4} />
+        <circle cx={-14} cy={-4} r={8} fill={BRAND.magenta} />
+        <circle cx={14} cy={-4} r={8} fill={BRAND.cyan} />
+      </g>
+    </svg>
+  );
+};
+
+// bolha: um balão/bolha INFLA progressivamente e ESTOURA no fim, com partículas
+// (bolha/expectativa). O som 'pop' é agendado no frame do estouro (bubblePopOffset).
+const MetaBubble: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 700, H = 560, cx = W / 2, cy = 270;
+  const pop = bubblePopOffset(life);
+  const inflate = interpolate(frame, [0, pop], [30, 175], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.quad) });
+  const wobble = Math.sin(frame / 6) * 4 * interpolate(frame, [0, pop], [0.2, 1], { extrapolateRight: 'clamp' });
+  const popped = frame >= pop;
+  const r = inflate + wobble;
+  const shards = new Array(16).fill(0);
+  const burst = popped ? interpolate(frame, [pop, pop + 16], [0, 1], { extrapolateRight: 'clamp' }) : 0;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <radialGradient id="bub-g" cx="38%" cy="34%" r="70%">
+          <stop offset="0%" stopColor="#ffffff" stopOpacity="0.9" />
+          <stop offset="30%" stopColor={BRAND.cyan} stopOpacity="0.5" />
+          <stop offset="100%" stopColor={BRAND.violet} stopOpacity="0.35" />
+        </radialGradient>
+      </defs>
+      {!popped && (
+        <g>
+          <circle cx={cx} cy={cy} r={r} fill="url(#bub-g)" stroke={BRAND.cyan} strokeWidth={4} />
+          <ellipse cx={cx - r * 0.34} cy={cy - r * 0.4} rx={r * 0.18} ry={r * 0.1} fill="#ffffff" opacity={0.85} transform={`rotate(-32 ${cx - r * 0.34} ${cy - r * 0.4})`} />
+        </g>
+      )}
+      {popped && shards.map((_, i) => {
+        const a = (i / shards.length) * Math.PI * 2;
+        const dist = burst * (120 + (i % 3) * 40);
+        return <circle key={i} cx={cx + Math.cos(a) * dist} cy={cy + Math.sin(a) * dist} r={Math.max(1, 9 - burst * 6)} fill={i % 2 ? BRAND.cyan : BRAND.magenta} opacity={1 - burst} />;
+      })}
+      {popped && burst < 1 && (
+        <circle cx={cx} cy={cy} r={r * (1 + burst)} fill="none" stroke={BRAND.cyan} strokeWidth={4} opacity={(1 - burst) * 0.6} />
+      )}
+    </svg>
+  );
+};
+
+// ralo: moedas escorregam/espiralam ralo abaixo e somem (dinheiro escorrendo/taxas).
+// Casa com 'slide' ou 'thud'.
+const MetaDrain: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 700, H = 560, cx = W / 2, drainY = 430;
+  const coins = [0, 1, 2, 3, 4];
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="drn-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.violet} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      {/* ralo/funil: elipses concêntricas + boca escura */}
+      <ellipse cx={cx} cy={drainY} rx={130} ry={46} fill="none" stroke={BRAND.sub} strokeWidth={6} opacity={0.5} />
+      <ellipse cx={cx} cy={drainY} rx={92} ry={32} fill="none" stroke={BRAND.sub} strokeWidth={5} opacity={0.4} />
+      <ellipse cx={cx} cy={drainY} rx={54} ry={19} fill="#05070a" stroke="url(#drn-g)" strokeWidth={5} />
+      {coins.map((i) => {
+        const delay = i * 0.14;
+        const p = interpolate(frame, [life * delay, life * (delay + 0.5)], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+        const ang = p * Math.PI * 3 + i * 1.3;
+        const rad = (1 - p) * 150;
+        const x = cx + Math.cos(ang) * rad;
+        const y = (150 + i * 6) + (drainY - (150 + i * 6)) * p - Math.sin(ang) * rad * 0.32;
+        const scale = 1 - p * 0.8;
+        const op = p < 0.9 ? 1 : interpolate(p, [0.9, 1], [1, 0]);
+        return (
+          <g key={i} transform={`translate(${x} ${y}) scale(${scale})`} opacity={op}>
+            <ellipse cx={0} cy={0} rx={26} ry={26} fill="url(#drn-g)" stroke={BRAND.cyan} strokeWidth={3} />
+            <text x={0} y={9} fontSize={26} fontWeight={900} textAnchor="middle" fill="#0d1117">$</text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+};
+
 const ShotMetaphor: React.FC<{ metaphor?: string; life: number }> = ({ metaphor, life }) => {
   if (metaphor === 'avalanche') return <MetaAvalanche life={life} />;
   if (metaphor === 'escorregao') return <MetaSlip life={life} />;
   if (metaphor === 'clique-link') return <MetaClickLink life={life} />;
-  return <MetaSnowball life={life} />; // 'bola-neve' (default)
+  if (metaphor === 'foguete') return <MetaRocket life={life} />;
+  if (metaphor === 'semente') return <MetaSeed life={life} />;
+  if (metaphor === 'montanha-russa') return <MetaRollercoaster life={life} />;
+  if (metaphor === 'bolha') return <MetaBubble life={life} />;
+  if (metaphor === 'ralo') return <MetaDrain life={life} />;
+  return <MetaSnowball life={life} />; // 'bola-neve' (default) — metáfora desconhecida → fallback
 };
 
 // Texto DIGITADO (máquina de escrever): aparece caractere a caractere ao longo de
@@ -1242,13 +1453,14 @@ function shotSfxCandidatesFor(scene: Scene, timing: SceneTiming | null | undefin
     const file = resolveShotSfx(shot.sfx);
     if (file === prevFile) return;
     prevFile = file;
-    // metáfora 'clique-link': o som dispara no FRAME DO TOQUE (start + press), não
-    // no início do shot — alinhado ao MetaClickLink pela MESMA fórmula (fonte única).
+    // metáforas com "momento-chave": o som dispara no FRAME do evento (não no início
+    // do shot), alinhado ao VISUAL pela MESMA fórmula (fonte única): 'clique-link'
+    // no toque (start + press); 'bolha' no estouro (start + pop).
     let from = starts[i];
-    if (shot.visual.type === 'metaphor' && shot.visual.metaphor === 'clique-link') {
+    if (shot.visual.type === 'metaphor' && (shot.visual.metaphor === 'clique-link' || shot.visual.metaphor === 'bolha')) {
       const end = i < shots.length - 1 ? starts[i + 1] : totalFrames;
       const life = Math.max(1, end - starts[i]);
-      from = starts[i] + clickPressOffset(life);
+      from = starts[i] + (shot.visual.metaphor === 'bolha' ? bubblePopOffset(life) : clickPressOffset(life));
     }
     fires.push({ i, from, file });
   });

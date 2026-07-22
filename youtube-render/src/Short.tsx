@@ -24,7 +24,8 @@ export type ShotVisual = {
   prefix?: string;
   icon?: 'money' | 'coins' | 'growth' | 'clock' | 'card' | 'warning' | 'question' | 'mind'
     | 'piggy' | 'bank' | 'target' | 'trophy' | 'bulb' | 'hourglass' | 'wallet' | 'fire' | 'chart-down' | 'shield';
-  metaphor?: 'bola-neve' | 'avalanche' | 'escorregao' | 'clique-link';
+  metaphor?: 'bola-neve' | 'avalanche' | 'escorregao' | 'clique-link'
+    | 'foguete' | 'semente' | 'montanha-russa' | 'bolha' | 'ralo';
   // b-roll de app nativo (v3.3): qual tela do FinMoovi renderizar dentro do celular.
   app?: AppScreen;
   note?: string;
@@ -156,6 +157,12 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
     }
   }
 
+  // OFFSET ÚNICO DA INTRO (v3.5): TODA a linha do tempo pós-intro deriva deste MESMO
+  // valor — v3 dinâmica = INTRO_FRAMES_V3 (120), legada = INTRO_FRAMES (45), sem intro
+  // = 0. O `<Sequence from={introFrames}>` abaixo embrulha o VISUAL (TransitionSeries)
+  // E o trilho MESTRE (áudio + legenda + ícones + SFX) juntos, então voz e legenda
+  // NUNCA divergem da abertura (a legenda não começa antes da voz). Nada de constante
+  // fixa 45 no cálculo de offset — o 45 só alimenta o ramo legado de introFramesFor.
   const introFrames = introFramesFor(script);
 
   // Cooldown GLOBAL de SFX de shot (v3.4): calcula, pro vídeo INTEIRO, quais disparos
