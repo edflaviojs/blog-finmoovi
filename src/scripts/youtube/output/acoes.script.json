@@ -3,8 +3,9 @@
   "term": "ações",
   "category": "basico",
   "keyword": "ações",
-  "nextVideoTitle": "Como os dividendos podem gerar renda passiva",
+  "nextVideoTitle": "O que são fundos de investimento?",
   "intro": {
+    "style": "afirmacao",
     "frase": "*Você ACREDITA* que R$ 50 podem virar *R$ 75*???",
     "counter": {
       "from": 50,
@@ -16,14 +17,14 @@
     {
       "id": 1,
       "role": "hook",
-      "narration": "Ações: pensa que é só papo de rico? Então se liga, compra uma ação por R$ 50 e, um ano depois, ela sobe pra R$ 75.",
+      "narration": "Se você acha que ações são só para milionários, dá uma olhada nesse número: comprou uma ação da XYZ por R$ 50, e hoje vale R$ 75.",
       "durationSec": 5,
       "shots": [
         {
           "anchor": "ações",
           "visual": {
             "type": "statement",
-            "text": "Ações"
+            "text": "ações são só para milionários?"
           },
           "sfx": "boom"
         },
@@ -33,87 +34,47 @@
             "type": "number",
             "text": "R$ 50"
           },
-          "sfx": "whoosh"
+          "sfx": "coin"
         }
       ]
     },
     {
       "id": 2,
       "role": "beat",
-      "narration": "Quando você compra uma ação, vira sócio da empresa, ganha direito a voto e a dividendos. Na B3, essas partes são negociadas como figurinhas. É como uma bola de neve descendo a ladeira: começa pequena, mas vira uma avalanche de ganhos.",
-      "durationSec": 12,
+      "narration": "Quando você compra uma ação, vira sócio da empresa. Se muita gente quer comprar, o preço sobe; se vende, o preço cai. É como uma montanha-russa: subindo quando a empresa lança um sucesso, descendo quando tem crise. Veja tudo isso no app, que mostra sua carteira em tempo real, com gráficos de alta precisão.",
+      "durationSec": 10,
       "shots": [
         {
-          "anchor": "ação",
+          "anchor": "sócio",
           "visual": {
             "type": "icon",
-            "icon": "money"
+            "icon": "growth"
           }
         },
         {
-          "anchor": "bola",
+          "anchor": "sobe",
+          "visual": {
+            "type": "chart"
+          }
+        },
+        {
+          "anchor": "subindo",
           "visual": {
             "type": "metaphor",
-            "metaphor": "bola-neve"
+            "metaphor": "montanha-russa"
           },
           "sfx": "whoosh"
         },
         {
-          "anchor": "avalanche",
+          "anchor": "descendo",
           "visual": {
             "type": "metaphor",
-            "metaphor": "avalanche"
+            "metaphor": "montanha-russa"
           },
-          "sfx": "avalanche"
+          "sfx": "slide"
         },
         {
-          "anchor": "ganhos",
-          "visual": {
-            "type": "icon",
-            "icon": "growth"
-          },
-          "sfx": "sparkle"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "role": "beat",
-      "narration": "Mas tem risco: se a empresa falhar, sua ação pode despencar. Existem duas classes: ordinárias dão voto e dividendos, preferenciais dão prioridade nos lucros. No nosso app, o dashboard mostra como suas ações estão evoluindo.",
-      "durationSec": 12,
-      "shots": [
-        {
-          "anchor": "risco",
-          "visual": {
-            "type": "icon",
-            "icon": "warning"
-          },
-          "sfx": "alert"
-        },
-        {
-          "anchor": "despencar",
-          "visual": {
-            "type": "icon",
-            "icon": "chart-down"
-          },
-          "sfx": "thud"
-        },
-        {
-          "anchor": "ordinárias",
-          "visual": {
-            "type": "statement",
-            "text": "Ordinárias"
-          }
-        },
-        {
-          "anchor": "preferenciais",
-          "visual": {
-            "type": "statement",
-            "text": "Preferenciais"
-          }
-        },
-        {
-          "anchor": "prioridade",
+          "anchor": "quando",
           "visual": {
             "type": "app",
             "app": "dashboard"
@@ -122,64 +83,86 @@
       ]
     },
     {
-      "id": 4,
+      "id": 3,
       "role": "beat",
-      "narration": "A grande vantagem é multiplicar seu dinheiro enquanto o mercado trabalha por você. Dinheiro sem controle é dinheiro dos outros.",
-      "durationSec": 12,
+      "narration": "Se a ação da XYZ subiu de R$ 50 para R$ 75, seu lucro foi R$ 25. Mas lembre-se: o risco está sempre lá, e perder dinheiro pode acontecer. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 10,
       "shots": [
         {
-          "anchor": "vantagem",
+          "anchor": "lucro",
           "visual": {
-            "type": "icon",
-            "icon": "trophy"
+            "type": "number",
+            "text": "R$ 25"
           },
-          "sfx": "ding"
+          "sfx": "kaching"
         },
         {
-          "anchor": "dinheiro",
+          "anchor": "risco",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
           "visual": {
             "type": "statement",
             "text": "Dinheiro sem controle é dinheiro dos outros."
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "cta",
+      "narration": "Quer saber quanto suas ações podem render? Clique aqui e abre a calculadora do FinMoovi pra simular tudo.",
+      "durationSec": 8,
+      "shots": [
+        {
+          "anchor": "Clique",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "aqui",
+          "visual": {
+            "type": "app",
+            "app": "calculadora"
           }
         }
       ]
     },
     {
       "id": 5,
-      "role": "cta",
-      "narration": "Quer simular quanto suas ações podem render? Clica na calculadora do FinMoovi, é grátis!",
-      "durationSec": 6,
+      "role": "outro",
+      "narration": "E se eu te contar que dá para proteger seu dinheiro das quedas? No próximo vídeo, descubra o que são fundos de investimento.",
+      "durationSec": 12,
       "shots": [
         {
-          "anchor": "suas",
+          "anchor": "proteger",
           "visual": {
-            "type": "app",
-            "app": "calculadora"
-          },
-          "sfx": "click"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "role": "outro",
-      "narration": "E no próximo short vamos descobrir como os dividendos podem virar renda passiva.",
-      "durationSec": 6,
-      "shots": [
+            "type": "icon",
+            "icon": "shield"
+          }
+        },
         {
           "anchor": "próximo",
           "visual": {
             "type": "statement",
-            "text": "Próximo"
+            "text": "Fundos de investimento?"
           },
-          "sfx": "pop"
+          "sfx": "sparkle"
         }
       ]
     }
   ],
   "cta": {
-    "text": "Simule seus ganhos agora",
+    "text": "Baixe o FinMoovi e use a calculadora grátis!",
     "target": "app"
   },
-  "totalDurationSec": 53
+  "totalDurationSec": 45
 }
