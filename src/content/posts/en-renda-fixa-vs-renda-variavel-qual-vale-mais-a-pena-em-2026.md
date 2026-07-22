@@ -33,7 +33,7 @@ Fixed income includes [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende
 | Product | Where to Find | Average Rate 2024‑2025* | Features |
 |---------|----------------|-----------------------|----------|
 | [CDB](/en/glossario/en-cdb) (Bank Deposit Certificate) | Commercial banks | 108 % of [CDI](/en/glossario/en-cdi) (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-garantia-fgc) up to R$ 250 k per institution |
-| Treasury Direct – [Selic](/en/glossario/en-selic) | Federal government | 12.8 % a year (Selic 2026) | Daily [liquidity](/en/glossario/en-liquidez), low sovereign risk |
+| Treasury Direct – [Selic](/en/glossario/en-selic) | Federal government | 12.8 % a year ([Selic](/en/posts/en-quotes-semana-1-july-2026) 2026) | Daily [liquidity](/en/glossario/en-liquidez), low sovereign risk |
 | LCIs/LCAs (Real Estate/Agricultural [Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Letters) | Banks, brokerages | 107 % of CDI (≈ 13 % a year) | IR‑exempt, FGC protection |
 | Corporate [Debentures](/en/glossario/en-debentures) | Brokerages | 9 %‑12 % a year (depending on rating) | Credit risk of the issuing company |
 
@@ -50,7 +50,7 @@ The logic is simple: you lend [money](/en/posts/en-avoid-impulse-purchases) (or 
 
 ### Disadvantages of Fixed Income
 
-1. **Limited profitability** – When [inflation](/en/glossario/en-inflacao) rises, fixed income can fall behind more aggressive investments.  
+1. **Limited profitability** – When [inflation](/en/glossario/en-inflacao) rises, fixed income can fall behind more aggressive [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-).  
 2. **Dependence on the Selic rate** – If the Central Bank keeps rates low for a long period, returns drop.  
 3. **Possible “opportunity cost”** – [Money](/en/posts/en-creating-an-emergency-fund) locked in a 5‑year CDB earns less than stocks that could jump 30 % in six months.
 

@@ -19,7 +19,7 @@ seo:
 
 ## O que é [previdência privada](/glossario/previdencia-privada)?
 
-A previdência privada, também chamada de plano de previdência complementar, funciona como um *poupador de longo prazo* que você alimenta ao longo da vida profissional. O dinheiro é aplicado em fundos administrados por instituições financeiras e, ao se aposentar, você recebe um benefício mensal (renda) ou um valor único.
+A previdência privada, também chamada de plano de previdência complementar, funciona como um *poupador de longo prazo* que você alimenta ao longo da vida profissional. O [dinheiro](/posts/cashback-inteligente) é aplicado em fundos administrados por instituições financeiras e, ao se aposentar, você recebe um benefício mensal (renda) ou um valor único.
 
 Dois tipos principais de planos existem no Brasil:
 
@@ -38,8 +38,8 @@ Em 2026 o cenário mudou em três pontos críticos:
 
 
 
-1. **Taxas de administração mais competitivas** – A concorrência entre bancos e seguradoras baixou a média das taxas de 2,5% ao ano para cerca de 1,8% nos planos de renda fixa e 2,2% nos de renda variável.
-2. **Novas opções de fundos de índice (ETFs) dentro dos planos** – Muitos gestores passaram a oferecer ETFs de ações brasileiras e internacionais como opção de investimento, ampliando a diversificação.
+1. **Taxas de administração mais competitivas** – A concorrência entre bancos e seguradoras baixou a média das taxas de 2,5% ao ano para cerca de 1,8% nos planos de [renda fixa](/glossario/renda-fixa) e 2,2% nos de [renda variável](/glossario/renda-variavel).
+2. **Novas opções de fundos de índice (ETFs) dentro dos planos** – Muitos gestores passaram a oferecer ETFs de ações brasileiras e internacionais como opção de investimento, ampliando a [diversificação](/glossario/diversificacao).
 3. **Regulamentação mais transparente** – A CVM (Comissão de Valores Mobiliários) passou a exigir que as instituições publiquem o histórico de rentabilidade trimestral e o “custo total ao investidor”, facilitando a comparação entre planos.
 
 Essas mudanças não transformam a previdência em um *milagre* de retorno, mas dão ao investidor mais ferramentas para avaliar se o plano vale a pena frente a outras [alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) de investimento.
@@ -80,7 +80,7 @@ Esses números assumem que você **não faz nenhum resgate** antes da aposentado
 |--------|------------------------------|----------|--------|------------|
 | **Previdência (PGBL/VGBL)** | 6% a 7% ao ano (dependendo do fundo) | Baixa – só resgate na aposentadoria ou em casos específicos | Taxas de admin 1,5‑2,5% | Planejamento de aposentadoria, benefício fiscal |
 | **CDB (Certificado de Depósito Bancário)** | 100% do CDI (aprox. 5,5% ao ano) | Média – resgate após 30 dias | Taxas quase nulas | Quem busca prazo curto a médio |
-| **Tesouro Selic** | 100% da taxa Selic (aprox. 5,75% ao ano) | Alta – resgate diário | Custos de custódia ~0,2% ao ano | Perfil conservador, [reserva de emergência](/glossario/reserva-de-emergencia) |
+| **[Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)** | 100% da taxa Selic (aprox. 5,75% ao ano) | Alta – resgate diário | Custos de custódia ~0,2% ao ano | Perfil conservador, [reserva de emergência](/glossario/reserva-de-emergencia) |
 
 A principal vantagem da previdência é o **benefício fiscal** (no caso do PGBL) e a possibilidade de transformar o saldo em renda mensal garantida. Porém, se a sua prioridade for **acesso rápido ao dinheiro**, o Tesouro Selic ou o CDB são mais adequados.
 

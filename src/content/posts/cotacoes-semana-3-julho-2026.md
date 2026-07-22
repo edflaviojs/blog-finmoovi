@@ -28,8 +28,8 @@ A última semana foi marcada por oscilações nos mercados globais, mas o cenár
 
 ## 1. [Dólar](/posts/cotacoes-semana-1-junho-2026) e Euro: Tendência da Semana  
 
-### Dólar (USD/BRL)  
-O real ganhou alguns centavos frente ao dólar, que recuou 0,4 % ao longo da semana. O movimento foi impulsionado por duas coisas:  
+### [Dólar](/posts/cotacoes-semana-2-julho-2026) (USD/BRL)  
+O real ganhou alguns centavos frente ao [dólar](/posts/cotacoes-semana-3-junho-2026), que recuou 0,4 % ao longo da semana. O movimento foi impulsionado por duas coisas:  
 
 1. **Dados de [inflação](/glossario/inflacao) dos EUA** – O CPI de junho veio um ponto percentual abaixo das expectativas, aliviando a pressão sobre o Federal Reserve.  
 2. **Fluxos de capitais** – Investidores internacionais retiraram parte dos recursos de ativos de risco, mas a queda do dólar foi mais moderada porque o Brasil continua atraente graças à [taxa](/glossario/taxa) [Selic](/glossario/selic) ainda alta.  

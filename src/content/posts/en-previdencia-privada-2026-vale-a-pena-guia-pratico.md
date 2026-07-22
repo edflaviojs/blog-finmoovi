@@ -28,7 +28,7 @@ Two main types of plans exist in Brazil:
 | **PGBL** (Plano Gerador de Benefício Livre) | Contributions are deductible from Income Tax (up to 12% of gross income). | At retirement, tax is applied on the total (contributions + earnings). |
 | **VGBL** (Vida Gerador de Benefício Livre) | No tax deduction on contributions. | Tax is applied only on the earnings at the time of withdrawal. |
 
-These acronyms can look confusing, but the core idea is simple: you put money in, it grows, and later it turns into income.
+These acronyms can look confusing, but the core idea is simple: you put [money](/en/posts/en-avoid-impulse-purchases) in, it grows, and later it turns into income.
 
 ## How does private pension work in 2026?
 
@@ -37,10 +37,10 @@ In 2026 the landscape changed in three critical ways:
 ![Como funciona a previdência privada em 2026?](/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico-2.webp)
 
 1. **More competitive administration fees** – Competition among banks and insurers pushed the average fee from 2.5% a year down to about 1.8% for fixed‑income plans and 2.2% for equity‑linked plans.  
-2. **New index‑fund (ETF) options inside the plans** – Many managers now offer Brazilian and international equity ETFs as investment choices, widening diversification.  
+2. **New index‑fund ([ETF](/en/glossario/en-etf)) options inside the plans** – Many managers now offer Brazilian and international equity ETFs as investment choices, widening diversification.  
 3. **More transparent regulation** – The CVM (Securities Commission) now requires institutions to publish quarterly performance history and the “total cost to the investor,” making plan comparison easier.
 
-These changes don’t turn private pension into a *miracle* return, but they give investors more tools to judge whether a plan is worth it compared to other investment alternatives.
+These changes don’t turn private pension into a *miracle* return, but they give investors more tools to judge whether a plan is worth it compared to other investment [alternatives](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).
 
 ## Costs and fees you should watch
 
@@ -49,7 +49,7 @@ Even though administration fees have dropped, they can still eat a large chunk o
 | Fee | What it is | Typical impact |
 |------|------------|----------------|
 | **Administration** | Annual charge on the total balance. | 1.5% – 2.5% per year. |
-| **Performance** | Charge on returns that exceed a reference index (e.g., CDI). | 10% – 20% of the excess over the benchmark. |
+| **Performance** | Charge on returns that exceed a reference index (e.g., [CDI](/en/glossario/en-cdi)). | 10% – 20% of the excess over the benchmark. |
 | **Load (Carregamento)** | Charge on entry (or exit) of funds. | Can reach 5% on entry, but most plans have already eliminated this fee. |
 
 On top of those, keep an eye on **IOF** (Tax on Financial Operations) that applies during the first 30 days of investment. If you need to withdraw before that period, IOF is charged on a sliding scale, reaching up to 96% in the first days.
@@ -75,7 +75,7 @@ These numbers assume you **make no withdrawals** before retirement and that the 
 | Product | Avg. return 2025‑2026 | [Liquidity](/en/glossario/en-liquidez) | Costs | Best for |
 |--------|----------------------|-----------|-------|----------|
 | **Private pension (PGBL/VGBL)** | 6% – 7% per year (depending on the fund) | Low – only withdraw at retirement or in specific cases | Admin fees 1.5‑2.5% | Retirement planning, tax benefit |
-| **CDB (Certificate of Deposit)** | 100% of CDI (≈ 5.5% per year) | Medium – withdrawal after 30 days | Near‑zero fees | Short‑to‑medium horizon investors |
+| **[CDB](/en/glossario/en-cdb) (Certificate of Deposit)** | 100% of CDI (≈ 5.5% per year) | Medium – withdrawal after 30 days | Near‑zero fees | Short‑to‑medium horizon investors |
 | **Tesouro [Selic](/en/glossario/en-selic)** | 100% of Selic rate (≈ 5.75% per year) | High – daily withdrawal | Custody fee ~0.2% per year | Conservative profile, emergency reserve |
 
 The main advantage of private pension is the **tax benefit** (for PGBL) and the possibility of turning the balance into a guaranteed monthly income. However, if quick access to cash is your priority, Tesouro Selic or a CDB are more suitable.

@@ -26,7 +26,7 @@ Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro sal
 
 ## Como funciona a renda fixa
 
-A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario/juros) ou rendimento) já está **pré‑definida** ou tem um limite máximo. O investidor sabe, no momento da aplicação, qual será a [taxa](/glossario/taxa) de retorno ou, no mínimo, qual o intervalo de variação. Os principais produtos são:
+A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario/juros) ou rendimento) já está **pré‑definida** ou tem um limite máximo. O investidor sabe, no momento da [aplicação](/glossario/aplicacao), qual será a [taxa](/glossario/taxa) de retorno ou, no mínimo, qual o intervalo de variação. Os principais produtos são:
 
 ![Como funciona a renda fixa](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-2.webp)
 
@@ -101,7 +101,7 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 | **Implicação tributária** | IR regressivo (15 %‑22,5 %) ou isento (LCI/LCA) | IR de 15 % (ações) ou 20 % (demais) |
 | **Complexidade de gestão** | Simples (apenas escolher o título) | Mais complexa (análise de mercado) |
 | **Adequado para** | Conservadores, curto/médio prazo, [reserva de emergência](/glossario/reserva-de-emergencia) | Agressivos, médio/longo prazo, busca de crescimento |
-| **Exemplo de produto** | Tesouro Selic 2026 (12,8 % a.a.) | BOVA11 ETF (Ibovespa) – 15 % a.a. |
+| **Exemplo de produto** | Tesouro [Selic](/posts/cotacoes-semana-4-junho-2026) 2026 (12,8 % a.a.) | BOVA11 [ETF](/glossario/etf) (Ibovespa) – 15 % a.a. |
 
 ![Tabela comparativa](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-4.webp)
 
@@ -113,7 +113,7 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 
 1. **Objetivo de curto prazo** – Se você precisa do [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) em até 2 anos (ex.: reserva de emergência, viagem), a renda fixa garante que o capital ficará preservado.
 2. **Perfil conservador** – Quem não tolera ver o valor da aplicação oscilar prefere a segurança de um CDB ou Tesouro.
-3. **Ambiente de juros altos** – Quando a Selic está acima de 12 % a.a., a renda fixa já oferece retornos bastante atrativos.
+3. **Ambiente de juros altos** – Quando a [Selic](/posts/cotacoes-semana-4-maio-2026) está acima de 12 % a.a., a renda fixa já oferece retornos bastante atrativos.
 4. **Necessidade de renda** – LCIs/LCAs e alguns debêntures pagam juros mensais, gerando fluxo de caixa estável.
 
 ### Estratégia prática

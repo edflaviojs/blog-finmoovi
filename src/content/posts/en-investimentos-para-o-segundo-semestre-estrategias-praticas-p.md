@@ -62,7 +62,7 @@ After paying the bills, calculate how much is left for new investments. In the e
 
 ### Step 2 – Define your time horizon
 
-- **Short term (up to 12 months):** goal to use the money this year (travel, buying an appliance).
+- **Short term (up to 12 months):** goal to use the [money](/en/posts/en-avoid-impulse-purchases) this year (travel, buying an appliance).
 - **Medium term (1‑3 years):** goals like a down‑payment for a house or a car.
 - **Long term (5 years or more):** retirement, [financial independence](/en/glossario/en-independencia-financeira).
 
@@ -74,14 +74,14 @@ For the second half, most people focus on **short and medium term**, but don’t
 |------------------------------------------|------------|------------------------------|
 | **Tesouro [Selic](/en/glossario/en-selic)** (fixed income)        | Low        | Emergency reserve and safety contribution |
 | **CDBs with daily [liquidity](/en/glossario/en-liquidez)**           | Low‑medium | Complement to Selic, returns above savings |
-| **Index funds (ETF) of stocks**         | Medium‑high| Exposure to seasonal sectors (retail, energy) |
+| **Index funds ([ETF](/en/glossario/en-etf)) of stocks**         | Medium‑high| Exposure to seasonal sectors (retail, energy) |
 | **Real‑estate funds (FIIs)**             | Medium     | Monthly rent receipts, good for passive income |
 | **Cryptocurrencies or alternative assets** | High       | Only 5 % of the portfolio, for those who accept volatility |
 
 #### Sample allocation for someone earning R$ 3.500,00
 
 - **Tesouro Selic:** 30 % (R$ 153,00) – immediate liquidity.  
-- **CDBs from mid‑size banks:** 20 % (R$ 102,00) – higher yield than the Selic rate.  
+- **CDBs from mid‑size banks:** 20 % (R$ 102,00) – higher [yield](/en/glossario/en-yield) than the Selic rate.  
 - **ETF BOVA11 (IBOVESPA):** 25 % (R$ 128,00) – exposure to the [stock](/en/glossario/en-stock) market.  
 - **FIIs (e.g., KNRI11):** 20 % (R$ 102,00) – monthly rental income.  
 - **Cryptocurrencies:** 5 % (R$ 25,00) – controlled risk, can be used as “upside potential”.
@@ -129,7 +129,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 - **[Banco Central do Brasil](https://www.bcb.gov.br)** – check the Selic rate and economic indicators.  
 - **[Tesouro Direto](https://www.tesourodireto.com.br)** – official portal to buy government bonds.  
-- **FinMoovi** – Brazilian app that integrates expense tracking, investment goals, and market alerts. Perfect for anyone who wants to see the whole portfolio in one place.
+- **FinMoovi** – Brazilian app that integrates [expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza), investment goals, and market alerts. Perfect for anyone who wants to see the whole portfolio in one place.
 
 ![Helpful tools and resources](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 

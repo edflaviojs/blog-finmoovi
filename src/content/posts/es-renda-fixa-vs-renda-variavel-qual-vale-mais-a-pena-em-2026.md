@@ -94,12 +94,12 @@ En la práctica, al comprar una acción te conviertes en socio de la empresa. Tu
 | **Previsibilidad de retorno** | Alta (tasas pre‑definidas) | Baja (depende del mercado) |
 | **Riesgo de pérdida de capital** | Bajo a moderado (FGC, riesgo soberano) | Alto a moderado (empresa, sector) |
 | **Liquidez** | Generalmente alta (Tesoro [Selic](/es/posts/es-cotizaciones-semana-3-junio-2026), CDBs) | Variable (acciones pueden ser muy líquidas, FIIs menos) |
-| **Rentabilidad media (2024‑2025)** | 12 %‑13 % a.a. (CDI, Selic) | 12 %‑20 % a.a. (Ibovespa, ETFs) |
+| **Rentabilidad media (2024‑2025)** | 12 %‑13 % a.a. (CDI, [Selic](/es/posts/es-cotizaciones-semana-4-junio-2026)) | 12 %‑20 % a.a. (Ibovespa, ETFs) |
 | **Protección contra inflación** | Moderada (según el indexador) | Buena (las empresas pueden traspasar la inflación) |
 | **Implicación tributaria** | IR regresivo (15 %‑22,5 %) o exento (LCI/LCA) | IR del 15 % (acciones) o 20 % (demás) |
 | **Complejidad de gestión** | Simple (solo elegir el título) | Más compleja (análisis de mercado) |
 | **Adecuado para** | Conservadores, corto/medio plazo, reserva de emergencia | Agresivos, medio/largo plazo, búsqueda de crecimiento |
-| **Ejemplo de producto** | Tesoro Selic 2026 (12,8 % a.a.) | BOVA11 [ETF](/es/glossario/es-etf) (Ibovespa) – 15 % a.a. |
+| **Ejemplo de producto** | Tesoro [Selic](/es/posts/es-cotizaciones-semana-4-mayo-2026) 2026 (12,8 % a.a.) | BOVA11 [ETF](/es/glossario/es-etf) (Ibovespa) – 15 % a.a. |
 
 ![Tabla comparativa](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-4.webp)  
 

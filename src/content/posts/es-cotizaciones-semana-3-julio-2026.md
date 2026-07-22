@@ -48,10 +48,10 @@ En resumen, la Selic estable brinda un **escenario de “[cambio](/es/glossario/
 
 
 
-- **Si tenés deudas en reales:** Aprovechá la caída del dólar y el euro para pagar esas deudas con pesos que ahora valen menos en moneda extranjera. Cada real que pagues hoy te ahorra futuros intereses.  
+- **Si tenés deudas en reales:** Aprovechá la caída del [dólar](/es/posts/es-cotizaciones-semana-4-junio-2026) y el euro para pagar esas deudas con pesos que ahora valen menos en moneda extranjera. Cada real que pagues hoy te ahorra futuros intereses.  
 - **Si ya invertiste en dólares o euros:** Considerá proteger una parte de esa exposición con un contrato de futuro o una opción de venta (una “cobertura”). No hace falta ser un experto; muchas plataformas de corretaje ofrecen productos de cobertura con inversión mínima de R$ 500.  
 - **Diversifica en renta fija local:** Un CDB o un [Tesouro Direto](/es/glossario/es-tesouro-direto) a 100 % de la Selic sigue siendo una forma sencilla de ganar más que la inflación sin mucho riesgo.  
-- **Usá una app para monitorear todo:** **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** permite seguir tus inversiones en reales, dólares y euros desde una sola pantalla, con alertas de tipo de cambio y simuladores de cobertura. Es como tener a un amigo que te avisa cuando el dólar sube o baja.
+- **Usá una app para monitorear todo:** **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** permite seguir tus inversiones en reales, dólares y euros desde una sola pantalla, con alertas de tipo de cambio y simuladores de cobertura. Es como tener a un amigo que te avisa cuando el [dólar](/es/posts/es-cotizaciones-semana-4-mayo-2026) sube o baja.
 
 ---
 

@@ -64,7 +64,7 @@ Depois de pagar as contas, calcule quanto sobra para novos investimentos. No exe
 
 ### Passo 2 – Defina seu horizonte de tempo
 
-- **Curto prazo (até 12 meses):** objetivo de usar o dinheiro ainda neste ano (viagens, compra de eletrodoméstico).
+- **Curto prazo (até 12 meses):** objetivo de usar o [dinheiro](/posts/cashback-inteligente) ainda neste ano (viagens, compra de eletrodoméstico).
 - **Médio prazo (1‑3 anos):** metas como entrada para imóvel ou carro.
 - **Longo prazo (5 anos ou mais):** aposentadoria, [independência financeira](/glossario/independencia-financeira).
 
@@ -74,8 +74,8 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 
 | Tipo de ativo          | Risco | Indicação para 2º semestre |
 |------------------------|-------|-----------------------------|
-| **Tesouro Selic** (renda fixa) | Baixo | Reserva de emergência e aporte de segurança |
-| **CDBs com liquidez diária** | Baixo‑médio | Complemento ao Selic, rendimento acima da poupança |
+| **Tesouro Selic** ([renda fixa](/glossario/renda-fixa)) | Baixo | Reserva de emergência e aporte de segurança |
+| **CDBs com [liquidez](/glossario/liquidez) diária** | Baixo‑médio | Complemento ao Selic, rendimento acima da poupança |
 | **Fundos de índice (ETF) de ações** | Médio‑alto | Exposição a setores sazonais (varejo, energia) |
 | **[Fundos imobiliários](/glossario/fundos-imobiliarios) (FIIs)** | Médio | Recebimento de aluguéis mensais, boa para quem quer renda passiva |
 | **Criptomoedas ou ativos alternativos** | Alto | Apenas 5 % da carteira, para quem aceita volatilidade |
@@ -112,7 +112,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 
 ### Investidor conservador
 
-- **80 % em Tesouro Selic e CDBs**, 15 % em FIIs de alta qualidade, 5 % em ETF de ações.
+- **80 % em Tesouro Selic e CDBs**, 15 % em FIIs de alta [qualidade](/glossario/qualidade), 5 % em ETF de ações.
 - Foco na preservação de capital e em rendimentos estáveis.
 
 ### Investidor moderado
@@ -131,7 +131,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 
 - **[Banco Central do Brasil](https://www.bcb.gov.br)** – consulta de taxa Selic e indicadores econômicos.
 - **[Tesouro Direto](https://www.tesourodireto.com.br)** – portal oficial para adquirir títulos públicos.
-- **FinMoovi** – app brasileiro que integra controle de gastos, metas de investimento e alertas de mercado. Ideal para quem quer visualizar a carteira completa em um só lugar.
+- **FinMoovi** – app brasileiro que integra [controle de gastos](/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza), metas de investimento e alertas de mercado. Ideal para quem quer visualizar a carteira completa em um só lugar.
 
 ![Ferramentas e recursos úteis](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 

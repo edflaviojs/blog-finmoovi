@@ -51,7 +51,7 @@ Después de recibir el sueldo, sigue estos pasos:
 
 1. **Abre la app y registra el ingreso total** – Por ejemplo, R$5.000.  
 2. **Distribuye el monto** – Haz clic en cada sobre e ingresa el límite que definiste en la tabla. La app mostrará el saldo restante (debe ser cero).  
-3. **Reserva el dinero de inmediato** – Si la app permite “bloquear” o “marcar como guardado”, hazlo. Así no gastarás lo que debería quedar en la reserva de emergencia.  
+3. **Reserva el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) de inmediato** – Si la app permite “bloquear” o “marcar como guardado”, hazlo. Así no gastarás lo que debería quedar en la reserva de emergencia.  
 
 Este proceso lleva menos de 5 minutos y deja tu presupuesto “listo para usar”.  
 
@@ -79,7 +79,7 @@ Este hábito de revisión convierte el control en un aprendizaje continuo, evita
 
 1. **Mañana:** al abrir la app, echa un vistazo rápido a los saldos de los sobres. Si alguno está casi vacío, anota un recordatorio para evitar compras impulsivas.  
 2. **Durante el día:** registra cada gasto en el momento. Usa la cámara del móvil para capturar el comprobante y la app hará la clasificación automática.  
-3. **Al final del día:** dedica 2 minutos a comprobar si algún sobre quedó negativo. Si es así, ajusta de inmediato – transfiere dinero de otra categoría o registra el gasto como “extra”.  
+3. **Al final del día:** dedica 2 minutos a comprobar si algún sobre quedó negativo. Si es así, ajusta de inmediato – transfiere [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) de otra categoría o registra el gasto como “extra”.  
 
 ![Comece com 5 minutos por dia](/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024-6.webp)  
 

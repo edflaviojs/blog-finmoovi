@@ -19,7 +19,7 @@ seo:
 
 ## ¿Qué es la previsión privada?
 
-La previsión privada, también llamada plan de previsión complementaria, funciona como un *ahorro a largo plazo* que vas alimentando a lo largo de tu vida profesional. El dinero se invierte en fondos administrados por instituciones financieras y, al jubilarte, recibes un beneficio mensual (renta) o un pago único.
+La previsión privada, también llamada plan de previsión complementaria, funciona como un *[ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) a largo plazo* que vas alimentando a lo largo de tu vida profesional. El [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) se invierte en fondos administrados por instituciones financieras y, al jubilarte, recibes un beneficio mensual (renta) o un pago único.
 
 Existen dos tipos principales de planes en Brasil:
 
@@ -75,14 +75,14 @@ Estos números asumen que **no haces ningún rescate** antes de la jubilación y
 | Producto | Rentabilidad media 2025‑2026 | [Liquidez](/es/glossario/es-liquidez) | Costos | Ideal para |
 |----------|------------------------------|----------|--------|------------|
 | **Previsión (PGBL/VGBL)** | 6 % – 7 % al año (según el fondo) | Baja – solo rescate en la jubilación o casos específicos | Comisiones de admin 1,5‑2,5 % | Planificación de jubilación, beneficio fiscal |
-| **CDB (Certificado de Depósito Bancario)** | 100 % del CDI (aprox. 5,5 % al año) | Media – rescate después de 30 días | Comisiones casi nulas | Quien busca plazo corto a medio |
-| **Tesoro Selic** | 100 % de la tasa Selic (aprox. 5,75 % al año) | Alta – rescate diario | Costos de custodia ~0,2 % al año | Perfil conservador, reserva de emergencia |
+| **[CDB](/es/glossario/es-cdb) (Certificado de Depósito Bancario)** | 100 % del CDI (aprox. 5,5 % al año) | Media – rescate después de 30 días | Comisiones casi nulas | Quien busca plazo corto a medio |
+| **Tesoro [Selic](/es/glossario/es-selic)** | 100 % de la tasa Selic (aprox. 5,75 % al año) | Alta – rescate diario | Costos de custodia ~0,2 % al año | Perfil conservador, reserva de emergencia |
 
 La principal ventaja de la previsión es el **beneficio fiscal** (en el caso del PGBL) y la posibilidad de transformar el saldo en una renta mensual garantizada. Sin embargo, si tu prioridad es **acceso rápido al dinero**, el Tesoro Selic o el CDB son más adecuados.  
 
 ## Riesgos y cuidados
 
-1. **Riesgo de mercado** – En los fondos que invierten en acciones o ETFs, el valor puede oscilar bastante. Si tu horizonte de jubilación es corto, este riesgo puede ser problemático.  
+1. **Riesgo de mercado** – En los fondos que invierten en acciones o ETFs, el [valor](/es/glossario/es-valor) puede oscilar bastante. Si tu horizonte de jubilación es corto, este riesgo puede ser problemático.  
 2. **Riesgo de comisión de administración alta** – Como vimos, comisiones superiores al 2 % pueden reducir ganancias hasta en un 10 % a lo largo de 30 años.  
 3. **Riesgo de [cambio](/es/glossario/es-cambio) regulatorio** – Modificaciones en las reglas de tributación o en los límites de deducción pueden afectar la atractividad del PGBL.  
 4. **Riesgo de incumplimiento de la institución** – Aunque la Superintendencia de Seguros Privados (SUSEP) garantice la solvencia de las aseguradoras, siempre verifica la nota de evaluación de la empresa.  

@@ -108,7 +108,7 @@ Free with ads – Pro version at R$ 9.90/month.
 
 ---
 
-## 5. YNAB (You Need A [Budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas)) – The “Real Budget” method
+## 5. YNAB (You Need A [Budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas)) – The “Real [Budget](/en/posts/en-organize-couple-finances)” method
 
 **Description**  
 YNAB follows the philosophy of “giving every real a job,” encouraging users to plan each expense before it happens. Although it’s an American app, it’s gaining fans in Brazil thanks to multilingual support and a strong user community.
@@ -152,7 +152,7 @@ The best app depends on your **financial profile** and the **features you need**
 | **Basic user who wants to leave the [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro)** | Simple control, no need for multiple currencies or advanced AI. | **Mobills** – provides everything most beginners need, with a free tier sufficient to start. |
 | **Traveler or anyone dealing with different currencies** | Automatic conversion, offline use, and quick capture. | **FinMoovi** – the mix of multi‑currency, offline capability, and smart voice capture makes it the most complete choice. |
 | **Freelancer/small business owner** | Cash flow, tax reports, and card integration. | **Organizze** – business‑focused with ready‑to‑use accounting reports. |
-| **Habit‑changer who wants “envelopes”** | [Savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) goals, overspend alerts. | **Money Lover** – virtual envelopes and customizable alerts. |
+| **Habit‑changer who wants “envelopes”** | [Savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) goals, overspend alerts. | **[Money](/en/posts/en-organizing-finances-as-a-freelancer) Lover** – virtual envelopes and customizable alerts. |
 | **Method‑lover who wants a strong community** | Rigorous budgeting methodology and deep reports. | **YNAB** – despite lacking AI, its “give every real a job” philosophy can transform your financial habits. |
 
 **Final tip:** If you’re still unsure, try two apps at once (the free versions let you do that). Use each for two weeks and see which workflow fits your daily routine better. Remember, a tool is only as good as the discipline you keep when logging your expenses.

@@ -65,7 +65,7 @@ This process takes less than 5 minutes and leaves your [budget](/en/posts/en-5-d
 
 For someone earning R$2,000, the margin for error is small; someone earning R$8,000 can make more flexible monthly adjustments.
 
-> **Important:** Consult official sources such as the [Central Bank of Brazil](https://www.bcb.gov.br) to understand interest‑rate limits and fees that may affect your budget.
+> **Important:** Consult official sources such as the [Central Bank of Brazil](https://www.bcb.gov.br) to understand interest‑rate limits and fees that may affect your [budget](/en/posts/en-how-to-create-personal-budget).
 
 ## Reviewing results monthly
 
@@ -79,7 +79,7 @@ This habit of review turns control into continuous learning, preventing small sl
 
 1. **Morning:** when you open the app, take a quick look at the envelope balances. If any are almost empty, jot down a reminder to avoid impulse purchases.  
 2. **During the day:** record each expense as it happens. Use your phone’s camera to capture the receipt and the app will auto‑categorize.  
-3. **End of day:** set aside 2 minutes to check if any envelope went negative. If so, adjust immediately – transfer money from another category or log the expense as “extra”.
+3. **End of day:** set aside 2 minutes to check if any envelope went negative. If so, adjust immediately – transfer [money](/en/posts/en-creating-an-emergency-fund) from another category or log the expense as “extra”.
 
 ![Comece com 5 minutos por dia](/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024-6.webp)
 

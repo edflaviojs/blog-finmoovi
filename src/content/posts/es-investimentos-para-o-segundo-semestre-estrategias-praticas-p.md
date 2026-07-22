@@ -36,7 +36,7 @@ El segundo semestre suele ser más agitado: [vacaciones](/es/posts/es-5-dicas-pa
 Históricamente, algunos sectores se valorizan en la segunda mitad del año – turismo, comercio minorista, energía y tecnología. Esta “temporada alta” puede generar oportunidades de ganancia, pero también trae [volatilidad](/es/glossario/es-volatilidade) que exige atención.
 
 ### 2. Punto de ajuste de metas anuales  
-Si aún no alcanzaste tu meta de ahorro o de retorno, el segundo semestre representa la última oportunidad de corregir el rumbo antes del cierre del ejercicio fiscal.
+Si aún no alcanzaste tu meta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) o de retorno, el segundo semestre representa la última oportunidad de corregir el rumbo antes del cierre del ejercicio fiscal.
 
 ### 3. Preparación para el próximo año  
 Construir una reserva de emergencia y colocar recursos en activos de largo plazo ya en el segundo semestre garantiza tranquilidad para iniciar 2025 con la cartera lista.
@@ -49,7 +49,7 @@ Construir una reserva de emergencia y colocar recursos en activos de largo plazo
 
 ![Cómo armar la cartera: 5 pasos simples](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-2.webp)
 
-| Ítem                     | Valor (R$) |
+| Ítem                     | [Valor](/es/glossario/es-valor) (R$) |
 |--------------------------|-----------|
 | Salario bruto mensual    | 3.500,00 |
 | Gastos fijos mensuales   | 1.800,00 |
@@ -72,9 +72,9 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 | Tipo de activo                     | Riesgo | Indicación para 2.º semestre |
 |------------------------------------|--------|-------------------------------|
-| **Tesoro Selic** (renta fija)     | Bajo   | Reserva de emergencia y aporte de seguridad |
+| **Tesoro [Selic](/es/glossario/es-selic)** (renta fija)     | Bajo   | Reserva de emergencia y aporte de seguridad |
 | **CDBs con [liquidez](/es/glossario/es-liquidez) diaria**       | Bajo‑medio | Complemento al Selic, rendimiento superior al ahorro |
-| **Fondos índice (ETF) de acciones**| Medio‑alto | Exposición a sectores estacionales (comercio, energía) |
+| **Fondos índice ([ETF](/es/glossario/es-etf)) de acciones**| Medio‑alto | Exposición a sectores estacionales (comercio, energía) |
 | **[Fondos inmobiliarios](/es/glossario/es-fundos-imobiliarios) (FIIs)**    | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
 | **Criptomonedas o activos alternativos** | Alto | Solo 5 % de la cartera, para quien acepta volatilidad |
 
@@ -129,7 +129,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 - **[Banco Central de Brasil](https://www.bcb.gov.br)** – consulta de la tasa Selic e indicadores económicos.  
 - **[Tesoro Directo](https://www.tesourodireto.com.br)** – portal oficial para adquirir títulos públicos.  
-- **FinMoovi** – app brasileña que integra control de gastos, metas de inversión y alertas de mercado. Ideal para quien quiere visualizar la cartera completa en un solo lugar.
+- **FinMoovi** – app brasileña que integra [control de gastos](/es/posts/es-7-alternativas-a-planilha-google-para-financas-guia-atualiza), metas de inversión y alertas de mercado. Ideal para quien quiere visualizar la cartera completa en un solo lugar.
 
 ![Herramientas y recursos útiles](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 

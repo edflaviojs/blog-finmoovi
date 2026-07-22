@@ -21,7 +21,7 @@ seo:
 
 A ideia dos envelopes digitais é a mesma dos envelopes de papel que você coloca [dinheiro](/posts/cashback-inteligente) físico para cada categoria (alimentação, transporte, lazer etc.). A diferença é que tudo fica no celular ou no computador, o que elimina o risco de perder notas e permite relatórios instantâneos.
 
-- **Por que funciona?** Quando você “destina” um [valor](/glossario/valor) a um envelope, ele deixa de ser dinheiro livre; passa a ser “específico”. Essa visualização reduz compras por impulso.
+- **Por que funciona?** Quando você “destina” um [valor](/glossario/valor) a um envelope, ele deixa de ser [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) livre; passa a ser “específico”. Essa visualização reduz compras por impulso.
 - **Quem pode usar?** Qualquer pessoa que receba renda mensal – de R$2.000 a R$8.000 – e queira ter clareza sobre onde cada centavo vai.
 
 ## Configurar seus envelopes no app
@@ -53,7 +53,7 @@ Depois de receber o salário, siga este passo‑a‑passo:
 
 1. **Abra o app e registre a entrada total** – Por exemplo, R$5.000.
 2. **Distribua o valor** – Clique em cada envelope e insira o limite que definiu na tabela. O app mostrará o saldo restante (deve ser zero).
-3. **Reserve o dinheiro imediatamente** – Se o app permite “bloquear” ou “marcar como guardado”, faça isso. Assim, você não gastará o que deveria ficar na reserva de emergência.
+3. **Reserve o [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) imediatamente** – Se o app permite “bloquear” ou “marcar como guardado”, faça isso. Assim, você não gastará o que deveria ficar na reserva de emergência.
 
 Esse processo leva menos de 5 minutos e já deixa seu [orçamento](/posts/como-criar-orcamento-pessoal) “pronto para usar”.
 

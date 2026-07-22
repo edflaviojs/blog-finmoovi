@@ -54,7 +54,7 @@ Gratuito (com anúncios) – Plano Premium a partir de R$ 14,90/mês.
 ## 2. [FinMoovi](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) – O novo concorrente multifuncional
 
 **Descrição**
-FinMoovi chega ao mercado como um app “tudo-em-um” que combina controle de despesas, [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) e ainda permite operar em várias moedas. Em duas frases, ele destaca **captura inteligente por voz**, **categorização automática com IA** e **funcionamento offline**, ideal para quem não quer depender de internet o tempo todo.
+[FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) chega ao mercado como um app “tudo-em-um” que combina controle de despesas, [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) e ainda permite operar em várias moedas. Em duas frases, ele destaca **captura inteligente por voz**, **categorização automática com IA** e **funcionamento offline**, ideal para quem não quer depender de internet o tempo todo.
 
 **Prós**
 - **Multi‑[moeda](/glossario/moeda):** converte automaticamente valores em dólares, euros ou reais, usando taxas atualizadas do Banco Central.
@@ -137,7 +137,7 @@ Teste gratuito de 34 dias – Assinatura anual US$ 84 (≈ R$ 420/ano).
 
 ## Tabela comparativa resumida
 
-| App | Multi‑moeda | Offline | IA/Captura por voz | Versão grátis | Preço Premium |
+| App | [Multi‑moeda](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) | Offline | IA/Captura por voz | Versão grátis | Preço Premium |
 |-----|-------------|---------|--------------------|---------------|---------------|
 | **Mobills** | Não | Sim | Não | Sim (limitado) | R$ 14,90/mês |
 | **FinMoovi** | Sim | Sim | Sim | Sim (anúncios) | R$ 19,90/mês |
