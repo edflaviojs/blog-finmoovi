@@ -36,7 +36,13 @@ const TAIL_PAD = 0.35; // seg. de silêncio somados ao fim da fala p/ a cena res
 // truncada (ex.: 0.35s p/ uma narração de 26 palavras). Isso só aparece depois, no
 // Whisper (speechEnd curto demais) — daí a validação viver aqui, não no tts-client.
 const MAX_ATTEMPTS = 4; // 1ª tentativa + 3 retries
-const RETRY_BACKOFF_MS = [1000, 3000, 6000]; // aplicado antes das tentativas 2, 3 e 4
+// Backoffs MAIORES p/ segurar a voz do Antonio (edge) na cena 1: as evidências de
+// CI mostram o edge se recuperando ~15-20s depois do 1º contato. Com [5s,12s,25s], a
+// 3ª tentativa do edge acontece por volta de t≈17s (0 → +5s → +12s) — dentro da
+// janela de recuperação — então ela costuma dar certo e o vídeo mantém o Antonio,
+// com o piper ainda como rede de segurança na 4ª tentativa (t≈42s). Aquecimento
+// segue igual.
+const RETRY_BACKOFF_MS = [5000, 12000, 25000]; // aplicado antes das tentativas 2, 3 e 4
 const SCENE_GAP_MS = 700; // espaçamento entre cenas p/ não estourar o burst-throttle do edge-tts
 const WORDS_PER_SEC_FAST = 6; // pt-BR falado rápido demais — piso generoso (folga)
 const MIN_FLOOR_SEC = 1.0; // piso absoluto, só p/ narrações com >= 4 palavras
@@ -62,11 +68,78 @@ const args = Object.fromEntries(
   }),
 );
 
+// Remove os pontos de milhar de um número pt-BR ("1.500" → "1500"), preservando a
+// vírgula decimal ("3,2" → "3,2"). Em pt-BR o decimal é vírgula, então TODO ponto
+// dentro de um número é separador de milhar e pode ser removido com segurança.
+// "1500" é lido corretamente pelo TTS ("mil e quinhentos"), sem o risco de o
+// leitor tropeçar no ponto (mais confiável que forçar a grafia por extenso).
+function stripThousands(num) {
+  return String(num).replace(/\./g, '');
+}
+
+// Normaliza VALORES/NÚMEROS p/ a forma FALADA em pt-BR natural. Vale p/ TODOS os
+// provedores (o edge até lê "R$" nativamente, mas a forma falada é igualmente
+// correta lá — normalizamos de forma uniforme p/ consistência entre vozes).
+// Regras ORDENADAS (a 1ª que casar vence p/ cada trecho):
+//   R$ 50 / R$50            → 50 reais
+//   R$ 3,2 milhões          → 3,2 milhões de reais   (milhão/bilhão/trilhão → "de reais")
+//   R$ 3 mil                → 3 mil reais            ("mil" não leva "de")
+//   R$ 1.500                → 1500 reais             (tira pontos de milhar)
+//   75%                     → 75 por cento
+//   3x / 3×                 → 3 vezes
+// Importante: o número vem ANTES de "reais" (ordem natural que o dono pediu) —
+// "R$ 50 podem virar R$ 75" → "50 reais podem virar 75 reais".
+export function normalizeSpoken(text) {
+  let out = String(text);
+  // 1) R$ <número> <escala grande> → "<número> <escala> de reais" (milhão/bilhão/trilhão).
+  out = out.replace(
+    /R\$\s*([\d.,]+)\s*(milhões|milhão|bilhões|bilhão|trilhões|trilhão)/gi,
+    (_, num, scale) => `${stripThousands(num)} ${scale} de reais`,
+  );
+  // 2) R$ <número> mil → "<número> mil reais" ("mil" não leva "de reais").
+  out = out.replace(
+    /R\$\s*([\d.,]+)\s*mil\b/gi,
+    (_, num) => `${stripThousands(num)} mil reais`,
+  );
+  // 3) R$ <número> simples → "<número> reais".
+  out = out.replace(
+    /R\$\s*([\d.,]+)/g,
+    (_, num) => `${stripThousands(num)} reais`,
+  );
+  // 4) <número>% → "<número> por cento".
+  out = out.replace(
+    /([\d.,]+)\s*%/g,
+    (_, num) => `${stripThousands(num)} por cento`,
+  );
+  // 5) <número>x / <número>× → "<número> vezes" (não casa "3x4"/dimensões).
+  out = out.replace(
+    /(\d+)\s*[x×](?![a-z0-9])/gi,
+    (_, num) => `${num} vezes`,
+  );
+  return out;
+}
+
 // Correções de PRONÚNCIA aplicadas só ao texto que vai pro TTS (a legenda/roteiro
-// e o SRT mantêm a grafia real). Ex.: o Edge lê "FinMoovi" como "fin-moví"; a
-// grafia "Fin Múvi" faz ele falar "fin-múuvi" (correto).
-export function pronounce(text) {
-  return String(text).replace(/finmoovi/gi, 'Fin Múvi');
+// e o SRT mantêm a grafia real; o alinhamento do Whisper roda contra a narração
+// ORIGINAL e o casamento fuzzy absorve estas trocas, como já absorvia "Fin Múvi").
+// Recebe o provedor-alvo p/ aplicar respellings específicos do Piper.
+//   - Números/moeda: normalizeSpoken() em TODOS os provedores.
+//   - "FinMoovi": o edge lê "fin-moví"; "Fin Múvi" corrige. No Piper isso sai
+//     apressado/embolado ("Finmúvi"), então usamos "Fin, Múvi" — a vírgula insere
+//     uma batida que separa as sílabas.
+//   - "controle" (só Piper): o faber lê "contróle" (ó aberto); "contrôle" (ô com
+//     circunflexo = ô fechado em pt) sinaliza a vogal certa. Best-effort — o
+//     binário do Piper não roda localmente por padrão; marcado p/ validação em CI.
+export function pronounce(text, provider) {
+  let out = normalizeSpoken(text);
+  const finForm = provider === 'piper' ? 'Fin, Múvi' : 'Fin Múvi';
+  out = out.replace(/finmoovi/gi, finForm);
+  if (provider === 'piper') {
+    out = out.replace(/controle/gi, (m) =>
+      (m[0] === m[0].toUpperCase() ? 'C' : 'c') + 'ontrôle',
+    );
+  }
+  return out;
 }
 
 // Normaliza p/ comparar palavra do roteiro × palavra do Whisper (sem acento/pontuação/caixa).
@@ -175,7 +248,7 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     const providerForThisAttempt = providerForAttempt(attempt);
 
-    ({ audio, ext, voice, provider: providerUsed } = await synthesizeSpeech(pronounce(narration), { providerName: providerForThisAttempt }));
+    ({ audio, ext, voice, provider: providerUsed } = await synthesizeSpeech(pronounce(narration, providerForThisAttempt), { providerName: providerForThisAttempt }));
     whisper = await transcribeWords(audio, { ext });
     speechEnd = whisper.length ? whisper[whisper.length - 1].end : fallbackDurationSec;
 
