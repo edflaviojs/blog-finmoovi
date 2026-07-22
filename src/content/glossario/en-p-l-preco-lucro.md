@@ -4,7 +4,6 @@ definition: "The P/L (Price/Earnings) is a financial measure that indicates the 
 category: "mercado"
 locale: "en"
 image: "/images/glossario/p-l-preco-lucro.webp"
-imageAlt: "Purple silhouette of woman against peach background with P/L text."
 relatedTerms: ["Lucro por Ação","Preço de Ação","Retorno sobre o Patrimônio Líquido"]
 publishedAt: 2026-06-09
 ---

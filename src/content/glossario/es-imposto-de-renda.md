@@ -4,7 +4,6 @@ definition: "Entienda qué es imposto de renda, cómo funciona, ventajas, riesgo
 title: "imposto de renda - Glosario Financiero"
 description: "Entienda qué es imposto de renda, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/imposto-de-renda.webp"
-imageAlt: "Dos formas geométricas curvas de color rosa y blanco sobre fondo degradado."
 category: "basico"
 tags: ["imposto de renda", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

@@ -4,7 +4,6 @@ definition: "Entenda o que é moeda, como funciona, vantagens, riscos e exemplos
 title: "moeda - Glossário Financeiro"
 description: "Entenda o que é moeda, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/moeda.webp"
-imageAlt: "Esfera cinza e papel rosa em um piso e fundo cinza claro."
 category: "basico"
 tags: ["moeda", "glossário", "finanças"]
 author: "FinMoovi"

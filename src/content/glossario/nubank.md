@@ -4,7 +4,6 @@ definition: "Entenda o que é nubank, como funciona, vantagens, riscos e exemplo
 title: "nubank - Glossário Financeiro"
 description: "Entenda o que é nubank, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/nubank.webp"
-imageAlt: "Plano de fundo com tons de rosa, roxo e branco."
 category: "basico"
 tags: ["nubank", "glossário", "finanças"]
 author: "FinMoovi"

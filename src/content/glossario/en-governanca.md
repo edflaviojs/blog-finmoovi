@@ -4,7 +4,6 @@ definition: "Understand what governança is, how it works, advantages, risks and
 title: "governança - Financial Glossary"
 description: "Understand what governança is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/governanca.webp"
-imageAlt: "Blue and pink curved shape on a gradient blue, pink and white background."
 category: "basico"
 tags: ["governança", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

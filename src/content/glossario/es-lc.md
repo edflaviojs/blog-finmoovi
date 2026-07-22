@@ -4,7 +4,6 @@ definition: "Entienda qué es lc, cómo funciona, ventajas, riesgos y ejemplos p
 title: "lc - Glosario Financiero"
 description: "Entienda qué es lc, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/lc.webp"
-imageAlt: "Un objeto curvo de colores rosa y azul sobre fondo gris claro."
 category: "basico"
 tags: ["lc", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

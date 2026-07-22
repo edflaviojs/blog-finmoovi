@@ -4,7 +4,6 @@ definition: "Understand what imposto de renda is, how it works, advantages, risk
 title: "imposto de renda - Financial Glossary"
 description: "Understand what imposto de renda is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/imposto-de-renda.webp"
-imageAlt: "Pink and white abstract shapes on a gradient pink and white background."
 category: "basico"
 tags: ["imposto de renda", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

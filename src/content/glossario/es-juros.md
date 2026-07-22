@@ -4,7 +4,6 @@ definition: "Entienda qué es juros, cómo funciona, ventajas, riesgos y ejemplo
 title: "juros - Glosario Financiero"
 description: "Entienda qué es juros, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/juros.webp"
-imageAlt: "Dos formas geométricas redondas de color rosa sobre fondo claro."
 category: "basico"
 tags: ["juros", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

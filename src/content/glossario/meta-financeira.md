@@ -1,7 +1,6 @@
 ---
 term: "Meta Financeira"
-image: "/images/glossario/meta-financeira.svg"
-imageAlt: "Gráfico de linha com fundo preto e linhas verdes e laranjas."
+image: "/images/glossario/meta-financeira.webp"
 definition: "Objetivo específico, mensurável e com prazo definido para suas finanças. Exemplos: juntar R$ 10.000 em 12 meses ou quitar todas as dívidas até dezembro."
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]

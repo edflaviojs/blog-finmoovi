@@ -1,7 +1,6 @@
 ---
 term: "Independência Financeira"
-image: "/images/glossario/independencia-financeira.svg"
-imageAlt: "Gráfico de pizza colorido em preto, verde, laranja e cinza sobre fundo preto."
+image: "/images/glossario/independencia-financeira.webp"
 definition: "Estado onde sua renda passiva (investimentos) cobre todos os seus gastos mensais. Você não precisa mais trabalhar por dinheiro."
 category: "basico"
 relatedTerms: ["Patrimônio Líquido", "Dividendos", "Renda Fixa"]

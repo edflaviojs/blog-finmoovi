@@ -4,7 +4,6 @@ definition: "Understand what hedge is, how it works, advantages, risks and pract
 title: "hedge - Financial Glossary"
 description: "Understand what hedge is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/hedge.webp"
-imageAlt: "Three pink and white geometric pyramids on a white circular platform against pink background."
 category: "basico"
 tags: ["hedge", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

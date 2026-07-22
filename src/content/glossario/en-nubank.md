@@ -4,7 +4,6 @@ definition: "Understand what nubank is, how it works, advantages, risks and prac
 title: "nubank - Financial Glossary"
 description: "Understand what nubank is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/nubank.webp"
-imageAlt: "Soft pink, purple, and white gradient background with subtle color transitions."
 category: "basico"
 tags: ["nubank", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

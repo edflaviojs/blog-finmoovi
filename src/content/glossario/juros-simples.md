@@ -1,7 +1,6 @@
 ---
 term: "Juros Simples"
-image: "/images/glossario/juros-simples.svg"
-imageAlt: "Pontos laranja e azuis em fundo preto com linha diagonal pontilhada."
+image: "/images/glossario/juros-simples.webp"
 definition: "Tipo de juros calculado apenas sobre o valor inicial (principal). Diferente dos juros compostos, não há juros sobre juros."
 category: "basico"
 relatedTerms: ["Juros Compostos", "CDI", "Selic"]
