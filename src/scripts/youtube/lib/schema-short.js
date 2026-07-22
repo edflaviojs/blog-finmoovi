@@ -39,6 +39,20 @@
  * visual.type "app" exige "app" ∈ APP_SCREENS. ERRO se o vídeo tiver 0 shots
  * "app"; AVISO se tiver só 1 (meta ≥2); AVISO se a cena "cta" não tiver
  * nenhum shot "app".
+ *
+ * CONTRATO v3.4 (feedback do dono 22/07 depois de assistir o vídeo v3.3):
+ * (1) TEMPO DE TELA DO APP — estimateShotScreenTimes() calcula quanto tempo
+ * cada shot fica em tela (posição da âncora → posição da âncora seguinte,
+ * proporcional ao durationSec da cena; o último shot segura até o fim da
+ * cena). Shots "app" com tempo estimado < 2.5s → ERRO; < 4.0s → AVISO
+ * (meta ~4.5s de tela).
+ * (2) SONS QUASE-ÚNICOS — reforça a variedade sonora: AVISO quando algum
+ * sfx chega ao limite (MAX_SFX_REPEATS); AVISO quando mais de 1 sfx
+ * distinto se repete (≥2× cada) — a meta é NO MÁXIMO 1 som repetindo no
+ * vídeo inteiro.
+ * (3) MOMENTO-HISTÓRIA — AVISO leve se o vídeo tiver menos de 2 shots
+ * "metaphor" — o padrão-ouro do canal é uma mini-história física narrada E
+ * animada em ≥2 shots de metáfora conectados (ex.: bola-neve → avalanche).
  */
 
 // Bordão oficial do canal (PRD 3b — inserir 1× por vídeo)
@@ -121,6 +135,50 @@ function resolveShots(scene) {
     return { shots: [{ anchor, visual }], legacy: true };
   }
   return { shots: [], legacy: false };
+}
+
+/**
+ * Estima o tempo de tela (screen time) de cada shot de uma cena, com base na
+ * posição da palavra-âncora na narração, proporcional ao durationSec da cena
+ * (regra do dono 22/07: shots "app" precisam segurar ~4,5s, não ~2,5s).
+ * Um shot "segura a tela" até a âncora do PRÓXIMO shot; o ÚLTIMO shot da cena
+ * segura até o fim da narração. Retorna um array paralelo a `shots`:
+ * { anchor, ok, estSec } — `ok=false`/`estSec=null` quando a âncora não foi
+ * localizada na narração (nesse caso o erro já é reportado em outro ponto).
+ */
+export function estimateShotScreenTimes(scene) {
+  const { shots } = resolveShots(scene || {});
+  const dur = Number(scene && scene.durationSec) || 0;
+  const narr = norm(scene && scene.narration);
+  const words = [...narr.matchAll(/\S+/g)];
+  const totalWords = words.length;
+
+  const positions = [];
+  let cursor = 0;
+  let wordCursor = 0;
+  for (const shot of shots) {
+    const a = shot && typeof shot.anchor === 'string' ? norm(shot.anchor) : '';
+    const at = a ? narr.indexOf(a, cursor) : -1;
+    if (at === -1) {
+      positions.push(null);
+      continue;
+    }
+    cursor = at + a.length;
+    while (wordCursor + 1 < words.length && words[wordCursor + 1].index <= at) wordCursor++;
+    positions.push(wordCursor);
+  }
+
+  return shots.map((shot, j) => {
+    const pos = positions[j];
+    if (pos == null || totalWords === 0 || dur <= 0) {
+      return { anchor: shot && shot.anchor, ok: false, estSec: null };
+    }
+    const nextPos = j + 1 < shots.length ? positions[j + 1] : null;
+    const endWords = j === shots.length - 1 || nextPos == null ? totalWords : nextPos;
+    const wordSpan = Math.max(0, endWords - pos);
+    const estSec = (wordSpan / totalWords) * dur;
+    return { anchor: shot.anchor, ok: true, estSec };
+  });
 }
 
 /**
@@ -274,6 +332,22 @@ export function validateShortScript(script) {
         errors.push(`${stag}: sfx "${shot.sfx}" fora do catálogo (${SFX.join('/')})`);
       }
     });
+
+    // --- Tempo de tela dos shots "app" (regra do dono 22/07: "sempre que for
+    // usar os nossos b-rolls o tempo de tela não pode ser 2,5s — tem que ser
+    // o dobro, tipo 4,5 segundos") ---
+    const shotTimes = estimateShotScreenTimes(s);
+    shots.forEach((shot, j) => {
+      if (!shot || !shot.visual || shot.visual.type !== 'app') return;
+      const est = shotTimes[j] && shotTimes[j].ok ? shotTimes[j].estSec : null;
+      if (est == null) return;
+      const estRounded = Math.round(est * 10) / 10;
+      if (est < 2.5) {
+        errors.push(`${tag} shot ${j + 1}: app "${shot.visual.app}" segura só ~${estRounded}s de tela (mínimo 2.5s — meta ~4.5s)`);
+      } else if (est < 4.0) {
+        warnings.push(`${tag} shot ${j + 1}: app "${shot.visual.app}" segura ~${estRounded}s de tela (abaixo do ideal de ~4.5s — dê mais narração após a âncora ou torne-o o último shot da cena)`);
+      }
+    });
   });
 
   // --- Variedade de som/ícone (feedback do dono pós-v3 — SEMPRE aviso, nunca erro) ---
@@ -304,6 +378,8 @@ export function validateShortScript(script) {
       if (count > MAX_SFX_REPEATS) {
         errors.push(`sfx "${sfx}" repete ${count}× no vídeo (máximo ${MAX_SFX_REPEATS}× — varie o som)`);
       } else if (count === MAX_SFX_REPEATS) {
+        // v3.4: a meta é 1 som por vídeo, no máximo — chegar ao teto de 3 já é aviso
+        warnings.push(`sfx "${sfx}" chegou ao limite de ${MAX_SFX_REPEATS}× no vídeo (a meta v3.4 é NO MÁXIMO 1 som repetindo por vídeo, 2-3× bem espaçado — todo o resto deveria aparecer só 1×)`);
         // posição de cada ocorrência = índice do shot / total de shots (0..1), dividida em 3 terços
         const thirds = new Set(idxs.map(i => Math.min(2, Math.floor((i / totalShots) * 3))));
         if (thirds.size < 3) {
@@ -313,6 +389,12 @@ export function validateShortScript(script) {
         warnings.push(`sfx "${sfx}" aparece 2× muito perto uma da outra (${Math.abs(idxs[1] - idxs[0])} shots de distância — espace mais)`);
       }
     });
+    // v3.4: no máximo 1 som distinto pode repetir no vídeo inteiro (feedback do
+    // dono 22/07: "ainda tem som repetindo demais... cansativo")
+    const repeatingSfx = Object.entries(sfxIndices).filter(([, idxs]) => idxs.length >= 2).map(([sfx]) => sfx);
+    if (repeatingSfx.length > 1) {
+      warnings.push(`mais de 1 som se repete no vídeo (${repeatingSfx.join(', ')}) — a meta v3.4 é NO MÁXIMO 1 som repetindo (2-3×, bem espaçado); todos os outros devem aparecer só 1 vez`);
+    }
   }
   const iconCounts = {};
   allShotsInOrder.forEach(sh => {
@@ -323,6 +405,15 @@ export function validateShortScript(script) {
   Object.entries(iconCounts).forEach(([icon, count]) => {
     if (count > 1) warnings.push(`ícone "${icon}" repetido ${count}× no vídeo (varie — há ${ICONS.length} ícones no catálogo)`);
   });
+
+  // --- Momento-história (regra do dono 22/07 — o padrão-ouro do canal: uma
+  // mini-história física narrada E animada em ≥2 shots "metaphor" conectados,
+  // ex.: bola-neve → avalanche. Catálogo de metáforas é pequeno, então isso é
+  // SEMPRE aviso, nunca erro) ---
+  const metaphorShotsCount = allShotsInOrder.filter(sh => sh && sh.visual && sh.visual.type === 'metaphor').length;
+  if (metaphorShotsCount < 2) {
+    warnings.push('menos de 2 shots "metaphor" no vídeo — o padrão-ouro do canal é o "momento-história": uma mini-história física narrada E animada em ≥2 shots de metáfora conectados (ex.: bola-neve → avalanche)');
+  }
 
   // --- Shots "app" (regra do dono 21/07: "em todos os shorts colocar ao menos
   // 2 b-rolls do nosso app") ---

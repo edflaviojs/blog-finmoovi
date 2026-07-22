@@ -77,7 +77,7 @@ Um shot = { "anchor": "palavra", "visual": { "type": …, … }, "sfx": "…" (o
 - "icon" ∈ {${ICONS.join(', ')}}. "metaphor" ∈ {${METAPHORS.join(', ')}}. "sfx" ∈ {${SFX.join(', ')}}. "app" ∈ {${APP_SCREENS.join(', ')}} (só quando visual.type="app").
 - "text" curtíssimo (≤40 chars). "note" = 1 linha de direção de arte.
 
-REGRA A — RITMO (movimento constante): nenhum visual pode ficar parado mais de ~3s de narração. Na prática: no MÁXIMO ~8-10 palavras entre uma âncora e a próxima. Cena de 11s → ~3-5 shots.
+REGRA A — RITMO (movimento constante): nenhum visual pode ficar parado mais de ~3s de narração. Na prática: no MÁXIMO ~8-10 palavras entre uma âncora e a próxima. Cena de 11s → ~3-5 shots. EXCEÇÃO: shots "app" — ver REGRA G — precisam do OPOSTO: ficar parados ~4-5s.
 
 REGRA B — SINCRONIA SEMÂNTICA (a mais importante — NUNCA viole): o visual de um shot só pode mostrar valores/ideias que estão sendo ditos NAQUELA âncora ou que JÁ foram ditos antes. NUNCA mostre um número/ideia ANTES da voz chegar nele.
   ✗ ERRADO: a voz diz "vejam esses 500 reais" e a tela já sobe um gráfico até 3,2 milhões (a voz ainda nem falou o resultado).
@@ -92,16 +92,17 @@ REGRA C — METÁFORAS LITERAIS (o dono AMA): quando a narração usar uma metá
   · sempre que a narração mandar CLICAR/TOCAR no link (tipicamente na CTA): metaphor "clique-link" (uma mãozinha/cursor percorre a tela, acha o botão do link e CLICA), sfx "click", na âncora onde isso é dito.
   PREFIRA usar na narração metáforas que existem no catálogo (${METAPHORS.join(', ')}); se usar outra, represente com um shot "icon" coerente.
 
-REGRA D — SFX: TEMPERO, NÃO METRÔNOMO (feedback do dono: "tem muito som e ícone repetido, isso cansa"). Regras de variedade sonora:
+REGRA D — SFX: TEMPERO, NÃO METRÔNOMO (feedback do dono 22/07 depois de assistir o vídeo v3.3: "ainda tem som repetindo demais... cansativo" — aperte MAIS que na versão anterior). Regras de variedade sonora:
+  · REGRA DE OURO (v3.4): o IDEAL é CADA SOM aparecer só 1 VEZ no vídeo inteiro. NO MÁXIMO 1 som do vídeo todo pode repetir (2-3×, bem espaçado) — todos os OUTROS sons usados aparecem 1 única vez. O candidato natural pro som que repete é "kaching" (o som do dinheiro); os demais sons usados (whoosh, avalanche, slide, click, ding, thud, sparkle, boom, alert, coin, typewriter, keyboard, pop) aparecem 1× cada.
   · SFX em NO MÁXIMO ~metade dos shots do vídeo inteiro — a maioria dos shots NÃO precisa de som, silêncio também é ritmo.
   · NUNCA repita o mesmo sfx em dois shots consecutivos (contando só entre os shots que TÊM som).
-  · Ao longo do vídeo inteiro, use pelo menos 3-4 sons DIFERENTES do catálogo (${SFX.join(', ')}).
-  · Para o "som do dinheiro" (contador subindo, valor em reais aparecendo), PREFIRA "kaching" (caixa registradora) — "coin" fica como alternativa leve, não os dois toda hora.
+  · Ao longo do vídeo inteiro, use pelo menos 3-4 sons DIFERENTES do catálogo (${SFX.join(', ')}) — cada um 1× só, exceto o único som "coringa" que pode repetir.
+  · Para o "som do dinheiro" (contador subindo, valor em reais aparecendo), PREFIRA "kaching" (caixa registradora) — é o candidato natural a ser o ÚNICO som repetido do vídeo; "coin" fica como alternativa leve pontual (1×), não os dois toda hora.
   · Em shots "statement"/"list"/"formula" (o texto surge digitado/revelado), combine com "typewriter" ou "keyboard" em vez de um sfx de dinheiro.
   · 4 sons novos pro repertório (menos repetição, mais variedade) — use quando fizer sentido em vez de recair sempre nos mesmos 3-4: "click" (clique/toque em botão ou link), "ding" (sininho suave — insight, "ahá", uma sacada), "thud" (impacto seco — queda, perda, tombo), "sparkle" (brilho/cintilado — revelação, resultado bonito surgindo).
-  · LIMITE DURO DE REPETIÇÃO: o MESMO sfx pode aparecer NO MÁXIMO ${MAX_SFX_REPEATS} vezes no vídeo inteiro (senão o roteiro é REJEITADO). Se aparecer as ${MAX_SFX_REPEATS} vezes, elas precisam ficar BEM ESPAÇADAS — uma perto do início, uma no meio, uma perto do fim do vídeo (nunca duas juntas/na mesma parte).
-    ✓ CERTO: "kaching" no 1º shot do vídeo (início), some por um bom tempo, volta lá pelo meio, e a 3ª vez só perto do final.
-    ✗ ERRADO: "kaching" em 3 shots seguidos, ou as 3 vezes concentradas na mesma metade do vídeo — cansa e não é "tempero".
+  · LIMITE DURO DE REPETIÇÃO: o MESMO sfx pode aparecer NO MÁXIMO ${MAX_SFX_REPEATS} vezes no vídeo inteiro (senão o roteiro é REJEITADO) — mas isso é o TETO absoluto, NÃO a meta. A meta v3.4 é 1× pra quase todo som, com NO MÁXIMO 1 som do vídeo repetindo. Se repetir, fique em 2-3× BEM ESPAÇADAS — uma perto do início, uma no meio, uma perto do fim do vídeo (nunca duas juntas/na mesma parte).
+    ✓ CERTO: "kaching" no 1º shot do vídeo (início), some por um bom tempo, volta lá pelo meio, e no máximo uma 3ª vez perto do final — TODO o resto do catálogo usado no vídeo aparece só 1×.
+    ✗ ERRADO: "kaching" em 3 shots seguidos, as 3 vezes concentradas na mesma metade do vídeo, OU mais de 1 som (ex.: "kaching" E "sparkle") repetindo no mesmo vídeo — cansa e não é "tempero".
 
 REGRA E — ÍCONES: NÃO REPITA (catálogo agora tem ${ICONS.length}: ${ICONS.join(', ')}). Cada ícone usado no vídeo aparece no MÁXIMO 1 vez — escolha o mais específico pro momento (ex.: "piggy" poupança, "bank" banco, "target" meta, "trophy" conquista, "bulb" ideia/insight, "hourglass" tempo passando, "wallet" carteira/gasto, "fire" urgência, "chart-down" queda/perda, "shield" proteção).
 
@@ -110,6 +111,15 @@ REGRA F — B-ROLL DO APP FinMoovi (regra do dono 21/07: "em todos os shorts col
   · ≥1 em algum BEAT onde a narração JUSTIFIQUE mostrar o app — momentos de falar em controlar dinheiro, ver saldo, fatura, fluxo de caixa, planejamento ("olha como fica no app"). NUNCA force um shot de app onde a história não sustenta além desses dois momentos — a REGRA B (sincronia semântica) continua valendo: a tela mostrada tem que bater com o que está sendo dito naquela âncora.
   As 8 telas disponíveis (escolha a mais coerente com a âncora): "app" ∈ {${APP_SCREENS.join(', ')}}.
     · dashboard = saldos e visão geral das contas · cartoes = cartões de crédito e fatura · fluxo = fluxo de caixa · extrato = lançamentos/extrato · balanco = receitas × despesas do mês · compras = modo compras/carrinho · smartcapture = lançar gasto por voz · calculadora = calculadora de juros/simulação (ideal na CTA).
+
+REGRA G — TEMPO DE TELA DO APP (regra do dono 22/07 depois de assistir o vídeo v3.3: "sempre que for usar os nossos b-rolls o tempo de tela não pode ser 2,5s — tem que ser o dobro, tipo 4,5 segundos; achei que ficou muito rápido"): um shot "app" PRECISA segurar a tela por ~4-5 SEGUNDOS (nunca ~2,5s ou menos — isso é rejeitado). O tempo de tela de um shot é a distância (em palavras faladas) da SUA âncora até a âncora do PRÓXIMO shot — ou até o FIM da cena, se for o último shot. Para garantir isso:
+  · Deixe ≈12+ PALAVRAS de narração DEPOIS da âncora do shot "app" na mesma cena antes do próximo shot — OU torne o shot "app" o ÚLTIMO shot da cena (aí ele segura até o fim).
+  · Cenas que carregam um shot "app" devem ter MENOS shots no total (2-3, não 5-6) — cada shot a mais depois do app rouba tempo de tela dele.
+  · NUNCA ponha a âncora do app perto do fim da cena com mais shots vindo logo depois — isso faz o app entrar e sumir em 1-2s, o que o dono NÃO quer mais.
+
+REGRA H — MOMENTO-HISTÓRIA (o padrão-ouro do canal — regra do dono 22/07 depois de ver o vídeo v3.3: sobre a passagem "É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche", ele disse que "ficou perfeita — é isso que eu quero ver mais"): TODO Short precisa ter PELO MENOS 1 momento-história — uma MINI-HISTÓRIA FÍSICA contada na narração E animada de VERDADE, do início ao fim, em ≥2 shots "metaphor" CONECTADOS (a MESMA história continuando de um shot pro outro — nunca metáforas soltas/desconexas), com "sfx" batendo com a ação de cada etapa.
+  EXEMPLO CANÔNICO (o padrão a seguir, aprovado pelo dono): "É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche." → shot 1 metaphor "bola-neve" (bolinha rola e cresce descendo a ladeira, sfx "whoosh") + shot 2 metaphor "avalanche" (a mesma bola vira avalanche e derruba tudo, sfx "avalanche") — DUAS etapas da MESMA história física, uma continuando a outra.
+  Use esse molde: escolha (ou, se precisar, invente e represente com um "icon" coerente) uma metáfora física com começo-meio-fim que narre o PORQUÊ/COMO do assunto da cena, e anime-a de verdade em ≥2 shots seguidos que dão continuidade um ao outro.
 
 ════════ UNIDADE NA PRIMEIRA MENÇÃO (regra do dono) ════════
 Toda unidade (anos, %, R$, meses…) é FALADA por extenso na PRIMEIRA menção; nas menções seguintes, se o contexto já deixou claro do que se trata, pode falar só o número — sem repetir a unidade.
