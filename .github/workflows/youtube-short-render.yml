@@ -8,7 +8,9 @@ name: YouTube — Renderizar Short (completo)
 # F1.5 — cron diário: 06:30 UTC o job escolhe sozinho o PRÓXIMO termo do
 # glossário (alfabético, sem repetir), GERA o roteiro fresco, comita, renderiza
 # e publica. No disparo manual (workflow_dispatch) o comportamento é o de antes:
-# slug + upload vêm dos inputs e o roteiro já tem que existir.
+# slug + upload vêm dos inputs e o roteiro já tem que existir — a menos que o
+# input `auto=true` seja usado, que replica o ciclo do cron sob demanda (ignora
+# o input slug, escolhe o próximo termo, gera o roteiro, sobe e publica).
 
 on:
   workflow_dispatch:
@@ -22,6 +24,11 @@ on:
         type: boolean
         required: false
         default: false
+      auto:
+        description: "Modo automático — escolhe o próximo termo da fila e gera o roteiro (igual ao cron diário)"
+        type: boolean
+        required: false
+        default: false
   schedule:
     # 06:30 UTC todo dia: o vídeo fica pronto ~07h UTC e o dono publica de manhã
     # (Lisboa/BR). Horário ajustável — é só mudar o cron aqui.
@@ -32,11 +39,14 @@ permissions:
   contents: write
 
 # No cron, todas as execuções compartilham UM grupo fixo ("daily") para
-# serializar (evita corrida no tracking / publicação dupla). No disparo manual,
-# o grupo é por slug — assim um manual não trava outro nem o cron. A expressão
-# só usa contexto de evento (não usa saída de step), então é válida aqui.
+# serializar (evita corrida no tracking / publicação dupla). Disparo manual com
+# auto=true entra nesse MESMO grupo "daily", porque ele roda o ciclo idêntico
+# ao cron (picker + commit + upload) e correria o mesmo risco de corrida. Nos
+# demais disparos manuais o grupo é por slug — assim um manual não trava outro
+# nem o cron. A expressão só usa contexto de evento (não usa saída de step),
+# então é válida aqui.
 concurrency:
-  group: youtube-short-${{ github.event_name == 'schedule' && 'daily' || github.event.inputs.slug || 'juros-compostos' }}
+  group: youtube-short-${{ (github.event_name == 'schedule' || github.event.inputs.auto == 'true') && 'daily' || github.event.inputs.slug || 'juros-compostos' }}
   cancel-in-progress: false
 
 jobs:
@@ -53,14 +63,17 @@ jobs:
           node-version: '22'
 
       # F1.5 — resolve o modo da execução:
-      #   • schedule → escolhe o próximo termo; se o glossário esgotou, marca
+      #   • schedule, OU workflow_dispatch com auto=true → escolhe o próximo
+      #     termo (ignora o input slug); se o glossário esgotou, marca
       #     skip=true e o resto do job é pulado (sucesso neutro, sem falha).
       #     SLUG resolvido, UPLOAD=true, GENERATE=true (gera o roteiro fresco).
-      #   • workflow_dispatch → SLUG/UPLOAD vêm dos inputs, GENERATE=false.
+      #     auto=true replica o ciclo do cron sob demanda, pra testar/repetir.
+      #   • workflow_dispatch sem auto → SLUG/UPLOAD vêm dos inputs,
+      #     GENERATE=false (comportamento manual de sempre).
       - name: Resolver slug e modo
         id: resolve
         run: |
-          if [ "${{ github.event_name }}" = "schedule" ]; then
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.auto }}" = "true" ]; then
             set +e
             SLUG="$(node src/scripts/youtube/pick-next-short.js)"
             CODE=$?
