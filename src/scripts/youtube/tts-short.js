@@ -21,7 +21,7 @@
  * Uso: node --import tsx src/scripts/youtube/tts-short.js --slug=juros-compostos
  */
 
-import { synthesizeSpeech, transcribeWords, pickProvider, getTtsProviders } from './lib/tts-client.js';
+import { synthesizeSpeech, transcribeWords, pickProvider, getTtsProviders, warmUpTts } from './lib/tts-client.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -179,6 +179,16 @@ async function main() {
   const providerChain = getTtsProviders().map((p) => p.name);
   console.log(`🎙️  TTS do Short "${slug}" — ${scenes.length} cenas · provedor: ${provider}\n`);
 
+  // Aquecimento do edge-tts: a 1ª conexão do processo às vezes volta um stub
+  // truncado (cold start). Esquentamos com uma micro-frase descartada ANTES da
+  // cena 1 — falha aqui é inofensiva (só loga e segue).
+  try {
+    await warmUpTts();
+    console.log('   (edge-tts aquecido)\n');
+  } catch (err) {
+    console.log(`   (aquecimento do TTS falhou — seguindo assim mesmo: ${err.message})\n`);
+  }
+
   const audioDir = join(AUDIO_ROOT, slug);
   mkdirSync(audioDir, { recursive: true });
 
@@ -216,7 +226,7 @@ async function main() {
       console.log(`  ⚠ cena ${id}: áudio suspeito (${speechEnd.toFixed(2)}s p/ ${wordCount} palavras, mínimo ${minDurationSec.toFixed(2)}s) — tentativa ${attempt}/${MAX_ATTEMPTS}`);
 
       if (attempt === MAX_ATTEMPTS) {
-        throw new Error(`cena ${id}: áudio do TTS veio quebrado (${speechEnd.toFixed(2)}s para ${wordCount} palavras) após 3 tentativas`);
+        throw new Error(`cena ${id}: áudio do TTS veio quebrado (${speechEnd.toFixed(2)}s para ${wordCount} palavras) após 4 tentativas`);
       }
       await sleep(RETRY_BACKOFF_MS[attempt - 1]);
     }

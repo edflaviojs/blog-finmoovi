@@ -135,6 +135,53 @@ jobs:
             git push
           fi
 
+      # Fallback OFFLINE de voz: instala o Piper + a voz pt-BR (faber-medium) para
+      # o tts-client ter um SEGUNDO provedor real na cadeia (edge → piper). Sem
+      # isto a "escalada" da 4ª tentativa do tts-short não tinha p/ quem cair
+      # (cadeia de tamanho 1) e o job morria se o edge desse stub repetido.
+      # RESILIENTE: se o download falhar, só avisa e segue SEM Piper (edge-only,
+      # como antes) — o fallback NUNCA derruba o job.
+      - name: Cache do Piper (binário + voz)
+        id: piper-cache
+        if: steps.resolve.outputs.skip != 'true'
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/piper
+          key: piper-2023.11.14-2-pt_BR-faber-medium-v1.0.0
+      - name: Instalar Piper (fallback offline de voz)
+        if: steps.resolve.outputs.skip != 'true'
+        run: |
+          set -euo pipefail
+          PIPER_DIR="$RUNNER_TEMP/piper"
+          BIN="$PIPER_DIR/piper/piper"
+          MODEL="$PIPER_DIR/pt_BR-faber-medium.onnx"
+          if ! ( [ -x "$BIN" ] && [ -f "$MODEL" ] && [ -f "$MODEL.json" ] ); then
+            echo "Baixando Piper + voz pt-BR (faber-medium)…"
+            mkdir -p "$PIPER_DIR"
+            if curl -fsSL "https://github.com/rhasspy/piper/releases/download/2023.11.14-2/piper_linux_x86_64.tar.gz" -o "$PIPER_DIR/piper.tar.gz" \
+              && tar -xzf "$PIPER_DIR/piper.tar.gz" -C "$PIPER_DIR" \
+              && curl -fsSL "https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx" -o "$MODEL" \
+              && curl -fsSL "https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx.json" -o "$MODEL.json"; then
+              rm -f "$PIPER_DIR/piper.tar.gz"
+              echo "Piper instalado."
+            else
+              echo "::warning::Falha ao baixar o Piper — seguindo SEM fallback offline (edge-only, como antes)."
+              exit 0
+            fi
+          else
+            echo "Piper já em cache."
+          fi
+          if [ -x "$BIN" ] && [ -f "$MODEL" ] && [ -f "$MODEL.json" ]; then
+            {
+              echo "PIPER_BIN=$BIN"
+              echo "PIPER_MODEL=$MODEL"
+            } >> "$GITHUB_ENV"
+            echo "PIPER_BIN=$BIN"
+            echo "PIPER_MODEL=$MODEL"
+          else
+            echo "::warning::Piper incompleto após instalação — seguindo SEM fallback offline."
+          fi
+
       - name: Gerar áudio + timing (TTS + Whisper)
         if: steps.resolve.outputs.skip != 'true'
         env:
