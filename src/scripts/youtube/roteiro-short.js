@@ -49,6 +49,16 @@ function readTerm(slug) {
   };
 }
 
+// Corta o corpo do glossário num limite de caracteres, na fronteira de uma
+// palavra, pra não estourar o limite de request do Groq (HTTP 413) — o corpo
+// inteiro do termo (+ regras + bloco corretivo) passava do teto do tier grátis.
+function truncateBody(body, maxChars = 1800) {
+  if (!body || body.length <= maxChars) return body;
+  const cut = body.slice(0, maxChars);
+  const lastSpace = cut.lastIndexOf(' ');
+  return `${cut.slice(0, lastSpace > 0 ? lastSpace : maxChars)}… (trecho)`;
+}
+
 function buildPrompt(t) {
   return `Você é um ROTEIRISTA CINEMATOGRÁFICO de finanças do canal FinMoovi (PT-BR): engaja, cria mistério, instiga emoção e prende a atenção do PRIMEIRO ao ÚLTIMO segundo. Escreve como uma CONVERSA DE AMIGO brasileiro — informal, fluido, com gírias leves — NUNCA formal, "escrito" ou robótico.
 Crie o roteiro de um YOUTUBE SHORT (vertical, motion graphics) sobre o termo do glossário abaixo.
@@ -56,7 +66,7 @@ Crie o roteiro de um YOUTUBE SHORT (vertical, motion graphics) sobre o termo do 
 TERMO: "${t.term}"
 DEFINIÇÃO: ${t.definition}
 CONTEÚDO DE APOIO (use os números/exemplos reais daqui):
-${t.body}
+${truncateBody(t.body)}
 
 ════════ REGRAS DE ESTRUTURA (o roteiro é rejeitado se violar) ════════
 1. Duração total entre 45 e 55 segundos (soma dos durationSec das cenas).
@@ -184,15 +194,26 @@ function extractJson(text) {
 // Monta o bloco corretivo anexado ao prompt na tentativa SEGUINTE a uma
 // validação reprovada: lista os erros EXATOS do validador (obrigatórios) e até
 // ~5 avisos como melhorias opcionais. O prompt-base continua sendo enviado.
+// Limite total ~1200 chars: corta os avisos primeiro (menos críticos) e só
+// depois os erros, se ainda faltar espaço — outro contribuinte pro 413 do Groq.
 function buildCorrectiveBlock(errors, warnings) {
-  const lines = ['⚠️ SUA TENTATIVA ANTERIOR FOI REJEITADA. Corrija EXATAMENTE estes erros e gere o roteiro completo novamente:'];
-  errors.forEach(e => lines.push(`- ${e}`));
+  const MAX_CHARS = 1200;
+  const header = '⚠️ SUA TENTATIVA ANTERIOR FOI REJEITADA. Corrija EXATAMENTE estes erros e gere o roteiro completo novamente:';
+  const errorLines = errors.map(e => `- ${e}`);
+  let lines = [header, ...errorLines];
+
   const topWarnings = (warnings || []).slice(0, 5);
   if (topWarnings.length) {
-    lines.push('melhore também:');
-    topWarnings.forEach(w => lines.push(`- ${w}`));
+    const withWarnings = [...lines, 'melhore também:', ...topWarnings.map(w => `- ${w}`)];
+    if (withWarnings.join('\n').length <= MAX_CHARS) lines = withWarnings;
   }
-  return lines.join('\n');
+
+  let block = lines.join('\n');
+  if (block.length > MAX_CHARS) {
+    // ainda estourou só com os erros: trunca o bloco inteiro na fronteira do limite
+    block = `${block.slice(0, MAX_CHARS)}… (trecho)`;
+  }
+  return block;
 }
 
 async function generateScript(t, { retries = 4 } = {}) {
@@ -201,7 +222,9 @@ async function generateScript(t, { retries = 4 } = {}) {
   let corrective = ''; // bloco corretivo acumulado da última reprovação de validação
   for (let attempt = 1; attempt <= retries; attempt++) {
     const prompt = corrective ? `${basePrompt}\n\n${corrective}` : basePrompt;
-    const raw = await generateText(prompt, { maxTokens: 2200, temperature: 0.6 });
+    // modelos raciocinadores (gpt-oss-120b) gastam tokens "pensando" antes do
+    // JSON — 2200 asfixiava e devolvia resposta vazia (HTTP 200, content vazio).
+    const raw = await generateText(prompt, { maxTokens: 6000, temperature: 0.6 });
     let script;
     try {
       script = extractJson(raw);
