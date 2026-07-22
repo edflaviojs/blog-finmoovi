@@ -215,7 +215,7 @@ jobs:
       - name: Renderizar Short
         if: steps.resolve.outputs.skip != 'true'
         working-directory: youtube-render
-        run: npx remotion render src/index.ts Short "out/$SLUG.mp4" --props="{\"slug\":\"$SLUG\"}"
+        run: npx remotion render src/index.ts Short "out/$SLUG.mp4" --props="{\"slug\":\"$SLUG\"}" --crf=16 --jpeg-quality=95
 
       - name: Subir artefato (MP4 + legendas)
         if: steps.resolve.outputs.skip != 'true'

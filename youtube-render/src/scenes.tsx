@@ -51,6 +51,17 @@ const Particles: React.FC = () => {
 // Ganho grande de velocidade de render (era o gargalo no runner do Actions).
 const glow = (color: string) => `radial-gradient(circle at center, ${color} 0%, transparent 66%)`;
 
+// Textura de ruído (dither) ESTÁTICA p/ quebrar o banding 8-bit do gradiente
+// escuro (relatado pelo dono: fundo "distorcido, sem qualidade" — amplificado
+// pela compressão do YouTube). 1 tile SVG feTurbulence gerado UMA VEZ aqui
+// (módulo, fora do componente) e repetido em mosaico via CSS background — SEM
+// filter:blur() e SEM nada recalculado por frame (é uma textura 100% estática,
+// mantém o custo de render igual a zero). Opacidade bem baixa: só suaviza a
+// banda, não muda o visual da marca.
+const NOISE_TILE = 200;
+const NOISE_SVG = `<svg xmlns='http://www.w3.org/2000/svg' width='${NOISE_TILE}' height='${NOISE_TILE}'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(#n)'/></svg>`;
+const NOISE_DATA_URI = `data:image/svg+xml;utf8,${encodeURIComponent(NOISE_SVG)}`;
+
 export const Background: React.FC = () => {
   const frame = useCurrentFrame();
   const drift = Math.sin(frame / 40) * 40;
@@ -70,6 +81,13 @@ export const Background: React.FC = () => {
         background: glow(BRAND.violet), opacity: 0.13,
       }} />
       <Particles />
+      <AbsoluteFill style={{
+        backgroundImage: `url("${NOISE_DATA_URI}")`,
+        backgroundRepeat: 'repeat',
+        backgroundSize: `${NOISE_TILE}px ${NOISE_TILE}px`,
+        opacity: 0.035,
+        pointerEvents: 'none',
+      }} />
     </AbsoluteFill>
   );
 };
