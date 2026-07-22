@@ -72,7 +72,12 @@ const LEGACY_VISUAL_TYPES = ['title', 'number', 'chart', 'list', 'formula', 'sta
 
 // Catálogo de METÁFORAS animadas (o dono quer a metáfora LITERAL na tela + som)
 // 'clique-link' (v3.2): mãozinha/cursor percorre a tela, acha o botão do link e CLICA — pareia com sfx 'click'.
-export const METAPHORS = ['bola-neve', 'avalanche', 'escorregao', 'clique-link'];
+// v3.5 (anti-repetição): +5 metáforas para variar o momento-história ENTRE vídeos
+// — o dispositivo (a metáfora) pode repetir, o exemplo/história NUNCA. Significados:
+// foguete=decolagem/crescimento rápido; semente=paciência/longo prazo;
+// montanha-russa=volatilidade/altos e baixos; bolha=expectativa que estoura;
+// ralo=dinheiro escorrendo/taxas. (Enum FROZEN — o renderer implementa as animações.)
+export const METAPHORS = ['bola-neve', 'avalanche', 'escorregao', 'clique-link', 'foguete', 'semente', 'montanha-russa', 'bolha', 'ralo'];
 
 // Ícones disponíveis para shots do tipo 'icon'
 export const ICONS = [
@@ -507,6 +512,21 @@ export function sanitizeScript(script) {
   if (!script || typeof script !== 'object') return script;
   const log = (msg) => console.log(`🧼 sanitizer: ${msg}`);
   const scenes = Array.isArray(script.scenes) ? script.scenes : [];
+
+  // 0. NARRAÇÃO NUNCA DIZ "SHORT" (regra do dono 22/07 — o canal fala sempre
+  // "vídeo": "te explico no próximo vídeo"). Troca "Short"/"Shorts" isolados
+  // (limite de palavra, ignora caixa) por "vídeo" em TODA narração de cena. A
+  // hashtag #Shorts vive nos metadados do upload, não aqui — este passo só mexe
+  // na narração das cenas. Roda ANTES das âncoras para não deixar âncora órfã.
+  scenes.forEach((scene, i) => {
+    if (!scene || typeof scene.narration !== 'string') return;
+    const before = scene.narration;
+    const after = before.replace(/\bshorts?\b/gi, 'vídeo');
+    if (after !== before) {
+      log(`cena ${i + 1} (${scene.role || '?'}): narração "Short/Shorts" → "vídeo" (o canal fala sempre "vídeo")`);
+      scene.narration = after;
+    }
+  });
 
   scenes.forEach((scene, i) => {
     const tag = `cena ${i + 1} (${(scene && scene.role) || '?'})`;

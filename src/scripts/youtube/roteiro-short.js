@@ -16,7 +16,7 @@
 
 import { generateText } from '../apis/kie-ai.js';
 import { validateShortScript, sanitizeScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX, MAX_SFX_REPEATS, APP_SCREENS } from './lib/schema-short.js';
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, realpathSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -59,7 +59,105 @@ function truncateBody(body, maxChars = 1800) {
   return `${cut.slice(0, lastSpace > 0 ? lastSpace : maxChars)}… (trecho)`;
 }
 
-function buildPrompt(t) {
+// Tracking dos Shorts já publicados (mesmo arquivo que o workflow atualiza).
+const PUBLISHED_PATH = join(process.cwd(), '.github', 'data', 'youtube-published.json');
+
+// Extrai a(s) sentença(s) da narração que contêm a palavra-âncora de uma metáfora
+// (a "frase-história"). É o texto que o próximo vídeo NÃO pode repetir/parafrasear.
+function findSentenceForAnchor(narration, anchor) {
+  if (!narration || !anchor) return '';
+  const a = String(anchor).toLowerCase();
+  const sentences = String(narration).split(/(?<=[.!?…])\s+/);
+  const hit = sentences.find(s => s.toLowerCase().includes(a));
+  return (hit || '').trim();
+}
+
+/**
+ * ANTI-REPETIÇÃO (v3.5) — carrega os roteiros PUBLICADOS mais recentes para o
+ * modelo NÃO repetir o vídeo anterior. Lê .github/data/youtube-published.json,
+ * pega os `limit` mais recentes por `uploadedAt` e, para cada um, tenta ler
+ * output/<slug>.script.json (pula os ausentes). De cada roteiro extrai:
+ *   { slug, style (intro.style), frase (intro.frase), metaphors[], stories[] }
+ * onde `stories` são as sentenças da narração que contêm cada metáfora usada.
+ * Retorna [] gracioso se não houver nada. `publishedPath`/`outputDir` são
+ * parametrizáveis só para teste; em produção usam os caminhos padrão.
+ */
+export function loadRecentPublishedContext({ publishedPath = PUBLISHED_PATH, outputDir = OUTPUT_DIR, limit = 3 } = {}) {
+  let published;
+  try {
+    published = JSON.parse(readFileSync(publishedPath, 'utf-8'));
+  } catch {
+    return [];
+  }
+  const recent = Object.entries(published || {})
+    .filter(([, v]) => v && v.uploadedAt)
+    .sort((a, b) => new Date(b[1].uploadedAt) - new Date(a[1].uploadedAt))
+    .slice(0, limit);
+
+  const out = [];
+  for (const [slug] of recent) {
+    const p = join(outputDir, `${slug}.script.json`);
+    if (!existsSync(p)) continue; // roteiro não disponível localmente → pula
+    let script;
+    try {
+      script = JSON.parse(readFileSync(p, 'utf-8'));
+    } catch {
+      continue;
+    }
+    const intro = (script && script.intro) || {};
+    const scenes = Array.isArray(script && script.scenes) ? script.scenes : [];
+    const metaphors = [];
+    const stories = [];
+    for (const s of scenes) {
+      const shots = Array.isArray(s && s.shots) ? s.shots : [];
+      for (const sh of shots) {
+        const v = sh && sh.visual;
+        if (v && v.type === 'metaphor' && v.metaphor) {
+          if (!metaphors.includes(v.metaphor)) metaphors.push(v.metaphor);
+          const sentence = findSentenceForAnchor(s.narration, sh.anchor);
+          if (sentence && !stories.includes(sentence)) stories.push(sentence);
+        }
+      }
+    }
+    out.push({ slug, style: intro.style || '', frase: intro.frase || '', metaphors, stories });
+  }
+  return out;
+}
+
+/**
+ * Monta o bloco ANTI-REPETIÇÃO (≤900 chars) que entra no prompt: por vídeo
+ * anterior, lista estilo/frase de intro, metáforas e frases-história, e PROÍBE
+ * repeti-los. Se estourar 900 chars, trunca as frases-história primeiro (as menos
+ * críticas); backstop = corte duro. Retorna '' se não houver vídeo anterior.
+ */
+export function buildAntiRepetitionBlock(context) {
+  const list = (context || []).filter(Boolean);
+  if (list.length === 0) return '';
+  const MAX = 900;
+  const render = (storyCap) => {
+    const parts = list.map((c, i) => {
+      const label = i === 0 ? 'mais recente' : `${i + 1}º mais recente`;
+      const metas = c.metaphors && c.metaphors.length ? c.metaphors.join(', ') : '—';
+      const stories = c.stories && c.stories.length
+        ? c.stories.map((s) => {
+            const txt = storyCap && s.length > storyCap ? `${s.slice(0, storyCap).trim()}…` : s;
+            return `"${txt}"`;
+          }).join(' ')
+        : '—';
+      return `[${label}: estilo de intro ${c.style || '—'} · frase de intro "${c.frase || '—'}" · metáforas: ${metas} · histórias: ${stories}]`;
+    });
+    return `🚫 ANTI-REPETIÇÃO — os vídeos anteriores do canal usaram: ${parts.join(' ')}. É PROIBIDO: repetir o MESMO estilo de intro do vídeo mais recente; reutilizar qualquer uma dessas metáforas principais; repetir ou parafrasear essas frases/histórias. Crie uma intro com formato DIFERENTE e um momento-história NOVO, com exemplo original adaptado ao tema deste termo.`;
+  };
+  let block = render(0); // 0 = sem corte nas frases-história
+  if (block.length <= MAX) return block;
+  for (const cap of [90, 70, 50, 30]) {
+    block = render(cap);
+    if (block.length <= MAX) return block;
+  }
+  return `${block.slice(0, MAX - 1).trimEnd()}…`;
+}
+
+function buildPrompt(t, antiRep = '') {
   return `Você é um ROTEIRISTA CINEMATOGRÁFICO de finanças do canal FinMoovi (PT-BR): engaja, cria mistério, instiga emoção e prende a atenção do PRIMEIRO ao ÚLTIMO segundo. Escreve como uma CONVERSA DE AMIGO brasileiro — informal, fluido, com gírias leves — NUNCA formal, "escrito" ou robótico.
 Crie o roteiro de um YOUTUBE SHORT (vertical, motion graphics) sobre o termo do glossário abaixo.
 
@@ -67,7 +165,7 @@ TERMO: "${t.term}"
 DEFINIÇÃO: ${t.definition}
 CONTEÚDO DE APOIO (use os números/exemplos reais daqui):
 ${truncateBody(t.body)}
-
+${antiRep ? `\n${antiRep}\n` : ''}
 ════════ REGRAS DE ESTRUTURA (o roteiro é rejeitado se violar) ════════
 ⚠️ os valores/números que aparecem nos EXEMPLOS destas regras (R$ 500, R$ 3,2 milhões, 25/35 anos etc.) pertencem a OUTRO vídeo — é PROIBIDO usá-los; use SOMENTE números reais do CONTEÚDO DE APOIO do termo atual ("${t.term}").
 1. Duração total entre 45 e 55 segundos (soma dos durationSec das cenas).
@@ -77,6 +175,7 @@ ${truncateBody(t.body)}
 5. CTA (penúltima cena, NUNCA no fim): recado rápido de valor indicando o app FinMoovi grátis OU a calculadora do blog. Volte já ao tom de conteúdo.
 6. OUTRO (última cena, open loop): SEM "tchau/obrigado/até a próxima". Reflexão forte + gancho de curiosidade que puxa o PRÓXIMO vídeo. Preencha "nextVideoTitle" com o tema do próximo Short.
 7. Insira EXATAMENTE 1 vez (de preferência num beat ou na CTA) o bordão do canal: "${BORDAO}"
+8. NARRAÇÃO — diga sempre "vídeo", NUNCA "Short"/"Shorts": é sempre "te explico no próximo vídeo", jamais "no próximo short" (a hashtag #Shorts fica só nos metadados do upload, nunca na fala).
 
 ════════ SHOTS — COREOGRAFIA POR PALAVRA (o coração do v3) ════════
 O dono quer MUITO MOVIMENTO: "a cada 2-3 segundos muda a tela — gráficos, ícones, imagens". Cada cena tem "shots": um ARRAY de 1 a 6 visuais rápidos que ENTRAM na tela no exato momento em que a palavra-âncora é FALADA.
@@ -103,6 +202,7 @@ REGRA C — METÁFORAS LITERAIS (o dono AMA): quando a narração usar uma metá
   · "é aqui que a maioria escorrega" → metaphor "escorregao", sfx "slide" (pode ser CÔMICO — o dono curte o humor no escorregão).
   · sempre que a narração mandar CLICAR/TOCAR no link (tipicamente na CTA): metaphor "clique-link" (uma mãozinha/cursor percorre a tela, acha o botão do link e CLICA), sfx "click", na âncora onde isso é dito.
   PREFIRA usar na narração metáforas que existem no catálogo (${METAPHORS.join(', ')}); se usar outra, represente com um shot "icon" coerente.
+  SIGNIFICADO das metáforas (escolha a que NASCE do tema deste vídeo): bola-neve=efeito cumulativo que cresce; avalanche=o acúmulo virando algo enorme; escorregao=erro/tropeço comum; clique-link=clicar no link (CTA); foguete=decolagem/crescimento rápido; semente=paciência/longo prazo; montanha-russa=volatilidade/altos e baixos; bolha=expectativa que estoura; ralo=dinheiro escorrendo/taxas.
   ⚠️ A "anchor" NUNCA é o nome da metáfora/ícone do catálogo — é SEMPRE uma palavra FALADA de verdade na narração (ex.: metaphor "bola-neve" → anchor "bola", NUNCA "bola-neve"; metaphor "escorregao" → anchor "escorrega", NUNCA "escorregao").
 
 REGRA D — SFX: TEMPERO, NÃO METRÔNOMO (feedback do dono 22/07 depois de assistir o vídeo v3.3: "ainda tem som repetindo demais... cansativo" — aperte MAIS que na versão anterior). Regras de variedade sonora:
@@ -133,6 +233,7 @@ REGRA G — TEMPO DE TELA DO APP (regra do dono 22/07 depois de assistir o víde
 REGRA H — MOMENTO-HISTÓRIA (o padrão-ouro do canal — regra do dono 22/07 depois de ver o vídeo v3.3: sobre a passagem "É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche", ele disse que "ficou perfeita — é isso que eu quero ver mais"): TODO Short precisa ter PELO MENOS 1 momento-história — uma MINI-HISTÓRIA FÍSICA contada na narração E animada de VERDADE, do início ao fim, em ≥2 shots "metaphor" CONECTADOS (a MESMA história continuando de um shot pro outro — nunca metáforas soltas/desconexas), com "sfx" batendo com a ação de cada etapa.
   EXEMPLO CANÔNICO (o padrão a seguir, aprovado pelo dono): "É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche." → shot 1 metaphor "bola-neve" (bolinha rola e cresce descendo a ladeira, sfx "whoosh") + shot 2 metaphor "avalanche" (a mesma bola vira avalanche e derruba tudo, sfx "avalanche") — DUAS etapas da MESMA história física, uma continuando a outra.
   Use esse molde: escolha (ou, se precisar, invente e represente com um "icon" coerente) uma metáfora física com começo-meio-fim que narre o PORQUÊ/COMO do assunto da cena, e anime-a de verdade em ≥2 shots seguidos que dão continuidade um ao outro.
+  ⚠️ A história é SEMPRE ORIGINAL e específica do tema — o DISPOSITIVO (contar uma mini-história física) se repete todo vídeo, mas o EXEMPLO/história NUNCA. A metáfora escolhida deve NASCER do assunto (ex.: ações → montanha-russa; taxas/tarifas → ralo; crescimento rápido → foguete; longo prazo → semente; hype que estoura → bolha), jamais a mesma metáfora nem o mesmo exemplo dos vídeos anteriores (ver ANTI-REPETIÇÃO).
 
 ════════ UNIDADE NA PRIMEIRA MENÇÃO (regra do dono) ════════
 Toda unidade (anos, %, R$, meses…) é FALADA por extenso na PRIMEIRA menção; nas menções seguintes, se o contexto já deixou claro do que se trata, pode falar só o número — sem repetir a unidade.
@@ -150,8 +251,9 @@ A pontuação existe SÓ para comandar o respiro da voz (TTS). Vírgula/ponto/re
   ✓ CERTO: quebre só onde um falante realmente respiraria PARA DAR EFEITO — ex.: "esse mesmo juro rende uma fortuna… só que pro banco."
 Use reticências (…) para SUSPENSE de efeito, não para picotar frase. A última frase de cada cena puxa a próxima.
 
-════════ INTRO (abertura disruptiva) ════════
-"intro.frase" = frase de CURIOSIDADE que para o dedo, com as palavras de ÊNFASE marcadas entre *asteriscos* (o render dá destaque nelas). Ex. (EXEMPLO de formato — NUNCA copie os valores, use os números reais de "${t.term}"): "*Você ACREDITA* que R$ 500 podem virar *R$ 3,2 MILHÕES*???".
+════════ INTRO (abertura disruptiva — SEMPRE dinâmica e adaptada ao tema) ════════
+"intro.frase" = frase de CURIOSIDADE que para o dedo, com as palavras de ÊNFASE marcadas entre *asteriscos* (o render dá destaque nelas). NÃO siga sempre o mesmo molde de frase — VARIE a construção (pergunta, desafio, afirmação chocante, contagem); NÃO abra todo vídeo com "Você acredita que…". Ex. (EXEMPLO de formato — NUNCA copie os valores NEM a construção, use os números reais de "${t.term}"): "*Você ACREDITA* que R$ 500 podem virar *R$ 3,2 MILHÕES*???".
+"intro.style" = classifique em UMA palavra o FORMATO da sua frase de intro: "pergunta", "desafio", "afirmacao" (afirmação chocante) ou "contagem". PRECISA ser DIFERENTE do estilo do vídeo mais recente (ver ANTI-REPETIÇÃO).
 "intro.counter" = { "from", "to", "prefix" } — um contador que sobe do início ao resultado (ex., EXEMPLO de formato — NUNCA copie os valores: 500 → 3200000). "from" < "to", números puros (sem pontos/símbolos), usando os números reais do termo atual.
 
 Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste formato exato:
@@ -162,6 +264,7 @@ Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste f
   "keyword": "${t.term}",
   "nextVideoTitle": "tema do próximo Short",
   "intro": {
+    "style": "pergunta",
     "frase": "*Você ACREDITA* que … *resultado-choque*???",
     "counter": { "from": 500, "to": 3200000, "prefix": "R$" }
   },
@@ -218,8 +321,8 @@ function buildCorrectiveBlock(errors, warnings) {
   return block;
 }
 
-async function generateScript(t, { retries = 4 } = {}) {
-  const basePrompt = buildPrompt(t);
+async function generateScript(t, { retries = 4, antiRep = '' } = {}) {
+  const basePrompt = buildPrompt(t, antiRep);
   let lastErr;
   let corrective = ''; // bloco corretivo acumulado da última reprovação de validação
   for (let attempt = 1; attempt <= retries; attempt++) {
@@ -254,7 +357,24 @@ async function main() {
   console.log(`🎬 Roteirista de Short — termo: ${slug}\n`);
 
   const t = readTerm(slug);
-  const { script, warnings } = await generateScript(t);
+
+  // ANTI-REPETIÇÃO (v3.5): carrega os vídeos anteriores e injeta o bloco no prompt.
+  const recent = loadRecentPublishedContext();
+  const antiRep = buildAntiRepetitionBlock(recent);
+  if (antiRep) console.log(`🚫 Anti-repetição ativa: ${recent.length} vídeo(s) anterior(es) no contexto (${recent.map(r => r.slug).join(', ')}).\n`);
+
+  const { script, warnings } = await generateScript(t, { antiRep });
+
+  // Aviso (não-erro) se o estilo de intro repetir o do vídeo mais recente. Optei
+  // por checar aqui (em vez de passar previousIntroStyle p/ validateShortScript):
+  // é a opção mais limpa — o contexto já está carregado neste escopo e mantém a
+  // assinatura de validateShortScript intocada (schema-short.js só ganhou o passo
+  // do sanitizador). O validador continua puramente estrutural, sem estado externo.
+  const prevStyle = recent[0] && recent[0].style;
+  const curStyle = script.intro && script.intro.style;
+  if (prevStyle && curStyle && String(curStyle).trim().toLowerCase() === String(prevStyle).trim().toLowerCase()) {
+    console.log(`   ⚠️ intro.style "${curStyle}" é IGUAL ao do vídeo mais recente — o ideal é variar o formato da intro (pergunta/desafio/afirmacao/contagem).`);
+  }
 
   if (!existsSync(OUTPUT_DIR)) mkdirSync(OUTPUT_DIR, { recursive: true });
   const outPath = join(OUTPUT_DIR, `${slug}.script.json`);
@@ -272,7 +392,20 @@ async function main() {
   if (args.print) console.log(`\n${JSON.stringify(script, null, 2)}`);
 }
 
-main().catch(err => {
-  console.error(`\n❌ ${err.message}`);
-  process.exit(1);
-});
+// Só executa main() quando o arquivo é o ponto de entrada (node roteiro-short.js).
+// Quando importado (ex.: pelo teste unitário do bloco anti-repetição), as funções
+// exportadas ficam disponíveis sem disparar a geração/LLM.
+const invokedDirectly = (() => {
+  try {
+    return !!process.argv[1] && realpathSync(process.argv[1]) === realpathSync(fileURLToPath(import.meta.url));
+  } catch {
+    return true;
+  }
+})();
+
+if (invokedDirectly) {
+  main().catch(err => {
+    console.error(`\n❌ ${err.message}`);
+    process.exit(1);
+  });
+}
