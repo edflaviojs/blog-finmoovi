@@ -3,10 +3,10 @@
   "term": "ações",
   "category": "basico",
   "keyword": "ações",
-  "nextVideoTitle": "Como escolher a ação certa antes que o preço dispare",
+  "nextVideoTitle": "Como a volatilidade pode transformar seu bolso",
   "intro": {
     "style": "afirmacao",
-    "frase": "*Você ACREDITA* que R$ cinquenta pode virar *R$ setenta e cinco*???",
+    "frase": "*Já pensou* que R$ 50 pode virar *R$ 75*???",
     "counter": {
       "from": 50,
       "to": 75,
@@ -17,7 +17,7 @@
     {
       "id": 1,
       "role": "hook",
-      "narration": "Ações são a parte que transforma R$ cinquenta num bilhete de ouro, imagine a ação subindo pra R$ setenta e cinco.",
+      "narration": "Ações são a chance de ter um pedacinho da empresa e lucrar com isso. Por exemplo, R$ 50.",
       "durationSec": 5,
       "shots": [
         {
@@ -25,95 +25,57 @@
           "visual": {
             "type": "statement",
             "text": "Ações",
-            "note": "Título forte"
+            "note": "texto grande"
           },
           "sfx": "boom"
         },
         {
-          "anchor": "cinquenta",
+          "anchor": "R$",
           "visual": {
             "type": "number",
             "text": "R$ 50",
-            "note": "Valor inicial"
-          },
-          "sfx": "typewriter"
-        },
-        {
-          "anchor": "setenta",
-          "visual": {
-            "type": "number",
-            "text": "R$ 75",
-            "note": "Valor final"
-          },
-          "sfx": "kaching"
+            "note": "número destacado"
+          }
         }
       ]
     },
     {
       "id": 2,
       "role": "beat",
-      "narration": "Quando você compra, vira sócio da empresa, participa dos lucros, mas também sente o risco.",
-      "durationSec": 12,
+      "narration": "Imagine comprar uma ação por R$ 50. Um ano depois, a empresa lança um sucesso e o preço sobe para R$ 75, gerando R$ 25 de lucro. É como subir numa montanha‑russa e depois descer, mas quem fica firme sai ganhando. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 13,
       "shots": [
         {
-          "anchor": "compra",
+          "anchor": "comprar",
           "visual": {
-            "type": "icon",
-            "icon": "growth",
-            "note": "Compra de ação"
-          },
-          "sfx": null
+            "type": "number",
+            "text": "R$ 50",
+            "note": "valor da compra"
+          }
         },
-        {
-          "anchor": "sócio",
-          "visual": {
-            "type": "icon",
-            "icon": "bulb",
-            "note": "Se tornar sócio"
-          },
-          "sfx": null
-        },
-        {
-          "anchor": "lucros",
-          "visual": {
-            "type": "icon",
-            "icon": "money",
-            "note": "Participar dos lucros"
-          },
-          "sfx": null
-        },
-        {
-          "anchor": "risco",
-          "visual": {
-            "type": "icon",
-            "icon": "warning",
-            "note": "Risco do investimento"
-          },
-          "sfx": "alert"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "role": "beat",
-      "narration": "É como uma montanha‑russa: sobe quando a demanda explode, desce quando tudo cai. Dinheiro sem controle é dinheiro dos outros. Abra a calculadora do FinMoovi e veja o potencial.",
-      "durationSec": 12,
-      "shots": [
         {
           "anchor": "sobe",
           "visual": {
+            "type": "number",
+            "text": "R$ 75",
+            "note": "valor após alta"
+          }
+        },
+        {
+          "anchor": "subir",
+          "visual": {
             "type": "metaphor",
             "metaphor": "montanha-russa",
-            "note": "Subida"
+            "note": "subida"
           },
           "sfx": "whoosh"
         },
         {
-          "anchor": "desce",
+          "anchor": "descer",
           "visual": {
             "type": "metaphor",
             "metaphor": "montanha-russa",
-            "note": "Descida"
+            "note": "descida"
           },
           "sfx": "slide"
         },
@@ -122,103 +84,97 @@
           "visual": {
             "type": "statement",
             "text": "Dinheiro sem controle é dinheiro dos outros.",
-            "note": "Bordão do canal"
-          },
-          "sfx": null
+            "note": "slogan"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Existem duas categorias: ações ordinárias dão voto e dividendos, já as preferenciais dão prioridade nos lucros. Ver seu mix no dashboard ajuda a controlar risco. Mas se a empresa falhar, você pode perder tudo.",
+      "durationSec": 13,
+      "shots": [
+        {
+          "anchor": "ordinárias",
+          "visual": {
+            "type": "list",
+            "text": "Ordinárias",
+            "note": "voto, dividendos"
+          }
         },
         {
-          "anchor": "dos",
+          "anchor": "preferenciais",
+          "visual": {
+            "type": "list",
+            "text": "Preferenciais",
+            "note": "prioridade, lucro"
+          }
+        },
+        {
+          "anchor": "dashboard",
           "visual": {
             "type": "app",
-            "app": "calculadora",
-            "note": "Mostra a calculadora"
+            "app": "dashboard",
+            "note": "visão de portfólio"
+          }
+        },
+        {
+          "anchor": "perder",
+          "visual": {
+            "type": "icon",
+            "icon": "warning",
+            "note": "risco de perda"
           },
-          "sfx": null
+          "sfx": "alert"
         }
       ]
     },
     {
       "id": 4,
-      "role": "beat",
-      "narration": "Ações dão dividendos, mas podem despencar. Escolha ordinárias se quiser voto, ou preferenciais se quiser prioridade nos dividendos.",
-      "durationSec": 10,
+      "role": "cta",
+      "narration": "Quer simular seu ganho? Use a calculadora do FinMoovi, é grátis e fácil. Clique no link e teste agora.",
+      "durationSec": 6,
       "shots": [
         {
-          "anchor": "dividendos",
+          "anchor": "Quer",
           "visual": {
-            "type": "icon",
-            "icon": "coins",
-            "note": "Dividendos"
-          },
-          "sfx": "ding"
+            "type": "app",
+            "app": "calculadora",
+            "note": "simulador de ganhos"
+          }
         },
         {
-          "anchor": "ordinárias",
+          "anchor": "Clique",
           "visual": {
             "type": "statement",
-            "text": "Ordinárias",
-            "note": "Direito a voto"
+            "text": "Clique no link e teste agora!",
+            "note": "chamada para ação"
           },
-          "sfx": null
-        },
-        {
-          "anchor": "preferenciais",
-          "visual": {
-            "type": "statement",
-            "text": "Preferenciais",
-            "note": "Prioridade nos dividendos"
-          },
-          "sfx": null
+          "sfx": "click"
         }
       ]
     },
     {
       "id": 5,
-      "role": "cta",
-      "narration": "Quer testar? Abra a calculadora do FinMoovi, insira R$ cinquenta e veja o potencial.",
-      "durationSec": 6,
-      "shots": [
-        {
-          "anchor": "Abra",
-          "visual": {
-            "type": "app",
-            "app": "calculadora",
-            "note": "Tela da calculadora"
-          },
-          "sfx": null
-        },
-        {
-          "anchor": "cinquenta",
-          "visual": {
-            "type": "number",
-            "text": "R$ 50",
-            "note": "Valor de exemplo"
-          },
-          "sfx": "coin"
-        }
-      ],
-      "cta": {
-        "text": "Teste agora na calculadora do FinMoovi",
-        "target": "app"
-      }
-    },
-    {
-      "id": 6,
       "role": "outro",
-      "narration": "No próximo vídeo vamos te mostrar como escolher a ação certa antes que o preço dispare. Fica ligado!",
-      "durationSec": 5,
+      "narration": "E no próximo vídeo vamos descobrir como a volatilidade pode transformar seu bolso. Não perca!",
+      "durationSec": 8,
       "shots": [
         {
           "anchor": "próximo",
           "visual": {
             "type": "statement",
-            "text": "Próximo vídeo",
-            "note": "Open loop"
-          },
-          "sfx": null
+            "text": "Próximo vídeo: volatilidade que transforma seu bolso",
+            "note": "teaser"
+          }
         }
       ]
     }
   ],
-  "totalDurationSec": 50
+  "cta": {
+    "text": "Abra a calculadora e veja seu potencial",
+    "target": "app"
+  },
+  "totalDurationSec": 45
 }
