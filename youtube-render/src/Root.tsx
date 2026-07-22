@@ -25,15 +25,31 @@ import { extrato } from './broll/extrato';
 import { balanco } from './broll/balanco';
 import { compras } from './broll/compras';
 import { smartCapture } from './broll/smartcapture';
-import roteiro from '../../src/scripts/youtube/output/juros-compostos.script.json';
+import roteiroFixture from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
 const FPS = 30;
-const script = roteiro as ShortScript;
+// Fixture versionado: fallback para Studio/preview local, quando nenhum slug
+// chega por inputProps. No pipeline, o slug é passado via --props e o roteiro
+// real é lido de public/roteiro/<slug>.json (não mais hardcoded).
+const fixtureScript = roteiroFixture as ShortScript;
+const fixtureIntroFrames = introFramesFor(fixtureScript);
 
-// Carrega o timing.json do TTS (se existir) → voz + timing real no Short.
-// Sem o arquivo (preview local sem áudio gerado), cai no timing autoral do roteiro.
-const introFrames = introFramesFor(script);
-const shortMetadata = async () => {
+type ShortProps = { slug?: string; script?: ShortScript; timing?: ShortTiming };
+
+// Resolve o roteiro: com slug (pipeline) lê o JSON de public/roteiro/<slug>.json;
+// sem slug (Studio/dev) usa o fixture importado.
+const loadScript = async (slug?: string): Promise<ShortScript> => {
+  if (!slug) return fixtureScript;
+  const res = await fetch(staticFile(`roteiro/${slug}.json`));
+  if (!res.ok) throw new Error(`roteiro não encontrado em public/roteiro/${slug}.json`);
+  return (await res.json()) as ShortScript;
+};
+
+// Carrega o roteiro (via slug ou fixture) e, se existir, o timing.json do TTS
+// (voz + timing real). Sem timing (preview local sem áudio), cai no timing autoral.
+const shortMetadata = async ({ props }: { props: ShortProps }) => {
+  const script = await loadScript(props.slug);
+  const introFrames = introFramesFor(script);
   try {
     const res = await fetch(staticFile(`audio/${script.slug}/timing.json`));
     if (!res.ok) throw new Error('sem timing');
@@ -52,11 +68,11 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Short"
         component={Short}
-        durationInFrames={totalFrames(script, FPS) + introFrames + SIGNATURE_FRAMES}
+        durationInFrames={totalFrames(fixtureScript, FPS) + fixtureIntroFrames + SIGNATURE_FRAMES}
         fps={FPS}
         width={1080}
         height={1920}
-        defaultProps={{ script, timing: null as ShortTiming }}
+        defaultProps={{ script: fixtureScript, timing: null as ShortTiming }}
         calculateMetadata={shortMetadata}
       />
       <Composition

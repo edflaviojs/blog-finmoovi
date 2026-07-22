@@ -151,6 +151,15 @@ jobs:
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: node src/scripts/youtube/srt-short.js --slug="$SLUG"
 
+      # Leva o roteiro do slug do dia para dentro do public/ do Remotion, para o
+      # render carregá-lo via staticFile(roteiro/<slug>.json). Sem isto o render
+      # cairia no fixture importado (bug do vídeo mudo/roteiro errado).
+      - name: Preparar roteiro para o Remotion (public/roteiro)
+        if: steps.resolve.outputs.skip != 'true'
+        run: |
+          mkdir -p youtube-render/public/roteiro
+          cp "src/scripts/youtube/output/$SLUG.script.json" "youtube-render/public/roteiro/$SLUG.json"
+
       - name: Instalar dependências (render)
         if: steps.resolve.outputs.skip != 'true'
         working-directory: youtube-render
@@ -159,7 +168,7 @@ jobs:
       - name: Renderizar Short
         if: steps.resolve.outputs.skip != 'true'
         working-directory: youtube-render
-        run: npx remotion render src/index.ts Short "out/$SLUG.mp4"
+        run: npx remotion render src/index.ts Short "out/$SLUG.mp4" --props="{\"slug\":\"$SLUG\"}"
 
       - name: Subir artefato (MP4 + legendas)
         if: steps.resolve.outputs.skip != 'true'

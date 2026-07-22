@@ -4,6 +4,7 @@ import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
 import { Background, Watermark, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro, SignatureOutro, computeGlobalShotSfxFires } from './scenes';
 import { BackgroundMusic } from './audio/music';
+import roteiroFixture from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
 export const TRANSITION_FRAMES = 8;
 export const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s) antes das cenas
@@ -116,7 +117,11 @@ export const totalFramesFrom = (durationsSec: number[], fps: number) => {
 export const totalFrames = (script: ShortScript, fps: number) =>
   totalFramesFrom(sceneDurationsSec(script, null), fps);
 
-export const Short: React.FC<{ script: ShortScript; timing?: ShortTiming }> = ({ script, timing = null }) => {
+// Fixture versionado: usado só como fallback quando nenhum script vem por props
+// (Studio/preview local). No pipeline, o script real chega via calculateMetadata.
+const fixtureScript = roteiroFixture as ShortScript;
+
+export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?: string }> = ({ script = fixtureScript, timing = null }) => {
   const { fps } = useVideoConfig();
   const durations = sceneDurationsSec(script, timing);
   const frames = sceneFramesFrom(durations, fps);
