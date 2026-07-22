@@ -169,7 +169,7 @@ export function longestSharedWordRun(textA, textB, minWords = 3) {
 
 // Números por extenso PROIBIDOS em texto de TELA (intro.frase, onScreenText,
 // shot.visual.text) — na narração falada pode (o TTS lê naturalmente).
-// Lista fechada pedida: unidades 1-10, dezenas 20-90 — estas SEMPRE são o
+// Lista fechada pedida: unidades 2-10, dezenas 20-90 — estas SEMPRE são o
 // próprio número por extenso ("cinquenta" nunca é outra coisa), então
 // disparam sempre. cem/cento/mil/milhão(ões)/bilhão(ões) já são o padrão
 // ACEITO do canal quando seguem um algarismo (ex.: "R$ 3,2 milhões",
@@ -177,8 +177,14 @@ export function longestSharedWordRun(textA, textB, minWords = 3) {
 // "por extenso" quando NÃO há um algarismo logo antes (ex.: "R$ mil",
 // "cem reais", sem nenhum dígito). Acento-insensível (via norm(), que já
 // tira acentos) e por fronteira de palavra (\b).
+// "um"/"uma" ficam FORA de propósito (evidência de CI 22/07): em pt-BR são
+// esmagadoramente ARTIGOS indefinidos ("em um ano", "uma ação"), não
+// numerais — incluí-los gerava falso positivo em frases perfeitamente
+// naturais. Quando "um" for de fato o número 1 por extenso, ele quase
+// sempre aparece colado a uma unidade (ex.: "R$ 1 milhão"), já coberta pela
+// regra de UNIT_SPELLED_WORDS acima.
 const ALWAYS_SPELLED_WORDS = [
-  'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez',
+  'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez',
   'vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta', 'oitenta', 'noventa',
 ];
 const UNIT_SPELLED_WORDS = ['cem', 'cento', 'mil', 'milhao', 'milhoes', 'bilhao', 'bilhoes'];
