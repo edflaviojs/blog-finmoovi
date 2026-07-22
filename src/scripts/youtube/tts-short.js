@@ -21,7 +21,7 @@
  * Uso: node --import tsx src/scripts/youtube/tts-short.js --slug=juros-compostos
  */
 
-import { synthesizeSpeech, transcribeWords, pickProvider } from './lib/tts-client.js';
+import { synthesizeSpeech, transcribeWords, pickProvider, getTtsProviders } from './lib/tts-client.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -29,6 +29,31 @@ import { fileURLToPath } from 'url';
 const OUTPUT_DIR = join(dirname(fileURLToPath(import.meta.url)), 'output');
 const AUDIO_ROOT = join(process.cwd(), 'youtube-render', 'public', 'audio');
 const TAIL_PAD = 0.35; // seg. de silêncio somados ao fim da fala p/ a cena respirar
+
+// ── Sanidade do áudio por cena (F1.5) ──
+// O edge-tts às vezes fecha o stream cedo SEM lançar erro — o buffer sai com bytes
+// suficientes p/ passar nos checks de tamanho do tts-client, mas a fala real fica
+// truncada (ex.: 0.35s p/ uma narração de 26 palavras). Isso só aparece depois, no
+// Whisper (speechEnd curto demais) — daí a validação viver aqui, não no tts-client.
+const MAX_ATTEMPTS = 4; // 1ª tentativa + 3 retries
+const RETRY_BACKOFF_MS = [1000, 3000, 6000]; // aplicado antes das tentativas 2, 3 e 4
+const SCENE_GAP_MS = 700; // espaçamento entre cenas p/ não estourar o burst-throttle do edge-tts
+const WORDS_PER_SEC_FAST = 6; // pt-BR falado rápido demais — piso generoso (folga)
+const MIN_FLOOR_SEC = 1.0; // piso absoluto, só p/ narrações com >= 4 palavras
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// Duração mínima esperada p/ não considerar o áudio "quebrado" (stub/truncado).
+// Narrações bem curtas (< 4 palavras) ficam isentas do piso de 1s — uma cena de
+// 1-2 palavras pode legitimamente durar menos que isso.
+export function minExpectedDurationSec(wordCount) {
+  const bare = wordCount / WORDS_PER_SEC_FAST;
+  return wordCount >= 4 ? Math.max(bare, MIN_FLOOR_SEC) : bare;
+}
+
+export function isAudioBroken(measuredDurationSec, wordCount) {
+  return measuredDurationSec < minExpectedDurationSec(wordCount);
+}
 
 const args = Object.fromEntries(
   process.argv.slice(2).filter((a) => a.startsWith('--')).map((a) => {
@@ -149,6 +174,9 @@ async function main() {
 
   const provider = pickProvider();
   if (!provider) throw new Error('nenhum provedor de TTS disponível');
+  // Cadeia de provedores disponíveis nesta execução (edge → piper → azure), só p/
+  // saber p/ quem "escalar" se as 3 tentativas com o provedor principal falharem.
+  const providerChain = getTtsProviders().map((p) => p.name);
   console.log(`🎙️  TTS do Short "${slug}" — ${scenes.length} cenas · provedor: ${provider}\n`);
 
   const audioDir = join(AUDIO_ROOT, slug);
@@ -162,15 +190,43 @@ async function main() {
     const narration = (scene.narration || '').trim();
     if (!narration) { console.log(`  cena ${id}: sem narração — pulada`); continue; }
 
-    // 1) voz (mesmo provedor p/ todas as cenas; grafia fonética só no áudio)
-    const { audio, ext, voice } = await synthesizeSpeech(pronounce(narration), { providerName: provider });
+    if (outScenes.length > 0) await sleep(SCENE_GAP_MS); // burst-softening entre cenas
+
+    const wordCount = narration.split(/\s+/).filter(Boolean).length;
+    const minDurationSec = minExpectedDurationSec(wordCount);
+
+    let audio, ext, voice, whisper, speechEnd, succeededAttempt;
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+      // Retry com o MESMO provedor nas tentativas 2 e 3; na última tentativa (4ª),
+      // se houver mais de um provedor na cadeia, força o próximo (edge quebrando
+      // stub repetido → tenta piper/azure em vez de insistir no mesmo defeito).
+      const idx = providerChain.indexOf(provider);
+      const forceNext = attempt === MAX_ATTEMPTS && providerChain.length > 1;
+      const providerForAttempt = forceNext ? providerChain[(idx + 1) % providerChain.length] : provider;
+
+      ({ audio, ext, voice } = await synthesizeSpeech(pronounce(narration), { providerName: providerForAttempt }));
+      whisper = await transcribeWords(audio, { ext });
+      speechEnd = whisper.length ? whisper[whisper.length - 1].end : (scene.durationSec || 3);
+
+      if (!isAudioBroken(speechEnd, wordCount)) {
+        succeededAttempt = attempt;
+        break;
+      }
+
+      console.log(`  ⚠ cena ${id}: áudio suspeito (${speechEnd.toFixed(2)}s p/ ${wordCount} palavras, mínimo ${minDurationSec.toFixed(2)}s) — tentativa ${attempt}/${MAX_ATTEMPTS}`);
+
+      if (attempt === MAX_ATTEMPTS) {
+        throw new Error(`cena ${id}: áudio do TTS veio quebrado (${speechEnd.toFixed(2)}s para ${wordCount} palavras) após 3 tentativas`);
+      }
+      await sleep(RETRY_BACKOFF_MS[attempt - 1]);
+    }
+
+    // áudio validado — persiste + segue p/ alinhamento
     voiceUsed = voice;
     const audioName = `scene-${id}.${ext}`;
     writeFileSync(join(audioDir, audioName), audio);
 
     // 2) timestamps reais + 3) alinhamento com o roteiro
-    const whisper = await transcribeWords(audio, { ext });
-    const speechEnd = whisper.length ? whisper[whisper.length - 1].end : (scene.durationSec || 3);
     const durationSec = +(speechEnd + TAIL_PAD).toFixed(3);
     const words = alignWords(narration, whisper, speechEnd);
 
@@ -182,7 +238,8 @@ async function main() {
       durationSec,
       words,
     });
-    console.log(`  ✓ cena ${id} [${scene.role || '-'}] — ${durationSec}s · ${words.length} palavras (${whisper.length} do Whisper)`);
+    const retrySuffix = succeededAttempt > 1 ? ` (${succeededAttempt}ª tentativa)` : '';
+    console.log(`  ✓ cena ${id} [${scene.role || '-'}] — ${durationSec}s · ${words.length} palavras (${whisper.length} do Whisper)${retrySuffix}`);
   }
 
   const totalDurationSec = +outScenes.reduce((a, s) => a + s.durationSec, 0).toFixed(3);
