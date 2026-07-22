@@ -501,6 +501,25 @@ export function sanitizeScript(script) {
         }
       }
 
+      // 2b. anchor de UMA "palavra" mas com hífen/underscore (ex.: o LLM usou o
+      // NOME DO CATÁLOGO da metáfora/ícone, tipo "bola-neve", em vez da palavra
+      // falada "bola") e não aparece como está na narração → tenta cada segmento
+      if (typeof shot.anchor === 'string' && shot.anchor.trim() &&
+          !narr.includes(norm(shot.anchor.trim())) && /[-_]/.test(shot.anchor)) {
+        const segments = shot.anchor.trim().split(/[-_]+/).filter(Boolean);
+        if (segments.length > 1) {
+          const first = segments[0];
+          const last = segments[segments.length - 1];
+          let pick = null;
+          if (first.length >= 3 && narr.includes(norm(first))) pick = first;
+          else if (last.length >= 3 && narr.includes(norm(last))) pick = last;
+          if (pick) {
+            log(`${stag}: anchor "${shot.anchor}" (nome de catálogo com hífen) não está na narração → "${pick}" (segmento que aparece na narração)`);
+            shot.anchor = pick;
+          }
+        }
+      }
+
       // 3. icon fora do catálogo → mapa reverso, senão 'question'
       const v = shot.visual;
       if (v && typeof v === 'object' && v.type === 'icon' && v.icon != null && !ICONS.includes(v.icon)) {

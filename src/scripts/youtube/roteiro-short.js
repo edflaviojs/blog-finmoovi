@@ -102,6 +102,7 @@ REGRA C — METÁFORAS LITERAIS (o dono AMA): quando a narração usar uma metá
   · "é aqui que a maioria escorrega" → metaphor "escorregao", sfx "slide" (pode ser CÔMICO — o dono curte o humor no escorregão).
   · sempre que a narração mandar CLICAR/TOCAR no link (tipicamente na CTA): metaphor "clique-link" (uma mãozinha/cursor percorre a tela, acha o botão do link e CLICA), sfx "click", na âncora onde isso é dito.
   PREFIRA usar na narração metáforas que existem no catálogo (${METAPHORS.join(', ')}); se usar outra, represente com um shot "icon" coerente.
+  ⚠️ A "anchor" NUNCA é o nome da metáfora/ícone do catálogo — é SEMPRE uma palavra FALADA de verdade na narração (ex.: metaphor "bola-neve" → anchor "bola", NUNCA "bola-neve"; metaphor "escorregao" → anchor "escorrega", NUNCA "escorregao").
 
 REGRA D — SFX: TEMPERO, NÃO METRÔNOMO (feedback do dono 22/07 depois de assistir o vídeo v3.3: "ainda tem som repetindo demais... cansativo" — aperte MAIS que na versão anterior). Regras de variedade sonora:
   · REGRA DE OURO (v3.4): o IDEAL é CADA SOM aparecer só 1 VEZ no vídeo inteiro. NO MÁXIMO 1 som do vídeo todo pode repetir (2-3×, bem espaçado) — todos os OUTROS sons usados aparecem 1 única vez. O candidato natural pro som que repete é "kaching" (o som do dinheiro); os demais sons usados (whoosh, avalanche, slide, click, ding, thud, sparkle, boom, alert, coin, typewriter, keyboard, pop) aparecem 1× cada.
