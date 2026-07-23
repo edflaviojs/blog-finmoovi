@@ -61,6 +61,3 @@ Para empezar a declarar y pagar el impuesto de renda, es importante tener un reg
 ## Empieza hoy
 No espere más para empezar a declarar y pagar el impuesto de renda. Con un poco de [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) y organización, puede reducir la cantidad de impuesto que se debe pagar y aprovechar las deducciones y gastos que se pueden hacer. Recuerde que el impuesto de renda es una obligación legal, pero también es una oportunidad para contribuir a la sociedad y financiar servicios públicos y programas sociales. ¡Empiece hoy a tomar control de sus finanzas y a declarar y pagar el impuesto de renda de manera efectiva!
 
----
-
-*Este término fue generado automáticamente por IA con imágenes explicativas. ¿Quieres sugerir una mejora? [Comenta aquí](https://finmoovi.com/contato).*

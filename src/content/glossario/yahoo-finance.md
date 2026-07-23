@@ -88,6 +88,3 @@ Com esses passos, você transforma o Yahoo Finance em uma extensão do seu [pl
 
 Não espere a próxima reunião de família ou o fim do mês para colocar o conhecimento em prática. Abra o Yahoo Finance agora, configure seu primeiro alerta e dê o primeiro passo rumo a uma carteira mais informada e rentável. Seu futuro financeiro agradece!
 
----
-
-*Este termo foi gerado automaticamente pela IA com imagens explicativas. Quer sugerir uma melhoria? [Comente aqui](https://finmoovi.com/contato).*

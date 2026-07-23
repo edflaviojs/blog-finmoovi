@@ -84,6 +84,3 @@ Dar o primeiro passo pode parecer complicado, mas basta seguir alguns passos sim
 
 Não espere o próximo salário para colocar seu dinheiro para trabalhar. Escolha um objetivo, abra seu app de investimento e faça a primeira aplicação ainda hoje. Cada real investido agora é um passo a mais rumo à liberdade financeira que você merece.
 
----
-
-*Este termo foi gerado automaticamente pela IA com imagens explicativas. Quer sugerir uma melhoria? [Comente aqui](https://finmoovi.com/contato).*

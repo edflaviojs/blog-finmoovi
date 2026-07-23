@@ -80,6 +80,3 @@ Se você ainda não tem uma conta poupança, siga estes passos simples para colo
 
 Não espere a próxima folha de pagamento para dar o primeiro passo. Abra sua conta, defina um valor e veja seu dinheiro crescer, ainda que devagar. Cada centavo guardado é um passo a mais rumo à tranquilidade financeira. Vamos nessa?
 
----
-
-*Este termo foi gerado automaticamente pela IA com imagens explicativas. Quer sugerir uma melhoria? [Comente aqui](https://finmoovi.com/contato).*

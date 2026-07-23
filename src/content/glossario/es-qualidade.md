@@ -88,6 +88,3 @@ Con estos pasos tendrás una base sólida para construir una cartera que protege
 
 No esperes a que el próximo mes pase sin mover tu dinero. Con una pequeña acción—como abrir una cuenta en la app que ya usas para tus gastos diarios—puedes comenzar a invertir en activos de calidad y sentir la diferencia en tu futuro financiero. ¡Vamos, que tu próximo R$ 1.000 de ahorro ya está listo para trabajar por ti!
 
----
-
-*Este término fue generado automáticamente por IA con imágenes explicativas. ¿Quieres sugerir una mejora? [Comenta aquí](https://finmoovi.com/contato).*

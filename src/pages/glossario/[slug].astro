@@ -5,7 +5,9 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import CTAVariado from '@components/glossario/CTAVariado.astro';
 import Sidebar from '@components/sidebar/Sidebar.astro';
+import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
 import { getCollection } from 'astro:content';
+import { config } from '../../../site.config';
 
 export async function getStaticPaths() {
   const glossario = await getCollection('glossario', ({ data }) => data.locale === 'pt');
@@ -43,6 +45,27 @@ const faqSchema = {
     }
   }]
 };
+
+const definedTermSchema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": term.data.term,
+  "description": term.data.definition,
+  "url": `${config.siteUrl}/glossario/${term.slug}`,
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": `Glossário Financeiro ${config.brand.name}`,
+    "url": `${config.siteUrl}/glossario/`
+  }
+};
+
+// Espelha o breadcrumb visual (linhas abaixo) em JSON-LD, reusando o mesmo
+// componente dos posts (PostLayout)
+const schemaBreadcrumbItems = [
+  { name: 'Início', url: '/' },
+  { name: 'Glossário', url: '/glossario' },
+  { name: term.data.term, url: `/glossario/${term.slug}` },
+];
 ---
 
 <BaseLayout
@@ -51,6 +74,7 @@ const faqSchema = {
   keywords={[term.data.term.toLowerCase(), `o que é ${term.data.term.toLowerCase()}`, 'glossário financeiro', 'educação financeira']}
   alternates={alternates}
 >
+  <SchemaBreadcrumb items={schemaBreadcrumbItems} />
   <Header />
 
   <main class="glossario-post">
@@ -117,6 +141,7 @@ const faqSchema = {
   <Footer />
 
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(definedTermSchema)} />
 </BaseLayout>
 
 <style>

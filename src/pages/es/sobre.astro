@@ -75,6 +75,12 @@ const blogTitle = `${brand} ${config.brand.blogSuffix}`;
         </section>
 
         <section class="sobre-section">
+          <h2>{t(lang, 'sobre.editorial')}</h2>
+          <p>{t(lang, 'sobre.editorial.p1')}</p>
+          <p>{t(lang, 'sobre.editorial.p2')} <a href={`${config.app.url}/contato`} class="sobre-link">{t(lang, 'sobre.editorial.p2.link')}</a>.</p>
+        </section>
+
+        <section class="sobre-section">
           <h2>{t(lang, 'sobre.contato')}</h2>
           <p>{t(lang, 'sobre.contato.p1')} <a href="mailto:${config.email.replyTo}" class="sobre-link">${config.email.replyTo}</a>.</p>
           <p>{t(lang, 'sobre.contato.p2')}</p>

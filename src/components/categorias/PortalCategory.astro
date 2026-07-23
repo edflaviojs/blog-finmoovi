@@ -19,8 +19,7 @@ interface Props {
 }
 const { locale, category, posts, alternates } = Astro.props;
 
-// Nomes completos por idioma. Os de PT são os MESMOS títulos que a página
-// antiga usava — preserva <title>/description já indexados (SEO).
+// Nomes completos por idioma (viram o <h1> da página).
 const FULL_LABEL: Record<Locale, Record<string, string>> = {
   pt: { dicas: 'Dicas Financeiras', orcamento: 'Orçamento', investimentos: 'Investimentos', cotacoes: 'Cotações & Mercado', ferramentas: 'Ferramentas', glossario: 'Glossário' },
   en: { dicas: 'Financial Tips', orcamento: 'Budget', investimentos: 'Investments', cotacoes: 'Quotes & Market', ferramentas: 'Tools', glossario: 'Glossary' },
@@ -28,22 +27,79 @@ const FULL_LABEL: Record<Locale, Record<string, string>> = {
 };
 const categoryName = FULL_LABEL[locale][category] || category;
 
+// <title> descritivo com intenção de busca por categoria (raw ~35-48 chars —
+// o BaseLayout anexa " | FinMoovi Blog"). Categoria nova cai no fallback antigo.
+const CAT_TITLE: Record<Locale, Record<string, string>> = {
+  pt: {
+    orcamento: 'Orçamento Pessoal: como organizar seu dinheiro',
+    investimentos: 'Investimentos para Iniciantes: guias práticos',
+    dicas: 'Dicas de Finanças Pessoais para o Dia a Dia',
+    ferramentas: 'Ferramentas e Calculadoras Financeiras Grátis',
+    cotacoes: 'Cotações e Resumo Semanal do Mercado',
+    glossario: 'Glossário Financeiro: termos explicados de A a Z',
+  },
+  en: {
+    orcamento: 'Personal Budgeting: How to Organize Your Money',
+    investimentos: 'Investing for Beginners: Practical Guides',
+    dicas: 'Personal Finance Tips for Everyday Life',
+    ferramentas: 'Free Financial Tools and Calculators',
+    cotacoes: 'Currency Quotes and Weekly Market Recap',
+    glossario: 'Financial Glossary: Terms Explained from A to Z',
+  },
+  es: {
+    orcamento: 'Presupuesto Personal: cómo organizar tu dinero',
+    investimentos: 'Inversiones para Principiantes: guías prácticas',
+    dicas: 'Consejos de Finanzas Personales para el Día a Día',
+    ferramentas: 'Herramientas y Calculadoras Financieras Gratis',
+    cotacoes: 'Cotizaciones y Resumen Semanal del Mercado',
+    glossario: 'Glosario Financiero: términos de la A a la Z',
+  },
+};
+
+// Meta description no mesmo espírito (específica por categoria, com fallback)
+const CAT_DESC: Record<Locale, Record<string, string>> = {
+  pt: {
+    orcamento: 'Guias de orçamento pessoal e planejamento financeiro: aprenda a organizar salário, contas e metas com métodos simples.',
+    investimentos: 'Guias de investimentos para iniciantes: renda fixa, fundos, ações e como começar a investir com segurança.',
+    dicas: 'Dicas práticas de finanças pessoais: como economizar, sair das dívidas e cuidar melhor do seu dinheiro no dia a dia.',
+    ferramentas: 'Calculadoras e ferramentas financeiras gratuitas: juros compostos, financiamento, aposentadoria, conversor de moedas e mais.',
+    cotacoes: 'Cotações de moedas e resumo semanal do mercado financeiro, com análises acessíveis para quem está começando.',
+    glossario: 'Termos financeiros explicados de forma simples, de A a Z, sem complicação.',
+  },
+  en: {
+    orcamento: 'Personal budgeting guides: learn how to organize your salary, bills and goals with simple methods.',
+    investimentos: 'Investing guides for beginners: fixed income, funds, stocks and how to start investing safely.',
+    dicas: 'Practical personal finance tips: how to save money, get out of debt and manage your money day to day.',
+    ferramentas: 'Free financial tools and calculators: compound interest, loans, retirement, currency converter and more.',
+    cotacoes: 'Currency quotes and a weekly market recap, with analysis anyone can follow.',
+    glossario: 'Financial terms explained in plain language, from A to Z.',
+  },
+  es: {
+    orcamento: 'Guías de presupuesto personal: aprende a organizar tu salario, cuentas y metas con métodos simples.',
+    investimentos: 'Guías de inversión para principiantes: renta fija, fondos, acciones y cómo empezar a invertir con seguridad.',
+    dicas: 'Consejos prácticos de finanzas personales: cómo ahorrar, salir de deudas y cuidar tu dinero en el día a día.',
+    ferramentas: 'Herramientas y calculadoras financieras gratuitas: interés compuesto, préstamos, jubilación, conversor de divisas y más.',
+    cotacoes: 'Cotizaciones de divisas y resumen semanal del mercado, con análisis accesibles.',
+    glossario: 'Términos financieros explicados de forma simple, de la A a la Z.',
+  },
+};
+
 const T = {
   pt: {
-    title: `${categoryName} - Artigos e Dicas`,
-    desc: `Todos os artigos sobre ${categoryName.toLowerCase()}. Dicas práticas e educação financeira.`,
+    title: CAT_TITLE.pt[category] || `${categoryName} - Artigos e Dicas`,
+    desc: CAT_DESC.pt[category] || `Todos os artigos sobre ${categoryName.toLowerCase()}. Dicas práticas e educação financeira.`,
     artigo: 'artigo', artigos: 'artigos', mais: 'Mais artigos', minLeitura: 'min de leitura',
     verTodos: (n: number) => `Ver todos os ${n} artigos`,
   },
   en: {
-    title: `${categoryName} - Articles and Tips`,
-    desc: `All articles about ${categoryName.toLowerCase()}. Practical tips and financial education.`,
+    title: CAT_TITLE.en[category] || `${categoryName} - Articles and Tips`,
+    desc: CAT_DESC.en[category] || `All articles about ${categoryName.toLowerCase()}. Practical tips and financial education.`,
     artigo: 'article', artigos: 'articles', mais: 'More articles', minLeitura: 'min read',
     verTodos: (n: number) => `See all ${n} articles`,
   },
   es: {
-    title: `${categoryName} - Artículos y Consejos`,
-    desc: `Todos los artículos sobre ${categoryName.toLowerCase()}. Consejos prácticos y educación financiera.`,
+    title: CAT_TITLE.es[category] || `${categoryName} - Artículos y Consejos`,
+    desc: CAT_DESC.es[category] || `Todos los artículos sobre ${categoryName.toLowerCase()}. Consejos prácticos y educación financiera.`,
     artigo: 'artículo', artigos: 'artículos', mais: 'Más artículos', minLeitura: 'min de lectura',
     verTodos: (n: number) => `Ver todos los ${n} artículos`,
   },

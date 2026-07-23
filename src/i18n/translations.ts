@@ -116,6 +116,10 @@ export const translations: Record<Lang, Record<string, string>> = {
     'sobre.contato': 'Contato',
     'sobre.contato.p1': 'Tem sugestões de conteúdo, encontrou algum erro ou quer colaborar? Entre em contato pelo email',
     'sobre.contato.p2': `Siga o ${brand} nas redes sociais para mais dicas rápidas:`,
+    'sobre.editorial': 'Política editorial',
+    'sobre.editorial.p1': 'Os artigos e os termos do glossário são produzidos com apoio de inteligência artificial e passam por curadoria e por sistemas automáticos de verificação, que revisam informações, links e datas antes e depois da publicação.',
+    'sobre.editorial.p2': 'Encontrou um erro ou algo desatualizado? Avise pela nossa',
+    'sobre.editorial.p2.link': 'página de contato',
   },
 
   en: {
@@ -223,6 +227,10 @@ export const translations: Record<Lang, Record<string, string>> = {
     'sobre.contato': 'Contact',
     'sobre.contato.p1': 'Have content suggestions, found an error or want to collaborate? Get in touch at',
     'sobre.contato.p2': `Follow ${brand} on social media for more quick tips:`,
+    'sobre.editorial': 'Editorial policy',
+    'sobre.editorial.p1': 'Articles and glossary terms are produced with the support of artificial intelligence and go through curation and automated checks that review facts, links and dates before and after publication.',
+    'sobre.editorial.p2': 'Found an error or something outdated? Let us know through our',
+    'sobre.editorial.p2.link': 'contact page',
   },
 
   es: {
@@ -330,6 +338,10 @@ export const translations: Record<Lang, Record<string, string>> = {
     'sobre.contato': 'Contacto',
     'sobre.contato.p1': '¿Tienes sugerencias de contenido, encontraste un error o quieres colaborar? Contáctanos por email',
     'sobre.contato.p2': `Sigue a ${brand} en redes sociales para más consejos rápidos:`,
+    'sobre.editorial': 'Política editorial',
+    'sobre.editorial.p1': 'Los artículos y los términos del glosario se producen con apoyo de inteligencia artificial y pasan por curaduría y por sistemas automáticos de verificación que revisan datos, enlaces y fechas antes y después de la publicación.',
+    'sobre.editorial.p2': '¿Encontraste un error o algo desactualizado? Avísanos a través de nuestra',
+    'sobre.editorial.p2.link': 'página de contacto',
   },
 };
 
