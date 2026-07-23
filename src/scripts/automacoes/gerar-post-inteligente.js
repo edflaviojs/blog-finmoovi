@@ -8,6 +8,7 @@ import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
+import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -165,7 +166,7 @@ ${avoidBlock}
 Escreva um artigo completo e profissional sobre: "${topic}"
 
 REGRAS:
-- Título criativo e otimizado para SEO (máximo 65 caracteres)
+- Título criativo e otimizado para SEO (máximo 65 caracteres; se mencionar ano, use ${CURRENT_YEAR})
 - Meta description (máximo 155 caracteres)
 - Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário", "Férias baratas? O truque é este")
 - 5-7 keywords relevantes separadas por vírgula
@@ -181,7 +182,7 @@ REGRAS:
 
 Responda EXATAMENTE neste formato:
 ---TITULO---
-[título aqui]
+[título aqui — se mencionar ano, use ${CURRENT_YEAR}]
 ---META---
 [meta description]
 ---HEADLINE---
@@ -389,6 +390,10 @@ async function main() {
   if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
   post.content = fg.cleaned;
 
+  // Year-guard: corrige ano defasado no título antes do slug.
+  const yg = fixStaleYear(post.title);
+  if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); post.title = yg.text; }
+
   const slug = slugify(post.title);
   console.log(`  Título: ${post.title}`);
 
@@ -407,6 +412,8 @@ async function main() {
   if (config.locales.includes('en')) {
     console.log('🇺🇸 Traduzindo para inglês...');
     const enPost = await translatePost(post, 'en');
+    const ygEn = fixStaleYear(enPost.title);
+    if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); enPost.title = ygEn.text; }
     savePost(enPost, slug, 'en', imagePath);
   }
 
@@ -414,6 +421,8 @@ async function main() {
   if (config.locales.includes('es')) {
     console.log('🇪🇸 Traduzindo para espanhol...');
     const esPost = await translatePost(post, 'es');
+    const ygEs = fixStaleYear(esPost.title);
+    if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); esPost.title = ygEs.text; }
     savePost(esPost, slug, 'es', imagePath);
   }
 

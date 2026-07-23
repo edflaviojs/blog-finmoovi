@@ -2,6 +2,7 @@ import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
+import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -10,27 +11,27 @@ const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 
 const TOPICS = [
-  { type: 'alternativas', title: '5 Alternativas ao Mobills em 2026', keywords: ['alternativa mobills', 'app controle financeiro', 'substituir mobills', 'melhor que mobills'] },
-  { type: 'alternativas', title: '5 Alternativas ao Organizze em 2026', keywords: ['alternativa organizze', 'app finanças pessoais', 'organizze alternativa', 'app como organizze'] },
-  { type: 'alternativas', title: '5 Alternativas ao GuiaBolso em 2026', keywords: ['alternativa guiabolso', 'app orçamento', 'guiabolso alternativa', 'substituir guiabolso'] },
+  { type: 'alternativas', title: `5 Alternativas ao Mobills em ${CURRENT_YEAR}`, keywords: ['alternativa mobills', 'app controle financeiro', 'substituir mobills', 'melhor que mobills'] },
+  { type: 'alternativas', title: `5 Alternativas ao Organizze em ${CURRENT_YEAR}`, keywords: ['alternativa organizze', 'app finanças pessoais', 'organizze alternativa', 'app como organizze'] },
+  { type: 'alternativas', title: `5 Alternativas ao GuiaBolso em ${CURRENT_YEAR}`, keywords: ['alternativa guiabolso', 'app orçamento', 'guiabolso alternativa', 'substituir guiabolso'] },
   { type: 'alternativas', title: '7 Alternativas à Planilha Google para Finanças', keywords: ['alternativa planilha google', 'controle gastos sem planilha', 'app financeiro vs planilha'] },
   { type: 'alternativas', title: '5 Alternativas ao Minhas Economias', keywords: ['alternativa minhas economias', 'app controle gastos grátis', 'minhas economias alternativa'] },
-  { type: 'melhores', title: '7 Melhores Apps de Controle Financeiro 2026', keywords: ['melhor app finanças', 'app controle gastos', 'app financeiro 2026', 'melhor app financeiro'] },
+  { type: 'melhores', title: `7 Melhores Apps de Controle Financeiro ${CURRENT_YEAR}`, keywords: ['melhor app finanças', 'app controle gastos', 'app financeiro 2026', 'melhor app financeiro'] },
   { type: 'melhores', title: '5 Melhores Apps para Orçamento Familiar', keywords: ['app orçamento familiar', 'controle gastos família', 'app financeiro família'] },
   { type: 'melhores', title: '6 Melhores Apps Financeiros para Freelancers', keywords: ['app financeiro freelancer', 'controle gastos autônomo', 'app finanças pj'] },
   { type: 'melhores', title: '5 Melhores Apps Financeiros que Funcionam Offline', keywords: ['app financeiro offline', 'controle gastos sem internet', 'app offline seguro'] },
   { type: 'melhores', title: '7 Melhores Apps com Controle por Voz', keywords: ['app financeiro por voz', 'smart capture finanças', 'registrar gastos voz'] },
-  { type: 'comparacao', title: 'FinMoovi vs Organizze: Qual o Melhor em 2026?', keywords: ['finmoovi vs organizze', 'comparação app financeiro', 'organizze ou finmoovi'] },
+  { type: 'comparacao', title: `FinMoovi vs Organizze: Qual o Melhor em ${CURRENT_YEAR}?`, keywords: ['finmoovi vs organizze', 'comparação app financeiro', 'organizze ou finmoovi'] },
   { type: 'comparacao', title: 'FinMoovi vs Mobills: Qual Escolher?', keywords: ['finmoovi vs mobills', 'melhor app controle gastos', 'mobills ou finmoovi'] },
   { type: 'comparacao', title: 'FinMoovi vs GuiaBolso: Diferenças Completas', keywords: ['finmoovi vs guiabolso', 'app finanças comparação', 'guiabolso ou finmoovi'] },
   { type: 'comparacao', title: 'FinMoovi vs Minhas Economias: Qual Vale Mais?', keywords: ['finmoovi vs minhas economias', 'app controle dinheiro', 'minhas economias ou finmoovi'] },
   { type: 'comparacao', title: 'Planilha vs App Financeiro: Qual é Melhor para Você?', keywords: ['planilha vs app financeiro', 'controle gastos planilha ou app', 'excel ou app'] },
   { type: 'feature', title: 'Como Controlar Gastos em Várias Moedas com um App', keywords: ['app multi moeda', 'controle dólar euro real', 'gastos moeda estrangeira'] },
   { type: 'feature', title: 'Smart Capture: Registre Gastos por Voz em Segundos', keywords: ['controle gastos voz', 'app financeiro por voz', 'registrar despesa voz'] },
-  { type: 'feature', title: 'App Financeiro Offline: Por Que Importa em 2026', keywords: ['app offline seguro', 'privacidade dados financeiros', 'app sem internet'] },
+  { type: 'feature', title: `App Financeiro Offline: Por Que Importa em ${CURRENT_YEAR}`, keywords: ['app offline seguro', 'privacidade dados financeiros', 'app sem internet'] },
   { type: 'feature', title: 'Categorização Automática de Gastos com IA', keywords: ['categorizar gastos automático', 'ia finanças pessoais', 'app inteligente gastos'] },
   { type: 'feature', title: 'OCR para Notas Fiscais: Digitalize Recibos em 1 Toque', keywords: ['ocr nota fiscal', 'escanear recibo app', 'digitalizar nota fiscal'] },
-  { type: 'planilha_vs_app', title: 'Por Que Trocar a Planilha por um App em 2026', keywords: ['substituir planilha', 'app melhor que excel', 'trocar planilha app'] },
+  { type: 'planilha_vs_app', title: `Por Que Trocar a Planilha por um App em ${CURRENT_YEAR}`, keywords: ['substituir planilha', 'app melhor que excel', 'trocar planilha app'] },
   { type: 'planilha_vs_app', title: '5 Sinais de Que Você Precisa de um App Financeiro', keywords: ['quando usar app finanças', 'planilha não funciona', 'preciso app financeiro'] },
   { type: 'planilha_vs_app', title: 'Excel vs Apps de Finanças: Prós e Contras', keywords: ['excel finanças pessoais', 'excel vs app financeiro', 'planilha excel gastos'] },
   { type: 'planilha_vs_app', title: 'Como Migrar da Planilha para um App Financeiro', keywords: ['migrar planilha app', 'começar usar app finanças', 'sair da planilha'] },
@@ -362,6 +363,10 @@ async function main() {
     if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
     content = fg.cleaned;
 
+    // Year-guard: corrige ano defasado no título antes do slug.
+    const yg = fixStaleYear(title);
+    if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); title = yg.text; }
+
     const allKeywords = [...new Set([...keywords, ...topic.keywords])];
     const slugPt = createSlug(title);
 
@@ -375,6 +380,8 @@ async function main() {
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 EN...');
       const en = await translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'en');
+      const ygEn = fixStaleYear(en.title);
+      if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); en.title = ygEn.text; }
       savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
     }
 
@@ -382,6 +389,8 @@ async function main() {
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 ES...');
       const es = await translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'es');
+      const ygEs = fixStaleYear(es.title);
+      if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); es.title = ygEs.text; }
       savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
     }
 

@@ -9,6 +9,7 @@ import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
+import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -204,7 +205,7 @@ ${avoidBlock}
 Escreva um post de blog em português brasileiro sobre: ${topic.topic}
 
 REGRAS:
-1. Título atrativo com número ou pergunta (SEO-friendly)
+1. Título atrativo com número ou pergunta (SEO-friendly); se mencionar ano, use ${CURRENT_YEAR}
 2. Tom prático e acessível, como um amigo dando dicas
 3. Mínimo 900 palavras, máximo 1500
 4. Use ## para subtítulos (mínimo 5 subtítulos)
@@ -217,7 +218,7 @@ REGRAS:
 
 Responda neste formato:
 ---TITULO---
-[título]
+[título — se mencionar ano, use ${CURRENT_YEAR}]
 ---META---
 [meta description, max 155 chars]
 ---HEADLINE---
@@ -266,6 +267,10 @@ Responda neste formato:
     if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
     content = fg.cleaned;
 
+    // Year-guard: corrige ano defasado no título antes do slug.
+    const yg = fixStaleYear(title);
+    if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); title = yg.text; }
+
     const allKeywords = [...new Set([...keywords, ...topic.keywords])];
     const slugPt = createSlug(title);
 
@@ -281,6 +286,8 @@ Responda neste formato:
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 Traduzindo EN...');
       const enPost = await translatePost({ title, meta, headline, keywords: allKeywords, content: processedContent }, 'en');
+      const ygEn = fixStaleYear(enPost.title);
+      if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); enPost.title = ygEn.text; }
       savePost(`en-${slugPt}`, { ...enPost, keywords: enPost.keywords, content: enPost.content, imagePath, locale: 'en', today, translationKey: slugPt });
     }
 
@@ -289,6 +296,8 @@ Responda neste formato:
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 Traduzindo ES...');
       const esPost = await translatePost({ title, meta, headline, keywords: allKeywords, content: processedContent }, 'es');
+      const ygEs = fixStaleYear(esPost.title);
+      if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); esPost.title = ygEs.text; }
       savePost(`es-${slugPt}`, { ...esPost, keywords: esPost.keywords, content: esPost.content, imagePath, locale: 'es', today, translationKey: slugPt });
     }
 

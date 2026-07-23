@@ -1,6 +1,6 @@
 ---
-title: "Inversiones para el segundo semestre: estrategias prácticas para 2024"
-description: "Descubre estrategias prácticas para invertir en el segundo semestre de 2024, con ejemplos reales y pasos sencillos para armar una cartera segura y con potencial de crecimiento."
+title: "Inversiones para el segundo semestre: estrategias prácticas para 2026"
+description: "Descubre estrategias prácticas para invertir en el segundo semestre de 2026, con ejemplos reales y pasos sencillos para armar una cartera segura y con potencial de crecimiento."
 tickerHeadline: "Tu plan de inversión para la recta final"
 image: "/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p.webp"
 category: "dicas"
@@ -19,8 +19,8 @@ featured: false
 draft: false
 translate: true
 seo:
-  metaTitle: "Inversiones para el segundo semestre: estrategias prácticas para 2024"
-  metaDescription: "Descubre estrategias prácticas para invertir en el segundo semestre de 2024, con ejemplos reales y pasos sencillos para armar una cartera segura y con potencial de crecimiento."
+  metaTitle: "Inversiones para el segundo semestre: estrategias prácticas para 2026"
+  metaDescription: "Descubre estrategias prácticas para invertir en el segundo semestre de 2026, con ejemplos reales y pasos sencillos para armar una cartera segura y con potencial de crecimiento."
   keywords: ["inversiones","segundo semestre","estrategias prácticas","2024","cartera","seguridad","crecimiento"]
 ---
 

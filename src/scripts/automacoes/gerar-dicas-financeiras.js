@@ -8,6 +8,7 @@ import { config } from '../../../site.config.ts';
 import { generateBlogPost, generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
+import { fixStaleYear } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -281,6 +282,10 @@ async function main() {
     if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
     post.content = fg.cleaned;
 
+    // Year-guard: corrige ano defasado no título antes do slug.
+    const yg = fixStaleYear(post.title);
+    if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); post.title = yg.text; }
+
     console.log(`✅ Post PT gerado: ${post.title}`);
 
     const slugPt = createSlug(post.title);
@@ -329,6 +334,9 @@ async function main() {
         processedContent: processedContentPt,
       }, 'en');
 
+      const ygEn = fixStaleYear(enPost.title);
+      if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); enPost.title = ygEn.text; }
+
       const slugEn = 'en-' + createSlug(enPost.title);
       const enPath = savePost(slugEn, {
         title: enPost.title,
@@ -356,6 +364,9 @@ async function main() {
         keywords: post.keywords,
         processedContent: processedContentPt,
       }, 'es');
+
+      const ygEs = fixStaleYear(esPost.title);
+      if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); esPost.title = ygEs.text; }
 
       const slugEs = 'es-' + createSlug(esPost.title);
       const esPath = savePost(slugEs, {

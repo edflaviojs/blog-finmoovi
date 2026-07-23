@@ -1,5 +1,5 @@
 ---
-title: "Técnica de los Sobres Digitales: Guía Práctica para 2024"
+title: "Técnica de los Sobres Digitales: Guía Práctica para 2026"
 description: "Aprende a usar la técnica de los sobres digitales para controlar gastos, montar presupuesto y ahorrar, incluso con un salario de R$2.000 a R$8.000. Paso a paso sencillo."
 tickerHeadline: "Domina tus gastos en 3 pasos"
 image: "/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024.webp"
@@ -12,7 +12,7 @@ readingTime: 4
 featured: false
 translationKey: "tecnica-dos-envelopes-digitais-guia-pratico-para-2024"
 seo:
-  metaTitle: "Técnica de los Sobres Digitales: Guía Práctica para 2024"
+  metaTitle: "Técnica de los Sobres Digitales: Guía Práctica para 2026"
   metaDescription: "Aprende a usar la técnica de los sobres digitales para controlar gastos, montar presupuesto y ahorrar, incluso con un salario de R$2.000 a R$8.000. Paso a paso sencillo."
   keywords: ["sobres digitales","control de gastos","presupuesto personal","finanzas prácticas","aplicaciones financieras","método sobres","control gastos categorías"]
 ---

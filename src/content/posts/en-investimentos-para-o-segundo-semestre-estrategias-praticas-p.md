@@ -1,6 +1,6 @@
 ---
-title: "Investments for the Second Half: Practical Strategies for 2024"
-description: "A step‑by‑step guide to building a balanced portfolio for the second half of 2024, with real‑life Brazilian examples and easy‑to‑apply tips."
+title: "Investments for the Second Half: Practical Strategies for 2026"
+description: "A step‑by‑step guide to building a balanced portfolio for the second half of 2026, with real‑life Brazilian examples and easy‑to‑apply tips."
 tickerHeadline: "Your investment plan for the final stret"
 image: "/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p.webp"
 category: "dicas"
@@ -19,8 +19,8 @@ featured: false
 draft: false
 translate: true
 seo:
-  metaTitle: "Investments for the Second Half: Practical Strategies for 2024"
-  metaDescription: "A step‑by‑step guide to building a balanced portfolio for the second half of 2024, with real‑life Brazilian examples and easy‑to‑apply tips."
+  metaTitle: "Investments for the Second Half: Practical Strategies for 2026"
+  metaDescription: "A step‑by‑step guide to building a balanced portfolio for the second half of 2026, with real‑life Brazilian examples and easy‑to‑apply tips."
   keywords: ["investments","second half","2024","portfolio","Treasury Selic","CDB","ETF"]
 ---
 

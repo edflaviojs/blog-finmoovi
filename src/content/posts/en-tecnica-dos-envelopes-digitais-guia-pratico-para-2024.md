@@ -1,5 +1,5 @@
 ---
-title: "Digital Envelope Technique: Practical Guide for 2024"
+title: "Digital Envelope Technique: Practical Guide for 2026"
 description: "Learn how to use the digital envelope technique to control spending, build a budget, and save, even with a salary of R$2,000 to R$8,000. Simple step‑by‑step."
 tickerHeadline: "Master your spending in 3 steps"
 image: "/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024.webp"
@@ -12,7 +12,7 @@ readingTime: 4
 featured: false
 translationKey: "tecnica-dos-envelopes-digitais-guia-pratico-para-2024"
 seo:
-  metaTitle: "Digital Envelope Technique: Practical Guide for 2024"
+  metaTitle: "Digital Envelope Technique: Practical Guide for 2026"
   metaDescription: "Learn how to use the digital envelope technique to control spending, build a budget, and save, even with a salary of R$2,000 to R$8,000. Simple step‑by‑step."
   keywords: ["digital envelopes","spending control","personal budget","practical finance","financial apps","envelope method","category spending control"]
 ---

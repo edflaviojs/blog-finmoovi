@@ -8,6 +8,7 @@ import { generateCoverImage, generateCoverImageSync, generateInlineImage } from 
 import { saveSVGImage } from './svg-generator.js';
 import { config } from '../../../site.config.ts';
 import { FACT_GUARD_PROMPT } from '../lib/fact-guard.js';
+import { CURRENT_YEAR } from '../lib/year-guard.js';
 
 // Provedores de geração de texto (todos compatíveis com a API OpenAI), em
 // ordem de prioridade/fallback. Cada um se auto-habilita conforme as
@@ -185,7 +186,7 @@ REGRAS DE ESTILO (obrigatórias):
 **${selectedCta}**
 
 ESTRUTURA:
-- Título SEO (50-60 caracteres, keyword no início)
+- Título SEO (50-60 caracteres, keyword no início; se mencionar ano, use ${CURRENT_YEAR})
 - Meta descrição (150-160 caracteres)
 - Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 - Conteúdo com 800-1200 palavras, 4-6 seções com H2
@@ -193,7 +194,7 @@ ESTRUTURA:
 
 Formato de saída (use exatamente este formato):
 ---TITULO---
-[título aqui]
+[título aqui — se mencionar ano, use ${CURRENT_YEAR}]
 ---META---
 [meta descrição aqui]
 ---HEADLINE---

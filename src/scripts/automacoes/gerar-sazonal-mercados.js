@@ -15,6 +15,7 @@ import { generateBlogPost, generateCoverImage, generateText } from '../apis/kie-
 import { getDueHoliday } from '../lib/calendario-sazonal.js';
 import { isThemeCovered } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
+import { fixStaleYear } from '../lib/year-guard.js';
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -132,7 +133,10 @@ async function main() {
   if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
   const content = fg.cleaned;
 
-  const title = post.title;
+  // Year-guard: corrige ano defasado no título antes do slug.
+  let title = post.title;
+  const yg = fixStaleYear(title);
+  if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); title = yg.text; }
   const slug = createSlug(title);
   const existing = readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
   if (existing.some(f => f === `${slug}.md` || f === `en-${slug}.md` || f === `es-${slug}.md`)) {
@@ -154,6 +158,8 @@ async function main() {
   if (config.locales.includes('en')) {
     await new Promise(r => setTimeout(r, 30000));
     const en = await translatePost({ title, meta: post.meta, headline, keywords, content }, 'en');
+    const ygEn = fixStaleYear(en.title);
+    if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); en.title = ygEn.text; }
     paths.push(savePost(`en-${slug}`, { ...en, imagePath, locale: 'en', today, translationKey: slug }));
     console.log('🌐 EN ok');
   }
@@ -161,6 +167,8 @@ async function main() {
   if (config.locales.includes('es')) {
     await new Promise(r => setTimeout(r, 30000));
     const es = await translatePost({ title, meta: post.meta, headline, keywords, content }, 'es');
+    const ygEs = fixStaleYear(es.title);
+    if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); es.title = ygEs.text; }
     paths.push(savePost(`es-${slug}`, { ...es, imagePath, locale: 'es', today, translationKey: slug }));
     console.log('🌐 ES ok');
   }

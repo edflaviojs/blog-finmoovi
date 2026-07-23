@@ -1,6 +1,6 @@
 ---
-title: "Investimentos para o segundo semestre: estratégias práticas para 2024"
-description: "Descubra como montar uma carteira de investimentos inteligente para o segundo semestre de 2024 com dicas fáceis e exemplos reais."
+title: "Investimentos para o segundo semestre: estratégias práticas para 2026"
+description: "Descubra como montar uma carteira de investimentos inteligente para o segundo semestre de 2026 com dicas fáceis e exemplos reais."
 tickerHeadline: "Seu plano de investimento para a reta fi"
 image: "/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p.webp"
 category: "dicas"
@@ -19,8 +19,8 @@ featured: false
 draft: false
 translate: true
 seo:
-  metaTitle: "Investimentos para o segundo semestre: estratégias práticas para 2024"
-  metaDescription: "Descubra como montar uma carteira de investimentos inteligente para o segundo semestre de 2024 com dicas fáceis e exemplos reais."
+  metaTitle: "Investimentos para o segundo semestre: estratégias práticas para 2026"
+  metaDescription: "Descubra como montar uma carteira de investimentos inteligente para o segundo semestre de 2026 com dicas fáceis e exemplos reais."
   keywords: ["investimentos segundo semestre","carteira de investimentos 2024","estratégia de investimento","renda fixa","ações","FinMoovi app"]
 ---
 

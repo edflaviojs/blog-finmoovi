@@ -9,6 +9,7 @@ import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
+import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -300,7 +301,7 @@ FUNCIONALIDADE: ${topic.feature}
 CENÁRIO: ${topic.scenario}
 
 REGRAS DO POST:
-1. Título: pergunta empática que o leitor se identifica (ex: "Você também esquece de anotar seus gastos?")
+1. Título: pergunta empática que o leitor se identifica (ex: "Você também esquece de anotar seus gastos?"); se mencionar ano, use ${CURRENT_YEAR}
 2. Começa mostrando o PROBLEMA (empatia, "eu te entendo")
 3. Explica a dor de forma real e relatable (com exemplos do dia a dia)
 4. Apresenta a SOLUÇÃO (${config.app.name}) de forma natural, sem parecer propaganda
@@ -341,7 +342,7 @@ Responda EXATAMENTE neste formato:
       throw new Error('API retornou formato inválido.');
     }
 
-    const title = titleMatch[1].trim();
+    let title = titleMatch[1].trim();
     const meta = metaMatch ? metaMatch[1].trim() : '';
     // Headline do ticker: opcional, com teto rígido de 40 chars
     const headline = (headlineMatch ? headlineMatch[1].trim().replace(/^["']|["']$/g, '') : '').slice(0, 40);
@@ -356,6 +357,10 @@ Responda EXATAMENTE neste formato:
     }
     if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
     const content = fg.cleaned;
+
+    // Year-guard: corrige ano defasado no título antes do slug.
+    const yg = fixStaleYear(title);
+    if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); title = yg.text; }
 
     // Merge topic keywords with AI-generated ones
     const allKeywords = [...new Set([...keywords, ...topic.keywords, config.app.name.toLowerCase(), config.content.niche.pt])];
@@ -393,6 +398,8 @@ Responda EXATAMENTE neste formato:
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 Traduzindo EN...');
       const enPost = await translatePost({ title, meta, headline, keywords: allKeywords, processedContent: processedContentPt }, 'en');
+      const ygEn = fixStaleYear(enPost.title);
+      if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); enPost.title = ygEn.text; }
       savePost(`en-${slugPt}`, {
         title: enPost.title,
         meta: enPost.meta,
@@ -413,6 +420,8 @@ Responda EXATAMENTE neste formato:
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 Traduzindo ES...');
       const esPost = await translatePost({ title, meta, headline, keywords: allKeywords, processedContent: processedContentPt }, 'es');
+      const ygEs = fixStaleYear(esPost.title);
+      if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); esPost.title = ygEs.text; }
       savePost(`es-${slugPt}`, {
         title: esPost.title,
         meta: esPost.meta,

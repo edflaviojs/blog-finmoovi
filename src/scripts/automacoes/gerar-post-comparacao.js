@@ -9,6 +9,7 @@ import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
+import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -160,7 +161,7 @@ ${avoidBlock}
 Escreva um post comparativo detalhado em português brasileiro: "${comp.a} vs ${comp.b}: qual é melhor para você?"
 
 REGRAS:
-1. Título no formato: "X vs Y: qual vale mais a pena em 2026?"
+1. Título no formato: "X vs Y: qual vale mais a pena em ${CURRENT_YEAR}?"
 2. Seja imparcial — mostre prós e contras de AMBOS
 3. Inclua uma tabela comparativa em markdown (| Critério | ${comp.a} | ${comp.b} |)
 4. Mínimo 1000 palavras
@@ -245,6 +246,10 @@ Responda neste formato:
     if (fg.cuts.length || fg.linkStrips.length) console.log(`🛡️ Fact-guard: ${fg.cuts.length} corte(s), ${fg.linkStrips.length} link(s) removido(s).`);
     content = fg.cleaned;
 
+    // Year-guard: corrige ano defasado no título antes do slug.
+    const yg = fixStaleYear(title);
+    if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); title = yg.text; }
+
     const allKeywords = [...new Set([...keywords, ...comp.keywords])];
     const slugPt = createSlug(title);
 
@@ -258,6 +263,8 @@ Responda neste formato:
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 EN...');
       const en = await translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'en');
+      const ygEn = fixStaleYear(en.title);
+      if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); en.title = ygEn.text; }
       savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
     }
 
@@ -265,6 +272,8 @@ Responda neste formato:
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 ES...');
       const es = await translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'es');
+      const ygEs = fixStaleYear(es.title);
+      if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); es.title = ygEs.text; }
       savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
     }
 
