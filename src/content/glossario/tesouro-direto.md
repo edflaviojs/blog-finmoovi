@@ -4,7 +4,6 @@ definition: "Entenda o que é tesouro direto, como funciona, vantagens, riscos e
 title: "tesouro direto - Glossário Financeiro"
 description: "Entenda o que é tesouro direto, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/tesouro-direto.webp"
-imageAlt: "Plataforma circular com formas geométricas em tons de rosa e azul."
 category: "basico"
 tags: ["tesouro direto", "glossário", "finanças"]
 author: "FinMoovi"

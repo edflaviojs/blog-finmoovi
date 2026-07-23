@@ -4,7 +4,6 @@ definition: "Entienda qué es selic, cómo funciona, ventajas, riesgos y ejemplo
 title: "selic - Glosario Financiero"
 description: "Entienda qué es selic, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/selic.webp"
-imageAlt: "Tres formas geométricas de color azul claro sobre fondo rosa claro."
 category: "basico"
 tags: ["selic", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

@@ -4,7 +4,6 @@ definition: "Understand what tesouro direto is, how it works, advantages, risks 
 title: "tesouro direto - Financial Glossary"
 description: "Understand what tesouro direto is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/tesouro-direto.webp"
-imageAlt: "Pink and blue shapes on a circular platform against a gradient background."
 category: "basico"
 tags: ["tesouro direto", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

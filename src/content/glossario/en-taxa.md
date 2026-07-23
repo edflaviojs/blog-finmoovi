@@ -4,7 +4,6 @@ definition: "Understand what taxa is, how it works, advantages, risks and practi
 title: "taxa - Financial Glossary"
 description: "Understand what taxa is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/taxa.webp"
-imageAlt: "Stacks of gold coins, a calculator, and potted plants on a dark surface."
 category: "basico"
 tags: ["taxa", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

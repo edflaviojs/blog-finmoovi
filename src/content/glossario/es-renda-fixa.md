@@ -4,7 +4,6 @@ definition: "Entienda qué es renda fixa, cómo funciona, ventajas, riesgos y ej
 title: "renda fixa - Glosario Financiero"
 description: "Entienda qué es renda fixa, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/renda-fixa.webp"
-imageAlt: "Fondo degradado de colores pastel, blanco, gris y rosa."
 category: "basico"
 tags: ["renda fixa", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

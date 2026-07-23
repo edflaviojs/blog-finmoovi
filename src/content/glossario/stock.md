@@ -4,7 +4,6 @@ definition: "Entenda o que é stock, como funciona, vantagens, riscos e exemplos
 title: "stock - Glossário Financeiro"
 description: "Entenda o que é stock, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/stock.webp"
-imageAlt: "Plano de fundo com degradê de azul claro para rosa."
 category: "basico"
 tags: ["stock", "glossário", "finanças"]
 author: "FinMoovi"

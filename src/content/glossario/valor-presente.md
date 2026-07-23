@@ -1,7 +1,6 @@
 ---
 term: "Valor Presente"
-image: "/images/glossario/valor-presente.svg"
-imageAlt: "Gráfico de linhas coloridas em tons escuros contra fundo preto."
+image: "/images/glossario/valor-presente.webp"
 definition: "Quanto vale hoje um dinheiro que você receberá no futuro. Conceito fundamental para avaliar investimentos e comparar opções financeiras."
 category: "mercado"
 relatedTerms: ["Juros Compostos", "Selic", "Tesouro Direto"]

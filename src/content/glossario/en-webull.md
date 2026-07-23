@@ -4,7 +4,6 @@ definition: "Understand what webull is, how it works, advantages, risks and prac
 title: "webull - Financial Glossary"
 description: "Understand what webull is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/webull.webp"
-imageAlt: "Pink and blue abstract shapes on purple and pink gradient background."
 category: "basico"
 tags: ["webull", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
