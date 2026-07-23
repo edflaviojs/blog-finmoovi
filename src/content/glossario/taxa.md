@@ -26,7 +26,7 @@ A taxa é um valor cobrado em cima de uma operação financeira, como um emprés
 
 
 
-- **Taxa de juros** – o custo do dinheiro emprestado, geralmente expressa em % ao ano.  
+- **Taxa de [juros](/glossario/juros)** – o custo do dinheiro emprestado, geralmente expressa em % ao ano.  
 - **Taxa de manutenção** – cobrança mensal por manter uma conta ou cartão ativo.  
 - **Taxa de serviço** – paga por serviços específicos, como transferências ou emissão de boletos.  
 
@@ -48,7 +48,7 @@ Mesmo que a palavra “taxa” soe negativa, ela traz benefícios quando bem com
 
 - **Acesso ao crédito** – permite comprar um carro ou reformar a casa mesmo sem ter o dinheiro todo à vista.  
 - **Serviços convenientes** – transferências instantâneas, pagamentos automáticos e cartões com proteção contra fraudes.  
-- **Investimentos** – fundos de investimento podem ter taxa de administração que garante a gestão profissional do seu dinheiro.  
+- **Investimentos** – [fundos](/glossario/fundos) de investimento podem ter taxa de administração que garante a gestão profissional do seu dinheiro.  
 
 ## Riscos
 
@@ -78,7 +78,7 @@ Se você quer dominar as taxas e evitar surpresas, siga estes passos simples par
 
 - Liste todas as taxas que você paga atualmente: anuidade, manutenção, juros de empréstimos, etc.  
 - Classifique cada taxa como fixa (valor constante) ou variável (muda com o tempo ou uso).  
-- Use um aplicativo de finanças pessoais para registrar essas despesas; a visualização automática ajuda a identificar gastos desnecessários.  
+- Use um aplicativo de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) para registrar essas despesas; a visualização automática ajuda a identificar [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) desnecessários.  
 - Negocie taxas altas com seu banco ou procure alternativas mais baratas, como contas digitais sem taxa de manutenção.  
 - Quando for contratar um novo serviço, peça a tabela completa de custos e compare com pelo menos duas opções diferentes.  
 

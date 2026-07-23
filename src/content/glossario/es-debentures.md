@@ -34,7 +34,7 @@ Las Debêntures son títulos de deuda emitidos por empresas. Cuando compras una 
 - [Diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) de la [renta fija](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 - Plazos variados (2 a 15 años)
 
-## Riesgos
+## [Riesgos](/es/posts/es-montando-carteira-diversificada-com-r-500)
 
 - **Riesgo de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-):** empresa puede no pagar (no tiene FGC)
 - **Riesgo de [liquidez](/es/glossario/es-liquidez):** puede ser difícil vender antes del vencimiento

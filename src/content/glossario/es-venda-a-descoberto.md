@@ -82,11 +82,11 @@ Otro caso: Carlos, con salario de R$3.500, usa R$500 para vender a descubierto l
 **Consejo práctico:** **Revisa siempre la tasa de préstamo del activo; una tasa alta puede convertir una operación rentable en una pérdida.**  
 **Consejo práctico:** **Utiliza órdenes de stop‑loss (detener pérdidas) para cerrar automáticamente la posición si el precio sube demasiado.**  
 
-Una vez que tengas la cuenta y hayas fijado tus reglas, practica con pequeñas cantidades y, si es posible, usa una cuenta demo (simulada) para familiarizarte sin arriesgar dinero real.
+Una vez que tengas la cuenta y hayas fijado tus reglas, practica con pequeñas cantidades y, si es posible, usa una cuenta demo (simulada) para familiarizarte sin arriesgar [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) real.
 
 ## Empieza hoy
 
-No esperes a que el mercado te dé la razón; toma el control y aprende a ganar cuando los precios bajan. Con disciplina, una buena herramienta y los [consejos](/es/posts/es-7-errores-financieros-principiante) adecuados, la venta a descubierto puede ser una pieza valiosa en tu arsenal financiero. ¡Anímate a probarla y descubre una nueva forma de hacer que tu dinero trabaje para ti!
+No esperes a que el mercado te dé la razón; toma el control y aprende a ganar cuando los precios bajan. Con disciplina, una buena herramienta y los [consejos](/es/posts/es-7-errores-financieros-principiante) adecuados, la venta a descubierto puede ser una pieza valiosa en tu arsenal financiero. ¡Anímate a probarla y descubre una nueva forma de hacer que tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) trabaje para ti!
 
 ---
 

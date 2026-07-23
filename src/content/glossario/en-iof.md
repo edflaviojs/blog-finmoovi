@@ -31,7 +31,7 @@ IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to var
 - 0.38% fixed + 0.0082% per day on the value
 - Charged at the time of hiring
 
-### Exchange (purchase of dollar/euro)
+### Exchange (purchase of [dollar](/en/posts/en-quotes-semana-1-july-2026)/euro)
 
 - 1.1% for cash currency purchase
 - 0.38% for international transfers

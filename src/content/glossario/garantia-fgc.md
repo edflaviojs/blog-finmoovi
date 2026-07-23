@@ -17,10 +17,10 @@ O FGC (Fundo Garantidor de Créditos) é como um seguro para seus [investimentos
 
 - CDB (Certificado de Depósito Bancário)
 - [LCI e LCA](/glossario/lci-e-lca)
-- Poupança
+- [Poupança](/glossario/poupanca)
 - Conta corrente
 - RDB
-- Letras de câmbio
+- Letras de [câmbio](/glossario/cambio)
 
 ## O que NÃO é coberto
 

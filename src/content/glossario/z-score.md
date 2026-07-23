@@ -85,13 +85,13 @@ Se você quer colocar o z‑score em prática hoje mesmo, siga estes passos simp
 - **Calcule a média e o desvio‑padrão**: use a função MÉDIA e DESVPAD de planilhas como o Excel ou o Google Sheets.  
 - **Aplique a fórmula**: crie uma coluna “z‑score” e use a fórmula = (Valor – Média) / Desvio‑padrão.  
 - **Analise os resultados**: valores positivos altos apontam áreas de força; negativos altos indicam pontos a melhorar.  
-- **Ajuste seu plano**: reduza gastos com alto z‑score negativo ou aumente investimentos onde o z‑score mostra potencial acima da média.  
+- **Ajuste seu plano**: reduza [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) com alto z‑score negativo ou aumente investimentos onde o z‑score mostra potencial acima da média.  
 
 **Dica prática:** faça esse cálculo a cada três meses; assim você acompanha a evolução e ajusta metas de forma dinâmica.
 
 ## Comece hoje
 
-Não espere a próxima reunião de família ou o fim do mês para entender onde seu dinheiro realmente está. Pegue a planilha, insira seus números e veja o z‑score em ação. Quando você transforma dados em insight, a tomada de decisão fica muito mais fácil. Comece agora e descubra como pequenos ajustes podem gerar grandes resultados.
+Não espere a próxima reunião de família ou o fim do mês para entender onde seu [dinheiro](/posts/cashback-inteligente) realmente está. Pegue a planilha, insira seus números e veja o z‑score em ação. Quando você transforma dados em insight, a tomada de decisão fica muito mais fácil. Comece agora e descubra como pequenos ajustes podem gerar grandes resultados.
 
 ---
 

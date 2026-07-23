@@ -31,7 +31,7 @@ Os fundos podem ser de diferentes tipos, como fundos de ações, fundos de [rend
 * Fundos imobiliários: investem em imóveis ou em empresas do setor imobiliário
 
 ## How it works
-Quando você investe em um fundo, você está basicamente comprando uma parte desse fundo. O [valor](/en/glossario/en-valor) da sua parte é calculado com base no valor total do fundo e no número de partes que você comprou. Os fundos são geridos por empresas especializadas, que cobram uma taxa de administração para gerenciar o fundo. Essa taxa é geralmente um percentual do valor total do fundo.
+Quando você investe em um fundo, você está basicamente comprando uma parte desse fundo. O [valor](/en/glossario/en-valor) da sua parte é calculado com base no valor total do fundo e no número de partes que você comprou. Os fundos são geridos por empresas especializadas, que cobram uma [taxa](/en/glossario/en-taxa) de administração para gerenciar o fundo. Essa taxa é geralmente um percentual do valor total do fundo.
 
 Por exemplo, se você investir R$ 5.000 em um fundo de ações, e o fundo tem um valor total de R$ 1 milhão, você é dono de 0,5% desse fundo. Se o fundo valorizar 10% em um mês, o valor da sua parte também aumentará 10%, para R$ 5.500. **Practical tip:** é importante ler o prospecto do fundo antes de investir, para entender como a taxa de administração é cobrada e como o fundo é gerido.
 

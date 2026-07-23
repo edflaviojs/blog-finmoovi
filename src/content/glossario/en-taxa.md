@@ -27,7 +27,7 @@ A **taxa** é simplesmente a taxa cobrada por um serviço, um investimento ou um
 
 
 - **Taxa de juros:** custo do dinheiro emprestado, expressa em percentual ao ano.  
-- **Taxa de administração:** valor cobrado por gestores de [fundos](/en/glossario/en-fundos) para manter seu investimento.  
+- **Taxa de administração:** [valor](/en/glossario/en-valor) cobrado por gestores de [fundos](/en/glossario/en-fundos) para manter seu investimento.  
 - **Taxa de manutenção:** cobrança mensal de bancos por serviços como cartão de crédito ou conta corrente.  
 
 ## How it works
@@ -36,7 +36,7 @@ Quando você aceita um contrato – seja um empréstimo ou um investimento – a
 
 - O valor da taxa é multiplicado pelo montante principal.  
 - O resultado pode ser cobrado mensalmente, trimestralmente ou anualmente.  
-- Se a taxa for variável, o índice de referência (por exemplo, CDI) determina o ajuste.  
+- Se a taxa for variável, o índice de referência (por exemplo, [CDI](/en/glossario/en-cdi)) determina o ajuste.  
 
 **Practical tip:** **Sempre verifique se a taxa é fixa ou variável antes de assinar qualquer contrato; isso evita surpresas no futuro.**  
 

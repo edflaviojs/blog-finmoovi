@@ -63,13 +63,13 @@ Em resumo, a Selic alta ainda protege a rentabilidade da renda fixa, mas também
 
 ## 3. Dica Prática para o Investidor Pessoa Física  
 
-**Rebalanceie sua carteira a cada trimestre**. Muitas pessoas deixam o “mix” de ativos parado por anos, esquecendo que a [volatilidade](/glossario/volatilidade) do mercado pode mudar a proporção de risco e retorno. Use a regra de 60 % em renda fixa (CDBs, Tesouro [IPCA](/glossario/ipca)) e 40 % em [renda variável](/glossario/renda-variavel) (ações, fundos imobiliários). Se, ao fim de três meses, a renda fixa passou de 60 % para 70 % por causa de valorização dos títulos, venda parte desses títulos e compre mais ações ou fundos. Isso mantém o perfil de risco alinhado ao seu objetivo e ainda aproveita a alta dos juros.
+**Rebalanceie sua carteira a cada trimestre**. Muitas pessoas deixam o “mix” de ativos parado por anos, esquecendo que a [volatilidade](/glossario/volatilidade) do mercado pode mudar a proporção de [risco e retorno](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel). Use a regra de 60 % em renda fixa (CDBs, Tesouro [IPCA](/glossario/ipca)) e 40 % em [renda variável](/glossario/renda-variavel) (ações, fundos imobiliários). Se, ao fim de três meses, a renda fixa passou de 60 % para 70 % por causa de valorização dos títulos, venda parte desses títulos e compre mais ações ou fundos. Isso mantém o perfil de risco alinhado ao seu objetivo e ainda aproveita a alta dos juros.
 
 ---
 
 ## 4. O Que Esperar na Próxima Semana  
 
-- **Dados de inflação dos EUA** – O CPI de julho será divulgado na segunda‑feira e pode trazer nova pressão sobre o Fed. Se a inflação cair ainda mais, o dólar pode continuar a desvalorizar.  
+- **Dados de inflação dos EUA** – O CPI de julho será divulgado na segunda‑feira e pode trazer nova pressão sobre o Fed. Se a inflação cair ainda mais, o [dólar](/posts/cotacoes-semana-5-junho-2026) pode continuar a desvalorizar.  
 - **Decisão do BCE** – A reunião do Banco Central Europeu está marcada para o meio da semana; um tom mais dovish pode puxar o euro para baixo.  
 - **Política fiscal brasileira** – O governo deve apresentar ajustes no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Qualquer mudança que aumente o déficit pode gerar dúvidas sobre a estabilidade cambial.  
 

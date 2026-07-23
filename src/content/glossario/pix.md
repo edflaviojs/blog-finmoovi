@@ -18,7 +18,7 @@ PIX é o sistema de pagamentos instantâneos criado pelo Banco Central em 2020. 
 1. Você cadastra uma "chave PIX" (CPF, email, telefone ou chave aleatória)
 2. Para receber, basta informar sua chave
 3. Para pagar, usa a chave do destinatário ou QR Code
-4. O dinheiro cai na hora
+4. O [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) cai na hora
 
 ## Vantagens
 
@@ -45,4 +45,4 @@ PIX é o sistema de pagamentos instantâneos criado pelo Banco Central em 2020. 
 
 ## PIX e controle financeiro
 
-O PIX facilita o rastreamento de [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) porque todas as transações ficam registradas no extrato. Apps como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) categorizam automaticamente seus PIX para você saber exatamente para onde vai seu dinheiro.
+O PIX facilita o rastreamento de [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) porque todas as transações ficam registradas no extrato. Apps como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) categorizam automaticamente seus PIX para você saber exatamente para onde vai seu [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso).

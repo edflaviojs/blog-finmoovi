@@ -38,7 +38,7 @@ Os principais componentes de um ETF incluem:
 ## Advantages
 Os ETFs oferecem várias vantagens para os investidores, especialmente para aqueles que estão começando a investir. **Practical tip:** Uma das principais vantagens dos ETFs é a [diversificação](/en/glossario/en-diversificacao), pois permitem que os investidores comprem uma cesta de ativos com um único investimento. Além disso, os ETFs são geralmente mais baratos do que os fundos mútuos, pois têm menores taxas de gestão. Outra vantagem é a flexibilidade, pois os ETFs podem ser negociados em tempo real, permitindo que os investidores ajustem suas carteiras rapidamente.
 
-Além disso, os ETFs oferecem uma forma fácil de investir em ativos que podem ser difíceis de acessar de outra forma, como commodities ou ações de empresas estrangeiras. **Practical tip:** É importante lembrar que os ETFs também podem ser usados para hedge, ou seja, para reduzir o risco de perdas em uma carteira de investimentos. Por exemplo, se você tem uma carteira de ações e está preocupado com a possibilidade de uma recessão, você pode investir em um ETF de títulos para reduzir o risco.
+Além disso, os ETFs oferecem uma forma fácil de investir em ativos que podem ser difíceis de acessar de outra forma, como commodities ou ações de empresas estrangeiras. **Practical tip:** É importante lembrar que os ETFs também podem ser usados para [hedge](/en/glossario/en-hedge), ou seja, para reduzir o risco de perdas em uma carteira de investimentos. Por exemplo, se você tem uma carteira de ações e está preocupado com a possibilidade de uma recessão, você pode investir em um ETF de títulos para reduzir o risco.
 
 ![Advantages](/images/glossario/etf-inline-3.webp)
 
@@ -50,7 +50,7 @@ Como qualquer investimento, os ETFs também envolvem riscos. **Practical tip:** 
 * Risco de crédito: o risco de que as empresas ou governos que emitem os ativos subjacentes não honrem seus compromissos
 * Risco de liquidez: o risco de que você não consiga vender o ETF rapidamente o suficiente ou pelo preço desejado
 
-Além disso, os ETFs também podem ser afetados por mudanças nas taxas de juros, inflação e outras condições econômicas. É importante lembrar que os ETFs são investimentos de longo prazo, e é fundamental ter uma estratégia de investimento clara e disciplinada para alcançar seus objetivos.
+Além disso, os ETFs também podem ser afetados por mudanças nas taxas de [juros](/en/glossario/en-juros), inflação e outras condições econômicas. É importante lembrar que os ETFs são investimentos de longo prazo, e é fundamental ter uma estratégia de investimento clara e disciplinada para alcançar seus objetivos.
 
 ## Practical examples
 Vamos considerar um exemplo prático. Imagine que você ganha R$5.000 por mês e quer investir 10% de sua renda em um ETF de ações da bolsa de valores brasileira. Você pode investir [R$500](/en/posts/en-montando-carteira-diversificada-com-r-500) por mês em um ETF que acompanha o índice Ibovespa, por exemplo. **Practical tip:** É importante lembrar que é fundamental diversificar sua carteira de investimentos, então você pode considerar investir em diferentes tipos de ETFs, como um ETF de títulos ou um ETF de commodities.

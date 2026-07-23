@@ -15,7 +15,7 @@ Câmbio é a troca de uma [moeda](/glossario/moeda) por outra. Quando você comp
 
 ## Como funciona a taxa de câmbio
 
-- **USD/BRL = 5,50** significa que 1 dólar custa R$ 5,50
+- **USD/BRL = 5,50** significa que 1 [dólar](/posts/cotacoes-semana-1-julho-2026) custa R$ 5,50
 - A taxa muda a cada segundo no mercado
 - É influenciada por [juros](/glossario/juros), [inflação](/glossario/inflacao), política e fluxo de capitais
 
@@ -33,8 +33,8 @@ Câmbio é a troca de uma [moeda](/glossario/moeda) por outra. Quando você comp
 2. **Compare casas de câmbio** — spreads variam muito
 3. **Evite aeroportos** — taxas são as piores
 4. **[Cartão de débito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional** — geralmente melhor que [dinheiro](/posts/cashback-inteligente) em espécie
-5. **IOF:** 4,38% no cartão, 1,1% em espécie
+5. **[IOF](/glossario/iof):** 4,38% no cartão, 1,1% em espécie
 
 ## Câmbio e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-Investir em ativos dolarizados (ETFs internacionais, BDRs) é uma forma de se proteger da desvalorização do real. Quando o dólar sobe, seus investimentos internacionais valorizam em reais.
+Investir em ativos dolarizados (ETFs internacionais, BDRs) é uma forma de se proteger da desvalorização do real. Quando o [dólar](/posts/cotacoes-semana-1-junho-2026) sobe, seus investimentos internacionais valorizam em reais.

@@ -17,7 +17,7 @@ Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule
 
 - **S**pecific: "Save R$ 10,000" (not "save more")
 - **M**easurable: exact value that can be tracked
-- **A**chievable: possible with your current income
+- **A**chievable: possible with your current [income](/en/posts/en-montando-carteira-diversificada-com-r-500)
 - **R**elevant: important to you
 - **T**ime-bound: with a defined deadline
 
@@ -38,7 +38,7 @@ Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule
 ### Long term (5+ years)
 
 - Achieve [financial independence](/en/glossario/en-independencia-financeira) (R$ 1,500,000)
-- Supplemental retirement
+- Supplemental [retirement](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico)
 - Buy a property outright
 
 ## How to track

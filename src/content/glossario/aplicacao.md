@@ -19,7 +19,7 @@ seo:
 
 ## O que é
 
-Aplicação é o nome que damos ao ato de colocar seu dinheiro em um investimento, seja ele um CDB, fundo de investimento, Tesouro Direto ou até mesmo uma poupança. Em termos simples, é “emprestar” seu dinheiro para que ele renda mais do que ficaria parado na conta corrente. Quando alguém fala “fazer uma aplicação”, está falando de aplicar recursos financeiros com o objetivo de obter retorno.
+Aplicação é o nome que damos ao ato de colocar seu [dinheiro](/posts/cashback-inteligente) em um investimento, seja ele um CDB, fundo de investimento, [Tesouro Direto](/glossario/tesouro-direto) ou até mesmo uma poupança. Em termos simples, é “emprestar” seu dinheiro para que ele renda mais do que ficaria parado na conta corrente. Quando alguém fala “fazer uma aplicação”, está falando de aplicar recursos financeiros com o objetivo de obter retorno.
 
 ![O que é](/images/glossario/aplicacao-inline-1.webp)
 
@@ -44,13 +44,13 @@ Aplicar seu dinheiro traz benefícios que vão muito além de “ver a conta cre
 - **Segurança:** alguns produtos, como o Tesouro Direto, são garantidos pelo governo.  
 - **Rentabilidade:** a maioria das aplicações rende mais que a poupança, que hoje paga menos de 0,5% ao mês.  
 - **[Diversificação](/glossario/diversificacao):** ao distribuir recursos em diferentes tipos de aplicação, você reduz o risco total da sua carteira.  
-- **Liquidez:** algumas aplicações permitem resgatar o dinheiro rapidamente, como fundos de renda fixa com liquidez diária.
+- **Liquidez:** algumas aplicações permitem resgatar o dinheiro rapidamente, como fundos de [renda fixa](/glossario/renda-fixa) com liquidez diária.
 
 ## Riscos
 
 Nenhum investimento é 100% livre de risco. Conhecer os principais perigos ajuda a escolher a aplicação certa para o seu perfil.  
 
-- **Risco de crédito:** se a instituição que emitiu o título falir, você pode perder parte ou todo o capital.  
+- **Risco de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-):** se a instituição que emitiu o título falir, você pode perder parte ou todo o capital.  
 - **Risco de mercado:** produtos atrelados a índices (como ações ou fundos de ações) podem oscilar muito, fazendo seu dinheiro valer menos em determinados períodos.  
 - **Risco de liquidez:** alguns investimentos só podem ser resgatados após um prazo definido, o que pode atrapalhar emergências financeiras.  
 - **Risco de inflação:** se a aplicação rende menos que a inflação, seu poder de compra diminui ao longo do tempo.

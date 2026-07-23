@@ -9,9 +9,9 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## What is Financial Education?
+## What is [Financial Education](/en/posts/en-7-financial-mistakes-beginners)?
 
-Financial education is about learning to handle [money](/en/posts/en-30-day-rule-for-purchases) intelligently. It's not about getting rich quickly — it's about understanding how money works to make better decisions in your daily life.
+Financial education is about learning to handle [money](/en/posts/en-30-day-rule-for-purchases) intelligently. It's not about getting rich quickly — it's about understanding how [money](/en/posts/en-avoid-impulse-purchases) works to make better decisions in your daily life.
 
 ## The 4 Pillars
 

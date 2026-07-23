@@ -50,7 +50,7 @@ Otra ventaja del Tesouro Direto es la liquidez, ya que los títulos pueden ser v
 ## Riesgos
 Aunque el Tesouro Direto es considerado un instrumento de inversión de baja rentabilidad, también hay algunos riesgos que debes considerar. **Consejo práctico:** siempre es importante evaluar tus objetivos financieros y tu tolerancia al riesgo antes de invertir. Uno de los principales riesgos del Tesouro Direto es el riesgo de inflación, ya que la inflación puede erosionar el [valor](/es/glossario/es-valor) del capital invertido. Por ejemplo, si la inflación es del 10% anual y el rendimiento del título es del 5% anual, el valor real del capital invertido disminuirá.
 
-Otro riesgo del Tesouro Direto es el riesgo de liquidez, ya que los títulos pueden ser difíciles de vender en el mercado secundario, especialmente si el plazo de vencimiento es largo. **Consejo práctico:** siempre es importante evaluar la liquidez de tus inversiones y considerar la posibilidad de vender tus títulos antes del vencimiento si necesitas acceso a tu dinero.
+Otro riesgo del Tesouro Direto es el riesgo de liquidez, ya que los títulos pueden ser difíciles de vender en el mercado secundario, especialmente si el plazo de vencimiento es largo. **Consejo práctico:** siempre es importante evaluar la liquidez de tus inversiones y considerar la posibilidad de vender tus títulos antes del vencimiento si necesitas acceso a tu [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado).
 
 ## Ejemplos prácticos
 Supongamos que tienes un salario de R$5.000 al mes y quieres invertir R$1.000 en el Tesouro Direto. Puedes comprar un título del Tesouro Selic con un plazo de vencimiento de 1 año y una tasa de interés del 5%. Al final del año, recibirás R$1.050, que incluye el capital invertido (R$1.000) y los intereses (R$50).
@@ -63,7 +63,7 @@ Para empezar a invertir en el Tesouro Direto, debes abrir una cuenta en la plata
 Una vez que hayas abierto tu cuenta, puedes comprar títulos del Tesouro Direto con un mínimo de R$30. **Consejo práctico:** siempre es importante evaluar tus objetivos financieros y tu tolerancia al riesgo antes de invertir. Puedes comprar títulos con diferentes plazos de vencimiento y tasas de interés, dependiendo de tus necesidades y objetivos.
 
 ## Empieza hoy
-No esperes más para empezar a invertir en el Tesouro Direto. Con una pequeña cantidad de dinero, puedes empezar a construir una reserva de emergencia o a ahorrar para tus objetivos financieros a largo plazo. Recuerda que la inversión en el Tesouro Direto es segura y ofrece rendimientos competitivos. **Consejo práctico:** siempre es importante evaluar tus objetivos financieros y tu tolerancia al riesgo antes de invertir. ¡Empieza hoy y comienza a construir un futuro financiero más seguro!
+No esperes más para empezar a invertir en el Tesouro Direto. Con una pequeña cantidad de [dinero](/es/posts/es-cashback-inteligente), puedes empezar a construir una reserva de emergencia o a ahorrar para tus objetivos financieros a largo plazo. Recuerda que la inversión en el Tesouro Direto es segura y ofrece rendimientos competitivos. **Consejo práctico:** siempre es importante evaluar tus objetivos financieros y tu tolerancia al riesgo antes de invertir. ¡Empieza hoy y comienza a construir un futuro financiero más seguro!
 
 ---
 

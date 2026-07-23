@@ -38,7 +38,7 @@ Quando você decide comprar um stock, a operação acontece em uma [bolsa de val
 
 ## Vantagens
 
-Investir em stocks traz benefícios que vão além da simples ideia de “ganhar dinheiro”.  
+Investir em stocks traz benefícios que vão além da simples ideia de “ganhar [dinheiro](/posts/como-criar-uma-reserva-de-emergencia)”.  
 
 ![Vantagens](/images/glossario/stock-inline-3.webp)
 
@@ -46,14 +46,14 @@ Investir em stocks traz benefícios que vão além da simples ideia de “ganhar
 
 - **Potencial de valorização:** Uma ação pode multiplicar seu valor ao longo dos anos, especialmente se a empresa crescer.  
 - **Dividendos:** Algumas empresas distribuem parte dos lucros aos acionistas, gerando renda passiva.  
-- **Diversificação:** Ao comprar ações de diferentes setores, você reduz o risco total da sua carteira.  
+- **[Diversificação](/glossario/diversificacao):** Ao comprar ações de diferentes setores, você reduz o risco total da sua carteira.  
 - **Liquidez:** A maioria das ações pode ser vendida rapidamente na bolsa, ao contrário de imóveis ou outros ativos menos líquidos.
 
 ## [Riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Como tudo na vida, investir em ações tem seus perrengues.  
 
-- **Volatilidade:** Os preços podem oscilar muito em curtos períodos, o que pode assustar quem não está preparado.  
+- **[Volatilidade](/glossario/volatilidade):** Os preços podem oscilar muito em curtos períodos, o que pode assustar quem não está preparado.  
 - **Risco de empresa:** Se a companhia enfrentar problemas financeiros, o valor da ação pode despencar ou até zerar.  
 - **Risco de mercado:** Crises econômicas ou políticas podem afetar todas as ações simultaneamente.  
 - **Erro de timing:** Comprar na alta e vender na baixa gera prejuízo; por isso, paciência e disciplina são essenciais.
@@ -64,7 +64,7 @@ Imagine que você ganha R$4.500 por mês e decide destinar 10 % da sua renda (
 
 - **Caso 1:** Você compra 5 ações de uma empresa que está cotada a R$90 cada. Se em seis meses o preço subir para R$110, seu investimento passa a valer R$550, gerando R$100 de lucro (aproximadamente 22 % de retorno).  
 - **Caso 2:** Você opta por uma ação que paga dividendos de R$2 por ação ao ano. Com 5 ações, você receberá R$10 de dividendos, que podem ser reinvestidos para comprar mais frações de ações.  
-- **Caso 3:** Seu salário é R$7.200 e você decide investir R$720 (10 %). Compra 12 ações a R$60 cada. Se a empresa enfrentar uma crise e o preço cair para R$45, seu investimento vale R$540, resultando em perda de R$180. Nesse cenário, **Dica prática:** nunca invista dinheiro que você pode precisar nos próximos 12 meses.
+- **Caso 3:** Seu salário é R$7.200 e você decide investir R$720 (10 %). Compra 12 ações a R$60 cada. Se a empresa enfrentar uma crise e o preço cair para R$45, seu investimento vale R$540, resultando em perda de R$180. Nesse cenário, **Dica prática:** nunca invista [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) que você pode precisar nos próximos 12 meses.
 
 ## Como começar
 

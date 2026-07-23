@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Xing ling es una estrategia de ahorro‑inversión que combina la disciplina del [presupuesto](/es/posts/es-5-alternativas-ao-mobills-em-2026) con la flexibilidad de los fondos de inversión de bajo costo. En términos simples, consiste en destinar una pequeña fracción de cada ingreso mensual a un “pote” de inversión automático, sin necesidad de grandes conocimientos financieros. La idea es que, al ir acumulando pequeñas cantidades, el capital crezca de forma compuesta y se convierta en una reserva para metas como la compra de un coche, la educación de los hijos o la jubilación.
+Xing ling es una estrategia de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado)‑inversión que combina la disciplina del [presupuesto](/es/posts/es-5-alternativas-ao-mobills-em-2026) con la flexibilidad de los fondos de inversión de bajo costo. En términos simples, consiste en destinar una pequeña fracción de cada ingreso mensual a un “pote” de inversión automático, sin necesidad de grandes conocimientos financieros. La idea es que, al ir acumulando pequeñas cantidades, el capital crezca de forma compuesta y se convierta en una reserva para metas como la compra de un coche, la educación de los hijos o la jubilación.
 
 ![Qué es](/images/glossario/xing-ling-inline-1.webp)
 
@@ -54,11 +54,11 @@ Xing ling tiene varias bondades que lo hacen atractivo para cualquier persona qu
 
 ## Riesgos
 
-Como cualquier instrumento financiero, el xing ling no está exento de riesgos, y es importante conocerlos antes de comprometer el dinero.
+Como cualquier instrumento financiero, el xing ling no está exento de riesgos, y es importante conocerlos antes de comprometer el [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).
 
 - **[Volatilidad](/es/glossario/es-volatilidade) del mercado:** los precios de acciones y bonos pueden bajar, lo que reduce temporalmente el valor de tu inversión.  
-- **Riesgo de liquidez:** aunque puedes retirar el dinero en cualquier momento, hacerlo en un periodo de caída del mercado puede generar pérdidas.  
-- **Inflación:** si la rentabilidad del fondo es menor que la tasa de inflación, el poder adquisitivo de tu ahorro disminuye.  
+- **Riesgo de [liquidez](/es/glossario/es-liquidez):** aunque puedes retirar el dinero en cualquier momento, hacerlo en un periodo de caída del mercado puede generar pérdidas.  
+- **[Inflación](/es/glossario/es-inflacao):** si la rentabilidad del fondo es menor que la tasa de inflación, el poder adquisitivo de tu ahorro disminuye.  
 - **Errores de automatización:** una configuración incorrecta de la transferencia automática puede generar sobregiros o cargos inesperados.
 
 ## Ejemplos prácticos

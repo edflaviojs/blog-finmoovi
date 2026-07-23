@@ -27,7 +27,7 @@ La “aplicação” es simplemente el acto de colocar tu dinero en algún instr
 
 ## Cómo funciona
 
-Cuando haces una aplicação, entregas tu dinero a una entidad (banco, corretora o fondo) que lo invierte en diferentes activos (como títulos de deuda, acciones o inmuebles). Esa entidad paga intereses o dividendos, que son la recompensa por haber usado tu capital. El proceso se resume en tres pasos:
+Cuando haces una aplicação, entregas tu dinero a una entidad (banco, corretora o fondo) que lo invierte en diferentes activos (como títulos de deuda, acciones o inmuebles). Esa entidad paga intereses o [dividendos](/es/glossario/es-dividendos), que son la recompensa por haber usado tu capital. El proceso se resume en tres pasos:
 
 - **Depositas** el monto que deseas aplicar en la cuenta de la entidad.
 - **La entidad invierte** ese dinero según el tipo de aplicación que elegiste (renta fija, variable, etc.).
@@ -42,7 +42,7 @@ Aplicar tu dinero tiene varios beneficios que van más allá de simplemente ahor
 
 
 - **Generación de ingresos pasivos:** recibes intereses sin hacer nada extra.
-- **Protección contra la inflación:** algunos instrumentos ajustan sus rendimientos al aumento de precios, manteniendo tu poder de compra.
+- **Protección contra la [inflación](/es/glossario/es-inflacao):** algunos instrumentos ajustan sus rendimientos al aumento de precios, manteniendo tu poder de compra.
 - **Objetivos claros:** puedes destinar una aplicação a metas específicas como la compra de un auto o la reserva para emergencias.
 - **Flexibilidad:** existen opciones de corto, medio y largo plazo, según tu horizonte de tiempo.
 
@@ -63,14 +63,14 @@ Imagina que tu salario mensual está entre R$3.000 y R$8.000 y decides destinar 
 - **Caso 2:** Salario R$5.200, aplicas R$1.000 en un fondo de inversión de [renta variable](/es/glossario/es-renda-variavel) que históricamente rinde 12 % anual. Después de 2 años, tu inversión crece a R$2.530, generando R$1.530 de ganancias.
 - **Caso 3:** Salario R$7.800, destinas R$2.000 a un [Tesouro Direto](/es/glossario/es-tesouro-direto) (título del gobierno) con tasa de 8 % al año. En 3 años, el capital acumulado alcanza R$6.480, lo que representa R$2.480 de intereses.
 
-En todos los casos, la clave está en ajustar el monto y el tipo de aplicação a tu capacidad de ahorro y a tus metas.
+En todos los casos, la clave está en ajustar el monto y el tipo de aplicação a tu capacidad de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) y a tus metas.
 
 ## Cómo empezar
 
 Dar el primer paso es más fácil de lo que parece. Sigue esta guía paso a paso y verás cómo tu dinero empieza a trabajar para ti:
 
 - **Define tu objetivo:** decide si la aplicação será para emergencias, una compra futura o simplemente generar ingresos extra.
-- **Evalúa tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias):** revisa tus ingresos y gastos; destina entre 10 % y 20 % de tu salario a la aplicación (por ejemplo, R$500 de un salario de R$5.000).
+- **Evalúa tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias):** revisa tus ingresos y [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme); destina entre 10 % y 20 % de tu salario a la aplicación (por ejemplo, R$500 de un salario de R$5.000).
 - **Elige el tipo de aplicação:** si buscas seguridad, opta por renta fija; si toleras más riesgo y buscas mayor rentabilidad, considera renta variable.
 - **Abre una cuenta en una institución confiable:** la mayoría de los bancos y corretoras permiten abrir la cuenta en línea; yo uso la app “Finança Fácil” y siempre me recuerda cuándo es momento de aportar.
 - **Programa aportes automáticos:** configura tu cuenta para que, al recibir tu salario, se transfiera automáticamente el monto que decidiste aplicar.

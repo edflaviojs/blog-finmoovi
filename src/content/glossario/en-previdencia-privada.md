@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is [Private Pension](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico)?
 
-Private Pension is a long-term [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) designed for retirement. You contribute monthly and, in the future, redeem the accumulated value (with returns). It's a complement to the INSS retirement.
+[Private Pension](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) is a long-term [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) designed for retirement. You contribute monthly and, in the future, redeem the accumulated value (with returns). It's a complement to the INSS retirement.
 
 ## PGBL vs. VGBL
 
@@ -42,7 +42,7 @@ Private Pension is a long-term [investment](/en/posts/en-montando-carteira-diver
 
 - Tax [benefits](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) (PGBL)
 - Does not enter into inheritance (succession [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas))
-- Monthly investment discipline
+- Monthly [investment](/en/posts/en-tesouro-direto-para-iniciantes) discipline
 - 10% rate after 10 years (regressive)
 
 ## Disadvantages

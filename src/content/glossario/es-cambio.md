@@ -15,7 +15,7 @@ Câmbio es el intercambio de una moneda por otra. Cuando compras dólares para v
 
 ## ¿Cómo funciona la tasa de câmbio
 
-- **USD/BRL = 5,50** significa que 1 dólar cuesta R$ 5,50
+- **USD/BRL = 5,50** significa que 1 [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) cuesta R$ 5,50
 - La tasa cambia cada segundo en el mercado
 - Está influenciada por los intereses, la [inflación](/es/glossario/es-inflacao), la política y el flujo de capitales
 
@@ -37,4 +37,4 @@ Câmbio es el intercambio de una moneda por otra. Cuando compras dólares para v
 
 ## Câmbio e investimentos
 
-Invertir en activos dolarizados (ETFs internacionales, BDRs) es una forma de protegerse de la devaluación del real. Cuando el dólar sube, tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) internacionales valorizan en reales.
+Invertir en activos dolarizados (ETFs internacionales, BDRs) es una forma de protegerse de la devaluación del real. Cuando el [dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) sube, tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) internacionales valorizan en reales.

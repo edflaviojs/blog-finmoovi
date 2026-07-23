@@ -34,7 +34,7 @@ Net Worth = Assets - Liabilities. In other words: everything you have minus ever
 
 | Assets | Value |
 |--------|-------|
-| Investments | R$ 50.000 |
+| [Investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) | R$ 50.000 |
 | Real estate | R$ 300.000 |
 | Car | R$ 40.000 |
 | **Total Assets** | **R$ 390.000** |

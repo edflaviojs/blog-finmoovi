@@ -26,7 +26,7 @@ Aplicação é simplesmente colocar seu dinheiro em algum produto financeiro esp
 
 
 - **CDB** (Certificado de Depósito Bancário) – funciona como um empréstimo ao banco.  
-- **Tesouro Direto** – compra de títulos emitidos pelo governo.  
+- **[Tesouro Direto](/en/glossario/en-tesouro-direto)** – compra de títulos emitidos pelo governo.  
 - **Fundos de investimento** – grupos de recursos administrados por gestores profissionais.  
 - **LCI/LCA** (Letras de Crédito Imobiliário/Agrícola) – títulos isentos de [imposto de renda](/en/glossario/en-imposto-de-renda) para quem investe em crédito imobiliário ou agrícola.  
 
@@ -34,13 +34,13 @@ A ideia central é que, ao invés de deixar o dinheiro parado na conta corrente,
 
 ## How it works
 
-Quando você decide fazer uma aplicação, segue um processo bem simples: escolhe o produto, define o valor e o prazo, e deixa o dinheiro “trabalhar” até o vencimento ou até que você decida resgatar. Cada tipo de aplicação tem sua própria forma de remuneração – alguns pagam juros fixos, outros variam de acordo com a taxa Selic ou com o desempenho de um índice.  
+Quando você decide fazer uma aplicação, segue um processo bem simples: escolhe o produto, define o valor e o prazo, e deixa o dinheiro “trabalhar” até o vencimento ou até que você decida resgatar. Cada tipo de aplicação tem sua própria forma de remuneração – alguns pagam juros fixos, outros variam de acordo com a taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) ou com o desempenho de um índice.  
 
 - **Escolha o produto** de acordo com seu objetivo (liquidez, rentabilidade ou segurança).  
 - **Defina o valor** que pode comprometer sem prejudicar seu orçamento mensal.  
 - **Acompanhe o rendimento** periodicamente, mas evite mexer demais para não perder benefícios.  
 
-O banco ou a corretora registra sua operação, calcula os juros diariamente e, no final do período, credita o valor total (capital + juros) na sua conta. Se a aplicação for de renda fixa, o retorno costuma ser previsível; se for de renda variável, como fundos de ações, o ganho pode ser maior, mas a volatilidade também aumenta.
+O banco ou a corretora registra sua operação, calcula os juros diariamente e, no final do período, credita o valor total (capital + juros) na sua conta. Se a aplicação for de [renda fixa](/en/glossario/en-renda-fixa), o retorno costuma ser previsível; se for de renda variável, como fundos de ações, o ganho pode ser maior, mas a volatilidade também aumenta.
 
 ## Advantages
 
@@ -76,7 +76,7 @@ Vamos colocar a teoria em prática usando salários típicos no Brasil. Suponha 
 
 **Practical tip:** Sempre calcule o rendimento usando a fórmula de juros compostos para ter uma ideia real do ganho ao longo do tempo.  
 
-**Practical tip:** Se o seu objetivo é ter dinheiro disponível em até 12 meses, prefira aplicações com alta liquidez, como CDBs de curto prazo ou Tesouro Selic.  
+**Practical tip:** Se o seu objetivo é ter dinheiro disponível em até 12 meses, prefira aplicações com alta liquidez, como CDBs de curto prazo ou Tesouro [Selic](/en/posts/en-quotes-semana-1-june-2026).  
 
 **Practical tip:** Diversifique entre renda fixa e variável; assim, você combina segurança com potencial de crescimento.
 

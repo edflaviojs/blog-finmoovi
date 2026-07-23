@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A diversificação é uma estratégia financeira que visa reduzir o risco de perda de valor em um investimento, distribuindo-o em diferentes ativos, como [ações](/en/glossario/en-acoes), títulos, imóveis, entre outros. Isso significa que, em vez de colocar todo o seu dinheiro em uma única coisa, você o divide em várias, para que, se uma delas não der certo, as outras possam compensar. Por exemplo, imagine que você tem R$ 10.000 para investir e decide colocar tudo em ações de uma empresa. Se essa empresa tiver problemas, você pode perder uma grande parte do seu dinheiro. Mas, se você dividir esse R$ 10.000 em ações de diferentes empresas, títulos e um pouco em uma [aplicação](/en/glossario/en-aplicacao) mais segura, como um fundo de investimento, o risco de perda será menor.
+A diversificação é uma estratégia financeira que visa reduzir o risco de perda de [valor](/en/glossario/en-valor) em um investimento, distribuindo-o em diferentes ativos, como [ações](/en/glossario/en-acoes), títulos, imóveis, entre outros. Isso significa que, em vez de colocar todo o seu dinheiro em uma única coisa, você o divide em várias, para que, se uma delas não der certo, as outras possam compensar. Por exemplo, imagine que você tem R$ 10.000 para investir e decide colocar tudo em ações de uma empresa. Se essa empresa tiver problemas, você pode perder uma grande parte do seu dinheiro. Mas, se você dividir esse R$ 10.000 em ações de diferentes empresas, títulos e um pouco em uma [aplicação](/en/glossario/en-aplicacao) mais segura, como um fundo de investimento, o risco de perda será menor.
 
 Listas de ativos para diversificar incluem:
 * Ações de empresas

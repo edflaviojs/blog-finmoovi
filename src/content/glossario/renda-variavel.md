@@ -12,11 +12,11 @@ readingTime: 1
 
 ## O que é Renda Variável?
 
-Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce conforme o mercado. Você pode ganhar muito — ou perder. Inclui ações, [fundos imobiliários](/glossario/fundos-imobiliarios), ETFs, criptomoedas e derivativos.
+Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce conforme o mercado. Você pode ganhar muito — ou perder. Inclui [ações](/glossario/acoes), [fundos imobiliários](/glossario/fundos-imobiliarios), ETFs, criptomoedas e derivativos.
 
 ## Diferença para [Renda Fixa](/glossario/renda-fixa)
 
-| | Renda Fixa | Renda Variável |
+| | [Renda Fixa](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) | Renda Variável |
 |--|-----------|---------------|
 | Retorno | Previsível | Imprevisível |
 | Risco | Baixo | Médio a alto |
@@ -27,12 +27,12 @@ Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce co
 ## Principais [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de renda variável
 
 1. **Ações** — pedaços de empresas
-2. **[Fundos Imobiliários](/posts/fundos-imobiliarios-para-iniciantes-guia-completo) (FIIs)** — cotas de fundos que investem em imóveis
+2. **[Fundos Imobiliários](/posts/fundos-imobiliarios-para-iniciantes-guia-completo) (FIIs)** — cotas de [fundos](/glossario/fundos) que investem em imóveis
 3. **ETFs** — fundos que replicam índices
 4. **Criptomoedas** — ativos digitais descentralizados
 5. **Derivativos** — contratos futuros, opções (avançado)
 
-## Riscos
+## [Riscos](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico)
 
 - Perda de capital (seu [investimento](/posts/montando-carteira-diversificada-com-r-500) pode valer menos)
 - [Volatilidade](/glossario/volatilidade) (oscilações diárias)

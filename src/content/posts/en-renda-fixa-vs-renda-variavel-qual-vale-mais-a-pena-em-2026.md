@@ -51,7 +51,7 @@ The logic is simple: you lend [money](/en/posts/en-avoid-impulse-purchases) (or 
 ### Disadvantages of Fixed Income
 
 1. **Limited profitability** – When [inflation](/en/glossario/en-inflacao) rises, fixed income can fall behind more aggressive [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-).  
-2. **Dependence on the Selic rate** – If the Central Bank keeps rates low for a long period, returns drop.  
+2. **Dependence on the [Selic](/en/posts/en-quotes-semana-3-july-2026) rate** – If the Central Bank keeps rates low for a long period, returns drop.  
 3. **Possible “opportunity cost”** – [Money](/en/posts/en-creating-an-emergency-fund) locked in a 5‑year CDB earns less than stocks that could jump 30 % in six months.
 
 ---
@@ -93,7 +93,7 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 |-----------|--------------|-----------------|
 | **Return predictability** | High (pre‑defined rates) | Low (market‑dependent) |
 | **Capital loss risk** | Low to moderate (FGC, sovereign risk) | High to moderate (company, sector) |
-| **Liquidity** | Generally high (Selic Treasury, CDBs) | Varies (stocks can be highly liquid, FIIs less) |
+| **Liquidity** | Generally high ([Selic](/en/posts/en-quotes-semana-3-june-2026) Treasury, CDBs) | Varies (stocks can be highly liquid, FIIs less) |
 | **Average return (2024‑2025)** | 12 %‑13 % a year (CDI, Selic) | 12 %‑20 % a year (Ibovespa, ETFs) |
 | **Inflation protection** | Moderate (depends on index) | Good (companies can pass inflation on) |
 | **Tax implication** | Regressive IR (15 %‑22.5 %) or exempt (LCI/LCA) | IR of 15 % (stocks) or 20 % (others) |

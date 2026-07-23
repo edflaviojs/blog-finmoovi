@@ -20,7 +20,7 @@ seo:
 
 ## What it is
 
-A **URO** (Unidade de Referência de Operações) é um índice criado por bancos brasileiros para corrigir contratos de crédito de longo prazo, como financiamentos de veículos ou empréstimos consignados. Funciona como uma “régua” que ajusta o [valor](/en/glossario/en-valor) da dívida de acordo com a variação de [juros](/en/glossario/en-juros) e inflação, garantindo que o credor receba o poder de compra original. Diferente do CDI (Certificado de Depósito Interbancário) – que mede a taxa média de empréstimos entre bancos – a URO costuma ser um pouco mais alta, porque inclui um “plus” de risco e administração. Em termos simples, pense na URO como o preço que você paga para “alugar” dinheiro por um período maior que um mês.
+A **URO** (Unidade de Referência de Operações) é um índice criado por bancos brasileiros para corrigir contratos de crédito de longo prazo, como financiamentos de veículos ou empréstimos consignados. Funciona como uma “régua” que ajusta o [valor](/en/glossario/en-valor) da dívida de acordo com a variação de [juros](/en/glossario/en-juros) e inflação, garantindo que o credor receba o poder de compra original. Diferente do [CDI](/en/glossario/en-cdi) (Certificado de Depósito Interbancário) – que mede a [taxa](/en/glossario/en-taxa) média de empréstimos entre bancos – a URO costuma ser um pouco mais alta, porque inclui um “plus” de risco e administração. Em termos simples, pense na URO como o preço que você paga para “alugar” dinheiro por um período maior que um mês.
 
 ![What it is](/images/glossario/uro-inline-1.webp)
 

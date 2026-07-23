@@ -28,7 +28,7 @@ Os títulos do Tesouro Direto podem ser classificados em dois principais tipos: 
 
 
 ## Como funciona
-O Tesouro Direto funciona da seguinte forma: você compra um título do Tesouro Direto por um valor determinado, e o governo se compromete a pagar você de volta com juros após um período de tempo determinado. O período de investimento pode variar de alguns meses a vários anos. Durante esse período, você não pode sacar o dinheiro, mas pode vendê-lo na bolsa de valores se precisar do dinheiro antes do vencimento. É importante lembrar que, assim como qualquer investimento, o Tesouro Direto envolve riscos, como a perda de valor do título ou a não pagamento dos juros.
+O Tesouro Direto funciona da seguinte forma: você compra um título do Tesouro Direto por um valor determinado, e o governo se compromete a pagar você de volta com juros após um período de tempo determinado. O período de investimento pode variar de alguns meses a vários anos. Durante esse período, você não pode sacar o [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso), mas pode vendê-lo na bolsa de valores se precisar do [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) antes do vencimento. É importante lembrar que, assim como qualquer investimento, o Tesouro Direto envolve riscos, como a perda de valor do título ou a não pagamento dos juros.
 
 **Dica prática:** Antes de investir no Tesouro Direto, é importante definir seus objetivos financeiros e o prazo de investimento. Se você precisa do dinheiro em curto prazo, pode ser melhor optar por um título com prazo mais curto, como 6 meses ou 1 ano. Se você pode deixar o dinheiro investido por mais tempo, pode optar por um título com prazo mais longo, como 5 ou 10 anos.
 
@@ -39,7 +39,7 @@ As vantagens do Tesouro Direto incluem:
 * [Diversificação](/glossario/diversificacao): o Tesouro Direto pode ser uma forma de diversificar sua carteira de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), reduzindo o risco de perda de valor.
 * Isenção de impostos: os rendimentos do Tesouro Direto são isentos de impostos para investidores pessoa física, o que pode ser um benefício significativo.
 
-**Dica prática:** É importante lembrar que o Tesouro Direto não é um investimento de curto prazo. Se você precisa do dinheiro em curto prazo, pode ser melhor optar por um investimento mais líquido, como uma poupança ou um fundo de investimento de curto prazo.
+**Dica prática:** É importante lembrar que o Tesouro Direto não é um investimento de curto prazo. Se você precisa do dinheiro em curto prazo, pode ser melhor optar por um investimento mais líquido, como uma [poupança](/glossario/poupanca) ou um fundo de investimento de curto prazo.
 
 ![Vantagens](/images/glossario/tesouro-direto-inline-3.webp)
 
@@ -51,7 +51,7 @@ Os riscos do Tesouro Direto incluem:
 * Risco de liquidez: os títulos do Tesouro Direto podem não ser facilmente vendidos na bolsa de valores, o que pode resultar em perda de valor.
 * Risco de inflação: a inflação pode reduzir o valor real do título, o que pode resultar em perda de valor.
 
-**Dica prática:** É importante diversificar sua carteira de investimentos para reduzir o risco de perda de valor. Além do Tesouro Direto, você pode considerar investir em outros ativos, como ações, fundos de investimento ou imóveis.
+**Dica prática:** É importante diversificar sua carteira de investimentos para reduzir o risco de perda de valor. Além do Tesouro Direto, você pode considerar investir em outros ativos, como ações, [fundos](/glossario/fundos) de investimento ou imóveis.
 
 ## Exemplos práticos
 Vamos considerar alguns exemplos práticos de como o Tesouro Direto pode ser usado:

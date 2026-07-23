@@ -11,7 +11,7 @@ readingTime: 1
 
 ## What is Personal [Budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)?
 
-Personal budget is a plan that shows how much money comes in, how much goes out, and where it goes. It's the most basic and powerful tool in [personal finance](/en/posts/en-30-day-rule-for-purchases). Without a budget, you're driving in the dark.
+Personal [budget](/en/posts/en-how-to-create-personal-budget) is a plan that shows how much [money](/en/posts/en-avoid-impulse-purchases) comes in, how much goes out, and where it goes. It's the most basic and powerful tool in [personal finance](/en/posts/en-30-day-rule-for-purchases). Without a budget, you're driving in the dark.
 
 ## How to create a budget
 

@@ -24,7 +24,7 @@ readingTime: 2
 ### 2. Reserva de emergência completa
 
 - 6 a 12 meses de gastos guardados
-- Em investimento com [liquidez](/glossario/liquidez) diária
+- Em [investimento](/posts/montando-carteira-diversificada-com-r-500) com [liquidez](/glossario/liquidez) diária
 
 ### 3. Sem dívidas caras
 
@@ -32,7 +32,7 @@ readingTime: 2
 - Zero rotativo do cartão
 - Financiamentos sob controle (parcela < 30% da renda)
 
-### 4. Investimentos crescendo
+### 4. [Investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) crescendo
 
 - Aportes mensais regulares
 - Carteira diversificada

@@ -39,7 +39,7 @@ Tudo acontece dentro do app: você baixa, cria um login, envia foto do documento
 - Cadastre CPF, RG e selfie para validação de identidade  
 - Escolha entre abrir conta, solicitar cartão ou investir  
 - Receba o cartão e ative-o pelo app com um toque  
-- Use o QR Code ou a chave Pix para receber e enviar dinheiro  
+- Use o QR Code ou a chave [Pix](/en/glossario/en-pix) para receber e enviar dinheiro  
 
 ## Advantages
 

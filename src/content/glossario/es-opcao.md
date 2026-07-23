@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Una **opción** es un contrato que te da el derecho, pero no la obligación, de comprar o vender un activo (como acciones, divisas o commodities) a un precio preestablecido y dentro de un plazo determinado. Piensa en ella como una reserva de precio: pagas una pequeña suma hoy para asegurarte de que podrás comprar o vender más adelante al precio que acordaste. En el mundo de las [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), las opciones pueden servir para proteger tus inversiones o para intentar obtener ganancias extra sin comprometer todo tu capital.
+Una **opción** es un contrato que te da el derecho, pero no la obligación, de comprar o vender un activo (como acciones, divisas o commodities) a un precio preestablecido y dentro de un plazo determinado. Piensa en ella como una reserva de precio: pagas una pequeña suma hoy para asegurarte de que podrás comprar o vender más adelante al precio que acordaste. En el mundo de las [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), las opciones pueden servir para proteger tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) o para intentar obtener ganancias extra sin comprometer todo tu capital.
 
 ![Qué es](/images/glossario/opcao-inline-1.webp)
 
@@ -81,7 +81,7 @@ Si decides probar las opciones, sigue estos pasos para no meter la pata:
 - **Usa una hoja de cálculo:** registra cada operación (activo, tipo, precio de ejercicio, prima, vencimiento) para evaluar resultados y aprender de los errores.
 - **Revisa el vencimiento:** nunca dejes una opción sin supervisar; si el mercado se mueve a tu favor, actúa antes de que expire.
 
-**Consejo práctico:** **Mantén un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) separado antes de operar con opciones**, así evitas tocar dinero destinado a [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) esenciales.
+**Consejo práctico:** **Mantén un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) separado antes de operar con opciones**, así evitas tocar [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) destinado a [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) esenciales.
 
 **Consejo práctico:** **No te dejes llevar por la emoción**; si la acción sube rápidamente, evalúa si ejercer la opción o venderla en el mercado para asegurar ganancias.
 

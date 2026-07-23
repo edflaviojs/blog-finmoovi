@@ -75,7 +75,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 | **Tesouro [Selic](/en/glossario/en-selic)** (fixed income)        | Low        | Emergency reserve and safety contribution |
 | **CDBs with daily [liquidity](/en/glossario/en-liquidez)**           | Low‑medium | Complement to Selic, returns above savings |
 | **Index funds ([ETF](/en/glossario/en-etf)) of stocks**         | Medium‑high| Exposure to seasonal sectors (retail, energy) |
-| **Real‑estate funds (FIIs)**             | Medium     | Monthly rent receipts, good for passive income |
+| **Real‑estate funds (FIIs)**             | Medium     | Monthly rent receipts, good for [passive income](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo) |
 | **Cryptocurrencies or alternative assets** | High       | Only 5 % of the portfolio, for those who accept volatility |
 
 #### Sample allocation for someone earning R$ 3.500,00
@@ -141,7 +141,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 Yes. Begin with Tesouro Selic, which has daily liquidity and protects capital. As the reserve grows, diversify.
 
 **2. How much should I allocate to FIIs?**  
-It depends on your passive‑income goal. An allocation of 10‑20 % usually yields monthly [dividends](/en/glossario/en-dividendos) without hurting diversification.
+It depends on your passive‑income goal. An allocation of 10‑20 % usually yields monthly [dividends](/en/glossario/en-dividendos) without hurting [diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel).
 
 **3. Is it safe to buy international ETFs?**  
 It’s possible through brokers that offer access to BDRs or overseas investment funds. Check custody fees and taxes.

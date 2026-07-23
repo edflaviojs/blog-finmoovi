@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What are Debentures?
 
-Debentures are debt securities issued by companies. When you buy a debenture, you are lending [money](/en/posts/en-30-day-rule-for-purchases) to the company — and they pay you interest for it. It's like a CDB, but issued by companies (not banks).
+Debentures are debt securities issued by companies. When you buy a debenture, you are lending [money](/en/posts/en-30-day-rule-for-purchases) to the company — and they pay you interest for it. It's like a [CDB](/en/glossario/en-cdb), but issued by companies (not banks).
 
 ## Types
 
@@ -19,12 +19,12 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 
 - Taxed by IR (regressive table)
 - No [FGC guarantee](/en/glossario/en-garantia-fgc)
-- [Yield](/en/glossario/en-yield) generally CDI + spread
+- [Yield](/en/glossario/en-yield) generally [CDI](/en/glossario/en-cdi) + spread
 
 ### Incentivized Debentures
 
 - **Exempt from IR** for individuals
-- Finance infrastructure projects
+- [Finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) infrastructure projects
 - Yield: IPCA + fixed rate
 
 ## Advantages
@@ -34,7 +34,7 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 - [Diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) of [fixed income](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 - Varied terms (2 to 15 years)
 
-## Risks
+## [Risks](/en/posts/en-montando-carteira-diversificada-com-r-500)
 
 - **[Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) risk:** company may not pay (no FGC)
 - **[Liquidity](/en/glossario/en-liquidez) risk:** it may be difficult to sell before maturity

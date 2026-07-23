@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-El término "juros" se refiere a la cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) que se paga o se recibe por el uso de una cantidad de dinero prestada o invertida. En otras palabras, los juros son la compensación por el uso del dinero ajeno. Por ejemplo, si pedimos prestado R$1.000 a un amigo a una tasa de interés del 10% anual, al final del año deberemos devolver R$1.100, donde R$100 son los juros.
+El término "juros" se refiere a la cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) que se paga o se recibe por el uso de una cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) prestada o invertida. En otras palabras, los juros son la compensación por el uso del [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) ajeno. Por ejemplo, si pedimos prestado R$1.000 a un amigo a una tasa de interés del 10% anual, al final del año deberemos devolver R$1.100, donde R$100 son los juros.
 
 * Los juros pueden ser fijos o variables, dependiendo del acuerdo entre las partes.
 * Pueden ser pagados en forma de intereses simples o compuestos.

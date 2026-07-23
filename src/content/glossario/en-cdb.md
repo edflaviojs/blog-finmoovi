@@ -21,7 +21,7 @@ seo:
 O CDB, ou Certificado de Depósito Bancário, é um tipo de investimento oferecido por bancos e instituições financeiras no Brasil. Ele é basicamente um empréstimo que você faz ao banco, e em troca, você recebe um retorno sobre o [valor](/en/glossario/en-valor) investido. O CDB é uma opção popular para quem busca investir seu dinheiro com um nível de risco moderado e uma rentabilidade razoável. Imagine que você tem um salário de R$ 5.000 por mês e consegue poupar R$ 1.000 todo mês. Você pode investir esse valor em um CDB e receber um retorno de acordo com a rentabilidade oferecida pelo banco.
 
 * O CDB pode ser de liquidez diária, semestral ou anual, o que significa que você pode resgatar seu investimento após um determinado período.
-* O retorno do CDB é calculado com base na taxa de [juros](/en/glossario/en-juros) oferecida pelo banco, que pode variar de acordo com o prazo de investimento e a instituição financeira.
+* O retorno do CDB é calculado com base na [taxa](/en/glossario/en-taxa) de [juros](/en/glossario/en-juros) oferecida pelo banco, que pode variar de acordo com o prazo de investimento e a instituição financeira.
 * O CDB é uma opção de investimento que pode ser feita por pessoas físicas ou jurídicas.
 
 ![What it is](/images/glossario/cdb-inline-1.webp)

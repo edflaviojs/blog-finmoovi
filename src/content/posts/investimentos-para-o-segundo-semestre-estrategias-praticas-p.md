@@ -51,7 +51,7 @@ Construir uma [reserva de emergência](/glossario/reserva-de-emergencia) e aloca
 
 
 
-| Item                     | Valor (R$) |
+| Item                     | [Valor](/glossario/valor) (R$) |
 |--------------------------|-----------|
 | Salário bruto mensal     | 3.500,00 |
 | Despesas fixas mensais   | 1.800,00 |
@@ -75,15 +75,15 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 | Tipo de ativo          | Risco | Indicação para 2º semestre |
 |------------------------|-------|-----------------------------|
 | **[Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)** ([renda fixa](/glossario/renda-fixa)) | Baixo | Reserva de emergência e aporte de segurança |
-| **CDBs com [liquidez](/glossario/liquidez) diária** | Baixo‑médio | Complemento ao Selic, rendimento acima da poupança |
+| **CDBs com [liquidez](/glossario/liquidez) diária** | Baixo‑médio | Complemento ao [Selic](/glossario/selic), rendimento acima da poupança |
 | **[Fundos](/glossario/fundos) de índice (ETF) de [ações](/glossario/acoes)** | Médio‑alto | Exposição a setores sazonais (varejo, energia) |
 | **[Fundos imobiliários](/glossario/fundos-imobiliarios) (FIIs)** | Médio | Recebimento de aluguéis mensais, boa para quem quer renda passiva |
 | **Criptomoedas ou ativos alternativos** | Alto | Apenas 5 % da carteira, para quem aceita volatilidade |
 
 #### Exemplo de alocação para quem ganha R$ 3.500,00
 
-- **Tesouro Selic:** 30 % (R$ 153,00) – liquidez imediata.
-- **CDBs de bancos médios:** 20 % (R$ 102,00) – rentabilidade maior que a taxa Selic.
+- **Tesouro [Selic](/posts/cotacoes-semana-1-julho-2026):** 30 % (R$ 153,00) – liquidez imediata.
+- **CDBs de bancos médios:** 20 % (R$ 102,00) – rentabilidade maior que a [taxa](/glossario/taxa) [Selic](/posts/cotacoes-semana-1-junho-2026).
 - **ETF BOVA11 (IBOVESPA)**: 25 % (R$ 128,00) – exposição ao mercado acionário.
 - **FIIs (ex.: KNRI11)**: 20 % (R$ 102,00) – renda mensal de aluguéis.
 - **Criptomoedas:** 5 % (R$ 25,00) – risco controlado, pode ser usado como “potencial de alta”.

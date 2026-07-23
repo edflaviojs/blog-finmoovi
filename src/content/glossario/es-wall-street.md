@@ -41,16 +41,16 @@ Invertir en los instrumentos que cotizan en Wall Street puede ofrecer varios b
 
 
 
-- **Diversificación:** Puedes repartir tu dinero en distintas empresas y sectores, reduciendo el riesgo de que una sola mala decisión te deje sin nada.  
-- **Potencial de crecimiento:** Algunas acciones pueden multiplicar su valor en pocos años, generando ganancias superiores a la inflación.  
-- **Liquidez:** La mayoría de los activos se pueden vender rápidamente, lo que te da acceso a tu dinero cuando lo necesites.  
+- **Diversificación:** Puedes repartir tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en distintas empresas y sectores, reduciendo el riesgo de que una sola mala decisión te deje sin nada.  
+- **Potencial de crecimiento:** Algunas acciones pueden multiplicar su valor en pocos años, generando ganancias superiores a la [inflación](/es/glossario/es-inflacao).  
+- **Liquidez:** La mayoría de los activos se pueden vender rápidamente, lo que te da acceso a tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) cuando lo necesites.  
 - **Acceso a información:** Gracias a la transparencia de los mercados, tienes datos públicos sobre resultados financieros y decisiones corporativas.
 
 ## Riesgos
 
 Como todo en la vida, lo que sube también puede bajar. Es importante que conozcas los peligros antes de lanzarte.  
 
-- **Volatilidad:** Los precios pueden cambiar bruscamente por noticias, crisis económicas o decisiones de política monetaria.  
+- **[Volatilidad](/es/glossario/es-volatilidade):** Los precios pueden cambiar bruscamente por noticias, crisis económicas o decisiones de política monetaria.  
 - **Pérdida de capital:** Si compras una acción y su valor cae, puedes perder parte o todo lo invertido.  
 - **Sobreendeudamiento:** Usar dinero prestado (apalancamiento) para invertir aumenta tanto la posible ganancia como la posible pérdida.  
 - **Falta de conocimiento:** Operar sin entender los conceptos básicos puede llevar a decisiones impulsivas y costosas.

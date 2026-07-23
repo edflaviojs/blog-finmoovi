@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é IOF?
 
-IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sobre diversas operações financeiras: empréstimos, [câmbio](/glossario/cambio), seguros e até investimentos resgatados em menos de 30 dias.
+IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sobre diversas operações financeiras: empréstimos, [câmbio](/glossario/cambio), seguros e até [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) resgatados em menos de 30 dias.
 
 ## Onde o IOF aparece
 
@@ -24,7 +24,7 @@ IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sob
 ### [Cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional
 
 - 4,38% sobre compras em [moeda](/glossario/moeda) estrangeira
-- Incide sobre o valor total da compra
+- Incide sobre o [valor](/glossario/valor) total da compra
 
 ### Empréstimos e financiamentos
 
@@ -38,7 +38,7 @@ IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sob
 
 ## Dica prática
 
-Se você investiu em CDB ou [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a [reserva de emergência](/glossario/reserva-de-emergencia).
+Se você investiu em [CDB](/glossario/cdb) ou [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a [reserva de emergência](/glossario/reserva-de-emergencia).
 
 ## Tabela regressiva do IOF (investimentos)
 

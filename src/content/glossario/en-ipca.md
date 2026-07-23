@@ -26,10 +26,10 @@ The IPCA tracks the prices of a "basket" of products and services that Brazilian
 
 1. **Your [money](/en/posts/en-30-day-rule-for-purchases) loses value:** if the IPCA is 5% per year, R$ 100 today will be worth R$ 95 in a year
 2. **[Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026):** returns below the IPCA mean you're losing [money](/en/posts/en-avoid-impulse-purchases)
-3. **[Selic](/en/glossario/en-selic):** the Central Bank raises or lowers the Selic to control the IPCA
+3. **[Selic](/en/glossario/en-selic):** the Central Bank raises or lowers the [Selic](/en/posts/en-quotes-semana-1-july-2026) to control the IPCA
 4. **Adjustments:** rents, health plans, and salaries are adjusted by the IPCA
 
-## IPCA and investments
+## IPCA and [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 
 For your [money](/en/posts/en-creating-an-emergency-fund) to really grow, your investments need to [yield](/en/glossario/en-yield) **above the IPCA**. That's why there are securities like the Tesouro IPCA+, which guarantee real returns (above inflation).
 

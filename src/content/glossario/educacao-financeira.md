@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é [Educação Financeira](/posts/7-erros-financeiros-iniciante)?
 
-Educação financeira é aprender a lidar com dinheiro de forma inteligente. Não é sobre ficar rico rápido — é sobre entender como o dinheiro funciona para tomar melhores decisões no dia a dia.
+Educação financeira é aprender a lidar com [dinheiro](/posts/cashback-inteligente) de forma inteligente. Não é sobre ficar rico rápido — é sobre entender como o dinheiro funciona para tomar melhores decisões no dia a dia.
 
 ## Os 4 pilares
 
@@ -32,7 +32,7 @@ Educação financeira é aprender a lidar com dinheiro de forma inteligente. Nã
 ### 3. Poupar
 
 - Pagar-se primeiro (separar antes de gastar)
-- Automatizar transferências para investimentos
+- Automatizar transferências para [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 - Ter metas claras de [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 - [Reserva de emergência](/glossario/reserva-de-emergencia) como prioridade
 

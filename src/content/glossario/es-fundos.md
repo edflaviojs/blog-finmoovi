@@ -20,7 +20,7 @@ seo:
 ## Qué es
 Los fondos son una forma de inversión colectiva que permite a los inversores combinar sus recursos para invertir en una variedad de activos, como acciones, bonos, inmuebles, etc. Esto se hace a través de una empresa que administra el fondo, seleccionando las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y distribuyendo los rendimientos entre los inversores. Los fondos pueden ser de diferentes tipos, como fondos de acciones, fondos de renta fija, fondos de inversión inmobiliaria, entre otros.
 
-Los fondos ofrecen una forma accesible para que las personas con diferentes niveles de ingresos puedan invertir en el mercado financiero. Por ejemplo, si tienes un salario de R$5.000 al mes y deseas invertir R$500, puedes unirte a un fondo que te permita diversificar tus inversiones sin necesidad de tener un gran capital inicial.
+Los fondos ofrecen una forma accesible para que las personas con diferentes niveles de ingresos puedan invertir en el [mercado financiero](/es/posts/es-cotizaciones-semana-1-julio-2026). Por ejemplo, si tienes un salario de R$5.000 al mes y deseas invertir R$500, puedes unirte a un fondo que te permita diversificar tus inversiones sin necesidad de tener un gran capital inicial.
 
 ![Qué es](/images/glossario/fundos-inline-1.webp)
 
@@ -59,7 +59,7 @@ Aunque los fondos pueden ofrecer varias ventajas, también conllevan riesgos. Al
 **Consejo práctico:** Es importante leer y entender el prospecto del fondo y los informes financieros antes de invertir. Por ejemplo, si estás considerando invertir en un fondo de acciones, es importante investigar la estrategia de inversión del fondo y los costos asociados.
 
 ## Ejemplos prácticos
-Los fondos pueden ser una forma accesible para que las personas con diferentes niveles de ingresos puedan invertir en el mercado financiero. Por ejemplo:
+Los fondos pueden ser una forma accesible para que las personas con diferentes niveles de ingresos puedan invertir en el [mercado financiero](/es/posts/es-cotizaciones-semana-1-junio-2026). Por ejemplo:
 * Si tienes un salario de R$8.000 al mes y deseas invertir R$2.000 en un fondo de acciones, puedes unirte a un fondo que te permita diversificar tus inversiones y potencialmente obtener un rendimiento más alto que una cuenta de ahorros tradicional.
 * Si tienes un salario de R$4.000 al mes y deseas invertir R$1.000 en un fondo de renta fija, puedes unirte a un fondo que te permita obtener un rendimiento más estable y seguro.
 

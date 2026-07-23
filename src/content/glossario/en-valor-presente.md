@@ -35,7 +35,7 @@ In other words: receiving R$ 10,000 in 2 years is the same as receiving R$ 7,831
 
 1. **Comparing [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)** with different terms
 2. **Evaluating proposals** ("pay R$ 50,000 upfront or R$ 60,000 in 12 installments?")
-3. **Pricing** fixed-income securities
+3. **Pricing** fixed-[income](/en/posts/en-montando-carteira-diversificada-com-r-500) securities
 4. **Business decisions** (is this project worth it?)
 
 ## Application in everyday life
@@ -47,4 +47,4 @@ When a store offers "12 installments with no interest of R$ 100 or R$ 1,000 upfr
 
 ## Simple rule
 
-[Money](/en/posts/en-creating-an-emergency-fund) today is worth more than money tomorrow. Always consider the "cost of time" when making financial decisions.
+[Money](/en/posts/en-creating-an-emergency-fund) today is worth more than [money](/en/posts/en-difference-between-investing-and-saving) tomorrow. Always consider the "cost of time" when making financial decisions.

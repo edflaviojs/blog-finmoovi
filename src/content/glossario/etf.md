@@ -18,9 +18,9 @@ seo:
 ---
 
 ## O que é
-O ETF, ou Exchange-Traded Fund, é um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) que permite aos investidores ter uma carteira diversificada de ativos, como [ações](/glossario/acoes), títulos, commodities, etc., por meio de um único [investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico). É como se você comprasse uma pequena parte de uma grande carteira de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), que é negociada em [bolsa de valores](/glossario/bolsa-de-valores), como as ações. Isso significa que você pode comprar e vender ETFs durante o dia, assim como faria com ações, e ainda ter a [diversificação](/glossario/diversificacao) de uma carteira de investimentos.
+O ETF, ou Exchange-Traded Fund, é um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) que permite aos investidores ter uma carteira diversificada de ativos, como [ações](/glossario/acoes), títulos, commodities, etc., por meio de um único [investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico). É como se você comprasse uma pequena parte de uma grande carteira de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), que é negociada em [bolsa de valores](/glossario/bolsa-de-valores), como as ações. Isso significa que você pode comprar e vender ETFs durante o dia, assim como faria com ações, e ainda ter a [diversificação](/glossario/diversificacao) de uma carteira de [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-).
 
-O ETF é uma opção interessante para quem quer começar a investir, pois oferece uma forma simples e acessível de diversificar sua carteira. Além disso, os ETFs são geralmente mais baratos do que os [fundos](/glossario/fundos) de investimento tradicionais, pois não têm custos de gestão tão altos.
+O ETF é uma opção interessante para quem quer começar a investir, pois oferece uma forma simples e acessível de diversificar sua carteira. Além disso, os ETFs são geralmente mais baratos do que os [fundos](/glossario/fundos) de [investimento](/posts/tesouro-direto-para-iniciantes) tradicionais, pois não têm custos de gestão tão altos.
 
 ![O que é](/images/glossario/etf-inline-1.webp)
 
@@ -29,7 +29,7 @@ O ETF é uma opção interessante para quem quer começar a investir, pois ofere
 ## Como funciona
 Um ETF é criado por uma empresa de investimentos, que seleciona um conjunto de ativos para incluir no fundo. Esses ativos podem ser ações, títulos, commodities, etc. A empresa de investimentos então emite unidades do ETF, que são negociadas em [bolsa de valores](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel). Quando você compra um ETF, você está comprando uma unidade do fundo, que representa uma parte proporcional dos ativos que compõem o fundo.
 
-Por exemplo, se você comprar um ETF que segue o índice Ibovespa, você estará comprando uma unidade do fundo que representa uma parte proporcional das ações que compõem o índice. Se o índice subir, o valor do seu ETF também subirá, e vice-versa.
+Por exemplo, se você comprar um ETF que segue o índice Ibovespa, você estará comprando uma unidade do fundo que representa uma parte proporcional das ações que compõem o índice. Se o índice subir, o [valor](/glossario/valor) do seu ETF também subirá, e vice-versa.
 
 * Os ETFs podem ser negociados durante o dia, assim como as ações
 * Os ETFs oferecem diversificação, pois permitem que você invista em uma carteira de ativos

@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Nubank es una fintech brasileña que ofrece una cuenta digital y una tarjeta de crédito sin tarifas de mantenimiento. En lugar de una sucursal física, todo se maneja desde una app que puedes descargar en tu celular. La empresa nació en 2013 con la idea de simplificar la vida financiera, y hoy cuenta con millones de usuarios en Brasil y otros países de América Latina. En términos simples, Nubank es como un banco “de bolsillo” que te permite pagar, ahorrar y controlar tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) sin la burocracia de los bancos tradicionales.
+Nubank es una fintech brasileña que ofrece una cuenta digital y una [tarjeta de crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) sin tarifas de mantenimiento. En lugar de una sucursal física, todo se maneja desde una app que puedes descargar en tu celular. La empresa nació en 2013 con la idea de simplificar la vida financiera, y hoy cuenta con millones de usuarios en Brasil y otros países de América Latina. En términos simples, Nubank es como un banco “de bolsillo” que te permite pagar, ahorrar y controlar tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) sin la burocracia de los bancos tradicionales.
 
 ![Qué es](/images/glossario/nubank-inline-1.webp)
 
@@ -82,7 +82,7 @@ Una vez activada, configura tus notificaciones, crea subcuentas y establece un l
 
 ## Empieza hoy
 
-No esperes a que el próximo mes sea diferente; con Nubank puedes tomar el control de tu dinero desde hoy. Descarga la app, abre tu cuenta y empieza a organizar tus gastos con la claridad que mereces. ¡Tu futuro financiero te lo agradecerá!
+No esperes a que el próximo mes sea diferente; con Nubank puedes tomar el control de tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) desde hoy. Descarga la app, abre tu cuenta y empieza a organizar tus gastos con la claridad que mereces. ¡Tu futuro financiero te lo agradecerá!
 
 ---
 

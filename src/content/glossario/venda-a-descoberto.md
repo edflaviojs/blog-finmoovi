@@ -46,16 +46,16 @@ A venda a descoberto pode ser uma ferramenta útil para diversificar sua estrat�
 
 - **Proteção de carteira**: funciona como um seguro quando você tem ações que podem cair; a venda a descoberto pode compensar parte da perda.  
 - **Potencial de lucro em mercados em baixa**: você ganha quando o preço cai, algo que investidores tradicionais não conseguem fazer.  
-- **Alavancagem moderada**: ao usar margem ([dinheiro](/posts/cashback-inteligente) emprestado da corretora), você controla mais ações com menos capital próprio.
+- **[Alavancagem](/glossario/alavancagem) moderada**: ao usar margem ([dinheiro](/posts/cashback-inteligente) emprestado da corretora), você controla mais ações com menos capital próprio.
 
 **Dica prática:** use a venda a descoberto apenas para cobrir posições que já possui, nunca como seu único plano de investimento.
 
-## Riscos
+## [Riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Apesar das vantagens, a operação traz riscos que podem superar o valor investido. É importante entender bem cada ponto antes de entrar:
 
 - **Perda ilimitada**: ao contrário da compra de ação, onde o máximo que você perde é o valor investido, na venda a descoberto o preço da ação pode subir indefinidamente, gerando prejuízo sem limite.  
-- **Chamada de margem**: se o mercado se mover contra você, a corretora pode exigir que você deposite mais dinheiro (margin call) para manter a posição aberta.  
+- **Chamada de margem**: se o mercado se mover contra você, a corretora pode exigir que você deposite mais [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) (margin call) para manter a posição aberta.  
 - **Custos de empréstimo**: algumas ações têm taxas de aluguel altas, o que reduz o lucro potencial.  
 - **Risco de liquidação**: em eventos de alta [volatilidade](/glossario/volatilidade), a corretora pode fechar sua posição automaticamente, realizando prejuízo.
 
@@ -76,7 +76,7 @@ Se você decidiu experimentar a venda a descoberto, siga estes passos para inici
 
 - **Abra conta em uma corretora que ofereça margem**: plataformas como a **Rico** ou a **XP Invest** permitem operar a descoberto e têm suporte ao cliente para tirar dúvidas.  
 - **Estude o conceito de margem**: entenda quanto da sua conta será usado como garantia e quais são as taxas de juros aplicáveis.  
-- **Escolha ativos com boa liquidez**: ações muito negociadas têm menor custo de empréstimo e são mais fáceis de comprar de volta.  
+- **Escolha ativos com boa [liquidez](/glossario/liquidez)**: ações muito negociadas têm menor custo de empréstimo e são mais fáceis de comprar de volta.  
 - **Defina um stop‑loss**: estabeleça antecipadamente o preço máximo que você está disposto a pagar para fechar a posição, limitando perdas.  
 - **Monitore o mercado diariamente**: notícias, resultados trimestrais e eventos macroeconômicos podem mover o preço rapidamente.  
 - **Comece com pequeno volume**: teste a estratégia com 5% a 10% do seu capital de investimento, aumentando gradualmente conforme ganha confiança.

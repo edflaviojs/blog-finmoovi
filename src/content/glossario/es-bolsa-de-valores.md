@@ -37,12 +37,12 @@ Algunos términos importantes que debes conocer son:
 
 ## Ventajas
 Invertir en la bolsa de valores puede ser una excelente forma de crecer tu patrimonio a largo plazo. Algunas de las ventajas de invertir en la bolsa de valores son:
-* Posibilidad de obtener altos rendimientos: las acciones pueden aumentar significativamente de valor si la empresa tiene un buen desempeño
+* Posibilidad de obtener altos rendimientos: las acciones pueden aumentar significativamente de [valor](/es/glossario/es-valor) si la empresa tiene un buen desempeño
 * Diversificación: puedes invertir en diferentes empresas y sectores para reducir el riesgo
 * [Liquidez](/es/glossario/es-liquidez): puedes vender tus acciones fácilmente en el mercado de valores
 * Participación en el crecimiento económico: al invertir en la bolsa de valores, estás participando en el crecimiento económico de las empresas y del país
 
-**Consejo práctico:** es importante diversificar tus inversiones para reducir el riesgo. Por ejemplo, si tienes un salario de R$5.000 al mes, podrías invertir R$1.000 en acciones de una empresa de tecnología, R$1.000 en acciones de una empresa de consumo y R$1.000 en acciones de una empresa de servicios.
+**Consejo práctico:** es importante diversificar tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para reducir el riesgo. Por ejemplo, si tienes un salario de R$5.000 al mes, podrías invertir R$1.000 en acciones de una empresa de tecnología, R$1.000 en acciones de una empresa de consumo y R$1.000 en acciones de una empresa de servicios.
 
 ![Ventajas](/images/glossario/bolsa-de-valores-inline-3.webp)
 
@@ -68,7 +68,7 @@ Para empezar a invertir en la bolsa de valores, debes seguir los siguientes paso
 * Abre una cuenta de corredor de valores: debes abrir una cuenta con un corredor de valores para poder comprar y vender acciones
 * Investiga y analiza las empresas: debes investigar y analizar las empresas antes de invertir en ellas
 * Establece un plan de inversión: debes establecer un plan de inversión y mantenerlo a largo plazo
-* Comienza con una cantidad pequeña: no es necesario invertir una gran cantidad de dinero para empezar. Puedes comenzar con una cantidad pequeña y aumentar tus inversiones a medida que te sientas más cómodo.
+* Comienza con una cantidad pequeña: no es necesario invertir una gran cantidad de [dinero](/es/posts/es-cashback-inteligente) para empezar. Puedes comenzar con una cantidad pequeña y aumentar tus inversiones a medida que te sientas más cómodo.
 
 ## Empieza hoy
 No esperes más para empezar a invertir en la bolsa de valores. Con una cantidad pequeña de dinero y un plan de inversión sólido, puedes empezar a crecer tu patrimonio a largo plazo. Recuerda que la bolsa de valores es un mercado a largo plazo, y es importante mantener tus inversiones durante un período de tiempo para obtener los mejores resultados. **Consejo práctico:** no te dejes intimidar por la complejidad del mercado de valores. Con un poco de investigación y planificación, puedes empezar a invertir en la bolsa de valores y alcanzar tus objetivos financieros. ¡Empieza hoy!

@@ -45,4 +45,4 @@ Si tienes R$ 500.000 para invertir en CDB:
 
 ## Consejo importante
 
-Bancos más pequeños generalmente pagan tasas más altas (120-130% del CDI) justamente porque son menos conocidos. Con la garantía del FGC, el riesgo es prácticamente el mismo que el de un gran banco — pero el rendimiento es mayor.
+Bancos más pequeños generalmente pagan tasas más altas (120-130% del [CDI](/es/glossario/es-cdi)) justamente porque son menos conocidos. Con la garantía del FGC, el riesgo es prácticamente el mismo que el de un gran banco — pero el rendimiento es mayor.

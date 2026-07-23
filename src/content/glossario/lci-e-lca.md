@@ -31,7 +31,7 @@ Para o investidor, funcionam da mesma forma.
 ## Desvantagens
 
 - Carência mínima de 90 dias (não pode resgatar antes)
-- Investimento mínimo geralmente maior (R$ 1.000-5.000)
+- [Investimento](/posts/montando-carteira-diversificada-com-r-500) mínimo geralmente maior (R$ 1.000-5.000)
 - Menos opções disponíveis que CDB
 
 ## LCI/LCA vs. CDB
@@ -49,5 +49,5 @@ Neste exemplo, rendem igual. Mas uma LCI de 90% do CDI já ganha do CDB de 100%.
 ## Quando investir em LCI/LCA
 
 - Quando não vai precisar do [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) por pelo menos 90 dias
-- Para diversificar a renda fixa
+- Para diversificar a [renda fixa](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026)
 - Quando encontrar taxas acima de 90% do CDI

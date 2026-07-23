@@ -27,7 +27,7 @@ Wall Street não é só um endereço na cidade de Nova York; é o nome dado 
 
 ## Como funciona
 
-A mecânica básica é simples: empresas emitem ações (pedacinhos de propriedade) e as colocam à venda nas bolsas; investidores compram essas ações esperando que o preço suba ou que recebam dividendos (parte dos lucros distribuídos). Quando você compra uma ação, está se tornando sócio da empresa, ainda que em proporção muito pequena. A negociação acontece em tempo real, e os preços são determinados pela lei da oferta e da demanda – quanto mais gente quer comprar, mais alta a cotação, e vice‑versa.
+A mecânica básica é simples: empresas emitem ações (pedacinhos de propriedade) e as colocam à venda nas bolsas; investidores compram essas ações esperando que o preço suba ou que recebam [dividendos](/glossario/dividendos) (parte dos lucros distribuídos). Quando você compra uma ação, está se tornando sócio da empresa, ainda que em proporção muito pequena. A negociação acontece em tempo real, e os preços são determinados pela lei da oferta e da demanda – quanto mais gente quer comprar, mais alta a cotação, e vice‑versa.
 
 - **Oferta:** quantidade de ações disponíveis para compra.
 - **Demanda:** quantidade de investidores querendo comprar essas ações.
@@ -43,8 +43,8 @@ Investir em ativos negociados na Wall Street traz benefícios que vão além d
 
 
 - **[Diversificação](/glossario/diversificacao):** ao comprar ações de empresas de diferentes setores (tecnologia, saúde, energia), você espalha o risco, como se fosse um prato variado em vez de comer só uma comida.
-- **Liquidez:** as ações das grandes companhias são facilmente compradas e vendidas, permitindo transformar o investimento em dinheiro rápido se precisar.
-- **Potencial de retorno:** historicamente, o mercado de ações tem rendido mais que a poupança ou títulos de renda fixa, especialmente no longo prazo.
+- **Liquidez:** as ações das grandes companhias são facilmente compradas e vendidas, permitindo transformar o investimento em [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) rápido se precisar.
+- **Potencial de retorno:** historicamente, o mercado de ações tem rendido mais que a poupança ou títulos de [renda fixa](/glossario/renda-fixa), especialmente no longo prazo.
 - **Acesso a empresas globais:** mesmo morando no Brasil, você pode investir em gigantes como Apple ou Coca‑Cola, participando do crescimento delas.
 
 ## Riscos
@@ -71,7 +71,7 @@ Outro cenário: você tem R$8.000 de salário e decide comprar um fundo de índi
 Dar o primeiro passo pode parecer complicado, mas com organização tudo fica mais simples.
 
 - **Abra uma conta em corretora:** escolha uma que ofereça plataforma amigável e taxas baixas. Muitas têm apps que funcionam como um assistente financeiro, facilitando a compra e venda de ativos.
-- **Defina seu objetivo:** se o objetivo é acumular para a aposentadoria, pense em prazos longos; se quer um dinheiro extra para a viagem dos sonhos, talvez prefira [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de médio prazo.
+- **Defina seu objetivo:** se o objetivo é acumular para a aposentadoria, pense em prazos longos; se quer um [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) extra para a viagem dos sonhos, talvez prefira [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de médio prazo.
 - **Monte um plano de aporte:** **Dica prática:** reserve um percentual fixo do seu salário (por exemplo, 10 % do seu R$3.000) logo que receber, antes de qualquer outra despesa.
 - **Diversifique desde o início:** **Dica prática:** não coloque todo o dinheiro em uma única ação; distribua entre ações, fundos e, se quiser, títulos de renda fixa.
 - **Acompanhe e ajuste:** **Dica prática:** revise sua carteira a cada seis meses, verificando se os ativos ainda alinham com seus objetivos e tolerância ao risco.

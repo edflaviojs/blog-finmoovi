@@ -28,11 +28,11 @@ A poupança é a conta bancária mais conhecida no Brasil para guardar [dinheiro
 
 ## Como funciona
 
-Quando você coloca dinheiro na poupança, o banco calcula o rendimento com base na Taxa Referencial (TR) + 0,5 % ao mês, ou 70 % da taxa Selic quando ela está acima de 8,5 % ao ano. O cálculo é feito automaticamente e o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) aparece na sua conta no dia do aniversário do depósito.
+Quando você coloca [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) na poupança, o banco calcula o rendimento com base na Taxa Referencial (TR) + 0,5 % ao mês, ou 70 % da taxa Selic quando ela está acima de 8,5 % ao ano. O cálculo é feito automaticamente e o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) aparece na sua conta no dia do aniversário do depósito.
 
 - **Depósito:** pode ser feito a qualquer momento, por transferência, DOC, TED ou até mesmo em caixa eletrônico.  
 - **Rendimento:** só é creditado a cada 30 dias, na data de aniversário da [aplicação](/glossario/aplicacao).  
-- **Liquidez:** você pode sacar o dinheiro a qualquer hora, sem multa, mas perde o rendimento do dia.
+- **[Liquidez](/glossario/liquidez):** você pode sacar o [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) a qualquer hora, sem multa, mas perde o rendimento do dia.
 
 ## Vantagens
 
@@ -51,7 +51,7 @@ A poupança tem alguns pontos que a tornam atrativa para quem está começando a
 
 Mesmo sendo considerada segura, a poupança tem limitações que podem comprometer o objetivo de crescimento do seu patrimônio.
 
-- **Baixo rendimento:** em cenários de alta inflação, a rentabilidade pode ser inferior ao custo de vida, fazendo o poder de compra diminuir.  
+- **Baixo rendimento:** em cenários de alta [inflação](/glossario/inflacao), a rentabilidade pode ser inferior ao custo de vida, fazendo o poder de compra diminuir.  
 - **Perda de oportunidade:** ao deixar todo o dinheiro na poupança, você pode perder ganhos maiores que outros produtos, como CDBs ou fundos de [renda fixa](/glossario/renda-fixa).  
 - **Dependência de políticas:** a fórmula de cálculo muda quando a taxa Selic varia, o que pode reduzir ainda mais o retorno.
 

@@ -11,7 +11,7 @@ readingTime: 1
 
 ## ¿Qué es CDI?
 
-El CDI (Certificado de Depósito Interbancário) es la tasa de interés utilizada en préstamos entre bancos. En la práctica, es la referencia para la mayoría de las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de renta fija en Brasil.
+El CDI (Certificado de Depósito Interbancário) es la tasa de interés utilizada en préstamos entre bancos. En la práctica, es la referencia para la mayoría de las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de [renta fija](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) en Brasil.
 
 ## CDI vs [Selic](/es/glossario/es-selic)
 
@@ -19,7 +19,7 @@ El CDI sigue muy de cerca la tasa [Selic](/es/posts/es-cotizaciones-semana-1-jul
 
 ## ¿Por qué importa?
 
-Cuando una inversión rinde "100% del CDI", significa que paga exactamente la tasa CDI. Ejemplos:
+Cuando una [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) rinde "100% del CDI", significa que paga exactamente la tasa CDI. Ejemplos:
 - **100% CDI** = rendimiento estándar
 - **110% CDI** = por encima de la media (bueno)
 - **80% CDI** = por debajo de la media (malo, como la cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado))

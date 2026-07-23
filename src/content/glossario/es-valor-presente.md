@@ -20,7 +20,7 @@ Valor Presente é quanto vale HOJE um dinheiro que você vai receber no FUTURO. 
 Onde:
 - VP = Valor Presente
 - VF = Valor Futuro
-- i = taxa de [juros](/es/glossario/es-juros)
+- i = [taxa](/es/glossario/es-taxa) de [juros](/es/glossario/es-juros)
 - n = número de períodos
 
 ## Ejemplo práctico

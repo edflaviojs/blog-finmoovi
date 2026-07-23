@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## What are Real Estate Funds (FIIs)?
+## What are [Real Estate Funds](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo) (FIIs)?
 
 Real Estate Funds are like "investor condominiums" that pool [money](/en/posts/en-30-day-rule-for-purchases) to buy properties (malls, warehouses, offices) or securities from the real estate sector. You buy shares on the [stock](/en/glossario/en-stock) exchange and receive monthly rents.
 
@@ -22,7 +22,7 @@ Real Estate Funds are like "investor condominiums" that pool [money](/en/posts/e
 
 ## Advantages
 
-- Tax-free monthly income
+- Tax-free monthly [income](/en/posts/en-montando-carteira-diversificada-com-r-500)
 - Invest in properties with little [money](/en/posts/en-creating-an-emergency-fund) (from R$ 10)
 - [Diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) (a fund can have several properties)
 - [Liquidity](/en/glossario/en-liquidez) (sell instantly on the stock exchange)

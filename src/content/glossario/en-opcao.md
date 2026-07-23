@@ -19,14 +19,14 @@ seo:
 
 ## What it is
 
-Opção é um contrato que dá ao comprador o direito – mas não a obrigação – de comprar ou vender um ativo (ação, índice, moeda etc.) por um preço pré‑definido, chamado preço de exercício, até uma data limite. Em termos simples, é como reservar um preço hoje para usar depois, caso a situação seja favorável.  
+Opção é um contrato que dá ao comprador o direito – mas não a obrigação – de comprar ou vender um ativo (ação, índice, [moeda](/en/glossario/en-moeda) etc.) por um preço pré‑definido, chamado preço de exercício, até uma data limite. Em termos simples, é como reservar um preço hoje para usar depois, caso a situação seja favorável.  
 
 ![What it is](/images/glossario/opcao-inline-1.webp)
 
 
 
 - **Direito, não obrigação:** você pode decidir exercer ou deixar a opção expirar.  
-- **Preço de exercício:** valor fixo que será usado para comprar ou vender o ativo.  
+- **Preço de exercício:** [valor](/en/glossario/en-valor) fixo que será usado para comprar ou vender o ativo.  
 - **Data de vencimento:** último dia em que a opção pode ser exercida.  
 - **Prêmio:** valor pago ao vendedor da opção para garantir esse direito.
 

@@ -20,7 +20,7 @@ seo:
 ## What it is
 O termo "juros" é comum em nosso dia a dia, especialmente quando falamos sobre empréstimos, investimentos e contas bancárias. Mas, afinal, o que são juros? Em resumo, juros são os valores adicionais que você paga ou recebe em cima de um montante principal, dependendo se você é o tomador do empréstimo ou o investidor. Por exemplo, se você toma um empréstimo de R$ 5.000,00 com juros de 10% ao ano, após um ano, você terá que pagar R$ 5.500,00 (R$ 5.000,00 de principal + R$ 500,00 de juros).
 
-Quando se trata de investimentos, os juros podem ser seus amigos. Imagine que você investe R$ 3.000,00 em uma [aplicação](/en/glossario/en-aplicacao) que rende 8% ao ano. Após um ano, seu investimento valerá R$ 3.240,00, pois você ganhou R$ 240,00 em juros. É importante entender que os juros podem ser simples ou compostos. Juros simples são calculados apenas sobre o valor principal, enquanto juros compostos são calculados sobre o principal e sobre os juros anteriores, o que pode fazer seu investimento crescer de forma exponencial com o tempo.
+Quando se trata de investimentos, os juros podem ser seus amigos. Imagine que você investe R$ 3.000,00 em uma [aplicação](/en/glossario/en-aplicacao) que rende 8% ao ano. Após um ano, seu investimento valerá R$ 3.240,00, pois você ganhou R$ 240,00 em juros. É importante entender que os juros podem ser simples ou compostos. Juros simples são calculados apenas sobre o [valor](/en/glossario/en-valor) principal, enquanto juros compostos são calculados sobre o principal e sobre os juros anteriores, o que pode fazer seu investimento crescer de forma exponencial com o tempo.
 
 ![What it is](/images/glossario/juros-inline-1.webp)
 
@@ -44,7 +44,7 @@ No entanto, é importante escolher investimentos seguros e que sejam adequados p
 
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-Do outro lado da moeda, os juros também podem ser um risco significativo se você não gerenciar bem suas finanças. Tomar empréstimos com taxas de juros altas pode levar a uma dívida crescente e difícil de pagar. Além disso, investimentos com taxas de juros muito altas podem ser mais arriscados, pois geralmente vêm com um risco maior de perda de capital.
+Do outro lado da [moeda](/en/glossario/en-moeda), os juros também podem ser um risco significativo se você não gerenciar bem suas finanças. Tomar empréstimos com taxas de juros altas pode levar a uma dívida crescente e difícil de pagar. Além disso, investimentos com taxas de juros muito altas podem ser mais arriscados, pois geralmente vêm com um risco maior de perda de capital.
 
 **Practical tip:** Nunca tome um empréstimo sem ter um plano claro de como pagá-lo. Considere sua renda mensal e reserve uma parte para a quitação da dívida. Por exemplo, se você ganha R$ 5.500,00 por mês e tem um empréstimo de R$ 10.000,00 com juros de 15% ao ano, planeje pagar pelo menos R$ 1.000,00 por mês para evitar que a dívida cresça descontroladamente.
 

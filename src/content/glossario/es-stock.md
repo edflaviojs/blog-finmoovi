@@ -30,7 +30,7 @@ Una **stock**, o acción, es una pequeña parte de la propiedad de una empresa q
 
 El mercado de acciones funciona como una subasta gigante donde compradores y vendedores intercambian esas rebanadas de pizza. Cada acción tiene un precio que sube o baja según la oferta y la demanda, y ese precio refleja la confianza de los inversores en la empresa. Cuando decides comprar, lo haces a través de una corredora (broker) que actúa como intermediario. El proceso básico se resume en los siguientes pasos:
 
-- Abres una cuenta en una corredora y depositas dinero.
+- Abres una cuenta en una corredora y depositas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).
 - Seleccionas la empresa cuyas acciones te interesan.
 - Indicas cuántas acciones quieres comprar y a qué precio (orden de mercado o límite).
 - La corredora ejecuta la orden y las acciones quedan a tu nombre.
@@ -38,7 +38,7 @@ El mercado de acciones funciona como una subasta gigante donde compradores y ven
 
 ## Ventajas
 
-Invertir en acciones tiene varios atractivos que la hacen popular entre quienes buscan hacer crecer su dinero:
+Invertir en acciones tiene varios atractivos que la hacen popular entre quienes buscan hacer crecer su [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado):
 
 ![Ventajas](/images/glossario/stock-inline-3.webp)
 
@@ -46,8 +46,8 @@ Invertir en acciones tiene varios atractivos que la hacen popular entre quienes 
 
 - **Potencial de alta rentabilidad:** Históricamente, las acciones han generado retornos superiores a los de la mayoría de los instrumentos de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) tradicionales.
 - **Diversificación:** Puedes repartir tu inversión en diferentes empresas y sectores, reduciendo el riesgo global.
-- **Liquidez:** La mayoría de las acciones se pueden vender rápidamente en la bolsa, lo que te permite acceder a tu dinero cuando lo necesites.
-- **Participación en el éxito:** Si la empresa crece, el valor de tus acciones también lo hace, y puedes recibir dividendos como ingreso extra.
+- **[Liquidez](/es/glossario/es-liquidez):** La mayoría de las acciones se pueden vender rápidamente en la bolsa, lo que te permite acceder a tu dinero cuando lo necesites.
+- **Participación en el éxito:** Si la empresa crece, el [valor](/es/glossario/es-valor) de tus acciones también lo hace, y puedes recibir dividendos como ingreso extra.
 
 ## Riesgos
 

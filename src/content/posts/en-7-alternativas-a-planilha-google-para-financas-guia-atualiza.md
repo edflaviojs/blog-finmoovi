@@ -42,14 +42,14 @@ Mobills is one of Brazil’s oldest personal‑finance apps. In two sentences, i
 
 **Cons**  
 - Free tier limits the number of categories and doesn’t allow PDF report export.  
-- No multi‑currency support, which can be a problem for travelers or [dollar](/en/posts/en-quotes-semana-1-july-2026) shoppers.
+- No [multi‑currency](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) support, which can be a problem for travelers or [dollar](/en/posts/en-quotes-semana-1-july-2026) shoppers.
 
 **Price**  
 Free (with ads) – Premium plan from R$ 14.90/month.
 
 ---
 
-## 2. FinMoovi – The new multifunctional competitor
+## 2. [FinMoovi](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) – The new multifunctional competitor
 
 **Description**  
 FinMoovi arrives as an “all‑in‑one” app that combines [expense control](/en/posts/en-metodo-50-30-20-para-orcamento), budgeting, and multi‑currency handling. In two sentences, it highlights **smart voice capture**, **AI‑driven automatic categorization**, and **offline operation**, perfect for anyone who doesn’t want to rely on the internet all the time.

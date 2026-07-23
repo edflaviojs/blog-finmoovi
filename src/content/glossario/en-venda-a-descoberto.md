@@ -30,7 +30,7 @@ Venda a descoberto, ou “short selling”, é quando você vende uma ação que
 
 A operação acontece em três passos básicos:  
 
-- **Empréstimo:** você pede as ações emprestadas a uma corretora ou a outro investidor.  
+- **Empréstimo:** você pede as [ações](/en/glossario/en-acoes) emprestadas a uma corretora ou a outro investidor.  
 - **Venda:** vende as ações no mercado à vista pelo preço atual.  
 - **Recompra:** quando (ou se) o preço cair, compra as mesmas ações a um valor menor e devolve ao doador, ficando com a diferença.  
 
@@ -40,7 +40,7 @@ Todo esse processo acontece dentro da mesma corretora, que cuida do empréstimo 
 
 - **Potencial de lucro em mercados em baixa:** enquanto a maioria dos investidores só ganha quando o preço sobe, o short permite lucrar quando tudo desce.  
 - **[Diversificação](/en/glossario/en-diversificacao) de estratégias:** adiciona uma ferramenta a mais ao seu arsenal, ajudando a equilibrar a carteira em diferentes ciclos econômicos.  
-- **Proteção (hedge):** pode ser usado para proteger investimentos long (comprados) contra quedas inesperadas, reduzindo o risco global.  
+- **Proteção ([hedge](/en/glossario/en-hedge)):** pode ser usado para proteger investimentos long (comprados) contra quedas inesperadas, reduzindo o risco global.  
 
 ![Advantages](/images/glossario/venda-a-descoberto-inline-3.webp)
 

@@ -18,10 +18,10 @@ seo:
 ---
 
 ## O que é
-Ações são partes de propriedade de uma empresa que podem ser compradas e vendidas por investidores. Quando você compra uma ação, você está basicamente comprando uma pequena parte daquela empresa. Isso significa que, se a empresa cresce e se torna mais valiosa, o valor da sua ação também aumenta. Por exemplo, imagine que você comprou uma ação da empresa XYZ por R$ 50 e, após um ano, a empresa lança um novo produto que se torna um sucesso, fazendo com que o valor da ação suba para R$ 75. Você poderia vender sua ação por R$ 75 e ter um lucro de R$ 25.
+Ações são partes de propriedade de uma empresa que podem ser compradas e vendidas por investidores. Quando você compra uma ação, você está basicamente comprando uma pequena parte daquela empresa. Isso significa que, se a empresa cresce e se torna mais valiosa, o [valor](/glossario/valor) da sua ação também aumenta. Por exemplo, imagine que você comprou uma ação da empresa XYZ por R$ 50 e, após um ano, a empresa lança um novo produto que se torna um sucesso, fazendo com que o valor da ação suba para R$ 75. Você poderia vender sua ação por R$ 75 e ter um lucro de R$ 25.
 
  
-As ações são negociadas em bolsas de valores, como a B3 no Brasil, e podem ser compradas e vendidas por meio de corretoras de valores. É importante entender que as ações são um tipo de investimento de risco, o que significa que há a possibilidade de perder [dinheiro](/posts/cashback-inteligente) se a empresa não se sair bem.
+As ações são negociadas em bolsas de valores, como a B3 no Brasil, e podem ser compradas e vendidas por meio de corretoras de valores. É importante entender que as ações são um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) de risco, o que significa que há a possibilidade de perder [dinheiro](/posts/cashback-inteligente) se a empresa não se sair bem.
 
 ![O que é](/images/glossario/acoes-inline-1.webp)
 
@@ -61,7 +61,7 @@ Vamos considerar um exemplo. Imagine que você tem um salário de R$ 5.000 por m
 **Dica prática:** _É importante monitorar regularmente o desempenho de suas ações e ajustar seu portfólio conforme necessário. Isso pode envolver vender ações que não estão se saindo bem e comprar novas ações que têm potencial de crescimento._
 
 ## Comece hoje
-Agora que você entende melhor o que são ações e como elas funcionam, é hora de começar a investir. Lembre-se de que investir em ações é uma jornada de longo prazo e que é importante ser paciente e disciplinado. Com as **[dicas](/posts/7-erros-financeiros-iniciante) práticas** certas e um pouco de conhecimento, você pode começar a construir sua riqueza e alcançar seus objetivos financeiros. Então, não espere mais! Comece a investir em ações hoje e veja seu dinheiro crescer ao longo do tempo.
+Agora que você entende melhor o que são ações e como elas funcionam, é hora de começar a investir. Lembre-se de que investir em ações é uma jornada de longo prazo e que é importante ser paciente e disciplinado. Com as **[dicas](/posts/7-erros-financeiros-iniciante) práticas** certas e um pouco de conhecimento, você pode começar a construir sua riqueza e alcançar seus objetivos financeiros. Então, não espere mais! Comece a investir em ações hoje e veja seu [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) crescer ao longo do tempo.
 
 ---
 

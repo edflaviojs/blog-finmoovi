@@ -23,13 +23,13 @@ A [taxa](/en/glossario/en-taxa) [Selic](/en/posts/en-quotes-semana-1-july-2026) 
 
 * A taxa [Selic](/en/posts/en-quotes-semana-2-july-2026) é usada como referência para calcular as taxas de juros de empréstimos e investimentos
 * Ela é definida pelo Copom do Banco Central do Brasil
-* A taxa Selic pode influenciar a inflação e o crescimento econômico do país
+* A taxa [Selic](/en/posts/en-quotes-semana-3-july-2026) pode influenciar a inflação e o crescimento econômico do país
 
 ![What it is](/images/glossario/selic-inline-1.webp)
 
 
 
-A taxa Selic é importante porque ajuda a controlar a inflação e a manter a estabilidade econômica. Quando a taxa Selic é alta, os empréstimos se tornam mais caros e as pessoas tendem a poupar mais e gastar menos, o que pode ajudar a reduzir a inflação. Por outro lado, quando a taxa Selic é baixa, os empréstimos se tornam mais baratos e as pessoas tendem a gastar mais, o que pode estimular o crescimento econômico.
+A taxa [Selic](/en/posts/en-quotes-semana-3-june-2026) é importante porque ajuda a controlar a inflação e a manter a estabilidade econômica. Quando a taxa Selic é alta, os empréstimos se tornam mais caros e as pessoas tendem a poupar mais e gastar menos, o que pode ajudar a reduzir a inflação. Por outro lado, quando a taxa Selic é baixa, os empréstimos se tornam mais baratos e as pessoas tendem a gastar mais, o que pode estimular o crescimento econômico.
 
 ## How it works
 A taxa Selic é definida pelo Copom do Banco Central do Brasil, que se reúne regularmente para discutir a política monetária do país. O Copom considera fatores como a inflação, o crescimento econômico e o desemprego ao definir a taxa Selic. Quando a taxa Selic é alterada, ela pode afetar os juros de empréstimos e investimentos em todo o país. Por exemplo, se a taxa Selic for reduzida, os juros de empréstimos como o crédito pessoal e o financiamento de imóveis podem diminuir, tornando-os mais acessíveis às pessoas.

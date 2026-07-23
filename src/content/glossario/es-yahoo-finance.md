@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Yahoo Finance es una plataforma en línea que reúne información bursátil, noticias económicas y herramientas de análisis para cualquier persona que quiera seguir sus inversiones o simplemente entender mejor el mundo del dinero. No necesitas ser un trader profesional para usarla; la página está diseñada para que cualquiera, desde un estudiante hasta un trabajador con salario de R$4.500, pueda consultar cotizaciones de acciones, bonos y divisas, y leer artículos que explican qué está pasando en la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026). En esencia, es como un periódico financiero digital, pero con datos actualizados al minuto y la posibilidad de crear listas personalizadas de tus activos favoritos.
+Yahoo Finance es una plataforma en línea que reúne información bursátil, noticias económicas y herramientas de análisis para cualquier persona que quiera seguir sus inversiones o simplemente entender mejor el mundo del [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia). No necesitas ser un trader profesional para usarla; la página está diseñada para que cualquiera, desde un estudiante hasta un trabajador con salario de R$4.500, pueda consultar cotizaciones de acciones, bonos y divisas, y leer artículos que explican qué está pasando en la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026). En esencia, es como un periódico financiero digital, pero con datos actualizados al minuto y la posibilidad de crear listas personalizadas de tus activos favoritos.
 
 ![Qué es](/images/glossario/yahoo-finance-inline-1.webp)
 
@@ -31,7 +31,7 @@ La herramienta funciona como un agregador de datos: extrae información de bolsa
 
 - **Búsqueda de ticker:** escribe el código del activo y obtén su cotización al instante.  
 - **Gráficos interactivos:** visualiza la evolución del precio en diferentes periodos (día, mes, año).  
-- **Noticias y análisis:** lee artículos que explican por qué sube o baja un valor.  
+- **Noticias y análisis:** lee artículos que explican por qué sube o baja un [valor](/es/glossario/es-valor).  
 - **Alertas personalizadas:** configura notificaciones por correo o móvil cuando se cumplan tus criterios.  
 
 ## Ventajas
@@ -61,9 +61,9 @@ Aunque la plataforma es muy útil, también conlleva ciertos riesgos que debes t
 
 A continuación, algunos escenarios cotidianos que ilustran cómo usar Yahoo Finance para mejorar la gestión de un salario típico en Brasil:
 
-- **Ahorro para la jubilación:** Juan gana R$5.000 al mes y decide destinar R$500 a un fondo de pensiones. En Yahoo Finance busca el ticker **BOVA11** (ETF que replica el índice Ibovespa) y observa que ha tenido un rendimiento del 8 % anual. Con esa información, decide invertir sus R$500 mensuales en ese fondo, sabiendo que su dinero crecerá a largo plazo.  
+- **[Ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) para la jubilación:** Juan gana R$5.000 al mes y decide destinar R$500 a un fondo de pensiones. En Yahoo Finance busca el ticker **BOVA11** (ETF que replica el índice Ibovespa) y observa que ha tenido un rendimiento del 8 % anual. Con esa información, decide invertir sus R$500 mensuales en ese fondo, sabiendo que su dinero crecerá a largo plazo.  
 - **Compra de acciones de una empresa conocida:** María, con un salario de R$7.200, quiere comprar acciones de una compañía de tecnología que le gusta. Busca **AAPL** (Apple) y revisa el gráfico de los últimos 6 meses. Ve que el precio ha subido un 12 % y que la empresa paga [dividendos](/es/glossario/es-dividendos) trimestrales. **Consejo práctico:** **Antes de comprar, verifica la tendencia del precio y la política de dividendos para asegurarte de que la inversión se alinea con tus objetivos.**  
-- **Control de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) en divisas:** Carlos gana R$3.800 y planea viajar a Estados Unidos. Usa la sección de divisas de Yahoo Finance para seguir el tipo de cambio USD/BRL. Cuando el dólar está a R$5,20, compra la cantidad necesaria y evita sorpresas al pagar en el extranjero. **Consejo práctico:** **Configura una alerta de tipo de cambio para recibir notificaciones cuando la cotización alcance el nivel que consideres favorable.**  
+- **Control de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) en divisas:** Carlos gana R$3.800 y planea viajar a Estados Unidos. Usa la sección de divisas de Yahoo Finance para seguir el tipo de [cambio](/es/glossario/es-cambio) USD/BRL. Cuando el dólar está a R$5,20, compra la cantidad necesaria y evita sorpresas al pagar en el extranjero. **Consejo práctico:** **Configura una alerta de tipo de cambio para recibir notificaciones cuando la cotización alcance el nivel que consideres favorable.**  
 
 ## Cómo empezar
 

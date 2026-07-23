@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is Financial Independence?
 
-Financial independence is when your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) generate enough income to pay all your bills — without having to work. You work because you want to, not because you need to.
+Financial independence is when your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) generate enough [income](/en/posts/en-montando-carteira-diversificada-com-r-500) to pay all your bills — without having to work. You work because you want to, not because you need to.
 
 ## The Formula
 
@@ -43,7 +43,7 @@ It depends on how much you save:
 
 1. Calculate your real monthly expenses
 2. Define your "number" (expenses × 25)
-3. Increase your savings rate
+3. Increase your [savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) rate
 4. Invest consistently (monthly contributions)
 5. Reinvest all earnings
 6. Increase income (promotions, extra income)

@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Xing ling é um método de investimento coletivo que combina a simplicidade de um fundo de [renda fixa](/en/glossario/en-renda-fixa) com a flexibilidade de um aplicativo de micro‑investimento. Em vez de comprar um título inteiro, você compra “pedaços” de um portfólio que já está diversificado em títulos do governo, CDBs (Certificados de Depósito Bancário) e debêntures de empresas sólidas. Cada “ling” representa uma fração de R$1.000 do portfólio, e você pode adquirir quantos quiser, de acordo com o dinheiro que tem disponível. O objetivo é oferecer rendimentos previsíveis, porém superiores à poupança, sem exigir conhecimento avançado de mercado.
+Xing ling é um método de investimento coletivo que combina a simplicidade de um fundo de [renda fixa](/en/glossario/en-renda-fixa) com a flexibilidade de um aplicativo de micro‑investimento. Em vez de comprar um título inteiro, você compra “pedaços” de um portfólio que já está diversificado em títulos do governo, CDBs (Certificados de Depósito Bancário) e debêntures de empresas sólidas. Cada “ling” representa uma fração de R$1.000 do portfólio, e você pode adquirir quantos quiser, de acordo com o dinheiro que tem disponível. O objetivo é oferecer rendimentos previsíveis, porém superiores à [poupança](/en/glossario/en-poupanca), sem exigir conhecimento avançado de mercado.
 
 ![What it is](/images/glossario/xing-ling-inline-1.webp)
 
@@ -62,7 +62,7 @@ Embora o xing ling seja mais seguro que ações individuais, ele não está livr
 - **Risco tecnológico:** vulnerabilidades no app podem comprometer dados.  
 - **Liquidez limitada:** embora seja diária, resgates muito grandes podem levar a pequenas perdas de rendimento.
 
-**Practical tip:** **Verifique sempre a taxa de administração antes de investir; prefira fundos com custos abaixo de 0,8 % ao ano.**  
+**Practical tip:** **Verifique sempre a taxa de administração antes de investir; prefira [fundos](/en/glossario/en-fundos) com custos abaixo de 0,8 % ao ano.**  
 
 ## Practical examples
 

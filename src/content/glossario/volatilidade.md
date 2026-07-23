@@ -20,7 +20,7 @@ Volatilidade é a intensidade com que o preço de um [investimento](/posts/monta
 |-------|-------------|----------------------|
 | [Poupança](/glossario/poupanca) | Quase zero | 0% |
 | [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) | Muito baixa | 0,03% |
-| Ações (Ibovespa) | Média | 1-2% |
+| [Ações](/glossario/acoes) (Ibovespa) | Média | 1-2% |
 | [Bitcoin](/glossario/bitcoin) | Muito alta | 3-10% |
 | Meme coins | Extrema | 10-50% |
 

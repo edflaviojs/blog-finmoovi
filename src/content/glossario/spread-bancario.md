@@ -17,8 +17,8 @@ Imagine que você deposita R$ 1.000,00 em uma conta [poupança](/glossario/poupa
 
 ## Exemplos Práticos
 Vamos considerar alguns exemplos para entender melhor como o spread bancário funciona:
-- **Exemplo 1:** Você deposita R$ 5.000,00 em uma conta poupança com uma taxa de juros de 0,5% ao mês. O banco paga R$ 25,00 em juros por mês. Se o banco empresta esse dinheiro a outra pessoa com uma taxa de juros de 2,0% ao mês, ganhará R$ 100,00 em juros por mês. O spread bancário é de 1,5% (2,0% - 0,5%).
-- **Exemplo 2:** Você pega um empréstimo de R$ 10.000,00 com uma taxa de juros de 3,0% ao mês. O banco cobra R$ 300,00 em juros por mês. Se o banco pagou 1,0% de juros para obter esse dinheiro, o spread bancário é de 2,0% (3,0% - 1,0%).
+- **Exemplo 1:** Você deposita R$ 5.000,00 em uma conta poupança com uma taxa de juros de 0,5% ao mês. O banco paga R$ 25,00 em juros por mês. Se o banco empresta esse [dinheiro](/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re) a outra pessoa com uma taxa de juros de 2,0% ao mês, ganhará R$ 100,00 em juros por mês. O spread bancário é de 1,5% (2,0% - 0,5%).
+- **Exemplo 2:** Você pega um empréstimo de R$ 10.000,00 com uma taxa de juros de 3,0% ao mês. O banco cobra R$ 300,00 em juros por mês. Se o banco pagou 1,0% de juros para obter esse [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito), o spread bancário é de 2,0% (3,0% - 1,0%).
 
 ## Tabela Comparativa
 A tabela abaixo ilustra como o spread bancário varia com diferentes taxas de juros:

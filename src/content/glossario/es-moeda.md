@@ -18,9 +18,9 @@ seo:
 ---
 
 ## Qué es la moeda
-La moeda es un término financiero que se refiere a la unidad de cuenta y medio de [cambio](/es/glossario/es-cambio) de un país. En Brasil, la moeda oficial es el Real (R$). La moeda es utilizada para comprar bienes y servicios, pagar deudas y ahorrar. En resumen, la moeda es el dinero que usamos en nuestro día a día.
+La moeda es un término financiero que se refiere a la unidad de cuenta y medio de [cambio](/es/glossario/es-cambio) de un país. En Brasil, la moeda oficial es el Real (R$). La moeda es utilizada para comprar bienes y servicios, pagar deudas y ahorrar. En resumen, la moeda es el [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) que usamos en nuestro día a día.
 
-La moeda puede ser física, como los billetes y monedas, o digital, como el dinero en nuestras cuentas bancarias o en [aplicaciones](/es/posts/es-5-alternativas-ao-mobills-em-2026) de pagos. En la actualidad, la mayoría de las transacciones se realizan de manera digital, lo que ha facilitado la gestión del dinero y ha reducido la necesidad de llevar efectivo.
+La moeda puede ser física, como los billetes y monedas, o digital, como el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) en nuestras cuentas bancarias o en [aplicaciones](/es/posts/es-5-alternativas-ao-mobills-em-2026) de pagos. En la actualidad, la mayoría de las transacciones se realizan de manera digital, lo que ha facilitado la gestión del dinero y ha reducido la necesidad de llevar efectivo.
 
 ![Qué es la moeda](/images/glossario/moeda-inline-1.webp)
 

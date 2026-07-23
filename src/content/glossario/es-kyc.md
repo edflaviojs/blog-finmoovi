@@ -53,10 +53,10 @@ Aunque el proceso KYC es importante para la seguridad y la confianza en las tran
 **Consejo práctico:** Es importante leer y entender los términos y condiciones de la institución financiera antes de abrir una cuenta, para saber qué información se requiere y cómo se utilizará.
 
 ## Ejemplos prácticos
-Por ejemplo, si un cliente quiere abrir una cuenta de ahorro en una institución financiera, el proceso KYC puede incluir la verificación de su identidad y ocupación. Si el cliente tiene un salario de R$3.000 al mes y quiere depositar R$10.000 en su cuenta, la institución financiera puede requerir documentación adicional para verificar el origen de los fondos.
+Por ejemplo, si un cliente quiere abrir una cuenta de [ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus) en una institución financiera, el proceso KYC puede incluir la verificación de su identidad y ocupación. Si el cliente tiene un salario de R$3.000 al mes y quiere depositar R$10.000 en su cuenta, la institución financiera puede requerir documentación adicional para verificar el origen de los fondos.
 
 * Un cliente que tiene un negocio propio y quiere abrir una cuenta de negocios puede necesitar proporcionar documentación adicional, como el registro de la empresa y los estados financieros.
-* Un cliente que tiene un salario de R$8.000 al mes y quiere invertir en una cuenta de inversión puede necesitar proporcionar documentación adicional, como la declaración de impuestos y el historial crediticio.
+* Un cliente que tiene un salario de R$8.000 al mes y quiere invertir en una cuenta de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) puede necesitar proporcionar documentación adicional, como la declaración de impuestos y el historial crediticio.
 
 **Consejo práctico:** Es importante mantener actualizada la información personal y financiera en la institución financiera, para evitar problemas en el futuro.
 

@@ -39,7 +39,7 @@ Esses passos são válidos tanto para um CDB (Certificado de Depósito Bancário
 
 ## Vantagens
 
-A renda fixa traz benefícios que combinam bem com quem tem salário entre R$3.000 e R$8.000 e quer fazer o dinheiro trabalhar sem surpresas:
+A renda fixa traz benefícios que combinam bem com quem tem salário entre R$3.000 e R$8.000 e quer fazer o [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) trabalhar sem surpresas:
 
 ![Vantagens](/images/glossario/renda-fixa-inline-3.webp)
 
@@ -56,7 +56,7 @@ Mesmo sendo mais seguro que ações, a renda fixa não está livre de riscos. É
 
 - **Risco de crédito:** Se o emissor (banco ou empresa) falir, você pode perder parte ou todo o investimento, a menos que esteja coberto pelo FGC.
 - **Risco de taxa:** Em títulos pós‑fixados, a rentabilidade acompanha a taxa Selic ou o CDI; se essas taxas caírem, seu ganho diminui.
-- **Risco de inflação:** Em títulos pré‑fixados, se a inflação subir muito, o poder de compra dos juros recebidos pode ser corroído.
+- **Risco de [inflação](/glossario/inflacao):** Em títulos pré‑fixados, se a inflação subir muito, o poder de compra dos juros recebidos pode ser corroído.
 - **Risco de liquidez:** Alguns títulos só podem ser vendidos no mercado secundário, e o preço pode ser menor que o valor investido se precisar resgatar antes do vencimento.
 
 ## Exemplos práticos
@@ -80,7 +80,7 @@ Iniciar na renda fixa não precisa ser complicado. Siga estes passos simples:
 - **Abra uma conta em uma corretora:** Escolha uma que ofereça plataforma amigável e taxa zero para Tesouro Direto.
 - **Defina o objetivo:** Reserve um valor para emergência, para a aposentadoria ou para a compra de um bem.
 - **Escolha o título:** Avalie prazo, taxa (pré‑fixada, pós‑fixada ou híbrida) e garantia (FGC ou governo).
-- **Faça a aplicação:** Use o app da corretora, informe o valor e confirme a operação. O dinheiro já fica aplicado em poucos minutos.
+- **Faça a [aplicação](/glossario/aplicacao):** Use o app da corretora, informe o valor e confirme a operação. O [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) já fica aplicado em poucos minutos.
 - **Acompanhe o rendimento:** Verifique periodicamente o extrato e ajuste a estratégia se a taxa Selic mudar ou se surgir um objetivo diferente.
 
 ## Comece hoje

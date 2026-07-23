@@ -22,14 +22,14 @@ A recomendação é ter entre **3 a 6 meses** dos seus [gastos](/posts/5-dicas-p
 
 A reserva precisa ter **[liquidez](/glossario/liquidez) diária** (acesso imediato):
 - Tesouro [Selic](/glossario/selic)
-- CDB com liquidez diária (100% CDI ou mais)
+- [CDB](/glossario/cdb) com liquidez diária (100% CDI ou mais)
 - Conta remunerada
 
 **Nunca** deixe em [ações](/glossario/acoes), [fundos imobiliários](/glossario/fundos-imobiliarios) ou [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) com prazo de resgate.
 
 ## Como montar?
 
-1. Defina o valor alvo (3-6 meses de gastos)
+1. Defina o [valor](/glossario/valor) alvo (3-6 meses de gastos)
 2. Separe um valor fixo todo mês (10-20% da renda)
 3. Automatize a transferência
 4. Não toque até completar o valor alvo

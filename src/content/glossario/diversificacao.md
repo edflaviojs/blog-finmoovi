@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é [diversificação](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel)
-A diversificação é uma estratégia de investimento que visa reduzir o risco ao distribuir os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em diferentes ativos, como [ações](/glossario/acoes), títulos, imóveis, entre outros. Isso significa que, em vez de colocar todos os ovos na mesma cesta, você espalha seus investimentos por diferentes áreas, minimizando assim o impacto de perdas em um único investimento. Imagine que você tem um salário de R$ 5.000 por mês e decide investir 10% disso, ou R$ 500, em ações de uma única empresa. Se essa empresa tiver uma crise, você pode perder uma grande parte do seu investimento. Mas, se você diversificar seus R$ 500 em diferentes ações, títulos e outros ativos, o risco de perda é muito menor.
+A diversificação é uma estratégia de [investimento](/posts/montando-carteira-diversificada-com-r-500) que visa reduzir o risco ao distribuir os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em diferentes ativos, como [ações](/glossario/acoes), títulos, imóveis, entre outros. Isso significa que, em vez de colocar todos os ovos na mesma cesta, você espalha seus investimentos por diferentes áreas, minimizando assim o impacto de perdas em um único investimento. Imagine que você tem um salário de R$ 5.000 por mês e decide investir 10% disso, ou R$ 500, em ações de uma única empresa. Se essa empresa tiver uma crise, você pode perder uma grande parte do seu investimento. Mas, se você diversificar seus R$ 500 em diferentes ações, títulos e outros ativos, o risco de perda é muito menor.
 
 ## Como funciona
 A diversificação funciona como um seguro para os seus investimentos. Quando você diversifica, você está reduzindo a dependência de um único investimento para gerar retornos. Isso significa que, se um dos seus investimentos não vai bem, os outros podem compensar as perdas. Por exemplo, se você investe R$ 1.000 em ações de uma empresa de tecnologia e R$ 1.000 em títulos de uma empresa de alimentos, e a empresa de tecnologia tem uma crise, o [valor](/glossario/valor) das suas ações pode cair. Mas, se a empresa de alimentos está fazendo bem, o valor dos títulos pode subir, compensando as perdas. **Dica prática:** sempre verifique a [liquidez](/glossario/liquidez) dos seus investimentos, ou seja, a facilidade com que você pode converter seus investimentos em [dinheiro](/posts/cashback-inteligente).
@@ -47,7 +47,7 @@ Embora a diversificação seja uma estratégia de investimento muito útil, tamb
 
 ## Exemplos práticos
 Aqui estão alguns exemplos práticos de diversificação:
-* Investir R$ 1.000 em ações de uma empresa de tecnologia, R$ 1.000 em títulos de uma empresa de alimentos e R$ 1.000 em um fundo de investimento imobiliário.
+* Investir R$ 1.000 em ações de uma empresa de tecnologia, R$ 1.000 em títulos de uma empresa de alimentos e R$ 1.000 em um fundo de [investimento imobiliário](/posts/fundos-imobiliarios-para-iniciantes-guia-completo).
 * Investir R$ 500 em ações de uma empresa de energia, R$ 500 em títulos de uma empresa de saúde e R$ 500 em um fundo de investimento em commodities.
 * Investir R$ 2.000 em um fundo de investimento diversificado que inclui ações, títulos e imóveis.
 **Dica prática:** é importante considerar os custos associados a cada investimento, como taxas de gestão e impostos, antes de fazer uma decisão de investimento.

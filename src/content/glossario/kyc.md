@@ -37,7 +37,7 @@ As instituições financeiras utilizam essas informações para verificar a iden
 
 ## Vantagens
 O KYC oferece várias vantagens para os clientes e as instituições financeiras. Algumas das principais vantagens incluem:
-* **Redução do risco de lavagem de dinheiro e financiamento do terrorismo**: O KYC ajuda a identificar e prevenir atividades ilegais, protegendo os clientes e as instituições financeiras contra perdas financeiras e danos à reputação.
+* **Redução do risco de lavagem de [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) e financiamento do terrorismo**: O KYC ajuda a identificar e prevenir atividades ilegais, protegendo os clientes e as instituições financeiras contra perdas financeiras e danos à reputação.
 * **Melhoria da segurança**: O KYC ajuda a garantir que as contas sejam abertas apenas por pessoas legítimas, reduzindo o risco de fraudes e atividades ilegais.
 * **Conformidade com regulamentações**: O KYC ajuda as instituições financeiras a cumprir com as regulamentações AML e CFT, evitando multas e penalidades.
 
@@ -45,7 +45,7 @@ O KYC oferece várias vantagens para os clientes e as instituições financeiras
 Embora o KYC ofereça várias vantagens, também há alguns riscos associados a esse processo. Alguns dos principais riscos incluem:
 * **Inconveniência para os clientes**: O processo de KYC pode ser demorado e burocrático, o que pode ser frustrante para os clientes que precisam abrir uma conta rapidamente.
 * **Custo para as instituições financeiras**: O KYC pode ser um processo caro para as instituições financeiras, especialmente se elas precisam investir em tecnologia e treinamento para cumprir com as regulamentações.
-* **Risco de erro**: Se o processo de KYC não for realizado corretamente, as instituições financeiras podem estar sujeitas a riscos de lavagem de dinheiro e financiamento do terrorismo.
+* **Risco de erro**: Se o processo de KYC não for realizado corretamente, as instituições financeiras podem estar sujeitas a riscos de lavagem de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) e financiamento do terrorismo.
 
 ![Vantagens](/images/glossario/kyc-inline-3.webp)
 

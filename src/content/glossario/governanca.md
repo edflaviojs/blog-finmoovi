@@ -32,7 +32,7 @@ A governança é um termo que pode parecer complexo, mas é fundamental para ent
 
 ## Como funciona
 
-A governança financeira pessoal funciona basicamente como um sistema de gestão que você aplica a sua vida financeira. Isso significa que você estabelece regras e procedimentos para lidar com seu dinheiro, desde a receita até as despesas, investimentos e reservas. Por exemplo, se você ganha R$5.000 por mês, sua governança financeira pode incluir regras como:
+A governança financeira pessoal funciona basicamente como um sistema de gestão que você aplica a sua vida financeira. Isso significa que você estabelece regras e procedimentos para lidar com seu [dinheiro](/posts/cashback-inteligente), desde a receita até as despesas, investimentos e reservas. Por exemplo, se você ganha R$5.000 por mês, sua governança financeira pode incluir regras como:
  
 - **Dica prática:** Destinar 30% da renda para despesas essenciais como aluguel, serviços e alimentação.
 - **Dica prática:** Alocar 20% para [poupança](/glossario/poupanca) e investimentos.
@@ -52,7 +52,7 @@ No entanto, existem riscos se você não implementar uma governança financeira 
 
 ## Exemplos práticos
 
-Vamos considerar um exemplo prático. Imagine que você ganha R$6.000 por mês e deseja comprar um apartamento no [valor](/glossario/valor) de R$200.000 em cinco anos. Com uma governança financeira bem planejada, você pode estabelecer metas de poupança mensal e investir em uma [aplicação](/glossario/aplicacao) que renda [juros](/glossario/juros) para alcançar seu objetivo. Aqui estão algumas dicas para começar:
+Vamos considerar um exemplo prático. Imagine que você ganha R$6.000 por mês e deseja comprar um apartamento no [valor](/glossario/valor) de R$200.000 em cinco anos. Com uma governança financeira bem planejada, você pode estabelecer metas de poupança mensal e investir em uma [aplicação](/glossario/aplicacao) que renda [juros](/glossario/juros) para alcançar seu objetivo. Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para começar:
  
 * **Dica prática:** Utilize um aplicativo de [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026) para monitorar suas receitas e despesas.
 * **Dica prática:** Crie um fundo de emergência para cobrir despesas inesperadas.

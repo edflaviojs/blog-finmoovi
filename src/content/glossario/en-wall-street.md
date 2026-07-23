@@ -27,7 +27,7 @@ Wall Street is the nickname for the financial district in New York City, but
 
 - **Stock exchange** – a place (now mostly digital) where shares of companies are bought and sold.  
 - **Brokerage firms** – companies that act as intermediaries, executing trades for you.  
-- **Investment banks** – institutions that help companies go public and raise money.  
+- **Investment banks** – institutions that help companies go public and raise [money](/en/posts/en-avoid-impulse-purchases).  
 - **Financial media** – outlets that report on market moves and shape public opinion.
 
 ## How it works
@@ -37,7 +37,7 @@ When a company wants to grow, it can issue shares (ownership pieces) on a stock 
 - **Buy order** – you tell your broker you want to purchase a certain number of shares at a given price.  
 - **Sell order** – you instruct the broker to sell shares you already own.  
 - **Market price** – the current price at which a share can be bought or sold, constantly updated.  
-- **Dividends** – a portion of a company’s profit paid to shareholders, often quarterly.
+- **[Dividends](/en/glossario/en-dividendos)** – a portion of a company’s profit paid to shareholders, often quarterly.
 
 ## Advantages
 
@@ -56,7 +56,7 @@ Investing through Wall Street gives you access to a world of growth opportunit
 
 Higher returns come with higher risk. Stock prices can swing wildly due to economic news, company scandals, or even rumors spread by Wall Street analysts. If a company’s earnings drop, its share price may tumble, eroding your investment. Moreover, market timing—trying to buy low and sell high—often leads to losses for most people.
 
-- **Market volatility** – rapid price changes can shrink your portfolio in a short time.  
+- **Market [volatility](/en/glossario/en-volatilidade)** – rapid price changes can shrink your portfolio in a short time.  
 - **Company-specific risk** – poor management or product failures can hurt a single stock.  
 - **Liquidity risk** – in a thinly traded stock, you might not find a buyer at your desired price.  
 - **Emotional bias** – fear and greed can push you into bad decisions, like panic‑selling during a dip.
@@ -74,7 +74,7 @@ Imagine you earn R$5.000 a month and decide to invest 10 % (R$500) in a divers
 Getting your foot in the door is easier than you think. First, set a realistic [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) based on your monthly cash flow—don’t invest money you might need for rent or groceries. Then, open an account with a reputable broker or a user‑friendly investment app (the one I recommend to my cousins). Most platforms let you start with as little as R$100, and they provide educational resources to help you understand each trade. Finally, pick a simple, low‑cost ETF that mirrors a broad market index; it gives you instant diversification without having to pick individual stocks.
 
 - **Practical tip:** **Start with a “pay‑it‑forward” mindset—automate a small, fixed amount each payday so you never miss a contribution.**  
-- **Practical tip:** **Keep an [emergency fund](/en/glossario/en-reserva-de-emergencia) of at least three months of expenses before you invest, so market dips don’t force you to sell at a loss.**  
+- **Practical tip:** **Keep an [emergency fund](/en/glossario/en-reserva-de-emergencia) of at least three months of [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) before you invest, so market dips don’t force you to sell at a loss.**  
 - **Practical tip:** **Review your portfolio quarterly, not daily; long‑term growth beats short‑term market noise.**  
 - Choose a broker with low fees and a straightforward mobile app.  
 - Complete the KYC (Know Your Customer) verification—upload ID, proof of address, and a selfie.  

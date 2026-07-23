@@ -44,7 +44,7 @@ El impuesto de renda puede parecer un gasto adicional, pero en realidad tiene va
 
 
 ## [Riesgos](/es/posts/es-montando-carteira-diversificada-com-r-500)
-Aunque el impuesto de renda es una obligación legal, hay algunos riesgos que se deben considerar. Uno de los principales riesgos es el de no declarar todos los ingresos, lo que puede resultar en multas y penalizaciones. Otro riesgo es el de no pagar el impuesto de renda a tiempo, lo que puede resultar en intereses y penalizaciones adicionales.
+Aunque el impuesto de renda es una obligación legal, hay algunos [riesgos](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) que se deben considerar. Uno de los principales riesgos es el de no declarar todos los ingresos, lo que puede resultar en multas y penalizaciones. Otro riesgo es el de no pagar el impuesto de renda a tiempo, lo que puede resultar en intereses y penalizaciones adicionales.
 
 **Consejo práctico:** Es importante declarar todos los ingresos y pagar el impuesto de renda a tiempo, para evitar multas y penalizaciones.
 

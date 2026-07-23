@@ -45,4 +45,4 @@ If you have R$ 500,000 to invest in CDB:
 
 ## Important tip
 
-Smaller banks usually pay higher rates (120-130% of CDI) precisely because they are less well-known. With the FGC guarantee, the risk is virtually the same as a large bank — but the return is higher.
+Smaller banks usually pay higher rates (120-130% of [CDI](/en/glossario/en-cdi)) precisely because they are less well-known. With the FGC guarantee, the risk is virtually the same as a large bank — but the return is higher.

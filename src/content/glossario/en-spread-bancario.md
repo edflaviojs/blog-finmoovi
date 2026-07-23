@@ -16,8 +16,8 @@ Imagine you deposit $270 (approximately R$ 1,000) into a savings account. The ba
 
 ## Practical Examples
 Let's consider some examples to better understand how the spread bancário works:
-- **Example 1:** You deposit $1,350 (approximately R$ 5,000) into a savings account with an interest rate of 0.5% per month. The bank pays $6.75 in interest per month. If the bank lends this money to someone else at an interest rate of 2.0% per month, it will make $27.00 in interest per month. The spread bancário is 1.5% (2.0% - 0.5%).
-- **Example 2:** You take out a loan of $2,700 (approximately R$ 10,000) with an interest rate of 3.0% per month. The bank charges $81.00 in interest per month. If the bank paid 1.0% interest to obtain this money, the spread bancário is 2.0% (3.0% - 1.0%).
+- **Example 1:** You deposit $1,350 (approximately R$ 5,000) into a savings account with an interest rate of 0.5% per month. The bank pays $6.75 in interest per month. If the bank lends this [money](/en/posts/en-financial-education-for-children) to someone else at an interest rate of 2.0% per month, it will make $27.00 in interest per month. The spread bancário is 1.5% (2.0% - 0.5%).
+- **Example 2:** You take out a loan of $2,700 (approximately R$ 10,000) with an interest rate of 3.0% per month. The bank charges $81.00 in interest per month. If the bank paid 1.0% interest to obtain this [money](/en/posts/en-financial-planning-for-couples), the spread bancário is 2.0% (3.0% - 1.0%).
 
 ## Comparative Table
 The table below illustrates how the spread bancário varies with different interest rates:

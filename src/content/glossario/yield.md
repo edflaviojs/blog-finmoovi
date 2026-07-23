@@ -19,9 +19,9 @@ seo:
 ---
 
 ## O que é
-O termo "yield" é frequentemente usado no contexto de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e finanças, mas o que ele realmente significa? Em português, "yield" é traduzido como "rendimento" ou "retorno". No mundo dos investimentos, o yield refere-se ao retorno que você obtém sobre um [investimento](/posts/montando-carteira-diversificada-com-r-500), geralmente expresso como uma porcentagem. Por exemplo, se você investe R$ 1.000 em uma aplicação que oferece um yield de 10% ao ano, você pode esperar receber R$ 100 em rendimentos ao longo de um ano, totalizando R$ 1.100.
+O termo "yield" é frequentemente usado no contexto de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e finanças, mas o que ele realmente significa? Em português, "yield" é traduzido como "rendimento" ou "retorno". No mundo dos [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), o yield refere-se ao retorno que você obtém sobre um [investimento](/posts/montando-carteira-diversificada-com-r-500), geralmente expresso como uma porcentagem. Por exemplo, se você investe R$ 1.000 em uma [aplicação](/glossario/aplicacao) que oferece um yield de 10% ao ano, você pode esperar receber R$ 100 em rendimentos ao longo de um ano, totalizando R$ 1.100.
 
-Isso pode parecer simples, mas é importante entender que o yield pode variar dependendo do tipo de investimento e das condições de mercado. Além disso, o yield não é apenas sobre a taxa de retorno, mas também sobre a liquidez e o risco associado ao investimento.
+Isso pode parecer simples, mas é importante entender que o yield pode variar dependendo do tipo de [investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) e das condições de mercado. Além disso, o yield não é apenas sobre a taxa de retorno, mas também sobre a liquidez e o risco associado ao investimento.
 
 ![O que é](/images/glossario/yield-inline-1.webp)
 
@@ -33,7 +33,7 @@ O yield funciona de maneira que o investidor recebe uma porcentagem do valor inv
 Alguns investimentos populares que oferecem yield incluem:
 * Títulos de dívida, como títulos do tesouro
 * Ações de empresas que pagam [dividendos](/glossario/dividendos)
-* Fundos de investimento em renda fixa
+* Fundos de investimento em [renda fixa](/glossario/renda-fixa)
 * Certificados de depósito bancário (CDBs)
 
 ## Vantagens

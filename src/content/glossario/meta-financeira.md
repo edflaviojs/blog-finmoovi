@@ -27,7 +27,7 @@ Meta financeira é um objetivo concreto para seu [dinheiro](/posts/cashback-inte
 
 - Montar [reserva de emergência](/glossario/reserva-de-emergencia) de R$ 15.000
 - Quitar [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) de R$ 3.000
-- Juntar R$ 5.000 para viagem
+- Juntar R$ 5.000 para [viagem](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)
 
 ### Médio prazo (1-5 anos)
 
@@ -38,7 +38,7 @@ Meta financeira é um objetivo concreto para seu [dinheiro](/posts/cashback-inte
 ### Longo prazo (5+ anos)
 
 - [Independência financeira](/glossario/independencia-financeira) (R$ 1.500.000)
-- Aposentadoria complementar
+- [Aposentadoria](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) complementar
 - Comprar imóvel à vista
 
 ## Como acompanhar

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é
-O termo "hedge" é um conceito financeiro que pode parecer complexo, mas é mais simples do que você imagina. Basicamente, um hedge é uma estratégia de investimento que visa reduzir o risco de perdas em uma carteira de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Isso é feito investindo em ativos que têm um comportamento oposto ao do ativo original, de modo que se o valor do ativo original cair, o valor do ativo hedge aumente, compensando a perda.
+O termo "hedge" é um conceito financeiro que pode parecer complexo, mas é mais simples do que você imagina. Basicamente, um hedge é uma estratégia de [investimento](/posts/montando-carteira-diversificada-com-r-500) que visa reduzir o risco de perdas em uma carteira de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Isso é feito investindo em ativos que têm um comportamento oposto ao do ativo original, de modo que se o [valor](/glossario/valor) do ativo original cair, o valor do ativo hedge aumente, compensando a perda.
 
 ## 
 Um exemplo simples para ilustrar isso: imagine que você tem R$ 5.000 investidos em [ações](/glossario/acoes) de uma empresa de tecnologia. Para reduzir o risco de perdas, você decide investir R$ 1.000 em um fundo que investe em títulos do governo. Se a empresa de tecnologia tiver uma crise e o valor de suas ações cair 10%, você perderá R$ 500. No entanto, se o valor dos títulos do governo aumentar 5% devido à crise, você ganhará R$ 50, reduzindo sua perda para R$ 450. Isso é um exemplo básico de hedge.
@@ -29,12 +29,12 @@ Um exemplo simples para ilustrar isso: imagine que você tem R$ 5.000 investidos
 
 ## Como funciona
 A estratégia de hedge funciona investindo em ativos que têm uma correlação negativa com o ativo original. Isso significa que quando o valor do ativo original cai, o valor do ativo hedge aumenta. Existem diferentes tipos de hedge, incluindo:
-* Hedge de taxa de [juros](/glossario/juros): investindo em títulos com taxas de juros fixas para proteger contra mudanças nas taxas de juros.
+* Hedge de [taxa](/glossario/taxa) de [juros](/glossario/juros): investindo em títulos com taxas de juros fixas para proteger contra mudanças nas taxas de juros.
 * Hedge de [moeda](/glossario/moeda): investindo em moedas estrangeiras para proteger contra flutuações no valor da moeda local.
 * Hedge de commodities: investindo em commodities, como petróleo ou ouro, para proteger contra mudanças nos preços das commodities.
 
 ## 
-**Dica prática:** É importante lembrar que o hedge não é uma estratégia de investimento que visa obter lucros, mas sim reduzir perdas. Portanto, é fundamental ter uma [carteira de investimentos](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) diversificada para minimizar o risco.
+**Dica prática:** É importante lembrar que o hedge não é uma estratégia de [investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) que visa obter lucros, mas sim reduzir perdas. Portanto, é fundamental ter uma [carteira de investimentos](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) diversificada para minimizar o risco.
 
 ## Vantagens
 As vantagens de usar uma estratégia de hedge incluem:

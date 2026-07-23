@@ -35,12 +35,12 @@ A stock (or ação) is a tiny slice of ownership in a company. When you buy 
 When a company needs [money](/en/posts/en-30-day-rule-for-purchases) to expand, it can issue new shares through an IPO (Initial Public Offering). Investors buy those shares, giving the company cash to invest in new projects, equipment, or hiring. After the IPO, the shares start trading on the exchange, and their price changes every minute based on supply and demand.  
 
 - **Supply and demand** – if many people want a stock, its price goes up; if few want it, the price drops.  
-- **Dividends** – part of the profit that the company may distribute to shareholders, usually quarterly.  
+- **[Dividends](/en/glossario/en-dividendos)** – part of the profit that the company may distribute to shareholders, usually quarterly.  
 - **Capital gains** – the profit you make when you sell a stock for more than you paid.  
 
 ## Advantages
 
-Owning stocks can be a powerful way to grow your money faster than a traditional savings account.  
+Owning stocks can be a powerful way to grow your [money](/en/posts/en-avoid-impulse-purchases) faster than a traditional savings account.  
 
 ![Advantages](/images/glossario/stock-inline-3.webp)
 
@@ -50,13 +50,13 @@ Owning stocks can be a powerful way to grow your money faster than a traditional
 - **Dividend income** – some companies pay regular cash payouts, adding a passive income stream.  
 - **Liquidity** – you can usually sell a stock within a day, turning it into cash quickly.  
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Every investment carries risk, and stocks are no exception. Understanding the downsides helps you avoid unpleasant surprises.  
 
 - **Price [volatility](/en/glossario/en-volatilidade)** – stock prices can swing wildly in a single day, especially for smaller companies.  
 - **Company risk** – if the business performs poorly or goes bankrupt, you could lose most or all of your investment.  
-- **Market risk** – broader economic events (inflation, political instability) can drag down the whole market, even good companies.  
+- **Market risk** – broader economic events ([inflation](/en/glossario/en-inflacao), political instability) can drag down the whole market, even good companies.  
 
 ## Practical examples
 

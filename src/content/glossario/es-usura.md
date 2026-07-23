@@ -32,7 +32,7 @@ La usura funciona de manera que el prestamista cobra una tasa de interés muy al
 
 Algunos ejemplos de cómo la usura puede funcionar en la práctica son:
 * Un préstamo personal de R$5.000 a una tasa de interés del 30% anual, lo que significa que debes pagar R$6.500 al final del año.
-* Un crédito de tarjeta de crédito con una tasa de interés del 40% anual, lo que significa que debes pagar R$1.400 por un gasto de R$1.000.
+* Un crédito de [tarjeta de crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) con una tasa de interés del 40% anual, lo que significa que debes pagar R$1.400 por un gasto de R$1.000.
 * Un préstamo hipotecario con una tasa de interés del 15% anual, lo que significa que debes pagar R$15.000 por un préstamo de R$10.000 en solo un año.
 
 ## Ventajas
@@ -41,7 +41,7 @@ Aunque la usura puede parecer un problema sin solución, hay algunas ventajas qu
 * **Flexibilidad**: Algunos préstamos pueden ofrecer flexibilidad en los pagos, lo que puede ser útil para personas que tienen ingresos variables.
 * **Oportunidades de inversión**: Los préstamos pueden ser utilizados para invertir en activos que pueden generar ingresos, como una casa o un negocio.
 
-Sin embargo, es importante tener en cuenta que estas ventajas pueden ser superadas por los riesgos asociados con la usura.
+Sin embargo, es importante tener en cuenta que estas ventajas pueden ser superadas por los [riesgos](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) asociados con la usura.
 
 ![Ventajas](/images/glossario/usura-inline-3.webp)
 

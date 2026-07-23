@@ -9,7 +9,7 @@ publishedAt: 2026-06-09
 ---
 
 ## Introducción al P/L
-El P/L, o Preço/Lucro, es una herramienta esencial para inversores que desean evaluar el [valor](/es/glossario/es-valor) de una acción en relación con el desempenho financiero de la empresa. Se calcula dividiendo el precio actual de la acción por el lucro por acción de la empresa. En este artículo, vamos a explorar cómo funciona el P/L, cómo se calcula y por qué es importante para inversores.
+El P/L, o Preço/Lucro, es una herramienta esencial para inversores que desean evaluar el [valor](/es/glossario/es-valor) de una acción en relación con el desempenho [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) de la empresa. Se calcula dividiendo el precio actual de la acción por el lucro por acción de la empresa. En este artículo, vamos a explorar cómo funciona el P/L, cómo se calcula y por qué es importante para inversores.
 
 ## Cómo se Calcula el P/L
 El cálculo del P/L es relativamente simple. Usted divide el precio actual de la acción por el lucro por acción de la empresa. Por ejemplo, si el precio de una acción es de R$ 50,00 y el lucro por acción es de R$ 5,00, el P/L sería de 10 (50 / 5 = 10). Esto significa que los inversores están pagando R$ 10 por cada R$ 1 de lucro por acción.

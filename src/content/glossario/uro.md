@@ -20,7 +20,7 @@ seo:
 
 ## O que é
 
-URO (Unidade de Referência Operacional) é um índice criado por algumas instituições financeiras para padronizar o cálculo de juros e correção monetária em empréstimos, financiamentos e investimentos de renda fixa. Funciona como um “termômetro” que indica quanto o dinheiro está rendendo ou quanto o crédito está custando em um período específico. Diferente do CDI (Certificado de Depósito Interbancário), que reflete a taxa média dos empréstimos entre bancos, o URO costuma ser definido internamente e pode variar de acordo com a política de risco da instituição.
+URO (Unidade de Referência Operacional) é um índice criado por algumas instituições financeiras para padronizar o cálculo de juros e correção monetária em empréstimos, financiamentos e investimentos de [renda fixa](/glossario/renda-fixa). Funciona como um “termômetro” que indica quanto o [dinheiro](/posts/cashback-inteligente) está rendendo ou quanto o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) está custando em um período específico. Diferente do CDI (Certificado de Depósito Interbancário), que reflete a taxa média dos empréstimos entre bancos, o URO costuma ser definido internamente e pode variar de acordo com a política de risco da instituição.
 
 ![O que é](/images/glossario/uro-inline-1.webp)
 
@@ -57,7 +57,7 @@ O spread varia conforme o perfil de risco do cliente, o tipo de operação e a c
 Imagine que você ganha R$4.500 por mês e quer comprar um carro no valor de R$60.000, financiando 80% (R$48.000) em 48 parcelas mensais. O banco oferece um financiamento com taxa “URO + 1,8% ao ano”. Supondo que o URO esteja em 5,2% ao ano, a taxa total será 7,0% ao ano.
 
 - **Cálculo dos juros mensais**: 7,0% ÷ 12 = 0,583% ao mês.
-- **Parcela aproximada**: R$48.000 × (0,00583) ≈ R$280 de juros mensais + amortização, resultando em cerca de R$1.300 por mês.
+- **Parcela aproximada**: R$48.000 × (0,00583) ≈ R$280 de juros mensais + [amortização](/glossario/amortizacao), resultando em cerca de R$1.300 por mês.
 
 Se você tem R$3.800 de renda disponível após despesas fixas, ainda cabe a parcela, mas é preciso analisar o impacto no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias).
 

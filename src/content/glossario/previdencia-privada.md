@@ -43,7 +43,7 @@ readingTime: 2
 
 - Benefício fiscal (PGBL)
 - Não entra em inventário ([planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) sucessório)
-- Disciplina de investimento mensal
+- Disciplina de [investimento](/posts/tesouro-direto-para-iniciantes) mensal
 - Alíquota de 10% após 10 anos (regressiva)
 
 ## Desvantagens

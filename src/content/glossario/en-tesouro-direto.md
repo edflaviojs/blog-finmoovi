@@ -33,7 +33,7 @@ Os títulos do Tesouro Direto variam em prazos e taxas de juros, o que significa
 ## How it works
 O funcionamento do Tesouro Direto é relativamente simples. Você compra um título público pelo valor nominal (o valor pelo qual o título é emitido) e, durante o prazo estabelecido, o governo paga juros sobre esse valor. No final do prazo, o governo devolve o valor nominal do título, mais os juros acumulados. **Practical tip:** É importante entender que os juros são pagos periodicamente, o que pode ser mensal, trimestral, semestral ou anual, dependendo do título escolhido.
 
-Por exemplo, se você investe R$ 3.000 em um título com prazo de 2 anos e taxa de juros anual de 8%, ao final do prazo, você receberá os R$ 3.000 de volta, mais os juros, que seriam R$ 480 (8% de R$ 3.000 por 2 anos, considerando juros simples para simplificar o cálculo). **Practical tip:** Sempre verifique as taxas de juros atuais e os prazos disponíveis antes de investir, pois eles podem variar.
+Por exemplo, se você investe R$ 3.000 em um título com prazo de 2 anos e [taxa](/en/glossario/en-taxa) de juros anual de 8%, ao final do prazo, você receberá os R$ 3.000 de volta, mais os juros, que seriam R$ 480 (8% de R$ 3.000 por 2 anos, considerando juros simples para simplificar o cálculo). **Practical tip:** Sempre verifique as taxas de juros atuais e os prazos disponíveis antes de investir, pois eles podem variar.
 
 ## Advantages
 Os principais benefícios do Tesouro Direto incluem:

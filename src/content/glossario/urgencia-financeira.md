@@ -28,7 +28,7 @@ Urgência financeira é qualquer situação inesperada que exige [dinheiro](/pos
 A melhor proteção contra urgências financeiras é a **[reserva de emergência](/glossario/reserva-de-emergencia)**:
 - 6 meses de gastos para CLT
 - 12 meses para autônomos/PJ
-- Em [investimento](/posts/montando-carteira-diversificada-com-r-500) com [liquidez](/glossario/liquidez) diária ([Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), CDB)
+- Em [investimento](/posts/montando-carteira-diversificada-com-r-500) com [liquidez](/glossario/liquidez) diária ([Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), [CDB](/glossario/cdb))
 
 ## O que fazer se não tem reserva
 

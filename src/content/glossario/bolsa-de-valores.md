@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é
-A bolsa de valores é um mercado onde as ações de empresas são compradas e vendidas. Imagine que você é dono de uma pequena parte de uma empresa, como a Petrobras ou a Vale. Essa parte é representada por uma ação, que pode ser comprada ou vendida na bolsa de valores. O preço da ação varia de acordo com a oferta e a demanda, ou seja, com a quantidade de pessoas que querem comprar ou vender a ação. 
+A [bolsa de valores](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) é um mercado onde as [ações](/glossario/acoes) de empresas são compradas e vendidas. Imagine que você é dono de uma pequena parte de uma empresa, como a Petrobras ou a Vale. Essa parte é representada por uma ação, que pode ser comprada ou vendida na bolsa de valores. O preço da ação varia de acordo com a oferta e a demanda, ou seja, com a quantidade de pessoas que querem comprar ou vender a ação. 
 O preço da ação também é influenciado pelo desempenho da empresa, pela [economia](/posts/5-alternativas-ao-mobills-em-2026) do país e por eventos globais. Por exemplo, se a Petrobras anuncia um aumento na produção de petróleo, o preço de suas ações pode subir, pois os investidores esperam que a empresa tenha mais lucro.
 
 * Ações: representam a propriedade de uma parte de uma empresa
@@ -33,13 +33,13 @@ O preço da ação também é influenciado pelo desempenho da empresa, pela [eco
 A bolsa de valores funciona como um leilão, onde os investidores oferecem preços para comprar ou vender ações. O preço de uma ação é determinado pela oferta e demanda, ou seja, pelo equilíbrio entre a quantidade de ações que os investidores querem comprar e vender. 
 Por exemplo, se muitos investidores querem comprar ações da Vale, o preço da ação pode subir, pois há mais demanda do que oferta. Já se muitos investidores querem vender ações da Petrobras, o preço da ação pode cair, pois há mais oferta do que demanda.
 
-**Dica prática:** É importante lembrar que a bolsa de valores é um mercado volátil, ou seja, os preços das ações podem variar rapidamente. Por isso, é fundamental ter uma estratégia de investimento clara e não se deixar levar pelas emoções.
+**Dica prática:** É importante lembrar que a bolsa de valores é um mercado volátil, ou seja, os preços das ações podem variar rapidamente. Por isso, é fundamental ter uma estratégia de [investimento](/posts/montando-carteira-diversificada-com-r-500) clara e não se deixar levar pelas emoções.
 
 ## Vantagens
 A bolsa de valores oferece várias vantagens para os investidores, como:
 * [Diversificação](/glossario/diversificacao): permite que os investidores distribuam seu [dinheiro](/posts/cashback-inteligente) em diferentes ações e setores, reduzindo o risco
 * [Liquidez](/glossario/liquidez): os investidores podem comprar e vender ações rapidamente, pois há um mercado ativo
-* Potencial de crescimento: as ações podem aumentar de valor ao longo do tempo, proporcionando um retorno sobre o investimento
+* Potencial de crescimento: as ações podem aumentar de [valor](/glossario/valor) ao longo do tempo, proporcionando um retorno sobre o investimento
 * Rendimento: as ações podem pagar [dividendos](/glossario/dividendos), que são parte do lucro da empresa distribuído aos acionistas
 
 **Dica prática:** É importante diversificar o portfólio de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), ou seja, não colocar todos os ovos na mesma cesta. Por exemplo, se você tem R$ 10.000 para investir, pode dividir em R$ 3.000 em ações da Petrobras, R$ 3.000 em ações da Vale e R$ 4.000 em títulos do governo.

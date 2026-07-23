@@ -19,12 +19,12 @@ seo:
 ---
 
 ## O que é
-O termo "valor" é fundamental no mundo das finanças, mas o que ele realmente significa? Em resumo, o valor se refere ao quanto algo vale, seja um investimento, um bem, um serviço ou até mesmo o seu tempo. No contexto financeiro, o valor é determinado por uma combinação de fatores, incluindo a oferta e a demanda, o risco envolvido e a expectativa de retorno. Por exemplo, se você tem um apartamento que pode ser alugado por R$ 2.000 por mês, o valor desse apartamento pode ser estimado com base na renda que ele gera.
+O termo "valor" é fundamental no mundo das finanças, mas o que ele realmente significa? Em resumo, o valor se refere ao quanto algo vale, seja um [investimento](/posts/montando-carteira-diversificada-com-r-500), um bem, um serviço ou até mesmo o seu tempo. No contexto financeiro, o valor é determinado por uma combinação de fatores, incluindo a oferta e a demanda, o risco envolvido e a expectativa de retorno. Por exemplo, se você tem um apartamento que pode ser alugado por R$ 2.000 por mês, o valor desse apartamento pode ser estimado com base na renda que ele gera.
 
 ## 
-Para entender melhor como o valor funciona, vamos considerar alguns exemplos práticos. Se você ganha R$ 5.000 por mês e gasta R$ 3.000 com despesas fixas, o valor do seu tempo pode ser calculado com base na sua capacidade de gerar renda. Se você decidir investir R$ 1.000 em uma [aplicação](/glossario/aplicacao) que rende 10% ao ano, o valor desse investimento aumentará com o tempo. Aqui estão alguns pontos importantes a considerar:
+Para entender melhor como o valor funciona, vamos considerar alguns exemplos práticos. Se você ganha R$ 5.000 por mês e gasta R$ 3.000 com despesas fixas, o valor do seu tempo pode ser calculado com base na sua capacidade de gerar renda. Se você decidir investir R$ 1.000 em uma [aplicação](/glossario/aplicacao) que rende 10% ao ano, o valor desse [investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) aumentará com o tempo. Aqui estão alguns pontos importantes a considerar:
 * O valor pode variar ao longo do tempo devido a mudanças no mercado ou na [economia](/posts/5-alternativas-ao-mobills-em-2026).
-* O valor de um investimento ou ativo pode ser influenciado por fatores como [inflação](/glossario/inflacao), juros e taxas de [câmbio](/glossario/cambio).
+* O valor de um investimento ou ativo pode ser influenciado por fatores como [inflação](/glossario/inflacao), [juros](/glossario/juros) e taxas de [câmbio](/glossario/cambio).
 * É importante considerar o risco envolvido ao determinar o valor de um investimento ou ativo.
 
 ![O que é](/images/glossario/valor-inline-1.webp)

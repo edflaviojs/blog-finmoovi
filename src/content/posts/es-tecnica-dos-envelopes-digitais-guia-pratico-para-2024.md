@@ -65,7 +65,7 @@ Este proceso lleva menos de 5 minutos y deja tu [presupuesto](/es/posts/es-como-
 
 Para quien gana R$2.000, el margen de error es pequeño; mientras que quien gana R$8.000 puede hacer ajustes mensuales más flexibles.  
 
-> **Importante:** Consulta fuentes oficiales como el [Banco Central del Brasil](https://www.bcb.gov.br) para entender límites de intereses y tarifas que pueden impactar tu presupuesto.  
+> **Importante:** Consulta fuentes oficiales como el [Banco Central del Brasil](https://www.bcb.gov.br) para entender límites de intereses y tarifas que pueden impactar tu [presupuesto](/es/posts/es-organizar-finanzas-pareja).  
 
 ## Revisar resultados mensualmente  
 

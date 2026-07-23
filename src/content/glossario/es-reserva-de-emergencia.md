@@ -21,7 +21,7 @@ A recomendação é ter entre **3 a 6 meses** dos seus [gastos](/es/posts/es-5-d
 
 A reserva precisa ter **[liquidez](/es/glossario/es-liquidez) diária** (acesso imediato):
 - [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-- CDB com liquidez diária (100% CDI ou mais)
+- [CDB](/es/glossario/es-cdb) com liquidez diária (100% [CDI](/es/glossario/es-cdi) ou mais)
 - Conta remunerada
 
 **Nunca** deixe em [ações](/es/glossario/es-acoes), [fundos](/es/glossario/es-fundos) imobiliários ou investimentos com prazo de resgate.

@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Yahoo [Finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) is a free website (e mail app like a “caderninho digital”) that reúne cotações de ações, índices, moedas e notícias de economia em um só lugar. Ele funciona como um painel de controle para quem quer acompanhar o dinheiro, seja para investir ou só para entender como o mercado afeta o salário de R$3.000 a R$8.000.  
+Yahoo [Finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) is a free website (e mail app like a “caderninho digital”) that reúne cotações de [ações](/en/glossario/en-acoes), índices, moedas e notícias de economia em um só lugar. Ele funciona como um painel de controle para quem quer acompanhar o dinheiro, seja para investir ou só para entender como o mercado afeta o salário de R$3.000 a R$8.000.  
 
 ![What it is](/images/glossario/yahoo-finance-inline-1.webp)
 
@@ -72,7 +72,7 @@ Vamos ver como alguém que ganha R$4.500 por mês pode usar o Yahoo Finance no
 
 **Practical tip:** antes de comprar ou vender, sempre verifique a tendência dos últimos 30 dias no gráfico; isso ajuda a evitar decisões baseadas em picos momentâneos.  
 
-**Practical tip:** configure alertas de preço para as ações que compõem sua carteira; assim você recebe uma notificação no celular assim que o valor atingir o limite que você definiu.  
+**Practical tip:** configure alertas de preço para as ações que compõem sua carteira; assim você recebe uma notificação no celular assim que o [valor](/en/glossario/en-valor) atingir o limite que você definiu.  
 
 **Practical tip:** use a ferramenta de comparação de índices para entender como o seu investimento se comporta em relação ao Ibovespa (principal índice da bolsa brasileira).  
 

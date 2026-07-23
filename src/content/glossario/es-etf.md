@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-Un ETF, o Exchange-Traded Fund, es un tipo de inversión que combina características de los fondos mutuos y las acciones. En otras palabras, es un fondo que se negocia en una [bolsa de valores](/es/glossario/es-bolsa-de-valores), como las acciones, pero ofrece diversificación como un fondo mutuo. Esto significa que, al invertir en un ETF, estás comprando una pequeña parte de un portafolio diversificado de acciones, bonos o otros activos.
+Un ETF, o Exchange-Traded Fund, es un tipo de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) que combina características de los fondos mutuos y las acciones. En otras palabras, es un fondo que se negocia en una [bolsa de valores](/es/glossario/es-bolsa-de-valores), como las acciones, pero ofrece diversificación como un fondo mutuo. Esto significa que, al invertir en un ETF, estás comprando una pequeña parte de un portafolio diversificado de acciones, bonos o otros activos.
 
 Un ejemplo para entender mejor: imagina que quieres invertir en el mercado de tecnología, pero no quieres poner todo tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en una sola acción, como la de una empresa de tecnología brasileña. Un ETF de tecnología te permite invertir en un portafolio que incluye acciones de varias empresas de tecnología, reduciendo así el riesgo.
 
@@ -29,7 +29,7 @@ Un ejemplo para entender mejor: imagina que quieres invertir en el mercado de te
 ## Cómo funciona
 Un ETF funciona de la siguiente manera: se crea un fondo que compra una cantidad determinada de acciones, bonos u otros activos. Luego, se emiten unidades de este fondo, que se pueden comprar y vender en una [bolsa de valores](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel). El precio de cada unidad del ETF se determina por el [valor](/es/glossario/es-valor) de los activos que componen el fondo. Por ejemplo, si un ETF de tecnología tiene un portafolio con acciones de empresas como Magazine Luiza, [Nubank](/es/glossario/es-nubank) y Stone, el valor del ETF variará según el desempeño de estas empresas en el mercado.
 
-**Consejo práctico:** Es importante investigar y entender qué activos componen el ETF antes de invertir, ya que esto puede afectar tu exposición al riesgo y tus objetivos de inversión.
+**Consejo práctico:** Es importante investigar y entender qué activos componen el ETF antes de invertir, ya que esto puede afectar tu exposición al riesgo y tus objetivos de [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico).
 
 ## Ventajas
 Las ventajas de invertir en ETFs son varias:

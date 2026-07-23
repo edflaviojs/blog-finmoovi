@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-El **URO** (Unidad de Referencia Operativa) es una unidad de medida que algunos bancos y fintechs utilizan para ajustar el [valor](/es/glossario/es-valor) de ciertos productos financieros al índice de [inflación](/es/glossario/es-inflacao). En lugar de fijar una tasa de interés fija en pesos, el monto se expresa en URO y se actualiza automáticamente según la variación del índice de precios al consumidor (IPC). Así, el valor real del dinero se mantiene constante y el poder adquisitivo del prestatario o inversor no se erosiona con la inflación.
+El **URO** (Unidad de Referencia Operativa) es una unidad de medida que algunos bancos y fintechs utilizan para ajustar el [valor](/es/glossario/es-valor) de ciertos productos financieros al índice de [inflación](/es/glossario/es-inflacao). En lugar de fijar una tasa de interés fija en pesos, el monto se expresa en URO y se actualiza automáticamente según la variación del índice de precios al consumidor (IPC). Así, el valor real del [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) se mantiene constante y el poder adquisitivo del prestatario o inversor no se erosiona con la inflación.
 
 ![Qué es](/images/glossario/uro-inline-1.webp)
 
@@ -60,7 +60,7 @@ Aunque suene atractivo, el URO también tiene contras que debes considerar antes
 
 ## Ejemplos prácticos
 
-Imagina que ganas R$4.500 al mes y decides solicitar un crédito de R$20.000 en URO. Supongamos que el valor de 1 URO hoy es R$0,50 y la tasa de inflación mensual esperada es 0,5 %.
+Imagina que ganas R$4.500 al mes y decides solicitar un [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) de R$20.000 en URO. Supongamos que el valor de 1 URO hoy es R$0,50 y la tasa de inflación mensual esperada es 0,5 %.
 
 - **Ejemplo 1:** Primer mes, la cuota es de 200 URO. En R$ sería 200 × 0,50 = R$100. Si la inflación sube 0,5 %, el valor de 1 URO pasa a R$0,5025 y la cuota pasa a R$100,50.
 - **Ejemplo 2:** Con un salario de R$7.200, un préstamo de R$30.000 en URO con cuota de 300 URO equivale a R$150 al inicio. Tras seis meses de inflación acumulada del 3 %, el valor de 1 URO sería R$0,515 y la cuota mensual sería R$154,50.

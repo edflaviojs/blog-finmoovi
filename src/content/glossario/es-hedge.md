@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-El término "hedge" se refiere a una estrategia financiera utilizada para reducir o eliminar el riesgo de pérdidas en una inversión o posición financiera. En otras palabras, es una forma de proteger tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) contra posibles caídas en el mercado. Imagina que tienes una cartera de acciones de una empresa que ha estado creciendo bien, pero temes que el mercado pueda bajar y afectar el [valor](/es/glossario/es-valor) de tus acciones. Un hedge te permitiría reducir ese riesgo.
+El término "hedge" se refiere a una estrategia financiera utilizada para reducir o eliminar el riesgo de pérdidas en una [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) o posición financiera. En otras palabras, es una forma de proteger tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) contra posibles caídas en el mercado. Imagina que tienes una cartera de acciones de una empresa que ha estado creciendo bien, pero temes que el mercado pueda bajar y afectar el [valor](/es/glossario/es-valor) de tus acciones. Un hedge te permitiría reducir ese riesgo.
 
 ## Cómo funciona
 Un hedge funciona básicamente como un seguro para tus inversiones. Cuando crees un hedge, estás creando una posición financiera que se mueve en dirección opuesta a la de tu inversión original. Por ejemplo, si tienes acciones de una empresa y crees que el mercado puede bajar, puedes crear un hedge comprando una opción de venta (también conocida como "put") de esas mismas acciones. De esta forma, si el mercado baja, el valor de tus acciones disminuirá, pero el valor de tu opción de venta aumentará, compensando así la pérdida.
@@ -57,7 +57,7 @@ Por ejemplo, si has invertido R$10.000 en acciones de una empresa y el mercado b
 Para empezar a utilizar hedges en tus inversiones, es importante que tengas un buen entendimiento de los mercados financieros y de las estrategias de inversión. **Consejo práctico:** siempre es importante buscar la ayuda de un profesional financiero antes de invertir en hedges. Además, es importante que tengas una [cartera de inversiones](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) diversificada y que no inviertas más de lo que puedes perder.
 
 ## Empieza hoy
-No dejes que el miedo al riesgo te impida invertir en tu futuro. Con un poco de conocimiento y planificación, puedes utilizar hedges para proteger tus inversiones y alcanzar tus objetivos financieros. ¡Empieza hoy a investigar y a aprender sobre hedges, y verás cómo puedes dormir mejor por la noche sabiendo que has tomado medidas para proteger tu patrimonio!
+No dejes que el miedo al riesgo te impida invertir en tu futuro. Con un poco de conocimiento y [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas), puedes utilizar hedges para proteger tus inversiones y alcanzar tus objetivos financieros. ¡Empieza hoy a investigar y a aprender sobre hedges, y verás cómo puedes dormir mejor por la noche sabiendo que has tomado medidas para proteger tu patrimonio!
 
 ---
 

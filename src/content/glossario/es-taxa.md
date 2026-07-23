@@ -37,7 +37,7 @@ Supongamos que ganas R$ 4.500 al mes y decides invertir R$ 2.000 en un fondo
 
 ## Ventajas
 
-- **Ahorro en costos:** Conocer la taxa te permite comparar ofertas y elegir la que tenga el menor costo total.  
+- **[Ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) en costos:** Conocer la taxa te permite comparar ofertas y elegir la que tenga el menor costo total.  
 - **Mayor rentabilidad:** Si inviertes en productos con una taxa alta y segura, puedes hacer que tu dinero trabaje mejor que dejándolo en la cuenta corriente.  
 - **Flexibilidad:** Algunas taxas son variables, lo que te permite beneficiarte si las condiciones del mercado mejoran.  
 
@@ -64,7 +64,7 @@ Imagina que recibes R$ 5.000 mensuales y quieres comprar una motocicleta de R$
 
 Con la primera opción pagarías alrededor de R$ 560 al mes; con la segunda, R$ 500. La diferencia de R$ 60 mensuales se traduce en R$ 2.880 al final del contrato, que podrías ahorrar o invertir.
 
-Otro caso: decides invertir R$ 3.000 en un CDB (Certificado de Depósito Bancario) que paga 7 % anual. Al cabo de un año tendrás R$ 3.210. Si en lugar de eso lo dejas en la cuenta corriente con una taxa de 0,5 % anual, ganarías solo R$ 15. La diferencia es clara: la taxa más alta te brinda mayor rentabilidad.
+Otro caso: decides invertir R$ 3.000 en un [CDB](/es/glossario/es-cdb) (Certificado de Depósito Bancario) que paga 7 % anual. Al cabo de un año tendrás R$ 3.210. Si en lugar de eso lo dejas en la cuenta corriente con una taxa de 0,5 % anual, ganarías solo R$ 15. La diferencia es clara: la taxa más alta te brinda mayor rentabilidad.
 
 ## Cómo empezar
 
@@ -74,7 +74,7 @@ Otro caso: decides invertir R$ 3.000 en un CDB (Certificado de Depósito Banca
 
 **Consejo práctico:** Anota en una hoja o en tu app de finanzas todas las tasas que pagas y las que podrías obtener; verás rápidamente dónde puedes ahorrar.  
 
-**Consejo práctico:** Si vas a pedir un préstamo, elige el plazo más corto que puedas pagar sin comprometer tus gastos esenciales; una tasa más alta por un plazo corto suele ser menos costosa que una tasa baja por muchos años.  
+**Consejo práctico:** Si vas a pedir un préstamo, elige el plazo más corto que puedas pagar sin comprometer tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) esenciales; una tasa más alta por un plazo corto suele ser menos costosa que una tasa baja por muchos años.  
 
 **Consejo práctico:** Automatiza el pago de tus deudas antes de la fecha de vencimiento; así evitas cargos por mora que incrementan la taxa efectiva.  
 

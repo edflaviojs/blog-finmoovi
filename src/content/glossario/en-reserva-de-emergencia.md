@@ -29,6 +29,6 @@ The reserve needs to have **daily [liquidity](/en/glossario/en-liquidez)** (imme
 ## How to build it?
 
 1. Define the target value (3-6 months of expenses)
-2. Set aside a fixed amount every month (10-20% of income)
+2. Set aside a fixed amount every month (10-20% of [income](/en/posts/en-montando-carteira-diversificada-com-r-500))
 3. Automate the transfer
 4. Don't touch it until you reach the target value

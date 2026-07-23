@@ -19,7 +19,7 @@ seo:
 ---
 
 ## What it is
-O termo "zero coupon" pode parecer complicado, mas é mais simples do que você imagina. Basicamente, um zero coupon é um tipo de título de dívida que não paga [juros](/en/glossario/en-juros) periódicos, como os tradicionais títulos de dívida. Em vez disso, o investidor recebe o valor total do título no vencimento, que inclui o principal mais os juros acumulados. Isso significa que você não receberá pagamentos regulares, mas sim um valor maior no final do período de investimento.
+O termo "zero coupon" pode parecer complicado, mas é mais simples do que você imagina. Basicamente, um zero coupon é um tipo de título de dívida que não paga [juros](/en/glossario/en-juros) periódicos, como os tradicionais títulos de dívida. Em vez disso, o investidor recebe o [valor](/en/glossario/en-valor) total do título no vencimento, que inclui o principal mais os juros acumulados. Isso significa que você não receberá pagamentos regulares, mas sim um valor maior no final do período de investimento.
 
 * Títulos de dívida: são instrumentos financeiros que representam um empréstimo feito por um investidor a uma empresa ou governo.
 * Juros: são os rendimentos pagos sobre o principal investido, geralmente expressos como uma porcentagem anual.

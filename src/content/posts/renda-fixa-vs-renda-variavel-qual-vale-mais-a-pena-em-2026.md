@@ -20,7 +20,7 @@ seo:
 
 ## Introdução
 
-Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro salário, a primeira grande dúvida costuma ser: **onde colocar o [dinheiro](/posts/cashback-inteligente)?** A resposta não é única. Em 2026, as duas categorias mais faladas são **[renda fixa](/glossario/renda-fixa)** e **[renda variável](/glossario/renda-variavel)**. Cada uma tem vantagens, riscos e momentos ideais de uso. Neste artigo, vamos analisar os dois lados da [moeda](/glossario/moeda), comparar critérios importantes e ajudar você a decidir qual combina mais com seu objetivo, tolerância ao risco e horizonte de tempo. Ah, e ao final vamos indicar uma ferramenta prática – o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – que facilita o acompanhamento de qualquer escolha que você faça.
+Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro salário, a primeira grande dúvida costuma ser: **onde colocar o [dinheiro](/posts/cashback-inteligente)?** A resposta não é única. Em 2026, as duas categorias mais faladas são **[renda fixa](/glossario/renda-fixa)** e **[renda variável](/glossario/renda-variavel)**. Cada uma tem vantagens, [riscos](/posts/montando-carteira-diversificada-com-r-500) e momentos ideais de uso. Neste artigo, vamos analisar os dois lados da [moeda](/glossario/moeda), comparar critérios importantes e ajudar você a decidir qual combina mais com seu objetivo, tolerância ao risco e horizonte de tempo. Ah, e ao final vamos indicar uma ferramenta prática – o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – que facilita o acompanhamento de qualquer escolha que você faça.
 
 ---
 
@@ -66,7 +66,7 @@ A renda variável reúne ativos cujo retorno **não é garantido** e depende da 
 |---------|----------------|-------------------------------|-----------------|
 | Ações de empresas listadas | [Bolsa de Valores](/glossario/bolsa-de-valores) (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta [volatilidade](/glossario/volatilidade), [dividendos](/glossario/dividendos) eventuais |
 | ETFs ([Fundos](/glossario/fundos) de Índice) | Corretoras | 11 %‑18 % a.a. (ex.: BOVA11) | [Diversificação](/glossario/diversificacao) automática, taxa de administração baixa |
-| Fundos de Investimento Imobiliário (FIIs) | Corretoras | 7 %‑9 % a.a. (rendimento mensal) | Recebimento de aluguéis, risco de vacância |
+| Fundos de [Investimento Imobiliário](/posts/fundos-imobiliarios-para-iniciantes-guia-completo) (FIIs) | Corretoras | 7 %‑9 % a.a. (rendimento mensal) | Recebimento de aluguéis, risco de vacância |
 | Criptomoedas | Exchanges | Varia muito (ex.: BTC 2024: +30 % a.a.) | Altíssima volatilidade, risco regulatório |
 
 *Rentabilidade baseada em histórico de retornos do Ibovespa e principais ETFs até dezembro de 2025.

@@ -27,7 +27,7 @@ Xing ling é um termo que surgiu nas redes sociais para descrever produtos ou se
 
 ## Como funciona
 
-A lógica do xing ling é simples: o preço baixo atrai o investidor, que acredita estar fazendo um bom negócio. Normalmente, esses produtos são oferecidos por plataformas online que não têm registro na CVM (Comissão de Valores Mobiliários) e não seguem as regras de transparência exigidas no Brasil. Eles podem ser fundos, tokens, ou até mesmo empréstimos coletivos (crowdlending) que prometem juros acima de 15% ao ano. O risco está na falta de garantias, na possibilidade de fraude e na dificuldade de resgatar o dinheiro.
+A lógica do xing ling é simples: o preço baixo atrai o investidor, que acredita estar fazendo um bom negócio. Normalmente, esses produtos são oferecidos por plataformas online que não têm registro na CVM (Comissão de Valores Mobiliários) e não seguem as regras de transparência exigidas no Brasil. Eles podem ser fundos, tokens, ou até mesmo empréstimos coletivos (crowdlending) que prometem juros acima de 15% ao ano. O risco está na falta de garantias, na possibilidade de fraude e na dificuldade de resgatar o [dinheiro](/posts/cashback-inteligente).
 
 - **Preço baixo**: o custo de entrada costuma ser muito menor que o de produtos tradicionais.
 - **Promessa de retorno alto**: anúncios falam de ganhos de 12% a 20% ao ano.
@@ -54,8 +54,8 @@ Mesmo com os riscos, o xing ling tem alguns pontos que chamam a atenção de que
 Os perigos do xing ling são reais e podem transformar um “pequeno achado” em um grande prejuízo. É fundamental entender o que está em jogo.
 
 - **Fraude**: muitas plataformas desaparecem com o dinheiro dos investidores.
-- **Falta de garantia**: ao contrário de um título do Tesouro Direto, não há garantia do governo.
-- **Volatilidade**: o valor pode cair drasticamente em poucos dias, principalmente em ativos digitais.
+- **Falta de garantia**: ao contrário de um título do [Tesouro Direto](/glossario/tesouro-direto), não há garantia do governo.
+- **[Volatilidade](/glossario/volatilidade)**: o valor pode cair drasticamente em poucos dias, principalmente em ativos digitais.
 - **Dificuldade de resgate**: alguns produtos não permitem retirada antes de um prazo longo, o que pode atrapalhar seu fluxo de caixa.
 
 **Dica prática:** nunca invista dinheiro que você precisa para pagar contas essenciais, como aluguel ou alimentação. O xing ling deve ficar na parte “extra” da sua [reserva de emergência](/glossario/reserva-de-emergencia).
@@ -82,7 +82,7 @@ Se, depois de analisar os prós e contras, você ainda quiser experimentar, siga
 
 ## Comece hoje
 
-Agora que você já sabe o que é, como funciona, os prós, os contras e como se proteger, que tal dar o primeiro passo? Reserve alguns minutos, abra sua planilha de controle e escolha um valor que caiba no seu orçamento. Lembre‑se: o segredo não está em achar o “milagre barato”, mas em usar o xing ling com responsabilidade e sempre ter um plano B. Boa sorte e bons investimentos!
+Agora que você já sabe o que é, como funciona, os prós, os contras e como se proteger, que tal dar o primeiro passo? Reserve alguns minutos, abra sua planilha de controle e escolha um valor que caiba no seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Lembre‑se: o segredo não está em achar o “milagre barato”, mas em usar o xing ling com responsabilidade e sempre ter um plano B. Boa sorte e bons investimentos!
 
 ---
 

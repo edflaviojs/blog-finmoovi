@@ -11,7 +11,7 @@ readingTime: 2
 
 ## ¿Qué es [Educación Financiera](/es/posts/es-7-errores-financieros-principiante)?
 
-Educación financiera es aprender a manejar el dinero de forma inteligente. No se trata de volverse rico rápidamente — se trata de entender cómo funciona el dinero para tomar mejores decisiones en el día a día.
+Educación financiera es aprender a manejar el [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) de forma inteligente. No se trata de volverse rico rápidamente — se trata de entender cómo funciona el dinero para tomar mejores decisiones en el día a día.
 
 ## Los 4 pilares
 
@@ -33,7 +33,7 @@ Educación financiera es aprender a manejar el dinero de forma inteligente. No s
 
 - Pagarse primero (separar antes de gastar)
 - Automatizar transferencias para inversiones
-- Tener metas claras de ahorro
+- Tener metas claras de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado)
 - Reserva de emergencia como prioridad
 
 ### 4. Invertir

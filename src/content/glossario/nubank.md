@@ -48,7 +48,7 @@ Usar o Nubank traz benefícios que facilitam a vida de quem ganha entre R$3.000 
 - **Programa de pontos:** o Nubank Rewards (opcional) converte gastos em pontos que podem ser trocados por passagens ou produtos.  
 - **Atendimento 24/7:** chat no app resolve dúvidas em poucos minutos, sem precisar esperar na fila.
 
-## Riscos
+## [Riscos](/posts/montando-carteira-diversificada-com-r-500)
 
 Apesar das vantagens, é importante estar ciente de alguns cuidados.
 
@@ -64,7 +64,7 @@ Apesar das vantagens, é importante estar ciente de alguns cuidados.
 Veja como o Nubank pode mudar a rotina financeira de quem tem salários diferentes.
 
 - **Salário R$3.500:** ao usar o cartão sem anuidade, você economiza R$300/ano. Se pagar a fatura integral, evita juros de até 12% ao mês.  
-- **Salário R$5.200:** ao transferir o salário para a NuConta, você pode aplicar R$2.000 em [CDB](/glossario/cdb) com rendimento de 102% do CDI, gerando cerca de R$30 de lucro ao mês.  
+- **Salário R$5.200:** ao transferir o salário para a NuConta, você pode aplicar R$2.000 em [CDB](/glossario/cdb) com rendimento de 102% do [CDI](/glossario/cdi), gerando cerca de R$30 de lucro ao mês.  
 - **Salário R$7.800:** ao usar o programa de pontos, cada R$1 gasto gera 1 ponto; ao gastar R$2.000 em supermercado, você acumula 2.000 pontos, que podem virar R$200 em descontos de viagens.  
 
 **Dica prática:** programe o débito automático das contas fixas (energia, internet) para o dia 5, assim o saldo da NuConta fica sempre disponível para emergências.
@@ -84,7 +84,7 @@ Iniciar no Nubank é simples e rápido, basta seguir estes passos:
 
 ## Comece hoje
 
-Não espere o próximo mês para organizar suas finanças. Abra sua conta Nubank agora, aproveite a isenção de tarifas e comece a controlar cada centavo com o celular. Seu dinheiro rende mais quando você tem as ferramentas certas nas mãos. Vamos nessa?
+Não espere o próximo mês para organizar suas finanças. Abra sua conta Nubank agora, aproveite a isenção de tarifas e comece a controlar cada centavo com o celular. Seu [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) rende mais quando você tem as ferramentas certas nas mãos. Vamos nessa?
 
 ---
 

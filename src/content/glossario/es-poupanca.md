@@ -31,7 +31,7 @@ La **poupança** es la cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del
 El mecanismo es muy simple: cada vez que recibes tu salario, decides cuánto vas a transferir a la poupança y el banco registra ese movimiento. Cada mes el banco calcula el interés (normalmente alrededor del 0,5 % al mes) y lo suma al saldo. El proceso se repite automáticamente, sin que tengas que mover nada.  
 
 - **Depositar:** puedes hacerlo vía transferencia bancaria, boleto o directamente en la sucursal.  
-- **Calcular intereses:** el banco aplica la tasa oficial (conocida como “Selic”) sobre el saldo promedio diario.  
+- **Calcular intereses:** el banco aplica la tasa oficial (conocida como “[Selic](/es/glossario/es-selic)”) sobre el saldo promedio diario.  
 - **Retirar:** cuando necesitas el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado), haces un saque o una transferencia a tu cuenta corriente; el proceso suele ser inmediato.  
 
 ## Ventajas
@@ -42,8 +42,8 @@ Tener una poupança trae varios beneficios que la hacen atractiva para cualquier
 
 
 
-- **Seguridad:** el dinero está protegido por el Fondo Garantidor de Créditos (FGC) hasta R$ 250.000 por institución.  
-- **[Liquidez](/es/glossario/es-liquidez):** puedes retirar tu dinero en cualquier momento sin penalizaciones, a diferencia de algunos productos de inversión.  
+- **Seguridad:** el [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) está protegido por el Fondo Garantidor de Créditos (FGC) hasta R$ 250.000 por institución.  
+- **[Liquidez](/es/glossario/es-liquidez):** puedes retirar tu [dinero](/es/posts/es-cashback-inteligente) en cualquier momento sin penalizaciones, a diferencia de algunos productos de inversión.  
 - **Simplicidad:** no necesitas entender conceptos como “rentabilidad compuesta” o “benchmark”; el banco se encarga de todo.  
 - **Acceso digital:** la mayoría de los bancos permiten gestionar la poupança desde la app, como si fuera una conversación con un amigo que te recuerda ahorrar.  
 

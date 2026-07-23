@@ -73,7 +73,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 | Tipo de activo                     | Riesgo | Indicación para 2.º semestre |
 |------------------------------------|--------|-------------------------------|
 | **Tesoro [Selic](/es/glossario/es-selic)** (renta fija)     | Bajo   | Reserva de emergencia y aporte de seguridad |
-| **CDBs con [liquidez](/es/glossario/es-liquidez) diaria**       | Bajo‑medio | Complemento al Selic, rendimiento superior al ahorro |
+| **CDBs con [liquidez](/es/glossario/es-liquidez) diaria**       | Bajo‑medio | Complemento al Selic, rendimiento superior al [ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus) |
 | **Fondos índice ([ETF](/es/glossario/es-etf)) de acciones**| Medio‑alto | Exposición a sectores estacionales (comercio, energía) |
 | **[Fondos inmobiliarios](/es/glossario/es-fundos-imobiliarios) (FIIs)**    | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
 | **Criptomonedas o activos alternativos** | Alto | Solo 5 % de la cartera, para quien acepta volatilidad |
@@ -129,7 +129,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 - **[Banco Central de Brasil](https://www.bcb.gov.br)** – consulta de la tasa Selic e indicadores económicos.  
 - **[Tesoro Directo](https://www.tesourodireto.com.br)** – portal oficial para adquirir títulos públicos.  
-- **FinMoovi** – app brasileña que integra [control de gastos](/es/posts/es-7-alternativas-a-planilha-google-para-financas-guia-atualiza), metas de inversión y alertas de mercado. Ideal para quien quiere visualizar la cartera completa en un solo lugar.
+- **[FinMoovi](/es/posts/es-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)** – app brasileña que integra [control de gastos](/es/posts/es-7-alternativas-a-planilha-google-para-financas-guia-atualiza), metas de inversión y alertas de mercado. Ideal para quien quiere visualizar la cartera completa en un solo lugar.
 
 ![Herramientas y recursos útiles](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 

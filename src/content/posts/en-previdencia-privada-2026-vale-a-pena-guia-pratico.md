@@ -19,7 +19,7 @@ seo:
 
 ## What is [private pension](/en/glossario/en-previdencia-privada)?
 
-Private pension, also called a complementary pension plan, works like a *long‑term savings vehicle* that you feed throughout your working life. The [money](/en/posts/en-30-day-rule-for-purchases) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment.
+Private pension, also called a complementary pension plan, works like a *long‑term [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) vehicle* that you feed throughout your working life. The [money](/en/posts/en-30-day-rule-for-purchases) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment.
 
 Two main types of plans exist in Brazil:
 
@@ -37,7 +37,7 @@ In 2026 the landscape changed in three critical ways:
 ![Como funciona a previdência privada em 2026?](/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico-2.webp)
 
 1. **More competitive administration fees** – Competition among banks and insurers pushed the average fee from 2.5% a year down to about 1.8% for fixed‑income plans and 2.2% for equity‑linked plans.  
-2. **New index‑fund ([ETF](/en/glossario/en-etf)) options inside the plans** – Many managers now offer Brazilian and international equity ETFs as investment choices, widening diversification.  
+2. **New index‑fund ([ETF](/en/glossario/en-etf)) options inside the plans** – Many managers now offer Brazilian and international equity ETFs as investment choices, widening [diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel).  
 3. **More transparent regulation** – The CVM (Securities Commission) now requires institutions to publish quarterly performance history and the “total cost to the investor,” making plan comparison easier.
 
 These changes don’t turn private pension into a *miracle* return, but they give investors more tools to judge whether a plan is worth it compared to other investment [alternatives](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).
