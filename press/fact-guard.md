@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-07-22T07:32:48.821Z
-**Posts:** 177 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 27
+**Gerado em:** 2026-07-23T07:31:21.098Z
+**Posts:** 180 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 27
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -33,7 +33,7 @@
 - _These plans are offered by financial institutions and insurance companies, and can be customized according to the investor's needs and objectives._
 
 **en-quotes-semana-1-june-2026.md**
-- _Additionally, it's essential to continue monitoring your investment portfolio and adjust your strategy according to market changes._
+- _Additionally, it's essential to continue monitoring your [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) portfolio and adjust your strategy according to market changes._
 
 **en-quotes-semana-4-june-2026.md**
 - _Além disso, é importante revisar regularmente seus investimentos e ajustar sua estratégia de acordo com as mudanças no mercado._
