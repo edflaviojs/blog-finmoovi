@@ -15,33 +15,33 @@ PIX is the instant payment system created by the Banco Central in 2020. It allow
 
 ## How does it work?
 
-1. You register a "PIX key" (CPF, email, phone number or random key)
-2. To receive, just provide your key
-3. To pay, use the recipient's key or QR Code
-4. The [money](/en/posts/en-avoid-impulse-purchases) is transferred immediately
+1. You register a "PIX key" (CPF, email, phone number or random key)  
+2. To receive, just provide your key  
+3. To pay, use the recipient's key or QR Code  
+4. The [money](/en/posts/en-avoid-impulse-purchases) is transferred immediately  
 
 ## Advantages
 
-- Free for individuals
-- Instant (10 seconds)
-- Works 24/7
-- Replaces TED, DOC, and boleto
-- Can pay in physical and online stores
+- Free for individuals  
+- Instant (10 seconds)  
+- Works 24/7  
+- Replaces TED, DOC, and boleto  
+- Can pay in physical and online stores  
 
 ## Security
 
-- Nighttime limit (8pm-6am): R$ 1,000 (default, can be changed)
-- Special Refund Mechanism (MED) for fraud
-- Password/biometric authentication in the bank's app
-- Can block suspicious keys
+- Nighttime limit (8pm-6am): R$ 1,000 (default, can be changed)  
+- Special Refund Mechanism (MED) for fraud  
+- Password/biometric authentication in the bank's app  
+- Can block suspicious keys  
 
 ## Security Tips
 
-1. Never share passwords or verification codes
-2. Be wary of PIX requests via WhatsApp (common scam)
-3. Set a low nighttime limit
-4. Use a random key for unknown recipients (not CPF)
-5. Activate transaction notifications
+1. Never share passwords or verification codes  
+2. Be wary of PIX requests via WhatsApp (common scam)  
+3. Set a low nighttime limit  
+4. Use a random key for unknown recipients (not CPF)  
+5. Activate transaction notifications  
 
 ## PIX and [financial control](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim)
 

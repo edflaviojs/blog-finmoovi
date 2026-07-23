@@ -19,76 +19,71 @@ seo:
 
 ## What it is
 
-Nubank é uma fintech brasileira que funciona como banco digital: oferece conta corrente, cartão de crédito sem anuidade e opções de investimento, tudo gerenciado pelo celular. Não há agência física, o que reduz custos e permite tarifas mais baixas.  
+Nubank is a Brazilian fintech that works as a digital bank: it offers a checking account, a credit card with no annual fee, and investment options, all managed from your phone. There are no physical branches, which reduces costs and allows lower fees.  
 
 ![What it is](/images/glossario/nubank-inline-1.webp)
 
-
-
-- Conta digital com transferências ilimitadas (TED/DOC) gratuitas  
-- Cartão de crédito internacional sem anuidade  
-- Programa de pontos que pode ser trocado por produtos ou descontos  
-- Empréstimos pessoais com [juros](/en/glossario/en-juros) competitivos  
-- Nubank Invest (CDBs e [fundos](/en/glossario/en-fundo-de-investimento)) para quem quer começar a investir  
+- Digital account with unlimited free transfers (TED/DOC)  
+- International credit card with no annual fee  
+- Points program that can be exchanged for products or discounts  
+- Personal loans with [interest](/en/glossario/en-juros) competitive  
+- Nubank Invest (CDBs and [funds](/en/glossario/en-fundo-de-investimento)) for those who want to start investing  
 
 ## How it works
 
-Tudo acontece dentro do app: você baixa, cria um login, envia foto do documento e, em poucos minutos, tem a conta pronta. O cartão de crédito chega em até 10 dias e já pode ser usado para compras online ou físicas. Quando você paga a fatura, o dinheiro sai da conta Nubank, que funciona como uma conta corrente tradicional, mas com interface mais simples.  
+Everything happens inside the app: you download it, create a login, upload a photo of your document and, in a few minutes, the account is ready. The credit card arrives in up to 10 days and can already be used for online or in‑store purchases. When you pay the bill, the money comes out of your Nubank account, which works like a traditional checking account but with a simpler interface.  
 
-- Baixe o app na loja do seu celular  
-- Cadastre CPF, RG e selfie para validação de identidade  
-- Escolha entre abrir conta, solicitar cartão ou investir  
-- Receba o cartão e ative-o pelo app com um toque  
-- Use o QR Code ou a chave [Pix](/en/glossario/en-pix) para receber e enviar dinheiro  
+- Download the app from your phone’s store  
+- Register CPF, RG and a selfie for identity verification  
+- Choose between opening an account, requesting a card or investing  
+- Receive the card and activate it through the app with a tap  
+- Use the QR Code or the [Pix](/en/glossario/en-pix) key to receive and send money  
 
 ## Advantages
 
-A proposta do Nubank é tornar o serviço bancário mais transparente e barato. Por não ter filiais, a empresa consegue eliminar a maioria das tarifas cobradas pelos bancos tradicionais. Além disso, o atendimento é feito por chat 24 h, o que costuma ser mais rápido que o telefone de bancos antigos.  
+Nubank’s proposition is to make banking services more transparent and cheaper. By not having branches, the company can eliminate most of the fees charged by traditional banks. In addition, customer service is provided via 24 h chat, which is usually faster than the phone lines of older banks.  
 
 ![Advantages](/images/glossario/nubank-inline-3.webp)
 
-
-
-- **Zero anuidade** no cartão de crédito  
-- Transferências e DOCs gratuitos e ilimitados  
-- Saques na rede Banco24Horas sem [taxa](/en/glossario/en-taxa-financeira) (até 4 por mês)  
-- Controle total pelo celular: bloqueio, limite e fatura em tempo real  
-- Programa de recompensas simples, sem regras complicadas  
+- **Zero annual fee** on the credit card  
+- Free and unlimited transfers and DOCs  
+- Withdrawals at Banco24Horas network with no [fee](/en/glossario/en-taxa-financeira) (up to 4 per month)  
+- Full control from the phone: block, limit and bill in real time  
+- Simple rewards program, without complicated rules  
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-Mesmo com muitas vantagens, usar um banco totalmente digital tem alguns pontos de atenção. Primeiro, a dependência de internet: se o celular travar ou a rede cair, você pode ficar sem acesso imediato ao dinheiro. Segundo, o limite de crédito pode ser ajustado automaticamente pelo algoritmo, o que às vezes surpreende quem está acostumado a limites fixos. Por fim, embora o Fundo Garantidor de Créditos (FGC) cubra até R$ 250 mil por instituição, o [valor](/en/glossario/en-valor-financeiro) total depositado ainda está sujeito a riscos de mercado nos investimentos.  
+Even with many advantages, using a fully digital bank has some points of attention. First, the dependence on the internet: if the phone freezes or the network drops, you may be left without immediate access to your money. Second, the credit limit can be automatically adjusted by the algorithm, which sometimes surprises people used to fixed limits. Finally, although the Credit Guarantee Fund (FGC) covers up to R$ 250 mil per institution, the total [value](/en/glossario/en-valor-financeiro) deposited is still subject to market risks in the investments.  
 
-- Necessidade de conexão estável para transações  
-- Limite de crédito sujeito a revisões automáticas  
-- Cobertura do FGC limitada a R$ 250 mil por CPF  
-- Investimentos podem perder valor em cenários de alta volatilidade  
+- Need for a stable connection for transactions  
+- Credit limit subject to automatic reviews  
+- FGC coverage limited to R$ 250 mil per CPF  
+- Investments can lose value in high‑volatility scenarios  
 
 ## Practical examples
 
-Imagine três amigos que recebem salários diferentes e decidem usar Nubank para organizar a vida financeira.  
+Imagine three friends who earn different salaries and decide to use Nubank to organize their financial lives.  
 
-- **Ana**, que ganha R$ 3.200, usa o cartão para pagar as compras do supermercado e paga a fatura integralmente todo mês. Ela aproveita o programa de pontos e troca 1.500 pontos por um vale‑presente de R$ 50, economizando na próxima compra.  
-- **Bruno**, com salário de R$ 5.500, abre a conta digital e programa o débito automático da conta de luz. Ele ainda faz um depósito mensal de R$ 1.000 no Nubank Invest, rendendo cerca de 8 % ao ano em CDBs, o que gera aproximadamente R$ 80 de juros ao final do primeiro ano.  
-- **Carla**, que recebe R$ 7.800, solicita um empréstimo pessoal de R$ 5.000 para reformar a casa. O contrato tem taxa de 1,9 % ao mês, e ela paga em 12 parcelas de R$ 466, o que cabe no orçamento sem precisar recorrer a cartões com juros mais altos.  
+- **Ana**, who earns R$ 3,200, uses the card to pay grocery shopping and pays the bill in full every month. She takes advantage of the points program and redeems 1,500 points for a R$ 50 gift‑card, saving on the next purchase.  
+- **Bruno**, with a salary of R$ 5,500, opens the digital account and schedules automatic debit for the electricity bill. He also makes a monthly deposit of R$ 1,000 in Nubank Invest, earning about 8 % per year in CDBs, which generates roughly R$ 80 of interest at the end of the first year.  
+- **Carla**, who receives R$ 7,800, requests a personal loan of R$ 5,000 to remodel her house. The contract has a rate of 1.9 % per month, and she pays it in 12 installments of R$ 466, which fits the budget without needing to resort to higher‑interest credit cards.  
 
-**Practical tip:** sempre pague a fatura do cartão Nubank antes da data de vencimento para evitar juros e manter o score de crédito em alta.  
+**Practical tip:** always pay the Nubank credit‑card bill before the due date to avoid interest and keep your credit score high.  
 
-**Practical tip:** use a função “Objetivo” do app para separar dinheiro para viagens ou emergências; o saldo fica bloqueado e rende automaticamente.  
+**Practical tip:** use the “Goal” feature of the app to set aside money for trips or emergencies; the balance is locked and automatically earns interest.  
 
-**Practical tip:** configure alertas de limite de crédito e de saldo baixo; assim você evita surpresas e controla melhor os gastos.  
+**Practical tip:** set up alerts for credit‑limit changes and low‑balance notifications; this helps you avoid surprises and better control your spending.  
 
 ## How to start
 
-Abrir uma conta Nubank é rápido e não custa nada. Você só precisa de um smartphone, CPF válido e um e‑mail. O processo pode ser concluído em menos de 10 minutos, e o cartão chega em casa sem custo de emissão.  
+Opening a Nubank account is quick and free. You only need a smartphone, a valid CPF and an email address. The process can be completed in less than 10 minutes, and the card arrives at home with no issuance fee.  
 
-- Acesse a loja de aplicativos (Google Play ou App Store) e instale o Nubank  
-- Clique em “Criar conta”, informe CPF, nome completo e data de nascimento  
-- Tire uma foto do documento de identidade e uma selfie para verificação facial  
-- Defina uma senha de 6 dígitos e aceite os termos de uso  
-- Aguarde a aprovação (geralmente instantânea) e comece a usar a conta  
+- Go to the app store (Google Play or App Store) and install Nubank  
+- Click “Create account”, enter CPF, full name and date of birth  
+- Take a photo of your identity document and a selfie for facial verification  
+- Set a 6‑digit password and accept the terms of use  
+- Wait for approval (usually instant) and start using the account  
 
 ## Start today
 
-Não espere o próximo salário para mudar a forma como lida com o dinheiro. Baixe o Nubank agora, abra sua conta em poucos minutos e comece a aproveitar tarifas zero, controle total pelo celular e a possibilidade de investir com segurança. Seu futuro financeiro agradece!
-
+Don’t wait for the next paycheck to change the way you handle money. Download Nubank now, open your account in a few minutes and start enjoying zero fees, full control from your phone, and the possibility of investing safely. Your financial future will thank you!

@@ -11,15 +11,15 @@ readingTime: 1
 
 ## What is CDI?
 
-The CDI (Certificado de Depósito Interbancário) is the interest rate used in loans between banks. In practice, it is the reference for most fixed-income [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in Brazil.
+The CDI (Interbank Deposit Certificate – Certificado de Depósito Interbancário) is the interest rate used in loans between banks. In practice, it is the reference for most fixed‑income [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in Brazil.
 
 ## CDI vs [Selic](/en/glossario/en-selic)
 
-The CDI closely follows the Selic rate (usually 0.10% below). If the Selic is at 14.75%, the CDI is around 14.65%.
+The CDI closely follows the Selic rate (usually 0.10% lower). If the Selic is at 14.75%, the CDI is around 14.65%.
 
 ## Why does it matter?
 
-When an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) yields "100% of the CDI", it means it pays exactly the CDI rate. Examples:
+When an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) yields “100% of the CDI”, it means it pays exactly the CDI rate. Examples:
 - **100% CDI** = standard [yield](/en/glossario/en-yield)
 - **110% CDI** = above average (good)
 - **80% CDI** = below average (bad, like a [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) account)
@@ -28,4 +28,4 @@ When an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) yie
 
 With CDI at 14.65% per year:
 - R$ 1,000 invested = ~R$ 146.50/year (gross)
-- After deducting income tax (15-22.5%), it's between R$ 113 and R$ 124/year net
+- After deducting income tax (15‑22.5%), it’s between R$ 113 and R$ 124/year net

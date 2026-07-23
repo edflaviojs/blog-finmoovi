@@ -18,35 +18,34 @@ seo:
 ---
 
 ## What it is
-A diversificação é uma estratégia financeira que visa reduzir o risco de perda de [valor](/en/glossario/en-valor-financeiro) em um investimento, distribuindo-o em diferentes ativos, como [ações](/en/glossario/en-acoes), títulos, imóveis, entre outros. Isso significa que, em vez de colocar todo o seu dinheiro em uma única coisa, você o divide em várias, para que, se uma delas não der certo, as outras possam compensar. Por exemplo, imagine que você tem R$ 10.000 para investir e decide colocar tudo em ações de uma empresa. Se essa empresa tiver problemas, você pode perder uma grande parte do seu dinheiro. Mas, se você dividir esse R$ 10.000 em ações de diferentes empresas, títulos e um pouco em uma [aplicação](/en/glossario/en-aplicacao-financeira) mais segura, como um fundo de investimento, o risco de perda será menor.
+Diversification is a financial strategy that aims to reduce the risk of loss of [value](/en/glossario/en-valor-financeiro) in an investment by spreading it across different assets, such as [stocks](/en/glossario/en-acoes), bonds, real estate, among others. This means that instead of putting all your money into a single thing, you split it into several, so that if one of them doesn’t work out, the others can compensate. For example, imagine you have R$ 10,000 to invest and decide to put everything into a single company's stocks. If that company runs into problems, you could lose a large portion of your money. But if you split that R$ 10,000 into stocks of different companies, bonds, and a bit into a safer [investment](/en/glossario/en-aplicacao-financeira) such as an investment fund, the risk of loss will be lower.
 
-Listas de ativos para diversificar incluem:
-* Ações de empresas
-* Títulos de dívida
-* Imóveis
-* [Fundos](/en/glossario/en-fundo-de-investimento) de investimento
-* Outros ativos, como commodities ou criptomoedas
+Lists of assets for diversification include:
+* Company stocks
+* Debt securities
+* Real estate
+* [Investment](/en/glossario/en-fundo-de-investimento) funds
+* Other assets, such as commodities or cryptocurrencies
 
 ![What it is](/images/glossario/diversificacao-inline-1.webp)
 
 
 
 ## How it works
-A diversificação funciona porque diferentes ativos têm diferentes ciclos de valorização e desvalorização. Quando um ativo está em alta, outro pode estar em baixa, e vice-versa. Por exemplo, durante uma crise econômica, as ações de empresas podem cair, mas os títulos de dívida podem manter seu valor ou até subir, pois são considerados mais seguros. Além disso, a diversificação também pode ajudar a reduzir o risco de perda de valor devido a eventos específicos, como a falha de uma empresa. **Practical tip:** É importante lembrar que a diversificação não é uma garantia de ganhos, mas sim uma forma de reduzir o risco de perdas.
+Diversification works because different assets have different cycles of appreciation and depreciation. When one asset is up, another may be down, and vice versa. For example, during an economic crisis, company stocks may fall, but debt securities can hold their value or even rise, as they are considered safer. Moreover, diversification can also help reduce the risk of loss of value due to specific events, such as a company's failure. **Practical tip:** It’s important to remember that diversification is not a guarantee of gains, but rather a way to reduce the risk of losses.
 
 ## Advantages
-A diversificação tem várias vantagens, incluindo a redução do risco de perda de valor, a possibilidade de aumentar os ganhos a longo prazo e a tranquilidade de saber que seu dinheiro está distribuído de forma segura. Além disso, a diversificação também pode ajudar a reduzir o estresse e a ansiedade causados pela incerteza do mercado. **Practical tip:** É importante diversificar seus investimentos de acordo com seu perfil de risco e objetivos financeiros. Por exemplo, se você é mais conservador, pode querer colocar mais dinheiro em títulos de dívida e menos em ações.
+Diversification has several advantages, including reducing the risk of loss of value, the possibility of increasing long‑term gains, and the peace of mind that your money is spread out safely. In addition, diversification can also help reduce stress and anxiety caused by market uncertainty. **Practical tip:** It’s important to diversify your investments according to your risk profile and financial goals. For example, if you are more conservative, you may want to allocate more money to debt securities and less to stocks.
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-Embora a diversificação seja uma estratégia segura, também há riscos envolvidos. Por exemplo, se você diversificar demais, pode acabar perdendo a oportunidade de ganhos mais altos em um ativo específico. Além disso, a diversificação também pode ser complicada e requerer mais tempo e esforço para gerenciar. **Practical tip:** É importante lembrar que a diversificação não é uma estratégia de "comprar e esquecer", mas sim uma estratégia de gerenciamento ativo. Você precisa monitorar seus investimentos regularmente e fazer ajustes conforme necessário.
+Although diversification is a safe strategy, there are also risks involved. For example, if you diversify too much, you may miss out on higher returns from a specific asset. Moreover, diversification can be complex and require more time and effort to manage. **Practical tip:** It’s important to remember that diversification is not a “buy and forget” strategy, but an active management strategy. You need to monitor your investments regularly and make adjustments as needed.
 
 ![Advantages](/images/glossario/diversificacao-inline-3.webp)
 
 
 
 ## Practical examples
-Imagine que você tem um salário de R$ 5.000 por mês e decide investir R$ 1.000 por mês em diferentes ativos. Você pode colocar R$ 300 em ações de empresas, R$ 300 em títulos de dívida, R$ 200 em um fundo de investimento e R$ 200 em uma aplicação mais segura, como um [poupança](/en/glossario/en-poupanca). Com o tempo, você pode ajustar esses valores de acordo com seu perfil de risco e objetivos financeiros. Por exemplo, se você está se aproximando da aposentadoria, pode querer colocar mais dinheiro em títulos de dívida e menos em ações. Você também pode usar um app de investimento para ajudar a gerenciar seus investimentos e fazer ajustes conforme necessário.
+Imagine you earn a salary of R$ 5,000 per month and decide to invest R$ 1,000 each month in different assets. You could allocate R$ 300 to company stocks, R$ 300 to debt securities, R$ 200 to an investment fund, and R$ 200 to a safer investment, such as a [savings](/en/glossario/en-poupanca) account. Over time, you can adjust these amounts according to your risk profile and financial goals. For example, if you’re approaching retirement, you may want to allocate more money to debt securities and less to stocks. You can also use an investment app to help manage your investments and make adjustments as needed.
 
 ## Start today
-Agora que você sabe o que é diversificação e como ela funciona, é hora de começar a aplicar essa estratégia em sua vida financeira. **Practical tip:** Comece pequeno e vá aumentando gradualmente. Não é necessário ter muito dinheiro para começar a diversificar seus investimentos. Você pode começar com um pequeno valor e ir aumentando ao longo do tempo. Além disso, é importante lembrar que a diversificação é uma estratégia de longo prazo, então não se preocupe se você não ver resultados imediatos. Com paciência e disciplina, você pode alcançar seus objetivos financeiros e ter uma vida mais segura e próspera.
-
+Now that you know what diversification is and how it works, it’s time to start applying this strategy to your financial life. **Practical tip:** Start small and increase gradually. You don’t need a lot of money to begin diversifying your investments. You can start with a modest amount and grow it over time. Also, remember that diversification is a long‑term strategy, so don’t worry if you don’t see immediate results. With patience and discipline, you can achieve your financial goals and enjoy a safer, more prosperous life.

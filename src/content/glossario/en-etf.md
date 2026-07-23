@@ -18,45 +18,40 @@ seo:
 ---
 
 ## What it is
-O ETF, ou Exchange-Traded Fund, é um tipo de investimento que permite aos investidores comprar uma cesta de ativos, como [ações](/en/glossario/en-acoes), títulos ou commodities, em uma única transação. Isso significa que, em vez de comprar individualmente cada ativo, você pode adquirir uma parte de um fundo que já os possui, simplificando todo o processo. Imagine que você quer investir em uma carteira diversificada de ações da [bolsa de valores](/en/glossario/en-bolsa-de-valores) brasileira, mas não tem tempo ou conhecimento para escolher quais ações comprar. Um ETF pode ser a solução perfeita, pois oferece uma forma fácil e acessível de investir em uma variedade de ativos.
+The ETF, or Exchange‑Traded Fund, is a type of investment that allows investors to buy a basket of assets, such as [ações](/en/glossario/en-acoes), bonds or commodities, in a single transaction. This means that instead of buying each asset individually, you can acquire a share of a fund that already holds them, simplifying the whole process. Imagine you want to invest in a diversified portfolio of stocks from the Brazilian [bolsa de valores](/en/glossario/en-bolsa-de-valores), but you don’t have the time or knowledge to pick which stocks to buy. An ETF can be the perfect solution, as it offers an easy and accessible way to invest in a variety of assets.
 
-Os ETFs são negociados em bolsas de valores, assim como as ações, e seu preço é determinado pelo mercado. Eles são geridos por empresas especializadas que se encarregam de comprar e vender os ativos que compõem o fundo, garantindo que o valor do ETF reflita o valor dos ativos subjacentes. Além disso, os ETFs são regulamentados por órgãos governamentais, o que ajuda a proteger os investidores.
+ETFs are traded on stock exchanges, just like stocks, and their price is determined by the market. They are managed by specialized companies that take care of buying and selling the assets that make up the fund, ensuring that the ETF’s value reflects the value of the underlying assets. In addition, ETFs are regulated by government bodies, which helps protect investors.
 
 ![What it is](/images/glossario/etf-inline-1.webp)
 
-
-
 ## How it works
-Um ETF funciona basicamente como um fundo mútuo, mas com algumas diferenças importantes. Enquanto os [fundos](/en/glossario/en-fundo-de-investimento) mútuos são negociados uma vez ao dia, após o fechamento da bolsa, os ETFs são negociados em tempo real, durante o horário de funcionamento da bolsa. Isso significa que você pode comprar ou vender um ETF a qualquer momento, desde que a bolsa esteja aberta. Além disso, os ETFs são mais transparentes do que os fundos mútuos, pois os ativos que compõem o fundo são divulgados diariamente.
+An ETF works basically like a mutual fund, but with some important differences. While [fundos](/en/glossario/en-fundo-de-investimento) mutual funds are traded once a day, after the market closes, ETFs are traded in real time, during market hours. This means you can buy or sell an ETF at any time, as long as the exchange is open. Moreover, ETFs are more transparent than mutual funds, because the assets that compose the fund are disclosed daily.
 
-Os principais componentes de um ETF incluem:
-* O gestor do fundo, responsável por gerenciar os ativos do ETF
-* Os ativos subjacentes, que podem ser ações, títulos, commodities, etc.
-* O custodiante, responsável por armazenar e proteger os ativos do fundo
-* O distribuidor, responsável por vender os ETFs para os investidores
+The main components of an ETF include:
+* The fund manager, responsible for managing the ETF’s assets
+* The underlying assets, which can be stocks, bonds, commodities, etc.
+* The custodian, responsible for storing and protecting the fund’s assets
+* The distributor, responsible for selling the ETFs to investors
 
 ## Advantages
-Os ETFs oferecem várias vantagens para os investidores, especialmente para aqueles que estão começando a investir. **Practical tip:** Uma das principais vantagens dos ETFs é a [diversificação](/en/glossario/en-diversificacao), pois permitem que os investidores comprem uma cesta de ativos com um único investimento. Além disso, os ETFs são geralmente mais baratos do que os fundos mútuos, pois têm menores taxas de gestão. Outra vantagem é a flexibilidade, pois os ETFs podem ser negociados em tempo real, permitindo que os investidores ajustem suas carteiras rapidamente.
+ETFs offer several advantages for investors, especially for those who are just starting out. **Practical tip:** One of the main advantages of ETFs is [diversificação](/en/glossario/en-diversificacao), as they allow investors to buy a basket of assets with a single investment. In addition, ETFs are generally cheaper than mutual funds because they have lower management fees. Another advantage is flexibility, as ETFs can be traded in real time, allowing investors to adjust their portfolios quickly.
 
-Além disso, os ETFs oferecem uma forma fácil de investir em ativos que podem ser difíceis de acessar de outra forma, como commodities ou ações de empresas estrangeiras. **Practical tip:** É importante lembrar que os ETFs também podem ser usados para [hedge](/en/glossario/en-hedge), ou seja, para reduzir o risco de perdas em uma carteira de investimentos. Por exemplo, se você tem uma carteira de ações e está preocupado com a possibilidade de uma recessão, você pode investir em um ETF de títulos para reduzir o risco.
+Furthermore, ETFs provide an easy way to invest in assets that can be hard to access otherwise, such as commodities or foreign company stocks. **Practical tip:** It’s important to remember that ETFs can also be used for [hedge](/en/glossario/en-hedge), i.e., to reduce the risk of losses in an investment portfolio. For example, if you have a stock portfolio and are worried about a possible recession, you can invest in a bond ETF to lower the risk.
 
 ![Advantages](/images/glossario/etf-inline-3.webp)
 
-
-
 ## Risks
-Como qualquer investimento, os ETFs também envolvem riscos. **Practical tip:** É importante entender que os ETFs não são isentos de riscos, e é fundamental fazer uma pesquisa cuidadosa antes de investir. Alguns dos principais riscos incluem:
-* Risco de mercado: o valor do ETF pode cair se o mercado como um todo cair
-* Risco de crédito: o risco de que as empresas ou governos que emitem os ativos subjacentes não honrem seus compromissos
-* Risco de liquidez: o risco de que você não consiga vender o ETF rapidamente o suficiente ou pelo preço desejado
+As with any investment, ETFs also involve risks. **Practical tip:** It’s important to understand that ETFs are not risk‑free, and thorough research is essential before investing. Some of the main risks include:
+* Market risk: the ETF’s value can fall if the overall market falls
+* Credit risk: the risk that the companies or governments issuing the underlying assets do not honor their commitments
+* Liquidity risk: the risk that you cannot sell the ETF quickly enough or at the desired price
 
-Além disso, os ETFs também podem ser afetados por mudanças nas taxas de [juros](/en/glossario/en-juros), inflação e outras condições econômicas. É importante lembrar que os ETFs são investimentos de longo prazo, e é fundamental ter uma estratégia de investimento clara e disciplinada para alcançar seus objetivos.
+In addition, ETFs can be affected by changes in [juros](/en/glossario/en-juros) rates, inflation and other economic conditions. It’s important to remember that ETFs are long‑term investments, and having a clear, disciplined investment strategy is crucial to achieving your goals.
 
 ## Practical examples
-Vamos considerar um exemplo prático. Imagine que você ganha R$5.000 por mês e quer investir 10% de sua renda em um ETF de ações da bolsa de valores brasileira. Você pode investir R$500 por mês em um ETF que acompanha o índice Ibovespa, por exemplo. **Practical tip:** É importante lembrar que é fundamental diversificar sua carteira de investimentos, então você pode considerar investir em diferentes tipos de ETFs, como um ETF de títulos ou um ETF de commodities.
+Let’s consider a practical example. Imagine you earn R$5.000 per month and want to invest 10 % of your income in a Brazilian stock ETF. You could invest R$500 per month in an ETF that tracks the Ibovespa index, for instance. **Practical tip:** It’s important to remember that diversifying your investment portfolio is essential, so you might consider investing in different types of ETFs, such as a bond ETF or a commodities ETF.
 
-Outro exemplo é o de uma pessoa que ganha R$3.000 por mês e quer investir em um ETF de ações de empresas estrangeiras. Ela pode investir R$300 por mês em um ETF que acompanha o índice S&P 500, por exemplo. **Practical tip:** É importante lembrar que os ETFs podem ser uma forma acessível de investir em ativos que podem ser difíceis de acessar de outra forma, então é fundamental fazer uma pesquisa cuidadosa antes de investir.
+Another example is a person who earns R$3.000 per month and wants to invest in a foreign‑company stock ETF. They could invest R$300 per month in an ETF that tracks the S&P 500 index, for example. **Practical tip:** It’s important to remember that ETFs can be an accessible way to invest in assets that are otherwise hard to reach, so thorough research before investing is essential.
 
 ## Start today
-Agora que você entende melhor o que são os ETFs e como eles funcionam, é hora de começar a investir. **Practical tip:** Lembre-se de que os ETFs são investimentos de longo prazo, então é fundamental ter uma estratégia de investimento clara e disciplinada para alcançar seus objetivos. Além disso, é importante lembrar que os ETFs podem ser uma forma acessível de investir em ativos que podem ser difíceis de acessar de outra forma, então é fundamental fazer uma pesquisa cuidadosa antes de investir. Com um pouco de conhecimento e disciplina, você pode alcançar seus objetivos financeiros e construir uma carteira de investimentos diversificada e rentável.
-
+Now that you have a better understanding of what ETFs are and how they work, it’s time to start investing. **Practical tip:** Remember that ETFs are long‑term investments, so having a clear, disciplined investment strategy is essential to achieve your goals. Also, keep in mind that ETFs can be an accessible way to invest in assets that are otherwise difficult to reach, so thorough research before investing is crucial. With a bit of knowledge and discipline, you can reach your financial goals and build a diversified, profitable investment portfolio.

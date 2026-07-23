@@ -11,28 +11,28 @@ readingTime: 1
 
 ## ¿Qué es Liquidez?
 
-Liquidez é a capacidade de transformar um investimento em dinheiro rapidamente. Quanto mais líquido, mais rápido você acessa o dinheiro.
+Liquidez es la capacidad de transformar una inversión en dinero rápidamente. Cuanto más líquido, más rápido accedes al dinero.
 
 ## Tipos de liquidez
 
-- **Liquidez diária (D+0):** Dinheiro disponível no mesmo dia. Ex: [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), [CDB](/es/glossario/es-cdb) com liquidez diária.
-- **Liquidez D+1:** Disponível no dia seguinte. Ex: Alguns [fundos](/es/glossario/es-fundo-de-investimento) de investimento.
-- **Liquidez no vencimento:** Só pode resgatar na data combinada. Ex: CDB com prazo, LCI/LCA.
+- **Liquidez diaria (D+0):** Dinero disponible el mismo día. Ej: [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), [CDB](/es/glossario/es-cdb) con liquidez diaria.  
+- **Liquidez D+1:** Disponible al día siguiente. Ej: Algunos [fondos](/es/glossario/es-fundo-de-investimento) de inversión.  
+- **Liquidez al vencimiento:** Solo se puede rescatar en la fecha acordada. Ej: CDB con plazo, LCI/LCA.
 
 ## Escala de liquidez
 
-Do mais líquido ao menos líquido:
+Del más líquido al menos líquido:
 
-1. Dinheiro em conta corrente
-2. Tesouro [Selic](/es/glossario/es-selic) / CDB liquidez diária
-3. Fundos DI
-4. CDB com prazo
-5. Fundos imobiliários
-6. [Ações](/es/glossario/es-acoes)
-7. Imóveis
+1. Dinero en cuenta corriente  
+2. Tesoro [Selic](/es/glossario/es-selic) / CDB liquidez diaria  
+3. Fondos DI  
+4. CDB con plazo  
+5. Fondos inmobiliarios  
+6. [Acciones](/es/glossario/es-acoes)  
+7. Inmuebles  
 
-## Quando a liquidez importa?
+## Cuando la liquidez importa?
 
-- **Reserva de emergência:** precisa de liquidez diária
-- **Objetivos de curto prazo (< 1 ano):** liquidez alta
-- **Objetivos de longo prazo (> 5 anos):** pode abrir mão de liquidez por mais rendimento
+- **Reserva de emergencia:** necesita liquidez diaria  
+- **Objetivos a corto plazo (< 1 año):** alta liquidez  
+- **Objetivos a largo plazo (> 5 años):** puede prescindir de liquidez por mayor rendimiento

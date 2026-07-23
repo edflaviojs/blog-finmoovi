@@ -11,46 +11,46 @@ readingTime: 1
 
 ## ¿Qué es [KYC](/es/glossario/es-kyc) (Know Your Customer)?
 
-KYC (Conheça Seu Cliente) é o processo que bancos e corretoras usam para verificar quem você é. Quando pedem RG, CPF, comprovante de endereço e selfie para abrir conta — isso é KYC.
+KYC (Conheça Seu Cliente) es el proceso que bancos y corretoras usan para verificar quién eres. Cuando piden RG, CPF, comprobante de domicilio y selfie para abrir una cuenta — eso es KYC.
 
-## Por que existe
+## Por qué existe
 
-- Prevenir lavagem de dinheiro
-- Combater financiamento ao terrorismo
-- Evitar fraudes e contas falsas
-- Cumprir regulamentações do Banco Central
+- Prevenir el lavado de dinero
+- Combatir la financiación del terrorismo
+- Evitar fraudes y cuentas falsas
+- Cumplir con las regulaciones del Banco Central
 
-## O que pedem
+## Qué piden
 
-### Nível básico
+### Nivel básico
 
-- Nome completo e CPF
-- Data de nascimento
-- Email e telefone
+- Nombre completo y CPF
+- Fecha de nacimiento
+- Correo electrónico y teléfono
 
-### Nível intermediário
+### Nivel intermedio
 
-- Documento com foto (RG ou CNH)
-- Comprovante de endereço
-- Selfie com documento
+- Documento con foto (RG o CNH)
+- Comprobante de domicilio
+- Selfie con documento
 
-### Nível avançado
+### Nivel avanzado
 
-- Declaração de IR
-- Comprovante de renda
-- Origem dos recursos
+- Declaración de IR
+- Comprobante de ingresos
+- Origen de los recursos
 
-## Onde você encontra KYC
+## Dónde encuentras KYC
 
-- Abertura de conta em banco/corretora
-- Exchanges de criptomoedas
-- Fintechs e carteiras digitais
-- Empréstimos e financiamentos
-- Investimentos acima de certos valores
+- Apertura de cuenta en banco/corretora
+- Exchanges de criptomonedas
+- Fintechs y carteras digitales
+- Préstamos y financiamientos
+- Inversiones por encima de ciertos valores
 
 ## [Consejos](/es/posts/es-7-errores-financieros-principiante)
 
-1. Mantenha documentos digitalizados no celular (facilita)
-2. Comprovante de endereço: conta de luz/água dos últimos 3 meses
-3. O processo é obrigatório — desconfie de plataformas que não pedem
-4. Seus dados são protegidos pela LGPD
+1. Mantén documentos digitalizados en el celular (facilita)  
+2. Comprobante de domicilio: cuenta de luz/agua de los últimos 3 meses  
+3. El proceso es obligatorio — desconfía de plataformas que no lo piden  
+4. Tus datos están protegidos por la LGPD

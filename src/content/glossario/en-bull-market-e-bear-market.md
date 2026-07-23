@@ -16,8 +16,6 @@ A Bull Market is a period when the [stock market](/en/posts/en-etfs-o-que-sao-e-
 
 ![What are Bull Market and Bear Market?](/images/glossario/en-bull-market-e-bear-market-inline-1.webp)
 
-
-
 For example, imagine you bought 100 shares of company XYZ for $7.50 each (approximately R$ 50). If the market is on the rise and the stock price goes up to $11.25 (approximately R$ 75), you'll have a profit of $3.75 per share, or a total of $375.
 
 ## Bear Market
@@ -26,8 +24,6 @@ A Bear Market, on the other hand, is a period when the stock market is on the de
 For example, if you bought 100 shares of company XYZ for $7.50 each (approximately R$ 50) and the price drops to $4.50 (approximately R$ 30), you'll have a loss of $3 per share, or a total of $300.
 
 ![Bear Market](/images/glossario/en-bull-market-e-bear-market-inline-3.webp)
-
-
 
 ## Comparison between Bull Market and Bear Market
 Here's a comparative table between the two:

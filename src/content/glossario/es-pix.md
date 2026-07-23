@@ -11,38 +11,38 @@ readingTime: 2
 
 ## ¿Qué es PIX?
 
-PIX é o sistema de pagamentos instantâneos criado pelo Banco Central em 2020. Permite transferir dinheiro em até 10 segundos, 24 horas por dia, 7 dias por semana — inclusive feriados. É gratuito para pessoas físicas.
+PIX es el sistema de pagos instantáneos creado por el Banco Central en 2020. Permite transferir dinero en hasta 10 segundos, 24 horas al día, 7 días a la semana — incluidos los feriados. Es gratuito para personas físicas.
 
 ## ¿Cómo funciona?
 
-1. Você cadastra uma "chave PIX" (CPF, email, telefone ou chave aleatória)
-2. Para receber, basta informar sua chave
-3. Para pagar, usa a chave do destinatário ou QR Code
-4. O dinheiro cai na hora
+1. Registras una "clave PIX" (CPF, email, teléfono o clave aleatoria)  
+2. Para recibir, solo debes proporcionar tu clave  
+3. Para pagar, usa la clave del destinatario o el código QR  
+4. El dinero llega al instante  
 
 ## Ventajas
 
-- Gratuito para pessoa física
-- Instantâneo (10 segundos)
-- Funciona 24/7
-- Substitui TED, DOC e boleto
-- Pode pagar em lojas físicas e online
+- Gratuito para personas físicas  
+- Instantáneo (10 segundos)  
+- Funciona 24/7  
+- Sustituye TED, DOC y boleto  
+- Puedes pagar en tiendas físicas y en línea  
 
-## Segurança
+## Seguridad
 
-- Limite noturno (20h-6h): R$ 1.000 (padrão, pode alterar)
-- Mecanismo Especial de Devolução (MED) para fraudes
-- Autenticação por senha/biometria no app do banco
-- Pode bloquear chaves suspeitas
+- Límite nocturno (20h-6h): R$ 1.000 (por defecto, puedes cambiarlo)  
+- Mecanismo Especial de Devolución (MED) para fraudes  
+- Autenticación por contraseña/biometría en la app del banco  
+- Puedes bloquear claves sospechosas  
 
-## [Consejos](/es/posts/es-7-errores-financieros-principiante) de segurança
+## [Consejos](/es/posts/es-7-errores-financieros-principiante) de seguridad
 
-1. Nunca compartilhe senhas ou códigos de verificação
-2. Desconfie de PIX pedidos por WhatsApp (golpe comum)
-3. Configure limite noturno baixo
-4. Use chave aleatória para desconhecidos (não CPF)
-5. Ative notificações de transação
+1. Nunca compartas contraseñas o códigos de verificación  
+2. Desconfía de PIX solicitados por WhatsApp (estafa común)  
+3. Configura un límite nocturno bajo  
+4. Usa una clave aleatoria para desconocidos (no CPF)  
+5. Activa notificaciones de transacción  
 
-## PIX e controle financeiro
+## PIX y control financiero
 
-O PIX facilita o rastreamento de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) porque todas as transações ficam registradas no extrato. Apps como o [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) categorizam automaticamente seus PIX para você saber exatamente para onde vai seu dinheiro.
+PIX facilita el seguimiento de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) porque todas las transacciones quedan registradas en el extracto. Apps como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) categorizan automáticamente tus PIX para que sepas exactamente a dónde va tu dinero.

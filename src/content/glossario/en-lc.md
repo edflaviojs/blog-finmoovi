@@ -18,46 +18,45 @@ seo:
 ---
 
 ## What it is
-A Letra de Crédito (LC) é um tipo de instrumento financeiro utilizado para garantir pagamentos entre empresas ou indivíduos. É basicamente um contrato entre um comprador, um vendedor e um banco, onde o banco se compromete a pagar ao vendedor se o comprador não cumprir com suas obrigações. Isso ajuda a reduzir o risco de não pagamento e fornece segurança tanto para o comprador quanto para o vendedor. Imagine que você é um empresário que vende produtos para outra empresa, e você quer garantir que receberá o pagamento. Nesse caso, uma LC pode ser uma ótima opção.
+A Letter of Credit (LC) is a type of financial instrument used to guarantee payments between companies or individuals. It is basically a contract among a buyer, a seller, and a bank, where the bank commits to pay the seller if the buyer fails to meet its obligations. This helps reduce the risk of non‑payment and provides security for both the buyer and the seller. Imagine you are a business owner who sells products to another company, and you want to ensure you will receive the payment. In that case, an LC can be a great option.
 
-* A LC é emitida pelo banco do comprador
-* O vendedor recebe o pagamento do banco se o comprador não pagar
-* A LC pode ser utilizada para pagamentos nacionais ou internacionais
-* É comum em transações de grande [valor](/en/glossario/en-valor-financeiro), como compras de mercadorias ou serviços
+* The LC is issued by the buyer's bank
+* The seller receives payment from the bank if the buyer does not pay
+* The LC can be used for domestic or international payments
+* It is common in large [value](/en/glossario/en-valor-financeiro) transactions, such as purchases of goods or services
 
 ![What it is](/images/glossario/lc-inline-1.webp)
 
 
 
 ## How it works
-A LC funciona da seguinte maneira: o comprador solicita ao seu banco que emita uma LC em favor do vendedor. O banco, então, se compromete a pagar ao vendedor se o comprador não cumprir com suas obrigações. O vendedor, por sua vez, recebe a LC e pode utilizá-la como garantia de pagamento. Se o comprador não pagar, o vendedor pode apresentar a LC ao banco e receber o pagamento. Por exemplo, imagine que você é um empresário que vende produtos para uma empresa que paga R$ 10.000,00 por mês. Você pode solicitar uma LC para garantir que receberá o pagamento.
+An LC works as follows: the buyer asks their bank to issue an LC in favor of the seller. The bank then commits to pay the seller if the buyer fails to meet its obligations. The seller, in turn, receives the LC and can use it as a payment guarantee. If the buyer does not pay, the seller can present the LC to the bank and receive the payment. For example, imagine you are a business owner who sells products to a company that pays R$ 10.000,00 per month. You can request an LC to ensure you will receive the payment.
 
-**Practical tip:** É importante ler atentamente as condições da LC antes de aceitá-la, pois elas podem variar dependendo do banco e do tipo de transação.
+**Practical tip:** It is important to read the LC terms carefully before accepting it, as they may vary depending on the bank and the type of transaction.
 
 ## Advantages
-As LCs oferecem várias vantagens tanto para o comprador quanto para o vendedor. Para o comprador, a LC fornece uma forma segura de pagar ao vendedor, pois o banco se compromete a pagar se o comprador não cumprir com suas obrigações. Para o vendedor, a LC fornece uma garantia de pagamento, o que pode ajudar a reduzir o risco de não pagamento. Além disso, as LCs podem ser utilizadas para pagamentos nacionais ou internacionais, o que as torna uma opção versátil para empresas que operam em diferentes mercados.
+LCs offer several advantages for both the buyer and the seller. For the buyer, the LC provides a secure way to pay the seller, as the bank commits to pay if the buyer fails to meet its obligations. For the seller, the LC provides a payment guarantee, which can help reduce the risk of non‑payment. In addition, LCs can be used for domestic or international payments, making them a versatile option for companies operating in different markets.
 
-* Reduz o risco de não pagamento
-* Fornece segurança tanto para o comprador quanto para o vendedor
-* Pode ser utilizada para pagamentos nacionais ou internacionais
-* É uma opção versátil para empresas que operam em diferentes mercados
+* Reduces the risk of non‑payment
+* Provides security for both the buyer and the seller
+* Can be used for domestic or international payments
+* Is a versatile option for companies operating in different markets
 
 ![Advantages](/images/glossario/lc-inline-3.webp)
 
 
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-Embora as LCs sejam uma forma segura de pagamento, elas também envolvem alguns riscos. Um dos principais riscos é o risco de fraude, pois as LCs podem ser falsificadas ou alteradas. Além disso, as LCs podem ser utilizadas para fins ilegais, como lavagem de dinheiro ou evasão fiscal. **Practical tip:** É importante verificar a autenticidade da LC antes de aceitá-la, e também é importante manter registros precisos das transações.
+Although LCs are a secure form of payment, they also involve some risks. One of the main risks is fraud risk, as LCs can be forged or altered. In addition, LCs can be used for illegal purposes, such as money laundering or tax evasion. **Practical tip:** It is important to verify the authenticity of the LC before accepting it, and it is also important to keep accurate records of the transactions.
 
-**Practical tip:** É importante trabalhar com um banco confiável e experiente em LCs para minimizar os riscos.
+**Practical tip:** It is important to work with a reliable and experienced bank in LCs to minimize the risks.
 
 ## Practical examples
-As LCs são comuns em diversas indústrias, incluindo comércio internacional, construção e finanças. Por exemplo, imagine que você é um empresário que importa produtos da China e paga R$ 50.000,00 por mês. Você pode solicitar uma LC para garantir que o fornecedor receberá o pagamento. Outro exemplo é um empresário que vende serviços de consultoria e paga R$ 8.000,00 por mês aos funcionários. Ele pode solicitar uma LC para garantir que os funcionários receberão o pagamento.
+LCs are common in various industries, including international trade, construction, and finance. For example, imagine you are a business owner who imports products from China and pays R$ 50.000,00 per month. You can request an LC to ensure the supplier receives the payment. Another example is a business owner who provides consulting services and pays R$ 8.000,00 per month to employees. He can request an LC to ensure the employees receive the payment.
 
-* Importação de produtos da China: R$ 50.000,00 por mês
-* Venda de serviços de consultoria: R$ 8.000,00 por mês
-* Construção de um prédio: R$ 100.000,00 por mês
+* Importing products from China: R$ 50.000,00 per month
+* Sale of consulting services: R$ 8.000,00 per month
+* Construction of a building: R$ 100.000,00 per month
 
 ## Start today
-Agora que você sabe mais sobre as LCs, é hora de começar a utilizar esse instrumento financeiro em seu negócio. **Practical tip:** É importante pesquisar e comparar as taxas e condições de diferentes bancos antes de escolher um para emitir sua LC. Além disso, é importante ler atentamente as condições da LC antes de aceitá-la. Com as LCs, você pode reduzir o risco de não pagamento e aumentar a segurança de suas transações. Então, não perca mais tempo e comece a utilizar as LCs hoje mesmo! Você pode começar pesquisando sobre os bancos que oferecem LCs e comparando as taxas e condições. Em seguida, você pode solicitar uma LC e começar a utilizar esse instrumento financeiro em seu negócio. Lembre-se de que as LCs são uma forma segura de pagamento, mas é importante trabalhar com um banco confiável e experiente para minimizar os riscos.
-
+Now that you know more about LCs, it’s time to start using this financial instrument in your business. **Practical tip:** It is important to research and compare the fees and terms of different banks before choosing one to issue your LC. In addition, it is important to read the LC terms carefully before accepting them. With LCs, you can reduce the risk of non‑payment and increase the security of your transactions. So, don’t waste any more time and start using LCs today! You can start by researching banks that offer LCs and comparing their fees and terms. Then, you can request an LC and begin using this financial instrument in your business. Remember that LCs are a secure form of payment, but it is important to work with a reliable and experienced bank to minimize the risks.

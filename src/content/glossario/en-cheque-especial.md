@@ -37,7 +37,7 @@ If you are R$ 1,000 overdrawn for 30 days with interest rates of 12% per month:
 ## Cheaper [alternatives](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)
 
 | Type of credit | Monthly interest |
-|----------------|---------------|
+|----------------|-------------------|
 | Overdraft | 8-15% |
 | [Credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) (revolving) | 12-16% |
 | Personal loan | 2-5% |

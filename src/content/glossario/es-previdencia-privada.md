@@ -9,49 +9,49 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es Previdência Privada?
+## ¿Qué es Pensión Privada?
 
-Previdência Privada é um investimento de longo prazo pensado para a aposentadoria. Você contribui mensalmente e, no futuro, resgata o [valor](/es/glossario/es-valor-financeiro) acumulado (com rendimentos). É um complemento à aposentadoria do INSS.
+La Pensión Privada es una inversión a largo plazo pensada para la jubilación. Contribuyes mensualmente y, en el futuro, retiras el [valor](/es/glossario/es-valor-financeiro) acumulado (con rendimientos). Es un complemento a la jubilación del INSS.
 
 ## PGBL vs. VGBL
 
 | | PGBL | VGBL |
 |--|------|------|
-| Deduz IR? | Sim (até 12% da renda) | Não |
-| IR no resgate | Sobre valor total | Só sobre rendimentos |
-| Para quem? | Faz declaração completa | Faz declaração simplificada |
+| ¿Deduz IR? | Sí (hasta 12% de los ingresos) | No |
+| IR al rescate | Sobre el valor total | Sólo sobre los rendimientos |
+| ¿Para quién? | Hace declaración completa | Hace declaración simplificada |
 
-## Tabelas de tributação
+## Tablas de tributación
 
-### Progressiva (melhor para resgates pequenos)
+### Progresiva (mejor para rescates pequeños)
 
-- Mesma tabela do salário (0% a 27,5%)
+- Misma tabla del salario (0% a 27,5%)
 
-### Regressiva (melhor para longo prazo)
+### Regresiva (mejor para largo plazo)
 
-| Prazo | Alíquota |
+| Plazo | Alícuota |
 |-------|----------|
-| Até 2 anos | 35% |
-| 2 a 4 anos | 30% |
-| 4 a 6 anos | 25% |
-| 6 a 8 anos | 20% |
-| 8 a 10 anos | 15% |
-| Acima de 10 anos | 10% |
+| Hasta 2 años | 35% |
+| 2 a 4 años | 30% |
+| 4 a 6 años | 25% |
+| 6 a 8 años | 20% |
+| 8 a 10 años | 15% |
+| Más de 10 años | 10% |
 
 ## Ventajas
 
-- Benefício fiscal (PGBL)
-- Não entra em inventário (planejamento sucessório)
-- Disciplina de investimento mensal
-- Alíquota de 10% após 10 anos (regressiva)
+- Beneficio fiscal (PGBL)
+- No entra en inventario (planificación sucesoria)
+- Disciplina de inversión mensual
+- Alícuota del 10% después de 10 años (regresiva)
 
 ## Desventajas
 
-- Taxas de administração altas (muitos [fundos](/es/glossario/es-fundo-de-investimento) cobram 1-2%)
-- [Taxa](/es/glossario/es-taxa-financeira) de carregamento (alguns cobram na entrada)
-- Rendimento pode ser inferior a investir por conta própria
-- Pouca flexibilidade
+- Comisiones de administración altas (muchos [fondos](/es/glossario/es-fundo-de-investimento) cobran 1-2%)
+- [Tarifa](/es/glossario/es-taxa-financeira) de carga (algunos cobran al ingresar)
+- El rendimiento puede ser inferior a invertir por cuenta propia
+- Poca flexibilidad
 
-## Dica
+## Consejo
 
-Se for fazer previdência, escolha fundos com taxa de administração abaixo de 1% e sem taxa de carregamento. Bancos tradicionais costumam cobrar caro — prefira corretoras independentes.
+Si vas a hacer pensión, elige fondos con comisión de administración inferior al 1% y sin tarifa de carga. Los bancos tradicionales suelen cobrar caro — prefiere corredoras independientes.

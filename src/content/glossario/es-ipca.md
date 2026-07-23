@@ -11,27 +11,27 @@ readingTime: 2
 
 ## ¿Qué es IPCA?
 
-O IPCA (Índice Nacional de Preços ao Consumidor Amplo) é o termômetro oficial da inflação no Brasil. Ele mede quanto os preços subiram (ou caíram) em um determinado período. É calculado pelo IBGE todo mês.
+El IPCA (Índice Nacional de Preços ao Consumidor Amplo) es el termómetro oficial de la inflación en Brasil. Mide cuánto han subido (o bajado) los precios en un período determinado. Lo calcula el IBGE cada mes.
 
-## O que ele mede
+## Qué mide
 
-O IPCA acompanha os preços de uma "cesta" de produtos e serviços que as famílias brasileiras consomem:
-- Alimentação (arroz, feijão, carne)
-- Habitação (aluguel, energia, água)
-- Transporte (gasolina, ônibus)
-- Saúde (plano de saúde, remédios)
-- Educação (mensalidade escolar)
+El IPCA sigue los precios de una "cesta" de productos y servicios que consumen las familias brasileñas:
+- Alimentación (arroz, frijoles, carne)
+- Vivienda (alquiler, energía, agua)
+- Transporte (gasolina, autobús)
+- Salud (plan de salud, medicamentos)
+- Educación (mensualidad escolar)
 
-## Por que o IPCA importa para você
+## Por qué el IPCA importa para ti
 
-1. **Seu dinheiro perde [valor](/es/glossario/es-valor-financeiro):** se o IPCA é 5% ao ano, R$ 100 hoje valem R$ 95 daqui a um ano
-2. **Investimentos:** rendimentos abaixo do IPCA significam que você está perdendo dinheiro
-3. **[Selic](/es/glossario/es-selic):** o Banco Central sobe ou desce a Selic para controlar o IPCA
-4. **Reajustes:** aluguéis, planos de saúde e salários são reajustados pelo IPCA
+1. **Tu dinero pierde [valor](/es/glossario/es-valor-financeiro):** si el IPCA es 5% al año, R$ 100 hoy valen R$ 95 dentro de un año
+2. **Inversiones:** rendimientos por debajo del IPCA significan que estás perdiendo dinero
+3. **[Selic](/es/glossario/es-selic):** el Banco Central sube o baja la Selic para controlar el IPCA
+4. **Ajustes:** alquileres, planes de salud y salarios se ajustan por el IPCA
 
-## IPCA e investimentos
+## IPCA e inversiones
 
-Para seu dinheiro crescer de verdade, seus investimentos precisam render **acima do IPCA**. Por isso existem títulos como o Tesouro IPCA+, que garantem rendimento real (acima da inflação).
+Para que tu dinero crezca de verdad, tus inversiones deben rendir **por encima del IPCA**. Por eso existen títulos como el Tesoro IPCA+, que garantizan rendimiento real (por encima de la inflación).
 
 ## IPCA histórico
 

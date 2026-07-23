@@ -9,46 +9,44 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es Independência Financeira?
+## ¿Qué es Independencia Financiera?
 
-Independência financeira é quando seus investimentos geram renda suficiente para pagar todas as suas contas — sem precisar trabalhar. Você trabalha porque quer, não porque precisa.
+La independencia financiera es cuando tus inversiones generan ingresos suficientes para pagar todas tus cuentas — sin necesidad de trabajar. Trabajas porque quieres, no porque necesitas.
 
-## A fórmula
+## La fórmula
 
-**Patrimônio necessário = [Gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) anuais × 25**
+**Patrimonio necesario = [Gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) anuales × 25**
 
-Isso é baseado na "regra dos 4%": você pode retirar 4% do patrimônio por ano sem que ele acabe.
+## Ejemplo
 
-## Exemplo
+- Gastos mensuales: R$ 5.000
+- Gastos anuales: R$ 60.000
+- Patrimonio necesario: R$ 60.000 × 25 = **R$ 1.500.000**
 
-- Gastos mensais: R$ 5.000
-- Gastos anuais: R$ 60.000
-- Patrimônio necessário: R$ 60.000 × 25 = **R$ 1.500.000**
+Con R$ 1,5 millón invertidos rindiendo 8% al año, tendrías R$ 120.000/año (R$ 10.000/mes) — más que suficiente.
 
-Com R$ 1,5 milhão investidos rendendo 8% ao ano, você teria R$ 120.000/ano (R$ 10.000/mês) — mais que suficiente.
+## ¿Cuánto tiempo lleva?
 
-## Quanto tempo leva
+Depende de cuánto ahorras:
 
-Depende de quanto você poupa:
-
-| [Taxa](/es/glossario/es-taxa-financeira) de [poupança](/es/glossario/es-poupanca) | Tempo para IF |
+| [Tasa](/es/glossario/es-taxa-financeira) de [ahorro](/es/glossario/es-poupanca) | Tiempo para IF |
 |-----------------|---------------|
-| 10% da renda | 51 anos |
-| 20% da renda | 37 anos |
-| 30% da renda | 28 anos |
-| 50% da renda | 17 anos |
-| 70% da renda | 8 anos |
+| 10% de la renta | 51 años |
+| 20% de la renta | 37 años |
+| 30% de la renta | 28 años |
+| 50% de la renta | 17 años |
+| 70% de la renta | 8 años |
 
-## Passos para a independência financeira
+## Pasos para la independencia financiera
 
-1. Calcule seus gastos mensais reais
-2. Defina seu "número" (gastos × 25)
-3. Aumente sua taxa de poupança
-4. Invista consistentemente (aportes mensais)
-5. Reinvista todos os rendimentos
-6. Aumente a renda (promoções, renda extra)
-7. Acompanhe o progresso mensalmente
+1. Calcula tus gastos mensuales reales  
+2. Define tu "número" (gastos × 25)  
+3. Aumenta tu tasa de ahorro  
+4. Invierte consistentemente (aportes mensuales)  
+5. Reinvierte todos los rendimientos  
+6. Aumenta los ingresos (promociones, ingresos extra)  
+7. Haz seguimiento del progreso mensualmente  
 
-## Independência financeira parcial
+## Independencia financiera parcial
 
-Não precisa ser tudo ou nada. Ter 50% dos gastos cobertos por renda passiva já muda sua vida — você pode trabalhar meio período, mudar de carreira ou aceitar um salário menor fazendo o que ama.
+No tiene que ser todo o nada. Tener el 50% de los gastos cubiertos por ingresos pasivos ya cambia tu vida — puedes trabajar medio tiempo, cambiar de carrera o aceptar un salario menor haciendo lo que amas.

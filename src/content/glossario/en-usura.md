@@ -18,51 +18,46 @@ seo:
 ---
 
 ## What it is
-A usura é um termo financeiro que se refere à prática de cobrar [juros](/en/glossario/en-juros) excessivos sobre empréstimos ou financiamentos. Isso significa que, quando você pega um empréstimo, você não apenas paga o [valor](/en/glossario/en-valor-financeiro) principal, mas também uma [taxa](/en/glossario/en-taxa-financeira) adicional, que é o juro. A usura ocorre quando esses juros são muito altos, tornando difícil para o devedor pagar a dívida. Por exemplo, imagine que você pega um empréstimo de R$ 5.000 com um juro de 20% ao mês. Isso significa que, no final do mês, você terá que pagar R$ 6.000, o que pode ser muito difícil para alguém que ganha R$ 4.000 por mês.
+Usury is a financial term that refers to the practice of charging [interest](/en/glossario/en-juros) excessively on loans or financing. This means that when you take a loan, you not only pay the [principal](/en/glossario/en-valor-financeiro) amount, but also an additional [rate](/en/glossario/en-taxa-financeira), which is the interest. Usury occurs when these rates are very high, making it difficult for the borrower to repay the debt. For example, imagine you take a loan of R$ 5,000 with an interest rate of 20% per month. That means that at the end of the month you will have to pay R$ 6,000, which can be very hard for someone who earns R$ 4,000 a month.
 
-* A usura pode ocorrer em diferentes tipos de empréstimos, incluindo empréstimos pessoais, cartões de crédito e financiamentos de veículos.
-* A taxa de juros é um dos principais fatores que determinam se um empréstimo é usurário ou não.
-* A usura pode ter consequências graves para o devedor, incluindo a perda de bens e a deterioração do crédito.
+* Usury can occur in different types of loans, including personal loans, credit cards, and vehicle financing.  
+* The interest rate is one of the main factors that determine whether a loan is usurious or not.  
+* Usury can have serious consequences for the borrower, including loss of assets and credit deterioration.
 
 ![What it is](/images/glossario/usura-inline-1.webp)
 
-
-
-A usura é um problema grave no Brasil, onde muitas pessoas não têm acesso a empréstimos com taxas de juros razoáveis. Isso pode levar a uma armadilha de dívida, onde o devedor é forçado a pegar empréstimos adicionais para pagar os juros dos empréstimos anteriores.
+Usury is a serious problem in Brazil, where many people do not have access to loans with reasonable interest rates. This can lead to a debt trap, where the borrower is forced to take additional loans to pay the interest on previous loans.
 
 ## How it works
-A usura funciona de forma que o credor cobra juros excessivos sobre o empréstimo, tornando difícil para o devedor pagar a dívida. Isso pode ocorrer de diferentes maneiras, incluindo:
-* Juros compostos: isso significa que os juros são calculados sobre o valor principal e sobre os juros anteriores, o que pode levar a uma dívida que cresce rapidamente.
-* Taxas de juros flutuantes: isso significa que a taxa de juros pode mudar ao longo do tempo, o que pode tornar difícil para o devedor prever quanto terá que pagar.
-* Encargos adicionais: isso inclui taxas de processamento, taxas de late payment e outros encargos que podem aumentar o valor total da dívida.
+Usury works in such a way that the lender charges excessive interest on the loan, making it difficult for the borrower to repay the debt. This can happen in different ways, including:
+* Compound interest: this means that interest is calculated on the principal amount **and** on previously accrued interest, which can lead to a debt that grows rapidly.  
+* Floating interest rates: this means the rate can change over time, making it hard for the borrower to predict how much they will have to pay.  
+* Additional charges: this includes processing fees, late‑payment fees, and other charges that can increase the total amount owed.
 
-**Practical tip:** Sempre leia as condições do empréstimo antes de assinar, e certifique-se de entender como os juros são calculados e quais são os encargos adicionais.
+**Practical tip:** Always read the loan terms before signing, and make sure you understand how interest is calculated and what additional charges apply.
 
 ## Advantages
-Embora a usura seja um problema grave, existem alguns benefícios em pegar empréstimos, desde que sejam feitos de forma responsável. Por exemplo:
-* Empréstimos podem ser usados para financiar projetos importantes, como a compra de uma casa ou a abertura de um negócio.
-* Empréstimos podem ser usados para pagar despesas inesperadas, como uma conta médica ou uma reparação no carro.
-* Empréstimos podem ser usados para consolidar dívidas, o que pode ajudar a reduzir o valor total da dívida e a simplificar as finanças.
+Although usury is a serious problem, there are some benefits to taking loans, provided they are done responsibly. For example:
+* Loans can be used to finance important projects, such as buying a house or starting a business.  
+* Loans can be used to cover unexpected expenses, like a medical bill or a car repair.  
+* Loans can be used to consolidate debts, which can help reduce the total amount owed and simplify finances.
 
-No entanto, é importante lembrar que a usura pode ter consequências graves, e é importante ser cuidadoso ao pegar empréstimos. **Practical tip:** Certifique-se de ter um plano para pagar o empréstimo antes de pegá-lo, e não peça mais do que você pode pagar.
+However, it is important to remember that usury can have severe consequences, and you should be careful when taking loans. **Practical tip:** Make sure you have a repayment plan before borrowing, and don’t take on more than you can afford.
 
 ![Advantages](/images/glossario/usura-inline-3.webp)
 
-
-
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-A usura pode ter consequências graves para o devedor, incluindo:
-* Perda de bens: se o devedor não puder pagar a dívida, o credor pode tomar posse de seus bens, como uma casa ou um carro.
-* Deterioração do crédito: a usura pode afetar negativamente o crédito do devedor, o que pode tornar difícil obter empréstimos no futuro.
-* Estresse e ansiedade: a usura pode causar estresse e ansiedade, o que pode afetar a saúde mental e física do devedor.
+Usury can have serious consequences for the borrower, including:
+* Loss of assets: if the borrower cannot repay the debt, the lender may seize assets such as a house or a car.  
+* Credit deterioration: usury can negatively affect the borrower’s credit, making it harder to obtain loans in the future.  
+* Stress and anxiety: usury can cause stress and anxiety, which can impact the borrower’s mental and physical health.
 
-**Practical tip:** Se você está tendo dificuldade em pagar uma dívida, é importante procurar ajuda o mais rápido possível. Isso pode incluir falar com um conselheiro financeiro ou um advogado.
+**Practical tip:** If you’re having trouble repaying a debt, it’s important to seek help as soon as possible. This may include talking to a financial counselor or a lawyer.
 
 ## Practical examples
-Aqui estão alguns exemplos práticos de como a usura pode afetar as finanças de alguém:
-* Imagine que você pega um empréstimo de R$ 10.000 com um juro de 30% ao mês. Isso significa que, no final do mês, você terá que pagar R$ 13.000, o que pode ser muito difícil para alguém que ganha R$ 5.000 por mês.
-* Imagine que você tem um cartão de crédito com um limite de R$ 5.000 e uma taxa de juros de 20% ao mês. Se você gastar R$ 5.000 no cartão e não pagar o saldo em tempo, você pode ter que pagar R$ 6.000 no final do mês, o que pode ser muito difícil para alguém que ganha R$ 3.000 por mês.
+Here are some practical examples of how usury can affect someone’s finances:
+* Imagine you take a loan of R$ 10,000 with an interest rate of 30% per month. That means that at the end of the month you will have to pay R$ 13,000, which can be very difficult for someone who earns R$ 5,000 a month.  
+* Imagine you have a credit card with a limit of R$ 5,000 and an interest rate of 20% per month. If you spend R$ 5,000 on the card and don’t pay the balance on time, you may have to pay R$ 6,000 at the end of the month, which can be very hard for someone who earns R$ 3,000 a month.
 
 ## Start today
-Agora que você entende melhor o que é a usura e como ela pode afetar as suas finanças, é importante começar a tomar medidas para evitar cair nessa armadilha. **Practical tip:** Comece a monitorar suas finanças de perto, e certifique-se de ter um plano para pagar qualquer dívida que você tenha. Além disso, é importante ser cuidadoso ao pegar empréstimos, e certifique-se de entender as condições do empréstimo antes de assinar. Com um pouco de conhecimento e planejamento, você pode evitar a usura e manter suas finanças saudáveis.
-
+Now that you understand better what usury is and how it can affect your finances, it’s important to start taking steps to avoid falling into this trap. **Practical tip:** Begin monitoring your finances closely, and make sure you have a plan to repay any debt you have. Also, be careful when taking loans, and be sure you understand the loan conditions before signing. With a bit of knowledge and planning, you can avoid usury and keep your finances healthy.

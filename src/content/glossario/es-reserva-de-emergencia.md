@@ -9,26 +9,26 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## ¿Qué es Reserva de Emergência?
+## ¿Qué es Reserva de Emergencia?
 
-A reserva de emergência é um colchão financeiro que protege você de imprevistos. É o dinheiro que você pode acessar rapidamente quando algo inesperado acontece.
+La reserva de emergencia es un colchón financiero que te protege de imprevistos. Es el dinero que puedes acceder rápidamente cuando ocurre algo inesperado.
 
-## Quanto guardar?
+## ¿Cuánto guardar?
 
-A recomendação é ter entre **3 a 6 meses** dos seus gastos mensais. Se você gasta R$ 3.000/mês, sua reserva ideal é entre R$ 9.000 e R$ 18.000.
+La recomendación es tener entre **3 a 6 meses** de tus gastos mensuales. Si gastas R$ 3.000/mes, tu reserva ideal está entre R$ 9.000 y R$ 18.000.
 
-## Onde deixar?
+## ¿Dónde dejar?
 
-A reserva precisa ter **[liquidez](/es/glossario/es-liquidez) diária** (acesso imediato):
+La reserva necesita tener **[liquidez](/es/glossario/es-liquidez) diaria** (acceso inmediato):
 - Tesouro Selic
-- [CDB](/es/glossario/es-cdb) com liquidez diária (100% [CDI](/es/glossario/es-cdi) ou mais)
-- Conta remunerada
+- [CDB](/es/glossario/es-cdb) con liquidez diaria (100% [CDI](/es/glossario/es-cdi) o más)
+- Cuenta remunerada
 
-**Nunca** deixe em [ações](/es/glossario/es-acoes), [fundos](/es/glossario/es-fundo-de-investimento) imobiliários ou investimentos com prazo de resgate.
+**Nunca** lo dejes en [ações](/es/glossario/es-acoes), [fundos](/es/glossario/es-fundo-de-investimento) inmobiliarios o inversiones con plazo de rescate.
 
-## Como montar?
+## ¿Cómo montar?
 
-1. Defina o [valor](/es/glossario/es-valor-financeiro) alvo (3-6 meses de gastos)
-2. Separe um valor fixo todo mês (10-20% da renda)
-3. Automatize a transferência
-4. Não toque até completar o valor alvo
+1. Define el [valor](/es/glossario/es-valor-financeiro) objetivo (3-6 meses de gastos)
+2. Separa un valor fijo cada mes (10-20% de los ingresos)
+3. Automatiza la transferencia
+4. No lo toques hasta completar el valor objetivo

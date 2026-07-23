@@ -18,45 +18,44 @@ seo:
 ---
 
 ## What it is
-Webull é uma plataforma de investimentos que permite aos usuários comprar e vender [ações](/en/glossario/en-acoes), opções, ETFs (Exchange-Traded Funds) e outros ativos financeiros. É uma alternativa popular para as tradicionais corretoras de valores mobiliários, oferecendo uma interface mais moderna e acessível. Imagine que você tem um salário de R$ 5.000 por mês e quer começar a investir uma parte disso. Com a Webull, você pode fazer isso de forma fácil e segura.
+Webull is an investment platform that allows users to buy and sell [ações](/en/glossario/en-acoes), options, ETFs (Exchange-Traded Funds) and other financial assets. It is a popular alternative to traditional securities brokerages, offering a more modern and accessible interface. Imagine you have a salary of R$ 5.000 per month and want to start investing a portion of it. With Webull, you can do this easily and safely.
 
-* A plataforma é regulamentada pela SEC (Securities and Exchange Commission) nos EUA, o que garante um certo nível de segurança e confiabilidade.
-* A Webull também oferece uma variedade de ferramentas de análise e recursos educacionais para ajudar os investidores a tomar decisões informadas.
-* Além disso, a plataforma tem uma interface móvel, permitindo que você acompanhe seus investimentos e faça operações de qualquer lugar.
+* The platform is regulated by the SEC (Securities and Exchange Commission) in the US, which ensures a certain level of security and reliability.  
+* Webull also offers a variety of analysis tools and educational resources to help investors make informed decisions.  
+* Additionally, the platform has a mobile interface, allowing you to monitor your investments and execute trades from anywhere.
 
 ![What it is](/images/glossario/webull-inline-1.webp)
 
 
 
 ## How it works
-A Webull funciona basicamente como uma corretora de valores mobiliários, permitindo que os usuários comprem e vendam ativos financeiros. No entanto, ela oferece algumas vantagens em relação às tradicionais corretoras, como menores taxas e uma interface mais moderna. **Practical tip:** Antes de começar a investir, é importante definir seus objetivos financeiros e avaliar seu perfil de risco. Isso ajudará a determinar quais ativos são mais adequados para você.
+Webull basically works like a securities brokerage, allowing users to buy and sell financial assets. However, it offers some advantages over traditional brokerages, such as lower fees and a more modern interface. **Practical tip:** Before you start investing, it’s important to define your financial goals and assess your risk profile. This will help you determine which assets are most suitable for you.
 
-Quando você cria uma conta na Webull, você precisa depositar dinheiro para começar a investir. Você pode fazer isso por meio de transferência bancária ou outros métodos de pagamento. Em seguida, você pode escolher quais ativos financeiros deseja comprar e vender, utilizando a interface da plataforma. **Practical tip:** É importante diversificar seus investimentos para minimizar o risco. Isso significa que você não deve colocar todos os seus ovos na mesma cesta, mas sim distribuir seus investimentos entre diferentes ativos.
+When you create an account on Webull, you need to deposit money to start investing. You can do this via bank transfer or other payment methods. Then you can choose which financial assets you want to buy and sell using the platform’s interface. **Practical tip:** It’s important to diversify your investments to minimize risk. This means you shouldn’t put all your eggs in one basket, but rather spread your investments across different assets.
 
 ## Advantages
-A Webull oferece várias vantagens em relação às tradicionais corretoras de valores mobiliários. Algumas das principais vantagens incluem:
-* Menores taxas: A Webull cobra taxas mais baixas do que as tradicionais corretoras, o que pode ajudar a aumentar seus ganhos.
-* Interface moderna: A plataforma tem uma interface mais moderna e fácil de usar, o que pode ser mais atraente para os investidores mais jovens.
-* Ferramentas de análise: A Webull oferece uma variedade de ferramentas de análise e recursos educacionais para ajudar os investidores a tomar decisões informadas.
-* Acesso móvel: A plataforma tem uma interface móvel, permitindo que você acompanhe seus investimentos e faça operações de qualquer lugar.
+Webull offers several advantages compared to traditional securities brokerages. Some of the main advantages include:
+* Lower fees: Webull charges lower fees than traditional brokerages, which can help increase your returns.  
+* Modern interface: The platform has a more modern and user‑friendly interface, which can be more appealing to younger investors.  
+* Analysis tools: Webull provides a variety of analysis tools and educational resources to help investors make informed decisions.  
+* Mobile access: The platform has a mobile interface, allowing you to monitor your investments and execute trades from anywhere.
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-Como qualquer investimento, a Webull também envolve riscos. Alguns dos principais riscos incluem:
-* Risco de perda: Você pode perder dinheiro se os ativos financeiros que você comprou diminuírem de [valor](/en/glossario/en-valor-financeiro).
-* Risco de volatilidade: Os preços dos ativos financeiros podem ser voláteis, o que significa que eles podem subir ou descer rapidamente.
-* Risco de liquidez: Você pode ter dificuldade em vender seus ativos financeiros rapidamente, o que pode afetar o preço que você obtém.
+Like any investment, Webull also involves risks. Some of the main risks include:
+* Loss risk: You can lose money if the financial assets you bought decrease in [valor](/en/glossario/en-valor-financeiro).  
+* Volatility risk: Prices of financial assets can be volatile, meaning they can rise or fall quickly.  
+* Liquidity risk: You may have difficulty selling your financial assets quickly, which can affect the price you receive.
 
 ![Advantages](/images/glossario/webull-inline-3.webp)
 
 
 
-**Practical tip:** É importante ter uma estratégia de investimento clara e não se deixar levar pelas emoções. Isso significa que você não deve comprar ou vender ativos financeiros baseado em impulsos ou medo, mas sim com base em uma análise cuidadosa do mercado.
+**Practical tip:** It’s important to have a clear investment strategy and not let emotions drive your decisions. This means you shouldn’t buy or sell financial assets based on impulse or fear, but rather based on a careful analysis of the market.
 
 ## Practical examples
-Vamos considerar um exemplo prático. Imagine que você tem um salário de R$ 6.000 por mês e quer começar a investir R$ 1.000 por mês. Você pode usar a Webull para comprar ações de empresas como a Petrobras ou a Vale, ou para investir em ETFs que seguem o índice de ações do Brasil. **Practical tip:** É importante começar a investir cedo, pois o tempo é um grande aliado dos investidores. Quanto mais cedo você começar a investir, mais tempo seus dinheiro terá para crescer.
+Let’s consider a practical example. Imagine you have a salary of R$ 6.000 per month and want to start investing R$ 1.000 per month. You can use Webull to buy shares of companies like Petrobras or Vale, or to invest in ETFs that track the Brazilian stock index. **Practical tip:** It’s important to start investing early, because time is a great ally for investors. The earlier you start investing, the more time your money has to grow.
 
-Outro exemplo é o de uma pessoa que tem um salário de R$ 4.000 por mês e quer investir R$ 500 por mês. Ela pode usar a Webull para comprar opções ou para investir em ativos financeiros mais conservadores, como títulos do tesouro. **Practical tip:** É importante avaliar seu perfil de risco antes de investir. Se você é mais conservador, você pode querer investir em ativos financeiros mais seguros, como títulos do tesouro.
+Another example is a person who earns R$ 4.000 per month and wants to invest R$ 500 per month. They can use Webull to buy options or to invest in more conservative financial assets, such as treasury bonds. **Practical tip:** It’s important to assess your risk profile before investing. If you are more conservative, you may want to invest in safer financial assets, like treasury bonds.
 
 ## Start today
-Agora que você sabe mais sobre a Webull e como ela funciona, é hora de começar a investir. Lembre-se de que a chave para o sucesso é começar cedo e ser consistente. **Practical tip:** Não tenha medo de cometer erros. O importante é aprender com eles e continuar investindo. Com a Webull, você pode começar a investir com apenas R$ 100 e pode aumentar sua carteira de investimentos ao longo do tempo. Então, o que você está esperando? Comece a investir hoje mesmo e veja como seu dinheiro pode crescer ao longo do tempo.
-
+Now that you know more about Webull and how it works, it’s time to start investing. Remember that the key to success is to start early and be consistent. **Practical tip:** Don’t be afraid to make mistakes. The important thing is to learn from them and keep investing. With Webull, you can start investing with just R$ 100 and can grow your investment portfolio over time. So, what are you waiting for? Start investing today and see how your money can grow over time.

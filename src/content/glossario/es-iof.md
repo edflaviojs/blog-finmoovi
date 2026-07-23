@@ -11,39 +11,39 @@ readingTime: 2
 
 ## ¿Qué es IOF?
 
-IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sobre diversas operações financeiras: empréstimos, câmbio, seguros e até investimentos resgatados em menos de 30 dias.
+IOF (Imposto sobre Operações Financeiras) es un impuesto federal que grava diversas operaciones financieras: préstamos, cambio, seguros e incluso inversiones rescatadas en menos de 30 días.
 
-## Onde o IOF aparece
+## Dónde aparece el IOF
 
-### Investimentos ([renda fixa](/es/glossario/es-renda-fixa))
+### Inversiones ([renda fixa](/es/glossario/es-renda-fixa))
 
-- Incide sobre rendimentos resgatados em menos de 30 dias
-- Começa em 96% no dia 1 e vai a 0% no dia 30
-- Após 30 dias: isento de IOF
+- Incide sobre rendimientos rescatados en menos de 30 días
+- Comienza en 96% el día 1 y llega a 0% el día 30
+- Después de 30 días: exento de IOF
 
-### Cartão de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional
+### Tarjeta de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional
 
-- 4,38% sobre compras em [moeda](/es/glossario/es-moeda) estrangeira
-- Incide sobre o [valor](/es/glossario/es-valor-financeiro) total da compra
+- 4,38% sobre compras en [moeda](/es/glossario/es-moeda) extranjera
+- Incide sobre el [valor](/es/glossario/es-valor-financeiro) total de la compra
 
-### Empréstimos e financiamentos
+### Préstamos y financiamientos
 
-- 0,38% fixo + 0,0082% ao dia sobre o valor
-- Cobrado no momento da contratação
+- 0,38% fijo + 0,0082% al día sobre el valor
+- Cobrado en el momento de la contratación
 
-### Câmbio (compra de [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026)/euro)
+### Cambio (compra de [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026)/euro)
 
-- 1,1% para compra de moeda em espécie
-- 0,38% para transferências internacionais
+- 1,1% para compra de moneda en efectivo
+- 0,38% para transferencias internacionales
 
-## Dica prática
+## Consejo práctico
 
-Se você investiu em [CDB](/es/glossario/es-cdb) ou Tesouro Selic, espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a reserva de emergência.
+Si invertiste en [CDB](/es/glossario/es-cdb) o Tesouro Selic, espera al menos 30 días para rescatar. Así no pagas IOF sobre los rendimientos. Esta es una regla importante para la reserva de emergencia.
 
-## Tabela regressiva do IOF (investimentos)
+## Tabla regresiva del IOF (inversiones)
 
-| Dias | IOF sobre rendimento |
-|------|---------------------|
+| Días | IOF sobre rendimiento |
+|------|------------------------|
 | 1 | 96% |
 | 5 | 83% |
 | 10 | 66% |

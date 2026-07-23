@@ -18,46 +18,47 @@ seo:
 ---
 
 ## What it is
-A moeda é um conceito fundamental no mundo das finanças, e entender como ela funciona é essencial para tomar decisões informadas sobre nosso dinheiro. Em resumo, a moeda é um meio de troca, uma unidade de conta e um padrão de [valor](/en/glossario/en-valor-financeiro). No Brasil, nossa moeda é o Real (R$), e é usada para comprar tudo, desde alimentos e roupas até casas e carros. Por exemplo, se você ganha R$ 5.000 por mês, você pode usar esse dinheiro para pagar suas contas, comprar alimentos e ainda sobrar um pouco para poupar ou investir.
+Money is a fundamental concept in the world of finance, and understanding how it works is essential for making informed decisions about our money. In short, money is a medium of exchange, a unit of account, and a standard of **[value](/en/glossario/en-valor-financeiro)**. In Brazil, our currency is the Real (R$), and it is used to buy everything from food and clothing to houses and cars. For example, if you earn R$ 5,000 per month, you can use that money to pay your bills, buy groceries, and still have a little left to save or invest.
 
-* A moeda pode ser física, como cédulas e moedas, ou digital, como o dinheiro em sua conta bancária.
-* A moeda também pode ser nacional, como o Real no Brasil, ou internacional, como o Dólar Americano.
-* É importante notar que a moeda não tem valor intrínseco, ou seja, não vale nada por si só, mas sim pelo valor que lhe é atribuído pela sociedade.
+* Money can be physical, like banknotes and coins, or digital, like the money in your bank account.  
+* Money can also be national, like the Real in Brazil, or international, like the US Dollar.  
+* It’s important to note that money has no intrinsic value, meaning it isn’t worth anything by itself, but rather the value that society assigns to it.
 
 ![What it is](/images/glossario/moeda-inline-1.webp)
 
 
 
 ## How it works
-A moeda funciona como um sistema de crédito e débito, onde as pessoas e as empresas trocam bens e serviços por dinheiro. Quando você compra algo, você está transferindo dinheiro do seu bolso para o bolso do vendedor. Por exemplo, se você compra um café por R$ 10, você está transferindo R$ 10 do seu bolso para o bolso do café. **Practical tip:** Sempre verifique o preço dos produtos antes de comprar para evitar gastar mais do que você pode.
+Money works as a credit‑and‑debit system, where people and businesses exchange goods and services for cash. When you buy something, you’re transferring money from your pocket to the seller’s pocket. For example, if you buy a coffee for R$ 10, you’re transferring R$ 10 from your pocket to the coffee shop’s pocket. **Practical tip:** Always check product prices before buying to avoid spending more than you can.
 
-Quando você recebe seu salário, você está recebendo dinheiro que pode ser usado para comprar coisas que você precisa ou quer. Se você ganha R$ 6.000 por mês e gasta R$ 4.000 com contas e alimentos, você ainda tem R$ 2.000 para poupar ou investir. **Practical tip:** Tente sempre poupar pelo menos 10% do seu salário para ter uma reserva para emergências.
+When you receive your salary, you’re getting money that can be used to purchase things you need or want. If you earn R$ 6,000 per month and spend R$ 4,000 on bills and food, you still have R$ 2,000 to save or invest. **Practical tip:** Try to save at least 10% of your salary to have an emergency reserve.
+
+
 
 ## Advantages
-A moeda tem muitas vantagens, como:
-* Facilitar as trocas: a moeda permite que as pessoas troquem bens e serviços de forma fácil e rápida.
-* Medir o valor: a moeda permite que as pessoas meçam o valor dos bens e serviços.
-* Poupar e investir: a moeda permite que as pessoas poupem e invistam para o futuro.
-* **Practical tip:** Use um aplicativo de finanças para acompanhar suas despesas e receitas e ter uma visão clara do seu dinheiro.
+Money has many advantages, such as:
+* Facilitating trades: money lets people exchange goods and services easily and quickly.  
+* Measuring value: money lets people gauge the worth of goods and services.  
+* Saving and investing: money lets people save and invest for the future.  
+* **Practical tip:** Use a finance app to track your expenses and income and get a clear view of your money.
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-No entanto, a moeda também tem riscos, como:
-* Inflação: a inflação é quando o valor da moeda diminui ao longo do tempo, o que significa que o mesmo valor de dinheiro pode comprar menos coisas.
-* Desemprego: se você perder seu emprego, você pode não ter dinheiro para comprar as coisas que você precisa.
-* Dívida: se você gastar mais do que você pode, você pode acabar com dívidas que podem ser difíceis de pagar.
-* **Practical tip:** Sempre tenha uma reserva de emergência para evitar problemas financeiros em caso de desemprego ou doença.
+However, money also carries risks, such as:
+* Inflation: inflation is when the value of money decreases over time, meaning the same amount of cash can buy fewer things.  
+* Unemployment: if you lose your job, you may not have money to buy the things you need.  
+* Debt: if you spend more than you can afford, you may end up with debts that are hard to repay.  
+* **Practical tip:** Always have an emergency reserve to avoid financial problems in case of unemployment or illness.
 
 ![Advantages](/images/glossario/moeda-inline-3.webp)
 
 
 
 ## Practical examples
-Vamos considerar alguns exemplos práticos de como a moeda funciona na vida real. Se você ganha R$ 4.000 por mês e gasta R$ 3.000 com contas e alimentos, você ainda tem R$ 1.000 para poupar ou investir. Você pode usar esse dinheiro para:
-* Poupar em uma conta bancária para ter uma reserva para emergências.
-* Investir em [ações](/en/glossario/en-acoes) ou títulos para tentar aumentar seu patrimônio.
-* Comprar um bem, como uma casa ou um carro.
-* **Practical tip:** Sempre verifique as taxas de [juros](/en/glossario/en-juros) e as condições antes de investir ou tomar um empréstimo.
+Let’s look at some practical examples of how money works in real life. If you earn R$ 4,000 per month and spend R$ 3,000 on bills and food, you still have R$ 1,000 to save or invest. You can use that money to:
+* Save in a bank account to have an emergency reserve.  
+* Invest in **[stocks](/en/glossario/en-acoes)** or bonds to try to grow your wealth.  
+* Purchase an asset, such as a house or a car.  
+* **Practical tip:** Always check the **[interest](/en/glossario/en-juros)** rates and terms before investing or taking a loan.
 
 ## Start today
-Agora que você entende melhor como a moeda funciona, é hora de começar a gerenciar seu dinheiro de forma eficaz. **Practical tip:** Use um aplicativo de finanças para acompanhar suas despesas e receitas e ter uma visão clara do seu dinheiro. Lembre-se de que a moeda é um ferramenta poderosa que pode ser usada para melhorar sua vida financeira. Com um pouco de planejamento e disciplina, você pode alcançar seus objetivos financeiros e ter uma vida mais segura e próspera. Então, comece hoje mesmo a gerenciar seu dinheiro de forma eficaz e a construir um futuro financeiro mais brilhante!
-
+Now that you understand better how money works, it’s time to start managing your finances effectively. **Practical tip:** Use a finance app to track your expenses and income and get a clear view of your money. Remember that money is a powerful tool that can be used to improve your financial life. With a bit of planning and discipline, you can achieve your financial goals and enjoy a safer, more prosperous life. So, start today by managing your money effectively and building a brighter financial future!

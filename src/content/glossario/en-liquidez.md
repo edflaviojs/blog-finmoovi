@@ -9,17 +9,17 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## What is Liquidez?
+## What is Liquidity?
 
-Liquidez is the ability to quickly convert an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) into cash. The more liquid it is, the faster you can access the [money](/en/posts/en-30-day-rule-for-purchases).
+Liquidity is the ability to quickly convert an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) into cash. The more liquid it is, the faster you can access the [money](/en/posts/en-30-day-rule-for-purchases).
 
-## Types of liquidez
+## Types of liquidity
 
-- **Liquidez diária (D+0):** [Money](/en/posts/en-avoid-impulse-purchases) available on the same day. Ex: Tesouro [Selic](/en/glossario/en-selic), [CDB](/en/glossario/en-cdb) with daily liquidity.
-- **Liquidez D+1:** Available the next day. Ex: Some investment funds.
-- **Liquidez no vencimento:** Can only be redeemed on the agreed-upon date. Ex: CDB with a term, LCI/LCA.
+- **Daily liquidity (D+0):** [Money](/en/posts/en-avoid-impulse-purchases) available on the same day. Ex: Tesouro [Selic](/en/glossario/en-selic), [CDB](/en/glossario/en-cdb) with daily liquidity.
+- **Liquidity D+1:** Available the next day. Ex: Some investment funds.
+- **Liquidity at maturity:** Can only be redeemed on the agreed-upon date. Ex: CDB with a term, LCI/LCA.
 
-## Escala de liquidez
+## Liquidity scale
 
 From most liquid to least liquid:
 
@@ -31,8 +31,8 @@ From most liquid to least liquid:
 6. Stocks
 7. Real estate
 
-## Quando a liquidez importa?
+## When liquidity matters?
 
-- **Reserva de emergência:** needs daily liquidity
-- **Objetivos de curto prazo (< 1 ano):** high liquidity
-- **Objetivos de longo prazo (> 5 anos):** can give up liquidity for higher returns
+- **Emergency reserve:** needs daily liquidity
+- **Short‑term goals (< 1 year):** high liquidity
+- **Long‑term goals (> 5 years):** can give up liquidity for higher returns

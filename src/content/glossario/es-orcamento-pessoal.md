@@ -9,48 +9,48 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## ¿Qué es [Orçamento](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) Pessoal?
+## ¿Qué es [Presupuesto](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) Personal?
 
-Orçamento pessoal é um plano que mostra quanto dinheiro entra, quanto sai e para onde vai. É a ferramenta mais básica e poderosa das finanças pessoais. Sem orçamento, você está dirigindo no escuro.
+Presupuesto personal es un plan que muestra cuánto dinero entra, cuánto sale y a dónde va. Es la herramienta más básica y poderosa de las finanzas personales. Sin presupuesto, estás conduciendo a ciegas.
 
-## Como montar um orçamento
+## Cómo montar un presupuesto
 
-### Passo 1: Liste todas as receitas
+### Paso 1: Lista todas las recetas
 
-- Salário líquido
-- Renda extra (freelance, bicos)
-- Rendimentos de investimentos
-- Outros (aluguel, pensão)
+- Salario neto
+- Ingresos extra (freelance, trabajos ocasionales)
+- Rendimientos de inversiones
+- Otros (alquiler, pensión)
 
-### Passo 2: Liste todas as despesas
+### Paso 2: Lista todas las despesas
 
-**Fixas (não mudam):**
-- Aluguel/financiamento
-- Condomínio
-- Plano de saúde
-- Internet/telefone
+**Fijas (no cambian):**
+- Alquiler/hipoteca
+- Condominio
+- Plan de salud
+- Internet/teléfono
 
-**Variáveis (mudam todo mês):**
-- Alimentação
+**Variables (cambian cada mes):**
+- Alimentación
 - Transporte
-- Lazer
+- Ocio
 - Compras
 
-### Passo 3: Aplique a regra 50-30-20
+### Paso 3: Aplica la regla 50-30-20
 
-- 50% para necessidades
-- 30% para desejos
-- 20% para objetivos financeiros
+- 50% para necesidades
+- 30% para deseos
+- 20% para objetivos financieros
 
-## Ferramentas para orçamento
+## Herramientas para presupuesto
 
-- **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** — app com categorização automática por IA
-- Planilha simples (Google Sheets)
-- Caderno e caneta (funciona!)
+- **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** — app con categorización automática por IA
+- Hoja de cálculo simple (Google Sheets)
+- Cuaderno y bolígrafo (¡funciona!)
 
-## Erros comuns
+## Errores comunes
 
-1. Não incluir [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) pequenos (café, delivery)
-2. Esquecer despesas anuais (IPVA, IPTU, seguros)
-3. Não revisar mensalmente
-4. Fazer orçamento muito restritivo (não sustenta)
+1. No incluir [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) pequeños (café, delivery)
+2. Olvidar gastos anuales (IPVA, IPTU, seguros)
+3. No revisar mensualmente
+4. Hacer un presupuesto muy restrictivo (no se sostiene)

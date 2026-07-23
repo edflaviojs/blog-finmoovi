@@ -19,69 +19,64 @@ seo:
 
 ## What it is
 
-A **taxa** é simplesmente a taxa cobrada por um serviço, um investimento ou um empréstimo. No dia a dia, a gente vê taxa de manutenção de conta, taxa de [juros](/en/glossario/en-juros) de um financiamento ou taxa de administração de um fundo. Em termos simples, é o preço que você paga por usar algo que não é gratuito.  
+A **fee** is simply the charge applied for a service, an investment or a loan. In everyday life, we see account maintenance fees, **[interest](/en/glossario/en-juros)** fees on a financing, or administration fees on a fund. In simple terms, it’s the price you pay to use something that isn’t free.  
 
 ![What it is](/images/glossario/taxa-inline-1.webp)
 
-
-
-- **Taxa de juros:** custo do dinheiro emprestado, expressa em percentual ao ano.  
-- **Taxa de administração:** [valor](/en/glossario/en-valor-financeiro) cobrado por gestores de [fundos](/en/glossario/en-fundo-de-investimento) para manter seu investimento.  
-- **Taxa de manutenção:** cobrança mensal de bancos por serviços como cartão de crédito ou conta corrente.  
+- **Interest fee:** cost of borrowed money, expressed as a yearly percentage.  
+- **Administration fee:** **[value](/en/glossario/en-valor-financeiro)** charged by managers of **[funds](/en/glossario/en-fundo-de-investimento)** to maintain your investment.  
+- **Maintenance fee:** monthly charge by banks for services such as credit card or checking account.  
 
 ## How it works
 
-Quando você aceita um contrato – seja um empréstimo ou um investimento – a instituição define uma taxa que será aplicada ao valor principal. Essa taxa pode ser fixa (não muda) ou variável (ajusta conforme algum índice, como a [Selic](/en/glossario/en-selic)). O cálculo costuma ser feito sobre o saldo devedor ou sobre o valor investido, e o resultado é adicionado ao seu extrato ou ao rendimento.  
+When you accept a contract – whether a loan or an investment – the institution sets a fee that will be applied to the principal amount. This fee can be fixed (doesn’t change) or variable (adjusts according to an index, such as the **[Selic](/en/glossario/en-selic)**). The calculation is usually done on the outstanding balance or on the invested amount, and the result is added to your statement or to the return.  
 
-- O valor da taxa é multiplicado pelo montante principal.  
-- O resultado pode ser cobrado mensalmente, trimestralmente ou anualmente.  
-- Se a taxa for variável, o índice de referência (por exemplo, [CDI](/en/glossario/en-cdi)) determina o ajuste.  
+- The fee amount is multiplied by the principal amount.  
+- The result can be charged monthly, quarterly, or annually.  
+- If the fee is variable, the reference index (for example, **[CDI](/en/glossario/en-cdi)**) determines the adjustment.  
 
-**Practical tip:** **Sempre verifique se a taxa é fixa ou variável antes de assinar qualquer contrato; isso evita surpresas no futuro.**  
+**Practical tip:** **Always check whether the fee is fixed or variable before signing any contract; this avoids surprises later on.**  
 
 ## Advantages
 
-Mesmo que a palavra “taxa” soe negativa, ela traz benefícios claros quando bem compreendida.  
+Even though the word “fee” sounds negative, it brings clear benefits when well understood.  
 
 ![Advantages](/images/glossario/taxa-inline-3.webp)
 
+- **Transparency:** the fee makes explicit how much you are paying or receiving.  
+- **Access to credit:** without interest fees, banks would have no incentive to lend money.  
+- **Professional management:** the administration fee ensures that specialists take care of your investments.  
 
-
-- **Transparência:** a taxa deixa explícito quanto você está pagando ou recebendo.  
-- **Acesso a crédito:** sem a taxa de juros, bancos não teriam incentivo para emprestar dinheiro.  
-- **Gestão profissional:** a taxa de administração garante que especialistas cuidem dos seus investimentos.  
-
-**Practical tip:** **Compare taxas entre diferentes instituições; a diferença de 0,5% ao ano pode significar milhares de reais a mais no seu bolso.**  
+**Practical tip:** **Compare fees across different institutions; a 0.5% annual difference can mean thousands of reais more in your pocket.**  
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-Ignorar as taxas pode corroer seu patrimônio rapidamente.  
+Ignoring fees can erode your wealth quickly.  
 
-- **Custo oculto:** algumas taxas são cobradas de forma automática, sem aviso prévio.  
-- **Efeito acumulativo:** taxas altas em empréstimos podem transformar uma dívida de R$10.000 em um débito de mais de R$15.000 em poucos anos.  
-- **Desvalorização de investimentos:** taxas de administração elevadas podem reduzir o retorno líquido de um fundo.  
+- **Hidden cost:** some fees are charged automatically, without prior notice.  
+- **Cumulative effect:** high fees on loans can turn a debt of R$10,000 into a liability of more than R$15,000 in a few years.  
+- **Investment devaluation:** high administration fees can reduce a fund’s net return.  
 
-**Practical tip:** **Leia o contrato com atenção e anote todas as taxas; depois, use uma planilha ou um app de finanças para acompanhar o impacto real.**  
+**Practical tip:** **Read the contract carefully and note every fee; then use a spreadsheet or a finance app to track the real impact.**  
 
 ## Practical examples
 
-Vamos colocar a teoria em prática usando salários típicos no Brasil.  
+Let’s put theory into practice using typical salaries in Brazil.  
 
-- **Exemplo 1 – Empréstimo pessoal:** João ganha R$4.500. Ele contrata um empréstimo de R$5.000 com taxa de juros de 2,5% ao mês. Em 12 meses, ele pagará aproximadamente R$7.500, ou seja, R$2.500 de juros.  
-- **Exemplo 2 – Fundo de investimento:** Maria tem um salário de R$6.200 e investe R$10.000 em um fundo com taxa de administração de 1,2% ao ano. Se o fundo rende 8% ao ano, o retorno líquido será 6,8% (8% menos 1,2%). Isso gera R$680 de lucro ao invés de R$800 sem a taxa.  
-- **Exemplo 3 – Conta corrente:** Carlos recebe R$3.800 e paga R$12 por mês de taxa de manutenção de conta. Em um ano, ele desembolsa R$144, o que equivale a 0,5% do seu salário anual.  
+- **Example 1 – Personal loan:** João earns R$4,500. He takes a loan of R$5,000 with an interest fee of 2.5% per month. In 12 months, he will pay approximately R$7,500, i.e., R$2,500 in interest.  
+- **Example 2 – Investment fund:** Maria has a salary of R$6,200 and invests R$10,000 in a fund with an administration fee of 1.2% per year. If the fund yields 8% per year, the net return will be 6.8% (8% minus 1.2%). This generates R$680 profit instead of R$800 without the fee.  
+- **Example 3 – Checking account:** Carlos receives R$3,800 and pays R$12 per month in account maintenance fee. In a year, he spends R$144, which equals 0.5% of his annual salary.  
 
 ## How to start
 
-Se você quer controlar melhor as taxas que impactam seu dinheiro, siga estes passos simples.  
+If you want to better control the fees that impact your money, follow these simple steps.  
 
-- **Mapeie suas despesas:** anote todas as taxas que já paga – manutenção de conta, cartão de crédito, seguros, etc.  
-- **Negocie ou troque de fornecedor:** muitas instituições reduzem taxas para clientes que demonstram interesse em mudar.  
-- **Use ferramentas de acompanhamento:** aplicativos de finanças pessoais permitem registrar cada taxa e ver o efeito no seu orçamento.  
+- **Map your expenses:** write down all fees you already pay – account maintenance, credit card, insurance, etc.  
+- **Negotiate or switch providers:** many institutions lower fees for customers who show interest in switching.  
+- **Use tracking tools:** personal finance apps allow you to record each fee and see the effect on your budget.  
 
-**Practical tip:** **Defina uma meta de redução de taxas (por exemplo, cortar R$100 de custos mensais) e revise seu progresso a cada trimestre.**  
+**Practical tip:** **Set a fee‑reduction goal (for example, cut R$100 of monthly costs) and review your progress each quarter.**  
 
 ## Start today
 
-Não deixe que as taxas passem despercebidas. Cada centavo economizado pode ser reinvestido para alcançar seus objetivos – seja a viagem dos sonhos, a casa própria ou a aposentadoria tranquila. Comece agora, revise um contrato, negocie uma tarifa ou abra um app de controle financeiro. Seu futuro agradece!
-
+Don’t let fees go unnoticed. Every cent saved can be reinvested to reach your goals – whether it’s the trip of a lifetime, your own home, or a peaceful retirement. Start now, review a contract, negotiate a charge, or open a finance‑tracking app. Your future will thank you!

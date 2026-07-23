@@ -9,19 +9,19 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## What is Amortização?
+## What is Amortization?
 
-Amortização is the act of paying the principal value of a debt gradually. Each installment you pay has two parts: the amortization (which reduces the outstanding balance) and the interest (which is the cost of the loan).
+Amortization is the act of paying the principal value of a debt gradually. Each installment you pay has two parts: the amortization (which reduces the outstanding balance) and the interest (which is the cost of the loan).
 
-## Types of amortização
+## Types of amortization
 
-### Tabela SAC (Sistema de Amortização Constante)
+### SAC Table (Constant Amortization System)
 
 - Amortization is fixed in all installments
 - Installments start larger and decrease
 - You pay less interest in total
 
-### Tabela Price
+### Price Table
 
 - Installments are fixed from start to finish
 - At the beginning, the largest part of the installment is interest
@@ -33,6 +33,6 @@ Amortização is the act of paying the principal value of a debt gradually. Each
 - **SAC:** first installment ~R$ 1,111, last ~R$ 282. Total paid: ~R$ 250,000
 - **Price:** all installments ~R$ 877. Total paid: ~R$ 316,000
 
-## Amortização extraordinária
+## Extraordinary amortization
 
 You can make extra payments to reduce the outstanding balance faster. This saves thousands in interest. Whenever you have extra [money](/en/posts/en-30-day-rule-for-purchases), consider amortizing your debts.

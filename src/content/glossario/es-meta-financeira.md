@@ -9,46 +9,46 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es Meta Financeira?
+## ¿Qué es Meta Financiera?
 
-Meta financeira é um objetivo concreto para seu dinheiro. Não é "quero economizar mais" — é "quero juntar R$ 10.000 até dezembro de 2025 para dar entrada no carro". Quanto mais específica, maior a chance de alcançar.
+Meta financiera es un objetivo concreto para tu dinero. No es "quiero ahorrar más" — es "quiero juntar R$ 10.000 hasta diciembre de 2025 para dar entrada al coche". Cuanto más específica, mayor la probabilidad de lograrla.
 
-## Como definir boas metas (método SMART)
+## Cómo definir buenas metas (método SMART)
 
-- **S**pecífica: "Juntar R$ 10.000" (não "economizar mais")
-- **M**ensurável: [valor](/es/glossario/es-valor-financeiro) exato que pode acompanhar
-- **A**lcançável: possível com sua renda atual
-- **R**elevante: importante para você
-- **T**emporal: com prazo definido
+- **S**pecífica: "Juntar R$ 10.000" (no "ahorrar más")
+- **M**ensurável: [valor](/es/glossario/es-valor-financeiro) exacto que puedas seguir
+- **A**lcançável: posible con tus ingresos actuales
+- **R**elevante: importante para ti
+- **T**emporal: con plazo definido
 
 ## Ejemplos de metas
 
-### Curto prazo (até 1 ano)
+### Corto plazo (hasta 1 año)
 
-- Montar reserva de emergência de R$ 15.000
-- Quitar cartão de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) de R$ 3.000
-- Juntar R$ 5.000 para viagem
+- Crear reserva de emergencia de R$ 15.000
+- Cancelar tarjeta de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) de R$ 3.000
+- Juntar R$ 5.000 para viaje
 
-### Médio prazo (1-5 anos)
+### Mediano plazo (1-5 años)
 
-- Juntar R$ 50.000 para entrada do apartamento
-- Trocar de carro (R$ 30.000)
-- Fazer intercâmbio (R$ 20.000)
+- Juntar R$ 50.000 para entrada del apartamento
+- Cambiar de coche (R$ 30.000)
+- Hacer intercambio (R$ 20.000)
 
-### Longo prazo (5+ anos)
+### Largo plazo (5+ años)
 
-- Independência financeira (R$ 1.500.000)
-- Aposentadoria complementar
-- Comprar imóvel à vista
+- Independencia financiera (R$ 1.500.000)
+- Jubilación complementaria
+- Comprar inmueble al contado
 
-## Como acompanhar
+## Cómo acompañar
 
-1. Defina o valor total e o prazo
-2. Divida pelo número de meses (aporte mensal necessário)
-3. Automatize a transferência mensal
-4. Acompanhe o progresso (apps como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) ajudam)
-5. Celebre marcos intermediários (25%, 50%, 75%)
+1. Define el valor total y el plazo
+2. Divide por el número de meses (aporte mensual necesario)
+3. Automatiza la transferencia mensual
+4. Sigue el progreso (apps como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) ayudan)
+5. Celebra hitos intermedios (25 %, 50 %, 75 %)
 
-## Dica
+## Consejo
 
-Tenha no máximo 3 metas simultâneas. Muitas metas dividem seu foco e dinheiro — nenhuma avança rápido o suficiente para motivar.
+Ten como máximo 3 metas simultáneas. Muchas metas dividen tu foco y dinero — ninguna avanza lo suficientemente rápido como para motivarte.

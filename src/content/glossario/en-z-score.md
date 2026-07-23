@@ -23,8 +23,6 @@ The **z‑score** is a simple way to see how far a number is from the average of
 
 ![What it is](/images/glossario/z-score-inline-1.webp)
 
-
-
 - **Positive z‑score**: value is above the average.  
 - **Negative z‑score**: value is below the average.  
 - **Zero**: value equals the average.
@@ -49,8 +47,6 @@ where **X** is your value, **μ** (mu) is the mean, and **σ** (sigma) is the st
 Using the z‑score makes it easy to compare numbers that live in different scales. It turns raw amounts into a common language, so you can spot trends without getting lost in the details. For [personal finance](/en/posts/en-30-day-rule-for-purchases), it helps you understand whether your spending or saving habits are in line with peers.
 
 ![Advantages](/images/glossario/z-score-inline-3.webp)
-
-
 
 - **Standardized comparison** across different income brackets.  
 - Quick identification of **outliers** (values that are unusually high or low).  
@@ -98,4 +94,3 @@ Getting comfortable with the z‑score doesn’t require a finance degree—just
 ## Start today
 
 You’ve got the tools, the numbers, and the know‑how. Take a quick look at your own expenses, plug them into a spreadsheet, and see where you land on the z‑score scale. A small habit like this can turn vague worries about [money](/en/posts/en-avoid-impulse-purchases) into concrete, actionable insights. Go ahead—open that sheet, enter your data, and start making smarter choices right now.
-

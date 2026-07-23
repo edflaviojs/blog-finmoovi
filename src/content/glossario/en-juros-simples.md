@@ -9,9 +9,9 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## What are Simple Interest?
+## What is Simple Interest?
 
-Simple interest is calculated only on the original value (principal). No matter how much time passes, the interest is always calculated on the same initial value. It's the most basic type of interest.
+Simple interest is calculated only on the original amount (principal). No matter how much time passes, the interest is always calculated on the same initial amount. It’s the most basic type of interest.
 
 ## Formula
 
@@ -19,30 +19,30 @@ Simple interest is calculated only on the original value (principal). No matter 
 
 Where:
 - J = interest
-- P = principal (initial value)
+- P = principal (initial amount)
 - i = interest rate (in decimal)
 - t = time
 
 ## Example
 
-R$ 1,000 at 10% per year for 3 years (simple interest):
-- Interest = 1,000 × 0.10 × 3 = R$ 300
-- Total: R$ 1,300
+R$ 1,000 at 10% per year for 3 years (simple interest):
+- Interest = 1,000 × 0.10 × 3 = R$ 300
+- Total: R$ 1,300
 
 Compare with [compound interest](/en/glossario/en-juros-compostos):
-- Year 1: 1,000 × 1.10 = R$ 1,100
-- Year 2: 1,100 × 1.10 = R$ 1,210
-- Year 3: 1,210 × 1.10 = R$ 1,331
-- Total: R$ 1,331 (R$ 31 more)
+- Year 1: 1,000 × 1.10 = R$ 1,100
+- Year 2: 1,100 × 1.10 = R$ 1,210
+- Year 3: 1,210 × 1.10 = R$ 1,331
+- Total: R$ 1,331 (R$ 31 more)
 
-## Where do simple interest appear
+## Where Simple Interest Appears
 
-In practice, simple interest is rare. They appear in:
+In practice, simple interest is rare. It shows up in:
 - Some fine calculations
-- Discount of duplicates
+- Discounting of bills
 - Labor calculations
-- Financial math exercises
+- Financial‑math exercises
 
-## Why does it matter? to know
+## Why It Matters
 
-Understanding the difference between simple and compound interest is fundamental. In the real world, almost everything uses compound interest — and that makes a huge difference in the long run, both for [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and debts.
+Understanding the difference between simple and compound interest is fundamental. In the real world, almost everything uses compound interest—and that makes a huge difference over the long term, both for [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and debts.

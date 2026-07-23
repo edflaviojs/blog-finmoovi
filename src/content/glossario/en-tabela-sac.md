@@ -9,9 +9,9 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## What is Tabela SAC?
+## What is the SAC Table?
 
-SAC (Sistema de Amortização Constante) is a loan repayment method where the [amortization](/en/glossario/en-amortizacao) amount (the part that reduces the debt) is the same for all installments. As the interest decreases as the outstanding balance falls, the installments become smaller over time.
+SAC (Constant Amortization System) is a loan repayment method where the [amortization](/en/glossario/en-amortizacao) amount (the part that reduces the debt) is the same for all installments. As the interest decreases as the outstanding balance falls, the installments become smaller over time.
 
 ## How does it work?
 

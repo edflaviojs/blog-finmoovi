@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-El **bônus** es una compensación extra que una empresa otorga al trabajador, aparte del salario base. No es un pago fijo; suele depender de metas alcanzadas, resultados de la compañía o eventos especiales como el fin de año. En términos simples, es como un “extra” que te agradecen por tu esfuerzo, y puede aparecer en la cuenta bancaria como una suma única o como parte de un plan de incentivos.
+El **bono** es una compensación extra que una empresa otorga al trabajador, aparte del salario base. No es un pago fijo; suele depender de metas alcanzadas, resultados de la compañía o eventos especiales como el fin de año. En términos simples, es como un “extra” que te agradecen por tu esfuerzo, y puede aparecer en la cuenta bancaria como una suma única o como parte de un plan de incentivos.
 
 ![Qué es](/images/glossario/bonus-inline-1.webp)
 
@@ -27,18 +27,18 @@ El **bônus** es una compensación extra que una empresa otorga al trabajador, a
 
 ## Cómo funciona
 
-El mecanismo del bônus varía según la política de cada empresa, pero generalmente sigue estos pasos:
+El mecanismo del bono varía según la política de cada empresa, pero generalmente sigue estos pasos:
 
 - La empresa define metas claras (ventas, productividad, ahorro de costos, etc.).  
 - Cada trimestre o año se evalúan los resultados y se compara con esas metas.  
-- Si el empleado cumple o supera los objetivos, se calcula el [valor](/es/glossario/es-valor-financeiro) del bônus según un porcentaje preestablecido del salario o de la utilidad generada.  
+- Si el empleado cumple o supera los objetivos, se calcula el [valor](/es/glossario/es-valor-financeiro) del bono según un porcentaje preestablecido del salario o de la utilidad generada.  
 - El pago se realiza en la nómina o como un abono separado, y suele estar sujeto a impuestos como cualquier ingreso.
 
 En la práctica, si trabajas con un salario de R$5.000 y la empresa establece un bono del 10 % por alcanzar la meta de ventas, recibirás [R$500](/es/posts/es-montando-carteira-diversificada-com-r-500) extra al final del período.
 
 ## Ventajas
 
-El bônus trae varios [beneficios](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) tanto para la empresa como para el trabajador:
+El bono trae varios [beneficios](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) tanto para la empresa como para el trabajador:
 
 ![Ventajas](/images/glossario/bonus-inline-3.webp)
 
@@ -51,7 +51,7 @@ El bônus trae varios [beneficios](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-
 
 ## Riesgos
 
-Aunque el bônus suena como una bendición, también implica algunos riesgos que conviene conocer:
+Aunque el bono suena como una bendición, también implica algunos riesgos que conviene conocer:
 
 - **Dependencia:** Si te acostumbras a recibir bonos frecuentes, podrías sobreestimar tus ingresos y gastar de más.  
 - **Variabilidad:** Los bonos no están garantizados; en años malos la empresa puede reducir o eliminar el pago.  
@@ -60,7 +60,7 @@ Aunque el bônus suena como una bendición, también implica algunos riesgos que
 
 ## Ejemplos prácticos
 
-Veamos cómo el bônus impacta a diferentes salarios reales:
+Veamos cómo el bono impacta a diferentes salarios reales:
 
 - **Salario R$3.000:** La empresa ofrece un bono del 5 % por cumplimiento de metas trimestrales. Si lo logras, recibes R$150 extra cada trimestre, sumando R$600 al año.  
 - **Salario R$5.500:** Se establece un bono de 8 % al cerrar el año fiscal con utilidades. Un buen desempeño genera R$440 de bono, que puedes usar para pagar una deuda o invertir.  
@@ -85,4 +85,3 @@ Si tu empresa ya ofrece bonos, pero aún no los aprovechas al máximo, sigue est
 ## Empieza hoy
 
 No esperes a que llegue el próximo ciclo de pagos para poner en práctica estos [consejos](/es/posts/es-7-errores-financieros-principiante). Abre tu app de finanzas, define tu meta de ahorro y conviértete en el dueño de tu dinero. Cada bono es una oportunidad; la clave está en usarlo con inteligencia. ¡Vamos, tú puedes!
-

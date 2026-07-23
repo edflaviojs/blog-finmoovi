@@ -9,44 +9,44 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es Margem de Lucro?
+## ¿Qué es Margen de Ganancia?
 
-Margem de lucro é quanto sobra de cada real que entra. Se uma empresa fatura R$ 100 e tem R$ 80 de custos, sua margem de lucro é 20%. Quanto maior a margem, mais eficiente é o negócio.
+El margen de ganancia es cuánto sobra de cada real que entra. Si una empresa factura R$ 100 y tiene R$ 80 de costos, su margen de ganancia es 20%. Cuanto mayor sea el margen, más eficiente es el negocio.
 
-## Tipos de margem
+## Tipos de margen
 
-### Margem Bruta
+### Margen Bruta
 
-- (Receita - Custo dos Produtos) ÷ Receita × 100
-- Mostra eficiência na produção/compra
+- (Ingresos - Costo de los Productos) ÷ Ingresos × 100
+- Muestra eficiencia en la producción/compra
 
-### Margem Operacional
+### Margen Operacional
 
-- (Receita - Custos - Despesas Operacionais) ÷ Receita × 100
-- Mostra eficiência da operação
+- (Ingresos - Costos - Gastos Operacionales) ÷ Ingresos × 100
+- Muestra eficiencia de la operación
 
-### Margem Líquida
+### Margen Líquida
 
-- Lucro Líquido ÷ Receita × 100
-- Mostra quanto realmente sobra no final
+- Ganancia Neta ÷ Ingresos × 100
+- Muestra cuánto realmente sobra al final
 
-## Ejemplo práctico (loja de roupas)
+## Ejemplo práctico (tienda de ropa)
 
-| | [Valor](/es/glossario/es-valor-financeiro) | Margem |
+| | [Valor](/es/glossario/es-valor-financeiro) | Margen |
 |--|-------|--------|
-| Faturamento | R$ 50.000 | - |
-| Custo das roupas | R$ 20.000 | Bruta: 60% |
-| Despesas (aluguel, salários) | R$ 20.000 | Operacional: 20% |
-| Impostos | R$ 5.000 | Líquida: 10% |
-| **Lucro líquido** | **R$ 5.000** | |
+| Facturación | R$ 50.000 | - |
+| Costo de la ropa | R$ 20.000 | Bruta: 60% |
+| Gastos (alquiler, salarios) | R$ 20.000 | Operacional: 20% |
+| Impuestos | R$ 5.000 | Líquida: 10% |
+| **Ganancia neta** | **R$ 5.000** | |
 
-## Para que serve (investidor)
+## Para qué sirve (inversor)
 
-Ao analisar [ações](/es/glossario/es-acoes), a margem de lucro mostra:
-- Empresas com margens altas têm vantagem competitiva
-- Margens crescentes indicam eficiência melhorando
-- Margens muito baixas indicam negócio frágil
+Al analizar [acciones](/es/glossario/es-acoes), el margen de ganancia muestra:
+- Las empresas con márgenes altos tienen ventaja competitiva
+- Los márgenes crecientes indican una mejora en la eficiencia
+- Los márgenes muy bajos indican un negocio frágil
 
-## Para finanças pessoais
+## Para finanzas personales
 
-Você também tem uma "margem": quanto sobra do seu salário após todos os [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Se ganha R$ 5.000 e sobram R$ 1.000, sua margem pessoal é 20%. O ideal é pelo menos 20% (regra 50-30-20).
+También tienes una “margen”: cuánto sobra de tu salario después de todos los [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Si ganas R$ 5.000 y sobran R$ 1.000, tu margen personal es 20%. Lo ideal es al menos 20% (regla 50-30-20).

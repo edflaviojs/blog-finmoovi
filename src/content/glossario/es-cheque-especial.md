@@ -11,35 +11,35 @@ readingTime: 2
 
 ## ¿Qué es Sobregiro?
 
-Sobregiro é um limite de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o sobregiro — e paga [juros](/es/glossario/es-juros) altíssimos por isso.
+Sobregiro es un límite de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) que el banco pone a disposición en su cuenta corriente. Cuando su saldo queda negativo, usted usa automáticamente el sobregiro — y paga [intereses](/es/glossario/es-juros) altísimos por eso.
 
-## Por que é tão perigoso
+## Por qué es tan peligroso
 
-- Juros de **8% a 15% ao mês** (150%+ ao ano)
-- É ativado automaticamente (você nem percebe)
-- Juros são cobrados diariamente sobre o saldo negativo
-- Muita gente usa sem saber que está pagando
+- Intereses de **8% a 15% al mes** (150%+ al año)
+- Se activa automáticamente (ni siquiera lo nota)
+- Los intereses se cobran diariamente sobre el saldo negativo
+- Mucha gente lo usa sin saber que está pagando
 
 ## Ejemplo práctico
 
-Se você ficar R$ 1.000 negativos por 30 dias com juros de 12% ao mês:
-- Juros: R$ 120
-- Em 6 meses sem pagar: R$ 1.000 vira R$ 1.973
-- Em 12 meses: R$ 1.000 vira R$ 3.896
+Si usted queda R$ 1.000 negativos por 30 días con intereses del 12% al mes:
+- Intereses: R$ 120
+- En 6 meses sin pagar: R$ 1.000 se convierte en R$ 1.973
+- En 12 meses: R$ 1.000 se convierte en R$ 3.896
 
 ## ¿Cómo evitar?
 
-1. **Desative o sobregiro** — ligue para o banco e peça para remover
-2. **Mantenha uma reserva na conta** — pelo menos R$ 500 de colchão
-3. **Configure alertas** — aviso quando saldo ficar baixo
-4. **Se precisar de crédito** — empréstimo pessoal tem juros 5x menores
+1. **Desactive el sobregiro** — llame al banco y solicite que lo eliminen
+2. **Mantenga una reserva en la cuenta** — al menos R$ 500 de colchón
+3. **Configure alertas** — aviso cuando el saldo esté bajo
+4. **Si necesita crédito** — el préstamo personal tiene intereses 5 veces menores
 
-## [Alternativas](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) mais baratas
+## [Alternativas](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) más baratas
 
-| Tipo de crédito | Juros mensais |
+| Tipo de crédito | Intereses mensuales |
 |----------------|---------------|
 | Sobregiro | 8-15% |
-| Cartão de crédito (rotativo) | 12-16% |
-| Empréstimo pessoal | 2-5% |
-| Empréstimo consignado | 1-2% |
-| Antecipação FGTS | 1-2% |
+| Tarjeta de crédito (rotativo) | 12-16% |
+| Préstamo personal | 2-5% |
+| Préstamo consignado | 1-2% |
+| Anticipación FGTS | 1-2% |

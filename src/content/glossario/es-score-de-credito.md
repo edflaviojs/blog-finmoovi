@@ -11,43 +11,43 @@ readingTime: 2
 
 ## ¿Qué es Score de [Crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)?
 
-Score de crédito é uma nota de 0 a 1000 que os birôs de crédito (Serasa, SPC, Boa Vista) dão para você. Essa nota indica para bancos e lojas qual a chance de você pagar suas contas em dia.
+El score de crédito es una puntuación de 0 a 1000 que los burós de crédito (Serasa, SPC, Boa Vista) otorgan a usted. Esta puntuación indica a bancos y comercios cuál es la probabilidad de que usted pague sus cuentas a tiempo.
 
-## Faixas de score
+## Rangos de score
 
-| Faixa | Pontuação | Significado |
+| Rango | Puntuación | Significado |
 |-------|-----------|-------------|
-| Muito baixo | 0-300 | Alto risco de inadimplência |
-| Baixo | 301-500 | Risco considerável |
-| Bom | 501-700 | Risco moderado |
-| Muito bom | 701-1000 | Baixo risco, bom pagador |
+| Muy bajo | 0-300 | Alto riesgo de morosidad |
+| Bajo | 301-500 | Riesgo considerable |
+| Bueno | 501-700 | Riesgo moderado |
+| Muy bueno | 701-1000 | Bajo riesgo, buen pagador |
 
-## O que afeta seu score
+## Qué afecta su score
 
 **Aumenta:**
-- Pagar contas em dia
-- Ter histórico longo de bom pagamento
-- Ter contas no seu nome (luz, telefone)
-- Cadastro Positivo ativo
+- Pagar cuentas a tiempo
+- Tener historial largo de buen pago
+- Tener cuentas a su nombre (luz, teléfono)
+- Cadastro Positivo activo
 
-**Diminui:**
-- Atrasar pagamentos
-- Ter nome negativado (SPC/Serasa)
-- Muitas consultas de crédito em pouco tempo
-- Usar muito do limite do cartão
+**Disminuye:**
+- Retrasar pagos
+- Tener nombre negativado (SPC/Serasa)
+- Muchas consultas de crédito en poco tiempo
+- Usar mucho del límite de la tarjeta
 
-## ¿Cómo mejorar? seu score
+## ¿Cómo mejorar su score
 
-1. Pague todas as contas em dia (mesmo as pequenas)
-2. Ative o Cadastro Positivo no Serasa
-3. Negocie e quite dívidas em aberto
-4. Evite pedir crédito em muitos lugares ao mesmo tempo
-5. Mantenha dados cadastrais atualizados
+1. Pague todas las cuentas a tiempo (incluso las pequeñas)
+2. Active el Cadastro Positivo en Serasa
+3. Negocie y liquide deudas pendientes
+4. Evite solicitar crédito en muchos lugares al mismo tiempo
+5. Mantenga sus datos de registro actualizados
 
-## Por que o score importa
+## Por qué el score importa
 
-Com score alto você consegue:
-- Taxas de [juros](/es/glossario/es-juros) menores em financiamentos
-- Limites maiores no cartão de crédito
-- Aprovação mais fácil em aluguéis
-- Melhores condições em empréstimos
+Con score alto usted consigue:
+- Tasas de [juros](/es/glossario/es-juros) menores en financiamientos
+- Límites mayores en la tarjeta de crédito
+- Aprobación más fácil en alquileres
+- Mejores condiciones en préstamos

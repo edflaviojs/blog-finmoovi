@@ -75,4 +75,3 @@ Abrir una poupança es tan fácil como abrir una cuenta corriente. Sigue estos p
 ## Empieza hoy
 
 No esperes a que llegue el próximo mes para pensar en tu futuro financiero. Abre tu poupança hoy mismo, programa ese pequeño depósito automático y empieza a ver cómo tu dinero se multiplica, aunque sea poco a poco. Cada real que guardas hoy es una garantía de tranquilidad mañana. ¡Vamos, que el primer paso es el más importante!
-

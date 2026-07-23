@@ -9,28 +9,28 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## O que são [Juros](/es/glossario/es-juros) Compostos?
+## ¿Qué son los [Juros](/es/glossario/es-juros) compuestos?
 
-Juros compostos são juros calculados sobre o [valor](/es/glossario/es-valor-financeiro) original **mais** os juros já acumulados. Diferente dos juros simples (que incidem só sobre o valor inicial), os compostos crescem exponencialmente.
+Los intereses compuestos son intereses calculados sobre el [valor](/es/glossario/es-valor-financeiro) original **más** los intereses ya acumulados. A diferencia de los intereses simples (que inciden solo sobre el valor inicial), los compuestos crecen exponencialmente.
 
 ## Ejemplo práctico
 
-R$ 10.000 investidos a 10% ao ano:
+R$ 10.000 invertidos a 10% al año:
 
-| Ano | Juros Simples | Juros Compostos |
-|-----|--------------|-----------------|
+| Año | Intereses Simples | Intereses Compuestos |
+|-----|-------------------|----------------------|
 | 1 | R$ 11.000 | R$ 11.000 |
 | 5 | R$ 15.000 | R$ 16.105 |
 | 10 | R$ 20.000 | R$ 25.937 |
 | 20 | R$ 30.000 | R$ 67.275 |
 | 30 | R$ 40.000 | R$ 174.494 |
 
-## A regra dos 72
+## La regla de los 72
 
-Para saber em quantos anos seu dinheiro dobra, divida 72 pela [taxa](/es/glossario/es-taxa-financeira) de juros:
-- 12% ao ano → 72 ÷ 12 = **6 anos** para dobrar
-- 8% ao ano → 72 ÷ 8 = **9 anos** para dobrar
+Para saber en cuántos años tu dinero se duplica, divide 72 por la [tasa](/es/glossario/es-taxa-financeira) de intereses:
+- 12% al año → 72 ÷ 12 = **6 años** para duplicar
+- 8% al año → 72 ÷ 8 = **9 años** para duplicar
 
-## Por que começar cedo importa
+## Por qué empezar temprano importa
 
-Quem investe R$ 500/mês dos 25 aos 65 anos (a 10% a.a.) acumula **R$ 3,2 milhões**. Quem começa aos 35, acumula R$ 1,1 milhão. 10 anos de diferença = 3x menos dinheiro.
+Quien invierte R$ 500/mes de los 25 a los 65 años (a 10% a.a.) acumula **R$ 3,2 millones**. Quien empieza a los 35, acumula R$ 1,1 millón. 10 años de diferencia = 3x menos dinero.

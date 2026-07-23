@@ -18,51 +18,50 @@ seo:
 ---
 
 ## What it is
-O termo "valor" é fundamental no mundo das finanças, especialmente quando se trata de investimentos e economia. Em resumo, o valor se refere ao preço ou ao valor de troca de um ativo, como [ações](/en/glossario/en-acoes), imóveis, ou até mesmo produtos cotidianos. No contexto de investimentos, o valor de um ativo pode flutuar com base em various fatores, como a oferta e a demanda, a economia em geral, e as perspectivas futuras do ativo em questão. Por exemplo, se você investiu R$5,000 em ações de uma empresa que está crescendo rapidamente, o valor dessas ações pode aumentar para R$6,500 em um curto período de tempo, dependendo do desempenho da empresa e da percepção do mercado.
+The term “value” is fundamental in the world of finance, especially when it comes to investments and the economy. In short, value refers to the price or exchange value of an asset, such as [ações](/en/glossario/en-acoes), real estate, or even everyday products. In the investment context, an asset’s value can fluctuate based on various factors, such as supply and demand, the overall economy, and the future outlook for the specific asset. For example, if you invested R$5,000 in shares of a rapidly growing company, the value of those shares could rise to R$6,500 in a short period of time, depending on the company’s performance and market perception.
 
-O valor também pode ser influenciado por fatores como a inflação, as taxas de [juros](/en/glossario/en-juros), e as políticas governamentais. É importante entender que o valor de um ativo não é estático e pode mudar rapidamente, o que pode afetar seu portfólio de investimentos. **Practical tip:** Sempre faça uma pesquisa detalhada antes de investir em qualquer ativo, e considere diversificar seu portfólio para minimizar os riscos.
+Value can also be influenced by factors like inflation, interest [rates](/en/glossario/en-juros), and government policies. It’s important to understand that an asset’s value is not static and can change quickly, which can affect your investment portfolio. **Practical tip:** Always do thorough research before investing in any asset, and consider diversifying your portfolio to minimize risks.
 
 ![What it is](/images/glossario/valor-inline-1.webp)
 
 
 
 ## How it works
-O valor de um ativo é determinado por uma combinação de fatores, incluindo a oferta e a demanda, a economia em geral, e as perspectivas futuras do ativo. Por exemplo, se uma empresa está crescendo rapidamente e tem uma perspectiva promissora, o valor de suas ações pode aumentar. Além disso, a inflação e as taxas de juros também podem afetar o valor de um ativo. Aqui estão alguns fatores que influenciam o valor de um ativo:
-* Oferta e demanda: se há mais compradores do que vendedores, o valor do ativo tende a aumentar
-* Economia em geral: se a economia está crescendo, o valor dos ativos tende a aumentar
-* Perspectivas futuras: se uma empresa tem uma perspectiva promissora, o valor de suas ações tende a aumentar
-* Inflação: se a inflação está alta, o valor dos ativos pode diminuir
-* Taxas de juros: se as taxas de juros estão altas, o valor dos ativos pode diminuir
+An asset’s value is determined by a combination of factors, including supply and demand, the overall economy, and the asset’s future outlook. For example, if a company is growing rapidly and has a promising outlook, the value of its shares may increase. In addition, inflation and interest rates can also affect an asset’s value. Here are some factors that influence an asset’s value:
+* Supply and demand: if there are more buyers than sellers, the asset’s value tends to rise
+* Overall economy: if the economy is growing, asset values tend to rise
+* Future outlook: if a company has a promising outlook, the value of its shares tends to rise
+* Inflation: if inflation is high, asset values may decline
+* Interest rates: if interest rates are high, asset values may decline
 
-**Practical tip:** É importante entender como esses fatores interagem e afetam o valor dos ativos, para tomar decisões informadas sobre seus investimentos.
+**Practical tip:** It’s important to understand how these factors interact and affect asset values, so you can make informed decisions about your investments.
 
 ## Advantages
-O valor de um ativo pode oferecer várias vantagens, especialmente se você investir de forma inteligente. Aqui estão algumas delas:
-* Potencial de crescimento: se você investir em um ativo que está crescendo rapidamente, o valor do seu investimento pode aumentar significativamente
-* Renda passiva: se você investir em um ativo que gera renda, como um imóvel ou uma ação, você pode receber renda passiva
-* [Diversificação](/en/glossario/en-diversificacao): se você diversificar seu portfólio de investimentos, você pode minimizar os riscos e maximizar os retornos
-* Segurança: se você investir em um ativo seguro, como um título de dívida, você pode ter uma fonte de renda estável
+The value of an asset can offer several advantages, especially if you invest wisely. Here are some of them:
+* Growth potential: if you invest in an asset that is growing rapidly, the value of your investment can increase significantly
+* Passive income: if you invest in an asset that generates income, such as real estate or a stock, you can receive passive income
+* [Diversificação](/en/glossario/en-diversificacao): if you diversify your investment portfolio, you can minimize risks and maximize returns
+* Safety: if you invest in a safe asset, such as a debt security, you can have a stable source of income
 
-**Practical tip:** É importante diversificar seu portfólio de investimentos para minimizar os riscos e maximizar os retornos.
+**Practical tip:** It’s important to diversify your investment portfolio to minimize risks and maximize returns.
 
 ![Advantages](/images/glossario/valor-inline-3.webp)
 
 
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-No entanto, o valor de um ativo também pode envolver riscos, especialmente se você não entender completamente o mercado ou não diversificar seu portfólio. Aqui estão alguns riscos que você deve considerar:
-* Risco de perda: se o valor do ativo diminuir, você pode perder dinheiro
-* Risco de inflação: se a inflação estiver alta, o valor do ativo pode diminuir
-* Risco de liquidez: se você não puder vender o ativo rapidamente, você pode perder dinheiro
-* Risco de crédito: se a empresa ou o emitente do ativo não puder cumprir com suas obrigações, você pode perder dinheiro
+However, the value of an asset can also involve risks, especially if you don’t fully understand the market or fail to diversify your portfolio. Here are some risks you should consider:
+* Loss risk: if the asset’s value drops, you can lose money
+* Inflation risk: if inflation is high, the asset’s value may decline
+* Liquidity risk: if you can’t sell the asset quickly, you may lose money
+* Credit risk: if the company or issuer of the asset can’t meet its obligations, you can lose money
 
-**Practical tip:** É importante entender os riscos envolvidos e tomar medidas para minimizá-los, como diversificar seu portfólio e fazer uma pesquisa detalhada antes de investir.
+**Practical tip:** It’s important to understand the risks involved and take steps to minimize them, such as diversifying your portfolio and doing thorough research before investing.
 
 ## Practical examples
-Vamos considerar alguns exemplos práticos de como o valor de um ativo pode afetar seu portfólio de investimentos. Por exemplo, se você investiu R$3,000 em ações de uma empresa que está crescendo rapidamente, o valor dessas ações pode aumentar para R$4,500 em um curto período de tempo. No entanto, se a empresa enfrentar problemas e o valor das ações diminuir para R$2,000, você pode perder dinheiro. **Practical tip:** É importante monitorar o desempenho do seu portfólio de investimentos e fazer ajustes conforme necessário.
+Let’s look at some practical examples of how an asset’s value can affect your investment portfolio. For instance, if you invested R$3,000 in shares of a rapidly growing company, the value of those shares could rise to R$4,500 in a short period of time. However, if the company encounters problems and the share value drops to R$2,000, you could lose money. **Practical tip:** It’s important to monitor the performance of your investment portfolio and make adjustments as needed.
 
-Outro exemplo é se você investiu R$8,000 em um imóvel que está valorizando rapidamente. Se o valor do imóvel aumentar para R$12,000, você pode vender o imóvel e obter um lucro significativo. No entanto, se o mercado imobiliário estiver em declínio, o valor do imóvel pode diminuir e você pode perder dinheiro. **Practical tip:** É importante entender o mercado e fazer uma pesquisa detalhada antes de investir em qualquer ativo.
+Another example is if you invested R$8,000 in a property that is appreciating quickly. If the property’s value rises to R$12,000, you could sell the property and earn a significant profit. However, if the real‑estate market is declining, the property’s value may drop and you could lose money. **Practical tip:** It’s important to understand the market and do thorough research before investing in any asset.
 
 ## Start today
-Agora que você entende melhor o conceito de valor e como ele pode afetar seu portfólio de investimentos, é hora de começar a investir de forma inteligente. **Practical tip:** Comece fazendo uma pesquisa detalhada e diversificando seu portfólio de investimentos. Além disso, é importante monitorar o desempenho do seu portfólio e fazer ajustes conforme necessário. Com o app, você pode facilmente monitorar o desempenho do seu portfólio e fazer ajustes conforme necessário. Lembre-se de que o valor de um ativo pode flutuar rapidamente, então é importante estar preparado e tomar decisões informadas. Comece hoje e veja como você pode crescer seu patrimônio de forma inteligente!
-
+Now that you have a better grasp of the concept of value and how it can affect your investment portfolio, it’s time to start investing wisely. **Practical tip:** Begin by doing thorough research and diversifying your investment portfolio. In addition, it’s important to monitor your portfolio’s performance and make adjustments as needed. With the app, you can easily track your portfolio’s performance and make adjustments as necessary. Remember that an asset’s value can fluctuate quickly, so it’s crucial to be prepared and make informed decisions. Start today and see how you can grow your wealth intelligently!

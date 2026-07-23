@@ -11,13 +11,13 @@ readingTime: 2
 
 ## ¿Qué es [Valor](/es/glossario/es-valor-financeiro) Presente?
 
-Valor Presente é quanto vale HOJE um dinheiro que você vai receber no FUTURO. R$ 1.000 daqui a 1 ano valem menos que R$ 1.000 hoje — porque hoje você poderia investir e ter mais no futuro.
+Valor Presente es cuánto vale HOY un dinero que vas a recibir en el FUTURO. R$ 1.000 dentro de 1 año vale menos que R$ 1.000 hoy — porque hoy podrías invertir y tener más en el futuro.
 
 ## Fórmula
 
 **VP = VF ÷ (1 + i)^n**
 
-Onde:
+Donde:
 - VP = Valor Presente
 - VF = Valor Futuro
 - i = [taxa](/es/glossario/es-taxa-financeira) de [juros](/es/glossario/es-juros)
@@ -25,26 +25,26 @@ Onde:
 
 ## Ejemplo práctico
 
-Alguém te oferece R$ 10.000 daqui a 2 anos. Com a [Selic](/es/glossario/es-selic) a 13% ao ano, quanto isso vale hoje?
+Alguien te ofrece R$ 10.000 dentro de 2 años. Con la [Selic](/es/glossario/es-selic) al 13% anual, ¿cuánto vale eso hoy?
 
 VP = 10.000 ÷ (1,13)² = 10.000 ÷ 1,2769 = **R$ 7.831**
 
-Ou seja: receber R$ 10.000 daqui a 2 anos é a mesma coisa que receber R$ 7.831 hoje.
+Es decir: recibir R$ 10.000 dentro de 2 años es lo mismo que recibir R$ 7.831 hoy.
 
-## Para que serve
+## Para que sirve
 
-1. **Comparar investimentos** com prazos diferentes
-2. **Avaliar propostas** ("pago R$ 50.000 à vista ou R$ 60.000 em 12x?")
+1. **Comparar inversiones** con plazos diferentes
+2. **Evaluar propuestas** ("¿pago R$ 50.000 al contado o R$ 60.000 en 12x?")
 3. **Precificar títulos** de [renda fixa](/es/glossario/es-renda-fixa)
-4. **Decisões de negócios** (vale a pena esse projeto?)
+4. **Decisiones de negocios** (¿vale la pena este proyecto?)
 
-## [Aplicação](/es/glossario/es-aplicacao-financeira) no dia a dia
+## [Aplicación](/es/glossario/es-aplicacao-financeira) en el día a día
 
-Quando uma loja oferece "12x sem juros de R$ 100 ou R$ 1.000 à vista":
-- 12 parcelas = R$ 1.200 no total
-- Mas o valor presente de 12x R$ 100 é menor que R$ 1.200
-- Se você pode investir o dinheiro a 1%/mês, pagar parcelado e investir a diferença é melhor
+Cuando una tienda ofrece "12x sin intereses de R$ 100 o R$ 1.000 al contado":
+- 12 cuotas = R$ 1.200 en total
+- Pero el valor presente de 12x R$ 100 es menor que R$ 1.200
+- Si puedes invertir el dinero al 1%/mes, pagar a plazos e invertir la diferencia es mejor
 
-## Regra simples
+## Regla simple
 
-Dinheiro hoje vale mais que dinheiro amanhã. Sempre considere o "custo do tempo" ao tomar decisões financeiras.
+Dinero hoy vale más que dinero mañana. Siempre considera el "costo del tiempo" al tomar decisiones financieras.

@@ -18,42 +18,48 @@ seo:
 ---
 
 ## What it is
-A governança é um termo que pode parecer complicado, mas é mais simples do que você imagina. Basicamente, se refere à forma como as organizações, incluindo empresas e até mesmo famílias, gerenciam seus recursos financeiros de maneira responsável e ética. Isso envolve a criação de regras, políticas e processos para garantir que o dinheiro seja usado de forma eficiente e transparente. Por exemplo, imagine que você ganha R$ 5.000 por mês e precisa decidir como distribuir esse [valor](/en/glossario/en-valor-financeiro) entre contas, investimentos e despesas. A governança pessoal ajudaria a estabelecer um plano claro para essas decisões.
+Governance is a term that may seem complicated, but it's simpler than you think. Basically, it refers to how organizations, including companies and even families, manage their financial resources responsibly and ethically. This involves creating rules, policies, and processes to ensure money is used efficiently and transparently. For example, imagine you earn R$ 5.000 per month and need to decide how to allocate this [value](/en/glossario/en-valor-financeiro) among accounts, investments, and expenses. Personal governance would help establish a clear plan for those decisions.
 
-* Definição de objetivos financeiros claros
-* Criação de um orçamento realista
-* Implementação de controles para evitar gastos excessivos
-* Monitoramento constante das finanças
-A governança não se limita a grandes empresas; é uma prática essencial para qualquer pessoa que queira ter controle sobre suas finanças. Ao adotar boas práticas de governança, você pode evitar problemas financeiros, como dívidas desnecessárias ou a falta de [poupança](/en/glossario/en-poupanca) para o futuro.
+- Definition of clear financial objectives
+- Creation of a realistic budget
+- Implementation of controls to avoid excessive spending
+- Constant monitoring of finances  
+
+Governance is not limited to large companies; it is an essential practice for anyone who wants to have control over their finances. By adopting good governance practices, you can avoid financial problems, such as unnecessary debt or the lack of [savings](/en/glossario/en-poupanca) for the future.
 
 ![What it is](/images/glossario/governanca-inline-1.webp)
 
 
 
 ## How it works
-A governança funciona estabelecendo um conjunto de regras e procedimentos que ajudam a garantir que as decisões financeiras sejam tomadas de forma responsável. Isso pode incluir a criação de um orçamento, a definição de metas de poupança e a implementação de controles para evitar gastos excessivos. Por exemplo, se você decide que quer economizar R$ 1.000 por mês, a governança ajudaria a garantir que esse valor seja reservado regularmente, independentemente de outras despesas. **Practical tip:** Uma boa maneira de começar é definir suas prioridades financeiras e criar um plano de ação para alcançá-las.
+Governance works by establishing a set of rules and procedures that help ensure financial decisions are made responsibly. This can include creating a budget, setting savings goals, and implementing controls to avoid excessive spending. For example, if you decide you want to save R$ 1.000 per month, governance would help ensure that amount is set aside regularly, regardless of other expenses. **Practical tip:** A good way to start is to define your financial priorities and create an action plan to achieve them.
 
-Uma das ferramentas mais úteis para a governança pessoal é o orçamento. Um orçamento é como um plano de batalha para suas finanças, ajudando a garantir que você esteja usando seu dinheiro de forma eficiente. Imagine que você ganha R$ 6.000 por mês e tem despesas fixas de R$ 2.000. Com um orçamento, você pode decidir como distribuir os R$ 4.000 restantes entre poupança, investimentos e despesas variáveis.
+One of the most useful tools for personal governance is the budget. A budget is like a battle plan for your finances, helping ensure you use your money efficiently. Imagine you earn R$ 6.000 per month and have fixed expenses of R$ 2.000. With a budget, you can decide how to allocate the remaining R$ 4.000 among savings, investments, and variable expenses.
+
+
 
 ## Advantages
-As vantagens de implementar uma boa governança são numerousas. Primeiramente, ajuda a evitar problemas financeiros, como dívidas ou a falta de recursos para emergências. Além disso, a governança promove a disciplina financeira, ajudando a garantir que você esteja trabalhando em direção a seus objetivos financeiros. **Practical tip:** É importante rever regularmente seu orçamento e plano financeiro para garantir que eles continuem alinhados com suas metas.
+The advantages of implementing good governance are numerous. First, it helps avoid financial problems, such as debt or lack of resources for emergencies. Additionally, governance promotes financial discipline, helping ensure you are working toward your financial goals. **Practical tip:** It is important to regularly review your budget and financial plan to ensure they remain aligned with your objectives.
 
-Outra vantagem importante é a tranquilidade que vem com o conhecimento de que suas finanças estão sob controle. Imagine poder planejar uma viagem ou comprar um carro novo, sabendo que você tem os recursos necessários. A governança também ajuda a proteger contra riscos financeiros, como a perda de emprego ou despesas médicas inesperadas, garantindo que você tenha uma reserva financeira para essas situações.
+Another important advantage is the peace of mind that comes from knowing your finances are under control. Imagine being able to plan a trip or buy a new car, knowing you have the necessary resources. Governance also helps protect against financial risks, such as job loss or unexpected medical expenses, ensuring you have a financial reserve for those situations.
 
 ![Advantages](/images/glossario/governanca-inline-3.webp)
 
 
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-Embora a governança seja essencial para a saúde financeira, existem riscos associados à sua implementação. Um dos principais riscos é a rigidez excessiva, onde o plano financeiro se torna tão restritivo que não permite flexibilidade para mudanças ou oportunidades inesperadas. **Practical tip:** É crucial encontrar um equilíbrio entre disciplina financeira e flexibilidade para adaptações necessárias.
+Although governance is essential for financial health, there are risks associated with its implementation. One of the main risks is excessive rigidity, where the financial plan becomes so restrictive that it does not allow flexibility for changes or unexpected opportunities. **Practical tip:** It is crucial to find a balance between financial discipline and flexibility for necessary adaptations.
 
-Outro risco é a falta de conhecimento ou habilidades para gerenciar as finanças de forma eficaz. Isso pode levar a decisões ruins, como investimentos de alto risco ou a falta de [diversificação](/en/glossario/en-diversificacao) nos investimentos. Para mitigar esses riscos, é importante buscar educação financeira e, se necessário, consultar um profissional.
+Another risk is the lack of knowledge or skills to manage finances effectively. This can lead to poor decisions, such as high‑risk investments or a lack of [diversification](/en/glossario/en-diversificacao) in investments. To mitigate these risks, it is important to seek financial education and, if necessary, consult a professional.
+
+
 
 ## Practical examples
-Um exemplo prático de governança em ação é a criação de um fundo de emergência. Imagine que você ganha R$ 4.000 por mês e decide que quer ter um fundo de emergência que cubra três meses de despesas, o que seria R$ 12.000. Com um plano de governança, você pode estabelecer uma meta para alcançar esse valor em um determinado período, por exemplo, seis meses, e trabalhar consistentemente para alcançá-la.
+A practical example of governance in action is creating an emergency fund. Imagine you earn R$ 4.000 per month and decide you want an emergency fund that covers three months of expenses, which would be R$ 12.000. With a governance plan, you can set a goal to reach that amount within a specific period, for example, six months, and work consistently to achieve it.
 
-Outro exemplo é a gestão de despesas. Se você percebe que está gastando muito em restaurantes, pode estabelecer um limite para essas despesas e encontrar maneiras de reduzi-las, como cozinhar em casa mais frequentemente. A governança pessoal ajuda a identificar áreas de desperdício e a implementar mudanças para melhorar a eficiência financeira.
+Another example is expense management. If you notice you are spending too much on restaurants, you can set a limit for those expenses and find ways to reduce them, such as cooking at home more often. Personal governance helps identify areas of waste and implement changes to improve financial efficiency.
+
+
 
 ## Start today
-Não importa qual seja sua situação financeira atual, é sempre o momento certo para começar a implementar boas práticas de governança. **Practical tip:** Comece definindo seus objetivos financeiros e criando um orçamento básico. Você pode usar ferramentas como planilhas ou aplicativos de finanças pessoais para ajudar a organizar suas finanças. Lembre-se, a governança é um processo contínuo que requer revisão e ajuste regular. Com disciplina e paciência, você pode alcançar a estabilidade financeira e construir um futuro mais seguro. Então, não espere mais — comece a construir sua governança financeira hoje mesmo!
-
+No matter what your current financial situation is, it is always the right time to start implementing good governance practices. **Practical tip:** Start by defining your financial goals and creating a basic budget. You can use tools such as spreadsheets or personal finance apps to help organize your finances. Remember, governance is an ongoing process that requires regular review and adjustment. With discipline and patience, you can achieve financial stability and build a safer future. So, don’t wait any longer — start building your financial governance today!

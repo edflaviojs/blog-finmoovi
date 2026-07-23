@@ -9,24 +9,24 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## ¿Qué es Inflação?
+## ¿Qué es la inflación?
 
-Inflação é o aumento geral dos preços. Quando a inflação sobe, o mesmo dinheiro compra menos coisas. É por isso que R$ 100 hoje compram menos do que R$ 100 há 10 anos.
+La inflación es el aumento general de los precios. Cuando la inflación sube, el mismo dinero compra menos cosas. Por eso R$ 100 hoy compran menos que R$ 100 hace 10 años.
 
-## Como é medida no Brasil?
+## ¿Cómo se mide en Brasil?
 
-O principal índice é o **IPCA** (Índice de Preços ao Consumidor Amplo), calculado pelo IBGE. Ele mede a variação de preços de uma cesta de produtos e serviços consumidos pelas famílias.
+El principal índice es el **IPCA** (Índice de Precios al Consumidor Amplio), calculado por el IBGE. Mide la variación de precios de una canasta de productos y servicios consumidos por las familias.
 
-## ¿Por qué importa? para suas finanças?
+## ¿Por qué importa para tus finanzas?
 
-Se seus investimentos rendem menos que a inflação, você está **perdendo dinheiro** em termos reais. Exemplo:
-- Inflação: 5% ao ano
-- [Poupança](/es/glossario/es-poupanca): 6% ao ano
-- Ganho real: apenas 1%
+Si tus inversiones rinden menos que la inflación, estás **perdiendo dinero** en términos reales. Ejemplo:
+- Inflación: 5 % al año
+- [Poupança](/es/glossario/es-poupanca): 6 % al año
+- Ganancia real: solo 1 %
 
-## Como se proteger?
+## ¿Cómo protegerse?
 
-- Invista em ativos que rendam acima da inflação
-- Tesouro IPCA+ garante rendimento real
-- Diversifique entre [renda fixa](/es/glossario/es-renda-fixa) e variável
-- Acompanhe o IPCA mensal
+- Invierte en activos que rindan por encima de la inflación
+- Tesoro IPCA+ garantiza rendimiento real
+- Diversifica entre [renda fixa](/es/glossario/es-renda-fixa) y variable
+- Sigue el IPCA mensual

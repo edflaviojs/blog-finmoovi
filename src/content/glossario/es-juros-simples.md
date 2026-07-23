@@ -9,40 +9,40 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## O que são [Juros](/es/glossario/es-juros) Simples?
+## ¿Qué son los [Juros](/es/glossario/es-juros) Simples?
 
-Juros simples são calculados apenas sobre o [valor](/es/glossario/es-valor-financeiro) original (principal). Não importa quanto tempo passe, os juros são sempre calculados sobre o mesmo valor inicial. É o tipo mais básico de juros.
+Los intereses simples se calculan solo sobre el [valor](/es/glossario/es-valor-financeiro) original (principal). No importa cuánto tiempo pase, los intereses siempre se calculan sobre el mismo valor inicial. Es el tipo más básico de intereses.
 
 ## Fórmula
 
 **J = P × i × t**
 
-Onde:
-- J = juros
+Donde:
+- J = intereses
 - P = principal (valor inicial)
-- i = [taxa](/es/glossario/es-taxa-financeira) de juros (em decimal)
-- t = tempo
+- i = [tasa](/es/glossario/es-taxa-financeira) de intereses (en decimal)
+- t = tiempo
 
-## Exemplo
+## Ejemplo
 
-R$ 1.000 a 10% ao ano por 3 anos (juros simples):
-- Juros = 1.000 × 0,10 × 3 = R$ 300
+R$ 1.000 al 10% anual por 3 años (intereses simples):
+- Intereses = 1.000 × 0,10 × 3 = R$ 300
 - Total: R$ 1.300
 
-Compare com juros compostos:
-- Ano 1: 1.000 × 1,10 = R$ 1.100
-- Ano 2: 1.100 × 1,10 = R$ 1.210
-- Ano 3: 1.210 × 1,10 = R$ 1.331
-- Total: R$ 1.331 (R$ 31 a mais)
+Comparar con intereses compuestos:
+- Año 1: 1.000 × 1,10 = R$ 1.100
+- Año 2: 1.100 × 1,10 = R$ 1.210
+- Año 3: 1.210 × 1,10 = R$ 1.331
+- Total: R$ 1.331 (R$ 31 más)
 
-## Onde aparecem juros simples
+## Dónde aparecen los intereses simples
 
-Na prática, juros simples são raros. Aparecem em:
-- Alguns cálculos de multas
-- Desconto de duplicatas
-- Cálculos trabalhistas
-- Exercícios de matemática financeira
+En la práctica, los intereses simples son raros. Aparecen en:
+- Algunos cálculos de multas
+- Descuento de duplicatas
+- Cálculos laborales
+- Ejercicios de matemática financiera
 
-## ¿Por qué importa? saber
+## ¿Por qué importa?
 
-Entender a diferença entre juros simples e compostos é fundamental. No mundo real, quase tudo usa juros compostos — e isso faz uma diferença enorme no longo prazo, tanto para investimentos quanto para dívidas.
+Entender la diferencia entre intereses simples y compuestos es fundamental. En el mundo real, casi todo usa intereses compuestos — y eso marca una gran diferencia a largo plazo, tanto para inversiones como para deudas.

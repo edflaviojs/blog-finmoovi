@@ -9,35 +9,35 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es Volatilidade?
+## ¿Qué es Volatilidad?
 
-Volatilidade é a intensidade com que o preço de um investimento sobe e desce. Um ativo volátil pode valorizar 5% em um dia e cair 3% no dia seguinte. Quanto maior a volatilidade, maior o risco — mas também maior o potencial de ganho.
+La volatilidad es la intensidad con la que el precio de una inversión sube y baja. Un activo volátil puede subir un 5 % en un día y caer un 3 % al día siguiente. Cuanto mayor es la volatilidad, mayor el riesgo — pero también mayor el potencial de ganancia.
 
-## Ejemplos de volatilidade
+## Ejemplos de volatilidad
 
-| Ativo | Volatilidade | Variação típica diária |
-|-------|-------------|----------------------|
-| [Poupança](/es/glossario/es-poupanca) | Quase zero | 0% |
-| [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) | Muito baixa | 0,03% |
-| [Ações](/es/glossario/es-acoes) (Ibovespa) | Média | 1-2% |
-| [Bitcoin](/es/glossario/es-bitcoin) | Muito alta | 3-10% |
-| Meme coins | Extrema | 10-50% |
+| Activo | Volatilidad | Variación típica diaria |
+|--------|-------------|--------------------------|
+| [Poupança](/es/glossario/es-poupanca) | Casi cero | 0 % |
+| [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) | Muy baja | 0,03 % |
+| [Ações](/es/glossario/es-acoes) (Ibovespa) | Media | 1‑2 % |
+| [Bitcoin](/es/glossario/es-bitcoin) | Muy alta | 3‑10 % |
+| Meme coins | Extrema | 10‑50 % |
 
-## Volatilidade é ruim?
+## ¿Volatilidad es mala?
 
-Não necessariamente. Depende do seu perfil:
-- **Conservador:** volatilidade é estresse. Prefira [renda fixa](/es/glossario/es-renda-fixa).
-- **Moderado:** aceita alguma oscilação em troca de mais retorno.
-- **Arrojado:** usa a volatilidade a seu favor (compra nas quedas).
+No necesariamente. Depende de tu perfil:
+- **Conservador:** la volatilidad es estrés. Prefiere [renda fixa](/es/glossario/es-renda-fixa).
+- **Moderado:** acepta alguna oscilación a cambio de mayor retorno.
+- **Arrojado:** usa la volatilidad a su favor (compra en las caídas).
 
-## Como lidar com a volatilidade
+## Cómo lidiar con la volatilidad
 
-1. **Tenha horizonte longo** — no curto prazo, tudo oscila
-2. **Diversifique** — ativos diferentes oscilam em momentos diferentes
-3. **Não olhe todo dia** — verificar preços diariamente gera ansiedade
-4. **Invista regularmente** — aportes mensais suavizam o preço médio
-5. **Tenha reserva de emergência** — para não precisar vender na baixa
+1. **Ten un horizonte largo** — a corto plazo, todo oscila  
+2. **Diversifica** — los activos diferentes oscilan en momentos diferentes  
+3. **No mires todos los días** — verificar precios diariamente genera ansiedad  
+4. **Invierte regularmente** — las aportaciones mensuales suavizan el precio medio  
+5. **Ten una reserva de emergencia** — para no tener que vender en la baja  
 
-## Índice de volatilidade
+## Índice de volatilidad
 
-No Brasil, o principal indicador é o **VIX** (índice do medo). Quando o VIX está alto, o mercado está nervoso. Quando está baixo, está calmo.
+En Brasil, el principal indicador es el **VIX** (índice del miedo). Cuando el VIX está alto, el mercado está nervioso. Cuando está bajo, está tranquilo.

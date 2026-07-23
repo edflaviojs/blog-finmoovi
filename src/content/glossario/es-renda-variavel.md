@@ -9,35 +9,35 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## ¿Qué es Renda Variável?
+## ¿Qué es Renta Variable?
 
-Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce conforme o mercado. Você pode ganhar muito — ou perder. Inclui [ações](/es/glossario/es-acoes), [fundos](/es/glossario/es-fundo-de-investimento) imobiliários, ETFs, criptomoedas e derivativos.
+Renta Variable es todo lo que no tiene retorno garantizado. El precio sube y baja según el mercado. Puedes ganar mucho — o perder. Incluye [acciones](/es/glossario/es-acoes), [fondos](/es/glossario/es-fundo-de-investimento) inmobiliarios, ETFs, criptomonedas y derivados.
 
-## Diferença para [Renda Fixa](/es/glossario/es-renda-fixa)
+## Diferencia con [Renta Fija](/es/glossario/es-renda-fixa)
 
-| | Renda Fixa | Renda Variável |
-|--|-----------|---------------|
-| Retorno | Previsível | Imprevisível |
-| Risco | Baixo | Médio a alto |
+| | Renta Fija | Renta Variable |
+|--|-----------|----------------|
+| Retorno | Previsible | Imprevisible |
+| Riesgo | Bajo | Medio a alto |
 | Potencial | Limitado | Ilimitado |
-| Prazo ideal | Curto/médio | Longo (5+ anos) |
-| Exemplo | [CDB](/es/glossario/es-cdb), Tesouro | Ações, FIIs |
+| Plazo ideal | Corto/medio | Largo (5+ años) |
+| Ejemplo | [CDB](/es/glossario/es-cdb), Tesoro | Acciones, FIIs |
 
-## Principais investimentos de renda variável
+## Principales inversiones de renta variable
 
-1. **Ações** — pedaços de empresas
-2. **Fundos Imobiliários (FIIs)** — cotas de fundos que investem em imóveis
-3. **ETFs** — fundos que replicam índices
-4. **Criptomoedas** — ativos digitais descentralizados
-5. **Derivativos** — contratos futuros, opções (avançado)
+1. **Acciones** — porciones de empresas  
+2. **Fondos Inmobiliarios (FIIs)** — cuotas de fondos que invierten en inmuebles  
+3. **ETFs** — fondos que replican índices  
+4. **Criptomonedas** — activos digitales descentralizados  
+5. **Derivados** — contratos futuros, opciones (avanzado)  
 
 ## [Riesgos](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-- Perda de capital (seu investimento pode valer menos)
-- Volatilidade (oscilações diárias)
-- Risco de empresa (falência)
-- Risco de mercado (crises econômicas)
+- Pérdida de capital (tu inversión puede valer menos)  
+- Volatilidad (oscilaciones diarias)  
+- Riesgo de empresa (quiebra)  
+- Riesgo de mercado (crisis económicas)  
 
-## Regra de ouro
+## Regla de oro
 
-Só invista em renda variável dinheiro que você não vai precisar nos próximos 5 anos. E sempre tenha sua reserva de emergência em renda fixa antes de começar.
+Solo invierte en renta variable dinero que no vas a necesitar en los próximos 5 años. Y siempre ten tu reserva de emergencia en renta fija antes de comenzar.

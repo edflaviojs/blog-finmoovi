@@ -19,79 +19,45 @@ seo:
 
 ## What it is
 
-Aplicação é simplesmente colocar seu dinheiro em algum produto financeiro esperando receber um retorno, seja ele juros, dividendos ou valorização. Em termos práticos, é como “emprestar” seu dinheiro para uma instituição (banco, corretora ou empresa) que, em troca, paga um rendimento.  
+An investment is simply putting your money into a financial product expecting to receive a return, whether it’s interest, dividends, or appreciation. In practical terms, it’s like “lending” your money to an institution (bank, brokerage, or company) that, in return, pays a yield.  
 
 ![What it is](/images/glossario/aplicacao-inline-1.webp)
 
+- **CDB** (Certificado de Depósito Bancário) – works like a loan to the bank.  
+- **[Tesouro Direto](/en/glossario/en-tesouro-direto)** – purchase of securities issued by the government.  
+- **Investment funds** – pools of resources managed by professional managers.  
+- **LCI/LCA** (Letras de Crédito Imobiliário/Agrícola) – tax‑exempt [income tax](/en/glossario/en-imposto-de-renda) securities for those who invest in real‑estate or agricultural credit.  
 
-
-- **CDB** (Certificado de Depósito Bancário) – funciona como um empréstimo ao banco.  
-- **[Tesouro Direto](/en/glossario/en-tesouro-direto)** – compra de títulos emitidos pelo governo.  
-- **Fundos de investimento** – grupos de recursos administrados por gestores profissionais.  
-- **LCI/LCA** (Letras de Crédito Imobiliário/Agrícola) – títulos isentos de [imposto de renda](/en/glossario/en-imposto-de-renda) para quem investe em crédito imobiliário ou agrícola.  
-
-A ideia central é que, ao invés de deixar o dinheiro parado na conta corrente, você o coloca em um lugar que gera renda. Isso ajuda a proteger o poder de compra contra a inflação e a construir um colchão para projetos futuros.
+The core idea is that, instead of leaving money idle in a checking account, you put it in a place that generates income. This helps protect purchasing power against inflation and builds a cushion for future projects.
 
 ## How it works
 
-Quando você decide fazer uma aplicação, segue um processo bem simples: escolhe o produto, define o valor e o prazo, e deixa o dinheiro “trabalhar” até o vencimento ou até que você decida resgatar. Cada tipo de aplicação tem sua própria forma de remuneração – alguns pagam juros fixos, outros variam de acordo com a taxa [Selic](/en/glossario/en-selic) ou com o desempenho de um índice.  
+When you decide to make an investment, you follow a very simple process: choose the product, set the amount and the term, and let the money “work” until maturity or until you decide to withdraw. Each type of investment has its own way of remunerating – some pay fixed interest, others vary according to the [Selic](/en/glossario/en-selic) rate or the performance of an index.  
 
-- **Escolha o produto** de acordo com seu objetivo (liquidez, rentabilidade ou segurança).  
-- **Defina o valor** que pode comprometer sem prejudicar seu orçamento mensal.  
-- **Acompanhe o rendimento** periodicamente, mas evite mexer demais para não perder benefícios.  
+- **Choose the product** according to your goal (liquidity, return, or safety).  
+- **Set the amount** you can commit without harming your monthly budget.  
+- **Monitor the return** periodically, but avoid tweaking too much so you don’t lose benefits.  
 
-O banco ou a corretora registra sua operação, calcula os juros diariamente e, no final do período, credita o valor total (capital + juros) na sua conta. Se a aplicação for de [renda fixa](/en/glossario/en-renda-fixa), o retorno costuma ser previsível; se for de renda variável, como fundos de ações, o ganho pode ser maior, mas a volatilidade também aumenta.
+The bank or brokerage records your transaction, calculates interest daily and, at the end of the period, credits the total amount (principal + interest) to your account. If the investment is in [fixed income](/en/glossario/en-renda-fixa), the return is usually predictable; if it’s in variable income, such as equity funds, the gain can be higher, but volatility also increases.
 
 ## Advantages
 
-Aplicar seu dinheiro traz benefícios que vão muito além de “ganhar um extra”. Primeiro, você cria disciplina financeira, pois precisa separar parte da renda para investir. Segundo, a maioria das aplicações rende mais que a poupança, que tem taxa de juros muito baixa. Terceiro, alguns produtos oferecem isenção de imposto de renda, aumentando ainda mais o retorno líquido.  
+Investing your money brings benefits that go far beyond “earning extra”. First, you create financial discipline, as you need to set aside part of your income to invest. Second, most investments yield more than a savings account, which has a very low interest rate. Third, some products offer income‑tax exemption, further increasing net return.  
 
 ![Advantages](/images/glossario/aplicacao-inline-3.webp)
 
+- **Higher return** than a checking account, helping you reach goals like buying a car or the trip of your dreams.  
+- **Protection against inflation**, since many securities adjust the return to the price index.  
+- **[Diversification](/en/glossario/en-diversificacao)**, allowing you to spread risk across different types of assets.  
 
-
-- **Rentabilidade superior** à conta corrente, ajudando a alcançar metas como a compra de um carro ou a viagem dos sonhos.  
-- **Proteção contra a inflação**, já que muitos títulos ajustam o rendimento ao índice de preços.  
-- **[Diversificação](/en/glossario/en-diversificacao)**, permitindo espalhar o risco entre diferentes tipos de ativos.  
-
-Além disso, ao ver seu dinheiro crescer, você ganha confiança para assumir desafios maiores, como abrir um negócio ou fazer um curso de especialização.
+Moreover, as you see your money grow, you gain confidence to take on bigger challenges, such as starting a business or taking a specialization course.
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-Nenhum investimento é totalmente livre de risco, e entender as armadilhas ajuda a evitar surpresas desagradáveis. O principal risco em aplicações de renda fixa é o **risco de crédito**, ou seja, a possibilidade de a instituição emissora não honrar o pagamento. Já em fundos de renda variável, o risco de mercado pode fazer o valor oscilar bastante.  
+No investment is completely risk‑free, and understanding the pitfalls helps avoid unpleasant surprises. The main risk in fixed‑income investments is **credit risk**, i.e., the possibility that the issuing institution does not honor the payment. In variable‑income funds, market risk can cause the value to fluctuate significantly.  
 
-- **Risco de crédito** – se o banco falir, pode haver perda parcial ou total do capital.  
-- **Risco de liquidez** – alguns produtos só podem ser resgatados após um prazo determinado, o que pode atrapalhar emergências.  
-- **Risco de mercado** – variações nos preços dos ativos podem reduzir o valor da aplicação.  
+- **Credit risk** – if the bank fails, there may be partial or total loss of capital.  
+- **Liquidity risk** – some products can only be redeemed after a set period, which can hinder emergencies.  
+- **Market risk** – price variations of assets can reduce the investment’s value.  
 
-É importante combinar seu perfil de investidor (conservador, moderado ou agressivo) com a escolha da aplicação, para que o risco esteja alinhado ao seu conforto.
-
-## Practical examples
-
-Vamos colocar a teoria em prática usando salários típicos no Brasil. Suponha que você receba R$4.500 por mês e consiga destinar 10 % (R$450) para uma aplicação de renda fixa com rendimento de 6 % ao ano. Em 12 meses, o cálculo simples de juros compostos (juros sobre juros) gera aproximadamente R$28 de ganho, totalizando R$5.478 ao final do ano.  
-
-- **Exemplo 1:** Maria ganha R$3.200 e investe R$200 por mês em um CDB que paga 5,5 % ao ano. Em 2 anos, ela acumula cerca de R$5.200, já que os juros se acumulam mensalmente.  
-- **Exemplo 2:** João recebe R$7.500 e decide aplicar R$500 mensais em um fundo de ações com expectativa de 10 % ao ano. Após 5 anos, o saldo pode chegar a R$38.000, mas ele precisa estar preparado para oscilações anuais.  
-- **Exemplo 3:** Ana tem um salário de R$8.000 e coloca R$1.000 em LCI (isento de imposto) que rende 7 % ao ano. Em 3 anos, ela tem R$38.500, aproveitando a isenção fiscal para melhorar o retorno líquido.  
-
-**Practical tip:** Sempre calcule o rendimento usando a fórmula de juros compostos para ter uma ideia real do ganho ao longo do tempo.  
-
-**Practical tip:** Se o seu objetivo é ter dinheiro disponível em até 12 meses, prefira aplicações com alta liquidez, como CDBs de curto prazo ou Tesouro Selic.  
-
-**Practical tip:** Diversifique entre renda fixa e variável; assim, você combina segurança com potencial de crescimento.
-
-## How to start
-
-Começar a aplicar não precisa ser complicado. Primeiro, abra uma conta em uma corretora ou banco que ofereça a variedade de produtos que você deseja. Depois, faça um diagnóstico rápido das suas finanças: quanto sobra depois das contas fixas, alimentação e lazer? Esse valor será seu “corte” mensal para investimento. Em seguida, escolha o tipo de aplicação que melhor se encaixa no seu objetivo e perfil.  
-
-- **Abra a conta** em uma instituição confiável (verifique a taxa de administração e a reputação).  
-- **Defina um valor mensal** que não comprometa seu orçamento; mesmo R$100 já fazem diferença ao longo dos anos.  
-- **Selecione o produto** (CDB, Tesouro Direto, fundo, etc.) e confirme a taxa de rendimento.  
-- **Acompanhe** periodicamente, mas evite retirar o dinheiro antes do prazo, a menos que seja realmente necessário.  
-
-Lembre‑se de que a disciplina de aportar regularmente é o maior aliado para transformar pequenos valores em um patrimônio significativo.
-
-## Start today
-
-Não espere o próximo salário para começar a fazer seu dinheiro
-
+It’s important to match your investor profile (conservative, moderate, or

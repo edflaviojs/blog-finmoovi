@@ -9,54 +9,54 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es Patrimônio Líquido?
+## ¿Qué es Patrimonio Neto?
 
-Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem menos tudo que você deve. É o número mais importante das suas finanças pessoais — mostra sua riqueza real.
+Patrimonio Neto = Activos - Pasivos. En otras palabras: todo lo que tienes menos todo lo que debes. Es el número más importante de tus finanzas personales — muestra tu riqueza real.
 
 ## ¿Cómo calcular?
 
-### Seus Ativos (o que você tem)
+### Tus Activos (lo que tienes)
 
-- Dinheiro em conta e investimentos
-- Imóveis ([valor](/es/glossario/es-valor-financeiro) de mercado)
-- Veículos (valor de mercado)
-- Outros bens de valor
+- Dinero en cuenta e inversiones
+- Inmuebles ([valor](/es/glossario/es-valor-financeiro) de mercado)
+- Vehículos (valor de mercado)
+- Otros bienes de valor
 
-### Seus Passivos (o que você deve)
+### Tus Pasivos (lo que debes)
 
-- Financiamento imobiliário (saldo devedor)
-- Financiamento de veículo
-- Empréstimos pessoais
-- Cartão de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) (fatura em aberto)
-- Outras dívidas
+- Financiación inmobiliaria (saldo deudor)
+- Financiación de vehículo
+- Préstamos personales
+- Tarjeta de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) (factura abierta)
+- Otras deudas
 
-### Exemplo
+### Ejemplo
 
-| Ativos | Valor |
+| Activos | Valor |
 |--------|-------|
-| Investimentos | R$ 50.000 |
-| Imóvel | R$ 300.000 |
-| Carro | R$ 40.000 |
-| **Total Ativos** | **R$ 390.000** |
+| Inversiones | R$ 50.000 |
+| Inmueble | R$ 300.000 |
+| Auto | R$ 40.000 |
+| **Total Activos** | **R$ 390.000** |
 
-| Passivos | Valor |
+| Pasivos | Valor |
 |----------|-------|
-| Financiamento imóvel | R$ 200.000 |
-| Financiamento carro | R$ 25.000 |
-| **Total Passivos** | **R$ 225.000** |
+| Financiación inmueble | R$ 200.000 |
+| Financiación auto | R$ 25.000 |
+| **Total Pasivos** | **R$ 225.000** |
 
-**Patrimônio Líquido = R$ 390.000 - R$ 225.000 = R$ 165.000**
+**Patrimonio Neto = R$ 390.000 - R$ 225.000 = R$ 165.000**
 
-## Por que acompanhar
+## Por qué seguir
 
-- Mostra se você está enriquecendo ou empobrecendo
-- Permite definir metas concretas (ex: "quero R$ 1 milhão em patrimônio")
-- Revela se suas dívidas estão sob controle
-- É mais importante que salário (renda alta com dívidas altas = patrimônio baixo)
+- Muestra si estás enriqueciendo o empobreciendo
+- Permite definir metas concretas (ej: "quiero R$ 1 millón en patrimonio")
+- Revela si tus deudas están bajo control
+- Es más importante que el salario (ingresos altos con deudas altas = patrimonio bajo)
 
-## Meta de patrimônio por idade (referência)
+## Meta de patrimonio por edad (referencia)
 
-- 30 anos: 1x seu salário anual
-- 40 anos: 3x seu salário anual
-- 50 anos: 6x seu salário anual
-- 60 anos: 8x seu salário anual
+- 30 años: 1x tu salario anual
+- 40 años: 3x tu salario anual
+- 50 años: 6x tu salario anual
+- 60 años: 8x tu salario anual

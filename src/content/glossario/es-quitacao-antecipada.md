@@ -9,41 +9,41 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es Quitação Antecipada?
+## ¿Qué es Pago Anticipado?
 
-Quitação antecipada é pagar uma dívida (financiamento, empréstimo, consórcio) antes do prazo final. Quando você faz isso, tem direito a desconto nos [juros](/es/glossario/es-juros) que seriam cobrados no futuro. É um direito garantido pelo Código de Defesa do Consumidor.
+El pago anticipado es pagar una deuda (financiación, préstamo, consorcio) antes del plazo final. Cuando haces esto, tienes derecho a un descuento en los [juros](/es/glossario/es-juros) que se cobrarían en el futuro. Es un derecho garantizado por el Código de Defensa del Consumidor.
 
-## Seus direitos
+## Tus derechos
 
-- Você pode quitar qualquer dívida antecipadamente
-- O banco é obrigado a dar desconto proporcional nos juros
-- Não pode cobrar multa por quitação antecipada
-- Pode ser parcial (amortizar) ou total (quitar tudo)
+- Puedes pagar cualquier deuda anticipadamente
+- El banco está obligado a dar un descuento proporcional en los intereses
+- No puede cobrar multa por pago anticipado
+- Puede ser parcial (amortizar) o total (pagar todo)
 
-## Quanto economiza
+## Cuánto ahorras
 
-Exemplo: financiamento de R$ 200.000 em 30 anos a 10% a.a.
-- Total que pagaria: ~R$ 632.000
-- Se quitar em 15 anos: ~R$ 387.000
-- **Economia: R$ 245.000** (quase o [valor](/es/glossario/es-valor-financeiro) do imóvel!)
+Ejemplo: financiación de R$ 200.000 en 30 años al 10% a.a.
+- Total que pagaría: ~R$ 632.000
+- Si paga en 15 años: ~R$ 387.000
+- **Ahorro: R$ 245.000** (¡casi el [valor](/es/glossario/es-valor-financeiro) de la propiedad!)
 
-## Quando vale a pena quitar
+## Cuándo vale la pena pagar
 
-✅ Vale a pena:
-- Juros da dívida são maiores que rendimento dos investimentos
-- Financiamento imobiliário com [taxa](/es/glossario/es-taxa-financeira) alta (>9% a.a.)
-- Empréstimos pessoais e consignados
-- Quando tem dinheiro parado rendendo menos
+✅ Vale la pena:
+- Los intereses de la deuda son mayores que el rendimiento de las inversiones
+- Financiación inmobiliaria con [taxa](/es/glossario/es-taxa-financeira) alta (>9% a.a.)
+- Préstamos personales y consignados
+- Cuando tienes dinero parado rindiendo menos
 
-❌ Não vale a pena:
-- Juros da dívida são menores que seus investimentos rendem
-- Financiamento com taxa muito baixa (<7% a.a.)
-- Se vai ficar sem reserva de emergência
+❌ No vale la pena:
+- Los intereses de la deuda son menores que el rendimiento de tus inversiones
+- Financiación con tasa muy baja (<7% a.a.)
+- Si vas a quedarte sin reserva de emergencia
 
-## Como fazer
+## Cómo hacerlo
 
-1. Ligue para o banco ou acesse o app
-2. Peça simulação de quitação antecipada
-3. Compare o desconto oferecido
-4. Se concordar, efetue o pagamento
-5. Peça comprovante de quitação por escrito
+1. Llama al banco o accede a la app
+2. Solicita simulación de pago anticipado
+3. Compara el descuento ofrecido
+4. Si estás de acuerdo, realiza el pago
+5. Solicita comprobante de pago por escrito

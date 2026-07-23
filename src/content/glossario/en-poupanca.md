@@ -19,71 +19,66 @@ seo:
 
 ## What it is
 
-A poupança é a conta de depósito mais conhecida no Brasil. Ela funciona como um “cofrinho” bancário que rende [juros](/en/glossario/en-juros) mensais e ainda protege o dinheiro contra a inflação mínima. Diferente de um investimento em [ações](/en/glossario/en-acoes) ou [fundos](/en/glossario/en-fundo-de-investimento), a poupança tem regras bem simples: você deposita, o banco paga um percentual definido e você pode retirar a qualquer momento, sem multas.
+A poupança is the most well‑known deposit account in Brazil. It works like a bank “piggy bank” that yields **[interest](/en/glossario/en-juros)** monthly and also protects the money against minimal inflation. Unlike an investment in **[stocks](/en/glossario/en-acoes)** or **[funds](/en/glossario/en-fundo-de-investimento)**, the poupança has very simple rules: you deposit, the bank pays a defined percentage, and you can withdraw at any time without penalties.
 
 ![What it is](/images/glossario/poupanca-inline-1.webp)
 
-
-
-- **Rendimento:** a taxa é calculada com base na taxa [Selic](/en/glossario/en-selic) (taxa básica de juros) e na Taxa Referencial (TR), que costuma ficar próxima de zero.
-- **Garantia:** o Fundo Garantidor de Créditos (FGC) cobre até R$250 mil por pessoa, caso o banco quebre.
-- **Liquidez:** o dinheiro fica disponível no mesmo dia útil, o que a torna ideal para emergências.
+- **Yield:** the rate is calculated based on the **[Selic](/en/glossario/en-selic)** rate (the basic interest rate) and the Reference Rate (TR), which usually stays close to zero.  
+- **Guarantee:** the Credit Guarantee Fund (FGC) covers up to R$250 mil per person if the bank fails.  
+- **Liquidity:** the money becomes available on the same business day, making it ideal for emergencies.
 
 ## How it works
 
-Quando você abre uma conta poupança, o banco registra o saldo e aplica a taxa de juros mensal. O cálculo é feito assim: se a Selic estiver acima de 8,5 % ao ano, a poupança paga 0,5 % ao mês + TR; se estiver abaixo, paga 70 % da Selic + TR. A TR costuma ser zero, então o rendimento real costuma ficar entre 0,5 % e 0,7 % ao mês.
+When you open a poupança account, the bank records the balance and applies the monthly interest rate. The calculation works like this: if the Selic is above 8.5 % per year, the poupança pays 0.5 % per month + TR; if it is below, it pays 70 % of the Selic + TR. The TR is usually zero, so the real return typically falls between 0.5 % and 0.7 % per month.
 
-- **Depósito:** basta transferir dinheiro da conta corrente ou fazer um depósito em dinheiro.
-- **Capitalização:** os juros são creditados no último dia útil de cada mês e entram no saldo para gerar novos juros (juros compostos).
-- **Resgate:** você pode retirar tudo ou parte do valor a qualquer momento, usando o caixa eletrônico, internet banking ou aplicativo do banco.
+- **Deposit:** simply transfer money from your checking account or make a cash deposit.  
+- **Capitalization:** interest is credited on the last business day of each month and added to the balance to generate new interest (compound interest).  
+- **Redemption:** you can withdraw all or part of the amount at any time, using an ATM, internet banking, or the bank’s app.
 
 ## Advantages
 
-A poupança tem alguns pontos fortes que a deixam no topo da lista de quem quer guardar dinheiro sem complicação.
+The poupança has a few strong points that keep it at the top of the list for people who want to save money without hassle.
 
 ![Advantages](/images/glossario/poupanca-inline-3.webp)
 
-
-
-- **Segurança:** o FGC protege seu dinheiro até R$250 mil por instituição.
-- **Facilidade:** abrir a conta costuma levar poucos minutos, e não há taxa de manutenção.
-- **Liquidez imediata:** o saldo fica disponível no mesmo dia, perfeito para emergências como conserto de carro ou despesa médica inesperada.
-- **Isenção de [imposto de renda](/en/glossario/en-imposto-de-renda):** ao contrário de muitos investimentos, a poupança não cobra IR (Imposto de Renda) sobre os rendimentos.
+- **Safety:** the FGC protects your money up to R$250 mil per institution.  
+- **Ease:** opening the account usually takes only a few minutes, and there is no maintenance fee.  
+- **Immediate liquidity:** the balance is available on the same day, perfect for emergencies like a car repair or an unexpected medical expense.  
+- **Income‑tax exemption:** unlike many investments, the poupança does not charge **[income tax](/en/glossario/en-imposto-de-renda)** on the earnings.
 
 ## Risks
 
-Mesmo sendo “segura”, a poupança tem limitações que podem comprometer seu objetivo de fazer o dinheiro crescer.
+Even though it is “safe,” the poupança has limitations that can compromise your goal of growing money.
 
-- **Rendimento baixo:** quando a Selic está em patamares menores, a taxa da poupança pode ficar abaixo da inflação, fazendo o poder de compra diminuir.
-- **Oportunidade perdida:** ao deixar todo o dinheiro na poupança, você perde a chance de investir em opções com retornos maiores, como CDBs, [Tesouro Direto](/en/glossario/en-tesouro-direto) ou fundos de renda fixa.
-- **Dependência de política monetária:** mudanças na taxa Selic afetam diretamente o rendimento, então períodos de juros baixos reduzem o ganho.
+- **Low yield:** when the Selic is at lower levels, the poupança rate can fall below inflation, reducing purchasing power.  
+- **Missed opportunity:** keeping all your money in the poupança means you miss the chance to invest in higher‑return options such as CDBs, **[Tesouro Direto](/en/glossario/en-tesouro-direto)**, or fixed‑income funds.  
+- **Dependence on monetary policy:** changes in the Selic rate affect the yield directly, so periods of low interest rates shrink the gain.
 
 ## Practical examples
 
-Imagine que você ganha R$4.500 por mês e decide guardar 10 % (R$450) na poupança. Se a taxa mensal for 0,5 %, após um ano você terá:
+Imagine you earn R$4,500 per month and decide to save 10 % (R$450) in the poupança. If the monthly rate is 0.5 %, after one year you will have:
 
-- Saldo inicial: R$0
-- Depósito mensal: R$450
-- Rendimento mensal: 0,5 % sobre o saldo acumulado
-- Valor ao final de 12 meses: aproximadamente R$5.580
+- Starting balance: R$0  
+- Monthly deposit: R$450  
+- Monthly yield: 0.5 % on the accumulated balance  
+- Value after 12 months: approximately R$5,580  
 
-Agora, considere um salário de R$7.200 e a decisão de destinar 15 % (R$1.080) para a poupança. Com a mesma taxa, ao fim de 12 meses o total será cerca de R$13.400. Esses números mostram que, mesmo com rendimento baixo, a disciplina de poupar gera um acréscimo significativo ao longo do tempo.
+Now, consider a salary of R$7,200 and the decision to allocate 15 % (R$1,080) to the poupança. With the same rate, after 12 months the total will be about R$13,400. These numbers show that, even with a low yield, the discipline of saving adds a significant amount over time.
 
-**Practical tip:** **Faça um “corte” de 5 % nas despesas supérfluas (como aquele café diário) e direcione esse valor direto para a poupança; o efeito acumulado é surpreendente.**  
-**Practical tip:** **Use o aplicativo do seu banco (por exemplo, o app do Banco do Brasil) para programar transferências automáticas logo após o pagamento do salário; assim você não esquece de poupar.**  
-**Practical tip:** **Reavalie o rendimento a cada seis meses; se a taxa da poupança ficar muito abaixo da inflação, considere migrar parte do dinheiro para um CDB de liquidez diária que pague mais.**
+**Practical tip:** **Cut 5 % of your discretionary expenses (like that daily coffee) and direct that amount straight to the poupança; the cumulative effect is surprising.**  
+**Practical tip:** **Use your bank’s app (for example, the Banco do Brasil app) to schedule automatic transfers right after your paycheck arrives; that way you won’t forget to save.**  
+**Practical tip:** **Reassess the yield every six months; if the poupança rate falls far below inflation, consider moving part of the money to a daily‑liquidity CDB that pays more.**
 
 ## How to start
 
-Abrir uma poupança é tão simples quanto abrir uma conta corrente. Siga estes passos:
+Opening a poupança is as simple as opening a checking account. Follow these steps:
 
-- **Escolha o banco:** prefira instituições que você já utiliza no dia a dia, pois isso facilita a transferência de recursos.
-- **Leve documentos:** CPF, RG e comprovante de residência são suficientes; alguns bancos aceitam abertura totalmente online.
-- **Defina o valor inicial:** não há valor mínimo, mas começar com pelo menos R$100 já gera rendimento.
-- **Configure a transferência automática:** no internet banking ou no app do banco, programe o débito automático logo após o crédito do salário.
-- **Acompanhe o extrato:** verifique mensalmente o rendimento e compare com a inflação (IPCA) para saber se o dinheiro está realmente crescendo.
+- **Choose the bank:** prefer institutions you already use daily, as this makes moving funds easier.  
+- **Bring documents:** CPF, RG, and proof of residence are enough; some banks allow fully online opening.  
+- **Set the initial amount:** there is no minimum, but starting with at least R$100 already generates yield.  
+- **Set up automatic transfer:** in internet banking or the bank’s app, schedule the automatic debit right after your salary credit.  
+- **Monitor the statement:** check the yield monthly and compare it with inflation (IPCA) to see if the money is truly growing.
 
 ## Start today
 
-Não espere o próximo mês para colocar o plano em prática. Abra sua conta poupança agora, programe a primeira transferência e sinta a tranquilidade de ter um dinheiro guardado, rendendo e pronto para ser usado quando precisar. Cada real que você deposita hoje é um passo a mais rumo à segurança financeira. Vamos lá?
-
+Don’t wait until next month to put the plan into action. Open your poupança account now, schedule the first transfer, and feel the peace of having money saved, earning, and ready to use when you need it. Every real you deposit today is one step closer to financial security. Let’s go!

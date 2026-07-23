@@ -18,56 +18,51 @@ seo:
 ---
 
 ## What it is
-A bolsa de valores, também conhecida como mercado de [ações](/en/glossario/en-acoes), é um local onde as pessoas compram e vendem pequenas partes de empresas, conhecidas como ações. Imagine que você é dono de uma pequena parte de uma empresa, como a [Nubank](/en/glossario/en-nubank) ou a Magazine Luiza. Quando a empresa vai bem, o [valor](/en/glossario/en-valor-financeiro) da sua ação aumenta, e você pode vendê-la por um preço mais alto do que o que pagou. É como ter uma pequena parte de um negócio que pode crescer e gerar lucros.
+The stock exchange, also known as the market for [ações](/en/glossario/en-acoes), is a place where people buy and sell small pieces of companies, known as stocks. Imagine you own a small piece of a company, like [Nubank](/en/glossario/en-nubank) or Magazine Luiza. When the company does well, the [valor](/en/glossario/en-valor-financeiro) of your stock rises, and you can sell it for a higher price than you paid. It’s like having a small share of a business that can grow and generate profits.
 
-* Ações: pequenas partes de empresas que podem ser compradas e vendidas
-* Títulos: documentos que representam a propriedade de ações ou outros investimentos
-* Índices: medidas do desempenho do mercado de ações, como o Ibovespa
+* Ações: small pieces of companies that can be bought and sold
+* Títulos: documents that represent ownership of stocks or other investments
+* Índices: measures of the performance of the stock market, such as the Ibovespa
 
 ![What it is](/images/glossario/bolsa-de-valores-inline-1.webp)
 
-
-
-A bolsa de valores é um lugar onde as pessoas podem comprar e vender ações, títulos e outros investimentos. É como um grande mercado onde as pessoas trocam dinheiro por pequenas partes de empresas.
+The stock exchange is a place where people can buy and sell stocks, bonds, and other investments. It’s like a big marketplace where people exchange money for small pieces of companies.
 
 ## How it works
-A bolsa de valores funciona como um leilão, onde as pessoas oferecem preços para comprar ou vender ações. O preço das ações é determinado pela oferta e demanda, ou seja, pelo número de pessoas que querem comprar ou vender ações. Quando muitas pessoas querem comprar ações de uma empresa, o preço aumenta. Quando muitas pessoas querem vender ações, o preço diminui.
+The stock exchange works like an auction, where people submit prices to buy or sell stocks. The price of stocks is determined by supply and demand, that is, by the number of people who want to buy or sell stocks. When many people want to buy a company’s stocks, the price goes up. When many people want to sell stocks, the price goes down.
 
-**Practical tip:** É importante lembrar que o preço das ações pode variar rapidamente, então é fundamental fazer uma pesquisa e entender o mercado antes de investir. Por exemplo, se você tem um salário de R$ 5.000 por mês e quer investir R$ 1.000 por mês, é importante escolher ações de empresas sólidas e com um histórico de crescimento.
+**Practical tip:** It’s important to remember that stock prices can change quickly, so it’s essential to do research and understand the market before investing. For example, if you earn R$ 5.000 per month and want to invest R$ 1.000 per month, it’s important to choose stocks of solid companies with a growth history.
 
 ## Advantages
-Investir na bolsa de valores pode ser uma ótima maneira de crescer seu patrimônio ao longo do tempo. Aqui estão algumas vantagens de investir na bolsa de valores:
-* Possibilidade de altos retornos: as ações podem aumentar de valor rapidamente, gerando lucros significativos
-* [Diversificação](/en/glossario/en-diversificacao): investir na bolsa de valores permite diversificar seu portfólio, reduzindo o risco de perda
-* Liquidez: as ações podem ser compradas e vendidas rapidamente, permitindo que você acesse seu dinheiro quando necessário
+Investing in the stock exchange can be a great way to grow your wealth over time. Here are some advantages of investing in the stock exchange:
+* Potential for high returns: stocks can increase in value quickly, generating significant profits
+* [Diversificação](/en/glossario/en-diversificacao): investing in the stock exchange allows you to diversify your portfolio, reducing the risk of loss
+* Liquidity: stocks can be bought and sold quickly, allowing you to access your money when needed
 
-**Practical tip:** É importante diversificar seu portfólio, investindo em diferentes tipos de ações e setores. Por exemplo, se você investe R$ 1.000 por mês em ações de empresas de tecnologia, é uma boa ideia também investir em ações de empresas de outros setores, como saúde ou finanças.
+**Practical tip:** It’s important to diversify your portfolio by investing in different types of stocks and sectors. For example, if you invest R$ 1.000 per month in technology company stocks, it’s a good idea to also invest in stocks of companies in other sectors, such as health or finance.
 
 ![Advantages](/images/glossario/bolsa-de-valores-inline-3.webp)
 
-
-
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-No entanto, investir na bolsa de valores também envolve riscos. Aqui estão alguns dos principais riscos:
-* Perda de valor: as ações podem diminuir de valor, resultando em perdas significativas
-* Volatilidade: o preço das ações pode variar rapidamente, tornando difícil prever o desempenho do mercado
-* Risco de empresa: as empresas podem ter problemas financeiros ou operacionais, afetando o valor de suas ações
+However, investing in the stock exchange also involves risks. Here are some of the main risks:
+* Loss of value: stocks can decrease in value, resulting in significant losses
+* Volatility: stock prices can change quickly, making it hard to predict market performance
+* Company risk: companies can have financial or operational problems, affecting the value of their stocks
 
-**Practical tip:** É fundamental entender os riscos envolvidos e ter um plano de investimento claro. Por exemplo, se você tem um salário de R$ 3.000 por mês e quer investir R$ 500 por mês, é importante definir um objetivo de investimento e um prazo para alcançá-lo.
+**Practical tip:** It’s essential to understand the risks involved and have a clear investment plan. For example, if you earn R$ 3.000 per month and want to invest R$ 500 per month, it’s important to set an investment goal and a timeline to achieve it.
 
 ## Practical examples
-Aqui estão alguns exemplos práticos de como investir na bolsa de valores pode funcionar:
-* Se você investe R$ 1.000 por mês em ações de uma empresa de tecnologia e o preço das ações aumenta 10% ao ano, você pode ter um retorno de R$ 1.100 após um ano.
-* Se você investe R$ 500 por mês em ações de uma empresa de saúde e o preço das ações aumenta 5% ao ano, você pode ter um retorno de R$ 550 após um ano.
+Here are some practical examples of how investing in the stock exchange can work:
+* If you invest R$ 1.000 per month in a technology company’s stocks and the stock price rises 10% per year, you could have a return of R$ 1.100 after one year.
+* If you invest R$ 500 per month in a health company’s stocks and the stock price rises 5% per year, you could have a return of R$ 550 after one year.
 
 ## How to start
-Para começar a investir na bolsa de valores, é importante seguir alguns passos:
-* Abra uma conta em uma corretora de valores: é necessário ter uma conta em uma corretora de valores para comprar e vender ações
-* Defina seu objetivo de investimento: é fundamental definir um objetivo de investimento claro e um prazo para alcançá-lo
-* Faça uma pesquisa: é importante fazer uma pesquisa e entender o mercado antes de investir
+To start investing in the stock exchange, it’s important to follow a few steps:
+* Open an account with a brokerage: you need a brokerage account to buy and sell stocks
+* Define your investment goal: it’s essential to set a clear investment objective and a timeline to achieve it
+* Do research: it’s important to research and understand the market before investing
 
-**Practical tip:** É uma boa ideia começar com uma quantia pequena e aumentar gradualmente. Por exemplo, se você tem um salário de R$ 8.000 por mês, é uma boa ideia começar investindo R$ 500 por mês e aumentar para R$ 1.000 por mês após alguns meses.
+**Practical tip:** It’s a good idea to start with a small amount and increase gradually. For example, if you earn R$ 8.000 per month, it’s a good idea to start investing R$ 500 per month and raise it to R$ 1.000 per month after a few months.
 
 ## Start today
-Agora que você entendeu o que é a bolsa de valores e como funciona, é hora de começar a investir. Lembre-se de que investir na bolsa de valores envolve riscos, mas também pode ser uma ótima maneira de crescer seu patrimônio ao longo do tempo. **Practical tip:** Não hesite em buscar ajuda de um profissional financeiro se você não tem certeza de como começar. Com um pouco de pesquisa e planejamento, você pode começar a investir na bolsa de valores e alcançar seus objetivos financeiros.
-
+Now that you understand what the stock exchange is and how it works, it’s time to start investing. Remember that investing in the stock exchange involves risks, but it can also be a great way to grow your wealth over time. **Practical tip:** Don’t hesitate to seek help from a financial professional if you’re not sure how to start. With a bit of research and planning, you can start investing in the stock exchange and achieve your financial goals.

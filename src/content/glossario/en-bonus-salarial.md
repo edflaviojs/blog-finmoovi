@@ -19,71 +19,66 @@ seo:
 
 ## What it is
 
-Bônus é um pagamento extra que a empresa oferece ao colaborador, normalmente ligado ao desempenho individual ou ao alcance de metas da companhia. Não faz parte do salário fixo, mas aparece como um “plus” no contracheque. Em termos simples, pense no bônus como um presente de Natal que pode chegar em qualquer época do ano, desde que você tenha cumprido certas condições.
+Bonus is an extra payment that the company offers to the employee, usually tied to individual performance or the achievement of company goals. It is not part of the fixed salary, but appears as a “plus” on the payslip. In simple terms, think of the bonus as a Christmas present that can arrive at any time of the year, as long as you have met certain conditions.
 
 ![What it is](/images/glossario/bonus-inline-1.webp)
 
-
-
-- Pode ser pago em dinheiro, [ações](/en/glossario/en-acoes) ou até benefícios como viagens.
-- Geralmente é calculado como um percentual do salário ou como um [valor](/en/glossario/en-valor-financeiro) fixo pré‑definido.
-- O pagamento pode ser único (por exemplo, ao fechar um grande contrato) ou recorrente (mensal, trimestral).
+- Can be paid in cash, [shares](/en/glossario/en-acoes) or even benefits such as trips.  
+- Usually calculated as a percentage of the salary or as a predefined fixed [value](/en/glossario/en-valor-financeiro).  
+- The payment can be one‑off (for example, when closing a large contract) or recurring (monthly, quarterly).
 
 ## How it works
 
-A lógica do bônus começa com metas claras. A empresa define objetivos – como aumento de vendas, redução de custos ou entrega de projetos – e atribui um valor ao cumprimento desses objetivos. Quando o colaborador atinge ou supera a meta, o bônus é liberado. O cálculo costuma seguir uma fórmula simples: **Bônus = Salário base × Percentual de atingimento**. Se o percentual for 20 % e o salário for R$5.000, o bônus será R$1.000.
+The logic of the bonus starts with clear goals. The company defines objectives – such as sales increase, cost reduction, or project delivery – and assigns a value to meeting those objectives. When the employee meets or exceeds the goal, the bonus is released. The calculation usually follows a simple formula: **Bonus = Base salary × Achievement percentage**. If the percentage is 20 % and the salary is R$5.000, the bonus will be R$1.000.
 
-- **Meta de vendas:** 10 % de aumento nas vendas gera 5 % de bônus sobre o salário.
-- **Projeto entregue no prazo:** bônus fixo de R$800.
-- **Participação nos lucros:** distribuição proporcional ao lucro da empresa, calculada em reais.
+- **Sales target:** 10 % increase in sales generates 5 % bonus on the salary.  
+- **Project delivered on time:** fixed bonus of R$800.  
+- **Profit sharing:** proportional distribution of the company’s profit, calculated in reais.
 
 ## Advantages
 
-Os bônus trazem benefícios tanto para a empresa quanto para o trabalhador. Para a empresa, eles são uma ferramenta de motivação que alinha os interesses dos colaboradores com os objetivos estratégicos. Para o colaborador, o bônus aumenta a renda sem alterar o contrato de trabalho, permitindo melhorar o padrão de vida ou investir em sonhos.
+Bonuses bring benefits both to the company and to the worker. For the company, they are a motivation tool that aligns employee interests with strategic objectives. For the employee, the bonus increases income without changing the employment contract, allowing an improvement in living standards or investment in dreams.
 
 ![Advantages](/images/glossario/bonus-inline-3.webp)
 
-
-
-- **Motivação:** aumenta o engajamento ao tornar metas tangíveis.
-- **Flexibilidade financeira:** permite usar o dinheiro extra para quitar dívidas ou fazer investimentos.
-- **Reconhecimento:** demonstra que a empresa valoriza o esforço individual.
+- **Motivation:** increases engagement by making goals tangible.  
+- **Financial flexibility:** allows using the extra money to pay off debts or make investments.  
+- **Recognition:** shows that the company values individual effort.
 
 ## Risks
 
-Apesar das vantagens, o bônus também tem pontos de atenção. Primeiro, ele pode criar dependência: ao contar com o extra, o colaborador pode subestimar a importância do salário fixo. Segundo, a variabilidade pode gerar instabilidade financeira se o bônus não for garantido. Por fim, metas mal definidas podem gerar competição interna excessiva ou até práticas antiéticas.
+Despite the advantages, the bonus also has points of attention. First, it can create dependence: by counting on the extra, the employee may underestimate the importance of the fixed salary. Second, variability can generate financial instability if the bonus is not guaranteed. Finally, poorly defined goals can generate excessive internal competition or even unethical practices.
 
-- **Instabilidade:** se o bônus for a maior parte da renda, a falta dele em um mês afeta o orçamento.
-- **Pressão excessiva:** metas agressivas podem levar a burnout (esgotamento).
-- **Dependência:** o colaborador pode adiar investimentos importantes esperando o próximo bônus.
+- **Instability:** if the bonus makes up the larger part of income, its absence in a month affects the budget.  
+- **Excessive pressure:** aggressive targets can lead to burnout.  
+- **Dependence:** the employee may postpone important investments waiting for the next bonus.
 
 ## Practical examples
 
-Imagine que você ganha R$4.500 por mês e a empresa oferece um bônus trimestral de 10 % do salário, condicionado ao atingimento de 95 % das metas de vendas. Se você alcançar 100 % das metas, o bônus será:
+Imagine you earn R$4.500 per month and the company offers a quarterly bonus of 10 % of the salary, conditioned on achieving 95 % of sales targets. If you reach 100 % of the targets, the bonus will be:
 
-**Bônus = R$4.500 × 10 % = R$450** por trimestre, totalizando R$1.800 ao ano.
+**Bonus = R$4.500 × 10 % = R$450** per quarter, totaling R$1.800 per year.
 
-Agora, suponha que a empresa tenha um programa de participação nos lucros (PLR) que distribui R$5.000 entre todos os funcionários, proporcional ao salário. Se você ganha R$6.000, sua parte será:
+Now, suppose the company has a profit‑sharing program (PLR) that distributes R$5.000 among all employees, proportional to salary. If you earn R$6.000, your share will be:
 
-**Parte = (R$6.000 / soma dos salários) × R$5.000**. Se a soma dos salários for R$120.000, sua parte será R$250.
+**Share = (R$6.000 / sum of salaries) × R$5.000**. If the sum of salaries is R$120.000, your share will be R$250.
 
-**Practical tip:** **Reserve 30 % do bônus recebido para um fundo de emergência;** assim, você transforma o “presente” em segurança financeira.
+**Practical tip:** **Set aside 30 % of the received bonus for an emergency fund;** this turns the “gift” into financial security.
 
-Outro caso: um colaborador com salário de R$7.200 recebe um bônus de R$1.200 ao fechar um contrato de R$200.000. Ele decide usar 50 % do bônus para pagar a fatura do cartão de crédito (R$600) e investe os outros R$600 em um fundo de [renda fixa](/en/glossario/en-renda-fixa) (rentabilidade, ou retorno financeiro, de 6 % ao ano). Em 12 meses, o investimento renderá aproximadamente R$36, aumentando o ganho total do bônus.
+Another case: an employee with a salary of R$7.200 receives a bonus of R$1.200 for closing a R$200.000 contract. He decides to use 50 % of the bonus to pay the credit‑card bill (R$600) and invests the other R$600 in a fixed‑income fund [fixed income](/en/glossario/en-renda-fixa) (yield, or financial return, of 6 % per year). In 12 months, the investment will yield approximately R$36, increasing the total gain of the bonus.
 
-**Practical tip:** **Se o bônus for em ações, verifique o período de vesting (tempo que você precisa permanecer na empresa para ter direito ao valor);** isso evita surpresas ao tentar vender as ações antes da hora.
+**Practical tip:** **If the bonus is in shares, check the vesting period (the time you need to stay with the company to be entitled to the value);** this avoids surprises when trying to sell the shares too early.
 
 ## How to start
 
-Para quem ainda não recebe bônus, o primeiro passo é entender quais programas a sua empresa oferece. Converse com o RH (Recursos Humanos) ou seu gestor direto e peça o detalhamento das metas e dos critérios de pagamento. Depois, alinhe suas próprias metas pessoais com as da empresa, criando um plano de ação que facilite o atingimento dos objetivos.
+For those who still don’t receive bonuses, the first step is to understand which programs your company offers. Talk to HR (Human Resources) or your direct manager and ask for a breakdown of the goals and payment criteria. Then, align your personal goals with the company’s, creating an action plan that makes achieving the objectives easier.
 
-- **Mapeie as metas:** escreva cada meta, o prazo e o valor do bônus associado.
-- **Monitore o progresso:** use planilhas ou apps de controle de metas (como o Trello) para acompanhar seu desempenho semanal.
-- **Negocie:** se as metas parecerem inalcançáveis, peça ajustes ou um bônus menor, mas garantido.
+- **Map the goals:** write each goal, the deadline, and the associated bonus amount.  
+- **Monitor progress:** use spreadsheets or goal‑tracking apps (like Trello) to track your weekly performance.  
+- **Negotiate:** if the goals seem unattainable, request adjustments or a smaller, but guaranteed, bonus.
 
-**Practical tip:** **Defina um “bônus target” mensal (por exemplo, R$300) e trabalhe nele como se fosse um salário extra;** isso ajuda a manter o foco e a medir o sucesso de forma concreta.
+**Practical tip:** **Set a monthly “bonus target” (for example, R$300) and work toward it as if it were extra salary;** this helps keep focus and measure success concretely.
 
 ## Start today
 
-Não espere o próximo ciclo de avaliação para colocar essas ideias em prática. Revise seu contracheque, identifique se já há algum bônus oculto e comece a planejar como transformar esse dinheiro extra em progresso real para sua vida financeira. Pequenos ajustes hoje podem gerar um salto significativo no seu orçamento nos próximos meses. Vá em frente, converse com seu gestor e dê o primeiro passo rumo a uma renda mais robusta!
-
+Don’t wait for the next evaluation cycle to put these ideas into practice. Review your payslip, identify if there’s already a hidden bonus, and start planning how to turn that extra money into real progress for your financial life. Small adjustments today can generate a significant jump in your budget over the next months. Go ahead, talk to your manager, and take the first step toward a more robust income!

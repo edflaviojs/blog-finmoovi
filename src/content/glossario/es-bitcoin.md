@@ -15,17 +15,17 @@ Bitcoin (BTC) es la primera y más conocida criptomoneda del mundo. Fue creada e
 
 ## ¿Cómo funciona?
 
-- Transacciones son registradas en un libro público llamado **blockchain**
+- Las transacciones son registradas en un libro público llamado **blockchain**
 - No existe un "banco central" del Bitcoin
 - Existe un límite de 21 millones de bitcoins que pueden existir
-- Nuevas unidades son creadas por "mineração" (computadoras resolviendo problemas matemáticos)
+- Nuevas unidades son creadas por "minería" (computadoras resolviendo problemas matemáticos)
 
 ## Bitcoin como [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500)
 
 | Ventaja | Desventaja |
 |----------|-------------|
 | Potencial de alta valorización | [Volatilidad](/es/glossario/es-volatilidade) extrema |
-| Descentralizado | No regulamentado en Brasil |
+| Descentralizado | No regulado en Brasil |
 | Escasez programada | Puede perder 50%+ en meses |
 | Funciona 24/7 | Complejo para iniciantes |
 
@@ -35,6 +35,6 @@ La recomendación general es: **no más del 5% de su patrimonio** en criptomoned
 
 ## ¿Cómo comprar en Brasil?
 
-1. Abra cuenta en una exchange (Mercado Bitcoin, Binance, Foxbit)
+1. Abra una cuenta en una exchange (Mercado Bitcoin, Binance, Foxbit)
 2. Haga un depósito vía [PIX](/es/glossario/es-pix)
 3. Compre la cantidad deseada (puede comprar fracciones)

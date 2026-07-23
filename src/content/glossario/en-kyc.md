@@ -18,48 +18,47 @@ seo:
 ---
 
 ## What it is
-O termo "KYC" é uma sigla em inglês para "Know Your Customer", que em português significa "Conheça Seu Cliente". É um processo utilizado por instituições financeiras para verificar a identidade e a legitimidade de seus clientes, visando prevenir atividades ilícitas, como lavagem de dinheiro e financiamento ao terrorismo. Em resumo, o KYC é uma forma de garantir que as instituições financeiras estejam lidando com pessoas reais e legítimas, e não com criminosos ou fraudadores.
+The term "KYC" is an English acronym for "Know Your Customer", which in Portuguese means "Conheça Seu Cliente". It is a process used by financial institutions to verify the identity and legitimacy of their customers, aiming to prevent illicit activities such as money laundering and terrorist financing. In short, KYC is a way to ensure that financial institutions are dealing with real, legitimate people, not criminals or fraudsters.
 
-Basicamente, o KYC envolve a coleta e verificação de informações pessoais e financeiras dos clientes, como nome, endereço, data de nascimento, número de CPF, renda e ocupação. Essas informações são então verificadas contra bases de dados governamentais e outras fontes para garantir que sejam precisas e atualizadas.
+Basically, KYC involves collecting and verifying personal and financial information from customers, such as name, address, date of birth, CPF number, income, and occupation. This information is then checked against government databases and other sources to ensure it is accurate and up‑to‑date.
 
 ![What it is](/images/glossario/kyc-inline-1.webp)
 
 
 
 ## How it works
-O processo de KYC geralmente começa quando um cliente abre uma conta em uma instituição financeira, como um banco ou uma corretora de valores. O cliente é solicitado a fornecer documentos e informações pessoais, que são então verificados pela instituição. Se as informações forem consideradas legítimas, a conta é aprovada e o cliente pode começar a utilizar os serviços da instituição.
+The KYC process usually starts when a customer opens an account at a financial institution, such as a bank or a brokerage. The customer is asked to provide documents and personal information, which the institution then verifies. If the information is deemed legitimate, the account is approved and the customer can start using the institution’s services.
 
-Aqui estão os principais passos do processo de KYC:
-* Coleta de informações: o cliente fornece documentos e informações pessoais, como nome, endereço e número de CPF.
-* Verificação de identidade: a instituição financeira verifica a identidade do cliente contra bases de dados governamentais e outras fontes.
-* Verificação de legitimidade: a instituição financeira verifica se o cliente é uma pessoa real e legítima, e não um criminoso ou fraudador.
-* Aprovação da conta: se as informações forem consideradas legítimas, a conta é aprovada e o cliente pode começar a utilizar os serviços da instituição.
+Here are the main steps of the KYC process:
+* Information collection: the customer provides documents and personal information, such as name, address, and CPF number.
+* Identity verification: the financial institution checks the customer’s identity against government databases and other sources.
+* Legitimacy verification: the financial institution confirms that the customer is a real, legitimate person, not a criminal or fraudster.
+* Account approval: if the information is considered legitimate, the account is approved and the customer can start using the institution’s services.
 
 ## Advantages
-O processo de KYC tem várias vantagens, tanto para as instituições financeiras quanto para os clientes. **Practical tip:** uma das principais vantagens é a prevenção de atividades ilícitas, como lavagem de dinheiro e financiamento ao terrorismo. Além disso, o KYC ajuda a proteger os clientes contra fraudes e a garantir que suas contas sejam seguras.
+The KYC process has several advantages, both for financial institutions and for customers. **Practical tip:** one of the main advantages is the prevention of illicit activities such as money laundering and terrorist financing. In addition, KYC helps protect customers from fraud and ensures that their accounts are secure.
 
-Outras vantagens do KYC incluem:
-* Redução do risco de fraude: o KYC ajuda a identificar e prevenir fraudes, protegendo os clientes e as instituições financeiras.
-* Melhoria da segurança: o KYC ajuda a garantir que as contas sejam seguras e que os clientes possam utilizar os serviços da instituição com confiança.
-* Conformidade com regulamentações: o KYC ajuda as instituições financeiras a cumprir com as regulamentações governamentais e a evitar multas e penalidades.
+Other advantages of KYC include:
+* Reduced fraud risk: KYC helps identify and prevent fraud, protecting both customers and financial institutions.
+* Improved security: KYC helps ensure that accounts are safe and that customers can use the institution’s services with confidence.
+* Regulatory compliance: KYC helps financial institutions comply with government regulations and avoid fines and penalties.
 
 ![Advantages](/images/glossario/kyc-inline-3.webp)
 
 
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-Embora o KYC seja um processo importante para prevenir atividades ilícitas, também há riscos associados a ele. **Practical tip:** um dos principais riscos é a violação de dados, que pode ocorrer se as informações coletadas forem armazenadas de forma insegura ou se forem acessadas por pessoas não autorizadas.
+Although KYC is an important process for preventing illicit activities, there are also risks associated with it. **Practical tip:** one of the main risks is data breach, which can occur if the collected information is stored insecurely or accessed by unauthorized persons.
 
-Outros riscos incluem:
-* Erros de verificação: se as informações forem verificadas de forma inadequada, pode ocorrer a aprovação de contas de criminosos ou fraudadores.
-* Falta de conformidade: se as instituições financeiras não cumprirem com as regulamentações de KYC, podem enfrentar multas e penalidades.
-* Impacto nos clientes: o processo de KYC pode ser demorado e burocrático, o que pode afetar a experiência do cliente e a sua satisfação com a instituição financeira.
+Other risks include:
+* Verification errors: if information is verified inadequately, criminal or fraudulent accounts may be approved.
+* Lack of compliance: if financial institutions do not meet KYC regulations, they can face fines and penalties.
+* Impact on customers: the KYC process can be time‑consuming and bureaucratic, which may affect the customer experience and satisfaction with the financial institution.
 
 ## Practical examples
-Vamos considerar um exemplo prático. Imagine que você é um trabalhador que ganha R$ 5.000 por mês e deseja abrir uma conta em um banco para depositar seu salário. O banco solicita que você forneça documentos e informações pessoais, como nome, endereço e número de CPF, para realizar o processo de KYC. **Practical tip:** é importante fornecer informações precisas e atualizadas para evitar atrasos ou problemas na aprovação da conta.
+Let's consider a practical example. Imagine you are a worker who earns R$ 5,000 per month and want to open a bank account to deposit your salary. The bank asks you to provide documents and personal information, such as name, address, and CPF number, to carry out the KYC process. **Practical tip:** it is important to provide accurate and up‑to‑date information to avoid delays or problems in account approval.
 
-Outro exemplo é o caso de uma pessoa que deseja investir em [ações](/en/glossario/en-acoes) e precisa abrir uma conta em uma corretora de valores. A corretora solicita que a pessoa forneça informações sobre sua renda e ocupação, para verificar se ela tem capacidade financeira para investir. **Practical tip:** é importante ter uma boa compreensão de seus objetivos financeiros e capacidade de investimento antes de abrir uma conta em uma corretora de valores.
+Another example is a person who wants to invest in [ações](/en/glossario/en-acoes) and needs to open an account at a brokerage. The brokerage asks the person to provide information about their income and occupation, to verify whether they have the financial capacity to invest. **Practical tip:** it is important to have a good understanding of your financial goals and investment capacity before opening an account at a brokerage.
 
 ## Start today
-Agora que você entende o que é o KYC e como ele funciona, é hora de começar a utilizar essas informações para melhorar sua experiência financeira. **Practical tip:** comece verificando se as instituições financeiras que você utiliza cumprem com as regulamentações de KYC e se elas têm uma boa reputação em termos de segurança e conformidade. Além disso, certifique-se de fornecer informações precisas e atualizadas sempre que necessário, para evitar atrasos ou problemas na aprovação de contas. Com essas dicas práticas, você estará mais preparado para lidar com o processo de KYC e para proteger sua segurança financeira.
-
+Now that you understand what KYC is and how it works, it’s time to start using this information to improve your financial experience. **Practical tip:** start by checking whether the financial institutions you use comply with KYC regulations and have a good reputation for security and compliance. Also, make sure to provide accurate and up‑to‑date information whenever needed, to avoid delays or problems in account approvals. With these practical tips, you’ll be better prepared to handle the KYC process and protect your financial security.

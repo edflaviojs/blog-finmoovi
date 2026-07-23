@@ -19,76 +19,71 @@ seo:
 
 ## What it is
 
-Yahoo [Finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) is a free website (e mail app like a “caderninho digital”) that reúne cotações de [ações](/en/glossario/en-acoes), índices, moedas e notícias de economia em um só lugar. Ele funciona como um painel de controle para quem quer acompanhar o dinheiro, seja para investir ou só para entender como o mercado afeta o salário de R$3.000 a R$8.000.  
+Yahoo [Finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) is a free website (email app like a “digital notebook”) that gathers quotes of [ações](/en/glossario/en-acoes), indices, currencies and economic news in one place. It works as a control panel for those who want to track money, whether to invest or just to understand how the market affects a salary of R$3.000 to R$8.000.  
 
 ![What it is](/images/glossario/yahoo-finance-inline-1.webp)
 
-
-
-- Cotações em tempo real (preço atual de ações, dólar, ouro)  
-- Gráficos interativos que mostram a evolução dos preços ao longo de dias, meses ou anos  
-- Notícias e análises de especialistas que explicam o que está acontecendo nos mercados  
-- Ferramentas de comparação que permitem colocar duas ou mais ações lado a lado  
+- Real-time quotes (current price of stocks, dollar, gold)  
+- Interactive charts that show price evolution over days, months or years  
+- News and expert analyses that explain what's happening in the markets  
+- Comparison tools that allow placing two or more stocks side by side  
 
 ## How it works
 
-O portal coleta dados de bolsas de valores, bancos centrais e provedores de notícias, processa tudo e entrega em uma interface simples. Quando você abre a página de uma ação, o site faz uma chamada (request) ao servidor que já tem a informação atualizada; o resultado aparece em segundos.  
+The portal collects data from stock exchanges, central banks and news providers, processes everything and delivers it in a simple interface. When you open a stock’s page, the site makes a request to the server that already has the updated information; the result appears in seconds.  
 
-- **Coleta de dados:** fontes como NYSE, NASDAQ e B3 enviam preços a cada segundo  
-- **Processamento:** algoritmos convertem esses números em gráficos e indicadores (por exemplo, “P/L” = preço dividido pelo lucro)  
-- **Distribuição:** o conteúdo é exibido no seu navegador ou no app, pronto para ser lido  
-- **Atualização:** a cada minuto (ou menos) o site renova as cotações, garantindo que você veja o preço mais recente  
+- **Data collection:** sources like NYSE, NASDAQ and B3 send prices every second  
+- **Processing:** algorithms convert these numbers into charts and indicators (for example, “P/L” = price divided by earnings)  
+- **Distribution:** the content is displayed in your browser or the app, ready to be read  
+- **Update:** every minute (or less) the site refreshes the quotes, ensuring you see the latest price  
 
 ## Advantages
 
-Usar Yahoo Finance traz benefícios práticos que vão além de “ver o preço da ação”.  
+Using Yahoo Finance brings practical benefits that go beyond “seeing the stock price”.  
 
 ![Advantages](/images/glossario/yahoo-finance-inline-3.webp)
 
-
-
-- **Acesso gratuito:** não precisa pagar assinatura nem contratar corretora para consultar cotações básicas  
-- **Centralização:** todas as informações que você precisaria (ações, moedas, notícias) ficam em um único lugar, economizando tempo  
-- **Facilidade de uso:** interface intuitiva, com filtros por setor, país ou tipo de ativo, ideal para quem tem renda mensal entre R$3.000 e R$8.000 e ainda está aprendendo  
-- **Alertas personalizáveis:** você pode configurar notificações para quando uma ação subir ou cair X %  
-- **Integração com apps:** o mesmo conteúdo pode ser visualizado no celular, facilitando o acompanhamento durante a rotina  
+- **Free access:** no need to pay subscription or hire a broker to check basic quotes  
+- **Centralization:** all the information you would need (stocks, currencies, news) is in one place, saving time  
+- **Ease of use:** intuitive interface, with filters by sector, country or asset type, ideal for those with monthly income between R$3.000 and R$8.000 and still learning  
+- **Customizable alerts:** you can set notifications for when a stock rises or falls X %  
+- **App integration:** the same content can be viewed on your phone, making it easier to follow during daily routine  
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-Mesmo sendo uma ferramenta prática, Yahoo Finance tem limitações que podem gerar armadilhas se você não ficar atento.  
+Even though it’s a practical tool, Yahoo Finance has limitations that can create pitfalls if you’re not careful.  
 
-- **Dados de atraso:** em algumas situações (feriados, alta volatilidade) as cotações podem ficar alguns minutos atrasadas, o que pode afetar decisões rápidas de compra ou venda  
-- **Publicidade:** o site exibe anúncios que podem distrair ou levar a ofertas de produtos financeiros sem avaliação prévia  
-- **Dependência de internet:** se a conexão cair, você perde acesso imediato às informações, o que pode ser crítico em momentos de crise  
-- **Informação incompleta:** análises de especialistas são gerais; para decisões específicas, pode ser necessário buscar fontes adicionais ou consultoria profissional  
+- **Delayed data:** in some situations (holidays, high volatility) quotes may be a few minutes delayed, which can affect quick buy or sell decisions  
+- **Advertising:** the site displays ads that can distract or lead to offers of financial products without prior evaluation  
+- **Internet dependency:** if the connection drops, you lose immediate access to information, which can be critical in crisis moments  
+- **Incomplete information:** expert analyses are general; for specific decisions, you may need to seek additional sources or professional advice  
 
 ## Practical examples
 
-Vamos ver como alguém que ganha R$4.500 por mês pode usar o Yahoo Finance no dia a dia.  
+Let's see how someone earning R$4.500 per month can use Yahoo Finance in daily life.  
 
-- **Acompanhamento de investimento:** João investiu R$2.000 em ações da Vale (VALE3). Ele verifica a cotação diariamente no Yahoo Finance; quando a ação sobe 5 % em uma semana, ele decide vender parte para garantir lucro.  
-- **Planejamento de orçamento:** Maria, que recebe R$6.200, acompanha a variação do dólar. Quando o dólar chega a R$5,30, ela compra um cartão pré‑pago para a viagem ao exterior, aproveitando a cotação mais baixa.  
-- **Comparação de [fundos](/en/glossario/en-fundo-de-investimento):** Carlos tem R$8.000 para aplicar em fundos de [renda fixa](/en/glossario/en-renda-fixa). No Yahoo Finance, ele compara a taxa de retorno (rentabilidade) de três fundos diferentes e escolhe o que oferece 0,8 % a mais ao ano, aumentando seu ganho futuro.  
+- **Investment monitoring:** João invested R$2.000 in Vale (VALE3) stocks. He checks the quote daily on Yahoo Finance; when the stock rises 5 % in a week, he decides to sell part to lock in profit.  
+- **Budget planning:** Maria, who receives R$6.200, tracks the dollar variation. When the dollar reaches R$5,30, she buys a prepaid card for an overseas trip, taking advantage of the lower rate.  
+- **Comparison of [fundos](/en/glossario/en-fundo-de-investimento):** Carlos has R$8.000 to allocate to [renda fixa](/en/glossario/en-renda-fixa) funds. On Yahoo Finance, he compares the return rate of three different funds and chooses the one that offers 0,8 % more per year, increasing his future gain.  
 
-**Practical tip:** antes de comprar ou vender, sempre verifique a tendência dos últimos 30 dias no gráfico; isso ajuda a evitar decisões baseadas em picos momentâneos.  
+**Practical tip:** before buying or selling, always check the 30‑day trend on the chart; this helps avoid decisions based on momentary spikes.  
 
-**Practical tip:** configure alertas de preço para as ações que compõem sua carteira; assim você recebe uma notificação no celular assim que o [valor](/en/glossario/en-valor-financeiro) atingir o limite que você definiu.  
+**Practical tip:** set price alerts for the stocks in your portfolio; this way you receive a notification on your phone as soon as the [valor](/en/glossario/en-valor-financeiro) reaches the limit you set.  
 
-**Practical tip:** use a ferramenta de comparação de índices para entender como o seu investimento se comporta em relação ao Ibovespa (principal índice da bolsa brasileira).  
+**Practical tip:** use the index comparison tool to understand how your investment behaves relative to the Ibovespa (the main Brazilian stock index).  
 
 ## How to start
 
-Começar a usar o Yahoo Finance é tão simples quanto abrir um aplicativo de mensagens. Primeiro, crie uma conta gratuita (ou entre com seu Google). Depois, siga estes passos:  
+Starting to use Yahoo Finance is as simple as opening a messaging app. First, create a free account (or sign in with Google). Then follow these steps:  
 
-- Acesse yahoo.com/finance ou baixe o app “Yahoo Finance” na loja do seu celular  
-- Digite o ticker (código) da ação ou fundo que deseja acompanhar, por exemplo “PETR4” para Petrobras  
-- Clique em “Adicionar à lista” para criar sua “watchlist” (lista de observação) com os ativos que mais lhe interessam  
-- Defina alertas de preço: escolha a porcentagem de variação que dispara a notificação  
-- Explore a aba “Notícias” para ficar por dentro de eventos que podem impactar seus investimentos  
+- Access yahoo.com/finance or download the “Yahoo Finance” app from your phone’s store  
+- Enter the ticker (code) of the stock or fund you want to follow, for example “PETR4” for Petrobras  
+- Click “Add to list” to create your “watchlist” with the assets that interest you most  
+- Set price alerts: choose the percentage change that triggers the notification  
+- Explore the “News” tab to stay informed about events that may impact your investments  
 
-Lembre‑se de revisar a sua lista a cada mês e remover ativos que não fazem mais parte da sua estratégia.  
+Remember to review your list each month and remove assets that are no longer part of your strategy.  
 
 ## Start today
 
-Não espere a próxima reunião de família para descobrir como o dinheiro pode trabalhar a seu favor. Abra o Yahoo Finance agora, adicione um ativo que você já conhece e dê o primeiro passo
-
+Don't wait for the next family gathering to discover how money can work for you. Open Yahoo Finance now, add an asset you already know, and take the first step.

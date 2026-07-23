@@ -9,52 +9,52 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es Zona de Conforto Financeira?
+## ¿Qué es la zona de confort financiero?
 
-É o estado onde suas finanças estão organizadas e você não vive com medo do fim do mês. Significa ter: [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) sob controle, reserva de emergência formada, dívidas quitadas e investimentos crescendo.
+Es el estado en el que tus finanzas están organizadas y no vives con miedo al fin de mes. Significa tener: [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) bajo control, reserva de emergencia constituida, deudas pagadas e inversiones creciendo.
 
-## Os 5 pilares da zona de conforto financeira
+## Los 5 pilares de la zona de confort financiero
 
-### 1. Gastos menores que a renda
+### 1. Gastos menores que los ingresos
 
-- Sobra pelo menos 20% do salário
-- Sem uso de cheque especial ou rotativo
+- Sobran al menos el 20 % del salario
+- Sin uso de cheque especial o rotativo
 
-### 2. Reserva de emergência completa
+### 2. Reserva de emergencia completa
 
-- 6 a 12 meses de gastos guardados
-- Em investimento com [liquidez](/es/glossario/es-liquidez) diária
+- 6 a 12 meses de gastos guardados
+- En inversión con [liquidez](/es/glossario/es-liquidez) diaria
 
-### 3. Sem dívidas caras
+### 3. Sin deudas caras
 
-- Zero cheque especial
-- Zero rotativo do cartão
-- Financiamentos sob controle (parcela < 30% da renda)
+- Cheque especial cero
+- Rotativo de la tarjeta cero
+- Financiamientos bajo control (cuota < 30 % de los ingresos)
 
-### 4. Investimentos crescendo
+### 4. Inversiones creciendo
 
-- Aportes mensais regulares
-- Carteira diversificada
-- Rendimento acima da inflação
+- Aportes mensuales regulares
+- Cartera diversificada
+- Rendimiento por encima de la inflación
 
-### 5. Proteção (seguros)
+### 5. Protección (seguros)
 
-- Plano de saúde
-- Seguro de vida (se tem dependentes)
-- Previdência complementar
+- Plan de salud
+- Seguro de vida (si tienes dependientes)
+- Previsión complementaria
 
-## Como chegar lá
+## Cómo llegar allí
 
-1. Monte um [orçamento](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) (saiba para onde vai seu dinheiro)
-2. Quite dívidas caras primeiro
-3. Monte a reserva de emergência
-4. Comece a investir (mesmo que pouco)
-5. Aumente aportes conforme a renda cresce
+1. Elabora un [presupuesto](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) (sabe a dónde va tu dinero)  
+2. Paga primero las deudas caras  
+3. Construye la reserva de emergencia  
+4. Empieza a invertir (aunque sea poco)  
+5. Aumenta los aportes conforme los ingresos crecen  
 
-## Quanto tempo leva?
+## ¿Cuánto tiempo lleva?
 
-Depende da sua situação atual, mas com disciplina:
-- Sair das dívidas: 6-18 meses
-- Montar reserva: 12-24 meses
-- Começar a investir: pode ser simultâneo à reserva
-- Sentir conforto real: 3-5 anos
+Depende de tu situación actual, pero con disciplina:  
+- Salir de deudas: 6‑18 meses  
+- Construir reserva: 12‑24 meses  
+- Empezar a invertir: puede ser simultáneo a la reserva  
+- Sentir comodidad real: 3‑5 años

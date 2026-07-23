@@ -15,27 +15,27 @@ Real Estate Funds are like "investor condominiums" that pool [money](/en/posts/e
 
 ## How does it work?
 
-1. The fund buys properties with the [money](/en/posts/en-avoid-impulse-purchases) from the shareholders
-2. The properties are rented to companies
-3. The rents are distributed monthly to the shareholders
-4. Returns are **exempt from IR** for individuals
+1. The fund buys properties with the [money](/en/posts/en-avoid-impulse-purchases) from the shareholders  
+2. The properties are rented to companies  
+3. The rents are distributed monthly to the shareholders  
+4. Returns are **exempt from IR** for individuals  
 
 ## Advantages
 
-- Tax-free monthly income
-- Invest in properties with little money (from R$ 10)
-- Diversification (a fund can have several properties)
-- [Liquidity](/en/glossario/en-liquidez) (sell instantly on the stock exchange)
-- No need to deal with tenants
+- Tax-free monthly income  
+- Invest in properties with little money (from R$ 10)  
+- Diversification (a fund can have several properties)  
+- [Liquidity](/en/glossario/en-liquidez) (sell instantly on the stock exchange)  
+- No need to deal with tenants  
 
 ## Types of FIIs
 
-| Type | Example | Characteristic |
-|------|---------|---------------|
-| Tijolo | HGLG11 | Physical properties (warehouses) |
-| Papel | KNCR11 | Real estate debt securities |
-| Híbrido | KNRI11 | Mix of tijolo and papel |
-| FOF | BCFF11 | Fund that invests in other FIIs |
+| Type   | Example | Characteristic                         |
+|--------|---------|----------------------------------------|
+| Tijolo | HGLG11  | Physical properties (warehouses)      |
+| Papel  | KNCR11  | Real estate debt securities            |
+| Híbrido| KNRI11  | Mix of tijolo and papel                |
+| FOF    | BCFF11  | Fund that invests in other FIIs        |
 
 ## How much does it [yield](/en/glossario/en-yield)?
 

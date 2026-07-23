@@ -18,41 +18,37 @@ seo:
 ---
 
 ## What it is
-O termo "juros" é comum em nosso dia a dia, especialmente quando falamos sobre empréstimos, investimentos e contas bancárias. Mas, afinal, o que são juros? Em resumo, juros são os valores adicionais que você paga ou recebe em cima de um montante principal, dependendo se você é o tomador do empréstimo ou o investidor. Por exemplo, se você toma um empréstimo de R$ 5.000,00 com juros de 10% ao ano, após um ano, você terá que pagar R$ 5.500,00 (R$ 5.000,00 de principal + R$ 500,00 de juros).
+The term “interest” is common in our daily life, especially when we talk about loans, investments, and bank accounts. But, after all, what is interest? In short, interest is the additional amount you pay or receive on top of a principal amount, depending on whether you are the borrower or the investor. For example, if you take a loan of R$ 5.000,00 with an interest rate of 10% per year, after one year you will have to pay R$ 5.500,00 (R$ 5.000,00 principal + R$ 500,00 interest).
 
-Quando se trata de investimentos, os juros podem ser seus amigos. Imagine que você investe R$ 3.000,00 em uma [aplicação](/en/glossario/en-aplicacao-financeira) que rende 8% ao ano. Após um ano, seu investimento valerá R$ 3.240,00, pois você ganhou R$ 240,00 em juros. É importante entender que os juros podem ser simples ou compostos. Juros simples são calculados apenas sobre o [valor](/en/glossario/en-valor-financeiro) principal, enquanto juros compostos são calculados sobre o principal e sobre os juros anteriores, o que pode fazer seu investimento crescer de forma exponencial com o tempo.
+When it comes to investments, interest can be your friend. Imagine you invest R$ 3.000,00 in a [aplicação](/en/glossario/en-aplicacao-financeira) that yields 8% per year. After one year, your investment will be worth R$ 3.240,00, because you earned R$ 240,00 in interest. It’s important to understand that interest can be simple or compound. Simple interest is calculated only on the [valor](/en/glossario/en-valor-financeiro) principal, while compound interest is calculated on the principal and on previously accrued interest, which can make your investment grow exponentially over time.
 
 ![What it is](/images/glossario/juros-inline-1.webp)
 
-
-
 ## How it works
-Os juros funcionam de acordo com as taxas estabelecidas pelas instituições financeiras, como bancos, e podem variar significativamente dependendo do tipo de empréstimo ou investimento. Além disso, a frequência com que os juros são calculados também pode afetar o resultado final. Por exemplo, juros calculados diariamente e compostos mensalmente podem resultar em um valor maior do que juros calculados anualmente.
+Interest works according to the rates set by financial institutions, such as banks, and can vary significantly depending on the type of loan or investment. In addition, the frequency with which interest is calculated can also affect the final result. For example, interest calculated daily and compounded monthly can result in a higher amount than interest calculated annually.
 
-Para entender melhor, vamos considerar um exemplo prático:
-* Empréstimo de R$ 4.000,00 com juros de 12% ao ano, calculados anualmente.
-* Investimento de R$ 6.000,00 com juros de 9% ao ano, compostos trimestralmente.
-Nesses casos, é crucial calcular os juros para saber exatamente quanto você pagará ou receberá. **Practical tip:** Sempre verifique a taxa de juros e a frequência de composição antes de fechar qualquer negócio financeiro.
+To understand better, let’s consider a practical example:
+* Loan of R$ 4.000,00 with interest of 12% per year, calculated annually.
+* Investment of R$ 6.000,00 with interest of 9% per year, compounded quarterly.
+
+In these cases, it’s crucial to calculate the interest to know exactly how much you will pay or receive. **Practical tip:** Always check the interest rate and the compounding frequency before closing any financial deal.
 
 ## Advantages
-Os juros podem ser benéficos quando você está do lado do investidor. Eles podem aumentar seu patrimônio ao longo do tempo, especialmente se você optar por investimentos de longo prazo com taxas de juros atraentes. Além disso, juros podem ser uma fonte de renda passiva, o que significa que você pode ganhar dinheiro sem precisar trabalhar ativamente por ele.
+Interest can be beneficial when you are on the investor’s side. It can increase your wealth over time, especially if you choose long‑term investments with attractive interest rates. Moreover, interest can be a source of passive income, meaning you can earn money without having to work actively for it.
 
-No entanto, é importante escolher investimentos seguros e que sejam adequados para o seu perfil de risco. **Practical tip:** Diversifique seus investimentos para minimizar riscos. Por exemplo, você pode investir parte do seu dinheiro em títulos de [renda fixa](/en/glossario/en-renda-fixa), como CDBs ou LCI/LCA, e outra parte em [ações](/en/glossario/en-acoes) ou [fundos](/en/glossario/en-fundo-de-investimento) de investimento.
+However, it’s important to choose safe investments that match your risk profile. **Practical tip:** Diversify your investments to minimize risks. For example, you can invest part of your money in fixed‑income securities [renda fixa](/en/glossario/en-renda-fixa), such as CDBs or LCI/LCA, and another part in [ações](/en/glossario/en-acoes) or [fundos](/en/glossario/en-fundo-de-investimento) of investment.
 
 ![Advantages](/images/glossario/juros-inline-3.webp)
 
-
-
 ## Risks
-Do outro lado da [moeda](/en/glossario/en-moeda), os juros também podem ser um risco significativo se você não gerenciar bem suas finanças. Tomar empréstimos com taxas de juros altas pode levar a uma dívida crescente e difícil de pagar. Além disso, investimentos com taxas de juros muito altas podem ser mais arriscados, pois geralmente vêm com um risco maior de perda de capital.
+On the other side of the [moeda](/en/glossario/en-moeda), interest can also be a significant risk if you don’t manage your finances well. Taking loans with high interest rates can lead to a growing and hard‑to‑pay debt. In addition, investments with very high interest rates can be riskier, as they usually come with a higher chance of capital loss.
 
-**Practical tip:** Nunca tome um empréstimo sem ter um plano claro de como pagá-lo. Considere sua renda mensal e reserve uma parte para a quitação da dívida. Por exemplo, se você ganha R$ 5.500,00 por mês e tem um empréstimo de R$ 10.000,00 com juros de 15% ao ano, planeje pagar pelo menos R$ 1.000,00 por mês para evitar que a dívida cresça descontroladamente.
+**Practical tip:** Never take a loan without a clear plan for how to repay it. Consider your monthly income and set aside a portion for debt repayment. For example, if you earn R$ 5.500,00 per month and have a loan of R$ 10.000,00 with interest of 15% per year, plan to pay at least R$ 1.000,00 per month to avoid the debt spiraling out of control.
 
 ## Practical examples
-Vamos considerar alguns exemplos práticos para ilustrar como os juros funcionam na vida real. Imagine que você tem um salário de R$ 4.000,00 por mês e decide investir R$ 1.000,00 por mês em uma aplicação que rende 10% ao ano. Após um ano, você terá investido R$ 12.000,00 e ganhado cerca de R$ 1.200,00 em juros, totalizando R$ 13.200,00.
+Let’s look at some practical examples to illustrate how interest works in real life. Imagine you earn a salary of R$ 4.000,00 per month and decide to invest R$ 1.000,00 each month in an application that yields 10% per year. After one year you will have invested R$ 12.000,00 and earned about R$ 1.200,00 in interest, totaling R$ 13.200,00.
 
-Outro exemplo é se você toma um empréstimo de R$ 8.000,00 com juros de 18% ao ano para pagar uma dívida de cartão de crédito. Se você levar 2 anos para pagar o empréstimo, você terá pago cerca de R$ 2.400,00 em juros, totalizando R$ 10.400,00 pagos (R$ 8.000,00 de principal + R$ 2.400,00 de juros). **Practical tip:** Sempre priorize a quitação de dívidas com taxas de juros altas, como cartões de crédito, o mais rápido possível.
+Another example is if you take a loan of R$ 8.000,00 with interest of 18% per year to pay off a credit‑card debt. If it takes you 2 years to repay the loan, you will have paid about R$ 2.400,00 in interest, totaling R$ 10.400,00 paid (R$ 8.000,00 principal + R$ 2.400,00 interest). **Practical tip:** Always prioritize paying off high‑interest debts, such as credit cards, as quickly as possible.
 
 ## Start today
-Agora que você entende melhor como os juros funcionam, é hora de começar a gerenciar suas finanças de forma mais eficaz. Lembre-se de que os juros podem ser seus amigos ou inimigos, dependendo de como você os utiliza. Com um pouco de conhecimento e planejamento, você pode usar os juros a seu favor e construir um futuro financeiro mais seguro. **Practical tip:** Comece a monitorar suas finanças pessoais com um aplicativo de gestão financeira, como o [nome do app], que pode ajudá-lo a acompanhar seus gastos, investimentos e dívidas de forma fácil e eficiente. Com o controle certo, você estará no caminho para alcançar seus objetivos financeiros.
-
+Now that you understand better how interest works, it’s time to start managing your finances more effectively. Remember that interest can be your friend or your enemy, depending on how you use it. With a bit of knowledge and planning, you can use interest to your advantage and build a more secure financial future. **Practical tip:** Start monitoring your personal finances with a financial‑management app, like [nome do app], which can help you track your spending, investments, and debts easily and efficiently. With the right control, you’ll be on the path to achieving your financial goals.

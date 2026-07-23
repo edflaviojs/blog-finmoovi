@@ -11,45 +11,45 @@ readingTime: 1
 
 ## ¿Qué es Wealth Management?
 
-Wealth Management (gestão de patrimônio) é um serviço financeiro premium que cuida de todos os aspectos da vida financeira de uma pessoa: investimentos, impostos, herança, seguros e planejamento de longo prazo.
+Wealth Management (gestão de patrimônio) es un servicio financiero premium que cuida de todos los aspectos de la vida financiera de una persona: inversiones, impuestos, herencia, seguros y planificación a largo plazo.
 
-## Para quem é
+## Para quién es
 
-Geralmente voltado para pessoas com patrimônio acima de R$ 1 milhão. Mas os conceitos podem ser aplicados por qualquer pessoa:
+Generalmente dirigido a personas con patrimonio superior a R$ 1 millón. Pero los conceptos pueden ser aplicados por cualquier persona:
 
-## Pilares do Wealth Management
+## Pilares del Wealth Management
 
-### 1. Gestão de Investimentos
+### 1. Gestión de Inversiones
 
-- Alocação de ativos personalizada
-- Rebalanceamento periódico
-- Acesso a produtos exclusivos
+- Asignación de activos personalizada
+- Rebalanceo periódico
+- Acceso a productos exclusivos
 
-### 2. Planejamento Tributário
+### 2. Planificación Tributaria
 
-- Minimizar impostos legalmente
-- Escolher melhores estruturas (PF vs. PJ)
-- Timing de vendas para otimizar IR
+- Minimizar impuestos legalmente
+- Elegir mejores estructuras (PF vs. PJ)
+- Timing de ventas para optimizar IR
 
-### 3. Planejamento Sucessório
+### 3. Planificación Sucesoria
 
-- Como transferir patrimônio para herdeiros
+- Cómo transferir patrimonio a los herederos
 - Holding familiar
-- Previdência como ferramenta sucessória
-- Testamento e doações em vida
+- Previsión como herramienta sucesoria
+- Testamento y donaciones en vida
 
-### 4. Proteção Patrimonial
+### 4. Protección Patrimonial
 
-- Seguros adequados
-- Blindagem patrimonial (legal)
-- [Diversificação](/es/glossario/es-diversificacao) geográfica
+- Seguros adecuados
+- Blindaje patrimonial (legal)
+- [Diversificación](/es/glossario/es-diversificacao) geográfica
 
-## Versão acessível (faça você mesmo)
+## Versión accesible (hazlo tú mismo)
 
-Mesmo sem um wealth manager, você pode:
+Incluso sin un wealth manager, puedes:
 
-1. Diversificar investimentos ([renda fixa](/es/glossario/es-renda-fixa) + variável + internacional)
-2. Usar PGBL para reduzir IR
-3. Ter seguros adequados
-4. Manter registros organizados
-5. Usar apps como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) para controle total
+1. Diversificar inversiones ([renda fixa](/es/glossario/es-renda-fixa) + variable + internacional)
+2. Usar PGBL para reducir IR
+3. Tener seguros adecuados
+4. Mantener registros organizados
+5. Usar apps como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) para control total

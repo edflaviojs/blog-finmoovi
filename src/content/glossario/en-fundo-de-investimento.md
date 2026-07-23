@@ -18,50 +18,45 @@ seo:
 ---
 
 ## What it is
-O termo "fundos" é comumente usado no contexto de investimentos financeiros, e se refere a um tipo de investimento coletivo, onde o dinheiro de vários investidores é reunido e aplicado em diferentes ativos, como [ações](/en/glossario/en-acoes), títulos, imóveis, etc. Imagine que você tem R$ 1.000 para investir, mas não sabe exatamente onde aplicar. Em vez de tentar fazer isso sozinho, você pode investir em um fundo que é gerido por profissionais experientes. Eles vão distribuir seu dinheiro em uma variedade de ativos, tentando maximizar os retornos e minimizar os riscos.
+The term “funds” is commonly used in the context of financial investments and refers to a type of collective investment, where the money of many investors is pooled and applied to different assets, such as [ações](/en/glossario/en-acoes), bonds, real estate, etc. Imagine you have R$ 1.000 to invest but don’t know exactly where to apply it. Instead of trying to do it on your own, you can invest in a fund that is managed by experienced professionals. They will allocate your money across a variety of assets, trying to maximize returns and minimize risks.
 
-Os fundos podem ser de diferentes tipos, como fundos de ações, fundos de [renda fixa](/en/glossario/en-renda-fixa), fundos imobiliários, etc. Cada tipo de fundo tem seus próprios objetivos e estratégias de investimento. Por exemplo, um fundo de ações pode investir em empresas que têm potencial de crescimento, enquanto um fundo de renda fixa pode investir em títulos de empresas ou do governo, buscando uma renda estável.
+Funds can be of different types, such as equity funds, [renda fixa](/en/glossario/en-renda-fixa) funds, real‑estate funds, etc. Each type of fund has its own objectives and investment strategies. For example, an equity fund may invest in companies with growth potential, while a fixed‑income fund may invest in corporate or government bonds, seeking stable income.
 
 ![What it is](/images/glossario/fundos-inline-1.webp)
 
-
-
-* Fundos de ações: investem em ações de empresas
-* Fundos de renda fixa: investem em títulos de empresas ou do governo
-* Fundos imobiliários: investem em imóveis ou em empresas do setor imobiliário
+* Equity funds: invest in company stocks
+* Fixed‑income funds: invest in corporate or government bonds
+* Real estate funds: invest in properties or real‑estate sector companies
 
 ## How it works
-Quando você investe em um fundo, você está basicamente comprando uma parte desse fundo. O [valor](/en/glossario/en-valor-financeiro) da sua parte é calculado com base no valor total do fundo e no número de partes que você comprou. Os fundos são geridos por empresas especializadas, que cobram uma [taxa](/en/glossario/en-taxa-financeira) de administração para gerenciar o fundo. Essa taxa é geralmente um percentual do valor total do fundo.
+When you invest in a fund, you are basically buying a piece of that fund. The [valor](/en/glossario/en-valor-financeiro) of your piece is calculated based on the total value of the fund and the number of pieces you purchased. Funds are managed by specialized companies that charge an [taxa](/en/glossario/en-taxa-financeira) administration fee to run the fund. This fee is usually a percentage of the fund’s total value.
 
-Por exemplo, se você investir R$ 5.000 em um fundo de ações, e o fundo tem um valor total de R$ 1 milhão, você é dono de 0,5% desse fundo. Se o fundo valorizar 10% em um mês, o valor da sua parte também aumentará 10%, para R$ 5.500. **Practical tip:** é importante ler o prospecto do fundo antes de investir, para entender como a taxa de administração é cobrada e como o fundo é gerido.
+For example, if you invest R$ 5.000 in an equity fund and the fund has a total value of R$ 1 million, you own 0.5% of that fund. If the fund appreciates 10% in a month, the value of your piece will also increase 10%, to R$ 5.500. **Practical tip:** it’s important to read the fund’s prospectus before investing, to understand how the administration fee is charged and how the fund is managed.
 
 ## Advantages
-Os fundos oferecem várias vantagens para os investidores. Uma das principais vantagens é a [diversificação](/en/glossario/en-diversificacao). Quando você investe em um fundo, você está investindo em uma variedade de ativos, o que pode reduzir o risco de perda. Além disso, os fundos são geridos por profissionais experientes, que têm acesso a informações e recursos que você pode não ter.
+Funds offer several advantages for investors. One of the main advantages is [diversificação](/en/glossario/en-diversificacao). When you invest in a fund, you are investing in a variety of assets, which can reduce the risk of loss. In addition, funds are managed by experienced professionals who have access to information and resources you may not have.
 
-Outra vantagem é a liquidez. Muitos fundos permitem que você resgate seu investimento a qualquer momento, o que pode ser útil se você precisar de dinheiro rapidamente. **Practical tip:** é importante entender as regras de resgate do fundo antes de investir, para evitar surpresas desagradáveis.
+Another advantage is liquidity. Many funds allow you to redeem your investment at any time, which can be useful if you need cash quickly. **Practical tip:** it’s important to understand the fund’s redemption rules before investing, to avoid unpleasant surprises.
 
 ![Advantages](/images/glossario/fundos-inline-3.webp)
 
-
-
-* Diversificação: investir em uma variedade de ativos para reduzir o risco
-* Gerenciamento profissional: os fundos são geridos por profissionais experientes
-* Liquidez: muitos fundos permitem que você resgate seu investimento a qualquer momento
+* Diversification: investing in a variety of assets to reduce risk
+* Professional management: funds are managed by experienced professionals
+* Liquidity: many funds allow you to redeem your investment at any time
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-Como qualquer investimento, os fundos também envolvem riscos. Um dos principais riscos é o risco de perda. Se o fundo investir em ativos que não valorizam, o valor da sua parte pode diminuir. Além disso, os fundos também estão sujeitos a riscos de mercado, como mudanças na economia ou na política.
+Like any investment, funds also involve risks. One of the main risks is loss risk. If the fund invests in assets that do not appreciate, the value of your piece can decrease. In addition, funds are also subject to market risks, such as changes in the economy or politics.
 
-Outro risco é o risco de liquidez. Se muitos investidores decidirem resgatar seu investimento ao mesmo tempo, o fundo pode ter dificuldade em pagar todos os resgates, o que pode afetar o valor da sua parte. **Practical tip:** é importante diversificar seus investimentos, para reduzir o risco de perda.
+Another risk is liquidity risk. If many investors decide to redeem their investment at the same time, the fund may have difficulty paying all redemptions, which can affect the value of your piece. **Practical tip:** it’s important to diversify your investments to reduce loss risk.
 
-* Risco de perda: o valor da sua parte pode diminuir se o fundo não valorizar
-* Risco de mercado: mudanças na economia ou na política podem afetar o valor do fundo
-* Risco de liquidez: o fundo pode ter dificuldade em pagar resgates se muitos investidores decidirem resgatar ao mesmo tempo
+* Loss risk: your share’s value can decrease if the fund doesn’t appreciate
+* Market risk: changes in the economy or politics can affect the fund’s value
+* Liquidity risk: the fund may struggle to meet redemptions if many investors try to withdraw at the same time
 
 ## Practical examples
-Vamos considerar um exemplo prático. Imagine que você ganha R$ 6.000 por mês e quer investir R$ 1.000 por mês em um fundo de ações. Você pode investir em um fundo que tem um valor total de R$ 500.000 e uma taxa de administração de 1% ao ano. Se o fundo valorizar 8% ao ano, o valor da sua parte aumentará para R$ 1.080 após um ano.
+Let’s consider a practical example. Imagine you earn R$ 6.000 per month and want to invest R$ 1.000 per month in an equity fund. You could invest in a fund that has a total value of R$ 500.000 and an administration fee of 1% per year. If the fund appreciates 8% per year, the value of your piece will increase to R$ 1.080 after one year.
 
-Outro exemplo é o caso de uma pessoa que ganha R$ 4.000 por mês e quer investir R$ 500 por mês em um fundo de renda fixa. Ela pode investir em um fundo que tem um valor total de R$ 200.000 e uma taxa de administração de 0,5% ao ano. Se o fundo pagar uma renda de 6% ao ano, a pessoa receberá R$ 30 por mês em renda.
+Another example is a person who earns R$ 4.000 per month and wants to invest R$ 500 per month in a fixed‑income fund. They could invest in a fund that has a total value of R$ 200.000 and an administration fee of 0.5% per year. If the fund pays a return of 6% per year, the person will receive R$ 30 per month in income.
 
 ## Start today
-Agora que você entende melhor como os fundos funcionam, é hora de começar a investir. **Practical tip:** é importante definir seus objetivos de investimento e escolher um fundo que atenda às suas necessidades. Além disso, é importante lembrar que os investimentos sempre envolvem riscos, então é importante ser paciente e disciplinado. Com o app, você pode facilmente encontrar e investir em fundos que sejam adequados para você. Então, não perca mais tempo e comece a investir hoje mesmo!
-
+Now that you understand better how funds work, it’s time to start investing. **Practical tip:** it’s important to define your investment goals and choose a fund that meets your needs. Also, remember that investments always involve risks, so it’s important to be patient and disciplined. With the app, you can easily find and invest in funds that are suitable for you. So, don’t waste any more time and start investing today!

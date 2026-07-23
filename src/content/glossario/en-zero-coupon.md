@@ -18,43 +18,42 @@ seo:
 ---
 
 ## What it is
-O termo "zero coupon" pode parecer complicado, mas é mais simples do que você imagina. Basicamente, um zero coupon é um tipo de título de dívida que não paga [juros](/en/glossario/en-juros) periódicos, como os tradicionais títulos de dívida. Em vez disso, o investidor recebe o [valor](/en/glossario/en-valor-financeiro) total do título no vencimento, que inclui o principal mais os juros acumulados. Isso significa que você não receberá pagamentos regulares, mas sim um valor maior no final do período de investimento.
+The term “zero coupon” may sound complicated, but it’s simpler than you think. Basically, a zero coupon is a type of debt security that does not pay [interest](/en/glossario/en-juros) periodically, like traditional debt securities. Instead, the investor receives the total [value](/en/glossario/en-valor-financeiro) of the security at maturity, which includes the principal plus accrued interest. This means you won’t receive regular payments, but a larger amount at the end of the investment period.
 
-* Títulos de dívida: são instrumentos financeiros que representam um empréstimo feito por um investidor a uma empresa ou governo.
-* Juros: são os rendimentos pagos sobre o principal investido, geralmente expressos como uma porcentagem anual.
-* Vencimento: é a data em que o título de dívida expira e o investidor recebe o valor total.
+* Debt securities: financial instruments that represent a loan made by an investor to a company or government.  
+* Interest: the earnings paid on the invested principal, usually expressed as an annual percentage.  
+* Maturity: the date when the debt security expires and the investor receives the total amount.
 
 ![What it is](/images/glossario/zero-coupon-inline-1.webp)
 
 
 
 ## How it works
-Um zero coupon é emitido com um desconto sobre o valor nominal, que é o valor que o investidor receberá no vencimento. Por exemplo, se você comprar um zero coupon com valor nominal de R$1.000,00 e prazo de 5 anos, você pode pagá-lo por R$600,00. Durante os 5 anos, não receberá juros, mas no final do período, receberá os R$1.000,00. Isso significa que você terá um rendimento de R$400,00, que é a diferença entre o valor nominal e o valor pago.
+A zero coupon is issued at a discount to its face value, which is the amount the investor will receive at maturity. For example, if you buy a zero coupon with a face value of R$1.000,00 and a 5‑year term, you could pay R$600,00 for it. Over the 5 years you receive no interest, but at the end of the period you receive R$1.000,00. That means you earn R$400,00, which is the difference between the face value and the purchase price.
 
-**Practical tip:** É importante lembrar que os zero coupons têm um risco de crédito, ou seja, o risco de que a empresa ou governo que emitiu o título não pague o valor nominal no vencimento.
+**Practical tip:** It’s important to remember that zero coupons carry credit risk, i.e., the risk that the company or government that issued the security won’t pay the face value at maturity.
 
 ## Advantages
-Os zero coupons têm algumas vantagens sobre outros tipos de investimentos. Uma delas é a simplicidade, pois você não precisa se preocupar com pagamentos de juros periódicos. Além disso, os zero coupons podem ser mais seguros do que outros investimentos, pois você sabe exatamente quanto receberá no vencimento. Outra vantagem é que os zero coupons podem ser mais rentáveis do que outros investimentos de baixo risco, como a [poupança](/en/glossario/en-poupanca).
+Zero coupons have several advantages over other types of investments. One is simplicity—you don’t have to worry about periodic interest payments. In addition, zero coupons can be safer than other investments because you know exactly how much you’ll receive at maturity. Another advantage is that zero coupons can be more profitable than other low‑risk investments, such as [savings](/en/glossario/en-poupanca).
 
-* Segurança: os zero coupons são considerados investimentos de baixo risco, pois você sabe exatamente quanto receberá no vencimento.
-* Rentabilidade: os zero coupons podem ser mais rentáveis do que outros investimentos de baixo risco, como a poupança.
-* Simplicidade: os zero coupons são fáceis de entender e não requerem conhecimento especializado.
+* Safety: zero coupons are considered low‑risk investments because you know exactly how much you’ll receive at maturity.  
+* Profitability: zero coupons can be more profitable than other low‑risk investments, such as savings.  
+* Simplicity: zero coupons are easy to understand and don’t require specialized knowledge.
 
 ![Advantages](/images/glossario/zero-coupon-inline-3.webp)
 
 
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-No entanto, os zero coupons também têm alguns riscos. Um deles é o risco de crédito, que mencionei anteriormente. Outro risco é o risco de inflação, que pode reduzir o valor real do dinheiro que você receberá no vencimento. Além disso, os zero coupons podem ter um risco de liquidez, ou seja, o risco de que você não possa vender o título antes do vencimento.
+However, zero coupons also have some risks. One is credit risk, which I mentioned earlier. Another is inflation risk, which can erode the real value of the money you’ll receive at maturity. Additionally, zero coupons can have liquidity risk, i.e., the risk that you cannot sell the security before maturity.
 
-**Practical tip:** É importante diversificar seus investimentos para reduzir o risco de crédito e outros riscos. Isso significa que você deve investir em diferentes tipos de ativos, como [ações](/en/glossario/en-acoes), títulos de dívida e [fundos](/en/glossario/en-fundo-de-investimento) de investimento.
+**Practical tip:** It’s important to diversify your investments to reduce credit risk and other risks. That means you should invest in different types of assets, such as [stocks](/en/glossario/en-acoes), debt securities, and [investment funds](/en/glossario/en-fundo-de-investimento).
 
 ## Practical examples
-Vamos considerar um exemplo prático. Suponha que você ganhe R$5.000,00 por mês e queira investir R$1.000,00 por mês em zero coupons. Você pode comprar zero coupons com prazo de 5 anos e valor nominal de R$1.000,00. Durante os 5 anos, você não receberá juros, mas no final do período, você receberá R$1.000,00 por cada zero coupon que comprou. Isso significa que você terá um rendimento de R$5.000,00, que é a diferença entre o valor nominal e o valor pago.
+Let’s consider a practical example. Suppose you earn R$5.000,00 per month and want to invest R$1.000,00 per month in zero coupons. You could buy zero coupons with a 5‑year term and a face value of R$1.000,00. Over the 5 years you receive no interest, but at the end of the period you receive R$1.000,00 for each zero coupon you bought. That means you’ll earn R$5.000,00, which is the difference between the face value and the purchase price.
 
-* Exemplo: se você comprar um zero coupon com valor nominal de R$1.000,00 e prazo de 5 anos, você pode pagá-lo por R$600,00. Durante os 5 anos, você não receberá juros, mas no final do período, você receberá R$1.000,00.
-* **Practical tip:** É importante lembrar que os zero coupons têm um risco de crédito, então é importante investir em títulos de dívida de empresas ou governos seguros.
+* Example: if you buy a zero coupon with a face value of R$1.000,00 and a 5‑year term, you could pay R$600,00 for it. Over the 5 years you receive no interest, but at the end of the period you receive R$1.000,00.  
+* **Practical tip:** Remember that zero coupons have credit risk, so it’s important to invest in debt securities from secure companies or governments.
 
 ## Start today
-Agora que você sabe o que são os zero coupons e como eles funcionam, é hora de começar a investir. Lembre-se de que os zero coupons são investimentos de baixo risco, mas é importante diversificar seus investimentos para reduzir o risco de crédito e outros riscos. **Practical tip:** É importante começar a investir o quanto antes, pois o tempo é um aliado importante para o investidor. Além disso, é importante lembrar que os zero coupons podem ser mais rentáveis do que outros investimentos de baixo risco, como a poupança. Então, não perca mais tempo e comece a investir em zero coupons hoje mesmo!
-
+Now that you know what zero coupons are and how they work, it’s time to start investing. Keep in mind that zero coupons are low‑risk investments, but it’s important to diversify your portfolio to reduce credit risk and other risks. **Practical tip:** Start investing as soon as possible, because time is a crucial ally for investors. Also, remember that zero coupons can be more profitable than other low‑risk investments, such as savings. So, don’t waste any more time and start investing in zero coupons today!

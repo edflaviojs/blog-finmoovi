@@ -18,57 +18,52 @@ seo:
 ---
 
 ## Qué es
-El CDB, o Certificado de Depósito Bancário, es un tipo de investimento oferecido por bancos e instituições financeiras no Brasil. Basicamente, é um título de [renda fixa](/es/glossario/es-renda-fixa) que representa um depósito à vista com rendimento prefixado. Ou seja, você deposita um valor e recebe um retorno sobre esse investimento, geralmente em forma de [juros](/es/glossario/es-juros).
+El CDB, o Certificado de Depósito Bancario, es un tipo de inversión ofrecido por bancos e instituciones financieras en Brasil. Básicamente, es un título de [renta fija](/es/glossario/es-renda-fixa) que representa un depósito a la vista con rendimiento prefijado. Es decir, usted deposita un valor y recibe un retorno sobre esa inversión, generalmente en forma de [intereses](/es/glossario/es-juros).
 
-* Características principais do CDB:
- + Rendimento prefixado
- + [Liquidez](/es/glossario/es-liquidez) diária
- + Risco de crédito do banco emissor
- + Não é garantido pelo Fundo Garantidor de Créditos (FGC)
- + Pode ser negociado em [bolsa de valores](/es/glossario/es-bolsa-de-valores)
+* Características principales del CDB:
+ + Rendimiento prefijado
+ + [Liquidez](/es/glossario/es-liquidez) diaria
+ + Riesgo de crédito del banco emisor
+ + No está garantizado por el Fondo Garantidor de Créditos (FGC)
+ + Puede negociarse en [bolsa de valores](/es/glossario/es-bolsa-de-valores)
 
 ![Qué es](/images/glossario/cdb-inline-1.webp)
 
-
-
-O CDB é uma opção de investimento popular entre os brasileiros, pois oferece uma rentabilidade mais atraente do que a [poupança](/es/glossario/es-poupanca) tradicional, com um nível de risco moderado.
+El CDB es una opción de inversión popular entre los brasileños, pues ofrece una rentabilidad más atractiva que el [ahorro](/es/glossario/es-poupanca) tradicional, con un nivel de riesgo moderado.
 
 ## Cómo funciona
-Quando você investe em um CDB, está basicamente emprestando dinheiro ao banco que o emite. O banco, por sua vez, utiliza esses recursos para financiar suas operações e projetos. Em troca, o banco paga juros sobre o valor investido, que são calculados com base na taxa de juros prefixada.
+Cuando usted invierte en un CDB, está básicamente prestando dinero al banco que lo emite. El banco, por su parte, utiliza esos recursos para financiar sus operaciones y proyectos. A cambio, el banco paga intereses sobre el valor invertido, que se calculan con base en la tasa de interés prefijada.
 
-**Consejo práctico:** Antes de investir em um CDB, é importante verificar a taxa de juros oferecida e compará-la com outras opções de investimento disponíveis no mercado. Além disso, é fundamental entender os riscos envolvidos e avaliar se o investimento se alinha com seus objetivos financeiros.
+**Consejo práctico:** Antes de invertir en un CDB, es importante verificar la tasa de interés ofrecida y compararla con otras opciones de inversión disponibles en el mercado. Además, es fundamental entender los riesgos involucrados y evaluar si la inversión se alinea con sus objetivos financieros.
 
-Por exemplo, se você investir R$ 5.000 em um CDB com taxa de juros de 10% ao ano, você receberá R$ 500 em juros ao final do ano, totalizando R$ 5.500.
+Por ejemplo, si usted invierte R$ 5.000 en un CDB con tasa de interés del 10% al año, recibirá R$ 500 en intereses al final del año, totalizando R$ 5.500.
 
 ## Ventajas
-As principais vantagens do CDB incluem:
-* Rendimento mais atraente do que a poupança tradicional
-* Liquidez diária, permitindo que você resgate seu investimento a qualquer momento
-* [Diversificação](/es/glossario/es-diversificacao) de carteira, pois o CDB é um tipo de investimento diferente da ação ou do fundo de investimento
-* Possibilidade de negociar em bolsa de valores
+Las principales ventajas del CDB incluyen:
+* Rendimiento más atractivo que el ahorro tradicional
+* Liquidez diaria, permitiendo que usted retire su inversión en cualquier momento
+* [Diversificación](/es/glossario/es-diversificacao) de cartera, pues el CDB es un tipo de inversión diferente de la acción o del fondo de inversión
+* Posibilidad de negociar en bolsa de valores
 
-Além disso, o CDB é uma opção de investimento relativamente segura, pois é emitido por bancos e instituições financeiras regulamentadas pelo Banco Central do Brasil.
+Además, el CDB es una opción de inversión relativamente segura, pues es emitido por bancos e instituciones financieras reguladas por el Banco Central de Brasil.
 
 ![Ventajas](/images/glossario/cdb-inline-3.webp)
 
-
-
 ## Riesgos
-No entanto, como qualquer investimento, o CDB também envolve riscos. Os principais riscos incluem:
-* Risco de crédito do banco emissor: se o banco que emite o CDB enfrentar dificuldades financeiras, você pode perder parte ou todo o seu investimento
-* Risco de liquidez: se você precisar resgatar seu investimento rapidamente, pode não conseguir vendê-lo por um preço justo
-* Risco de taxa de juros: se as taxas de juros caírem, o valor do seu investimento pode diminuir
+Sin embargo, como cualquier inversión, el CDB también implica riesgos. Los principales riesgos incluyen:
+* Riesgo de crédito del banco emisor: si el banco que emite el CDB enfrenta dificultades financieras, usted puede perder parte o la totalidad de su inversión
+* Riesgo de liquidez: si necesita retirar su inversión rápidamente, puede que no consiga venderla a un precio justo
+* Riesgo de tasa de interés: si las tasas de interés caen, el valor de su inversión puede disminuir
 
-**Consejo práctico:** Para minimizar os riscos, é importante diversificar sua carteira de investimentos e não colocar todos os seus ovos na mesma cesta. Além disso, é fundamental entender os termos e condições do investimento antes de aplicar seu dinheiro.
+**Consejo práctico:** Para minimizar los riesgos, es importante diversificar su cartera de inversiones y no poner todos sus huevos en la misma cesta. Además, es fundamental entender los términos y condiciones de la inversión antes de aplicar su dinero.
 
 ## Ejemplos prácticos
-Vamos considerar um exemplo prático. Suponha que você ganhe R$ 4.000 por mês e queira investir R$ 1.000 em um CDB com taxa de juros de 12% ao ano. Se você mantiver o investimento por 2 anos, você receberá R$ 240 em juros ao final do primeiro ano e R$ 273,60 ao final do segundo ano, totalizando R$ 1.513,60.
+Vamos a considerar un ejemplo práctico. Suponga que usted gana R$ 4.000 al mes y quiere invertir R$ 1.000 en un CDB con tasa de interés del 12% al año. Si mantiene la inversión por 2 años, recibirá R$ 240 en intereses al final del primer año y R$ 273,60 al final del segundo año, totalizando R$ 1.513,60.
 
-**Consejo práctico:** É importante lembrar que os juros compostos podem aumentar significativamente o valor do seu investimento ao longo do tempo. Portanto, é fundamental começar a investir o mais cedo possível e manter uma disciplina de investimento regular.
+**Consejo práctico:** Es importante recordar que los intereses compuestos pueden aumentar significativamente el valor de su inversión a lo largo del tiempo. Por lo tanto, es fundamental comenzar a invertir lo antes posible y mantener una disciplina de inversión regular.
 
 ## Cómo empezar
-Para começar a investir em CDB, você precisará abrir uma conta em um banco ou instituição financeira que ofereça essa opção de investimento. Além disso, é importante verificar as taxas de juros e os termos e condições do investimento antes de aplicar seu dinheiro.
+Para comenzar a invertir en CDB, usted necesitará abrir una cuenta en un banco o institución financiera que ofrezca esta opción de inversión. Además, es importante verificar las tasas de interés y los términos y condiciones de la inversión antes de aplicar su dinero.
 
 ## Empieza hoy
-Não perca mais tempo e comece a investir em CDB hoje mesmo. Com um pouco de disciplina e paciência, você pode alcançar seus objetivos financeiros e construir uma carteira de investimentos diversificada e rentável. Lembre-se de que o investimento é um processo de longo prazo e que a chave para o sucesso é começar cedo e manter uma estratégia de investimento consistente. **Consejo práctico:** Não deixe que a falta de conhecimento ou a falta de tempo o impeçam de começar a investir. Comece com pequenas quantias e aumente gradualmente à medida que você se torna mais confortável com o processo de investimento.
-
+No pierda más tiempo y comience a invertir en CDB hoy mismo. Con un poco de disciplina y paciencia, usted puede alcanzar sus objetivos financieros y construir una cartera de inversiones diversificada y rentable. Recuerde que la inversión es un proceso a largo plazo y que la clave del éxito es comenzar temprano y mantener una estrategia de inversión consistente. **Consejo práctico:** No deje que la falta de conocimiento o la falta de tiempo le impidan comenzar a invertir. Comience con pequeñas cantidades y aumente gradualmente a medida que se sienta más cómodo con el proceso de inversión.

@@ -18,62 +18,57 @@ seo:
 ---
 
 ## What it is
-A [taxa](/en/glossario/en-taxa-financeira) Selic é um conceito fundamental no mundo das finanças brasileiras. Ela é a taxa de [juros](/en/glossario/en-juros) básica da economia, definida pelo Comitê de Política Monetária (Copom) do Banco Central do Brasil. Em outras palavras, é a taxa de juros que os bancos pagam para emprestar dinheiro ao governo e, por sua vez, influencia as taxas de juros de todos os outros empréstimos e investimentos no país. Por exemplo, se você tem um salário de R$ 5.000 por mês e está pensando em investir em um fundo de [renda fixa](/en/glossario/en-renda-fixa), a taxa Selic pode afetar diretamente o retorno do seu investimento.
+The Selic **rate** is a fundamental concept in the world of Brazilian finance. It is the basic **interest** rate of the economy, set by the Monetary Policy Committee (Copom) of the Central Bank of Brazil. In other words, it is the interest rate that banks pay to lend money to the government and, in turn, influences the interest rates of all other loans and investments in the country. For example, if you earn R$ 5,000 a month and are thinking about investing in a fixed‑income fund, the Selic rate can directly affect the return on your investment.
 
-* A taxa Selic é usada como referência para calcular as taxas de juros de empréstimos e investimentos
-* Ela é definida pelo Copom do Banco Central do Brasil
-* A taxa Selic pode influenciar a inflação e o crescimento econômico do país
+* The Selic rate is used as a reference to calculate the interest rates of loans and investments  
+* It is set by the Copom of the Central Bank of Brazil  
+* The Selic rate can influence inflation and the country’s economic growth  
 
 ![What it is](/images/glossario/selic-inline-1.webp)
 
-
-
-A taxa Selic é importante porque ajuda a controlar a inflação e a manter a estabilidade econômica. Quando a taxa Selic é alta, os empréstimos se tornam mais caros e as pessoas tendem a poupar mais e gastar menos, o que pode ajudar a reduzir a inflação. Por outro lado, quando a taxa Selic é baixa, os empréstimos se tornam mais baratos e as pessoas tendem a gastar mais, o que pode estimular o crescimento econômico.
+The Selic rate is important because it helps control inflation and maintain economic stability. When the Selic rate is high, loans become more expensive and people tend to save more and spend less, which can help reduce inflation. Conversely, when the Selic rate is low, loans become cheaper and people tend to spend more, which can stimulate economic growth.
 
 ## How it works
-A taxa Selic é definida pelo Copom do Banco Central do Brasil, que se reúne regularmente para discutir a política monetária do país. O Copom considera fatores como a inflação, o crescimento econômico e o desemprego ao definir a taxa Selic. Quando a taxa Selic é alterada, ela pode afetar os juros de empréstimos e investimentos em todo o país. Por exemplo, se a taxa Selic for reduzida, os juros de empréstimos como o crédito pessoal e o financiamento de imóveis podem diminuir, tornando-os mais acessíveis às pessoas.
+The Selic rate is set by the Copom of the Central Bank of Brazil, which meets regularly to discuss the country’s monetary policy. The Copom considers factors such as inflation, economic growth, and unemployment when setting the Selic rate. When the Selic rate changes, it can affect the interest on loans and investments throughout the country. For example, if the Selic rate is reduced, the interest on loans such as personal credit and mortgage financing can decrease, making them more accessible to people.
 
-**Practical tip:** É importante entender como a taxa Selic afeta os seus investimentos e empréstimos para tomar decisões informadas sobre seu dinheiro. Por exemplo, se você tem um empréstimo com juros variáveis, uma redução na taxa Selic pode reduzir os juros que você paga.
+**Practical tip:** It’s important to understand how the Selic rate affects your investments and loans so you can make informed decisions about your money. For instance, if you have a variable‑interest loan, a reduction in the Selic rate can lower the interest you pay.
 
-A taxa Selic também pode influenciar o [valor](/en/glossario/en-valor-financeiro) do real em relação a outras moedas. Quando a taxa Selic é alta, o real pode se valorizar em relação a outras moedas, o que pode afetar as exportações e importações do país. Por exemplo, se você é um exportador de produtos brasileiros, uma taxa Selic alta pode tornar seus produtos mais caros para os compradores estrangeiros, o que pode reduzir as vendas.
+The Selic rate can also influence the **value** of the real against other currencies. When the Selic rate is high, the real may appreciate relative to other currencies, which can affect the country’s exports and imports. For example, if you are an exporter of Brazilian products, a high Selic rate can make your goods more expensive for foreign buyers, potentially reducing sales.
 
 ## Advantages
-A taxa Selic tem várias vantagens para a economia brasileira. Uma das principais vantagens é que ela ajuda a controlar a inflação. Quando a taxa Selic é alta, os empréstimos se tornam mais caros e as pessoas tendem a poupar mais e gastar menos, o que pode ajudar a reduzir a inflação. Além disso, a taxa Selic pode ajudar a manter a estabilidade econômica do país, o que é importante para atrair investimentos estrangeiros.
+The Selic rate offers several advantages for the Brazilian economy. One of the main advantages is that it helps control inflation. When the Selic rate is high, loans become more expensive and people tend to save more and spend less, which can help curb inflation. In addition, the Selic rate can help maintain the country’s economic stability, which is important for attracting foreign investment.
 
-* A taxa Selic ajuda a controlar a inflação
-* Ela pode manter a estabilidade econômica do país
-* A taxa Selic pode influenciar o crescimento econômico do país
+* The Selic rate helps control inflation  
+* It can maintain the country’s economic stability  
+* The Selic rate can influence the country’s economic growth  
 
 ![Advantages](/images/glossario/selic-inline-3.webp)
 
+**Practical tip:** Understanding how the Selic rate affects inflation and economic growth is essential for making informed decisions about your investments and loans. For example, if you are considering investing in a fixed‑income fund, a high Selic rate may mean that the fund’s interest payments will be higher.
 
-
-**Practical tip:** É importante entender como a taxa Selic afeta a inflação e o crescimento econômico do país para tomar decisões informadas sobre seus investimentos e empréstimos. Por exemplo, se você está pensando em investir em um fundo de renda fixa, uma taxa Selic alta pode significar que os juros pagos pelo fundo serão mais altos.
-
-A taxa Selic também pode influenciar o mercado de trabalho. Quando a taxa Selic é baixa, os empréstimos se tornam mais baratos e as empresas podem investir mais em expansão e contratação de funcionários, o que pode reduzir o desemprego. Por exemplo, se você é um empresário com um salário de R$ 8.000 por mês e está pensando em expandir seu negócio, uma taxa Selic baixa pode tornar os empréstimos mais acessíveis e baratos.
+The Selic rate can also influence the labor market. When the Selic rate is low, loans become cheaper and companies can invest more in expansion and hiring, which can reduce unemployment. For example, if you are a business owner earning R$ 8,000 a month and are thinking about expanding your business, a low Selic rate can make loans more accessible and affordable.
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-A taxa Selic também tem riscos associados. Uma das principais desvantagens é que ela pode afetar negativamente o crescimento econômico do país. Quando a taxa Selic é alta, os empréstimos se tornam mais caros e as pessoas tendem a poupar mais e gastar menos, o que pode reduzir o crescimento econômico. Além disso, a taxa Selic pode influenciar o valor do real em relação a outras moedas, o que pode afetar as exportações e importações do país.
+The Selic rate also carries risks. One of the main disadvantages is that it can negatively affect the country’s economic growth. When the Selic rate is high, loans become more expensive and people tend to save more and spend less, which can slow economic growth. Moreover, the Selic rate can influence the value of the real against other currencies, affecting the country’s exports and imports.
 
-* A taxa Selic pode afetar negativamente o crescimento econômico do país
-* Ela pode influenciar o valor do real em relação a outras moedas
-* A taxa Selic pode afetar o mercado de trabalho
+* The Selic rate can negatively affect the country’s economic growth  
+* It can influence the value of the real against other currencies  
+* The Selic rate can affect the labor market  
 
-**Practical tip:** É importante entender como a taxa Selic afeta o crescimento econômico do país e o mercado de trabalho para tomar decisões informadas sobre seus investimentos e empréstimos. Por exemplo, se você é um investidor com um salário de R$ 3.000 por mês e está pensando em investir em um fundo de renda variável, uma taxa Selic alta pode significar que os juros pagos pelo fundo serão mais altos, mas também pode aumentar o risco de perda de valor do investimento.
+**Practical tip:** It’s important to understand how the Selic rate impacts the country’s economic growth and the labor market so you can make informed decisions about your investments and loans. For example, if you are an investor earning R$ 3,000 a month and are thinking about investing in an equity fund, a high Selic rate may mean higher interest paid by the fund, but it can also increase the risk of loss in the investment’s value.
 
-A taxa Selic também pode influenciar a confiança dos investidores. Quando a taxa Selic é alta, os investidores podem perder confiança no país e reduzir seus investimentos, o que pode afetar negativamente o crescimento econômico. Por exemplo, se você é um investidor estrangeiro com um salário de R$ 10.000 por mês e está pensando em investir no Brasil, uma taxa Selic alta pode tornar o país menos atraente para investimentos.
+The Selic rate can also influence investor confidence. When the Selic rate is high, investors may lose confidence in the country and reduce their investments, which can negatively affect economic growth. For instance, if you are a foreign investor earning R$ 10,000 a month and are considering investing in Brazil, a high Selic rate can make the country less attractive for investment.
 
 ## Practical examples
-A taxa Selic pode afetar a vida das pessoas de várias maneiras. Por exemplo, se você está pensando em comprar um imóvel, uma taxa Selic baixa pode tornar os financiamentos mais baratos e acessíveis. Além disso, se você é um empresário, uma taxa Selic baixa pode tornar os empréstimos mais baratos e acessíveis, o que pode ajudar a expandir seu negócio.
+The Selic rate can affect people’s lives in many ways. For example, if you are thinking about buying a property, a low Selic rate can make mortgages cheaper and more accessible. Additionally, if you are a business owner, a low Selic rate can make loans cheaper and more accessible, helping you expand your business.
 
-* Uma taxa Selic baixa pode tornar os financiamentos de imóveis mais baratos
-* Uma taxa Selic baixa pode tornar os empréstimos mais baratos e acessíveis para empresas
-* Uma taxa Selic alta pode reduzir o crescimento econômico do país
+* A low Selic rate can make mortgage financing cheaper  
+* A low Selic rate can make loans cheaper and more accessible for companies  
+* A high Selic rate can reduce the country’s economic growth  
 
-**Practical tip:** É importante entender como a taxa Selic afeta a sua vida e tomar decisões informadas sobre seus investimentos e empréstimos. Por exemplo, se você está pensando em investir em um fundo de renda fixa, uma taxa Selic alta pode significar que os juros pagos pelo fundo serão mais altos, mas também pode aumentar o risco de perda de valor do investimento.
+**Practical tip:** Understanding how the Selic rate affects your life is key to making informed decisions about your investments and loans. For example, if you are thinking about investing in a fixed‑income fund, a high Selic rate may mean higher interest paid by the fund, but it can also increase the risk of loss in the investment’s value.
 
-A taxa Selic também pode influenciar o valor dos investimentos. Por exemplo, se você investiu em um fundo de renda variável, uma taxa Selic alta pode aumentar o risco de perda de valor do investimento. Além disso, se você investiu em um fundo de renda fixa, uma taxa Selic baixa pode reduzir os juros pagos pelo fundo.
+The Selic rate can also influence the value of investments. For instance, if you invested in an equity fund, a high Selic rate can increase the risk of loss in the investment’s value. Conversely, if you invested in a fixed‑income fund, a low Selic rate can reduce the interest paid by the fund.
 
 ## Start today
-Agora que você entende melhor como a taxa Selic funciona e como ela pode afetar sua vida, é hora de começar a tomar decisões informadas sobre seus investimentos e empréstimos. **Practical tip:** É importante lembrar que a taxa Selic pode mudar rapidamente, então é importante estar sempre atualizado sobre as últimas notícias e tendências. Além disso, é importante diversificar seus investimentos e empréstimos para reduzir o risco de perda de valor. Com essas dicas e um pouco de conhecimento, você pode começar a investir e emprestar com confiança e alcançar seus objetivos financeiros.
-
+Now that you understand better how the Selic rate works and how it can affect your life, it’s time to start making informed decisions about your investments and loans. **Practical tip:** Remember that the Selic rate can change quickly, so it’s important to stay up‑to‑date on the latest news and trends. In addition, diversifying your investments and loans is essential to reduce the risk of loss in value. With these tips and a bit of knowledge, you can start investing and borrowing with confidence and achieve your financial goals.

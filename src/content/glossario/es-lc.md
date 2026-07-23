@@ -54,4 +54,3 @@ Para empezar a utilizar la LC, es importante elegir un banco que ofrezca este se
 
 ## Empieza hoy
 No espere más para empezar a utilizar la LC y aprovechar sus beneficios. Con la LC, puede garantizar el pago de sus compras y reducir el riesgo de fraude o incumplimiento. **Consejo práctico:** comience por investigar y comparar las comisiones y condiciones de diferentes bancos, y elija el que mejor se adapte a sus necesidades. ¡Empieza hoy y descubre cómo la LC puede ayudarte a crecer tu negocio o a realizar tus compras de manera segura!
-

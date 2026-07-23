@@ -18,42 +18,37 @@ seo:
 ---
 
 ## What it is
-O CDB, ou Certificado de Depósito Bancário, é um tipo de investimento oferecido por bancos e instituições financeiras no Brasil. Ele é basicamente um empréstimo que você faz ao banco, e em troca, você recebe um retorno sobre o [valor](/en/glossario/en-valor-financeiro) investido. O CDB é uma opção popular para quem busca investir seu dinheiro com um nível de risco moderado e uma rentabilidade razoável. Imagine que você tem um salário de R$ 5.000 por mês e consegue poupar R$ 1.000 todo mês. Você pode investir esse valor em um CDB e receber um retorno de acordo com a rentabilidade oferecida pelo banco.
+The CDB, or Certificado de Depósito Bancário, is a type of investment offered by banks and financial institutions in Brazil. It is basically a loan you make to the bank, and in return, you receive a return on the invested [value](/en/glossario/en-valor-financeiro). The CDB is a popular option for those looking to invest their money with a moderate level of risk and reasonable profitability. Imagine you have a salary of R$ 5.000 per month and can save R$ 1.000 every month. You can invest that amount in a CDB and receive a return according to the profitability offered by the bank.
 
-* O CDB pode ser de liquidez diária, semestral ou anual, o que significa que você pode resgatar seu investimento após um determinado período.
-* O retorno do CDB é calculado com base na [taxa](/en/glossario/en-taxa-financeira) de [juros](/en/glossario/en-juros) oferecida pelo banco, que pode variar de acordo com o prazo de investimento e a instituição financeira.
-* O CDB é uma opção de investimento que pode ser feita por pessoas físicas ou jurídicas.
+* The CDB can be daily liquidity, semiannual or annual, which means you can redeem your investment after a certain period.  
+* The return of the CDB is calculated based on the [interest rate](/en/glossario/en-taxa-financeira) offered by the bank, which can vary according to the investment term and the financial institution.  
+* The CDB is an investment option that can be made by individuals or legal entities.
 
 ![What it is](/images/glossario/cdb-inline-1.webp)
 
-
-
-O CDB é regulamentado pelo Banco Central do Brasil, o que significa que há regras claras para sua oferta e comercialização. Além disso, o CDB é uma opção de investimento que pode ser feita por meio de bancos, corretoras de valores e outras instituições financeiras.
+The CDB is regulated by the Central Bank of Brazil, which means there are clear rules for its offering and commercialization. In addition, the CDB is an investment option that can be made through banks, brokerage firms and other financial institutions.
 
 ## How it works
-O CDB funciona de forma simples: você deposita um valor em uma conta de investimento e o banco usa esse valor para emprestar a outras pessoas ou empresas. Em troca, o banco paga um retorno sobre o valor investido, que é calculado com base na taxa de juros oferecida. O prazo de investimento pode variar de alguns dias a vários anos, e o retorno pode ser maior ou menor de acordo com o prazo escolhido. **Practical tip:** É importante ler atentamente as condições do CDB antes de investir, pois as taxas de juros e os prazos de investimento podem variar muito de uma instituição para outra.
+The CDB works simply: you deposit an amount in an investment account and the bank uses that amount to lend to other people or companies. In return, the bank pays a return on the invested amount, which is calculated based on the interest rate offered. The investment term can vary from a few days to several years, and the return can be higher or lower depending on the chosen term. **Practical tip:** It is important to read the CDB conditions carefully before investing, as interest rates and investment terms can vary a lot from one institution to another.
 
-Por exemplo, imagine que você investe R$ 10.000 em um CDB com prazo de 1 ano e taxa de juros de 10% ao ano. Ao final do prazo, você receberá R$ 11.000, que é o valor inicial mais o retorno de R$ 1.000. **Practical tip:** É importante ter em mente que o CDB é um investimento de risco moderado, o que significa que há um risco de perda de valor, especialmente se o banco tiver problemas financeiros.
+For example, imagine you invest R$ 10.000 in a CDB with a 1‑year term and an interest rate of 10% per year. At the end of the term, you will receive R$ 11.000, which is the initial amount plus a return of R$ 1.000. **Practical tip:** It is important to keep in mind that the CDB is a moderate‑risk investment, which means there is a risk of loss of value, especially if the bank has financial problems.
 
 ## Advantages
-O CDB tem várias vantagens para os investidores. Em primeiro lugar, ele é uma opção de investimento relativamente segura, pois é regulamentado pelo Banco Central e oferecido por instituições financeiras sólidas. Além disso, o CDB pode oferecer uma rentabilidade razoável, especialmente se você investir por um prazo mais longo. **Practical tip:** É importante diversificar seus investimentos, ou seja, não colocar todos os seus ovos na mesma cesta. Isso significa que você pode investir em diferentes tipos de investimentos, como CDB, [ações](/en/glossario/en-acoes), [fundos](/en/glossario/en-fundo-de-investimento) de investimento, etc.
+The CDB has several advantages for investors. First, it is a relatively safe investment option, as it is regulated by the Central Bank and offered by solid financial institutions. In addition, the CDB can offer reasonable profitability, especially if you invest for a longer term. **Practical tip:** It is important to diversify your investments, that is, not to put all your eggs in the same basket. This means you can invest in different types of investments, such as CDB, [stocks](/en/glossario/en-acoes), [investment funds](/en/glossario/en-fundo-de-investimento), etc.
 
-Outra vantagem do CDB é que ele é fácil de entender e acessar. Você pode investir em um CDB por meio de um banco ou corretora de valores, e o processo de investimento é geralmente rápido e simples. Além disso, o CDB é uma opção de investimento que pode ser feita por pessoas com diferentes níveis de renda, desde que você tenha um valor mínimo para investir.
+Another advantage of the CDB is that it is easy to understand and access. You can invest in a CDB through a bank or brokerage, and the investment process is usually fast and simple. Moreover, the CDB is an investment option that can be made by people with different income levels, as long as you have a minimum amount to invest.
 
 ![Advantages](/images/glossario/cdb-inline-3.webp)
 
-
-
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-Embora o CDB seja considerado um investimento de risco moderado, há alguns riscos que você deve ter em mente. Em primeiro lugar, há o risco de perda de valor, especialmente se o banco tiver problemas financeiros. Além disso, há o risco de inflação, que pode reduzir o valor do seu investimento ao longo do tempo. **Practical tip:** É importante ter um plano de investimento de longo prazo e não se deixar levar por flutuações de curto prazo no mercado.
+Although the CDB is considered a moderate‑risk investment, there are some risks you should keep in mind. First, there is the risk of loss of value, especially if the bank has financial problems. In addition, there is inflation risk, which can reduce the value of your investment over time. **Practical tip:** It is important to have a long‑term investment plan and not be swayed by short‑term market fluctuations.
 
-Outro risco do CDB é o risco de crédito, que é o risco de que o banco não pague o retorno do investimento. No entanto, é importante notar que o CDB é regulamentado pelo Banco Central, o que significa que há regras claras para sua oferta e comercialização. Além disso, os bancos são obrigados a manter um nível de capital mínimo para garantir a segurança dos investidores.
+Another risk of the CDB is credit risk, which is the risk that the bank does not pay the investment return. However, it is important to note that the CDB is regulated by the Central Bank, which means there are clear rules for its offering and commercialization. In addition, banks are required to maintain a minimum capital level to ensure investor safety.
 
 ## Practical examples
-Vamos considerar alguns exemplos práticos de como o CDB pode ser usado. Imagine que você tem um salário de R$ 6.000 por mês e consegue poupar R$ 1.500 todo mês. Você pode investir esse valor em um CDB com prazo de 2 anos e taxa de juros de 12% ao ano. Ao final do prazo, você receberá R$ 38.000, que é o valor inicial mais o retorno de R$ 6.000.
+Let's consider some practical examples of how the CDB can be used. Imagine you have a salary of R$ 6.000 per month and can save R$ 1.500 every month. You can invest that amount in a CDB with a 2‑year term and an interest rate of 12% per year. At the end of the term, you will receive R$ 38.000, which is the initial amount plus a return of R$ 6.000.
 
-Outro exemplo é o de uma pessoa que tem um valor de R$ 20.000 para investir e decide investir em um CDB com prazo de 5 anos e taxa de juros de 15% ao ano. Ao final do prazo, ela receberá R$ 33.000, que é o valor inicial mais o retorno de R$ 13.000. **Practical tip:** É importante ter em mente que o CDB é um investimento de longo prazo, o que significa que você deve ter paciência e não se deixar levar por flutuações de curto prazo no mercado.
+Another example is a person who has R$ 20.000 to invest and decides to invest in a CDB with a 5‑year term and an interest rate of 15% per year. At the end of the term, they will receive R$ 33.000, which is the initial amount plus a return of R$ 13.000. **Practical tip:** It is important to keep in mind that the CDB is a long‑term investment, which means you must be patient and not be swayed by short‑term market fluctuations.
 
 ## Start today
-Agora que você sabe mais sobre o CDB, é hora de começar a investir. **Practical tip:** É importante começar a investir o mais cedo possível, pois o tempo é um grande aliado dos investidores. Além disso, é importante diversificar seus investimentos e não colocar todos os seus ovos na mesma cesta. Com um pouco de paciência e disciplina, você pode alcançar seus objetivos financeiros e ter uma vida mais segura e próspera. Então, não perca mais tempo e comece a investir em um CDB hoje mesmo! Você pode usar um app de investimento para começar a investir de forma fácil e rápida.
-
+Now that you know more about the CDB, it's time to start investing. **Practical tip:** It is important to start investing as early as possible, because time is a great ally of investors. In addition, it is important to diversify your investments and not put all your eggs in the same basket. With a little patience and discipline, you can achieve your financial goals and have a safer, more prosperous life. So, don't waste any more time and start investing in a CDB today! You can use an investment app to start investing easily and quickly.

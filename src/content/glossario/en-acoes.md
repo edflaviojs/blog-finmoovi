@@ -18,50 +18,49 @@ seo:
 ---
 
 ## What it is
-Ações são uma forma de investimento que permite que você compre uma parte de uma empresa. Imagine que você é dono de uma pequena loja de roupas e quer expandir seu negócio. Você pode vender ações da sua loja para outros investidores, que então se tornam donos de uma parte da sua empresa. Em troca, você recebe o dinheiro necessário para expandir seu negócio. As ações são negociadas em bolsas de valores, como a B3 no Brasil, e seu [valor](/en/glossario/en-valor-financeiro) pode variar de acordo com o desempenho da empresa.
+Stocks are a form of investment that allows you to buy a piece of a company. Imagine you own a small clothing store and want to expand your business. You can sell shares of your store to other investors, who then become owners of a part of your company. In return, you receive the money needed to grow your business. Stocks are traded on stock exchanges, such as B3 in Brazil, and their [value](/en/glossario/en-valor-financeiro) can vary according to the company’s performance.
 
-As ações são uma forma de investimento de longo prazo, pois o valor delas pode flutuar ao longo do tempo. No entanto, se você investir em ações de empresas sólidas e bem geridas, é possível obter retornos significativos ao longo do tempo. Por exemplo, se você investir R$ 5.000 em ações de uma empresa que paga dividendos anuais de 5%, você receberá R$ 250 por ano, o que é um retorno de 5% sobre o seu investimento.
+Stocks are a long‑term investment, because their price can fluctuate over time. However, if you invest in solid, well‑managed companies, you can achieve significant returns over the years. For example, if you invest R$ 5,000 in shares of a company that pays an annual dividend of 5%, you will receive R$ 250 per year, which is a 5% return on your investment.
 
 ![What it is](/images/glossario/acoes-inline-1.webp)
 
 
 
 ## How it works
-Quando você compra ações, você está comprando uma parte da empresa. O valor das ações é determinado pelo mercado, ou seja, pelo preço que os investidores estão dispostos a pagar por elas. O preço das ações pode variar de acordo com o desempenho da empresa, a economia em geral e outros fatores. Se a empresa está fazendo bem, o preço das ações tende a subir, e se a empresa está fazendo mal, o preço das ações tende a cair.
+When you buy stocks, you are buying a part of the company. The price of the shares is determined by the market, i.e., by what investors are willing to pay for them. Stock prices can vary according to the company’s performance, the overall economy, and other factors. If the company is doing well, the share price tends to rise; if the company is doing poorly, the share price tends to fall.
 
-Aqui estão alguns termos importantes que você precisa entender:
-* **Dividendos**: são pagamentos feitos pela empresa aos acionistas, geralmente anualmente, como uma forma de distribuir os lucros.
-* **Preço de fechamento**: é o preço das ações no final do dia de negociação.
-* **Volume de negociação**: é a quantidade de ações negociadas em um determinado período.
+Here are some important terms you need to understand:
+* **Dividends**: payments made by the company to shareholders, usually annually, as a way of distributing profits.
+* **Closing price**: the price of the shares at the end of the trading day.
+* **Trading volume**: the amount of shares traded in a given period.
 
 ## Advantages
-As ações oferecem várias vantagens, incluindo:
-* **Potencial de crescimento**: as ações têm o potencial de crescer em valor ao longo do tempo, especialmente se você investir em empresas sólidas e bem geridas.
-* **Dividendos**: muitas empresas pagam dividendos aos acionistas, o que pode fornecer uma fonte de renda passiva.
-* **Liquidez**: as ações podem ser facilmente compradas e vendidas em bolsas de valores, o que significa que você pode acessar seu dinheiro rapidamente se necessário.
+Stocks offer several advantages, including:
+* **Growth potential**: stocks can increase in value over time, especially if you invest in solid, well‑managed companies.
+* **Dividends**: many companies pay dividends to shareholders, which can provide a source of passive income.
+* **Liquidity**: stocks can be easily bought and sold on stock exchanges, meaning you can access your money quickly if needed.
 
-**Practical tip:** É importante diversificar seu portfólio de investimentos, ou seja, não colocar todos os seus ovos em uma cesta. Isso significa investir em diferentes tipos de ações, como ações de empresas de diferentes setores e tamanhos.
+**Practical tip:** It’s important to diversify your investment portfolio, i.e., not put all your eggs in one basket. This means investing in different types of stocks, such as shares of companies from various sectors and sizes.
 
 ![Advantages](/images/glossario/acoes-inline-3.webp)
 
 
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-No entanto, as ações também envolvem riscos, incluindo:
-* **Risco de perda**: o valor das ações pode cair, o que significa que você pode perder dinheiro se vender as ações por um preço mais baixo do que o que você pagou por elas.
-* **Risco de volatilidade**: o preço das ações pode flutuar rapidamente, o que pode ser estressante se você não estiver preparado.
-* **Risco de empresa**: se a empresa em que você investiu tiver problemas, o valor das ações pode cair.
+However, stocks also involve risks, including:
+* **Loss risk**: the value of the shares can drop, meaning you could lose money if you sell the shares for a lower price than you paid.
+* **Volatility risk**: share prices can fluctuate rapidly, which can be stressful if you’re not prepared.
+* **Company risk**: if the company you invested in encounters problems, the share value can decline.
 
-**Practical tip:** É importante fazer uma pesquisa cuidadosa antes de investir em ações. Isso inclui ler relatórios anuais, analisar as finanças da empresa e entender os riscos e desafios que a empresa enfrenta.
+**Practical tip:** It’s important to do careful research before investing in stocks. This includes reading annual reports, analyzing the company’s finances, and understanding the risks and challenges the company faces.
 
 ## Practical examples
-Vamos considerar um exemplo. Imagine que você tem um salário de R$ 5.000 por mês e você quer investir R$ 1.000 por mês em ações. Você pode investir em ações de empresas como a Petrobras, a Vale ou a Itaú Unibanco. Se você investir R$ 1.000 por mês em ações da Petrobras, por exemplo, você pode obter um retorno anual de 10%, o que significa que você receberá R$ 100 por ano em dividendos.
+Let’s consider an example. Imagine you earn R$ 5,000 per month and want to invest R$ 1,000 per month in stocks. You could invest in shares of companies like Petrobras, Vale, or Itaú Unibanco. If you invest R$ 1,000 per month in Petrobras shares, for instance, you could achieve an annual return of 10%, meaning you would receive R$ 100 per year in dividends.
 
-Aqui estão algumas dicas práticas para investir em ações:
-* **Comece pequeno**: não é necessário investir uma grande quantia de dinheiro para começar a investir em ações. Você pode começar com R$ 100 ou R$ 500 e aumentar sua investimento ao longo do tempo.
-* **Seja paciente**: as ações são um investimento de longo prazo, então é importante ser paciente e não se deixar levar por flutuações de curto prazo no mercado.
-* **Monitore seu investimento**: é importante monitorar seu investimento regularmente para garantir que ele esteja alinhado com seus objetivos financeiros.
+Here are some practical tips for investing in stocks:
+* **Start small**: you don’t need a large amount of money to begin investing in stocks. You can start with R$ 100 or R$ 500 and increase your investment over time.
+* **Be patient**: stocks are a long‑term investment, so it’s important to be patient and not get swayed by short‑term market fluctuations.
+* **Monitor your investment**: regularly checking your investment is essential to ensure it aligns with your financial goals.
 
 ## Start today
-Agora que você entende melhor como as ações funcionam, é hora de começar a investir. **Practical tip:** Você pode usar um aplicativo de investimento, como o [Nubank](/en/glossario/en-nubank), para começar a investir em ações. O Nubank oferece uma plataforma fácil de usar e baixas taxas de transação, o que torna mais acessível para você começar a investir. Lembre-se de que o investimento em ações envolve riscos, mas também oferece o potencial de crescimento e dividendos. Então, não hesite em começar a investir hoje mesmo e alcançar seus objetivos financeiros.
-
+Now that you understand better how stocks work, it’s time to start investing. **Practical tip:** You can use an investment app, such as [Nubank](/en/glossario/en-nubank), to begin buying stocks. Nubank offers an easy‑to‑use platform and low transaction fees, making it more accessible for you to start investing. Remember that investing in stocks involves risks, but it also offers growth potential and dividends. So, don’t hesitate to start investing today and achieve your financial goals.
