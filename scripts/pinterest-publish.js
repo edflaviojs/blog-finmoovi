@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SITE_URL, NICHE_KEYWORDS, tagSlug } from './lib/site.js';
+import { generateText } from '../src/scripts/apis/kie-ai.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -27,6 +28,10 @@ const POSTS_DIR = join(ROOT, 'src', 'content', 'posts');
 const TRACKING_FILE = join(ROOT, '.github', 'data', 'pinterest-published.json');
 const MAX_PINS_PER_RUN = 3;
 const DAYS_LOOKBACK = 14;
+const PIN_DESCRIPTION_MAX = 500; // limite da API do Pinterest
+const PIN_TITLE_MAX = 100; // limite da API do Pinterest
+const LLM_TIMEOUT_MS = 25000; // não pode travar o workflow (timeout: 10min, 3 pins)
+const CTA_TEXT = 'Veja o passo a passo completo no blog FinMoovi.';
 
 // Pinterest API config
 const PINTEREST_API_BASE = 'https://api.pinterest.com/v5';
@@ -161,6 +166,7 @@ function parseFrontmatter(content) {
 
 /**
  * Generate Pinterest-optimized description (max 150 chars with hashtags)
+ * ÚLTIMO recurso — usada só se até o fallback determinístico (abaixo) falhar.
  */
 function generatePinDescription(title, category, tags) {
   // Hashtags base derivadas das keywords do nicho no config
@@ -181,6 +187,169 @@ function generatePinDescription(title, category, tags) {
   }
 
   return `${desc} | ${hashtagStr}`;
+}
+
+/**
+ * Trunca texto com segurança em `max` caracteres, sem cortar palavra no meio,
+ * e sem nunca ultrapassar o limite (reserva 1 char para a reticência "…").
+ */
+function truncateSafe(text, max) {
+  const clean = String(text || '').replace(/\s+/g, ' ').trim();
+  if (clean.length <= max) return clean;
+
+  const limit = Math.max(0, max - 1); // reserva espaço para "…"
+  let cut = clean.slice(0, limit);
+  const lastSpace = cut.lastIndexOf(' ');
+  if (lastSpace > limit * 0.5) cut = cut.slice(0, lastSpace);
+
+  return cut.replace(/[\s.,;:!?-]+$/, '') + '…';
+}
+
+/**
+ * Cap do título do pin (limite da API: 100 chars), sem cortar palavra no meio.
+ */
+function truncatePinTitle(title) {
+  return truncateSafe(title, PIN_TITLE_MAX);
+}
+
+/**
+ * Parseia a lista de tags do frontmatter. O parser de frontmatter deste script
+ * não interpreta arrays (mantém o valor bruto tipo `["a","b"]`), então tentamos
+ * JSON.parse e, se falhar, extraímos substrings entre aspas ou fazemos split
+ * simples por vírgula.
+ */
+function parseTagsList(tagsRaw) {
+  if (!tagsRaw) return [];
+  try {
+    const parsed = JSON.parse(tagsRaw);
+    if (Array.isArray(parsed)) return parsed.filter(Boolean).map(String);
+  } catch {
+    // não é JSON válido — tenta outras formas abaixo
+  }
+  const quoted = [...String(tagsRaw).matchAll(/"([^"]+)"/g)].map(m => m[1]);
+  if (quoted.length) return quoted;
+  return String(tagsRaw)
+    .replace(/[[\]]/g, '')
+    .split(',')
+    .map(s => s.trim())
+    .filter(Boolean);
+}
+
+/**
+ * Corre uma Promise contra um timeout — nunca deixa o LLM travar a publicação.
+ */
+function withTimeout(promise, ms) {
+  return Promise.race([
+    promise,
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error(`timeout após ${ms}ms`)), ms),
+    ),
+  ]);
+}
+
+/**
+ * Monta o prompt em pt-BR para a descrição rica do pin. Usa SOMENTE o que já
+ * está no título/descrição do post (proibido inventar dados/números).
+ */
+function buildPinLLMPrompt(post) {
+  const tagsList = parseTagsList(post.tags);
+  const mainKeyword = post.category || tagsList[0] || post.title;
+
+  return `Você é redator de SEO para Pinterest, especialista em finanças pessoais (pt-BR).
+
+Escreva UMA descrição de pin do Pinterest para o post abaixo. Regras obrigatórias:
+- Entre 300 e 450 caracteres (nunca ultrapasse 500).
+- Comece pela palavra-chave principal: "${mainKeyword}".
+- Destaque um benefício concreto para quem lê, usando SOMENTE informações que já apareçam no título ou na descrição do post abaixo — NÃO invente números, estatísticas ou fatos que não estejam ali.
+- Inclua a chamada para ação: "${CTA_TEXT}"
+- Termine com 2 a 4 hashtags relevantes em português (ex: #financaspessoais #orcamento).
+- Não use markdown, aspas, emojis em excesso ou quebras de linha. Escreva em um único parágrafo corrido.
+
+Título do post: "${post.title}"
+Descrição do post: "${post.description || '(sem descrição)'}"
+Categoria: "${post.category || 'finanças pessoais'}"
+
+Responda APENAS com a descrição final do pin, sem explicações.`;
+}
+
+/**
+ * Limpa/valida a resposta do LLM. Retorna null se a resposta vier vazia,
+ * curta demais ou de alguma forma inutilizável — o chamador cai no fallback.
+ */
+function sanitizeLLMDescription(raw) {
+  if (!raw) return null;
+  let text = String(raw).trim();
+  text = text.replace(/^["'“”]+|["'“”]+$/g, '').trim();
+  text = text.replace(/^(descri[cç][aã]o( do pin)?:?)\s*/i, '').trim();
+  text = text.replace(/\s+/g, ' ').trim();
+  if (text.length < 50) return null;
+  return truncateSafe(text, PIN_DESCRIPTION_MAX);
+}
+
+/**
+ * Tenta gerar a descrição rica via LLM (Cerebras → Groq → Cloudflare, ver
+ * src/scripts/apis/kie-ai.js). Nunca lança para o chamador travar a publicação
+ * — erros/timeout resultam em null e o chamador decide o fallback.
+ */
+async function generateLLMDescription(post) {
+  const prompt = buildPinLLMPrompt(post);
+  const raw = await withTimeout(
+    generateText(prompt, { maxTokens: 220, temperature: 0.7 }),
+    LLM_TIMEOUT_MS,
+  );
+  return sanitizeLLMDescription(raw);
+}
+
+/**
+ * Fallback determinístico (SEM IA): description do frontmatter + CTA +
+ * hashtags derivadas de category/tags. Cap de 500 chars. Nunca lança.
+ */
+function generateFallbackDescription(post) {
+  const base = (post.description || post.title || '').trim();
+  const tagsList = parseTagsList(post.tags);
+
+  const hashtags = [];
+  const seen = new Set();
+  const addHashtag = (source) => {
+    if (!source || hashtags.length >= 3) return;
+    const tag = `#${tagSlug(source)}`;
+    if (tag.length > 1 && !seen.has(tag)) {
+      seen.add(tag);
+      hashtags.push(tag);
+    }
+  };
+
+  addHashtag(post.category);
+  for (const tag of tagsList) addHashtag(tag);
+  for (const kw of NICHE_KEYWORDS) addHashtag(kw);
+
+  const parts = [base, CTA_TEXT, hashtags.join(' ')].filter(Boolean);
+  return truncateSafe(parts.join(' '), PIN_DESCRIPTION_MAX);
+}
+
+/**
+ * Orquestra a geração da descrição do pin com 3 camadas de segurança:
+ * 1) LLM (rica, SEO) → 2) fallback determinístico → 3) fallback legado mínimo.
+ * NUNCA lança — a publicação do pin não pode ser bloqueada por isso.
+ */
+async function buildPinDescription(post) {
+  try {
+    const llmDescription = await generateLLMDescription(post);
+    if (llmDescription) {
+      console.log('  📝 Descrição gerada via LLM.');
+      return llmDescription;
+    }
+    console.log('  ⚠️  LLM retornou resposta vazia/inválida — usando fallback determinístico.');
+  } catch (err) {
+    console.log(`  ⚠️  LLM falhou (${err.message}) — usando fallback determinístico.`);
+  }
+
+  try {
+    return generateFallbackDescription(post);
+  } catch (err) {
+    console.log(`  ⚠️  Fallback determinístico falhou (${err.message}) — usando descrição mínima original.`);
+    return generatePinDescription(post.title, post.category, post.tags);
+  }
 }
 
 /**
@@ -205,7 +374,7 @@ function getPostUrl(slug) {
 async function publishPin({ title, description, link, imageUrl, boardId }) {
   const body = {
     board_id: boardId,
-    title: title.slice(0, 100), // Pinterest title max 100 chars
+    title: truncatePinTitle(title), // Pinterest title max 100 chars
     description: description,
     link: link,
     media_source: {
@@ -335,7 +504,7 @@ async function main() {
   let successCount = 0;
 
   for (const post of toPublish) {
-    const pinDescription = generatePinDescription(post.title, post.category, post.tags);
+    const pinDescription = await buildPinDescription(post);
     const imageUrl = getImageUrl(post.image);
     const postUrl = getPostUrl(post.slug);
 
