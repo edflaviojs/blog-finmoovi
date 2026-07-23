@@ -62,6 +62,93 @@ const fmtDate = (iso: string) => {
 };
 
 const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es: '🇪🇸' };
+
+// ── Fila de keywords (.github/data/keyword-queue.json, lida em BUILD TIME
+//    como os snapshots; arquivo ausente/corrompido → seção com estado vazio) ──
+interface QueueEntry {
+  keyword: string;
+  category: string | null;
+  priority: number;
+  source: string;
+  status: string;
+  addedAt: string;
+  usedAt?: string;
+  usedBy?: string;
+  reason?: string;
+}
+
+const queueFile = join(process.cwd(), '.github/data/keyword-queue.json');
+let queueEntries: QueueEntry[] = [];
+let queueUpdatedAt: string | null = null;
+if (existsSync(queueFile)) {
+  try {
+    const q = JSON.parse(readFileSync(queueFile, 'utf-8'));
+    if (Array.isArray(q?.entries)) queueEntries = q.entries;
+    queueUpdatedAt = q?.updatedAt || null;
+  } catch { /* fila ilegível → estado vazio */ }
+}
+
+const SOURCE_LABELS: [string, string][] = [
+  ['manual', '✍️ Manuais (prioridade 1)'],
+  ['gsc-gap', '🕳️ Lacunas do GSC (prioridade 2)'],
+  ['autocomplete', '🔮 Autocomplete (prioridade 3)'],
+];
+const pendingBySource = SOURCE_LABELS.map(([source, label]) => ({
+  source,
+  label,
+  items: queueEntries.filter(e => e.status === 'pending' && e.source === source),
+}));
+const pendingOther = queueEntries.filter(
+  e => e.status === 'pending' && !SOURCE_LABELS.some(([s]) => s === e.source)
+);
+const totalPending = queueEntries.filter(e => e.status === 'pending').length;
+const usedRecent = queueEntries
+  .filter(e => e.status === 'used')
+  .sort((a, b) => String(b.usedAt || '').localeCompare(String(a.usedAt || '')))
+  .slice(0, 10);
+const skippedRecent = queueEntries
+  .filter(e => e.status === 'skipped')
+  .sort((a, b) => String(b.addedAt || '').localeCompare(String(a.addedAt || '')))
+  .slice(0, 10);
+
+const REASON_LABELS: Record<string, string> = {
+  'ja-coberto': 'já coberta por post',
+  'coberto-glossario': 'já coberta pelo glossário',
+  'descartada-revisao': 'descartada na revisão',
+};
+const reasonLabel = (r?: string) => (r && REASON_LABELS[r]) || r || 'sem motivo registrado';
+const fmtIsoDay = (iso?: string) => (iso ? fmtDate(iso.split('T')[0]) : '—');
+
+// ── Oportunidades Reddit (.github/data/reddit-opportunities.json) ──
+interface RedditOpp {
+  foundAt: string;
+  redditUrl: string;
+  subreddit: string;
+  title: string;
+  matchedKeywords?: string[];
+  suggestedBlogPost?: string;
+}
+
+const redditFile = join(process.cwd(), '.github/data/reddit-opportunities.json');
+let redditOpps: RedditOpp[] = [];
+if (existsSync(redditFile)) {
+  try {
+    const parsed = JSON.parse(readFileSync(redditFile, 'utf-8'));
+    if (Array.isArray(parsed)) {
+      redditOpps = parsed
+        .slice()
+        .sort((a, b) => String(b.foundAt || '').localeCompare(String(a.foundAt || '')))
+        .slice(0, 10);
+    }
+  } catch { /* arquivo ilegível → estado vazio */ }
+}
+
+const daysAgo = (d: string) => {
+  const diff = Math.floor((Date.now() - new Date(`${d}T00:00:00Z`).getTime()) / 86400000);
+  if (!Number.isFinite(diff) || diff < 0) return '—';
+  if (diff === 0) return 'hoje';
+  return diff === 1 ? 'há 1 dia' : `há ${diff} dias`;
+};
 ---
 
 <BaseLayout
@@ -80,6 +167,138 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
           Atualiza a cada envio do digest (~6h40).
         </p>
       </header>
+
+      <section class="status-panel panel-enviar">
+        <h2>📥 Enviar keywords</h2>
+        <p class="panel-hint">
+          Entram no <code>data/keywords-manuais.csv</code> com prioridade 1; o workflow
+          sincroniza a fila automaticamente após o envio.
+        </p>
+        <form id="kw-form">
+          <textarea
+            id="kw-input"
+            rows="4"
+            placeholder={'Separe por vírgula ou uma por linha (máx. 50). Ex.:\ncomo montar reserva de emergência\ncdb ou tesouro direto, orçamento familiar simples'}
+            required
+          ></textarea>
+          <div class="kw-row">
+            <select id="kw-cat" aria-label="Categoria">
+              <option value="">Categoria: qualquer</option>
+              <option value="dicas">dicas</option>
+              <option value="investimentos">investimentos</option>
+              <option value="orcamento">orcamento</option>
+            </select>
+            <input
+              type="password"
+              id="kw-key"
+              placeholder="Senha de acesso"
+              autocomplete="off"
+              required
+            />
+            <button type="submit" id="kw-btn">Enviar</button>
+          </div>
+          <p id="kw-feedback" class="kw-feedback" hidden></p>
+        </form>
+      </section>
+
+      <section class="status-panel panel-fila">
+        <h2>🗂️ Fila de keywords <span class="count">({totalPending} pendente{totalPending === 1 ? '' : 's'})</span></h2>
+        {queueEntries.length === 0 ? (
+          <p class="empty-line">Fila ainda vazia — envie keywords acima ou aguarde a próxima sincronização. 🌱</p>
+        ) : (
+          <>
+            {queueUpdatedAt && (
+              <p class="panel-hint">Última sincronização: {fmtIsoDay(queueUpdatedAt)}</p>
+            )}
+            {pendingBySource.map(group => (
+              <div class="fila-grupo">
+                <h3>{group.label} <span class="count">({group.items.length})</span></h3>
+                {group.items.length === 0 ? (
+                  <p class="empty-line">Nenhuma.</p>
+                ) : (
+                  <ul>
+                    {group.items.map(e => (
+                      <li>
+                        {e.keyword}
+                        {e.category && <span class="tag">{e.category}</span>}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+            {pendingOther.length > 0 && (
+              <div class="fila-grupo">
+                <h3>🧩 Outras fontes <span class="count">({pendingOther.length})</span></h3>
+                <ul>
+                  {pendingOther.map(e => (
+                    <li>
+                      {e.keyword}
+                      <span class="tag">{e.source}</span>
+                      {e.category && <span class="tag">{e.category}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            <div class="fila-grupo">
+              <h3>✅ Últimas usadas <span class="count">({usedRecent.length})</span></h3>
+              {usedRecent.length === 0 ? (
+                <p class="empty-line">Nenhuma ainda.</p>
+              ) : (
+                <ul>
+                  {usedRecent.map(e => (
+                    <li>
+                      {e.keyword}
+                      {e.usedBy && <span class="tag">{e.usedBy}</span>}
+                      <span class="time">{fmtIsoDay(e.usedAt)}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            <div class="fila-grupo">
+              <h3>⏭️ Últimas puladas <span class="count">({skippedRecent.length})</span></h3>
+              {skippedRecent.length === 0 ? (
+                <p class="empty-line">Nenhuma.</p>
+              ) : (
+                <ul>
+                  {skippedRecent.map(e => (
+                    <li>
+                      {e.keyword}
+                      <span class="tag">{reasonLabel(e.reason)}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </>
+        )}
+      </section>
+
+      <section class="status-panel panel-reddit">
+        <h2>💬 Oportunidades Reddit <span class="count">({redditOpps.length})</span></h2>
+        <p class="panel-hint">
+          O monitor roda diariamente às 7h UTC; responder é manual — cada item traz o
+          post do blog sugerido para usar como referência na resposta.
+        </p>
+        {redditOpps.length === 0 ? (
+          <p class="empty-line">Nenhuma oportunidade nos últimos 30 dias. O monitor segue vigiando. 👀</p>
+        ) : (
+          <ul>
+            {redditOpps.map(o => (
+              <li>
+                <a href={o.redditUrl} target="_blank" rel="noopener noreferrer nofollow">{o.title}</a>
+                <span class="tag">r/{o.subreddit}</span>
+                <span class="time">{daysAgo(o.foundAt)}</span>
+                {o.suggestedBlogPost && (
+                  <a class="sugestao" href={o.suggestedBlogPost} target="_blank" rel="noopener noreferrer">post sugerido ↗</a>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
 
       <section class="status-pendencias">
         <h2>📋 Pendências abertas <span class="count">({pendencias.length})</span></h2>
@@ -202,6 +421,61 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
   <Footer />
 </BaseLayout>
 
+<script>
+  // Envio de keywords → POST /api/keywords (Cloudflare Pages Function).
+  const form = document.getElementById('kw-form');
+  const input = document.getElementById('kw-input');
+  const cat = document.getElementById('kw-cat');
+  const key = document.getElementById('kw-key');
+  const btn = document.getElementById('kw-btn');
+  const feedback = document.getElementById('kw-feedback');
+
+  function showFeedback(msg, ok) {
+    if (!feedback) return;
+    feedback.textContent = msg;
+    feedback.classList.toggle('ok', ok);
+    feedback.classList.toggle('err', !ok);
+    feedback.hidden = false;
+  }
+
+  if (form) {
+    form.addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      if (!input.value.trim() || !key.value) return;
+      btn.disabled = true;
+      btn.textContent = 'Enviando...';
+      try {
+        const res = await fetch('/api/keywords', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            accessKey: key.value,
+            keywords: input.value,
+            categoria: cat.value,
+          }),
+        });
+        let data = {};
+        try { data = await res.json(); } catch { /* resposta sem JSON */ }
+        if (res.ok) {
+          showFeedback(
+            `✅ ${data.sent ?? '?'} keyword(s) enviadas! O CSV já foi commitado; a fila atualiza em ~2-3 min, ` +
+            'depois que o workflow keywords-manuais rodar (esta página mostra a fila do último build).',
+            true
+          );
+          input.value = '';
+        } else {
+          showFeedback(`❌ ${data.error || `Erro ${res.status} — tente novamente.`}`, false);
+        }
+      } catch {
+        showFeedback('❌ Falha de rede — verifique a conexão e tente de novo.', false);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Enviar';
+      }
+    });
+  }
+</script>
+
 <style>
   .status-page {
     padding: var(--space-8) 0 var(--space-16);
@@ -226,6 +500,167 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
     color: var(--text-secondary);
     max-width: 560px;
     margin: 0 auto;
+  }
+
+  /* ── Painéis operacionais (enviar / fila / reddit) ── */
+  .status-panel {
+    max-width: 760px;
+    margin: 0 auto var(--space-8);
+    padding: var(--space-5) var(--space-6);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+  }
+
+  .status-panel.panel-enviar {
+    border-left: 3px solid var(--accent-green, #3fb950);
+  }
+
+  .status-panel.panel-fila {
+    border-left: 3px solid var(--accent-blue, #58a6ff);
+  }
+
+  .status-panel.panel-reddit {
+    border-left: 3px solid var(--accent-orange, #f0883e);
+  }
+
+  .status-panel h2 {
+    font-size: var(--text-lg);
+    margin: 0 0 var(--space-3);
+  }
+
+  .status-panel .count {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    font-weight: 400;
+  }
+
+  .status-panel .panel-hint {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin: 0 0 var(--space-3);
+  }
+
+  .status-panel code {
+    font-size: var(--text-xs, 0.75rem);
+    background: var(--bg-primary);
+    border: 1px solid var(--border-muted);
+    border-radius: 4px;
+    padding: 1px 5px;
+  }
+
+  .status-panel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .status-panel li {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    padding: var(--space-1) 0;
+    border-bottom: 1px solid var(--border-muted);
+  }
+
+  .status-panel li:last-child {
+    border-bottom: none;
+  }
+
+  .status-panel a {
+    color: var(--text-link);
+    text-decoration: none;
+  }
+
+  .status-panel a:hover {
+    text-decoration: underline;
+  }
+
+  .fila-grupo {
+    margin-top: var(--space-4);
+    border-top: 1px solid var(--border-muted);
+    padding-top: var(--space-3);
+  }
+
+  .fila-grupo h3 {
+    font-size: var(--text-sm);
+    color: var(--text-primary, #f0f6fc);
+    margin: 0 0 var(--space-2);
+  }
+
+  .sugestao {
+    margin-left: var(--space-2);
+    font-size: var(--text-xs, 0.75rem);
+  }
+
+  /* Formulário de envio */
+  #kw-form textarea,
+  #kw-form select,
+  #kw-form input {
+    width: 100%;
+    background: var(--bg-primary);
+    color: var(--text-primary, #f0f6fc);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md, 8px);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-sm);
+    font-family: inherit;
+  }
+
+  #kw-form textarea {
+    resize: vertical;
+    margin-bottom: var(--space-3);
+  }
+
+  #kw-form textarea:focus,
+  #kw-form select:focus,
+  #kw-form input:focus {
+    outline: none;
+    border-color: var(--accent-blue, #58a6ff);
+  }
+
+  .kw-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .kw-row select,
+  .kw-row input {
+    flex: 1 1 180px;
+  }
+
+  .kw-row button {
+    flex: 0 0 auto;
+    padding: var(--space-2) var(--space-6);
+    background: var(--gradient-hero, linear-gradient(135deg, #00F0FF, #A91079));
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    border: none;
+    border-radius: var(--radius-md, 8px);
+    cursor: pointer;
+  }
+
+  .kw-row button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+
+  .kw-feedback {
+    margin: var(--space-3) 0 0;
+    font-size: var(--text-sm);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md, 8px);
+  }
+
+  .kw-feedback.ok {
+    color: var(--accent-green, #3fb950);
+    background: rgba(63, 185, 80, 0.08);
+  }
+
+  .kw-feedback.err {
+    color: var(--accent-red, #f85149);
+    background: rgba(248, 81, 73, 0.08);
   }
 
   .status-pendencias {

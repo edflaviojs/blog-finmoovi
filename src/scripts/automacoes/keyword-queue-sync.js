@@ -80,7 +80,7 @@ function importCsv() {
     });
   }
   const res = addEntries(rows);
-  console.log(`📋 CSV manual: ${rows.length} linha(s) → ${res.added} nova(s), ${res.duplicates} já na fila.`);
+  console.log(`📋 CSV manual: ${rows.length} linha(s) → ${res.added} nova(s), ${res.duplicates} já na fila, ${res.similar || 0} quase-duplicata(s) descartada(s).`);
   return res;
 }
 
@@ -111,7 +111,7 @@ function importGscGaps() {
     rows.push({ keyword: query, category: null, priority: 2, source: 'gsc-gap' });
   }
   const res = addEntries(rows);
-  console.log(`🕳️ Lacunas GSC: ${gaps.length} no digest → ${res.added} nova(s), ${res.duplicates} já na fila, ${nonPt} descartada(s) por não-PT.`);
+  console.log(`🕳️ Lacunas GSC: ${gaps.length} no digest → ${res.added} nova(s), ${res.duplicates} já na fila, ${res.similar || 0} quase-duplicata(s) descartada(s), ${nonPt} descartada(s) por não-PT.`);
   return res;
 }
 
@@ -199,7 +199,7 @@ async function expandAutocomplete() {
   }
 
   const res = addEntries(rows);
-  console.log(`🔮 Autocomplete: ${seeds.length} seed(s) consultada(s) → ${res.added} nova(s), ${res.duplicates} já na fila.`);
+  console.log(`🔮 Autocomplete: ${seeds.length} seed(s) consultada(s) → ${res.added} nova(s), ${res.duplicates} já na fila, ${res.similar || 0} quase-duplicata(s) descartada(s).`);
   return res;
 }
 

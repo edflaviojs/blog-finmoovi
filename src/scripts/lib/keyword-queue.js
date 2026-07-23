@@ -21,7 +21,7 @@
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
-import { isThemeCovered } from './seo-guard.js';
+import { isThemeCovered, coreTokens, jaccardSim, slugifyTheme } from './seo-guard.js';
 
 export const QUEUE_FILE = join(process.cwd(), '.github', 'data', 'keyword-queue.json');
 
@@ -83,23 +83,57 @@ export function saveQueue(queue, file = QUEUE_FILE) {
   }
 }
 
+/** Tokens de núcleo de uma keyword (mesma semântica do seo-guard: slugify + STOPWORDS). */
+function keywordCoreTokens(keyword) {
+  return coreTokens(slugifyTheme(keyword));
+}
+
+// REGRA (dedup por semelhança): keywords CURTAS (1-2 tokens de núcleo) passam
+// SÓ pelo dedup exato — senão "cdb" mataria "cdb ou tesouro" e vice-versa
+// (Jaccard entre conjuntos pequenos dispara fácil). A checagem de semelhança
+// só roda quando a keyword NOVA tem ≥ 3 tokens de núcleo.
+const SIMILARITY_MIN_TOKENS = 3;
+
+/**
+ * Quase-duplicata = mesma semântica do seo-guard/validador: ≥ 3 tokens de
+ * núcleo em comum OU Jaccard ≥ 0.7 entre os conjuntos de tokens.
+ * `cand` é o Set de tokens da keyword nova; `existingSets` são os Sets das
+ * entries já na fila (QUALQUER status — used/skipped não voltam para a fila,
+ * e uma quase-duplicata delas também não deve voltar).
+ */
+function isNearDuplicate(cand, existingSets) {
+  if (cand.size < SIMILARITY_MIN_TOKENS) return false; // curtas: só dedup exato
+  for (const other of existingSets) {
+    const shared = [...cand].filter(x => other.has(x)).length;
+    if (shared >= 3 || jaccardSim(cand, other) >= 0.7) return true;
+  }
+  return false;
+}
+
 /**
  * Adiciona entries com dedup por keyword normalizada contra TODAS as entries
- * existentes (qualquer status — used/skipped não voltam para a fila).
+ * existentes (qualquer status — used/skipped não voltam para a fila) e dedup
+ * por SEMELHANÇA (quase-duplicatas, semântica do seo-guard — ver
+ * isNearDuplicate/SIMILARITY_MIN_TOKENS acima).
  * item = { keyword, category?, priority, source }
- * Retorna { added, duplicates }.
+ * Retorna { added, duplicates, similar }.
  */
 export function addEntries(list, file = QUEUE_FILE) {
   const queue = loadQueue(file);
   const known = new Set(queue.entries.map(e => normalizeKeyword(e.keyword)));
+  const knownTokens = queue.entries.map(e => keywordCoreTokens(e.keyword));
   let added = 0;
   let duplicates = 0;
+  let similar = 0;
   for (const item of list || []) {
     const keyword = String(item?.keyword || '').replace(/\s+/g, ' ').trim();
     const norm = normalizeKeyword(keyword);
     if (!norm) continue;
     if (known.has(norm)) { duplicates++; continue; }
+    const cand = keywordCoreTokens(keyword);
+    if (isNearDuplicate(cand, knownTokens)) { similar++; continue; }
     known.add(norm);
+    knownTokens.push(cand);
     queue.entries.push({
       keyword,
       category: VALID_CATEGORIES.has(item.category) ? item.category : null,
@@ -111,7 +145,7 @@ export function addEntries(list, file = QUEUE_FILE) {
     added++;
   }
   if (added > 0) saveQueue(queue, file);
-  return { added, duplicates };
+  return { added, duplicates, similar };
 }
 
 /**
