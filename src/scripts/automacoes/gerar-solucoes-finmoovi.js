@@ -7,7 +7,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
-import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
+import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -21,18 +21,29 @@ const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
  * Se config.ai.solutionTopics tem itens, gera scenarios dinamicamente via IA.
  * Se não, usa os exemplos hardcoded (finance-specific como fallback/exemplo).
  */
-async function getSolutionTopics() {
+async function getSolutionTopics(forbiddenThemes = []) {
   const dynamicTopics = config.ai?.solutionTopics || [];
 
   if (dynamicTopics.length > 0) {
-    // Generate scenarios from AI using the solutionTopics as seeds
-    const topic = dynamicTopics[Math.floor(Math.random() * dynamicTopics.length)];
-    const prompt = `Crie um cenário de post para o blog ${config.brand.name} no nicho de ${config.content.niche.pt}.
+    // Generate scenarios from AI using the solutionTopics as seeds.
+    // Shape no site.config.ts: { topic: string, keywords: string[] }.
+    const seed = dynamicTopics[Math.floor(Math.random() * dynamicTopics.length)];
+    const seedTopic = typeof seed === 'string' ? seed : seed.topic;
+    const seedKeywords = (seed && Array.isArray(seed.keywords)) ? seed.keywords : [];
+    const avoidBlock = coveredThemesBlock(POSTS_DIR);
+    const forbiddenBlock = forbiddenThemes.length
+      ? `\nTEMAS PROIBIDOS (já rejeitados pelo guard anti-canibalização — NÃO use estes nem variações próximas):\n${forbiddenThemes.map(t => `- ${t}`).join('\n')}\n`
+      : '';
+    const prompt = `${avoidBlock}${forbiddenBlock}
+Crie um cenário de post para o blog ${config.brand.name} no nicho de ${config.content.niche.pt}.
 
 O app se chama ${config.app.name} e está em ${config.app.url}.
 Funcionalidades do app: ${config.app.features.pt.join(', ')}.
 
-Tópico de solução: "${topic}"
+Tópico de solução: "${seedTopic}"
+Keywords semente (inclua-as no array "keywords"): ${seedKeywords.join(', ')}
+
+O campo "problem" NÃO pode repetir o núcleo de palavras de nenhum tema já publicado listado acima.
 
 Responda em JSON com esta estrutura (sem markdown, só JSON):
 {
@@ -46,6 +57,8 @@ Responda em JSON com esta estrutura (sem markdown, só JSON):
       const response = await generateText(prompt);
       const cleaned = response.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
       const parsed = JSON.parse(cleaned);
+      // Seed keywords do config entram como base das keywords do post.
+      parsed.keywords = [...new Set([...(Array.isArray(parsed.keywords) ? parsed.keywords : []), ...seedKeywords])];
       return [parsed];
     } catch (e) {
       console.log('⚠️  Falha ao gerar cenário com IA, usando fallback');
@@ -264,14 +277,6 @@ ${data.content}
 async function main() {
   console.log(`🚀 Gerando post "Soluções ${config.app.name}"...`);
 
-  const topics = await getSolutionTopics();
-  const weekOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (86400000 * 7));
-  const topicIndex = weekOfYear % topics.length;
-  const topic = topics[topicIndex];
-
-  console.log(`📝 Problema: ${topic.problem}`);
-  console.log(`🔧 Feature: ${topic.feature}`);
-
   const today = new Date().toISOString().split('T')[0];
 
   // Guard: check if a solucoes post was already generated this week
@@ -284,12 +289,36 @@ async function main() {
     }
   }
 
-  // Anti-canibalização: pula sem gastar a API cara de geração se o tema já está coberto.
-  const canibal = isThemeCovered(topic.problem, POSTS_DIR);
-  if (canibal.covered) {
-    console.log(`⚠️ Anti-canibalização: "${topic.problem}" conflita com "${canibal.conflictSlug}" (${canibal.shared.join(', ')}). Abortando sem gastar API.`);
+  // Seleção do cenário com anti-canibalização + retry: se o guard rejeitar o
+  // cenário gerado, regenera até 2x adicionais passando o tema rejeitado como
+  // proibido, antes de desistir.
+  const weekOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (86400000 * 7));
+  const forbiddenThemes = [];
+  let topic = null;
+  for (let attempt = 1; attempt <= 3 && !topic; attempt++) {
+    const topics = await getSolutionTopics(forbiddenThemes);
+    // Cenário dinâmico retorna 1 item (índice 0); no fallback estático, avança
+    // o índice a cada tentativa para não repetir o mesmo tema rejeitado.
+    const topicIndex = (weekOfYear + (attempt - 1)) % topics.length;
+    const cand = topics[topicIndex];
+    const canibal = isThemeCovered(cand.problem, POSTS_DIR);
+    if (!canibal.covered) {
+      topic = cand;
+      break;
+    }
+    console.log(`⚠️ Anti-canibalização (tentativa ${attempt}/3): "${cand.problem}" conflita com "${canibal.conflictSlug}" (${canibal.shared.join(', ')}).`);
+    forbiddenThemes.push(cand.problem);
+  }
+
+  if (!topic) {
+    console.log('⚠️ Anti-canibalização: 3 cenários seguidos conflitaram com posts existentes. Abortando sem publicar.');
+    warnSkip(`soluções: ${forbiddenThemes[forbiddenThemes.length - 1]}`, '3 cenários rejeitados pelo guard');
     return;
   }
+
+  console.log(`📝 Problema: ${topic.problem}`);
+  console.log(`🔧 Feature: ${topic.feature}`);
+
   const avoidBlock = coveredThemesBlock(POSTS_DIR);
 
   const prompt = `

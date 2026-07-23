@@ -16,7 +16,7 @@
  * o guard pula aqui é exatamente o que o validador bloquearia depois.
  */
 
-import { readdirSync, existsSync } from 'fs';
+import { readdirSync, existsSync, appendFileSync } from 'fs';
 import { join } from 'path';
 
 export const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
@@ -76,6 +76,22 @@ export function isThemeCovered(theme, postsDir = POSTS_DIR) {
     }
   }
   return { covered: false };
+}
+
+/**
+ * Torna um skip anti-canibalização VISÍVEL no GitHub Actions sem mudar o exit
+ * code (skip legítimo continua verde): emite workflow command `::warning::` e,
+ * se GITHUB_STEP_SUMMARY existir, anexa uma linha explicativa ao summary.
+ * Fora do Actions vira um console.log inofensivo.
+ */
+export function warnSkip(theme, detail = '') {
+  const msg = `skip anti-canibalização — ${theme}${detail ? ` (${detail})` : ''}`;
+  console.log(`::warning::${msg}`);
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    try {
+      appendFileSync(process.env.GITHUB_STEP_SUMMARY, `⚠️ ${msg}\n\n`);
+    } catch { /* summary é best-effort; nunca derruba o gerador */ }
+  }
 }
 
 /**

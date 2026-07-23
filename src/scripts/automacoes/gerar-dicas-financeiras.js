@@ -6,7 +6,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateBlogPost, generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
-import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
+import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -16,10 +16,9 @@ import { execSync } from 'child_process';
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 
-// Topics pool — uses config.ai.dailyTopics if available, otherwise falls back to niche defaults
-const TOPICS = (config.ai?.dailyTopics?.length > 0)
-  ? config.ai.dailyTopics
-  : [
+// Fallback pool (niche defaults) — sempre combinado com config.ai.dailyTopics
+// para a seleção resiliente ter mais opções quando os temas do config esgotam.
+const FALLBACK_TOPICS = [
   'como economizar dinheiro no supermercado',
   'como negociar dívidas com o banco',
   'como montar um orçamento familiar',
@@ -62,6 +61,9 @@ const TOPICS = (config.ai?.dailyTopics?.length > 0)
   'como economizar na conta do mercado toda semana',
   'como lidar com dinheiro quando se é jovem',
 ];
+
+// Pool COMBINADO (config primeiro, depois o fallback interno), com dedupe exato.
+const TOPICS = [...new Set([...(config.ai?.dailyTopics || []), ...FALLBACK_TOPICS])];
 
 /**
  * Translate a post to another language using Groq
@@ -234,13 +236,6 @@ ${data.content}
 async function main() {
   console.log('🚀 Gerando post de dica financeira (PT + EN + ES)...');
 
-  // Pick topic based on day of year (rotates through pool)
-  const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
-  const topicIndex = dayOfYear % TOPICS.length;
-  const topic = TOPICS[topicIndex];
-
-  console.log(`📝 Tópico: ${topic}`);
-
   // Guard: check if a dica was already generated today (prevent duplicates)
   const today = new Date().toISOString().split('T')[0];
   const existingFiles = readdirSync(POSTS_DIR).filter(f => f.endsWith('.md') && !f.startsWith('en-') && !f.startsWith('es-'));
@@ -254,12 +249,54 @@ async function main() {
     }
   }
 
-  // Anti-canibalização: pula sem gastar API se o tema já está coberto.
-  const canibal = isThemeCovered(topic, POSTS_DIR);
-  if (canibal.covered) {
-    console.log(`⚠️ Anti-canibalização: "${topic}" conflita com "${canibal.conflictSlug}" (${canibal.shared.join(', ')}). Abortando sem gastar API.`);
+  // Seleção resiliente: parte do índice do dia e itera o pool combinado até
+  // achar o 1º tema NÃO coberto (mesmo isThemeCovered do guard/validador).
+  const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
+  const topicIndex = dayOfYear % TOPICS.length;
+  let topic = null;
+  let skippedCovered = 0;
+  for (let i = 0; i < TOPICS.length; i++) {
+    const cand = TOPICS[(topicIndex + i) % TOPICS.length];
+    const canibal = isThemeCovered(cand, POSTS_DIR);
+    if (!canibal.covered) { topic = cand; break; }
+    skippedCovered++;
+  }
+  if (skippedCovered > 0) {
+    console.log(`ℹ️ Anti-canibalização: ${skippedCovered} tema(s) do pool já coberto(s) foram pulados na seleção.`);
+  }
+
+  // Pool esgotado: pede ao LLM um tema INÉDITO (injetando os temas já cobertos)
+  // e valida a resposta contra o mesmo guard — 2 tentativas.
+  if (!topic) {
+    console.log(`⚠️ Todos os ${TOPICS.length} temas do pool já estão cobertos. Pedindo tema inédito ao LLM...`);
+    const avoid = coveredThemesBlock(POSTS_DIR);
+    for (let attempt = 1; attempt <= 2 && !topic; attempt++) {
+      try {
+        const resp = await generateText(`${avoid}
+Sugira UM tema inédito de finanças pessoais para um post de blog em português brasileiro, no formato prático "como fazer X" ou pergunta específica (ex: "como economizar na farmácia todo mês").
+O tema NÃO pode repetir o núcleo de palavras de nenhum tema listado acima.
+Responda APENAS com o tema, em uma única linha, sem aspas e sem explicação.`, { maxTokens: 60, temperature: 0.9 });
+        const cand = String(resp || '').trim().split('\n')[0].replace(/^["'\-\s]+|["'\s.]+$/g, '');
+        if (cand && !isThemeCovered(cand, POSTS_DIR).covered) {
+          topic = cand;
+          console.log(`💡 Tema inédito sugerido pelo LLM (tentativa ${attempt}/2): "${cand}"`);
+        } else {
+          console.log(`⚠️ Tentativa ${attempt}/2: tema sugerido pelo LLM ("${cand}") também está coberto ou é inválido.`);
+        }
+      } catch (e) {
+        console.log(`⚠️ Tentativa ${attempt}/2: falha ao pedir tema ao LLM (${e.message}).`);
+      }
+    }
+  }
+
+  // Skip final: pool esgotado E LLM não trouxe tema válido — visível no Actions.
+  if (!topic) {
+    console.log('⚠️ Anti-canibalização: nenhum tema livre no pool combinado e o LLM não sugeriu tema inédito válido. Pulando hoje sem publicar.');
+    warnSkip('dicas: pool combinado esgotado', 'LLM não sugeriu tema inédito válido em 2 tentativas');
     return;
   }
+
+  console.log(`📝 Tópico: ${topic}`);
 
   try {
     // 1. Generate PT post

@@ -13,7 +13,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateBlogPost, generateCoverImage, generateText } from '../apis/kie-ai.js';
 import { getDueHoliday } from '../lib/calendario-sazonal.js';
-import { isThemeCovered } from '../lib/seo-guard.js';
+import { isThemeCovered, warnSkip } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear } from '../lib/year-guard.js';
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
@@ -115,6 +115,7 @@ async function main() {
   const canibal = isThemeCovered(holiday.ptTopic, POSTS_DIR);
   if (canibal.covered) {
     console.log(`⚠️ Anti-canibalização: tema conflita com "${canibal.conflictSlug}". Pulando sem gastar API.`);
+    warnSkip(holiday.ptTopic, `conflita com ${canibal.conflictSlug}`);
     return;
   }
 

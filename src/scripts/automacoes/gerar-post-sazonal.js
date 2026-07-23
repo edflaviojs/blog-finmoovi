@@ -7,7 +7,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
-import { isThemeCovered, coveredThemesBlock } from '../lib/seo-guard.js';
+import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -196,6 +196,7 @@ async function main() {
   const canibal = isThemeCovered(topic.topic, POSTS_DIR);
   if (canibal.covered) {
     console.log(`⚠️ Anti-canibalização: "${topic.topic}" conflita com "${canibal.conflictSlug}" (${canibal.shared.join(', ')}). Abortando sem gastar API.`);
+    warnSkip(topic.topic, `conflita com ${canibal.conflictSlug}`);
     return;
   }
   const avoidBlock = coveredThemesBlock(POSTS_DIR);
