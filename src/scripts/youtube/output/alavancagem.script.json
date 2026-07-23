@@ -1,0 +1,198 @@
+{
+  "slug": "alavancagem",
+  "term": "Alavancagem",
+  "category": "mercado",
+  "keyword": "Alavancagem",
+  "nextVideoTitle": "Alavancagem em ações: potencialize seus ganhos",
+  "intro": {
+    "style": "desafio",
+    "frase": "*Desafio*: transformar R$ 10.000 em *R$ 30.000* com Alavancagem???",
+    "counter": {
+      "from": 10000,
+      "to": 30000,
+      "prefix": "R$"
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Alavancagem, já pensou transformar R$ 10.000 em R$ 30.000 usando só o banco?",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "Alavancagem",
+          "visual": {
+            "type": "statement",
+            "text": "Alavancagem",
+            "note": "texto grande"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 10.000",
+            "note": "aparece grande"
+          },
+          "sfx": null
+        },
+        {
+          "anchor": "banco",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet",
+            "note": "ícone de carteira"
+          },
+          "sfx": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "É como pegar um empréstimo de R$ 150.000, comprar um imóvel, e se o preço sobe para R$ 250.000, seu lucro vira 100% sobre a entrada de R$ 50.000.",
+      "durationSec": 13,
+      "shots": [
+        {
+          "anchor": "empréstimo",
+          "visual": {
+            "type": "icon",
+            "icon": "bank",
+            "note": "ícone de banco"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 150.000",
+            "note": "valor do empréstimo"
+          },
+          "sfx": null
+        },
+        {
+          "anchor": "imóvel",
+          "visual": {
+            "type": "icon",
+            "icon": "target",
+            "note": "ícone de alvo"
+          },
+          "sfx": null
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 250.000",
+            "note": "valor após alta"
+          },
+          "sfx": null
+        },
+        {
+          "anchor": "lucro",
+          "visual": {
+            "type": "statement",
+            "text": "100%",
+            "note": "porcentagem de lucro"
+          },
+          "sfx": null
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 50.000",
+            "note": "entrada inicial"
+          },
+          "sfx": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Essa alavancagem faz seu investimento decolar como um foguete, explode e multiplica seu capital. Dinheiro sem controle é dinheiro dos outros. Veja a calculadora em ação.",
+      "durationSec": 13,
+      "shots": [
+        {
+          "anchor": "decolar",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "foguete",
+            "note": "foguete decolando"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "explode",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "foguete",
+            "note": "foguete explodindo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "tela da calculadora"
+          },
+          "sfx": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "cta",
+      "narration": "Quer simular sua própria alavancagem? Abra a calculadora do FinMoovi, é grátis e fácil. Confira no dashboard como seu potencial de retorno cresce.",
+      "durationSec": 9,
+      "shots": [
+        {
+          "anchor": "alavancagem",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "nova tela da calculadora"
+          },
+          "sfx": null
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "visão geral no dashboard"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "outro",
+      "narration": "E no próximo vídeo vamos descobrir como usar alavancagem em ações para potencializar ganhos.",
+      "durationSec": 6,
+      "shots": [
+        {
+          "anchor": "próximo",
+          "visual": {
+            "type": "statement",
+            "text": "Alavancagem em ações",
+            "note": "teaser"
+          },
+          "sfx": null
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Simule agora com a nossa calculadora grátis!",
+    "target": "app"
+  },
+  "totalDurationSec": 46
+}
