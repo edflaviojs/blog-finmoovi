@@ -1,0 +1,75 @@
+name: Índice FinMoovi do Custo de Vida
+
+on:
+  schedule:
+    # Dia 13 de cada mês às 9h UTC (6h BRT).
+    # DECISÃO DO CRON: o IBGE divulga o IPCA do mês M por volta do dia 10-12 de
+    # M+1 (ex.: IPCA de junho sai ~10-12 de julho). Rodar no dia 5 arriscaria
+    # pegar um mês ainda NÃO publicado; no dia 13 o IPCA do mês anterior já
+    # está no SIDRA, então o script usa sempre o mês anterior como referência.
+    # Se mesmo assim o dado não existir (feriado/atraso do IBGE), o script faz
+    # skip gracioso (::warning:: + exit 0) e o workflow_dispatch permite re-rodar.
+    - cron: '0 9 13 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  gerar-indice:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gerar Índice do Custo de Vida
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/automacoes/indice-custo-de-vida.js
+
+      - name: Auto-sincronizar i18n (rede de segurança)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: node src/scripts/validacao/sincronizar-i18n.js --no-validate
+
+      - name: Validar consistência i18n
+        run: node src/scripts/validacao/validar-i18n.js
+
+      - name: Push changes
+        run: |
+          git pull --rebase origin main || true
+          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+            git push
+          else
+            echo "No changes to push"
+          fi

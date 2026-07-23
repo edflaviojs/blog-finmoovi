@@ -25,7 +25,7 @@ export const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 export const STOPWORDS = new Set(['de','da','do','das','dos','para','por','com','e','em','o','a','as','os','um','uma','no','na','nas','nos','ao','aos','se','sua','seu','suas','seus','que','qual','quais','como','ou','vs','sem','sobre','the','of','to','for','and','in','el','la','los','las','y','del','guia','completo','completa','complete','guide','dicas','tips','passo','melhor','mais','menos','voce','you','rende','vale','pena','realmente','importa','2025','2026','2027']);
 
 // Séries periódicas (cotações, glossário, meses) NUNCA são canibalização.
-export const SERIE_RE = /(semana|semanal|cotacoes|cotizaciones|quotes|week|glossario|glossary|glosario|janeiro|fevereiro|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|january|february|march|may|june|july|august|september|october|november|december|enero|febrero|marzo|mayo|junio|julio|septiembre|octubre|noviembre|diciembre)/;
+export const SERIE_RE = /(semana|semanal|cotacoes|cotizaciones|quotes|week|glossario|glossary|glosario|indice|index|janeiro|fevereiro|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|january|february|march|may|june|july|august|september|october|november|december|enero|febrero|marzo|mayo|junio|julio|septiembre|octubre|noviembre|diciembre)/;
 
 export function coreTokens(slug) {
   return new Set(slug.split('-').map(t => t.trim()).filter(t => t && t.length > 1 && !STOPWORDS.has(t)));
