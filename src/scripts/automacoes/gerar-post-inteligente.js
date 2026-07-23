@@ -175,8 +175,9 @@ REGRAS:
 - Use headers H2 e H3 para estruturar
 - Inclua exemplos práticos com números reais (salários brasileiros)
 - Tom conversacional mas profissional
+- O primeiro parágrafo deve responder diretamente à pergunta principal do tema em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 - Mencione o app ${config.app.name} naturalmente 1-2 vezes como ferramenta útil
-- Termine com uma conclusão motivacional
+- Termine com uma conclusão motivacional, seguida da seção final "## Perguntas frequentes" com 3-4 perguntas como H3 (###) e respostas diretas de 2-3 frases cada
 - NÃO use emojis no conteúdo (exceto em listas de dicas se fizer sentido)
 - NÃO invente estatísticas falsas — use dados gerais conhecidos
 - Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, Tesouro Direto https://www.tesourodireto.com.br, Investopedia https://www.investopedia.com, IBGE https://www.ibge.gov.br, NerdWallet https://www.nerdwallet.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.

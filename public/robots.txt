@@ -4,15 +4,43 @@ Allow: /
 Sitemap: https://blog.finmoovi.com/sitemap-index.xml
 Sitemap: https://blog.finmoovi.com/sitemap-news.xml
 
-# Block AI crawlers from training data
+# AI crawlers explicitly allowed (GEO — Generative Engine Optimization).
+# Queremos que assistentes de IA conheçam e citem o conteúdo do FinMoovi.
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
-User-agent: CCBot
-Disallow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bytespider
+Allow: /

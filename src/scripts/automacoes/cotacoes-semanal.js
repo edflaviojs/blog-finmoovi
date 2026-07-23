@@ -94,6 +94,17 @@ Mencione que ${config.app.name} ayuda a seguir inversiones en múltiples monedas
 
   const content = await generateText(prompts[locale], { maxTokens: 2000, temperature: 0.6 });
   const title = titles[locale];
+
+  // Tabela determinística com os valores + linha de fonte datada (citável por
+  // leitores e IAs generativas — não depende do LLM incluir os números).
+  const dateLocales = { pt: 'pt-BR', en: 'en-US', es: 'es-ES' };
+  const ratesDate = today.toLocaleDateString(dateLocales[locale]);
+  const ratesTables = {
+    pt: `| Moeda | Cotação |\n| --- | --- |\n| Dólar (USD/BRL) | R$ ${rates.USDBRL} |\n| Euro (EUR/BRL) | R$ ${rates.EURBRL} |\n\n*Fonte: AwesomeAPI — cotações de ${ratesDate}*`,
+    en: `| Currency | Rate |\n| --- | --- |\n| Dollar (USD/BRL) | R$ ${rates.USDBRL} |\n| Euro (EUR/BRL) | R$ ${rates.EURBRL} |\n\n*Source: AwesomeAPI — rates as of ${ratesDate}*`,
+    es: `| Moneda | Cotización |\n| --- | --- |\n| Dólar (USD/BRL) | R$ ${rates.USDBRL} |\n| Euro (EUR/BRL) | R$ ${rates.EURBRL} |\n\n*Fuente: AwesomeAPI — cotizaciones del ${ratesDate}*`,
+  };
+  const ratesTable = ratesTables[locale];
   const slug = `${locale === 'pt' ? 'cotacoes' : locale === 'en' ? 'en-quotes' : 'es-cotizaciones'}-semana-${weekNum}-${monthName}-${today.getFullYear()}`;
 
   // Insert 2 inline AI images into content
@@ -117,6 +128,8 @@ seo:
   metaDescription: "${locale === 'pt' ? 'Resumo semanal' : locale === 'en' ? 'Weekly summary' : 'Resumen semanal'}: dólar a R$ ${rates.USDBRL}, euro a R$ ${rates.EURBRL}. ${locale === 'pt' ? 'Análise' : locale === 'en' ? 'Analysis' : 'Análisis'} e ${locale === 'pt' ? 'dicas' : locale === 'en' ? 'tips' : 'consejos'} para ${locale === 'pt' ? 'investidores' : locale === 'en' ? 'investors' : 'inversores'}."
   keywords: ["${locale === 'pt' ? 'cotação dólar hoje' : locale === 'en' ? 'dollar quote today' : 'cotización dólar hoy'}", "${locale === 'pt' ? 'cotação euro' : locale === 'en' ? 'euro quote' : 'cotización euro'}", "${locale === 'pt' ? 'resumo mercado financeiro' : locale === 'en' ? 'financial market summary' : 'resumen mercado financiero'}", "selic"]
 ---
+
+${ratesTable}
 
 ${contentWithImages}
 

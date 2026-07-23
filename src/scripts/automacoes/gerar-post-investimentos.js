@@ -198,9 +198,11 @@ REGRAS DE ESTILO:
 - Inclua uma seção "Riscos" ou "Cuidados"
 - NÃO comece com frases genéricas tipo "No cenário atual", "Você já se perguntou"
 - Comece direto com o conteúdo, como se estivesse no meio de uma conversa
+- O primeiro parágrafo deve responder diretamente à pergunta principal do tema em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 - Headers H2 curtos e diretos
 - Mínimo 900 palavras, 5-6 seções H2
 - O último H2: "Próximos passos" com ação prática
+- Depois de "Próximos passos", encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
 - Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, Tesouro Direto https://www.tesourodireto.com.br, CVM https://www.cvm.gov.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 - Após o último parágrafo, inclua:
 

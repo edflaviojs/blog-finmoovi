@@ -54,6 +54,8 @@ REGRAS:
 9. O último H2: "Qual escolher?" com recomendação por perfil
 10. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 11. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
+12. O primeiro parágrafo deve responder diretamente à pergunta principal do título em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
+13. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
 
 Responda neste formato:
 ---TITULO---
@@ -82,6 +84,8 @@ REGRAS:
 8. CTA final: "Quer testar o que funciona offline e por voz? ${config.app.name} tem 7 dias grátis"
 9. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 10. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
+11. O primeiro parágrafo deve responder diretamente à pergunta principal do título em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
+12. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
 
 Responda neste formato:
 ---TITULO---
@@ -109,6 +113,8 @@ REGRAS:
 7. CTA final: "Teste você mesmo — ${config.app.name} tem 7 dias grátis sem cartão"
 8. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 9. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
+10. O primeiro parágrafo deve responder diretamente à pergunta principal do título em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
+11. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
 
 Responda neste formato:
 ---TITULO---
@@ -139,6 +145,8 @@ REGRAS:
 10. CTA sutil no final
 11. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 12. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
+13. O primeiro parágrafo deve responder diretamente à pergunta principal do título em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
+14. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
 
 Responda neste formato:
 ---TITULO---
@@ -167,6 +175,8 @@ REGRAS:
 8. CTA: "Se a planilha não está funcionando, teste o ${config.app.name} por 7 dias"
 9. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 10. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
+11. O primeiro parágrafo deve responder diretamente à pergunta principal do título em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
+12. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
 
 Responda neste formato:
 ---TITULO---

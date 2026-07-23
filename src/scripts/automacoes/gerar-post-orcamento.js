@@ -196,9 +196,11 @@ REGRAS DE ESTILO:
 - Tabelas de exemplo quando relevante (divisão de orçamento, categorias de gastos)
 - NÃO comece com frases genéricas tipo "Você já se perguntou", "No cenário atual"
 - Comece direto com o conteúdo prático
+- O primeiro parágrafo deve responder diretamente à pergunta principal do tema em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 - Headers H2 como ações (verbos no imperativo ou infinitivo)
 - Mínimo 800 palavras, 4-6 seções H2
 - O último H2: "Comece com 5 minutos por dia"
+- Depois de "Comece com 5 minutos por dia", encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
 - Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, IBGE https://www.ibge.gov.br, Serasa https://www.serasa.com.br, Receita Federal https://www.gov.br/receitafederal). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 - Após o último parágrafo, inclua:
 

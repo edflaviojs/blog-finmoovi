@@ -26,6 +26,7 @@ interface Props {
   image?: string;
   imageAlt?: string;
   publishedTime?: string;
+  updatedTime?: string;
   author?: string;
   keywords?: string[];
   category?: string;
@@ -35,7 +36,7 @@ interface Props {
   alternates?: { pt?: string; en?: string; es?: string };
 }
 
-const { title, description, image, imageAlt, publishedTime, author, keywords, category, readingTime, headings = [], slug, alternates } = Astro.props;
+const { title, description, image, imageAlt, publishedTime, updatedTime, author, keywords, category, readingTime, headings = [], slug, alternates } = Astro.props;
 const authorObj = resolveAuthor(author);
 const postUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const postSlug = Astro.url.pathname.replace(/\//g, '-').replace(/^-|-$/g, '');
@@ -50,6 +51,11 @@ const byLabel = locale === 'en' ? 'By' : 'Por';
 const readLabel = locale === 'en' ? 'min read' : locale === 'es' ? 'min de lectura' : 'min de leitura';
 const dateLang = locale === 'en' ? 'en-US' : locale === 'es' ? 'es-ES' : 'pt-BR';
 const homeHref = locale === 'pt' ? '/' : `/${locale}`;
+
+// "Atualizado em ..." visível quando updatedAt > publishedAt (o gsc-refresh-decay
+// atualiza o frontmatter) — sinal de frescor para leitores e IAs generativas.
+const updatedLabel = locale === 'en' ? 'Updated on' : locale === 'es' ? 'Actualizado el' : 'Atualizado em';
+const showUpdated = !!(updatedTime && publishedTime && new Date(updatedTime).getTime() > new Date(publishedTime).getTime());
 
 const breadcrumbItems = [
   ...(category ? [{ label: category, href: `${homeHref}` }] : []),
@@ -106,6 +112,11 @@ const schemaBreadcrumbItems = [
                 <time datetime={publishedTime}>
                   {new Date(publishedTime).toLocaleDateString(dateLang, { day: '2-digit', month: 'long', year: 'numeric' })}
                 </time>
+              )}
+              {showUpdated && (
+                <span class="post-updated">{updatedLabel} <time datetime={updatedTime}>
+                  {new Date(updatedTime!).toLocaleDateString(dateLang, { day: '2-digit', month: 'long', year: 'numeric' })}
+                </time></span>
               )}
               {readingTime && <span class="post-reading-time">{readingTime} {readLabel}</span>}
             </div>

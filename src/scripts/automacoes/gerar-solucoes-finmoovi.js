@@ -344,6 +344,8 @@ REGRAS DO POST:
 12. Inclua uma seção comparando "antes vs depois" do ${config.app.name}
 13. Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, IBGE https://www.ibge.gov.br, Serasa https://www.serasa.com.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 14. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
+15. O primeiro parágrafo deve responder diretamente à pergunta principal do problema em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
+16. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
 
 Responda EXATAMENTE neste formato:
 ---TITULO---

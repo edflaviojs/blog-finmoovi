@@ -30,6 +30,11 @@ const GAP_MIN_IMPRESSIONS = 3;
 const AUTOCOMPLETE_SEEDS_MAX = 10;  // até 10 seeds (manual/gsc-gap pending) por execução
 const AUTOCOMPLETE_NEW_MAX = 20;    // teto de novas entries de autocomplete por execução
 const AUTOCOMPLETE_PER_SEED_MAX = 3; // teto por seed — evita série de posts quase-irmãos da mesma raiz
+// GEO: consultas conversacionais ("como X", "vale a pena X") espelham o jeito
+// que usuários perguntam a IAs generativas. Só para seeds MANUAIS, e dentro dos
+// mesmos tetos globais (AUTOCOMPLETE_NEW_MAX) — não aumenta o volume da fila.
+const CONVERSATIONAL_SEEDS_MAX = 3;
+const CONVERSATIONAL_PREFIXES = ['como', 'vale a pena'];
 const FETCH_TIMEOUT_MS = 8000;
 
 // DECISÃO: o GSC não expõe o idioma da query; distinguimos "claramente não-PT"
@@ -172,6 +177,27 @@ async function expandAutocomplete() {
   if (failures === seeds.length && seeds.length > 0) {
     warn(`autocomplete indisponível — ${failures}/${seeds.length} consultas falharam nesta execução.`);
   }
+
+  // Expansão conversacional (GEO): até 3 seeds manuais pending, prefixos
+  // "como {seed}" e "vale a pena {seed}". Mesmos filtros (relevantVariations),
+  // mesmo teto por consulta e mesmo teto global de novas entries; o dedup fica
+  // por conta do addEntries.
+  const manualSeeds = seeds.filter(s => s.source === 'manual').slice(0, CONVERSATIONAL_SEEDS_MAX);
+  for (const seed of manualSeeds) {
+    for (const prefix of CONVERSATIONAL_PREFIXES) {
+      if (rows.length >= AUTOCOMPLETE_NEW_MAX) break;
+      try {
+        const suggestions = await fetchSuggestions(`${prefix} ${seed.keyword}`);
+        for (const variation of relevantVariations(seed.keyword, suggestions).slice(0, AUTOCOMPLETE_PER_SEED_MAX)) {
+          if (rows.length >= AUTOCOMPLETE_NEW_MAX) break;
+          rows.push({ keyword: variation, category: seed.category || null, priority: 3, source: 'autocomplete' });
+        }
+      } catch (e) {
+        console.log(`⚠️ Autocomplete conversacional: falha para "${prefix} ${seed.keyword}" (${e.message}) — consulta pulada.`);
+      }
+    }
+  }
+
   const res = addEntries(rows);
   console.log(`🔮 Autocomplete: ${seeds.length} seed(s) consultada(s) → ${res.added} nova(s), ${res.duplicates} já na fila.`);
   return res;

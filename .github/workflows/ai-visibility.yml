@@ -1,0 +1,56 @@
+name: Monitor de Visibilidade em IA
+
+on:
+  schedule:
+    # Mensal: dia 2 às 08:00 UTC (baseline de tendência GEO)
+    - cron: '0 8 2 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  monitorar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Rodar monitor de visibilidade em IA
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/automacoes/ai-visibility-monitor.js
+
+      - name: Commit e push do relatório
+        run: |
+          git add press/ai-visibility.md || true
+          if git diff --cached --quiet; then
+            echo "Sem mudanças para commitar"
+          else
+            git commit -m "ai-visibility: relatório mensal $(date -u +%Y-%m)"
+            git pull --rebase origin main || true
+            git push
+          fi
