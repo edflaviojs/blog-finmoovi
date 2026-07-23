@@ -50,7 +50,7 @@ Owning stocks can be a powerful way to grow your [money](/en/posts/en-avoid-impu
 - **Dividend income** – some companies pay regular cash payouts, adding a passive income stream.  
 - **Liquidity** – you can usually sell a stock within a day, turning it into cash quickly.  
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Risks
 
 Every investment carries risk, and stocks are no exception. Understanding the downsides helps you avoid unpleasant surprises.  
 
@@ -71,7 +71,7 @@ Imagine you earn R$5.000 a month and decide to allocate 10 % of your net incom
 Getting your first stock is easier than you think, especially with modern apps that turn the process into a few taps. Here’s a step‑by‑step guide you can follow tonight.  
 
 - **Open a brokerage account** – choose a platform that offers low fees and a user‑friendly mobile app (think of a friend recommending “Nubank Invest” because it’s simple and integrates with your existing bank).  
-- **Define your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026)** – decide what percentage of your monthly salary you can comfortably invest; a common rule is 5‑10 % of net income.  
+- **Define your budget** – decide what percentage of your monthly salary you can comfortably invest; a common rule is 5‑10 % of net income.  
 - **Pick your first stocks** – start with companies you already know (e.g., a supermarket chain you shop at) and check their dividend history or growth potential.  
 - **Place the order** – enter the ticker, the number of shares, and the type of order (market order for immediate execution, limit order to set a maximum price).  
 - **Monitor and learn** – keep an eye on price movements, read quarterly reports, and adjust your strategy as you gain confidence.  

@@ -24,9 +24,9 @@ seo:
   keywords: ["inversiones","segundo semestre","estrategias prácticas","2024","cartera","seguridad","crecimiento"]
 ---
 
-# [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para el [segundo semestre](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme): estrategias prácticas para 2026
+# Inversiones para el segundo semestre: estrategias prácticas para 2026
 
-El segundo semestre suele ser más agitado: [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias), fiestas de fin de año y la expectativa de un nuevo ciclo económico. Si aún no tienes un plan definido para los próximos seis meses, este artículo te ofrece un paso‑a‑paso para armar una cartera que combine seguridad y potencial de crecimiento, usando ejemplos reales del día a día en Brasil.
+El segundo semestre suele ser más agitado: vacaciones, fiestas de fin de año y la expectativa de un nuevo ciclo económico. Si aún no tienes un plan definido para los próximos seis meses, este artículo te ofrece un paso‑a‑paso para armar una cartera que combine seguridad y potencial de crecimiento, usando ejemplos reales del día a día en Brasil.
 
 ---
 
@@ -36,7 +36,7 @@ El segundo semestre suele ser más agitado: [vacaciones](/es/posts/es-5-dicas-pa
 Históricamente, algunos sectores se valorizan en la segunda mitad del año – turismo, comercio minorista, energía y tecnología. Esta “temporada alta” puede generar oportunidades de ganancia, pero también trae [volatilidad](/es/glossario/es-volatilidade) que exige atención.
 
 ### 2. Punto de ajuste de metas anuales  
-Si aún no alcanzaste tu meta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) o de retorno, el segundo semestre representa la última oportunidad de corregir el rumbo antes del cierre del ejercicio fiscal.
+Si aún no alcanzaste tu meta de ahorro o de retorno, el segundo semestre representa la última oportunidad de corregir el rumbo antes del cierre del ejercicio fiscal.
 
 ### 3. Preparación para el próximo año  
 Construir una reserva de emergencia y colocar recursos en activos de largo plazo ya en el segundo semestre garantiza tranquilidad para iniciar 2025 con la cartera lista.
@@ -58,11 +58,11 @@ Construir una reserva de emergencia y colocar recursos en activos de largo plazo
 
 Después de pagar las cuentas, calcula cuánto sobra para nuevos aportes. En el ejemplo anterior, la persona tiene **R$ 1.700,00** de margen libre (3.500 – 1.800). Si destinas el 30 % de ese margen a nuevos aportes, el aporte mensual será **R$ 510,00**.
 
-> **Consejo práctico:** Usa la app **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** para registrar esas entradas y salidas. Permite categorizar cada gasto y ya muestra cuánto puedes invertir cada mes.
+> **Consejo práctico:** Usa la app **FinMoovi** para registrar esas entradas y salidas. Permite categorizar cada gasto y ya muestra cuánto puedes invertir cada mes.
 
 ### Paso 2 – Define tu horizonte de tiempo
 
-- **Corto plazo (hasta 12 meses):** objetivo de usar el [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) aún este año (viajes, compra de electrodoméstico).  
+- **Corto plazo (hasta 12 meses):** objetivo de usar el dinero aún este año (viajes, compra de electrodoméstico).  
 - **Mediano plazo (1‑3 años):** metas como entrada para vivienda o auto.  
 - **Largo plazo (5 años o más):** jubilación, [independencia financiera](/es/glossario/es-independencia-financeira).
 
@@ -73,15 +73,15 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 | Tipo de activo                     | Riesgo | Indicación para 2.º semestre |
 |------------------------------------|--------|-------------------------------|
 | **Tesoro [Selic](/es/glossario/es-selic)** (renta fija)     | Bajo   | Reserva de emergencia y aporte de seguridad |
-| **CDBs con [liquidez](/es/glossario/es-liquidez) diaria**       | Bajo‑medio | Complemento al [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026), rendimiento superior al [ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus) |
+| **CDBs con [liquidez](/es/glossario/es-liquidez) diaria**       | Bajo‑medio | Complemento al Selic, rendimiento superior al ahorro |
 | **Fondos índice ([ETF](/es/glossario/es-etf)) de acciones**| Medio‑alto | Exposición a sectores estacionales (comercio, energía) |
 | **[Fondos inmobiliarios](/es/glossario/es-fundos-imobiliarios) (FIIs)**    | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
 | **Criptomonedas o activos alternativos** | Alto | Solo 5 % de la cartera, para quien acepta volatilidad |
 
 #### Ejemplo de asignación para quien gana R$ 3.500,00
 
-- **Tesoro [Selic](/es/posts/es-cotizaciones-semana-1-junio-2026):** 30 % (R$ 153,00) – liquidez inmediata.  
-- **CDBs de bancos medianos:** 20 % (R$ 102,00) – rentabilidad mayor que la tasa [Selic](/es/posts/es-cotizaciones-semana-2-julio-2026).  
+- **Tesoro Selic:** 30 % (R$ 153,00) – liquidez inmediata.  
+- **CDBs de bancos medianos:** 20 % (R$ 102,00) – rentabilidad mayor que la tasa Selic.  
 - **ETF BOVA11 (IBOVESPA):** 25 % (R$ 128,00) – exposición al mercado accionario.  
 - **FIIs (ej.: KNRI11):** 20 % (R$ 102,00) – ingresos mensuales por alquileres.  
 - **Criptomonedas:** 5 % (R$ 25,00) – riesgo controlado, puede servir como “potencial de alta”.
@@ -96,7 +96,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 3. **Energía:** El aumento del consumo de aire acondicionado en otoño (mayo‑septiembre) eleva el precio de la energía. FIIs de energía o acciones de utilities pueden beneficiarse.  
 
-> **Herramienta:** [FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) tiene alertas de mercado que avisan cuando los precios de ETFs o FIIs superan límites predefinidos, ayudándote a entrar en el momento justo.
+> **Herramienta:** FinMoovi tiene alertas de mercado que avisan cuando los precios de ETFs o FIIs superan límites predefinidos, ayudándote a entrar en el momento justo.
 
 ### Paso 5 – Monitorea y ajusta cada trimestre
 
@@ -110,7 +110,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 ### Inversor conservador
 
-- **80 % en Tesoro [Selic](/es/posts/es-cotizaciones-semana-3-julio-2026) y CDBs**, 15 % en FIIs de alta calidad, 5 % en ETF de acciones.  
+- **80 % en Tesoro Selic y CDBs**, 15 % en FIIs de alta calidad, 5 % en ETF de acciones.  
 - Enfoque en preservación de capital y rendimientos estables.
 
 ### Inversor moderado
@@ -129,7 +129,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 - **[Banco Central de Brasil](https://www.bcb.gov.br)** – consulta de la tasa Selic e indicadores económicos.  
 - **[Tesoro Directo](https://www.tesourodireto.com.br)** – portal oficial para adquirir títulos públicos.  
-- **[FinMoovi](/es/posts/es-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)** – app brasileña que integra [control de gastos](/es/posts/es-7-alternativas-a-planilha-google-para-financas-guia-atualiza), metas de inversión y alertas de mercado. Ideal para quien quiere visualizar la cartera completa en un solo lugar.
+- **FinMoovi** – app brasileña que integra control de gastos, metas de inversión y alertas de mercado. Ideal para quien quiere visualizar la cartera completa en un solo lugar.
 
 ![Herramientas y recursos útiles](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 
@@ -141,7 +141,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 Sí. Empieza con el Tesoro Selic, que tiene liquidez diaria y protege el capital. A medida que la reserva crezca, diversifica.
 
 **2. ¿Cuánto debo asignar a FIIs?**  
-Depende de tu objetivo de ingresos pasivos. Una asignación del 10‑20 % suele generar [dividendos](/es/glossario/es-dividendos) mensuales sin comprometer la diversificación.
+Depende de tu objetivo de ingresos pasivos. Una asignación del 10‑20 % suele generar dividendos mensuales sin comprometer la diversificación.
 
 **3. ¿Es seguro comprar ETFs internacionales?**  
 Es posible mediante corredoras que ofrecen acceso a BDRs o fondos de inversión en el exterior. Evalúa costos de custodia e impuestos.

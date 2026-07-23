@@ -34,19 +34,19 @@ Agora que você entende sua situação financeira atual, é hora de definir meta
 
 
 
-## Criando um [Orçamento](/posts/como-criar-orcamento-pessoal) para o Segundo Semestre
-Agora que você tem metas financeiras definidas, é hora de criar um [orçamento](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) para o segundo semestre. Isso inclui decidir como você vai alocar sua renda para alcançar suas metas. Aqui estão algumas dicas para ajudá-lo a criar um [orçamento](/posts/metodo-50-30-20-para-orcamento):
+## Criando um Orçamento para o Segundo Semestre
+Agora que você tem metas financeiras definidas, é hora de criar um orçamento para o segundo semestre. Isso inclui decidir como você vai alocar sua renda para alcançar suas metas. Aqui estão algumas dicas para ajudá-lo a criar um orçamento:
 1. **Aloque 50% de sua renda para necessidades básicas**: Isso inclui gastos com moradia, alimentação, transporte e serviços essenciais.
 2. **Aloque 30% de sua renda para desejos**: Isso inclui gastos com lazer, entretenimento e hobbies.
-3. **Aloque 20% de sua renda para metas financeiras**: Isso inclui gastos com [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), dívidas e [fundos](/glossario/fundos) de emergência.
-4. **Revisite seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) regularmente**: Use o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) para revisitar seu [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) e fazer ajustes conforme necessário.
+3. **Aloque 20% de sua renda para metas financeiras**: Isso inclui gastos com economia, dívidas e [fundos](/glossario/fundos) de emergência.
+4. **Revisite seu orçamento regularmente**: Use o FinMoovi para revisitar seu orçamento e fazer ajustes conforme necessário.
 
 ## Gerenciando Dívidas e Gastos
 Gerenciar dívidas e gastos é fundamental para alcançar suas metas financeiras. Aqui estão algumas dicas para ajudá-lo a gerenciar dívidas e gastos:
-1. **Pague suas dívidas mais caras primeiro**: Isso inclui dívidas com [juros](/glossario/juros) altos, como cartões de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-).
+1. **Pague suas dívidas mais caras primeiro**: Isso inclui dívidas com [juros](/glossario/juros) altos, como cartões de crédito.
 2. **Negocie com seus credores**: Se você está tendo dificuldade em pagar suas dívidas, negocie com seus credores para encontrar uma solução.
 3. **Corte gastos desnecessários**: Isso inclui gastos com itens que não são essenciais, como compras impulsivas.
-4. **Use o método da "envelope"**: Separe seu [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) em envelopes para diferentes categorias de gastos, como alimentação e transporte.
+4. **Use o método da "envelope"**: Separe seu dinheiro em envelopes para diferentes categorias de gastos, como alimentação e transporte.
 
 ![Criando um [Orçamento](/posts/metodo-50-30-20-para-orcamento) para o Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
@@ -54,4 +54,4 @@ Gerenciar dívidas e gastos é fundamental para alcançar suas metas financeiras
 
 ## Conclusão
 Preparar-se financeiramente para o segundo semestre é fundamental para alcançar suas metas financeiras e ter uma vida mais tranquila. Com as dicas práticas e acessíveis apresentadas neste post, você pode criar um orçamento personalizado, gerenciar dívidas e gastos e alcançar suas metas financeiras. Lembre-se de que o [Banco Central do Brasil](https://www.bcb.gov.br) e a [Receita Federal](https://www.gov.br/receitafederal) oferecem recursos e informações valiosas para ajudá-lo a gerenciar suas finanças. Além disso, o [Serasa](https://www.serasa.com.br) pode ajudá-lo a entender melhor sua situação financeira e a encontrar soluções para seus problemas financeiros.
-Use o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) para controlar seus gastos e não se surpreender no fim do mês.
+Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês.

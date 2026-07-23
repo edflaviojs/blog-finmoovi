@@ -33,11 +33,11 @@ Renda Variável is everything that doesn't have a guaranteed return. The price g
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-- Perda de capital (your [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) may be worth less)
+- Perda de capital (your investment may be worth less)
 - Volatilidade (daily fluctuations)
 - Risco de empresa (company bankruptcy)
 - Risco de mercado (economic crises)
 
 ## Regra de ouro
 
-Only invest in renda variável with [money](/en/posts/en-30-day-rule-for-purchases) you won't need in the next 5 years. And always have your emergency reserve in renda fixa before starting.
+Only invest in renda variável with money you won't need in the next 5 years. And always have your emergency reserve in renda fixa before starting.

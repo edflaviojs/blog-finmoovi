@@ -43,7 +43,7 @@ Invertir en los instrumentos que cotizan en Wall Street puede ofrecer varios b
 
 - **Diversificación:** Puedes repartir tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en distintas empresas y sectores, reduciendo el riesgo de que una sola mala decisión te deje sin nada.  
 - **Potencial de crecimiento:** Algunas acciones pueden multiplicar su valor en pocos años, generando ganancias superiores a la [inflación](/es/glossario/es-inflacao).  
-- **Liquidez:** La mayoría de los activos se pueden vender rápidamente, lo que te da acceso a tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) cuando lo necesites.  
+- **Liquidez:** La mayoría de los activos se pueden vender rápidamente, lo que te da acceso a tu dinero cuando lo necesites.  
 - **Acceso a información:** Gracias a la transparencia de los mercados, tienes datos públicos sobre resultados financieros y decisiones corporativas.
 
 ## Riesgos
@@ -74,7 +74,7 @@ Imagina que ganas entre R$ 3 000 y R$ 8 000 al mes y decides destinar un
 Dar el primer paso no tiene que ser complicado. Sigue estos pasos y estarás listo para participar en el mundo de Wall Street sin miedo.  
 
 - **Define tu objetivo:** ¿Quieres ahorrar para la jubilación, comprar una casa o simplemente hacer crecer tu dinero?  
-- **Crea un fondo de emergencia:** Asegúrate de tener al menos tres a seis meses de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) cubiertos antes de invertir.  
+- **Crea un fondo de emergencia:** Asegúrate de tener al menos tres a seis meses de gastos cubiertos antes de invertir.  
 - **Elige una plataforma:** Busca una corredora que ofrezca bajas comisiones y una app amigable; yo prefiero la que me recomendó un amigo porque su interfaz es muy clara.  
 - **Abre una cuenta y deposita:** Inicia con una suma que puedas perder sin que afecte tu vida cotidiana.  
 - **Selecciona tus activos:** Empieza con fondos de índice o acciones de empresas que conozcas y que tengan buen historial.  

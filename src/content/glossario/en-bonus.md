@@ -25,8 +25,8 @@ Bônus é um pagamento extra que a empresa oferece ao colaborador, normalmente l
 
 
 
-- Pode ser pago em dinheiro, ações ou até benefícios como viagens.
-- Geralmente é calculado como um percentual do salário ou como um valor fixo pré‑definido.
+- Pode ser pago em dinheiro, [ações](/en/glossario/en-acoes) ou até benefícios como viagens.
+- Geralmente é calculado como um percentual do salário ou como um [valor](/en/glossario/en-valor) fixo pré‑definido.
 - O pagamento pode ser único (por exemplo, ao fechar um grande contrato) ou recorrente (mensal, trimestral).
 
 ## How it works
@@ -69,7 +69,7 @@ Agora, suponha que a empresa tenha um programa de participação nos lucros (PLR
 
 **Practical tip:** **Reserve 30 % do bônus recebido para um fundo de emergência;** assim, você transforma o “presente” em segurança financeira.
 
-Outro caso: um colaborador com salário de R$7.200 recebe um bônus de R$1.200 ao fechar um contrato de R$200.000. Ele decide usar 50 % do bônus para pagar a fatura do cartão de crédito (R$600) e investe os outros R$600 em um fundo de renda fixa (rentabilidade, ou retorno financeiro, de 6 % ao ano). Em 12 meses, o investimento renderá aproximadamente R$36, aumentando o ganho total do bônus.
+Outro caso: um colaborador com salário de R$7.200 recebe um bônus de R$1.200 ao fechar um contrato de R$200.000. Ele decide usar 50 % do bônus para pagar a fatura do cartão de crédito (R$600) e investe os outros R$600 em um fundo de [renda fixa](/en/glossario/en-renda-fixa) (rentabilidade, ou retorno financeiro, de 6 % ao ano). Em 12 meses, o investimento renderá aproximadamente R$36, aumentando o ganho total do bônus.
 
 **Practical tip:** **Se o bônus for em ações, verifique o período de vesting (tempo que você precisa permanecer na empresa para ter direito ao valor);** isso evita surpresas ao tentar vender as ações antes da hora.
 

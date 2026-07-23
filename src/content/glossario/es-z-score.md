@@ -51,7 +51,7 @@ Usar el Z‑Score en tu planificación financiera tiene varios beneficios:
 Aunque el Z‑Score es útil, también tiene limitaciones que debes considerar:
 
 - **Dependencia de la muestra:** Si la media y la desviación estándar provienen de datos poco representativos, el resultado será engañoso.  
-- **Enfoque estático:** No captura cambios rápidos en la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) o en tus circunstancias personales.  
+- **Enfoque estático:** No captura cambios rápidos en la economía o en tus circunstancias personales.  
 - **Sobresimplificación:** Reducir tu salud financiera a un solo número puede ocultar detalles importantes, como la calidad de tus inversiones o la estabilidad de tu empleo.  
 - **Interpretación errónea:** Un Z‑Score alto no garantiza seguridad absoluta; simplemente indica que estás por encima del promedio.
 

@@ -15,7 +15,7 @@ El CDI (Certificado de Depósito Interbancário) es la tasa de interés utilizad
 
 ## CDI vs [Selic](/es/glossario/es-selic)
 
-El CDI sigue muy de cerca la tasa [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026) (generalmente 0,10% por debajo). Si la [Selic](/es/posts/es-cotizaciones-semana-1-junio-2026) está en 14,75%, el CDI está alrededor de 14,65%.
+El CDI sigue muy de cerca la tasa Selic (generalmente 0,10% por debajo). Si la Selic está en 14,75%, el CDI está alrededor de 14,65%.
 
 ## ¿Por qué importa?
 

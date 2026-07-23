@@ -34,7 +34,7 @@ Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem
 
 | Ativos | Valor |
 |--------|-------|
-| [Investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) | R$ 50.000 |
+| Investimentos | R$ 50.000 |
 | Imóvel | R$ 300.000 |
 | Carro | R$ 40.000 |
 | **Total Ativos** | **R$ 390.000** |

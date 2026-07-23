@@ -24,7 +24,7 @@ readingTime: 2
 ### 2. Reserva de emergência completa
 
 - 6 a 12 meses de gastos guardados
-- Em [investimento](/posts/montando-carteira-diversificada-com-r-500) com [liquidez](/glossario/liquidez) diária
+- Em investimento com [liquidez](/glossario/liquidez) diária
 
 ### 3. Sem dívidas caras
 
@@ -32,7 +32,7 @@ readingTime: 2
 - Zero rotativo do cartão
 - Financiamentos sob controle (parcela < 30% da renda)
 
-### 4. [Investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) crescendo
+### 4. Investimentos crescendo
 
 - Aportes mensais regulares
 - Carteira diversificada
@@ -46,7 +46,7 @@ readingTime: 2
 
 ## Como chegar lá
 
-1. Monte um [orçamento](/posts/5-alternativas-ao-mobills-em-2026) (saiba para onde vai seu [dinheiro](/posts/cashback-inteligente))
+1. Monte um orçamento (saiba para onde vai seu dinheiro)
 2. Quite dívidas caras primeiro
 3. Monte a reserva de emergência
 4. Comece a investir (mesmo que pouco)

@@ -79,7 +79,7 @@ This habit of review turns control into continuous learning, preventing small sl
 
 1. **Morning:** when you open the app, take a quick look at the envelope balances. If any are almost empty, jot down a reminder to avoid impulse purchases.  
 2. **During the day:** record each expense as it happens. Use your phone’s camera to capture the receipt and the app will auto‑categorize.  
-3. **End of day:** set aside 2 minutes to check if any envelope went negative. If so, adjust immediately – transfer [money](/en/posts/en-creating-an-emergency-fund) from another category or log the expense as “extra”.
+3. **End of day:** set aside 2 minutes to check if any envelope went negative. If so, adjust immediately – transfer money from another category or log the expense as “extra”.
 
 ![Comece com 5 minutos por dia](/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024-6.webp)
 
@@ -87,4 +87,4 @@ With just 5 minutes daily, you keep total control and still have time to enjoy l
 
 ---
 
-**Want to automate this control? [Try FinMoovi free for 7 days](https://finmoovi.com) — it categorizes [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) automatically and generates reports effortlessly.**
+**Want to automate this control? [Try FinMoovi free for 7 days](https://finmoovi.com) — it categorizes expenses automatically and generates reports effortlessly.**

@@ -20,7 +20,7 @@ seo:
 Quando você está no shopping ou navegando pela internet, é fácil se deixar levar pelas ofertas e compras por impulso. Mas, se você não tiver cuidado, essas compras podem acabar com seu [orçamento](/posts/como-criar-orcamento-pessoal) e afetar sua estabilidade financeira. Imagine que você ganha R$ 5.000 por mês e gasta R$ 1.000 em compras por impulso - isso é 20% do seu salário!
 
 ## Controle seus [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
-Para evitar compras por impulso, é importante entender onde seu [dinheiro](/posts/cashback-inteligente) está indo. **Dica prática:** faça um registro de todos os seus [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) durante um mês, incluindo compras pequenas como um café ou um lanche. Isso ajudará a identificar padrões de gasto e áreas onde você pode cortar despesas. Por exemplo, se você gasta R$ 500 por mês em restaurantes, talvez seja hora de começar a cozinhar em casa.
+Para evitar compras por impulso, é importante entender onde seu [dinheiro](/posts/cashback-inteligente) está indo. **Dica prática:** faça um registro de todos os seus gastos durante um mês, incluindo compras pequenas como um café ou um lanche. Isso ajudará a identificar padrões de gasto e áreas onde você pode cortar despesas. Por exemplo, se você gasta R$ 500 por mês em restaurantes, talvez seja hora de começar a cozinhar em casa.
 
 Além disso, é importante ter um [orçamento](/posts/metodo-50-30-20-para-orcamento) realista e seguir um plano de gastos. Isso pode incluir alocar uma porcentagem do seu salário para despesas fixas, como aluguel e contas, e outra porcentagem para despesas variáveis, como entretenimento e compras. O [Banco Central do Brasil](https://www.bcb.gov.br) oferece recursos úteis para ajudar a criar um [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) e gerenciar suas finanças.
 
@@ -42,11 +42,11 @@ Finalmente, é importante aprender a dizer não a compras por impulso. Isso pode
 
 
 ## Comece hoje
-Agora que você sabe [como evitar compras por impulso](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso), é hora de começar a agir. Lembre-se de que o [controle de gastos](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) é um processo contínuo, e que é importante ser paciente e consistente. Com o tempo e a prática, você pode desenvolver hábitos de gasto mais saudáveis e alcançar seus objetivos financeiros. Para mais informações sobre [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), você pode visitar o [Investopedia](https://www.investopedia.com).
+Agora que você sabe [como evitar compras por impulso](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso), é hora de começar a agir. Lembre-se de que o controle de gastos é um processo contínuo, e que é importante ser paciente e consistente. Com o tempo e a prática, você pode desenvolver hábitos de gasto mais saudáveis e alcançar seus objetivos financeiros. Para mais informações sobre finanças pessoais, você pode visitar o [Investopedia](https://www.investopedia.com).
 
 ![Aprenda a dizer não](/images/posts/evite-compras-por-impulso-4.webp)
 
 
 
 ---
-**O próximo passo é seu. [Teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) e descubra para onde seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) está indo de verdade.**
+**O próximo passo é seu. Teste o [FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu dinheiro está indo de verdade.**

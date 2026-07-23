@@ -33,7 +33,7 @@ The fund’s management can be **passive** (simply follows the index) or **activ
 
 ### [Yield](/en/glossario/en-yield) Example
 
-Imagine you invest **R$1,000** in an ETF that tracks a fixed‑income index, with an average return of 6 % per year. After one year, your [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) would yield:
+Imagine you invest **R$1,000** in an ETF that tracks a fixed‑income index, with an average return of 6 % per year. After one year, your investment would yield:
 
 - Invested amount: R$1,000  
 - Return: 6 % → R$60  
@@ -54,10 +54,10 @@ If, instead, you placed the same amount in a [CDB](/en/glossario/en-cdb) earning
 ## How to Start Investing
 
 1. **Open a brokerage account** – choose one that offers zero or reduced commission fees for ETFs.  
-2. **Set your goal** – if you’re focused on the long term, a stock ETF may be suitable; for [fixed income](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026), look for ETFs that track the [CDI](/en/glossario/en-cdi) or the Tesouro [Selic](/en/glossario/en-selic).  
+2. **Set your goal** – if you’re focused on the long term, a stock ETF may be suitable; for fixed income, look for ETFs that track the [CDI](/en/glossario/en-cdi) or the Tesouro [Selic](/en/glossario/en-selic).  
 3. **Create a contribution plan** – for example, invest **R$500** each month in a Brazilian stock ETF.  
 4. **Place the purchase order** – select the ETF’s ticker (code), enter the quantity, and confirm the trade.  
-5. **Monitor performance** – use monthly [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) or a [finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) to see how your [investment](/en/posts/en-tesouro-direto-para-iniciantes) evolves.
+5. **Monitor performance** – use monthly reports or a finance app to see how your investment evolves.
 
 ![Como começar a investir](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-4.webp)
 
@@ -73,7 +73,7 @@ If, instead, you placed the same amount in a [CDB](/en/glossario/en-cdb) earning
 
 ## Risks and Precautions
 
-- **[Volatility](/en/glossario/en-volatilidade)** – Stock ETFs can swing a lot in the short term. Assess your [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) horizon before allocating.  
+- **[Volatility](/en/glossario/en-volatilidade)** – Stock ETFs can swing a lot in the short term. Assess your investment horizon before allocating.  
 - **Management fee** – Even when low, it reduces returns, especially during periods of weak index performance.  
 - **Market risk** – If the index falls, your investment will also fall. There’s no capital guarantee.  
 - **Settlement** – Although the price is immediate, the financial settlement occurs on D+2 (two business days after purchase).  
@@ -93,12 +93,12 @@ If, instead, you placed the same amount in a [CDB](/en/glossario/en-cdb) earning
 
 1. **Choose the ETF** that best matches your goal (stocks, fixed income, sectors).  
 2. **Open the account** at a broker that provides monitoring tools, such as position reports and charts.  
-3. **Set a contribution** – start with R$500 or less and increase gradually as your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) allows.  
+3. **Set a contribution** – start with R$500 or less and increase gradually as your budget allows.  
 4. **Monitor** performance monthly and adjust allocation if your financial situation changes.
 
 Remember that investing is a marathon, not a 100‑meter sprint. Assess whether it makes sense for your profile, diversify, and keep the focus on the long term.
 
 ---
 
-**To track all your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in one place, [try FinMoovi free for 7 days](https://finmoovi.com) — [multi‑currency](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-), smart reports, and 100% offline.**
+**To track all your investments in one place, [try FinMoovi free for 7 days](https://finmoovi.com) — multi‑currency, smart reports, and 100% offline.**
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"ETFs: What They Are and How to Invest Simply and Profitably","step":[{"@type":"HowToStep","position":1,"name":"Open a brokerage account – choose one that offers zero or reduced commission fees for ETFs.","text":"Open a brokerage account – choose one that offers zero or reduced commission fees for ETFs."},{"@type":"HowToStep","position":2,"name":"Set your goal – if you’re focused on the long term, a stock ETF may be suitable; for [fixed income](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026), look for ETFs that track the [CDI](/en/glossario/en-cdi) or the Tesouro [Selic](/en/glossario/en-selic).","text":"Set your goal – if you’re focused on the long term, a stock ETF may be suitable; for [fixed income](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026), look for ETFs that track t"},{"@type":"HowToStep","position":3,"name":"Create a contribution plan – for example, invest R$500 each month in a Brazilian stock ETF.","text":"Create a contribution plan – for example, invest R$500 each month in a Brazilian stock ETF."},{"@type":"HowToStep","position":4,"name":"Place the purchase order – select the ETF’s ticker (code), enter the quantity, and confirm the trade.","text":"Place the purchase order – select the ETF’s ticker (code), enter the quantity, and confirm the trade."},{"@type":"HowToStep","position":5,"name":"Monitor performance – use monthly reports or a [finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) to see how your [investment](/en/posts/en-tesouro-direto-para-iniciantes) evolves.","text":"Como começar a investir/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-4.webp"},{"@type":"HowToStep","position":6,"name":"Choose the ETF that best matches your goal (stocks, fixed income, sectors).","text":"Choose the ETF that best matches your goal (stocks, fixed income, sectors)."},{"@type":"HowToStep","position":7,"name":"Open the account at a broker that provides monitoring tools, such as position reports and charts.","text":"Open the account at a broker that provides monitoring tools, such as position reports and charts."},{"@type":"HowToStep","position":8,"name":"Set a contribution – start with R$500 or less and increase gradually as your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) allows.","text":"Set a contribution – start with R$500 or less and increase gradually as your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) allows."}]} -->

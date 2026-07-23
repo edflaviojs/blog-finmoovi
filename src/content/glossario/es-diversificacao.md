@@ -37,7 +37,7 @@ Por ejemplo, si tienes un salario de R$6.000 al mes y decides invertir R$1.500 e
 
 ## Ventajas
 La diversificación tiene varias ventajas, como:
-* Reducción del riesgo: al distribuir tus inversiones, puedes reducir el riesgo de perder [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) si uno de los activos se desempeña mal
+* Reducción del riesgo: al distribuir tus inversiones, puedes reducir el riesgo de perder dinero si uno de los activos se desempeña mal
 * Aumento del rendimiento: al combinar diferentes activos, puedes crear un portafolio que tenga un mejor rendimiento a largo plazo
 * Flexibilidad: la diversificación te permite adaptarte a cambios en el mercado y ajustar tus inversiones según sea necesario
 
@@ -53,7 +53,7 @@ Aunque la diversificación puede reducir el riesgo, no elimina completamente el 
 * Riesgo de crédito: si una empresa o gobierno emite bonos, hay un riesgo de que no puedan pagar los intereses o el principal
 * Riesgo de [liquidez](/es/glossario/es-liquidez): si necesitas acceder a tu dinero rápidamente, puede ser difícil vender tus inversiones sin perder valor
 
-**Consejo práctico:** es importante tener un plan de emergencia y una reserva de efectivo para cubrir [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) inesperados, para que no tengas que vender tus inversiones en un momento inoportuno.
+**Consejo práctico:** es importante tener un plan de emergencia y una reserva de efectivo para cubrir gastos inesperados, para que no tengas que vender tus inversiones en un momento inoportuno.
 
 ## Ejemplos prácticos
 Aquí hay algunos ejemplos prácticos de cómo la diversificación puede funcionar en la vida real:

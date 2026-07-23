@@ -46,7 +46,7 @@ Si el precio sube en lugar de bajar, Juan tendría que comprar a un precio mayor
 ## Ventajas
 
 - **Potencial de ganancias en mercados bajistas:** Cuando la mayoría espera que los precios suban, puedes aprovechar la caída.  
-- **Diversificación de estrategias:** No dependes solo de comprar y mantener; puedes cubrir (hedgear) otras inversiones.  
+- **[Diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) de estrategias:** No dependes solo de comprar y mantener; puedes cubrir (hedgear) otras inversiones.  
 - **Aprovechar oportunidades rápidas:** Si una noticia negativa impacta el precio, puedes actuar en cuestión de horas.  
 
 ![Ventajas](/images/glossario/venda-a-descoberto-inline-3.webp)

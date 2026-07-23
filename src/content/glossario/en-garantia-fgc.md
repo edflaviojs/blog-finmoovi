@@ -11,13 +11,13 @@ readingTime: 1
 
 ## What is a FGC Guarantee?
 
-The FGC (Fundo Garantidor de Créditos) is like an insurance for your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in banks. If the bank goes bankrupt, the FGC returns your [money](/en/posts/en-30-day-rule-for-purchases) — up to R$ 250,000 per CPF per financial institution.
+The FGC (Fundo Garantidor de Créditos) is like an insurance for your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in banks. If the bank goes bankrupt, the FGC returns your money — up to R$ 250,000 per CPF per financial institution.
 
 ## What is covered
 
 - [CDB](/en/glossario/en-cdb) (Certificado de Depósito Bancário)
 - [LCI and LCA](/en/glossario/en-lci-e-lca)
-- [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) account
+- Savings account
 - Checking account
 - RDB
 - Exchange letters
@@ -25,7 +25,7 @@ The FGC (Fundo Garantidor de Créditos) is like an insurance for your [investmen
 ## What is NOT covered
 
 - Stocks
-- [Investment](/en/posts/en-montando-carteira-diversificada-com-r-500) funds
+- Investment funds
 - [Debentures](/en/glossario/en-debentures)
 - Treasury Direct (has a federal government guarantee)
 - CRI and CRA

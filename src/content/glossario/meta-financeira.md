@@ -38,7 +38,7 @@ Meta financeira é um objetivo concreto para seu [dinheiro](/posts/cashback-inte
 ### Longo prazo (5+ anos)
 
 - [Independência financeira](/glossario/independencia-financeira) (R$ 1.500.000)
-- [Aposentadoria](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) complementar
+- Aposentadoria complementar
 - Comprar imóvel à vista
 
 ## Como acompanhar
@@ -46,9 +46,9 @@ Meta financeira é um objetivo concreto para seu [dinheiro](/posts/cashback-inte
 1. Defina o valor total e o prazo
 2. Divida pelo número de meses (aporte mensal necessário)
 3. Automatize a transferência mensal
-4. Acompanhe o progresso (apps como [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) ajudam)
+4. Acompanhe o progresso (apps como FinMoovi ajudam)
 5. Celebre marcos intermediários (25%, 50%, 75%)
 
 ## Dica
 
-Tenha no máximo 3 metas simultâneas. Muitas metas dividem seu foco e [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) — nenhuma avança rápido o suficiente para motivar.
+Tenha no máximo 3 metas simultâneas. Muitas metas dividem seu foco e dinheiro — nenhuma avança rápido o suficiente para motivar.

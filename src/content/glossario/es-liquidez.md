@@ -24,7 +24,7 @@ Liquidez é a capacidade de transformar um investimento em dinheiro rapidamente.
 Do mais líquido ao menos líquido:
 
 1. Dinheiro em conta corrente
-2. Tesouro [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026) / CDB liquidez diária
+2. Tesouro [Selic](/es/glossario/es-selic) / CDB liquidez diária
 3. Fundos DI
 4. CDB com prazo
 5. Fundos imobiliários

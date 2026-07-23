@@ -21,7 +21,7 @@ IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to var
 - Starts at 96% on day 1 and goes to 0% on day 30
 - After 30 days: exempt from IOF
 
-### International [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)
+### International credit card
 
 - 4.38% on purchases in foreign currency
 - Applies to the total purchase value
@@ -31,7 +31,7 @@ IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to var
 - 0.38% fixed + 0.0082% per day on the value
 - Charged at the time of hiring
 
-### Exchange (purchase of [dollar](/en/posts/en-quotes-semana-1-july-2026)/euro)
+### Exchange (purchase of dollar/euro)
 
 - 1.1% for cash currency purchase
 - 0.38% for international transfers

@@ -31,14 +31,14 @@ El mecanismo del bônus varía según la política de cada empresa, pero general
 
 - La empresa define metas claras (ventas, productividad, ahorro de costos, etc.).  
 - Cada trimestre o año se evalúan los resultados y se compara con esas metas.  
-- Si el empleado cumple o supera los objetivos, se calcula el valor del bônus según un porcentaje preestablecido del salario o de la utilidad generada.  
+- Si el empleado cumple o supera los objetivos, se calcula el [valor](/es/glossario/es-valor) del bônus según un porcentaje preestablecido del salario o de la utilidad generada.  
 - El pago se realiza en la nómina o como un abono separado, y suele estar sujeto a impuestos como cualquier ingreso.
 
-En la práctica, si trabajas con un salario de R$5.000 y la empresa establece un bono del 10 % por alcanzar la meta de ventas, recibirás R$500 extra al final del período.
+En la práctica, si trabajas con un salario de R$5.000 y la empresa establece un bono del 10 % por alcanzar la meta de ventas, recibirás [R$500](/es/posts/es-montando-carteira-diversificada-com-r-500) extra al final del período.
 
 ## Ventajas
 
-El bônus trae varios beneficios tanto para la empresa como para el trabajador:
+El bônus trae varios [beneficios](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) tanto para la empresa como para el trabajador:
 
 ![Ventajas](/images/glossario/bonus-inline-3.webp)
 
@@ -64,7 +64,7 @@ Veamos cómo el bônus impacta a diferentes salarios reales:
 
 - **Salario R$3.000:** La empresa ofrece un bono del 5 % por cumplimiento de metas trimestrales. Si lo logras, recibes R$150 extra cada trimestre, sumando R$600 al año.  
 - **Salario R$5.500:** Se establece un bono de 8 % al cerrar el año fiscal con utilidades. Un buen desempeño genera R$440 de bono, que puedes usar para pagar una deuda o invertir.  
-- **Salario R$8.000:** La compañía tiene un plan de participación en ganancias del 12 % para equipos que superen sus objetivos. Si tu equipo logra el objetivo, el bono sería R$960, suficiente para un viaje corto o para reforzar tu fondo de emergencia.
+- **Salario R$8.000:** La compañía tiene un plan de participación en ganancias del 12 % para equipos que superen sus objetivos. Si tu equipo logra el objetivo, el bono sería R$960, suficiente para un viaje corto o para reforzar tu [fondo de emergencia](/es/glossario/es-reserva-de-emergencia).
 
 **Consejo práctico:** **Si recibes un bono, destina al menos el 30 % a tu ahorro o inversión antes de pensar en gastarlo.** Así conviertes ese ingreso extra en una herramienta para tu futuro.
 
@@ -79,10 +79,10 @@ Si tu empresa ya ofrece bonos, pero aún no los aprovechas al máximo, sigue est
 - Pregunta a Recursos Humanos o a tu jefe directo cuál es la política exacta (metas, porcentajes, fechas de pago).  
 - Anota las metas en tu agenda y desglosa qué acciones concretas necesitas para alcanzarlas.  
 - Cuando recibas el bono, separa el dinero en tres sobres: gasto inmediato, ahorro y reinversión.  
-- Usa una herramienta de seguimiento (una hoja de cálculo o una app) para registrar cada bono y su destino.  
+- Usa una herramienta de seguimiento (una [hoja de cálculo](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) o una app) para registrar cada bono y su destino.  
 - Evalúa al final del año si los bonos realmente mejoraron tu situación financiera y ajusta tu estrategia.
 
 ## Empieza hoy
 
-No esperes a que llegue el próximo ciclo de pagos para poner en práctica estos consejos. Abre tu app de finanzas, define tu meta de ahorro y conviértete en el dueño de tu dinero. Cada bono es una oportunidad; la clave está en usarlo con inteligencia. ¡Vamos, tú puedes!
+No esperes a que llegue el próximo ciclo de pagos para poner en práctica estos [consejos](/es/posts/es-7-errores-financieros-principiante). Abre tu app de finanzas, define tu meta de ahorro y conviértete en el dueño de tu dinero. Cada bono es una oportunidad; la clave está en usarlo con inteligencia. ¡Vamos, tú puedes!
 

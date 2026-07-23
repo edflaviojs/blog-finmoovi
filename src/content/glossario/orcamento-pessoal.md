@@ -50,7 +50,7 @@ Orçamento pessoal é um plano que mostra quanto [dinheiro](/posts/cashback-inte
 
 ## Erros comuns
 
-1. Não incluir [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) pequenos (café, delivery)
+1. Não incluir gastos pequenos (café, delivery)
 2. Esquecer despesas anuais (IPVA, IPTU, seguros)
 3. Não revisar mensalmente
 4. Fazer orçamento muito restritivo (não sustenta)

@@ -31,7 +31,7 @@ A cotação do dólar americano (USD) fechou a semana em R$ 5,18, apresentando u
 
 ## [Selic](/en/glossario/en-selic) e Impacto nos Investimentos
 
-A [taxa](/en/glossario/en-taxa) [Selic](/en/posts/en-quotes-semana-1-june-2026), que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um fator crucial para os investidores. Com a manutenção da taxa [Selic](/en/posts/en-quotes-semana-3-june-2026) em níveis específicos, os investimentos em títulos públicos e outras aplicações financeiras podem ser afetados. É fundamental entender como as alterações na [Selic](/en/posts/en-quotes-semana-2-july-2026) podem influenciar o rendimento dos seus investimentos e ajustar sua estratégia de acordo. Se você está pensando em investir, é uma boa ideia considerar a [diversificação](/en/glossario/en-diversificacao), incluindo investimentos em diferentes moedas, o que pode ser facilitado com ferramentas como o [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), que ajuda a acompanhar seus investimentos em múltiplas moedas de forma prática.
+A [taxa](/en/glossario/en-taxa) Selic, que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um fator crucial para os investidores. Com a manutenção da taxa Selic em níveis específicos, os investimentos em títulos públicos e outras aplicações financeiras podem ser afetados. É fundamental entender como as alterações na Selic podem influenciar o rendimento dos seus investimentos e ajustar sua estratégia de acordo. Se você está pensando em investir, é uma boa ideia considerar a [diversificação](/en/glossario/en-diversificacao), incluindo investimentos em diferentes moedas, o que pode ser facilitado com ferramentas como o [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), que ajuda a acompanhar seus investimentos em múltiplas moedas de forma prática.
 
 ![Selic e Impacto nos Investimentos](/images/posts/en-quotes-semana-1-july-2026-inline-3.webp)
 
@@ -45,9 +45,9 @@ Para os investidores individuais, uma dica valiosa é manter a diversificação 
 
 Para a próxima semana, é esperado que o mercado continue a acompanhar de perto as decisões econômicas globais e as notícias locais. A estabilidade do dólar e do euro pode continuar, mas é sempre bom estar preparado para possíveis surpresas. Mantenha-se informado sobre as tendências do mercado e ajuste suas estratégias de investimento conforme necessário. Lembre-se de que a previsão é uma ferramenta útil, mas a flexibilidade e a diversificação são suas melhores aliadas no mundo dos investimentos.
 
-Em resumo, esta semana foi marcada pela estabilidade das moedas estrangeiras e pela importância de entender o impacto da [Selic](/en/posts/en-quotes-semana-4-june-2026) nos investimentos. Com as ferramentas certas, como o [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), e uma abordagem bem pensada, você pode navegar pelo mercado financeiro com mais confiança. Até a próxima semana, quando traremos mais notícias e dicas para ajudá-lo a gerenciar suas finanças de forma eficaz!
+Em resumo, esta semana foi marcada pela estabilidade das moedas estrangeiras e pela importância de entender o impacto da Selic nos investimentos. Com as ferramentas certas, como o FinMoovi, e uma abordagem bem pensada, você pode navegar pelo mercado financeiro com mais confiança. Até a próxima semana, quando traremos mais notícias e dicas para ajudá-lo a gerenciar suas finanças de forma eficaz!
 
 
 ---
-**Ready to track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
+**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
 

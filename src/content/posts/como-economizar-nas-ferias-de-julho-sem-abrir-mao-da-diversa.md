@@ -91,7 +91,7 @@ A [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme
 **Cálculo:**
 - Hotel 3★ em Florianópolis (julho): R$ 350/noite
 - Quarto no Airbnb: R$ 180/noite
-- [Economia](/posts/como-criar-uma-reserva-de-emergencia): **R$ 170** por noite. Em uma viagem de 5 dias, isso representa **R$ 850** economizados.
+- Economia: **R$ 170** por noite. Em uma viagem de 5 dias, isso representa **R$ 850** economizados.
 
 ---
 
@@ -104,13 +104,13 @@ Levar lanches, preparar café da manhã no próprio alojamento ou fazer compras 
 
 
 
-**Exemplo de [custos](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) diários:**
+**Exemplo de custos diários:**
 - Café da manhã (café + pão): R$ 8
 - Almoço (prato feito em casa): R$ 12
 - Jantar (restaurante barato): R$ 25
 - Total: **R$ 45**
 
-Se você gastar R$ 80 em restaurantes, a diferença são **R$ 35** por dia. Em 5 dias, isso representa **R$ 175** de [economia](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso).
+Se você gastar R$ 80 em restaurantes, a diferença são **R$ 35** por dia. Em 5 dias, isso representa **R$ 175** de economia.
 
 ---
 
@@ -128,24 +128,24 @@ Se você gastar R$ 80 em restaurantes, a diferença são **R$ 35** por dia. 
 
 ---
 
-## 7. [Controle de gastos](/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza) em tempo real
+## 7. Controle de gastos em tempo real
 
 ### Como não perder o rumo
-Mesmo com o melhor planejamento, imprevistos acontecem. Use o **[FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** para registrar cada despesa (até as de poucos centavos) e receber alertas quando estiver próximo do limite diário. O app ainda gera [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) mensais que mostram onde foi possível cortar custos para a próxima viagem.
+Mesmo com o melhor planejamento, imprevistos acontecem. Use o **FinMoovi** para registrar cada despesa (até as de poucos centavos) e receber alertas quando estiver próximo do limite diário. O app ainda gera relatórios mensais que mostram onde foi possível cortar custos para a próxima viagem.
 
 ---
 
 ## Checklist rápido para as férias de julho
 
-| ✅ | Ação | [Economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) estimada |
+| ✅ | Ação | Economia estimada |
 |---|------|-------------------|
-| 1 | Definir teto de gasto | Mantém [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) intacto |
+| 1 | Definir teto de gasto | Mantém orçamento intacto |
 | 2 | Escolher destino off‑season | Até R$ 600 na passagem |
 | 3 | Optar por ônibus ou carona | R$ 100‑R$ 200 por trajeto |
 | 4 | Hospedagem em Airbnb/hostel | R$ 850 em 5 noites |
 | 5 | Cozinhar parte das refeições | R$ 175 em 5 dias |
 | 6 | Priorizar atividades gratuitas | R$ 40‑R$ 80 por dia |
-| 7 | Monitorar gastos com [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) | Evita surpresas de última hora |
+| 7 | Monitorar gastos com FinMoovi | Evita surpresas de última hora |
 
 ---
 

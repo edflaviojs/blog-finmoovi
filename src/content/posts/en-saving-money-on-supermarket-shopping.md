@@ -48,14 +48,14 @@ For example, if you see a product on sale, but you don't need it, don't buy it. 
 ## Using Technology to Your Advantage
 There are many apps and tools that can help you [save money](/en/posts/en-reduce-fixed-expenses) on supermarket shopping. For example, you can use a price comparison app to find the best prices for the products you need. Additionally, you can use a shopping list app to help organize your shopping and avoid forgetting important products.
 
-**Practical Tip:** Use a [personal finance](/en/posts/en-30-day-rule-for-purchases) app, such as [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas), to help control your expenses and find ways to save.
+**Practical Tip:** Use a personal finance app, such as FinMoovi, to help control your expenses and find ways to save.
 
 ![Usando tecnologia a seu favor](/images/posts/economizar-nas-compras-do-supermercado-4.webp)
 
 
 
 ## Start Today
-Now that you know how to save [money](/en/posts/en-save-on-your-market-bill) on supermarket shopping, it's time to start putting these tips into practice. Remember that saving is a continuous process, and every small change can make a big difference in the long run. So, start today by making changes to your supermarket shopping and see how you can save [money](/en/posts/en-saving-on-your-energy-bill).
+Now that you know how to save money on supermarket shopping, it's time to start putting these tips into practice. Remember that saving is a continuous process, and every small change can make a big difference in the long run. So, start today by making changes to your supermarket shopping and see how you can save money.
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) and discover where your [money](/en/posts/en-tips-for-controlling-credit-card-expenses) is really going.**
+**The next step is yours. Test [FinMoovi for free for 7 days](https://finmoovi.com) and discover where your money is really going.**

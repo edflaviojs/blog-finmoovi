@@ -44,7 +44,7 @@ Usar Yahoo Finance traz benefícios claros para quem quer organizar suas [fina
 
 
 
-- **Gratuito**: não há cobrança mensal nem necessidade de [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-).
+- **Gratuito**: não há cobrança mensal nem necessidade de cartão de crédito.
 - **Acessível**: funciona em computador, tablet e smartphone, facilitando o acompanhamento onde quer que você esteja.
 - **Diversificado**: cobre ações brasileiras, estrangeiras, [fundos imobiliários](/glossario/fundos-imobiliarios), ETFs (fundos negociados em bolsa) e até criptomoedas.
 - **Educativo**: oferece glossário de termos (ex.: “dividendo” – parte do lucro distribuída ao acionista) e tutoriais que ajudam iniciantes a entender o mercado.
@@ -69,7 +69,7 @@ Vamos imaginar três perfis de leitores que recebem salários diferentes e como 
 - **Bruno, R$5.800**: engenheiro que já possui ações da Vale (VALE3). Ele cria um alerta de preço para ser notificado se a ação cair 7 % em um dia, o que historicamente indica oportunidade de compra. Quando o alerta dispara, ele compra 20 ações a R$80 cada, aproveitando a queda.
 - **Carla, R$8.000**: gerente de marketing que diversifica entre ações brasileiras e estrangeiras. No Yahoo Finance, ela acompanha o índice S&P 500 (ticker ^GSPC) e usa a calculadora de rentabilidade para comparar o retorno de um ETF que replica o índice (IVVB11) com o de um fundo de ações locais. Essa comparação ajuda a decidir onde alocar R$5.000 do seu portfólio.
 
-**Dica prática:** **Use a ferramenta de comparação de ativos** para montar uma carteira equilibrada que combine [renda fixa](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), FIIs e ações, ajustando o risco ao seu perfil.
+**Dica prática:** **Use a ferramenta de comparação de ativos** para montar uma carteira equilibrada que combine [renda fixa](/glossario/renda-fixa), FIIs e ações, ajustando o risco ao seu perfil.
 
 ## Como começar
 
@@ -82,7 +82,7 @@ Se você ainda não tem conta em nenhum corretor, o primeiro passo é abrir uma 
 - Defina alertas de preço e de notícias relevantes para o ativo escolhido.
 - Anote as informações principais (preço de compra, objetivo de venda, [dividendos](/glossario/dividendos) esperados) em uma planilha simples ou no próprio app.
 
-Com esses passos, você transforma o Yahoo Finance em uma extensão do seu [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), sem custos adicionais.
+Com esses passos, você transforma o Yahoo Finance em uma extensão do seu planejamento financeiro, sem custos adicionais.
 
 ## Comece hoje
 

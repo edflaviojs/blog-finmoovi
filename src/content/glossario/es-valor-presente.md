@@ -25,7 +25,7 @@ Onde:
 
 ## Ejemplo práctico
 
-Alguém te oferece R$ 10.000 daqui a 2 anos. Com a [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026) a 13% ao ano, quanto isso vale hoje?
+Alguém te oferece R$ 10.000 daqui a 2 anos. Com a [Selic](/es/glossario/es-selic) a 13% ao ano, quanto isso vale hoje?
 
 VP = 10.000 ÷ (1,13)² = 10.000 ÷ 1,2769 = **R$ 7.831**
 

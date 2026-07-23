@@ -20,14 +20,14 @@ seo:
 ## Introduction to [Investment](/en/posts/en-tesouro-direto-para-iniciantes)
 When it comes to investing, many people think that having a large capital is necessary to start. However, it is possible to build a diversified portfolio with just R$500. To do this, it's essential to understand what [diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) means and why it's important. Diversification means distributing your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) across different types of assets, such as [stocks](/en/glossario/en-acoes), bonds, [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) funds, etc., to reduce the risk of losses. Imagine you have R$500 and decide to invest it all in a single [stock](/en/glossario/en-stock). If that stock falls, you'll lose your entire investment. But if you distribute those R$500 across different assets, the risk of loss will be lower.
 
-## Types of [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-There are many types of [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) available in the market. Some examples include:
+## Types of Investments
+There are many types of investments available in the market. Some examples include:
 - **Stocks**: Represent a part of a company's capital. When you buy stocks, you're buying a part of that company.
 - **Bonds**: Are issued by companies or governments to raise capital. They offer a [fixed income](/en/glossario/en-renda-fixa) and a return on the invested capital after a certain period.
 - **Investment Funds**: Are like a basket that contains different assets, such as stocks and bonds. They allow you to invest in a variety of assets with a single investment.
 
-## [Planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) and Objectives
-Before starting to invest, it's crucial to define your objectives and plan how you'll achieve them. Consider what you want to achieve with your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Are you looking for extra income, saving for a house, or planning your retirement? How much time do you have to invest? Your risk profile is also vital. Some people are willing to take more risks in search of higher returns, while others prefer safer investments, even if the returns are lower.
+## Planning and Objectives
+Before starting to invest, it's crucial to define your objectives and plan how you'll achieve them. Consider what you want to achieve with your investments. Are you looking for extra income, saving for a house, or planning your retirement? How much time do you have to invest? Your risk profile is also vital. Some people are willing to take more risks in search of higher returns, while others prefer safer investments, even if the returns are lower.
 
 ![Tipos de Investimentos](/images/posts/montando-carteira-diversificada-com-r-500-2.webp)
 
@@ -37,17 +37,17 @@ Before starting to invest, it's crucial to define your objectives and plan how y
 Let's consider a practical example. Suppose you invest R$500 in an investment fund that offers an annual return of 8%. After a year, your investment will be worth R$540. If you continue investing R$500 every month, after 5 years, your investment could be worth around R$4,500, considering the same annual return of 8%. It's essential to remember that these are just examples, and the actual performance of investments may vary.
 
 ## Risks
-Investing always involves risks. Risk is the possibility of losing part or all of your investment. There are different types of risks, such as market risk (the value of assets may fall), [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) risk (the company or government that issued the bond may not pay), and [liquidity](/en/glossario/en-liquidez) risk (you may not be able to sell your investment quickly enough or at the price you want). To manage these risks, it's essential to diversify your portfolio and understand the risks associated with each investment. Evaluate whether it makes sense for your risk profile and financial objectives.
+Investing always involves risks. Risk is the possibility of losing part or all of your investment. There are different types of risks, such as market risk (the value of assets may fall), credit risk (the company or government that issued the bond may not pay), and [liquidity](/en/glossario/en-liquidez) risk (you may not be able to sell your investment quickly enough or at the price you want). To manage these risks, it's essential to diversify your portfolio and understand the risks associated with each investment. Evaluate whether it makes sense for your risk profile and financial objectives.
 
 ![Simulações de Rendimento](/images/posts/montando-carteira-diversificada-com-r-500-4.webp)
 
 
 
 ## Next Steps
-Now that you've understood the basic concepts of investment and diversification, it's time to put this knowledge into practice. Consider starting with small amounts and increasing your investments as you become more comfortable. Remember that the key to success is consistency and patience. Don't be afraid to seek help from a financial professional if you're not confident [investing on your own](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-). Additionally, consider using tools like [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) to help manage your investments efficiently.
+Now that you've understood the basic concepts of investment and diversification, it's time to put this knowledge into practice. Consider starting with small amounts and increasing your investments as you become more comfortable. Remember that the key to success is consistency and patience. Don't be afraid to seek help from a financial professional if you're not confident investing on your own. Additionally, consider using tools like FinMoovi to help manage your investments efficiently.
 
 ![Próximos passos](/images/posts/montando-carteira-diversificada-com-r-500-6.webp)
 
 
 
-To track your investments in one place, [try [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) — multi-currency, intelligent [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim), and 100% offline.
+To track your investments in one place, try [FinMoovi for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.

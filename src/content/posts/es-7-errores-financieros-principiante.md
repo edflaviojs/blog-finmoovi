@@ -41,7 +41,7 @@ Los pagos mínimos te mantienen endeudado para siempre por el [interés compuest
 
 ## 6. No Definir Metas Financieras
 
-Sin metas claras, ahorrar se siente inútil. Define para qué estás ahorrando: fondo de emergencia, [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias), casa, [jubilación](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico).
+Sin metas claras, ahorrar se siente inútil. Define para qué estás ahorrando: fondo de emergencia, [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias), casa, jubilación.
 
 ## 7. Intentar Hacer Todo a la Vez
 
@@ -49,5 +49,5 @@ La salud financiera es un maratón, no un sprint. Enfócate en una meta a la vez
 
 ## La Solución: Empieza Simple
 
-Elige un error de esta lista y corrígelo esta semana. Usa una herramienta como [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) para automatizar el rastreo y mantener tus finanzas bajo control sin esfuerzo mental.
+Elige un error de esta lista y corrígelo esta semana. Usa una herramienta como FinMoovi para automatizar el rastreo y mantener tus finanzas bajo control sin esfuerzo mental.
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"7 Errores Financieros Que Todo Principiante Comete (Y Cómo Evitarlos)","step":[{"@type":"HowToStep","position":1,"name":"No Rastrear Gastos","text":"El error #1: no saber a dónde va tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado). Sin rastreo, no puedes mejorar. Empieza registrando cada gasto durante 30 días."},{"@type":"HowToStep","position":2,"name":"Sin [Fondo de Emergencia](/es/glossario/es-reserva-de-emergencia)","text":"La vida pasa. Sin 3-6 meses de gastos ahorrados, cualquier imprevisto se convierte en crisis financiera. Empieza con $1.000 como primera meta."},{"@type":"HowToStep","position":3,"name":"Ignorar Gastos Pequeños","text":"¿Ese café diario de $5? Son $150/mes o $1.800/año. Los gastos pequeños se acumulan rápido. Rastréalos todos."},{"@type":"HowToStep","position":4,"name":"Vivir Sin [Presupuesto](/es/posts/es-como-crear-presupuesto-personal)","text":"\"Simplemente gastaré menos\" no funciona. Necesitas un plan concreto. La regla 50-30-20 es un excelente punto de partida."},{"@type":"HowToStep","position":5,"name":"Solo Pagar el Mínimo de Deudas","text":"Los pagos mínimos te mantienen endeudado para siempre por el [interés compuesto](/es/glossario/es-juros-compostos)/es/glossario/es-[juros](/es/glossario/es-juros)-compostos trabajando en tu contra. Siempre paga más del mínimo cuando sea posible."},{"@type":"HowToStep","position":6,"name":"No Definir Metas Financieras","text":"Sin metas claras, ahorrar se siente inútil. Define para qué estás ahorrando: fondo de emergencia, [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias), casa, jubilación."},{"@type":"HowToStep","position":7,"name":"Intentar Hacer Todo a la Vez","text":"La salud financiera es un maratón, no un sprint. Enfócate en una meta a la vez. Primero fondo de emergencia, luego pagar deudas, después invertir."}]} -->

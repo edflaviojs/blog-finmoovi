@@ -44,7 +44,7 @@ Além disso, os ETFs oferecem uma forma fácil de investir em ativos que podem s
 
 
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Risks
 Como qualquer investimento, os ETFs também envolvem riscos. **Practical tip:** É importante entender que os ETFs não são isentos de riscos, e é fundamental fazer uma pesquisa cuidadosa antes de investir. Alguns dos principais riscos incluem:
 * Risco de mercado: o valor do ETF pode cair se o mercado como um todo cair
 * Risco de crédito: o risco de que as empresas ou governos que emitem os ativos subjacentes não honrem seus compromissos
@@ -53,7 +53,7 @@ Como qualquer investimento, os ETFs também envolvem riscos. **Practical tip:** 
 Além disso, os ETFs também podem ser afetados por mudanças nas taxas de [juros](/en/glossario/en-juros), inflação e outras condições econômicas. É importante lembrar que os ETFs são investimentos de longo prazo, e é fundamental ter uma estratégia de investimento clara e disciplinada para alcançar seus objetivos.
 
 ## Practical examples
-Vamos considerar um exemplo prático. Imagine que você ganha R$5.000 por mês e quer investir 10% de sua renda em um ETF de ações da bolsa de valores brasileira. Você pode investir [R$500](/en/posts/en-montando-carteira-diversificada-com-r-500) por mês em um ETF que acompanha o índice Ibovespa, por exemplo. **Practical tip:** É importante lembrar que é fundamental diversificar sua carteira de investimentos, então você pode considerar investir em diferentes tipos de ETFs, como um ETF de títulos ou um ETF de commodities.
+Vamos considerar um exemplo prático. Imagine que você ganha R$5.000 por mês e quer investir 10% de sua renda em um ETF de ações da bolsa de valores brasileira. Você pode investir R$500 por mês em um ETF que acompanha o índice Ibovespa, por exemplo. **Practical tip:** É importante lembrar que é fundamental diversificar sua carteira de investimentos, então você pode considerar investir em diferentes tipos de ETFs, como um ETF de títulos ou um ETF de commodities.
 
 Outro exemplo é o de uma pessoa que ganha R$3.000 por mês e quer investir em um ETF de ações de empresas estrangeiras. Ela pode investir R$300 por mês em um ETF que acompanha o índice S&P 500, por exemplo. **Practical tip:** É importante lembrar que os ETFs podem ser uma forma acessível de investir em ativos que podem ser difíceis de acessar de outra forma, então é fundamental fazer uma pesquisa cuidadosa antes de investir.
 

@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## What is [Financial Education](/en/posts/en-7-financial-mistakes-beginners)?
+## What is Financial Education?
 
 Financial education is about learning to handle [money](/en/posts/en-30-day-rule-for-purchases) intelligently. It's not about getting rich quickly — it's about understanding how [money](/en/posts/en-avoid-impulse-purchases) works to make better decisions in your daily life.
 
@@ -55,4 +55,4 @@ Unfortunately, financial education is not a priority in the Brazilian school cur
 4. Build an emergency reserve
 5. Start investing (even R$ 50/month)
 6. Read 1 finance book per quarter
-7. Use [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) to automate control
+7. Use FinMoovi to automate control

@@ -35,7 +35,7 @@ La lista de compras es tu mapa del tesoro. Cuando tienes el papel o la app abier
 
 Muchos supermercados ofrecen líneas de marcas propias que brindan una calidad similar a las marcas líderes, pero con un precio hasta un 30 % menor. La diferencia suele estar en la inversión en marketing, no en la materia prima. Prueba sustituir el detergente de marca por uno de la marca propia; el [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) puede ser de R$ 5 a R$ 10 por envase, lo que acumulado a lo largo de un año representa hasta R$ 120.
 
-Vale la pena consultar la tabla de precios en el sitio del propio supermercado o usar apps de comparación de precios, como **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** – muestra las opciones más baratas al lado de tu lista.
+Vale la pena consultar la tabla de precios en el sitio del propio supermercado o usar apps de [comparación](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) de precios, como **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** – muestra las opciones más baratas al lado de tu lista.
 
 ## Usa cupones y programas de fidelidad
 
@@ -53,7 +53,7 @@ En el supermercado, los pasillos de dulces y bebidas son trampas perfectas. Si t
 
 ## Empieza hoy
 
-Solo necesitas coger papel y bolígrafo (o abrir la app de finanzas) ahora mismo, listar lo que falta y definir un límite de precio para cada artículo. En la próxima visita al mercado, sigue la lista, prefiere marcas propias y usa el programa de fidelidad. La diferencia al final del mes aparecerá en el extracto y, lo más importante, en tu bolsillo.
+Solo necesitas coger papel y bolígrafo (o abrir la [app de finanzas](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar)) ahora mismo, listar lo que falta y definir un límite de precio para cada artículo. En la próxima visita al mercado, sigue la lista, prefiere marcas propias y usa el programa de fidelidad. La diferencia al final del mes aparecerá en el extracto y, lo más importante, en tu bolsillo.
 
 ![Comece hoje](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-6.webp)
 

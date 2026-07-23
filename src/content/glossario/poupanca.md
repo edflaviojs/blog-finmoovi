@@ -20,7 +20,7 @@ seo:
 
 ## O que é
 
-A poupança é a conta bancária mais conhecida no Brasil para guardar [dinheiro](/posts/cashback-inteligente) e receber juros. Ela funciona como um “cofrinho” digital: você deposita um valor, o banco guarda e paga uma remuneração mensal, que costuma ser menor que a de outros [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), mas tem a vantagem de ser muito simples e ter garantia do Fundo Garantidor de Créditos (FGC) até R$ 250 mil por instituição.
+A poupança é a conta bancária mais conhecida no Brasil para guardar dinheiro e receber juros. Ela funciona como um “cofrinho” digital: você deposita um valor, o banco guarda e paga uma remuneração mensal, que costuma ser menor que a de outros investimentos, mas tem a vantagem de ser muito simples e ter garantia do Fundo Garantidor de Créditos (FGC) até R$ 250 mil por instituição.
 
 ![O que é](/images/glossario/poupanca-inline-1.webp)
 
@@ -28,11 +28,11 @@ A poupança é a conta bancária mais conhecida no Brasil para guardar [dinheiro
 
 ## Como funciona
 
-Quando você coloca [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) na poupança, o banco calcula o rendimento com base na Taxa Referencial (TR) + 0,5 % ao mês, ou 70 % da taxa Selic quando ela está acima de 8,5 % ao ano. O cálculo é feito automaticamente e o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) aparece na sua conta no dia do aniversário do depósito.
+Quando você coloca dinheiro na poupança, o banco calcula o rendimento com base na Taxa Referencial (TR) + 0,5 % ao mês, ou 70 % da taxa Selic quando ela está acima de 8,5 % ao ano. O cálculo é feito automaticamente e o crédito aparece na sua conta no dia do aniversário do depósito.
 
 - **Depósito:** pode ser feito a qualquer momento, por transferência, DOC, TED ou até mesmo em caixa eletrônico.  
 - **Rendimento:** só é creditado a cada 30 dias, na data de aniversário da [aplicação](/glossario/aplicacao).  
-- **[Liquidez](/glossario/liquidez):** você pode sacar o [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) a qualquer hora, sem multa, mas perde o rendimento do dia.
+- **[Liquidez](/glossario/liquidez):** você pode sacar o dinheiro a qualquer hora, sem multa, mas perde o rendimento do dia.
 
 ## Vantagens
 
@@ -70,7 +70,7 @@ Esses números mostram que, mesmo com juros modestos, a disciplina de aportar re
 Se você ainda não tem uma conta poupança, siga estes passos simples para colocar o dinheiro trabalhando para você.
 
 - **Abra a conta:** vá ao seu banco ou use o app do banco; a abertura costuma ser gratuita e leva poucos minutos.  
-- **Defina o valor:** escolha um percentual do seu salário que caiba no [orçamento](/posts/5-alternativas-ao-mobills-em-2026) – **Dica prática:** comece com 5 % e aumente gradualmente.  
+- **Defina o valor:** escolha um percentual do seu salário que caiba no orçamento – **Dica prática:** comece com 5 % e aumente gradualmente.  
 - **Automatize:** programe transferências automáticas logo após o pagamento; assim você não esquece de depositar.  
 - **Acompanhe o extrato:** verifique mensalmente o rendimento; isso ajuda a manter o hábito e a entender o crescimento.  
 - **Reavalie anualmente:** se a taxa Selic mudar, considere diversificar; **Dica prática:** compare a poupança com CDBs de 100 % do CDI para ver se vale a pena mudar parte do dinheiro.  

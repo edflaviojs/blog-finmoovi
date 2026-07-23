@@ -37,7 +37,7 @@ Aquí está un ejemplo de cómo puedes categorizar tus gastos:
 **Consejo práctico:** Intenta reducir tus gastos variables en un 10% a 20% al mes para aumentar tu [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado).
 
 ## [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y Reserva de Emergencia
-Además de ahorrar, es importante pensar en [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para el futuro. Esto puede incluir aplicar [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) en una [cuenta de ahorro](https://www.bcb.gov.br) o invertir en [tesoro directo](https://www.tesourodireto.com.br). La reserva de emergencia debe ser suficiente para cubrir 3 a 6 meses de gastos, en caso de que no tengas ingresos por un período.
+Además de ahorrar, es importante pensar en inversiones para el futuro. Esto puede incluir aplicar dinero en una [cuenta de ahorro](https://www.bcb.gov.br) o invertir en [tesoro directo](https://www.tesourodireto.com.br). La reserva de emergencia debe ser suficiente para cubrir 3 a 6 meses de gastos, en caso de que no tengas ingresos por un período.
 
 Por ejemplo, si tus gastos mensuales son de R$ 3.500, debes tener una reserva de emergencia de R$ 10.500 a R$ 21.000. Esto puede parecer mucho, pero es importante para garantizar que puedas pagar tus cuentas incluso en meses malos.
 
@@ -51,9 +51,9 @@ Además, es fundamental tener un sistema de cobro eficaz, para garantizar que re
 
 
 ## [Educación Financiera](/es/glossario/es-educacao-financeira)
-La [educación financiera](/es/posts/es-7-errores-financieros-principiante) es fundamental para cualquier persona, especialmente para autónomos. Esto incluye entender conceptos básicos de finanzas, como intereses, [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y impuestos. Existen muchos recursos disponibles en línea, como el [Investopedia](https://www.investopedia.com), que pueden ayudar a mejorar tu conocimiento [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-).
+La educación financiera es fundamental para cualquier persona, especialmente para autónomos. Esto incluye entender conceptos básicos de finanzas, como intereses, inversiones y impuestos. Existen muchos recursos disponibles en línea, como el [Investopedia](https://www.investopedia.com), que pueden ayudar a mejorar tu conocimiento financiero.
 
-**Consejo práctico:** Reserva 1 hora a la semana para aprender sobre [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) y planeamiento financiero.
+**Consejo práctico:** Reserva 1 hora a la semana para aprender sobre finanzas personales y planeamiento financiero.
 
 ## Comienza hoy
 No pospongas más tu planeamiento financiero. Comienza hoy a registrar tus gastos, a planificar tus ingresos y a invertir en tu futuro. Recuerda que el planeamiento financiero es un proceso continuo y que pequeños cambios pueden hacer una gran diferencia a lo largo del tiempo.

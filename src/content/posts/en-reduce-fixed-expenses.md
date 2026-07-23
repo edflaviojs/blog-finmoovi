@@ -55,4 +55,4 @@ Let's consider a practical example:
 With these reductions, you can save R$ 530.00 per month, which equals R$ 6,360.00 per year.
 
 ## Conclusion
-Reducing monthly fixed expenses is one of the main strategies to achieve financial stability. With the help of tools like [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), you can create a personalized [budget](/en/posts/en-how-to-create-personal-budget) and manage your finances effectively. Remember that reducing fixed expenses is an ongoing process that requires attention and discipline. Try [FinMoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) today and start saving [money](/en/posts/en-financial-planning-for-couples)! [Click here to learn more](https://finmoovi.com).
+Reducing monthly fixed expenses is one of the main strategies to achieve financial stability. With the help of tools like FinMoovi, you can create a personalized budget and manage your finances effectively. Remember that reducing fixed expenses is an ongoing process that requires attention and discipline. Try FinMoovi today and start saving money! [Click here to learn more](https://finmoovi.com).

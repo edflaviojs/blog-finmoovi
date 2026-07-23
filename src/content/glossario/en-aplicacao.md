@@ -34,7 +34,7 @@ A ideia central é que, ao invés de deixar o dinheiro parado na conta corrente,
 
 ## How it works
 
-Quando você decide fazer uma aplicação, segue um processo bem simples: escolhe o produto, define o valor e o prazo, e deixa o dinheiro “trabalhar” até o vencimento ou até que você decida resgatar. Cada tipo de aplicação tem sua própria forma de remuneração – alguns pagam juros fixos, outros variam de acordo com a taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) ou com o desempenho de um índice.  
+Quando você decide fazer uma aplicação, segue um processo bem simples: escolhe o produto, define o valor e o prazo, e deixa o dinheiro “trabalhar” até o vencimento ou até que você decida resgatar. Cada tipo de aplicação tem sua própria forma de remuneração – alguns pagam juros fixos, outros variam de acordo com a taxa [Selic](/en/glossario/en-selic) ou com o desempenho de um índice.  
 
 - **Escolha o produto** de acordo com seu objetivo (liquidez, rentabilidade ou segurança).  
 - **Defina o valor** que pode comprometer sem prejudicar seu orçamento mensal.  
@@ -71,12 +71,12 @@ Nenhum investimento é totalmente livre de risco, e entender as armadilhas ajuda
 Vamos colocar a teoria em prática usando salários típicos no Brasil. Suponha que você receba R$4.500 por mês e consiga destinar 10 % (R$450) para uma aplicação de renda fixa com rendimento de 6 % ao ano. Em 12 meses, o cálculo simples de juros compostos (juros sobre juros) gera aproximadamente R$28 de ganho, totalizando R$5.478 ao final do ano.  
 
 - **Exemplo 1:** Maria ganha R$3.200 e investe R$200 por mês em um CDB que paga 5,5 % ao ano. Em 2 anos, ela acumula cerca de R$5.200, já que os juros se acumulam mensalmente.  
-- **Exemplo 2:** João recebe R$7.500 e decide aplicar [R$500](/en/posts/en-montando-carteira-diversificada-com-r-500) mensais em um fundo de ações com expectativa de 10 % ao ano. Após 5 anos, o saldo pode chegar a R$38.000, mas ele precisa estar preparado para oscilações anuais.  
+- **Exemplo 2:** João recebe R$7.500 e decide aplicar R$500 mensais em um fundo de ações com expectativa de 10 % ao ano. Após 5 anos, o saldo pode chegar a R$38.000, mas ele precisa estar preparado para oscilações anuais.  
 - **Exemplo 3:** Ana tem um salário de R$8.000 e coloca R$1.000 em LCI (isento de imposto) que rende 7 % ao ano. Em 3 anos, ela tem R$38.500, aproveitando a isenção fiscal para melhorar o retorno líquido.  
 
 **Practical tip:** Sempre calcule o rendimento usando a fórmula de juros compostos para ter uma ideia real do ganho ao longo do tempo.  
 
-**Practical tip:** Se o seu objetivo é ter dinheiro disponível em até 12 meses, prefira aplicações com alta liquidez, como CDBs de curto prazo ou Tesouro [Selic](/en/posts/en-quotes-semana-1-june-2026).  
+**Practical tip:** Se o seu objetivo é ter dinheiro disponível em até 12 meses, prefira aplicações com alta liquidez, como CDBs de curto prazo ou Tesouro Selic.  
 
 **Practical tip:** Diversifique entre renda fixa e variável; assim, você combina segurança com potencial de crescimento.
 

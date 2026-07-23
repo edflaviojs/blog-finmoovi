@@ -18,29 +18,29 @@ seo:
 ---
 
 ## Introducción al [CDB](/es/glossario/es-cdb) y [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
-Cuando se trata de invertir, es importante entender las opciones disponibles y cómo pueden adaptarse a su perfil de inversionista. Dos de las [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) más populares en Brasil son el CDB (Certificado de Depósito Bancario) y el [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Pero, después de todo, ¿cuál de ellos rinde más en 2026? Para entender esto, vamos a sumergirnos en los detalles de cada uno.
+Cuando se trata de invertir, es importante entender las opciones disponibles y cómo pueden adaptarse a su perfil de inversionista. Dos de las [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) más populares en Brasil son el CDB (Certificado de Depósito Bancario) y el Tesouro Selic. Pero, después de todo, ¿cuál de ellos rinde más en 2026? Para entender esto, vamos a sumergirnos en los detalles de cada uno.
 
 ### ¿Qué es CDB?
-El CDB es un tipo de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) de [renta fija](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) ofrecida por bancos e instituciones financieras. Funciona como un préstamo que usted hace al banco, y a [cambio](/es/glossario/es-cambio), el banco paga una tasa de interés. El CDB puede ser pré-fijado, pos-fijado o híbrido, cada uno con su propia forma de calcular los intereses.
+El CDB es un tipo de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) de renta fija ofrecida por bancos e instituciones financieras. Funciona como un préstamo que usted hace al banco, y a [cambio](/es/glossario/es-cambio), el banco paga una tasa de interés. El CDB puede ser pré-fijado, pos-fijado o híbrido, cada uno con su propia forma de calcular los intereses.
 
-### ¿Qué es [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)?
-El Tesouro [Selic](/es/glossario/es-selic), por otro lado, es una [inversión](/es/posts/es-tesouro-direto-para-iniciantes) de renta fija emitida por el Tesouro Nacional, con garantía del gobierno brasileño. Está indexado a la tasa [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026), que es la tasa básica de interés de la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) definida por el Banco Central de Brasil. Esto significa que el rendimiento del Tesouro [Selic](/es/posts/es-cotizaciones-semana-1-junio-2026) acompaña las variaciones de la tasa [Selic](/es/posts/es-cotizaciones-semana-2-julio-2026).
+### ¿Qué es Tesouro Selic?
+El Tesouro [Selic](/es/glossario/es-selic), por otro lado, es una inversión de renta fija emitida por el Tesouro Nacional, con garantía del gobierno brasileño. Está indexado a la tasa Selic, que es la tasa básica de interés de la economía definida por el Banco Central de Brasil. Esto significa que el rendimiento del Tesouro Selic acompaña las variaciones de la tasa Selic.
 
 ## Rendimientos y Simulaciones
-Para entender mejor los rendimientos, vamos a considerar algunos ejemplos. Supongamos que usted tiene R$1.000 para invertir y está decidiendo entre un CDB pré-fijado con 10% al año y un Tesouro [Selic](/es/posts/es-cotizaciones-semana-3-junio-2026) con la tasa [Selic](/es/posts/es-cotizaciones-semana-4-junio-2026) actual (supongamos 6% al año).
+Para entender mejor los rendimientos, vamos a considerar algunos ejemplos. Supongamos que usted tiene R$1.000 para invertir y está decidiendo entre un CDB pré-fijado con 10% al año y un Tesouro Selic con la tasa Selic actual (supongamos 6% al año).
 
 - **CDB:** Con el CDB pré-fijado a 10% al año, después de 1 año, usted tendría aproximadamente R$1.100 (R$1.000 de capital + R$100 de intereses).
-- **Tesouro [Selic](/es/posts/es-cotizaciones-semana-4-mayo-2026):** Con el Tesouro [Selic](/es/posts/es-cotizaciones-semana-5-junio-2026) a 6% al año, después de 1 año, usted tendría aproximadamente R$1.060 (R$1.000 de capital + R$60 de intereses).
+- **Tesouro Selic:** Con el Tesouro Selic a 6% al año, después de 1 año, usted tendría aproximadamente R$1.060 (R$1.000 de capital + R$60 de intereses).
 
 ![Rendimientos y Simulaciones](/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026-2.webp)
 
 
 
-Sin embargo, estos números son simplificados y no consideran las posibles variaciones de la tasa [Selic](/es/posts/es-cotizaciones-semana-3-julio-2026) a lo largo del año, que pueden afectar el rendimiento del Tesouro Selic. Además, los intereses del CDB pueden ser superiores, pero también pueden ser influenciados por la credibilidad del banco emisor.
+Sin embargo, estos números son simplificados y no consideran las posibles variaciones de la tasa Selic a lo largo del año, que pueden afectar el rendimiento del Tesouro Selic. Además, los intereses del CDB pueden ser superiores, pero también pueden ser influenciados por la credibilidad del banco emisor.
 
 ## Riesgos
 ### Riesgos del CDB
-El CDB, aunque se considera una [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) de bajo riesgo, no está completamente libre de riesgos. El principal riesgo es el riesgo de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) del banco emisor. Si el banco tiene problemas financieros, puede haber dificultad en rescatar la inversión. Sin embargo, el [Fondo Garantidor de Créditos (FGC)](https://www.fgc.org.br) ofrece una protección de hasta R$250.000 por correntista y institución financiera.
+El CDB, aunque se considera una inversión de bajo riesgo, no está completamente libre de riesgos. El principal riesgo es el riesgo de crédito del banco emisor. Si el banco tiene problemas financieros, puede haber dificultad en rescatar la inversión. Sin embargo, el [Fondo Garantidor de Créditos (FGC)](https://www.fgc.org.br) ofrece una protección de hasta R$250.000 por correntista y institución financiera.
 
 ### Riesgos del Tesouro Selic
 El Tesouro Selic, por ser una inversión con garantía del gobierno, se considera de muy bajo riesgo. Sin embargo, el inversionista está sujeto a las variaciones de la tasa Selic, lo que puede afectar el rendimiento. Además, como el Tesouro Selic está indexado a la [inflación](/es/glossario/es-inflacao) (en el caso del Tesouro IPCA), el inversionista también puede ser afectado por las variaciones de los índices de inflación.
@@ -62,5 +62,5 @@ Ahora que usted tiene una idea mejor sobre el CDB y el Tesouro Selic, es hora de
 
 
 
-Para acompañar sus inversiones en un solo lugar, [pruebe [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) gratis por 7 días](https://[finmoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — multi-moneda, [informes](/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) inteligentes y 100% offline.
+Para acompañar sus inversiones en un solo lugar, pruebe [FinMoovi gratis por 7 días](https://finmoovi.com) — multi-moneda, informes inteligentes y 100% offline.
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es CDB?","acceptedAnswer":{"@type":"Answer","text":"El CDB es un tipo de inversión de renta fija ofrecida por bancos e instituciones financieras. Funciona como un préstamo que usted hace al banco, y a cambio, el banco paga una tasa de interés. El CDB puede ser pré-fijado, pos-fijado o híbrido, cada uno con su propia forma de calcular los intereses."}},{"@type":"Question","name":"¿Qué es [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)?","acceptedAnswer":{"@type":"Answer","text":"El Tesouro Selic, por otro lado, es una inversión de renta fija emitida por el Tesouro Nacional, con garantía del gobierno brasileño. Está indexado a la tasa Selic, que es la tasa básica de interés de la [economía](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) definida por el Banco Central de Brasil. Esto significa que el rendimiento del Tesouro "}}]} -->

@@ -55,7 +55,7 @@ Después de recibir el sueldo, sigue estos pasos:
 
 Este proceso lleva menos de 5 minutos y deja tu [presupuesto](/es/posts/es-como-crear-presupuesto-personal) “listo para usar”.  
 
-## Monitorear y ajustar los [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)  
+## Monitorear y ajustar los gastos  
 
 1. **Registra cada gasto** – Ya sea en el móvil, en el ordenador o incluso hablando con un asistente de voz.  
 2. **Revisa el saldo** – Cuando un sobre se acerque a cero, la app enviará una notificación.  
@@ -65,13 +65,13 @@ Este proceso lleva menos de 5 minutos y deja tu [presupuesto](/es/posts/es-como-
 
 Para quien gana R$2.000, el margen de error es pequeño; mientras que quien gana R$8.000 puede hacer ajustes mensuales más flexibles.  
 
-> **Importante:** Consulta fuentes oficiales como el [Banco Central del Brasil](https://www.bcb.gov.br) para entender límites de intereses y tarifas que pueden impactar tu [presupuesto](/es/posts/es-organizar-finanzas-pareja).  
+> **Importante:** Consulta fuentes oficiales como el [Banco Central del Brasil](https://www.bcb.gov.br) para entender límites de intereses y tarifas que pueden impactar tu presupuesto.  
 
 ## Revisar resultados mensualmente  
 
 1. **Abre el informe mensual** – La mayoría de las apps generan gráficos de pastel o de barras que muestran la distribución real de los gastos.  
 2. **Compara con lo planeado** – Identifica categorías que quedaron por encima de lo esperado.  
-3. **Planifica la próxima ronda** – Si el sobre de alimentación quedó un 15 % por encima, considera reducir la asignación o buscar [alternativas](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) (mercados locales, compras al por mayor).  
+3. **Planifica la próxima ronda** – Si el sobre de alimentación quedó un 15 % por encima, considera reducir la asignación o buscar alternativas (mercados locales, compras al por mayor).  
 
 Este hábito de revisión convierte el control en un aprendizaje continuo, evitando que pequeñas fallas se conviertan en grandes deudas.  
 
@@ -79,7 +79,7 @@ Este hábito de revisión convierte el control en un aprendizaje continuo, evita
 
 1. **Mañana:** al abrir la app, echa un vistazo rápido a los saldos de los sobres. Si alguno está casi vacío, anota un recordatorio para evitar compras impulsivas.  
 2. **Durante el día:** registra cada gasto en el momento. Usa la cámara del móvil para capturar el comprobante y la app hará la clasificación automática.  
-3. **Al final del día:** dedica 2 minutos a comprobar si algún sobre quedó negativo. Si es así, ajusta de inmediato – transfiere [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) de otra categoría o registra el gasto como “extra”.  
+3. **Al final del día:** dedica 2 minutos a comprobar si algún sobre quedó negativo. Si es así, ajusta de inmediato – transfiere dinero de otra categoría o registra el gasto como “extra”.  
 
 ![Comece com 5 minutos por dia](/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024-6.webp)  
 

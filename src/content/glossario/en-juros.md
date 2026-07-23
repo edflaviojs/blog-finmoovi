@@ -43,7 +43,7 @@ No entanto, é importante escolher investimentos seguros e que sejam adequados p
 
 
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Risks
 Do outro lado da [moeda](/en/glossario/en-moeda), os juros também podem ser um risco significativo se você não gerenciar bem suas finanças. Tomar empréstimos com taxas de juros altas pode levar a uma dívida crescente e difícil de pagar. Além disso, investimentos com taxas de juros muito altas podem ser mais arriscados, pois geralmente vêm com um risco maior de perda de capital.
 
 **Practical tip:** Nunca tome um empréstimo sem ter um plano claro de como pagá-lo. Considere sua renda mensal e reserve uma parte para a quitação da dívida. Por exemplo, se você ganha R$ 5.500,00 por mês e tem um empréstimo de R$ 10.000,00 com juros de 15% ao ano, planeje pagar pelo menos R$ 1.000,00 por mês para evitar que a dívida cresça descontroladamente.

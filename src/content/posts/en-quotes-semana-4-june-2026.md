@@ -31,7 +31,7 @@ Nessa semana, o dólar americano fechou em R$ 5,16, enquanto o euro chegou a R$ 
 
 ## [Selic](/en/glossario/en-selic) e Impacto nos Investimentos
 
-A [taxa](/en/glossario/en-taxa) [Selic](/en/posts/en-quotes-semana-1-july-2026), que é a taxa básica de [juros](/en/glossario/en-juros) da economia brasileira, permaneceu estável em 12,25% ao ano. Isso é bom para quem tem investimentos em [renda fixa](/en/glossario/en-renda-fixa), como CDBs ou títulos públicos, pois significa que você continuará a receber juros a uma taxa razoável. No entanto, para quem está pensando em tomar empréstimos, como um financiamento imobiliário, uma taxa [Selic](/en/posts/en-quotes-semana-1-june-2026) mais alta pode significar juros mais caros. É importante considerar isso antes de tomar qualquer decisão de investimento ou financiamento.
+A [taxa](/en/glossario/en-taxa) Selic, que é a taxa básica de [juros](/en/glossario/en-juros) da economia brasileira, permaneceu estável em 12,25% ao ano. Isso é bom para quem tem investimentos em [renda fixa](/en/glossario/en-renda-fixa), como CDBs ou títulos públicos, pois significa que você continuará a receber juros a uma taxa razoável. No entanto, para quem está pensando em tomar empréstimos, como um financiamento imobiliário, uma taxa Selic mais alta pode significar juros mais caros. É importante considerar isso antes de tomar qualquer decisão de investimento ou financiamento.
 
 ![Selic e Impacto nos Investimentos](/images/posts/en-quotes-semana-4-june-2026-inline-3.webp)
 
@@ -45,9 +45,9 @@ Se você é um investidor individual, é importante diversificar seus investimen
 
 Para a próxima semana, é difícil prever com certeza o que acontecerá no mercado financeiro. No entanto, é importante estar atento às notícias econômicas e políticas, pois elas podem afetar as taxas de câmbio e as taxas de juros. Além disso, é importante revisar regularmente seus investimentos e ajustar sua estratégia de acordo com as mudanças no mercado. Com o [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), você pode facilmente acompanhar suas finanças e tomar decisões informadas para alcançar seus objetivos financeiros.
 
-Em resumo, essa semana foi marcada por uma leve alta do dólar e uma estabilidade na taxa [Selic](/en/posts/en-quotes-semana-2-july-2026). É importante estar atento às taxas de câmbio e às taxas de juros para tomar decisões informadas sobre seus investimentos. Com a ajuda do [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), você pode facilmente acompanhar seus investimentos e alcançar seus objetivos financeiros. Até a próxima semana!
+Em resumo, essa semana foi marcada por uma leve alta do dólar e uma estabilidade na taxa Selic. É importante estar atento às taxas de câmbio e às taxas de juros para tomar decisões informadas sobre seus investimentos. Com a ajuda do [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), você pode facilmente acompanhar seus investimentos e alcançar seus objetivos financeiros. Até a próxima semana!
 
 
 ---
-**Ready to track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
+**Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
 

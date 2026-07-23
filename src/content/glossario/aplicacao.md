@@ -50,7 +50,7 @@ Aplicar seu dinheiro traz benefícios que vão muito além de “ver a conta cre
 
 Nenhum investimento é 100% livre de risco. Conhecer os principais perigos ajuda a escolher a aplicação certa para o seu perfil.  
 
-- **Risco de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-):** se a instituição que emitiu o título falir, você pode perder parte ou todo o capital.  
+- **Risco de crédito:** se a instituição que emitiu o título falir, você pode perder parte ou todo o capital.  
 - **Risco de mercado:** produtos atrelados a índices (como ações ou fundos de ações) podem oscilar muito, fazendo seu dinheiro valer menos em determinados períodos.  
 - **Risco de liquidez:** alguns investimentos só podem ser resgatados após um prazo definido, o que pode atrapalhar emergências financeiras.  
 - **Risco de inflação:** se a aplicação rende menos que a inflação, seu poder de compra diminui ao longo do tempo.
@@ -70,7 +70,7 @@ Se o salário fosse R$7.200 e a reserva fosse 15% (R$1.080), os números sobem p
 Dar o primeiro passo pode parecer complicado, mas basta seguir alguns passos simples:  
 
 1. **Defina seu objetivo:** compra de carro, [reserva de emergência](/glossario/reserva-de-emergencia) ou aposentadoria.  
-2. **Monte um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias):** identifique quanto sobra depois das despesas fixas e variáveis.  
+2. **Monte um orçamento:** identifique quanto sobra depois das despesas fixas e variáveis.  
 3. **Escolha a aplicação:** para quem está começando, CDBs de bancos médios ou Tesouro Selic são boas opções.  
 4. **Abra a conta:** use um app de investimento (como o Nubank ou o Banco Inter) – a abertura costuma ser rápida e sem burocracia.  
 5. **Aplique o valor:** programe transferências automáticas mensais para garantir disciplina.  

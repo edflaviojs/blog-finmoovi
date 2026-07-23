@@ -46,7 +46,7 @@ KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verif
 - Cryptocurrency exchanges
 - Fintechs and digital wallets
 - Loans and financing
-- [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) above certain values (e.g., R$ 10,000 in a [CDB](/en/glossario/en-cdb) or R$ 5,000 in an [ETF](/en/glossario/en-etf))
+- Investments above certain values (e.g., R$ 10,000 in a [CDB](/en/glossario/en-cdb) or R$ 5,000 in an [ETF](/en/glossario/en-etf))
 
 ## Tips
 

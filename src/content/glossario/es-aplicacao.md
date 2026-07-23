@@ -70,7 +70,7 @@ En todos los casos, la clave está en ajustar el monto y el tipo de aplicação 
 Dar el primer paso es más fácil de lo que parece. Sigue esta guía paso a paso y verás cómo tu dinero empieza a trabajar para ti:
 
 - **Define tu objetivo:** decide si la aplicação será para emergencias, una compra futura o simplemente generar ingresos extra.
-- **Evalúa tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias):** revisa tus ingresos y [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme); destina entre 10 % y 20 % de tu salario a la aplicación (por ejemplo, R$500 de un salario de R$5.000).
+- **Evalúa tu presupuesto:** revisa tus ingresos y gastos; destina entre 10 % y 20 % de tu salario a la aplicación (por ejemplo, R$500 de un salario de R$5.000).
 - **Elige el tipo de aplicação:** si buscas seguridad, opta por renta fija; si toleras más riesgo y buscas mayor rentabilidad, considera renta variable.
 - **Abre una cuenta en una institución confiable:** la mayoría de los bancos y corretoras permiten abrir la cuenta en línea; yo uso la app “Finança Fácil” y siempre me recuerda cuándo es momento de aportar.
 - **Programa aportes automáticos:** configura tu cuenta para que, al recibir tu salario, se transfiera automáticamente el monto que decidiste aplicar.

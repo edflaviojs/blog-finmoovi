@@ -32,4 +32,4 @@ A escolha entre a Tabela SAC e a Tabela Price depende do seu perfil de financiam
 | Amortização | Constante | Variável |
 | Juros | Diminuem ao longo do tempo | Variam, mas a prestação total permanece constante |
 
-Em resumo, entender a diferença entre a Tabela SAC e a Tabela Price é fundamental para tomar decisões informadas sobre financiamentos e empréstimos, considerando os juros, a amortização e o impacto no seu [orçamento](/posts/5-alternativas-ao-mobills-em-2026).
+Em resumo, entender a diferença entre a Tabela SAC e a Tabela Price é fundamental para tomar decisões informadas sobre financiamentos e empréstimos, considerando os juros, a amortização e o impacto no seu orçamento.

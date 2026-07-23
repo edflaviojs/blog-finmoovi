@@ -26,37 +26,37 @@ We've reached the middle of the year, a perfect time to reflect on our finances 
 Regularly reviewing your [budget](/en/posts/en-how-to-create-personal-budget) is essential for maintaining control over your [personal finances](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). This is because financial circumstances change over time. For example, you may have received a salary increase, changed jobs, gotten married, had children, or suffered a reduction in income. These changes directly impact your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026), and if not considered, can lead to financial problems, such as debt or lack of [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet).
 
 ### Practical Example
-Let's consider the example of John, a 35-year-old engineer who earns $8,000 per month. At the beginning of the year, he created a [budget](/en/posts/en-how-to-create-personal-budget) that allocated 30% of his income to housing expenses, 20% to transportation, 15% to food, 10% to leisure, and 25% to [savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) and debt. However, recently, John received a 15% salary increase, which raised his monthly income to $9,200. With this change, he needs to review his [budget](/en/posts/en-how-to-create-personal-budget) to decide how to allocate the increased income effectively.
+Let's consider the example of John, a 35-year-old engineer who earns $8,000 per month. At the beginning of the year, he created a budget that allocated 30% of his income to housing expenses, 20% to transportation, 15% to food, 10% to leisure, and 25% to savings and debt. However, recently, John received a 15% salary increase, which raised his monthly income to $9,200. With this change, he needs to review his budget to decide how to allocate the increased income effectively.
 
 ![Why Review Your [Budget](/en/posts/en-how-to-create-personal-budget)?](/images/posts/revisite-seu-orcamento-2.webp)
 
 
 
-## How to Review Your [Budget](/en/posts/en-how-to-create-personal-budget)
-Reviewing your [budget](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) involves some simple yet important steps:
+## How to Review Your Budget
+Reviewing your budget involves some simple yet important steps:
 
-1. **List all your income and expenses**: Make a detailed list of all your sources of income and monthly expenses. This includes salary, [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) income, rent, utility bills, food, transportation, and more.
-2. **[Categorize expenses](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim)**: Organize expenses into categories, such as housing, transportation, food, leisure, etc.
+1. **List all your income and expenses**: Make a detailed list of all your sources of income and monthly expenses. This includes salary, investment income, rent, utility bills, food, transportation, and more.
+2. **Categorize expenses**: Organize expenses into categories, such as housing, transportation, food, leisure, etc.
 3. **Evaluate expenses**: Check if there are expenses that can be reduced or eliminated. For example, you may be able to negotiate a better phone plan with your operator or cancel subscription services you don't use.
-4. **Adjust the [budget](/en/posts/en-reduce-fixed-expenses)**: Based on your new financial situation and necessary adjustments, update your budget. Ensure that the allocations for each category are still adequate.
+4. **Adjust the budget**: Based on your new financial situation and necessary adjustments, update your budget. Ensure that the allocations for each category are still adequate.
 
 ![How to Review Your Budget](/images/posts/revisite-seu-orcamento-3.webp)
 
 
 
 ### Useful Tools
-There are several tools available to help with budget management. One example is the [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) app, which offers features to track expenses, create customized budgets, and set financial goals. Using such tools can make the budget review and management process much more efficient.
+There are several tools available to help with budget management. One example is the FinMoovi app, which offers features to track expenses, create customized budgets, and set financial goals. Using such tools can make the budget review and management process much more efficient.
 
 ## Strategies for Success
 In addition to regularly reviewing your budget, there are some strategies that can help keep your finances in order:
 
-- **Emergency [savings](/en/posts/en-how-to-save-at-the-grocery-store-in-2026-real-tips)**: Maintain an [emergency fund](/en/glossario/en-reserva-de-emergencia) that covers at least 3 to 6 months of expenses.
-- **[Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)**: Consider investing part of your income in options like Treasury Direct, which offers a secure way to grow your wealth over time.
-- **[Financial education](/en/glossario/en-educacao-financeira)**: Continue learning about [personal finance](/en/posts/en-30-day-rule-for-purchases) and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Websites like Investopedia offer a wide range of educational articles and resources.
+- **Emergency savings**: Maintain an [emergency fund](/en/glossario/en-reserva-de-emergencia) that covers at least 3 to 6 months of expenses.
+- **Investments**: Consider investing part of your income in options like Treasury Direct, which offers a secure way to grow your wealth over time.
+- **[Financial education](/en/glossario/en-educacao-financeira)**: Continue learning about personal finance and investments. Websites like Investopedia offer a wide range of educational articles and resources.
 
 ![Strategies for Success](/images/posts/revisite-seu-orcamento-4.webp)
 
 
 
 ## Conclusion
-Reviewing your budget mid-year is a valuable opportunity to assess your financial progress and make necessary adjustments to achieve your financial goals. Remember that effective [personal finance](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) management is an ongoing process that requires vigilance and adaptation. With the tips and strategies presented, you'll be well-equipped to face the financial challenges of the [second half of the year](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Therefore, don't hesitate to review your budget and start working towards a more secure and prosperous financial future.
+Reviewing your budget mid-year is a valuable opportunity to assess your financial progress and make necessary adjustments to achieve your financial goals. Remember that effective personal finance management is an ongoing process that requires vigilance and adaptation. With the tips and strategies presented, you'll be well-equipped to face the financial challenges of the second half of the year. Therefore, don't hesitate to review your budget and start working towards a more secure and prosperous financial future.

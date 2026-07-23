@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-La **poupança** es la cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) que ofrecen los bancos en Brasil. Funciona como una “caja fuerte” digital donde puedes guardar parte de tu ingreso y, a [cambio](/es/glossario/es-cambio), el banco te paga un pequeño interés mensual. No es un producto complicado: simplemente depositas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) y lo dejas “trabajar” mientras tú lo utilizas para tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) cotidianos. En otras palabras, es la forma más sencilla de crear un colchón financiero sin necesidad de ser experto en inversiones.
+La **poupança** es la cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) que ofrecen los bancos en Brasil. Funciona como una “caja fuerte” digital donde puedes guardar parte de tu ingreso y, a [cambio](/es/glossario/es-cambio), el banco te paga un pequeño interés mensual. No es un producto complicado: simplemente depositas dinero y lo dejas “trabajar” mientras tú lo utilizas para tus gastos cotidianos. En otras palabras, es la forma más sencilla de crear un colchón financiero sin necesidad de ser experto en inversiones.
 
 ![Qué es](/images/glossario/poupanca-inline-1.webp)
 
@@ -32,7 +32,7 @@ El mecanismo es muy simple: cada vez que recibes tu salario, decides cuánto vas
 
 - **Depositar:** puedes hacerlo vía transferencia bancaria, boleto o directamente en la sucursal.  
 - **Calcular intereses:** el banco aplica la tasa oficial (conocida como “[Selic](/es/glossario/es-selic)”) sobre el saldo promedio diario.  
-- **Retirar:** cuando necesitas el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado), haces un saque o una transferencia a tu cuenta corriente; el proceso suele ser inmediato.  
+- **Retirar:** cuando necesitas el dinero, haces un saque o una transferencia a tu cuenta corriente; el proceso suele ser inmediato.  
 
 ## Ventajas
 
@@ -42,8 +42,8 @@ Tener una poupança trae varios beneficios que la hacen atractiva para cualquier
 
 
 
-- **Seguridad:** el [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) está protegido por el Fondo Garantidor de Créditos (FGC) hasta R$ 250.000 por institución.  
-- **[Liquidez](/es/glossario/es-liquidez):** puedes retirar tu [dinero](/es/posts/es-cashback-inteligente) en cualquier momento sin penalizaciones, a diferencia de algunos productos de inversión.  
+- **Seguridad:** el dinero está protegido por el Fondo Garantidor de Créditos (FGC) hasta R$ 250.000 por institución.  
+- **[Liquidez](/es/glossario/es-liquidez):** puedes retirar tu dinero en cualquier momento sin penalizaciones, a diferencia de algunos productos de inversión.  
 - **Simplicidad:** no necesitas entender conceptos como “rentabilidad compuesta” o “benchmark”; el banco se encarga de todo.  
 - **Acceso digital:** la mayoría de los bancos permiten gestionar la poupança desde la app, como si fuera una conversación con un amigo que te recuerda ahorrar.  
 

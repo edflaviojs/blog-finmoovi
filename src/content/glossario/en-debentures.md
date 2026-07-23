@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What are Debentures?
 
-Debentures are debt securities issued by companies. When you buy a debenture, you are lending [money](/en/posts/en-30-day-rule-for-purchases) to the company — and they pay you interest for it. It's like a [CDB](/en/glossario/en-cdb), but issued by companies (not banks).
+Debentures are debt securities issued by companies. When you buy a debenture, you are lending money to the company — and they pay you interest for it. It's like a [CDB](/en/glossario/en-cdb), but issued by companies (not banks).
 
 ## Types
 
@@ -24,19 +24,19 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 ### Incentivized Debentures
 
 - **Exempt from IR** for individuals
-- [Finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) infrastructure projects
+- Finance infrastructure projects
 - Yield: IPCA + fixed rate
 
 ## Advantages
 
 - Yield is generally higher than CDB and Treasury
 - Incentivized debentures are exempt from IR
-- [Diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) of [fixed income](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+- Diversification of fixed income
 - Varied terms (2 to 15 years)
 
-## [Risks](/en/posts/en-montando-carteira-diversificada-com-r-500)
+## Risks
 
-- **[Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) risk:** company may not pay (no FGC)
+- **Credit risk:** company may not pay (no FGC)
 - **[Liquidity](/en/glossario/en-liquidez) risk:** it may be difficult to sell before maturity
 - **Market risk:** price may fluctuate if sold before
 

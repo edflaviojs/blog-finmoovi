@@ -87,7 +87,7 @@ El [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) aquí puede lle
 **Cálculo:**  
 - Hotel 3★ en Florianópolis (julio): R$ 350/noche  
 - Habitación en Airbnb: R$ 180/noche  
-- [Ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus): **R$ 170** por noche. En un viaje de 5 días, eso representa **R$ 850** ahorrados.  
+- Ahorro: **R$ 170** por noche. En un viaje de 5 días, eso representa **R$ 850** ahorrados.  
 
 ---  
 
@@ -98,13 +98,13 @@ Llevar snacks, preparar el desayuno en el propio alojamiento o hacer compras en 
 
 ![5. Alimentación: cocinar vs comer fuera](/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa-6.webp)  
 
-**Ejemplo de [costos](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) diarios:**  
+**Ejemplo de costos diarios:**  
 - Desayuno (café + pan): R$ 8  
 - Almuerzo (plato hecho en casa): R$ 12  
 - Cena (restaurante barato): R$ 25  
 - Total: **R$ 45**  
 
-Si gastas R$ 80 en restaurantes, la diferencia son **R$ 35** por día. En 5 días, eso representa **R$ 175** de [ahorro](/es/posts/es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales).  
+Si gastas R$ 80 en restaurantes, la diferencia son **R$ 35** por día. En 5 días, eso representa **R$ 175** de ahorro.  
 
 ---  
 
@@ -122,10 +122,10 @@ Si gastas R$ 80 en restaurantes, la diferencia son **R$ 35** por día. En 5 
 
 ---  
 
-## 7. [Control de gastos](/es/posts/es-metodo-50-30-20-para-orcamento) en tiempo real  
+## 7. Control de gastos en tiempo real  
 
 ### Cómo no perder el rumbo  
-Incluso con la mejor planificación, los imprevistos aparecen. Usa el **[FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** para registrar cada gasto (hasta los de pocos centavos) y recibir alertas cuando estés cerca del límite diario. La app también genera reportes mensuales que muestran dónde fue posible recortar costos para el próximo viaje.  
+Incluso con la mejor planificación, los imprevistos aparecen. Usa el **FinMoovi** para registrar cada gasto (hasta los de pocos centavos) y recibir alertas cuando estés cerca del límite diario. La app también genera reportes mensuales que muestran dónde fue posible recortar costos para el próximo viaje.  
 
 ---  
 
@@ -133,13 +133,13 @@ Incluso con la mejor planificación, los imprevistos aparecen. Usa el **[FinMoov
 
 | ✅ | Acción | Ahorro estimado |
 |---|--------|-----------------|
-| 1 | Definir techo de gasto | Mantiene el [presupuesto](/es/posts/es-organizar-finanzas-pareja) intacto |
+| 1 | Definir techo de gasto | Mantiene el presupuesto intacto |
 | 2 | Elegir destino off‑season | Hasta R$ 600 en el pasaje |
 | 3 | Optar por autobús o coche compartido | R$ 100‑R$ 200 por trayecto |
 | 4 | Alojamiento en Airbnb/hostal | R$ 850 en 5 noches |
 | 5 | Cocinar parte de las comidas | R$ 175 en 5 días |
 | 6 | Priorizar actividades gratuitas | R$ 40‑R$ 80 por día |
-| 7 | Monitorear gastos con [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) | Evita sorpresas de último minuto |
+| 7 | Monitorear gastos con FinMoovi | Evita sorpresas de último minuto |
 
 ---  
 

@@ -31,27 +31,27 @@ La [economía](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) es un concepto i
 
 
 
-## Enseñanza de [finanzas personales](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
-La enseñanza de [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) a niños puede comenzar con conceptos simples, como la diferencia entre necesidades y deseos. Por ejemplo, una necesidad es algo que es esencial para la vida, como comida y refugio, mientras que un deseo es algo que se quiere, pero no es necesario, como un juguete.
+## Enseñanza de finanzas personales
+La enseñanza de finanzas personales a niños puede comenzar con conceptos simples, como la diferencia entre necesidades y deseos. Por ejemplo, una necesidad es algo que es esencial para la vida, como comida y refugio, mientras que un deseo es algo que se quiere, pero no es necesario, como un juguete.
 
-Una forma de enseñar esto es crear un [presupuesto](/es/posts/es-como-crear-presupuesto-personal) familiar que incluya los gastos básicos y los objetivos financieros. Por ejemplo, si la familia tiene un [presupuesto](/es/posts/es-como-crear-presupuesto-personal) de R$ 5.000 por mes, puede ser necesario priorizar los gastos básicos, como alquiler y comida, y después decidir cómo utilizar el resto para alcanzar los objetivos financieros.
+Una forma de enseñar esto es crear un presupuesto familiar que incluya los gastos básicos y los objetivos financieros. Por ejemplo, si la familia tiene un presupuesto de R$ 5.000 por mes, puede ser necesario priorizar los gastos básicos, como alquiler y comida, y después decidir cómo utilizar el resto para alcanzar los objetivos financieros.
 
 ![Enseñanza de finanzas personales](/images/posts/educacao-financeira-para-criancas-3.webp)
 
 
 
 ## Recursos para educación financiera
-Existen muchos recursos disponibles para ayudar a educar a los niños sobre [finanzas personales](/es/posts/es-7-errores-financieros-principiante), incluyendo libros, juegos y aplicaciones. Por ejemplo, el [Banco Central del Brasil](https://www.bcb.gov.br) ofrece recursos educativos para niños y adolescentes, incluyendo juegos y actividades interactivas.
+Existen muchos recursos disponibles para ayudar a educar a los niños sobre finanzas personales, incluyendo libros, juegos y aplicaciones. Por ejemplo, el [Banco Central del Brasil](https://www.bcb.gov.br) ofrece recursos educativos para niños y adolescentes, incluyendo juegos y actividades interactivas.
 
-Además, existen aplicaciones, como el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026), que pueden ayudar a los niños a entender mejor cómo gestionar el [dinero](/es/posts/es-evite-compras-por-impulso) y alcanzar los objetivos financieros. Estas aplicaciones pueden ser una herramienta útil para enseñar [finanzas personales](/es/posts/es-ahorra-en-las-compras-del-supermercado) de forma práctica y divertida.
+Además, existen aplicaciones, como el FinMoovi, que pueden ayudar a los niños a entender mejor cómo gestionar el dinero y alcanzar los objetivos financieros. Estas aplicaciones pueden ser una herramienta útil para enseñar finanzas personales de forma práctica y divertida.
 
 ![Recursos para educación financiera](/images/posts/educacao-financeira-para-criancas-4.webp)
 
 
 
 ## Comienza hoy
-No es necesario ser un experto en finanzas para enseñar a los niños sobre [dinero](/es/posts/es-como-crear-una-reserva-de-emergencia). Lo importante es comenzar a conversar sobre el tema y encontrar formas prácticas de enseñar conceptos financieros. Con un poco de creatividad y paciencia, es posible ayudar a los niños a desarrollar hábitos saludables en relación con el [dinero](/es/posts/es-diferencia-entre-invertir-y-ahorrar) y promover una educación financiera sólida desde temprano.
+No es necesario ser un experto en finanzas para enseñar a los niños sobre dinero. Lo importante es comenzar a conversar sobre el tema y encontrar formas prácticas de enseñar conceptos financieros. Con un poco de creatividad y paciencia, es posible ayudar a los niños a desarrollar hábitos saludables en relación con el dinero y promover una educación financiera sólida desde temprano.
 
 ---
 
-**¿Quieres poner esto en práctica? [Prueba [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) y vea cómo es fácil controlar tus finanzas con [categorización automática](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) y [informes](/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) visuales.**
+**¿Quieres poner esto en práctica? Prueba [FinMoovi gratis por 7 días](https://finmoovi.com) y vea cómo es fácil controlar tus finanzas con categorización automática y informes visuales.**

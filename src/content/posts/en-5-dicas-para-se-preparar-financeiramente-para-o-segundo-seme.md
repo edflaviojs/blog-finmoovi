@@ -35,23 +35,23 @@ Now that you understand your current financial situation, it's time to define fi
 
 
 ## Creating a [Budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) for the Second Half of the Year
-Now that you have defined financial goals, it's time to create a [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) for the second half of the year. This includes deciding how you'll allocate your income to achieve your goals. Here are some tips to help you create a [budget](/en/posts/en-how-to-create-personal-budget):
+Now that you have defined financial goals, it's time to create a [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) for the second half of the year. This includes deciding how you'll allocate your income to achieve your goals. Here are some tips to help you create a budget:
 1. **Allocate 50% of your income to basic needs**: This includes expenses for housing, food, transportation, and essential services.
 2. **Allocate 30% of your income to desires**: This includes expenses for leisure, entertainment, and hobbies.
-3. **Allocate 20% of your income to financial goals**: This includes expenses for [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet), debts, and emergency funds.
-4. **Review your [budget](/en/posts/en-how-to-create-personal-budget) regularly**: Use [FinMoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) to review your [budget](/en/posts/en-how-to-create-personal-budget) and make adjustments as needed.
+3. **Allocate 20% of your income to financial goals**: This includes expenses for savings, debts, and emergency funds.
+4. **Review your budget regularly**: Use FinMoovi to review your budget and make adjustments as needed.
 
 ## Managing Debt and Expenses
 Managing debt and expenses is crucial to achieving your financial goals. Here are some tips to help you manage debt and expenses:
-1. **Pay off your most expensive debts first**: This includes debts with high interest rates, such as [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) cards.
+1. **Pay off your most expensive debts first**: This includes debts with high interest rates, such as credit cards.
 2. **Negotiate with your creditors**: If you're having trouble paying off your debts, negotiate with your creditors to find a solution.
 3. **Cut unnecessary expenses**: This includes expenses for non-essential items, such as impulse purchases.
-4. **Use the [envelope method](/en/posts/en-tecnica-dos-envelopes-digitais-guia-pratico-para-2024)**: Divide your [money](/en/posts/en-avoid-impulse-purchases) into envelopes for different expense categories, such as food and transportation.
+4. **Use the envelope method**: Divide your money into envelopes for different expense categories, such as food and transportation.
 
 ![Creating a [Budget](/en/posts/en-how-to-create-personal-budget) for the Second Half of the Year](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
 
 
 ## Conclusion
-Preparing financially for the second half of the year is essential to achieving your financial goals and having a more peaceful life. With the practical and accessible tips presented in this post, you can create a personalized [budget](/en/posts/en-how-to-create-personal-budget), manage debt and expenses, and achieve your financial goals. Remember that the [Banco Central do Brasil](https://www.bcb.gov.br) and the [Receita Federal](https://www.gov.br/receitafederal) offer valuable resources and information to help you manage your finances. Additionally, [Serasa](https://www.serasa.com.br) can help you better understand your financial situation and find solutions to your financial problems.
-Use [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) to control your expenses and avoid surprises at the end of the month.
+Preparing financially for the second half of the year is essential to achieving your financial goals and having a more peaceful life. With the practical and accessible tips presented in this post, you can create a personalized budget, manage debt and expenses, and achieve your financial goals. Remember that the [Banco Central do Brasil](https://www.bcb.gov.br) and the [Receita Federal](https://www.gov.br/receitafederal) offer valuable resources and information to help you manage your finances. Additionally, [Serasa](https://www.serasa.com.br) can help you better understand your financial situation and find solutions to your financial problems.
+Use FinMoovi to control your expenses and avoid surprises at the end of the month.

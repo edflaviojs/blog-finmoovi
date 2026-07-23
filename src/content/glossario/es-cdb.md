@@ -23,7 +23,7 @@ El CDB, o Certificado de Depósito Bancário, es un tipo de investimento ofereci
 * Características principais do CDB:
  + Rendimento prefixado
  + [Liquidez](/es/glossario/es-liquidez) diária
- + Risco de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) do banco emissor
+ + Risco de crédito do banco emissor
  + Não é garantido pelo Fundo Garantidor de Créditos (FGC)
  + Pode ser negociado em [bolsa de valores](/es/glossario/es-bolsa-de-valores)
 
@@ -45,7 +45,7 @@ As principais vantagens do CDB incluem:
 * Rendimento mais atraente do que a poupança tradicional
 * Liquidez diária, permitindo que você resgate seu investimento a qualquer momento
 * [Diversificação](/es/glossario/es-diversificacao) de carteira, pois o CDB é um tipo de investimento diferente da ação ou do fundo de investimento
-* Possibilidade de negociar em [bolsa de valores](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel)
+* Possibilidade de negociar em bolsa de valores
 
 Além disso, o CDB é uma opção de investimento relativamente segura, pois é emitido por bancos e instituições financeiras regulamentadas pelo Banco Central do Brasil.
 
@@ -53,7 +53,7 @@ Além disso, o CDB é uma opção de investimento relativamente segura, pois é 
 
 
 
-## [Riesgos](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Riesgos
 No entanto, como qualquer investimento, o CDB também envolve riscos. Os principais riscos incluem:
 * Risco de crédito do banco emissor: se o banco que emite o CDB enfrentar dificuldades financeiras, você pode perder parte ou todo o seu investimento
 * Risco de liquidez: se você precisar resgatar seu investimento rapidamente, pode não conseguir vendê-lo por um preço justo

@@ -23,9 +23,9 @@ When you're in a relationship, it's important that you and your partner are alig
 A good idea is to create a [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) together, considering all monthly [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) like rent, food, transportation, etc. For example, if you pay R$ 2,500 in rent and R$ 1,000 in food per month, that's already R$ 3,500 in fixed expenses. It's also important to consider variable expenses like entertainment and leisure.
 
 ## Expenses and [Savings](/en/posts/en-financial-education-for-children)
-It's essential that you and your partner have an open conversation about expenses and [savings](/en/posts/en-smart-cashback). **Practical tip:** create a "fun [money](/en/posts/en-organizing-finances-as-a-freelancer)" category in your [budget](/en/posts/en-how-to-create-personal-budget) so you can spend a little on things you enjoy without feeling guilty. For example, you might decide to spend R$ 500 per month on restaurants and movies.
+It's essential that you and your partner have an open conversation about expenses and [savings](/en/posts/en-smart-cashback). **Practical tip:** create a "fun [money](/en/posts/en-organizing-finances-as-a-freelancer)" category in your budget so you can spend a little on things you enjoy without feeling guilty. For example, you might decide to spend R$ 500 per month on restaurants and movies.
 
-Here are some tips to [save money](/en/posts/en-reduce-fixed-expenses):
+Here are some tips to save money:
 * Cut unnecessary expenses, like subscriptions to services you don't use
 * Make a meal plan and buy food in bulk
 * Use public transportation or bike instead of driving
@@ -35,12 +35,12 @@ Here are some tips to [save money](/en/posts/en-reduce-fixed-expenses):
 Having common financial goals is essential for you and your partner to work toward the same objective. This can include saving for a house, paying off debt, or creating an [emergency fund](/en/glossario/en-reserva-de-emergencia). Let's say you want to save R$ 20,000 for a house down payment. This means you need to save R$ 1,667 per month for a year.
 
 ## Challenges and Solutions
-Challenges often arise when managing couple finances. For example, one partner might have expensive taste while the other is more frugal. **Practical tip:** create an "[expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza)" system so you can monitor your spending and discuss it regularly.
+Challenges often arise when managing couple finances. For example, one partner might have expensive taste while the other is more frugal. **Practical tip:** create an "expense tracking" system so you can monitor your spending and discuss it regularly.
 
-Another common challenge is lack of communication about finances. It's important that you have regular conversations about how you're feeling about [money](/en/posts/en-save-on-your-market-bill) and if there's anything that needs to change.
+Another common challenge is lack of communication about finances. It's important that you have regular conversations about how you're feeling about money and if there's anything that needs to change.
 
 ## Start Today
-Now that you know how to organize couple finances, it's time to start working toward a more secure and prosperous financial future. Remember that communication and [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) are key to success. Start talking to your partner about your financial goals and create a plan to achieve them.
+Now that you know how to organize couple finances, it's time to start working toward a more secure and prosperous financial future. Remember that communication and planning are key to success. Start talking to your partner about your financial goals and create a plan to achieve them.
 
 ---
-**Ready to organize your finances? [Try [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) for free](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-saving-on-your-energy-bill) is going.**
+**Ready to organize your finances? Try [FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

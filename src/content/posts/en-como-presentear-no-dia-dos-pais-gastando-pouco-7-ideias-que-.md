@@ -75,31 +75,31 @@ Smart **cashback** can return up to 12 % of the amount spent at partner stores
 ## 5️⃣ Early planning: the strategy that saves your wallet
 
 ### 5.1. **Start saving already in January**
-IBGE [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) that the average monthly income of Brazilian workers in 2023 was **R$ 2,600**. If you set aside R$ 10 per week, you’ll already have R$ 40 by March – [money](/en/posts/en-30-day-rule-for-purchases) that can be used as part of the gift.
+IBGE [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) that the average monthly income of Brazilian workers in 2023 was **R$ 2,600**. If you set aside R$ 10 per week, you’ll already have R$ 40 by March – money that can be used as part of the gift.
 
 ![5️⃣ Early planning: the strategy that saves your wallet](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--6.webp)
 
 ### 5.2. **Use wish lists**
-Create a list in [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) with items you’d like to give dad. Whenever there’s a promotion, add the reduced price. That way you buy at the right moment and avoid impulse purchases.
+Create a list in FinMoovi with items you’d like to give dad. Whenever there’s a promotion, add the reduced price. That way you buy at the right moment and avoid impulse purchases.
 
 ### 5.3. **Split the amount into smaller installments**
-If you opt for a pricier gift (e.g., a smartwatch), see if the store offers **interest‑free installments**. But pay attention: record each installment in [FinMoovi](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) so you don’t forget to pay and end up spending more next month.
+If you opt for a pricier gift (e.g., a smartwatch), see if the store offers **interest‑free installments**. But pay attention: record each installment in FinMoovi so you don’t forget to pay and end up spending more next month.
 
 ## 6️⃣ Final tips to avoid going into the red
 
 | # | Tip | Why? |
 |---|------|----------|
 | 1 | **Prioritize what he really likes** | Conscious spending = higher satisfaction. |
-| 2 | **Avoid “last‑minute” purchases** | Buying at the last minute usually [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) more. |
+| 2 | **Avoid “last‑minute” purchases** | Buying at the last minute usually costs more. |
 | 3 | **Combine gifts with family friends** | Splitting the cost allows a bigger gift for less. |
 | 4 | **Use the 30‑day rule** (for non‑essential purchases) | Gives time to reflect if it’s truly needed. |
-| 5 | **Log everything in [FinMoovi](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)** | Full control of expenses, avoids surprises at month‑end. |
+| 5 | **Log everything in FinMoovi** | Full control of expenses, avoids surprises at month‑end. |
 
 ## 7️⃣ Conclusion: a gift that fits both the wallet and the heart
 
 Gifting dad doesn’t have to mean extravagant spending. With a well‑defined limit, leveraging cashback, coupons, and DIY ideas, you show affection while keeping the family’s financial health intact. Remember that the symbolic value of a gesture is often greater than the price of an expensive object.
 
-> **Use [FinMoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) to track your spending and avoid surprises at the end of the month.**
+> **Use FinMoovi to track your spending and avoid surprises at the end of the month.**
 
 ---
 

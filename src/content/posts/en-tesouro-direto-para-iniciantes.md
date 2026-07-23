@@ -43,18 +43,18 @@ For example, if you invest R$5,000 in an LTN title with a 5-year term and 6% ann
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Although Tesouro Direto is considered a low-risk [investment](/en/posts/en-montando-carteira-diversificada-com-r-500), there are some risks to consider:
 
-* Inflation risk: if inflation increases, the real value of your [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) may decrease.
+* Inflation risk: if inflation increases, the real value of your investment may decrease.
 * Liquidity risk: if you need to redeem your securities before maturity, you may lose interest.
-* [Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) risk: although the government is considered a low-risk borrower, there is still a risk of default.
+* Credit risk: although the government is considered a low-risk borrower, there is still a risk of default.
 
 ![Riscos](/images/posts/tesouro-direto-para-iniciantes-4.webp)
 
 
 
-To mitigate these risks, it's essential to diversify your [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) and assess your risk profile before investing.
+To mitigate these risks, it's essential to diversify your investments and assess your risk profile before investing.
 
 ## Return Simulation
-Let's consider an example of a return simulation. If you invest R$1,000 in an LTN title with a 2-year term and 5% annual interest, you'll receive R$1,102.50 after maturity, considering annual [compound interest](/en/glossario/en-juros-compostos).
+Let's consider an example of a return simulation. If you invest R$1,000 in an LTN title with a 2-year term and 5% annual interest, you'll receive R$1,102.50 after maturity, considering annual compound interest.
 
 Here's a table with the return simulation:
 
@@ -64,12 +64,12 @@ Here's a table with the return simulation:
 | 2 | R$1,050.00 | R$52.50 | R$1,102.50 |
 
 ## Next Steps
-Now that you understand how Tesouro Direto works, it's time to evaluate if it makes sense for your [investor profile](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026). Consider your financial goals, investment term, and risk tolerance.
+Now that you understand how Tesouro Direto works, it's time to evaluate if it makes sense for your investor profile. Consider your financial goals, investment term, and risk tolerance.
 
-If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) to minimize risks.
+If you decide to invest in Tesouro Direto, it's essential to read the conditions and terms of each security carefully before investing. Additionally, it's recommended to diversify your investments to minimize risks.
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 
 
 
-To track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in one place, [try [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) — multi-currency, intelligent [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim), and 100% offline.
+To track your investments in one place, try [FinMoovi for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.

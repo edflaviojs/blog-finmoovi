@@ -54,13 +54,13 @@ Las acciones también pueden ser una forma de ahorrar para el largo plazo, como 
 
 ## Riesgos
 Las acciones también conllevan riesgos, como:
-* La posibilidad de perder [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) si la empresa no tiene un buen desempeño
+* La posibilidad de perder dinero si la empresa no tiene un buen desempeño
 * La [volatilidad](/es/glossario/es-volatilidade) del mercado, que puede hacer que el valor de tus acciones fluctúe
 * La falta de [liquidez](/es/glossario/es-liquidez), que puede hacer que sea difícil vender tus acciones cuando lo necesites
 
-**Consejo práctico:** Es importante entender que las acciones son una inversión a largo plazo, y no debes invertir [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) que necesites en el corto plazo. Puedes hacer esto invirtiendo solo el dinero que estás dispuesto a perder, y manteniendo una reserva de emergencia para cubrir tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) básicos.
+**Consejo práctico:** Es importante entender que las acciones son una inversión a largo plazo, y no debes invertir dinero que necesites en el corto plazo. Puedes hacer esto invirtiendo solo el dinero que estás dispuesto a perder, y manteniendo una reserva de emergencia para cubrir tus gastos básicos.
 
-Las acciones también pueden ser afectadas por factores externos, como la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) y la política. Por ejemplo, si hay una recesión económica, el valor de tus acciones puede disminuir.
+Las acciones también pueden ser afectadas por factores externos, como la economía y la política. Por ejemplo, si hay una recesión económica, el valor de tus acciones puede disminuir.
 
 ## Ejemplos prácticos
 Imagina que tienes un salario de R$5.000 al mes y decides invertir R$1.000 en acciones. Puedes comprar 20 acciones de una empresa a R$50 cada una. Si el valor de la acción aumenta a R$60, puedes vender tus acciones y obtener una ganancia de R$200.

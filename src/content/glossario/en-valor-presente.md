@@ -47,4 +47,4 @@ When a store offers "12 installments with no interest of R$ 100 or R$ 1,000 upfr
 
 ## Simple rule
 
-[Money](/en/posts/en-creating-an-emergency-fund) today is worth more than [money](/en/posts/en-difference-between-investing-and-saving) tomorrow. Always consider the "cost of time" when making financial decisions.
+[Money](/en/posts/en-creating-an-emergency-fund) today is worth more than money tomorrow. Always consider the "cost of time" when making financial decisions.

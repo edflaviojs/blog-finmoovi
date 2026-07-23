@@ -43,15 +43,15 @@ Por ejemplo, si usted invierte R$5.000 en un título LTN con plazo de 5 años y 
 ## [Riesgos](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Aunque el Tesouro Direto es considerado una [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) de bajo riesgo, existen algunos riesgos a considerar:
 
-* Riesgo de inflación: si la inflación aumenta, el valor real de su [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) puede disminuir.
+* Riesgo de inflación: si la inflación aumenta, el valor real de su inversión puede disminuir.
 * Riesgo de liquidez: si usted necesita rescatar sus títulos antes del vencimiento, puede haber pérdida de intereses.
-* Riesgo de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-): aunque el gobierno es considerado un deudor de bajo riesgo, aún existe el riesgo de incumplimiento.
+* Riesgo de crédito: aunque el gobierno es considerado un deudor de bajo riesgo, aún existe el riesgo de incumplimiento.
 
 ![Riscos](/images/posts/tesouro-direto-para-iniciantes-4.webp)
 
 
 
-Para mitigar estos riesgos, es importante diversificar sus [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) y evaluar su perfil de riesgo antes de invertir.
+Para mitigar estos riesgos, es importante diversificar sus inversiones y evaluar su perfil de riesgo antes de invertir.
 
 ## Simulación de Rendimiento
 Vamos a considerar un ejemplo de simulación de rendimiento. Si usted invierte R$1.000 en un título LTN con plazo de 2 años y intereses del 5% anual, usted recibirá R$1.102,50 después del vencimiento, considerando intereses compuestos anualmente.
@@ -64,13 +64,13 @@ Aquí está una tabla con la simulación de rendimiento:
 | 2 | R$1.050,00 | R$52,50 | R$1.102,50 |
 
 ## Próximos pasos
-Ahora que usted entiende cómo funciona el Tesouro Direto, es hora de evaluar si tiene sentido para su [perfil de inversor](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026). Considere sus objetivos financieros, plazo de inversión y tolerancia al riesgo.
+Ahora que usted entiende cómo funciona el Tesouro Direto, es hora de evaluar si tiene sentido para su perfil de inversor. Considere sus objetivos financieros, plazo de inversión y tolerancia al riesgo.
 
-Si usted decide invertir en el Tesouro Direto, es importante leer atentamente las condiciones y plazos de cada título antes de invertir. Además, es recomendable diversificar sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para minimizar los riesgos.
+Si usted decide invertir en el Tesouro Direto, es importante leer atentamente las condiciones y plazos de cada título antes de invertir. Además, es recomendable diversificar sus inversiones para minimizar los riesgos.
 
 ![Próximos passos](/images/posts/tesouro-direto-para-iniciantes-6.webp)
 
 
 
-Para acompañar sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en un solo lugar, [pruebe [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) gratis por 7 días](https://[finmoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026).com) — multi-divisa, [informes](/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) inteligentes y 100% sin conexión.
+Para acompañar sus inversiones en un solo lugar, pruebe [FinMoovi gratis por 7 días](https://finmoovi.com) — multi-divisa, informes inteligentes y 100% sin conexión.
 Nota: He mantenido los nombres de las imágenes y los enlaces tal como estaban en el texto original, ya que no había instrucciones específicas para cambiarlos. Si es necesario, puedo cambiarlos para que coincidan con el contenido traducido.

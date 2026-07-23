@@ -27,11 +27,11 @@ Un buen [presupuesto](/es/posts/es-metodo-50-30-20-para-orcamento) te ayuda a:
 - Saber exactamente a dónde va tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado)
 - Identificar gastos innecesarios
 - Definir y alcanzar metas financieras
-- Reducir el estrés [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)
+- Reducir el estrés financiero
 
 ## Paso 1: Calcula tu Ingreso Neto
 
-Tu ingreso neto es lo que realmente llega a tu cuenta bancaria después de impuestos y deducciones. Incluye todas las fuentes: salario, freelance, [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-), etc.
+Tu ingreso neto es lo que realmente llega a tu cuenta bancaria después de impuestos y deducciones. Incluye todas las fuentes: salario, freelance, inversiones, etc.
 
 ## Paso 2: Lista Todos tus Gastos
 
@@ -41,7 +41,7 @@ Separa en fijos (alquiler, servicios, suscripciones) y variables (comida, entret
 
 - **50% Necesidades:** alquiler, comida, transporte, salud
 - **30% Deseos:** entretenimiento, restaurantes, hobbies
-- **20% [Ahorro](/es/posts/es-regla-de-los-30-dias-para-compras):** [fondo de emergencia](/es/glossario/es-reserva-de-emergencia), [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), pago de deudas
+- **20% Ahorro:** [fondo de emergencia](/es/glossario/es-reserva-de-emergencia), inversiones, pago de deudas
 
 ## Paso 4: Define Metas Realistas
 
@@ -49,9 +49,9 @@ Empieza con metas pequeñas y alcanzables. "Ahorrar $200 este mes" es mejor que 
 
 ## Paso 5: Revisa y Ajusta Semanalmente
 
-Revisa tus gastos cada semana. Apps como [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) hacen esto automático — cada transacción se categoriza y rastrea en tiempo real, en múltiples monedas.
+Revisa tus gastos cada semana. Apps como FinMoovi hacen esto automático — cada transacción se categoriza y rastrea en tiempo real, en múltiples monedas.
 
 ## El Secreto: Consistencia
 
-El mejor [presupuesto](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) es el que realmente sigues. Empieza simple, ajusta según necesites y celebra las pequeñas victorias.
+El mejor presupuesto es el que realmente sigues. Empieza simple, ajusta según necesites y celebra las pequeñas victorias.
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"Cómo Crear un [Presupuesto Personal](/es/posts/es-metodo-50-30-20-para-orcamento) en 5 Pasos Simples","step":[{"@type":"HowToStep","position":1,"name":"Calcula tu Ingreso Neto","text":"Tu ingreso neto es lo que realmente llega a tu cuenta bancaria después de impuestos y deducciones. Incluye todas las fuentes: salario, freelance, [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), etc."},{"@type":"HowToStep","position":2,"name":"Lista Todos tus Gastos","text":"Separa en fijos alquiler, servicios, suscripciones y variables comida, entretenimiento, compras. Revisa tus últimos 3 meses de extractos bancarios."},{"@type":"HowToStep","position":3,"name":"Categoriza Usando la Regla 50-30-20","text":"- 50% Necesidades: alquiler, comida, transporte, salud - 30% Deseos: entretenimiento, restaurantes, hobbies - 20% [Ahorro](/es/posts/es-negociar-descuentos-en-cuentas-fijas): fondo de emergencia/es/glossario/es-reserva-de-emergencia, [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), pago d"},{"@type":"HowToStep","position":4,"name":"Define Metas Realistas","text":"Empieza con metas pequeñas y alcanzables. \"Ahorrar $200 este mes\" es mejor que \"ahorrar $10.000 este año\" cuando estás empezando."},{"@type":"HowToStep","position":5,"name":"Revisa y Ajusta Semanalmente","text":"Revisa tus gastos cada semana. Apps como [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) hacen esto automático — cada transacción se categoriza y rastrea en tiempo real, en múltiples monedas."}]} -->

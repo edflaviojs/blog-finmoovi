@@ -31,12 +31,12 @@ Quando a empresa decide pagar bônus, ela costuma definir regras claras para que
 
 - **Meta de desempenho:** Você atinge uma meta de vendas ou produção e recebe um percentual do salário como bônus.  
 - **Participação nos lucros (PLR):** Se a empresa teve lucro no trimestre, parte desse lucro é distribuída entre os funcionários.  
-- **Bônus de retenção:** Um valor pago para quem aceita ficar na empresa por um período determinado.  
+- **Bônus de retenção:** Um [valor](/glossario/valor) pago para quem aceita ficar na empresa por um período determinado.  
 - **Bônus de fim de ano:** Um pagamento extra no final do ano, muitas vezes ligado ao desempenho da empresa como um todo.
 
 ## Vantagens
 
-Receber bônus traz benefícios tanto para o trabalhador quanto para a empresa. Entre as principais vantagens estão:
+Receber bônus traz [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) tanto para o trabalhador quanto para a empresa. Entre as principais vantagens estão:
 
 ![Vantagens](/images/glossario/bonus-inline-3.webp)
 
@@ -54,18 +54,18 @@ Apesar das vantagens, é importante ficar atento aos possíveis riscos associado
 - **Instabilidade:** Como o bônus não é garantido, contar com ele para despesas fixas pode ser perigoso.  
 - **Pressão por metas:** Metas muito agressivas podem gerar estresse e até comprometer a saúde.  
 - **Desigualdade:** Se a política de bônus não for transparente, pode gerar insatisfação entre os colegas.  
-- **Tributação:** O bônus entra na base de cálculo do Imposto de Renda, então parte dele será descontada na hora.
+- **Tributação:** O bônus entra na base de cálculo do [Imposto de Renda](/glossario/imposto-de-renda), então parte dele será descontada na hora.
 
 ## Exemplos práticos
 
 Vamos ver como o bônus pode impactar quem ganha entre R$3.000 e R$8.000 por mês:
 
 - **João, salário R$3.500:** Recebe um bônus de 5% por bater a meta de vendas. 5% de R$3.500 = R$175. No fim do mês, ele tem R$3.675 para gastar.  
-- **Maria, salário R$6.000:** A empresa distribui 10% do lucro como PLR. Ela recebe R$600 de bônus, que decide aplicar em um fundo de emergência.  
-- **Pedro, salário R$8.000:** Consegue um bônus de retenção de R$1.200 por assinar um contrato de permanência de 2 anos. Ele usa parte para pagar a entrada de um carro e o resto investe em ações.  
+- **Maria, salário R$6.000:** A empresa distribui 10% do lucro como PLR. Ela recebe R$600 de bônus, que decide aplicar em um [fundo de emergência](/ferramentas/calculadora-reserva).  
+- **Pedro, salário R$8.000:** Consegue um bônus de retenção de R$1.200 por assinar um contrato de permanência de 2 anos. Ele usa parte para pagar a entrada de um carro e o resto investe em [ações](/glossario/acoes).  
 
 **Dica prática:** Se o seu bônus for variável, reserve pelo menos 50% dele em uma conta de reserva antes de pensar em gastar.  
-**Dica prática:** Use o bônus para quitar dívidas de juros altos primeiro; assim você economiza mais a longo prazo.  
+**Dica prática:** Use o bônus para quitar dívidas de [juros](/glossario/juros) altos primeiro; assim você economiza mais a longo prazo.  
 **Dica prática:** Quando o bônus for tributado, calcule o valor líquido (após imposto) para não ter surpresa na hora de planejar o orçamento.
 
 ## Como começar

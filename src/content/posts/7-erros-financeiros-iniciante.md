@@ -24,19 +24,19 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-
 
 **O erro:** Viver sem nenhuma reserva, contando que nada vai dar errado.
 
-**A solução:** Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) guardados. Deixe em um [investimento](/posts/tesouro-direto-para-iniciantes) com [liquidez](/glossario/liquidez) diária ([CDB](/glossario/cdb) ou Tesouro [Selic](/glossario/selic)).
+**A solução:** Comece com R$ 1.000 e vá aumentando até ter 3-6 meses de gastos guardados. Deixe em um investimento com [liquidez](/glossario/liquidez) diária ([CDB](/glossario/cdb) ou Tesouro [Selic](/glossario/selic)).
 
 ## 2. Gastar mais do que ganha
 
-**O erro:** Usar [cartão de crédito](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) como extensão da renda, parcelando tudo.
+**O erro:** Usar cartão de crédito como extensão da renda, parcelando tudo.
 
 **A solução:** Se a fatura do cartão passa de 30% da sua renda, você está gastando demais. Congele o cartão por um mês e use só débito.
 
 ## 3. Não acompanhar os gastos
 
-**O erro:** Não saber para onde vai o [dinheiro](/posts/economize-na-conta-de-energia). "Sumiu e não sei como."
+**O erro:** Não saber para onde vai o dinheiro. "Sumiu e não sei como."
 
-**A solução:** Registre cada gasto por pelo menos 30 dias. Com o **[FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)**, basta abrir o app e registrar — leva 5 segundos. Depois de um mês, você terá um raio-x completo.
+**A solução:** Registre cada gasto por pelo menos 30 dias. Com o **FinMoovi**, basta abrir o app e registrar — leva 5 segundos. Depois de um mês, você terá um raio-x completo.
 
 ## 4. Ignorar gastos pequenos
 
@@ -48,19 +48,19 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-
 
 **O erro:** Economizar "para o futuro" sem um objetivo claro.
 
-**A solução:** Defina metas específicas: "R$ 10.000 para [viagem](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) em dezembro" ou "R$ 50.000 para entrada do apartamento em 2 anos". Metas claras motivam.
+**A solução:** Defina metas específicas: "R$ 10.000 para viagem em dezembro" ou "R$ 50.000 para entrada do apartamento em 2 anos". Metas claras motivam.
 
 ## 6. Investir sem entender
 
-**O erro:** Colocar [dinheiro](/posts/economize-na-conta-do-mercado) em algo porque "todo mundo está fazendo" (cripto, [ações](/glossario/acoes) da moda, etc).
+**O erro:** Colocar dinheiro em algo porque "todo mundo está fazendo" (cripto, [ações](/glossario/acoes) da moda, etc).
 
-**A solução:** Antes de investir, monte sua reserva de emergência. Depois, comece pelo básico: [Tesouro Direto](/glossario/tesouro-direto) e CDBs. Só avance para [renda variável](/glossario/renda-variavel) quando entender os [riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
+**A solução:** Antes de investir, monte sua reserva de emergência. Depois, comece pelo básico: [Tesouro Direto](/glossario/tesouro-direto) e CDBs. Só avance para [renda variável](/glossario/renda-variavel) quando entender os riscos.
 
 ## 7. Não se pagar primeiro
 
 **O erro:** Guardar "o que sobra" no final do mês (spoiler: nunca sobra).
 
-**A solução:** Assim que o salário cai, transfira automaticamente 10-20% para [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-). Viva com o que resta.
+**A solução:** Assim que o salário cai, transfira automaticamente 10-20% para investimentos. Viva com o que resta.
 
 ## Resumo
 
@@ -68,10 +68,10 @@ Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-
 |------|---------------|
 | Sem reserva | Comece com R$ 1.000 |
 | Gastar demais | Limite cartão a 30% da renda |
-| Não acompanhar | Use o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) por 30 dias |
+| Não acompanhar | Use o FinMoovi por 30 dias |
 | Ignorar pequenos gastos | Calcule o custo anual |
 | Sem objetivos | Defina 1 meta com prazo |
-| Investir sem entender | Comece pelo Tesouro [Selic](/glossario/selic) |
+| Investir sem entender | Comece pelo Tesouro Selic |
 | Não se pagar primeiro | Automatize a transferência |
 
 ---

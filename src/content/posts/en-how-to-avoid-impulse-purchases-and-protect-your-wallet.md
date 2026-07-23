@@ -33,7 +33,7 @@ A well‑defined [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-na
 
 ## Use the 30‑day rule
 
-The 30‑day rule is one of the most effective tricks. When you want to buy something outside the [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas), write down the item and the price, but only make the purchase after 30 days. If you still feel the need, go ahead; if not, the desire usually disappears. Imagine you saw a pair of sneakers for R$ 350. Write it down, wait a month, and by the end you’ll notice you’ve already spent R$ 200 on other priorities. The impulse turns into a conscious decision.
+The 30‑day rule is one of the most effective tricks. When you want to buy something outside the budget, write down the item and the price, but only make the purchase after 30 days. If you still feel the need, go ahead; if not, the desire usually disappears. Imagine you saw a pair of sneakers for R$ 350. Write it down, wait a month, and by the end you’ll notice you’ve already spent R$ 200 on other priorities. The impulse turns into a conscious decision.
 
 ## Turn the urge into a habit
 
@@ -43,7 +43,7 @@ Creating new habits requires small daily wins. Swap a trip to the mall for a wal
 
 ## Tools that help
 
-- **[Finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)‑tracking apps**: let you categorize expenses and see how close you are to your monthly limit. Many offer custom alerts.
+- **Finance‑tracking apps**: let you categorize expenses and see how close you are to your monthly limit. Many offer custom alerts.
 - **Debit cards with category blocking**: some banks let you temporarily block purchases in clothing or electronics stores, preventing the impulse at the moment.
 - **Online wish list**: instead of buying right away, add the item to a list. Review the list after a week; if it’s still there, maybe it’s truly needed.
 
@@ -51,10 +51,10 @@ For those who prefer official sources, the Central Bank of Brazil provides guida
 
 ## Start today
 
-Grab a piece of paper or open your app right now and log the next expense you feel like making. Set a weekly limit and commit to respecting it. Every conscious decision strengthens your [financial control](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) and reduces the anxiety of buying without thinking.
+Grab a piece of paper or open your app right now and log the next expense you feel like making. Set a weekly limit and commit to respecting it. Every conscious decision strengthens your financial control and reduces the anxiety of buying without thinking.
 
 ![Comece hoje](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-6.webp)
 
 ---
 
-**Ready to organize your finances? [Experimente o FinMoovi grátis](https://finmoovi.com) — in 5 minutes you’ll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
+**Ready to organize your finances? [Experimente o FinMoovi grátis](https://finmoovi.com) — in 5 minutes you’ll have a clear view of where your money is going.**

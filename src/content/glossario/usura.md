@@ -45,14 +45,14 @@ Embora a usura seja ilegal e prejudicial, existem algumas vantagens em entender 
 
 
 
-## [Riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Riscos
 Os riscos associados à usura são significativos e podem ter consequências graves para as pessoas que estão endividadas. Alguns dos riscos incluem:
 * Endividamento crônico
 * Perda de patrimônio
 * Dano ao crédito
 * Estresse e ansiedade
 
-**Dica prática:** sempre verifique a reputação do credor antes de contratar um empréstimo ou financiamento. Além disso, é importante entender que a usura não é apenas um problema para as pessoas que estão endividadas, mas também pode afetar a [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) como um todo.
+**Dica prática:** sempre verifique a reputação do credor antes de contratar um empréstimo ou financiamento. Além disso, é importante entender que a usura não é apenas um problema para as pessoas que estão endividadas, mas também pode afetar a economia como um todo.
 
 ## Exemplos práticos
 Vamos considerar um exemplo prático. João tem um salário de R$ 5.000 por mês e precisa de um empréstimo de R$ 20.000 para pagar uma conta médica. Ele encontra um credor que oferece um empréstimo com juros de 25% ao ano. Isso significa que João precisará pagar R$ 5.000 apenas em juros no primeiro ano, além do valor principal do empréstimo.
@@ -60,5 +60,5 @@ Vamos considerar um exemplo prático. João tem um salário de R$ 5.000 por mês
 Outro exemplo é o de Maria, que tem um salário de R$ 3.500 por mês e precisa de um empréstimo de R$ 10.000 para pagar uma conta de água. Ela encontra um credor que oferece um empréstimo com juros de 30% ao ano. Isso significa que Maria precisará pagar R$ 3.000 apenas em juros no primeiro ano, além do valor principal do empréstimo.
 
 ## Comece hoje
-Agora que você entende o que é a usura e como ela funciona, é importante começar a tomar medidas para evitar situações de endividamento crônico. **Dica prática:** comece a economizar uma parte do seu salário todos os meses e evite contratar empréstimos ou financiamentos com juros altos. Além disso, é importante entender que a usura não é apenas um problema para as pessoas que estão endividadas, mas também pode afetar a [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) como um todo. Comece a tomar controle das suas finanças hoje e evite a usura!
+Agora que você entende o que é a usura e como ela funciona, é importante começar a tomar medidas para evitar situações de endividamento crônico. **Dica prática:** comece a economizar uma parte do seu salário todos os meses e evite contratar empréstimos ou financiamentos com juros altos. Além disso, é importante entender que a usura não é apenas um problema para as pessoas que estão endividadas, mas também pode afetar a economia como um todo. Comece a tomar controle das suas finanças hoje e evite a usura!
 

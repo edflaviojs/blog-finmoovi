@@ -75,17 +75,17 @@ El **cashback inteligente** puede devolver hasta el 12 % del valor gastado en 
 ## 5️⃣ Planificación anticipada: la estrategia que salva tu bolsillo
 
 ### 5.1. **Empieza a ahorrar ya en enero**
-El IBGE indica que el ingreso medio mensual de los trabajadores brasileños en 2023 fue de **2.600 R$**. Si reservas 10 R$ por semana, ya tendrás 40 R$ en marzo – [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) que puedes usar como parte del regalo.
+El IBGE indica que el ingreso medio mensual de los trabajadores brasileños en 2023 fue de **2.600 R$**. Si reservas 10 R$ por semana, ya tendrás 40 R$ en marzo – dinero que puedes usar como parte del regalo.
 
 ![5️⃣ Planificación anticipada: la estrategia que salva tu bolsillo](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--6.webp)
 
 ### 5.2. **Usa listas de deseos**
-Crea una lista en [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) con los ítems que te gustaría dar a papá. Cada vez que haya una promoción, añade el precio reducido. Así, compras en el momento correcto y evitas compras impulsivas.
+Crea una lista en FinMoovi con los ítems que te gustaría dar a papá. Cada vez que haya una promoción, añade el precio reducido. Así, compras en el momento correcto y evitas compras impulsivas.
 
 ### 5.3. **Divide el valor en cuotas más pequeñas**
-Si optas por un regalo más caro (p.ej.: smartwatch), verifica si la tienda ofrece **cuotas sin intereses**. Pero atención: registra cada cuota en [FinMoovi](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) para no olvidar pagar y acabar gastando más el mes siguiente.
+Si optas por un regalo más caro (p.ej.: smartwatch), verifica si la tienda ofrece **cuotas sin intereses**. Pero atención: registra cada cuota en FinMoovi para no olvidar pagar y acabar gastando más el mes siguiente.
 
-## 6️⃣ [Consejos](/es/posts/es-7-errores-financieros-principiante) finales para no entrar en números rojos
+## 6️⃣ Consejos finales para no entrar en números rojos
 
 | # | Consejo | ¿Por qué? |
 |---|---------|-----------|
@@ -93,13 +93,13 @@ Si optas por un regalo más caro (p.ej.: smartwatch), verifica si la tienda ofre
 | 2 | **Evita “última hora”** | Comprar a último momento suele ser más caro. |
 | 3 | **Combina regalos con amigos de la familia** | Dividir el costo permite un regalo mayor por menos. |
 | 4 | **Aplica la regla de los 30 días** (para compras no esenciales) | Da tiempo para reflexionar si realmente es necesario. |
-| 5 | **Registra todo en [FinMoovi](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)** | Control total de los gastos, evita sorpresas al fin de mes. |
+| 5 | **Registra todo en FinMoovi** | Control total de los gastos, evita sorpresas al fin de mes. |
 
 ## 7️⃣ Conclusión: regalo que cabe en el bolsillo y en el corazón
 
 Regalar a papá no tiene que ser sinónimo de gasto exagerado. Con un límite bien definido, aprovechando cashback, cupones e ideas DIY, demuestras cariño y mantienes la salud financiera de la familia. Recuerda que el valor simbólico de un gesto suele ser mayor que el precio de un objeto caro.
 
-> **Usa [FinMoovi](/es/posts/es-voce-tambem-esquece-de-anotar-seus-gastos) para controlar tus gastos y no llevarte sorpresas al fin del mes.**
+> **Usa FinMoovi para controlar tus gastos y no llevarte sorpresas al fin del mes.**
 
 ---
 

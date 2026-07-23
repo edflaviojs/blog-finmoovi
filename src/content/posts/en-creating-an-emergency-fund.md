@@ -30,7 +30,7 @@ To calculate the necessary fund, it's essential to know your monthly expenses. M
 - Transportation
 - Debt payments, such as [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) or loan
 
-**Practical tip:** Use a [personal finance](/en/posts/en-30-day-rule-for-purchases) app to track your expenses and get a clear view of where your [money](/en/posts/en-difference-between-investing-and-saving) is going. This will help you identify areas where you can cut back on spending and direct more [money](/en/posts/en-financial-education-for-children) towards the emergency fund.
+**Practical tip:** Use a [personal finance](/en/posts/en-30-day-rule-for-purchases) app to track your expenses and get a clear view of where your [money](/en/posts/en-difference-between-investing-and-saving) is going. This will help you identify areas where you can cut back on spending and direct more money towards the emergency fund.
 
 ![Como calcular a reserva necessária](/images/posts/como-criar-uma-reserva-de-emergencia-2.webp)
 
@@ -40,8 +40,8 @@ To calculate the necessary fund, it's essential to know your monthly expenses. M
 Creating an emergency fund requires discipline and patience. Here are some strategies to help:
 - Set a monthly value to deposit into the fund
 - Automate the deposits to make it easier to maintain the routine
-- Avoid withdrawing [money](/en/posts/en-financial-planning-for-couples) from the fund for non-essential expenses
-- Consider opening a separate [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) account for the emergency fund, to make it harder to access the [money](/en/posts/en-financial-planning-for-freelancers) for [daily expenses](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos)
+- Avoid withdrawing money from the fund for non-essential expenses
+- Consider opening a separate savings account for the emergency fund, to make it harder to access the money for daily expenses
 
 Remember that the key is to start small and increase the fund over time. Even R$ 100 per month can make a big difference over a year.
 
@@ -62,4 +62,4 @@ For more information on managing your finances and creating an emergency fund, y
 Don't wait until it's too late to start creating your emergency fund. Start saving today, even if it's a small amount. Remember that every real counts, and discipline is the key to achieving your financial goals.
 
 ---
-**Want to put theory into practice? [Download [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and start tracking your expenses today. No card, no commitment.**
+**Want to put theory into practice? Download [FinMoovi for free for 7 days](https://finmoovi.com) and start tracking your expenses today. No card, no commitment.**

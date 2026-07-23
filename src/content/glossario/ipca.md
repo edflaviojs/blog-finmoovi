@@ -26,12 +26,12 @@ O IPCA acompanha os preços de uma "cesta" de produtos e serviços que as famíl
 
 1. **Seu [dinheiro](/posts/cashback-inteligente) perde [valor](/glossario/valor):** se o IPCA é 5% ao ano, R$ 100 hoje valem R$ 95 daqui a um ano
 2. **[Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026):** rendimentos abaixo do IPCA significam que você está perdendo [dinheiro](/posts/como-criar-uma-reserva-de-emergencia)
-3. **[Selic](/glossario/selic):** o Banco Central sobe ou desce a [Selic](/posts/cotacoes-semana-1-julho-2026) para controlar o IPCA
+3. **[Selic](/glossario/selic):** o Banco Central sobe ou desce a Selic para controlar o IPCA
 4. **Reajustes:** aluguéis, planos de saúde e salários são reajustados pelo IPCA
 
 ## IPCA e investimentos
 
-Para seu [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) crescer de verdade, seus investimentos precisam render **acima do IPCA**. Por isso existem títulos como o Tesouro IPCA+, que garantem [rendimento](/posts/montando-carteira-diversificada-com-r-500) real (acima da inflação).
+Para seu dinheiro crescer de verdade, seus investimentos precisam render **acima do IPCA**. Por isso existem títulos como o Tesouro IPCA+, que garantem rendimento real (acima da inflação).
 
 ## IPCA histórico
 

@@ -32,7 +32,7 @@ El valor de un activo se determina mediante la interacción de la oferta y la de
 
 * El valor de un activo puede ser influenciado por factores como:
  + La inflación: si la inflación es alta, el valor del dinero disminuye, lo que significa que el valor de un activo puede aumentar.
- + La [economía](/es/posts/es-ahorrando-en-la-cuenta-de-energia) en general: si la [economía](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) está en auge, el valor de un activo puede aumentar, mientras que si la economía está en recesión, el valor del activo puede disminuir.
+ + La economía en general: si la economía está en auge, el valor de un activo puede aumentar, mientras que si la economía está en recesión, el valor del activo puede disminuir.
  + La oferta y la demanda: si hay más compradores que vendedores, el valor del activo tiende a aumentar, y cuando hay más vendedores que compradores, el valor del activo tiende a disminuir.
 
 ## Ventajas

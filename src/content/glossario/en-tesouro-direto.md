@@ -19,7 +19,7 @@ seo:
 ---
 
 ## What it is
-O [Tesouro Direto](/en/posts/en-tesouro-direto-para-iniciantes) é um programa criado pelo governo brasileiro que permite que os cidadãos invistam diretamente em títulos públicos, como LTNs (Letras do Tesouro Nacional) e NTNs (Notas do Tesouro Nacional). Esses títulos são basicamente empréstimos que você faz ao governo, que, em troca, paga [juros](/en/glossario/en-juros) sobre o [valor](/en/glossario/en-valor) investido. É uma forma de aplicar seu dinheiro de maneira segura e rentável, pois os títulos são garantidos pelo governo.
+O Tesouro Direto é um programa criado pelo governo brasileiro que permite que os cidadãos invistam diretamente em títulos públicos, como LTNs (Letras do Tesouro Nacional) e NTNs (Notas do Tesouro Nacional). Esses títulos são basicamente empréstimos que você faz ao governo, que, em troca, paga [juros](/en/glossario/en-juros) sobre o [valor](/en/glossario/en-valor) investido. É uma forma de aplicar seu dinheiro de maneira segura e rentável, pois os títulos são garantidos pelo governo.
 
 Os títulos do Tesouro Direto variam em prazos e taxas de juros, o que significa que você pode escolher o que melhor se adequa às suas necessidades financeiras. Por exemplo, se você tem R$ 5.000 para investir e não precisa do dinheiro nos próximos 5 anos, pode optar por um título com prazo mais longo, que geralmente oferece taxas de juros mais altas.
 

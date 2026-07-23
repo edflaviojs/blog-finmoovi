@@ -23,9 +23,9 @@ Quando você está em um relacionamento, é importante que você e seu parceiro 
 Uma boa ideia é criar um [orçamento](/posts/como-criar-orcamento-pessoal) juntos, considerando todas as despesas mensais, como aluguel, comida, transporte, etc. Por exemplo, se vocês pagam R$ 2.500 de aluguel e R$ 1.000 de comida por mês, já são R$ 3.500 [gastos](/posts/metodo-50-30-20-para-orcamento) fixos. É importante também considerar despesas variáveis, como entretenimento e lazer.
 
 ## [Gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e [Economia](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz)
-É fundamental que você e seu parceiro tenham uma conversa aberta sobre gastos e [economia](/posts/economize-na-conta-de-energia). **Dica prática:** crie uma categoria de "[dinheiro](/posts/planejamento-financeiro-para-casais) para diversão" no seu [orçamento](/posts/metodo-50-30-20-para-orcamento), para que vocês possam gastar um pouco de [dinheiro](/posts/economizar-nas-compras-do-supermercado) em coisas que享am, sem se sentir culpados. Por exemplo, vocês podem decidir que vão gastar R$ 500 por mês em restaurantes e cinemas.
+É fundamental que você e seu parceiro tenham uma conversa aberta sobre gastos e [economia](/posts/economize-na-conta-de-energia). **Dica prática:** crie uma categoria de "[dinheiro](/posts/planejamento-financeiro-para-casais) para diversão" no seu orçamento, para que vocês possam gastar um pouco de dinheiro em coisas que享am, sem se sentir culpados. Por exemplo, vocês podem decidir que vão gastar R$ 500 por mês em restaurantes e cinemas.
 
-Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para economizar [dinheiro](/posts/regra-dos-30-dias-para-compras):
+Aqui estão algumas dicas para economizar dinheiro:
 * Corte gastos desnecessários, como assinaturas de serviços que não usam
 * Faça um plano de alimentação e compre alimentos em bulk
 * Use o transporte público ou bicicleta em vez de carro
@@ -35,12 +35,12 @@ Aqui estão algumas [dicas](/posts/7-erros-financeiros-iniciante) para economiza
 Ter metas financeiras em comum é essencial para que você e seu parceiro trabalhem juntos em direção a um objetivo. Isso pode incluir economizar para uma casa própria, pagar dívidas ou criar um fundo de emergência. Vamos supor que vocês queiram economizar R$ 20.000 para uma entrada de casa. Isso significa que vocês precisam economizar R$ 1.667 por mês durante um ano.
 
 ## Desafios e Soluções
-É normal que surgam desafios ao gerenciar as finanças de casal. Por exemplo, um dos parceiros pode ter um gosto por compras caras, enquanto o outro é mais avesso a gastar. **Dica prática:** crie um sistema de "[controle de gastos](/posts/metodo-50-30-20-para-orcamento)" para que vocês possam monitorar seus gastos e discutir sobre eles regularmente.
+É normal que surgam desafios ao gerenciar as finanças de casal. Por exemplo, um dos parceiros pode ter um gosto por compras caras, enquanto o outro é mais avesso a gastar. **Dica prática:** crie um sistema de "controle de gastos" para que vocês possam monitorar seus gastos e discutir sobre eles regularmente.
 
-Outro desafio comum é a falta de comunicação sobre finanças. É importante que vocês tenham conversas regulares sobre como estão se sentindo em relação ao [dinheiro](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) e se há alguma coisa que precisam mudar.
+Outro desafio comum é a falta de comunicação sobre finanças. É importante que vocês tenham conversas regulares sobre como estão se sentindo em relação ao dinheiro e se há alguma coisa que precisam mudar.
 
 ## Comece hoje
-Agora que você sabe como organizar as finanças de casal, é hora de começar a trabalhar em direção a um futuro [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) mais seguro e próspero. Lembre-se de que a comunicação e o [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) são fundamentais para o sucesso. Comece a conversar com seu parceiro sobre suas metas financeiras e crie um plano para alcançá-las.
+Agora que você sabe como organizar as finanças de casal, é hora de começar a trabalhar em direção a um futuro financeiro mais seguro e próspero. Lembre-se de que a comunicação e o planejamento são fundamentais para o sucesso. Comece a conversar com seu parceiro sobre suas metas financeiras e crie um plano para alcançá-las.
 
 ---
-**Pronto para organizar suas finanças? [Experimente o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis](https://[finmoovi](/posts/5-alternativas-ao-mobills-em-2026).com) — em 5 minutos você já tem uma visão clara de para onde vai seu [dinheiro](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas).**
+**Pronto para organizar suas finanças? Experimente o [FinMoovi grátis](https://finmoovi.com) — em 5 minutos você já tem uma visão clara de para onde vai seu dinheiro.**

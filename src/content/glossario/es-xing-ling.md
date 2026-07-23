@@ -54,7 +54,7 @@ Xing ling tiene varias bondades que lo hacen atractivo para cualquier persona qu
 
 ## Riesgos
 
-Como cualquier instrumento financiero, el xing ling no está exento de riesgos, y es importante conocerlos antes de comprometer el [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).
+Como cualquier instrumento financiero, el xing ling no está exento de riesgos, y es importante conocerlos antes de comprometer el dinero.
 
 - **[Volatilidad](/es/glossario/es-volatilidade) del mercado:** los precios de acciones y bonos pueden bajar, lo que reduce temporalmente el valor de tu inversión.  
 - **Riesgo de [liquidez](/es/glossario/es-liquidez):** aunque puedes retirar el dinero en cualquier momento, hacerlo en un periodo de caída del mercado puede generar pérdidas.  
@@ -69,7 +69,7 @@ Supongamos tres perfiles salariales y cómo el xing ling puede transformar sus f
 - **Salario R$ 5.500:** aporta 7 % (R$ 385/mes). En 5 años, el saldo sería cerca de R$ 30.000.  
 - **Salario R$ 8.000:** aporta 10 % (R$ 800/mes). Tras 5 años, el monto alcanzaría alrededor de R$ 70.000.
 
-**Consejo práctico:** si tu ingreso varía mes a mes, ajusta el porcentaje en lugar del monto fijo; así mantienes el hábito sin afectar tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias).
+**Consejo práctico:** si tu ingreso varía mes a mes, ajusta el porcentaje en lugar del monto fijo; así mantienes el hábito sin afectar tu presupuesto.
 
 **Consejo práctico:** revisa el rendimiento del fondo cada seis meses y, si supera el 9 % anual, considera aumentar el aporte en 1 % para acelerar el crecimiento.
 

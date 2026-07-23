@@ -50,12 +50,12 @@ A venda a descoberto pode ser uma ferramenta útil para diversificar sua estrat�
 
 **Dica prática:** use a venda a descoberto apenas para cobrir posições que já possui, nunca como seu único plano de investimento.
 
-## [Riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Riscos
 
 Apesar das vantagens, a operação traz riscos que podem superar o valor investido. É importante entender bem cada ponto antes de entrar:
 
 - **Perda ilimitada**: ao contrário da compra de ação, onde o máximo que você perde é o valor investido, na venda a descoberto o preço da ação pode subir indefinidamente, gerando prejuízo sem limite.  
-- **Chamada de margem**: se o mercado se mover contra você, a corretora pode exigir que você deposite mais [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) (margin call) para manter a posição aberta.  
+- **Chamada de margem**: se o mercado se mover contra você, a corretora pode exigir que você deposite mais dinheiro (margin call) para manter a posição aberta.  
 - **Custos de empréstimo**: algumas ações têm taxas de aluguel altas, o que reduz o lucro potencial.  
 - **Risco de liquidação**: em eventos de alta [volatilidade](/glossario/volatilidade), a corretora pode fechar sua posição automaticamente, realizando prejuízo.
 

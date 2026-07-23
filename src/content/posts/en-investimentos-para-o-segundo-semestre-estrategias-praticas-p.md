@@ -24,9 +24,9 @@ seo:
   keywords: ["investments","second half","2024","portfolio","Treasury Selic","CDB","ETF"]
 ---
 
-# [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) for the Second Half: Practical Strategies for 2026
+# Investments for the Second Half: Practical Strategies for 2026
 
-The [second half of the year](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) is usually busier: vacations, end‑of‑year parties, and the expectation of a new economic cycle. If you still don’t have a plan for the next six months, this article gives you a step‑by‑step roadmap to build a portfolio that blends safety and growth potential, using real‑life examples from everyday Brazil.
+The second half of the year is usually busier: vacations, end‑of‑year parties, and the expectation of a new economic cycle. If you still don’t have a plan for the next six months, this article gives you a step‑by‑step roadmap to build a portfolio that blends safety and growth potential, using real‑life examples from everyday Brazil.
 
 ---
 
@@ -36,10 +36,10 @@ The [second half of the year](/en/posts/en-5-dicas-para-se-preparar-financeirame
 Historically, some sectors tend to rise in the second half – tourism, retail, energy, and technology. This “high season” can create profit opportunities, but it also brings [volatility](/en/glossario/en-volatilidade) that needs attention.
 
 ### 2. Annual goal‑adjustment point  
-If you haven’t yet hit your [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) or return target, the second half is the last chance to correct the course before the fiscal year ends.
+If you haven’t yet hit your savings or return target, the second half is the last chance to correct the course before the fiscal year ends.
 
 ### 3. Preparation for the next year  
-Building an emergency reserve and allocating [money](/en/posts/en-30-day-rule-for-purchases) to long‑term assets already in the second half guarantees peace of mind to start 2025 with a ready‑to‑go portfolio.
+Building an emergency reserve and allocating money to long‑term assets already in the second half guarantees peace of mind to start 2025 with a ready‑to‑go portfolio.
 
 ---
 
@@ -58,11 +58,11 @@ Building an emergency reserve and allocating [money](/en/posts/en-30-day-rule-fo
 
 After paying the bills, calculate how much is left for new investments. In the example above, the person has **R$ 1.700,00** of free margin (3.500 – 1.800). If you allocate 30 % of that margin to new contributions, the monthly contribution will be **R$ 510,00**.
 
-> **Practical tip:** Use the app **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)** to record these inflows and outflows. It lets you categorize each expense and instantly shows how much you can invest each month.
+> **Practical tip:** Use the app **FinMoovi** to record these inflows and outflows. It lets you categorize each expense and instantly shows how much you can invest each month.
 
 ### Step 2 – Define your time horizon
 
-- **Short term (up to 12 months):** goal to use the [money](/en/posts/en-avoid-impulse-purchases) this year (travel, buying an appliance).
+- **Short term (up to 12 months):** goal to use the money this year (travel, buying an appliance).
 - **Medium term (1‑3 years):** goals like a down‑payment for a house or a car.
 - **Long term (5 years or more):** retirement, [financial independence](/en/glossario/en-independencia-financeira).
 
@@ -73,9 +73,9 @@ For the second half, most people focus on **short and medium term**, but don’t
 | Asset type                               | Risk       | Recommendation for 2nd half |
 |------------------------------------------|------------|------------------------------|
 | **Tesouro [Selic](/en/glossario/en-selic)** (fixed income)        | Low        | Emergency reserve and safety contribution |
-| **CDBs with daily [liquidity](/en/glossario/en-liquidez)**           | Low‑medium | Complement to Selic, returns above [savings](/en/posts/en-how-to-save-at-the-grocery-store-in-2026-real-tips) |
+| **CDBs with daily [liquidity](/en/glossario/en-liquidez)**           | Low‑medium | Complement to Selic, returns above savings |
 | **Index funds ([ETF](/en/glossario/en-etf)) of stocks**         | Medium‑high| Exposure to seasonal sectors (retail, energy) |
-| **Real‑estate funds (FIIs)**             | Medium     | Monthly rent receipts, good for [passive income](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo) |
+| **Real‑estate funds (FIIs)**             | Medium     | Monthly rent receipts, good for passive income |
 | **Cryptocurrencies or alternative assets** | High       | Only 5 % of the portfolio, for those who accept volatility |
 
 #### Sample allocation for someone earning R$ 3.500,00
@@ -96,7 +96,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 3. **Energy:** Higher air‑conditioner use in the autumn (May‑September) lifts energy prices. Energy FIIs or utility stocks can benefit.
 
-> **Tool:** [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) offers market alerts that notify you when ETF or FII prices cross predefined limits, helping you enter at the right moment.
+> **Tool:** FinMoovi offers market alerts that notify you when ETF or FII prices cross predefined limits, helping you enter at the right moment.
 
 ### Step 5 – Monitor and adjust each quarter
 
@@ -129,7 +129,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 - **[Banco Central do Brasil](https://www.bcb.gov.br)** – check the Selic rate and economic indicators.  
 - **[Tesouro Direto](https://www.tesourodireto.com.br)** – official portal to buy government bonds.  
-- **[FinMoovi](/en/posts/en-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)** – Brazilian app that integrates [expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza), [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) goals, and market alerts. Perfect for anyone who wants to see the whole portfolio in one place.
+- **FinMoovi** – Brazilian app that integrates expense tracking, investment goals, and market alerts. Perfect for anyone who wants to see the whole portfolio in one place.
 
 ![Helpful tools and resources](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 
@@ -141,7 +141,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 Yes. Begin with Tesouro Selic, which has daily liquidity and protects capital. As the reserve grows, diversify.
 
 **2. How much should I allocate to FIIs?**  
-It depends on your passive‑income goal. An allocation of 10‑20 % usually yields monthly [dividends](/en/glossario/en-dividendos) without hurting [diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel).
+It depends on your passive‑income goal. An allocation of 10‑20 % usually yields monthly [dividends](/en/glossario/en-dividendos) without hurting diversification.
 
 **3. Is it safe to buy international ETFs?**  
 It’s possible through brokers that offer access to BDRs or overseas investment funds. Check custody fees and taxes.
@@ -150,7 +150,7 @@ It’s possible through brokers that offer access to BDRs or overseas investment
 
 ## Conclusion
 
-The second half of 2026 offers a window of opportunities that goes far beyond vacations and holiday parties. By following the five steps – assess your situation, set horizons, choose assets, exploit seasonality, and monitor results – you create a portfolio that matches your profile and market demands. Use tools like **[FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro)** to keep everything organized and don’t let daily hustle derail your investment plan.
+The second half of 2026 offers a window of opportunities that goes far beyond vacations and holiday parties. By following the five steps – assess your situation, set horizons, choose assets, exploit seasonality, and monitor results – you create a portfolio that matches your profile and market demands. Use tools like **FinMoovi** to keep everything organized and don’t let daily hustle derail your investment plan.
 
 ![Conclusion](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-6.webp)
 

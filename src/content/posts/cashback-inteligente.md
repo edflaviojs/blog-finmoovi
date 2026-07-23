@@ -45,4 +45,4 @@ Agora que você sabe [como usar cashback de forma inteligente](/posts/como-usar-
 
 
 ---
-**Quer colocar isso em prática? [Teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/migrando-da-planilha-para-um-app-financeiro).com) e veja como é fácil controlar suas finanças com [categorização automática](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas) e [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) visuais.**
+**Quer colocar isso em prática? Teste o [FinMoovi grátis por 7 dias](https://finmoovi.com) e veja como é fácil controlar suas finanças com categorização automática e relatórios visuais.**

@@ -26,13 +26,13 @@ A poupança é a conta de depósito mais conhecida no Brasil. Ela funciona como 
 
 
 
-- **Rendimento:** a taxa é calculada com base na taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) (taxa básica de juros) e na Taxa Referencial (TR), que costuma ficar próxima de zero.
+- **Rendimento:** a taxa é calculada com base na taxa [Selic](/en/glossario/en-selic) (taxa básica de juros) e na Taxa Referencial (TR), que costuma ficar próxima de zero.
 - **Garantia:** o Fundo Garantidor de Créditos (FGC) cobre até R$250 mil por pessoa, caso o banco quebre.
 - **Liquidez:** o dinheiro fica disponível no mesmo dia útil, o que a torna ideal para emergências.
 
 ## How it works
 
-Quando você abre uma conta poupança, o banco registra o saldo e aplica a taxa de juros mensal. O cálculo é feito assim: se a [Selic](/en/posts/en-quotes-semana-1-june-2026) estiver acima de 8,5 % ao ano, a poupança paga 0,5 % ao mês + TR; se estiver abaixo, paga 70 % da [Selic](/en/posts/en-quotes-semana-2-july-2026) + TR. A TR costuma ser zero, então o rendimento real costuma ficar entre 0,5 % e 0,7 % ao mês.
+Quando você abre uma conta poupança, o banco registra o saldo e aplica a taxa de juros mensal. O cálculo é feito assim: se a Selic estiver acima de 8,5 % ao ano, a poupança paga 0,5 % ao mês + TR; se estiver abaixo, paga 70 % da Selic + TR. A TR costuma ser zero, então o rendimento real costuma ficar entre 0,5 % e 0,7 % ao mês.
 
 - **Depósito:** basta transferir dinheiro da conta corrente ou fazer um depósito em dinheiro.
 - **Capitalização:** os juros são creditados no último dia útil de cada mês e entram no saldo para gerar novos juros (juros compostos).
@@ -51,13 +51,13 @@ A poupança tem alguns pontos fortes que a deixam no topo da lista de quem quer 
 - **Liquidez imediata:** o saldo fica disponível no mesmo dia, perfeito para emergências como conserto de carro ou despesa médica inesperada.
 - **Isenção de [imposto de renda](/en/glossario/en-imposto-de-renda):** ao contrário de muitos investimentos, a poupança não cobra IR (Imposto de Renda) sobre os rendimentos.
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Risks
 
 Mesmo sendo “segura”, a poupança tem limitações que podem comprometer seu objetivo de fazer o dinheiro crescer.
 
-- **Rendimento baixo:** quando a [Selic](/en/posts/en-quotes-semana-3-july-2026) está em patamares menores, a taxa da poupança pode ficar abaixo da inflação, fazendo o poder de compra diminuir.
-- **Oportunidade perdida:** ao deixar todo o dinheiro na poupança, você perde a chance de investir em opções com retornos maiores, como CDBs, [Tesouro Direto](/en/glossario/en-tesouro-direto) ou fundos de [renda fixa](/en/glossario/en-renda-fixa).
-- **Dependência de política monetária:** mudanças na taxa [Selic](/en/posts/en-quotes-semana-3-june-2026) afetam diretamente o rendimento, então períodos de juros baixos reduzem o ganho.
+- **Rendimento baixo:** quando a Selic está em patamares menores, a taxa da poupança pode ficar abaixo da inflação, fazendo o poder de compra diminuir.
+- **Oportunidade perdida:** ao deixar todo o dinheiro na poupança, você perde a chance de investir em opções com retornos maiores, como CDBs, [Tesouro Direto](/en/glossario/en-tesouro-direto) ou fundos de renda fixa.
+- **Dependência de política monetária:** mudanças na taxa Selic afetam diretamente o rendimento, então períodos de juros baixos reduzem o ganho.
 
 ## Practical examples
 

@@ -34,7 +34,7 @@ A operação acontece em três passos básicos:
 - **Venda:** vende as ações no mercado à vista pelo preço atual.  
 - **Recompra:** quando (ou se) o preço cair, compra as mesmas ações a um valor menor e devolve ao doador, ficando com a diferença.  
 
-Todo esse processo acontece dentro da mesma corretora, que cuida do empréstimo e do recolhimento de juros sobre o uso das ações. O investidor paga uma taxa de aluguel (geralmente um percentual anual) e, se o preço subir, pode ser chamado a cobrir a posição a qualquer momento, o que significa comprar imediatamente a preço de mercado.
+Todo esse processo acontece dentro da mesma corretora, que cuida do empréstimo e do recolhimento de [juros](/en/glossario/en-juros) sobre o uso das ações. O investidor paga uma taxa de aluguel (geralmente um percentual anual) e, se o preço subir, pode ser chamado a cobrir a posição a qualquer momento, o que significa comprar imediatamente a preço de mercado.
 
 ## Advantages
 

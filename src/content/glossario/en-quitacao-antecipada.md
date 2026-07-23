@@ -36,7 +36,7 @@ Example: financing of R$ 200,000 in 30 years at 10% per year.
 - When you have idle [money](/en/posts/en-30-day-rule-for-purchases) earning less
 
 ❌ Not worth it:
-- Interest on the debt is lower than what your [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) [yield](/en/glossario/en-yield)
+- Interest on the debt is lower than what your investments [yield](/en/glossario/en-yield)
 - Financing with very low rates (<7% per year)
 - If you'll be left without an emergency reserve
 

@@ -46,7 +46,7 @@ Las ventajas de utilizar Webull son numerosas. **Consejo práctico:** siempre es
 Aunque Webull ofrece muchas ventajas, también hay riesgos asociados con la inversión en el mercado de valores. **Consejo práctico:** siempre es importante investigar y entender los riesgos asociados con cualquier inversión antes de tomar una decisión. Algunos de los riesgos más significativos incluyen:
  
 * Riesgo de pérdida: el mercado de valores puede ser volátil, y los inversores pueden perder [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) si sus inversiones no rinden como se esperaba.
-* Riesgo de [liquidez](/es/glossario/es-liquidez): algunos instrumentos financieros pueden ser difíciles de vender rápidamente, lo que puede hacer que los inversores tengan dificultades para acceder a su [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) cuando lo necesiten.
+* Riesgo de [liquidez](/es/glossario/es-liquidez): algunos instrumentos financieros pueden ser difíciles de vender rápidamente, lo que puede hacer que los inversores tengan dificultades para acceder a su dinero cuando lo necesiten.
 * Riesgo de fraude: como con cualquier plataforma en línea, hay un riesgo de fraude o robo de identidad, por lo que es importante tomar medidas para proteger su cuenta y su información personal.
 
 ![Ventajas](/images/glossario/webull-inline-3.webp)
@@ -59,7 +59,7 @@ Supongamos que usted es un inversor individual con un salario de R$5.000 al mes 
 * Ejemplo de cómo Webull puede ayudar:
  + Usted puede utilizar las herramientas de análisis de Webull para investigar y comparar las acciones de diferentes empresas antes de tomar una decisión.
  + Usted puede utilizar la aplicación móvil de Webull para acceder a su cuenta y realizar operaciones en cualquier momento y desde cualquier lugar.
- + Usted puede utilizar la cuenta de práctica de Webull para practicar y mejorar sus habilidades de inversión antes de invertir [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) real.
+ + Usted puede utilizar la cuenta de práctica de Webull para practicar y mejorar sus habilidades de inversión antes de invertir dinero real.
 
 ## Empieza hoy
 No espere más para comenzar a invertir en su futuro. **Consejo práctico:** siempre es importante comenzar con pequeñas cantidades y aumentar gradualmente su inversión a medida que se sienta más cómodo con el proceso. Con Webull, usted puede comenzar a invertir con tan solo R$100 y acceder a una amplia variedad de instrumentos financieros y herramientas de análisis. Así que no espere más, regístrese en Webull hoy mismo y comience a construir el futuro financiero que siempre ha querido.

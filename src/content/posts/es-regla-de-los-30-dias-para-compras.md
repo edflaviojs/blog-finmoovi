@@ -54,4 +54,4 @@ No esperes más para comenzar a usar la regla de los 30 días. Hoy es el día pa
 
 
 ---
-**¿Estás cansado de planillas? [Prueba [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://[finmoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026).com) y controla tus [gastos](/es/posts/es-metodo-50-30-20-para-orcamento) con IA, multi-divisa y [informes](/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) que tienen sentido.**
+**¿Estás cansado de planillas? [Prueba [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://finmoovi.com) y controla tus gastos con IA, multi-divisa y informes que tienen sentido.**

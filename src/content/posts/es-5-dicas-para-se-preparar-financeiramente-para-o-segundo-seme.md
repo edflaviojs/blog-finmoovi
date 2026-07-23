@@ -35,23 +35,23 @@ Ahora que entiendes tu situación financiera actual, es hora de definir metas fi
 
 
 ## Creando un [Presupuesto](/es/posts/es-como-crear-presupuesto-personal) para el Segundo Semestre
-Ahora que tienes metas financieras definidas, es hora de crear un [presupuesto](/es/posts/es-como-crear-presupuesto-personal) para el segundo semestre. Esto incluye decidir cómo vas a asignar tu renta para alcanzar tus metas. Aquí te presentamos algunas sugerencias para ayudarte a crear un [presupuesto](/es/posts/es-como-crear-presupuesto-personal):
+Ahora que tienes metas financieras definidas, es hora de crear un presupuesto para el segundo semestre. Esto incluye decidir cómo vas a asignar tu renta para alcanzar tus metas. Aquí te presentamos algunas sugerencias para ayudarte a crear un presupuesto:
 1. **Asigna el 50% de tu renta para necesidades básicas**: Esto incluye gastos con vivienda, alimentación, transporte y servicios esenciales.
 2. **Asigna el 30% de tu renta para deseos**: Esto incluye gastos con ocio, entretenimiento y hobbies.
-3. **Asigna el 20% de tu renta para metas financieras**: Esto incluye gastos con [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado), deudas y fondos de emergencia.
-4. **Revisa tu [presupuesto](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) regularmente**: Usa el [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) para revisar tu [presupuesto](/es/posts/es-como-crear-presupuesto-personal) y hacer ajustes según sea necesario.
+3. **Asigna el 20% de tu renta para metas financieras**: Esto incluye gastos con ahorro, deudas y fondos de emergencia.
+4. **Revisa tu presupuesto regularmente**: Usa el FinMoovi para revisar tu presupuesto y hacer ajustes según sea necesario.
 
 ## Gestionando Deudas y Gastos
 Gestionar deudas y gastos es fundamental para alcanzar tus metas financieras. Aquí te presentamos algunas sugerencias para ayudarte a gestionar deudas y gastos:
-1. **Paga tus deudas más caras primero**: Esto incluye deudas con intereses altos, como tarjetas de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-).
+1. **Paga tus deudas más caras primero**: Esto incluye deudas con intereses altos, como tarjetas de crédito.
 2. **Negocia con tus acreedores**: Si estás teniendo dificultades para pagar tus deudas, negocia con tus acreedores para encontrar una solución.
 3. **Corta gastos innecesarios**: Esto incluye gastos con artículos que no son esenciales, como compras impulsivas.
-4. **Usa el método de la "envelope"**: Separa tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) en sobres para diferentes categorías de gastos, como alimentación y transporte.
+4. **Usa el método de la "envelope"**: Separa tu dinero en sobres para diferentes categorías de gastos, como alimentación y transporte.
 
 ![Creando un [Presupuesto](/es/posts/es-como-crear-presupuesto-personal) para el Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
 
 
 ## Conclusión
-Prepararse financieramente para el segundo semestre es fundamental para alcanzar tus metas financieras y tener una vida más tranquila. Con los consejos prácticos y accesibles presentados en este post, puedes crear un [presupuesto](/es/posts/es-como-crear-presupuesto-personal) personalizado, gestionar deudas y gastos y alcanzar tus metas financieras. Recuerda que el [Banco Central de Brasil](https://www.bcb.gov.br) y la [Receita Federal](https://www.gov.br/receitafederal) ofrecen recursos y información valiosa para ayudarte a gestionar tus finanzas. Además, el [Serasa](https://www.serasa.com.br) puede ayudarte a entender mejor tu situación financiera y a encontrar soluciones para tus problemas financieros.
-Usa el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) para controlar tus gastos y no sorprenderte al final del mes.
+Prepararse financieramente para el segundo semestre es fundamental para alcanzar tus metas financieras y tener una vida más tranquila. Con los consejos prácticos y accesibles presentados en este post, puedes crear un presupuesto personalizado, gestionar deudas y gastos y alcanzar tus metas financieras. Recuerda que el [Banco Central de Brasil](https://www.bcb.gov.br) y la [Receita Federal](https://www.gov.br/receitafederal) ofrecen recursos y información valiosa para ayudarte a gestionar tus finanzas. Además, el [Serasa](https://www.serasa.com.br) puede ayudarte a entender mejor tu situación financiera y a encontrar soluciones para tus problemas financieros.
+Usa el FinMoovi para controlar tus gastos y no sorprenderte al final del mes.

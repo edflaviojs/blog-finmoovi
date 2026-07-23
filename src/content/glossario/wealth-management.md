@@ -49,8 +49,8 @@ Geralmente voltado para pessoas com patrimônio acima de R$ 1 milhão. Mas os co
 
 Mesmo sem um wealth manager, você pode:
 
-1. [Diversificar investimentos](/posts/montando-carteira-diversificada-com-r-500) ([renda fixa](/glossario/renda-fixa) + variável + internacional)
+1. Diversificar investimentos ([renda fixa](/glossario/renda-fixa) + variável + internacional)
 2. Usar PGBL para reduzir IR
 3. Ter seguros adequados
 4. Manter registros organizados
-5. Usar apps como [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) para controle total
+5. Usar apps como FinMoovi para controle total

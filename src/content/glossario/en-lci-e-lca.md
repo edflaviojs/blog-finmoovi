@@ -31,7 +31,7 @@ For the investor, they work in the same way.
 ## Disadvantages
 
 - Minimum lock-up period of 90 days (cannot withdraw before)
-- Minimum [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) usually higher (R$ 1,000-5,000)
+- Minimum investment usually higher (R$ 1,000-5,000)
 - Fewer options available than CDB
 
 ## LCI/LCA vs. CDB
@@ -48,6 +48,6 @@ In this example, they yield the same. But an LCI of 90% of CDI already beats the
 
 ## When to invest in LCI/LCA
 
-- When you won't need the [money](/en/posts/en-avoid-impulse-purchases) for at least 90 days
-- To diversify fixed-income [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
+- When you won't need the money for at least 90 days
+- To diversify fixed-income investments
 - When you find rates above 90% of CDI

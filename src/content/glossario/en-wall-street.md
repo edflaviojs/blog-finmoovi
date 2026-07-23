@@ -71,10 +71,10 @@ Imagine you earn R$5.000 a month and decide to invest 10 % (R$500) in a divers
 
 ## How to start
 
-Getting your foot in the door is easier than you think. First, set a realistic [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) based on your monthly cash flow—don’t invest money you might need for rent or groceries. Then, open an account with a reputable broker or a user‑friendly investment app (the one I recommend to my cousins). Most platforms let you start with as little as R$100, and they provide educational resources to help you understand each trade. Finally, pick a simple, low‑cost ETF that mirrors a broad market index; it gives you instant diversification without having to pick individual stocks.
+Getting your foot in the door is easier than you think. First, set a realistic budget based on your monthly cash flow—don’t invest money you might need for rent or groceries. Then, open an account with a reputable broker or a user‑friendly investment app (the one I recommend to my cousins). Most platforms let you start with as little as R$100, and they provide educational resources to help you understand each trade. Finally, pick a simple, low‑cost ETF that mirrors a broad market index; it gives you instant diversification without having to pick individual stocks.
 
 - **Practical tip:** **Start with a “pay‑it‑forward” mindset—automate a small, fixed amount each payday so you never miss a contribution.**  
-- **Practical tip:** **Keep an [emergency fund](/en/glossario/en-reserva-de-emergencia) of at least three months of [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) before you invest, so market dips don’t force you to sell at a loss.**  
+- **Practical tip:** **Keep an [emergency fund](/en/glossario/en-reserva-de-emergencia) of at least three months of expenses before you invest, so market dips don’t force you to sell at a loss.**  
 - **Practical tip:** **Review your portfolio quarterly, not daily; long‑term growth beats short‑term market noise.**  
 - Choose a broker with low fees and a straightforward mobile app.  
 - Complete the KYC (Know Your Customer) verification—upload ID, proof of address, and a selfie.  

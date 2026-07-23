@@ -19,7 +19,7 @@ seo:
 
 ## What is [private pension](/en/glossario/en-previdencia-privada)?
 
-[Private pension](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-), also called a complementary pension plan, works like a *long‑term [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) vehicle* that you feed throughout your working life. The [money](/en/posts/en-30-day-rule-for-purchases) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment.
+Private pension, also called a complementary pension plan, works like a *long‑term [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) vehicle* that you feed throughout your working life. The [money](/en/posts/en-30-day-rule-for-purchases) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment.
 
 Two main types of plans exist in Brazil:
 
@@ -28,7 +28,7 @@ Two main types of plans exist in Brazil:
 | **PGBL** (Plano Gerador de Benefício Livre) | Contributions are deductible from Income Tax (up to 12% of gross income). | At retirement, tax is applied on the total (contributions + earnings). |
 | **VGBL** (Vida Gerador de Benefício Livre) | No tax deduction on contributions. | Tax is applied only on the earnings at the time of withdrawal. |
 
-These acronyms can look confusing, but the core idea is simple: you put [money](/en/posts/en-avoid-impulse-purchases) in, it grows, and later it turns into income.
+These acronyms can look confusing, but the core idea is simple: you put money in, it grows, and later it turns into income.
 
 ## How does private pension work in 2026?
 
@@ -37,10 +37,10 @@ In 2026 the landscape changed in three critical ways:
 ![Como funciona a previdência privada em 2026?](/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico-2.webp)
 
 1. **More competitive administration fees** – Competition among banks and insurers pushed the average fee from 2.5% a year down to about 1.8% for fixed‑income plans and 2.2% for equity‑linked plans.  
-2. **New index‑fund ([ETF](/en/glossario/en-etf)) options inside the plans** – Many managers now offer Brazilian and international equity ETFs as [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) choices, widening [diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel).  
+2. **New index‑fund ([ETF](/en/glossario/en-etf)) options inside the plans** – Many managers now offer Brazilian and international equity ETFs as investment choices, widening diversification.  
 3. **More transparent regulation** – The CVM (Securities Commission) now requires institutions to publish quarterly performance history and the “total cost to the investor,” making plan comparison easier.
 
-These changes don’t turn private pension into a *miracle* return, but they give investors more tools to judge whether a plan is worth it compared to other investment [alternatives](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).
+These changes don’t turn private pension into a *miracle* return, but they give investors more tools to judge whether a plan is worth it compared to other investment alternatives.
 
 ## Costs and fees you should watch
 
@@ -74,7 +74,7 @@ These numbers assume you **make no withdrawals** before retirement and that the 
 
 | Product | Avg. return 2025‑2026 | [Liquidity](/en/glossario/en-liquidez) | Costs | Best for |
 |--------|----------------------|-----------|-------|----------|
-| **Private pension (PGBL/VGBL)** | 6% – 7% per year (depending on the fund) | Low – only withdraw at retirement or in specific cases | Admin fees 1.5‑2.5% | Retirement [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas), tax benefit |
+| **Private pension (PGBL/VGBL)** | 6% – 7% per year (depending on the fund) | Low – only withdraw at retirement or in specific cases | Admin fees 1.5‑2.5% | Retirement planning, tax benefit |
 | **[CDB](/en/glossario/en-cdb) (Certificate of Deposit)** | 100% of CDI (≈ 5.5% per year) | Medium – withdrawal after 30 days | Near‑zero fees | Short‑to‑medium horizon investors |
 | **Tesouro [Selic](/en/glossario/en-selic)** | 100% of Selic rate (≈ 5.75% per year) | High – daily withdrawal | Custody fee ~0.2% per year | Conservative profile, emergency reserve |
 
@@ -99,12 +99,12 @@ The main advantage of private pension is the **tax benefit** (for PGBL) and the 
 1. **List your goals** – Define how much you want to accumulate by retirement and whether you need monthly income or a lump sum.  
 2. **Run simulations** – Use the calculator from [Tesouro Direto](https://www.tesourodireto.com.br) or your bank to compare PGBL/VGBL with CDB and Tesouro Selic.  
 3. **Check the fees** – Ask your broker or manager for a detailed breakdown of administration and performance fees.  
-4. **Build a contribution plan** – Choose a monthly amount that fits your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) (e.g., R$500, R$1,000 or R$5,000) and adjust if needed.  
+4. **Build a contribution plan** – Choose a monthly amount that fits your budget (e.g., R$500, R$1,000 or R$5,000) and adjust if needed.  
 5. **Monitor regularly** – Review your plan every 12 months, making sure the return aligns with your target and that fees remain competitive.
 
 Following these steps will give you clarity on whether private pension still makes sense for your financial future in 2026.
 
 ---
 
-**To keep all your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in one place, [try FinMoovi free for 7 days](https://finmoovi.com) — multi‑currency, smart reports and 100% offline.**
+**To keep all your investments in one place, [try FinMoovi free for 7 days](https://finmoovi.com) — multi‑currency, smart reports and 100% offline.**
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is [private pension](/en/glossario/en-previdencia-privada)?","acceptedAnswer":{"@type":"Answer","text":"Private pension, also called a complementary pension plan, works like a long‑term [savings](/en/posts/en-how-to-save-at-the-grocery-store-in-2026-real-tips) vehicle that you feed throughout your working life. The [money](/en/posts/en-creating-an-emergency-fund) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment."}},{"@type":"Question","name":"How does private pension work in 2026?","acceptedAnswer":{"@type":"Answer","text":"In 2026 the landscape changed in three critical ways:"}},{"@type":"Question","name":"Practical simulation – how much does it really earn?","acceptedAnswer":{"@type":"Answer","text":"Let’s assume three monthly contribution profiles: R$500, R$1,000 and R$5,000. We’ll use a fixed‑income fund with a 1.8% annual administration fee and an average return of 6.5% per year (roughly CDI + 0.5%)."}}]} -->

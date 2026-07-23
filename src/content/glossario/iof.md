@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é IOF?
 
-IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sobre diversas operações financeiras: empréstimos, [câmbio](/glossario/cambio), seguros e até [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) resgatados em menos de 30 dias.
+IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sobre diversas operações financeiras: empréstimos, [câmbio](/glossario/cambio), seguros e até investimentos resgatados em menos de 30 dias.
 
 ## Onde o IOF aparece
 
@@ -21,7 +21,7 @@ IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sob
 - Começa em 96% no dia 1 e vai a 0% no dia 30
 - Após 30 dias: isento de IOF
 
-### [Cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional
+### Cartão de crédito internacional
 
 - 4,38% sobre compras em [moeda](/glossario/moeda) estrangeira
 - Incide sobre o [valor](/glossario/valor) total da compra
@@ -31,18 +31,18 @@ IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sob
 - 0,38% fixo + 0,0082% ao dia sobre o valor
 - Cobrado no momento da contratação
 
-### Câmbio (compra de [dólar](/posts/cotacoes-semana-1-julho-2026)/euro)
+### Câmbio (compra de dólar/euro)
 
 - 1,1% para compra de moeda em espécie
 - 0,38% para transferências internacionais
 
 ## Dica prática
 
-Se você investiu em [CDB](/glossario/cdb) ou [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a [reserva de emergência](/glossario/reserva-de-emergencia).
+Se você investiu em [CDB](/glossario/cdb) ou Tesouro Selic, espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a [reserva de emergência](/glossario/reserva-de-emergencia).
 
 ## Tabela regressiva do IOF (investimentos)
 
-| Dias | IOF sobre [rendimento](/posts/montando-carteira-diversificada-com-r-500) |
+| Dias | IOF sobre rendimento |
 |------|---------------------|
 | 1 | 96% |
 | 5 | 83% |

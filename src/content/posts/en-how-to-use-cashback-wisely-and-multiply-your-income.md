@@ -28,14 +28,14 @@ Not every card offers the same return rate. Some give 1.5% on all purchases, oth
 
 ![Escolha o cartão certo e combine benefícios](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-2.webp)
 
-- **If your salary is between R$ 3,000 and R$ 5,000** and most [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) are food and transport, choose a card that offers 4% cashback at supermarkets and 2% at gas stations.  
+- **If your salary is between R$ 3,000 and R$ 5,000** and most expenses are food and transport, choose a card that offers 4% cashback at supermarkets and 2% at gas stations.  
 - **If you earn between R$ 6,000 and R$ 8,000**, it’s worth considering a premium card that returns 3% on all purchases, even if the annual fee is higher, because the spending volume compensates.
 
 **Practical tip:** before signing up, do a quick calculation of the annual fee versus the expected cashback. If the fee is R$ 120 per year, you need to generate at least R$ 4,000 in spending with a 3% return for the benefit to outweigh the cost.
 
-## Turn Cashback into “Reserve [Money](/en/posts/en-30-day-rule-for-purchases)”
+## Turn Cashback into “Reserve Money”
 
-Many people simply use the returned [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) to pay the card bill. That eliminates the immediate benefit and misses the chance to build a reserve. Keep the cashback in a separate account – it can be a checking account with automatic [yield](/en/glossario/en-yield) or a digital account that offers 100 % of the [CDI](/en/glossario/en-cdi).
+Many people simply use the returned credit to pay the card bill. That eliminates the immediate benefit and misses the chance to build a reserve. Keep the cashback in a separate account – it can be a checking account with automatic [yield](/en/glossario/en-yield) or a digital account that offers 100 % of the [CDI](/en/glossario/en-cdi).
 
 **Practical example:**  
 - Monthly salary: R$ 4,500.00  
@@ -46,7 +46,7 @@ By depositing those R$ 60 into a yielding account, you accumulate R$ 720 at 
 
 ## Use Cashback to “Pay Off Debt” Smartly
 
-If you have debts with interest above 10 % per year (like credit‑card revolving or [overdraft](/en/glossario/en-cheque-especial)), cashback can be an ally to reduce those charges. Each cent you get back has a lower opportunity cost than the debt interest, so applying cashback to amortize the debt generates real [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet).
+If you have debts with interest above 10 % per year (like credit‑card revolving or [overdraft](/en/glossario/en-cheque-especial)), cashback can be an ally to reduce those charges. Each cent you get back has a lower opportunity cost than the debt interest, so applying cashback to amortize the debt generates real savings.
 
 ![Use o cashback para “pagar dívidas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
 
@@ -62,11 +62,11 @@ To avoid missing these opportunities, make a habit of checking the card app ever
 
 ## Automate the Process and Track Results
 
-Discipline is what turns cashback from a one‑off detail into a profitable habit. Use a personal‑[finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) (like **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)**, which I recommend because it simplifies viewing all your accounts) to automatically record the amount received and where you sent it.
+Discipline is what turns cashback from a one‑off detail into a profitable habit. Use a personal‑finance app (like **FinMoovi**, which I recommend because it simplifies viewing all your accounts) to automatically record the amount received and where you sent it.
 
 ![Automatize o processo e acompanhe os resultados](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-6.webp)
 
-Besides making control easier, the app lets you generate monthly [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) such as:
+Besides making control easier, the app lets you generate monthly reports such as:
 
 - Total cashback received  
 - Cashback percentage relative to total spending  
@@ -77,7 +77,7 @@ These numbers give you clarity to adjust the strategy over time.
 
 ## Start Today
 
-The first action doesn’t need to be complex: choose a card that offers the best cashback for your spending pattern, open a separate account to receive the [money](/en/posts/en-avoid-impulse-purchases) back, and record everything in your [finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) app. In less than 30 days you’ll already see the difference in your [budget](/en/posts/en-how-to-create-personal-budget).
+The first action doesn’t need to be complex: choose a card that offers the best cashback for your spending pattern, open a separate account to receive the money back, and record everything in your finance app. In less than 30 days you’ll already see the difference in your budget.
 
 ---
-**The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover where your [money](/en/posts/en-creating-an-emergency-fund) is really going.**
+**The next step is yours. [Try FinMoovi free for 7 days](https://finmoovi.com) and discover where your money is really going.**

@@ -48,7 +48,7 @@ Here are the steps to organize the [budget](/en/posts/en-how-to-create-personal-
 1. **List all expenses**: Include all fixed and variable expenses.
 2. **Define the proportion**: Calculate the proportion of salaries to divide expenses.
 3. **Assign values**: Assign the corresponding value to each expense based on the defined proportion.
-4. **Review and adjust**: Review the [budget](/en/posts/en-how-to-create-personal-budget) regularly and adjust as necessary.
+4. **Review and adjust**: Review the budget regularly and adjust as necessary.
 
 **Practical tip:** It's essential to have a reserve for unexpected expenses. A good rule is to reserve between 10% and 20% of the total [budget](/en/posts/en-organize-couple-finances) for emergencies.
 
@@ -60,7 +60,7 @@ Here are the steps to organize the [budget](/en/posts/en-how-to-create-personal-
 To keep finances in order, it's crucial to have a control system. This can include using electronic spreadsheets or [financial apps](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos). The [Banco Central do Brasil](https://www.bcb.gov.br) offers valuable information on [financial management](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) and planning.
 
 ## Start with 5 minutes a day
-To keep the [budget](/en/posts/en-how-to-create-personal-budget) under control, dedicate a few minutes each day to review expenses and update the [budget](/en/posts/en-how-to-create-personal-budget). This can be done during breakfast or before bed. Remember that the key to success is consistency and communication between partners. Visit the [Receita Federal](https://www.gov.br/receitafederal) website for more information on [financial planning](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) and taxation.
+To keep the budget under control, dedicate a few minutes each day to review expenses and update the budget. This can be done during breakfast or before bed. Remember that the key to success is consistency and communication between partners. Visit the [Receita Federal](https://www.gov.br/receitafederal) website for more information on [financial planning](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) and taxation.
 
 ![Gerenciando as Finanças](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
 
@@ -68,4 +68,4 @@ To keep the [budget](/en/posts/en-how-to-create-personal-budget) under control, 
 
 ---
 
-**Want to automate this control? [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro).com) — it automatically categorizes expenses and generates [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) without effort.**
+**Want to automate this control? Test [FinMoovi for free for 7 days](https://finmoovi.com) — it automatically categorizes expenses and generates reports without effort.**

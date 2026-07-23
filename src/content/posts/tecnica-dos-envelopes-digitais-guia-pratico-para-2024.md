@@ -42,7 +42,7 @@ A ideia dos envelopes digitais é a mesma dos envelopes de papel que você coloc
 | Salário Mensal | Alimentação (30%) | Transporte (10%) | Moradia (30%) | Lazer (10%) | Reserva Emergência (20%) |
 |----------------|-------------------|------------------|---------------|-------------|--------------------------|
 | R$2.000        | R$600             | R$200            | R$600         | R$200       | R$400                    |
-| R$5.000        | R$1.500           | [R$500](/posts/montando-carteira-diversificada-com-r-500)            | R$1.500       | R$500       | R$1.000                  |
+| R$5.000        | R$1.500           | R$500            | R$1.500       | R$500       | R$1.000                  |
 | R$8.000        | R$2.400           | R$800            | R$2.400       | R$800       | R$1.600                  |
 
 **Dica prática:** Se o seu salário varia (autônomo ou freelancer), use a média dos últimos três meses como base e ajuste os limites a cada pagamento.
@@ -53,11 +53,11 @@ Depois de receber o salário, siga este passo‑a‑passo:
 
 1. **Abra o app e registre a entrada total** – Por exemplo, R$5.000.
 2. **Distribua o valor** – Clique em cada envelope e insira o limite que definiu na tabela. O app mostrará o saldo restante (deve ser zero).
-3. **Reserve o [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) imediatamente** – Se o app permite “bloquear” ou “marcar como guardado”, faça isso. Assim, você não gastará o que deveria ficar na reserva de emergência.
+3. **Reserve o dinheiro imediatamente** – Se o app permite “bloquear” ou “marcar como guardado”, faça isso. Assim, você não gastará o que deveria ficar na reserva de emergência.
 
-Esse processo leva menos de 5 minutos e já deixa seu [orçamento](/posts/como-criar-orcamento-pessoal) “pronto para usar”.
+Esse processo leva menos de 5 minutos e já deixa seu orçamento “pronto para usar”.
 
-## Monitorar e ajustar [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
+## Monitorar e ajustar gastos
 
 1. **Registre cada despesa** – Seja no celular, no computador ou até falando com assistente de voz.
 2. **Verifique o saldo** – Quando um envelope ficar próximo de zero, o app enviará notificação.
@@ -69,13 +69,13 @@ Esse processo leva menos de 5 minutos e já deixa seu [orçamento](/posts/como-c
 
 Para quem tem salário de R$2.000, a margem de erro é pequena; já quem ganha R$8.000 pode fazer ajustes mensais mais flexíveis.
 
-> **Importante:** Consulte fontes oficiais como o [Banco Central do Brasil](https://www.bcb.gov.br) para entender limites de [juros](/glossario/juros) e tarifas que podem impactar seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas).
+> **Importante:** Consulte fontes oficiais como o [Banco Central do Brasil](https://www.bcb.gov.br) para entender limites de [juros](/glossario/juros) e tarifas que podem impactar seu orçamento.
 
 ## Revisar resultados mensalmente
 
 1. **Abra o relatório mensal** – A maioria dos apps gera gráficos de pizza ou barras que mostram a distribuição real dos gastos.
 2. **Compare com o planejado** – Identifique categorias que ficaram acima do esperado.
-3. **Planeje a próxima rodada** – Se o envelope de alimentação ficou 15 % acima, considere reduzir a alocação ou buscar [alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) (feiras livres, compras em atacado).
+3. **Planeje a próxima rodada** – Se o envelope de alimentação ficou 15 % acima, considere reduzir a alocação ou buscar alternativas (feiras livres, compras em atacado).
 
 Esse hábito de revisão transforma o controle em aprendizado contínuo, evitando que pequenas falhas se tornem grandes dívidas.
 
@@ -83,7 +83,7 @@ Esse hábito de revisão transforma o controle em aprendizado contínuo, evitand
 
 1. **Manhã:** ao abrir o app, dê uma olhada rápida nos saldos dos envelopes. Se algum está quase zerado, anote um lembrete para evitar compras impulsivas.
 2. **Durante o dia:** registre cada gasto assim que acontecer. Use a câmera do celular para capturar o comprovante e o app faz a classificação automática.
-3. **No fim do dia:** reserve 2 minutos para conferir se algum envelope ficou negativo. Se estiver, ajuste imediatamente – transfira [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) de outra categoria ou registre a despesa como “extra”.
+3. **No fim do dia:** reserve 2 minutos para conferir se algum envelope ficou negativo. Se estiver, ajuste imediatamente – transfira dinheiro de outra categoria ou registre a despesa como “extra”.
 
 ![Comece com 5 minutos por dia](/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024-6.webp)
 

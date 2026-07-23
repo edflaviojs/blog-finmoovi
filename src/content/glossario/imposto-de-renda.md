@@ -55,9 +55,9 @@ Existem também riscos associados ao imposto de renda, como:
 ## Exemplos práticos
 Vamos considerar alguns exemplos práticos:
 * Se você ganha R$ 3.500 por mês e tem uma despesa mensal de R$ 1.000 com saúde, você pode deduzir essa despesa do seu imposto de renda
-* Se você investe R$ 1.000 por mês em um fundo de [investimento](/posts/montando-carteira-diversificada-com-r-500), você pode deduzir os juros e dividendos recebidos do seu imposto de renda
+* Se você investe R$ 1.000 por mês em um fundo de investimento, você pode deduzir os juros e dividendos recebidos do seu imposto de renda
 * Se você tem um salário de R$ 6.000 por mês e uma renda adicional de R$ 1.000 por mês com aluguel, você deve declarar ambas as rendas no seu imposto de renda
 
 ## Comece hoje
-Agora que você entende melhor o imposto de renda, é hora de começar a gerenciar sua renda e reduzir sua carga tributária. **Dica prática:** comece a organizar seus comprovantes de renda e despesas e utilize um aplicativo de [gestão financeira](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) para ter controle sobre suas finanças. Lembre-se de que o imposto de renda é uma parte importante da sua [gestão financeira](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) e que, com as [dicas](/posts/7-erros-financeiros-iniciante) práticas certas, você pode reduzir sua carga tributária e aumentar sua renda líquida. Comece hoje a gerenciar seu imposto de renda e a construir um futuro financeiro mais seguro!
+Agora que você entende melhor o imposto de renda, é hora de começar a gerenciar sua renda e reduzir sua carga tributária. **Dica prática:** comece a organizar seus comprovantes de renda e despesas e utilize um aplicativo de gestão financeira para ter controle sobre suas finanças. Lembre-se de que o imposto de renda é uma parte importante da sua gestão financeira e que, com as dicas práticas certas, você pode reduzir sua carga tributária e aumentar sua renda líquida. Comece hoje a gerenciar seu imposto de renda e a construir um futuro financeiro mais seguro!
 

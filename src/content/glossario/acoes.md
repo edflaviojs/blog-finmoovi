@@ -21,7 +21,7 @@ seo:
 Ações são partes de propriedade de uma empresa que podem ser compradas e vendidas por investidores. Quando você compra uma ação, você está basicamente comprando uma pequena parte daquela empresa. Isso significa que, se a empresa cresce e se torna mais valiosa, o [valor](/glossario/valor) da sua ação também aumenta. Por exemplo, imagine que você comprou uma ação da empresa XYZ por R$ 50 e, após um ano, a empresa lança um novo produto que se torna um sucesso, fazendo com que o valor da ação suba para R$ 75. Você poderia vender sua ação por R$ 75 e ter um lucro de R$ 25.
 
  
-As ações são negociadas em bolsas de valores, como a B3 no Brasil, e podem ser compradas e vendidas por meio de corretoras de valores. É importante entender que as ações são um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) de risco, o que significa que há a possibilidade de perder [dinheiro](/posts/cashback-inteligente) se a empresa não se sair bem.
+As ações são negociadas em bolsas de valores, como a B3 no Brasil, e podem ser compradas e vendidas por meio de corretoras de valores. É importante entender que as ações são um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) de risco, o que significa que há a possibilidade de perder dinheiro se a empresa não se sair bem.
 
 ![O que é](/images/glossario/acoes-inline-1.webp)
 
@@ -35,7 +35,7 @@ Quando você compra uma ação, você está comprando uma parte daquela empresa 
 
 ## Vantagens
 As ações oferecem várias vantagens para os investidores, incluindo:
-* Potencial de alto retorno: as ações têm o potencial de oferecer retornos mais altos do que outros [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), como títulos ou contas [poupança](/glossario/poupanca).
+* Potencial de alto retorno: as ações têm o potencial de oferecer retornos mais altos do que outros investimentos, como títulos ou contas [poupança](/glossario/poupanca).
 * [Liquidez](/glossario/liquidez): as ações podem ser facilmente compradas e vendidas em bolsas de valores.
 * [Diversificação](/glossario/diversificacao): as ações permitem que os investidores diversifiquem seus portfólios, reduzindo o risco de perda.
 
@@ -47,7 +47,7 @@ As ações oferecem várias vantagens para os investidores, incluindo:
 
 ## Riscos
 No entanto, as ações também envolvem riscos, incluindo:
-* Risco de perda: o valor das ações pode cair, resultando em perda de [dinheiro](/posts/como-criar-uma-reserva-de-emergencia).
+* Risco de perda: o valor das ações pode cair, resultando em perda de dinheiro.
 * Risco de liquidez: em alguns casos, pode ser difícil vender ações rapidamente o suficiente ou pelo preço desejado.
 * Risco de empresa: a empresa pode ter problemas financeiros ou operacionais que afetem o valor de suas ações.
 
@@ -61,5 +61,5 @@ Vamos considerar um exemplo. Imagine que você tem um salário de R$ 5.000 por m
 **Dica prática:** _É importante monitorar regularmente o desempenho de suas ações e ajustar seu portfólio conforme necessário. Isso pode envolver vender ações que não estão se saindo bem e comprar novas ações que têm potencial de crescimento._
 
 ## Comece hoje
-Agora que você entende melhor o que são ações e como elas funcionam, é hora de começar a investir. Lembre-se de que investir em ações é uma jornada de longo prazo e que é importante ser paciente e disciplinado. Com as **[dicas](/posts/7-erros-financeiros-iniciante) práticas** certas e um pouco de conhecimento, você pode começar a construir sua riqueza e alcançar seus objetivos financeiros. Então, não espere mais! Comece a investir em ações hoje e veja seu [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) crescer ao longo do tempo.
+Agora que você entende melhor o que são ações e como elas funcionam, é hora de começar a investir. Lembre-se de que investir em ações é uma jornada de longo prazo e que é importante ser paciente e disciplinado. Com as **dicas práticas** certas e um pouco de conhecimento, você pode começar a construir sua riqueza e alcançar seus objetivos financeiros. Então, não espere mais! Comece a investir em ações hoje e veja seu dinheiro crescer ao longo do tempo.
 

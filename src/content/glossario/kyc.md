@@ -31,13 +31,13 @@ O processo de KYC geralmente começa quando um cliente abre uma conta em uma ins
 * Documentos de identificação, como RG e CPF
 * Comprovante de residência, como conta de água ou luz
 * Informações sobre a fonte de renda, como contracheque ou declaração de [imposto de renda](/glossario/imposto-de-renda)
-* Outras informações relevantes, como histórico de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) ou relatórios de agências de crédito
+* Outras informações relevantes, como histórico de crédito ou relatórios de agências de crédito
 
-As instituições financeiras utilizam essas informações para verificar a identidade do cliente e avaliar o risco de lavagem de [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) ou financiamento do terrorismo. Se o cliente for considerado de alto risco, a instituição financeira pode solicitar mais informações ou até mesmo recusar a abertura da conta.
+As instituições financeiras utilizam essas informações para verificar a identidade do cliente e avaliar o risco de lavagem de dinheiro ou financiamento do terrorismo. Se o cliente for considerado de alto risco, a instituição financeira pode solicitar mais informações ou até mesmo recusar a abertura da conta.
 
 ## Vantagens
 O KYC oferece várias vantagens para os clientes e as instituições financeiras. Algumas das principais vantagens incluem:
-* **Redução do risco de lavagem de [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) e financiamento do terrorismo**: O KYC ajuda a identificar e prevenir atividades ilegais, protegendo os clientes e as instituições financeiras contra perdas financeiras e danos à reputação.
+* **Redução do risco de lavagem de dinheiro e financiamento do terrorismo**: O KYC ajuda a identificar e prevenir atividades ilegais, protegendo os clientes e as instituições financeiras contra perdas financeiras e danos à reputação.
 * **Melhoria da segurança**: O KYC ajuda a garantir que as contas sejam abertas apenas por pessoas legítimas, reduzindo o risco de fraudes e atividades ilegais.
 * **Conformidade com regulamentações**: O KYC ajuda as instituições financeiras a cumprir com as regulamentações AML e CFT, evitando multas e penalidades.
 
@@ -45,7 +45,7 @@ O KYC oferece várias vantagens para os clientes e as instituições financeiras
 Embora o KYC ofereça várias vantagens, também há alguns riscos associados a esse processo. Alguns dos principais riscos incluem:
 * **Inconveniência para os clientes**: O processo de KYC pode ser demorado e burocrático, o que pode ser frustrante para os clientes que precisam abrir uma conta rapidamente.
 * **Custo para as instituições financeiras**: O KYC pode ser um processo caro para as instituições financeiras, especialmente se elas precisam investir em tecnologia e treinamento para cumprir com as regulamentações.
-* **Risco de erro**: Se o processo de KYC não for realizado corretamente, as instituições financeiras podem estar sujeitas a riscos de lavagem de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) e financiamento do terrorismo.
+* **Risco de erro**: Se o processo de KYC não for realizado corretamente, as instituições financeiras podem estar sujeitas a riscos de lavagem de dinheiro e financiamento do terrorismo.
 
 ![Vantagens](/images/glossario/kyc-inline-3.webp)
 

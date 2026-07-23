@@ -67,7 +67,7 @@ Vamos a lo que realmente importa: cómo poner manos a la obra y volver a tener t
 | **Tiempo dedicado a registrar**| 30‑45 min por semana (anotaciones manuales, hojas de cálculo) | 5‑10 min por semana (captura por voz + OCR)                     |
 | **Visibilidad de los gastos** | Poca o nula (dependiente de la memoria)                     | 100 % de los gastos categorizados y visualizados en tiempo real |
 | **Identificación de fugas**    | Rara – solo se percibe cuando el saldo ya está bajo          | Inmediata – alertas de gastos inesperados y recurrentes        |
-| **Estrés financiero**          | Alto – ansiedad al ver el saldo “desaparecer”                | Bajo – sensación de control y planificación clara              |
+| **Estrés [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)**          | Alto – ansiedad al ver el saldo “desaparecer”                | Bajo – sensación de control y [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) clara              |
 | **Decisiones de ahorro**       | Basadas en suposiciones o “intuición”                         | Datos concretos – ajuste de límites por categoría               |
 | **Planificación de metas**     | Difícil – falta de datos confiables                           | Fácil – metas de ahorro y fondo de emergencia con base real    |
 
@@ -76,7 +76,7 @@ Estos cambios no son solo números; son transformaciones en la vida cotidiana. A
 ## Datos que refuerzan la importancia de la visualización
 
 - **Banco Central de Brasil** indica que la tasa de endeudamiento de las familias brasileñas alcanzó el 71,2 % en 2023, uno de los índices más altos de América Latina. (Fuente: [Banco Central](https://www.bcb.gov.br))  
-- **Instituto Brasileño de Geografía y Estadística (IBGE)** reveló que el 22 % de las familias tiene dificultad para pagar sus cuentas mensuales, a menudo por falta de control de gastos. (Fuente: [IBGE](https://www.ibge.gov.br))
+- **Instituto Brasileño de Geografía y Estadística (IBGE)** reveló que el 22 % de las familias tiene dificultad para pagar sus cuentas mensuales, a menudo por falta de [control de gastos](/es/posts/es-7-alternativas-a-planilha-google-para-financas-guia-atualiza). (Fuente: [IBGE](https://www.ibge.gov.br))
 
 ![Datos que refuerzan la importancia de la visualización](/images/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim-6.webp)
 

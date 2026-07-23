@@ -44,7 +44,7 @@ Invertir en acciones tiene varios atractivos que la hacen popular entre quienes 
 
 
 
-- **Potencial de alta rentabilidad:** Históricamente, las acciones han generado retornos superiores a los de la mayoría de los instrumentos de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) tradicionales.
+- **Potencial de alta rentabilidad:** Históricamente, las acciones han generado retornos superiores a los de la mayoría de los instrumentos de ahorro tradicionales.
 - **Diversificación:** Puedes repartir tu inversión en diferentes empresas y sectores, reduciendo el riesgo global.
 - **[Liquidez](/es/glossario/es-liquidez):** La mayoría de las acciones se pueden vender rápidamente en la bolsa, lo que te permite acceder a tu dinero cuando lo necesites.
 - **Participación en el éxito:** Si la empresa crece, el [valor](/es/glossario/es-valor) de tus acciones también lo hace, y puedes recibir dividendos como ingreso extra.
@@ -74,7 +74,7 @@ Dar el primer paso es más fácil de lo que parece. Solo necesitas seguir una se
 
 - **Abre una cuenta en una corredora confiable:** Busca una que ofrezca una app amigable, comisiones bajas y buen soporte al cliente. La mayoría permite abrir la cuenta en línea con solo tu CPF y una foto del documento.
 - **Define tu objetivo y horizonte de inversión:** Decide si buscas crecimiento a largo plazo (5 – 10 años) o ingresos más inmediatos mediante dividendos.
-- **Establece un [presupuesto](/es/posts/es-5-alternativas-ao-mobills-em-2026) mensual:** **Consejo práctico:** Destina entre el 5 % y el 15 % de tu salario a la inversión en acciones; por ejemplo, con un salario de R$6.000, podrías comenzar con R$300 al mes.
+- **Establece un presupuesto mensual:** **Consejo práctico:** Destina entre el 5 % y el 15 % de tu salario a la inversión en acciones; por ejemplo, con un salario de R$6.000, podrías comenzar con R$300 al mes.
 - **Elige empresas o fondos:** Investiga sectores que conozcas (tecnología, consumo, energía) y revisa sus resultados financieros. **Consejo práctico:** Empieza con empresas que paguen dividendos regulares para obtener ingresos mientras esperas la apreciación del precio.
 - **Realiza tu primera compra:** Usa la app de la corredora para colocar una orden de mercado (compra al precio actual) o una orden límite (establece el precio máximo que estás dispuesto a pagar). **Consejo práctico:** Compra en pequeñas cantidades al principio para familiarizarte con la volatilidad sin arriesgar demasiado capital.
 - **Monitorea y ajusta:** Revisa tu cartera cada trimestre, evalúa el desempeño y decide si reinviertes los dividendos o los utilizas para nuevas compras.

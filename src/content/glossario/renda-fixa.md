@@ -20,7 +20,7 @@ seo:
 
 ## O que é
 
-Renda fixa é um conjunto de investimentos em que você já sabe, antes de aplicar, qual será a forma de remuneração e, geralmente, quando receberá o [dinheiro](/posts/cashback-inteligente) de volta. Diferente da bolsa de ações, onde o retorno depende do desempenho das empresas, na renda fixa o pagamento pode ser um juros pré‑definido (como em um CDB) ou atrelado a um índice (como o IPCA). Por isso, ela costuma ser a primeira escolha de quem quer segurança e previsibilidade no bolso.
+Renda fixa é um conjunto de investimentos em que você já sabe, antes de aplicar, qual será a forma de remuneração e, geralmente, quando receberá o dinheiro de volta. Diferente da bolsa de ações, onde o retorno depende do desempenho das empresas, na renda fixa o pagamento pode ser um juros pré‑definido (como em um CDB) ou atrelado a um índice (como o IPCA). Por isso, ela costuma ser a primeira escolha de quem quer segurança e previsibilidade no bolso.
 
 ![O que é](/images/glossario/renda-fixa-inline-1.webp)
 
@@ -28,7 +28,7 @@ Renda fixa é um conjunto de investimentos em que você já sabe, antes de aplic
 
 ## Como funciona
 
-Quando você compra um título de renda fixa, está emprestando [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) para quem emite o título – bancos, governo ou empresas – e, em troca, recebe o pagamento de juros. O fluxo básico funciona assim:
+Quando você compra um título de renda fixa, está emprestando dinheiro para quem emite o título – bancos, governo ou empresas – e, em troca, recebe o pagamento de juros. O fluxo básico funciona assim:
 
 - **Emissão:** O emissor cria o título e define a taxa de juros (pré‑fixada, pós‑fixada ou híbrida) e o prazo de vencimento.
 - **Compra:** Você adquire o título pelo preço de face ou por um valor de mercado, que pode ser maior ou menor dependendo da taxa oferecida.
@@ -39,7 +39,7 @@ Esses passos são válidos tanto para um CDB (Certificado de Depósito Bancário
 
 ## Vantagens
 
-A renda fixa traz benefícios que combinam bem com quem tem salário entre R$3.000 e R$8.000 e quer fazer o [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) trabalhar sem surpresas:
+A renda fixa traz benefícios que combinam bem com quem tem salário entre R$3.000 e R$8.000 e quer fazer o dinheiro trabalhar sem surpresas:
 
 ![Vantagens](/images/glossario/renda-fixa-inline-3.webp)
 
@@ -48,7 +48,7 @@ A renda fixa traz benefícios que combinam bem com quem tem salário entre R$3.0
 - **Previsibilidade:** Você sabe quanto vai receber ao final do investimento, o que facilita o planejamento de despesas mensais.
 - **Baixo risco:** A maioria dos títulos tem garantia do FGC ou do governo, reduzindo a chance de perda total.
 - **Liquidez variável:** Alguns títulos permitem resgate antecipado (como CDBs com liquidez diária), enquanto outros têm prazos mais longos, mas ainda assim costumam ter mercado secundário.
-- **[Diversificação](/glossario/diversificacao):** Mesmo quem tem apenas a poupança pode melhorar a carteira ao incluir CDBs, LCIs (Letras de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário) ou [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
+- **[Diversificação](/glossario/diversificacao):** Mesmo quem tem apenas a poupança pode melhorar a carteira ao incluir CDBs, LCIs (Letras de Crédito Imobiliário) ou Tesouro Selic.
 
 ## Riscos
 
@@ -80,7 +80,7 @@ Iniciar na renda fixa não precisa ser complicado. Siga estes passos simples:
 - **Abra uma conta em uma corretora:** Escolha uma que ofereça plataforma amigável e taxa zero para Tesouro Direto.
 - **Defina o objetivo:** Reserve um valor para emergência, para a aposentadoria ou para a compra de um bem.
 - **Escolha o título:** Avalie prazo, taxa (pré‑fixada, pós‑fixada ou híbrida) e garantia (FGC ou governo).
-- **Faça a [aplicação](/glossario/aplicacao):** Use o app da corretora, informe o valor e confirme a operação. O [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) já fica aplicado em poucos minutos.
+- **Faça a [aplicação](/glossario/aplicacao):** Use o app da corretora, informe o valor e confirme a operação. O dinheiro já fica aplicado em poucos minutos.
 - **Acompanhe o rendimento:** Verifique periodicamente o extrato e ajuste a estratégia se a taxa Selic mudar ou se surgir um objetivo diferente.
 
 ## Comece hoje

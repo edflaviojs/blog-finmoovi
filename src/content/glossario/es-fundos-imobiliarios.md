@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué son los [Fondos Inmobiliarios](/es/posts/es-fundos-imobiliarios-para-iniciantes-guia-completo) (FIIs)?
+## ¿Qué son los Fondos Inmobiliarios (FIIs)?
 
 Los Fondos Inmobiliarios son como "condominios de inversores" que juntan [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) para comprar inmuebles (centros comerciales, almacenes, oficinas) o títulos del sector inmobiliario. Usted compra cuotas en la bolsa y recibe alquileres mensuales.
 
@@ -23,7 +23,7 @@ Los Fondos Inmobiliarios son como "condominios de inversores" que juntan [dinero
 ## Ventajas
 
 - Renta mensual exenta de impuesto
-- Invertir en inmuebles con poco [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) (a partir de R$ 10)
+- [Invertir en inmuebles](/es/posts/es-fundos-imobiliarios-para-iniciantes-guia-completo) con poco [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) (a partir de R$ 10)
 - [Diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) (un fondo puede tener varios inmuebles)
 - [Liquidez](/es/glossario/es-liquidez) (vende en el momento en la bolsa)
 - No necesita lidiar con inquilinos

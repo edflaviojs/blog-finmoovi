@@ -44,7 +44,7 @@ Depende de quanto você poupa:
 1. Calcule seus gastos mensais reais
 2. Defina seu "número" (gastos × 25)
 3. Aumente sua taxa de poupança
-4. Invista consistentemente (aportes mensais)
+4. Invista consistentemente ([aportes mensais](/ferramentas/simulador-investimento))
 5. Reinvista todos os rendimentos
 6. Aumente a renda (promoções, renda extra)
 7. Acompanhe o progresso mensalmente

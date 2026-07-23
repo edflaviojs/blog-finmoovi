@@ -24,11 +24,11 @@ The reserve needs to have **daily [liquidity](/en/glossario/en-liquidez)** (imme
 - [CDB](/en/glossario/en-cdb) with daily liquidity (100% [CDI](/en/glossario/en-cdi) or more)
 - Remunerated account
 
-**Never** leave it in stocks, [real estate funds](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo), or [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) with a redemption deadline.
+**Never** leave it in stocks, real estate funds, or investments with a redemption deadline.
 
 ## How to build it?
 
 1. Define the target value (3-6 months of expenses)
-2. Set aside a fixed amount every month (10-20% of [income](/en/posts/en-montando-carteira-diversificada-com-r-500))
+2. Set aside a fixed amount every month (10-20% of income)
 3. Automate the transfer
 4. Don't touch it until you reach the target value

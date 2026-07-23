@@ -19,7 +19,7 @@ seo:
 ---
 
 ## O que é
-O termo "zero coupon" refere-se a um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) em títulos que não paga [juros](/glossario/juros) periódicos, ou seja, não há cupons de juros. Em vez disso, o investidor recebe o valor total do [investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico), incluindo o principal e os juros, no vencimento do título. Isso significa que o investidor não recebe pagamentos regulares, mas sim um pagamento único no final do período de [investimento](/posts/tesouro-direto-para-iniciantes).
+O termo "zero coupon" refere-se a um tipo de investimento em títulos que não paga [juros](/glossario/juros) periódicos, ou seja, não há cupons de juros. Em vez disso, o investidor recebe o valor total do investimento, incluindo o principal e os juros, no vencimento do título. Isso significa que o investidor não recebe pagamentos regulares, mas sim um pagamento único no final do período de investimento.
 
  
 O conceito de zero coupon pode parecer um pouco estranho, mas é importante entender que esses títulos são emitidos por empresas ou governos para levantar capital. Eles são uma forma de [financiamento](/glossario/financiamento) que pode ser atraente para investidores que buscam uma rentabilidade mais alta em um período mais longo.
@@ -38,11 +38,11 @@ Um título zero coupon é emitido com um desconto em relação ao seu valor nomi
 As principais vantagens dos títulos zero coupon são:
 * Rentabilidade mais alta em um período mais longo
 * Não há pagamentos periódicos, o que pode ser atraente para investidores que buscam uma rentabilidade mais alta em um período mais longo
-* Os títulos zero coupon podem ser uma forma de diversificar um portfólio de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+* Os títulos zero coupon podem ser uma forma de diversificar um portfólio de investimentos
 * Eles podem ser uma opção para investidores que buscam uma rentabilidade mais estável em um período mais longo
 
  
-**Dica prática:** É importante diversificar o portfólio de [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) para minimizar os riscos. Isso pode incluir a combinação de títulos zero coupon com outros tipos de investimentos, como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de investimento.
+**Dica prática:** É importante diversificar o portfólio de investimentos para minimizar os riscos. Isso pode incluir a combinação de títulos zero coupon com outros tipos de investimentos, como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de investimento.
 
 ![Vantagens](/images/glossario/zero-coupon-inline-3.webp)
 
@@ -50,7 +50,7 @@ As principais vantagens dos títulos zero coupon são:
 
 ## Riscos
 Os principais riscos dos títulos zero coupon são:
-* Risco de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-): o risco de que o emissor do título não pague o valor nominal no vencimento
+* Risco de crédito: o risco de que o emissor do título não pague o valor nominal no vencimento
 * Risco de [liquidez](/glossario/liquidez): o risco de que o investidor não possa vender o título antes do vencimento
 * Risco de taxa de juros: o risco de que a taxa de juros do mercado aumente, reduzindo o valor do título
 * Risco de [inflação](/glossario/inflacao): o risco de que a inflação aumente, reduzindo o valor real do investimento

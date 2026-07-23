@@ -15,12 +15,12 @@ A reserva de emergência é um colchão financeiro que protege você de imprevis
 
 ## Quanto guardar?
 
-A recomendação é ter entre **3 a 6 meses** dos seus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) mensais. Se você gasta R$ 3.000/mês, sua reserva ideal é entre R$ 9.000 e R$ 18.000.
+A recomendação é ter entre **3 a 6 meses** dos seus gastos mensais. Se você gasta R$ 3.000/mês, sua reserva ideal é entre R$ 9.000 e R$ 18.000.
 
 ## Onde deixar?
 
 A reserva precisa ter **[liquidez](/es/glossario/es-liquidez) diária** (acesso imediato):
-- [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+- Tesouro Selic
 - [CDB](/es/glossario/es-cdb) com liquidez diária (100% [CDI](/es/glossario/es-cdi) ou mais)
 - Conta remunerada
 

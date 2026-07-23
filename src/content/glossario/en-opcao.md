@@ -53,7 +53,7 @@ As opções trazem flexibilidade e podem ser usadas tanto para proteger investim
 - **Renda extra:** ao vender opções, você recebe o prêmio como renda adicional.  
 - **[Diversificação](/en/glossario/en-diversificacao):** abre possibilidades de estratégias que não existem em investimentos tradicionais.
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Risks
 
 Apesar das vantagens, as opções carregam riscos que não podem ser ignorados.  
 

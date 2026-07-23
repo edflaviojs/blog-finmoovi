@@ -37,4 +37,4 @@ Foreign Exchange is the exchange of one currency for another. When you buy dolla
 
 ## Foreign Exchange and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-Investing in [dollar](/en/posts/en-quotes-semana-1-june-2026)-denominated assets (international ETFs, BDRs) is a way to protect yourself from the devaluation of the real. When the dollar rises, your international [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) appreciate in reals.
+Investing in [dollar](/en/posts/en-quotes-semana-1-june-2026)-denominated assets (international ETFs, BDRs) is a way to protect yourself from the devaluation of the real. When the dollar rises, your international investments appreciate in reals.

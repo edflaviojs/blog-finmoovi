@@ -31,7 +31,7 @@ Además, la mayoría de las hojas no ofrece **seguridad** robusta (cualquier per
 ## 1. [Mobills](/es/posts/es-5-alternativas-ao-mobills-em-2026) – El clásico brasileño
 
 **Descripción**  
-Mobills es uno de los aplicativos más antiguos de Brasil para gestión de [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). En dos frases, ofrece [control de gastos](/es/posts/es-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-), [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) de [presupuesto](/es/posts/es-como-crear-presupuesto-personal) y visualización de metas, todo en una interfaz colorida e intuitiva.
+Mobills es uno de los aplicativos más antiguos de Brasil para gestión de [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). En dos frases, ofrece control de gastos, planificación de presupuesto y visualización de metas, todo en una interfaz colorida e intuitiva.
 
 ![1. Mobills – O clássico brasileiro](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-2.webp)
 
@@ -49,10 +49,10 @@ Gratuito (con anuncios) – Plan Premium a partir de R$ 14,90/mes.
 
 ---
 
-## 2. [FinMoovi](/es/posts/es-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) – El nuevo competidor multifuncional
+## 2. FinMoovi – El nuevo competidor multifuncional
 
 **Descripción**  
-[FinMoovi](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) llega al mercado como una app “todo-en-uno” que combina [control de gastos](/es/posts/es-metodo-50-30-20-para-orcamento), [presupuesto](/es/posts/es-organizar-finanzas-pareja) y además permite operar en varias monedas. En dos frases, destaca **captura inteligente por voz**, **[categorización automática](/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) con IA** y **funcionamiento offline**, ideal para quien no quiere depender de internet todo el tiempo.
+FinMoovi llega al mercado como una app “todo-en-uno” que combina control de gastos, presupuesto y además permite operar en varias monedas. En dos frases, destaca **captura inteligente por voz**, **categorización automática con IA** y **funcionamiento offline**, ideal para quien no quiere depender de internet todo el tiempo.
 
 **Pros**
 - **Multi‑moneda:** convierte automáticamente valores en dólares, euros o reales, usando tasas actualizadas del Banco Central.
@@ -61,14 +61,14 @@ Gratuito (con anuncios) – Plan Premium a partir de R$ 14,90/mes.
 
 **Contras**
 - La IA aún puede equivocarse en categorías muy específicas, requiriendo revisión manual ocasional.
-- La versión completa (sin anuncios) tiene costo mensual que puede ser alto para quien tiene [presupuesto](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) ajustado.
+- La versión completa (sin anuncios) tiene costo mensual que puede ser alto para quien tiene presupuesto ajustado.
 
 **Precio**  
 Versión básica gratuita (con anuncios) – Versión Pro a R$ 19,90/mes o R$ 199,90/año.
 
 ---
 
-## 3. [Organizze](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) – La app enfocada en negocios y freelancers
+## 3. Organizze – La app enfocada en negocios y freelancers
 
 **Descripción**  
 Organizze fue creado inicialmente para pequeños emprendedores, pero su interfaz amigable también atiende al usuario doméstico. Permite control de caja, flujo de caja y emisión de informes fiscales en pocos clics.
@@ -78,7 +78,7 @@ Organizze fue creado inicialmente para pequeños emprendedores, pero su interfaz
 **Pros**
 - Herramientas de flujo de caja que ayudan a visualizar ingresos y gastos en ciclos mensuales.
 - Exportación de informes en formatos compatibles con contabilidad (CSV, XLS).
-- Soporte a tarjetas de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) y débito con conciliación automática.
+- Soporte a tarjetas de crédito y débito con conciliación automática.
 
 **Contras**
 - No posee captura por voz ni recursos avanzados de IA para categorización.
@@ -92,10 +92,10 @@ Plan Free limitado – Plan Premium a partir de R$ 12,90/mes.
 ## 4. Money Lover – La app con foco en hábitos de consumo
 
 **Descripción**  
-Money Lover combina [control de gastos](/es/posts/es-tecnica-dos-envelopes-digitais-guia-pratico-para-2024) con técnicas de [cambio](/es/glossario/es-cambio) de hábito, como metas de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) y alertas de “gasto excesivo”. En dos frases, trae una visualización de calendario que destaca los días en que superaste el [presupuesto](/es/posts/es-reducir-gastos-fijos-mensuales) y permite crear “bolsillos” de [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) para proyectos específicos.
+Money Lover combina control de gastos con técnicas de [cambio](/es/glossario/es-cambio) de hábito, como metas de ahorro y alertas de “gasto excesivo”. En dos frases, trae una visualización de calendario que destaca los días en que superaste el presupuesto y permite crear “bolsillos” de dinero para proyectos específicos.
 
 **Pros**
-- Sistema de “bolsillos” (sobres virtuales) que ayuda a separar [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) para viajes, coche o emergencias.
+- Sistema de “bolsillos” (sobres virtuales) que ayuda a separar dinero para viajes, coche o emergencias.
 - Alertas de gasto excesivo configurables por categoría o [valor](/es/glossario/es-valor).
 - Disponible en portugués, inglés y español, facilitando uso por quien tiene familia bilingüe.
 
@@ -116,9 +116,9 @@ YNAB sigue la filosofía de “dar a cada peso un trabajo”, incentivando al us
 ![5. YNAB (You Need A Budget) – O método “Orçamento Real”](/images/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza-6.webp)
 
 **Pros**
-- Metodología comprobada que ayuda a cambiar la relación con el [dinero](/es/posts/es-cashback-inteligente) y reducir deudas.
+- Metodología comprobada que ayuda a cambiar la relación con el dinero y reducir deudas.
 - Sincroniza con bancos vía importación de archivos CSV, manteniendo la privacidad de los datos.
-- Informes detallados de “dónde estuvo tu [dinero](/es/posts/es-como-crear-una-reserva-de-emergencia)” que facilitan la revisión mensual.
+- Informes detallados de “dónde estuvo tu dinero” que facilitan la revisión mensual.
 
 **Contras**
 - No posee captura por voz ni recursos de IA para categorización automática; todo depende de la entrada manual.
@@ -134,7 +134,7 @@ Prueba gratuita de 34 días – Suscripción anual US$ 84 (≈ R$ 420/año).
 | App | Multi‑moneda | Offline | IA/Captura por voz | Versión gratis | Precio Premium |
 |-----|-------------|---------|--------------------|----------------|----------------|
 | **Mobills** | No | Sí | No | Sí (limitado) | R$ 14,90/mes |
-| **[FinMoovi](/es/posts/es-voce-tambem-esquece-de-anotar-seus-gastos)** | Sí | Sí | Sí | Sí (anuncios) | R$ 19,90/mes |
+| **FinMoovi** | Sí | Sí | Sí | Sí (anuncios) | R$ 19,90/mes |
 | **Organizze** | No | Sí | No | Sí (limitado) | R$ 12,90/mes |
 | **Money Lover** | No | Sí | No | Sí (anuncios) | R$ 9,90/mes |
 | **YNAB** | No | Sí* | No | No | US$ 84/año |

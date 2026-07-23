@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Definindo o [Orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias)
-Para começar, é importante entender que um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) eficaz para casais envolve a consideração das necessidades, desejos e objetivos financeiros de ambos os parceiros. Vamos considerar um exemplo: João e Maria, um casal com salários de R$ 4.000 e R$ 3.500, respectivamente. Eles precisam decidir como dividir suas despesas de forma justa.
+Para começar, é importante entender que um orçamento eficaz para casais envolve a consideração das necessidades, desejos e objetivos financeiros de ambos os parceiros. Vamos considerar um exemplo: João e Maria, um casal com salários de R$ 4.000 e R$ 3.500, respectivamente. Eles precisam decidir como dividir suas despesas de forma justa.
 
 ### Exemplo de Despesas
 Aqui está uma tabela com as despesas mensais do casal:
@@ -60,7 +60,7 @@ Aqui estão os passos para organizar o [orçamento](/posts/dicas-para-controlar-
 Para manter as finanças em ordem, é crucial ter um sistema de controle. Isso pode incluir o uso de planilhas eletrônicas ou [aplicativos financeiros](/posts/voce-tambem-esquece-de-anotar-seus-gastos). O [Banco Central do Brasil](https://www.bcb.gov.br) oferece informações valiosas sobre [gestão financeira](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) e planejamento.
 
 ## Comece com 5 minutos por dia
-Para manter o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar) sob controle, dedique alguns minutos todos os dias para revisar as despesas e atualizar o [orçamento](/posts/metodo-50-30-20-para-orcamento). Isso pode ser feito durante o café da manhã ou antes de dormir. Lembre-se de que a chave para o sucesso é a consistência e a comunicação entre os parceiros. Visite o site da [Receita Federal](https://www.gov.br/receitafederal) para obter mais informações sobre [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) e tributação.
+Para manter o orçamento sob controle, dedique alguns minutos todos os dias para revisar as despesas e atualizar o orçamento. Isso pode ser feito durante o café da manhã ou antes de dormir. Lembre-se de que a chave para o sucesso é a consistência e a comunicação entre os parceiros. Visite o site da [Receita Federal](https://www.gov.br/receitafederal) para obter mais informações sobre planejamento financeiro e tributação.
 
 ![Gerenciando as Finanças](/images/posts/orcamento-para-casal-dividindo-despesas-4.webp)
 
@@ -68,4 +68,4 @@ Para manter o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcion
 
 ---
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — ele categoriza gastos automaticamente e gera [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) sem esforço.**
+**Quer automatizar esse controle? Teste o [FinMoovi grátis por 7 dias](https://finmoovi.com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**

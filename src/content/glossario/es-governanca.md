@@ -51,7 +51,7 @@ Al tener un mejor control sobre tus finanzas, puedes tomar decisiones informadas
 
 
 ## Riesgos
-Aunque la governança financiera es crucial para el éxito financiero, también existen riesgos asociados con una mala [gestión financiera](/es/posts/es-5-alternativas-ao-mobills-em-2026), como:
+Aunque la governança financiera es crucial para el éxito financiero, también existen riesgos asociados con una mala gestión financiera, como:
 * Deudas excesivas
 * Falta de ahorros para emergencias
 * Inversión en activos de alto riesgo sin una adecuada investigación

@@ -27,14 +27,14 @@ Financial emergency is any unexpected situation that requires [money](/en/posts/
 The best protection against financial emergencies is the **emergency reserve**:
 - 6 months of expenses for CLT
 - 12 months for self-employed/individual entrepreneurs
-- In [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) with daily [liquidity](/en/glossario/en-liquidez) (Tesouro [Selic](/en/glossario/en-selic), [CDB](/en/glossario/en-cdb))
+- In investments with daily [liquidity](/en/glossario/en-liquidez) (Tesouro [Selic](/en/glossario/en-selic), [CDB](/en/glossario/en-cdb))
 
 ## What to Do if You Don't Have a Reserve
 
 If the emergency arrives and you don't have a reserve:
 
 1. **Don't use [overdraft](/en/glossario/en-cheque-especial)** (interest rates of 15%/month)
-2. **Don't use [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) revolving** (interest rates of 16%/month)
+2. **Don't use credit card revolving** (interest rates of 16%/month)
 3. Request a payroll loan (interest rates of 1-2%/month)
 4. Anticipate FGTS or 13th salary
 5. Sell something you don't use (marketplace)

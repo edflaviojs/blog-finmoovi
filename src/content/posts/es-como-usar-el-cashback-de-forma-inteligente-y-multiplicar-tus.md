@@ -35,7 +35,7 @@ No todas las tarjetas ofrecen la misma tasa de retorno. Algunas dan 1,5% en toda
 
 ## Transforma el cashback en “[dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) de reserva”
 
-Muchas personas simplemente usan el [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) devuelto para pagar la factura de la tarjeta. Eso elimina el beneficio inmediato, pero pierde la oportunidad de crear una reserva. Reserva el cashback en una cuenta separada – puede ser una cuenta corriente con [rendimiento](/es/posts/es-montando-carteira-diversificada-com-r-500) automático o una cuenta digital que ofrezca rendimiento del 100% del [CDI](/es/glossario/es-cdi).
+Muchas personas simplemente usan el crédito devuelto para pagar la factura de la tarjeta. Eso elimina el beneficio inmediato, pero pierde la oportunidad de crear una reserva. Reserva el cashback en una cuenta separada – puede ser una cuenta corriente con rendimiento automático o una cuenta digital que ofrezca rendimiento del 100% del [CDI](/es/glossario/es-cdi).
 
 - Salario mensual: R$ 4.500,00
 - Gastos mensuales con tarjeta: R$ 2.000,00 (supermercado, combustible, delivery)
@@ -45,7 +45,7 @@ Al depositar esos R$ 60,00 en una cuenta de rendimiento, acumulas R$ 720,00 al f
 
 ## Usa el cashback para “pagar deudas” de forma inteligente
 
-Si tienes deudas con intereses superiores al 10% anual (como rotativo de tarjeta o [sobregiro](/es/glossario/es-cheque-especial)), el cashback puede ser un aliado para reducir esos cargos. Cada centavo que recibes tiene un costo de oportunidad menor que los intereses de la deuda, por lo que aplicar el cashback para amortizar la deuda genera [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) real.
+Si tienes deudas con intereses superiores al 10% anual (como rotativo de tarjeta o [sobregiro](/es/glossario/es-cheque-especial)), el cashback puede ser un aliado para reducir esos cargos. Cada centavo que recibes tiene un costo de oportunidad menor que los intereses de la deuda, por lo que aplicar el cashback para amortizar la deuda genera ahorro real.
 
 ![Use o cashback para “pagar dívidas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
 
@@ -61,11 +61,11 @@ Para no perder esas oportunidades, crea el hábito de revisar la app de la tarje
 
 ## Automatiza el proceso y sigue los resultados
 
-La disciplina es lo que transforma el cashback de un detalle puntual en un hábito rentable. Usa una aplicación de [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) (como el **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)**, que recomiendo porque simplifica la visualización de todas tus cuentas) para registrar automáticamente el valor recibido y el destino que le das.
+La disciplina es lo que transforma el cashback de un detalle puntual en un hábito rentable. Usa una aplicación de finanzas personales (como el **FinMoovi**, que recomiendo porque simplifica la visualización de todas tus cuentas) para registrar automáticamente el valor recibido y el destino que le das.
 
 ![Automatize o processo e acompanhe os resultados](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-6.webp)
 
-Además de facilitar el control, la app permite generar [informes](/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) mensuales como:
+Además de facilitar el control, la app permite generar informes mensuales como:
 
 - Total de cashback recibido
 - Porcentaje del cashback respecto al gasto total
@@ -76,6 +76,6 @@ Estos números dan claridad para ajustar la estrategia a lo largo del tiempo.
 
 ## Empieza hoy
 
-La primera acción no necesita ser compleja: elige una tarjeta que ofrezca el mejor cashback para tu patrón de consumo, abre una cuenta separada para recibir el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) de vuelta y registra todo en tu [app de finanzas](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar). En menos de 30 días, ya verás la diferencia en tu [presupuesto](/es/posts/es-como-crear-presupuesto-personal).
+La primera acción no necesita ser compleja: elige una tarjeta que ofrezca el mejor cashback para tu patrón de consumo, abre una cuenta separada para recibir el dinero de vuelta y registra todo en tu app de finanzas. En menos de 30 días, ya verás la diferencia en tu presupuesto.
 
-**El siguiente paso es tuyo. [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) y descubre a dónde va realmente tu [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado).**
+**El siguiente paso es tuyo. [Prueba FinMoovi gratis por 7 días](https://finmoovi.com) y descubre a dónde va realmente tu dinero.**

@@ -18,16 +18,16 @@ seo:
 ---
 
 ## Introduction to [Dollar](/en/posts/en-quotes-semana-1-july-2026) [Investment](/en/posts/en-montando-carteira-diversificada-com-r-500)
-Investing in dollars can be a way to diversify your [investment](/en/posts/en-tesouro-direto-para-iniciantes) portfolio and protect your assets against fluctuations in the Brazilian [economy](/en/posts/en-30-day-rule-for-purchases). However, it's essential to understand how the [dollar](/en/posts/en-quotes-semana-1-june-2026) market works and what [risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and benefits are involved. Let's start with the basics: what is the US [dollar](/en/posts/en-quotes-semana-2-july-2026) and why is it important for Brazilian investors?
+Investing in dollars can be a way to diversify your [investment](/en/posts/en-tesouro-direto-para-iniciantes) portfolio and protect your assets against fluctuations in the Brazilian [economy](/en/posts/en-30-day-rule-for-purchases). However, it's essential to understand how the [dollar](/en/posts/en-quotes-semana-1-june-2026) market works and what risks and benefits are involved. Let's start with the basics: what is the US dollar and why is it important for Brazilian investors?
 
-The US [dollar](/en/posts/en-quotes-semana-3-june-2026) is the official currency of the United States and is widely used in international transactions. In Brazil, the [dollar](/en/posts/en-quotes-semana-4-june-2026) is used as a form of [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico), as it can be bought and sold on [stock](/en/glossario/en-stock) exchanges and currency exchange offices. If you're considering investing in dollars, it's crucial to assess whether it makes sense for your [investor profile](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) and financial goals.
+The US dollar is the official currency of the United States and is widely used in international transactions. In Brazil, the dollar is used as a form of investment, as it can be bought and sold on [stock](/en/glossario/en-stock) exchanges and currency exchange offices. If you're considering investing in dollars, it's crucial to assess whether it makes sense for your investor profile and financial goals.
 
 ## How to Invest in Dollars in Brazil
 There are several ways to invest in dollars in Brazil, including:
 
 * Buying dollars in cash: you can buy dollars in cash at a currency exchange office or a bank branch.
-* Investing in [dollar](/en/posts/en-quotes-semana-5-june-2026)-denominated securities: you can invest in [dollar](/en/posts/en-quotes-week-4-may-2026)-denominated securities, such as US Treasury bonds or securities issued by American companies.
-* Investing in [dollar](/en/posts/en-quotes-semana-3-july-2026) investment funds: you can invest in investment funds that aim to invest in dollars.
+* Investing in dollar-denominated securities: you can invest in dollar-denominated securities, such as US Treasury bonds or securities issued by American companies.
+* Investing in dollar investment funds: you can invest in investment funds that aim to invest in dollars.
 * Investing in American company stocks: you can invest in stocks of American companies listed on US stock exchanges.
 
 ![How to Invest in Dollars in Brazil](/images/posts/investir-em-dolar-no-brasil-2.webp)
@@ -36,7 +36,7 @@ There are several ways to invest in dollars in Brazil, including:
 
 Let's consider an example: if you invest R$1,000 in dollars at an exchange rate of R$4.50 per dollar, you'll receive approximately 222 dollars. If the dollar's value increases to R$5.00, the value of your investment will increase to R$1,111.
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) of Dollar Investment
+## Risks of Dollar Investment
 Investing in dollars involves risks, including:
 
 * Exchange rate fluctuation risk: the dollar's value can fluctuate against the real, affecting the value of your investment.
@@ -49,7 +49,7 @@ It's essential to consider these risks before investing in dollars and assess wh
 ## Benefits of Dollar Investment
 Investing in dollars can also have benefits, including:
 
-* [Diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel): investing in dollars can help diversify your investment portfolio and reduce risk.
+* Diversification: investing in dollars can help diversify your investment portfolio and reduce risk.
 * Inflation protection: investing in dollars can help protect your assets against inflation in Brazil.
 * Potential for gains: the dollar's value can increase against the real, generating gains for the investor.
 
@@ -70,10 +70,10 @@ Before investing in dollars, it's essential to consider the following precaution
 For more information on dollar investment, you can visit the website of the [Banco Central do Brasil](https://www.bcb.gov.br) or the [Tesouro Direto](https://www.tesourodireto.com.br).
 
 ## Next Steps
-Now that you better understand how to invest in dollars in Brazil, it's essential to assess whether it makes sense for your investor profile and financial goals. Consider investing in dollars as a way to diversify your investment portfolio and protect your assets against fluctuations in the Brazilian [economy](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). Additionally, remember that investing in dollars involves risks and it's essential to consider these risks before investing.
+Now that you better understand how to invest in dollars in Brazil, it's essential to assess whether it makes sense for your investor profile and financial goals. Consider investing in dollars as a way to diversify your investment portfolio and protect your assets against fluctuations in the Brazilian economy. Additionally, remember that investing in dollars involves risks and it's essential to consider these risks before investing.
 
 ![Next Steps](/images/posts/investir-em-dolar-no-brasil-6.webp)
 
 
 
-To track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) in one place, [try [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — multi-currency, intelligent [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim), and 100% offline.
+To track your investments in one place, try [FinMoovi for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.

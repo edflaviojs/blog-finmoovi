@@ -28,16 +28,16 @@ It's crucial to distinguish between fixed and variable expenses. Fixed expenses 
 Here's an example of how you can categorize your expenses:
 - Fixed expenses: $2,000 (rent, electricity, internet, etc.)
 - Variable expenses: $1,500 (dining out, entertainment, etc.)
-- [Savings](/en/posts/en-financial-education-for-children): $1,000 (half of what you earn above average)
+- Savings: $1,000 (half of what you earn above average)
 
 ![Gastos Fixos e Variáveis](/images/posts/planejamento-financeiro-para-autonomos-2.webp)
 
 
 
-**Practical tip:** Try to reduce your variable expenses by 10% to 20% per month to increase your [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet).
+**Practical tip:** Try to reduce your variable expenses by 10% to 20% per month to increase your savings.
 
-## [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and Emergency Fund
-In addition to saving, it's essential to think about [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) for the future. This can include putting [money](/en/posts/en-creating-an-emergency-fund) into a [savings account](https://www.bcb.gov.br) or investing in [treasury bonds](https://www.tesourodireto.com.br). The emergency fund should be sufficient to cover 3 to 6 months of expenses, in case you don't have income for a period.
+## Investments and Emergency Fund
+In addition to saving, it's essential to think about investments for the future. This can include putting money into a [savings account](https://www.bcb.gov.br) or investing in [treasury bonds](https://www.tesourodireto.com.br). The emergency fund should be sufficient to cover 3 to 6 months of expenses, in case you don't have income for a period.
 
 For example, if your monthly expenses are $3,500, you should have an emergency fund of $10,500 to $21,000. This may seem like a lot, but it's essential to ensure that you can pay your bills even in bad months.
 
@@ -51,12 +51,12 @@ Additionally, it's crucial to have an effective billing system to ensure you rec
 
 
 ## [Financial Education](/en/glossario/en-educacao-financeira)
-[Financial education](/en/posts/en-7-financial-mistakes-beginners) is essential for anyone, especially freelancers. This includes understanding basic financial concepts, such as interest, [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), and taxes. There are many resources available online, like [Investopedia](https://www.investopedia.com), that can help improve your financial knowledge.
+Financial education is essential for anyone, especially freelancers. This includes understanding basic financial concepts, such as interest, investments, and taxes. There are many resources available online, like [Investopedia](https://www.investopedia.com), that can help improve your financial knowledge.
 
-**Practical tip:** Set aside 1 hour per week to learn about [personal finance](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) and [financial planning](/en/posts/en-how-to-create-personal-budget).
+**Practical tip:** Set aside 1 hour per week to learn about personal finance and financial planning.
 
 ## Start Today
-Don't delay your [financial planning](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) any longer. Start today by recording your expenses, planning your revenue, and investing in your future. Remember that [financial planning](/en/posts/en-how-to-create-personal-budget) is an ongoing process, and small changes can make a big difference over time.
+Don't delay your financial planning any longer. Start today by recording your expenses, planning your revenue, and investing in your future. Remember that financial planning is an ongoing process, and small changes can make a big difference over time.
 
 ---
 

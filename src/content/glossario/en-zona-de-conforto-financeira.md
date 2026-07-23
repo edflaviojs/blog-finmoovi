@@ -28,7 +28,7 @@ It's the state where your finances are organized and you don't live in fear of t
 ### 3. No expensive debts
 
 - Zero special check
-- Zero [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) revolving
+- Zero credit card revolving
 - [Financing](/en/glossario/en-financiamento) under control (installment < 30% of income)
 
 ### 4. Growing investments
@@ -45,7 +45,7 @@ It's the state where your finances are organized and you don't live in fear of t
 
 ## How to get there
 
-1. Create a [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) (know where your [money](/en/posts/en-30-day-rule-for-purchases) is going)
+1. Create a budget (know where your money is going)
 2. Pay off expensive debts first
 3. Build the emergency reserve
 4. Start investing (even if it's a little)

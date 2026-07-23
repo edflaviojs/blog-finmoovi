@@ -22,7 +22,7 @@ seo:
 
 Quando você paga um lanche de R$ 35,00 com um cartão que devolve 2% de volta, o retorno parece pequeno – R$ 0,70. Mas se esse [valor](/glossario/valor) for tratado como renda extra, ele pode virar um verdadeiro reforço no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). A ideia não é esperar que o cashback cubra tudo de uma vez, mas fazer com que cada centavo devolvido trabalhe a seu favor.
 
-## Escolha o cartão certo e combine [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Escolha o cartão certo e combine benefícios
 
 Nem todo cartão oferece a mesma [taxa](/glossario/taxa) de retorno. Alguns dão 1,5% em todas as compras, outros dão 5% em categorias específicas (como supermercados ou postos de gasolina) e 1% no resto. A chave está em alinhar o cartão ao seu padrão de consumo.
 
@@ -35,9 +35,9 @@ Nem todo cartão oferece a mesma [taxa](/glossario/taxa) de retorno. Alguns dão
 
 **Dica prática:** antes de fechar a conta, faça um cálculo rápido da anuidade versus o cashback esperado. Se a anuidade for R$ 120,00 ao ano, você precisa gerar pelo menos R$ 4.000 em gastos com 3% de retorno para que o benefício supere o custo.
 
-## Transforme o cashback em “[dinheiro](/posts/cashback-inteligente) de reserva”
+## Transforme o cashback em “dinheiro de reserva”
 
-Muitas pessoas simplesmente usam o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) devolvido para pagar a fatura do cartão. Isso elimina o benefício imediato, mas perde a oportunidade de criar uma reserva. Reserve o cashback em uma conta separada – pode ser uma conta corrente com [rendimento](/posts/montando-carteira-diversificada-com-r-500) automático ou uma conta digital que ofereça rendimento de 100% do [CDI](/glossario/cdi).
+Muitas pessoas simplesmente usam o crédito devolvido para pagar a fatura do cartão. Isso elimina o benefício imediato, mas perde a oportunidade de criar uma reserva. Reserve o cashback em uma conta separada – pode ser uma conta corrente com rendimento automático ou uma conta digital que ofereça rendimento de 100% do [CDI](/glossario/cdi).
 
 Exemplo prático:
 - Salário mensal: R$ 4.500,00
@@ -48,7 +48,7 @@ Ao depositar esses R$ 60,00 em uma conta de rendimento, você acumula R$ 720,00 
 
 ## Use o cashback para “pagar dívidas” de forma inteligente
 
-Se você tem dívidas com [juros](/glossario/juros) acima de 10% ao ano (como rotativo de cartão ou [cheque especial](/glossario/cheque-especial)), o cashback pode ser um aliado para reduzir esses encargos. Cada centavo que você devolve tem um custo de oportunidade menor que o juros da dívida, então aplicar o cashback para amortizar a dívida gera [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) real.
+Se você tem dívidas com [juros](/glossario/juros) acima de 10% ao ano (como rotativo de cartão ou [cheque especial](/glossario/cheque-especial)), o cashback pode ser um aliado para reduzir esses encargos. Cada centavo que você devolve tem um custo de oportunidade menor que o juros da dívida, então aplicar o cashback para amortizar a dívida gera economia real.
 
 ![Use o cashback para “pagar dívidas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
 
@@ -66,13 +66,13 @@ Para não perder essas oportunidades, crie um hábito de revisar o app do cartã
 
 ## Automatize o processo e acompanhe os resultados
 
-A disciplina é o que transforma o cashback de um detalhe pontual em um hábito rentável. Use um aplicativo de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) (como o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)**, que eu recomendo porque simplifica a visualização de todas as suas contas) para registrar automaticamente o valor recebido e o destino que você deu a ele.
+A disciplina é o que transforma o cashback de um detalhe pontual em um hábito rentável. Use um aplicativo de finanças pessoais (como o **FinMoovi**, que eu recomendo porque simplifica a visualização de todas as suas contas) para registrar automaticamente o valor recebido e o destino que você deu a ele.
 
 ![Automatize o processo e acompanhe os resultados](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-6.webp)
 
 
 
-Além de facilitar o controle, o app permite gerar [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) mensais como:
+Além de facilitar o controle, o app permite gerar relatórios mensais como:
 
 - Total de cashback recebido
 - Percentual do cashback em relação ao gasto total
@@ -83,7 +83,7 @@ Esses números dão clareza para ajustar a estratégia ao longo do tempo.
 
 ## Comece hoje
 
-A primeira ação não precisa ser complexa: escolha um cartão que ofereça o melhor cashback para o seu padrão de consumo, abra uma conta separada para receber o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de volta e registre tudo no seu [app de finanças](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar). Em menos de 30 dias, você já verá a diferença no seu [orçamento](/posts/como-criar-orcamento-pessoal).
+A primeira ação não precisa ser complexa: escolha um cartão que ofereça o melhor cashback para o seu padrão de consumo, abra uma conta separada para receber o dinheiro de volta e registre tudo no seu app de finanças. Em menos de 30 dias, você já verá a diferença no seu orçamento.
 
 ---
-**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) está indo de verdade.**
+**O próximo passo é seu. [Teste o FinMoovi grátis por 7 dias](https://finmoovi.com) e descubra para onde seu dinheiro está indo de verdade.**

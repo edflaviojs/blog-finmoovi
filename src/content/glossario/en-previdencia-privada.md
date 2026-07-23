@@ -9,9 +9,9 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## What is [Private Pension](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico)?
+## What is Private Pension?
 
-[Private Pension](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) is a long-term [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) designed for retirement. You contribute monthly and, in the future, redeem the accumulated value (with returns). It's a complement to the INSS retirement.
+Private Pension is a long-term [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) designed for [retirement](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico). You contribute monthly and, in the future, redeem the accumulated value (with returns). It's a complement to the INSS retirement.
 
 ## PGBL vs. VGBL
 
@@ -49,7 +49,7 @@ readingTime: 2
 
 - High administration fees (many funds charge 1-2%)
 - Loading fee (some charge on entry)
-- Returns may be lower than investing on your own
+- Returns may be lower than [investing on your own](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
 - Little flexibility
 
 ## Tip

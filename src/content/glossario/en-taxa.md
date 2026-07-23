@@ -32,7 +32,7 @@ A **taxa** é simplesmente a taxa cobrada por um serviço, um investimento ou um
 
 ## How it works
 
-Quando você aceita um contrato – seja um empréstimo ou um investimento – a instituição define uma taxa que será aplicada ao valor principal. Essa taxa pode ser fixa (não muda) ou variável (ajusta conforme algum índice, como a [Selic](/en/posts/en-quotes-semana-1-july-2026)). O cálculo costuma ser feito sobre o saldo devedor ou sobre o valor investido, e o resultado é adicionado ao seu extrato ou ao rendimento.  
+Quando você aceita um contrato – seja um empréstimo ou um investimento – a instituição define uma taxa que será aplicada ao valor principal. Essa taxa pode ser fixa (não muda) ou variável (ajusta conforme algum índice, como a [Selic](/en/glossario/en-selic)). O cálculo costuma ser feito sobre o saldo devedor ou sobre o valor investido, e o resultado é adicionado ao seu extrato ou ao rendimento.  
 
 - O valor da taxa é multiplicado pelo montante principal.  
 - O resultado pode ser cobrado mensalmente, trimestralmente ou anualmente.  

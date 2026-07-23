@@ -31,7 +31,7 @@ Most people record expenses only sporadically: they write down what they remembe
 
 - **Small purchases** at breakfast, snacks or delivery apps that add up to hundreds of reais over the month.  
 - **Automatic subscriptions** (streaming, magazines, apps) that renew silently and slip by unnoticed.  
-- **Transportation costs** – tolls, parking and even the “change” you don’t pay attention to.  
+- **Transportation [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico)** – tolls, parking and even the “change” you don’t pay attention to.  
 - **Impulse buys** in physical or online stores, often driven by promotions that look good but weren’t in the budget.
 
 These “invisible” expenses are hard to track when you rely only on memory or manual notes. Moreover, the **culture of not writing things down** is ingrained: we think it’s “just a detail” and postpone it, when it’s already too late.
@@ -42,7 +42,7 @@ Imagine having a personal assistant that, for every purchase, already knows whic
 
 1. **Voice capture** – Just say “Lunch at restaurant X, R$ 45.00” and the app creates the expense.  
 2. **Receipt OCR** – Snap a photo of your receipt or invoice and the app extracts the amounts automatically.  
-3. **Automatic categorization** – Machine‑learning algorithms analyze the description and classify the expense (food, transport, entertainment, etc.) without you having to pick a category manually.
+3. **[Automatic categorization](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos)** – Machine‑learning algorithms analyze the description and classify the expense (food, transport, entertainment, etc.) without you having to pick a category manually.
 
 With these tools, FinMoovi turns the **recording process** into a matter of seconds, eliminating the need to type or remember details. In a few clicks you get a complete picture of where every cent went.
 
@@ -67,7 +67,7 @@ Now to the good part: how to roll up your sleeves and get your [money](/en/posts
 | **Time spent recording**       | 30‑45 min per week (manual notes, spreadsheets)              | 5‑10 min per week (voice capture + OCR)                     |
 | **Visibility of spending**    | Little or none (memory‑dependent)                            | 100 % of expenses categorized and visualized in real time   |
 | **Leak identification**        | Rare – only noticed when the balance is already low          | Immediate – alerts for unexpected and recurring expenses   |
-| **Financial stress**           | High – anxiety when the balance “disappears”                 | Low – feeling of control and clear planning                 |
+| **Financial stress**           | High – anxiety when the balance “disappears”                 | Low – feeling of control and clear [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas)                 |
 | **Saving decisions**           | Based on guesses or “gut feeling”                             | Concrete data – adjust limits per category                  |
 | **Goal planning**              | Difficult – lack of reliable data                             | Easy – savings and emergency‑fund goals built on real numbers|
 
@@ -76,7 +76,7 @@ These changes aren’t just numbers; they’re everyday transformations. Ana, fo
 ## Data that underline the importance of visualization
 
 - **Brazil’s Central Bank** reports that household debt reached 71.2 % in 2023, one of the highest rates in Latin America. (Source: [Banco Central](https://www.bcb.gov.br))  
-- **IBGE** (Brazilian Institute of Geography and Statistics) found that 22 % of families struggle to pay monthly bills, often due to lack of expense control. (Source: [IBGE](https://www.ibge.gov.br))
+- **IBGE** (Brazilian Institute of Geography and Statistics) found that 22 % of families struggle to pay monthly bills, often due to lack of [expense control](/en/posts/en-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-). (Source: [IBGE](https://www.ibge.gov.br))
 
 ![Dados que reforçam a importância da visualização](/images/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim-6.webp)
 
@@ -91,6 +91,6 @@ These figures show that, to improve financial health, the first step is **knowin
 
 ## Your next step
 
-It’s time to stop guessing and start **seeing** where your money goes. With voice capture, instant OCR and the automatic categorization FinMoovi offers, you turn confusion into clarity, anxiety into planning, and the “vanishing” balance into savings opportunities.
+It’s time to stop guessing and start **seeing** where your money goes. With voice capture, instant OCR and the [automatic categorization](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) FinMoovi offers, you turn confusion into clarity, anxiety into planning, and the “vanishing” balance into savings opportunities.
 
 **Try FinMoovi free for 7 days and see the difference.**

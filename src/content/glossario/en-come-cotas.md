@@ -26,4 +26,4 @@ Here are some advantages and disadvantages of Fractional Shares:
 | Can be a more accessible way to invest in high-value assets | May involve risks of loss of value |
 
 ## Conclusion
-Fractional Shares are an investment option that can be useful for investors who don't have a lot of [money](/en/posts/en-avoid-impulse-purchases) to invest. However, it's essential to understand how they work and what the advantages and disadvantages are before investing. Additionally, it's crucial to do thorough research and consider your financial goals and risk tolerance before making any investment decision.
+Fractional Shares are an investment option that can be useful for investors who don't have a lot of money to invest. However, it's essential to understand how they work and what the advantages and disadvantages are before investing. Additionally, it's crucial to do thorough research and consider your financial goals and risk tolerance before making any investment decision.

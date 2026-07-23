@@ -21,9 +21,9 @@ Vamos considerar um exemplo prático. Suponha que você queira investir em um fu
 Aqui estão algumas vantagens e desvantagens das Come-Cotas:
 | Vantagem | Desvantagem |
 | --- | --- |
-| Permite que investidores com menos recursos financeiros participem de [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) | Pode haver custos de transação mais altos |
+| Permite que investidores com menos recursos financeiros participem de investimentos | Pode haver custos de transação mais altos |
 | Oferece flexibilidade para investir em diferentes ativos | Pode ser mais difícil de entender e gerenciar |
 | Pode ser uma forma mais acessível de investir em ativos de alto valor | Pode haver riscos de perda de valor |
 
 ## Conclusão
-As Come-Cotas são uma opção de investimento que pode ser útil para investidores que não têm muito [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) para investir. No entanto, é importante entender como elas funcionam e quais são as vantagens e desvantagens antes de investir. Além disso, é fundamental fazer uma pesquisa cuidadosa e considerar seus objetivos financeiros e tolerância ao risco antes de tomar qualquer decisão de investimento.
+As Come-Cotas são uma opção de investimento que pode ser útil para investidores que não têm muito dinheiro para investir. No entanto, é importante entender como elas funcionam e quais são as vantagens e desvantagens antes de investir. Além disso, é fundamental fazer uma pesquisa cuidadosa e considerar seus objetivos financeiros e tolerância ao risco antes de tomar qualquer decisão de investimento.

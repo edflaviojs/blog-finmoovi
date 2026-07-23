@@ -36,7 +36,7 @@ Um presente não precisa ser caro para ser significativo. Aqui estão algumas di
 - **Passeio ao Ar Livre**: Planeje um passeio em um parque ou na praia. Leve um piquenique e aproveite a natureza juntos. Custo: R$ 20 a R$ 50.
 
 ## Gerenciando as Finanças com o [FinMoovi](/posts/voce-tambem-tem-dificuldade-em-organizar-suas-financas)
-Para ajudar a gerenciar suas finanças e manter-se dentro do [orçamento](/posts/metodo-50-30-20-para-orcamento), o app [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) pode ser uma ferramenta útil. Com ele, você pode acompanhar suas despesas, definir metas financeiras e receber alertas para não ultrapassar o limite estabelecido.
+Para ajudar a gerenciar suas finanças e manter-se dentro do orçamento, o app [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) pode ser uma ferramenta útil. Com ele, você pode acompanhar suas despesas, definir metas financeiras e receber alertas para não ultrapassar o limite estabelecido.
 
 ## Comemorando com Criatividade
 A criatividade é a chave para um Dia dos Namorados econômico e memorável. Aqui estão algumas ideias para comemorar com estilo sem gastar muito:
@@ -49,4 +49,4 @@ A criatividade é a chave para um Dia dos Namorados econômico e memorável. Aqu
 
 
 ## Conclusão
-O Dia dos Namorados não precisa ser um fardo [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-). Com um pouco de criatividade e planejamento, é possível celebrar o amor de forma econômica e significativa. Lembre-se de que o mais importante é o tempo que você passa com seu parceiro, não o preço do presente. Portanto, não tenha medo de ser criativo e encontrar maneiras de comemorar que sejam pessoais e econômicas. Com o apoio de ferramentas como o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) para gerenciar suas finanças, você pode se concentrar no que realmente importa: o amor e a conexão com seu parceiro. Celebre o Dia dos Namorados de forma responsável e inesquecível!
+O Dia dos Namorados não precisa ser um fardo [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-). Com um pouco de criatividade e planejamento, é possível celebrar o amor de forma econômica e significativa. Lembre-se de que o mais importante é o tempo que você passa com seu parceiro, não o preço do presente. Portanto, não tenha medo de ser criativo e encontrar maneiras de comemorar que sejam pessoais e econômicas. Com o apoio de ferramentas como o FinMoovi para gerenciar suas finanças, você pode se concentrar no que realmente importa: o amor e a conexão com seu parceiro. Celebre o Dia dos Namorados de forma responsável e inesquecível!

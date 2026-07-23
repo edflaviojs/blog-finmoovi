@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-La renta fija es un tipo de inversión donde sabes de antemano cuál será el rendimiento que vas a recibir. A diferencia de la [renta variable](/es/glossario/es-renda-variavel) (acciones), aquí el emisor del título – ya sea el gobierno, un banco o una empresa – se compromete a pagar intereses periódicos y a devolver el capital al vencimiento. En términos simples, es como prestar tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) a alguien que te promete devolverte el préstamo con un “interés” acordado.
+La renta fija es un tipo de inversión donde sabes de antemano cuál será el rendimiento que vas a recibir. A diferencia de la [renta variable](/es/glossario/es-renda-variavel) (acciones), aquí el emisor del título – ya sea el gobierno, un banco o una empresa – se compromete a pagar intereses periódicos y a devolver el capital al vencimiento. En términos simples, es como prestar tu dinero a alguien que te promete devolverte el préstamo con un “interés” acordado.
 
 ![Qué es](/images/glossario/renda-fixa-inline-1.webp)
 
@@ -31,7 +31,7 @@ La renta fija es un tipo de inversión donde sabes de antemano cuál será el re
 Cuando compras un título de renta fija, estás adquiriendo un crédito que el emisor debe honrar. El proceso se resume en tres pasos básicos:
 
 - **Emisión:** El emisor lanza el título al mercado con una tasa de interés (llamada “cupón”) y un plazo de vencimiento (por ejemplo, 2, 5 o 10 años).  
-- **Pago de intereses:** Cada mes o cada año recibes un pago fijo, que no cambia aunque la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) se altere.  
+- **Pago de intereses:** Cada mes o cada año recibes un pago fijo, que no cambia aunque la economía se altere.  
 - **Reembolso del principal:** Al llegar la fecha de vencimiento, el emisor devuelve el valor nominal (el monto que invertiste inicialmente).  
 
 Esta estructura te permite planificar tus finanzas porque sabes cuánto vas a recibir y cuándo.
@@ -44,7 +44,7 @@ Invertir en renta fija tiene varios puntos a favor que la hacen atractiva para l
 
 
 
-- **Previsibilidad:** Sabes exactamente cuánto ganarás, lo que facilita armar un [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) mensual.  
+- **Previsibilidad:** Sabes exactamente cuánto ganarás, lo que facilita armar un presupuesto mensual.  
 - **[Liquidez](/es/glossario/es-liquidez):** Muchos títulos pueden venderse antes del vencimiento en el mercado secundario, aunque el precio varíe.  
 - **Diversificación:** Añadir renta fija a tu portafolio reduce la exposición a la [volatilidad](/es/glossario/es-volatilidade) de la bolsa.  
 
@@ -56,7 +56,7 @@ Aunque la renta fija es considerada segura, no está exenta de peligros. Es impo
 
 - **Riesgo de crédito:** Si el emisor (por ejemplo, una empresa) entra en default, podrías perder parte o todo tu capital.  
 - **Riesgo de tasa de interés:** Cuando suben las tasas del mercado, los títulos existentes con cupón bajo pierden valor.  
-- **[Inflación](/es/glossario/es-inflacao):** Si la inflación supera el rendimiento de tu inversión, el poder adquisitivo de tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) disminuye.  
+- **[Inflación](/es/glossario/es-inflacao):** Si la inflación supera el rendimiento de tu inversión, el poder adquisitivo de tu dinero disminuye.  
 
 **Consejo práctico:** **Revisa la calificación de crédito (rating) del emisor antes de comprar**; una nota alta indica menor probabilidad de impago.
 
@@ -68,7 +68,7 @@ Supongamos que tu salario está entre R$ 3.000 y R$ 8.000 y decides destinar
 - **CDB de banco grande:** Depositas R$ 10.000 a 100 % del CDI (índice de referencia) y obtienes alrededor de 5 % anual, generando R$ 500 en intereses.  
 - **LCI/LCA (títulos inmobiliarios o del agronegocio):** Con R$ 8.000 obtienes 6,5 % anual y, además, los intereses están exentos de impuesto de renta, lo que eleva la rentabilidad neta a casi R$ 520.  
 
-En cada caso, el flujo de caja es predecible y puedes usar los intereses para cubrir [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) mensuales o reinvertirlos.
+En cada caso, el flujo de caja es predecible y puedes usar los intereses para cubrir gastos mensuales o reinvertirlos.
 
 ## Cómo empezar
 
@@ -83,5 +83,5 @@ Dar el primer paso hacia la renta fija es más fácil de lo que parece. Solo sig
 
 ## Empieza hoy
 
-No esperes a que el próximo mes sea “el momento perfecto”. Con tan solo R$ 200 puedes iniciar tu camino en la renta fija y comenzar a ver crecer tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) de forma segura. Abre tu cuenta, elige tu primer título y siente la tranquilidad de saber que cada real está trabajando para ti. ¡Vamos, que el futuro financiero que deseas está a un clic de distancia!
+No esperes a que el próximo mes sea “el momento perfecto”. Con tan solo R$ 200 puedes iniciar tu camino en la renta fija y comenzar a ver crecer tu dinero de forma segura. Abre tu cuenta, elige tu primer título y siente la tranquilidad de saber que cada real está trabajando para ti. ¡Vamos, que el futuro financiero que deseas está a un clic de distancia!
 

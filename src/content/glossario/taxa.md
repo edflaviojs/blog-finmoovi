@@ -78,7 +78,7 @@ Se você quer dominar as taxas e evitar surpresas, siga estes passos simples par
 
 - Liste todas as taxas que você paga atualmente: anuidade, manutenção, juros de empréstimos, etc.  
 - Classifique cada taxa como fixa (valor constante) ou variável (muda com o tempo ou uso).  
-- Use um aplicativo de [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) para registrar essas despesas; a visualização automática ajuda a identificar [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) desnecessários.  
+- Use um aplicativo de finanças pessoais para registrar essas despesas; a visualização automática ajuda a identificar gastos desnecessários.  
 - Negocie taxas altas com seu banco ou procure alternativas mais baratas, como contas digitais sem taxa de manutenção.  
 - Quando for contratar um novo serviço, peça a tabela completa de custos e compare com pelo menos duas opções diferentes.  
 

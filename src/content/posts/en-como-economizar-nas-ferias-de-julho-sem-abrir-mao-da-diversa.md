@@ -125,21 +125,21 @@ If you’d spend R$ 80 on restaurants, the difference is **R$ 35** per day. 
 ## 7. Real‑time expense monitoring  
 
 ### How to stay on track  
-Even the best plan can hit unexpected bumps. Use **[FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** to log every expense (even a few cents) and get alerts when you’re near your daily limit. The app also generates monthly [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) that show where you could cut [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) for your next trip.  
+Even the best plan can hit unexpected bumps. Use **FinMoovi** to log every expense (even a few cents) and get alerts when you’re near your daily limit. The app also generates monthly reports that show where you could cut costs for your next trip.  
 
 ---  
 
 ## Quick checklist for July vacation  
 
-| ✅ | Action | Estimated [savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) |
+| ✅ | Action | Estimated savings |
 |---|--------|-------------------|
-| 1 | Set a spending ceiling | Keeps [budget](/en/posts/en-organize-couple-finances) intact |
+| 1 | Set a spending ceiling | Keeps budget intact |
 | 2 | Pick an off‑season destination | Up to R$ 600 on airfare |
 | 3 | Choose bus or car‑pool | R$ 100‑R$ 200 per leg |
 | 4 | Stay in Airbnb/hostel | R$ 850 for 5 nights |
 | 5 | Cook part of your meals | R$ 175 for 5 days |
 | 6 | Prioritize free activities | R$ 40‑R$ 80 per day |
-| 7 | Track spending with [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) | Avoids last‑minute surprises |
+| 7 | Track spending with FinMoovi | Avoids last‑minute surprises |
 
 ---  
 
@@ -152,5 +152,5 @@ Even the best plan can hit unexpected bumps. Use **[FinMoovi](/en/posts/en-5-alt
 
 ## Conclusion  
 
-Saving on a July vacation doesn’t mean giving up the fun; it’s about making conscious choices and using tools that simplify [expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza). By setting a limit, picking cheaper destinations, optimizing transport and lodging, preparing your own meals, and focusing on low‑cost activities, you can enjoy the trip with financial peace of mind. Remember: every real you save now can be reinvested in a new experience or bolster your emergency reserve. Get ready, plan, and enjoy the best of Brazilian summer – stress‑free and without red‑ink accounts. Safe travels and happy [savings](/en/posts/en-how-to-save-at-the-grocery-store-in-2026-real-tips)!
+Saving on a July vacation doesn’t mean giving up the fun; it’s about making conscious choices and using tools that simplify expense tracking. By setting a limit, picking cheaper destinations, optimizing transport and lodging, preparing your own meals, and focusing on low‑cost activities, you can enjoy the trip with financial peace of mind. Remember: every real you save now can be reinvested in a new experience or bolster your emergency reserve. Get ready, plan, and enjoy the best of Brazilian summer – stress‑free and without red‑ink accounts. Safe travels and happy savings!
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"How to Save on a July Vacation Without Giving Up the Fun","step":[{"@type":"HowToStep","position":1,"name":"Set a spending ceiling before you book","text":"Set a spending ceiling before you book"},{"@type":"HowToStep","position":2,"name":"Choose “off‑season” destinations inside Brazil","text":"Choose “off‑season” destinations inside Brazil"},{"@type":"HowToStep","position":3,"name":"Ground transport: bus or shared car","text":"Ground transport: bus or shared car"},{"@type":"HowToStep","position":4,"name":"Smart lodging: Airbnb, hostels, or house swapping","text":"Smart lodging: Airbnb, hostels, or house swapping"},{"@type":"HowToStep","position":5,"name":"Food: cooking vs. eating out","text":"Food: cooking vs. eating out"},{"@type":"HowToStep","position":6,"name":"Free or low‑cost activities","text":"Free or low‑cost activities"},{"@type":"HowToStep","position":7,"name":"Real‑time expense monitoring","text":"Real‑time expense monitoring"}]} -->

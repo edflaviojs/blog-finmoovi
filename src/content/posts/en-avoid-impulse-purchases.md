@@ -42,11 +42,11 @@ Finally, it's essential to learn to say no to impulse purchases. This can be cha
 
 
 ## Start Today
-Now that you know [how to avoid impulse purchases](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet), it's time to take action. Remember that controlling spending is an ongoing process, and it's essential to be patient and consistent. With time and practice, you can develop healthier spending habits and achieve your financial goals. For more information on [personal finance](/en/posts/en-30-day-rule-for-purchases), you can visit the [Investopedia](https://www.investopedia.com).
+Now that you know [how to avoid impulse purchases](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet), it's time to take action. Remember that controlling spending is an ongoing process, and it's essential to be patient and consistent. With time and practice, you can develop healthier spending habits and achieve your financial goals. For more information on personal finance, you can visit the [Investopedia](https://www.investopedia.com).
 
 ![Aprenda a dizer não](/images/posts/evite-compras-por-impulso-4.webp)
 
 
 
 ---
-**The next step is yours. [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) and discover where your [money](/en/posts/en-difference-between-investing-and-saving) is really going.**
+**The next step is yours. Test [FinMoovi for free for 7 days](https://finmoovi.com) and discover where your money is really going.**

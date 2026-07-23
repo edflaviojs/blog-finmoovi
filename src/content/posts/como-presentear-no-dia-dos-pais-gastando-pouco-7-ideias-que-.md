@@ -86,12 +86,12 @@ O IBGE aponta que a renda média mensal dos trabalhadores brasileiros em 2023 fo
 
 
 ### 5.2. **Use listas de desejos**
-Crie uma lista no [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) com itens que gostaria de dar ao pai. Cada vez que houver promoção, adicione o preço reduzido. Assim, você compra no momento certo e evita compras por impulso.
+Crie uma lista no FinMoovi com itens que gostaria de dar ao pai. Cada vez que houver promoção, adicione o preço reduzido. Assim, você compra no momento certo e evita compras por impulso.
 
 ### 5.3. **Divida o valor em parcelas menores**
-Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **parcelamento sem [juros](/glossario/juros)**. Mas atenção: registre cada parcela no [FinMoovi](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) para não esquecer de pagar e acabar gastando mais no próximo mês.
+Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **parcelamento sem [juros](/glossario/juros)**. Mas atenção: registre cada parcela no FinMoovi para não esquecer de pagar e acabar gastando mais no próximo mês.
 
-## 6️⃣ [Dicas](/posts/7-erros-financeiros-iniciante) finais para não sair no vermelho
+## 6️⃣ Dicas finais para não sair no vermelho
 
 | # | Dica | Por quê? |
 |---|------|----------|
@@ -99,13 +99,13 @@ Se optar por um presente mais caro (ex.: smartwatch), veja se a loja oferece **p
 | 2 | **Evite “última hora”** | Comprar de última hora geralmente custa mais. |
 | 3 | **Combine presentes com amigos da família** | Dividir o custo permite um presente maior por menos. |
 | 4 | **Use a regra dos 30 dias** (para compras não essenciais) | Dá tempo para refletir se é realmente necessário. |
-| 5 | **Registre tudo no [FinMoovi](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)** | Controle total dos [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), evita surpresas no fim do mês. |
+| 5 | **Registre tudo no FinMoovi** | Controle total dos gastos, evita surpresas no fim do mês. |
 
 ## 7️⃣ Conclusão: presente que cabe no bolso e no coração
 
 Presentear o pai não precisa ser sinônimo de gasto exagerado. Com um limite bem definido, aproveitando cashback, cupons e ideias DIY, você demonstra carinho e ainda mantém a saúde financeira da família. Lembre‑se de que o valor simbólico de um gesto costuma ser maior do que o preço de um objeto caro.
 
-> **Use o [FinMoovi](/posts/voce-tambem-esquece-de-anotar-seus-gastos) para controlar seus gastos e não se surpreender no fim do mês.**
+> **Use o FinMoovi para controlar seus gastos e não se surpreender no fim do mês.**
 
 ---
 

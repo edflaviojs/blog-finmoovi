@@ -36,7 +36,7 @@ Un regalo no necesita ser caro para ser significativo. Aquí están algunas suge
 - **Paseo al Aire Libre**: Planea un paseo en un parque o en la playa. Lleva un picnic y disfruta de la naturaleza juntos. Costo: R$ 20 a R$ 50.
 
 ## Administrando las Finanzas con el [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas)
-Para ayudar a administrar tus finanzas y mantenerse dentro del [presupuesto](/es/posts/es-como-crear-presupuesto-personal), la aplicación [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) puede ser una herramienta útil. Con ella, puedes seguir tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), definir metas financieras y recibir alertas para no superar el límite establecido.
+Para ayudar a administrar tus finanzas y mantenerse dentro del presupuesto, la aplicación [FinMoovi](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) puede ser una herramienta útil. Con ella, puedes seguir tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), definir metas financieras y recibir alertas para no superar el límite establecido.
 
 ## Celebrando con Creatividad
 La creatividad es la clave para un Día de los Enamorados económico y memorable. Aquí están algunas ideas para celebrar con estilo sin gastar mucho:

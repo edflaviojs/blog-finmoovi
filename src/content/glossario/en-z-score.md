@@ -41,7 +41,7 @@ where **X** is your value, **μ** (mu) is the mean, and **σ** (sigma) is the st
 
 - Gather the data (e.g., salaries of 30 people).  
 - Compute the mean (add all salaries and divide by 30).  
-- Compute the standard deviation (a bit of arithmetic, or use a spreadsheet).  
+- Compute the standard deviation (a bit of arithmetic, or use a [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro)).  
 - Plug the numbers into the formula and get the z‑score.
 
 ## Advantages

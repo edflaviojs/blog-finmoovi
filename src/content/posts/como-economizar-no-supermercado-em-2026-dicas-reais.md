@@ -37,7 +37,7 @@ A lista de compras é o seu mapa do tesouro. Quando você tem o papel ou o app a
 
 Muitos supermercados oferecem linhas de marcas próprias que entregam [qualidade](/glossario/qualidade) semelhante às marcas líderes, mas com preço até 30 % menor. A diferença costuma estar no investimento em marketing, não na matéria‑prima. Experimente substituir o detergente de marca por um da marca própria; a [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) pode ser de R$ 5 a R$ 10 por embalagem, o que acumulado ao longo de um ano representa até R$ 120.
 
-Vale a pena conferir a tabela de preços no site do próprio supermercado ou usar apps de comparação de preços, como o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – ele mostra as opções mais baratas ao lado da sua lista.
+Vale a pena conferir a tabela de preços no site do próprio supermercado ou usar apps de [comparação](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) de preços, como o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – ele mostra as opções mais baratas ao lado da sua lista.
 
 ## Use cupons e programas de fidelidade
 
@@ -57,7 +57,7 @@ No supermercado, os corredores de doces e bebidas são armadilhas perfeitas. Se 
 
 ## Comece hoje
 
-Basta pegar papel e caneta (ou abrir o app de finanças) agora mesmo, listar o que falta e definir um limite de preço para cada item. Na próxima visita ao mercado, siga a lista, prefira marcas próprias e use o programa de fidelidade. A diferença no fim do mês vai aparecer no extrato e, mais importante, no seu bolso.
+Basta pegar papel e caneta (ou abrir o [app de finanças](/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar)) agora mesmo, listar o que falta e definir um limite de preço para cada item. Na próxima visita ao mercado, siga a lista, prefira marcas próprias e use o programa de fidelidade. A diferença no fim do mês vai aparecer no extrato e, mais importante, no seu bolso.
 
 ![Comece hoje](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-6.webp)
 

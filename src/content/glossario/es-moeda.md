@@ -36,11 +36,11 @@ Algunas de las características clave de la moeda son:
 
 ## Ventajas
 La moeda tiene varias ventajas, como:
-* Facilita el comercio y la [economía](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), ya que permite a las personas comprar y vender bienes y servicios de manera fácil y segura.
+* Facilita el comercio y la economía, ya que permite a las personas comprar y vender bienes y servicios de manera fácil y segura.
 * Permite ahorrar para el futuro, lo que es importante para planes como la jubilación o la compra de una casa.
 * Es una forma segura de llevar dinero, ya que los billetes y monedas están diseñados para ser difíciles de falsificar.
 
-**Consejo práctico:** Es importante tener un [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) y seguirlo, para asegurarse de que se está gastando el dinero de manera responsable y no se está acumulando deuda.
+**Consejo práctico:** Es importante tener un presupuesto y seguirlo, para asegurarse de que se está gastando el dinero de manera responsable y no se está acumulando deuda.
 
 ![Ventajas](/images/glossario/moeda-inline-3.webp)
 
@@ -55,7 +55,7 @@ La moeda también tiene algunos riesgos, como:
 **Consejo práctico:** Es importante diversificar los ahorros, para reducir el riesgo de pérdida. Por ejemplo, se puede invertir en una combinación de ahorros en efectivo, acciones y bonos.
 
 ## Ejemplos prácticos
-Por ejemplo, si ganamos R$ 4.000 al mes y queremos ahorrar para una vacación que cuesta R$ 2.000, podemos crear un plan de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) para alcanzar nuestro objetivo. Podemos empezar ahorrando R$ 500 al mes durante 4 meses, lo que nos permitirá alcanzar nuestro objetivo.
+Por ejemplo, si ganamos R$ 4.000 al mes y queremos ahorrar para una vacación que cuesta R$ 2.000, podemos crear un plan de ahorro para alcanzar nuestro objetivo. Podemos empezar ahorrando R$ 500 al mes durante 4 meses, lo que nos permitirá alcanzar nuestro objetivo.
 
 Otro ejemplo es si queremos comprar un apartamento que cuesta R$ 150.000. Podemos ahorrar R$ 1.000 al mes durante 12 meses, lo que nos permitirá ahorrar R$ 12.000. Luego, podemos solicitar un préstamo hipotecario para cubrir el resto del costo.
 

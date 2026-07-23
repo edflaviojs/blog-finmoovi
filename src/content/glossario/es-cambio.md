@@ -37,4 +37,4 @@ Câmbio es el intercambio de una moneda por otra. Cuando compras dólares para v
 
 ## Câmbio e investimentos
 
-Invertir en activos dolarizados (ETFs internacionales, BDRs) es una forma de protegerse de la devaluación del real. Cuando el [dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) sube, tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) internacionales valorizan en reales.
+Invertir en activos dolarizados (ETFs internacionales, BDRs) es una forma de protegerse de la devaluación del real. Cuando el [dólar](/es/posts/es-cotizaciones-semana-1-junio-2026) sube, tus inversiones internacionales valorizan en reales.

@@ -18,10 +18,10 @@ seo:
 ---
 
 ## O que é
-O termo "juros" é frequentemente mencionado em conversas sobre finanças, mas muitas pessoas não entendem completamente o que ele significa. Em resumo, juros são os custos adicionais que você paga quando toma um empréstimo ou quando deixa o seu [dinheiro](/posts/cashback-inteligente) parado em uma conta bancária. É como uma [taxa](/glossario/taxa) por usar o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) de alguém mais cedo. Por exemplo, se você pede R$ 1.000 emprestados a um amigo e concorda em pagar R$ 1.100 daqui a um mês, os R$ 100 extras são os juros.
+O termo "juros" é frequentemente mencionado em conversas sobre finanças, mas muitas pessoas não entendem completamente o que ele significa. Em resumo, juros são os custos adicionais que você paga quando toma um empréstimo ou quando deixa o seu dinheiro parado em uma conta bancária. É como uma [taxa](/glossario/taxa) por usar o dinheiro de alguém mais cedo. Por exemplo, se você pede R$ 1.000 emprestados a um amigo e concorda em pagar R$ 1.100 daqui a um mês, os R$ 100 extras são os juros.
 
 ## 
-Quando você deposita [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) em uma conta [poupança](/glossario/poupanca), os juros funcionam a seu favor, pois você ganha um pouco de [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) extra por manter o seu dinheiro lá. Já quando você pega um empréstimo, os juros são um custo que você precisa considerar. É importante entender que os juros podem variar muito dependendo do tipo de empréstimo ou conta bancária que você escolher. Além disso, os juros podem ser compostos, o que significa que os juros são calculados não apenas sobre o [valor](/glossario/valor) principal, mas também sobre os juros anteriores. Isso pode fazer com que o custo do empréstimo aumente rapidamente.
+Quando você deposita dinheiro em uma conta [poupança](/glossario/poupanca), os juros funcionam a seu favor, pois você ganha um pouco de dinheiro extra por manter o seu dinheiro lá. Já quando você pega um empréstimo, os juros são um custo que você precisa considerar. É importante entender que os juros podem variar muito dependendo do tipo de empréstimo ou conta bancária que você escolher. Além disso, os juros podem ser compostos, o que significa que os juros são calculados não apenas sobre o [valor](/glossario/valor) principal, mas também sobre os juros anteriores. Isso pode fazer com que o custo do empréstimo aumente rapidamente.
 
 ![O que é](/images/glossario/juros-inline-1.webp)
 
@@ -38,9 +38,9 @@ Os juros podem ser calculados de diferentes maneiras, dependendo do tipo de empr
 ## Vantagens
 Os juros podem ter vantagens tanto para quem empresta quanto para quem toma empréstimo. Para quem empresta, os juros são uma forma de ganhar dinheiro extra por ter o seu dinheiro parado. Para quem toma empréstimo, os juros podem ser uma forma de ter acesso a dinheiro que não teria de outra forma. Além disso, os juros podem ser uma forma de incentivar as pessoas a poupar dinheiro, pois elas podem ganhar juros sobre o seu dinheiro depositado. No entanto, é importante lembrar que os juros também podem ser um custo significativo para quem toma empréstimo.
 
-## [Riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Riscos
 Os juros também podem ter riscos, especialmente para quem toma empréstimo. Se você não puder pagar os juros, você pode acabar devendo mais dinheiro do que inicialmente pegou emprestado. Além disso, os juros podem variar ao longo do tempo, o que pode fazer com que o custo do empréstimo aumente. **Dica prática:** sempre verifique as condições do empréstimo antes de assinar qualquer coisa. Outros riscos incluem:
-* Perda de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-): se você não pagar os juros, você pode perder o seu crédito.
+* Perda de crédito: se você não pagar os juros, você pode perder o seu crédito.
 * Penhoras: se você não pagar os juros, você pode perder bens pessoais.
 * Aumento da dívida: se você não pagar os juros, você pode acabar devendo mais dinheiro do que inicialmente pegou emprestado.
 

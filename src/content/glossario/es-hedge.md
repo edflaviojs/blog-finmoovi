@@ -54,8 +54,8 @@ Imagina que eres un empleado con un salario de R$5.000 al mes y has invertido R$
 Por ejemplo, si has invertido R$10.000 en acciones de una empresa y el mercado baja un 10%, tu inversión valdrá R$9.000. Sin embargo, si has creado un hedge comprando una opción de venta de esas acciones por R$500, podrías vender esa opción por R$1.000 si el mercado baja, lo que te permitiría recuperar parte de la pérdida.
 
 ## Cómo empezar
-Para empezar a utilizar hedges en tus inversiones, es importante que tengas un buen entendimiento de los mercados financieros y de las estrategias de inversión. **Consejo práctico:** siempre es importante buscar la ayuda de un profesional financiero antes de invertir en hedges. Además, es importante que tengas una [cartera de inversiones](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) diversificada y que no inviertas más de lo que puedes perder.
+Para empezar a utilizar hedges en tus inversiones, es importante que tengas un buen entendimiento de los mercados financieros y de las estrategias de inversión. **Consejo práctico:** siempre es importante buscar la ayuda de un profesional financiero antes de invertir en hedges. Además, es importante que tengas una cartera de inversiones diversificada y que no inviertas más de lo que puedes perder.
 
 ## Empieza hoy
-No dejes que el miedo al riesgo te impida invertir en tu futuro. Con un poco de conocimiento y [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas), puedes utilizar hedges para proteger tus inversiones y alcanzar tus objetivos financieros. ¡Empieza hoy a investigar y a aprender sobre hedges, y verás cómo puedes dormir mejor por la noche sabiendo que has tomado medidas para proteger tu patrimonio!
+No dejes que el miedo al riesgo te impida invertir en tu futuro. Con un poco de conocimiento y planificación, puedes utilizar hedges para proteger tus inversiones y alcanzar tus objetivos financieros. ¡Empieza hoy a investigar y a aprender sobre hedges, y verás cómo puedes dormir mejor por la noche sabiendo que has tomado medidas para proteger tu patrimonio!
 

@@ -49,4 +49,4 @@ Ao analisar [ações](/glossario/acoes), a margem de lucro mostra:
 
 ## Para [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)
 
-Você também tem uma "margem": quanto sobra do seu salário após todos os [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Se ganha R$ 5.000 e sobram R$ 1.000, sua margem pessoal é 20%. O ideal é pelo menos 20% (regra 50-30-20).
+Você também tem uma "margem": quanto sobra do seu salário após todos os [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Se ganha R$ 5.000 e sobram R$ 1.000, sua margem pessoal é 20%. O ideal é pelo menos 20% ([regra 50-30-20](/ferramentas/calculadora-orcamento)).

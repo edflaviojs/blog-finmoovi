@@ -31,11 +31,11 @@ Na semana que passou, o dólar americano fechou em R$ 5,17, enquanto o euro cheg
 
 Por exemplo, se você está planejando uma viagem aos EUA, pode ser uma boa ideia comprar dólares agora, considerando o [valor](/en/glossario/en-valor) atual. Já se você tem investimentos em euros, pode ser uma boa ideia manter um olho nas taxas de câmbio para decidir o melhor momento para converter seu dinheiro.
 
-## Taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) e Impacto nos Investimentos
+## Taxa Selic e Impacto nos Investimentos
 
-A taxa [Selic](/en/posts/en-quotes-semana-1-june-2026), que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um tema importante para os investidores. A taxa [Selic](/en/posts/en-quotes-semana-2-july-2026) atual pode influenciar diretamente os juros dos investimentos, como CDBs e LCI/LCs. Se a taxa [Selic](/en/posts/en-quotes-semana-3-june-2026) subir, os juros dos investimentos também podem subir, o que pode ser bom para os investidores.
+A taxa Selic, que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um tema importante para os investidores. A taxa Selic atual pode influenciar diretamente os juros dos investimentos, como CDBs e LCI/LCs. Se a taxa Selic subir, os juros dos investimentos também podem subir, o que pode ser bom para os investidores.
 
-No entanto, é importante lembrar que a taxa [Selic](/en/posts/en-quotes-semana-4-june-2026) também pode afetar a inflação e a economia como um todo. Portanto, é fundamental manter um olho nas notícias econômicas e ajustar seus investimentos de acordo.
+No entanto, é importante lembrar que a taxa Selic também pode afetar a inflação e a economia como um todo. Portanto, é fundamental manter um olho nas notícias econômicas e ajustar seus investimentos de acordo.
 
 ## Dica Prática para Investidores Individuais
 
@@ -49,7 +49,7 @@ Além disso, é importante ter um acompanhamento constante dos seus investimento
 
 ## O que Esperar para a Próxima Semana
 
-Para a próxima semana, é importante manter um olho nas notícias econômicas, especialmente as relacionadas à taxa [Selic](/en/posts/en-quotes-week-4-may-2026) e às taxas de câmbio. Além disso, é fundamental continuar diversificando seus investimentos e acompanhando seus investimentos de perto.
+Para a próxima semana, é importante manter um olho nas notícias econômicas, especialmente as relacionadas à taxa Selic e às taxas de câmbio. Além disso, é fundamental continuar diversificando seus investimentos e acompanhando seus investimentos de perto.
 
 Lembre-se de que o mercado financeiro é volátil e pode mudar rapidamente. Portanto, é importante estar preparado e ter um plano de investimento bem definido.
 
@@ -57,5 +57,5 @@ E aí, pessoal? O que você achou do resumo da semana? Tem alguma dúvida ou com
 
 
 ---
-**Ready to track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)? [Try [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free](https://[finmoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — in 5 minutes you'll have a clear view of where your [money](/en/posts/en-30-day-rule-for-purchases) is going.**
+**Ready to track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)? Try [FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
 

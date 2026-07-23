@@ -27,6 +27,6 @@ Se seus [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) ren
 ## Como se proteger?
 
 - Invista em ativos que rendam acima da inflação
-- Tesouro IPCA+ garante [rendimento](/posts/montando-carteira-diversificada-com-r-500) real
+- Tesouro IPCA+ garante rendimento real
 - Diversifique entre [renda fixa](/glossario/renda-fixa) e variável
 - Acompanhe o IPCA mensal

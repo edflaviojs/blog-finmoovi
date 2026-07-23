@@ -73,13 +73,13 @@ Vamos ao que realmente importa: como colocar a mão na massa e ver seu dinheiro 
 | **Identificação de vazamentos**| Raro – só percebe quando o saldo já está baixo                | Imediata – alertas de gastos inesperados e recorrentes          |
 | **Stress financeiro**          | Alto – ansiedade ao ver o saldo “sumir”                      | Baixo – sensação de controle e planejamento claro               |
 | **Decisões de economia**       | Baseadas em suposições ou “sentimento”                        | Dados concretos – ajuste de limites por categoria               |
-| **Planejamento de metas**      | Difícil – falta de dados confiáveis                           | Fácil – metas de [poupança](/glossario/poupanca) e reserva de emergência com base real|
+| **Planejamento de metas**      | Difícil – falta de dados confiáveis                           | Fácil – metas de [poupança](/glossario/poupanca) e [reserva de emergência](/ferramentas/calculadora-reserva) com base real|
 
 Essas mudanças não são apenas números; são transformações no dia a dia. A Ana, por exemplo, passou de perder R$ 1.200,00 ao mês sem saber para reduzir 30 % dos gastos supérfluos em apenas 3 semanas, graças ao relatório de “gastos recorrentes” do FinMoovi.
 
 ## Dados que reforçam a importância da visualização
 
-- **Banco Central do Brasil** aponta que a taxa de endividamento das famílias brasileiras atingiu 71,2 % em 2023, um dos maiores índices da América Latina. (Fonte: [Banco Central](https://www.bcb.gov.br))
+- **Banco Central do Brasil** aponta que a [taxa](/glossario/taxa) de endividamento das famílias brasileiras atingiu 71,2 % em 2023, um dos maiores índices da América Latina. (Fonte: [Banco Central](https://www.bcb.gov.br))
 - **Instituto Brasileiro de Geografia e Estatística (IBGE)** revelou que 22 % das famílias têm dificuldade para pagar contas mensais, muitas vezes por falta de controle de despesas. (Fonte: [IBGE](https://www.ibge.gov.br))
 
 ![Dados que reforçam a importância da visualização](/images/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim-6.webp)
@@ -88,7 +88,7 @@ Essas mudanças não são apenas números; são transformações no dia a dia. A
 
 Esses números mostram que, para melhorar a saúde financeira, o primeiro passo é **conhecer exatamente onde o dinheiro está sendo aplicado**. O FinMoovi entrega essa informação de forma simples e automática.
 
-## Dicas extras para potencializar o uso do FinMoovi
+## [Dicas](/posts/7-erros-financeiros-iniciante) extras para potencializar o uso do FinMoovi
 
 - **Revisite suas categorias** a cada 15 dias. Se perceber que algo está sendo classificado errado, ajuste a regra de categorização para evitar futuros erros.
 - **Use etiquetas** (ex.: “Viagem”, “Presentes”) para agrupar despesas que fogem das categorias padrão e acompanhe projetos específicos.

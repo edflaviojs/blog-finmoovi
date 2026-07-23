@@ -45,4 +45,4 @@ Na prática, juros simples são raros. Aparecem em:
 
 ## Por que importa saber
 
-Entender a diferença entre juros simples e compostos é fundamental. No mundo real, quase tudo usa juros compostos — e isso faz uma diferença enorme no longo prazo, tanto para [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) quanto para dívidas.
+Entender a diferença entre juros simples e compostos é fundamental. No mundo real, quase tudo usa [juros compostos](/ferramentas/calculadora-juros-compostos) — e isso faz uma diferença enorme no longo prazo, tanto para [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) quanto para dívidas.

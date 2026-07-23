@@ -10,9 +10,9 @@ locale: "pt"
 readingTime: 2
 ---
 
-## O que é [Previdência Privada](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico)?
+## O que é Previdência Privada?
 
-[Previdência Privada](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) é um [investimento](/posts/montando-carteira-diversificada-com-r-500) de longo prazo pensado para a aposentadoria. Você contribui mensalmente e, no futuro, resgata o [valor](/glossario/valor) acumulado (com rendimentos). É um complemento à aposentadoria do INSS.
+Previdência Privada é um [investimento](/posts/montando-carteira-diversificada-com-r-500) de longo prazo pensado para a aposentadoria. Você contribui mensalmente e, no futuro, resgata o [valor](/glossario/valor) acumulado (com rendimentos). É um complemento à aposentadoria do INSS.
 
 ## PGBL vs. VGBL
 

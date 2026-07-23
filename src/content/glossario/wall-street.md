@@ -71,7 +71,7 @@ Outro cenário: você tem R$8.000 de salário e decide comprar um fundo de índi
 Dar o primeiro passo pode parecer complicado, mas com organização tudo fica mais simples.
 
 - **Abra uma conta em corretora:** escolha uma que ofereça plataforma amigável e taxas baixas. Muitas têm apps que funcionam como um assistente financeiro, facilitando a compra e venda de ativos.
-- **Defina seu objetivo:** se o objetivo é acumular para a aposentadoria, pense em prazos longos; se quer um [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) extra para a viagem dos sonhos, talvez prefira [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de médio prazo.
+- **Defina seu objetivo:** se o objetivo é acumular para a aposentadoria, pense em prazos longos; se quer um dinheiro extra para a viagem dos sonhos, talvez prefira investimentos de médio prazo.
 - **Monte um plano de aporte:** **Dica prática:** reserve um percentual fixo do seu salário (por exemplo, 10 % do seu R$3.000) logo que receber, antes de qualquer outra despesa.
 - **Diversifique desde o início:** **Dica prática:** não coloque todo o dinheiro em uma única ação; distribua entre ações, fundos e, se quiser, títulos de renda fixa.
 - **Acompanhe e ajuste:** **Dica prática:** revise sua carteira a cada seis meses, verificando se os ativos ainda alinham com seus objetivos e tolerância ao risco.

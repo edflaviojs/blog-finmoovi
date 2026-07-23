@@ -53,13 +53,13 @@ Los fondos ofrecen varias ventajas para los inversores, incluyendo:
 ## Riesgos
 Aunque los fondos pueden ofrecer varias ventajas, también conllevan riesgos. Algunos de los riesgos asociados con los fondos incluyen:
 * Riesgo de mercado: Los fondos pueden estar expuestos a los movimientos del mercado, lo que puede afectar el [valor](/es/glossario/es-valor) de la inversión.
-* Riesgo de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-): Los fondos que invierten en bonos y otros instrumentos de deuda pueden estar expuestos al riesgo de crédito, lo que puede afectar el valor de la inversión.
-* Riesgo de [liquidez](/es/glossario/es-liquidez): Los fondos pueden tener dificultades para vender activos rápidamente en caso de que los inversores deseen retirar su [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).
+* Riesgo de crédito: Los fondos que invierten en bonos y otros instrumentos de deuda pueden estar expuestos al riesgo de crédito, lo que puede afectar el valor de la inversión.
+* Riesgo de [liquidez](/es/glossario/es-liquidez): Los fondos pueden tener dificultades para vender activos rápidamente en caso de que los inversores deseen retirar su dinero.
 
 **Consejo práctico:** Es importante leer y entender el prospecto del fondo y los informes financieros antes de invertir. Por ejemplo, si estás considerando invertir en un fondo de acciones, es importante investigar la estrategia de inversión del fondo y los costos asociados.
 
 ## Ejemplos prácticos
-Los fondos pueden ser una forma accesible para que las personas con diferentes niveles de ingresos puedan invertir en el [mercado financiero](/es/posts/es-cotizaciones-semana-1-junio-2026). Por ejemplo:
+Los fondos pueden ser una forma accesible para que las personas con diferentes niveles de ingresos puedan invertir en el mercado financiero. Por ejemplo:
 * Si tienes un salario de R$8.000 al mes y deseas invertir R$2.000 en un fondo de acciones, puedes unirte a un fondo que te permita diversificar tus inversiones y potencialmente obtener un rendimiento más alto que una cuenta de ahorros tradicional.
 * Si tienes un salario de R$4.000 al mes y deseas invertir R$1.000 en un fondo de renta fija, puedes unirte a un fondo que te permita obtener un rendimiento más estable y seguro.
 

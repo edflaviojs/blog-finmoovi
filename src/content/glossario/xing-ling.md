@@ -68,7 +68,7 @@ Para entender como o xing ling pode impactar quem tem salários diferentes, veja
 - **João, R$5.500**: alocou R$300 em um token de criptomoeda xing ling que oferecia 18% ao ano. Em 8 meses, o token valorizou 20%, e ele conseguiu vender por R$360, obtendo lucro de R$60.
 - **Ana, R$8.000**: investiu R$500 em um empréstimo coletivo xing ling com juros de 16% ao ano. O projeto falhou e ela recebeu apenas R$250 de volta, perdendo R$250.
 
-**Dica prática:** use planilhas simples (ou apps como o Guias de Finanças) para registrar cada investimento, incluindo data, valor, taxa prometida e risco percebido. Isso ajuda a visualizar o impacto no seu [orçamento](/posts/5-alternativas-ao-mobills-em-2026).
+**Dica prática:** use planilhas simples (ou apps como o Guias de Finanças) para registrar cada investimento, incluindo data, valor, taxa prometida e risco percebido. Isso ajuda a visualizar o impacto no seu orçamento.
 
 ## Como começar
 
@@ -82,5 +82,5 @@ Se, depois de analisar os prós e contras, você ainda quiser experimentar, siga
 
 ## Comece hoje
 
-Agora que você já sabe o que é, como funciona, os prós, os contras e como se proteger, que tal dar o primeiro passo? Reserve alguns minutos, abra sua planilha de controle e escolha um valor que caiba no seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Lembre‑se: o segredo não está em achar o “milagre barato”, mas em usar o xing ling com responsabilidade e sempre ter um plano B. Boa sorte e bons investimentos!
+Agora que você já sabe o que é, como funciona, os prós, os contras e como se proteger, que tal dar o primeiro passo? Reserve alguns minutos, abra sua planilha de controle e escolha um valor que caiba no seu orçamento. Lembre‑se: o segredo não está em achar o “milagre barato”, mas em usar o xing ling com responsabilidade e sempre ter um plano B. Boa sorte e bons investimentos!
 

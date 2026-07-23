@@ -37,7 +37,7 @@ O resultado positivo indica que o valor está acima da média; o negativo, abaix
 
 ## Vantagens
 
-Usar o z‑score traz alguns benefícios claros para quem quer organizar as [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su):
+Usar o z‑score traz alguns [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) claros para quem quer organizar as [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su):
 
 ![Vantagens](/images/glossario/z-score-inline-3.webp)
 

@@ -62,7 +62,7 @@ However, it's essential to remember that a credit card can be hazardous if you d
 A debit card can be a good option if you:
 
 * Want to avoid debt and interest
-* Have a limited [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) and need to control your spending
+* Have a limited budget and need to control your spending
 * Don't want to worry about interest rates or annual fees
 * Want to have more control over your spending and avoid impulse purchases
 
@@ -77,10 +77,10 @@ In summary, the choice between a credit card and a debit card depends on your fi
 
 Regardless of the choice, it's essential to remember that [financial management](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) is crucial for a healthy financial life. It's essential to create a [budget](/en/posts/en-how-to-create-personal-budget), control spending, and avoid debt.
 
-To help you manage your finances, I recommend using [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), a tool that allows you to track your [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), income, and debt in one place. With [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), you can have a clear view of your financial situation and make informed decisions about how to manage your [money](/en/posts/en-creating-an-emergency-fund).
+To help you manage your finances, I recommend using [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), a tool that allows you to track your expenses, income, and debt in one place. With FinMoovi, you can have a clear view of your financial situation and make informed decisions about how to manage your money.
 
 Additionally, it's essential to remember that [financial education](/en/glossario/en-educacao-financeira) is crucial for a healthy financial life. I recommend visiting the [Banco Central do Brasil](https://www.bcb.gov.br) website to get information on how to manage your finances and avoid debt.
 
-And if you're looking for a way to invest your [money](/en/posts/en-difference-between-investing-and-saving), I recommend visiting the [Tesouro Direto](https://www.tesourodireto.com.br) website to get information on how to invest in [public securities](/en/posts/en-tesouro-direto-para-iniciantes).
+And if you're looking for a way to invest your money, I recommend visiting the [Tesouro Direto](https://www.tesourodireto.com.br) website to get information on how to invest in public securities.
 
-Remember that [financial management](/en/posts/en-montando-carteira-diversificada-com-r-500) is an ongoing process, and it's essential to stay informed and up-to-date on the best practices for managing your [money](/en/posts/en-difference-between-investing-and-saving). With the help of [FinMoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) and reliable sources of information, you can have a healthy financial life and achieve your financial goals.
+Remember that financial management is an ongoing process, and it's essential to stay informed and up-to-date on the best practices for managing your money. With the help of FinMoovi and reliable sources of information, you can have a healthy financial life and achieve your financial goals.

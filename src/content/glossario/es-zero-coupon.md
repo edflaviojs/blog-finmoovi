@@ -59,7 +59,7 @@ Otro ejemplo sería si tienes un salario de R$8.000 al mes y decides invertir R$
 
 **Consejo práctico:** Antes de invertir en un zero coupon, es importante considerar tus objetivos financieros y tu tolerancia al riesgo. También es importante investigar sobre el emisor del bono y su historial de pago.
 
-**Consejo práctico:** Es importante diversificar tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para minimizar el riesgo. No es recomendable invertir todo tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) en un solo zero coupon o en una sola clase de activos.
+**Consejo práctico:** Es importante diversificar tus inversiones para minimizar el riesgo. No es recomendable invertir todo tu dinero en un solo zero coupon o en una sola clase de activos.
 
 **Consejo práctico:** Es importante leer y entender los términos y condiciones del zero coupon antes de invertir. Asegúrate de entender el plazo, el valor nominal, el precio de compra y cualquier otra condición relevante.
 
@@ -72,5 +72,5 @@ Algunas opciones para empezar a invertir en zero coupons son:
 * Leer y entender los términos y condiciones de los zero coupons antes de invertir
 
 ## Empieza hoy
-No esperes más para empezar a invertir en tu futuro. Con un poco de investigación y planificación, puedes comenzar a construir una [cartera de inversiones](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) diversificada y rentable. Recuerda que la clave para el éxito financiero es la disciplina y la paciencia. **Comienza hoy mismo a trabajar hacia tus objetivos financieros**.
+No esperes más para empezar a invertir en tu futuro. Con un poco de investigación y planificación, puedes comenzar a construir una cartera de inversiones diversificada y rentable. Recuerda que la clave para el éxito financiero es la disciplina y la paciencia. **Comienza hoy mismo a trabajar hacia tus objetivos financieros**.
 

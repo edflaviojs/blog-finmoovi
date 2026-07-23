@@ -46,9 +46,9 @@ Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule
 1. Define the total value and deadline
 2. Divide by the number of months (monthly contribution needed)
 3. Automate the monthly transfer
-4. Track progress (apps like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) can help)
+4. Track progress (apps like FinMoovi can help)
 5. Celebrate intermediate milestones (25%, 50%, 75%)
 
 ## Tip
 
-Have no more than 3 goals at the same time. Too many goals divide your focus and [money](/en/posts/en-avoid-impulse-purchases) — none of them advance quickly enough to motivate.
+Have no more than 3 goals at the same time. Too many goals divide your focus and money — none of them advance quickly enough to motivate.

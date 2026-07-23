@@ -74,7 +74,7 @@ Otro caso: decides invertir R$ 3.000 en un [CDB](/es/glossario/es-cdb) (Certif
 
 **Consejo práctico:** Anota en una hoja o en tu app de finanzas todas las tasas que pagas y las que podrías obtener; verás rápidamente dónde puedes ahorrar.  
 
-**Consejo práctico:** Si vas a pedir un préstamo, elige el plazo más corto que puedas pagar sin comprometer tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) esenciales; una tasa más alta por un plazo corto suele ser menos costosa que una tasa baja por muchos años.  
+**Consejo práctico:** Si vas a pedir un préstamo, elige el plazo más corto que puedas pagar sin comprometer tus gastos esenciales; una tasa más alta por un plazo corto suele ser menos costosa que una tasa baja por muchos años.  
 
 **Consejo práctico:** Automatiza el pago de tus deudas antes de la fecha de vencimiento; así evitas cargos por mora que incrementan la taxa efectiva.  
 
