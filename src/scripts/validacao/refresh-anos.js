@@ -9,8 +9,10 @@
  *
  * CORREÇÃO AUTOMÁTICA (conservadora) — só quando o ano defasado (< ano atual)
  * aparece em padrão claramente promocional/temporal:
- *   - "(para|for|em|en)( el)? 20xx"          → "Guia para 2025", "Tips for 2025"
+ *   - "(para|for|em|en|in)( el)? 20xx"        → "Guia para 2025", "Tips for 2025",
+ *                                               "[How to Avoid in 2025]"
  *   - "(guia|guide|guía)( prático|...)? 20xx" → "Guia Prático 2025"
+ *   - "20xx (guide|guia|guía)"                → "[2025 Guide]"
  *   - "vale a pena em 20xx"
  *   - "20xx: "                                → "2025: como investir"
  *   - ano defasado no FINAL do título — exceto precedido de "de|del|of" ou
@@ -43,8 +45,9 @@ const FIELD_LINE_RE = new RegExp(`^(\\s*)(${FIELDS.join('|')}):(\\s*)(\\S.*?)(\\
 
 // Padrões promocionais/temporais onde o ano defasado é trocado com segurança.
 const PROMO_RES = [
-  /\b(?:para|for|em|en)(?:\s+el)?\s+(?<year>20\d{2})\b/gi,
+  /\b(?:para|for|em|en|in)(?:\s+el)?\s+(?<year>20\d{2})\b/gi,
   /\b(?:guia|guide|guía)(?:\s+(?:prático|práctica|practical))?(?:\s+(?:para|for))?\s+(?<year>20\d{2})\b/gi,
+  /\b(?<year>20\d{2})\s+(?:guide|guia|guía)\b/gi,
   /\bvale a pena em\s+(?<year>20\d{2})\b/gi,
   /\b(?<year>20\d{2}):\s/g,
 ];
