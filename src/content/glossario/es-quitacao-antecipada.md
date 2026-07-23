@@ -31,7 +31,7 @@ Exemplo: financiamento de R$ 200.000 em 30 anos a 10% a.a.
 
 ✅ Vale a pena:
 - Juros da dívida são maiores que rendimento dos investimentos
-- Financiamento imobiliário com taxa alta (>9% a.a.)
+- Financiamento imobiliário com [taxa](/es/glossario/es-taxa) alta (>9% a.a.)
 - Empréstimos pessoais e consignados
 - Quando tem dinheiro parado rendendo menos
 

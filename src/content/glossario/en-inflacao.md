@@ -19,9 +19,9 @@ The main index is the **IPCA** (Índice de Preços ao Consumidor Amplo), calcula
 
 ## Why does it matter? for your finances?
 
-If your investments [yield](/en/glossario/en-yield) less than inflation, you're **losing [money](/en/posts/en-avoid-impulse-purchases)** in real terms. Example:
+If your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) [yield](/en/glossario/en-yield) less than inflation, you're **losing [money](/en/posts/en-avoid-impulse-purchases)** in real terms. Example:
 - Inflation: 5% per year
-- Savings: 6% per year
+- [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet): 6% per year
 - Real gain: only 1%
 
 ## Como se proteger?

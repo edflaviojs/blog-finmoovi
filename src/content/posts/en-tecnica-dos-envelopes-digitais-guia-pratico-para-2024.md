@@ -40,7 +40,7 @@ The idea of digital envelopes is the same as the paper envelopes where you put p
 | Monthly Salary | Food (30%) | Transportation (10%) | Housing (30%) | Leisure (10%) | Emergency Reserve (20%) |
 |----------------|------------|----------------------|---------------|----------------|--------------------------|
 | R$2,000        | R$600      | R$200                | R$600         | R$200          | R$400                    |
-| R$5,000        | R$1,500    | R$500                | R$1,500       | R$500          | R$1,000                  |
+| R$5,000        | R$1,500    | [R$500](/en/posts/en-montando-carteira-diversificada-com-r-500)                | R$1,500       | R$500          | R$1,000                  |
 | R$8,000        | R$2,400    | R$800                | R$2,400       | R$800          | R$1,600                  |
 
 **Practical tip:** If your income varies (self‑employed or freelancer), use the average of the last three months as a base and adjust the limits with each payment.

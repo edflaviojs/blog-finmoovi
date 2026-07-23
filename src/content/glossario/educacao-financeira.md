@@ -9,7 +9,7 @@ locale: "pt"
 readingTime: 2
 ---
 
-## O que é Educação Financeira?
+## O que é [Educação Financeira](/posts/7-erros-financeiros-iniciante)?
 
 Educação financeira é aprender a lidar com dinheiro de forma inteligente. Não é sobre ficar rico rápido — é sobre entender como o dinheiro funciona para tomar melhores decisões no dia a dia.
 
@@ -33,13 +33,13 @@ Educação financeira é aprender a lidar com dinheiro de forma inteligente. Nã
 
 - Pagar-se primeiro (separar antes de gastar)
 - Automatizar transferências para investimentos
-- Ter metas claras de economia
+- Ter metas claras de [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 - [Reserva de emergência](/glossario/reserva-de-emergencia) como prioridade
 
 ### 4. Investir
 
 - Entender risco vs. retorno
-- Começar cedo (juros compostos)
+- Começar cedo ([juros compostos](/glossario/juros-compostos))
 - Diversificar
 - Ter paciência (longo prazo)
 

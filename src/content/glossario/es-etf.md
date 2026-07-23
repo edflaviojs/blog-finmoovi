@@ -27,7 +27,7 @@ Un ejemplo para entender mejor: imagina que quieres invertir en el mercado de te
 
 
 ## Cómo funciona
-Un ETF funciona de la siguiente manera: se crea un fondo que compra una cantidad determinada de acciones, bonos u otros activos. Luego, se emiten unidades de este fondo, que se pueden comprar y vender en una bolsa de valores. El precio de cada unidad del ETF se determina por el valor de los activos que componen el fondo. Por ejemplo, si un ETF de tecnología tiene un portafolio con acciones de empresas como Magazine Luiza, Nubank y Stone, el valor del ETF variará según el desempeño de estas empresas en el mercado.
+Un ETF funciona de la siguiente manera: se crea un fondo que compra una cantidad determinada de acciones, bonos u otros activos. Luego, se emiten unidades de este fondo, que se pueden comprar y vender en una [bolsa de valores](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel). El precio de cada unidad del ETF se determina por el [valor](/es/glossario/es-valor) de los activos que componen el fondo. Por ejemplo, si un ETF de tecnología tiene un portafolio con acciones de empresas como Magazine Luiza, [Nubank](/es/glossario/es-nubank) y Stone, el valor del ETF variará según el desempeño de estas empresas en el mercado.
 
 **Consejo práctico:** Es importante investigar y entender qué activos componen el ETF antes de invertir, ya que esto puede afectar tu exposición al riesgo y tus objetivos de inversión.
 
@@ -48,7 +48,7 @@ Aunque los ETFs ofrecen varias ventajas, también conllevan riesgos. Algunos de 
 
 
 
-**Consejo práctico:** **Es crucial tener una estrategia de inversión a largo plazo y no dejar que las fluctuaciones a corto plazo te asusten.** Además, **diversificar tu cartera** incluyendo diferentes tipos de inversiones puede ayudar a mitigar el riesgo.
+**Consejo práctico:** **Es crucial tener una estrategia de inversión a largo plazo y no dejar que las fluctuaciones a corto plazo te asusten.** Además, **diversificar tu cartera** incluyendo diferentes tipos de [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) puede ayudar a mitigar el riesgo.
 
 ## Ejemplos prácticos
 Para entender mejor cómo funcionan los ETFs, consideremos un ejemplo. Supongamos que tienes un salario de R$5.000 al mes y decides invertir R$1.000 en un ETF de índice de acciones brasileñas. Este ETF sigue el desempeño del Ibovespa, el principal índice de la bolsa de valores de Brasil. Si el Ibovespa sube un 10% en un año, el valor de tu inversión en el ETF también aumentaría aproximadamente un 10%, menos los costos del fondo.

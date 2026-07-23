@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-O ETF, ou Exchange-Traded Fund, é um tipo de investimento que permite aos investidores comprar uma cesta de ativos, como ações, títulos ou commodities, em uma única transação. Isso significa que, em vez de comprar individualmente cada ativo, você pode adquirir uma parte de um fundo que já os possui, simplificando todo o processo. Imagine que você quer investir em uma carteira diversificada de ações da [bolsa de valores](/en/glossario/en-bolsa-de-valores) brasileira, mas não tem tempo ou conhecimento para escolher quais ações comprar. Um ETF pode ser a solução perfeita, pois oferece uma forma fácil e acessível de investir em uma variedade de ativos.
+O ETF, ou Exchange-Traded Fund, é um tipo de investimento que permite aos investidores comprar uma cesta de ativos, como [ações](/en/glossario/en-acoes), títulos ou commodities, em uma única transação. Isso significa que, em vez de comprar individualmente cada ativo, você pode adquirir uma parte de um fundo que já os possui, simplificando todo o processo. Imagine que você quer investir em uma carteira diversificada de ações da [bolsa de valores](/en/glossario/en-bolsa-de-valores) brasileira, mas não tem tempo ou conhecimento para escolher quais ações comprar. Um ETF pode ser a solução perfeita, pois oferece uma forma fácil e acessível de investir em uma variedade de ativos.
 
 Os ETFs são negociados em bolsas de valores, assim como as ações, e seu preço é determinado pelo mercado. Eles são geridos por empresas especializadas que se encarregam de comprar e vender os ativos que compõem o fundo, garantindo que o valor do ETF reflita o valor dos ativos subjacentes. Além disso, os ETFs são regulamentados por órgãos governamentais, o que ajuda a proteger os investidores.
 
@@ -27,7 +27,7 @@ Os ETFs são negociados em bolsas de valores, assim como as ações, e seu preç
 
 
 ## How it works
-Um ETF funciona basicamente como um fundo mútuo, mas com algumas diferenças importantes. Enquanto os fundos mútuos são negociados uma vez ao dia, após o fechamento da bolsa, os ETFs são negociados em tempo real, durante o horário de funcionamento da bolsa. Isso significa que você pode comprar ou vender um ETF a qualquer momento, desde que a bolsa esteja aberta. Além disso, os ETFs são mais transparentes do que os fundos mútuos, pois os ativos que compõem o fundo são divulgados diariamente.
+Um ETF funciona basicamente como um fundo mútuo, mas com algumas diferenças importantes. Enquanto os [fundos](/en/glossario/en-fundos) mútuos são negociados uma vez ao dia, após o fechamento da bolsa, os ETFs são negociados em tempo real, durante o horário de funcionamento da bolsa. Isso significa que você pode comprar ou vender um ETF a qualquer momento, desde que a bolsa esteja aberta. Além disso, os ETFs são mais transparentes do que os fundos mútuos, pois os ativos que compõem o fundo são divulgados diariamente.
 
 Os principais componentes de um ETF incluem:
 * O gestor do fundo, responsável por gerenciar os ativos do ETF

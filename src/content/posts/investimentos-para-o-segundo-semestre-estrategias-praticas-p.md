@@ -36,7 +36,7 @@ O segundo semestre costuma ser mais agitado: [férias](/posts/5-dicas-para-reorg
 Historicamente, alguns setores se valorizam no segundo semestre – turismo, varejo, energia e tecnologia. Essa “temporada alta” pode gerar oportunidades de ganho, mas também traz [volatilidade](/glossario/volatilidade) que exige atenção.
 
 ### 2. Ponto de ajuste de metas anuais
-Se você ainda não atingiu sua meta de poupança ou de retorno, o segundo semestre representa a última chance de corrigir o percurso antes do fechamento do exercício fiscal.
+Se você ainda não atingiu sua meta de [poupança](/glossario/poupanca) ou de retorno, o segundo semestre representa a última chance de corrigir o percurso antes do fechamento do exercício fiscal.
 
 ### 3. Preparação para o próximo ano
 Construir uma [reserva de emergência](/glossario/reserva-de-emergencia) e alocar recursos em ativos de longo prazo já no segundo semestre garante tranquilidade para iniciar 2025 com a carteira pronta.
@@ -74,9 +74,9 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 
 | Tipo de ativo          | Risco | Indicação para 2º semestre |
 |------------------------|-------|-----------------------------|
-| **Tesouro Selic** ([renda fixa](/glossario/renda-fixa)) | Baixo | Reserva de emergência e aporte de segurança |
+| **[Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)** ([renda fixa](/glossario/renda-fixa)) | Baixo | Reserva de emergência e aporte de segurança |
 | **CDBs com [liquidez](/glossario/liquidez) diária** | Baixo‑médio | Complemento ao Selic, rendimento acima da poupança |
-| **Fundos de índice (ETF) de ações** | Médio‑alto | Exposição a setores sazonais (varejo, energia) |
+| **[Fundos](/glossario/fundos) de índice (ETF) de [ações](/glossario/acoes)** | Médio‑alto | Exposição a setores sazonais (varejo, energia) |
 | **[Fundos imobiliários](/glossario/fundos-imobiliarios) (FIIs)** | Médio | Recebimento de aluguéis mensais, boa para quem quer renda passiva |
 | **Criptomoedas ou ativos alternativos** | Alto | Apenas 5 % da carteira, para quem aceita volatilidade |
 
@@ -131,7 +131,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 
 - **[Banco Central do Brasil](https://www.bcb.gov.br)** – consulta de taxa Selic e indicadores econômicos.
 - **[Tesouro Direto](https://www.tesourodireto.com.br)** – portal oficial para adquirir títulos públicos.
-- **FinMoovi** – app brasileiro que integra [controle de gastos](/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza), metas de investimento e alertas de mercado. Ideal para quem quer visualizar a carteira completa em um só lugar.
+- **[FinMoovi](/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)** – app brasileiro que integra [controle de gastos](/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza), metas de investimento e alertas de mercado. Ideal para quem quer visualizar a carteira completa em um só lugar.
 
 ![Ferramentas e recursos úteis](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 

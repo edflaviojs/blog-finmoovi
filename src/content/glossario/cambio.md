@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é Câmbio?
 
-Câmbio é a troca de uma moeda por outra. Quando você compra dólares para viajar ou quando uma empresa importa produtos, está fazendo uma operação de câmbio. A taxa de câmbio indica quanto custa uma moeda em relação a outra.
+Câmbio é a troca de uma [moeda](/glossario/moeda) por outra. Quando você compra dólares para viajar ou quando uma empresa importa produtos, está fazendo uma operação de câmbio. A [taxa](/glossario/taxa) de câmbio indica quanto custa uma moeda em relação a outra.
 
 ## Como funciona a taxa de câmbio
 
@@ -32,9 +32,9 @@ Câmbio é a troca de uma moeda por outra. Quando você compra dólares para via
 1. **Compre aos poucos** — não tente acertar o melhor momento
 2. **Compare casas de câmbio** — spreads variam muito
 3. **Evite aeroportos** — taxas são as piores
-4. **[Cartão de débito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional** — geralmente melhor que dinheiro em espécie
+4. **[Cartão de débito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional** — geralmente melhor que [dinheiro](/posts/cashback-inteligente) em espécie
 5. **IOF:** 4,38% no cartão, 1,1% em espécie
 
-## Câmbio e investimentos
+## Câmbio e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Investir em ativos dolarizados (ETFs internacionais, BDRs) é uma forma de se proteger da desvalorização do real. Quando o dólar sobe, seus investimentos internacionais valorizam em reais.

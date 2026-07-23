@@ -26,7 +26,7 @@ Onde:
 
 ## Exemplo prático
 
-Alguém te oferece R$ 10.000 daqui a 2 anos. Com a Selic a 13% ao ano, quanto isso vale hoje?
+Alguém te oferece R$ 10.000 daqui a 2 anos. Com a [Selic](/glossario/selic) a 13% ao ano, quanto isso vale hoje?
 
 VP = 10.000 ÷ (1,13)² = 10.000 ÷ 1,2769 = **R$ 7.831**
 
@@ -39,13 +39,13 @@ Ou seja: receber R$ 10.000 daqui a 2 anos é a mesma coisa que receber R$ 7.831 
 3. **Precificar títulos** de [renda fixa](/glossario/renda-fixa)
 4. **Decisões de negócios** (vale a pena esse projeto?)
 
-## Aplicação no dia a dia
+## [Aplicação](/glossario/aplicacao) no dia a dia
 
 Quando uma loja oferece "12x sem juros de R$ 100 ou R$ 1.000 à vista":
 - 12 parcelas = R$ 1.200 no total
 - Mas o valor presente de 12x R$ 100 é menor que R$ 1.200
-- Se você pode investir o dinheiro a 1%/mês, pagar parcelado e investir a diferença é melhor
+- Se você pode investir o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) a 1%/mês, pagar parcelado e investir a diferença é melhor
 
 ## Regra simples
 
-Dinheiro hoje vale mais que dinheiro amanhã. Sempre considere o "custo do tempo" ao tomar decisões financeiras.
+[Dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) hoje vale mais que dinheiro amanhã. Sempre considere o "custo do tempo" ao tomar decisões financeiras.

@@ -38,11 +38,11 @@ Por exemplo, se muitos investidores querem comprar ações da Vale, o preço da 
 ## Vantagens
 A bolsa de valores oferece várias vantagens para os investidores, como:
 * [Diversificação](/glossario/diversificacao): permite que os investidores distribuam seu [dinheiro](/posts/cashback-inteligente) em diferentes ações e setores, reduzindo o risco
-* Liquidez: os investidores podem comprar e vender ações rapidamente, pois há um mercado ativo
+* [Liquidez](/glossario/liquidez): os investidores podem comprar e vender ações rapidamente, pois há um mercado ativo
 * Potencial de crescimento: as ações podem aumentar de valor ao longo do tempo, proporcionando um retorno sobre o investimento
-* Rendimento: as ações podem pagar dividendos, que são parte do lucro da empresa distribuído aos acionistas
+* Rendimento: as ações podem pagar [dividendos](/glossario/dividendos), que são parte do lucro da empresa distribuído aos acionistas
 
-**Dica prática:** É importante diversificar o portfólio de investimentos, ou seja, não colocar todos os ovos na mesma cesta. Por exemplo, se você tem R$ 10.000 para investir, pode dividir em R$ 3.000 em ações da Petrobras, R$ 3.000 em ações da Vale e R$ 4.000 em títulos do governo.
+**Dica prática:** É importante diversificar o portfólio de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), ou seja, não colocar todos os ovos na mesma cesta. Por exemplo, se você tem R$ 10.000 para investir, pode dividir em R$ 3.000 em ações da Petrobras, R$ 3.000 em ações da Vale e R$ 4.000 em títulos do governo.
 
 ![Vantagens](/images/glossario/bolsa-de-valores-inline-3.webp)
 
@@ -50,7 +50,7 @@ A bolsa de valores oferece várias vantagens para os investidores, como:
 
 ## Riscos
 A bolsa de valores também envolve riscos, como:
-* Risco de perda: os investidores podem perder dinheiro se as ações caírem de valor
+* Risco de perda: os investidores podem perder [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) se as ações caírem de valor
 * Risco de [volatilidade](/glossario/volatilidade): os preços das ações podem variar rapidamente, o que pode ser difícil de gerenciar
 * Risco de liquidez: os investidores podem ter dificuldade em vender ações rapidamente, especialmente se o mercado estiver em baixa
 

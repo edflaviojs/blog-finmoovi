@@ -25,7 +25,7 @@ Early payoff is paying off a debt ([financing](/en/glossario/en-financiamento), 
 Example: financing of R$ 200,000 in 30 years at 10% per year.
 - Total you would pay: ~R$ 632,000
 - If you pay off in 15 years: ~R$ 387,000
-- **Savings: R$ 245,000** (almost the value of the property!)
+- **[Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet): R$ 245,000** (almost the value of the property!)
 
 ## When it's worth paying off
 
@@ -36,7 +36,7 @@ Example: financing of R$ 200,000 in 30 years at 10% per year.
 - When you have idle [money](/en/posts/en-30-day-rule-for-purchases) earning less
 
 ❌ Not worth it:
-- Interest on the debt is lower than what your investments yield
+- Interest on the debt is lower than what your [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) [yield](/en/glossario/en-yield)
 - Financing with very low rates (<7% per year)
 - If you'll be left without an emergency reserve
 

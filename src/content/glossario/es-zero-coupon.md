@@ -19,7 +19,7 @@ seo:
 ---
 
 ## Qué es
-El término financiero "zero coupon" se refiere a un tipo de bono o título de deuda que no paga intereses periódicos, a diferencia de los bonos tradicionales que pagan cupones (intereses) en intervalos regulares. En su lugar, el zero coupon se vende a un precio descontado respecto de su valor nominal y se redime al valor nominal al vencimiento. Esto significa que el inversionista recibe el interés acumulado en una sola vez, al final del plazo.
+El término financiero "zero coupon" se refiere a un tipo de bono o título de deuda que no paga intereses periódicos, a diferencia de los bonos tradicionales que pagan cupones (intereses) en intervalos regulares. En su lugar, el zero coupon se vende a un precio descontado respecto de su [valor](/es/glossario/es-valor) nominal y se redime al valor nominal al vencimiento. Esto significa que el inversionista recibe el interés acumulado en una sola vez, al final del plazo.
 
 El zero coupon es una forma de inversión a largo plazo que puede ser atractiva para aquellos que buscan una rentabilidad fija y no necesitan ingresos periódicos. Por ejemplo, si compras un zero coupon por R$8.000 con un valor nominal de R$10.000 y un plazo de 5 años, al final de los 5 años recibirás R$10.000, lo que equivale a una rentabilidad del 25% sobre tu inversión inicial.
 
@@ -44,7 +44,7 @@ Las ventajas de invertir en zero coupons son varias. Algunas de las más destaca
 
 ## Riesgos
 Aunque los zero coupons pueden ser una forma atractiva de inversión, también conllevan algunos riesgos. Algunos de los riesgos más importantes son:
-* **Riesgo de crédito**: El riesgo de que el emisor del bono no cumpla con sus obligaciones y no pague el valor nominal al vencimiento.
+* **Riesgo de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)**: El riesgo de que el emisor del bono no cumpla con sus obligaciones y no pague el valor nominal al vencimiento.
 * **Riesgo de mercado**: El valor de los zero coupons puede fluctuar en el mercado secundario, lo que puede afectar el precio de venta si se decide vender antes del vencimiento.
 * **Riesgo de [inflación](/es/glossario/es-inflacao)**: La inflación puede erosionar el valor real de la inversión, lo que significa que el poder adquisitivo del [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) recibido al vencimiento puede ser menor que el inicial.
 
@@ -59,7 +59,7 @@ Otro ejemplo sería si tienes un salario de R$8.000 al mes y decides invertir R$
 
 **Consejo práctico:** Antes de invertir en un zero coupon, es importante considerar tus objetivos financieros y tu tolerancia al riesgo. También es importante investigar sobre el emisor del bono y su historial de pago.
 
-**Consejo práctico:** Es importante diversificar tus inversiones para minimizar el riesgo. No es recomendable invertir todo tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) en un solo zero coupon o en una sola clase de activos.
+**Consejo práctico:** Es importante diversificar tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para minimizar el riesgo. No es recomendable invertir todo tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) en un solo zero coupon o en una sola clase de activos.
 
 **Consejo práctico:** Es importante leer y entender los términos y condiciones del zero coupon antes de invertir. Asegúrate de entender el plazo, el valor nominal, el precio de compra y cualquier otra condición relevante.
 

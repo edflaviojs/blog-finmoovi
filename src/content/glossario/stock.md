@@ -28,10 +28,10 @@ A palavra “stock” (ou ação, em português) representa a menor parte de uma
 
 ## Como funciona
 
-Quando você decide comprar um stock, a operação acontece em uma bolsa de valores, que funciona como um grande mercado onde compradores e vendedores se encontram. Cada negociação tem um preço, que varia a cada segundo de acordo com a oferta e a demanda. O preço de uma ação pode subir se mais gente quiser comprá‑la (alta demanda) ou cair se houver mais vendedores (baixa demanda).  
+Quando você decide comprar um stock, a operação acontece em uma [bolsa de valores](/glossario/bolsa-de-valores), que funciona como um grande mercado onde compradores e vendedores se encontram. Cada negociação tem um preço, que varia a cada segundo de acordo com a oferta e a demanda. O preço de uma ação pode subir se mais gente quiser comprá‑la (alta demanda) ou cair se houver mais vendedores (baixa demanda).  
 
 - **Passo 1:** Abra uma conta em uma corretora (o app da corretora costuma ser bem intuitivo, como se fosse um chat de mensagens).  
-- **Passo 2:** Deposite o dinheiro que pretende investir.  
+- **Passo 2:** Deposite o [dinheiro](/posts/cashback-inteligente) que pretende investir.  
 - **Passo 3:** Escolha a ação que quer comprar, analisando o histórico de preço e a saúde da empresa.  
 - **Passo 4:** Defina a quantidade de ações e confirme a ordem de compra.  
 - **Passo 5:** Acompanhe o desempenho e decida quando vender ou manter a posição.
@@ -49,7 +49,7 @@ Investir em stocks traz benefícios que vão além da simples ideia de “ganhar
 - **Diversificação:** Ao comprar ações de diferentes setores, você reduz o risco total da sua carteira.  
 - **Liquidez:** A maioria das ações pode ser vendida rapidamente na bolsa, ao contrário de imóveis ou outros ativos menos líquidos.
 
-## Riscos
+## [Riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Como tudo na vida, investir em ações tem seus perrengues.  
 
@@ -70,7 +70,7 @@ Imagine que você ganha R$4.500 por mês e decide destinar 10 % da sua renda (
 
 Se você ainda não tem experiência, siga esses passos para iniciar sua jornada no mercado de ações de forma segura.  
 
-- **Dica prática:** Comece com um valor que represente no máximo 5 % do seu patrimônio líquido, assim você limita o impacto de eventuais perdas.  
+- **Dica prática:** Comece com um valor que represente no máximo 5 % do seu [patrimônio líquido](/glossario/patrimonio-liquido), assim você limita o impacto de eventuais perdas.  
 - **Dica prática:** Use o app da corretora para praticar com contas demo (simuladores) antes de colocar dinheiro real.  
 - **Dica prática:** Escolha empresas que você conhece e usa no dia a dia, como uma rede de supermercados ou uma fabricante de smartphones, facilitando a avaliação do negócio.  
 - Abra a conta na corretora, faça o cadastro e envie os documentos necessários.  

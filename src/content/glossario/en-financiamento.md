@@ -29,7 +29,7 @@ Financiamento is when a bank lends you [money](/en/posts/en-30-day-rule-for-purc
 - Down payment: the more, the better
 - The car is alienated to the bank
 
-## Tips to finance well
+## Tips to [finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) well
 
 1. **Make the largest down payment possible** — reduces total interest
 2. **Choose the shortest term that fits your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026)** — less interest
@@ -39,4 +39,4 @@ Financiamento is when a bank lends you [money](/en/posts/en-30-day-rule-for-purc
 
 ## How much does a financiamento cost
 
-A R$ 400,000 property financed over 30 years at 10% per year costs around R$ 1,000,000 in total. You pay more than double the property's value in interest.
+A R$ 400,000 property financed over 30 years at 10% per year [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) around R$ 1,000,000 in total. You pay more than double the property's value in interest.

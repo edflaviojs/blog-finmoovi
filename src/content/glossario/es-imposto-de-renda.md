@@ -43,7 +43,7 @@ El impuesto de renda puede parecer un gasto adicional, pero en realidad tiene va
 
 
 
-## Riesgos
+## [Riesgos](/es/posts/es-montando-carteira-diversificada-com-r-500)
 Aunque el impuesto de renda es una obligación legal, hay algunos riesgos que se deben considerar. Uno de los principales riesgos es el de no declarar todos los ingresos, lo que puede resultar en multas y penalizaciones. Otro riesgo es el de no pagar el impuesto de renda a tiempo, lo que puede resultar en intereses y penalizaciones adicionales.
 
 **Consejo práctico:** Es importante declarar todos los ingresos y pagar el impuesto de renda a tiempo, para evitar multas y penalizaciones.
@@ -59,7 +59,7 @@ Otro ejemplo es el de una persona que tiene un salario de R$ 4.000 por mes, y de
 Para empezar a declarar y pagar el impuesto de renda, es importante tener un registro detallado de todos los ingresos y gastos. También es importante considerar las deducciones y gastos que se pueden hacer, para reducir la cantidad de impuesto que se debe pagar. Es recomendable consultar con un profesional de impuestos o utilizar un software de impuestos para ayudar con el proceso.
 
 ## Empieza hoy
-No espere más para empezar a declarar y pagar el impuesto de renda. Con un poco de planificación y organización, puede reducir la cantidad de impuesto que se debe pagar y aprovechar las deducciones y gastos que se pueden hacer. Recuerde que el impuesto de renda es una obligación legal, pero también es una oportunidad para contribuir a la sociedad y financiar servicios públicos y programas sociales. ¡Empiece hoy a tomar control de sus finanzas y a declarar y pagar el impuesto de renda de manera efectiva!
+No espere más para empezar a declarar y pagar el impuesto de renda. Con un poco de [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) y organización, puede reducir la cantidad de impuesto que se debe pagar y aprovechar las deducciones y gastos que se pueden hacer. Recuerde que el impuesto de renda es una obligación legal, pero también es una oportunidad para contribuir a la sociedad y financiar servicios públicos y programas sociales. ¡Empiece hoy a tomar control de sus finanzas y a declarar y pagar el impuesto de renda de manera efectiva!
 
 ---
 

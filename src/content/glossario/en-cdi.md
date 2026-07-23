@@ -15,14 +15,14 @@ The CDI (Certificado de Depósito Interbancário) is the interest rate used in l
 
 ## CDI vs [Selic](/en/glossario/en-selic)
 
-The CDI closely follows the Selic rate (usually 0.10% below). If the Selic is at 14.75%, the CDI is around 14.65%.
+The CDI closely follows the [Selic](/en/posts/en-quotes-semana-1-july-2026) rate (usually 0.10% below). If the Selic is at 14.75%, the CDI is around 14.65%.
 
 ## Why does it matter?
 
 When an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) yields "100% of the CDI", it means it pays exactly the CDI rate. Examples:
 - **100% CDI** = standard [yield](/en/glossario/en-yield)
 - **110% CDI** = above average (good)
-- **80% CDI** = below average (bad, like a savings account)
+- **80% CDI** = below average (bad, like a [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) account)
 
 ## How much does it yield?
 

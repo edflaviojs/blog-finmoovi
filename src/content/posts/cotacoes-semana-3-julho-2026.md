@@ -32,7 +32,7 @@ A última semana foi marcada por oscilações nos mercados globais, mas o cenár
 O real ganhou alguns centavos frente ao [dólar](/posts/cotacoes-semana-3-junho-2026), que recuou 0,4 % ao longo da semana. O movimento foi impulsionado por duas coisas:  
 
 1. **Dados de [inflação](/glossario/inflacao) dos EUA** – O CPI de junho veio um ponto percentual abaixo das expectativas, aliviando a pressão sobre o Federal Reserve.  
-2. **Fluxos de capitais** – Investidores internacionais retiraram parte dos recursos de ativos de risco, mas a queda do dólar foi mais moderada porque o Brasil continua atraente graças à [taxa](/glossario/taxa) [Selic](/glossario/selic) ainda alta.  
+2. **Fluxos de capitais** – Investidores internacionais retiraram parte dos recursos de ativos de risco, mas a queda do [dólar](/posts/cotacoes-semana-4-junho-2026) foi mais moderada porque o Brasil continua atraente graças à [taxa](/glossario/taxa) [Selic](/glossario/selic) ainda alta.  
 
 Em termos práticos, quem comprou dólares no início da semana viu um ganho de cerca de R$ 0,02 por [moeda](/glossario/moeda). Não é nada que vá mudar sua conta bancária, mas já dá uma ideia da direção.
 
@@ -42,7 +42,7 @@ O euro subiu 0,3 % na mesma janela, terminando em R$ 5,84. A alta foi alimen
 - **Reforço do eurozona** após a divulgação de que a Alemanha registrou crescimento inesperado no trimestre.  
 - **Expectativa de cortes tardios** no Banco Central Europeu, que ainda mantém a taxa de [juros](/glossario/juros) acima de 4 %.  
 
-A diferença entre dólar e euro ficou praticamente a mesma (cerca de R$ 0,73), o que indica que o real está respondendo de forma equilibrada a ambas as moedas.
+A diferença entre [dólar](/posts/cotacoes-semana-4-maio-2026) e euro ficou praticamente a mesma (cerca de R$ 0,73), o que indica que o real está respondendo de forma equilibrada a ambas as moedas.
 
 ---
 

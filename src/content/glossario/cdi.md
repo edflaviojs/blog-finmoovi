@@ -11,15 +11,15 @@ readingTime: 1
 
 ## O que é CDI?
 
-O CDI (Certificado de Depósito Interbancário) é a taxa de juros usada em empréstimos entre bancos. Na prática, é a referência para a maioria dos [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de [renda fixa](/glossario/renda-fixa) no Brasil.
+O CDI (Certificado de Depósito Interbancário) é a taxa de [juros](/glossario/juros) usada em empréstimos entre bancos. Na prática, é a referência para a maioria dos [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de [renda fixa](/glossario/renda-fixa) no Brasil.
 
 ## CDI vs [Selic](/posts/cotacoes-semana-1-julho-2026)
 
-O CDI acompanha a taxa Selic muito de perto (geralmente 0,10% abaixo). Se a Selic está em 14,75%, o CDI está em torno de 14,65%.
+O CDI acompanha a taxa [Selic](/glossario/selic) muito de perto (geralmente 0,10% abaixo). Se a [Selic](/posts/cotacoes-semana-1-junho-2026) está em 14,75%, o CDI está em torno de 14,65%.
 
 ## Por que importa?
 
-Quando um investimento rende "100% do CDI", significa que ele paga exatamente a taxa CDI. Exemplos:
+Quando um [investimento](/posts/montando-carteira-diversificada-com-r-500) rende "100% do CDI", significa que ele paga exatamente a taxa CDI. Exemplos:
 - **100% CDI** = rendimento padrão
 - **110% CDI** = acima da média (bom)
 - **80% CDI** = abaixo da média (ruim, como a [poupança](/glossario/poupanca))

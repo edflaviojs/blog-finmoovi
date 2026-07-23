@@ -19,14 +19,14 @@ seo:
 
 ## What it is
 
-Xing ling é um método de investimento coletivo que combina a simplicidade de um fundo de renda fixa com a flexibilidade de um aplicativo de micro‑investimento. Em vez de comprar um título inteiro, você compra “pedaços” de um portfólio que já está diversificado em títulos do governo, CDBs (Certificados de Depósito Bancário) e debêntures de empresas sólidas. Cada “ling” representa uma fração de R$1.000 do portfólio, e você pode adquirir quantos quiser, de acordo com o dinheiro que tem disponível. O objetivo é oferecer rendimentos previsíveis, porém superiores à poupança, sem exigir conhecimento avançado de mercado.
+Xing ling é um método de investimento coletivo que combina a simplicidade de um fundo de [renda fixa](/en/glossario/en-renda-fixa) com a flexibilidade de um aplicativo de micro‑investimento. Em vez de comprar um título inteiro, você compra “pedaços” de um portfólio que já está diversificado em títulos do governo, CDBs (Certificados de Depósito Bancário) e debêntures de empresas sólidas. Cada “ling” representa uma fração de R$1.000 do portfólio, e você pode adquirir quantos quiser, de acordo com o dinheiro que tem disponível. O objetivo é oferecer rendimentos previsíveis, porém superiores à poupança, sem exigir conhecimento avançado de mercado.
 
 ![What it is](/images/glossario/xing-ling-inline-1.webp)
 
 
 
 - **Pedaço de investimento:** cada ling vale R$1.000, mas pode ser comprado em frações de R$100.  
-- **Diversificação automática:** o fundo já contém diferentes ativos, reduzindo risco.  
+- **[Diversificação](/en/glossario/en-diversificacao) automática:** o fundo já contém diferentes ativos, reduzindo risco.  
 - **Liquidez diária:** você pode resgatar seu dinheiro a qualquer momento, como em uma conta corrente.
 
 ## How it works
@@ -51,9 +51,9 @@ Para quem ganha entre R$3.000 e R$8.000, o xing ling traz benefícios que vão a
 - **Gestão automática:** nada de escolher títulos, o algoritmo faz tudo.  
 - **Acesso via celular:** controle total na palma da mão, como um amigo que te ajuda a organizar a grana.
 
-**Practical tip:** **Comece com um aporte de R$500 e aumente gradualmente conforme seu orçamento permite.**  
+**Practical tip:** **Comece com um aporte de [R$500](/en/posts/en-montando-carteira-diversificada-com-r-500) e aumente gradualmente conforme seu orçamento permite.**  
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Embora o xing ling seja mais seguro que ações individuais, ele não está livre de riscos. O principal risco é a variação da taxa de juros: se o Banco Central subir a taxa, os títulos já comprados podem perder valor de mercado, embora o rendimento ainda seja garantido até o vencimento. Outro ponto de atenção são as taxas de administração, que podem reduzir seu ganho líquido se o fundo for muito pequeno. Por fim, como o investimento depende de um app, há risco de falhas técnicas ou de segurança cibernética.
 

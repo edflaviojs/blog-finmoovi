@@ -20,19 +20,19 @@ seo:
 
 ## What it is
 
-A **taxa** é simplesmente a taxa cobrada por um serviço, um investimento ou um empréstimo. No dia a dia, a gente vê taxa de manutenção de conta, taxa de juros de um financiamento ou taxa de administração de um fundo. Em termos simples, é o preço que você paga por usar algo que não é gratuito.  
+A **taxa** é simplesmente a taxa cobrada por um serviço, um investimento ou um empréstimo. No dia a dia, a gente vê taxa de manutenção de conta, taxa de [juros](/en/glossario/en-juros) de um financiamento ou taxa de administração de um fundo. Em termos simples, é o preço que você paga por usar algo que não é gratuito.  
 
 ![What it is](/images/glossario/taxa-inline-1.webp)
 
 
 
 - **Taxa de juros:** custo do dinheiro emprestado, expressa em percentual ao ano.  
-- **Taxa de administração:** valor cobrado por gestores de fundos para manter seu investimento.  
+- **Taxa de administração:** valor cobrado por gestores de [fundos](/en/glossario/en-fundos) para manter seu investimento.  
 - **Taxa de manutenção:** cobrança mensal de bancos por serviços como cartão de crédito ou conta corrente.  
 
 ## How it works
 
-Quando você aceita um contrato – seja um empréstimo ou um investimento – a instituição define uma taxa que será aplicada ao valor principal. Essa taxa pode ser fixa (não muda) ou variável (ajusta conforme algum índice, como a Selic). O cálculo costuma ser feito sobre o saldo devedor ou sobre o valor investido, e o resultado é adicionado ao seu extrato ou ao rendimento.  
+Quando você aceita um contrato – seja um empréstimo ou um investimento – a instituição define uma taxa que será aplicada ao valor principal. Essa taxa pode ser fixa (não muda) ou variável (ajusta conforme algum índice, como a [Selic](/en/posts/en-quotes-semana-1-july-2026)). O cálculo costuma ser feito sobre o saldo devedor ou sobre o valor investido, e o resultado é adicionado ao seu extrato ou ao rendimento.  
 
 - O valor da taxa é multiplicado pelo montante principal.  
 - O resultado pode ser cobrado mensalmente, trimestralmente ou anualmente.  
@@ -54,7 +54,7 @@ Mesmo que a palavra “taxa” soe negativa, ela traz benefícios claros quando 
 
 **Practical tip:** **Compare taxas entre diferentes instituições; a diferença de 0,5% ao ano pode significar milhares de reais a mais no seu bolso.**  
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Ignorar as taxas pode corroer seu patrimônio rapidamente.  
 

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é
-O imposto de renda é um tributo cobrado pelo governo sobre a renda auferida por indivíduos e empresas. Ele é uma das principais fontes de receita para o Estado, que utiliza esses recursos para financiar serviços públicos, infraestrutura e programas sociais. No Brasil, o imposto de renda é cobrado sobre a renda bruta, que inclui salários, [dividendos](/glossario/dividendos), juros, aluguéis e outras fontes de renda. É importante entender que o imposto de renda não é o mesmo que o imposto sobre consumo, como o ICMS (Imposto sobre Circulação de Mercadorias e Serviços) ou o ISS (Imposto sobre Serviços), que são cobrados sobre a compra de bens e serviços.
+O imposto de renda é um tributo cobrado pelo governo sobre a renda auferida por indivíduos e empresas. Ele é uma das principais fontes de receita para o Estado, que utiliza esses recursos para financiar serviços públicos, infraestrutura e programas sociais. No Brasil, o imposto de renda é cobrado sobre a renda bruta, que inclui salários, [dividendos](/glossario/dividendos), [juros](/glossario/juros), aluguéis e outras fontes de renda. É importante entender que o imposto de renda não é o mesmo que o imposto sobre consumo, como o ICMS (Imposto sobre Circulação de Mercadorias e Serviços) ou o ISS (Imposto sobre Serviços), que são cobrados sobre a compra de bens e serviços.
 
 ## 
 Aqui estão alguns pontos importantes sobre o imposto de renda:
@@ -37,7 +37,7 @@ O imposto de renda funciona de forma progressiva, ou seja, quanto maior a renda,
 ## Vantagens
 Existem várias vantagens em entender e gerenciar o imposto de renda, como:
 * Reduzir a carga tributária por meio de deduções e abatimentos
-* Aumentar a renda líquida, ou seja, o valor que você leva para casa
+* Aumentar a renda líquida, ou seja, o [valor](/glossario/valor) que você leva para casa
 * Evitar multas e penalidades por atraso ou erro na declaração do imposto de renda
 * **Dica prática:** utilize um aplicativo de [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026), como o [Nubank](/glossario/nubank), para ter controle sobre suas despesas e renda.
 
@@ -59,7 +59,7 @@ Vamos considerar alguns exemplos práticos:
 * Se você tem um salário de R$ 6.000 por mês e uma renda adicional de R$ 1.000 por mês com aluguel, você deve declarar ambas as rendas no seu imposto de renda
 
 ## Comece hoje
-Agora que você entende melhor o imposto de renda, é hora de começar a gerenciar sua renda e reduzir sua carga tributária. **Dica prática:** comece a organizar seus comprovantes de renda e despesas e utilize um aplicativo de [gestão financeira](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) para ter controle sobre suas finanças. Lembre-se de que o imposto de renda é uma parte importante da sua gestão financeira e que, com as dicas práticas certas, você pode reduzir sua carga tributária e aumentar sua renda líquida. Comece hoje a gerenciar seu imposto de renda e a construir um futuro financeiro mais seguro!
+Agora que você entende melhor o imposto de renda, é hora de começar a gerenciar sua renda e reduzir sua carga tributária. **Dica prática:** comece a organizar seus comprovantes de renda e despesas e utilize um aplicativo de [gestão financeira](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) para ter controle sobre suas finanças. Lembre-se de que o imposto de renda é uma parte importante da sua [gestão financeira](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) e que, com as [dicas](/posts/7-erros-financeiros-iniciante) práticas certas, você pode reduzir sua carga tributária e aumentar sua renda líquida. Comece hoje a gerenciar seu imposto de renda e a construir um futuro financeiro mais seguro!
 
 ---
 

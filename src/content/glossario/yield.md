@@ -19,7 +19,7 @@ seo:
 ---
 
 ## O que é
-O termo "yield" é frequentemente usado no contexto de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e finanças, mas o que ele realmente significa? Em português, "yield" é traduzido como "rendimento" ou "retorno". No mundo dos investimentos, o yield refere-se ao retorno que você obtém sobre um investimento, geralmente expresso como uma porcentagem. Por exemplo, se você investe R$ 1.000 em uma aplicação que oferece um yield de 10% ao ano, você pode esperar receber R$ 100 em rendimentos ao longo de um ano, totalizando R$ 1.100.
+O termo "yield" é frequentemente usado no contexto de [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) e finanças, mas o que ele realmente significa? Em português, "yield" é traduzido como "rendimento" ou "retorno". No mundo dos investimentos, o yield refere-se ao retorno que você obtém sobre um [investimento](/posts/montando-carteira-diversificada-com-r-500), geralmente expresso como uma porcentagem. Por exemplo, se você investe R$ 1.000 em uma aplicação que oferece um yield de 10% ao ano, você pode esperar receber R$ 100 em rendimentos ao longo de um ano, totalizando R$ 1.100.
 
 Isso pode parecer simples, mas é importante entender que o yield pode variar dependendo do tipo de investimento e das condições de mercado. Além disso, o yield não é apenas sobre a taxa de retorno, mas também sobre a liquidez e o risco associado ao investimento.
 
@@ -32,13 +32,13 @@ O yield funciona de maneira que o investidor recebe uma porcentagem do valor inv
 
 Alguns investimentos populares que oferecem yield incluem:
 * Títulos de dívida, como títulos do tesouro
-* Ações de empresas que pagam dividendos
+* Ações de empresas que pagam [dividendos](/glossario/dividendos)
 * Fundos de investimento em renda fixa
 * Certificados de depósito bancário (CDBs)
 
 ## Vantagens
 O yield oferece várias vantagens para os investidores, incluindo:
-* Rendimento regular: O yield pode fornecer uma fonte de renda regular, o que pode ser particularmente atraente para aqueles que buscam uma renda passiva.
+* Rendimento regular: O yield pode fornecer uma fonte de renda regular, o que pode ser particularmente atraente para aqueles que buscam uma [renda passiva](/posts/fundos-imobiliarios-para-iniciantes-guia-completo).
 * [Diversificação](/glossario/diversificacao): Investir em diferentes tipos de ativos com yield pode ajudar a diversificar o seu portfólio e reduzir o risco.
 * Potencial de crescimento: Alguns investimentos com yield, como ações de empresas que pagam dividendos, podem oferecer potencial de crescimento a longo prazo.
 
@@ -59,7 +59,7 @@ Como qualquer investimento, o yield também envolve riscos. Alguns dos principai
 ## Exemplos práticos
 Vamos considerar alguns exemplos práticos de como o yield pode funcionar na vida real. Suponha que você ganha R$ 5.000 por mês e deseja investir 10% do seu salário, ou R$ 500, em um fundo de investimento com um yield de 9% ao ano. Ao longo de um ano, você pode esperar receber R$ 45 em rendimentos, o que pode ser reinvestido para aumentar o seu patrimônio.
 
-Outro exemplo é investir em ações de empresas que pagam dividendos. Por exemplo, se você investe R$ 2.000 em ações de uma empresa que paga um dividend yield de 5%, você pode receber R$ 100 em dividendos ao longo do ano, o que pode ser reinvestido para comprar mais ações.
+Outro exemplo é investir em ações de empresas que pagam dividendos. Por exemplo, se você investe R$ 2.000 em ações de uma empresa que paga um [dividend yield](/glossario/dividend-yield) de 5%, você pode receber R$ 100 em dividendos ao longo do ano, o que pode ser reinvestido para comprar mais ações.
 
 ## Comece hoje
 Agora que você entende melhor o que é o yield e como ele funciona, é hora de começar a investir. **Dica prática:** Comece com pequenas quantias e aumente gradualmente à medida que você se torna mais confortável com o investimento. Lembre-se de sempre avaliar o risco e diversificar o seu portfólio. Com o yield trabalhando a seu favor, você pode estar no caminho para alcançar seus objetivos financeiros e construir um futuro mais próspero. Então, não espere mais – comece a investir hoje e veja o seu patrimônio crescer ao longo do tempo!

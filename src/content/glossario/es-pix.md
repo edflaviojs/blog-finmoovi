@@ -35,7 +35,7 @@ PIX é o sistema de pagamentos instantâneos criado pelo Banco Central em 2020. 
 - Autenticação por senha/biometria no app do banco
 - Pode bloquear chaves suspeitas
 
-## Consejos de segurança
+## [Consejos](/es/posts/es-7-errores-financieros-principiante) de segurança
 
 1. Nunca compartilhe senhas ou códigos de verificação
 2. Desconfie de PIX pedidos por WhatsApp (golpe comum)

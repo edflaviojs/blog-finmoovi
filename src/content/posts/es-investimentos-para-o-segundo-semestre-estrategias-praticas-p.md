@@ -24,7 +24,7 @@ seo:
   keywords: ["inversiones","segundo semestre","estrategias prácticas","2024","cartera","seguridad","crecimiento"]
 ---
 
-# Inversiones para el [segundo semestre](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme): estrategias prácticas para 2024
+# [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para el [segundo semestre](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme): estrategias prácticas para 2024
 
 El segundo semestre suele ser más agitado: [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias), fiestas de fin de año y la expectativa de un nuevo ciclo económico. Si aún no tienes un plan definido para los próximos seis meses, este artículo te ofrece un paso‑a‑paso para armar una cartera que combine seguridad y potencial de crecimiento, usando ejemplos reales del día a día en Brasil.
 
@@ -62,7 +62,7 @@ Después de pagar las cuentas, calcula cuánto sobra para nuevos aportes. En el 
 
 ### Paso 2 – Define tu horizonte de tiempo
 
-- **Corto plazo (hasta 12 meses):** objetivo de usar el dinero aún este año (viajes, compra de electrodoméstico).  
+- **Corto plazo (hasta 12 meses):** objetivo de usar el [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) aún este año (viajes, compra de electrodoméstico).  
 - **Mediano plazo (1‑3 años):** metas como entrada para vivienda o auto.  
 - **Largo plazo (5 años o más):** jubilación, [independencia financiera](/es/glossario/es-independencia-financeira).
 

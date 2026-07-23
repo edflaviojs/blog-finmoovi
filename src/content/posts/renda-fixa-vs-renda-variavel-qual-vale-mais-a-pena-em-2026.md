@@ -76,7 +76,7 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 ### Vantagens da renda variável
 
 1. **Potencial de alto retorno** – Em ciclos de crescimento, ações podem multiplicar o capital.
-2. **Diversificação de fontes de renda** – Dividendos, juros sobre capital próprio, ganhos de capital.
+2. **[Diversificação](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) de fontes de renda** – Dividendos, juros sobre capital próprio, ganhos de capital.
 3. **Proteção contra inflação** – Empresas podem ajustar preços, mantendo poder de compra.
 4. **Flexibilidade** – É possível montar carteiras de acordo com setores, temas (tecnologia, energia limpa) ou risco.
 
@@ -118,7 +118,7 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 
 ### Estratégia prática
 
-- **30 %** do patrimônio em Tesouro Selic para liquidez imediata.
+- **30 %** do patrimônio em Tesouro [Selic](/posts/cotacoes-semana-5-junho-2026) para liquidez imediata.
 - **30 %** em CDBs com vencimento em 2‑3 anos, aproveitando a taxa do CDI.
 - **20 %** em LCIs/LCAs para isenção de IR.
 - **20 %** em debêntures de empresas bem avaliadas (rating AA ou superior).

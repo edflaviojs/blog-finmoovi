@@ -12,7 +12,7 @@ readingTime: 1
 
 ## O que é Reserva de Emergência?
 
-A reserva de emergência é um colchão financeiro que protege você de imprevistos. É o [dinheiro](/posts/cashback-inteligente) que você pode acessar rapidamente quando algo inesperado acontece.
+A reserva de emergência é um colchão [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) que protege você de imprevistos. É o [dinheiro](/posts/cashback-inteligente) que você pode acessar rapidamente quando algo inesperado acontece.
 
 ## Quanto guardar?
 
@@ -21,11 +21,11 @@ A recomendação é ter entre **3 a 6 meses** dos seus [gastos](/posts/5-dicas-p
 ## Onde deixar?
 
 A reserva precisa ter **[liquidez](/glossario/liquidez) diária** (acesso imediato):
-- Tesouro Selic
+- Tesouro [Selic](/glossario/selic)
 - CDB com liquidez diária (100% CDI ou mais)
 - Conta remunerada
 
-**Nunca** deixe em ações, [fundos imobiliários](/glossario/fundos-imobiliarios) ou investimentos com prazo de resgate.
+**Nunca** deixe em [ações](/glossario/acoes), [fundos imobiliários](/glossario/fundos-imobiliarios) ou [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) com prazo de resgate.
 
 ## Como montar?
 

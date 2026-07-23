@@ -37,7 +37,7 @@ Quando você adquire uma opção, paga um prêmio ao vendedor (também chamado d
 
 ## Vantagens
 
-As opções oferecem flexibilidade e alavancagem, permitindo que você participe de grandes movimentos de preço com um investimento inicial bem menor que o necessário para comprar o ativo à vista. Elas também servem como ferramenta de proteção de carteira, reduzindo riscos em momentos de alta [volatilidade](/glossario/volatilidade).
+As opções oferecem flexibilidade e [alavancagem](/glossario/alavancagem), permitindo que você participe de grandes movimentos de preço com um investimento inicial bem menor que o necessário para comprar o ativo à vista. Elas também servem como ferramenta de proteção de carteira, reduzindo [riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em momentos de alta [volatilidade](/glossario/volatilidade).
 
 ![Vantagens](/images/glossario/opcao-inline-3.webp)
 
@@ -46,13 +46,13 @@ As opções oferecem flexibilidade e alavancagem, permitindo que você participe
 - **Alavancagem:** com R$ 500 de prêmio você pode controlar R$ 20.000 em ações.  
 - **Proteção:** um investidor que tem ações pode comprar puts para limitar perdas se o preço cair.  
 - **[Diversificação](/glossario/diversificacao):** permite montar estratégias que combinam diferentes cenários de mercado, como spreads e straddles.  
-- **Liquidez:** opções de ações de empresas brasileiras costumam ter boa negociação nas bolsas.
+- **[Liquidez](/glossario/liquidez):** opções de ações de empresas brasileiras costumam ter boa negociação nas bolsas.
 
 ## Riscos
 
 Apesar das vantagens, as opções carregam riscos que não podem ser ignorados. O principal risco é a perda total do prêmio pago, que pode acontecer se a opção expirar fora do [dinheiro](/posts/cashback-inteligente) (out‑of‑the‑money). Além disso, estratégias mais avançadas podem gerar perdas ilimitadas, especialmente quando você vende opções sem cobertura.
 
-- **Perda total do prêmio:** se a ação não atingir o preço de exercício, o dinheiro investido desaparece.  
+- **Perda total do prêmio:** se a ação não atingir o preço de exercício, o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) investido desaparece.  
 - **Complexidade:** entender grego das opções (Delta, Gamma, Theta) exige estudo e prática.  
 - **Vencimento:** ao contrário de ações, opções têm prazo limitado; o tempo correndo contra você pode reduzir o valor da opção (efeito “theta”).  
 - **Alavancagem excessiva:** pode amplificar perdas se o mercado se mover contra a sua posição.

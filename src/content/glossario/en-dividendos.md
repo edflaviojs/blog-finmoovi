@@ -22,7 +22,7 @@ Dividends are the portion of a company's profit that is distributed to its share
 
 ## Dividends in Brazil
 
-- They are **exempt from Income Tax** for individuals
+- They are **exempt from [Income](/en/posts/en-montando-carteira-diversificada-com-r-500) Tax** for individuals
 - Brazilian companies are required to distribute at least 25% of their profit
 - Sectors that pay the most: banks, electricity companies, telecommunications
 

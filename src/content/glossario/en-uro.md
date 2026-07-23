@@ -20,7 +20,7 @@ seo:
 
 ## What it is
 
-A **URO** (Unidade de Referência de Operações) é um índice criado por bancos brasileiros para corrigir contratos de crédito de longo prazo, como financiamentos de veículos ou empréstimos consignados. Funciona como uma “régua” que ajusta o valor da dívida de acordo com a variação de juros e inflação, garantindo que o credor receba o poder de compra original. Diferente do CDI (Certificado de Depósito Interbancário) – que mede a taxa média de empréstimos entre bancos – a URO costuma ser um pouco mais alta, porque inclui um “plus” de risco e administração. Em termos simples, pense na URO como o preço que você paga para “alugar” dinheiro por um período maior que um mês.
+A **URO** (Unidade de Referência de Operações) é um índice criado por bancos brasileiros para corrigir contratos de crédito de longo prazo, como financiamentos de veículos ou empréstimos consignados. Funciona como uma “régua” que ajusta o [valor](/en/glossario/en-valor) da dívida de acordo com a variação de [juros](/en/glossario/en-juros) e inflação, garantindo que o credor receba o poder de compra original. Diferente do CDI (Certificado de Depósito Interbancário) – que mede a taxa média de empréstimos entre bancos – a URO costuma ser um pouco mais alta, porque inclui um “plus” de risco e administração. Em termos simples, pense na URO como o preço que você paga para “alugar” dinheiro por um período maior que um mês.
 
 ![What it is](/images/glossario/uro-inline-1.webp)
 
@@ -45,7 +45,7 @@ A taxa da URO é divulgada pelos bancos e costuma ficar entre 0,8 % e 1,2 % 
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 - **Custo efetivo maior:** por ser uma taxa mais alta que o CDI, o valor total pago ao final do contrato pode ser significativamente superior ao de um empréstimo com taxa fixa.
 - **Efeito de juros compostos:** a capitalização mensal faz a dívida crescer de forma exponencial, o que pode surpreender quem não acompanha o saldo.

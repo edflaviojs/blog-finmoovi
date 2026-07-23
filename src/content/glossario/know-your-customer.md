@@ -46,7 +46,7 @@ KYC (Conheça Seu Cliente) é o processo que bancos e corretoras usam para verif
 - Exchanges de criptomoedas
 - Fintechs e carteiras digitais
 - Empréstimos e financiamentos
-- Investimentos acima de certos valores
+- [Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) acima de certos valores
 
 ## [Dicas](/posts/7-erros-financeiros-iniciante)
 

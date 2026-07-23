@@ -19,7 +19,7 @@ seo:
 ---
 
 ## What it is
-O termo "zero coupon" pode parecer complicado, mas é mais simples do que você imagina. Basicamente, um zero coupon é um tipo de título de dívida que não paga juros periódicos, como os tradicionais títulos de dívida. Em vez disso, o investidor recebe o valor total do título no vencimento, que inclui o principal mais os juros acumulados. Isso significa que você não receberá pagamentos regulares, mas sim um valor maior no final do período de investimento.
+O termo "zero coupon" pode parecer complicado, mas é mais simples do que você imagina. Basicamente, um zero coupon é um tipo de título de dívida que não paga [juros](/en/glossario/en-juros) periódicos, como os tradicionais títulos de dívida. Em vez disso, o investidor recebe o valor total do título no vencimento, que inclui o principal mais os juros acumulados. Isso significa que você não receberá pagamentos regulares, mas sim um valor maior no final do período de investimento.
 
 * Títulos de dívida: são instrumentos financeiros que representam um empréstimo feito por um investidor a uma empresa ou governo.
 * Juros: são os rendimentos pagos sobre o principal investido, geralmente expressos como uma porcentagem anual.
@@ -48,7 +48,7 @@ Os zero coupons têm algumas vantagens sobre outros tipos de investimentos. Uma 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 No entanto, os zero coupons também têm alguns riscos. Um deles é o risco de crédito, que mencionei anteriormente. Outro risco é o risco de inflação, que pode reduzir o valor real do dinheiro que você receberá no vencimento. Além disso, os zero coupons podem ter um risco de liquidez, ou seja, o risco de que você não possa vender o título antes do vencimento.
 
-**Practical tip:** É importante diversificar seus investimentos para reduzir o risco de crédito e outros riscos. Isso significa que você deve investir em diferentes tipos de ativos, como ações, títulos de dívida e [fundos](/en/glossario/en-fundos) de investimento.
+**Practical tip:** É importante diversificar seus investimentos para reduzir o risco de crédito e outros riscos. Isso significa que você deve investir em diferentes tipos de ativos, como [ações](/en/glossario/en-acoes), títulos de dívida e [fundos](/en/glossario/en-fundos) de investimento.
 
 ## Practical examples
 Vamos considerar um exemplo prático. Suponha que você ganhe R$5.000,00 por mês e queira investir R$1.000,00 por mês em zero coupons. Você pode comprar zero coupons com prazo de 5 anos e valor nominal de R$1.000,00. Durante os 5 anos, você não receberá juros, mas no final do período, você receberá R$1.000,00 por cada zero coupon que comprou. Isso significa que você terá um rendimento de R$5.000,00, que é a diferença entre o valor nominal e o valor pago.

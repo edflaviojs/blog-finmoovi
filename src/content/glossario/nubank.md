@@ -32,7 +32,7 @@ A conta Nubank funciona como uma conta corrente comum: você recebe salário, pa
 - **Abertura:** basta baixar o app, inserir CPF e documentos; a aprovação costuma ser instantânea.  
 - **Cartão:** ao solicitar, o cartão chega em até 10 dias úteis e já vem pronto para uso.  
 - **Pagamentos:** QR Code, NFC (aproximação) ou digitação do número da conta são aceitos.  
-- **Investimentos:** a NuConta permite aplicar em CDBs e [fundos](/glossario/fundos) com rendimento automático.
+- **[Investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026):** a NuConta permite aplicar em CDBs e [fundos](/glossario/fundos) com rendimento automático.
 
 ## Vantagens
 
@@ -42,7 +42,7 @@ Usar o Nubank traz benefícios que facilitam a vida de quem ganha entre R$3.000 
 
 
 
-- **Zero anuidade:** o cartão de crédito não cobra taxa anual, o que economiza até R$300 por ano.  
+- **Zero anuidade:** o cartão de crédito não cobra [taxa](/glossario/taxa) anual, o que economiza até R$300 por ano.  
 - **Tarifas reduzidas:** transferências (TED/DOC) são gratuitas, ao contrário de muitos bancos tradicionais.  
 - **Controle em tempo real:** o app mostra cada gasto imediatamente, ajudando no [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme).  
 - **Programa de pontos:** o Nubank Rewards (opcional) converte gastos em pontos que podem ser trocados por passagens ou produtos.  
@@ -53,7 +53,7 @@ Usar o Nubank traz benefícios que facilitam a vida de quem ganha entre R$3.000 
 Apesar das vantagens, é importante estar ciente de alguns cuidados.
 
 - **Limite de crédito:** o limite inicial pode ser conservador; usar todo o limite pode gerar [juros](/glossario/juros) altos se não pagar a fatura integral.  
-- **Dependência digital:** se o celular travar ou a internet cair, você fica sem acesso imediato ao dinheiro.  
+- **Dependência digital:** se o celular travar ou a internet cair, você fica sem acesso imediato ao [dinheiro](/posts/cashback-inteligente).  
 - **Segurança:** embora o app tenha autenticação de dois fatores, golpes de phishing ainda podem acontecer.  
 - **Ausência de agências:** quem prefere atendimento presencial pode sentir falta de um balcão para resolver questões mais complexas.
 
@@ -64,7 +64,7 @@ Apesar das vantagens, é importante estar ciente de alguns cuidados.
 Veja como o Nubank pode mudar a rotina financeira de quem tem salários diferentes.
 
 - **Salário R$3.500:** ao usar o cartão sem anuidade, você economiza R$300/ano. Se pagar a fatura integral, evita juros de até 12% ao mês.  
-- **Salário R$5.200:** ao transferir o salário para a NuConta, você pode aplicar R$2.000 em CDB com rendimento de 102% do CDI, gerando cerca de R$30 de lucro ao mês.  
+- **Salário R$5.200:** ao transferir o salário para a NuConta, você pode aplicar R$2.000 em [CDB](/glossario/cdb) com rendimento de 102% do CDI, gerando cerca de R$30 de lucro ao mês.  
 - **Salário R$7.800:** ao usar o programa de pontos, cada R$1 gasto gera 1 ponto; ao gastar R$2.000 em supermercado, você acumula 2.000 pontos, que podem virar R$200 em descontos de viagens.  
 
 **Dica prática:** programe o débito automático das contas fixas (energia, internet) para o dia 5, assim o saldo da NuConta fica sempre disponível para emergências.

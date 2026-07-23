@@ -35,8 +35,8 @@ Quando você compra uma ação, você está comprando uma parte daquela empresa 
 
 ## Vantagens
 As ações oferecem várias vantagens para os investidores, incluindo:
-* Potencial de alto retorno: as ações têm o potencial de oferecer retornos mais altos do que outros investimentos, como títulos ou contas poupança.
-* Liquidez: as ações podem ser facilmente compradas e vendidas em bolsas de valores.
+* Potencial de alto retorno: as ações têm o potencial de oferecer retornos mais altos do que outros [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), como títulos ou contas [poupança](/glossario/poupanca).
+* [Liquidez](/glossario/liquidez): as ações podem ser facilmente compradas e vendidas em bolsas de valores.
 * [Diversificação](/glossario/diversificacao): as ações permitem que os investidores diversifiquem seus portfólios, reduzindo o risco de perda.
 
 **Dica prática:** _Para começar a investir em ações, é importante definir seus objetivos financeiros e tolerância ao risco. Isso ajudará a determinar qual tipo de ação é mais adequado para você._
@@ -47,7 +47,7 @@ As ações oferecem várias vantagens para os investidores, incluindo:
 
 ## Riscos
 No entanto, as ações também envolvem riscos, incluindo:
-* Risco de perda: o valor das ações pode cair, resultando em perda de dinheiro.
+* Risco de perda: o valor das ações pode cair, resultando em perda de [dinheiro](/posts/como-criar-uma-reserva-de-emergencia).
 * Risco de liquidez: em alguns casos, pode ser difícil vender ações rapidamente o suficiente ou pelo preço desejado.
 * Risco de empresa: a empresa pode ter problemas financeiros ou operacionais que afetem o valor de suas ações.
 

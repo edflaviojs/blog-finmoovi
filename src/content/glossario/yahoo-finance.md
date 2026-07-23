@@ -38,7 +38,7 @@ Tudo isso é atualizado a cada poucos segundos, permitindo que você tome decis�
 
 ## Vantagens
 
-Usar Yahoo Finance traz benefícios claros para quem quer organizar suas finanças pessoais:
+Usar Yahoo Finance traz benefícios claros para quem quer organizar suas [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su):
 
 ![Vantagens](/images/glossario/yahoo-finance-inline-3.webp)
 
@@ -46,7 +46,7 @@ Usar Yahoo Finance traz benefícios claros para quem quer organizar suas finan
 
 - **Gratuito**: não há cobrança mensal nem necessidade de cartão de crédito.
 - **Acessível**: funciona em computador, tablet e smartphone, facilitando o acompanhamento onde quer que você esteja.
-- **Diversificado**: cobre ações brasileiras, estrangeiras, fundos imobiliários, ETFs (fundos negociados em bolsa) e até criptomoedas.
+- **Diversificado**: cobre ações brasileiras, estrangeiras, [fundos imobiliários](/glossario/fundos-imobiliarios), ETFs (fundos negociados em bolsa) e até criptomoedas.
 - **Educativo**: oferece glossário de termos (ex.: “dividendo” – parte do lucro distribuída ao acionista) e tutoriais que ajudam iniciantes a entender o mercado.
 
 **Dica prática:** **Configure alertas de preço** para receber notificação quando a ação que você acompanha subir ou cair 5 % em um dia. Assim você reage rápido sem precisar ficar checando o site o tempo todo.
@@ -65,7 +65,7 @@ Apesar das vantagens, é preciso estar ciente dos riscos ao usar Yahoo Finance
 
 Vamos imaginar três perfis de leitores que recebem salários diferentes e como podem usar Yahoo Finance no dia a dia:
 
-- **Ana, R$3.500**: trabalha como assistente administrativo e quer começar a investir em fundos imobiliários (FIIs). Ela acessa a aba “Fundos” do Yahoo Finance, filtra por “Dividend Yield” acima de 6 % e escolhe dois fundos que pagam R$30 mensais por cota. Assim, com um investimento de R$1.000, ela gera uma renda extra de R$60 por mês.
+- **Ana, R$3.500**: trabalha como assistente administrativo e quer começar a investir em fundos imobiliários (FIIs). Ela acessa a aba “Fundos” do Yahoo Finance, filtra por “[Dividend Yield](/glossario/dividend-yield)” acima de 6 % e escolhe dois fundos que pagam R$30 mensais por cota. Assim, com um investimento de R$1.000, ela gera uma renda extra de R$60 por mês.
 - **Bruno, R$5.800**: engenheiro que já possui ações da Vale (VALE3). Ele cria um alerta de preço para ser notificado se a ação cair 7 % em um dia, o que historicamente indica oportunidade de compra. Quando o alerta dispara, ele compra 20 ações a R$80 cada, aproveitando a queda.
 - **Carla, R$8.000**: gerente de marketing que diversifica entre ações brasileiras e estrangeiras. No Yahoo Finance, ela acompanha o índice S&P 500 (ticker ^GSPC) e usa a calculadora de rentabilidade para comparar o retorno de um ETF que replica o índice (IVVB11) com o de um fundo de ações locais. Essa comparação ajuda a decidir onde alocar R$5.000 do seu portfólio.
 
@@ -82,7 +82,7 @@ Se você ainda não tem conta em nenhum corretor, o primeiro passo é abrir uma 
 - Defina alertas de preço e de notícias relevantes para o ativo escolhido.
 - Anote as informações principais (preço de compra, objetivo de venda, dividendos esperados) em uma planilha simples ou no próprio app.
 
-Com esses passos, você transforma o Yahoo Finance em uma extensão do seu planejamento financeiro, sem custos adicionais.
+Com esses passos, você transforma o Yahoo Finance em uma extensão do seu [planejamento financeiro](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme), sem custos adicionais.
 
 ## Comece hoje
 

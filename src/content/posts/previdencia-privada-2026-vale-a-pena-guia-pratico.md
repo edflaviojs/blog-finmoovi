@@ -19,7 +19,7 @@ seo:
 
 ## O que é [previdência privada](/glossario/previdencia-privada)?
 
-A previdência privada, também chamada de plano de previdência complementar, funciona como um *poupador de longo prazo* que você alimenta ao longo da vida profissional. O [dinheiro](/posts/cashback-inteligente) é aplicado em fundos administrados por instituições financeiras e, ao se aposentar, você recebe um benefício mensal (renda) ou um valor único.
+A previdência privada, também chamada de plano de previdência complementar, funciona como um *poupador de longo prazo* que você alimenta ao longo da vida profissional. O [dinheiro](/posts/cashback-inteligente) é aplicado em [fundos](/glossario/fundos) administrados por instituições financeiras e, ao se aposentar, você recebe um benefício mensal (renda) ou um valor único.
 
 Dois tipos principais de planos existem no Brasil:
 
@@ -28,7 +28,7 @@ Dois tipos principais de planos existem no Brasil:
 | **PGBL** (Plano Gerador de Benefício Livre) | As contribuições são dedutíveis do [Imposto de Renda](/glossario/imposto-de-renda) (até 12% da renda bruta). | Na aposentadoria, o imposto incide sobre o total (contribuições + rendimentos). |
 | **VGBL** (Vida Gerador de Benefício Livre) | Não há dedução fiscal nas contribuições. | O imposto incide apenas sobre os rendimentos na hora do resgate. |
 
-Essas siglas podem parecer confusas, mas a ideia central é simples: você coloca dinheiro, ele rende e, no futuro, transforma‑se em renda.
+Essas siglas podem parecer confusas, mas a ideia central é simples: você coloca [dinheiro](/posts/como-criar-uma-reserva-de-emergencia), ele rende e, no futuro, transforma‑se em renda.
 
 ## Como funciona a previdência privada em 2026?
 
@@ -54,7 +54,7 @@ Mesmo que a taxa de administração tenha caído, ela ainda pode corroer boa par
 | **Performance** | Cobrança sobre o rendimento que supera um índice de referência (ex.: CDI). | 10% – 20% do que exceder o benchmark. |
 | **Carregamento** | Cobrança na entrada (ou saída) de recursos. | Pode chegar a 5% no ingresso, mas a maioria dos planos já eliminou essa taxa. |
 
-Além dessas, fique de olho no **IOF** (Imposto sobre Operações Financeiras) que incide nos primeiros 30 dias de aplicação. Se precisar resgatar antes desse prazo, o IOF será cobrado de forma regressiva, chegando a 96% nos primeiros dias.
+Além dessas, fique de olho no **IOF** (Imposto sobre Operações Financeiras) que incide nos primeiros 30 dias de [aplicação](/glossario/aplicacao). Se precisar resgatar antes desse prazo, o IOF será cobrado de forma regressiva, chegando a 96% nos primeiros dias.
 
 ## Simulação prática – quanto rende na prática?
 
@@ -76,13 +76,13 @@ Esses números assumem que você **não faz nenhum resgate** antes da aposentado
 
 ## Comparação com alternativas de investimento
 
-| Produto | Rentabilidade média 2025‑2026 | Liquidez | Custos | Ideal para |
+| Produto | Rentabilidade média 2025‑2026 | [Liquidez](/glossario/liquidez) | Custos | Ideal para |
 |--------|------------------------------|----------|--------|------------|
 | **Previdência (PGBL/VGBL)** | 6% a 7% ao ano (dependendo do fundo) | Baixa – só resgate na aposentadoria ou em casos específicos | Taxas de admin 1,5‑2,5% | Planejamento de aposentadoria, benefício fiscal |
 | **CDB (Certificado de Depósito Bancário)** | 100% do CDI (aprox. 5,5% ao ano) | Média – resgate após 30 dias | Taxas quase nulas | Quem busca prazo curto a médio |
 | **[Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)** | 100% da taxa Selic (aprox. 5,75% ao ano) | Alta – resgate diário | Custos de custódia ~0,2% ao ano | Perfil conservador, [reserva de emergência](/glossario/reserva-de-emergencia) |
 
-A principal vantagem da previdência é o **benefício fiscal** (no caso do PGBL) e a possibilidade de transformar o saldo em renda mensal garantida. Porém, se a sua prioridade for **acesso rápido ao dinheiro**, o Tesouro Selic ou o CDB são mais adequados.
+A principal vantagem da previdência é o **benefício fiscal** (no caso do PGBL) e a possibilidade de transformar o saldo em renda mensal garantida. Porém, se a sua prioridade for **acesso rápido ao [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso)**, o Tesouro Selic ou o CDB são mais adequados.
 
 ## Riscos e cuidados
 
@@ -113,3 +113,4 @@ Ao seguir esses passos, você terá clareza para decidir se a previdência priva
 ---
 
 **Para acompanhar seus investimentos em um só lugar, [teste o FinMoovi grátis por 7 dias](https://finmoovi.com) — multi‑moeda, relatórios inteligentes e 100% offline.**
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é [previdência privada](/glossario/previdencia-privada)?","acceptedAnswer":{"@type":"Answer","text":"A previdência privada, também chamada de plano de previdência complementar, funciona como um poupador de longo prazo que você alimenta ao longo da vida profissional. O dinheiro é aplicado em fundos administrados por instituições financeiras e, ao se aposentar, você recebe um benefício mensal (renda)"}},{"@type":"Question","name":"Como funciona a previdência privada em 2026?","acceptedAnswer":{"@type":"Answer","text":"Em 2026 o cenário mudou em três pontos críticos: Como funciona a previdência privada em 2026?"}},{"@type":"Question","name":"Simulação prática – quanto rende na prática?","acceptedAnswer":{"@type":"Answer","text":"Vamos supor que você tenha três perfis de aporte mensal: R$500, R$1.000 e R$5.000. Usaremos um fundo de renda fixa com taxa de administração de 1,8% ao ano e rendimento médio de 6,5% ao ano (aproximado do CDI + 0,5%)."}}]} -->

@@ -18,7 +18,7 @@ PIX is the instant payment system created by the Banco Central in 2020. It allow
 1. You register a "PIX key" (CPF, email, phone number or random key)
 2. To receive, just provide your key
 3. To pay, use the recipient's key or QR Code
-4. The money is transferred immediately
+4. The [money](/en/posts/en-avoid-impulse-purchases) is transferred immediately
 
 ## Advantages
 
@@ -45,4 +45,4 @@ PIX is the instant payment system created by the Banco Central in 2020. It allow
 
 ## PIX and financial control
 
-PIX makes it easier to track expenses because all transactions are recorded in the statement. Apps like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) automatically categorize your PIX transactions so you know exactly where your money is going.
+PIX makes it easier to track [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) because all transactions are recorded in the statement. Apps like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) automatically categorize your PIX transactions so you know exactly where your money is going.

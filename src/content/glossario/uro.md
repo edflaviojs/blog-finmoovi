@@ -28,10 +28,10 @@ URO (Unidade de Referência Operacional) é um índice criado por algumas instit
 
 ## Como funciona
 
-Quando você contrata um empréstimo ou investe em um produto que usa o URO como referência, a taxa de juros é expressa como um percentual acima ou abaixo desse índice. Por exemplo, um financiamento de carro pode ter a taxa “URO + 2% ao ano”. Se o URO estiver em 5,5% ao ano, o custo total será 7,5% ao ano. O cálculo costuma ser feito da seguinte forma:
+Quando você contrata um empréstimo ou investe em um produto que usa o URO como referência, a taxa de juros é expressa como um percentual acima ou abaixo desse índice. Por exemplo, um [financiamento](/glossario/financiamento) de carro pode ter a taxa “URO + 2% ao ano”. Se o URO estiver em 5,5% ao ano, o custo total será 7,5% ao ano. O cálculo costuma ser feito da seguinte forma:
 
 - **Valor base** = saldo devedor ou valor investido
-- **Taxa total** = URO + spread (spread = margem de lucro do banco)
+- **Taxa total** = URO + spread (spread = [margem de lucro](/glossario/margem-de-lucro) do banco)
 - **Juros** = Valor base × Taxa total × (dias/365)
 
 O spread varia conforme o perfil de risco do cliente, o tipo de operação e a concorrência do mercado.
@@ -59,7 +59,7 @@ Imagine que você ganha R$4.500 por mês e quer comprar um carro no valor de R$6
 - **Cálculo dos juros mensais**: 7,0% ÷ 12 = 0,583% ao mês.
 - **Parcela aproximada**: R$48.000 × (0,00583) ≈ R$280 de juros mensais + amortização, resultando em cerca de R$1.300 por mês.
 
-Se você tem R$3.800 de renda disponível após despesas fixas, ainda cabe a parcela, mas é preciso analisar o impacto no orçamento.
+Se você tem R$3.800 de renda disponível após despesas fixas, ainda cabe a parcela, mas é preciso analisar o impacto no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias).
 
 Outro caso: você tem R$6.000 de renda mensal e decide aplicar R$20.000 em um CDB que paga “URO + 0,5% ao ano”. Com o URO em 5,2%, a taxa total será 5,7% ao ano, gerando aproximadamente R$1.140 de rendimento ao ano (R$95 por mês). Essa aplicação pode ser interessante para quem busca segurança e liquidez.
 
@@ -69,7 +69,7 @@ Outro caso: você tem R$6.000 de renda mensal e decide aplicar R$20.000 em um CD
 - **Calcule o spread**: compare diferentes ofertas (empréstimo, financiamento, CDB) e veja qual spread está sendo cobrado.
 - **Monte um orçamento**: inclua a parcela ou o rendimento esperado e garanta que o valor não comprometa mais de 30% da sua renda disponível.
 - **Negocie**: se o spread parecer alto, peça redução ou procure outra instituição que ofereça condições melhores.
-- **Use ferramentas**: aplicativos de controle financeiro, como o **Mobills** ou o **Guiabolso**, ajudam a simular o impacto do URO no seu bolso antes de fechar o contrato.
+- **Use ferramentas**: aplicativos de controle financeiro, como o **[Mobills](/posts/5-alternativas-ao-mobills-em-2026)** ou o **Guiabolso**, ajudam a simular o impacto do URO no seu bolso antes de fechar o contrato.
 
 ## Comece hoje
 

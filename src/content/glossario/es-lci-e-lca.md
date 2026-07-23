@@ -25,8 +25,8 @@ Para o investidor, funcionam da mesma forma.
 
 - Isenção de IR (rendimento líquido maior)
 - Proteção do FGC até R$ 250.000
-- Rendimento geralmente atrelado ao CDI (85-100%)
-- Segurança similar ao CDB
+- Rendimento geralmente atrelado ao [CDI](/es/glossario/es-cdi) (85-100%)
+- Segurança similar ao [CDB](/es/glossario/es-cdb)
 
 ## Desventajas
 

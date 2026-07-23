@@ -17,7 +17,7 @@ Net Worth = Assets - Liabilities. In other words: everything you have minus ever
 
 ### Your Assets (what you have)
 
-- [Money](/en/posts/en-30-day-rule-for-purchases) in account and investments
+- [Money](/en/posts/en-30-day-rule-for-purchases) in account and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 - Real estate (market value)
 - Vehicles (market value)
 - Other valuable assets
@@ -52,7 +52,7 @@ Net Worth = Assets - Liabilities. In other words: everything you have minus ever
 - Shows if you're getting richer or poorer
 - Allows setting concrete goals (e.g. "I want R$ 1 million in net worth")
 - Reveals if your debts are under control
-- Is more important than salary (high income with high debts = low net worth)
+- Is more important than salary (high [income](/en/posts/en-montando-carteira-diversificada-com-r-500) with high debts = low net worth)
 
 ## Net Worth goal by age (reference)
 

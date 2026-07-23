@@ -20,7 +20,7 @@ seo:
 
 ## O que é
 
-A poupança é a conta bancária mais conhecida no Brasil para guardar dinheiro e receber juros. Ela funciona como um “cofrinho” digital: você deposita um valor, o banco guarda e paga uma remuneração mensal, que costuma ser menor que a de outros investimentos, mas tem a vantagem de ser muito simples e ter garantia do Fundo Garantidor de Créditos (FGC) até R$ 250 mil por instituição.
+A poupança é a conta bancária mais conhecida no Brasil para guardar [dinheiro](/posts/cashback-inteligente) e receber juros. Ela funciona como um “cofrinho” digital: você deposita um valor, o banco guarda e paga uma remuneração mensal, que costuma ser menor que a de outros [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), mas tem a vantagem de ser muito simples e ter garantia do Fundo Garantidor de Créditos (FGC) até R$ 250 mil por instituição.
 
 ![O que é](/images/glossario/poupanca-inline-1.webp)
 
@@ -31,7 +31,7 @@ A poupança é a conta bancária mais conhecida no Brasil para guardar dinheiro 
 Quando você coloca dinheiro na poupança, o banco calcula o rendimento com base na Taxa Referencial (TR) + 0,5 % ao mês, ou 70 % da taxa Selic quando ela está acima de 8,5 % ao ano. O cálculo é feito automaticamente e o [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) aparece na sua conta no dia do aniversário do depósito.
 
 - **Depósito:** pode ser feito a qualquer momento, por transferência, DOC, TED ou até mesmo em caixa eletrônico.  
-- **Rendimento:** só é creditado a cada 30 dias, na data de aniversário da aplicação.  
+- **Rendimento:** só é creditado a cada 30 dias, na data de aniversário da [aplicação](/glossario/aplicacao).  
 - **Liquidez:** você pode sacar o dinheiro a qualquer hora, sem multa, mas perde o rendimento do dia.
 
 ## Vantagens
@@ -52,7 +52,7 @@ A poupança tem alguns pontos que a tornam atrativa para quem está começando a
 Mesmo sendo considerada segura, a poupança tem limitações que podem comprometer o objetivo de crescimento do seu patrimônio.
 
 - **Baixo rendimento:** em cenários de alta inflação, a rentabilidade pode ser inferior ao custo de vida, fazendo o poder de compra diminuir.  
-- **Perda de oportunidade:** ao deixar todo o dinheiro na poupança, você pode perder ganhos maiores que outros produtos, como CDBs ou fundos de renda fixa.  
+- **Perda de oportunidade:** ao deixar todo o dinheiro na poupança, você pode perder ganhos maiores que outros produtos, como CDBs ou fundos de [renda fixa](/glossario/renda-fixa).  
 - **Dependência de políticas:** a fórmula de cálculo muda quando a taxa Selic varia, o que pode reduzir ainda mais o retorno.
 
 ## Exemplos práticos

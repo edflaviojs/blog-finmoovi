@@ -19,9 +19,9 @@ seo:
 ---
 
 ## What it is
-A taxa [Selic](/en/posts/en-quotes-semana-1-july-2026) é um conceito fundamental no mundo das finanças brasileiras. Ela é a taxa de [juros](/en/glossario/en-juros) básica da economia, definida pelo Comitê de Política Monetária (Copom) do Banco Central do Brasil. Em outras palavras, é a taxa de juros que os bancos pagam para emprestar dinheiro ao governo e, por sua vez, influencia as taxas de juros de todos os outros empréstimos e investimentos no país. Por exemplo, se você tem um salário de R$ 5.000 por mês e está pensando em investir em um fundo de [renda fixa](/en/glossario/en-renda-fixa), a taxa Selic pode afetar diretamente o retorno do seu investimento.
+A [taxa](/en/glossario/en-taxa) [Selic](/en/posts/en-quotes-semana-1-july-2026) é um conceito fundamental no mundo das finanças brasileiras. Ela é a taxa de [juros](/en/glossario/en-juros) básica da economia, definida pelo Comitê de Política Monetária (Copom) do Banco Central do Brasil. Em outras palavras, é a taxa de juros que os bancos pagam para emprestar dinheiro ao governo e, por sua vez, influencia as taxas de juros de todos os outros empréstimos e investimentos no país. Por exemplo, se você tem um salário de R$ 5.000 por mês e está pensando em investir em um fundo de [renda fixa](/en/glossario/en-renda-fixa), a taxa [Selic](/en/posts/en-quotes-semana-1-june-2026) pode afetar diretamente o retorno do seu investimento.
 
-* A taxa Selic é usada como referência para calcular as taxas de juros de empréstimos e investimentos
+* A taxa [Selic](/en/posts/en-quotes-semana-2-july-2026) é usada como referência para calcular as taxas de juros de empréstimos e investimentos
 * Ela é definida pelo Copom do Banco Central do Brasil
 * A taxa Selic pode influenciar a inflação e o crescimento econômico do país
 
@@ -36,7 +36,7 @@ A taxa Selic é definida pelo Copom do Banco Central do Brasil, que se reúne re
 
 **Practical tip:** É importante entender como a taxa Selic afeta os seus investimentos e empréstimos para tomar decisões informadas sobre seu dinheiro. Por exemplo, se você tem um empréstimo com juros variáveis, uma redução na taxa Selic pode reduzir os juros que você paga.
 
-A taxa Selic também pode influenciar o valor do real em relação a outras moedas. Quando a taxa Selic é alta, o real pode se valorizar em relação a outras moedas, o que pode afetar as exportações e importações do país. Por exemplo, se você é um exportador de produtos brasileiros, uma taxa Selic alta pode tornar seus produtos mais caros para os compradores estrangeiros, o que pode reduzir as vendas.
+A taxa Selic também pode influenciar o [valor](/en/glossario/en-valor) do real em relação a outras moedas. Quando a taxa Selic é alta, o real pode se valorizar em relação a outras moedas, o que pode afetar as exportações e importações do país. Por exemplo, se você é um exportador de produtos brasileiros, uma taxa Selic alta pode tornar seus produtos mais caros para os compradores estrangeiros, o que pode reduzir as vendas.
 
 ## Advantages
 A taxa Selic tem várias vantagens para a economia brasileira. Uma das principais vantagens é que ela ajuda a controlar a inflação. Quando a taxa Selic é alta, os empréstimos se tornam mais caros e as pessoas tendem a poupar mais e gastar menos, o que pode ajudar a reduzir a inflação. Além disso, a taxa Selic pode ajudar a manter a estabilidade econômica do país, o que é importante para atrair investimentos estrangeiros.

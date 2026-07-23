@@ -34,7 +34,7 @@ Quando você compra um título de renda fixa, está adquirindo um contrato que p
 
 - **Previsibilidade:** Você sabe quanto vai receber, o que facilita o planejamento de gastos e metas.  
 - **Segurança:** A maioria dos títulos de renda fixa emitidos por bancos ou pelo Tesouro Nacional tem garantia do Fundo Garantidor de Créditos (FGC) até R$250 mil por pessoa e por instituição.  
-- **Liquidez:** Alguns títulos permitem resgate antes do vencimento sem grandes perdas, como fundos DI ou Tesouro [Selic](/en/posts/en-quotes-semana-1-july-2026).  
+- **Liquidez:** Alguns títulos permitem resgate antes do vencimento sem grandes perdas, como [fundos](/en/glossario/en-fundos) DI ou Tesouro [Selic](/en/posts/en-quotes-semana-1-july-2026).  
 - **[Diversificação](/en/glossario/en-diversificacao):** Mesmo quem tem pouco dinheiro pode montar uma carteira equilibrada, reduzindo a dependência de investimentos mais voláteis.
 
 ![Advantages](/images/glossario/renda-fixa-inline-3.webp)
@@ -51,11 +51,11 @@ Quando você compra um título de renda fixa, está adquirindo um contrato que p
 
 Imagine que você ganha R$4.500 por mês e consegue guardar 10% do salário, ou seja, R$450. Você decide aplicar esse valor em três opções de renda fixa:
 
-- **Tesouro Selic:** Compra um título que rende a taxa Selic (atual 13,75% ao ano). Em 12 meses, seu investimento de R$450 gera aproximadamente R$61 de juros, totalizando R$511.  
+- **Tesouro [Selic](/en/posts/en-quotes-semana-1-june-2026):** Compra um título que rende a taxa [Selic](/en/posts/en-quotes-semana-2-july-2026) (atual 13,75% ao ano). Em 12 meses, seu investimento de R$450 gera aproximadamente R$61 de juros, totalizando R$511.  
 - **CDB de 100% do CDI:** O CDI está em 13,15% ao ano. O mesmo R$450 rende cerca de R$59, chegando a R$509 ao final do ano.  
 - **Tesouro IPCA+ 2026:** Esse título paga a inflação + 4,5% ao ano. Se a inflação for 4% no período, seu rendimento total será 8,5% ao ano, gerando R$38 de juros, totalizando R$488.  
 
-Se você tem um salário de R$7.200 e consegue destinar 15% (R$1.080) para a renda fixa, o efeito do “juros compostos” fica ainda mais evidente. Aplicando R$1.080 todo mês no Tesouro Selic, ao final de 5 anos você terá acumulado mais de R$70 mil, enquanto o mesmo valor em uma poupança renderia menos da metade.
+Se você tem um salário de R$7.200 e consegue destinar 15% (R$1.080) para a renda fixa, o efeito do “juros compostos” fica ainda mais evidente. Aplicando R$1.080 todo mês no Tesouro Selic, ao final de 5 anos você terá acumulado mais de R$70 mil, enquanto o mesmo valor em uma [poupança](/en/glossario/en-poupanca) renderia menos da metade.
 
 ## How to start
 

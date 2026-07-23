@@ -32,9 +32,9 @@ Câmbio es el intercambio de una moneda por otra. Cuando compras dólares para v
 1. **Compre poco a poco** — no intentes acertar el mejor momento
 2. **Compare casas de câmbio** — los spreads varían mucho
 3. **Evite aeropuertos** — las tasas son las peores
-4. **Tarjeta de débito internacional** — generalmente mejor que [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en efectivo
+4. **[Tarjeta de débito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional** — generalmente mejor que [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en efectivo
 5. **IOF:** 4,38% en la tarjeta, 1,1% en efectivo
 
 ## Câmbio e investimentos
 
-Invertir en activos dolarizados (ETFs internacionales, BDRs) es una forma de protegerse de la devaluación del real. Cuando el dólar sube, tus inversiones internacionales valorizan en reales.
+Invertir en activos dolarizados (ETFs internacionales, BDRs) es una forma de protegerse de la devaluación del real. Cuando el dólar sube, tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) internacionales valorizan en reales.

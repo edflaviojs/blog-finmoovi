@@ -32,7 +32,7 @@ A stock (or ação) is a tiny slice of ownership in a company. When you buy 
 
 ## How it works
 
-When a company needs money to expand, it can issue new shares through an IPO (Initial Public Offering). Investors buy those shares, giving the company cash to invest in new projects, equipment, or hiring. After the IPO, the shares start trading on the exchange, and their price changes every minute based on supply and demand.  
+When a company needs [money](/en/posts/en-30-day-rule-for-purchases) to expand, it can issue new shares through an IPO (Initial Public Offering). Investors buy those shares, giving the company cash to invest in new projects, equipment, or hiring. After the IPO, the shares start trading on the exchange, and their price changes every minute based on supply and demand.  
 
 - **Supply and demand** – if many people want a stock, its price goes up; if few want it, the price drops.  
 - **Dividends** – part of the profit that the company may distribute to shareholders, usually quarterly.  
@@ -54,7 +54,7 @@ Owning stocks can be a powerful way to grow your money faster than a traditional
 
 Every investment carries risk, and stocks are no exception. Understanding the downsides helps you avoid unpleasant surprises.  
 
-- **Price volatility** – stock prices can swing wildly in a single day, especially for smaller companies.  
+- **Price [volatility](/en/glossario/en-volatilidade)** – stock prices can swing wildly in a single day, especially for smaller companies.  
 - **Company risk** – if the business performs poorly or goes bankrupt, you could lose most or all of your investment.  
 - **Market risk** – broader economic events (inflation, political instability) can drag down the whole market, even good companies.  
 
@@ -63,7 +63,7 @@ Every investment carries risk, and stocks are no exception. Understanding the do
 Imagine you earn R$5.000 a month and decide to allocate 10 % of your net income (R$500) to buying stocks. Here are three scenarios that illustrate how the numbers can play out.  
 
 - **Scenario 1 – Dividend‑focused**: You buy 10 shares of a utility company at R$50 each (total R$500). The company pays a quarterly dividend of R$2 per share. After a year you receive R$80 in dividends (R$2 × 10 × 4) and still own the shares, which may have appreciated to R$55 each, giving you a paper gain of R$50.  
-- **Scenario 2 – Growth‑oriented**: You purchase 5 shares of a tech startup at R$100 each (R$500). Six months later the stock jumps to R$150, so you could sell for R$750, netting a R$250 capital gain.  
+- **Scenario 2 – Growth‑oriented**: You purchase 5 shares of a tech startup at R$100 each (R$500). Six months later the stock jumps to R$150, so you could sell for R$750, netting a R$250 [capital gain](/en/glossario/en-ganho-de-capital).  
 - **Scenario 3 – Mixed approach**: With a salary of R$8.000, you set aside R$800 (10 %). You split it: R$400 in a dividend‑paying stock at R$40 per share (10 shares) and R$400 in a growth stock at R$80 per share (5 shares). After a year, the dividend stock pays R$1 per share quarterly (R$40 total) and rises to R$45, while the growth stock climbs to R$120, giving you R$200 in capital gains. Your total portfolio value is now R$1.040, a 30 % increase on the original R$800.  
 
 ## How to start
@@ -71,7 +71,7 @@ Imagine you earn R$5.000 a month and decide to allocate 10 % of your net incom
 Getting your first stock is easier than you think, especially with modern apps that turn the process into a few taps. Here’s a step‑by‑step guide you can follow tonight.  
 
 - **Open a brokerage account** – choose a platform that offers low fees and a user‑friendly mobile app (think of a friend recommending “Nubank Invest” because it’s simple and integrates with your existing bank).  
-- **Define your budget** – decide what percentage of your monthly salary you can comfortably invest; a common rule is 5‑10 % of net income.  
+- **Define your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026)** – decide what percentage of your monthly salary you can comfortably invest; a common rule is 5‑10 % of net income.  
 - **Pick your first stocks** – start with companies you already know (e.g., a supermarket chain you shop at) and check their dividend history or growth potential.  
 - **Place the order** – enter the ticker, the number of shares, and the type of order (market order for immediate execution, limit order to set a maximum price).  
 - **Monitor and learn** – keep an eye on price movements, read quarterly reports, and adjust your strategy as you gain confidence.  

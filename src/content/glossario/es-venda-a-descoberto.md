@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-La venta a descubierto, también conocida como “short selling”, es una estrategia que permite ganar dinero cuando el precio de una acción o activo baja. En lugar de comprar el activo esperando que suba, el inversor “vende” algo que no posee, con la idea de recomprarlo más barato después y quedarse con la diferencia.  
+La venta a descubierto, también conocida como “short selling”, es una estrategia que permite ganar [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) cuando el precio de una acción o activo baja. En lugar de comprar el activo esperando que suba, el inversor “vende” algo que no posee, con la idea de recomprarlo más barato después y quedarse con la diferencia.  
 
 ![Qué es](/images/glossario/venda-a-descoberto-inline-1.webp)
 
@@ -59,7 +59,7 @@ Estas ventajas la hacen atractiva para inversores que buscan complementar su car
 
 - **Pérdida ilimitada:** A diferencia de comprar una acción (donde la pérdida máxima es el capital invertido), el precio de una acción puede subir indefinidamente, lo que genera pérdidas sin techo.  
 - **Costos de préstamo:** El corredor cobra una tasa por prestar el activo; si la posición se mantiene mucho tiempo, esos costos pueden erosionar la ganancia.  
-- **Llamada de margen:** Si la posición pierde valor, el corredor puede exigir más capital (margen) para mantener la operación abierta.  
+- **Llamada de margen:** Si la posición pierde [valor](/es/glossario/es-valor), el corredor puede exigir más capital (margen) para mantener la operación abierta.  
 
 En palabras simples, la venta a descubierto es como caminar sobre una cuerda sin red de seguridad: si todo sale bien, llegas al otro lado sin problemas; si algo falla, la caída puede ser profunda.
 
@@ -86,7 +86,7 @@ Una vez que tengas la cuenta y hayas fijado tus reglas, practica con pequeñas c
 
 ## Empieza hoy
 
-No esperes a que el mercado te dé la razón; toma el control y aprende a ganar cuando los precios bajan. Con disciplina, una buena herramienta y los consejos adecuados, la venta a descubierto puede ser una pieza valiosa en tu arsenal financiero. ¡Anímate a probarla y descubre una nueva forma de hacer que tu dinero trabaje para ti!
+No esperes a que el mercado te dé la razón; toma el control y aprende a ganar cuando los precios bajan. Con disciplina, una buena herramienta y los [consejos](/es/posts/es-7-errores-financieros-principiante) adecuados, la venta a descubierto puede ser una pieza valiosa en tu arsenal financiero. ¡Anímate a probarla y descubre una nueva forma de hacer que tu dinero trabaje para ti!
 
 ---
 

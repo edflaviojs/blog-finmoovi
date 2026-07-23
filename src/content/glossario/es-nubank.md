@@ -48,7 +48,7 @@ Nubank se destaca por eliminar muchas de las comisiones que cobran los bancos tr
 
 ## Riesgos
 
-Aunque Nubank es una opción muy cómoda, no está exenta de riesgos. Al ser una fintech, depende de la conectividad a internet; si la app falla o tu móvil se queda sin señal, podrías quedar sin acceso a tu dinero momentáneamente. Además, la tarjeta de crédito tiene un límite que se ajusta según tu historial y tus ingresos; si lo usas al máximo, el score de crédito (puntuación crediticia) puede verse afectado negativamente. Por último, aunque la empresa está regulada por el Banco Central de Brasil, la garantía de fondos está cubierta por el Fondo Garantidor de Créditos (FGC) solo hasta R$ 250.000 por cliente; si mantienes saldos muy altos, deberías diversificar.
+Aunque Nubank es una opción muy cómoda, no está exenta de riesgos. Al ser una fintech, depende de la conectividad a internet; si la app falla o tu móvil se queda sin señal, podrías quedar sin acceso a tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) momentáneamente. Además, la tarjeta de crédito tiene un límite que se ajusta según tu historial y tus ingresos; si lo usas al máximo, el score de crédito (puntuación crediticia) puede verse afectado negativamente. Por último, aunque la empresa está regulada por el Banco Central de Brasil, la garantía de fondos está cubierta por el Fondo Garantidor de Créditos (FGC) solo hasta R$ 250.000 por cliente; si mantienes saldos muy altos, deberías diversificar.
 
 - **Dependencia tecnológica:** sin internet, la app no funciona.  
 - **Límite de crédito:** usar todo el límite puede bajar tu score.  
@@ -62,7 +62,7 @@ Imagina que tienes un salario mensual de R$ 4.500. Con Nubank puedes organizar t
 - **Alimentación:** R$ 800 (subcuenta “Comida”).  
 - **Transporte:** R$ 300 (subcuenta “Movilidad”).  
 - **Ocio y suscripciones:** R$ 500 (subcuenta “Entretenimiento”).  
-- **Ahorro automático:** R$ 600 se transfieren a la cuenta de ahorro Nubank cada día de pago.  
+- **[Ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) automático:** R$ 600 se transfieren a la cuenta de ahorro Nubank cada día de pago.  
 
 Si además utilizas la tarjeta de crédito para pagar el supermercado (R$ 800) y la factura de internet (R$ 120), puedes pagar el total en la fecha de vencimiento sin generar intereses, siempre y cuando pagues el saldo completo. **Consejo práctico:** paga el total de la tarjeta antes de la fecha de corte para evitar cargos de intereses y mantener tu score alto.
 

@@ -9,10 +9,10 @@ publishedAt: 2026-06-13
 ---
 
 ## Introducción a la Alavancagem
-La alavancagem es un concepto fundamental en el mundo de las finanzas que puede ser tanto beneficioso como peligroso, dependiendo de cómo se utilice. En esencia, la alavancagem permite a los inversores utilizar recursos que no son suyos para aumentar el potencial de retorno sobre una inversión. Esto puede hacerse mediante préstamos, líneas de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) o otros instrumentos financieros.
+La alavancagem es un concepto fundamental en el mundo de las finanzas que puede ser tanto beneficioso como peligroso, dependiendo de cómo se utilice. En esencia, la alavancagem permite a los inversores utilizar recursos que no son suyos para aumentar el potencial de retorno sobre una [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500). Esto puede hacerse mediante préstamos, líneas de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) o otros instrumentos financieros.
 
 ## Cómo Funciona la Alavancagem
-Imagina que deseas comprar un inmueble por [valor](/es/glossario/es-valor) de R$ 200.000,00. Tienes R$ 50.000,00 para utilizar como entrada y puedes obtener un préstamo de R$ 150.000,00 para cubrir el resto del costo. Si el valor del inmueble aumenta a R$ 250.000,00, tendrás una ganancia de R$ 50.000,00, lo que representa un retorno del 100% sobre tu inversión inicial de R$ 50.000,00. Sin embargo, si el valor del inmueble disminuye a R$ 150.000,00, tendrás una pérdida de R$ 50.000,00, lo que representa una pérdida del 100% de tu inversión inicial.
+Imagina que deseas comprar un inmueble por [valor](/es/glossario/es-valor) de R$ 200.000,00. Tienes R$ 50.000,00 para utilizar como entrada y puedes obtener un préstamo de R$ 150.000,00 para cubrir el resto del costo. Si el valor del inmueble aumenta a R$ 250.000,00, tendrás una ganancia de R$ 50.000,00, lo que representa un retorno del 100% sobre tu [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) inicial de R$ 50.000,00. Sin embargo, si el valor del inmueble disminuye a R$ 150.000,00, tendrás una pérdida de R$ 50.000,00, lo que representa una pérdida del 100% de tu inversión inicial.
 
 ![Introducción a la Alavancagem](/images/glossario/es-alavancagem-inline-1.webp)
 

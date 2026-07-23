@@ -28,7 +28,7 @@ Aplicação é simplesmente colocar seu dinheiro em algum produto financeiro esp
 - **CDB** (Certificado de Depósito Bancário) – funciona como um empréstimo ao banco.  
 - **Tesouro Direto** – compra de títulos emitidos pelo governo.  
 - **Fundos de investimento** – grupos de recursos administrados por gestores profissionais.  
-- **LCI/LCA** (Letras de Crédito Imobiliário/Agrícola) – títulos isentos de imposto de renda para quem investe em crédito imobiliário ou agrícola.  
+- **LCI/LCA** (Letras de Crédito Imobiliário/Agrícola) – títulos isentos de [imposto de renda](/en/glossario/en-imposto-de-renda) para quem investe em crédito imobiliário ou agrícola.  
 
 A ideia central é que, ao invés de deixar o dinheiro parado na conta corrente, você o coloca em um lugar que gera renda. Isso ajuda a proteger o poder de compra contra a inflação e a construir um colchão para projetos futuros.
 
@@ -52,11 +52,11 @@ Aplicar seu dinheiro traz benefícios que vão muito além de “ganhar um extra
 
 - **Rentabilidade superior** à conta corrente, ajudando a alcançar metas como a compra de um carro ou a viagem dos sonhos.  
 - **Proteção contra a inflação**, já que muitos títulos ajustam o rendimento ao índice de preços.  
-- **Diversificação**, permitindo espalhar o risco entre diferentes tipos de ativos.  
+- **[Diversificação](/en/glossario/en-diversificacao)**, permitindo espalhar o risco entre diferentes tipos de ativos.  
 
 Além disso, ao ver seu dinheiro crescer, você ganha confiança para assumir desafios maiores, como abrir um negócio ou fazer um curso de especialização.
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 Nenhum investimento é totalmente livre de risco, e entender as armadilhas ajuda a evitar surpresas desagradáveis. O principal risco em aplicações de renda fixa é o **risco de crédito**, ou seja, a possibilidade de a instituição emissora não honrar o pagamento. Já em fundos de renda variável, o risco de mercado pode fazer o valor oscilar bastante.  
 
@@ -71,7 +71,7 @@ Nenhum investimento é totalmente livre de risco, e entender as armadilhas ajuda
 Vamos colocar a teoria em prática usando salários típicos no Brasil. Suponha que você receba R$4.500 por mês e consiga destinar 10 % (R$450) para uma aplicação de renda fixa com rendimento de 6 % ao ano. Em 12 meses, o cálculo simples de juros compostos (juros sobre juros) gera aproximadamente R$28 de ganho, totalizando R$5.478 ao final do ano.  
 
 - **Exemplo 1:** Maria ganha R$3.200 e investe R$200 por mês em um CDB que paga 5,5 % ao ano. Em 2 anos, ela acumula cerca de R$5.200, já que os juros se acumulam mensalmente.  
-- **Exemplo 2:** João recebe R$7.500 e decide aplicar R$500 mensais em um fundo de ações com expectativa de 10 % ao ano. Após 5 anos, o saldo pode chegar a R$38.000, mas ele precisa estar preparado para oscilações anuais.  
+- **Exemplo 2:** João recebe R$7.500 e decide aplicar [R$500](/en/posts/en-montando-carteira-diversificada-com-r-500) mensais em um fundo de ações com expectativa de 10 % ao ano. Após 5 anos, o saldo pode chegar a R$38.000, mas ele precisa estar preparado para oscilações anuais.  
 - **Exemplo 3:** Ana tem um salário de R$8.000 e coloca R$1.000 em LCI (isento de imposto) que rende 7 % ao ano. Em 3 anos, ela tem R$38.500, aproveitando a isenção fiscal para melhorar o retorno líquido.  
 
 **Practical tip:** Sempre calcule o rendimento usando a fórmula de juros compostos para ter uma ideia real do ganho ao longo do tempo.  

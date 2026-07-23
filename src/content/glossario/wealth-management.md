@@ -12,7 +12,7 @@ readingTime: 1
 
 ## O que é Wealth Management?
 
-Wealth Management (gestão de patrimônio) é um serviço financeiro premium que cuida de todos os aspectos da vida financeira de uma pessoa: [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), impostos, herança, seguros e planejamento de longo prazo.
+Wealth Management (gestão de patrimônio) é um serviço financeiro premium que cuida de todos os aspectos da vida financeira de uma pessoa: [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), impostos, herança, seguros e [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) de longo prazo.
 
 ## Para quem é
 
@@ -49,7 +49,7 @@ Geralmente voltado para pessoas com patrimônio acima de R$ 1 milhão. Mas os co
 
 Mesmo sem um wealth manager, você pode:
 
-1. Diversificar investimentos ([renda fixa](/glossario/renda-fixa) + variável + internacional)
+1. [Diversificar investimentos](/posts/montando-carteira-diversificada-com-r-500) ([renda fixa](/glossario/renda-fixa) + variável + internacional)
 2. Usar PGBL para reduzir IR
 3. Ter seguros adequados
 4. Manter registros organizados

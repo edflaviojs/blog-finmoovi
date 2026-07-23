@@ -20,7 +20,7 @@ seo:
 
 ## What it is
 
-A poupança é a conta de depósito mais conhecida no Brasil. Ela funciona como um “cofrinho” bancário que rende juros mensais e ainda protege o dinheiro contra a inflação mínima. Diferente de um investimento em ações ou fundos, a poupança tem regras bem simples: você deposita, o banco paga um percentual definido e você pode retirar a qualquer momento, sem multas.
+A poupança é a conta de depósito mais conhecida no Brasil. Ela funciona como um “cofrinho” bancário que rende juros mensais e ainda protege o dinheiro contra a inflação mínima. Diferente de um investimento em ações ou [fundos](/en/glossario/en-fundos), a poupança tem regras bem simples: você deposita, o banco paga um percentual definido e você pode retirar a qualquer momento, sem multas.
 
 ![What it is](/images/glossario/poupanca-inline-1.webp)
 
@@ -32,7 +32,7 @@ A poupança é a conta de depósito mais conhecida no Brasil. Ela funciona como 
 
 ## How it works
 
-Quando você abre uma conta poupança, o banco registra o saldo e aplica a taxa de juros mensal. O cálculo é feito assim: se a Selic estiver acima de 8,5 % ao ano, a poupança paga 0,5 % ao mês + TR; se estiver abaixo, paga 70 % da Selic + TR. A TR costuma ser zero, então o rendimento real costuma ficar entre 0,5 % e 0,7 % ao mês.
+Quando você abre uma conta poupança, o banco registra o saldo e aplica a taxa de juros mensal. O cálculo é feito assim: se a [Selic](/en/posts/en-quotes-semana-1-june-2026) estiver acima de 8,5 % ao ano, a poupança paga 0,5 % ao mês + TR; se estiver abaixo, paga 70 % da [Selic](/en/posts/en-quotes-semana-2-july-2026) + TR. A TR costuma ser zero, então o rendimento real costuma ficar entre 0,5 % e 0,7 % ao mês.
 
 - **Depósito:** basta transferir dinheiro da conta corrente ou fazer um depósito em dinheiro.
 - **Capitalização:** os juros são creditados no último dia útil de cada mês e entram no saldo para gerar novos juros (juros compostos).
@@ -56,7 +56,7 @@ A poupança tem alguns pontos fortes que a deixam no topo da lista de quem quer 
 Mesmo sendo “segura”, a poupança tem limitações que podem comprometer seu objetivo de fazer o dinheiro crescer.
 
 - **Rendimento baixo:** quando a Selic está em patamares menores, a taxa da poupança pode ficar abaixo da inflação, fazendo o poder de compra diminuir.
-- **Oportunidade perdida:** ao deixar todo o dinheiro na poupança, você perde a chance de investir em opções com retornos maiores, como CDBs, [Tesouro Direto](/en/glossario/en-tesouro-direto) ou fundos de renda fixa.
+- **Oportunidade perdida:** ao deixar todo o dinheiro na poupança, você perde a chance de investir em opções com retornos maiores, como CDBs, [Tesouro Direto](/en/glossario/en-tesouro-direto) ou fundos de [renda fixa](/en/glossario/en-renda-fixa).
 - **Dependência de política monetária:** mudanças na taxa Selic afetam diretamente o rendimento, então períodos de juros baixos reduzem o ganho.
 
 ## Practical examples

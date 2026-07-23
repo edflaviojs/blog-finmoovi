@@ -27,7 +27,7 @@ R$ 10.000 investidos a 10% ao ano:
 
 ## A regra dos 72
 
-Para saber em quantos anos seu dinheiro dobra, divida 72 pela taxa de juros:
+Para saber em quantos anos seu dinheiro dobra, divida 72 pela [taxa](/es/glossario/es-taxa) de juros:
 - 12% ao ano → 72 ÷ 12 = **6 anos** para dobrar
 - 8% ao ano → 72 ÷ 8 = **9 anos** para dobrar
 

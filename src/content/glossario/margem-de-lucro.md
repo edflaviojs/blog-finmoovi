@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é Margem de Lucro?
 
-Margem de lucro é quanto sobra de cada real que entra. Se uma empresa fatura R$ 100 e tem R$ 80 de custos, sua margem de lucro é 20%. Quanto maior a margem, mais eficiente é o negócio.
+Margem de lucro é quanto sobra de cada real que entra. Se uma empresa fatura R$ 100 e tem R$ 80 de [custos](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico), sua margem de lucro é 20%. Quanto maior a margem, mais eficiente é o negócio.
 
 ## Tipos de margem
 

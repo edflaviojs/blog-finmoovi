@@ -19,7 +19,7 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 
 - Taxed by IR (regressive table)
 - No [FGC guarantee](/en/glossario/en-garantia-fgc)
-- Yield generally CDI + spread
+- [Yield](/en/glossario/en-yield) generally CDI + spread
 
 ### Incentivized Debentures
 
@@ -31,13 +31,13 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 
 - Yield is generally higher than CDB and Treasury
 - Incentivized debentures are exempt from IR
-- Diversification of fixed income
+- [Diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) of [fixed income](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 - Varied terms (2 to 15 years)
 
 ## Risks
 
 - **[Credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) risk:** company may not pay (no FGC)
-- **Liquidity risk:** it may be difficult to sell before maturity
+- **[Liquidity](/en/glossario/en-liquidez) risk:** it may be difficult to sell before maturity
 - **Market risk:** price may fluctuate if sold before
 
 ## How to Evaluate

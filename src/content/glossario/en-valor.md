@@ -21,7 +21,7 @@ seo:
 ## What it is
 O termo "valor" é fundamental no mundo das finanças, especialmente quando se trata de investimentos e economia. Em resumo, o valor se refere ao preço ou ao valor de troca de um ativo, como [ações](/en/glossario/en-acoes), imóveis, ou até mesmo produtos cotidianos. No contexto de investimentos, o valor de um ativo pode flutuar com base em various fatores, como a oferta e a demanda, a economia em geral, e as perspectivas futuras do ativo em questão. Por exemplo, se você investiu R$5,000 em ações de uma empresa que está crescendo rapidamente, o valor dessas ações pode aumentar para R$6,500 em um curto período de tempo, dependendo do desempenho da empresa e da percepção do mercado.
 
-O valor também pode ser influenciado por fatores como a inflação, as taxas de juros, e as políticas governamentais. É importante entender que o valor de um ativo não é estático e pode mudar rapidamente, o que pode afetar seu portfólio de investimentos. **Practical tip:** Sempre faça uma pesquisa detalhada antes de investir em qualquer ativo, e considere diversificar seu portfólio para minimizar os riscos.
+O valor também pode ser influenciado por fatores como a inflação, as taxas de [juros](/en/glossario/en-juros), e as políticas governamentais. É importante entender que o valor de um ativo não é estático e pode mudar rapidamente, o que pode afetar seu portfólio de investimentos. **Practical tip:** Sempre faça uma pesquisa detalhada antes de investir em qualquer ativo, e considere diversificar seu portfólio para minimizar os riscos.
 
 ![What it is](/images/glossario/valor-inline-1.webp)
 

@@ -9,7 +9,7 @@ publishedAt: 2026-06-13
 ---
 
 ## Introduction to Alavancagem
-Alavancagem is a fundamental concept in the world of finance that can be both beneficial and dangerous, depending on how it is used. In essence, alavancagem allows investors to use resources that are not their own to increase the potential return on an investment. This can be done through loans, lines of [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), or other financial instruments.
+Alavancagem is a fundamental concept in the world of finance that can be both beneficial and dangerous, depending on how it is used. In essence, alavancagem allows investors to use resources that are not their own to increase the potential return on an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500). This can be done through loans, lines of [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), or other financial instruments.
 
 ## How Alavancagem Works
 Imagine you want to buy a property worth $25,000 (approximately R$ 200,000). You have $6,250 (approximately R$ 50,000) to use as a down payment and can get a loan of $18,750 (approximately R$ 150,000) to cover the rest of the cost. If the property value increases to $31,250 (approximately R$ 250,000), you will have a profit of $6,250 (approximately R$ 50,000), which represents a 100% return on your initial investment of $6,250. However, if the property value falls to $18,750 (approximately R$ 150,000), you will have a loss of $6,250 (approximately R$ 50,000), which represents a 100% loss of your initial investment.
@@ -21,14 +21,14 @@ Imagine you want to buy a property worth $25,000 (approximately R$ 200,000). You
 ## Practical Examples
 Let's consider two examples to illustrate how alavancagem can work in practice:
 
-- **Example 1: Stock Investment**
+- **Example 1: [Stock](/en/glossario/en-stock) Investment**
   You invest $1,250 (approximately R$ 10,000) in stocks and use $2,500 (approximately R$ 20,000) borrowed to buy more stocks. If the stock value increases by 20%, you will have a profit of $750 (approximately R$ 6,000) (20% of $3,750), which represents a 60% return on your initial investment of $1,250.
 
 ![Practical Examples](/images/glossario/en-alavancagem-inline-3.webp)
 
 
 
-- **Example 2: Real Estate Investment**
+- **Example 2: [Real Estate Investment](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo)**
   You buy a property for $25,000, using $6,250 as a down payment and $18,750 borrowed. If the property value increases to $31,250, you will have a profit of $6,250, which represents a 100% return on your initial investment of $6,250.
 
 ## Risks and Benefits

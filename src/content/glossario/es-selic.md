@@ -50,14 +50,14 @@ Aunque la tasa Selic es una herramienta poderosa para controlar la economía, ta
 * La posibilidad de que una tasa Selic baja pueda estimular demasiado el gasto y la inversión, lo que podría llevar a una inflación alta.
 * La influencia en el valor de la moneda, lo que puede afectar el comercio internacional y la economía en general.
 
-**Consejo práctico:** Es crucial estar atento a las decisiones del COPOM y cómo pueden afectar tus finanzas personales, especialmente si tienes préstamos o estás considerando invertir.
+**Consejo práctico:** Es crucial estar atento a las decisiones del COPOM y cómo pueden afectar tus [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias), especialmente si tienes préstamos o estás considerando invertir.
 
 ## Ejemplos prácticos
 Imagina que estás considerando comprar un apartamento y necesitas un préstamo de R$200.000. Si la tasa Selic es del 10%, el interés del préstamo podría ser alto, lo que significaría que pagarías mucho más que el valor inicial del préstamo a lo largo de los años. Por otro lado, si la tasa Selic es del 5%, el interés del préstamo podría ser más bajo, lo que haría que el préstamo sea más asequible.
 
 Otro ejemplo es si estás considerando ahorrar dinero. Si la tasa Selic es alta, los bancos pueden ofrecer tasas de interés más altas para los depósitos, lo que significa que puedes ganar más dinero por tu ahorro. Sin embargo, si la tasa Selic es baja, las tasas de interés para los depósitos también pueden ser bajas, lo que significa que ganarías menos por tu ahorro.
 
-**Consejo práctico:** **Es importante considerar la tasa Selic cuando estás tomando decisiones financieras**, como solicitar un préstamo o decidir dónde invertir tu dinero. Un ejemplo práctico sería utilizar [aplicaciones](/es/posts/es-5-alternativas-ao-mobills-em-2026) de finanzas personales para estar al tanto de las tasas de interés actuales y cómo pueden afectar tus decisiones.
+**Consejo práctico:** **Es importante considerar la tasa Selic cuando estás tomando decisiones financieras**, como solicitar un préstamo o decidir dónde invertir tu dinero. Un ejemplo práctico sería utilizar [aplicaciones](/es/posts/es-5-alternativas-ao-mobills-em-2026) de [finanzas personales](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) para estar al tanto de las tasas de interés actuales y cómo pueden afectar tus decisiones.
 
 ## Cómo empezar
 Empieza hoy a entender mejor cómo la tasa Selic puede afectar tus finanzas personales. Investiga sobre las decisiones del COPOM y cómo pueden influir en la economía y en tus decisiones financieras. Considera hablar con un asesor financiero o utilizar recursos en línea para obtener más información sobre cómo gestionar tus finanzas en relación con la tasa Selic. Recuerda, estar informado es el primer paso hacia una mejor gestión de tus finanzas.

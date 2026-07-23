@@ -24,7 +24,7 @@ seo:
   keywords: ["investments","second half","2024","portfolio","Treasury Selic","CDB","ETF"]
 ---
 
-# Investments for the Second Half: Practical Strategies for 2024
+# [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) for the Second Half: Practical Strategies for 2024
 
 The [second half of the year](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) is usually busier: vacations, end‑of‑year parties, and the expectation of a new economic cycle. If you still don’t have a plan for the next six months, this article gives you a step‑by‑step roadmap to build a portfolio that blends safety and growth potential, using real‑life examples from everyday Brazil.
 
@@ -129,7 +129,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 - **[Banco Central do Brasil](https://www.bcb.gov.br)** – check the Selic rate and economic indicators.  
 - **[Tesouro Direto](https://www.tesourodireto.com.br)** – official portal to buy government bonds.  
-- **FinMoovi** – Brazilian app that integrates [expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza), investment goals, and market alerts. Perfect for anyone who wants to see the whole portfolio in one place.
+- **[FinMoovi](/en/posts/en-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)** – Brazilian app that integrates [expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza), investment goals, and market alerts. Perfect for anyone who wants to see the whole portfolio in one place.
 
 ![Helpful tools and resources](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 

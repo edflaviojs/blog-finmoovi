@@ -9,9 +9,9 @@ locale: "pt"
 readingTime: 1
 ---
 
-## O que são Fundos Imobiliários (FIIs)?
+## O que são [Fundos](/glossario/fundos) Imobiliários (FIIs)?
 
-Fundos Imobiliários são como "condomínios de investidores" que juntam [dinheiro](/posts/cashback-inteligente) para comprar imóveis (shoppings, galpões, escritórios) ou títulos do setor imobiliário. Você compra cotas na bolsa e recebe aluguéis mensais.
+[Fundos Imobiliários](/posts/fundos-imobiliarios-para-iniciantes-guia-completo) são como "condomínios de investidores" que juntam [dinheiro](/posts/cashback-inteligente) para comprar imóveis (shoppings, galpões, escritórios) ou títulos do setor imobiliário. Você compra cotas na bolsa e recebe aluguéis mensais.
 
 ## Como funciona
 
@@ -23,7 +23,7 @@ Fundos Imobiliários são como "condomínios de investidores" que juntam [dinhei
 ## Vantagens
 
 - Renda mensal isenta de imposto
-- Investir em imóveis com pouco dinheiro (a partir de R$ 10)
+- Investir em imóveis com pouco [dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) (a partir de R$ 10)
 - [Diversificação](/glossario/diversificacao) (um fundo pode ter vários imóveis)
 - [Liquidez](/glossario/liquidez) (vende na hora na bolsa)
 - Não precisa lidar com inquilinos

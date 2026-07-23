@@ -63,7 +63,7 @@ La renta variable reúne activos cuyo retorno **no está garantizado** y depende
 | Producto | Dónde encontrar | Rentabilidad media 2024‑2025* | Características |
 |----------|----------------|-------------------------------|-----------------|
 | Acciones de empresas listadas | [Bolsa de Valores](/es/glossario/es-bolsa-de-valores) (B3) | 12 %‑20 % a.a. (índice Ibovespa) | Alta [volatilidad](/es/glossario/es-volatilidade), [dividendos](/es/glossario/es-dividendos) eventuales |
-| ETFs (Fondos de Índice) | Corredoras | 11 %‑18 % a.a. (ej.: BOVA11) | Diversificación automática, baja comisión de gestión |
+| ETFs (Fondos de Índice) | Corredoras | 11 %‑18 % a.a. (ej.: BOVA11) | [Diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) automática, baja comisión de gestión |
 | Fondos de Inversión Inmobiliaria (FIIs) | Corredoras | 7 %‑9 % a.a. (rendimiento mensual) | Recepción de alquileres, riesgo de vacancia |
 | Criptomonedas | Exchanges | Varía mucho (ej.: BTC 2024: +30 % a.a.) | Altísima volatilidad, riesgo regulatorio |
 
@@ -109,7 +109,7 @@ En la práctica, al comprar una acción te conviertes en socio de la empresa. Tu
 
 1. **Objetivo a corto plazo** – Si necesitas el [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) en hasta 2 años (ej.: reserva de emergencia, viaje), la renta fija garantiza que el capital se preserve.  
 2. **Perfil conservador** – Quien no tolera ver oscilar el valor de la inversión prefiere la seguridad de un CDB o Tesoro.  
-3. **Entorno de intereses altos** – Cuando la Selic está por encima del 12 % a.a., la renta fija ya ofrece retornos bastante atractivos.  
+3. **Entorno de intereses altos** – Cuando la [Selic](/es/posts/es-cotizaciones-semana-5-junio-2026) está por encima del 12 % a.a., la renta fija ya ofrece retornos bastante atractivos.  
 4. **Necesidad de ingresos** – LCIs/LCAs y algunas debentures pagan intereses mensuales, generando flujo de caja estable.  
 
 ### Estrategia práctica  

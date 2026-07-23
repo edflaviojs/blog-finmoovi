@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-Una **stock**, o acción, es una pequeña parte de la propiedad de una empresa que puedes comprar. Cuando adquieres una acción, te conviertes en copropietario y, aunque sea una fracción mínima, tienes derecho a una parte de los beneficios (dividendos) y a participar en la toma de decisiones a través de la junta de accionistas. En términos simples, es como comprar una rebanada de pizza de una pizzería: mientras la pizzería siga existiendo y vendiendo pizzas, tú tendrás una porción de sus ganancias.
+Una **stock**, o acción, es una pequeña parte de la propiedad de una empresa que puedes comprar. Cuando adquieres una acción, te conviertes en copropietario y, aunque sea una fracción mínima, tienes derecho a una parte de los beneficios ([dividendos](/es/glossario/es-dividendos)) y a participar en la toma de decisiones a través de la junta de accionistas. En términos simples, es como comprar una rebanada de pizza de una pizzería: mientras la pizzería siga existiendo y vendiendo pizzas, tú tendrás una porción de sus ganancias.
 
 ![Qué es](/images/glossario/stock-inline-1.webp)
 
@@ -44,7 +44,7 @@ Invertir en acciones tiene varios atractivos que la hacen popular entre quienes 
 
 
 
-- **Potencial de alta rentabilidad:** Históricamente, las acciones han generado retornos superiores a los de la mayoría de los instrumentos de ahorro tradicionales.
+- **Potencial de alta rentabilidad:** Históricamente, las acciones han generado retornos superiores a los de la mayoría de los instrumentos de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) tradicionales.
 - **Diversificación:** Puedes repartir tu inversión en diferentes empresas y sectores, reduciendo el riesgo global.
 - **Liquidez:** La mayoría de las acciones se pueden vender rápidamente en la bolsa, lo que te permite acceder a tu dinero cuando lo necesites.
 - **Participación en el éxito:** Si la empresa crece, el valor de tus acciones también lo hace, y puedes recibir dividendos como ingreso extra.
@@ -53,7 +53,7 @@ Invertir en acciones tiene varios atractivos que la hacen popular entre quienes 
 
 Como todo en la vida, las acciones también tienen su lado oscuro y es importante conocerlos antes de lanzarse:
 
-- **Volatilidad:** Los precios pueden subir y bajar bruscamente en cuestión de minutos, lo que genera incertidumbre.
+- **[Volatilidad](/es/glossario/es-volatilidade):** Los precios pueden subir y bajar bruscamente en cuestión de minutos, lo que genera incertidumbre.
 - **Pérdida de capital:** Si la empresa enfrenta problemas financieros, el valor de sus acciones puede caer a cero, y podrías perder todo lo invertido.
 - **Riesgo de mercado:** Factores externos como crisis económicas, cambios políticos o eventos globales pueden afectar a todas las acciones simultáneamente.
 - **Falta de dividendos:** No todas las empresas reparten dividendos; algunas reinvierten todas sus ganancias, lo que significa que tu ingreso dependerá solo de la apreciación del precio.
@@ -74,7 +74,7 @@ Dar el primer paso es más fácil de lo que parece. Solo necesitas seguir una se
 
 - **Abre una cuenta en una corredora confiable:** Busca una que ofrezca una app amigable, comisiones bajas y buen soporte al cliente. La mayoría permite abrir la cuenta en línea con solo tu CPF y una foto del documento.
 - **Define tu objetivo y horizonte de inversión:** Decide si buscas crecimiento a largo plazo (5 – 10 años) o ingresos más inmediatos mediante dividendos.
-- **Establece un presupuesto mensual:** **Consejo práctico:** Destina entre el 5 % y el 15 % de tu salario a la inversión en acciones; por ejemplo, con un salario de R$6.000, podrías comenzar con R$300 al mes.
+- **Establece un [presupuesto](/es/posts/es-5-alternativas-ao-mobills-em-2026) mensual:** **Consejo práctico:** Destina entre el 5 % y el 15 % de tu salario a la inversión en acciones; por ejemplo, con un salario de R$6.000, podrías comenzar con R$300 al mes.
 - **Elige empresas o fondos:** Investiga sectores que conozcas (tecnología, consumo, energía) y revisa sus resultados financieros. **Consejo práctico:** Empieza con empresas que paguen dividendos regulares para obtener ingresos mientras esperas la apreciación del precio.
 - **Realiza tu primera compra:** Usa la app de la corredora para colocar una orden de mercado (compra al precio actual) o una orden límite (establece el precio máximo que estás dispuesto a pagar). **Consejo práctico:** Compra en pequeñas cantidades al principio para familiarizarte con la volatilidad sin arriesgar demasiado capital.
 - **Monitorea y ajusta:** Revisa tu cartera cada trimestre, evalúa el desempeño y decide si reinviertes los dividendos o los utilizas para nuevas compras.

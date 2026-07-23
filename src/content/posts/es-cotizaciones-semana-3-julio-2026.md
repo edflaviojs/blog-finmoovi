@@ -34,7 +34,7 @@ La **Selic** es la tasa de referencia que el Banco Central de Brasil utiliza par
 
 1. **Renta fija:** Los bonos del Tesoro y los CDBs que ya estaban atados a la Selic siguen ofreciendo rendimientos similares. Si tenés un [CDB](/es/glossario/es-cdb) a 100 % de la Selic, tu ganancia será de aproximadamente **13,75 % anual**, lo que sigue siendo atractivo frente a la inflación (que se espera que cierre el año en torno al 4 %).  
 2. **Acciones y fondos:** Un entorno de tasas estables favorece a las empresas con deuda alta, porque sus costos de [financiamiento](/es/glossario/es-financiamento) no aumentan. Los sectores de consumo y energía mostraron una ligera recuperación, pero sigue habiendo [volatilidad](/es/glossario/es-volatilidade) por la incertidumbre global.  
-3. **Inversiones en el exterior:** Con el real fortaleciendo frente al [dólar](/es/posts/es-cotizaciones-semana-3-junio-2026) y al euro, los activos internacionales ([ETF](/es/glossario/es-etf) de EE. UU., acciones europeas) se vuelven un poco más caros para los brasileños. Sin embargo, la diversificación sigue siendo clave para protegerse de cualquier sacudida local.
+3. **Inversiones en el exterior:** Con el real fortaleciendo frente al [dólar](/es/posts/es-cotizaciones-semana-3-junio-2026) y al euro, los activos internacionales ([ETF](/es/glossario/es-etf) de EE. UU., acciones europeas) se vuelven un poco más caros para los brasileños. Sin embargo, la [diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) sigue siendo clave para protegerse de cualquier sacudida local.
 
 En resumen, la Selic estable brinda un **escenario de “[cambio](/es/glossario/es-cambio) de marcha”**: no hay presión para subir los rendimientos de la renta fija, pero tampoco hay riesgo de una subida abrupta que pueda afectar a los activos de riesgo.
 
@@ -59,7 +59,7 @@ En resumen, la Selic estable brinda un **escenario de “[cambio](/es/glossario/
 
 Mirando al calendario, la atención se centrará en dos eventos clave:
 
-1. **Informe de inflación de EE. UU.** (15 julio) – Si los números resultan más bajos de lo esperado, el dólar y el euro podrían seguir cayendo frente al real.  
+1. **Informe de inflación de EE. UU.** (15 julio) – Si los números resultan más bajos de lo esperado, el [dólar](/es/posts/es-cotizaciones-semana-5-junio-2026) y el euro podrían seguir cayendo frente al real.  
 2. **Decisión del COPOM** (20 julio) – Aunque la tendencia actual sugiere una Selic estable, cualquier sorpresa (subida o bajada) generará movimiento en los mercados de renta fija y en la bolsa.
 
 Además, el **precio del petróleo** sigue siendo un factor importante para la balanza comercial brasileña. Un repunte del crudo tiende a fortalecer el real, mientras que una caída lo debilita.

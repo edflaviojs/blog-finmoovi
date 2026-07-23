@@ -33,7 +33,7 @@ El proceso KYC implica la recopilación y verificación de información personal
 
 ## Ventajas
 El proceso KYC ofrece varias ventajas para las instituciones financieras y los clientes. Algunas de las ventajas incluyen:
-* Reducción del riesgo de lavado de dinero y financiamiento del terrorismo
+* Reducción del riesgo de lavado de [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) y financiamiento del terrorismo
 * Mejora de la seguridad y la confianza en las transacciones financieras
 * Cumplimiento de las regulaciones y leyes financieras
 * Protección de los clientes contra el fraude y la identidad falsa
@@ -44,7 +44,7 @@ El proceso KYC ofrece varias ventajas para las instituciones financieras y los c
 
 
 
-## Riesgos
+## [Riesgos](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Aunque el proceso KYC es importante para la seguridad y la confianza en las transacciones financieras, también puede presentar algunos riesgos. Algunos de los riesgos incluyen:
 * La recopilación y almacenamiento de información personal y financiera puede ser vulnerable a la piratería informática y el robo de identidad
 * El proceso de verificación puede ser lento y burocrático, lo que puede frustrar a los clientes

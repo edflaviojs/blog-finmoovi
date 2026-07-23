@@ -9,7 +9,7 @@ publishedAt: 2026-06-02
 ---
 
 ## ¿Qué son las Come-Cotas?
-Las Come-Cotas son una opción de inversión que permite a los inversores comprar una fracción de un activo, en lugar de comprar el activo entero. Esto es especialmente útil para inversores que no tienen mucho [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) para invertir, ya que les permite participar de inversiones que normalmente estarían fuera de su alcance.
+Las Come-Cotas son una opción de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) que permite a los inversores comprar una fracción de un activo, en lugar de comprar el activo entero. Esto es especialmente útil para inversores que no tienen mucho [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) para invertir, ya que les permite participar de [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) que normalmente estarían fuera de su alcance.
 
 ## ¿Cómo funcionan las Come-Cotas?
 Imagina que quieres invertir en un fondo de inversión que cuesta R$ 10.000,00. Sin embargo, solo tienes R$ 1.000,00 para invertir. Con las Come-Cotas, puedes comprar 1/10 del fondo de inversión, es decir, R$ 1.000,00. Esto significa que tendrás derecho a 1/10 de las ganancias o pérdidas del fondo de inversión.

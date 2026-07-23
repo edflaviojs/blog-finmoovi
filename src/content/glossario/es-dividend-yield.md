@@ -8,8 +8,8 @@ relatedTerms: ["Dividendos","Ações","Rendimento"]
 publishedAt: 2026-06-11
 ---
 
-## Introducción al Dividend Yield
-Cuando invertimos en acciones, una de las principales razones es la posibilidad de recibir [dividendos](/es/glossario/es-dividendos). Los dividendos son pagos que hacen las empresas a sus accionistas, representando una parte de las ganancias obtenidas. Sin embargo, para entender lo atractivo que es una inversión en acciones en términos de dividendos, necesitamos considerar el Dividend Yield.
+## Introducción al Dividend [Yield](/es/glossario/es-yield)
+Cuando invertimos en acciones, una de las principales razones es la posibilidad de recibir [dividendos](/es/glossario/es-dividendos). Los dividendos son pagos que hacen las empresas a sus accionistas, representando una parte de las ganancias obtenidas. Sin embargo, para entender lo atractivo que es una [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) en acciones en términos de dividendos, necesitamos considerar el Dividend Yield.
 
 ## ¿Qué es el Dividend Yield?
 El Dividend Yield se calcula dividiendo el [valor](/es/glossario/es-valor) anual de los dividendos pagados por acción por el precio actual de la acción. Esto nos da un porcentaje que representa el retorno anual que un inversor puede esperar recibir en dividendos por cada real invertido en la acción.
@@ -29,7 +29,7 @@ Dividend Yield = (R$ 5,00 / R$ 100,00) * 100 = 5%
 
 Esto significa que, por cada R$ 100,00 invertido, puedes esperar recibir R$ 5,00 en dividendos a lo largo del año, lo que corresponde a un retorno del 5%.
 
-## Comparación de Dividend Yield
+## [Comparación](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) de Dividend Yield
 Para entender mejor la atracción de diferentes acciones, podemos comparar sus Dividend Yields. Aquí está una tabla comparativa:
 
 | Empresa | Precio de la Acción | Dividendo Anual | Dividend Yield |

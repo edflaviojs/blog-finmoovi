@@ -28,13 +28,13 @@ Urgência financeira é qualquer situação inesperada que exige [dinheiro](/pos
 A melhor proteção contra urgências financeiras é a **[reserva de emergência](/glossario/reserva-de-emergencia)**:
 - 6 meses de gastos para CLT
 - 12 meses para autônomos/PJ
-- Em investimento com liquidez diária (Tesouro Selic, CDB)
+- Em [investimento](/posts/montando-carteira-diversificada-com-r-500) com [liquidez](/glossario/liquidez) diária ([Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), CDB)
 
 ## O que fazer se não tem reserva
 
 Se a urgência chegou e você não tem reserva:
 
-1. **Não use [cheque especial](/glossario/cheque-especial)** (juros de 15%/mês)
+1. **Não use [cheque especial](/glossario/cheque-especial)** ([juros](/glossario/juros) de 15%/mês)
 2. **Não use rotativo do cartão** (juros de 16%/mês)
 3. Peça empréstimo consignado (juros de 1-2%/mês)
 4. Antecipe FGTS ou 13º

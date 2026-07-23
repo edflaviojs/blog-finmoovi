@@ -42,7 +42,7 @@ Contar con ativos de alta qualidade trae beneficios claros para tu bolsillo y tu
 - **Menor riesgo de impago:** reduces la probabilidad de perder tu capital porque la entidad cumple con sus compromisos.  
 - **Flujo de caja predecible:** sabes con mayor certeza cuándo recibirás los intereses o [dividendos](/es/glossario/es-dividendos).  
 - **Acceso a mejores tasas:** instituciones con buena reputación suelen ofrecer condiciones más favorables, como tasas de interés más bajas en préstamos.  
-- **Mayor confianza del mercado:** los inversores tienden a preferir activos de calidad, lo que puede impulsar su precio y liquidez.  
+- **Mayor confianza del mercado:** los inversores tienden a preferir activos de calidad, lo que puede impulsar su precio y [liquidez](/es/glossario/es-liquidez).  
 
 ![Ventajas](/images/glossario/qualidade-inline-3.webp)
 
@@ -54,7 +54,7 @@ En la práctica, esto significa que tu dinero trabaja de forma más estable y co
 
 Aunque la qualidade suena como una garantía total, también existen riesgos que no debes pasar por alto.  
 - **Sobrevaloración:** a veces los activos “de calidad” están sobrepreciados y su rentabilidad futura puede ser menor.  
-- **Cambio de calificación:** una empresa puede perder su buena reputación por un evento inesperado, como una crisis sectorial.  
+- **[Cambio](/es/glossario/es-cambio) de calificación:** una empresa puede perder su buena reputación por un evento inesperado, como una crisis sectorial.  
 - **Concentración:** invertir solo en activos de alta qualidade puede limitar tus oportunidades de obtener mayores ganancias en sectores emergentes.  
 - **Falta de diversificación:** depender exclusivamente de un tipo de activo aumenta la vulnerabilidad ante cambios macroeconómicos.  
 
@@ -76,8 +76,8 @@ Estos ejemplos demuestran cómo la qualidade se traduce en ingresos reales y pre
 ## Cómo empezar
 
 Dar los primeros pasos hacia una cartera basada en qualidade es más sencillo de lo que parece.  
-- **Define tu objetivo:** decide si buscas ingresos mensuales, ahorro para la jubilación o crecimiento del capital.  
-- **Evalúa tu [presupuesto](/es/posts/es-5-alternativas-ao-mobills-em-2026):** con un salario de R$ 3.000 a R$ 8.000, determina cuánto puedes destinar mensualmente sin afectar tus gastos esenciales.  
+- **Define tu objetivo:** decide si buscas ingresos mensuales, [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) para la jubilación o crecimiento del capital.  
+- **Evalúa tu [presupuesto](/es/posts/es-5-alternativas-ao-mobills-em-2026):** con un salario de R$ 3.000 a R$ 8.000, determina cuánto puedes destinar mensualmente sin afectar tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) esenciales.  
 - **Elige instrumentos de calidad:** busca bonos con calificación AA o fondos de renta fija con historial de rendimientos estables.  
 - **Abre una cuenta en una fintech confiable:** apps como Nubank o Banco Inter facilitan la compra de bonos y fondos con pocos clics, como lo haría un amigo que ya los usa.  
 - **Monitorea y ajusta:** revisa trimestralmente el desempeño y la calificación de tus inversiones; si algo cambia, redistribuye el capital.  

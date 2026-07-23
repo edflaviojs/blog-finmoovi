@@ -19,7 +19,7 @@ It is generally aimed at people with assets above R$ 1 million. But the concepts
 
 ## Pillars of Wealth Management
 
-### 1. Investment Management
+### 1. [Investment](/en/posts/en-montando-carteira-diversificada-com-r-500) Management
 
 - Personalized asset allocation
 - Periodic rebalancing
@@ -42,7 +42,7 @@ It is generally aimed at people with assets above R$ 1 million. But the concepts
 
 - Adequate insurance
 - Asset shielding (legal)
-- Geographical diversification
+- Geographical [diversification](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel)
 
 ## Accessible version (do it yourself)
 

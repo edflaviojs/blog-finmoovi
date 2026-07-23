@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A hedge, no mundo financeiro, é uma estratégia de investimento que visa reduzir o risco de perdas em uma carteira de investimentos. Imagine que você tem um investimento em [ações](/en/glossario/en-acoes) de uma empresa de tecnologia, mas está preocupado que o valor dessas ações possa cair devido a mudanças no mercado. Uma hedge pode ser usada para proteger seu investimento contra essa perda potencial. Isso é feito investindo em um ativo que tende a se mover em direção oposta ao seu investimento original, de modo que se o valor do seu investimento cair, o valor da hedge aumente, compensando a perda.
+A hedge, no mundo financeiro, é uma estratégia de investimento que visa reduzir o risco de perdas em uma carteira de investimentos. Imagine que você tem um investimento em [ações](/en/glossario/en-acoes) de uma empresa de tecnologia, mas está preocupado que o [valor](/en/glossario/en-valor) dessas ações possa cair devido a mudanças no mercado. Uma hedge pode ser usada para proteger seu investimento contra essa perda potencial. Isso é feito investindo em um ativo que tende a se mover em direção oposta ao seu investimento original, de modo que se o valor do seu investimento cair, o valor da hedge aumente, compensando a perda.
 
 * Investimentos em ações
 * Investimentos em títulos

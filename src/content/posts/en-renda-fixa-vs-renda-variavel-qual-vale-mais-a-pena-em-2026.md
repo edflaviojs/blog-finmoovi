@@ -39,13 +39,13 @@ Fixed income includes [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende
 
 *Rates based on data from the Central Bank and Treasury Direct up to December 2025.
 
-The logic is simple: you lend [money](/en/posts/en-avoid-impulse-purchases) (or buy bonds) and receive interest over time. The **principal** (the amount invested) is usually returned at maturity or can be redeemed early, depending on the product. Because the remuneration is linked to indexes like the CDI or Selic, changes in the country’s interest rates affect the return directly.
+The logic is simple: you lend [money](/en/posts/en-avoid-impulse-purchases) (or buy bonds) and receive interest over time. The **principal** (the amount invested) is usually returned at maturity or can be redeemed early, depending on the product. Because the remuneration is linked to indexes like the CDI or [Selic](/en/posts/en-quotes-semana-1-june-2026), changes in the country’s interest rates affect the return directly.
 
 ### Advantages of Fixed Income
 
 1. **Predictability** – You know how much you’ll earn, or at least you have a guaranteed floor.  
 2. **Low risk of capital loss** – In most cases, risk is limited to the issuer (bank or government).  
-3. **Liquidity** – Selic Treasury and some CDBs allow redemption at any time without a heavy penalty.  
+3. **Liquidity** – [Selic](/en/posts/en-quotes-semana-2-july-2026) Treasury and some CDBs allow redemption at any time without a heavy penalty.  
 4. **IR exemption** – LCIs and LCAs are tax‑free, which boosts net yield.
 
 ### Disadvantages of Fixed Income

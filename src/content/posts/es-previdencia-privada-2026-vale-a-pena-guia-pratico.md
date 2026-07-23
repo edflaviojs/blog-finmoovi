@@ -28,7 +28,7 @@ Existen dos tipos principales de planes en Brasil:
 | **PGBL** (Plano Gerador de Benefício Livre) | Las contribuciones son deducibles del Impuesto a la Renta (hasta el 12 % de los ingresos brutos). | En la jubilación, el impuesto incide sobre el total (contribuciones + rendimientos). |
 | **VGBL** (Vida Gerador de Benefício Livre) | No hay deducción fiscal en las contribuciones. | El impuesto incide solo sobre los rendimientos al momento del rescate. |
 
-Estas siglas pueden parecer confusas, pero la idea central es simple: pones dinero, genera rendimientos y, en el futuro, se transforma en una renta.  
+Estas siglas pueden parecer confusas, pero la idea central es simple: pones [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado), genera rendimientos y, en el futuro, se transforma en una renta.  
 
 ## ¿Cómo funciona la previsión privada en 2026?
 
@@ -49,7 +49,7 @@ Aunque la comisión de administración haya bajado, todavía puede erosionar bue
 | Comisión | Qué es | Impacto típico |
 |----------|--------|----------------|
 | **Administración** | Cobro anual sobre el saldo total. | 1,5 % – 2,5 % al año. |
-| **Performance** | Cobro sobre el rendimiento que supera un índice de referencia (p.ej., CDI). | 10 % – 20 % de lo que exceda el benchmark. |
+| **Performance** | Cobro sobre el rendimiento que supera un índice de referencia (p.ej., [CDI](/es/glossario/es-cdi)). | 10 % – 20 % de lo que exceda el benchmark. |
 | **Carga** | Cobro al ingresar (o al salir) recursos. | Puede llegar al 5 % al ingresar, pero la mayoría de los planes ya ha eliminado esta comisión. |
 
 Además de estas, vigila el **IOF** (Impuesto sobre Operaciones Financieras) que incide en los primeros 30 días de la aplicación. Si necesitas rescatar antes de ese plazo, el IOF se cobra de forma regresiva, alcanzando el 96 % en los primeros días.  
@@ -78,7 +78,7 @@ Estos números asumen que **no haces ningún rescate** antes de la jubilación y
 | **[CDB](/es/glossario/es-cdb) (Certificado de Depósito Bancario)** | 100 % del CDI (aprox. 5,5 % al año) | Media – rescate después de 30 días | Comisiones casi nulas | Quien busca plazo corto a medio |
 | **Tesoro [Selic](/es/glossario/es-selic)** | 100 % de la tasa Selic (aprox. 5,75 % al año) | Alta – rescate diario | Costos de custodia ~0,2 % al año | Perfil conservador, reserva de emergencia |
 
-La principal ventaja de la previsión es el **beneficio fiscal** (en el caso del PGBL) y la posibilidad de transformar el saldo en una renta mensual garantizada. Sin embargo, si tu prioridad es **acceso rápido al dinero**, el Tesoro Selic o el CDB son más adecuados.  
+La principal ventaja de la previsión es el **beneficio fiscal** (en el caso del PGBL) y la posibilidad de transformar el saldo en una renta mensual garantizada. Sin embargo, si tu prioridad es **acceso rápido al [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado)**, el Tesoro Selic o el CDB son más adecuados.  
 
 ## Riesgos y cuidados
 
@@ -107,3 +107,4 @@ Al seguir estos pasos, tendrás claridad para decidir si la previsión privada s
 ---  
 
 **Para seguir tus inversiones en un solo lugar, [prueba FinMoovi gratis por 7 días](https://finmoovi.com) — multi‑moneda, informes inteligentes y 100 % offline.**
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es la previsión privada?","acceptedAnswer":{"@type":"Answer","text":"La previsión privada, también llamada plan de previsión complementaria, funciona como un ahorro a largo plazo que vas alimentando a lo largo de tu vida profesional. El dinero se invierte en fondos administrados por instituciones financieras y, al jubilarte, recibes un beneficio mensual (renta) o un "}},{"@type":"Question","name":"¿Cómo funciona la previsión privada en 2026?","acceptedAnswer":{"@type":"Answer","text":"En 2026 el escenario cambió en tres puntos críticos:"}},{"@type":"Question","name":"Simulación práctica – ¿cuánto rinde en la práctica?","acceptedAnswer":{"@type":"Answer","text":"Supongamos que tienes tres perfiles de aporte mensual: R$ 500, R$ 1.000 y R$ 5.000. Usaremos un fondo de renta fija con comisión de administración del 1,8 % anual y rendimiento medio del 6,5 % anual (aproximado del CDI + 0,5 %)."}}]} -->

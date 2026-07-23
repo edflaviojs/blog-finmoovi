@@ -15,21 +15,21 @@ El FGC (Fondo Garantidor de Créditos) es como un seguro para tus [inversiones](
 
 ## ¿Qué está cubierto?
 
-- CDB (Certificado de Depósito Bancário)
+- [CDB](/es/glossario/es-cdb) (Certificado de Depósito Bancário)
 - [LCI y LCA](/es/glossario/es-lci-e-lca)
 - [Poupança](/es/glossario/es-poupanca)
 - Cuenta corriente
 - RDB
-- Letras de cambio
+- Letras de [cambio](/es/glossario/es-cambio)
 
 ## ¿Qué NO está cubierto?
 
 - Acciones
-- Fondos de inversión
+- Fondos de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500)
 - Deudas
 - Tesoro Directo (tiene garantía del gobierno federal)
 - CRI y CRA
-- Previsión privada
+- [Previsión privada](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico)
 
 ## Límites
 

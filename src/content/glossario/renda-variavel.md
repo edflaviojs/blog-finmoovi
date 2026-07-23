@@ -14,7 +14,7 @@ readingTime: 1
 
 Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce conforme o mercado. Você pode ganhar muito — ou perder. Inclui ações, [fundos imobiliários](/glossario/fundos-imobiliarios), ETFs, criptomoedas e derivativos.
 
-## Diferença para Renda Fixa
+## Diferença para [Renda Fixa](/glossario/renda-fixa)
 
 | | Renda Fixa | Renda Variável |
 |--|-----------|---------------|
@@ -27,15 +27,15 @@ Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce co
 ## Principais [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de renda variável
 
 1. **Ações** — pedaços de empresas
-2. **Fundos Imobiliários (FIIs)** — cotas de fundos que investem em imóveis
+2. **[Fundos Imobiliários](/posts/fundos-imobiliarios-para-iniciantes-guia-completo) (FIIs)** — cotas de fundos que investem em imóveis
 3. **ETFs** — fundos que replicam índices
 4. **Criptomoedas** — ativos digitais descentralizados
 5. **Derivativos** — contratos futuros, opções (avançado)
 
 ## Riscos
 
-- Perda de capital (seu investimento pode valer menos)
-- Volatilidade (oscilações diárias)
+- Perda de capital (seu [investimento](/posts/montando-carteira-diversificada-com-r-500) pode valer menos)
+- [Volatilidade](/glossario/volatilidade) (oscilações diárias)
 - Risco de empresa (falência)
 - Risco de mercado (crises econômicas)
 

@@ -15,7 +15,7 @@ IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to var
 
 ## Where IOF appears
 
-### Investments (fixed income)
+### [Investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) (fixed [income](/en/posts/en-montando-carteira-diversificada-com-r-500))
 
 - Applies to income redeemed in less than 30 days
 - Starts at 96% on day 1 and goes to 0% on day 30
@@ -38,7 +38,7 @@ IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to var
 
 ## Practical tip
 
-If you invested in CDB or Tesouro [Selic](/en/glossario/en-selic), wait at least 30 days to redeem. This way you won't pay IOF on the income. This is an important rule for emergency reserve.
+If you invested in [CDB](/en/glossario/en-cdb) or Tesouro [Selic](/en/glossario/en-selic), wait at least 30 days to redeem. This way you won't pay IOF on the income. This is an important rule for emergency reserve.
 
 ## IOF regression table (investments)
 

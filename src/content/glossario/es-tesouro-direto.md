@@ -19,9 +19,9 @@ seo:
 ---
 
 ## Qué es
-El Tesouro Direto es un programa del gobierno brasileño que permite a los ciudadanos invertir en títulos del tesoro nacional, es decir, préstamos que el gobierno solicita a los inversionistas para financiar sus proyectos y [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Esto significa que, al invertir en el Tesouro Direto, estás prestando dinero al gobierno, que te pagará con intereses. El Tesouro Direto es una forma segura de invertir, ya que el gobierno es el emisor de los títulos y, por lo tanto, es responsable de pagar los intereses y el capital invertido.
+El Tesouro Direto es un programa del gobierno brasileño que permite a los ciudadanos invertir en títulos del tesoro nacional, es decir, préstamos que el gobierno solicita a los inversionistas para financiar sus proyectos y [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Esto significa que, al invertir en el Tesouro Direto, estás prestando [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) al gobierno, que te pagará con intereses. El Tesouro Direto es una forma segura de invertir, ya que el gobierno es el emisor de los títulos y, por lo tanto, es responsable de pagar los intereses y el capital invertido.
 
-El Tesouro Direto ofrece diferentes tipos de títulos, como el Tesouro Selic, el Tesouro IPCA y el Tesouro Prefixado, cada uno con sus propias características y beneficios. Por ejemplo, el Tesouro Selic es un título indexado a la tasa de interés Selic, que es la tasa de interés básica del país, mientras que el Tesouro IPCA es indexado a la [inflación](/es/glossario/es-inflacao).
+El Tesouro Direto ofrece diferentes tipos de títulos, como el Tesouro [Selic](/es/glossario/es-selic), el Tesouro IPCA y el Tesouro Prefixado, cada uno con sus propias características y beneficios. Por ejemplo, el Tesouro Selic es un título indexado a la tasa de interés Selic, que es la tasa de interés básica del país, mientras que el Tesouro IPCA es indexado a la [inflación](/es/glossario/es-inflacao).
 
 ![Qué es](/images/glossario/tesouro-direto-inline-1.webp)
 
@@ -41,14 +41,14 @@ Por ejemplo, si inviertes R$1.000 en un título del Tesouro Selic con un plazo d
 ## Ventajas
 El Tesouro Direto ofrece varias ventajas para los inversionistas. **Consejo práctico:** siempre es importante diversificar tus inversiones para reducir el riesgo. El Tesouro Direto es una forma segura de invertir, ya que el gobierno es el emisor de los títulos y, por lo tanto, es responsable de pagar los intereses y el capital invertido. Además, el Tesouro Direto ofrece rendimientos competitivos, especialmente en comparación con otros instrumentos de inversión de baja rentabilidad, como las cuentas de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado).
 
-Otra ventaja del Tesouro Direto es la liquidez, ya que los títulos pueden ser vendidos antes del vencimiento. Esto significa que, si necesitas acceso a tu dinero antes del vencimiento del título, puedes venderlo en el mercado secundario. **Consejo práctico:** siempre es importante tener una reserva de emergencia para cubrir gastos inesperados, y el Tesouro Direto puede ser una forma de invertir parte de esa reserva.
+Otra ventaja del Tesouro Direto es la liquidez, ya que los títulos pueden ser vendidos antes del vencimiento. Esto significa que, si necesitas acceso a tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) antes del vencimiento del título, puedes venderlo en el mercado secundario. **Consejo práctico:** siempre es importante tener una reserva de emergencia para cubrir gastos inesperados, y el Tesouro Direto puede ser una forma de invertir parte de esa reserva.
 
 ![Ventajas](/images/glossario/tesouro-direto-inline-3.webp)
 
 
 
 ## Riesgos
-Aunque el Tesouro Direto es considerado un instrumento de inversión de baja rentabilidad, también hay algunos riesgos que debes considerar. **Consejo práctico:** siempre es importante evaluar tus objetivos financieros y tu tolerancia al riesgo antes de invertir. Uno de los principales riesgos del Tesouro Direto es el riesgo de inflación, ya que la inflación puede erosionar el valor del capital invertido. Por ejemplo, si la inflación es del 10% anual y el rendimiento del título es del 5% anual, el valor real del capital invertido disminuirá.
+Aunque el Tesouro Direto es considerado un instrumento de inversión de baja rentabilidad, también hay algunos riesgos que debes considerar. **Consejo práctico:** siempre es importante evaluar tus objetivos financieros y tu tolerancia al riesgo antes de invertir. Uno de los principales riesgos del Tesouro Direto es el riesgo de inflación, ya que la inflación puede erosionar el [valor](/es/glossario/es-valor) del capital invertido. Por ejemplo, si la inflación es del 10% anual y el rendimiento del título es del 5% anual, el valor real del capital invertido disminuirá.
 
 Otro riesgo del Tesouro Direto es el riesgo de liquidez, ya que los títulos pueden ser difíciles de vender en el mercado secundario, especialmente si el plazo de vencimiento es largo. **Consejo práctico:** siempre es importante evaluar la liquidez de tus inversiones y considerar la posibilidad de vender tus títulos antes del vencimiento si necesitas acceso a tu dinero.
 

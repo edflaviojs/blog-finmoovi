@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-La bolsa de valores es un mercado donde se compran y venden acciones de empresas, que representan una parte de la propiedad de esas empresas. Imagina que tienes una tienda y quieres expandirla, pero necesitas [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) para hacerlo. Una forma de obtener ese [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) es vendiendo partes de tu tienda a inversores, a cambio de una cantidad de dinero. Estas partes se llaman "acciones". La bolsa de valores es como un lugar donde se reúnen muchos dueños de tiendas (empresas) que quieren vender partes de sus tiendas (acciones) a personas que quieren invertir su dinero.
+La bolsa de valores es un mercado donde se compran y venden acciones de empresas, que representan una parte de la propiedad de esas empresas. Imagina que tienes una tienda y quieres expandirla, pero necesitas [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) para hacerlo. Una forma de obtener ese [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) es vendiendo partes de tu tienda a inversores, a [cambio](/es/glossario/es-cambio) de una cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado). Estas partes se llaman "acciones". La bolsa de valores es como un lugar donde se reúnen muchos dueños de tiendas (empresas) que quieren vender partes de sus tiendas (acciones) a personas que quieren invertir su [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado).
 
 La bolsa de valores es un lugar donde se pueden comprar y vender acciones de empresas de todo tipo, desde pequeñas empresas familiares hasta grandes corporaciones. Los precios de las acciones varían constantemente, dependiendo de la oferta y la demanda en el mercado. Por ejemplo, si una empresa está haciendo muy bien y los inversores creen que seguirá creciendo, el precio de sus acciones probablemente subirá. Por otro lado, si una empresa está pasando por dificultades, el precio de sus acciones puede bajar.
 
@@ -39,7 +39,7 @@ Algunos términos importantes que debes conocer son:
 Invertir en la bolsa de valores puede ser una excelente forma de crecer tu patrimonio a largo plazo. Algunas de las ventajas de invertir en la bolsa de valores son:
 * Posibilidad de obtener altos rendimientos: las acciones pueden aumentar significativamente de valor si la empresa tiene un buen desempeño
 * Diversificación: puedes invertir en diferentes empresas y sectores para reducir el riesgo
-* Liquidez: puedes vender tus acciones fácilmente en el mercado de valores
+* [Liquidez](/es/glossario/es-liquidez): puedes vender tus acciones fácilmente en el mercado de valores
 * Participación en el crecimiento económico: al invertir en la bolsa de valores, estás participando en el crecimiento económico de las empresas y del país
 
 **Consejo práctico:** es importante diversificar tus inversiones para reducir el riesgo. Por ejemplo, si tienes un salario de R$5.000 al mes, podrías invertir R$1.000 en acciones de una empresa de tecnología, R$1.000 en acciones de una empresa de consumo y R$1.000 en acciones de una empresa de servicios.

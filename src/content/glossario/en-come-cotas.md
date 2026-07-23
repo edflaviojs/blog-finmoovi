@@ -9,7 +9,7 @@ publishedAt: 2026-06-02
 ---
 
 ## What are Fractional Shares?
-Fractional Shares are an investment option that allows investors to buy a fraction of an asset, rather than buying the entire asset. This is especially useful for investors who don't have a lot of [money](/en/posts/en-30-day-rule-for-purchases) to invest, as it allows them to participate in investments that would normally be beyond their means.
+Fractional Shares are an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) option that allows investors to buy a fraction of an asset, rather than buying the entire asset. This is especially useful for investors who don't have a lot of [money](/en/posts/en-30-day-rule-for-purchases) to invest, as it allows them to participate in [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) that would normally be beyond their means.
 
 ## How do Fractional Shares work?
 Imagine you want to invest in an investment fund that costs $4,700 USD (approximately R$ 10,000,00 at the current exchange rate, but using USD for English). However, you only have $470 USD (approximately R$ 1,000,00) to invest. With Fractional Shares, you can buy 1/10 of the investment fund, which is $470 USD. This means you'll be entitled to 1/10 of the fund's gains or losses.

@@ -20,7 +20,7 @@ Juros simples são calculados apenas sobre o [valor](/es/glossario/es-valor) ori
 Onde:
 - J = juros
 - P = principal (valor inicial)
-- i = taxa de juros (em decimal)
+- i = [taxa](/es/glossario/es-taxa) de juros (em decimal)
 - t = tempo
 
 ## Exemplo

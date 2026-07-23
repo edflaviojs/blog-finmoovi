@@ -29,12 +29,12 @@ Um exemplo simples para ilustrar isso: imagine que você tem R$ 5.000 investidos
 
 ## Como funciona
 A estratégia de hedge funciona investindo em ativos que têm uma correlação negativa com o ativo original. Isso significa que quando o valor do ativo original cai, o valor do ativo hedge aumenta. Existem diferentes tipos de hedge, incluindo:
-* Hedge de taxa de juros: investindo em títulos com taxas de juros fixas para proteger contra mudanças nas taxas de juros.
-* Hedge de moeda: investindo em moedas estrangeiras para proteger contra flutuações no valor da moeda local.
+* Hedge de taxa de [juros](/glossario/juros): investindo em títulos com taxas de juros fixas para proteger contra mudanças nas taxas de juros.
+* Hedge de [moeda](/glossario/moeda): investindo em moedas estrangeiras para proteger contra flutuações no valor da moeda local.
 * Hedge de commodities: investindo em commodities, como petróleo ou ouro, para proteger contra mudanças nos preços das commodities.
 
 ## 
-**Dica prática:** É importante lembrar que o hedge não é uma estratégia de investimento que visa obter lucros, mas sim reduzir perdas. Portanto, é fundamental ter uma carteira de investimentos diversificada para minimizar o risco.
+**Dica prática:** É importante lembrar que o hedge não é uma estratégia de investimento que visa obter lucros, mas sim reduzir perdas. Portanto, é fundamental ter uma [carteira de investimentos](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) diversificada para minimizar o risco.
 
 ## Vantagens
 As vantagens de usar uma estratégia de hedge incluem:
@@ -53,7 +53,7 @@ As vantagens de usar uma estratégia de hedge incluem:
 Os riscos de usar uma estratégia de hedge incluem:
 * Custo: o hedge pode ser caro, especialmente se você estiver investindo em ativos complexos.
 * Complexidade: o hedge pode ser complexo e difícil de entender, especialmente para investidores iniciantes.
-* Risco de perda: o hedge não é uma garantia de que você não perderá [dinheiro](/posts/cashback-inteligente). Se o ativo hedge não funcionar como esperado, você pode perder dinheiro.
+* Risco de perda: o hedge não é uma garantia de que você não perderá [dinheiro](/posts/cashback-inteligente). Se o ativo hedge não funcionar como esperado, você pode perder [dinheiro](/posts/como-criar-uma-reserva-de-emergencia).
 
 ## 
 **Dica prática:** É importante lembrar que o hedge é uma estratégia de investimento que deve ser usada com moderação. É fundamental ter uma carteira de investimentos diversificada e não depender apenas do hedge para proteger seus investimentos.

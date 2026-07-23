@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## What is Personal Budget?
+## What is Personal [Budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)?
 
 Personal budget is a plan that shows how much money comes in, how much goes out, and where it goes. It's the most basic and powerful tool in [personal finance](/en/posts/en-30-day-rule-for-purchases). Without a budget, you're driving in the dark.
 
@@ -22,7 +22,7 @@ Personal budget is a plan that shows how much money comes in, how much goes out,
 - Investment returns
 - Others (rent, pension)
 
-### Step 2: List all expenses
+### Step 2: List all [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
 
 **Fixed (don't change):**
 - Rent/mortgage

@@ -9,7 +9,7 @@ locale: "pt"
 readingTime: 1
 ---
 
-## O que é Orçamento Pessoal?
+## O que é [Orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) Pessoal?
 
 Orçamento pessoal é um plano que mostra quanto dinheiro entra, quanto sai e para onde vai. É a ferramenta mais básica e poderosa das [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su). Sem orçamento, você está dirigindo no escuro.
 
@@ -50,7 +50,7 @@ Orçamento pessoal é um plano que mostra quanto dinheiro entra, quanto sai e pa
 
 ## Erros comuns
 
-1. Não incluir gastos pequenos (café, delivery)
+1. Não incluir [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) pequenos (café, delivery)
 2. Esquecer despesas anuais (IPVA, IPTU, seguros)
 3. Não revisar mensalmente
 4. Fazer orçamento muito restritivo (não sustenta)

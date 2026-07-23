@@ -19,10 +19,10 @@ seo:
 ---
 
 ## O que é xepa financeira
-A xepa financeira é um termo popular que se refere à [reserva de emergência](/glossario/reserva-de-emergencia), ou seja, uma quantia de dinheiro guardada para cobrir despesas inesperadas ou imprevistos. É como ter um colchão financeiro para amortecer os choques quando algo não sai como planejado. Imagine que você ganha R$ 5.000 por mês e, de repente, seu carro quebra e precisa de uma reparo que custa R$ 2.000. Se você não tiver uma xepa financeira, pode ter que recorrer a empréstimos ou cartões de crédito, o que pode gerar juros altos e comprometer sua estabilidade financeira.
+A xepa financeira é um termo popular que se refere à [reserva de emergência](/glossario/reserva-de-emergencia), ou seja, uma quantia de [dinheiro](/posts/cashback-inteligente) guardada para cobrir despesas inesperadas ou imprevistos. É como ter um colchão financeiro para amortecer os choques quando algo não sai como planejado. Imagine que você ganha R$ 5.000 por mês e, de repente, seu carro quebra e precisa de uma reparo que custa R$ 2.000. Se você não tiver uma xepa financeira, pode ter que recorrer a empréstimos ou cartões de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), o que pode gerar juros altos e comprometer sua estabilidade financeira.
 
 ## Como funciona
-A xepa financeira funciona como um seguro contra imprevistos. A ideia é guardar uma quantia de dinheiro em uma conta separada, que possa ser acessada rapidamente em caso de necessidade. É importante que essa conta seja fácil de acessar, mas não tão fácil que você acabe usando o dinheiro para coisas não essenciais. **Dica prática:** escolha uma conta com rendimento, como uma poupança ou um fundo de investimento, para que seu dinheiro renda juros e cresça ao longo do tempo. Alguns exemplos de contas que podem ser usadas para xepa financeira incluem:
+A xepa financeira funciona como um seguro contra imprevistos. A ideia é guardar uma quantia de dinheiro em uma conta separada, que possa ser acessada rapidamente em caso de necessidade. É importante que essa conta seja fácil de acessar, mas não tão fácil que você acabe usando o dinheiro para coisas não essenciais. **Dica prática:** escolha uma conta com rendimento, como uma [poupança](/glossario/poupanca) ou um fundo de investimento, para que seu dinheiro renda juros e cresça ao longo do tempo. Alguns exemplos de contas que podem ser usadas para xepa financeira incluem:
 * Poupança
 * Fundo de investimento
 * Conta corrente com rendimento
@@ -47,7 +47,7 @@ Embora a xepa financeira seja uma ferramenta importante para a estabilidade fina
 * Alguns exemplos de riscos incluem:
 * Perda de valor devido à inflação
 * Juros baixos
-* Risco de liquidez (dificuldade em acessar o dinheiro quando necessário)
+* Risco de [liquidez](/glossario/liquidez) (dificuldade em acessar o dinheiro quando necessário)
 
 ![Vantagens](/images/glossario/xepa-financeira-inline-3.webp)
 

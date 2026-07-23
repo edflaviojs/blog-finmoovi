@@ -23,7 +23,7 @@ Let's consider an example to better understand the difference between these two 
 ### Tabela Price
 - Installments 1 to 12: $443 USD (amortization and interest vary, but the installment value remains constant)
 
-## Comparison
+## [Comparison](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico)
 The choice between the Tabela SAC and the Tabela Price depends on your financing profile and the conditions offered by the lender. The Tabela SAC may be more advantageous for those who prioritize constant reduction of the outstanding balance, while the Tabela Price offers the advantage of having fixed installments, which can be easier to manage [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026)-wise.
 
 | Feature | Tabela SAC | Tabela Price |

@@ -18,9 +18,9 @@ seo:
 ---
 
 ## O que é KYC
-O termo KYC, ou "[Know Your Customer](/glossario/know-your-customer)" (Conheça Seu Cliente), é um conceito fundamental no mundo das finanças, especialmente quando se trata de serviços bancários e investimentos. Basicamente, o KYC é um conjunto de procedimentos que as instituições financeiras devem seguir para verificar a identidade e a legitimidade de seus clientes. Isso inclui coletar e verificar informações como nome, endereço, data de nascimento, número de CPF e outros dados pessoais.
+O termo KYC, ou "[Know Your Customer](/glossario/know-your-customer)" (Conheça Seu Cliente), é um conceito fundamental no mundo das finanças, especialmente quando se trata de serviços bancários e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Basicamente, o KYC é um conjunto de procedimentos que as instituições financeiras devem seguir para verificar a identidade e a legitimidade de seus clientes. Isso inclui coletar e verificar informações como nome, endereço, data de nascimento, número de CPF e outros dados pessoais.
 
-Essas informações são cruciais para que as instituições financeiras possam cumprir com as regulamentações anti-lavagem de [dinheiro](/posts/cashback-inteligente) e combate ao financiamento do terrorismo, conhecidas como AML (Anti-Money Laundering) e CFT (Combate ao Financiamento do Terrorismo). Além disso, o KYC ajuda a prevenir fraudes e a proteger os clientes contra atividades ilegais.
+Essas informações são cruciais para que as instituições financeiras possam cumprir com as regulamentações anti-lavagem de [dinheiro](/posts/cashback-inteligente) e combate ao [financiamento](/glossario/financiamento) do terrorismo, conhecidas como AML (Anti-Money Laundering) e CFT (Combate ao Financiamento do Terrorismo). Além disso, o KYC ajuda a prevenir fraudes e a proteger os clientes contra atividades ilegais.
 
 ![O que é KYC](/images/glossario/kyc-inline-1.webp)
 
@@ -33,7 +33,7 @@ O processo de KYC geralmente começa quando um cliente abre uma conta em uma ins
 * Informações sobre a fonte de renda, como contracheque ou declaração de [imposto de renda](/glossario/imposto-de-renda)
 * Outras informações relevantes, como histórico de [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) ou relatórios de agências de crédito
 
-As instituições financeiras utilizam essas informações para verificar a identidade do cliente e avaliar o risco de lavagem de dinheiro ou financiamento do terrorismo. Se o cliente for considerado de alto risco, a instituição financeira pode solicitar mais informações ou até mesmo recusar a abertura da conta.
+As instituições financeiras utilizam essas informações para verificar a identidade do cliente e avaliar o risco de lavagem de [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) ou financiamento do terrorismo. Se o cliente for considerado de alto risco, a instituição financeira pode solicitar mais informações ou até mesmo recusar a abertura da conta.
 
 ## Vantagens
 O KYC oferece várias vantagens para os clientes e as instituições financeiras. Algumas das principais vantagens incluem:
@@ -52,7 +52,7 @@ Embora o KYC ofereça várias vantagens, também há alguns riscos associados a 
 
 
 ## Exemplos práticos
-Vamos considerar um exemplo prático. Imagine que você é um profissional com um salário de R$ 5.000 por mês e você deseja abrir uma conta em um banco para investir em ações. Para abrir a conta, você precisará fornecer documentos e informações para o KYC. Isso pode incluir:
+Vamos considerar um exemplo prático. Imagine que você é um profissional com um salário de R$ 5.000 por mês e você deseja abrir uma conta em um banco para investir em [ações](/glossario/acoes). Para abrir a conta, você precisará fornecer documentos e informações para o KYC. Isso pode incluir:
 * Documentos de identificação, como RG e CPF
 * Comprovante de residência, como conta de água ou luz
 * Informações sobre a fonte de renda, como contracheque ou declaração de imposto de renda

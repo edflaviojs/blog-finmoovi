@@ -19,7 +19,7 @@ seo:
 ---
 
 ## What it is
-A usura é um termo financeiro que se refere à prática de cobrar [juros](/en/glossario/en-juros) excessivos sobre empréstimos ou financiamentos. Isso significa que, quando você pega um empréstimo, você não apenas paga o [valor](/en/glossario/en-valor) principal, mas também uma taxa adicional, que é o juro. A usura ocorre quando esses juros são muito altos, tornando difícil para o devedor pagar a dívida. Por exemplo, imagine que você pega um empréstimo de R$ 5.000 com um juro de 20% ao mês. Isso significa que, no final do mês, você terá que pagar R$ 6.000, o que pode ser muito difícil para alguém que ganha R$ 4.000 por mês.
+A usura é um termo financeiro que se refere à prática de cobrar [juros](/en/glossario/en-juros) excessivos sobre empréstimos ou financiamentos. Isso significa que, quando você pega um empréstimo, você não apenas paga o [valor](/en/glossario/en-valor) principal, mas também uma [taxa](/en/glossario/en-taxa) adicional, que é o juro. A usura ocorre quando esses juros são muito altos, tornando difícil para o devedor pagar a dívida. Por exemplo, imagine que você pega um empréstimo de R$ 5.000 com um juro de 20% ao mês. Isso significa que, no final do mês, você terá que pagar R$ 6.000, o que pode ser muito difícil para alguém que ganha R$ 4.000 por mês.
 
 * A usura pode ocorrer em diferentes tipos de empréstimos, incluindo empréstimos pessoais, cartões de crédito e financiamentos de veículos.
 * A taxa de juros é um dos principais fatores que determinam se um empréstimo é usurário ou não.

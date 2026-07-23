@@ -18,10 +18,10 @@ seo:
 ---
 
 ## Qué es
-Las acciones son una forma de invertir en empresas, permitiéndote ser dueño de una pequeña parte de ellas. Imagina que tienes un negocio de helados y decides vender partes de tu negocio a amigos y familiares para obtener dinero y expandir tu negocio. Cada parte que vendes se llama "acción". Las personas que compran estas acciones se convierten en accionistas y tienen derecho a recibir una parte de las ganancias del negocio, si es que hay ganancias.
+Las acciones son una forma de invertir en empresas, permitiéndote ser dueño de una pequeña parte de ellas. Imagina que tienes un negocio de helados y decides vender partes de tu negocio a amigos y familiares para obtener [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) y expandir tu negocio. Cada parte que vendes se llama "acción". Las personas que compran estas acciones se convierten en accionistas y tienen derecho a recibir una parte de las ganancias del negocio, si es que hay ganancias.
 
 * Las acciones pueden ser de diferentes tipos, como acciones comunes o preferentes
-* Cada acción tiene un valor, que puede fluctuar según el desempeño de la empresa
+* Cada acción tiene un [valor](/es/glossario/es-valor), que puede fluctuar según el desempeño de la empresa
 * Las acciones se pueden comprar y vender en bolsas de valores, como la B3 en Brasil
 
 ![Qué es](/images/glossario/acoes-inline-1.webp)
@@ -50,13 +50,13 @@ Las acciones ofrecen varias ventajas, como:
 
 
 
-Las acciones también pueden ser una forma de ahorrar para el largo plazo, como para la jubilación o la educación de tus hijos. Por ejemplo, si ahorras R$500 al mes en acciones durante 10 años, podrías tener una buena cantidad de dinero para cuando lo necesites.
+Las acciones también pueden ser una forma de ahorrar para el largo plazo, como para la jubilación o la educación de tus hijos. Por ejemplo, si ahorras R$500 al mes en acciones durante 10 años, podrías tener una buena cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) para cuando lo necesites.
 
 ## Riesgos
 Las acciones también conllevan riesgos, como:
 * La posibilidad de perder dinero si la empresa no tiene un buen desempeño
 * La [volatilidad](/es/glossario/es-volatilidade) del mercado, que puede hacer que el valor de tus acciones fluctúe
-* La falta de liquidez, que puede hacer que sea difícil vender tus acciones cuando lo necesites
+* La falta de [liquidez](/es/glossario/es-liquidez), que puede hacer que sea difícil vender tus acciones cuando lo necesites
 
 **Consejo práctico:** Es importante entender que las acciones son una inversión a largo plazo, y no debes invertir dinero que necesites en el corto plazo. Puedes hacer esto invirtiendo solo el dinero que estás dispuesto a perder, y manteniendo una reserva de emergencia para cubrir tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) básicos.
 

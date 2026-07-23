@@ -19,7 +19,7 @@ seo:
 ---
 
 ## What it is
-O [Tesouro Direto](/en/posts/en-tesouro-direto-para-iniciantes) é um programa criado pelo governo brasileiro que permite que os cidadãos invistam diretamente em títulos públicos, como LTNs (Letras do Tesouro Nacional) e NTNs (Notas do Tesouro Nacional). Esses títulos são basicamente empréstimos que você faz ao governo, que, em troca, paga [juros](/en/glossario/en-juros) sobre o valor investido. É uma forma de aplicar seu dinheiro de maneira segura e rentável, pois os títulos são garantidos pelo governo.
+O [Tesouro Direto](/en/posts/en-tesouro-direto-para-iniciantes) é um programa criado pelo governo brasileiro que permite que os cidadãos invistam diretamente em títulos públicos, como LTNs (Letras do Tesouro Nacional) e NTNs (Notas do Tesouro Nacional). Esses títulos são basicamente empréstimos que você faz ao governo, que, em troca, paga [juros](/en/glossario/en-juros) sobre o [valor](/en/glossario/en-valor) investido. É uma forma de aplicar seu dinheiro de maneira segura e rentável, pois os títulos são garantidos pelo governo.
 
 Os títulos do Tesouro Direto variam em prazos e taxas de juros, o que significa que você pode escolher o que melhor se adequa às suas necessidades financeiras. Por exemplo, se você tem R$ 5.000 para investir e não precisa do dinheiro nos próximos 5 anos, pode optar por um título com prazo mais longo, que geralmente oferece taxas de juros mais altas.
 
@@ -40,7 +40,7 @@ Os principais benefícios do Tesouro Direto incluem:
 * Segurança: Como os títulos são garantidos pelo governo, o risco de perda é muito baixo.
 * Rentabilidade: Os juros pagos podem ser mais altos do que os oferecidos por outras aplicações financeiras de baixo risco.
 * Liquidez: Embora os títulos tenham prazos fixos, você pode vendê-los antes do vencimento, se necessário, no entanto, pode haver penalidades ou perda de juros.
-* [Diversificação](/en/glossario/en-diversificacao): O Tesouro Direto pode ser uma boa opção para diversificar sua carteira de investimentos, reduzindo a dependência de apenas um tipo de aplicação.
+* [Diversificação](/en/glossario/en-diversificacao): O Tesouro Direto pode ser uma boa opção para diversificar sua carteira de investimentos, reduzindo a dependência de apenas um tipo de [aplicação](/en/glossario/en-aplicacao).
 
 **Practical tip:** Considere o Tesouro Direto como parte de uma estratégia de investimento de longo prazo, pois os juros compostos podem aumentar significativamente o valor do seu investimento ao longo do tempo.
 

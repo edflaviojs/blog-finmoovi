@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-La **poupança** es la cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) que ofrecen los bancos en Brasil. Funciona como una “caja fuerte” digital donde puedes guardar parte de tu ingreso y, a cambio, el banco te paga un pequeño interés mensual. No es un producto complicado: simplemente depositas dinero y lo dejas “trabajar” mientras tú lo utilizas para tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) cotidianos. En otras palabras, es la forma más sencilla de crear un colchón financiero sin necesidad de ser experto en inversiones.
+La **poupança** es la cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) que ofrecen los bancos en Brasil. Funciona como una “caja fuerte” digital donde puedes guardar parte de tu ingreso y, a [cambio](/es/glossario/es-cambio), el banco te paga un pequeño interés mensual. No es un producto complicado: simplemente depositas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) y lo dejas “trabajar” mientras tú lo utilizas para tus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) cotidianos. En otras palabras, es la forma más sencilla de crear un colchón financiero sin necesidad de ser experto en inversiones.
 
 ![Qué es](/images/glossario/poupanca-inline-1.webp)
 
@@ -32,7 +32,7 @@ El mecanismo es muy simple: cada vez que recibes tu salario, decides cuánto vas
 
 - **Depositar:** puedes hacerlo vía transferencia bancaria, boleto o directamente en la sucursal.  
 - **Calcular intereses:** el banco aplica la tasa oficial (conocida como “Selic”) sobre el saldo promedio diario.  
-- **Retirar:** cuando necesitas el dinero, haces un saque o una transferencia a tu cuenta corriente; el proceso suele ser inmediato.  
+- **Retirar:** cuando necesitas el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado), haces un saque o una transferencia a tu cuenta corriente; el proceso suele ser inmediato.  
 
 ## Ventajas
 
@@ -67,7 +67,7 @@ Veamos cómo la poupança puede ayudar a personas con diferentes salarios.
 
 Abrir una poupança es tan fácil como abrir una cuenta corriente. Sigue estos pasos y estarás listo para comenzar a ahorrar sin complicaciones.  
 
-- **Elige el banco:** compara la tasa de interés y las tarifas; bancos digitales como Nubank o Banco Inter suelen ofrecer procesos 100 % online.  
+- **Elige el banco:** compara la tasa de interés y las tarifas; bancos digitales como [Nubank](/es/glossario/es-nubank) o Banco Inter suelen ofrecer procesos 100 % online.  
 - **Regístrate en la app:** descarga la aplicación, completa tu cadastro (registro) y verifica tu identidad con foto de documento; el proceso dura menos de 10 minutos.  
 - **Define tu aporte:** decide qué porcentaje de tu salario vas a transferir. **Consejo práctico:** programa una transferencia automática el día que recibes tu pago para que el ahorro sea automático.  
 - **Monitorea tu saldo:** revisa la app cada mes y celebra cada nuevo cero en la cuenta corriente; **Consejo práctico:** usa notificaciones push para recibir alertas cuando el saldo crezca un 5 % más.  

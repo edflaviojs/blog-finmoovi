@@ -49,8 +49,8 @@ Unfortunately, financial education is not a priority in the Brazilian school cur
 
 ## How to Start
 
-1. Write down all your expenses for 30 days
-2. Create a simple budget
+1. Write down all your [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) for 30 days
+2. Create a simple [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)
 3. Pay off expensive debts (checking account, [overdraft](/en/glossario/en-cheque-especial))
 4. Build an emergency reserve
 5. Start investing (even R$ 50/month)

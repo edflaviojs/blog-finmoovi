@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A moeda é um conceito fundamental no mundo das finanças, e entender como ela funciona é essencial para tomar decisões informadas sobre nosso dinheiro. Em resumo, a moeda é um meio de troca, uma unidade de conta e um padrão de valor. No Brasil, nossa moeda é o Real (R$), e é usada para comprar tudo, desde alimentos e roupas até casas e carros. Por exemplo, se você ganha R$ 5.000 por mês, você pode usar esse dinheiro para pagar suas contas, comprar alimentos e ainda sobrar um pouco para poupar ou investir.
+A moeda é um conceito fundamental no mundo das finanças, e entender como ela funciona é essencial para tomar decisões informadas sobre nosso dinheiro. Em resumo, a moeda é um meio de troca, uma unidade de conta e um padrão de [valor](/en/glossario/en-valor). No Brasil, nossa moeda é o Real (R$), e é usada para comprar tudo, desde alimentos e roupas até casas e carros. Por exemplo, se você ganha R$ 5.000 por mês, você pode usar esse dinheiro para pagar suas contas, comprar alimentos e ainda sobrar um pouco para poupar ou investir.
 
 * A moeda pode ser física, como cédulas e moedas, ou digital, como o dinheiro em sua conta bancária.
 * A moeda também pode ser nacional, como o Real no Brasil, ou internacional, como o Dólar Americano.

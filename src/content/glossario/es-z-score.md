@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-El Z‑Score es una medida estadística que indica cuán lejos está un valor de la media de un conjunto de datos, expresado en “desviaciones estándar”. En finanzas personales se usa para evaluar la salud financiera de una persona o de una empresa, comparando ingresos, gastos y deudas con el promedio del mercado. Cuanto más alto sea el Z‑Score, mejor será la posición financiera; un valor bajo puede señalar problemas de liquidez o de endeudamiento.
+El Z‑Score es una medida estadística que indica cuán lejos está un valor de la media de un conjunto de datos, expresado en “desviaciones estándar”. En [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) se usa para evaluar la salud financiera de una persona o de una empresa, comparando ingresos, gastos y deudas con el promedio del mercado. Cuanto más alto sea el Z‑Score, mejor será la posición financiera; un valor bajo puede señalar problemas de [liquidez](/es/glossario/es-liquidez) o de endeudamiento.
 
 ![Qué es](/images/glossario/z-score-inline-1.webp)
 
@@ -51,7 +51,7 @@ Usar el Z‑Score en tu planificación financiera tiene varios beneficios:
 Aunque el Z‑Score es útil, también tiene limitaciones que debes considerar:
 
 - **Dependencia de la muestra:** Si la media y la desviación estándar provienen de datos poco representativos, el resultado será engañoso.  
-- **Enfoque estático:** No captura cambios rápidos en la economía o en tus circunstancias personales.  
+- **Enfoque estático:** No captura cambios rápidos en la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) o en tus circunstancias personales.  
 - **Sobresimplificación:** Reducir tu salud financiera a un solo número puede ocultar detalles importantes, como la calidad de tus inversiones o la estabilidad de tu empleo.  
 - **Interpretación errónea:** Un Z‑Score alto no garantiza seguridad absoluta; simplemente indica que estás por encima del promedio.
 
@@ -60,7 +60,7 @@ Aunque el Z‑Score es útil, también tiene limitaciones que debes considerar:
 Veamos cómo el Z‑Score se traduce en decisiones cotidianas usando salarios reales:
 
 - **Caso 1:** María gana R$3.200. La media del sector es R$4.000 y σ = R$600. Su Z‑Score = (3.200‑4.000)/600 = -1,33. Un valor negativo sugiere que está por debajo del promedio, por lo que debería buscar reducir gastos o buscar ingresos extra.  
-- **Caso 2:** João percibe R$7.500. Media = R$5.500, σ = R$900. Z‑Score = (7.500‑5.500)/900 = 2,22. Con un puntaje tan alto, João puede permitirse invertir en un fondo de emergencia o en una cartera de acciones diversificada.  
+- **Caso 2:** João percibe R$7.500. Media = R$5.500, σ = R$900. Z‑Score = (7.500‑5.500)/900 = 2,22. Con un puntaje tan alto, João puede permitirse invertir en un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) o en una cartera de acciones diversificada.  
 - **Caso 3:** Ana tiene un ingreso de R$5.800 y una deuda mensual de R$2.300. Si la media de deuda en su rango salarial es R$1.800 con σ = R$400, su Z‑Score de deuda = (2.300‑1.800)/400 = 1,25. Un valor positivo indica que su nivel de deuda está por encima del promedio, lo que la invita a renegociar tasas o a priorizar el pago de la deuda.
 
 ## Cómo empezar

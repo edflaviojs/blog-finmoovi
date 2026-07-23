@@ -27,7 +27,7 @@ Una **opción** es un contrato que te da el derecho, pero no la obligación, de 
 
 ## Cómo funciona
 
-Cuando adquieres una opción, estás pagando una prima (el precio de la opción). Esa prima es el único dinero que pierdes si decides no ejercer el contrato. Existen dos tipos básicos:
+Cuando adquieres una opción, estás pagando una prima (el precio de la opción). Esa prima es el único [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) que pierdes si decides no ejercer el contrato. Existen dos tipos básicos:
 
 - **Call (opción de compra):** te permite comprar el activo a un precio fijo (precio de ejercicio) antes de que venza la opción.
 - **Put (opción de venta):** te permite vender el activo al precio de ejercicio dentro del mismo plazo.
@@ -55,10 +55,10 @@ Las opciones ofrecen varios beneficios que pueden ser útiles incluso para quien
 
 Como todo instrumento financiero, las opciones conllevan riesgos que no debes subestimar:
 
-- **Pérdida total de la prima:** si la opción expira sin valor, la suma pagada desaparece.
+- **Pérdida total de la prima:** si la opción expira sin [valor](/es/glossario/es-valor), la suma pagada desaparece.
 - **Complejidad:** entender conceptos como [volatilidad](/es/glossario/es-volatilidade), delta y vencimiento requiere estudio; un error puede costar más de lo esperado.
 - **Apalancamiento excesivo:** aunque la prima sea baja, la exposición al activo subyacente puede ser alta, generando pérdidas indirectas.
-- **Liquidez:** no todas las opciones tienen suficiente movimiento en el mercado, lo que dificulta comprar o vender a buen precio.
+- **[Liquidez](/es/glossario/es-liquidez):** no todas las opciones tienen suficiente movimiento en el mercado, lo que dificulta comprar o vender a buen precio.
 
 ## Ejemplos prácticos
 
@@ -81,7 +81,7 @@ Si decides probar las opciones, sigue estos pasos para no meter la pata:
 - **Usa una hoja de cálculo:** registra cada operación (activo, tipo, precio de ejercicio, prima, vencimiento) para evaluar resultados y aprender de los errores.
 - **Revisa el vencimiento:** nunca dejes una opción sin supervisar; si el mercado se mueve a tu favor, actúa antes de que expire.
 
-**Consejo práctico:** **Mantén un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) separado antes de operar con opciones**, así evitas tocar dinero destinado a gastos esenciales.
+**Consejo práctico:** **Mantén un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) separado antes de operar con opciones**, así evitas tocar dinero destinado a [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) esenciales.
 
 **Consejo práctico:** **No te dejes llevar por la emoción**; si la acción sube rápidamente, evalúa si ejercer la opción o venderla en el mercado para asegurar ganancias.
 

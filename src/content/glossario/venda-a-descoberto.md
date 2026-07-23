@@ -31,7 +31,7 @@ Venda a descoberto, também chamada de “short selling”, é quando você vend
 Quando você decide vender a descoberto, o processo se resume a três passos simples:
 
 - **Emprestar a ação**: a corretora localiza quem tem a ação e a disponibiliza para você vender.  
-- **Vender no mercado**: a ação é vendida ao preço atual, gerando crédito na sua conta.  
+- **Vender no mercado**: a ação é vendida ao preço atual, gerando [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) na sua conta.  
 - **Recomprar (cover)**: se o preço cair, você compra a mesma quantidade de ação por menos, devolve ao credor e embolsa a diferença. Caso o preço suba, você terá que comprar a ação por um valor maior, gerando prejuízo.
 
 **Dica prática:** antes de abrir uma posição a descoberto, verifique se a corretora oferece margem suficiente – isso evita surpresas desagradáveis quando o mercado se mover contra você.
@@ -46,7 +46,7 @@ A venda a descoberto pode ser uma ferramenta útil para diversificar sua estrat�
 
 - **Proteção de carteira**: funciona como um seguro quando você tem ações que podem cair; a venda a descoberto pode compensar parte da perda.  
 - **Potencial de lucro em mercados em baixa**: você ganha quando o preço cai, algo que investidores tradicionais não conseguem fazer.  
-- **Alavancagem moderada**: ao usar margem (dinheiro emprestado da corretora), você controla mais ações com menos capital próprio.
+- **Alavancagem moderada**: ao usar margem ([dinheiro](/posts/cashback-inteligente) emprestado da corretora), você controla mais ações com menos capital próprio.
 
 **Dica prática:** use a venda a descoberto apenas para cobrir posições que já possui, nunca como seu único plano de investimento.
 
@@ -57,7 +57,7 @@ Apesar das vantagens, a operação traz riscos que podem superar o valor investi
 - **Perda ilimitada**: ao contrário da compra de ação, onde o máximo que você perde é o valor investido, na venda a descoberto o preço da ação pode subir indefinidamente, gerando prejuízo sem limite.  
 - **Chamada de margem**: se o mercado se mover contra você, a corretora pode exigir que você deposite mais dinheiro (margin call) para manter a posição aberta.  
 - **Custos de empréstimo**: algumas ações têm taxas de aluguel altas, o que reduz o lucro potencial.  
-- **Risco de liquidação**: em eventos de alta volatilidade, a corretora pode fechar sua posição automaticamente, realizando prejuízo.
+- **Risco de liquidação**: em eventos de alta [volatilidade](/glossario/volatilidade), a corretora pode fechar sua posição automaticamente, realizando prejuízo.
 
 **Dica prática:** nunca arrisque mais de 2% do seu patrimônio total em uma única operação a descoberto.
 
@@ -85,7 +85,7 @@ Se você decidiu experimentar a venda a descoberto, siga estes passos para inici
 
 ## Comece hoje
 
-A venda a descoberto não é um bicho de sete cabeças, mas exige disciplina e controle de risco. Se você já tem uma reserva de emergência e entende bem seu perfil, experimente abrir uma posição pequena e observar o mercado. Cada operação traz aprendizado, e com prática você pode transformar a queda de preços em oportunidade de ganho. Então, que tal dar o primeiro passo hoje mesmo? Seu futuro financeiro agradece.
+A venda a descoberto não é um bicho de sete cabeças, mas exige disciplina e controle de risco. Se você já tem uma [reserva de emergência](/glossario/reserva-de-emergencia) e entende bem seu perfil, experimente abrir uma posição pequena e observar o mercado. Cada operação traz aprendizado, e com prática você pode transformar a queda de preços em oportunidade de ganho. Então, que tal dar o primeiro passo hoje mesmo? Seu futuro financeiro agradece.
 
 ---
 

@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What is Renda Variável?
 
-Renda Variável is everything that doesn't have a guaranteed return. The price goes up and down according to the market. You can earn a lot — or lose. It includes stocks, real estate funds, ETFs, cryptocurrencies, and derivatives.
+Renda Variável is everything that doesn't have a guaranteed return. The price goes up and down according to the market. You can earn a lot — or lose. It includes stocks, [real estate funds](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo), ETFs, cryptocurrencies, and derivatives.
 
 ## Diferença para [Renda Fixa](/en/glossario/en-renda-fixa)
 
@@ -21,7 +21,7 @@ Renda Variável is everything that doesn't have a guaranteed return. The price g
 | Risco | Baixo | Médio a alto |
 | Potencial | Limitado | Ilimitado |
 | Prazo ideal | Curto/médio | Longo (5+ anos) |
-| Exemplo | CDB, Tesouro | Ações, FIIs |
+| Exemplo | [CDB](/en/glossario/en-cdb), Tesouro | [Ações](/en/glossario/en-acoes), FIIs |
 
 ## Principais investimentos de renda variável
 
@@ -33,7 +33,7 @@ Renda Variável is everything that doesn't have a guaranteed return. The price g
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-- Perda de capital (your investment may be worth less)
+- Perda de capital (your [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) may be worth less)
 - Volatilidade (daily fluctuations)
 - Risco de empresa (company bankruptcy)
 - Risco de mercado (economic crises)

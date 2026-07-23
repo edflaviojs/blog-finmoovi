@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## What is KYC (Know Your Customer)?
+## What is [KYC](/en/glossario/en-kyc) (Know Your Customer)?
 
 KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verify who you are. When they ask for your ID, CPF, proof of address, and selfie to open an account — that's KYC.
 
@@ -37,7 +37,7 @@ KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verif
 ### Advanced level
 
 - Tax return
-- Proof of income
+- Proof of [income](/en/posts/en-montando-carteira-diversificada-com-r-500)
 - Source of funds
 
 ## Where you'll find KYC
@@ -46,7 +46,7 @@ KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verif
 - Cryptocurrency exchanges
 - Fintechs and digital wallets
 - Loans and financing
-- [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) above certain values (e.g., R$ 10,000 in a [CDB](/en/glossario/en-cdb) or R$ 5,000 in an ETF)
+- [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) above certain values (e.g., R$ 10,000 in a [CDB](/en/glossario/en-cdb) or R$ 5,000 in an [ETF](/en/glossario/en-etf))
 
 ## Tips
 

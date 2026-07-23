@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## ¿Qué es Orçamento Pessoal?
+## ¿Qué es [Orçamento](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) Pessoal?
 
 Orçamento pessoal é um plano que mostra quanto dinheiro entra, quanto sai e para onde vai. É a ferramenta mais básica e poderosa das finanças pessoais. Sem orçamento, você está dirigindo no escuro.
 

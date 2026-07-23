@@ -35,4 +35,4 @@ Si tienes 100 acciones de una empresa que paga R$ 2,00 por acción en dividendos
 
 ## Estrategia de dividendos
 
-Muchos inversores montan carteras enfocadas en dividendos para generar renta pasiva mensual. Con R$ 500.000 invertidos en buenas pagadoras, es posible recibir R$ 3.000-5.000/mes.
+Muchos inversores montan carteras enfocadas en dividendos para generar [renta pasiva](/es/posts/es-fundos-imobiliarios-para-iniciantes-guia-completo) mensual. Con R$ 500.000 invertidos en buenas pagadoras, es posible recibir R$ 3.000-5.000/mes.

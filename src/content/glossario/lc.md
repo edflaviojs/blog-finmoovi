@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é
-O termo "LC" é uma abreviação para "Letra de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)", um tipo de instrumento financeiro utilizado para garantir pagamentos entre empresas ou indivíduos. Basicamente, é um contrato entre um emitente (quem paga), um beneficiário (quem recebe) e um banco (que garante o pagamento). Imagine que você comprou um produto de uma empresa e precisa pagar R$ 10.000,00 em 30 dias. Você pode emitir uma LC para garantir que o pagamento será feito, e o banco se responsabiliza por honrar o valor caso você não pague.
+O termo "LC" é uma abreviação para "Letra de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)", um tipo de instrumento financeiro utilizado para garantir pagamentos entre empresas ou indivíduos. Basicamente, é um contrato entre um emitente (quem paga), um beneficiário (quem recebe) e um banco (que garante o pagamento). Imagine que você comprou um produto de uma empresa e precisa pagar R$ 10.000,00 em 30 dias. Você pode emitir uma LC para garantir que o pagamento será feito, e o banco se responsabiliza por honrar o [valor](/glossario/valor) caso você não pague.
 
 ## 
 A LC funciona como uma espécie de seguro para o beneficiário, garantindo que o pagamento será feito mesmo se o emitente não cumprir com sua obrigação. Aqui estão os principais passos envolvidos no processo:
@@ -36,13 +36,13 @@ As LCs oferecem várias vantagens para as empresas e indivíduos que as utilizam
 * **Garantia de pagamento**: a LC garante que o pagamento será feito, mesmo se o emitente não cumprir com sua obrigação
 * **Redução do risco**: a LC reduz o risco de não pagamento para o beneficiário, permitindo que ele planeje suas operações com mais segurança
 * **Aumento da credibilidade**: a emissão de uma LC pode aumentar a credibilidade do emitente, pois demonstra sua capacidade de honrar seus compromissos
-* **Flexibilidade**: as LCs podem ser utilizadas para financiar uma variedade de operações, desde a compra de mercadorias até a realização de projetos de investimento
+* **Flexibilidade**: as LCs podem ser utilizadas para financiar uma variedade de operações, desde a compra de mercadorias até a realização de projetos de [investimento](/posts/montando-carteira-diversificada-com-r-500)
 
-## Riscos
+## [Riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Embora as LCs ofereçam várias vantagens, também envolvem alguns riscos. Alguns dos principais riscos incluem:
 * **Risco de crédito**: o banco que emite a LC assume o risco de crédito do emitente, o que pode afetar sua capacidade de pagar
 * **Risco de [liquidez](/glossario/liquidez)**: a LC pode afetar a liquidez do emitente, pois ele precisa ter recursos disponíveis para pagar o valor da LC
-* **Risco de taxa de juros**: as taxas de juros das LCs podem ser altas, o que pode aumentar o custo do [financiamento](/glossario/financiamento)
+* **Risco de taxa de [juros](/glossario/juros)**: as taxas de juros das LCs podem ser altas, o que pode aumentar o custo do [financiamento](/glossario/financiamento)
 * **Risco de burocracia**: o processo de emissão de uma LC pode ser burocrático e demorado, o que pode atrasar a realização de operações
 
 ## Exemplos práticos

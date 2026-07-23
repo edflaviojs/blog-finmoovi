@@ -52,7 +52,7 @@ Como todo en la vida, las aplicações no están exentas de riesgos. Es importan
 
 - **Riesgo de mercado:** si la aplicación está vinculada a la bolsa, su valor puede subir y bajar rápidamente.
 - **Riesgo de crédito:** la entidad que recibe tu dinero podría incumplir sus pagos.
-- **Liquidez limitada:** algunas aplicaciones solo permiten retirar el dinero al vencimiento, lo que puede ser un problema si necesitas efectivo antes.
+- **Liquidez limitada:** algunas [aplicaciones](/es/posts/es-5-alternativas-ao-mobills-em-2026) solo permiten retirar el dinero al vencimiento, lo que puede ser un problema si necesitas efectivo antes.
 - **Inflación inesperada:** si la tasa de rendimiento es menor que la inflación, tu dinero pierde poder adquisitivo.
 
 ## Ejemplos prácticos
@@ -60,8 +60,8 @@ Como todo en la vida, las aplicações no están exentas de riesgos. Es importan
 Imagina que tu salario mensual está entre R$3.000 y R$8.000 y decides destinar una parte a una aplicação de renta fija (típicamente más segura). Aquí tienes tres escenarios reales:
 
 - **Caso 1:** Salario R$3.500, aplicas R$500 mensuales en un CDB (Certificado de Depósito Bancario) con 110 % del CDI (índice de referencia). En un año, obtienes aproximadamente R$5.800 de rendimientos, sumando R$11.800 al final del período.
-- **Caso 2:** Salario R$5.200, aplicas R$1.000 en un fondo de inversión de renta variable que históricamente rinde 12 % anual. Después de 2 años, tu inversión crece a R$2.530, generando R$1.530 de ganancias.
-- **Caso 3:** Salario R$7.800, destinas R$2.000 a un Tesouro Direto (título del gobierno) con tasa de 8 % al año. En 3 años, el capital acumulado alcanza R$6.480, lo que representa R$2.480 de intereses.
+- **Caso 2:** Salario R$5.200, aplicas R$1.000 en un fondo de inversión de [renta variable](/es/glossario/es-renda-variavel) que históricamente rinde 12 % anual. Después de 2 años, tu inversión crece a R$2.530, generando R$1.530 de ganancias.
+- **Caso 3:** Salario R$7.800, destinas R$2.000 a un [Tesouro Direto](/es/glossario/es-tesouro-direto) (título del gobierno) con tasa de 8 % al año. En 3 años, el capital acumulado alcanza R$6.480, lo que representa R$2.480 de intereses.
 
 En todos los casos, la clave está en ajustar el monto y el tipo de aplicação a tu capacidad de ahorro y a tus metas.
 
@@ -70,7 +70,7 @@ En todos los casos, la clave está en ajustar el monto y el tipo de aplicação 
 Dar el primer paso es más fácil de lo que parece. Sigue esta guía paso a paso y verás cómo tu dinero empieza a trabajar para ti:
 
 - **Define tu objetivo:** decide si la aplicação será para emergencias, una compra futura o simplemente generar ingresos extra.
-- **Evalúa tu presupuesto:** revisa tus ingresos y gastos; destina entre 10 % y 20 % de tu salario a la aplicación (por ejemplo, R$500 de un salario de R$5.000).
+- **Evalúa tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias):** revisa tus ingresos y gastos; destina entre 10 % y 20 % de tu salario a la aplicación (por ejemplo, R$500 de un salario de R$5.000).
 - **Elige el tipo de aplicação:** si buscas seguridad, opta por renta fija; si toleras más riesgo y buscas mayor rentabilidad, considera renta variable.
 - **Abre una cuenta en una institución confiable:** la mayoría de los bancos y corretoras permiten abrir la cuenta en línea; yo uso la app “Finança Fácil” y siempre me recuerda cuándo es momento de aportar.
 - **Programa aportes automáticos:** configura tu cuenta para que, al recibir tu salario, se transfiera automáticamente el monto que decidiste aplicar.

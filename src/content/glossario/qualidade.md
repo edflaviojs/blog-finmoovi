@@ -20,7 +20,7 @@ seo:
 
 ## O que é  
 
-Qualidade, no mundo das finanças, não é um conceito abstrato; é a capacidade de um investimento, de um crédito ou de um produto financeiro de manter seu valor ao longo do tempo. Quando falamos de “qualidade”, estamos avaliando o risco de perda, a solidez da empresa ou do ativo e a previsibilidade dos retornos. Em termos simples, um ativo de alta qualidade tem menor chance de desvalorizar inesperadamente e costuma gerar rendimentos mais estáveis.
+Qualidade, no mundo das finanças, não é um conceito abstrato; é a capacidade de um investimento, de um [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) ou de um produto financeiro de manter seu valor ao longo do tempo. Quando falamos de “qualidade”, estamos avaliando o risco de perda, a solidez da empresa ou do ativo e a previsibilidade dos retornos. Em termos simples, um ativo de alta qualidade tem menor chance de desvalorizar inesperadamente e costuma gerar rendimentos mais estáveis.
 
 ![O que é  ](/images/glossario/qualidade-inline-1.webp)
 
@@ -28,7 +28,7 @@ Qualidade, no mundo das finanças, não é um conceito abstrato; é a capacidade
 
 ## Como funciona  
 
-A qualidade se mede por indicadores como a classificação de risco (rating), a saúde financeira da empresa e a consistência dos lucros. Por exemplo, ações de empresas com rating AAA são consideradas de alta qualidade porque têm histórico de pagamento de dividendos e pouca volatilidade. Quando você compra um título de dívida (como um CDB), a qualidade do emissor determina a taxa de juros que ele paga: quanto maior a qualidade, menor a taxa, pois o risco de calote é baixo.  
+A qualidade se mede por indicadores como a classificação de risco (rating), a saúde financeira da empresa e a consistência dos lucros. Por exemplo, ações de empresas com rating AAA são consideradas de alta qualidade porque têm histórico de pagamento de dividendos e pouca [volatilidade](/glossario/volatilidade). Quando você compra um título de dívida (como um CDB), a qualidade do emissor determina a taxa de juros que ele paga: quanto maior a qualidade, menor a taxa, pois o risco de calote é baixo.  
 
 - **Rating**: nota dada por agências (ex.: Moody’s, Fitch) que indica a probabilidade de inadimplência.  
 - **[Margem de lucro](/glossario/margem-de-lucro)**: empresas com margens altas costumam ser mais resilientes.  
@@ -53,10 +53,10 @@ Essas vantagens são especialmente úteis para quem tem salário entre R$3.000 e
 Mesmo ativos de alta qualidade não são isentos de risco. Ignorar esses pontos pode comprometer seu plano financeiro.  
 
 - **Risco de mercado**: mudanças macroeconômicas (inflação, taxa de juros) podem afetar o valor de ativos “seguros”.  
-- **Concentração**: colocar todo o dinheiro em um único tipo de ativo de qualidade pode limitar ganhos potenciais.  
+- **Concentração**: colocar todo o [dinheiro](/posts/cashback-inteligente) em um único tipo de ativo de qualidade pode limitar ganhos potenciais.  
 - **Taxa de retorno reduzida**: como o risco é menor, a rentabilidade costuma ser mais baixa comparada a investimentos mais arriscados.  
 
-Portanto, é fundamental equilibrar qualidade com diversificação para não ficar “preso” a retornos modestos.
+Portanto, é fundamental equilibrar qualidade com [diversificação](/glossario/diversificacao) para não ficar “preso” a retornos modestos.
 
 ## Exemplos práticos  
 

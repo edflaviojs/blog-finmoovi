@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que são [Juros](/glossario/juros) Simples?
 
-Juros simples são calculados apenas sobre o valor original (principal). Não importa quanto tempo passe, os juros são sempre calculados sobre o mesmo valor inicial. É o tipo mais básico de juros.
+Juros simples são calculados apenas sobre o [valor](/glossario/valor) original (principal). Não importa quanto tempo passe, os juros são sempre calculados sobre o mesmo valor inicial. É o tipo mais básico de juros.
 
 ## Fórmula
 
@@ -20,7 +20,7 @@ Juros simples são calculados apenas sobre o valor original (principal). Não im
 Onde:
 - J = juros
 - P = principal (valor inicial)
-- i = taxa de juros (em decimal)
+- i = [taxa](/glossario/taxa) de juros (em decimal)
 - t = tempo
 
 ## Exemplo

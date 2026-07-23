@@ -16,7 +16,7 @@ O FGC (Fundo Garantidor de Créditos) é como um seguro para seus [investimentos
 ## O que é coberto
 
 - CDB (Certificado de Depósito Bancário)
-- LCI e LCA
+- [LCI e LCA](/glossario/lci-e-lca)
 - Poupança
 - Conta corrente
 - RDB
@@ -25,8 +25,8 @@ O FGC (Fundo Garantidor de Créditos) é como um seguro para seus [investimentos
 ## O que NÃO é coberto
 
 - Ações
-- Fundos de investimento
-- Debêntures
+- Fundos de [investimento](/posts/montando-carteira-diversificada-com-r-500)
+- [Debêntures](/glossario/debentures)
 - [Tesouro Direto](/glossario/tesouro-direto) (tem garantia do governo federal)
 - CRI e CRA
 - [Previdência privada](/glossario/previdencia-privada)

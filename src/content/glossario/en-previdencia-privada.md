@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## What is Private Pension?
+## What is [Private Pension](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico)?
 
 Private Pension is a long-term [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) designed for retirement. You contribute monthly and, in the future, redeem the accumulated value (with returns). It's a complement to the INSS retirement.
 
@@ -41,7 +41,7 @@ Private Pension is a long-term [investment](/en/posts/en-montando-carteira-diver
 ## Advantages
 
 - Tax [benefits](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) (PGBL)
-- Does not enter into inheritance (succession planning)
+- Does not enter into inheritance (succession [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas))
 - Monthly investment discipline
 - 10% rate after 10 years (regressive)
 

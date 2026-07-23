@@ -19,7 +19,7 @@ Las Debêntures son títulos de deuda emitidos por empresas. Cuando compras una 
 
 - Tributadas por el IR (tabela regresiva)
 - No tienen garantía del FGC
-- Rendimiento generalmente CDI + spread
+- Rendimiento generalmente [CDI](/es/glossario/es-cdi) + spread
 
 ### Debêntures incentivadas
 
@@ -31,7 +31,7 @@ Las Debêntures son títulos de deuda emitidos por empresas. Cuando compras una 
 
 - Rendimiento generalmente mayor que CDB y Tesoro
 - Debêntures incentivadas son exentas de IR
-- Diversificación de la renta fija
+- [Diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) de la [renta fija](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 - Plazos variados (2 a 15 años)
 
 ## Riesgos

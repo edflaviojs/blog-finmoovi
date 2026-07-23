@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es Educación Financiera?
+## ¿Qué es [Educación Financiera](/es/posts/es-7-errores-financieros-principiante)?
 
 Educación financiera es aprender a manejar el dinero de forma inteligente. No se trata de volverse rico rápidamente — se trata de entender cómo funciona el dinero para tomar mejores decisiones en el día a día.
 
@@ -49,7 +49,7 @@ Desafortunadamente, la educación financiera no es prioridad en el currículo es
 
 ## Cómo empezar
 
-1. Anote todos sus gastos por 30 días
+1. Anote todos sus [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) por 30 días
 2. Monte un [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) simple
 3. Pague deudas caras (cheque especial, rotativo)
 4. Monte una reserva de emergencia

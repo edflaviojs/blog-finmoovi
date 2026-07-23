@@ -8,11 +8,11 @@ relatedTerms: ["Dividendos","Ações","Rendimento"]
 publishedAt: 2026-06-11
 ---
 
-## Introdução ao Dividend Yield
-Quando investimos em [ações](/glossario/acoes), uma das principais razões é a possibilidade de receber [dividendos](/glossario/dividendos). Os dividendos são pagamentos feitos pelas empresas aos seus acionistas, representando uma parte dos lucros obtidos. No entanto, para entender o quão atraente é um investimento em ações em termos de dividendos, precisamos considerar o Dividend Yield.
+## Introdução ao Dividend [Yield](/glossario/yield)
+Quando investimos em [ações](/glossario/acoes), uma das principais razões é a possibilidade de receber [dividendos](/glossario/dividendos). Os dividendos são pagamentos feitos pelas empresas aos seus acionistas, representando uma parte dos lucros obtidos. No entanto, para entender o quão atraente é um [investimento](/posts/montando-carteira-diversificada-com-r-500) em ações em termos de dividendos, precisamos considerar o Dividend Yield.
 
 ## O que é o Dividend Yield?
-O Dividend Yield é calculado dividindo o valor anual dos dividendos pagos por ação pelo preço atual da ação. Isso nos dá uma porcentagem que representa o retorno anual que um investidor pode esperar receber em dividendos por cada real investido na ação.
+O Dividend Yield é calculado dividindo o [valor](/glossario/valor) anual dos dividendos pagos por ação pelo preço atual da ação. Isso nos dá uma porcentagem que representa o retorno anual que um investidor pode esperar receber em dividendos por cada real investido na ação.
 
 ![Introdução ao Dividend Yield](/images/glossario/dividend-yield-inline-1.webp)
 
@@ -29,7 +29,7 @@ Dividend Yield = (R$ 5,00 / R$ 100,00) * 100 = 5%
 
 Isso significa que, para cada R$ 100,00 investido, você pode esperar receber R$ 5,00 em dividendos ao longo do ano, o que corresponde a um retorno de 5%.
 
-## Comparação de Dividend Yield
+## [Comparação](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) de Dividend Yield
 Para entender melhor a atração de diferentes ações, podemos comparar seus Dividend Yields. Aqui está uma tabela comparativa:
 
 | Empresa | Preço da Ação | Dividendo Anual | Dividend Yield |

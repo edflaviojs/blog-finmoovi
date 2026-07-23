@@ -31,7 +31,7 @@ With R$ 1.5 million invested earning 8% per year, you would have R$ 120.000/year
 
 It depends on how much you save:
 
-| Savings Rate | Time to FI |
+| [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) Rate | Time to FI |
 |-----------------|---------------|
 | 10% of income | 51 years |
 | 20% of income | 37 years |
@@ -51,4 +51,4 @@ It depends on how much you save:
 
 ## Partial Financial Independence
 
-It doesn't have to be all or nothing. Having 50% of your expenses covered by passive income already changes your life — you can work part-time, change careers or accept a lower salary doing what you love.
+It doesn't have to be all or nothing. Having 50% of your expenses covered by [passive income](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo) already changes your life — you can work part-time, change careers or accept a lower salary doing what you love.

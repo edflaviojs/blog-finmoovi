@@ -31,7 +31,7 @@ Com R$ 1,5 milhão investidos rendendo 8% ao ano, você teria R$ 120.000/ano (R$
 
 Depende de quanto você poupa:
 
-| Taxa de [poupança](/glossario/poupanca) | Tempo para IF |
+| [Taxa](/glossario/taxa) de [poupança](/glossario/poupanca) | Tempo para IF |
 |-----------------|---------------|
 | 10% da renda | 51 anos |
 | 20% da renda | 37 anos |
@@ -51,4 +51,4 @@ Depende de quanto você poupa:
 
 ## Independência financeira parcial
 
-Não precisa ser tudo ou nada. Ter 50% dos gastos cobertos por renda passiva já muda sua vida — você pode trabalhar meio período, mudar de carreira ou aceitar um salário menor fazendo o que ama.
+Não precisa ser tudo ou nada. Ter 50% dos gastos cobertos por [renda passiva](/posts/fundos-imobiliarios-para-iniciantes-guia-completo) já muda sua vida — você pode trabalhar meio período, mudar de carreira ou aceitar um salário menor fazendo o que ama.

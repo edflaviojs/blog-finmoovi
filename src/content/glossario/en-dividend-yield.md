@@ -9,10 +9,10 @@ publishedAt: 2026-06-11
 ---
 
 ## Introduction to Dividend [Yield](/en/glossario/en-yield)
-When we invest in stocks, one of the main reasons is the possibility of receiving [dividends](/en/glossario/en-dividendos). Dividends are payments made by companies to their shareholders, representing a portion of the profits obtained. However, to understand how attractive a stock investment is in terms of dividends, we need to consider the Dividend Yield.
+When we invest in stocks, one of the main reasons is the possibility of receiving [dividends](/en/glossario/en-dividendos). Dividends are payments made by companies to their shareholders, representing a portion of the profits obtained. However, to understand how attractive a [stock](/en/glossario/en-stock) [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) is in terms of dividends, we need to consider the Dividend Yield.
 
 ## What is the Dividend Yield?
-The Dividend Yield is calculated by dividing the annual value of dividends paid per share by the current share price. This gives us a percentage that represents the annual return that an investor can expect to receive in dividends for each dollar invested in the stock.
+The Dividend Yield is calculated by dividing the annual value of dividends paid per share by the current share price. This gives us a percentage that represents the annual return that an investor can expect to receive in dividends for each [dollar](/en/posts/en-quotes-semana-1-july-2026) invested in the stock.
 
 ![Introduction to Dividend Yield](/images/glossario/en-dividend-yield-inline-1.webp)
 

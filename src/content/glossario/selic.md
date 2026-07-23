@@ -37,14 +37,14 @@ A taxa Selic é definida pelo Copom, que se reúne regularmente para discutir a 
 ## Como funciona
 A taxa Selic funciona como um mecanismo de controle da oferta de dinheiro no mercado. Quando a taxa Selic está alta, os bancos precisam pagar mais juros para emprestar dinheiro, o que os desencoraja a emprestar. Isso reduz a quantidade de dinheiro em circulação e ajuda a controlar a inflação.
 
-Por outro lado, quando a taxa Selic está baixa, os bancos podem emprestar dinheiro a juros mais baixos, o que os encoraja a emprestar mais. Isso aumenta a quantidade de dinheiro em circulação e pode estimular a economia.
+Por outro lado, quando a taxa Selic está baixa, os bancos podem emprestar dinheiro a juros mais baixos, o que os encoraja a emprestar mais. Isso aumenta a quantidade de dinheiro em circulação e pode estimular a [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias).
 
 **Dica prática:** Se você está pensando em pedir um empréstimo, é importante verificar a taxa Selic antes de tomar a decisão. Se a taxa está alta, pode ser mais caro para você pagar o empréstimo.
 
 ## Vantagens
 A taxa Selic tem várias vantagens, incluindo:
 * Controlar a inflação: a taxa Selic ajuda a controlar a inflação, o que é importante para manter a estabilidade econômica do país.
-* Estimular a economia: quando a taxa Selic está baixa, pode estimular a economia, pois os bancos podem emprestar dinheiro a juros mais baixos.
+* Estimular a [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme): quando a taxa Selic está baixa, pode estimular a economia, pois os bancos podem emprestar dinheiro a juros mais baixos.
 * Reduzir a dívida: a taxa Selic pode ajudar a reduzir a dívida do país, pois os juros mais altos desencorajam as pessoas a pedir empréstimos.
 
 No entanto, é importante notar que a taxa Selic também pode ter desvantagens, como:
@@ -61,12 +61,12 @@ A taxa Selic também envolve riscos, como:
 * Risco de recessão: se a taxa Selic está muito alta, pode reduzir o consumo e a produção, o que pode levar a uma recessão.
 * Risco de instabilidade financeira: a taxa Selic pode influenciar a estabilidade financeira do país, pois os juros mais altos podem desencorajar as pessoas a investir.
 
-**Dica prática:** É importante diversificar seus investimentos para reduzir o risco. Por exemplo, você pode investir em ações, títulos de dívida pública e outros ativos para reduzir a dependência de um único investimento.
+**Dica prática:** É importante diversificar seus investimentos para reduzir o risco. Por exemplo, você pode investir em [ações](/glossario/acoes), títulos de dívida pública e outros ativos para reduzir a dependência de um único investimento.
 
 ## Exemplos práticos
 Vamos considerar alguns exemplos práticos para entender melhor como a taxa Selic funciona:
 * Se você tem um salário de R$ 5.000 por mês e você paga 10% de juros sobre um empréstimo de R$ 10.000, você pagará R$ 1.000 por ano em juros. Se a taxa Selic aumentar para 12%, você pagará R$ 1.200 por ano em juros.
-* Se você investe R$ 10.000 em uma aplicação que paga 8% de juros ao ano e a taxa Selic aumenta para 10%, você pode perder dinheiro se você não ajustar seu investimento.
+* Se você investe R$ 10.000 em uma [aplicação](/glossario/aplicacao) que paga 8% de juros ao ano e a taxa Selic aumenta para 10%, você pode perder dinheiro se você não ajustar seu investimento.
 * Se você tem um cartão de crédito com um limite de R$ 5.000 e você paga 20% de juros ao mês, você pagará R$ 1.000 por mês em juros se você não pagar o saldo integral. Se a taxa Selic aumentar, os juros também podem aumentar.
 
 **Dica prática:** É importante verificar as taxas de juros e as condições dos empréstimos e investimentos antes de tomar uma decisão. Você pode usar um aplicativo de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) para ajudar a gerenciar suas finanças e tomar decisões informadas.

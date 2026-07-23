@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A bolsa de valores, também conhecida como mercado de ações, é um local onde as pessoas compram e vendem pequenas partes de empresas, conhecidas como ações. Imagine que você é dono de uma pequena parte de uma empresa, como a [Nubank](/en/glossario/en-nubank) ou a Magazine Luiza. Quando a empresa vai bem, o valor da sua ação aumenta, e você pode vendê-la por um preço mais alto do que o que pagou. É como ter uma pequena parte de um negócio que pode crescer e gerar lucros.
+A bolsa de valores, também conhecida como mercado de [ações](/en/glossario/en-acoes), é um local onde as pessoas compram e vendem pequenas partes de empresas, conhecidas como ações. Imagine que você é dono de uma pequena parte de uma empresa, como a [Nubank](/en/glossario/en-nubank) ou a Magazine Luiza. Quando a empresa vai bem, o [valor](/en/glossario/en-valor) da sua ação aumenta, e você pode vendê-la por um preço mais alto do que o que pagou. É como ter uma pequena parte de um negócio que pode crescer e gerar lucros.
 
 * Ações: pequenas partes de empresas que podem ser compradas e vendidas
 * Títulos: documentos que representam a propriedade de ações ou outros investimentos

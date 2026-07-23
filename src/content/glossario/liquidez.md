@@ -11,12 +11,12 @@ readingTime: 1
 
 ## O que é Liquidez?
 
-Liquidez é a capacidade de transformar um investimento em [dinheiro](/posts/cashback-inteligente) rapidamente. Quanto mais líquido, mais rápido você acessa o dinheiro.
+Liquidez é a capacidade de transformar um investimento em [dinheiro](/posts/cashback-inteligente) rapidamente. Quanto mais líquido, mais rápido você acessa o [dinheiro](/posts/como-criar-uma-reserva-de-emergencia).
 
 ## Tipos de liquidez
 
-- **Liquidez diária (D+0):** Dinheiro disponível no mesmo dia. Ex: [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), CDB com liquidez diária.
-- **Liquidez D+1:** Disponível no dia seguinte. Ex: Alguns fundos de investimento.
+- **Liquidez diária (D+0):** [Dinheiro](/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso) disponível no mesmo dia. Ex: [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026), CDB com liquidez diária.
+- **Liquidez D+1:** Disponível no dia seguinte. Ex: Alguns [fundos](/glossario/fundos) de investimento.
 - **Liquidez no vencimento:** Só pode resgatar na data combinada. Ex: CDB com prazo, LCI/LCA.
 
 ## Escala de liquidez
@@ -28,7 +28,7 @@ Do mais líquido ao menos líquido:
 3. Fundos DI
 4. CDB com prazo
 5. [Fundos imobiliários](/glossario/fundos-imobiliarios)
-6. Ações
+6. [Ações](/glossario/acoes)
 7. Imóveis
 
 ## Quando a liquidez importa?

@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Wall Street is the nickname for the financial district in New York City, but the term has become shorthand for the whole U.S. stock market and the institutions that trade stocks, bonds, and other securities. In everyday conversation, “Wall Street” often means the big‑ticket investors, the brokerage firms, and the media that influence how money moves around the world. Think of it as the “big league” of investing, where companies raise capital and ordinary people can buy a tiny slice of those businesses.
+Wall Street is the nickname for the financial district in New York City, but the term has become shorthand for the whole U.S. stock market and the institutions that trade stocks, bonds, and other securities. In everyday conversation, “Wall Street” often means the big‑ticket investors, the brokerage firms, and the media that influence how [money](/en/posts/en-30-day-rule-for-purchases) moves around the world. Think of it as the “big league” of investing, where companies raise capital and ordinary people can buy a tiny slice of those businesses.
 
 ![What it is](/images/glossario/wall-street-inline-1.webp)
 
@@ -63,7 +63,7 @@ Higher returns come with higher risk. Stock prices can swing wildly due to econo
 
 ## Practical examples
 
-Imagine you earn R$5.000 a month and decide to invest 10 % (R$500) in a diversified exchange‑traded fund (ETF) that tracks the S&P 500, the index of the biggest U.S. companies. If the index grows 7 % annually, after 20 years that R$500 monthly contribution could become roughly R$400 000, thanks to compound interest. Or consider a friend who earns R$3.200 a month and buys shares of a tech company at R$30 per share. After a year, the price rises to R$45, and she sells, netting a 50 % gain before taxes. These simple scenarios show how everyday salaries can be a springboard into Wall Street investing.
+Imagine you earn R$5.000 a month and decide to invest 10 % (R$500) in a diversified exchange‑traded fund (ETF) that tracks the S&P 500, the index of the biggest U.S. companies. If the index grows 7 % annually, after 20 years that R$500 monthly contribution could become roughly R$400 000, thanks to [compound interest](/en/glossario/en-juros-compostos). Or consider a friend who earns R$3.200 a month and buys shares of a tech company at R$30 per share. After a year, the price rises to R$45, and she sells, netting a 50 % gain before taxes. These simple scenarios show how everyday salaries can be a springboard into Wall Street investing.
 
 - **Scenario 1:** R$4.800 salary, invest R$300 monthly in a dividend‑paying stock at R$20 per share. After 5 years, you own ~900 shares, receiving R$150 monthly in dividends.  
 - **Scenario 2:** R$7.000 salary, allocate R$700 to a growth‑focused ETF at R$100 per unit. Over 10 years, the ETF climbs 10 % per year, turning the initial investment into roughly R$150 000.  
@@ -71,10 +71,10 @@ Imagine you earn R$5.000 a month and decide to invest 10 % (R$500) in a divers
 
 ## How to start
 
-Getting your foot in the door is easier than you think. First, set a realistic budget based on your monthly cash flow—don’t invest money you might need for rent or groceries. Then, open an account with a reputable broker or a user‑friendly investment app (the one I recommend to my cousins). Most platforms let you start with as little as R$100, and they provide educational resources to help you understand each trade. Finally, pick a simple, low‑cost ETF that mirrors a broad market index; it gives you instant diversification without having to pick individual stocks.
+Getting your foot in the door is easier than you think. First, set a realistic [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) based on your monthly cash flow—don’t invest money you might need for rent or groceries. Then, open an account with a reputable broker or a user‑friendly investment app (the one I recommend to my cousins). Most platforms let you start with as little as R$100, and they provide educational resources to help you understand each trade. Finally, pick a simple, low‑cost ETF that mirrors a broad market index; it gives you instant diversification without having to pick individual stocks.
 
 - **Practical tip:** **Start with a “pay‑it‑forward” mindset—automate a small, fixed amount each payday so you never miss a contribution.**  
-- **Practical tip:** **Keep an emergency fund of at least three months of expenses before you invest, so market dips don’t force you to sell at a loss.**  
+- **Practical tip:** **Keep an [emergency fund](/en/glossario/en-reserva-de-emergencia) of at least three months of expenses before you invest, so market dips don’t force you to sell at a loss.**  
 - **Practical tip:** **Review your portfolio quarterly, not daily; long‑term growth beats short‑term market noise.**  
 - Choose a broker with low fees and a straightforward mobile app.  
 - Complete the KYC (Know Your Customer) verification—upload ID, proof of address, and a selfie.  

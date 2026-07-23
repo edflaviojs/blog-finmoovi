@@ -12,7 +12,7 @@ publishedAt: 2026-06-04
 The spread bancário is one of the main sources of profit for banks. It is calculated as the difference between the interest rate that the bank pays to borrow [money](/en/posts/en-30-day-rule-for-purchases) (capture rate) and the interest rate that the bank charges to lend the same [money](/en/posts/en-avoid-impulse-purchases) (loan rate).
 
 ## How does Spread Bancário work?
-Imagine you deposit $270 (approximately R$ 1,000) into a savings account. The bank may pay an interest rate of 0.5% per month for you to have the money there. This means the bank will pay $1.35 in interest per month (0.5% of $270). Now, imagine the bank lends this same money to someone else, charging an interest rate of 2.0% per month. The bank will make $5.40 in interest per month (2.0% of $270). The difference between these two rates is the spread bancário, which in this case is 1.5% (2.0% - 0.5%).
+Imagine you deposit $270 (approximately R$ 1,000) into a savings account. The bank may pay an interest rate of 0.5% per month for you to have the [money](/en/posts/en-creating-an-emergency-fund) there. This means the bank will pay $1.35 in interest per month (0.5% of $270). Now, imagine the bank lends this same [money](/en/posts/en-difference-between-investing-and-saving) to someone else, charging an interest rate of 2.0% per month. The bank will make $5.40 in interest per month (2.0% of $270). The difference between these two rates is the spread bancário, which in this case is 1.5% (2.0% - 0.5%).
 
 ## Practical Examples
 Let's consider some examples to better understand how the spread bancário works:

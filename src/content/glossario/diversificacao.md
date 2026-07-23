@@ -17,11 +17,11 @@ seo:
   keywords: ["diversificação", "glossário", "finanças"]
 ---
 
-## O que é diversificação
-A diversificação é uma estratégia de investimento que visa reduzir o risco ao distribuir os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em diferentes ativos, como ações, títulos, imóveis, entre outros. Isso significa que, em vez de colocar todos os ovos na mesma cesta, você espalha seus investimentos por diferentes áreas, minimizando assim o impacto de perdas em um único investimento. Imagine que você tem um salário de R$ 5.000 por mês e decide investir 10% disso, ou R$ 500, em ações de uma única empresa. Se essa empresa tiver uma crise, você pode perder uma grande parte do seu investimento. Mas, se você diversificar seus R$ 500 em diferentes ações, títulos e outros ativos, o risco de perda é muito menor.
+## O que é [diversificação](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel)
+A diversificação é uma estratégia de investimento que visa reduzir o risco ao distribuir os [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) em diferentes ativos, como [ações](/glossario/acoes), títulos, imóveis, entre outros. Isso significa que, em vez de colocar todos os ovos na mesma cesta, você espalha seus investimentos por diferentes áreas, minimizando assim o impacto de perdas em um único investimento. Imagine que você tem um salário de R$ 5.000 por mês e decide investir 10% disso, ou R$ 500, em ações de uma única empresa. Se essa empresa tiver uma crise, você pode perder uma grande parte do seu investimento. Mas, se você diversificar seus R$ 500 em diferentes ações, títulos e outros ativos, o risco de perda é muito menor.
 
 ## Como funciona
-A diversificação funciona como um seguro para os seus investimentos. Quando você diversifica, você está reduzindo a dependência de um único investimento para gerar retornos. Isso significa que, se um dos seus investimentos não vai bem, os outros podem compensar as perdas. Por exemplo, se você investe R$ 1.000 em ações de uma empresa de tecnologia e R$ 1.000 em títulos de uma empresa de alimentos, e a empresa de tecnologia tem uma crise, o valor das suas ações pode cair. Mas, se a empresa de alimentos está fazendo bem, o valor dos títulos pode subir, compensando as perdas. **Dica prática:** sempre verifique a [liquidez](/glossario/liquidez) dos seus investimentos, ou seja, a facilidade com que você pode converter seus investimentos em [dinheiro](/posts/cashback-inteligente).
+A diversificação funciona como um seguro para os seus investimentos. Quando você diversifica, você está reduzindo a dependência de um único investimento para gerar retornos. Isso significa que, se um dos seus investimentos não vai bem, os outros podem compensar as perdas. Por exemplo, se você investe R$ 1.000 em ações de uma empresa de tecnologia e R$ 1.000 em títulos de uma empresa de alimentos, e a empresa de tecnologia tem uma crise, o [valor](/glossario/valor) das suas ações pode cair. Mas, se a empresa de alimentos está fazendo bem, o valor dos títulos pode subir, compensando as perdas. **Dica prática:** sempre verifique a [liquidez](/glossario/liquidez) dos seus investimentos, ou seja, a facilidade com que você pode converter seus investimentos em [dinheiro](/posts/cashback-inteligente).
 
 ![O que é diversificação](/images/glossario/diversificacao-inline-1.webp)
 
@@ -38,7 +38,7 @@ As vantagens da diversificação são muitas. Aqui estão algumas delas:
 Embora a diversificação seja uma estratégia de investimento muito útil, também há riscos associados a ela. Aqui estão alguns deles:
 * Risco de perda: mesmo com diversificação, há sempre o risco de perda, especialmente se os investimentos forem feitos em ativos de alto risco.
 * Risco de [inflação](/glossario/inflacao): a inflação pode reduzir o valor dos investimentos ao longo do tempo, especialmente se os investimentos forem feitos em ativos que não acompanham a inflação.
-* Risco de liquidez: se os investimentos forem feitos em ativos ilíquidos, pode ser difícil converter esses investimentos em dinheiro rapidamente.
+* Risco de liquidez: se os investimentos forem feitos em ativos ilíquidos, pode ser difícil converter esses investimentos em [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) rapidamente.
 **Dica prática:** é importante monitorar regularmente os seus investimentos e ajustá-los de acordo com as mudanças no mercado e nas suas necessidades financeiras.
 
 ![Vantagens](/images/glossario/diversificacao-inline-3.webp)

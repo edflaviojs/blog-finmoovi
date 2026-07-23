@@ -19,7 +19,7 @@ seo:
 
 ## O que é
 
-O **z‑score** (ou escore‑z) é uma medida que indica quantos desvios‑padrão um valor está distante da média de um conjunto de dados. Em termos simples, ele transforma números diferentes – como salário, gasto ou retorno – em uma escala comum, facilitando a comparação. Se o seu salário está 1,5 desvios‑padrão acima da média nacional, o z‑score será +1,5; se estiver 0,8 abaixo, será –0,8. Essa padronização ajuda a entender se algo está “na média”, “acima” ou “abaixo” do esperado.
+O **z‑score** (ou escore‑z) é uma medida que indica quantos desvios‑padrão um [valor](/glossario/valor) está distante da média de um conjunto de dados. Em termos simples, ele transforma números diferentes – como salário, gasto ou retorno – em uma escala comum, facilitando a comparação. Se o seu salário está 1,5 desvios‑padrão acima da média nacional, o z‑score será +1,5; se estiver 0,8 abaixo, será –0,8. Essa padronização ajuda a entender se algo está “na média”, “acima” ou “abaixo” do esperado.
 
 ![O que é](/images/glossario/z-score-inline-1.webp)
 
@@ -37,7 +37,7 @@ O resultado positivo indica que o valor está acima da média; o negativo, abaix
 
 ## Vantagens
 
-Usar o z‑score traz alguns benefícios claros para quem quer organizar as finanças pessoais:
+Usar o z‑score traz alguns benefícios claros para quem quer organizar as [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su):
 
 ![Vantagens](/images/glossario/z-score-inline-3.webp)
 
@@ -47,7 +47,7 @@ Usar o z‑score traz alguns benefícios claros para quem quer organizar as fina
 - **Identificação rápida** de outliers, ou seja, valores que fogem muito da norma e podem sinalizar risco ou oportunidade.  
 - **Facilidade para definir metas**: ao saber onde você está em relação à média, fica mais simples estabelecer objetivos realistas.  
 
-**Dica prática:** ao analisar seu orçamento, calcule o z‑score das suas principais despesas (moradia, transporte, alimentação). Isso revela quais categorias estão consumindo mais do que a média e onde cortar.
+**Dica prática:** ao analisar seu [orçamento](/posts/5-alternativas-ao-mobills-em-2026), calcule o z‑score das suas principais despesas (moradia, transporte, alimentação). Isso revela quais categorias estão consumindo mais do que a média e onde cortar.
 
 ## Riscos
 

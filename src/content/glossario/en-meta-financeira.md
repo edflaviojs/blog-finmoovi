@@ -26,7 +26,7 @@ Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule
 ### Short term (up to 1 year)
 
 - Build an [emergency fund](/en/glossario/en-reserva-de-emergencia) of R$ 15,000
-- Pay off a credit card debt of R$ 3,000
+- Pay off a [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) debt of R$ 3,000
 - Save R$ 5,000 for a trip
 
 ### Medium term (1-5 years)
@@ -51,4 +51,4 @@ Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule
 
 ## Tip
 
-Have no more than 3 goals at the same time. Too many goals divide your focus and money — none of them advance quickly enough to motivate.
+Have no more than 3 goals at the same time. Too many goals divide your focus and [money](/en/posts/en-avoid-impulse-purchases) — none of them advance quickly enough to motivate.

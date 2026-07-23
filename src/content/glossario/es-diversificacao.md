@@ -18,11 +18,11 @@ seo:
 ---
 
 ## Qué es
-La diversificación es una estrategia financiera que consiste en distribuir tus inversiones en diferentes activos para reducir el riesgo y aumentar las posibilidades de obtener ganancias a largo plazo. En otras palabras, en lugar de poner todos tus huevos en una sola canasta, los distribuyes en varias canastas para que si una de ellas se cae, las demás puedan amortiguar el impacto. Por ejemplo, si tienes un salario de R$5.000 al mes y decides invertir R$1.000 en acciones, R$500 en bonos y R$500 en una cuenta de ahorro, estás diversificando tus inversiones.
+La diversificación es una estrategia financiera que consiste en distribuir tus inversiones en diferentes activos para reducir el riesgo y aumentar las posibilidades de obtener ganancias a largo plazo. En otras palabras, en lugar de poner todos tus huevos en una sola canasta, los distribuyes en varias canastas para que si una de ellas se cae, las demás puedan amortiguar el impacto. Por ejemplo, si tienes un salario de R$5.000 al mes y decides invertir R$1.000 en acciones, R$500 en bonos y R$500 en una cuenta de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado), estás diversificando tus inversiones.
 
 * Acciones: son partes de propiedad de empresas que se compran y venden en bolsas de valores
 * Bonos: son deudas emitidas por empresas o gobiernos que se compran y se devuelven con intereses
-* Cuentas de ahorro: son cuentas bancarias que pagan intereses sobre el dinero depositado
+* Cuentas de ahorro: son cuentas bancarias que pagan intereses sobre el [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) depositado
 
 ![Qué es](/images/glossario/diversificacao-inline-1.webp)
 

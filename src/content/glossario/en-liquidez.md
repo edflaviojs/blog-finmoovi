@@ -15,7 +15,7 @@ Liquidez is the ability to quickly convert an investment into cash. The more liq
 
 ## Types of liquidez
 
-- **Liquidez diária (D+0):** [Money](/en/posts/en-avoid-impulse-purchases) available on the same day. Ex: Tesouro [Selic](/en/glossario/en-selic), CDB with daily liquidity.
+- **Liquidez diária (D+0):** [Money](/en/posts/en-avoid-impulse-purchases) available on the same day. Ex: Tesouro [Selic](/en/glossario/en-selic), [CDB](/en/glossario/en-cdb) with daily liquidity.
 - **Liquidez D+1:** Available the next day. Ex: Some investment funds.
 - **Liquidez no vencimento:** Can only be redeemed on the agreed-upon date. Ex: CDB with a term, LCI/LCA.
 
@@ -23,11 +23,11 @@ Liquidez is the ability to quickly convert an investment into cash. The more liq
 
 From most liquid to least liquid:
 
-1. Money in a checking account
+1. [Money](/en/posts/en-creating-an-emergency-fund) in a checking account
 2. Tesouro Selic / CDB with daily liquidity
 3. [Fundos](/en/glossario/en-fundos) DI
 4. CDB with a term
-5. Real estate funds
+5. [Real estate funds](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo)
 6. Stocks
 7. Real estate
 

@@ -11,7 +11,7 @@ readingTime: 2
 
 ## What are LCI and LCA?
 
-LCI (Letra de Crédito Imobiliário) and LCA (Letra de Crédito do Agronegócio) are fixed-income investments issued by banks. The big advantage: they are **exempt from Income Tax** for individuals.
+LCI (Letra de Crédito Imobiliário) and LCA (Letra de Crédito do Agronegócio) are fixed-income [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) issued by banks. The big advantage: they are **exempt from Income Tax** for individuals.
 
 ## Difference between LCI and LCA
 
@@ -25,13 +25,13 @@ For the investor, they work in the same way.
 
 - Exemption from IR (higher net income)
 - Protection by FGC up to R$ 250,000
-- [Yield](/en/glossario/en-yield) generally linked to CDI (85-100%)
+- [Yield](/en/glossario/en-yield) generally linked to [CDI](/en/glossario/en-cdi) (85-100%)
 - Security similar to [CDB](/en/glossario/en-cdb)
 
 ## Disadvantages
 
 - Minimum lock-up period of 90 days (cannot withdraw before)
-- Minimum investment usually higher (R$ 1,000-5,000)
+- Minimum [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) usually higher (R$ 1,000-5,000)
 - Fewer options available than CDB
 
 ## LCI/LCA vs. CDB

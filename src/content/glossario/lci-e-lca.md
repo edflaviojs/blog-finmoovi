@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que são LCI e LCA?
 
-LCI (Letra de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário) e LCA (Letra de Crédito do Agronegócio) são investimentos de [renda fixa](/glossario/renda-fixa) emitidos por bancos. A grande vantagem: são **isentos de [Imposto de Renda](/glossario/imposto-de-renda)** para pessoa física.
+LCI (Letra de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário) e LCA (Letra de Crédito do Agronegócio) são [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de [renda fixa](/glossario/renda-fixa) emitidos por bancos. A grande vantagem: são **isentos de [Imposto de Renda](/glossario/imposto-de-renda)** para pessoa física.
 
 ## Diferença entre LCI e LCA
 
@@ -25,8 +25,8 @@ Para o investidor, funcionam da mesma forma.
 
 - Isenção de IR (rendimento líquido maior)
 - Proteção do FGC até R$ 250.000
-- Rendimento geralmente atrelado ao CDI (85-100%)
-- Segurança similar ao CDB
+- Rendimento geralmente atrelado ao [CDI](/glossario/cdi) (85-100%)
+- Segurança similar ao [CDB](/glossario/cdb)
 
 ## Desvantagens
 
@@ -48,6 +48,6 @@ Neste exemplo, rendem igual. Mas uma LCI de 90% do CDI já ganha do CDB de 100%.
 
 ## Quando investir em LCI/LCA
 
-- Quando não vai precisar do dinheiro por pelo menos 90 dias
+- Quando não vai precisar do [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) por pelo menos 90 dias
 - Para diversificar a renda fixa
 - Quando encontrar taxas acima de 90% do CDI

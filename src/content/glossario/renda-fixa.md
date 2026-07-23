@@ -28,14 +28,14 @@ Renda fixa é um conjunto de investimentos em que você já sabe, antes de aplic
 
 ## Como funciona
 
-Quando você compra um título de renda fixa, está emprestando dinheiro para quem emite o título – bancos, governo ou empresas – e, em troca, recebe o pagamento de juros. O fluxo básico funciona assim:
+Quando você compra um título de renda fixa, está emprestando [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) para quem emite o título – bancos, governo ou empresas – e, em troca, recebe o pagamento de juros. O fluxo básico funciona assim:
 
 - **Emissão:** O emissor cria o título e define a taxa de juros (pré‑fixada, pós‑fixada ou híbrida) e o prazo de vencimento.
 - **Compra:** Você adquire o título pelo preço de face ou por um valor de mercado, que pode ser maior ou menor dependendo da taxa oferecida.
 - **Juros:** Ao longo do tempo, o título paga juros periodicamente (mensal, semestral ou anual) ou acumula tudo para o vencimento.
 - **Vencimento:** No final do prazo, o emissor devolve o valor principal (o que você investiu) mais os juros acordados.
 
-Esses passos são válidos tanto para um CDB (Certificado de Depósito Bancário) quanto para um Tesouro Direto (título do governo). O que muda são as garantias: o FGC (Fundo Garantidor de Créditos) protege até R$250 mil por instituição, enquanto o Tesouro Direto tem a garantia do próprio governo.
+Esses passos são válidos tanto para um CDB (Certificado de Depósito Bancário) quanto para um [Tesouro Direto](/glossario/tesouro-direto) (título do governo). O que muda são as garantias: o FGC (Fundo Garantidor de Créditos) protege até R$250 mil por instituição, enquanto o Tesouro Direto tem a garantia do próprio governo.
 
 ## Vantagens
 
@@ -48,7 +48,7 @@ A renda fixa traz benefícios que combinam bem com quem tem salário entre R$3.0
 - **Previsibilidade:** Você sabe quanto vai receber ao final do investimento, o que facilita o planejamento de despesas mensais.
 - **Baixo risco:** A maioria dos títulos tem garantia do FGC ou do governo, reduzindo a chance de perda total.
 - **Liquidez variável:** Alguns títulos permitem resgate antecipado (como CDBs com liquidez diária), enquanto outros têm prazos mais longos, mas ainda assim costumam ter mercado secundário.
-- **Diversificação:** Mesmo quem tem apenas a poupança pode melhorar a carteira ao incluir CDBs, LCIs (Letras de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário) ou Tesouro Selic.
+- **[Diversificação](/glossario/diversificacao):** Mesmo quem tem apenas a poupança pode melhorar a carteira ao incluir CDBs, LCIs (Letras de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário) ou [Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026).
 
 ## Riscos
 

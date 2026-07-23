@@ -32,7 +32,7 @@ A taxa é um valor cobrado em cima de uma operação financeira, como um emprés
 
 ## Como funciona
 
-Quando você faz uma operação que envolve taxa, o valor da taxa é adicionado ao montante principal ou descontado do valor que você recebe. O cálculo pode ser simples (um valor fixo) ou envolver fórmulas de juros compostos (juros que incidem sobre juros). O importante é entender quando e como essa cobrança acontece para não ser pego de surpresa.
+Quando você faz uma operação que envolve taxa, o valor da taxa é adicionado ao montante principal ou descontado do valor que você recebe. O cálculo pode ser simples (um valor fixo) ou envolver fórmulas de [juros compostos](/glossario/juros-compostos) (juros que incidem sobre juros). O importante é entender quando e como essa cobrança acontece para não ser pego de surpresa.
 
 - Você recebe um salário de R$4.500 e decide fazer um empréstimo de R$10.000. A taxa de juros de 2% ao mês será aplicada sobre o saldo restante a cada período.  
 - Em um cartão de crédito, a taxa de anuidade de R$120 pode ser cobrada automaticamente no início do ano, independentemente do uso.  
@@ -52,7 +52,7 @@ Mesmo que a palavra “taxa” soe negativa, ela traz benefícios quando bem com
 
 ## Riscos
 
-Ignorar as taxas pode transformar uma boa oportunidade em um prejuízo. Taxas altas ou mal informadas podem corroer seu orçamento, especialmente se você tem renda limitada. É preciso ficar atento a custos ocultos e comparar opções antes de fechar qualquer contrato.
+Ignorar as taxas pode transformar uma boa oportunidade em um prejuízo. Taxas altas ou mal informadas podem corroer seu [orçamento](/posts/5-alternativas-ao-mobills-em-2026), especialmente se você tem renda limitada. É preciso ficar atento a custos ocultos e comparar opções antes de fechar qualquer contrato.
 
 - **Custo oculto** – algumas instituições escondem taxas de saque ou de consulta de saldo, que somam R$30 a R$50 por mês.  
 - **Juros compostos** – quando a taxa de juros é aplicada mensalmente, o valor total pode crescer muito mais rápido do que o esperado.  
@@ -66,7 +66,7 @@ Vamos colocar a teoria no dia a dia usando salários entre R$3.000 e R$8.000.
 - **Caso 2:** Maria tem salário de R$5.500 e faz um empréstimo de R$15.000 com taxa de juros de 1,8% ao mês. Em 12 meses, o valor total pago será aproximadamente R$19.800, ou seja, R$4.800 a mais, o que corresponde a quase 9% do seu salário anual.  
 - **Caso 3:** Carlos recebe R$7.800 e investe R$20.000 em um fundo com taxa de administração de 0,5% ao ano. O custo anual será de R$100, mas ele ainda pode ganhar retornos superiores a 8% ao ano, tornando a taxa um preço pequeno pelo serviço de gestão.  
 
-**Dica prática:** antes de aceitar qualquer taxa, calcule quanto ela representa em relação ao seu salário mensal. Se for mais de 5% da sua renda, vale a pena renegociar ou buscar alternativas mais baratas.  
+**Dica prática:** antes de aceitar qualquer taxa, calcule quanto ela representa em relação ao seu salário mensal. Se for mais de 5% da sua renda, vale a pena renegociar ou buscar [alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) mais baratas.  
 
 **Dica prática:** use planilhas ou apps de controle financeiro (como o **Guias de Finanças** que eu recomendo) para registrar todas as taxas mensais; assim você visualiza o impacto real no seu orçamento.  
 
@@ -84,7 +84,7 @@ Se você quer dominar as taxas e evitar surpresas, siga estes passos simples par
 
 ## Comece hoje
 
-Agora que você já entende o que são as taxas, como elas funcionam e como podem afetar seu bolso, que tal colocar o conhecimento em prática? Reserve alguns minutos esta semana para mapear suas despesas e veja onde dá para economizar. Cada real que você economiza nas taxas pode ser reinvestido em seus objetivos, seja uma viagem, a reserva de emergência ou a compra da casa própria. Vamos lá, o primeiro passo começa agora!
+Agora que você já entende o que são as taxas, como elas funcionam e como podem afetar seu bolso, que tal colocar o conhecimento em prática? Reserve alguns minutos esta semana para mapear suas despesas e veja onde dá para economizar. Cada real que você economiza nas taxas pode ser reinvestido em seus objetivos, seja uma viagem, a [reserva de emergência](/glossario/reserva-de-emergencia) ou a compra da casa própria. Vamos lá, o primeiro passo começa agora!
 
 ---
 

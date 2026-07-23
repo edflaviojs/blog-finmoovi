@@ -21,10 +21,10 @@ The recommendation is to have between **3 to 6 months** of your monthly [expense
 
 The reserve needs to have **daily [liquidity](/en/glossario/en-liquidez)** (immediate access):
 - Tesouro [Selic](/en/glossario/en-selic)
-- CDB with daily liquidity (100% CDI or more)
+- [CDB](/en/glossario/en-cdb) with daily liquidity (100% [CDI](/en/glossario/en-cdi) or more)
 - Remunerated account
 
-**Never** leave it in stocks, real estate funds, or investments with a redemption deadline.
+**Never** leave it in stocks, [real estate funds](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo), or [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) with a redemption deadline.
 
 ## How to build it?
 

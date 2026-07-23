@@ -49,7 +49,7 @@ As opções trazem flexibilidade e podem ser usadas tanto para proteger investim
 
 
 - **[Alavancagem](/en/glossario/en-alavancagem):** com um pequeno prêmio você controla uma quantidade maior de ativos.  
-- **Proteção (hedge):** permite limitar perdas em uma carteira de ações.  
+- **Proteção ([hedge](/en/glossario/en-hedge)):** permite limitar perdas em uma carteira de [ações](/en/glossario/en-acoes).  
 - **Renda extra:** ao vender opções, você recebe o prêmio como renda adicional.  
 - **[Diversificação](/en/glossario/en-diversificacao):** abre possibilidades de estratégias que não existem em investimentos tradicionais.
 

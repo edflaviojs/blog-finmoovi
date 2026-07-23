@@ -39,14 +39,14 @@ Todo esse processo acontece dentro da mesma corretora, que cuida do empréstimo 
 ## Advantages
 
 - **Potencial de lucro em mercados em baixa:** enquanto a maioria dos investidores só ganha quando o preço sobe, o short permite lucrar quando tudo desce.  
-- **Diversificação de estratégias:** adiciona uma ferramenta a mais ao seu arsenal, ajudando a equilibrar a carteira em diferentes ciclos econômicos.  
+- **[Diversificação](/en/glossario/en-diversificacao) de estratégias:** adiciona uma ferramenta a mais ao seu arsenal, ajudando a equilibrar a carteira em diferentes ciclos econômicos.  
 - **Proteção (hedge):** pode ser usado para proteger investimentos long (comprados) contra quedas inesperadas, reduzindo o risco global.  
 
 ![Advantages](/images/glossario/venda-a-descoberto-inline-3.webp)
 
 
 
-## Risks
+## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
 - **Perda ilimitada:** ao contrário de uma compra tradicional, onde a perda máxima é o valor investido, na venda a descoberto a perda pode ser infinita, porque o preço da ação pode subir sem limite.  
 - **Chamada de margem:** se o preço subir muito, a corretora pode exigir que você deposite mais dinheiro (margem) ou feche a posição imediatamente, gerando prejuízo.  
@@ -60,7 +60,7 @@ Imagine que você ganha R$5.000 por mês e tem R$20.000 disponíveis para invest
 2. **Queda do preço:** duas semanas depois, a ação cai para R$40. Você compra 200 ações (200 × R$40 = R$8.000) e devolve ao doador.  
 3. **Lucro bruto:** R$10.000 – R$8.000 = R$2.000. Desse valor, subtraia a taxa de aluguel (digamos 2% ao ano, proporcional ao período) e a corretagem, e você ainda tem um ganho líquido de cerca de R$1.900.  
 
-Agora, veja o cenário oposto: a ação sobe para R$70. Você precisa comprar as 200 ações a R$14.000, resultando em perda de R$4.000 antes de custos. Esse exemplo mostra como a alavancagem pode transformar um pequeno movimento de preço em um ganho ou perda significativo.
+Agora, veja o cenário oposto: a ação sobe para R$70. Você precisa comprar as 200 ações a R$14.000, resultando em perda de R$4.000 antes de custos. Esse exemplo mostra como a [alavancagem](/en/glossario/en-alavancagem) pode transformar um pequeno movimento de preço em um ganho ou perda significativo.
 
 **Practical tip:** nunca use mais de 10 % do seu capital total em uma única operação de venda a descoberto; isso ajuda a limitar o impacto de uma eventual alta inesperada.
 

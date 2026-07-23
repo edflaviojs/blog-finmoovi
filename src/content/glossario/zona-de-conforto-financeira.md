@@ -12,7 +12,7 @@ readingTime: 2
 
 ## O que é Zona de Conforto Financeira?
 
-É o estado onde suas finanças estão organizadas e você não vive com medo do fim do mês. Significa ter: [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) sob controle, [reserva de emergência](/glossario/reserva-de-emergencia) formada, dívidas quitadas e investimentos crescendo.
+É o estado onde suas finanças estão organizadas e você não vive com medo do fim do mês. Significa ter: [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) sob controle, [reserva de emergência](/glossario/reserva-de-emergencia) formada, dívidas quitadas e [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) crescendo.
 
 ## Os 5 pilares da zona de conforto financeira
 
@@ -24,7 +24,7 @@ readingTime: 2
 ### 2. Reserva de emergência completa
 
 - 6 a 12 meses de gastos guardados
-- Em investimento com liquidez diária
+- Em investimento com [liquidez](/glossario/liquidez) diária
 
 ### 3. Sem dívidas caras
 
@@ -36,7 +36,7 @@ readingTime: 2
 
 - Aportes mensais regulares
 - Carteira diversificada
-- Rendimento acima da inflação
+- Rendimento acima da [inflação](/glossario/inflacao)
 
 ### 5. Proteção (seguros)
 
@@ -46,7 +46,7 @@ readingTime: 2
 
 ## Como chegar lá
 
-1. Monte um [orçamento](/posts/5-alternativas-ao-mobills-em-2026) (saiba para onde vai seu dinheiro)
+1. Monte um [orçamento](/posts/5-alternativas-ao-mobills-em-2026) (saiba para onde vai seu [dinheiro](/posts/cashback-inteligente))
 2. Quite dívidas caras primeiro
 3. Monte a reserva de emergência
 4. Comece a investir (mesmo que pouco)

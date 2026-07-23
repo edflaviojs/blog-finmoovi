@@ -46,7 +46,7 @@ where **X** is your value, **μ** (mu) is the mean, and **σ** (sigma) is the st
 
 ## Advantages
 
-Using the z‑score makes it easy to compare numbers that live in different scales. It turns raw amounts into a common language, so you can spot trends without getting lost in the details. For personal finance, it helps you understand whether your spending or saving habits are in line with peers.
+Using the z‑score makes it easy to compare numbers that live in different scales. It turns raw amounts into a common language, so you can spot trends without getting lost in the details. For [personal finance](/en/posts/en-30-day-rule-for-purchases), it helps you understand whether your spending or saving habits are in line with peers.
 
 ![Advantages](/images/glossario/z-score-inline-3.webp)
 
@@ -80,7 +80,7 @@ Now look at a different case: you earn R$4,000 and save R$800 each month. The gr
 
 - **Example 1:** Salary R$3,500, rent R$1,200 → z‑score = ‑0.5 (below average rent).  
 - **Example 2:** Salary R$7,800, investment in stocks R$2,500 → z‑score = 1.2 (above average investment).  
-- **Example 3:** Salary R$5,200, emergency fund R$10,000 → z‑score = 2.5 (very strong safety net).
+- **Example 3:** Salary R$5,200, [emergency fund](/en/glossario/en-reserva-de-emergencia) R$10,000 → z‑score = 2.5 (very strong safety net).
 
 These numbers help you decide whether to cut back, keep the pace, or push harder.
 
@@ -92,7 +92,7 @@ Getting comfortable with the z‑score doesn’t require a finance degree—just
 - **Practical tip:** **Calculate the mean** by summing the column and dividing by the number of entries. The sheet’s `=AVERAGE()` function does the job instantly.  
 - **Practical tip:** **Use the built‑in STDEV.P function** (`=STDEV.P()`) to get the standard deviation, then apply the formula `=(YourValue‑Mean)/StdDev` in another column.  
 - Review the resulting z‑scores: values between –1 and 1 are “normal,” while anything outside that range deserves a closer look.  
-- Adjust your budget or savings plan based on what the scores reveal.  
+- Adjust your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) or savings plan based on what the scores reveal.  
 - Keep the sheet updated monthly; trends become clearer over time.
 
 ## Start today

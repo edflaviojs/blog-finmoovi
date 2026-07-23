@@ -19,7 +19,7 @@ seo:
 
 ## O que é
 
-Xing ling é um termo que surgiu nas redes sociais para descrever produtos ou serviços financeiros muito baratos, geralmente importados da China, que prometem retornos altos com risco baixo. No mundo das finanças pessoais, ele costuma aparecer quando alguém fala de “investimento barato que rende muito”. A pegada é a mesma: algo que parece um achado, mas que pode esconder armadilhas. Em vez de usar jargões complicados, pense no xing ling como aquele celular de marca desconhecida que custa metade do preço de um iPhone, mas que pode parar de funcionar a qualquer momento.
+Xing ling é um termo que surgiu nas redes sociais para descrever produtos ou serviços financeiros muito baratos, geralmente importados da China, que prometem retornos altos com risco baixo. No mundo das [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), ele costuma aparecer quando alguém fala de “investimento barato que rende muito”. A pegada é a mesma: algo que parece um achado, mas que pode esconder armadilhas. Em vez de usar jargões complicados, pense no xing ling como aquele celular de marca desconhecida que custa metade do preço de um iPhone, mas que pode parar de funcionar a qualquer momento.
 
 ![O que é](/images/glossario/xing-ling-inline-1.webp)
 
@@ -43,7 +43,7 @@ Mesmo com os riscos, o xing ling tem alguns pontos que chamam a atenção de que
 
 
 - **Acessibilidade**: permite que quem tem salário de R$3.500, por exemplo, invista com apenas R$100.
-- **Diversificação**: adiciona um tipo de ativo que não está presente em fundos tradicionais.
+- **[Diversificação](/glossario/diversificacao)**: adiciona um tipo de ativo que não está presente em fundos tradicionais.
 - **Potencial de retorno**: se tudo correr bem, o ganho pode ser maior que o de um CDB (Certificado de Depósito Bancário) de 100% do CDI (Certificado de Depósito Interbancário).
 - **Aprendizado**: ao acompanhar o desempenho, o investidor aprende a analisar riscos e oportunidades.
 
@@ -58,7 +58,7 @@ Os perigos do xing ling são reais e podem transformar um “pequeno achado” e
 - **Volatilidade**: o valor pode cair drasticamente em poucos dias, principalmente em ativos digitais.
 - **Dificuldade de resgate**: alguns produtos não permitem retirada antes de um prazo longo, o que pode atrapalhar seu fluxo de caixa.
 
-**Dica prática:** nunca invista dinheiro que você precisa para pagar contas essenciais, como aluguel ou alimentação. O xing ling deve ficar na parte “extra” da sua reserva de emergência.
+**Dica prática:** nunca invista dinheiro que você precisa para pagar contas essenciais, como aluguel ou alimentação. O xing ling deve ficar na parte “extra” da sua [reserva de emergência](/glossario/reserva-de-emergencia).
 
 ## Exemplos práticos
 
@@ -68,7 +68,7 @@ Para entender como o xing ling pode impactar quem tem salários diferentes, veja
 - **João, R$5.500**: alocou R$300 em um token de criptomoeda xing ling que oferecia 18% ao ano. Em 8 meses, o token valorizou 20%, e ele conseguiu vender por R$360, obtendo lucro de R$60.
 - **Ana, R$8.000**: investiu R$500 em um empréstimo coletivo xing ling com juros de 16% ao ano. O projeto falhou e ela recebeu apenas R$250 de volta, perdendo R$250.
 
-**Dica prática:** use planilhas simples (ou apps como o Guias de Finanças) para registrar cada investimento, incluindo data, valor, taxa prometida e risco percebido. Isso ajuda a visualizar o impacto no seu orçamento.
+**Dica prática:** use planilhas simples (ou apps como o Guias de Finanças) para registrar cada investimento, incluindo data, valor, taxa prometida e risco percebido. Isso ajuda a visualizar o impacto no seu [orçamento](/posts/5-alternativas-ao-mobills-em-2026).
 
 ## Como começar
 

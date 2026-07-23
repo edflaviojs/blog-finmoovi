@@ -40,7 +40,7 @@ La idea de los sobres digitales es la misma que la de los sobres de papel donde 
 | Salario Mensual | Alimentación (30%) | Transporte (10%) | Vivienda (30%) | Ocio (10%) | Reserva Emergencia (20%) |
 |-----------------|--------------------|-------------------|----------------|------------|--------------------------|
 | R$2.000         | R$600              | R$200             | R$600          | R$200      | R$400                    |
-| R$5.000         | R$1.500            | R$500             | R$1.500        | R$500      | R$1.000                  |
+| R$5.000         | R$1.500            | [R$500](/es/posts/es-montando-carteira-diversificada-com-r-500)             | R$1.500        | R$500      | R$1.000                  |
 | R$8.000         | R$2.400            | R$800             | R$2.400        | R$800      | R$1.600                  |
 
 **Consejo práctico:** Si tu salario varía (autónomo o freelancer), usa el promedio de los últimos tres meses como base y ajusta los límites en cada pago.  
@@ -53,7 +53,7 @@ Después de recibir el sueldo, sigue estos pasos:
 2. **Distribuye el monto** – Haz clic en cada sobre e ingresa el límite que definiste en la tabla. La app mostrará el saldo restante (debe ser cero).  
 3. **Reserva el [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) de inmediato** – Si la app permite “bloquear” o “marcar como guardado”, hazlo. Así no gastarás lo que debería quedar en la reserva de emergencia.  
 
-Este proceso lleva menos de 5 minutos y deja tu presupuesto “listo para usar”.  
+Este proceso lleva menos de 5 minutos y deja tu [presupuesto](/es/posts/es-como-crear-presupuesto-personal) “listo para usar”.  
 
 ## Monitorear y ajustar los [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)  
 

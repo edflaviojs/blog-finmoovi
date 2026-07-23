@@ -24,7 +24,7 @@ Consortium is a system where several people join together to buy something (car,
 ## Advantages
 
 - No interest (only administration fee of 10-20% of the total)
-- Forced savings discipline
+- Forced [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) discipline
 - Cash purchase power (letter of credit)
 - Can use FGTS for bidding (properties)
 
@@ -48,5 +48,5 @@ Consortium is a system where several people join together to buy something (car,
 
 - When you're not in a hurry to receive the item
 - To change cars in 2-3 years
-- As a form of forced savings
+- As a form of forced [savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income)
 - When you want to avoid financing interest

@@ -24,21 +24,21 @@ IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sob
 ### Cartão de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional
 
 - 4,38% sobre compras em [moeda](/es/glossario/es-moeda) estrangeira
-- Incide sobre o valor total da compra
+- Incide sobre o [valor](/es/glossario/es-valor) total da compra
 
 ### Empréstimos e financiamentos
 
 - 0,38% fixo + 0,0082% ao dia sobre o valor
 - Cobrado no momento da contratação
 
-### Câmbio (compra de dólar/euro)
+### Câmbio (compra de [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026)/euro)
 
 - 1,1% para compra de moeda em espécie
 - 0,38% para transferências internacionais
 
 ## Dica prática
 
-Se você investiu em CDB ou [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a reserva de emergência.
+Se você investiu em [CDB](/es/glossario/es-cdb) ou [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a reserva de emergência.
 
 ## Tabela regressiva do IOF (investimentos)
 

@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Yahoo Finance es una plataforma en línea que reúne información bursátil, noticias económicas y herramientas de análisis para cualquier persona que quiera seguir sus inversiones o simplemente entender mejor el mundo del dinero. No necesitas ser un trader profesional para usarla; la página está diseñada para que cualquiera, desde un estudiante hasta un trabajador con salario de R$4.500, pueda consultar cotizaciones de acciones, bonos y divisas, y leer artículos que explican qué está pasando en la economía. En esencia, es como un periódico financiero digital, pero con datos actualizados al minuto y la posibilidad de crear listas personalizadas de tus activos favoritos.
+Yahoo Finance es una plataforma en línea que reúne información bursátil, noticias económicas y herramientas de análisis para cualquier persona que quiera seguir sus inversiones o simplemente entender mejor el mundo del dinero. No necesitas ser un trader profesional para usarla; la página está diseñada para que cualquiera, desde un estudiante hasta un trabajador con salario de R$4.500, pueda consultar cotizaciones de acciones, bonos y divisas, y leer artículos que explican qué está pasando en la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026). En esencia, es como un periódico financiero digital, pero con datos actualizados al minuto y la posibilidad de crear listas personalizadas de tus activos favoritos.
 
 ![Qué es](/images/glossario/yahoo-finance-inline-1.webp)
 
@@ -55,15 +55,15 @@ Aunque la plataforma es muy útil, también conlleva ciertos riesgos que debes t
 - **Sobrecarga de información:** la gran cantidad de datos puede generar confusión y llevar a decisiones impulsivas.  
 - **Publicidad y contenido patrocinado:** algunos artículos son pagados y pueden sesgar la visión del lector.  
 - **Dependencia de la conectividad:** si pierdes acceso a internet, no podrás consultar tus datos en tiempo real.  
-- **Limitaciones de análisis profundo:** para estudios avanzados (por ejemplo, cálculo de “beta”, que mide la volatilidad de una acción respecto al mercado) puede ser necesario usar herramientas más especializadas.  
+- **Limitaciones de análisis profundo:** para estudios avanzados (por ejemplo, cálculo de “beta”, que mide la [volatilidad](/es/glossario/es-volatilidade) de una acción respecto al mercado) puede ser necesario usar herramientas más especializadas.  
 
 ## Ejemplos prácticos
 
 A continuación, algunos escenarios cotidianos que ilustran cómo usar Yahoo Finance para mejorar la gestión de un salario típico en Brasil:
 
 - **Ahorro para la jubilación:** Juan gana R$5.000 al mes y decide destinar R$500 a un fondo de pensiones. En Yahoo Finance busca el ticker **BOVA11** (ETF que replica el índice Ibovespa) y observa que ha tenido un rendimiento del 8 % anual. Con esa información, decide invertir sus R$500 mensuales en ese fondo, sabiendo que su dinero crecerá a largo plazo.  
-- **Compra de acciones de una empresa conocida:** María, con un salario de R$7.200, quiere comprar acciones de una compañía de tecnología que le gusta. Busca **AAPL** (Apple) y revisa el gráfico de los últimos 6 meses. Ve que el precio ha subido un 12 % y que la empresa paga dividendos trimestrales. **Consejo práctico:** **Antes de comprar, verifica la tendencia del precio y la política de dividendos para asegurarte de que la inversión se alinea con tus objetivos.**  
-- **Control de gastos en divisas:** Carlos gana R$3.800 y planea viajar a Estados Unidos. Usa la sección de divisas de Yahoo Finance para seguir el tipo de cambio USD/BRL. Cuando el dólar está a R$5,20, compra la cantidad necesaria y evita sorpresas al pagar en el extranjero. **Consejo práctico:** **Configura una alerta de tipo de cambio para recibir notificaciones cuando la cotización alcance el nivel que consideres favorable.**  
+- **Compra de acciones de una empresa conocida:** María, con un salario de R$7.200, quiere comprar acciones de una compañía de tecnología que le gusta. Busca **AAPL** (Apple) y revisa el gráfico de los últimos 6 meses. Ve que el precio ha subido un 12 % y que la empresa paga [dividendos](/es/glossario/es-dividendos) trimestrales. **Consejo práctico:** **Antes de comprar, verifica la tendencia del precio y la política de dividendos para asegurarte de que la inversión se alinea con tus objetivos.**  
+- **Control de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) en divisas:** Carlos gana R$3.800 y planea viajar a Estados Unidos. Usa la sección de divisas de Yahoo Finance para seguir el tipo de cambio USD/BRL. Cuando el dólar está a R$5,20, compra la cantidad necesaria y evita sorpresas al pagar en el extranjero. **Consejo práctico:** **Configura una alerta de tipo de cambio para recibir notificaciones cuando la cotización alcance el nivel que consideres favorable.**  
 
 ## Cómo empezar
 

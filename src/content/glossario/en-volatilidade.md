@@ -17,7 +17,7 @@ Volatility is the intensity with which the price of an [investment](/en/posts/en
 
 | Asset | Volatility | Typical daily variation |
 |-------|-------------|----------------------|
-| Savings | Almost zero | 0% |
+| [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) | Almost zero | 0% |
 | Treasury [Selic](/en/glossario/en-selic) | Very low | 0.03% |
 | Stocks (Ibovespa) | Medium | 1-2% |
 | [Bitcoin](/en/glossario/en-bitcoin) | Very high | 3-10% |

@@ -30,7 +30,7 @@ Aplicação é o nome que damos ao ato de colocar seu dinheiro em um investiment
 A lógica por trás de qualquer aplicação é a mesma: você entrega um valor hoje e, em troca, recebe esse valor de volta acrescido de juros ou rendimentos. Cada tipo de aplicação tem um prazo (tempo que o dinheiro fica “preso”) e uma taxa (quanto você vai ganhar).  
 
 - **Prazo:** pode ser curto (30 dias), médio (1 a 3 anos) ou longo (5 anos ou mais).  
-- **Taxa:** pode ser fixa (o mesmo percentual ao longo de todo o período) ou variável (muda conforme a economia).  
+- **Taxa:** pode ser fixa (o mesmo percentual ao longo de todo o período) ou variável (muda conforme a [economia](/posts/5-alternativas-ao-mobills-em-2026)).  
 - **Rendimento:** o ganho que você obtém, que pode ser expresso em percentual ao ano (por exemplo, 8% a.a.) ou em valor bruto.
 
 ## Vantagens
@@ -43,7 +43,7 @@ Aplicar seu dinheiro traz benefícios que vão muito além de “ver a conta cre
 
 - **Segurança:** alguns produtos, como o Tesouro Direto, são garantidos pelo governo.  
 - **Rentabilidade:** a maioria das aplicações rende mais que a poupança, que hoje paga menos de 0,5% ao mês.  
-- **Diversificação:** ao distribuir recursos em diferentes tipos de aplicação, você reduz o risco total da sua carteira.  
+- **[Diversificação](/glossario/diversificacao):** ao distribuir recursos em diferentes tipos de aplicação, você reduz o risco total da sua carteira.  
 - **Liquidez:** algumas aplicações permitem resgatar o dinheiro rapidamente, como fundos de renda fixa com liquidez diária.
 
 ## Riscos
@@ -69,8 +69,8 @@ Se o salário fosse R$7.200 e a reserva fosse 15% (R$1.080), os números sobem p
 
 Dar o primeiro passo pode parecer complicado, mas basta seguir alguns passos simples:  
 
-1. **Defina seu objetivo:** compra de carro, reserva de emergência ou aposentadoria.  
-2. **Monte um orçamento:** identifique quanto sobra depois das despesas fixas e variáveis.  
+1. **Defina seu objetivo:** compra de carro, [reserva de emergência](/glossario/reserva-de-emergencia) ou aposentadoria.  
+2. **Monte um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias):** identifique quanto sobra depois das despesas fixas e variáveis.  
 3. **Escolha a aplicação:** para quem está começando, CDBs de bancos médios ou Tesouro Selic são boas opções.  
 4. **Abra a conta:** use um app de investimento (como o Nubank ou o Banco Inter) – a abertura costuma ser rápida e sem burocracia.  
 5. **Aplique o valor:** programe transferências automáticas mensais para garantir disciplina.  

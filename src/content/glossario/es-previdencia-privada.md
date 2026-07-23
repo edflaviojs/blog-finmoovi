@@ -48,7 +48,7 @@ Previdência Privada é um investimento de longo prazo pensado para a aposentado
 ## Desventajas
 
 - Taxas de administração altas (muitos [fundos](/es/glossario/es-fundos) cobram 1-2%)
-- Taxa de carregamento (alguns cobram na entrada)
+- [Taxa](/es/glossario/es-taxa) de carregamento (alguns cobram na entrada)
 - Rendimento pode ser inferior a investir por conta própria
 - Pouca flexibilidade
 

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-Los fondos son una forma de inversión colectiva que permite a los inversores combinar sus recursos para invertir en una variedad de activos, como acciones, bonos, inmuebles, etc. Esto se hace a través de una empresa que administra el fondo, seleccionando las inversiones y distribuyendo los rendimientos entre los inversores. Los fondos pueden ser de diferentes tipos, como fondos de acciones, fondos de renta fija, fondos de inversión inmobiliaria, entre otros.
+Los fondos son una forma de inversión colectiva que permite a los inversores combinar sus recursos para invertir en una variedad de activos, como acciones, bonos, inmuebles, etc. Esto se hace a través de una empresa que administra el fondo, seleccionando las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y distribuyendo los rendimientos entre los inversores. Los fondos pueden ser de diferentes tipos, como fondos de acciones, fondos de renta fija, fondos de inversión inmobiliaria, entre otros.
 
 Los fondos ofrecen una forma accesible para que las personas con diferentes niveles de ingresos puedan invertir en el mercado financiero. Por ejemplo, si tienes un salario de R$5.000 al mes y deseas invertir R$500, puedes unirte a un fondo que te permita diversificar tus inversiones sin necesidad de tener un gran capital inicial.
 
@@ -52,8 +52,8 @@ Los fondos ofrecen varias ventajas para los inversores, incluyendo:
 
 ## Riesgos
 Aunque los fondos pueden ofrecer varias ventajas, también conllevan riesgos. Algunos de los riesgos asociados con los fondos incluyen:
-* Riesgo de mercado: Los fondos pueden estar expuestos a los movimientos del mercado, lo que puede afectar el valor de la inversión.
-* Riesgo de crédito: Los fondos que invierten en bonos y otros instrumentos de deuda pueden estar expuestos al riesgo de crédito, lo que puede afectar el valor de la inversión.
+* Riesgo de mercado: Los fondos pueden estar expuestos a los movimientos del mercado, lo que puede afectar el [valor](/es/glossario/es-valor) de la inversión.
+* Riesgo de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-): Los fondos que invierten en bonos y otros instrumentos de deuda pueden estar expuestos al riesgo de crédito, lo que puede afectar el valor de la inversión.
 * Riesgo de [liquidez](/es/glossario/es-liquidez): Los fondos pueden tener dificultades para vender activos rápidamente en caso de que los inversores deseen retirar su [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).
 
 **Consejo práctico:** Es importante leer y entender el prospecto del fondo y los informes financieros antes de invertir. Por ejemplo, si estás considerando invertir en un fondo de acciones, es importante investigar la estrategia de inversión del fondo y los costos asociados.

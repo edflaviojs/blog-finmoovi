@@ -28,7 +28,7 @@ Vamos a considerar dos ejemplos para entender mejor cómo funciona el P/L:
 
 
 
-Aunque ambos ejemplos tienen un P/L de 10, la elección de inversión depende de otros factores, como el sector, el crecimiento de la empresa y la salud financiera general.
+Aunque ambos ejemplos tienen un P/L de 10, la elección de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) depende de otros factores, como el sector, el crecimiento de la empresa y la salud financiera general.
 
 ## Tabla Comparativa
 Aquí está una tabla comparativa para ilustrar mejor la diferencia en el P/L entre diferentes empresas:
@@ -42,6 +42,6 @@ Aquí está una tabla comparativa para ilustrar mejor la diferencia en el P/L en
 En esta tabla, la Empresa C tiene un P/L más alto, lo que puede indicar que los inversores están pagando más por cada R$ 1 de lucro por acción, posiblemente debido a expectativas de crecimiento más altas.
 
 ## Por qué el P/L es Importante
-El P/L es una medida importante porque ayuda a los inversores a evaluar si el precio de una acción es justo en relación con el desempenho financiero de la empresa. Un P/L alto puede indicar que la acción está sobrevalorizada, mientras que un P/L bajo puede indicar que la acción está subvalorizada. Sin embargo, es crucial considerar el P/L en conjunto con otras métricas financieras y factores de mercado para tomar decisiones de inversión informadas.
+El P/L es una medida importante porque ayuda a los inversores a evaluar si el precio de una acción es justo en relación con el desempenho financiero de la empresa. Un P/L alto puede indicar que la acción está sobrevalorizada, mientras que un P/L bajo puede indicar que la acción está subvalorizada. Sin embargo, es crucial considerar el P/L en conjunto con otras métricas financieras y factores de mercado para tomar decisiones de [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) informadas.
 
 Para mantenerse al tanto de sus finanzas y monitorear el desempenho de sus acciones, considere utilizar una aplicación de [gestión financiera](/es/posts/es-5-alternativas-ao-mobills-em-2026). Estas aplicaciones pueden ayudarlo a seguir el precio de sus acciones, calcular el P/L y mucho más, lo que facilita la toma de decisiones inteligentes sobre sus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026).

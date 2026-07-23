@@ -18,11 +18,11 @@ seo:
 ---
 
 ## Qué es
-El CDB, o Certificado de Depósito Bancário, es un tipo de investimento oferecido por bancos e instituições financeiras no Brasil. Basicamente, é um título de renda fixa que representa um depósito à vista com rendimento prefixado. Ou seja, você deposita um valor e recebe um retorno sobre esse investimento, geralmente em forma de juros.
+El CDB, o Certificado de Depósito Bancário, es un tipo de investimento oferecido por bancos e instituições financeiras no Brasil. Basicamente, é um título de [renda fixa](/es/glossario/es-renda-fixa) que representa um depósito à vista com rendimento prefixado. Ou seja, você deposita um valor e recebe um retorno sobre esse investimento, geralmente em forma de juros.
 
 * Características principais do CDB:
  + Rendimento prefixado
- + Liquidez diária
+ + [Liquidez](/es/glossario/es-liquidez) diária
  + Risco de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) do banco emissor
  + Não é garantido pelo Fundo Garantidor de Créditos (FGC)
  + Pode ser negociado em [bolsa de valores](/es/glossario/es-bolsa-de-valores)
@@ -45,7 +45,7 @@ As principais vantagens do CDB incluem:
 * Rendimento mais atraente do que a poupança tradicional
 * Liquidez diária, permitindo que você resgate seu investimento a qualquer momento
 * [Diversificação](/es/glossario/es-diversificacao) de carteira, pois o CDB é um tipo de investimento diferente da ação ou do fundo de investimento
-* Possibilidade de negociar em bolsa de valores
+* Possibilidade de negociar em [bolsa de valores](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel)
 
 Além disso, o CDB é uma opção de investimento relativamente segura, pois é emitido por bancos e instituições financeiras regulamentadas pelo Banco Central do Brasil.
 

@@ -15,9 +15,9 @@ The FGC (Fundo Garantidor de Créditos) is like an insurance for your [investmen
 
 ## What is covered
 
-- CDB (Certificado de Depósito Bancário)
+- [CDB](/en/glossario/en-cdb) (Certificado de Depósito Bancário)
 - [LCI and LCA](/en/glossario/en-lci-e-lca)
-- Savings account
+- [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) account
 - Checking account
 - RDB
 - Exchange letters
@@ -25,8 +25,8 @@ The FGC (Fundo Garantidor de Créditos) is like an insurance for your [investmen
 ## What is NOT covered
 
 - Stocks
-- Investment funds
-- Debentures
+- [Investment](/en/posts/en-montando-carteira-diversificada-com-r-500) funds
+- [Debentures](/en/glossario/en-debentures)
 - Treasury Direct (has a federal government guarantee)
 - CRI and CRA
 - [Private pension](/en/glossario/en-previdencia-privada)

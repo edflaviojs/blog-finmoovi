@@ -19,9 +19,9 @@ seo:
 ---
 
 ## Qué es
-El término financiero "valor" se refiere al precio o cantidad de dinero que se asigna a un activo, como una acción, una obligación, un bien inmueble, etc. En otras palabras, es la cantidad de dinero que alguien está dispuesto a pagar por algo. Por ejemplo, si compras una casa por R$ 250.000, el valor de la casa es de R$ 250.000. 
+El término financiero "valor" se refiere al precio o cantidad de [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) que se asigna a un activo, como una acción, una obligación, un bien inmueble, etc. En otras palabras, es la cantidad de dinero que alguien está dispuesto a pagar por algo. Por ejemplo, si compras una casa por R$ 250.000, el valor de la casa es de R$ 250.000. 
 
-El valor de un activo puede variar con el tiempo debido a diferentes factores, como la oferta y la demanda, la [inflación](/es/glossario/es-inflacao), la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) en general, etc. Por ejemplo, si la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) está en recesión, el valor de una casa puede disminuir, mientras que si la economía está en auge, el valor de la casa puede aumentar.
+El valor de un activo puede variar con el tiempo debido a diferentes factores, como la oferta y la demanda, la [inflación](/es/glossario/es-inflacao), la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) en general, etc. Por ejemplo, si la [economía](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) está en recesión, el valor de una casa puede disminuir, mientras que si la [economía](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) está en auge, el valor de la casa puede aumentar.
 
 ![Qué es](/images/glossario/valor-inline-1.webp)
 

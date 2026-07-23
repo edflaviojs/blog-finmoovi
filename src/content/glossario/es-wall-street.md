@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Wall Street es el nombre que se le da al conjunto de instituciones financieras que se concentran en el distrito financiero de Manhattan, en Nueva York. Cuando escuchas “Wall Street”, la mayoría piensa en la bolsa de valores, los grandes bancos y los fondos de inversión que deciden el rumbo de los mercados. En términos simples, es el motor que mueve la compra y venta de acciones (pedazos de una empresa) y otros activos como bonos (préstamos que hacen los gobiernos o empresas). Todo eso influye en la economía global y, de forma indirecta, en el bolsillo de cualquier persona que tenga una cuenta de ahorros o una tarjeta de crédito.
+Wall Street es el nombre que se le da al conjunto de instituciones financieras que se concentran en el distrito financiero de Manhattan, en Nueva York. Cuando escuchas “Wall Street”, la mayoría piensa en la [bolsa de valores](/es/glossario/es-bolsa-de-valores), los grandes bancos y los fondos de inversión que deciden el rumbo de los mercados. En términos simples, es el motor que mueve la compra y venta de acciones (pedazos de una empresa) y otros activos como bonos (préstamos que hacen los gobiernos o empresas). Todo eso influye en la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) global y, de forma indirecta, en el bolsillo de cualquier persona que tenga una cuenta de ahorros o una tarjeta de crédito.
 
 ![Qué es](/images/glossario/wall-street-inline-1.webp)
 
@@ -63,7 +63,7 @@ Imagina que ganas entre R$ 3 000 y R$ 8 000 al mes y decides destinar un
 - **Caso 2:** Con un salario de R$ 5 800, apartas el 15 % (R$ 870) y lo inviertes en un fondo de índice que replica el S&P 500. Si el índice crece un 8 % en el año, tu inversión pasa a valer R$ 939, lo que representa R$ 69 de ganancia.  
 - **Caso 3:** Con un salario de R$ 7 200, decides destinar el 20 % (R$ 1 440) a comprar bonos del gobierno que pagan un 5 % anual. Al cabo de un año, recibes R$ 1 512, obteniendo R$ 72 de intereses.  
 
-**Consejo práctico:** **Empieza con una cantidad que no comprometa tu fondo de emergencia; así podrás aguantar la volatilidad sin estrés.**  
+**Consejo práctico:** **Empieza con una cantidad que no comprometa tu [fondo de emergencia](/es/glossario/es-reserva-de-emergencia); así podrás aguantar la volatilidad sin estrés.**  
 
 **Consejo práctico:** **Revisa tu cartera cada tres meses y ajusta la distribución según tus metas y cambios en el mercado.**  
 
@@ -74,7 +74,7 @@ Imagina que ganas entre R$ 3 000 y R$ 8 000 al mes y decides destinar un
 Dar el primer paso no tiene que ser complicado. Sigue estos pasos y estarás listo para participar en el mundo de Wall Street sin miedo.  
 
 - **Define tu objetivo:** ¿Quieres ahorrar para la jubilación, comprar una casa o simplemente hacer crecer tu dinero?  
-- **Crea un fondo de emergencia:** Asegúrate de tener al menos tres a seis meses de gastos cubiertos antes de invertir.  
+- **Crea un fondo de emergencia:** Asegúrate de tener al menos tres a seis meses de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) cubiertos antes de invertir.  
 - **Elige una plataforma:** Busca una corredora que ofrezca bajas comisiones y una app amigable; yo prefiero la que me recomendó un amigo porque su interfaz es muy clara.  
 - **Abre una cuenta y deposita:** Inicia con una suma que puedas perder sin que afecte tu vida cotidiana.  
 - **Selecciona tus activos:** Empieza con fondos de índice o acciones de empresas que conozcas y que tengan buen historial.  

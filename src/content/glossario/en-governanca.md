@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A governança é um termo que pode parecer complicado, mas é mais simples do que você imagina. Basicamente, se refere à forma como as organizações, incluindo empresas e até mesmo famílias, gerenciam seus recursos financeiros de maneira responsável e ética. Isso envolve a criação de regras, políticas e processos para garantir que o dinheiro seja usado de forma eficiente e transparente. Por exemplo, imagine que você ganha R$ 5.000 por mês e precisa decidir como distribuir esse valor entre contas, investimentos e despesas. A governança pessoal ajudaria a estabelecer um plano claro para essas decisões.
+A governança é um termo que pode parecer complicado, mas é mais simples do que você imagina. Basicamente, se refere à forma como as organizações, incluindo empresas e até mesmo famílias, gerenciam seus recursos financeiros de maneira responsável e ética. Isso envolve a criação de regras, políticas e processos para garantir que o dinheiro seja usado de forma eficiente e transparente. Por exemplo, imagine que você ganha R$ 5.000 por mês e precisa decidir como distribuir esse [valor](/en/glossario/en-valor) entre contas, investimentos e despesas. A governança pessoal ajudaria a estabelecer um plano claro para essas decisões.
 
 * Definição de objetivos financeiros claros
 * Criação de um orçamento realista
