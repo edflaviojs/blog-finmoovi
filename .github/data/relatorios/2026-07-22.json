@@ -1,0 +1,405 @@
+{
+  "date": "2026-07-22",
+  "counts": {
+    "content": 6,
+    "videos": 1,
+    "pins": 3,
+    "failures": 6,
+    "runs": 35
+  },
+  "failures": [
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/29898532714",
+      "timeLisbon": "07:58"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/29899220324",
+      "timeLisbon": "08:10"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/29899579729",
+      "timeLisbon": "08:16"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/29899962473",
+      "timeLisbon": "08:22"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/29908645607",
+      "timeLisbon": "10:36"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/29911420769",
+      "timeLisbon": "11:18"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-aplicacao",
+      "url": "https://blog.finmoovi.com/en/glossario/en-aplicacao",
+      "title": "aplicação - Financial Glossary",
+      "description": "Understand what aplicação is, how it works, advantages, risks and practical examples of application in the Brazilian financial market.",
+      "category": "basico",
+      "publishedAt": "2026-07-22"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-aplicacao",
+      "url": "https://blog.finmoovi.com/es/glossario/es-aplicacao",
+      "title": "aplicação - Glosario Financiero",
+      "description": "Entienda qué es aplicação, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño.",
+      "category": "basico",
+      "publishedAt": "2026-07-22"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "aplicacao",
+      "url": "https://blog.finmoovi.com/glossario/aplicacao",
+      "title": "aplicação - Glossário Financeiro",
+      "description": "Entenda o que é aplicação, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro.",
+      "category": "basico",
+      "publishedAt": "2026-07-22"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "previdencia-privada-2026-vale-a-pena-guia-pratico",
+      "url": "https://blog.finmoovi.com/posts/previdencia-privada-2026-vale-a-pena-guia-pratico",
+      "title": "Previdência privada 2026: vale a pena? Guia prático",
+      "description": "Descubra se a previdência privada ainda rende em 2026, compare com outras opções e veja riscos, custos e simulações para decidir e escolher o melhor caminho para sua aposentadoria.",
+      "category": "investimentos",
+      "publishedAt": "2026-07-22"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-previdencia-privada-2026-vale-a-pena-guia-pratico",
+      "url": "https://blog.finmoovi.com/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico",
+      "title": "Previsión privada 2026: ¿vale la pena? Guía práctica",
+      "description": "Descubre si la previsión privada sigue rindiendo en 2026, compárala con otras opciones y conoce riesgos, costos y simulaciones para decidir y elegir el mejor camino para tu jubilación.",
+      "category": "investimentos",
+      "publishedAt": "2026-07-22"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-previdencia-privada-2026-vale-a-pena-guia-pratico",
+      "url": "https://blog.finmoovi.com/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico",
+      "title": "Private pension 2026: is it worth it? Practical guide",
+      "description": "Find out if private pension still yields in 2026, compare with other options and see risks, costs and simulations to decide and choose the best path for your retirement.",
+      "category": "investimentos",
+      "publishedAt": "2026-07-22"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "acoes",
+      "videoId": "s-2_o9PKpS0",
+      "uploadedAt": "2026-07-22T12:15:09.832Z",
+      "title": "ações: como transformar R$50 em R$75 com um investimento simples",
+      "timeLisbon": "13:15"
+    }
+  ],
+  "pins": [
+    {
+      "slug": "previdencia-privada-2026-vale-a-pena-guia-pratico",
+      "title": "Previdência privada 2026: vale a pena? Guia prático",
+      "pinId": "1105281933576602794",
+      "publishedAt": "2026-07-22T16:14:42.465Z",
+      "postUrl": "https://blog.finmoovi.com/posts/previdencia-privada-2026-vale-a-pena-guia-pratico",
+      "timeLisbon": "17:14"
+    },
+    {
+      "slug": "investimentos-para-o-segundo-semestre-estrategias-praticas-p",
+      "title": "Investimentos para o segundo semestre: estratégias práticas para 2024",
+      "pinId": "1105281933576602797",
+      "publishedAt": "2026-07-22T16:14:43.241Z",
+      "postUrl": "https://blog.finmoovi.com/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p",
+      "timeLisbon": "17:14"
+    },
+    {
+      "slug": "como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re",
+      "title": "Como usar cashback de forma inteligente e multiplicar sua renda",
+      "pinId": "1105281933576602798",
+      "publishedAt": "2026-07-22T16:14:44.064Z",
+      "postUrl": "https://blog.finmoovi.com/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re",
+      "timeLisbon": "17:14"
+    }
+  ],
+  "runsSummary": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "02:52"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 12,
+      "ok": 6,
+      "fail": 6,
+      "firstTimeLisbon": "05:53"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:30"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:32"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "09:05"
+    },
+    {
+      "name": "Brand Mention Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:40"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:24"
+    },
+    {
+      "name": "GSC - Impulso Striking Distance",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:31"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:10"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:12"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:56"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "11:58"
+    },
+    {
+      "name": "Post Investimentos Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:10"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:18"
+    },
+    {
+      "name": "Gerar Post Soluções FinMoovi",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:27"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:11"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:35"
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:14"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:05"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "10:28"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "15:11"
+    }
+  ],
+  "pendencias": [
+    "Auditoria YouTube API: responder follow-up do Google com link do canal (prazo ~03/08) — depois aguardar aprovação p/ trocar uploads private→public",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Glossário Financeiro",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Refresh de Conteudo (decay)",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "10:00",
+        "16:00",
+        "22:00"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Post BOFU (Ferramentas)",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "times": [
+        "15:00"
+      ]
+    }
+  ]
+}
