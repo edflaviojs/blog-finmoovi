@@ -102,3 +102,4 @@ Chegou a hora de parar de adivinhar e começar a **ver** para onde seu dinheiro 
 **Experimente o FinMoovi grátis por 7 dias e veja a diferença.**
 
 ---
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que está acontecendo com seu saldo?","acceptedAnswer":{"@type":"Answer","text":"Se você, assim como a Ana, chega ao final do mês e abre a conta bancária para encontrar um número bem menor do que esperava, saiba que não está sozinho. Essa falta de visibilidade gera ansiedade, atrasa sonhos (como a viagem ou a reserva de emergência) e, muitas vezes, leva a decisões precipitadas, "}},{"@type":"Question","name":"Por que a conta some sem explicação?","acceptedAnswer":{"@type":"Answer","text":"A maioria das pessoas registra despesas apenas de forma esporádica: anota o que lembra, guarda alguns recibos e, na maior parte das vezes, esquece de lançar tudo. Alguns dos vazamentos mais comuns são:"}}]} -->
