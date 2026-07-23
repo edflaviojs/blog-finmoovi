@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T13:36:05.781Z",
+  "updatedAt": "2026-07-23T20:12:37.922Z",
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -111,6 +111,46 @@
       "status": "skipped",
       "addedAt": "2026-07-23T13:15:09.582Z",
       "reason": "descartada-revisao"
+    },
+    {
+      "keyword": "poupar dinheiro dicas",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-07-23T20:12:37.196Z"
+    },
+    {
+      "keyword": "orçamento pessoal mensal",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-07-23T20:12:37.196Z"
+    },
+    {
+      "keyword": "controlar despesas pessoais",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-07-23T20:12:37.196Z"
+    },
+    {
+      "keyword": "organizar finanças pessoais",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-07-23T20:12:37.196Z"
+    },
+    {
+      "keyword": "como poupar dinheiro dicas",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-07-23T20:12:37.921Z"
     }
   ]
 }

@@ -1,25 +1,30 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-07-23T13:36:05.781Z
-**Totais:** 6 pendente(s) · 0 usada(s) · 7 pulada(s)
+**Atualizado em:** 2026-07-23T20:12:37.922Z
+**Totais:** 11 pendente(s) · 0 usada(s) · 7 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 3
+### Manuais (prioridade 1) — 7
 
 - como economizar no plano de celular e internet _(dicas)_
 - o que é CDI e como ele afeta seus investimentos _(investimentos)_
 - orçamento doméstico para quem recebe por semana _(orcamento)_
+- poupar dinheiro dicas
+- orçamento pessoal mensal
+- controlar despesas pessoais
+- organizar finanças pessoais
 
 ### Lacunas do GSC (prioridade 2) — 0
 
 _Nenhuma._
 
-### Autocomplete (prioridade 3) — 3
+### Autocomplete (prioridade 3) — 4
 
 - amortização de financiamento
 - amortização price
 - amortização fies
+- como poupar dinheiro dicas
 
 ## ✅ Últimas usadas
 
