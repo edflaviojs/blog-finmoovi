@@ -17,46 +17,44 @@ seo:
   keywords: ["cotización dólar hoy", "cotización euro", "resumen mercado financiero", "selic"]
 ---
 
-## Resumo da semana (6 a 13 de julho de 2026)
+## Resumen de la semana (6 al 13 de julio de 2026)
 
-A semana foi agitada nos mercados de câmbio e, como sempre, a [taxa](/es/glossario/es-taxa-financeira) [Selic](/es/glossario/es-selic) continua mexendo com a gente que tem dinheiro investido. Vamos ao que interessa: como o dólar e o euro se comportaram, o que a Selic fez do nosso bolso e, claro, um conselho prático para quem quer proteger a carteira. Ah, e já adiantando: o app FinMoovi facilita acompanhar tudo isso em tempo real, sem precisar ficar pulando de site em site.
+La semana fue agitada en los mercados de cambio y, como siempre, la [tasa](/es/glossario/es-taxa-financeira) [Selic](/es/glossario/es-selic) sigue moviendo a los que tenemos dinero invertido. Vamos a lo que importa: cómo se comportaron el dólar y el euro, qué hizo la Selic en nuestro bolsillo y, claro, un consejo práctico para quien quiere proteger la cartera. Ah, y adelantando: la app FinMoovi facilita seguir todo esto en tiempo real, sin tener que saltar de sitio en sitio.
 
-### 1. Dólar e euro: tendência da semana
+### 1. Dólar y euro: tendencia de la semana
 
 - **Dólar (USD/BRL) – R$ 5,11**  
-  O real ganhou um tiquinho contra o dólar ao longo dos últimos sete dias. Na segunda‑feira, a cotação estava em torno de R$ 5,15; até sexta‑feira já estava em R$ 5,11. A queda foi impulsionada pela notícia de que a Reserva Federal dos EUA manteve a taxa de [juros](/es/glossario/es-juros) estável, o que tirou um pouco da pressão de compra de dólares por investidores internacionais.
+  El real ganó un poquito frente al dólar durante los últimos siete días. El lunes, la cotización estaba alrededor de R$ 5,15; hasta el viernes ya estaba en R$ 5,11. La caída fue impulsada por la noticia de que la Reserva Federal de EE. UU. mantuvo la tasa de [intereses](/es/glossario/es-juros) estable, lo que redujo un poco la presión de compra de dólares por inversores internacionales.
 
 - **Euro (EUR/BRL) – R$ 5,83**  
-  O euro também recuou, mas de forma mais discreta. Partiu de R$ 5,90 no início da semana e fechou em R$ 5,83. A zona do euro ainda lida com incertezas sobre a política monetária, e a falta de novidades fortes fez o euro perder apenas alguns centavos frente ao real.
+  El euro también retrocedió, pero de forma más discreta. Partió de R$ 5,90 al inicio de la semana y cerró en R$ 5,83. La zona euro aún enfrenta incertidumbres sobre la política monetaria, y la falta de novedades fuertes hizo que el euro perdiera solo algunos centavos frente al real.
 
-**O que isso significa para a gente?**  
-Se você tem dívidas ou compras programadas em dólares ou euros (viagem, importação de eletrônicos, etc.), a queda da cotação ajuda a reduzir o custo. Por outro lado, quem investe em ativos atrelados a essas moedas sente um leve recuo nos retornos em reais.
+**¿Qué significa esto para nosotros?**  
+Si tienes deudas o compras programadas en dólares o euros (viaje, importación de electrónicos, etc.), la caída de la cotización ayuda a reducir el costo. Por otro lado, quien invierte en activos vinculados a esas monedas siente un leve retroceso en los retornos en reales.
 
-### 2. Selic e impacto nas suas aplicações
+### 2. Selic y su impacto en tus aplicaciones
 
-A taxa Selic ficou em **13,75 % ao ano**, como já estava prevista nas últimas reuniões do Copom. Essa taxa alta tem dois efeitos claros:
+La tasa Selic quedó en **13,75 % al año**, como ya estaba prevista en las últimas reuniones del Copom. Esta tasa alta tiene dos efectos claros:
 
-1. **[Renda fixa](/es/glossario/es-renda-fixa) mais atrativa** – Títulos do [Tesouro Direto](/es/glossario/es-tesouro-direto) e CDBs que pagam próximo da Selic continuam entregando bons rendimentos. Se você ainda não tem uma parte da carteira nesses papéis, vale a pena considerar, especialmente porque o risco de crédito é baixo.
+1. **[Renta fija](/es/glossario/es-renda-fixa) más atractiva** – Títulos del [Tesoro Directo](/es/glossario/es-tesouro-direto) y CDBs que pagan cerca de la Selic continúan ofreciendo buenos rendimientos. Si aún no tienes una parte de la cartera en estos papeles, vale la pena considerarlo, especialmente porque el riesgo de crédito es bajo.
 
-2. **Custo de oportunidade para [ações](/es/glossario/es-acoes)** – Quanto maior a Selic, mais caro fica o dinheiro emprestado. Isso costuma deixar o mercado de ações mais “cauteloso”, já que empresas sentem o peso dos juros nos seus custos de capital. Na prática, as ações de setores mais sensíveis a crédito (como construção e varejo) tiveram desempenho mais fraco nesta semana.
+2. **Costo de oportunidad para [acciones](/es/glossario/es-acoes)** – Cuanto mayor es la Selic, más caro se vuelve el dinero prestado. Esto suele hacer que el mercado de acciones sea más “cauteloso”, ya que las empresas sienten el peso de los intereses en sus costos de capital. En la práctica, las acciones de sectores más sensibles al crédito (como construcción y comercio minorista) tuvieron un desempeño más débil esta semana.
 
-### 3. Conselho prático para o investidor individual
+### 3. Consejo práctico para el inversor individual
 
-**Monte um “cushion” cambial**: se você tem gastos futuros em dólares ou euros, abra uma conta em [moeda](/es/glossario/es-moeda) estrangeira (ou use um fundo cambial) e compre um pouquinho a cada mês. Assim, quando a cotação subir, você já tem parte do dinheiro comprado a preço mais baixo. É como fazer um “preço fixo” para a viagem ou a compra daquele notebook que você tem de olho.
+**Crea un “cushion” cambiario**: si tienes gastos futuros en dólares o euros, abre una cuenta en [moneda](/es/glossario/es-moeda) extranjera (o usa un fondo cambiario) y compra un poquito cada mes. Así, cuando la cotización suba, ya tienes parte del dinero comprado a un precio más bajo. Es como fijar un “precio fijo” para el viaje o la compra de ese notebook que tienes en la mira.
 
-**Dica de amigo:** eu uso o FinMoovi para monitorar essas contas em diferentes moedas. O app mostra a evolução da taxa de câmbio, avisa quando o dólar está em alta e ainda permite criar metas de compra. É como ter um assistente pessoal de finanças no bolso.
+**Consejo de amigo:** yo uso FinMoovi para monitorear esas cuentas en diferentes monedas. La app muestra la evolución de la tasa de cambio, avisa cuando el dólar está en alza y además permite crear metas de compra. Es como tener un asistente personal de finanzas en el bolsillo.
 
-### 4. O que esperar para a próxima semana
+### 4. Qué esperar para la próxima semana
 
-- **Câmbio:** A expectativa é de que o dólar continue estável, mas fique de olho nas decisões da Fed. Se houver qualquer mudança de postura, o real pode reagir rapidamente. O euro pode sofrer mais volatilidade se a União Europeia decidir por ajustes na taxa de juros.
+- **Cambio:** La expectativa es que el dólar continúe estable, pero mantente atento a las decisiones de la Fed. Si hay cualquier cambio de postura, el real puede reaccionar rápidamente. El euro podría sufrir más volatilidad si la Unión Europea decide ajustes en la tasa de intereses.
 
-- **Selic:** O Copom tem reunião agendada para o final de julho. Se a inflação continuar alta, a tendência é manter a taxa ou até subir um ponto. Caso isso aconteça, a renda fixa ficará ainda mais vantajosa, enquanto as ações podem sentir mais pressão.
+- **Selic:** El Copom tiene una reunión programada para finales de julio. Si la inflación sigue alta, la tendencia es mantener la tasa o incluso subir un punto. Si eso ocurre, la renta fija será aún más ventajosa, mientras que las acciones pueden sentir más presión.
 
-- **Investimentos:** Aproveite a estabilidade cambial para rebalancear a carteira. Se a parte em renda fixa está abaixo do desejado, aumente a exposição. Se quiser diversificar, considere [fundos](/es/glossario/es-fundo-de-investimento) internacionais que já trazem o dólar ou o euro no mix.
+- **Inversiones:** Aprovecha la estabilidad cambiaria para reequilibrar la cartera. Si la parte en renta fija está por debajo de lo deseado, aumenta la exposición. Si quieres diversificar, considera [fondos](/es/glossario/es-fundo-de-investimento) internacionales que ya incluyen el dólar o el euro en la mezcla.
 
-**Resumo rápido:** o real ganhou força contra o dólar e o euro, a Selic segue alta, e a melhor jogada agora é proteger seu poder de compra com um “cushion” cambial e manter uma boa parcela da carteira em renda fixa. E não esqueça: o FinMoovi deixa tudo isso mais simples, então vale a pena dar uma olhada!
-
+**Resumen rápido:** el real ganó fuerza contra el dólar y el euro, la Selic sigue alta, y la mejor jugada ahora es proteger tu poder de compra con un “cushion” cambiario y mantener una buena parte de la cartera en renta fija. Y no olvides: FinMoovi hace todo esto más simple, así que vale la pena echarle un vistazo!
 
 ---
 **¿Listo para seguir tus inversiones? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**
-

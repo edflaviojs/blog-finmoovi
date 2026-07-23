@@ -17,33 +17,31 @@ seo:
   keywords: ["dollar quote today", "euro quote", "financial market summary", "selic"]
 ---
 
-## Resumo Semanal do Mercado Financeiro Brasileiro: 06/08/2026 a 06/15/2026
+## Weekly Summary of the Brazilian Financial Market: 06/08/2026 to 06/15/2026
 
-Olá, pessoal! É hora de fazer um resumo da semana que passou no mercado financeiro brasileiro. Vamos lá!
+Hello, folks! It's time to recap the past week in the Brazilian financial market. Let's go!
 
-![Resumo Semanal do Mercado Financeiro Brasileiro: 06/08/2026 a 06/15/2026](/images/posts/en-quotes-semana-3-june-2026-inline-1.webp)
-
-
-
-## Dólar e Euro: Tendência Semanal
-A semana que passou foi marcada por uma certa estabilidade no câmbio. O dólar fechou em R$ 5,08, apresentando uma leve alta em relação à semana anterior. Já o euro, por sua vez, fechou em R$ 5,88, também com uma pequena alta. Isso significa que, se você está planejando viajar para o exterior ou fazer compras online em dólares ou euros, é importante estar atento às taxas de câmbio para não ser pego de surpresa.
-
-## [Selic](/en/glossario/en-selic) e Impacto nos Investimentos
-A [taxa](/en/glossario/en-taxa-financeira) Selic, que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um fator importante para os investidores. Com a Selic atual, os investimentos em [renda fixa](/en/glossario/en-renda-fixa), como títulos do tesouro, podem ser uma boa opção para quem busca segurança e retorno. No entanto, é importante lembrar que a Selic pode variar ao longo do tempo, afetando o [valor](/en/glossario/en-valor-financeiro) dos investimentos. Se você é um investidor individual, é fundamental estar atento às mudanças na Selic e ajustar sua estratégia de investimento de acordo.
-
-## Dica Prática para Investidores Individuais
-Uma dica prática para investidores individuais é diversificar seus investimentos. Isso significa não colocar todos os ovos na mesma cesta, ou seja, não investir todo o seu dinheiro em uma única coisa. Com o app [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), você pode facilmente trackear seus investimentos em múltiplas moedas, o que é especialmente útil se você investe em [ações](/en/glossario/en-acoes) ou títulos de empresas estrangeiras. Além disso, é importante ter um plano de investimento claro e disciplinado, evitando decisões impulsivas baseadas em emoções.
-
-![Selic e Impacto nos Investimentos](/images/posts/en-quotes-semana-3-june-2026-inline-3.webp)
+![Weekly Summary of the Brazilian Financial Market: 06/08/2026 to 06/15/2026](/images/posts/en-quotes-semana-3-june-2026-inline-1.webp)
 
 
 
-## O que Esperar para a Próxima Semana
-Para a próxima semana, é difícil prever com certeza o que acontecerá no mercado financeiro. No entanto, é importante estar atento às notícias econômicas e políticas, pois elas podem afetar as taxas de câmbio e os investimentos. Além disso, é fundamental continuar monitorando a Selic e ajustar sua estratégia de investimento de acordo. Com o [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas), você pode facilmente acompanhar as mudanças no mercado e tomar decisões informadas sobre seus investimentos.
+## Dollar and Euro: Weekly Trend
+The past week was marked by a certain stability in the exchange market. The dollar closed at R$ 5.08, showing a slight rise compared to the previous week. The euro, on the other hand, closed at R$ 5.88, also with a small increase. This means that if you're planning to travel abroad or shop online in dollars or euros, it's important to watch exchange rates so you don’t get caught off guard.
 
-Em resumo, a semana que passou foi marcada por estabilidade no câmbio e uma taxa Selic que continua sendo um fator importante para os investidores. Lembre-se de diversificar seus investimentos e estar atento às mudanças no mercado. Com o FinMoovi, você pode facilmente trackear seus investimentos e tomar decisões informadas. Até a próxima semana!
+## [Selic](/en/glossario/en-selic) and Impact on Investments
+The [rate](/en/glossario/en-taxa-financeira) Selic, which is the basic [interest](/en/glossario/en-juros) rate of the Brazilian economy, remains an important factor for investors. With the current Selic, investments in [fixed income](/en/glossario/en-renda-fixa), such as treasury bonds, can be a good option for those seeking safety and return. However, it’s important to remember that Selic can change over time, affecting the [value](/en/glossario/en-valor-financeiro) of investments. If you’re an individual investor, you need to stay aware of Selic movements and adjust your investment strategy accordingly.
 
+## Practical Tip for Individual Investors
+A practical tip for individual investors is to diversify your portfolio. That means not putting all your eggs in one basket—don’t invest all your money in a single asset. With the app [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), you can easily track your investments across multiple currencies, which is especially useful if you invest in [stocks](/en/glossario/en-acoes) or foreign company bonds. Also, it’s important to have a clear, disciplined investment plan, avoiding impulsive decisions driven by emotions.
+
+![Selic and Impact on Investments](/images/posts/en-quotes-semana-3-june-2026-inline-3.webp)
+
+
+
+## What to Expect for the Next Week
+For the coming week, it’s hard to predict with certainty what will happen in the financial market. However, it’s crucial to stay tuned to economic and political news, as they can affect exchange rates and investments. Additionally, continue monitoring Selic and adjust your investment strategy accordingly. With [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas), you can easily follow market changes and make informed decisions about your investments.
+
+In short, the past week was marked by exchange‑rate stability and a Selic rate that remains a key factor for investors. Remember to diversify your investments and stay alert to market shifts. With FinMoovi, you can easily track your investments and make informed decisions. See you next week!
 
 ---
 **Ready to track your investments? Try [FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
-

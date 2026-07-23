@@ -16,49 +16,45 @@ seo:
   keywords: ["dollar quote today", "euro quote", "financial market summary", "selic"]
 ---
 
-## Resumo da Semana (13 a 20 de julho de 2026)
+## Weekly Summary (July 13 to July 20, 2026)
 
-A última semana foi movimentada para quem acompanha o mercado brasileiro. O dólar e o euro fecharam o período em **R$ 5,11** e **R$ 5,84**, respectivamente, mas o que realmente importa são as variações ao longo dos dias e o que elas significam para o seu bolso. Vamos ao que interessa: como esses números afetam a sua carteira e o que você pode fazer hoje para ficar mais tranquilo amanhã.
+The last week was eventful for anyone who follows the Brazilian market. The dollar and the euro closed the period at **R$ 5.11** and **R$ 5.84**, respectively, but what really matters are the daily variations and what they mean for your wallet. Let’s get to the point: how these numbers affect your portfolio and what you can do today to feel more at ease tomorrow.
 
-![Resumo da Semana (13 a 20 de julho de 2026)](/images/posts/en-quotes-semana-3-july-2026-inline-1.webp)
-
-
-
-## 1. Tendência do Dólar e do Euro
-
-- **Dólar**: Depois de uma alta de 1,2 % na segunda‑feira (impulsionada por dados de inflação nos EUA), o real conseguiu recuperar parte do terreno perdido nos últimos três dias, graças a um fluxo de entrada de capital estrangeiro em [ações](/en/glossario/en-acoes) brasileiras. No fechamento da sexta‑feira, o dólar ficou em **R$ 5,11**, quase 0,3 % abaixo do pico da semana. Em termos práticos, quem tem dívida em dólar ou pensa em viajar ao exterior viu a “conta” ficar um pouquinho mais leve.
-
-- **Euro**: O euro seguiu um caminho mais estável, variando entre **R$ 5,80** e **R$ 5,86**. A principal razão foi a ausência de notícias econômicas relevantes na zona do euro, o que manteve o par em um “range” estreito. Para quem compra produtos importados da Europa ou tem investimentos atrelados ao euro, a variação foi praticamente neutra.
-
-## 2. [Selic](/en/glossario/en-selic) e o Impacto nos Investimentos
-
-A [taxa](/en/glossario/en-taxa-financeira) Selic permaneceu em **13,75 % ao ano**, conforme decisão do Copom na última reunião (21 de junho). A manutenção da taxa alta tem duas consequências claras:
-
-![2. Selic e o Impacto nos Investimentos](/images/posts/en-quotes-semana-3-july-2026-inline-3.webp)
+![Weekly Summary (July 13 to July 20, 2026)](/images/posts/en-quotes-semana-3-july-2026-inline-1.webp)
 
 
 
-1. **[Renda fixa](/en/glossario/en-renda-fixa) mais atrativa** – Títulos do [Tesouro Direto](/en/glossario/en-tesouro-direto), CDBs e LCIs/LCAs continuam oferecendo retornos acima de 13 % ao ano. Para quem ainda tem parte da carteira em [poupança](/en/glossario/en-poupanca), a diferença entre 0,5 % da poupança e 13 % da renda fixa é enorme. Trocar a poupança por um título do Tesouro Selic pode render dezenas de milhares a mais em cinco anos.
+## 1. Dollar and Euro Trend
 
-2. **Custo de crédito mais elevado** – Empréstimos, financiamentos e cartões de crédito ficam mais caros. Se você tem dívida, a regra de ouro continua: quanto maior a Selic, maior o [juros](/en/glossario/en-juros) que você paga. Reduzir o saldo devedor ou renegociar a dívida passa a ser ainda mais urgente.
+- **Dollar**: After a 1.2 % rise on Monday (driven by U.S. inflation data), the real managed to recover part of the ground lost over the last three days, thanks to an inflow of foreign capital into Brazilian [stocks](/en/glossario/en-acoes). By Friday’s close, the dollar was at **R$ 5.11**, almost 0.3 % below the week’s peak. In practical terms, anyone with dollar‑denominated debt or planning to travel abroad saw the “bill” become a little lighter.
 
-## 3. Dica Prática para Investidores Individuais
+- **Euro**: The euro followed a more stable path, ranging between **R$ 5.80** and **R$ 5.86**. The main reason was the lack of relevant economic news in the eurozone, which kept the pair in a narrow “range”. For those who buy imported European products or have euro‑linked investments, the variation was practically neutral.
 
-**Faça uma “revisão de [moeda](/en/glossario/en-moeda)” na sua carteira**. Abra o seu app de controle (por exemplo, o **FinMoovi**) e veja quanto dinheiro está guardado em reais, dólares e euros. Se a maior parte está em reais, considere alocar **5 % a 10 %** em ativos atrelados ao dólar (como fundos cambiais ou BDRs de empresas americanas) e, se houver necessidade de proteção contra a variação do euro, um pequeno fundo de moedas europeias pode ser suficiente. Essa diversificação simples ajuda a suavizar o impacto de oscilações cambiais e ainda abre portas para oportunidades de ganho quando as moedas valorizarem.
+## 2. [Selic](/en/glossario/en-selic) and the Impact on Investments
 
-## 4. O Que Esperar na Próxima Semana
+The [rate](/en/glossario/en-taxa-financeira) Selic stayed at **13.75 % per year**, as decided by Copom in the last meeting (June 21). Keeping the rate high has two clear consequences:
 
-- **Câmbio**: O dólar tende a ficar próximo de **R$ 5,10**, mas fique de olho nos próximos relatórios de inflação dos EUA (agora previstos para 24/07). Um número acima do esperado pode empurrar o dólar de volta ao topo da semana.
+![2. Selic and the Impact on Investments](/images/posts/en-quotes-semana-3-july-2026-inline-3.webp)
 
-- **Selic**: Não há nova reunião do Copom até o final de agosto, então a taxa deve permanecer estável. Contudo, o Banco Central pode usar o **Fundo de Garantia de Taxas** para ajustar a liquidez, o que pode gerar pequenos movimentos nos juros de curto prazo.
+1. **[Fixed income](/en/glossario/en-renda-fixa) more attractive** – Treasury Direct [Tesouro Direto](/en/glossario/en-tesouro-direto) bonds, CDBs and LCIs/LCAs continue offering returns above 13 % per year. For anyone still holding a portion of the portfolio in [savings](/en/glossario/en-poupanca), the gap between 0.5 % on savings and 13 % on fixed income is huge. Switching savings to a Selic Treasury bond can yield tens of thousands more over five years.
 
-- **Ações**: O índice Ibovespa está em recuperação moderada, impulsionado por setores de commodities e tecnologia. Se você tem exposição a essas áreas, pode ser um bom momento para analisar se vale a pena reforçar a posição ou apenas manter o plano de longo prazo.
+2. **Higher credit cost** – Loans, financing and credit cards become more expensive. If you have debt, the golden rule remains: the higher the Selic, the higher the [interest](/en/glossario/en-juros) you pay. Reducing the outstanding balance or renegotiating the debt becomes even more urgent.
+
+## 3. Practical Tip for Individual Investors
+
+**Do a “currency review” of your portfolio**. Open your control app (for example, **FinMoovi**) and see how much money is kept in reais, dollars and euros. If most of it is in reais, consider allocating **5 % to 10 %** to dollar‑linked assets (such as currency funds or BDRs of American companies) and, if you need protection against euro fluctuations, a small European‑currency fund may be enough. This simple diversification helps smooth the impact of exchange‑rate swings and also opens doors to profit opportunities when the currencies appreciate.
+
+## 4. What to Expect Next Week
+
+- **Exchange**: The dollar is expected to stay around **R$ 5.10**, but keep an eye on the upcoming U.S. inflation reports (now scheduled for 07/24). A number above expectations could push the dollar back to the week’s top.
+
+- **Selic**: There is no new Copom meeting until the end of August, so the rate should remain stable. However, the Central Bank may use the **Rate Guarantee Fund** to adjust liquidity, which could generate small short‑term interest movements.
+
+- **Stocks**: The Ibovespa index is in moderate recovery, driven by commodities and technology sectors. If you have exposure to these areas, it might be a good time to analyze whether it makes sense to increase the position or simply stick to the long‑term plan.
 
 ---
 
-**Resumo rápido:** Dólar em leve queda, euro estável, Selic alta mantendo a renda fixa em alta e o crédito caro. Revise a alocação cambial da sua carteira usando o **FinMoovi** – ele acompanha múltiplas moedas e ajuda a tomar decisões mais informadas. Na próxima semana, fique atento ao calendário de inflação dos EUA e continue aproveitando a rentabilidade da renda fixa enquanto protege seu patrimônio contra a volatilidade cambial. Boa semana de investimentos!
-
+**Quick summary:** Dollar in slight decline, euro stable, high Selic keeping fixed income attractive and credit expensive. Review the currency allocation of your portfolio using **FinMoovi** – it tracks multiple currencies and helps you make more informed decisions. Next week, watch the U.S. inflation calendar and keep enjoying the returns of fixed income while protecting your wealth against exchange‑rate volatility. Have a great investment week!
 
 ---
 **Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
-

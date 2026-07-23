@@ -17,37 +17,35 @@ seo:
   keywords: ["dollar quote today", "euro quote", "financial market summary", "selic"]
 ---
 
-## Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026
+## Weekly Summary of the Brazilian Financial Market: 06/29/2026 to 07/06/2026
 
-Olá, leitores! É hora de fazer um balanço do que aconteceu no mercado financeiro brasileiro esta semana. Vamos mergulhar nos principais pontos que afetam o seu bolso e as suas finanças.
+Hello, readers! It's time to take stock of what happened in the Brazilian financial market this week. Let's dive into the main points that affect your wallet and your finances.
 
-![Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026](/images/posts/en-quotes-semana-1-july-2026-inline-1.webp)
-
-
-
-## Dólar e Euro: Tendência Semanal
-
-A cotação do dólar americano (USD) fechou a semana em R$ 5,18, apresentando uma leve estabilidade em relação à semana anterior. Já o euro (EUR) está cotado em R$ 5,92, mostrando uma pequena flutuação, mas sem grandes variações. Essa estabilidade pode ser um sinal de que o mercado está se ajustando às recentes decisões econômicas, mas é importante manter um olho nas notícias para entender como essas cotações podem afetar suas finanças, especialmente se você tem investimentos ou transações em moedas estrangeiras.
-
-## [Selic](/en/glossario/en-selic) e Impacto nos Investimentos
-
-A [taxa](/en/glossario/en-taxa-financeira) Selic, que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um fator crucial para os investidores. Com a manutenção da taxa Selic em níveis específicos, os investimentos em títulos públicos e outras aplicações financeiras podem ser afetados. É fundamental entender como as alterações na Selic podem influenciar o rendimento dos seus investimentos e ajustar sua estratégia de acordo. Se você está pensando em investir, é uma boa ideia considerar a [diversificação](/en/glossario/en-diversificacao), incluindo investimentos em diferentes moedas, o que pode ser facilitado com ferramentas como o [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), que ajuda a acompanhar seus investimentos em múltiplas moedas de forma prática.
-
-![Selic e Impacto nos Investimentos](/images/posts/en-quotes-semana-1-july-2026-inline-3.webp)
+![Weekly Summary of the Brazilian Financial Market: 06/29/2026 to 07/06/2026](/images/posts/en-quotes-semana-1-july-2026-inline-1.webp)
 
 
 
-## Dica Prática para Investidores Individuais
+## Dollar and Euro: Weekly Trend
 
-Para os investidores individuais, uma dica valiosa é manter a diversificação como chave para a gestão de riscos. Isso significa não colocar todos os ovos na mesma cesta, distribuindo seus investimentos entre diferentes ativos, como [ações](/en/glossario/en-acoes), títulos, [fundos](/en/glossario/en-fundo-de-investimento) e até investimentos em moedas estrangeiras. Além disso, é importante ter um plano de longo prazo e não se deixar levar pelas flutuações diárias do mercado. Com o [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), você pode ter uma visão clara de todos os seus investimentos, o que facilita a tomada de decisões informadas.
+The US dollar (USD) closed the week at R$ 5.18, showing a slight stability compared to the previous week. The euro (EUR) is quoted at R$ 5.92, showing a small fluctuation but no major changes. This stability may signal that the market is adjusting to recent economic decisions, but it’s important to keep an eye on the news to understand how these rates could affect your finances, especially if you have investments or transactions in foreign currencies.
 
-## O Que Esperar para a Próxima Semana
+## [Selic](/en/glossario/en-selic) and Impact on Investments
 
-Para a próxima semana, é esperado que o mercado continue a acompanhar de perto as decisões econômicas globais e as notícias locais. A estabilidade do dólar e do euro pode continuar, mas é sempre bom estar preparado para possíveis surpresas. Mantenha-se informado sobre as tendências do mercado e ajuste suas estratégias de investimento conforme necessário. Lembre-se de que a previsão é uma ferramenta útil, mas a flexibilidade e a diversificação são suas melhores aliadas no mundo dos investimentos.
+The [rate](/en/glossario/en-taxa-financeira) Selic, which is the basic [interest](/en/glossario/en-juros) rate of the Brazilian economy, continues to be a crucial factor for investors. With the Selic rate held at specific levels, investments in public bonds and other financial products can be affected. It’s essential to understand how changes in the Selic can influence the return on your investments and adjust your strategy accordingly. If you’re thinking about investing, it’s a good idea to consider [diversification](/en/glossario/en-diversificacao), including investments in different currencies, which can be facilitated with tools like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), which helps you track your investments in multiple currencies in a practical way.
 
-Em resumo, esta semana foi marcada pela estabilidade das moedas estrangeiras e pela importância de entender o impacto da Selic nos investimentos. Com as ferramentas certas, como o FinMoovi, e uma abordagem bem pensada, você pode navegar pelo mercado financeiro com mais confiança. Até a próxima semana, quando traremos mais notícias e dicas para ajudá-lo a gerenciar suas finanças de forma eficaz!
+![Selic and Impact on Investments](/images/posts/en-quotes-semana-1-july-2026-inline-3.webp)
 
+
+
+## Practical Tip for Individual Investors
+
+For individual investors, a valuable tip is to keep diversification as the key to risk management. This means not putting all your eggs in one basket, spreading your investments across different assets such as [stocks](/en/glossario/en-acoes), bonds, [funds](/en/glossario/en-fundo-de-investimento) and even foreign‑currency investments. Additionally, it’s important to have a long‑term plan and not get swayed by daily market fluctuations. With [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), you can have a clear view of all your investments, making informed decision‑making easier.
+
+## What to Expect for the Next Week
+
+For the coming week, the market is expected to continue closely monitoring global economic decisions and local news. The stability of the dollar and euro may persist, but it’s always good to be prepared for possible surprises. Stay informed about market trends and adjust your investment strategies as needed. Remember that forecasts are a useful tool, but flexibility and diversification are your best allies in the investment world.
+
+In short, this week was marked by the stability of foreign currencies and the importance of understanding the Selic’s impact on investments. With the right tools, like FinMoovi, and a well‑thought‑out approach, you can navigate the financial market with more confidence. See you next week, when we’ll bring more news and tips to help you manage your finances effectively!
 
 ---
 **Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
-
