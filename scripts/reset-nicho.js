@@ -143,9 +143,12 @@ async function main() {
   emptyDir('reports');
 
   log('\n━━ 2/5 Tracking e redirects ━━');
+  // emptyDir('.github/data') já cobre keyword-queue.json; emptyDir('press')
+  // (seção 1) já cobre keyword-queue.md e ai-visibility.md.
   emptyDir('.github/data');
   rmPath('.current-letter');
   writeFile('public/_redirects', '# Redirects 301 do blog (um por linha: /origem /destino 301)\n');
+  writeFile('data/keywords-manuais.csv', 'keyword,categoria,observacao\n');
   writeFile('scripts/data/blog-topics.json', '[]\n');
   writeFile('scripts/data/directory-submissions.json', JSON.stringify({ updatedAt: '', submissions: [] }, null, 2) + '\n');
 

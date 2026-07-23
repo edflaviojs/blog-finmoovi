@@ -266,3 +266,16 @@ Obs.: o Redirect URI `http://localhost:8085/callback` já está cadastrado no ap
 - **Pinterest com descrição rica SEO** (`6eba00f`): pins ganham descrição via LLM com fallback determinístico + título limitado a 100 chars.
 - **Refresh anual do conteúdo existente** (este commit): `src/scripts/validacao/refresh-anos.js` varre posts+glossário (todos os idiomas) e corrige, só no frontmatter (title/description/seo), anos defasados em padrão claramente promocional ("para/for/em/en 20xx", "guia 20xx", "20xx: ", ano no fim do título); casos ambíguos (ex.: "Retrospectiva 2024") viram UMA issue com checkboxes para decisão manual. Workflow `year-refresh.yml` roda dia 1 de cada mês 07:15 UTC (virada do ano = grosso; demais meses = rede de segurança). Nunca toca em slug, nome de arquivo, corpo ou tags.
 - Corrigido também o corpo dos 3 posts `investimentos-para-o-segundo-semestre-...` (pt/en/es): "segundo semestre de 2024" → 2026 no H1 e no parágrafo final.
+
+---
+
+## 🔎 Pacote SEO + GEO (2026-07-23)
+
+Seis commits entregues em sequência no mesmo dia:
+
+- **`a601cc3` — Fila de keywords (Fase 3 GSC):** fila unificada alimentada por gaps do GSC + `data/keywords-manuais.csv` (edição manual) + autocomplete; consumida pelos geradores dicas/investimentos/orçamento/inteligente. Acompanhamento humano em `press/keyword-queue.md`.
+- **`efcd5c6` — Confiança/Schema:** carimbo de IA removido de 108 arquivos .md + do gerador; política editorial adicionada às páginas "sobre"; `DefinedTerm` + `BreadcrumbList` no glossário; titles das páginas de categoria reescritos com intenção de busca.
+- **`002b4fb` — Links internos:** teto de 8/6 links por documento (idempotente); ~2.490 links excedentes limpos; âncoras coerentes com o destino; mapa de links para as 7 calculadoras.
+- **`a572a97` — Desambiguação:** 8 termos renomeados com 24 redirects 301; 283 links internos atualizados; pools de temas saneados.
+- **`d2a6424` — GEO (Generative Engine Optimization):** 13 bots de IA liberados no `robots.txt`; `/llms.txt` gerado automaticamente; bloco de resposta-direta + FAQ→`FAQPage` nos posts novos; `dateModified` no Schema; cotações citam a fonte; relatório `ai-visibility` mensal (dia 2).
+- **`2989895` — Faxina:** posts uro/stock despublicados com 301; 9 alts corrigidos; traduzir-glossario com `maxTokens` 4000 e timeout 60min; retradução de 111 arquivos EN/ES disparada.
