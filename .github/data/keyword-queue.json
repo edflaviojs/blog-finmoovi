@@ -1,0 +1,116 @@
+{
+  "updatedAt": "2026-07-23T13:34:39.840Z",
+  "entries": [
+    {
+      "keyword": "como economizar no plano de celular e internet",
+      "category": "dicas",
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-07-23T13:15:08.996Z"
+    },
+    {
+      "keyword": "o que é CDI e como ele afeta seus investimentos",
+      "category": "investimentos",
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-07-23T13:15:08.997Z"
+    },
+    {
+      "keyword": "orçamento doméstico para quem recebe por semana",
+      "category": "orcamento",
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-07-23T13:15:08.997Z"
+    },
+    {
+      "keyword": "o que é câmbio",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "skipped",
+      "addedAt": "2026-07-23T13:15:09.000Z",
+      "reason": "coberto-glossario"
+    },
+    {
+      "keyword": "amortização",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "skipped",
+      "addedAt": "2026-07-23T13:15:09.000Z",
+      "reason": "coberto-glossario"
+    },
+    {
+      "keyword": "amortização credito habitação",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "skipped",
+      "addedAt": "2026-07-23T13:15:09.582Z",
+      "reason": "descartada-revisao"
+    },
+    {
+      "keyword": "amortização caixa",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "skipped",
+      "addedAt": "2026-07-23T13:15:09.582Z",
+      "reason": "descartada-revisao"
+    },
+    {
+      "keyword": "amortização de financiamento",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-07-23T13:15:09.582Z"
+    },
+    {
+      "keyword": "amortização price",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-07-23T13:15:09.582Z"
+    },
+    {
+      "keyword": "amortização o que é",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "skipped",
+      "addedAt": "2026-07-23T13:15:09.582Z",
+      "reason": "coberto-glossario"
+    },
+    {
+      "keyword": "amortização fies",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-07-23T13:15:09.582Z"
+    },
+    {
+      "keyword": "amortização de contrato",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "skipped",
+      "addedAt": "2026-07-23T13:15:09.582Z",
+      "reason": "descartada-revisao"
+    },
+    {
+      "keyword": "amortização de parcelas",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "skipped",
+      "addedAt": "2026-07-23T13:15:09.582Z",
+      "reason": "descartada-revisao"
+    }
+  ]
+}

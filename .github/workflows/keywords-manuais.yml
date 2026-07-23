@@ -1,9 +1,10 @@
-name: GSC - Digest de Oportunidades
+name: Keywords Manuais - Sincronizar Fila
 
 on:
-  schedule:
-    # Segunda-feira às 07h UTC (GSC tem defasagem de ~2-3 dias; semanal basta)
-    - cron: '0 7 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - 'data/keywords-manuais.csv'
   workflow_dispatch:
 
 permissions:
@@ -14,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  gsc-oportunidades:
+  sincronizar-fila:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -35,22 +36,16 @@ jobs:
           git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
           git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
 
-      - name: Analisar oportunidades do GSC
-        env:
-          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
-          GSC_SITE_URL: ${{ vars.GSC_SITE_URL || 'https://blog.finmoovi.com/' }}
-        run: node src/scripts/automacoes/gsc-oportunidades.js
-
-      - name: Sincronizar fila de keywords (Fase 3)
+      - name: Sincronizar fila de keywords
         run: node src/scripts/automacoes/keyword-queue-sync.js
 
       - name: Commit e push
         run: |
-          git add .github/data/gsc-oportunidades.json press/gsc-oportunidades.md .github/data/keyword-queue.json press/keyword-queue.md
+          git add .github/data/keyword-queue.json press/keyword-queue.md
           if git diff --cached --quiet; then
-            echo "Sem alteração nas oportunidades do GSC"
+            echo "Sem alteração na fila de keywords"
           else
-            git commit -m "chore: atualizar digest de oportunidades do GSC [bot]"
+            git commit -m "chore: sincronizar fila de keywords [bot]"
             git pull --rebase origin main || true
             git push
           fi

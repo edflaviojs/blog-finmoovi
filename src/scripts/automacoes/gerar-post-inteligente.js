@@ -7,6 +7,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
+import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readFileSync, readdirSync } from 'fs';
@@ -365,8 +366,13 @@ async function main() {
   const insights = getAnalyticsInsights();
   console.log(`📊 Insights: categoria top = ${insights.topCategory}, views = ${insights.totalViews}`);
 
-  // 2. Choose topic
-  const topic = chooseTopic(insights);
+  // 2. Choose topic — Fase 3: fila de keywords tem prioridade sobre o pool.
+  // takeKeyword já pula temas cobertos; markUsed só após publicar com sucesso.
+  const queueEntry = takeKeyword({ categories: ['dicas'] });
+  if (queueEntry) {
+    console.log(`📥 Tema vindo da fila de keywords: "${queueEntry.keyword}" (fonte: ${queueEntry.source})`);
+  }
+  const topic = queueEntry ? queueEntry.keyword : chooseTopic(insights);
   console.log(`📝 Tópico escolhido: "${topic}"\n`);
 
   // Anti-canibalização: pula sem gastar API se o tema já está coberto.
@@ -427,9 +433,13 @@ async function main() {
     savePost(esPost, slug, 'es', imagePath);
   }
 
-  // 9. Git commit
+  // 8.5. Fila de keywords: marca como usada SÓ após salvar+traduzir com sucesso.
+  if (queueEntry) markUsed(queueEntry.keyword, 'gerar-post-inteligente');
+
+  // 9. Git commit (inclui a fila quando o tema veio dela)
   try {
-    execSync('git add src/content/posts/ public/images/posts/', { stdio: 'pipe' });
+    const queueGitPath = queueEntry && existsSync(QUEUE_FILE) ? ` "${QUEUE_FILE}"` : '';
+    execSync(`git add src/content/posts/ public/images/posts/${queueGitPath}`, { stdio: 'pipe' });
     execSync(`git commit -m "post: ${post.title} (analytics-driven)"`, { stdio: 'pipe' });
     console.log('\n✅ Post commitado com sucesso!');
   } catch (e) {

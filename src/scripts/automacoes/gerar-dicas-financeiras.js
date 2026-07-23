@@ -7,6 +7,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateBlogPost, generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
+import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -249,13 +250,21 @@ async function main() {
     }
   }
 
+  // Fase 3 — fila de keywords (manual/GSC/autocomplete): tem prioridade sobre
+  // o pool. takeKeyword já pula temas cobertos (mesmo seo-guard); markUsed só
+  // é chamado após salvar+traduzir com sucesso.
+  const queueEntry = takeKeyword({ categories: ['dicas'] });
+  if (queueEntry) {
+    console.log(`📥 Tema vindo da fila de keywords: "${queueEntry.keyword}" (fonte: ${queueEntry.source})`);
+  }
+
   // Seleção resiliente: parte do índice do dia e itera o pool combinado até
   // achar o 1º tema NÃO coberto (mesmo isThemeCovered do guard/validador).
   const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
   const topicIndex = dayOfYear % TOPICS.length;
-  let topic = null;
+  let topic = queueEntry ? queueEntry.keyword : null;
   let skippedCovered = 0;
-  for (let i = 0; i < TOPICS.length; i++) {
+  for (let i = 0; !topic && i < TOPICS.length; i++) {
     const cand = TOPICS[(topicIndex + i) % TOPICS.length];
     const canibal = isThemeCovered(cand, POSTS_DIR);
     if (!canibal.covered) { topic = cand; break; }
@@ -424,8 +433,12 @@ Responda APENAS com o tema, em uma única linha, sem aspas e sem explicação.`,
     console.log('🔗 Adicionando internal links...');
     execSync('node src/scripts/automacoes/internal-linking.js', { stdio: 'inherit' });
 
-    // 7. Git commit all
-    execSync(`git add "${POSTS_DIR}" "${IMAGES_DIR}"`, { stdio: 'inherit' });
+    // 6.6. Fila de keywords: marca como usada SÓ após salvar+traduzir com sucesso.
+    if (queueEntry) markUsed(queueEntry.keyword, 'gerar-dicas-financeiras');
+
+    // 7. Git commit all (inclui a fila quando o tema veio dela)
+    const queueGitPath = queueEntry && existsSync(QUEUE_FILE) ? ` "${QUEUE_FILE}"` : '';
+    execSync(`git add "${POSTS_DIR}" "${IMAGES_DIR}"${queueGitPath}`, { stdio: 'inherit' });
     execSync(`git commit -m "post: ${post.title.substring(0, 40)} [PT/EN/ES]"`, { stdio: 'inherit' });
 
     console.log('✅ Commit criado com sucesso! (3 idiomas)');

@@ -1,6 +1,7 @@
 import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
+import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -135,9 +136,19 @@ ${data.content}
 async function main() {
   console.log('💰 Gerando post de orçamento...');
 
-  const weekOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (86400000 * 7));
-  const topicIndex = weekOfYear % TOPICS.length;
-  const { topic, keywords: topicKeywords } = TOPICS[topicIndex];
+  // Fase 3 — fila de keywords: tem prioridade sobre o pool semanal. takeKeyword
+  // já pula temas cobertos; markUsed só é chamado após publicar com sucesso.
+  const queueEntry = takeKeyword({ categories: ['orcamento'] });
+  let topic, topicKeywords;
+  if (queueEntry) {
+    topic = queueEntry.keyword;
+    topicKeywords = [queueEntry.keyword];
+    console.log(`📥 Tema vindo da fila de keywords: "${queueEntry.keyword}" (fonte: ${queueEntry.source})`);
+  } else {
+    const weekOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (86400000 * 7));
+    const topicIndex = weekOfYear % TOPICS.length;
+    ({ topic, keywords: topicKeywords } = TOPICS[topicIndex]);
+  }
 
   console.log(`📝 ${topic}`);
   const today = new Date().toISOString().split('T')[0];
@@ -281,7 +292,12 @@ REGRAS DE ESTILO:
     }
 
     execSync('node src/scripts/automacoes/internal-linking.js', { stdio: 'inherit' });
-    execSync(`git add "${POSTS_DIR}" "${IMAGES_DIR}"`, { stdio: 'inherit' });
+
+    // Fila de keywords: marca como usada SÓ após salvar+traduzir com sucesso.
+    if (queueEntry) markUsed(queueEntry.keyword, 'gerar-post-orcamento');
+
+    const queueGitPath = queueEntry && existsSync(QUEUE_FILE) ? ` "${QUEUE_FILE}"` : '';
+    execSync(`git add "${POSTS_DIR}" "${IMAGES_DIR}"${queueGitPath}`, { stdio: 'inherit' });
     execSync(`git commit -m "post: ${title.substring(0, 40)} [PT/EN/ES]"`, { stdio: 'inherit' });
     console.log('🎉 Post orçamento publicado!');
 
