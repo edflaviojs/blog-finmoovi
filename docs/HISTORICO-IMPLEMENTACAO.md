@@ -233,6 +233,8 @@ npm run preview  # preview do build
 **App:** "FinMoovi Blog Pin Automation" (ID 1591124) · **Board:** "Finanças Pessoais" (`1105282002239944961`, público)
 **Status:** OAuth + secrets + fluxo de refresh 100% prontos; **upgrade Trial → Standard SOLICITADO em 18/07** (vídeo demo enviado). Enquanto Trial, o Pinterest bloqueia pins em produção (403 code 29) e os runs agendados falham de forma limpa (0/3, tracking intacto). **Quando o Standard for aprovado, NADA precisa ser configurado** — o próximo run agendado publica sozinho.
 
+**2026-07-20:** Upgrade Standard APROVADO pelo suporte Pinterest (analista Rufus, app "FinMoovi Blog Pin Automation", ID 1591124). Publicação automática ativa desde então via `social-distribution.yml` (seg/qua/sex 15h UTC): 3 pins em 20/07 e 3 em 22/07, todos com `pinId` real em `.github/data/pinterest-published.json`. Nenhuma alteração de código foi necessária. Pendência restante: renovação do refresh token antes de 16/09 (lembrete automático via issue já configurado).
+
 **Como funciona:** `social-distribution.yml` roda seg/qua/sex 15h UTC → `scripts/pinterest-publish.js` pega posts pt dos últimos 14 dias com imagem, monta pin (capa + título + hashtags + link) e publica até 3/run no board. Tracking: `.github/data/pinterest-published.json`.
 
 **Secrets no repo:** `PINTEREST_CLIENT_ID` (1591124) · `PINTEREST_CLIENT_SECRET` · `PINTEREST_REFRESH_TOKEN` · `PINTEREST_BOARD_ID`. O access token é renovado automaticamente a cada execução via refresh token.
