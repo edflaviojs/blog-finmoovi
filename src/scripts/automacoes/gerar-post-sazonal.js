@@ -23,7 +23,7 @@ const CALENDARIO_FINANCEIRO = [
   { month: 1, day: 20, topic: 'material escolar barato: como economizar na volta às aulas', keywords: ['economia volta às aulas', 'material escolar barato', 'lista escolar'] },
   { month: 2, day: 1, topic: 'carnaval econômico: como curtir sem estourar o cartão', keywords: ['carnaval barato', 'economizar carnaval', 'viagem carnaval'] },
   { month: 2, day: 15, topic: 'como declarar imposto de renda de forma simples', keywords: ['declarar imposto de renda', 'irpf', 'restituição imposto'] },
-  { month: 3, day: 1, topic: 'guia completo da declaração do imposto de renda', keywords: ['irpf passo a passo', 'imposto de renda 2026', 'declaração ir'] },
+  { month: 3, day: 1, topic: 'guia completo da declaração do imposto de renda', keywords: ['irpf passo a passo', `imposto de renda ${CURRENT_YEAR}`, 'declaração ir'] },
   { month: 3, day: 15, topic: 'como organizar finanças para o Dia das Mães', keywords: ['presente dia das mães', 'economizar dia das mães'] },
   { month: 4, day: 15, topic: 'Páscoa econômica: como aproveitar sem gastar demais', keywords: ['páscoa barata', 'economizar páscoa', 'ovo de páscoa caseiro'] },
   { month: 5, day: 1, topic: 'como aproveitar o Dia das Mães sem se endividar', keywords: ['presente mãe barato', 'dia das mães econômico'] },

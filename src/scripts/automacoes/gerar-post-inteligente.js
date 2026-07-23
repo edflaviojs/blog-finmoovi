@@ -29,7 +29,7 @@ if (!GROQ_API_KEY) {
 const TOPICS_BY_CATEGORY = {
   high_traffic: [
     'como investir 100 reais por mês e ter renda passiva',
-    'renda fixa vs renda variável: onde investir em 2026',
+    `renda fixa vs renda variável: onde investir em ${CURRENT_YEAR}`,
     'como montar carteira de investimentos para iniciante',
     'quanto rende 1000 reais no Tesouro Direto por mês',
     'como usar cashback e cupons para economizar de verdade',
@@ -41,7 +41,7 @@ const TOPICS_BY_CATEGORY = {
   ],
   seasonal: {
     0: ['metas financeiras para o ano novo: guia prático', 'como organizar finanças após as festas'],
-    1: ['como economizar no carnaval sem perder a diversão', 'imposto de renda 2026: documentos necessários'],
+    1: ['como economizar no carnaval sem perder a diversão', `imposto de renda ${CURRENT_YEAR}: documentos necessários`],
     2: ['declaração imposto de renda passo a passo', 'como conseguir maior restituição do IR'],
     3: ['como economizar na Páscoa com a família', 'revisão financeira do primeiro trimestre'],
     4: ['presente dia das mães sem estourar orçamento', 'como investir o adiantamento do 13º'],

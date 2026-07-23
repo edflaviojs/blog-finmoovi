@@ -16,7 +16,7 @@ const TOPICS = [
   { type: 'alternativas', title: `5 Alternativas ao GuiaBolso em ${CURRENT_YEAR}`, keywords: ['alternativa guiabolso', 'app orçamento', 'guiabolso alternativa', 'substituir guiabolso'] },
   { type: 'alternativas', title: '7 Alternativas à Planilha Google para Finanças', keywords: ['alternativa planilha google', 'controle gastos sem planilha', 'app financeiro vs planilha'] },
   { type: 'alternativas', title: '5 Alternativas ao Minhas Economias', keywords: ['alternativa minhas economias', 'app controle gastos grátis', 'minhas economias alternativa'] },
-  { type: 'melhores', title: `7 Melhores Apps de Controle Financeiro ${CURRENT_YEAR}`, keywords: ['melhor app finanças', 'app controle gastos', 'app financeiro 2026', 'melhor app financeiro'] },
+  { type: 'melhores', title: `7 Melhores Apps de Controle Financeiro ${CURRENT_YEAR}`, keywords: ['melhor app finanças', 'app controle gastos', `app financeiro ${CURRENT_YEAR}`, 'melhor app financeiro'] },
   { type: 'melhores', title: '5 Melhores Apps para Orçamento Familiar', keywords: ['app orçamento familiar', 'controle gastos família', 'app financeiro família'] },
   { type: 'melhores', title: '6 Melhores Apps Financeiros para Freelancers', keywords: ['app financeiro freelancer', 'controle gastos autônomo', 'app finanças pj'] },
   { type: 'melhores', title: '5 Melhores Apps Financeiros que Funcionam Offline', keywords: ['app financeiro offline', 'controle gastos sem internet', 'app offline seguro'] },

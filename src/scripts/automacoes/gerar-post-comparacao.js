@@ -19,9 +19,9 @@ const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const COMPARACOES = [
   { a: 'CDB', b: 'Tesouro Selic', keywords: ['cdb vs tesouro selic', 'onde investir', 'renda fixa comparação', 'qual rende mais cdb ou tesouro'] },
   { a: 'Poupança', b: 'CDB com liquidez diária', keywords: ['poupança vs cdb', 'vale a pena poupança', 'melhor que poupança', 'onde guardar dinheiro'] },
-  { a: 'Nubank', b: 'Inter', keywords: ['nubank vs inter', 'melhor conta digital', 'conta digital gratuita', 'nubank ou inter 2026'] },
+  { a: 'Nubank', b: 'Inter', keywords: ['nubank vs inter', 'melhor conta digital', 'conta digital gratuita', `nubank ou inter ${CURRENT_YEAR}`] },
   { a: 'Cartão de crédito', b: 'Cartão de débito', keywords: ['crédito vs débito', 'vantagens cartão crédito', 'quando usar débito'] },
-  { a: 'Aluguel', b: 'Financiamento', keywords: ['alugar ou financiar', 'vale a pena financiar imóvel', 'aluguel vs financiamento 2026'] },
+  { a: 'Aluguel', b: 'Financiamento', keywords: ['alugar ou financiar', 'vale a pena financiar imóvel', `aluguel vs financiamento ${CURRENT_YEAR}`] },
   { a: 'Renda fixa', b: 'Renda variável', keywords: ['renda fixa vs variável', 'onde investir iniciante', 'diferença renda fixa variável'] },
   { a: 'PIX', b: 'TED e DOC', keywords: ['pix vs ted', 'diferença pix ted', 'pix é melhor que ted'] },
   { a: 'Tesouro IPCA+', b: 'Tesouro Prefixado', keywords: ['ipca vs prefixado', 'tesouro direto qual escolher', 'proteção inflação'] },
