@@ -12,7 +12,7 @@ featured: false
 locale: "en"
 translationKey: "7-financial-mistakes"
 seo:
-  metaTitle: "7 Beginner Financial Mistakes [How to Avoid in 2025]"
+  metaTitle: "7 Beginner Financial Mistakes [How to Avoid in 2026]"
   metaDescription: "Learn about the 7 most common financial mistakes and how to avoid them. Practical tips for anyone starting to organize their finances."
   keywords: ["financial mistakes", "finance for beginners", "how to save money", "financial control"]
 ---

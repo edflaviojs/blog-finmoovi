@@ -12,7 +12,7 @@ featured: true
 locale: "es"
 translationKey: "personal-budget"
 seo:
-  metaTitle: "Cómo Crear un Presupuesto Personal en 5 Pasos [Guía 2025]"
+  metaTitle: "Cómo Crear un Presupuesto Personal en 5 Pasos [Guía 2026]"
   metaDescription: "Aprende a crear un presupuesto personal eficiente en 5 pasos simples. Método práctico para controlar gastos y ahorrar dinero."
   keywords: ["presupuesto personal", "cómo hacer presupuesto", "control financiero", "planilla de gastos"]
 ---

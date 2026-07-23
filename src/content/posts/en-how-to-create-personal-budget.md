@@ -12,7 +12,7 @@ featured: true
 locale: "en"
 translationKey: "personal-budget"
 seo:
-  metaTitle: "How to Create a Personal Budget in 5 Steps [2025 Guide]"
+  metaTitle: "How to Create a Personal Budget in 5 Steps [2026 Guide]"
   metaDescription: "Learn how to create an efficient personal budget in 5 simple steps. A practical method to control expenses and save money."
   keywords: ["personal budget", "how to budget", "financial control", "expense tracker"]
 ---

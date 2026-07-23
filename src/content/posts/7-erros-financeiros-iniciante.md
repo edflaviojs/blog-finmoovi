@@ -13,7 +13,7 @@ featured: false
 locale: "pt"
 translationKey: "7-financial-mistakes"
 seo:
-  metaTitle: "7 Erros Financeiros de Iniciante [Como Evitar em 2025]"
+  metaTitle: "7 Erros Financeiros de Iniciante [Como Evitar em 2026]"
   metaDescription: "Conheça os 7 erros financeiros mais comuns e aprenda a evitá-los. Dicas práticas para quem está começando a organizar as finanças."
   keywords: ["erros financeiros", "finanças para iniciantes", "como economizar", "controle financeiro"]
 ---
