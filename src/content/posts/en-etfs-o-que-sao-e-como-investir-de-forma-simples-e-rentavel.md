@@ -19,7 +19,7 @@ seo:
 
 ## What ETFs Are
 
-[ETF](/en/glossario/en-etf) stands for **Exchange Traded Fund**, a market‑traded index fund. In simple terms, an ETF bundles a set of assets – stocks, bonds, commodities – and tracks the performance of an index, such as the Ibovespa or the S&P 500. Each ETF share can be bought or sold on the exchange just like a regular [stock](/en/glossario/en-stock), which provides convenience and [liquidity](/en/glossario/en-liquidez).
+[ETF](/en/glossario/en-etf) stands for **Exchange Traded Fund**, a market‑traded index fund. In simple terms, an ETF bundles a set of assets – stocks, bonds, commodities – and tracks the performance of an index, such as the Ibovespa or the S&P 500. Each ETF share can be bought or sold on the exchange just like a regular [stock](/en/glossario/en-acoes), which provides convenience and [liquidity](/en/glossario/en-liquidez).
 
 > **First appearance:** “ETF” (Exchange Traded Fund) – a fund that replicates an index and trades like a stock.
 

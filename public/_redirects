@@ -83,3 +83,14 @@
 /glossario/taxa  /glossario/taxa-financeira  301
 /en/glossario/en-taxa  /en/glossario/en-taxa-financeira  301
 /es/glossario/es-taxa  /es/glossario/es-taxa-financeira  301
+
+# Despublicacao de termos ruins do glossario - 2026-07-23
+# uro: termo inexistente em financas (inventado pelo LLM) -> indice do glossario
+/glossario/uro  /glossario/  301
+/en/glossario/en-uro  /en/glossario/  301
+/es/glossario/es-uro  /es/glossario/  301
+
+# stock: near-duplicata de acoes -> termo correto
+/glossario/stock  /glossario/acoes  301
+/en/glossario/en-stock  /en/glossario/en-acoes  301
+/es/glossario/es-stock  /es/glossario/es-acoes  301

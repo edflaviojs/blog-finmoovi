@@ -21,7 +21,7 @@ Imagine you want to buy a property worth $25,000 (approximately R$ 200,000). You
 ## Practical Examples
 Let's consider two examples to illustrate how alavancagem can work in practice:
 
-- **Example 1: [Stock](/en/glossario/en-stock) Investment**
+- **Example 1: [Stock](/en/glossario/en-acoes) Investment**
   You invest $1,250 (approximately R$ 10,000) in stocks and use $2,500 (approximately R$ 20,000) borrowed to buy more stocks. If the stock value increases by 20%, you will have a profit of $750 (approximately R$ 6,000) (20% of $3,750), which represents a 60% return on your initial investment of $1,250.
 
 ![Practical Examples](/images/glossario/en-alavancagem-inline-3.webp)

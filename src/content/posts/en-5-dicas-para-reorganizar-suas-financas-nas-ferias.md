@@ -27,7 +27,7 @@ Vacations offer a relatively long period to focus on yourself and your financial
 
 ## Tips to Reorganize Your Finances
 Here are some practical tips to help you start reorganizing your finances during your vacation:
-1. **Take [Stock](/en/glossario/en-stock)**: Start by taking stock of your current financial situation. Write down all your income and expenses, including bills, debts, and any other recurring expenses. This will help you understand where your money is going.
+1. **Take Stock**: Start by taking stock of your current financial situation. Write down all your income and expenses, including bills, debts, and any other recurring expenses. This will help you understand where your money is going.
 2. **Create or Adjust a Budget**: Based on your stocktake, create a budget that meets your needs and goals. Make sure to include an [emergency fund](/en/glossario/en-reserva-de-emergencia) and funds for leisure and entertainment.
 3. **Prioritize Debt**: If you have debt, such as credit cards or loans, prioritize paying them off. Start with the debts with the highest value or those with the highest interest rates.
 4. **Increase Your Savings**: Set savings goals, whether for emergencies, long-term goals, or specific purchases. Try to increase your savings gradually.

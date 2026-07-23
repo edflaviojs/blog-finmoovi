@@ -26,7 +26,7 @@ Content to translate:
 ${body}
 `;
 
-  const result = await generateText(prompt, { maxTokens: 2000, temperature: 0.2 });
+  const result = await generateText(prompt, { maxTokens: 4000, temperature: 0.2 });
   return result.trim();
 }
 

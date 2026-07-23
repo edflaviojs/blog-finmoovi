@@ -82,7 +82,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 - **Tesouro Selic:** 30 % (R$ 153,00) – immediate liquidity.  
 - **CDBs from mid‑size banks:** 20 % (R$ 102,00) – higher [yield](/en/glossario/en-yield) than the Selic rate.  
-- **ETF BOVA11 (IBOVESPA):** 25 % (R$ 128,00) – exposure to the [stock](/en/glossario/en-stock) market.  
+- **ETF BOVA11 (IBOVESPA):** 25 % (R$ 128,00) – exposure to the [stock](/en/glossario/en-acoes) market.  
 - **FIIs (e.g., KNRI11):** 20 % (R$ 102,00) – monthly rental income.  
 - **Cryptocurrencies:** 5 % (R$ 25,00) – controlled risk, can be used as “upside potential”.
 

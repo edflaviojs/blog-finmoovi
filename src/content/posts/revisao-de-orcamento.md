@@ -27,7 +27,7 @@ Revisar seu [orçamento](/posts/como-criar-orcamento-pessoal) é importante porq
 
 Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com aluguel, R$ 1.000 com comida e R$ 500 com transporte. Isso deixa R$ 1.500 para outros gastos e investimentos. No entanto, se a inflação aumentou 10% nos últimos 6 meses, o valor do seu dinheiro diminuiu. Você precisará ajustar seus gastos e investimentos para manter o mesmo padrão de vida.
 
-![Por que revisar o [orçamento](/posts/metodo-50-30-20-para-orcamento)?](/images/posts/revisao-de-orcamento-2.svg)
+![Por que revisar o orçamento?](/images/posts/revisao-de-orcamento-2.svg)
 
 
 
@@ -57,7 +57,7 @@ Aqui estão algumas dicas para manter seu orçamento em ordem:
 *   Invista em sua [educação financeira](/glossario/educacao-financeira) para tomar decisões informadas
 *   Use um aplicativo de gestão de finanças para ajudar a rastrear seus gastos e investimentos
 
-![Dicas para manter seu [orçamento](/posts/dicas-para-controlar-gastos-no-cartao-de-credito) em ordem](/images/posts/revisao-de-orcamento-4.webp)
+![Dicas para manter seu orçamento em ordem](/images/posts/revisao-de-orcamento-4.webp)
 
 
 

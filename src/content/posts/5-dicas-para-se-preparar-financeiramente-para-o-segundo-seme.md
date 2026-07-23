@@ -48,7 +48,7 @@ Gerenciar dívidas e gastos é fundamental para alcançar suas metas financeiras
 3. **Corte gastos desnecessários**: Isso inclui gastos com itens que não são essenciais, como compras impulsivas.
 4. **Use o método da "envelope"**: Separe seu dinheiro em envelopes para diferentes categorias de gastos, como alimentação e transporte.
 
-![Criando um [Orçamento](/posts/metodo-50-30-20-para-orcamento) para o Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
+![Criando um Orçamento para o Segundo Semestre](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
 
 

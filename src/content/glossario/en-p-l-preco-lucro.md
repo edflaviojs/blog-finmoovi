@@ -9,7 +9,7 @@ publishedAt: 2026-06-09
 ---
 
 ## Introduction to P/L
-The P/L, or Price/Earnings, is an essential tool for investors who want to evaluate the value of a [stock](/en/glossario/en-stock) in relation to the company's financial performance. It is calculated by dividing the current stock price by the earnings per share of the company. In this article, we will explore how P/L works, how it is calculated, and why it is important for investors.
+The P/L, or Price/Earnings, is an essential tool for investors who want to evaluate the value of a [stock](/en/glossario/en-acoes) in relation to the company's financial performance. It is calculated by dividing the current stock price by the earnings per share of the company. In this article, we will explore how P/L works, how it is calculated, and why it is important for investors.
 
 ## How P/L is Calculated
 The calculation of P/L is relatively simple. You divide the current stock price by the earnings per share of the company. For example, if the price of a stock is $6.50 (approximately R$ 50,00) and the earnings per share is $0.65 (approximately R$ 5,00), the P/L would be 10 (6.50 / 0.65 = 10). This means that investors are paying $10 for every $1 of earnings per share.

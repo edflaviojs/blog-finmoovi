@@ -48,7 +48,7 @@ Managing debt and expenses is crucial to achieving your financial goals. Here ar
 3. **Cut unnecessary expenses**: This includes expenses for non-essential items, such as impulse purchases.
 4. **Use the envelope method**: Divide your money into envelopes for different expense categories, such as food and transportation.
 
-![Creating a [Budget](/en/posts/en-how-to-create-personal-budget) for the Second Half of the Year](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
+![Creating a Budget for the Second Half of the Year](/images/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme-4.webp)
 
 
 

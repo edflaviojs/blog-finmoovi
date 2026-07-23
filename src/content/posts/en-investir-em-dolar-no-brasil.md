@@ -20,7 +20,7 @@ seo:
 ## Introduction to [Dollar](/en/posts/en-quotes-semana-1-july-2026) [Investment](/en/posts/en-montando-carteira-diversificada-com-r-500)
 Investing in dollars can be a way to diversify your [investment](/en/posts/en-tesouro-direto-para-iniciantes) portfolio and protect your assets against fluctuations in the Brazilian [economy](/en/posts/en-30-day-rule-for-purchases). However, it's essential to understand how the [dollar](/en/posts/en-quotes-semana-1-june-2026) market works and what risks and benefits are involved. Let's start with the basics: what is the US dollar and why is it important for Brazilian investors?
 
-The US dollar is the official currency of the United States and is widely used in international transactions. In Brazil, the dollar is used as a form of investment, as it can be bought and sold on [stock](/en/glossario/en-stock) exchanges and currency exchange offices. If you're considering investing in dollars, it's crucial to assess whether it makes sense for your investor profile and financial goals.
+The US dollar is the official currency of the United States and is widely used in international transactions. In Brazil, the dollar is used as a form of investment, as it can be bought and sold on [stock](/en/glossario/en-acoes) exchanges and currency exchange offices. If you're considering investing in dollars, it's crucial to assess whether it makes sense for your investor profile and financial goals.
 
 ## How to Invest in Dollars in Brazil
 There are several ways to invest in dollars in Brazil, including:

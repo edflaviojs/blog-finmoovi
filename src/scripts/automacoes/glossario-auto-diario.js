@@ -36,7 +36,7 @@ const POPULAR_TERMS = {
   P: ['poupança', 'pix', 'patrimônio', 'plano de saúde', 'previdência'],
   Q: ['qualidade de ativos', 'quota de consórcio', 'quociente de liquidez', 'quick ratio', 'quantitative easing'],
   R: ['renda fixa', 'renda variável', 'risco financeiro', 'reserva de valor', 'robo advisor'],
-  S: ['selic', 'stock', 'swaps', 'spread', 'sustentabilidade'],
+  S: ['selic', 'stop loss', 'swaps', 'spread', 'sustentabilidade'],
   T: ['tesouro direto', 'taxa financeira', 'trading', 'trust', 'ticker'],
   U: ['usura', 'unit', 'underlying', 'uptick', 'utilidade marginal'],
   V: ['valor financeiro', 'volatilidade', 'venda a descoberto', 'varejo', 'valuation'],

@@ -26,7 +26,7 @@ Imagine que você está sempre viajando a trabalho, comprando coisas em diferent
 ## A Solução: [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)
 Mas, e se eu disser que há uma solução para esse problema? É o FinMoovi, um aplicativo que ajuda a controlar as finanças de forma fácil e eficaz. Com o FinMoovi, você pode registrar suas despesas usando a funcionalidade de Smart Capture por voz ou OCR, e o app irá categorizar automaticamente suas despesas. É como ter um assistente pessoal que ajuda a organizar seus gastos e a entender onde seu dinheiro está sendo gasto.
 
-![A Dor de Não Saber Onde o [Dinheiro](/posts/como-criar-uma-reserva-de-emergencia) Vai](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-2.webp)
+![A Dor de Não Saber Onde o Dinheiro Vai](/images/posts/voce-tambem-esquece-de-anotar-seus-gastos-2.webp)
 
 
 

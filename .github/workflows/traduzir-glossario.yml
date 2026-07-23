@@ -39,7 +39,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: node src/scripts/automacoes/traduzir-glossario.js
-        timeout-minutes: 30
+        timeout-minutes: 60
 
       - name: Commit and push
         run: |
