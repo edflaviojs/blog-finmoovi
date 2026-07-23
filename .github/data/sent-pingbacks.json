@@ -1492,5 +1492,137 @@
     "target": "https://www.bcb.gov.br",
     "status": "no-endpoint",
     "sentAt": "2026-07-21T15:44:28.788Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:53.818Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:53.930Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/previdencia-privada-2026-vale-a-pena-guia-pratico/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:54.783Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/previdencia-privada-2026-vale-a-pena-guia-pratico/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:55.018Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/previdencia-privada-2026-vale-a-pena-guia-pratico/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:55.135Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:55.192Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:56.597Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:56.713Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:56.807Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/previdencia-privada-2026-vale-a-pena-guia-pratico/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:56.856Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/previdencia-privada-2026-vale-a-pena-guia-pratico/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:56.959Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/previdencia-privada-2026-vale-a-pena-guia-pratico/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:57.069Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:57.116Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:57.712Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:57.806Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/previdencia-privada-2026-vale-a-pena-guia-pratico/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:57.851Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/previdencia-privada-2026-vale-a-pena-guia-pratico/",
+    "target": "https://www.tesourodireto.com.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:57.929Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/previdencia-privada-2026-vale-a-pena-guia-pratico/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:58.030Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:58.131Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim/",
+    "target": "https://www.bcb.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:58.188Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim/",
+    "target": "https://www.ibge.gov.br",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:58.761Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-07-23T15:55:58.854Z"
   }
 ]
