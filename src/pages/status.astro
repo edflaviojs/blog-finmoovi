@@ -214,7 +214,7 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
 
   .status-title {
     font-size: var(--text-3xl);
-    background: linear-gradient(135deg, #58a6ff, #bc8cff);
+    background: var(--gradient-hero);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -232,9 +232,9 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
     max-width: 760px;
     margin: 0 auto var(--space-8);
     padding: var(--space-5) var(--space-6);
-    background: #161b22;
-    border: 1px solid #30363d;
-    border-left: 3px solid #d29922;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    border-left: 3px solid var(--accent-yellow);
     border-radius: var(--radius-lg);
   }
 
@@ -259,7 +259,7 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
     font-size: var(--text-sm);
     color: var(--text-secondary);
     padding: var(--space-1) 0;
-    border-bottom: 1px solid #21262d;
+    border-bottom: 1px solid var(--border-muted);
   }
 
   .status-pendencias li:last-child {
@@ -276,13 +276,13 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
 
   .status-card {
     padding: var(--space-5) var(--space-6);
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
     border-radius: var(--radius-lg);
   }
 
   .status-card.has-failures {
-    border-color: #f85149;
+    border-color: var(--accent-red);
   }
 
   .card-head {
@@ -307,7 +307,7 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
   }
 
   .card-counters .fail {
-    color: #f85149;
+    color: var(--accent-red);
     font-weight: 600;
   }
 
@@ -323,7 +323,7 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
   }
 
   .failures a {
-    color: #f85149;
+    color: var(--accent-red);
     font-weight: 600;
     text-decoration: none;
   }
@@ -334,7 +334,7 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
 
   details {
     margin-top: var(--space-3);
-    border-top: 1px solid #21262d;
+    border-top: 1px solid var(--border-muted);
     padding-top: var(--space-2);
   }
 
@@ -362,7 +362,7 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
   }
 
   details a {
-    color: #58a6ff;
+    color: var(--text-link);
     text-decoration: none;
   }
 
@@ -381,8 +381,8 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
     margin-left: var(--space-2);
     font-size: var(--text-xs, 0.75rem);
     color: var(--text-tertiary, #8b949e);
-    background: #0d1117;
-    border: 1px solid #30363d;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-default);
     border-radius: 10px;
     padding: 0 8px;
   }
@@ -398,8 +398,8 @@ const localeFlag: Record<string, string> = { pt: '🇧🇷', en: '🇺🇸', es:
     max-width: 480px;
     margin: var(--space-12) auto;
     padding: var(--space-10) var(--space-6);
-    background: #161b22;
-    border: 1px dashed #30363d;
+    background: var(--bg-secondary);
+    border: 1px dashed var(--border-default);
     border-radius: var(--radius-lg);
   }
 
