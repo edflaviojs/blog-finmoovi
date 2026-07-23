@@ -50,7 +50,7 @@ La lógica es simple: prestas [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-en
 
 ### Desventajas de la renta fija  
 
-1. **Rentabilidad limitada** – Cuando la [inflación](/es/glossario/es-inflacao) sube, la renta fija puede quedar atrás de inversiones más agresivas.  
+1. **Rentabilidad limitada** – Cuando la [inflación](/es/glossario/es-inflacao) sube, la renta fija puede quedar atrás de [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) más agresivas.  
 2. **Dependencia de la tasa [Selic](/es/posts/es-cotizaciones-semana-3-julio-2026)** – Si el Banco Central mantiene los intereses bajos por mucho tiempo, los retornos caen.  
 3. **Posible “costo de oportunidad”** – [Dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) atrapado en un CDB a 5 años rinde menos que acciones que pueden subir 30 % en seis meses.  
 
@@ -145,7 +145,7 @@ No existe un “mejor” absoluto; la elección depende **de tu perfil, plazo y 
 
 Por otro lado, si tienes **tiempo de sobra**, aceptas la montaña rusa de los mercados y buscas retornos que superen la inflación de forma cómoda, la **renta variable** puede ser la principal palanca de crecimiento. La recomendación más equilibrada suele ser **mezclar ambos mundos**: mantener una porción segura (renta fija) y destinar el resto a oportunidades de mayor retorno (renta variable).  
 
-Independientemente de la elección, la **gestión y el seguimiento** son esenciales. Aquí es donde el **[FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** entra como tu aliado: la app permite registrar cada inversión, seguir la rentabilidad en tiempo real, definir metas a corto y largo plazo y recibir alertas cuando la asignación se salga del plan. Así, controlas tus finanzas sin necesidad de ser analista de mercado.  
+Independientemente de la elección, la **gestión y el seguimiento** son esenciales. Aquí es donde el **[FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** entra como tu aliado: la app permite registrar cada [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico), seguir la rentabilidad en tiempo real, definir metas a corto y largo plazo y recibir alertas cuando la asignación se salga del plan. Así, controlas tus finanzas sin necesidad de ser analista de mercado.  
 
 > **Consejo práctico:** Comienza con un 70 % en renta fija y 30 % en renta variable. Conforme ganes confianza y observes la volatilidad, ajusta la proporción hasta encontrar el punto que combine seguridad y potencial de ganancia.  
 

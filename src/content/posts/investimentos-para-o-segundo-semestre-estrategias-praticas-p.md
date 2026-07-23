@@ -76,7 +76,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 |------------------------|-------|-----------------------------|
 | **[Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)** ([renda fixa](/glossario/renda-fixa)) | Baixo | Reserva de emergência e aporte de segurança |
 | **CDBs com [liquidez](/glossario/liquidez) diária** | Baixo‑médio | Complemento ao [Selic](/glossario/selic), rendimento acima da poupança |
-| **[Fundos](/glossario/fundos) de índice (ETF) de [ações](/glossario/acoes)** | Médio‑alto | Exposição a setores sazonais (varejo, energia) |
+| **[Fundos](/glossario/fundos) de índice ([ETF](/glossario/etf)) de [ações](/glossario/acoes)** | Médio‑alto | Exposição a setores sazonais (varejo, energia) |
 | **[Fundos imobiliários](/glossario/fundos-imobiliarios) (FIIs)** | Médio | Recebimento de aluguéis mensais, boa para quem quer renda passiva |
 | **Criptomoedas ou ativos alternativos** | Alto | Apenas 5 % da carteira, para quem aceita volatilidade |
 
@@ -112,12 +112,12 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 
 ### Investidor conservador
 
-- **80 % em Tesouro Selic e CDBs**, 15 % em FIIs de alta [qualidade](/glossario/qualidade), 5 % em ETF de ações.
+- **80 % em Tesouro [Selic](/posts/cotacoes-semana-2-julho-2026) e CDBs**, 15 % em FIIs de alta [qualidade](/glossario/qualidade), 5 % em ETF de ações.
 - Foco na preservação de capital e em rendimentos estáveis.
 
 ### Investidor moderado
 
-- **50 % em renda fixa (Selic + CDBs)**, 30 % em ETFs, 15 % em FIIs, 5 % em ativos alternativos.
+- **50 % em renda fixa ([Selic](/posts/cotacoes-semana-3-julho-2026) + CDBs)**, 30 % em ETFs, 15 % em FIIs, 5 % em ativos alternativos.
 - Busca equilíbrio entre segurança e potencial de valorização.
 
 ### Investidor agressivo

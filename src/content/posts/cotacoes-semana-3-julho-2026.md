@@ -63,7 +63,7 @@ Em resumo, a Selic alta ainda protege a rentabilidade da renda fixa, mas também
 
 ## 3. Dica Prática para o Investidor Pessoa Física  
 
-**Rebalanceie sua carteira a cada trimestre**. Muitas pessoas deixam o “mix” de ativos parado por anos, esquecendo que a [volatilidade](/glossario/volatilidade) do mercado pode mudar a proporção de [risco e retorno](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel). Use a regra de 60 % em renda fixa (CDBs, Tesouro [IPCA](/glossario/ipca)) e 40 % em [renda variável](/glossario/renda-variavel) (ações, fundos imobiliários). Se, ao fim de três meses, a renda fixa passou de 60 % para 70 % por causa de valorização dos títulos, venda parte desses títulos e compre mais ações ou fundos. Isso mantém o perfil de risco alinhado ao seu objetivo e ainda aproveita a alta dos juros.
+**Rebalanceie sua carteira a cada trimestre**. Muitas pessoas deixam o “mix” de ativos parado por anos, esquecendo que a [volatilidade](/glossario/volatilidade) do mercado pode mudar a proporção de [risco e retorno](/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel). Use a regra de 60 % em renda fixa (CDBs, Tesouro [IPCA](/glossario/ipca)) e 40 % em [renda variável](/glossario/renda-variavel) (ações, [fundos imobiliários](/posts/fundos-imobiliarios-para-iniciantes-guia-completo)). Se, ao fim de três meses, a renda fixa passou de 60 % para 70 % por causa de valorização dos títulos, venda parte desses títulos e compre mais ações ou fundos. Isso mantém o perfil de risco alinhado ao seu objetivo e ainda aproveita a alta dos juros.
 
 ---
 
@@ -83,7 +83,7 @@ Gerenciar investimentos em diferentes moedas pode ser confuso, mas o **[FinMoovi
 
 ---
 
-Em síntese, a semana foi de leve recuperação do real frente ao dólar e ao euro, a Selic segue firme e protege a renda fixa, e a estratégia de rebalanceamento trimestral pode ser seu melhor “seguro” contra volatilidade. Prepare-se para os próximos anúncios econômicos e, se precisar de ajuda para monitorar tudo, dê uma olhada no FinMoovi. Boa semana de investimentos!
+Em síntese, a semana foi de leve recuperação do real frente ao dólar e ao euro, a Selic segue firme e protege a renda fixa, e a estratégia de rebalanceamento trimestral pode ser seu melhor “seguro” contra volatilidade. Prepare-se para os próximos anúncios econômicos e, se precisar de ajuda para monitorar tudo, dê uma olhada no [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro). Boa semana de investimentos!
 
 
 ---

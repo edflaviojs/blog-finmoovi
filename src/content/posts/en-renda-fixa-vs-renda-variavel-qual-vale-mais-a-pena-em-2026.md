@@ -94,12 +94,12 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 | **Return predictability** | High (pre‑defined rates) | Low (market‑dependent) |
 | **Capital loss risk** | Low to moderate (FGC, sovereign risk) | High to moderate (company, sector) |
 | **Liquidity** | Generally high ([Selic](/en/posts/en-quotes-semana-3-june-2026) Treasury, CDBs) | Varies (stocks can be highly liquid, FIIs less) |
-| **Average return (2024‑2025)** | 12 %‑13 % a year (CDI, Selic) | 12 %‑20 % a year (Ibovespa, ETFs) |
+| **Average return (2024‑2025)** | 12 %‑13 % a year (CDI, [Selic](/en/posts/en-quotes-semana-4-june-2026)) | 12 %‑20 % a year (Ibovespa, ETFs) |
 | **Inflation protection** | Moderate (depends on index) | Good (companies can pass inflation on) |
 | **Tax implication** | Regressive IR (15 %‑22.5 %) or exempt (LCI/LCA) | IR of 15 % (stocks) or 20 % (others) |
 | **Management complexity** | Simple (just pick the bond) | More complex (market analysis) |
 | **Suitable for** | Conservatives, short/medium term, emergency reserve | Aggressive, medium/long term, growth seekers |
-| **Product example** | Selic Treasury 2026 (12.8 % a year) | BOVA11 [ETF](/en/glossario/en-etf) (Ibovespa) – 15 % a year |
+| **Product example** | [Selic](/en/posts/en-quotes-semana-5-june-2026) Treasury 2026 (12.8 % a year) | BOVA11 [ETF](/en/glossario/en-etf) (Ibovespa) – 15 % a year |
 
 ![Comparative Table](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-4.webp)
 

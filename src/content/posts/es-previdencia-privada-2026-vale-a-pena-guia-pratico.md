@@ -76,9 +76,9 @@ Estos números asumen que **no haces ningún rescate** antes de la jubilación y
 |----------|------------------------------|----------|--------|------------|
 | **Previsión (PGBL/VGBL)** | 6 % – 7 % al año (según el fondo) | Baja – solo rescate en la jubilación o casos específicos | Comisiones de admin 1,5‑2,5 % | Planificación de jubilación, beneficio fiscal |
 | **[CDB](/es/glossario/es-cdb) (Certificado de Depósito Bancario)** | 100 % del CDI (aprox. 5,5 % al año) | Media – rescate después de 30 días | Comisiones casi nulas | Quien busca plazo corto a medio |
-| **Tesoro [Selic](/es/glossario/es-selic)** | 100 % de la tasa Selic (aprox. 5,75 % al año) | Alta – rescate diario | Costos de custodia ~0,2 % al año | Perfil conservador, reserva de emergencia |
+| **Tesoro [Selic](/es/glossario/es-selic)** | 100 % de la tasa [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026) (aprox. 5,75 % al año) | Alta – rescate diario | Costos de custodia ~0,2 % al año | Perfil conservador, reserva de emergencia |
 
-La principal ventaja de la previsión es el **beneficio fiscal** (en el caso del PGBL) y la posibilidad de transformar el saldo en una renta mensual garantizada. Sin embargo, si tu prioridad es **acceso rápido al [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado)**, el Tesoro Selic o el CDB son más adecuados.  
+La principal ventaja de la previsión es el **beneficio fiscal** (en el caso del PGBL) y la posibilidad de transformar el saldo en una renta mensual garantizada. Sin embargo, si tu prioridad es **acceso rápido al [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado)**, el Tesoro [Selic](/es/posts/es-cotizaciones-semana-1-junio-2026) o el CDB son más adecuados.  
 
 ## Riesgos y cuidados
 

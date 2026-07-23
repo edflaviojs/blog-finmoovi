@@ -104,7 +104,7 @@ Llevar snacks, preparar el desayuno en el propio alojamiento o hacer compras en 
 - Cena (restaurante barato): R$ 25  
 - Total: **R$ 45**  
 
-Si gastas R$ 80 en restaurantes, la diferencia son **R$ 35** por día. En 5 días, eso representa **R$ 175** de ahorro.  
+Si gastas R$ 80 en restaurantes, la diferencia son **R$ 35** por día. En 5 días, eso representa **R$ 175** de [ahorro](/es/posts/es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales).  
 
 ---  
 

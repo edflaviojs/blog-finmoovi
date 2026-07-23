@@ -46,7 +46,7 @@ To start applying the 50-30-20 method, you need to have a clear view of your cur
 
 
 ## Saving and Investing
-The savings part is crucial for your financial future. Here, you can consider different options to apply your [money](/en/posts/en-creating-an-emergency-fund).
+The [savings](/en/posts/en-how-to-save-at-the-grocery-store-in-2026-real-tips) part is crucial for your financial future. Here, you can consider different options to apply your [money](/en/posts/en-creating-an-emergency-fund).
 
 - **Savings:** A good option to start saving, as it is low-risk and easily accessible.
 - **[Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026):** There are several [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) options, such as [stocks](/en/glossario/en-acoes), [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) funds, debt securities, etc. It's essential to understand the [risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and [benefits](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) of each option before investing.

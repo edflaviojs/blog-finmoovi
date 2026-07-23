@@ -36,7 +36,7 @@ The [second half of the year](/en/posts/en-5-dicas-para-se-preparar-financeirame
 Historically, some sectors tend to rise in the second half – tourism, retail, energy, and technology. This “high season” can create profit opportunities, but it also brings [volatility](/en/glossario/en-volatilidade) that needs attention.
 
 ### 2. Annual goal‑adjustment point  
-If you haven’t yet hit your savings or return target, the second half is the last chance to correct the course before the fiscal year ends.
+If you haven’t yet hit your [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) or return target, the second half is the last chance to correct the course before the fiscal year ends.
 
 ### 3. Preparation for the next year  
 Building an emergency reserve and allocating [money](/en/posts/en-30-day-rule-for-purchases) to long‑term assets already in the second half guarantees peace of mind to start 2025 with a ready‑to‑go portfolio.
@@ -73,7 +73,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 | Asset type                               | Risk       | Recommendation for 2nd half |
 |------------------------------------------|------------|------------------------------|
 | **Tesouro [Selic](/en/glossario/en-selic)** (fixed income)        | Low        | Emergency reserve and safety contribution |
-| **CDBs with daily [liquidity](/en/glossario/en-liquidez)**           | Low‑medium | Complement to Selic, returns above savings |
+| **CDBs with daily [liquidity](/en/glossario/en-liquidez)**           | Low‑medium | Complement to Selic, returns above [savings](/en/posts/en-how-to-save-at-the-grocery-store-in-2026-real-tips) |
 | **Index funds ([ETF](/en/glossario/en-etf)) of stocks**         | Medium‑high| Exposure to seasonal sectors (retail, energy) |
 | **Real‑estate funds (FIIs)**             | Medium     | Monthly rent receipts, good for [passive income](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo) |
 | **Cryptocurrencies or alternative assets** | High       | Only 5 % of the portfolio, for those who accept volatility |

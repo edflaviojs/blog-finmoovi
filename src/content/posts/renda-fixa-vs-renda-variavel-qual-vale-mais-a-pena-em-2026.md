@@ -26,7 +26,7 @@ Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro sal
 
 ## Como funciona a renda fixa
 
-A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario/juros) ou rendimento) já está **pré‑definida** ou tem um limite máximo. O investidor sabe, no momento da [aplicação](/glossario/aplicacao), qual será a [taxa](/glossario/taxa) de retorno ou, no mínimo, qual o intervalo de variação. Os principais produtos são:
+A renda fixa engloba [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) nos quais a remuneração ([juros](/glossario/juros) ou rendimento) já está **pré‑definida** ou tem um limite máximo. O investidor sabe, no momento da [aplicação](/glossario/aplicacao), qual será a [taxa](/glossario/taxa) de retorno ou, no mínimo, qual o intervalo de variação. Os principais produtos são:
 
 ![Como funciona a renda fixa](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-2.webp)
 
@@ -39,7 +39,7 @@ A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario
 | LCIs/LCAs (Letras de [Crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Imobiliário/Agrícola) | Bancos, corretoras | 107 % do CDI (≈ 13 % a.a.) | Isento de IR, FGC protege |
 | [Debêntures](/glossario/debentures) de empresas | Corretoras | 9 %‑12 % a.a. (dependendo rating) | Risco de crédito da empresa emissora |
 
-*Taxas baseadas em dados do Banco Central e do Tesouro Direto até dezembro de 2025.
+*Taxas baseadas em dados do Banco Central e do [Tesouro Direto](/posts/tesouro-direto-para-iniciantes) até dezembro de 2025.
 
 A lógica é simples: você empresta [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) (ou compra títulos) e recebe juros ao longo do tempo. O **principal** ([valor](/glossario/valor) investido) costuma ser devolvido no vencimento ou pode ser resgatado antes, dependendo do produto. Como a remuneração está atrelada a índices como o CDI ou a [Selic](/glossario/selic), a variação da taxa de juros no país afeta diretamente o retorno.
 

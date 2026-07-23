@@ -25,7 +25,7 @@ Para entender mejor la diferencia, imagine que usted gana $5.000 por mes y decid
 ## [Riesgos](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y Retornos
 Uno de los principales motivos por los que las personas optan por invertir en lugar de ahorrar es el potencial de retorno. [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de alto riesgo pueden ofrecer retornos más altos, pero también vienen con la posibilidad de pérdidas significativas. Por ejemplo, si usted invierte $1.000 en acciones y el mercado de acciones sube, usted puede ganar $1.500 o más. Sin embargo, si el mercado cae, usted puede perder una parte significativa de su [inversión](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico).
 
-Ahorrar, por otro lado, es generalmente más seguro, pero los retornos son menores. En una cuenta de ahorro, usted puede ganar alrededor de 0,5% a 1% de intereses al mes, lo que es una tasa de retorno relativamente baja.
+Ahorrar, por otro lado, es generalmente más seguro, pero los retornos son menores. En una cuenta de [ahorro](/es/posts/es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales), usted puede ganar alrededor de 0,5% a 1% de intereses al mes, lo que es una tasa de retorno relativamente baja.
 
 ![Riscos e Retornos](/images/posts/diferenca-entre-investir-e-poupar-2.webp)
 

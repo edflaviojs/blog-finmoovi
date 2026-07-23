@@ -73,14 +73,14 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 | Tipo de activo                     | Riesgo | Indicación para 2.º semestre |
 |------------------------------------|--------|-------------------------------|
 | **Tesoro [Selic](/es/glossario/es-selic)** (renta fija)     | Bajo   | Reserva de emergencia y aporte de seguridad |
-| **CDBs con [liquidez](/es/glossario/es-liquidez) diaria**       | Bajo‑medio | Complemento al Selic, rendimiento superior al [ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus) |
+| **CDBs con [liquidez](/es/glossario/es-liquidez) diaria**       | Bajo‑medio | Complemento al [Selic](/es/posts/es-cotizaciones-semana-1-julio-2026), rendimiento superior al [ahorro](/es/posts/es-como-usar-el-cashback-de-forma-inteligente-y-multiplicar-tus) |
 | **Fondos índice ([ETF](/es/glossario/es-etf)) de acciones**| Medio‑alto | Exposición a sectores estacionales (comercio, energía) |
 | **[Fondos inmobiliarios](/es/glossario/es-fundos-imobiliarios) (FIIs)**    | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
 | **Criptomonedas o activos alternativos** | Alto | Solo 5 % de la cartera, para quien acepta volatilidad |
 
 #### Ejemplo de asignación para quien gana R$ 3.500,00
 
-- **Tesoro Selic:** 30 % (R$ 153,00) – liquidez inmediata.  
+- **Tesoro [Selic](/es/posts/es-cotizaciones-semana-1-junio-2026):** 30 % (R$ 153,00) – liquidez inmediata.  
 - **CDBs de bancos medianos:** 20 % (R$ 102,00) – rentabilidad mayor que la tasa Selic.  
 - **ETF BOVA11 (IBOVESPA):** 25 % (R$ 128,00) – exposición al mercado accionario.  
 - **FIIs (ej.: KNRI11):** 20 % (R$ 102,00) – ingresos mensuales por alquileres.  

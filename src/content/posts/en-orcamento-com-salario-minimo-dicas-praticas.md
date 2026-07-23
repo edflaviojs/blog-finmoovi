@@ -56,7 +56,7 @@ Variable expenses, such as transportation and eating out, can be challenging to 
 ## Building [Savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet)
 Building [savings](/en/posts/en-how-to-use-cashback-wisely-and-multiply-your-income) is essential for dealing with unexpected expenses and achieving long-term financial goals. Here are some steps to get started:
 1. Set goals: Establish specific goals, such as creating an [emergency fund](/en/glossario/en-reserva-de-emergencia) or saving for a significant purchase.
-2. Automate: Set up automatic transfers from your checking account to your savings account.
+2. Automate: Set up automatic transfers from your checking account to your [savings](/en/posts/en-how-to-save-at-the-grocery-store-in-2026-real-tips) account.
 3. Gradually increase: Increase the amount saved over time, as your financial situation improves.
 
 ![Gerenciando Despesas Variáveis](/images/posts/orcamento-com-salario-minimo-dicas-praticas-3.webp)
