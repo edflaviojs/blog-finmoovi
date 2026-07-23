@@ -26,3 +26,6 @@ public/pagefind/
 
 # Automação Playwright do app ABANDONADA — contém arquivo sensível (passphrase). NUNCA commitar.
 app-capture/
+
+# Preview local do Relatório do Dia (--dry-run) — nunca commitar
+digest-preview.html

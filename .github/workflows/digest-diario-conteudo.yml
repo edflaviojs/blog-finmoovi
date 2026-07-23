@@ -3,14 +3,17 @@ name: Digest Diario de Conteudo (7h Lisboa)
 on:
   schedule:
     # Lisboa está em UTC+1 no verão (WEST) e UTC+0 no inverno (WET).
-    # Rodamos às 06h e 07h UTC; o passo abaixo só executa quando forem
-    # exatamente 07h em Lisboa — assim envia 1 e-mail/dia às 7h locais o ano todo.
-    - cron: '0 6 * * *'
-    - cron: '0 7 * * *'
+    # Dois crons fora do minuto :00 (menos atraso do GitHub): 05:40 UTC (verão)
+    # e 06:40 UTC (inverno) — ambos = ~06:40 em Lisboa. O guard abaixo decide pelo CRON QUE DISPAROU + offset
+    # atual de Lisboa — imune ao atraso de execução do GitHub (que chegava a ~2h
+    # e fazia o guard antigo por hora exata pular TODO envio agendado).
+    - cron: '40 5 * * *'
+    - cron: '40 6 * * *'
   workflow_dispatch:
 
 permissions:
   contents: read
+  actions: read # necessário p/ a seção "Workflows executados" do relatório (GET /actions/runs)
 
 concurrency:
   group: ${{ github.workflow }}
@@ -23,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
         with:
-          fetch-depth: 0 # historico completo p/ git log --since detectar os commits das ultimas 24h
+          fetch-depth: 0 # historico completo p/ git log --since/--until detectar os commits do dia anterior
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
@@ -33,17 +36,19 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
-      - name: Enviar digest (somente às 7h de Lisboa)
+      - name: Enviar relatório do dia (somente às ~6h40 de Lisboa)
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           DIGEST_TO: ${{ vars.DIGEST_TO || 'finmoovi@gmail.com' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_REPOSITORY já vem por padrão no runner (owner/repo)
         run: |
-          # Guarda de horário só no agendamento; execução manual (workflow_dispatch) sempre envia p/ teste.
+          # Guarda só no agendamento; execução manual (workflow_dispatch) sempre envia p/ teste.
+          # Decide pelo cron que disparou + offset de Lisboa — imune a atraso do GitHub.
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            HORA=$(TZ=Europe/Lisbon date +%H)
-            if [ "$HORA" != "07" ]; then
-              echo "Hora em Lisboa=$HORA — não são 07h. Pulando (evita e-mail duplicado)."
-              exit 0
-            fi
+            OFFSET=$(TZ=Europe/Lisbon date +%z)
+            CRON="${{ github.event.schedule }}"
+            if [ "$OFFSET" = "+0100" ] && [ "$CRON" != "40 5 * * *" ]; then echo "::notice::Cron de inverno pulado (verão)"; exit 0; fi
+            if [ "$OFFSET" = "+0000" ] && [ "$CRON" != "40 6 * * *" ]; then echo "::notice::Cron de verão pulado (inverno)"; exit 0; fi
           fi
           node src/scripts/automacoes/digest-diario-conteudo.js
