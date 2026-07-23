@@ -24,7 +24,7 @@ seo:
   keywords: ["investments","second half","2024","portfolio","Treasury Selic","CDB","ETF"]
 ---
 
-# [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) for the Second Half: Practical Strategies for 2024
+# [Investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) for the Second Half: Practical Strategies for 2026
 
 The [second half of the year](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) is usually busier: vacations, end‑of‑year parties, and the expectation of a new economic cycle. If you still don’t have a plan for the next six months, this article gives you a step‑by‑step roadmap to build a portfolio that blends safety and growth potential, using real‑life examples from everyday Brazil.
 
@@ -150,7 +150,7 @@ It’s possible through brokers that offer access to BDRs or overseas investment
 
 ## Conclusion
 
-The second half of 2024 offers a window of opportunities that goes far beyond vacations and holiday parties. By following the five steps – assess your situation, set horizons, choose assets, exploit seasonality, and monitor results – you create a portfolio that matches your profile and market demands. Use tools like **FinMoovi** to keep everything organized and don’t let daily hustle derail your investment plan.
+The second half of 2026 offers a window of opportunities that goes far beyond vacations and holiday parties. By following the five steps – assess your situation, set horizons, choose assets, exploit seasonality, and monitor results – you create a portfolio that matches your profile and market demands. Use tools like **FinMoovi** to keep everything organized and don’t let daily hustle derail your investment plan.
 
 ![Conclusion](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-6.webp)
 

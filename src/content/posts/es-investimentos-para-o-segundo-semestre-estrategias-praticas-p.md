@@ -24,7 +24,7 @@ seo:
   keywords: ["inversiones","segundo semestre","estrategias prácticas","2024","cartera","seguridad","crecimiento"]
 ---
 
-# [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para el [segundo semestre](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme): estrategias prácticas para 2024
+# [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) para el [segundo semestre](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme): estrategias prácticas para 2026
 
 El segundo semestre suele ser más agitado: [vacaciones](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias), fiestas de fin de año y la expectativa de un nuevo ciclo económico. Si aún no tienes un plan definido para los próximos seis meses, este artículo te ofrece un paso‑a‑paso para armar una cartera que combine seguridad y potencial de crecimiento, usando ejemplos reales del día a día en Brasil.
 
@@ -150,7 +150,7 @@ Es posible mediante corredoras que ofrecen acceso a BDRs o fondos de inversión 
 
 ## Conclusión
 
-El segundo semestre de 2024 ofrece una ventana de oportunidades que va mucho más allá de las vacaciones y las fiestas de fin de año. Al seguir los cinco pasos – evaluar tu situación, definir horizontes, elegir activos, aprovechar estacionalidades y monitorear resultados – crearás una cartera alineada a tu perfil y a las demandas del mercado. Usa herramientas como **FinMoovi** para mantener todo organizado y no dejes que la rutina del día a día entorpezca tu plan de inversión.
+El segundo semestre de 2026 ofrece una ventana de oportunidades que va mucho más allá de las vacaciones y las fiestas de fin de año. Al seguir los cinco pasos – evaluar tu situación, definir horizontes, elegir activos, aprovechar estacionalidades y monitorear resultados – crearás una cartera alineada a tu perfil y a las demandas del mercado. Usa herramientas como **FinMoovi** para mantener todo organizado y no dejes que la rutina del día a día entorpezca tu plan de inversión.
 
 ![Conclusión](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-6.webp)
 

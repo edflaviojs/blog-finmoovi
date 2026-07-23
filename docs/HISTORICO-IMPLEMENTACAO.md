@@ -257,3 +257,12 @@ O refresh token do Pinterest expira em ~60 dias. Sinais de vencimento: e-mail do
 4. (Opcional) Testar: `gh workflow run social-distribution.yml` e conferir o log.
 
 Obs.: o Redirect URI `http://localhost:8085/callback` já está cadastrado no app — não precisa mexer no portal. Se pedir o passo a passo ao Claude, ele conhece o fluxo (memória `project_blog_pinterest_api`).
+
+---
+
+## 🗓️ Guarda de anos defasados + refresh anual (2026-07-23)
+
+- **Year-guard nos 9 geradores** (`e18468a`): `src/scripts/lib/year-guard.js` (fixStaleYear/CURRENT_YEAR) impede conteúdo novo de nascer com ano velho; na mesma leva, 6 títulos com 2024 foram corrigidos para 2026.
+- **Pinterest com descrição rica SEO** (`6eba00f`): pins ganham descrição via LLM com fallback determinístico + título limitado a 100 chars.
+- **Refresh anual do conteúdo existente** (este commit): `src/scripts/validacao/refresh-anos.js` varre posts+glossário (todos os idiomas) e corrige, só no frontmatter (title/description/seo), anos defasados em padrão claramente promocional ("para/for/em/en 20xx", "guia 20xx", "20xx: ", ano no fim do título); casos ambíguos (ex.: "Retrospectiva 2024") viram UMA issue com checkboxes para decisão manual. Workflow `year-refresh.yml` roda dia 1 de cada mês 07:15 UTC (virada do ano = grosso; demais meses = rede de segurança). Nunca toca em slug, nome de arquivo, corpo ou tags.
+- Corrigido também o corpo dos 3 posts `investimentos-para-o-segundo-semestre-...` (pt/en/es): "segundo semestre de 2024" → 2026 no H1 e no parágrafo final.

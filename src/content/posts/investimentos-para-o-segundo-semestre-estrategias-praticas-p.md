@@ -24,7 +24,7 @@ seo:
   keywords: ["investimentos segundo semestre","carteira de investimentos 2024","estratégia de investimento","renda fixa","ações","FinMoovi app"]
 ---
 
-# Investimentos para o [segundo semestre](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme): estratégias práticas para 2024
+# Investimentos para o [segundo semestre](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme): estratégias práticas para 2026
 
 O segundo semestre costuma ser mais agitado: [férias](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), festas de fim de ano e a expectativa de um novo ciclo econômico. Se você ainda não tem um plano definido para os próximos seis meses, este artigo traz um roteiro passo‑a‑passo para montar uma carteira que combine segurança e potencial de crescimento, usando exemplos reais do cotidiano brasileiro.
 
@@ -154,7 +154,7 @@ Depende do seu objetivo de renda passiva. Uma alocação de 10‑20 % costuma 
 
 ## Conclusão
 
-O segundo semestre de 2024 oferece uma janela de oportunidades que vai muito além das férias e das festas de fim de ano. Ao seguir os cinco passos – avaliar sua situação, definir horizontes, escolher ativos, aproveitar sazonalidades e monitorar resultados – você cria uma carteira alinhada ao seu perfil e às demandas do mercado. Use ferramentas como o **FinMoovi** para manter tudo organizado e não deixe que a correria do dia a dia atrapalhe seu plano de investimento.
+O segundo semestre de 2026 oferece uma janela de oportunidades que vai muito além das férias e das festas de fim de ano. Ao seguir os cinco passos – avaliar sua situação, definir horizontes, escolher ativos, aproveitar sazonalidades e monitorar resultados – você cria uma carteira alinhada ao seu perfil e às demandas do mercado. Use ferramentas como o **FinMoovi** para manter tudo organizado e não deixe que a correria do dia a dia atrapalhe seu plano de investimento.
 
 ![Conclusão](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-6.webp)
 
