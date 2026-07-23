@@ -1,6 +1,6 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-07-23T13:34:39.840Z
+**Atualizado em:** 2026-07-23T13:36:05.781Z
 **Totais:** 6 pendente(s) · 0 usada(s) · 7 pulada(s)
 
 ## ⏳ Pendentes por fonte
