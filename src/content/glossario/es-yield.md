@@ -45,7 +45,7 @@ El yield tiene varias ventajas, incluyendo:
 ## Riesgos
 El yield también conlleva riesgos, incluyendo:
 * El riesgo de pérdida de capital: si inviertes en una acción que no tiene un buen desempeño, puedes perder parte o todo tu capital.
-* El riesgo de inflación: si la inflación aumenta, el [valor](/es/glossario/es-valor) de tu inversión puede disminuir.
+* El riesgo de inflación: si la inflación aumenta, el [valor](/es/glossario/es-valor-financeiro) de tu inversión puede disminuir.
 * El riesgo de intereses: si los intereses aumentan, el valor de tu inversión puede disminuir.
 * **Consejo práctico:** debes considerar el riesgo de pérdida de capital al tomar decisiones de inversión.
 * **Consejo práctico:** debes diversificar tus inversiones para minimizar el riesgo de pérdida de capital.

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é
-O termo "yield" é frequentemente usado no contexto de investimentos e finanças, mas o que ele realmente significa? Em português, "yield" é traduzido como "rendimento" ou "retorno". No mundo dos investimentos, o yield refere-se ao retorno que você obtém sobre um investimento, geralmente expresso como uma porcentagem. Por exemplo, se você investe R$ 1.000 em uma [aplicação](/glossario/aplicacao) que oferece um yield de 10% ao ano, você pode esperar receber R$ 100 em rendimentos ao longo de um ano, totalizando R$ 1.100.
+O termo "yield" é frequentemente usado no contexto de investimentos e finanças, mas o que ele realmente significa? Em português, "yield" é traduzido como "rendimento" ou "retorno". No mundo dos investimentos, o yield refere-se ao retorno que você obtém sobre um investimento, geralmente expresso como uma porcentagem. Por exemplo, se você investe R$ 1.000 em uma [aplicação](/glossario/aplicacao-financeira) que oferece um yield de 10% ao ano, você pode esperar receber R$ 100 em rendimentos ao longo de um ano, totalizando R$ 1.100.
 
 Isso pode parecer simples, mas é importante entender que o yield pode variar dependendo do tipo de investimento e das condições de mercado. Além disso, o yield não é apenas sobre a taxa de retorno, mas também sobre a liquidez e o risco associado ao investimento.
 

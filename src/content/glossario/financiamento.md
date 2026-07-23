@@ -11,7 +11,7 @@ readingTime: 1
 
 ## O que é Financiamento?
 
-Financiamento é quando um banco empresta [dinheiro](/posts/cashback-inteligente) para você comprar algo de [valor](/glossario/valor) alto (casa, carro, etc.) e você paga de volta em parcelas ao longo de anos. O bem comprado fica como garantia — se você parar de pagar, o banco pode tomar.
+Financiamento é quando um banco empresta [dinheiro](/posts/cashback-inteligente) para você comprar algo de [valor](/glossario/valor-financeiro) alto (casa, carro, etc.) e você paga de volta em parcelas ao longo de anos. O bem comprado fica como garantia — se você parar de pagar, o banco pode tomar.
 
 ## Tipos comuns
 

@@ -31,7 +31,7 @@ Com R$ 1,5 milhão investidos rendendo 8% ao ano, você teria R$ 120.000/ano (R$
 
 Depende de quanto você poupa:
 
-| [Taxa](/es/glossario/es-taxa) de [poupança](/es/glossario/es-poupanca) | Tempo para IF |
+| [Taxa](/es/glossario/es-taxa-financeira) de [poupança](/es/glossario/es-poupanca) | Tempo para IF |
 |-----------------|---------------|
 | 10% da renda | 51 anos |
 | 20% da renda | 37 anos |

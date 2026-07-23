@@ -12,7 +12,7 @@ publishedAt: 2026-06-11
 Quando investimos em [ações](/glossario/acoes), uma das principais razões é a possibilidade de receber [dividendos](/glossario/dividendos). Os dividendos são pagamentos feitos pelas empresas aos seus acionistas, representando uma parte dos lucros obtidos. No entanto, para entender o quão atraente é um [investimento](/posts/montando-carteira-diversificada-com-r-500) em ações em termos de dividendos, precisamos considerar o Dividend Yield.
 
 ## O que é o Dividend Yield?
-O Dividend Yield é calculado dividindo o [valor](/glossario/valor) anual dos dividendos pagos por ação pelo preço atual da ação. Isso nos dá uma porcentagem que representa o retorno anual que um investidor pode esperar receber em dividendos por cada real investido na ação.
+O Dividend Yield é calculado dividindo o [valor](/glossario/valor-financeiro) anual dos dividendos pagos por ação pelo preço atual da ação. Isso nos dá uma porcentagem que representa o retorno anual que um investidor pode esperar receber em dividendos por cada real investido na ação.
 
 ![Introdução ao Dividend Yield](/images/glossario/dividend-yield-inline-1.webp)
 

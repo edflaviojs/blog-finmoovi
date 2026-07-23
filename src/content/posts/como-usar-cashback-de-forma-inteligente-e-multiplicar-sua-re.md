@@ -20,11 +20,11 @@ seo:
 
 ## Cashback como aliado de verdade
 
-Quando você paga um lanche de R$ 35,00 com um cartão que devolve 2% de volta, o retorno parece pequeno – R$ 0,70. Mas se esse [valor](/glossario/valor) for tratado como renda extra, ele pode virar um verdadeiro reforço no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). A ideia não é esperar que o cashback cubra tudo de uma vez, mas fazer com que cada centavo devolvido trabalhe a seu favor.
+Quando você paga um lanche de R$ 35,00 com um cartão que devolve 2% de volta, o retorno parece pequeno – R$ 0,70. Mas se esse [valor](/glossario/valor-financeiro) for tratado como renda extra, ele pode virar um verdadeiro reforço no [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). A ideia não é esperar que o cashback cubra tudo de uma vez, mas fazer com que cada centavo devolvido trabalhe a seu favor.
 
 ## Escolha o cartão certo e combine benefícios
 
-Nem todo cartão oferece a mesma [taxa](/glossario/taxa) de retorno. Alguns dão 1,5% em todas as compras, outros dão 5% em categorias específicas (como supermercados ou postos de gasolina) e 1% no resto. A chave está em alinhar o cartão ao seu padrão de consumo.
+Nem todo cartão oferece a mesma [taxa](/glossario/taxa-financeira) de retorno. Alguns dão 1,5% em todas as compras, outros dão 5% em categorias específicas (como supermercados ou postos de gasolina) e 1% no resto. A chave está em alinhar o cartão ao seu padrão de consumo.
 
 ![Escolha o cartão certo e combine benefícios](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-2.webp)
 
@@ -56,7 +56,7 @@ Se você tem dívidas com [juros](/glossario/juros) acima de 10% ao ano (como ro
 
 Suponha que você tenha um débito de R$ 1.200,00 no rotativo com juros de 12% ao ano. Um cashback mensal de R$ 80,00 (gerado por gastos de R$ 2.666,67 com 3% de retorno) reduz o saldo devedor em R$ 80,00, evitando que quase R$ 12,00 de juros sejam cobrados a cada mês. Em 12 meses, você economiza cerca de R$ 144,00 em juros.
 
-## Aproveite promoções e categorias [bônus](/glossario/bonus)
+## Aproveite promoções e categorias [bônus](/glossario/bonus-salarial)
 
 Cartões e aplicativos de pagamento costumam lançar promoções temporárias que aumentam o cashback em determinadas categorias. Ficar de olho nas notificações ou no site do emissor pode render retornos de até 10% em compras específicas.
 

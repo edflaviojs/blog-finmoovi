@@ -38,7 +38,7 @@ Comece pelo que entra. Some todas as fontes de renda:
 - Rendimentos de investimentos
 - Aluguéis ou outras fontes
 
-**Dica:** Use sempre o [valor](/glossario/valor) líquido (o que cai na conta), não o bruto.
+**Dica:** Use sempre o [valor](/glossario/valor-financeiro) líquido (o que cai na conta), não o bruto.
 
 ## Passo 2: Mapeie seus gastos fixos
 

@@ -1,23 +1,23 @@
 ---
-term: "governança"
-definition: "Entenda o que é governança, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-title: "governança - Glossário Financeiro"
-description: "Entenda o que é governança, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+term: "governança corporativa"
+definition: "Entenda o que é governança corporativa, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+title: "governança corporativa - Glossário Financeiro"
+description: "Entenda o que é governança corporativa, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/governanca.webp"
 category: "basico"
-tags: ["governança", "glossário", "finanças"]
+tags: ["governança corporativa", "glossário", "finanças"]
 author: "FinMoovi"
 publishedAt: 2026-07-05
 readingTime: 5
 locale: "pt"
-translationKey: "glossario-governanca"
+translationKey: "glossario-governanca-corporativa"
 seo:
-  metaTitle: "governança - Glossário Financeiro"
-  metaDescription: "Entenda o que é governança, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-  keywords: ["governança", "glossário", "finanças"]
+  metaTitle: "governança corporativa - Glossário Financeiro"
+  metaDescription: "Entenda o que é governança corporativa, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+  keywords: ["governança corporativa", "glossário", "finanças"]
 ---
 
-## O que é governança
+## O que é governança corporativa
  
 A governança é um termo que pode parecer complexo, mas é fundamental para entender como as organizações, incluindo as financeiras, são gerenciadas. Em resumo, governança se refere ao conjunto de regras, práticas e processos que definem como uma empresa ou instituição é dirigida e controlada. Isso inclui a estrutura de gestão, a tomada de decisões, a responsabilidade e a transparência. No contexto das [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), a governança pode ser aplicada para se referir à forma como você gerencia seus próprios recursos financeiros.
 
@@ -26,7 +26,7 @@ A governança é um termo que pode parecer complexo, mas é fundamental para ent
 * Implementação de controles para evitar gastos excessivos
 * Monitoramento constante do desempenho financeiro
 
-![O que é governança](/images/glossario/governanca-inline-1.webp)
+![O que é governança corporativa](/images/glossario/governanca-inline-1.webp)
 
 
 
@@ -52,7 +52,7 @@ No entanto, existem riscos se você não implementar uma governança financeira 
 
 ## Exemplos práticos
 
-Vamos considerar um exemplo prático. Imagine que você ganha R$6.000 por mês e deseja comprar um apartamento no [valor](/glossario/valor) de R$200.000 em cinco anos. Com uma governança financeira bem planejada, você pode estabelecer metas de poupança mensal e investir em uma [aplicação](/glossario/aplicacao) que renda [juros](/glossario/juros) para alcançar seu objetivo. Aqui estão algumas dicas para começar:
+Vamos considerar um exemplo prático. Imagine que você ganha R$6.000 por mês e deseja comprar um apartamento no [valor](/glossario/valor-financeiro) de R$200.000 em cinco anos. Com uma governança financeira bem planejada, você pode estabelecer metas de poupança mensal e investir em uma [aplicação](/glossario/aplicacao-financeira) que renda [juros](/glossario/juros) para alcançar seu objetivo. Aqui estão algumas dicas para começar:
  
 * **Dica prática:** Utilize um aplicativo de gestão financeira para monitorar suas receitas e despesas.
 * **Dica prática:** Crie um fundo de emergência para cobrir despesas inesperadas.

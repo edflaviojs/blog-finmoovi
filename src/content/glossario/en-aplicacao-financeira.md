@@ -1,20 +1,20 @@
 ---
-term: "aplicação"
+term: "financial investment"
 definition: "Understand what aplicação is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "aplicação - Financial Glossary"
+title: "financial investment - Financial Glossary"
 description: "Understand what aplicação is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/aplicacao.webp"
 category: "basico"
-tags: ["aplicação", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["financial investment", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
 publishedAt: 2026-07-22
 readingTime: 5
 locale: "en"
-translationKey: "glossario-aplicacao"
+translationKey: "glossario-aplicacao-financeira"
 seo:
-  metaTitle: "aplicação - Financial Glossary"
+  metaTitle: "financial investment - Financial Glossary"
   metaDescription: "Understand what aplicação is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["aplicação", "glossário", "finanças", "glossary", "finance", "brazil"]
+  keywords: ["financial investment", "glossário", "finanças", "glossary", "finance", "brazil"]
 ---
 
 ## What it is

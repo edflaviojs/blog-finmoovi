@@ -26,7 +26,7 @@ Con un poco de creatividad y [planificación](/es/posts/es-orcamento-com-salario
 
 ## 1️⃣ Define un límite de gasto antes de nada
 
-Antes de empezar a navegar por internet, fija un techo. Usa la regla del **30 %**: lo ideal es que el [valor](/es/glossario/es-valor) gastado en regalos no supere el 30 % de tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) de ocio o de “extras” del mes.
+Antes de empezar a navegar por internet, fija un techo. Usa la regla del **30 %**: lo ideal es que el [valor](/es/glossario/es-valor-financeiro) gastado en regalos no supere el 30 % de tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) de ocio o de “extras” del mes.
 
 ![1️⃣ Define un límite de gasto antes de nada](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--2.webp)
 

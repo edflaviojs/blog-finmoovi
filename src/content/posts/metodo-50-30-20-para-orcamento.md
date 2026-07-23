@@ -21,13 +21,13 @@ seo:
 O método 50-30-20 é uma estratégia simples e eficaz para gerenciar suas finanças. A ideia é dividir seu salário em três categorias principais: necessidades, desejos e [economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias). Com isso, você pode ter um controle melhor sobre onde seu dinheiro está sendo gasto e como pode ser otimizado.
 
 - **Necessidades (50%):** Inclui despesas essenciais como aluguel, comida, contas de água, luz, internet, transporte e outros gastos básicos.
-- **Desejos (30%):** Aqui você inclui gastos que não são essenciais, mas que melhoram sua [qualidade](/glossario/qualidade) de vida, como entretenimento, viagens, hobbies e compras pessoais.
-- **Economia (20%):** Esta parte do seu salário deve ser destinada à [poupança](/glossario/poupanca), investimentos, pagamento de dívidas e [fundos](/glossario/fundos) de emergência.
+- **Desejos (30%):** Aqui você inclui gastos que não são essenciais, mas que melhoram sua [qualidade](/glossario/qualidade-de-ativos) de vida, como entretenimento, viagens, hobbies e compras pessoais.
+- **Economia (20%):** Esta parte do seu salário deve ser destinada à [poupança](/glossario/poupanca), investimentos, pagamento de dívidas e [fundos](/glossario/fundo-de-investimento) de emergência.
 
 ### Exemplo Prático
 Vamos considerar um salário de R$ 4.000,00 por mês. Aplicando o método 50-30-20, teríamos:
 
-| Categoria | Percentual | [Valor](/glossario/valor) (R$) |
+| Categoria | Percentual | [Valor](/glossario/valor-financeiro) (R$) |
 | --- | --- | --- |
 | Necessidades | 50% | 2.000,00 |
 | Desejos | 30% | 1.200,00 |

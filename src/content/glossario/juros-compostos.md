@@ -11,7 +11,7 @@ readingTime: 1
 
 ## O que são [Juros](/glossario/juros) Compostos?
 
-Juros compostos são juros calculados sobre o [valor](/glossario/valor) original **mais** os juros já acumulados. Diferente dos [juros simples](/glossario/juros-simples) (que incidem só sobre o valor inicial), os compostos crescem exponencialmente.
+Juros compostos são juros calculados sobre o [valor](/glossario/valor-financeiro) original **mais** os juros já acumulados. Diferente dos [juros simples](/glossario/juros-simples) (que incidem só sobre o valor inicial), os compostos crescem exponencialmente.
 
 ## Exemplo prático
 
@@ -27,7 +27,7 @@ R$ 10.000 investidos a 10% ao ano:
 
 ## A regra dos 72
 
-Para saber em quantos anos seu [dinheiro](/posts/cashback-inteligente) dobra, divida 72 pela [taxa](/glossario/taxa) de juros:
+Para saber em quantos anos seu [dinheiro](/posts/cashback-inteligente) dobra, divida 72 pela [taxa](/glossario/taxa-financeira) de juros:
 - 12% ao ano → 72 ÷ 12 = **6 anos** para dobrar
 - 8% ao ano → 72 ÷ 8 = **9 anos** para dobrar
 

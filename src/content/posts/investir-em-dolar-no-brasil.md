@@ -27,14 +27,14 @@ Existem várias formas de investir em dólar no Brasil, incluindo:
 
 * Compra de dólar em espécie: você pode comprar dólar em espécie em uma casa de câmbio ou em uma agência bancária.
 * Investimento em títulos de dólar: você pode investir em títulos de dólar, como títulos do Tesouro americano ou títulos de empresas americanas.
-* Investimento em [fundos](/glossario/fundos) de investimento em dólar: você pode investir em fundos de investimento que têm como objetivo investir em dólar.
+* Investimento em [fundos](/glossario/fundo-de-investimento) de investimento em dólar: você pode investir em fundos de investimento que têm como objetivo investir em dólar.
 * Investimento em [ações](/glossario/acoes) de empresas americanas: você pode investir em ações de empresas americanas que são negociadas em bolsas de valores americanas.
 
 ![Como Investir em Dólar no Brasil](/images/posts/investir-em-dolar-no-brasil-2.webp)
 
 
 
-Vamos considerar um exemplo: se você investir R$1.000 em dólar a uma [taxa](/glossario/taxa) de câmbio de R$4,50 por dólar, você receberá aproximadamente 222 dólares. Se o [valor](/glossario/valor) do dólar aumentar para R$5,00, o valor do seu investimento aumentará para R$1.111.
+Vamos considerar um exemplo: se você investir R$1.000 em dólar a uma [taxa](/glossario/taxa-financeira) de câmbio de R$4,50 por dólar, você receberá aproximadamente 222 dólares. Se o [valor](/glossario/valor-financeiro) do dólar aumentar para R$5,00, o valor do seu investimento aumentará para R$1.111.
 
 ## Riscos do Investimento em Dólar
 Investir em dólar envolve riscos, incluindo:

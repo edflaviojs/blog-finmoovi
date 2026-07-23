@@ -19,7 +19,7 @@ seo:
 
 ## O que é
 
-O **z‑score** (ou escore‑z) é uma medida que indica quantos desvios‑padrão um [valor](/glossario/valor) está distante da média de um conjunto de dados. Em termos simples, ele transforma números diferentes – como salário, gasto ou retorno – em uma escala comum, facilitando a comparação. Se o seu salário está 1,5 desvios‑padrão acima da média nacional, o z‑score será +1,5; se estiver 0,8 abaixo, será –0,8. Essa padronização ajuda a entender se algo está “na média”, “acima” ou “abaixo” do esperado.
+O **z‑score** (ou escore‑z) é uma medida que indica quantos desvios‑padrão um [valor](/glossario/valor-financeiro) está distante da média de um conjunto de dados. Em termos simples, ele transforma números diferentes – como salário, gasto ou retorno – em uma escala comum, facilitando a comparação. Se o seu salário está 1,5 desvios‑padrão acima da média nacional, o z‑score será +1,5; se estiver 0,8 abaixo, será –0,8. Essa padronização ajuda a entender se algo está “na média”, “acima” ou “abaixo” do esperado.
 
 ![O que é](/images/glossario/z-score-inline-1.webp)
 

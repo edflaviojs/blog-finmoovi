@@ -31,11 +31,11 @@ A lista de compras é o seu mapa do tesouro. Quando você tem o papel ou o app a
 
 
 
-**Dica prática:** antes de sair, anote o preço máximo que você aceita pagar por cada item. Por exemplo, para arroz você pode definir R$ 20, para peito de frango R$ 15. Quando encontrar o produto, compare o [valor](/glossario/valor) real com o limite. Se estiver acima, deixe passar – sempre haverá outra oportunidade.
+**Dica prática:** antes de sair, anote o preço máximo que você aceita pagar por cada item. Por exemplo, para arroz você pode definir R$ 20, para peito de frango R$ 15. Quando encontrar o produto, compare o [valor](/glossario/valor-financeiro) real com o limite. Se estiver acima, deixe passar – sempre haverá outra oportunidade.
 
 ## Aposte em marcas próprias
 
-Muitos supermercados oferecem linhas de marcas próprias que entregam [qualidade](/glossario/qualidade) semelhante às marcas líderes, mas com preço até 30 % menor. A diferença costuma estar no investimento em marketing, não na matéria‑prima. Experimente substituir o detergente de marca por um da marca própria; a [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) pode ser de R$ 5 a R$ 10 por embalagem, o que acumulado ao longo de um ano representa até R$ 120.
+Muitos supermercados oferecem linhas de marcas próprias que entregam [qualidade](/glossario/qualidade-de-ativos) semelhante às marcas líderes, mas com preço até 30 % menor. A diferença costuma estar no investimento em marketing, não na matéria‑prima. Experimente substituir o detergente de marca por um da marca própria; a [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) pode ser de R$ 5 a R$ 10 por embalagem, o que acumulado ao longo de um ano representa até R$ 120.
 
 Vale a pena conferir a tabela de preços no site do próprio supermercado ou usar apps de [comparação](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) de preços, como o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – ele mostra as opções mais baratas ao lado da sua lista.
 

@@ -19,7 +19,7 @@ seo:
 
 ## Resumo da Semana (07/06 – 13/07/2026)
 
-A semana foi marcada por oscilações nos mercados internacionais e pelo movimento da [taxa](/en/glossario/en-taxa) [Selic](/en/glossario/en-selic) aqui no Brasil. Vamos ao que interessa: como o dólar e o euro se comportaram, o que a Selic fez com a sua carteira e um truque prático para você que quer ficar no controle dos seus investimentos.
+A semana foi marcada por oscilações nos mercados internacionais e pelo movimento da [taxa](/en/glossario/en-taxa-financeira) [Selic](/en/glossario/en-selic) aqui no Brasil. Vamos ao que interessa: como o dólar e o euro se comportaram, o que a Selic fez com a sua carteira e um truque prático para você que quer ficar no controle dos seus investimentos.
 
 ![Resumo da Semana (07/06 – 13/07/2026)](/images/posts/en-quotes-semana-2-july-2026-inline-1.webp)
 
@@ -29,7 +29,7 @@ A semana foi marcada por oscilações nos mercados internacionais e pelo movimen
 
 - **Dólar (USD/BRL = R$ 5,11)** – Depois de fechar a semana anterior em R$ 5,08, o dólar subiu gradualmente, ganhando cerca de 0,6 % até chegar a R$ 5,11. A alta foi puxada pelos dados de inflação dos EUA, que surpreenderam para cima, e pela expectativa de que o Fed mantenha as taxas de [juros](/en/glossario/en-juros) elevadas por mais tempo. Na prática, isso significa que, se você costuma comprar produtos importados ou viajar para o exterior, o bolso vai sentir um peso extra.
 
-- **Euro (EUR/BRL = R$ 5,83)** – O euro também subiu, mas em ritmo mais tímido, avançando 0,3 % na mesma janela. A diferença entre a cotação do euro e do dólar ainda está em torno de R$ 0,72, o que indica que o real está mais fraco frente à [moeda](/en/glossario/en-moeda) única europeia. Se você tem alguma viagem planejada para a Europa ou pensa em investir em [fundos](/en/glossario/en-fundos) que compram ativos lá, vale ficar de olho.
+- **Euro (EUR/BRL = R$ 5,83)** – O euro também subiu, mas em ritmo mais tímido, avançando 0,3 % na mesma janela. A diferença entre a cotação do euro e do dólar ainda está em torno de R$ 0,72, o que indica que o real está mais fraco frente à [moeda](/en/glossario/en-moeda) única europeia. Se você tem alguma viagem planejada para a Europa ou pensa em investir em [fundos](/en/glossario/en-fundo-de-investimento) que compram ativos lá, vale ficar de olho.
 
 A boa notícia é que a volatilidade não foi tão agressiva; os pares oscilaram dentro de faixas estreitas, o que traz um pouco de tranquilidade para quem tem investimentos atrelados a moedas estrangeiras.
 

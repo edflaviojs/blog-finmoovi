@@ -16,7 +16,7 @@ Liquidez é a capacidade de transformar um investimento em dinheiro rapidamente.
 ## Tipos de liquidez
 
 - **Liquidez diária (D+0):** Dinheiro disponível no mesmo dia. Ex: Tesouro Selic, [CDB](/glossario/cdb) com liquidez diária.
-- **Liquidez D+1:** Disponível no dia seguinte. Ex: Alguns [fundos](/glossario/fundos) de investimento.
+- **Liquidez D+1:** Disponível no dia seguinte. Ex: Alguns [fundos](/glossario/fundo-de-investimento) de investimento.
 - **Liquidez no vencimento:** Só pode resgatar na data combinada. Ex: CDB com prazo, LCI/LCA.
 
 ## Escala de liquidez

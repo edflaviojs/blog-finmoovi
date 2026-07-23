@@ -27,7 +27,7 @@ Nesta semana, o mercado financeiro brasileiro apresentou movimentos interessante
 
 ## Dólar e Euro: Tendência da Semana
 
-A [taxa](/glossario/taxa) de câmbio entre o real brasileiro e as principais moedas estrangeiras foi um dos pontos de destaque da semana. O dólar americano fechou a semana em R$ 5,16, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou R$ 5,91, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes, especialmente para aqueles que investem em ativos em moedas estrangeiras ou planejam viagens internacionais.
+A [taxa](/glossario/taxa-financeira) de câmbio entre o real brasileiro e as principais moedas estrangeiras foi um dos pontos de destaque da semana. O dólar americano fechou a semana em R$ 5,16, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou R$ 5,91, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes, especialmente para aqueles que investem em ativos em moedas estrangeiras ou planejam viagens internacionais.
 
 ## [Selic](/glossario/selic) e Impacto nos Investimentos
 

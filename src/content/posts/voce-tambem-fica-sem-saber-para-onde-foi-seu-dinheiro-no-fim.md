@@ -21,7 +21,7 @@ seo:
 
 Se você, assim como a Ana, chega ao final do mês e abre a conta bancária para encontrar um número bem menor do que esperava, saiba que não está sozinho. Essa falta de visibilidade gera ansiedade, atrasa sonhos (como a viagem ou a [reserva de emergência](/glossario/reserva-de-emergencia)) e, muitas vezes, leva a decisões precipitadas, como cortar gastos essenciais ou recorrer a crédito caro.
 
-Eu já passei por isso. Um dia, depois de pagar o aluguel, a conta de luz e as compras do supermercado, ainda assim o extrato mostrava que faltavam quase R$ 800,00. Eu não conseguia lembrar de nenhuma compra que justificasse aquele [valor](/glossario/valor). Foi aí que percebi: o problema não era o quanto eu gastava, mas **como eu acompanhava** esses gastos.
+Eu já passei por isso. Um dia, depois de pagar o aluguel, a conta de luz e as compras do supermercado, ainda assim o extrato mostrava que faltavam quase R$ 800,00. Eu não conseguia lembrar de nenhuma compra que justificasse aquele [valor](/glossario/valor-financeiro). Foi aí que percebi: o problema não era o quanto eu gastava, mas **como eu acompanhava** esses gastos.
 
 ## Por que a conta some sem explicação?
 
@@ -79,7 +79,7 @@ Essas mudanças não são apenas números; são transformações no dia a dia. A
 
 ## Dados que reforçam a importância da visualização
 
-- **Banco Central do Brasil** aponta que a [taxa](/glossario/taxa) de endividamento das famílias brasileiras atingiu 71,2 % em 2023, um dos maiores índices da América Latina. (Fonte: [Banco Central](https://www.bcb.gov.br))
+- **Banco Central do Brasil** aponta que a [taxa](/glossario/taxa-financeira) de endividamento das famílias brasileiras atingiu 71,2 % em 2023, um dos maiores índices da América Latina. (Fonte: [Banco Central](https://www.bcb.gov.br))
 - **Instituto Brasileiro de Geografia e Estatística (IBGE)** revelou que 22 % das famílias têm dificuldade para pagar contas mensais, muitas vezes por falta de controle de despesas. (Fonte: [IBGE](https://www.ibge.gov.br))
 
 ![Dados que reforçam a importância da visualização](/images/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim-6.webp)

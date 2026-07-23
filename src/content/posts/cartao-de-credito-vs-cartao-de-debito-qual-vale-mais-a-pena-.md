@@ -21,7 +21,7 @@ seo:
 Quando se trata de gerenciar as [finanças pessoais](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias), uma das decisões mais importantes é escolher entre cartão de crédito e cartão de débito. Ambos os tipos de cartões têm seus prós e contras, e a escolha certa depende do seu perfil [financeiro](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) e de como você lida com o [dinheiro](/posts/cashback-inteligente). Neste artigo, vamos explorar como funcionam os cartões de crédito e débito, suas vantagens e desvantagens, e ajudá-lo a decidir qual é o melhor para você.
 
 ## Como funciona o Cartão de Crédito
-O cartão de crédito é um tipo de cartão que permite que você compre agora e pague depois. Quando você faz uma compra com um cartão de crédito, o banco emite o pagamento ao vendedor e você se compromete a pagar o [valor](/glossario/valor) da compra, mais [juros](/glossario/juros) e taxas, se não pagar o saldo total até a data de vencimento. Os juros podem variar de 10% a 20% ao mês, dependendo do banco e do seu histórico de crédito.
+O cartão de crédito é um tipo de cartão que permite que você compre agora e pague depois. Quando você faz uma compra com um cartão de crédito, o banco emite o pagamento ao vendedor e você se compromete a pagar o [valor](/glossario/valor-financeiro) da compra, mais [juros](/glossario/juros) e taxas, se não pagar o saldo total até a data de vencimento. Os juros podem variar de 10% a 20% ao mês, dependendo do banco e do seu histórico de crédito.
 
 Por exemplo, se você compra um produto por R$ 1.000,00 com um cartão de crédito que cobra juros de 15% ao mês, você pagará R$ 1.150,00 se não pagar o saldo total até a data de vencimento.
 
@@ -70,7 +70,7 @@ O cartão de débito pode ser uma boa opção se você:
 
 
 
-No entanto, é importante lembrar que o cartão de débito pode ter taxas de manutenção e transação, e você pode precisar pagar uma [taxa](/glossario/taxa) para manter a conta corrente ativa.
+No entanto, é importante lembrar que o cartão de débito pode ter taxas de manutenção e transação, e você pode precisar pagar uma [taxa](/glossario/taxa-financeira) para manter a conta corrente ativa.
 
 ## Veredicto
 Em resumo, a escolha entre cartão de crédito e cartão de débito depende do seu perfil financeiro e de como você lida com o dinheiro. Se você tem disciplina para pagar o saldo total até a data de vencimento e quer construir ou melhorar seu histórico de crédito, o cartão de crédito pode ser uma boa opção. No entanto, se você quer evitar dívidas e juros e ter mais controle sobre seus gastos, o cartão de débito pode ser a melhor escolha.

@@ -46,7 +46,7 @@ Invertir en acciones tiene varios atractivos que la hacen popular entre quienes 
 - **Potencial de alta rentabilidad:** Históricamente, las acciones han generado retornos superiores a los de la mayoría de los instrumentos de ahorro tradicionales.
 - **Diversificación:** Puedes repartir tu inversión en diferentes empresas y sectores, reduciendo el riesgo global.
 - **[Liquidez](/es/glossario/es-liquidez):** La mayoría de las acciones se pueden vender rápidamente en la bolsa, lo que te permite acceder a tu dinero cuando lo necesites.
-- **Participación en el éxito:** Si la empresa crece, el [valor](/es/glossario/es-valor) de tus acciones también lo hace, y puedes recibir dividendos como ingreso extra.
+- **Participación en el éxito:** Si la empresa crece, el [valor](/es/glossario/es-valor-financeiro) de tus acciones también lo hace, y puedes recibir dividendos como ingreso extra.
 
 ## Riesgos
 

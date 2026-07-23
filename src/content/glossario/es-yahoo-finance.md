@@ -31,7 +31,7 @@ La herramienta funciona como un agregador de datos: extrae información de bolsa
 
 - **Búsqueda de ticker:** escribe el código del activo y obtén su cotización al instante.  
 - **Gráficos interactivos:** visualiza la evolución del precio en diferentes periodos (día, mes, año).  
-- **Noticias y análisis:** lee artículos que explican por qué sube o baja un [valor](/es/glossario/es-valor).  
+- **Noticias y análisis:** lee artículos que explican por qué sube o baja un [valor](/es/glossario/es-valor-financeiro).  
 - **Alertas personalizadas:** configura notificaciones por correo o móvil cuando se cumplan tus criterios.  
 
 ## Ventajas

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Reduciendo el Consumo
-Imagina que pagas alrededor de R$ 200 por mes en tu cuenta de energía. Esto puede parecer un [valor](/es/glossario/es-valor) razonable, pero si sabes cómo reducir ese consumo, puedes ahorrar alrededor de R$ 50 por mes, lo que es equivalente a R$ 600 por año. Esto puede lograrse con algunos cambios simples en tu día a día. Por ejemplo, si tienes un salario de R$ 5.000 por mes, una reducción de R$ 50 en la cuenta de energía puede significar un [ahorro](/es/posts/es-regla-de-los-30-dias-para-compras) del 1% de tu salario.
+Imagina que pagas alrededor de R$ 200 por mes en tu cuenta de energía. Esto puede parecer un [valor](/es/glossario/es-valor-financeiro) razonable, pero si sabes cómo reducir ese consumo, puedes ahorrar alrededor de R$ 50 por mes, lo que es equivalente a R$ 600 por año. Esto puede lograrse con algunos cambios simples en tu día a día. Por ejemplo, si tienes un salario de R$ 5.000 por mes, una reducción de R$ 50 en la cuenta de energía puede significar un [ahorro](/es/posts/es-regla-de-los-30-dias-para-compras) del 1% de tu salario.
 
 Una de las principales razones para el alto consumo de energía es el uso excesivo de aparatos electrónicos. Muchas personas dejan la televisión, el computador y otros aparatos encendidos incluso cuando no están en uso. Esto puede aumentar significativamente la cuenta de energía. Además, el uso de lámparas incandescentes también puede contribuir al alto consumo de energía.
 

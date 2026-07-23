@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é
-Ações são partes de propriedade de uma empresa que podem ser compradas e vendidas por investidores. Quando você compra uma ação, você está basicamente comprando uma pequena parte daquela empresa. Isso significa que, se a empresa cresce e se torna mais valiosa, o [valor](/glossario/valor) da sua ação também aumenta. Por exemplo, imagine que você comprou uma ação da empresa XYZ por R$ 50 e, após um ano, a empresa lança um novo produto que se torna um sucesso, fazendo com que o valor da ação suba para R$ 75. Você poderia vender sua ação por R$ 75 e ter um lucro de R$ 25.
+Ações são partes de propriedade de uma empresa que podem ser compradas e vendidas por investidores. Quando você compra uma ação, você está basicamente comprando uma pequena parte daquela empresa. Isso significa que, se a empresa cresce e se torna mais valiosa, o [valor](/glossario/valor-financeiro) da sua ação também aumenta. Por exemplo, imagine que você comprou uma ação da empresa XYZ por R$ 50 e, após um ano, a empresa lança um novo produto que se torna um sucesso, fazendo com que o valor da ação suba para R$ 75. Você poderia vender sua ação por R$ 75 e ter um lucro de R$ 25.
 
  
 As ações são negociadas em bolsas de valores, como a B3 no Brasil, e podem ser compradas e vendidas por meio de corretoras de valores. É importante entender que as ações são um tipo de [investimento](/posts/montando-carteira-diversificada-com-r-500) de risco, o que significa que há a possibilidade de perder dinheiro se a empresa não se sair bem.

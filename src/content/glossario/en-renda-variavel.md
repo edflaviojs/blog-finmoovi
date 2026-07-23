@@ -26,7 +26,7 @@ Renda Variável is everything that doesn't have a guaranteed return. The price g
 ## Principais investimentos de renda variável
 
 1. **Ações** — pieces of companies
-2. **[Fundos](/en/glossario/en-fundos) Imobiliários (FIIs)** — shares of funds that invest in real estate
+2. **[Fundos](/en/glossario/en-fundo-de-investimento) Imobiliários (FIIs)** — shares of funds that invest in real estate
 3. **ETFs** — funds that replicate indexes
 4. **Criptomoedas** — decentralized digital assets
 5. **Derivativos** — futures contracts, options (advanced)

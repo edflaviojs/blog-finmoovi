@@ -19,7 +19,7 @@ seo:
 
 # Resumo Semanal do Mercado Financeiro Brasileiro: 22/06 a 29/06/2026
 
-Olá, pessoal! É hora de fazer um resumo da semana no mercado financeiro brasileiro. Vamos falar sobre o que aconteceu com o dólar e o euro, a [taxa](/en/glossario/en-taxa) [Selic](/en/glossario/en-selic) e como isso pode afetar seus investimentos. Além disso, vamos dar uma dica prática para você, investidor individual, e o que esperar para a próxima semana.
+Olá, pessoal! É hora de fazer um resumo da semana no mercado financeiro brasileiro. Vamos falar sobre o que aconteceu com o dólar e o euro, a [taxa](/en/glossario/en-taxa-financeira) [Selic](/en/glossario/en-selic) e como isso pode afetar seus investimentos. Além disso, vamos dar uma dica prática para você, investidor individual, e o que esperar para a próxima semana.
 
 ## Dólar e Euro: Tendência Semanal
 
@@ -29,7 +29,7 @@ Na semana que passou, o dólar americano fechou em R$ 5,17, enquanto o euro cheg
 
 
 
-Por exemplo, se você está planejando uma viagem aos EUA, pode ser uma boa ideia comprar dólares agora, considerando o [valor](/en/glossario/en-valor) atual. Já se você tem investimentos em euros, pode ser uma boa ideia manter um olho nas taxas de câmbio para decidir o melhor momento para converter seu dinheiro.
+Por exemplo, se você está planejando uma viagem aos EUA, pode ser uma boa ideia comprar dólares agora, considerando o [valor](/en/glossario/en-valor-financeiro) atual. Já se você tem investimentos em euros, pode ser uma boa ideia manter um olho nas taxas de câmbio para decidir o melhor momento para converter seu dinheiro.
 
 ## Taxa Selic e Impacto nos Investimentos
 
@@ -39,7 +39,7 @@ No entanto, é importante lembrar que a taxa Selic também pode afetar a inflaç
 
 ## Dica Prática para Investidores Individuais
 
-Uma dica prática para você, investidor individual, é diversificar seus investimentos. Isso significa não colocar todos os ovos na mesma cesta, ou seja, não investir todo o seu dinheiro em uma única coisa. Você pode investir em [ações](/en/glossario/en-acoes), [fundos](/en/glossario/en-fundos) de investimento, CDBs, LCI/LCs, e até mesmo em moedas estrangeiras.
+Uma dica prática para você, investidor individual, é diversificar seus investimentos. Isso significa não colocar todos os ovos na mesma cesta, ou seja, não investir todo o seu dinheiro em uma única coisa. Você pode investir em [ações](/en/glossario/en-acoes), [fundos](/en/glossario/en-fundo-de-investimento) de investimento, CDBs, LCI/LCs, e até mesmo em moedas estrangeiras.
 
 ![Dica Prática para Investidores Individuais](/images/posts/en-quotes-semana-5-june-2026-inline-3.webp)
 

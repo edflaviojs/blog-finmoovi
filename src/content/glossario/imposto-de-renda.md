@@ -37,7 +37,7 @@ O imposto de renda funciona de forma progressiva, ou seja, quanto maior a renda,
 ## Vantagens
 Existem várias vantagens em entender e gerenciar o imposto de renda, como:
 * Reduzir a carga tributária por meio de deduções e abatimentos
-* Aumentar a renda líquida, ou seja, o [valor](/glossario/valor) que você leva para casa
+* Aumentar a renda líquida, ou seja, o [valor](/glossario/valor-financeiro) que você leva para casa
 * Evitar multas e penalidades por atraso ou erro na declaração do imposto de renda
 * **Dica prática:** utilize um aplicativo de [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026), como o [Nubank](/glossario/nubank), para ter controle sobre suas despesas e renda.
 

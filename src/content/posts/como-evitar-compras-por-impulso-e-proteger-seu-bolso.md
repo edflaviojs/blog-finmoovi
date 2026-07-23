@@ -25,7 +25,7 @@ A maioria das compras impulsivas acontece quando estamos cansados, estressados o
 
 ## Monte um plano de [gastos](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) realista
 
-Um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) bem definido reduz a sensação de escassez que alimenta o impulso. Suponha que você receba um salário de R$ 4.500. Depois de pagar aluguel, contas de água e luz, transporte e alimentação, talvez reste R$ 800 para despesas variáveis. Destine, por exemplo, R$ 300 para lazer e presentes. Quando esse [valor](/glossario/valor) acabar, a regra é parar. Ao visualizar o limite, a compra impulsiva perde o brilho de “desconto irresistível”.
+Um [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) bem definido reduz a sensação de escassez que alimenta o impulso. Suponha que você receba um salário de R$ 4.500. Depois de pagar aluguel, contas de água e luz, transporte e alimentação, talvez reste R$ 800 para despesas variáveis. Destine, por exemplo, R$ 300 para lazer e presentes. Quando esse [valor](/glossario/valor-financeiro) acabar, a regra é parar. Ao visualizar o limite, a compra impulsiva perde o brilho de “desconto irresistível”.
 
 ![Monte um plano de gastos realista](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-2.webp)
 

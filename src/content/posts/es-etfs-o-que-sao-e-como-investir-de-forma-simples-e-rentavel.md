@@ -25,7 +25,7 @@ seo:
 
 ## Cómo funciona en la práctica
 
-Cuando compras 10 cuotas de un ETF que replica el Ibovespa, estás, en la práctica, invirtiendo en todas las empresas que componen ese índice (en la misma proporción). Si el Ibovespa sube un 2 %, el [valor](/es/glossario/es-valor) de tus cuotas también sube aproximadamente un 2 %.
+Cuando compras 10 cuotas de un ETF que replica el Ibovespa, estás, en la práctica, invirtiendo en todas las empresas que componen ese índice (en la misma proporción). Si el Ibovespa sube un 2 %, el [valor](/es/glossario/es-valor-financeiro) de tus cuotas también sube aproximadamente un 2 %.
 
 ![Como funciona na prática](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-2.webp)
 

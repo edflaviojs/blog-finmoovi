@@ -29,7 +29,7 @@ Nubank é uma fintech brasileira que funciona como banco digital: oferece conta 
 - Cartão de crédito internacional sem anuidade  
 - Programa de pontos que pode ser trocado por produtos ou descontos  
 - Empréstimos pessoais com [juros](/en/glossario/en-juros) competitivos  
-- Nubank Invest (CDBs e [fundos](/en/glossario/en-fundos)) para quem quer começar a investir  
+- Nubank Invest (CDBs e [fundos](/en/glossario/en-fundo-de-investimento)) para quem quer começar a investir  
 
 ## How it works
 
@@ -51,13 +51,13 @@ A proposta do Nubank é tornar o serviço bancário mais transparente e barato. 
 
 - **Zero anuidade** no cartão de crédito  
 - Transferências e DOCs gratuitos e ilimitados  
-- Saques na rede Banco24Horas sem [taxa](/en/glossario/en-taxa) (até 4 por mês)  
+- Saques na rede Banco24Horas sem [taxa](/en/glossario/en-taxa-financeira) (até 4 por mês)  
 - Controle total pelo celular: bloqueio, limite e fatura em tempo real  
 - Programa de recompensas simples, sem regras complicadas  
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-Mesmo com muitas vantagens, usar um banco totalmente digital tem alguns pontos de atenção. Primeiro, a dependência de internet: se o celular travar ou a rede cair, você pode ficar sem acesso imediato ao dinheiro. Segundo, o limite de crédito pode ser ajustado automaticamente pelo algoritmo, o que às vezes surpreende quem está acostumado a limites fixos. Por fim, embora o Fundo Garantidor de Créditos (FGC) cubra até R$ 250 mil por instituição, o [valor](/en/glossario/en-valor) total depositado ainda está sujeito a riscos de mercado nos investimentos.  
+Mesmo com muitas vantagens, usar um banco totalmente digital tem alguns pontos de atenção. Primeiro, a dependência de internet: se o celular travar ou a rede cair, você pode ficar sem acesso imediato ao dinheiro. Segundo, o limite de crédito pode ser ajustado automaticamente pelo algoritmo, o que às vezes surpreende quem está acostumado a limites fixos. Por fim, embora o Fundo Garantidor de Créditos (FGC) cubra até R$ 250 mil por instituição, o [valor](/en/glossario/en-valor-financeiro) total depositado ainda está sujeito a riscos de mercado nos investimentos.  
 
 - Necessidade de conexão estável para transações  
 - Limite de crédito sujeito a revisões automáticas  

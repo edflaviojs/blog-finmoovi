@@ -38,7 +38,7 @@ Para calcular a reserva necessária, é importante saber quais são suas despesa
 
 ## Estratégias para criar a reserva
 Criar uma reserva de emergência requer disciplina e paciência. Aqui estão algumas estratégias para ajudar:
-- Defina um [valor](/glossario/valor) mensal para depositar na reserva
+- Defina um [valor](/glossario/valor-financeiro) mensal para depositar na reserva
 - Automatize os depósitos para que seja mais fácil manter a rotina
 - Evite sacar dinheiro da reserva para gastos não essenciais
 - Considere abrir uma conta [poupança](/glossario/poupanca) separada para a reserva de emergência, para que fique mais difícil acessar o dinheiro para gastos cotidianos
@@ -50,7 +50,7 @@ Lembre-se de que a chave é começar pequeno e aumentar a reserva ao longo do te
 
 
 ## Importância da reserva de emergência
-Ter uma reserva de emergência é crucial para a saúde financeira. Sem ela, você pode se encontrar em uma situação difícil se perder o emprego, tiver uma emergência médica ou precisar fazer um reparo caro em sua casa. Além disso, uma reserva de emergência pode ajudar a reduzir o estresse financeiro e melhorar a [qualidade](/glossario/qualidade) de vida.
+Ter uma reserva de emergência é crucial para a saúde financeira. Sem ela, você pode se encontrar em uma situação difícil se perder o emprego, tiver uma emergência médica ou precisar fazer um reparo caro em sua casa. Além disso, uma reserva de emergência pode ajudar a reduzir o estresse financeiro e melhorar a [qualidade](/glossario/qualidade-de-ativos) de vida.
 
 Para mais informações sobre como gerenciar suas finanças e criar uma reserva de emergência, você pode visitar o site do [Banco Central do Brasil](https://www.bcb.gov.br) ou do [Tesouro Direto](https://www.tesourodireto.com.br).
 

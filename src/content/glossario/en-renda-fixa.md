@@ -33,7 +33,7 @@ Quando você compra um título de renda fixa, está adquirindo um contrato que p
 
 - **Previsibilidade:** Você sabe quanto vai receber, o que facilita o planejamento de gastos e metas.  
 - **Segurança:** A maioria dos títulos de renda fixa emitidos por bancos ou pelo Tesouro Nacional tem garantia do Fundo Garantidor de Créditos (FGC) até R$250 mil por pessoa e por instituição.  
-- **Liquidez:** Alguns títulos permitem resgate antes do vencimento sem grandes perdas, como [fundos](/en/glossario/en-fundos) DI ou Tesouro [Selic](/en/glossario/en-selic).  
+- **Liquidez:** Alguns títulos permitem resgate antes do vencimento sem grandes perdas, como [fundos](/en/glossario/en-fundo-de-investimento) DI ou Tesouro [Selic](/en/glossario/en-selic).  
 - **[Diversificação](/en/glossario/en-diversificacao):** Mesmo quem tem pouco dinheiro pode montar uma carteira equilibrada, reduzindo a dependência de investimentos mais voláteis.
 
 ![Advantages](/images/glossario/renda-fixa-inline-3.webp)

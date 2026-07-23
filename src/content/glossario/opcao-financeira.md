@@ -1,25 +1,25 @@
 ---
-term: "opcão"
-definition: "Entenda o que é opcão, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-title: "opcão - Glossário Financeiro"
-description: "Entenda o que é opcão, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+term: "opção financeira"
+definition: "Entenda o que é opção financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+title: "opção financeira - Glossário Financeiro"
+description: "Entenda o que é opção financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/opcao.webp"
 category: "basico"
-tags: ["opcão", "glossário", "finanças"]
+tags: ["opção financeira", "glossário", "finanças"]
 author: "FinMoovi"
 publishedAt: 2026-07-11
 readingTime: 5
 locale: "pt"
-translationKey: "glossario-opcao"
+translationKey: "glossario-opcao-financeira"
 seo:
-  metaTitle: "opcão - Glossário Financeiro"
-  metaDescription: "Entenda o que é opcão, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-  keywords: ["opcão", "glossário", "finanças"]
+  metaTitle: "opção financeira - Glossário Financeiro"
+  metaDescription: "Entenda o que é opção financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+  keywords: ["opção financeira", "glossário", "finanças"]
 ---
 
 ## O que é
 
-Opção é um contrato que dá ao comprador o direito – mas não a obrigação – de comprar ou vender um ativo (como [ações](/glossario/acoes), commodities ou moedas) por um preço pré‑definido, chamado preço de exercício, até uma data de vencimento. Existem duas categorias principais: **call**, que dá o direito de comprar, e **put**, que dá o direito de vender. Pense na opção como um seguro: você paga um [valor](/glossario/valor) pequeno (prêmio) para garantir que, se o mercado se mover contra você, pode exercer o contrato e limitar a perda.
+Opção é um contrato que dá ao comprador o direito – mas não a obrigação – de comprar ou vender um ativo (como [ações](/glossario/acoes), commodities ou moedas) por um preço pré‑definido, chamado preço de exercício, até uma data de vencimento. Existem duas categorias principais: **call**, que dá o direito de comprar, e **put**, que dá o direito de vender. Pense na opção como um seguro: você paga um [valor](/glossario/valor-financeiro) pequeno (prêmio) para garantir que, se o mercado se mover contra você, pode exercer o contrato e limitar a perda.
 
 ![O que é](/images/glossario/opcao-inline-1.webp)
 

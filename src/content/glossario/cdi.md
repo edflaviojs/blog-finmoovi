@@ -11,7 +11,7 @@ readingTime: 1
 
 ## O que é CDI?
 
-O CDI (Certificado de Depósito Interbancário) é a [taxa](/glossario/taxa) de [juros](/glossario/juros) usada em empréstimos entre bancos. Na prática, é a referência para a maioria dos [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de [renda fixa](/glossario/renda-fixa) no Brasil.
+O CDI (Certificado de Depósito Interbancário) é a [taxa](/glossario/taxa-financeira) de [juros](/glossario/juros) usada em empréstimos entre bancos. Na prática, é a referência para a maioria dos [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) de [renda fixa](/glossario/renda-fixa) no Brasil.
 
 ## CDI vs [Selic](/glossario/selic)
 

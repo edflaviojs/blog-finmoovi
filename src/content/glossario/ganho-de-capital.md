@@ -19,7 +19,7 @@ Ganho de capital é o lucro que você tem quando vende algo por mais do que pago
 - Venda de imóveis
 - Venda de criptomoedas (acima de R$ 35.000/mês)
 - Venda de veículos com lucro
-- Venda de qualquer bem acima do [valor](/glossario/valor) de compra
+- Venda de qualquer bem acima do [valor](/glossario/valor-financeiro) de compra
 
 ## Alíquotas
 

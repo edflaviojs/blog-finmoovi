@@ -1,24 +1,24 @@
 ---
-term: "fundos"
-definition: "Entenda o que é fundos, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-title: "fundos - Glossário Financeiro"
-description: "Entenda o que é fundos, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+term: "fundo de investimento"
+definition: "Entenda o que é fundo de investimento, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+title: "fundo de investimento - Glossário Financeiro"
+description: "Entenda o que é fundo de investimento, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/fundos.webp"
 category: "basico"
-tags: ["fundos", "glossário", "finanças"]
+tags: ["fundo de investimento", "glossário", "finanças"]
 author: "FinMoovi"
 publishedAt: 2026-07-04
 readingTime: 5
 locale: "pt"
-translationKey: "glossario-fundos"
+translationKey: "glossario-fundo-de-investimento"
 seo:
-  metaTitle: "fundos - Glossário Financeiro"
-  metaDescription: "Entenda o que é fundos, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-  keywords: ["fundos", "glossário", "finanças"]
+  metaTitle: "fundo de investimento - Glossário Financeiro"
+  metaDescription: "Entenda o que é fundo de investimento, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+  keywords: ["fundo de investimento", "glossário", "finanças"]
 ---
 
 ## O que é
-O termo "fundos" é comumente usado no contexto financeiro para se referir a investimentos coletivos, onde várias pessoas colocam seu dinheiro em uma carteira diversificada de ativos, como ações, títulos, imóveis, etc. Esses fundos são gerenciados por profissionais experientes que têm o objetivo de maximizar os retornos para os investidores. Imagine que você e mais algumas dezenas de amigos decidem juntar dinheiro para investir em diferentes tipos de ativos, mas em vez de fazer isso sozinhos, vocês contratam um especialista para tomar as decisões de investimento. É basicamente isso que um fundo faz, mas em uma escala muito maior e com uma variedade muito maior de opções de investimento.
+O termo "fundo de investimento" é comumente usado no contexto financeiro para se referir a investimentos coletivos, onde várias pessoas colocam seu dinheiro em uma carteira diversificada de ativos, como ações, títulos, imóveis, etc. Esses fundos são gerenciados por profissionais experientes que têm o objetivo de maximizar os retornos para os investidores. Imagine que você e mais algumas dezenas de amigos decidem juntar dinheiro para investir em diferentes tipos de ativos, mas em vez de fazer isso sozinhos, vocês contratam um especialista para tomar as decisões de investimento. É basicamente isso que um fundo faz, mas em uma escala muito maior e com uma variedade muito maior de opções de investimento.
 
 ## Como funciona
 Um fundo funciona basicamente da seguinte maneira: os investidores colocam seu dinheiro no fundo, e em troca, recebem quotas ou unidades do fundo. O gestor do fundo então usa o dinheiro coletado para investir em uma carteira de ativos, que pode incluir desde ações de empresas até títulos de dívida, imóveis, e muito mais. O objetivo é diversificar os investimentos para minimizar os riscos e maximizar os retornos. Por exemplo, se você investe R$ 1.000 em um fundo de ações, o gestor do fundo pode usar esse dinheiro para comprar ações de diferentes empresas, como a Vale, a Petrobras, ou a [Nubank](/glossario/nubank). Se o valor dessas ações aumentar, o valor das quotas do fundo também aumenta, e você pode vender suas quotas por um valor maior do que o que você pagou inicialmente.

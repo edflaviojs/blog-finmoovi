@@ -1,20 +1,20 @@
 ---
-term: "qualidade"
-definition: "Entenda o que é qualidade, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-title: "qualidade - Glossário Financeiro"
-description: "Entenda o que é qualidade, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+term: "qualidade de ativos"
+definition: "Entenda o que é qualidade de ativos, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+title: "qualidade de ativos - Glossário Financeiro"
+description: "Entenda o que é qualidade de ativos, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/qualidade.webp"
 category: "basico"
-tags: ["qualidade", "glossário", "finanças"]
+tags: ["qualidade de ativos", "glossário", "finanças"]
 author: "FinMoovi"
 publishedAt: 2026-07-12
 readingTime: 5
 locale: "pt"
-translationKey: "glossario-qualidade"
+translationKey: "glossario-qualidade-de-ativos"
 seo:
-  metaTitle: "qualidade - Glossário Financeiro"
-  metaDescription: "Entenda o que é qualidade, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-  keywords: ["qualidade", "glossário", "finanças"]
+  metaTitle: "qualidade de ativos - Glossário Financeiro"
+  metaDescription: "Entenda o que é qualidade de ativos, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+  keywords: ["qualidade de ativos", "glossário", "finanças"]
 ---
 
 ## O que é  

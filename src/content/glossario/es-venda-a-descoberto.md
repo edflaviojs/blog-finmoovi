@@ -59,7 +59,7 @@ Estas ventajas la hacen atractiva para inversores que buscan complementar su car
 
 - **Pérdida ilimitada:** A diferencia de comprar una acción (donde la pérdida máxima es el capital invertido), el precio de una acción puede subir indefinidamente, lo que genera pérdidas sin techo.  
 - **Costos de préstamo:** El corredor cobra una tasa por prestar el activo; si la posición se mantiene mucho tiempo, esos costos pueden erosionar la ganancia.  
-- **Llamada de margen:** Si la posición pierde [valor](/es/glossario/es-valor), el corredor puede exigir más capital (margen) para mantener la operación abierta.  
+- **Llamada de margen:** Si la posición pierde [valor](/es/glossario/es-valor-financeiro), el corredor puede exigir más capital (margen) para mantener la operación abierta.  
 
 En palabras simples, la venta a descubierto es como caminar sobre una cuerda sin red de seguridad: si todo sale bien, llegas al otro lado sin problemas; si algo falla, la caída puede ser profunda.
 

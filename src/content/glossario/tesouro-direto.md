@@ -50,7 +50,7 @@ Os riscos do Tesouro Direto incluem:
 * Risco de liquidez: os títulos do Tesouro Direto podem não ser facilmente vendidos na bolsa de valores, o que pode resultar em perda de valor.
 * Risco de inflação: a inflação pode reduzir o valor real do título, o que pode resultar em perda de valor.
 
-**Dica prática:** É importante diversificar sua carteira de investimentos para reduzir o risco de perda de valor. Além do Tesouro Direto, você pode considerar investir em outros ativos, como ações, [fundos](/glossario/fundos) de investimento ou imóveis.
+**Dica prática:** É importante diversificar sua carteira de investimentos para reduzir o risco de perda de valor. Além do Tesouro Direto, você pode considerar investir em outros ativos, como ações, [fundos](/glossario/fundo-de-investimento) de investimento ou imóveis.
 
 ## Exemplos práticos
 Vamos considerar alguns exemplos práticos de como o Tesouro Direto pode ser usado:

@@ -1,25 +1,25 @@
 ---
-term: "qualidade"
+term: "calidad de activos"
 definition: "Entienda qué es qualidade, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-title: "qualidade - Glosario Financiero"
+title: "calidad de activos - Glosario Financiero"
 description: "Entienda qué es qualidade, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/qualidade.webp"
 category: "basico"
-tags: ["qualidade", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+tags: ["calidad de activos", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
 publishedAt: 2026-07-12
 readingTime: 5
 locale: "es"
-translationKey: "glossario-qualidade"
+translationKey: "glossario-qualidade-de-ativos"
 seo:
-  metaTitle: "qualidade - Glosario Financiero"
+  metaTitle: "calidad de activos - Glosario Financiero"
   metaDescription: "Entienda qué es qualidade, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-  keywords: ["qualidade", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+  keywords: ["calidad de activos", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
 ## Qué es
 
-La **qualidade** en finanzas no es un término técnico complicado; se refiere a la capacidad de un activo, una inversión o una empresa para mantener su [valor](/es/glossario/es-valor) y generar rendimientos de forma estable a lo largo del tiempo. En palabras simples, es la “solidez” o “fiabilidad” de lo que estás comprando. Cuando hablamos de qualidade de crédito, por ejemplo, evaluamos qué tan probable es que una empresa pague sus deudas sin problemas. Entender este concepto te ayuda a elegir opciones que no solo prometen ganancias, sino que también protegen tu dinero frente a imprevistos.
+La **qualidade** en finanzas no es un término técnico complicado; se refiere a la capacidad de un activo, una inversión o una empresa para mantener su [valor](/es/glossario/es-valor-financeiro) y generar rendimientos de forma estable a lo largo del tiempo. En palabras simples, es la “solidez” o “fiabilidad” de lo que estás comprando. Cuando hablamos de qualidade de crédito, por ejemplo, evaluamos qué tan probable es que una empresa pague sus deudas sin problemas. Entender este concepto te ayuda a elegir opciones que no solo prometen ganancias, sino que también protegen tu dinero frente a imprevistos.
 
 ![Qué es](/images/glossario/qualidade-inline-1.webp)
 

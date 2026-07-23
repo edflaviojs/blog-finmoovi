@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-A poupança é a conta de depósito mais conhecida no Brasil. Ela funciona como um “cofrinho” bancário que rende [juros](/en/glossario/en-juros) mensais e ainda protege o dinheiro contra a inflação mínima. Diferente de um investimento em [ações](/en/glossario/en-acoes) ou [fundos](/en/glossario/en-fundos), a poupança tem regras bem simples: você deposita, o banco paga um percentual definido e você pode retirar a qualquer momento, sem multas.
+A poupança é a conta de depósito mais conhecida no Brasil. Ela funciona como um “cofrinho” bancário que rende [juros](/en/glossario/en-juros) mensais e ainda protege o dinheiro contra a inflação mínima. Diferente de um investimento em [ações](/en/glossario/en-acoes) ou [fundos](/en/glossario/en-fundo-de-investimento), a poupança tem regras bem simples: você deposita, o banco paga um percentual definido e você pode retirar a qualquer momento, sem multas.
 
 ![What it is](/images/glossario/poupanca-inline-1.webp)
 

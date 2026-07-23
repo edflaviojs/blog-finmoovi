@@ -44,7 +44,7 @@ A ansiedade de garantir a “melhor oferta” costuma levar a compras impulsivas
 - Despesas fixas mensais (aluguel, contas, transporte): R$ 1.500
 - Reserva de emergência: R$ 500 (10 % da renda)
 
-Sobram **R$ 460** para gastos extras. Se as férias ocorrem em julho, reserve **R$ 200** desse [valor](/glossario/valor) para a viagem, mantendo R$ 260 para o restante do mês.
+Sobram **R$ 460** para gastos extras. Se as férias ocorrem em julho, reserve **R$ 200** desse [valor](/glossario/valor-financeiro) para a viagem, mantendo R$ 260 para o restante do mês.
 
 ### Ferramenta útil
 O **app [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** permite criar categorias específicas – “Férias de julho” – e acompanhar em tempo real o quanto já foi consumido, ajudando a respeitar o teto estabelecido.

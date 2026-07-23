@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Introdução ao [Investimento](/posts/tesouro-direto-para-iniciantes)
-Quando se fala em investir, muitas pessoas pensam que é necessário ter um grande capital para começar. No entanto, é possível montar uma carteira diversificada com apenas R$500. Para isso, é importante entender o que significa diversificar e por que isso é importante. Diversificar significa distribuir seus investimentos em diferentes tipos de ativos, como [ações](/glossario/acoes), títulos, [fundos](/glossario/fundos) de investimento, etc., para reduzir o risco de perdas. Imagine que você tem R$500 e decide investir tudo em uma única ação. Se essa ação cair, você perderá todo o seu investimento. Já se você distribuir esses R$500 em diferentes ativos, o risco de perda será menor.
+Quando se fala em investir, muitas pessoas pensam que é necessário ter um grande capital para começar. No entanto, é possível montar uma carteira diversificada com apenas R$500. Para isso, é importante entender o que significa diversificar e por que isso é importante. Diversificar significa distribuir seus investimentos em diferentes tipos de ativos, como [ações](/glossario/acoes), títulos, [fundos](/glossario/fundo-de-investimento) de investimento, etc., para reduzir o risco de perdas. Imagine que você tem R$500 e decide investir tudo em uma única ação. Se essa ação cair, você perderá todo o seu investimento. Já se você distribuir esses R$500 em diferentes ativos, o risco de perda será menor.
 
 ## Tipos de Investimentos
 Existem muitos tipos de investimentos disponíveis no mercado. Alguns exemplos incluem:
@@ -37,7 +37,7 @@ Antes de começar a investir, é importante definir seus objetivos e planejar co
 Vamos considerar um exemplo prático. Suponha que você invista R$500 em um fundo de investimento que oferece um retorno anual de 8%. Após um ano, seu investimento valerá R$540. Se você continuar investindo R$500 todos os meses, após 5 anos, seu investimento pode valer cerca de R$4.500, considerando o mesmo retorno anual de 8%. É importante lembrar que esses são apenas exemplos e o desempenho real dos investimentos pode variar.
 
 ## Riscos
-Investir sempre envolve riscos. O risco é a possibilidade de perder parte ou todo o seu investimento. Existem diferentes tipos de riscos, como risco de mercado (o [valor](/glossario/valor) dos ativos pode cair), risco de crédito (a empresa ou governo que emitiu o título pode não pagar), e risco de [liquidez](/glossario/liquidez) (você pode não ser capaz de vender seu investimento rapidamente o suficiente ou pelo preço que você deseja). Para gerenciar esses riscos, é importante diversificar sua carteira e entender os riscos associados a cada investimento. Avalie se faz sentido para seu perfil de risco e objetivos financeiros.
+Investir sempre envolve riscos. O risco é a possibilidade de perder parte ou todo o seu investimento. Existem diferentes tipos de riscos, como risco de mercado (o [valor](/glossario/valor-financeiro) dos ativos pode cair), risco de crédito (a empresa ou governo que emitiu o título pode não pagar), e risco de [liquidez](/glossario/liquidez) (você pode não ser capaz de vender seu investimento rapidamente o suficiente ou pelo preço que você deseja). Para gerenciar esses riscos, é importante diversificar sua carteira e entender os riscos associados a cada investimento. Avalie se faz sentido para seu perfil de risco e objetivos financeiros.
 
 ![Simulações de Rendimento](/images/posts/montando-carteira-diversificada-com-r-500-4.webp)
 

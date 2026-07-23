@@ -1,20 +1,20 @@
 ---
-term: "fundos"
+term: "fondo de inversión"
 definition: "Entienda qué es fundos, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-title: "fundos - Glosario Financiero"
+title: "fondo de inversión - Glosario Financiero"
 description: "Entienda qué es fundos, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/fundos.webp"
 category: "basico"
-tags: ["fundos", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+tags: ["fondo de inversión", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
 publishedAt: 2026-07-04
 readingTime: 5
 locale: "es"
-translationKey: "glossario-fundos"
+translationKey: "glossario-fundo-de-investimento"
 seo:
-  metaTitle: "fundos - Glosario Financiero"
+  metaTitle: "fondo de inversión - Glosario Financiero"
   metaDescription: "Entienda qué es fundos, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-  keywords: ["fundos", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+  keywords: ["fondo de inversión", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
 ## Qué es
@@ -52,7 +52,7 @@ Los fondos ofrecen varias ventajas para los inversores, incluyendo:
 
 ## Riesgos
 Aunque los fondos pueden ofrecer varias ventajas, también conllevan riesgos. Algunos de los riesgos asociados con los fondos incluyen:
-* Riesgo de mercado: Los fondos pueden estar expuestos a los movimientos del mercado, lo que puede afectar el [valor](/es/glossario/es-valor) de la inversión.
+* Riesgo de mercado: Los fondos pueden estar expuestos a los movimientos del mercado, lo que puede afectar el [valor](/es/glossario/es-valor-financeiro) de la inversión.
 * Riesgo de crédito: Los fondos que invierten en bonos y otros instrumentos de deuda pueden estar expuestos al riesgo de crédito, lo que puede afectar el valor de la inversión.
 * Riesgo de [liquidez](/es/glossario/es-liquidez): Los fondos pueden tener dificultades para vender activos rápidamente en caso de que los inversores deseen retirar su dinero.
 

@@ -35,7 +35,7 @@ Em resumo: tanto o dólar quanto o euro mostraram leve desvalorização frente a
 
 ## [Selic](/glossario/selic) e o Impacto nos Investimentos  
 
-A [taxa](/glossario/taxa) Selic continuou em **13,75 % ao ano**, nível que se manteve após a última reunião do Copom. Essa taxa alta ainda é o principal “freio” da inflação, mas também encarece o crédito. Para quem tem dinheiro aplicado em renda fixa, isso traz duas consequências claras:
+A [taxa](/glossario/taxa-financeira) Selic continuou em **13,75 % ao ano**, nível que se manteve após a última reunião do Copom. Essa taxa alta ainda é o principal “freio” da inflação, mas também encarece o crédito. Para quem tem dinheiro aplicado em renda fixa, isso traz duas consequências claras:
 
 ![Selic e o Impacto nos Investimentos  ](/images/posts/cotacoes-semana-2-julho-2026-inline-3.webp)
 
@@ -43,7 +43,7 @@ A [taxa](/glossario/taxa) Selic continuou em **13,75 % ao ano**, nível que se
 
 1. **[Tesouro Direto](/glossario/tesouro-direto) e CDBs** – Os títulos atrelados à Selic (Tesouro Selic, CDBs pós‑fixados) continuam rendendo próximo ao índice, o que ainda os torna a opção mais segura e rentável para quem quer preservar o capital.  
 
-2. **[Fundos](/glossario/fundos) de [Renda Variável](/glossario/renda-variavel)** – O custo de oportunidade de manter dinheiro em [ações](/glossario/acoes) ou fundos imobiliários sobe, já que a taxa livre de risco está alta. Se você ainda não tem uma reserva de emergência bem estruturada, pode ser mais prudente priorizar a segurança antes de buscar retornos mais agressivos.  
+2. **[Fundos](/glossario/fundo-de-investimento) de [Renda Variável](/glossario/renda-variavel)** – O custo de oportunidade de manter dinheiro em [ações](/glossario/acoes) ou fundos imobiliários sobe, já que a taxa livre de risco está alta. Se você ainda não tem uma reserva de emergência bem estruturada, pode ser mais prudente priorizar a segurança antes de buscar retornos mais agressivos.  
 
 Em termos práticos: quem já tem parte do patrimônio em títulos atrelados à Selic está bem posicionado; quem ainda não tem reserva, deve focar em produtos de baixo risco antes de abrir mão da segurança.
 

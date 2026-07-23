@@ -82,7 +82,7 @@ La principal ventaja de la previsión es el **beneficio fiscal** (en el caso del
 
 ## Riesgos y cuidados
 
-1. **Riesgo de mercado** – En los fondos que invierten en acciones o ETFs, el [valor](/es/glossario/es-valor) puede oscilar bastante. Si tu horizonte de jubilación es corto, este riesgo puede ser problemático.  
+1. **Riesgo de mercado** – En los fondos que invierten en acciones o ETFs, el [valor](/es/glossario/es-valor-financeiro) puede oscilar bastante. Si tu horizonte de jubilación es corto, este riesgo puede ser problemático.  
 2. **Riesgo de comisión de administración alta** – Como vimos, comisiones superiores al 2 % pueden reducir ganancias hasta en un 10 % a lo largo de 30 años.  
 3. **Riesgo de [cambio](/es/glossario/es-cambio) regulatorio** – Modificaciones en las reglas de tributación o en los límites de deducción pueden afectar la atractividad del PGBL.  
 4. **Riesgo de incumplimiento de la institución** – Aunque la Superintendencia de Seguros Privados (SUSEP) garantice la solvencia de las aseguradoras, siempre verifica la nota de evaluación de la empresa.  

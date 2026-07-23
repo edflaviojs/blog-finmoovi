@@ -19,11 +19,11 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro
 
-A semana de 28/05/2026 a 04/06/2026 foi marcada por movimentos significativos no mercado financeiro brasileiro, com destaque para as cotações do dólar e do euro em relação ao real. Além disso, a [taxa](/glossario/taxa) [Selic](/glossario/selic) continuou a influenciar as decisões de investimento dos brasileiros.
+A semana de 28/05/2026 a 04/06/2026 foi marcada por movimentos significativos no mercado financeiro brasileiro, com destaque para as cotações do dólar e do euro em relação ao real. Além disso, a [taxa](/glossario/taxa-financeira) [Selic](/glossario/selic) continuou a influenciar as decisões de investimento dos brasileiros.
 
 ## Dólar e Euro: Tendência da Semana
 
-O dólar americano fechou a semana em R$ 5,03, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou a cotação de R$ 5,84, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes para os investidores que possuem ativos em moedas estrangeiras, pois podem impactar diretamente o [valor](/glossario/valor) de seus investimentos. Por exemplo, se você tem R$ 1.000 investidos em um fundo que acompanha o desempenho do euro, a valorização do euro pode aumentar o valor do seu investimento em reais.
+O dólar americano fechou a semana em R$ 5,03, apresentando uma leve estabilidade em relação à semana anterior. Já o euro, por sua vez, alcançou a cotação de R$ 5,84, mostrando uma tendência de valorização em relação ao real. Esses movimentos são importantes para os investidores que possuem ativos em moedas estrangeiras, pois podem impactar diretamente o [valor](/glossario/valor-financeiro) de seus investimentos. Por exemplo, se você tem R$ 1.000 investidos em um fundo que acompanha o desempenho do euro, a valorização do euro pode aumentar o valor do seu investimento em reais.
 
 ## Selic e Impacto nos Investimentos
 

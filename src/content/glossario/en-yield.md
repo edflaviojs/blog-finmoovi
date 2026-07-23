@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-O rendimento, também conhecido como yield, é um termo financeiro que se refere à [taxa](/en/glossario/en-taxa) de retorno de um investimento. Em outras palavras, é a quantia de dinheiro que você ganha em relação ao [valor](/en/glossario/en-valor) investido. Por exemplo, se você investir R$ 1.000 em um fundo de investimento e receber R$ 50 em dividendos, o rendimento seria de 5% (R$ 50 / R$ 1.000). É importante entender que o rendimento pode variar dependendo do tipo de investimento e do período de tempo em que o dinheiro é investido.
+O rendimento, também conhecido como yield, é um termo financeiro que se refere à [taxa](/en/glossario/en-taxa-financeira) de retorno de um investimento. Em outras palavras, é a quantia de dinheiro que você ganha em relação ao [valor](/en/glossario/en-valor-financeiro) investido. Por exemplo, se você investir R$ 1.000 em um fundo de investimento e receber R$ 50 em dividendos, o rendimento seria de 5% (R$ 50 / R$ 1.000). É importante entender que o rendimento pode variar dependendo do tipo de investimento e do período de tempo em que o dinheiro é investido.
 
 O rendimento é uma medida importante para avaliar a performance de um investimento, pois ajuda a determinar se o investimento está gerando lucro ou não. Além disso, o rendimento também pode ser usado para comparar diferentes opções de investimento e escolher a que melhor atende às suas necessidades.
 

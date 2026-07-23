@@ -1,20 +1,20 @@
 ---
-term: "taxa"
+term: "tasa financiera"
 definition: "Entienda qué es taxa, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-title: "taxa - Glosario Financiero"
+title: "tasa financiera - Glosario Financiero"
 description: "Entienda qué es taxa, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/taxa.webp"
 category: "basico"
-tags: ["taxa", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+tags: ["tasa financiera", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
 publishedAt: 2026-07-15
 readingTime: 5
 locale: "es"
-translationKey: "glossario-taxa"
+translationKey: "glossario-taxa-financeira"
 seo:
-  metaTitle: "taxa - Glosario Financiero"
+  metaTitle: "tasa financiera - Glosario Financiero"
   metaDescription: "Entienda qué es taxa, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-  keywords: ["taxa", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+  keywords: ["tasa financiera", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
 ## Qué es

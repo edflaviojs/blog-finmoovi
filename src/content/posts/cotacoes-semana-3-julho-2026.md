@@ -32,7 +32,7 @@ A última semana foi marcada por oscilações nos mercados globais, mas o cenár
 O real ganhou alguns centavos frente ao dólar, que recuou 0,4 % ao longo da semana. O movimento foi impulsionado por duas coisas:  
 
 1. **Dados de [inflação](/glossario/inflacao) dos EUA** – O CPI de junho veio um ponto percentual abaixo das expectativas, aliviando a pressão sobre o Federal Reserve.  
-2. **Fluxos de capitais** – Investidores internacionais retiraram parte dos recursos de ativos de risco, mas a queda do dólar foi mais moderada porque o Brasil continua atraente graças à [taxa](/glossario/taxa) [Selic](/glossario/selic) ainda alta.  
+2. **Fluxos de capitais** – Investidores internacionais retiraram parte dos recursos de ativos de risco, mas a queda do dólar foi mais moderada porque o Brasil continua atraente graças à [taxa](/glossario/taxa-financeira) [Selic](/glossario/selic) ainda alta.  
 
 Em termos práticos, quem comprou dólares no início da semana viu um ganho de cerca de R$ 0,02 por [moeda](/glossario/moeda). Não é nada que vá mudar sua conta bancária, mas já dá uma ideia da direção.
 
@@ -54,7 +54,7 @@ A taxa Selic permanece em **13,75 % ao ano**, a mesma da última reunião do C
 
 
 
-- **[Renda fixa](/glossario/renda-fixa) ainda atrativa** – CDBs, LCIs/LCAs e [fundos](/glossario/fundos) DI continuam rendendo acima de 13 % ao ano, superando a inflação e a maioria dos títulos do [Tesouro Direto](/glossario/tesouro-direto).  
+- **[Renda fixa](/glossario/renda-fixa) ainda atrativa** – CDBs, LCIs/LCAs e [fundos](/glossario/fundo-de-investimento) DI continuam rendendo acima de 13 % ao ano, superando a inflação e a maioria dos títulos do [Tesouro Direto](/glossario/tesouro-direto).  
 - **Custo de oportunidade** – Se você tem dinheiro parado na poupança ou em investimentos de baixa rentabilidade, está perdendo dinheiro. Cada ponto percentual a menos na Selic reduz o spread entre a taxa de juros e o rendimento de alternativas como fundos imobiliários ou ações.  
 
 Em resumo, a Selic alta ainda protege a rentabilidade da renda fixa, mas também eleva o custo de empréstimos e financiamentos, pressionando o consumo.

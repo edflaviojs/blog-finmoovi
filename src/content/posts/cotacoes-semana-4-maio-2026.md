@@ -19,7 +19,7 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro
 
-A semana de 20/05/2026 a 27/05/2026 foi marcada por movimentações significativas no mercado financeiro brasileiro, com destaque para as variações nas taxas de [câmbio](/glossario/cambio) e a manutenção da [taxa](/glossario/taxa) [Selic](/glossario/selic). Vamos mergulhar nos detalhes e entender como esses eventos afetam os investidores pessoa física.
+A semana de 20/05/2026 a 27/05/2026 foi marcada por movimentações significativas no mercado financeiro brasileiro, com destaque para as variações nas taxas de [câmbio](/glossario/cambio) e a manutenção da [taxa](/glossario/taxa-financeira) [Selic](/glossario/selic). Vamos mergulhar nos detalhes e entender como esses eventos afetam os investidores pessoa física.
 
 ## Dólar e Euro: Tendência da Semana
 
@@ -31,7 +31,7 @@ A taxa Selic, atualmente em 12,25% ao ano, foi mantida pelo Comitê de Política
 
 ## Dica Prática para o Investidor
 
-Uma dica valiosa para os investidores pessoa física é diversificar seus investimentos, incluindo ativos em diferentes moedas. Com o dólar e o euro estáveis, pode ser um bom momento para considerar investimentos em ativos internacionais, como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de investimento em dólares ou euros. Ferramentas como o FinMoovi podem ser muito úteis para acompanhar e gerenciar investimentos em múltiplas moedas, oferecendo uma visão clara e atualizada do seu portfólio.
+Uma dica valiosa para os investidores pessoa física é diversificar seus investimentos, incluindo ativos em diferentes moedas. Com o dólar e o euro estáveis, pode ser um bom momento para considerar investimentos em ativos internacionais, como [ações](/glossario/acoes) ou [fundos](/glossario/fundo-de-investimento) de investimento em dólares ou euros. Ferramentas como o FinMoovi podem ser muito úteis para acompanhar e gerenciar investimentos em múltiplas moedas, oferecendo uma visão clara e atualizada do seu portfólio.
 
 ## O que Esperar para a Próxima Semana
 

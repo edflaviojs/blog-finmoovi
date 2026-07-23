@@ -33,7 +33,7 @@ La diversificación es importante porque el mercado financiero es impredecible y
 ## Cómo funciona
 La diversificación funciona porque diferentes activos tienen diferentes niveles de riesgo y rendimiento. Por ejemplo, las acciones pueden ser más riesgosas que los bonos, pero también pueden ofrecer rendimientos más altos. Al combinar diferentes activos, puedes crear un portafolio que sea más estable y tenga un mejor rendimiento a largo plazo. **Consejo práctico:** es importante investigar y entender los diferentes activos antes de invertir, para asegurarte de que estás tomando decisiones informadas.
 
-Por ejemplo, si tienes un salario de R$6.000 al mes y decides invertir R$1.500 en acciones, R$1.000 en bonos y R$500 en una cuenta de ahorro, estás diversificando tus inversiones. Si las acciones suben de [valor](/es/glossario/es-valor), puedes obtener ganancias, pero si bajan, los bonos y la cuenta de ahorro pueden ayudar a amortiguar la pérdida.
+Por ejemplo, si tienes un salario de R$6.000 al mes y decides invertir R$1.500 en acciones, R$1.000 en bonos y R$500 en una cuenta de ahorro, estás diversificando tus inversiones. Si las acciones suben de [valor](/es/glossario/es-valor-financeiro), puedes obtener ganancias, pero si bajan, los bonos y la cuenta de ahorro pueden ayudar a amortiguar la pérdida.
 
 ## Ventajas
 La diversificación tiene varias ventajas, como:

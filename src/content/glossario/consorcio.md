@@ -16,7 +16,7 @@ Consórcio é um sistema onde várias pessoas se juntam para comprar algo (carro
 ## Como funciona
 
 1. Você entra em um grupo de consórcio
-2. Paga parcelas mensais (sem [juros](/glossario/juros), mas com [taxa](/glossario/taxa) de administração)
+2. Paga parcelas mensais (sem [juros](/glossario/juros), mas com [taxa](/glossario/taxa-financeira) de administração)
 3. Todo mês há assembleia com sorteio
 4. Contemplados recebem carta de crédito
 5. Pode dar lance (oferecer parcelas adiantadas) para ser contemplado antes

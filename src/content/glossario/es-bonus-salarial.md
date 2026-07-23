@@ -1,20 +1,20 @@
 ---
-term: "bônus"
+term: "bono salarial"
 definition: "Entienda qué es bônus, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-title: "bônus - Glosario Financiero"
+title: "bono salarial - Glosario Financiero"
 description: "Entienda qué es bônus, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/bonus.webp"
 category: "basico"
-tags: ["bônus", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+tags: ["bono salarial", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
 publishedAt: 2026-07-23
 readingTime: 5
 locale: "es"
-translationKey: "glossario-bonus"
+translationKey: "glossario-bonus-salarial"
 seo:
-  metaTitle: "bônus - Glosario Financiero"
+  metaTitle: "bono salarial - Glosario Financiero"
   metaDescription: "Entienda qué es bônus, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-  keywords: ["bônus", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+  keywords: ["bono salarial", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
 ## Qué es
@@ -31,7 +31,7 @@ El mecanismo del bônus varía según la política de cada empresa, pero general
 
 - La empresa define metas claras (ventas, productividad, ahorro de costos, etc.).  
 - Cada trimestre o año se evalúan los resultados y se compara con esas metas.  
-- Si el empleado cumple o supera los objetivos, se calcula el [valor](/es/glossario/es-valor) del bônus según un porcentaje preestablecido del salario o de la utilidad generada.  
+- Si el empleado cumple o supera los objetivos, se calcula el [valor](/es/glossario/es-valor-financeiro) del bônus según un porcentaje preestablecido del salario o de la utilidad generada.  
 - El pago se realiza en la nómina o como un abono separado, y suele estar sujeto a impuestos como cualquier ingreso.
 
 En la práctica, si trabajas con un salario de R$5.000 y la empresa establece un bono del 10 % por alcanzar la meta de ventas, recibirás [R$500](/es/posts/es-montando-carteira-diversificada-com-r-500) extra al final del período.

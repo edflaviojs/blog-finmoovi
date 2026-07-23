@@ -42,7 +42,7 @@ A xepa financeira oferece várias vantagens, incluindo:
 Embora a xepa financeira seja uma ferramenta importante para a estabilidade financeira, há alguns riscos a considerar:
 * [Inflação](/glossario/inflacao): se você guardar dinheiro em uma conta que não rende juros, o valor do seu dinheiro pode ser erodido pela inflação.
 * Juros baixos: se você escolher uma conta com juros baixos, seu dinheiro pode não crescer o suficiente para manter o ritmo da inflação.
-* **Dica prática:** considere investir em uma carteira diversificada de ativos, como [ações](/glossario/acoes), títulos e [fundos](/glossario/fundos) de investimento, para aumentar o potencial de crescimento de sua xepa financeira.
+* **Dica prática:** considere investir em uma carteira diversificada de ativos, como [ações](/glossario/acoes), títulos e [fundos](/glossario/fundo-de-investimento) de investimento, para aumentar o potencial de crescimento de sua xepa financeira.
 * Alguns exemplos de riscos incluem:
 * Perda de valor devido à inflação
 * Juros baixos

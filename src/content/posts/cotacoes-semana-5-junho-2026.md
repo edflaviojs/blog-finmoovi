@@ -29,11 +29,11 @@ A semana que passou foi marcada por movimentações significativas no mercado fi
 
 Durante a semana de 22 a 29 de junho de 2026, o dólar americano (USD) e o euro (EUR) apresentaram comportamentos distintos em relação ao real (BRL). O dólar fechou a semana em R$ 5.17, mostrando uma relativa estabilidade em comparação com as semanas anteriores. Já o euro, por sua vez, foi negociado a R$ 5.89, indicando uma pequena valorização em relação ao real.
 
-Essas taxas de câmbio são importantes para investidores que têm exposição a ativos em moedas estrangeiras. Se você investe em [ações](/glossario/acoes) ou [fundos](/glossario/fundos) que têm componentes em dólares ou euros, é crucial entender como as flutuações cambiais podem impactar o [valor](/glossario/valor) de seus investimentos. Ferramentas como o FinMoovi podem ser muito úteis para acompanhar seus investimentos em múltiplas moedas, oferecendo uma visão clara e atualizada de sua carteira.
+Essas taxas de câmbio são importantes para investidores que têm exposição a ativos em moedas estrangeiras. Se você investe em [ações](/glossario/acoes) ou [fundos](/glossario/fundo-de-investimento) que têm componentes em dólares ou euros, é crucial entender como as flutuações cambiais podem impactar o [valor](/glossario/valor-financeiro) de seus investimentos. Ferramentas como o FinMoovi podem ser muito úteis para acompanhar seus investimentos em múltiplas moedas, oferecendo uma visão clara e atualizada de sua carteira.
 
 ## Comentário sobre a [Selic](/glossario/selic) e Impacto nos Investimentos
 
-A [taxa](/glossario/taxa) Selic, que é a taxa de juros básica da economia brasileira, permaneceu estável durante a semana. A manutenção da Selic nos atuais patamares pode ter um impacto direto nos investimentos de [renda fixa](/glossario/renda-fixa), como títulos do Tesouro e CDBs. Investidores que buscam retorno com menor risco podem encontrar oportunidades atraentes nesse tipo de investimento, considerando as taxas atuais.
+A [taxa](/glossario/taxa-financeira) Selic, que é a taxa de juros básica da economia brasileira, permaneceu estável durante a semana. A manutenção da Selic nos atuais patamares pode ter um impacto direto nos investimentos de [renda fixa](/glossario/renda-fixa), como títulos do Tesouro e CDBs. Investidores que buscam retorno com menor risco podem encontrar oportunidades atraentes nesse tipo de investimento, considerando as taxas atuais.
 
 ![Comentário sobre a Selic e Impacto nos Investimentos](/images/posts/cotacoes-semana-5-junho-2026-inline-3.webp)
 

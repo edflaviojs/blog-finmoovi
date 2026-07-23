@@ -1,25 +1,25 @@
 ---
-term: "qualidade"
+term: "asset quality"
 definition: "Understand what qualidade is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "qualidade - Financial Glossary"
+title: "asset quality - Financial Glossary"
 description: "Understand what qualidade is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/qualidade.webp"
 category: "basico"
-tags: ["qualidade", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["asset quality", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
 publishedAt: 2026-07-12
 readingTime: 5
 locale: "en"
-translationKey: "glossario-qualidade"
+translationKey: "glossario-qualidade-de-ativos"
 seo:
-  metaTitle: "qualidade - Financial Glossary"
+  metaTitle: "asset quality - Financial Glossary"
   metaDescription: "Understand what qualidade is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["qualidade", "glossário", "finanças", "glossary", "finance", "brazil"]
+  keywords: ["asset quality", "glossário", "finanças", "glossary", "finance", "brazil"]
 ---
 
 ## What it is
 
-Qualidade, no contexto financeiro, é a ideia de priorizar **[valor](/en/glossario/en-valor) real** em vez de quantidade. Em vez de comprar o maior número de coisas, você busca produtos, serviços ou investimentos que realmente entregam o que prometem, duram mais e trazem benefícios sustentáveis. Essa postura evita gastos desnecessários e ajuda a construir um patrimônio mais sólido ao longo do tempo.  
+Qualidade, no contexto financeiro, é a ideia de priorizar **[valor](/en/glossario/en-valor-financeiro) real** em vez de quantidade. Em vez de comprar o maior número de coisas, você busca produtos, serviços ou investimentos que realmente entregam o que prometem, duram mais e trazem benefícios sustentáveis. Essa postura evita gastos desnecessários e ajuda a construir um patrimônio mais sólido ao longo do tempo.  
 
 ![What it is](/images/glossario/qualidade-inline-1.webp)
 

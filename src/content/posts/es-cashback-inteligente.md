@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Cashback: ¿Qué es y cómo funciona
-Imagina que estás comprando un producto en línea y, al finalizar la compra, recibes un descuento o un crédito en tu cuenta. Eso es básicamente lo que es el cashback. Es un programa de recompensa que ofrece un porcentaje del [valor](/es/glossario/es-valor) de la compra de vuelta al consumidor. Por ejemplo, si compras un producto de R$ 100 y el cashback es de 5%, recibirás R$ 5 de vuelta.
+Imagina que estás comprando un producto en línea y, al finalizar la compra, recibes un descuento o un crédito en tu cuenta. Eso es básicamente lo que es el cashback. Es un programa de recompensa que ofrece un porcentaje del [valor](/es/glossario/es-valor-financeiro) de la compra de vuelta al consumidor. Por ejemplo, si compras un producto de R$ 100 y el cashback es de 5%, recibirás R$ 5 de vuelta.
 
 ## Escogiendo el mejor programa de cashback
 Existen muchos programas de cashback disponibles en el mercado, así que es importante escoger el que mejor se adapte a tus necesidades. Algunos programas ofrecen cashback en tiendas específicas, mientras que otros ofrecen en una variedad de tiendas. **Consejo práctico:** verifica si el programa de cashback que estás considerando ofrece cashback en tiendas que frecuentas regularmente. Por ejemplo, si gastas R$ 500 por mes en supermercados, escoge un programa que ofrezca cashback en supermercados.

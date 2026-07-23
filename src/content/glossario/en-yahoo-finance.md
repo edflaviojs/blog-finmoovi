@@ -68,11 +68,11 @@ Vamos ver como alguém que ganha R$4.500 por mês pode usar o Yahoo Finance no
 
 - **Acompanhamento de investimento:** João investiu R$2.000 em ações da Vale (VALE3). Ele verifica a cotação diariamente no Yahoo Finance; quando a ação sobe 5 % em uma semana, ele decide vender parte para garantir lucro.  
 - **Planejamento de orçamento:** Maria, que recebe R$6.200, acompanha a variação do dólar. Quando o dólar chega a R$5,30, ela compra um cartão pré‑pago para a viagem ao exterior, aproveitando a cotação mais baixa.  
-- **Comparação de [fundos](/en/glossario/en-fundos):** Carlos tem R$8.000 para aplicar em fundos de [renda fixa](/en/glossario/en-renda-fixa). No Yahoo Finance, ele compara a taxa de retorno (rentabilidade) de três fundos diferentes e escolhe o que oferece 0,8 % a mais ao ano, aumentando seu ganho futuro.  
+- **Comparação de [fundos](/en/glossario/en-fundo-de-investimento):** Carlos tem R$8.000 para aplicar em fundos de [renda fixa](/en/glossario/en-renda-fixa). No Yahoo Finance, ele compara a taxa de retorno (rentabilidade) de três fundos diferentes e escolhe o que oferece 0,8 % a mais ao ano, aumentando seu ganho futuro.  
 
 **Practical tip:** antes de comprar ou vender, sempre verifique a tendência dos últimos 30 dias no gráfico; isso ajuda a evitar decisões baseadas em picos momentâneos.  
 
-**Practical tip:** configure alertas de preço para as ações que compõem sua carteira; assim você recebe uma notificação no celular assim que o [valor](/en/glossario/en-valor) atingir o limite que você definiu.  
+**Practical tip:** configure alertas de preço para as ações que compõem sua carteira; assim você recebe uma notificação no celular assim que o [valor](/en/glossario/en-valor-financeiro) atingir o limite que você definiu.  
 
 **Practical tip:** use a ferramenta de comparação de índices para entender como o seu investimento se comporta em relação ao Ibovespa (principal índice da bolsa brasileira).  
 

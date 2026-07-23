@@ -20,14 +20,14 @@ seo:
 ## O que é Webull
 O Webull é uma plataforma de investimento online que permite aos usuários comprar e vender [ações](/glossario/acoes), opções, ETFs (Exchange-Traded Funds) e outros ativos financeiros. É uma plataforma de negociação de baixo custo, sem taxas de manutenção ou corretagem, o que a torna uma opção atraente para investidores iniciantes e experientes. O Webull é uma empresa americana, mas está disponível para investidores de todo o mundo, incluindo o Brasil.
 
-A plataforma oferece uma variedade de recursos, incluindo gráficos em tempo real, notícias de mercado e análises técnicas. Além disso, o Webull também oferece uma [aplicação](/glossario/aplicacao) móvel, permitindo que os usuários monitorem e gerenciem suas contas de investimento em qualquer lugar. **Dica prática:** É importante lembrar que, antes de investir, é fundamental ter um conhecimento básico sobre os diferentes tipos de ativos financeiros e como funcionam os mercados.
+A plataforma oferece uma variedade de recursos, incluindo gráficos em tempo real, notícias de mercado e análises técnicas. Além disso, o Webull também oferece uma [aplicação](/glossario/aplicacao-financeira) móvel, permitindo que os usuários monitorem e gerenciem suas contas de investimento em qualquer lugar. **Dica prática:** É importante lembrar que, antes de investir, é fundamental ter um conhecimento básico sobre os diferentes tipos de ativos financeiros e como funcionam os mercados.
 
 ![O que é Webull](/images/glossario/webull-inline-1.webp)
 
 
 
 ## Como funciona
-O Webull funciona de forma semelhante a outras plataformas de investimento online. Os usuários criam uma conta, depositam [fundos](/glossario/fundos) e então podem começar a comprar e vender ativos financeiros. A plataforma oferece uma interface fácil de usar, com ferramentas de análise técnica e gráficos em tempo real para ajudar os usuários a tomar decisões informadas sobre seus investimentos. Além disso, o Webull também oferece uma variedade de opções de investimento, incluindo:
+O Webull funciona de forma semelhante a outras plataformas de investimento online. Os usuários criam uma conta, depositam [fundos](/glossario/fundo-de-investimento) e então podem começar a comprar e vender ativos financeiros. A plataforma oferece uma interface fácil de usar, com ferramentas de análise técnica e gráficos em tempo real para ajudar os usuários a tomar decisões informadas sobre seus investimentos. Além disso, o Webull também oferece uma variedade de opções de investimento, incluindo:
 * Ações de empresas americanas e internacionais
 * Opções sobre ações e índices
 * ETFs que seguem índices de mercado ou setores específicos
@@ -51,7 +51,7 @@ O Webull oferece várias vantagens para os investidores, incluindo:
 
 ## Riscos
 Como com qualquer investimento, há riscos associados ao uso do Webull. Alguns dos principais riscos incluem:
-* Risco de perda de capital: há sempre o risco de que o [valor](/glossario/valor) de seus investimentos diminua
+* Risco de perda de capital: há sempre o risco de que o [valor](/glossario/valor-financeiro) de seus investimentos diminua
 * Risco de [volatilidade](/glossario/volatilidade): os mercados financeiros podem ser voláteis, o que significa que os preços dos ativos financeiros podem flutuar rapidamente
 * Risco de liquidez: em alguns casos, pode ser difícil vender um ativo financeiro rapidamente, o que pode afetar o preço de venda
 

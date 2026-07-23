@@ -25,7 +25,7 @@ From most liquid to least liquid:
 
 1. Money in a checking account
 2. Tesouro Selic / CDB with daily liquidity
-3. [Fundos](/en/glossario/en-fundos) DI
+3. [Fundos](/en/glossario/en-fundo-de-investimento) DI
 4. CDB with a term
 5. Real estate funds
 6. Stocks

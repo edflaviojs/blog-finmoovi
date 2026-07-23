@@ -21,7 +21,7 @@ seo:
 Quando se trata de investir, é importante entender as opções disponíveis e como elas podem se adequar ao seu perfil de investidor. Dois dos investimentos mais populares no Brasil são o CDB (Certificado de Depósito Bancário) e o Tesouro [Selic](/glossario/selic). Mas, afinal, qual deles rende mais em 2026? Para entender isso, vamos mergulhar nos detalhes de cada um.
 
 ### O que é CDB?
-O CDB é um tipo de investimento de [renda fixa](/glossario/renda-fixa) oferecido por bancos e instituições financeiras. Ele funciona como um empréstimo que você faz ao banco, e em troca, o banco paga uma [taxa](/glossario/taxa) de [juros](/glossario/juros). O CDB pode ser pré-fixado, pós-fixado ou híbrido, cada um com sua própria forma de calcular os juros.
+O CDB é um tipo de investimento de [renda fixa](/glossario/renda-fixa) oferecido por bancos e instituições financeiras. Ele funciona como um empréstimo que você faz ao banco, e em troca, o banco paga uma [taxa](/glossario/taxa-financeira) de [juros](/glossario/juros). O CDB pode ser pré-fixado, pós-fixado ou híbrido, cada um com sua própria forma de calcular os juros.
 
 ### O que é Tesouro Selic?
 O Tesouro Selic, por outro lado, é um investimento de renda fixa emitido pelo Tesouro Nacional, com garantia do governo brasileiro. Ele é indexado à taxa Selic, que é a taxa básica de juros da economia definida pelo Banco Central do Brasil. Isso significa que o rendimento do Tesouro Selic acompanha as variações da taxa Selic.
@@ -49,7 +49,7 @@ O Tesouro Selic, por ser um investimento com garantia do governo, é considerado
 Ao decidir entre CDB e Tesouro Selic, é crucial avaliar seu perfil de investidor. Se você é um investidor conservador, que busca segurança e está disposto a abrir mão de um pouco de rendimento em troca de menor risco, o Tesouro Selic pode ser uma boa opção. Por outro lado, se você está disposto a assumir um risco um pouco maior em busca de um rendimento mais alto, o CDB pode ser mais atraente.
 
 ## Considerando Outras Opções
-Além do CDB e do Tesouro Selic, existem outras opções de investimento no mercado, como os [fundos](/glossario/fundos) de investimento, ações, e até investimentos em criptomoedas. Cada uma dessas opções tem seus próprios riscos e benefícios, e é importante fazer uma pesquisa aprofundada e considerar seu perfil de investidor antes de tomar qualquer decisão.
+Além do CDB e do Tesouro Selic, existem outras opções de investimento no mercado, como os [fundos](/glossario/fundo-de-investimento) de investimento, ações, e até investimentos em criptomoedas. Cada uma dessas opções tem seus próprios riscos e benefícios, e é importante fazer uma pesquisa aprofundada e considerar seu perfil de investidor antes de tomar qualquer decisão.
 
 ![Avaliando o Perfil de Investidor](/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026-4.webp)
 

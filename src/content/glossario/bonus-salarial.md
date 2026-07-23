@@ -1,20 +1,20 @@
 ---
-term: "bônus"
-definition: "Entenda o que é bônus, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-title: "bônus - Glossário Financeiro"
-description: "Entenda o que é bônus, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+term: "bônus salarial"
+definition: "Entenda o que é bônus salarial, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+title: "bônus salarial - Glossário Financeiro"
+description: "Entenda o que é bônus salarial, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/bonus.webp"
 category: "basico"
-tags: ["bônus", "glossário", "finanças"]
+tags: ["bônus salarial", "glossário", "finanças"]
 author: "FinMoovi"
 publishedAt: 2026-07-23
 readingTime: 5
 locale: "pt"
-translationKey: "glossario-bonus"
+translationKey: "glossario-bonus-salarial"
 seo:
-  metaTitle: "bônus - Glossário Financeiro"
-  metaDescription: "Entenda o que é bônus, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-  keywords: ["bônus", "glossário", "finanças"]
+  metaTitle: "bônus salarial - Glossário Financeiro"
+  metaDescription: "Entenda o que é bônus salarial, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+  keywords: ["bônus salarial", "glossário", "finanças"]
 ---
 
 ## O que é
@@ -31,7 +31,7 @@ Quando a empresa decide pagar bônus, ela costuma definir regras claras para que
 
 - **Meta de desempenho:** Você atinge uma meta de vendas ou produção e recebe um percentual do salário como bônus.  
 - **Participação nos lucros (PLR):** Se a empresa teve lucro no trimestre, parte desse lucro é distribuída entre os funcionários.  
-- **Bônus de retenção:** Um [valor](/glossario/valor) pago para quem aceita ficar na empresa por um período determinado.  
+- **Bônus de retenção:** Um [valor](/glossario/valor-financeiro) pago para quem aceita ficar na empresa por um período determinado.  
 - **Bônus de fim de ano:** Um pagamento extra no final do ano, muitas vezes ligado ao desempenho da empresa como um todo.
 
 ## Vantagens

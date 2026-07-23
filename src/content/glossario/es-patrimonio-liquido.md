@@ -18,7 +18,7 @@ Patrimônio Líquido = Ativos - Passivos. Em outras palavras: tudo que você tem
 ### Seus Ativos (o que você tem)
 
 - Dinheiro em conta e investimentos
-- Imóveis ([valor](/es/glossario/es-valor) de mercado)
+- Imóveis ([valor](/es/glossario/es-valor-financeiro) de mercado)
 - Veículos (valor de mercado)
 - Outros bens de valor
 

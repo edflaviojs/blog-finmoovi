@@ -100,7 +100,7 @@ Money Lover combina controle de despesas com técnicas de mudança de hábito, c
 
 **Prós**
 - Sistema de “bolsões” (envelopes virtuais) que ajuda a separar dinheiro para viagens, carro ou emergências.
-- Alertas de gasto excessivo configuráveis por categoria ou [valor](/glossario/valor).
+- Alertas de gasto excessivo configuráveis por categoria ou [valor](/glossario/valor-financeiro).
 - Disponível em português, inglês e espanhol, facilitando uso por quem tem família bilíngue.
 
 **Contras**

@@ -32,7 +32,7 @@ A última semana foi movimentada para quem acompanha o mercado brasileiro. O dó
 
 ## 2. [Selic](/en/glossario/en-selic) e o Impacto nos Investimentos
 
-A [taxa](/en/glossario/en-taxa) Selic permaneceu em **13,75 % ao ano**, conforme decisão do Copom na última reunião (21 de junho). A manutenção da taxa alta tem duas consequências claras:
+A [taxa](/en/glossario/en-taxa-financeira) Selic permaneceu em **13,75 % ao ano**, conforme decisão do Copom na última reunião (21 de junho). A manutenção da taxa alta tem duas consequências claras:
 
 ![2. Selic e o Impacto nos Investimentos](/images/posts/en-quotes-semana-3-july-2026-inline-3.webp)
 

@@ -34,7 +34,7 @@ Existen varias formas de invertir en dólar en Brasil, incluyendo:
 
 
 
-Vamos considerar un ejemplo: si inviertes R$1.000 en dólar a una tasa de cambio de R$4,50 por dólar, recibirás aproximadamente 222 dólares. Si el [valor](/es/glossario/es-valor) del dólar aumenta a R$5,00, el valor de tu inversión aumentará a R$1.111.
+Vamos considerar un ejemplo: si inviertes R$1.000 en dólar a una tasa de cambio de R$4,50 por dólar, recibirás aproximadamente 222 dólares. Si el [valor](/es/glossario/es-valor-financeiro) del dólar aumenta a R$5,00, el valor de tu inversión aumentará a R$1.111.
 
 ## Riesgos de la Inversión en Dólar
 Invertir en dólar involucra riesgos, incluyendo:

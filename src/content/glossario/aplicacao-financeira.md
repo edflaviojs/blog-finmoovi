@@ -1,20 +1,20 @@
 ---
-term: "aplicação"
-definition: "Entenda o que é aplicação, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-title: "aplicação - Glossário Financeiro"
-description: "Entenda o que é aplicação, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+term: "aplicação financeira"
+definition: "Entenda o que é aplicação financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+title: "aplicação financeira - Glossário Financeiro"
+description: "Entenda o que é aplicação financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/aplicacao.webp"
 category: "basico"
-tags: ["aplicação", "glossário", "finanças"]
+tags: ["aplicação financeira", "glossário", "finanças"]
 author: "FinMoovi"
 publishedAt: 2026-07-22
 readingTime: 5
 locale: "pt"
-translationKey: "glossario-aplicacao"
+translationKey: "glossario-aplicacao-financeira"
 seo:
-  metaTitle: "aplicação - Glossário Financeiro"
-  metaDescription: "Entenda o que é aplicação, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-  keywords: ["aplicação", "glossário", "finanças"]
+  metaTitle: "aplicação financeira - Glossário Financeiro"
+  metaDescription: "Entenda o que é aplicação financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+  keywords: ["aplicação financeira", "glossário", "finanças"]
 ---
 
 ## O que é

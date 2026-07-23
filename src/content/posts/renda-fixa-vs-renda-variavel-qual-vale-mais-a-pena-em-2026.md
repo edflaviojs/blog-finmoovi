@@ -26,7 +26,7 @@ Se você acabou de abrir a conta em um banco ou acabou de receber o primeiro sal
 
 ## Como funciona a renda fixa
 
-A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario/juros) ou rendimento) já está **pré‑definida** ou tem um limite máximo. O investidor sabe, no momento da [aplicação](/glossario/aplicacao), qual será a [taxa](/glossario/taxa) de retorno ou, no mínimo, qual o intervalo de variação. Os principais produtos são:
+A renda fixa engloba investimentos nos quais a remuneração ([juros](/glossario/juros) ou rendimento) já está **pré‑definida** ou tem um limite máximo. O investidor sabe, no momento da [aplicação](/glossario/aplicacao-financeira), qual será a [taxa](/glossario/taxa-financeira) de retorno ou, no mínimo, qual o intervalo de variação. Os principais produtos são:
 
 ![Como funciona a renda fixa](/images/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026-2.webp)
 

@@ -79,7 +79,7 @@ Iniciar na renda fixa não precisa ser complicado. Siga estes passos simples:
 - **Abra uma conta em uma corretora:** Escolha uma que ofereça plataforma amigável e taxa zero para Tesouro Direto.
 - **Defina o objetivo:** Reserve um valor para emergência, para a aposentadoria ou para a compra de um bem.
 - **Escolha o título:** Avalie prazo, taxa (pré‑fixada, pós‑fixada ou híbrida) e garantia (FGC ou governo).
-- **Faça a [aplicação](/glossario/aplicacao):** Use o app da corretora, informe o valor e confirme a operação. O dinheiro já fica aplicado em poucos minutos.
+- **Faça a [aplicação](/glossario/aplicacao-financeira):** Use o app da corretora, informe o valor e confirme a operação. O dinheiro já fica aplicado em poucos minutos.
 - **Acompanhe o rendimento:** Verifique periodicamente o extrato e ajuste a estratégia se a taxa Selic mudar ou se surgir um objetivo diferente.
 
 ## Comece hoje

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## O que é
-A moeda é um meio de troca universalmente aceito, que permite que as pessoas comprem e vendam bens e serviços. Em outras palavras, é a unidade de conta que usamos para medir o [valor](/glossario/valor) de tudo o que compramos ou vendemos. No Brasil, a nossa moeda é o Real (R$), e é emitida pelo Banco Central do Brasil. A moeda pode ser física, como as cédulas e moedas que carregamos no bolso, ou digital, como o [dinheiro](/posts/cashback-inteligente) que está na nossa conta bancária.
+A moeda é um meio de troca universalmente aceito, que permite que as pessoas comprem e vendam bens e serviços. Em outras palavras, é a unidade de conta que usamos para medir o [valor](/glossario/valor-financeiro) de tudo o que compramos ou vendemos. No Brasil, a nossa moeda é o Real (R$), e é emitida pelo Banco Central do Brasil. A moeda pode ser física, como as cédulas e moedas que carregamos no bolso, ou digital, como o [dinheiro](/posts/cashback-inteligente) que está na nossa conta bancária.
 
 A moeda é essencial para a economia, pois facilita as transações comerciais e permite que as pessoas façam escolhas sobre como gastar seu dinheiro. Imagine que você ganha um salário de R$ 5.000 por mês e precisa decidir como gastar esse dinheiro. Você pode escolher gastar R$ 2.000 em aluguel, R$ 1.000 em comida, R$ 500 em transporte e R$ 1.500 em lazer. A moeda permite que você faça essas escolhas e compre os bens e serviços que precisa ou deseja.
 

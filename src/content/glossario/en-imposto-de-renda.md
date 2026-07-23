@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-O imposto de renda é um tributo obrigatório que todos os brasileiros devem pagar anualmente, caso suas rendas ultrapasse um determinado [valor](/en/glossario/en-valor). Ele é calculado com base na renda bruta anual do contribuinte, que inclui salários, aposentadorias, aluguéis, [juros](/en/glossario/en-juros) e outros tipos de ganhos. O valor do imposto de renda varia de acordo com a faixa de renda do contribuinte, sendo que quem ganha mais paga uma porcentagem maior do seu salário.
+O imposto de renda é um tributo obrigatório que todos os brasileiros devem pagar anualmente, caso suas rendas ultrapasse um determinado [valor](/en/glossario/en-valor-financeiro). Ele é calculado com base na renda bruta anual do contribuinte, que inclui salários, aposentadorias, aluguéis, [juros](/en/glossario/en-juros) e outros tipos de ganhos. O valor do imposto de renda varia de acordo com a faixa de renda do contribuinte, sendo que quem ganha mais paga uma porcentagem maior do seu salário.
 
 * A faixa de isenção é de R$ 1.903,98 para quem recebe até R$ 1.903,98 por mês
 * A alíquota é de 7,5% para quem ganha entre R$ 1.903,99 e R$ 2.826,65 por mês

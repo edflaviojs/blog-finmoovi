@@ -27,7 +27,7 @@ El método 50-30-20 es una estrategia simple y eficaz para gestionar sus finanza
 ### Ejemplo Práctico
 Vamos a considerar un salario de R$ 4.000,00 por mes. Aplicando el método 50-30-20, tendríamos:
 
-| Categoría | Porcentaje | [Valor](/es/glossario/es-valor) (R$) |
+| Categoría | Porcentaje | [Valor](/es/glossario/es-valor-financeiro) (R$) |
 | --- | --- | --- |
 | Necesidades | 50% | 2.000,00 |
 | Deseos | 30% | 1.200,00 |

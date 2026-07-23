@@ -38,7 +38,7 @@ Agora que você entende sua situação financeira atual, é hora de definir meta
 Agora que você tem metas financeiras definidas, é hora de criar um orçamento para o segundo semestre. Isso inclui decidir como você vai alocar sua renda para alcançar suas metas. Aqui estão algumas dicas para ajudá-lo a criar um orçamento:
 1. **Aloque 50% de sua renda para necessidades básicas**: Isso inclui gastos com moradia, alimentação, transporte e serviços essenciais.
 2. **Aloque 30% de sua renda para desejos**: Isso inclui gastos com lazer, entretenimento e hobbies.
-3. **Aloque 20% de sua renda para metas financeiras**: Isso inclui gastos com economia, dívidas e [fundos](/glossario/fundos) de emergência.
+3. **Aloque 20% de sua renda para metas financeiras**: Isso inclui gastos com economia, dívidas e [fundos](/glossario/fundo-de-investimento) de emergência.
 4. **Revisite seu orçamento regularmente**: Use o FinMoovi para revisitar seu orçamento e fazer ajustes conforme necessário.
 
 ## Gerenciando Dívidas e Gastos

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-O Tesouro Direto é um programa criado pelo governo brasileiro que permite que os cidadãos invistam diretamente em títulos públicos, como LTNs (Letras do Tesouro Nacional) e NTNs (Notas do Tesouro Nacional). Esses títulos são basicamente empréstimos que você faz ao governo, que, em troca, paga [juros](/en/glossario/en-juros) sobre o [valor](/en/glossario/en-valor) investido. É uma forma de aplicar seu dinheiro de maneira segura e rentável, pois os títulos são garantidos pelo governo.
+O Tesouro Direto é um programa criado pelo governo brasileiro que permite que os cidadãos invistam diretamente em títulos públicos, como LTNs (Letras do Tesouro Nacional) e NTNs (Notas do Tesouro Nacional). Esses títulos são basicamente empréstimos que você faz ao governo, que, em troca, paga [juros](/en/glossario/en-juros) sobre o [valor](/en/glossario/en-valor-financeiro) investido. É uma forma de aplicar seu dinheiro de maneira segura e rentável, pois os títulos são garantidos pelo governo.
 
 Os títulos do Tesouro Direto variam em prazos e taxas de juros, o que significa que você pode escolher o que melhor se adequa às suas necessidades financeiras. Por exemplo, se você tem R$ 5.000 para investir e não precisa do dinheiro nos próximos 5 anos, pode optar por um título com prazo mais longo, que geralmente oferece taxas de juros mais altas.
 
@@ -32,14 +32,14 @@ Os títulos do Tesouro Direto variam em prazos e taxas de juros, o que significa
 ## How it works
 O funcionamento do Tesouro Direto é relativamente simples. Você compra um título público pelo valor nominal (o valor pelo qual o título é emitido) e, durante o prazo estabelecido, o governo paga juros sobre esse valor. No final do prazo, o governo devolve o valor nominal do título, mais os juros acumulados. **Practical tip:** É importante entender que os juros são pagos periodicamente, o que pode ser mensal, trimestral, semestral ou anual, dependendo do título escolhido.
 
-Por exemplo, se você investe R$ 3.000 em um título com prazo de 2 anos e [taxa](/en/glossario/en-taxa) de juros anual de 8%, ao final do prazo, você receberá os R$ 3.000 de volta, mais os juros, que seriam R$ 480 (8% de R$ 3.000 por 2 anos, considerando juros simples para simplificar o cálculo). **Practical tip:** Sempre verifique as taxas de juros atuais e os prazos disponíveis antes de investir, pois eles podem variar.
+Por exemplo, se você investe R$ 3.000 em um título com prazo de 2 anos e [taxa](/en/glossario/en-taxa-financeira) de juros anual de 8%, ao final do prazo, você receberá os R$ 3.000 de volta, mais os juros, que seriam R$ 480 (8% de R$ 3.000 por 2 anos, considerando juros simples para simplificar o cálculo). **Practical tip:** Sempre verifique as taxas de juros atuais e os prazos disponíveis antes de investir, pois eles podem variar.
 
 ## Advantages
 Os principais benefícios do Tesouro Direto incluem:
 * Segurança: Como os títulos são garantidos pelo governo, o risco de perda é muito baixo.
 * Rentabilidade: Os juros pagos podem ser mais altos do que os oferecidos por outras aplicações financeiras de baixo risco.
 * Liquidez: Embora os títulos tenham prazos fixos, você pode vendê-los antes do vencimento, se necessário, no entanto, pode haver penalidades ou perda de juros.
-* [Diversificação](/en/glossario/en-diversificacao): O Tesouro Direto pode ser uma boa opção para diversificar sua carteira de investimentos, reduzindo a dependência de apenas um tipo de [aplicação](/en/glossario/en-aplicacao).
+* [Diversificação](/en/glossario/en-diversificacao): O Tesouro Direto pode ser uma boa opção para diversificar sua carteira de investimentos, reduzindo a dependência de apenas um tipo de [aplicação](/en/glossario/en-aplicacao-financeira).
 
 **Practical tip:** Considere o Tesouro Direto como parte de uma estratégia de investimento de longo prazo, pois os juros compostos podem aumentar significativamente o valor do seu investimento ao longo do tempo.
 

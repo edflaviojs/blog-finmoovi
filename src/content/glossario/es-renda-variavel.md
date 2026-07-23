@@ -11,7 +11,7 @@ readingTime: 1
 
 ## ¿Qué es Renda Variável?
 
-Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce conforme o mercado. Você pode ganhar muito — ou perder. Inclui [ações](/es/glossario/es-acoes), [fundos](/es/glossario/es-fundos) imobiliários, ETFs, criptomoedas e derivativos.
+Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce conforme o mercado. Você pode ganhar muito — ou perder. Inclui [ações](/es/glossario/es-acoes), [fundos](/es/glossario/es-fundo-de-investimento) imobiliários, ETFs, criptomoedas e derivativos.
 
 ## Diferença para [Renda Fixa](/es/glossario/es-renda-fixa)
 

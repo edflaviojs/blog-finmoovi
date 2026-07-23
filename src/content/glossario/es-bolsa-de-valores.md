@@ -37,7 +37,7 @@ Algunos términos importantes que debes conocer son:
 
 ## Ventajas
 Invertir en la bolsa de valores puede ser una excelente forma de crecer tu patrimonio a largo plazo. Algunas de las ventajas de invertir en la bolsa de valores son:
-* Posibilidad de obtener altos rendimientos: las acciones pueden aumentar significativamente de [valor](/es/glossario/es-valor) si la empresa tiene un buen desempeño
+* Posibilidad de obtener altos rendimientos: las acciones pueden aumentar significativamente de [valor](/es/glossario/es-valor-financeiro) si la empresa tiene un buen desempeño
 * Diversificación: puedes invertir en diferentes empresas y sectores para reducir el riesgo
 * [Liquidez](/es/glossario/es-liquidez): puedes vender tus acciones fácilmente en el mercado de valores
 * Participación en el crecimiento económico: al invertir en la bolsa de valores, estás participando en el crecimiento económico de las empresas y del país

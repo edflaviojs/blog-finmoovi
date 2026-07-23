@@ -29,7 +29,7 @@ La lista de compras es tu mapa del tesoro. Cuando tienes el papel o la app abier
 
 ![Faça lista e siga à risca](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-2.webp)
 
-**Consejo práctico:** antes de salir, anota el precio máximo que estás dispuesto a pagar por cada artículo. Por ejemplo, para arroz puedes fijar R$ 20, para pechuga de pollo R$ 15. Cuando encuentres el producto, compara el [valor](/es/glossario/es-valor) real con el límite. Si está por encima, déjalo pasar – siempre habrá otra oportunidad.
+**Consejo práctico:** antes de salir, anota el precio máximo que estás dispuesto a pagar por cada artículo. Por ejemplo, para arroz puedes fijar R$ 20, para pechuga de pollo R$ 15. Cuando encuentres el producto, compara el [valor](/es/glossario/es-valor-financeiro) real con el límite. Si está por encima, déjalo pasar – siempre habrá otra oportunidad.
 
 ## Apuesta por marcas propias
 

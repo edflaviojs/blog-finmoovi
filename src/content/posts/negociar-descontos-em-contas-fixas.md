@@ -18,7 +18,7 @@ seo:
 ---
 
 ## [Economia](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) em Contas Fixas
-Quando pensamos em economizar [dinheiro](/posts/como-criar-uma-reserva-de-emergencia), geralmente nos concentramos em cortar [gastos](/posts/metodo-50-30-20-para-orcamento) desnecessários, como comprar menos fora ou cancelar assinaturas que não usamos. No entanto, há outra forma de economizar que muitas vezes passa despercebida: negociar descontos em contas fixas. Se você paga R$ 150 por mês em sua conta de luz, por exemplo, uma negociação bem-sucedida pode reduzir esse [valor](/glossario/valor) para R$ 120, resultando em uma [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) de R$ 30 por mês, ou R$ 360 por ano.
+Quando pensamos em economizar [dinheiro](/posts/como-criar-uma-reserva-de-emergencia), geralmente nos concentramos em cortar [gastos](/posts/metodo-50-30-20-para-orcamento) desnecessários, como comprar menos fora ou cancelar assinaturas que não usamos. No entanto, há outra forma de economizar que muitas vezes passa despercebida: negociar descontos em contas fixas. Se você paga R$ 150 por mês em sua conta de luz, por exemplo, uma negociação bem-sucedida pode reduzir esse [valor](/glossario/valor-financeiro) para R$ 120, resultando em uma [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) de R$ 30 por mês, ou R$ 360 por ano.
 
 ## Tipos de Contas Fixas
 Existem várias contas fixas que podemos negociar, incluindo:

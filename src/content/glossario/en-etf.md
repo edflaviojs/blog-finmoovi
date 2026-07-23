@@ -27,7 +27,7 @@ Os ETFs são negociados em bolsas de valores, assim como as ações, e seu preç
 
 
 ## How it works
-Um ETF funciona basicamente como um fundo mútuo, mas com algumas diferenças importantes. Enquanto os [fundos](/en/glossario/en-fundos) mútuos são negociados uma vez ao dia, após o fechamento da bolsa, os ETFs são negociados em tempo real, durante o horário de funcionamento da bolsa. Isso significa que você pode comprar ou vender um ETF a qualquer momento, desde que a bolsa esteja aberta. Além disso, os ETFs são mais transparentes do que os fundos mútuos, pois os ativos que compõem o fundo são divulgados diariamente.
+Um ETF funciona basicamente como um fundo mútuo, mas com algumas diferenças importantes. Enquanto os [fundos](/en/glossario/en-fundo-de-investimento) mútuos são negociados uma vez ao dia, após o fechamento da bolsa, os ETFs são negociados em tempo real, durante o horário de funcionamento da bolsa. Isso significa que você pode comprar ou vender um ETF a qualquer momento, desde que a bolsa esteja aberta. Além disso, os ETFs são mais transparentes do que os fundos mútuos, pois os ativos que compõem o fundo são divulgados diariamente.
 
 Os principais componentes de um ETF incluem:
 * O gestor do fundo, responsável por gerenciar os ativos do ETF

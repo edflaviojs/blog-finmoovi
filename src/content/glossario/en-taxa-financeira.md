@@ -1,20 +1,20 @@
 ---
-term: "taxa"
+term: "financial fee"
 definition: "Understand what taxa is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "taxa - Financial Glossary"
+title: "financial fee - Financial Glossary"
 description: "Understand what taxa is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/taxa.webp"
 category: "basico"
-tags: ["taxa", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["financial fee", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
 publishedAt: 2026-07-15
 readingTime: 5
 locale: "en"
-translationKey: "glossario-taxa"
+translationKey: "glossario-taxa-financeira"
 seo:
-  metaTitle: "taxa - Financial Glossary"
+  metaTitle: "financial fee - Financial Glossary"
   metaDescription: "Understand what taxa is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["taxa", "glossário", "finanças", "glossary", "finance", "brazil"]
+  keywords: ["financial fee", "glossário", "finanças", "glossary", "finance", "brazil"]
 ---
 
 ## What it is
@@ -26,7 +26,7 @@ A **taxa** é simplesmente a taxa cobrada por um serviço, um investimento ou um
 
 
 - **Taxa de juros:** custo do dinheiro emprestado, expressa em percentual ao ano.  
-- **Taxa de administração:** [valor](/en/glossario/en-valor) cobrado por gestores de [fundos](/en/glossario/en-fundos) para manter seu investimento.  
+- **Taxa de administração:** [valor](/en/glossario/en-valor-financeiro) cobrado por gestores de [fundos](/en/glossario/en-fundo-de-investimento) para manter seu investimento.  
 - **Taxa de manutenção:** cobrança mensal de bancos por serviços como cartão de crédito ou conta corrente.  
 
 ## How it works

@@ -22,7 +22,7 @@ Para empezar, es importante entender que un [presupuesto](/es/posts/es-como-crea
 
 ### Ejemplo de Gastos
 Aquí está una tabla con los gastos mensuales de la pareja:
-| Categoría | [Valor](/es/glossario/es-valor) (R$) |
+| Categoría | [Valor](/es/glossario/es-valor-financeiro) (R$) |
 | --- | --- |
 | Alquiler | 2.500 |
 | Cuentas (luz, agua, etc.) | 500 |

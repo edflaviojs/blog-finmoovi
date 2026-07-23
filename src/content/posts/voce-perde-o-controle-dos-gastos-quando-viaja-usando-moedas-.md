@@ -56,7 +56,7 @@ Ao abrir o FinMoovi pela primeira vez, escolha o real (R$) como moeda padrão. V
 Monte categorias como “Aeroporto”, “Restaurantes”, “Lembretes de Souvenir” e “Transporte”. Cada categoria pode ter um limite diário ou total, ajudando a controlar os gastos em tempo real.
 
 ### 3. Registre a despesa na moeda local
-Ao comprar aquele ingresso em Paris, abra o app, clique em “+ Nova Despesa”, selecione a categoria “Lazer” e, no campo de [valor](/glossario/valor), digite **30**. Logo abaixo, há um menu suspenso onde você escolhe **Euro (EUR)**. O FinMoovi traz a cotação do dia (por exemplo, 1 EUR = R$ 5,40) e mostra o valor convertido automaticamente (**R$ 162,00**). Você ainda pode adicionar uma nota “Museu do Louvre”.
+Ao comprar aquele ingresso em Paris, abra o app, clique em “+ Nova Despesa”, selecione a categoria “Lazer” e, no campo de [valor](/glossario/valor-financeiro), digite **30**. Logo abaixo, há um menu suspenso onde você escolhe **Euro (EUR)**. O FinMoovi traz a cotação do dia (por exemplo, 1 EUR = R$ 5,40) e mostra o valor convertido automaticamente (**R$ 162,00**). Você ainda pode adicionar uma nota “Museu do Louvre”.
 
 ### 4. Salve e veja o resumo
 Depois de salvar, a despesa aparece no seu painel principal. No canto superior, você vê o total gasto em reais, mas ao abrir a aba “Detalhes por Moeda”, percebe que ainda tem **€ 30**, **£ 12** e **R$ 80** listados separadamente, tudo convertido. Assim, fica fácil perceber quanto cada moeda está impactando seu orçamento.
@@ -91,7 +91,7 @@ Esses números são baseados em relatos de usuários do FinMoovi que compararam 
 ## Dicas extras para não perder o rumo financeiro na viagem
 
 1. **Desative notificações de conversão automática no cartão:** Alguns cartões oferecem “conversão automática” que pode incluir tarifas extras. Verifique a política do seu banco antes de usar.
-2. **Use o recurso de “cotação fixa”** do FinMoovi quando quiser travar a [taxa](/glossario/taxa) de câmbio de uma compra importante (como um ingresso de show) e evitar variações.
+2. **Use o recurso de “cotação fixa”** do FinMoovi quando quiser travar a [taxa](/glossario/taxa-financeira) de câmbio de uma compra importante (como um ingresso de show) e evitar variações.
 3. **Faça backup diário** das suas despesas. O FinMoovi sincroniza com a nuvem, mas é sempre bom ter um registro local caso precise consultar offline.
 
 ## Conclusão amigável

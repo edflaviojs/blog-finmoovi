@@ -20,7 +20,7 @@ seo:
 ## Introdução ao [Tesouro Direto](/glossario/tesouro-direto)
 O Tesouro Direto é um programa do governo brasileiro que permite aos cidadãos investir em títulos públicos, como LTN (Letras do Tesouro Nacional) e NTN (Notas do Tesouro Nacional). Esses títulos representam empréstimos feitos ao governo, que paga [juros](/glossario/juros) ao investidor. É uma forma de investir em [renda fixa](/glossario/renda-fixa), com retornos pré-definidos e baixo risco.
 
-Por exemplo, se você investir R$1.000 em um título LTN com prazo de 1 ano e juros de 5% ao ano, você receberá R$1.050 após o vencimento. Isso significa um retorno de R$50, ou 5% do [valor](/glossario/valor) investido.
+Por exemplo, se você investir R$1.000 em um título LTN com prazo de 1 ano e juros de 5% ao ano, você receberá R$1.050 após o vencimento. Isso significa um retorno de R$50, ou 5% do [valor](/glossario/valor-financeiro) investido.
 
 ## Vantagens do Tesouro Direto
 Uma das principais vantagens do Tesouro Direto é a segurança. Como os títulos são emitidos pelo governo, o risco de default (ou inadimplência) é muito baixo. Além disso, os juros são pré-definidos, o que significa que você sabe exatamente quanto vai receber ao final do prazo.

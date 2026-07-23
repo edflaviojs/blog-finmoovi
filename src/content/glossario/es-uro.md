@@ -20,7 +20,7 @@ seo:
 
 ## Qué es
 
-El **URO** (Unidad de Referencia Operativa) es una unidad de medida que algunos bancos y fintechs utilizan para ajustar el [valor](/es/glossario/es-valor) de ciertos productos financieros al índice de [inflación](/es/glossario/es-inflacao). En lugar de fijar una tasa de interés fija en pesos, el monto se expresa en URO y se actualiza automáticamente según la variación del índice de precios al consumidor (IPC). Así, el valor real del [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) se mantiene constante y el poder adquisitivo del prestatario o inversor no se erosiona con la inflación.
+El **URO** (Unidad de Referencia Operativa) es una unidad de medida que algunos bancos y fintechs utilizan para ajustar el [valor](/es/glossario/es-valor-financeiro) de ciertos productos financieros al índice de [inflación](/es/glossario/es-inflacao). En lugar de fijar una tasa de interés fija en pesos, el monto se expresa en URO y se actualiza automáticamente según la variación del índice de precios al consumidor (IPC). Así, el valor real del [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) se mantiene constante y el poder adquisitivo del prestatario o inversor no se erosiona con la inflación.
 
 ![Qué es](/images/glossario/uro-inline-1.webp)
 

@@ -40,3 +40,46 @@
 /posts/diferenca-entre-investir-e-poupar-o-que-realmente-importa  /posts/diferenca-entre-investir-e-poupar  301
 /en/posts/en-difference-between-investing-and-saving-what-really-matters  /en/posts/en-difference-between-investing-and-saving  301
 /es/posts/es-diferencia-entre-invertir-y-ahorrar-lo-que-realmente-importa  /es/posts/es-diferencia-entre-invertir-y-ahorrar  301
+
+# Desambiguacao de termos do glossario (SEO) - 2026-07-23
+# Termos genericos/ambiguos renomeados para a forma desambiguada (PT/EN/ES).
+
+# --- aplicacao -> aplicacao-financeira ---
+/glossario/aplicacao  /glossario/aplicacao-financeira  301
+/en/glossario/en-aplicacao  /en/glossario/en-aplicacao-financeira  301
+/es/glossario/es-aplicacao  /es/glossario/es-aplicacao-financeira  301
+
+# --- qualidade -> qualidade-de-ativos ---
+/glossario/qualidade  /glossario/qualidade-de-ativos  301
+/en/glossario/en-qualidade  /en/glossario/en-qualidade-de-ativos  301
+/es/glossario/es-qualidade  /es/glossario/es-qualidade-de-ativos  301
+
+# --- bonus -> bonus-salarial ---
+/glossario/bonus  /glossario/bonus-salarial  301
+/en/glossario/en-bonus  /en/glossario/en-bonus-salarial  301
+/es/glossario/es-bonus  /es/glossario/es-bonus-salarial  301
+
+# --- opcao -> opcao-financeira ---
+/glossario/opcao  /glossario/opcao-financeira  301
+/en/glossario/en-opcao  /en/glossario/en-opcao-financeira  301
+/es/glossario/es-opcao  /es/glossario/es-opcao-financeira  301
+
+# --- governanca -> governanca-corporativa ---
+/glossario/governanca  /glossario/governanca-corporativa  301
+/en/glossario/en-governanca  /en/glossario/en-governanca-corporativa  301
+/es/glossario/es-governanca  /es/glossario/es-governanca-corporativa  301
+
+# --- fundos -> fundo-de-investimento ---
+/glossario/fundos  /glossario/fundo-de-investimento  301
+/en/glossario/en-fundos  /en/glossario/en-fundo-de-investimento  301
+/es/glossario/es-fundos  /es/glossario/es-fundo-de-investimento  301
+
+# --- valor -> valor-financeiro ---
+/glossario/valor  /glossario/valor-financeiro  301
+/en/glossario/en-valor  /en/glossario/en-valor-financeiro  301
+/es/glossario/es-valor  /es/glossario/es-valor-financeiro  301
+
+# --- taxa -> taxa-financeira ---
+/glossario/taxa  /glossario/taxa-financeira  301
+/en/glossario/en-taxa  /en/glossario/en-taxa-financeira  301
+/es/glossario/es-taxa  /es/glossario/es-taxa-financeira  301

@@ -16,7 +16,7 @@ Meta financeira é um objetivo concreto para seu [dinheiro](/posts/cashback-inte
 ## Como definir boas metas (método SMART)
 
 - **S**pecífica: "Juntar R$ 10.000" (não "economizar mais")
-- **M**ensurável: [valor](/glossario/valor) exato que pode acompanhar
+- **M**ensurável: [valor](/glossario/valor-financeiro) exato que pode acompanhar
 - **A**lcançável: possível com sua renda atual
 - **R**elevante: importante para você
 - **T**emporal: com prazo definido

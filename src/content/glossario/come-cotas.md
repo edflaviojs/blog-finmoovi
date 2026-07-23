@@ -15,7 +15,7 @@ Come-Cotas são uma opção de [investimento](/posts/montando-carteira-diversifi
 Imagine que você quer investir em um fundo de [investimento](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) que custa R$ 10.000,00. No entanto, você só tem R$ 1.000,00 para investir. Com as Come-Cotas, você pode comprar 1/10 do fundo de investimento, ou seja, R$ 1.000,00. Isso significa que você terá direito a 1/10 dos ganhos ou perdas do fundo de investimento.
 
 ## Exemplos práticos
-Vamos considerar um exemplo prático. Suponha que você queira investir em um fundo de investimento que custa R$ 5.000,00. Você pode comprar 1/5 do fundo de investimento, ou seja, R$ 1.000,00. Se o fundo de investimento render 10% ao ano, você receberá R$ 200,00 em [dividendos](/glossario/dividendos) (10% de R$ 2.000,00, que é o [valor](/glossario/valor) da sua participação no fundo de investimento).
+Vamos considerar um exemplo prático. Suponha que você queira investir em um fundo de investimento que custa R$ 5.000,00. Você pode comprar 1/5 do fundo de investimento, ou seja, R$ 1.000,00. Se o fundo de investimento render 10% ao ano, você receberá R$ 200,00 em [dividendos](/glossario/dividendos) (10% de R$ 2.000,00, que é o [valor](/glossario/valor-financeiro) da sua participação no fundo de investimento).
 
 ## Vantagens e desvantagens
 Aqui estão algumas vantagens e desvantagens das Come-Cotas:

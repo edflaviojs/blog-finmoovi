@@ -33,7 +33,7 @@ La tasa Selic funciona como un mecanismo para regular la cantidad de dinero que 
 
 ## Ventajas
 La tasa Selic tiene varias ventajas para la economía y para los individuos. Algunas de estas ventajas incluyen:
-* La capacidad de controlar la inflación, lo que ayuda a mantener el [valor](/es/glossario/es-valor) del dinero.
+* La capacidad de controlar la inflación, lo que ayuda a mantener el [valor](/es/glossario/es-valor-financeiro) del dinero.
 * La posibilidad de estimular el crecimiento económico cuando la tasa Selic es baja.
 * La influencia en los intereses de los préstamos y créditos, lo que puede hacer que sean más asequibles o más caros, dependiendo de la situación económica.
 

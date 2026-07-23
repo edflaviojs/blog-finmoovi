@@ -1,20 +1,20 @@
 ---
-term: "opcão"
+term: "financial option"
 definition: "Understand what opcão is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "opcão - Financial Glossary"
+title: "financial option - Financial Glossary"
 description: "Understand what opcão is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/opcao.webp"
 category: "basico"
-tags: ["opcão", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["financial option", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
 publishedAt: 2026-07-11
 readingTime: 5
 locale: "en"
-translationKey: "glossario-opcao"
+translationKey: "glossario-opcao-financeira"
 seo:
-  metaTitle: "opcão - Financial Glossary"
+  metaTitle: "financial option - Financial Glossary"
   metaDescription: "Understand what opcão is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["opcão", "glossário", "finanças", "glossary", "finance", "brazil"]
+  keywords: ["financial option", "glossário", "finanças", "glossary", "finance", "brazil"]
 ---
 
 ## What it is
@@ -26,7 +26,7 @@ Opção é um contrato que dá ao comprador o direito – mas não a obrigação
 
 
 - **Direito, não obrigação:** você pode decidir exercer ou deixar a opção expirar.  
-- **Preço de exercício:** [valor](/en/glossario/en-valor) fixo que será usado para comprar ou vender o ativo.  
+- **Preço de exercício:** [valor](/en/glossario/en-valor-financeiro) fixo que será usado para comprar ou vender o ativo.  
 - **Data de vencimento:** último dia em que a opção pode ser exercida.  
 - **Prêmio:** valor pago ao vendedor da opção para garantir esse direito.
 

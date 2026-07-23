@@ -43,7 +43,7 @@ Para los inversores individuales, es crucial mantener una visión a largo plazo 
 
 ## Qué Esperar para la Próxima Semana
 
-En la próxima semana, los inversores deben estar atentos a las decisiones económicas clave que puedan influir en el [valor](/es/glossario/es-valor) del dólar y el euro frente al real. La política monetaria, las noticias económicas globales y las expectativas de crecimiento en Brasil serán factores importantes a considerar. Además, es fundamental mantenerse informado sobre las tendencias del mercado y ajustar las estrategias de inversión según sea necesario.
+En la próxima semana, los inversores deben estar atentos a las decisiones económicas clave que puedan influir en el [valor](/es/glossario/es-valor-financeiro) del dólar y el euro frente al real. La política monetaria, las noticias económicas globales y las expectativas de crecimiento en Brasil serán factores importantes a considerar. Además, es fundamental mantenerse informado sobre las tendencias del mercado y ajustar las estrategias de inversión según sea necesario.
 
 En resumen, la semana del 8 al 15 de junio de 2026 ha sido de movimientos significativos en el mercado financiero brasileño. Los inversores deben estar preparados para adaptarse a los cambios y considerar herramientas como FinMoovi para gestionar sus inversiones de manera efectiva. Con una visión clara y una estrategia bien planificada, es posible navegar con éxito por los desafíos y oportunidades del mercado financiero.
 

@@ -42,7 +42,7 @@ A Webull oferece várias vantagens em relação às tradicionais corretoras de v
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Como qualquer investimento, a Webull também envolve riscos. Alguns dos principais riscos incluem:
-* Risco de perda: Você pode perder dinheiro se os ativos financeiros que você comprou diminuírem de [valor](/en/glossario/en-valor).
+* Risco de perda: Você pode perder dinheiro se os ativos financeiros que você comprou diminuírem de [valor](/en/glossario/en-valor-financeiro).
 * Risco de volatilidade: Os preços dos ativos financeiros podem ser voláteis, o que significa que eles podem subir ou descer rapidamente.
 * Risco de liquidez: Você pode ter dificuldade em vender seus ativos financeiros rapidamente, o que pode afetar o preço que você obtém.
 

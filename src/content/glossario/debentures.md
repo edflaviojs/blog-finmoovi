@@ -25,7 +25,7 @@ Debêntures são títulos de dívida emitidos por empresas. Quando você compra 
 
 - **Isentas de IR** para pessoa física
 - Financiam projetos de infraestrutura
-- Rendimento: [IPCA](/glossario/ipca) + [taxa](/glossario/taxa) fixa
+- Rendimento: [IPCA](/glossario/ipca) + [taxa](/glossario/taxa-financeira) fixa
 
 ## Vantagens
 

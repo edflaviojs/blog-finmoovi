@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é Previdência Privada?
 
-Previdência Privada é um [investimento](/posts/montando-carteira-diversificada-com-r-500) de longo prazo pensado para a aposentadoria. Você contribui mensalmente e, no futuro, resgata o [valor](/glossario/valor) acumulado (com rendimentos). É um complemento à aposentadoria do INSS.
+Previdência Privada é um [investimento](/posts/montando-carteira-diversificada-com-r-500) de longo prazo pensado para a aposentadoria. Você contribui mensalmente e, no futuro, resgata o [valor](/glossario/valor-financeiro) acumulado (com rendimentos). É um complemento à aposentadoria do INSS.
 
 ## PGBL vs. VGBL
 
@@ -47,8 +47,8 @@ Previdência Privada é um [investimento](/posts/montando-carteira-diversificada
 
 ## Desvantagens
 
-- Taxas de administração altas (muitos [fundos](/glossario/fundos) cobram 1-2%)
-- [Taxa](/glossario/taxa) de carregamento (alguns cobram na entrada)
+- Taxas de administração altas (muitos [fundos](/glossario/fundo-de-investimento) cobram 1-2%)
+- [Taxa](/glossario/taxa-financeira) de carregamento (alguns cobram na entrada)
 - Rendimento pode ser inferior a investir por conta própria
 - Pouca flexibilidade
 

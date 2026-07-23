@@ -1,20 +1,20 @@
 ---
-term: "taxa"
-definition: "Entenda o que é taxa, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-title: "taxa - Glossário Financeiro"
-description: "Entenda o que é taxa, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+term: "taxa financeira"
+definition: "Entenda o que é taxa financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+title: "taxa financeira - Glossário Financeiro"
+description: "Entenda o que é taxa financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/taxa.webp"
 category: "basico"
-tags: ["taxa", "glossário", "finanças"]
+tags: ["taxa financeira", "glossário", "finanças"]
 author: "FinMoovi"
 publishedAt: 2026-07-15
 readingTime: 5
 locale: "pt"
-translationKey: "glossario-taxa"
+translationKey: "glossario-taxa-financeira"
 seo:
-  metaTitle: "taxa - Glossário Financeiro"
-  metaDescription: "Entenda o que é taxa, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-  keywords: ["taxa", "glossário", "finanças"]
+  metaTitle: "taxa financeira - Glossário Financeiro"
+  metaDescription: "Entenda o que é taxa financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+  keywords: ["taxa financeira", "glossário", "finanças"]
 ---
 
 ## O que é
@@ -47,7 +47,7 @@ Mesmo que a palavra “taxa” soe negativa, ela traz benefícios quando bem com
 
 - **Acesso ao crédito** – permite comprar um carro ou reformar a casa mesmo sem ter o dinheiro todo à vista.  
 - **Serviços convenientes** – transferências instantâneas, pagamentos automáticos e cartões com proteção contra fraudes.  
-- **Investimentos** – [fundos](/glossario/fundos) de investimento podem ter taxa de administração que garante a gestão profissional do seu dinheiro.  
+- **Investimentos** – [fundos](/glossario/fundo-de-investimento) de investimento podem ter taxa de administração que garante a gestão profissional do seu dinheiro.  
 
 ## Riscos
 

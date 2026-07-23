@@ -24,11 +24,11 @@ A reserva precisa ter **[liquidez](/es/glossario/es-liquidez) diária** (acesso 
 - [CDB](/es/glossario/es-cdb) com liquidez diária (100% [CDI](/es/glossario/es-cdi) ou mais)
 - Conta remunerada
 
-**Nunca** deixe em [ações](/es/glossario/es-acoes), [fundos](/es/glossario/es-fundos) imobiliários ou investimentos com prazo de resgate.
+**Nunca** deixe em [ações](/es/glossario/es-acoes), [fundos](/es/glossario/es-fundo-de-investimento) imobiliários ou investimentos com prazo de resgate.
 
 ## Como montar?
 
-1. Defina o [valor](/es/glossario/es-valor) alvo (3-6 meses de gastos)
+1. Defina o [valor](/es/glossario/es-valor-financeiro) alvo (3-6 meses de gastos)
 2. Separe um valor fixo todo mês (10-20% da renda)
 3. Automatize a transferência
 4. Não toque até completar o valor alvo

@@ -20,7 +20,7 @@ seo:
 ## What it is
 O termo "juros" é comum em nosso dia a dia, especialmente quando falamos sobre empréstimos, investimentos e contas bancárias. Mas, afinal, o que são juros? Em resumo, juros são os valores adicionais que você paga ou recebe em cima de um montante principal, dependendo se você é o tomador do empréstimo ou o investidor. Por exemplo, se você toma um empréstimo de R$ 5.000,00 com juros de 10% ao ano, após um ano, você terá que pagar R$ 5.500,00 (R$ 5.000,00 de principal + R$ 500,00 de juros).
 
-Quando se trata de investimentos, os juros podem ser seus amigos. Imagine que você investe R$ 3.000,00 em uma [aplicação](/en/glossario/en-aplicacao) que rende 8% ao ano. Após um ano, seu investimento valerá R$ 3.240,00, pois você ganhou R$ 240,00 em juros. É importante entender que os juros podem ser simples ou compostos. Juros simples são calculados apenas sobre o [valor](/en/glossario/en-valor) principal, enquanto juros compostos são calculados sobre o principal e sobre os juros anteriores, o que pode fazer seu investimento crescer de forma exponencial com o tempo.
+Quando se trata de investimentos, os juros podem ser seus amigos. Imagine que você investe R$ 3.000,00 em uma [aplicação](/en/glossario/en-aplicacao-financeira) que rende 8% ao ano. Após um ano, seu investimento valerá R$ 3.240,00, pois você ganhou R$ 240,00 em juros. É importante entender que os juros podem ser simples ou compostos. Juros simples são calculados apenas sobre o [valor](/en/glossario/en-valor-financeiro) principal, enquanto juros compostos são calculados sobre o principal e sobre os juros anteriores, o que pode fazer seu investimento crescer de forma exponencial com o tempo.
 
 ![What it is](/images/glossario/juros-inline-1.webp)
 
@@ -37,7 +37,7 @@ Nesses casos, é crucial calcular os juros para saber exatamente quanto você pa
 ## Advantages
 Os juros podem ser benéficos quando você está do lado do investidor. Eles podem aumentar seu patrimônio ao longo do tempo, especialmente se você optar por investimentos de longo prazo com taxas de juros atraentes. Além disso, juros podem ser uma fonte de renda passiva, o que significa que você pode ganhar dinheiro sem precisar trabalhar ativamente por ele.
 
-No entanto, é importante escolher investimentos seguros e que sejam adequados para o seu perfil de risco. **Practical tip:** Diversifique seus investimentos para minimizar riscos. Por exemplo, você pode investir parte do seu dinheiro em títulos de [renda fixa](/en/glossario/en-renda-fixa), como CDBs ou LCI/LCA, e outra parte em [ações](/en/glossario/en-acoes) ou [fundos](/en/glossario/en-fundos) de investimento.
+No entanto, é importante escolher investimentos seguros e que sejam adequados para o seu perfil de risco. **Practical tip:** Diversifique seus investimentos para minimizar riscos. Por exemplo, você pode investir parte do seu dinheiro em títulos de [renda fixa](/en/glossario/en-renda-fixa), como CDBs ou LCI/LCA, e outra parte em [ações](/en/glossario/en-acoes) ou [fundos](/en/glossario/en-fundo-de-investimento) de investimento.
 
 ![Advantages](/images/glossario/juros-inline-3.webp)
 

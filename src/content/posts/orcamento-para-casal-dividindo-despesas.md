@@ -22,7 +22,7 @@ Para começar, é importante entender que um orçamento eficaz para casais envol
 
 ### Exemplo de Despesas
 Aqui está uma tabela com as despesas mensais do casal:
-| Categoria | [Valor](/glossario/valor) (R$) |
+| Categoria | [Valor](/glossario/valor-financeiro) (R$) |
 | --- | --- |
 | Aluguel | 2.500 |
 | Contas (luz, água, etc.) | 500 |

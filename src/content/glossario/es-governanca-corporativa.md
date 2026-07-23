@@ -1,20 +1,20 @@
 ---
-term: "governança"
+term: "gobernanza corporativa"
 definition: "Entienda qué es governança, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-title: "governança - Glosario Financiero"
+title: "gobernanza corporativa - Glosario Financiero"
 description: "Entienda qué es governança, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/governanca.webp"
 category: "basico"
-tags: ["governança", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+tags: ["gobernanza corporativa", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
 publishedAt: 2026-07-05
 readingTime: 5
 locale: "es"
-translationKey: "glossario-governanca"
+translationKey: "glossario-governanca-corporativa"
 seo:
-  metaTitle: "governança - Glosario Financiero"
+  metaTitle: "gobernanza corporativa - Glosario Financiero"
   metaDescription: "Entienda qué es governança, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-  keywords: ["governança", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+  keywords: ["gobernanza corporativa", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
 ## Qué es la governança

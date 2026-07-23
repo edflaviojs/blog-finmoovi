@@ -26,7 +26,7 @@ Com um pouco de criatividade e [planejamento](/posts/orcamento-com-salario-minim
 
 ## 1️⃣ Defina um limite de gasto antes de tudo
 
-Antes de sair navegando pela internet, fixe um teto. Use a regra dos **30 %**: o ideal é que o [valor](/glossario/valor) gasto com presentes não ultrapasse 30 % da sua verba de lazer ou de “extras” do mês.
+Antes de sair navegando pela internet, fixe um teto. Use a regra dos **30 %**: o ideal é que o [valor](/glossario/valor-financeiro) gasto com presentes não ultrapasse 30 % da sua verba de lazer ou de “extras” do mês.
 
 ![1️⃣ Defina um limite de gasto antes de tudo](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--2.webp)
 

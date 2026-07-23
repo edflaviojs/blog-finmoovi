@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Ações são uma forma de investimento que permite que você compre uma parte de uma empresa. Imagine que você é dono de uma pequena loja de roupas e quer expandir seu negócio. Você pode vender ações da sua loja para outros investidores, que então se tornam donos de uma parte da sua empresa. Em troca, você recebe o dinheiro necessário para expandir seu negócio. As ações são negociadas em bolsas de valores, como a B3 no Brasil, e seu [valor](/en/glossario/en-valor) pode variar de acordo com o desempenho da empresa.
+Ações são uma forma de investimento que permite que você compre uma parte de uma empresa. Imagine que você é dono de uma pequena loja de roupas e quer expandir seu negócio. Você pode vender ações da sua loja para outros investidores, que então se tornam donos de uma parte da sua empresa. Em troca, você recebe o dinheiro necessário para expandir seu negócio. As ações são negociadas em bolsas de valores, como a B3 no Brasil, e seu [valor](/en/glossario/en-valor-financeiro) pode variar de acordo com o desempenho da empresa.
 
 As ações são uma forma de investimento de longo prazo, pois o valor delas pode flutuar ao longo do tempo. No entanto, se você investir em ações de empresas sólidas e bem geridas, é possível obter retornos significativos ao longo do tempo. Por exemplo, se você investir R$ 5.000 em ações de uma empresa que paga dividendos anuais de 5%, você receberá R$ 250 por ano, o que é um retorno de 5% sobre o seu investimento.
 

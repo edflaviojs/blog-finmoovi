@@ -47,7 +47,7 @@ Otra ventaja del Tesouro Direto es la liquidez, ya que los títulos pueden ser v
 
 
 ## Riesgos
-Aunque el Tesouro Direto es considerado un instrumento de inversión de baja rentabilidad, también hay algunos riesgos que debes considerar. **Consejo práctico:** siempre es importante evaluar tus objetivos financieros y tu tolerancia al riesgo antes de invertir. Uno de los principales riesgos del Tesouro Direto es el riesgo de inflación, ya que la inflación puede erosionar el [valor](/es/glossario/es-valor) del capital invertido. Por ejemplo, si la inflación es del 10% anual y el rendimiento del título es del 5% anual, el valor real del capital invertido disminuirá.
+Aunque el Tesouro Direto es considerado un instrumento de inversión de baja rentabilidad, también hay algunos riesgos que debes considerar. **Consejo práctico:** siempre es importante evaluar tus objetivos financieros y tu tolerancia al riesgo antes de invertir. Uno de los principales riesgos del Tesouro Direto es el riesgo de inflación, ya que la inflación puede erosionar el [valor](/es/glossario/es-valor-financeiro) del capital invertido. Por ejemplo, si la inflación es del 10% anual y el rendimiento del título es del 5% anual, el valor real del capital invertido disminuirá.
 
 Otro riesgo del Tesouro Direto es el riesgo de liquidez, ya que los títulos pueden ser difíciles de vender en el mercado secundario, especialmente si el plazo de vencimiento es largo. **Consejo práctico:** siempre es importante evaluar la liquidez de tus inversiones y considerar la posibilidad de vender tus títulos antes del vencimiento si necesitas acceso a tu dinero.
 

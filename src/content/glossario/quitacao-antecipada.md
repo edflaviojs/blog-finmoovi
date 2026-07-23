@@ -25,13 +25,13 @@ Quitação antecipada é pagar uma dívida ([financiamento](/glossario/financiam
 Exemplo: financiamento de R$ 200.000 em 30 anos a 10% a.a.
 - Total que pagaria: ~R$ 632.000
 - Se quitar em 15 anos: ~R$ 387.000
-- **Economia: R$ 245.000** (quase o [valor](/glossario/valor) do imóvel!)
+- **Economia: R$ 245.000** (quase o [valor](/glossario/valor-financeiro) do imóvel!)
 
 ## Quando vale a pena quitar
 
 ✅ Vale a pena:
 - Juros da dívida são maiores que rendimento dos investimentos
-- Financiamento imobiliário com [taxa](/glossario/taxa) alta (>9% a.a.)
+- Financiamento imobiliário com [taxa](/glossario/taxa-financeira) alta (>9% a.a.)
 - Empréstimos pessoais e consignados
 - Quando tem dinheiro parado rendendo menos
 

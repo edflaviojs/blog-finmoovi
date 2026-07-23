@@ -96,7 +96,7 @@ Money Lover combina control de gastos con técnicas de [cambio](/es/glossario/es
 
 **Pros**
 - Sistema de “bolsillos” (sobres virtuales) que ayuda a separar dinero para viajes, coche o emergencias.
-- Alertas de gasto excesivo configurables por categoría o [valor](/es/glossario/es-valor).
+- Alertas de gasto excesivo configurables por categoría o [valor](/es/glossario/es-valor-financeiro).
 - Disponible en portugués, inglés y español, facilitando uso por quien tiene familia bilingüe.
 
 **Contras**

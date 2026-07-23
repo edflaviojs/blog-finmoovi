@@ -1,27 +1,27 @@
 ---
-term: "valor"
-definition: "Entenda o que é valor, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-title: "valor - Glossário Financeiro"
-description: "Entenda o que é valor, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+term: "valor financeiro"
+definition: "Entenda o que é valor financeiro, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+title: "valor financeiro - Glossário Financeiro"
+description: "Entenda o que é valor financeiro, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/valor.webp"
 category: "basico"
-tags: ["valor", "glossário", "finanças"]
+tags: ["valor financeiro", "glossário", "finanças"]
 author: "FinMoovi"
 publishedAt: 2026-06-24
 readingTime: 5
 locale: "pt"
-translationKey: "glossario-valor"
+translationKey: "glossario-valor-financeiro"
 seo:
-  metaTitle: "valor - Glossário Financeiro"
-  metaDescription: "Entenda o que é valor, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
-  keywords: ["valor", "glossário", "finanças"]
+  metaTitle: "valor financeiro - Glossário Financeiro"
+  metaDescription: "Entenda o que é valor financeiro, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
+  keywords: ["valor financeiro", "glossário", "finanças"]
 ---
 
 ## O que é
 O termo "valor" é fundamental no mundo das finanças, mas o que ele realmente significa? Em resumo, o valor se refere ao quanto algo vale, seja um [investimento](/posts/montando-carteira-diversificada-com-r-500), um bem, um serviço ou até mesmo o seu tempo. No contexto financeiro, o valor é determinado por uma combinação de fatores, incluindo a oferta e a demanda, o risco envolvido e a expectativa de retorno. Por exemplo, se você tem um apartamento que pode ser alugado por R$ 2.000 por mês, o valor desse apartamento pode ser estimado com base na renda que ele gera.
 
 ## 
-Para entender melhor como o valor funciona, vamos considerar alguns exemplos práticos. Se você ganha R$ 5.000 por mês e gasta R$ 3.000 com despesas fixas, o valor do seu tempo pode ser calculado com base na sua capacidade de gerar renda. Se você decidir investir R$ 1.000 em uma [aplicação](/glossario/aplicacao) que rende 10% ao ano, o valor desse investimento aumentará com o tempo. Aqui estão alguns pontos importantes a considerar:
+Para entender melhor como o valor funciona, vamos considerar alguns exemplos práticos. Se você ganha R$ 5.000 por mês e gasta R$ 3.000 com despesas fixas, o valor do seu tempo pode ser calculado com base na sua capacidade de gerar renda. Se você decidir investir R$ 1.000 em uma [aplicação](/glossario/aplicacao-financeira) que rende 10% ao ano, o valor desse investimento aumentará com o tempo. Aqui estão alguns pontos importantes a considerar:
 * O valor pode variar ao longo do tempo devido a mudanças no mercado ou na economia.
 * O valor de um investimento ou ativo pode ser influenciado por fatores como [inflação](/glossario/inflacao), [juros](/glossario/juros) e taxas de [câmbio](/glossario/cambio).
 * É importante considerar o risco envolvido ao determinar o valor de um investimento ou ativo.

@@ -51,7 +51,7 @@ Construir uma [reserva de emergência](/glossario/reserva-de-emergencia) e aloca
 
 
 
-| Item                     | [Valor](/glossario/valor) (R$) |
+| Item                     | [Valor](/glossario/valor-financeiro) (R$) |
 |--------------------------|-----------|
 | Salário bruto mensal     | 3.500,00 |
 | Despesas fixas mensais   | 1.800,00 |

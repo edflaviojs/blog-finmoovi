@@ -31,7 +31,7 @@ A taxa Selic é definida pelo Copom, que se reúne regularmente para discutir a 
 
 * A taxa Selic é usada como uma ferramenta para controlar a inflação, pois quando ela está alta, os juros também estão altos, o que desencoraja as pessoas a pedir empréstimos e a consumir, reduzindo assim a pressão sobre os preços.
 * A taxa Selic também influencia os juros dos investimentos, como a [poupança](/glossario/poupanca) e os títulos de dívida pública, o que pode afetar a rentabilidade dos investimentos.
-* Além disso, a taxa Selic pode influenciar o [valor](/glossario/valor) do real em relação a outras moedas, o que pode afetar as exportações e importações do país.
+* Além disso, a taxa Selic pode influenciar o [valor](/glossario/valor-financeiro) do real em relação a outras moedas, o que pode afetar as exportações e importações do país.
 
 ## Como funciona
 A taxa Selic funciona como um mecanismo de controle da oferta de dinheiro no mercado. Quando a taxa Selic está alta, os bancos precisam pagar mais juros para emprestar dinheiro, o que os desencoraja a emprestar. Isso reduz a quantidade de dinheiro em circulação e ajuda a controlar a inflação.
@@ -65,7 +65,7 @@ A taxa Selic também envolve riscos, como:
 ## Exemplos práticos
 Vamos considerar alguns exemplos práticos para entender melhor como a taxa Selic funciona:
 * Se você tem um salário de R$ 5.000 por mês e você paga 10% de juros sobre um empréstimo de R$ 10.000, você pagará R$ 1.000 por ano em juros. Se a taxa Selic aumentar para 12%, você pagará R$ 1.200 por ano em juros.
-* Se você investe R$ 10.000 em uma [aplicação](/glossario/aplicacao) que paga 8% de juros ao ano e a taxa Selic aumenta para 10%, você pode perder dinheiro se você não ajustar seu investimento.
+* Se você investe R$ 10.000 em uma [aplicação](/glossario/aplicacao-financeira) que paga 8% de juros ao ano e a taxa Selic aumenta para 10%, você pode perder dinheiro se você não ajustar seu investimento.
 * Se você tem um cartão de crédito com um limite de R$ 5.000 e você paga 20% de juros ao mês, você pagará R$ 1.000 por mês em juros se você não pagar o saldo integral. Se a taxa Selic aumentar, os juros também podem aumentar.
 
 **Dica prática:** É importante verificar as taxas de juros e as condições dos empréstimos e investimentos antes de tomar uma decisão. Você pode usar um aplicativo de finanças pessoais para ajudar a gerenciar suas finanças e tomar decisões informadas.

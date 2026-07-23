@@ -31,7 +31,7 @@ A cotação do dólar americano (USD) fechou a semana em R$ 5,18, apresentando u
 
 ## [Selic](/en/glossario/en-selic) e Impacto nos Investimentos
 
-A [taxa](/en/glossario/en-taxa) Selic, que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um fator crucial para os investidores. Com a manutenção da taxa Selic em níveis específicos, os investimentos em títulos públicos e outras aplicações financeiras podem ser afetados. É fundamental entender como as alterações na Selic podem influenciar o rendimento dos seus investimentos e ajustar sua estratégia de acordo. Se você está pensando em investir, é uma boa ideia considerar a [diversificação](/en/glossario/en-diversificacao), incluindo investimentos em diferentes moedas, o que pode ser facilitado com ferramentas como o [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), que ajuda a acompanhar seus investimentos em múltiplas moedas de forma prática.
+A [taxa](/en/glossario/en-taxa-financeira) Selic, que é a taxa de [juros](/en/glossario/en-juros) básica da economia brasileira, continua sendo um fator crucial para os investidores. Com a manutenção da taxa Selic em níveis específicos, os investimentos em títulos públicos e outras aplicações financeiras podem ser afetados. É fundamental entender como as alterações na Selic podem influenciar o rendimento dos seus investimentos e ajustar sua estratégia de acordo. Se você está pensando em investir, é uma boa ideia considerar a [diversificação](/en/glossario/en-diversificacao), incluindo investimentos em diferentes moedas, o que pode ser facilitado com ferramentas como o [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), que ajuda a acompanhar seus investimentos em múltiplas moedas de forma prática.
 
 ![Selic e Impacto nos Investimentos](/images/posts/en-quotes-semana-1-july-2026-inline-3.webp)
 
@@ -39,7 +39,7 @@ A [taxa](/en/glossario/en-taxa) Selic, que é a taxa de [juros](/en/glossario/en
 
 ## Dica Prática para Investidores Individuais
 
-Para os investidores individuais, uma dica valiosa é manter a diversificação como chave para a gestão de riscos. Isso significa não colocar todos os ovos na mesma cesta, distribuindo seus investimentos entre diferentes ativos, como [ações](/en/glossario/en-acoes), títulos, [fundos](/en/glossario/en-fundos) e até investimentos em moedas estrangeiras. Além disso, é importante ter um plano de longo prazo e não se deixar levar pelas flutuações diárias do mercado. Com o [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), você pode ter uma visão clara de todos os seus investimentos, o que facilita a tomada de decisões informadas.
+Para os investidores individuais, uma dica valiosa é manter a diversificação como chave para a gestão de riscos. Isso significa não colocar todos os ovos na mesma cesta, distribuindo seus investimentos entre diferentes ativos, como [ações](/en/glossario/en-acoes), títulos, [fundos](/en/glossario/en-fundo-de-investimento) e até investimentos em moedas estrangeiras. Além disso, é importante ter um plano de longo prazo e não se deixar levar pelas flutuações diárias do mercado. Com o [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), você pode ter uma visão clara de todos os seus investimentos, o que facilita a tomada de decisões informadas.
 
 ## O Que Esperar para a Próxima Semana
 

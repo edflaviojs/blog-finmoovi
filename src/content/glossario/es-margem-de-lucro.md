@@ -32,7 +32,7 @@ Margem de lucro é quanto sobra de cada real que entra. Se uma empresa fatura R$
 
 ## Ejemplo práctico (loja de roupas)
 
-| | [Valor](/es/glossario/es-valor) | Margem |
+| | [Valor](/es/glossario/es-valor-financeiro) | Margem |
 |--|-------|--------|
 | Faturamento | R$ 50.000 | - |
 | Custo das roupas | R$ 20.000 | Bruta: 60% |

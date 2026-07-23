@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-El Z‑Score es una medida estadística que indica cuán lejos está un [valor](/es/glossario/es-valor) de la media de un conjunto de datos, expresado en “desviaciones estándar”. En [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) se usa para evaluar la salud financiera de una persona o de una empresa, comparando ingresos, [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) y deudas con el promedio del mercado. Cuanto más alto sea el Z‑Score, mejor será la posición financiera; un valor bajo puede señalar problemas de [liquidez](/es/glossario/es-liquidez) o de endeudamiento.
+El Z‑Score es una medida estadística que indica cuán lejos está un [valor](/es/glossario/es-valor-financeiro) de la media de un conjunto de datos, expresado en “desviaciones estándar”. En [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) se usa para evaluar la salud financiera de una persona o de una empresa, comparando ingresos, [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) y deudas con el promedio del mercado. Cuanto más alto sea el Z‑Score, mejor será la posición financiera; un valor bajo puede señalar problemas de [liquidez](/es/glossario/es-liquidez) o de endeudamiento.
 
 ![Qué es](/images/glossario/z-score-inline-1.webp)
 

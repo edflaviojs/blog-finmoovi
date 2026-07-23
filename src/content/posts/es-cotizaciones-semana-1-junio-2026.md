@@ -35,7 +35,7 @@ Para los inversores individuales, es esencial diversificar su cartera para minim
 
 ## ¿Qué Esperar para la Próxima Semana?
 
-A medida que nos acercamos a la próxima semana, es importante estar atento a los anuncios del Banco Central y a las tendencias económicas globales. Cualquier [cambio](/es/glossario/es-cambio) en la política monetaria o en la percepción de la economía brasileña puede influir en el [valor](/es/glossario/es-valor) del real y, por extension, en las decisiones de inversión. Mantener una perspectiva a largo plazo y ajustar las estrategias de inversión según sea necesario puede ser clave para navegar los mercados financieros en constante evolución. Con la ayuda de herramientas como FinMoovi y manteniéndose al tanto de las últimas noticias del mercado, los inversores individuales pueden estar mejor preparados para enfrentar los desafíos y oportunidades que se presentan en el mercado financiero brasileño.
+A medida que nos acercamos a la próxima semana, es importante estar atento a los anuncios del Banco Central y a las tendencias económicas globales. Cualquier [cambio](/es/glossario/es-cambio) en la política monetaria o en la percepción de la economía brasileña puede influir en el [valor](/es/glossario/es-valor-financeiro) del real y, por extension, en las decisiones de inversión. Mantener una perspectiva a largo plazo y ajustar las estrategias de inversión según sea necesario puede ser clave para navegar los mercados financieros en constante evolución. Con la ayuda de herramientas como FinMoovi y manteniéndose al tanto de las últimas noticias del mercado, los inversores individuales pueden estar mejor preparados para enfrentar los desafíos y oportunidades que se presentan en el mercado financiero brasileño.
 
 
 ---

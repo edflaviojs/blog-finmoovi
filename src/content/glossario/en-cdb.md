@@ -18,10 +18,10 @@ seo:
 ---
 
 ## What it is
-O CDB, ou Certificado de Depósito Bancário, é um tipo de investimento oferecido por bancos e instituições financeiras no Brasil. Ele é basicamente um empréstimo que você faz ao banco, e em troca, você recebe um retorno sobre o [valor](/en/glossario/en-valor) investido. O CDB é uma opção popular para quem busca investir seu dinheiro com um nível de risco moderado e uma rentabilidade razoável. Imagine que você tem um salário de R$ 5.000 por mês e consegue poupar R$ 1.000 todo mês. Você pode investir esse valor em um CDB e receber um retorno de acordo com a rentabilidade oferecida pelo banco.
+O CDB, ou Certificado de Depósito Bancário, é um tipo de investimento oferecido por bancos e instituições financeiras no Brasil. Ele é basicamente um empréstimo que você faz ao banco, e em troca, você recebe um retorno sobre o [valor](/en/glossario/en-valor-financeiro) investido. O CDB é uma opção popular para quem busca investir seu dinheiro com um nível de risco moderado e uma rentabilidade razoável. Imagine que você tem um salário de R$ 5.000 por mês e consegue poupar R$ 1.000 todo mês. Você pode investir esse valor em um CDB e receber um retorno de acordo com a rentabilidade oferecida pelo banco.
 
 * O CDB pode ser de liquidez diária, semestral ou anual, o que significa que você pode resgatar seu investimento após um determinado período.
-* O retorno do CDB é calculado com base na [taxa](/en/glossario/en-taxa) de [juros](/en/glossario/en-juros) oferecida pelo banco, que pode variar de acordo com o prazo de investimento e a instituição financeira.
+* O retorno do CDB é calculado com base na [taxa](/en/glossario/en-taxa-financeira) de [juros](/en/glossario/en-juros) oferecida pelo banco, que pode variar de acordo com o prazo de investimento e a instituição financeira.
 * O CDB é uma opção de investimento que pode ser feita por pessoas físicas ou jurídicas.
 
 ![What it is](/images/glossario/cdb-inline-1.webp)
@@ -36,7 +36,7 @@ O CDB funciona de forma simples: você deposita um valor em uma conta de investi
 Por exemplo, imagine que você investe R$ 10.000 em um CDB com prazo de 1 ano e taxa de juros de 10% ao ano. Ao final do prazo, você receberá R$ 11.000, que é o valor inicial mais o retorno de R$ 1.000. **Practical tip:** É importante ter em mente que o CDB é um investimento de risco moderado, o que significa que há um risco de perda de valor, especialmente se o banco tiver problemas financeiros.
 
 ## Advantages
-O CDB tem várias vantagens para os investidores. Em primeiro lugar, ele é uma opção de investimento relativamente segura, pois é regulamentado pelo Banco Central e oferecido por instituições financeiras sólidas. Além disso, o CDB pode oferecer uma rentabilidade razoável, especialmente se você investir por um prazo mais longo. **Practical tip:** É importante diversificar seus investimentos, ou seja, não colocar todos os seus ovos na mesma cesta. Isso significa que você pode investir em diferentes tipos de investimentos, como CDB, [ações](/en/glossario/en-acoes), [fundos](/en/glossario/en-fundos) de investimento, etc.
+O CDB tem várias vantagens para os investidores. Em primeiro lugar, ele é uma opção de investimento relativamente segura, pois é regulamentado pelo Banco Central e oferecido por instituições financeiras sólidas. Além disso, o CDB pode oferecer uma rentabilidade razoável, especialmente se você investir por um prazo mais longo. **Practical tip:** É importante diversificar seus investimentos, ou seja, não colocar todos os seus ovos na mesma cesta. Isso significa que você pode investir em diferentes tipos de investimentos, como CDB, [ações](/en/glossario/en-acoes), [fundos](/en/glossario/en-fundo-de-investimento) de investimento, etc.
 
 Outra vantagem do CDB é que ele é fácil de entender e acessar. Você pode investir em um CDB por meio de um banco ou corretora de valores, e o processo de investimento é geralmente rápido e simples. Além disso, o CDB é uma opção de investimento que pode ser feita por pessoas com diferentes níveis de renda, desde que você tenha um valor mínimo para investir.
 

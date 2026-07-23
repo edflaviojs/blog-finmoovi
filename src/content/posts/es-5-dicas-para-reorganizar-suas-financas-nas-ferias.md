@@ -29,7 +29,7 @@ Las vacaciones ofrecen un espacio de tiempo relativamente largo para concentrart
 Aquí están algunos consejos prácticos para que comiences a reorganizar tus finanzas durante las vacaciones:
 1. **Haz un Balance**: Comienza haciendo un balance de tu situación financiera actual. Anota todas tus ingresos y gastos, incluyendo cuentas, deudas y cualquier otro gasto recorrente. Esto te ayudará a entender mejor dónde está yendo tu dinero.
 2. **Crea o Ajusta un Presupuesto**: Con base en tu balance, crea un presupuesto que se adapte a tus necesidades y objetivos. Asegúrate de incluir una reserva de emergencia y fondos para ocio y entretenimiento.
-3. **Prioriza la Deuda**: Si tienes deudas, como tarjetas de crédito o préstamos, prioriza pagarlas. Comienza con las deudas de mayor [valor](/es/glossario/es-valor) o las que tienen tasas de interés más altas.
+3. **Prioriza la Deuda**: Si tienes deudas, como tarjetas de crédito o préstamos, prioriza pagarlas. Comienza con las deudas de mayor [valor](/es/glossario/es-valor-financeiro) o las que tienen tasas de interés más altas.
 4. **Aumenta tu Ahorro**: Establece metas de ahorro, sea para emergencias, objetivos de largo plazo o adquisiciones específicas. Trata de aumentar tu ahorro gradualmente.
 5. **Monitorea tus Gastos**: Utiliza herramientas como el FinMoovi para monitorear tus gastos diarios e identificar áreas donde puedes cortar gastos. El FinMoovi es una herramienta útil que puede ayudarte a mantener un control más preciso de tus finanzas.
 

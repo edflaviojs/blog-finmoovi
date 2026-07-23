@@ -32,7 +32,7 @@ A conta Nubank funciona como uma conta corrente comum: você recebe salário, pa
 - **Abertura:** basta baixar o app, inserir CPF e documentos; a aprovação costuma ser instantânea.  
 - **Cartão:** ao solicitar, o cartão chega em até 10 dias úteis e já vem pronto para uso.  
 - **Pagamentos:** QR Code, NFC (aproximação) ou digitação do número da conta são aceitos.  
-- **Investimentos:** a NuConta permite aplicar em CDBs e [fundos](/glossario/fundos) com rendimento automático.
+- **Investimentos:** a NuConta permite aplicar em CDBs e [fundos](/glossario/fundo-de-investimento) com rendimento automático.
 
 ## Vantagens
 
@@ -42,7 +42,7 @@ Usar o Nubank traz benefícios que facilitam a vida de quem ganha entre R$3.000 
 
 
 
-- **Zero anuidade:** o cartão de crédito não cobra [taxa](/glossario/taxa) anual, o que economiza até R$300 por ano.  
+- **Zero anuidade:** o cartão de crédito não cobra [taxa](/glossario/taxa-financeira) anual, o que economiza até R$300 por ano.  
 - **Tarifas reduzidas:** transferências (TED/DOC) são gratuitas, ao contrário de muitos bancos tradicionais.  
 - **Controle em tempo real:** o app mostra cada gasto imediatamente, ajudando no planejamento financeiro.  
 - **Programa de pontos:** o Nubank Rewards (opcional) converte gastos em pontos que podem ser trocados por passagens ou produtos.  

@@ -33,7 +33,7 @@ Un [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias)
 
 ## Aplica la regla de los 30 días
 
-La regla de los 30 días es uno de los trucos más eficaces. Cuando quieras comprar algo fuera del [presupuesto](/es/posts/es-como-crear-presupuesto-personal), anota el artículo y el [valor](/es/glossario/es-valor), pero solo realiza la compra después de 30 días. Si aún sientes la necesidad, haz la compra; si no, el deseo normalmente desaparece. Imagina que viste un par de zapatillas de R$ 350. Anótalo, espera el mes y, al final, percibe que ya gastaste R$ 200 en otras prioridades. El impulso se transforma en una decisión consciente.
+La regla de los 30 días es uno de los trucos más eficaces. Cuando quieras comprar algo fuera del [presupuesto](/es/posts/es-como-crear-presupuesto-personal), anota el artículo y el [valor](/es/glossario/es-valor-financeiro), pero solo realiza la compra después de 30 días. Si aún sientes la necesidad, haz la compra; si no, el deseo normalmente desaparece. Imagina que viste un par de zapatillas de R$ 350. Anótalo, espera el mes y, al final, percibe que ya gastaste R$ 200 en otras prioridades. El impulso se transforma en una decisión consciente.
 
 ## Transforma la voluntad en hábito
 

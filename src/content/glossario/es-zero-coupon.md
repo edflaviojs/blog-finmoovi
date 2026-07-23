@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-El término financiero "zero coupon" se refiere a un tipo de bono o título de deuda que no paga intereses periódicos, a diferencia de los bonos tradicionales que pagan cupones (intereses) en intervalos regulares. En su lugar, el zero coupon se vende a un precio descontado respecto de su [valor](/es/glossario/es-valor) nominal y se redime al valor nominal al vencimiento. Esto significa que el inversionista recibe el interés acumulado en una sola vez, al final del plazo.
+El término financiero "zero coupon" se refiere a un tipo de bono o título de deuda que no paga intereses periódicos, a diferencia de los bonos tradicionales que pagan cupones (intereses) en intervalos regulares. En su lugar, el zero coupon se vende a un precio descontado respecto de su [valor](/es/glossario/es-valor-financeiro) nominal y se redime al valor nominal al vencimiento. Esto significa que el inversionista recibe el interés acumulado en una sola vez, al final del plazo.
 
 El zero coupon es una forma de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) a largo plazo que puede ser atractiva para aquellos que buscan una rentabilidad fija y no necesitan ingresos periódicos. Por ejemplo, si compras un zero coupon por R$8.000 con un valor nominal de R$10.000 y un plazo de 5 años, al final de los 5 años recibirás R$10.000, lo que equivale a una rentabilidad del 25% sobre tu inversión inicial.
 

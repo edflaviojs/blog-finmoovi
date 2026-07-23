@@ -1,20 +1,20 @@
 ---
-term: "opcão"
+term: "opción financiera"
 definition: "Entienda qué es opcão, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-title: "opcão - Glosario Financiero"
+title: "opción financiera - Glosario Financiero"
 description: "Entienda qué es opcão, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/opcao.webp"
 category: "basico"
-tags: ["opcão", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+tags: ["opción financiera", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
 publishedAt: 2026-07-11
 readingTime: 5
 locale: "es"
-translationKey: "glossario-opcao"
+translationKey: "glossario-opcao-financeira"
 seo:
-  metaTitle: "opcão - Glosario Financiero"
+  metaTitle: "opción financiera - Glosario Financiero"
   metaDescription: "Entienda qué es opcão, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-  keywords: ["opcão", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+  keywords: ["opción financiera", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
 ## Qué es
@@ -55,7 +55,7 @@ Las opciones ofrecen varios beneficios que pueden ser útiles incluso para quien
 
 Como todo instrumento financiero, las opciones conllevan riesgos que no debes subestimar:
 
-- **Pérdida total de la prima:** si la opción expira sin [valor](/es/glossario/es-valor), la suma pagada desaparece.
+- **Pérdida total de la prima:** si la opción expira sin [valor](/es/glossario/es-valor-financeiro), la suma pagada desaparece.
 - **Complejidad:** entender conceptos como [volatilidad](/es/glossario/es-volatilidade), delta y vencimiento requiere estudio; un error puede costar más de lo esperado.
 - **Apalancamiento excesivo:** aunque la prima sea baja, la exposición al activo subyacente puede ser alta, generando pérdidas indirectas.
 - **[Liquidez](/es/glossario/es-liquidez):** no todas las opciones tienen suficiente movimiento en el mercado, lo que dificulta comprar o vender a buen precio.

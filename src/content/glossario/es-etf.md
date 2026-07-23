@@ -27,7 +27,7 @@ Un ejemplo para entender mejor: imagina que quieres invertir en el mercado de te
 
 
 ## Cómo funciona
-Un ETF funciona de la siguiente manera: se crea un fondo que compra una cantidad determinada de acciones, bonos u otros activos. Luego, se emiten unidades de este fondo, que se pueden comprar y vender en una bolsa de valores. El precio de cada unidad del ETF se determina por el [valor](/es/glossario/es-valor) de los activos que componen el fondo. Por ejemplo, si un ETF de tecnología tiene un portafolio con acciones de empresas como Magazine Luiza, [Nubank](/es/glossario/es-nubank) y Stone, el valor del ETF variará según el desempeño de estas empresas en el mercado.
+Un ETF funciona de la siguiente manera: se crea un fondo que compra una cantidad determinada de acciones, bonos u otros activos. Luego, se emiten unidades de este fondo, que se pueden comprar y vender en una bolsa de valores. El precio de cada unidad del ETF se determina por el [valor](/es/glossario/es-valor-financeiro) de los activos que componen el fondo. Por ejemplo, si un ETF de tecnología tiene un portafolio con acciones de empresas como Magazine Luiza, [Nubank](/es/glossario/es-nubank) y Stone, el valor del ETF variará según el desempeño de estas empresas en el mercado.
 
 **Consejo práctico:** Es importante investigar y entender qué activos componen el ETF antes de invertir, ya que esto puede afectar tu exposición al riesgo y tus objetivos de inversión.
 

@@ -1,20 +1,20 @@
 ---
-term: "valor"
+term: "financial value"
 definition: "Understand what valor is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "valor - Financial Glossary"
+title: "financial value - Financial Glossary"
 description: "Understand what valor is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/valor.webp"
 category: "basico"
-tags: ["valor", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["financial value", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
 publishedAt: 2026-06-24
 readingTime: 5
 locale: "en"
-translationKey: "glossario-valor"
+translationKey: "glossario-valor-financeiro"
 seo:
-  metaTitle: "valor - Financial Glossary"
+  metaTitle: "financial value - Financial Glossary"
   metaDescription: "Understand what valor is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["valor", "glossário", "finanças", "glossary", "finance", "brazil"]
+  keywords: ["financial value", "glossário", "finanças", "glossary", "finance", "brazil"]
 ---
 
 ## What it is

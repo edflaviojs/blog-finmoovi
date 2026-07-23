@@ -23,7 +23,7 @@ A Letra de Crédito (LC) é um tipo de instrumento financeiro utilizado para gar
 * A LC é emitida pelo banco do comprador
 * O vendedor recebe o pagamento do banco se o comprador não pagar
 * A LC pode ser utilizada para pagamentos nacionais ou internacionais
-* É comum em transações de grande [valor](/en/glossario/en-valor), como compras de mercadorias ou serviços
+* É comum em transações de grande [valor](/en/glossario/en-valor-financeiro), como compras de mercadorias ou serviços
 
 ![What it is](/images/glossario/lc-inline-1.webp)
 

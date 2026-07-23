@@ -38,7 +38,7 @@ Para calcular la reserva necesaria, es importante saber cuáles son sus gastos m
 
 ## Estrategias para crear la reserva
 Crear una reserva de emergencia requiere disciplina y paciencia. Aquí están algunas estrategias para ayudar:
-- Defina un [valor](/es/glossario/es-valor) mensual para depositar en la reserva
+- Defina un [valor](/es/glossario/es-valor-financeiro) mensual para depositar en la reserva
 - Automatice los depósitos para que sea más fácil mantener la rutina
 - Evite sacar dinero de la reserva para gastos no esenciales
 - Considere abrir una cuenta de ahorro separada para la reserva de emergencia, para que sea más difícil acceder al dinero para gastos cotidianos

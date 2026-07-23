@@ -39,7 +39,7 @@ La renta fija engloba inversiones en las que la remuneración (interés o rendim
 
 *Basado en datos del Banco Central y del Tesoro Directo hasta diciembre de 2025.  
 
-La lógica es simple: prestas dinero (o compras títulos) y recibes intereses a lo largo del tiempo. El **principal** ([valor](/es/glossario/es-valor) invertido) suele devolverse al vencimiento o puede rescatarse antes, según el producto. Como la remuneración está vinculada a índices como el CDI o la Selic, la variación de la tasa de interés en el país afecta directamente el retorno.  
+La lógica es simple: prestas dinero (o compras títulos) y recibes intereses a lo largo del tiempo. El **principal** ([valor](/es/glossario/es-valor-financeiro) invertido) suele devolverse al vencimiento o puede rescatarse antes, según el producto. Como la remuneración está vinculada a índices como el CDI o la Selic, la variación de la tasa de interés en el país afecta directamente el retorno.  
 
 ### Ventajas de la renta fija  
 

@@ -41,7 +41,7 @@ As principais vantagens dos títulos zero coupon são:
 * Eles podem ser uma opção para investidores que buscam uma rentabilidade mais estável em um período mais longo
 
  
-**Dica prática:** É importante diversificar o portfólio de investimentos para minimizar os riscos. Isso pode incluir a combinação de títulos zero coupon com outros tipos de investimentos, como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de investimento.
+**Dica prática:** É importante diversificar o portfólio de investimentos para minimizar os riscos. Isso pode incluir a combinação de títulos zero coupon com outros tipos de investimentos, como [ações](/glossario/acoes) ou [fundos](/glossario/fundo-de-investimento) de investimento.
 
 ![Vantagens](/images/glossario/zero-coupon-inline-3.webp)
 

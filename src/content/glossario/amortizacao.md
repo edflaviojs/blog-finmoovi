@@ -11,7 +11,7 @@ readingTime: 1
 
 ## O que é Amortização?
 
-Amortização é o ato de pagar o [valor](/glossario/valor) principal de uma dívida aos poucos. Cada parcela que você paga tem duas partes: a amortização (que reduz o saldo devedor) e os [juros](/glossario/juros) (que é o custo do empréstimo).
+Amortização é o ato de pagar o [valor](/glossario/valor-financeiro) principal de uma dívida aos poucos. Cada parcela que você paga tem duas partes: a amortização (que reduz o saldo devedor) e os [juros](/glossario/juros) (que é o custo do empréstimo).
 
 ## Tipos de amortização
 

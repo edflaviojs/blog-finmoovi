@@ -19,7 +19,7 @@ seo:
 
 ## Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026
 
-A semana que passou foi marcada por movimentos interessantes no mercado financeiro brasileiro, com o dólar e o euro apresentando tendências que podem influenciar diretamente os investimentos de quem acompanha o mercado. Neste resumo, vamos explorar o que aconteceu com as principais moedas, como a [taxa](/glossario/taxa) [Selic](/glossario/selic) impactou os investimentos e dar uma dica prática para os investidores pessoa física.
+A semana que passou foi marcada por movimentos interessantes no mercado financeiro brasileiro, com o dólar e o euro apresentando tendências que podem influenciar diretamente os investimentos de quem acompanha o mercado. Neste resumo, vamos explorar o que aconteceu com as principais moedas, como a [taxa](/glossario/taxa-financeira) [Selic](/glossario/selic) impactou os investimentos e dar uma dica prática para os investidores pessoa física.
 
 ![Resumo Semanal do Mercado Financeiro Brasileiro: 29/06/2026 a 06/07/2026](/images/posts/cotacoes-semana-1-julho-2026-inline-1.webp)
 
@@ -43,7 +43,7 @@ Para os investidores, é importante entender como as mudanças na Selic podem im
 
 ## Dica Prática para o Investidor Pessoa Física
 
-Uma dica prática para os investidores pessoa física é diversificar seus investimentos. Isso inclui não apenas investir em diferentes tipos de ativos, como [ações](/glossario/acoes), renda fixa e [fundos](/glossario/fundos), mas também considerar investimentos em múltiplas moedas. O [FinMoovi](https://finmoovi.com.br/) é uma ferramenta útil que ajuda a acompanhar e gerenciar investimentos em diferentes moedas, tornando mais fácil para os investidores manterem seu portfólio diversificado e atualizado.
+Uma dica prática para os investidores pessoa física é diversificar seus investimentos. Isso inclui não apenas investir em diferentes tipos de ativos, como [ações](/glossario/acoes), renda fixa e [fundos](/glossario/fundo-de-investimento), mas também considerar investimentos em múltiplas moedas. O [FinMoovi](https://finmoovi.com.br/) é uma ferramenta útil que ajuda a acompanhar e gerenciar investimentos em diferentes moedas, tornando mais fácil para os investidores manterem seu portfólio diversificado e atualizado.
 
 Além disso, é fundamental manter uma reserva de emergência e ter um plano de investimento de longo prazo, considerando os objetivos financeiros e o perfil de risco de cada investidor.
 

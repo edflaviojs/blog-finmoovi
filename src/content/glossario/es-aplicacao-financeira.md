@@ -1,20 +1,20 @@
 ---
-term: "aplicação"
+term: "aplicación financiera"
 definition: "Entienda qué es aplicação, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-title: "aplicação - Glosario Financiero"
+title: "aplicación financiera - Glosario Financiero"
 description: "Entienda qué es aplicação, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/aplicacao.webp"
 category: "basico"
-tags: ["aplicação", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+tags: ["aplicación financiera", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"
 publishedAt: 2026-07-22
 readingTime: 5
 locale: "es"
-translationKey: "glossario-aplicacao"
+translationKey: "glossario-aplicacao-financeira"
 seo:
-  metaTitle: "aplicação - Glosario Financiero"
+  metaTitle: "aplicación financiera - Glosario Financiero"
   metaDescription: "Entienda qué es aplicação, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
-  keywords: ["aplicação", "glossário", "finanças", "glosario", "finanzas", "brasil"]
+  keywords: ["aplicación financiera", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 ---
 
 ## Qué es

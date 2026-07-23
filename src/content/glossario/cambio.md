@@ -11,7 +11,7 @@ readingTime: 2
 
 ## O que é Câmbio?
 
-Câmbio é a troca de uma [moeda](/glossario/moeda) por outra. Quando você compra dólares para viajar ou quando uma empresa importa produtos, está fazendo uma operação de câmbio. A [taxa](/glossario/taxa) de câmbio indica quanto custa uma moeda em relação a outra.
+Câmbio é a troca de uma [moeda](/glossario/moeda) por outra. Quando você compra dólares para viajar ou quando uma empresa importa produtos, está fazendo uma operação de câmbio. A [taxa](/glossario/taxa-financeira) de câmbio indica quanto custa uma moeda em relação a outra.
 
 ## Como funciona a taxa de câmbio
 

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A xepa financeira, também conhecida como "despesa paralela", é um conceito que se refere ao [valor](/en/glossario/en-valor) que uma pessoa gasta além do seu orçamento mensal. Isso pode incluir despesas como jantares fora, compras impulsivas, viagens ou qualquer outro gasto que não esteja previsto no orçamento. É importante entender que a xepa financeira não é necessariamente um problema, desde que seja controlada e não afete a estabilidade financeira da pessoa. 
+A xepa financeira, também conhecida como "despesa paralela", é um conceito que se refere ao [valor](/en/glossario/en-valor-financeiro) que uma pessoa gasta além do seu orçamento mensal. Isso pode incluir despesas como jantares fora, compras impulsivas, viagens ou qualquer outro gasto que não esteja previsto no orçamento. É importante entender que a xepa financeira não é necessariamente um problema, desde que seja controlada e não afete a estabilidade financeira da pessoa. 
 * Despesas não essenciais
 * Gastos impulsivos
 * Compras não planejadas

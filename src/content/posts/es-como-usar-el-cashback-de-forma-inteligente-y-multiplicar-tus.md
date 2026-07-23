@@ -20,7 +20,7 @@ seo:
 
 ## Cashback como aliado de verdad
 
-Cuando pagas un snack de R$ 35,00 con una tarjeta que devuelve el 2% del gasto, el retorno parece pequeño – R$ 0,70. Pero si ese [valor](/es/glossario/es-valor) se trata como ingreso extra, puede convertirse en un verdadero refuerzo para tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). La idea no es esperar que el cashback cubra todo de una vez, sino hacer que cada centavo devuelto trabaje a tu favor.
+Cuando pagas un snack de R$ 35,00 con una tarjeta que devuelve el 2% del gasto, el retorno parece pequeño – R$ 0,70. Pero si ese [valor](/es/glossario/es-valor-financeiro) se trata como ingreso extra, puede convertirse en un verdadero refuerzo para tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). La idea no es esperar que el cashback cubra todo de una vez, sino hacer que cada centavo devuelto trabaje a tu favor.
 
 ## Elige la tarjeta adecuada y combina [beneficios](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 

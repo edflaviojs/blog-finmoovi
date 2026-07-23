@@ -49,7 +49,7 @@ Construir una reserva de emergencia y colocar recursos en activos de largo plazo
 
 ![Cómo armar la cartera: 5 pasos simples](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-2.webp)
 
-| Ítem                     | [Valor](/es/glossario/es-valor) (R$) |
+| Ítem                     | [Valor](/es/glossario/es-valor-financeiro) (R$) |
 |--------------------------|-----------|
 | Salario bruto mensual    | 3.500,00 |
 | Gastos fijos mensuales   | 1.800,00 |

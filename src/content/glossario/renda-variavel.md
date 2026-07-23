@@ -26,7 +26,7 @@ Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce co
 ## Principais investimentos de renda variável
 
 1. **Ações** — pedaços de empresas
-2. **Fundos Imobiliários (FIIs)** — cotas de [fundos](/glossario/fundos) que investem em imóveis
+2. **Fundos Imobiliários (FIIs)** — cotas de [fundos](/glossario/fundo-de-investimento) que investem em imóveis
 3. **ETFs** — fundos que replicam índices
 4. **Criptomoedas** — ativos digitais descentralizados
 5. **Derivativos** — contratos futuros, opções (avançado)

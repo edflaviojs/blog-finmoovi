@@ -28,7 +28,7 @@ A reserva precisa ter **[liquidez](/glossario/liquidez) diária** (acesso imedia
 
 ## Como montar?
 
-1. Defina o [valor](/glossario/valor) alvo (3-6 meses de gastos)
+1. Defina o [valor](/glossario/valor-financeiro) alvo (3-6 meses de gastos)
 2. Separe um valor fixo todo mês (10-20% da renda)
 3. Automatize a transferência
 4. Não toque até completar o valor alvo

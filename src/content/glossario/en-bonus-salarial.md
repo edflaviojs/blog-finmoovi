@@ -1,20 +1,20 @@
 ---
-term: "bônus"
+term: "salary bonus"
 definition: "Understand what bônus is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "bônus - Financial Glossary"
+title: "salary bonus - Financial Glossary"
 description: "Understand what bônus is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/bonus.webp"
 category: "basico"
-tags: ["bônus", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["salary bonus", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
 publishedAt: 2026-07-23
 readingTime: 5
 locale: "en"
-translationKey: "glossario-bonus"
+translationKey: "glossario-bonus-salarial"
 seo:
-  metaTitle: "bônus - Financial Glossary"
+  metaTitle: "salary bonus - Financial Glossary"
   metaDescription: "Understand what bônus is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["bônus", "glossário", "finanças", "glossary", "finance", "brazil"]
+  keywords: ["salary bonus", "glossário", "finanças", "glossary", "finance", "brazil"]
 ---
 
 ## What it is
@@ -26,7 +26,7 @@ Bônus é um pagamento extra que a empresa oferece ao colaborador, normalmente l
 
 
 - Pode ser pago em dinheiro, [ações](/en/glossario/en-acoes) ou até benefícios como viagens.
-- Geralmente é calculado como um percentual do salário ou como um [valor](/en/glossario/en-valor) fixo pré‑definido.
+- Geralmente é calculado como um percentual do salário ou como um [valor](/en/glossario/en-valor-financeiro) fixo pré‑definido.
 - O pagamento pode ser único (por exemplo, ao fechar um grande contrato) ou recorrente (mensal, trimestral).
 
 ## How it works

@@ -24,7 +24,7 @@ IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sob
 ### Cartão de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional
 
 - 4,38% sobre compras em [moeda](/es/glossario/es-moeda) estrangeira
-- Incide sobre o [valor](/es/glossario/es-valor) total da compra
+- Incide sobre o [valor](/es/glossario/es-valor-financeiro) total da compra
 
 ### Empréstimos e financiamentos
 

@@ -62,7 +62,7 @@ Embora o xing ling seja mais seguro que ações individuais, ele não está livr
 - **Risco tecnológico:** vulnerabilidades no app podem comprometer dados.  
 - **Liquidez limitada:** embora seja diária, resgates muito grandes podem levar a pequenas perdas de rendimento.
 
-**Practical tip:** **Verifique sempre a taxa de administração antes de investir; prefira [fundos](/en/glossario/en-fundos) com custos abaixo de 0,8 % ao ano.**  
+**Practical tip:** **Verifique sempre a taxa de administração antes de investir; prefira [fundos](/en/glossario/en-fundo-de-investimento) com custos abaixo de 0,8 % ao ano.**  
 
 ## Practical examples
 

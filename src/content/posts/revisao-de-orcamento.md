@@ -23,7 +23,7 @@ translate: true
 Chegamos ao meio do ano, e é hora de parar e refletir sobre como estão nossas finanças. É comum começar o ano com objetivos e metas claras, mas ao longo do caminho, podemos nos desviar do rumo. Revisar seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) agora é uma ótima oportunidade para ajustar suas finanças e garantir que você está no caminho certo para alcançar seus objetivos.
 
 ## Por que revisar o orçamento?
-Revisar seu [orçamento](/posts/como-criar-orcamento-pessoal) é importante porque as coisas mudam ao longo do tempo. Seu salário pode ter aumentado, seus gastos podem ter mudado, ou você pode ter adquirido novas responsabilidades financeiras. Além disso, a [inflação](/glossario/inflacao) pode ter afetado o [valor](/glossario/valor) do seu dinheiro, tornando necessário ajustar seus gastos e investimentos.
+Revisar seu [orçamento](/posts/como-criar-orcamento-pessoal) é importante porque as coisas mudam ao longo do tempo. Seu salário pode ter aumentado, seus gastos podem ter mudado, ou você pode ter adquirido novas responsabilidades financeiras. Além disso, a [inflação](/glossario/inflacao) pode ter afetado o [valor](/glossario/valor-financeiro) do seu dinheiro, tornando necessário ajustar seus gastos e investimentos.
 
 Por exemplo, imagine que você ganha R$ 5.000 por mês e gasta R$ 2.000 com aluguel, R$ 1.000 com comida e R$ 500 com transporte. Isso deixa R$ 1.500 para outros gastos e investimentos. No entanto, se a inflação aumentou 10% nos últimos 6 meses, o valor do seu dinheiro diminuiu. Você precisará ajustar seus gastos e investimentos para manter o mesmo padrão de vida.
 
@@ -48,7 +48,7 @@ Depois de verificar seus gastos, ajuste-os de acordo com suas necessidades e obj
 Verifique suas receitas dos últimos 6 meses e ajuste-as de acordo com suas necessidades e objetivos. Se você recebeu um aumento de salário, por exemplo, você pode querer aumentar suas economias ou investimentos.
 
 ### 4. Ajuste seus investimentos
-Se você tem investimentos, como [ações](/glossario/acoes) ou [fundos](/glossario/fundos) de investimento, verifique se eles ainda estão alinhados com seus objetivos e ajuste-os de acordo. Você pode querer considerar investir em [Tesouro Direto](https://www.tesourodireto.com.br) ou outros investimentos de baixo risco.
+Se você tem investimentos, como [ações](/glossario/acoes) ou [fundos](/glossario/fundo-de-investimento) de investimento, verifique se eles ainda estão alinhados com seus objetivos e ajuste-os de acordo. Você pode querer considerar investir em [Tesouro Direto](https://www.tesourodireto.com.br) ou outros investimentos de baixo risco.
 
 ## Dicas para manter seu orçamento em ordem
 Aqui estão algumas dicas para manter seu orçamento em ordem:

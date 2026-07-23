@@ -19,7 +19,7 @@ seo:
 
 ## O que é [previdência privada](/glossario/previdencia-privada)?
 
-A previdência privada, também chamada de plano de previdência complementar, funciona como um *poupador de longo prazo* que você alimenta ao longo da vida profissional. O dinheiro é aplicado em [fundos](/glossario/fundos) administrados por instituições financeiras e, ao se aposentar, você recebe um benefício mensal (renda) ou um [valor](/glossario/valor) único.
+A previdência privada, também chamada de plano de previdência complementar, funciona como um *poupador de longo prazo* que você alimenta ao longo da vida profissional. O dinheiro é aplicado em [fundos](/glossario/fundo-de-investimento) administrados por instituições financeiras e, ao se aposentar, você recebe um benefício mensal (renda) ou um [valor](/glossario/valor-financeiro) único.
 
 Dois tipos principais de planos existem no Brasil:
 

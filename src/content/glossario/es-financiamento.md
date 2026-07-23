@@ -11,7 +11,7 @@ readingTime: 2
 
 ## ¿Qué es Financiamiento?
 
-Financiamiento es cuando un banco presta [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) para que compres algo de alto [valor](/es/glossario/es-valor) (casa, coche, etc.) y tú lo pagas de vuelta en plazos a lo largo de años. El bien comprado queda como garantía — si tú dejas de pagar, el banco puede tomarlo.
+Financiamiento es cuando un banco presta [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) para que compres algo de alto [valor](/es/glossario/es-valor-financeiro) (casa, coche, etc.) y tú lo pagas de vuelta en plazos a lo largo de años. El bien comprado queda como garantía — si tú dejas de pagar, el banco puede tomarlo.
 
 ## Tipos comunes
 

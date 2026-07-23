@@ -29,11 +29,11 @@ A previdência privada é um plano de investimento de longo prazo que oferece um
 
 
 
-Um exemplo de como funciona a previdência privada: imagine que você investe R$ 500 por mês durante 20 anos em um plano de previdência privada com uma [taxa](/glossario/taxa) de [juros](/glossario/juros) de 8% ao ano. Ao final desse período, você terá investido cerca de R$ 120.000, e poderá receber uma renda mensal de aproximadamente R$ 2.500 após a aposentadoria.
+Um exemplo de como funciona a previdência privada: imagine que você investe R$ 500 por mês durante 20 anos em um plano de previdência privada com uma [taxa](/glossario/taxa-financeira) de [juros](/glossario/juros) de 8% ao ano. Ao final desse período, você terá investido cerca de R$ 120.000, e poderá receber uma renda mensal de aproximadamente R$ 2.500 após a aposentadoria.
 
 ## Como funciona Investir por Conta Própria
 
-Investir por conta própria significa que você próprio escolhe os investimentos e administra seu dinheiro. Isso pode incluir investimentos em [ações](/glossario/acoes), títulos, [fundos](/glossario/fundos) de investimento, imóveis, entre outros. Essa opção oferece mais flexibilidade e controle sobre os investimentos, mas também exige mais conhecimento e habilidade para gerenciar os riscos.
+Investir por conta própria significa que você próprio escolhe os investimentos e administra seu dinheiro. Isso pode incluir investimentos em [ações](/glossario/acoes), títulos, [fundos](/glossario/fundo-de-investimento) de investimento, imóveis, entre outros. Essa opção oferece mais flexibilidade e controle sobre os investimentos, mas também exige mais conhecimento e habilidade para gerenciar os riscos.
 
 Um exemplo de como funciona investir por conta própria: imagine que você investe R$ 1.000 por mês em um fundo de investimento em ações, com uma taxa de administração de 1,5% ao ano. Se o fundo tiver um desempenho médio de 10% ao ano, você poderá ter um patrimônio de aproximadamente R$ 300.000 após 10 anos.
 
