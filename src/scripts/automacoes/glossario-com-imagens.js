@@ -5,6 +5,7 @@
  */
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
+import { guardedTranslate } from '../lib/lang-guard.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
@@ -130,7 +131,13 @@ Formato: markdown puro, sin bloques de código, sin HTML.
 `
   };
 
-  const content = await generateText(langPrompts[language], { maxTokens: 2000, temperature: 0.3 });
+  // lang-guard (prevenção): EN/ES são gerados direto no idioma alvo — se o LLM
+  // responder em PT, refaz 1x; persistindo, publica com ::warning:: visível.
+  const content = await guardedTranslate(
+    () => generateText(langPrompts[language], { maxTokens: 2000, temperature: 0.3 }),
+    language,
+    `glossário "${term}"`
+  );
 
   // Post-process: clean up extra blank lines for consistent formatting
   return content

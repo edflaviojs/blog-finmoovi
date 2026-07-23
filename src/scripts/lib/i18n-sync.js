@@ -24,6 +24,7 @@
 import { readdirSync, readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { generateText } from '../apis/kie-ai.js';
+import { guardedTranslate } from './lang-guard.js';
 import { config } from '../../../site.config.ts';
 
 // T8: sincroniza apenas os locales configurados (modo 1 idioma = nada a sincronizar)
@@ -209,21 +210,27 @@ Rules:
 
 ${parts.join('\n\n')}`;
 
-  const response = await generateText(prompt, { maxTokens: 5000, temperature: 0.3 });
+  const attempt = async () => {
+    const response = await generateText(prompt, { maxTokens: 5000, temperature: 0.3 });
 
-  const out = {};
-  for (let i = 0; i < order.length; i++) {
-    const key = order[i];
-    const raw = section(response, DELIMS[key]);
-    if (key === 'tags') {
-      out.tags = raw
-        ? raw.split(',').map(s => s.trim()).filter(Boolean)
-        : fields.tags;
-    } else {
-      out[key] = (raw && raw.length) ? raw : fields[key];
+    const out = {};
+    for (let i = 0; i < order.length; i++) {
+      const key = order[i];
+      const raw = section(response, DELIMS[key]);
+      if (key === 'tags') {
+        out.tags = raw
+          ? raw.split(',').map(s => s.trim()).filter(Boolean)
+          : fields.tags;
+      } else {
+        out[key] = (raw && raw.length) ? raw : fields[key];
+      }
     }
-  }
-  return out;
+    return out;
+  };
+
+  // lang-guard (prevenção): valida o body traduzido; 1 retry se sair no idioma
+  // errado; persistindo, devolve mesmo assim com ::warning:: (nunca bloqueia).
+  return guardedTranslate(attempt, targetLocale, `${kindLabel} "${fields.title || fields.term || ''}" (${targetLocale})`);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

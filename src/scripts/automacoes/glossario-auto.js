@@ -6,6 +6,7 @@
 
 import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
+import { guardedTranslate } from '../lib/lang-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -254,7 +255,7 @@ async function main() {
     // 5. Translate to EN
     if (config.locales.includes('en')) {
       console.log('🌐 Traduzindo para inglês...');
-      const enContent = await translateTerm(termData, ptContent, 'en');
+      const enContent = await guardedTranslate(() => translateTerm(termData, ptContent, 'en'), 'en', `glossário ${termData.term} (en)`);
       // Filename SEMPRE derivado do slug PT (nunca do termo traduzido) — invariante do i18n-sync.
       const slugEn = `en-${slugPt}`;
       const enContentWithImages = await insertInlineImages(enContent.content, slugEn);
@@ -276,7 +277,7 @@ async function main() {
     // 6. Translate to ES
     if (config.locales.includes('es')) {
       console.log('🌐 Traduzindo para espanhol...');
-      const esContent = await translateTerm(termData, ptContent, 'es');
+      const esContent = await guardedTranslate(() => translateTerm(termData, ptContent, 'es'), 'es', `glossário ${termData.term} (es)`);
       const slugEs = `es-${slugPt}`;
       const esContentWithImages = await insertInlineImages(esContent.content, slugEs);
 

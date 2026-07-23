@@ -45,8 +45,9 @@ function coveredByGlossario(keyword) {
   }
 }
 
-/** Categorias aceitas nas entries (qualquer outra vira null = "qualquer gerador"). */
-export const VALID_CATEGORIES = new Set(['dicas', 'investimentos', 'orcamento']);
+/** Categorias aceitas nas entries (qualquer outra vira null = "qualquer gerador").
+ *  'glossario' = termo para o glossário (consumido por glossario-auto-diario). */
+export const VALID_CATEGORIES = new Set(['dicas', 'investimentos', 'orcamento', 'glossario']);
 
 /** Normaliza p/ dedup: lowercase, sem acento, espaços colapsados. */
 export function normalizeKeyword(text) {
@@ -154,15 +155,19 @@ export function addEntries(list, file = QUEUE_FILE) {
  * addedAt asc. Cada candidata passa pelo isThemeCovered: se já coberta, vira
  * 'skipped' (reason 'ja-coberto') e segue para a próxima.
  *
+ * `exactCategory: true` exige match EXATO de categoria (entries com category
+ * null ficam de fora) — usado pelo glossário diário para NÃO drenar keywords
+ * genéricas destinadas aos geradores de post.
+ *
  * NÃO marca a escolhida como used — isso é responsabilidade do gerador via
  * markUsed() após publicar com sucesso. Retorna a entry (cópia) ou null.
  */
-export function takeKeyword({ categories = [] } = {}, file = QUEUE_FILE) {
+export function takeKeyword({ categories = [], exactCategory = false } = {}, file = QUEUE_FILE) {
   try {
     const queue = loadQueue(file);
     const cats = new Set(categories);
     const candidates = queue.entries
-      .filter(e => e.status === 'pending' && (e.category == null || cats.has(e.category)))
+      .filter(e => e.status === 'pending' && (cats.has(e.category) || (!exactCategory && e.category == null)))
       .sort((a, b) => (a.priority - b.priority) || String(a.addedAt).localeCompare(String(b.addedAt)));
 
     let dirty = false;

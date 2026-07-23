@@ -8,7 +8,7 @@
  *   - accessKey:  senha de acesso (comparada com env KEYWORDS_ACCESS_KEY)
  *   - keywords:   string com itens separados por vírgula OU quebra de linha
  *                 (máx. 50 por envio)
- *   - categoria:  opcional — 'dicas' | 'investimentos' | 'orcamento' | '' (qualquer)
+ *   - categoria:  opcional — 'dicas' | 'investimentos' | 'orcamento' | 'glossario' | '' (qualquer)
  *
  * ─────────────────────────────────────────────────────────────────────────────
  * ⚙️ SETUP (dono) — 2 variáveis de ambiente no painel do Cloudflare Pages:
@@ -43,7 +43,7 @@ const GITHUB_REPO = 'edflaviojs/blog-finmoovi';
 const CSV_PATH = 'data/keywords-manuais.csv';
 const BRANCH = 'main';
 const MAX_KEYWORDS = 50;
-const VALID_CATEGORIES = ['dicas', 'investimentos', 'orcamento'];
+const VALID_CATEGORIES = ['dicas', 'investimentos', 'orcamento', 'glossario'];
 
 /**
  * Parser puro (exportado para teste unitário em Node): transforma a string
@@ -155,7 +155,7 @@ export async function onRequestPost(context) {
     const categoria = String(body.categoria || '').trim().toLowerCase();
     if (categoria && !VALID_CATEGORIES.includes(categoria)) {
       return json(400, {
-        error: `Categoria inválida: "${categoria}". Use dicas, investimentos, orcamento — ou deixe vazio (qualquer gerador).`,
+        error: `Categoria inválida: "${categoria}". Use dicas, investimentos, orcamento, glossario — ou deixe vazio (qualquer gerador).`,
       });
     }
 

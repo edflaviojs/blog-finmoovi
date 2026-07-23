@@ -8,6 +8,7 @@ import { config } from '../../../site.config.ts';
 import { generateBlogPost, generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
 import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
+import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -372,13 +373,13 @@ Responda APENAS com o tema, em uma única linha, sem aspas e sem explicação.`,
       console.log('⏳ Aguardando 30s para evitar rate limit...');
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 Traduzindo para inglês...');
-      const enPost = await translatePost({
+      const enPost = await guardedTranslate(() => translatePost({
         title: post.title,
         meta: post.meta,
         headline: post.headline || '',
         keywords: post.keywords,
         processedContent: processedContentPt,
-      }, 'en');
+      }, 'en'), 'en', `${slugPt} (en)`);
 
       const ygEn = fixStaleYear(enPost.title);
       if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); enPost.title = ygEn.text; }
@@ -403,13 +404,13 @@ Responda APENAS com o tema, em uma única linha, sem aspas e sem explicação.`,
       console.log('⏳ Aguardando 30s para evitar rate limit...');
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 Traduzindo para espanhol...');
-      const esPost = await translatePost({
+      const esPost = await guardedTranslate(() => translatePost({
         title: post.title,
         meta: post.meta,
         headline: post.headline || '',
         keywords: post.keywords,
         processedContent: processedContentPt,
-      }, 'es');
+      }, 'es'), 'es', `${slugPt} (es)`);
 
       const ygEs = fixStaleYear(esPost.title);
       if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); esPost.title = ygEs.text; }

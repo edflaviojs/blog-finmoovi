@@ -10,8 +10,14 @@ Como sugerir keywords para os geradores de conteúdo:
    ```
 
    - `keyword`: o termo/tema desejado.
-   - `categoria`: `dicas` | `investimentos` | `orcamento` — ou **vazio** = qualquer gerador pode consumir.
+   - `categoria`: `dicas` | `investimentos` | `orcamento` | `glossario` — ou **vazio** = qualquer gerador pode consumir.
    - `observacao`: livre, só para humanos (opcional).
+
+   > **Categoria `glossario`**: a keyword vira um TERMO do glossário (prefixos de
+   > pergunta são removidos: "o que é holding" → termo "holding"). O gerador diário
+   > consome a fila ANTES da rotação de letra A-Z — e em dia de keyword a letra
+   > **não avança** (a rotação continua justa). No formulário da /status aparece
+   > como "Glossário (termo)".
 
 2. **Commit + push** — o push no CSV dispara o workflow `keywords-manuais.yml`, que sincroniza a fila (`.github/data/keyword-queue.json`).
 

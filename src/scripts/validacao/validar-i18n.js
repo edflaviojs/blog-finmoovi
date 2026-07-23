@@ -14,12 +14,14 @@
  * Exit 0 = tudo ok, Exit 1 = problemas encontrados (bloqueia push)
  */
 
-import { readdirSync, readFileSync } from 'fs';
+import { readdirSync, readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { SERIE_RE, coreTokens, jaccardSim } from '../lib/seo-guard.js';
+import { looksWrongLanguage } from '../lib/lang-guard.js';
 import { config } from '../../../site.config.ts';
 
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
+const GLOSSARIO_DIR = join(process.cwd(), 'src', 'content', 'glossario');
 // T8: locales exigidos vêm do config (modo 1 idioma = valida só o(s) configurado(s))
 const LOCALES = [...config.locales];
 
@@ -134,6 +136,24 @@ function main() {
         errors.push(`   - ${A.slug}`);
         errors.push(`   - ${B.slug}`);
       }
+    }
+  }
+
+  // 6. Trava de tradução (lang-guard) — AVISO, não bloqueante: corpo EN/ES que
+  //    parece estar em português. Quem corrige é o sweep semanal
+  //    (traducao-sweep.yml); aqui é só visibilidade para não travar o CI.
+  for (const [dir, label] of [[POSTS_DIR, 'posts'], [GLOSSARIO_DIR, 'glossario']]) {
+    if (!existsSync(dir)) continue;
+    for (const file of readdirSync(dir).filter(f => /^(en|es)-.+\.md$/.test(f))) {
+      try {
+        const raw = readFileSync(join(dir, file), 'utf-8');
+        const bodyMatch = raw.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n?([\s\S]*)$/);
+        const body = bodyMatch ? bodyMatch[1] : raw;
+        const check = looksWrongLanguage(body, file.startsWith('en-') ? 'en' : 'es');
+        if (check.wrong) {
+          warnings.push(`⚠️ Tradução suspeita (lang-guard): ${label}/${file} — ${check.reason}`);
+        }
+      } catch { /* arquivo ilegível não derruba o validador por causa de um aviso */ }
     }
   }
 

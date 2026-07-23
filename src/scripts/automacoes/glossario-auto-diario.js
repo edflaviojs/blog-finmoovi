@@ -6,6 +6,7 @@ import { config } from '../../../site.config.ts';
  */
 
 import { generateGlossaryTerm } from './glossario-com-imagens.js';
+import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { writeFileSync, readFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -71,6 +72,18 @@ function saveCurrentLetter(letter) {
   }
 }
 
+// Keyword da fila → termo do glossário: remove prefixos/sufixos de pergunta
+// ("o que é X" → "X"), preservando acentos/grafia do restante. Mesma família
+// de prefixos do coveredByGlossario (keyword-queue.js).
+function glossaryTermFromKeyword(keyword) {
+  const kw = String(keyword || '').replace(/\s+/g, ' ').trim();
+  const core = kw
+    .replace(/^(o que (é|e|são|sao|significa)|que (é|e)|significado de|defini[çc][ãa]o de)\s+/i, '')
+    .replace(/\s+(o que (é|e)|significado|defini[çc][ãa]o)$/i, '')
+    .trim();
+  return core || kw;
+}
+
 async function main() {
   console.log('🚀 Iniciando geração automática de glossário...');
 
@@ -83,6 +96,13 @@ async function main() {
       mkdirSync(join(process.cwd(), 'public', 'images', 'glossario'), { recursive: true });
     }
 
+    // Fase 3 — fila de keywords (categoria 'glossario', match EXATO — keywords
+    // sem categoria ficam para os geradores de post): tem prioridade sobre a
+    // rotação A-Z. takeKeyword já pula termos cobertos por post/glossário;
+    // markUsed só é chamado DEPOIS de publicar com sucesso. Em dia de keyword a
+    // letra do .current-letter NÃO avança (a rotação A-Z continua justa).
+    let queueEntry = takeKeyword({ categories: ['glossario'], exactCategory: true });
+
     // Obter letra atual
     currentLetter = getCurrentLetter();
     console.log(`📍 Letra atual: ${currentLetter}`);
@@ -94,14 +114,36 @@ async function main() {
       saveCurrentLetter(currentLetter);
     }
 
-    // Gerar termos para a letra atual
-    const terms = POPULAR_TERMS[currentLetter] || [`${currentLetter}termo financeiro`];
-    // Usa TODOS os termos da letra (~5), não só o [0]: escolhe o primeiro que ainda não
-    // foi criado. Evita travar quando o ciclo A-Z dá a volta (aí o terms[0] já existiria).
     const slugify = (t) => sanitizeFilename(t.toLowerCase().replace(/\s+/g, '-'));
-    const selectedTerm = terms.find(t => !existsSync(join(GLOSSARIO_DIR, `${slugify(t)}.md`))) || terms[0];
+
+    let selectedTerm = null;
+    if (queueEntry) {
+      const termFromQueue = glossaryTermFromKeyword(queueEntry.keyword);
+      if (existsSync(join(GLOSSARIO_DIR, `${slugify(termFromQueue)}.md`))) {
+        // Rede de segurança (o takeKeyword já barra isso na quase totalidade dos casos)
+        console.warn(`⚠️ Termo da fila "${termFromQueue}" já existe no glossário — voltando à rotação A-Z.`);
+        queueEntry = null;
+      } else {
+        selectedTerm = termFromQueue;
+        console.log(`📥 Termo vindo da fila de keywords: "${queueEntry.keyword}" → termo "${selectedTerm}" (fonte: ${queueEntry.source})`);
+      }
+    }
+
+    if (!selectedTerm) {
+      // Gerar termos para a letra atual
+      const terms = POPULAR_TERMS[currentLetter] || [`${currentLetter}termo financeiro`];
+      // Usa TODOS os termos da letra (~5), não só o [0]: escolhe o primeiro que ainda não
+      // foi criado. Evita travar quando o ciclo A-Z dá a volta (aí o terms[0] já existiria).
+      selectedTerm = terms.find(t => !existsSync(join(GLOSSARIO_DIR, `${slugify(t)}.md`))) || terms[0];
+    }
 
     console.log(`📚 Gerando glossário para: ${selectedTerm}`);
+
+    // Simulação sem APIs (validação local): mostra a decisão e para aqui.
+    if (process.env.GLOSSARIO_DRY_RUN) {
+      console.log(`🧪 [dry-run] termo: "${selectedTerm}" | via fila: ${queueEntry ? 'SIM' : 'não'} | letra ${currentLetter} ${queueEntry ? 'NÃO avança' : 'avança normalmente'}`);
+      return;
+    }
 
     // Gerar post principal em português (com imagens)
     const ptPost = await generateGlossaryTerm(selectedTerm, 'pt');
@@ -200,18 +242,28 @@ ${esPost.content}
     console.log(`✅ Glossário gerado para ${currentLetter}: ${selectedTerm}`);
     console.log(`🖼️ Imagens geradas: capa + ${Math.floor(5/2)} imagens explicativas`);
 
-    // Próxima letra
-    const currentIndex = LETTERS.indexOf(currentLetter);
-    const nextIndex = (currentIndex + 1) % LETTERS.length;
-    const nextLetter = LETTERS[nextIndex];
+    // Próxima letra — SÓ avança quando o termo veio da rotação A-Z.
+    // Dia de keyword da fila não gasta a letra (a rotação continua justa).
+    let nextLetter = currentLetter;
+    if (!queueEntry) {
+      const currentIndex = LETTERS.indexOf(currentLetter);
+      const nextIndex = (currentIndex + 1) % LETTERS.length;
+      nextLetter = LETTERS[nextIndex];
 
-    // Salvar próxima letra
-    saveCurrentLetter(nextLetter);
-    console.log(`🔄 Próxima letra: ${nextLetter}`);
+      // Salvar próxima letra
+      saveCurrentLetter(nextLetter);
+      console.log(`🔄 Próxima letra: ${nextLetter}`);
+    } else {
+      console.log(`🔒 Termo veio da fila — letra ${currentLetter} mantida para o próximo dia sem keyword.`);
+    }
 
-    // Verificar se houve mudanças antes de commitar
+    // Fila de keywords: marca como usada SÓ após salvar PT/EN/ES com sucesso.
+    if (queueEntry) markUsed(queueEntry.keyword, 'glossario-auto-diario');
+
+    // Verificar se houve mudanças antes de commitar (inclui a fila quando o termo veio dela)
     try {
-      execSync('git add src/content/glossario/ public/images/glossario/ .current-letter', { stdio: 'pipe' });
+      const queueGitPath = queueEntry && existsSync(QUEUE_FILE) ? ` "${QUEUE_FILE}"` : '';
+      execSync(`git add src/content/glossario/ public/images/glossario/ .current-letter${queueGitPath}`, { stdio: 'pipe' });
 
       // Add internal links to posts (new glossary term may match existing posts)
       console.log('🔗 Adicionando internal links...');

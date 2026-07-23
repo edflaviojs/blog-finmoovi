@@ -5,8 +5,10 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
+import { looksWrongLanguage } from '../lib/lang-guard.js';
 import { writeFileSync, readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
+import { pathToFileURL } from 'url';
 
 const GLOSSARIO_DIR = join(process.cwd(), 'src', 'content', 'glossario');
 
@@ -50,8 +52,8 @@ async function main() {
     const frontmatter = parts[1];
     const body = parts.slice(2).join('---').trim();
 
-    // Skip if body is already in English (check for common PT patterns)
-    if (!body.match(/[ãõçáéíóú]/i) && !body.match(/\b(que|como|para|uma|não|são|pode|mais)\b/i)) {
+    // Skip if body is already in English (heurística centralizada no lang-guard)
+    if (!looksWrongLanguage(body, 'en').wrong) {
       console.log(`  ⏭️ ${file} - already translated`);
       continue;
     }
@@ -89,8 +91,8 @@ async function main() {
     const frontmatter = parts[1];
     const body = parts.slice(2).join('---').trim();
 
-    // Skip if body is already in Spanish
-    if (!body.match(/[ãõç]/i) && body.match(/[ñ¿¡]/)) {
+    // Skip if body is already in Spanish (heurística centralizada no lang-guard)
+    if (!looksWrongLanguage(body, 'es').wrong) {
       console.log(`  ⏭️ ${file} - already translated`);
       continue;
     }
@@ -117,4 +119,9 @@ async function main() {
   console.log(`\n📊 Resultado: ${translated} traduzidos, ${errors} erros`);
 }
 
-main();
+// translateBody é reutilizado pelo traducao-sweep.js (autocura semanal) —
+// main() só roda quando este arquivo é o entrypoint (não ao ser importado).
+export { translateBody };
+
+const isMain = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isMain) main();

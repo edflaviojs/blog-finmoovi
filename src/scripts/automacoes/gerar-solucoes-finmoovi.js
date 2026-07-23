@@ -8,6 +8,7 @@ import { config } from '../../../site.config.ts';
 
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
+import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -428,7 +429,7 @@ Responda EXATAMENTE neste formato:
       console.log('⏳ Aguardando 30s (rate limit)...');
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 Traduzindo EN...');
-      const enPost = await translatePost({ title, meta, headline, keywords: allKeywords, processedContent: processedContentPt }, 'en');
+      const enPost = await guardedTranslate(() => translatePost({ title, meta, headline, keywords: allKeywords, processedContent: processedContentPt }, 'en'), 'en', `${slugPt} (en)`);
       const ygEn = fixStaleYear(enPost.title);
       if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); enPost.title = ygEn.text; }
       savePost(`en-${slugPt}`, {
@@ -450,7 +451,7 @@ Responda EXATAMENTE neste formato:
       console.log('⏳ Aguardando 30s (rate limit)...');
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 Traduzindo ES...');
-      const esPost = await translatePost({ title, meta, headline, keywords: allKeywords, processedContent: processedContentPt }, 'es');
+      const esPost = await guardedTranslate(() => translatePost({ title, meta, headline, keywords: allKeywords, processedContent: processedContentPt }, 'es'), 'es', `${slugPt} (es)`);
       const ygEs = fixStaleYear(esPost.title);
       if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); esPost.title = ygEs.text; }
       savePost(`es-${slugPt}`, {

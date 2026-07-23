@@ -4,6 +4,7 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { looksWrongLanguage } from '../scripts/lib/lang-guard.js';
 
 // Página INTERNA de status das automações (histórico de 30 dias do Relatório do Dia).
 // noindex + fora do sitemap (sitemap-index.xml.ts é curado à mão e NÃO inclui /status)
@@ -143,6 +144,26 @@ if (existsSync(redditFile)) {
   } catch { /* arquivo ilegível → estado vazio */ }
 }
 
+// ── Trava de tradução (lang-guard) — scan barato em BUILD TIME (só regex)
+//    sobre todos os en-*/es-* de posts e glossário ──
+const langGuardDirs: [string, string][] = [
+  [join(process.cwd(), 'src/content/posts'), 'posts'],
+  [join(process.cwd(), 'src/content/glossario'), 'glossario'],
+];
+const suspectTranslations: string[] = [];
+for (const [dir, label] of langGuardDirs) {
+  if (!existsSync(dir)) continue;
+  for (const f of readdirSync(dir).filter(f => /^(en|es)-.+\.md$/.test(f))) {
+    try {
+      const raw = readFileSync(join(dir, f), 'utf-8');
+      const m = raw.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n?([\s\S]*)$/);
+      const body = m ? m[1] : raw;
+      const check = looksWrongLanguage(body, f.startsWith('en-') ? 'en' : 'es');
+      if (check.wrong) suspectTranslations.push(`${label}/${f}`);
+    } catch { /* arquivo ilegível não derruba o build da /status */ }
+  }
+}
+
 const daysAgo = (d: string) => {
   const diff = Math.floor((Date.now() - new Date(`${d}T00:00:00Z`).getTime()) / 86400000);
   if (!Number.isFinite(diff) || diff < 0) return '—';
@@ -166,6 +187,14 @@ const daysAgo = (d: string) => {
           Histórico do Relatório do Dia — últimos 30 dias (horário de Lisboa).
           Atualiza a cada envio do digest (~6h40).
         </p>
+        <p
+          class={`translations-line${suspectTranslations.length > 0 ? ' warn' : ''}`}
+          title={suspectTranslations.length > 0 ? suspectTranslations.slice(0, 30).join(', ') : 'lang-guard: todos os corpos EN/ES passaram na checagem de idioma (build time)'}
+        >
+          {suspectTranslations.length === 0
+            ? '🌐 Traduções: OK'
+            : `⚠️ ${suspectTranslations.length} arquivo${suspectTranslations.length === 1 ? '' : 's'} com tradução suspeita`}
+        </p>
       </header>
 
       <section class="status-panel panel-enviar">
@@ -187,6 +216,7 @@ const daysAgo = (d: string) => {
               <option value="dicas">dicas</option>
               <option value="investimentos">investimentos</option>
               <option value="orcamento">orcamento</option>
+              <option value="glossario">Glossário (termo)</option>
             </select>
             <input
               type="password"
@@ -500,6 +530,17 @@ const daysAgo = (d: string) => {
     color: var(--text-secondary);
     max-width: 560px;
     margin: 0 auto;
+  }
+
+  .translations-line {
+    margin: var(--space-2) auto 0;
+    font-size: var(--text-xs, 0.75rem);
+    color: var(--text-tertiary, #8b949e);
+  }
+
+  .translations-line.warn {
+    color: var(--accent-yellow, #d29922);
+    font-weight: 600;
   }
 
   /* ── Painéis operacionais (enviar / fila / reddit) ── */
