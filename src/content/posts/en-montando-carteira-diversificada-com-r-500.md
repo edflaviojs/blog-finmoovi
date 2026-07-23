@@ -34,7 +34,7 @@ Before starting to invest, it's crucial to define your objectives and plan how y
 
 
 ## Income Simulations
-Let's consider a practical example. Suppose you invest R$500 in an investment fund that offers an annual return of 8%. After a year, your investment will be worth R$540. If you continue investing R$500 every month, after 5 years, your investment could be worth around R$4,500, considering the same annual return of 8%. It's essential to remember that these are just examples, and the actual performance of investments may vary.
+Let's consider a practical example. Suppose you invest R$500 in an [investment fund](/en/glossario/en-fundo-de-investimento) that offers an annual return of 8%. After a year, your investment will be worth R$540. If you continue investing R$500 every month, after 5 years, your investment could be worth around R$4,500, considering the same annual return of 8%. It's essential to remember that these are just examples, and the actual performance of investments may vary.
 
 ## Risks
 Investing always involves risks. Risk is the possibility of losing part or all of your investment. There are different types of risks, such as market risk (the value of assets may fall), credit risk (the company or government that issued the bond may not pay), and [liquidity](/en/glossario/en-liquidez) risk (you may not be able to sell your investment quickly enough or at the price you want). To manage these risks, it's essential to diversify your portfolio and understand the risks associated with each investment. Evaluate whether it makes sense for your risk profile and financial objectives.
