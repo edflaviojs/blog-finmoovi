@@ -9,12 +9,15 @@ import { config } from '../../../site.config.ts';
  *   5. ⚙️ Workflows executados (API do GitHub Actions)
  *   6. 📧 E-mails provavelmente enviados (workflows de e-mail com sucesso)
  *   7. 📋 Pendências abertas (PENDENCIAS.md na raiz do repo)
+ *   8. 🗓️ Hoje no piloto automático (agenda dos crons de .github/workflows p/ o dia que começa)
  * Cada seção é isolada em try/catch: falha numa seção vira aviso no e-mail, nunca aborta o envio.
- * Flag --dry-run: monta tudo, grava digest-preview.html e NÃO envia (não exige RESEND_API_KEY).
+ * Além do e-mail, salva um snapshot JSON do dia em .github/data/relatorios/YYYY-MM-DD.json
+ * (máx. 40 arquivos) — consumido em build time pela página /status/ do blog.
+ * Flag --dry-run: monta tudo, grava digest-preview.html + snapshot e NÃO envia (não exige RESEND_API_KEY).
  * Executado via GitHub Actions (ver .github/workflows/digest-diario-conteudo.yml).
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, unlinkSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 
@@ -61,7 +64,8 @@ function getYesterdayWindow(now = new Date()) {
   const yd = new Date(yestMidnightApprox); // só p/ formatar a data civil de ontem
   const dateLabel = `${String(yd.getUTCDate()).padStart(2, '0')}/${String(yd.getUTCMonth() + 1).padStart(2, '0')}`;
   const dateFull = `${String(yd.getUTCDate()).padStart(2, '0')}/${String(yd.getUTCMonth() + 1).padStart(2, '0')}/${yd.getUTCFullYear()}`;
-  return { startUtc, endUtc, dateLabel, dateFull };
+  const dateIso = `${yd.getUTCFullYear()}-${String(yd.getUTCMonth() + 1).padStart(2, '0')}-${String(yd.getUTCDate()).padStart(2, '0')}`; // dia reportado (ontem)
+  return { startUtc, endUtc, dateLabel, dateFull, dateIso };
 }
 
 function inWindow(isoStr, win) {
@@ -240,6 +244,131 @@ function getPendencias() {
 }
 
 // ---------------------------------------------------------------------------
+// Seção 8 — Agenda de hoje (crons de .github/workflows/*.yml)
+// ---------------------------------------------------------------------------
+
+// Matching simples de um campo de cron: '*', números, listas (a,b), ranges (a-b) e steps (*/n, a-b/n).
+function cronFieldMatches(field, value, min, max) {
+  return field.split(',').some(rawPart => {
+    let part = rawPart.trim();
+    let step = 1;
+    const stepM = part.match(/^(.+)\/(\d+)$/);
+    if (stepM) { part = stepM[1]; step = Number(stepM[2]); }
+    if (step < 1) return false;
+    let lo, hi;
+    if (part === '*') { lo = min; hi = max; }
+    else if (/^\d+$/.test(part)) { lo = Number(part); hi = step > 1 ? max : lo; }
+    else {
+      const m = part.match(/^(\d+)-(\d+)$/);
+      if (!m) return false;
+      lo = Number(m[1]); hi = Number(m[2]);
+    }
+    return value >= lo && value <= hi && (value - lo) % step === 0;
+  });
+}
+
+// Testa se a expressão de cron (5 campos, UTC — como o GitHub Actions) dispara no instante dado.
+function cronMatchesUtc(expr, dUtc) {
+  const f = expr.trim().split(/\s+/);
+  if (f.length !== 5) return false;
+  const [mi, h, dom, mon, dow] = f;
+  if (!cronFieldMatches(mi, dUtc.getUTCMinutes(), 0, 59)) return false;
+  if (!cronFieldMatches(h, dUtc.getUTCHours(), 0, 23)) return false;
+  if (!cronFieldMatches(mon, dUtc.getUTCMonth() + 1, 1, 12)) return false;
+  const domOk = cronFieldMatches(dom, dUtc.getUTCDate(), 1, 31);
+  const wd = dUtc.getUTCDay();
+  const dowOk = cronFieldMatches(dow, wd, 0, 7) || (wd === 0 && cronFieldMatches(dow, 7, 0, 7)); // 0 e 7 = domingo
+  // Semântica padrão do cron: dom E dow restritos → OR; senão → AND.
+  return dom !== '*' && dow !== '*' ? (domOk || dowOk) : (domOk && dowOk);
+}
+
+// Lê name + crons de todos os workflows do checkout.
+function parseWorkflowSchedules() {
+  const dir = join(process.cwd(), '.github/workflows');
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir)
+    .filter(f => f.endsWith('.yml') || f.endsWith('.yaml'))
+    .map(f => {
+      const txt = readFileSync(join(dir, f), 'utf-8');
+      const nameM = txt.match(/^name:\s*(.+)$/m);
+      const name = nameM ? nameM[1].trim().replace(/^['"]|['"]$/g, '') : f;
+      const crons = [...txt.matchAll(/^\s*-\s*cron:\s*['"]([^'"]+)['"]/gm)].map(m => m[1]);
+      return { file: f, name, crons };
+    })
+    .filter(w => w.crons.length > 0);
+}
+
+// Agenda do DIA QUE ESTÁ COMEÇANDO (dia civil de hoje em Lisboa): varre os 1440
+// minutos do dia, testa cada cron (UTC) e devolve [{ name, times: ['HH:MM', ...] }]
+// ordenado pelo primeiro horário. Workflows com múltiplos crons (ex.: pares de
+// fuso verão/inverno, como o próprio digest) aparecem UMA vez, com os horários juntos.
+function getTodayAgenda(now = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Lisbon', year: 'numeric', month: '2-digit', day: '2-digit'
+  }).format(now); // "YYYY-MM-DD" de hoje em Lisboa
+  const [y, mo, d] = parts.split('-').map(Number);
+  const todayMidnightApprox = Date.UTC(y, mo - 1, d);
+  const startMs = todayMidnightApprox - lisbonOffsetMinutes(new Date(todayMidnightApprox)) * 60000; // 00:00 Lisboa em UTC real
+
+  const workflows = parseWorkflowSchedules();
+  const minutes = [];
+  for (let i = 0; i < 1440; i++) minutes.push(new Date(startMs + i * 60000));
+
+  const agenda = [];
+  for (const wf of workflows) {
+    const times = new Set();
+    for (const dUtc of minutes) {
+      if (wf.crons.some(c => cronMatchesUtc(c, dUtc))) times.add(lisbonTime(dUtc.toISOString()));
+    }
+    if (times.size > 0) agenda.push({ name: wf.name, times: [...times].sort() });
+  }
+  agenda.sort((a, b) => a.times[0].localeCompare(b.times[0]) || a.name.localeCompare(b.name));
+  return agenda;
+}
+
+// ---------------------------------------------------------------------------
+// Snapshot JSON do dia (.github/data/relatorios/YYYY-MM-DD.json, máx. 40 arquivos)
+// ---------------------------------------------------------------------------
+
+function saveSnapshot(snapshot) {
+  const dir = join(process.cwd(), '.github/data/relatorios');
+  mkdirSync(dir, { recursive: true });
+  const file = join(dir, `${snapshot.date}.json`);
+  writeFileSync(file, JSON.stringify(snapshot, null, 2) + '\n', 'utf-8');
+
+  // Retenção: mantém no máximo 40 snapshots (apaga os mais antigos).
+  const files = readdirSync(dir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort();
+  for (const old of files.slice(0, Math.max(0, files.length - 40))) {
+    unlinkSync(join(dir, old));
+  }
+  return file;
+}
+
+// Workflows de e-mail concluídos com sucesso (usado no e-mail e no snapshot).
+function getEmailRuns(runs) {
+  return runs.filter(r =>
+    r.conclusion === 'success' &&
+    EMAIL_WORKFLOWS.some(w => (r.path || '').includes(w))
+  );
+}
+
+// Resumo por workflow p/ o snapshot: [{ name, count, ok, fail, firstTimeLisbon }].
+function summarizeRuns(runs) {
+  const byName = new Map();
+  for (const r of runs) {
+    if (!byName.has(r.name)) byName.set(r.name, []);
+    byName.get(r.name).push(r);
+  }
+  return [...byName.entries()].map(([name, group]) => ({
+    name,
+    count: group.length,
+    ok: group.filter(r => r.conclusion === 'success').length,
+    fail: group.filter(r => r.conclusion === 'failure').length,
+    firstTimeLisbon: lisbonTime(group[0].run_started_at || group[0].created_at)
+  }));
+}
+
+// ---------------------------------------------------------------------------
 // Blocos HTML (tema dark #0d1117 / #161b22)
 // ---------------------------------------------------------------------------
 
@@ -372,11 +501,7 @@ function htmlWorkflows(runs) {
   return `${sectionTitle('⚙️ Workflows executados', runs.length, '#8957e5')}${table}`;
 }
 
-function htmlEmails(runs) {
-  const emailRuns = runs.filter(r =>
-    r.conclusion === 'success' &&
-    EMAIL_WORKFLOWS.some(w => (r.path || '').includes(w))
-  );
+function htmlEmails(emailRuns) {
   if (emailRuns.length === 0) {
     return `${sectionTitle('📧 E-mails enviados', 0, '#58a6ff')}${emptyLine('Nenhum workflow de e-mail concluído com sucesso.')}`;
   }
@@ -395,6 +520,19 @@ function htmlPendencias(pendencias) {
   const rows = pendencias.map(p => `
     <tr><td style="padding:7px 0;border-bottom:1px solid #21262d;color:#c9d1d9;font-size:13px;">☐ ${esc(p)}</td></tr>`).join('');
   return `${sectionTitle('📋 Pendências', pendencias.length, '#d29922')}<table style="width:100%;border-collapse:collapse;">${rows}</table>`;
+}
+
+function htmlAgenda(agenda) {
+  if (agenda.length === 0) {
+    return `${sectionTitle('🗓️ Hoje no piloto automático', 0, '#3fb950')}${emptyLine('Nenhum workflow agendado para hoje.')}`;
+  }
+  const rows = agenda.map(a => `
+    <tr><td style="padding:7px 0;border-bottom:1px solid #21262d;color:#c9d1d9;font-size:13px;">
+      <span style="color:#3fb950;font-weight:600;">${a.times.length <= 3 ? a.times.join('/') : `${a.times[0]} ×${a.times.length}`}</span>
+      <span style="color:#8b949e;margin:0 6px;">—</span>${esc(a.name)}
+    </td></tr>`).join('');
+  return `${sectionTitle('🗓️ Hoje no piloto automático', agenda.length, '#3fb950')}<table style="width:100%;border-collapse:collapse;">${rows}</table>
+    <p style="color:#6e7681;font-size:11px;margin:8px 0 0;">Horários de Lisboa, previstos pelos crons — o GitHub pode atrasar alguns minutos.</p>`;
 }
 
 function buildEmail(sections, counts, win) {
@@ -465,6 +603,15 @@ async function main() {
   const sections = [];
   const counts = { content: 0, videos: 0, pins: 0, failures: 0, runs: 0 };
 
+  // Dados estruturados de cada seção (reaproveitados no snapshot JSON da página /status/).
+  let failures = [];
+  let contentItems = [];
+  let videos = [];
+  let pins = [];
+  let emailRuns = [];
+  let pendencias = [];
+  let agenda = [];
+
   // 5 (buscado primeiro pois alimenta 1 e 6) — Workflows via API GitHub
   let runs = [];
   let runsError = null;
@@ -480,7 +627,7 @@ async function main() {
   // 1. Falhas (topo, só se houver)
   try {
     if (!runsError) {
-      const failures = runs.filter(r => r.conclusion === 'failure');
+      failures = runs.filter(r => r.conclusion === 'failure');
       counts.failures = failures.length;
       sections.push(htmlFalhas(failures));
       console.log(`🚨 ${failures.length} falha(s)`);
@@ -491,20 +638,20 @@ async function main() {
 
   // 2. Conteúdo publicado
   try {
-    const items = getFilesAddedYesterday(win)
+    contentItems = getFilesAddedYesterday(win)
       .map(describeFile)
       .filter(Boolean)
       .sort((a, b) => (a.label.localeCompare(b.label) || a.title.localeCompare(b.title)));
-    counts.content = items.length;
-    sections.push(htmlConteudo(items));
-    console.log(`📝 ${items.length} conteúdo(s) publicado(s)`);
+    counts.content = contentItems.length;
+    sections.push(htmlConteudo(contentItems));
+    console.log(`📝 ${contentItems.length} conteúdo(s) publicado(s)`);
   } catch (err) {
     sections.push(warnBlock('📝 Conteúdo publicado', err.message));
   }
 
   // 3. YouTube
   try {
-    const videos = getYouTubeYesterday(win);
+    videos = getYouTubeYesterday(win);
     counts.videos = videos.length;
     sections.push(htmlYouTube(videos));
     console.log(`🎬 ${videos.length} vídeo(s) YouTube`);
@@ -514,7 +661,7 @@ async function main() {
 
   // 4. Pinterest
   try {
-    const pins = getPinterestYesterday(win);
+    pins = getPinterestYesterday(win);
     counts.pins = pins.length;
     sections.push(htmlPinterest(pins));
     console.log(`📌 ${pins.length} pin(s) Pinterest`);
@@ -531,22 +678,60 @@ async function main() {
 
   // 6. E-mails enviados
   try {
-    sections.push(runsError ? warnBlock('📧 E-mails enviados', runsError) : htmlEmails(runs));
+    emailRuns = runsError ? [] : getEmailRuns(runs);
+    sections.push(runsError ? warnBlock('📧 E-mails enviados', runsError) : htmlEmails(emailRuns));
   } catch (err) {
     sections.push(warnBlock('📧 E-mails enviados', err.message));
   }
 
   // 7. Pendências
   try {
-    const pendencias = getPendencias();
+    pendencias = getPendencias();
     sections.push(htmlPendencias(pendencias));
     console.log(`📋 ${pendencias.length} pendência(s) aberta(s)`);
   } catch (err) {
     sections.push(warnBlock('📋 Pendências', err.message));
   }
 
+  // 8. Agenda de hoje (dia que está começando, Lisboa)
+  try {
+    agenda = getTodayAgenda();
+    sections.push(htmlAgenda(agenda));
+    console.log(`🗓️ Agenda de hoje: ${agenda.length} workflow(s)`);
+    console.log(agenda.map(a => `${a.times.join('/')} — ${a.name}`).join('\n'));
+  } catch (err) {
+    sections.push(warnBlock('🗓️ Hoje no piloto automático', err.message));
+  }
+
   const { subject, html } = buildEmail(sections, counts, win);
   console.log(`✉️ Subject: ${subject}`);
+
+  // Snapshot JSON do dia reportado (consumido pela página /status/ em build time).
+  // Também roda no dry-run — é inofensivo (arquivo local, só o workflow commita).
+  try {
+    const snapshotFile = saveSnapshot({
+      date: win.dateIso,
+      counts,
+      failures: failures.map(r => ({
+        name: r.name,
+        htmlUrl: r.html_url,
+        timeLisbon: lisbonTime(r.run_started_at || r.created_at)
+      })),
+      content: contentItems,
+      videos: videos.map(v => ({ ...v, timeLisbon: lisbonTime(v.uploadedAt) })),
+      pins: pins.map(p => ({ ...p, timeLisbon: lisbonTime(p.publishedAt) })),
+      runsSummary: runsError ? [] : summarizeRuns(runs),
+      emails: emailRuns.map(r => ({
+        name: r.name,
+        timeLisbon: lisbonTime(r.run_started_at || r.created_at)
+      })),
+      pendencias,
+      agenda
+    });
+    console.log(`🗃️ Snapshot salvo em ${snapshotFile}`);
+  } catch (err) {
+    console.warn(`⚠️ Falha ao salvar snapshot (e-mail segue normal): ${err.message}`);
+  }
 
   if (DRY_RUN) {
     const previewPath = join(process.cwd(), 'digest-preview.html');

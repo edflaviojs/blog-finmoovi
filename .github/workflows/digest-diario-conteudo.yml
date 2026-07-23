@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write # commit do snapshot diário em .github/data/relatorios/ (página /status/)
   actions: read # necessário p/ a seção "Workflows executados" do relatório (GET /actions/runs)
 
 concurrency:
@@ -52,3 +52,18 @@ jobs:
             if [ "$OFFSET" = "+0000" ] && [ "$CRON" != "40 6 * * *" ]; then echo "::notice::Cron de verão pulado (inverno)"; exit 0; fi
           fi
           node src/scripts/automacoes/digest-diario-conteudo.js
+
+      # SEM tag de pular CI de propósito: o CF Pages PRECISA rebuildar para a
+      # página /status/ (que lê estes snapshots em build time) atualizar.
+      - name: Commit snapshot do relatório
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+          git add .github/data/relatorios
+          if git diff --cached --quiet; then
+            echo "Sem snapshot novo para commitar"
+          else
+            git commit -m "chore: snapshot relatorio diario"
+            git pull --rebase origin main || true
+            git push
+          fi
