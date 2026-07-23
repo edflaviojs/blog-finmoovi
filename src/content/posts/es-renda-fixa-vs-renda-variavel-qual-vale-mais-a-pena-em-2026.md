@@ -20,7 +20,7 @@ seo:
 
 ## Introducción  
 
-Si acabas de abrir una cuenta en un banco o de recibir tu primer sueldo, la primera gran duda suele ser: **¿dónde colocar el [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado)?** No hay una única respuesta. En 2026, las dos categorías más comentadas son **renta fija** y **[renta variable](/es/glossario/es-renda-variavel)**. Cada una tiene ventajas, riesgos y momentos ideales de uso. En este artículo analizaremos ambos lados de la moneda, compararemos criterios importantes y te ayudaremos a decidir cuál combina mejor con tu objetivo, tolerancia al riesgo y horizonte de tiempo. Ah, y al final te recomendaremos una herramienta práctica – el **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** – que facilita el seguimiento de cualquier elección que hagas.  
+Si acabas de abrir una cuenta en un banco o de recibir tu primer sueldo, la primera gran duda suele ser: **¿dónde colocar el [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado)?** No hay una única respuesta. En 2026, las dos categorías más comentadas son **[renta fija](/es/posts/es-tesouro-direto-para-iniciantes)** y **[renta variable](/es/glossario/es-renda-variavel)**. Cada una tiene ventajas, riesgos y momentos ideales de uso. En este artículo analizaremos ambos lados de la moneda, compararemos criterios importantes y te ayudaremos a decidir cuál combina mejor con tu objetivo, tolerancia al riesgo y horizonte de tiempo. Ah, y al final te recomendaremos una herramienta práctica – el **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** – que facilita el seguimiento de cualquier elección que hagas.  
 
 ---  
 
@@ -107,7 +107,7 @@ En la práctica, al comprar una acción te conviertes en socio de la empresa. Tu
 
 ## Cuándo elegir la renta fija  
 
-1. **Objetivo a corto plazo** – Si necesitas el [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) en hasta 2 años (ej.: reserva de emergencia, viaje), la renta fija garantiza que el capital se preserve.  
+1. **Objetivo a corto plazo** – Si necesitas el [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) en hasta 2 años (ej.: reserva de emergencia, [viaje](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)), la renta fija garantiza que el capital se preserve.  
 2. **Perfil conservador** – Quien no tolera ver oscilar el valor de la [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500) prefiere la seguridad de un CDB o Tesoro.  
 3. **Entorno de intereses altos** – Cuando la [Selic](/es/posts/es-cotizaciones-semana-5-junio-2026) está por encima del 12 % a.a., la renta fija ya ofrece retornos bastante atractivos.  
 4. **Necesidad de ingresos** – LCIs/LCAs y algunas debentures pagan intereses mensuales, generando flujo de caja estable.  

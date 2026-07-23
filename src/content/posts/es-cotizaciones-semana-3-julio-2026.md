@@ -36,7 +36,7 @@ La **Selic** es la tasa de referencia que el Banco Central de Brasil utiliza par
 2. **Acciones y fondos:** Un entorno de tasas estables favorece a las empresas con deuda alta, porque sus costos de [financiamiento](/es/glossario/es-financiamento) no aumentan. Los sectores de consumo y energía mostraron una ligera recuperación, pero sigue habiendo [volatilidad](/es/glossario/es-volatilidade) por la incertidumbre global.  
 3. **[Inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) en el exterior:** Con el real fortaleciendo frente al [dólar](/es/posts/es-cotizaciones-semana-3-junio-2026) y al euro, los activos internacionales ([ETF](/es/glossario/es-etf) de EE. UU., acciones europeas) se vuelven un poco más caros para los brasileños. Sin embargo, la [diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) sigue siendo clave para protegerse de cualquier sacudida local.
 
-En resumen, la Selic estable brinda un **escenario de “[cambio](/es/glossario/es-cambio) de marcha”**: no hay presión para subir los rendimientos de la renta fija, pero tampoco hay riesgo de una subida abrupta que pueda afectar a los activos de riesgo.
+En resumen, la Selic estable brinda un **escenario de “[cambio](/es/glossario/es-cambio) de marcha”**: no hay presión para subir los rendimientos de la [renta fija](/es/posts/es-tesouro-direto-para-iniciantes), pero tampoco hay riesgo de una subida abrupta que pueda afectar a los activos de riesgo.
 
 ---
 

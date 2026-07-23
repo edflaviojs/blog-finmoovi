@@ -19,9 +19,9 @@ seo:
 
 ## O que está acontecendo com seu saldo?
 
-Se você, assim como a Ana, chega ao final do mês e abre a conta bancária para encontrar um número bem menor do que esperava, saiba que não está sozinho. Essa falta de visibilidade gera ansiedade, atrasa sonhos (como a viagem ou a reserva de emergência) e, muitas vezes, leva a decisões precipitadas, como cortar gastos essenciais ou recorrer a crédito caro.
+Se você, assim como a Ana, chega ao final do mês e abre a conta bancária para encontrar um número bem menor do que esperava, saiba que não está sozinho. Essa falta de visibilidade gera ansiedade, atrasa sonhos (como a viagem ou a [reserva de emergência](/glossario/reserva-de-emergencia)) e, muitas vezes, leva a decisões precipitadas, como cortar gastos essenciais ou recorrer a crédito caro.
 
-Eu já passei por isso. Um dia, depois de pagar o aluguel, a conta de luz e as compras do supermercado, ainda assim o extrato mostrava que faltavam quase R$ 800,00. Eu não conseguia lembrar de nenhuma compra que justificasse aquele valor. Foi aí que percebi: o problema não era o quanto eu gastava, mas **como eu acompanhava** esses gastos.
+Eu já passei por isso. Um dia, depois de pagar o aluguel, a conta de luz e as compras do supermercado, ainda assim o extrato mostrava que faltavam quase R$ 800,00. Eu não conseguia lembrar de nenhuma compra que justificasse aquele [valor](/glossario/valor). Foi aí que percebi: o problema não era o quanto eu gastava, mas **como eu acompanhava** esses gastos.
 
 ## Por que a conta some sem explicação?
 
@@ -38,9 +38,9 @@ A maioria das pessoas registra despesas apenas de forma esporádica: anota o que
 
 Esses gastos “invisíveis” são difíceis de rastrear quando você depende apenas da memória ou de anotações manuais. Além disso, a **cultura de não anotar** está enraizada: a gente pensa que “é só um detalhe” e deixa para depois, quando já é tarde demais.
 
-## Como o FinMoovi resolve esse caos
+## Como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) resolve esse caos
 
-Imagine ter um assistente pessoal que, a cada compra, já sabe em que categoria ela se encaixa e a registra em segundos. O **FinMoovi** faz exatamente isso, combinando três funcionalidades poderosas:
+Imagine ter um assistente pessoal que, a cada compra, já sabe em que categoria ela se encaixa e a registra em segundos. O **[FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** faz exatamente isso, combinando três funcionalidades poderosas:
 
 1. **Captura por voz** – Basta dizer “Almoço no restaurante X, R$ 45,00” que o app já cria a despesa.
 2. **OCR de recibos** – Tire uma foto do seu cupom ou nota fiscal e o aplicativo extrai os valores automaticamente.
@@ -73,7 +73,7 @@ Vamos ao que realmente importa: como colocar a mão na massa e ver seu dinheiro 
 | **Identificação de vazamentos**| Raro – só percebe quando o saldo já está baixo                | Imediata – alertas de gastos inesperados e recorrentes          |
 | **Stress financeiro**          | Alto – ansiedade ao ver o saldo “sumir”                      | Baixo – sensação de controle e planejamento claro               |
 | **Decisões de economia**       | Baseadas em suposições ou “sentimento”                        | Dados concretos – ajuste de limites por categoria               |
-| **Planejamento de metas**      | Difícil – falta de dados confiáveis                           | Fácil – metas de poupança e reserva de emergência com base real|
+| **Planejamento de metas**      | Difícil – falta de dados confiáveis                           | Fácil – metas de [poupança](/glossario/poupanca) e reserva de emergência com base real|
 
 Essas mudanças não são apenas números; são transformações no dia a dia. A Ana, por exemplo, passou de perder R$ 1.200,00 ao mês sem saber para reduzir 30 % dos gastos supérfluos em apenas 3 semanas, graças ao relatório de “gastos recorrentes” do FinMoovi.
 

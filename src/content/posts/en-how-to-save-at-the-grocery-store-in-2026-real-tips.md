@@ -39,7 +39,7 @@ It’s worth checking the price list on the supermarket’s website or using pri
 
 ## Use Coupons and Loyalty Programs  
 
-Most grocery chains have point programs or loyalty cards. Every purchase generates credits that can be redeemed for discounts or free items. If your cart totals R$ 250, a program that returns 2 % in credit gives you R$ 5 back right away. Not a lot, but combined with other strategies, these amounts add up.  
+Most grocery chains have point programs or loyalty cards. Every purchase generates credits that can be redeemed for discounts or free items. If your cart totals R$ 250, a program that returns 2 % in [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) gives you R$ 5 back right away. Not a lot, but combined with other strategies, these amounts add up.  
 
 ![Use cupons e programas de fidelidade](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-4.webp)  
 
@@ -47,7 +47,7 @@ Also, coupon sites (for example, Cuponeria) often provide codes for discounts on
 
 ## Avoid Impulse Purchases  
 
-One of the biggest budget villains is unplanned purchases. The “30‑day rule” – waiting 30 days before buying a wanted item – often shows that most of those products aren’t really needed.  
+One of the biggest [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) villains is unplanned purchases. The “30‑day rule” – waiting 30 days before buying a wanted item – often shows that most of those products aren’t really needed.  
 
 In the grocery store, the candy and beverage aisles are perfect traps. If you have a kid who loves cookies, buy only the amount that fits in the weekly lunchbox. If you need a quick snack, choose fruit or plain yogurt, which cost less and are healthier.  
 

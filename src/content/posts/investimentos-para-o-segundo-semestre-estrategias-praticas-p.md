@@ -104,7 +104,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 
 - **Revisão trimestral:** Verifique se a alocação ainda está alinhada ao seu objetivo.
 - **Rebalanceamento:** Se um ativo subiu muito, venda parte e realoque em ativos que ficaram abaixo do peso.
-- **Atualização de metas:** Caso receba aumento salarial ou bônus, aumente o aporte.
+- **Atualização de metas:** Caso receba aumento salarial ou [bônus](/glossario/bonus), aumente o aporte.
 
 ---
 
@@ -129,7 +129,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 
 ## Ferramentas e recursos úteis
 
-- **[Banco Central do Brasil](https://www.bcb.gov.br)** – consulta de taxa Selic e indicadores econômicos.
+- **[Banco Central do Brasil](https://www.bcb.gov.br)** – consulta de taxa [Selic](/posts/cotacoes-semana-3-junho-2026) e indicadores econômicos.
 - **[Tesouro Direto](https://www.tesourodireto.com.br)** – portal oficial para adquirir títulos públicos.
 - **[FinMoovi](/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)** – app brasileiro que integra [controle de gastos](/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza), metas de investimento e alertas de mercado. Ideal para quem quer visualizar a carteira completa em um só lugar.
 
@@ -142,7 +142,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 ## Perguntas frequentes (FAQ)
 
 **1. Posso começar a investir mesmo com pouca reserva?**
-Sim. Comece com o Tesouro Selic, que tem liquidez diária e protege o capital. À medida que a reserva cresce, diversifique.
+Sim. Comece com o Tesouro [Selic](/posts/cotacoes-semana-4-junho-2026), que tem liquidez diária e protege o capital. À medida que a reserva cresce, diversifique.
 
 **2. Quanto devo alocar em FIIs?**
 Depende do seu objetivo de renda passiva. Uma alocação de 10‑20 % costuma gerar [dividendos](/glossario/dividendos) mensais sem comprometer a [diversificação](/glossario/diversificacao).

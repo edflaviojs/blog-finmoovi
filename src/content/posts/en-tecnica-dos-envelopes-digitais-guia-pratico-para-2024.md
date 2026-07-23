@@ -19,7 +19,7 @@ seo:
 
 ## Understanding the Digital Envelope Technique
 
-The idea of digital envelopes is the same as the paper envelopes where you put physical cash for each category (food, transport, leisure, etc.). The difference is that everything lives on your phone or computer, which eliminates the risk of losing bills and gives you instant reports.
+The idea of digital envelopes is the same as the paper envelopes where you put physical cash for each category (food, transport, leisure, etc.). The difference is that everything lives on your phone or computer, which eliminates the risk of losing bills and gives you instant [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim).
 
 - **Why it works?** When you “assign” an amount to an envelope, it stops being free cash; it becomes “specific”. This visualization reduces impulse purchases.  
 - **Who can use it?** Anyone who receives a monthly income – from R$2,000 to R$8,000 – and wants clear insight into where every cent goes.

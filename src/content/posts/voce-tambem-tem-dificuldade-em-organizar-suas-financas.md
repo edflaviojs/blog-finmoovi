@@ -51,7 +51,7 @@ Aqui está um exemplo de como o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2
 Além disso, o [FinMoovi](/posts/renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026) também oferece recursos como:
 
 * Registros de despesas por voz ou OCR
-* Categorização automática de gastos
+* [Categorização automática](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) de gastos
 * Relatórios inteligentes com a ajuda da IA
 * Suporte a múltiplas moedas
 

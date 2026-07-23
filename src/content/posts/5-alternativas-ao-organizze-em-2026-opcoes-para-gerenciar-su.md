@@ -92,7 +92,7 @@ Preço: Grátis
 | Aplicativo | Multi-moeda | Suporte Offline | Smart Capture por Voz | Preço |
 | --- | --- | --- | --- | --- |
 | GuiaBolso | Não | Não | Não | Grátis |
-| FinMoovi | Sim | Sim | Sim | Pago |
+| [FinMoovi](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) | Sim | Sim | Sim | Pago |
 | Mobills | Não | Não | Não | Grátis |
 | ContaAzul | Não | Não | Não | Pago |
 | Nubank | Não | Não | Não | Grátis |

@@ -54,7 +54,7 @@ Aquí está una lista de verificación para ayudarlo a decidir si una planilla o
 - **App es para usted si...**
   - Tiene un estilo de vida activo y muchos gastos para registrar.
   - Necesita recordatorios y notificaciones para mantener sus gastos organizados.
-  - Desea tener acceso a informes y análisis detallados sobre sus gastos y finanzas.
+  - Desea tener acceso a [informes](/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) y análisis detallados sobre sus gastos y finanzas.
 
 ![Lista de Verificación: Planilla o App?](/images/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar-4.webp)
 

@@ -46,7 +46,7 @@ Free/Paid: Free
 
 
 2. **[FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro)**
-[FinMoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) is a financial management app that offers advanced features such as multi-currency, offline access, smart voice capture, and AI-powered categorization. With [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas), you can control your expenses, create budgets, and monitor your accounts efficiently.
+[FinMoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) is a financial management app that offers advanced features such as multi-currency, offline access, smart [voice capture](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim), and AI-powered categorization. With [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas), you can control your expenses, create budgets, and monitor your accounts efficiently.
 Pros:
 * Multi-currency: allows you to manage your finances in different currencies
 * Offline: allows you to access your finances even without an internet connection

@@ -19,7 +19,7 @@ seo:
 
 ## What is [private pension](/en/glossario/en-previdencia-privada)?
 
-Private pension, also called a complementary pension plan, works like a *long‑term [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) vehicle* that you feed throughout your working life. The [money](/en/posts/en-30-day-rule-for-purchases) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment.
+[Private pension](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-), also called a complementary pension plan, works like a *long‑term [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) vehicle* that you feed throughout your working life. The [money](/en/posts/en-30-day-rule-for-purchases) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment.
 
 Two main types of plans exist in Brazil:
 
@@ -74,7 +74,7 @@ These numbers assume you **make no withdrawals** before retirement and that the 
 
 | Product | Avg. return 2025‑2026 | [Liquidity](/en/glossario/en-liquidez) | Costs | Best for |
 |--------|----------------------|-----------|-------|----------|
-| **Private pension (PGBL/VGBL)** | 6% – 7% per year (depending on the fund) | Low – only withdraw at retirement or in specific cases | Admin fees 1.5‑2.5% | Retirement planning, tax benefit |
+| **Private pension (PGBL/VGBL)** | 6% – 7% per year (depending on the fund) | Low – only withdraw at retirement or in specific cases | Admin fees 1.5‑2.5% | Retirement [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas), tax benefit |
 | **[CDB](/en/glossario/en-cdb) (Certificate of Deposit)** | 100% of CDI (≈ 5.5% per year) | Medium – withdrawal after 30 days | Near‑zero fees | Short‑to‑medium horizon investors |
 | **Tesouro [Selic](/en/glossario/en-selic)** | 100% of Selic rate (≈ 5.75% per year) | High – daily withdrawal | Custody fee ~0.2% per year | Conservative profile, emergency reserve |
 

@@ -19,7 +19,7 @@ seo:
 
 ## Entender a técnica dos envelopes digitais
 
-A ideia dos envelopes digitais é a mesma dos envelopes de papel que você coloca [dinheiro](/posts/cashback-inteligente) físico para cada categoria (alimentação, transporte, lazer etc.). A diferença é que tudo fica no celular ou no computador, o que elimina o risco de perder notas e permite relatórios instantâneos.
+A ideia dos envelopes digitais é a mesma dos envelopes de papel que você coloca [dinheiro](/posts/cashback-inteligente) físico para cada categoria (alimentação, transporte, lazer etc.). A diferença é que tudo fica no celular ou no computador, o que elimina o risco de perder notas e permite [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) instantâneos.
 
 - **Por que funciona?** Quando você “destina” um [valor](/glossario/valor) a um envelope, ele deixa de ser [dinheiro](/posts/como-criar-uma-reserva-de-emergencia) livre; passa a ser “específico”. Essa visualização reduz compras por impulso.
 - **Quem pode usar?** Qualquer pessoa que receba renda mensal – de R$2.000 a R$8.000 – e queira ter clareza sobre onde cada centavo vai.

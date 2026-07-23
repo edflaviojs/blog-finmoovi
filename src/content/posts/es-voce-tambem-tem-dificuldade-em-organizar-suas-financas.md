@@ -51,7 +51,7 @@ Aquí está un ejemplo de cómo el [FinMoovi](/es/posts/es-5-alternativas-ao-org
 Además, el FinMoovi también ofrece recursos como:
 
 * Registros de gastos por voz o OCR
-* Categorización automática de gastos
+* [Categorización automática](/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) de gastos
 * Informes inteligentes con la ayuda de la IA
 * Soporte a múltiples monedas
 

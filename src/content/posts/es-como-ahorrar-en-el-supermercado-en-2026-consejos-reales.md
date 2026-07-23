@@ -33,7 +33,7 @@ La lista de compras es tu mapa del tesoro. Cuando tienes el papel o la app abier
 
 ## Apuesta por marcas propias
 
-Muchos supermercados ofrecen líneas de marcas propias que brindan una calidad similar a las marcas líderes, pero con un precio hasta un 30 % menor. La diferencia suele estar en la inversión en marketing, no en la materia prima. Prueba sustituir el detergente de marca por uno de la marca propia; el ahorro puede ser de R$ 5 a R$ 10 por envase, lo que acumulado a lo largo de un año representa hasta R$ 120.
+Muchos supermercados ofrecen líneas de marcas propias que brindan una calidad similar a las marcas líderes, pero con un precio hasta un 30 % menor. La diferencia suele estar en la inversión en marketing, no en la materia prima. Prueba sustituir el detergente de marca por uno de la marca propia; el [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) puede ser de R$ 5 a R$ 10 por envase, lo que acumulado a lo largo de un año representa hasta R$ 120.
 
 Vale la pena consultar la tabla de precios en el sitio del propio supermercado o usar apps de comparación de precios, como **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** – muestra las opciones más baratas al lado de tu lista.
 
@@ -59,4 +59,4 @@ Solo necesitas coger papel y bolígrafo (o abrir la app de finanzas) ahora mismo
 
 ---
 
-**¿Listo para organizar tus finanzas? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de a dónde va tu dinero.**
+**¿Listo para organizar tus finanzas? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos ya tienes una visión clara de a dónde va tu [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia).**

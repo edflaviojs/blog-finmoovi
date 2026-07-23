@@ -54,4 +54,4 @@ You don't need to be a [finance](/en/posts/en-voce-perde-o-controle-dos-gastos-q
 
 ---
 
-**Want to put this into practice? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) and visual [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim).**

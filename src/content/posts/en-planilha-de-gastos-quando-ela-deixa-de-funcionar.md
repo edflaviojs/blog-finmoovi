@@ -54,7 +54,7 @@ Here's a checklist to help you decide if a spreadsheet or an app is more suitabl
 - **App is for you if...**
   - You have an active lifestyle and many expenses to record.
   - You need reminders and notifications to keep your expenses organized.
-  - You want to have access to detailed reports and analyses of your expenses and finances.
+  - You want to have access to detailed [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) and analyses of your expenses and finances.
 
 ![Checklist: Planilha ou App?](/images/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar-4.webp)
 

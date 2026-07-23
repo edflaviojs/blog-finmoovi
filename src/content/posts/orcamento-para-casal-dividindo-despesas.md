@@ -68,4 +68,4 @@ Para manter o [orçamento](/posts/planilha-de-gastos-quando-ela-deixa-de-funcion
 
 ---
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — ele categoriza gastos automaticamente e gera [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) sem esforço.**

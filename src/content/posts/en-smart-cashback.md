@@ -45,4 +45,4 @@ Now that you know how to use cashback intelligently, it's time to start saving [
 
 
 ---
-**Want to put this into practice? [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) and visual reports.**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) and visual [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim).**

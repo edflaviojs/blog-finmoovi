@@ -131,7 +131,7 @@ Se você gastar R$ 80 em restaurantes, a diferença são **R$ 35** por dia. 
 ## 7. [Controle de gastos](/posts/7-alternativas-a-planilha-google-para-financas-guia-atualiza) em tempo real
 
 ### Como não perder o rumo
-Mesmo com o melhor planejamento, imprevistos acontecem. Use o **[FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** para registrar cada despesa (até as de poucos centavos) e receber alertas quando estiver próximo do limite diário. O app ainda gera relatórios mensais que mostram onde foi possível cortar custos para a próxima viagem.
+Mesmo com o melhor planejamento, imprevistos acontecem. Use o **[FinMoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** para registrar cada despesa (até as de poucos centavos) e receber alertas quando estiver próximo do limite diário. O app ainda gera [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) mensais que mostram onde foi possível cortar custos para a próxima viagem.
 
 ---
 

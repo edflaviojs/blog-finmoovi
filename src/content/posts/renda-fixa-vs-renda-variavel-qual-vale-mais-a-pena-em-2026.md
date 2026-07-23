@@ -111,7 +111,7 @@ Na prática, ao comprar uma ação, você se torna sócio da empresa. Seu ganho 
 
 ## Quando escolher a renda fixa
 
-1. **Objetivo de curto prazo** – Se você precisa do [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) em até 2 anos (ex.: reserva de emergência, viagem), a renda fixa garante que o capital ficará preservado.
+1. **Objetivo de curto prazo** – Se você precisa do [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) em até 2 anos (ex.: reserva de emergência, [viagem](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)), a renda fixa garante que o capital ficará preservado.
 2. **Perfil conservador** – Quem não tolera ver o valor da aplicação oscilar prefere a segurança de um CDB ou Tesouro.
 3. **Ambiente de juros altos** – Quando a [Selic](/posts/cotacoes-semana-4-maio-2026) está acima de 12 % a.a., a renda fixa já oferece retornos bastante atrativos.
 4. **Necessidade de renda** – LCIs/LCAs e alguns debêntures pagam juros mensais, gerando fluxo de caixa estável.

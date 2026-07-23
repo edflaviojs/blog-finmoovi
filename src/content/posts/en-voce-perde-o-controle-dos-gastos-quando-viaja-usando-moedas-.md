@@ -61,7 +61,7 @@ After saving, the expense appears on your main dashboard. At the top you see the
 If you realize you’ve already spent a lot on food in London, just edit the “Food” category limit to avoid surprises on the final bill. The app will send notifications when you’re close to the ceiling.
 
 ### 6. Final trip report  
-When you get back to Brazil, go to “Reports.” [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) generates a summary with pie charts showing the distribution of spending by currency and by category. You can export the report as PDF or CSV and even share it with your travel partner.
+When you get back to Brazil, go to “[Reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim).” [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) generates a summary with pie charts showing the distribution of spending by currency and by category. You can export the report as PDF or CSV and even share it with your travel partner.
 
 ## Before vs. after: the difference FinMoovi makes
 

@@ -36,7 +36,7 @@ Let's consider the example of John, a 35-year-old engineer who earns $8,000 per 
 Reviewing your [budget](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) involves some simple yet important steps:
 
 1. **List all your income and expenses**: Make a detailed list of all your sources of income and monthly expenses. This includes salary, [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) income, rent, utility bills, food, transportation, and more.
-2. **Categorize expenses**: Organize expenses into categories, such as housing, transportation, food, leisure, etc.
+2. **[Categorize expenses](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim)**: Organize expenses into categories, such as housing, transportation, food, leisure, etc.
 3. **Evaluate expenses**: Check if there are expenses that can be reduced or eliminated. For example, you may be able to negotiate a better phone plan with your operator or cancel subscription services you don't use.
 4. **Adjust the [budget](/en/posts/en-reduce-fixed-expenses)**: Based on your new financial situation and necessary adjustments, update your budget. Ensure that the allocations for each category are still adequate.
 

@@ -19,7 +19,7 @@ seo:
 
 ## O que é [previdência privada](/glossario/previdencia-privada)?
 
-A previdência privada, também chamada de plano de previdência complementar, funciona como um *poupador de longo prazo* que você alimenta ao longo da vida profissional. O [dinheiro](/posts/cashback-inteligente) é aplicado em [fundos](/glossario/fundos) administrados por instituições financeiras e, ao se aposentar, você recebe um benefício mensal (renda) ou um [valor](/glossario/valor) único.
+A [previdência privada](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-), também chamada de plano de previdência complementar, funciona como um *poupador de longo prazo* que você alimenta ao longo da vida profissional. O [dinheiro](/posts/cashback-inteligente) é aplicado em [fundos](/glossario/fundos) administrados por instituições financeiras e, ao se aposentar, você recebe um benefício mensal (renda) ou um [valor](/glossario/valor) único.
 
 Dois tipos principais de planos existem no Brasil:
 
@@ -51,10 +51,10 @@ Mesmo que a [taxa](/glossario/taxa) de administração tenha caído, ela ainda p
 | Taxa | O que é | Impacto típico |
 |------|---------|----------------|
 | **Administração** | Cobrança anual sobre o saldo total. | 1,5% – 2,5% ao ano. |
-| **Performance** | Cobrança sobre o rendimento que supera um índice de referência (ex.: CDI). | 10% – 20% do que exceder o benchmark. |
+| **Performance** | Cobrança sobre o rendimento que supera um índice de referência (ex.: [CDI](/glossario/cdi)). | 10% – 20% do que exceder o benchmark. |
 | **Carregamento** | Cobrança na entrada (ou saída) de recursos. | Pode chegar a 5% no ingresso, mas a maioria dos planos já eliminou essa taxa. |
 
-Além dessas, fique de olho no **IOF** (Imposto sobre Operações Financeiras) que incide nos primeiros 30 dias de [aplicação](/glossario/aplicacao). Se precisar resgatar antes desse prazo, o IOF será cobrado de forma regressiva, chegando a 96% nos primeiros dias.
+Além dessas, fique de olho no **[IOF](/glossario/iof)** (Imposto sobre Operações Financeiras) que incide nos primeiros 30 dias de [aplicação](/glossario/aplicacao). Se precisar resgatar antes desse prazo, o IOF será cobrado de forma regressiva, chegando a 96% nos primeiros dias.
 
 ## Simulação prática – quanto rende na prática?
 
@@ -78,7 +78,7 @@ Esses números assumem que você **não faz nenhum resgate** antes da aposentado
 
 | Produto | Rentabilidade média 2025‑2026 | [Liquidez](/glossario/liquidez) | Custos | Ideal para |
 |--------|------------------------------|----------|--------|------------|
-| **Previdência (PGBL/VGBL)** | 6% a 7% ao ano (dependendo do fundo) | Baixa – só resgate na aposentadoria ou em casos específicos | Taxas de admin 1,5‑2,5% | Planejamento de aposentadoria, benefício fiscal |
+| **Previdência (PGBL/VGBL)** | 6% a 7% ao ano (dependendo do fundo) | Baixa – só resgate na aposentadoria ou em casos específicos | Taxas de admin 1,5‑2,5% | [Planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) de aposentadoria, benefício fiscal |
 | **[CDB](/glossario/cdb) (Certificado de Depósito Bancário)** | 100% do CDI (aprox. 5,5% ao ano) | Média – resgate após 30 dias | Taxas quase nulas | Quem busca prazo curto a médio |
 | **[Tesouro Selic](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)** | 100% da taxa [Selic](/glossario/selic) (aprox. 5,75% ao ano) | Alta – resgate diário | Custos de custódia ~0,2% ao ano | Perfil conservador, [reserva de emergência](/glossario/reserva-de-emergencia) |
 

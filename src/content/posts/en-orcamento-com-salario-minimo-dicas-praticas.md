@@ -70,4 +70,4 @@ Managing your finances doesn't have to be a superhuman task. Start by dedicating
 
 
 
-**Want to automate this control? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) — it automatically categorizes expenses and generates reports with no effort.**
+**Want to automate this control? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) — it automatically categorizes expenses and generates [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) with no effort.**

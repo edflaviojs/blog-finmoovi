@@ -65,7 +65,7 @@ La disciplina es lo que transforma el cashback de un detalle puntual en un hábi
 
 ![Automatize o processo e acompanhe os resultados](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-6.webp)
 
-Además de facilitar el control, la app permite generar informes mensuales como:
+Además de facilitar el control, la app permite generar [informes](/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) mensuales como:
 
 - Total de cashback recibido
 - Porcentaje del cashback respecto al gasto total

@@ -129,7 +129,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 - **[Banco Central do Brasil](https://www.bcb.gov.br)** – check the Selic rate and economic indicators.  
 - **[Tesouro Direto](https://www.tesourodireto.com.br)** – official portal to buy government bonds.  
-- **[FinMoovi](/en/posts/en-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)** – Brazilian app that integrates [expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza), investment goals, and market alerts. Perfect for anyone who wants to see the whole portfolio in one place.
+- **[FinMoovi](/en/posts/en-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-)** – Brazilian app that integrates [expense tracking](/en/posts/en-7-alternativas-a-planilha-google-para-financas-guia-atualiza), [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) goals, and market alerts. Perfect for anyone who wants to see the whole portfolio in one place.
 
 ![Helpful tools and resources](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 
@@ -150,7 +150,7 @@ It’s possible through brokers that offer access to BDRs or overseas investment
 
 ## Conclusion
 
-The second half of 2026 offers a window of opportunities that goes far beyond vacations and holiday parties. By following the five steps – assess your situation, set horizons, choose assets, exploit seasonality, and monitor results – you create a portfolio that matches your profile and market demands. Use tools like **FinMoovi** to keep everything organized and don’t let daily hustle derail your investment plan.
+The second half of 2026 offers a window of opportunities that goes far beyond vacations and holiday parties. By following the five steps – assess your situation, set horizons, choose assets, exploit seasonality, and monitor results – you create a portfolio that matches your profile and market demands. Use tools like **[FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro)** to keep everything organized and don’t let daily hustle derail your investment plan.
 
 ![Conclusion](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-6.webp)
 

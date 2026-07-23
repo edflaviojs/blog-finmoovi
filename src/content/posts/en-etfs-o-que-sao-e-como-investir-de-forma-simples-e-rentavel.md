@@ -57,7 +57,7 @@ If, instead, you placed the same amount in a [CDB](/en/glossario/en-cdb) earning
 2. **Set your goal** – if you’re focused on the long term, a stock ETF may be suitable; for [fixed income](/en/posts/en-renda-fixa-vs-renda-variavel-qual-vale-mais-a-pena-em-2026), look for ETFs that track the [CDI](/en/glossario/en-cdi) or the Tesouro [Selic](/en/glossario/en-selic).  
 3. **Create a contribution plan** – for example, invest **R$500** each month in a Brazilian stock ETF.  
 4. **Place the purchase order** – select the ETF’s ticker (code), enter the quantity, and confirm the trade.  
-5. **Monitor performance** – use monthly reports or a [finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) to see how your [investment](/en/posts/en-tesouro-direto-para-iniciantes) evolves.
+5. **Monitor performance** – use monthly [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) or a [finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) to see how your [investment](/en/posts/en-tesouro-direto-para-iniciantes) evolves.
 
 ![Como começar a investir](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-4.webp)
 

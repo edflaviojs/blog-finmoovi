@@ -19,7 +19,7 @@ seo:
 
 ## ¿Qué está pasando con tu saldo?
 
-Si tú, al igual que Ana, llegas a fin de mes y abres la cuenta bancaria para encontrar un número mucho menor de lo que esperabas, debes saber que no estás solo. Esa falta de visibilidad genera ansiedad, retrasa sueños (como el viaje o el fondo de emergencia) y, a menudo, lleva a decisiones precipitadas, como recortar gastos esenciales o recurrir a crédito caro.
+Si tú, al igual que Ana, llegas a fin de mes y abres la cuenta bancaria para encontrar un número mucho menor de lo que esperabas, debes saber que no estás solo. Esa falta de visibilidad genera ansiedad, retrasa sueños (como el viaje o el [fondo de emergencia](/es/glossario/es-reserva-de-emergencia)) y, a menudo, lleva a decisiones precipitadas, como recortar gastos esenciales o recurrir a crédito caro.
 
 Yo ya pasé por eso. Un día, después de pagar el alquiler, la cuenta de luz y las compras del supermercado, el extracto mostraba que faltaban casi R$ 800,00. No podía recordar ninguna compra que justificara esa cifra. Fue entonces cuando comprendí: el problema no era cuánto gastaba, sino **cómo le hacía seguimiento** a esos gastos.
 
@@ -31,14 +31,14 @@ La mayoría de la gente registra los gastos solo de forma esporádica: anota lo 
 
 - **Pequeñas compras** en el café de la mañana, snacks o apps de delivery que suman cientos de reales a lo largo del mes.  
 - **Suscripciones automáticas** (streaming, revistas, apps) que se renuevan sin aviso y pasan desapercibidas.  
-- **Gastos de transporte** – peajes, estacionamientos e incluso el “cambio” que no se presta atención.  
+- **Gastos de transporte** – peajes, estacionamientos e incluso el “[cambio](/es/glossario/es-cambio)” que no se presta atención.  
 - **Compras impulsivas** en tiendas físicas o en línea, muchas veces motivadas por promociones que parecen buenas, pero que no estaban en el presupuesto.
 
 Estos gastos “invisibles” son difíciles de rastrear cuando solo dependes de la memoria o de anotaciones manuales. Además, la **cultura de no anotar** está arraigada: pensamos que “es solo un detalle” y lo dejamos para después, cuando ya es demasiado tarde.
 
-## Cómo FinMoovi resuelve este caos
+## Cómo [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) resuelve este caos
 
-Imagina tener un asistente personal que, con cada compra, ya sabe en qué categoría encaja y la registra en segundos. **FinMoovi** hace exactamente eso, combinando tres funcionalidades poderosas:
+Imagina tener un asistente personal que, con cada compra, ya sabe en qué categoría encaja y la registra en segundos. **[FinMoovi](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)** hace exactamente eso, combinando tres funcionalidades poderosas:
 
 1. **Captura por voz** – Basta decir “Almuerzo en el restaurante X, R$ 45,00” y la app crea el gasto.  
 2. **OCR de recibos** – Toma una foto de tu cupón o factura y la aplicación extrae los valores automáticamente.  
@@ -54,7 +54,7 @@ Vamos a lo que realmente importa: cómo poner manos a la obra y volver a tener t
 
 1. **Instala la app** – Disponible para Android y iOS, solo busca “FinMoovi” en la tienda de aplicaciones.  
 2. **Configura tus cuentas** – Conecta tu banco (o ingrésalo manualmente) para que la app importe el extracto automáticamente.  
-3. **Usa la captura por voz** – Al pagar un café, por ejemplo, abre FinMoovi, toca el ícono del micrófono y di “Café en la Panadería X, R$ 7,50”. La app graba, reconoce el valor y crea el gasto.  
+3. **Usa la captura por voz** – Al pagar un café, por ejemplo, abre FinMoovi, toca el ícono del micrófono y di “Café en la Panadería X, R$ 7,50”. La app graba, reconoce el [valor](/es/glossario/es-valor) y crea el gasto.  
 4. **Escanea recibos con OCR** – Cuando recibas el cupón del supermercado, toma una foto. FinMoovi lee la lista, suma los valores y categoriza cada ítem (alimentos, higiene, etc.).  
 5. **Revisa los informes** – En el panel “Visión Mensual”, observa gráficos de pastel y de barras que muestran la distribución de los gastos. Haz clic en cada categoría para detallar los movimientos.  
 6. **Identifica fugas** – La app destaca “gastos recurrentes” y “patrones inusuales”. Por ejemplo, si gastaste R$ 150,00 en entregas en los últimos 3 meses, FinMoovi lo señala como punto de atención.  

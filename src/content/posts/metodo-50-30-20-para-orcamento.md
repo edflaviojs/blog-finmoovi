@@ -75,4 +75,4 @@ Para manter seu [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-f
 - Anotar novas despesas ou receitas.
 - Revisar seu [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) para garantir que está dentro do planejado.
 
-**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-mobills-em-2026).com) — ele categoriza gastos automaticamente e gera relatórios sem esforço.**
+**Quer automatizar esse controle? [Teste o [FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-mobills-em-2026).com) — ele categoriza gastos automaticamente e gera [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) sem esforço.**

@@ -51,7 +51,7 @@ For those who prefer official sources, the Central Bank of Brazil provides guida
 
 ## Start today
 
-Grab a piece of paper or open your app right now and log the next expense you feel like making. Set a weekly limit and commit to respecting it. Every conscious decision strengthens your financial control and reduces the anxiety of buying without thinking.
+Grab a piece of paper or open your app right now and log the next expense you feel like making. Set a weekly limit and commit to respecting it. Every conscious decision strengthens your [financial control](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) and reduces the anxiety of buying without thinking.
 
 ![Comece hoje](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-6.webp)
 

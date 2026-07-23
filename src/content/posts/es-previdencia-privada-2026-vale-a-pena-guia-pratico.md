@@ -37,7 +37,7 @@ En 2026 el escenario cambió en tres puntos críticos:
 ![Como funciona a previdência privada em 2026?](/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico-2.webp)
 
 1. **Comisiones de administración más competitivas** – La competencia entre bancos y aseguradoras redujo la media de las comisiones del 2,5 % anual a alrededor del 1,8 % en los planes de renta fija y 2,2 % en los de [renta variable](/es/glossario/es-renda-variavel).  
-2. **Nuevas opciones de fondos indexados (ETFs) dentro de los planes** – Muchos gestores empezaron a ofrecer ETFs de acciones brasileñas e internacionales como opción de inversión, ampliando la diversificación.  
+2. **Nuevas opciones de fondos indexados (ETFs) dentro de los planes** – Muchos gestores empezaron a ofrecer ETFs de acciones brasileñas e internacionales como opción de inversión, ampliando la [diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel).  
 3. **Regulación más transparente** – La CVM (Comisión de Valores Mobiliarios) ahora exige que las instituciones publiquen el historial de rentabilidad trimestral y el “costo total al inversionista”, facilitando la comparación entre planes.  
 
 Estos cambios no convierten la previsión en un *milagro* de retorno, pero le dan al inversor más herramientas para evaluar si el plan vale la pena frente a otras [alternativas](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) de inversión.  
@@ -97,7 +97,7 @@ La principal ventaja de la previsión es el **beneficio fiscal** (en el caso del
 ## Próximos pasos
 
 1. **Enumera tus objetivos** – Define cuánto deseas acumular para la jubilación y si necesitas renta mensual o un pago único.  
-2. **Haz simulaciones** – Usa la calculadora del [Tesoro Directo](https://www.tesourodireto.com.br) o la de tu banco para comparar PGBL/VGBL con CDB y Tesoro Selic.  
+2. **Haz simulaciones** – Usa la calculadora del [Tesoro Directo](https://www.tesourodireto.com.br) o la de tu banco para comparar PGBL/VGBL con CDB y Tesoro [Selic](/es/posts/es-cotizaciones-semana-2-julio-2026).  
 3. **Chequea las comisiones** – Pide a tu corredor o gerente el desglose de comisión de administración y performance.  
 4. **Diseña un plan de aportes** – Decide un monto mensual que quepa en tu [presupuesto](/es/posts/es-5-alternativas-ao-mobills-em-2026) (p.ej., R$ 500, R$ 1.000 o R$ 5.000) y ajústalo si es necesario.  
 5. **Haz seguimiento periódico** – Revisa tu plan cada 12 meses, verificando si la rentabilidad está alineada con la meta y si las comisiones siguen siendo competitivas.  

@@ -51,7 +51,7 @@ Para quienes prefieren fuentes oficiales, el Banco Central de Brasil ofrece orie
 
 ## Empieza hoy
 
-Toma un papel o abre tu app ahora mismo y registra el próximo gasto que sientas ganas de hacer. Define un límite para la semana y comprométete a respetarlo. Cada decisión consciente fortalece tu control financiero y reduce la ansiedad de comprar sin pensar.
+Toma un papel o abre tu app ahora mismo y registra el próximo gasto que sientas ganas de hacer. Define un límite para la semana y comprométete a respetarlo. Cada decisión consciente fortalece tu [control financiero](/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) y reduce la ansiedad de comprar sin pensar.
 
 ![Comece hoje](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-6.webp)
 

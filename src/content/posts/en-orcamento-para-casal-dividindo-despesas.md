@@ -68,4 +68,4 @@ To keep the [budget](/en/posts/en-how-to-create-personal-budget) under control, 
 
 ---
 
-**Want to automate this control? [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro).com) — it automatically categorizes expenses and generates reports without effort.**
+**Want to automate this control? [Test [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) for free for 7 days](https://[finmoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro).com) — it automatically categorizes expenses and generates [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) without effort.**

@@ -54,7 +54,7 @@ Aqui está um checklist para ajudá-lo a decidir se uma planilha ou um app é ma
 - **App é para você se...**
   - Você tem um estilo de vida ativo e muitos gastos para registrar.
   - Você precisa de lembretes e notificações para manter seus gastos organizados.
-  - Você deseja ter acesso a relatórios e análises detalhadas sobre seus gastos e finanças.
+  - Você deseja ter acesso a [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) e análises detalhadas sobre seus gastos e finanças.
 
 ![Checklist: Planilha ou App?](/images/posts/planilha-de-gastos-quando-ela-deixa-de-funcionar-4.webp)
 

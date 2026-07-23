@@ -76,4 +76,4 @@ Agora que você entende melhor como investir em dólar no Brasil, é importante 
 
 
 
-Para acompanhar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) em um só lugar, [teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — multi-moeda, relatórios inteligentes e 100% offline.
+Para acompanhar seus [investimentos](/posts/previdencia-privada-vs-investir-por-conta-propria-qual-vale-) em um só lugar, [teste o [FinMoovi](/posts/5-alternativas-ao-mobills-em-2026) grátis por 7 dias](https://[finmoovi](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su).com) — multi-moeda, [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) inteligentes e 100% offline.

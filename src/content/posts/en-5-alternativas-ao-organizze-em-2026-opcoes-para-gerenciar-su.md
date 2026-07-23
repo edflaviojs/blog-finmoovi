@@ -92,7 +92,7 @@ Price: Free
 | App | Multi-currency | Offline Support | Smart Capture by Voice | Price |
 | --- | --- | --- | --- | --- |
 | GuiaBolso | No | No | No | Free |
-| FinMoovi | Yes | Yes | Yes | Paid |
+| [FinMoovi](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) | Yes | Yes | Yes | Paid |
 | Mobills | No | No | No | Free |
 | ContaAzul | No | No | No | Paid |
 | Nubank | No | No | No | Free |

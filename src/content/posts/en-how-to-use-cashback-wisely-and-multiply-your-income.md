@@ -66,7 +66,7 @@ Discipline is what turns cashback from a one‑off detail into a profitable habi
 
 ![Automatize o processo e acompanhe os resultados](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-6.webp)
 
-Besides making control easier, the app lets you generate monthly reports such as:
+Besides making control easier, the app lets you generate monthly [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) such as:
 
 - Total cashback received  
 - Cashback percentage relative to total spending  

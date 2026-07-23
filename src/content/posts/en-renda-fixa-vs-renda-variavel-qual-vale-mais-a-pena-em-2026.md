@@ -20,7 +20,7 @@ seo:
 
 ## Introduction
 
-If you’ve just opened an account at a bank or received your first paycheck, the first big question is usually: **where to put the [money](/en/posts/en-30-day-rule-for-purchases)?** There isn’t a one‑size‑fits‑all answer. In 2026, the two most talked‑about categories are **fixed income** and **[variable income](/en/glossario/en-renda-variavel)**. Each has its own advantages, risks, and ideal moments to use. In this article we’ll look at both sides of the coin, compare the key criteria, and help you decide which matches your goal, risk tolerance, and time horizon. Oh, and at the end we’ll point you to a handy tool – **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)** – that makes tracking any choice you make a breeze.
+If you’ve just opened an account at a bank or received your first paycheck, the first big question is usually: **where to put the [money](/en/posts/en-30-day-rule-for-purchases)?** There isn’t a one‑size‑fits‑all answer. In 2026, the two most talked‑about categories are **[fixed income](/en/posts/en-tesouro-direto-para-iniciantes)** and **[variable income](/en/glossario/en-renda-variavel)**. Each has its own advantages, risks, and ideal moments to use. In this article we’ll look at both sides of the coin, compare the key criteria, and help you decide which matches your goal, risk tolerance, and time horizon. Oh, and at the end we’ll point you to a handy tool – **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)** – that makes tracking any choice you make a breeze.
 
 ---
 
@@ -109,7 +109,7 @@ In practice, when you buy a stock you become a shareholder of the company. Your 
 
 1. **Short‑term goal** – If you need the [money](/en/posts/en-difference-between-investing-and-saving) within up to 2 years (e.g., [emergency fund](/en/glossario/en-reserva-de-emergencia), [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias)), fixed income ensures the capital stays preserved.  
 2. **Conservative profile** – Those who can’t tolerate seeing their [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) value swing prefer the safety of a CDB or Treasury.  
-3. **High‑interest environment** – When the Selic is above 12 % a year, fixed income already offers very attractive returns.  
+3. **High‑interest environment** – When the [Selic](/en/posts/en-quotes-week-4-may-2026) is above 12 % a year, fixed income already offers very attractive returns.  
 4. **Need for income** – LCIs/LCAs and some debentures pay monthly interest, generating a stable cash flow.
 
 ### Practical Strategy

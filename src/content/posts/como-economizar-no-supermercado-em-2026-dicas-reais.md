@@ -35,13 +35,13 @@ A lista de compras é o seu mapa do tesouro. Quando você tem o papel ou o app a
 
 ## Aposte em marcas próprias
 
-Muitos supermercados oferecem linhas de marcas próprias que entregam [qualidade](/glossario/qualidade) semelhante às marcas líderes, mas com preço até 30 % menor. A diferença costuma estar no investimento em marketing, não na matéria‑prima. Experimente substituir o detergente de marca por um da marca própria; a economia pode ser de R$ 5 a R$ 10 por embalagem, o que acumulado ao longo de um ano representa até R$ 120.
+Muitos supermercados oferecem linhas de marcas próprias que entregam [qualidade](/glossario/qualidade) semelhante às marcas líderes, mas com preço até 30 % menor. A diferença costuma estar no investimento em marketing, não na matéria‑prima. Experimente substituir o detergente de marca por um da marca própria; a [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) pode ser de R$ 5 a R$ 10 por embalagem, o que acumulado ao longo de um ano representa até R$ 120.
 
 Vale a pena conferir a tabela de preços no site do próprio supermercado ou usar apps de comparação de preços, como o **[FinMoovi](/posts/5-alternativas-ao-mobills-em-2026)** – ele mostra as opções mais baratas ao lado da sua lista.
 
 ## Use cupons e programas de fidelidade
 
-A maioria das redes de supermercado tem programas de pontos ou cartões de fidelidade. Cada compra gera créditos que podem ser trocados por descontos ou produtos gratuitos. Se o seu carrinho totaliza R$ 250, um programa que devolve 2 % em crédito gera R$ 5 de retorno imediato. Não é muito, mas somado a outras estratégias, esses valores se acumulam.
+A maioria das redes de supermercado tem programas de pontos ou cartões de fidelidade. Cada compra gera créditos que podem ser trocados por descontos ou produtos gratuitos. Se o seu carrinho totaliza R$ 250, um programa que devolve 2 % em [crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) gera R$ 5 de retorno imediato. Não é muito, mas somado a outras estratégias, esses valores se acumulam.
 
 ![Use cupons e programas de fidelidade](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-4.webp)
 

@@ -19,7 +19,7 @@ seo:
 
 ## What's happening to your balance?
 
-If you, like Ana, reach the end of the month and open your bank account to find a number far smaller than you expected, know that you're not alone. This lack of visibility creates anxiety, stalls dreams (like a trip or an emergency fund) and often leads to hasty decisions, such as cutting essential expenses or turning to expensive credit.
+If you, like Ana, reach the end of the month and open your bank account to find a number far smaller than you expected, know that you're not alone. This lack of visibility creates anxiety, stalls dreams (like a trip or an [emergency fund](/en/glossario/en-reserva-de-emergencia)) and often leads to hasty decisions, such as cutting essential expenses or turning to expensive credit.
 
 I’ve been there. One day, after paying rent, the electricity bill and grocery shopping, my statement still showed almost R$ 800.00 missing. I couldn’t recall any purchase that would justify that amount. That’s when I realized: the problem wasn’t how much I was spending, but **how I was tracking** those expenses.
 
@@ -36,7 +36,7 @@ Most people record expenses only sporadically: they write down what they remembe
 
 These “invisible” expenses are hard to track when you rely only on memory or manual notes. Moreover, the **culture of not writing things down** is ingrained: we think it’s “just a detail” and postpone it, when it’s already too late.
 
-## How FinMoovi solves this chaos
+## How [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) solves this chaos
 
 Imagine having a personal assistant that, for every purchase, already knows which category it belongs to and logs it in seconds. **FinMoovi** does exactly that, combining three powerful features:
 
@@ -48,7 +48,7 @@ With these tools, FinMoovi turns the **recording process** into a matter of seco
 
 ## Simple step‑by‑step to use FinMoovi
 
-Now to the good part: how to roll up your sleeves and get your money back under control.
+Now to the good part: how to roll up your sleeves and get your [money](/en/posts/en-30-day-rule-for-purchases) back under control.
 
 ![Passo a passo simples para usar o FinMoovi](/images/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim-4.webp)
 

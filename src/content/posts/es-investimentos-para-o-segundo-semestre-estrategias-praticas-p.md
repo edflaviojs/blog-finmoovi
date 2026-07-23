@@ -81,7 +81,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 #### Ejemplo de asignación para quien gana R$ 3.500,00
 
 - **Tesoro [Selic](/es/posts/es-cotizaciones-semana-1-junio-2026):** 30 % (R$ 153,00) – liquidez inmediata.  
-- **CDBs de bancos medianos:** 20 % (R$ 102,00) – rentabilidad mayor que la tasa Selic.  
+- **CDBs de bancos medianos:** 20 % (R$ 102,00) – rentabilidad mayor que la tasa [Selic](/es/posts/es-cotizaciones-semana-2-julio-2026).  
 - **ETF BOVA11 (IBOVESPA):** 25 % (R$ 128,00) – exposición al mercado accionario.  
 - **FIIs (ej.: KNRI11):** 20 % (R$ 102,00) – ingresos mensuales por alquileres.  
 - **Criptomonedas:** 5 % (R$ 25,00) – riesgo controlado, puede servir como “potencial de alta”.
@@ -110,7 +110,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 ### Inversor conservador
 
-- **80 % en Tesoro Selic y CDBs**, 15 % en FIIs de alta calidad, 5 % en ETF de acciones.  
+- **80 % en Tesoro [Selic](/es/posts/es-cotizaciones-semana-3-julio-2026) y CDBs**, 15 % en FIIs de alta calidad, 5 % en ETF de acciones.  
 - Enfoque en preservación de capital y rendimientos estables.
 
 ### Inversor moderado

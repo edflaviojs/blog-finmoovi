@@ -65,7 +65,7 @@ Depois de salvar, a despesa aparece no seu painel principal. No canto superior, 
 Se perceber que já gastou muito em alimentação em Londres, basta editar o limite da categoria “Alimentação” para evitar surpresas na conta final. O app enviará notificações quando estiver perto de ultrapassar o teto.
 
 ### 6. Relatório final da viagem
-Ao retornar ao Brasil, vá em “Relatórios”. O FinMoovi gera um resumo com gráficos de pizza mostrando a distribuição dos gastos por moeda e por categoria. Você pode exportar o relatório em PDF ou CSV e até compartilhar com seu parceiro de viagem.
+Ao retornar ao Brasil, vá em “[Relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim)”. O FinMoovi gera um resumo com gráficos de pizza mostrando a distribuição dos gastos por moeda e por categoria. Você pode exportar o relatório em PDF ou CSV e até compartilhar com seu parceiro de viagem.
 
 ## Antes vs depois: a diferença que o FinMoovi faz
 

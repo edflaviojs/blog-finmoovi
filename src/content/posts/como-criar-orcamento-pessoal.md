@@ -66,7 +66,7 @@ Distribua sua renda assim:
 
 ## Passo 5: Acompanhe e ajuste
 
-O [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) não é estático. Revise semanalmente e ajuste conforme necessário. Com um app de controle financeiro como o **[FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro)**, isso fica automático — ele categoriza seus gastos e mostra em tempo real se você está dentro do planejado.
+O [orçamento](/posts/orcamento-com-salario-minimo-dicas-praticas) não é estático. Revise semanalmente e ajuste conforme necessário. Com um app de [controle financeiro](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) como o **[FinMoovi](/posts/migrando-da-planilha-para-um-app-financeiro)**, isso fica automático — ele categoriza seus gastos e mostra em tempo real se você está dentro do planejado.
 
 ## Comece hoje
 

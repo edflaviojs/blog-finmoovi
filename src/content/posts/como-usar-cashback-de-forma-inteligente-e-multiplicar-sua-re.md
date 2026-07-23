@@ -56,7 +56,7 @@ Se você tem dívidas com [juros](/glossario/juros) acima de 10% ao ano (como ro
 
 Suponha que você tenha um débito de R$ 1.200,00 no rotativo com juros de 12% ao ano. Um cashback mensal de R$ 80,00 (gerado por gastos de R$ 2.666,67 com 3% de retorno) reduz o saldo devedor em R$ 80,00, evitando que quase R$ 12,00 de juros sejam cobrados a cada mês. Em 12 meses, você economiza cerca de R$ 144,00 em juros.
 
-## Aproveite promoções e categorias bônus
+## Aproveite promoções e categorias [bônus](/glossario/bonus)
 
 Cartões e aplicativos de pagamento costumam lançar promoções temporárias que aumentam o cashback em determinadas categorias. Ficar de olho nas notificações ou no site do emissor pode render retornos de até 10% em compras específicas.
 
@@ -72,7 +72,7 @@ A disciplina é o que transforma o cashback de um detalhe pontual em um hábito 
 
 
 
-Além de facilitar o controle, o app permite gerar relatórios mensais como:
+Além de facilitar o controle, o app permite gerar [relatórios](/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim) mensais como:
 
 - Total de cashback recebido
 - Percentual do cashback em relação ao gasto total
