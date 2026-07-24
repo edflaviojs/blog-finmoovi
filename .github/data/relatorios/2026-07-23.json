@@ -1,0 +1,479 @@
+{
+  "date": "2026-07-23",
+  "counts": {
+    "content": 12,
+    "videos": 1,
+    "pins": 0,
+    "failures": 1,
+    "runs": 39
+  },
+  "failures": [
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/29993879303",
+      "timeLisbon": "10:06"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "bonus",
+      "url": "https://blog.finmoovi.com/glossario/bonus",
+      "title": "bonus",
+      "description": "",
+      "category": "",
+      "publishedAt": ""
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-bonus",
+      "url": "https://blog.finmoovi.com/en/glossario/en-bonus",
+      "title": "en-bonus",
+      "description": "",
+      "category": "",
+      "publishedAt": ""
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-bonus",
+      "url": "https://blog.finmoovi.com/es/glossario/es-bonus",
+      "title": "es-bonus",
+      "description": "",
+      "category": "",
+      "publishedAt": ""
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim",
+      "url": "https://blog.finmoovi.com/es/posts/es-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim",
+      "title": "¿También te quedas sin saber a dónde fue tu dinero al final del mes?",
+      "description": "Descubre por qué el saldo desaparece y cómo FinMoovi, con categorización automática, devuelve el control de tus finanzas en minutos.",
+      "category": "ferramentas",
+      "publishedAt": "2026-07-23"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-ahorrar-en-el-supermercado-en-2026-consejos-reales",
+      "title": "Cómo ahorrar en el supermercado en 2026 – Consejos reales",
+      "description": "Aprende a reducir gastos en el supermercado con estrategias simples, ejemplos reales de compras de R$200 a R$500 y consejos prácticos que caben en tu bolsillo.",
+      "category": "dicas",
+      "publishedAt": "2026-07-23"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-economizar-no-supermercado-em-2026-dicas-reais",
+      "url": "https://blog.finmoovi.com/posts/como-economizar-no-supermercado-em-2026-dicas-reais",
+      "title": "Como economizar no supermercado em 2026 – Dicas reais",
+      "description": "Aprenda a cortar gastos no supermercado com estratégias simples, exemplos reais de compras de R$200 a R$500 e dicas práticas que cabem no seu bolso.",
+      "category": "dicas",
+      "publishedAt": "2026-07-23"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim",
+      "url": "https://blog.finmoovi.com/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim",
+      "title": "Do you also lose track of where your money went at the end of the month?",
+      "description": "Find out why your balance disappears and how FinMoovi, with automatic categorization, gives you back control of your finances in minutes.",
+      "category": "ferramentas",
+      "publishedAt": "2026-07-23"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-finmoovi-cost-of-living-index-june-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-finmoovi-cost-of-living-index-june-2026",
+      "title": "FinMoovi Cost of Living Index — June/2026",
+      "description": "IPCA for June/2026 by expense group: overall index at 0.16% in the month and 4.64% over 12 months. Month-close exchange rates and tips to protect your budget.",
+      "category": "cotacoes",
+      "publishedAt": "2026-07-23"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-save-at-the-grocery-store-in-2026-real-tips",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-save-at-the-grocery-store-in-2026-real-tips",
+      "title": "How to Save at the Grocery Store in 2026 – Real Tips",
+      "description": "Learn how to cut grocery expenses with simple strategies, real examples of purchases from R$200 to R$500, and practical tips that fit your budget.",
+      "category": "dicas",
+      "publishedAt": "2026-07-23"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-indice-finmoovi-costo-de-vida-junio-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-indice-finmoovi-costo-de-vida-junio-2026",
+      "title": "Índice FinMoovi del Costo de Vida — Junio/2026",
+      "description": "IPCA de junio/2026 por grupo de gasto: índice general en 0,16% en el mes y 4,64% en 12 meses. Cambio de cierre y consejos para proteger tu bolsillo.",
+      "category": "cotacoes",
+      "publishedAt": "2026-07-23"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "indice-finmoovi-custo-de-vida-junho-2026",
+      "url": "https://blog.finmoovi.com/posts/indice-finmoovi-custo-de-vida-junho-2026",
+      "title": "Índice FinMoovi do Custo de Vida — Junho/2026",
+      "description": "IPCA de junho/2026 por grupo de despesa: índice geral em 0,16% no mês e 4,64% em 12 meses. Câmbio de fechamento e dicas para proteger o bolso.",
+      "category": "cotacoes",
+      "publishedAt": "2026-07-23"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim",
+      "url": "https://blog.finmoovi.com/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim",
+      "title": "Você também fica sem saber para onde foi seu dinheiro no fim do mês?",
+      "description": "Descubra por que o saldo some e como o FinMoovi, com categorização automática, devolve o controle das suas finanças em minutos.",
+      "category": "ferramentas",
+      "publishedAt": "2026-07-23"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "alavancagem",
+      "videoId": "HYm_vVfwTmM",
+      "uploadedAt": "2026-07-23T09:15:47.118Z",
+      "title": "Alavancagem: transforme R$10.000 em R$30.000 com seu banco",
+      "timeLisbon": "10:15"
+    }
+  ],
+  "pins": [],
+  "runsSummary": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "03:00"
+    },
+    {
+      "name": "Gerar Conteúdo Social",
+      "count": 5,
+      "ok": 5,
+      "fail": 0,
+      "firstTimeLisbon": "08:25"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:27"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:31"
+    },
+    {
+      "name": "Year Refresh (anos defasados em títulos)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "08:36"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "09:08"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 2,
+      "ok": 1,
+      "fail": 1,
+      "firstTimeLisbon": "10:06"
+    },
+    {
+      "name": "Glossário Financeiro",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:21"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:23"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "10:25"
+    },
+    {
+      "name": "GSC - Refresh de Conteudo (decay)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:25"
+    },
+    {
+      "name": "Gerar Post Soluções FinMoovi",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:25"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:08"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:09"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "12:00"
+    },
+    {
+      "name": "Post BOFU (Ferramentas)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:45"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:16"
+    },
+    {
+      "name": "Keywords Manuais - Sincronizar Fila",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "14:35"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:20"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:41"
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:55"
+    },
+    {
+      "name": "Traduzir Glossário",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "18:56"
+    },
+    {
+      "name": "Índice FinMoovi do Custo de Vida",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "20:30"
+    },
+    {
+      "name": "Sweep de Traduções (lang-guard)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "21:54"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:08"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:32"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:54"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "15:20"
+    }
+  ],
+  "pendencias": [
+    "Auditoria YouTube API: responder follow-up do Google com link do canal (prazo ~03/08) — depois aguardar aprovação p/ trocar uploads private→public",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Canibalizacao por query",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "10:00",
+        "16:00",
+        "22:00"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Post Sazonal Semanal",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Webmentions & Outreach",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Post Comparação Semanal",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "times": [
+        "14:00"
+      ]
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "times": [
+        "16:00"
+      ]
+    }
+  ]
+}
