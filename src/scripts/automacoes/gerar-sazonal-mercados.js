@@ -162,7 +162,7 @@ async function main() {
     const en = await guardedTranslate(() => translatePost({ title, meta: post.meta, headline, keywords, content }, 'en'), 'en', `${slug} (en)`);
     const ygEn = fixStaleYear(en.title);
     if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); en.title = ygEn.text; }
-    paths.push(savePost(`en-${slug}`, { ...en, imagePath, locale: 'en', today, translationKey: slug }));
+    paths.push(savePost('en-' + createSlug(en.title), { ...en, imagePath, locale: 'en', today, translationKey: slug }));
     console.log('🌐 EN ok');
   }
 
@@ -171,7 +171,7 @@ async function main() {
     const es = await guardedTranslate(() => translatePost({ title, meta: post.meta, headline, keywords, content }, 'es'), 'es', `${slug} (es)`);
     const ygEs = fixStaleYear(es.title);
     if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); es.title = ygEs.text; }
-    paths.push(savePost(`es-${slug}`, { ...es, imagePath, locale: 'es', today, translationKey: slug }));
+    paths.push(savePost('es-' + createSlug(es.title), { ...es, imagePath, locale: 'es', today, translationKey: slug }));
     console.log('🌐 ES ok');
   }
 

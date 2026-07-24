@@ -105,7 +105,8 @@ Mencione que ${config.app.name} ayuda a seguir inversiones en múltiples monedas
     es: `| Moneda | Cotización |\n| --- | --- |\n| Dólar (USD/BRL) | R$ ${rates.USDBRL} |\n| Euro (EUR/BRL) | R$ ${rates.EURBRL} |\n\n*Fuente: AwesomeAPI — cotizaciones del ${ratesDate}*`,
   };
   const ratesTable = ratesTables[locale];
-  const slug = `${locale === 'pt' ? 'cotacoes' : locale === 'en' ? 'en-quotes' : 'es-cotizaciones'}-semana-${weekNum}-${monthName}-${today.getFullYear()}`;
+  const weekWord = locale === 'pt' ? 'semana' : locale === 'en' ? 'week' : 'semana';
+  const slug = `${locale === 'pt' ? 'cotacoes' : locale === 'en' ? 'en-quotes' : 'es-cotizaciones'}-${weekWord}-${weekNum}-${monthName}-${today.getFullYear()}`;
 
   // Insert 2 inline AI images into content
   console.log(`🖼️ Inserindo imagens inline (${locale})...`);
@@ -124,8 +125,8 @@ featured: false
 locale: "${locale}"
 translationKey: "resumo-semanal-dolar-r-${rates.USDBRL.replace('.', '-')}-semana-${weekNum}-${monthNames['pt'][today.getMonth()]}-${today.getFullYear()}"
 seo:
-  metaTitle: "${locale === 'pt' ? 'Cotações' : locale === 'en' ? 'Quotes' : 'Cotizaciones'} Semana ${weekNum} ${monthName} ${today.getFullYear()}: Dólar R$ ${rates.USDBRL}"
-  metaDescription: "${locale === 'pt' ? 'Resumo semanal' : locale === 'en' ? 'Weekly summary' : 'Resumen semanal'}: dólar a R$ ${rates.USDBRL}, euro a R$ ${rates.EURBRL}. ${locale === 'pt' ? 'Análise' : locale === 'en' ? 'Analysis' : 'Análisis'} e ${locale === 'pt' ? 'dicas' : locale === 'en' ? 'tips' : 'consejos'} para ${locale === 'pt' ? 'investidores' : locale === 'en' ? 'investors' : 'inversores'}."
+  metaTitle: "${locale === 'pt' ? `Cotações Semana ${weekNum} ${monthName} ${today.getFullYear()}: Dólar R$ ${rates.USDBRL}` : locale === 'en' ? `Quotes Week ${weekNum} ${monthName} ${today.getFullYear()}: Dollar R$ ${rates.USDBRL}` : `Cotizaciones Semana ${weekNum} ${monthName} ${today.getFullYear()}: Dólar R$ ${rates.USDBRL}`}"
+  metaDescription: "${locale === 'pt' ? `Resumo semanal: dólar a R$ ${rates.USDBRL}, euro a R$ ${rates.EURBRL}. Análise e dicas para investidores.` : locale === 'en' ? `Weekly summary: dollar at R$ ${rates.USDBRL}, euro at R$ ${rates.EURBRL}. Analysis and tips for investors.` : `Resumen semanal: dólar a R$ ${rates.USDBRL}, euro a R$ ${rates.EURBRL}. Análisis y consejos para inversores.`}"
   keywords: ["${locale === 'pt' ? 'cotação dólar hoje' : locale === 'en' ? 'dollar quote today' : 'cotización dólar hoy'}", "${locale === 'pt' ? 'cotação euro' : locale === 'en' ? 'euro quote' : 'cotización euro'}", "${locale === 'pt' ? 'resumo mercado financeiro' : locale === 'en' ? 'financial market summary' : 'resumen mercado financiero'}", "selic"]
 ---
 

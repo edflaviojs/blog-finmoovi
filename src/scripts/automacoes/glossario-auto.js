@@ -256,8 +256,7 @@ async function main() {
     if (config.locales.includes('en')) {
       console.log('🌐 Traduzindo para inglês...');
       const enContent = await guardedTranslate(() => translateTerm(termData, ptContent, 'en'), 'en', `glossário ${termData.term} (en)`);
-      // Filename SEMPRE derivado do slug PT (nunca do termo traduzido) — invariante do i18n-sync.
-      const slugEn = `en-${slugPt}`;
+      const slugEn = 'en-' + createSlug(enContent.term);
       const enContentWithImages = await insertInlineImages(enContent.content, slugEn);
 
       const enPath = saveGlossaryTerm(slugEn, {
@@ -278,7 +277,7 @@ async function main() {
     if (config.locales.includes('es')) {
       console.log('🌐 Traduzindo para espanhol...');
       const esContent = await guardedTranslate(() => translateTerm(termData, ptContent, 'es'), 'es', `glossário ${termData.term} (es)`);
-      const slugEs = `es-${slugPt}`;
+      const slugEs = 'es-' + createSlug(esContent.term);
       const esContentWithImages = await insertInlineImages(esContent.content, slugEs);
 
       const esPath = saveGlossaryTerm(slugEs, {

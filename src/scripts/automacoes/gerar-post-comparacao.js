@@ -269,7 +269,7 @@ Responda neste formato:
       const en = await guardedTranslate(() => translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'en'), 'en', `${slugPt} (en)`);
       const ygEn = fixStaleYear(en.title);
       if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); en.title = ygEn.text; }
-      savePost(`en-${slugPt}`, { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
+      savePost('en-' + createSlug(en.title), { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
     }
 
     if (config.locales.includes('es')) {
@@ -278,7 +278,7 @@ Responda neste formato:
       const es = await guardedTranslate(() => translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'es'), 'es', `${slugPt} (es)`);
       const ygEs = fixStaleYear(es.title);
       if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); es.title = ygEs.text; }
-      savePost(`es-${slugPt}`, { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
+      savePost('es-' + createSlug(es.title), { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
     }
 
     // Commit por whitelist (push fica com o workflow).

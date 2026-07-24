@@ -327,7 +327,7 @@ ${post.content}`;
 function savePost(post, slug, locale, imagePath) {
   const date = new Date().toISOString().split('T')[0];
   const translationKey = slug;
-  const localeSlug = locale === 'pt' ? slug : `${locale}-${slug}`;
+  const localeSlug = locale === 'pt' ? slug : locale + '-' + slugify(post.title);
 
   const frontmatter = `---
 title: "${post.title.replace(/"/g, '\\"')}"
