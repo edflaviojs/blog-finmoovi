@@ -1,0 +1,153 @@
+{
+  "slug": "amortizacao",
+  "term": "Amortização",
+  "category": "credito",
+  "keyword": "Amortização",
+  "nextVideoTitle": "Juros",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Você SABE* que uma dívida de *R$ 100.000* pode ser paga com *Amortização*?",
+    "counter": {
+      "from": 100000,
+      "to": 250000,
+      "prefix": "R$"
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você acha que Amortização é papo de rico… olha só esse número: R$ 100.000 em 30 anos a 10% a.a.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "Amortização",
+          "visual": {
+            "type": "statement",
+            "text": "Amortização",
+            "note": "Destaque"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "100.000",
+          "visual": {
+            "type": "number",
+            "text": "R$ 100.000",
+            "note": "Valor inicial"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A Amortização é o ato de pagar o valor principal de uma dívida aos poucos. Cada parcela que você paga tem duas partes: a amortização, que reduz o saldo devedor, e os juros, que é o custo do empréstimo. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 15,
+      "shots": [
+        {
+          "anchor": "amortização",
+          "visual": {
+            "type": "icon",
+            "icon": "piggy",
+            "note": "Poupança"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "juros",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down",
+            "note": "Custo do empréstimo"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle é dinheiro dos outros",
+            "note": "Bordão do canal"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Existem dois tipos de amortização: a Tabela SAC, que tem amortização fixa em todas as parcelas, e a Tabela Price, que tem parcelas fixas do início ao fim. Com a SAC, você paga menos juros no total.",
+      "durationSec": 15,
+      "shots": [
+        {
+          "anchor": "Tabela",
+          "visual": {
+            "type": "icon",
+            "icon": "target",
+            "note": "Meta"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "Tabela",
+          "visual": {
+            "type": "icon",
+            "icon": "question",
+            "note": "Gráfico"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "menos",
+          "visual": {
+            "type": "icon",
+            "icon": "shield",
+            "note": "Proteção"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "cta",
+      "narration": "Baixe o app FinMoovi e use a calculadora para simular sua amortização. É gratuito e fácil de usar!",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "Baixe",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Tela do app"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "outro",
+      "narration": "Agora que você sabe o que é amortização, é hora de começar a planejar seu futuro financeiro. No próximo vídeo, vamos falar sobre juros. Não perca!",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "próximo",
+          "visual": {
+            "type": "icon",
+            "icon": "hourglass",
+            "note": "Tempo passando"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Baixe o app FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 45
+}
