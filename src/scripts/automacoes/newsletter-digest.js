@@ -52,7 +52,7 @@ function getPostsFromLastWeek(dir, locale) {
         category: fm.category || '',
         publishedAt: fm.publishedAt,
         image: fm.image || '',
-        slug: file.replace('.md', '').replace(/^(en|es)-/, '')
+        slug: file.replace('.md', '')
       });
     }
   }
@@ -132,8 +132,8 @@ function buildDigestHTML(posts, glossaryPosts, lang, email) {
     <div style="background:#161b22;border:1px solid #30363d;border-radius:12px;padding:32px;">
       <h1 style="color:#f0f6fc;font-size:22px;text-align:center;margin-bottom:8px;">${t.title}</h1>
       <p style="color:#8b949e;font-size:14px;text-align:center;margin-bottom:24px;">${t.subtitle}</p>
-      ${renderSection(t.tipsTitle, tips, 'post')}
-      ${renderSection(t.quotesTitle, quotes, 'post')}
+      ${renderSection(t.tipsTitle, tips, 'posts')}
+      ${renderSection(t.quotesTitle, quotes, 'posts')}
       ${renderSection(t.glossaryTitle, glossaryPosts, 'glossario')}
       <div style="text-align:center;margin-top:32px;">
         <a href="${config.siteUrl}${basePath}" style="display:inline-block;padding:12px 32px;background:var(--brand-gradient);color:#fff;font-weight:600;font-size:14px;text-decoration:none;border-radius:8px;">Ver tudo no blog</a>

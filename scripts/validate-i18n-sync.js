@@ -176,7 +176,7 @@ console.log("============================================================");
 console.log("");
 
 validateDir(POSTS_DIR, true);
-validateDir(GLOSSARIO_DIR, false);
+validateDir(GLOSSARIO_DIR, true);
 
 if (errors.length > 0) {
   console.log("");
