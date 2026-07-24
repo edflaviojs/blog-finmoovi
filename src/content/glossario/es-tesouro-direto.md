@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-El Tesouro Direto es un programa del gobierno brasileño que permite a los ciudadanos invertir en títulos del tesoro nacional, es decir, préstamos que el gobierno solicita a los inversionistas para financiar sus proyectos y [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Esto significa que, al invertir en el Tesouro Direto, estás prestando [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) al gobierno, que te pagará con intereses. El Tesouro Direto es una forma segura de invertir, ya que el gobierno es el emisor de los títulos y, por lo tanto, es responsable de pagar los intereses y el capital invertido.
+El Tesouro Direto es un programa del gobierno brasileño que permite a los ciudadanos invertir en títulos del tesoro nacional, es decir, préstamos que el gobierno solicita a los inversionistas para financiar sus proyectos y [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s). Esto significa que, al invertir en el Tesouro Direto, estás prestando [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) al gobierno, que te pagará con intereses. El Tesouro Direto es una forma segura de invertir, ya que el gobierno es el emisor de los títulos y, por lo tanto, es responsable de pagar los intereses y el capital invertido.
 
 El Tesouro Direto ofrece diferentes tipos de títulos, como el Tesouro [Selic](/es/glossario/es-selic), el Tesouro IPCA y el Tesouro Prefixado, cada uno con sus propias características y beneficios. Por ejemplo, el Tesouro Selic es un título indexado a la tasa de interés Selic, que es la tasa de interés básica del país, mientras que el Tesouro IPCA es indexado a la [inflación](/es/glossario/es-inflacao).
 

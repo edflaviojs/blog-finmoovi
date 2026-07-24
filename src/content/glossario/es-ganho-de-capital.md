@@ -42,7 +42,7 @@ Ganancia de capital es la ganancia que obtienes cuando vendes algo por más de l
 
 ## ¿Cómo calcular?
 
-**Ganancia de Capital = Precio de Venta - Precio de Compra - [Costos](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico)**
+**Ganancia de Capital = Precio de Venta - Precio de Compra - [Costos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica)**
 
 Costos incluyen: corretaje, tasas, reformas (inmuebles), etc.
 

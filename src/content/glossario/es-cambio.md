@@ -33,7 +33,7 @@ Câmbio es el intercambio de una moneda por otra. Cuando compras dólares para v
 1. **Compre poco a poco** — no intentes acertar el mejor momento
 2. **Compare casas de câmbio** — los spreads varían mucho
 3. **Evite aeropuertos** — las tasas son las peores
-4. **[Tarjeta de débito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) internacional** — generalmente mejor que [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en efectivo
+4. **[Tarjeta de débito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) internacional** — generalmente mejor que [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en efectivo
 5. **IOF:** 4,38% en la tarjeta, 1,1% en efectivo
 
 ## Câmbio e investimentos

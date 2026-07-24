@@ -32,14 +32,14 @@ The past week was marked by a certain stability in the exchange market. The doll
 The [rate](/en/glossario/en-taxa-financeira) Selic, which is the basic [interest](/en/glossario/en-juros) rate of the Brazilian economy, remains an important factor for investors. With the current Selic, investments in [fixed income](/en/glossario/en-renda-fixa), such as treasury bonds, can be a good option for those seeking safety and return. However, it’s important to remember that Selic can change over time, affecting the [value](/en/glossario/en-valor-financeiro) of investments. If you’re an individual investor, you need to stay aware of Selic movements and adjust your investment strategy accordingly.
 
 ## Practical Tip for Individual Investors
-A practical tip for individual investors is to diversify your portfolio. That means not putting all your eggs in one basket—don’t invest all your money in a single asset. With the app [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), you can easily track your investments across multiple currencies, which is especially useful if you invest in [stocks](/en/glossario/en-acoes) or foreign company bonds. Also, it’s important to have a clear, disciplined investment plan, avoiding impulsive decisions driven by emotions.
+A practical tip for individual investors is to diversify your portfolio. That means not putting all your eggs in one basket—don’t invest all your money in a single asset. With the app [FinMoovi](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app), you can easily track your investments across multiple currencies, which is especially useful if you invest in [stocks](/en/glossario/en-acoes) or foreign company bonds. Also, it’s important to have a clear, disciplined investment plan, avoiding impulsive decisions driven by emotions.
 
 ![Selic and Impact on Investments](/images/posts/en-quotes-semana-3-june-2026-inline-3.webp)
 
 
 
 ## What to Expect for the Next Week
-For the coming week, it’s hard to predict with certainty what will happen in the financial market. However, it’s crucial to stay tuned to economic and political news, as they can affect exchange rates and investments. Additionally, continue monitoring Selic and adjust your investment strategy accordingly. With [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas), you can easily follow market changes and make informed decisions about your investments.
+For the coming week, it’s hard to predict with certainty what will happen in the financial market. However, it’s crucial to stay tuned to economic and political news, as they can affect exchange rates and investments. Additionally, continue monitoring Selic and adjust your investment strategy accordingly. With [FinMoovi](/en/posts/en-you-re-not-alone-in-struggling-to-organize-your-finances), you can easily follow market changes and make informed decisions about your investments.
 
 In short, the past week was marked by exchange‑rate stability and a Selic rate that remains a key factor for investors. Remember to diversify your investments and stay alert to market shifts. With FinMoovi, you can easily track your investments and make informed decisions. See you next week!
 

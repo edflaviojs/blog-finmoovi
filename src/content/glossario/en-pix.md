@@ -44,6 +44,6 @@ PIX is the instant payment system created by the Banco Central in 2020. It allow
 4. Use a random key for unknown recipients (not CPF)  
 5. Activate transaction notifications  
 
-## PIX and [financial control](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim)
+## PIX and [financial control](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o)
 
-PIX makes it easier to track [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) because all transactions are recorded in the statement. Apps like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) automatically categorize your PIX transactions so you know exactly where your [money](/en/posts/en-creating-an-emergency-fund) is going.
+PIX makes it easier to track [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) because all transactions are recorded in the statement. Apps like [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026) automatically categorize your PIX transactions so you know exactly where your [money](/en/posts/en-creating-an-emergency-fund) is going.

@@ -24,8 +24,8 @@ Los Fondos Inmobiliarios son como "condominios de inversores" que juntan [dinero
 ## Ventajas
 
 - Renta mensual exenta de impuesto
-- [Invertir en inmuebles](/es/posts/es-fundos-imobiliarios-para-iniciantes-guia-completo) con poco [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) (a partir de R$ 10)
-- [Diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) (un fondo puede tener varios inmuebles)
+- [Invertir en inmuebles](/es/posts/es-guia-completa-de-fondos-inmobiliarios-para-principiantes) con poco [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) (a partir de R$ 10)
+- [Diversificación](/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable) (un fondo puede tener varios inmuebles)
 - [Liquidez](/es/glossario/es-liquidez) (vende en el momento en la bolsa)
 - No necesita lidiar con inquilinos
 

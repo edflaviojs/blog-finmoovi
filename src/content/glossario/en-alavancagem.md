@@ -10,10 +10,10 @@ publishedAt: 2026-06-13
 ---
 
 ## Introduction to Leverage  
-Leverage is a fundamental concept in the world of finance that can be both beneficial and dangerous, depending on how it is used. In essence, leverage allows investors to use resources that are not their own to increase the potential return on an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500). This can be done through loans, lines of [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), or other financial instruments.  
+Leverage is a fundamental concept in the world of finance that can be both beneficial and dangerous, depending on how it is used. In essence, leverage allows investors to use resources that are not their own to increase the potential return on an [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500). This can be done through loans, lines of [credit](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026), or other financial instruments.  
 
 ## How Leverage Works  
-Imagine you want to buy a property worth $25,000 (approximately R$ 200,000). You have $6,250 (approximately R$ 50,000) to use as a down payment and can get a loan of $18,750 (approximately R$ 150,000) to cover the rest of the cost. If the property value increases to $31,250 (approximately R$ 250,000), you will have a profit of $6,250 (approximately R$ 50,000), which represents a 100% return on your initial [investment](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) of $6,250. However, if the property value falls to $18,750 (approximately R$ 150,000), you will have a loss of $6,250 (approximately R$ 50,000), which represents a 100% loss of your initial [investment](/en/posts/en-tesouro-direto-para-iniciantes).  
+Imagine you want to buy a property worth $25,000 (approximately R$ 200,000). You have $6,250 (approximately R$ 50,000) to use as a down payment and can get a loan of $18,750 (approximately R$ 150,000) to cover the rest of the cost. If the property value increases to $31,250 (approximately R$ 250,000), you will have a profit of $6,250 (approximately R$ 50,000), which represents a 100% return on your initial [investment](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) of $6,250. However, if the property value falls to $18,750 (approximately R$ 150,000), you will have a loss of $6,250 (approximately R$ 50,000), which represents a 100% loss of your initial [investment](/en/posts/en-tesouro-direto-for-beginners).  
 
 ![Introduction to Leverage](/images/glossario/en-alavancagem-inline-1.webp)  
 
@@ -25,7 +25,7 @@ Let's consider two examples to illustrate how leverage can work in practice:
 
 ![Practical Examples](/images/glossario/en-alavancagem-inline-3.webp)  
 
-- **Example 2: [Real Estate Investment](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo)**  
+- **Example 2: [Real Estate Investment](/en/posts/en-fundos-imobiliarios-for-beginners-complete-guide)**  
   You buy a property for $25,000, using $6,250 as a down payment and $18,750 borrowed. If the property value increases to $31,250, you will have a profit of $6,250, which represents a 100% return on your initial investment of $6,250.  
 
 ## Risks and Benefits  

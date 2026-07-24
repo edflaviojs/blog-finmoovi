@@ -30,14 +30,14 @@ Financing is when a bank lends you [money](/en/posts/en-30-day-rule-for-purchase
 - Down payment: the more, the better
 - The car is alienated to the bank
 
-## Tips to [finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) well
+## Tips to [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) well
 
 1. **Make the largest down payment possible** — reduces total interest
-2. **Choose the shortest term that fits your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026)** — less interest
+2. **Choose the shortest term that fits your [budget](/en/posts/en-5-alternatives-to-mobills-in-2026)** — less interest
 3. **Compare rates between banks** — the difference can be huge
 4. **Prefer SAC** — pays less interest in total
 5. **Amortize whenever possible** — every extra R$ 1,000 saves thousands
 
 ## How much does a financing cost
 
-A R$ 400,000 property financed over 30 years at 10% per year [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) around R$ 1,000,000 in total. You pay more than double the property's value in interest.
+A R$ 400,000 property financed over 30 years at 10% per year [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) around R$ 1,000,000 in total. You pay more than double the property's value in interest.

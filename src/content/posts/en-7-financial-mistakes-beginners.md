@@ -19,13 +19,13 @@ seo:
 
 Starting your financial journey is exciting, but it's easy to fall into common traps. Here are the 7 mistakes almost every beginner makes — and how to avoid them.
 
-## 1. Not Tracking [Expenses](/en/posts/en-metodo-50-30-20-para-orcamento)
+## 1. Not Tracking [Expenses](/en/posts/en-the-50-30-20-method-for-budgeting)
 
 The #1 mistake: not knowing where your [money](/en/posts/en-30-day-rule-for-purchases) goes. Without tracking, you can't improve. Start by recording every expense for 30 days.
 
 ## 2. No [Emergency Fund](/en/glossario/en-reserva-de-emergencia)
 
-Life happens. Without 3-6 months of [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) saved, any unexpected event becomes a financial crisis. Start with $1,000 as your first milestone.
+Life happens. Without 3-6 months of [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) saved, any unexpected event becomes a financial crisis. Start with $1,000 as your first milestone.
 
 ## 3. Ignoring Small Expenses
 
@@ -41,7 +41,7 @@ Minimum payments keep you in debt forever due to [compound interest](/en/glossar
 
 ## 6. Not Setting Financial Goals
 
-Without clear goals, saving feels pointless. Define what you're saving for: emergency fund, [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias), house, [retirement](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico).
+Without clear goals, saving feels pointless. Define what you're saving for: emergency fund, [vacation](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation), house, [retirement](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide).
 
 ## 7. Trying to Do Everything at Once
 
@@ -50,4 +50,4 @@ Financial health is a marathon, not a sprint. Focus on one goal at a time. First
 ## The Solution: Start Simple
 
 Pick one mistake from this list and fix it this week. Use a tool like FinMoovi to automate tracking and stay on top of your finances without the mental load.
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"7 Financial Mistakes Every Beginner Makes (And How to Avoid Them)","step":[{"@type":"HowToStep","position":1,"name":"Not Tracking Expenses","text":"The #1 mistake: not knowing where your [money](/en/posts/en-financial-planning-for-couples) goes. Without tracking, you can't improve. Start by recording every expense for 30 days."},{"@type":"HowToStep","position":2,"name":"No [Emergency Fund](/en/glossario/en-reserva-de-emergencia)","text":"Life happens. Without 3-6 months of expenses saved, any unexpected event becomes a financial crisis. Start with $1,000 as your first milestone."},{"@type":"HowToStep","position":3,"name":"Ignoring Small Expenses","text":"That daily $5 coffee? That's $150/month or $1,800/year. Small expenses add up fast. Track them all."},{"@type":"HowToStep","position":4,"name":"Living Without a [Budget](/en/posts/en-reduce-fixed-expenses)","text":"\"I'll just spend less\" doesn't work. You need a concrete plan. The 50-30-20 rule is a great starting point."},{"@type":"HowToStep","position":5,"name":"Only Paying Minimum on Debt","text":"Minimum payments keep you in debt forever due to [compound interest](/en/glossario/en-juros-compostos)/en/glossario/en-[juros](/en/glossario/en-juros)-compostos working against you. Always pay more than the minimum when possible."},{"@type":"HowToStep","position":6,"name":"Not Setting Financial Goals","text":"Without clear goals, saving feels pointless. Define what you're saving for: emergency fund, [vacation](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias), house, retirement."},{"@type":"HowToStep","position":7,"name":"Trying to Do Everything at Once","text":"Financial health is a marathon, not a sprint. Focus on one goal at a time. First emergency fund, then debt payoff, then investing."}]} -->
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"7 Financial Mistakes Every Beginner Makes (And How to Avoid Them)","step":[{"@type":"HowToStep","position":1,"name":"Not Tracking Expenses","text":"The #1 mistake: not knowing where your [money](/en/posts/en-financial-planning-for-couples) goes. Without tracking, you can't improve. Start by recording every expense for 30 days."},{"@type":"HowToStep","position":2,"name":"No [Emergency Fund](/en/glossario/en-reserva-de-emergencia)","text":"Life happens. Without 3-6 months of expenses saved, any unexpected event becomes a financial crisis. Start with $1,000 as your first milestone."},{"@type":"HowToStep","position":3,"name":"Ignoring Small Expenses","text":"That daily $5 coffee? That's $150/month or $1,800/year. Small expenses add up fast. Track them all."},{"@type":"HowToStep","position":4,"name":"Living Without a [Budget](/en/posts/en-reduce-fixed-expenses)","text":"\"I'll just spend less\" doesn't work. You need a concrete plan. The 50-30-20 rule is a great starting point."},{"@type":"HowToStep","position":5,"name":"Only Paying Minimum on Debt","text":"Minimum payments keep you in debt forever due to [compound interest](/en/glossario/en-juros-compostos)/en/glossario/en-[juros](/en/glossario/en-juros)-compostos working against you. Always pay more than the minimum when possible."},{"@type":"HowToStep","position":6,"name":"Not Setting Financial Goals","text":"Without clear goals, saving feels pointless. Define what you're saving for: emergency fund, [vacation](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation), house, retirement."},{"@type":"HowToStep","position":7,"name":"Trying to Do Everything at Once","text":"Financial health is a marathon, not a sprint. Focus on one goal at a time. First emergency fund, then debt payoff, then investing."}]} -->

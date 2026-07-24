@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-Los fondos son una forma de inversión colectiva que permite a los inversores combinar sus recursos para invertir en una variedad de activos, como acciones, bonos, inmuebles, etc. Esto se hace a través de una empresa que administra el fondo, seleccionando las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y distribuyendo los rendimientos entre los inversores. Los fondos pueden ser de diferentes tipos, como fondos de acciones, fondos de renta fija, fondos de inversión inmobiliaria, entre otros.
+Los fondos son una forma de inversión colectiva que permite a los inversores combinar sus recursos para invertir en una variedad de activos, como acciones, bonos, inmuebles, etc. Esto se hace a través de una empresa que administra el fondo, seleccionando las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) y distribuyendo los rendimientos entre los inversores. Los fondos pueden ser de diferentes tipos, como fondos de acciones, fondos de renta fija, fondos de inversión inmobiliaria, entre otros.
 
 Los fondos ofrecen una forma accesible para que las personas con diferentes niveles de ingresos puedan invertir en el [mercado financiero](/es/posts/es-cotizaciones-semana-1-julio-2026). Por ejemplo, si tienes un salario de R$5.000 al mes y deseas invertir R$500, puedes unirte a un fondo que te permita diversificar tus inversiones sin necesidad de tener un gran capital inicial.
 

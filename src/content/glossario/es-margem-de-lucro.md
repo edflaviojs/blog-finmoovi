@@ -12,7 +12,7 @@ readingTime: 2
 
 ## ¿Qué es Margen de Ganancia?
 
-El margen de ganancia es cuánto sobra de cada real que entra. Si una empresa factura R$ 100 y tiene R$ 80 de [costos](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico), su margen de ganancia es 20%. Cuanto mayor sea el margen, más eficiente es el negocio.
+El margen de ganancia es cuánto sobra de cada real que entra. Si una empresa factura R$ 100 y tiene R$ 80 de [costos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica), su margen de ganancia es 20%. Cuanto mayor sea el margen, más eficiente es el negocio.
 
 ## Tipos de margen
 
@@ -48,6 +48,6 @@ Al analizar [acciones](/es/glossario/es-acoes), el margen de ganancia muestra:
 - Los márgenes crecientes indican una mejora en la eficiencia
 - Los márgenes muy bajos indican un negocio frágil
 
-## Para [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su)
+## Para [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar)
 
-También tienes una “margen”: cuánto sobra de tu salario después de todos los [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Si ganas R$ 5.000 y sobran R$ 1.000, tu margen personal es 20%. Lo ideal es al menos 20% (regla 50-30-20).
+También tienes una “margen”: cuánto sobra de tu salario después de todos los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s). Si ganas R$ 5.000 y sobran R$ 1.000, tu margen personal es 20%. Lo ideal es al menos 20% (regla 50-30-20).

@@ -31,7 +31,7 @@ Example: financing of R$ 200,000 in 30 years at 10% per year.
 ## When it's worth paying off
 
 ✅ Worth it:
-- Interest on the debt is higher than the return on your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+- Interest on the debt is higher than the return on your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 - Real estate financing with high rates (>9% per year)
 - Personal and consigned loans
 - When you have idle [money](/en/posts/en-30-day-rule-for-purchases) earning less

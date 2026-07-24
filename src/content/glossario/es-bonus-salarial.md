@@ -34,11 +34,11 @@ El mecanismo del bono varía según la política de cada empresa, pero generalme
 - Si el empleado cumple o supera los objetivos, se calcula el [valor](/es/glossario/es-valor-financeiro) del bono según un porcentaje preestablecido del salario o de la utilidad generada.  
 - El pago se realiza en la nómina o como un abono separado, y suele estar sujeto a impuestos como cualquier ingreso.
 
-En la práctica, si trabajas con un salario de R$5.000 y la empresa establece un bono del 10 % por alcanzar la meta de ventas, recibirás [R$500](/es/posts/es-montando-carteira-diversificada-com-r-500) extra al final del período.
+En la práctica, si trabajas con un salario de R$5.000 y la empresa establece un bono del 10 % por alcanzar la meta de ventas, recibirás [R$500](/es/posts/es-montando-cartera-diversificada-con-r-500) extra al final del período.
 
 ## Ventajas
 
-El bono trae varios [beneficios](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) tanto para la empresa como para el trabajador:
+El bono trae varios [beneficios](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) tanto para la empresa como para el trabajador:
 
 ![Ventajas](/images/glossario/bonus-inline-3.webp)
 
@@ -79,7 +79,7 @@ Si tu empresa ya ofrece bonos, pero aún no los aprovechas al máximo, sigue est
 - Pregunta a Recursos Humanos o a tu jefe directo cuál es la política exacta (metas, porcentajes, fechas de pago).  
 - Anota las metas en tu agenda y desglosa qué acciones concretas necesitas para alcanzarlas.  
 - Cuando recibas el bono, separa el dinero en tres sobres: gasto inmediato, ahorro y reinversión.  
-- Usa una herramienta de seguimiento (una [hoja de cálculo](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) o una app) para registrar cada bono y su destino.  
+- Usa una herramienta de seguimiento (una [hoja de cálculo](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) o una app) para registrar cada bono y su destino.  
 - Evalúa al final del año si los bonos realmente mejoraron tu situación financiera y ajusta tu estrategia.
 
 ## Empieza hoy

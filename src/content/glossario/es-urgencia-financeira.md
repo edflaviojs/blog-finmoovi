@@ -16,7 +16,7 @@ La emergencia financiera es cualquier situación inesperada que requiere dinero 
 
 ## Ejemplos comunes
 
-- Pérdida de empleo (requiere de 3-6 meses de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme))
+- Pérdida de empleo (requiere de 3-6 meses de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s))
 - Emergencia médica (cirugía, tratamiento)
 - Reparación del coche (R$ 2.000-5.000)
 - Electrodoméstico roto (nevera, lavadora)
@@ -28,7 +28,7 @@ La emergencia financiera es cualquier situación inesperada que requiere dinero 
 La mejor protección contra las emergencias financieras es la **reserva de emergencia**:
 - 6 meses de gastos para CLT
 - 12 meses para autónomos/PJ
-- En inversión con [liquidez](/es/glossario/es-liquidez) diaria ([Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), [CDB](/es/glossario/es-cdb))
+- En inversión con [liquidez](/es/glossario/es-liquidez) diaria ([Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026), [CDB](/es/glossario/es-cdb))
 
 ## Qué hacer si no tienes reserva
 

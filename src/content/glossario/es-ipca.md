@@ -32,7 +32,7 @@ El IPCA sigue los precios de una "cesta" de productos y servicios que consumen l
 
 ## IPCA e inversiones
 
-Para que tu dinero crezca de verdad, tus inversiones deben rendir **por encima del IPCA**. Por eso existen títulos como el Tesoro IPCA+, que garantizan [rendimiento](/es/posts/es-montando-carteira-diversificada-com-r-500) real (por encima de la inflación).
+Para que tu dinero crezca de verdad, tus inversiones deben rendir **por encima del IPCA**. Por eso existen títulos como el Tesoro IPCA+, que garantizan [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) real (por encima de la inflación).
 
 ## IPCA histórico
 

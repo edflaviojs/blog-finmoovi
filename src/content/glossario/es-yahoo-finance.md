@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Yahoo Finance es una plataforma en línea que reúne información bursátil, noticias económicas y herramientas de análisis para cualquier persona que quiera seguir sus inversiones o simplemente entender mejor el mundo del [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia). No necesitas ser un trader profesional para usarla; la página está diseñada para que cualquiera, desde un estudiante hasta un trabajador con salario de R$4.500, pueda consultar cotizaciones de acciones, bonos y divisas, y leer artículos que explican qué está pasando en la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026). En esencia, es como un periódico financiero digital, pero con datos actualizados al minuto y la posibilidad de crear listas personalizadas de tus activos favoritos.
+Yahoo Finance es una plataforma en línea que reúne información bursátil, noticias económicas y herramientas de análisis para cualquier persona que quiera seguir sus inversiones o simplemente entender mejor el mundo del [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia). No necesitas ser un trader profesional para usarla; la página está diseñada para que cualquiera, desde un estudiante hasta un trabajador con salario de R$4.500, pueda consultar cotizaciones de acciones, bonos y divisas, y leer artículos que explican qué está pasando en la [economía](/es/posts/es-5-alternativas-al-mobills-en-2026). En esencia, es como un periódico financiero digital, pero con datos actualizados al minuto y la posibilidad de crear listas personalizadas de tus activos favoritos.
 
 ![Qué es](/images/glossario/yahoo-finance-inline-1.webp)
 

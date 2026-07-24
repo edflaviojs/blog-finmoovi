@@ -12,7 +12,7 @@ readingTime: 2
 
 ## ¿Qué es Patrimonio Neto?
 
-Patrimonio Neto = Activos - Pasivos. En otras palabras: todo lo que tienes menos todo lo que debes. Es el número más importante de tus [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) — muestra tu riqueza real.
+Patrimonio Neto = Activos - Pasivos. En otras palabras: todo lo que tienes menos todo lo que debes. Es el número más importante de tus [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) — muestra tu riqueza real.
 
 ## ¿Cómo calcular?
 
@@ -28,7 +28,7 @@ Patrimonio Neto = Activos - Pasivos. En otras palabras: todo lo que tienes menos
 - Financiación inmobiliaria (saldo deudor)
 - Financiación de vehículo
 - Préstamos personales
-- Tarjeta de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) (factura abierta)
+- Tarjeta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) (factura abierta)
 - Otras deudas
 
 ### Ejemplo

@@ -12,7 +12,7 @@ readingTime: 2
 
 ## ¿Qué es Sobregiro?
 
-Sobregiro es un límite de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) que el banco pone a disposición en su cuenta corriente. Cuando su saldo queda negativo, usted usa automáticamente el sobregiro — y paga [intereses](/es/glossario/es-juros) altísimos por eso.
+Sobregiro es un límite de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) que el banco pone a disposición en su cuenta corriente. Cuando su saldo queda negativo, usted usa automáticamente el sobregiro — y paga [intereses](/es/glossario/es-juros) altísimos por eso.
 
 ## Por qué es tan peligroso
 
@@ -35,7 +35,7 @@ Si usted queda R$ 1.000 negativos por 30 días con intereses del 12% al mes:
 3. **Configure alertas** — aviso cuando el saldo esté bajo
 4. **Si necesita crédito** — el préstamo personal tiene intereses 5 veces menores
 
-## [Alternativas](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) más baratas
+## [Alternativas](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) más baratas
 
 | Tipo de crédito | Intereses mensuales |
 |----------------|---------------|

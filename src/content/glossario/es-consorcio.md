@@ -12,7 +12,7 @@ readingTime: 2
 
 ## ¿Qué es Consorcio?
 
-Consorcio es un sistema donde varias personas se unen para comprar algo (coche, inmueble, moto). Todos los meses, cada participante paga una cuota. Cada mes, uno o más participantes son beneficiados (por sorteo o puja) y reciben la carta de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) para comprar el bien.
+Consorcio es un sistema donde varias personas se unen para comprar algo (coche, inmueble, moto). Todos los meses, cada participante paga una cuota. Cada mes, uno o más participantes son beneficiados (por sorteo o puja) y reciben la carta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) para comprar el bien.
 
 ## ¿Cómo funciona?
 

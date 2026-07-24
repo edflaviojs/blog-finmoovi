@@ -39,13 +39,13 @@ The [Selic rate](/en/glossario/en-selic), which is the basic [interest](/en/glos
 
 ## Practical Tip for Individual Investors
 
-If you're an individual investor, it's important to diversify your investments to minimize risk. A practical tip is to consider investments in different currencies, such as dollars or euros. With the app [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro), you can easily track your investments in multiple currencies and have a clear view of your portfolio. Additionally, it's important to keep an emergency reserve in a liquid account, such as a [savings account](/en/glossario/en-poupanca) or a fixed‑income investment fund, to cover unexpected expenses.
+If you're an individual investor, it's important to diversify your investments to minimize risk. A practical tip is to consider investments in different currencies, such as dollars or euros. With the app [FinMoovi](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app), you can easily track your investments in multiple currencies and have a clear view of your portfolio. Additionally, it's important to keep an emergency reserve in a liquid account, such as a [savings account](/en/glossario/en-poupanca) or a fixed‑income investment fund, to cover unexpected expenses.
 
 ## What to Expect for the Next Week
 
-For the next week, it's hard to predict with certainty what will happen in the financial market. However, it's important to stay tuned to economic and political news, as they can affect exchange rates and interest rates. Also, it's important to regularly review your investments and adjust your strategy according to market changes. With [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026), you can easily track your finances and make informed decisions to achieve your financial goals.
+For the next week, it's hard to predict with certainty what will happen in the financial market. However, it's important to stay tuned to economic and political news, as they can affect exchange rates and interest rates. Also, it's important to regularly review your investments and adjust your strategy according to market changes. With [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026), you can easily track your finances and make informed decisions to achieve your financial goals.
 
-In summary, this week was marked by a slight rise in the dollar and stability in the Selic rate. It's important to watch exchange rates and interest rates to make informed decisions about your investments. With the help of [FinMoovi](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), you can easily track your investments and achieve your financial goals. See you next week!
+In summary, this week was marked by a slight rise in the dollar and stability in the Selic rate. It's important to watch exchange rates and interest rates to make informed decisions about your investments. With the help of [FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f), you can easily track your investments and achieve your financial goals. See you next week!
 
 ---
 **Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

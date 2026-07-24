@@ -18,10 +18,10 @@ seo:
 ---
 
 ## Introduction
-Effectively managing [personal finances](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) is crucial to achieving financial stability and securing a safe future. One of the main areas of attention is reducing monthly fixed [expenses](/en/posts/en-metodo-50-30-20-para-orcamento), which can consume a large portion of our [income](/en/posts/en-montando-carteira-diversificada-com-r-500). In this article, we'll explore practical tips and strategies to reduce these [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) and save [money](/en/posts/en-30-day-rule-for-purchases).
+Effectively managing [personal finances](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation) is crucial to achieving financial stability and securing a safe future. One of the main areas of attention is reducing monthly fixed [expenses](/en/posts/en-the-50-30-20-method-for-budgeting), which can consume a large portion of our [income](/en/posts/en-building-a-diversified-portfolio-with-r-500). In this article, we'll explore practical tips and strategies to reduce these [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) and save [money](/en/posts/en-30-day-rule-for-purchases).
 
 ## Understanding Fixed Expenses
-Before you start reducing fixed expenses, it's important to understand what they are. Fixed expenses are regular [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) that typically occur every month and don't vary much in value. Examples include:
+Before you start reducing fixed expenses, it's important to understand what they are. Fixed expenses are regular [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) that typically occur every month and don't vary much in value. Examples include:
 * Rent or mortgage: R$ 2,500.00
 * Water, electricity, and gas bills: R$ 150.00
 * Internet and phone: R$ 100.00
@@ -39,7 +39,7 @@ Often, it's possible to negotiate prices with service providers. For example, yo
 Here are some practical tips to reduce fixed expenses:
 * **Review your bills**: Check for errors or improper charges on your bills.
 * **Change your plan**: If you're paying for a service plan that you're not fully using, switch to a cheaper plan.
-* **Use technology**: Use tools and apps to help manage your finances and reduce expenses. [FinMoovi](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas), for example, offers features to help control expenses and create a personalized [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026).
+* **Use technology**: Use tools and apps to help manage your finances and reduce expenses. [FinMoovi](/en/posts/en-you-re-not-alone-in-struggling-to-organize-your-finances), for example, offers features to help control expenses and create a personalized [budget](/en/posts/en-5-alternatives-to-mobills-in-2026).
 * **Consider sharing**: If you live alone, consider sharing rent or other expenses with a roommate.
 
 ## Example of Expense Reduction

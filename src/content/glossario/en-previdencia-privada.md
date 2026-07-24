@@ -12,7 +12,7 @@ readingTime: 2
 
 ## What is Private Pension?
 
-Private Pension is a long-term [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) designed for [retirement](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico). You contribute monthly and, in the future, redeem the accumulated value (with returns). It's a complement to the INSS retirement.
+Private Pension is a long-term [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500) designed for [retirement](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide). You contribute monthly and, in the future, redeem the accumulated value (with returns). It's a complement to the INSS retirement.
 
 ## PGBL vs. VGBL
 
@@ -41,16 +41,16 @@ Private Pension is a long-term [investment](/en/posts/en-montando-carteira-diver
 
 ## Advantages
 
-- Tax [benefits](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) (PGBL)
-- Does not enter into inheritance (succession [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas))
-- Monthly [investment](/en/posts/en-tesouro-direto-para-iniciantes) discipline
+- Tax [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) (PGBL)
+- Does not enter into inheritance (succession [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips))
+- Monthly [investment](/en/posts/en-tesouro-direto-for-beginners) discipline
 - 10% rate after 10 years (regressive)
 
 ## Disadvantages
 
 - High administration fees (many funds charge 1-2%)
 - Loading fee (some charge on entry)
-- Returns may be lower than [investing on your own](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-)
+- Returns may be lower than [investing on your own](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i)
 - Little flexibility
 
 ## Tip

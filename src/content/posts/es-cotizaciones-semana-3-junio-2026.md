@@ -19,7 +19,7 @@ seo:
 
 ## Resumen Semanal del [Mercado Financiero](/es/posts/es-cotizaciones-semana-4-mayo-2026) Brasileño
 
-La semana del 8 al 15 de junio de 2026 ha sido de gran interés para los inversores brasileños, con movimientos significativos en las principales divisas y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y euro, el impacto de la [tasa Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) y ofreceremos [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
+La semana del 8 al 15 de junio de 2026 ha sido de gran interés para los inversores brasileños, con movimientos significativos en las principales divisas y decisiones clave por parte del Banco Central. En este resumen, exploraremos las tendencias del [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) y euro, el impacto de la [tasa Selic](/es/glossario/es-selic) en las [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) y ofreceremos [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para los inversores individuales.
 
 ![Resumen Semanal del Mercado Financiero Brasileño](/images/posts/es-cotizaciones-semana-3-junio-2026-inline-1.webp)
 

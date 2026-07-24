@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Yahoo [Finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) is a free website (email app like a “digital notebook”) that gathers quotes of [ações](/en/glossario/en-acoes), indices, currencies and economic news in one place. It works as a control panel for those who want to track money, whether to invest or just to understand how the market affects a salary of R$3.000 to R$8.000.  
+Yahoo [Finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) is a free website (email app like a “digital notebook”) that gathers quotes of [ações](/en/glossario/en-acoes), indices, currencies and economic news in one place. It works as a control panel for those who want to track money, whether to invest or just to understand how the market affects a salary of R$3.000 to R$8.000.  
 
 ![What it is](/images/glossario/yahoo-finance-inline-1.webp)
 
@@ -49,7 +49,7 @@ Using Yahoo Finance brings practical benefits that go beyond “seeing the sto
 - **Customizable alerts:** you can set notifications for when a stock rises or falls X %  
 - **App integration:** the same content can be viewed on your phone, making it easier to follow during daily routine  
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 
 Even though it’s a practical tool, Yahoo Finance has limitations that can create pitfalls if you’re not careful.  
 

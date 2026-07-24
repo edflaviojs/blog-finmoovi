@@ -21,7 +21,7 @@ Bitcoin (BTC) is the first and most well-known cryptocurrency in the world. It w
 - There is a limit of 21 million bitcoins that can exist
 - New units are created by "mining" (computers solving mathematical problems)
 
-## Bitcoin as an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500)
+## Bitcoin as an [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500)
 
 | Advantage | Disadvantage |
 |----------|-------------|

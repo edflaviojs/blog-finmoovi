@@ -49,7 +49,7 @@ The value of an asset can offer several advantages, especially if you invest wis
 
 
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 However, the value of an asset can also involve risks, especially if you don’t fully understand the market or fail to diversify your portfolio. Here are some risks you should consider:
 * Loss risk: if the asset’s value drops, you can lose money
 * Inflation risk: if inflation is high, the asset’s value may decline

@@ -21,7 +21,7 @@ seo:
 Money is a fundamental concept in the world of finance, and understanding how it works is essential for making informed decisions about our money. In short, money is a medium of exchange, a unit of account, and a standard of **[value](/en/glossario/en-valor-financeiro)**. In Brazil, our currency is the Real (R$), and it is used to buy everything from food and clothing to houses and cars. For example, if you earn R$ 5,000 per month, you can use that money to pay your bills, buy groceries, and still have a little left to save or invest.
 
 * Money can be physical, like banknotes and coins, or digital, like the money in your bank account.  
-* Money can also be national, like the Real in Brazil, or international, like the [US Dollar](/en/posts/en-investir-em-dolar-no-brasil).  
+* Money can also be national, like the Real in Brazil, or international, like the [US Dollar](/en/posts/en-investing-in-dollar-in-brazil).  
 * It’s important to note that money has no intrinsic value, meaning it isn’t worth anything by itself, but rather the value that society assigns to it.
 
 ![What it is](/images/glossario/moeda-inline-1.webp)
@@ -42,7 +42,7 @@ Money has many advantages, such as:
 * Saving and investing: money lets people save and invest for the future.  
 * **Practical tip:** Use a finance app to track your expenses and income and get a clear view of your money.
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 However, money also carries risks, such as:
 * [Inflation](/en/glossario/en-inflacao): inflation is when the value of money decreases over time, meaning the same amount of cash can buy fewer things.  
 * Unemployment: if you lose your job, you may not have money to buy the things you need.  

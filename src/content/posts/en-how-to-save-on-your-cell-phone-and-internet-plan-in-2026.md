@@ -17,12 +17,12 @@ seo:
   keywords: ["how to save on cell phone and internet plan","personal finance","savings"]
 ---
 
-Saving on your cell phone and internet plan starts by looking at what you actually use: minutes, texts and data. If your bill is above R$150, there’s room to cut [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) without sacrificing the connection you need for work, study or fun.
+Saving on your cell phone and internet plan starts by looking at what you actually use: minutes, texts and data. If your bill is above R$150, there’s room to cut [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) without sacrificing the connection you need for work, study or fun.
 
 ## Review Your Contract
 The majority of contracts have automatic renewal clauses that raise the price each year. Open the latest bill, identify the base amount and the add‑ons (taxes, service fee). Compare with what you consume: someone who uses 4 GB of data per month might be paying for 10 GB that are never used. Note the real consumption and look for a plan that offers exactly what you need.
 
-**Practical tip:** *Create a simple [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) (or use an app like FinMoovi) to track data usage over the last 30 days; at the end of the month you’ll know if you’re wasting 2 GB or more.*
+**Practical tip:** *Create a simple [spreadsheet](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app) (or use an app like FinMoovi) to track data usage over the last 30 days; at the end of the month you’ll know if you’re wasting 2 GB or more.*
 
 ## Take Advantage of Data Bundles
 Many providers offer fixed‑line internet + mobile bundles at a discount. If you already have fiber at home, see if the carrier has a “fiber + mobile” combo that lowers the total cost. For example, a combo might be R$129, while the two services separately add up to R$159. Evaluate the internet speed and mobile coverage before committing.
@@ -57,4 +57,4 @@ Yes, many carriers offer “fiber + mobile” bundles that give a discount when 
 
 ---
 
-**Want to put this into practice? [Try FinMoovi free for 7 days](https://finmoovi.com) and see how easy it is to manage your finances with [automatic categorization](/en/posts/en-voce-tambem-esquece-de-anotar-seus-gastos) and visually clear [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim).**
+**Want to put this into practice? [Try FinMoovi free for 7 days](https://finmoovi.com) and see how easy it is to manage your finances with [automatic categorization](/en/posts/en-you-also-forget-to-record-your-expenses) and visually clear [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o).**

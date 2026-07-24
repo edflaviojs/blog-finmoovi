@@ -12,7 +12,7 @@ readingTime: 2
 
 ## What is Consortium?
 
-Consortium is a system where several people join together to buy something (car, property, motorcycle). Every month, each participant pays an installment. Each month, one or more participants are awarded (by drawing or bidding) and receive a letter of [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) to purchase the item.
+Consortium is a system where several people join together to buy something (car, property, motorcycle). Every month, each participant pays an installment. Each month, one or more participants are awarded (by drawing or bidding) and receive a letter of [credit](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) to purchase the item.
 
 ## How does it work?
 

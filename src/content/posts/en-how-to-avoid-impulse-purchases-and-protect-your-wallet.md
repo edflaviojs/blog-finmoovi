@@ -17,7 +17,7 @@ seo:
   keywords: ["how to avoid impulse purchases","personal finance","savings","money"]
 ---
 
-When the online shopping cart gets full and the [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-)‑card bill arrives before you even notice, frustration hits hard. The good news is that this behavior can be tamed with a few simple daily tweaks. Let’s get to what really works.
+When the online shopping cart gets full and the [credit](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026)‑card bill arrives before you even notice, frustration hits hard. The good news is that this behavior can be tamed with a few simple daily tweaks. Let’s get to what really works.
 
 ## Understand the purchase trigger
 
@@ -25,11 +25,11 @@ Most impulse buys happen when we’re tired, stressed, or simply bored. In those
 
 ## Build a realistic spending plan
 
-A well‑defined [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) reduces the sense of scarcity that fuels the impulse. Suppose you earn R$ 4,500. After paying rent, water and electricity bills, transportation, and food, you might have R$ 800 left for variable [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme). Allocate, for example, R$ 300 for leisure and gifts. When that amount runs out, the rule is to stop. Seeing the limit makes the “irresistible discount” lose its sparkle.
+A well‑defined [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation) reduces the sense of scarcity that fuels the impulse. Suppose you earn R$ 4,500. After paying rent, water and electricity bills, transportation, and food, you might have R$ 800 left for variable [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea). Allocate, for example, R$ 300 for leisure and gifts. When that amount runs out, the rule is to stop. Seeing the limit makes the “irresistible discount” lose its sparkle.
 
 ![Monte um plano de gastos realista](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-2.webp)
 
-**Practical tip:** Keep a simple [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) or a [finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar) (like [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)) where you log every expense in real time. When the leisure limit reaches 80 % of the [budget](/en/posts/en-how-to-create-personal-budget), the app will send you an alert.
+**Practical tip:** Keep a simple [spreadsheet](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app) or a [finance app](/en/posts/en-expense-spreadsheet-when-it-stops-working) (like [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026)) where you log every expense in real time. When the leisure limit reaches 80 % of the [budget](/en/posts/en-how-to-create-personal-budget), the app will send you an alert.
 
 ## Use the 30‑day rule
 

@@ -16,7 +16,7 @@ La independencia financiera es cuando tus inversiones generan ingresos suficient
 
 ## La fórmula
 
-**Patrimonio necesario = [Gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) anuales × 25**
+**Patrimonio necesario = [Gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) anuales × 25**
 
 ## Ejemplo
 

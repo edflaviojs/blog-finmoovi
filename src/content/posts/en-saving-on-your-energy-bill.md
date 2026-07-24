@@ -34,7 +34,7 @@ For example, if you're paying R$ 200 per month for energy and can reduce that to
 ## Behavioral Changes
 Daily behavioral changes can also make a big difference in energy [savings](/en/posts/en-financial-education-for-children). Simple things, like lowering the thermostat in winter or raising it in summer, can help reduce energy consumption. Additionally, using natural light during the day and turning off lights when not in use are habits that can be adopted to save energy.
 
-## [Planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) and Monitoring
+## [Planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) and Monitoring
 To really understand where you can save energy, it's essential to monitor your energy consumption. Check your energy bill regularly and identify the periods when consumption is higher. This can help identify usage patterns that can be adjusted. Consider investing in an energy meter that can provide detailed information about energy consumption in your home.
 
 ## Additional Tips
@@ -48,11 +48,11 @@ To really understand where you can save energy, it's essential to monitor your e
 
 
 ## Start Today
-Don't wait any longer to start saving on your energy bill. With small changes in your daily routine and investing in efficient appliances, you can make a big difference in your monthly [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). Remember, every real saved is a step towards financial security and peace of mind.
+Don't wait any longer to start saving on your energy bill. With small changes in your daily routine and investing in efficient appliances, you can make a big difference in your monthly [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation). Remember, every real saved is a step towards financial security and peace of mind.
 
 ![Comece hoje](/images/posts/economize-na-conta-de-energia-5.svg)
 
 
 
 ---
-**Want to put this into practice? [Test [FinMoovi](/en/posts/en-migrando-da-planilha-para-um-app-financeiro) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-voce-tambem-tem-dificuldade-em-organizar-suas-financas) and visual [reports](/en/posts/en-voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim).**
+**Want to put this into practice? [Test [FinMoovi](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app) for free for 7 days](https://[finmoovi](/en/posts/en-5-alternatives-to-mobills-in-2026).com) and see how easy it is to control your finances with [automatic categorization](/en/posts/en-you-re-not-alone-in-struggling-to-organize-your-finances) and visual [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o).**

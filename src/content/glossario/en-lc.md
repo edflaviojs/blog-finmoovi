@@ -46,13 +46,13 @@ LCs offer several advantages for both the buyer and the seller. For the buyer, t
 
 
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 Although LCs are a secure form of payment, they also involve some risks. One of the main risks is fraud risk, as LCs can be forged or altered. In addition, LCs can be used for illegal purposes, such as money laundering or tax evasion. **Practical tip:** It is important to verify the authenticity of the LC before accepting it, and it is also important to keep accurate records of the transactions.
 
 **Practical tip:** It is important to work with a reliable and experienced bank in LCs to minimize the risks.
 
 ## Practical examples
-LCs are common in various industries, including international trade, construction, and [finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-). For example, imagine you are a business owner who imports products from China and pays R$ 50.000,00 per month. You can request an LC to ensure the supplier receives the payment. Another example is a business owner who provides consulting services and pays R$ 8.000,00 per month to employees. He can request an LC to ensure the employees receive the payment.
+LCs are common in various industries, including international trade, construction, and [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff). For example, imagine you are a business owner who imports products from China and pays R$ 50.000,00 per month. You can request an LC to ensure the supplier receives the payment. Another example is a business owner who provides consulting services and pays R$ 8.000,00 per month to employees. He can request an LC to ensure the employees receive the payment.
 
 * Importing products from China: R$ 50.000,00 per month
 * Sale of consulting services: R$ 8.000,00 per month

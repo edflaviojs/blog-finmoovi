@@ -16,7 +16,7 @@ Liquidez es la capacidad de transformar una inversión en dinero rápidamente. C
 
 ## Tipos de liquidez
 
-- **Liquidez diaria (D+0):** Dinero disponible el mismo día. Ej: [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), [CDB](/es/glossario/es-cdb) con liquidez diaria.  
+- **Liquidez diaria (D+0):** Dinero disponible el mismo día. Ej: [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026), [CDB](/es/glossario/es-cdb) con liquidez diaria.  
 - **Liquidez D+1:** Disponible al día siguiente. Ej: Algunos [fondos](/es/glossario/es-fundo-de-investimento) de inversión.  
 - **Liquidez al vencimiento:** Solo se puede rescatar en la fecha acordada. Ej: CDB con plazo, LCI/LCA.
 

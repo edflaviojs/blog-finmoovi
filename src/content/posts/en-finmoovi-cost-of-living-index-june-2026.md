@@ -45,7 +45,7 @@ In June 2026, the cost of living rose 0,16 % according to the overall IPCA r
 ## Highlights of the month
 
 ### Housing leads the rise  
-With an increase of 0,63 % in the month and 5,85 % over 12 months, the housing sector was the biggest riser, directly affecting rent and energy bills, which weigh heavily on the [family budget](/en/posts/en-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-).
+With an increase of 0,63 % in the month and 5,85 % over 12 months, the housing sector was the biggest riser, directly affecting rent and energy bills, which weigh heavily on the [family budget](/en/posts/en-how-to-gift-on-father-s-day-without-spending-much-7-budget-f).
 
 ### Food and beverages record a drop  
 The food and beverages category fell 0,24 % in the month, easing Brazilian wallets a bit, although it still shows a 3,82 % increase over the past 12 months.
@@ -66,10 +66,10 @@ It means that, on average, consumer prices rose 0,16 % in the month, a relativ
 The 0,63 % increase in housing prices reflects rent adjustments and utility bills, which are fixed expenses that carry a large weight in the family budget.
 
 ### How does the drop in food help the consumer?  
-The 0,24 % reduction in food and beverage prices lowers grocery [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico), providing a temporary relief in monthly expenses.  
+The 0,24 % reduction in food and beverage prices lowers grocery [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide), providing a temporary relief in monthly expenses.  
 
 ### Is the annual inflation of 4,64 % still concerning?  
-Yes, although the monthly pace is low, the accumulated rise of 4,64 % over the past 12 months indicates that prices keep climbing, requiring attention to [financial planning](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme).
+Yes, although the monthly pace is low, the accumulated rise of 4,64 % over the past 12 months indicates that prices keep climbing, requiring attention to [financial planning](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea).
 
 ---
 **Want to see how inflation hits YOUR budget? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

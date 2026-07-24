@@ -10,10 +10,10 @@ publishedAt: 2026-06-06
 ---
 
 ## What are Bull Market and Bear Market?
-When it comes to [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), it's common to hear the terms "Bull Market" and "Bear Market". These terms are used to describe the trends of the [stock](/en/glossario/en-acoes) market and can influence your [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) decisions.
+When it comes to [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026), it's common to hear the terms "Bull Market" and "Bear Market". These terms are used to describe the trends of the [stock](/en/glossario/en-acoes) market and can influence your [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500) decisions.
 
 ## Bull Market
-A Bull Market is a period when the [stock market](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) is on the rise, with stock prices consistently going up. This usually happens during periods of economic growth, when companies are generating profits and people are optimistic about the future. During a Bull Market, investors tend to buy more stocks, which increases demand and, consequently, prices.
+A Bull Market is a period when the [stock market](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably) is on the rise, with stock prices consistently going up. This usually happens during periods of economic growth, when companies are generating profits and people are optimistic about the future. During a Bull Market, investors tend to buy more stocks, which increases demand and, consequently, prices.
 
 ![What are Bull Market and Bear Market?](/images/glossario/en-bull-market-e-bear-market-inline-1.webp)
 
@@ -37,4 +37,4 @@ Here's a comparative table between the two:
 | Demand | High | Low |
 | Supply | Low | High |
 
-In summary, it's essential to understand the differences between Bull Market and Bear Market to make informed decisions about your [investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-). If you're investing during a Bull Market, it's likely that your stocks will increase in value. However, if you're investing during a Bear Market, it's likely that your stocks will lose value. It's always important to diversify your investments and have a long-term plan to minimize [risks](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico).
+In summary, it's essential to understand the differences between Bull Market and Bear Market to make informed decisions about your [investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i). If you're investing during a Bull Market, it's likely that your stocks will increase in value. However, if you're investing during a Bear Market, it's likely that your stocks will lose value. It's always important to diversify your investments and have a long-term plan to minimize [risks](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide).

@@ -21,7 +21,7 @@ seo:
 
 When we get to the checkout with a cart already full, it’s harder to keep reason in check. So I set aside a bit of time on the weekend to see what the pantry actually needs. Look at the last receipt, check what’s about to expire, and make a consumption plan for the next two weeks. This simple habit can shave about 10 % off your spend – no complex math needed, just write down what you truly need.  
 
-If your salary is between R$ 3,000 and R$ 8,000, allocating up to 15 % of your [income](/en/posts/en-montando-carteira-diversificada-com-r-500) (R$ 450 to R$ 1,200) to food is a healthy starting point. Within that limit, pre‑defining what to buy helps avoid impulse buys and prevents purchasing items you already have at home.  
+If your salary is between R$ 3,000 and R$ 8,000, allocating up to 15 % of your [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) (R$ 450 to R$ 1,200) to food is a healthy starting point. Within that limit, pre‑defining what to buy helps avoid impulse buys and prevents purchasing items you already have at home.  
 
 ## Make a List and Stick to It  
 
@@ -35,11 +35,11 @@ The shopping list is your treasure map. When you have the paper or the app open,
 
 Many supermarkets have store‑brand lines that deliver quality similar to leading brands, but at up to 30 % lower price. The difference usually lies in marketing spend, not the raw material. Try swapping a name‑brand detergent for the store brand; you could save R$ 5 to R$ 10 per package, which adds up to about R$ 120 over a year.  
 
-It’s worth checking the price list on the supermarket’s website or using price‑[comparison](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) apps, like **[FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026)** – it shows the cheapest options next to your list.  
+It’s worth checking the price list on the supermarket’s website or using price‑[comparison](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) apps, like **[FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026)** – it shows the cheapest options next to your list.  
 
 ## Use Coupons and Loyalty Programs  
 
-Most grocery chains have point programs or loyalty cards. Every purchase generates credits that can be redeemed for discounts or free items. If your cart totals R$ 250, a program that returns 2 % in [credit](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) gives you R$ 5 back right away. Not a lot, but combined with other strategies, these amounts add up.  
+Most grocery chains have point programs or loyalty cards. Every purchase generates credits that can be redeemed for discounts or free items. If your cart totals R$ 250, a program that returns 2 % in [credit](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) gives you R$ 5 back right away. Not a lot, but combined with other strategies, these amounts add up.  
 
 ![Use cupons e programas de fidelidade](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-4.webp)  
 
@@ -47,13 +47,13 @@ Also, coupon sites (for example, Cuponeria) often provide codes for discounts on
 
 ## Avoid Impulse Purchases  
 
-One of the biggest [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) villains is unplanned purchases. The “30‑day rule” – waiting 30 days before buying a wanted item – often shows that most of those products aren’t really needed.  
+One of the biggest [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation) villains is unplanned purchases. The “30‑day rule” – waiting 30 days before buying a wanted item – often shows that most of those products aren’t really needed.  
 
 In the grocery store, the candy and beverage aisles are perfect traps. If you have a kid who loves cookies, buy only the amount that fits in the weekly lunchbox. If you need a quick snack, choose fruit or plain yogurt, which cost less and are healthier.  
 
 ## Start Today  
 
-Just grab paper and a pen (or open your [finance app](/en/posts/en-planilha-de-gastos-quando-ela-deixa-de-funcionar)) right now, list what you need, and set a price limit for each item. On your next market trip, stick to the list, choose store brands, and use the loyalty program. The difference will show up on your statement at month‑end and, more importantly, in your wallet.  
+Just grab paper and a pen (or open your [finance app](/en/posts/en-expense-spreadsheet-when-it-stops-working)) right now, list what you need, and set a price limit for each item. On your next market trip, stick to the list, choose store brands, and use the loyalty program. The difference will show up on your statement at month‑end and, more importantly, in your wallet.  
 
 ![Comece hoje](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-6.webp)  
 

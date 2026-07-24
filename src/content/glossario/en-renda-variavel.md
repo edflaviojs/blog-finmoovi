@@ -12,7 +12,7 @@ readingTime: 2
 
 ## What is Variable Income?
 
-Variable Income is everything that doesn't have a guaranteed return. The price goes up and down according to the market. You can earn a lot — or lose. It includes stocks, [real estate funds](/en/posts/en-fundos-imobiliarios-para-iniciantes-guia-completo), ETFs, cryptocurrencies, and derivatives.
+Variable Income is everything that doesn't have a guaranteed return. The price goes up and down according to the market. You can earn a lot — or lose. It includes stocks, [real estate funds](/en/posts/en-fundos-imobiliarios-for-beginners-complete-guide), ETFs, cryptocurrencies, and derivatives.
 
 ## Difference from [Fixed Income](/en/glossario/en-renda-fixa)
 
@@ -32,7 +32,7 @@ Variable Income is everything that doesn't have a guaranteed return. The price g
 4. **Cryptocurrencies** — decentralized digital assets  
 5. **Derivatives** — futures contracts, options (advanced)
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 
 - Capital loss (your investment may be worth less)  
 - Volatility (daily fluctuations)  

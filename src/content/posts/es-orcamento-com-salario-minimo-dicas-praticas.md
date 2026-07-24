@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Creando un Orçamento Realista
-Para crear un orçamento eficaz con salário mínimo, es crucial entender que no se trata de cortar todos los [gastos](/es/posts/es-metodo-50-30-20-para-orcamento), sino de gestionar sus recursos de forma inteligente. Vamos considerar un ejemplo con un salário de R$ 2.400,00, que es un poco más del salário mínimo en Brasil.
+Para crear un orçamento eficaz con salário mínimo, es crucial entender que no se trata de cortar todos los [gastos](/es/posts/es-metodo-50-30-20-para-presupuesto), sino de gestionar sus recursos de forma inteligente. Vamos considerar un ejemplo con un salário de R$ 2.400,00, que es un poco más del salário mínimo en Brasil.
 
 Una regla general para dividir su orçamento es la siguiente:
 | Categoría | Porcentaje del Salário |
@@ -41,7 +41,7 @@ Con base en esta división, para un salário de R$ 2.400,00:
 - [Ahorro](/es/posts/es-negociar-descuentos-en-cuentas-fijas) y Emergencia: R$ 240,00
 
 ## Priorizando Necesidades
-Es importante priorizar necesidades sobre deseos. **Consejo práctico:** Haga una lista de todo lo que gasta en un mes e identifique dónde puede cortar [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) superfluos. Por ejemplo, si gasta R$ 100,00 por semana en aperitivos y comidas fuera, intente reducir a R$ 50,00, ahorrando R$ 200,00 por mes.
+Es importante priorizar necesidades sobre deseos. **Consejo práctico:** Haga una lista de todo lo que gasta en un mes e identifique dónde puede cortar [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) superfluos. Por ejemplo, si gasta R$ 100,00 por semana en aperitivos y comidas fuera, intente reducir a R$ 50,00, ahorrando R$ 200,00 por mes.
 
 ## Gestionando Gastos Variables
 Gastos variables, como transporte y alimentación fuera, pueden ser difíciles de controlar. Aquí están algunas [consejos](/es/posts/es-7-errores-financieros-principiante) para gestionar estos gastos:

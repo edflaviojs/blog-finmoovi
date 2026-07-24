@@ -23,17 +23,17 @@ Cuando el carrito de compras online se llena y la cuenta de la tarjeta llega ant
 
 La mayoría de las compras impulsivas ocurre cuando estamos cansados, estresados o simplemente aburridos. En esos momentos, la pantalla del celular o el escaparate de la tienda parece ofrecer una solución rápida: “Un regalo para mí”. Reconocer el estado emocional que precede la compra ya es la mitad de la batalla. Anota rápidamente lo que sientes antes de hacer clic en “finalizar compra”. Esa pausa de 30 segundos suele ser suficiente para percibir que la necesidad es momentánea.
 
-## Elabora un plan de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) realista
+## Elabora un plan de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) realista
 
-Un [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) bien definido reduce la sensación de escasez que alimenta el impulso. Supongamos que recibes un salario de R$ 4.500. Después de pagar alquiler, cuentas de agua y luz, transporte y alimentación, quizás te queden R$ 800 para gastos variables. Destina, por ejemplo, R$ 300 para ocio y regalos. Cuando ese monto se agote, la regla es detenerse. Al visualizar el límite, la compra impulsiva pierde el brillo de “descuento irresistible”.
+Un [presupuesto](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) bien definido reduce la sensación de escasez que alimenta el impulso. Supongamos que recibes un salario de R$ 4.500. Después de pagar alquiler, cuentas de agua y luz, transporte y alimentación, quizás te queden R$ 800 para gastos variables. Destina, por ejemplo, R$ 300 para ocio y regalos. Cuando ese monto se agote, la regla es detenerse. Al visualizar el límite, la compra impulsiva pierde el brillo de “descuento irresistible”.
 
 ![Monte um plano de gastos realista](/images/posts/como-evitar-compras-por-impulso-e-proteger-seu-bolso-2.webp)
 
-**Consejo práctico:** Mantén una [hoja de cálculo](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) simple o una [app de finanzas](/es/posts/es-planilha-de-gastos-quando-ela-deixa-de-funcionar) (como el [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)) donde registres, en tiempo real, cada gasto. Cuando el límite de ocio llegue al 80 % de lo previsto, la propia app enviará una alerta.
+**Consejo práctico:** Mantén una [hoja de cálculo](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) simple o una [app de finanzas](/es/posts/es-planilla-de-gastos-cuando-ella-deja-de-funcionar) (como el [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026)) donde registres, en tiempo real, cada gasto. Cuando el límite de ocio llegue al 80 % de lo previsto, la propia app enviará una alerta.
 
 ## Aplica la regla de los 30 días
 
-La regla de los 30 días es uno de los trucos más eficaces. Cuando quieras comprar algo fuera del [presupuesto](/es/posts/es-como-crear-presupuesto-personal), anota el artículo y el [valor](/es/glossario/es-valor-financeiro), pero solo realiza la compra después de 30 días. Si aún sientes la necesidad, haz la compra; si no, el deseo normalmente desaparece. Imagina que viste un par de zapatillas de R$ 350. Anótalo, espera el mes y, al final, percibe que ya gastaste R$ 200 en otras prioridades. El impulso se transforma en una decisión consciente.
+La regla de los 30 días es uno de los trucos más eficaces. Cuando quieras comprar algo fuera del [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples), anota el artículo y el [valor](/es/glossario/es-valor-financeiro), pero solo realiza la compra después de 30 días. Si aún sientes la necesidad, haz la compra; si no, el deseo normalmente desaparece. Imagina que viste un par de zapatillas de R$ 350. Anótalo, espera el mes y, al final, percibe que ya gastaste R$ 200 en otras prioridades. El impulso se transforma en una decisión consciente.
 
 ## Transforma la voluntad en hábito
 

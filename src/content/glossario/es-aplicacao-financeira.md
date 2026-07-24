@@ -48,7 +48,7 @@ Como todo en la vida, las aplicaciones no están exentas de riesgos. Es importan
 
 - **Riesgo de mercado:** si la aplicación está vinculada a la bolsa, su valor puede subir y bajar rápidamente.
 - **Riesgo de crédito:** la entidad que recibe tu dinero podría incumplir sus pagos.
-- **Liquidez limitada:** algunas [aplicaciones](/es/posts/es-5-alternativas-ao-mobills-em-2026) solo permiten retirar el dinero al vencimiento, lo que puede ser un problema si necesitas efectivo antes.
+- **Liquidez limitada:** algunas [aplicaciones](/es/posts/es-5-alternativas-al-mobills-en-2026) solo permiten retirar el dinero al vencimiento, lo que puede ser un problema si necesitas efectivo antes.
 - **Inflación inesperada:** si la tasa de rendimiento es menor que la inflación, tu dinero pierde poder adquisitivo.
 
 ## Ejemplos prácticos

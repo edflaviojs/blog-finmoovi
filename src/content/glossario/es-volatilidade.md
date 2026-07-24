@@ -19,7 +19,7 @@ La volatilidad es la intensidad con la que el precio de una inversión sube y ba
 | Activo | Volatilidad | Variación típica diaria |
 |--------|-------------|--------------------------|
 | [Poupança](/es/glossario/es-poupanca) | Casi cero | 0 % |
-| [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) | Muy baja | 0,03 % |
+| [Tesouro Selic](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) | Muy baja | 0,03 % |
 | [Ações](/es/glossario/es-acoes) (Ibovespa) | Media | 1‑2 % |
 | [Bitcoin](/es/glossario/es-bitcoin) | Muy alta | 3‑10 % |
 | Meme coins | Extrema | 10‑50 % |

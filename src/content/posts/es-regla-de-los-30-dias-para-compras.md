@@ -32,9 +32,9 @@ Para aplicar la regla de los 30 días, debes crear un sistema para registrar las
 
 
 ## Ventajas de la Regla de los 30 Días
-La regla de los 30 días tiene varias ventajas. Además de ayudar a evitar compras impulsivas, también ayuda a reducir el estrés [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) y a aumentar la conciencia sobre las [finanzas personales](/es/posts/es-7-errores-financieros-principiante). Cuando esperas 30 días antes de comprar algo, tienes tiempo para pensar sobre si el artículo es realmente necesario y si puedes pagarlo.
+La regla de los 30 días tiene varias ventajas. Además de ayudar a evitar compras impulsivas, también ayuda a reducir el estrés [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere) y a aumentar la conciencia sobre las [finanzas personales](/es/posts/es-7-errores-financieros-principiante). Cuando esperas 30 días antes de comprar algo, tienes tiempo para pensar sobre si el artículo es realmente necesario y si puedes pagarlo.
 
-Por ejemplo, imagina que ganas R$ 4.000 por mes y deseas comprar un nuevo teléfono inteligente que cuesta R$ 2.000. Si esperas 30 días, puedes descubrir que no es tan necesario después de todo y que puedes usar el [dinero](/es/posts/es-organizar-finanzas-autonomo) para pagar una deuda o invertir en un fondo de [inversión](/es/posts/es-tesouro-direto-para-iniciantes).
+Por ejemplo, imagina que ganas R$ 4.000 por mes y deseas comprar un nuevo teléfono inteligente que cuesta R$ 2.000. Si esperas 30 días, puedes descubrir que no es tan necesario después de todo y que puedes usar el [dinero](/es/posts/es-organizar-finanzas-autonomo) para pagar una deuda o invertir en un fondo de [inversión](/es/posts/es-guia-completa-para-principiantes-sobre-tesouro-direto).
 
 ## Excepciones a la Regla de los 30 Días
 Aunque la regla de los 30 días es una técnica útil, hay algunas excepciones. Si necesitas algo esencial, como comida o medicamentos, no es necesario esperar 30 días. Además, si estás planeando una compra importante, como un coche o una casa, es mejor hacer una investigación más profunda y no basarte solo en la regla de los 30 días.
@@ -54,4 +54,4 @@ No esperes más para comenzar a usar la regla de los 30 días. Hoy es el día pa
 
 
 ---
-**¿Estás cansado de planillas? [Prueba [FinMoovi](/es/posts/es-voce-tambem-tem-dificuldade-em-organizar-suas-financas) gratis](https://finmoovi.com) y controla tus gastos con IA, multi-divisa y informes que tienen sentido.**
+**¿Estás cansado de planillas? [Prueba [FinMoovi](/es/posts/es-tambien-tienes-dificultad-para-organizar-tus-finanzas) gratis](https://finmoovi.com) y controla tus gastos con IA, multi-divisa y informes que tienen sentido.**

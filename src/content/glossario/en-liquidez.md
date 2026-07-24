@@ -12,7 +12,7 @@ readingTime: 1
 
 ## What is Liquidity?
 
-Liquidity is the ability to quickly convert an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) into cash. The more liquid it is, the faster you can access the [money](/en/posts/en-30-day-rule-for-purchases).
+Liquidity is the ability to quickly convert an [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500) into cash. The more liquid it is, the faster you can access the [money](/en/posts/en-30-day-rule-for-purchases).
 
 ## Types of liquidity
 

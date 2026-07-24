@@ -49,7 +49,7 @@ Even though the word “fee” sounds negative, it brings clear benefits when we
 
 **Practical tip:** **Compare fees across different institutions; a 0.5% annual difference can mean thousands of reais more in your pocket.**  
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 
 Ignoring fees can erode your wealth quickly.  
 
