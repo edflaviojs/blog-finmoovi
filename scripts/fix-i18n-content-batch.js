@@ -198,6 +198,13 @@ ${body}`;
         continue;
       }
 
+      // Safety: reject suspiciously short bodies (likely LLM failure)
+      if (fixedBody.length < 100) {
+        console.log(`  [ERROR] ${entry.file} — LLM returned body too short (${fixedBody.length} chars), skipping`);
+        errors++;
+        continue;
+      }
+
       // Rebuild the file
       let newFrontmatter = frontmatter;
 
@@ -221,6 +228,8 @@ ${body}`;
       if (!DRY_RUN) {
         writeFileSync(filePath, newContent, 'utf-8');
         progress.push(entry.file);
+        // Flush progress after each file to avoid re-processing on crash
+        writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2), 'utf-8');
       }
 
       fixed++;
