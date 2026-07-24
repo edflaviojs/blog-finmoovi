@@ -1,0 +1,458 @@
+---
+/**
+ * Comentários próprios do blog (substitui o giscus): nome + comentário,
+ * sem login. Tudo nasce 'pending' e só aparece depois da moderação na /status.
+ *
+ * 100% client-side no runtime (fetch em /api/comments) — o build estático
+ * não depende de rede; o HTML renderiza só o form + placeholder.
+ */
+interface Props {
+  locale?: 'pt' | 'en' | 'es';
+}
+const { locale = 'pt' } = Astro.props;
+
+// Slug canônico da página = pathname sem barra final (é a chave no Supabase).
+const pageSlug = (Astro.url.pathname.replace(/\/+$/, '') || '/').toLowerCase();
+
+const TEXTS: Record<string, Record<string, string>> = {
+  pt: {
+    title: '💬 Comentários',
+    intro: 'Deixe sua opinião — não precisa de cadastro.',
+    nameLabel: 'Seu nome',
+    namePlaceholder: 'Como quer ser chamado?',
+    commentLabel: 'Seu comentário',
+    commentPlaceholder: 'Escreva aqui…',
+    submit: 'Enviar comentário',
+    sending: 'Enviando…',
+    moderationNote: 'Seu comentário aparece aqui depois de passar pela moderação.',
+    sent: '✅ Recebido! Seu comentário aparece assim que for aprovado pela moderação.',
+    empty: 'Ainda não há comentários — seja a primeira pessoa a comentar!',
+    loading: 'Carregando comentários…',
+    loadError: 'Não foi possível carregar os comentários agora.',
+    networkError: '❌ Falha de rede — verifique a conexão e tente de novo.',
+  },
+  en: {
+    title: '💬 Comments',
+    intro: 'Share your thoughts — no sign-up needed.',
+    nameLabel: 'Your name',
+    namePlaceholder: 'What should we call you?',
+    commentLabel: 'Your comment',
+    commentPlaceholder: 'Write here…',
+    submit: 'Post comment',
+    sending: 'Sending…',
+    moderationNote: 'Your comment appears here after it passes moderation.',
+    sent: '✅ Received! Your comment will appear once approved by moderation.',
+    empty: 'No comments yet — be the first to comment!',
+    loading: 'Loading comments…',
+    loadError: 'Could not load comments right now.',
+    networkError: '❌ Network error — check your connection and try again.',
+  },
+  es: {
+    title: '💬 Comentarios',
+    intro: 'Deja tu opinión — sin necesidad de registro.',
+    nameLabel: 'Tu nombre',
+    namePlaceholder: '¿Cómo quieres que te llamemos?',
+    commentLabel: 'Tu comentario',
+    commentPlaceholder: 'Escribe aquí…',
+    submit: 'Enviar comentario',
+    sending: 'Enviando…',
+    moderationNote: 'Tu comentario aparece aquí después de pasar por la moderación.',
+    sent: '✅ ¡Recibido! Tu comentario aparecerá en cuanto la moderación lo apruebe.',
+    empty: 'Aún no hay comentarios — ¡sé la primera persona en comentar!',
+    loading: 'Cargando comentarios…',
+    loadError: 'No se pudieron cargar los comentarios ahora.',
+    networkError: '❌ Error de red — revisa tu conexión e inténtalo de nuevo.',
+  },
+};
+const t = TEXTS[locale] || TEXTS.pt;
+---
+
+<section
+  class="comments-section cm-box"
+  data-pagefind-ignore
+  data-slug={pageSlug}
+  data-locale={locale}
+  data-txt-sent={t.sent}
+  data-txt-sending={t.sending}
+  data-txt-submit={t.submit}
+  data-txt-empty={t.empty}
+  data-txt-load-error={t.loadError}
+  data-txt-network-error={t.networkError}
+>
+  <h3 class="comments-title">{t.title}</h3>
+  <p class="cm-intro">{t.intro}</p>
+
+  <form class="cm-form" novalidate>
+    <div class="cm-field">
+      <label for={`cm-nome-${pageSlug.replace(/\//g, '-')}`}>{t.nameLabel}</label>
+      <input
+        type="text"
+        id={`cm-nome-${pageSlug.replace(/\//g, '-')}`}
+        name="nome"
+        maxlength="60"
+        required
+        placeholder={t.namePlaceholder}
+        autocomplete="name"
+      />
+    </div>
+
+    <div class="cm-field">
+      <label for={`cm-texto-${pageSlug.replace(/\//g, '-')}`}>{t.commentLabel}</label>
+      <textarea
+        id={`cm-texto-${pageSlug.replace(/\//g, '-')}`}
+        name="comentario"
+        rows="4"
+        maxlength="1200"
+        required
+        placeholder={t.commentPlaceholder}
+      ></textarea>
+    </div>
+
+    <!-- Honeypot invisível: humanos não veem; bot que preencher é descartado
+         em silêncio no servidor. aria-hidden + tabindex=-1 = fora do fluxo
+         de leitores de tela e do Tab. -->
+    <div class="cm-hp" aria-hidden="true">
+      <label>
+        Website
+        <input type="text" name="website" tabindex="-1" autocomplete="off" />
+      </label>
+    </div>
+
+    <!-- Turnstile opcional: o widget só é montado se a API devolver a site key -->
+    <div class="cm-turnstile" hidden></div>
+
+    <div class="cm-actions">
+      <button type="submit" class="cm-submit">{t.submit}</button>
+      <p class="cm-note">{t.moderationNote}</p>
+    </div>
+    <p class="cm-feedback" role="status" aria-live="polite" hidden></p>
+  </form>
+
+  <div class="cm-list-wrap">
+    <p class="cm-list-status">{t.loading}</p>
+    <ul class="cm-list" hidden></ul>
+  </div>
+</section>
+
+<script>
+  // Comentários: carregar aprovados + enviar novos via /api/comments.
+  // Todo conteúdo do usuário entra no DOM via textContent (nunca innerHTML).
+  const RTF_UNITS: [Intl.RelativeTimeFormatUnit, number][] = [
+    ['year', 31536000],
+    ['month', 2592000],
+    ['week', 604800],
+    ['day', 86400],
+    ['hour', 3600],
+    ['minute', 60],
+  ];
+
+  function relativeTime(iso: string, locale: string): string {
+    const date = new Date(iso);
+    if (isNaN(date.getTime())) return '';
+    const secs = Math.round((date.getTime() - Date.now()) / 1000);
+    const rtf = new Intl.RelativeTimeFormat(locale, { numeric: 'auto' });
+    for (const [unit, size] of RTF_UNITS) {
+      if (Math.abs(secs) >= size) return rtf.format(Math.round(secs / size), unit);
+    }
+    return rtf.format(0, 'minute'); // "agora" / "now"
+  }
+
+  let turnstileScriptLoaded = false;
+  function mountTurnstile(box: HTMLElement, siteKey: string) {
+    const slot = box.querySelector<HTMLElement>('.cm-turnstile');
+    if (!slot || slot.dataset.mounted) return;
+    slot.dataset.mounted = '1';
+    slot.hidden = false;
+    const widget = document.createElement('div');
+    widget.className = 'cf-turnstile';
+    widget.setAttribute('data-sitekey', siteKey);
+    slot.appendChild(widget);
+    if (!turnstileScriptLoaded) {
+      turnstileScriptLoaded = true;
+      const s = document.createElement('script');
+      s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+      s.async = true;
+      document.head.appendChild(s);
+    }
+  }
+
+  function renderList(box: HTMLElement, comments: { author_name: string; body: string; created_at: string }[]) {
+    const status = box.querySelector<HTMLElement>('.cm-list-status');
+    const list = box.querySelector<HTMLUListElement>('.cm-list');
+    if (!status || !list) return;
+    if (!comments.length) {
+      status.textContent = box.dataset.txtEmpty || '';
+      list.hidden = true;
+      return;
+    }
+    status.hidden = true;
+    list.hidden = false;
+    list.textContent = '';
+    const lang = box.dataset.locale === 'en' ? 'en-US' : box.dataset.locale === 'es' ? 'es-ES' : 'pt-BR';
+    for (const c of comments) {
+      const li = document.createElement('li');
+      li.className = 'cm-item';
+      const head = document.createElement('div');
+      head.className = 'cm-item-head';
+      const name = document.createElement('strong');
+      name.className = 'cm-item-name';
+      name.textContent = c.author_name;
+      const time = document.createElement('time');
+      time.className = 'cm-item-time';
+      time.dateTime = c.created_at;
+      time.textContent = relativeTime(c.created_at, lang);
+      head.append(name, time);
+      const body = document.createElement('p');
+      body.className = 'cm-item-body';
+      body.textContent = c.body; // escape garantido: textContent
+      li.append(head, body);
+      list.appendChild(li);
+    }
+  }
+
+  async function loadComments(box: HTMLElement) {
+    const status = box.querySelector<HTMLElement>('.cm-list-status');
+    try {
+      const res = await fetch(
+        `/api/comments?slug=${encodeURIComponent(box.dataset.slug || '')}&locale=${encodeURIComponent(box.dataset.locale || 'pt')}`
+      );
+      if (!res.ok) throw new Error(String(res.status));
+      const data = await res.json();
+      renderList(box, Array.isArray(data.comments) ? data.comments : []);
+      if (data.turnstileSiteKey) mountTurnstile(box, data.turnstileSiteKey);
+    } catch {
+      if (status) status.textContent = box.dataset.txtLoadError || '';
+    }
+  }
+
+  function showFeedback(box: HTMLElement, msg: string, ok: boolean) {
+    const fb = box.querySelector<HTMLElement>('.cm-feedback');
+    if (!fb) return;
+    fb.textContent = msg;
+    fb.classList.toggle('ok', ok);
+    fb.classList.toggle('err', !ok);
+    fb.hidden = false;
+  }
+
+  document.querySelectorAll<HTMLElement>('.cm-box').forEach((box) => {
+    loadComments(box);
+
+    const form = box.querySelector<HTMLFormElement>('.cm-form');
+    if (!form) return;
+    form.addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      const nome = form.querySelector<HTMLInputElement>('input[name="nome"]');
+      const texto = form.querySelector<HTMLTextAreaElement>('textarea[name="comentario"]');
+      const hp = form.querySelector<HTMLInputElement>('input[name="website"]');
+      const tsToken = form.querySelector<HTMLInputElement>('input[name="cf-turnstile-response"]');
+      const btn = form.querySelector<HTMLButtonElement>('.cm-submit');
+      if (!nome?.value.trim() || !texto?.value.trim() || !btn) return;
+
+      btn.disabled = true;
+      btn.textContent = box.dataset.txtSending || '…';
+      try {
+        const res = await fetch('/api/comments', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            slug: box.dataset.slug,
+            locale: box.dataset.locale,
+            nome: nome.value,
+            comentario: texto.value,
+            website: hp?.value || '',
+            turnstileToken: tsToken?.value || '',
+          }),
+        });
+        let data: { error?: string } = {};
+        try { data = await res.json(); } catch { /* resposta sem JSON */ }
+        if (res.ok) {
+          showFeedback(box, box.dataset.txtSent || '', true);
+          form.reset();
+        } else {
+          showFeedback(box, `❌ ${data.error || `HTTP ${res.status}`}`, false);
+        }
+      } catch {
+        showFeedback(box, box.dataset.txtNetworkError || '', false);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = box.dataset.txtSubmit || '';
+      }
+    });
+  });
+</script>
+
+<style>
+  /* Mesma moldura do antigo bloco giscus (.comments-section) */
+  .comments-section {
+    margin-top: var(--space-12);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--border-muted);
+  }
+
+  .comments-title {
+    font-size: var(--text-xl);
+    color: var(--text-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .cm-intro {
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-6);
+  }
+
+  .cm-form {
+    margin-bottom: var(--space-8);
+  }
+
+  .cm-field {
+    margin-bottom: var(--space-4);
+  }
+
+  .cm-field label {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-1);
+  }
+
+  .cm-field input,
+  .cm-field textarea {
+    width: 100%;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-sm);
+    font-family: inherit;
+  }
+
+  .cm-field textarea {
+    resize: vertical;
+  }
+
+  .cm-field input:focus,
+  .cm-field textarea:focus {
+    outline: 2px solid var(--accent-primary, #58a6ff);
+    outline-offset: 1px;
+    border-color: var(--accent-primary, #58a6ff);
+  }
+
+  /* Honeypot: fora da tela, mas presente no DOM para os bots */
+  .cm-hp {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+  .cm-turnstile {
+    margin-bottom: var(--space-3);
+  }
+
+  .cm-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .cm-submit {
+    padding: var(--space-2) var(--space-6);
+    background: var(--gradient-hero, linear-gradient(135deg, #00F0FF, #A91079));
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+  }
+
+  .cm-submit:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+
+  .cm-submit:focus-visible {
+    outline: 2px solid var(--accent-primary, #58a6ff);
+    outline-offset: 2px;
+  }
+
+  .cm-note {
+    font-size: var(--text-xs);
+    color: var(--text-tertiary);
+    margin: 0;
+  }
+
+  .cm-feedback {
+    margin-top: var(--space-3);
+    font-size: var(--text-sm);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+  }
+
+  .cm-feedback.ok {
+    color: var(--accent-green, #3fb950);
+    background: rgba(63, 185, 80, 0.08);
+  }
+
+  .cm-feedback.err {
+    color: var(--accent-red, #f85149);
+    background: rgba(248, 81, 73, 0.08);
+  }
+
+  .cm-list-status {
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+    text-align: center;
+    padding: var(--space-6) 0;
+    border: 1px dashed var(--border-default);
+    border-radius: var(--radius-md);
+  }
+
+  .cm-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Itens criados via JS não recebem o data-attribute do scoped CSS do Astro
+     → seletores :global() ancorados no .cm-list (que é do template) */
+  .cm-list :global(.cm-item) {
+    padding: var(--space-4);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-muted);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-3);
+  }
+
+  .cm-list :global(.cm-item-head) {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    margin-bottom: var(--space-2);
+  }
+
+  .cm-list :global(.cm-item-name) {
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+  }
+
+  .cm-list :global(.cm-item-time) {
+    color: var(--text-tertiary);
+    font-size: var(--text-xs);
+  }
+
+  .cm-list :global(.cm-item-body) {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: 0;
+    white-space: pre-line; /* preserva quebras de linha do comentário */
+    overflow-wrap: break-word;
+  }
+</style>

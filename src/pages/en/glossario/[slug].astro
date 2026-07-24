@@ -4,6 +4,7 @@ import { imgSrcset } from '@/utils/responsive-image';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import CTAVariado from '@components/glossario/CTAVariado.astro';
+import Comentarios from '@components/shared/Comentarios.astro';
 import Sidebar from '@components/sidebar/Sidebar.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
 import { getCollection } from 'astro:content';
@@ -123,6 +124,8 @@ const schemaBreadcrumbItems = [
             </div>
           </section>
         )}
+
+        <Comentarios locale="en" />
       </article>
 
       <aside class="glossario-sidebar">

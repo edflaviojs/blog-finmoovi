@@ -231,6 +231,28 @@ const daysAgo = (d: string) => {
         </form>
       </section>
 
+      <section class="status-panel panel-comentarios">
+        <h2>💬 Comentários pendentes</h2>
+        <p class="panel-hint">
+          Comentários do blog nascem <code>pending</code> e só aparecem no site depois
+          de aprovados aqui (mesma senha do envio de keywords).
+        </p>
+        <form id="cm-mod-form">
+          <div class="kw-row">
+            <input
+              type="password"
+              id="cm-mod-key"
+              placeholder="Senha de acesso"
+              autocomplete="off"
+              required
+            />
+            <button type="submit" id="cm-mod-btn">Carregar pendentes</button>
+          </div>
+        </form>
+        <p id="cm-mod-feedback" class="kw-feedback" hidden></p>
+        <div id="cm-mod-list" class="cm-mod-list"></div>
+      </section>
+
       <section class="status-panel panel-fila">
         <h2>🗂️ Fila de keywords <span class="count">({totalPending} pendente{totalPending === 1 ? '' : 's'})</span></h2>
         {queueEntries.length === 0 ? (
@@ -506,6 +528,130 @@ const daysAgo = (d: string) => {
   }
 </script>
 
+<script>
+  // Moderação de comentários → GET/PATCH /api/comments (Cloudflare Pages Function).
+  // Conteúdo dos leitores entra no DOM SEMPRE via textContent (nunca innerHTML).
+  const modForm = document.getElementById('cm-mod-form') as HTMLFormElement | null;
+  const modKey = document.getElementById('cm-mod-key') as HTMLInputElement | null;
+  const modBtn = document.getElementById('cm-mod-btn') as HTMLButtonElement | null;
+  const modFeedback = document.getElementById('cm-mod-feedback');
+  const modList = document.getElementById('cm-mod-list');
+
+  function modShowFeedback(msg: string, ok: boolean) {
+    if (!modFeedback) return;
+    modFeedback.textContent = msg;
+    modFeedback.classList.toggle('ok', ok);
+    modFeedback.classList.toggle('err', !ok);
+    modFeedback.hidden = false;
+  }
+
+  async function moderate(id: string, action: 'approve' | 'reject', card: HTMLElement) {
+    if (!modKey) return;
+    card.querySelectorAll('button').forEach(b => (b.disabled = true));
+    try {
+      const res = await fetch('/api/comments', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ accessKey: modKey.value, id, action }),
+      });
+      let data: { error?: string } = {};
+      try { data = await res.json(); } catch { /* resposta sem JSON */ }
+      if (res.ok) {
+        card.remove();
+        modShowFeedback(action === 'approve'
+          ? '✅ Aprovado — aparece no post em até 1 min (cache de 60s).'
+          : '🗑️ Rejeitado — não aparece no site.', true);
+        if (modList && modList.childElementCount === 0) {
+          modShowFeedback('✅ Fila de comentários zerada!', true);
+        }
+      } else {
+        modShowFeedback(`❌ ${data.error || `Erro ${res.status}`}`, false);
+        card.querySelectorAll('button').forEach(b => (b.disabled = false));
+      }
+    } catch {
+      modShowFeedback('❌ Falha de rede — tente de novo.', false);
+      card.querySelectorAll('button').forEach(b => (b.disabled = false));
+    }
+  }
+
+  interface PendingComment {
+    id: string;
+    page_slug: string;
+    locale: string;
+    author_name: string;
+    body: string;
+    created_at: string;
+  }
+
+  function renderPending(items: PendingComment[]) {
+    if (!modList) return;
+    modList.textContent = '';
+    for (const c of items) {
+      const card = document.createElement('article');
+      card.className = 'cm-mod-card';
+
+      const head = document.createElement('div');
+      head.className = 'cm-mod-head';
+      const name = document.createElement('strong');
+      name.textContent = c.author_name;
+      const meta = document.createElement('span');
+      meta.className = 'time';
+      const when = new Date(c.created_at);
+      meta.textContent = `${c.locale} · ${c.page_slug} · ${isNaN(when.getTime()) ? '' : when.toLocaleString('pt-PT', { timeZone: 'Europe/Lisbon' })}`;
+      head.append(name, meta);
+
+      const body = document.createElement('p');
+      body.className = 'cm-mod-body';
+      body.textContent = c.body;
+
+      const actions = document.createElement('div');
+      actions.className = 'cm-mod-actions';
+      const ok = document.createElement('button');
+      ok.type = 'button';
+      ok.className = 'cm-mod-approve';
+      ok.textContent = '✅ Aprovar';
+      ok.addEventListener('click', () => moderate(c.id, 'approve', card));
+      const no = document.createElement('button');
+      no.type = 'button';
+      no.className = 'cm-mod-reject';
+      no.textContent = '🗑️ Rejeitar';
+      no.addEventListener('click', () => moderate(c.id, 'reject', card));
+      actions.append(ok, no);
+
+      card.append(head, body, actions);
+      modList.appendChild(card);
+    }
+  }
+
+  if (modForm) {
+    modForm.addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      if (!modKey?.value || !modBtn) return;
+      modBtn.disabled = true;
+      modBtn.textContent = 'Carregando...';
+      try {
+        const res = await fetch(`/api/comments?pending=1&accessKey=${encodeURIComponent(modKey.value)}`);
+        let data: { pending?: PendingComment[]; error?: string } = {};
+        try { data = await res.json(); } catch { /* resposta sem JSON */ }
+        if (res.ok) {
+          const items = Array.isArray(data.pending) ? data.pending : [];
+          renderPending(items);
+          modShowFeedback(items.length === 0
+            ? '✅ Nenhum comentário pendente.'
+            : `📥 ${items.length} comentário(s) aguardando moderação.`, true);
+        } else {
+          modShowFeedback(`❌ ${data.error || `Erro ${res.status}`}`, false);
+        }
+      } catch {
+        modShowFeedback('❌ Falha de rede — verifique a conexão e tente de novo.', false);
+      } finally {
+        modBtn.disabled = false;
+        modBtn.textContent = 'Carregar pendentes';
+      }
+    });
+  }
+</script>
+
 <style>
   .status-page {
     padding: var(--space-8) 0 var(--space-16);
@@ -559,6 +705,100 @@ const daysAgo = (d: string) => {
 
   .status-panel.panel-fila {
     border-left: 3px solid var(--accent-blue, #58a6ff);
+  }
+
+  .status-panel.panel-comentarios {
+    border-left: 3px solid var(--accent-purple, #bc8cff);
+  }
+
+  /* Form de moderação (mesmo visual do form de keywords) */
+  #cm-mod-form input {
+    width: 100%;
+    background: var(--bg-primary);
+    color: var(--text-primary, #f0f6fc);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md, 8px);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-sm);
+    font-family: inherit;
+  }
+
+  #cm-mod-form input:focus {
+    outline: none;
+    border-color: var(--accent-blue, #58a6ff);
+  }
+
+  #cm-mod-form button {
+    flex: 0 0 auto;
+    padding: var(--space-2) var(--space-6);
+    background: var(--gradient-hero, linear-gradient(135deg, #00F0FF, #A91079));
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    border: none;
+    border-radius: var(--radius-md, 8px);
+    cursor: pointer;
+  }
+
+  #cm-mod-form button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+
+  /* Cards de comentário pendente são criados via JS → :global() ancorado
+     no #cm-mod-list (que está no template e recebe o scoped attr) */
+  .cm-mod-list :global(.cm-mod-card) {
+    margin-top: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    background: var(--bg-primary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md, 8px);
+  }
+
+  .cm-mod-list :global(.cm-mod-head) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--text-primary, #f0f6fc);
+  }
+
+  .cm-mod-list :global(.cm-mod-body) {
+    margin: var(--space-2) 0;
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    white-space: pre-line;
+    overflow-wrap: break-word;
+  }
+
+  .cm-mod-list :global(.cm-mod-actions) {
+    display: flex;
+    gap: var(--space-3);
+  }
+
+  .cm-mod-list :global(.cm-mod-actions button) {
+    padding: var(--space-1) var(--space-4);
+    font-size: var(--text-xs, 0.75rem);
+    font-weight: 600;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--border-default);
+    background: var(--bg-secondary);
+    color: var(--text-primary, #f0f6fc);
+    cursor: pointer;
+  }
+
+  .cm-mod-list :global(.cm-mod-approve) {
+    border-color: var(--accent-green, #3fb950) !important;
+  }
+
+  .cm-mod-list :global(.cm-mod-reject) {
+    border-color: var(--accent-red, #f85149) !important;
+  }
+
+  .cm-mod-list :global(button:disabled) {
+    opacity: 0.5;
+    cursor: wait;
   }
 
   .status-panel.panel-reddit {

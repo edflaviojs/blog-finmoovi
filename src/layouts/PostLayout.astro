@@ -12,7 +12,8 @@ import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
 import TableOfContents from '@components/shared/TableOfContents.astro';
 import ReadingProgress from '@components/shared/ReadingProgress.astro';
 import NewsletterPopup from '@components/shared/NewsletterPopup.astro';
-import Giscus from '@components/shared/Giscus.astro';
+// Giscus desativado (exigia login GitHub — barreira p/ leitor leigo); comentários próprios via Comentarios.astro. O arquivo Giscus.astro e o bloco config.giscus foram mantidos.
+import Comentarios from '@components/shared/Comentarios.astro';
 import ArticleRating from '@components/shared/ArticleRating.astro';
 import RelatedPosts from '@components/posts/RelatedPosts.astro';
 import PreferredSourceCTA from '@components/shared/PreferredSourceCTA.astro';
@@ -158,7 +159,7 @@ const schemaBreadcrumbItems = [
 
           <ArticleRating postSlug={postSlug} />
 
-          <Giscus />
+          <Comentarios locale={locale as 'pt' | 'en' | 'es'} />
 
           {category && slug && (
             <RelatedPosts currentSlug={slug} category={category} locale={locale} />
