@@ -31,7 +31,7 @@ First things first—know exactly how much you plan to spend on Black Friday. Ac
 2. **Research the average price** today (use comparison sites or the retailer’s own page).
 3. **Add everything up** and tack on an extra 10 % for surprises or fees.
 
-> *Example:* If the TV costs R$ 2,500, the shoes R$ 350 and the coffee maker R$ 200, the total is R$ 3,050. Add 10 % → R$ 3,355. That will be your “budget” for Black Friday.
+> *Example:* If the TV [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) R$ 2,500, the shoes R$ 350 and the coffee maker R$ 200, the total is R$ 3,050. Add 10 % → R$ 3,355. That will be your “budget” for Black Friday.
 
 ## 2. Build a monthly “piggy bank”
 
@@ -89,13 +89,13 @@ This technique dramatically reduces impulse purchases, which, according to **IBG
 
 ## 5. Build a short‑term investment “mix”
 
-Keeping money in a checking account earns almost nothing (around **0.3 %** a year, current Selic rate). To boost your savings before Black Friday, consider putting part of the amount into low‑risk, highly liquid investments.
+Keeping money in a checking account earns almost nothing (around **0.3 %** a year, current [Selic](/en/glossario/en-selic) rate). To boost your savings before Black Friday, consider putting part of the amount into low‑risk, highly liquid investments.
 
 **Recommended options:**
 
-- **Daily‑liquidity CDB** – yields close to the CDI (currently ~13.15 % a year).
+- **Daily‑[liquidity](/en/glossario/en-liquidez) [CDB](/en/glossario/en-cdb)** – yields close to the [CDI](/en/glossario/en-cdi) (currently ~13.15 % a year).
 - **Tesouro Selic** – a government bond linked to the Selic rate, redeemable at any time.
-- **Short‑term fixed‑income funds** – some offer returns above 100 % of the CDI.
+- **Short‑term fixed‑[income](/en/posts/en-montando-carteira-diversificada-com-r-500) funds** – some offer returns above 100 % of the CDI.
 
 **How to do it:** Open an account with a broker (such as **XP Investimentos** or **Rico**) and transfer up to **R$ 1,000** from your monthly “piggy bank.” The return could add between **R$ 150** and **R$ 250** to your fund by November, increasing your buying power.
 
@@ -113,9 +113,9 @@ Going into Black Friday without a plan can turn a great opportunity into a spend
 4. **Build a schedule** – know which stores launch deals first (e.g., Amazon at 00:00).
 5. **Use FinMoovi** to log the amount spent on each purchase and ensure you don’t exceed the total budget.
 
-## 7. Set aside an “emergency fund” for surprises
+## 7. Set aside an “[emergency fund](/en/glossario/en-reserva-de-emergencia)” for surprises
 
-Even with thorough planning, unexpected events happen (car repair, medical visit). To avoid dipping into your Black Friday reserve, keep an emergency fund equal to **3 to 6 months of expenses**. According to the **Central Bank**, 45 % of Brazilian families lack an emergency reserve, which can lead to debt.
+Even with thorough [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas), unexpected events happen (car repair, medical visit). To avoid dipping into your Black Friday reserve, keep an emergency fund equal to **3 to 6 months of expenses**. According to the **Central Bank**, 45 % of Brazilian families lack an emergency reserve, which can lead to debt.
 
 **How to build it:**
 - Save **R$ 200** per month in a separate account (FinMoovi works here too).

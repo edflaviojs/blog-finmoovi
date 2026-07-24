@@ -19,7 +19,7 @@ seo:
 
 A Black Friday ya está en el calendario y, si aún no has empezado a guardar dinero, todavía tienes tiempo para prepararte. No necesitas ser un experto en finanzas; basta con seguir algunos pasos simples y usar las herramientas correctas. En este post, te mostraremos **cómo empezar a ahorrar para la Black Friday ahora**, de forma práctica y sin complicaciones.
 
-> *Imagina llegar a la tienda (o al sitio web) con el dinero ya reservado, elegir lo que realmente necesitas y aún salir con cambio en el bolsillo. ¿Suena demasiado bueno? No, es totalmente posible.*
+> *Imagina llegar a la tienda (o al sitio web) con el dinero ya reservado, elegir lo que realmente necesitas y aún salir con [cambio](/es/glossario/es-cambio) en el bolsillo. ¿Suena demasiado bueno? No, es totalmente posible.*
 
 ## 1. Define el objetivo: ¿cuánto quieres gastar?
 
@@ -89,13 +89,13 @@ Esta técnica reduce drásticamente las compras impulsivas, que, según el **IBG
 
 ## 5. Crea una “mezcla” de inversiones a corto plazo
 
-Guardar dinero en cuenta corriente rinde casi nada (aprox. **0,3 %** al año, tasa Selic actual). Para potenciar el ahorro hasta la Black Friday, considera aplicar parte del monto en inversiones de bajo riesgo y alta liquidez.
+Guardar dinero en cuenta corriente rinde casi nada (aprox. **0,3 %** al año, tasa [Selic](/es/glossario/es-selic) actual). Para potenciar el ahorro hasta la Black Friday, considera aplicar parte del monto en inversiones de bajo riesgo y alta [liquidez](/es/glossario/es-liquidez).
 
 **Opciones recomendadas:**
 
-- **CDB con liquidez diaria** – rinde cercano al CDI (actual ~13,15 % al año).
-- **Tesoro Selic** – título público con rendimiento atado a la tasa Selic, rescatable en cualquier momento.
-- **Fondos de renta fija a corto plazo** – algunos ofrecen rendimiento superior al 100 % del CDI.
+- **[CDB](/es/glossario/es-cdb) con liquidez diaria** – rinde cercano al [CDI](/es/glossario/es-cdi) (actual ~13,15 % al año).
+- **Tesoro Selic** – título público con [rendimiento](/es/posts/es-montando-carteira-diversificada-com-r-500) atado a la tasa Selic, rescatable en cualquier momento.
+- **Fondos de [renta fija](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) a corto plazo** – algunos ofrecen rendimiento superior al 100 % del CDI.
 
 **Cómo hacerlo:** Abre la cuenta en una correduría (como **XP Investimentos** o **Rico**) y transfiere hasta **R$ 1.000** de tu “alcancía” mensual. El retorno puede añadir entre **R$ 150** y **R$ 250** a tu fondo hasta noviembre, aumentando tu poder de compra.
 
@@ -113,7 +113,7 @@ Llegar al día de la Black Friday sin un plan puede convertir la oportunidad en 
 4. **Elabora un cronograma** – conoce qué tiendas inician sus ofertas más temprano (ej.: Amazon a las 00 h).
 5. **Usa FinMoovi** para registrar el valor gastado en cada compra y asegurarte de no sobrepasar el presupuesto total.
 
-## 7. Reserva un “fondo de emergencia” para imprevistos
+## 7. Reserva un “[fondo de emergencia](/es/glossario/es-reserva-de-emergencia)” para imprevistos
 
 Incluso con todo el plan, los imprevistos ocurren (reparación de auto, consulta médica). Para no tocar la reserva de la Black Friday, mantén un fondo de emergencia equivalente a **3 a 6 meses de gastos**. Según el **Bacen**, el 45 % de las familias brasileñas no tiene reserva de emergencia, lo que puede llevar al endeudamiento.
 

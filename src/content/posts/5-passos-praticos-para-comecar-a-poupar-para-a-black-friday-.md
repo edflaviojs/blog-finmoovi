@@ -58,7 +58,7 @@ Total: **R$ 3.200**, já cobrindo o seu budget de R$ 3.355 e ainda sobra um 
 
 ### Ferramenta amiga: FinMoovi
 
-Para acompanhar esses depósitos mensais, o **FinMoovi** funciona como um cofrinho digital. Ele permite criar metas de poupança, registrar cada transferência e ainda envia alertas quando você está perto de ultrapassar o limite. É como ter um amigo que lembra você de colocar o dinheiro na conta toda vez que paga a conta de luz.
+Para acompanhar esses depósitos mensais, o **FinMoovi** funciona como um cofrinho digital. Ele permite criar metas de [poupança](/glossario/poupanca), registrar cada transferência e ainda envia alertas quando você está perto de ultrapassar o limite. É como ter um amigo que lembra você de colocar o dinheiro na conta toda vez que paga a conta de luz.
 
 ## 3. Reduza gastos fixos antes da Black Friday
 
@@ -69,7 +69,7 @@ Gastos fixos são os vilões da poupança. Segundo a **Serasa Experian**, a dív
 1. **Renegocie o plano de celular** – muitas operadoras oferecem pacotes menores por até **30 %** de desconto se você mudar de plano.
 2. **Ajuste a conta de energia** – troque lâmpadas por LED, use temporizadores e reduza o ar‑condicionado em 1 °C; isso pode economizar até **R$ 150** por mês.
 3. **Reavalie assinaturas** – streaming, revistas digitais, softwares. Cancele o que não usa.
-4. **Planeje as compras de supermercado** – faça lista, evite promoções impulsivas e use aplicativos de comparação de preços.
+4. **Planeje as compras de supermercado** – faça lista, evite promoções impulsivas e use [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de comparação de preços.
 5. **Negocie tarifas bancárias** – fale com seu banco e peça isenção de tarifas ou migração para conta digital sem custos.
 
 Essas pequenas economias, somadas, podem gerar **R$ 1.000** a **R$ 1.500** ao longo dos próximos meses – dinheiro que pode ir direto para o seu fundo da Black Friday.
@@ -93,13 +93,13 @@ Essa técnica reduz drasticamente compras impulsivas, que, segundo o **IBGE**, r
 
 ## 5. Monte um “mix” de investimentos de curto prazo
 
-Guardar dinheiro em conta corrente rende quase nada (cerca de **0,3 %** ao ano, taxa Selic atual). Para potencializar a poupança até a Black Friday, considere aplicar parte do valor em investimentos de baixo risco e liquidez rápida.
+Guardar dinheiro em conta corrente rende quase nada (cerca de **0,3 %** ao ano, taxa [Selic](/glossario/selic) atual). Para potencializar a poupança até a Black Friday, considere aplicar parte do valor em investimentos de baixo risco e [liquidez](/glossario/liquidez) rápida.
 
 **Opções recomendadas:**
 
-- **CDB com liquidez diária** – rende próximo ao CDI (atual ~13,15 % ao ano).
+- **[CDB](/glossario/cdb) com liquidez diária** – rende próximo ao [CDI](/glossario/cdi) (atual ~13,15 % ao ano).
 - **Tesouro Selic** – título público com rendimento atrelado à taxa Selic, resgatável a qualquer momento.
-- **Fundos de renda fixa de curto prazo** – alguns oferecem rendimento acima de 100 % do CDI.
+- **Fundos de [renda fixa](/glossario/renda-fixa) de curto prazo** – alguns oferecem rendimento acima de 100 % do CDI.
 
 **Como fazer:** Abra a conta em uma corretora (como a **XP Investimentos** ou **Rico**) e transfira até **R$ 1.000** do seu “cofrinho” mensal. O retorno pode adicionar entre **R$ 150** a **R$ 250** ao seu fundo até novembro, aumentando seu poder de compra.
 
@@ -121,7 +121,7 @@ Chegar ao dia da Black Friday sem um plano pode transformar a oportunidade em ar
 
 ## 7. Reserve um “fundo de emergência” para imprevistos
 
-Mesmo com todo o planejamento, imprevistos acontecem (reparo de carro, consulta médica). Para não mexer na reserva da Black Friday, mantenha um fundo de emergência equivalente a **3 a 6 meses de despesas**. Segundo o **Bacen**, 45 % das famílias brasileiras não têm reserva de emergência, o que pode levar a endividamento.
+Mesmo com todo o planejamento, imprevistos acontecem (reparo de carro, consulta médica). Para não mexer na reserva da Black Friday, mantenha um fundo de emergência equivalente a **3 a 6 meses de despesas**. Segundo o **Bacen**, 45 % das famílias brasileiras não têm [reserva de emergência](/ferramentas/calculadora-reserva), o que pode levar a endividamento.
 
 **Como montar:**
 - Separe **R$ 200** por mês em uma conta separada (pode ser no FinMoovi).

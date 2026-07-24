@@ -39,7 +39,7 @@ Vale la pena consultar la tabla de precios en el sitio del propio supermercado o
 
 ## Usa cupones y programas de fidelidad
 
-La mayoría de las cadenas de supermercados tienen programas de puntos o tarjetas de fidelidad. Cada compra genera créditos que pueden canjearse por descuentos o productos gratuitos. Si tu carrito totaliza R$ 250, un programa que devuelve el 2 % en crédito genera R$ 5 de retorno inmediato. No es mucho, pero sumado a otras estrategias, esos valores se acumulan.
+La mayoría de las cadenas de supermercados tienen programas de puntos o tarjetas de fidelidad. Cada compra genera créditos que pueden canjearse por descuentos o productos gratuitos. Si tu carrito totaliza R$ 250, un programa que devuelve el 2 % en [crédito](/es/glossario/es-credito) genera R$ 5 de retorno inmediato. No es mucho, pero sumado a otras estrategias, esos valores se acumulan.
 
 ![Use cupons e programas de fidelidade](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-4.webp)
 
