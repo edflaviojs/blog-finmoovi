@@ -129,7 +129,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 - **[Banco Central do Brasil](https://www.bcb.gov.br)** – check the Selic rate and economic indicators.  
 - **[Tesouro Direto](https://www.tesourodireto.com.br)** – official portal to buy government bonds.  
-- **FinMoovi** – Brazilian app that integrates expense tracking, investment goals, and market alerts. Perfect for anyone who wants to see the whole portfolio in one place.
+- **FinMoovi** – personal finance app that integrates expense tracking, investment goals, and market alerts. Perfect for anyone who wants to see the whole portfolio in one place.
 
 ![Helpful tools and resources](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 

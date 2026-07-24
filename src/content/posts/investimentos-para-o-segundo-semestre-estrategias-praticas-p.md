@@ -131,7 +131,7 @@ Para o segundo semestre, a maioria das pessoas foca em **curto e médio prazo**,
 
 - **[Banco Central do Brasil](https://www.bcb.gov.br)** – consulta de taxa Selic e indicadores econômicos.
 - **[Tesouro Direto](https://www.tesourodireto.com.br)** – portal oficial para adquirir títulos públicos.
-- **FinMoovi** – app brasileiro que integra controle de gastos, metas de investimento e alertas de mercado. Ideal para quem quer visualizar a carteira completa em um só lugar.
+- **FinMoovi** – app de finanças pessoais que integra controle de gastos, metas de investimento e alertas de mercado. Ideal para quem quer visualizar a carteira completa em um só lugar.
 
 ![Ferramentas e recursos úteis](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 

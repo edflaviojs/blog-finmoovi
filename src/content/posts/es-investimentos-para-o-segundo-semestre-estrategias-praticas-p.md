@@ -129,7 +129,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 - **[Banco Central de Brasil](https://www.bcb.gov.br)** – consulta de la tasa Selic e indicadores económicos.  
 - **[Tesoro Directo](https://www.tesourodireto.com.br)** – portal oficial para adquirir títulos públicos.  
-- **FinMoovi** – app brasileña que integra control de gastos, metas de inversión y alertas de mercado. Ideal para quien quiere visualizar la cartera completa en un solo lugar.
+- **FinMoovi** – app de finanzas personales que integra control de gastos, metas de inversión y alertas de mercado. Ideal para quien quiere visualizar la cartera completa en un solo lugar.
 
 ![Herramientas y recursos útiles](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
 
