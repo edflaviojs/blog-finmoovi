@@ -69,7 +69,7 @@ function getFmField(fm, key) {
  * @returns {string} Updated frontmatter
  */
 function setFmField(fm, key, newValue) {
-  const re = new RegExp(`^(${key}:\\s*)(['"]?).*?\\2\\s*$`, 'm');
+  const re = new RegExp(`^(\\s*${key}:\\s*)(['"]?).*?\\2\\s*$`, 'm');
   if (!re.test(fm)) return fm;
   return fm.replace(re, `$1"${newValue.replace(/"/g, '\\"')}"`);
 }

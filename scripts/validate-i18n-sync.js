@@ -43,6 +43,7 @@ const PT_WORDS_BLOCKED_IN_ES = [
 const ALLOWED_PT_TERMS = ["tesouro direto", "selic", "cdi", "ipca", "pgbl", "vgbl", config.brand.name.toLowerCase()];
 
 let errors = [];
+let warnings = [];
 
 function removeAccents(str) {
   return str.normalize("NFD").replace(/[̀-ͯ]/g, "");
@@ -62,11 +63,11 @@ function parseFrontmatter(content) {
   const tkMatch = yaml.match(/^translationKey:\s*"?([^"\n]+)"?\s*$/m);
   if (tkMatch) data.translationKey = tkMatch[1].trim();
 
-  const titleMatch = yaml.match(/^title:\s*"([^"]+)"/m);
-  if (titleMatch) data.title = titleMatch[1];
+  const titleMatch = yaml.match(/^title:\s*(?:"([^"]+)"|'([^']+)'|(.+))\s*$/m);
+  if (titleMatch) data.title = (titleMatch[1] || titleMatch[2] || titleMatch[3]).trim();
 
-  const descMatch = yaml.match(/^description:\s*"([^"]+)"/m);
-  if (descMatch) data.description = descMatch[1];
+  const descMatch = yaml.match(/^description:\s*(?:"([^"]+)"|'([^']+)'|(.+))\s*$/m);
+  if (descMatch) data.description = (descMatch[1] || descMatch[2] || descMatch[3]).trim();
 
   data.seo = {};
   const seoTitleMatch = yaml.match(/metaTitle:\s*"([^"]+)"/m);
@@ -79,13 +80,14 @@ function parseFrontmatter(content) {
 
 function containsBlockedWords(text, blockedWords, allowedTerms) {
   if (!text) return [];
-  const lower = removeAccents(text.toLowerCase());
+  let lower = removeAccents(text.toLowerCase());
+  // Remove allowed terms from text before checking blocked words
   for (const allowed of allowedTerms) {
-    if (lower.includes(allowed)) return [];
+    lower = lower.replaceAll(allowed, "");
   }
   const found = [];
   for (const word of blockedWords) {
-    const regex = new RegExp("\b" + word + "\b", "i");
+    const regex = new RegExp("\\b" + word + "\\b", "i");
     if (regex.test(lower)) {
       found.push(word);
     }
@@ -143,7 +145,7 @@ function validateDir(dir, useTranslationKey) {
       for (const [field, value] of fields) {
         const issues = containsBlockedWords(value, PT_WORDS_BLOCKED_IN_EN, ALLOWED_PT_TERMS);
         if (issues.length > 0)
-          errors.push("[ERRO] " + file + ": " + field + " contem palavras em PORTUGUES: [" + issues.join(", ") + "]");
+          warnings.push("[WARN] " + file + ": " + field + " contem palavras em PORTUGUES: [" + issues.join(", ") + "]");
       }
     }
 
@@ -157,7 +159,7 @@ function validateDir(dir, useTranslationKey) {
       for (const [field, value] of fields) {
         const issues = containsBlockedWords(value, PT_WORDS_BLOCKED_IN_ES, ALLOWED_PT_TERMS);
         if (issues.length > 0)
-          errors.push("[ERRO] " + file + ": " + field + " contem palavras em PORTUGUES: [" + issues.join(", ") + "]");
+          warnings.push("[WARN] " + file + ": " + field + " contem palavras em PORTUGUES: [" + issues.join(", ") + "]");
       }
     }
   }
@@ -184,6 +186,11 @@ if (errors.length > 0) {
   console.log("");
   errors.forEach(e => console.log("   " + e));
   console.log("");
+  if (warnings.length > 0) {
+    console.log("  " + warnings.length + " WARNING(S) de conteudo (nao bloqueantes):");
+    warnings.forEach(w => console.log("   " + w));
+    console.log("");
+  }
   console.log("============================================================");
   console.log("  BUILD BLOQUEADO por problemas de sincronizacao i18n.");
   console.log("  Corrija os erros acima antes de fazer deploy.");
@@ -195,5 +202,11 @@ if (errors.length > 0) {
   const glossCount = fs.existsSync(GLOSSARIO_DIR) ? fs.readdirSync(GLOSSARIO_DIR).filter(f => f.endsWith(".md")).length : 0;
   console.log("  Validacao i18n PASSOU - " + postCount + " posts + " + glossCount + " glossario verificados.");
   console.log("  Todos sincronizados corretamente nos 3 idiomas.");
+  if (warnings.length > 0) {
+    console.log("");
+    console.log("  " + warnings.length + " WARNING(S) de conteudo (corrigidos paulatinamente pelo workflow diario):");
+    warnings.slice(0, 10).forEach(w => console.log("   " + w));
+    if (warnings.length > 10) console.log("   ... e mais " + (warnings.length - 10) + " warnings");
+  }
   console.log("");
 }

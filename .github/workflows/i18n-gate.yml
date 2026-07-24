@@ -35,16 +35,32 @@ jobs:
           echo "Checking new EN/ES files for PT slug patterns..."
           ISSUES=0
 
-          PT_WORDS="para|como|nas|nos|voce|dicas|financeiro|financeira|orcamento|investimentos|economizar|poupar|gastos|renda|cartao|credito|debito|previdencia"
+          # Words that are PT-only (not valid in EN or ES)
+          PT_WORDS_COMMON="voce|dicas|financeiro|financeira|orcamento|investimentos|economizar|poupar|gastos|renda|cartao|credito|debito|previdencia"
+          # Words that exist in both PT and ES — only flag for EN files
+          PT_WORDS_EN_ONLY="para|como|nas|nos"
 
           for FILE in $NEW_FILES; do
             BASENAME=$(basename "$FILE" .md)
             # Remove locale prefix for checking
             SLUG_BODY=$(echo "$BASENAME" | sed 's/^en-//;s/^es-//')
 
-            if echo "$SLUG_BODY" | grep -qE "($PT_WORDS)"; then
-              echo "  ❌ $FILE — slug contains PT words"
-              ISSUES=$((ISSUES + 1))
+            # Determine locale from prefix
+            LOCALE_PREFIX=$(echo "$BASENAME" | grep -oP '^(en|es)' || echo "")
+
+            if [ "$LOCALE_PREFIX" = "en" ]; then
+              # EN files: check all PT words including "para", "como", etc.
+              FULL_PT_WORDS="$PT_WORDS_EN_ONLY|$PT_WORDS_COMMON"
+              if echo "$SLUG_BODY" | grep -qE "($FULL_PT_WORDS)"; then
+                echo "  ❌ $FILE — slug contains PT words"
+                ISSUES=$((ISSUES + 1))
+              fi
+            else
+              # ES files: only check PT-exclusive words (skip "para", "como" etc.)
+              if echo "$SLUG_BODY" | grep -qE "($PT_WORDS_COMMON)"; then
+                echo "  ❌ $FILE — slug contains PT words"
+                ISSUES=$((ISSUES + 1))
+              fi
             fi
           done
 
