@@ -10,7 +10,7 @@ translationKey: "glossario-score-de-credito"
 readingTime: 2
 ---
 
-## O que é Score de Crédito?
+## O que é Score de [Crédito](/glossario/credito)?
 
 Score de crédito é uma nota de 0 a 1000 que os birôs de crédito (Serasa, SPC, Boa Vista) dão para você. Essa nota indica para bancos e lojas qual a chance de você pagar suas contas em dia.
 

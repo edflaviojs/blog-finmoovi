@@ -27,7 +27,7 @@ El crédito es básicamente la posibilidad que te da una entidad (banco, fintech
 
 ## Cómo funciona
 
-Cuando solicitas crédito, la entidad evalúa tu capacidad de pago mediante tu historial financiero y tus ingresos. Si te aprueba, te asigna un límite, que es la cantidad máxima que puedes usar. Cada vez que utilizas parte de ese límite, generas una deuda que se acumula con intereses diarios o mensuales. Al final de cada período, recibes un estado de cuenta con el saldo pendiente y el pago mínimo que debes cubrir para evitar cargos extra. Si pagas más que el mínimo, reduces la deuda y los intereses futuros. El proceso se resume en tres pasos:
+Cuando solicitas crédito, la entidad evalúa tu capacidad de pago mediante tu historial [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere) y tus ingresos. Si te aprueba, te asigna un límite, que es la cantidad máxima que puedes usar. Cada vez que utilizas parte de ese límite, generas una deuda que se acumula con intereses diarios o mensuales. Al final de cada período, recibes un estado de cuenta con el saldo pendiente y el pago mínimo que debes cubrir para evitar cargos extra. Si pagas más que el mínimo, reduces la deuda y los intereses futuros. El proceso se resume en tres pasos:
 
 - **Solicitud:** entregas tus datos y documentos (como comprobante de salario) y la entidad verifica tu perfil.
 - **Aprobación y asignación:** te otorgan un límite de crédito basado en tu capacidad de pago.
@@ -35,7 +35,7 @@ Cuando solicitas crédito, la entidad evalúa tu capacidad de pago mediante tu h
 
 ## Ventajas
 
-Tener acceso a crédito puede ser una herramienta poderosa si lo manejas con disciplina. Entre los beneficios más evidentes están:
+Tener acceso a crédito puede ser una herramienta poderosa si lo manejas con disciplina. Entre los [beneficios](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) más evidentes están:
 
 ![Ventajas](/images/glossario/credito-inline-3.webp)
 
@@ -43,7 +43,7 @@ Tener acceso a crédito puede ser una herramienta poderosa si lo manejas con dis
 
 - **Flexibilidad:** puedes comprar ahora y pagar después, lo que te permite distribuir gastos grandes a lo largo del tiempo.
 - **Construcción de historial crediticio:** cada pago puntual mejora tu puntuación, facilitando futuros préstamos con mejores condiciones.
-- **Emergencias:** ante un imprevisto, como una reparación del coche, el crédito te brinda liquidez inmediata sin tener que vender activos.
+- **Emergencias:** ante un imprevisto, como una reparación del coche, el crédito te brinda [liquidez](/es/glossario/es-liquidez) inmediata sin tener que vender activos.
 
 Además, muchos bancos ofrecen programas de recompensas (puntos, cash back) que convierten cada compra en un pequeño ahorro adicional, siempre que pagues a tiempo.
 
@@ -55,7 +55,7 @@ Aunque el crédito tiene ventajas, también conlleva riesgos que pueden afectar 
 - **Intereses altos:** si el crédito es de tipo revolving (tarjeta de crédito), los intereses pueden superar el 300 % anual, lo que encarece mucho la deuda.
 - **Cargos por mora:** retrasar el pago genera multas y aumenta el saldo, creando un círculo vicioso difícil de romper.
 
-Por eso, es fundamental conocer bien los costos y mantener una disciplina de pago para que el crédito sea una ayuda y no una carga.
+Por eso, es fundamental conocer bien los [costos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica) y mantener una disciplina de pago para que el crédito sea una ayuda y no una carga.
 
 ## Ejemplos prácticos
 
@@ -74,7 +74,7 @@ Si ya decides que el crédito puede ser útil para ti, sigue estos pasos para in
 - **Evalúa tu capacidad:** calcula cuánto puedes pagar mensualmente sin comprometer tus gastos esenciales (alquiler, alimentación, transporte). Un buen punto de partida es que la cuota no supere el 30 % de tu ingreso neto.
 - **Elige la opción adecuada:** compara tarjetas de crédito, préstamos personales y líneas de crédito. Busca la que tenga la tasa de interés más baja y condiciones transparentes.
 - **Solicita y revisa el contrato:** antes de firmar, lee todas las cláusulas, especialmente la tasa de interés, el plazo y los cargos por mora. Si algo no está claro, pregunta al agente o busca asesoría.
-- **Usa una app de finanzas:** descarga una aplicación como **Guiabolso** o **Mobills**; te permite registrar tus gastos, controlar el uso del crédito y recibir alertas de pago. Es como tener a un amigo que te recuerda cuándo es el momento de pagar.
+- **Usa una [app de finanzas](/es/posts/es-planilla-de-gastos-cuando-ella-deja-de-funcionar):** descarga una aplicación como **Guiabolso** o **[Mobills](/es/posts/es-5-alternativas-al-mobills-en-2026)**; te permite registrar tus gastos, controlar el uso del crédito y recibir alertas de pago. Es como tener a un amigo que te recuerda cuándo es el momento de pagar.
 - **Mantén el hábito del pago puntual:** programa transferencias automáticas o recordatorios para no olvidar la fecha de vencimiento. **Consejo práctico:** paga siempre más del mínimo; así reduces la deuda y los intereses.
 - **Monitorea tu historial crediticio:** revisa periódicamente tu score en bureaus de crédito; un buen historial te abre puertas a mejores condiciones en el futuro.
 

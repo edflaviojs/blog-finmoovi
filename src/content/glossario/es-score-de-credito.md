@@ -12,7 +12,7 @@ readingTime: 2
 
 ## ¿Qué es Score de [Crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen)?
 
-El score de crédito es una puntuación de 0 a 1000 que los burós de crédito (Serasa, SPC, Boa Vista) otorgan a usted. Esta puntuación indica a bancos y comercios cuál es la probabilidad de que usted pague sus cuentas a tiempo.
+El score de [crédito](/es/glossario/es-credito) es una puntuación de 0 a 1000 que los burós de crédito (Serasa, SPC, Boa Vista) otorgan a usted. Esta puntuación indica a bancos y comercios cuál es la probabilidad de que usted pague sus cuentas a tiempo.
 
 ## Rangos de score
 

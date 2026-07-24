@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, mas que você pode pagar depois. Funciona como um empréstimo pré‑aprovado: o banco ou a fintech coloca um limite à sua disposição e você paga o que usar, acrescido de juros (o preço do dinheiro emprestado). Quando falamos de crédito, incluímos cartões de crédito, cheque especial, empréstimos pessoais e até financiamentos de carro ou casa. Em termos simples, é “comprar agora, pagar depois”, mas com a responsabilidade de devolver o valor + juros dentro do prazo combinado.
+Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, mas que você pode pagar depois. Funciona como um empréstimo pré‑aprovado: o banco ou a fintech coloca um limite à sua disposição e você paga o que usar, acrescido de [juros](/en/glossario/en-juros) (o preço do dinheiro emprestado). Quando falamos de crédito, incluímos cartões de crédito, cheque especial, empréstimos pessoais e até financiamentos de carro ou casa. Em termos simples, é “comprar agora, pagar depois”, mas com a responsabilidade de devolver o valor + juros dentro do prazo combinado.
 
 ![What it is](/images/glossario/credito-inline-1.webp)
 
@@ -31,7 +31,7 @@ Quando você solicita crédito, a instituição avalia seu histórico de pagamen
 
 ## Advantages
 
-- **Flexibilidade:** você pode usar o crédito para emergências, compras planejadas ou investimentos sem precisar esperar a poupança crescer.  
+- **Flexibilidade:** você pode usar o crédito para emergências, compras planejadas ou investimentos sem precisar esperar a [poupança](/en/glossario/en-poupanca) crescer.  
 - **Construção de crédito:** pagamentos em dia aumentam seu score, abrindo portas para financiamentos maiores e com juros mais baixos.  
 - **Parcelamento sem juros:** alguns cartões oferecem parcelamento de até 12 vezes sem custo adicional, útil para compras de eletrodomésticos ou móveis.  
 - **Liquidez imediata:** ao contrário de um empréstimo tradicional, o limite já está disponível para usar a qualquer momento.
@@ -59,7 +59,7 @@ Imagine que você ganha R$4.500 por mês.
 
 **Practical tip:** **Se o seu salário está entre R$3.000 e R$8.000, limite seu gasto mensal de crédito a no máximo 30 % da renda, assim você evita apertos no fim do mês.**  
 
-**Practical tip:** **Use um app de controle financeiro (como o Nubank ou o Guiabolso) para monitorar o saldo devedor em tempo real; isso ajuda a manter a disciplina e a perceber quando o limite está próximo de ser ultrapassado.**
+**Practical tip:** **Use um app de controle financeiro (como o [Nubank](/en/glossario/en-nubank) ou o Guiabolso) para monitorar o saldo devedor em tempo real; isso ajuda a manter a disciplina e a perceber quando o limite está próximo de ser ultrapassado.**
 
 ## How to start
 

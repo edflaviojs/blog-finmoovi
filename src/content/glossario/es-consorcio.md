@@ -19,7 +19,7 @@ Consorcio es un sistema donde varias personas se unen para comprar algo (coche, 
 1. Entrar en un grupo de consorcio
 2. Pagar cuotas mensuales (sin intereses, pero con tasa de administración)
 3. Todos los meses hay asamblea con sorteo
-4. Los beneficiados reciben carta de crédito
+4. Los beneficiados reciben carta de [crédito](/es/glossario/es-credito)
 5. Puede hacer una puja (ofrecer cuotas adelantadas) para ser beneficiado antes
 
 ## Ventajas

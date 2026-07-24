@@ -12,7 +12,7 @@ readingTime: 2
 
 ## O que é Cheque Especial?
 
-Cheque especial é um limite de crédito que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o cheque especial — e paga [juros](/glossario/juros) altíssimos por isso.
+Cheque especial é um limite de [crédito](/glossario/credito) que o banco disponibiliza na sua conta corrente. Quando seu saldo fica negativo, você automaticamente usa o cheque especial — e paga [juros](/glossario/juros) altíssimos por isso.
 
 ## Por que é tão perigoso
 

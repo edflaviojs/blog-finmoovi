@@ -19,7 +19,7 @@ seo:
 
 ## Introduction  
 
-In 2026, the best option depends on what you need: if you want speed and zero cost, **PIX** is usually the pick; if you need to move large sums between banks with a guaranteed cut‑off time, **TED** may be more suitable. Both are safe, but they have differences that affect your wallet and your routine.
+In 2026, the best option depends on what you need: if you want speed and zero cost, **[PIX](/en/glossario/en-pix)** is usually the pick; if you need to move large sums between banks with a guaranteed cut‑off time, **TED** may be more suitable. Both are safe, but they have differences that affect your wallet and your routine.
 
 ## How PIX Works  
 
@@ -47,7 +47,7 @@ TED (Electronic Transfer Available) is the traditional inter‑bank transfer ser
 ### Practical example  
 João sold his car for R$ 45 000 and needed the money in his account. He chose a TED, paid a R$ 4 fee, and the amount was credited to the buyer’s account the same business day, ensuring a secure transaction.
 
-## Comparison Table  
+## [Comparison](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) Table  
 
 | Criterion                     | PIX                                            | TED                                            |
 |------------------------------|------------------------------------------------|-----------------------------------------------|
@@ -85,7 +85,7 @@ The decision between PIX and TED isn’t “either/or”; it’s “which one fi
 - **Everyday spender:** If you regularly pay bills, split expenses, and need fast transfers, **PIX** will be your ally. Its free nature and 24 h/7 days availability save you time and money.  
 - **High‑value or formal‑proof user:** If you often negotiate real estate, vehicles, or rent and need extra security and receipts, **TED** still has its place, despite the fee.
 
-Regardless of the choice, keeping track of your movements is essential. **FinMoovi** is a personal‑finance app that lets you log both PIX and TED transactions, categorize expenses, and monitor your balance in real time, helping you make more informed decisions.
+Regardless of the choice, keeping track of your movements is essential. **FinMoovi** is a personal‑[finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) app that lets you log both PIX and TED transactions, [categorize expenses](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o), and monitor your balance in real time, helping you make more informed decisions.
 
 > *Practical tip:* Use FinMoovi to set daily‑limit alerts for PIX and to record the protocol numbers of your TEDs. That way, everything is documented in one place.
 
@@ -102,3 +102,4 @@ Both are regulated by the Central Bank and use advanced encryption. PIX relies o
 
 ### Does FinMoovi track both methods?  
 Yes. FinMoovi lets you record PIX and TED transactions, categorize each one, and generate detailed reports so you can control your money.
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does PIX charge a fee for transfers above R$ 5 000?","acceptedAnswer":{"@type":"Answer","text":"Generally, no. Most institutions offer free PIX, though a few banks may charge up to R$ 0.50 in exceptional cases."}},{"@type":"Question","name":"Can I make a TED outside banking hours?","acceptedAnswer":{"@type":"Answer","text":"No. Orders sent after the cut‑off time (usually 5 p.m.) are processed on the next business day."}},{"@type":"Question","name":"How does PIX’s security compare to TED’s?","acceptedAnswer":{"@type":"Answer","text":"Both are regulated by the Central Bank and use advanced encryption. PIX relies on correct key configuration, while TED uses the Central Bank’s payment network—both considered equally safe."}},{"@type":"Question","name":"Does FinMoovi track both methods?","acceptedAnswer":{"@type":"Answer","text":"Yes. FinMoovi lets you record PIX and TED transactions, categorize each one, and generate detailed reports so you can control your money."}}]} -->
