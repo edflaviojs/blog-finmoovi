@@ -1,0 +1,35 @@
+name: "Detect BR-only Posts (Weekly)"
+
+on:
+  schedule:
+    - cron: '0 10 * * 1'  # Mondays at 10:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Detect untranslated posts
+        run: node scripts/detect-br-only.js
+
+      - name: Create issue if needed
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f /tmp/br-only-report.md ]; then
+            gh issue create \
+              --title "i18n: $(cat /tmp/br-only-count) posts missing EN/ES translations" \
+              --body-file /tmp/br-only-report.md \
+              --label "i18n,content"
+          fi
