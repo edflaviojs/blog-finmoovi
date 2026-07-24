@@ -23,7 +23,7 @@ The week of May 20-26, 2026 was marked by significant movements in the Brazilian
 
 ## [Dollar](/en/posts/en-quotes-semana-1-june-2026) and Euro: Weekly Trend
 
-The [US dollar](/en/posts/en-investir-em-dolar-no-brasil) closed the week at R$ 5.03, showing slight stability compared to the previous week. The euro, quoted at R$ 5.85, also maintained a stability trend with minimal variations throughout the week. This relative calm in exchange rates is a relief for importers and tourists, but it may mean fewer opportunities for investors who bet on exchange rate variations.
+The [US dollar](/en/posts/en-investing-in-dollar-in-brazil) closed the week at R$ 5.03, showing slight stability compared to the previous week. The euro, quoted at R$ 5.85, also maintained a stability trend with minimal variations throughout the week. This relative calm in exchange rates is a relief for importers and tourists, but it may mean fewer opportunities for investors who bet on exchange rate variations.
 
 ## Selic and Impact on Investments
 

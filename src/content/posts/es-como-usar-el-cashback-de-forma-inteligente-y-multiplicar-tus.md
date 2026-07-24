@@ -20,15 +20,15 @@ seo:
 
 ## Cashback como aliado de verdad
 
-Cuando pagas un snack de R$ 35,00 con una tarjeta que devuelve el 2% del gasto, el retorno parece pequeño – R$ 0,70. Pero si ese [valor](/es/glossario/es-valor-financeiro) se trata como ingreso extra, puede convertirse en un verdadero refuerzo para tu [presupuesto](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias). La idea no es esperar que el cashback cubra todo de una vez, sino hacer que cada centavo devuelto trabaje a tu favor.
+Cuando pagas un snack de R$ 35,00 con una tarjeta que devuelve el 2% del gasto, el retorno parece pequeño – R$ 0,70. Pero si ese [valor](/es/glossario/es-valor-financeiro) se trata como ingreso extra, puede convertirse en un verdadero refuerzo para tu [presupuesto](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones). La idea no es esperar que el cashback cubra todo de una vez, sino hacer que cada centavo devuelto trabaje a tu favor.
 
-## Elige la tarjeta adecuada y combina [beneficios](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Elige la tarjeta adecuada y combina [beneficios](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
 
 No todas las tarjetas ofrecen la misma tasa de retorno. Algunas dan 1,5% en todas las compras, otras dan 5% en categorías específicas (como supermercados o estaciones de gasolina) y 1% en el resto. La clave está en alinear la tarjeta con tu patrón de consumo.
 
 ![Escolha o cartão certo e combine benefícios](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-2.webp)
 
-- **Si tu salario está entre R$ 3.000 y R$ 5.000** y la mayor parte de los [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) son en alimentación y transporte, opta por una tarjeta que ofrezca 4% de cashback en supermercados y 2% en estaciones.
+- **Si tu salario está entre R$ 3.000 y R$ 5.000** y la mayor parte de los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) son en alimentación y transporte, opta por una tarjeta que ofrezca 4% de cashback en supermercados y 2% en estaciones.
 - **Para quien gana entre R$ 6.000 y R$ 8.000**, vale la pena considerar una tarjeta premium que devuelva 3% en todas las compras, aunque la anualidad sea mayor, porque el volumen de gasto lo compensa.
 
 **Consejo práctico:** antes de abrir la cuenta, haz un cálculo rápido de la anualidad versus el cashback esperado. Si la anualidad es de R$ 120,00 al año, necesitas generar al menos R$ 4.000 en gastos con un 3% de retorno para que el beneficio supere el costo.

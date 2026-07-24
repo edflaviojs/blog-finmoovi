@@ -18,9 +18,9 @@ seo:
 ---
 
 ## Definiendo la reserva de emergencia
-Una reserva de emergencia es una cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) guardada para cubrir [gastos](/es/posts/es-metodo-50-30-20-para-orcamento) inesperados o pérdida de ingresos. Es esencial tener una reserva para evitar deudas y mantener la estabilidad financiera. Por ejemplo, si usted gana R$ 5.000 por mes y pierde el empleo, una reserva de emergencia puede ayudar a pagar las cuentas mientras busca un nuevo trabajo.
+Una reserva de emergencia es una cantidad de [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) guardada para cubrir [gastos](/es/posts/es-metodo-50-30-20-para-presupuesto) inesperados o pérdida de ingresos. Es esencial tener una reserva para evitar deudas y mantener la estabilidad financiera. Por ejemplo, si usted gana R$ 5.000 por mes y pierde el empleo, una reserva de emergencia puede ayudar a pagar las cuentas mientras busca un nuevo trabajo.
 
-Una buena regla es tener entre 3 a 6 meses de [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) cubiertos por la reserva. Si sus gastos mensuales son de R$ 3.500, usted necesitaría una reserva de R$ 10.500 a R$ 21.000. Esto puede parecer mucho, pero es importante comenzar a ahorrar lo antes posible.
+Una buena regla es tener entre 3 a 6 meses de [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) cubiertos por la reserva. Si sus gastos mensuales son de R$ 3.500, usted necesitaría una reserva de R$ 10.500 a R$ 21.000. Esto puede parecer mucho, pero es importante comenzar a ahorrar lo antes posible.
 
 ## Cómo calcular la reserva necesaria
 Para calcular la reserva necesaria, es importante saber cuáles son sus gastos mensuales. Haga una lista de todos los gastos, incluyendo:
@@ -28,9 +28,9 @@ Para calcular la reserva necesaria, es importante saber cuáles son sus gastos m
 - Cuentas de agua, luz e internet
 - Supermercado
 - Transporte
-- Deudas, como [tarjeta de crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) o préstamo
+- Deudas, como [tarjeta de crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) o préstamo
 
-**Consejo práctico:** Use una aplicación de [finanzas personales](/es/posts/es-5-dicas-para-reorganizar-suas-financas-nas-ferias) para registrar sus gastos y tener una visión clara de dónde está yendo su [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado). Esto ayudará a identificar áreas donde puede recortar gastos y dirigir más [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) hacia la reserva de emergencia.
+**Consejo práctico:** Use una aplicación de [finanzas personales](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) para registrar sus gastos y tener una visión clara de dónde está yendo su [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado). Esto ayudará a identificar áreas donde puede recortar gastos y dirigir más [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado) hacia la reserva de emergencia.
 
 ![Cómo calcular la reserva necesaria](/images/posts/como-criar-uma-reserva-de-emergencia-2.webp)
 

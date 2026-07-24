@@ -39,7 +39,7 @@ SAC (Constant Amortization System) is a loan repayment method where the [amortiz
 
 ## When to choose SAC
 
-- When your [income](/en/posts/en-montando-carteira-diversificada-com-r-500) allows you to pay larger installments at the beginning
+- When your [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) allows you to pay larger installments at the beginning
 - When you want to save on total interest
 - For long-term financing (the difference is huge)
 - When you plan to amortize ahead of schedule

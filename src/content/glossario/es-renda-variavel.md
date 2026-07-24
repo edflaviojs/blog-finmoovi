@@ -32,7 +32,7 @@ Renta Variable es todo lo que no tiene retorno garantizado. El precio sube y baj
 4. **Criptomonedas** — activos digitales descentralizados  
 5. **Derivados** — contratos futuros, opciones (avanzado)  
 
-## [Riesgos](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Riesgos](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
 
 - Pérdida de capital (tu inversión puede valer menos)  
 - Volatilidad (oscilaciones diarias)  

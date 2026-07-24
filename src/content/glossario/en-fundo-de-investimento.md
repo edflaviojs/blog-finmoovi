@@ -44,7 +44,7 @@ Another advantage is liquidity. Many funds allow you to redeem your investment a
 * Professional management: funds are managed by experienced professionals
 * Liquidity: many funds allow you to redeem your investment at any time
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 Like any investment, funds also involve risks. One of the main risks is loss risk. If the fund invests in assets that do not appreciate, the value of your piece can decrease. In addition, funds are also subject to market risks, such as changes in the economy or politics.
 
 Another risk is liquidity risk. If many investors decide to redeem their investment at the same time, the fund may have difficulty paying all redemptions, which can affect the value of your piece. **Practical tip:** it’s important to diversify your investments to reduce loss risk.

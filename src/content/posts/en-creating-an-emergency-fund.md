@@ -18,9 +18,9 @@ seo:
 ---
 
 ## Defining the [Emergency Fund](/en/glossario/en-reserva-de-emergencia)
-An emergency fund is an amount of [money](/en/posts/en-avoid-impulse-purchases) set aside to cover unexpected [expenses](/en/posts/en-metodo-50-30-20-para-orcamento) or loss of [income](/en/posts/en-montando-carteira-diversificada-com-r-500). It's essential to have a fund to avoid debt and maintain financial stability. For example, if you earn R$ 5,000 per month and lose your job, an emergency fund can help pay the bills while you look for a new job.
+An emergency fund is an amount of [money](/en/posts/en-avoid-impulse-purchases) set aside to cover unexpected [expenses](/en/posts/en-the-50-30-20-method-for-budgeting) or loss of [income](/en/posts/en-building-a-diversified-portfolio-with-r-500). It's essential to have a fund to avoid debt and maintain financial stability. For example, if you earn R$ 5,000 per month and lose your job, an emergency fund can help pay the bills while you look for a new job.
 
-A good rule of thumb is to have between 3 to 6 months' worth of [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) covered by the fund. If your monthly expenses are R$ 3,500, you would need a fund of R$ 10,500 to R$ 21,000. This may seem like a lot, but it's crucial to start saving as soon as possible.
+A good rule of thumb is to have between 3 to 6 months' worth of [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) covered by the fund. If your monthly expenses are R$ 3,500, you would need a fund of R$ 10,500 to R$ 21,000. This may seem like a lot, but it's crucial to start saving as soon as possible.
 
 ## Calculating the Necessary Fund
 To calculate the necessary fund, it's essential to know your monthly expenses. Make a list of all your spending, including:
@@ -28,7 +28,7 @@ To calculate the necessary fund, it's essential to know your monthly expenses. M
 - Water, electricity, and internet bills
 - Groceries
 - Transportation
-- Debt payments, such as [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) or loan
+- Debt payments, such as [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) or loan
 
 **Practical tip:** Use a [personal finance](/en/posts/en-30-day-rule-for-purchases) app to track your expenses and get a clear view of where your [money](/en/posts/en-difference-between-investing-and-saving) is going. This will help you identify areas where you can cut back on spending and direct more money towards the emergency fund.
 

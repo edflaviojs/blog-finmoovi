@@ -10,7 +10,7 @@ publishedAt: 2026-06-06
 ---
 
 ## ¿Qué son Bull Market y Bear Market?
-Cuando se habla de [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026), es común escuchar los términos "Bull Market" y "Bear Market". Estos términos son usados para describir las tendencias del mercado de acciones y pueden influir en sus decisiones de [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500).
+Cuando se habla de [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026), es común escuchar los términos "Bull Market" y "Bear Market". Estos términos son usados para describir las tendencias del mercado de acciones y pueden influir en sus decisiones de [inversión](/es/posts/es-montando-cartera-diversificada-con-r-500).
 
 ## Bull Market
 Un Bull Market es un período en que el mercado de acciones está en alta, con los precios de las acciones subiendo consistentemente. Esto generalmente ocurre durante períodos de crecimiento económico, cuando las empresas están generando ganancias y las personas están optimistas sobre el futuro. Durante un Bull Market, los inversores tienden a comprar más acciones, lo que aumenta la demanda y, consecuentemente, los precios.
@@ -41,4 +41,4 @@ Aquí está una tabla comparativa entre los dos:
 | Demanda | Alta | Baja |
 | Oferta | Baja | Alta |
 
-En resumen, es importante entender las diferencias entre Bull Market y Bear Market para tomar decisiones informadas sobre sus [inversiones](/es/posts/es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-). Si usted está invirtiendo durante un Bull Market, es probable que sus acciones aumenten de [valor](/es/glossario/es-valor-financeiro). Sin embargo, si usted está invirtiendo durante un Bear Market, es probable que sus acciones pierdan valor. Es siempre importante diversificar sus inversiones y tener un plan de largo plazo para minimizar los [riesgos](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico).
+En resumen, es importante entender las diferencias entre Bull Market y Bear Market para tomar decisiones informadas sobre sus [inversiones](/es/posts/es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale-ma). Si usted está invirtiendo durante un Bull Market, es probable que sus acciones aumenten de [valor](/es/glossario/es-valor-financeiro). Sin embargo, si usted está invirtiendo durante un Bear Market, es probable que sus acciones pierdan valor. Es siempre importante diversificar sus inversiones y tener un plan de largo plazo para minimizar los [riesgos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica).

@@ -18,10 +18,10 @@ seo:
 ---
 
 ## Qué es
-El término financiero "yield" se refiere a la rentabilidad o el rendimiento de una [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500), es decir, el retorno que obtienes por el [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) que inviertes. En otras palabras, es la ganancia que obtienes en relación con el capital invertido. Por ejemplo, si inviertes R$1.000 en una acción y obtienes un rendimiento del 10%, tu yield sería de R$100.
+El término financiero "yield" se refiere a la rentabilidad o el rendimiento de una [inversión](/es/posts/es-montando-cartera-diversificada-con-r-500), es decir, el retorno que obtienes por el [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) que inviertes. En otras palabras, es la ganancia que obtienes en relación con el capital invertido. Por ejemplo, si inviertes R$1.000 en una acción y obtienes un rendimiento del 10%, tu yield sería de R$100.
 
 ## Cómo funciona
-El yield funciona de manera que te permite comparar la rentabilidad de diferentes [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026). Por ejemplo, si tienes dos opciones de inversión, una con un rendimiento del 8% y otra con un rendimiento del 12%, es probable que elijas la segunda opción porque tiene un yield más alto. Sin embargo, es importante tener en cuenta que el yield no es lo único que debes considerar al tomar decisiones de inversión. También debes considerar el riesgo asociado con cada inversión, ya que una inversión con un yield más alto puede tener un riesgo más alto.
+El yield funciona de manera que te permite comparar la rentabilidad de diferentes [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026). Por ejemplo, si tienes dos opciones de inversión, una con un rendimiento del 8% y otra con un rendimiento del 12%, es probable que elijas la segunda opción porque tiene un yield más alto. Sin embargo, es importante tener en cuenta que el yield no es lo único que debes considerar al tomar decisiones de inversión. También debes considerar el riesgo asociado con cada inversión, ya que una inversión con un yield más alto puede tener un riesgo más alto.
 
 ![Qué es](/images/glossario/yield-inline-1.webp)
 

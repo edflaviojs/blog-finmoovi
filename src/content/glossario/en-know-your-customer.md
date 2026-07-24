@@ -38,7 +38,7 @@ KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verif
 ### Advanced level
 
 - Tax return
-- Proof of [income](/en/posts/en-montando-carteira-diversificada-com-r-500)
+- Proof of [income](/en/posts/en-building-a-diversified-portfolio-with-r-500)
 - Source of funds
 
 ## Where you'll find KYC

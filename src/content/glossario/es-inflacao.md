@@ -28,6 +28,6 @@ Si tus inversiones rinden menos que la inflación, estás **perdiendo dinero** e
 ## ¿Cómo protegerse?
 
 - Invierte en activos que rindan por encima de la inflación
-- Tesoro IPCA+ garantiza [rendimiento](/es/posts/es-montando-carteira-diversificada-com-r-500) real
+- Tesoro IPCA+ garantiza [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) real
 - Diversifica entre [renda fixa](/es/glossario/es-renda-fixa) y variable
 - Sigue el IPCA mensual

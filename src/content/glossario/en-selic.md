@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-The Selic **rate** is a fundamental concept in the world of Brazilian [finance](/en/posts/en-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-). It is the basic **interest** rate of the economy, set by the Monetary Policy Committee (Copom) of the Central Bank of Brazil. In other words, it is the interest rate that banks pay to lend money to the government and, in turn, influences the interest rates of all other loans and investments in the country. For example, if you earn R$ 5,000 a month and are thinking about investing in a fixed‑[income](/en/posts/en-montando-carteira-diversificada-com-r-500) fund, the Selic rate can directly affect the return on your investment.
+The Selic **rate** is a fundamental concept in the world of Brazilian [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff). It is the basic **interest** rate of the economy, set by the Monetary Policy Committee (Copom) of the Central Bank of Brazil. In other words, it is the interest rate that banks pay to lend money to the government and, in turn, influences the interest rates of all other loans and investments in the country. For example, if you earn R$ 5,000 a month and are thinking about investing in a fixed‑[income](/en/posts/en-building-a-diversified-portfolio-with-r-500) fund, the Selic rate can directly affect the return on your investment.
 
 * The Selic rate is used as a reference to calculate the interest rates of loans and investments  
 * It is set by the Copom of the Central Bank of Brazil  
@@ -36,7 +36,7 @@ The Selic rate is set by the Copom of the Central Bank of Brazil, which meets re
 The Selic rate can also influence the **value** of the real against other currencies. When the Selic rate is high, the real may appreciate relative to other currencies, which can affect the country’s exports and imports. For example, if you are an exporter of Brazilian products, a high Selic rate can make your goods more expensive for foreign buyers, potentially reducing sales.
 
 ## Advantages
-The Selic rate offers several advantages for the Brazilian economy. One of the main advantages is that it helps control inflation. When the Selic rate is high, loans become more expensive and people tend to save more and spend less, which can help curb inflation. In addition, the Selic rate can help maintain the country’s economic stability, which is important for attracting [foreign investment](/en/posts/en-investir-em-dolar-no-brasil).
+The Selic rate offers several advantages for the Brazilian economy. One of the main advantages is that it helps control inflation. When the Selic rate is high, loans become more expensive and people tend to save more and spend less, which can help curb inflation. In addition, the Selic rate can help maintain the country’s economic stability, which is important for attracting [foreign investment](/en/posts/en-investing-in-dollar-in-brazil).
 
 * The Selic rate helps control inflation  
 * It can maintain the country’s economic stability  
@@ -48,7 +48,7 @@ The Selic rate offers several advantages for the Brazilian economy. One of the m
 
 The Selic rate can also influence the labor market. When the Selic rate is low, loans become cheaper and companies can invest more in expansion and hiring, which can reduce unemployment. For example, if you are a business owner earning R$ 8,000 a month and are thinking about expanding your business, a low Selic rate can make loans more accessible and affordable.
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 The Selic rate also carries risks. One of the main disadvantages is that it can negatively affect the country’s economic growth. When the Selic rate is high, loans become more expensive and people tend to save more and spend less, which can slow economic growth. Moreover, the Selic rate can influence the value of the real against other currencies, affecting the country’s exports and imports.
 
 * The Selic rate can negatively affect the country’s economic growth  

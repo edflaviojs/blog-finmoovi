@@ -39,7 +39,7 @@ where **X** is your value, **μ** (mu) is the mean, and **σ** (sigma) is the st
 
 - Gather the data (e.g., salaries of 30 people).  
 - Compute the mean (add all salaries and divide by 30).  
-- Compute the standard deviation (a bit of arithmetic, or use a [spreadsheet](/en/posts/en-migrando-da-planilha-para-um-app-financeiro)).  
+- Compute the standard deviation (a bit of arithmetic, or use a [spreadsheet](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app)).  
 - Plug the numbers into the formula and get the z‑score.
 
 ## Advantages
@@ -84,11 +84,11 @@ These numbers help you decide whether to cut back, keep the pace, or push harder
 
 Getting comfortable with the z‑score doesn’t require a finance degree—just a spreadsheet and a few minutes each month. Follow these steps, and you’ll have a clear picture of where you stand.
 
-- **Practical tip:** **Collect data** from at least 20 people in the same salary band (R$3,000‑R$8,000). Use a simple Google Sheet to log their monthly [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme).  
+- **Practical tip:** **Collect data** from at least 20 people in the same salary band (R$3,000‑R$8,000). Use a simple Google Sheet to log their monthly [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea).  
 - **Practical tip:** **Calculate the mean** by summing the column and dividing by the number of entries. The sheet’s `=AVERAGE()` function does the job instantly.  
 - **Practical tip:** **Use the built‑in STDEV.P function** (`=STDEV.P()`) to get the standard deviation, then apply the formula `=(YourValue‑Mean)/StdDev` in another column.  
 - Review the resulting z‑scores: values between –1 and 1 are “normal,” while anything outside that range deserves a closer look.  
-- Adjust your [budget](/en/posts/en-5-alternativas-ao-mobills-em-2026) or savings plan based on what the scores reveal.  
+- Adjust your [budget](/en/posts/en-5-alternatives-to-mobills-in-2026) or savings plan based on what the scores reveal.  
 - Keep the sheet updated monthly; trends become clearer over time.
 
 ## Start today

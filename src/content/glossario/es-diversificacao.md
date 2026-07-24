@@ -28,7 +28,7 @@ La diversificación es una estrategia financiera que consiste en distribuir tus 
 
 
 
-La diversificación es importante porque el mercado financiero es impredecible y puede ser afectado por muchos factores, como la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026), la política y los eventos globales. Al distribuir tus inversiones, puedes reducir el riesgo de perder [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) si uno de los activos se desempeña mal.
+La diversificación es importante porque el mercado financiero es impredecible y puede ser afectado por muchos factores, como la [economía](/es/posts/es-5-alternativas-al-mobills-en-2026), la política y los eventos globales. Al distribuir tus inversiones, puedes reducir el riesgo de perder [dinero](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) si uno de los activos se desempeña mal.
 
 ## Cómo funciona
 La diversificación funciona porque diferentes activos tienen diferentes niveles de riesgo y rendimiento. Por ejemplo, las acciones pueden ser más riesgosas que los bonos, pero también pueden ofrecer rendimientos más altos. Al combinar diferentes activos, puedes crear un portafolio que sea más estable y tenga un mejor rendimiento a largo plazo. **Consejo práctico:** es importante investigar y entender los diferentes activos antes de invertir, para asegurarte de que estás tomando decisiones informadas.

@@ -12,11 +12,11 @@ readingTime: 2
 
 ## What is IOF?
 
-IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to various financial operations: loans, exchange, insurance, and even [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) redeemed in less than 30 days.
+IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to various financial operations: loans, exchange, insurance, and even [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) redeemed in less than 30 days.
 
 ## Where IOF appears
 
-### [Investments](/en/posts/en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-) (fixed [income](/en/posts/en-montando-carteira-diversificada-com-r-500))
+### [Investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i) (fixed [income](/en/posts/en-building-a-diversified-portfolio-with-r-500))
 
 - Applies to income redeemed in less than 30 days
 - Starts at 96% on day 1 and goes to 0% on day 30

@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Wall Street es el nombre que se le da al conjunto de instituciones financieras que se concentran en el distrito financiero de Manhattan, en Nueva York. Cuando escuchas “Wall Street”, la mayoría piensa en la [bolsa de valores](/es/glossario/es-bolsa-de-valores), los grandes bancos y los fondos de inversión que deciden el rumbo de los mercados. En términos simples, es el motor que mueve la compra y venta de acciones (pedazos de una empresa) y otros activos como bonos (préstamos que hacen los gobiernos o empresas). Todo eso influye en la [economía](/es/posts/es-5-alternativas-ao-mobills-em-2026) global y, de forma indirecta, en el bolsillo de cualquier persona que tenga una cuenta de ahorros o una tarjeta de crédito.
+Wall Street es el nombre que se le da al conjunto de instituciones financieras que se concentran en el distrito financiero de Manhattan, en Nueva York. Cuando escuchas “Wall Street”, la mayoría piensa en la [bolsa de valores](/es/glossario/es-bolsa-de-valores), los grandes bancos y los fondos de inversión que deciden el rumbo de los mercados. En términos simples, es el motor que mueve la compra y venta de acciones (pedazos de una empresa) y otros activos como bonos (préstamos que hacen los gobiernos o empresas). Todo eso influye en la [economía](/es/posts/es-5-alternativas-al-mobills-en-2026) global y, de forma indirecta, en el bolsillo de cualquier persona que tenga una cuenta de ahorros o una tarjeta de crédito.
 
 ![Qué es](/images/glossario/wall-street-inline-1.webp)
 

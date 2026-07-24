@@ -31,14 +31,14 @@ To maximize your cashback, it's crucial to understand how it works and how you c
 
 
 ## Avoiding traps
-Although cashback can be a great way to save [money](/en/posts/en-30-day-rule-for-purchases), it's essential to be aware of the traps. For example, some cashback programs may have high fees or interest rates, so it's crucial to read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is not a substitute for responsible [financial management](/en/posts/en-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su). It's crucial to have a [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias) and prioritize your [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) before making purchases. You can learn more about responsible [financial management](/en/posts/en-montando-carteira-diversificada-com-r-500) on the [Banco Central do Brasil](https://www.bcb.gov.br) website.
+Although cashback can be a great way to save [money](/en/posts/en-30-day-rule-for-purchases), it's essential to be aware of the traps. For example, some cashback programs may have high fees or interest rates, so it's crucial to read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is not a substitute for responsible [financial management](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f). It's crucial to have a [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation) and prioritize your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) before making purchases. You can learn more about responsible [financial management](/en/posts/en-building-a-diversified-portfolio-with-r-500) on the [Banco Central do Brasil](https://www.bcb.gov.br) website.
 
 ![Maximizando o seu cashback](/images/posts/cashback-inteligente-3.webp)
 
 
 
 ## Start today
-Now that you know how to use cashback intelligently, it's time to start saving [money](/en/posts/en-avoid-impulse-purchases). Remember to choose a cashback program that suits your needs and read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is only part of responsible [financial management](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas). You can learn more about responsible [financial management](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) on the [Investopedia](https://www.investopedia.com) website.
+Now that you know how to use cashback intelligently, it's time to start saving [money](/en/posts/en-avoid-impulse-purchases). Remember to choose a cashback program that suits your needs and read the terms and conditions before signing up. Additionally, it's essential to remember that cashback is only part of responsible [financial management](/en/posts/en-budgeting-with-minimum-wage-practical-tips). You can learn more about responsible [financial management](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) on the [Investopedia](https://www.investopedia.com) website.
 
 ![Evitando armadilhas](/images/posts/cashback-inteligente-4.webp)
 

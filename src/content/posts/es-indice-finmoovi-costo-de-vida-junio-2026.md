@@ -45,7 +45,7 @@ En junio de 2026, el costo de vida subió 0,16 % según el IPCA general divulg
 ## Destacados del mes
 
 ### Vivienda lidera el alza  
-Con un aumento de 0,63 % en el mes y 5,85 % en 12 meses, el sector de vivienda fue el que más subió, impactando directamente el alquiler y las facturas de energía, que pesan en el [presupuesto familiar](/es/posts/es-como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-).
+Con un aumento de 0,63 % en el mes y 5,85 % en 12 meses, el sector de vivienda fue el que más subió, impactando directamente el alquiler y las facturas de energía, que pesan en el [presupuesto familiar](/es/posts/es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que-c).
 
 ### Alimentación y bebidas registra caída  
 La categoría de alimentación y bebidas retrocedió 0,24 % en el mes, aliviando un poco el bolsillo de los brasileños, aunque aún registra 3,82 % de aumento en los últimos 12 meses.
@@ -69,7 +69,7 @@ El aumento de 0,63 % en los precios de la vivienda refleja reajustes de alquil
 La reducción de 0,24 % en los precios de alimentos y bebidas disminuye el costo de las compras en el supermercado, ofreciendo un alivio temporal en los gastos mensuales.  
 
 ### ¿La inflación anual de 4,64 % sigue siendo preocupante?
-Sí, aunque el ritmo mensual sea bajo, el aumento acumulado de 4,64 % en los últimos 12 meses indica que los precios siguen subiendo, exigiendo atención al [planificación financiera](/es/posts/es-como-crear-presupuesto-personal).
+Sí, aunque el ritmo mensual sea bajo, el aumento acumulado de 4,64 % en los últimos 12 meses indica que los precios siguen subiendo, exigiendo atención al [planificación financiera](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples).
 
 ---
 **¿Quieres ver cuánto afecta la inflación a TU presupuesto? [Prueba FinMoovi gratis](https://finmoovi.com) — en 5 minutos tendrás una visión clara de a dónde va tu dinero.**

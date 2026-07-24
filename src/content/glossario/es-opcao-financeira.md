@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Una **opción** es un contrato que te da el derecho, pero no la obligación, de comprar o vender un activo (como acciones, divisas o commodities) a un precio preestablecido y dentro de un plazo determinado. Piensa en ella como una reserva de precio: pagas una pequeña suma hoy para asegurarte de que podrás comprar o vender más adelante al precio que acordaste. En el mundo de las [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su), las opciones pueden servir para proteger tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) o para intentar obtener ganancias extra sin comprometer todo tu capital.
+Una **opción** es un contrato que te da el derecho, pero no la obligación, de comprar o vender un activo (como acciones, divisas o commodities) a un precio preestablecido y dentro de un plazo determinado. Piensa en ella como una reserva de precio: pagas una pequeña suma hoy para asegurarte de que podrás comprar o vender más adelante al precio que acordaste. En el mundo de las [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar), las opciones pueden servir para proteger tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) o para intentar obtener ganancias extra sin comprometer todo tu capital.
 
 ![Qué es](/images/glossario/opcao-inline-1.webp)
 

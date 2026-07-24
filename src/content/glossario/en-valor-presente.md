@@ -34,9 +34,9 @@ In other words: receiving R$ 10,000 in 2 years is the same as receiving R$ 7,831
 
 ## What it's used for
 
-1. **Comparing [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)** with different terms
+1. **Comparing [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)** with different terms
 2. **Evaluating proposals** ("pay R$ 50,000 upfront or R$ 60,000 in 12 installments?")
-3. **Pricing** fixed-[income](/en/posts/en-montando-carteira-diversificada-com-r-500) securities
+3. **Pricing** fixed-[income](/en/posts/en-building-a-diversified-portfolio-with-r-500) securities
 4. **Business decisions** (is this project worth it?)
 
 ## Application in everyday life

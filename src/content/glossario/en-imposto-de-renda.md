@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-[Income](/en/posts/en-montando-carteira-diversificada-com-r-500) tax is a mandatory levy that all Brazilians must pay annually if their income exceeds a certain [value](/en/glossario/en-valor-financeiro). It is calculated based on the taxpayer’s annual gross income, which includes salaries, pensions, rentals, [interest](/en/glossario/en-juros) and other types of earnings. The amount of income tax varies according to the taxpayer’s income bracket, with higher earners paying a larger percentage of their salary.
+[Income](/en/posts/en-building-a-diversified-portfolio-with-r-500) tax is a mandatory levy that all Brazilians must pay annually if their income exceeds a certain [value](/en/glossario/en-valor-financeiro). It is calculated based on the taxpayer’s annual gross income, which includes salaries, pensions, rentals, [interest](/en/glossario/en-juros) and other types of earnings. The amount of income tax varies according to the taxpayer’s income bracket, with higher earners paying a larger percentage of their salary.
 
 * The exemption bracket is R$ 1.903,98 for those who earn up to R$ 1.903,98 per month  
 * The rate is 7.5% for those who earn between R$ 1.903,99 and R$ 2.826,65 per month  
@@ -47,7 +47,7 @@ Moreover, income tax can also be used as a fiscal policy tool to encourage or di
 
 ![Advantages](/images/glossario/imposto-de-renda-inline-3.webp)
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 However, income tax also carries some risks, including:
 * Higher tax burden, which can affect families’ consumption capacity  
 * Complexity of the annual adjustment declaration, which can lead to errors and fines  
@@ -66,4 +66,4 @@ Let’s look at a few practical examples of how income tax works:
 **Practical tip:** Remember that income tax can be deducted from your salary, which can lower your tax burden. Also, consider deducting medical and educational expenses from your tax return.
 
 ## Start today
-Now that you understand better how income tax works, it’s time to start [planning](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) your annual adjustment declaration. Remember that income tax is a legal obligation, and evasion can lead to serious consequences. Also, keep in mind that income tax can be used as a fiscal policy tool to encourage or discourage certain economic activities. **Practical tip:** Start planning your annual declaration early to avoid mistakes and fines. You might want to try a [personal finance](/en/posts/en-30-day-rule-for-purchases) app—it’s like a friend helping you keep track of your expenses and income, making the annual filing much smoother.
+Now that you understand better how income tax works, it’s time to start [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) your annual adjustment declaration. Remember that income tax is a legal obligation, and evasion can lead to serious consequences. Also, keep in mind that income tax can be used as a fiscal policy tool to encourage or discourage certain economic activities. **Practical tip:** Start planning your annual declaration early to avoid mistakes and fines. You might want to try a [personal finance](/en/posts/en-30-day-rule-for-purchases) app—it’s like a friend helping you keep track of your expenses and income, making the annual filing much smoother.

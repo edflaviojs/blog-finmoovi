@@ -23,7 +23,7 @@ Bonus is an extra payment that the company offers to the employee, usually tied 
 
 ![What it is](/images/glossario/bonus-inline-1.webp)
 
-- Can be paid in cash, [shares](/en/glossario/en-acoes) or even [benefits](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) such as trips.  
+- Can be paid in cash, [shares](/en/glossario/en-acoes) or even [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) such as trips.  
 - Usually calculated as a percentage of the salary or as a predefined fixed [value](/en/glossario/en-valor-financeiro).  
 - The payment can be one‑off (for example, when closing a large contract) or recurring (monthly, quarterly).
 

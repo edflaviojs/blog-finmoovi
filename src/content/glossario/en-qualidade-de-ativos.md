@@ -45,9 +45,9 @@ Focusing on quality brings benefits that go beyond the wallet. First, you reduce
 - Greater predictability in monthly budgets.  
 - Building a history of smart purchases that boosts self‑confidence.  
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 
-Despite the advantages, the pursuit of quality can bring some challenges. The main risk is falling into the “high price = better” trap. Not everything that [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) more has superior quality; some brands charge only for the name. Moreover, focusing too much on quality can postpone important decisions, such as investing money that sits idle while waiting for the “perfect option.”  
+Despite the advantages, the pursuit of quality can bring some challenges. The main risk is falling into the “high price = better” trap. Not everything that [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) more has superior quality; some brands charge only for the name. Moreover, focusing too much on quality can postpone important decisions, such as investing money that sits idle while waiting for the “perfect option.”  
 
 - **Overvaluation:** paying more for a product that doesn’t deliver the promised benefit.  
 - **Decision paralysis:** getting stuck in analysis and missing opportunities.  
@@ -67,7 +67,7 @@ Another example: a salary of R$7.000 and the decision to subscribe to an interne
 - **Plan X:** R$80/month, limited speed, frequent outages.  
 - **Plan Y:** R$150/month, high speed and 24‑hour support.  
 
-With Plan Y, you avoid wasting time on support calls and ensure your home office runs without interruptions, which can represent a gain of R$300‑[R$500](/en/posts/en-montando-carteira-diversificada-com-r-500) per month in productivity.  
+With Plan Y, you avoid wasting time on support calls and ensure your home office runs without interruptions, which can represent a gain of R$300‑[R$500](/en/posts/en-building-a-diversified-portfolio-with-r-500) per month in productivity.  
 
 **Practical tip:** Evaluate the total cost of ownership (CTP) before buying; include price, maintenance and useful life span.  
 

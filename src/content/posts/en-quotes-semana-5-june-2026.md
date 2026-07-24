@@ -41,7 +41,7 @@ A practical tip for you, individual investor, is to diversify your investments. 
 
 ![Practical Tip for Individual Investors](/images/posts/en-quotes-semana-5-june-2026-inline-3.webp)
 
-In addition, it is important to have constant monitoring of your investments. [FinMoovi](/en/posts/en-5-alternativas-ao-mobills-em-2026) is a tool that can help you do this, allowing you to track your investments in multiple currencies and obtain valuable insights to make informed decisions.
+In addition, it is important to have constant monitoring of your investments. [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026) is a tool that can help you do this, allowing you to track your investments in multiple currencies and obtain valuable insights to make informed decisions.
 
 ## What to Expect for the Next Week
 
@@ -52,4 +52,4 @@ Remember that the financial market is volatile and can change quickly. Therefore
 So, folks? What did you think of the weekly summary? Do you have any questions or comments? Leave them below!
 
 ---
-**Ready to track your [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)? Try [FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**
+**Ready to track your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)? Try [FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

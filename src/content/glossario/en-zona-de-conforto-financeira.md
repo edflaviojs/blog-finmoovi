@@ -12,7 +12,7 @@ readingTime: 2
 
 ## What is Financial Comfort Zone?
 
-It's the state where your finances are organized and you don't live in fear of the end of the month. It means having: [expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) under control, emergency reserve formed, debts paid off and [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) growing.
+It's the state where your finances are organized and you don't live in fear of the end of the month. It means having: [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) under control, emergency reserve formed, debts paid off and [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) growing.
 
 ## The 5 pillars of the financial comfort zone
 
@@ -24,7 +24,7 @@ It's the state where your finances are organized and you don't live in fear of t
 ### 2. Complete emergency reserve
 
 - 6 to 12 months of expenses saved
-- In an [investment](/en/posts/en-montando-carteira-diversificada-com-r-500) with daily [liquidity](/en/glossario/en-liquidez)
+- In an [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500) with daily [liquidity](/en/glossario/en-liquidez)
 
 ### 3. No expensive debts
 

@@ -31,7 +31,7 @@ Ejemplo: financiación de R$ 200.000 en 30 años al 10% a.a.
 ## Cuándo vale la pena pagar
 
 ✅ Vale la pena:
-- Los intereses de la deuda son mayores que el [rendimiento](/es/posts/es-montando-carteira-diversificada-com-r-500) de las inversiones
+- Los intereses de la deuda son mayores que el [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) de las inversiones
 - Financiación inmobiliaria con [taxa](/es/glossario/es-taxa-financeira) alta (>9% a.a.)
 - Préstamos personales y consignados
 - Cuando tienes dinero parado rindiendo menos

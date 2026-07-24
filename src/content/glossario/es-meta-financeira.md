@@ -27,7 +27,7 @@ Meta financiera es un objetivo concreto para tu dinero. No es "quiero ahorrar m�
 ### Corto plazo (hasta 1 año)
 
 - Crear reserva de emergencia de R$ 15.000
-- Cancelar tarjeta de [crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) de R$ 3.000
+- Cancelar tarjeta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) de R$ 3.000
 - Juntar R$ 5.000 para viaje
 
 ### Mediano plazo (1-5 años)
@@ -39,7 +39,7 @@ Meta financiera es un objetivo concreto para tu dinero. No es "quiero ahorrar m�
 ### Largo plazo (5+ años)
 
 - [Independencia financiera](/es/glossario/es-independencia-financeira) (R$ 1.500.000)
-- [Jubilación](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) complementaria
+- [Jubilación](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica) complementaria
 - Comprar inmueble al contado
 
 ## Cómo acompañar
@@ -47,7 +47,7 @@ Meta financiera es un objetivo concreto para tu dinero. No es "quiero ahorrar m�
 1. Define el valor total y el plazo
 2. Divide por el número de meses (aporte mensual necesario)
 3. Automatiza la transferencia mensual
-4. Sigue el progreso (apps como [FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026) ayudan)
+4. Sigue el progreso (apps como [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026) ayudan)
 5. Celebra hitos intermedios (25 %, 50 %, 75 %)
 
 ## Consejo

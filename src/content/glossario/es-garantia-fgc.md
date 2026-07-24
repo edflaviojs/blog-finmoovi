@@ -12,7 +12,7 @@ readingTime: 1
 
 ## ¿Qué es la Garantía FGC?
 
-El FGC (Fondo Garantidor de Créditos) es como un seguro para tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) en bancos. Si el banco quiebra, el FGC te devuelve tu dinero — hasta R$ 250.000 por CPF por institución financiera.
+El FGC (Fondo Garantidor de Créditos) es como un seguro para tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) en bancos. Si el banco quiebra, el FGC te devuelve tu dinero — hasta R$ 250.000 por CPF por institución financiera.
 
 ## ¿Qué está cubierto?
 

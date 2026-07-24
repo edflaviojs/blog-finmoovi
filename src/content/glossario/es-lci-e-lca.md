@@ -12,7 +12,7 @@ readingTime: 2
 
 ## ¿Qué son LCI y LCA?
 
-LCI (Letra de [Crédito](/es/posts/es-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) Inmobiliario) y LCA (Letra de Crédito del Agronegocio) son inversiones de [renta fija](/es/glossario/es-renda-fixa) emitidas por bancos. La gran ventaja: son **exentas de [Impuesto a la Renta](/es/glossario/es-imposto-de-renda)** para personas físicas.
+LCI (Letra de [Crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) Inmobiliario) y LCA (Letra de Crédito del Agronegocio) son inversiones de [renta fija](/es/glossario/es-renda-fixa) emitidas por bancos. La gran ventaja: son **exentas de [Impuesto a la Renta](/es/glossario/es-imposto-de-renda)** para personas físicas.
 
 ## Diferencia entre LCI y LCA
 
@@ -50,5 +50,5 @@ En este ejemplo, rinden igual. Pero una LCI del 90% del CDI ya supera al CDB del
 ## Cuando invertir en LCI/LCA
 
 - Cuando no vas a necesitar el dinero por al menos 90 días
-- Para diversificar la [renta fija](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+- Para diversificar la [renta fija](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
 - Cuando encuentres tasas superiores al 90% del CDI

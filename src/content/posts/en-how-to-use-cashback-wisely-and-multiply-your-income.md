@@ -20,9 +20,9 @@ seo:
 
 ## Cashback as a Real Ally
 
-When you pay for a snack that [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) R$ 35.00 with a card that gives 2% back, the return looks tiny – R$ 0.70. But if you treat that amount as extra [income](/en/posts/en-montando-carteira-diversificada-com-r-500), it can become a genuine boost to your [budget](/en/posts/en-5-dicas-para-reorganizar-suas-financas-nas-ferias). The idea isn’t to expect cashback to cover everything at once, but to make every cent returned work for you.
+When you pay for a snack that [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) R$ 35.00 with a card that gives 2% back, the return looks tiny – R$ 0.70. But if you treat that amount as extra [income](/en/posts/en-building-a-diversified-portfolio-with-r-500), it can become a genuine boost to your [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation). The idea isn’t to expect cashback to cover everything at once, but to make every cent returned work for you.
 
-## Choose the Right Card and Combine [Benefits](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Choose the Right Card and Combine [Benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 
 Not every card offers the same return rate. Some give 1.5% on all purchases, others give 5% on specific categories (like supermarkets or gas stations) and 1% on the rest. The key is to align the card with your spending pattern.
 

@@ -46,4 +46,4 @@ In practice, simple interest is rare. It shows up in:
 
 ## Why It Matters
 
-Understanding the difference between simple and compound interest is fundamental. In the real world, almost everything uses compound interest—and that makes a huge difference over the long term, both for [investments](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026) and debts.
+Understanding the difference between simple and compound interest is fundamental. In the real world, almost everything uses compound interest—and that makes a huge difference over the long term, both for [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) and debts.

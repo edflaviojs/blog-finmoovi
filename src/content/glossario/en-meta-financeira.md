@@ -18,7 +18,7 @@ Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule
 
 - **S**pecific: "Save R$ 10,000" (not "save more")
 - **M**easurable: exact value that can be tracked
-- **A**chievable: possible with your current [income](/en/posts/en-montando-carteira-diversificada-com-r-500)
+- **A**chievable: possible with your current [income](/en/posts/en-building-a-diversified-portfolio-with-r-500)
 - **R**elevant: important to you
 - **T**ime-bound: with a defined deadline
 
@@ -27,7 +27,7 @@ Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule
 ### Short term (up to 1 year)
 
 - Build an [emergency fund](/en/glossario/en-reserva-de-emergencia) of R$ 15,000
-- Pay off a [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) debt of R$ 3,000
+- Pay off a [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) debt of R$ 3,000
 - Save R$ 5,000 for a trip
 
 ### Medium term (1-5 years)
@@ -39,7 +39,7 @@ Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule
 ### Long term (5+ years)
 
 - Achieve [financial independence](/en/glossario/en-independencia-financeira) (R$ 1,500,000)
-- Supplemental [retirement](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico)
+- Supplemental [retirement](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide)
 - Buy a property outright
 
 ## How to track

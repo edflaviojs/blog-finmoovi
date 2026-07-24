@@ -12,7 +12,7 @@ readingTime: 2
 
 ## What is Profit Margin?
 
-Profit margin is what's left over from each real that comes in. If a company bills R$ 100 and has R$ 80 in [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico), its profit margin is 20%. The larger the margin, the more efficient the business is.
+Profit margin is what's left over from each real that comes in. If a company bills R$ 100 and has R$ 80 in [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide), its profit margin is 20%. The larger the margin, the more efficient the business is.
 
 ## Types of Margin
 
@@ -23,7 +23,7 @@ Profit margin is what's left over from each real that comes in. If a company bil
 
 ### Operating Margin
 
-- (Revenue - Costs - Operating [Expenses](/en/posts/en-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)) ÷ Revenue × 100
+- (Revenue - Costs - Operating [Expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea)) ÷ Revenue × 100
 - Shows efficiency of operation
 
 ### Net Margin

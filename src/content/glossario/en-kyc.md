@@ -20,7 +20,7 @@ seo:
 ## What it is
 The term "KYC" is an English acronym for "Know Your Customer", which in Portuguese means "Conheça Seu Cliente". It is a process used by financial institutions to verify the identity and legitimacy of their customers, aiming to prevent illicit activities such as money laundering and terrorist [financing](/en/glossario/en-financiamento). In short, KYC is a way to ensure that financial institutions are dealing with real, legitimate people, not criminals or fraudsters.
 
-Basically, KYC involves collecting and verifying personal and financial information from customers, such as name, address, date of birth, CPF number, [income](/en/posts/en-montando-carteira-diversificada-com-r-500), and occupation. This information is then checked against government databases and other sources to ensure it is accurate and up‑to‑date.
+Basically, KYC involves collecting and verifying personal and financial information from customers, such as name, address, date of birth, CPF number, [income](/en/posts/en-building-a-diversified-portfolio-with-r-500), and occupation. This information is then checked against government databases and other sources to ensure it is accurate and up‑to‑date.
 
 ![What it is](/images/glossario/kyc-inline-1.webp)
 
@@ -47,7 +47,7 @@ Other advantages of KYC include:
 
 
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 Although KYC is an important process for preventing illicit activities, there are also risks associated with it. **Practical tip:** one of the main risks is data breach, which can occur if the collected information is stored insecurely or accessed by unauthorized persons.
 
 Other risks include:

@@ -21,7 +21,7 @@ Bitcoin (BTC) es la primera y más conocida criptomoneda del mundo. Fue creada e
 - Existe un límite de 21 millones de bitcoins que pueden existir
 - Nuevas unidades son creadas por "minería" (computadoras resolviendo problemas matemáticos)
 
-## Bitcoin como [inversión](/es/posts/es-montando-carteira-diversificada-com-r-500)
+## Bitcoin como [inversión](/es/posts/es-montando-cartera-diversificada-con-r-500)
 
 | Ventaja | Desventaja |
 |----------|-------------|

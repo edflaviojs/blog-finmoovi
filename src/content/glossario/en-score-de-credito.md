@@ -35,7 +35,7 @@ Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vist
 - Delaying payments
 - Having a negative name (SPC/Serasa)
 - Many credit inquiries in a short time
-- Using too much of the [credit card](/en/posts/en-cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) limit
+- Using too much of the [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) limit
 
 ## How to improve your score
 

@@ -32,7 +32,7 @@ Las Debêntures son títulos de deuda emitidos por empresas. Cuando compras una 
 
 - Rendimiento generalmente mayor que CDB y Tesoro
 - Debêntures incentivadas son exentas de IR
-- [Diversificación](/es/posts/es-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) de la [renta fija](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+- [Diversificación](/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable) de la [renta fija](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
 - Plazos variados (2 a 15 años)
 
 ## Riesgos

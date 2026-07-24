@@ -40,7 +40,7 @@ Another advantage of the CDB is that it is easy to understand and access. You ca
 
 ![Advantages](/images/glossario/cdb-inline-3.webp)
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 Although the CDB is considered a moderate‑risk investment, there are some risks you should keep in mind. First, there is the risk of loss of value, especially if the bank has financial problems. In addition, there is [inflation](/en/glossario/en-inflacao) risk, which can reduce the value of your investment over time. **Practical tip:** It is important to have a long‑term investment plan and not be swayed by short‑term market fluctuations.
 
 Another risk of the CDB is credit risk, which is the risk that the bank does not pay the investment return. However, it is important to note that the CDB is regulated by the Central Bank, which means there are clear rules for its offering and commercialization. In addition, banks are required to maintain a minimum capital level to ensure investor safety.

@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Xing ling es una estrategia de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado)‑inversión que combina la disciplina del [presupuesto](/es/posts/es-5-alternativas-ao-mobills-em-2026) con la flexibilidad de los fondos de inversión de bajo costo. En términos simples, consiste en destinar una pequeña fracción de cada ingreso mensual a un “pote” de inversión automático, sin necesidad de grandes conocimientos financieros. La idea es que, al ir acumulando pequeñas cantidades, el capital crezca de forma compuesta y se convierta en una reserva para metas como la compra de un coche, la educación de los hijos o la jubilación.
+Xing ling es una estrategia de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado)‑inversión que combina la disciplina del [presupuesto](/es/posts/es-5-alternativas-al-mobills-en-2026) con la flexibilidad de los fondos de inversión de bajo costo. En términos simples, consiste en destinar una pequeña fracción de cada ingreso mensual a un “pote” de inversión automático, sin necesidad de grandes conocimientos financieros. La idea es que, al ir acumulando pequeñas cantidades, el capital crezca de forma compuesta y se convierta en una reserva para metas como la compra de un coche, la educación de los hijos o la jubilación.
 
 ![Qué es](/images/glossario/xing-ling-inline-1.webp)
 

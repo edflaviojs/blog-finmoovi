@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A hedge, in the financial world, is an investment strategy that aims to reduce the risk of losses in an [investment portfolio](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel). Imagine you have an investment in [ações](/en/glossario/en-acoes) of a technology company, but you are worried that the [valor](/en/glossario/en-valor-financeiro) of those shares could fall due to market changes. A hedge can be used to protect your investment against this potential loss. This is done by investing in an asset that tends to move in the opposite direction of your original investment, so that if the value of your investment falls, the value of the hedge rises, offsetting the loss.
+A hedge, in the financial world, is an investment strategy that aims to reduce the risk of losses in an [investment portfolio](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably). Imagine you have an investment in [ações](/en/glossario/en-acoes) of a technology company, but you are worried that the [valor](/en/glossario/en-valor-financeiro) of those shares could fall due to market changes. A hedge can be used to protect your investment against this potential loss. This is done by investing in an asset that tends to move in the opposite direction of your original investment, so that if the value of your investment falls, the value of the hedge rises, offsetting the loss.
 
 * Investments in stocks
 * Investments in bonds
@@ -30,7 +30,7 @@ It may seem complicated, but it’s like having insurance for your investment. Y
 ## How it works
 A hedge basically works like a contract between two investors, where one of them commits to buying or selling an asset at a predetermined price in the future. For example, if you have shares of a technology company and think their value may drop, you can buy a put option on those shares. If the share price falls, you can exercise the option and sell the shares at the agreed price, avoiding the loss. **Practical tip:** It’s important to understand that a hedge is not a bet against the market, but a way to manage risk.
 
-If you have a salary of R$5,000 per month and invest 10% of it in stocks, you have [R$500](/en/posts/en-montando-carteira-diversificada-com-r-500) invested. If you think the value of those stocks could drop 10% in the coming months, you can buy a hedge to protect your investment. If the stock value drops 10%, you would lose R$50, but with the hedge, you can minimize that loss.
+If you have a salary of R$5,000 per month and invest 10% of it in stocks, you have [R$500](/en/posts/en-building-a-diversified-portfolio-with-r-500) invested. If you think the value of those stocks could drop 10% in the coming months, you can buy a hedge to protect your investment. If the stock value drops 10%, you would lose R$50, but with the hedge, you can minimize that loss.
 
 ## Advantages
 Hedges have several advantages for investors. They allow investors to protect their investments against potential losses, which can be especially useful in volatile markets. In addition, hedges can be used to speculate on market movements, which can be a way to make money if you are correct. **Practical tip:** It’s important to remember that hedges also have costs, so you should assess whether the cost of the hedge is reasonable relative to the risk you are trying to mitigate.
@@ -42,7 +42,7 @@ If you have a salary of R$8,000 per month and invest 20% of it in stocks, you ha
 
 ![Advantages](/images/glossario/hedge-inline-3.webp)
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 However, hedges also have risks. If you buy a hedge and the market moves in your favor, you can lose the money you spent on the hedge. Moreover, hedges can be complex and difficult to understand, which can lead to investment mistakes. **Practical tip:** It’s important to do careful research and fully understand how the hedge works before investing.
 
 * Lose the money invested in the hedge

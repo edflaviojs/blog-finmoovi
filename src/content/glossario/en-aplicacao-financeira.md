@@ -52,7 +52,7 @@ Investing your money brings benefits that go far beyond “earning extra”. Fir
 
 Moreover, as you see your money grow, you gain confidence to take on bigger challenges, such as starting a business or taking a specialization course.
 
-## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 
 No investment is completely risk‑free, and understanding the pitfalls helps avoid unpleasant surprises. The main risk in fixed‑income investments is **credit risk**, i.e., the possibility that the issuing institution does not honor the payment. In variable‑income funds, market risk can cause the value to fluctuate significantly.  
 
