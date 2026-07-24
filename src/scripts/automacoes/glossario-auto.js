@@ -7,6 +7,7 @@
 import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
+import { getTranslationInstructions } from '../lib/translation-prompt.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -53,7 +54,8 @@ function createSlug(text) {
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
     .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '');
+    .replace(/^-|-$/g, '')
+    .substring(0, 60);
 }
 
 async function generateTermContent(termData) {
@@ -95,23 +97,27 @@ async function translateTerm(termData, ptContent, targetLang) {
   const langNames = { en: 'English', es: 'Spanish' };
   const langName = langNames[targetLang];
 
-  const prompt = `
-Translate the following financial glossary entry to ${langName}.
-Keep the same structure and formatting. Keep financial term names that are universal (CDI, ETF, IPCA) as-is.
-Convert R$ examples to approximate USD equivalents for English, or keep R$ for Spanish.
+  const instructions = getTranslationInstructions(langName, {
+    brandName: config.brand?.name || 'FinMoovi',
+    appUrl: config.app?.url?.replace('https://', '') || 'app.finmoovi.com',
+    extraInstructions: `Keep financial term names that are universal (CDI, ETF, IPCA) as-is.
 
-Original term: ${termData.term}
-Original definition: ${ptContent.definition}
-Original content:
-${ptContent.content}
-
-Respond in this exact format:
+IMPORTANT: For this glossary entry, use the following response format INSTEAD of the one above:
 ---TERM---
 [translated term name, or keep original if it's a universal acronym]
 ---DEFINICAO---
 [translated definition]
 ---CONTEUDO---
-[translated content in markdown]
+[translated content in markdown]`,
+  });
+
+  const prompt = `${instructions}
+
+---ORIGINAL GLOSSARY ENTRY---
+Original term: ${termData.term}
+Original definition: ${ptContent.definition}
+Original content:
+${ptContent.content}
 `;
 
   const result = await generateText(prompt, { maxTokens: 2000, temperature: 0.3 });

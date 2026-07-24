@@ -11,6 +11,7 @@ import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.j
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
+import { getTranslationInstructions } from '../lib/translation-prompt.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -199,26 +200,15 @@ async function translatePost(post, targetLang) {
   const langNames = { en: 'English', es: 'Spanish' };
   const langName = langNames[targetLang];
 
-  const prompt = `
-Translate the following blog post to ${langName}. Keep the same tone, style, and structure.
-Do NOT translate brand names (${config.app.name}, Smart Capture). Keep markdown formatting intact.
-Keep all image markdown (![alt](url)) exactly as-is, do not modify image paths.
-Keep the CTA link to ${config.app.name.toLowerCase()}.com as-is.
+  const instructions = getTranslationInstructions(langName, {
+    brandName: config.brand.name || config.app?.name || 'FinMoovi',
+    appUrl: config.app?.url?.replace('https://', '') || 'app.finmoovi.com',
+    extraInstructions: `Do NOT translate feature names (Smart Capture).`,
+  });
 
-Respond in this exact format:
----TITULO---
-[translated title]
----META---
-[translated meta description]
----HEADLINE---
-[translated ticker headline, max 40 characters]
----KEYWORDS---
-[translated keywords, comma separated]
----CONTEUDO---
-[translated content in markdown]
+  const prompt = `${instructions}
 
-Original post:
-
+---ORIGINAL POST---
 Title: ${post.title}
 Meta: ${post.meta}
 Ticker headline: ${post.headline || post.title.slice(0, 40)}

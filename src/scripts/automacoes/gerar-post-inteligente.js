@@ -9,6 +9,7 @@ import { generateText, generateCoverImage, generateInlineImage } from '../apis/k
 import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
 import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
+import { getTranslationInstructions } from '../lib/translation-prompt.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readFileSync, readdirSync } from 'fs';
@@ -296,22 +297,14 @@ async function translatePost(post, targetLang) {
   const langNames = { en: 'English', es: 'Spanish' };
   const langName = langNames[targetLang];
 
-  const prompt = `Translate the following blog post to ${langName}. Keep same tone and style.
-Do NOT translate brand names (${config.brand.name}). Keep markdown formatting intact.
+  const instructions = getTranslationInstructions(langName, {
+    brandName: config.brand.name,
+    appUrl: config.app.url.replace('https://', ''),
+  });
 
-Respond in this exact format:
----TITULO---
-[translated title]
----META---
-[translated meta description]
----HEADLINE---
-[translated ticker headline, max 40 characters]
----KEYWORDS---
-[translated keywords, comma separated]
----CONTEUDO---
-[translated content in markdown]
+  const prompt = `${instructions}
 
-Original post:
+---ORIGINAL POST---
 Title: ${post.title}
 Ticker headline: ${post.headline || post.title.slice(0, 40)}
 Content:

@@ -9,6 +9,7 @@ import { config } from '../../../site.config.ts';
 import { generateText, generateCoverImage, generateInlineImage } from '../apis/kie-ai.js';
 import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
+import { getTranslationInstructions } from '../lib/translation-prompt.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -64,21 +65,16 @@ async function insertInlineImages(content, slugBase) {
 
 async function translatePost(post, targetLang) {
   const langNames = { en: 'English', es: 'Spanish' };
-  const prompt = `Translate the following blog post to ${langNames[targetLang]}. Keep tone, style, markdown, image paths, and brand names intact.
+  const langName = langNames[targetLang];
 
-Respond in this format:
----TITULO---
-[translated title]
----META---
-[translated meta description]
----HEADLINE---
-[translated ticker headline, max 40 characters]
----KEYWORDS---
-[translated keywords, comma separated]
----CONTEUDO---
-[translated content]
+  const instructions = getTranslationInstructions(langName, {
+    brandName: config.brand.name,
+    appUrl: config.app.url.replace('https://', ''),
+  });
 
-Original:
+  const prompt = `${instructions}
+
+---ORIGINAL POST---
 Title: ${post.title}
 Meta: ${post.meta}
 Ticker headline: ${post.headline || post.title.slice(0, 40)}
