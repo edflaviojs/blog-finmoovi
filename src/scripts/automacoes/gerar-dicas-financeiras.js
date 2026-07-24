@@ -10,7 +10,7 @@ import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.j
 import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
-import { fixStaleYear } from '../lib/year-guard.js';
+import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -29,7 +29,7 @@ const FALLBACK_TOPICS = [
   'como criar o hábito de poupar',
   'como reduzir gastos fixos mensais',
   'como organizar finanças de casal',
-  'como fazer renda extra em 2025',
+  `como fazer renda extra em ${CURRENT_YEAR}`,
   'como sair das dívidas em 6 meses',
   'como ensinar finanças para crianças',
   'como planejar uma viagem sem se endividar',

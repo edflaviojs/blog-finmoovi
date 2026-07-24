@@ -41,7 +41,7 @@ const CALENDARIO_FINANCEIRO = [
   { month: 11, day: 1, topic: 'guia definitivo da Black Friday: o que realmente vale a pena', keywords: ['black friday', 'melhores ofertas', 'black friday dicas'] },
   { month: 11, day: 15, topic: 'como usar o 13º salário de forma inteligente', keywords: ['13º salário', 'como usar décimo terceiro', 'investir 13'] },
   { month: 12, day: 1, topic: 'como organizar as finanças para o Natal sem dívidas', keywords: ['natal sem dívidas', 'presente natal barato', 'orçamento natal'] },
-  { month: 12, day: 15, topic: 'como planejar as finanças para o próximo ano', keywords: ['planejamento financeiro próximo ano', 'metas 2027', 'revisão anual'] },
+  { month: 12, day: 15, topic: 'como planejar as finanças para o próximo ano', keywords: ['planejamento financeiro próximo ano', `metas ${CURRENT_YEAR + 1}`, 'revisão anual'] },
 ];
 
 function createSlug(title) {
@@ -290,7 +290,7 @@ Responda neste formato:
       const enPost = await guardedTranslate(() => translatePost({ title, meta, headline, keywords: allKeywords, content: processedContent }, 'en'), 'en', `${slugPt} (en)`);
       const ygEn = fixStaleYear(enPost.title);
       if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); enPost.title = ygEn.text; }
-      savePost(`en-${slugPt}`, { ...enPost, keywords: enPost.keywords, content: enPost.content, imagePath, locale: 'en', today, translationKey: slugPt });
+      savePost('en-' + createSlug(enPost.title), { ...enPost, keywords: enPost.keywords, content: enPost.content, imagePath, locale: 'en', today, translationKey: slugPt });
     }
 
     // ES
@@ -300,7 +300,7 @@ Responda neste formato:
       const esPost = await guardedTranslate(() => translatePost({ title, meta, headline, keywords: allKeywords, content: processedContent }, 'es'), 'es', `${slugPt} (es)`);
       const ygEs = fixStaleYear(esPost.title);
       if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); esPost.title = ygEs.text; }
-      savePost(`es-${slugPt}`, { ...esPost, keywords: esPost.keywords, content: esPost.content, imagePath, locale: 'es', today, translationKey: slugPt });
+      savePost('es-' + createSlug(esPost.title), { ...esPost, keywords: esPost.keywords, content: esPost.content, imagePath, locale: 'es', today, translationKey: slugPt });
     }
 
     // Commit por whitelist (push fica com o workflow).

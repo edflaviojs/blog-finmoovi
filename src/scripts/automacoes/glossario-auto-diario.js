@@ -178,15 +178,13 @@ ${ptPost.content}
 `, 'utf-8');
 
     // Gerar versões em inglês e espanhol (texto apenas, reutiliza imagem) — só os locales do config
-    const enSlug = sanitizeFilename(`en-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}`);
-    const esSlug = sanitizeFilename(`es-${selectedTerm.toLowerCase().replace(/\s+/g, '-')}`);
-    const enFilename = `${enSlug}.md`;
-    const esFilename = `${esSlug}.md`;
 
     if (config.locales.includes('en')) {
     console.log('⏳ Aguardando 30s para evitar rate limit...');
     await new Promise(r => setTimeout(r, 30000));
     const enPost = await generateGlossaryTerm(selectedTerm, 'en');
+    const enSlug = sanitizeFilename('en-' + slugify(enPost.title));
+    const enFilename = `${enSlug}.md`;
 
     writeFileSync(join(GLOSSARIO_DIR, enFilename), `---
 term: "${selectedTerm}"
@@ -215,6 +213,8 @@ ${enPost.content}
     console.log('⏳ Aguardando 30s para evitar rate limit...');
     await new Promise(r => setTimeout(r, 30000));
     const esPost = await generateGlossaryTerm(selectedTerm, 'es');
+    const esSlug = sanitizeFilename('es-' + slugify(esPost.title));
+    const esFilename = `${esSlug}.md`;
 
     writeFileSync(join(GLOSSARIO_DIR, esFilename), `---
 term: "${selectedTerm}"

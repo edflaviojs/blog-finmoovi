@@ -432,7 +432,7 @@ Responda EXATAMENTE neste formato:
       const enPost = await guardedTranslate(() => translatePost({ title, meta, headline, keywords: allKeywords, processedContent: processedContentPt }, 'en'), 'en', `${slugPt} (en)`);
       const ygEn = fixStaleYear(enPost.title);
       if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); enPost.title = ygEn.text; }
-      savePost(`en-${slugPt}`, {
+      savePost('en-' + createSlug(enPost.title), {
         title: enPost.title,
         meta: enPost.meta,
         headline: enPost.headline,
@@ -454,7 +454,7 @@ Responda EXATAMENTE neste formato:
       const esPost = await guardedTranslate(() => translatePost({ title, meta, headline, keywords: allKeywords, processedContent: processedContentPt }, 'es'), 'es', `${slugPt} (es)`);
       const ygEs = fixStaleYear(esPost.title);
       if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); esPost.title = ygEs.text; }
-      savePost(`es-${slugPt}`, {
+      savePost('es-' + createSlug(esPost.title), {
         title: esPost.title,
         meta: esPost.meta,
         headline: esPost.headline,
