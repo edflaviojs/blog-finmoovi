@@ -1,0 +1,65 @@
+name: "Fix i18n Content (Daily Batch)"
+
+on:
+  schedule:
+    - cron: '30 8 * * 1-5'  # Weekdays at 8:30 UTC
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: 'Number of files to fix per run'
+        required: false
+        default: '20'
+      dry_run:
+        description: 'Dry run (no commit)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  fix-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run content fix batch
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          BATCH_SIZE: ${{ inputs.batch_size || '20' }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        run: node scripts/fix-i18n-content-batch.js
+
+      - name: Commit fixes
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            COUNT=$(git diff --staged --name-only | wc -l)
+            git commit -m "fix(i18n): daily batch — adapt ${COUNT} files for international audience"
+            git push
+          fi
