@@ -1,0 +1,59 @@
+name: "i18n Gate (PR Check)"
+
+on:
+  pull_request:
+    paths:
+      - 'src/content/posts/**'
+      - 'src/content/glossario/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run i18n validation
+        run: npm run validate:i18n
+
+      - name: Check new files for PT slug patterns
+        run: |
+          # Get list of new/renamed EN/ES content files in this PR
+          NEW_FILES=$(git diff --name-only --diff-filter=AR origin/main... -- 'src/content/posts/en-*' 'src/content/posts/es-*' 'src/content/glossario/en-*' 'src/content/glossario/es-*')
+
+          if [ -z "$NEW_FILES" ]; then
+            echo "No new EN/ES content files in this PR."
+            exit 0
+          fi
+
+          echo "Checking new EN/ES files for PT slug patterns..."
+          ISSUES=0
+
+          PT_WORDS="para|como|nas|nos|voce|dicas|financeiro|financeira|orcamento|investimentos|economizar|poupar|gastos|renda|cartao|credito|debito|previdencia"
+
+          for FILE in $NEW_FILES; do
+            BASENAME=$(basename "$FILE" .md)
+            # Remove locale prefix for checking
+            SLUG_BODY=$(echo "$BASENAME" | sed 's/^en-//;s/^es-//')
+
+            if echo "$SLUG_BODY" | grep -qE "($PT_WORDS)"; then
+              echo "  ❌ $FILE — slug contains PT words"
+              ISSUES=$((ISSUES + 1))
+            fi
+          done
+
+          if [ $ISSUES -gt 0 ]; then
+            echo ""
+            echo "⚠️ $ISSUES file(s) have PT words in EN/ES slug."
+            echo "Slugs should be derived from the translated title."
+            echo "Check that your generator script uses createSlug(translatedTitle)."
+            exit 1
+          fi
+
+          echo "✅ All new EN/ES files have proper locale slugs."
