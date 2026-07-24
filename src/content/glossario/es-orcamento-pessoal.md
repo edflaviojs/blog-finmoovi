@@ -4,6 +4,7 @@ image: "/images/glossario/es-orcamento-pessoal.webp"
 definition: "Un plan financiero que organiza ingresos y gastos, ayudándote a entender a dónde va tu dinero y cómo ahorrar más."
 category: "basico"
 locale: "es"
+translationKey: "glossario-orcamento-pessoal"
 relatedTerms: ["Reserva de Emergência", "Regra 50-30-20", "Controle Financeiro"]
 publishedAt: 2025-05-10
 readingTime: 1

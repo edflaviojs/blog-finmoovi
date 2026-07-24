@@ -4,6 +4,7 @@ image: "/images/glossario/en-dividendos.webp"
 definition: "A portion of a company's profits distributed to shareholders. A form of passive income from stock investments."
 category: "investimentos"
 locale: "en"
+translationKey: "glossario-dividendos"
 relatedTerms: ["Ações", "Renda Variável", "Dividend Yield"]
 publishedAt: 2025-05-10
 readingTime: 1

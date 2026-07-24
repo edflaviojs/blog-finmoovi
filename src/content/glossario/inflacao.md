@@ -6,6 +6,7 @@ category: "basico"
 relatedTerms: ["IPCA", "Selic", "Poder de Compra"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-inflacao"
 readingTime: 1
 ---
 

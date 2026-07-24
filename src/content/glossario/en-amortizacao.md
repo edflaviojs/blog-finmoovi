@@ -4,6 +4,7 @@ image: "/images/glossario/en-amortizacao.webp"
 definition: "The gradual reduction of a debt through periodic payments that cover both principal and interest."
 category: "credito"
 locale: "en"
+translationKey: "glossario-amortizacao"
 relatedTerms: ["Juros Compostos", "Financiamento", "Tabela SAC"]
 publishedAt: 2025-05-10
 readingTime: 1

@@ -4,6 +4,7 @@ image: "/images/glossario/en-wealth-management.webp"
 definition: "Professional financial advisory service for high-net-worth individuals, covering investments, tax planning, and estate planning."
 category: "investimentos"
 locale: "en"
+translationKey: "glossario-wealth-management"
 relatedTerms: ["Patrimônio Líquido", "Diversificação", "Previdência Privada"]
 publishedAt: 2025-05-10
 readingTime: 1

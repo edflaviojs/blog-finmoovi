@@ -4,6 +4,7 @@ image: "/images/glossario/en-juros-compostos.webp"
 definition: "Interest calculated on both the initial principal and the accumulated interest from previous periods. The snowball effect of money."
 category: "basico"
 locale: "en"
+translationKey: "glossario-juros-compostos"
 relatedTerms: ["Rendimento", "CDI", "Investimento"]
 publishedAt: 2025-05-10
 readingTime: 1

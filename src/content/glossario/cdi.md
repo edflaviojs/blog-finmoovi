@@ -6,6 +6,7 @@ category: "investimentos"
 relatedTerms: ["Selic", "CDB", "Renda Fixa"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-cdi"
 readingTime: 1
 ---
 

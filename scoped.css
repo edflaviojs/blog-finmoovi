@@ -1,0 +1,36 @@
+
+.status-page[data-astro-cid-cubkmkfn]{padding:var(--space-8) 0 var(--space-16)}
+.status-header[data-astro-cid-cubkmkfn]{text-align:center;margin-bottom:var(--space-10)}
+.status-title[data-astro-cid-cubkmkfn]{font-size:var(--text-3xl);background:var(--gradient-hero);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:var(--space-3)}
+.status-subtitle[data-astro-cid-cubkmkfn]{font-size:var(--text-base);color:var(--text-secondary);max-width:560px;margin:0 auto}
+.status-pendencias[data-astro-cid-cubkmkfn]{max-width:760px;margin:0 auto var(--space-8);padding:var(--space-5) var(--space-6);background:var(--bg-secondary);border:1px solid var(--border-default);border-left:3px solid var(--accent-yellow);border-radius:var(--radius-lg)}
+.status-pendencias[data-astro-cid-cubkmkfn] h2[data-astro-cid-cubkmkfn]{font-size:var(--text-lg);margin:0 0 var(--space-3)}
+.status-pendencias[data-astro-cid-cubkmkfn] .count[data-astro-cid-cubkmkfn]{color:var(--text-secondary);font-size:var(--text-sm);font-weight:400}
+.status-pendencias[data-astro-cid-cubkmkfn] ul[data-astro-cid-cubkmkfn]{list-style:none;margin:0;padding:0}
+.status-pendencias[data-astro-cid-cubkmkfn] li[data-astro-cid-cubkmkfn]{font-size:var(--text-sm);color:var(--text-secondary);padding:var(--space-1) 0;border-bottom:1px solid var(--border-muted)}
+.status-pendencias[data-astro-cid-cubkmkfn] li[data-astro-cid-cubkmkfn]:last-child{border-bottom:none}
+.status-days[data-astro-cid-cubkmkfn]{display:flex;flex-direction:column;gap:var(--space-4);max-width:760px;margin:0 auto}
+.status-card[data-astro-cid-cubkmkfn]{padding:var(--space-5) var(--space-6);background:var(--bg-secondary);border:1px solid var(--border-default);border-radius:var(--radius-lg)}
+.status-card[data-astro-cid-cubkmkfn].has-failures{border-color:var(--accent-red)}
+.card-head[data-astro-cid-cubkmkfn]{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:var(--space-2)}
+.card-date[data-astro-cid-cubkmkfn]{font-size:var(--text-lg);margin:0}
+.card-counters[data-astro-cid-cubkmkfn]{display:flex;flex-wrap:wrap;gap:var(--space-3);font-size:var(--text-sm);color:var(--text-secondary)}
+.card-counters[data-astro-cid-cubkmkfn] .fail[data-astro-cid-cubkmkfn]{color:var(--accent-red);font-weight:600}
+.failures[data-astro-cid-cubkmkfn]{list-style:none;margin:var(--space-3) 0 0;padding:0}
+.failures[data-astro-cid-cubkmkfn] li[data-astro-cid-cubkmkfn]{padding:var(--space-1) 0;font-size:var(--text-sm)}
+.failures[data-astro-cid-cubkmkfn] a[data-astro-cid-cubkmkfn]{color:var(--accent-red);font-weight:600;text-decoration:none}
+.failures[data-astro-cid-cubkmkfn] a[data-astro-cid-cubkmkfn]:hover{text-decoration:underline}
+details[data-astro-cid-cubkmkfn]{margin-top:var(--space-3);border-top:1px solid var(--border-muted);padding-top:var(--space-2)}
+summary[data-astro-cid-cubkmkfn]{cursor:pointer;font-size:var(--text-sm);color:var(--text-secondary);user-select:none}
+summary[data-astro-cid-cubkmkfn]:hover{color:var(--text-primary, #f0f6fc)}
+details[data-astro-cid-cubkmkfn] ul[data-astro-cid-cubkmkfn]{list-style:none;margin:var(--space-2) 0 0;padding:0 0 0 var(--space-4)}
+details[data-astro-cid-cubkmkfn] li[data-astro-cid-cubkmkfn]{font-size:var(--text-sm);color:var(--text-secondary);padding:var(--space-1) 0}
+details[data-astro-cid-cubkmkfn] a[data-astro-cid-cubkmkfn]{color:var(--text-link);text-decoration:none}
+details[data-astro-cid-cubkmkfn] a[data-astro-cid-cubkmkfn]:hover{text-decoration:underline}
+.time[data-astro-cid-cubkmkfn]{color:var(--text-tertiary, #8b949e);font-size:var(--text-xs, .75rem);margin-left:var(--space-2)}
+.tag[data-astro-cid-cubkmkfn]{display:inline-block;margin-left:var(--space-2);font-size:var(--text-xs, .75rem);color:var(--text-tertiary, #8b949e);background:var(--bg-primary);border:1px solid var(--border-default);border-radius:10px;padding:0 8px}
+.empty-line[data-astro-cid-cubkmkfn]{color:var(--text-tertiary, #8b949e);font-size:var(--text-sm);margin:0}
+.status-empty[data-astro-cid-cubkmkfn]{text-align:center;max-width:480px;margin:var(--space-12) auto;padding:var(--space-10) var(--space-6);background:var(--bg-secondary);border:1px dashed var(--border-default);border-radius:var(--radius-lg)}
+.status-empty-icon[data-astro-cid-cubkmkfn]{font-size:2.5rem;margin:0 0 var(--space-3)}
+.status-empty-title[data-astro-cid-cubkmkfn]{font-size:var(--text-lg);font-weight:600;margin:0 0 var(--space-2)}
+.status-empty-text[data-astro-cid-cubkmkfn]{color:var(--text-secondary);font-size:var(--text-sm);margin:0}

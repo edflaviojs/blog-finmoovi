@@ -6,6 +6,7 @@ category: "credito"
 relatedTerms: ["Amortização", "Juros Compostos", "Score de Crédito"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-financiamento"
 readingTime: 1
 ---
 

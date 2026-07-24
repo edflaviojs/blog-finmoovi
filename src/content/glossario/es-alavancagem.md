@@ -3,6 +3,7 @@ term: "Alavancagem"
 definition: "La alavancagem es una estrategia financiera que implica el uso de préstamos o otros recursos para aumentar el potencial de retorno sobre una inversión. Esto permite a los inversores ampliar sus oportunidades de beneficio, pero también aumenta el riesgo de pérdidas."
 category: "mercado"
 locale: "es"
+translationKey: "glossario-alavancagem"
 image: "/images/glossario/alavancagem.webp"
 relatedTerms: ["Risco","Investimento","Dívida"]
 publishedAt: 2026-06-13

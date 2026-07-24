@@ -6,6 +6,7 @@ category: "mercado"
 relatedTerms: ["Juros Compostos", "Selic", "Tesouro Direto"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-valor-presente"
 readingTime: 2
 ---
 

@@ -4,6 +4,7 @@ image: "/images/glossario/es-cambio.webp"
 definition: "El intercambio de una moneda por otra. El tipo de cambio determina cuánto vale una moneda en relación con otra."
 category: "basico"
 locale: "es"
+translationKey: "glossario-cambio"
 relatedTerms: ["IOF", "Diversificação", "IPCA"]
 publishedAt: 2025-05-10
 readingTime: 2

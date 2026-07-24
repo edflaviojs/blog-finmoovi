@@ -4,6 +4,7 @@ image: "/images/glossario/es-spread-bancario.webp"
 definition: "El spread bancario es la diferencia entre el valor que un banco paga para prestar dinero y el valor que cobra para prestar el mismo dinero. Esto significa que los bancos ganan dinero con la diferencia entre esas dos tasas."
 category: "credito"
 locale: "es"
+translationKey: "glossario-spread-bancario"
 relatedTerms: ["Taxa de juros","Selic","IOF"]
 publishedAt: 2026-06-04
 ---

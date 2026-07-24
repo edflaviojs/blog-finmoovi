@@ -4,6 +4,7 @@ image: "/images/glossario/en-score-de-credito.webp"
 definition: "A numerical score that indicates the probability of a person paying their bills on time. Ranges from 0 to 1000 in Brazil."
 category: "credito"
 locale: "en"
+translationKey: "glossario-score-de-credito"
 relatedTerms: ["Financiamento", "Juros Compostos", "Cheque Especial"]
 publishedAt: 2025-05-10
 readingTime: 2

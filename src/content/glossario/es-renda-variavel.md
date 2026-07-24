@@ -4,6 +4,7 @@ image: "/images/glossario/es-renda-variavel.webp"
 definition: "Inversiones donde los retornos no están garantizados y dependen de las condiciones del mercado. Ejemplos: acciones, fondos inmobiliarios, ETFs."
 category: "investimentos"
 locale: "es"
+translationKey: "glossario-renda-variavel"
 relatedTerms: ["Ações", "Fundos Imobiliários", "Bolsa de Valores"]
 publishedAt: 2025-05-10
 readingTime: 1

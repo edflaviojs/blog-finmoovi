@@ -6,6 +6,7 @@ category: "investimentos"
 relatedTerms: ["Ações", "Fundos Imobiliários", "Bolsa de Valores"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-renda-variavel"
 readingTime: 1
 ---
 

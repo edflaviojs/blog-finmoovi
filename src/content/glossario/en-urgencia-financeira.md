@@ -4,6 +4,7 @@ image: "/images/glossario/en-urgencia-financeira.webp"
 definition: "An unexpected situation that requires immediate use of financial resources, such as medical emergencies or job loss."
 category: "basico"
 locale: "en"
+translationKey: "glossario-urgencia-financeira"
 relatedTerms: ["Reserva de Emergência", "Cheque Especial", "Orçamento Pessoal"]
 publishedAt: 2025-05-10
 readingTime: 2

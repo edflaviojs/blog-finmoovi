@@ -4,6 +4,7 @@ image: "/images/glossario/en-iof.webp"
 definition: "A federal tax on financial operations including loans, foreign exchange, insurance, and securities transactions."
 category: "impostos"
 locale: "en"
+translationKey: "glossario-iof"
 relatedTerms: ["Imposto de Renda", "CDI", "Câmbio"]
 publishedAt: 2025-05-10
 readingTime: 2

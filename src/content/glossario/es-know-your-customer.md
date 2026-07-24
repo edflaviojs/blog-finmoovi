@@ -4,6 +4,7 @@ image: "/images/glossario/es-know-your-customer.webp"
 definition: "Un proceso de verificación usado por instituciones financieras para confirmar la identidad de sus clientes y prevenir fraude y lavado de dinero."
 category: "mercado"
 locale: "es"
+translationKey: "glossario-know-your-customer"
 relatedTerms: ["Score de Crédito", "PIX", "Nubank"]
 publishedAt: 2025-05-10
 readingTime: 1

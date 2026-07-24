@@ -4,6 +4,7 @@ image: "/images/glossario/es-iof.webp"
 definition: "Un impuesto federal sobre operaciones financieras incluyendo préstamos, cambio de divisas, seguros y transacciones de valores."
 category: "impostos"
 locale: "es"
+translationKey: "glossario-iof"
 relatedTerms: ["Imposto de Renda", "CDI", "Câmbio"]
 publishedAt: 2025-05-10
 readingTime: 2

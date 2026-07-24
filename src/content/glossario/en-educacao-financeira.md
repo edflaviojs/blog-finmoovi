@@ -4,6 +4,7 @@ image: "/images/glossario/en-educacao-financeira.webp"
 definition: "The set of knowledge and skills that help you make better decisions about money, spending, saving, and investing."
 category: "basico"
 locale: "en"
+translationKey: "glossario-educacao-financeira"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]
 publishedAt: 2025-05-10
 readingTime: 2

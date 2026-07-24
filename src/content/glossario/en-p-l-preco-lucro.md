@@ -3,6 +3,7 @@ term: "P/L (Preço/Lucro)"
 definition: "The P/L (Price/Earnings) is a financial measure that indicates the price of a stock in relation to the earnings per share of the company. It helps to evaluate if the price of a stock is fair compared to the company's financial performance."
 category: "mercado"
 locale: "en"
+translationKey: "glossario-p-l-preco-lucro"
 image: "/images/glossario/p-l-preco-lucro.webp"
 relatedTerms: ["Lucro por Ação","Preço de Ação","Retorno sobre o Patrimônio Líquido"]
 publishedAt: 2026-06-09

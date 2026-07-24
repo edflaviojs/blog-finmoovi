@@ -4,6 +4,7 @@ image: "/images/glossario/es-ganho-de-capital.webp"
 definition: "La ganancia obtenida al vender un activo por más de su precio de compra. Sujeta a impuesto sobre la renta en la mayoría de los casos."
 category: "impostos"
 locale: "es"
+translationKey: "glossario-ganho-de-capital"
 relatedTerms: ["Imposto de Renda", "Ações", "Renda Variável"]
 publishedAt: 2025-05-10
 readingTime: 2

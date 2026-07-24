@@ -4,6 +4,7 @@ image: "/images/glossario/es-patrimonio-liquido.webp"
 definition: "El valor total de tus activos menos todas tus deudas y obligaciones."
 category: "basico"
 locale: "es"
+translationKey: "glossario-patrimonio-liquido"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Diversificação"]
 publishedAt: 2025-05-10
 readingTime: 2

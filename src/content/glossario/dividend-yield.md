@@ -3,6 +3,7 @@ term: "Dividend Yield"
 definition: "O Dividend Yield é uma medida que calcula a relação entre o valor dos dividendos pagos por uma empresa e o preço atual de suas ações. Isso nos ajuda a entender quanto uma ação pode render em termos de dividendos em comparação com seu preço de mercado."
 category: "mercado"
 locale: "pt"
+translationKey: "glossario-dividend-yield"
 image: "/images/glossario/dividend-yield.webp"
 relatedTerms: ["Dividendos","Ações","Rendimento"]
 publishedAt: 2026-06-11

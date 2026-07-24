@@ -4,6 +4,7 @@ image: "/images/glossario/en-renda-variavel.webp"
 definition: "Investments where returns are not guaranteed and depend on market conditions. Examples: stocks, REITs, ETFs."
 category: "investimentos"
 locale: "en"
+translationKey: "glossario-renda-variavel"
 relatedTerms: ["Ações", "Fundos Imobiliários", "Bolsa de Valores"]
 publishedAt: 2025-05-10
 readingTime: 2

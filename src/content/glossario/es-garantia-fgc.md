@@ -4,6 +4,7 @@ image: "/images/glossario/es-garantia-fgc.webp"
 definition: "Protección proporcionada por el Fondo de Garantía de Crédito que cubre hasta R$250.000 por CPF por institución en caso de quiebra bancaria."
 category: "basico"
 locale: "es"
+translationKey: "glossario-garantia-fgc"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 readingTime: 1

@@ -4,6 +4,7 @@ image: "/images/glossario/es-reserva-de-emergencia.webp"
 definition: "Dinero reservado para cubrir gastos inesperados o pérdida de ingresos. Idealmente de 3 a 6 meses de gastos esenciales."
 category: "basico"
 locale: "es"
+translationKey: "glossario-reserva-de-emergencia"
 relatedTerms: ["Liquidez", "CDB", "Tesouro Selic"]
 publishedAt: 2025-05-10
 readingTime: 1

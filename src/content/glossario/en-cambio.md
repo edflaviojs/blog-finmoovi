@@ -4,6 +4,7 @@ image: "/images/glossario/en-cambio.webp"
 definition: "The exchange of one currency for another. The exchange rate determines how much one currency is worth relative to another."
 category: "basico"
 locale: "en"
+translationKey: "glossario-cambio"
 relatedTerms: ["IOF", "Diversificação", "IPCA"]
 publishedAt: 2025-05-10
 readingTime: 2

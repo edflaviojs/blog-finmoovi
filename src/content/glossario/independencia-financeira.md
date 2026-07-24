@@ -6,6 +6,7 @@ category: "basico"
 relatedTerms: ["Patrimônio Líquido", "Dividendos", "Renda Fixa"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-independencia-financeira"
 readingTime: 2
 ---
 

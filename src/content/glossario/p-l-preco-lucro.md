@@ -3,6 +3,7 @@ term: "P/L (Preço/Lucro)"
 definition: "O P/L (Preço/Lucro) é uma medida financeira que indica o preço de uma ação em relação ao lucro por ação da empresa. Ele ajuda a avaliar se o preço de uma ação é justo em comparação com o desempenho financeiro da empresa."
 category: "mercado"
 locale: "pt"
+translationKey: "glossario-p-l-preco-lucro"
 image: "/images/glossario/p-l-preco-lucro.webp"
 relatedTerms: ["Lucro por Ação","Preço de Ação","Retorno sobre o Patrimônio Líquido"]
 publishedAt: 2026-06-09

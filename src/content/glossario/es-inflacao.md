@@ -4,6 +4,7 @@ image: "/images/glossario/es-inflacao.webp"
 definition: "El aumento general y continuo de los precios de bienes y servicios. Reduce el poder adquisitivo del dinero con el tiempo."
 category: "basico"
 locale: "es"
+translationKey: "glossario-inflacao"
 relatedTerms: ["IPCA", "Selic", "Poder de Compra"]
 publishedAt: 2025-05-10
 readingTime: 1

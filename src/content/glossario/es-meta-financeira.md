@@ -4,6 +4,7 @@ image: "/images/glossario/es-meta-financeira.webp"
 definition: "Un objetivo financiero específico y medible con un plazo definido. Ejemplos: fondo de emergencia, compra de casa, jubilación."
 category: "basico"
 locale: "es"
+translationKey: "glossario-meta-financeira"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]
 publishedAt: 2025-05-10
 readingTime: 2

@@ -4,6 +4,7 @@ image: "/images/glossario/en-ipca.webp"
 definition: "Brazil's official inflation index, measured by IBGE. It tracks the price variation of products and services consumed by families."
 category: "basico"
 locale: "en"
+translationKey: "glossario-ipca"
 relatedTerms: ["Inflação", "Selic", "Tesouro Direto"]
 publishedAt: 2025-05-10
 readingTime: 1

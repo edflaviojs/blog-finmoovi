@@ -4,6 +4,7 @@ image: "/images/glossario/es-margem-de-lucro.webp"
 definition: "El porcentaje de ingresos que queda como ganancia después de deducir todos los costos y gastos de un negocio."
 category: "basico"
 locale: "es"
+translationKey: "glossario-margem-de-lucro"
 relatedTerms: ["Orçamento Pessoal", "Dividendos", "Ações"]
 publishedAt: 2025-05-10
 readingTime: 2

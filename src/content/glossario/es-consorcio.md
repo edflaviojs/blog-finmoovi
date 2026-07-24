@@ -4,6 +4,7 @@ image: "/images/glossario/es-consorcio.webp"
 definition: "Un sistema de compra grupal donde los participantes contribuyen mensualmente a un fondo común y son seleccionados periódicamente para recibir el monto total."
 category: "credito"
 locale: "es"
+translationKey: "glossario-consorcio"
 relatedTerms: ["Financiamento", "Amortização", "Poupança"]
 publishedAt: 2025-05-10
 readingTime: 2

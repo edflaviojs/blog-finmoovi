@@ -3,6 +3,7 @@ term: "Tabela SAC vs Price"
 definition: "Explanation of Tabela SAC vs Price in the Brazilian financial context."
 category: "credito"
 locale: "en"
+translationKey: "glossario-tabela-sac-vs-price"
 relatedTerms: ["Juros","Amortização","Financiamento"]
 publishedAt: 2026-06-06
 ---

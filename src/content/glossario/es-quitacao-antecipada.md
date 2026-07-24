@@ -4,6 +4,7 @@ image: "/images/glossario/es-quitacao-antecipada.webp"
 definition: "Pagar una deuda antes de su vencimiento, generalmente con descuento en intereses. Un derecho garantizado por la ley del consumidor brasileña."
 category: "credito"
 locale: "es"
+translationKey: "glossario-quitacao-antecipada"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]
 publishedAt: 2025-05-10
 readingTime: 2

@@ -6,6 +6,7 @@ category: "investimentos"
 relatedTerms: ["Criptomoedas", "Blockchain", "Renda Variável"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-bitcoin"
 readingTime: 1
 ---
 

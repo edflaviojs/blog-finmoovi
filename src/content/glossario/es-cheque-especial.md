@@ -4,6 +4,7 @@ image: "/images/glossario/es-cheque-especial.webp"
 definition: "Una línea de crédito preaprobada vinculada a tu cuenta corriente. Una de las formas de crédito más caras en Brasil."
 category: "credito"
 locale: "es"
+translationKey: "glossario-cheque-especial"
 relatedTerms: ["Score de Crédito", "Juros Compostos", "Financiamento"]
 publishedAt: 2025-05-10
 readingTime: 2

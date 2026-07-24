@@ -6,6 +6,7 @@ category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Dividendos", "Ações"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-margem-de-lucro"
 readingTime: 2
 ---
 

@@ -6,6 +6,7 @@ category: "credito"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-tabela-sac"
 readingTime: 2
 ---
 

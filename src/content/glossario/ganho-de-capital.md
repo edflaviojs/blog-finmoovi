@@ -6,6 +6,7 @@ category: "impostos"
 relatedTerms: ["Imposto de Renda", "Ações", "Renda Variável"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-ganho-de-capital"
 readingTime: 2
 ---
 

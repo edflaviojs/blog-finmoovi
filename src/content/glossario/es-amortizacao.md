@@ -4,6 +4,7 @@ image: "/images/glossario/es-amortizacao.webp"
 definition: "La reducción gradual de una deuda mediante pagos periódicos que cubren tanto el capital como los intereses."
 category: "credito"
 locale: "es"
+translationKey: "glossario-amortizacao"
 relatedTerms: ["Juros Compostos", "Financiamento", "Tabela SAC"]
 publishedAt: 2025-05-10
 readingTime: 1

@@ -4,6 +4,7 @@ image: "/images/glossario/es-score-de-credito.webp"
 definition: "Un puntaje numérico que indica la probabilidad de que una persona pague sus cuentas a tiempo. Va de 0 a 1000 en Brasil."
 category: "credito"
 locale: "es"
+translationKey: "glossario-score-de-credito"
 relatedTerms: ["Financiamento", "Juros Compostos", "Cheque Especial"]
 publishedAt: 2025-05-10
 readingTime: 2

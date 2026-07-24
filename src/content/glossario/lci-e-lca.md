@@ -6,6 +6,7 @@ category: "investimentos"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-lci-e-lca"
 readingTime: 2
 ---
 

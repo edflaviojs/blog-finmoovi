@@ -4,6 +4,7 @@ image: "/images/glossario/en-juros-simples.webp"
 definition: "Interest calculated only on the initial principal amount. Unlike compound interest, it does not generate interest on interest."
 category: "basico"
 locale: "en"
+translationKey: "glossario-juros-simples"
 relatedTerms: ["Juros Compostos", "CDI", "Selic"]
 publishedAt: 2025-05-10
 readingTime: 2

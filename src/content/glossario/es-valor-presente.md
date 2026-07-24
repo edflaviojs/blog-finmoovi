@@ -4,6 +4,7 @@ image: "/images/glossario/es-valor-presente.webp"
 definition: "El valor actual de una suma futura de dinero, descontada a una tasa de interés específica. Un concepto fundamental en análisis financiero."
 category: "mercado"
 locale: "es"
+translationKey: "glossario-valor-presente"
 relatedTerms: ["Juros Compostos", "Selic", "Tesouro Direto"]
 publishedAt: 2025-05-10
 readingTime: 2

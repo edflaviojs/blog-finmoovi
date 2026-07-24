@@ -4,6 +4,7 @@ image: "/images/glossario/en-reserva-de-emergencia.webp"
 definition: "Money set aside to cover unexpected expenses or income loss. Ideally 3 to 6 months of essential expenses."
 category: "basico"
 locale: "en"
+translationKey: "glossario-reserva-de-emergencia"
 relatedTerms: ["Liquidez", "CDB", "Tesouro Selic"]
 publishedAt: 2025-05-10
 readingTime: 1

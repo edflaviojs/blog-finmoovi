@@ -6,6 +6,7 @@ category: "basico"
 relatedTerms: ["Reserva de Emergência", "Regra 50-30-20", "Controle Financeiro"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-orcamento-pessoal"
 readingTime: 1
 ---
 

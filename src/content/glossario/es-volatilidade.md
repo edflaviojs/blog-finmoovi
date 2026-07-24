@@ -4,6 +4,7 @@ image: "/images/glossario/es-volatilidade.webp"
 definition: "El grado de variación en el precio de un activo financiero a lo largo del tiempo. Mayor volatilidad significa mayor riesgo y retorno potencial."
 category: "mercado"
 locale: "es"
+translationKey: "glossario-volatilidade"
 relatedTerms: ["Renda Variável", "Ações", "Diversificação"]
 publishedAt: 2025-05-10
 readingTime: 2

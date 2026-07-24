@@ -4,6 +4,7 @@ image: "/images/glossario/en-financiamento.webp"
 definition: "A long-term loan for purchasing high-value assets like real estate or vehicles, where the asset serves as collateral."
 category: "credito"
 locale: "en"
+translationKey: "glossario-financiamento"
 relatedTerms: ["Amortização", "Juros Compostos", "Score de Crédito"]
 publishedAt: 2025-05-10
 readingTime: 2

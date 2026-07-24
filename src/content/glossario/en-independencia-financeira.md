@@ -4,6 +4,7 @@ image: "/images/glossario/en-independencia-financeira.webp"
 definition: "The state where your passive income covers all your living expenses without needing to work."
 category: "basico"
 locale: "en"
+translationKey: "glossario-independencia-financeira"
 relatedTerms: ["Patrimônio Líquido", "Dividendos", "Renda Fixa"]
 publishedAt: 2025-05-10
 readingTime: 2

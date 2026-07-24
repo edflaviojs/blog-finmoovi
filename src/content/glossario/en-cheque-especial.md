@@ -4,6 +4,7 @@ image: "/images/glossario/en-cheque-especial.webp"
 definition: "A pre-approved credit line linked to your checking account. One of the most expensive forms of credit in Brazil."
 category: "credito"
 locale: "en"
+translationKey: "glossario-cheque-especial"
 relatedTerms: ["Score de Crédito", "Juros Compostos", "Financiamento"]
 publishedAt: 2025-05-10
 readingTime: 2

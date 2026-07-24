@@ -4,6 +4,7 @@ image: "/images/glossario/en-garantia-fgc.webp"
 definition: "Protection provided by the Credit Guarantee Fund that covers up to R$250,000 per CPF per institution in case of bank failure."
 category: "basico"
 locale: "en"
+translationKey: "glossario-garantia-fgc"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 readingTime: 1

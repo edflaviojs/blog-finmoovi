@@ -6,6 +6,7 @@ category: "investimentos"
 relatedTerms: ["Imposto de Renda", "Tesouro Direto", "Renda Fixa"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-previdencia-privada"
 readingTime: 2
 ---
 

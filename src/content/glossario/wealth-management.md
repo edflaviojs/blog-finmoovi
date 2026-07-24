@@ -6,6 +6,7 @@ category: "investimentos"
 relatedTerms: ["Patrimônio Líquido", "Diversificação", "Previdência Privada"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-wealth-management"
 readingTime: 1
 ---
 

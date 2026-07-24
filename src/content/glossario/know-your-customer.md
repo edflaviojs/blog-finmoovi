@@ -6,6 +6,7 @@ category: "mercado"
 relatedTerms: ["Score de Crédito", "PIX", "Nubank"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-know-your-customer"
 readingTime: 1
 ---
 

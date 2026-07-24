@@ -6,6 +6,7 @@ category: "basico"
 relatedTerms: ["Reserva de Emergência", "Cheque Especial", "Orçamento Pessoal"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-urgencia-financeira"
 readingTime: 2
 ---
 

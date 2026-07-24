@@ -3,6 +3,7 @@ term: "Dividend Yield"
 definition: "The Dividend Yield is a measure that calculates the relationship between the value of dividends paid by a company and the current price of its shares. This helps us understand how much a share can yield in terms of dividends compared to its market price."
 category: "mercado"
 locale: "en"
+translationKey: "glossario-dividend-yield"
 image: "/images/glossario/dividend-yield.webp"
 relatedTerms: ["Dividendos","Ações","Rendimento"]
 publishedAt: 2026-06-11

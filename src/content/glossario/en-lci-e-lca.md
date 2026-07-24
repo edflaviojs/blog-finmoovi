@@ -4,6 +4,7 @@ image: "/images/glossario/en-lci-e-lca.webp"
 definition: "Real Estate Credit Letters (LCI) and Agribusiness Credit Letters (LCA). Fixed-income investments exempt from income tax for individuals."
 category: "investimentos"
 locale: "en"
+translationKey: "glossario-lci-e-lca"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 readingTime: 2

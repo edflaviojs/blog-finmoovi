@@ -4,6 +4,7 @@ image: "/images/glossario/es-previdencia-privada.webp"
 definition: "Un plan de inversión a largo plazo para la jubilación que complementa la seguridad social pública. Disponible como planes PGBL o VGBL."
 category: "investimentos"
 locale: "es"
+translationKey: "glossario-previdencia-privada"
 relatedTerms: ["Imposto de Renda", "Tesouro Direto", "Renda Fixa"]
 publishedAt: 2025-05-10
 readingTime: 2

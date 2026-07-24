@@ -4,6 +4,7 @@ image: "/images/glossario/en-patrimonio-liquido.webp"
 definition: "The total value of your assets minus all your debts and obligations."
 category: "basico"
 locale: "en"
+translationKey: "glossario-patrimonio-liquido"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Diversificação"]
 publishedAt: 2025-05-10
 readingTime: 2

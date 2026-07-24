@@ -3,6 +3,7 @@ term: "Bull Market e Bear Market"
 definition: "Bull Market e Bear Market são termos usados para descrever as tendências do mercado de ações, onde Bull Market representa um período de alta e otimismo, enquanto Bear Market representa um período de baixa e pessimismo."
 category: "mercado"
 locale: "pt"
+translationKey: "glossario-bull-market-e-bear-market"
 image: "/images/glossario/bull-market-e-bear-market.webp"
 relatedTerms: ["Risco","Investimento","Rentabilidade"]
 publishedAt: 2026-06-06

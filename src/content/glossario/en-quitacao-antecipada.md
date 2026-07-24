@@ -4,6 +4,7 @@ image: "/images/glossario/en-quitacao-antecipada.webp"
 definition: "Paying off a debt before its due date, usually with a discount on interest. A right guaranteed by Brazilian consumer law."
 category: "credito"
 locale: "en"
+translationKey: "glossario-quitacao-antecipada"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]
 publishedAt: 2025-05-10
 readingTime: 2

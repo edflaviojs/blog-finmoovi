@@ -4,6 +4,7 @@ image: "/images/glossario/es-lci-e-lca.webp"
 definition: "Letras de Crédito Inmobiliario (LCI) y Letras de Crédito del Agronegocio (LCA). Inversiones de renta fija exentas de impuesto para personas físicas."
 category: "investimentos"
 locale: "es"
+translationKey: "glossario-lci-e-lca"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 readingTime: 2

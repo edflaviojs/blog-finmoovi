@@ -6,6 +6,7 @@ category: "impostos"
 relatedTerms: ["Imposto de Renda", "CDI", "Câmbio"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-iof"
 readingTime: 2
 ---
 

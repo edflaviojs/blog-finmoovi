@@ -4,6 +4,7 @@ image: "/images/glossario/en-meta-financeira.webp"
 definition: "A specific, measurable financial objective with a defined deadline. Examples: emergency fund, home purchase, retirement."
 category: "basico"
 locale: "en"
+translationKey: "glossario-meta-financeira"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]
 publishedAt: 2025-05-10
 readingTime: 2

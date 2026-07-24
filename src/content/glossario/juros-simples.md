@@ -6,6 +6,7 @@ category: "basico"
 relatedTerms: ["Juros Compostos", "CDI", "Selic"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-juros-simples"
 readingTime: 2
 ---
 

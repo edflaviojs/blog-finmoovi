@@ -4,6 +4,7 @@ image: "/images/glossario/en-margem-de-lucro.webp"
 definition: "The percentage of revenue that remains as profit after deducting all costs and expenses of a business."
 category: "basico"
 locale: "en"
+translationKey: "glossario-margem-de-lucro"
 relatedTerms: ["Orçamento Pessoal", "Dividendos", "Ações"]
 publishedAt: 2025-05-10
 readingTime: 2

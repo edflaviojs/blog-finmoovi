@@ -4,6 +4,7 @@ image: "/images/glossario/es-wealth-management.webp"
 definition: "Servicio profesional de asesoría financiera para personas de alto patrimonio, cubriendo inversiones, planificación fiscal y patrimonial."
 category: "investimentos"
 locale: "es"
+translationKey: "glossario-wealth-management"
 relatedTerms: ["Patrimônio Líquido", "Diversificação", "Previdência Privada"]
 publishedAt: 2025-05-10
 readingTime: 1

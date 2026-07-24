@@ -4,6 +4,7 @@ image: "/images/glossario/en-fundos-imobiliarios.webp"
 definition: "Investment funds that invest in real estate properties or real estate-related securities, distributing rental income to shareholders."
 category: "investimentos"
 locale: "en"
+translationKey: "glossario-fundos-imobiliarios"
 relatedTerms: ["Dividendos", "Renda Variável", "Bolsa de Valores"]
 publishedAt: 2025-05-10
 readingTime: 2

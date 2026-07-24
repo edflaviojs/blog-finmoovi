@@ -4,6 +4,7 @@ image: "/images/glossario/es-financiamento.webp"
 definition: "Un préstamo a largo plazo para la compra de activos de alto valor como inmuebles o vehículos, donde el activo sirve como garantía."
 category: "credito"
 locale: "es"
+translationKey: "glossario-financiamento"
 relatedTerms: ["Amortização", "Juros Compostos", "Score de Crédito"]
 publishedAt: 2025-05-10
 readingTime: 2

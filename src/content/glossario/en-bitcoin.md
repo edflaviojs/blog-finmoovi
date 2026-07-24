@@ -4,6 +4,7 @@ image: "/images/glossario/en-bitcoin.webp"
 definition: "The first and most well-known cryptocurrency. A decentralized digital currency that operates without banks or governments."
 category: "investimentos"
 locale: "en"
+translationKey: "glossario-bitcoin"
 relatedTerms: ["Criptomoedas", "Blockchain", "Renda Variável"]
 publishedAt: 2025-05-10
 readingTime: 1

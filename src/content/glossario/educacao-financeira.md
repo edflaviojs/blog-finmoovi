@@ -6,6 +6,7 @@ category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-educacao-financeira"
 readingTime: 2
 ---
 

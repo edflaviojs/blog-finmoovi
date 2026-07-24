@@ -4,6 +4,7 @@ image: "/images/glossario/es-juros-simples.webp"
 definition: "Interés calculado solo sobre el monto del capital inicial. A diferencia del interés compuesto, no genera interés sobre interés."
 category: "basico"
 locale: "es"
+translationKey: "glossario-juros-simples"
 relatedTerms: ["Juros Compostos", "CDI", "Selic"]
 publishedAt: 2025-05-10
 readingTime: 2

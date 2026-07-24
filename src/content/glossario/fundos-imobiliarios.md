@@ -6,6 +6,7 @@ category: "investimentos"
 relatedTerms: ["Dividendos", "Renda Variável", "Bolsa de Valores"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-fundos-imobiliarios"
 readingTime: 1
 ---
 

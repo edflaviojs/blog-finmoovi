@@ -4,6 +4,7 @@ image: "/images/glossario/es-pix.webp"
 definition: "El sistema de pagos instantáneos de Brasil creado por el Banco Central. Permite transferencias gratuitas 24/7 entre cualquier cuenta bancaria."
 category: "basico"
 locale: "es"
+translationKey: "glossario-pix"
 relatedTerms: ["Câmbio", "IOF", "Score de Crédito"]
 publishedAt: 2025-05-10
 readingTime: 2

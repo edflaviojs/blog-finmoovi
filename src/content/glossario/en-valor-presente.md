@@ -4,6 +4,7 @@ image: "/images/glossario/en-valor-presente.webp"
 definition: "The current worth of a future sum of money, discounted at a specific interest rate. A fundamental concept in financial analysis."
 category: "mercado"
 locale: "en"
+translationKey: "glossario-valor-presente"
 relatedTerms: ["Juros Compostos", "Selic", "Tesouro Direto"]
 publishedAt: 2025-05-10
 readingTime: 2

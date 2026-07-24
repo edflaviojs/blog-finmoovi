@@ -6,6 +6,7 @@ category: "basico"
 relatedTerms: ["Reserva de Emergência", "Orçamento Pessoal", "Patrimônio Líquido"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-zona-de-conforto-financeira"
 readingTime: 2
 ---
 

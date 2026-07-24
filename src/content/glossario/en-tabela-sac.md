@@ -4,6 +4,7 @@ image: "/images/glossario/en-tabela-sac.webp"
 definition: "Constant Amortization System. A loan repayment method where installments decrease over time as the principal is reduced."
 category: "credito"
 locale: "en"
+translationKey: "glossario-tabela-sac"
 relatedTerms: ["Amortização", "Financiamento", "Juros Compostos"]
 publishedAt: 2025-05-10
 readingTime: 2

@@ -4,6 +4,7 @@ image: "/images/glossario/es-cdi.webp"
 definition: "Certificado de Depósito Interbancario. La tasa de referencia para inversiones de renta fija en Brasil. Sigue de cerca la tasa Selic."
 category: "investimentos"
 locale: "es"
+translationKey: "glossario-cdi"
 relatedTerms: ["Selic", "CDB", "Renda Fixa"]
 publishedAt: 2025-05-10
 readingTime: 1

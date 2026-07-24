@@ -4,6 +4,7 @@ image: "/images/glossario/es-debentures.webp"
 definition: "Títulos de deuda emitidos por empresas para captar capital. El inversor presta dinero a la empresa a cambio de intereses."
 category: "investimentos"
 locale: "es"
+translationKey: "glossario-debentures"
 relatedTerms: ["Renda Fixa", "CDI", "Tesouro Direto"]
 publishedAt: 2025-05-10
 readingTime: 2

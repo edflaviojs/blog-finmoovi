@@ -6,6 +6,7 @@ category: "basico"
 relatedTerms: ["CDI", "Renda Fixa", "CDB"]
 publishedAt: 2025-05-10
 locale: "pt"
+translationKey: "glossario-garantia-fgc"
 readingTime: 1
 ---
 

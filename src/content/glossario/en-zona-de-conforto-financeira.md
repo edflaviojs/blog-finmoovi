@@ -4,6 +4,7 @@ image: "/images/glossario/en-zona-de-conforto-financeira.webp"
 definition: "The state where a person has enough resources to cover expenses and maintain their lifestyle without financial stress."
 category: "basico"
 locale: "en"
+translationKey: "glossario-zona-de-conforto-financeira"
 relatedTerms: ["Reserva de Emergência", "Orçamento Pessoal", "Patrimônio Líquido"]
 publishedAt: 2025-05-10
 readingTime: 2
