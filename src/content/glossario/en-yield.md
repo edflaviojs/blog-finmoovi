@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-The yield, also known as yield, is a financial term that refers to the [taxa](/en/glossario/en-taxa-financeira) of return on an investment. In other words, it is the amount of money you earn relative to the [valor](/en/glossario/en-valor-financeiro) invested. For example, if you invest R$ 1,000 in an investment fund and receive R$ 50 in dividends, the yield would be 5% (R$ 50 / R$ 1,000). It’s important to understand that yield can vary depending on the type of investment and the time period the money is invested.
+The yield, also known as yield, is a financial term that refers to the [taxa](/en/glossario/en-taxa-financeira) of return on an investment. In other words, it is the amount of money you earn relative to the [valor](/en/glossario/en-valor-financeiro) invested. For example, if you invest R$ 1,000 in an [investment fund](/en/glossario/en-fundo-de-investimento) and receive R$ 50 in dividends, the yield would be 5% (R$ 50 / R$ 1,000). It’s important to understand that yield can vary depending on the type of investment and the time period the money is invested.
 
 Yield is an important measure for evaluating an investment’s performance, as it helps determine whether the investment is generating profit or not. In addition, yield can also be used to compare different investment options and choose the one that best meets your needs.
 

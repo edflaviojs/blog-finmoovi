@@ -26,7 +26,7 @@ Renta Variable es todo lo que no tiene retorno garantizado. El precio sube y baj
 ## Principales inversiones de renta variable
 
 1. **Acciones** — porciones de empresas  
-2. **Fondos Inmobiliarios (FIIs)** — cuotas de fondos que invierten en inmuebles  
+2. **[Fondos Inmobiliarios](/es/glossario/es-fundos-imobiliarios) (FIIs)** — cuotas de fondos que invierten en inmuebles  
 3. **ETFs** — fondos que replican índices  
 4. **Criptomonedas** — activos digitales descentralizados  
 5. **Derivados** — contratos futuros, opciones (avanzado)  

@@ -49,5 +49,5 @@ En este ejemplo, rinden igual. Pero una LCI del 90% del CDI ya supera al CDB del
 ## Cuando invertir en LCI/LCA
 
 - Cuando no vas a necesitar el dinero por al menos 90 días
-- Para diversificar la renta fija
+- Para diversificar la [renta fija](/es/posts/es-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 - Cuando encuentres tasas superiores al 90% del CDI

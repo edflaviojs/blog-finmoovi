@@ -11,7 +11,7 @@ readingTime: 2
 
 ## ¿Qué es Pensión Privada?
 
-La Pensión Privada es una inversión a largo plazo pensada para la jubilación. Contribuyes mensualmente y, en el futuro, retiras el [valor](/es/glossario/es-valor-financeiro) acumulado (con rendimientos). Es un complemento a la jubilación del INSS.
+La Pensión Privada es una inversión a largo plazo pensada para la [jubilación](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico). Contribuyes mensualmente y, en el futuro, retiras el [valor](/es/glossario/es-valor-financeiro) acumulado (con rendimientos). Es un complemento a la jubilación del INSS.
 
 ## PGBL vs. VGBL
 
@@ -41,7 +41,7 @@ La Pensión Privada es una inversión a largo plazo pensada para la jubilación.
 ## Ventajas
 
 - Beneficio fiscal (PGBL)
-- No entra en inventario (planificación sucesoria)
+- No entra en inventario ([planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) sucesoria)
 - Disciplina de inversión mensual
 - Alícuota del 10% después de 10 años (regresiva)
 
@@ -49,7 +49,7 @@ La Pensión Privada es una inversión a largo plazo pensada para la jubilación.
 
 - Comisiones de administración altas (muchos [fondos](/es/glossario/es-fundo-de-investimento) cobran 1-2%)
 - [Tarifa](/es/glossario/es-taxa-financeira) de carga (algunos cobran al ingresar)
-- El rendimiento puede ser inferior a invertir por cuenta propia
+- El [rendimiento](/es/posts/es-montando-carteira-diversificada-com-r-500) puede ser inferior a invertir por cuenta propia
 - Poca flexibilidad
 
 ## Consejo

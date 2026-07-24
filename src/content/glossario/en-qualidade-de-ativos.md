@@ -47,11 +47,11 @@ Focusing on quality brings benefits that go beyond the wallet. First, you reduce
 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 
-Despite the advantages, the pursuit of quality can bring some challenges. The main risk is falling into the “high price = better” trap. Not everything that costs more has superior quality; some brands charge only for the name. Moreover, focusing too much on quality can postpone important decisions, such as investing money that sits idle while waiting for the “perfect option.”  
+Despite the advantages, the pursuit of quality can bring some challenges. The main risk is falling into the “high price = better” trap. Not everything that [costs](/en/posts/en-previdencia-privada-2026-vale-a-pena-guia-pratico) more has superior quality; some brands charge only for the name. Moreover, focusing too much on quality can postpone important decisions, such as investing money that sits idle while waiting for the “perfect option.”  
 
 - **Overvaluation:** paying more for a product that doesn’t deliver the promised benefit.  
 - **Decision paralysis:** getting stuck in analysis and missing opportunities.  
-- **Imbalance:** concentrating resources on a few high‑quality items and neglecting other essential areas (like an emergency fund).  
+- **Imbalance:** concentrating resources on a few high‑quality items and neglecting other essential areas (like an [emergency fund](/en/glossario/en-reserva-de-emergencia)).  
 
 ## Practical examples
 

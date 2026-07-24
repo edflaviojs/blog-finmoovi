@@ -27,7 +27,7 @@ Del más líquido al menos líquido:
 2. Tesoro [Selic](/es/glossario/es-selic) / CDB liquidez diaria  
 3. Fondos DI  
 4. CDB con plazo  
-5. Fondos inmobiliarios  
+5. [Fondos inmobiliarios](/es/glossario/es-fundos-imobiliarios)  
 6. [Acciones](/es/glossario/es-acoes)  
 7. Inmuebles  
 

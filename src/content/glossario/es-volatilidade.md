@@ -27,7 +27,7 @@ La volatilidad es la intensidad con la que el precio de una inversión sube y ba
 
 No necesariamente. Depende de tu perfil:
 - **Conservador:** la volatilidad es estrés. Prefiere [renda fixa](/es/glossario/es-renda-fixa).
-- **Moderado:** acepta alguna oscilación a cambio de mayor retorno.
+- **Moderado:** acepta alguna oscilación a [cambio](/es/glossario/es-cambio) de mayor retorno.
 - **Arrojado:** usa la volatilidad a su favor (compra en las caídas).
 
 ## Cómo lidiar con la volatilidad

@@ -18,9 +18,9 @@ seo:
 ---
 
 ## What it is
-The term "KYC" is an English acronym for "Know Your Customer", which in Portuguese means "Conheça Seu Cliente". It is a process used by financial institutions to verify the identity and legitimacy of their customers, aiming to prevent illicit activities such as money laundering and terrorist financing. In short, KYC is a way to ensure that financial institutions are dealing with real, legitimate people, not criminals or fraudsters.
+The term "KYC" is an English acronym for "Know Your Customer", which in Portuguese means "Conheça Seu Cliente". It is a process used by financial institutions to verify the identity and legitimacy of their customers, aiming to prevent illicit activities such as money laundering and terrorist [financing](/en/glossario/en-financiamento). In short, KYC is a way to ensure that financial institutions are dealing with real, legitimate people, not criminals or fraudsters.
 
-Basically, KYC involves collecting and verifying personal and financial information from customers, such as name, address, date of birth, CPF number, income, and occupation. This information is then checked against government databases and other sources to ensure it is accurate and up‑to‑date.
+Basically, KYC involves collecting and verifying personal and financial information from customers, such as name, address, date of birth, CPF number, [income](/en/posts/en-montando-carteira-diversificada-com-r-500), and occupation. This information is then checked against government databases and other sources to ensure it is accurate and up‑to‑date.
 
 ![What it is](/images/glossario/kyc-inline-1.webp)
 

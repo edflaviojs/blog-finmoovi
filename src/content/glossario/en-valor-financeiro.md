@@ -20,7 +20,7 @@ seo:
 ## What it is
 The term “value” is fundamental in the world of finance, especially when it comes to investments and the economy. In short, value refers to the price or exchange value of an asset, such as [ações](/en/glossario/en-acoes), real estate, or even everyday products. In the investment context, an asset’s value can fluctuate based on various factors, such as supply and demand, the overall economy, and the future outlook for the specific asset. For example, if you invested R$5,000 in shares of a rapidly growing company, the value of those shares could rise to R$6,500 in a short period of time, depending on the company’s performance and market perception.
 
-Value can also be influenced by factors like inflation, interest [rates](/en/glossario/en-juros), and government policies. It’s important to understand that an asset’s value is not static and can change quickly, which can affect your investment portfolio. **Practical tip:** Always do thorough research before investing in any asset, and consider diversifying your portfolio to minimize risks.
+Value can also be influenced by factors like [inflation](/en/glossario/en-inflacao), interest [rates](/en/glossario/en-juros), and government policies. It’s important to understand that an asset’s value is not static and can change quickly, which can affect your investment portfolio. **Practical tip:** Always do thorough research before investing in any asset, and consider diversifying your portfolio to minimize risks.
 
 ![What it is](/images/glossario/valor-inline-1.webp)
 
@@ -53,7 +53,7 @@ The value of an asset can offer several advantages, especially if you invest wis
 However, the value of an asset can also involve risks, especially if you don’t fully understand the market or fail to diversify your portfolio. Here are some risks you should consider:
 * Loss risk: if the asset’s value drops, you can lose money
 * Inflation risk: if inflation is high, the asset’s value may decline
-* Liquidity risk: if you can’t sell the asset quickly, you may lose money
+* [Liquidity](/en/glossario/en-liquidez) risk: if you can’t sell the asset quickly, you may lose money
 * Credit risk: if the company or issuer of the asset can’t meet its obligations, you can lose money
 
 **Practical tip:** It’s important to understand the risks involved and take steps to minimize them, such as diversifying your portfolio and doing thorough research before investing.

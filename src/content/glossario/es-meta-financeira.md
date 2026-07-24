@@ -37,8 +37,8 @@ Meta financiera es un objetivo concreto para tu dinero. No es "quiero ahorrar m�
 
 ### Largo plazo (5+ años)
 
-- Independencia financiera (R$ 1.500.000)
-- Jubilación complementaria
+- [Independencia financiera](/es/glossario/es-independencia-financeira) (R$ 1.500.000)
+- [Jubilación](/es/posts/es-previdencia-privada-2026-vale-a-pena-guia-pratico) complementaria
 - Comprar inmueble al contado
 
 ## Cómo acompañar

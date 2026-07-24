@@ -11,7 +11,7 @@ readingTime: 1
 
 ## ¿Qué es [Presupuesto](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) Personal?
 
-Presupuesto personal es un plan que muestra cuánto dinero entra, cuánto sale y a dónde va. Es la herramienta más básica y poderosa de las finanzas personales. Sin presupuesto, estás conduciendo a ciegas.
+Presupuesto personal es un plan que muestra cuánto dinero entra, cuánto sale y a dónde va. Es la herramienta más básica y poderosa de las [finanzas personales](/es/posts/es-5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su). Sin presupuesto, estás conduciendo a ciegas.
 
 ## Cómo montar un presupuesto
 
@@ -44,8 +44,8 @@ Presupuesto personal es un plan que muestra cuánto dinero entra, cuánto sale y
 
 ## Herramientas para presupuesto
 
-- **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** — app con categorización automática por IA
-- Hoja de cálculo simple (Google Sheets)
+- **[FinMoovi](/es/posts/es-5-alternativas-ao-mobills-em-2026)** — app con [categorización automática](/es/posts/es-voce-tambem-esquece-de-anotar-seus-gastos) por IA
+- [Hoja de cálculo](/es/posts/es-migrando-da-planilha-para-um-app-financeiro) simple (Google Sheets)
 - Cuaderno y bolígrafo (¡funciona!)
 
 ## Errores comunes

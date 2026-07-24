@@ -50,12 +50,12 @@ Another important advantage is the peace of mind that comes from knowing your fi
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Although governance is essential for financial health, there are risks associated with its implementation. One of the main risks is excessive rigidity, where the financial plan becomes so restrictive that it does not allow flexibility for changes or unexpected opportunities. **Practical tip:** It is crucial to find a balance between financial discipline and flexibility for necessary adaptations.
 
-Another risk is the lack of knowledge or skills to manage finances effectively. This can lead to poor decisions, such as high‑risk investments or a lack of [diversification](/en/glossario/en-diversificacao) in investments. To mitigate these risks, it is important to seek financial education and, if necessary, consult a professional.
+Another risk is the lack of knowledge or skills to manage finances effectively. This can lead to poor decisions, such as high‑risk investments or a lack of [diversification](/en/glossario/en-diversificacao) in investments. To mitigate these risks, it is important to seek [financial education](/en/glossario/en-educacao-financeira) and, if necessary, consult a professional.
 
 
 
 ## Practical examples
-A practical example of governance in action is creating an emergency fund. Imagine you earn R$ 4.000 per month and decide you want an emergency fund that covers three months of expenses, which would be R$ 12.000. With a governance plan, you can set a goal to reach that amount within a specific period, for example, six months, and work consistently to achieve it.
+A practical example of governance in action is creating an [emergency fund](/en/glossario/en-reserva-de-emergencia). Imagine you earn R$ 4.000 per month and decide you want an emergency fund that covers three months of expenses, which would be R$ 12.000. With a governance plan, you can set a goal to reach that amount within a specific period, for example, six months, and work consistently to achieve it.
 
 Another example is expense management. If you notice you are spending too much on restaurants, you can set a limit for those expenses and find ways to reduce them, such as cooking at home more often. Personal governance helps identify areas of waste and implement changes to improve financial efficiency.
 

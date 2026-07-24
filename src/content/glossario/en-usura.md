@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Usury is a financial term that refers to the practice of charging [interest](/en/glossario/en-juros) excessively on loans or financing. This means that when you take a loan, you not only pay the [principal](/en/glossario/en-valor-financeiro) amount, but also an additional [rate](/en/glossario/en-taxa-financeira), which is the interest. Usury occurs when these rates are very high, making it difficult for the borrower to repay the debt. For example, imagine you take a loan of R$ 5,000 with an interest rate of 20% per month. That means that at the end of the month you will have to pay R$ 6,000, which can be very hard for someone who earns R$ 4,000 a month.
+Usury is a financial term that refers to the practice of charging [interest](/en/glossario/en-juros) excessively on loans or [financing](/en/glossario/en-financiamento). This means that when you take a loan, you not only pay the [principal](/en/glossario/en-valor-financeiro) amount, but also an additional [rate](/en/glossario/en-taxa-financeira), which is the interest. Usury occurs when these rates are very high, making it difficult for the borrower to repay the debt. For example, imagine you take a loan of R$ 5,000 with an interest rate of 20% per month. That means that at the end of the month you will have to pay R$ 6,000, which can be very hard for someone who earns R$ 4,000 a month.
 
 * Usury can occur in different types of loans, including personal loans, credit cards, and vehicle financing.  
 * The interest rate is one of the main factors that determine whether a loan is usurious or not.  
@@ -30,7 +30,7 @@ Usury is a serious problem in Brazil, where many people do not have access to lo
 
 ## How it works
 Usury works in such a way that the lender charges excessive interest on the loan, making it difficult for the borrower to repay the debt. This can happen in different ways, including:
-* Compound interest: this means that interest is calculated on the principal amount **and** on previously accrued interest, which can lead to a debt that grows rapidly.  
+* [Compound interest](/en/glossario/en-juros-compostos): this means that interest is calculated on the principal amount **and** on previously accrued interest, which can lead to a debt that grows rapidly.  
 * Floating interest rates: this means the rate can change over time, making it hard for the borrower to predict how much they will have to pay.  
 * Additional charges: this includes processing fees, late‑payment fees, and other charges that can increase the total amount owed.
 

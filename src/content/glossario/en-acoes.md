@@ -30,7 +30,7 @@ Stocks are a long‑term investment, because their price can fluctuate over time
 When you buy stocks, you are buying a part of the company. The price of the shares is determined by the market, i.e., by what investors are willing to pay for them. Stock prices can vary according to the company’s performance, the overall economy, and other factors. If the company is doing well, the share price tends to rise; if the company is doing poorly, the share price tends to fall.
 
 Here are some important terms you need to understand:
-* **Dividends**: payments made by the company to shareholders, usually annually, as a way of distributing profits.
+* **[Dividends](/en/glossario/en-dividendos)**: payments made by the company to shareholders, usually annually, as a way of distributing profits.
 * **Closing price**: the price of the shares at the end of the trading day.
 * **Trading volume**: the amount of shares traded in a given period.
 
@@ -38,7 +38,7 @@ Here are some important terms you need to understand:
 Stocks offer several advantages, including:
 * **Growth potential**: stocks can increase in value over time, especially if you invest in solid, well‑managed companies.
 * **Dividends**: many companies pay dividends to shareholders, which can provide a source of passive income.
-* **Liquidity**: stocks can be easily bought and sold on stock exchanges, meaning you can access your money quickly if needed.
+* **[Liquidity](/en/glossario/en-liquidez)**: stocks can be easily bought and sold on stock exchanges, meaning you can access your money quickly if needed.
 
 **Practical tip:** It’s important to diversify your investment portfolio, i.e., not put all your eggs in one basket. This means investing in different types of stocks, such as shares of companies from various sectors and sizes.
 
@@ -49,7 +49,7 @@ Stocks offer several advantages, including:
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 However, stocks also involve risks, including:
 * **Loss risk**: the value of the shares can drop, meaning you could lose money if you sell the shares for a lower price than you paid.
-* **Volatility risk**: share prices can fluctuate rapidly, which can be stressful if you’re not prepared.
+* **[Volatility](/en/glossario/en-volatilidade) risk**: share prices can fluctuate rapidly, which can be stressful if you’re not prepared.
 * **Company risk**: if the company you invested in encounters problems, the share value can decline.
 
 **Practical tip:** It’s important to do careful research before investing in stocks. This includes reading annual reports, analyzing the company’s finances, and understanding the risks and challenges the company faces.

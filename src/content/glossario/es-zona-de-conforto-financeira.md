@@ -9,7 +9,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es la zona de confort financiero?
+## ¿Qué es la zona de confort [financiero](/es/posts/es-voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)?
 
 Es el estado en el que tus finanzas están organizadas y no vives con miedo al fin de mes. Significa tener: [gastos](/es/posts/es-5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme) bajo control, reserva de emergencia constituida, deudas pagadas e inversiones creciendo.
 
@@ -34,8 +34,8 @@ Es el estado en el que tus finanzas están organizadas y no vives con miedo al f
 ### 4. Inversiones creciendo
 
 - Aportes mensuales regulares
-- Cartera diversificada
-- Rendimiento por encima de la inflación
+- [Cartera diversificada](/es/posts/es-montando-carteira-diversificada-com-r-500)
+- Rendimiento por encima de la [inflación](/es/glossario/es-inflacao)
 
 ### 5. Protección (seguros)
 

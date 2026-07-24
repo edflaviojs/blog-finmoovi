@@ -46,7 +46,7 @@ Investing in the stock exchange can be a great way to grow your wealth over time
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 However, investing in the stock exchange also involves risks. Here are some of the main risks:
 * Loss of value: stocks can decrease in value, resulting in significant losses
-* Volatility: stock prices can change quickly, making it hard to predict market performance
+* [Volatility](/en/glossario/en-volatilidade): stock prices can change quickly, making it hard to predict market performance
 * Company risk: companies can have financial or operational problems, affecting the value of their stocks
 
 **Practical tip:** It’s essential to understand the risks involved and have a clear investment plan. For example, if you earn R$ 3.000 per month and want to invest R$ 500 per month, it’s important to set an investment goal and a timeline to achieve it.

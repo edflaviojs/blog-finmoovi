@@ -43,8 +43,8 @@ Webull offers several advantages compared to traditional securities brokerages. 
 ## [Risks](/en/posts/en-cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 Like any investment, Webull also involves risks. Some of the main risks include:
 * Loss risk: You can lose money if the financial assets you bought decrease in [valor](/en/glossario/en-valor-financeiro).  
-* Volatility risk: Prices of financial assets can be volatile, meaning they can rise or fall quickly.  
-* Liquidity risk: You may have difficulty selling your financial assets quickly, which can affect the price you receive.
+* [Volatility](/en/glossario/en-volatilidade) risk: Prices of financial assets can be volatile, meaning they can rise or fall quickly.  
+* [Liquidity](/en/glossario/en-liquidez) risk: You may have difficulty selling your financial assets quickly, which can affect the price you receive.
 
 ![Advantages](/images/glossario/webull-inline-3.webp)
 
@@ -58,4 +58,4 @@ Let’s consider a practical example. Imagine you have a salary of R$ 6.000 per 
 Another example is a person who earns R$ 4.000 per month and wants to invest R$ 500 per month. They can use Webull to buy options or to invest in more conservative financial assets, such as treasury bonds. **Practical tip:** It’s important to assess your risk profile before investing. If you are more conservative, you may want to invest in safer financial assets, like treasury bonds.
 
 ## Start today
-Now that you know more about Webull and how it works, it’s time to start investing. Remember that the key to success is to start early and be consistent. **Practical tip:** Don’t be afraid to make mistakes. The important thing is to learn from them and keep investing. With Webull, you can start investing with just R$ 100 and can grow your investment portfolio over time. So, what are you waiting for? Start investing today and see how your money can grow over time.
+Now that you know more about Webull and how it works, it’s time to start investing. Remember that the key to success is to start early and be consistent. **Practical tip:** Don’t be afraid to make mistakes. The important thing is to learn from them and keep investing. With Webull, you can start investing with just R$ 100 and can grow your [investment portfolio](/en/posts/en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel) over time. So, what are you waiting for? Start investing today and see how your money can grow over time.
