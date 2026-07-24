@@ -226,17 +226,17 @@ ${body}`;
       fixed++;
       console.log(`  [${DRY_RUN ? 'DRY' : 'FIXED'}] ${entry.file}`);
 
-      // Rate limit: 30 seconds between API calls
+      // Rate limit: 60 seconds between API calls (safe margin for Groq)
       if (i < batch.length - 1) {
-        console.log(`  ... waiting 30s (rate limit) ...`);
-        await sleep(30000);
+        console.log(`  ... waiting 60s (rate limit) ...`);
+        await sleep(60000);
       }
     } catch (err) {
       console.error(`  [ERROR] ${entry.file}: ${err.message}`);
       errors++;
       // Wait longer on error (possible rate limit)
       if (i < batch.length - 1) {
-        await sleep(45000);
+        await sleep(90000);
       }
     }
   }
