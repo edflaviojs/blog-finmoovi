@@ -29,7 +29,7 @@ La semana del 15 de junio al 22 de junio de 2026 ha sido de gran importancia par
 
 En cuanto a las tasas de cambio, el dólar estadounidense (USD) se mantuvo en una tendencia de estabilidad frente al real brasileño (BRL), cerrando la semana en aproximadamente R$ 5.16. Por otro lado, el euro (EUR) experimentó una ligera apreciación, alcanzando los R$ 5.91. Estos movimientos reflejan la dinámica global de los mercados financieros y las expectativas económicas tanto en Brasil como en el exterior.
 
-La estabilidad del dólar puede ser vista como una señal positiva para la economía brasileña, ya que puede ayudar a controlar la [inflación](/es/glossario/es-inflacao) y mantener la competitividad de las exportaciones. Sin embargo, es importante tener en cuenta que las tasas de cambio pueden ser volátiles y están sujetas a cambios repentinos debido a factores políticos y económicos.
+La estabilidad del dólar puede ser vista como una señal positiva para la economía brasileña, ya que puede ayudar a controlar la [inflación](/es/glossario/es-inflacion) y mantener la competitividad de las exportaciones. Sin embargo, es importante tener en cuenta que las tasas de cambio pueden ser volátiles y están sujetas a cambios repentinos debido a factores políticos y económicos.
 
 ## Comentario sobre la [Selic](/es/glossario/es-selic) e Impacto en las Inversiones
 
@@ -43,7 +43,7 @@ Es importante considerar que las decisiones sobre la tasa Selic tienen un impact
 
 ## Consejo Práctico para el Inversor Individual
 
-Para los inversores individuales, es crucial diversificar su cartera de inversiones para minimizar los riesgos y maximizar los rendimientos. Una forma de hacerlo es considerar inversiones en múltiples monedas, lo que puede ayudar a proteger contra la [volatilidad](/es/glossario/es-volatilidade) de las tasas de cambio. Herramientas como FinMoovi pueden ser muy útiles para seguir y gestionar estas inversiones de manera eficiente. FinMoovi ofrece la posibilidad de monitorear y administrar inversiones en diferentes monedas, lo que facilita la toma de decisiones informadas y la optimización de la cartera de inversiones.
+Para los inversores individuales, es crucial diversificar su cartera de inversiones para minimizar los riesgos y maximizar los rendimientos. Una forma de hacerlo es considerar inversiones en múltiples monedas, lo que puede ayudar a proteger contra la [volatilidad](/es/glossario/es-volatilidad) de las tasas de cambio. Herramientas como FinMoovi pueden ser muy útiles para seguir y gestionar estas inversiones de manera eficiente. FinMoovi ofrece la posibilidad de monitorear y administrar inversiones en diferentes monedas, lo que facilita la toma de decisiones informadas y la optimización de la cartera de inversiones.
 
 ## Qué Esperar para la Próxima Semana
 

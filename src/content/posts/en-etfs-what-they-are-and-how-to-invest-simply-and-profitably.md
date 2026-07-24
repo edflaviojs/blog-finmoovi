@@ -19,7 +19,7 @@ seo:
 
 ## What ETFs Are
 
-[ETF](/en/glossario/en-etf) stands for **Exchange Traded Fund**, a market‑traded index fund. In simple terms, an ETF bundles a set of assets – stocks, bonds, commodities – and tracks the performance of an index, such as the Ibovespa or the S&P 500. Each ETF share can be bought or sold on the exchange just like a regular [stock](/en/glossario/en-acoes), which provides convenience and [liquidity](/en/glossario/en-liquidez).
+[ETF](/en/glossario/en-etf) stands for **Exchange Traded Fund**, a market‑traded index fund. In simple terms, an ETF bundles a set of assets – stocks, bonds, commodities – and tracks the performance of an index, such as the Ibovespa or the S&P 500. Each ETF share can be bought or sold on the exchange just like a regular [stock](/en/glossario/en-acoes), which provides convenience and [liquidity](/en/glossario/en-liquidity).
 
 > **First appearance:** “ETF” (Exchange Traded Fund) – a fund that replicates an index and trades like a stock.
 
@@ -73,7 +73,7 @@ If, instead, you placed the same amount in a [CDB](/en/glossario/en-cdb) earning
 
 ## Risks and Precautions
 
-- **[Volatility](/en/glossario/en-volatilidade)** – Stock ETFs can swing a lot in the short term. Assess your investment horizon before allocating.  
+- **[Volatility](/en/glossario/en-volatility)** – Stock ETFs can swing a lot in the short term. Assess your investment horizon before allocating.  
 - **Management fee** – Even when low, it reduces returns, especially during periods of weak index performance.  
 - **Market risk** – If the index falls, your investment will also fall. There’s no capital guarantee.  
 - **Settlement** – Although the price is immediate, the financial settlement occurs on D+2 (two business days after purchase).  

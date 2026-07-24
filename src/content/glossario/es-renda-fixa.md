@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-La renta fija es un tipo de inversión donde sabes de antemano cuál será el rendimiento que vas a recibir. A diferencia de la [renta variable](/es/glossario/es-renda-variavel) (acciones), aquí el emisor del título – ya sea el gobierno, un banco o una empresa – se compromete a pagar intereses periódicos y a devolver el capital al vencimiento. En términos simples, es como prestar tu dinero a alguien que te promete devolverte el préstamo con un “interés” acordado.
+La renta fija es un tipo de inversión donde sabes de antemano cuál será el rendimiento que vas a recibir. A diferencia de la [renta variable](/es/glossario/es-renta-variable) (acciones), aquí el emisor del título – ya sea el gobierno, un banco o una empresa – se compromete a pagar intereses periódicos y a devolver el capital al vencimiento. En términos simples, es como prestar tu dinero a alguien que te promete devolverte el préstamo con un “interés” acordado.
 
 ![Qué es](/images/glossario/renda-fixa-inline-1.webp)
 
@@ -45,7 +45,7 @@ Invertir en renta fija tiene varios puntos a favor que la hacen atractiva para l
 
 - **Previsibilidad:** Sabes exactamente cuánto ganarás, lo que facilita armar un presupuesto mensual.  
 - **[Liquidez](/es/glossario/es-liquidez):** Muchos títulos pueden venderse antes del vencimiento en el mercado secundario, aunque el precio varíe.  
-- **Diversificación:** Añadir renta fija a tu portafolio reduce la exposición a la [volatilidad](/es/glossario/es-volatilidade) de la bolsa.  
+- **Diversificación:** Añadir renta fija a tu portafolio reduce la exposición a la [volatilidad](/es/glossario/es-volatilidad) de la bolsa.  
 
 **Consejo práctico:** **Destina al menos el 20 % de tu ingreso mensual a un fondo de renta fija**; así tendrás una base estable mientras buscas oportunidades de mayor rentabilidad.
 
@@ -55,7 +55,7 @@ Aunque la renta fija es considerada segura, no está exenta de peligros. Es impo
 
 - **Riesgo de crédito:** Si el emisor (por ejemplo, una empresa) entra en default, podrías perder parte o todo tu capital.  
 - **Riesgo de tasa de interés:** Cuando suben las tasas del mercado, los títulos existentes con cupón bajo pierden valor.  
-- **[Inflación](/es/glossario/es-inflacao):** Si la inflación supera el rendimiento de tu inversión, el poder adquisitivo de tu dinero disminuye.  
+- **[Inflación](/es/glossario/es-inflacion):** Si la inflación supera el rendimiento de tu inversión, el poder adquisitivo de tu dinero disminuye.  
 
 **Consejo práctico:** **Revisa la calificación de crédito (rating) del emisor antes de comprar**; una nota alta indica menor probabilidad de impago.
 
@@ -74,7 +74,7 @@ En cada caso, el flujo de caja es predecible y puedes usar los intereses para cu
 Dar el primer paso hacia la renta fija es más fácil de lo que parece. Solo sigue estos pasos:
 
 - **Abre una cuenta en una corredora o banco que ofrezca productos de renta fija**; la mayoría permite hacerlo en línea en pocos minutos.  
-- **Define tu objetivo:** ¿Quieres ahorrar para la entrada de una casa, crear un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) o generar ingresos mensuales?  
+- **Define tu objetivo:** ¿Quieres ahorrar para la entrada de una casa, crear un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) o generar ingresos mensuales?  
 - **Elige el título adecuado:** Según tu horizonte de tiempo y tolerancia al riesgo, selecciona entre Tesouro Selic, CDBs, LCI/LCA o bonos corporativos.  
 - **Programa aportes automáticos:** Configura que un porcentaje de tu sueldo (por ejemplo, R$ 300) se transfiera automáticamente a tu inversión cada mes.  
 

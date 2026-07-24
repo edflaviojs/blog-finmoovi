@@ -25,7 +25,7 @@ IOF (Imposto sobre Operações Financeiras) es un impuesto federal que grava div
 ### Tarjeta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) internacional
 
 - 4,38% sobre compras en [moeda](/es/glossario/es-moeda) extranjera
-- Incide sobre el [valor](/es/glossario/es-valor-financeiro) total de la compra
+- Incide sobre el [valor](/es/glossario/es-valor-financiero) total de la compra
 
 ### Préstamos y financiamientos
 

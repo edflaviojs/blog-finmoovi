@@ -23,7 +23,7 @@ translate: true
 Llegamos a la mitad del año, y es hora de parar y reflexionar sobre cómo están nuestras finanzas. Es común comenzar el año con objetivos y metas claras, pero a lo largo del camino, podemos desviarnos del rumbo. Revisar tu [presupuesto](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) ahora es una excelente oportunidad para ajustar tus finanzas y garantizar que estás en el camino correcto para alcanzar tus objetivos.
 
 ## Por qué revisar el [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples)
-Revisar tu presupuesto es importante porque las cosas cambian con el tiempo. Tu salario puede haber aumentado, tus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) pueden haber cambiado, o puedes haber adquirido nuevas responsabilidades financieras. Además, la [inflación](/es/glossario/es-inflacao) puede haber afectado el [valor](/es/glossario/es-valor-financeiro) de tu dinero, haciendo necesario ajustar tus gastos e inversiones.
+Revisar tu presupuesto es importante porque las cosas cambian con el tiempo. Tu salario puede haber aumentado, tus [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) pueden haber cambiado, o puedes haber adquirido nuevas responsabilidades financieras. Además, la [inflación](/es/glossario/es-inflacion) puede haber afectado el [valor](/es/glossario/es-valor-financiero) de tu dinero, haciendo necesario ajustar tus gastos e inversiones.
 
 Por ejemplo, imagina que ganas $5.000 por mes y gastas $2.000 en alquiler, $1.000 en comida y $500 en transporte. Esto te deja $1.500 para otros gastos e inversiones. Sin embargo, si la inflación aumentó un 10% en los últimos 6 meses, el valor de tu dinero disminuyó. Necesitarás ajustar tus gastos e inversiones para mantener el mismo nivel de vida.
 
@@ -53,8 +53,8 @@ Si tienes inversiones, como [acciones](/es/glossario/es-acoes) o fondos de inver
 ## Consejos para mantener tu presupuesto en orden
 Aquí están algunos consejos para mantener tu presupuesto en orden:
 *   Prioriza tus necesidades sobre tus deseos
-*   Crea un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) para cubrir gastos inesperados
-*   Invierte en tu [educación financiera](/es/glossario/es-educacao-financeira) para tomar decisiones informadas
+*   Crea un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) para cubrir gastos inesperados
+*   Invierte en tu [educación financiera](/es/glossario/es-educacion-financiera) para tomar decisiones informadas
 *   Usa una aplicación de gestión de finanzas para ayudarte a rastrear tus gastos e inversiones
 
 ![Consejos para mantener tu presupuesto en orden](/images/posts/revisao-de-orcamento-4.webp)

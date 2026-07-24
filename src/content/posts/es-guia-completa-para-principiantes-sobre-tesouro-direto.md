@@ -20,7 +20,7 @@ seo:
 ## Introducción al [Tesouro Direto](/es/glossario/es-tesouro-direto)
 El Tesouro Direto es un programa del gobierno brasileño que permite a los ciudadanos invertir en títulos públicos, como LTN (Letras del Tesouro Nacional) y NTN (Notas del Tesouro Nacional). Estos títulos representan préstamos realizados al gobierno, que paga intereses al inversor. Es una forma de invertir en [renta fija](/es/glossario/es-renda-fixa), con rendimientos predefinidos y bajo riesgo.
 
-Por ejemplo, si usted invierte R$1.000 en un título LTN con plazo de 1 año y intereses del 5% anual, usted recibirá R$1.050 después del vencimiento. Esto significa un rendimiento de R$50, o el 5% del [valor](/es/glossario/es-valor-financeiro) invertido.
+Por ejemplo, si usted invierte R$1.000 en un título LTN con plazo de 1 año y intereses del 5% anual, usted recibirá R$1.050 después del vencimiento. Esto significa un rendimiento de R$50, o el 5% del [valor](/es/glossario/es-valor-financiero) invertido.
 
 ## Ventajas del Tesouro Direto
 Una de las principales ventajas del Tesouro Direto es la seguridad. Como los títulos son emitidos por el gobierno, el riesgo de incumplimiento (o impago) es muy bajo. Además, los intereses son predefinidos, lo que significa que usted sabe exactamente cuánto va a recibir al final del plazo.
@@ -36,7 +36,7 @@ Existen varios tipos de títulos disponibles en el Tesouro Direto, cada uno con 
 
 * LTN (Letras del Tesouro Nacional): títulos con plazos de 1 a 10 años y intereses fijos.
 * NTN (Notas del Tesouro Nacional): títulos con plazos de 1 a 30 años y intereses fijos o variables.
-* LCI (Letras del Tesouro Nacional con índice de [inflación](/es/glossario/es-inflacao)): títulos con plazos de 1 a 5 años y intereses fijos más una corrección por inflación.
+* LCI (Letras del Tesouro Nacional con índice de [inflación](/es/glossario/es-inflacion)): títulos con plazos de 1 a 5 años y intereses fijos más una corrección por inflación.
 
 Por ejemplo, si usted invierte R$5.000 en un título LTN con plazo de 5 años y intereses del 6% anual, usted recibirá R$5.638,49 después del vencimiento, considerando intereses compuestos anualmente.
 

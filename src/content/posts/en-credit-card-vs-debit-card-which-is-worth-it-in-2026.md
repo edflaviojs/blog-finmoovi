@@ -79,7 +79,7 @@ Regardless of the choice, it's essential to remember that [financial management]
 
 To help you manage your finances, I recommend using [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026), a tool that allows you to track your expenses, income, and debt in one place. With FinMoovi, you can have a clear view of your financial situation and make informed decisions about how to manage your money.
 
-Additionally, it's essential to remember that [financial education](/en/glossario/en-educacao-financeira) is crucial for a healthy financial life. I recommend visiting the [Banco Central do Brasil](https://www.bcb.gov.br) website to get information on how to manage your finances and avoid debt.
+Additionally, it's essential to remember that [financial education](/en/glossario/en-financial-education) is crucial for a healthy financial life. I recommend visiting the [Banco Central do Brasil](https://www.bcb.gov.br) website to get information on how to manage your finances and avoid debt.
 
 And if you're looking for a way to invest your money, I recommend visiting the [Tesouro Direto](https://www.tesourodireto.com.br) website to get information on how to invest in public securities.
 

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-The term “zero coupon” may sound complicated, but it’s simpler than you think. Basically, a zero coupon is a type of debt security that does not pay [interest](/en/glossario/en-juros) periodically, like traditional debt securities. Instead, the investor receives the total [value](/en/glossario/en-valor-financeiro) of the security at maturity, which includes the principal plus accrued interest. This means you won’t receive regular payments, but a larger amount at the end of the investment period.
+The term “zero coupon” may sound complicated, but it’s simpler than you think. Basically, a zero coupon is a type of debt security that does not pay [interest](/en/glossario/en-juros) periodically, like traditional debt securities. Instead, the investor receives the total [value](/en/glossario/en-financial-value) of the security at maturity, which includes the principal plus accrued interest. This means you won’t receive regular payments, but a larger amount at the end of the investment period.
 
 * Debt securities: financial instruments that represent a loan made by an investor to a company or government.  
 * Interest: the earnings paid on the invested principal, usually expressed as an annual percentage.  
@@ -47,7 +47,7 @@ Zero coupons have several advantages over other types of investments. One is sim
 ## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 However, zero coupons also have some risks. One is credit risk, which I mentioned earlier. Another is inflation risk, which can erode the real value of the money you’ll receive at maturity. Additionally, zero coupons can have liquidity risk, i.e., the risk that you cannot sell the security before maturity.
 
-**Practical tip:** It’s important to diversify your investments to reduce credit risk and other risks. That means you should invest in different types of assets, such as [stocks](/en/glossario/en-acoes), debt securities, and [investment funds](/en/glossario/en-fundo-de-investimento).
+**Practical tip:** It’s important to diversify your investments to reduce credit risk and other risks. That means you should invest in different types of assets, such as [stocks](/en/glossario/en-acoes), debt securities, and [investment funds](/en/glossario/en-investment-fund).
 
 ## Practical examples
 Let’s consider a practical example. Suppose you earn R$5.000,00 per month and want to invest R$1.000,00 per month in zero coupons. You could buy zero coupons with a 5‑year term and a face value of R$1.000,00. Over the 5 years you receive no interest, but at the end of the period you receive R$1.000,00 for each zero coupon you bought. That means you’ll earn R$5.000,00, which is the difference between the face value and the purchase price.

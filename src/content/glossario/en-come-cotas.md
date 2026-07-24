@@ -16,7 +16,7 @@ Fractional Shares are an [investment](/en/posts/en-building-a-diversified-portfo
 Imagine you want to invest in an [investment](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) fund that costs $4,700 USD (approximately R$ 10,000,00 at the current exchange rate, but using USD for English). However, you only have $470 USD (approximately R$ 1,000,00) to invest. With Fractional Shares, you can buy 1/10 of the investment fund, which is $470 USD. This means you'll be entitled to 1/10 of the fund's gains or losses.
 
 ## Practical Examples
-Let's consider a practical example. Suppose you want to invest in an investment fund that costs $2,350 USD (approximately R$ 5,000,00). You can buy 1/5 of the investment fund, which is $470 USD. If the investment fund yields 10% per year, you'll receive $94 USD in [dividends](/en/glossario/en-dividendos) (10% of $940 USD, which is the value of your share in the investment fund).
+Let's consider a practical example. Suppose you want to invest in an investment fund that costs $2,350 USD (approximately R$ 5,000,00). You can buy 1/5 of the investment fund, which is $470 USD. If the investment fund yields 10% per year, you'll receive $94 USD in [dividends](/en/glossario/en-dividends) (10% of $940 USD, which is the value of your share in the investment fund).
 
 ## Advantages and Disadvantages
 Here are some advantages and disadvantages of Fractional Shares:

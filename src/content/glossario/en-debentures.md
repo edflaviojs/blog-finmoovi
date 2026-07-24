@@ -19,7 +19,7 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 ### Common Debentures
 
 - Taxed by IR (regressive table)
-- No [FGC guarantee](/en/glossario/en-garantia-fgc)
+- No [FGC guarantee](/en/glossario/en-fgc-guarantee)
 - [Yield](/en/glossario/en-yield) generally [CDI](/en/glossario/en-cdi) + spread
 
 ### Incentivized Debentures
@@ -38,14 +38,14 @@ Debentures are debt securities issued by companies. When you buy a debenture, yo
 ## Risks
 
 - **Credit risk:** company may not pay (no FGC)
-- **[Liquidity](/en/glossario/en-liquidez) risk:** it may be difficult to sell before maturity
+- **[Liquidity](/en/glossario/en-liquidity) risk:** it may be difficult to sell before maturity
 - **Market risk:** price may fluctuate if sold before
 
 ## How to Evaluate
 
 Before investing, check:
 
-1. **Company rating** ([credit score](/en/glossario/en-score-de-credito): AAA is the best)
+1. **Company rating** ([credit score](/en/glossario/en-credit-score): AAA is the best)
 2. **Company sector** (stable sectors are safer)
 3. **Guarantees** (real, floating, unsecured)
 4. **Term** (the longer, the higher the risk)

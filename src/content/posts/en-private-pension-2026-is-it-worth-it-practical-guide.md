@@ -17,7 +17,7 @@ seo:
   keywords: ["private pension","2026","investment","retirement","costs","risks","comparison","private pension worth it","PGBL or VGBL","pension or invest"]
 ---
 
-## What is [private pension](/en/glossario/en-previdencia-privada)?
+## What is [private pension](/en/glossario/en-private-pension)?
 
 Private pension, also called a complementary pension plan, works like a *long‑term [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) vehicle* that you feed throughout your working life. The [money](/en/posts/en-30-day-rule-for-purchases) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment.
 
@@ -72,7 +72,7 @@ These numbers assume you **make no withdrawals** before retirement and that the 
 
 ## Comparison with other investment options
 
-| Product | Avg. return 2025‑2026 | [Liquidity](/en/glossario/en-liquidez) | Costs | Best for |
+| Product | Avg. return 2025‑2026 | [Liquidity](/en/glossario/en-liquidity) | Costs | Best for |
 |--------|----------------------|-----------|-------|----------|
 | **Private pension (PGBL/VGBL)** | 6% – 7% per year (depending on the fund) | Low – only withdraw at retirement or in specific cases | Admin fees 1.5‑2.5% | Retirement planning, tax benefit |
 | **[CDB](/en/glossario/en-cdb) (Certificate of Deposit)** | 100% of CDI (≈ 5.5% per year) | Medium – withdrawal after 30 days | Near‑zero fees | Short‑to‑medium horizon investors |
@@ -107,4 +107,4 @@ Following these steps will give you clarity on whether private pension still mak
 ---
 
 **To keep all your investments in one place, [try FinMoovi free for 7 days](https://finmoovi.com) — multi‑currency, smart reports and 100% offline.**
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is [private pension](/en/glossario/en-previdencia-privada)?","acceptedAnswer":{"@type":"Answer","text":"Private pension, also called a complementary pension plan, works like a long‑term [savings](/en/posts/en-how-to-save-at-the-grocery-store-in-2026-real-tips) vehicle that you feed throughout your working life. The [money](/en/posts/en-creating-an-emergency-fund) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment."}},{"@type":"Question","name":"How does private pension work in 2026?","acceptedAnswer":{"@type":"Answer","text":"In 2026 the landscape changed in three critical ways:"}},{"@type":"Question","name":"Practical simulation – how much does it really earn?","acceptedAnswer":{"@type":"Answer","text":"Let’s assume three monthly contribution profiles: R$500, R$1,000 and R$5,000. We’ll use a fixed‑income fund with a 1.8% annual administration fee and an average return of 6.5% per year (roughly CDI + 0.5%)."}}]} -->
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is [private pension](/en/glossario/en-private-pension)?","acceptedAnswer":{"@type":"Answer","text":"Private pension, also called a complementary pension plan, works like a long‑term [savings](/en/posts/en-how-to-save-at-the-grocery-store-in-2026-real-tips) vehicle that you feed throughout your working life. The [money](/en/posts/en-creating-an-emergency-fund) is invested in funds managed by financial institutions and, when you retire, you receive either a monthly benefit (income) or a lump‑sum payment."}},{"@type":"Question","name":"How does private pension work in 2026?","acceptedAnswer":{"@type":"Answer","text":"In 2026 the landscape changed in three critical ways:"}},{"@type":"Question","name":"Practical simulation – how much does it really earn?","acceptedAnswer":{"@type":"Answer","text":"Let’s assume three monthly contribution profiles: R$500, R$1,000 and R$5,000. We’ll use a fixed‑income fund with a 1.8% annual administration fee and an average return of 6.5% per year (roughly CDI + 0.5%)."}}]} -->

@@ -40,9 +40,9 @@ Let's consider an example: if you invest R$1,000 in dollars at an exchange rate 
 Investing in dollars involves risks, including:
 
 * Exchange rate fluctuation risk: the dollar's value can fluctuate against the real, affecting the value of your investment.
-* [Inflation](/en/glossario/en-inflacao) risk: inflation in the United States can affect the dollar's value.
+* [Inflation](/en/glossario/en-inflation) risk: inflation in the United States can affect the dollar's value.
 * Interest rate risk: interest rates in the United States can affect the dollar's value.
-* [Liquidity](/en/glossario/en-liquidez) risk: it may be difficult to sell your dollar investment quickly and at a fair price.
+* [Liquidity](/en/glossario/en-liquidity) risk: it may be difficult to sell your dollar investment quickly and at a fair price.
 
 It's essential to consider these risks before investing in dollars and assess whether it makes sense for your investor profile and financial goals.
 

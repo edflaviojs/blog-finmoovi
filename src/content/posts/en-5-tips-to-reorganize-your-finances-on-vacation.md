@@ -28,7 +28,7 @@ Vacations offer a relatively long period to focus on yourself and your financial
 ## Tips to Reorganize Your Finances
 Here are some practical tips to help you start reorganizing your finances during your vacation:
 1. **Take Stock**: Start by taking stock of your current financial situation. Write down all your income and expenses, including bills, debts, and any other recurring expenses. This will help you understand where your money is going.
-2. **Create or Adjust a Budget**: Based on your stocktake, create a budget that meets your needs and goals. Make sure to include an [emergency fund](/en/glossario/en-reserva-de-emergencia) and funds for leisure and entertainment.
+2. **Create or Adjust a Budget**: Based on your stocktake, create a budget that meets your needs and goals. Make sure to include an [emergency fund](/en/glossario/en-emergency-fund) and funds for leisure and entertainment.
 3. **Prioritize Debt**: If you have debt, such as credit cards or loans, prioritize paying them off. Start with the debts with the highest value or those with the highest interest rates.
 4. **Increase Your Savings**: Set savings goals, whether for emergencies, long-term goals, or specific purchases. Try to increase your savings gradually.
 5. **Monitor Your Expenses**: Use tools like FinMoovi to monitor your daily expenses and identify areas where you can cut back. FinMoovi is a useful tool that can help you keep a more accurate track of your finances.
@@ -55,7 +55,7 @@ Tools like FinMoovi can be great allies in financial management. They allow you 
 
 
 
-According to Serasa, in 2022, almost 60% of Brazilians used apps to control their finances, showing the growing awareness of the importance of personal financial management. The Central Bank of Brazil also highlights the importance of [financial education](/en/glossario/en-educacao-financeira) and planning for a healthy financial life.
+According to Serasa, in 2022, almost 60% of Brazilians used apps to control their finances, showing the growing awareness of the importance of personal financial management. The Central Bank of Brazil also highlights the importance of [financial education](/en/glossario/en-financial-education) and planning for a healthy financial life.
 
 Use FinMoovi to control your expenses and avoid surprises at the end of the month.
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Reorganizing Finances?","acceptedAnswer":{"@type":"Answer","text":"Reorganizing finances means reviewing and adjusting how you earn, save, and spend [money](/en/posts/en-difference-between-investing-and-saving). This can include creating or adjusting a [budget](/en/posts/en-how-to-create-personal-budget), paying off debt, increasing savings, and investing in your future. It's a process that requires attention, discipline, and commitment, but can lead to a more stab"}},{"@type":"Question","name":"Why are Vacations an Ideal Time?","acceptedAnswer":{"@type":"Answer","text":"Vacations offer a relatively long period to focus on yourself and your financial goals. Without the pressures of daily life, you can dedicate time to understanding your financial situation, identifying areas for improvement, and planning strategies to achieve your goals. Additionally, vacations can "}}]} -->

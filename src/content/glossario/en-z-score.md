@@ -76,7 +76,7 @@ Now look at a different case: you earn R$4,000 and save R$800 each month. The gr
 
 - **Example 1:** Salary R$3,500, rent R$1,200 → z‑score = ‑0.5 (below average rent).  
 - **Example 2:** Salary R$7,800, investment in stocks R$2,500 → z‑score = 1.2 (above average investment).  
-- **Example 3:** Salary R$5,200, [emergency fund](/en/glossario/en-reserva-de-emergencia) R$10,000 → z‑score = 2.5 (very strong safety net).
+- **Example 3:** Salary R$5,200, [emergency fund](/en/glossario/en-emergency-fund) R$10,000 → z‑score = 2.5 (very strong safety net).
 
 These numbers help you decide whether to cut back, keep the pace, or push harder.
 

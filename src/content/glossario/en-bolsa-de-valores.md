@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-The stock exchange, also known as the market for [ações](/en/glossario/en-acoes), is a place where people buy and sell small pieces of companies, known as stocks. Imagine you own a small piece of a company, like [Nubank](/en/glossario/en-nubank) or Magazine Luiza. When the company does well, the [valor](/en/glossario/en-valor-financeiro) of your stock rises, and you can sell it for a higher price than you paid. It’s like having a small share of a business that can grow and generate profits.
+The stock exchange, also known as the market for [ações](/en/glossario/en-acoes), is a place where people buy and sell small pieces of companies, known as stocks. Imagine you own a small piece of a company, like [Nubank](/en/glossario/en-nubank) or Magazine Luiza. When the company does well, the [valor](/en/glossario/en-financial-value) of your stock rises, and you can sell it for a higher price than you paid. It’s like having a small share of a business that can grow and generate profits.
 
 * Ações: small pieces of companies that can be bought and sold
 * Títulos: documents that represent ownership of stocks or other investments
@@ -46,7 +46,7 @@ Investing in the stock exchange can be a great way to grow your wealth over time
 ## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 However, investing in the stock exchange also involves risks. Here are some of the main risks:
 * Loss of value: stocks can decrease in value, resulting in significant losses
-* [Volatility](/en/glossario/en-volatilidade): stock prices can change quickly, making it hard to predict market performance
+* [Volatility](/en/glossario/en-volatility): stock prices can change quickly, making it hard to predict market performance
 * Company risk: companies can have financial or operational problems, affecting the value of their stocks
 
 **Practical tip:** It’s essential to understand the risks involved and have a clear investment plan. For example, if you earn R$ 3.000 per month and want to invest R$ 500 per month, it’s important to set an investment goal and a timeline to achieve it.

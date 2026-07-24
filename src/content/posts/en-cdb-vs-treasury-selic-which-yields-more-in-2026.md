@@ -43,7 +43,7 @@ However, these numbers are simplified and do not consider the possible variation
 CDB, although considered a low-risk investment, is not completely risk-free. The main risk is the credit risk of the issuing bank. If the bank has financial problems, there may be difficulty in redeeming the investment. However, the [Credit Guarantee Fund (FGC)](https://www.fgc.org.br) offers protection of up to R$250,000 per account holder and financial institution.
 
 ### Treasury Selic Risks
-Treasury Selic, being an investment with a government guarantee, is considered very low-risk. However, the investor is subject to variations in the Selic rate, which can affect the yield. Additionally, since Treasury Selic is indexed to [inflation](/en/glossario/en-inflacao) (in the case of Treasury IPCA), the investor may also be affected by variations in inflation indices.
+Treasury Selic, being an investment with a government guarantee, is considered very low-risk. However, the investor is subject to variations in the Selic rate, which can affect the yield. Additionally, since Treasury Selic is indexed to [inflation](/en/glossario/en-inflation) (in the case of Treasury IPCA), the investor may also be affected by variations in inflation indices.
 
 ## Evaluating the Investor Profile
 When deciding between CDB and Treasury Selic, it's crucial to evaluate your investor profile. If you're a conservative investor who seeks security and is willing to give up a bit of yield in exchange for lower risk, Treasury Selic may be a good option. On the other hand, if you're willing to take on a bit more risk in search of a higher yield, CDB may be more attractive.

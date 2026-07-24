@@ -56,9 +56,9 @@ Xing ling tiene varias bondades que lo hacen atractivo para cualquier persona qu
 
 Como cualquier instrumento financiero, el xing ling no está exento de riesgos, y es importante conocerlos antes de comprometer el dinero.
 
-- **[Volatilidad](/es/glossario/es-volatilidade) del mercado:** los precios de acciones y bonos pueden bajar, lo que reduce temporalmente el valor de tu inversión.  
+- **[Volatilidad](/es/glossario/es-volatilidad) del mercado:** los precios de acciones y bonos pueden bajar, lo que reduce temporalmente el valor de tu inversión.  
 - **Riesgo de [liquidez](/es/glossario/es-liquidez):** aunque puedes retirar el dinero en cualquier momento, hacerlo en un periodo de caída del mercado puede generar pérdidas.  
-- **[Inflación](/es/glossario/es-inflacao):** si la rentabilidad del fondo es menor que la tasa de inflación, el poder adquisitivo de tu ahorro disminuye.  
+- **[Inflación](/es/glossario/es-inflacion):** si la rentabilidad del fondo es menor que la tasa de inflación, el poder adquisitivo de tu ahorro disminuye.  
 - **Errores de automatización:** una configuración incorrecta de la transferencia automática puede generar sobregiros o cargos inesperados.
 
 ## Ejemplos prácticos

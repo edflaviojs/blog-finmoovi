@@ -12,7 +12,7 @@ readingTime: 2
 
 ## ¿Qué es IPCA?
 
-El IPCA (Índice Nacional de Preços ao Consumidor Amplo) es el termómetro oficial de la [inflación](/es/glossario/es-inflacao) en Brasil. Mide cuánto han subido (o bajado) los precios en un período determinado. Lo calcula el IBGE cada mes.
+El IPCA (Índice Nacional de Preços ao Consumidor Amplo) es el termómetro oficial de la [inflación](/es/glossario/es-inflacion) en Brasil. Mide cuánto han subido (o bajado) los precios en un período determinado. Lo calcula el IBGE cada mes.
 
 ## Qué mide
 
@@ -25,7 +25,7 @@ El IPCA sigue los precios de una "cesta" de productos y servicios que consumen l
 
 ## Por qué el IPCA importa para ti
 
-1. **Tu dinero pierde [valor](/es/glossario/es-valor-financeiro):** si el IPCA es 5% al año, R$ 100 hoy valen R$ 95 dentro de un año
+1. **Tu dinero pierde [valor](/es/glossario/es-valor-financiero):** si el IPCA es 5% al año, R$ 100 hoy valen R$ 95 dentro de un año
 2. **Inversiones:** rendimientos por debajo del IPCA significan que estás perdiendo dinero
 3. **[Selic](/es/glossario/es-selic):** el Banco Central sube o baja la Selic para controlar el IPCA
 4. **Ajustes:** alquileres, planes de salud y salarios se ajustan por el IPCA

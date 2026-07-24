@@ -42,9 +42,9 @@ Webull offers several advantages compared to traditional securities brokerages. 
 
 ## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 Like any investment, Webull also involves risks. Some of the main risks include:
-* Loss risk: You can lose money if the financial assets you bought decrease in [valor](/en/glossario/en-valor-financeiro).  
-* [Volatility](/en/glossario/en-volatilidade) risk: Prices of financial assets can be volatile, meaning they can rise or fall quickly.  
-* [Liquidity](/en/glossario/en-liquidez) risk: You may have difficulty selling your financial assets quickly, which can affect the price you receive.
+* Loss risk: You can lose money if the financial assets you bought decrease in [valor](/en/glossario/en-financial-value).  
+* [Volatility](/en/glossario/en-volatility) risk: Prices of financial assets can be volatile, meaning they can rise or fall quickly.  
+* [Liquidity](/en/glossario/en-liquidity) risk: You may have difficulty selling your financial assets quickly, which can affect the price you receive.
 
 ![Advantages](/images/glossario/webull-inline-3.webp)
 

@@ -36,7 +36,7 @@ En 2026 el escenario cambió en tres puntos críticos:
 
 ![Como funciona a previdência privada em 2026?](/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico-2.webp)
 
-1. **Comisiones de administración más competitivas** – La competencia entre bancos y aseguradoras redujo la media de las comisiones del 2,5 % anual a alrededor del 1,8 % en los planes de renta fija y 2,2 % en los de [renta variable](/es/glossario/es-renda-variavel).  
+1. **Comisiones de administración más competitivas** – La competencia entre bancos y aseguradoras redujo la media de las comisiones del 2,5 % anual a alrededor del 1,8 % en los planes de renta fija y 2,2 % en los de [renta variable](/es/glossario/es-renta-variable).  
 2. **Nuevas opciones de fondos indexados (ETFs) dentro de los planes** – Muchos gestores empezaron a ofrecer ETFs de acciones brasileñas e internacionales como opción de inversión, ampliando la diversificación.  
 3. **Regulación más transparente** – La CVM (Comisión de Valores Mobiliarios) ahora exige que las instituciones publiquen el historial de rentabilidad trimestral y el “costo total al inversionista”, facilitando la comparación entre planes.  
 
@@ -82,7 +82,7 @@ La principal ventaja de la previsión es el **beneficio fiscal** (en el caso del
 
 ## Riesgos y cuidados
 
-1. **Riesgo de mercado** – En los fondos que invierten en acciones o ETFs, el [valor](/es/glossario/es-valor-financeiro) puede oscilar bastante. Si tu horizonte de jubilación es corto, este riesgo puede ser problemático.  
+1. **Riesgo de mercado** – En los fondos que invierten en acciones o ETFs, el [valor](/es/glossario/es-valor-financiero) puede oscilar bastante. Si tu horizonte de jubilación es corto, este riesgo puede ser problemático.  
 2. **Riesgo de comisión de administración alta** – Como vimos, comisiones superiores al 2 % pueden reducir ganancias hasta en un 10 % a lo largo de 30 años.  
 3. **Riesgo de [cambio](/es/glossario/es-cambio) regulatorio** – Modificaciones en las reglas de tributación o en los límites de deducción pueden afectar la atractividad del PGBL.  
 4. **Riesgo de incumplimiento de la institución** – Aunque la Superintendencia de Seguros Privados (SUSEP) garantice la solvencia de las aseguradoras, siempre verifica la nota de evaluación de la empresa.  

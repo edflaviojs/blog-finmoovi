@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Money is a fundamental concept in the world of finance, and understanding how it works is essential for making informed decisions about our money. In short, money is a medium of exchange, a unit of account, and a standard of **[value](/en/glossario/en-valor-financeiro)**. In Brazil, our currency is the Real (R$), and it is used to buy everything from food and clothing to houses and cars. For example, if you earn R$ 5,000 per month, you can use that money to pay your bills, buy groceries, and still have a little left to save or invest.
+Money is a fundamental concept in the world of finance, and understanding how it works is essential for making informed decisions about our money. In short, money is a medium of exchange, a unit of account, and a standard of **[value](/en/glossario/en-financial-value)**. In Brazil, our currency is the Real (R$), and it is used to buy everything from food and clothing to houses and cars. For example, if you earn R$ 5,000 per month, you can use that money to pay your bills, buy groceries, and still have a little left to save or invest.
 
 * Money can be physical, like banknotes and coins, or digital, like the money in your bank account.  
 * Money can also be national, like the Real in Brazil, or international, like the [US Dollar](/en/posts/en-investing-in-dollar-in-brazil).  
@@ -44,7 +44,7 @@ Money has many advantages, such as:
 
 ## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 However, money also carries risks, such as:
-* [Inflation](/en/glossario/en-inflacao): inflation is when the value of money decreases over time, meaning the same amount of cash can buy fewer things.  
+* [Inflation](/en/glossario/en-inflation): inflation is when the value of money decreases over time, meaning the same amount of cash can buy fewer things.  
 * Unemployment: if you lose your job, you may not have money to buy the things you need.  
 * Debt: if you spend more than you can afford, you may end up with debts that are hard to repay.  
 * **Practical tip:** Always have an emergency reserve to avoid financial problems in case of unemployment or illness.

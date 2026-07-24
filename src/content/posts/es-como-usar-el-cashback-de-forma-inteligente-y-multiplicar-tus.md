@@ -20,7 +20,7 @@ seo:
 
 ## Cashback como aliado de verdad
 
-Cuando pagas un snack de R$ 35,00 con una tarjeta que devuelve el 2% del gasto, el retorno parece pequeño – R$ 0,70. Pero si ese [valor](/es/glossario/es-valor-financeiro) se trata como ingreso extra, puede convertirse en un verdadero refuerzo para tu [presupuesto](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones). La idea no es esperar que el cashback cubra todo de una vez, sino hacer que cada centavo devuelto trabaje a tu favor.
+Cuando pagas un snack de R$ 35,00 con una tarjeta que devuelve el 2% del gasto, el retorno parece pequeño – R$ 0,70. Pero si ese [valor](/es/glossario/es-valor-financiero) se trata como ingreso extra, puede convertirse en un verdadero refuerzo para tu [presupuesto](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones). La idea no es esperar que el cashback cubra todo de una vez, sino hacer que cada centavo devuelto trabaje a tu favor.
 
 ## Elige la tarjeta adecuada y combina [beneficios](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
 
@@ -41,11 +41,11 @@ Muchas personas simplemente usan el crédito devuelto para pagar la factura de l
 - Gastos mensuales con tarjeta: R$ 2.000,00 (supermercado, combustible, delivery)
 - Cashback medio: 3% → R$ 60,00
 
-Al depositar esos R$ 60,00 en una cuenta de rendimiento, acumulas R$ 720,00 al final de un año, sin ningún esfuerzo extra. Ese monto puede ser la primera cuota de tu [fondo de emergencia](/es/glossario/es-reserva-de-emergencia).
+Al depositar esos R$ 60,00 en una cuenta de rendimiento, acumulas R$ 720,00 al final de un año, sin ningún esfuerzo extra. Ese monto puede ser la primera cuota de tu [fondo de emergencia](/es/glossario/es-fondo-de-emergencia).
 
 ## Usa el cashback para “pagar deudas” de forma inteligente
 
-Si tienes deudas con intereses superiores al 10% anual (como rotativo de tarjeta o [sobregiro](/es/glossario/es-cheque-especial)), el cashback puede ser un aliado para reducir esos cargos. Cada centavo que recibes tiene un costo de oportunidad menor que los intereses de la deuda, por lo que aplicar el cashback para amortizar la deuda genera ahorro real.
+Si tienes deudas con intereses superiores al 10% anual (como rotativo de tarjeta o [sobregiro](/es/glossario/es-sobregiro)), el cashback puede ser un aliado para reducir esos cargos. Cada centavo que recibes tiene un costo de oportunidad menor que los intereses de la deuda, por lo que aplicar el cashback para amortizar la deuda genera ahorro real.
 
 ![Use o cashback para “pagar dívidas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
 

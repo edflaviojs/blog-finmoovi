@@ -38,7 +38,7 @@ There are many ways to save money and reduce credit card expenses. Here are some
 * Use public transportation or a bike instead of a car
 * Cancel subscriptions to services you don't use
 
-**Practical tip:** You can create an [emergency fund](/en/glossario/en-reserva-de-emergencia) to cover unexpected expenses and avoid having to use your credit card. For example, if you save R$ 1,000 per month, you'll have R$ 12,000 in a year, which can be enough to cover unexpected expenses.
+**Practical tip:** You can create an [emergency fund](/en/glossario/en-emergency-fund) to cover unexpected expenses and avoid having to use your credit card. For example, if you save R$ 1,000 per month, you'll have R$ 12,000 in a year, which can be enough to cover unexpected expenses.
 
 ![Dicas para Economizar](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-3.webp)
 

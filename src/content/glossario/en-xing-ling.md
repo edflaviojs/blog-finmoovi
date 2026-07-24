@@ -58,7 +58,7 @@ Although xing ling is safer than individual stocks, it is not risk‑free. The m
 - **Technological risk:** vulnerabilities in the app can compromise data.  
 - **Limited liquidity:** although daily, very large redemptions can lead to small loss of return.
 
-**Practical tip:** **Always check the management fee before investing; prefer [funds](/en/glossario/en-fundo-de-investimento) with costs below **0.8 %** per year.**  
+**Practical tip:** **Always check the management fee before investing; prefer [funds](/en/glossario/en-investment-fund) with costs below **0.8 %** per year.**  
 
 ## Practical examples
 
@@ -68,7 +68,7 @@ Let's imagine three monthly‑income profiles and how xing ling can be used to i
 - **Mariana, salary **R$5,500**:** she sets aside **R$550** (10 % again) and increases the contribution to **R$1,100** each quarter. After a year, the balance reaches about **R$6,200**, generating **R$700** profit.  
 - **Carlos, salary **R$8,000**:** he invests **R$800** per month and, every six months, adds an extra contribution of **R$2,000**. In 12 months, total invested is **R$13,600** and the return reaches **R$15,200**, resulting in **R$1,600** gain.
 
-These numbers show that, even with modest contributions, the effect of [compound interest](/en/glossario/en-juros-compostos) (interest on interest) can turn small savings into a significant cushion over time.
+These numbers show that, even with modest contributions, the effect of [compound interest](/en/glossario/en-compound-interest) (interest on interest) can turn small savings into a significant cushion over time.
 
 **Practical tip:** **Automate the monthly contribution via automatic debit; that way you don’t forget to invest.**  
 

@@ -19,7 +19,7 @@ seo:
 
 ## Resumen de la semana (6 al 13 de julio de 2026)
 
-La semana fue agitada en los mercados de cambio y, como siempre, la [tasa](/es/glossario/es-taxa-financeira) [Selic](/es/glossario/es-selic) sigue moviendo a los que tenemos dinero invertido. Vamos a lo que importa: cómo se comportaron el dólar y el euro, qué hizo la Selic en nuestro bolsillo y, claro, un consejo práctico para quien quiere proteger la cartera. Ah, y adelantando: la app FinMoovi facilita seguir todo esto en tiempo real, sin tener que saltar de sitio en sitio.
+La semana fue agitada en los mercados de cambio y, como siempre, la [tasa](/es/glossario/es-tasa-financiera) [Selic](/es/glossario/es-selic) sigue moviendo a los que tenemos dinero invertido. Vamos a lo que importa: cómo se comportaron el dólar y el euro, qué hizo la Selic en nuestro bolsillo y, claro, un consejo práctico para quien quiere proteger la cartera. Ah, y adelantando: la app FinMoovi facilita seguir todo esto en tiempo real, sin tener que saltar de sitio en sitio.
 
 ### 1. Dólar y euro: tendencia de la semana
 
@@ -52,7 +52,7 @@ La tasa Selic quedó en **13,75 % al año**, como ya estaba prevista en las ú
 
 - **Selic:** El Copom tiene una reunión programada para finales de julio. Si la inflación sigue alta, la tendencia es mantener la tasa o incluso subir un punto. Si eso ocurre, la renta fija será aún más ventajosa, mientras que las acciones pueden sentir más presión.
 
-- **Inversiones:** Aprovecha la estabilidad cambiaria para reequilibrar la cartera. Si la parte en renta fija está por debajo de lo deseado, aumenta la exposición. Si quieres diversificar, considera [fondos](/es/glossario/es-fundo-de-investimento) internacionales que ya incluyen el dólar o el euro en la mezcla.
+- **Inversiones:** Aprovecha la estabilidad cambiaria para reequilibrar la cartera. Si la parte en renta fija está por debajo de lo deseado, aumenta la exposición. Si quieres diversificar, considera [fondos](/es/glossario/es-fondo-de-inversion) internacionales que ya incluyen el dólar o el euro en la mezcla.
 
 **Resumen rápido:** el real ganó fuerza contra el dólar y el euro, la Selic sigue alta, y la mejor jugada ahora es proteger tu poder de compra con un “cushion” cambiario y mantener una buena parte de la cartera en renta fija. Y no olvides: FinMoovi hace todo esto más simple, así que vale la pena echarle un vistazo!
 

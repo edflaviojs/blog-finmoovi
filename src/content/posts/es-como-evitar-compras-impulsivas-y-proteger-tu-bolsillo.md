@@ -33,7 +33,7 @@ Un [presupuesto](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaci
 
 ## Aplica la regla de los 30 días
 
-La regla de los 30 días es uno de los trucos más eficaces. Cuando quieras comprar algo fuera del [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples), anota el artículo y el [valor](/es/glossario/es-valor-financeiro), pero solo realiza la compra después de 30 días. Si aún sientes la necesidad, haz la compra; si no, el deseo normalmente desaparece. Imagina que viste un par de zapatillas de R$ 350. Anótalo, espera el mes y, al final, percibe que ya gastaste R$ 200 en otras prioridades. El impulso se transforma en una decisión consciente.
+La regla de los 30 días es uno de los trucos más eficaces. Cuando quieras comprar algo fuera del [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples), anota el artículo y el [valor](/es/glossario/es-valor-financiero), pero solo realiza la compra después de 30 días. Si aún sientes la necesidad, haz la compra; si no, el deseo normalmente desaparece. Imagina que viste un par de zapatillas de R$ 350. Anótalo, espera el mes y, al final, percibe que ya gastaste R$ 200 en otras prioridades. El impulso se transforma en una decisión consciente.
 
 ## Transforma la voluntad en hábito
 
@@ -47,7 +47,7 @@ Crear nuevos hábitos requiere pequeñas victorias diarias. Sustituye la ida al 
 - **Tarjetas de débito con bloqueo por categoría**: algunos bancos permiten bloquear temporalmente compras en tiendas de ropa o electrónica, evitando el impulso en el momento.
 - **Lista de deseos online**: en lugar de comprar inmediatamente, añade el artículo a una lista. Revisa la lista después de una semana; si todavía está allí, quizá sea realmente necesario.
 
-Para quienes prefieren fuentes oficiales, el Banco Central de Brasil ofrece orientaciones sobre consumo consciente en su portal de [educación financiera](/es/glossario/es-educacao-financeira): [Banco Central – Educación Financiera](https://www.bcb.gov.br). También vale la pena consultar consejos de prevención de compras indebidas en el sitio de Serasa: [Serasa – Control de Gastos](https://www.serasa.com.br).
+Para quienes prefieren fuentes oficiales, el Banco Central de Brasil ofrece orientaciones sobre consumo consciente en su portal de [educación financiera](/es/glossario/es-educacion-financiera): [Banco Central – Educación Financiera](https://www.bcb.gov.br). También vale la pena consultar consejos de prevención de compras indebidas en el sitio de Serasa: [Serasa – Control de Gastos](https://www.serasa.com.br).
 
 ## Empieza hoy
 

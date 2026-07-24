@@ -43,7 +43,7 @@ Para los inversores individuales, es crucial diversificar su cartera de inversio
 
 ## Qué Esperar para la Próxima Semana
 
-En la próxima semana, los inversores deberán estar atentos a las decisiones económicas clave y a los indicadores macroeconómicos que puedan influir en las tasas de cambio y las tasas de interés. La evolución de la [inflación](/es/glossario/es-inflacao), el desempeño del empleo y las declaraciones de los líderes económicos pueden ofrecer pistas sobre las tendencias futuras del mercado. Mantenerse informado y estar preparado para ajustar la estrategia de inversión según sea necesario será fundamental para navegar por el complejo panorama económico.
+En la próxima semana, los inversores deberán estar atentos a las decisiones económicas clave y a los indicadores macroeconómicos que puedan influir en las tasas de cambio y las tasas de interés. La evolución de la [inflación](/es/glossario/es-inflacion), el desempeño del empleo y las declaraciones de los líderes económicos pueden ofrecer pistas sobre las tendencias futuras del mercado. Mantenerse informado y estar preparado para ajustar la estrategia de inversión según sea necesario será fundamental para navegar por el complejo panorama económico.
 
 En resumen, la semana pasada trajo consigo una mezcla de estabilidad y decisiones importantes para el mercado financiero brasileño. Los inversores deben seguir de cerca los desarrollos en las tasas de cambio, la tasa Selic y otros indicadores económicos para tomar decisiones informadas. Con la ayuda de herramientas como FinMoovi, los inversores individuales pueden estar mejor equipados para navegar por los mercados financieros y alcanzar sus objetivos de inversión.
 

@@ -42,11 +42,11 @@ Many people simply use the returned credit to pay the card bill. That eliminates
 - Monthly card spending: R$ 2,000.00 (groceries, fuel, delivery)  
 - Average cashback: 3% → R$ 60.00  
 
-By depositing those R$ 60 into a yielding account, you accumulate R$ 720 at the end of a year, with no extra effort. That amount can be the first installment of your [emergency fund](/en/glossario/en-reserva-de-emergencia).
+By depositing those R$ 60 into a yielding account, you accumulate R$ 720 at the end of a year, with no extra effort. That amount can be the first installment of your [emergency fund](/en/glossario/en-emergency-fund).
 
 ## Use Cashback to “Pay Off Debt” Smartly
 
-If you have debts with interest above 10 % per year (like credit‑card revolving or [overdraft](/en/glossario/en-cheque-especial)), cashback can be an ally to reduce those charges. Each cent you get back has a lower opportunity cost than the debt interest, so applying cashback to amortize the debt generates real savings.
+If you have debts with interest above 10 % per year (like credit‑card revolving or [overdraft](/en/glossario/en-overdraft)), cashback can be an ally to reduce those charges. Each cent you get back has a lower opportunity cost than the debt interest, so applying cashback to amortize the debt generates real savings.
 
 ![Use o cashback para “pagar dívidas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
 

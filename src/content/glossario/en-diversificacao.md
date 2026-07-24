@@ -18,13 +18,13 @@ seo:
 ---
 
 ## What it is
-Diversification is a financial strategy that aims to reduce the risk of loss of [value](/en/glossario/en-valor-financeiro) in an investment by spreading it across different assets, such as [stocks](/en/glossario/en-acoes), bonds, real estate, among others. This means that instead of putting all your money into a single thing, you split it into several, so that if one of them doesn’t work out, the others can compensate. For example, imagine you have R$ 10,000 to invest and decide to put everything into a single company's stocks. If that company runs into problems, you could lose a large portion of your money. But if you split that R$ 10,000 into stocks of different companies, bonds, and a bit into a safer [investment](/en/glossario/en-aplicacao-financeira) such as an investment fund, the risk of loss will be lower.
+Diversification is a financial strategy that aims to reduce the risk of loss of [value](/en/glossario/en-financial-value) in an investment by spreading it across different assets, such as [stocks](/en/glossario/en-acoes), bonds, real estate, among others. This means that instead of putting all your money into a single thing, you split it into several, so that if one of them doesn’t work out, the others can compensate. For example, imagine you have R$ 10,000 to invest and decide to put everything into a single company's stocks. If that company runs into problems, you could lose a large portion of your money. But if you split that R$ 10,000 into stocks of different companies, bonds, and a bit into a safer [investment](/en/glossario/en-financial-investment) such as an investment fund, the risk of loss will be lower.
 
 Lists of assets for diversification include:
 * Company stocks
 * Debt securities
 * Real estate
-* [Investment](/en/glossario/en-fundo-de-investimento) funds
+* [Investment](/en/glossario/en-investment-fund) funds
 * Other assets, such as commodities or cryptocurrencies
 
 ![What it is](/images/glossario/diversificacao-inline-1.webp)

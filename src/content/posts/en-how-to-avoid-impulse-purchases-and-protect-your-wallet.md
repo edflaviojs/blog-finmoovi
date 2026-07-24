@@ -47,7 +47,7 @@ Creating new habits requires small daily wins. Swap a trip to the mall for a wal
 - **Debit cards with category blocking**: some banks let you temporarily block purchases in clothing or electronics stores, preventing the impulse at the moment.
 - **Online wish list**: instead of buying right away, add the item to a list. Review the list after a week; if it’s still there, maybe it’s truly needed.
 
-For those who prefer official sources, the Central Bank of Brazil provides guidance on conscious consumption on its [financial education](/en/glossario/en-educacao-financeira) portal: [Banco Central – Educação Financeira](https://www.bcb.gov.br). It’s also worth checking out tips on preventing unwanted purchases on Serasa’s site: [Serasa – Controle de Gastos](https://www.serasa.com.br).
+For those who prefer official sources, the Central Bank of Brazil provides guidance on conscious consumption on its [financial education](/en/glossario/en-financial-education) portal: [Banco Central – Educação Financeira](https://www.bcb.gov.br). It’s also worth checking out tips on preventing unwanted purchases on Serasa’s site: [Serasa – Controle de Gastos](https://www.serasa.com.br).
 
 ## Start today
 

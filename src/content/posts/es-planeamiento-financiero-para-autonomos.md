@@ -50,7 +50,7 @@ Además, es fundamental tener un sistema de cobro eficaz, para garantizar que re
 
 
 
-## [Educación Financiera](/es/glossario/es-educacao-financeira)
+## [Educación Financiera](/es/glossario/es-educacion-financiera)
 La educación financiera es fundamental para cualquier persona, especialmente para autónomos. Esto incluye entender conceptos básicos de finanzas, como intereses, inversiones y impuestos. Existen muchos recursos disponibles en línea, como el [Investopedia](https://www.investopedia.com), que pueden ayudar a mejorar tu conocimiento financiero.
 
 **Consejo práctico:** Reserva 1 hora a la semana para aprender sobre finanzas personales y planeamiento financiero.

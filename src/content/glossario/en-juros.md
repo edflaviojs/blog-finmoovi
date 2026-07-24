@@ -20,7 +20,7 @@ seo:
 ## What it is
 The term “interest” is common in our daily life, especially when we talk about loans, investments, and bank accounts. But, after all, what is interest? In short, interest is the additional amount you pay or receive on top of a principal amount, depending on whether you are the borrower or the investor. For example, if you take a loan of R$ 5.000,00 with an interest rate of 10% per year, after one year you will have to pay R$ 5.500,00 (R$ 5.000,00 principal + R$ 500,00 interest).
 
-When it comes to investments, interest can be your friend. Imagine you invest R$ 3.000,00 in a [aplicação](/en/glossario/en-aplicacao-financeira) that yields 8% per year. After one year, your investment will be worth R$ 3.240,00, because you earned R$ 240,00 in interest. It’s important to understand that interest can be simple or compound. Simple interest is calculated only on the [valor](/en/glossario/en-valor-financeiro) principal, while compound interest is calculated on the principal and on previously accrued interest, which can make your investment grow exponentially over time.
+When it comes to investments, interest can be your friend. Imagine you invest R$ 3.000,00 in a [aplicação](/en/glossario/en-financial-investment) that yields 8% per year. After one year, your investment will be worth R$ 3.240,00, because you earned R$ 240,00 in interest. It’s important to understand that interest can be simple or compound. Simple interest is calculated only on the [valor](/en/glossario/en-financial-value) principal, while compound interest is calculated on the principal and on previously accrued interest, which can make your investment grow exponentially over time.
 
 ![What it is](/images/glossario/juros-inline-1.webp)
 
@@ -36,7 +36,7 @@ In these cases, it’s crucial to calculate the interest to know exactly how muc
 ## Advantages
 Interest can be beneficial when you are on the investor’s side. It can increase your wealth over time, especially if you choose long‑term investments with attractive interest rates. Moreover, interest can be a source of passive income, meaning you can earn money without having to work actively for it.
 
-However, it’s important to choose safe investments that match your risk profile. **Practical tip:** Diversify your investments to minimize risks. For example, you can invest part of your money in fixed‑income securities [renda fixa](/en/glossario/en-renda-fixa), such as CDBs or LCI/LCA, and another part in [ações](/en/glossario/en-acoes) or [fundos](/en/glossario/en-fundo-de-investimento) of investment.
+However, it’s important to choose safe investments that match your risk profile. **Practical tip:** Diversify your investments to minimize risks. For example, you can invest part of your money in fixed‑income securities [renda fixa](/en/glossario/en-renda-fixa), such as CDBs or LCI/LCA, and another part in [ações](/en/glossario/en-acoes) or [fundos](/en/glossario/en-investment-fund) of investment.
 
 ![Advantages](/images/glossario/juros-inline-3.webp)
 

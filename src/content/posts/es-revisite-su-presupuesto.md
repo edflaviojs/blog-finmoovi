@@ -52,7 +52,7 @@ Además de revisar regularmente el presupuesto, existen algunas estrategias que 
 
 - **Ahorro de emergencia**: Mantén una reserva de emergencia que cubra al menos 3 a 6 meses de gastos.
 - **Inversiones**: Considera invertir parte de tus ingresos en opciones como [Tesouro Direto](https://www.tesourodireto.com.br/), que ofrece una forma segura de aumentar tu riqueza con el tiempo.
-- **[Educación financiera](/es/glossario/es-educacao-financeira)**: Continúa aprendiendo sobre finanzas personales y inversiones. Sitios como [Investopedia](https://www.investopedia.com/) ofrecen una amplia gama de artículos y recursos educativos.
+- **[Educación financiera](/es/glossario/es-educacion-financiera)**: Continúa aprendiendo sobre finanzas personales y inversiones. Sitios como [Investopedia](https://www.investopedia.com/) ofrecen una amplia gama de artículos y recursos educativos.
 
 ![Estrategias para el Éxito](/images/posts/revisite-seu-orcamento-4.webp)
 

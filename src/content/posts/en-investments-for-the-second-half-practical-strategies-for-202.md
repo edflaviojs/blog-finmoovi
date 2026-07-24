@@ -33,7 +33,7 @@ The second half of the year is usually busier: vacations, end‑of‑year partie
 ## Why focus on the second half?
 
 ### 1. Market seasonality  
-Historically, some sectors tend to rise in the second half – tourism, retail, energy, and technology. This “high season” can create profit opportunities, but it also brings [volatility](/en/glossario/en-volatilidade) that needs attention.
+Historically, some sectors tend to rise in the second half – tourism, retail, energy, and technology. This “high season” can create profit opportunities, but it also brings [volatility](/en/glossario/en-volatility) that needs attention.
 
 ### 2. Annual goal‑adjustment point  
 If you haven’t yet hit your savings or return target, the second half is the last chance to correct the course before the fiscal year ends.
@@ -64,7 +64,7 @@ After paying the bills, calculate how much is left for new investments. In the e
 
 - **Short term (up to 12 months):** goal to use the money this year (travel, buying an appliance).
 - **Medium term (1‑3 years):** goals like a down‑payment for a house or a car.
-- **Long term (5 years or more):** retirement, [financial independence](/en/glossario/en-independencia-financeira).
+- **Long term (5 years or more):** retirement, [financial independence](/en/glossario/en-financial-independence).
 
 For the second half, most people focus on **short and medium term**, but don’t forget to set aside a piece for the long term.
 
@@ -73,7 +73,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 | Asset type                               | Risk       | Recommendation for 2nd half |
 |------------------------------------------|------------|------------------------------|
 | **Tesouro [Selic](/en/glossario/en-selic)** (fixed income)        | Low        | Emergency reserve and safety contribution |
-| **CDBs with daily [liquidity](/en/glossario/en-liquidez)**           | Low‑medium | Complement to Selic, returns above savings |
+| **CDBs with daily [liquidity](/en/glossario/en-liquidity)**           | Low‑medium | Complement to Selic, returns above savings |
 | **Index funds ([ETF](/en/glossario/en-etf)) of stocks**         | Medium‑high| Exposure to seasonal sectors (retail, energy) |
 | **Real‑estate funds (FIIs)**             | Medium     | Monthly rent receipts, good for passive income |
 | **Cryptocurrencies or alternative assets** | High       | Only 5 % of the portfolio, for those who accept volatility |
@@ -141,7 +141,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 Yes. Begin with Tesouro Selic, which has daily liquidity and protects capital. As the reserve grows, diversify.
 
 **2. How much should I allocate to FIIs?**  
-It depends on your passive‑income goal. An allocation of 10‑20 % usually yields monthly [dividends](/en/glossario/en-dividendos) without hurting diversification.
+It depends on your passive‑income goal. An allocation of 10‑20 % usually yields monthly [dividends](/en/glossario/en-dividends) without hurting diversification.
 
 **3. Is it safe to buy international ETFs?**  
 It’s possible through brokers that offer access to BDRs or overseas investment funds. Check custody fees and taxes.

@@ -21,7 +21,7 @@ seo:
 Las acciones son una forma de invertir en empresas, permitiéndote ser dueño de una pequeña parte de ellas. Imagina que tienes un negocio de helados y decides vender partes de tu negocio a amigos y familiares para obtener [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) y expandir tu negocio. Cada parte que vendes se llama "acción". Las personas que compran estas acciones se convierten en accionistas y tienen derecho a recibir una parte de las ganancias del negocio, si es que hay ganancias.
 
 * Las acciones pueden ser de diferentes tipos, como acciones comunes o preferentes
-* Cada acción tiene un [valor](/es/glossario/es-valor-financeiro), que puede fluctuar según el desempeño de la empresa
+* Cada acción tiene un [valor](/es/glossario/es-valor-financiero), que puede fluctuar según el desempeño de la empresa
 * Las acciones se pueden comprar y vender en bolsas de valores, como la B3 en Brasil
 
 ![Qué es](/images/glossario/acoes-inline-1.webp)
@@ -55,7 +55,7 @@ Las acciones también pueden ser una forma de ahorrar para el largo plazo, como 
 ## Riesgos
 Las acciones también conllevan riesgos, como:
 * La posibilidad de perder dinero si la empresa no tiene un buen desempeño
-* La [volatilidad](/es/glossario/es-volatilidade) del mercado, que puede hacer que el valor de tus acciones fluctúe
+* La [volatilidad](/es/glossario/es-volatilidad) del mercado, que puede hacer que el valor de tus acciones fluctúe
 * La falta de [liquidez](/es/glossario/es-liquidez), que puede hacer que sea difícil vender tus acciones cuando lo necesites
 
 **Consejo práctico:** Es importante entender que las acciones son una inversión a largo plazo, y no debes invertir dinero que necesites en el corto plazo. Puedes hacer esto invirtiendo solo el dinero que estás dispuesto a perder, y manteniendo una reserva de emergencia para cubrir tus gastos básicos.

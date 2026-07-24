@@ -20,7 +20,7 @@ seo:
 
 ## Introducción  
 
-Si acabas de abrir una cuenta en un banco o de recibir tu primer sueldo, la primera gran duda suele ser: **¿dónde colocar el dinero?** No hay una única respuesta. En 2026, las dos categorías más comentadas son **renta fija** y **[renta variable](/es/glossario/es-renda-variavel)**. Cada una tiene ventajas, riesgos y momentos ideales de uso. En este artículo analizaremos ambos lados de la moneda, compararemos criterios importantes y te ayudaremos a decidir cuál combina mejor con tu objetivo, tolerancia al riesgo y horizonte de tiempo. Ah, y al final te recomendaremos una herramienta práctica – el **FinMoovi** – que facilita el seguimiento de cualquier elección que hagas.  
+Si acabas de abrir una cuenta en un banco o de recibir tu primer sueldo, la primera gran duda suele ser: **¿dónde colocar el dinero?** No hay una única respuesta. En 2026, las dos categorías más comentadas son **renta fija** y **[renta variable](/es/glossario/es-renta-variable)**. Cada una tiene ventajas, riesgos y momentos ideales de uso. En este artículo analizaremos ambos lados de la moneda, compararemos criterios importantes y te ayudaremos a decidir cuál combina mejor con tu objetivo, tolerancia al riesgo y horizonte de tiempo. Ah, y al final te recomendaremos una herramienta práctica – el **FinMoovi** – que facilita el seguimiento de cualquier elección que hagas.  
 
 ---  
 
@@ -39,7 +39,7 @@ La renta fija engloba inversiones en las que la remuneración (interés o rendim
 
 *Basado en datos del Banco Central y del Tesoro Directo hasta diciembre de 2025.  
 
-La lógica es simple: prestas dinero (o compras títulos) y recibes intereses a lo largo del tiempo. El **principal** ([valor](/es/glossario/es-valor-financeiro) invertido) suele devolverse al vencimiento o puede rescatarse antes, según el producto. Como la remuneración está vinculada a índices como el CDI o la Selic, la variación de la tasa de interés en el país afecta directamente el retorno.  
+La lógica es simple: prestas dinero (o compras títulos) y recibes intereses a lo largo del tiempo. El **principal** ([valor](/es/glossario/es-valor-financiero) invertido) suele devolverse al vencimiento o puede rescatarse antes, según el producto. Como la remuneración está vinculada a índices como el CDI o la Selic, la variación de la tasa de interés en el país afecta directamente el retorno.  
 
 ### Ventajas de la renta fija  
 
@@ -50,7 +50,7 @@ La lógica es simple: prestas dinero (o compras títulos) y recibes intereses a 
 
 ### Desventajas de la renta fija  
 
-1. **Rentabilidad limitada** – Cuando la [inflación](/es/glossario/es-inflacao) sube, la renta fija puede quedar atrás de inversiones más agresivas.  
+1. **Rentabilidad limitada** – Cuando la [inflación](/es/glossario/es-inflacion) sube, la renta fija puede quedar atrás de inversiones más agresivas.  
 2. **Dependencia de la tasa Selic** – Si el Banco Central mantiene los intereses bajos por mucho tiempo, los retornos caen.  
 3. **Posible “costo de oportunidad”** – Dinero atrapado en un CDB a 5 años rinde menos que acciones que pueden subir 30 % en seis meses.  
 

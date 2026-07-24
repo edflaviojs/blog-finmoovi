@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Tesouro Direto is a program created by the Brazilian government that allows citizens to invest directly in public bonds, such as LTNs (Letras do Tesouro Nacional) and NTNs (Notas do Tesouro Nacional). These bonds are basically loans you make to the government, which, in return, pays [interest](/en/glossario/en-juros) on the [value](/en/glossario/en-valor-financeiro) invested. It’s a way to put your money to work safely and profitably, because the bonds are guaranteed by the government.
+Tesouro Direto is a program created by the Brazilian government that allows citizens to invest directly in public bonds, such as LTNs (Letras do Tesouro Nacional) and NTNs (Notas do Tesouro Nacional). These bonds are basically loans you make to the government, which, in return, pays [interest](/en/glossario/en-juros) on the [value](/en/glossario/en-financial-value) invested. It’s a way to put your money to work safely and profitably, because the bonds are guaranteed by the government.
 
 The Tesouro Direto bonds vary in maturities and interest rates, which means you can choose the one that best fits your financial needs. For example, if you have R$ 5,000 to invest and don’t need the money for the next 5 years, you can opt for a longer‑term bond, which usually offers higher interest rates.
 
@@ -30,14 +30,14 @@ The Tesouro Direto bonds vary in maturities and interest rates, which means you 
 ## How it works
 The operation of Tesouro Direto is relatively simple. You buy a public bond at its nominal value (the amount for which the bond is issued) and, during the agreed term, the government pays interest on that amount. At the end of the term, the government returns the bond’s nominal value plus the accumulated interest. **Practical tip:** It’s important to understand that interest is paid periodically—monthly, quarterly, semi‑annually, or annually—depending on the bond you choose.
 
-For example, if you invest R$ 3,000 in a bond with a 2‑year term and an annual [rate](/en/glossario/en-taxa-financeira) of 8%, at the end of the term you will receive the R$ 3,000 back plus interest of R$ 480 (8% of R$ 3,000 for 2 years, using simple interest for simplicity). **Practical tip:** Always check current interest rates and available maturities before investing, as they can change.
+For example, if you invest R$ 3,000 in a bond with a 2‑year term and an annual [rate](/en/glossario/en-financial-fee) of 8%, at the end of the term you will receive the R$ 3,000 back plus interest of R$ 480 (8% of R$ 3,000 for 2 years, using simple interest for simplicity). **Practical tip:** Always check current interest rates and available maturities before investing, as they can change.
 
 ## Advantages
 The main benefits of Tesouro Direto include:
 * **Safety:** Because the bonds are government‑guaranteed, the risk of loss is very low.  
 * **Yield:** The interest paid can be higher than that offered by other low‑risk financial products.  
 * **Liquidity:** Although bonds have fixed maturities, you can sell them before they mature if needed; however, you may face penalties or loss of interest.  
-* **[Diversification](/en/glossario/en-diversificacao):** Tesouro Direto can be a good option to diversify your investment portfolio, reducing reliance on just one type of [investment](/en/glossario/en-aplicacao-financeira).
+* **[Diversification](/en/glossario/en-diversificacao):** Tesouro Direto can be a good option to diversify your investment portfolio, reducing reliance on just one type of [investment](/en/glossario/en-financial-investment).
 
 **Practical tip:** Consider Tesouro Direto as part of a long‑term investment strategy, because compound interest can significantly increase the value of your investment over time.
 

@@ -19,7 +19,7 @@ seo:
 
 # Weekly Summary of the Brazilian Financial Market: June 22 to June 29, 2026
 
-Hello, everyone! It's time to do a weekly recap of the Brazilian financial market. We'll talk about what happened with the dollar and the euro, the [rate](/en/glossario/en-taxa-financeira) [Selic](/en/glossario/en-selic) and how this can affect your investments. In addition, we'll give a practical tip for you, individual investor, and what to expect for the next week.
+Hello, everyone! It's time to do a weekly recap of the Brazilian financial market. We'll talk about what happened with the dollar and the euro, the [rate](/en/glossario/en-financial-fee) [Selic](/en/glossario/en-selic) and how this can affect your investments. In addition, we'll give a practical tip for you, individual investor, and what to expect for the next week.
 
 ## Dollar and Euro: Weekly Trend
 
@@ -27,7 +27,7 @@ In the past week, the US dollar closed at R$ 5.17, while the euro reached R$�
 
 ![Dollar and Euro: Weekly Trend](/images/posts/en-quotes-semana-5-june-2026-inline-1.webp)
 
-For example, if you're planning a trip to the US, it might be a good idea to buy dollars now, considering the current [value](/en/glossario/en-valor-financeiro). If you have investments in euros, it might be wise to keep an eye on exchange rates to decide the best moment to convert your money.
+For example, if you're planning a trip to the US, it might be a good idea to buy dollars now, considering the current [value](/en/glossario/en-financial-value). If you have investments in euros, it might be wise to keep an eye on exchange rates to decide the best moment to convert your money.
 
 ## Selic Rate and Impact on Investments
 
@@ -37,7 +37,7 @@ However, it is important to remember that the Selic rate can also affect inflati
 
 ## Practical Tip for Individual Investors
 
-A practical tip for you, individual investor, is to diversify your investments. This means not putting all your eggs in one basket, i.e., not investing all your money in a single thing. You can invest in [stocks](/en/glossario/en-acoes), [investment funds](/en/glossario/en-fundo-de-investimento), CDBs, LCI/LCs, and even in foreign currencies.
+A practical tip for you, individual investor, is to diversify your investments. This means not putting all your eggs in one basket, i.e., not investing all your money in a single thing. You can invest in [stocks](/en/glossario/en-acoes), [investment funds](/en/glossario/en-investment-fund), CDBs, LCI/LCs, and even in foreign currencies.
 
 ![Practical Tip for Individual Investors](/images/posts/en-quotes-semana-5-june-2026-inline-3.webp)
 

@@ -12,7 +12,7 @@ readingTime: 1
 
 ## What is IPCA?
 
-The IPCA (National Broad Consumer Price Index) is the official thermometer of [inflation](/en/glossario/en-inflacao) in Brazil. It measures how much prices have risen (or fallen) in a given period. It is calculated by the IBGE every month.
+The IPCA (National Broad Consumer Price Index) is the official thermometer of [inflation](/en/glossario/en-inflation) in Brazil. It measures how much prices have risen (or fallen) in a given period. It is calculated by the IBGE every month.
 
 ## What it measures
 

@@ -32,7 +32,7 @@ The last week was eventful for anyone who follows the Brazilian market. The doll
 
 ## 2. [Selic](/en/glossario/en-selic) and the Impact on Investments
 
-The [rate](/en/glossario/en-taxa-financeira) Selic stayed at **13.75 % per year**, as decided by Copom in the last meeting (June 21). Keeping the rate high has two clear consequences:
+The [rate](/en/glossario/en-financial-fee) Selic stayed at **13.75 % per year**, as decided by Copom in the last meeting (June 21). Keeping the rate high has two clear consequences:
 
 ![2. Selic and the Impact on Investments](/images/posts/en-quotes-semana-3-july-2026-inline-3.webp)
 
@@ -54,7 +54,7 @@ The [rate](/en/glossario/en-taxa-financeira) Selic stayed at **13.75 % per yea
 
 ---
 
-**Quick summary:** Dollar in slight decline, euro stable, high Selic keeping fixed income attractive and credit expensive. Review the currency allocation of your portfolio using **FinMoovi** – it tracks multiple currencies and helps you make more informed decisions. Next week, watch the U.S. inflation calendar and keep enjoying the returns of fixed income while protecting your wealth against exchange‑rate [volatility](/en/glossario/en-volatilidade). Have a great investment week!
+**Quick summary:** Dollar in slight decline, euro stable, high Selic keeping fixed income attractive and credit expensive. Review the currency allocation of your portfolio using **FinMoovi** – it tracks multiple currencies and helps you make more informed decisions. Next week, watch the U.S. inflation calendar and keep enjoying the returns of fixed income while protecting your wealth against exchange‑rate [volatility](/en/glossario/en-volatility). Have a great investment week!
 
 ---
 **Ready to track your investments? [Try FinMoovi for free](https://finmoovi.com) — in 5 minutes you'll have a clear view of where your money is going.**

@@ -20,7 +20,7 @@ seo:
 ## Investing vs Saving
 When it comes to managing our [money](/en/posts/en-30-day-rule-for-purchases), many people use the terms "investing" and "saving" as if they were synonymous, but in reality, they have different meanings and are fundamental to our financial well-being. Investing involves putting your [money](/en/posts/en-avoid-impulse-purchases) into assets that have the potential to grow over time, such as [stocks](/en/glossario/en-acoes), real estate, or [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500) funds. On the other hand, saving is the act of setting aside a portion of your [money](/en/posts/en-creating-an-emergency-fund) for future use, usually in a [savings](/en/posts/en-financial-education-for-children) account or low-risk investment.
 
-To better understand the difference, imagine that you earn R$ 5,000 per month and decide to set aside R$ 1,000 for future use. If you simply put that money into a savings account, you will be saving. However, if you decide to invest that money in stocks or an [investment fund](/en/glossario/en-fundo-de-investimento), you will be investing.
+To better understand the difference, imagine that you earn R$ 5,000 per month and decide to set aside R$ 1,000 for future use. If you simply put that money into a savings account, you will be saving. However, if you decide to invest that money in stocks or an [investment fund](/en/glossario/en-investment-fund), you will be investing.
 
 ## Risks and Returns
 One of the main reasons people choose to invest instead of saving is the potential for returns. High-risk investments can offer higher returns, but they also come with the possibility of significant losses. For example, if you invest R$ 1,000 in stocks and the stock market rises, you may earn R$ 1,500 or more. However, if the market falls, you may lose a significant portion of your investment.
@@ -34,7 +34,7 @@ On the other hand, saving is generally safer, but the returns are lower. In a sa
 ## Financial Planning
 To decide whether you should invest or save, it's essential to have a clear financial plan. This includes defining your financial goals, such as buying a house, paying off debts, or retiring comfortably. Additionally, it's crucial to understand your risk profile and your ability to tolerate losses.
 
-**Practical tip:** Before investing, make sure you have an [emergency fund](/en/glossario/en-reserva-de-emergencia) equivalent to at least 3-6 months of expenses. This will help protect you from unexpected losses and ensure that you have enough money to cover your basic expenses.
+**Practical tip:** Before investing, make sure you have an [emergency fund](/en/glossario/en-emergency-fund) equivalent to at least 3-6 months of expenses. This will help protect you from unexpected losses and ensure that you have enough money to cover your basic expenses.
 
 ## Investment Strategies
 If you decide to invest, it's essential to have a clear strategy. This can include diversifying your investments, i.e., spreading your money across different types of assets to reduce risk. Additionally, it's crucial to be aware of the fees and costs associated with investments, as they can eat into your returns.

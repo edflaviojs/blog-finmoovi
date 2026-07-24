@@ -42,7 +42,7 @@ Invertir en los instrumentos que cotizan en Wall Street puede ofrecer varios b
 
 
 - **Diversificación:** Puedes repartir tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) en distintas empresas y sectores, reduciendo el riesgo de que una sola mala decisión te deje sin nada.  
-- **Potencial de crecimiento:** Algunas acciones pueden multiplicar su valor en pocos años, generando ganancias superiores a la [inflación](/es/glossario/es-inflacao).  
+- **Potencial de crecimiento:** Algunas acciones pueden multiplicar su valor en pocos años, generando ganancias superiores a la [inflación](/es/glossario/es-inflacion).  
 - **Liquidez:** La mayoría de los activos se pueden vender rápidamente, lo que te da acceso a tu dinero cuando lo necesites.  
 - **Acceso a información:** Gracias a la transparencia de los mercados, tienes datos públicos sobre resultados financieros y decisiones corporativas.
 
@@ -50,7 +50,7 @@ Invertir en los instrumentos que cotizan en Wall Street puede ofrecer varios b
 
 Como todo en la vida, lo que sube también puede bajar. Es importante que conozcas los peligros antes de lanzarte.  
 
-- **[Volatilidad](/es/glossario/es-volatilidade):** Los precios pueden cambiar bruscamente por noticias, crisis económicas o decisiones de política monetaria.  
+- **[Volatilidad](/es/glossario/es-volatilidad):** Los precios pueden cambiar bruscamente por noticias, crisis económicas o decisiones de política monetaria.  
 - **Pérdida de capital:** Si compras una acción y su valor cae, puedes perder parte o todo lo invertido.  
 - **Sobreendeudamiento:** Usar dinero prestado (apalancamiento) para invertir aumenta tanto la posible ganancia como la posible pérdida.  
 - **Falta de conocimiento:** Operar sin entender los conceptos básicos puede llevar a decisiones impulsivas y costosas.
@@ -63,7 +63,7 @@ Imagina que ganas entre R$ 3 000 y R$ 8 000 al mes y decides destinar un
 - **Caso 2:** Con un salario de R$ 5 800, apartas el 15 % (R$ 870) y lo inviertes en un fondo de índice que replica el S&P 500. Si el índice crece un 8 % en el año, tu inversión pasa a valer R$ 939, lo que representa R$ 69 de ganancia.  
 - **Caso 3:** Con un salario de R$ 7 200, decides destinar el 20 % (R$ 1 440) a comprar bonos del gobierno que pagan un 5 % anual. Al cabo de un año, recibes R$ 1 512, obteniendo R$ 72 de intereses.  
 
-**Consejo práctico:** **Empieza con una cantidad que no comprometa tu [fondo de emergencia](/es/glossario/es-reserva-de-emergencia); así podrás aguantar la volatilidad sin estrés.**  
+**Consejo práctico:** **Empieza con una cantidad que no comprometa tu [fondo de emergencia](/es/glossario/es-fondo-de-emergencia); así podrás aguantar la volatilidad sin estrés.**  
 
 **Consejo práctico:** **Revisa tu cartera cada tres meses y ajusta la distribución según tus metas y cambios en el mercado.**  
 

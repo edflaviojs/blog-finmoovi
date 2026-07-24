@@ -17,7 +17,7 @@ seo:
   keywords: ["financial education for children","personal finance","economy","money"]
 ---
 
-## Basic [Financial Education](/en/glossario/en-educacao-financeira)
+## Basic [Financial Education](/en/glossario/en-financial-education)
 Teaching [personal finance](/en/posts/en-30-day-rule-for-purchases) to children is essential for them to develop healthy habits regarding [money](/en/posts/en-creating-an-emergency-fund). This starts with a basic understanding that [money](/en/posts/en-difference-between-investing-and-saving) is not infinite and that it's necessary to work to earn it. For example, if a parent earns R$ 5,000 per month and the family spends R$ 3,000 on basic [expenses](/en/posts/en-the-50-30-20-method-for-budgeting), the child can begin to understand that the remaining amount can be used to save or invest.
 
 A practical way to start is by giving children an allowance, which they can use to buy things they want, such as toys or sweets. However, it's essential to teach that the allowance should also be used to save and help with family expenses. For example, if the allowance is R$ 100 per month, the child can decide to save R$ 20 to buy a more expensive toy in the future.

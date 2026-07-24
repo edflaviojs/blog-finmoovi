@@ -27,7 +27,7 @@ El dólar estadounidense cerró la semana en R$ 5,03, mostrando una ligera estab
 
 ## Selic e Impacto en las Inversiones
 
-La tasa Selic, actualmente en 12,25% anual, fue mantenida por el Comité de Política Monetária (Copom) del Banco Central. Esta decisión busca controlar la [inflación](/es/glossario/es-inflacao) y mantener la estabilidad económica. Para los inversores, el mantenimiento de la Selic significa que las inversiones con tasas de interés prefijadas, como los títulos del [Tesouro Direto](/es/glossario/es-tesouro-direto), continuarán ofreciendo rendimientos atractivos, especialmente cuando se comparan con otras opciones de inversión de bajo riesgo.
+La tasa Selic, actualmente en 12,25% anual, fue mantenida por el Comité de Política Monetária (Copom) del Banco Central. Esta decisión busca controlar la [inflación](/es/glossario/es-inflacion) y mantener la estabilidad económica. Para los inversores, el mantenimiento de la Selic significa que las inversiones con tasas de interés prefijadas, como los títulos del [Tesouro Direto](/es/glossario/es-tesouro-direto), continuarán ofreciendo rendimientos atractivos, especialmente cuando se comparan con otras opciones de inversión de bajo riesgo.
 
 ## Consejo Práctico para el Inversor
 

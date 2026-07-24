@@ -1,0 +1,410 @@
+[
+  {
+    "old": "en-amortizacao",
+    "new": "en-amortization",
+    "locale": "en",
+    "term": "Amortization"
+  },
+  {
+    "old": "en-aplicacao-financeira",
+    "new": "en-financial-investment",
+    "locale": "en",
+    "term": "financial investment"
+  },
+  {
+    "old": "en-bonus-salarial",
+    "new": "en-salary-bonus",
+    "locale": "en",
+    "term": "salary bonus"
+  },
+  {
+    "old": "en-cheque-especial",
+    "new": "en-overdraft",
+    "locale": "en",
+    "term": "Overdraft"
+  },
+  {
+    "old": "en-consorcio",
+    "new": "en-consortium",
+    "locale": "en",
+    "term": "Consortium"
+  },
+  {
+    "old": "en-dividendos",
+    "new": "en-dividends",
+    "locale": "en",
+    "term": "Dividends"
+  },
+  {
+    "old": "en-educacao-financeira",
+    "new": "en-financial-education",
+    "locale": "en",
+    "term": "Financial Education"
+  },
+  {
+    "old": "en-financiamento",
+    "new": "en-financing",
+    "locale": "en",
+    "term": "Financing"
+  },
+  {
+    "old": "en-fundo-de-investimento",
+    "new": "en-investment-fund",
+    "locale": "en",
+    "term": "investment fund"
+  },
+  {
+    "old": "en-fundos-imobiliarios",
+    "new": "en-real-estate-funds-reits",
+    "locale": "en",
+    "term": "Real Estate Funds (REITs)"
+  },
+  {
+    "old": "en-ganho-de-capital",
+    "new": "en-capital-gain",
+    "locale": "en",
+    "term": "Capital Gain"
+  },
+  {
+    "old": "en-garantia-fgc",
+    "new": "en-fgc-guarantee",
+    "locale": "en",
+    "term": "FGC Guarantee"
+  },
+  {
+    "old": "en-governanca-corporativa",
+    "new": "en-corporate-governance",
+    "locale": "en",
+    "term": "corporate governance"
+  },
+  {
+    "old": "en-independencia-financeira",
+    "new": "en-financial-independence",
+    "locale": "en",
+    "term": "Financial Independence"
+  },
+  {
+    "old": "en-inflacao",
+    "new": "en-inflation",
+    "locale": "en",
+    "term": "Inflation"
+  },
+  {
+    "old": "en-juros-compostos",
+    "new": "en-compound-interest",
+    "locale": "en",
+    "term": "Compound Interest"
+  },
+  {
+    "old": "en-juros-simples",
+    "new": "en-simple-interest",
+    "locale": "en",
+    "term": "Simple Interest"
+  },
+  {
+    "old": "en-liquidez",
+    "new": "en-liquidity",
+    "locale": "en",
+    "term": "Liquidity"
+  },
+  {
+    "old": "en-margem-de-lucro",
+    "new": "en-profit-margin",
+    "locale": "en",
+    "term": "Profit Margin"
+  },
+  {
+    "old": "en-meta-financeira",
+    "new": "en-financial-goal",
+    "locale": "en",
+    "term": "Financial Goal"
+  },
+  {
+    "old": "en-opcao-financeira",
+    "new": "en-financial-option",
+    "locale": "en",
+    "term": "financial option"
+  },
+  {
+    "old": "en-orcamento-pessoal",
+    "new": "en-personal-budget",
+    "locale": "en",
+    "term": "Personal Budget"
+  },
+  {
+    "old": "en-patrimonio-liquido",
+    "new": "en-net-worth",
+    "locale": "en",
+    "term": "Net Worth"
+  },
+  {
+    "old": "en-previdencia-privada",
+    "new": "en-private-pension",
+    "locale": "en",
+    "term": "Private Pension"
+  },
+  {
+    "old": "en-qualidade-de-ativos",
+    "new": "en-asset-quality",
+    "locale": "en",
+    "term": "asset quality"
+  },
+  {
+    "old": "en-quitacao-antecipada",
+    "new": "en-early-payoff",
+    "locale": "en",
+    "term": "Early Payoff"
+  },
+  {
+    "old": "en-renda-variavel",
+    "new": "en-variable-income",
+    "locale": "en",
+    "term": "Variable Income"
+  },
+  {
+    "old": "en-reserva-de-emergencia",
+    "new": "en-emergency-fund",
+    "locale": "en",
+    "term": "Emergency Fund"
+  },
+  {
+    "old": "en-score-de-credito",
+    "new": "en-credit-score",
+    "locale": "en",
+    "term": "Credit Score"
+  },
+  {
+    "old": "en-tabela-sac",
+    "new": "en-sac-amortization-table",
+    "locale": "en",
+    "term": "SAC Amortization Table"
+  },
+  {
+    "old": "en-taxa-financeira",
+    "new": "en-financial-fee",
+    "locale": "en",
+    "term": "financial fee"
+  },
+  {
+    "old": "en-urgencia-financeira",
+    "new": "en-financial-emergency",
+    "locale": "en",
+    "term": "Financial Emergency"
+  },
+  {
+    "old": "en-valor-financeiro",
+    "new": "en-financial-value",
+    "locale": "en",
+    "term": "financial value"
+  },
+  {
+    "old": "en-valor-presente",
+    "new": "en-present-value",
+    "locale": "en",
+    "term": "Present Value"
+  },
+  {
+    "old": "en-volatilidade",
+    "new": "en-volatility",
+    "locale": "en",
+    "term": "Volatility"
+  },
+  {
+    "old": "en-zona-de-conforto-financeira",
+    "new": "en-financial-comfort-zone",
+    "locale": "en",
+    "term": "Financial Comfort Zone"
+  },
+  {
+    "old": "es-amortizacao",
+    "new": "es-amortizacion",
+    "locale": "es",
+    "term": "Amortización"
+  },
+  {
+    "old": "es-aplicacao-financeira",
+    "new": "es-aplicacion-financiera",
+    "locale": "es",
+    "term": "aplicación financiera"
+  },
+  {
+    "old": "es-bonus-salarial",
+    "new": "es-bono-salarial",
+    "locale": "es",
+    "term": "bono salarial"
+  },
+  {
+    "old": "es-cheque-especial",
+    "new": "es-sobregiro",
+    "locale": "es",
+    "term": "Sobregiro"
+  },
+  {
+    "old": "es-educacao-financeira",
+    "new": "es-educacion-financiera",
+    "locale": "es",
+    "term": "Educación Financiera"
+  },
+  {
+    "old": "es-financiamento",
+    "new": "es-financiamiento",
+    "locale": "es",
+    "term": "Financiamiento"
+  },
+  {
+    "old": "es-fundo-de-investimento",
+    "new": "es-fondo-de-inversion",
+    "locale": "es",
+    "term": "fondo de inversión"
+  },
+  {
+    "old": "es-fundos-imobiliarios",
+    "new": "es-fondos-inmobiliarios",
+    "locale": "es",
+    "term": "Fondos Inmobiliarios"
+  },
+  {
+    "old": "es-ganho-de-capital",
+    "new": "es-ganancia-de-capital",
+    "locale": "es",
+    "term": "Ganancia de Capital"
+  },
+  {
+    "old": "es-governanca-corporativa",
+    "new": "es-gobernanza-corporativa",
+    "locale": "es",
+    "term": "gobernanza corporativa"
+  },
+  {
+    "old": "es-independencia-financeira",
+    "new": "es-independencia-financiera",
+    "locale": "es",
+    "term": "Independencia Financiera"
+  },
+  {
+    "old": "es-inflacao",
+    "new": "es-inflacion",
+    "locale": "es",
+    "term": "Inflación"
+  },
+  {
+    "old": "es-juros-compostos",
+    "new": "es-interes-compuesto",
+    "locale": "es",
+    "term": "Interés Compuesto"
+  },
+  {
+    "old": "es-juros-simples",
+    "new": "es-interes-simple",
+    "locale": "es",
+    "term": "Interés Simple"
+  },
+  {
+    "old": "es-lci-e-lca",
+    "new": "es-lci-y-lca",
+    "locale": "es",
+    "term": "LCI y LCA"
+  },
+  {
+    "old": "es-margem-de-lucro",
+    "new": "es-margen-de-ganancia",
+    "locale": "es",
+    "term": "Margen de Ganancia"
+  },
+  {
+    "old": "es-meta-financeira",
+    "new": "es-meta-financiera",
+    "locale": "es",
+    "term": "Meta Financiera"
+  },
+  {
+    "old": "es-opcao-financeira",
+    "new": "es-opcion-financiera",
+    "locale": "es",
+    "term": "opción financiera"
+  },
+  {
+    "old": "es-orcamento-pessoal",
+    "new": "es-presupuesto-personal",
+    "locale": "es",
+    "term": "Presupuesto Personal"
+  },
+  {
+    "old": "es-patrimonio-liquido",
+    "new": "es-patrimonio-neto",
+    "locale": "es",
+    "term": "Patrimonio Neto"
+  },
+  {
+    "old": "es-previdencia-privada",
+    "new": "es-pension-privada",
+    "locale": "es",
+    "term": "Pensión Privada"
+  },
+  {
+    "old": "es-qualidade-de-ativos",
+    "new": "es-calidad-de-activos",
+    "locale": "es",
+    "term": "calidad de activos"
+  },
+  {
+    "old": "es-quitacao-antecipada",
+    "new": "es-pago-anticipado",
+    "locale": "es",
+    "term": "Pago Anticipado"
+  },
+  {
+    "old": "es-renda-variavel",
+    "new": "es-renta-variable",
+    "locale": "es",
+    "term": "Renta Variable"
+  },
+  {
+    "old": "es-reserva-de-emergencia",
+    "new": "es-fondo-de-emergencia",
+    "locale": "es",
+    "term": "Fondo de Emergencia"
+  },
+  {
+    "old": "es-score-de-credito",
+    "new": "es-puntaje-de-credito",
+    "locale": "es",
+    "term": "Puntaje de Crédito"
+  },
+  {
+    "old": "es-tabela-sac",
+    "new": "es-tabla-sac",
+    "locale": "es",
+    "term": "Tabla SAC"
+  },
+  {
+    "old": "es-taxa-financeira",
+    "new": "es-tasa-financiera",
+    "locale": "es",
+    "term": "tasa financiera"
+  },
+  {
+    "old": "es-urgencia-financeira",
+    "new": "es-emergencia-financiera",
+    "locale": "es",
+    "term": "Emergencia Financiera"
+  },
+  {
+    "old": "es-valor-financeiro",
+    "new": "es-valor-financiero",
+    "locale": "es",
+    "term": "valor financiero"
+  },
+  {
+    "old": "es-volatilidade",
+    "new": "es-volatilidad",
+    "locale": "es",
+    "term": "Volatilidad"
+  },
+  {
+    "old": "es-zona-de-conforto-financeira",
+    "new": "es-zona-de-confort-financiera",
+    "locale": "es",
+    "term": "Zona de Confort Financiera"
+  }
+]

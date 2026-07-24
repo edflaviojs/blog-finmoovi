@@ -10,7 +10,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué es [Valor](/es/glossario/es-valor-financeiro) Presente?
+## ¿Qué es [Valor](/es/glossario/es-valor-financiero) Presente?
 
 Valor Presente es cuánto vale HOY un dinero que vas a recibir en el FUTURO. R$ 1.000 dentro de 1 año vale menos que R$ 1.000 hoy — porque hoy podrías invertir y tener más en el futuro.
 
@@ -21,7 +21,7 @@ Valor Presente es cuánto vale HOY un dinero que vas a recibir en el FUTURO. R$ 
 Donde:
 - VP = Valor Presente
 - VF = Valor Futuro
-- i = [taxa](/es/glossario/es-taxa-financeira) de [juros](/es/glossario/es-juros)
+- i = [taxa](/es/glossario/es-tasa-financiera) de [juros](/es/glossario/es-juros)
 - n = número de períodos
 
 ## Ejemplo práctico
@@ -39,7 +39,7 @@ Es decir: recibir R$ 10.000 dentro de 2 años es lo mismo que recibir R$ 7.831 h
 3. **Precificar títulos** de [renda fixa](/es/glossario/es-renda-fixa)
 4. **Decisiones de negocios** (¿vale la pena este proyecto?)
 
-## [Aplicación](/es/glossario/es-aplicacao-financeira) en el día a día
+## [Aplicación](/es/glossario/es-aplicacion-financiera) en el día a día
 
 Cuando una tienda ofrece "12x sin intereses de R$ 100 o R$ 1.000 al contado":
 - 12 cuotas = R$ 1.200 en total

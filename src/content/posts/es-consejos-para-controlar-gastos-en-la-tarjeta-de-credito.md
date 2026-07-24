@@ -20,7 +20,7 @@ seo:
 ## [Control de Gastos](/es/posts/es-metodo-50-30-20-para-presupuesto)
 Imagina que ganas $ 5.000 por mes y gastas $ 1.500 en gastos fijos, como alquiler, cuenta de luz y internet. Eso significa que tienes $ 3.500 disponibles para gastar en otras cosas, como comida, ocio y compras. Sin embargo, si no controlas tus gastos, es fácil superar ese límite y acabar con deudas en la [tarjeta de crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen).
 
-Una forma de evitar esto es crear un [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) y llevar un registro de tus gastos. **Consejo práctico:** Puedes usar una aplicación de [gestión financiera](/es/posts/es-montando-cartera-diversificada-con-r-500) para registrar todos tus gastos y tener una visión clara de dónde está yendo tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado). Por ejemplo, si gastas $ 500 por mes en comida fuera, puedes intentar reducir ese [valor](/es/glossario/es-valor-financeiro) a $ 300 y ahorrar $ 200.
+Una forma de evitar esto es crear un [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) y llevar un registro de tus gastos. **Consejo práctico:** Puedes usar una aplicación de [gestión financiera](/es/posts/es-montando-cartera-diversificada-con-r-500) para registrar todos tus gastos y tener una visión clara de dónde está yendo tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado). Por ejemplo, si gastas $ 500 por mes en comida fuera, puedes intentar reducir ese [valor](/es/glossario/es-valor-financiero) a $ 300 y ahorrar $ 200.
 
 ## Gastos en la Tarjeta de Crédito
 Las tarjetas de crédito pueden ser una herramienta útil para hacer compras en línea o en tiendas, pero también pueden ser una trampa para aquellos que no saben controlar sus gastos. Es importante recordar que la tarjeta de crédito no es [dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) gratuito y que tendrás que pagar todos los gastos realizados con intereses y tasas.
@@ -38,7 +38,7 @@ Existen muchas formas de ahorrar dinero y reducir los gastos en la tarjeta de cr
 * Usa transporte público o bicicleta en lugar de coche
 * Cancela suscripciones de servicios que no usas
 
-**Consejo práctico:** Puedes crear un [fondo de emergencia](/es/glossario/es-reserva-de-emergencia) para cubrir gastos inesperados y evitar tener que usar la tarjeta de crédito. Por ejemplo, si ahorras $ 1.000 por mes, tendrás $ 12.000 en un año, lo que puede ser suficiente para cubrir gastos inesperados.
+**Consejo práctico:** Puedes crear un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) para cubrir gastos inesperados y evitar tener que usar la tarjeta de crédito. Por ejemplo, si ahorras $ 1.000 por mes, tendrás $ 12.000 en un año, lo que puede ser suficiente para cubrir gastos inesperados.
 
 ![Consejos para Ahorrar](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-3.webp)
 

@@ -25,7 +25,7 @@ ETFs are traded on stock exchanges, just like stocks, and their price is determi
 ![What it is](/images/glossario/etf-inline-1.webp)
 
 ## How it works
-An ETF works basically like a mutual fund, but with some important differences. While [fundos](/en/glossario/en-fundo-de-investimento) mutual funds are traded once a day, after the market closes, ETFs are traded in real time, during market hours. This means you can buy or sell an ETF at any time, as long as the exchange is open. Moreover, ETFs are more transparent than mutual funds, because the assets that compose the fund are disclosed daily.
+An ETF works basically like a mutual fund, but with some important differences. While [fundos](/en/glossario/en-investment-fund) mutual funds are traded once a day, after the market closes, ETFs are traded in real time, during market hours. This means you can buy or sell an ETF at any time, as long as the exchange is open. Moreover, ETFs are more transparent than mutual funds, because the assets that compose the fund are disclosed daily.
 
 The main components of an ETF include:
 * The fund manager, responsible for managing the ETF’s assets

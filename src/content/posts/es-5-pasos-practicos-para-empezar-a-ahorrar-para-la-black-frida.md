@@ -113,7 +113,7 @@ Llegar al día de la Black Friday sin un plan puede convertir la oportunidad en 
 4. **Elabora un cronograma** – conoce qué tiendas inician sus ofertas más temprano (ej.: Amazon a las 00 h).
 5. **Usa FinMoovi** para registrar el valor gastado en cada compra y asegurarte de no sobrepasar el presupuesto total.
 
-## 7. Reserva un “[fondo de emergencia](/es/glossario/es-reserva-de-emergencia)” para imprevistos
+## 7. Reserva un “[fondo de emergencia](/es/glossario/es-fondo-de-emergencia)” para imprevistos
 
 Incluso con todo el plan, los imprevistos ocurren (reparación de auto, consulta médica). Para no tocar la reserva de la Black Friday, mantén un fondo de emergencia equivalente a **3 a 6 meses de gastos**. Según el **Bacen**, el 45 % de las familias brasileñas no tiene reserva de emergencia, lo que puede llevar al endeudamiento.
 

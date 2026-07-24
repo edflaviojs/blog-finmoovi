@@ -30,7 +30,7 @@ La moeda puede ser física, como los billetes y monedas, o digital, como el [din
 La moeda funciona como un medio de cambio, lo que significa que podemos intercambiarla por bienes y servicios. Por ejemplo, si ganamos R$ 5.000 al mes y queremos comprar un par de zapatos que cuesta R$ 200, podemos pagar con efectivo o con nuestra tarjeta de crédito. La moeda también se utiliza para pagar deudas, como la renta o la hipoteca, y para ahorrar para el futuro.
 
 Algunas de las características clave de la moeda son:
-* Es una unidad de cuenta, lo que significa que se utiliza para medir el [valor](/es/glossario/es-valor-financeiro) de los bienes y servicios.
+* Es una unidad de cuenta, lo que significa que se utiliza para medir el [valor](/es/glossario/es-valor-financiero) de los bienes y servicios.
 * Es un medio de cambio, lo que significa que se puede intercambiar por otros bienes y servicios.
 * Es una reserva de valor, lo que significa que se puede ahorrar para el futuro.
 
@@ -48,7 +48,7 @@ La moeda tiene varias ventajas, como:
 
 ## Riesgos
 La moeda también tiene algunos riesgos, como:
-* La [inflación](/es/glossario/es-inflacao), que es el aumento del precio de los bienes y servicios con el tiempo.
+* La [inflación](/es/glossario/es-inflacion), que es el aumento del precio de los bienes y servicios con el tiempo.
 * La devaluación, que es la disminución del valor de la moeda en relación con otras moedas.
 * El riesgo de pérdida, si se pierde o se roba el dinero.
 

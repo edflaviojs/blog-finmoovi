@@ -16,7 +16,7 @@ seo:
   keywords: ["ipca junio 2026","índice de costo de vida","inflación por grupo de gasto","cotización dólar cierre"]
 ---
 
-En junio de 2026, el costo de vida subió 0,16 % según el IPCA general divulgado por el IBGE, indicando un aumento modesto en los precios al consumidor ese mes. Este ajuste refleja la variación acumulada de 4,64 % en los últimos 12 meses, mostrando que la [inflación](/es/glossario/es-inflacao) aún presiona la cartera, aunque el ritmo mensual ha sido relativamente bajo.
+En junio de 2026, el costo de vida subió 0,16 % según el IPCA general divulgado por el IBGE, indicando un aumento modesto en los precios al consumidor ese mes. Este ajuste refleja la variación acumulada de 4,64 % en los últimos 12 meses, mostrando que la [inflación](/es/glossario/es-inflacion) aún presiona la cartera, aunque el ritmo mensual ha sido relativamente bajo.
 
 ## IPCA de Junio por grupo de gasto
 

@@ -23,7 +23,7 @@ A Letter of Credit (LC) is a type of financial instrument used to guarantee paym
 * The LC is issued by the buyer's bank
 * The seller receives payment from the bank if the buyer does not pay
 * The LC can be used for domestic or international payments
-* It is common in large [value](/en/glossario/en-valor-financeiro) transactions, such as purchases of goods or services
+* It is common in large [value](/en/glossario/en-financial-value) transactions, such as purchases of goods or services
 
 ![What it is](/images/glossario/lc-inline-1.webp)
 

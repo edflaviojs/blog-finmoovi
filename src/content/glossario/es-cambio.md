@@ -18,7 +18,7 @@ Câmbio es el intercambio de una moneda por otra. Cuando compras dólares para v
 
 - **USD/BRL = 5,50** significa que 1 [dólar](/es/posts/es-cotizaciones-semana-1-julio-2026) cuesta R$ 5,50
 - La tasa cambia cada segundo en el mercado
-- Está influenciada por los intereses, la [inflación](/es/glossario/es-inflacao), la política y el flujo de capitales
+- Está influenciada por los intereses, la [inflación](/es/glossario/es-inflacion), la política y el flujo de capitales
 
 ## Tipos de câmbio
 

@@ -20,7 +20,7 @@ seo:
 
 ## Introduction
 
-If you’ve just opened an account at a bank or received your first paycheck, the first big question is usually: **where to put the money?** There isn’t a one‑size‑fits‑all answer. In 2026, the two most talked‑about categories are **fixed income** and **[variable income](/en/glossario/en-renda-variavel)**. Each has its own advantages, risks, and ideal moments to use. In this article we’ll look at both sides of the coin, compare the key criteria, and help you decide which matches your goal, risk tolerance, and time horizon. Oh, and at the end we’ll point you to a handy tool – **FinMoovi** – that makes tracking any choice you make a breeze.
+If you’ve just opened an account at a bank or received your first paycheck, the first big question is usually: **where to put the money?** There isn’t a one‑size‑fits‑all answer. In 2026, the two most talked‑about categories are **fixed income** and **[variable income](/en/glossario/en-variable-income)**. Each has its own advantages, risks, and ideal moments to use. In this article we’ll look at both sides of the coin, compare the key criteria, and help you decide which matches your goal, risk tolerance, and time horizon. Oh, and at the end we’ll point you to a handy tool – **FinMoovi** – that makes tracking any choice you make a breeze.
 
 ---
 
@@ -32,8 +32,8 @@ Fixed income includes investments where the remuneration (interest or [yield](/e
 
 | Product | Where to Find | Average Rate 2024‑2025* | Features |
 |---------|----------------|-----------------------|----------|
-| [CDB](/en/glossario/en-cdb) (Bank Deposit Certificate) | Commercial banks | 108 % of [CDI](/en/glossario/en-cdi) (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-garantia-fgc) up to R$ 250 k per institution |
-| Treasury Direct – [Selic](/en/glossario/en-selic) | Federal government | 12.8 % a year (Selic 2026) | Daily [liquidity](/en/glossario/en-liquidez), low sovereign risk |
+| [CDB](/en/glossario/en-cdb) (Bank Deposit Certificate) | Commercial banks | 108 % of [CDI](/en/glossario/en-cdi) (≈ 13.2% a year) | [FGC guarantee](/en/glossario/en-fgc-guarantee) up to R$ 250 k per institution |
+| Treasury Direct – [Selic](/en/glossario/en-selic) | Federal government | 12.8 % a year (Selic 2026) | Daily [liquidity](/en/glossario/en-liquidity), low sovereign risk |
 | LCIs/LCAs (Real Estate/Agricultural Credit Letters) | Banks, brokerages | 107 % of CDI (≈ 13 % a year) | IR‑exempt, FGC protection |
 | Corporate [Debentures](/en/glossario/en-debentures) | Brokerages | 9 %‑12 % a year (depending on rating) | Credit risk of the issuing company |
 

@@ -29,7 +29,7 @@ El yield funciona de manera que te permite comparar la rentabilidad de diferente
 
 * El yield se puede calcular de diferentes maneras, dependiendo del tipo de inversión.
 * El yield puede ser fijo o variable, dependiendo del tipo de inversión.
-* El yield puede ser afectado por factores como la [inflación](/es/glossario/es-inflacao), los intereses y el riesgo.
+* El yield puede ser afectado por factores como la [inflación](/es/glossario/es-inflacion), los intereses y el riesgo.
 
 El yield es un concepto importante en finanzas porque te permite evaluar la rentabilidad de tus inversiones y tomar decisiones informadas. Por ejemplo, si tienes un salario de R$5.000 al mes y quieres invertir R$1.000 en una acción, debes considerar el yield que obtendrás en relación con el riesgo que estás dispuesto a asumir.
 
@@ -45,7 +45,7 @@ El yield tiene varias ventajas, incluyendo:
 ## Riesgos
 El yield también conlleva riesgos, incluyendo:
 * El riesgo de pérdida de capital: si inviertes en una acción que no tiene un buen desempeño, puedes perder parte o todo tu capital.
-* El riesgo de inflación: si la inflación aumenta, el [valor](/es/glossario/es-valor-financeiro) de tu inversión puede disminuir.
+* El riesgo de inflación: si la inflación aumenta, el [valor](/es/glossario/es-valor-financiero) de tu inversión puede disminuir.
 * El riesgo de intereses: si los intereses aumentan, el valor de tu inversión puede disminuir.
 * **Consejo práctico:** debes considerar el riesgo de pérdida de capital al tomar decisiones de inversión.
 * **Consejo práctico:** debes diversificar tus inversiones para minimizar el riesgo de pérdida de capital.
@@ -69,5 +69,5 @@ Para empezar a invertir y obtener un buen yield, debes seguir estos pasos:
 * Debes revisar regularmente tus inversiones para asegurarte de que siguen siendo rentables.
 
 ## Empieza hoy
-No esperes más para empezar a invertir y obtener un buen yield. Con un poco de investigación y planificación, puedes empezar a construir una cartera de inversiones que te brinde una buena rentabilidad y te ayude a alcanzar tus objetivos financieros. **Consejo práctico:** debes empezar a invertir lo antes posible para aprovechar el poder del [interés compuesto](/es/glossario/es-juros-compostos). ¡Empieza hoy y comienza a construir un futuro financiero más seguro!
+No esperes más para empezar a invertir y obtener un buen yield. Con un poco de investigación y planificación, puedes empezar a construir una cartera de inversiones que te brinde una buena rentabilidad y te ayude a alcanzar tus objetivos financieros. **Consejo práctico:** debes empezar a invertir lo antes posible para aprovechar el poder del [interés compuesto](/es/glossario/es-interes-compuesto). ¡Empieza hoy y comienza a construir un futuro financiero más seguro!
 

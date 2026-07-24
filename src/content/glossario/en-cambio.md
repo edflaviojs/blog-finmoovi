@@ -18,7 +18,7 @@ Foreign Exchange is the exchange of one currency for another. When you buy dolla
 
 - **USD/BRL = 5,50** means that 1 [dollar](/en/posts/en-quotes-semana-1-july-2026) costs R$ 5,50
 - The rate changes every second in the market
-- It is influenced by interest rates, [inflation](/en/glossario/en-inflacao), politics, and capital flow
+- It is influenced by interest rates, [inflation](/en/glossario/en-inflation), politics, and capital flow
 
 ## Types of Foreign Exchange
 

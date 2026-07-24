@@ -25,7 +25,7 @@ Bitcoin (BTC) is the first and most well-known cryptocurrency in the world. It w
 
 | Advantage | Disadvantage |
 |----------|-------------|
-| Potential for high appreciation | Extreme [volatility](/en/glossario/en-volatilidade) |
+| Potential for high appreciation | Extreme [volatility](/en/glossario/en-volatility) |
 | Decentralized | Not regulated in Brazil |
 | Programmed scarcity | Can lose 50%+ in months |
 | Works 24/7 | Complex for beginners |

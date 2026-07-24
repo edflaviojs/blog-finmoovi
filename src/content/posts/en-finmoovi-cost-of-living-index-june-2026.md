@@ -16,7 +16,7 @@ seo:
   keywords: ["ipca june 2026","cost of living index brazil","inflation by expense group","dollar closing rate"]
 ---
 
-In June 2026, the cost of living rose 0,16 % according to the overall IPCA released by IBGE, indicating a modest increase in consumer prices that month. This adjustment reflects an accumulated variation of 4,64 % over the past 12 months, showing that [inflation](/en/glossario/en-inflacao) still pressures the wallet, although the monthly pace was relatively low.
+In June 2026, the cost of living rose 0,16 % according to the overall IPCA released by IBGE, indicating a modest increase in consumer prices that month. This adjustment reflects an accumulated variation of 4,64 % over the past 12 months, showing that [inflation](/en/glossario/en-inflation) still pressures the wallet, although the monthly pace was relatively low.
 
 ## IPCA for June by expense group
 

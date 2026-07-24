@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-El término financiero "zero coupon" se refiere a un tipo de bono o título de deuda que no paga intereses periódicos, a diferencia de los bonos tradicionales que pagan cupones (intereses) en intervalos regulares. En su lugar, el zero coupon se vende a un precio descontado respecto de su [valor](/es/glossario/es-valor-financeiro) nominal y se redime al valor nominal al vencimiento. Esto significa que el inversionista recibe el interés acumulado en una sola vez, al final del plazo.
+El término financiero "zero coupon" se refiere a un tipo de bono o título de deuda que no paga intereses periódicos, a diferencia de los bonos tradicionales que pagan cupones (intereses) en intervalos regulares. En su lugar, el zero coupon se vende a un precio descontado respecto de su [valor](/es/glossario/es-valor-financiero) nominal y se redime al valor nominal al vencimiento. Esto significa que el inversionista recibe el interés acumulado en una sola vez, al final del plazo.
 
 El zero coupon es una forma de [inversión](/es/posts/es-montando-cartera-diversificada-con-r-500) a largo plazo que puede ser atractiva para aquellos que buscan una rentabilidad fija y no necesitan ingresos periódicos. Por ejemplo, si compras un zero coupon por R$8.000 con un valor nominal de R$10.000 y un plazo de 5 años, al final de los 5 años recibirás R$10.000, lo que equivale a una rentabilidad del 25% sobre tu inversión inicial.
 
@@ -45,7 +45,7 @@ Las ventajas de invertir en zero coupons son varias. Algunas de las más destaca
 Aunque los zero coupons pueden ser una forma atractiva de inversión, también conllevan algunos riesgos. Algunos de los riesgos más importantes son:
 * **Riesgo de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen)**: El riesgo de que el emisor del bono no cumpla con sus obligaciones y no pague el valor nominal al vencimiento.
 * **Riesgo de mercado**: El valor de los zero coupons puede fluctuar en el mercado secundario, lo que puede afectar el precio de venta si se decide vender antes del vencimiento.
-* **Riesgo de [inflación](/es/glossario/es-inflacao)**: La inflación puede erosionar el valor real de la inversión, lo que significa que el poder adquisitivo del [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) recibido al vencimiento puede ser menor que el inicial.
+* **Riesgo de [inflación](/es/glossario/es-inflacion)**: La inflación puede erosionar el valor real de la inversión, lo que significa que el poder adquisitivo del [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado) recibido al vencimiento puede ser menor que el inicial.
 
 ![Ventajas](/images/glossario/zero-coupon-inline-3.webp)
 

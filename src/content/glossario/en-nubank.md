@@ -27,7 +27,7 @@ Nubank is a Brazilian fintech that works as a digital bank: it offers a checking
 - International credit card with no annual fee  
 - Points program that can be exchanged for products or discounts  
 - Personal loans with [interest](/en/glossario/en-juros) competitive  
-- Nubank Invest (CDBs and [funds](/en/glossario/en-fundo-de-investimento)) for those who want to start investing  
+- Nubank Invest (CDBs and [funds](/en/glossario/en-investment-fund)) for those who want to start investing  
 
 ## How it works
 
@@ -47,13 +47,13 @@ Nubank’s proposition is to make banking services more transparent and cheaper.
 
 - **Zero annual fee** on the credit card  
 - Free and unlimited transfers and DOCs  
-- Withdrawals at Banco24Horas network with no [fee](/en/glossario/en-taxa-financeira) (up to 4 per month)  
+- Withdrawals at Banco24Horas network with no [fee](/en/glossario/en-financial-fee) (up to 4 per month)  
 - Full control from the phone: block, limit and bill in real time  
 - Simple rewards program, without complicated rules  
 
 ## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 
-Even with many advantages, using a fully digital bank has some points of attention. First, the dependence on the internet: if the phone freezes or the network drops, you may be left without immediate access to your money. Second, the credit limit can be automatically adjusted by the algorithm, which sometimes surprises people used to fixed limits. Finally, although the Credit Guarantee Fund (FGC) covers up to R$ 250 mil per institution, the total [value](/en/glossario/en-valor-financeiro) deposited is still subject to market risks in the investments.  
+Even with many advantages, using a fully digital bank has some points of attention. First, the dependence on the internet: if the phone freezes or the network drops, you may be left without immediate access to your money. Second, the credit limit can be automatically adjusted by the algorithm, which sometimes surprises people used to fixed limits. Finally, although the Credit Guarantee Fund (FGC) covers up to R$ 250 mil per institution, the total [value](/en/glossario/en-financial-value) deposited is still subject to market risks in the investments.  
 
 - Need for a stable connection for transactions  
 - Credit limit subject to automatic reviews  

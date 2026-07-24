@@ -25,7 +25,7 @@ For example, if you invest R$1,000 in an LTN title with a 1-year term and 5% ann
 ## Advantages of Tesouro Direto
 One of the main advantages of Tesouro Direto is security. Since the securities are issued by the government, the risk of default is very low. Additionally, the interest rates are predefined, which means you know exactly how much you'll receive at the end of the term.
 
-Another advantage is [liquidity](/en/glossario/en-liquidez). You can redeem your securities before maturity, although you may lose interest. This is useful if you need the [money](/en/posts/en-30-day-rule-for-purchases) before the term.
+Another advantage is [liquidity](/en/glossario/en-liquidity). You can redeem your securities before maturity, although you may lose interest. This is useful if you need the [money](/en/posts/en-30-day-rule-for-purchases) before the term.
 
 ![Vantagens do Tesouro Direto](/images/posts/tesouro-direto-para-iniciantes-2.webp)
 
@@ -36,9 +36,9 @@ There are several types of securities available in Tesouro Direto, each with its
 
 * LTN (Letras do Tesouro Nacional): securities with terms of 1 to 10 years and fixed interest rates.
 * NTN (Notas do Tesouro Nacional): securities with terms of 1 to 30 years and fixed or variable interest rates.
-* LCI (Letras do Tesouro Nacional com índice de inflação): securities with terms of 1 to 5 years and fixed interest rates plus an [inflation](/en/glossario/en-inflacao) adjustment.
+* LCI (Letras do Tesouro Nacional com índice de inflação): securities with terms of 1 to 5 years and fixed interest rates plus an [inflation](/en/glossario/en-inflation) adjustment.
 
-For example, if you invest R$5,000 in an LTN title with a 5-year term and 6% annual interest, you'll receive R$5,638.49 after maturity, considering annual [compound interest](/en/glossario/en-juros-compostos).
+For example, if you invest R$5,000 in an LTN title with a 5-year term and 6% annual interest, you'll receive R$5,638.49 after maturity, considering annual [compound interest](/en/glossario/en-compound-interest).
 
 ## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 Although Tesouro Direto is considered a low-risk [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500), there are some risks to consider:

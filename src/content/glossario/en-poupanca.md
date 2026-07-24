@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-A poupança is the most well‑known deposit account in Brazil. It works like a bank “piggy bank” that yields **[interest](/en/glossario/en-juros)** monthly and also protects the money against minimal inflation. Unlike an investment in **[stocks](/en/glossario/en-acoes)** or **[funds](/en/glossario/en-fundo-de-investimento)**, the poupança has very simple rules: you deposit, the bank pays a defined percentage, and you can withdraw at any time without penalties.
+A poupança is the most well‑known deposit account in Brazil. It works like a bank “piggy bank” that yields **[interest](/en/glossario/en-juros)** monthly and also protects the money against minimal inflation. Unlike an investment in **[stocks](/en/glossario/en-acoes)** or **[funds](/en/glossario/en-investment-fund)**, the poupança has very simple rules: you deposit, the bank pays a defined percentage, and you can withdraw at any time without penalties.
 
 ![What it is](/images/glossario/poupanca-inline-1.webp)
 

@@ -17,7 +17,7 @@ KYC (Conheça Seu Cliente) is the process that banks and brokerages use to verif
 ## Why it exists
 
 - Prevent [money](/en/posts/en-30-day-rule-for-purchases) laundering
-- Combat terrorism [financing](/en/glossario/en-financiamento)
+- Combat terrorism [financing](/en/glossario/en-financing)
 - Avoid fraud and fake accounts
 - Comply with Central Bank regulations
 

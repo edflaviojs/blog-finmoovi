@@ -9,7 +9,7 @@ publishedAt: 2026-06-06
 ---
 
 ## Understanding the Tabela SAC
-The Tabela SAC is a method of calculating installments that keeps the [amortization](/en/glossario/en-amortizacao) value (the part of the payment that reduces the outstanding balance) constant throughout the [financing](/en/glossario/en-financiamento). This means that, although the installment value decreases over time due to reduced interest, the part that actually pays off the loan (amortization) remains the same.
+The Tabela SAC is a method of calculating installments that keeps the [amortization](/en/glossario/en-amortization) value (the part of the payment that reduces the outstanding balance) constant throughout the [financing](/en/glossario/en-financing). This means that, although the installment value decreases over time due to reduced interest, the part that actually pays off the loan (amortization) remains the same.
 
 ## Understanding the Tabela Price
 On the other hand, the Tabela Price is a method that keeps the installment value constant throughout the financing. In this case, the amortization and interest vary with each installment. At the beginning of the financing, a large part of the installment is used to pay interest, and only a small part is used to amortize the loan. As the financing progresses, the part used to pay interest decreases, and the part that amortizes the loan increases.

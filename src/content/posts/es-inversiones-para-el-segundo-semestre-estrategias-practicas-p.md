@@ -33,7 +33,7 @@ El segundo semestre suele ser más agitado: vacaciones, fiestas de fin de año y
 ## ¿Por qué enfocarse en el segundo semestre?
 
 ### 1. Seasonalidad del mercado  
-Históricamente, algunos sectores se valorizan en la segunda mitad del año – turismo, comercio minorista, energía y tecnología. Esta “temporada alta” puede generar oportunidades de ganancia, pero también trae [volatilidad](/es/glossario/es-volatilidade) que exige atención.
+Históricamente, algunos sectores se valorizan en la segunda mitad del año – turismo, comercio minorista, energía y tecnología. Esta “temporada alta” puede generar oportunidades de ganancia, pero también trae [volatilidad](/es/glossario/es-volatilidad) que exige atención.
 
 ### 2. Punto de ajuste de metas anuales  
 Si aún no alcanzaste tu meta de ahorro o de retorno, el segundo semestre representa la última oportunidad de corregir el rumbo antes del cierre del ejercicio fiscal.
@@ -49,7 +49,7 @@ Construir una reserva de emergencia y colocar recursos en activos de largo plazo
 
 ![Cómo armar la cartera: 5 pasos simples](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-2.webp)
 
-| Ítem                     | [Valor](/es/glossario/es-valor-financeiro) (R$) |
+| Ítem                     | [Valor](/es/glossario/es-valor-financiero) (R$) |
 |--------------------------|-----------|
 | Salario bruto mensual    | 3.500,00 |
 | Gastos fijos mensuales   | 1.800,00 |
@@ -64,7 +64,7 @@ Después de pagar las cuentas, calcula cuánto sobra para nuevos aportes. En el 
 
 - **Corto plazo (hasta 12 meses):** objetivo de usar el dinero aún este año (viajes, compra de electrodoméstico).  
 - **Mediano plazo (1‑3 años):** metas como entrada para vivienda o auto.  
-- **Largo plazo (5 años o más):** jubilación, [independencia financiera](/es/glossario/es-independencia-financeira).
+- **Largo plazo (5 años o más):** jubilación, [independencia financiera](/es/glossario/es-independencia-financiera).
 
 Para el segundo semestre, la mayoría de la gente se concentra en **corto y mediano plazo**, pero no dejes de reservar una parte para el largo plazo.
 
@@ -75,7 +75,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 | **Tesoro [Selic](/es/glossario/es-selic)** (renta fija)     | Bajo   | Reserva de emergencia y aporte de seguridad |
 | **CDBs con [liquidez](/es/glossario/es-liquidez) diaria**       | Bajo‑medio | Complemento al Selic, rendimiento superior al ahorro |
 | **Fondos índice ([ETF](/es/glossario/es-etf)) de acciones**| Medio‑alto | Exposición a sectores estacionales (comercio, energía) |
-| **[Fondos inmobiliarios](/es/glossario/es-fundos-imobiliarios) (FIIs)**    | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
+| **[Fondos inmobiliarios](/es/glossario/es-fondos-inmobiliarios) (FIIs)**    | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
 | **Criptomonedas o activos alternativos** | Alto | Solo 5 % de la cartera, para quien acepta volatilidad |
 
 #### Ejemplo de asignación para quien gana R$ 3.500,00

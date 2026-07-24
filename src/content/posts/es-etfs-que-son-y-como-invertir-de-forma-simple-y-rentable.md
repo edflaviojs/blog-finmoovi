@@ -25,7 +25,7 @@ seo:
 
 ## Cómo funciona en la práctica
 
-Cuando compras 10 cuotas de un ETF que replica el Ibovespa, estás, en la práctica, invirtiendo en todas las empresas que componen ese índice (en la misma proporción). Si el Ibovespa sube un 2 %, el [valor](/es/glossario/es-valor-financeiro) de tus cuotas también sube aproximadamente un 2 %.
+Cuando compras 10 cuotas de un ETF que replica el Ibovespa, estás, en la práctica, invirtiendo en todas las empresas que componen ese índice (en la misma proporción). Si el Ibovespa sube un 2 %, el [valor](/es/glossario/es-valor-financiero) de tus cuotas también sube aproximadamente un 2 %.
 
 ![Como funciona na prática](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-2.webp)
 
@@ -73,7 +73,7 @@ Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un
 
 ## Riesgos y cuidados
 
-- **[Volatilidad](/es/glossario/es-volatilidade)** – Los ETFs de acciones pueden oscilar bastante a corto plazo. Evalúa tu horizonte de inversión antes de aplicar.  
+- **[Volatilidad](/es/glossario/es-volatilidad)** – Los ETFs de acciones pueden oscilar bastante a corto plazo. Evalúa tu horizonte de inversión antes de aplicar.  
 - **Comisión de administración** – Aunque baja, reduce la rentabilidad, especialmente en períodos de bajo desempeño del índice.  
 - **Riesgo de mercado** – Si el índice cae, tu inversión también caerá. No hay garantía de capital.  
 - **Liquidación** – Aunque la cotización sea inmediata, la liquidación financiera ocurre en D+2 (dos días hábiles después de la compra).  

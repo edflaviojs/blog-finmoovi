@@ -27,13 +27,13 @@ La tasa Selic es como un "interés de referencia" para todo el sistema financier
 
 
 ## Cómo funciona
-La tasa Selic se determina en reuniones periódicas del Comité de Política Monetaria (COPOM) del Banco Central. Estas reuniones son como sesiones de estrategia donde se discuten las condiciones económicas actuales y se toman decisiones sobre si la tasa Selic debe subir, bajar o mantenerse igual. El objetivo principal es controlar la [inflación](/es/glossario/es-inflacao), que es el aumento en el precio de los bienes y servicios con el tiempo.
+La tasa Selic se determina en reuniones periódicas del Comité de Política Monetaria (COPOM) del Banco Central. Estas reuniones son como sesiones de estrategia donde se discuten las condiciones económicas actuales y se toman decisiones sobre si la tasa Selic debe subir, bajar o mantenerse igual. El objetivo principal es controlar la [inflación](/es/glossario/es-inflacion), que es el aumento en el precio de los bienes y servicios con el tiempo.
 
 La tasa Selic funciona como un mecanismo para regular la cantidad de dinero que circula en la economía. Cuando la tasa Selic es alta, los préstamos se vuelven más caros, lo que puede desalentar el gasto y la inversión, ayudando a controlar la inflación. Por otro lado, cuando la tasa Selic es baja, los préstamos son más baratos, lo que puede estimular el gasto y la inversión, ayudando a impulsar el crecimiento económico.
 
 ## Ventajas
 La tasa Selic tiene varias ventajas para la economía y para los individuos. Algunas de estas ventajas incluyen:
-* La capacidad de controlar la inflación, lo que ayuda a mantener el [valor](/es/glossario/es-valor-financeiro) del dinero.
+* La capacidad de controlar la inflación, lo que ayuda a mantener el [valor](/es/glossario/es-valor-financiero) del dinero.
 * La posibilidad de estimular el crecimiento económico cuando la tasa Selic es baja.
 * La influencia en los intereses de los préstamos y créditos, lo que puede hacer que sean más asequibles o más caros, dependiendo de la situación económica.
 

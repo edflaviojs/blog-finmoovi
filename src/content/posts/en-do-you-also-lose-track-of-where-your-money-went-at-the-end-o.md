@@ -19,7 +19,7 @@ seo:
 
 ## What's happening to your balance?
 
-If you, like Ana, reach the end of the month and open your bank account to find a number far smaller than you expected, know that you're not alone. This lack of visibility creates anxiety, stalls dreams (like a trip or an [emergency fund](/en/glossario/en-reserva-de-emergencia)) and often leads to hasty decisions, such as cutting essential expenses or turning to expensive credit.
+If you, like Ana, reach the end of the month and open your bank account to find a number far smaller than you expected, know that you're not alone. This lack of visibility creates anxiety, stalls dreams (like a trip or an [emergency fund](/en/glossario/en-emergency-fund)) and often leads to hasty decisions, such as cutting essential expenses or turning to expensive credit.
 
 I’ve been there. One day, after paying rent, the electricity bill and grocery shopping, my statement still showed almost R$ 800.00 missing. I couldn’t recall any purchase that would justify that amount. That’s when I realized: the problem wasn’t how much I was spending, but **how I was tracking** those expenses.
 

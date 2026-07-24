@@ -33,7 +33,7 @@ When you buy a fixed‑income security, you are acquiring a contract that pays a
 
 - **Predictability:** You know how much you will receive, which makes budgeting and goal‑setting easier.  
 - **Safety:** Most fixed‑income securities issued by banks or the National Treasury have the guarantee of the Fundo Garantidor de Créditos (FGC) up to R$250 mil per person and per institution.  
-- **Liquidity:** Some securities allow early redemption without major losses, such as DI [funds](/en/glossario/en-fundo-de-investimento) or Treasury [Selic](/en/glossario/en-selic).  
+- **Liquidity:** Some securities allow early redemption without major losses, such as DI [funds](/en/glossario/en-investment-fund) or Treasury [Selic](/en/glossario/en-selic).  
 - **[Diversification](/en/glossario/en-diversificacao):** Even those with little money can build a balanced portfolio, reducing reliance on more volatile investments.
 
 ![Advantages](/images/glossario/renda-fixa-inline-3.webp)

@@ -19,7 +19,7 @@ seo:
 
 ## ¿Qué está pasando con tu saldo?
 
-Si tú, al igual que Ana, llegas a fin de mes y abres la cuenta bancaria para encontrar un número mucho menor de lo que esperabas, debes saber que no estás solo. Esa falta de visibilidad genera ansiedad, retrasa sueños (como el viaje o el [fondo de emergencia](/es/glossario/es-reserva-de-emergencia)) y, a menudo, lleva a decisiones precipitadas, como recortar gastos esenciales o recurrir a crédito caro.
+Si tú, al igual que Ana, llegas a fin de mes y abres la cuenta bancaria para encontrar un número mucho menor de lo que esperabas, debes saber que no estás solo. Esa falta de visibilidad genera ansiedad, retrasa sueños (como el viaje o el [fondo de emergencia](/es/glossario/es-fondo-de-emergencia)) y, a menudo, lleva a decisiones precipitadas, como recortar gastos esenciales o recurrir a crédito caro.
 
 Yo ya pasé por eso. Un día, después de pagar el alquiler, la cuenta de luz y las compras del supermercado, el extracto mostraba que faltaban casi R$ 800,00. No podía recordar ninguna compra que justificara esa cifra. Fue entonces cuando comprendí: el problema no era cuánto gastaba, sino **cómo le hacía seguimiento** a esos gastos.
 
@@ -54,7 +54,7 @@ Vamos a lo que realmente importa: cómo poner manos a la obra y volver a tener t
 
 1. **Instala la app** – Disponible para Android y iOS, solo busca “FinMoovi” en la tienda de aplicaciones.  
 2. **Configura tus cuentas** – Conecta tu banco (o ingrésalo manualmente) para que la app importe el extracto automáticamente.  
-3. **Usa la captura por voz** – Al pagar un café, por ejemplo, abre FinMoovi, toca el ícono del micrófono y di “Café en la Panadería X, R$ 7,50”. La app graba, reconoce el [valor](/es/glossario/es-valor-financeiro) y crea el gasto.  
+3. **Usa la captura por voz** – Al pagar un café, por ejemplo, abre FinMoovi, toca el ícono del micrófono y di “Café en la Panadería X, R$ 7,50”. La app graba, reconoce el [valor](/es/glossario/es-valor-financiero) y crea el gasto.  
 4. **Escanea recibos con OCR** – Cuando recibas el cupón del supermercado, toma una foto. FinMoovi lee la lista, suma los valores y categoriza cada ítem (alimentos, higiene, etc.).  
 5. **Revisa los informes** – En el panel “Visión Mensual”, observa gráficos de pastel y de barras que muestran la distribución de los gastos. Haz clic en cada categoría para detallar los movimientos.  
 6. **Identifica fugas** – La app destaca “gastos recurrentes” y “patrones inusuales”. Por ejemplo, si gastaste R$ 150,00 en entregas en los últimos 3 meses, FinMoovi lo señala como punto de atención.  

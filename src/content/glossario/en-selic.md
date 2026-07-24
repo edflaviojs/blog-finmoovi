@@ -22,14 +22,14 @@ The Selic **rate** is a fundamental concept in the world of Brazilian [finance](
 
 * The Selic rate is used as a reference to calculate the interest rates of loans and investments  
 * It is set by the Copom of the Central Bank of Brazil  
-* The Selic rate can influence [inflation](/en/glossario/en-inflacao) and the country’s economic growth  
+* The Selic rate can influence [inflation](/en/glossario/en-inflation) and the country’s economic growth  
 
 ![What it is](/images/glossario/selic-inline-1.webp)
 
 The Selic rate is important because it helps control inflation and maintain economic stability. When the Selic rate is high, loans become more expensive and people tend to save more and spend less, which can help reduce inflation. Conversely, when the Selic rate is low, loans become cheaper and people tend to spend more, which can stimulate economic growth.
 
 ## How it works
-The Selic rate is set by the Copom of the Central Bank of Brazil, which meets regularly to discuss the country’s monetary policy. The Copom considers factors such as inflation, economic growth, and unemployment when setting the Selic rate. When the Selic rate changes, it can affect the interest on loans and investments throughout the country. For example, if the Selic rate is reduced, the interest on loans such as personal credit and mortgage [financing](/en/glossario/en-financiamento) can decrease, making them more accessible to people.
+The Selic rate is set by the Copom of the Central Bank of Brazil, which meets regularly to discuss the country’s monetary policy. The Copom considers factors such as inflation, economic growth, and unemployment when setting the Selic rate. When the Selic rate changes, it can affect the interest on loans and investments throughout the country. For example, if the Selic rate is reduced, the interest on loans such as personal credit and mortgage [financing](/en/glossario/en-financing) can decrease, making them more accessible to people.
 
 **Practical tip:** It’s important to understand how the Selic rate affects your investments and loans so you can make informed decisions about your money. For instance, if you have a variable‑interest loan, a reduction in the Selic rate can lower the interest you pay.
 

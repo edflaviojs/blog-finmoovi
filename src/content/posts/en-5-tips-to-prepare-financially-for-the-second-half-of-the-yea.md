@@ -24,7 +24,7 @@ We're already halfway through the year, and it's time to reflect on how we're ha
 Before starting to plan for the second half of the year, it's essential to understand your current financial situation. This includes knowing how much you earn, how much you spend, and what your debts are. You can use the [FinMoovi app](https://www.finmoovi.com.br) to help you control your expenses and better understand your financial situation. With [FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f), you can record all your expenses and income, create a personalized [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation), and receive alerts when you're exceeding your limits.
 
 ## Defining Financial Goals for the Second Half of the Year
-Now that you understand your current financial situation, it's time to define financial goals for the second half of the year. This can include saving for a trip, paying off debts, or creating an [emergency fund](/en/glossario/en-reserva-de-emergencia). Here are some tips to help you define financial goals:
+Now that you understand your current financial situation, it's time to define financial goals for the second half of the year. This can include saving for a trip, paying off debts, or creating an [emergency fund](/en/glossario/en-emergency-fund). Here are some tips to help you define financial goals:
 1. **Be specific**: Instead of saying "I want to save [money](/en/posts/en-30-day-rule-for-purchases)," say "I want to save $1,000 for a trip."
 2. **Be realistic**: Make sure your goals are achievable based on your current financial situation.
 3. **Be responsible**: Ensure your goals align with your values and priorities.

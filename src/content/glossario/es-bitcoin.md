@@ -25,7 +25,7 @@ Bitcoin (BTC) es la primera y más conocida criptomoneda del mundo. Fue creada e
 
 | Ventaja | Desventaja |
 |----------|-------------|
-| Potencial de alta valorización | [Volatilidad](/es/glossario/es-volatilidade) extrema |
+| Potencial de alta valorización | [Volatilidad](/es/glossario/es-volatilidad) extrema |
 | Descentralizado | No regulado en Brasil |
 | Escasez programada | Puede perder 50%+ en meses |
 | Funciona 24/7 | Complejo para iniciantes |

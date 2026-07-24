@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A financial xepa, also known as "parallel expense", is a concept that refers to the [value](/en/glossario/en-valor-financeiro) a person spends beyond their monthly budget. This can include expenses such as dining out, impulse purchases, trips, or any other spending not planned in the budget. It is important to understand that a financial xepa is not necessarily a problem, as long as it is controlled and does not affect the person's financial stability.  
+A financial xepa, also known as "parallel expense", is a concept that refers to the [value](/en/glossario/en-financial-value) a person spends beyond their monthly budget. This can include expenses such as dining out, impulse purchases, trips, or any other spending not planned in the budget. It is important to understand that a financial xepa is not necessarily a problem, as long as it is controlled and does not affect the person's financial stability.  
 * Non‑essential expenses  
 * Impulse spending  
 * Unplanned purchases  

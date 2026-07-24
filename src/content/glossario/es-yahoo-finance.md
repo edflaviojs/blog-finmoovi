@@ -31,7 +31,7 @@ La herramienta funciona como un agregador de datos: extrae información de bolsa
 
 - **Búsqueda de ticker:** escribe el código del activo y obtén su cotización al instante.  
 - **Gráficos interactivos:** visualiza la evolución del precio en diferentes periodos (día, mes, año).  
-- **Noticias y análisis:** lee artículos que explican por qué sube o baja un [valor](/es/glossario/es-valor-financeiro).  
+- **Noticias y análisis:** lee artículos que explican por qué sube o baja un [valor](/es/glossario/es-valor-financiero).  
 - **Alertas personalizadas:** configura notificaciones por correo o móvil cuando se cumplan tus criterios.  
 
 ## Ventajas
@@ -55,7 +55,7 @@ Aunque la plataforma es muy útil, también conlleva ciertos riesgos que debes t
 - **Sobrecarga de información:** la gran cantidad de datos puede generar confusión y llevar a decisiones impulsivas.  
 - **Publicidad y contenido patrocinado:** algunos artículos son pagados y pueden sesgar la visión del lector.  
 - **Dependencia de la conectividad:** si pierdes acceso a internet, no podrás consultar tus datos en tiempo real.  
-- **Limitaciones de análisis profundo:** para estudios avanzados (por ejemplo, cálculo de “beta”, que mide la [volatilidad](/es/glossario/es-volatilidade) de una acción respecto al mercado) puede ser necesario usar herramientas más especializadas.  
+- **Limitaciones de análisis profundo:** para estudios avanzados (por ejemplo, cálculo de “beta”, que mide la [volatilidad](/es/glossario/es-volatilidad) de una acción respecto al mercado) puede ser necesario usar herramientas más especializadas.  
 
 ## Ejemplos prácticos
 

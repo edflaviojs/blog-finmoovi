@@ -93,7 +93,7 @@ Keeping money in a checking account earns almost nothing (around **0.3 %** a y
 
 **Recommended options:**
 
-- **Daily‑[liquidity](/en/glossario/en-liquidez) [CDB](/en/glossario/en-cdb)** – yields close to the [CDI](/en/glossario/en-cdi) (currently ~13.15 % a year).
+- **Daily‑[liquidity](/en/glossario/en-liquidity) [CDB](/en/glossario/en-cdb)** – yields close to the [CDI](/en/glossario/en-cdi) (currently ~13.15 % a year).
 - **Tesouro Selic** – a government bond linked to the Selic rate, redeemable at any time.
 - **Short‑term fixed‑[income](/en/posts/en-building-a-diversified-portfolio-with-r-500) funds** – some offer returns above 100 % of the CDI.
 
@@ -113,7 +113,7 @@ Going into Black Friday without a plan can turn a great opportunity into a spend
 4. **Build a schedule** – know which stores launch deals first (e.g., Amazon at 00:00).
 5. **Use FinMoovi** to log the amount spent on each purchase and ensure you don’t exceed the total budget.
 
-## 7. Set aside an “[emergency fund](/en/glossario/en-reserva-de-emergencia)” for surprises
+## 7. Set aside an “[emergency fund](/en/glossario/en-emergency-fund)” for surprises
 
 Even with thorough [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips), unexpected events happen (car repair, medical visit). To avoid dipping into your Black Friday reserve, keep an emergency fund equal to **3 to 6 months of expenses**. According to the **Central Bank**, 45 % of Brazilian families lack an emergency reserve, which can lead to debt.
 

@@ -27,7 +27,7 @@ IOF (Imposto sobre Operações Financeiras) is a federal tax that applies to var
 - 4.38% on purchases in foreign currency
 - Applies to the total purchase value
 
-### Loans and [financing](/en/glossario/en-financiamento)
+### Loans and [financing](/en/glossario/en-financing)
 
 - 0.38% fixed + 0.0082% per day on the value
 - Charged at the time of hiring

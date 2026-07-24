@@ -27,7 +27,7 @@ The [US dollar](/en/posts/en-investing-in-dollar-in-brazil) closed the week at R
 
 ## Selic and Impact on Investments
 
-The Selic rate, currently at 12.25% per year, was maintained by the Monetary Policy Committee (Copom) of the Central Bank. This decision aims to control [inflation](/en/glossario/en-inflacao) and maintain economic stability. For investors, the maintenance of Selic means that interest rate-fixed investments, such as [Treasury Direct](/en/glossario/en-tesouro-direto) titles, will continue to offer attractive returns, especially when compared to other low-risk investment options.
+The Selic rate, currently at 12.25% per year, was maintained by the Monetary Policy Committee (Copom) of the Central Bank. This decision aims to control [inflation](/en/glossario/en-inflation) and maintain economic stability. For investors, the maintenance of Selic means that interest rate-fixed investments, such as [Treasury Direct](/en/glossario/en-tesouro-direto) titles, will continue to offer attractive returns, especially when compared to other low-risk investment options.
 
 ## Practical Tip for Investors
 
