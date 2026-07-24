@@ -1,13 +1,15 @@
 {
-  "updatedAt": "2026-07-23T20:12:37.922Z",
+  "updatedAt": "2026-07-24T10:54:10.994Z",
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
       "category": "dicas",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
-      "addedAt": "2026-07-23T13:15:08.996Z"
+      "status": "used",
+      "addedAt": "2026-07-23T13:15:08.996Z",
+      "usedAt": "2026-07-24T10:54:10.994Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "o que é CDI e como ele afeta seus investimentos",
