@@ -23,7 +23,7 @@ seo:
 
 Empieza mirando tu salario neto. Si percibes entre **€1.500 y €4.000** al mes, reserva entre el 2 % y el 5 % de tus ingresos para el regalo, según tus otras prioridades. Por ejemplo, quien gana **€2.250** puede destinar hasta **€112** (5 %) sin sentir presión. Esa cantidad cubre un regalo de calidad o una cena especial y aún deja espacio para tus gastos mensuales.
 
-> *Consejo práctico:* **Abre una cuenta digital o usa una app de control de gastos (como FinMoovi) y crea una categoría “Día del Padre”. Define la meta de ahorro y revisa la evolución cada semana.**  
+> *Consejo práctico:* **Abre una cuenta digital o usa una app de [control de gastos](/es/posts/es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas-) (como FinMoovi) y crea una categoría “Día del Padre”. Define la meta de ahorro y revisa la evolución cada semana.**  
 > Esta práctica evita sorpresas y permite transferir dinero automáticamente, como una “cuenta de regalo”.
 
 ## Crea una lista de ideas dentro del presupuesto  
@@ -37,7 +37,7 @@ Empieza mirando tu salario neto. Si percibes entre **€1.500 y €4.000** al me
 
 Elige la opción que mejor se ajuste a tu rango de precio. Si tu presupuesto es más ajustado, opta por algo hecho a mano o una cena casera; el valor emocional compensa el gasto menor.
 
-## Anticipa los costos y evita la compra de última hora  
+## Anticipa los [costos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica) y evita la compra de última hora  
 
 La mayoría de las promociones para el Día del Padre empiezan entre dos y tres semanas antes de la fecha. Marca en tu calendario la fecha ideal para comprar:
 
@@ -65,11 +65,11 @@ Después de la celebración, haz una revisión rápida:
 2. Evalúa si la experiencia fue satisfactoria para tu papá.  
 3. Ajusta la categoría de gasto para el próximo año, aumentando o disminuyendo el techo según tu realidad.
 
-Este ciclo de revisión convierte la fecha en un hábito financiero saludable, evitando la acumulación de deudas en los años siguientes.
+Este ciclo de revisión convierte la fecha en un hábito [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere) saludable, evitando la acumulación de deudas en los años siguientes.
 
 ## Empieza hoy  
 
-Reserva cinco minutos ahora para abrir tu app de control financiero, crea la categoría “Día del Padre” y define la meta de ahorro. Cada pequeño paso hoy evita dolores de cabeza mañana y garantiza un regalo que cabe en el bolsillo y en el corazón.
+Reserva cinco minutos ahora para abrir tu app de [control financiero](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d), crea la categoría “Día del Padre” y define la meta de ahorro. Cada pequeño paso hoy evita dolores de cabeza mañana y garantiza un regalo que cabe en el bolsillo y en el corazón.
 
 ## Preguntas frecuentes  
 
@@ -80,7 +80,7 @@ Entre el 2 % y el 5 % de tu ingreso neto, es decir, entre **€18 y €45**,
 Comprar online suele ofrecer precios más competitivos y permite comparar rápidamente. Sin embargo, si existe riesgo de retraso en la entrega, la tienda física garantiza la adquisición inmediata.
 
 ### ¿Cómo evitar la “trampa de última hora”?  
-Planifica la compra con anticipación, aprovecha las promociones iniciales y transfiere el monto destinado al regalo a una cuenta separada o a una app de control de gastos.
+Planifica la compra con anticipación, aprovecha las promociones iniciales y transfiere el monto destinado al regalo a una cuenta separada o a una app de [control de gastos](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples).
 
 ### ¿Puedo usar este mismo plan para otras fechas especiales?  
 Sí. El método de definir un techo, crear una categoría de gasto y revisar el resultado funciona para Navidad, cumpleaños y otras celebraciones.

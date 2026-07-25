@@ -17,11 +17,11 @@ seo:
   keywords: ["father's day","father's day gift","budget","gift planning","personal finance"]
 ---
 
-**Planning Father’s Day** means figuring out how much you can spend, picking a gift that will make him smile, and keeping your bank account healthy. Whether you’re celebrating in the U.S., the U.K., Portugal, Spain, or elsewhere, the secret is to anticipate expenses, use simple tools, and avoid turning a celebration into debt.
+**[Planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) Father’s Day** means figuring out how much you can spend, picking a gift that will make him smile, and keeping your bank account healthy. Whether you’re celebrating in the U.S., the U.K., Portugal, Spain, or elsewhere, the secret is to anticipate expenses, use simple tools, and avoid turning a celebration into debt.
 
 ## Set a realistic ceiling  
 
-Start by looking at your net salary. If you earn between **$2,000 and $5,000** a month, set aside **2 %–5 %** of your income for the gift, depending on your other priorities. For example, someone earning **$4,500** could allocate up to **$225** (5 %) without feeling a pinch. That amount covers a quality present or a special dinner and still leaves room for monthly bills.
+Start by looking at your net salary. If you earn between **$2,000 and $5,000** a month, set aside **2 %–5 %** of your [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) for the gift, depending on your other priorities. For example, someone earning **$4,500** could allocate up to **$225** (5 %) without feeling a pinch. That amount covers a quality present or a special dinner and still leaves room for monthly bills.
 
 > *Practical tip:* **Open a digital account or use a budgeting app (like FinMoovi) and create a “Father’s Day” category. Set the target amount and track progress weekly.**  
 This habit prevents surprises and even lets you automate transfers, turning the category into a mini “gift savings” account.
@@ -37,7 +37,7 @@ This habit prevents surprises and even lets you automate transfers, turning the 
 
 Pick the option that matches your price band. If your budget is tighter, go for something handmade or a home‑cooked dinner; the emotional value often outweighs the lower cost.
 
-## Anticipate costs and dodge last‑minute rushes  
+## Anticipate [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) and dodge last‑minute rushes  
 
 Most Father’s Day promotions start two to three weeks before the holiday. Mark the ideal shopping window on your calendar:
 
