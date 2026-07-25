@@ -22,6 +22,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const GLOSSARIO_DIR = join(process.cwd(), 'src', 'content', 'glossario');
+const TOPICS_PATH = join(process.cwd(), '.github', 'data', 'youtube-topics.json');
 const OUTPUT_DIR = join(dirname(fileURLToPath(import.meta.url)), 'output');
 
 const args = Object.fromEntries(
@@ -48,6 +49,56 @@ function readTerm(slug) {
     category: pick('category') || 'basico',
     body,
   };
+}
+
+/**
+ * Lê um tema editorial de youtube-topics.json pelo id.
+ * Se o topic tem glossaryRef, lê também o .md do glossário para dados de apoio.
+ * Retorna o mesmo formato que readTerm() para compatibilidade com buildPrompt().
+ */
+function readEditorialTopic(editorialId) {
+  if (!existsSync(TOPICS_PATH)) {
+    throw new Error(`youtube-topics.json não encontrado: ${TOPICS_PATH}`);
+  }
+  const data = JSON.parse(readFileSync(TOPICS_PATH, 'utf-8'));
+  const topics = Array.isArray(data?.topics) ? data.topics : [];
+  const topic = topics.find((t) => t.id === editorialId);
+  if (!topic) {
+    throw new Error(`tema editorial não encontrado: ${editorialId}`);
+  }
+
+  // Base: usar theme como term e angle como ângulo editorial
+  const result = {
+    slug: topic.id,
+    term: topic.theme,
+    angle: topic.angle,
+    definition: '',
+    category: topic.pillar || 'basico',
+    body: '',
+  };
+
+  // Se tem glossaryRef, lê o .md do glossário para dados de apoio
+  if (topic.glossaryRef) {
+    const glossaryPath = join(GLOSSARIO_DIR, `${topic.glossaryRef}.md`);
+    if (existsSync(glossaryPath)) {
+      try {
+        const raw = readFileSync(glossaryPath, 'utf-8');
+        const parts = raw.split('---');
+        if (parts.length >= 3) {
+          const frontmatter = parts[1];
+          const body = parts.slice(2).join('---').trim();
+          const pick = (key) =>
+            (frontmatter.match(new RegExp(`${key}:\\s*"?([^"\\n]+)"?`)) || [])[1]?.trim();
+          result.definition = pick('definition') || '';
+          result.body = body;
+        }
+      } catch {
+        // glossário indisponível → segue sem dados de apoio
+      }
+    }
+  }
+
+  return result;
 }
 
 // Corta o corpo do glossário num limite de caracteres, na fronteira de uma
@@ -174,9 +225,16 @@ function buildMarketingBlock(t) {
 
 function buildPrompt(t, antiRep = '') {
   return `Você é um ROTEIRISTA CINEMATOGRÁFICO de finanças do canal FinMoovi (PT-BR): engaja, cria mistério, instiga emoção e prende a atenção do PRIMEIRO ao ÚLTIMO segundo. Escreve como uma CONVERSA DE AMIGO brasileiro — informal, fluido, com gírias leves — NUNCA formal, "escrito" ou robótico.
-Crie o roteiro de um YOUTUBE SHORT (vertical, motion graphics) sobre o termo do glossário abaixo.
+Crie o roteiro de um YOUTUBE SHORT (vertical, motion graphics) sobre o TEMA abaixo.
 
-TERMO: "${t.term}"
+⚠️ REGRA ANTI-CHATICE (a mais importante — NUNCA viole):
+O vídeo NUNCA deve ser uma "aula" ou "explicação de conceito". PROIBIDO formato "O que é X".
+Em vez de EXPLICAR, o vídeo deve: APLICAR, DEMONSTRAR, COMPARAR, CHOCAR ou CONTAR UMA HISTÓRIA.
+O termo/tema é o PANO DE FUNDO — o vídeo mostra o IMPACTO REAL na vida da pessoa.
+Exemplos do que NÃO fazer: "Juros compostos é quando..." / "A Selic é a taxa básica..."
+Exemplos do que FAZER: "R$ 500/mês viram R$ 3,2 milhões — a prova" / "Você perde R$ 200/mês por causa DISSO"
+
+TEMA: "${t.term}"${t.angle ? `\nÂNGULO EDITORIAL: ${t.angle}` : ''}
 DEFINIÇÃO: ${t.definition}
 CONTEÚDO DE APOIO (use os números/exemplos reais daqui):
 ${truncateBody(t.body)}
@@ -444,7 +502,19 @@ async function main() {
   const slug = args.slug && args.slug !== true ? String(args.slug) : 'juros-compostos';
   console.log(`🎬 Roteirista de Short — termo: ${slug}\n`);
 
-  const t = readTerm(slug);
+  // Detecta se o input é um tema editorial (EDITORIAL:<id>) ou glossário (slug)
+  const isEditorial = slug.startsWith('EDITORIAL:');
+  let t;
+  if (isEditorial) {
+    const editorialId = slug.slice('EDITORIAL:'.length);
+    t = readEditorialTopic(editorialId);
+    console.log(`📋 Fonte: editorial (${editorialId})`);
+    console.log(`📐 Ângulo: ${t.angle}`);
+    if (t.body) console.log(`📚 Dados de apoio do glossário carregados.\n`);
+    else console.log(`📚 Sem glossaryRef — apenas theme/angle.\n`);
+  } else {
+    t = readTerm(slug);
+  }
 
   // ANTI-REPETIÇÃO (v3.5): carrega os vídeos anteriores e injeta o bloco no prompt.
   const recent = loadRecentPublishedContext();
@@ -458,7 +528,8 @@ async function main() {
   const { script, warnings } = await generateScript(t, { antiRep, recentContext: recent });
 
   if (!existsSync(OUTPUT_DIR)) mkdirSync(OUTPUT_DIR, { recursive: true });
-  const outPath = join(OUTPUT_DIR, `${slug}.script.json`);
+  const fileSlug = isEditorial ? slug.slice('EDITORIAL:'.length) : slug;
+  const outPath = join(OUTPUT_DIR, `${fileSlug}.script.json`);
   writeFileSync(outPath, JSON.stringify(script, null, 2), 'utf-8');
 
   const total = script.scenes.reduce((a, s) => a + Number(s.durationSec || 0), 0);

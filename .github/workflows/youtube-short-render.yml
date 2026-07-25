@@ -88,14 +88,22 @@ jobs:
               exit "$CODE"
             fi
             echo "🎬 termo do dia: $SLUG"
+            # Se editorial, FILE_SLUG é o id sem prefixo (para nome de ficheiro)
+            if [[ "$SLUG" == EDITORIAL:* ]]; then
+              FILE_SLUG="${SLUG#EDITORIAL:}"
+            else
+              FILE_SLUG="$SLUG"
+            fi
             {
               echo "SLUG=$SLUG"
+              echo "FILE_SLUG=$FILE_SLUG"
               echo "UPLOAD=true"
               echo "GENERATE=true"
             } >> "$GITHUB_ENV"
           else
             {
               echo "SLUG=${{ github.event.inputs.slug || 'juros-compostos' }}"
+              echo "FILE_SLUG=${{ github.event.inputs.slug || 'juros-compostos' }}"
               echo "UPLOAD=${{ github.event.inputs.upload }}"
               echo "GENERATE=false"
             } >> "$GITHUB_ENV"
@@ -126,11 +134,11 @@ jobs:
         run: |
           git config user.name "FinMoovi Bot"
           git config user.email "bot@finmoovi.com"
-          git add "src/scripts/youtube/output/$SLUG.script.json"
+          git add "src/scripts/youtube/output/$FILE_SLUG.script.json"
           if git diff --staged --quiet; then
             echo "Sem mudanças no roteiro (nada a commitar)."
           else
-            git commit -m "chore: roteiro do Short $SLUG [skip ci]"
+            git commit -m "chore: roteiro do Short $FILE_SLUG [skip ci]"
             git pull --rebase origin main || true
             git push
           fi
@@ -186,7 +194,7 @@ jobs:
         if: steps.resolve.outputs.skip != 'true'
         env:
           TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
-        run: node src/scripts/youtube/tts-short.js --slug="$SLUG"
+        run: node src/scripts/youtube/tts-short.js --slug="$FILE_SLUG"
 
       - name: Gerar legendas SRT ×3 (pt/en/es)
         if: steps.resolve.outputs.skip != 'true'
@@ -196,7 +204,7 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
-        run: node src/scripts/youtube/srt-short.js --slug="$SLUG"
+        run: node src/scripts/youtube/srt-short.js --slug="$FILE_SLUG"
 
       # Leva o roteiro do slug do dia para dentro do public/ do Remotion, para o
       # render carregá-lo via staticFile(roteiro/<slug>.json). Sem isto o render
@@ -205,7 +213,7 @@ jobs:
         if: steps.resolve.outputs.skip != 'true'
         run: |
           mkdir -p youtube-render/public/roteiro
-          cp "src/scripts/youtube/output/$SLUG.script.json" "youtube-render/public/roteiro/$SLUG.json"
+          cp "src/scripts/youtube/output/$FILE_SLUG.script.json" "youtube-render/public/roteiro/$FILE_SLUG.json"
 
       - name: Instalar dependências (render)
         if: steps.resolve.outputs.skip != 'true'
@@ -215,16 +223,16 @@ jobs:
       - name: Renderizar Short
         if: steps.resolve.outputs.skip != 'true'
         working-directory: youtube-render
-        run: npx remotion render src/index.ts Short "out/$SLUG.mp4" --props="{\"slug\":\"$SLUG\"}" --crf=16 --jpeg-quality=95
+        run: npx remotion render src/index.ts Short "out/$FILE_SLUG.mp4" --props="{\"slug\":\"$FILE_SLUG\"}" --crf=16 --jpeg-quality=95
 
       - name: Subir artefato (MP4 + legendas)
         if: steps.resolve.outputs.skip != 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: short-${{ env.SLUG }}
+          name: short-${{ env.FILE_SLUG }}
           path: |
             youtube-render/out/*.mp4
-            youtube-render/public/audio/${{ env.SLUG }}/*.srt
+            youtube-render/public/audio/${{ env.FILE_SLUG }}/*.srt
           if-no-files-found: error
 
       - name: Publicar no YouTube (privado até auditoria)
@@ -238,7 +246,7 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
-        run: node src/scripts/youtube/upload-short.js --slug="$SLUG"
+        run: node src/scripts/youtube/upload-short.js --slug="$FILE_SLUG"
 
       - name: Commitar tracking do upload
         if: steps.resolve.outputs.skip != 'true' && env.UPLOAD == 'true'

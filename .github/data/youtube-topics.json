@@ -1,0 +1,95 @@
+{
+  "_doc": "Banco de temas editoriais para YouTube. pick-next-short.js le este arquivo e alterna com o glossario.",
+  "topics": [
+    {
+      "id": "cenario-3k-investir",
+      "theme": "Ganho R$ 3 mil por mês — como investir?",
+      "angle": "Cenário real: pessoa CLT com R$ 3k, mostrar 3 opções com números reais de quanto cada uma rende em 1/5/10 anos",
+      "pillar": "investimento",
+      "source": "editorial",
+      "glossaryRef": "investimentos",
+      "status": "pending"
+    },
+    {
+      "id": "erros-cartao-credito",
+      "theme": "3 erros de cartão que te custam R$ 500/mês",
+      "angle": "Mostrar 3 erros comuns (rotativo, mínimo, parcelamento longo) com números reais de quanto cada um custa",
+      "pillar": "controle",
+      "source": "editorial",
+      "glossaryRef": "cartao-de-credito",
+      "status": "pending"
+    },
+    {
+      "id": "poupanca-vs-cdb",
+      "theme": "Poupança vs CDB: quem ganha em 1 ano?",
+      "angle": "Comparação lado a lado: R$ 10k na poupança vs CDB 100% CDI vs CDB 120% CDI. Diferença real em reais",
+      "pillar": "investimento",
+      "source": "editorial",
+      "glossaryRef": "cdb",
+      "status": "pending"
+    },
+    {
+      "id": "regra-50-30-20-real",
+      "theme": "Regra 50/30/20 com salário de R$ 4 mil — funciona?",
+      "angle": "Aplicar a regra num salário real BR e mostrar se sobra ou não. Confrontar com a realidade (aluguel caro, etc.)",
+      "pillar": "controle",
+      "source": "editorial",
+      "glossaryRef": "orcamento",
+      "status": "pending"
+    },
+    {
+      "id": "divida-quitaria",
+      "theme": "Se eu devesse R$ 30 mil, faria ISSO",
+      "angle": "Plano passo-a-passo para quitar dívida grande: priorização, negociação, bola de neve. Números reais.",
+      "pillar": "controle",
+      "source": "editorial",
+      "glossaryRef": "divida",
+      "status": "pending"
+    },
+    {
+      "id": "100-reais-por-dia",
+      "theme": "R$ 100 por dia: quanto vira em 10 anos?",
+      "angle": "Contraste absurdo: mostrar que R$ 100/dia (café + lanche + uber) = R$ 36k/ano = R$ 600k+ investidos em 10 anos",
+      "pillar": "mindset",
+      "source": "editorial",
+      "glossaryRef": "juros-compostos",
+      "status": "pending"
+    },
+    {
+      "id": "reserva-emergencia-quanto",
+      "theme": "Reserva de emergência: quanto VOCÊ precisa?",
+      "angle": "Calculadora visual: custo mensal médio (R$ 3.500) × 6 meses. Mostrar onde guardar (Tesouro Selic vs CDB liquidez)",
+      "pillar": "controle",
+      "source": "editorial",
+      "glossaryRef": "reserva-de-emergencia",
+      "status": "pending"
+    },
+    {
+      "id": "inflacao-rouba",
+      "theme": "A inflação te rouba R$ 2 mil por ano — sem você perceber",
+      "angle": "Mostrar como 5% de inflação sobre salário de R$ 4k = perda de R$ 200/mês de poder de compra. Visual: dinheiro desaparecendo",
+      "pillar": "mindset",
+      "source": "editorial",
+      "glossaryRef": "inflacao",
+      "status": "pending"
+    },
+    {
+      "id": "tesouro-direto-100",
+      "theme": "Tesouro Direto com R$ 100 — vale a pena?",
+      "angle": "Simulação real: R$ 100/mês no Tesouro Selic por 2 anos. Quanto rende? Comparar com poupança.",
+      "pillar": "investimento",
+      "source": "editorial",
+      "glossaryRef": "tesouro-direto",
+      "status": "pending"
+    },
+    {
+      "id": "nunca-faca-isso-dinheiro",
+      "theme": "5 coisas que NUNCA faço com meu dinheiro",
+      "angle": "Lista negativa: não emprestar, não deixar na poupança, não comprar carro financiado novo, não ignorar FGTS, não pagar mínimo do cartão",
+      "pillar": "mindset",
+      "source": "editorial",
+      "glossaryRef": null,
+      "status": "pending"
+    }
+  ]
+}
