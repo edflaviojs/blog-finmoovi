@@ -58,9 +58,8 @@ function getEnglishPosts() {
 }
 
 function buildCanonicalUrl(slug) {
-  // Remove 'en-' prefix for the URL path
-  const urlSlug = slug.replace(/^en-/, '');
-  return `${SITE_URL}/en/posts/${urlSlug}/`;
+  // Slug already includes 'en-' prefix — URL is /en/posts/en-slug/
+  return `${SITE_URL}/en/posts/${slug}/`;
 }
 
 function buildDevtoBody(post) {

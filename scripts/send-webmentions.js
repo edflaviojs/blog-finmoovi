@@ -51,10 +51,8 @@ function getRecentPosts() {
       let slug = file.replace(/\.md$/, '');
       if (slug.startsWith('en-')) {
         locale = 'en';
-        slug = slug.replace(/^en-/, '');
       } else if (slug.startsWith('es-')) {
         locale = 'es';
-        slug = slug.replace(/^es-/, '');
       }
 
       // Locale padrão NÃO tem prefixo na URL (prefixDefaultLocale: false)

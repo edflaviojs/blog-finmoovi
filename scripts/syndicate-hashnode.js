@@ -74,7 +74,8 @@ function getEnglishPosts() {
 }
 
 function canonicalUrl(slug) {
-  return `${SITE_URL}/en/posts/${slug.replace(/^en-/, '')}/`;
+  // Slug already includes 'en-' prefix — URL is /en/posts/en-slug/
+  return `${SITE_URL}/en/posts/${slug}/`;
 }
 
 function tagObjects(tags) {
