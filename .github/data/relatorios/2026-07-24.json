@@ -1,0 +1,428 @@
+{
+  "date": "2026-07-24",
+  "counts": {
+    "content": 12,
+    "videos": 1,
+    "pins": 0,
+    "failures": 2,
+    "runs": 28
+  },
+  "failures": [
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30108573296",
+      "timeLisbon": "17:18"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30108617473",
+      "timeLisbon": "17:19"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-credito",
+      "url": "https://blog.finmoovi.com/en/glossario/en-credito",
+      "title": "crédito - Financial Glossary",
+      "description": "Understand what crédito is, how it works, advantages, risks and practical examples of application in the Brazilian financial market.",
+      "category": "basico",
+      "publishedAt": "2026-07-24"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-credito",
+      "url": "https://blog.finmoovi.com/es/glossario/es-credito",
+      "title": "crédito - Glosario Financiero",
+      "description": "Entienda qué es crédito, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño.",
+      "category": "basico",
+      "publishedAt": "2026-07-24"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "credito",
+      "url": "https://blog.finmoovi.com/glossario/credito",
+      "title": "crédito - Glossário Financeiro",
+      "description": "Entenda o que é crédito, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro.",
+      "category": "basico",
+      "publishedAt": "2026-07-24"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-",
+      "url": "https://blog.finmoovi.com/posts/5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-",
+      "title": "5 passos práticos para começar a poupar para a Black Friday 2026",
+      "description": "Descubra como organizar seu dinheiro agora e garantir descontos na Black Friday 2026 sem apertar o orçamento.",
+      "category": "orcamento",
+      "publishedAt": "2026-07-24"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-ahorrar-en-el-plan-de-celular-e-internet-en-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-ahorrar-en-el-plan-de-celular-e-internet-en-2026",
+      "title": "cómo ahorrar en el plan de celular e internet en 2026",
+      "description": "Descubre estrategias prácticas para reducir la factura de celular e internet sin perder calidad. Consejos reales para quienes ganan entre R$3 mil y R$8 mil.",
+      "category": "dicas",
+      "publishedAt": "2026-07-24"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-economizar-no-plano-de-celular-e-internet-em-2026",
+      "url": "https://blog.finmoovi.com/posts/como-economizar-no-plano-de-celular-e-internet-em-2026",
+      "title": "como economizar no plano de celular e internet em 2026",
+      "description": "Descubra estratégias práticas para reduzir a conta de celular e internet sem perder qualidade. Dicas reais para quem ganha de R$3 mil a R$8 mil.",
+      "category": "dicas",
+      "publishedAt": "2026-07-24"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-",
+      "url": "https://blog.finmoovi.com/en/posts/en-5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-",
+      "title": "en-5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-",
+      "description": "",
+      "category": "",
+      "publishedAt": ""
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-pix-vs-ted-qual-vale-mais-a-pena-em-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-pix-vs-ted-qual-vale-mais-a-pena-em-2026",
+      "title": "en-pix-vs-ted-qual-vale-mais-a-pena-em-2026",
+      "description": "",
+      "category": "",
+      "publishedAt": ""
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-",
+      "url": "https://blog.finmoovi.com/es/posts/es-5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-",
+      "title": "es-5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-",
+      "description": "",
+      "category": "",
+      "publishedAt": ""
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-pix-vs-ted-qual-vale-mais-a-pena-em-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-pix-vs-ted-qual-vale-mais-a-pena-em-2026",
+      "title": "es-pix-vs-ted-qual-vale-mais-a-pena-em-2026",
+      "description": "",
+      "category": "",
+      "publishedAt": ""
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-save-on-your-cell-phone-and-internet-plan-in-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-save-on-your-cell-phone-and-internet-plan-in-2026",
+      "title": "How to Save on Your Cell Phone and Internet Plan in 2026",
+      "description": "Discover practical strategies to lower your cell phone and internet bill without sacrificing quality. Real tips for those earning between R$3 k and R$8 k.",
+      "category": "dicas",
+      "publishedAt": "2026-07-24"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "pix-vs-ted-qual-vale-mais-a-pena-em-2026",
+      "url": "https://blog.finmoovi.com/posts/pix-vs-ted-qual-vale-mais-a-pena-em-2026",
+      "title": "PIX vs TED: qual vale mais a pena em 2026?",
+      "description": "Descubra as diferenças entre PIX e TED em 2026, custos, prazos e quando usar cada um.",
+      "category": "investimentos",
+      "publishedAt": "2026-07-24"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "amortizacao",
+      "videoId": "HUcFsJHCr7w",
+      "uploadedAt": "2026-07-24T09:10:46.319Z",
+      "title": "Amortização: como funciona em 1 minuto",
+      "timeLisbon": "10:10"
+    }
+  ],
+  "pins": [],
+  "runsSummary": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "02:55"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:26"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:29"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "08:57"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:02"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:18"
+    },
+    {
+      "name": "GSC - Canibalizacao por query",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:23"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:03"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:05"
+    },
+    {
+      "name": "Gerar Conteúdo Social",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "11:25"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:52"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 3,
+      "ok": 2,
+      "fail": 1,
+      "firstTimeLisbon": "11:54"
+    },
+    {
+      "name": "Webmentions & Outreach",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:27"
+    },
+    {
+      "name": "Post Sazonal Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:39"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:09"
+    },
+    {
+      "name": "Post Comparação Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:42"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:58"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:21"
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:46"
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "17:18"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "08:57"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "10:07"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "14:58"
+    }
+  ],
+  "pendencias": [
+    "Auditoria YouTube API: responder follow-up do Google com link do canal (prazo ~03/08) — depois aguardar aprovação p/ trocar uploads private→public",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "Brand Mention Monitor",
+      "times": [
+        "07:00"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Glossário Financeiro",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "10:00",
+        "16:00",
+        "22:00"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    }
+  ]
+}
