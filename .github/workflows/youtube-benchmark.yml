@@ -1,0 +1,40 @@
+name: "YouTube — Benchmark de Tendências (semanal)"
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 4 * * 0' # Domingos 04:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Coletar tendências
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/benchmark-youtube-trends.js
+
+      - name: Commitar dados de tendências
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/youtube-trends.json
+          if git diff --staged --quiet; then
+            echo "Sem mudanças nos dados de tendências."
+          else
+            git commit -m "chore: atualizar benchmark YouTube tendências [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          fi

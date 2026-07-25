@@ -15,6 +15,7 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
+import { buildMarketingPromptBlock } from '../lib/youtube-marketing.js';
 import { validateShortScript, sanitizeScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX, MAX_SFX_REPEATS, APP_SCREENS, longestSharedWordRun, hasSpelledOutNumber } from './lib/schema-short.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync, realpathSync } from 'fs';
 import { join, dirname } from 'path';
@@ -157,6 +158,20 @@ export function buildAntiRepetitionBlock(context) {
   return `${block.slice(0, MAX - 1).trimEnd()}…`;
 }
 
+// Marketing intelligence block (loaded once per run)
+function buildMarketingBlock(t) {
+  let trends = null;
+  const trendsPath = join(process.cwd(), '.github', 'data', 'youtube-trends.json');
+  if (existsSync(trendsPath)) {
+    try { trends = JSON.parse(readFileSync(trendsPath, 'utf-8')).aggregate; } catch {}
+  }
+  return buildMarketingPromptBlock('short', {
+    keyword: t.term || t.slug || '',
+    category: t.category || '',
+    trends,
+  });
+}
+
 function buildPrompt(t, antiRep = '') {
   return `Você é um ROTEIRISTA CINEMATOGRÁFICO de finanças do canal FinMoovi (PT-BR): engaja, cria mistério, instiga emoção e prende a atenção do PRIMEIRO ao ÚLTIMO segundo. Escreve como uma CONVERSA DE AMIGO brasileiro — informal, fluido, com gírias leves — NUNCA formal, "escrito" ou robótico.
 Crie o roteiro de um YOUTUBE SHORT (vertical, motion graphics) sobre o termo do glossário abaixo.
@@ -166,6 +181,7 @@ DEFINIÇÃO: ${t.definition}
 CONTEÚDO DE APOIO (use os números/exemplos reais daqui):
 ${truncateBody(t.body)}
 ${antiRep ? `\n${antiRep}\n` : ''}
+${buildMarketingBlock(t)}
 ════════ REGRAS DE ESTRUTURA (o roteiro é rejeitado se violar) ════════
 ⚠️ os valores/números que aparecem nos EXEMPLOS destas regras (R$ 500, R$ 3,2 milhões, 25/35 anos etc.) pertencem a OUTRO vídeo — é PROIBIDO usá-los; use SOMENTE números reais do CONTEÚDO DE APOIO do termo atual ("${t.term}").
 1. Duração total entre 45 e 55 segundos (soma dos durationSec das cenas).

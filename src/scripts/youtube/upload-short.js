@@ -23,6 +23,7 @@
 
 import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+import { getTitlePatterns } from '../lib/youtube-marketing.js';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 const ROOT = process.cwd();
@@ -140,16 +141,23 @@ async function tryLlm(script) {
     .map((s) => s.narration).filter(Boolean).join(' ')
     .replace(/\s+/g, ' ').slice(0, 700);
 
+  // Marketing intelligence: title patterns
+  const { patterns, constraints } = getTitlePatterns('short', 'pt');
+  const patternHint = patterns.slice(0, 4).map(p => `• ${p.formula} (ex: ${p.example})`).join('\n');
+
   const prompt = `Você é editor de um canal de finanças no YouTube (pt-BR). A partir do roteiro de um Short, gere metadados de publicação. Responda EXATAMENTE neste formato, sem comentários:
 
 ---TITULO---
-[título em pt-BR, MÁXIMO 90 caracteres, com a palavra-chave "${script.keyword}" logo no começo, natural e chamativo, SEM spam de clickbait, SEM emojis]
+[título em pt-BR, MÁXIMO ${constraints.maxChars} caracteres, com a palavra-chave "${script.keyword}" logo no começo, natural e chamativo, SEM spam de clickbait, SEM emojis]
 ---DESCRICAO---
 [gancho de 2 a 3 linhas resumindo o vídeo, tom coloquial, pt-BR, SEM hashtags e SEM links aqui]
 ---HASHTAGS---
 [3 a 5 hashtags separadas por espaço; a PRIMEIRA a mais específica do tema; NÃO inclua #Shorts (ele é adicionado depois)]
 ---TAGS---
 [8 a 12 variações de palavra-chave para SEO, separadas por vírgula]
+
+FÓRMULAS DE TÍTULO (escolha a mais adequada ao tema e ADAPTE):
+${patternHint}
 
 Dados do roteiro:
 - Termo: ${script.term}

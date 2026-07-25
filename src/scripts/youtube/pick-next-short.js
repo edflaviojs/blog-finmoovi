@@ -63,6 +63,25 @@ function listPublished() {
   }
 }
 
+// Score a term by trend relevance (higher = more relevant to current trends)
+function scoreTerm(slug, trendData) {
+  let score = 0;
+  if (trendData?.aggregate?.sampleTitles) {
+    const slugWords = slug.replace(/-/g, ' ').toLowerCase();
+    const inTrending = trendData.aggregate.sampleTitles.some(
+      t => slugWords.split(' ').some(w => w.length > 4 && t.toLowerCase().includes(w))
+    );
+    if (inTrending) score += 50;
+  }
+  if (trendData?.aggregate?.pillarHeat) {
+    const totalHeat = Object.values(trendData.aggregate.pillarHeat).reduce((a, b) => a + b, 0);
+    if (totalHeat > 0) score += 10;
+  }
+  // Small random factor for variety
+  score += Math.random() * 10;
+  return score;
+}
+
 function main() {
   const all = listPtSlugs();
   const published = listPublished();
@@ -79,7 +98,22 @@ function main() {
     process.exit(NOTHING_TO_DO);
   }
 
-  const next = remaining[0]; // próximo alfabético.
+  // Trend-scored selection (fallback to alphabetical if no trend data)
+  let next;
+  const trendsPath = join(ROOT, '.github', 'data', 'youtube-trends.json');
+  if (existsSync(trendsPath)) {
+    try {
+      const trendData = JSON.parse(readFileSync(trendsPath, 'utf-8'));
+      const scored = remaining.map(slug => ({ slug, score: scoreTerm(slug, trendData) }));
+      scored.sort((a, b) => b.score - a.score);
+      next = scored[0].slug;
+      if (VERBOSE) console.error(`🔥 seleção por tendência: ${next} (score: ${scored[0].score.toFixed(1)})`);
+    } catch {
+      next = remaining[0]; // fallback alfabético
+    }
+  } else {
+    next = remaining[0]; // fallback alfabético
+  }
 
   if (VERBOSE) {
     console.error(`➡️  próximo termo         : ${next}`);

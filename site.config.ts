@@ -416,4 +416,17 @@ export const config: SiteConfig = {
     projectName: 'blog-finmoovi',
     kvNamespaceId: 'b5ea6ea0f36c40a6a3ae264e3c717750',
   },
+
+  // ─── YOUTUBE CHANNEL ──────────────────────────────────────────────
+  youtube: {
+    handle: '@finmoovi',
+    contentTypes: ['shorts', 'longos', 'influencer'],
+    bordao: 'Dinheiro sem controle é dinheiro dos outros.',
+    defaultLocale: 'pt',
+    publishSchedule: {
+      shorts: { frequency: 'daily', time: '06:30 UTC' },
+      longos: { frequency: 'weekly', time: 'TBD' },
+      benchmark: { frequency: 'weekly', time: '04:00 UTC (domingos)' },
+    },
+  },
 };
