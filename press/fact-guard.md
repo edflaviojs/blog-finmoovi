@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-07-24T07:29:20.691Z
-**Posts:** 189 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 30
+**Gerado em:** 2026-07-25T07:13:26.722Z
+**Posts:** 198 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 32
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -9,6 +9,12 @@
 **5-dicas-para-reorganizar-suas-financas-nas-ferias.md**
 - _De acordo com o Instituto Brasileiro de Geografia e Estatística (IBGE), em 2022, a maior parte dos brasileiros (64,1%) tinha dificuldade em pagar contas e despesas, mostrando a importância de uma gest_
 - _De acordo com a Serasa, em 2022, quase 60% dos brasileiros utilizavam aplicativos para controlar suas finanças, mostrando a crescente conscientização sobre a importância da gestão financeira pessoal._
+
+**5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-.md**
+- _Segundo o **Banco Central do Brasil**, o consumo em novembro de 2023 cresceu **13,2 %** em relação ao mesmo período do ano anterior, impulsionado pelas compras de fim de ano._
+- _Segundo a **Serasa Experian**, a dívida média das famílias brasileiras em 2023 ultrapassou R$ 12 mil, mostrando que muitas pessoas carregam despesas desnecessárias._
+- _Essa técnica reduz drasticamente compras impulsivas, que, segundo o **IBGE**, representaram cerca de **12 %** das despesas de consumo em 2022._
+- _Segundo o **Bacen**, 45 % das famílias brasileiras não têm [reserva de emergência](/ferramentas/calculadora-reserva), o que pode levar a endividamento._
 
 **cotacoes-semana-3-junho-2026.md**
 - _Além disso, é fundamental revisar e ajustar suas estratégias de investimento de acordo com as mudanças no mercado._
@@ -19,20 +25,30 @@
 **cotacoes-semana-4-maio-2026.md**
 - _Fique atento às notícias econômicas e ajuste seu plano de investimento de acordo com as mudanças no mercado._
 
-**en-5-dicas-para-reorganizar-suas-financas-nas-ferias.md**
+**en-5-practical-steps-to-start-saving-for-black-friday-2026.md**
+- _According to the **Central Bank of Brazil**, consumption in November 2023 rose **13._
+- _According to **Serasa Experian**, the average debt of Brazilian families in 2023 topped R$ 12 thousand, showing that many people carry unnecessary costs._
+- _This technique dramatically reduces impulse purchases, which, according to **IBGE**, accounted for about **12 %** of consumer spending in 2022._
+- _According to the **Central Bank**, 45 % of Brazilian families lack an emergency reserve, which can lead to debt._
+
+**en-5-tips-to-reorganize-your-finances-on-vacation.md**
 - _According to the Brazilian Institute of Geography and Statistics (IBGE), in 2022, most Brazilians (64._
 - _According to Serasa, in 2022, almost 60% of Brazilians used apps to control their finances, showing the growing awareness of the importance of personal financial management._
 
-**en-etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel.md**
+**en-budget-for-couples-dividing-expenses.md**
+- _In the case of João and Maria, they can decide to divide expenses according to the percentage of their salaries in relation to the total._
+
+**en-budget-review.md**
+- _After checking your expenses, adjust them according to your needs and goals._
+- _Check your income over the past 6 months and adjust it according to your needs and goals._
+
+**en-etfs-what-they-are-and-how-to-invest-simply-and-profitably.md**
 - _, IMAB11) in 70/30 or 60/40 ratios, according to your profile._
 
 **en-finmoovi-cost-of-living-index-june-2026.md**
 - _In June 2026, the cost of living rose 0,16 % according to the overall IPCA released by IBGE, indicating a modest increase in consumer prices that month._
 
-**en-orcamento-para-casal-dividindo-despesas.md**
-- _In the case of João and Maria, they can decide to divide expenses according to the percentage of their salaries in relation to the total._
-
-**en-previdencia-privada-vs-investir-por-conta-propria-qual-vale-.md**
+**en-private-pension-vs-investing-on-your-own-which-is-worth-it-i.md**
 - _These plans are offered by financial institutions and insurance companies, and can be customized according to the investor's needs and objectives._
 
 **en-quotes-semana-1-june-2026.md**
@@ -44,34 +60,30 @@
 **en-quotes-week-4-may-2026.md**
 - _Stay tuned to economic news and adjust your investment plan according to market changes._
 
-**en-revisao-de-orcamento.md**
-- _After checking your expenses, adjust them according to your needs and goals._
-- _Check your income over the past 6 months and adjust it according to your needs and goals._
+**en-review-your-budget.md**
+- _Reviewing our [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according_
 
-**en-revisite-seu-orcamento.md**
-- _Reviewing our [budget](/en/posts/en-orcamento-com-salario-minimo-dicas-praticas) is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies accordin_
-
-**en-voce-tambem-tem-dificuldade-em-organizar-suas-financas.md**
+**en-you-re-not-alone-in-struggling-to-organize-your-finances.md**
 - _According to statistics, people who use expense management apps like FinMoovi tend to save more and have better financial health._
 
-**es-migrando-da-planilha-para-um-app-financeiro.md**
+**es-migrando-de-la-hoja-de-calculo-a-una-app-financiera.md**
 - _De acuerdo con investigaciones, el 70% de las personas que usan hojas de cálculo abandonan en 30 días por falta de consistencia._
 
-**es-orcamento-para-casal-dividindo-despesas.md**
-- _En el caso de João y Maria, ellos pueden decidir dividir los gastos de acuerdo con el porcentaje de sus salarios en relación con el total._
-
-**es-planilha-de-gastos-quando-ela-deixa-de-funcionar.md**
+**es-planilla-de-gastos-cuando-ella-deja-de-funcionar.md**
 - _Ofrecen flexibilidad, son gratuitas y pueden ser personalizadas de acuerdo con sus necesidades._
 
-**es-previdencia-privada-vs-investir-por-conta-propria-qual-vale-.md**
+**es-presupuesto-para-parejas-dividiendo-gastos.md**
+- _En el caso de João y Maria, ellos pueden decidir dividir los gastos de acuerdo con el porcentaje de sus salarios en relación con el total._
+
+**es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale-ma.md**
 - _Estos planes son ofrecidos por instituciones financieras y aseguradoras, y pueden ser personalizados de acuerdo con las necesidades y objetivos del inversor._
 
-**es-revisao-de-orcamento.md**
+**es-revision-de-presupuesto.md**
 - _Después de verificar tus gastos, ajústalos de acuerdo con tus necesidades y objetivos._
 - _Verifica tus ingresos de los últimos 6 meses y ajústalos de acuerdo con tus necesidades y objetivos._
 
-**es-revisite-seu-orcamento.md**
-- _La revisión del [presupuesto](/es/posts/es-como-crear-presupuesto-personal) es una etapa crucial en este proceso, ya que nos permite identificar áreas donde podemos mejorar y ajustar nuestras estrateg_
+**es-revisite-su-presupuesto.md**
+- _La revisión del [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) es una etapa crucial en este proceso, ya que nos permite identificar áreas donde podemos mejorar y aju_
 
 **indice-finmoovi-custo-de-vida-junho-2026.md**
 - _Em junho de 2026, o custo de vida subiu 0,16 % segundo o IPCA geral divulgado pelo IBGE, indicando um aumento modesto nos preços ao consumidor naquele mês._
