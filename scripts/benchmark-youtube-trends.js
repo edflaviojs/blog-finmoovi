@@ -27,9 +27,9 @@ const QUERIES = [
 ];
 
 // Filters
-const MIN_VIEWS_PER_DAY = 500;
-const MIN_LIKE_RATIO = 0.03;
-const MAX_AGE_DAYS = 30;
+const MIN_VIEWS_PER_DAY = 100;
+const MIN_LIKE_RATIO = 0.02;
+const MAX_AGE_DAYS = 60;
 const RESULTS_PER_QUERY = 50;
 
 /**
@@ -66,7 +66,6 @@ async function searchVideos(query) {
     regionCode: 'BR',
     relevanceLanguage: 'pt',
     maxResults: String(RESULTS_PER_QUERY),
-    videoDuration: 'short',
   });
 }
 
