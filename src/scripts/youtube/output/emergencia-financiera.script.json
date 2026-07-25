@@ -1,0 +1,191 @@
+{
+  "slug": "emergencia-financiera",
+  "term": "Emergência Financeira",
+  "category": "basico",
+  "keyword": "Emergência Financeira",
+  "nextVideoTitle": "Como transformar cortes de gastos em um foguete de crescimento",
+  "intro": {
+    "style": "contagem",
+    "frase": "*Já viu* que R$ 500 podem virar *R$ 5.000*???",
+    "counter": {
+      "from": 500,
+      "to": 5000,
+      "prefix": "R$"
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Emergência Financeira bate na porta e você tem só R$ 500 na conta… e ainda tem a oficina pedindo R$ 2.000.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "Emergência",
+          "visual": {
+            "type": "statement",
+            "text": "Emergência Financeira",
+            "note": "impacto inicial"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500",
+            "note": "saldo insuficiente"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2.000",
+            "note": "custo oficina"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "É aquele imprevisto que te deixa sem grana, tipo perder o emprego ou a geladeira pifar. Se você ganha R$ 3.000, precisa de R$ 9.000 para aguentar 3 meses. Sem reserva, a situação vira um foguete que decola rápido… e depois vira um ralo que suga tudo.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "imprevisto",
+          "visual": {
+            "type": "icon",
+            "icon": "warning",
+            "note": "sinal de alerta"
+          }
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 3.000",
+            "note": "salário mensal"
+          }
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 9.000",
+            "note": "3 meses de despesas"
+          }
+        },
+        {
+          "anchor": "foguete",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "foguete",
+            "note": "início rápido"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "ralo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo",
+            "note": "esgoto financeiro"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "A solução? Cria sua reserva de emergência. Para quem tem CLT, guarda 6 meses de despesas. Se for autônomo, 12 meses. No app, tem a calculadora que mostra quanto você precisa guardar.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "reserva",
+          "visual": {
+            "type": "statement",
+            "text": "Reserva de emergência",
+            "note": "chave da solução"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "6",
+          "visual": {
+            "type": "number",
+            "text": "6",
+            "note": "meses CLT"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "12",
+          "visual": {
+            "type": "number",
+            "text": "12",
+            "note": "meses autônomo"
+          }
+        },
+        {
+          "anchor": "meses",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "mostra valor ideal"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "cta",
+      "narration": "Quer montar sua reserva agora? Usa a calculadora do FinMoovi, é grátis. Lembra: Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "agora",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "abrindo a ferramenta"
+          },
+          "sfx": "kaching"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle é dinheiro dos outros.",
+            "note": "bordão"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "outro",
+      "narration": "E no próximo vídeo, descubra como transformar um pequeno corte de gastos em um foguete de crescimento. Não perde!",
+      "durationSec": 6,
+      "shots": [
+        {
+          "anchor": "foguete",
+          "visual": {
+            "type": "statement",
+            "text": "Como transformar cortes de gastos em um foguete de crescimento?",
+            "note": "teaser"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Acesse a calculadora grátis no FinMoovi",
+    "target": "app"
+  },
+  "totalDurationSec": 45
+}
