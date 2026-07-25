@@ -1,0 +1,164 @@
+{
+  "slug": "aplicacao-financeira",
+  "term": "aplicação financeira",
+  "category": "basico",
+  "keyword": "aplicação financeira",
+  "nextVideoTitle": "CDB vs Tesouro Direto: Qual escolher?",
+  "intro": {
+    "style": "afirmacao",
+    "frase": "*Você ACREDITA* que 0,5% ao mês pode virar *8% ao ano*???",
+    "counter": {
+      "from": 0.5,
+      "to": 8,
+      "prefix": ""
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se você acha que aplicação financeira é só papo de rico, olha esse retorno de 8% ao ano.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "aplicação",
+          "visual": {
+            "type": "statement",
+            "text": "aplicação financeira",
+            "note": "texto grande"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "8%",
+          "visual": {
+            "type": "number",
+            "text": "8%",
+            "note": "percentual"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Coloque mil reais num CDB de taxa fixa por 30 dias e veja 0,5% ao mês, já melhor que a poupança.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "mil",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.000",
+            "note": "valor inicial"
+          }
+        },
+        {
+          "anchor": "30",
+          "visual": {
+            "type": "number",
+            "text": "30 dias",
+            "note": "prazo curto"
+          }
+        },
+        {
+          "anchor": "0,5%",
+          "visual": {
+            "type": "number",
+            "text": "0,5% ao mês",
+            "note": "rentabilidade"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "É como uma bola de neve: começa pequena, rola, ganha força, e vira uma avalanche que multiplica seu dinheiro. Use a calculadora do app para ver o efeito.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "bola",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve",
+            "note": "início da história"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "avalanche",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche",
+            "note": "continuação da história"
+          },
+          "sfx": "avalanche"
+        },
+        {
+          "anchor": "seu",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "mostra a calculadora"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "cta",
+      "narration": "Quer simular seu rendimento? Clique aqui, abra a calculadora e descubra. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "Clique",
+          "visual": {
+            "type": "statement",
+            "text": "Clique aqui",
+            "note": "chamada à ação"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "calculadora",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "uso da calculadora"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "outro",
+      "narration": "E se eu te contar que no próximo vídeo vamos mergulhar nos CDBs e no Tesouro Direto? Não perca!",
+      "durationSec": 8,
+      "shots": [
+        {
+          "anchor": "CDBs",
+          "visual": {
+            "type": "statement",
+            "text": "CDBs",
+            "note": "próximo tema"
+          }
+        },
+        {
+          "anchor": "Tesouro",
+          "visual": {
+            "type": "statement",
+            "text": "Tesouro Direto",
+            "note": "próximo tema"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Acesse a calculadora no app e simule seu rendimento agora",
+    "target": "app"
+  },
+  "totalDurationSec": 47
+}
