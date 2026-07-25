@@ -294,10 +294,10 @@ export async function buildTranslatedFile(sourceRaw, sourceFile, targetLocale, k
   if (eol === '\r\n') content = content.replace(/\r?\n/g, '\r\n');
   if (!content.endsWith(eol)) content += eol;
 
-  // Nome do arquivo alvo (derivado SEMPRE do slug base PT — nunca do termo traduzido).
+  // Nome do arquivo alvo (derivado do translationKey — estável entre renames).
   let base;
   if (kind === 'glossario') {
-    base = glossarioBaseSlug(sourceFile);
+    base = getScalar(fm, 'translationKey') || glossarioBaseSlug(sourceFile);
   } else {
     base = getScalar(fm, 'translationKey');
     if (!base) throw new Error(`Post sem translationKey: ${sourceFile}`);
@@ -334,13 +334,18 @@ export function scanPosts() {
   })).filter(g => g.missing.length > 0);
 }
 
-/** Glossário: agrupa por filename base. Retorna [{ base, present:{}, missing:[] }] */
+/** Glossário: agrupa por translationKey (frontmatter). Retorna [{ base, present:{}, missing:[] }] */
 export function scanGlossario() {
   const files = readdirSync(GLOSSARIO_DIR).filter(f => f.endsWith('.md'));
   const groups = {};
   for (const file of files) {
-    const base = glossarioBaseSlug(file);
+    const raw = readFileSync(join(GLOSSARIO_DIR, file), 'utf-8');
+    const parsed = splitFrontmatter(raw);
+    if (!parsed) continue;
+    const key = getScalar(parsed.fm, 'translationKey');
     const locale = localeFromFilename(file);
+    // Use translationKey if available, fallback to filename base for legacy files
+    const base = key || glossarioBaseSlug(file);
     if (!groups[base]) groups[base] = { base, present: {} };
     groups[base].present[locale] = file;
   }
