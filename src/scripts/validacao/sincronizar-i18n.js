@@ -19,12 +19,13 @@
  * Exit 1 = ainda há lacunas / falha na revalidação (bloqueia).
  */
 
-import { writeFileSync, existsSync } from 'fs';
+import { writeFileSync, existsSync, readdirSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 import {
   POSTS_DIR, GLOSSARIO_DIR,
   scanPosts, scanGlossario, pickSource, buildTranslatedFile,
+  getScalar, splitFrontmatter, localeFromFilename,
 } from '../lib/i18n-sync.js';
 import { readFileSync } from 'fs';
 
@@ -41,7 +42,38 @@ async function fixGap({ dir, kind, sourceName, missingLocales, present }) {
   }
   const sourceRaw = readFileSync(join(dir, src.file), 'utf-8');
 
+  // Trava aditiva (anti-duplicata por par translationKey+locale).
+  // O existsSync abaixo só pega colisão de filename IDÊNTICO. Quando um irmão
+  // da mesma translationKey já existe sob um SLUG diferente (ex.: en-amortization.md
+  // vs. en-amortizacao.md), aquela trava não pega e nasceria uma DUPLICATA do
+  // mesmo termo/locale. Aqui detectamos o irmão pelo par (translationKey, locale)
+  // e pulamos o target quando ele já existe. Sem translationKey no source, esta
+  // trava não se aplica (mantém-se só o existsSync de filename) — nada de fallback
+  // por slug, que reintroduziria o bug.
+  const sourceParsed = splitFrontmatter(sourceRaw);
+  const sourceKey = sourceParsed ? getScalar(sourceParsed.fm, 'translationKey') : null;
+  const dirFiles = sourceKey ? readdirSync(dir).filter(f => f.endsWith('.md')) : [];
+
   for (const target of missingLocales) {
+    // Quando o source tem translationKey, verifica se já existe um irmão
+    // (mesmo translationKey + mesmo locale, pelo prefixo do filename) antes de gravar.
+    if (sourceKey) {
+      const sibling = dirFiles.find(file => {
+        if (localeFromFilename(file) !== target) return false;
+        try {
+          const parsed2 = splitFrontmatter(readFileSync(join(dir, file), 'utf-8'));
+          return parsed2 && getScalar(parsed2.fm, 'translationKey') === sourceKey;
+        } catch (e) {
+          if (e.code === 'ENOENT') return false; // arquivo removido entre readdir e read — não é irmão
+          throw e; // erro real (permissão, I/O) — propaga
+        }
+      });
+      if (sibling) {
+        console.log(`   ⏭️ ${sourceName} → ${target}: já existe irmão (${sibling}) com translationKey ${sourceKey} — pulando (evita duplicata)`);
+        continue;
+      }
+    }
+
     let filename, content;
     try {
       ({ filename, content } = await buildTranslatedFile(sourceRaw, src.file, target, kind));
