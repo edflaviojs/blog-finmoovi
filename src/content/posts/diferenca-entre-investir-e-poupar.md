@@ -34,7 +34,7 @@ Já a poupança, por outro lado, é geralmente mais segura, mas os retornos são
 ## Planejamento Financeiro
 Para decidir se você deve investir ou poupar, é importante ter um plano financeiro claro. Isso inclui definir seus objetivos financeiros, como comprar uma casa, pagar dívidas ou se aposentar confortavelmente. Além disso, é fundamental entender seu perfil de risco e sua capacidade de tolerar perdas.
 
-**Dica prática:** Antes de investir, certifique-se de que você tem uma [reserva de emergência](/glossario/reserva-de-emergencia) equivalente a pelo menos 3-6 meses de despesas. Isso ajudará a proteger você de perdas inesperadas e garantir que você tenha dinheiro suficiente para cobrir suas despesas básicas.
+**Dica prática:** Antes de investir, certifique-se de que você tem uma [reserva de emergência](/glossario/emergency-fund) equivalente a pelo menos 3-6 meses de despesas. Isso ajudará a proteger você de perdas inesperadas e garantir que você tenha dinheiro suficiente para cobrir suas despesas básicas.
 
 ## Estratégias de Investimento
 Se você decidir investir, é importante ter uma estratégia clara. Isso pode incluir diversificar seus investimentos, ou seja, espalhar seu dinheiro em diferentes tipos de ativos para reduzir o risco. Além disso, é fundamental estar ciente das taxas e custos associados aos investimentos, pois eles podem comer uma parte significativa de seus retornos.

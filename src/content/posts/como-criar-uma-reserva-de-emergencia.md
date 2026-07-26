@@ -17,7 +17,7 @@ seo:
   keywords: ["como criar uma reserva de emergência","finanças pessoais","economia","dinheiro"]
 ---
 
-## Definindo a [reserva de emergência](/glossario/reserva-de-emergencia)
+## Definindo a [reserva de emergência](/glossario/emergency-fund)
 Uma reserva de emergência é uma quantia de [dinheiro](/posts/cashback-inteligente) guardada para cobrir despesas inesperadas ou perda de renda. É essencial ter uma reserva para evitar dívidas e manter a estabilidade financeira. Por exemplo, se você ganha R$ 5.000 por mês e perde o emprego, uma reserva de emergência pode ajudar a pagar as contas enquanto você procura um novo trabalho.
 
 Uma boa regra é ter entre 3 a 6 meses de despesas cobertas pela reserva. Se suas despesas mensais são de R$ 3.500, você precisaria de uma reserva de R$ 10.500 a R$ 21.000. Isso pode parecer muito, mas é importante começar a economizar o quanto antes.

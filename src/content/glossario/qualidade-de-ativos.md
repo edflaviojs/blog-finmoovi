@@ -45,7 +45,7 @@ Investir em ativos de qualidade traz benefícios claros para quem busca estabili
 - **Previsibilidade de renda**: dividendos ou juros são mais consistentes, facilitando o planejamento do orçamento.  
 - **Facilidade de acesso ao crédito**: quem tem investimentos de qualidade pode usar esses ativos como garantia, obtendo empréstimos com juros menores.  
 
-Essas vantagens são especialmente úteis para quem tem salário entre R$3.000 e R$8.000 e precisa equilibrar despesas mensais, [reserva de emergência](/glossario/reserva-de-emergencia) e metas de longo prazo.
+Essas vantagens são especialmente úteis para quem tem salário entre R$3.000 e R$8.000 e precisa equilibrar despesas mensais, [reserva de emergência](/glossario/emergency-fund) e metas de longo prazo.
 
 ## Riscos  
 

@@ -39,7 +39,7 @@ Exemplo: financiamento de R$ 200.000 em 30 anos a 10% a.a.
 ❌ Não vale a pena:
 - Juros da dívida são menores que seus investimentos rendem
 - Financiamento com taxa muito baixa (<7% a.a.)
-- Se vai ficar sem [reserva de emergência](/glossario/reserva-de-emergencia)
+- Se vai ficar sem [reserva de emergência](/glossario/emergency-fund)
 
 ## Como fazer
 

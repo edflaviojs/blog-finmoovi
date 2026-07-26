@@ -39,7 +39,7 @@ Historicamente, alguns setores se valorizam no segundo semestre – turismo, var
 Se você ainda não atingiu sua meta de [poupança](/glossario/poupanca) ou de retorno, o segundo semestre representa a última chance de corrigir o percurso antes do fechamento do exercício fiscal.
 
 ### 3. Preparação para o próximo ano
-Construir uma [reserva de emergência](/glossario/reserva-de-emergencia) e alocar recursos em ativos de longo prazo já no segundo semestre garante tranquilidade para iniciar 2025 com a carteira pronta.
+Construir uma [reserva de emergência](/glossario/emergency-fund) e alocar recursos em ativos de longo prazo já no segundo semestre garante tranquilidade para iniciar 2025 com a carteira pronta.
 
 ---
 

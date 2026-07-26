@@ -35,7 +35,7 @@ Educação financeira é aprender a lidar com [dinheiro](/posts/cashback-intelig
 - Pagar-se primeiro (separar antes de gastar)
 - Automatizar transferências para [investimentos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
 - Ter metas claras de [economia](/posts/5-dicas-para-se-preparar-financeiramente-para-o-segundo-seme)
-- [Reserva de emergência](/glossario/reserva-de-emergencia) como prioridade
+- [Reserva de emergência](/glossario/emergency-fund) como prioridade
 
 ### 4. Investir
 

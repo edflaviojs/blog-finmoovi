@@ -19,7 +19,7 @@ seo:
 
 ## O que está acontecendo com seu saldo?
 
-Se você, assim como a Ana, chega ao final do mês e abre a conta bancária para encontrar um número bem menor do que esperava, saiba que não está sozinho. Essa falta de visibilidade gera ansiedade, atrasa sonhos (como a viagem ou a [reserva de emergência](/glossario/reserva-de-emergencia)) e, muitas vezes, leva a decisões precipitadas, como cortar gastos essenciais ou recorrer a crédito caro.
+Se você, assim como a Ana, chega ao final do mês e abre a conta bancária para encontrar um número bem menor do que esperava, saiba que não está sozinho. Essa falta de visibilidade gera ansiedade, atrasa sonhos (como a viagem ou a [reserva de emergência](/glossario/emergency-fund)) e, muitas vezes, leva a decisões precipitadas, como cortar gastos essenciais ou recorrer a crédito caro.
 
 Eu já passei por isso. Um dia, depois de pagar o aluguel, a conta de luz e as compras do supermercado, ainda assim o extrato mostrava que faltavam quase R$ 800,00. Eu não conseguia lembrar de nenhuma compra que justificasse aquele [valor](/glossario/valor-financeiro). Foi aí que percebi: o problema não era o quanto eu gastava, mas **como eu acompanhava** esses gastos.
 

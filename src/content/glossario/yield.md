@@ -53,7 +53,7 @@ Como qualquer investimento, o yield também envolve riscos. Alguns dos principai
 * Risco de mercado: O risco de que o valor do investimento flutue devido a mudanças nas condições de mercado.
 * Risco de liquidez: O risco de que você não possa vender o investimento rapidamente o suficiente ou pelo preço desejado.
 
-**Dica prática:** Para mitigar esses riscos, é importante diversificar o seu portfólio e manter uma [reserva de emergência](/glossario/reserva-de-emergencia) para cobrir despesas inesperadas.
+**Dica prática:** Para mitigar esses riscos, é importante diversificar o seu portfólio e manter uma [reserva de emergência](/glossario/emergency-fund) para cobrir despesas inesperadas.
 
 ## Exemplos práticos
 Vamos considerar alguns exemplos práticos de como o yield pode funcionar na vida real. Suponha que você ganha R$ 5.000 por mês e deseja investir 10% do seu salário, ou R$ 500, em um fundo de investimento com um yield de 9% ao ano. Ao longo de um ano, você pode esperar receber R$ 45 em rendimentos, o que pode ser reinvestido para aumentar o seu patrimônio.

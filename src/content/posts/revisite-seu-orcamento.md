@@ -50,7 +50,7 @@ Existem várias ferramentas disponíveis para ajudar na gestão do orçamento. U
 ## Estratégias para o Sucesso
 Além de revisar regularmente o orçamento, existem algumas estratégias que podem ajudar a manter as finanças em ordem:
 
-- **Poupança de emergência**: Mantenha uma [reserva de emergência](/glossario/reserva-de-emergencia) que cubra pelo menos 3 a 6 meses de despesas.
+- **Poupança de emergência**: Mantenha uma [reserva de emergência](/glossario/emergency-fund) que cubra pelo menos 3 a 6 meses de despesas.
 - **Investimentos**: Considere investir parte de sua renda em opções como [Tesouro Direto](https://www.tesourodireto.com.br/), que oferece uma forma segura de grower sua riqueza ao longo do tempo.
 - **[Educação financeira](/glossario/educacao-financeira)**: Continue aprendendo sobre finanças pessoais e investimentos. Sites como [Investopedia](https://www.investopedia.com/) oferecem uma vasta gama de artigos e recursos educacionais.
 

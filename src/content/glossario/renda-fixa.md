@@ -66,7 +66,7 @@ Vamos colocar a teoria no dia a dia usando salários típicos:
 - **Cenário 2 – Salário R$6.200:** Maria investe R$620 em um Tesouro Selic (rendimento atrelado à taxa Selic, 13,75% ao ano). Após um ano, seu saldo será aproximadamente R$700, considerando a taxa atual.
 - **Cenário 3 – Salário R$8.000:** Carlos compra uma LCI de 95 % do CDI, isenta de [imposto de renda](/glossario/imposto-de-renda), com prazo de 24 meses. Ele coloca R$800 por mês (R$9.600 ao todo) e, ao final, terá cerca de R$10.500, já que a isenção de IR aumenta o retorno líquido.
 
-**Dica prática:** Se o seu objetivo é montar uma [reserva de emergência](/glossario/reserva-de-emergencia), prefira títulos com liquidez diária, como o Tesouro Selic ou CDBs que permitam resgate a qualquer momento.
+**Dica prática:** Se o seu objetivo é montar uma [reserva de emergência](/glossario/emergency-fund), prefira títulos com liquidez diária, como o Tesouro Selic ou CDBs que permitam resgate a qualquer momento.
 
 **Dica prática:** Quando a inflação estiver alta, dê preferência a títulos atrelados ao IPCA (Tesouro IPCA+), pois eles garantem rendimento acima da variação dos preços.
 

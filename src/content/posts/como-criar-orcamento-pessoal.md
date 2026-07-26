@@ -27,7 +27,7 @@ Sem um [orçamento](/posts/metodo-50-30-20-para-orcamento), você está navegand
 Um bom [orçamento](/posts/5-dicas-para-reorganizar-suas-financas-nas-ferias) te ajuda a:
 - Saber exatamente para onde vai seu [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz)
 - Identificar gastos desnecessários
-- Criar uma [reserva de emergência](/glossario/reserva-de-emergencia)
+- Criar uma [reserva de emergência](/glossario/emergency-fund)
 - Alcançar objetivos financeiros (viagem, casa, aposentadoria)
 
 ## Passo 1: Liste todas as suas receitas
