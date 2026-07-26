@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T10:54:10.994Z",
+  "updatedAt": "2026-07-26T10:29:33.930Z",
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -119,8 +119,10 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
-      "addedAt": "2026-07-23T20:12:37.196Z"
+      "status": "used",
+      "addedAt": "2026-07-23T20:12:37.196Z",
+      "usedAt": "2026-07-26T10:29:33.930Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "orçamento pessoal mensal",
