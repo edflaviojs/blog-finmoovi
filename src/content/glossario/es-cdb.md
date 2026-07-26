@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Qué es
-El CDB, o Certificado de Depósito Bancario, es un tipo de inversión ofrecido por bancos e instituciones financieras en Brasil. Básicamente, es un título de [renta fija](/es/glossario/es-renda-fixa) que representa un depósito a la vista con rendimiento prefijado. Es decir, usted deposita un valor y recibe un retorno sobre esa inversión, generalmente en forma de [intereses](/es/glossario/es-juros).
+El CDB, o Certificado de Depósito Bancario, es un tipo de inversión ofrecido por bancos e instituciones financieras en Brasil. Básicamente, es un título de [renta fija](/es/glossario/es-renta-fija) que representa un depósito a la vista con rendimiento prefijado. Es decir, usted deposita un valor y recibe un retorno sobre esa inversión, generalmente en forma de [intereses](/es/glossario/es-interes).
 
 * Características principales del CDB:
  + Rendimiento prefijado
@@ -29,7 +29,7 @@ El CDB, o Certificado de Depósito Bancario, es un tipo de inversión ofrecido p
 
 ![Qué es](/images/glossario/cdb-inline-1.webp)
 
-El CDB es una opción de inversión popular entre los brasileños, pues ofrece una rentabilidad más atractiva que el [ahorro](/es/glossario/es-poupanca) tradicional, con un nivel de riesgo moderado.
+El CDB es una opción de inversión popular entre los brasileños, pues ofrece una rentabilidad más atractiva que el [ahorro](/es/glossario/es-ahorro) tradicional, con un nivel de riesgo moderado.
 
 ## Cómo funciona
 Cuando usted invierte en un CDB, está básicamente prestando dinero al banco que lo emite. El banco, por su parte, utiliza esos recursos para financiar sus operaciones y proyectos. A cambio, el banco paga intereses sobre el valor invertido, que se calculan con base en la tasa de interés prefijada.
@@ -42,7 +42,7 @@ Por ejemplo, si usted invierte R$ 5.000 en un CDB con tasa de interés del 10% a
 Las principales ventajas del CDB incluyen:
 * Rendimiento más atractivo que el ahorro tradicional
 * Liquidez diaria, permitiendo que usted retire su inversión en cualquier momento
-* [Diversificación](/es/glossario/es-diversificacao) de cartera, pues el CDB es un tipo de inversión diferente de la acción o del fondo de inversión
+* [Diversificación](/es/glossario/es-diversificacion) de cartera, pues el CDB es un tipo de inversión diferente de la acción o del fondo de inversión
 * Posibilidad de negociar en bolsa de valores
 
 Además, el CDB es una opción de inversión relativamente segura, pues es emitido por bancos e instituciones financieras reguladas por el Banco Central de Brasil.

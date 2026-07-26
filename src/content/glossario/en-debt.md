@@ -1,5 +1,5 @@
 ---
-term: "dívida"
+term: "Debt"
 definition: "Understand what dívida is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 title: "dívida - Financial Glossary"
 description: "Understand what dívida is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Dívida é basicamente o que você deve a alguém – seja um banco, uma loja ou até um amigo. Quando você pega dinheiro emprestado ou compra algo a prazo, está criando uma dívida que precisa ser quitada no futuro, geralmente com [juros](/en/glossario/en-juros). Em termos simples, é como se você estivesse usando o salário de amanhã para pagar algo hoje.
+Dívida é basicamente o que você deve a alguém – seja um banco, uma loja ou até um amigo. Quando você pega dinheiro emprestado ou compra algo a prazo, está criando uma dívida que precisa ser quitada no futuro, geralmente com [juros](/en/glossario/en-interest). Em termos simples, é como se você estivesse usando o salário de amanhã para pagar algo hoje.
 
 ![What it is](/images/glossario/divida-inline-1.webp)
 
@@ -42,7 +42,7 @@ Mesmo que a palavra “dívida” cause medo, ela pode ser uma ferramenta útil 
 
 
 
-- **[Alavancagem](/en/glossario/en-alavancagem):** permite comprar bens de maior valor antes de acumular a [poupança](/en/glossario/en-poupanca) necessária.  
+- **[Alavancagem](/en/glossario/en-leverage):** permite comprar bens de maior valor antes de acumular a [poupança](/en/glossario/en-savings) necessária.  
 - **Construção de crédito:** demonstração de responsabilidade financeira para instituições.  
 - **Flexibilidade de fluxo:** mantém dinheiro livre para emergências ou investimentos de curto prazo.  
 

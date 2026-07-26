@@ -22,12 +22,12 @@ El principal índice es el **IPCA** (Índice de Precios al Consumidor Amplio), c
 
 Si tus inversiones rinden menos que la inflación, estás **perdiendo dinero** en términos reales. Ejemplo:
 - Inflación: 5 % al año
-- [Poupança](/es/glossario/es-poupanca): 6 % al año
+- [Poupança](/es/glossario/es-ahorro): 6 % al año
 - Ganancia real: solo 1 %
 
 ## ¿Cómo protegerse?
 
 - Invierte en activos que rindan por encima de la inflación
 - Tesoro IPCA+ garantiza [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) real
-- Diversifica entre [renda fixa](/es/glossario/es-renda-fixa) y variable
+- Diversifica entre [renda fixa](/es/glossario/es-renta-fija) y variable
 - Sigue el IPCA mensual

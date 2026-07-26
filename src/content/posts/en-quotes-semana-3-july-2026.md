@@ -26,7 +26,7 @@ The last week was eventful for anyone who follows the Brazilian market. The doll
 
 ## 1. Dollar and Euro Trend
 
-- **Dollar**: After a 1.2 % rise on Monday (driven by U.S. inflation data), the real managed to recover part of the ground lost over the last three days, thanks to an inflow of foreign capital into Brazilian [stocks](/en/glossario/en-acoes). By Friday’s close, the dollar was at **R$ 5.11**, almost 0.3 % below the week’s peak. In practical terms, anyone with dollar‑denominated debt or planning to travel abroad saw the “bill” become a little lighter.
+- **Dollar**: After a 1.2 % rise on Monday (driven by U.S. inflation data), the real managed to recover part of the ground lost over the last three days, thanks to an inflow of foreign capital into Brazilian [stocks](/en/glossario/en-stocks). By Friday’s close, the dollar was at **R$ 5.11**, almost 0.3 % below the week’s peak. In practical terms, anyone with dollar‑denominated debt or planning to travel abroad saw the “bill” become a little lighter.
 
 - **Euro**: The euro followed a more stable path, ranging between **R$ 5.80** and **R$ 5.86**. The main reason was the lack of relevant economic news in the eurozone, which kept the pair in a narrow “range”. For those who buy imported European products or have euro‑linked investments, the variation was practically neutral.
 
@@ -36,9 +36,9 @@ The [rate](/en/glossario/en-financial-fee) Selic stayed at **13.75 % per year*
 
 ![2. Selic and the Impact on Investments](/images/posts/en-quotes-semana-3-july-2026-inline-3.webp)
 
-1. **[Fixed income](/en/glossario/en-renda-fixa) more attractive** – Treasury Direct [Tesouro Direto](/en/glossario/en-tesouro-direto) bonds, CDBs and LCIs/LCAs continue offering returns above 13 % per year. For anyone still holding a portion of the portfolio in [savings](/en/glossario/en-poupanca), the gap between 0.5 % on savings and 13 % on fixed income is huge. Switching savings to a Selic Treasury bond can yield tens of thousands more over five years.
+1. **[Fixed income](/en/glossario/en-fixed-income) more attractive** – Treasury Direct [Tesouro Direto](/en/glossario/en-tesouro-direto) bonds, CDBs and LCIs/LCAs continue offering returns above 13 % per year. For anyone still holding a portion of the portfolio in [savings](/en/glossario/en-savings), the gap between 0.5 % on savings and 13 % on fixed income is huge. Switching savings to a Selic Treasury bond can yield tens of thousands more over five years.
 
-2. **Higher credit cost** – Loans, financing and credit cards become more expensive. If you have debt, the golden rule remains: the higher the Selic, the higher the [interest](/en/glossario/en-juros) you pay. Reducing the outstanding balance or renegotiating the debt becomes even more urgent.
+2. **Higher credit cost** – Loans, financing and credit cards become more expensive. If you have debt, the golden rule remains: the higher the Selic, the higher the [interest](/en/glossario/en-interest) you pay. Reducing the outstanding balance or renegotiating the debt becomes even more urgent.
 
 ## 3. Practical Tip for Individual Investors
 

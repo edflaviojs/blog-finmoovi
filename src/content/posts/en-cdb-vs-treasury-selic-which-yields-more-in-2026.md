@@ -49,7 +49,7 @@ Treasury Selic, being an investment with a government guarantee, is considered v
 When deciding between CDB and Treasury Selic, it's crucial to evaluate your investor profile. If you're a conservative investor who seeks security and is willing to give up a bit of yield in exchange for lower risk, Treasury Selic may be a good option. On the other hand, if you're willing to take on a bit more risk in search of a higher yield, CDB may be more attractive.
 
 ## Considering Other Options
-In addition to CDB and Treasury Selic, there are other investment options in the market, such as investment funds, [stocks](/en/glossario/en-acoes), and even cryptocurrency investments. Each of these options has its own risks and benefits, and it's essential to conduct in-depth research and consider your investor profile before making any decision.
+In addition to CDB and Treasury Selic, there are other investment options in the market, such as investment funds, [stocks](/en/glossario/en-stocks), and even cryptocurrency investments. Each of these options has its own risks and benefits, and it's essential to conduct in-depth research and consider your investor profile before making any decision.
 
 ![Avaliando o Perfil de Investidor](/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026-4.webp)
 

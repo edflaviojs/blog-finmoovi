@@ -1,5 +1,5 @@
 ---
-term: "diversificação"
+term: "Diversification"
 definition: "Understand what diversificação is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 title: "diversificação - Financial Glossary"
 description: "Understand what diversificação is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Diversification is a financial strategy that aims to reduce the risk of loss of [value](/en/glossario/en-financial-value) in an investment by spreading it across different assets, such as [stocks](/en/glossario/en-acoes), bonds, real estate, among others. This means that instead of putting all your money into a single thing, you split it into several, so that if one of them doesn’t work out, the others can compensate. For example, imagine you have R$ 10,000 to invest and decide to put everything into a single company's stocks. If that company runs into problems, you could lose a large portion of your money. But if you split that R$ 10,000 into stocks of different companies, bonds, and a bit into a safer [investment](/en/glossario/en-financial-investment) such as an investment fund, the risk of loss will be lower.
+Diversification is a financial strategy that aims to reduce the risk of loss of [value](/en/glossario/en-financial-value) in an investment by spreading it across different assets, such as [stocks](/en/glossario/en-stocks), bonds, real estate, among others. This means that instead of putting all your money into a single thing, you split it into several, so that if one of them doesn’t work out, the others can compensate. For example, imagine you have R$ 10,000 to invest and decide to put everything into a single company's stocks. If that company runs into problems, you could lose a large portion of your money. But if you split that R$ 10,000 into stocks of different companies, bonds, and a bit into a safer [investment](/en/glossario/en-financial-investment) such as an investment fund, the risk of loss will be lower.
 
 Lists of assets for diversification include:
 * Company stocks
@@ -45,7 +45,7 @@ Although diversification is a safe strategy, there are also risks involved. For 
 
 
 ## Practical examples
-Imagine you earn a salary of R$ 5,000 per month and decide to invest R$ 1,000 each month in different assets. You could allocate R$ 300 to company stocks, R$ 300 to debt securities, R$ 200 to an investment fund, and R$ 200 to a safer investment, such as a [savings](/en/glossario/en-poupanca) account. Over time, you can adjust these amounts according to your risk profile and financial goals. For example, if you’re approaching retirement, you may want to allocate more money to debt securities and less to stocks. You can also use an investment app to help manage your investments and make adjustments as needed.
+Imagine you earn a salary of R$ 5,000 per month and decide to invest R$ 1,000 each month in different assets. You could allocate R$ 300 to company stocks, R$ 300 to debt securities, R$ 200 to an investment fund, and R$ 200 to a safer investment, such as a [savings](/en/glossario/en-savings) account. Over time, you can adjust these amounts according to your risk profile and financial goals. For example, if you’re approaching retirement, you may want to allocate more money to debt securities and less to stocks. You can also use an investment app to help manage your investments and make adjustments as needed.
 
 ## Start today
 Now that you know what diversification is and how it works, it’s time to start applying this strategy to your financial life. **Practical tip:** Start small and increase gradually. You don’t need a lot of money to begin diversifying your investments. You can start with a modest amount and grow it over time. Also, remember that diversification is a long‑term strategy, so don’t worry if you don’t see immediate results. With patience and discipline, you can achieve your financial goals and enjoy a safer, more prosperous life.

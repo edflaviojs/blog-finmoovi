@@ -1,5 +1,5 @@
 ---
-term: "poupança"
+term: "Savings"
 definition: "Understand what poupança is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 title: "poupança - Financial Glossary"
 description: "Understand what poupança is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-A poupança is the most well‑known deposit account in Brazil. It works like a bank “piggy bank” that yields **[interest](/en/glossario/en-juros)** monthly and also protects the money against minimal inflation. Unlike an investment in **[stocks](/en/glossario/en-acoes)** or **[funds](/en/glossario/en-investment-fund)**, the poupança has very simple rules: you deposit, the bank pays a defined percentage, and you can withdraw at any time without penalties.
+A poupança is the most well‑known deposit account in Brazil. It works like a bank “piggy bank” that yields **[interest](/en/glossario/en-interest)** monthly and also protects the money against minimal inflation. Unlike an investment in **[stocks](/en/glossario/en-stocks)** or **[funds](/en/glossario/en-investment-fund)**, the poupança has very simple rules: you deposit, the bank pays a defined percentage, and you can withdraw at any time without penalties.
 
 ![What it is](/images/glossario/poupanca-inline-1.webp)
 
@@ -44,7 +44,7 @@ The poupança has a few strong points that keep it at the top of the list for pe
 - **Safety:** the FGC protects your money up to R$250 mil per institution.  
 - **Ease:** opening the account usually takes only a few minutes, and there is no maintenance fee.  
 - **Immediate liquidity:** the balance is available on the same day, perfect for emergencies like a car repair or an unexpected medical expense.  
-- **Income‑tax exemption:** unlike many investments, the poupança does not charge **[income tax](/en/glossario/en-imposto-de-renda)** on the earnings.
+- **Income‑tax exemption:** unlike many investments, the poupança does not charge **[income tax](/en/glossario/en-income-tax)** on the earnings.
 
 ## Risks
 

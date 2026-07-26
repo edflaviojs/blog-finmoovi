@@ -1,5 +1,5 @@
 ---
-term: "imposto de renda"
+term: "Income Tax"
 definition: "Understand what imposto de renda is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 title: "imposto de renda - Financial Glossary"
 description: "Understand what imposto de renda is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-[Income](/en/posts/en-building-a-diversified-portfolio-with-r-500) tax is a mandatory levy that all Brazilians must pay annually if their income exceeds a certain [value](/en/glossario/en-financial-value). It is calculated based on the taxpayer’s annual gross income, which includes salaries, pensions, rentals, [interest](/en/glossario/en-juros) and other types of earnings. The amount of income tax varies according to the taxpayer’s income bracket, with higher earners paying a larger percentage of their salary.
+[Income](/en/posts/en-building-a-diversified-portfolio-with-r-500) tax is a mandatory levy that all Brazilians must pay annually if their income exceeds a certain [value](/en/glossario/en-financial-value). It is calculated based on the taxpayer’s annual gross income, which includes salaries, pensions, rentals, [interest](/en/glossario/en-interest) and other types of earnings. The amount of income tax varies according to the taxpayer’s income bracket, with higher earners paying a larger percentage of their salary.
 
 * The exemption bracket is R$ 1.903,98 for those who earn up to R$ 1.903,98 per month  
 * The rate is 7.5% for those who earn between R$ 1.903,99 and R$ 2.826,65 per month  

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Usury is a financial term that refers to the practice of charging [interest](/en/glossario/en-juros) excessively on loans or [financing](/en/glossario/en-financing). This means that when you take a loan, you not only pay the [principal](/en/glossario/en-financial-value) amount, but also an additional [rate](/en/glossario/en-financial-fee), which is the interest. Usury occurs when these rates are very high, making it difficult for the borrower to repay the debt. For example, imagine you take a loan of R$ 5,000 with an interest rate of 20% per month. That means that at the end of the month you will have to pay R$ 6,000, which can be very hard for someone who earns R$ 4,000 a month.
+Usury is a financial term that refers to the practice of charging [interest](/en/glossario/en-interest) excessively on loans or [financing](/en/glossario/en-financing). This means that when you take a loan, you not only pay the [principal](/en/glossario/en-financial-value) amount, but also an additional [rate](/en/glossario/en-financial-fee), which is the interest. Usury occurs when these rates are very high, making it difficult for the borrower to repay the debt. For example, imagine you take a loan of R$ 5,000 with an interest rate of 20% per month. That means that at the end of the month you will have to pay R$ 6,000, which can be very hard for someone who earns R$ 4,000 a month.
 
 * Usury can occur in different types of loans, including personal loans, credit cards, and vehicle financing.  
 * The interest rate is one of the main factors that determine whether a loan is usurious or not.  

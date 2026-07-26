@@ -17,7 +17,7 @@ The FGC (Fundo Garantidor de Créditos) is like an insurance for your [investmen
 ## What is covered
 
 - [CDB](/en/glossario/en-cdb) (Certificado de Depósito Bancário)
-- [LCI and LCA](/en/glossario/en-lci-e-lca)
+- [LCI and LCA](/en/glossario/en-lci-and-lca)
 - Savings account
 - Checking account
 - RDB

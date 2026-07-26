@@ -1,5 +1,5 @@
 ---
-term: "imposto de renda"
+term: "Impuesto sobre la Renta"
 definition: "Entienda qué es imposto de renda, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 title: "imposto de renda - Glosario Financiero"
 description: "Entienda qué es imposto de renda, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
@@ -59,5 +59,5 @@ Otro ejemplo es el de una persona que tiene un salario de R$ 4.000 por mes, y de
 Para empezar a declarar y pagar el impuesto de renda, es importante tener un registro detallado de todos los ingresos y gastos. También es importante considerar las deducciones y gastos que se pueden hacer, para reducir la cantidad de impuesto que se debe pagar. Es recomendable consultar con un profesional de impuestos o utilizar un software de impuestos para ayudar con el proceso.
 
 ## Empieza hoy
-No espere más para empezar a declarar y pagar el impuesto de renda. Con un poco de [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) y organización, puede reducir la cantidad de impuesto que se debe pagar y aprovechar las deducciones y gastos que se pueden hacer. Recuerde que el impuesto de renda es una obligación legal, pero también es una oportunidad para contribuir a la sociedad y financiar servicios públicos y programas sociales. ¡Empiece hoy a tomar control de sus finanzas y a declarar y pagar el impuesto de renda de manera efectiva!
+No espere más para empezar a declarar y pagar el impuesto de renda. Con un poco de [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) y organización, puede reducir la cantidad de impuesto que se debe pagar y aprovechar las deducciones y gastos que se pueden hacer. Recuerde que el impuesto de renda es una obligación legal, pero también es una oportunidad para contribuir a la sociedad y financiar servicios públicos y programas sociales. ¡Empiece hoy a tomar control de sus finanzas y a declarar y pagar el impuesto de renda de manera efectiva!
 

@@ -16,7 +16,7 @@ IOF (Imposto sobre Operações Financeiras) es un impuesto federal que grava div
 
 ## Dónde aparece el IOF
 
-### Inversiones ([renda fixa](/es/glossario/es-renda-fixa))
+### Inversiones ([renda fixa](/es/glossario/es-renta-fija))
 
 - Incide sobre rendimientos rescatados en menos de 30 días
 - Comienza en 96% el día 1 y llega a 0% el día 30

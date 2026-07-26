@@ -31,7 +31,7 @@ The US dollar (USD) closed the week at R$ 5.18, showing a slight stability com
 
 ## [Selic](/en/glossario/en-selic) and Impact on Investments
 
-The [rate](/en/glossario/en-financial-fee) Selic, which is the basic [interest](/en/glossario/en-juros) rate of the Brazilian economy, continues to be a crucial factor for investors. With the Selic rate held at specific levels, investments in public bonds and other financial products can be affected. It’s essential to understand how changes in the Selic can influence the return on your investments and adjust your strategy accordingly. If you’re thinking about investing, it’s a good idea to consider [diversification](/en/glossario/en-diversificacao), including investments in different currencies, which can be facilitated with tools like [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026), which helps you track your investments in multiple currencies in a practical way.
+The [rate](/en/glossario/en-financial-fee) Selic, which is the basic [interest](/en/glossario/en-interest) rate of the Brazilian economy, continues to be a crucial factor for investors. With the Selic rate held at specific levels, investments in public bonds and other financial products can be affected. It’s essential to understand how changes in the Selic can influence the return on your investments and adjust your strategy accordingly. If you’re thinking about investing, it’s a good idea to consider [diversification](/en/glossario/en-diversification), including investments in different currencies, which can be facilitated with tools like [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026), which helps you track your investments in multiple currencies in a practical way.
 
 ![Selic and Impact on Investments](/images/posts/en-quotes-semana-1-july-2026-inline-3.webp)
 
@@ -39,7 +39,7 @@ The [rate](/en/glossario/en-financial-fee) Selic, which is the basic [interest](
 
 ## Practical Tip for Individual Investors
 
-For individual investors, a valuable tip is to keep diversification as the key to risk management. This means not putting all your eggs in one basket, spreading your investments across different assets such as [stocks](/en/glossario/en-acoes), bonds, [funds](/en/glossario/en-investment-fund) and even foreign‑currency investments. Additionally, it’s important to have a long‑term plan and not get swayed by daily market fluctuations. With [FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f), you can have a clear view of all your investments, making informed decision‑making easier.
+For individual investors, a valuable tip is to keep diversification as the key to risk management. This means not putting all your eggs in one basket, spreading your investments across different assets such as [stocks](/en/glossario/en-stocks), bonds, [funds](/en/glossario/en-investment-fund) and even foreign‑currency investments. Additionally, it’s important to have a long‑term plan and not get swayed by daily market fluctuations. With [FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f), you can have a clear view of all your investments, making informed decision‑making easier.
 
 ## What to Expect for the Next Week
 

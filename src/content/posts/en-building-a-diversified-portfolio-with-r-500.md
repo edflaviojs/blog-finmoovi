@@ -18,12 +18,12 @@ seo:
 ---
 
 ## Introduction to [Investment](/en/posts/en-tesouro-direto-for-beginners)
-When it comes to investing, many people think that having a large capital is necessary to start. However, it is possible to build a diversified portfolio with just R$500. To do this, it's essential to understand what [diversification](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably) means and why it's important. Diversification means distributing your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) across different types of assets, such as [stocks](/en/glossario/en-acoes), bonds, [investment](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) funds, etc., to reduce the risk of losses. Imagine you have R$500 and decide to invest it all in a single stock. If that stock falls, you'll lose your entire investment. But if you distribute those R$500 across different assets, the risk of loss will be lower.
+When it comes to investing, many people think that having a large capital is necessary to start. However, it is possible to build a diversified portfolio with just R$500. To do this, it's essential to understand what [diversification](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably) means and why it's important. Diversification means distributing your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) across different types of assets, such as [stocks](/en/glossario/en-stocks), bonds, [investment](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) funds, etc., to reduce the risk of losses. Imagine you have R$500 and decide to invest it all in a single stock. If that stock falls, you'll lose your entire investment. But if you distribute those R$500 across different assets, the risk of loss will be lower.
 
 ## Types of Investments
 There are many types of investments available in the market. Some examples include:
 - **Stocks**: Represent a part of a company's capital. When you buy stocks, you're buying a part of that company.
-- **Bonds**: Are issued by companies or governments to raise capital. They offer a [fixed income](/en/glossario/en-renda-fixa) and a return on the invested capital after a certain period.
+- **Bonds**: Are issued by companies or governments to raise capital. They offer a [fixed income](/en/glossario/en-fixed-income) and a return on the invested capital after a certain period.
 - **Investment Funds**: Are like a basket that contains different assets, such as stocks and bonds. They allow you to invest in a variety of assets with a single investment.
 
 ## Planning and Objectives

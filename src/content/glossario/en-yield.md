@@ -29,7 +29,7 @@ Yield is an important measure for evaluating an investment’s performance, as i
 * It can vary depending on the type of investment and the time period  
 
 ## How it works
-Yield works differently depending on the type of investment. For example, in an investment in [ações](/en/glossario/en-acoes), yield can be generated through dividends, which are payments made by the company to shareholders. In a debt securities investment, yield is generated through [juros](/en/glossario/en-juros), which are payments made by the issuer of the security to the investor.
+Yield works differently depending on the type of investment. For example, in an investment in [ações](/en/glossario/en-stocks), yield can be generated through dividends, which are payments made by the company to shareholders. In a debt securities investment, yield is generated through [juros](/en/glossario/en-interest), which are payments made by the issuer of the security to the investor.
 
 **Practical tip:** It’s important to understand that yield is not the same as the investment’s value. For instance, if you invest R$ 1,000 in an investment fund and the fund’s value rises to R$ 1,200, the yield would be 20% (R$ 200 / R$ 1,000), but the investment’s value would be R$ 1,200.
 

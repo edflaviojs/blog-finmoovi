@@ -10,7 +10,7 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## ¿Qué es [Presupuesto](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) Personal?
+## ¿Qué es [Presupuesto](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) Personal?
 
 Presupuesto personal es un plan que muestra cuánto dinero entra, cuánto sale y a dónde va. Es la herramienta más básica y poderosa de las [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar). Sin presupuesto, estás conduciendo a ciegas.
 

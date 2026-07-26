@@ -1,5 +1,5 @@
 ---
-term: "dívida"
+term: "Deuda"
 definition: "Entienda qué es dívida, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 title: "dívida - Glosario Financiero"
 description: "Entienda qué es dívida, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
@@ -82,4 +82,4 @@ Si decides que la deuda puede ser una herramienta útil, sigue estos pasos para 
 
 ## Empieza hoy
 
-No esperes a que la deuda se convierta en una carga. Con una pequeña [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) y la ayuda de herramientas simples, puedes transformar un préstamo en una oportunidad para crecer. ¡Da el primer paso hoy mismo y toma el control de tu futuro financiero!
+No esperes a que la deuda se convierta en una carga. Con una pequeña [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) y la ayuda de herramientas simples, puedes transformar un préstamo en una oportunidad para crecer. ¡Da el primer paso hoy mismo y toma el control de tu futuro financiero!

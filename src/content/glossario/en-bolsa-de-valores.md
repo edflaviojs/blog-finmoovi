@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-The stock exchange, also known as the market for [ações](/en/glossario/en-acoes), is a place where people buy and sell small pieces of companies, known as stocks. Imagine you own a small piece of a company, like [Nubank](/en/glossario/en-nubank) or Magazine Luiza. When the company does well, the [valor](/en/glossario/en-financial-value) of your stock rises, and you can sell it for a higher price than you paid. It’s like having a small share of a business that can grow and generate profits.
+The stock exchange, also known as the market for [ações](/en/glossario/en-stocks), is a place where people buy and sell small pieces of companies, known as stocks. Imagine you own a small piece of a company, like [Nubank](/en/glossario/en-nubank) or Magazine Luiza. When the company does well, the [valor](/en/glossario/en-financial-value) of your stock rises, and you can sell it for a higher price than you paid. It’s like having a small share of a business that can grow and generate profits.
 
 * Ações: small pieces of companies that can be bought and sold
 * Títulos: documents that represent ownership of stocks or other investments
@@ -36,7 +36,7 @@ The stock exchange works like an auction, where people submit prices to buy or s
 ## Advantages
 Investing in the stock exchange can be a great way to grow your wealth over time. Here are some advantages of investing in the stock exchange:
 * Potential for high returns: stocks can increase in value quickly, generating significant profits
-* [Diversificação](/en/glossario/en-diversificacao): investing in the stock exchange allows you to diversify your portfolio, reducing the risk of loss
+* [Diversificação](/en/glossario/en-diversification): investing in the stock exchange allows you to diversify your portfolio, reducing the risk of loss
 * Liquidity: stocks can be bought and sold quickly, allowing you to access your money when needed
 
 **Practical tip:** It’s important to diversify your portfolio by investing in different types of stocks and sectors. For example, if you invest R$ 1.000 per month in technology company stocks, it’s a good idea to also invest in stocks of companies in other sectors, such as health or finance.

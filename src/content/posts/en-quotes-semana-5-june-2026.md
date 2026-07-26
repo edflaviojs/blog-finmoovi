@@ -31,13 +31,13 @@ For example, if you're planning a trip to the US, it might be a good idea to buy
 
 ## Selic Rate and Impact on Investments
 
-The Selic rate, which is the basic [interest](/en/glossario/en-juros) rate of the Brazilian economy, continues to be an important topic for investors. The current Selic rate can directly influence the interest on investments, such as CDBs and LCI/LCs. If the Selic rate rises, the interest on investments can also rise, which can be good for investors.
+The Selic rate, which is the basic [interest](/en/glossario/en-interest) rate of the Brazilian economy, continues to be an important topic for investors. The current Selic rate can directly influence the interest on investments, such as CDBs and LCI/LCs. If the Selic rate rises, the interest on investments can also rise, which can be good for investors.
 
 However, it is important to remember that the Selic rate can also affect inflation and the economy as a whole. Therefore, it is essential to keep an eye on economic news and adjust your investments accordingly.
 
 ## Practical Tip for Individual Investors
 
-A practical tip for you, individual investor, is to diversify your investments. This means not putting all your eggs in one basket, i.e., not investing all your money in a single thing. You can invest in [stocks](/en/glossario/en-acoes), [investment funds](/en/glossario/en-investment-fund), CDBs, LCI/LCs, and even in foreign currencies.
+A practical tip for you, individual investor, is to diversify your investments. This means not putting all your eggs in one basket, i.e., not investing all your money in a single thing. You can invest in [stocks](/en/glossario/en-stocks), [investment funds](/en/glossario/en-investment-fund), CDBs, LCI/LCs, and even in foreign currencies.
 
 ![Practical Tip for Individual Investors](/images/posts/en-quotes-semana-5-june-2026-inline-3.webp)
 

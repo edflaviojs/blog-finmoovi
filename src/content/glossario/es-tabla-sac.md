@@ -1,5 +1,5 @@
 ---
-term: "Tabela SAC"
+term: "Tabla SAC"
 image: "/images/glossario/tabela-sac.webp"
 definition: "Sistema de Amortización Constante. Método de pago de financiamientos donde el valor de la amortización (parte que reduce la deuda) es igual en todas las cuotas. Como los intereses disminuyen conforme el saldo deudor cae, las cuotas ficam menores a lo largo del tiempo."
 category: "credito"
@@ -17,7 +17,7 @@ SAC (Sistema de [Amortización](/glossario/amortizacao) Constante) es un método
 ## Cómo funciona
 
 - **Amortización:** fija (valor del préstamo ÷ número de cuotas)
-- **[Juros](/es/glossario/es-juros):** calculados sobre el saldo deudor (disminuyen cada mes)
+- **[Juros](/es/glossario/es-interes):** calculados sobre el saldo deudor (disminuyen cada mes)
 - **Cuota:** amortización + juros (comienza alta, termina baja)
 
 ## Ejemplo práctico

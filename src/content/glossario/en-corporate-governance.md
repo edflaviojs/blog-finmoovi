@@ -25,7 +25,7 @@ Governance is a term that may seem complicated, but it's simpler than you think.
 - Implementation of controls to avoid excessive spending
 - Constant monitoring of finances  
 
-Governance is not limited to large companies; it is an essential practice for anyone who wants to have control over their finances. By adopting good governance practices, you can avoid financial problems, such as unnecessary debt or the lack of [savings](/en/glossario/en-poupanca) for the future.
+Governance is not limited to large companies; it is an essential practice for anyone who wants to have control over their finances. By adopting good governance practices, you can avoid financial problems, such as unnecessary debt or the lack of [savings](/en/glossario/en-savings) for the future.
 
 ![What it is](/images/glossario/governanca-inline-1.webp)
 
@@ -50,7 +50,7 @@ Another important advantage is the peace of mind that comes from knowing your fi
 ## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 Although governance is essential for financial health, there are risks associated with its implementation. One of the main risks is excessive rigidity, where the financial plan becomes so restrictive that it does not allow flexibility for changes or unexpected opportunities. **Practical tip:** It is crucial to find a balance between financial discipline and flexibility for necessary adaptations.
 
-Another risk is the lack of knowledge or skills to manage finances effectively. This can lead to poor decisions, such as high‑risk investments or a lack of [diversification](/en/glossario/en-diversificacao) in investments. To mitigate these risks, it is important to seek [financial education](/en/glossario/en-financial-education) and, if necessary, consult a professional.
+Another risk is the lack of knowledge or skills to manage finances effectively. This can lead to poor decisions, such as high‑risk investments or a lack of [diversification](/en/glossario/en-diversification) in investments. To mitigate these risks, it is important to seek [financial education](/en/glossario/en-financial-education) and, if necessary, consult a professional.
 
 
 

@@ -48,7 +48,7 @@ El score de [crédito](/es/glossario/es-credito) es una puntuación de 0 a 1000 
 ## Por qué el score importa
 
 Con score alto usted consigue:
-- Tasas de [juros](/es/glossario/es-juros) menores en financiamientos
+- Tasas de [juros](/es/glossario/es-interes) menores en financiamientos
 - Límites mayores en la tarjeta de crédito
 - Aprobación más fácil en alquileres
 - Mejores condiciones en préstamos

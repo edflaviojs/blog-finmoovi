@@ -18,9 +18,9 @@ seo:
 ---
 
 ## What it is
-The term “value” is fundamental in the world of finance, especially when it comes to investments and the economy. In short, value refers to the price or exchange value of an asset, such as [ações](/en/glossario/en-acoes), real estate, or even everyday products. In the investment context, an asset’s value can fluctuate based on various factors, such as supply and demand, the overall economy, and the future outlook for the specific asset. For example, if you invested R$5,000 in shares of a rapidly growing company, the value of those shares could rise to R$6,500 in a short period of time, depending on the company’s performance and market perception.
+The term “value” is fundamental in the world of finance, especially when it comes to investments and the economy. In short, value refers to the price or exchange value of an asset, such as [ações](/en/glossario/en-stocks), real estate, or even everyday products. In the investment context, an asset’s value can fluctuate based on various factors, such as supply and demand, the overall economy, and the future outlook for the specific asset. For example, if you invested R$5,000 in shares of a rapidly growing company, the value of those shares could rise to R$6,500 in a short period of time, depending on the company’s performance and market perception.
 
-Value can also be influenced by factors like [inflation](/en/glossario/en-inflation), interest [rates](/en/glossario/en-juros), and government policies. It’s important to understand that an asset’s value is not static and can change quickly, which can affect your investment portfolio. **Practical tip:** Always do thorough research before investing in any asset, and consider diversifying your portfolio to minimize risks.
+Value can also be influenced by factors like [inflation](/en/glossario/en-inflation), interest [rates](/en/glossario/en-interest), and government policies. It’s important to understand that an asset’s value is not static and can change quickly, which can affect your investment portfolio. **Practical tip:** Always do thorough research before investing in any asset, and consider diversifying your portfolio to minimize risks.
 
 ![What it is](/images/glossario/valor-inline-1.webp)
 
@@ -40,7 +40,7 @@ An asset’s value is determined by a combination of factors, including supply a
 The value of an asset can offer several advantages, especially if you invest wisely. Here are some of them:
 * Growth potential: if you invest in an asset that is growing rapidly, the value of your investment can increase significantly
 * Passive income: if you invest in an asset that generates income, such as real estate or a stock, you can receive passive income
-* [Diversificação](/en/glossario/en-diversificacao): if you diversify your investment portfolio, you can minimize risks and maximize returns
+* [Diversificação](/en/glossario/en-diversification): if you diversify your investment portfolio, you can minimize risks and maximize returns
 * Safety: if you invest in a safe asset, such as a debt security, you can have a stable source of income
 
 **Practical tip:** It’s important to diversify your investment portfolio to minimize risks and maximize returns.

@@ -57,7 +57,7 @@ Aquí están los pasos para organizar el presupuesto:
 
 
 ## Gestionando las Finanzas
-Para mantener las finanzas en orden, es crucial tener un sistema de control. Esto puede incluir el uso de hojas de cálculo electrónicas o [aplicaciones financieras](/es/posts/es-tecnica-de-los-sobres-digitales-guia-practica-para-2026). El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre [gestión financiera](/es/posts/es-montando-cartera-diversificada-con-r-500) y [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas).
+Para mantener las finanzas en orden, es crucial tener un sistema de control. Esto puede incluir el uso de hojas de cálculo electrónicas o [aplicaciones financieras](/es/posts/es-tecnica-de-los-sobres-digitales-guia-practica-para-2026). El [Banco Central del Brasil](https://www.bcb.gov.br) ofrece información valiosa sobre [gestión financiera](/es/posts/es-montando-cartera-diversificada-con-r-500) y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos).
 
 ## Comienza con 5 minutos por día
 Para mantener el presupuesto bajo control, dedica algunos minutos todos los días para revisar los gastos y actualizar el presupuesto. Esto puede hacerse durante el desayuno o antes de dormir. Recuerda que la clave para el éxito es la consistencia y la comunicación entre los socios. Visita el sitio web de la [Receita Federal](https://www.gov.br/receitafederal) para obtener más información sobre planificación financiera y tributación.

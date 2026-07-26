@@ -30,16 +30,16 @@ Short selling, or “short selling”, is when you sell a stock that **you do no
 
 The operation occurs in three basic steps:  
 
-- **Loan:** you borrow the [stocks](/en/glossario/en-acoes) from a broker or another investor.  
+- **Loan:** you borrow the [stocks](/en/glossario/en-stocks) from a broker or another investor.  
 - **Sale:** you sell the stocks in the spot market at the current price.  
 - **Buy‑back:** when (or if) the price falls, you buy the same stocks at a lower price and return them to the lender, keeping the difference.  
 
-All this process takes place within the same broker, which handles the loan and the collection of [interest](/en/glossario/en-juros) on the use of the stocks. The investor pays a borrowing fee (usually an annual percentage) and, if the price rises, may be required to cover the position at any time, which means buying immediately at market price.
+All this process takes place within the same broker, which handles the loan and the collection of [interest](/en/glossario/en-interest) on the use of the stocks. The investor pays a borrowing fee (usually an annual percentage) and, if the price rises, may be required to cover the position at any time, which means buying immediately at market price.
 
 ## Advantages
 
 - **Potential profit in down markets:** while most investors only make money when the price rises, short selling allows you to profit when everything falls.  
-- **[Diversification](/en/glossario/en-diversificacao) of strategies:** adds another tool to your arsenal, helping to balance the portfolio across different economic cycles.  
+- **[Diversification](/en/glossario/en-diversification) of strategies:** adds another tool to your arsenal, helping to balance the portfolio across different economic cycles.  
 - **Protection ([hedge](/en/glossario/en-hedge)):** can be used to protect long (bought) investments against unexpected drops, reducing overall risk.  
 
 ![Advantages](/images/glossario/venda-a-descoberto-inline-3.webp)
@@ -60,7 +60,7 @@ Imagine you earn R$5,000 per month and have R$20,000 available to invest. You be
 2. **Price drop:** two weeks later, the stock falls to R$40. You buy 200 shares (200 × R$40 = R$8,000) and return them to the lender.  
 3. **Gross profit:** R$10,000 – R$8,000 = R$2,000. From this amount, subtract the borrowing fee (let’s say 2% per year, proportional to the period) and the brokerage fee, and you still have a net gain of about R$1,900.  
 
-Now, see the opposite scenario: the stock rises to R$70. You need to buy the 200 shares for R$14,000, resulting in a loss of R$4,000 before costs. This example shows how [leverage](/en/glossario/en-alavancagem) can turn a small price movement into a significant gain or loss.
+Now, see the opposite scenario: the stock rises to R$70. You need to buy the 200 shares for R$14,000, resulting in a loss of R$4,000 before costs. This example shows how [leverage](/en/glossario/en-leverage) can turn a small price movement into a significant gain or loss.
 
 **Practical tip:** never use more than 10 % of your total capital in a single short‑selling trade; this helps limit the impact of an unexpected rise.
 

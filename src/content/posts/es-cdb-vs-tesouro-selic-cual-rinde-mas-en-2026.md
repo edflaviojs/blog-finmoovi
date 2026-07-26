@@ -49,7 +49,7 @@ El Tesouro Selic, por ser una inversión con garantía del gobierno, se consider
 Al decidir entre CDB y Tesouro Selic, es crucial evaluar su perfil de inversionista. Si usted es un inversionista conservador, que busca seguridad y está dispuesto a renunciar a un poco de rendimiento a cambio de menor riesgo, el Tesouro Selic puede ser una buena opción. Por otro lado, si usted está dispuesto a asumir un riesgo un poco mayor en busca de un rendimiento más alto, el CDB puede ser más atractivo.
 
 ## Considerando Otras Opciones
-Además del CDB y del Tesouro Selic, existen otras opciones de inversión en el mercado, como los fondos de inversión, [acciones](/es/glossario/es-acoes), e incluso inversiones en criptomonedas. Cada una de estas opciones tiene sus propios riesgos y beneficios, y es importante hacer una investigación a fondo y considerar su perfil de inversionista antes de tomar cualquier decisión.
+Además del CDB y del Tesouro Selic, existen otras opciones de inversión en el mercado, como los fondos de inversión, [acciones](/es/glossario/es-acciones), e incluso inversiones en criptomonedas. Cada una de estas opciones tiene sus propios riesgos y beneficios, y es importante hacer una investigación a fondo y considerar su perfil de inversionista antes de tomar cualquier decisión.
 
 ![Evaluando el Perfil de Inversionista](/images/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026-4.webp)
 

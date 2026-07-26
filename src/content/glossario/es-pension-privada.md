@@ -42,7 +42,7 @@ La Pensión Privada es una inversión a largo plazo pensada para la [jubilación
 ## Ventajas
 
 - Beneficio fiscal (PGBL)
-- No entra en inventario ([planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) sucesoria)
+- No entra en inventario ([planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) sucesoria)
 - Disciplina de inversión mensual
 - Alícuota del 10% después de 10 años (regresiva)
 

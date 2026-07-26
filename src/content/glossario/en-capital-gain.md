@@ -12,7 +12,7 @@ readingTime: 2
 
 ## What is Capital Gain?
 
-Capital gain is the profit you make when you sell something for more than you paid for it. You bought a [stock](/en/glossario/en-acoes) for R$ 20 and sold it for R$ 30? Your capital gain is R$ 10. This profit can be taxed by the [Income](/en/posts/en-building-a-diversified-portfolio-with-r-500) Tax.
+Capital gain is the profit you make when you sell something for more than you paid for it. You bought a [stock](/en/glossario/en-stocks) for R$ 20 and sold it for R$ 30? Your capital gain is R$ 10. This profit can be taxed by the [Income](/en/posts/en-building-a-diversified-portfolio-with-r-500) Tax.
 
 ## Where it applies
 

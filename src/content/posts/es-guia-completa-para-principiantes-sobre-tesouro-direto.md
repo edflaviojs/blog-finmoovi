@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Introducción al [Tesouro Direto](/es/glossario/es-tesouro-direto)
-El Tesouro Direto es un programa del gobierno brasileño que permite a los ciudadanos invertir en títulos públicos, como LTN (Letras del Tesouro Nacional) y NTN (Notas del Tesouro Nacional). Estos títulos representan préstamos realizados al gobierno, que paga intereses al inversor. Es una forma de invertir en [renta fija](/es/glossario/es-renda-fixa), con rendimientos predefinidos y bajo riesgo.
+El Tesouro Direto es un programa del gobierno brasileño que permite a los ciudadanos invertir en títulos públicos, como LTN (Letras del Tesouro Nacional) y NTN (Notas del Tesouro Nacional). Estos títulos representan préstamos realizados al gobierno, que paga intereses al inversor. Es una forma de invertir en [renta fija](/es/glossario/es-renta-fija), con rendimientos predefinidos y bajo riesgo.
 
 Por ejemplo, si usted invierte R$1.000 en un título LTN con plazo de 1 año y intereses del 5% anual, usted recibirá R$1.050 después del vencimiento. Esto significa un rendimiento de R$50, o el 5% del [valor](/es/glossario/es-valor-financiero) invertido.
 

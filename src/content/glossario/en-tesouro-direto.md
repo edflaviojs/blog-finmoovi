@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Tesouro Direto is a program created by the Brazilian government that allows citizens to invest directly in public bonds, such as LTNs (Letras do Tesouro Nacional) and NTNs (Notas do Tesouro Nacional). These bonds are basically loans you make to the government, which, in return, pays [interest](/en/glossario/en-juros) on the [value](/en/glossario/en-financial-value) invested. It’s a way to put your money to work safely and profitably, because the bonds are guaranteed by the government.
+Tesouro Direto is a program created by the Brazilian government that allows citizens to invest directly in public bonds, such as LTNs (Letras do Tesouro Nacional) and NTNs (Notas do Tesouro Nacional). These bonds are basically loans you make to the government, which, in return, pays [interest](/en/glossario/en-interest) on the [value](/en/glossario/en-financial-value) invested. It’s a way to put your money to work safely and profitably, because the bonds are guaranteed by the government.
 
 The Tesouro Direto bonds vary in maturities and interest rates, which means you can choose the one that best fits your financial needs. For example, if you have R$ 5,000 to invest and don’t need the money for the next 5 years, you can opt for a longer‑term bond, which usually offers higher interest rates.
 
@@ -37,7 +37,7 @@ The main benefits of Tesouro Direto include:
 * **Safety:** Because the bonds are government‑guaranteed, the risk of loss is very low.  
 * **Yield:** The interest paid can be higher than that offered by other low‑risk financial products.  
 * **Liquidity:** Although bonds have fixed maturities, you can sell them before they mature if needed; however, you may face penalties or loss of interest.  
-* **[Diversification](/en/glossario/en-diversificacao):** Tesouro Direto can be a good option to diversify your investment portfolio, reducing reliance on just one type of [investment](/en/glossario/en-financial-investment).
+* **[Diversification](/en/glossario/en-diversification):** Tesouro Direto can be a good option to diversify your investment portfolio, reducing reliance on just one type of [investment](/en/glossario/en-financial-investment).
 
 **Practical tip:** Consider Tesouro Direto as part of a long‑term investment strategy, because compound interest can significantly increase the value of your investment over time.
 

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Webull is an investment platform that allows users to buy and sell [ações](/en/glossario/en-acoes), options, ETFs (Exchange-Traded Funds) and other financial assets. It is a popular alternative to traditional securities brokerages, offering a more modern and accessible interface. Imagine you have a salary of R$ 5.000 per month and want to start investing a portion of it. With Webull, you can do this easily and safely.
+Webull is an investment platform that allows users to buy and sell [ações](/en/glossario/en-stocks), options, ETFs (Exchange-Traded Funds) and other financial assets. It is a popular alternative to traditional securities brokerages, offering a more modern and accessible interface. Imagine you have a salary of R$ 5.000 per month and want to start investing a portion of it. With Webull, you can do this easily and safely.
 
 * The platform is regulated by the SEC (Securities and Exchange Commission) in the US, which ensures a certain level of security and reliability.  
 * Webull also offers a variety of analysis tools and educational resources to help investors make informed decisions.  

@@ -1,5 +1,5 @@
 ---
-term: "P/L (Preço/Lucro)"
+term: "Ratio Precio-Beneficio"
 definition: "El P/L (Preço/Lucro) es una medida financiera que indica el precio de una acción en relación con el lucro por acción de la empresa. Ayuda a evaluar si el precio de una acción es justo en comparación con el desempenho financiero de la empresa."
 category: "mercado"
 locale: "es"

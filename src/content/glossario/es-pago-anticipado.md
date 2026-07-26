@@ -12,7 +12,7 @@ readingTime: 2
 
 ## ¿Qué es Pago Anticipado?
 
-El pago anticipado es pagar una deuda (financiación, préstamo, [consorcio](/es/glossario/es-consorcio)) antes del plazo final. Cuando haces esto, tienes derecho a un descuento en los [juros](/es/glossario/es-juros) que se cobrarían en el futuro. Es un derecho garantizado por el Código de Defensa del Consumidor.
+El pago anticipado es pagar una deuda (financiación, préstamo, [consorcio](/es/glossario/es-consorcio)) antes del plazo final. Cuando haces esto, tienes derecho a un descuento en los [juros](/es/glossario/es-interes) que se cobrarían en el futuro. Es un derecho garantizado por el Código de Defensa del Consumidor.
 
 ## Tus derechos
 

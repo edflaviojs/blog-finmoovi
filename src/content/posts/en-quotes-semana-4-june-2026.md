@@ -31,7 +31,7 @@ This week, the US dollar closed at R$ 5.16, while the euro reached R$ 5.91. Comp
 
 ## [Selic](/en/glossario/en-selic) and Impact on Investments
 
-The [Selic rate](/en/glossario/en-selic), which is the basic [interest](/en/glossario/en-juros) rate of the Brazilian economy, remained stable at 12.25% per year. This is good for those who have investments in [fixed income](/en/glossario/en-renda-fixa), such as CDBs or government bonds, because it means you will continue to earn interest at a reasonable rate. However, for those considering taking loans, like a mortgage, a higher Selic rate can mean more expensive interest. It's important to consider this before making any investment or financing decision.
+The [Selic rate](/en/glossario/en-selic), which is the basic [interest](/en/glossario/en-interest) rate of the Brazilian economy, remained stable at 12.25% per year. This is good for those who have investments in [fixed income](/en/glossario/en-fixed-income), such as CDBs or government bonds, because it means you will continue to earn interest at a reasonable rate. However, for those considering taking loans, like a mortgage, a higher Selic rate can mean more expensive interest. It's important to consider this before making any investment or financing decision.
 
 ![Selic and Impact on Investments](/images/posts/en-quotes-semana-4-june-2026-inline-3.webp)
 
@@ -39,7 +39,7 @@ The [Selic rate](/en/glossario/en-selic), which is the basic [interest](/en/glos
 
 ## Practical Tip for Individual Investors
 
-If you're an individual investor, it's important to diversify your investments to minimize risk. A practical tip is to consider investments in different currencies, such as dollars or euros. With the app [FinMoovi](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app), you can easily track your investments in multiple currencies and have a clear view of your portfolio. Additionally, it's important to keep an emergency reserve in a liquid account, such as a [savings account](/en/glossario/en-poupanca) or a fixed‑income investment fund, to cover unexpected expenses.
+If you're an individual investor, it's important to diversify your investments to minimize risk. A practical tip is to consider investments in different currencies, such as dollars or euros. With the app [FinMoovi](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app), you can easily track your investments in multiple currencies and have a clear view of your portfolio. Additionally, it's important to keep an emergency reserve in a liquid account, such as a [savings account](/en/glossario/en-savings) or a fixed‑income investment fund, to cover unexpected expenses.
 
 ## What to Expect for the Next Week
 

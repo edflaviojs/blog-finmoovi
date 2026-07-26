@@ -1,5 +1,5 @@
 ---
-term: "juros"
+term: "Interest"
 definition: "Understand what juros is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 title: "juros - Financial Glossary"
 description: "Understand what juros is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
@@ -36,7 +36,7 @@ In these cases, it’s crucial to calculate the interest to know exactly how muc
 ## Advantages
 Interest can be beneficial when you are on the investor’s side. It can increase your wealth over time, especially if you choose long‑term investments with attractive interest rates. Moreover, interest can be a source of passive income, meaning you can earn money without having to work actively for it.
 
-However, it’s important to choose safe investments that match your risk profile. **Practical tip:** Diversify your investments to minimize risks. For example, you can invest part of your money in fixed‑income securities [renda fixa](/en/glossario/en-renda-fixa), such as CDBs or LCI/LCA, and another part in [ações](/en/glossario/en-acoes) or [fundos](/en/glossario/en-investment-fund) of investment.
+However, it’s important to choose safe investments that match your risk profile. **Practical tip:** Diversify your investments to minimize risks. For example, you can invest part of your money in fixed‑income securities [renda fixa](/en/glossario/en-fixed-income), such as CDBs or LCI/LCA, and another part in [ações](/en/glossario/en-stocks) or [fundos](/en/glossario/en-investment-fund) of investment.
 
 ![Advantages](/images/glossario/juros-inline-3.webp)
 

@@ -58,6 +58,15 @@ const SHARED_PT_ES = new Set([
 ]);
 
 /**
+ * Slugs BR-only intencionais: conceitos/gírias brasileiras sem equivalente
+ * internacional (decisão editorial). NÃO são sinalizados. Comparação pelo
+ * corpo do slug completo (sem prefixo de locale).
+ */
+const BR_ONLY_ALLOWLIST = new Set([
+  'xepa-financeira',
+]);
+
+/**
  * Coleta os arquivos EN/ES `.md` de um diretório de conteúdo.
  * @param {string} dir Caminho absoluto do diretório.
  * @returns {string[]} Nomes de arquivo (basename) que começam com en-/es- e terminam em .md.
@@ -102,6 +111,8 @@ function main() {
   for (const dir of CONTENT_DIRS) {
     for (const fileName of collectLocaleFiles(dir)) {
       const { locale, tokens } = parseSlug(fileName);
+      // Slugs BR-only intencionais são ignorados (decisão editorial).
+      if (BR_ONLY_ALLOWLIST.has(tokens.join('-'))) continue;
       const ptTokens = findPtTokens(locale, tokens);
       if (ptTokens.length > 0) {
         offenders.push({ fileName, ptTokens });

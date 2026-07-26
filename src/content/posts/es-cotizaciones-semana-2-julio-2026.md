@@ -24,7 +24,7 @@ La semana fue agitada en los mercados de cambio y, como siempre, la [tasa](/es/g
 ### 1. Dólar y euro: tendencia de la semana
 
 - **Dólar (USD/BRL) – R$ 5,11**  
-  El real ganó un poquito frente al dólar durante los últimos siete días. El lunes, la cotización estaba alrededor de R$ 5,15; hasta el viernes ya estaba en R$ 5,11. La caída fue impulsada por la noticia de que la Reserva Federal de EE. UU. mantuvo la tasa de [intereses](/es/glossario/es-juros) estable, lo que redujo un poco la presión de compra de dólares por inversores internacionales.
+  El real ganó un poquito frente al dólar durante los últimos siete días. El lunes, la cotización estaba alrededor de R$ 5,15; hasta el viernes ya estaba en R$ 5,11. La caída fue impulsada por la noticia de que la Reserva Federal de EE. UU. mantuvo la tasa de [intereses](/es/glossario/es-interes) estable, lo que redujo un poco la presión de compra de dólares por inversores internacionales.
 
 - **Euro (EUR/BRL) – R$ 5,83**  
   El euro también retrocedió, pero de forma más discreta. Partió de R$ 5,90 al inicio de la semana y cerró en R$ 5,83. La zona euro aún enfrenta incertidumbres sobre la política monetaria, y la falta de novedades fuertes hizo que el euro perdiera solo algunos centavos frente al real.
@@ -36,9 +36,9 @@ Si tienes deudas o compras programadas en dólares o euros (viaje, importación 
 
 La tasa Selic quedó en **13,75 % al año**, como ya estaba prevista en las últimas reuniones del Copom. Esta tasa alta tiene dos efectos claros:
 
-1. **[Renta fija](/es/glossario/es-renda-fixa) más atractiva** – Títulos del [Tesoro Directo](/es/glossario/es-tesouro-direto) y CDBs que pagan cerca de la Selic continúan ofreciendo buenos rendimientos. Si aún no tienes una parte de la cartera en estos papeles, vale la pena considerarlo, especialmente porque el riesgo de crédito es bajo.
+1. **[Renta fija](/es/glossario/es-renta-fija) más atractiva** – Títulos del [Tesoro Directo](/es/glossario/es-tesouro-direto) y CDBs que pagan cerca de la Selic continúan ofreciendo buenos rendimientos. Si aún no tienes una parte de la cartera en estos papeles, vale la pena considerarlo, especialmente porque el riesgo de crédito es bajo.
 
-2. **Costo de oportunidad para [acciones](/es/glossario/es-acoes)** – Cuanto mayor es la Selic, más caro se vuelve el dinero prestado. Esto suele hacer que el mercado de acciones sea más “cauteloso”, ya que las empresas sienten el peso de los intereses en sus costos de capital. En la práctica, las acciones de sectores más sensibles al crédito (como construcción y comercio minorista) tuvieron un desempeño más débil esta semana.
+2. **Costo de oportunidad para [acciones](/es/glossario/es-acciones)** – Cuanto mayor es la Selic, más caro se vuelve el dinero prestado. Esto suele hacer que el mercado de acciones sea más “cauteloso”, ya que las empresas sienten el peso de los intereses en sus costos de capital. En la práctica, las acciones de sectores más sensibles al crédito (como construcción y comercio minorista) tuvieron un desempeño más débil esta semana.
 
 ### 3. Consejo práctico para el inversor individual
 

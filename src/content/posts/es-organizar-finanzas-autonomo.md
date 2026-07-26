@@ -51,7 +51,7 @@ Una reserva de emergencia es esencial para cualquier plan financiero, especialme
 La idea es tener entre 3 a 6 meses de gastos esenciales guardados en una cuenta de fácil acceso. Esto puede parecer un desafío, pero comenzar pequeño y ser consistente es la clave. **Consejo práctico:** Establece una meta para tu reserva de emergencia y trabaja hacia ella gradualmente.
 
 ## Comienza hoy
-No importa dónde estés en tu jornada financiera, lo importante es comenzar a tomar control de tus finanzas hoy. Esto puede significar solo comenzar a registrar tus gastos o abrir una [cuenta de ahorro](/es/glossario/es-poupanca) para tu reserva de emergencia. Cada pequeño paso conduce a cambios significativos en el largo plazo. Así que no esperes más – comienza a organizar tus finanzas y a construir el futuro financiero que deseas.
+No importa dónde estés en tu jornada financiera, lo importante es comenzar a tomar control de tus finanzas hoy. Esto puede significar solo comenzar a registrar tus gastos o abrir una [cuenta de ahorro](/es/glossario/es-ahorro) para tu reserva de emergencia. Cada pequeño paso conduce a cambios significativos en el largo plazo. Así que no esperes más – comienza a organizar tus finanzas y a construir el futuro financiero que deseas.
 
 ![Comece hoy](/images/posts/organizar-financas-autonomo-5.svg)
 

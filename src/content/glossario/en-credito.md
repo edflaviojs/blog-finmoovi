@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, mas que você pode pagar depois. Funciona como um empréstimo pré‑aprovado: o banco ou a fintech coloca um limite à sua disposição e você paga o que usar, acrescido de [juros](/en/glossario/en-juros) (o preço do dinheiro emprestado). Quando falamos de crédito, incluímos cartões de crédito, cheque especial, empréstimos pessoais e até financiamentos de carro ou casa. Em termos simples, é “comprar agora, pagar depois”, mas com a responsabilidade de devolver o valor + juros dentro do prazo combinado.
+Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, mas que você pode pagar depois. Funciona como um empréstimo pré‑aprovado: o banco ou a fintech coloca um limite à sua disposição e você paga o que usar, acrescido de [juros](/en/glossario/en-interest) (o preço do dinheiro emprestado). Quando falamos de crédito, incluímos cartões de crédito, cheque especial, empréstimos pessoais e até financiamentos de carro ou casa. Em termos simples, é “comprar agora, pagar depois”, mas com a responsabilidade de devolver o valor + juros dentro do prazo combinado.
 
 ![What it is](/images/glossario/credito-inline-1.webp)
 
@@ -27,11 +27,11 @@ Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, 
 
 ## How it works
 
-Quando você solicita crédito, a instituição avalia seu histórico de pagamento (score) e sua renda. Se tudo estiver ok, ela define um limite ou um valor total que pode ser liberado. Cada vez que você usa esse dinheiro, gera uma [dívida](/en/glossario/en-divida-financial-glossary) que aparece na sua fatura ou no extrato. Você paga um valor mínimo (geralmente 5 % do total) ou o valor integral. Os juros incidem sobre o saldo que ficar aberto, e são calculados diariamente (taxa anual convertida para dia a dia). O pagamento pontual melhora seu score, facilitando novos empréstimos com juros menores; o atraso faz o contrário.
+Quando você solicita crédito, a instituição avalia seu histórico de pagamento (score) e sua renda. Se tudo estiver ok, ela define um limite ou um valor total que pode ser liberado. Cada vez que você usa esse dinheiro, gera uma [dívida](/en/glossario/en-debt) que aparece na sua fatura ou no extrato. Você paga um valor mínimo (geralmente 5 % do total) ou o valor integral. Os juros incidem sobre o saldo que ficar aberto, e são calculados diariamente (taxa anual convertida para dia a dia). O pagamento pontual melhora seu score, facilitando novos empréstimos com juros menores; o atraso faz o contrário.
 
 ## Advantages
 
-- **Flexibilidade:** você pode usar o crédito para emergências, compras planejadas ou investimentos sem precisar esperar a [poupança](/en/glossario/en-poupanca) crescer.  
+- **Flexibilidade:** você pode usar o crédito para emergências, compras planejadas ou investimentos sem precisar esperar a [poupança](/en/glossario/en-savings) crescer.  
 - **Construção de crédito:** pagamentos em dia aumentam seu score, abrindo portas para financiamentos maiores e com juros mais baixos.  
 - **Parcelamento sem juros:** alguns cartões oferecem parcelamento de até 12 vezes sem custo adicional, útil para compras de eletrodomésticos ou móveis.  
 - **Liquidez imediata:** ao contrário de um empréstimo tradicional, o limite já está disponível para usar a qualquer momento.

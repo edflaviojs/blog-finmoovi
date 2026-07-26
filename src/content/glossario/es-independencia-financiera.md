@@ -30,7 +30,7 @@ Con R$ 1,5 millón invertidos rindiendo 8% al año, tendrías R$ 120.000/año (R
 
 Depende de cuánto ahorras:
 
-| [Tasa](/es/glossario/es-tasa-financiera) de [ahorro](/es/glossario/es-poupanca) | Tiempo para IF |
+| [Tasa](/es/glossario/es-tasa-financiera) de [ahorro](/es/glossario/es-ahorro) | Tiempo para IF |
 |-----------------|---------------|
 | 10% de la renta | 51 años |
 | 20% de la renta | 37 años |

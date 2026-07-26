@@ -149,7 +149,7 @@ async function main() {
     process.exit(0);
   }
 
-  // Revalida com os DOIS gates (geração + build).
+  // Revalida com os TRÊS gates (consistência + duplicata + linguagem de slug).
   console.log('\n🔍 Revalidando...');
   let ok = true;
   try {
@@ -157,6 +157,9 @@ async function main() {
   } catch { ok = false; }
   try {
     execSync('node --import tsx scripts/validate-i18n-sync.js', { stdio: 'inherit' });
+  } catch { ok = false; }
+  try {
+    execSync('node scripts/validate-slug-language.js', { stdio: 'inherit' });
   } catch { ok = false; }
 
   if (!ok) {

@@ -25,7 +25,7 @@ La reserva necesita tener **[liquidez](/es/glossario/es-liquidez) diaria** (acce
 - [CDB](/es/glossario/es-cdb) con liquidez diaria (100% [CDI](/es/glossario/es-cdi) o más)
 - Cuenta remunerada
 
-**Nunca** lo dejes en [ações](/es/glossario/es-acoes), [fundos](/es/glossario/es-fondo-de-inversion) inmobiliarios o inversiones con plazo de rescate.
+**Nunca** lo dejes en [ações](/es/glossario/es-acciones), [fundos](/es/glossario/es-fondo-de-inversion) inmobiliarios o inversiones con plazo de rescate.
 
 ## ¿Cómo montar?
 

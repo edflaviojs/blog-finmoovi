@@ -12,7 +12,7 @@ readingTime: 1
 
 ## ¿Qué es Wealth Management?
 
-Wealth Management (gestão de patrimônio) es un servicio [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere) premium que cuida de todos los aspectos de la vida financiera de una persona: inversiones, impuestos, herencia, seguros y [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) a largo plazo.
+Wealth Management (gestão de patrimônio) es un servicio [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere) premium que cuida de todos los aspectos de la vida financiera de una persona: inversiones, impuestos, herencia, seguros y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) a largo plazo.
 
 ## Para quién es
 
@@ -43,13 +43,13 @@ Generalmente dirigido a personas con patrimonio superior a R$ 1 millón. Pero lo
 
 - Seguros adecuados
 - Blindaje patrimonial (legal)
-- [Diversificación](/es/glossario/es-diversificacao) geográfica
+- [Diversificación](/es/glossario/es-diversificacion) geográfica
 
 ## Versión accesible (hazlo tú mismo)
 
 Incluso sin un wealth manager, puedes:
 
-1. [Diversificar inversiones](/es/posts/es-montando-cartera-diversificada-con-r-500) ([renda fixa](/es/glossario/es-renda-fixa) + variable + internacional)
+1. [Diversificar inversiones](/es/posts/es-montando-cartera-diversificada-con-r-500) ([renda fixa](/es/glossario/es-renta-fija) + variable + internacional)
 2. Usar PGBL para reducir IR
 3. Tener seguros adecuados
 4. Mantener registros organizados

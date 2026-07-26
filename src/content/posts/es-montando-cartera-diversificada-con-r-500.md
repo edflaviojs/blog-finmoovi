@@ -18,12 +18,12 @@ seo:
 ---
 
 ## Introducción a la [Inversión](/es/posts/es-guia-completa-para-principiantes-sobre-tesouro-direto)
-Cuando se habla de invertir, muchas personas piensan que es necesario tener un gran capital para empezar. Sin embargo, es posible montar una cartera diversificada con solo R$500. Para ello, es importante entender lo que significa diversificar y por qué es importante. Diversificar significa distribuir tus [inversiones](/es/posts/es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale-ma) en diferentes tipos de activos, como [acciones](/es/glossario/es-acoes), títulos, fondos de [inversión](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica), etc., para reducir el riesgo de pérdidas. Imagina que tienes R$500 y decides invertir todo en una sola acción. Si esa acción cae, perderás todo tu inversión. Ya si distribuyes esos R$500 en diferentes activos, el riesgo de pérdida será menor.
+Cuando se habla de invertir, muchas personas piensan que es necesario tener un gran capital para empezar. Sin embargo, es posible montar una cartera diversificada con solo R$500. Para ello, es importante entender lo que significa diversificar y por qué es importante. Diversificar significa distribuir tus [inversiones](/es/posts/es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale-ma) en diferentes tipos de activos, como [acciones](/es/glossario/es-acciones), títulos, fondos de [inversión](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica), etc., para reducir el riesgo de pérdidas. Imagina que tienes R$500 y decides invertir todo en una sola acción. Si esa acción cae, perderás todo tu inversión. Ya si distribuyes esos R$500 en diferentes activos, el riesgo de pérdida será menor.
 
 ## Tipos de [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
 Existen muchos tipos de inversiones disponibles en el mercado. Algunos ejemplos incluyen:
 - **Acciones**: Representan una parte del capital de una empresa. Cuando compras acciones, estás comprando una parte de esa empresa.
-- **Títulos**: Son emitidos por empresas o gobiernos para levantar capital. Ofrecen una [renta fija](/es/glossario/es-renda-fixa) y un retorno del capital invertido después de un período determinado.
+- **Títulos**: Son emitidos por empresas o gobiernos para levantar capital. Ofrecen una [renta fija](/es/glossario/es-renta-fija) y un retorno del capital invertido después de un período determinado.
 - **Fondos de Inversión**: Son como una cesta que contiene diferentes activos, como acciones y títulos. Permiten que inviertas en una variedad de activos con una sola inversión.
 
 ## Planificación y Objetivos

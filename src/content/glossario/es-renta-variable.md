@@ -12,9 +12,9 @@ readingTime: 1
 
 ## ¿Qué es Renta Variable?
 
-Renta Variable es todo lo que no tiene retorno garantizado. El precio sube y baja según el mercado. Puedes ganar mucho — o perder. Incluye [acciones](/es/glossario/es-acoes), [fondos](/es/glossario/es-fondo-de-inversion) inmobiliarios, ETFs, criptomonedas y derivados.
+Renta Variable es todo lo que no tiene retorno garantizado. El precio sube y baja según el mercado. Puedes ganar mucho — o perder. Incluye [acciones](/es/glossario/es-acciones), [fondos](/es/glossario/es-fondo-de-inversion) inmobiliarios, ETFs, criptomonedas y derivados.
 
-## Diferencia con [Renta Fija](/es/glossario/es-renda-fixa)
+## Diferencia con [Renta Fija](/es/glossario/es-renta-fija)
 
 | | Renta Fija | Renta Variable |
 |--|-----------|----------------|

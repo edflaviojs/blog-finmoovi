@@ -44,10 +44,10 @@ Options bring flexibility and can be used both to protect investments and to see
 
 ![Advantages](/images/glossario/opcao-inline-3.webp)
 
-- **[Alavancagem](/en/glossario/en-alavancagem):** with a small premium you control a larger amount of assets.  
-- **Proteção ([hedge](/en/glossario/en-hedge)):** allows limiting losses in a portfolio of [stocks](/en/glossario/en-acoes).  
+- **[Alavancagem](/en/glossario/en-leverage):** with a small premium you control a larger amount of assets.  
+- **Proteção ([hedge](/en/glossario/en-hedge)):** allows limiting losses in a portfolio of [stocks](/en/glossario/en-stocks).  
 - **Renda extra:** by selling options, you receive the premium as additional income.  
-- **[Diversificação](/en/glossario/en-diversificacao):** opens possibilities of strategies that do not exist in traditional investments.
+- **[Diversificação](/en/glossario/en-diversification):** opens possibilities of strategies that do not exist in traditional investments.
 
 ## Risks
 

@@ -12,7 +12,7 @@ readingTime: 2
 
 ## ¿Qué es Sobregiro?
 
-Sobregiro es un límite de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) que el banco pone a disposición en su cuenta corriente. Cuando su saldo queda negativo, usted usa automáticamente el sobregiro — y paga [intereses](/es/glossario/es-juros) altísimos por eso.
+Sobregiro es un límite de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) que el banco pone a disposición en su cuenta corriente. Cuando su saldo queda negativo, usted usa automáticamente el sobregiro — y paga [intereses](/es/glossario/es-interes) altísimos por eso.
 
 ## Por qué es tan peligroso
 

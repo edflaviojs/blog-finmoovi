@@ -1,5 +1,5 @@
 ---
-term: "Alavancagem"
+term: "Leverage"
 definition: "Alavancagem is a financial strategy that involves the use of loans or other resources to increase the potential return on an investment. This allows investors to expand their profit opportunities, but also increases the risk of losses."
 category: "mercado"
 locale: "en"
@@ -20,12 +20,12 @@ Imagine you want to buy a property worth $25,000 (approximately R$ 200,000). You
 ## Practical Examples  
 Let's consider two examples to illustrate how leverage can work in practice:  
 
-- **Example 1: [Stock](/en/glossario/en-acoes) Investment**  
+- **Example 1: [Stock](/en/glossario/en-stocks) Investment**  
   You invest $1,250 (approximately R$ 10,000) in stocks and use $2,500 (approximately R$ 20,000) borrowed to buy more stocks. If the stock value increases by 20%, you will have a profit of $750 (approximately R$ 6,000) (20% of $3,750), which represents a 60% return on your initial investment of $1,250.  
 
 ![Practical Examples](/images/glossario/en-alavancagem-inline-3.webp)  
 
-- **Example 2: [Real Estate Investment](/en/posts/en-fundos-imobiliarios-for-beginners-complete-guide)**  
+- **Example 2: [Real Estate Investment](/en/posts/en-real-estate-funds-for-beginners-complete-guide)**  
   You buy a property for $25,000, using $6,250 as a down payment and $18,750 borrowed. If the property value increases to $31,250, you will have a profit of $6,250, which represents a 100% return on your initial investment of $6,250.  
 
 ## Risks and Benefits  

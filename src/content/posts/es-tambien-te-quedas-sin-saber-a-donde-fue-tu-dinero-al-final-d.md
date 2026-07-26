@@ -67,7 +67,7 @@ Vamos a lo que realmente importa: cómo poner manos a la obra y volver a tener t
 | **Tiempo dedicado a registrar**| 30‑45 min por semana (anotaciones manuales, hojas de cálculo) | 5‑10 min por semana (captura por voz + OCR)                     |
 | **Visibilidad de los gastos** | Poca o nula (dependiente de la memoria)                     | 100 % de los gastos categorizados y visualizados en tiempo real |
 | **Identificación de fugas**    | Rara – solo se percibe cuando el saldo ya está bajo          | Inmediata – alertas de gastos inesperados y recurrentes        |
-| **Estrés [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere)**          | Alto – ansiedad al ver el saldo “desaparecer”                | Bajo – sensación de control y [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) clara              |
+| **Estrés [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere)**          | Alto – ansiedad al ver el saldo “desaparecer”                | Bajo – sensación de control y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) clara              |
 | **Decisiones de ahorro**       | Basadas en suposiciones o “intuición”                         | Datos concretos – ajuste de límites por categoría               |
 | **Planificación de metas**     | Difícil – falta de datos confiables                           | Fácil – metas de ahorro y fondo de emergencia con base real    |
 

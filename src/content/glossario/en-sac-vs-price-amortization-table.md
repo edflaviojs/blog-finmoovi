@@ -1,5 +1,5 @@
 ---
-term: "Tabela SAC vs Price"
+term: "SAC vs Price Amortization Table"
 definition: "Explanation of Tabela SAC vs Price in the Brazilian financial context."
 category: "credito"
 locale: "en"

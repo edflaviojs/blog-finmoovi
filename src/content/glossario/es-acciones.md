@@ -1,5 +1,5 @@
 ---
-term: "ações"
+term: "Acciones"
 definition: "Entienda qué es ações, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 title: "ações - Glosario Financiero"
 description: "Entienda qué es ações, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."

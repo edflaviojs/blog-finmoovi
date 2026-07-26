@@ -1,5 +1,5 @@
 ---
-term: "renda fixa"
+term: "Renta Fija"
 definition: "Entienda qué es renda fixa, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 title: "renda fixa - Glosario Financiero"
 description: "Entienda qué es renda fixa, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."

@@ -22,7 +22,7 @@ El método 50-30-20 es una estrategia simple y eficaz para gestionar sus finanza
 
 - **Necesidades (50%):** Incluye [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s) esenciales como alquiler, comida, cuentas de agua, luz, internet, transporte y otros gastos básicos.
 - **Deseos (30%):** Aquí incluye gastos que no son esenciales, pero que mejoran su calidad de vida, como entretenimiento, [viajes](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere), hobbies y compras personales.
-- **Economía (20%):** Esta parte de su salario debe ser destinada a la [poupança](/es/glossario/es-poupanca), inversiones, pago de deudas y fondos de emergencia.
+- **Economía (20%):** Esta parte de su salario debe ser destinada a la [poupança](/es/glossario/es-ahorro), inversiones, pago de deudas y fondos de emergencia.
 
 ### Ejemplo Práctico
 Vamos a considerar un salario de R$ 4.000,00 por mes. Aplicando el método 50-30-20, tendríamos:
@@ -49,7 +49,7 @@ Para empezar a aplicar el método 50-30-20, necesita tener una visión clara de 
 La parte de la economía es crucial para su futuro financiero. Aquí, puede considerar diferentes opciones para aplicar su dinero.
 
 - **Poupança:** Una buena opción para empezar a ahorrar, ya que es de bajo riesgo y fácil acceso.
-- **Inversiones:** Existen varias opciones de inversión, como [acciones](/es/glossario/es-acoes), fondos de inversión, títulos de deuda, etc. Es importante entender los riesgos y beneficios de cada opción antes de invertir.
+- **Inversiones:** Existen varias opciones de inversión, como [acciones](/es/glossario/es-acciones), fondos de inversión, títulos de deuda, etc. Es importante entender los riesgos y beneficios de cada opción antes de invertir.
 - **Pago de deudas:** Si tiene deudas con intereses altos, puede ser una buena idea usar parte de su dinero para pagarlas.
 
 ![Ahorrando e Inviertiendo](/images/posts/metodo-50-30-20-para-orcamento-3.webp)

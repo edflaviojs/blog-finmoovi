@@ -29,7 +29,7 @@ Del más líquido al menos líquido:
 3. Fondos DI  
 4. CDB con plazo  
 5. [Fondos inmobiliarios](/es/glossario/es-fondos-inmobiliarios)  
-6. [Acciones](/es/glossario/es-acoes)  
+6. [Acciones](/es/glossario/es-acciones)  
 7. Inmuebles  
 
 ## Cuando la liquidez importa?

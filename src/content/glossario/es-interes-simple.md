@@ -10,7 +10,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué son los [Juros](/es/glossario/es-juros) Simples?
+## ¿Qué son los [Juros](/es/glossario/es-interes) Simples?
 
 Los intereses simples se calculan solo sobre el [valor](/es/glossario/es-valor-financiero) original (principal). No importa cuánto tiempo pase, los intereses siempre se calculan sobre el mismo valor inicial. Es el tipo más básico de intereses.
 

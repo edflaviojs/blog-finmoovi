@@ -49,7 +49,7 @@ To start applying the 50-30-20 method, you need to have a clear view of your cur
 The savings part is crucial for your financial future. Here, you can consider different options to apply your money.
 
 - **Savings:** A good option to start saving, as it is low-risk and easily accessible.
-- **Investments:** There are several investment options, such as [stocks](/en/glossario/en-acoes), investment funds, debt securities, etc. It's essential to understand the risks and benefits of each option before investing.
+- **Investments:** There are several investment options, such as [stocks](/en/glossario/en-stocks), investment funds, debt securities, etc. It's essential to understand the risks and benefits of each option before investing.
 - **Debt repayment:** If you have high-interest debts, it may be a good idea to use part of your money to pay them off.
 
 ![Economizando e Investindo](/images/posts/metodo-50-30-20-para-orcamento-3.webp)

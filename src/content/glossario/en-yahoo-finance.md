@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Yahoo [Finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) is a free website (email app like a “digital notebook”) that gathers quotes of [ações](/en/glossario/en-acoes), indices, currencies and economic news in one place. It works as a control panel for those who want to track money, whether to invest or just to understand how the market affects a salary of R$3.000 to R$8.000.  
+Yahoo [Finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) is a free website (email app like a “digital notebook”) that gathers quotes of [ações](/en/glossario/en-stocks), indices, currencies and economic news in one place. It works as a control panel for those who want to track money, whether to invest or just to understand how the market affects a salary of R$3.000 to R$8.000.  
 
 ![What it is](/images/glossario/yahoo-finance-inline-1.webp)
 
@@ -64,7 +64,7 @@ Let's see how someone earning R$4.500 per month can use Yahoo Finance in daily
 
 - **Investment monitoring:** João invested R$2.000 in Vale (VALE3) stocks. He checks the quote daily on Yahoo Finance; when the stock rises 5 % in a week, he decides to sell part to lock in profit.  
 - **Budget planning:** Maria, who receives R$6.200, tracks the dollar variation. When the dollar reaches R$5,30, she buys a prepaid card for an overseas trip, taking advantage of the lower rate.  
-- **Comparison of [fundos](/en/glossario/en-investment-fund):** Carlos has R$8.000 to allocate to [renda fixa](/en/glossario/en-renda-fixa) funds. On Yahoo Finance, he compares the return rate of three different funds and chooses the one that offers 0,8 % more per year, increasing his future gain.  
+- **Comparison of [fundos](/en/glossario/en-investment-fund):** Carlos has R$8.000 to allocate to [renda fixa](/en/glossario/en-fixed-income) funds. On Yahoo Finance, he compares the return rate of three different funds and chooses the one that offers 0,8 % more per year, increasing his future gain.  
 
 **Practical tip:** before buying or selling, always check the 30‑day trend on the chart; this helps avoid decisions based on momentary spikes.  
 

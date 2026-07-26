@@ -1,5 +1,5 @@
 ---
-term: "renda fixa"
+term: "Fixed Income"
 definition: "Understand what renda fixa is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 title: "renda fixa - Financial Glossary"
 description: "Understand what renda fixa is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Fixed income is the name we give to investments that have a predictable return, that is, you already know, more or less, how much you will receive at the end of the period. Unlike [stocks](/en/glossario/en-acoes), which can rise or fall sharply, fixed income usually follows clear rules – such as the [interest](/en/glossario/en-juros) rate set by the government or a financial institution. In simple terms, it’s like lending your money to someone (the government or a bank) and getting it back with interest.
+Fixed income is the name we give to investments that have a predictable return, that is, you already know, more or less, how much you will receive at the end of the period. Unlike [stocks](/en/glossario/en-stocks), which can rise or fall sharply, fixed income usually follows clear rules – such as the [interest](/en/glossario/en-interest) rate set by the government or a financial institution. In simple terms, it’s like lending your money to someone (the government or a bank) and getting it back with interest.
 
 ![What it is](/images/glossario/renda-fixa-inline-1.webp)
 
@@ -34,7 +34,7 @@ When you buy a fixed‑income security, you are acquiring a contract that pays a
 - **Predictability:** You know how much you will receive, which makes budgeting and goal‑setting easier.  
 - **Safety:** Most fixed‑income securities issued by banks or the National Treasury have the guarantee of the Fundo Garantidor de Créditos (FGC) up to R$250 mil per person and per institution.  
 - **Liquidity:** Some securities allow early redemption without major losses, such as DI [funds](/en/glossario/en-investment-fund) or Treasury [Selic](/en/glossario/en-selic).  
-- **[Diversification](/en/glossario/en-diversificacao):** Even those with little money can build a balanced portfolio, reducing reliance on more volatile investments.
+- **[Diversification](/en/glossario/en-diversification):** Even those with little money can build a balanced portfolio, reducing reliance on more volatile investments.
 
 ![Advantages](/images/glossario/renda-fixa-inline-3.webp)
 
@@ -54,7 +54,7 @@ Imagine you earn R$4,500 per month and can save 10% of your salary, i.e., R$450.
 - **CDB at 100% of CDI:** The CDI is at 13.15% per year. The same R$450 yields about R$59, reaching R$509 at year‑end.  
 - **Treasury IPCA+ 2026:** This security pays inflation + 4.5% per year. If inflation is 4% over the period, your total return will be 8.5% per year, generating R$38 of interest, totaling R$488.  
 
-If you earn R$7,200 and can allocate 15% (R$1,080) to fixed income, the effect of “compound interest” becomes even clearer. Investing R$1,080 every month in Treasury Selic, after 5 years you will have accumulated more than R$70 mil, whereas the same amount in a [savings](/en/glossario/en-poupanca) account would yield less than half that.
+If you earn R$7,200 and can allocate 15% (R$1,080) to fixed income, the effect of “compound interest” becomes even clearer. Investing R$1,080 every month in Treasury Selic, after 5 years you will have accumulated more than R$70 mil, whereas the same amount in a [savings](/en/glossario/en-savings) account would yield less than half that.
 
 ## How to start
 

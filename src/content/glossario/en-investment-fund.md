@@ -18,9 +18,9 @@ seo:
 ---
 
 ## What it is
-The term “funds” is commonly used in the context of financial investments and refers to a type of collective investment, where the money of many investors is pooled and applied to different assets, such as [ações](/en/glossario/en-acoes), bonds, real estate, etc. Imagine you have R$ 1.000 to invest but don’t know exactly where to apply it. Instead of trying to do it on your own, you can invest in a fund that is managed by experienced professionals. They will allocate your money across a variety of assets, trying to maximize returns and minimize risks.
+The term “funds” is commonly used in the context of financial investments and refers to a type of collective investment, where the money of many investors is pooled and applied to different assets, such as [ações](/en/glossario/en-stocks), bonds, real estate, etc. Imagine you have R$ 1.000 to invest but don’t know exactly where to apply it. Instead of trying to do it on your own, you can invest in a fund that is managed by experienced professionals. They will allocate your money across a variety of assets, trying to maximize returns and minimize risks.
 
-Funds can be of different types, such as equity funds, [renda fixa](/en/glossario/en-renda-fixa) funds, real‑estate funds, etc. Each type of fund has its own objectives and investment strategies. For example, an equity fund may invest in companies with growth potential, while a fixed‑income fund may invest in corporate or government bonds, seeking stable income.
+Funds can be of different types, such as equity funds, [renda fixa](/en/glossario/en-fixed-income) funds, real‑estate funds, etc. Each type of fund has its own objectives and investment strategies. For example, an equity fund may invest in companies with growth potential, while a fixed‑income fund may invest in corporate or government bonds, seeking stable income.
 
 ![What it is](/images/glossario/fundos-inline-1.webp)
 
@@ -34,7 +34,7 @@ When you invest in a fund, you are basically buying a piece of that fund. The [v
 For example, if you invest R$ 5.000 in an equity fund and the fund has a total value of R$ 1 million, you own 0.5% of that fund. If the fund appreciates 10% in a month, the value of your piece will also increase 10%, to R$ 5.500. **Practical tip:** it’s important to read the fund’s prospectus before investing, to understand how the administration fee is charged and how the fund is managed.
 
 ## Advantages
-Funds offer several advantages for investors. One of the main advantages is [diversificação](/en/glossario/en-diversificacao). When you invest in a fund, you are investing in a variety of assets, which can reduce the risk of loss. In addition, funds are managed by experienced professionals who have access to information and resources you may not have.
+Funds offer several advantages for investors. One of the main advantages is [diversificação](/en/glossario/en-diversification). When you invest in a fund, you are investing in a variety of assets, which can reduce the risk of loss. In addition, funds are managed by experienced professionals who have access to information and resources you may not have.
 
 Another advantage is liquidity. Many funds allow you to redeem your investment at any time, which can be useful if you need cash quickly. **Practical tip:** it’s important to understand the fund’s redemption rules before investing, to avoid unpleasant surprises.
 

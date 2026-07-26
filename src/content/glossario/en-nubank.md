@@ -26,7 +26,7 @@ Nubank is a Brazilian fintech that works as a digital bank: it offers a checking
 - Digital account with unlimited free transfers (TED/DOC)  
 - International credit card with no annual fee  
 - Points program that can be exchanged for products or discounts  
-- Personal loans with [interest](/en/glossario/en-juros) competitive  
+- Personal loans with [interest](/en/glossario/en-interest) competitive  
 - Nubank Invest (CDBs and [funds](/en/glossario/en-investment-fund)) for those who want to start investing  
 
 ## How it works

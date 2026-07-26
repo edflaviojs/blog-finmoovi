@@ -22,7 +22,7 @@ seo:
 
 El Día del Padre se acerca y, como en cualquier festivo, la tentación de gastar más de lo planeado es grande. ¿Pero quién dijo que un regalo caro = mejor regalo?
 
-Con un poco de creatividad y [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas), puedes sorprender a tu papá sin que la cuenta se salga de control. ¿Vamos al paso a paso?
+Con un poco de creatividad y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos), puedes sorprender a tu papá sin que la cuenta se salga de control. ¿Vamos al paso a paso?
 
 ## 1️⃣ Define un límite de gasto antes de nada
 

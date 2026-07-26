@@ -46,7 +46,7 @@ Es el estado en el que tus finanzas están organizadas y no vives con miedo al f
 
 ## Cómo llegar allí
 
-1. Elabora un [presupuesto](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) (sabe a dónde va tu dinero)  
+1. Elabora un [presupuesto](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos) (sabe a dónde va tu dinero)  
 2. Paga primero las deudas caras  
 3. Construye la reserva de emergencia  
 4. Empieza a invertir (aunque sea poco)  

@@ -48,7 +48,7 @@ After checking your expenses, adjust them according to your needs and goals. If 
 Check your income over the past 6 months and adjust it according to your needs and goals. If you've received a salary increase, for example, you may want to increase your savings or investments.
 
 ### 4. Adjust Your Investments
-If you have investments, such as [stocks](/en/glossario/en-acoes) or investment funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.
+If you have investments, such as [stocks](/en/glossario/en-stocks) or investment funds, check if they're still aligned with your goals and adjust them accordingly. You may want to consider investing in [Tesouro Direto](https://www.tesourodireto.com.br) or other low-risk investments.
 
 ## Tips to Keep Your Budget in Order
 Here are some tips to keep your budget in order:

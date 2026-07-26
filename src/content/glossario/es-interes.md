@@ -1,5 +1,5 @@
 ---
-term: "juros"
+term: "Interés"
 definition: "Entienda qué es juros, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 title: "juros - Glosario Financiero"
 description: "Entienda qué es juros, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."

@@ -48,7 +48,7 @@ Después de verificar tus gastos, ajústalos de acuerdo con tus necesidades y ob
 Verifica tus ingresos de los últimos 6 meses y ajústalos de acuerdo con tus necesidades y objetivos. Si recibiste un aumento de salario, por ejemplo, puedes querer aumentar tus ahorros o inversiones.
 
 ### 4. Ajusta tus inversiones
-Si tienes inversiones, como [acciones](/es/glossario/es-acoes) o fondos de inversión, verifica si aún están alineadas con tus objetivos y ajústalas de acuerdo. Puedes querer considerar invertir en [Tesouro Direto](https://www.tesourodireto.com.br) o otras inversiones de bajo riesgo.
+Si tienes inversiones, como [acciones](/es/glossario/es-acciones) o fondos de inversión, verifica si aún están alineadas con tus objetivos y ajústalas de acuerdo. Puedes querer considerar invertir en [Tesouro Direto](https://www.tesourodireto.com.br) o otras inversiones de bajo riesgo.
 
 ## Consejos para mantener tu presupuesto en orden
 Aquí están algunos consejos para mantener tu presupuesto en orden:

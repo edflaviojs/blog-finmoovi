@@ -52,4 +52,4 @@ It depends on how much you save:
 
 ## Partial Financial Independence
 
-It doesn't have to be all or nothing. Having 50% of your expenses covered by [passive income](/en/posts/en-fundos-imobiliarios-for-beginners-complete-guide) already changes your life — you can work part-time, change careers or accept a lower salary doing what you love.
+It doesn't have to be all or nothing. Having 50% of your expenses covered by [passive income](/en/posts/en-real-estate-funds-for-beginners-complete-guide) already changes your life — you can work part-time, change careers or accept a lower salary doing what you love.

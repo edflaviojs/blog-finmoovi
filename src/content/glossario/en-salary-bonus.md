@@ -23,7 +23,7 @@ Bonus is an extra payment that the company offers to the employee, usually tied 
 
 ![What it is](/images/glossario/bonus-inline-1.webp)
 
-- Can be paid in cash, [shares](/en/glossario/en-acoes) or even [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) such as trips.  
+- Can be paid in cash, [shares](/en/glossario/en-stocks) or even [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) such as trips.  
 - Usually calculated as a percentage of the salary or as a predefined fixed [value](/en/glossario/en-financial-value).  
 - The payment can be one‑off (for example, when closing a large contract) or recurring (monthly, quarterly).
 
@@ -65,7 +65,7 @@ Now, suppose the company has a profit‑sharing program (PLR) that distributes R
 
 **Practical tip:** **Set aside 30 % of the received bonus for an [emergency fund](/en/glossario/en-emergency-fund);** this turns the “gift” into financial security.
 
-Another case: an employee with a salary of R$7.200 receives a bonus of R$1.200 for closing a R$200.000 contract. He decides to use 50 % of the bonus to pay the credit‑card bill (R$600) and invests the other R$600 in a fixed‑income fund [fixed income](/en/glossario/en-renda-fixa) ([yield](/en/glossario/en-yield), or financial return, of 6 % per year). In 12 months, the investment will yield approximately R$36, increasing the total gain of the bonus.
+Another case: an employee with a salary of R$7.200 receives a bonus of R$1.200 for closing a R$200.000 contract. He decides to use 50 % of the bonus to pay the credit‑card bill (R$600) and invests the other R$600 in a fixed‑income fund [fixed income](/en/glossario/en-fixed-income) ([yield](/en/glossario/en-yield), or financial return, of 6 % per year). In 12 months, the investment will yield approximately R$36, increasing the total gain of the bonus.
 
 **Practical tip:** **If the bonus is in shares, check the vesting period (the time you need to stay with the company to be entitled to the value);** this avoids surprises when trying to sell the shares too early.
 

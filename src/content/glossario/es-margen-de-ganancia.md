@@ -43,7 +43,7 @@ El margen de ganancia es cuánto sobra de cada real que entra. Si una empresa fa
 
 ## Para qué sirve (inversor)
 
-Al analizar [acciones](/es/glossario/es-acoes), el margen de ganancia muestra:
+Al analizar [acciones](/es/glossario/es-acciones), el margen de ganancia muestra:
 - Las empresas con márgenes altos tienen ventaja competitiva
 - Los márgenes crecientes indican una mejora en la eficiencia
 - Los márgenes muy bajos indican un negocio frágil

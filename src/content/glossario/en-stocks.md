@@ -1,5 +1,5 @@
 ---
-term: "ações"
+term: "Stocks"
 definition: "Understand what ações is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 title: "ações - Financial Glossary"
 description: "Understand what ações is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."

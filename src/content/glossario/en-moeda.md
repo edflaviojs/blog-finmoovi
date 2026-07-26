@@ -56,9 +56,9 @@ However, money also carries risks, such as:
 ## Practical examples
 Let’s look at some practical examples of how money works in real life. If you earn R$ 4,000 per month and spend R$ 3,000 on bills and food, you still have R$ 1,000 to save or invest. You can use that money to:
 * Save in a bank account to have an emergency reserve.  
-* Invest in **[stocks](/en/glossario/en-acoes)** or bonds to try to grow your wealth.  
+* Invest in **[stocks](/en/glossario/en-stocks)** or bonds to try to grow your wealth.  
 * Purchase an asset, such as a house or a car.  
-* **Practical tip:** Always check the **[interest](/en/glossario/en-juros)** rates and terms before investing or taking a loan.
+* **Practical tip:** Always check the **[interest](/en/glossario/en-interest)** rates and terms before investing or taking a loan.
 
 ## Start today
 Now that you understand better how money works, it’s time to start managing your finances effectively. **Practical tip:** Use a finance app to track your expenses and income and get a clear view of your money. Remember that money is a powerful tool that can be used to improve your financial life. With a bit of planning and discipline, you can achieve your financial goals and enjoy a safer, more prosperous life. So, start today by managing your money effectively and building a brighter financial future!

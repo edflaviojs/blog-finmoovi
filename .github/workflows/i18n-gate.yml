@@ -5,6 +5,11 @@ on:
     paths:
       - 'src/content/posts/**'
       - 'src/content/glossario/**'
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/posts/**'
+      - 'src/content/glossario/**'
 
 jobs:
   validate:
@@ -21,6 +26,9 @@ jobs:
 
       - name: Run i18n validation
         run: npm run validate:i18n
+
+      - name: Validate slug language (EN/ES sem palavras PT)
+        run: npm run validate:slugs
 
       - name: Check new files for PT slug patterns
         run: |

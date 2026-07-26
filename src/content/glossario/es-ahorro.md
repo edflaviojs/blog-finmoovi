@@ -1,5 +1,5 @@
 ---
-term: "poupança"
+term: "Ahorro"
 definition: "Entienda qué es poupança, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 title: "poupança - Glosario Financiero"
 description: "Entienda qué es poupança, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
