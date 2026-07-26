@@ -10,7 +10,7 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## What are Compound Interest?
+## What are Compound [Interest](/en/glossario/en-interest)?
 
 Compound interest is interest calculated on the original value **plus** the interest already accrued. Unlike [simple interest](/en/glossario/en-simple-interest) (which only applies to the initial value), compound interest grows exponentially.
 

@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Um empréstimo é um contrato em que uma instituição (banco, fintech ou pessoa) entrega um valor em dinheiro ao tomador, que se compromete a devolver esse montante acrescido de juros (o custo do crédito) em parcelas pré‑definidas. Em termos simples, é como pegar dinheiro emprestado de um amigo, só que com regras formais e com a cobrança de um “aluguel” pelo uso desse dinheiro.
+Um empréstimo é um contrato em que uma instituição (banco, fintech ou pessoa) entrega um valor em dinheiro ao tomador, que se compromete a devolver esse montante acrescido de juros (o custo do [crédito](/en/glossario/en-credito)) em parcelas pré‑definidas. Em termos simples, é como pegar dinheiro emprestado de um amigo, só que com regras formais e com a cobrança de um “aluguel” pelo uso desse dinheiro.
 
 ![What it is](/images/glossario/emprestimo-inline-1.webp)
 

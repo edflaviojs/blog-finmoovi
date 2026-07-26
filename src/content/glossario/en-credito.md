@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, mas que você pode pagar depois. Funciona como um empréstimo pré‑aprovado: o banco ou a fintech coloca um limite à sua disposição e você paga o que usar, acrescido de [juros](/en/glossario/en-interest) (o preço do dinheiro emprestado). Quando falamos de crédito, incluímos cartões de crédito, cheque especial, empréstimos pessoais e até financiamentos de carro ou casa. Em termos simples, é “comprar agora, pagar depois”, mas com a responsabilidade de devolver o valor + juros dentro do prazo combinado.
+Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, mas que você pode pagar depois. Funciona como um [empréstimo](/en/glossario/en-emprestimo-financial-glossary) pré‑aprovado: o banco ou a fintech coloca um limite à sua disposição e você paga o que usar, acrescido de [juros](/en/glossario/en-interest) (o preço do dinheiro emprestado). Quando falamos de crédito, incluímos cartões de crédito, cheque especial, empréstimos pessoais e até financiamentos de carro ou casa. Em termos simples, é “comprar agora, pagar depois”, mas com a responsabilidade de devolver o valor + juros dentro do prazo combinado.
 
 ![What it is](/images/glossario/credito-inline-1.webp)
 

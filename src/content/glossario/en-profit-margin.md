@@ -43,7 +43,7 @@ Profit margin is what's left over from each real that comes in. If a company bil
 
 ## What it's for (investor)
 
-When analyzing stocks, the profit margin shows:
+When analyzing [stocks](/en/glossario/en-stocks), the profit margin shows:
 - Companies with high margins have a competitive advantage
 - Increasing margins indicate improving efficiency
 - Very low margins indicate a fragile business

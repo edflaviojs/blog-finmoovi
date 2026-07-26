@@ -17,7 +17,7 @@ Consortium is a system where several people join together to buy something (car,
 ## How does it work?
 
 1. You join a consortium group
-2. Pay monthly installments (no interest, but with administration fee)
+2. Pay monthly installments (no [interest](/en/glossario/en-interest), but with administration fee)
 3. Every month there is an assembly with a drawing
 4. Awarded participants receive a letter of credit
 5. You can bid (offer advance installments) to be awarded earlier

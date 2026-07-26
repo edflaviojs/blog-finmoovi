@@ -48,7 +48,7 @@ Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vist
 ## Why the score matters
 
 With a high score you can get:
-- Lower interest rates on [financing](/en/glossario/en-financing)
+- Lower [interest](/en/glossario/en-interest) rates on [financing](/en/glossario/en-financing)
 - Higher credit card limits
 - Easier approval for rentals
 - Better conditions on loans

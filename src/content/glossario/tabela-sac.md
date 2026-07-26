@@ -16,7 +16,7 @@ SAC (Sistema de [Amortização](/glossario/amortizacao) Constante) é um método
 
 ## Como funciona
 
-- **Amortização:** fixa (valor do empréstimo ÷ número de parcelas)
+- **Amortização:** fixa (valor do [empréstimo](/glossario/emprestimo) ÷ número de parcelas)
 - **Juros:** calculados sobre o saldo devedor (diminuem a cada mês)
 - **Parcela:** amortização + juros (começa alta, termina baixa)
 

@@ -16,7 +16,7 @@ Ganancia de capital es la ganancia que obtienes cuando vendes algo por más de l
 
 ## Donde incide
 
-- Venta de acciones (más de R$ 20.000/mes)
+- Venta de [acciones](/es/glossario/es-acciones) (más de R$ 20.000/mes)
 - Venta de inmuebles
 - Venta de criptomonedas (más de R$ 35.000/mes)
 - Venta de vehículos con ganancia

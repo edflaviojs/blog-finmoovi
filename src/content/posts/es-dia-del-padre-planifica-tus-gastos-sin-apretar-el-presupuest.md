@@ -17,13 +17,13 @@ seo:
   keywords: ["día del padre","regalo día del padre","presupuesto día del padre"]
 ---
 
-**Planificar el Día del Padre** significa definir cuánto puedes gastar, elegir un regalo que le guste y mantener tu cuenta bancaria equilibrada. En muchos países (EE. UU., Reino Unido, España, Portugal, etc.) el secreto es anticipar los gastos, usar herramientas simples y evitar que la celebración se convierta en una deuda.
+**Planificar el Día del Padre** significa definir cuánto puedes gastar, elegir un regalo que le guste y mantener tu cuenta bancaria equilibrada. En muchos países (EE. UU., Reino Unido, España, Portugal, etc.) el secreto es anticipar los gastos, usar herramientas simples y evitar que la celebración se convierta en una [deuda](/es/glossario/es-deuda).
 
 ## Define un techo realista  
 
 Empieza mirando tu salario neto. Si percibes entre **€1.500 y €4.000** al mes, reserva entre el 2 % y el 5 % de tus ingresos para el regalo, según tus otras prioridades. Por ejemplo, quien gana **€2.250** puede destinar hasta **€112** (5 %) sin sentir presión. Esa cantidad cubre un regalo de calidad o una cena especial y aún deja espacio para tus gastos mensuales.
 
-> *Consejo práctico:* **Abre una cuenta digital o usa una app de [control de gastos](/es/posts/es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas-) (como FinMoovi) y crea una categoría “Día del Padre”. Define la meta de ahorro y revisa la evolución cada semana.**  
+> *Consejo práctico:* **Abre una cuenta digital o usa una app de [control de gastos](/es/posts/es-7-alternativas-a-la-hoja-de-calculo-de-google-para-finanzas-) (como FinMoovi) y crea una categoría “Día del Padre”. Define la meta de [ahorro](/es/glossario/es-ahorro) y revisa la evolución cada semana.**  
 > Esta práctica evita sorpresas y permite transferir dinero automáticamente, como una “cuenta de regalo”.
 
 ## Crea una lista de ideas dentro del presupuesto  

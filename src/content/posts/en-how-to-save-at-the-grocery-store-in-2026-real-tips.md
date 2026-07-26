@@ -43,7 +43,7 @@ Most grocery chains have point programs or loyalty cards. Every purchase generat
 
 ![Use cupons e programas de fidelidade](/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais-4.webp)  
 
-Also, coupon sites (for example, Cuponeria) often provide codes for discounts on specific items. Before you check out, do a quick search; five minutes of effort can net you up to R$ 30 in savings.  
+Also, coupon sites (for example, Cuponeria) often provide codes for discounts on specific items. Before you check out, do a quick search; five minutes of effort can net you up to R$ 30 in [savings](/en/glossario/en-savings).  
 
 ## Avoid Impulse Purchases  
 

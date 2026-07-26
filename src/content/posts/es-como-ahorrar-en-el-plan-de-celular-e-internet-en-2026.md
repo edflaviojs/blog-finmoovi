@@ -30,7 +30,7 @@ Muchos proveedores ofrecen paquetes de internet fija + celular con descuento. Si
 ![Aproveite pacotes de dados](/images/posts/como-economizar-no-plano-de-celular-e-internet-em-2026-2.webp)
 
 ## Negocia con la operadora
-Llamar al SAC y solicitar un reajuste puede generar un ahorro del 10 % al 20 %. Habla de forma clara, menciona que estás analizando otras opciones y que quieres mantener la factura por debajo de cierto valor (p.ej.: R$120). Muchas veces el agente tiene autonomía para aplicar un descuento inmediato o migrar a un plan más reducido.
+Llamar al SAC y solicitar un reajuste puede generar un [ahorro](/es/glossario/es-ahorro) del 10 % al 20 %. Habla de forma clara, menciona que estás analizando otras opciones y que quieres mantener la factura por debajo de cierto valor (p.ej.: R$120). Muchas veces el agente tiene autonomía para aplicar un descuento inmediato o migrar a un plan más reducido.
 
 ## Usa Wi‑Fi inteligente
 Cuando estés en casa o en lugares con Wi‑Fi gratuito, desactiva el 4G/5G. Las configuraciones de “Uso de datos” en los smartphones permiten bloquear apps que consumen mucho ancho de banda (streaming, redes sociales) cuando no hay Wi‑Fi. Esta práctica puede reducir entre 2 GB y 5 GB el consumo mensual, evitando costos extra.

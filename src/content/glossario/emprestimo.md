@@ -19,7 +19,7 @@ seo:
 
 ## O que é
 
-Empréstimo é um contrato em que uma pessoa (ou empresa) recebe uma quantia de dinheiro de um banco ou outra instituição e se compromete a devolver esse valor, acrescido de juros, em parcelas ao longo de um prazo combinado. Em termos simples, é como pedir dinheiro emprestado a um amigo, só que com regras formais e custos (os juros) que precisam ser pagos.
+Empréstimo é um contrato em que uma pessoa (ou empresa) recebe uma quantia de dinheiro de um banco ou outra instituição e se compromete a devolver esse valor, acrescido de [juros](/glossario/juros), em parcelas ao longo de um prazo combinado. Em termos simples, é como pedir dinheiro emprestado a um amigo, só que com regras formais e custos (os juros) que precisam ser pagos.
 
 ![O que é](/images/glossario/emprestimo-inline-1.webp)
 
@@ -27,12 +27,12 @@ Empréstimo é um contrato em que uma pessoa (ou empresa) recebe uma quantia de 
 
 ## Como funciona
 
-Quando você solicita um empréstimo, a instituição analisa seu perfil – renda, histórico de crédito e capacidade de pagamento – para definir o valor máximo, a taxa de juros (percentual que incide sobre o saldo) e o prazo (tempo para quitar a dívida). O valor total a ser pago é chamado de **montante** e inclui o principal (o dinheiro que você recebeu) mais os juros. As parcelas podem ser fixas (mesmo valor todo mês) ou variáveis, dependendo do tipo de contrato.
+Quando você solicita um empréstimo, a instituição analisa seu perfil – renda, histórico de [crédito](/glossario/credito) e capacidade de pagamento – para definir o valor máximo, a taxa de juros (percentual que incide sobre o saldo) e o prazo (tempo para quitar a [dívida](/glossario/divida)). O valor total a ser pago é chamado de **montante** e inclui o principal (o dinheiro que você recebeu) mais os juros. As parcelas podem ser fixas (mesmo valor todo mês) ou variáveis, dependendo do tipo de contrato.
 
 - **Principal**: o valor que você realmente pegou emprestado.  
 - **Juros**: o custo do crédito, geralmente expresso ao ano (a.a.) e dividido nas parcelas.  
 - **Prazo**: número de meses ou anos para pagar tudo.  
-- **Amortização**: forma de reduzir o saldo devedor a cada pagamento; pode ser constante (SAC) ou decrescente (PRICE).
+- **[Amortização](/glossario/amortizacao)**: forma de reduzir o saldo devedor a cada pagamento; pode ser constante (SAC) ou decrescente (PRICE).
 
 ## Vantagens
 
@@ -60,7 +60,7 @@ Imagine que você ganha R$4.500 por mês e precisa reformar a cozinha, estimando
 Se você ganha R$7.000 e quer comprar um carro usado de R$30.000, pode optar por um empréstimo de R$30.000 a 1,8% ao mês em 48 parcelas.
 
 - **Parcela fixa**: Aproximadamente R$1.200.  
-- **Comprometimento da renda**: 17% do salário, o que ainda permite manter um fundo de emergência.
+- **Comprometimento da renda**: 17% do salário, o que ainda permite manter um [fundo de emergência](/ferramentas/calculadora-reserva).
 
 **Dica prática:** antes de fechar qualquer contrato, use a calculadora do seu banco (ou um app de finanças) para simular o valor da parcela e ver quanto do salário ficará comprometido.
 
@@ -80,4 +80,4 @@ Se você ganha R$7.000 e quer comprar um carro usado de R$30.000, pode optar por
 
 ## Comece hoje
 
-Se você já tem clareza sobre o valor que precisa e sabe quanto pode pagar por mês, não adie mais. Abra o app do seu banco, faça a simulação e dê o primeiro passo rumo a uma vida financeira mais organizada. O empréstimo pode ser uma ferramenta útil, desde que usado com consciência e planejamento. Boa sorte!
+Se você já tem clareza sobre o valor que precisa e sabe quanto pode pagar por mês, não adie mais. Abra o app do seu banco, faça a simulação e dê o primeiro passo rumo a uma vida financeira mais organizada. O empréstimo pode ser uma ferramenta útil, desde que usado com consciência e [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas). Boa sorte!

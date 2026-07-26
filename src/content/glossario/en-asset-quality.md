@@ -87,4 +87,4 @@ Applying the quality mindset to your financial life is simpler than it looks. Fi
 
 ## Start today
 
-Quality is not a luxury reserved for a few; it’s a choice you can make right now, with what you have at hand. Set aside a few minutes today, pick an item you use daily, and research a more durable or reliable version. The small time investment can generate real savings in the coming months and, more importantly, give you the peace of mind that you’re building a stronger financial future. Go ahead, take the first step, and feel the difference!
+Quality is not a luxury reserved for a few; it’s a choice you can make right now, with what you have at hand. Set aside a few minutes today, pick an item you use daily, and research a more durable or reliable version. The small time investment can generate real [savings](/en/glossario/en-savings) in the coming months and, more importantly, give you the peace of mind that you’re building a stronger financial future. Go ahead, take the first step, and feel the difference!

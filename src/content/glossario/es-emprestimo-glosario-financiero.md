@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-Un préstamo es una cantidad de dinero que una entidad (banco, financiera o incluso un amigo) entrega a otra persona con el compromiso de devolverla en cuotas y con un interés adicional. Ese interés es el “precio” que pagas por usar el dinero de otro antes de que lo devuelvas. En términos simples, es como cuando pides a un compañero que te preste una herramienta y le pagas un pequeño extra por la comodidad.
+Un préstamo es una cantidad de dinero que una entidad (banco, financiera o incluso un amigo) entrega a otra persona con el compromiso de devolverla en cuotas y con un [interés](/es/glossario/es-interes) adicional. Ese interés es el “precio” que pagas por usar el dinero de otro antes de que lo devuelvas. En términos simples, es como cuando pides a un compañero que te preste una herramienta y le pagas un pequeño extra por la comodidad.
 
 ![Qué es](/images/glossario/emprestimo-inline-1.webp)
 
@@ -30,14 +30,14 @@ Un préstamo es una cantidad de dinero que una entidad (banco, financiera o incl
 Cuando solicitas un préstamo, el proceso suele seguir estos pasos:
 
 - **Solicitud:** Indicas cuánto dinero necesitas y para qué lo usarás.  
-- **Análisis de crédito:** La entidad revisa tu historial financiero (tu score) para decidir si aprueba o no el préstamo.  
+- **Análisis de [crédito](/es/glossario/es-credito):** La entidad revisa tu historial financiero (tu score) para decidir si aprueba o no el préstamo.  
 - **Aprobación y contrato:** Si te aprueba, firmas un contrato que detalla el monto, la tasa de interés (el porcentaje que pagarás extra) y el plazo (el tiempo que tendrás para pagar).  
-- **Desembolso:** El dinero se transfiere a tu cuenta; hoy en día muchas personas lo reciben al instante mediante apps como Nubank, que me recomendaron porque es rápido y sin complicaciones.  
+- **Desembolso:** El dinero se transfiere a tu cuenta; hoy en día muchas personas lo reciben al instante mediante apps como [Nubank](/es/glossario/es-nubank), que me recomendaron porque es rápido y sin complicaciones.  
 - **Pago de cuotas:** Cada mes pagas una parte del capital más los intereses, hasta liquidar la deuda.
 
 ## Ventajas
 
-Los préstamos pueden ser una herramienta útil si se usan con prudencia. Entre los beneficios más comunes están:
+Los préstamos pueden ser una herramienta útil si se usan con prudencia. Entre los [beneficios](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) más comunes están:
 
 ![Ventajas](/images/glossario/emprestimo-inline-3.webp)
 
@@ -65,9 +65,9 @@ A continuación, algunos escenarios con salarios reales en R$ para que veas cóm
 
 **Consejo práctico:** Antes de aceptar cualquier préstamo, calcula la cuota mensual y verifica que no supere el 30 % de tu ingreso neto.  
 
-**Consejo práctico:** Compara al menos tres ofertas diferentes; una diferencia de 1 % en la tasa de interés puede significar cientos de reales de ahorro a lo largo del plazo.  
+**Consejo práctico:** Compara al menos tres ofertas diferentes; una diferencia de 1 % en la tasa de interés puede significar cientos de reales de [ahorro](/es/glossario/es-ahorro) a lo largo del plazo.  
 
-**Consejo práctico:** Usa una app de gestión financiera (como la que me recomendó mi hermano) para registrar cada pago y evitar sorpresas.
+**Consejo práctico:** Usa una app de [gestión financiera](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) (como la que me recomendó mi hermano) para registrar cada pago y evitar sorpresas.
 
 ## Cómo empezar
 

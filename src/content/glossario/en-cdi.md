@@ -29,4 +29,4 @@ When an [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500) y
 
 With CDI at 14.65% per year:
 - R$ 1,000 invested = ~R$ 146.50/year (gross)
-- After deducting income tax (15‑22.5%), it’s between R$ 113 and R$ 124/year net
+- After deducting [income tax](/en/glossario/en-income-tax) (15‑22.5%), it’s between R$ 113 and R$ 124/year net

@@ -32,7 +32,7 @@ Financing is when a bank lends you [money](/en/posts/en-30-day-rule-for-purchase
 
 ## Tips to [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) well
 
-1. **Make the largest down payment possible** — reduces total interest
+1. **Make the largest down payment possible** — reduces total [interest](/en/glossario/en-interest)
 2. **Choose the shortest term that fits your [budget](/en/posts/en-5-alternatives-to-mobills-in-2026)** — less interest
 3. **Compare rates between banks** — the difference can be huge
 4. **Prefer SAC** — pays less interest in total

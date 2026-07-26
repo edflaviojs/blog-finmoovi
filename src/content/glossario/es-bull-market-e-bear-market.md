@@ -10,7 +10,7 @@ publishedAt: 2026-06-06
 ---
 
 ## ¿Qué son Bull Market y Bear Market?
-Cuando se habla de [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026), es común escuchar los términos "Bull Market" y "Bear Market". Estos términos son usados para describir las tendencias del mercado de acciones y pueden influir en sus decisiones de [inversión](/es/posts/es-montando-cartera-diversificada-con-r-500).
+Cuando se habla de [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026), es común escuchar los términos "Bull Market" y "Bear Market". Estos términos son usados para describir las tendencias del mercado de [acciones](/es/glossario/es-acciones) y pueden influir en sus decisiones de [inversión](/es/posts/es-montando-cartera-diversificada-con-r-500).
 
 ## Bull Market
 Un Bull Market es un período en que el mercado de acciones está en alta, con los precios de las acciones subiendo consistentemente. Esto generalmente ocurre durante períodos de crecimiento económico, cuando las empresas están generando ganancias y las personas están optimistas sobre el futuro. Durante un Bull Market, los inversores tienden a comprar más acciones, lo que aumenta la demanda y, consecuentemente, los precios.

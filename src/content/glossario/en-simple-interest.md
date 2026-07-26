@@ -10,7 +10,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## What is Simple Interest?
+## What is Simple [Interest](/en/glossario/en-interest)?
 
 Simple interest is calculated only on the original amount (principal). No matter how much time passes, the interest is always calculated on the same initial amount. It’s the most basic type of interest.
 

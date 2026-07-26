@@ -33,7 +33,7 @@ Se você ficar R$ 1.000 negativos por 30 dias com juros de 12% ao mês:
 1. **Desative o cheque especial** — ligue para o banco e peça para remover
 2. **Mantenha uma reserva na conta** — pelo menos R$ 500 de colchão
 3. **Configure alertas** — aviso quando saldo ficar baixo
-4. **Se precisar de crédito** — empréstimo pessoal tem juros 5x menores
+4. **Se precisar de crédito** — [empréstimo](/glossario/emprestimo) pessoal tem juros 5x menores
 
 ## [Alternativas](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) mais baratas
 

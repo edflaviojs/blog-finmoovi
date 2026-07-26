@@ -26,7 +26,7 @@ El pago anticipado es pagar una deuda (financiación, préstamo, [consorcio](/es
 Ejemplo: financiación de R$ 200.000 en 30 años al 10% a.a.
 - Total que pagaría: ~R$ 632.000
 - Si paga en 15 años: ~R$ 387.000
-- **Ahorro: R$ 245.000** (¡casi el [valor](/es/glossario/es-valor-financiero) de la propiedad!)
+- **[Ahorro](/es/glossario/es-ahorro): R$ 245.000** (¡casi el [valor](/es/glossario/es-valor-financiero) de la propiedad!)
 
 ## Cuándo vale la pena pagar
 
