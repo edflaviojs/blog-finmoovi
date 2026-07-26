@@ -8,7 +8,7 @@ relatedTerms: ["Juros","Amortização","Financiamento"]
 publishedAt: 2026-06-06
 ---
 
-## Entendiendo la Tabela SAC
+## Entendiendo la [Tabela SAC](/es/glossario/es-tabela-sac)
 La Tabela SAC es un método de cálculo de prestaciones que mantiene el [valor](/es/glossario/es-valor-financiero) de la [amortización](/es/glossario/es-amortizacion) (parte del pago que reduce el saldo deudor) constante a lo largo del [financiamiento](/es/glossario/es-financiamiento). Esto significa que, aunque el valor de la prestación disminuye a lo largo del tiempo debido a la reducción de los intereses, la parte que efectivamente paga el préstamo (amortización) permanece la misma.
 
 ## Entendiendo la Tabela Price

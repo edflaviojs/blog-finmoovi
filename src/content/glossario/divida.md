@@ -19,7 +19,7 @@ seo:
 
 ## O que é
 
-Dívida é quando você pega dinheiro emprestado de alguém – seja um banco, uma fintech ou até um amigo – e se compromete a devolver esse valor, geralmente com juros. Em termos simples, é como se você estivesse usando o salário de amanhã para pagar uma conta de hoje. Quando a gente fala de dívida, costuma‑se pensar em empréstimos, cartão de crédito, financiamento de carro ou até parcelamento de compras. O importante é entender que toda dívida tem duas partes: o **principal** (o valor que você recebeu) e o **juros** (o custo extra por usar esse dinheiro).
+Dívida é quando você pega dinheiro emprestado de alguém – seja um banco, uma fintech ou até um amigo – e se compromete a devolver esse valor, geralmente com juros. Em termos simples, é como se você estivesse usando o salário de amanhã para pagar uma conta de hoje. Quando a gente fala de dívida, costuma‑se pensar em empréstimos, [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), [financiamento](/glossario/financiamento) de carro ou até parcelamento de compras. O importante é entender que toda dívida tem duas partes: o **principal** (o valor que você recebeu) e o **juros** (o custo extra por usar esse dinheiro).
 
 ![O que é](/images/glossario/divida-inline-1.webp)
 
@@ -36,16 +36,16 @@ Quando você solicita um crédito, a instituição avalia sua capacidade de paga
 
 ## Vantagens
 
-Mesmo sendo um compromisso, a dívida pode trazer benefícios quando usada com critério.  
+Mesmo sendo um compromisso, a dívida pode trazer [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) quando usada com critério.  
 
 ![Vantagens](/images/glossario/divida-inline-3.webp)
 
 
 
-- **Acesso imediato a recursos**: permite comprar um imóvel ou investir em um negócio sem precisar esperar a poupança crescer.  
+- **Acesso imediato a recursos**: permite comprar um imóvel ou investir em um negócio sem precisar esperar a [poupança](/glossario/poupanca) crescer.  
 - **Construção de histórico de crédito**: pagar as parcelas em dia melhora seu score, facilitando futuros financiamentos.  
 - **Parcelamento de despesas**: transforma um gasto grande em pagamentos menores, ajudando no fluxo de caixa mensal.  
-- **Possibilidade de juros menores que a inflação**: em alguns casos, o custo da dívida pode ser menor que a perda de poder de compra ao deixar o dinheiro parado.
+- **Possibilidade de juros menores que a [inflação](/glossario/inflacao)**: em alguns casos, o custo da dívida pode ser menor que a perda de poder de compra ao deixar o dinheiro parado.
 
 ## Riscos
 
@@ -78,7 +78,7 @@ Se você decidiu que vai usar crédito de forma consciente, siga estes passos pa
 
 - **Dica prática:** antes de aceitar qualquer proposta, use uma planilha ou um app de controle financeiro para simular o impacto da parcela no seu orçamento.  
 - Pesquise diferentes instituições e compare taxas (APY – taxa anual percentual) e CET (custo efetivo total).  
-- Verifique se o contrato permite amortização antecipada sem penalidade, o que pode reduzir o total de juros.  
+- Verifique se o contrato permite [amortização](/glossario/amortizacao) antecipada sem penalidade, o que pode reduzir o total de juros.  
 - Defina um limite máximo de comprometimento de renda (idealmente até 30 %).  
 - Organize as datas de vencimento para que as parcelas caiam logo após o recebimento do salário, evitando atrasos.  
 

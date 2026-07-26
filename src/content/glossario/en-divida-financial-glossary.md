@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Dívida é basicamente o que você deve a alguém – seja um banco, uma loja ou até um amigo. Quando você pega dinheiro emprestado ou compra algo a prazo, está criando uma dívida que precisa ser quitada no futuro, geralmente com juros. Em termos simples, é como se você estivesse usando o salário de amanhã para pagar algo hoje.
+Dívida é basicamente o que você deve a alguém – seja um banco, uma loja ou até um amigo. Quando você pega dinheiro emprestado ou compra algo a prazo, está criando uma dívida que precisa ser quitada no futuro, geralmente com [juros](/en/glossario/en-juros). Em termos simples, é como se você estivesse usando o salário de amanhã para pagar algo hoje.
 
 ![What it is](/images/glossario/divida-inline-1.webp)
 
@@ -36,13 +36,13 @@ Quando você contrai uma dívida, duas coisas acontecem: o valor principal (o qu
 
 ## Advantages
 
-Mesmo que a palavra “dívida” cause medo, ela pode ser uma ferramenta útil quando usada com responsabilidade. O principal benefício é a possibilidade de adquirir algo que você ainda não tem dinheiro suficiente para pagar à vista, como um carro ou a própria casa. Além disso, pagar as contas em dia ajuda a construir um histórico de crédito sólido, o que facilita a obtenção de novos empréstimos com condições melhores.
+Mesmo que a palavra “dívida” cause medo, ela pode ser uma ferramenta útil quando usada com responsabilidade. O principal benefício é a possibilidade de adquirir algo que você ainda não tem dinheiro suficiente para pagar à vista, como um carro ou a própria casa. Além disso, pagar as contas em dia ajuda a construir um histórico de [crédito](/en/glossario/en-credito) sólido, o que facilita a obtenção de novos empréstimos com condições melhores.
 
 ![Advantages](/images/glossario/divida-inline-3.webp)
 
 
 
-- **Alavancagem:** permite comprar bens de maior valor antes de acumular a poupança necessária.  
+- **[Alavancagem](/en/glossario/en-alavancagem):** permite comprar bens de maior valor antes de acumular a [poupança](/en/glossario/en-poupanca) necessária.  
 - **Construção de crédito:** demonstração de responsabilidade financeira para instituições.  
 - **Flexibilidade de fluxo:** mantém dinheiro livre para emergências ou investimentos de curto prazo.  
 
@@ -60,7 +60,7 @@ Imagine que você ganha R$4.500 por mês e decide comprar um carro que custa R$3
 
 Se, ao invés disso, você tem uma dívida de cartão de crédito de R$2.000 com juros de 12 % ao mês, a conta pode subir para mais de R$3.500 em apenas três meses se não houver pagamento.  
 
-Para quem ganha R$7.000, um empréstimo pessoal de R$20.000 com taxa de 2 % ao mês pode ser viável, desde que a parcela não ultrapasse R$1.500 (cerca de 21 % da renda), permitindo ainda guardar R$500 para a reserva de emergência.
+Para quem ganha R$7.000, um empréstimo pessoal de R$20.000 com taxa de 2 % ao mês pode ser viável, desde que a parcela não ultrapasse R$1.500 (cerca de 21 % da renda), permitindo ainda guardar [R$500](/en/posts/en-building-a-diversified-portfolio-with-r-500) para a reserva de emergência.
 
 ## How to start
 
@@ -74,7 +74,7 @@ Antes de aceitar qualquer dívida, é fundamental analisar se o pagamento cabe n
 
 **Practical tip:** **Negocie a taxa de juros antes de assinar o contrato**; muitas vezes o banco aceita reduzir alguns pontos se você demonstrar que pesquisou outras opções.  
 
-**Practical tip:** **Use um app de controle financeiro** (como o Guiabolso ou o Organizze) para acompanhar cada pagamento e evitar esquecimentos que geram multas.  
+**Practical tip:** **Use um app de controle financeiro** (como o Guiabolso ou o [Organizze](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f)) para acompanhar cada pagamento e evitar esquecimentos que geram multas.  
 
 Além disso, mantenha uma reserva de emergência equivalente a três a seis salários. Essa “almofada” impede que você recorra a novos empréstimos quando surgir uma despesa inesperada, como conserto de carro ou uma consulta médica.
 

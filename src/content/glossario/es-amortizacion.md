@@ -16,7 +16,7 @@ Amortización es el acto de pagar el [valor](/es/glossario/es-valor-financiero) 
 
 ## Tipos de amortización
 
-### Tabela SAC (Sistema de Amortización Constante)
+### [Tabela SAC](/es/glossario/es-tabela-sac) (Sistema de Amortización Constante)
 
 - Amortización fija en todas las cuotas
 - Cuotas comienzan mayores y disminuyen

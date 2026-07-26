@@ -19,7 +19,7 @@ seo:
 
 ## Qué es
 
-La deuda es simplemente el dinero que una persona o empresa ha tomado prestado y que debe devolver en el futuro, generalmente con un costo extra llamado **interés** (el precio que paga por usar el dinero ajeno). En la vida cotidiana, la deuda aparece cuando usamos una tarjeta de crédito, solicitamos un préstamo personal o financiamos la compra de un coche. No es algo “malo” por sí mismo; lo que importa es cómo la manejamos y si la usamos para impulsar metas o para cubrir gastos que no podemos pagar.
+La deuda es simplemente el dinero que una persona o empresa ha tomado prestado y que debe devolver en el futuro, generalmente con un costo extra llamado **interés** (el precio que paga por usar el dinero ajeno). En la vida cotidiana, la deuda aparece cuando usamos una tarjeta de [crédito](/es/glossario/es-credito), solicitamos un préstamo personal o financiamos la compra de un coche. No es algo “malo” por sí mismo; lo que importa es cómo la manejamos y si la usamos para impulsar metas o para cubrir gastos que no podemos pagar.
 
 ![Qué es](/images/glossario/divida-inline-1.webp)
 
@@ -32,7 +32,7 @@ Cuando pides un préstamo, el banco o la entidad financiera te entrega una suma 
 - El monto total a pagar = principal + intereses acumulados.  
 - Las cuotas pueden ser fijas (mismo valor cada mes) o variables (cambian según la tasa).  
 - El plazo típico varía de 6 a 60 meses, según el tipo de deuda y la capacidad de pago.  
-- Si pagas antes, puedes ahorrar intereses, pero algunas instituciones cobran una **penalidad** por pago anticipado.
+- Si pagas antes, puedes ahorrar intereses, pero algunas instituciones cobran una **penalidad** por [pago anticipado](/es/glossario/es-pago-anticipado).
 
 ## Ventajas
 
@@ -58,7 +58,7 @@ Como todo en la vida, la deuda tiene su lado oscuro. Ignorar los riesgos puede l
 
 ## Ejemplos prácticos
 
-Supongamos que tienes un salario mensual neto de R$ 4.500 y decides financiar la compra de un coche de R$ 30.000 con un préstamo a 36 meses al 12 % anual (interés compuesto). La cuota mensual sería aproximadamente R$ 1.000. Con este gasto, la deuda representa el 22 % de tu ingreso, lo cual sigue siendo manejable.
+Supongamos que tienes un salario mensual neto de R$ 4.500 y decides financiar la compra de un coche de R$ 30.000 con un préstamo a 36 meses al 12 % anual ([interés compuesto](/es/glossario/es-interes-compuesto)). La cuota mensual sería aproximadamente R$ 1.000. Con este gasto, la deuda representa el 22 % de tu ingreso, lo cual sigue siendo manejable.
 
 - **Ejemplo 1:** Salario R$ 3.200 – préstamo personal de R$ 5.000 a 24 meses, 15 % anual. Cuota mensual ≈ R$ 250 (≈ 8 % del ingreso).  
 - **Ejemplo 2:** Salario R$ 6.800 – financiación de una laptop de R$ 4.500 a 12 meses, 10 % anual. Cuota mensual ≈ R$ 400 (≈ 6 % del ingreso).  
@@ -71,10 +71,10 @@ Si decides que la deuda puede ser una herramienta útil, sigue estos pasos para 
 - **Evalúa tu capacidad de pago:** Calcula cuánto puedes destinar a una cuota sin superar el 30 % de tu ingreso neto.  
 - **Compara tasas y condiciones:** Usa apps de comparación de préstamos (como un amigo que siempre revisa antes de firmar) para encontrar la tasa más baja y evitar cargos ocultos.  
 - **Lee el contrato con calma:** Busca palabras como “tasa anual equivalente” (TAE) y “costo total efectivo” (CTE) que indican el costo real del crédito.  
-- **Planifica un fondo de emergencia:** Reserva al menos tres meses de gastos antes de asumir una nueva deuda.  
+- **Planifica un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia):** Reserva al menos tres meses de gastos antes de asumir una nueva deuda.  
 - **Automatiza los pagos:** Programa la transferencia automática desde tu cuenta para no olvidar fechas de vencimiento.  
 
-**Consejo práctico:** Antes de firmar, simula el pago total en una hoja de cálculo o en una app; verás cuánto pagarás al final y podrás ajustar el plazo.  
+**Consejo práctico:** Antes de firmar, simula el pago total en una [hoja de cálculo](/es/posts/es-migrando-de-la-hoja-de-calculo-a-una-app-financiera) o en una app; verás cuánto pagarás al final y podrás ajustar el plazo.  
 
 **Consejo práctico:** Si tienes varias deudas, prioriza pagar primero la que tenga la tasa de interés más alta; eso reduce el costo total.  
 
@@ -82,4 +82,4 @@ Si decides que la deuda puede ser una herramienta útil, sigue estos pasos para 
 
 ## Empieza hoy
 
-No esperes a que la deuda se convierta en una carga. Con una pequeña planificación y la ayuda de herramientas simples, puedes transformar un préstamo en una oportunidad para crecer. ¡Da el primer paso hoy mismo y toma el control de tu futuro financiero!
+No esperes a que la deuda se convierta en una carga. Con una pequeña [planificación](/es/posts/es-orcamento-com-salario-minimo-dicas-praticas) y la ayuda de herramientas simples, puedes transformar un préstamo en una oportunidad para crecer. ¡Da el primer paso hoy mismo y toma el control de tu futuro financiero!

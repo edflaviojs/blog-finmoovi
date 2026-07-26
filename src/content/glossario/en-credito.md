@@ -27,7 +27,7 @@ Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, 
 
 ## How it works
 
-Quando você solicita crédito, a instituição avalia seu histórico de pagamento (score) e sua renda. Se tudo estiver ok, ela define um limite ou um valor total que pode ser liberado. Cada vez que você usa esse dinheiro, gera uma dívida que aparece na sua fatura ou no extrato. Você paga um valor mínimo (geralmente 5 % do total) ou o valor integral. Os juros incidem sobre o saldo que ficar aberto, e são calculados diariamente (taxa anual convertida para dia a dia). O pagamento pontual melhora seu score, facilitando novos empréstimos com juros menores; o atraso faz o contrário.
+Quando você solicita crédito, a instituição avalia seu histórico de pagamento (score) e sua renda. Se tudo estiver ok, ela define um limite ou um valor total que pode ser liberado. Cada vez que você usa esse dinheiro, gera uma [dívida](/en/glossario/en-divida-financial-glossary) que aparece na sua fatura ou no extrato. Você paga um valor mínimo (geralmente 5 % do total) ou o valor integral. Os juros incidem sobre o saldo que ficar aberto, e são calculados diariamente (taxa anual convertida para dia a dia). O pagamento pontual melhora seu score, facilitando novos empréstimos com juros menores; o atraso faz o contrário.
 
 ## Advantages
 
