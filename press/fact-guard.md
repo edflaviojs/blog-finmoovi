@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-07-25T07:13:26.722Z
-**Posts:** 198 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 32
+**Gerado em:** 2026-07-26T07:33:52.651Z
+**Posts:** 201 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 33
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -24,6 +24,9 @@
 
 **cotacoes-semana-4-maio-2026.md**
 - _Fique atento às notícias econômicas e ajuste seu plano de investimento de acordo com as mudanças no mercado._
+
+**dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.md**
+- _Ajuste a categoria de gastos para o próximo ano, aumentando ou diminuindo o teto conforme a realidade._
 
 **en-5-practical-steps-to-start-saving-for-black-friday-2026.md**
 - _According to the **Central Bank of Brazil**, consumption in November 2023 rose **13._
