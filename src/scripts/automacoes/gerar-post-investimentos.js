@@ -6,6 +6,7 @@ import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
+import { postCoreRules } from '../lib/prompt-post.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -115,6 +116,7 @@ publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: false
 translationKey: "${data.translationKey || ''}"
+scope: "universal"
 seo:
   metaTitle: "${data.title.replace(/"/g, '\\"')}"
   metaDescription: "${data.meta.replace(/"/g, '\\"')}"
@@ -183,23 +185,22 @@ Responda OBRIGATORIAMENTE neste formato exato (use os delimitadores):
 ---CONTEUDO---
 [conteúdo markdown completo]
 
-REGRAS DE ESTILO:
+${postCoreRules({ appName: config.app.name })}
+
+REGRAS DE FORMA (mantidas):
 - Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 - Tom: educador financeiro acessível, sem jargão desnecessário
 - Sempre explique termos técnicos na primeira aparição
-- Use exemplos com valores reais (investindo R$500, R$1.000, R$5.000)
 - Inclua simulações de rendimento quando relevante
 - NÃO dê recomendações de investimento específicas ("invista em X")
 - Use frases como "considere", "avalie se faz sentido para seu perfil"
 - Inclua uma seção "Riscos" ou "Cuidados"
-- NÃO comece com frases genéricas tipo "No cenário atual", "Você já se perguntou"
-- Comece direto com o conteúdo, como se estivesse no meio de uma conversa
 - O primeiro parágrafo deve responder diretamente à pergunta principal do tema em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 - Headers H2 curtos e diretos
 - Mínimo 900 palavras, 5-6 seções H2
 - O último H2: "Próximos passos" com ação prática
 - Depois de "Próximos passos", encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
-- Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, Tesouro Direto https://www.tesourodireto.com.br, CVM https://www.cvm.gov.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+- Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS relevantes ao tema (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 - Após o último parágrafo, inclua:
 
 ---

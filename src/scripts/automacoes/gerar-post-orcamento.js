@@ -6,12 +6,29 @@ import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
+import { postCoreRules } from '../lib/prompt-post.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
+
+// DRY_RUN (teste na nuvem): gera o conteúdo via API mas NÃO escreve arquivo/imagem,
+// não sincroniza, não commita — só imprime o resultado no log para inspeção.
+const DRY_RUN = process.env.DRY_RUN === '1' || process.env.DRY_RUN === 'true';
+
+/** Imprime o post gerado num bloco delimitado (modo DRY_RUN) — sem persistir nada. */
+function printDryRun({ title, meta, headline, keywords, content }) {
+  console.log('===== DRY_RUN OUTPUT START =====');
+  console.log(`TÍTULO: ${title}`);
+  console.log(`META: ${meta}`);
+  console.log(`HEADLINE: ${headline}`);
+  console.log(`KEYWORDS: ${Array.isArray(keywords) ? keywords.join(', ') : keywords}`);
+  console.log('----- CONTEÚDO (markdown) -----');
+  console.log(content);
+  console.log('===== DRY_RUN OUTPUT END =====');
+}
 
 const TOPICS = [
   { topic: 'como montar um orçamento familiar do zero', keywords: ['orçamento familiar', 'como fazer orçamento', 'controle financeiro família'] },
@@ -103,6 +120,7 @@ ${post.content}
 }
 
 function savePost(slug, data) {
+  if (DRY_RUN) { console.log(`🧪 DRY_RUN: pularia escrever ${slug}.md (nada gravado).`); return null; }
   const frontmatter = `---
 title: "${data.title.replace(/"/g, '\\"')}"
 description: "${data.meta.replace(/"/g, '\\"')}"
@@ -115,6 +133,7 @@ publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: false
 translationKey: "${data.translationKey || ''}"
+scope: "universal"
 seo:
   metaTitle: "${data.title.replace(/"/g, '\\"')}"
   metaDescription: "${data.meta.replace(/"/g, '\\"')}"
@@ -183,21 +202,19 @@ Responda OBRIGATORIAMENTE neste formato exato (use os delimitadores):
 ---CONTEUDO---
 [conteúdo markdown completo]
 
-REGRAS DE ESTILO:
-- Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
+${postCoreRules({ appName: config.app.name })}
+
+REGRAS DE FORMA (mantidas):
+- Headline de ticker: manchete ultra curta (MÁXIMO 40 caracteres) que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 - Tom: coach financeiro amigo, direto e motivador
-- Use exemplos com salários reais brasileiros (R$2.000 a R$8.000)
-- Inclua passo-a-passo numerado quando fizer sentido
-- Pelo menos uma "**Dica prática:**" destacada em negrito
+- Passo-a-passo numerado quando fizer sentido; pelo menos uma "**Dica prática:**" em negrito
 - Tabelas de exemplo quando relevante (divisão de orçamento, categorias de gastos)
-- NÃO comece com frases genéricas tipo "Você já se perguntou", "No cenário atual"
-- Comece direto com o conteúdo prático
-- O primeiro parágrafo deve responder diretamente à pergunta principal do tema em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
+- O primeiro parágrafo deve ancorar a cena/dor e ser autossuficiente e citável em 40-60 palavras (sem "neste artigo você verá")
 - Headers H2 como ações (verbos no imperativo ou infinitivo)
 - Mínimo 800 palavras, 4-6 seções H2
 - O último H2: "Comece com 5 minutos por dia"
 - Depois de "Comece com 5 minutos por dia", encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
-- Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, IBGE https://www.ibge.gov.br, Serasa https://www.serasa.com.br, Receita Federal https://www.gov.br/receitafederal). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+- Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS relevantes ao tema (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 - Após o último parágrafo, inclua:
 
 ---
@@ -266,6 +283,15 @@ REGRAS DE ESTILO:
     const slugPt = createSlug(title);
 
     console.log(`✅ PT: ${title}`);
+
+    // DRY_RUN: já temos o conteúdo gerado — imprime e encerra ANTES de gerar
+    // imagem, traduzir, linkar ou commitar. Nada é escrito/persistido.
+    if (DRY_RUN) {
+      printDryRun({ title, meta, headline, keywords: allKeywords, content });
+      console.log('🧪 DRY_RUN concluído: nenhum arquivo, imagem, sincronização ou commit.');
+      return;
+    }
+
     const imagePath = await generateCoverImage(title, slugPt, 'posts');
     const processed = await insertInlineImages(content, slugPt);
 

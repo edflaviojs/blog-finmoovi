@@ -320,6 +320,7 @@ readingTime: ${Math.max(3, Math.ceil(body.split(/\s+/).length / 200))}
 featured: false
 locale: "${locale}"
 translationKey: "${translationKey}"
+scope: "br-only"
 seo:
   metaTitle: "${title}"
   metaDescription: "${descriptions[locale]}"

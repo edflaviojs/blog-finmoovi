@@ -9,6 +9,7 @@ import { saveSVGImage } from './svg-generator.js';
 import { config } from '../../../site.config.ts';
 import { FACT_GUARD_PROMPT } from '../lib/fact-guard.js';
 import { CURRENT_YEAR } from '../lib/year-guard.js';
+import { postCoreRules } from '../lib/prompt-post.js';
 
 // Provedores de geração de texto (todos compatíveis com a API OpenAI), em
 // ordem de prioridade/fallback. Cada um se auto-habilita conforme as
@@ -168,19 +169,16 @@ ${avoidThemes}
 ${FACT_GUARD_PROMPT}
 Escreva um artigo de blog sobre: "${topic}"
 
-REGRAS DE ESTILO (obrigatórias):
+${postCoreRules({ appName: config.app.name })}
+
+REGRAS DE FORMA (mantidas):
 - NÃO use "Introdução" ou "Conclusão" como títulos de seção
-- NÃO comece com frases genéricas tipo "Você já se perguntou", "No cenário atual", "Neste artigo"
-- Comece direto com o conteúdo, como se estivesse no meio de uma conversa
-- O primeiro parágrafo deve responder diretamente à pergunta principal do tema em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
-- Use tom conversacional mas informativo — como um amigo que entende de finanças
 - Inclua pelo menos uma "Dica prática" destacada com negrito (ex: **Dica prática:** ...)
-- Use exemplos com valores reais em R$ (salários de R$3.000 a R$8.000, gastos do dia a dia)
 - Pode usar listas, mas não abuse — alterne com parágrafos densos
 - Headers H2 devem ser frases curtas e diretas, não perguntas genéricas
 - O último H2 deve ser "Comece hoje" com um parágrafo motivacional curto e direto
 - Depois de "Comece hoje", encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
-- Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, Tesouro Direto https://www.tesourodireto.com.br, IBGE https://www.ibge.gov.br, Serasa https://www.serasa.com.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+- Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS relevantes ao tema (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 - Após o último parágrafo, inclua esta CTA exata (com a linha horizontal antes):
 
 ---

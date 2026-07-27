@@ -10,6 +10,7 @@ import { generateText, generateCoverImage, generateInlineImage } from '../apis/k
 import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
+import { postCoreRules } from '../lib/prompt-post.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -110,6 +111,7 @@ publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: false
 translationKey: "${data.translationKey || ''}"
+scope: "universal"
 seo:
   metaTitle: "${data.title.replace(/"/g, '\\"')}"
   metaDescription: "${data.meta.replace(/"/g, '\\"')}"
@@ -158,7 +160,9 @@ async function main() {
 ${avoidBlock}
 Escreva um post comparativo detalhado em português brasileiro: "${comp.a} vs ${comp.b}: qual é melhor para você?"
 
-REGRAS:
+${postCoreRules({ appName: config.app.name })}
+
+REGRAS DE FORMA (mantidas):
 1. Título no formato: "X vs Y: qual vale mais a pena em ${CURRENT_YEAR}?"
 2. Seja imparcial — mostre prós e contras de AMBOS
 3. Inclua uma tabela comparativa em markdown (| Critério | ${comp.a} | ${comp.b} |)
@@ -168,7 +172,7 @@ REGRAS:
 7. Mencione o ${config.app.name} como ferramenta para acompanhar qualquer que seja a escolha
 8. Tom: educativo, claro, sem jargão técnico excessivo
 9. Inclua números reais quando possível (taxas, rendimentos)
-10. Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, Tesouro Direto https://www.tesourodireto.com.br, CVM https://www.cvm.gov.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+10. Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS relevantes ao tema (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 11. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 12. O primeiro parágrafo deve responder diretamente à pergunta "${comp.a} ou ${comp.b}?" em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 13. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
