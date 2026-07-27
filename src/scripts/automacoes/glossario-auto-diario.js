@@ -183,11 +183,13 @@ ${ptPost.content}
     console.log('⏳ Aguardando 30s para evitar rate limit...');
     await new Promise(r => setTimeout(r, 30000));
     const enPost = await generateGlossaryTerm(selectedTerm, 'en');
-    const enSlug = sanitizeFilename('en-' + slugify(enPost.title));
+    // Slug do TERMO TRADUZIDO e limpo; prefixo 'en-' FORA do slugify e nunca do title
+    // (para não arrastar o sufixo "- Financial Glossary" para dentro da URL).
+    const enSlug = 'en-' + slugify(enPost.term);
     const enFilename = `${enSlug}.md`;
 
     writeFileSync(join(GLOSSARIO_DIR, enFilename), `---
-term: "${selectedTerm}"
+term: "${enPost.term.replace(/"/g, '\\"')}"
 definition: "${enPost.description.replace(/"/g, '\\"')}"
 title: "${enPost.title}"
 description: "${enPost.description}"
@@ -213,11 +215,13 @@ ${enPost.content}
     console.log('⏳ Aguardando 30s para evitar rate limit...');
     await new Promise(r => setTimeout(r, 30000));
     const esPost = await generateGlossaryTerm(selectedTerm, 'es');
-    const esSlug = sanitizeFilename('es-' + slugify(esPost.title));
+    // Slug do TERMO TRADUZIDO e limpo; prefixo 'es-' FORA do slugify e nunca do title
+    // (para não arrastar o sufixo "- Glosario Financiero" para dentro da URL).
+    const esSlug = 'es-' + slugify(esPost.term);
     const esFilename = `${esSlug}.md`;
 
     writeFileSync(join(GLOSSARIO_DIR, esFilename), `---
-term: "${selectedTerm}"
+term: "${esPost.term.replace(/"/g, '\\"')}"
 definition: "${esPost.description.replace(/"/g, '\\"')}"
 title: "${esPost.title}"
 description: "${esPost.description}"

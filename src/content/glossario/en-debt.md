@@ -36,7 +36,7 @@ Quando você contrai uma dívida, duas coisas acontecem: o valor principal (o qu
 
 ## Advantages
 
-Mesmo que a palavra “dívida” cause medo, ela pode ser uma ferramenta útil quando usada com responsabilidade. O principal benefício é a possibilidade de adquirir algo que você ainda não tem dinheiro suficiente para pagar à vista, como um carro ou a própria casa. Além disso, pagar as contas em dia ajuda a construir um histórico de [crédito](/en/glossario/en-credito) sólido, o que facilita a obtenção de novos empréstimos com condições melhores.
+Mesmo que a palavra “dívida” cause medo, ela pode ser uma ferramenta útil quando usada com responsabilidade. O principal benefício é a possibilidade de adquirir algo que você ainda não tem dinheiro suficiente para pagar à vista, como um carro ou a própria casa. Além disso, pagar as contas em dia ajuda a construir um histórico de [crédito](/en/glossario/en-credit) sólido, o que facilita a obtenção de novos empréstimos com condições melhores.
 
 ![Advantages](/images/glossario/divida-inline-3.webp)
 
