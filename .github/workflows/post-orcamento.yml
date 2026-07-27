@@ -52,7 +52,7 @@ jobs:
         run: node src/scripts/automacoes/gerar-post-orcamento.js
 
       - name: Auto-sincronizar i18n (rede de segurança)
-        if: ${{ inputs.dry_run != 'true' }}
+        if: ${{ !inputs.dry_run }}
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
@@ -64,11 +64,11 @@ jobs:
         run: node src/scripts/validacao/sincronizar-i18n.js
 
       - name: Validar consistência i18n
-        if: ${{ inputs.dry_run != 'true' }}
+        if: ${{ !inputs.dry_run }}
         run: node src/scripts/validacao/validar-i18n.js
 
       - name: Push changes
-        if: ${{ inputs.dry_run != 'true' }}
+        if: ${{ !inputs.dry_run }}
         run: |
           git pull --rebase origin main || true
           if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
