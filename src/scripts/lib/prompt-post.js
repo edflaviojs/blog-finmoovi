@@ -24,6 +24,7 @@ export function postCoreRules({ appName }) {
   return `
 ABERTURA (situação-primeiro, obrigatória):
 - Comece com um APERTO real que o leitor reconhece — uma cena/dor concreta do dia a dia. NUNCA abra com "X é...", "No cenário atual" ou "Você já se perguntou".
+- O gancho de abertura é um PARÁGRAFO corrido (texto normal), NUNCA um heading: não use "#", "##" nem "###" na primeira linha do conteúdo.
 - Explique o conceito ATRAVÉS dessa situação (não como verbete de dicionário).
 - Mostre o ${app} resolvendo o problema de forma orgânica, e feche com uma micro-ação de 5 minutos dentro do app.
 
