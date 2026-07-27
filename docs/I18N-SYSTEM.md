@@ -98,19 +98,34 @@ const localeSlug = locale === 'pt' ? slug : locale + '-' + slugify(post.title);
 
 ## 5. Validação (Trava de Build)
 
-### Comando
+### Comandos
+
+⚠️ **São DOIS validadores diferentes**, e confundi-los já causou um incidente:
+uma regressão passou porque foi validada com um e enviada para produção com o
+outro (27/07).
 
 ```bash
-npm run validate:i18n
+npm run validate:i18n         # roda OS DOIS (é este que você deve usar antes de commitar)
+npm run validate:i18n:sync    # scripts/validate-i18n-sync.js    → sincronização + guard anti-âncora
+npm run validate:i18n:posts   # src/scripts/validacao/validar-i18n.js → pares, contagem, canibalização
 ```
+
+O `:posts` é o que **19 workflows de geração** executam como trava antes do push
+— eles chamam o ficheiro directamente por caminho, não via `npm run`.
 
 ### Quando executa
 
-Automaticamente antes de cada build (definido em `package.json`):
+Antes de cada build (`package.json`) — note que o build usa **apenas o `:sync`**:
 
 ```json
-"build": "npm run validate:i18n && npm run generate && astro build && npm run validate:schema"
+"build": "npm run validate:i18n:sync && npm run validate:slugs && npm run generate && astro build && npm run validate:schema"
 ```
+
+**Porquê só o `:sync` no build:** o build é o que o Cloudflare Pages corre para
+publicar o site. O `:posts` tem verificações voláteis (canibalização, lang-guard)
+que um commit de bot pode disparar — se estivesse no build, uma falha dessas
+impediria a **publicação do site inteiro**, não apenas um workflow. Decisão
+consciente do dono (27/07), não esquecimento.
 
 ### O que verifica
 
@@ -139,7 +154,9 @@ Automaticamente antes de cada build (definido em `package.json`):
 
 Executado em PRs que tocam `src/content/posts/**` ou `src/content/glossario/**`:
 
-1. Roda `npm run validate:i18n`
+1. Roda `npm run validate:i18n:sync` (só o `:sync` — pelo mesmo motivo do build:
+   o `:posts` varre o repositório inteiro, então um problema pré-existente num
+   post antigo bloquearia um PR que nem lhe tocou)
 2. Verifica ficheiros novos/renomeados EN/ES contra padrões de slug PT
 3. Se detecta palavras PT no slug → PR bloqueado
 
@@ -149,7 +166,8 @@ Executado em PRs que tocam `src/content/posts/**` ou `src/content/glossario/**`:
 
 | Script | Comando | O que faz |
 |--------|---------|-----------|
-| `validate-i18n-sync.js` | `npm run validate:i18n` | Trava de build — valida sincronização i18n |
+| `scripts/validate-i18n-sync.js` | `npm run validate:i18n:sync` | Trava de build e do gate de PR — sincronização i18n + guard anti-âncora local |
+| `src/scripts/validacao/validar-i18n.js` | `npm run validate:i18n:posts` | Trava de push de **19 workflows de geração** (chamado por caminho, não via npm) — pares por `translationKey`, contagem por locale, duplicatas, canibalização, lang-guard |
 | `ping-search-engines.js` | `npm run ping:sitemap` | Notifica Google/Bing sobre sitemap atualizado |
 | `audit-content-i18n.js` | `node scripts/audit-content-i18n.js` | Audita qualidade i18n do conteúdo existente |
 | `fix-i18n-content-batch.js` | Via workflow ou manual | Corrige conteúdo EN/ES em batch (adaptação cultural) |

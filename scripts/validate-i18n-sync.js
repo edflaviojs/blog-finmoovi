@@ -197,8 +197,13 @@ function validateDir(dir, useTranslationKey) {
     if (translationGroups[groupKey][data.locale])
       errors.push("[ERRO] " + file + ": chave " + groupKey + " duplicada para locale " + data.locale);
     translationGroups[groupKey][data.locale] = file;
-    // O scope da peça PT (mãe) define se o grupo exige par EN/ES.
-    if (data.locale === "pt") groupScope[groupKey] = data.scope || "universal";
+    // O scope da peça-mãe (o locale padrão do blog) define se o grupo exige par.
+    // config.defaultLocale, e não "pt" hardcoded: este é um template reutilizável
+    // e um blog com idioma-base diferente nunca preencheria o groupScope — todo
+    // grupo cairia no default "universal" e as peças locais voltariam a exigir
+    // par. Mesmo contrato de validar-i18n.js e lib/i18n-sync.js, que já leem o
+    // config.
+    if (data.locale === config.defaultLocale) groupScope[groupKey] = data.scope || "universal";
 
     // IMPLEMENTACAO23 Fase 6 — âncora local proibida em peça universal (TODOS os
     // locales; PT universal também deve usar valores relativos, REGRA 17).
