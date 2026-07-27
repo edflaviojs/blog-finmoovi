@@ -28,8 +28,9 @@ const OUTPUT_DIR = join(dirname(fileURLToPath(import.meta.url)), 'output');
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // Cerebras tem 60K TPM e cada tentativa custa até ~19K tokens (prompt + maxTokens).
-// Sem pausa, 4 tentativas em rajada somam ~77K e estouram a janela de 1 minuto.
-// 25s de espaçamento mantém no máximo 3 tentativas por janela (~57K).
+// Sem pausa, 4 tentativas em rajada esvaziam o orçamento e disparam 429 (visto no
+// log de 26/07). O limite NÃO é janela fixa de 1 minuto: é token bucket contínuo,
+// que repõe ~1K tok/s — 25s devolvem ~25K, mais que o custo de uma tentativa.
 const TPM_COOLDOWN_MS = 25000;
 
 const args = Object.fromEntries(

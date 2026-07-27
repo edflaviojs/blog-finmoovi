@@ -93,9 +93,12 @@ export async function generateText(prompt, options = {}) {
     // Orçamento por requisição: provedores com tier de tokens-por-minuto contam
     // prompt + max_tokens contra o MESMO teto. Estimar antes evita queimar uma
     // chamada (e um 413 opaco) num provedor que comprovadamente não cabe.
-    // O divisor 8 é deliberadamente generoso: o maior chars/token medido em
-    // prosa pt-BR compressível foi ~5,8, então dividir por 8 nunca superestima
-    // os tokens reais — só pulamos quando NÃO cabe sob nenhuma tokenização.
+    // O divisor 8 é deliberadamente generoso: os prompts REAIS deste projeto
+    // comprimem a ~3,3 chars/token (medido pelo 413 do Groq em 26/07 — 21.362
+    // chars de prompt = 6.408 tokens), então /8 SUBestima com folga e nunca
+    // pula um provedor que caberia. O preço é o inverso: pode deixar passar
+    // uma chamada que estoura de verdade — mas aí o 413 cai no tratamento de
+    // erro logo abaixo e segue pro próximo provedor, como já era antes.
     if (provider.tpmLimit) {
       const estPrompt = Math.ceil((config.ai.personality.length + prompt.length) / 8);
       const estRequest = estPrompt + maxTokens;

@@ -397,7 +397,10 @@ async function main() {
           // a cena JÁ TEM áudio válido da 1ª passada — se a re-síntese falhar (provedor
           // fixo, sem escalada), mantemos o áudio original em vez de derrubar o job
           // inteiro por causa de uma voz que ficaria inconsistente nesta cena só.
-          console.log(`  ⚠ cena ${outScene.id}: re-síntese com ${unifiedProvider} falhou (${err.message}) — mantendo o áudio original (voz pode variar nesta cena)`);
+          // ::warning:: (e não console.log simples) porque o GitHub destaca isso na
+          // interface do run: o áudio original é mantido, mas o timing.json vai
+          // afirmar UMA voz para o vídeo e esta cena ficará com a voz antiga.
+          console.log(`::warning::cena ${outScene.id}: re-síntese com ${unifiedProvider} falhou (${err.message}) — áudio original mantido; a voz varia NESTA cena e o timing.json não registra isso`);
           continue;
         }
         const { audio, ext, voice, provider: providerUsed, whisper, speechEnd } = resynth;
