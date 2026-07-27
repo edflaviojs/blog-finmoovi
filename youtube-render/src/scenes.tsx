@@ -580,39 +580,50 @@ const SceneCta: React.FC<{ scene: Scene }> = ({ scene }) => {
   );
 };
 
-// OUTRO = gancho EXPLÍCITO para o próximo vídeo (card + "próximo vídeo" + seta →).
-const SceneOutro: React.FC<{ scene: Scene; nextTitle?: string }> = ({ scene, nextTitle }) => {
+// Bordão oficial do canal (espelha BORDAO de schema-short.js) — statement de fecho.
+const BORDAO_CANAL = 'Dinheiro sem controle é dinheiro dos outros.';
+
+// OUTRO = fechamento HONESTO on-brand: reflexão forte (onScreenText) + o bordão
+// do canal em gradiente + nudge sutil de inscrição (sino + @handle). NÃO promete
+// vídeo específico — a fila de próximos temas é sorteada depois (rodízio de
+// keywords, IMPLEMENTACAO23 Fase 4). O antigo card "PRÓXIMO ▶" (que renderizava
+// nextVideoTitle, agora sempre "") e o texto "Te explico no próximo vídeo" foram
+// removidos porque a promessa de tema específico virou mentira.
+const SceneOutro: React.FC<{ scene: Scene }> = ({ scene }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = spring({ frame, fps, config: { damping: 16 } });
-  const cardX = interpolate(s, [0, 1], [120, 0]);
+  const rise = interpolate(s, [0, 1], [40, 0]);
   const opacity = interpolate(frame, [0, 12], [0, 1], { extrapolateRight: 'clamp' });
-  const arrow = Math.sin(frame / 8) * 12;
+  // O nudge de inscrição entra um pouco depois, com leve balanço do sino.
+  const nudge = spring({ frame: Math.max(0, frame - 14), fps, config: { damping: 18 } });
+  const nudgeScale = interpolate(nudge, [0, 1], [0.8, 1]);
+  const bell = Math.sin(frame / 7) * 8;
   return (
     <div style={{ textAlign: 'center' }}>
       <div style={{ fontFamily: DISPLAY, fontSize: 62, fontWeight: 900, color: BRAND.text, lineHeight: 1.15 }}>
         {scene.onScreenText}
       </div>
-      <div style={{ marginTop: 20, fontFamily: BODY, fontWeight: 800, fontSize: 40, ...gradientText }}>
-        Te explico no próximo vídeo
-      </div>
-      {/* card do próximo vídeo */}
+      {/* bordão do canal como statement de fecho (gradiente da marca) */}
       <div style={{
-        marginTop: 40, display: 'flex', alignItems: 'center', gap: 24, justifyContent: 'center',
-        transform: `translateX(${cardX}px)`, opacity,
+        marginTop: 28, transform: `translateY(${rise}px)`, opacity,
+        fontFamily: DISPLAY, fontWeight: 900, fontSize: 46, lineHeight: 1.18,
+        maxWidth: 900, marginLeft: 'auto', marginRight: 'auto', ...gradientText,
       }}>
-        <div style={{
-          width: 360, height: 200, borderRadius: 22, background: BRAND.panel,
-          border: `2px solid ${BRAND.violet}`, boxShadow: '0 14px 50px rgba(139,92,246,0.4)',
-          display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 12, padding: 20,
-        }}>
-          <FinMooviIcon size={54} idSuffix="next" />
-          <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 30, color: BRAND.text }}>{nextTitle || 'Próximo vídeo'}</div>
-          <div style={{ fontFamily: BODY, fontWeight: 700, fontSize: 22, color: BRAND.sub }}>PRÓXIMO ▶</div>
-        </div>
-        <svg width="90" height="90" viewBox="0 0 100 100" style={{ transform: `translateX(${arrow}px)` }}>
-          <path d="M20 50 L74 50 M52 28 L78 50 L52 72" stroke={BRAND.cyan} strokeWidth="11" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        {BORDAO_CANAL}
+      </div>
+      {/* nudge sutil de inscrição — NÃO nomeia/prometa tema do próximo vídeo */}
+      <div style={{
+        marginTop: 44, transform: `scale(${nudgeScale})`, display: 'inline-flex', alignItems: 'center', gap: 16,
+        padding: '16px 32px', borderRadius: 999, border: `3px solid ${BRAND.cyan}`,
+        background: 'rgba(34,211,238,0.10)', fontFamily: BODY, fontWeight: 800, fontSize: 42, color: BRAND.text,
+      }}>
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" style={{ transform: `rotate(${bell}deg)`, transformOrigin: '50% 20%' }}>
+          <path d="M12 3a5 5 0 0 0-5 5v3.5c0 .8-.3 1.6-.9 2.2L5 15h14l-1.1-1.3c-.6-.6-.9-1.4-.9-2.2V8a5 5 0 0 0-5-5Z" fill={BRAND.cyan} />
+          <path d="M10 18a2 2 0 0 0 4 0" stroke={BRAND.cyan} strokeWidth="2" strokeLinecap="round" />
         </svg>
+        <span>Inscreva-se</span>
+        <span style={gradientText}>@FinMoovi</span>
       </div>
     </div>
   );
@@ -1548,7 +1559,7 @@ const ShotSfxTrack: React.FC<{ fires: ShotSfxFire[] }> = ({ fires }) => {
 };
 
 // Dispatcher — o role tem prioridade (cta/outro têm cena própria); senão usa visual.type.
-export const SceneRenderer: React.FC<{ scene: Scene; nextTitle?: string; timing?: SceneTiming | null }> = ({ scene, nextTitle, timing }) => {
+export const SceneRenderer: React.FC<{ scene: Scene; timing?: SceneTiming | null }> = ({ scene, timing }) => {
   const { fps } = useVideoConfig();
   // Mesmo cue (revealFrameFor) que o SceneShell usa pro punch — repassado ao
   // SceneChart pra sincronizar o DESENHO da curva com a fala, não só o soco.
@@ -1560,7 +1571,7 @@ export const SceneRenderer: React.FC<{ scene: Scene; nextTitle?: string; timing?
   }
   const inner = (() => {
     if (scene.role === 'cta') return <SceneCta scene={scene} />;
-    if (scene.role === 'outro') return <SceneOutro scene={scene} nextTitle={nextTitle} />;
+    if (scene.role === 'outro') return <SceneOutro scene={scene} />;
     switch (scene.visual?.type) {
       case 'number': return <SceneNumber scene={scene} />;
       case 'chart': return <SceneChart scene={scene} revealFrame={revealFrame} durationFrames={durationFrames} />;

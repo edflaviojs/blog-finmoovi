@@ -223,6 +223,21 @@ function buildMarketingBlock(t) {
   });
 }
 
+// Moldura APP-FIRST (§3b-bis IMPLEMENTACAO20): a espinha FIXA problema→empatia→
+// vazamento→DEMO→micro-ação→outro-honesto, com a FEATURE/TELA DERIVADAS do tema/
+// ângulo (NUNCA hardcode). APP_SCREENS vem do schema (enum já existente).
+function buildAppFirstBlock(t) {
+  return `════════ MOLDURA APP-FIRST (a ESPINHA de todo vídeo — DINÂMICA) ════════
+Todo vídeo segue esta espinha FIXA, mas a FEATURE demonstrada é DERIVADA do tema/ângulo (NUNCA de uma lista pronta): escolha a funcionalidade do FinMoovi que resolve NATURALMENTE a dor de "${t.term}"${t.angle ? ` no ângulo "${t.angle}"` : ''} e demonstre-a na tela do app correspondente. Dois vídeos do MESMO tema podem usar features diferentes (ex.: lançar gasto por FOTO vs. por VOZ no mercado) — a demo nasce do ângulo.
+1. HOOK: a DOR VISÍVEL + um número real (a perda/o problema), já falando "${t.term}".
+2. BEAT-EMPATIA: valide a dor — POR QUE ela acontece (correria, pressa, cansaço, vergonha), SEM culpar ("não é preguiça sua, não").
+3. BEAT-VAZAMENTO: a consequência silenciosa que se acumula (é aqui que cabe o momento-história/metáfora animada da REGRA H).
+4. BEAT-DEMO: a FEATURE resolvendo EXATAMENTE a dor da cena 2, num shot "app" na tela mais coerente ("app" ∈ {${APP_SCREENS.join(', ')}}) — ex.: gasto por foto/voz → "smartcapture"; total do carrinho → "compras"; "pra onde foi o dinheiro?" → "fluxo"; simular juros → "calculadora"; saldo/alerta → "dashboard". A demo RESPONDE à fricção, não é enfeite.
+5. CTA (micro-ação): um passo RÁPIDO de SEGUNDOS ("fotografa a próxima nota", "fala o gasto ali no corredor") — NUNCA "em 5 minutos" nem "reserve um tempo". Feature grátis, link na bio.
+6. OUTRO honesto — ver REGRA 6 (não nomeia o próximo tema).
+Regra de ouro: se o vídeo não mostra um BOTÃO do app resolvendo a dor, não está pronto.`;
+}
+
 function buildPrompt(t, antiRep = '') {
   return `Você é um ROTEIRISTA CINEMATOGRÁFICO de finanças do canal FinMoovi (PT-BR): engaja, cria mistério, instiga emoção e prende a atenção do PRIMEIRO ao ÚLTIMO segundo. Escreve como uma CONVERSA DE AMIGO brasileiro — informal, fluido, com gírias leves — NUNCA formal, "escrito" ou robótico.
 Crie o roteiro de um YOUTUBE SHORT (vertical, motion graphics) sobre o TEMA abaixo.
@@ -240,6 +255,7 @@ CONTEÚDO DE APOIO (use os números/exemplos reais daqui):
 ${truncateBody(t.body)}
 ${antiRep ? `\n${antiRep}\n` : ''}
 ${buildMarketingBlock(t)}
+${buildAppFirstBlock(t)}
 ════════ REGRAS DE ESTRUTURA (o roteiro é rejeitado se violar) ════════
 ⚠️ os valores/números que aparecem nos EXEMPLOS destas regras (R$ 500, R$ 3,2 milhões, 25/35 anos etc.) pertencem a OUTRO vídeo — é PROIBIDO usá-los; use SOMENTE números reais do CONTEÚDO DE APOIO do termo atual ("${t.term}").
 1. Duração total entre 45 e 55 segundos (soma dos durationSec das cenas).
@@ -247,7 +263,7 @@ ${buildMarketingBlock(t)}
 3. HOOK (cold open, 0-5s): gancho FORTE e EMOCIONAL que já FALA a palavra-chave "${t.term}" nos primeiros segundos (o YouTube transcreve a voz — obrigatório p/ SEO). Crie urgência/curiosidade e emende num exemplo. TOM (EXEMPLO de formato — NUNCA copie os valores; imite só a energia): "Se você acha que ${t.term} é papo de rico… olha só esse número." Termine puxando o exemplo/número. Proibido definição/enrolação.
 4. É UMA HISTÓRIA SÓ: o vídeo desenvolve UM único assunto (o do gancho), do hook até a CTA. Cada cena COMPLEMENTA a anterior — PROIBIDO abrir assunto novo/desconexo. Os BEATS explicam o PORQUÊ/COMO dos números (dê NEXO), com os valores reais do conteúdo de apoio.
 5. CTA (penúltima cena, NUNCA no fim): recado rápido de valor indicando o app FinMoovi grátis OU a calculadora do blog. Volte já ao tom de conteúdo.
-6. OUTRO (última cena, open loop): SEM "tchau/obrigado/até a próxima". Reflexão forte + gancho de curiosidade que puxa o PRÓXIMO vídeo. Preencha "nextVideoTitle" com o tema do próximo Short.
+6. OUTRO (última cena, open loop): SEM "tchau/obrigado/até a próxima". Reflexão forte + um fechamento HONESTO. É PROIBIDO nomear/prometer o tema do próximo vídeo — a fila é sorteada depois, então prometer tema específico é MENTIRA. ESCOLHA UM destes 3 fechamentos e adapte ao tema deste vídeo: (a) curiosidade+inscrever: "…imagina os outros que eu tenho aqui — se inscreve e vem comigo."; (b) desafio-comentário: "…me conta aqui embaixo: qual foi o teu [gasto/erro] desse mês?"; (c) provocação-no-tema: "…e tem um detalhe que engana até quem se controla — guarda essa.". Deixe o campo "nextVideoTitle" VAZIO (""); NÃO invente tema.
 7. Insira EXATAMENTE 1 vez (de preferência num beat ou na CTA) o bordão do canal: "${BORDAO}"
 8. NARRAÇÃO — diga sempre "vídeo", NUNCA "Short"/"Shorts": é sempre "te explico no próximo vídeo", jamais "no próximo short" (a hashtag #Shorts fica só nos metadados do upload, nunca na fala).
 9. NA TELA (intro.frase, onScreenText, "text" de shots) números são SEMPRE algarismos (R$ 50, 75%, 3x) — por extenso é PROIBIDO na tela (na narração falada pode).
@@ -337,7 +353,7 @@ Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste f
   "term": "${t.term}",
   "category": "${t.category}",
   "keyword": "${t.term}",
-  "nextVideoTitle": "tema do próximo Short",
+  "nextVideoTitle": "",
   "intro": {
     "style": "pergunta",
     "frase": "*Você ACREDITA* que … *resultado-choque*???",

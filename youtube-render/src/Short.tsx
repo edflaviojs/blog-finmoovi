@@ -136,7 +136,7 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
   script.scenes.forEach((scene, i) => {
     children.push(
       <TransitionSeries.Sequence key={`s${i}`} durationInFrames={frames[i]}>
-        <SceneRenderer scene={scene} nextTitle={script.nextVideoTitle} timing={sceneTimingFor(timing, scene, i)} />
+        <SceneRenderer scene={scene} timing={sceneTimingFor(timing, scene, i)} />
       </TransitionSeries.Sequence>,
     );
     if (i < script.scenes.length - 1) {
