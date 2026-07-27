@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, mas que você pode pagar depois. Funciona como um [empréstimo](/en/glossario/en-emprestimo-financial-glossary) pré‑aprovado: o banco ou a fintech coloca um limite à sua disposição e você paga o que usar, acrescido de [juros](/en/glossario/en-interest) (o preço do dinheiro emprestado). Quando falamos de crédito, incluímos cartões de crédito, cheque especial, empréstimos pessoais e até financiamentos de carro ou casa. Em termos simples, é “comprar agora, pagar depois”, mas com a responsabilidade de devolver o valor + juros dentro do prazo combinado.
+Credit is the possibility of using money that isn’t yet in your account, but that you can pay back later. It works like a pre‑approved **loan**: the bank or fintech sets a limit for you to use, and you pay back what you use plus **interest** (the price of borrowed money). When we talk about credit, we include credit cards, overdraft (cheque especial), personal loans, and even car or house financing. In simple terms, it’s “buy now, pay later,” but with the responsibility of returning the amount + interest within the agreed timeframe.
 
 ![What it is](/images/glossario/credito-inline-1.webp)
 
@@ -27,14 +27,14 @@ Crédito é a possibilidade de usar dinheiro que ainda não está na sua conta, 
 
 ## How it works
 
-Quando você solicita crédito, a instituição avalia seu histórico de pagamento (score) e sua renda. Se tudo estiver ok, ela define um limite ou um valor total que pode ser liberado. Cada vez que você usa esse dinheiro, gera uma [dívida](/en/glossario/en-debt) que aparece na sua fatura ou no extrato. Você paga um valor mínimo (geralmente 5 % do total) ou o valor integral. Os juros incidem sobre o saldo que ficar aberto, e são calculados diariamente (taxa anual convertida para dia a dia). O pagamento pontual melhora seu score, facilitando novos empréstimos com juros menores; o atraso faz o contrário.
+When you request credit, the institution evaluates your payment history (score) and your income. If everything checks out, it sets a limit or a total amount that can be released. Each time you use that money, a **debt** is created that appears on your statement or bill. You pay a minimum amount (usually 5 % of the total) or the full amount. Interest accrues on the outstanding balance and is calculated daily (annual rate converted to a daily basis). Paying on time improves your score, making new loans easier and at lower interest; missing payments does the opposite.
 
 ## Advantages
 
-- **Flexibilidade:** você pode usar o crédito para emergências, compras planejadas ou investimentos sem precisar esperar a [poupança](/en/glossario/en-savings) crescer.  
-- **Construção de crédito:** pagamentos em dia aumentam seu score, abrindo portas para financiamentos maiores e com juros mais baixos.  
-- **Parcelamento sem juros:** alguns cartões oferecem parcelamento de até 12 vezes sem custo adicional, útil para compras de eletrodomésticos ou móveis.  
-- **Liquidez imediata:** ao contrário de um empréstimo tradicional, o limite já está disponível para usar a qualquer momento.
+- **Flexibility:** you can use credit for emergencies, planned purchases, or investments without having to wait for **savings** to grow.  
+- **Credit building:** on‑time payments raise your score, opening doors to larger financing with lower interest.  
+- **Interest‑free installments:** some cards offer up to 12 interest‑free installments, useful for buying appliances or furniture.  
+- **Immediate liquidity:** unlike a traditional loan, the limit is already available to use at any moment.
 
 ![Advantages](/images/glossario/credito-inline-3.webp)
 
@@ -42,33 +42,33 @@ Quando você solicita crédito, a instituição avalia seu histórico de pagamen
 
 ## Risks
 
-- **Juros altos:** se você deixar o saldo virar, os juros podem superar 300 % ao ano, corroendo seu orçamento.  
-- **Endividamento em cadeia:** usar cheque especial para pagar fatura do cartão cria uma bola de neve de dívidas.  
-- **Impacto no score:** atrasos ou pagamentos menores que o mínimo aumentam o risco de ter o nome incluído em serviços de proteção ao crédito.  
-- **Gastos impulsivos:** o acesso fácil ao dinheiro pode levar a compras desnecessárias, especialmente quando o limite é alto.
+- **High interest:** if you let the balance roll over, interest can exceed 300 % per year, eating into your budget.  
+- **Debt spiral:** using overdraft to pay a credit‑card bill creates a snowball of debt.  
+- **Score impact:** late or below‑minimum payments increase the risk of having your name listed in credit‑protection services.  
+- **Impulsive spending:** easy access to money can lead to unnecessary purchases, especially when the limit is high.
 
 ## Practical examples
 
-Imagine que você ganha R$4.500 por mês.  
+Imagine you earn R$4.500 per month.  
 
-- **Cartão de crédito:** você faz uma compra de R$1.200 em um eletrodoméstico e paga R$300 em 4 parcelas sem juros. O saldo restante fica livre para emergências.  
-- **Cheque especial:** ao precisar de R$800 para cobrir uma conta de luz atrasada, você usa o cheque especial, mas paga 12 % ao ano. Se pagar tudo em 30 dias, o custo extra será cerca de R$8.  
-- **Empréstimo pessoal:** com renda de R$6.000, você contrata um empréstimo de R$5.000 para reformar a casa, pagando 18 % ao ano em 24 parcelas. Cada parcela fica em torno de R$300, o que cabe no orçamento sem comprometer o restante do salário.
+- **Credit card:** you buy an appliance for R$1.200 and pay R$300 in 4 interest‑free installments. The remaining balance stays free for emergencies.  
+- **Overdraft:** needing R$800 to cover a past‑due electricity bill, you use the overdraft, but it costs 12 % per year. If you pay everything back in 30 days, the extra cost will be about R$8.  
+- **Personal loan:** with an income of R$6.000, you take a R$5.000 loan to remodel the house, paying 18 % per year in 24 installments. Each installment is around R$300, which fits the budget without compromising the rest of the salary.
 
-**Practical tip:** **Sempre compare a taxa de juros do cartão com a de um empréstimo pessoal; às vezes o empréstimo tem custo menor e parcelas fixas, facilitando o controle.**  
+**Practical tip:** **Always compare the credit‑card interest rate with that of a personal loan; sometimes the loan is cheaper and has fixed installments, making control easier.**  
 
-**Practical tip:** **Se o seu salário está entre R$3.000 e R$8.000, limite seu gasto mensal de crédito a no máximo 30 % da renda, assim você evita apertos no fim do mês.**  
+**Practical tip:** **If your salary is between R$3.000 and R$8.000, limit your monthly credit spending to no more than 30 % of your income, so you avoid tight spots at month‑end.**  
 
-**Practical tip:** **Use um app de controle financeiro (como o [Nubank](/en/glossario/en-nubank) ou o Guiabolso) para monitorar o saldo devedor em tempo real; isso ajuda a manter a disciplina e a perceber quando o limite está próximo de ser ultrapassado.**
+**Practical tip:** **Use a financial‑control app (like [Nubank](/en/glossario/en-nubank) or Guiabolso) to monitor the outstanding balance in real time; this helps keep discipline and notice when the limit is close to being exceeded.**  
 
 ## How to start
 
-1. **Cheque seu score:** acesse seu relatório de crédito gratuitamente em sites como Serasa ou Boa Vista. Um score acima de 600 já abre boas oportunidades.  
-2. **Escolha a modalidade que combina com seu objetivo:** se a necessidade é pontual, o cheque especial pode ser suficiente; para compras parceladas, prefira o cartão de crédito com programa de recompensas.  
-3. **Solicite o limite:** use o aplicativo do seu banco ou fintech; o processo costuma ser rápido, com aprovação em minutos.  
-4. **Defina um plano de pagamento:** anote no seu calendário a data de vencimento e o valor mínimo, e programe o pagamento automático para evitar esquecimentos.  
-5. **Monitore o uso:** abra a aba de despesas no app e veja quanto do limite já foi consumido; ajuste o comportamento se perceber que está perto do teto.
+1. **Check your score:** access your credit report for free on sites like Serasa or Boa Vista. A score above 600 already opens good opportunities.  
+2. **Choose the product that matches your goal:** if the need is occasional, overdraft may be enough; for installment purchases, prefer a credit card with a rewards program.  
+3. **Request the limit:** use your bank’s or fintech’s app; the process is usually quick, with approval in minutes.  
+4. **Set a payment plan:** write the due date and minimum amount in your calendar, and schedule automatic payment to avoid forgetting.  
+5. **Monitor usage:** open the expenses tab in the app and see how much of the limit has already been used; adjust your behavior if you notice you’re near the ceiling.
 
 ## Start today
 
-Não espere o próximo salário para começar a usar crédito de forma inteligente. Abra o app do seu banco, verifique seu limite disponível e faça um pequeno teste: compre um item de R$200 e pague a fatura integral na próxima data de vencimento. Você já deu o primeiro passo para construir um histórico de crédito sólido e, ao mesmo tempo, manter seu orçamento sob controle. Vamos lá, o futuro financeiro que você quer começa com uma decisão consciente hoje!
+Don’t wait for the next paycheck to start using credit wisely. Open your bank’s app, check your available limit, and do a small test: buy an item for R$200 and pay the full bill on the next due date. You’ve already taken the first step toward building a solid credit history while keeping your budget under control. Let’s go—your desired financial future starts with a conscious decision today!

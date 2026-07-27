@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Dívida é basicamente o que você deve a alguém – seja um banco, uma loja ou até um amigo. Quando você pega dinheiro emprestado ou compra algo a prazo, está criando uma dívida que precisa ser quitada no futuro, geralmente com [juros](/en/glossario/en-interest). Em termos simples, é como se você estivesse usando o salário de amanhã para pagar algo hoje.
+Debt is basically what you owe someone – whether a bank, a store, or even a friend. When you borrow money or buy something on credit, you’re creating a debt that needs to be paid off in the future, usually with [interest](/en/glossario/en-interest). In simple terms, it’s like using tomorrow’s salary to pay for something today.
 
 ![What it is](/images/glossario/divida-inline-1.webp)
 
@@ -27,57 +27,57 @@ Dívida é basicamente o que você deve a alguém – seja um banco, uma loja ou
 
 ## How it works
 
-Quando você contrai uma dívida, duas coisas acontecem: o valor principal (o que você pegou) e os juros (o “custo” de usar esse dinheiro). Os juros podem ser fixos (mesmo valor todo mês) ou variáveis (mudam conforme a taxa de referência). A forma mais comum de pagamento é a amortização, que divide o total em parcelas mensais.
+When you take on a debt, two things happen: the principal amount (what you borrowed) and the interest (the “cost” of using that money). Interest can be fixed (same amount every month) or variable (changes according to the reference rate). The most common payment method is amortization, which splits the total into monthly installments.
 
-- **Principal:** o valor que você realmente recebeu ou gastou.  
-- **Juros:** a taxa cobrada pelo credor, expressa em % ao mês ou ao ano.  
-- **Prazo:** tempo que você tem para pagar tudo, que pode ser de 6 a 60 meses, por exemplo.  
-- **Amortização:** cálculo que define quanto de cada parcela vai para o principal e quanto vai para os juros.  
+- **Principal:** the amount you actually received or spent.  
+- **Interest:** the rate charged by the lender, expressed as % per month or per year.  
+- **Term:** the time you have to pay everything, which can be, for example, 6 to 60 months.  
+- **Amortization:** calculation that determines how much of each installment goes to principal and how much goes to interest.  
 
 ## Advantages
 
-Mesmo que a palavra “dívida” cause medo, ela pode ser uma ferramenta útil quando usada com responsabilidade. O principal benefício é a possibilidade de adquirir algo que você ainda não tem dinheiro suficiente para pagar à vista, como um carro ou a própria casa. Além disso, pagar as contas em dia ajuda a construir um histórico de [crédito](/en/glossario/en-credito) sólido, o que facilita a obtenção de novos empréstimos com condições melhores.
+Even though the word “debt” can be scary, it can be a useful tool when used responsibly. The main benefit is the ability to acquire something you don’t yet have enough cash to pay for outright, such as a car or a house. In addition, paying bills on time helps build a solid [credit](/en/glossario/en-credito) history, which makes it easier to obtain new loans with better terms.
 
 ![Advantages](/images/glossario/divida-inline-3.webp)
 
 
 
-- **[Alavancagem](/en/glossario/en-leverage):** permite comprar bens de maior valor antes de acumular a [poupança](/en/glossario/en-savings) necessária.  
-- **Construção de crédito:** demonstração de responsabilidade financeira para instituições.  
-- **Flexibilidade de fluxo:** mantém dinheiro livre para emergências ou investimentos de curto prazo.  
+- **[Leverage](/en/glossario/en-leverage):** allows you to buy higher‑value assets before you have saved the necessary [savings](/en/glossario/en-savings).  
+- **Credit building:** demonstrates financial responsibility to institutions.  
+- **Cash‑flow flexibility:** keeps money free for emergencies or short‑term investments.  
 
 ## Risks
 
-A dívida também traz perigos que podem virar um ciclo de aperto financeiro. O principal risco é o pagamento de juros altos, que podem transformar um gasto de R$5.000 em um débito de quase R$7.000 ao final de dois anos. Se a renda cair ou surgirem despesas inesperadas, a falta de pagamento pode gerar multas, aumento da taxa de juros e até a negativação do nome nos órgãos de proteção ao crédito.
+Debt also brings dangers that can turn into a cycle of financial squeeze. The main risk is paying high interest, which can turn a R$5,000 expense into a debt of almost R$7,000 after two years. If income drops or unexpected expenses arise, missing payments can generate fines, higher interest rates, and even a negative record in credit‑protection agencies.
 
-- **Juros compostos:** juros que incidem sobre juros anteriores, ampliando a dívida rapidamente.  
-- **Endividamento excessivo:** comprometer mais de 30 % da renda mensal pode impedir a realização de outras metas.  
-- **Impacto no score:** atrasos reduzem a pontuação de crédito, dificultando novos financiamentos.  
+- **Compound interest:** interest that accrues on previously accrued interest, rapidly expanding the debt.  
+- **Excessive indebtedness:** committing more than 30 % of monthly income can prevent achieving other goals.  
+- **Score impact:** late payments lower your credit score, making new financing harder.  
 
 ## Practical examples
 
-Imagine que você ganha R$4.500 por mês e decide comprar um carro que custa R$30.000, financiado em 48 parcelas com juros de 1,5 % ao mês. Cada parcela ficará em torno de R$1.000. Se você pagar tudo em dia, o carro será seu ao final do prazo, mas você terá pago aproximadamente R$48.000, quase o dobro do preço à vista.  
+Imagine you earn R$4,500 per month and decide to buy a car that costs R$30,000, financed in 48 installments with 1.5 % interest per month. Each installment will be around R$1,000. If you pay everything on time, the car will be yours at the end of the term, but you will have paid roughly R$48,000, almost double the cash price.  
 
-Se, ao invés disso, você tem uma dívida de cartão de crédito de R$2.000 com juros de 12 % ao mês, a conta pode subir para mais de R$3.500 em apenas três meses se não houver pagamento.  
+If, instead, you have a credit‑card debt of R$2,000 with 12 % interest per month, the balance can rise to more than R$3,500 in just three months if no payment is made.  
 
-Para quem ganha R$7.000, um empréstimo pessoal de R$20.000 com taxa de 2 % ao mês pode ser viável, desde que a parcela não ultrapasse R$1.500 (cerca de 21 % da renda), permitindo ainda guardar [R$500](/en/posts/en-building-a-diversified-portfolio-with-r-500) para a reserva de emergência.
+For someone earning R$7,000, a personal loan of R$20,000 with a 2 % monthly rate can be viable, as long as the installment does not exceed R$1,500 (about 21 % of income), still allowing you to set aside [R$500](/en/posts/en-building-a-diversified-portfolio-with-r-500) for an emergency fund.
 
 ## How to start
 
-Antes de aceitar qualquer dívida, é fundamental analisar se o pagamento cabe no seu orçamento e se o custo (juros) vale a pena. Seguem passos práticos para começar de forma segura:
+Before accepting any debt, it’s essential to analyze whether the payment fits your budget and whether the cost (interest) is worth it. Here are practical steps to start safely:
 
-- **Faça o cálculo da parcela:** use a fórmula de amortização ou um app de finanças para saber exatamente quanto vai pagar por mês.  
-- **Compare taxas:** procure pelo menor Custo Efetivo Total (CET), que inclui juros, tarifas e seguros.  
-- **Monte um plano de pagamento:** reserve no orçamento a quantia da parcela antes de comprometer outros gastos.  
+- **Calculate the installment:** use the amortization formula or a finance app to know exactly how much you’ll pay each month.  
+- **Compare rates:** look for the lowest Total Effective Cost (CET), which includes interest, fees, and insurance.  
+- **Create a payment plan:** allocate the installment amount in your budget before committing other expenses.  
 
-**Practical tip:** **Sempre reserve pelo menos 10 % da sua renda mensal para a dívida, nunca mais que 30 %**, assim você mantém margem para imprevistos.  
+**Practical tip:** **Always set aside at least 10 % of your monthly income for the debt, never more than 30 %**, so you keep a margin for unforeseen events.  
 
-**Practical tip:** **Negocie a taxa de juros antes de assinar o contrato**; muitas vezes o banco aceita reduzir alguns pontos se você demonstrar que pesquisou outras opções.  
+**Practical tip:** **Negotiate the interest rate before signing the contract**; banks often agree to reduce a few points if you show you’ve researched other options.  
 
-**Practical tip:** **Use um app de controle financeiro** (como o Guiabolso ou o [Organizze](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f)) para acompanhar cada pagamento e evitar esquecimentos que geram multas.  
+**Practical tip:** **Use a financial control app** (like Guiabolso or [Organizze](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f)) to track each payment and avoid missed deadlines that generate fines.  
 
-Além disso, mantenha uma reserva de emergência equivalente a três a seis salários. Essa “almofada” impede que você recorra a novos empréstimos quando surgir uma despesa inesperada, como conserto de carro ou uma consulta médica.
+In addition, maintain an emergency reserve equivalent to three to six months of salary. This “cushion” prevents you from resorting to new loans when an unexpected expense arises, such as a car repair or a medical consultation.
 
 ## Start today
 
-A decisão de assumir ou eliminar uma dívida não precisa ser assustadora. Comece agora mesmo revisando seus extratos, calculando o real custo das parcelas e ajustando seu orçamento. Cada pequeno passo – seja pagar R$100 a mais na fatura do cartão ou renegociar a taxa do empréstimo – já é um avanço rumo a uma vida financeira mais tranquila. Você tem o controle; basta dar o primeiro passo.
+The decision to take on or eliminate a debt doesn’t have to be frightening. Start right now by reviewing your statements, calculating the real cost of the installments, and adjusting your budget. Every small step – whether paying R$100 extra on a credit‑card bill or renegotiating a loan’s rate – is progress toward a calmer financial life. You have control; just take the first step.
