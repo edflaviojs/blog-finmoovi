@@ -212,9 +212,16 @@ export async function synthesizeSpeech(text, { voices = VOICES, providerName } =
   if (!providers.length) {
     throw new Error('Nenhum provedor de TTS disponível (edge deveria estar sempre presente — verifique a dep msedge-tts).');
   }
+  // Quando o chamador pede um provedor específico, ele JÁ tem a própria lógica de
+  // escalada (ver tts-short.js) — reanexar os outros como fallback silencioso
+  // mascarava a escalada: piper falhava e caía de volta no edge sem ninguém saber.
   const ordered = providerName
-    ? [...providers.filter((p) => p.name === providerName), ...providers.filter((p) => p.name !== providerName)]
+    ? providers.filter((p) => p.name === providerName)
     : providers;
+
+  if (providerName && !ordered.length) {
+    throw new Error(`provedor "${providerName}" indisponível na cadeia atual (${providers.map((p) => p.name).join(', ')})`);
+  }
 
   const errors = [];
   for (const p of ordered) {

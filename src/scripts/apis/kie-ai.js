@@ -35,6 +35,7 @@ function getTextProviders() {
       url: 'https://api.cerebras.ai/v1/chat/completions',
       apiKey: process.env.CEREBRAS_API_KEY,
       model: 'gpt-oss-120b',
+      tpmLimit: 60000,
     });
   }
 
@@ -46,10 +47,12 @@ function getTextProviders() {
       url: 'https://api.groq.com/openai/v1/chat/completions',
       apiKey: groqKey,
       model: 'openai/gpt-oss-120b',
+      tpmLimit: 8000,
     });
   }
 
   // 3. Cloudflare Workers AI — rede de segurança (credenciais já existentes)
+  //    sem tpmLimit: o teto do Cloudflare é neurons/dia, não tokens por requisição.
   if (process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_AI_TOKEN) {
     providers.push({
       name: 'cloudflare',
@@ -86,6 +89,22 @@ export async function generateText(prompt, options = {}) {
   for (let p = 0; p < providers.length; p++) {
     const provider = providers[p];
     const useModel = (p === 0 && model) ? model : provider.model;
+
+    // Orçamento por requisição: provedores com tier de tokens-por-minuto contam
+    // prompt + max_tokens contra o MESMO teto. Estimar antes evita queimar uma
+    // chamada (e um 413 opaco) num provedor que comprovadamente não cabe.
+    // O divisor 8 é deliberadamente generoso: o maior chars/token medido em
+    // prosa pt-BR compressível foi ~5,8, então dividir por 8 nunca superestima
+    // os tokens reais — só pulamos quando NÃO cabe sob nenhuma tokenização.
+    if (provider.tpmLimit) {
+      const estPrompt = Math.ceil((config.ai.personality.length + prompt.length) / 8);
+      const estRequest = estPrompt + maxTokens;
+      if (estRequest > provider.tpmLimit) {
+        errors.push(`${provider.name}: pulado — request ~${estRequest} tok excede o teto de ${provider.tpmLimit} tok`);
+        console.log(`⏭️ ${provider.name}: pulado — request ~${estRequest} tok > teto ${provider.tpmLimit} tok do plano`);
+        continue;
+      }
+    }
 
     for (let attempt = 1; attempt <= retries; attempt++) {
       let response;

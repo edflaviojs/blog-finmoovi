@@ -25,6 +25,13 @@ const GLOSSARIO_DIR = join(process.cwd(), 'src', 'content', 'glossario');
 const TOPICS_PATH = join(process.cwd(), '.github', 'data', 'youtube-topics.json');
 const OUTPUT_DIR = join(dirname(fileURLToPath(import.meta.url)), 'output');
 
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// Cerebras tem 60K TPM e cada tentativa custa até ~19K tokens (prompt + maxTokens).
+// Sem pausa, 4 tentativas em rajada somam ~77K e estouram a janela de 1 minuto.
+// 25s de espaçamento mantém no máximo 3 tentativas por janela (~57K).
+const TPM_COOLDOWN_MS = 25000;
+
 const args = Object.fromEntries(
   process.argv.slice(2).filter(a => a.startsWith('--')).map(a => {
     const [k, ...v] = a.slice(2).split('=');
@@ -484,10 +491,12 @@ async function generateScript(t, { retries = 4, antiRep = '', recentContext = []
   let lastErr;
   let corrective = ''; // bloco corretivo acumulado da última reprovação de validação
   for (let attempt = 1; attempt <= retries; attempt++) {
+    if (attempt > 1) await sleep(TPM_COOLDOWN_MS);
     const prompt = corrective ? `${basePrompt}\n\n${corrective}` : basePrompt;
     // modelos raciocinadores (gpt-oss-120b) gastam tokens "pensando" antes do
-    // JSON — 2200 asfixiava e devolvia resposta vazia (HTTP 200, content vazio).
-    const raw = await generateText(prompt, { maxTokens: 6000, temperature: 0.6 });
+    // JSON — 2200 asfixiava e devolvia resposta vazia (HTTP 200, content vazio);
+    // 6000 voltou a asfixiar quando o prompt cresceu (26/07). Cerebras tem 60K TPM.
+    const raw = await generateText(prompt, { maxTokens: 12000, temperature: 0.6 });
     let script;
     try {
       script = extractJson(raw);

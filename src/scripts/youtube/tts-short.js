@@ -248,7 +248,16 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     const providerForThisAttempt = providerForAttempt(attempt);
 
-    ({ audio, ext, voice, provider: providerUsed } = await synthesizeSpeech(pronounce(narration, providerForThisAttempt), { providerName: providerForThisAttempt }));
+    try {
+      ({ audio, ext, voice, provider: providerUsed } = await synthesizeSpeech(pronounce(narration, providerForThisAttempt), { providerName: providerForThisAttempt }));
+    } catch (err) {
+      console.log(`  ⚠ cena ${id}${logSuffix}: ${providerForThisAttempt} falhou (${err.message}) — tentativa ${attempt}/${MAX_ATTEMPTS}`);
+      if (attempt === MAX_ATTEMPTS) {
+        throw new Error(`cena ${id}: TTS falhou em todos os provedores após ${MAX_ATTEMPTS} tentativas — último erro (${providerForThisAttempt}): ${err.message}`);
+      }
+      await sleep(RETRY_BACKOFF_MS[attempt - 1]);
+      continue;
+    }
     whisper = await transcribeWords(audio, { ext });
     speechEnd = whisper.length ? whisper[whisper.length - 1].end : fallbackDurationSec;
 
@@ -257,10 +266,10 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
       return { audio, ext, voice, provider: providerUsed, whisper, speechEnd, succeededAttempt };
     }
 
-    console.log(`  ⚠ cena ${id}${logSuffix}: áudio suspeito (${speechEnd.toFixed(2)}s p/ ${wordCount} palavras, mínimo ${minDurationSec.toFixed(2)}s) — tentativa ${attempt}/${MAX_ATTEMPTS}`);
+    console.log(`  ⚠ cena ${id}${logSuffix}: áudio suspeito via ${providerForThisAttempt} (${speechEnd.toFixed(2)}s p/ ${wordCount} palavras, mínimo ${minDurationSec.toFixed(2)}s, buffer ${audio.length} bytes) — tentativa ${attempt}/${MAX_ATTEMPTS}`);
 
     if (attempt === MAX_ATTEMPTS) {
-      throw new Error(`cena ${id}: áudio do TTS veio quebrado (${speechEnd.toFixed(2)}s para ${wordCount} palavras) após ${MAX_ATTEMPTS} tentativas`);
+      throw new Error(`cena ${id}: áudio do TTS veio quebrado via ${providerForThisAttempt} (${speechEnd.toFixed(2)}s para ${wordCount} palavras) após ${MAX_ATTEMPTS} tentativas`);
     }
     await sleep(RETRY_BACKOFF_MS[attempt - 1]);
   }
@@ -278,6 +287,7 @@ async function main() {
   // saber p/ quem "escalar" se as 3 tentativas com o provedor principal falharem.
   const providerChain = getTtsProviders().map((p) => p.name);
   console.log(`🎙️  TTS do Short "${slug}" — ${scenes.length} cenas · provedor: ${provider}\n`);
+  console.log(`🔊 cadeia de TTS: ${providerChain.join(' → ')} (${providerChain.length} provedor${providerChain.length === 1 ? '' : 'es'})\n`);
 
   // Aquecimento do edge-tts: a 1ª conexão do processo às vezes volta um stub
   // truncado (cold start). Esquentamos com uma micro-frase descartada ANTES da
@@ -372,15 +382,25 @@ async function main() {
         const wordCount = outScene.narration.split(/\s+/).filter(Boolean).length;
         const minDurationSec = minExpectedDurationSec(wordCount);
 
-        const { audio, ext, voice, provider: providerUsed, whisper, speechEnd } = await synthesizeValidatedScene({
-          id: outScene.id,
-          narration: outScene.narration,
-          wordCount,
-          minDurationSec,
-          fallbackDurationSec: outScene._fallbackDurationSec,
-          providerForAttempt: () => unifiedProvider, // sem escalada aqui — já é o provedor-alvo
-          logSuffix: ' [re-síntese p/ voz única]',
-        });
+        let resynth;
+        try {
+          resynth = await synthesizeValidatedScene({
+            id: outScene.id,
+            narration: outScene.narration,
+            wordCount,
+            minDurationSec,
+            fallbackDurationSec: outScene._fallbackDurationSec,
+            providerForAttempt: () => unifiedProvider, // sem escalada aqui — já é o provedor-alvo
+            logSuffix: ' [re-síntese p/ voz única]',
+          });
+        } catch (err) {
+          // a cena JÁ TEM áudio válido da 1ª passada — se a re-síntese falhar (provedor
+          // fixo, sem escalada), mantemos o áudio original em vez de derrubar o job
+          // inteiro por causa de uma voz que ficaria inconsistente nesta cena só.
+          console.log(`  ⚠ cena ${outScene.id}: re-síntese com ${unifiedProvider} falhou (${err.message}) — mantendo o áudio original (voz pode variar nesta cena)`);
+          continue;
+        }
+        const { audio, ext, voice, provider: providerUsed, whisper, speechEnd } = resynth;
 
         // remove o áudio antigo (extensão pode mudar entre provedores, ex.: mp3 → wav)
         const oldPath = join(audioDir, `scene-${outScene.id}.${outScene.audioFile.split('.').pop()}`);
