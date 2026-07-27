@@ -43,6 +43,9 @@ const PT_ONLY = new Set([
   'revisao', 'renda', 'fundos', 'imobiliarios',
   'lucro', 'margem', 'volatilidade', 'preco', 'reducao', 'financiamento',
   'dicas', 'economize', 'poupar',
+  // IMPLEMENTACAO23 1D — PT-exclusivas ausentes (bug empréstimo); ES difere.
+  'emprestimo', 'emprestimos', 'despesa', 'despesas', 'fatura',
+  'endividamento', 'mensalidade', 'prestacao',
 ]);
 
 /**
@@ -55,6 +58,9 @@ const SHARED_PT_ES = new Set([
   // Verbos/gerúndios idênticos em PT e ES (sem acento) — válidos em espanhol,
   // portanto só sinalizados em arquivos EN.
   'reorganizar', 'gastando', 'estrategias', 'montando',
+  // IMPLEMENTACAO23 1D — válidas em ES (só sinalizam EN); ex.: pegou en-credito.
+  'credito', 'gasto', 'gastos', 'saldo', 'salario', 'parcela',
+  'deposito', 'saque', 'extrato',
 ]);
 
 /**

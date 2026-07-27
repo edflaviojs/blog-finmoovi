@@ -399,3 +399,8 @@
 
 # Phase B2 — post ES retraduzido
 /es/posts/es-orcamento-com-salario-minimo-dicas-praticas  /es/posts/es-presupuesto-con-salario-minimo-consejos-practicos  301
+
+# IMPLEMENTACAO23 Fase 1C — slug limpo (term traduzido, sem sufixo)
+/en/glossario/en-emprestimo-financial-glossary  /en/glossario/en-loan  301
+/es/glossario/es-emprestimo-glosario-financiero  /es/glossario/es-prestamo  301
+/en/glossario/en-credito  /en/glossario/en-credit  301

@@ -36,7 +36,7 @@ When you take on a debt, two things happen: the principal amount (what you borro
 
 ## Advantages
 
-Even though the word “debt” can be scary, it can be a useful tool when used responsibly. The main benefit is the ability to acquire something you don’t yet have enough cash to pay for outright, such as a car or a house. In addition, paying bills on time helps build a solid [credit](/en/glossario/en-credito) history, which makes it easier to obtain new loans with better terms.
+Even though the word “debt” can be scary, it can be a useful tool when used responsibly. The main benefit is the ability to acquire something you don’t yet have enough cash to pay for outright, such as a car or a house. In addition, paying bills on time helps build a solid [credit](/en/glossario/en-credit) history, which makes it easier to obtain new loans with better terms.
 
 ![Advantages](/images/glossario/divida-inline-3.webp)
 

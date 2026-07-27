@@ -60,16 +60,23 @@ function createSlug(text) {
 
 async function generateTermContent(termData) {
   const prompt = `
-Escreva uma explicação completa para o glossário financeiro sobre: "${termData.term}"
+Escreva um verbete de glossário financeiro sobre: "${termData.term}"
 
-Requisitos:
-- Definição curta (1-2 frases) para o campo "definition"
-- Explicação detalhada (300-500 palavras)
-- Use headers H2 para organizar
-- Inclua exemplos práticos com valores em R$
-- Inclua uma tabela comparativa se relevante
-- Tom: educativo, simples, sem jargão desnecessário
-- Sugira 3 termos relacionados
+PÚBLICO E TOM:
+- Público UNIVERSAL (Brasil, Portugal e falantes de inglês/espanhol). NÃO escreva "no Brasil"/"brasileiro", NÃO use R$ nem qualquer moeda fixa. Use valores RELATIVOS ("cerca de um aluguel", "o preço de um café por dia").
+- Tom humano e situação-primeiro: comece pelo aperto real que a pessoa vive, não por "X é...".
+
+CAMPO "definition" (aparece no card):
+- 1-2 frases, universal e humana, SEM âncora local, SEM "vantagens/riscos/exemplos práticos" de dicionário.
+
+CORPO (300-500 palavras, headers H2):
+- Explique o conceito ATRAVÉS de uma situação cotidiana.
+- Amarre de forma orgânica a UMA funcionalidade real do FinMoovi (escolha a mais natural):
+  captura inteligente (foto de nota / voz) + categorização automática; multimoeda (BRL/USD/EUR);
+  fluxo de caixa e relatórios; planejamento mensal / metas; cartões de crédito / fatura;
+  modo compras (lista + total em tempo real); lembretes / alertas de saldo; offline / PWA / sincronização.
+- Feche com uma micro-ação de 5 minutos dentro do app.
+- Sugira 3 termos relacionados.
 
 Formato de saída:
 ---DEFINICAO---
@@ -87,7 +94,7 @@ Formato de saída:
   const contentMatch = result.match(/---CONTEUDO---\s*([\s\S]*?)$/);
 
   return {
-    definition: defMatch ? defMatch[1].trim() : `Explicação sobre ${termData.term} no contexto financeiro brasileiro.`,
+    definition: defMatch ? defMatch[1].trim() : `O que é ${termData.term} e como isso aparece no seu dia a dia.`,
     relatedTerms: relMatch ? relMatch[1].trim().split(',').map(t => t.trim()) : [],
     content: contentMatch ? contentMatch[1].trim() : result,
   };
