@@ -76,6 +76,7 @@ publishedAt: ${d.today}
 readingTime: ${Math.ceil((d.content || '').split(/\s+/).length / 200)}
 featured: false
 translationKey: "${d.translationKey}"
+scope: "universal"
 seo:
   metaTitle: "${d.title.replace(/"/g, '\\"')}"
   metaDescription: "${(d.meta || '').replace(/"/g, '\\"')}"

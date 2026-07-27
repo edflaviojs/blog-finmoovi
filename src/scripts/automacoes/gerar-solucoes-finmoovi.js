@@ -12,6 +12,7 @@ import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
+import { postCoreRules } from '../lib/prompt-post.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -248,6 +249,7 @@ publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: false
 translationKey: "${data.translationKey || ''}"
+scope: "universal"
 seo:
   metaTitle: "${data.title.replace(/"/g, '\\"')}"
   metaDescription: "${data.meta.replace(/"/g, '\\"')}"
@@ -320,7 +322,9 @@ PROBLEMA: ${topic.problem}
 FUNCIONALIDADE: ${topic.feature}
 CENÁRIO: ${topic.scenario}
 
-REGRAS DO POST:
+${postCoreRules({ appName: config.app.name })}
+
+REGRAS DE FORMA (mantidas):
 1. Título: pergunta empática que o leitor se identifica (ex: "Você também esquece de anotar seus gastos?"); se mencionar ano, use ${CURRENT_YEAR}
 2. Começa mostrando o PROBLEMA (empatia, "eu te entendo")
 3. Explica a dor de forma real e relatable (com exemplos do dia a dia)
@@ -333,7 +337,7 @@ REGRAS DO POST:
 10. Termina com CTA natural: "Experimente o ${config.app.name} grátis por 7 dias e veja a diferença."
 11. NÃO use "em conclusão" ou "para finalizar"
 12. Inclua uma seção comparando "antes vs depois" do ${config.app.name}
-13. Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, IBGE https://www.ibge.gov.br, Serasa https://www.serasa.com.br, Investopedia https://www.investopedia.com). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+13. Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS relevantes ao tema (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 14. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 15. O primeiro parágrafo deve responder diretamente à pergunta principal do problema em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 16. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada

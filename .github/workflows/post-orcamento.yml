@@ -5,6 +5,11 @@ on:
     # Segundas-feiras às 9h BRT (12h UTC)
     - cron: '0 12 * * 1'
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Modo teste: gera e imprime no log, sem escrever/sincronizar/commitar'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -37,6 +42,7 @@ jobs:
 
       - name: Gerar post de orçamento
         env:
+          DRY_RUN: ${{ inputs.dry_run }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
@@ -46,6 +52,7 @@ jobs:
         run: node src/scripts/automacoes/gerar-post-orcamento.js
 
       - name: Auto-sincronizar i18n (rede de segurança)
+        if: ${{ inputs.dry_run != 'true' }}
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
@@ -57,9 +64,11 @@ jobs:
         run: node src/scripts/validacao/sincronizar-i18n.js
 
       - name: Validar consistência i18n
+        if: ${{ inputs.dry_run != 'true' }}
         run: node src/scripts/validacao/validar-i18n.js
 
       - name: Push changes
+        if: ${{ inputs.dry_run != 'true' }}
         run: |
           git pull --rebase origin main || true
           if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then

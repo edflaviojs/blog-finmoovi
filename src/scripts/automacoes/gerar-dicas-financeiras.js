@@ -207,6 +207,7 @@ publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: ${isFeatured}
 translationKey: "${data.translationKey || ''}"
+scope: "universal"
 seo:
   metaTitle: "${data.title.replace(/"/g, '\\"')}"
   metaDescription: "${data.meta.replace(/"/g, '\\"')}"

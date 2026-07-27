@@ -124,6 +124,7 @@ readingTime: 3
 featured: false
 locale: "${locale}"
 translationKey: "resumo-semanal-dolar-r-${rates.USDBRL.replace('.', '-')}-semana-${weekNum}-${monthNames['pt'][today.getMonth()]}-${today.getFullYear()}"
+scope: "br-only"
 seo:
   metaTitle: "${locale === 'pt' ? `Cotações Semana ${weekNum} ${monthName} ${today.getFullYear()}: Dólar R$ ${rates.USDBRL}` : locale === 'en' ? `Quotes Week ${weekNum} ${monthName} ${today.getFullYear()}: Dollar R$ ${rates.USDBRL}` : `Cotizaciones Semana ${weekNum} ${monthName} ${today.getFullYear()}: Dólar R$ ${rates.USDBRL}`}"
   metaDescription: "${locale === 'pt' ? `Resumo semanal: dólar a R$ ${rates.USDBRL}, euro a R$ ${rates.EURBRL}. Análise e dicas para investidores.` : locale === 'en' ? `Weekly summary: dollar at R$ ${rates.USDBRL}, euro at R$ ${rates.EURBRL}. Analysis and tips for investors.` : `Resumen semanal: dólar a R$ ${rates.USDBRL}, euro a R$ ${rates.EURBRL}. Análisis y consejos para inversores.`}"

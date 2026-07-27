@@ -12,6 +12,7 @@ import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
+import { postCoreRules } from '../lib/prompt-post.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -125,6 +126,7 @@ publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: false
 translationKey: "${data.translationKey || ''}"
+scope: "universal"
 seo:
   metaTitle: "${data.title.replace(/"/g, '\\"')}"
   metaDescription: "${data.meta.replace(/"/g, '\\"')}"
@@ -200,7 +202,9 @@ async function main() {
 ${avoidBlock}
 Escreva um post de blog em português brasileiro sobre: ${topic.topic}
 
-REGRAS:
+${postCoreRules({ appName: config.app.name })}
+
+REGRAS DE FORMA (mantidas):
 1. Título atrativo com número ou pergunta (SEO-friendly); se mencionar ano, use ${CURRENT_YEAR}
 2. Tom prático e acessível, como um amigo dando dicas
 3. Mínimo 900 palavras, máximo 1500
@@ -208,9 +212,8 @@ REGRAS:
 5. Inclua dicas acionáveis numeradas quando aplicável
 6. Mencione o ${config.app.name} naturalmente como ferramenta que ajuda
 7. Termine com CTA: "Use o ${config.app.name} para controlar seus gastos e não se surpreender no fim do mês."
-8. Inclua dados reais brasileiros quando possível (IBGE, Bacen, Serasa)
-9. Inclua 1-2 links externos para fontes autoritativas relevantes ao tema (ex: Banco Central do Brasil https://www.bcb.gov.br, IBGE https://www.ibge.gov.br, Receita Federal https://www.gov.br/receitafederal, Serasa https://www.serasa.com.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
-10. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
+8. Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS relevantes ao tema (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+9. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 
 Responda neste formato:
 ---TITULO---

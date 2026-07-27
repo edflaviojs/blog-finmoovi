@@ -3,6 +3,7 @@ import { generateText, generateCoverImage, generateInlineImage } from '../apis/k
 import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
+import { postCoreRules } from '../lib/prompt-post.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -44,7 +45,7 @@ const PROMPTS_BY_TYPE = {
   alternativas: (topic) => `
 Escreva um post de blog: "${topic.title}"
 
-REGRAS:
+REGRAS DE FORMA (mantidas):
 1. Liste 5 alternativas reais ao app mencionado no título, incluindo o ${config.app.name} como uma delas
 2. Para cada alternativa: nome, descrição em 2 frases, 3 prós, 2 contras, se é grátis ou pago
 3. ${config.app.name} deve aparecer na posição 2 ou 3 (nunca primeiro — pareceria propaganda)
@@ -54,7 +55,7 @@ REGRAS:
 7. Tom: review imparcial de tech blogger
 8. Mínimo 1000 palavras, 5+ seções H2
 9. O último H2: "Qual escolher?" com recomendação por perfil
-10. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+10. Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 11. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 12. O primeiro parágrafo deve responder diretamente à pergunta principal do título em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 13. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
@@ -75,7 +76,7 @@ Responda neste formato:
   melhores: (topic) => `
 Escreva um post de blog: "${topic.title}"
 
-REGRAS:
+REGRAS DE FORMA (mantidas):
 1. Liste os apps mencionados no título com análise honesta de cada um
 2. ${config.app.name} aparece na lista (posição 2-4, nunca primeiro)
 3. Critérios de avaliação claros: facilidade de uso, preço, funcionalidades, segurança, suporte
@@ -84,7 +85,7 @@ REGRAS:
 6. Tom: jornalista de tecnologia testando apps
 7. Mínimo 1000 palavras, 5+ seções H2
 8. CTA final: "Quer testar o que funciona offline e por voz? ${config.app.name} tem 7 dias grátis"
-9. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+9. Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 10. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 11. O primeiro parágrafo deve responder diretamente à pergunta principal do título em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 12. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
@@ -105,7 +106,7 @@ Responda neste formato:
   comparacao: (topic) => `
 Escreva um post comparativo detalhado: "${topic.title}"
 
-REGRAS:
+REGRAS DE FORMA (mantidas):
 1. Análise imparcial — mostre onde ${config.app.name} ganha E onde o outro pode ser melhor
 2. Categorias de comparação: preço, funcionalidades, plataformas, segurança/privacidade, offline, interface
 3. Tabela comparativa detalhada em markdown
@@ -113,7 +114,7 @@ REGRAS:
 5. Seja honesto — credibilidade gera mais conversão que propaganda
 6. Mínimo 1200 palavras, 6+ seções H2
 7. CTA final: "Teste você mesmo — ${config.app.name} tem 7 dias grátis sem cartão"
-8. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+8. Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 9. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 10. O primeiro parágrafo deve responder diretamente à pergunta principal do título em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 11. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
@@ -134,7 +135,7 @@ Responda neste formato:
   feature: (topic) => `
 Escreva um post educativo: "${topic.title}"
 
-REGRAS:
+REGRAS DE FORMA (mantidas):
 1. Foco 80% no PROBLEMA que a feature resolve, 20% na solução
 2. Comece com cenário real do dia a dia que o leitor se identifique
 3. Explique como a tecnologia funciona de forma acessível
@@ -145,7 +146,7 @@ REGRAS:
 8. Tom: tech explainer acessível
 9. Mínimo 800 palavras, 4-5 seções H2
 10. CTA sutil no final
-11. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+11. Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 12. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 13. O primeiro parágrafo deve responder diretamente à pergunta principal do título em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 14. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
@@ -166,7 +167,7 @@ Responda neste formato:
   planilha_vs_app: (topic) => `
 Escreva um post: "${topic.title}"
 
-REGRAS:
+REGRAS DE FORMA (mantidas):
 1. Reconheça que planilhas TÊM vantagens (flexibilidade, gratuitas, customizáveis)
 2. Mostre quando um app faz mais sentido (consistência, mobilidade, automação, voz)
 3. Use dados reais: "pesquisas mostram que 70% desiste da planilha em 30 dias por falta de consistência"
@@ -175,7 +176,7 @@ REGRAS:
 6. Inclua checklist "Planilha é para você se..." / "App é para você se..."
 7. Mínimo 800 palavras, 4-5 seções H2
 8. CTA: "Se a planilha não está funcionando, teste o ${config.app.name} por 7 dias"
-9. Inclua 1-2 links externos para fontes autoritativas (ex: Investopedia https://www.investopedia.com, NerdWallet https://www.nerdwallet.com, Banco Central https://www.bcb.gov.br). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
+9. Inclua 1-2 links externos para fontes autoritativas UNIVERSAIS (ex: Investopedia https://www.investopedia.com, OECD https://www.oecd.org, World Bank https://www.worldbank.org). Use formato markdown [texto](url). Escolha fontes reais e URLs que existam.
 10. Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 11. O primeiro parágrafo deve responder diretamente à pergunta principal do título em 40-60 palavras, de forma autossuficiente e citável (sem "neste artigo você verá")
 12. Encerre com a seção "## Perguntas frequentes": 3-4 perguntas como H3 (###) com respostas diretas de 2-3 frases cada
@@ -272,6 +273,7 @@ publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: false
 translationKey: "${data.translationKey || ''}"
+scope: "universal"
 seo:
   metaTitle: "${data.title.replace(/"/g, '\\"')}"
   metaDescription: "${data.meta.replace(/"/g, '\\"')}"
@@ -315,7 +317,7 @@ async function main() {
   const avoidBlock = coveredThemesBlock(POSTS_DIR);
 
   const promptFn = PROMPTS_BY_TYPE[topic.type] || PROMPTS_BY_TYPE.feature;
-  const prompt = `${avoidBlock}\n` + promptFn(topic);
+  const prompt = `${avoidBlock}\n${postCoreRules({ appName: config.app.name })}\n` + promptFn(topic);
 
   try {
     let result;
