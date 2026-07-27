@@ -304,6 +304,10 @@ Responda APENAS com o tema, em uma única linha, sem aspas e sem explicação.`,
       category: 'dicas',
       keywords: [topic, 'finanças pessoais', 'economia', 'dinheiro'],
       avoidThemes: coveredThemesBlock(POSTS_DIR),
+      // Só quando o tema veio da fila: aí `topic` É a keyword crua (ordem de
+      // ferramenta de SEO) e o prompt precisa mandar reescrevê-la. Tema do pool
+      // interno já nasce em português natural e não leva a regra.
+      seedKeyword: queueEntry?.keyword,
     });
 
     if (!post.title || !post.content) {

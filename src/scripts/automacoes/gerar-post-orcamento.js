@@ -6,7 +6,7 @@ import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
-import { postCoreRules } from '../lib/prompt-post.js';
+import { postCoreRules, seedKeywordRules } from '../lib/prompt-post.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -203,6 +203,7 @@ Responda OBRIGATORIAMENTE neste formato exato (use os delimitadores):
 [conteúdo markdown completo]
 
 ${postCoreRules({ appName: config.app.name })}
+${seedKeywordRules(queueEntry?.keyword)}
 
 REGRAS DE FORMA (mantidas):
 - Headline de ticker: manchete ultra curta (MÁXIMO 40 caracteres) que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")

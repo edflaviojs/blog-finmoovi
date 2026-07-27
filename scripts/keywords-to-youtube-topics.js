@@ -123,6 +123,7 @@ REGRAS:
 - Use numeros concretos em BRL quando possivel
 - Maximo 60 chars no theme
 - O angle deve explicar o COMO do video
+- A keyword e uma SEMENTE DE BUSCA, nao um titulo: NUNCA a copie literalmente. Ela costuma vir em ordem "telegrama" ("poupar dinheiro dicas") — reordene em portugues natural e preserve so os termos.
 
 Responda EXATAMENTE neste formato JSON (sem markdown, sem comentarios):
 {"theme":"...","angle":"...","glossaryRef":"...ou null"}

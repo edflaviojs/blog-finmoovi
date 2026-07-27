@@ -46,3 +46,39 @@ AMARRAÇÃO COM FEATURE REAL (escolha 1 natural ao tema, de forma orgânica):
 LINHAS EDITORIAIS PREFERENCIAIS: compra por impulso; orçamento visual (categorias); paz mental × finanças; desafios práticos (30 dias / os "primeiros 500"); bastidores do app (resolver em 3 cliques).
 `;
 }
+
+/**
+ * Regras de tratamento da KEYWORD-SEMENTE vinda da fila (manual/GSC/autocomplete).
+ * Keywords de ferramenta de SEO chegam em ordem "telegrama" ("poupar dinheiro
+ * dicas") e, coladas literalmente, produzem títulos em português quebrado.
+ *
+ * @param {string} keyword A semente vinda da fila.
+ * @param {object} [opts]
+ * @param {'titulo'|'verbete'} [opts.mode] 'titulo' = post/vídeo; 'verbete' = glossário.
+ * @returns {string} Bloco de regras (vazio se não houver keyword).
+ */
+export function seedKeywordRules(keyword, { mode = 'titulo' } = {}) {
+  const kw = String(keyword || '').trim();
+  if (!kw) return '';
+  if (mode === 'verbete') {
+    return `
+SEMENTE DE BUSCA — "${kw}" (NÃO é o nome do verbete):
+- Extraia o CONCEITO financeiro por trás dela e use-o como termo do verbete.
+- O verbete é um SUBSTANTIVO/expressão nominal ("Amortização", "Tabela Price"),
+  NUNCA uma frase de busca ("como poupar dinheiro dicas").
+- É PROIBIDO usar a semente literal como nome do verbete.
+`;
+  }
+  return `
+SEMENTE DE BUSCA — "${kw}" (NÃO é um título):
+- Ela veio de ferramenta de SEO e costuma estar em ordem "telegrama"
+  ("poupar dinheiro dicas"), que NÃO é português natural.
+- É PROIBIDO colá-la literalmente no título, na meta, no headline ou em heading.
+- Reescreva em português natural PRESERVANDO os termos de busca: reordene e
+  acrescente conectores/artigos. Ex.: "poupar dinheiro dicas" → "dicas para
+  poupar dinheiro" ou "como poupar dinheiro no dia a dia".
+- No corpo, os termos aparecem de forma orgânica e FLEXIONADOS conforme a frase
+  pedir (plural/singular, verbo). A busca tolera a variação; o leitor NÃO tolera
+  texto quebrado.
+`;
+}

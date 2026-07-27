@@ -10,7 +10,7 @@ import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.j
 import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
-import { postCoreRules } from '../lib/prompt-post.js';
+import { postCoreRules, seedKeywordRules } from '../lib/prompt-post.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readFileSync, readdirSync } from 'fs';
@@ -163,13 +163,17 @@ function chooseTopic(insights) {
 /**
  * Generate post via Groq
  */
-async function generatePost(topic) {
+// `seedKeyword`: a keyword CRUA, quando o `topic` veio da fila. Nesse caso o
+// topic É a semente de busca e precisa ser reescrita — sem isso o LLM a cola
+// literal no título. Tema do pool interno chama sem o 2º argumento.
+async function generatePost(topic, seedKeyword) {
   const avoidBlock = coveredThemesBlock(POSTS_DIR);
   const prompt = `Você é um redator especialista em finanças pessoais para o blog ${config.brand.name}.
 ${avoidBlock}
 Escreva um artigo completo e profissional sobre: "${topic}"
 
 ${postCoreRules({ appName: config.app.name })}
+${seedKeywordRules(seedKeyword)}
 
 REGRAS DE FORMA (mantidas):
 - Título criativo e otimizado para SEO (máximo 65 caracteres; se mencionar ano, use ${CURRENT_YEAR})
@@ -383,7 +387,7 @@ async function main() {
 
   // 3. Generate post in PT
   console.log('🇧🇷 Gerando post em português...');
-  const response = await generatePost(topic);
+  const response = await generatePost(topic, queueEntry?.keyword);
   const post = parseResponse(response);
 
   // Fact-guard: limpa alucinação antes de salvar; bloqueia se mutilaria.

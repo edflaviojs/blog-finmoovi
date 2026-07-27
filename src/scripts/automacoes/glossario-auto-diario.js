@@ -84,6 +84,22 @@ function glossaryTermFromKeyword(keyword) {
   return core || kw;
 }
 
+// Heurística de custo zero (SEM chamada de IA — a cota é o gargalo do projeto)
+// que recusa termos que, mesmo após a limpeza acima, ainda não parecem um
+// CONCEITO de glossário — e sim uma keyword de SEO em ordem telegráfica
+// ("poupar dinheiro dicas") ou uma pergunta/lista de busca ("como poupar
+// dinheiro", "melhores investimentos"). Decisão do dono: recusar e voltar à
+// rotação A-Z em vez de publicar um verbete com nome quebrado (dívida
+// permanente no site).
+function keywordLooksLikeConcept(term) {
+  const t = String(term || '').trim().toLowerCase();
+  if (!t) return false;
+  const startsWithQuestion = /^(como|o que|quando|por que|porque|qual|quais|onde|vale a pena)\b/.test(t);
+  const hasListicleModifier = /\b(dicas|melhores|passo a passo|guia|truques|erros)\b/.test(t);
+  const tooManyWords = t.split(/\s+/).filter(Boolean).length > 5;
+  return !startsWithQuestion && !hasListicleModifier && !tooManyWords;
+}
+
 async function main() {
   console.log('🚀 Iniciando geração automática de glossário...');
 
@@ -122,6 +138,10 @@ async function main() {
       if (existsSync(join(GLOSSARIO_DIR, `${slugify(termFromQueue)}.md`))) {
         // Rede de segurança (o takeKeyword já barra isso na quase totalidade dos casos)
         console.warn(`⚠️ Termo da fila "${termFromQueue}" já existe no glossário — voltando à rotação A-Z.`);
+        queueEntry = null;
+      } else if (!keywordLooksLikeConcept(termFromQueue)) {
+        // Não chama markUsed: a keyword permanece 'pending' na fila para reavaliação futura.
+        console.warn(`⚠️ Keyword da fila "${queueEntry.keyword}" (termo limpo: "${termFromQueue}") não parece um conceito de glossário — voltando à rotação A-Z. Keyword mantida como pending.`);
         queueEntry = null;
       } else {
         selectedTerm = termFromQueue;

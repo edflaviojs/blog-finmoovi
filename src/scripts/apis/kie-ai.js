@@ -9,7 +9,7 @@ import { saveSVGImage } from './svg-generator.js';
 import { config } from '../../../site.config.ts';
 import { FACT_GUARD_PROMPT } from '../lib/fact-guard.js';
 import { CURRENT_YEAR } from '../lib/year-guard.js';
-import { postCoreRules } from '../lib/prompt-post.js';
+import { postCoreRules, seedKeywordRules } from '../lib/prompt-post.js';
 
 // Provedores de geração de texto (todos compatíveis com a API OpenAI), em
 // ordem de prioridade/fallback. Cada um se auto-habilita conforme as
@@ -172,6 +172,11 @@ export async function generateBlogPost(topic, options = {}) {
     category = 'dicas',
     keywords = [],
     avoidThemes = '',   // bloco anti-canibalização opcional (temas já cobertos)
+    // Keyword CRUA da fila, quando o `topic` veio de lá. Nesse caso `topic` É a
+    // semente de busca (ex.: "poupar dinheiro dicas") e, sem tratamento, o LLM
+    // a cola literalmente no título. Ausente = tema do pool interno (já em
+    // português natural), e a regra não é injetada.
+    seedKeyword = '',
   } = options;
 
   const ctaVariations = [
@@ -192,6 +197,7 @@ ${FACT_GUARD_PROMPT}
 Escreva um artigo de blog sobre: "${topic}"
 
 ${postCoreRules({ appName: config.app.name })}
+${seedKeywordRules(seedKeyword)}
 
 REGRAS DE FORMA (mantidas):
 - NÃO use "Introdução" ou "Conclusão" como títulos de seção
