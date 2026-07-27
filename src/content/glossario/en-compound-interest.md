@@ -16,15 +16,15 @@ Compound interest is interest calculated on the original value **plus** the inte
 
 ## Practical example
 
-R$ 10,000 invested at 10% per year:
+$2,000 invested at 10% per year:
 
 | Year | Simple Interest | Compound Interest |
 |-----|--------------|-----------------|
-| 1 | R$ 11,000 | R$ 11,000 |
-| 5 | R$ 15,000 | R$ 16,105 |
-| 10 | R$ 20,000 | R$ 25,937 |
-| 20 | R$ 30,000 | R$ 67,275 |
-| 30 | R$ 40,000 | R$ 174,494 |
+| 1 | $2,200 | $2,200 |
+| 5 | $3,000 | $3,221 |
+| 10 | $4,000 | $5,187 |
+| 20 | $6,000 | $13,455 |
+| 30 | $8,000 | $34,899 |
 
 ## The Rule of 72
 
@@ -34,4 +34,4 @@ To find out how many years it takes for your [money](/en/posts/en-30-day-rule-fo
 
 ## Why starting early matters
 
-Someone who invests R$ 500/month from age 25 to 65 (at 10% per year) accumulates **R$ 3.2 million**. Someone who starts at 35 accumulates R$ 1.1 million. 10 years of difference = 3x less [money](/en/posts/en-avoid-impulse-purchases).
+Someone who invests $100/month from age 25 to 65 (at 10% per year) accumulates **$640,000**. Someone who starts at 35 accumulates $220,000. 10 years of difference = 3x less [money](/en/posts/en-avoid-impulse-purchases).

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Introduction to [Investment](/en/posts/en-tesouro-direto-for-beginners)
-When it comes to investing, many people think that having a large capital is necessary to start. However, it is possible to build a diversified portfolio with just R$500. To do this, it's essential to understand what [diversification](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably) means and why it's important. Diversification means distributing your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) across different types of assets, such as [stocks](/en/glossario/en-stocks), bonds, [investment](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) funds, etc., to reduce the risk of losses. Imagine you have R$500 and decide to invest it all in a single stock. If that stock falls, you'll lose your entire investment. But if you distribute those R$500 across different assets, the risk of loss will be lower.
+When it comes to investing, many people think that having a large capital is necessary to start. However, it is possible to build a diversified portfolio with just $100. To do this, it's essential to understand what [diversification](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably) means and why it's important. Diversification means distributing your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) across different types of assets, such as [stocks](/en/glossario/en-stocks), bonds, [investment](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) funds, etc., to reduce the risk of losses. Imagine you have $100 and decide to invest it all in a single stock. If that stock falls, you'll lose your entire investment. But if you distribute those $100 across different assets, the risk of loss will be lower.
 
 ## Types of Investments
 There are many types of investments available in the market. Some examples include:
@@ -31,23 +31,17 @@ Before starting to invest, it's crucial to define your objectives and plan how y
 
 ![Tipos de Investimentos](/images/posts/montando-carteira-diversificada-com-r-500-2.webp)
 
-
-
 ## Income Simulations
-Let's consider a practical example. Suppose you invest R$500 in an [investment fund](/en/glossario/en-investment-fund) that offers an annual return of 8%. After a year, your investment will be worth R$540. If you continue investing R$500 every month, after 5 years, your investment could be worth around R$4,500, considering the same annual return of 8%. It's essential to remember that these are just examples, and the actual performance of investments may vary.
+Let's consider a practical example. Suppose you invest $100 in an [investment fund](/en/glossario/en-investment-fund) that offers an annual return of 8%. After a year, your investment will be worth $108. If you continue investing $100 every month, after 5 years, your investment could be worth around $900, considering the same annual return of 8%. It's essential to remember that these are just examples, and the actual performance of investments may vary.
 
 ## Risks
 Investing always involves risks. Risk is the possibility of losing part or all of your investment. There are different types of risks, such as market risk (the value of assets may fall), credit risk (the company or government that issued the bond may not pay), and [liquidity](/en/glossario/en-liquidity) risk (you may not be able to sell your investment quickly enough or at the price you want). To manage these risks, it's essential to diversify your portfolio and understand the risks associated with each investment. Evaluate whether it makes sense for your risk profile and financial objectives.
 
 ![Simulações de Rendimento](/images/posts/montando-carteira-diversificada-com-r-500-4.webp)
 
-
-
 ## Next Steps
 Now that you've understood the basic concepts of investment and diversification, it's time to put this knowledge into practice. Consider starting with small amounts and increasing your investments as you become more comfortable. Remember that the key to success is consistency and patience. Don't be afraid to seek help from a financial professional if you're not confident investing on your own. Additionally, consider using tools like FinMoovi to help manage your investments efficiently.
 
 ![Próximos passos](/images/posts/montando-carteira-diversificada-com-r-500-6.webp)
-
-
 
 To track your investments in one place, try [FinMoovi for free for 7 days](https://finmoovi.com) — multi-currency, intelligent reports, and 100% offline.

@@ -55,25 +55,25 @@ Despite the advantages, the pursuit of quality can bring some challenges. The ma
 
 ## Practical examples
 
-Imagine you earn R$5.000 per month and have two options for buying a laptop to work from home.  
+Imagine you earn $1,000 per month and have two options for buying a laptop to work from home.  
 
-- **Option A:** cheap laptop for R$2.000, 6‑month warranty, limited performance.  
-- **Option B:** mid‑range laptop for R$4.000, 2‑year warranty, faster processor and battery that lasts all day.  
+- **Option A:** cheap laptop for $200, 6‑month warranty, limited performance.  
+- **Option B:** mid‑range laptop for $800, 2‑year warranty, faster processor and battery that lasts all day.  
 
-If you choose Option A, you may need to replace the equipment in 2 years, spending another R$2.000 and losing productivity. Option B, although costing double now, will likely last 4‑5 years, reducing future costs and increasing your income by avoiding work delays.  
+If you choose Option A, you may need to replace the equipment in 2 years, spending another $200 and losing productivity. Option B, although costing double now, will likely last 4‑5 years, reducing future costs and increasing your income by avoiding work delays.  
 
-Another example: a salary of R$7.000 and the decision to subscribe to an internet plan.  
+Another example: a salary of $1,400 and the decision to subscribe to an internet plan.  
 
-- **Plan X:** R$80/month, limited speed, frequent outages.  
-- **Plan Y:** R$150/month, high speed and 24‑hour support.  
+- **Plan X:** $16/month, limited speed, frequent outages.  
+- **Plan Y:** $30/month, high speed and 24‑hour support.  
 
-With Plan Y, you avoid wasting time on support calls and ensure your home office runs without interruptions, which can represent a gain of R$300‑[R$500](/en/posts/en-building-a-diversified-portfolio-with-r-500) per month in productivity.  
+With Plan Y, you avoid wasting time on support calls and ensure your home office runs without interruptions, which can represent a gain of $60‑$100 per month in productivity.  
 
-**Practical tip:** Evaluate the total cost of ownership (CTP) before buying; include price, maintenance and useful life span.  
+**Practical tip:** Evaluate the total cost of ownership (TCO) before buying; include price, maintenance and useful life span.  
 
 **Practical tip:** Set aside 10 % of your monthly income for “quality upgrades,” so you never run out of resources to improve something essential.  
 
-**Practical tip:** Use price‑comparison and review apps (like “Buscapé”) as if they were a friend who has already tested everything before you buy.  
+**Practical tip:** Use price‑comparison and review apps (like “ShopSavvy”) as if they were a friend who has already tested everything before you buy.  
 
 ## How to start
 
@@ -82,7 +82,7 @@ Applying the quality mindset to your financial life is simpler than it looks. Fi
 - **Step 1:** List fixed expenses (rent, internet, transportation) and variable ones (clothing, leisure).  
 - **Step 2:** For each item, ask: “How much would I spend if I switched to a better‑quality version?”  
 - **Step 3:** Calculate the total cost of ownership and compare it with the current spend.  
-- **Step 4:** Define a monthly budget for quality upgrades (e.g., R$300).  
+- **Step 4:** Define a monthly budget for quality upgrades (e.g., $60).  
 - **Step 5:** Monitor monthly and adjust as needed, always seeking the best cost‑benefit ratio.  
 
 ## Start today

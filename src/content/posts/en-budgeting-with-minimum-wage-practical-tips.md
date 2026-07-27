@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Creating a Realistic [Budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation)
-To create an effective [budget](/en/posts/en-organize-couple-finances) with a minimum wage, it's crucial to understand that it's not about cutting all [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea), but rather managing your resources intelligently. Let's consider an example with a salary of R$ 2,400.00, which is slightly above the minimum wage in Brazil.
+To create an effective [budget](/en/posts/en-organize-couple-finances) with a minimum wage, it's crucial to understand that it's not about cutting all [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea), but rather managing your resources intelligently. Let's consider an example with a salary of $480.00, which is slightly above the minimum wage.
 
 A general rule for dividing your [budget](/en/posts/en-how-to-create-personal-budget) is as follows:
 | Category | Percentage of Salary |
@@ -31,17 +31,17 @@ A general rule for dividing your [budget](/en/posts/en-how-to-create-personal-bu
 | Leisure and Entertainment | 5% |
 | [Savings](/en/posts/en-financial-education-for-children) and Emergency | 10% |
 
-Based on this division, for a salary of R$ 2,400.00:
-- Housing: R$ 720.00
-- Food: R$ 600.00
-- Transportation: R$ 360.00
-- Health and Wellness: R$ 240.00
-- Education and Development: R$ 120.00
-- Leisure and Entertainment: R$ 120.00
-- [Savings](/en/posts/en-smart-cashback) and Emergency: R$ 240.00
+Based on this division, for a salary of $480.00:
+- Housing: $144.00
+- Food: $120.00
+- Transportation: $72.00
+- Health and Wellness: $48.00
+- Education and Development: $24.00
+- Leisure and Entertainment: $24.00
+- [Savings](/en/posts/en-smart-cashback) and Emergency: $48.00
 
 ## Prioritizing Needs
-It's essential to prioritize needs over desires. **Practical tip:** Make a list of everything you spend in a month and identify where you can cut unnecessary expenses. For example, if you spend R$ 100.00 per week on snacks and meals out, try reducing it to R$ 50.00, saving R$ 200.00 per month.
+It's essential to prioritize needs over desires. **Practical tip:** Make a list of everything you spend in a month and identify where you can cut unnecessary expenses. For example, if you spend $20.00 per week on snacks and meals out, try reducing it to $10.00, saving $40.00 per month.
 
 ## Managing Variable Expenses
 Variable expenses, such as transportation and eating out, can be challenging to control. Here are some tips for managing these expenses:

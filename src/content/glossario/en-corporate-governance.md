@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Governance is a term that may seem complicated, but it's simpler than you think. Basically, it refers to how organizations, including companies and even families, manage their financial resources responsibly and ethically. This involves creating rules, policies, and processes to ensure money is used efficiently and transparently. For example, imagine you earn R$ 5.000 per month and need to decide how to allocate this [value](/en/glossario/en-financial-value) among accounts, investments, and expenses. Personal governance would help establish a clear plan for those decisions.
+Governance is a term that may seem complicated, but it's simpler than you think. Basically, it refers to how organizations, including companies and even families, manage their financial resources responsibly and ethically. This involves creating rules, policies, and processes to ensure money is used efficiently and transparently. For example, imagine you earn $1,000 per month and need to decide how to allocate this [value](/en/glossario/en-financial-value) among accounts, investments, and expenses. Personal governance would help establish a clear plan for those decisions.
 
 - Definition of clear financial objectives
 - Creation of a realistic budget
@@ -32,9 +32,9 @@ Governance is not limited to large companies; it is an essential practice for an
 
 
 ## How it works
-Governance works by establishing a set of rules and procedures that help ensure financial decisions are made responsibly. This can include creating a budget, setting savings goals, and implementing controls to avoid excessive spending. For example, if you decide you want to save R$ 1.000 per month, governance would help ensure that amount is set aside regularly, regardless of other expenses. **Practical tip:** A good way to start is to define your financial priorities and create an action plan to achieve them.
+Governance works by establishing a set of rules and procedures that help ensure financial decisions are made responsibly. This can include creating a budget, setting savings goals, and implementing controls to avoid excessive spending. For example, if you decide you want to save $200 per month, governance would help ensure that amount is set aside regularly, regardless of other expenses. **Practical tip:** A good way to start is to define your financial priorities and create an action plan to achieve them.
 
-One of the most useful tools for personal governance is the budget. A budget is like a battle plan for your finances, helping ensure you use your money efficiently. Imagine you earn R$ 6.000 per month and have fixed expenses of R$ 2.000. With a budget, you can decide how to allocate the remaining R$ 4.000 among savings, investments, and variable expenses.
+One of the most useful tools for personal governance is the budget. A budget is like a battle plan for your finances, helping ensure you use your money efficiently. Imagine you earn $1,200 per month and have fixed expenses of $400. With a budget, you can decide how to allocate the remaining $800 among savings, investments, and variable expenses.
 
 
 
@@ -55,7 +55,7 @@ Another risk is the lack of knowledge or skills to manage finances effectively. 
 
 
 ## Practical examples
-A practical example of governance in action is creating an [emergency fund](/en/glossario/en-emergency-fund). Imagine you earn R$ 4.000 per month and decide you want an emergency fund that covers three months of expenses, which would be R$ 12.000. With a governance plan, you can set a goal to reach that amount within a specific period, for example, six months, and work consistently to achieve it.
+A practical example of governance in action is creating an [emergency fund](/en/glossario/en-emergency-fund). Imagine you earn $800 per month and decide you want an emergency fund that covers three months of expenses, which would be $2,400. With a governance plan, you can set a goal to reach that amount within a specific period, for example, six months, and work consistently to achieve it.
 
 Another example is expense management. If you notice you are spending too much on restaurants, you can set a limit for those expenses and find ways to reduce them, such as cooking at home more often. Personal governance helps identify areas of waste and implement changes to improve financial efficiency.
 

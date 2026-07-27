@@ -22,7 +22,7 @@ seo:
 The idea of digital envelopes is the same as the paper envelopes where you put physical cash for each category (food, transport, leisure, etc.). The difference is that everything lives on your phone or computer, which eliminates the risk of losing bills and gives you instant [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o).
 
 - **Why it works?** When you “assign” an amount to an envelope, it stops being free cash; it becomes “specific”. This visualization reduces impulse purchases.  
-- **Who can use it?** Anyone who receives a monthly income – from R$2,000 to R$8,000 – and wants clear insight into where every cent goes.
+- **Who can use it?** Anyone who receives a monthly income – from $200 to $1,600 – and wants clear insight into where every cent goes.
 
 ## Setting up your envelopes in the app
 
@@ -39,9 +39,9 @@ The idea of digital envelopes is the same as the paper envelopes where you put p
 
 | Monthly Salary | Food (30%) | Transportation (10%) | Housing (30%) | Leisure (10%) | Emergency Reserve (20%) |
 |----------------|------------|----------------------|---------------|----------------|--------------------------|
-| R$2,000        | R$600      | R$200                | R$600         | R$200          | R$400                    |
-| R$5,000        | R$1,500    | [R$500](/en/posts/en-building-a-diversified-portfolio-with-r-500)                | R$1,500       | R$500          | R$1,000                  |
-| R$8,000        | R$2,400    | R$800                | R$2,400       | R$800          | R$1,600                  |
+| $200           | $120       | $40                  | $120          | $40            | $80                      |
+| $1,000         | $300       | $100                 | $300          | $100           | $200                     |
+| $1,600         | $480       | $160                 | $480          | $160           | $320                     |
 
 **Practical tip:** If your income varies (self‑employed or freelancer), use the average of the last three months as a base and adjust the limits with each payment.
 
@@ -49,7 +49,7 @@ The idea of digital envelopes is the same as the paper envelopes where you put p
 
 After you receive your salary, follow this step‑by‑step:
 
-1. **Open the app and record the total income** – For example, R$5,000.  
+1. **Open the app and record the total income** – For example, $1,000.  
 2. **Distribute the amount** – Tap each envelope and enter the limit you set in the table. The app will show the remaining balance (it should be zero).  
 3. **Reserve the [money](/en/posts/en-avoid-impulse-purchases) right away** – If the app lets you “lock” or “mark as saved”, do it. That way you won’t spend what should stay in the emergency reserve.
 
@@ -63,9 +63,9 @@ This process takes less than 5 minutes and leaves your [budget](/en/posts/en-5-t
 
 ![Monitorar e ajustar gastos](/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024-4.webp)
 
-For someone earning R$2,000, the margin for error is small; someone earning R$8,000 can make more flexible monthly adjustments.
+For someone earning $200, the margin for error is small; someone earning $1,600 can make more flexible monthly adjustments.
 
-> **Important:** Consult official sources such as the [Central Bank of Brazil](https://www.bcb.gov.br) to understand interest‑rate limits and fees that may affect your [budget](/en/posts/en-how-to-create-personal-budget).
+> **Important:** Consult official sources such as the [central bank] to understand interest‑rate limits and fees that may affect your [budget](/en/posts/en-how-to-create-personal-budget).
 
 ## Reviewing results monthly
 

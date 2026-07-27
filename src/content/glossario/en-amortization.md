@@ -30,9 +30,9 @@ Amortization is the act of paying the principal value of a [debt](/en/glossario/
 
 ## Practical example
 
-[Financing](/en/glossario/en-financing) of R$ 100,000 in 30 years at 10% per year:
-- **SAC:** first installment ~R$ 1,111, last ~R$ 282. Total paid: ~R$ 250,000
-- **Price:** all installments ~R$ 877. Total paid: ~R$ 316,000
+[Financing](/en/glossario/en-financing) of $20,000 in 30 years at 10% per year:
+- **SAC:** first installment ~ $222, last ~ $56. Total paid: ~ $50,000
+- **Price:** all installments ~ $175. Total paid: ~ $63,200
 
 ## Extraordinary amortization
 
