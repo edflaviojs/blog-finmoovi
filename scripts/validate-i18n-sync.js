@@ -42,6 +42,21 @@ const PT_WORDS_BLOCKED_IN_ES = [
 // ⚙️ AJUSTE POR NICHO: termos técnicos PT permitidos em EN/ES (+ a marca, sempre dinâmica).
 const ALLOWED_PT_TERMS = ["tesouro direto", "selic", "cdi", "ipca", "pgbl", "vgbl", config.brand.name.toLowerCase()];
 
+// IMPLEMENTACAO23 Fase 6 — GUARD anti-âncora-local em peças `universal`.
+// Só padrões de ALTA PRECISÃO (evita falso positivo). NÃO inclui "real/reais"
+// (ambíguo: "ganho real", "tempo real") nem produtos BR (PIX/Selic/CDB) que podem
+// aparecer legitimamente como exemplo regional num verbete universal (REGRA 17).
+const LOCAL_ANCHORS = [
+  ["R$ (moeda fixa)", /R\$\s?\d/],
+  ["Brasil",          /\bBrasil\b/i],
+  ["brasileiro/a",    /\bbrasileir[oa]s?\b/i],
+];
+// Rollout: nasce WARNING (não bloqueia). Virar `true` só APÓS a campanha de limpeza/
+// reclassificação das peças acusadas (ver IMPLEMENTACAO23 Fase 6 / item G). Enquanto
+// false, apenas reporta (arquivo:linha — termo) sem empurrar para errors[].
+const ANCHOR_GUARD_BLOCKING = false;
+let anchorHits = []; // { file, line, label }
+
 let errors = [];
 let warnings = [];
 
@@ -66,6 +81,10 @@ function parseFrontmatter(content) {
   // IMPLEMENTACAO23 §2.2 — scope governa se o grupo exige par EN/ES. Ausente = 'universal'.
   const scopeMatch = yaml.match(/^scope:\s*"?([\w-]+)"?\s*$/m);
   data.scope = scopeMatch ? scopeMatch[1] : "universal";
+
+  // IMPLEMENTACAO23 Fase 6 — opt-out por peça: exemplo regional intencional
+  // aprovado em revisão editorial isenta a peça do guard de âncora local.
+  data.allowLocalAnchors = /^allowLocalAnchors:\s*true\s*$/m.test(yaml);
 
   const titleMatch = yaml.match(/^title:\s*(?:"([^"]+)"|'([^']+)'|(.+))\s*$/m);
   if (titleMatch) data.title = (titleMatch[1] || titleMatch[2] || titleMatch[3]).trim();
@@ -97,6 +116,32 @@ function containsBlockedWords(text, blockedWords, allowedTerms) {
     }
   }
   return found;
+}
+
+/**
+ * Extrai o corpo (markdown após o frontmatter) de um arquivo, CRLF-safe.
+ * @param {string} content Conteúdo bruto do arquivo.
+ * @returns {string} Corpo sem o bloco de frontmatter.
+ */
+function extractBody(content) {
+  const normalized = content.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+  const m = normalized.match(/^---\n[\s\S]*?\n---\n?([\s\S]*)$/);
+  return m ? m[1] : normalized;
+}
+
+/**
+ * Fase 6 — varre o corpo em busca de âncoras locais (R$/Brasil/brasileiro),
+ * registrando arquivo:linha:termo em `anchorHits`.
+ * @param {string} file Nome do arquivo.
+ * @param {string} content Conteúdo bruto do arquivo.
+ */
+function scanLocalAnchors(file, content) {
+  const lines = extractBody(content).split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    for (const [label, re] of LOCAL_ANCHORS) {
+      if (re.test(lines[i])) anchorHits.push({ file, line: i + 1, label });
+    }
+  }
 }
 
 function validateDir(dir, useTranslationKey) {
@@ -141,6 +186,13 @@ function validateDir(dir, useTranslationKey) {
     translationGroups[groupKey][data.locale] = file;
     // O scope da peça PT (mãe) define se o grupo exige par EN/ES.
     if (data.locale === "pt") groupScope[groupKey] = data.scope || "universal";
+
+    // IMPLEMENTACAO23 Fase 6 — âncora local proibida em peça universal (TODOS os
+    // locales; PT universal também deve usar valores relativos, REGRA 17).
+    // Peças br-only/pt-only e as marcadas allowLocalAnchors são isentas.
+    if ((data.scope || "universal") === "universal" && !data.allowLocalAnchors) {
+      scanLocalAnchors(file, content);
+    }
 
     if (data.locale === "en") {
       const fields = [
@@ -188,6 +240,21 @@ console.log("");
 
 validateDir(POSTS_DIR, true);
 validateDir(GLOSSARIO_DIR, true);
+
+// IMPLEMENTACAO23 Fase 6 — saída do guard de âncora local (arquivo:linha — termo).
+if (anchorHits.length > 0) {
+  const header = ANCHOR_GUARD_BLOCKING
+    ? "  ANCORAS LOCAIS em pecas universal (BLOQUEANTE):"
+    : "  ANCORAS LOCAIS em pecas universal (WARNING - nao bloqueia):";
+  console.log("");
+  console.log(header + " " + anchorHits.length + " ocorrencia(s):");
+  anchorHits.slice(0, 40).forEach(({ file, line, label }) =>
+    console.log("   [ANCHOR] " + file + ":" + line + " - [" + label + "]"));
+  if (anchorHits.length > 40)
+    console.log("   ... e mais " + (anchorHits.length - 40) + " ocorrencia(s).");
+  if (ANCHOR_GUARD_BLOCKING)
+    errors.push("Guard de ancora local: " + anchorHits.length + " ocorrencia(s) em pecas universal.");
+}
 
 if (errors.length > 0) {
   console.log("");
