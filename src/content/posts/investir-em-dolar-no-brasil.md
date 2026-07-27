@@ -11,6 +11,7 @@ publishedAt: 2026-07-08
 readingTime: 4
 featured: false
 translationKey: "investir-em-dolar-no-brasil"
+scope: "br-only"
 seo:
   metaTitle: "Investir em Dólar no Brasil"
   metaDescription: "Aprenda a investir em dólar no Brasil de forma segura e inteligente, considerando os riscos e benefícios."

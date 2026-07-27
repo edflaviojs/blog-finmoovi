@@ -11,6 +11,7 @@ publishedAt: 2026-07-07
 readingTime: 5
 locale: "pt"
 translationKey: "glossario-imposto-de-renda"
+scope: "br-only"
 seo:
   metaTitle: "imposto de renda - Glossário Financeiro"
   metaDescription: "Entenda o que é imposto de renda, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."

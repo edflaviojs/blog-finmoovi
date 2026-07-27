@@ -11,6 +11,7 @@ publishedAt: 2026-07-11
 readingTime: 5
 locale: "pt"
 translationKey: "glossario-nubank"
+scope: "br-only"
 seo:
   metaTitle: "nubank - Glossário Financeiro"
   metaDescription: "Entenda o que é nubank, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."

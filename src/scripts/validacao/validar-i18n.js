@@ -69,8 +69,13 @@ function main() {
       publishedAt: fm.publishedAt || null,
       category: fm.category || null,
       draft: fm.draft === 'true',
+      scope: fm.scope || 'universal',
     };
   }).filter(p => !p.draft);
+
+  // IMPLEMENTACAO23 §2.2 — peças locais (br-only/pt-only) não entram nos checks
+  // de par nem de contagem por locale (o de contagem é o trap do diff > 2).
+  const universalPosts = posts.filter(p => p.scope === 'universal');
 
   // 1. Todos os posts devem ter translationKey
   const withoutKey = posts.filter(p => !p.translationKey);
@@ -81,7 +86,7 @@ function main() {
 
   // 2. Todos os translationKeys devem ter exatamente 3 locales
   const keyMap = {};
-  for (const post of posts) {
+  for (const post of universalPosts) {
     if (!post.translationKey) continue;
     if (!keyMap[post.translationKey]) keyMap[post.translationKey] = {};
     if (keyMap[post.translationKey][post.locale]) {
@@ -101,7 +106,7 @@ function main() {
   }
 
   // 3. Contagem por locale deve ser igual (entre os locales configurados)
-  const counts = Object.fromEntries(LOCALES.map(l => [l, posts.filter(p => p.locale === l).length]));
+  const counts = Object.fromEntries(LOCALES.map(l => [l, universalPosts.filter(p => p.locale === l).length]));
   console.log(`📊 Posts: ${LOCALES.map(l => `${l.toUpperCase()}=${counts[l]}`).join(', ')}`);
 
   const base = counts[LOCALES[0]];

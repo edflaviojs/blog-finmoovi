@@ -11,6 +11,7 @@ publishedAt: 2026-06-24
 readingTime: 4
 featured: false
 translationKey: "cdb-vs-tesouro-selic-qual-rende-mais-em-2026"
+scope: "br-only"
 seo:
   metaTitle: "CDB vs Tesouro Selic: Qual Rende Mais em 2026"
   metaDescription: "Descubra qual opção de investimento é mais rentável entre CDB e Tesouro Selic em 2026, considerando riscos e benefícios."

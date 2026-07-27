@@ -11,6 +11,7 @@ publishedAt: 2026-07-24
 readingTime: 6
 featured: false
 translationKey: "pix-vs-ted-qual-vale-mais-a-pena-em-2026"
+scope: "br-only"
 seo:
   metaTitle: "PIX vs TED: qual vale mais a pena em 2026?"
   metaDescription: "Descubra as diferenças entre PIX e TED em 2026, custos, prazos e quando usar cada um."

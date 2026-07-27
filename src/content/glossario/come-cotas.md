@@ -5,6 +5,7 @@ definition: "Come-Cotas são uma forma de investimento em que o investidor compr
 category: "impostos"
 locale: "pt"
 translationKey: "glossario-come-cotas"
+scope: "br-only"
 relatedTerms: ["Fundo de Investimento","Investimento Fracionário","Custo de Transação"]
 publishedAt: 2026-06-02
 ---
