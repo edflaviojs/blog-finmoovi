@@ -27,7 +27,7 @@ Something breaks, an opportunity shows up, or a bill lands that you simply can't
 
 When you ask for a loan, the lender looks at whether you can pay it back, then releases the money and sets a schedule. Each month you pay a slice of what you borrowed plus a slice of interest, until it's gone. The steps usually look like this:
 
-- **Assessment:** the lender checks your income and how much room your budget really has.
+- **Assessment:** the lender checks your [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) and how much room your budget really has.
 - **Term:** you pick how many months to spread it over — a longer term means smaller installments but more total interest.
 - **Contract:** the paper that spells out the rate, the total cost, and any late fees.
 - **Release:** the money reaches your account.
@@ -39,7 +39,7 @@ The installment isn't a one-time event — it's a fixed cost that quietly eats a
 
 ## In FinMoovi
 
-Add the installment as a **recurring expense** and it shows up automatically in your **cash flow** every month — so before signing anything you can see how much of your income the loan will actually take, and whether what's left still covers the essentials. No spreadsheet, no guessing.
+Add the installment as a **recurring expense** and it shows up automatically in your **cash flow** every month — so before signing anything you can see how much of your income the loan will actually take, and whether what's left still covers the essentials. No [spreadsheet](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app), no guessing.
 
 - **Practical tip:** register the installment as recurring *before* you accept the offer, and look at the month that has the least money left over.
 - **Practical tip:** if the loan is to pay off other debts, make sure the new installment is smaller than the ones it replaces — otherwise you're not saving, just rearranging.

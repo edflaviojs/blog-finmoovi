@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-A Letter of Credit (LC) is a type of financial instrument used to guarantee payments between companies or individuals. It is basically a contract among a buyer, a seller, and a bank, where the bank commits to pay the seller if the buyer fails to meet its obligations. This helps reduce the risk of non‑payment and provides security for both the buyer and the seller. Imagine you are a business owner who sells products to another company, and you want to ensure you will receive the payment. In that case, an LC can be a great option.
+A Letter of [Credit](/en/glossario/en-credit) (LC) is a type of financial instrument used to guarantee payments between companies or individuals. It is basically a contract among a buyer, a seller, and a bank, where the bank commits to pay the seller if the buyer fails to meet its obligations. This helps reduce the risk of non‑payment and provides security for both the buyer and the seller. Imagine you are a business owner who sells products to another company, and you want to ensure you will receive the payment. In that case, an LC can be a great option.
 
 * The LC is issued by the buyer's bank
 * The seller receives payment from the bank if the buyer does not pay

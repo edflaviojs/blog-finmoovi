@@ -19,13 +19,13 @@ seo:
 
 ## What it is
 
-You're at the checkout and the money isn't in your account yet — but the payment still goes through. That's credit: the ability to use money now and pay for it later. It works like a pre-approved [loan](/en/glossario/en-loan) — a lender puts a limit at your disposal and you pay back whatever you use, plus [interest](/en/glossario/en-interest) (the price of borrowed money). Credit cards, overdraft, personal loans and financing all live under the same idea: "buy now, pay later", with the responsibility of returning the amount plus interest within the agreed window.
+You're at the checkout and the money isn't in your account yet — but the payment still goes through. That's credit: the ability to use money now and pay for it later. It works like a pre-approved [loan](/en/glossario/en-loan) — a lender puts a limit at your disposal and you pay back whatever you use, plus [interest](/en/glossario/en-interest) (the price of borrowed money). Credit cards, [overdraft](/en/glossario/en-overdraft), personal loans and [financing](/en/glossario/en-financing) all live under the same idea: "buy now, pay later", with the responsibility of returning the amount plus interest within the agreed window.
 
 ![What it is](/images/glossario/credito-inline-1.webp)
 
 ## How it works
 
-When you're granted credit, the lender sets a limit based on your income and payment history. Every time you use it, you create a [debt](/en/glossario/en-debt) that lands on your bill. You can pay the full amount or a minimum — but interest piles up on whatever is left open, and it's usually charged day by day. Paying on time builds trust and unlocks cheaper credit later; falling behind does the opposite.
+When you're granted credit, the lender sets a limit based on your [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) and payment history. Every time you use it, you create a [debt](/en/glossario/en-debt) that lands on your bill. You can pay the full amount or a minimum — but interest piles up on whatever is left open, and it's usually charged day by day. Paying on time builds trust and unlocks cheaper credit later; falling behind does the opposite.
 
 ## Why it gets people
 

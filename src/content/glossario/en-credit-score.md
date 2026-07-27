@@ -10,7 +10,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## What is Credit Score?
+## What is [Credit](/en/glossario/en-credit) Score?
 
 Credit score is a note from 0 to 1000 that credit bureaus (Serasa, SPC, Boa Vista) give to you. This note indicates to banks and stores what the chance is of you paying your bills on time.
 

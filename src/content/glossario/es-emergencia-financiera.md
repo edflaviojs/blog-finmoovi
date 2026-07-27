@@ -36,7 +36,7 @@ Si la emergencia llegó y no tienes reserva:
 
 1. **No uses cheque especial** ([juros](/es/glossario/es-interes) del 15%/mes)
 2. **No uses el rotativo de la tarjeta** (intereses del 16%/mes)
-3. Solicita un préstamo consignado (intereses del 1-2%/mes)
+3. Solicita un [préstamo](/es/glossario/es-prestamo) consignado (intereses del 1-2%/mes)
 4. Anticipa el FGTS o el 13º
 5. Vende algo que no uses (marketplace)
 6. Negocia un plan de pagos directo con el acreedor
