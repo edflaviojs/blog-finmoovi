@@ -7,6 +7,7 @@ relatedTerms: ["Câmbio", "IOF", "Score de Crédito"]
 publishedAt: 2025-05-10
 locale: "pt"
 translationKey: "glossario-pix"
+scope: "br-only"
 readingTime: 2
 ---
 

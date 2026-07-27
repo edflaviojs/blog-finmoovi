@@ -11,6 +11,7 @@ readingTime: 3
 featured: false
 locale: "pt"
 translationKey: "resumo-semanal-dolar-r-5-03-semana-1-junho-2026"
+scope: "br-only"
 seo:
   metaTitle: "Cotações Semana 1 junho 2026: Dólar R$ 5.03"
   metaDescription: "Resumo semanal: dólar a R$ 5.03, euro a R$ 5.84. Análise e dicas para investidores."

@@ -11,6 +11,7 @@ publishedAt: 2026-06-26
 readingTime: 5
 locale: "pt"
 translationKey: "glossario-xepa-financeira"
+scope: "br-only"
 seo:
   metaTitle: "xepa financeira - Glossário Financeiro"
   metaDescription: "Entenda o que é xepa financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."

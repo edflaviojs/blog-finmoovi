@@ -63,6 +63,10 @@ function parseFrontmatter(content) {
   const tkMatch = yaml.match(/^translationKey:\s*"?([^"\n]+)"?\s*$/m);
   if (tkMatch) data.translationKey = tkMatch[1].trim();
 
+  // IMPLEMENTACAO23 §2.2 — scope governa se o grupo exige par EN/ES. Ausente = 'universal'.
+  const scopeMatch = yaml.match(/^scope:\s*"?([\w-]+)"?\s*$/m);
+  data.scope = scopeMatch ? scopeMatch[1] : "universal";
+
   const titleMatch = yaml.match(/^title:\s*(?:"([^"]+)"|'([^']+)'|(.+))\s*$/m);
   if (titleMatch) data.title = (titleMatch[1] || titleMatch[2] || titleMatch[3]).trim();
 
@@ -99,6 +103,7 @@ function validateDir(dir, useTranslationKey) {
   if (!fs.existsSync(dir)) return;
   const files = fs.readdirSync(dir).filter(f => f.endsWith(".md"));
   const translationGroups = {};
+  const groupScope = {}; // groupKey -> scope da peça-mae (PT); default 'universal'
 
   for (const file of files) {
     const content = fs.readFileSync(path.join(dir, file), "utf-8");
@@ -134,6 +139,8 @@ function validateDir(dir, useTranslationKey) {
     if (translationGroups[groupKey][data.locale])
       errors.push("[ERRO] " + file + ": chave " + groupKey + " duplicada para locale " + data.locale);
     translationGroups[groupKey][data.locale] = file;
+    // O scope da peça PT (mãe) define se o grupo exige par EN/ES.
+    if (data.locale === "pt") groupScope[groupKey] = data.scope || "universal";
 
     if (data.locale === "en") {
       const fields = [
@@ -165,6 +172,8 @@ function validateDir(dir, useTranslationKey) {
   }
 
   for (const [key, locales] of Object.entries(translationGroups)) {
+    // Peças br-only/pt-only (§2.2) não exigem par EN/ES.
+    if ((groupScope[key] || "universal") !== "universal") continue;
     const missing = LOCALES.filter(l => !locales[l]);
     if (missing.length > 0)
       errors.push("[ERRO] translationKey " + key + ": FALTANDO idiomas [" + missing.join(", ") + "]");

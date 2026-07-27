@@ -11,6 +11,7 @@ publishedAt: 2026-06-22
 readingTime: 5
 locale: "pt"
 translationKey: "glossario-tesouro-direto"
+scope: "br-only"
 seo:
   metaTitle: "tesouro direto - Glossário Financeiro"
   metaDescription: "Entenda o que é tesouro direto, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."

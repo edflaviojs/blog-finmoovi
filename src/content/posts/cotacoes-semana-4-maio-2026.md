@@ -11,6 +11,7 @@ readingTime: 3
 featured: false
 locale: "pt"
 translationKey: "resumo-semanal-dolar-r-5-03-semana-4-maio"
+scope: "br-only"
 seo:
   metaTitle: "Cotações Semana 4 maio 2026: Dólar R$ 5.03"
   metaDescription: "Resumo semanal: dólar a R$ 5.03, euro a R$ 5.85. Análise e dicas para investidores."

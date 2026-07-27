@@ -11,6 +11,7 @@ readingTime: 3
 featured: false
 locale: "pt"
 translationKey: "resumo-semanal-dolar-r-5-18-semana-1-julho-2026"
+scope: "br-only"
 seo:
   metaTitle: "Cotações Semana 1 julho 2026: Dólar R$ 5.18"
   metaDescription: "Resumo semanal: dólar a R$ 5.18, euro a R$ 5.92. Análise e dicas para investidores."

@@ -11,6 +11,7 @@ publishedAt: 2026-06-21
 readingTime: 5
 locale: "pt"
 translationKey: "glossario-selic"
+scope: "br-only"
 seo:
   metaTitle: "selic - Glossário Financeiro"
   metaDescription: "Entenda o que é selic, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."

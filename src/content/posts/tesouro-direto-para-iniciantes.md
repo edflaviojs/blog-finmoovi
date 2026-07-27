@@ -11,6 +11,7 @@ publishedAt: 2026-06-14
 readingTime: 3
 featured: false
 translationKey: "tesouro-direto-para-iniciantes"
+scope: "br-only"
 seo:
   metaTitle: "Tesouro Direto para Iniciantes"
   metaDescription: "Guia completo sobre investimento em Tesouro Direto, explicando como funciona, vantagens e desvantagens, além de exemplos práticos."

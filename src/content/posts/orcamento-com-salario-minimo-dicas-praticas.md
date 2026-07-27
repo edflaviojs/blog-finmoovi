@@ -11,6 +11,7 @@ publishedAt: 2026-06-22
 readingTime: 3
 featured: false
 translationKey: "orcamento-com-salario-minimo-dicas-praticas"
+scope: "br-only"
 seo:
   metaTitle: "Orçamento com Salário Mínimo: Dicas Práticas"
   metaDescription: "Aprenda a criar um orçamento eficaz com salário mínimo, gerenciando suas finanças de forma inteligente e alcançando estabilidade financeira."

@@ -11,6 +11,7 @@ publishedAt: 2026-06-13
 readingTime: 4
 featured: false
 translationKey: "previdencia-privada-vs-investir-por-conta-propria-qual-vale-"
+scope: "br-only"
 seo:
   metaTitle: "Previdência privada vs Investir por conta própria: qual vale mais a pena em 2026?"
   metaDescription: "Escolha certa para o seu futuro financeiro"

@@ -322,16 +322,21 @@ export function scanPosts() {
     if (!parsed) continue;
     const draft = getScalar(parsed.fm, 'draft');
     if (draft === 'true' || draft === true) continue;
+    const scope = getScalar(parsed.fm, 'scope') || 'universal';
     const key = getScalar(parsed.fm, 'translationKey');
     if (!key) continue; // sem key é tratado por outro validador
     const locale = getScalar(parsed.fm, 'locale') || localeFromFilename(file);
-    if (!groups[key]) groups[key] = { key, present: {} };
+    if (!groups[key]) groups[key] = { key, present: {}, scope: 'universal' };
     groups[key].present[locale] = file;
+    // §2.2 — scope da peça-mãe (PT) governa o grupo; br-only/pt-only não gera par.
+    if (locale === config.defaultLocale) groups[key].scope = scope;
   }
-  return Object.values(groups).map(g => ({
-    ...g,
-    missing: LOCALES.filter(l => !g.present[l]),
-  })).filter(g => g.missing.length > 0);
+  return Object.values(groups)
+    .filter(g => g.scope === 'universal')
+    .map(g => ({
+      ...g,
+      missing: LOCALES.filter(l => !g.present[l]),
+    })).filter(g => g.missing.length > 0);
 }
 
 /** Glossário: agrupa por translationKey (frontmatter). Retorna [{ base, present:{}, missing:[] }] */
@@ -342,17 +347,22 @@ export function scanGlossario() {
     const raw = readFileSync(join(GLOSSARIO_DIR, file), 'utf-8');
     const parsed = splitFrontmatter(raw);
     if (!parsed) continue;
+    const scope = getScalar(parsed.fm, 'scope') || 'universal';
     const key = getScalar(parsed.fm, 'translationKey');
     const locale = localeFromFilename(file);
     // Use translationKey if available, fallback to filename base for legacy files
     const base = key || glossarioBaseSlug(file);
-    if (!groups[base]) groups[base] = { base, present: {} };
+    if (!groups[base]) groups[base] = { base, present: {}, scope: 'universal' };
     groups[base].present[locale] = file;
+    // §2.2 — scope da peça-mãe (PT) governa o grupo; br-only/pt-only não gera par.
+    if (locale === config.defaultLocale) groups[base].scope = scope;
   }
-  return Object.values(groups).map(g => ({
-    ...g,
-    missing: LOCALES.filter(l => !g.present[l]),
-  })).filter(g => g.missing.length > 0);
+  return Object.values(groups)
+    .filter(g => g.scope === 'universal')
+    .map(g => ({
+      ...g,
+      missing: LOCALES.filter(l => !g.present[l]),
+    })).filter(g => g.missing.length > 0);
 }
 
 /** Escolhe o arquivo-fonte para uma lacuna: prioriza o locale padrão, depois os demais. */

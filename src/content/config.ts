@@ -20,6 +20,8 @@ const posts = defineCollection({
     translate: z.boolean().default(true),
     locale: z.enum(config.locales as unknown as [string, ...string[]]).default(config.defaultLocale),
     translationKey: z.string().optional(),
+    // IMPLEMENTACAO23 §2.2 — governança de tradução. Ausente = 'universal' (retrocompatível).
+    scope: z.enum(['universal', 'br-only', 'pt-only']).default('universal'),
     seo: z.object({
       metaTitle: z.string().optional(),
       metaDescription: z.string().optional(),
@@ -38,6 +40,8 @@ const glossario = defineCollection({
     publishedAt: z.coerce.date(),
     locale: z.enum(config.locales as unknown as [string, ...string[]]).default(config.defaultLocale),
     translationKey: z.string().optional(),
+    // IMPLEMENTACAO23 §2.2 — governança de tradução. Ausente = 'universal' (retrocompatível).
+    scope: z.enum(['universal', 'br-only', 'pt-only']).default('universal'),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
     title: z.string().optional(),

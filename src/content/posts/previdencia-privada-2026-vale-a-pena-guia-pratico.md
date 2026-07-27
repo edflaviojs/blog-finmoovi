@@ -11,6 +11,7 @@ publishedAt: 2026-07-22
 readingTime: 6
 featured: false
 translationKey: "previdencia-privada-2026-vale-a-pena-guia-pratico"
+scope: "br-only"
 seo:
   metaTitle: "Previdência privada 2026: vale a pena? Guia prático"
   metaDescription: "Descubra se a previdência privada ainda rende em 2026, compare com outras opções e veja riscos, custos e simulações para decidir e escolher o melhor caminho para sua aposentadoria."
