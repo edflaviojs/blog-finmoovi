@@ -49,6 +49,20 @@ function coveredByGlossario(keyword) {
  *  'glossario' = termo para o glossário (consumido por glossario-auto-diario). */
 export const VALID_CATEGORIES = new Set(['dicas', 'investimentos', 'orcamento', 'glossario']);
 
+// ── RODÍZIO (round-robin) de fontes ──────────────────────────────────────────
+// A cada take BEM-SUCEDIDO a "vez" passa para a próxima fonte (a→b→c→a…). Fonte
+// sem entry pending é pulada pela ordenação (a próxima fonte assume) — não trava.
+// Peso 1:1:1. Rodízio PONDERADO (futuro): trocar indexOf por um mapa fonte→rank.
+export const SOURCE_ROTATION = ['manual', 'gsc-gap', 'autocomplete'];
+
+/** Rank de rodízio de uma fonte dado o cursor (0 = fonte da vez). Fonte fora da
+ *  lista (null/'desconhecida') vai para o fim. */
+function rotationRank(source, cursor) {
+  const i = SOURCE_ROTATION.indexOf(source);
+  if (i < 0) return SOURCE_ROTATION.length;
+  return (i - cursor + SOURCE_ROTATION.length) % SOURCE_ROTATION.length;
+}
+
 /** Normaliza p/ dedup: lowercase, sem acento, espaços colapsados. */
 export function normalizeKeyword(text) {
   return String(text || '')
@@ -61,13 +75,18 @@ export function normalizeKeyword(text) {
 /** Carrega a fila; arquivo ausente/corrompido → fila vazia (nunca lança). */
 export function loadQueue(file = QUEUE_FILE) {
   try {
-    if (!existsSync(file)) return { updatedAt: null, entries: [] };
+    if (!existsSync(file)) return { updatedAt: null, sourceCursor: 0, entries: [] };
     const parsed = JSON.parse(readFileSync(file, 'utf-8'));
     if (!parsed || !Array.isArray(parsed.entries)) throw new Error('formato inesperado (entries ausente)');
-    return { updatedAt: parsed.updatedAt || null, entries: parsed.entries };
+    return {
+      updatedAt: parsed.updatedAt || null,
+      // RODÍZIO: cursor da fonte da vez; ausente/corrompido → 0 (retrocompatível).
+      sourceCursor: Number.isInteger(parsed.sourceCursor) ? parsed.sourceCursor : 0,
+      entries: parsed.entries,
+    };
   } catch (e) {
     console.log(`⚠️ keyword-queue: arquivo inválido/ilegível (${e.message}) — usando fila vazia.`);
-    return { updatedAt: null, entries: [] };
+    return { updatedAt: null, sourceCursor: 0, entries: [] };
   }
 }
 
@@ -135,14 +154,20 @@ export function addEntries(list, file = QUEUE_FILE) {
     if (isNearDuplicate(cand, knownTokens)) { similar++; continue; }
     known.add(norm);
     knownTokens.push(cand);
-    queue.entries.push({
+    // Gancho editorial "No FinMoovi" (opcional): viaja na entry e é devolvido
+    // por takeKeyword ({...chosen}) para o gerador injetar no prompt. NÃO
+    // participa da chave de dedup (essa continua sendo só a keyword normalizada).
+    const finmooviHook = String(item?.finmooviHook || '').replace(/\s+/g, ' ').trim();
+    const entry = {
       keyword,
       category: VALID_CATEGORIES.has(item.category) ? item.category : null,
       priority: [1, 2, 3].includes(item.priority) ? item.priority : 3,
       source: item.source || 'desconhecida',
       status: 'pending',
       addedAt: new Date().toISOString(),
-    });
+    };
+    if (finmooviHook) entry.finmooviHook = finmooviHook;
+    queue.entries.push(entry);
     added++;
   }
   if (added > 0) saveQueue(queue, file);
@@ -166,9 +191,14 @@ export function takeKeyword({ categories = [], exactCategory = false } = {}, fil
   try {
     const queue = loadQueue(file);
     const cats = new Set(categories);
+    const cursor = Number.isInteger(queue.sourceCursor) ? queue.sourceCursor : 0;
     const candidates = queue.entries
       .filter(e => e.status === 'pending' && (cats.has(e.category) || (!exactCategory && e.category == null)))
-      .sort((a, b) => (a.priority - b.priority) || String(a.addedAt).localeCompare(String(b.addedAt)));
+      // RODÍZIO: ordena pela fonte da vez (round-robin) e, dentro da fonte, por
+      // antiguidade. Substitui a antiga prioridade fixa (a.priority - b.priority).
+      .sort((a, b) =>
+        (rotationRank(a.source, cursor) - rotationRank(b.source, cursor)) ||
+        String(a.addedAt).localeCompare(String(b.addedAt)));
 
     let dirty = false;
     let chosen = null;
@@ -190,6 +220,14 @@ export function takeKeyword({ categories = [], exactCategory = false } = {}, fil
       }
       chosen = entry;
       break;
+    }
+    // RODÍZIO: avança a "vez" SÓ quando consumiu de fato — a fonte usada vai para
+    // o fim, a próxima da lista lidera o próximo ciclo. Ciclo vazio não queima
+    // rotação (cursor intacto).
+    if (chosen) {
+      const usedIdx = SOURCE_ROTATION.indexOf(chosen.source);
+      queue.sourceCursor = usedIdx < 0 ? 0 : (usedIdx + 1) % SOURCE_ROTATION.length;
+      dirty = true;
     }
     if (dirty) saveQueue(queue, file);
     return chosen ? { ...chosen } : null;

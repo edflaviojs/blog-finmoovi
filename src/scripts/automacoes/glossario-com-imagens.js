@@ -25,7 +25,7 @@ function slugify(text) {
     .substring(0, 60);
 }
 
-async function generateGlossaryTerm(term, language = 'pt') {
+async function generateGlossaryTerm(term, language = 'pt', finmooviHook = '') {
   console.log(`📚 Gerando glossário para: ${term} (${language})`);
 
   try {
@@ -35,8 +35,10 @@ async function generateGlossaryTerm(term, language = 'pt') {
     const localImagePath = await generateCoverImage(term, slug, 'glossario');
     console.log(`✅ Imagem salva: ${localImagePath}`);
 
-    // Gerar conteúdo com base no idioma (EN/ES devolvem o termo já traduzido)
-    const { term: localizedTerm, content } = await generateGlossaryContent(term, language);
+    // Gerar conteúdo com base no idioma (EN/ES devolvem o termo já traduzido).
+    // finmooviHook (opcional): gancho "No FinMoovi" curado no CSV — injetado no
+    // prompt para o corpo amarrar numa feature real de forma orgânica.
+    const { term: localizedTerm, content } = await generateGlossaryContent(term, language, finmooviHook);
 
     // Inserir 2 imagens inline no conteúdo
     console.log('🖼️ Inserindo imagens inline...');
@@ -56,7 +58,17 @@ async function generateGlossaryTerm(term, language = 'pt') {
   }
 }
 
-async function generateGlossaryContent(term, language) {
+async function generateGlossaryContent(term, language, finmooviHook = '') {
+  // Gancho editorial "No FinMoovi" (opcional): quando presente, vira uma regra
+  // extra no prompt instruindo o modelo a incorporá-lo organicamente e adaptá-lo
+  // ao idioma. Ausente → prompt idêntico ao original (as regras de feature já
+  // cobrem a amarração). O texto do hook vem em PT; instruímos a adaptação.
+  const hook = String(finmooviHook || '').replace(/\s+/g, ' ').trim();
+  const hookLine = !hook ? '' : ({
+    pt: `\n- GANCHO DO APP (obrigatório): ao mostrar o FinMoovi resolvendo, incorpore de forma orgânica e natural esta ideia — "${hook}". Reescreva com suas palavras dentro do texto; não copie literal nem force um CTA.`,
+    en: `\n- APP HOOK (mandatory, adapt to English): when showing FinMoovi solving it, weave in this idea organically — "${hook}". Rephrase it naturally in English; do not copy it literally or force a CTA.`,
+    es: `\n- GANCHO DE LA APP (obligatorio, adapta al español): al mostrar a FinMoovi resolviéndolo, incorpora de forma orgánica esta idea — "${hook}". Reformúlala con naturalidad en español; no la copies literal ni fuerces un CTA.`,
+  }[language] || '');
   const langPrompts = {
     pt: `
 Escreva um texto educativo completo sobre o termo financeiro "${term}".
@@ -78,7 +90,7 @@ REGRAS DE CONTEÚDO:
 - Use listas com bullet points quando listar itens
 - Termos técnicos devem ser explicados inline
 - Tom conversacional mas informativo — como um amigo que entende de finanças
-- Último H2 deve ser "Comece hoje" com uma micro-ação de 5 minutos dentro do app
+- Último H2 deve ser "Comece hoje" com uma micro-ação de 5 minutos dentro do app${hookLine}
 
 Formato: markdown puro, sem code blocks, sem HTML.
 `,
@@ -102,7 +114,7 @@ CONTENT RULES:
 - Use bullet point lists when listing items
 - Technical terms should be explained inline
 - Conversational but informative tone — like a friend who understands finance
-- Last H2 should be "Start today" with a 5-minute micro-action inside the app
+- Last H2 should be "Start today" with a 5-minute micro-action inside the app${hookLine}
 
 OUTPUT FORMAT (mandatory) — respond EXACTLY in this format and nothing else:
 ---TERM---
@@ -130,7 +142,7 @@ REGLAS DE CONTENIDO:
 - Use listas con viñetas al listar elementos
 - Los términos técnicos deben explicarse inline
 - Tono conversacional pero informativo — como un amigo que entiende de finanzas
-- Último H2 debe ser "Empieza hoy" con una micro-acción de 5 minutos dentro de la app
+- Último H2 debe ser "Empieza hoy" con una micro-acción de 5 minutos dentro de la app${hookLine}
 
 FORMATO DE SALIDA (obligatorio) — responde EXACTAMENTE en este formato y nada más:
 ---TERM---

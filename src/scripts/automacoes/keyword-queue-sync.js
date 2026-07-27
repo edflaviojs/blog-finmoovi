@@ -67,9 +67,16 @@ function importCsv() {
   for (const [i, line] of lines.entries()) {
     if (i === 0 && /^keyword\s*,/i.test(line)) continue; // header
     if (line.trim().startsWith('#')) continue;
-    // Formato: keyword,categoria,observacao — observação pode conter vírgulas.
-    const [keyword = '', categoria = ''] = line.split(',', 3);
-    const kw = keyword.trim();
+    // Formato: keyword,categoria,observacao — a OBSERVAÇÃO pode conter vírgulas,
+    // então NÃO use split (truncaria no 1º ','): fatiamos só nas 2 primeiras
+    // vírgulas e tudo depois é a observação (o gancho "No FinMoovi"). A keyword
+    // não pode conter vírgula (é a chave); a categoria também não.
+    const i1 = line.indexOf(',');
+    if (i1 < 0) continue; // linha sem separador → ignorada
+    const i2 = line.indexOf(',', i1 + 1);
+    const kw = line.slice(0, i1).trim();
+    const categoria = line.slice(i1 + 1, i2 < 0 ? line.length : i2);
+    const observacao = i2 < 0 ? '' : line.slice(i2 + 1);
     if (!kw) continue;
     const cat = categoria.trim().toLowerCase();
     rows.push({
@@ -77,6 +84,7 @@ function importCsv() {
       category: VALID_CATEGORIES.has(cat) ? cat : null, // categoria inválida → null
       priority: 1,
       source: 'manual',
+      finmooviHook: observacao.trim(), // gancho "No FinMoovi" (opcional)
     });
   }
   const res = addEntries(rows);

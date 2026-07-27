@@ -145,8 +145,12 @@ async function main() {
       return;
     }
 
+    // Gancho "No FinMoovi" (opcional): só existe quando o termo veio da fila com
+    // finmooviHook curado no CSV. Vazio na rotação A-Z (prompt fica o padrão).
+    const finmooviHook = queueEntry?.finmooviHook || '';
+
     // Gerar post principal em português (com imagens)
-    const ptPost = await generateGlossaryTerm(selectedTerm, 'pt');
+    const ptPost = await generateGlossaryTerm(selectedTerm, 'pt', finmooviHook);
 
     // Reutilizar a mesma imagem de capa para todos os idiomas
     const sharedImage = ptPost.image;
@@ -182,7 +186,7 @@ ${ptPost.content}
     if (config.locales.includes('en')) {
     console.log('⏳ Aguardando 30s para evitar rate limit...');
     await new Promise(r => setTimeout(r, 30000));
-    const enPost = await generateGlossaryTerm(selectedTerm, 'en');
+    const enPost = await generateGlossaryTerm(selectedTerm, 'en', finmooviHook);
     // Slug do TERMO TRADUZIDO e limpo; prefixo 'en-' FORA do slugify e nunca do title
     // (para não arrastar o sufixo "- Financial Glossary" para dentro da URL).
     const enSlug = 'en-' + slugify(enPost.term);
@@ -214,7 +218,7 @@ ${enPost.content}
     if (config.locales.includes('es')) {
     console.log('⏳ Aguardando 30s para evitar rate limit...');
     await new Promise(r => setTimeout(r, 30000));
-    const esPost = await generateGlossaryTerm(selectedTerm, 'es');
+    const esPost = await generateGlossaryTerm(selectedTerm, 'es', finmooviHook);
     // Slug do TERMO TRADUZIDO e limpo; prefixo 'es-' FORA do slugify e nunca do title
     // (para não arrastar o sufixo "- Glosario Financiero" para dentro da URL).
     const esSlug = 'es-' + slugify(esPost.term);
