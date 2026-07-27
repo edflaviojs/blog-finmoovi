@@ -398,5 +398,105 @@
         "status": 200
       }
     }
+  },
+  {
+    "slug": "orcamento-semanal-guia-para-quem-recebe-por-semana-2026",
+    "title": "Orçamento semanal: guia para quem recebe por semana (2026)",
+    "url": "https://blog.finmoovi.com/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026",
+    "submittedAt": "2026-07-27T16:52:58.866Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1803156063
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "poupar-dinheiro-dicas-7-habitos-simples-para-2026",
+    "title": "Poupar dinheiro dicas: 7 hábitos simples para 2026",
+    "url": "https://blog.finmoovi.com/posts/poupar-dinheiro-dicas-7-habitos-simples-para-2026",
+    "submittedAt": "2026-07-27T16:52:59.728Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1803156067
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento",
+    "title": "Dia dos Pais: planeje gastos sem apertar o orçamento",
+    "url": "https://blog.finmoovi.com/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento",
+    "submittedAt": "2026-07-27T16:53:00.271Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1803156070
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-",
+    "title": "5 passos práticos para começar a poupar para a Black Friday 2026",
+    "url": "https://blog.finmoovi.com/posts/5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-",
+    "submittedAt": "2026-07-27T16:53:00.839Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1803156074
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
+  },
+  {
+    "slug": "como-economizar-no-plano-de-celular-e-internet-em-2026",
+    "title": "como economizar no plano de celular e internet em 2026",
+    "url": "https://blog.finmoovi.com/posts/como-economizar-no-plano-de-celular-e-internet-em-2026",
+    "submittedAt": "2026-07-27T16:53:01.387Z",
+    "platforms": {
+      "raindrop": {
+        "success": true,
+        "itemId": 1803156078
+      },
+      "flipboard": {
+        "success": true,
+        "status": 200
+      },
+      "mix": {
+        "success": true,
+        "status": 200
+      }
+    }
   }
 ]
