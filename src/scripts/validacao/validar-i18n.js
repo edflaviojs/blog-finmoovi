@@ -85,9 +85,17 @@ function main() {
   }
 
   // 2. Todos os translationKeys devem ter exatamente 3 locales
+  // IMPLEMENTACAO23 §2.2 — o keyMap varre TODOS os posts (duplicata e mês
+  // traduzido precisam enxergar também as peças locais); quem isenta a
+  // exigência de par é o localKeys, por GRUPO: o scope da peça-mãe (PT)
+  // governa o grupo — br-only/pt-only não exige par EN/ES. Mesmo contrato de
+  // lib/i18n-sync.js e scripts/validate-i18n-sync.js (scope em arquivo EN/ES
+  // é ignorado de propósito: só o PT decide).
   const keyMap = {};
-  for (const post of universalPosts) {
+  const localKeys = new Set();
+  for (const post of posts) {
     if (!post.translationKey) continue;
+    if (post.locale === config.defaultLocale && post.scope !== 'universal') localKeys.add(post.translationKey);
     if (!keyMap[post.translationKey]) keyMap[post.translationKey] = {};
     if (keyMap[post.translationKey][post.locale]) {
       errors.push(`❌ DUPLICATA: translationKey "${post.translationKey}" tem 2+ posts no locale "${post.locale}":`);
@@ -98,6 +106,7 @@ function main() {
   }
 
   for (const [key, locales] of Object.entries(keyMap)) {
+    if (localKeys.has(key)) continue; // grupo local: não exige par EN/ES
     const present = LOCALES.filter(l => locales[l]).length;
     if (present !== LOCALES.length) {
       const missing = LOCALES.filter(l => !locales[l]);
@@ -106,7 +115,8 @@ function main() {
   }
 
   // 3. Contagem por locale deve ser igual (entre os locales configurados)
-  const counts = Object.fromEntries(LOCALES.map(l => [l, universalPosts.filter(p => p.locale === l).length]));
+  const pairedPosts = universalPosts.filter(p => !localKeys.has(p.translationKey));
+  const counts = Object.fromEntries(LOCALES.map(l => [l, pairedPosts.filter(p => p.locale === l).length]));
   console.log(`📊 Posts: ${LOCALES.map(l => `${l.toUpperCase()}=${counts[l]}`).join(', ')}`);
 
   const base = counts[LOCALES[0]];
