@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # necessário para git diff contra base ref / before SHA
 
       - uses: actions/setup-node@v7
         with:
@@ -23,6 +25,35 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Compute changed content files (anchor strict scope)
+        run: |
+          set +e
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch --no-tags origin "${{ github.base_ref }}" >/dev/null 2>&1
+            RANGE="origin/${{ github.base_ref }}...HEAD"
+          else
+            BEFORE="${{ github.event.before }}"
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+              RANGE=""   # first push / branch-create / force-push: sem base confiável
+            else
+              RANGE="$BEFORE ${{ github.sha }}"
+            fi
+          fi
+
+          if [ -z "$RANGE" ]; then
+            echo "Sem range de diff confiavel -> guard em WARNING puro (nao bloqueia)."
+            CHANGED=""
+          else
+            CHANGED=$(git diff --name-only --diff-filter=AMR $RANGE -- src/content/posts src/content/glossario 2>/dev/null)
+          fi
+
+          echo "Arquivos estritos (novos/alterados):"; echo "$CHANGED"
+          {
+            echo 'ANCHOR_STRICT_FILES<<__ANCHOR_EOF__'
+            echo "$CHANGED"
+            echo '__ANCHOR_EOF__'
+          } >> "$GITHUB_ENV"
 
       - name: Run i18n validation
         run: npm run validate:i18n

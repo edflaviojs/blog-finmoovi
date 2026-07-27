@@ -57,6 +57,19 @@ const LOCAL_ANCHORS = [
 const ANCHOR_GUARD_BLOCKING = false;
 let anchorHits = []; // { file, line, label }
 
+// IMPLEMENTACAO23 Fase 6.1 — enforcement "só o novo": arquivos NOVOS/ALTERADOS
+// bloqueiam; o legado permanece WARNING. Populado pelo i18n-gate via `git diff`
+// (basename normalizado). Vazio/ausente (execução local ou diff indisponível) =>
+// tudo WARNING (NUNCA bloqueia os ~350 legados). `ANCHOR_GUARD_BLOCKING=true`
+// continua sendo o override que bloqueia TUDO (pós-faxina).
+const ANCHOR_STRICT_FILES = new Set(
+  (process.env.ANCHOR_STRICT_FILES || "")
+    .split(/[\n,]/)
+    .map((p) => p.trim())
+    .filter(Boolean)
+    .map((p) => p.split("/").pop()) // path -> basename (anchorHits guarda basename)
+);
+
 let errors = [];
 let warnings = [];
 
@@ -241,19 +254,29 @@ console.log("");
 validateDir(POSTS_DIR, true);
 validateDir(GLOSSARIO_DIR, true);
 
-// IMPLEMENTACAO23 Fase 6 — saída do guard de âncora local (arquivo:linha — termo).
+// IMPLEMENTACAO23 Fase 6.1 — saída do guard (arquivo:linha — termo).
+// Classificação: hit em arquivo estrito (novo/alterado) bloqueia; legado = WARNING.
 if (anchorHits.length > 0) {
-  const header = ANCHOR_GUARD_BLOCKING
-    ? "  ANCORAS LOCAIS em pecas universal (BLOQUEANTE):"
-    : "  ANCORAS LOCAIS em pecas universal (WARNING - nao bloqueia):";
-  console.log("");
-  console.log(header + " " + anchorHits.length + " ocorrencia(s):");
-  anchorHits.slice(0, 40).forEach(({ file, line, label }) =>
-    console.log("   [ANCHOR] " + file + ":" + line + " - [" + label + "]"));
-  if (anchorHits.length > 40)
-    console.log("   ... e mais " + (anchorHits.length - 40) + " ocorrencia(s).");
-  if (ANCHOR_GUARD_BLOCKING)
-    errors.push("Guard de ancora local: " + anchorHits.length + " ocorrencia(s) em pecas universal.");
+  const isStrict = (h) => ANCHOR_GUARD_BLOCKING || ANCHOR_STRICT_FILES.has(h.file);
+  const strict = anchorHits.filter(isStrict);
+  const legacy = anchorHits.filter((h) => !isStrict(h));
+
+  if (legacy.length > 0) {
+    console.log("");
+    console.log("  ANCORAS LOCAIS em pecas universal LEGADAS (WARNING - nao bloqueia): " + legacy.length + " ocorrencia(s):");
+    legacy.slice(0, 20).forEach(({ file, line, label }) =>
+      console.log("   [ANCHOR] " + file + ":" + line + " - [" + label + "]"));
+    if (legacy.length > 20) console.log("   ... e mais " + (legacy.length - 20) + " ocorrencia(s).");
+  }
+
+  if (strict.length > 0) {
+    console.log("");
+    console.log("  ANCORAS LOCAIS em pecas NOVAS/ALTERADAS (BLOQUEANTE): " + strict.length + " ocorrencia(s):");
+    strict.forEach(({ file, line, label }) =>
+      console.log("   [ANCHOR] " + file + ":" + line + " - [" + label + "]"));
+    errors.push("Guard de ancora local: " + strict.length + " ocorrencia(s) em pecas novas/alteradas. " +
+      "Peca universal nova NAO pode conter R$/Brasil/brasileiro (use valores relativos, ou marque scope: br-only / allowLocalAnchors: true).");
+  }
 }
 
 if (errors.length > 0) {
