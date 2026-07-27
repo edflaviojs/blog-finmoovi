@@ -48,3 +48,4 @@ Add the installment as a **recurring expense** and it shows up automatically in 
 ## Start today
 
 Open FinMoovi, add the installment you're considering as a recurring expense, and watch your cash flow for the next few months. Five minutes now tells you whether this loan fits your life — before it becomes a signature you regret.
+
