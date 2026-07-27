@@ -1,34 +1,39 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-07-23T20:12:37.922Z
-**Totais:** 11 pendente(s) · 0 usada(s) · 7 pulada(s)
+**Atualizado em:** 2026-07-27T10:31:26.175Z
+**Totais:** 14 pendente(s) · 2 usada(s) · 7 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 7
+### Manuais (prioridade 1) — 5
 
-- como economizar no plano de celular e internet _(dicas)_
 - o que é CDI e como ele afeta seus investimentos _(investimentos)_
 - orçamento doméstico para quem recebe por semana _(orcamento)_
-- poupar dinheiro dicas
 - orçamento pessoal mensal
 - controlar despesas pessoais
 - organizar finanças pessoais
 
-### Lacunas do GSC (prioridade 2) — 0
+### Lacunas do GSC (prioridade 2) — 2
 
-_Nenhuma._
+- calculadora juros compostos
+- kyc
 
-### Autocomplete (prioridade 3) — 4
+### Autocomplete (prioridade 3) — 7
 
 - amortização de financiamento
 - amortização price
 - amortização fies
 - como poupar dinheiro dicas
+- kyc o que é
+- kyco
+- kyc shopee
 
 ## ✅ Últimas usadas
 
-_Nenhuma ainda._
+| Keyword | Usada por | Em |
+|---|---|---|
+| poupar dinheiro dicas | gerar-dicas-financeiras | 2026-07-26 |
+| como economizar no plano de celular e internet | gerar-dicas-financeiras | 2026-07-24 |
 
 ## ⏭️ Puladas (já cobertas)
 

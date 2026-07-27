@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T10:29:33.930Z",
+  "updatedAt": "2026-07-27T10:31:26.175Z",
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -155,6 +155,46 @@
       "source": "autocomplete",
       "status": "pending",
       "addedAt": "2026-07-23T20:12:37.921Z"
+    },
+    {
+      "keyword": "calculadora juros compostos",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-07-27T10:31:25.227Z"
+    },
+    {
+      "keyword": "kyc",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-07-27T10:31:25.227Z"
+    },
+    {
+      "keyword": "kyc o que é",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-07-27T10:31:26.174Z"
+    },
+    {
+      "keyword": "kyco",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-07-27T10:31:26.174Z"
+    },
+    {
+      "keyword": "kyc shopee",
+      "category": null,
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-07-27T10:31:26.174Z"
     }
   ]
 }
