@@ -11,7 +11,9 @@ permissions:
 jobs:
   convert:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    # 15 min, nao 5: o script faz ate 3 chamadas de LLM para virais + ate 3 para
+    # keywords, e ainda roda `npm ci`. Com 5 min estourava no primeiro soluco de API.
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
         with:
@@ -21,12 +23,23 @@ jobs:
         with:
           node-version: '22'
 
+      # OBRIGATORIO: o script importa src/scripts/apis/kie-ai.js, que puxa
+      # image-router.js -> `sharp` (pacote nativo). Sem node_modules o import
+      # estoura, loadLLM() devolve null, o import viral e PULADO e as keywords
+      # caem no fallback cru (a keyword literal virando tema). Este era o unico
+      # workflow do kie-ai sem npm ci.
+      - name: Instalar dependencias
+        run: npm ci
+
       - name: Converter keywords em temas YouTube
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
-          CF_AI_TOKEN: ${{ secrets.CF_AI_TOKEN }}
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          # CLOUDFLARE_* (nao CF_*): sao estes os nomes que o kie-ai.js le. O
+          # secret CF_AI_TOKEN nem existe neste repo, e CF_ACCOUNT_ID e do
+          # Analytics — o fallback Cloudflare estava morto duas vezes.
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: node scripts/keywords-to-youtube-topics.js
 
       - name: Commitar temas novos

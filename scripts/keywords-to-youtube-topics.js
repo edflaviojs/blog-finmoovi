@@ -24,6 +24,15 @@ const PUBLISHED_PATH = join(ROOT, '.github', 'data', 'youtube-published.json');
 // video. Com 3, as duas fontes convivem: o viral traz alcance, o glossario traz
 // o lastro de SEO e o vinculo com o blog. Mexer aqui muda o PERFIL do canal.
 const VIRAL_MAX_PER_RUN = 3;
+
+// Cap das keywords, pela MESMA aritmetica do viral. Havia 39 keywords pending
+// quando isto foi escrito (27/07): sem cap, uma unica execucao despejaria 39
+// temas de uma vez na fila e o glossario ficaria fora do ar por ~2 meses.
+// Conta: o cron consome ~7 videos/semana; com 3 virais + 3 keywords entram 6 e
+// saem 7, entao a fila DRENA ~1/semana e o glossario volta a ter vez.
+// DIFERENCA para o viral: a keyword-queue e PERSISTENTE — o que nao entra hoje
+// entra na proxima. Nada e perdido, so espacado.
+const KEYWORD_MAX_PER_RUN = 3;
 const DRY_RUN = process.argv.includes('--dry-run');
 
 const CATEGORY_TO_PILLAR = {
@@ -94,10 +103,14 @@ function slugify(text) {
   return text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 }
 
+// `sourceKeyword` (em todos os retornos) registra de QUAL keyword o tema
+// nasceu. E o unico jeito de saber, na proxima execucao, que esta entry ja foi
+// convertida — o id do topic vem do TEMA gerado, que nunca bate com a keyword.
+// Sem isso, o cap causaria starvation das mesmas 3 primeiras da fila.
 async function transformKeywordToTopic(keyword, category, generateText) {
   const pillar = CATEGORY_TO_PILLAR[category] || 'mindset';
   if (!generateText) {
-    return { id: 'kw-' + slugify(keyword), theme: keyword.length > 60 ? keyword.slice(0, 57) + '...' : keyword, angle: 'Transformar "' + keyword + '" num video pratico com numeros reais e exemplos do dia-a-dia', pillar, source: 'keyword-queue', glossaryRef: null, status: 'pending' };
+    return { id: 'kw-' + slugify(keyword), theme: keyword.length > 60 ? keyword.slice(0, 57) + '...' : keyword, angle: 'Transformar "' + keyword + '" num video pratico com numeros reais e exemplos do dia-a-dia', pillar, source: 'keyword-queue', glossaryRef: null, status: 'pending', sourceKeyword: keyword };
   }
   const prompt = `Transforme esta keyword de blog em um TEMA de video YouTube Short (45-55s) que seja INTERESSANTE e NAO seja uma aula/explicacao.
 
@@ -120,10 +133,10 @@ glossaryRef = slug do termo do glossario que serve de base ou null.`;
     const jsonMatch = raw.match(/\{[\s\S]*\}/);
     if (!jsonMatch) throw new Error('LLM nao retornou JSON');
     const parsed = JSON.parse(jsonMatch[0]);
-    return { id: 'kw-' + slugify(parsed.theme || keyword), theme: parsed.theme || keyword, angle: parsed.angle || 'Abordar "' + keyword + '" de forma pratica com numeros reais', pillar, source: 'keyword-queue', glossaryRef: parsed.glossaryRef === 'null' ? null : (parsed.glossaryRef || null), status: 'pending' };
+    return { id: 'kw-' + slugify(parsed.theme || keyword), theme: parsed.theme || keyword, angle: parsed.angle || 'Abordar "' + keyword + '" de forma pratica com numeros reais', pillar, source: 'keyword-queue', glossaryRef: parsed.glossaryRef === 'null' ? null : (parsed.glossaryRef || null), status: 'pending', sourceKeyword: keyword };
   } catch (err) {
     console.error('  LLM falhou para "' + keyword + '": ' + err.message + ' - usando fallback');
-    return { id: 'kw-' + slugify(keyword), theme: keyword.length > 60 ? keyword.slice(0, 57) + '...' : keyword, angle: 'Transformar "' + keyword + '" num video pratico com numeros reais', pillar, source: 'keyword-queue', glossaryRef: null, status: 'pending' };
+    return { id: 'kw-' + slugify(keyword), theme: keyword.length > 60 ? keyword.slice(0, 57) + '...' : keyword, angle: 'Transformar "' + keyword + '" num video pratico com numeros reais', pillar, source: 'keyword-queue', glossaryRef: null, status: 'pending', sourceKeyword: keyword };
   }
 }
 
@@ -245,16 +258,37 @@ async function main() {
     if (pending.length === 0) {
       console.log('Nenhuma keyword pending na fila.');
     } else {
-      console.log('Keywords pending: ' + pending.length);
-      for (const entry of pending) {
-        const tentativeId = 'kw-' + slugify(entry.keyword);
-        if (existingIds.has(tentativeId)) { console.log('  "' + entry.keyword + '" ja existe - pulando'); continue; }
+      // Deduplicar ANTES de aplicar o cap (mesmo padrao do caminho viral) e,
+      // sobretudo, deduplicar pelo criterio CERTO: `sourceKeyword`.
+      //
+      // Por que nao dava para usar o id do topic: o id e 'kw-' + slug do TEMA
+      // gerado pelo LLM, e o prompt proibe que o tema repita a keyword — entao
+      // 'kw-' + slug da keyword quase nunca bate com o id do topic que ela
+      // gerou. Com o cap, isso viraria starvation: as 3 primeiras keywords
+      // seriam reprocessadas toda semana (com tema diferente a cada vez, pois
+      // temperature=0.7) e as demais nunca teriam vez.
+      //
+      // Por que NAO usamos markUsed() da keyword-queue, que seria o obvio: ela
+      // grava status:'used' na fila DO BLOG, e o takeKeyword() dos geradores de
+      // post filtra por 'pending'. O YouTube estaria roubando a keyword do
+      // blog. As duas filas nao se misturam — regra dura do dono.
+      const usedKeywordSlugs = new Set(
+        topicsData.topics.map((t) => (t.sourceKeyword ? slugify(t.sourceKeyword) : null)).filter(Boolean)
+      );
+      const fresh = pending.filter((e) => !usedKeywordSlugs.has(slugify(e.keyword)) && !existingIds.has('kw-' + slugify(e.keyword)));
+      const batch = fresh.slice(0, KEYWORD_MAX_PER_RUN);
+      console.log('Keywords pending: ' + pending.length + ' | ineditas: ' + fresh.length + ' | processando ' + batch.length + ' nesta execucao');
+      if (fresh.length > batch.length) {
+        console.log((fresh.length - batch.length) + ' keywords ficam para as proximas execucoes (a fila e persistente, ao contrario do trends).');
+      }
+      for (const entry of batch) {
         console.log('  Convertendo: "' + entry.keyword + '"');
         const topic = await transformKeywordToTopic(entry.keyword, entry.category, generateText);
         if (!existingIds.has(topic.id)) {
           topicsData.topics.push(topic);
           existingIds.add(topic.id);
           existingThemeSlugs.add(slugify(topic.theme || ''));
+          usedKeywordSlugs.add(slugify(entry.keyword)); // 2 entries com a mesma keyword no lote
           added++;
           console.log('  Tema: "' + topic.theme + '"');
         }
