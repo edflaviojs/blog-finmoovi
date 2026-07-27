@@ -21,7 +21,7 @@ seo:
 When it comes to investing, it's essential to understand the available options and how they can fit your [investor profile](/en/posts/en-fixed-income-vs-variable-income-which-is-worth-it-in-2026). Two of the most popular [investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i) are CDs (Certificates of Deposit) and government bonds indexed to the interbank rate. But, after all, which one yields more in 2026? To understand this, let's dive into the details of each.
 
 ### What is a CD?
-A CD is a type of fixed‑income investment offered by banks and financial institutions. It works like a loan you make to the bank, and in return, the bank pays an interest rate. CDs can be pre‑fixed, post‑fixed, or hybrid, each with its own way of calculating interest.
+A CD is a type of fixed‑income investment offered by banks and financial institutions. It works like a loan you make to the bank, and in return, the bank pays an [interest](/en/glossario/en-interest) rate. CDs can be pre‑fixed, post‑fixed, or hybrid, each with its own way of calculating interest.
 
 ### What is a Government Bond?
 A government bond, on the other hand, is a fixed‑income investment issued by the national treasury, with a guarantee from the government. It is indexed to the interbank rate, which is the basic interest rate of the economy defined by the central bank. This means that the [yield](/en/glossario/en-yield) of the bond follows the variations of the interbank rate.
@@ -38,7 +38,7 @@ However, these numbers are simplified and do not consider possible variations of
 
 ## Risks
 ### CD Risks
-CDs, although considered a low‑risk investment, are not completely risk‑free. The main risk is the credit risk of the issuing bank. If the bank has financial problems, there may be difficulty redeeming the investment. However, deposit insurance offers protection of up to $50,000 per account holder and financial institution.
+CDs, although considered a low‑risk investment, are not completely risk‑free. The main risk is the [credit](/en/glossario/en-credit) risk of the issuing bank. If the bank has financial problems, there may be difficulty redeeming the investment. However, deposit insurance offers protection of up to $50,000 per account holder and financial institution.
 
 ### Government Bond Risks
 Government bonds, being an investment with a government guarantee, are considered very low‑risk. However, the investor is subject to variations in the interbank rate, which can affect the yield. Additionally, because some bonds are indexed to [inflation](/en/glossario/en-inflation) (inflation‑indexed bonds), the investor may also be affected by variations in inflation indices.

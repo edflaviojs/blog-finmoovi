@@ -92,7 +92,7 @@ Limited Free plan – Premium starting at $2.60/month.
 ## 4. Money Lover – The habit‑focused app
 
 **Description**  
-Money Lover blends expense tracking with habit‑change techniques, such as savings goals and “overspend” alerts. In two sentences, it offers a calendar view that highlights days you exceeded your budget and lets you create “money envelopes” for specific projects.
+Money Lover blends expense tracking with habit‑change techniques, such as [savings](/en/glossario/en-savings) goals and “overspend” alerts. In two sentences, it offers a calendar view that highlights days you exceeded your budget and lets you create “money envelopes” for specific projects.
 
 **Pros**  
 - “Envelopes” (virtual pockets) that help you set aside money for trips, a car, or emergencies.  

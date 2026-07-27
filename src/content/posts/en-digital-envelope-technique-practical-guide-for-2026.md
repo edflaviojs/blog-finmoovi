@@ -65,7 +65,7 @@ This process takes less than 5 minutes and leaves your [budget](/en/posts/en-5-t
 
 For someone earning $200, the margin for error is small; someone earning $1,600 can make more flexible monthly adjustments.
 
-> **Important:** Consult official sources such as the [central bank] to understand interest‑rate limits and fees that may affect your [budget](/en/posts/en-how-to-create-personal-budget).
+> **Important:** Consult official sources such as the [central bank] to understand [interest](/en/glossario/en-interest)‑rate limits and fees that may affect your [budget](/en/posts/en-how-to-create-personal-budget).
 
 ## Reviewing results monthly
 

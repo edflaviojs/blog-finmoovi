@@ -17,7 +17,7 @@ seo:
   keywords: ["black friday 2026","save money","personal finance","FinMoovi","budget","conscious consumption","money-saving tips","save for black friday","early black friday preparation"]
 ---
 
-A Black Friday is already on the calendar and, if you haven’t started setting money aside yet, there’s still time to get ready. You don’t need to be a finance expert; just follow a few simple steps and use the right tools. In this post, we’ll show **how to start saving for Black Friday right now**, in a practical, hassle‑free way.
+A Black Friday is already on the calendar and, if you haven’t started setting money aside yet, there’s still time to get ready. You don’t need to be a [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) expert; just follow a few simple steps and use the right tools. In this post, we’ll show **how to start saving for Black Friday right now**, in a practical, hassle‑free way.
 
 > *Imagine walking into a store (or onto a website) with the money already earmarked, picking what you truly need and still walking out with change in your pocket. Sounds too good to be true? It’s totally doable.*
 
@@ -56,11 +56,11 @@ Total: **$640**, already covering your budget of $671 with a little extra left f
 
 ### Friendly tool: FinMoovi
 
-To track these monthly deposits, **FinMoovi** works like a digital piggy bank. It lets you set savings goals, log each transfer, and even sends alerts when you’re close to hitting your limit. It’s like having a friend who reminds you to move the money into the account every time you pay the electricity bill.
+To track these monthly deposits, **FinMoovi** works like a digital piggy bank. It lets you set [savings](/en/glossario/en-savings) goals, log each transfer, and even sends alerts when you’re close to hitting your limit. It’s like having a friend who reminds you to move the money into the account every time you pay the electricity bill.
 
 ## 3. Trim fixed expenses before Black Friday
 
-Fixed expenses are the biggest savings killers. According to **credit bureaus**, the average debt of families in 2023 topped $2,400, showing that many people carry unnecessary costs.
+Fixed expenses are the biggest savings killers. According to **[credit](/en/glossario/en-credit) bureaus**, the average [debt](/en/glossario/en-debt) of families in 2023 topped $2,400, showing that many people carry unnecessary costs.
 
 **5 steps to cut costs:**
 
