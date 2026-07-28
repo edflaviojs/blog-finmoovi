@@ -187,15 +187,29 @@ export function loadRecentPublishedContext({ publishedPath = PUBLISHED_PATH, out
 /**
  * Monta o bloco ANTI-REPETIÇÃO (≤900 chars) que entra no prompt: por vídeo
  * anterior, lista estilo/frase de intro, metáforas e frases-história, e PROÍBE
- * repeti-los. Se estourar 900 chars, trunca as frases-história primeiro (as menos
- * críticas); backstop = corte duro. Retorna '' se não houver vídeo anterior.
+ * repeti-los. Retorna '' se não houver vídeo anterior.
+ *
+ * Se estourar 900 chars, encolhe SÓ a lista de vídeos — primeiro as frases-
+ * história, depois descartando os vídeos mais antigos. As REGRAS entram sempre
+ * inteiras: são a única coisa aqui que o modelo precisa obedecer, e cortá-las
+ * (como fazia o slice cego anterior) transforma o bloco num aviso mudo.
  */
 export function buildAntiRepetitionBlock(context) {
   const list = (context || []).filter(Boolean);
   if (list.length === 0) return '';
   const MAX = 900;
-  const render = (storyCap) => {
-    const parts = list.map((c, i) => {
+  const HEAD = '🚫 ANTI-REPETIÇÃO — os vídeos anteriores do canal usaram: ';
+  // As REGRAS são a parte que o modelo precisa OBEDECER — nunca podem ser
+  // truncadas. Até 28/07/2026 elas viviam no fim de uma string única cortada a
+  // 900 chars por um slice cego. Medido com o contexto real de produção
+  // (aplicacao-financeira, amortizacao, alavancagem): o bloco batia EXATAMENTE
+  // 900 e a proibição do molde "Você ACREDITA que…" era decepada — nunca chegou
+  // ao modelo. Enquanto isso o template JSON de saída entregava esse mesmo
+  // molde como exemplo a preencher. O sistema pedia e punia a mesma coisa, e o
+  // Short morria todos os dias na 4ª tentativa desde 25/07.
+  const REGRAS = '. É PROIBIDO: repetir o MESMO estilo de intro do vídeo mais recente; reutilizar qualquer uma dessas metáforas principais; repetir ou parafrasear essas frases/histórias. Crie uma intro com formato DIFERENTE e um momento-história NOVO, com exemplo original adaptado ao tema deste termo. Se a sua frase de intro couber no molde "Você ACREDITA que X pode virar Y", ela será REJEITADA — invente outra construção.';
+  const renderParts = (items, storyCap) => {
+    const parts = items.map((c, i) => {
       const label = i === 0 ? 'mais recente' : `${i + 1}º mais recente`;
       const metas = c.metaphors && c.metaphors.length ? c.metaphors.join(', ') : '—';
       const stories = c.stories && c.stories.length
@@ -206,15 +220,21 @@ export function buildAntiRepetitionBlock(context) {
         : '—';
       return `[${label}: estilo de intro ${c.style || '—'} · frase de intro "${c.frase || '—'}" · metáforas: ${metas} · histórias: ${stories}]`;
     });
-    return `🚫 ANTI-REPETIÇÃO — os vídeos anteriores do canal usaram: ${parts.join(' ')}. É PROIBIDO: repetir o MESMO estilo de intro do vídeo mais recente; reutilizar qualquer uma dessas metáforas principais; repetir ou parafrasear essas frases/histórias. Crie uma intro com formato DIFERENTE e um momento-história NOVO, com exemplo original adaptado ao tema deste termo. Se a sua frase de intro couber no molde "Você ACREDITA que X pode virar Y", ela será REJEITADA — invente outra construção.`;
+    return parts.join(' ');
   };
-  let block = render(0); // 0 = sem corte nas frases-história
-  if (block.length <= MAX) return block;
-  for (const cap of [90, 70, 50, 30]) {
-    block = render(cap);
+  // Só a LISTA de vídeos encolhe. Primeiro corta as frases-história (cap 0 = sem
+  // corte); se ainda não couber, descarta os vídeos mais ANTIGOS, que são os
+  // menos críticos — o anti-repetição de estilo só olha o mais recente.
+  // As REGRAS entram sempre inteiras, mesmo que o bloco passe de 900.
+  for (const cap of [0, 90, 70, 50, 30]) {
+    const block = `${HEAD}${renderParts(list, cap)}${REGRAS}`;
     if (block.length <= MAX) return block;
   }
-  return `${block.slice(0, MAX - 1).trimEnd()}…`;
+  for (let n = list.length - 1; n >= 1; n--) {
+    const block = `${HEAD}${renderParts(list.slice(0, n), 30)}${REGRAS}`;
+    if (block.length <= MAX) return block;
+  }
+  return `${HEAD}${renderParts(list.slice(0, 1), 30)}${REGRAS}`;
 }
 
 // Marketing intelligence block (loaded once per run)
@@ -351,7 +371,7 @@ A pontuação existe SÓ para comandar o respiro da voz (TTS). Vírgula/ponto/re
 Use reticências (…) para SUSPENSE de efeito, não para picotar frase. A última frase de cada cena puxa a próxima.
 
 ════════ INTRO (abertura disruptiva — SEMPRE dinâmica e adaptada ao tema) ════════
-"intro.frase" = frase de CURIOSIDADE que para o dedo, com as palavras de ÊNFASE marcadas entre *asteriscos* (o render dá destaque nelas). NÃO siga sempre o mesmo molde de frase — VARIE a construção (pergunta, desafio, afirmação chocante, contagem); NÃO abra todo vídeo com "Você acredita que…". Ex. (EXEMPLO de formato — NUNCA copie os valores NEM a construção, use os números reais de "${t.term}"): "*Você ACREDITA* que R$ 500 podem virar *R$ 3,2 MILHÕES*???".
+"intro.frase" = frase de CURIOSIDADE que para o dedo, com as palavras de ÊNFASE marcadas entre *asteriscos* (o render dá destaque nelas). NÃO siga sempre o mesmo molde de frase — VARIE a construção (pergunta, desafio, afirmação chocante, contagem); ⛔ O molde "Você ACREDITA que X pode virar Y" está QUEIMADO (já foi usado) — quem o usar, mesmo variando os números, é REJEITADO. Abaixo está só o FORMATO da marcação de ênfase — NÃO é uma frase e não deve ser copiada nem adaptada: "*TRECHO EM ÊNFASE* texto normal… *FECHO CURTO EM ÊNFASE*". A frase em si é sua, com os números reais de "${t.term}".
 "intro.style" = classifique em UMA palavra o FORMATO da sua frase de intro: "pergunta", "desafio", "afirmacao" (afirmação chocante) ou "contagem". PRECISA ser DIFERENTE do estilo do vídeo mais recente (ver ANTI-REPETIÇÃO).
 "intro.counter" = { "from", "to", "prefix" } — um contador que sobe do início ao resultado (ex., EXEMPLO de formato — NUNCA copie os valores: 500 → 3200000). "from" < "to", números puros (sem pontos/símbolos), usando os números reais do termo atual.
 
@@ -364,7 +384,7 @@ Responda APENAS com JSON válido (sem texto fora do JSON, sem markdown), neste f
   "nextVideoTitle": "",
   "intro": {
     "style": "pergunta",
-    "frase": "*Você ACREDITA* que … *resultado-choque*???",
+    "frase": "<SUA frase de intro — construção original, ÊNFASE entre *asteriscos*>",
     "counter": { "from": 500, "to": 3200000, "prefix": "R$" }
   },
   "scenes": [
@@ -395,15 +415,30 @@ function extractJson(text) {
   return JSON.parse(s.slice(start, end + 1));
 }
 
-// Monta o bloco corretivo anexado ao prompt na tentativa SEGUINTE a uma
-// validação reprovada: lista os erros EXATOS do validador (obrigatórios) e até
-// ~5 avisos como melhorias opcionais. O prompt-base continua sendo enviado.
+// Monta o bloco corretivo anexado ao prompt nas tentativas seguintes a uma
+// validação reprovada. Recebe as exigências ACUMULADAS do run (ver generateScript)
+// — não só as da última tentativa — e até ~5 avisos como melhorias opcionais.
+// O prompt-base continua sendo enviado.
 // Limite total ~1200 chars: corta os avisos primeiro (menos críticos) e só
-// depois os erros, se ainda faltar espaço — outro contribuinte pro 413 do Groq.
+// depois as exigências mais ANTIGAS, nunca as mais recentes.
+// Nos runs de 27 e 28/07 o bloco acumulado deu 692 chars — mas o teto CONTINUA
+// alcançável: bastam ~3 exigências novas por tentativa (erros de âncora, de
+// tempo de tela do app ou de número por extenso interpolam texto variável e
+// nunca deduplicam) para passar de 1200 na 3ª/4ª tentativa. Não tratar 692
+// como propriedade do sistema — é só a medição de dois runs.
 function buildCorrectiveBlock(errors, warnings) {
   const MAX_CHARS = 1200;
-  const header = '⚠️ SUA TENTATIVA ANTERIOR FOI REJEITADA. Corrija EXATAMENTE estes erros e gere o roteiro completo novamente:';
-  const errorLines = errors.map(e => `- ${e}`);
+  const header = '⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. O roteiro novo tem que cumprir TODAS as exigências abaixo AO MESMO TEMPO — corrigir uma e violar outra conta como falha. Gere o roteiro completo de novo:';
+
+  // Trunca por LINHA INTEIRA, descartando a MAIS ANTIGA. O corte por caractere
+  // que existia aqui fazia duas coisas erradas: partia uma exigência ao meio
+  // (o modelo recebia "- cena 2… (trecho)" sob um cabeçalho que manda cumprir
+  // TODAS) e, por a lista ser mais-antiga-primeiro, descartava justamente as
+  // MAIS RECENTES — as que o modelo acabou de violar.
+  let errorLines = errors.map(e => `- ${e}`);
+  while (errorLines.length > 1 && [header, ...errorLines].join('\n').length > MAX_CHARS) {
+    errorLines = errorLines.slice(1);
+  }
   let lines = [header, ...errorLines];
 
   const topWarnings = (warnings || []).slice(0, 5);
@@ -412,12 +447,7 @@ function buildCorrectiveBlock(errors, warnings) {
     if (withWarnings.join('\n').length <= MAX_CHARS) lines = withWarnings;
   }
 
-  let block = lines.join('\n');
-  if (block.length > MAX_CHARS) {
-    // ainda estourou só com os erros: trunca o bloco inteiro na fronteira do limite
-    block = `${block.slice(0, MAX_CHARS)}… (trecho)`;
-  }
-  return block;
+  return lines.join('\n');
 }
 
 /**
@@ -443,6 +473,18 @@ export function runHardAntiRepetitionChecks(script, recentContext) {
   const intro = (script && script.intro) || {};
   const frase = typeof intro.frase === 'string' ? intro.frase : '';
   const list = (recentContext || []).filter(Boolean);
+
+  // (a0) SENTINELA DE PLACEHOLDER — o prompt mostra dois moldes vazios que o
+  // modelo tem de preencher em vez de copiar: `"frase": "<SUA frase de intro…>"`
+  // no template JSON e "*TRECHO EM ÊNFASE* … *FECHO CURTO EM ÊNFASE*" no bloco
+  // INTRO. Copiados à letra, NADA os apanhava: não são molde repetido, não têm
+  // número por extenso e não são vazios — o Short ia a render com o placeholder
+  // escrito na tela e ainda envenenava o recentContext do dia seguinte.
+  // `<`/`>` e a palavra ÊNFASE em maiúsculas não têm uso legítimo numa frase
+  // de tela, portanto servem de sentinela sem risco de falso positivo.
+  if (/[<>]/.test(frase) || /ÊNFASE/.test(frase)) {
+    errors.push('intro.frase copiou um placeholder do prompt (o "<…>" do template ou o "*TRECHO EM ÊNFASE*") — escreva a frase de verdade');
+  }
 
   // (a) molde de intro repetido
   if (frase) {
@@ -490,7 +532,16 @@ export function runHardAntiRepetitionChecks(script, recentContext) {
 async function generateScript(t, { retries = 4, antiRep = '', recentContext = [] } = {}) {
   const basePrompt = buildPrompt(t, antiRep);
   let lastErr;
-  let corrective = ''; // bloco corretivo acumulado da última reprovação de validação
+  // Exigências ACUMULADAS de TODAS as tentativas reprovadas deste run, sem repetir.
+  // Antes isto era SUBSTITUÍDO a cada tentativa (apesar de o comentário já dizer
+  // "acumulado"), e produzia um PÊNDULO: a tentativa seguinte corrigia o que
+  // acabara de ser cobrado e regredia no resto, porque a exigência anterior tinha
+  // desaparecido do prompt. Medido no run 30345848019 (28/07): att1 molde de intro
+  // → att2 cena "cta" → att3 o MESMO molde de intro da att1 → att4 cena "cta".
+  // Ciclo de período 2 com retries=4 ⇒ as duas exigências nunca coexistem no
+  // prompt e convergir é IMPOSSÍVEL, não improvável.
+  const exigencias = [];
+  let corrective = '';
   for (let attempt = 1; attempt <= retries; attempt++) {
     if (attempt > 1) await sleep(TPM_COOLDOWN_MS);
     const prompt = corrective ? `${basePrompt}\n\n${corrective}` : basePrompt;
@@ -503,8 +554,12 @@ async function generateScript(t, { retries = 4, antiRep = '', recentContext = []
       script = extractJson(raw);
     } catch (err) {
       lastErr = `parse falhou (tentativa ${attempt}): ${err.message}`;
-      console.log(`⚠️ ${lastErr} — regenerando...`);
-      corrective = ''; // falha de parse: mantém o comportamento atual (mesmo prompt-base)
+      console.log(`⚠️ ${lastErr}${attempt < retries ? ' — regenerando...' : ' — sem tentativas restantes.'}`);
+      // Falha de parse: a tentativa seguinte vai com o prompt-base limpo, como
+      // sempre foi (o bloco corretivo é suspeito de contribuir para o LLM sair
+      // do formato). NÃO limpa `exigencias`: elas voltam ao prompt assim que
+      // houver nova reprovação de VALIDAÇÃO, que é onde fazem falta.
+      corrective = '';
       continue;
     }
     // Resgata quase-erros óbvios (sfx/icon/anchor/totalDurationSec) antes de validar
@@ -517,9 +572,21 @@ async function generateScript(t, { retries = 4, antiRep = '', recentContext = []
     const allErrors = [...errors, ...hardErrors];
     if (ok && hardErrors.length === 0) return { script, warnings };
     lastErr = `validação falhou (tentativa ${attempt}): ${allErrors.join('; ')}`;
-    console.log(`⚠️ ${lastErr} — regenerando...`);
-    // Próxima tentativa recebe o prompt-base + correção pontual dos erros
-    corrective = buildCorrectiveBlock(allErrors, warnings);
+    console.log(`⚠️ ${lastErr}${attempt < retries ? ' — regenerando...' : ' — sem tentativas restantes.'}`);
+    // Só acumulam as exigências DURADOURAS — as que não apontam para uma cena
+    // ou shot específico. As posicionais ficam OBSOLETAS assim que o roteiro é
+    // regerado (a "cena 4" da tentativa anterior pode nem existir na seguinte)
+    // e ainda interpolam texto variável, o que faz o dedup nunca disparar e a
+    // lista crescer sem parar. As duradouras são exatamente as do pêndulo
+    // medido: molde de intro, estilo de intro e invariantes de estrutura.
+    const ehDuradoura = e => !/^cena \d+/i.test(e) && !/\bshot \d+/i.test(e);
+    for (const e of allErrors) {
+      if (ehDuradoura(e) && !exigencias.includes(e)) exigencias.push(e);
+    }
+    // Antigas primeiro, as desta tentativa por último: se o teto do bloco
+    // apertar, quem cai é a exigência mais velha, nunca a mais recente.
+    const antigas = exigencias.filter(e => !allErrors.includes(e));
+    corrective = buildCorrectiveBlock([...antigas, ...allErrors], warnings);
   }
   throw new Error(lastErr || 'não foi possível gerar um roteiro válido');
 }
