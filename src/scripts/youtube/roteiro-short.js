@@ -639,8 +639,17 @@ async function main() {
 }
 
 // Só executa main() quando o arquivo é o ponto de entrada (node roteiro-short.js).
-// Quando importado (ex.: pelo teste unitário do bloco anti-repetição), as funções
-// exportadas ficam disponíveis sem disparar a geração/LLM.
+// Quando importado, as funções exportadas ficam disponíveis sem disparar a
+// geração/LLM — o que torna este ficheiro testável.
+//
+// ⚠️ NÃO EXISTE teste nenhum deste ficheiro. A versão anterior deste comentário
+// dizia "ex.: pelo teste unitário do bloco anti-repetição", dando a entender
+// que havia rede de segurança. Não há: o repo tem UM único ficheiro de teste
+// (tests/comments-validation.test.js), sem relação com o YouTube, que nenhum
+// workflow executa e para o qual não há script npm. Verificado em 28/07/2026.
+// Os 3 testes que fazem falta estão especificados na IMPLEMENTACAO20 (§ dívida
+// de testes) — teriam apanhado as três contradições prompt×validador que
+// deixaram o Short parado de 25 a 28/07.
 const invokedDirectly = (() => {
   try {
     return !!process.argv[1] && realpathSync(process.argv[1]) === realpathSync(fileURLToPath(import.meta.url));
