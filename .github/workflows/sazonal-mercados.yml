@@ -57,7 +57,16 @@ jobs:
       - name: Validar consistência i18n
         run: node src/scripts/validacao/validar-i18n.js
 
+      # Roda MESMO se a validacao acima reprovar. Sem isto, gate vermelho =
+      # push nunca acontece = o post e a capa morrem no runner efemero — e o
+      # gerador ja marcou o feriado como coberto em sazonal-cobertos.json
+      # ANTES do push, entao o feriado nunca mais e tentado nesse ano. A perda
+      # e PERMANENTE e nao se recupera com re-run. O gate continua marcando o
+      # job de vermelho (o passo acima nao foi tocado); o que muda e que o
+      # conteudo deixa de ser descartado em silencio.
+      # !cancelled() e nao always(): cancelamento manual nao deve publicar.
       - name: Push changes
+        if: ${{ !cancelled() }}
         run: |
           git pull --rebase origin main || true
           if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
