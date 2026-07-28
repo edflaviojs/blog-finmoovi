@@ -66,9 +66,33 @@ jobs:
           echo ""
           echo "HTTP: $CODE2"
 
-          if [ "$CODE2" = "200" ]; then
-            echo "✅ Aceite efetivado — o modelo de visao respondeu 200."
-          else
+          if [ "$CODE2" != "200" ]; then
             echo "::error::Ainda nao liberado (HTTP $CODE2). Veja a resposta acima."
+            exit 1
+          fi
+          echo "✅ Aceite efetivado — o modelo de visao respondeu 200."
+
+          # 3/3: o gerar-alt-imagens.js NAO usa /ai/run — usa o endpoint
+          # compativel com OpenAI (/ai/v1/chat/completions) e manda a imagem em
+          # base64. Sem testar ESTE caminho, dizer que o fallback funciona seria
+          # suposicao. Imagem: 1 pixel PNG (suficiente p/ validar o aceite).
+          echo ""
+          echo "== 3/3: testando o endpoint REAL do script (chat/completions + imagem) =="
+          PIX="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
+          BODY=$(printf '{"model":"%s","max_tokens":40,"messages":[{"role":"user","content":[{"type":"text","text":"Describe this image in 5 words."},{"type":"image_url","image_url":{"url":"%s"}}]}]}' "$MODEL" "$PIX")
+          RESP3=$(curl -s -w "\n%{http_code}" -X POST \
+            "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/ai/v1/chat/completions" \
+            -H "Authorization: Bearer ${AI_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "$BODY")
+          CODE3=$(echo "$RESP3" | tail -n1)
+          echo "$RESP3" | sed '$d' | head -c 600
+          echo ""
+          echo "HTTP: $CODE3"
+
+          if [ "$CODE3" = "200" ]; then
+            echo "✅ Fallback de visao OPERACIONAL no endpoint que o script usa."
+          else
+            echo "::error::/ai/v1/chat/completions ainda recusa (HTTP $CODE3) — o aceite nao cobre este caminho."
             exit 1
           fi
