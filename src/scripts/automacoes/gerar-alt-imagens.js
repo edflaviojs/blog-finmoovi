@@ -41,7 +41,10 @@ const VISION = [
     enabled: !!process.env.GROQ_API_KEY,
     url: 'https://api.groq.com/openai/v1/chat/completions',
     apiKey: process.env.GROQ_API_KEY,
-    model: process.env.GROQ_VISION_MODEL || 'meta-llama/llama-4-scout-17b-16e-instruct',
+    // llama-4-scout foi aposentado pelo Groq em 17/06/2026 (respondia 404 e
+    // derrubava o job inteiro no circuit breaker). qwen3.6-27b e o substituto
+    // oficial e o unico modelo de visao do Groq hoje.
+    model: process.env.GROQ_VISION_MODEL || 'qwen/qwen3.6-27b',
   },
   {
     name: 'Cloudflare Workers AI',
