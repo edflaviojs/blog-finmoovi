@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-28T11:09:44.279Z",
-  "sourceCursor": 2,
+  "updatedAt": "2026-07-28T11:49:06.123Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -71,8 +71,10 @@
       "category": null,
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-07-23T13:15:09.582Z"
+      "status": "used",
+      "addedAt": "2026-07-23T13:15:09.582Z",
+      "usedAt": "2026-07-28T11:49:06.123Z",
+      "usedBy": "gerar-post-inteligente"
     },
     {
       "keyword": "amortização price",
