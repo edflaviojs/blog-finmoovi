@@ -190,6 +190,20 @@ async function run() {
   }
 
   console.log(`\n=== RESUMO ===\nGerados: ${processed} | Pulados: ${skipped} | Erros: ${errors}`);
+
+  // Falhar ALTO quando nada foi gerado E houve erro. Sem isto o job saia com
+  // exit 0 e o GitHub marcava "success" mesmo com Gerados: 0 — foi o que
+  // escondeu por semanas o modelo aposentado do Groq (404) somado ao 403 do
+  // Cloudflare. Regra deliberadamente estreita:
+  //   processed > 0            -> sucesso, mesmo com erros avulsos (rodada
+  //                               parcial e o comportamento normal ao bater
+  //                               no teto diario da API; a agenda retoma);
+  //   processed 0 e errors 0   -> sucesso (nada a fazer, tudo ja tem alt);
+  //   processed 0 e errors > 0 -> falha: tentou e NADA funcionou.
+  if (processed === 0 && errors > 0) {
+    console.error(`\n🚨 Nenhum imageAlt gerado em ${errors} tentativa(s) — provedores de visão indisponíveis (modelo aposentado, chave inválida ou teto atingido). Veja os erros acima.`);
+    process.exitCode = 1;
+  }
 }
 
 run();
