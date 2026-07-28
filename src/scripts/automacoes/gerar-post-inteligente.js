@@ -10,7 +10,7 @@ import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.j
 import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
-import { postCoreRules, seedKeywordRules } from '../lib/prompt-post.js';
+import { postCoreRules, seedKeywordRules, tituloColouSeedKeyword } from '../lib/prompt-post.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readFileSync, readdirSync } from 'fs';
@@ -402,6 +402,18 @@ async function main() {
   // Year-guard: corrige ano defasado no título antes do slug.
   const yg = fixStaleYear(post.title);
   if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); post.title = yg.text; }
+
+  // Trava dura da regra de prompt `seedKeywordRules` (prompt-post.js): a regra é só um
+  // PEDIDO ao LLM — medição no corpus mostrou 2 de 6 keywords consumidas com título colado
+  // (~1 em 3). Aborta ANTES de qualquer escrita/commit (este gerador faz `git commit` antes
+  // do gate de validação; bloquear depois perderia conteúdo em silêncio no runner). A keyword
+  // permanece "pending" na fila (markUsed não é chamado) e é retentada no próximo ciclo.
+  if (queueEntry && tituloColouSeedKeyword(post.title, queueEntry.keyword)) {
+    // ::warning:: (padrao de seo-guard.js:87): o job sai VERDE, e sem anotacao
+    // no Actions um gerador que para de publicar ficaria invisivel.
+    console.log(`::warning::título colou a keyword-semente literal ("${queueEntry.keyword}") — nada publicado; a keyword volta à fila e é tentada no próximo ciclo.`);
+    return;
+  }
 
   const slug = slugify(post.title);
   console.log(`  Título: ${post.title}`);

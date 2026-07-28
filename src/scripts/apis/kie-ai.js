@@ -214,7 +214,7 @@ REGRAS DE FORMA (mantidas):
 **${selectedCta}**
 
 ESTRUTURA:
-- Título SEO (50-60 caracteres, keyword no início; se mencionar ano, use ${CURRENT_YEAR})
+- Título SEO (50-60 caracteres${seedKeyword ? ' — o título NÃO pode COMEÇAR pela keyword-semente (ver a regra acima); reescreva-a em português natural' : ', keyword no início'}; se mencionar ano, use ${CURRENT_YEAR})
 - Meta descrição (150-160 caracteres)
 - Headline de ticker: chamada ultra curta (MÁXIMO 40 caracteres) estilo manchete que desperta curiosidade sem entregar a resposta (ex: "O erro que suga seu salário")
 - Conteúdo com 800-1200 palavras, 4-6 seções com H2

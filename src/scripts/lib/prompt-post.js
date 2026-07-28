@@ -82,3 +82,37 @@ SEMENTE DE BUSCA — "${kw}" (NÃO é um título):
   texto quebrado.
 `;
 }
+
+/**
+ * Trava DURA (não é regra de prompt) do que `seedKeywordRules` só PEDE ao LLM:
+ * detecta se o título gerado colou a keyword-semente literalmente no início.
+ * Medição no corpus (27/07): 2 de 6 keywords consumidas da fila produziram
+ * título colado (~1 em 3) — a regra de prompt sozinha não basta.
+ *
+ * "Começa por" (não "contém"): é a assinatura do defeito — o LLM cola a keyword
+ * e pendura um sufixo. "Contém" produziria falso positivo em títulos naturais
+ * (ex.: "Como o custo de vida subiu em 2026" é um bom título e não pode reprovar).
+ *
+ * @param {string} titulo Título PT já finalizado (pós year-guard).
+ * @param {string} keyword Keyword-semente crua vinda da fila (queueEntry.keyword).
+ * @returns {boolean} true se o título começa pela keyword-semente colada.
+ */
+export function tituloColouSeedKeyword(titulo, keyword) {
+  const normalize = (s) => String(s || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const kw = normalize(keyword);
+  if (!kw) return false;
+
+  // Keyword curta demais (< 3 palavras): risco de falso positivo, não reprova.
+  if (kw.split(' ').length < 3) return false;
+
+  const tit = normalize(titulo);
+  // Fronteira de palavra: "custo de vida" não pode casar dentro de "custo de vidas".
+  return tit === kw || tit.startsWith(`${kw} `);
+}

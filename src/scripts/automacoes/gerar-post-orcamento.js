@@ -6,7 +6,7 @@ import { guardedTranslate } from '../lib/lang-guard.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
-import { postCoreRules, seedKeywordRules } from '../lib/prompt-post.js';
+import { postCoreRules, seedKeywordRules, tituloColouSeedKeyword } from '../lib/prompt-post.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
@@ -192,7 +192,7 @@ Escreva um artigo prático sobre: "${topic}"
 
 Responda OBRIGATORIAMENTE neste formato exato (use os delimitadores):
 ---TITULO---
-[título SEO, 50-60 chars, keyword no início; se mencionar ano, use ${CURRENT_YEAR}]
+[título SEO, 50-60 chars${queueEntry ? ' — o título NÃO pode COMEÇAR pela keyword-semente (ver a regra acima); reescreva-a em português natural' : ', keyword no início'}; se mencionar ano, use ${CURRENT_YEAR}]
 ---META---
 [meta description, 150-160 chars]
 ---HEADLINE---
@@ -279,6 +279,18 @@ REGRAS DE FORMA (mantidas):
     // Year-guard: corrige ano defasado no título antes do slug.
     const yg = fixStaleYear(title);
     if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); title = yg.text; }
+
+    // Trava dura da regra de prompt `seedKeywordRules` (prompt-post.js): a regra é só um
+    // PEDIDO ao LLM — medição no corpus mostrou 2 de 6 keywords consumidas com título colado
+    // (~1 em 3). Aborta ANTES de qualquer escrita/commit (este gerador faz `git commit` antes
+    // do gate de validação; bloquear depois perderia conteúdo em silêncio no runner). A keyword
+    // permanece "pending" na fila (markUsed não é chamado) e é retentada no próximo ciclo.
+    if (queueEntry && tituloColouSeedKeyword(title, queueEntry.keyword)) {
+      // ::warning:: (padrao de seo-guard.js:87): o job sai VERDE, e sem anotacao
+      // no Actions um gerador que para de publicar ficaria invisivel.
+      console.log(`::warning::título colou a keyword-semente literal ("${queueEntry.keyword}") — nada publicado; a keyword volta à fila e é tentada no próximo ciclo.`);
+      return;
+    }
 
     const allKeywords = [...new Set([...keywords, ...topicKeywords])];
     const slugPt = createSlug(title);

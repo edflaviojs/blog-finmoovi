@@ -10,6 +10,7 @@ import { isThemeCovered, coveredThemesBlock, warnSkip } from '../lib/seo-guard.j
 import { takeKeyword, markUsed, QUEUE_FILE } from '../lib/keyword-queue.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
 import { getTranslationInstructions } from '../lib/translation-prompt.js';
+import { tituloColouSeedKeyword } from '../lib/prompt-post.js';
 import { analyzeContent } from '../lib/fact-guard.js';
 import { fixStaleYear, CURRENT_YEAR } from '../lib/year-guard.js';
 import { writeFileSync, mkdirSync, existsSync, readdirSync, readFileSync } from 'fs';
@@ -326,6 +327,20 @@ Responda APENAS com o tema, em uma única linha, sem aspas e sem explicação.`,
     // Year-guard: corrige ano defasado no título antes do slug.
     const yg = fixStaleYear(post.title);
     if (yg.changed) { console.log(`[year-guard] título corrigido: "${yg.original}" → "${yg.text}"`); post.title = yg.text; }
+
+    // Trava dura da regra de prompt `seedKeywordRules` (prompt-post.js): a regra é só um
+    // PEDIDO ao LLM — medição no corpus mostrou 2 de 6 keywords consumidas com título colado
+    // (~1 em 3). Aborta ANTES de qualquer escrita/commit (este gerador faz `git commit` antes
+    // do gate de validação; bloquear depois perderia conteúdo em silêncio no runner). A keyword
+    // permanece "pending" na fila (markUsed não é chamado) e é retentada no próximo ciclo.
+    if (queueEntry && tituloColouSeedKeyword(post.title, queueEntry.keyword)) {
+      // ::warning:: e nao console.log: o job sai VERDE (skip legitimo, padrao de
+      // seo-guard.js:87), entao sem anotacao no Actions isto seria invisivel — e
+      // um gerador que nao publica em silencio e o modo de falha classico deste
+      // repo. A anotacao torna visivel sem transformar skip em falha.
+      console.log(`::warning::título colou a keyword-semente literal ("${queueEntry.keyword}") — nada publicado; a keyword volta à fila e é tentada no próximo ciclo.`);
+      return;
+    }
 
     console.log(`✅ Post PT gerado: ${post.title}`);
 
