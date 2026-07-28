@@ -10,40 +10,40 @@ publishedAt: 2025-05-10
 readingTime: 1
 ---
 
-## What is a FGC Guarantee?
+## What is a Deposit Insurance Guarantee?
 
-The FGC (Fundo Garantidor de Créditos) is like an insurance for your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) in banks. If the bank goes bankrupt, the FGC returns your money — up to R$ 250,000 per CPF per financial institution.
+The Deposit Insurance Fund (similar to FDIC insurance) is like an insurance for your [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) in banks. If the bank goes bankrupt, the fund returns your money — up to **$50,000** per account holder per financial institution.
 
 ## What is covered
 
-- [CDB](/en/glossario/en-cdb) (Certificado de Depósito Bancário)
-- [LCI and LCA](/en/glossario/en-lci-and-lca)
+- [Certificates of Deposit (CDs)](/en/glossario/en-cdb) (formerly CDB)
+- Real estate‑backed securities (formerly LCI and LCA)
 - Savings account
 - Checking account
-- RDB
-- Exchange letters
+- Bank deposit receipts (formerly RDB)
+- Foreign exchange letters
 
 ## What is NOT covered
 
 - Stocks
 - Investment funds
 - [Debentures](/en/glossario/en-debentures)
-- Treasury Direct (has a federal government guarantee)
-- CRI and CRA
+- Government bonds (formerly Treasury Direct, which has a federal government guarantee)
+- Real estate investment certificates (formerly CRI and CRA)
 - [Private pension](/en/glossario/en-private-pension)
 
 ## Limits
 
-- **R$ 250,000** per CPF per institution
-- **R$ 1,000,000** in total (global ceiling, renewed every 4 years)
+- **$50,000** per account holder per institution
+- **$200,000** in total (global ceiling, renewed every 4 years)
 
 ## Practical strategy
 
-If you have R$ 500,000 to invest in CDB:
-- Put R$ 250,000 in Bank A
-- Put R$ 250,000 in Bank B
-- Both are 100% covered by the FGC
+If you have **$100,000** to invest in CDs:
+- Put $50,000 in Bank A
+- Put $50,000 in Bank B
+- Both are 100% covered by the deposit insurance guarantee
 
 ## Important tip
 
-Smaller banks usually pay higher rates (120-130% of [CDI](/en/glossario/en-cdi)) precisely because they are less well‑known. With the FGC guarantee, the risk is virtually the same as a large bank — but the return is higher.
+Smaller banks usually pay higher rates (120‑130% of the [interbank rate](/en/glossario/en-cdi)) precisely because they are less well‑known. With the deposit insurance guarantee, the risk is virtually the same as a large bank — but the return is higher.

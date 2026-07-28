@@ -12,11 +12,11 @@ readingTime: 2
 
 ## What is Financial Goal?
 
-Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule-for-purchases). It's not "I want to save more" — it's "I want to save R$ 10,000 by December 2025 to make a down payment on a car". The more specific, the higher the chance of achieving it.
+Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule-for-purchases). It's not "I want to save more" — it's "I want to save $2,000 by December 2025 to make a down payment on a car". The more specific, the higher the chance of achieving it.
 
 ## How to define good goals (SMART method)
 
-- **S**pecific: "Save R$ 10,000" (not "save more")
+- **S**pecific: "Save $2,000" (not "save more")
 - **M**easurable: exact value that can be tracked
 - **A**chievable: possible with your current [income](/en/posts/en-building-a-diversified-portfolio-with-r-500)
 - **R**elevant: important to you
@@ -26,19 +26,19 @@ Financial goal is a concrete objective for your [money](/en/posts/en-30-day-rule
 
 ### Short term (up to 1 year)
 
-- Build an [emergency fund](/en/glossario/en-emergency-fund) of R$ 15,000
-- Pay off a [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) debt of R$ 3,000
-- Save R$ 5,000 for a trip
+- Build an [emergency fund](/en/glossario/en-emergency-fund) of $3,000
+- Pay off a [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) debt of $600
+- Save $1,000 for a trip
 
 ### Medium term (1-5 years)
 
-- Save R$ 50,000 for a down payment on an apartment
-- Buy a new car (R$ 30,000)
-- Study abroad (R$ 20,000)
+- Save $10,000 for a down payment on an apartment
+- Buy a new car ($6,000)
+- Study abroad ($4,000)
 
 ### Long term (5+ years)
 
-- Achieve [financial independence](/en/glossario/en-financial-independence) (R$ 1,500,000)
+- Achieve [financial independence](/en/glossario/en-financial-independence) ($300,000)
 - Supplemental [retirement](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide)
 - Buy a property outright
 

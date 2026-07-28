@@ -18,12 +18,12 @@ seo:
 ---
 
 ## Basic [Financial Education](/en/glossario/en-financial-education)
-Teaching [personal finance](/en/posts/en-30-day-rule-for-purchases) to children is essential for them to develop healthy habits regarding [money](/en/posts/en-creating-an-emergency-fund). This starts with a basic understanding that [money](/en/posts/en-difference-between-investing-and-saving) is not infinite and that it's necessary to work to earn it. For example, if a parent earns R$ 5,000 per month and the family spends R$ 3,000 on basic [expenses](/en/posts/en-the-50-30-20-method-for-budgeting), the child can begin to understand that the remaining amount can be used to save or invest.
+Teaching [personal finance](/en/posts/en-30-day-rule-for-purchases) to children is essential for them to develop healthy habits regarding [money](/en/posts/en-creating-an-emergency-fund). This starts with a basic understanding that [money](/en/posts/en-difference-between-investing-and-saving) is not infinite and that it's necessary to work to earn it. For example, if a parent earns $1,000 per month and the family spends $600 on basic [expenses](/en/posts/en-the-50-30-20-method-for-budgeting), the child can begin to understand that the remaining amount can be used to save or invest.
 
-A practical way to start is by giving children an allowance, which they can use to buy things they want, such as toys or sweets. However, it's essential to teach that the allowance should also be used to save and help with family expenses. For example, if the allowance is R$ 100 per month, the child can decide to save R$ 20 to buy a more expensive toy in the future.
+A practical way to start is by giving children an allowance, which they can use to buy things they want, such as toys or sweets. However, it's essential to teach that the allowance should also be used to save and help with family expenses. For example, if the allowance is $20 per month, the child can decide to save $4 to buy a more expensive toy in the future.
 
 ## Importance of [Economy](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation)
-The [economy](/en/posts/en-avoid-impulse-purchases) is an important concept for children to learn, as it helps them understand that [money](/en/posts/en-financial-planning-for-couples) is not infinite and that it's necessary to make choices about how to use it. For example, if a child wants to buy a new video game that costs R$ 200, they may need to save for several months to reach that goal.
+The [economy](/en/posts/en-avoid-impulse-purchases) is an important concept for children to learn, as it helps them understand that [money](/en/posts/en-financial-planning-for-couples) is not infinite and that it's necessary to make choices about how to use it. For example, if a child wants to buy a new video game that costs $40, they may need to save for several months to reach that goal.
 
 **Practical tip:** Create a "jar" system for the child, where they can divide their allowance into different jars for different goals, such as a jar for saving, one for spending, and one for donating. This helps visualize financial goals and make conscious choices about how to use money.
 
@@ -34,14 +34,14 @@ The [economy](/en/posts/en-avoid-impulse-purchases) is an important concept for 
 ## Teaching Personal Finance
 Teaching personal finance to children can start with simple concepts, such as the difference between needs and wants. For example, a need is something essential for life, such as food and shelter, while a want is something desired but not necessary, such as a toy.
 
-A way to teach this is by creating a family budget that includes basic expenses and financial goals. For example, if the family has a budget of R$ 5,000 per month, it may be necessary to prioritize basic expenses, such as rent and food, and then decide how to use the remaining amount to achieve financial goals.
+A way to teach this is by creating a family budget that includes basic expenses and financial goals. For example, if the family has a budget of $1,000 per month, it may be necessary to prioritize basic expenses, such as rent and food, and then decide how to use the remaining amount to achieve financial goals.
 
 ![Ensino de finanças pessoais](/images/posts/educacao-financeira-para-criancas-3.webp)
 
 
 
 ## Resources for Financial Education
-There are many resources available to help educate children about personal finance, including books, games, and apps. For example, the [Banco Central do Brasil](https://www.bcb.gov.br) offers educational resources for children and teenagers, including games and interactive activities.
+There are many resources available to help educate children about personal finance, including books, games, and apps. For example, the [central bank](https://www.bcb.gov.br) offers educational resources for children and teenagers, including games and interactive activities.
 
 Additionally, there are apps, such as FinMoovi, that can help children better understand how to manage money and achieve financial goals. These apps can be a useful tool for teaching personal finance in a practical and fun way.
 

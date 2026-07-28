@@ -29,11 +29,11 @@ A **fee** is simply the charge applied for a service, an investment or a loan. I
 
 ## How it works
 
-When you accept a contract – whether a loan or an investment – the institution sets a fee that will be applied to the principal amount. This fee can be fixed (doesn’t change) or variable (adjusts according to an index, such as the **[Selic](/en/glossario/en-selic)**). The calculation is usually done on the outstanding balance or on the invested amount, and the result is added to your statement or to the return.  
+When you accept a contract – whether a loan or an investment – the institution sets a fee that will be applied to the principal amount. This fee can be fixed (doesn’t change) or variable (adjusts according to an index, such as the **[central bank base rate](/en/glossario/en-selic)**). The calculation is usually done on the outstanding balance or on the invested amount, and the result is added to your statement or to the return.  
 
 - The fee amount is multiplied by the principal amount.  
 - The result can be charged monthly, quarterly, or annually.  
-- If the fee is variable, the reference index (for example, **[CDI](/en/glossario/en-cdi)**) determines the adjustment.  
+- If the fee is variable, the reference index (for example, **[interbank rate](/en/glossario/en-cdi)**) determines the adjustment.  
 
 **Practical tip:** **Always check whether the fee is fixed or variable before signing any contract; this avoids surprises later on.**  
 
@@ -47,25 +47,25 @@ Even though the word “fee” sounds negative, it brings clear benefits when we
 - **Access to credit:** without interest fees, banks would have no incentive to lend money.  
 - **Professional management:** the administration fee ensures that specialists take care of your investments.  
 
-**Practical tip:** **Compare fees across different institutions; a 0.5% annual difference can mean thousands of reais more in your pocket.**  
+**Practical tip:** **Compare fees across different institutions; a 0.5% annual difference can mean thousands of dollars more in your pocket.**  
 
 ## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 
 Ignoring fees can erode your wealth quickly.  
 
 - **Hidden cost:** some fees are charged automatically, without prior notice.  
-- **Cumulative effect:** high fees on loans can turn a debt of R$10,000 into a liability of more than R$15,000 in a few years.  
+- **Cumulative effect:** high fees on loans can turn a debt of $2,000 into a liability of more than $3,000 in a few years.  
 - **Investment devaluation:** high administration fees can reduce a fund’s net return.  
 
 **Practical tip:** **Read the contract carefully and note every fee; then use a spreadsheet or a finance app to track the real impact.**  
 
 ## Practical examples
 
-Let’s put theory into practice using typical salaries in Brazil.  
+Let’s put theory into practice using typical salaries.  
 
-- **Example 1 – Personal loan:** João earns R$4,500. He takes a loan of R$5,000 with an interest fee of 2.5% per month. In 12 months, he will pay approximately R$7,500, i.e., R$2,500 in interest.  
-- **Example 2 – Investment fund:** Maria has a salary of R$6,200 and invests R$10,000 in a fund with an administration fee of 1.2% per year. If the fund yields 8% per year, the net return will be 6.8% (8% minus 1.2%). This generates R$680 profit instead of R$800 without the fee.  
-- **Example 3 – Checking account:** Carlos receives R$3,800 and pays R$12 per month in account maintenance fee. In a year, he spends R$144, which equals 0.5% of his annual salary.  
+- **Example 1 – Personal loan:** João earns $900. He takes a loan of $1,000 with an interest fee of 2.5% per month. In 12 months, he will pay approximately $1,500, i.e., $500 in interest.  
+- **Example 2 – Investment fund:** Maria has a salary of $1,240 and invests $2,000 in a fund with an administration fee of 1.2% per year. If the fund yields 8% per year, the net return will be 6.8% (8% minus 1.2%). This generates $136 profit instead of $160 without the fee.  
+- **Example 3 – Checking account:** Carlos receives $760 and pays $2.40 per month in account maintenance fee. In a year, he spends about $30, which equals 0.5% of his annual salary.  
 
 ## How to start
 
@@ -75,7 +75,7 @@ If you want to better control the fees that impact your money, follow these simp
 - **Negotiate or switch providers:** many institutions lower fees for customers who show interest in switching.  
 - **Use tracking tools:** personal finance apps allow you to record each fee and see the effect on your budget.  
 
-**Practical tip:** **Set a fee‑reduction goal (for example, cut R$100 of monthly costs) and review your progress each quarter.**  
+**Practical tip:** **Set a fee‑reduction goal (for example, cut $20 of monthly costs) and review your progress each quarter.**  
 
 ## Start today
 

@@ -22,7 +22,7 @@ translate: true
 ## [Planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) a Responsible Valentine's Day
 Valentine's Day is a special occasion to celebrate love and unity with those we love. However, it's not necessary to compromise our finances to make this day unforgettable. With a little creativity and planning, it's possible to have an economic and meaningful Valentine's Day.
 
-To start, it's essential to define a [budget](/en/posts/en-5-alternatives-to-mobills-in-2026) for the celebrations. Considering that the average salary in Brazil ranges from R$ 2,500 to R$ 4,000, it's reasonable to allocate 5% to 10% of this value for Valentine's Day. This means that, depending on your salary, you could have a [budget](/en/posts/en-how-to-create-personal-budget) of R$ 125 to R$ 400.
+To start, it's essential to define a [budget](/en/posts/en-5-alternatives-to-mobills-in-2026) for the celebrations. Considering that the average salary in many countries ranges from $2,000 to $5,000, it's reasonable to allocate 5% to 10% of this value for Valentine's Day. This means that, depending on your salary, you could have a [budget](/en/posts/en-how-to-create-personal-budget) of $100 to $500.
 
 ## Tips for an Economic Gift
 A gift doesn't have to be expensive to be meaningful. Here are some tips to find the perfect gift without breaking the bank:
@@ -31,9 +31,9 @@ A gift doesn't have to be expensive to be meaningful. Here are some tips to find
 - Use what you already have: You don't need to buy something new. Use items you already have at home to create a unique and personalized gift.
 
 ### Examples of Economic Gifts
-- **Photo Album**: Create a photo album with the best moments of your relationship. You can print the photos and organize the album with materials you already have at home. Cost: R$ 20 to R$ 50.
-- **Home-Cooked Dinner**: Cook your partner's favorite dish at home. Buy the necessary ingredients and decorate the table to create a romantic atmosphere. Cost: R$ 50 to R$ 100.
-- **Outdoor Walk**: Plan a walk in a park or at the beach. Bring a picnic and enjoy nature together. Cost: R$ 20 to R$ 50.
+- **Photo Album**: Create a photo album with the best moments of your relationship. You can print the photos and organize the album with materials you already have at home. Cost: $4 to $10.
+- **Home-Cooked Dinner**: Cook your partner's favorite dish at home. Buy the necessary ingredients and decorate the table to create a romantic atmosphere. Cost: $10 to $20.
+- **Outdoor Walk**: Plan a walk in a park or at the beach. Bring a picnic and enjoy nature together. Cost: $4 to $10.
 
 ## Managing Finances with [FinMoovi](/en/posts/en-you-re-not-alone-in-struggling-to-organize-your-finances)
 To help manage your finances and stay within your [budget](/en/posts/en-reduce-fixed-expenses), the [FinMoovi](/en/posts/en-migrating-from-spreadsheets-to-a-financial-app) app can be a useful tool. With it, you can track your [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea), set financial goals, and receive alerts not to exceed the established limit.
