@@ -596,6 +596,25 @@ export function sanitizeScript(script) {
   const log = (msg) => console.log(`🧼 sanitizer: ${msg}`);
   const scenes = Array.isArray(script.scenes) ? script.scenes : [];
 
+  // 0-PRE. ROLE COMPOSTO → ROLE BASE. A moldura APP-FIRST do prompt nomeia as
+  // cenas por FUNÇÃO ("BEAT-EMPATIA", "BEAT-VAZAMENTO", "BEAT-DEMO") e o LLM
+  // copia esses nomes para o campo "role", que só aceita hook/beat/cta/outro.
+  // Medido no run 30383099595 (28/07): as QUATRO tentativas morreram nisto —
+  // 3× "role inválido" + "deve haver ≥1 cena beat", sempre as mesmas cenas.
+  // É quase-erro óbvio (o prefixo já é o role certo), exatamente o que este
+  // sanitizador existe para resgatar. O prompt também foi corrigido; isto é a
+  // segunda camada, para não depender da obediência do modelo.
+  scenes.forEach((scene, i) => {
+    if (!scene || typeof scene.role !== 'string') return;
+    const bruto = scene.role.trim();
+    if (SHORT_ROLES.includes(bruto)) return;
+    const base = SHORT_ROLES.find(r => new RegExp(`^${r}([-_\\s].*)?$`, 'i').test(bruto));
+    if (base) {
+      log(`cena ${i + 1}: role "${bruto}" → "${base}" (a moldura APP-FIRST nomeia a FUNÇÃO; o campo role só aceita ${SHORT_ROLES.join('/')})`);
+      scene.role = base;
+    }
+  });
+
   // 0. NARRAÇÃO NUNCA DIZ "SHORT" (regra do dono 22/07 — o canal fala sempre
   // "vídeo": "te explico no próximo vídeo"). Troca "Short"/"Shorts" isolados
   // (limite de palavra, ignora caixa) por "vídeo" em TODA narração de cena. A

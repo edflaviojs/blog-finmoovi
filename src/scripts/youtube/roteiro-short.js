@@ -257,12 +257,13 @@ function buildMarketingBlock(t) {
 function buildAppFirstBlock(t) {
   return `════════ MOLDURA APP-FIRST (a ESPINHA de todo vídeo — DINÂMICA) ════════
 Todo vídeo segue esta espinha FIXA, mas a FEATURE demonstrada é DERIVADA do tema/ângulo (NUNCA de uma lista pronta): escolha a funcionalidade do FinMoovi que resolve NATURALMENTE a dor de "${t.term}"${t.angle ? ` no ângulo "${t.angle}"` : ''} e demonstre-a na tela do app correspondente. Dois vídeos do MESMO tema podem usar features diferentes (ex.: lançar gasto por FOTO vs. por VOZ no mercado) — a demo nasce do ângulo.
-1. HOOK: a DOR VISÍVEL + um número real (a perda/o problema), já falando "${t.term}".
-2. BEAT-EMPATIA: valide a dor — POR QUE ela acontece (correria, pressa, cansaço, vergonha), SEM culpar ("não é preguiça sua, não").
-3. BEAT-VAZAMENTO: a consequência silenciosa que se acumula (é aqui que cabe o momento-história/metáfora animada da REGRA H).
-4. BEAT-DEMO: a FEATURE resolvendo EXATAMENTE a dor da cena 2, num shot "app" na tela mais coerente ("app" ∈ {${APP_SCREENS.join(', ')}}) — ex.: gasto por foto/voz → "smartcapture"; total do carrinho → "compras"; "pra onde foi o dinheiro?" → "fluxo"; simular juros → "calculadora"; saldo/alerta → "dashboard". A demo RESPONDE à fricção, não é enfeite.
-5. CTA (micro-ação): um passo RÁPIDO de SEGUNDOS ("fotografa a próxima nota", "fala o gasto ali no corredor") — NUNCA "em 5 minutos" nem "reserve um tempo". Feature grátis, link na bio.
-6. OUTRO honesto — ver REGRA 6 (não nomeia o próximo tema).
+⚠️ Os nomes em MAIÚSCULAS abaixo são a FUNÇÃO NARRATIVA de cada cena — NÃO são o valor do campo "role". O campo "role" aceita EXATAMENTE quatro valores: "hook", "beat", "cta", "outro". Escrever "beat-empatia", "beat-demo" ou qualquer outra variante REPROVA o roteiro inteiro. As três cenas do meio são TODAS role "beat".
+1. HOOK  → role "hook": a DOR VISÍVEL + um número real (a perda/o problema), já falando "${t.term}".
+2. BEAT-EMPATIA  → role "beat": valide a dor — POR QUE ela acontece (correria, pressa, cansaço, vergonha), SEM culpar ("não é preguiça sua, não").
+3. BEAT-VAZAMENTO  → role "beat": a consequência silenciosa que se acumula (é aqui que cabe o momento-história/metáfora animada da REGRA H).
+4. BEAT-DEMO  → role "beat": a FEATURE resolvendo EXATAMENTE a dor da cena 2, num shot "app" na tela mais coerente ("app" ∈ {${APP_SCREENS.join(', ')}}) — ex.: gasto por foto/voz → "smartcapture"; total do carrinho → "compras"; "pra onde foi o dinheiro?" → "fluxo"; simular juros → "calculadora"; saldo/alerta → "dashboard". A demo RESPONDE à fricção, não é enfeite.
+5. CTA (micro-ação)  → role "cta": um passo RÁPIDO de SEGUNDOS ("fotografa a próxima nota", "fala o gasto ali no corredor") — NUNCA "em 5 minutos" nem "reserve um tempo". Feature grátis, link na bio.
+6. OUTRO honesto  → role "outro": ver REGRA 6 (não nomeia o próximo tema).
 Regra de ouro: se o vídeo não mostra um BOTÃO do app resolvendo a dor, não está pronto.`;
 }
 
