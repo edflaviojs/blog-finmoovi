@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-27T15:42:42.236Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-07-28T11:09:44.279Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -164,8 +164,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-07-27T10:31:25.227Z"
+      "status": "used",
+      "addedAt": "2026-07-27T10:31:25.227Z",
+      "usedAt": "2026-07-28T11:09:44.279Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "kyc",
