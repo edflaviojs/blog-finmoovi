@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-07-27T08:28:49.414Z
-**Posts:** 204 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 33
+**Gerado em:** 2026-07-28T07:36:10.984Z
+**Posts:** 207 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 33
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -29,10 +29,10 @@
 - _Ajuste a categoria de gastos para o próximo ano, aumentando ou diminuindo o teto conforme a realidade._
 
 **en-5-practical-steps-to-start-saving-for-black-friday-2026.md**
-- _According to the **Central Bank of Brazil**, consumption in November 2023 rose **13._
-- _According to **Serasa Experian**, the average debt of Brazilian families in 2023 topped R$ 12 thousand, showing that many people carry unnecessary costs._
-- _This technique dramatically reduces impulse purchases, which, according to **IBGE**, accounted for about **12 %** of consumer spending in 2022._
-- _According to the **Central Bank**, 45 % of Brazilian families lack an emergency reserve, which can lead to debt._
+- _According to the **central bank**, consumption in November 2023 rose **13._
+- _According to **[credit](/en/glossario/en-credit) bureaus**, the average [debt](/en/glossario/en-debt) of families in 2023 topped $2,400, showing that many people carry unnecessary costs._
+- _This technique dramatically reduces impulse purchases, which, according to the **national statistics office**, accounted for about **12 %** of consumer spending in 2022._
+- _According to the **central bank**, 45 % of families lack an emergency reserve, which can lead to debt._
 
 **en-5-tips-to-reorganize-your-finances-on-vacation.md**
 - _According to the Brazilian Institute of Geography and Statistics (IBGE), in 2022, most Brazilians (64._
