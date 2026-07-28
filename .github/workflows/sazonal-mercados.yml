@@ -64,16 +64,24 @@ jobs:
       - name: Validar consistência i18n
         run: node src/scripts/validacao/validar-i18n.js
 
-      # Roda MESMO se a validacao acima reprovar. Sem isto, gate vermelho =
-      # push nunca acontece = o post e a capa morrem no runner efemero — e o
-      # gerador ja marcou o feriado como coberto em sazonal-cobertos.json
-      # ANTES do push, entao o feriado nunca mais e tentado nesse ano. A perda
-      # e PERMANENTE e nao se recupera com re-run. O gate continua marcando o
-      # job de vermelho (o passo acima nao foi tocado); o que muda e que o
-      # conteudo deixa de ser descartado em silencio.
-      # !cancelled() e nao always(): cancelamento manual nao deve publicar.
+      # SEM `if:` de proposito — herda o `success()` padrao, ou seja, so publica
+      # se os passos acima passarem.
+      #
+      # Em 28/07/2026 este passo teve `if: !cancelled()` por algumas horas, com a
+      # justificativa de que um push descartado perderia o feriado para sempre
+      # (o tracking ja estaria marcado como coberto). Essa premissa e FALSA e foi
+      # revertida no mesmo dia: `sazonal-cobertos.json` entra na whitelist do
+      # commit (gerar-sazonal-mercados.js:241), logo viaja DENTRO do mesmo commit
+      # local. Push descartado => runner destruido => o tracking na main fica
+      # intacto => `loadTrack()` do dia seguinte nao ve o feriado como coberto.
+      # E o cron e diario dentro de uma janela de 6 dias (leadMin 10 / leadMax 15
+      # em calendario-sazonal.js:131), portanto ha ate 6 tentativas por feriado.
+      # A perda NAO e permanente; e retentada sozinha no dia seguinte.
+      #
+      # O preco do `!cancelled()` era real: publicava conteudo REPROVADO pelo
+      # validar-i18n.js e, pior, quando o sincronizar-i18n.js saia 1, o passo de
+      # validacao era saltado (`success()`) e publicava-se sem validacao nenhuma.
       - name: Push changes
-        if: ${{ !cancelled() }}
         run: |
           git pull --rebase origin main || true
           if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
