@@ -60,7 +60,7 @@ Imagine you earn $1,000 per month and have two options for buying a laptop to wo
 - **Option A:** cheap laptop for $200, 6‑month warranty, limited performance.  
 - **Option B:** mid‑range laptop for $800, 2‑year warranty, faster processor and battery that lasts all day.  
 
-If you choose Option A, you may need to replace the equipment in 2 years, spending another $200 and losing productivity. Option B, although costing double now, will likely last 4‑5 years, reducing future costs and increasing your income by avoiding work delays.  
+If you choose Option A, you may need to replace the equipment in 2 years, spending another $200 and losing productivity. Option B, although costing double now, will likely last 4‑5 years, reducing future costs and increasing your [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) by avoiding work delays.  
 
 Another example: a salary of $1,400 and the decision to subscribe to an internet plan.  
 

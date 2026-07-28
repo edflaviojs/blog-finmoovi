@@ -37,7 +37,7 @@ The stock exchange works like an auction, where people submit prices to buy or s
 Investing in the stock exchange can be a great way to grow your wealth over time. Here are some advantages of investing in the stock exchange:
 * Potential for high returns: stocks can increase in value quickly, generating significant profits
 * [Diversificação](/en/glossario/en-diversification): investing in the stock exchange allows you to diversify your portfolio, reducing the risk of loss
-* Liquidity: stocks can be bought and sold quickly, allowing you to access your money when needed
+* [Liquidity](/en/glossario/en-liquidity): stocks can be bought and sold quickly, allowing you to access your money when needed
 
 **Practical tip:** It’s important to diversify your portfolio by investing in different types of stocks and sectors. For example, if you invest $200 per month in technology company stocks, it’s a good idea to also invest in stocks of companies in other sectors, such as health or finance.
 
