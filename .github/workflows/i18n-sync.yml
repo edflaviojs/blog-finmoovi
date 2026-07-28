@@ -51,7 +51,13 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        run: node src/scripts/validacao/sincronizar-i18n.js
+        # --limit 5: PRIMEIRO workflow a adotar o teto de lote (IMPL24 Fase 0).
+        # Os outros 16 que chamam este script seguem SEM a flag (comportamento
+        # historico) ate este aqui ser observado por alguns dias. Escolhido
+        # como cobaia por ser o unico que so sincroniza — nao gera conteudo — e
+        # por nao ter passo de validacao separado que pudesse ficar vermelho
+        # com as lacunas adiadas de proposito.
+        run: node src/scripts/validacao/sincronizar-i18n.js --limit 5
 
       - name: Push changes
         run: |

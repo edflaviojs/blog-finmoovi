@@ -14,9 +14,15 @@
  *                                                                # (usado como rede de segurança
  *                                                                #  nos workflows de geração, que já
  *                                                                #  rodam validar-i18n.js em seguida)
+ *   node src/scripts/validacao/sincronizar-i18n.js --limit 5     # trata no máx. 5 grupos e adia o resto
  *
- * Exit 0 = sem lacunas (ou lacunas corrigidas e validadas).
+ * Exit 0 = sem lacunas (ou lacunas corrigidas e validadas)
+ *          OU lote truncado por --limit (as lacunas restantes são esperadas).
  * Exit 1 = ainda há lacunas / falha na revalidação (bloqueia).
+ *
+ * ⚠️ SEM `--limit` o comportamento é o histórico: trata TODAS as lacunas numa
+ * execução. 17 workflows chamam este script — mudar o default quebraria todos
+ * de uma vez. A adoção do teto é por workflow, uma de cada vez.
  */
 
 import { writeFileSync, existsSync, readdirSync } from 'fs';
@@ -32,6 +38,20 @@ import { readFileSync } from 'fs';
 const DRY_RUN = process.argv.includes('--dry-run');
 const NO_COMMIT = process.argv.includes('--no-commit');
 const NO_VALIDATE = process.argv.includes('--no-validate');
+
+// --limit N: teto de GRUPOS por execução (um grupo = um translationKey com
+// 1+ idiomas em falta). Sem a flag, Infinity = comportamento histórico
+// INALTERADO — importante, porque 17 workflows chamam este script.
+//
+// Por que existe: sem teto, uma execução traduz TODAS as lacunas em série via
+// IA. Medido em 25/07/2026 dentro do sazonal-mercados: 5.313s (88 min) num
+// único passo, contra 67s do passo que gera o post. Ver IMPLEMENTACAO24 §4.
+const LIMIT = (() => {
+  const i = process.argv.indexOf('--limit');
+  if (i === -1) return Infinity;
+  const n = parseInt(process.argv[i + 1], 10);
+  return Number.isFinite(n) && n > 0 ? n : Infinity;
+})();
 
 async function fixGap({ dir, kind, sourceName, missingLocales, present }) {
   const created = [];
@@ -108,9 +128,22 @@ async function main() {
     process.exit(0);
   }
 
+  // Fatia pelo teto de grupos. Posts primeiro (conteúdo publicado tem mais
+  // urgência que verbete de glossário); o que sobra vai para a próxima
+  // execução. Com LIMIT = Infinity ambos os slice devolvem a lista inteira,
+  // então o caminho histórico continua idêntico.
+  const totalGaps = postGaps.length + glossGaps.length;
+  const postsToDo = postGaps.slice(0, LIMIT);
+  const glossToDo = glossGaps.slice(0, Math.max(0, LIMIT - postsToDo.length));
+  const truncado = (postsToDo.length + glossToDo.length) < totalGaps;
+
+  if (truncado) {
+    console.log(`\n⏳ Lote limitado a ${LIMIT} grupo(s): tratando ${postsToDo.length + glossToDo.length} de ${totalGaps}. Os ${totalGaps - (postsToDo.length + glossToDo.length)} restantes ficam para a próxima execução.`);
+  }
+
   const createdAll = [];
 
-  for (const g of postGaps) {
+  for (const g of postsToDo) {
     console.log(`\n📝 POST "${g.key}" — falta: ${g.missing.join(', ')}`);
     const created = await fixGap({
       dir: POSTS_DIR, kind: 'post', sourceName: g.key,
@@ -119,7 +152,7 @@ async function main() {
     createdAll.push(...created);
   }
 
-  for (const g of glossGaps) {
+  for (const g of glossToDo) {
     console.log(`\n📖 GLOSSÁRIO "${g.base}" — falta: ${g.missing.join(', ')}`);
     const created = await fixGap({
       dir: GLOSSARIO_DIR, kind: 'glossario', sourceName: g.base,
@@ -129,7 +162,7 @@ async function main() {
   }
 
   if (DRY_RUN) {
-    console.log(`\n[dry-run] ${postGaps.length + glossGaps.length} grupos com lacuna. Nada gravado.`);
+    console.log(`\n[dry-run] ${totalGaps} grupos com lacuna${truncado ? ` (${postsToDo.length + glossToDo.length} caberiam neste lote)` : ''}. Nada gravado.`);
     process.exit(1); // sinaliza que HÁ lacunas
   }
 
@@ -146,6 +179,17 @@ async function main() {
 
   if (NO_VALIDATE) {
     console.log('\n(--no-validate) Revalidação pulada.');
+    process.exit(0);
+  }
+
+  // Lote truncado: as lacunas restantes são ESPERADAS, não defeito. Revalidar
+  // aqui faria validar-i18n.js acusar justamente o que foi adiado de propósito
+  // → exit 1 → nos workflows sem `if: !cancelled()` o push morre e as
+  // traduções recém-criadas se perdem no runner. Sai 0 e avisa alto; a
+  // validação completa acontece na primeira execução que NÃO truncar.
+  if (truncado) {
+    console.log(`\n⏳ Revalidação adiada: ${totalGaps - (postsToDo.length + glossToDo.length)} grupo(s) ainda em fila por causa do --limit.`);
+    console.log('   Isto NÃO é falha — a próxima execução continua de onde parou e revalida tudo.');
     process.exit(0);
   }
 
