@@ -68,3 +68,25 @@ jobs:
           else
             echo "No changes to push"
           fi
+
+      # AUDITORIA DIARIA DE CAPAS — de proposito DEPOIS do push e com always().
+      #
+      # Porque aqui e nao noutro sitio: o i18n-gate.yml so dispara em PR e em
+      # push HUMANO. Os bots empurram com GITHUB_TOKEN e o GitHub nao dispara
+      # workflows nesse caso — medido em 28/07/2026: o i18n-gate tinha 6 runs em
+      # toda a vida, todos humanos, contra 20 commits de bot em src/content em
+      # 3 dias. Um guard so no gate nunca teria visto o incidente de 25/07.
+      #
+      # E porque DEPOIS do push: no runner do gerador a imagem ESTA no disco —
+      # o que falhava era ela nao entrar no `git add`. Um guard pre-push passaria
+      # limpo. So um checkout limpo do main revela a capa em falta. Este job faz
+      # checkout do main todos os dias as 05:00 UTC, portanto e o unico sitio que
+      # ve o estado realmente publicado sem custar um minuto de cota a mais.
+      #
+      # always() + estar depois do push => nao pode descartar traducao nenhuma.
+      # Vermelho aqui significa: ha capa 404 em producao. E alarme, nunca perda.
+      - name: Auditar capas publicadas (alarme diario)
+        if: always()
+        env:
+          CAPA_GUARD_BLOCKING: '1'
+        run: npm run validate:capas

@@ -27,6 +27,25 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Guard de capas — SEGUNDA linha de defesa, para PR e push HUMANO.
+      # A defesa PRINCIPAL e a auditoria diaria no i18n-sync.yml: este gate NAO
+      # dispara nos pushes dos bots (feitos com GITHUB_TOKEN), medido em
+      # 28/07/2026 — 6 runs em toda a vida, todos humanos. Nao contar com este
+      # passo para apanhar conteudo gerado por automacao.
+      #
+      # Colocado LOGO a seguir ao npm ci de proposito: se ficasse depois das
+      # validacoes i18n, uma delas vermelha (como esta hoje) saltava este passo
+      # e o alarme calava-se. Aqui ele fala sempre.
+      #
+      # Seguro: este workflow nao tem passo de push (nao descarta conteudo) e
+      # `validate:capas` esta FORA do `build` e do `validate:i18n` — os 20
+      # workflows que chamam validar-i18n.js por caminho e o deploy do
+      # Cloudflare Pages nao ganham motivo novo para morrer.
+      - name: Validate post/glossary covers exist on disk
+        env:
+          CAPA_GUARD_BLOCKING: '1'
+        run: npm run validate:capas
+
       - name: Compute changed content files (anchor strict scope)
         run: |
           set +e
