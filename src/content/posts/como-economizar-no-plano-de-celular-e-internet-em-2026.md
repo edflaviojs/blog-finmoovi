@@ -3,7 +3,6 @@ title: "como economizar no plano de celular e internet em 2026"
 description: "Descubra estratégias práticas para reduzir a conta de celular e internet sem perder qualidade. Dicas reais para quem ganha de R$3 mil a R$8 mil."
 tickerHeadline: "Corte gastos no celular agora"
 image: "/images/posts/como-economizar-no-plano-de-celular-e-internet-em-2026.webp"
-imageAlt: "<think> The user wants an ALT text for an image. The image shows a flat lay composition. Key elements: - White marble surface. - A brown leather notebook or…"
 category: "dicas"
 locale: "pt"
 tags: ["como economizar no plano de celular e internet","finanças pessoais","economia"]

@@ -45,6 +45,10 @@ const VISION = [
     // derrubava o job inteiro no circuit breaker). qwen3.6-27b e o substituto
     // oficial e o unico modelo de visao do Groq hoje.
     model: process.env.GROQ_VISION_MODEL || 'qwen/qwen3.6-27b',
+    // qwen3.6 raciocina por padrao e o <think> sai DENTRO do content — com
+    // max_tokens 80 o raciocinio consome a cota toda e o alt vira o rascunho
+    // do modelo. 'none' entrega so a resposta final.
+    extraBody: { reasoning_effort: 'none' },
   },
   {
     name: 'Cloudflare Workers AI',
@@ -85,6 +89,7 @@ async function describeImage(imageBuffer, mime, locale, topic) {
             model: provider.model,
             max_tokens: 80,
             temperature: 0.4,
+            ...(provider.extraBody || {}),
             messages: [{
               role: 'user',
               content: [
@@ -106,6 +111,13 @@ async function describeImage(imageBuffer, mime, locale, topic) {
         const json = await res.json();
         let alt = json.choices?.[0]?.message?.content?.trim();
         if (!alt) throw new Error(`${provider.name} sem conteúdo`);
+        // Rede de seguranca p/ modelos de raciocinio: remove o bloco <think>…</think>
+        // se ele vier junto do content. Se o bloco veio TRUNCADO (abriu e nao
+        // fechou, por causa do max_tokens), nao ha resposta final — falhar aqui
+        // e melhor que gravar o rascunho do modelo como alt.
+        alt = alt.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
+        if (/<\/?think>/i.test(alt)) throw new Error(`${provider.name}: raciocínio truncado no content (sem resposta final)`);
+        if (!alt) throw new Error(`${provider.name} sem conteúdo após limpar o raciocínio`);
         alt = alt.replace(/^["']|["']$/g, '').replace(/\s+/g, ' ').trim();
         if (alt.length > 160) alt = alt.slice(0, 157).trimEnd() + '…';
         return alt;
