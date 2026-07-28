@@ -3,6 +3,7 @@ title: "Como economizar no supermercado em 2026 – Dicas reais"
 description: "Aprenda a cortar gastos no supermercado com estratégias simples, exemplos reais de compras de R$200 a R$500 e dicas práticas que cabem no seu bolso."
 tickerHeadline: "O truque que reduz sua conta no mercado"
 image: "/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais.webp"
+imageAlt: "Formas abstratas douradas e azuis flutuando sobre fundo branco e azul claro."
 category: "dicas"
 locale: "pt"
 tags: ["como economizar dinheiro no supermercado","finanças pessoais","economia","dinheiro"]

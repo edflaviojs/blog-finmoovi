@@ -3,6 +3,7 @@ title: "5 passos práticos para começar a poupar para a Black Friday 2026"
 description: "Descubra como organizar seu dinheiro agora e garantir descontos na Black Friday 2026 sem apertar o orçamento."
 tickerHeadline: "O plano que salva seu bolso"
 image: "/images/posts/5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-.webp"
+imageAlt: "Fundo azul escuro com ondas douradas e seta ascendente."
 category: "orcamento"
 locale: "pt"
 tags: ["black friday 2026","poupar dinheiro","finanças pessoais","FinMoovi","orçamento","consumo consciente","dicas de economia","poupar black friday","preparar black friday antecipado"]

@@ -3,6 +3,7 @@ title: "5 practical steps to start saving for Black Friday 2026"
 description: "Find out how to organize your money now and lock in Black Friday 2026 discounts without tightening your budget."
 tickerHeadline: "The plan that saves your wallet"
 image: "/images/posts/5-passos-praticos-para-comecar-a-poupar-para-a-black-friday-.webp"
+imageAlt: "Gold arrow pointing up over dark blue and yellow waves."
 category: "orcamento"
 locale: "en"
 tags: ["black friday 2026","save money","personal finance","FinMoovi","budget","conscious consumption","money-saving tips","save for black friday","early black friday preparation"]
