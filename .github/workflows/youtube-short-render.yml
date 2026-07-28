@@ -61,6 +61,7 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
+          cache: 'npm'
 
       # F1.5 — resolve o modo da execução:
       #   • schedule, OU workflow_dispatch com auto=true → escolhe o próximo

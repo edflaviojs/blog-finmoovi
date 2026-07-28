@@ -22,6 +22,7 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
+          cache: 'npm'
 
       # OBRIGATORIO: o script importa src/scripts/apis/kie-ai.js, que puxa
       # image-router.js -> `sharp` (pacote nativo). Sem node_modules o import
