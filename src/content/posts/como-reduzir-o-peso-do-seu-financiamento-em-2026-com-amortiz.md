@@ -25,15 +25,15 @@ seo:
   keywords: ["amortização","financiamento","juros","planejamento financeiro","FinMoivi","fluxo de caixa","redução de dívida"]
 ---
 
-Você está na fila do caixa, vê a fatura do financiamento e o saldo ainda parece um peso. Amortizar significa pagar parte do principal ao longo das parcelas, diminuindo o total de juros. No FinMoovi, basta tirar foto da fatura e, em 5 minutos, visualizar quanto ainda resta pagar e programar um reforço mensal.
+Você está na fila do caixa, vê a fatura do [financiamento](/glossario/financiamento) e o saldo ainda parece um peso. Amortizar significa pagar parte do principal ao longo das parcelas, diminuindo o total de [juros](/glossario/juros). No FinMoovi, basta tirar foto da fatura e, em 5 minutos, visualizar quanto ainda resta pagar e programar um reforço mensal.
 
-## Por que a amortização importa
+## Por que a [amortização](/glossario/amortizacao) importa
 
 Mesmo que a parcela pareça pequena, a maior parte dos primeiros pagamentos vai para os juros. Quando você faz uma amortização — seja antecipada ou extra — reduz o saldo devedor e, consequentemente, a base sobre a qual os juros são calculados. O efeito é semelhante a cortar a ponta de um galho que continua a crescer: menos área, menos peso.
 
 - **Menos juros acumulados**: Cada real (ou equivalente) que você paga antes do prazo reduz o valor que será cobrado nos meses seguintes.
 - **Redução do prazo**: Se mantiver o mesmo valor da parcela, o número total de meses diminui, libertando seu orçamento para novos objetivos.
-- **Maior tranquilidade**: Ver o saldo cair mais rápido gera motivação e evita a sensação de “dívida eterna”.
+- **Maior tranquilidade**: Ver o saldo cair mais rápido gera motivação e evita a sensação de “[dívida](/glossario/divida) eterna”.
 
 ## Tipos de amortização que você pode usar
 
@@ -58,7 +58,7 @@ Mesmo que a parcela pareça pequena, a maior parte dos primeiros pagamentos vai 
    \text{Novo prazo} \approx \frac{\ln\left(1+\frac{\text{Saldo} - \text{Amortização}}{\text{Parcela}}\right)}{\ln\left(1+\frac{\text{Juros}}{12}\right)}
    \]
 
-   Ferramentas como a calculadora de juros compostos do FinMoovi fazem isso em segundos.
+   Ferramentas como a [calculadora de juros compostos](/ferramentas/calculadora-juros-compostos) do FinMoovi fazem isso em segundos.
 
 5. **Compare** – veja quanto menos juros você pagará e quantos meses a menos levará para terminar o contrato.
 
@@ -78,11 +78,11 @@ Mesmo que a parcela pareça pequena, a maior parte dos primeiros pagamentos vai 
 ## Ferramentas do FinMoovi que facilitam a estratégia
 
 - **Captura inteligente**: tire foto da fatura e o app reconhece valores, datas e tipo de contrato, evitando digitação manual.
-- **Multimoeda**: caso seu financiamento seja em outra moeda, o app converte automaticamente usando taxa de câmbio em tempo real.
+- **Multimoeda**: caso seu financiamento seja em outra moeda, o app converte automaticamente usando taxa de [câmbio](/glossario/cambio) em tempo real.
 - **Alertas de saldo**: notifica quando o saldo cair abaixo de um patamar que você definiu, indicando que a amortização está rendendo frutos.
 - **Relatórios de fluxo de caixa**: mostram, em poucos segundos, quanto você economizou em juros ao longo dos últimos meses.
 
-## Dicas práticas para manter a disciplina
+## [Dicas](/posts/7-erros-financeiros-iniciante) práticas para manter a disciplina
 
 - **Transforme um gasto recorrente** – troque a assinatura de um streaming que você usa pouco por um aporte extra ao financiamento.
 - **Use o “desafio dos 30 dias”** – durante um mês, guarde o dinheiro que normalmente gastaria com lanches fora de casa e direcione tudo para a amortização.
@@ -108,4 +108,4 @@ Sim, a maioria dos credores aceita pagamentos extras sem exigir a quitação tot
 Não altera a taxa contratada, mas diminui o montante sobre o qual ela incide, gerando economia.
 
 ### Como saber se vale a pena amortizar ou investir o dinheiro?
-Compare a taxa de juros do financiamento com a rentabilidade de investimentos de baixo risco (ex.: Tesouro Direto). Se a dívida for mais cara, amortizar costuma ser a melhor escolha.
+Compare a taxa de juros do financiamento com a rentabilidade de investimentos de baixo risco (ex.: [Tesouro Direto](/glossario/tesouro-direto)). Se a dívida for mais cara, amortizar costuma ser a melhor escolha.

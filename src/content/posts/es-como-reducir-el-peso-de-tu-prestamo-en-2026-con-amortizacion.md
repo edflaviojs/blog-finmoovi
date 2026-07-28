@@ -25,22 +25,22 @@ seo:
   keywords: ["amortización","préstamo","finanzas personales","ahorro","FinMoovi","cálculo de intereses","disciplina financiera"]
 ---
 
-¿Estás en la fila del cajero, ves la factura de tu préstamo y el saldo todavía parece una carga? Amortizar significa pagar una parte del capital a lo largo de las cuotas, reduciendo el total de intereses. Con **FinMoovi**, basta con tomar una foto de la factura y, en 5 minutos, ver cuánto queda por pagar y programar un refuerzo mensual.
+¿Estás en la fila del cajero, ves la factura de tu [préstamo](/es/glossario/es-prestamo) y el saldo todavía parece una carga? Amortizar significa pagar una parte del capital a lo largo de las cuotas, reduciendo el total de intereses. Con **FinMoovi**, basta con tomar una foto de la factura y, en 5 minutos, ver cuánto queda por pagar y programar un refuerzo mensual.
 
-## Por qué la amortización importa  
+## Por qué la [amortización](/es/glossario/es-amortizacion) importa  
 
 Aunque la cuota parezca pequeña, la mayor parte de los primeros pagos se destina a los intereses. Cuando haces una amortización —ya sea anticipada o extra— reduces el saldo deudor y, por ende, la base sobre la que se calculan los intereses. Es como podar la punta de una rama que sigue creciendo: menos área, menos peso.
 
 - **Menos intereses acumulados**: Cada euro que pagas antes del plazo disminuye el monto que se cobrará en los meses siguientes.  
 - **Reducción del plazo**: Si mantienes el mismo valor de la cuota, el número total de meses disminuye, liberando tu presupuesto para nuevos objetivos.  
-- **Mayor tranquilidad**: Ver el saldo caer más rápido genera motivación y evita la sensación de “deuda eterna”.  
+- **Mayor tranquilidad**: Ver el saldo caer más rápido genera motivación y evita la sensación de “[deuda](/es/glossario/es-deuda) eterna”.  
 
 ## Tipos de amortización que puedes usar  
 
 | Tipo | Cómo funciona | Cuándo es más ventajoso |
 |------|---------------|------------------------|
 | **Amortización parcial** | Pago extra encima de la cuota regular, sin cambiar el valor futuro de las cuotas. | Cuando tienes un ingreso extra puntual (bono, paga extra). |
-| **Amortización total** | Cancelación completa del saldo deudor antes del vencimiento. | Cuando la tasa de interés del préstamo está muy por encima de la rentabilidad de inversiones seguras. |
+| **Amortización total** | Cancelación completa del saldo deudor antes del vencimiento. | Cuando la tasa de [interés](/es/glossario/es-interes) del préstamo está muy por encima de la rentabilidad de inversiones seguras. |
 | **Amortización programada** | Definir un valor fijo mensual adicional (ej.: “un café al día”). | Ideal para quien quiere convertir un hábito de consumo en reducción de deuda. |
 
 ![Tipos de amortización que puedes usar](/images/posts/como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz-2.webp)
@@ -49,7 +49,7 @@ Aunque la cuota parezca pequeña, la mayor parte de los primeros pagos se destin
 
 1. **Identifica la tasa de interés anual** – suele estar en el contrato; si no la encuentras, usa la calculadora de [Investopedia](https://www.investopedia.com/terms/a/amortization.asp).  
 2. **Determina el saldo actual** – suma todas las cuotas que aún no has pagado.  
-3. **Elige el valor extra** – piensa en algo que represente “el precio de un alquiler” o “un salario mínimo” dividido en pequeñas fracciones.  
+3. **Elige el valor extra** – piensa en algo que represente “el precio de un alquiler” o “un [salario mínimo](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos)” dividido en pequeñas fracciones.  
 4. **Usa la fórmula simplificada**:  
 
    \[
@@ -67,14 +67,14 @@ Aunque la cuota parezca pequeña, la mayor parte de los primeros pagos se destin
 3. **Accede a la sección “Flujo de caja y reportes”**; la app mostrará el saldo deudor, la tasa de interés y la proyección de cuotas.  
 4. **Define una meta de amortización** – por ejemplo, “reducir el saldo en dos veces el valor de un café al día”.  
 5. **Programa el débito automático** o realiza la transferencia manual en el día que prefieras. FinMoovi enviará un recordatorio antes de cada pago extra.  
-6. **Sigue el progreso** – el reporte mensual mostrará la caída del saldo y el ahorro en intereses, todo en gráficos de colores suaves que facilitan la visualización.  
+6. **Sigue el progreso** – el reporte mensual mostrará la caída del saldo y el [ahorro](/es/glossario/es-ahorro) en intereses, todo en gráficos de colores suaves que facilitan la visualización.  
 
 ![Paso a paso para aplicar la amortización en tu préstamo](/images/posts/como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz-4.webp)
 
 ## Herramientas de FinMoovi que facilitan la estrategia  
 
 - **Captura inteligente**: toma foto de la factura y la app reconoce valores, fechas y tipo de contrato, evitando la digitación manual.  
-- **Multimoneda**: si tu préstamo está en otra divisa, la app lo convierte automáticamente usando la tasa de cambio en tiempo real.  
+- **[Multimoneda](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere)**: si tu préstamo está en otra divisa, la app lo convierte automáticamente usando la tasa de [cambio](/es/glossario/es-cambio) en tiempo real.  
 - **Alertas de saldo**: notifica cuando el saldo cae bajo el umbral que definiste, indicando que la amortización está dando frutos.  
 - **Reportes de flujo de caja**: muestran, en segundos, cuánto has ahorrado en intereses durante los últimos meses.  
 

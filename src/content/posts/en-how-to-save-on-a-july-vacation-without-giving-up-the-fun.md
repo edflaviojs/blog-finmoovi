@@ -87,7 +87,7 @@ That’s a **$28** saving per person. If you’re traveling with a group, the ca
 **Calculation:**  
 - 3‑star hotel in a summer destination (July): $70/night  
 - Airbnb room: $36/night  
-- **Savings**: **$34** per night. Over a 5‑day trip, that’s **$170** saved.  
+- **[Savings](/en/glossario/en-savings)**: **$34** per night. Over a 5‑day trip, that’s **$170** saved.  
 
 ---  
 
@@ -125,7 +125,7 @@ If you’d spend $16 on restaurants, the difference is **$7.00** per day. Over 5
 ## 7. Real‑time expense monitoring  
 
 ### How to stay on track  
-Even the best plan can hit unexpected bumps. Use **FinMoovi** to log every expense (even a few cents) and get alerts when you’re near your daily limit. The app also generates monthly reports that show where you could cut costs for your next trip.  
+Even the best plan can hit unexpected bumps. Use **FinMoovi** to log every expense (even a few cents) and get alerts when you’re near your daily limit. The app also generates monthly [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o) that show where you could cut costs for your next trip.  
 
 ---  
 
@@ -152,4 +152,4 @@ Even the best plan can hit unexpected bumps. Use **FinMoovi** to log every expen
 
 ## Conclusion  
 
-Saving on a July vacation doesn’t mean giving up the fun; it’s about making conscious choices and using tools that simplify expense tracking. By setting a limit, picking cheaper destinations, optimizing transport and lodging, preparing your own meals, and focusing on low‑cost activities, you can enjoy the trip with financial peace of mind. Remember: every dollar you save now can be reinvested in a new experience or bolster your emergency reserve. Get ready, plan, and enjoy the best of summer – stress‑free and without red‑ink accounts. Safe travels and happy savings!
+Saving on a July vacation doesn’t mean giving up the fun; it’s about making conscious choices and using tools that simplify [expense tracking](/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide-20). By setting a limit, picking cheaper destinations, optimizing transport and lodging, preparing your own meals, and focusing on low‑cost activities, you can enjoy the trip with financial peace of mind. Remember: every dollar you save now can be reinvested in a new experience or bolster your emergency reserve. Get ready, plan, and enjoy the best of summer – stress‑free and without red‑ink accounts. Safe travels and happy savings!

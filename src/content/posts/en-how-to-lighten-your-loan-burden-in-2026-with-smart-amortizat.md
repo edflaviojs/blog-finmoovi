@@ -25,7 +25,7 @@ seo:
   keywords: ["loan","amortization","interest savings","debt reduction","FinMoovi","budgeting","smart finance"]
 ---
 
-You’re standing at the checkout, stare at your loan statement, and the balance still feels like a weight. **Amortization** means paying down part of the principal during your regular installments, which reduces the total interest you’ll owe. With **FinMoovi**, just snap a photo of the statement and, in about five minutes, see how much is left and set up a monthly extra payment.
+You’re standing at the checkout, stare at your [loan](/en/glossario/en-loan) statement, and the balance still feels like a weight. **[Amortization](/en/glossario/en-amortization)** means paying down part of the principal during your regular installments, which reduces the total [interest](/en/glossario/en-interest) you’ll owe. With **FinMoovi**, just snap a photo of the statement and, in about five minutes, see how much is left and set up a monthly extra payment.
 
 ## Why amortization matters  
 
@@ -33,7 +33,7 @@ Even if the monthly payment looks modest, most of the early installments go stra
 
 - **Lower accumulated interest** – Every dollar you pay ahead of schedule cuts the amount that will be charged in the months that follow.  
 - **Shorter loan term** – If you keep the same monthly payment, the total number of months drops, freeing up cash for new goals.  
-- **More peace of mind** – Watching the balance drop faster boosts motivation and eliminates the “endless debt” feeling.  
+- **More peace of mind** – Watching the balance drop faster boosts motivation and eliminates the “endless [debt](/en/glossario/en-debt)” feeling.  
 
 ## Types of amortization you can use  
 
@@ -49,7 +49,7 @@ Even if the monthly payment looks modest, most of the early installments go stra
 
 1. **Identify the annual interest rate** – it’s usually in the contract; if you can’t find it, try the calculator on [Investopedia](https://www.investopedia.com/terms/a/amortization.asp).  
 2. **Determine the current balance** – add up all installments that haven’t been paid yet.  
-3. **Choose the extra amount** – think of something that represents “the price of a monthly subscription” or “a slice of a $2,000‑$5,000 monthly income” broken into small pieces.  
+3. **Choose the extra amount** – think of something that represents “the price of a monthly subscription” or “a slice of a $2,000‑$5,000 monthly [income](/en/posts/en-building-a-diversified-portfolio-with-r-500)” broken into small pieces.  
 4. **Use the simplified formula**  
 
    \[
@@ -64,17 +64,17 @@ Even if the monthly payment looks modest, most of the early installments go stra
 
 1. **Gather your documents** – bank statement, loan contract, and the latest statement.  
 2. **Open FinMoovi** and use the smart receipt capture to log the statement with a few taps.  
-3. **Go to “Cash Flow & Reports.”** The app will display the outstanding balance, interest rate, and projected installments.  
+3. **Go to “Cash Flow & [Reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o).”** The app will display the outstanding balance, interest rate, and projected installments.  
 4. **Set an amortization goal** – for example, “reduce the balance by the equivalent of a daily coffee.”  
 5. **Schedule an automatic debit** or make a manual transfer on the day you prefer. FinMoovi will send a reminder before each extra payment.  
-6. **Track progress** – the monthly report shows the balance decline and interest savings, all in easy‑to‑read, soft‑colored graphs.  
+6. **Track progress** – the monthly report shows the balance decline and interest [savings](/en/glossario/en-savings), all in easy‑to‑read, soft‑colored graphs.  
 
 ![Step‑by‑step to apply amortization to your loan](/images/posts/como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz-4.webp)
 
 ## FinMoovi tools that make the strategy effortless  
 
 - **Smart capture**: take a photo of the statement; the app extracts amounts, dates, and loan type, eliminating manual entry.  
-- **Multi‑currency**: if your loan is in another currency, the app converts it automatically using real‑time exchange rates.  
+- **[Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff)**: if your loan is in another currency, the app converts it automatically using real‑time exchange rates.  
 - **Balance alerts**: get notified when the balance falls below a threshold you set, confirming that your amortization is paying off.  
 - **Cash‑flow reports**: instantly see how much interest you’ve saved over the past months.  
 

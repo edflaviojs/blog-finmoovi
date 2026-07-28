@@ -45,7 +45,7 @@ If, instead, you placed the same amount in a [certificates of deposit (CDs)](/en
 
 | Benefit | Why it matters |
 |----------|-----------------|
-| **Instant diversification** | One share already gives exposure to dozens or hundreds of assets. |
+| **Instant [diversification](/en/glossario/en-diversification)** | One share already gives exposure to dozens or hundreds of assets. |
 | **Liquidity** | You can buy and sell anytime the market is open. |
 | **Lower costs** | Management fees typically range from 0.2 % to 0.5 % per year, well below actively managed funds. |
 | **Transparency** | The ETF’s holdings are disclosed daily on broker sites and at the regulator. |

@@ -46,7 +46,7 @@ By depositing those $12 into a yielding account, you accumulate $144 at the end 
 
 ## Use Cashback to “Pay Off Debt” Smartly
 
-If you have debts with interest above 10 % per year (like credit‑card revolving or [overdraft](/en/glossario/en-overdraft)), cashback can be an ally to reduce those charges. Each cent you get back has a lower opportunity cost than the debt interest, so applying cashback to amortize the debt generates real savings.
+If you have debts with [interest](/en/glossario/en-interest) above 10 % per year (like credit‑card revolving or [overdraft](/en/glossario/en-overdraft)), cashback can be an ally to reduce those charges. Each cent you get back has a lower opportunity cost than the debt interest, so applying cashback to amortize the debt generates real [savings](/en/glossario/en-savings).
 
 ![Use o cashback para “pagar dívidas” de forma inteligente](/images/posts/como-usar-cashback-de-forma-inteligente-e-multiplicar-sua-re-4.webp)
 
