@@ -1,20 +1,20 @@
 ---
 term: "Debt"
-definition: "Understand what dívida is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "dívida - Financial Glossary"
-description: "Understand what dívida is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
+definition: "Understand what debt is, how it works, advantages, risks and practical examples."
+title: "Debt - Financial Glossary"
+description: "Understand what debt is, how it works, advantages, risks and practical examples."
 image: "/images/glossario/divida.webp"
 category: "basico"
-tags: ["dívida", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["debt", "glossary", "finance"]
 author: "FinMoovi"
 publishedAt: 2026-07-25
 readingTime: 5
 locale: "en"
 translationKey: "glossario-divida"
 seo:
-  metaTitle: "dívida - Financial Glossary"
-  metaDescription: "Understand what dívida is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["dívida", "glossário", "finanças", "glossary", "finance", "brazil"]
+  metaTitle: "Debt - Financial Glossary"
+  metaDescription: "Understand what debt is, how it works, advantages, risks and practical examples."
+  keywords: ["debt", "glossary", "finance"]
 ---
 
 ## What it is
@@ -48,7 +48,7 @@ Even though the word “debt” can be scary, it can be a useful tool when used 
 
 ## Risks
 
-Debt also brings dangers that can turn into a cycle of financial squeeze. The main risk is paying high interest, which can turn a R$5,000 expense into a debt of almost R$7,000 after two years. If income drops or unexpected expenses arise, missing payments can generate fines, higher interest rates, and even a negative record in credit‑protection agencies.
+Debt also brings dangers that can turn into a cycle of financial squeeze. The main risk is paying high interest, which can turn a $5,000 expense into a debt of almost $7,000 after two years. If income drops or unexpected expenses arise, missing payments can generate fines, higher interest rates, and even a negative record in credit‑protection agencies.
 
 - **Compound interest:** interest that accrues on previously accrued interest, rapidly expanding the debt.  
 - **Excessive indebtedness:** committing more than 30 % of monthly income can prevent achieving other goals.  
@@ -56,11 +56,11 @@ Debt also brings dangers that can turn into a cycle of financial squeeze. The ma
 
 ## Practical examples
 
-Imagine you earn R$4,500 per month and decide to buy a car that costs R$30,000, financed in 48 installments with 1.5 % interest per month. Each installment will be around R$1,000. If you pay everything on time, the car will be yours at the end of the term, but you will have paid roughly R$48,000, almost double the cash price.  
+Imagine you earn $4,500 per month and decide to buy a car that costs $30,000, financed in 48 installments with 1.5 % interest per month. Each installment will be around $1,000. If you pay everything on time, the car will be yours at the end of the term, but you will have paid roughly $48,000, almost double the cash price.  
 
-If, instead, you have a credit‑card debt of R$2,000 with 12 % interest per month, the balance can rise to more than R$3,500 in just three months if no payment is made.  
+If, instead, you have a credit‑card debt of $2,000 with 12 % interest per month, the balance can rise to more than $3,500 in just three months if no payment is made.  
 
-For someone earning R$7,000, a personal loan of R$20,000 with a 2 % monthly rate can be viable, as long as the installment does not exceed R$1,500 (about 21 % of income), still allowing you to set aside [R$500](/en/posts/en-building-a-diversified-portfolio-with-r-500) for an emergency fund.
+For someone earning $7,000, a personal loan of $20,000 with a 2 % monthly rate can be viable, as long as the installment does not exceed $1,500 (about 21 % of income), still allowing you to set aside [$500](/en/posts/en-building-a-diversified-portfolio-with-r-500) for an emergency fund.
 
 ## How to start
 
@@ -80,4 +80,4 @@ In addition, maintain an emergency reserve equivalent to three to six months of 
 
 ## Start today
 
-The decision to take on or eliminate a debt doesn’t have to be frightening. Start right now by reviewing your statements, calculating the real cost of the installments, and adjusting your budget. Every small step – whether paying R$100 extra on a credit‑card bill or renegotiating a loan’s rate – is progress toward a calmer financial life. You have control; just take the first step.
+The decision to take on or eliminate a debt doesn’t have to be frightening. Start right now by reviewing your statements, calculating the real cost of the installments, and adjusting your budget. Every small step – whether paying $100 extra on a credit‑card bill or renegotiating a loan’s rate – is progress toward a calmer financial life. You have control; just take the first step.

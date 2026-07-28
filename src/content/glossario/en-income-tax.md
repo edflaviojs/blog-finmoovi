@@ -1,20 +1,20 @@
 ---
 term: "Income Tax"
-definition: "Understand what imposto de renda is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "imposto de renda - Financial Glossary"
-description: "Understand what imposto de renda is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
+definition: "Understand what income tax is, how it works, advantages, risks and practical examples."
+title: "Income Tax - Financial Glossary"
+description: "Understand what income tax is, how it works, advantages, risks and practical examples."
 image: "/images/glossario/imposto-de-renda.webp"
 category: "basico"
-tags: ["imposto de renda", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["income tax", "glossary", "finance"]
 author: "FinMoovi"
 publishedAt: 2026-07-07
 readingTime: 5
 locale: "en"
 translationKey: "glossario-imposto-de-renda"
 seo:
-  metaTitle: "imposto de renda - Financial Glossary"
-  metaDescription: "Understand what imposto de renda is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["imposto de renda", "glossário", "finanças", "glossary", "finance", "brazil"]
+  metaTitle: "Income Tax - Financial Glossary"
+  metaDescription: "Understand what income tax is, how it works, advantages, risks and practical examples."
+  keywords: ["income tax", "glossary", "finance"]
 ---
 
 ## What it is

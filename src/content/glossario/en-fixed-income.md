@@ -1,20 +1,20 @@
 ---
 term: "Fixed Income"
-definition: "Understand what renda fixa is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "renda fixa - Financial Glossary"
-description: "Understand what renda fixa is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
+definition: "Understand what fixed income is, how it works, advantages, risks and practical examples."
+title: "Fixed Income - Financial Glossary"
+description: "Understand what fixed income is, how it works, advantages, risks and practical examples."
 image: "/images/glossario/renda-fixa.webp"
 category: "basico"
-tags: ["renda fixa", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["fixed income", "glossary", "finance"]
 author: "FinMoovi"
 publishedAt: 2026-07-13
 readingTime: 5
 locale: "en"
 translationKey: "glossario-renda-fixa"
 seo:
-  metaTitle: "renda fixa - Financial Glossary"
-  metaDescription: "Understand what renda fixa is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["renda fixa", "glossário", "finanças", "glossary", "finance", "brazil"]
+  metaTitle: "Fixed Income - Financial Glossary"
+  metaDescription: "Understand what fixed income is, how it works, advantages, risks and practical examples."
+  keywords: ["fixed income", "glossary", "finance"]
 ---
 
 ## What it is
@@ -27,12 +27,12 @@ Fixed income is the name we give to investments that have a predictable return, 
 
 ## How it works
 
-When you buy a fixed‑income security, you are acquiring a contract that pays a fixed interest rate or one linked to an index (like the CDI – the interbank interest rate). There are two main moments: the purchase, which can be made with amounts starting at R$30, and the maturity, when the issuer returns the principal plus interest. In the meantime, the security can accrue interest daily, but the amount you will receive at the end is already defined. For example, a CDB (Certificate of Bank Deposit) that pays 110% of the CDI will yield 10% more than the CDI rate over the term.
+When you buy a fixed‑income security, you are acquiring a contract that pays a fixed interest rate or one linked to an index (like the CDI – the interbank interest rate). There are two main moments: the purchase, which can be made with amounts starting at $30, and the maturity, when the issuer returns the principal plus interest. In the meantime, the security can accrue interest daily, but the amount you will receive at the end is already defined. For example, a CDB (Certificate of Bank Deposit) that pays 110% of the CDI will yield 10% more than the CDI rate over the term.
 
 ## Advantages
 
 - **Predictability:** You know how much you will receive, which makes budgeting and goal‑setting easier.  
-- **Safety:** Most fixed‑income securities issued by banks or the National Treasury have the guarantee of the Fundo Garantidor de Créditos (FGC) up to R$250 mil per person and per institution.  
+- **Safety:** Most fixed‑income securities issued by banks or the National Treasury have the guarantee of the Fundo Garantidor de Créditos (FGC) up to $250 mil per person and per institution.  
 - **Liquidity:** Some securities allow early redemption without major losses, such as DI [funds](/en/glossario/en-investment-fund) or Treasury [Selic](/en/glossario/en-selic).  
 - **[Diversification](/en/glossario/en-diversification):** Even those with little money can build a balanced portfolio, reducing reliance on more volatile investments.
 
@@ -48,13 +48,13 @@ When you buy a fixed‑income security, you are acquiring a contract that pays a
 
 ## Practical examples
 
-Imagine you earn R$4,500 per month and can save 10% of your salary, i.e., R$450. You decide to invest this amount in three fixed‑income options:
+Imagine you earn $4,500 per month and can save 10% of your salary, i.e., $450. You decide to invest this amount in three fixed‑income options:
 
-- **Treasury Selic:** Purchase a security that yields the Selic rate (currently 13.75% per year). In 12 months, your R$450 investment generates roughly R$61 of interest, totaling R$511.  
-- **CDB at 100% of CDI:** The CDI is at 13.15% per year. The same R$450 yields about R$59, reaching R$509 at year‑end.  
-- **Treasury IPCA+ 2026:** This security pays inflation + 4.5% per year. If inflation is 4% over the period, your total return will be 8.5% per year, generating R$38 of interest, totaling R$488.  
+- **Treasury Selic:** Purchase a security that yields the Selic rate (currently 13.75% per year). In 12 months, your $450 investment generates roughly $61 of interest, totaling $511.  
+- **CDB at 100% of CDI:** The CDI is at 13.15% per year. The same $450 yields about $59, reaching $509 at year‑end.  
+- **Treasury IPCA+ 2026:** This security pays inflation + 4.5% per year. If inflation is 4% over the period, your total return will be 8.5% per year, generating $38 of interest, totaling $488.  
 
-If you earn R$7,200 and can allocate 15% (R$1,080) to fixed income, the effect of “compound interest” becomes even clearer. Investing R$1,080 every month in Treasury Selic, after 5 years you will have accumulated more than R$70 mil, whereas the same amount in a [savings](/en/glossario/en-savings) account would yield less than half that.
+If you earn $7,200 and can allocate 15% ($1,080) to fixed income, the effect of “compound interest” becomes even clearer. Investing $1,080 every month in Treasury Selic, after 5 years you will have accumulated more than $70 mil, whereas the same amount in a [savings](/en/glossario/en-savings) account would yield less than half that.
 
 ## How to start
 

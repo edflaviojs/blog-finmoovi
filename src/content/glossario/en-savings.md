@@ -1,20 +1,20 @@
 ---
 term: "Savings"
-definition: "Understand what poupança is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-title: "poupança - Financial Glossary"
-description: "Understand what poupança is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
+definition: "Understand what savings is, how it works, advantages, risks and practical examples."
+title: "Savings - Financial Glossary"
+description: "Understand what savings is, how it works, advantages, risks and practical examples."
 image: "/images/glossario/poupanca.webp"
 category: "basico"
-tags: ["poupança", "glossário", "finanças", "glossary", "finance", "brazil"]
+tags: ["savings", "glossary", "finance"]
 author: "FinMoovi"
 publishedAt: 2026-07-11
 readingTime: 5
 locale: "en"
 translationKey: "glossario-poupanca"
 seo:
-  metaTitle: "poupança - Financial Glossary"
-  metaDescription: "Understand what poupança is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
-  keywords: ["poupança", "glossário", "finanças", "glossary", "finance", "brazil"]
+  metaTitle: "Savings - Financial Glossary"
+  metaDescription: "Understand what savings is, how it works, advantages, risks and practical examples."
+  keywords: ["savings", "glossary", "finance"]
 ---
 
 ## What it is
@@ -24,7 +24,7 @@ A poupança is the most well‑known deposit account in Brazil. It works like a 
 ![What it is](/images/glossario/poupanca-inline-1.webp)
 
 - **Yield:** the rate is calculated based on the **[Selic](/en/glossario/en-selic)** rate (the basic interest rate) and the Reference Rate (TR), which usually stays close to zero.  
-- **Guarantee:** the Credit Guarantee Fund (FGC) covers up to R$250 mil per person if the bank fails.  
+- **Guarantee:** the Credit Guarantee Fund (FGC) covers up to $250 mil per person if the bank fails.  
 - **Liquidity:** the money becomes available on the same business day, making it ideal for emergencies.
 
 ## How it works
@@ -41,7 +41,7 @@ The poupança has a few strong points that keep it at the top of the list for pe
 
 ![Advantages](/images/glossario/poupanca-inline-3.webp)
 
-- **Safety:** the FGC protects your money up to R$250 mil per institution.  
+- **Safety:** the FGC protects your money up to $250 mil per institution.  
 - **Ease:** opening the account usually takes only a few minutes, and there is no maintenance fee.  
 - **Immediate liquidity:** the balance is available on the same day, perfect for emergencies like a car repair or an unexpected medical expense.  
 - **Income‑tax exemption:** unlike many investments, the poupança does not charge **[income tax](/en/glossario/en-income-tax)** on the earnings.
@@ -56,17 +56,17 @@ Even though it is “safe,” the poupança has limitations that can compromise 
 
 ## Practical examples
 
-Imagine you earn R$4,500 per month and decide to save 10 % (R$450) in the poupança. If the monthly rate is 0.5 %, after one year you will have:
+Imagine you earn $4,500 per month and decide to save 10 % ($450) in the poupança. If the monthly rate is 0.5 %, after one year you will have:
 
-- Starting balance: R$0  
-- Monthly deposit: R$450  
+- Starting balance: $0  
+- Monthly deposit: $450  
 - Monthly yield: 0.5 % on the accumulated balance  
-- Value after 12 months: approximately R$5,580  
+- Value after 12 months: approximately $5,580  
 
-Now, consider a salary of R$7,200 and the decision to allocate 15 % (R$1,080) to the poupança. With the same rate, after 12 months the total will be about R$13,400. These numbers show that, even with a low yield, the discipline of saving adds a significant amount over time.
+Now, consider a salary of $7,200 and the decision to allocate 15 % ($1,080) to the poupança. With the same rate, after 12 months the total will be about $13,400. These numbers show that, even with a low yield, the discipline of saving adds a significant amount over time.
 
 **Practical tip:** **Cut 5 % of your discretionary expenses (like that daily coffee) and direct that amount straight to the poupança; the cumulative effect is surprising.**  
-**Practical tip:** **Use your bank’s app (for example, the Banco do Brasil app) to schedule automatic transfers right after your paycheck arrives; that way you won’t forget to save.**  
+**Practical tip:** **Use your bank’s app to schedule automatic transfers right after your paycheck arrives; that way you won’t forget to save.**  
 **Practical tip:** **Reassess the yield every six months; if the poupança rate falls far below inflation, consider moving part of the money to a daily‑liquidity CDB that pays more.**
 
 ## How to start
@@ -75,7 +75,7 @@ Opening a poupança is as simple as opening a checking account. Follow these ste
 
 - **Choose the bank:** prefer institutions you already use daily, as this makes moving funds easier.  
 - **Bring documents:** CPF, RG, and proof of residence are enough; some banks allow fully online opening.  
-- **Set the initial amount:** there is no minimum, but starting with at least R$100 already generates yield.  
+- **Set the initial amount:** there is no minimum, but starting with at least $100 already generates yield.  
 - **Set up automatic transfer:** in internet banking or the bank’s app, schedule the automatic debit right after your salary credit.  
 - **Monitor the statement:** check the yield monthly and compare it with inflation (IPCA) to see if the money is truly growing.
 
