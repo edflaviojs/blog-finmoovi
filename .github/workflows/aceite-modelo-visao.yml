@@ -72,27 +72,49 @@ jobs:
           fi
           echo "✅ Aceite efetivado — o modelo de visao respondeu 200."
 
-          # 3/3: o gerar-alt-imagens.js NAO usa /ai/run — usa o endpoint
-          # compativel com OpenAI (/ai/v1/chat/completions) e manda a imagem em
-          # base64. Sem testar ESTE caminho, dizer que o fallback funciona seria
-          # suposicao. Imagem: 1 pixel PNG (suficiente p/ validar o aceite).
-          echo ""
-          echo "== 3/3: testando o endpoint REAL do script (chat/completions + imagem) =="
-          PIX="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
-          BODY=$(printf '{"model":"%s","max_tokens":40,"messages":[{"role":"user","content":[{"type":"text","text":"Describe this image in 5 words."},{"type":"image_url","image_url":{"url":"%s"}}]}]}' "$MODEL" "$PIX")
-          RESP3=$(curl -s -w "\n%{http_code}" -X POST \
-            "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/ai/v1/chat/completions" \
-            -H "Authorization: Bearer ${AI_TOKEN}" \
-            -H "Content-Type: application/json" \
-            -d "$BODY")
-          CODE3=$(echo "$RESP3" | tail -n1)
-          echo "$RESP3" | sed '$d' | head -c 600
-          echo ""
-          echo "HTTP: $CODE3"
+      - name: Descobrir o formato de imagem aceito
+        env:
+          ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: |
+          node - <<'JS'
+          const ACC = process.env.ACCOUNT_ID, TOK = process.env.AI_TOKEN;
+          const MODEL = '@cf/meta/llama-3.2-11b-vision-instruct';
+          // PNG 1x1 — so precisa ser uma imagem valida.
+          const B64 = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';
+          const bytes = [...Buffer.from(B64, 'base64')];
+          const OAI = `https://api.cloudflare.com/client/v4/accounts/${ACC}/ai/v1/chat/completions`;
+          const RUN = `https://api.cloudflare.com/client/v4/accounts/${ACC}/ai/run/${MODEL}`;
+          const P = 'Describe this image in 5 words.';
 
-          if [ "$CODE3" = "200" ]; then
-            echo "✅ Fallback de visao OPERACIONAL no endpoint que o script usa."
-          else
-            echo "::error::/ai/v1/chat/completions ainda recusa (HTTP $CODE3) — o aceite nao cobre este caminho."
-            exit 1
-          fi
+          // Variantes candidatas, da menos invasiva (mesmo endpoint do script)
+          // para a mais invasiva (endpoint nativo, formato proprio do Cloudflare).
+          const tries = [
+            ['A: chat/completions — image_url ANTES do texto', OAI, {
+              model: MODEL, max_tokens: 40, messages: [{ role: 'user', content: [
+                { type: 'image_url', image_url: { url: `data:image/png;base64,${B64}` } },
+                { type: 'text', text: P }] }] }],
+            ['B: chat/completions — system + user', OAI, {
+              model: MODEL, max_tokens: 40, messages: [
+                { role: 'system', content: 'You describe images.' },
+                { role: 'user', content: [
+                  { type: 'text', text: P },
+                  { type: 'image_url', image_url: { url: `data:image/png;base64,${B64}` } }] }] }],
+            ['C: /ai/run nativo — prompt + image (array de bytes)', RUN, {
+              prompt: P, image: bytes, max_tokens: 40 }],
+            ['D: /ai/run nativo — messages + image (array de bytes)', RUN, {
+              messages: [{ role: 'user', content: P }], image: bytes, max_tokens: 40 }],
+          ];
+
+          for (const [nome, url, body] of tries) {
+            try {
+              const r = await fetch(url, { method: 'POST',
+                headers: { Authorization: `Bearer ${TOK}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify(body) });
+              const t = await r.text();
+              console.log(`\n--- ${nome}\nHTTP ${r.status}: ${t.slice(0, 300)}`);
+            } catch (e) {
+              console.log(`\n--- ${nome}\nERRO: ${e.message}`);
+            }
+          }
+          JS
