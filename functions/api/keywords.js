@@ -45,6 +45,32 @@ const BRANCH = 'main';
 const MAX_KEYWORDS = 50;
 const VALID_CATEGORIES = ['dicas', 'investimentos', 'orcamento', 'glossario'];
 
+// ── Trava anti-força-bruta da senha ──────────────────────────────────────────
+// Conta SÓ as tentativas ERRADAS por IP: quem acerta a senha nunca é
+// bloqueado, por mais envios que faça. Sem isso, /api/keywords aceita
+// tentativas infinitas contra uma senha que destrava escrita no repo.
+// Best-effort em memória, igual ao rate-limit do comments.js: cada isolate do
+// Cloudflare tem o SEU Map (não é distribuído) — segura o ataque óbvio de um
+// mesmo POP, não é barreira absoluta contra ataque distribuído.
+const AUTH_MAX_FAILS = 5;
+const AUTH_WINDOW_MS = 15 * 60 * 1000; // 15 min
+const authFails = new Map();
+
+function authBlocked(ip) {
+  const now = Date.now();
+  const hits = (authFails.get(ip) || []).filter(t => now - t < AUTH_WINDOW_MS);
+  authFails.set(ip, hits);
+  return hits.length >= AUTH_MAX_FAILS;
+}
+
+function registerAuthFail(ip) {
+  const now = Date.now();
+  const hits = (authFails.get(ip) || []).filter(t => now - t < AUTH_WINDOW_MS);
+  hits.push(now);
+  authFails.set(ip, hits);
+  if (authFails.size > 5000) authFails.clear(); // teto de memória
+}
+
 /**
  * Parser puro (exportado para teste unitário em Node): transforma a string
  * bruta em lista de keywords — separa por vírgula OU quebra de linha, faz
@@ -147,7 +173,12 @@ export async function onRequestPost(context) {
     }
 
     // ── Autenticação (resposta genérica de propósito) ──
+    const ip = request.headers.get('CF-Connecting-IP') || '0.0.0.0';
+    if (authBlocked(ip)) {
+      return json(429, { error: 'Muitas tentativas de senha — aguarde 15 minutos e tente de novo.' });
+    }
     if (String(body.accessKey || '') !== env.KEYWORDS_ACCESS_KEY) {
+      registerAuthFail(ip);
       return json(401, { error: 'Não autorizado.' });
     }
 

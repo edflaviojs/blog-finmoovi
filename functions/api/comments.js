@@ -67,6 +67,31 @@ function rateLimited(ip) {
   return false;
 }
 
+// ── Trava anti-força-bruta da senha de moderação ─────────────────────────────
+// Independente do rateLimited acima (aquele é do POST público de comentário).
+// Conta SÓ as tentativas ERRADAS de accessKey por IP nas rotas de moderação
+// (GET ?pending=1 e PATCH): quem acerta a senha nunca é bloqueado. É a MESMA
+// KEYWORDS_ACCESS_KEY do /api/keywords — sem esta trava, a moderação seria a
+// porta alternativa para brutar a mesma senha. Mesma limitação best-effort.
+const AUTH_MAX_FAILS = 5;
+const AUTH_WINDOW_MS = 15 * 60 * 1000; // 15 min
+const authFails = new Map();
+
+function authBlocked(ip) {
+  const now = Date.now();
+  const hits = (authFails.get(ip) || []).filter(t => now - t < AUTH_WINDOW_MS);
+  authFails.set(ip, hits);
+  return hits.length >= AUTH_MAX_FAILS;
+}
+
+function registerAuthFail(ip) {
+  const now = Date.now();
+  const hits = (authFails.get(ip) || []).filter(t => now - t < AUTH_WINDOW_MS);
+  hits.push(now);
+  authFails.set(ip, hits);
+  if (authFails.size > 5000) authFails.clear(); // teto de memória
+}
+
 /**
  * Validador PURO do payload do POST (exportado para teste unitário em Node,
  * como o parseKeywords do keywords.js). Não toca em env/fetch.
@@ -180,7 +205,12 @@ export async function onRequestGet(context) {
           error: 'Moderação não configurada: crie SUPABASE_SERVICE_KEY (e KEYWORDS_ACCESS_KEY) no Cloudflare Pages e faça Retry deployment.',
         });
       }
+      const modIp = request.headers.get('CF-Connecting-IP') || '0.0.0.0';
+      if (authBlocked(modIp)) {
+        return json(429, { error: 'Muitas tentativas de senha — aguarde 15 minutos e tente de novo.' });
+      }
       if (String(url.searchParams.get('accessKey') || '') !== env.KEYWORDS_ACCESS_KEY) {
+        registerAuthFail(modIp);
         return json(401, { error: 'Não autorizado.' });
       }
       const res = await fetch(
@@ -314,7 +344,12 @@ export async function onRequestPatch(context) {
     }
 
     // Resposta genérica de propósito (não revela se a senha existe).
+    const modIp = request.headers.get('CF-Connecting-IP') || '0.0.0.0';
+    if (authBlocked(modIp)) {
+      return json(429, { error: 'Muitas tentativas de senha — aguarde 15 minutos e tente de novo.' });
+    }
     if (String(body.accessKey || '') !== env.KEYWORDS_ACCESS_KEY) {
+      registerAuthFail(modIp);
       return json(401, { error: 'Não autorizado.' });
     }
 
