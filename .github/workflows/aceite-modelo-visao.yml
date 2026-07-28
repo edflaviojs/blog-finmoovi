@@ -1,120 +1,42 @@
 # ARQUIVO TEMPORARIO DE USO UNICO — deve ser REMOVIDO logo apos rodar.
 #
-# Aceita a Meta Llama License para @cf/meta/llama-3.2-11b-vision-instruct na
-# conta Cloudflare (o aceite e por modelo e vale para sempre; nunca tinha sido
-# dado, por isso o fallback de visao do gerar-alt-imagens.js respondia 403).
-#
-# Roda SO manualmente (workflow_dispatch) e exige digitar "ACEITO" — nao ha
-# schedule, nao ha push trigger. Os secrets nunca sao ecoados no log.
+# Valida o FALLBACK de visao (Cloudflare) do gerar-alt-imagens.js rodando o
+# script real com o Groq desligado. Nao commita nada: o alt gerado fica so no
+# runner e e descartado no fim do job.
 
-name: (temporario) Aceite do modelo de visao Cloudflare
+name: (temporario) Testar fallback de visao
 
 on:
   workflow_dispatch:
-    inputs:
-      confirmacao:
-        description: 'Digite ACEITO para confirmar o aceite da Meta Llama License'
-        required: true
-        default: ''
 
 permissions:
   contents: read
 
 jobs:
-  aceite:
+  testar-fallback:
     runs-on: ubuntu-latest
     steps:
-      - name: Conferir confirmacao
-        run: |
-          if [ "${{ github.event.inputs.confirmacao }}" != "ACEITO" ]; then
-            echo "::error::Confirmacao ausente — digite ACEITO para prosseguir."
-            exit 1
-          fi
+      - name: Checkout
+        uses: actions/checkout@v7
 
-      - name: Enviar o aceite e verificar
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Rodar o script SEM Groq (forca o fallback do Cloudflare)
         env:
-          ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          # GROQ_API_KEY deliberadamente AUSENTE — o provedor se auto-desabilita
+          # e a unica saida e o Cloudflare.
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node --import tsx src/scripts/automacoes/gerar-alt-imagens.js --limit 1
+
+      - name: Mostrar o alt gerado (e descartar)
+        if: always()
         run: |
-          set -u
-          if [ -z "${ACCOUNT_ID}" ] || [ -z "${AI_TOKEN}" ]; then
-            echo "::error::CLOUDFLARE_ACCOUNT_ID e/ou CLOUDFLARE_AI_TOKEN nao configurados nos secrets."
-            exit 1
-          fi
-          MODEL="@cf/meta/llama-3.2-11b-vision-instruct"
-          BASE="https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/ai/run/${MODEL}"
-
-          echo "== 1/2: enviando o aceite (prompt: agree) =="
-          # -s -w separa corpo e status; o token vai so no header, nunca no log.
-          RESP=$(curl -s -w "\n%{http_code}" -X POST "$BASE" \
-            -H "Authorization: Bearer ${AI_TOKEN}" \
-            -H "Content-Type: application/json" \
-            -d '{"prompt":"agree"}')
-          CODE=$(echo "$RESP" | tail -n1)
-          echo "$RESP" | sed '$d' | head -c 600
-          echo ""
-          echo "HTTP: $CODE"
-
-          echo ""
-          echo "== 2/2: verificando se o modelo responde (deixou de dar 403?) =="
-          RESP2=$(curl -s -w "\n%{http_code}" -X POST "$BASE" \
-            -H "Authorization: Bearer ${AI_TOKEN}" \
-            -H "Content-Type: application/json" \
-            -d '{"prompt":"Say OK"}')
-          CODE2=$(echo "$RESP2" | tail -n1)
-          echo "$RESP2" | sed '$d' | head -c 600
-          echo ""
-          echo "HTTP: $CODE2"
-
-          if [ "$CODE2" != "200" ]; then
-            echo "::error::Ainda nao liberado (HTTP $CODE2). Veja a resposta acima."
-            exit 1
-          fi
-          echo "✅ Aceite efetivado — o modelo de visao respondeu 200."
-
-      - name: Descobrir o formato de imagem aceito
-        env:
-          ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
-        run: |
-          node - <<'JS'
-          const ACC = process.env.ACCOUNT_ID, TOK = process.env.AI_TOKEN;
-          const MODEL = '@cf/meta/llama-3.2-11b-vision-instruct';
-          // PNG 1x1 — so precisa ser uma imagem valida.
-          const B64 = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';
-          const bytes = [...Buffer.from(B64, 'base64')];
-          const OAI = `https://api.cloudflare.com/client/v4/accounts/${ACC}/ai/v1/chat/completions`;
-          const RUN = `https://api.cloudflare.com/client/v4/accounts/${ACC}/ai/run/${MODEL}`;
-          const P = 'Describe this image in 5 words.';
-
-          // Variantes candidatas, da menos invasiva (mesmo endpoint do script)
-          // para a mais invasiva (endpoint nativo, formato proprio do Cloudflare).
-          const tries = [
-            ['A: chat/completions — image_url ANTES do texto', OAI, {
-              model: MODEL, max_tokens: 40, messages: [{ role: 'user', content: [
-                { type: 'image_url', image_url: { url: `data:image/png;base64,${B64}` } },
-                { type: 'text', text: P }] }] }],
-            ['B: chat/completions — system + user', OAI, {
-              model: MODEL, max_tokens: 40, messages: [
-                { role: 'system', content: 'You describe images.' },
-                { role: 'user', content: [
-                  { type: 'text', text: P },
-                  { type: 'image_url', image_url: { url: `data:image/png;base64,${B64}` } }] }] }],
-            ['C: /ai/run nativo — prompt + image (array de bytes)', RUN, {
-              prompt: P, image: bytes, max_tokens: 40 }],
-            ['D: /ai/run nativo — messages + image (array de bytes)', RUN, {
-              messages: [{ role: 'user', content: P }], image: bytes, max_tokens: 40 }],
-          ];
-
-          for (const [nome, url, body] of tries) {
-            try {
-              const r = await fetch(url, { method: 'POST',
-                headers: { Authorization: `Bearer ${TOK}`, 'Content-Type': 'application/json' },
-                body: JSON.stringify(body) });
-              const t = await r.text();
-              console.log(`\n--- ${nome}\nHTTP ${r.status}: ${t.slice(0, 300)}`);
-            } catch (e) {
-              console.log(`\n--- ${nome}\nERRO: ${e.message}`);
-            }
-          }
-          JS
+          git --no-pager diff --unified=0 -- src/content | grep -E '^\+imageAlt:' || echo "(nenhum imageAlt novo no diff)"
+          git checkout -- src/content || true

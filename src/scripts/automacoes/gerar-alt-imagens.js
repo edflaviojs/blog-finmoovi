@@ -53,9 +53,17 @@ const VISION = [
   {
     name: 'Cloudflare Workers AI',
     enabled: !!(process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_AI_TOKEN),
-    url: `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions`,
+    // ATENCAO: este modelo NAO aceita imagem pelo endpoint compativel com
+    // OpenAI. Sondado em 28/07/2026 — content array com image_url responde
+    // 400 "Unable to add image when there are no user-supplied nor
+    // system-supplied messages" (code 3030), tanto com a imagem antes do
+    // texto quanto com uma mensagem system junto. So o endpoint NATIVO
+    // /ai/run com { prompt, image: [bytes] } responde 200. Por isso o
+    // native: true — ver o if em describeImage().
+    url: `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/meta/llama-3.2-11b-vision-instruct`,
     apiKey: process.env.CLOUDFLARE_AI_TOKEN,
     model: '@cf/meta/llama-3.2-11b-vision-instruct',
+    native: true,
   },
 ];
 
@@ -85,19 +93,23 @@ async function describeImage(imageBuffer, mime, locale, topic) {
         const res = await fetch(provider.url, {
           method: 'POST',
           headers: { 'Authorization': `Bearer ${provider.apiKey}`, 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: provider.model,
-            max_tokens: 80,
-            temperature: 0.4,
-            ...(provider.extraBody || {}),
-            messages: [{
-              role: 'user',
-              content: [
-                { type: 'text', text: prompt },
-                { type: 'image_url', image_url: { url: dataUrl } },
-              ],
-            }],
-          }),
+          body: JSON.stringify(provider.native
+            // Endpoint nativo do Cloudflare: imagem como array de bytes.
+            ? { prompt, image: [...imageBuffer], max_tokens: 80, temperature: 0.4 }
+            // Padrao compativel com OpenAI (Groq): imagem como data URL.
+            : {
+              model: provider.model,
+              max_tokens: 80,
+              temperature: 0.4,
+              ...(provider.extraBody || {}),
+              messages: [{
+                role: 'user',
+                content: [
+                  { type: 'text', text: prompt },
+                  { type: 'image_url', image_url: { url: dataUrl } },
+                ],
+              }],
+            }),
           signal: AbortSignal.timeout(60000),
         });
         // Rate limit / indisponível → espera e tenta de novo
@@ -109,7 +121,10 @@ async function describeImage(imageBuffer, mime, locale, topic) {
         }
         if (!res.ok) throw new Error(`${provider.name} HTTP ${res.status}: ${(await res.text()).slice(0, 120)}`);
         const json = await res.json();
-        let alt = json.choices?.[0]?.message?.content?.trim();
+        // O nativo devolve result.response; o compativel devolve choices[].
+        let alt = (provider.native
+          ? json.result?.response
+          : json.choices?.[0]?.message?.content)?.trim();
         if (!alt) throw new Error(`${provider.name} sem conteúdo`);
         // Rede de seguranca p/ modelos de raciocinio: remove o bloco <think>…</think>
         // se ele vier junto do content. Se o bloco veio TRUNCADO (abriu e nao
