@@ -11,7 +11,7 @@ on:
         description: 'Regenerar mesmo onde já existe imageAlt (true/false)'
         required: false
         default: 'false'
-  # Rede de segurança: 3x/dia processa um lote (60) até tudo ter imageAlt; depois vira no-op.
+  # Rede de segurança: 3x/dia processa um lote (30) até tudo ter imageAlt; depois vira no-op.
   schedule:
     - cron: '0 9,15,21 * * *'
 
@@ -51,8 +51,10 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           LIMIT="${{ github.event.inputs.limit }}"
-          # Rodadas agendadas processam um lote de 60 (respeita limites de API)
-          if [ -z "$LIMIT" ] && [ "${{ github.event_name }}" = "schedule" ]; then LIMIT="60"; fi
+          # Rodadas agendadas processam um lote de 30 (respeita limites de API).
+          # Era 60 (=180/dia); baixado para 30 (=90/dia) porque a cota do Groq e
+          # COMPARTILHADA com os demais workflows, que usam o Groq como fallback.
+          if [ -z "$LIMIT" ] && [ "${{ github.event_name }}" = "schedule" ]; then LIMIT="30"; fi
           ARGS=""
           if [ -n "$LIMIT" ]; then ARGS="--limit $LIMIT"; fi
           if [ "${{ github.event.inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
