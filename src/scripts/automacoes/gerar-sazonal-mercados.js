@@ -177,6 +177,14 @@ async function main() {
   writeFileSync(TRACK, JSON.stringify(track, null, 2) + '\n');
   paths.push('.github/data/sazonal-cobertos.json');
 
+  // A CAPA precisa entrar no git add. generateCoverImage (linha 146) grava o
+  // .webp por dentro do image-router, fora desta whitelist — sem esta linha a
+  // imagem fica orfa: gerada no runner, referenciada no frontmatter e nunca
+  // commitada, entao o post vai ao ar com capa 404. Foi o que aconteceu com
+  // dia-dos-pais (25/07/2026), e este era o unico dos 13 geradores sem isto.
+  // Diretorio inteiro = mesmo padrao de gerar-post-sazonal.js:304 e cia.
+  paths.push('public/images/posts');
+
   // Commit por whitelist (push fica com o workflow).
   try {
     execSync(`git add ${paths.map(p => `"${p}"`).join(' ')}`, { stdio: 'pipe' });

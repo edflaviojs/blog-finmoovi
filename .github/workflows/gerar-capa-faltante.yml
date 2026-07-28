@@ -1,0 +1,74 @@
+# ARQUIVO TEMPORARIO DE USO UNICO — REMOVER logo apos rodar.
+#
+# Gera a capa orfa do trio dia-dos-pais (PT/EN/ES). A imagem foi gerada em
+# 25/07/2026 mas nunca commitada: gerar-sazonal-mercados.js montava o git add
+# por whitelist e o imagePath ficava de fora (corrigido no mesmo commit que
+# criou este arquivo). Os 3 posts estao no ar com capa 404.
+
+name: (temporario) Gerar capa faltante
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gerar-capa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      - name: Configure git
+        run: |
+          git config user.name "${{ vars.BOT_NAME || 'FinMoovi Bot' }}"
+          git config user.email "${{ vars.BOT_EMAIL || 'bot@finmoovi.com' }}"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Gerar a capa
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+        run: |
+          node --import tsx - <<'JS'
+          import { generateCoverImage } from './src/scripts/apis/image-router.js';
+          const TITLE = 'Dia dos Pais: planeje gastos sem apertar o orçamento';
+          const SLUG  = 'dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento';
+          const out = await generateCoverImage(TITLE, SLUG, 'posts');
+          console.log('imagePath devolvido:', out);
+          // O frontmatter dos 3 posts aponta para /images/posts/<SLUG>.webp.
+          // Se o router devolver outro caminho, o conserto nao serve — melhor
+          // falhar aqui do que commitar uma capa que continua 404.
+          if (out !== `/images/posts/${SLUG}.webp`) {
+            console.error(`::error::Caminho inesperado: ${out} (esperado /images/posts/${SLUG}.webp)`);
+            process.exit(1);
+          }
+          JS
+
+      - name: Conferir no disco e commitar
+        run: |
+          SLUG='dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento'
+          if [ ! -f "public/images/posts/${SLUG}.webp" ]; then
+            echo "::error::A capa nao existe no disco apos a geracao."
+            exit 1
+          fi
+          ls -la public/images/posts/ | grep "$SLUG"
+          git add public/images/posts
+          if git diff --cached --quiet; then
+            echo "::error::Nada para commitar — a imagem ja estava versionada?"
+            exit 1
+          fi
+          git commit -m "fix(sazonal): commitar a capa orfa do trio dia-dos-pais"
+          git pull --rebase origin main || true
+          git push
