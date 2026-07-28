@@ -11,7 +11,7 @@ import { config } from '../../../site.config.ts';
  * fact-guard (limpa alucinação antes de salvar), dedup por slug, commit por whitelist.
  */
 
-import { generateBlogPost, generateCoverImage, generateText } from '../apis/kie-ai.js';
+import { generateBlogPost, generateCoverImage, generateInlineImage, generateText } from '../apis/kie-ai.js';
 import { getDueHoliday } from '../lib/calendario-sazonal.js';
 import { isThemeCovered, warnSkip } from '../lib/seo-guard.js';
 import { guardedTranslate } from '../lib/lang-guard.js';
@@ -32,6 +32,53 @@ function createSlug(title) {
 }
 
 function loadTrack() { try { return JSON.parse(readFileSync(TRACK, 'utf-8')); } catch { return {}; } }
+
+/**
+ * Insere imagens no corpo do post — mesmo padrão de gerar-post-sazonal.js:54-80.
+ * Este gerador era o único que publicava só com capa: 0 imagens no corpo, contra
+ * as 3 de 155 dos 207 posts do blog. Roda ANTES da tradução, de propósito: as
+ * traduções reaproveitam os MESMOS ficheiros (só o alt é traduzido), exatamente
+ * como a capa já fazia — 3 imagens por post, não 9.
+ */
+async function insertInlineImages(content, slugBase) {
+  const h2Matches = content.match(/^## .+$/gm) || [];
+  if (h2Matches.length < 2) return content;
+  const headings = h2Matches.map(h => h.replace('## ', ''));
+  let result = content;
+  let imagePositions = [];
+  if (headings.length >= 6) imagePositions = [1, 3, 5];
+  else if (headings.length >= 4) imagePositions = [1, 2, 3];
+  else if (headings.length >= 2) imagePositions = [0, 1];
+
+  // De trás para a frente, como no original. A ordem é, na prática, indiferente:
+  // a posição é achada por TEXTO (indexOf de `## <heading>`), não por offset.
+  for (let idx = imagePositions.length - 1; idx >= 0; idx--) {
+    const i = imagePositions[idx];
+    if (i >= headings.length) continue;
+    let imgPath;
+    try {
+      imgPath = await generateInlineImage(`${slugBase} - ${headings[i]}`, `${slugBase}-${i + 1}`, 'posts');
+    } catch (e) {
+      console.log(`⚠️ imagem de corpo ${i + 1} falhou (${(e.message || e).toString().slice(0, 120)}) — post segue sem ela.`);
+      continue;
+    }
+    if (!imgPath || !existsSync(join(process.cwd(), 'public', imgPath))) {
+      console.log(`⚠️ imagem de corpo ${i + 1} não chegou ao disco (${imgPath || 'sem caminho'}) — post segue sem ela.`);
+      continue;
+    }
+    const headingText = headings[i];
+    const headingIndex = result.indexOf(`## ${headingText}`);
+    if (headingIndex !== -1) {
+      const afterHeading = result.indexOf('\n\n', headingIndex + headingText.length + 3);
+      if (afterHeading !== -1) {
+        const nextEnd = result.indexOf('\n\n', afterHeading + 2);
+        const insertAt = nextEnd !== -1 ? nextEnd : afterHeading;
+        result = result.slice(0, insertAt) + `\n\n![${headingText}](${imgPath})\n\n` + result.slice(insertAt);
+      }
+    }
+  }
+  return result;
+}
 
 async function translatePost(post, targetLang) {
   const langNames = { en: 'English', es: 'Spanish' };
@@ -142,20 +189,48 @@ async function main() {
   }
 
   const today = now.toISOString().split('T')[0];
+  // A capa TEM de existir no disco antes de escrever os .md. O catch antigo era
+  // mudo e inventava `/images/posts/<slug>.webp` mesmo sem nada gravado — os 3
+  // .md sairiam a apontar para uma capa 404 e o log não dizia nada.
+  //
+  // Alcance real, para ninguém confiar a mais nesta trava: generateAIImage
+  // (image-router.js:108-140) quase nunca lança — se todos os provedores caírem
+  // ele devolve um SVG desenhado. Logo o caminho normal do pior caso é publicar
+  // com capa .svg (o validar-capas.js classifica .svg como AVISO, coerente com
+  // os 15 posts do corpus que já são assim). O throw/existsSync cobre só a falha
+  // de fs — disco cheio, permissão, sharp ausente.
+  //
+  // NÃO cobre o incidente de 25/07: lá a imagem ESTAVA no disco e o que falhou
+  // foi o `git add` (corrigido na linha 249). Essa classe é apanhada pela
+  // auditoria diária de capas no i18n-sync.yml, que corre sobre checkout limpo.
+  //
+  // Abortar é seguro: cron diário e janela de 6 dias => há novas tentativas.
   let imagePath;
   try { imagePath = await generateCoverImage(title, slug, 'posts'); }
-  catch { imagePath = `/images/posts/${slug}.webp`; }
+  catch (e) {
+    throw new Error(`capa não pôde ser gerada para "${slug}": ${(e && e.message) || e}`);
+  }
+  if (!imagePath || !existsSync(join(process.cwd(), 'public', imagePath))) {
+    throw new Error(`capa ausente no disco para "${slug}" (caminho devolvido: ${imagePath || 'nenhum'}) — nada será publicado.`);
+  }
+  console.log(`🖼️ capa confirmada no disco: ${imagePath}`);
+
+  // Imagens no corpo (3, como o resto do blog). Falha aqui NÃO aborta o post —
+  // texto sem ilustração ainda é conteúdo válido; capa 404 não é.
+  const contentComImagens = await insertInlineImages(content, slug);
+  const nImagens = (contentComImagens.match(/!\[[^\]]*\]\(\/images\//g) || []).length;
+  console.log(`🖼️ imagens no corpo: ${nImagens}`);
 
   const keywords = [...new Set([...(post.keywords || []), ...holiday.keywords])];
   const paths = [];
   // Headline do ticker: generateBlogPost (módulo compartilhado) não gera headline — fallback ''.
   const headline = post.headline || '';
-  paths.push(savePost(slug, { title, meta: post.meta, headline, keywords, content, imagePath, locale: 'pt', today, translationKey: slug }));
+  paths.push(savePost(slug, { title, meta: post.meta, headline, keywords, content: contentComImagens, imagePath, locale: 'pt', today, translationKey: slug }));
   console.log(`✅ PT: ${title}`);
 
   if (config.locales.includes('en')) {
     await new Promise(r => setTimeout(r, 30000));
-    const en = await guardedTranslate(() => translatePost({ title, meta: post.meta, headline, keywords, content }, 'en'), 'en', `${slug} (en)`);
+    const en = await guardedTranslate(() => translatePost({ title, meta: post.meta, headline, keywords, content: contentComImagens }, 'en'), 'en', `${slug} (en)`);
     const ygEn = fixStaleYear(en.title);
     if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); en.title = ygEn.text; }
     paths.push(savePost('en-' + createSlug(en.title), { ...en, imagePath, locale: 'en', today, translationKey: slug }));
@@ -164,7 +239,7 @@ async function main() {
 
   if (config.locales.includes('es')) {
     await new Promise(r => setTimeout(r, 30000));
-    const es = await guardedTranslate(() => translatePost({ title, meta: post.meta, headline, keywords, content }, 'es'), 'es', `${slug} (es)`);
+    const es = await guardedTranslate(() => translatePost({ title, meta: post.meta, headline, keywords, content: contentComImagens }, 'es'), 'es', `${slug} (es)`);
     const ygEs = fixStaleYear(es.title);
     if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); es.title = ygEs.text; }
     paths.push(savePost('es-' + createSlug(es.title), { ...es, imagePath, locale: 'es', today, translationKey: slug }));
@@ -177,7 +252,7 @@ async function main() {
   writeFileSync(TRACK, JSON.stringify(track, null, 2) + '\n');
   paths.push('.github/data/sazonal-cobertos.json');
 
-  // A CAPA precisa entrar no git add. generateCoverImage (linha 146) grava o
+  // A CAPA precisa entrar no git add. generateCoverImage (linha 197) grava o
   // .webp por dentro do image-router, fora desta whitelist — sem esta linha a
   // imagem fica orfa: gerada no runner, referenciada no frontmatter e nunca
   // commitada, entao o post vai ao ar com capa 404. Foi o que aconteceu com
