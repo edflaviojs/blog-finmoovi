@@ -3,6 +3,7 @@ title: "How to Save at the Grocery Store in 2026 – Real Tips"
 description: "Learn practical tips to cut grocery costs by up to 10% with simple planning and smart buying habits."
 tickerHeadline: "The trick that lowers your grocery bill"
 image: "/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais.webp"
+imageAlt: "Abstract yellow and blue curved shapes on a light blue gradient background."
 category: "dicas"
 locale: "en"
 tags: ["how to save money at the grocery store","personal finance","savings","money"]

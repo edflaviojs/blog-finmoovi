@@ -3,6 +3,7 @@ title: "Private pension 2026: is it worth it? Practical guide"
 description: "Find out if private pension still yields in 2026, compare with other options and see risks, costs and simulations to decide and choose the best path for your retirement."
 tickerHeadline: "Private pension 2026: worth it?"
 image: "/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico.webp"
+imageAlt: "Couple on sofa reviewing documents and tablet at white coffee table."
 category: "investimentos"
 locale: "en"
 tags: ["private pension","2026","investment","retirement","costs","risks","comparison","private pension worth it","PGBL or VGBL","pension or invest"]

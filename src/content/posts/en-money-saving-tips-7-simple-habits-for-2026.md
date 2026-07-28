@@ -3,6 +3,7 @@ title: "Money‑Saving Tips: 7 Simple Habits for 2026"
 description: "Discover 7 practical habits to cut daily expenses, build an emergency fund and make the most of cashback. Perfect for incomes $2,000‑$5,000."
 tickerHeadline: "The trick that saves your paycheck"
 image: "/images/posts/poupar-dinheiro-dicas-7-habitos-simples-para-2026.webp"
+imageAlt: "Laptop, coffee mug, and notebooks on a desk near a window."
 category: "dicas"
 locale: "en"
 tags: ["money‑saving tips","personal finance","savings","money"]

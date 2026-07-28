@@ -2,6 +2,7 @@
 title: "FinMoovi Cost of Living Index — June/2026"
 description: "IPCA for June/2026 by expense group: overall index at 0.16% in the month and 4.64% over 12 months. Month-close exchange rates and tips to protect your budget."
 image: "/images/posts/indice-finmoovi-custo-de-vida-junho-2026.webp"
+imageAlt: "Silver laptop on wooden desk with two mugs and plants."
 category: "cotacoes"
 tags: ["cost of living","ipca","inflation","quotes","budget"]
 author: "FinMoovi"

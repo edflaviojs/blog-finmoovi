@@ -3,6 +3,7 @@ title: "PIX vs TED: qual vale mais a pena em 2026?"
 description: "Descubra as diferenças entre PIX e TED em 2026, custos, prazos e quando usar cada um."
 tickerHeadline: "A escolha que transforma seu dinheiro"
 image: "/images/posts/pix-vs-ted-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Três pessoas conversando em sala de estar, uma segura smartphone, ambiente claro e acolhedor."
 category: "investimentos"
 locale: "pt"
 tags: ["PIX","TED","transferência bancária","custos bancários","FinMoovi","2026","finanças pessoais","pix vs ted"]

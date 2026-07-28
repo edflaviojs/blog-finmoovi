@@ -3,6 +3,7 @@ title: "How to Save on Your Cell Phone and Internet Plan in 2026"
 description: "Discover practical strategies to lower your cell phone and internet bill without sacrificing quality. Real tips for those earning between R$3 k and R$8 k."
 tickerHeadline: "Cut phone expenses now"
 image: "/images/posts/como-economizar-no-plano-de-celular-e-internet-em-2026.webp"
+imageAlt: "Coins, brown notebook, calculator, and green leaves on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["how to save on cell phone and internet plan","personal finance","savings"]

@@ -3,6 +3,7 @@ title: "Weekly Budget: A Practical Guide for Those Paid Every Week (2026)"
 description: "Learn how to build a weekly household budget with FinMoovi. Gain control, avoid debt, and stretch your paycheck—no matter the amount."
 tickerHeadline: "Your weekly paycheck under control"
 image: "/images/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026.webp"
+imageAlt: "Two calculators, brown wallet, coins, and green plants on white marble surface."
 category: "orcamento"
 locale: "en"
 tags: ["weekly budget","expense tracking","personal finance","FinMoovi app","weekly income","household budget"]

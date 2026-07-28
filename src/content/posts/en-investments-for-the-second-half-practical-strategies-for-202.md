@@ -3,6 +3,7 @@ title: "Investments for the Second Half: Practical Strategies for 2026"
 description: "A step‑by‑step guide to building a balanced portfolio for the second half of 2026, with real‑life Brazilian examples and easy‑to‑apply tips."
 tickerHeadline: "Your investment plan for the final stret"
 image: "/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p.webp"
+imageAlt: "Laptop and monitor with colorful screens, coffee cup on desk"
 category: "dicas"
 tags:
   - "investments"

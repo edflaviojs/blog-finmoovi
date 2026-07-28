@@ -3,6 +3,7 @@ title: "Cómo ahorrar en el supermercado en 2026 – Consejos reales"
 description: "Aprende a reducir gastos en el supermercado con estrategias simples, ejemplos reales de compras de R$200 a R$500 y consejos prácticos que caben en tu bolsillo."
 tickerHeadline: "El truco que reduce tu cuenta"
 image: "/images/posts/como-economizar-no-supermercado-em-2026-dicas-reais.webp"
+imageAlt: "Cinta dorada ondulada y triángulo amarillo sobre fondo degradado azul y blanco."
 category: "dicas"
 locale: "es"
 tags: ["cómo ahorrar dinero en el supermercado","finanzas personales","ahorro","dinero"]

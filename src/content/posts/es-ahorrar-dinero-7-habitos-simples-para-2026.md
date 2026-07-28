@@ -3,6 +3,7 @@ title: "Ahorrar dinero: 7 hábitos simples para 2026"
 description: "Descubre 7 hábitos prácticos para ahorrar, crear fondo de emergencia y usar cashback. Ideal para ingresos entre €1,500 y €4,000."
 tickerHeadline: "El truco que protege tu salario"
 image: "/images/posts/poupar-dinheiro-dicas-7-habitos-simples-para-2026.webp"
+imageAlt: "Escritorio con portátil, taza blanca, libreta y plantas frente a ventana iluminada."
 category: "dicas"
 locale: "es"
 tags: ["ahorrar dinero consejos","finanzas personales","ahorro","dinero"]

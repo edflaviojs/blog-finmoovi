@@ -3,6 +3,7 @@ title: "Dia dos Pais: planeje gastos sem apertar o orçamento"
 description: "Aprenda a organizar o presente do Dia dos Pais (Brasil, Portugal, Espanha, EUA e UK) sem comprometer seu orçamento. Dicas práticas, exemplos reais e um plano passo a passo."
 tickerHeadline: "Como não estourar o orçamento"
 image: "/images/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp"
+imageAlt: "Gráficos de linhas onduladas em azul, verde e amarelo sobre fundo escuro."
 category: "dicas"
 locale: "pt"
 tags: ["dia dos pais","presente dia dos pais","father's day budget"]

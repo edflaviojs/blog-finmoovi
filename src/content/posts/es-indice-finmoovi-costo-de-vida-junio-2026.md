@@ -2,6 +2,7 @@
 title: "Índice FinMoovi del Costo de Vida — Junio/2026"
 description: "IPCA de junio/2026 por grupo de gasto: índice general en 0,16% en el mes y 4,64% en 12 meses. Cambio de cierre y consejos para proteger tu bolsillo."
 image: "/images/posts/indice-finmoovi-custo-de-vida-junho-2026.webp"
+imageAlt: "Escritorio con portátiles, tazas y plantas bajo luz cálida de ventana."
 category: "cotacoes"
 tags: ["costo de vida","ipca","inflación","cotizaciones","presupuesto"]
 author: "FinMoovi"

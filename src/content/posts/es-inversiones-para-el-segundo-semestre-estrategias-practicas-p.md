@@ -3,6 +3,7 @@ title: "Inversiones para el segundo semestre: estrategias prácticas para 2026"
 description: "Descubre estrategias prácticas para invertir en el segundo semestre de 2026, con ejemplos reales y pasos sencillos para armar una cartera segura y con potencial de crecimiento."
 tickerHeadline: "Tu plan de inversión para la recta final"
 image: "/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p.webp"
+imageAlt: "Portátil y monitor con fondo colorido, taza de café sobre escritorio."
 category: "dicas"
 tags:
   - "inversiones"

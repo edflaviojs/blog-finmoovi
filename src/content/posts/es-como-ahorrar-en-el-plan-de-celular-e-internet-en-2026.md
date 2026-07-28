@@ -3,6 +3,7 @@ title: "cómo ahorrar en el plan de celular e internet en 2026"
 description: "Descubre estrategias prácticas para reducir la factura de celular e internet sin perder calidad. Consejos reales para quienes ganan entre R$3 mil y R$8 mil."
 tickerHeadline: "Reduce gastos en el móvil ahora"
 image: "/images/posts/como-economizar-no-plano-de-celular-e-internet-em-2026.webp"
+imageAlt: "Marrón cartera, calculadora negra, monedas y plantas verdes sobre superficie de mármol blanco."
 category: "dicas"
 locale: "es"
 tags: ["cómo ahorrar en el plan de celular e internet","finanzas personales","ahorro"]

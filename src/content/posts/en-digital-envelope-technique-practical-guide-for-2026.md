@@ -3,6 +3,7 @@ title: "Digital Envelope Technique: Practical Guide for 2026"
 description: "Learn how to use the digital envelope technique to control spending, build a budget, and save, even with a salary of R$2,000 to R$8,000. Simple step‑by‑step."
 tickerHeadline: "Master your spending in 3 steps"
 image: "/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024.webp"
+imageAlt: "Blue digital graph lines and numbers on a dark background."
 category: "orcamento"
 locale: "en"
 tags: ["digital envelopes","spending control","personal budget","practical finance","financial apps","envelope method","category spending control"]

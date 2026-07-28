@@ -3,6 +3,7 @@ title: "Previsión privada 2026: ¿vale la pena? Guía práctica"
 description: "Descubre si la previsión privada sigue rindiendo en 2026, compárala con otras opciones y conoce riesgos, costos y simulaciones para decidir y elegir el mejor camino para tu jubilación."
 tickerHeadline: "Previsión 2026: ¿vale la pena?"
 image: "/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico.webp"
+imageAlt: "Pareja revisando documentos y tablet en sofá con mesa blanca."
 category: "investimentos"
 locale: "es"
 tags: ["previsión privada","2026","inversión","jubilación","costos","riesgos","comparación","¿previsión privada vale la pena?","pgbl o vgbl","previsión o invertir"]

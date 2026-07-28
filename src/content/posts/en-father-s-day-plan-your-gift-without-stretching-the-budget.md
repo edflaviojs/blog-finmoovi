@@ -3,6 +3,7 @@ title: "Father’s Day: Plan Your Gift Without Stretching the Budget"
 description: "Learn how to budget for Father’s Day gifts across countries without breaking the bank. Practical tips, real‑life examples, and a step‑by‑step plan."
 tickerHeadline: "How to stay on budget"
 image: "/images/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp"
+imageAlt: "Blurred blue and green financial charts with data points on dark background."
 category: "dicas"
 locale: "en"
 tags: ["father's day","father's day gift","budget","gift planning","personal finance"]

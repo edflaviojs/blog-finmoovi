@@ -3,6 +3,7 @@ title: "Investimentos para o segundo semestre: estratégias práticas para 2026"
 description: "Descubra como montar uma carteira de investimentos inteligente para o segundo semestre de 2026 com dicas fáceis e exemplos reais."
 tickerHeadline: "Seu plano de investimento para a reta fi"
 image: "/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p.webp"
+imageAlt: "Notebook aberto, monitor e xícara de café sobre mesa de escritório."
 category: "dicas"
 tags:
   - "investimentos segundo semestre"

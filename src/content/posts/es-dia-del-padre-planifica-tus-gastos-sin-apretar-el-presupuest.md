@@ -3,6 +3,7 @@ title: "Día del Padre: planifica tus gastos sin apretar el presupuesto"
 description: "Aprende a organizar el regalo del Día del Padre sin comprometer tu presupuesto. Tips prácticos, ejemplos reales y plan paso a paso."
 tickerHeadline: "Cómo no exceder el presupuesto"
 image: "/images/posts/dia-dos-pais-planeje-gastos-sem-apertar-o-orcamento.webp"
+imageAlt: "Gráficos financieros abstractos con líneas onduladas verdes y azules sobre fondo oscuro."
 category: "dicas"
 locale: "es"
 tags: ["día del padre","regalo día del padre","presupuesto día del padre"]

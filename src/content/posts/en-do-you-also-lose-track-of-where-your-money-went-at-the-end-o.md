@@ -3,6 +3,7 @@ title: "Do you also lose track of where your money went at the end of the month?
 description: "Find out why your balance disappears and how FinMoovi, with automatic categorization, gives you back control of your finances in minutes."
 tickerHeadline: "The mystery draining your paycheck"
 image: "/images/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim.webp"
+imageAlt: "Abstract yellow and dark blue wavy shapes on a white background."
 category: "ferramentas"
 locale: "en"
 tags: ["money disappears","financial control","FinMoovi app","automatic categorization","OCR","voice capture","spending reports","categorize expenses","reports","financial view","expense control","finmoovi","personal finance"]
