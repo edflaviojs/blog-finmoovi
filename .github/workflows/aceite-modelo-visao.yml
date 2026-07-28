@@ -1,0 +1,74 @@
+# ARQUIVO TEMPORARIO DE USO UNICO — deve ser REMOVIDO logo apos rodar.
+#
+# Aceita a Meta Llama License para @cf/meta/llama-3.2-11b-vision-instruct na
+# conta Cloudflare (o aceite e por modelo e vale para sempre; nunca tinha sido
+# dado, por isso o fallback de visao do gerar-alt-imagens.js respondia 403).
+#
+# Roda SO manualmente (workflow_dispatch) e exige digitar "ACEITO" — nao ha
+# schedule, nao ha push trigger. Os secrets nunca sao ecoados no log.
+
+name: (temporario) Aceite do modelo de visao Cloudflare
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirmacao:
+        description: 'Digite ACEITO para confirmar o aceite da Meta Llama License'
+        required: true
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  aceite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Conferir confirmacao
+        run: |
+          if [ "${{ github.event.inputs.confirmacao }}" != "ACEITO" ]; then
+            echo "::error::Confirmacao ausente — digite ACEITO para prosseguir."
+            exit 1
+          fi
+
+      - name: Enviar o aceite e verificar
+        env:
+          ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: |
+          set -u
+          if [ -z "${ACCOUNT_ID}" ] || [ -z "${AI_TOKEN}" ]; then
+            echo "::error::CLOUDFLARE_ACCOUNT_ID e/ou CLOUDFLARE_AI_TOKEN nao configurados nos secrets."
+            exit 1
+          fi
+          MODEL="@cf/meta/llama-3.2-11b-vision-instruct"
+          BASE="https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/ai/run/${MODEL}"
+
+          echo "== 1/2: enviando o aceite (prompt: agree) =="
+          # -s -w separa corpo e status; o token vai so no header, nunca no log.
+          RESP=$(curl -s -w "\n%{http_code}" -X POST "$BASE" \
+            -H "Authorization: Bearer ${AI_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d '{"prompt":"agree"}')
+          CODE=$(echo "$RESP" | tail -n1)
+          echo "$RESP" | sed '$d' | head -c 600
+          echo ""
+          echo "HTTP: $CODE"
+
+          echo ""
+          echo "== 2/2: verificando se o modelo responde (deixou de dar 403?) =="
+          RESP2=$(curl -s -w "\n%{http_code}" -X POST "$BASE" \
+            -H "Authorization: Bearer ${AI_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d '{"prompt":"Say OK"}')
+          CODE2=$(echo "$RESP2" | tail -n1)
+          echo "$RESP2" | sed '$d' | head -c 600
+          echo ""
+          echo "HTTP: $CODE2"
+
+          if [ "$CODE2" = "200" ]; then
+            echo "✅ Aceite efetivado — o modelo de visao respondeu 200."
+          else
+            echo "::error::Ainda nao liberado (HTTP $CODE2). Veja a resposta acima."
+            exit 1
+          fi
