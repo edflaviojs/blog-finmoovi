@@ -16,6 +16,12 @@ concurrency:
 jobs:
   sazonal:
     runs-on: ubuntu-latest
+    # Teto duro (padrao do GitHub sem isto: 6h). Pico observado: 90 min —
+    # dos quais 88 sao o passo "Auto-sincronizar i18n" embutido (gerar o
+    # post leva 67s). Mesmo motivo do i18n-sync.yml: o commit so acontece
+    # no fim, entao matar no meio perde trabalho. 120 min ate a Fase 0 do
+    # IMPLEMENTACAO24 limitar o lote do i18n; depois dara para apertar.
+    timeout-minutes: 120
     steps:
       - name: Checkout
         uses: actions/checkout@v7

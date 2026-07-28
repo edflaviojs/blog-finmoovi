@@ -16,6 +16,10 @@ concurrency:
 jobs:
   gerar-post:
     runs-on: ubuntu-latest
+    # Teto duro (padrao do GitHub sem isto: 6h). Pico observado: 34 min.
+    # 60 min da folga de ~2x sobre o pior caso ja visto e ainda corta pela
+    # metade o descontrole que o padrao permite.
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v7

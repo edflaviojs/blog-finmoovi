@@ -16,6 +16,13 @@ concurrency:
 jobs:
   sincronizar-i18n:
     runs-on: ubuntu-latest
+    # Teto duro (padrao do GitHub sem isto: 6h). Pico observado: 71 min.
+    # DELIBERADAMENTE GENEROSO: sincronizar-i18n.js so commita no FINAL,
+    # depois de traduzir TODAS as lacunas — matar no meio joga fora o
+    # trabalho ja feito. 120 min protege contra o descontrole sem cortar
+    # execucao legitima. Reavaliar para ~30 min depois da Fase 0 do
+    # IMPLEMENTACAO24 (limite de lote), que e quem ataca a causa.
+    timeout-minutes: 120
     steps:
       - name: Checkout
         uses: actions/checkout@v7

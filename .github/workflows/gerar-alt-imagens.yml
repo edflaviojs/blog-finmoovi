@@ -25,6 +25,15 @@ concurrency:
 jobs:
   gerar-alt:
     runs-on: ubuntu-latest
+    # Teto duro. Sem isto herda o padrao de 6h do GitHub: em 13-15/07/2026
+    # NOVE execucoes deste workflow queimaram 1.935 min (60% da cota mensal),
+    # duas delas canceladas por bater nas 6h. A causa e o backoff de
+    # 20s+40s+60s POR IMAGEM (gerar-alt-imagens.js:117) quando o Groq
+    # rate-limita — sem teto global. Ritmo normal medido: ~15s/imagem, ou
+    # ~8 min para o lote de 30. 25 min da 3x de folga e corta o descontrole.
+    # Perder um lote nao custa dado: o script e idempotente e a proxima
+    # rodada (3x/dia) refaz o que faltou.
+    timeout-minutes: 25
     steps:
       - name: Checkout
         uses: actions/checkout@v7
