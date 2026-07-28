@@ -1,0 +1,479 @@
+{
+  "date": "2026-07-27",
+  "counts": {
+    "content": 6,
+    "videos": 0,
+    "pins": 2,
+    "failures": 7,
+    "runs": 38
+  },
+  "failures": [
+    {
+      "name": "Post Orçamento Semanal",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30256016791",
+      "timeLisbon": "10:56"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30258034507",
+      "timeLisbon": "11:25"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30260150979",
+      "timeLisbon": "11:58"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30264782688",
+      "timeLisbon": "13:09"
+    },
+    {
+      "name": "Cotações Semanal",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30269367254",
+      "timeLisbon": "14:14"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30270615791",
+      "timeLisbon": "14:30"
+    },
+    {
+      "name": "Post Orçamento Semanal",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30276915256",
+      "timeLisbon": "15:49"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-credit",
+      "url": "https://blog.finmoovi.com/en/glossario/en-credit",
+      "title": "Credit - Financial Glossary",
+      "description": "What credit is and how it quietly shows up on your bill — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-24"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-loan",
+      "url": "https://blog.finmoovi.com/en/glossario/en-loan",
+      "title": "Loan - Financial Glossary",
+      "description": "What a loan is and how each installment shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-26"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-prestamo",
+      "url": "https://blog.finmoovi.com/es/glossario/es-prestamo",
+      "title": "Préstamo - Glosario Financiero",
+      "description": "Qué es un préstamo y cómo cada cuota aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-26"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "orcamento-semanal-guia-para-quem-recebe-por-semana-2026",
+      "url": "https://blog.finmoovi.com/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026",
+      "title": "Orçamento semanal: guia para quem recebe por semana (2026)",
+      "description": "Aprenda a montar um orçamento doméstico quando o salário chega toda semana. Use o app FinMoovi e ganhe controle para viver sem apertos e evitar dívidas agora.",
+      "category": "orcamento",
+      "publishedAt": "2026-07-27"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-presupuesto-semanal-guia-para-quien-recibe-su-salario-cada-s",
+      "url": "https://blog.finmoovi.com/es/posts/es-presupuesto-semanal-guia-para-quien-recibe-su-salario-cada-s",
+      "title": "Presupuesto semanal: guía para quien recibe su salario cada semana (2026)",
+      "description": "Aprende a crear un presupuesto semanal cuando tu salario llega cada viernes. Usa FinMoovi y controla tus finanzas para evitar deudas.",
+      "category": "orcamento",
+      "publishedAt": "2026-07-27"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-weekly-budget-a-practical-guide-for-those-paid-every-week-20",
+      "url": "https://blog.finmoovi.com/en/posts/en-weekly-budget-a-practical-guide-for-those-paid-every-week-20",
+      "title": "Weekly Budget: A Practical Guide for Those Paid Every Week (2026)",
+      "description": "Learn how to build a weekly household budget with FinMoovi. Gain control, avoid debt, and stretch your paycheck—no matter the amount.",
+      "category": "orcamento",
+      "publishedAt": "2026-07-27"
+    }
+  ],
+  "videos": [],
+  "pins": [
+    {
+      "slug": "orcamento-semanal-guia-para-quem-recebe-por-semana-2026",
+      "title": "Orçamento semanal: guia para quem recebe por semana (2026)",
+      "pinId": "1105281933576994984",
+      "publishedAt": "2026-07-27T16:52:30.306Z",
+      "postUrl": "https://blog.finmoovi.com/posts/orcamento-semanal-guia-para-quem-recebe-por-semana-2026",
+      "timeLisbon": "17:52"
+    },
+    {
+      "slug": "poupar-dinheiro-dicas-7-habitos-simples-para-2026",
+      "title": "Poupar dinheiro dicas: 7 hábitos simples para 2026",
+      "pinId": "1105281933576994990",
+      "publishedAt": "2026-07-27T16:52:33.654Z",
+      "postUrl": "https://blog.finmoovi.com/posts/poupar-dinheiro-dicas-7-habitos-simples-para-2026",
+      "timeLisbon": "17:52"
+    }
+  ],
+  "runsSummary": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "03:06"
+    },
+    {
+      "name": "Sweep de Traduções (lang-guard)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:22"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:24"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:28"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "09:58"
+    },
+    {
+      "name": "Post Orçamento Semanal",
+      "count": 5,
+      "ok": 3,
+      "fail": 2,
+      "firstTimeLisbon": "10:56"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "11:25"
+    },
+    {
+      "name": "GSC - Digest de Oportunidades",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:31"
+    },
+    {
+      "name": "Gerar Conteúdo Social",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:34"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "11:34"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:39"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "11:58"
+    },
+    {
+      "name": "Atualizar Estatísticas",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:59"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:59"
+    },
+    {
+      "name": "Keywords Manuais - Sincronizar Fila",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:01"
+    },
+    {
+      "name": "Gerar Arte Sazonal (candidatos p/ aprovação)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:09"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:51"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "13:09"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "13:12"
+    },
+    {
+      "name": "Cotações Semanal",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "14:14"
+    },
+    {
+      "name": "Detect BR-only Posts (Weekly)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:15"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "14:30"
+    },
+    {
+      "name": "Relatório Semanal de Analytics",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "14:36"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:50"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:24"
+    },
+    {
+      "name": "Newsletter Digest Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:40"
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:52"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:58"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "11:28"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "15:50"
+    },
+    {
+      "name": "Newsletter Digest Semanal",
+      "timeLisbon": "16:40"
+    }
+  ],
+  "pendencias": [
+    "Auditoria YouTube API: responder follow-up do Google com link do canal (prazo ~03/08) — depois aguardar aprovação p/ trocar uploads private→public",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Glossário Financeiro",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Otimizar CTR (titulo/meta)",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "times": [
+        "09:30"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "10:00",
+        "16:00",
+        "22:00"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "SEO Monitor Semanal",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Gerar Post Inteligente (Analytics-driven)",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "times": [
+        "14:00"
+      ]
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "times": [
+        "15:00"
+      ]
+    }
+  ]
+}
