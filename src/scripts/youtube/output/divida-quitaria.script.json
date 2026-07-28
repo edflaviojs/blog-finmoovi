@@ -1,0 +1,161 @@
+{
+  "slug": "divida-quitaria",
+  "term": "Se eu devesse R$ 30 mil, faria ISSO",
+  "category": "controle",
+  "keyword": "Se eu devesse R$ 30 mil, faria ISSO",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Se eu devesse *R$ 30 mil*, como faria para *quitar* essa dívida?",
+    "counter": {
+      "from": 30000,
+      "to": 100000,
+      "prefix": "R$"
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Se eu devesse R$ 30 mil, faria ISSO. Você sabia que uma dívida dessas pode ser quitada com um plano passo-a-passo?",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "mil",
+          "visual": {
+            "type": "number",
+            "text": "R$ 30.000",
+            "note": "Dívida inicial"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "plano",
+          "visual": {
+            "type": "statement",
+            "text": "Plano de quitação",
+            "note": "Passo-a-passo"
+          },
+          "sfx": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A primeira coisa a fazer é priorizar as dívidas. É como uma bola de neve: começa pequena e vai crescendo.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "priorizar",
+          "visual": {
+            "type": "icon",
+            "icon": "target",
+            "note": "Prioridade"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "bola",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-neve",
+            "note": "Crescimento"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Depois, é hora de negociar com os credores. É importante lembrar que o juro composto pode ser um grande inimigo.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "negociar",
+          "visual": {
+            "type": "icon",
+            "icon": "mind",
+            "note": "Negociação"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "juro",
+          "visual": {
+            "type": "formula",
+            "text": "Juro Composto",
+            "note": "Cálculo"
+          },
+          "sfx": "keyboard"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Agora, vamos ver como o app FinMoovi pode nos ajudar a controlar as finanças. Com o dashboard, podemos ter uma visão geral das nossas contas.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "app",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet",
+            "note": "Contas"
+          },
+          "sfx": "pop"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "E agora, é sua vez! Baixe o app FinMoovi e comece a controlar suas finanças. Com a calculadora, você pode simular diferentes cenários e encontrar o melhor plano para quitar sua dívida.",
+      "durationSec": 8,
+      "shots": [
+        {
+          "anchor": "app",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Simulação"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Lembre-se: dinheiro sem controle é dinheiro dos outros. Qual é o seu próximo passo para controlar suas finanças?",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money",
+            "note": "Controle"
+          },
+          "sfx": "thud"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Baixe o app FinMoovi agora!",
+    "target": "app"
+  },
+  "totalDurationSec": 50
+}
