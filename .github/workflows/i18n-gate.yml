@@ -46,30 +46,47 @@ jobs:
           CAPA_GUARD_BLOCKING: '1'
         run: npm run validate:capas
 
+      # O guard de âncora local compara cada arquivo alterado com a SUA versão na
+      # base. Por isso este passo publica DUAS coisas: a base resolvida
+      # (ANCHOR_BASE_REF) e o inventário do que mudou (ANCHOR_STRICT_FILES).
+      #
+      # O inventário vai em `--name-status -M` e NÃO em `--name-only`: o status
+      # distingue arquivo novo (A, sem base) de alterado (M), e o -M entrega o
+      # caminho ANTIGO dos renomeados — sem isso, renomear um post faria todo o
+      # seu conteúdo legado passar por conteúdo novo. Quem interpreta essas
+      # linhas é o validador, num sítio só; aqui não se decide nada sobre âncoras.
+      #
+      # Sem base confiável (primeiro push, branch nova, force-push, merge-base
+      # indisponível) as duas variáveis saem vazias e o guard degrada para
+      # WARNING puro — nunca bloqueia por falta de informação.
       - name: Compute changed content files (anchor strict scope)
         run: |
           set +e
+          BASE_SHA=""
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             git fetch --no-tags origin "${{ github.base_ref }}" >/dev/null 2>&1
-            RANGE="origin/${{ github.base_ref }}...HEAD"
+            # merge-base explícito = mesmo conjunto que `origin/base...HEAD`, mas
+            # devolve o SHA, que é o que o validador precisa para ler a base.
+            BASE_SHA=$(git merge-base "origin/${{ github.base_ref }}" HEAD 2>/dev/null)
           else
             BEFORE="${{ github.event.before }}"
-            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
-              RANGE=""   # first push / branch-create / force-push: sem base confiável
-            else
-              RANGE="$BEFORE ${{ github.sha }}"
+            if [ -n "$BEFORE" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ]; then
+              # Pode não existir mais (force-push): rev-parse decide.
+              BASE_SHA=$(git rev-parse --verify --quiet "$BEFORE^{commit}" 2>/dev/null)
             fi
           fi
 
-          if [ -z "$RANGE" ]; then
-            echo "Sem range de diff confiavel -> guard em WARNING puro (nao bloqueia)."
+          if [ -z "$BASE_SHA" ]; then
+            echo "Sem base de diff confiavel -> guard em WARNING puro (nao bloqueia)."
             CHANGED=""
           else
-            CHANGED=$(git diff --name-only --diff-filter=AMR $RANGE -- src/content/posts src/content/glossario 2>/dev/null)
+            echo "Base de comparacao: $BASE_SHA"
+            CHANGED=$(git -c core.quotePath=false diff --name-status -M --diff-filter=AMR "$BASE_SHA" HEAD -- src/content/posts src/content/glossario 2>/dev/null)
           fi
 
           echo "Arquivos estritos (novos/alterados):"; echo "$CHANGED"
           {
+            echo "ANCHOR_BASE_REF=$BASE_SHA"
             echo 'ANCHOR_STRICT_FILES<<__ANCHOR_EOF__'
             echo "$CHANGED"
             echo '__ANCHOR_EOF__'

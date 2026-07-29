@@ -12,10 +12,12 @@
 
 import fs from "fs";
 import path from "path";
+import { execFileSync } from "child_process";
 import { fileURLToPath } from "url";
 import { config } from "../site.config.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const REPO_ROOT = path.resolve(__dirname, "..");
 const POSTS_DIR = path.resolve(__dirname, "../src/content/posts");
 const GLOSSARIO_DIR = path.resolve(__dirname, "../src/content/glossario");
 
@@ -55,20 +57,99 @@ const LOCAL_ANCHORS = [
 // reclassificação das peças acusadas (ver IMPLEMENTACAO23 Fase 6 / item G). Enquanto
 // false, apenas reporta (arquivo:linha — termo) sem empurrar para errors[].
 const ANCHOR_GUARD_BLOCKING = false;
-let anchorHits = []; // { file, line, label }
+let anchorHits = []; // { path, file, line, label, text }
 
-// IMPLEMENTACAO23 Fase 6.1 — enforcement "só o novo": arquivos NOVOS/ALTERADOS
-// bloqueiam; o legado permanece WARNING. Populado pelo i18n-gate via `git diff`
-// (basename normalizado). Vazio/ausente (execução local ou diff indisponível) =>
-// tudo WARNING (NUNCA bloqueia os ~350 legados). `ANCHOR_GUARD_BLOCKING=true`
-// continua sendo o override que bloqueia TUDO (pós-faxina).
-const ANCHOR_STRICT_FILES = new Set(
-  (process.env.ANCHOR_STRICT_FILES || "")
-    .split(/[\n,]/)
-    .map((p) => p.trim())
-    .filter(Boolean)
-    .map((p) => p.split("/").pop()) // path -> basename (anchorHits guarda basename)
+// IMPLEMENTACAO23 Fase 6.1 — enforcement "só o novo": o que a mudança ACRESCENTOU
+// bloqueia; o legado permanece WARNING. `ANCHOR_GUARD_BLOCKING=true` continua
+// sendo o override que bloqueia TUDO (pós-faxina).
+//
+// 29/07/2026 — CONSERTO. A primeira versão media ARQUIVO: bastava constar do
+// `git diff --name-only` para TODAS as âncoras do arquivo virarem bloqueantes,
+// incluindo as que estavam lá há meses. Dois commits do dia que só reescreveram
+// a URL dentro de links markdown acusaram 179 e 240 ocorrências pré-existentes.
+// O custo disso não é o e-mail de falha: é ensinar toda a gente a ignorar gate
+// vermelho, e aí o dia em que ele acusar algo verdadeiro passa batido.
+//
+// Agora a granularidade é OCORRÊNCIA: o arquivo é comparado com a sua própria
+// versão na base (ANCHOR_BASE_REF) e só o EXCEDENTE por (arquivo, label) bloqueia.
+const ANCHOR_BASE_REF = (process.env.ANCHOR_BASE_REF || "").trim();
+
+/**
+ * Executa git dentro do repositório.
+ * @param {string[]} args Argumentos do git.
+ * @returns {string|null} stdout, ou null em qualquer falha (git ausente, ref
+ *   inválida, caminho inexistente no commit).
+ */
+function git(args) {
+  try {
+    return execFileSync("git", args, {
+      cwd: REPO_ROOT,
+      encoding: "utf-8",
+      maxBuffer: 64 * 1024 * 1024,
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+  } catch {
+    return null;
+  }
+}
+
+// A base é confiável? Verificamos UMA vez, e isso prova três coisas de uma vez:
+// que há git, que estamos num work tree e que a ref existe. A partir daqui, uma
+// falha de `git show <ref>:<caminho>` só pode significar "esse arquivo não existia
+// na base" (arquivo novo) — distinção que decide entre bloquear tudo e não
+// bloquear nada, e que não pode ficar por conta de adivinhar mensagem de erro.
+// Sem base confiável (execução local, `npm run build` no Cloudflare, force-push,
+// primeiro push da branch) => NADA bloqueia; o guard degrada para WARNING puro.
+const ANCHOR_BASE_OK = Boolean(
+  ANCHOR_BASE_REF &&
+    git(["rev-parse", "--is-inside-work-tree"]) &&
+    git(["rev-parse", "--verify", "--quiet", ANCHOR_BASE_REF + "^{commit}"])
 );
+
+/**
+ * Lê o inventário de arquivos alterados publicado pelo i18n-gate.
+ * Aceita, na mesma variável (um registro por linha ou separados por vírgula):
+ *   - caminho puro  -> "src/content/posts/x.md"          (base = o mesmo caminho)
+ *   - saída de `git diff --name-status -M`:
+ *       "M<TAB>src/content/posts/x.md"                   (base = o mesmo caminho)
+ *       "A<TAB>src/content/posts/x.md"                   (base = nenhuma)
+ *       "R096<TAB>glossario/en-juros.md<TAB>glossario/en-interest.md"
+ *                                                        (base = o caminho ANTIGO)
+ * O caso R importa de verdade: este blog já renomeou 185 arquivos de conteúdo
+ * para des-aportuguesar slugs EN/ES. Sem seguir o rename, cada um deles seria
+ * lido como arquivo novo e despejaria todo o seu legado como bloqueante.
+ * @param {string} raw Conteúdo da variável de ambiente.
+ * @returns {Map<string, string|null>} caminho ATUAL -> caminho na BASE (null = novo).
+ */
+function parseStrictFiles(raw) {
+  const norm = (p) => p.replace(/\\/g, "/").replace(/^\.\//, "");
+  const map = new Map();
+
+  for (const rawLine of String(raw || "").split(/[\n,]/)) {
+    const cols = rawLine
+      .split("\t")
+      .map((c) => c.trim())
+      .filter(Boolean);
+    if (cols.length === 0) continue;
+
+    if (cols.length === 1) {
+      map.set(norm(cols[0]), norm(cols[0])); // caminho puro: assume alteração
+      continue;
+    }
+
+    const status = cols[0].toUpperCase();
+    if ((status.startsWith("R") || status.startsWith("C")) && cols.length >= 3) {
+      map.set(norm(cols[2]), norm(cols[1]));
+    } else {
+      map.set(norm(cols[1]), status.startsWith("A") ? null : norm(cols[1]));
+    }
+  }
+  return map;
+}
+
+const ANCHOR_STRICT_FILES = ANCHOR_BASE_OK
+  ? parseStrictFiles(process.env.ANCHOR_STRICT_FILES)
+  : new Map();
 
 let errors = [];
 let warnings = [];
@@ -143,18 +224,45 @@ function extractBody(content) {
 }
 
 /**
- * Fase 6 — varre o corpo em busca de âncoras locais (R$/Brasil/brasileiro),
- * registrando arquivo:linha:termo em `anchorHits`.
- * @param {string} file Nome do arquivo.
- * @param {string} content Conteúdo bruto do arquivo.
+ * Fase 6 — ÚNICA função de detecção de âncoras locais (R$/Brasil/brasileiro).
+ *
+ * É aplicada ao arquivo em disco E à sua versão na base (`git show`), de
+ * propósito: dois detectores com regras ligeiramente diferentes é exatamente o
+ * buraco por onde o erro passa, e a comparação "antes x depois" só vale se os
+ * dois lados forem medidos com a mesma régua.
+ *
+ * Devolve [] para peças ISENTAS — scope != universal, `allowLocalAnchors: true`,
+ * ou frontmatter ilegível. A isenção vive DENTRO da detecção e não em quem chama,
+ * senão um arquivo que troca `scope: br-only` por `universal` teria base idêntica
+ * ao atual e as âncoras que ele acabou de assumir escapariam sem bloquear.
+ *
+ * @param {string} content Conteúdo bruto do arquivo (frontmatter incluído).
+ * @returns {{ line: number, label: string, text: string }[]} Ocorrências encontradas.
  */
-function scanLocalAnchors(file, content) {
+function detectAnchors(content) {
+  const data = parseFrontmatter(content);
+  if (!data) return [];
+  if ((data.scope || "universal") !== "universal") return [];
+  if (data.allowLocalAnchors) return [];
+
+  const hits = [];
   const lines = extractBody(content).split("\n");
   for (let i = 0; i < lines.length; i++) {
     for (const [label, re] of LOCAL_ANCHORS) {
-      if (re.test(lines[i])) anchorHits.push({ file, line: i + 1, label });
+      if (re.test(lines[i])) hits.push({ line: i + 1, label, text: lines[i].trim() });
     }
   }
+  return hits;
+}
+
+/**
+ * Aplica `detectAnchors` ao arquivo em disco e arquiva as ocorrências.
+ * @param {string} relPath Caminho relativo à raiz do repo (barras normais).
+ * @param {string} file Nome do arquivo (para exibição).
+ * @param {string} content Conteúdo bruto do arquivo.
+ */
+function collectAnchors(relPath, file, content) {
+  for (const hit of detectAnchors(content)) anchorHits.push({ path: relPath, file, ...hit });
 }
 
 function validateDir(dir, useTranslationKey) {
@@ -207,10 +315,14 @@ function validateDir(dir, useTranslationKey) {
 
     // IMPLEMENTACAO23 Fase 6 — âncora local proibida em peça universal (TODOS os
     // locales; PT universal também deve usar valores relativos, REGRA 17).
-    // Peças br-only/pt-only e as marcadas allowLocalAnchors são isentas.
-    if ((data.scope || "universal") === "universal" && !data.allowLocalAnchors) {
-      scanLocalAnchors(file, content);
-    }
+    // Peças br-only/pt-only e as marcadas allowLocalAnchors são isentas — a
+    // isenção é decidida dentro de detectAnchors, para valer igual no arquivo
+    // atual e na sua versão-base.
+    collectAnchors(
+      path.relative(REPO_ROOT, path.join(dir, file)).replace(/\\/g, "/"),
+      file,
+      content
+    );
 
     if (data.locale === "en") {
       const fields = [
@@ -259,12 +371,94 @@ console.log("");
 validateDir(POSTS_DIR, true);
 validateDir(GLOSSARIO_DIR, true);
 
+/**
+ * IMPLEMENTACAO23 Fase 6.1 — separa o que a mudança ACRESCENTOU (bloqueia) do
+ * que já lá estava (WARNING).
+ *
+ * Granularidade: contagem por (arquivo, label). Para cada arquivo alterado,
+ * comparamos quantas ocorrências de cada termo existem agora com quantas
+ * existiam na versão-base; só o excedente bloqueia. Igual ou menor => o autor
+ * não piorou a peça => WARNING, como o legado.
+ *
+ * Por que contagem, e não comparação do texto da linha: o caso que motivou este
+ * conserto foi trocar a URL DENTRO de um link markdown em linhas que já
+ * continham "R$". Comparar texto de linha marcaria cada uma dessas como âncora
+ * nova e reproduziria o falso alarme. Por que por LABEL, e não total do arquivo:
+ * assim, trocar um "Brasil" por um "R$ 500" continua bloqueando (o total não
+ * mexe, mas a contagem de R$ sobe).
+ *
+ * @returns {{ strict: object[], legacy: object[] }} Ocorrências classificadas.
+ */
+function classifyAnchorHits() {
+  // Override pós-faxina: bloqueia TUDO, sem consultar base.
+  if (ANCHOR_GUARD_BLOCKING) return { strict: anchorHits.slice(), legacy: [] };
+
+  const strict = [];
+  const legacy = [];
+
+  const byPath = new Map();
+  for (const hit of anchorHits) {
+    if (!byPath.has(hit.path)) byPath.set(hit.path, []);
+    byPath.get(hit.path).push(hit);
+  }
+
+  for (const [relPath, hits] of byPath) {
+    // Arquivo intocado por esta mudança (ou sem base confiável): legado.
+    if (!ANCHOR_STRICT_FILES.has(relPath)) {
+      legacy.push(...hits);
+      continue;
+    }
+
+    // Arquivo NOVO (basePath null) ou ausente na base => baseline vazia, logo
+    // TUDO o que ele traz é ocorrência nova e bloqueia.
+    const basePath = ANCHOR_STRICT_FILES.get(relPath);
+    const baseContent = basePath === null ? null : git(["show", ANCHOR_BASE_REF + ":" + basePath]);
+    const baseHits = baseContent === null ? [] : detectAnchors(baseContent);
+
+    const baseTextsByLabel = new Map();
+    for (const b of baseHits) {
+      if (!baseTextsByLabel.has(b.label)) baseTextsByLabel.set(b.label, []);
+      baseTextsByLabel.get(b.label).push(b.text);
+    }
+
+    const hitsByLabel = new Map();
+    for (const hit of hits) {
+      if (!hitsByLabel.has(hit.label)) hitsByLabel.set(hit.label, []);
+      hitsByLabel.get(hit.label).push(hit);
+    }
+
+    for (const [label, labelHits] of hitsByLabel) {
+      const baseTexts = baseTextsByLabel.get(label) || [];
+      const added = labelHits.length - baseTexts.length;
+      if (added <= 0) {
+        legacy.push(...labelHits);
+        continue;
+      }
+
+      // A DECISÃO é a contagem (acima). O texto da linha serve só para ESCOLHER
+      // quais linhas apontar no relatório: preferimos as que não existiam
+      // literalmente na base — são as candidatas mais prováveis a serem as novas.
+      // `novel.length >= added` sempre (as linhas casadas nunca passam do total
+      // da base), então esta escolha nunca muda quantas bloqueiam.
+      const unmatchedBase = baseTexts.slice();
+      const novel = [];
+      for (const hit of labelHits) {
+        const i = unmatchedBase.indexOf(hit.text);
+        if (i === -1) novel.push(hit);
+        else unmatchedBase.splice(i, 1);
+      }
+
+      const blocking = new Set(novel.slice(0, added));
+      for (const hit of labelHits) (blocking.has(hit) ? strict : legacy).push(hit);
+    }
+  }
+
+  return { strict, legacy };
+}
+
 // IMPLEMENTACAO23 Fase 6.1 — saída do guard (arquivo:linha — termo).
-// Classificação: hit em arquivo estrito (novo/alterado) bloqueia; legado = WARNING.
 if (anchorHits.length > 0) {
-  const isStrict = (h) => ANCHOR_GUARD_BLOCKING || ANCHOR_STRICT_FILES.has(h.file);
-  const strict = anchorHits.filter(isStrict);
-  const legacy = anchorHits.filter((h) => !isStrict(h));
+  const { strict, legacy } = classifyAnchorHits();
 
   if (legacy.length > 0) {
     console.log("");
@@ -276,11 +470,12 @@ if (anchorHits.length > 0) {
 
   if (strict.length > 0) {
     console.log("");
-    console.log("  ANCORAS LOCAIS em pecas NOVAS/ALTERADAS (BLOQUEANTE): " + strict.length + " ocorrencia(s):");
+    console.log("  ANCORAS LOCAIS INTRODUZIDAS por esta mudanca (BLOQUEANTE): " + strict.length + " ocorrencia(s):");
     strict.forEach(({ file, line, label }) =>
       console.log("   [ANCHOR] " + file + ":" + line + " - [" + label + "]"));
-    errors.push("Guard de ancora local: " + strict.length + " ocorrencia(s) em pecas novas/alteradas. " +
-      "Peca universal nova NAO pode conter R$/Brasil/brasileiro (use valores relativos, ou marque scope: br-only / allowLocalAnchors: true).");
+    errors.push("Guard de ancora local: " + strict.length + " ocorrencia(s) ACRESCENTADA(S) por esta mudanca. " +
+      "Peca universal NAO pode ganhar R$/Brasil/brasileiro (use valores relativos, ou marque scope: br-only / allowLocalAnchors: true). " +
+      "As ocorrencias antigas do mesmo arquivo continuam como WARNING - so o que aumentou bloqueia.");
   }
 }
 
