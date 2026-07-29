@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import type { Locale, HomeCard } from './home-data';
+import { canonicalPath } from './url';
 
 /**
  * Dados das páginas de categoria — UMA fonte para pt/en/es (mesmo padrão do
@@ -22,7 +23,7 @@ export async function getCategoryPaths(locale: Locale) {
     const alternates: Record<string, string> = {};
     for (const l of ['pt', 'en', 'es'] as Locale[]) {
       if (all.some(p => p.data.locale === l && p.data.category === category)) {
-        alternates[l] = `${l === 'pt' ? '' : `/${l}`}/categorias/${category}`;
+        alternates[l] = canonicalPath(`${l === 'pt' ? '' : `/${l}`}/categorias/${category}`);
       }
     }
 
@@ -33,7 +34,7 @@ export async function getCategoryPaths(locale: Locale) {
         description: p.data.description,
         image: p.data.image,
         imageAlt: p.data.imageAlt,
-        href: `${prefix}/posts/${p.slug}`,
+        href: canonicalPath(`${prefix}/posts/${p.slug}`),
         category: p.data.category,
         date: p.data.publishedAt,
         readingTime: p.data.readingTime,

@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { config } from '../../site.config';
+import { absUrl } from '../utils/url';
 
 export const prerender = true;
 
@@ -51,7 +52,7 @@ export const GET: APIRoute = async () => {
       lastmod: today,
       alternates: locales.map(l => ({
         hreflang: l,
-        href: `${site}${localePrefixes[l]}${page.path}`
+        href: absUrl(`${localePrefixes[l]}${page.path}`)
       }))
     }))
   );
@@ -97,7 +98,7 @@ export const GET: APIRoute = async () => {
       lastmod: today,
       alternates: locales
         .filter(l => postsByLocale[l].some(p => p.data.category === cat))
-        .map(l => ({ hreflang: l, href: `${site}${localePrefixes[l]}/categorias/${cat}` })),
+        .map(l => ({ hreflang: l, href: absUrl(`${localePrefixes[l]}/categorias/${cat}`) })),
     }));
   });
 
@@ -136,7 +137,7 @@ export const GET: APIRoute = async () => {
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${allPages.map(page => `  <url>
-    <loc>${site}${page.url}</loc>
+    <loc>${absUrl(page.url)}</loc>
     <lastmod>${page.lastmod || today}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>${

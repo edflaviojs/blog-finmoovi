@@ -1,6 +1,7 @@
 ---
 import '@/styles/global.css';
 import { config } from '../../site.config';
+import { absUrl, canonicalPath } from '@/utils/url';
 
 interface Props {
   title: string;
@@ -34,7 +35,7 @@ const {
   preloadImageSizes
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = absUrl(Astro.url.pathname);
 const ogImage = new URL(image, Astro.site);
 // startsWith (não só ===): a home passa "FinMoovi Blog — <sufixo descritivo>"
 // para o title já nascer com 50-60 chars (recomendação de SEO); sem isso o
@@ -51,15 +52,22 @@ else if (basePath === '/en') { currentLocale = 'en'; basePath = '/'; }
 else if (basePath === '/es') { currentLocale = 'es'; basePath = '/'; }
 
 const htmlLang = currentLocale === 'pt' ? 'pt-BR' : currentLocale === 'es' ? 'es' : 'en';
-const hrefPt = new URL(basePath, Astro.site).toString();
-const hrefEn = new URL('/en' + (basePath === '/' ? '' : basePath), Astro.site).toString();
-const hrefEs = new URL('/es' + (basePath === '/' ? '' : basePath), Astro.site).toString();
+const hrefPt = absUrl(basePath);
+const hrefEn = absUrl('/en' + (basePath === '/' ? '' : basePath));
+const hrefEs = absUrl('/es' + (basePath === '/' ? '' : basePath));
 
 // Only emit hreflang for pages that exist in all locales
-const hasI18nVersion = alternates || basePath === '/' || basePath === '/glossario' || basePath === '/ferramentas' || basePath === '/sobre';
-const finalHrefPt = alternates?.pt ? new URL(alternates.pt, Astro.site).toString() : hrefPt;
-const finalHrefEn = alternates?.en ? new URL(alternates.en, Astro.site).toString() : hrefEn;
-const finalHrefEs = alternates?.es ? new URL(alternates.es, Astro.site).toString() : hrefEs;
+//
+// A comparação TEM de ser feita na forma normalizada: com build format
+// 'directory', Astro.url.pathname vem COM barra final ('/glossario/'), então
+// comparar contra '/glossario' nunca casava e essas páginas saíam com ZERO
+// hreflang nos 3 idiomas. A lista abaixo é a forma canônica (canonicalPath),
+// e só ela — nenhuma rota nova entra por causa desta correção.
+const I18N_BASE_PATHS = ['/', '/glossario/', '/ferramentas/', '/sobre/'];
+const hasI18nVersion = alternates || I18N_BASE_PATHS.includes(canonicalPath(basePath));
+const finalHrefPt = alternates?.pt ? absUrl(alternates.pt) : hrefPt;
+const finalHrefEn = alternates?.en ? absUrl(alternates.en) : hrefEn;
+const finalHrefEs = alternates?.es ? absUrl(alternates.es) : hrefEs;
 const ogLocale = currentLocale === 'pt' ? 'pt_BR' : currentLocale === 'es' ? 'es_ES' : 'en_US';
 ---
 

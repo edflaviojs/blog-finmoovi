@@ -2,6 +2,7 @@
 import PostLayout from '@layouts/PostLayout.astro';
 import SchemaArticle from '@components/seo/SchemaArticle.astro';
 import { getCollection } from 'astro:content';
+import { canonicalPath } from '@/utils/url';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'pt');
@@ -22,7 +23,7 @@ const autoSchema = schemaMatch ? schemaMatch[1] : null;
 const canonicalURL = new URL(`/posts/${post.slug}`, Astro.site).toString();
 
 // Find translated versions via translationKey or same date+category
-const alternates: { pt?: string; en?: string; es?: string } = { pt: `/posts/${post.slug}` };
+const alternates: { pt?: string; en?: string; es?: string } = { pt: canonicalPath(`/posts/${post.slug}`) };
 const allTranslatedPosts = await getCollection('posts', ({ data }) => !data.draft && data.locale !== 'pt');
 
 // Strategy 1: match by translationKey
@@ -48,8 +49,8 @@ if (!enPost || !esPost) {
   if (!esPost && esCandidates.length === 1) esPost = esCandidates[0];
 }
 
-if (enPost) alternates.en = `/en/posts/${enPost.slug}`;
-if (esPost) alternates.es = `/es/posts/${esPost.slug}`;
+if (enPost) alternates.en = canonicalPath(`/en/posts/${enPost.slug}`);
+if (esPost) alternates.es = canonicalPath(`/es/posts/${esPost.slug}`);
 ---
 
 <PostLayout
