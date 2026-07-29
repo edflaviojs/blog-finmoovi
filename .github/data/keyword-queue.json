@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-28T12:29:04.156Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-07-29T11:14:55.719Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -81,8 +81,10 @@
       "category": null,
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-07-23T13:15:09.582Z"
+      "status": "used",
+      "addedAt": "2026-07-23T13:15:09.582Z",
+      "usedAt": "2026-07-29T11:14:55.719Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "amortização o que é",
@@ -176,8 +178,9 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-07-27T10:31:25.227Z"
+      "status": "skipped",
+      "addedAt": "2026-07-27T10:31:25.227Z",
+      "reason": "coberto-glossario"
     },
     {
       "keyword": "kyc o que é",
