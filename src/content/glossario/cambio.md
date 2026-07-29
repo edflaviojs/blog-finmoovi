@@ -1,6 +1,7 @@
 ---
 term: "Câmbio"
 image: "/images/glossario/cambio.webp"
+imageAlt: "Moedas e barras de ouro empilhadas ao lado de um cofre dourado com planta em frasco."
 definition: "Operação de troca entre moedas de diferentes países. A taxa de câmbio indica quanto vale uma moeda em relação a outra."
 category: "basico"
 relatedTerms: ["IOF", "Diversificação", "IPCA"]

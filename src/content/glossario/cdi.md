@@ -1,6 +1,7 @@
 ---
 term: "CDI"
 image: "/images/glossario/cdi.webp"
+imageAlt: "Moedas douradas, gráfico azul e planta crescendo sobre fundo roxo com texto CDI."
 definition: "Certificado de Depósito Interbancário. Taxa de referência para investimentos de renda fixa no Brasil. Acompanha de perto a taxa Selic."
 category: "investimentos"
 relatedTerms: ["Selic", "CDB", "Renda Fixa"]

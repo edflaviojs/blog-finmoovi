@@ -3,6 +3,7 @@ title: "Você também fica sem saber para onde foi seu dinheiro no fim do mês?"
 description: "Descubra por que o saldo some e como o FinMoovi, com categorização automática, devolve o controle das suas finanças em minutos."
 tickerHeadline: "O mistério que suga seu salário"
 image: "/images/posts/voce-tambem-fica-sem-saber-para-onde-foi-seu-dinheiro-no-fim.webp"
+imageAlt: "Formas abstratas onduladas em azul escuro e amarelo sobre fundo branco."
 category: "ferramentas"
 locale: "pt"
 tags: ["dinheiro desaparece","controle financeiro","app FinMoovi","categorização automática","OCR","captura por voz","relatórios de gastos","categorizar gastos","relatórios","visão financeira","controle de despesas","finmoovi","finanças pessoais"]

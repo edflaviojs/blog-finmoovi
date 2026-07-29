@@ -3,6 +3,7 @@ title: "How to Use a Compound Interest Calculator in 2026 to Boost Your Savings"
 description: "Discover in plain language how a compound interest calculator can transform your financial planning with a practical step‑by‑step guide using FinMoovi."
 tickerHeadline: "The formula that makes your money work"
 image: "/images/posts/como-usar-a-calculadora-de-juros-compostos-em-2026-e-acelera.webp"
+imageAlt: "Golden wave rising on blue gradient background"
 category: "dicas"
 locale: "en"
 tags: ["compound interest calculator","personal finance","economics","money"]

@@ -4,6 +4,7 @@ definition: "Entenda o que é bônus salarial, como funciona, vantagens, riscos 
 title: "bônus salarial - Glossário Financeiro"
 description: "Entenda o que é bônus salarial, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/bonus.webp"
+imageAlt: "Pilhas de moedas douradas e jarra com planta verde sobre fundo escuro."
 category: "basico"
 tags: ["bônus salarial", "glossário", "finanças"]
 author: "FinMoovi"

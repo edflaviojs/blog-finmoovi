@@ -4,6 +4,7 @@ definition: "Entenda o que é cdb, como funciona, vantagens, riscos e exemplos p
 title: "cdb - Glossário Financeiro"
 description: "Entenda o que é cdb, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/cdb.webp"
+imageAlt: "Moedas douradas, letra B rosa e planta em pote sobre fundo gradiente."
 category: "basico"
 tags: ["cdb", "glossário", "finanças"]
 author: "FinMoovi"

@@ -3,6 +3,7 @@ title: "Poupar dinheiro dicas: 7 hábitos simples para 2026"
 description: "Descubra 7 hábitos práticos para economizar no dia a dia, montar reserva de emergência e usar cashback. Ideal para quem ganha de R$3 mil a R$8 mil."
 tickerHeadline: "O truque que salva seu salário"
 image: "/images/posts/poupar-dinheiro-dicas-7-habitos-simples-para-2026.webp"
+imageAlt: "Notebook, caneca, caderno e plantas em mesa de trabalho iluminada."
 category: "dicas"
 locale: "pt"
 tags: ["poupar dinheiro dicas","finanças pessoais","economia","dinheiro"]

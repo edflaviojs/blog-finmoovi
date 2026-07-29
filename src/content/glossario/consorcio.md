@@ -1,6 +1,7 @@
 ---
 term: "Consórcio"
 image: "/images/glossario/consorcio.webp"
+imageAlt: "Pilhas de moedas douradas, frascos de vidro e planta verde sobre fundo escuro."
 definition: "Sistema de compra coletiva onde um grupo de pessoas contribui mensalmente para formar um fundo comum. Participantes são contemplados por sorteio ou lance."
 category: "credito"
 relatedTerms: ["Financiamento", "Amortização", "Poupança"]

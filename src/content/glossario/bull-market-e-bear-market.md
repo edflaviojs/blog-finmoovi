@@ -5,6 +5,7 @@ category: "mercado"
 locale: "pt"
 translationKey: "glossario-bull-market-e-bear-market"
 image: "/images/glossario/bull-market-e-bear-market.webp"
+imageAlt: "Moedas douradas, porquinho da economia e planta em frasco sobre fundo roxo."
 relatedTerms: ["Risco","Investimento","Rentabilidade"]
 publishedAt: 2026-06-06
 ---

@@ -3,6 +3,7 @@ title: "Cómo usar la calculadora de interés compuesto en 2026 y acelerar tu ah
 description: "Descubre, en lenguaje simple, cómo la calculadora de interés compuesto puede transformar tu planificación financiera y ve un paso a paso práctico con FinMoovi."
 tickerHeadline: "La fórmula que hace trabajar tu dinero"
 image: "/images/posts/como-usar-a-calculadora-de-juros-compostos-em-2026-e-acelera.webp"
+imageAlt: "Curvas doradas ascendentes sobre fondo degradado azul y amarillo."
 category: "dicas"
 locale: "es"
 tags: ["calculadora interés compuesto","finanzas personales","ahorro","dinero"]

@@ -3,6 +3,7 @@ title: "Como reduzir o peso do seu financiamento em 2026 com amortização intel
 description: "Descubra o que é amortização de financiamento, como ela afeta seus juros e como usar o FinMoovi para aplicar a estratégia em poucos minutos."
 tickerHeadline: "O truque que alivia sua dívida"
 image: "/images/posts/como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz.webp"
+imageAlt: "Carteira marrom, calculadora e moedas sobre mármore branco com plantas verdes."
 category: "dicas"
 tags:
   - "amortização"

@@ -5,6 +5,7 @@ category: "mercado"
 locale: "pt"
 translationKey: "glossario-alavancagem"
 image: "/images/glossario/alavancagem.webp"
+imageAlt: "Moedas douradas, barras e vaso com planta sobre fundo azul escuro."
 relatedTerms: ["Risco","Investimento","Dívida"]
 publishedAt: 2026-06-13
 ---

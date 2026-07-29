@@ -3,6 +3,7 @@ title: "How to Lighten Your Loan Burden in 2026 with Smart Amortization"
 description: "Discover practical ways to cut interest, shorten loan terms, and free up cash in 2026 using smart amortization with FinMoovi."
 tickerHeadline: "The trick that eases your debt"
 image: "/images/posts/como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz.webp"
+imageAlt: "Brown wallet, black calculator, scattered coins, and green plants on a white marble surface."
 category: "dicas"
 tags:
   - "loan"

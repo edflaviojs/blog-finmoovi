@@ -5,6 +5,7 @@ category: "mercado"
 locale: "pt"
 translationKey: "glossario-dividend-yield"
 image: "/images/glossario/dividend-yield.webp"
+imageAlt: "Um gráfico de rendimento de dividendos com moedas de ouro e uma planta em um vaso."
 relatedTerms: ["Dividendos","Ações","Rendimento"]
 publishedAt: 2026-06-11
 ---

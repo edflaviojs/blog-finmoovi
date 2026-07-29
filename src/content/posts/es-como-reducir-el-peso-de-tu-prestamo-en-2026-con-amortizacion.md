@@ -3,6 +3,7 @@ title: "Cómo reducir el peso de tu préstamo en 2026 con amortización intelige
 description: "Descubre cómo usar la amortización para pagar menos intereses y acortar tu préstamo. Guía práctica paso a paso con FinMoovi."
 tickerHeadline: "El truco que alivia tu deuda"
 image: "/images/posts/como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz.webp"
+imageAlt: "Cartera marrón, calculadora negra, monedas y plantas verdes sobre superficie de mármol blanco."
 category: "dicas"
 tags:
   - "amortización"

@@ -4,6 +4,7 @@ definition: "Entenda o que é dívida, como funciona, vantagens, riscos e exempl
 title: "dívida - Glossário Financeiro"
 description: "Entenda o que é dívida, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/divida.webp"
+imageAlt: "Imagem de um artigo de finanças pessoais sobre dívida, com moedas e um porquinho."
 category: "basico"
 tags: ["dívida", "glossário", "finanças"]
 author: "FinMoovi"

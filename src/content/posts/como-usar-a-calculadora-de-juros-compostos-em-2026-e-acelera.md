@@ -3,6 +3,7 @@ title: "Como usar a calculadora de juros compostos em 2026 e acelerar sua poupan
 description: "Descubra, em linguagem simples, como a calculadora de juros compostos pode transformar seu planejamento financeiro e veja um passo a passo prático com o FinMoovi."
 tickerHeadline: "A fórmula que faz seu dinheiro trabalhar"
 image: "/images/posts/como-usar-a-calculadora-de-juros-compostos-em-2026-e-acelera.webp"
+imageAlt: "Fundo gradiente azul e dourado com formas onduladas abstratas."
 category: "dicas"
 locale: "pt"
 tags: ["calculadora juros compostos","finanças pessoais","economia","dinheiro"]

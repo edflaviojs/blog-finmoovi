@@ -1,6 +1,7 @@
 ---
 term: "Dividendos"
 image: "/images/glossario/dividendos.webp"
+imageAlt: "Um gráfico de crescimento de rendimentos, um vaso com moedas e uma planta em crescimento."
 definition: "Parte do lucro de uma empresa distribuída aos acionistas. É uma forma de renda passiva para quem investe em ações."
 category: "investimentos"
 relatedTerms: ["Ações", "Renda Variável", "Dividend Yield"]

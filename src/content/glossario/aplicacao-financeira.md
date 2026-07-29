@@ -4,6 +4,7 @@ definition: "Entenda o que é aplicação financeira, como funciona, vantagens, 
 title: "aplicação financeira - Glossário Financeiro"
 description: "Entenda o que é aplicação financeira, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/aplicacao.webp"
+imageAlt: "Moedas douradas empilhadas e plantas verdes crescendo em vasos de vidro sobre fundo escuro."
 category: "basico"
 tags: ["aplicação financeira", "glossário", "finanças"]
 author: "FinMoovi"
