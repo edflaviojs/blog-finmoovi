@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-29T11:27:43.733Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-07-29T12:53:42.234Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -341,8 +341,10 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-07-27T11:01:33.696Z"
+      "status": "used",
+      "addedAt": "2026-07-27T11:01:33.696Z",
+      "usedAt": "2026-07-29T12:53:42.234Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "gasto fixo mensal",
