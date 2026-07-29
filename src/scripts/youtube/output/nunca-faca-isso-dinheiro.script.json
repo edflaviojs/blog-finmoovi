@@ -1,0 +1,160 @@
+{
+  "slug": "nunca-faca-isso-dinheiro",
+  "term": "5 coisas que NUNCA faço com meu dinheiro",
+  "category": "mindset",
+  "keyword": "5 coisas que NUNCA faço com meu dinheiro",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "contagem",
+    "frase": "*5 coisas que NUNCA faço* com meu dinheiro... *perdi R$ 1.200* este mês",
+    "counter": {
+      "from": 500,
+      "to": 12000,
+      "prefix": "R$"
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "5 coisas que NUNCA faço com meu dinheiro já me fizeram perder R$ 1.200 este mês.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "coisas",
+          "visual": {
+            "type": "statement",
+            "text": "5 coisas que NUNCA faço",
+            "note": ""
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 1.200",
+            "note": ""
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Eu sei, a vida é corrida, a conta chega e a gente pensa que tá tudo bem deixar pra lá. Não é culpa sua, é a pressa que engole a gente.",
+      "durationSec": 9,
+      "shots": [
+        {
+          "anchor": "pressa",
+          "visual": {
+            "type": "icon",
+            "icon": "clock",
+            "note": ""
+          },
+          "sfx": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Cada R$ 100 que você deixa na poupança vira água escorrendo por um ralo, e logo, aquele ralo vira uma avalanche que engole seu bolso.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200",
+            "note": ""
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "ralo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "ralo",
+            "note": ""
+          },
+          "sfx": "slide"
+        },
+        {
+          "anchor": "avalanche",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche",
+            "note": ""
+          },
+          "sfx": "avalanche"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "No FinMoovi, o fluxo de caixa te mostra exatamente pra onde cada centavo foi, revelando gastos ocultos e permitindo cortar o vazamento antes que vire dívida.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "fluxo",
+          "visual": {
+            "type": "app",
+            "app": "fluxo",
+            "note": ""
+          }
+        },
+        {
+          "anchor": "cortar",
+          "visual": {
+            "type": "icon",
+            "icon": "warning",
+            "note": ""
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer parar de perder dinheiro? Usa a calculadora do FinMoovi e vê quanto você economiza em segundos.",
+      "durationSec": 6,
+      "shots": [
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": ""
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Lembra: Dinheiro sem controle é dinheiro dos outros. Se curtiu, deixa um comentário com teu maior erro financeiro.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle",
+            "note": ""
+          },
+          "sfx": "ding"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "clica aí e testa agora",
+    "target": "app"
+  },
+  "totalDurationSec": 49
+}
