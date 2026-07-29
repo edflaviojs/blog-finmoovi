@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Nubank is a Brazilian fintech that works as a digital bank: it offers a checking account, a credit card with no annual fee, and investment options, all managed from your phone. There are no physical branches, which reduces costs and allows lower fees.  
+Nubank is a fintech that works as a digital bank: it offers a checking account, a credit card with no annual fee, and investment options, all managed from your phone. There are no physical branches, which reduces costs and allows lower fees.  
 
 ![What it is](/images/glossario/nubank-inline-1.webp)
 
@@ -27,14 +27,14 @@ Nubank is a Brazilian fintech that works as a digital bank: it offers a checking
 - International credit card with no annual fee  
 - Points program that can be exchanged for products or discounts  
 - Personal loans with [interest](/en/glossario/en-interest) competitive  
-- Nubank Invest (CDBs and [funds](/en/glossario/en-investment-fund)) for those who want to start investing  
+- Nubank Invest (certificates of deposit (CDs) and [funds](/en/glossario/en-investment-fund)) for those who want to start investing  
 
 ## How it works
 
 Everything happens inside the app: you download it, create a login, upload a photo of your document and, in a few minutes, the account is ready. The credit card arrives in up to 10 days and can already be used for online or in‑store purchases. When you pay the bill, the money comes out of your Nubank account, which works like a traditional checking account but with a simpler interface.  
 
 - Download the app from your phone’s store  
-- Register CPF, RG and a selfie for identity verification  
+- Register tax ID, ID and a selfie for identity verification  
 - Choose between opening an account, requesting a card or investing  
 - Receive the card and activate it through the app with a tap  
 - Use the QR Code or the [Pix](/en/glossario/en-pix) key to receive and send money  
@@ -53,20 +53,20 @@ Nubank’s proposition is to make banking services more transparent and cheaper.
 
 ## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
 
-Even with many advantages, using a fully digital bank has some points of attention. First, the dependence on the internet: if the phone freezes or the network drops, you may be left without immediate access to your money. Second, the credit limit can be automatically adjusted by the algorithm, which sometimes surprises people used to fixed limits. Finally, although the Credit Guarantee Fund (FGC) covers up to R$ 250 mil per institution, the total [value](/en/glossario/en-financial-value) deposited is still subject to market risks in the investments.  
+Even with many advantages, using a fully digital bank has some points of attention. First, the dependence on the internet: if the phone freezes or the network drops, you may be left without immediate access to your money. Second, the credit limit can be automatically adjusted by the algorithm, which sometimes surprises people used to fixed limits. Finally, although the deposit insurance fund covers up to $50,000 per institution, the total [value](/en/glossario/en-financial-value) deposited is still subject to market risks in the investments.  
 
 - Need for a stable connection for transactions  
 - Credit limit subject to automatic reviews  
-- FGC coverage limited to R$ 250 mil per CPF  
+- Deposit insurance fund coverage limited to $50,000 per account  
 - Investments can lose value in high‑volatility scenarios  
 
 ## Practical examples
 
 Imagine three friends who earn different salaries and decide to use Nubank to organize their financial lives.  
 
-- **Ana**, who earns R$ 3,200, uses the card to pay grocery shopping and pays the bill in full every month. She takes advantage of the points program and redeems 1,500 points for a R$ 50 gift‑card, saving on the next purchase.  
-- **Bruno**, with a salary of R$ 5,500, opens the digital account and schedules automatic debit for the electricity bill. He also makes a monthly deposit of R$ 1,000 in Nubank Invest, earning about 8 % per year in CDBs, which generates roughly R$ 80 of interest at the end of the first year.  
-- **Carla**, who receives R$ 7,800, requests a personal loan of R$ 5,000 to remodel her house. The contract has a rate of 1.9 % per month, and she pays it in 12 installments of R$ 466, which fits the budget without needing to resort to higher‑interest credit cards.  
+- **Ana**, who earns $640, uses the card to pay grocery shopping and pays the bill in full every month. She takes advantage of the points program and redeems 1,500 points for a $10 gift‑card, saving on the next purchase.  
+- **Bruno**, with a salary of $1,100, opens the digital account and schedules automatic debit for the electricity bill. He also makes a monthly deposit of $200 in Nubank Invest, earning about 8 % per year in certificates of deposit (CDs), which generates roughly $16 of interest at the end of the first year.  
+- **Carla**, who receives $1,560, requests a personal loan of $1,000 to remodel her house. The contract has a rate of 1.9 % per month, and she pays it in 12 installments of $93, which fits the budget without needing to resort to higher‑interest credit cards.  
 
 **Practical tip:** always pay the Nubank credit‑card bill before the due date to avoid interest and keep your credit score high.  
 
@@ -76,10 +76,10 @@ Imagine three friends who earn different salaries and decide to use Nubank to or
 
 ## How to start
 
-Opening a Nubank account is quick and free. You only need a smartphone, a valid CPF and an email address. The process can be completed in less than 10 minutes, and the card arrives at home with no issuance fee.  
+Opening a Nubank account is quick and free. You only need a smartphone, a valid tax ID and an email address. The process can be completed in less than 10 minutes, and the card arrives at home with no issuance fee.  
 
 - Go to the app store (Google Play or App Store) and install Nubank  
-- Click “Create account”, enter CPF, full name and date of birth  
+- Click “Create account”, enter tax ID, full name and date of birth  
 - Take a photo of your identity document and a selfie for facial verification  
 - Set a 6‑digit password and accept the terms of use  
 - Wait for approval (usually instant) and start using the account  

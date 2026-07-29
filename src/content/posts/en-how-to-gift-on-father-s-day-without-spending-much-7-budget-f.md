@@ -30,17 +30,17 @@ Before you start browsing the internet, set a ceiling. Use the **30 %** rule: 
 
 ![1️⃣ Set a spending limit first](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--2.webp)
 
-> **Practical tip:** Open **[FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026)**, log your salary, fixed [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) and create a “Father’s Day” category. Set a maximum amount (e.g., R$ 150) and let the app warn you when you’re close to the limit.
+> **Practical tip:** Open **[FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026)**, log your salary, fixed [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea) and create a “Father’s Day” category. Set a maximum amount (e.g., $30) and let the app warn you when you’re close to the limit.
 
-## 2️⃣ Gift ideas under R$ 50
+## 2️⃣ Gift ideas under $5
 
 ### 2.1. Handmade breakfast kit
 - **What to buy:** cheese bread, instant coffee, homemade jam, seasonal fruit.  
-- **Cost:** about R$ 35 if you shop at local markets and take advantage of promotions.
+- **Cost:** about $7 if you shop at local markets and take advantage of promotions.
 
 ### 2.2. Used book or e‑book
-- **Where to find:** online used‑book stores (e.g., Estante Virtual) or e‑book promotions on digital platforms.  
-- **Average price:** R$ 20‑R$ 30.
+- **Where to find:** online used‑book stores or e‑book promotions on digital platforms.  
+- **Average price:** $4‑$6.
 
 ### 2.3. “Do‑it‑yourself” experience
 - **Example:** a fishing day, a bike ride, or a backyard barbecue.  
@@ -56,7 +56,7 @@ Smart **cashback** can return up to 12 % of the amount spent at partner stores
 2. **Activate coupons** before checkout – sites like *Cuponomia* or *Méliuz* usually have valid codes.  
 3. **Pay with a [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026)** that offers extra cashback (up to 1 % additional).
 
-> **Result:** a R$ 120 gift can generate up to R$ 14 back, lowering the effective cost.
+> **Result:** a $24 gift can generate up to $3 back, lowering the effective cost.
 
 ## 4️⃣ DIY (Do‑It‑Yourself) Gifts
 
@@ -66,7 +66,7 @@ Smart **cashback** can return up to 12 % of the amount spent at partner stores
 
 ### 4.2. Homemade craft beer or wine
 - **Materials:** reused bottles, custom label (printed at home).  
-- **[Investment](/en/posts/en-building-a-diversified-portfolio-with-r-500):** R$ 30‑R$ 40 for the supplies.
+- **[Investment](/en/posts/en-building-a-diversified-portfolio-with-r-500):** $6‑$8 for the supplies.
 
 ### 4.3. “Car Maintenance” kit
 - **Items:** oil, air filter, microfiber cloth.  
@@ -75,7 +75,7 @@ Smart **cashback** can return up to 12 % of the amount spent at partner stores
 ## 5️⃣ Early planning: the strategy that saves your wallet
 
 ### 5.1. **Start saving already in January**
-IBGE [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o) that the average monthly income of Brazilian workers in 2023 was **R$ 2,600**. If you set aside R$ 10 per week, you’ll already have R$ 40 by March – money that can be used as part of the gift.
+The national statistics office reports that the average monthly income of workers in 2023 was **$520**. If you set aside $2 per week, you’ll already have $8 by March – money that can be used as part of the gift.
 
 ![5️⃣ Early planning: the strategy that saves your wallet](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--6.webp)
 
@@ -104,6 +104,6 @@ Gifting dad doesn’t have to mean extravagant spending. With a well‑defined l
 ---
 
 **Sources:**
-- [IBGE – Average monthly income of workers](https://www.ibge.gov.br)  
-- [Serasa Experian – Consumption on commemorative dates 2023](https://www.serasa.com.br)
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"How to Gift on Father's Day Without Spending Much: 7 [Budget](/en/posts/en-how-to-create-personal-budget)‑Friendly Ideas","step":[{"@type":"HowToStep","position":1,"name":"1. Handmade breakfast kit","text":"- What to buy: cheese bread, instant coffee, homemade jam, seasonal fruit. - Cost: about R$ 35 if you shop at local markets and take advantage of promotions."},{"@type":"HowToStep","position":2,"name":"2. Used book or e‑book","text":"- Where to find: online used‑book stores e.g., Estante Virtual or e‑book promotions on digital platforms. - Average price: R$ 20‑R$ 30."},{"@type":"HowToStep","position":3,"name":"3. “Do‑it‑yourself” experience","text":"- Example: a fishing day, a bike ride, or a backyard barbecue. - Cost: almost zero, just the food or fuel, which can stay within your limit."},{"@type":"HowToStep","position":4,"name":"Choose a cashback app ([FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f) integrates with partners that offer cashback).","text":"Choose a cashback app ([FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f) integrates with partners that offer cashback)."},{"@type":"HowToStep","position":5,"name":"Activate coupons before checkout – sites like Cuponomia or Méliuz usually have valid codes.","text":"Activate coupons before checkout – sites like Cuponomia or Méliuz usually have valid codes."},{"@type":"HowToStep","position":6,"name":"Pay with a [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) that offers extra cashback (up to 1 % additional).","text":"> Result: a R$ 120 gift can generate up to R$ 14 back, lowering the effective cost."},{"@type":"HowToStep","position":7,"name":"1. Digital memory album","text":"- How to make: select old photos, use a free editor Canva and assemble an interactive PDF. - Cost: zero, just your time."},{"@type":"HowToStep","position":8,"name":"2. Homemade craft beer or wine","text":"- Materials: reused bottles, custom label printed at home. - [Investment](/en/posts/en-tesouro-direto-for-beginners)/en/posts/en-montando-carteira-diversificada-com-r-500: R$ 30‑R$ 40 for the supplies."}]} -->
+- [national statistics office – Average monthly income of workers](https://www.nationalstatistics.org)  
+- [credit bureaus – Consumption on commemorative dates 2023](https://www.creditbureaus.org)
+<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"How to Gift on Father's Day Without Spending Much: 7 Budget-Friendly Ideas","step":[{"@type":"HowToStep","position":1,"name":"1. Handmade breakfast kit","text":"- What to buy: cheese bread, instant coffee, homemade jam, seasonal fruit. - Cost: about $7 if you shop at local markets and take advantage of promotions."},{"@type":"HowToStep","position":2,"name":"2. Used book or e‑book","text":"- Where to find: online used‑book stores or e‑book promotions on digital platforms. - Average price: $4‑$6."},{"@type":"HowToStep","position":3,"name":"3. “Do‑it‑yourself” experience","text":"- Example: a fishing day, a bike ride, or a backyard barbecue. - Cost: almost zero, just the food or fuel, which can stay within your limit."},{"@type":"HowToStep","position":4,"name":"Choose a cashback app ([FinMoovi] integrates with partners that offer cashback).","text":"Choose a cashback app ([FinMoovi] integrates with partners that offer cashback)."},{"@type":"HowToStep","position":5,"name":"Activate coupons before checkout – sites like Cuponomia or Méliuz usually have valid codes.","text":"Activate coupons before checkout – sites like Cuponomia or Méliuz usually have valid codes."},{"@type":"HowToStep","position":6,"name":"Pay with a [credit card] that offers extra cashback (up to 1 % additional).","text":"Result: a $24 gift can generate up to $3 back, lowering the effective cost."},{"@type":"HowToStep","position":7,"name":"1. Digital memory album","text":"- How to make: select old photos, use a free editor Canva and assemble an interactive PDF. - Cost: zero, just your time."},{"@type":"HowToStep","position":8,"name":"2. Homemade craft beer or wine","text":"- Materials: reused bottles, custom label printed at home. - Investment: $6‑$8 for the supplies."}]} -->

@@ -18,10 +18,10 @@ seo:
 ---
 
 ## What it is
-Money is a fundamental concept in the world of finance, and understanding how it works is essential for making informed decisions about our money. In short, money is a medium of exchange, a unit of account, and a standard of **[value](/en/glossario/en-financial-value)**. In Brazil, our currency is the Real (R$), and it is used to buy everything from food and clothing to houses and cars. For example, if you earn R$ 5,000 per month, you can use that money to pay your bills, buy groceries, and still have a little left to save or invest.
+Money is a fundamental concept in the world of finance, and understanding how it works is essential for making informed decisions about our money. In short, money is a medium of exchange, a unit of account, and a standard of **[value](/en/glossario/en-financial-value)**. In many countries, the local currency (e.g., dollars) is used to buy everything from food and clothing to houses and cars. For example, if you earn $1,000 per month, you can use that money to pay your bills, buy groceries, and still have a little left to save or invest.
 
 * Money can be physical, like banknotes and coins, or digital, like the money in your bank account.  
-* Money can also be national, like the Real in Brazil, or international, like the [US Dollar](/en/posts/en-investing-in-dollar-in-brazil).  
+* Money can also be national, like the dollar in many places, or international, like the [US Dollar](/en/posts/en-investing-in-dollar-in-brazil).  
 * It’s important to note that money has no intrinsic value, meaning it isn’t worth anything by itself, but rather the value that society assigns to it.
 
 ![What it is](/images/glossario/moeda-inline-1.webp)
@@ -29,9 +29,9 @@ Money is a fundamental concept in the world of finance, and understanding how it
 
 
 ## How it works
-Money works as a credit‑and‑debit system, where people and businesses exchange goods and services for cash. When you buy something, you’re transferring money from your pocket to the seller’s pocket. For example, if you buy a coffee for R$ 10, you’re transferring R$ 10 from your pocket to the coffee shop’s pocket. **Practical tip:** Always check product prices before buying to avoid spending more than you can.
+Money works as a credit‑and‑debit system, where people and businesses exchange goods and services for cash. When you buy something, you’re transferring money from your pocket to the seller’s pocket. For example, if you buy a coffee for $2, you’re transferring $2 from your pocket to the coffee shop’s pocket. **Practical tip:** Always check product prices before buying to avoid spending more than you can.
 
-When you receive your salary, you’re getting money that can be used to purchase things you need or want. If you earn R$ 6,000 per month and spend R$ 4,000 on bills and food, you still have R$ 2,000 to save or invest. **Practical tip:** Try to save at least 10% of your salary to have an emergency reserve.
+When you receive your salary, you’re getting money that can be used to purchase things you need or want. If you earn $1,200 per month and spend $800 on bills and food, you still have $400 to save or invest. **Practical tip:** Try to save at least 10% of your salary to have an emergency reserve.
 
 
 
@@ -54,7 +54,7 @@ However, money also carries risks, such as:
 
 
 ## Practical examples
-Let’s look at some practical examples of how money works in real life. If you earn R$ 4,000 per month and spend R$ 3,000 on bills and food, you still have R$ 1,000 to save or invest. You can use that money to:
+Let’s look at some practical examples of how money works in real life. If you earn $800 per month and spend $600 on bills and food, you still have $200 to save or invest. You can use that money to:
 * Save in a bank account to have an emergency reserve.  
 * Invest in **[stocks](/en/glossario/en-stocks)** or bonds to try to grow your wealth.  
 * Purchase an asset, such as a house or a car.  

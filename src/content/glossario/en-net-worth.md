@@ -35,23 +35,23 @@ Net Worth = Assets - Liabilities. In other words: everything you have minus ever
 
 | Assets | Value |
 |--------|-------|
-| [Investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i) | R$ 50.000 |
-| Real estate | R$ 300.000 |
-| Car | R$ 40.000 |
-| **Total Assets** | **R$ 390.000** |
+| [Investments](/en/posts/en-private-pension-vs-investing-on-your-own-which-is-worth-it-i) | $10,000 |
+| Real estate | $60,000 |
+| Car | $8,000 |
+| **Total Assets** | **$78,000** |
 
 | Liabilities | Value |
 |----------|-------|
-| Mortgage | R$ 200.000 |
-| Car financing | R$ 25.000 |
-| **Total Liabilities** | **R$ 225.000** |
+| Mortgage | $40,000 |
+| Car financing | $5,000 |
+| **Total Liabilities** | **$45,000** |
 
-**Net Worth = R$ 390.000 - R$ 225.000 = R$ 165.000**
+**Net Worth = $78,000 - $45,000 = $33,000**
 
 ## Why track
 
 - Shows if you're getting richer or poorer
-- Allows setting concrete goals (e.g. "I want R$ 1 million in net worth")
+- Allows setting concrete goals (e.g. "I want $200,000 in net worth")
 - Reveals if your debts are under control
 - Is more important than salary (high [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) with high debts = low net worth)
 

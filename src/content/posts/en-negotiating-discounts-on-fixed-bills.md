@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Saving on Fixed Bills
-When we think about saving [money](/en/posts/en-avoid-impulse-purchases), we usually focus on cutting unnecessary [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea), such as eating out less or canceling unused subscriptions. However, there's another way to save that often goes unnoticed: negotiating discounts on fixed bills. If you pay R$ 150 per month on your electricity bill, for example, a successful negotiation can reduce that amount to R$ 120, resulting in a [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) of R$ 30 per month, or R$ 360 per year.
+When we think about saving [money](/en/posts/en-avoid-impulse-purchases), we usually focus on cutting unnecessary [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea), such as eating out less or canceling unused subscriptions. However, there's another way to save that often goes unnoticed: negotiating discounts on fixed bills. If you pay $30 per month on your electricity bill, for example, a successful negotiation can reduce that amount to $24, resulting in a [savings](/en/posts/en-how-to-avoid-impulse-purchases-and-protect-your-wallet) of $6 per month, or $72 per year.
 
 ## Types of Fixed Bills
 There are several fixed bills that we can negotiate, including:
@@ -26,32 +26,26 @@ There are several fixed bills that we can negotiate, including:
 - Electricity bill
 - Internet bill
 - Phone bill
-- Rent
+- Rent  
 Each of these bills has its own negotiation process, but the basic principle is the same: you're trying to convince the provider to lower the price or offer a discount.
 
 ## Preparation for Negotiation
-Before starting to negotiate, it's essential to be prepared. **Practical tip:** make a list of all your fixed bills, including the amount you pay per month and the due date. This will help you identify which bills have the most potential for negotiation. Additionally, it's helpful to have a clear idea of what you're willing to pay. For example, if you pay R$ 100 per month on your internet bill, you may decide that you're willing to pay no more than R$ 80.
+Before starting to negotiate, it's essential to be prepared. **Practical tip:** make a list of all your fixed bills, including the amount you pay per month and the due date. This will help you identify which bills have the most potential for negotiation. Additionally, it's helpful to have a clear idea of what you're willing to pay. For example, if you pay $20 per month on your internet bill, you may decide that you're willing to pay no more than $16.
 
 ![Tipos de Contas Fixas](/images/posts/negociar-descontos-em-contas-fixas-2.webp)
 
-
-
 ## Negotiation Techniques
-There are several techniques you can use to negotiate discounts on fixed bills. One of them is the "reference price technique". In this technique, you research the prices offered by other providers and use that information as a basis for your negotiation. For example, if you find out that another internet provider is offering a similar plan for R$ 70 per month, you can use that information to argue that your current provider should offer a discount. Another technique is the "cancellation threat technique". In this technique, you threaten to cancel the bill if you don't receive a discount. However, it's essential to use this technique with care, as you don't want to lose the bill if it's not necessary.
+There are several techniques you can use to negotiate discounts on fixed bills. One of them is the "reference price technique". In this technique, you research the prices offered by other providers and use that information as a basis for your negotiation. For example, if you find out that another internet provider is offering a similar plan for $14 per month, you can use that information to argue that your current provider should offer a discount. Another technique is the "cancellation threat technique". In this technique, you threaten to cancel the service if you don't receive a discount. However, it's essential to use this technique with care, as you don't want to lose the service if it's not necessary.
 
 ## Additional Resources
-If you're having trouble negotiating discounts on fixed bills, there are additional resources that can help. For example, you can use the [Banco Central do Brasil](https://www.bcb.gov.br) website to research interest rates and other financial data. Additionally, the [Tesouro Direto](https://www.tesourodireto.com.br) website offers information on [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) and [economy](/en/posts/en-30-day-rule-for-purchases). If you're having problems with debt, the [Serasa](https://www.serasa.com.br) website can be helpful.
+If you're having trouble negotiating discounts on fixed bills, there are additional resources that can help. For example, you can use the [central bank](https://www.bcb.gov.br) website to research interest rates and other financial data. Additionally, the [government bonds](https://www.tesourodireto.com.br) website offers information on [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026) and [economy](/en/posts/en-30-day-rule-for-purchases). If you're having problems with debt, the [credit bureaus](https://www.serasa.com.br) website can be helpful.
 
 ![Técnicas de Negociação](/images/posts/negociar-descontos-em-contas-fixas-4.webp)
-
-
 
 ## Start Today
 Now that you know how to negotiate discounts on fixed bills, it's time to start. Remember that negotiation is a skill that can be developed with practice, so don't get discouraged if you don't get a discount on the first try. With time and patience, you can save [money](/en/posts/en-creating-an-emergency-fund) and improve your financial health. To help you manage your finances, you can use tools like [Investopedia](https://www.investopedia.com) to learn more about investments and [economy](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation).
 
 ![Comece hoje](/images/posts/negociar-descontos-em-contas-fixas-6.webp)
-
-
 
 ---
 **Want to put this into practice? [Test [FinMoovi](/en/posts/en-5-alternatives-to-mobills-in-2026) for free for 7 days](https://finmoovi.com) and see how easy it is to control your finances with automatic categorization and visual reports.**

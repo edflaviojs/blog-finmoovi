@@ -23,17 +23,17 @@ Overdraft is a [credit](/en/glossario/en-credit) limit that the bank makes avail
 
 ## Practical example
 
-If you are R$ 1,000 overdrawn for 30 days with interest rates of 12% per month:
-- Interest: R$ 120
-- In 6 months without paying: R$ 1,000 becomes R$ 1,973
-- In 12 months: R$ 1,000 becomes R$ 3,896
+If you are $200 overdrawn for 30 days with interest rates of 12% per month:
+- Interest: $24
+- In 6 months without paying: $200 becomes $395
+- In 12 months: $200 becomes $780
 
 ## How to avoid?
 
-1. **Disable the overdraft** — call the bank and ask to remove it
-2. **Keep a reserve in the account** — at least R$ 500 as a cushion
-3. **Set up alerts** — warning when the balance is low
-4. **If you need credit** — a personal [loan](/en/glossario/en-loan) has interest rates 5 times lower
+1. **Disable the overdraft** — call the bank and ask to remove it  
+2. **Keep a reserve in the account** — at least $100 as a cushion  
+3. **Set up alerts** — warning when the balance is low  
+4. **If you need credit** — a personal [loan](/en/glossario/en-loan) has interest rates 5 times lower  
 
 ## Cheaper [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f)
 
@@ -43,4 +43,4 @@ If you are R$ 1,000 overdrawn for 30 days with interest rates of 12% per month:
 | [Credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) (revolving) | 12-16% |
 | Personal loan | 2-5% |
 | Payroll loan | 1-2% |
-| FGTS anticipation | 1-2% |
+| Severance guarantee fund anticipation | 1-2% |
