@@ -1,0 +1,475 @@
+{
+  "date": "2026-07-28",
+  "counts": {
+    "content": 9,
+    "videos": 1,
+    "pins": 0,
+    "failures": 5,
+    "runs": 40
+  },
+  "failures": [
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30345848019",
+      "timeLisbon": "10:15"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30351211017",
+      "timeLisbon": "11:33"
+    },
+    {
+      "name": "(temporario) Aceite do modelo de visao Cloudflare",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30352138787",
+      "timeLisbon": "11:47"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30368156911",
+      "timeLisbon": "15:23"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30383099595",
+      "timeLisbon": "18:29"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-fixed-expense",
+      "url": "https://blog.finmoovi.com/en/glossario/en-fixed-expense",
+      "title": "fixed expense - Financial Glossary",
+      "description": "What fixed expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-28"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-gasto-fijo",
+      "url": "https://blog.finmoovi.com/es/glossario/es-gasto-fijo",
+      "title": "gasto fijo - Glosario Financiero",
+      "description": "Qué es gasto fijo y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-28"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "gasto-fixo",
+      "url": "https://blog.finmoovi.com/glossario/gasto-fixo",
+      "title": "gasto fixo - Glossário Financeiro",
+      "description": "O que é gasto fixo e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-28"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-reducir-el-peso-de-tu-prestamo-en-2026-con-amortizacion",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-reducir-el-peso-de-tu-prestamo-en-2026-con-amortizacion",
+      "title": "Cómo reducir el peso de tu préstamo en 2026 con amortización inteligente",
+      "description": "Descubre cómo usar la amortización para pagar menos intereses y acortar tu préstamo. Guía práctica paso a paso con FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-07-28"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz",
+      "url": "https://blog.finmoovi.com/posts/como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz",
+      "title": "Como reduzir o peso do seu financiamento em 2026 com amortização inteligente",
+      "description": "Descubra o que é amortização de financiamento, como ela afeta seus juros e como usar o FinMoovi para aplicar a estratégia em poucos minutos.",
+      "category": "dicas",
+      "publishedAt": "2026-07-28"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-usar-a-calculadora-de-juros-compostos-em-2026-e-acelera",
+      "url": "https://blog.finmoovi.com/posts/como-usar-a-calculadora-de-juros-compostos-em-2026-e-acelera",
+      "title": "Como usar a calculadora de juros compostos em 2026 e acelerar sua poupança",
+      "description": "Descubra, em linguagem simples, como a calculadora de juros compostos pode transformar seu planejamento financeiro e veja um passo a passo prático com o FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-07-28"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-usar-la-calculadora-de-interes-compuesto-en-2026-y-acel",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-usar-la-calculadora-de-interes-compuesto-en-2026-y-acel",
+      "title": "Cómo usar la calculadora de interés compuesto en 2026 y acelerar tu ahorro",
+      "description": "Descubre, en lenguaje simple, cómo la calculadora de interés compuesto puede transformar tu planificación financiera y ve un paso a paso práctico con FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-07-28"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-lighten-your-loan-burden-in-2026-with-smart-amortizat",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-lighten-your-loan-burden-in-2026-with-smart-amortizat",
+      "title": "How to Lighten Your Loan Burden in 2026 with Smart Amortization",
+      "description": "Discover practical ways to cut interest, shorten loan terms, and free up cash in 2026 using smart amortization with FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-07-28"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-use-a-compound-interest-calculator-in-2026-to-boost-y",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-use-a-compound-interest-calculator-in-2026-to-boost-y",
+      "title": "How to Use a Compound Interest Calculator in 2026 to Boost Your Savings",
+      "description": "Discover in plain language how a compound interest calculator can transform your financial planning with a practical step‑by‑step guide using FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-07-28"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "divida-quitaria",
+      "videoId": "baITWiOojyY",
+      "uploadedAt": "2026-07-28T18:20:49.095Z",
+      "title": "Se eu devesse R$ 30 mil, faria ISSO",
+      "timeLisbon": "19:20"
+    }
+  ],
+  "pins": [],
+  "runsSummary": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "02:48"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 3,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "08:34"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:35"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "09:05"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 3,
+      "ok": 1,
+      "fail": 2,
+      "firstTimeLisbon": "10:15"
+    },
+    {
+      "name": "Glossário Financeiro",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:32"
+    },
+    {
+      "name": "GSC - Otimizar CTR (titulo/meta)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:33"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:34"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:18"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:20"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 5,
+      "ok": 3,
+      "fail": 0,
+      "firstTimeLisbon": "11:28"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "count": 2,
+      "ok": 0,
+      "fail": 2,
+      "firstTimeLisbon": "11:33"
+    },
+    {
+      "name": "Gerar Conteúdo Social",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:33"
+    },
+    {
+      "name": "(temporario) Aceite do modelo de visao Cloudflare",
+      "count": 3,
+      "ok": 2,
+      "fail": 1,
+      "firstTimeLisbon": "11:45"
+    },
+    {
+      "name": "(temporario) Testar fallback de visao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:50"
+    },
+    {
+      "name": "(temporario) Gerar capa faltante",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:56"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:57"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:08"
+    },
+    {
+      "name": "SEO Monitor Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:24"
+    },
+    {
+      "name": "Gerar Post Inteligente (Analytics-driven)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:48"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:27"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:24"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:01"
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:13"
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:05"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:05"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "10:21"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "15:24"
+    }
+  ],
+  "pendencias": [
+    "Auditoria YouTube API: responder follow-up do Google com link do canal (prazo ~03/08) — depois aguardar aprovação p/ trocar uploads private→public",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "YouTube — Converter Keywords em Temas (semanal)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "Brand Mention Monitor",
+      "times": [
+        "07:00"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Impulso Striking Distance",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "times": [
+        "09:30"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "10:00",
+        "16:00",
+        "22:00"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Post Investimentos Semanal",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Gerar Post Soluções FinMoovi",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "times": [
+        "16:00"
+      ]
+    }
+  ]
+}
