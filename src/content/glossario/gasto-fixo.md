@@ -40,7 +40,7 @@ Comece anotando tudo que sai da sua conta nos últimos 30 dias. Depois, separe o
 
 ## Impacto no orçamento mensal  
 
-Quando os gastos fixos ocupam grande parte da renda, sobra pouco espaço para despesas variáveis (como supermercado ou lazer) e para poupança. Imagine que o preço de um café por dia representa cerca de 5% da sua renda mensal; se você já tem um aluguel que consome quase 40% e contas que somam mais 20%, o restante pode desaparecer rapidamente. Esse desequilíbrio gera ansiedade e impede a construção de reservas para emergências.
+Quando os gastos fixos ocupam grande parte da renda, sobra pouco espaço para despesas variáveis (como supermercado ou lazer) e para [poupança](/glossario/poupanca). Imagine que o preço de um café por dia representa cerca de 5% da sua renda mensal; se você já tem um aluguel que consome quase 40% e contas que somam mais 20%, o restante pode desaparecer rapidamente. Esse desequilíbrio gera ansiedade e impede a construção de reservas para emergências.
 
 ![Impacto no orçamento mensal  ](/images/glossario/gasto-fixo-inline-3.webp)
 
@@ -56,7 +56,7 @@ Quando os gastos fixos ocupam grande parte da renda, sobra pouco espaço para de
 
 ## Como a tecnologia pode ajudar  
 
-Aplicativos de finanças pessoais evoluíram muito. Eles permitem registrar despesas com foto da nota ou por comando de voz, categorizam automaticamente (por exemplo, “conta de luz” ou “assinatura de streaming”) e ainda suportam várias moedas, ideal para quem ganha ou gasta em dólares, euros ou reais. O fluxo de caixa – visualização de entradas e saídas ao longo do tempo – fica claro, e relatórios mensais mostram onde o dinheiro está sendo consumido.
+[Aplicativos](/posts/5-alternativas-ao-mobills-em-2026) de [finanças pessoais](/posts/5-alternativas-ao-organizze-em-2026-opcoes-para-gerenciar-su) evoluíram muito. Eles permitem registrar despesas com foto da nota ou por comando de voz, categorizam automaticamente (por exemplo, “conta de luz” ou “assinatura de streaming”) e ainda suportam várias moedas, ideal para quem ganha ou gasta em dólares, euros ou reais. O fluxo de caixa – visualização de entradas e saídas ao longo do tempo – fica claro, e relatórios mensais mostram onde o dinheiro está sendo consumido.
 
 ## FinMoovi na prática  
 
@@ -64,8 +64,8 @@ Imagine que você acabou de pagar o aluguel. Em vez de digitar manualmente, bast
 
 Além disso, o app:
 
-- **Suporta multimoeda**, então você pode registrar um pagamento em euros e ele será convertido para a moeda que você usa no seu orçamento.  
-- **Integra cartões de crédito**, trazendo a fatura completa para dentro do mesmo painel, facilitando a visualização de despesas recorrentes.  
+- **Suporta [multimoeda](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)**, então você pode registrar um pagamento em euros e ele será convertido para a [moeda](/glossario/moeda) que você usa no seu orçamento.  
+- **Integra cartões de [crédito](/glossario/credito)**, trazendo a fatura completa para dentro do mesmo painel, facilitando a visualização de despesas recorrentes.  
 - **Modo compras** permite criar listas de supermercado; ao adicionar itens, o total aparece em tempo real, ajudando a não ultrapassar o limite estabelecido.  
 - **Lembretes e alertas** avisam quando o saldo está próximo do limite ou quando uma conta fixa está prestes a vencer.  
 - **Funciona offline** como PWA (Progressive Web App), sincronizando tudo assim que houver conexão novamente.

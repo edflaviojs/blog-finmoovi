@@ -19,7 +19,7 @@ seo:
 
 ## Por que a gente sente que o dinheiro some?
 
-Você já chegou ao fim do mês e percebeu que o saldo da conta está quase vazio, mesmo sem ter feito nada “fora do comum”? A sensação de que o dinheiro desaparece costuma estar ligada a duas categorias de despesas que, quando misturadas, dificultam a visualização do que realmente pode ser ajustado. Entender a diferença entre gasto fixo e gasto variável é o primeiro passo para retomar o controle e evitar surpresas na fatura do cartão ou no extrato bancário.
+Você já chegou ao fim do mês e percebeu que o saldo da conta está quase vazio, mesmo sem ter feito nada “fora do comum”? A sensação de que o dinheiro desaparece costuma estar ligada a duas categorias de despesas que, quando misturadas, dificultam a visualização do que realmente pode ser ajustado. Entender a diferença entre [gasto fixo](/glossario/gasto-fixo) e gasto variável é o primeiro passo para retomar o controle e evitar surpresas na fatura do cartão ou no extrato bancário.
 
 ![Por que a gente sente que o dinheiro some?](/images/glossario/gasto-fixo-e-variavel-inline-1.webp)
 
@@ -33,7 +33,7 @@ Gastos fixos são aqueles que permanecem praticamente iguais todo mês, independ
 - contas de energia, água e internet (valor semelhante ao de um plano de celular)
 - seguros (como o de carro ou de saúde)
 - mensalidades de academia ou de streaming
-- parcelas de empréstimo ou financiamento
+- parcelas de [empréstimo](/glossario/emprestimo) ou [financiamento](/glossario/financiamento)
 
 Essas despesas são “fixas” porque você sabe exatamente quanto vai pagar, o que facilita o planejamento mensal. Se algum desses valores mudar, geralmente é por renegociação ou por um ajuste de contrato, não por um consumo diário.
 
@@ -65,13 +65,13 @@ Com esses três passos, você transforma o caos de recibos em um panorama claro,
 
 ## O impacto no seu fluxo de caixa
 
-Separar gastos fixos de variáveis traz benefícios concretos para o seu fluxo de caixa (entrada e saída de dinheiro). Quando você visualiza cada categoria, fica mais fácil:
+Separar gastos fixos de variáveis traz [benefícios](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026) concretos para o seu fluxo de caixa (entrada e saída de dinheiro). Quando você visualiza cada categoria, fica mais fácil:
 
 - **Planejar reservas**: sabendo que o aluguel ocupa uma parte fixa, você pode destinar uma reserva para emergências sem comprometer o pagamento.
 - **Ajustar hábitos**: ao ver que o gasto variável com alimentação está acima do esperado, você pode reduzir pedidos de delivery e cozinhar mais em casa.
 - **Negociar contratos**: ao identificar que a conta de internet pesa muito no orçamento, pode buscar um plano mais barato ou combinar com vizinhos.
 
-Essas ações evitam o efeito “cobertura de despesas” onde um gasto inesperado força a usar a reserva de emergência ou a recorrer a crédito.
+Essas ações evitam o efeito “cobertura de despesas” onde um gasto inesperado força a usar a [reserva de emergência](/ferramentas/calculadora-reserva) ou a recorrer a [crédito](/glossario/credito).
 
 ## FinMoovi: a ferramenta que simplifica a separação
 

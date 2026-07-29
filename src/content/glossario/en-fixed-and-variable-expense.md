@@ -30,9 +30,9 @@ Fixed expenses are the costs that stay the same month after month, like the pric
 ## Why the distinction matters for your budget
 When you lump everything together, you lose the ability to plan. Fixed expenses set the baseline of what you must earn each month; variable expenses are the leeway you can adjust. By separating them, you can:
 
-- Spot the “must‑pay” items that define your minimum income requirement.
+- Spot the “must‑pay” items that define your minimum [income](/en/posts/en-building-a-diversified-portfolio-with-r-500) requirement.
 - Identify the flexible spending that can be reduced or postponed.
-- Build realistic savings goals that respect both types of outflows.
+- Build realistic [savings](/en/glossario/en-savings) goals that respect both types of outflows.
 
 ![Why the distinction matters for your budget](/images/glossario/gasto-fixo-e-variavel-inline-3.webp)
 
@@ -56,16 +56,16 @@ The app also supports multiple currencies, so whether you’re paying in dollars
 
 **Practical tip:** Review your smart‑captured receipts every Sunday. If a variable expense appears more than twice, consider swapping it for a cheaper alternative (e.g., homemade lunch instead of take‑out).
 
-**Practical tip:** Link your credit‑card statements to FinMoovi. The app will flag any recurring charge that looks like a fixed expense but isn’t on your list, helping you catch hidden subscriptions.
+**Practical tip:** Link your [credit](/en/glossario/en-credit)‑card statements to FinMoovi. The app will flag any recurring charge that looks like a [fixed expense](/en/glossario/en-fixed-expense) but isn’t on your list, helping you catch hidden subscriptions.
 
 ## Building a resilient monthly plan
 With the data already sorted, you can create a simple monthly plan:
 
 1. List all fixed expenses and total them. This gives you the “must‑pay” floor.
 2. Subtract that total from your net income to see the amount left for variable spending and savings.
-3. Allocate a portion of the remainder to an emergency fund or a short‑term goal (like a vacation). The rest becomes your variable budget.
+3. Allocate a portion of the remainder to an [emergency fund](/en/glossario/en-emergency-fund) or a short‑term goal (like a vacation). The rest becomes your variable budget.
 
-FinMoovi’s cash‑flow reports visualize this split, showing a clear bar for fixed costs and a flexible area for variable spending. The visual cue makes it easy to spot overspending before it hurts your bank balance.
+FinMoovi’s cash‑flow [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o) visualize this split, showing a clear bar for fixed costs and a flexible area for variable spending. The visual cue makes it easy to spot overspending before it hurts your bank balance.
 
 ## Staying ahead with reminders and offline access
 Even the best plan fails without timely alerts. FinMoovi sends balance warnings when you’re close to exceeding your variable budget, and reminder notifications for upcoming fixed bills. If you’re traveling or in a spot with spotty internet, the app works offline and syncs later, ensuring you never miss a capture.

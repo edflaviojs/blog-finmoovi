@@ -17,11 +17,11 @@ The Deposit Insurance Fund (similar to FDIC insurance) is like an insurance for 
 ## What is covered
 
 - [Certificates of Deposit (CDs)](/en/glossario/en-cdb) (formerly CDB)
-- Real estate‑backed securities (formerly LCI and LCA)
+- Real estate‑backed securities (formerly [LCI and LCA](/en/glossario/en-lci-and-lca))
 - Savings account
 - Checking account
 - Bank deposit receipts (formerly RDB)
-- Foreign exchange letters
+- [Foreign exchange](/en/glossario/en-cambio) letters
 
 ## What is NOT covered
 
