@@ -4,6 +4,7 @@ import { config } from '../../site.config';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+import { canonicalPath } from '@/utils/url';
 
 const breadcrumbItems = [
   { name: 'Início', url: '/' },
@@ -93,7 +94,7 @@ const faqSchema = {
           <div class="step-card">
             <span class="step-number">6</span>
             <h3>Monte reserva de emergência</h3>
-            <p>Após quitar, guarde 3-6 meses de gastos. Isso evita recaídas. <a href="/ferramentas/calculadora-juros-compostos">Calcule quanto precisa</a>.</p>
+            <p>Após quitar, guarde 3-6 meses de gastos. Isso evita recaídas. <a href={canonicalPath('/ferramentas/calculadora-juros-compostos')}>Calcule quanto precisa</a>.</p>
           </div>
         </div>
       </div>
@@ -132,19 +133,19 @@ const faqSchema = {
       <div class="container">
         <h2>Ferramentas para Sair do Vermelho</h2>
         <div class="tools-grid">
-          <a href="/ferramentas/calculadora-orcamento" class="tool-link">
+          <a href={canonicalPath('/ferramentas/calculadora-orcamento')} class="tool-link">
             <span class="tool-icon">💰</span>
             <span class="tool-name">Calculadora de Orçamento</span>
           </a>
-          <a href="/ferramentas/calculadora-juros-compostos" class="tool-link">
+          <a href={canonicalPath('/ferramentas/calculadora-juros-compostos')} class="tool-link">
             <span class="tool-icon">📈</span>
             <span class="tool-name">Juros Compostos</span>
           </a>
-          <a href="/orcamento-pessoal" class="tool-link">
+          <a href={canonicalPath('/orcamento-pessoal')} class="tool-link">
             <span class="tool-icon">📋</span>
             <span class="tool-name">Guia de Orçamento</span>
           </a>
-          <a href="/como-organizar-financas" class="tool-link">
+          <a href={canonicalPath('/como-organizar-financas')} class="tool-link">
             <span class="tool-icon">✅</span>
             <span class="tool-name">Organizar Finanças</span>
           </a>

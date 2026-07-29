@@ -37,7 +37,7 @@ Não necessariamente. Depende do seu perfil:
 2. **Diversifique** — ativos diferentes oscilam em momentos diferentes
 3. **Não olhe todo dia** — verificar preços diariamente gera ansiedade
 4. **Invista regularmente** — aportes mensais suavizam o preço médio
-5. **Tenha [reserva de emergência](/glossario/emergency-fund)** — para não precisar vender na baixa
+5. **Tenha [reserva de emergência](/glossario/reserva-de-emergencia)** — para não precisar vender na baixa
 
 ## Índice de volatilidade
 

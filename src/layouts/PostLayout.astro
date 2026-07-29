@@ -19,6 +19,7 @@ import RelatedPosts from '@components/posts/RelatedPosts.astro';
 import PreferredSourceCTA from '@components/shared/PreferredSourceCTA.astro';
 import AdSlot from '@components/home/AdSlot.astro';
 import { resolveAuthor, authorHref } from '@/data/authors';
+import { canonicalPath } from '@/utils/url';
 import { config } from '../../site.config';
 
 interface Props {
@@ -59,7 +60,7 @@ const updatedLabel = locale === 'en' ? 'Updated on' : locale === 'es' ? 'Actuali
 const showUpdated = !!(updatedTime && publishedTime && new Date(updatedTime).getTime() > new Date(publishedTime).getTime());
 
 const breadcrumbItems = [
-  ...(category ? [{ label: category, href: `${homeHref}` }] : []),
+  ...(category ? [{ label: category, href: canonicalPath(homeHref) }] : []),
   { label: title }
 ];
 

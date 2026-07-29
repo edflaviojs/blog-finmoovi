@@ -5,6 +5,7 @@ import Footer from '@components/footer/Footer.astro';
 import { getCollection } from 'astro:content';
 import { config } from '../../../site.config';
 import { defaultAuthor, personSchema, authorHref, EDITORIAL_POLICY_PATH } from '@/data/authors';
+import { canonicalPath } from '@/utils/url';
 
 interface Props {
   locale?: 'pt' | 'en' | 'es';
@@ -83,7 +84,7 @@ const alternates = { pt: author.i18nPaths.pt, en: author.i18nPaths.en, es: autho
         <section class="autor-section">
           <h2>{T.about}</h2>
           <p>{T.bio}</p>
-          <p><a class="autor-link" href={EDITORIAL_POLICY_PATH}>{T.editorial} →</a></p>
+          <p><a class="autor-link" href={canonicalPath(EDITORIAL_POLICY_PATH)}>{T.editorial} →</a></p>
         </section>
 
         <section class="autor-section">
@@ -97,7 +98,7 @@ const alternates = { pt: author.i18nPaths.pt, en: author.i18nPaths.en, es: autho
           <h2>{T.recent}</h2>
           <div class="autor-posts">
             {localePosts.map(post => (
-              <a class="autor-post" href={`${T.postPrefix}/${post.slug}`}>
+              <a class="autor-post" href={canonicalPath(`${T.postPrefix}/${post.slug}`)}>
                 <span class="autor-post-title">{post.data.title}</span>
                 <time datetime={post.data.publishedAt.toISOString()}>
                   {post.data.publishedAt.toLocaleDateString(T.dateLoc, { day: '2-digit', month: 'short', year: 'numeric' })}

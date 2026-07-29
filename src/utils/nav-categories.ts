@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import { config } from '../../site.config';
+import { canonicalPath } from './url';
 
 /**
  * Categorias visíveis no menu "Categorias" (header + mobile) e no rodapé.
@@ -12,5 +13,5 @@ export async function getNavCategories() {
   const catSet = new Set(posts.map(p => p.data.category));
   return config.content.categoryNav
     .filter(c => catSet.has(c.slug))
-    .map(c => ({ slug: c.slug, label: c.label, href: `/categorias/${c.slug}` }));
+    .map(c => ({ slug: c.slug, label: c.label, href: canonicalPath(`/categorias/${c.slug}`) }));
 }

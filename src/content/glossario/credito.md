@@ -37,7 +37,7 @@ Quando você solicita crédito, a instituição avalia sua capacidade de pagamen
 
 ## Vantagens
 
-Usar crédito pode ser uma ferramenta poderosa quando bem planejada. Ele permite comprar algo que você precisa agora e pagar depois, sem comprometer a [reserva de emergência](/glossario/emergency-fund). Também ajuda a construir um histórico positivo, essencial para conseguir financiamentos maiores, como carro ou casa. Além disso, alguns cartões oferecem benefícios como milhas aéreas, cashback (dinheiro de volta) e seguros de viagem.
+Usar crédito pode ser uma ferramenta poderosa quando bem planejada. Ele permite comprar algo que você precisa agora e pagar depois, sem comprometer a [reserva de emergência](/glossario/reserva-de-emergencia). Também ajuda a construir um histórico positivo, essencial para conseguir financiamentos maiores, como carro ou casa. Além disso, alguns cartões oferecem benefícios como milhas aéreas, cashback (dinheiro de volta) e seguros de viagem.
 
 ![Vantagens](/images/glossario/credito-inline-3.webp)
 

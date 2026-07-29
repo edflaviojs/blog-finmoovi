@@ -24,7 +24,7 @@ Poupar dinheiro não precisa ser um sacrifício extremo; basta ajustar alguns h�
 
 A maior parte do dinheiro que “some” no fim do mês vem de compras impulsivas. Trocar um café de R$7,00 por um de casa pode parecer irrelevante, mas ao longo de 30 dias isso representa R$210,00. **Dica prática:** anote cada gasto acima de R$5,00 num bloco ou app; ao final da semana, veja quanto poderia ter sido economizado se fosse redirecionado para a [poupança](/glossario/poupanca). Esse registro visual costuma surpreender e motivar a mudança.
 
-## Monte um [fundo de emergência](/glossario/fondo-de-emergencia) rápido
+## Monte um [fundo de emergência](/glossario/reserva-de-emergencia) rápido
 
 Um [fundo de emergência](/ferramentas/calculadora-reserva) deve cobrir de três a seis meses de despesas fixas. Comece definindo seu custo mensal (contas, aluguel, alimentação). Se sua despesa total for R$2 500, a meta mínima fica em R$7 500. Destine 5 % do salário direto para uma conta de rendimento imediato, como a conta corrente com rendimento do Banco Central ([BCB](https://www.bcb.gov.br)). Por exemplo, quem ganha R$4 500 aplicará R$225 todo mês; em 12 meses terá R$2 700, já uma boa base para emergências menores.
 
@@ -57,7 +57,7 @@ Reserve, no mínimo, 10 % do salário líquido. Se o valor parecer alto, comec
 #### Cashback vale a pena mesmo com pequenas compras?
 Sim. Mesmo R$10 de volta, se reinvestido na reserva, gera efeito acumulativo ao longo do tempo.
 #### Qual a melhor conta para guardar a [reserva de emergência](/glossario/reserva-de-emergencia)?
-Conta com rendimento atrelado ao CDI ou Tesouro Selic, pois garantem [liquidez](/glossario/liquidity) e segurança.
+Conta com rendimento atrelado ao CDI ou Tesouro Selic, pois garantem [liquidez](/glossario/liquidez) e segurança.
 #### Posso usar [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) gratuitos para controlar meus gastos?
 Sim, apps como FinMoovi ou Guiabolso oferecem categorização automática e relatórios detalhados sem custo.
 

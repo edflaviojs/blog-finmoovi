@@ -44,7 +44,7 @@ Exemplo prático:
 - Gastos mensais com cartão: R$ 2.000,00 (supermercado, combustível, delivery)
 - Cashback médio: 3% → R$ 60,00
 
-Ao depositar esses R$ 60,00 em uma conta de rendimento, você acumula R$ 720,00 ao final de um ano, sem nenhum esforço extra. Esse valor pode ser a primeira parcela da sua [reserva de emergência](/glossario/emergency-fund).
+Ao depositar esses R$ 60,00 em uma conta de rendimento, você acumula R$ 720,00 ao final de um ano, sem nenhum esforço extra. Esse valor pode ser a primeira parcela da sua [reserva de emergência](/glossario/reserva-de-emergencia).
 
 ## Use o cashback para “pagar dívidas” de forma inteligente
 

@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { canonicalPath } from '@/utils/url';
 
 const urlPath = Astro.url.pathname;
 let locale = 'pt';
@@ -29,7 +30,7 @@ const headingMap: Record<string, string> = {
     {popularPosts.map((post, i) => (
       <li class="popular-item">
         <span class="popular-number">{String(i + 1).padStart(2, '0')}</span>
-        <a href={`${localePrefix}/posts/${post.slug}`} class="popular-link">{post.data.title}</a>
+        <a href={canonicalPath(`${localePrefix}/posts/${post.slug}`)} class="popular-link">{post.data.title}</a>
       </li>
     ))}
   </ul>

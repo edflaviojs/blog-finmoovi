@@ -25,7 +25,7 @@ Urgência financeira é qualquer situação inesperada que exige [dinheiro](/pos
 
 ## Como se preparar
 
-A melhor proteção contra urgências financeiras é a **[reserva de emergência](/glossario/emergency-fund)**:
+A melhor proteção contra urgências financeiras é a **[reserva de emergência](/glossario/reserva-de-emergencia)**:
 - 6 meses de gastos para CLT
 - 12 meses para autônomos/PJ
 - Em investimento com [liquidez](/glossario/liquidez) diária (Tesouro Selic, [CDB](/glossario/cdb))

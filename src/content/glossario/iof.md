@@ -39,7 +39,7 @@ IOF (Imposto sobre Operações Financeiras) é um imposto federal que incide sob
 
 ## Dica prática
 
-Se você investiu em [CDB](/glossario/cdb) ou Tesouro Selic, espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a [reserva de emergência](/glossario/emergency-fund).
+Se você investiu em [CDB](/glossario/cdb) ou Tesouro Selic, espere pelo menos 30 dias para resgatar. Assim você não paga IOF sobre os rendimentos. Essa é uma regra importante para a [reserva de emergência](/glossario/reserva-de-emergencia).
 
 ## Tabela regressiva do IOF (investimentos)
 

@@ -27,9 +27,9 @@ Most of the cash that “disappears” by month‑end comes from impulse buys. S
 
 ## Build an [emergency fund](/en/glossario/en-emergency-fund) fast  
 
-An [emergency fund](/en/glossario/en-fondo-de-emergencia) should cover three to six months of your fixed expenses. Start by calculating your monthly cost (bills, rent, groceries). If your total monthly outflow is **$500**, aim for a minimum fund of **$1,500**.  
+An [emergency fund](/en/glossario/en-emergency-fund) should cover three to six months of your fixed expenses. Start by calculating your monthly cost (bills, rent, groceries). If your total monthly outflow is **$500**, aim for a minimum fund of **$1,500**.  
 
-Allocate **5 % of your paycheck** straight into a high‑[yield](/en/glossario/en-yield) checking account or a short‑term government bond that offers daily [liquidity](/en/glossario/en-liquidez). For example, someone earning **$900** would set aside **$45** each month; after 12 months they’ll have **$540**—a solid base for smaller emergencies.
+Allocate **5 % of your paycheck** straight into a high‑[yield](/en/glossario/en-yield) checking account or a short‑term government bond that offers daily [liquidity](/en/glossario/en-liquidity). For example, someone earning **$900** would set aside **$45** each month; after 12 months they’ll have **$540**—a solid base for smaller emergencies.
 
 ![Build an emergency fund fast](/images/posts/poupar-dinheiro-dicas-7-habitos-simples-para-2026-2.webp)
 

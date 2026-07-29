@@ -1,6 +1,7 @@
 ---
 import { getNavCategories } from '@/utils/nav-categories';
 import { categoryLabel, type Locale } from '@/utils/home-data';
+import { canonicalPath } from '@/utils/url';
 
 // Navegação portal: pills planas e deslizáveis (desktop e mobile).
 // Categorias — fonte única em site.config (content.categoryNav), filtradas
@@ -19,14 +20,14 @@ const prefix = locale === 'pt' ? '' : `/${locale}`;
 const categorias = navCategorias.map(c => ({
   slug: c.slug,
   label: locale === 'pt' ? c.label : categoryLabel(locale, c.slug),
-  href: `${prefix}/categorias/${c.slug}`,
+  href: canonicalPath(`${prefix}/categorias/${c.slug}`),
 }));
 
 // Ferramentas e Glossário têm índice en/es; Estudos só existe em pt.
 const fixedItems = [
-  { label: 'Ferramentas', key: 'nav.ferramentas', href: `${prefix}/ferramentas` },
-  { label: 'Glossário', key: 'nav.glossario', href: `${prefix}/glossario` },
-  { label: 'Estudos', key: 'nav.estudos', href: '/estudos' },
+  { label: 'Ferramentas', key: 'nav.ferramentas', href: canonicalPath(`${prefix}/ferramentas`) },
+  { label: 'Glossário', key: 'nav.glossario', href: canonicalPath(`${prefix}/glossario`) },
+  { label: 'Estudos', key: 'nav.estudos', href: canonicalPath('/estudos') },
 ];
 
 const isActive = (href: string) =>

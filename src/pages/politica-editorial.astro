@@ -4,6 +4,7 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import { config } from '../../site.config';
 import { authors } from '@/data/authors';
+import { canonicalPath } from '@/utils/url';
 
 const brand = config.brand.name;
 const author = authors['ed-flavio'];
@@ -29,7 +30,7 @@ const author = authors['ed-flavio'];
           <p>
             O {brand} Blog existe para tornar a educação financeira <strong>clara, prática e confiável</strong>.
             Todo conteúdo é publicado sob a supervisão editorial de
-            <a href={author.i18nPaths.pt} class="editorial-link">{author.name}</a>,
+            <a href={canonicalPath(author.i18nPaths.pt)} class="editorial-link">{author.name}</a>,
             {author.jobTitle.toLowerCase()},
             {author.credentials.map(c => `${c.level.toLowerCase()} em ${c.name}`).join(' e ')}.
           </p>

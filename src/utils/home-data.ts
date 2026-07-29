@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import { config } from '../../site.config';
+import { canonicalPath } from './url';
 
 /**
  * Dados da home portal — UMA fonte para pt/en/es (mata a triplicação das
@@ -36,7 +37,7 @@ function toCard(prefix: string, post: any): HomeCard {
     description: post.data.description,
     image: post.data.image,
     imageAlt: post.data.imageAlt,
-    href: `${prefix}/posts/${post.slug}`,
+    href: canonicalPath(`${prefix}/posts/${post.slug}`),
     category: post.data.category,
     date: post.data.publishedAt,
     readingTime: post.data.readingTime,
@@ -97,7 +98,7 @@ export async function getHomeData(locale: Locale) {
     // até 8 cards: as fileiras são carrosséis-esteira e precisam de estoque p/ girar
     const cards = posts.filter(p => p.data.category === cat.slug).slice(0, 8).map(p => toCard(prefix, p));
     if (cards.length >= 2) {
-      rows.push({ slug: cat.slug, label: categoryLabel(locale, cat.slug), href: `${prefix}/categorias/${cat.slug}`, cards });
+      rows.push({ slug: cat.slug, label: categoryLabel(locale, cat.slug), href: canonicalPath(`${prefix}/categorias/${cat.slug}`), cards });
     }
   }
 
@@ -111,9 +112,9 @@ export async function getHomeData(locale: Locale) {
 
   // Glossário: termo do dia + chips dos termos recentes
   const termoDia = glossario[0]
-    ? { term: glossario[0].data.term, href: `${prefix}/glossario/${glossario[0].slug}` }
+    ? { term: glossario[0].data.term, href: canonicalPath(`${prefix}/glossario/${glossario[0].slug}`) }
     : null;
-  const termoChips = glossario.slice(1, 7).map(g => ({ term: g.data.term, href: `${prefix}/glossario/${g.slug}` }));
+  const termoChips = glossario.slice(1, 7).map(g => ({ term: g.data.term, href: canonicalPath(`${prefix}/glossario/${g.slug}`) }));
 
   // Faixa "AGORA": só quando há conteúdo fresco (<48h) — evita portal parado
   const fresh = hero && (Date.now() - hero.date.getTime()) < 48 * 60 * 60 * 1000 ? hero : null;

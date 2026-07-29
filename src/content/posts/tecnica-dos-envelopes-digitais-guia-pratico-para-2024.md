@@ -33,7 +33,7 @@ A ideia dos envelopes digitais é a mesma dos envelopes de papel que você coloc
    - Transporte
    - Moradia (aluguel, condomínio, energia)
    - Lazer/Entretenimento
-   - [Reserva de Emergência](/glossario/emergency-fund)
+   - [Reserva de Emergência](/glossario/reserva-de-emergencia)
 3. **Defina limites mensais** – Baseie‑se na sua renda. Veja a tabela abaixo para três perfis de salário.
 
 ![Configurar seus envelopes no app](/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024-2.webp)

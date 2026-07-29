@@ -26,7 +26,7 @@ Meta financeira é um objetivo concreto para seu [dinheiro](/posts/cashback-inte
 
 ### Curto prazo (até 1 ano)
 
-- Montar [reserva de emergência](/glossario/emergency-fund) de R$ 15.000
+- Montar [reserva de emergência](/glossario/reserva-de-emergencia) de R$ 15.000
 - Quitar [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-) de R$ 3.000
 - Juntar R$ 5.000 para [viagem](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-)
 

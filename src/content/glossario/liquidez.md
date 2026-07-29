@@ -34,6 +34,6 @@ Do mais líquido ao menos líquido:
 
 ## Quando a liquidez importa?
 
-- **[Reserva de emergência](/glossario/emergency-fund):** precisa de liquidez diária
+- **[Reserva de emergência](/glossario/reserva-de-emergencia):** precisa de liquidez diária
 - **Objetivos de curto prazo (< 1 ano):** liquidez alta
 - **Objetivos de longo prazo (> 5 anos):** pode abrir mão de liquidez por mais rendimento

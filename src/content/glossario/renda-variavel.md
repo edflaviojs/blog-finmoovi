@@ -41,4 +41,4 @@ Renda Variável é tudo que não tem retorno garantido. O preço sobe e desce co
 
 ## Regra de ouro
 
-Só invista em renda variável dinheiro que você não vai precisar nos próximos 5 anos. E sempre tenha sua [reserva de emergência](/glossario/emergency-fund) em renda fixa antes de começar.
+Só invista em renda variável dinheiro que você não vai precisar nos próximos 5 anos. E sempre tenha sua [reserva de emergência](/glossario/reserva-de-emergencia) em renda fixa antes de começar.

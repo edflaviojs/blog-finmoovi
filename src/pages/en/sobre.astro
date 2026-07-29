@@ -4,6 +4,7 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import { t } from '../../i18n/translations';
 import { config } from '../../../site.config';
+import { canonicalPath } from '@/utils/url';
 
 const lang = 'en';
 const brand = config.brand.name;
@@ -68,8 +69,8 @@ const blogTitle = `${brand} ${config.brand.blogSuffix}`;
             <h2>{t(lang, 'sobre.cta.title')}</h2>
             <p>{t(lang, 'sobre.cta.desc')}</p>
             <div class="sobre-cta-actions">
-              <a href="/app" class="sobre-btn primary">{t(lang, 'sobre.cta.btn')}</a>
-              <a href="/en" class="sobre-btn secondary">{t(lang, 'sobre.cta.blog')}</a>
+              <a href={canonicalPath('/app')} class="sobre-btn primary">{t(lang, 'sobre.cta.btn')}</a>
+              <a href={canonicalPath('/en')} class="sobre-btn secondary">{t(lang, 'sobre.cta.blog')}</a>
             </div>
           </div>
         </section>

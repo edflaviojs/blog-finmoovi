@@ -1,6 +1,7 @@
 ---
 import { config } from '../../../site.config';
 import { getActiveSeasonalEvents } from '@/utils/seasonal';
+import { canonicalPath } from '@/utils/url';
 
 /**
  * Carrossel billboard full-bleed (borda a borda da tela).
@@ -20,7 +21,9 @@ const { locale, offset = 0 } = Astro.props;
 // Sazonais primeiro (destaque no carrossel do topo, offset 0); o href
 // sazonal é por idioma — normalizado aqui para a mesma forma dos fixos
 const seasonalSlides = getActiveSeasonalEvents(locale).map(e => ({
-  theme: e.theme, icon: e.icon, href: e.href[locale as 'pt' | 'en' | 'es'],
+  // só o href sazonal é caminho interno; os de config.ads.billboard são URLs
+  // absolutas (outro domínio) e por isso NÃO passam por canonicalPath.
+  theme: e.theme, icon: e.icon, href: canonicalPath(e.href[locale as 'pt' | 'en' | 'es']),
   title: e.title, highlight: e.highlight, text: e.text, cta: e.cta,
   art: e.art, // arte IA APROVADA (Fase C) — sem ela, vale só o tema CSS
 }));

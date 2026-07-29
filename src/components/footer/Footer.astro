@@ -1,6 +1,7 @@
 ---
 import { config } from '../../../site.config';
 import { getNavCategories } from '@/utils/nav-categories';
+import { canonicalPath } from '@/utils/url';
 import CookieNotice from '../shared/CookieNotice.astro';
 import BackToTop from '../shared/BackToTop.astro';
 
@@ -13,21 +14,22 @@ const navCategories = await getNavCategories();
 const footerLinks = {
   blog: [
     ...navCategories.map(c => ({ label: c.label, href: c.href, i18n: undefined as string | undefined })),
-    { label: 'Glossário', href: '/glossario', i18n: 'footer.link.glossario' },
-    { label: 'Ferramentas', href: '/ferramentas', i18n: 'footer.link.ferramentas' },
-    { label: 'Estudos', href: '/estudos', i18n: 'footer.link.estudos' },
-    { label: 'Sobre', href: '/sobre', i18n: 'nav.sobre' },
+    { label: 'Glossário', href: canonicalPath('/glossario'), i18n: 'footer.link.glossario' },
+    { label: 'Ferramentas', href: canonicalPath('/ferramentas'), i18n: 'footer.link.ferramentas' },
+    { label: 'Estudos', href: canonicalPath('/estudos'), i18n: 'footer.link.estudos' },
+    { label: 'Sobre', href: canonicalPath('/sobre'), i18n: 'nav.sobre' },
   ],
   app: [
-    { label: `Baixar ${config.app.name}`, href: '/app', i18n: 'footer.link.baixar' },
-    { label: 'Funcionalidades', href: '/app#funcionalidades', i18n: 'footer.link.funcionalidades' },
-    { label: 'Preços', href: '/app#precos', i18n: 'footer.link.precos' },
-    { label: 'Suporte', href: '/app#suporte', i18n: 'footer.link.suporte' },
+    // canonicalPath preserva a âncora: '/app#precos' vira '/app/#precos'.
+    { label: `Baixar ${config.app.name}`, href: canonicalPath('/app'), i18n: 'footer.link.baixar' },
+    { label: 'Funcionalidades', href: canonicalPath('/app#funcionalidades'), i18n: 'footer.link.funcionalidades' },
+    { label: 'Preços', href: canonicalPath('/app#precos'), i18n: 'footer.link.precos' },
+    { label: 'Suporte', href: canonicalPath('/app#suporte'), i18n: 'footer.link.suporte' },
   ],
   legal: [
-    { label: 'Privacidade', href: '/privacidade', i18n: 'footer.link.privacidade' },
-    { label: 'Termos de Uso', href: '/termos', i18n: 'footer.link.termos' },
-    { label: 'Cookies', href: '/cookies', i18n: 'footer.link.cookies' },
+    { label: 'Privacidade', href: canonicalPath('/privacidade'), i18n: 'footer.link.privacidade' },
+    { label: 'Termos de Uso', href: canonicalPath('/termos'), i18n: 'footer.link.termos' },
+    { label: 'Cookies', href: canonicalPath('/cookies'), i18n: 'footer.link.cookies' },
   ]
 };
 

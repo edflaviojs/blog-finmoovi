@@ -5,6 +5,7 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+import { canonicalPath } from '@/utils/url';
 
 const isEmbed = Astro.url.searchParams.get('embed') === 'true';
 
@@ -56,7 +57,7 @@ const layoutProps = isEmbed
       {!isEmbed && (
         <header class="tool-header">
           <nav class="tool-breadcrumb">
-            <a href="/">Início</a> → <a href="/ferramentas">Ferramentas</a> → <span>Juros Compostos</span>
+            <a href="/">Início</a> → <a href={canonicalPath('/ferramentas')}>Ferramentas</a> → <span>Juros Compostos</span>
           </nav>
           <h1>Calculadora de Juros Compostos</h1>
           <p class="tool-subtitle">Simule quanto seu dinheiro pode render ao longo do tempo com juros compostos e aportes mensais.</p>

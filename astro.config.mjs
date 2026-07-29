@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import { config } from './site.config.ts';
+import { remarkCanonicalLinks } from './src/utils/remark-canonical-links.ts';
 
 export default defineConfig({
   site: config.siteUrl,
@@ -16,6 +17,9 @@ export default defineConfig({
     }
   },
   markdown: {
+    // Links internos do corpo do markdown saem com barra final (evita o 308
+    // do Cloudflare em cada link interno). Não desativa gfm/smartypants.
+    remarkPlugins: [remarkCanonicalLinks],
     shikiConfig: {
       theme: 'github-dark'
     }

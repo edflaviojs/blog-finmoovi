@@ -20,7 +20,7 @@ seo:
 
 Todo mundo comete erros com [dinheiro](/posts/como-reduzir-gastos-fixos-mensais-de-forma-eficaz) — especialmente no começo. A boa notícia é que a maioria deles é evitável quando você sabe o que procurar.
 
-## 1. Não ter uma [reserva de emergência](/glossario/emergency-fund)
+## 1. Não ter uma [reserva de emergência](/glossario/reserva-de-emergencia)
 
 **O erro:** Viver sem nenhuma reserva, contando que nada vai dar errado.
 

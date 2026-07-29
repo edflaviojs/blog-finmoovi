@@ -1,4 +1,5 @@
 import { config } from '../../site.config';
+import { canonicalPath } from '../utils/url';
 
 /**
  * Registro de autores do blog (E-E-A-T / YMYL).
@@ -97,9 +98,13 @@ export function resolveAuthor(name?: string): Author {
   return defaultAuthor;
 }
 
-/** Caminho (relativo) da página de autor no idioma dado. */
+/**
+ * Caminho (relativo) da página de autor no idioma dado.
+ * Sai já normalizado (com barra final) porque só alimenta `href` — link
+ * interno sem barra vira 308 no Cloudflare e mancha o relatório do GSC.
+ */
 export function authorHref(author: Author, locale: string = 'pt'): string {
-  return author.i18nPaths[(locale as 'pt' | 'en' | 'es')] || author.i18nPaths.pt;
+  return canonicalPath(author.i18nPaths[(locale as 'pt' | 'en' | 'es')] || author.i18nPaths.pt);
 }
 
 /** JSON-LD Person para um autor (usado na página de autor e no Article). */

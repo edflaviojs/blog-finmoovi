@@ -32,7 +32,7 @@ Julho é o mês mais esperado por quem quer fugir da rotina, mas também o perí
 ## 1. Defina um teto de gasto antes de reservar
 
 ### Por que isso importa?
-A ansiedade de garantir a “melhor oferta” costuma levar a compras impulsivas. Comece anotando quanto você pode destinar ao lazer sem mexer na [reserva de emergência](/glossario/emergency-fund) (geralmente 3 a 6 meses de despesas).
+A ansiedade de garantir a “melhor oferta” costuma levar a compras impulsivas. Comece anotando quanto você pode destinar ao lazer sem mexer na [reserva de emergência](/glossario/reserva-de-emergencia) (geralmente 3 a 6 meses de despesas).
 
 ![1. Defina um teto de gasto antes de reservar](/images/posts/como-economizar-nas-ferias-de-julho-sem-abrir-mao-da-diversa-2.webp)
 

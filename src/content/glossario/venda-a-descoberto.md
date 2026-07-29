@@ -85,5 +85,5 @@ Se você decidiu experimentar a venda a descoberto, siga estes passos para inici
 
 ## Comece hoje
 
-A venda a descoberto não é um bicho de sete cabeças, mas exige disciplina e controle de risco. Se você já tem uma [reserva de emergência](/glossario/emergency-fund) e entende bem seu perfil, experimente abrir uma posição pequena e observar o mercado. Cada operação traz aprendizado, e com prática você pode transformar a queda de preços em oportunidade de ganho. Então, que tal dar o primeiro passo hoje mesmo? Seu futuro financeiro agradece.
+A venda a descoberto não é um bicho de sete cabeças, mas exige disciplina e controle de risco. Se você já tem uma [reserva de emergência](/glossario/reserva-de-emergencia) e entende bem seu perfil, experimente abrir uma posição pequena e observar o mercado. Cada operação traz aprendizado, e com prática você pode transformar a queda de preços em oportunidade de ganho. Então, que tal dar o primeiro passo hoje mesmo? Seu futuro financeiro agradece.
 

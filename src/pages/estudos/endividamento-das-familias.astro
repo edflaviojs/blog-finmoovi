@@ -6,6 +6,7 @@ import InlineAppCTA from '@components/banners/InlineAppCTA.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
 import { config } from '../../../site.config';
 import { authors } from '@/data/authors';
+import { canonicalPath } from '@/utils/url';
 import data from '@/data/endividamento.json';
 
 const author = authors['ed-flavio'];
@@ -88,7 +89,7 @@ const chartSeries = endiv.series.map(p => ({ d: p.date, v: p.value }));
           <strong>{fmt(deltaPP)} pontos percentuais</strong> ({fmt(growthPct)}%) desde {firstYear}.
         </p>
         <p class="estudo-meta">
-          Por <a href={author.i18nPaths.pt} rel="author">{author.name}</a> ·
+          Por <a href={canonicalPath(author.i18nPaths.pt)} rel="author">{author.name}</a> ·
           Atualizado em {updatedLabel} · Fonte: Banco Central do Brasil
         </p>
       </header>
@@ -130,8 +131,8 @@ const chartSeries = endiv.series.map(p => ({ d: p.date, v: p.value }));
         <p>
           Na prática, isso reforça a importância de organizar o orçamento, priorizar a quitação de dívidas
           caras e construir uma reserva. Ferramentas gratuitas ajudam: veja a
-          <a href="/ferramentas/calculadora-reserva">calculadora de reserva de emergência</a> e a
-          <a href="/ferramentas/calculadora-orcamento">calculadora de orçamento 50-30-20</a>.
+          <a href={canonicalPath('/ferramentas/calculadora-reserva')}>calculadora de reserva de emergência</a> e a
+          <a href={canonicalPath('/ferramentas/calculadora-orcamento')}>calculadora de orçamento 50-30-20</a>.
         </p>
       </section>
 

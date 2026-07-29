@@ -3,6 +3,7 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import { config } from '../../site.config';
+import { canonicalPath } from '@/utils/url';
 
 const brand = config.brand.name;
 const blogTitle = `${brand} ${config.brand.blogSuffix}`;
@@ -91,7 +92,7 @@ const socials = [
             <h2>Quer organizar suas finanças?</h2>
             <p>Teste o {config.app.name} grátis por 7 dias. Sem cartão de crédito. Cancele quando quiser.</p>
             <div class="sobre-cta-actions">
-              <a href="/app" class="sobre-btn primary">Experimentar Grátis</a>
+              <a href={canonicalPath('/app')} class="sobre-btn primary">Experimentar Grátis</a>
               <a href="/" class="sobre-btn secondary">Ver o Blog</a>
             </div>
           </div>

@@ -6,6 +6,7 @@
 // tela (com 2 cópias, telas largas viam espaço vazio antes do reinício).
 import { getCollection } from 'astro:content';
 import { getActiveSeasonalEvents } from '@/utils/seasonal';
+import { canonicalPath } from '@/utils/url';
 
 const urlPath = Astro.url.pathname;
 let locale = 'pt';
@@ -16,7 +17,7 @@ const localePrefix = locale === 'pt' ? '' : `/${locale}`;
 
 const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === locale);
 const latest = posts.sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime())[0];
-const latestUrl = latest ? `${localePrefix}/posts/${latest.slug}` : null;
+const latestUrl = latest ? canonicalPath(`${localePrefix}/posts/${latest.slug}`) : null;
 // Prefere a headline curta escrita pela IA para o ticker; sem ela (posts
 // antigos), corta o título mecanicamente
 const latestTitle = latest
@@ -37,7 +38,9 @@ const loc = locale as 'pt' | 'en' | 'es';
 const seasonalItems = getActiveSeasonalEvents(locale)
   .filter(e => e.ticker)
   .map(e => ({
-    href: e.href[loc],
+    // href sazonal é sempre caminho interno (config.seasonal) — normalizado
+    // para não gerar 308 no clique do ticker.
+    href: canonicalPath(e.href[loc]),
     eventDate: e.eventDate,
     msg: (e.ticker as Record<string, string>)[loc],
     msgToday: e.tickerToday ? e.tickerToday[loc] : (e.ticker as Record<string, string>)[loc],
@@ -96,7 +99,7 @@ const COPIES = [0, 1, 2, 3];
               <span class="cotacao-text">{latestTitle}</span>
             </a>
           )}
-          <a class="cotacao-item cotacao-post" href="/categorias/dicas">
+          <a class="cotacao-item cotacao-post" href={canonicalPath('/categorias/dicas')}>
             <span class="cotacao-label">{labels.dica}</span>
             <span class="cotacao-text js-dica">--</span>
           </a>

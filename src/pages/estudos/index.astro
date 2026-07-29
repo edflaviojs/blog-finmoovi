@@ -4,13 +4,14 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import { config } from '../../../site.config';
 import endivData from '@/data/endividamento.json';
+import { canonicalPath } from '@/utils/url';
 
 const fmt = (v: number) => v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 const estudos = [
   {
     title: 'Índice FinMoovi de Endividamento',
-    href: '/estudos/endividamento-das-familias',
+    href: canonicalPath('/estudos/endividamento-das-familias'),
     icon: '📊',
     stat: `${fmt(endivData.endividamento.latest.value)}%`,
     statLabel: 'endividamento das famílias (renda anual)',

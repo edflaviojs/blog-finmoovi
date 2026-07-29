@@ -3,6 +3,7 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+import { canonicalPath } from '@/utils/url';
 
 const breadcrumbItems = [
   { name: 'Início', url: '/' },
@@ -93,19 +94,19 @@ const breadcrumbItems = [
       <div class="container">
         <h2>Ferramentas para Cada Fase</h2>
         <div class="tools-grid">
-          <a href="/ferramentas/calculadora-orcamento" class="tool-link">
+          <a href={canonicalPath('/ferramentas/calculadora-orcamento')} class="tool-link">
             <span class="tool-icon">💰</span>
             <span class="tool-name">Orçamento 50-30-20</span>
           </a>
-          <a href="/ferramentas/calculadora-juros-compostos" class="tool-link">
+          <a href={canonicalPath('/ferramentas/calculadora-juros-compostos')} class="tool-link">
             <span class="tool-icon">📈</span>
             <span class="tool-name">Juros Compostos</span>
           </a>
-          <a href="/ferramentas/simulador-investimento" class="tool-link">
+          <a href={canonicalPath('/ferramentas/simulador-investimento')} class="tool-link">
             <span class="tool-icon">🎯</span>
             <span class="tool-name">Simulador</span>
           </a>
-          <a href="/como-sair-das-dividas" class="tool-link">
+          <a href={canonicalPath('/como-sair-das-dividas')} class="tool-link">
             <span class="tool-icon">🔓</span>
             <span class="tool-name">Sair das Dívidas</span>
           </a>

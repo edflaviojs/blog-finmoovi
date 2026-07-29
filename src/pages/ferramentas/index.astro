@@ -2,6 +2,7 @@
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
+import { canonicalPath } from '@/utils/url';
 ---
 
 <BaseLayout
@@ -21,49 +22,49 @@ import Footer from '@components/footer/Footer.astro';
       </header>
 
       <div class="ferramentas-grid">
-        <a href="/ferramentas/calculadora-juros-compostos" class="ferramenta-card active">
+        <a href={canonicalPath('/ferramentas/calculadora-juros-compostos')} class="ferramenta-card active">
           <span class="ferramenta-badge live">Disponível</span>
           <div class="ferramenta-icon">📈</div>
           <h3 class="ferramenta-title">Calculadora de Juros Compostos</h3>
           <p class="ferramenta-description">Simule quanto seu dinheiro pode render ao longo do tempo com juros compostos.</p>
         </a>
 
-        <a href="/ferramentas/calculadora-orcamento" class="ferramenta-card active">
+        <a href={canonicalPath('/ferramentas/calculadora-orcamento')} class="ferramenta-card active">
           <span class="ferramenta-badge live">Disponível</span>
           <div class="ferramenta-icon">💰</div>
           <h3 class="ferramenta-title">Calculadora de Orçamento 50-30-20</h3>
           <p class="ferramenta-description">Monte seu orçamento usando a regra 50-30-20 de forma rápida e visual.</p>
         </a>
 
-        <a href="/ferramentas/conversor-moedas" class="ferramenta-card active">
+        <a href={canonicalPath('/ferramentas/conversor-moedas')} class="ferramenta-card active">
           <span class="ferramenta-badge live">Disponível</span>
           <div class="ferramenta-icon">💱</div>
           <h3 class="ferramenta-title">Conversor de Moedas</h3>
           <p class="ferramenta-description">Converta entre BRL, USD, EUR e outras moedas com cotação atualizada.</p>
         </a>
 
-        <a href="/ferramentas/simulador-investimento" class="ferramenta-card active">
+        <a href={canonicalPath('/ferramentas/simulador-investimento')} class="ferramenta-card active">
           <span class="ferramenta-badge live">Disponível</span>
           <div class="ferramenta-icon">🎯</div>
           <h3 class="ferramenta-title">Simulador de Investimento</h3>
           <p class="ferramenta-description">Descubra quanto precisa investir por mês para alcançar seu objetivo.</p>
         </a>
 
-        <a href="/ferramentas/calculadora-reserva" class="ferramenta-card active">
+        <a href={canonicalPath('/ferramentas/calculadora-reserva')} class="ferramenta-card active">
           <span class="ferramenta-badge live">Disponível</span>
           <div class="ferramenta-icon">🛡️</div>
           <h3 class="ferramenta-title">Calculadora de Reserva</h3>
           <p class="ferramenta-description">Calcule o valor ideal da sua reserva de emergência baseado nos seus gastos.</p>
         </a>
 
-        <a href="/ferramentas/calculadora-financiamento" class="ferramenta-card active">
+        <a href={canonicalPath('/ferramentas/calculadora-financiamento')} class="ferramenta-card active">
           <span class="ferramenta-badge live">Disponível</span>
           <div class="ferramenta-icon">🏠</div>
           <h3 class="ferramenta-title">Calculadora de Financiamento (SAC × Price)</h3>
           <p class="ferramenta-description">Compare os sistemas SAC e Price: veja parcelas e quanto paga de juros no financiamento.</p>
         </a>
 
-        <a href="/ferramentas/calculadora-aposentadoria" class="ferramenta-card active">
+        <a href={canonicalPath('/ferramentas/calculadora-aposentadoria')} class="ferramenta-card active">
           <span class="ferramenta-badge live">Disponível</span>
           <div class="ferramenta-icon">🌴</div>
           <h3 class="ferramenta-title">Calculadora de Aposentadoria</h3>

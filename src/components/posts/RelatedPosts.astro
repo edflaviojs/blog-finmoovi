@@ -1,6 +1,7 @@
 ---
 import PostCard from '../posts/PostCard.astro';
 import { getCollection } from 'astro:content';
+import { canonicalPath } from '@/utils/url';
 
 interface Props {
   currentSlug: string;
@@ -43,7 +44,7 @@ const localePrefix = locale === 'pt' ? '' : `/${locale}`;
           title={post.data.title}
           description={post.data.description}
           image={post.data.image}
-          href={`${localePrefix}/posts/${post.slug}`}
+          href={canonicalPath(`${localePrefix}/posts/${post.slug}`)}
           category={post.data.category}
           date={post.data.publishedAt.toISOString()}
           readingTime={post.data.readingTime}

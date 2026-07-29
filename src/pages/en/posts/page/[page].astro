@@ -5,6 +5,7 @@ import Footer from '@components/footer/Footer.astro';
 import PostCard from '@components/posts/PostCard.astro';
 import { config } from '../../../../../site.config';
 import { getCollection } from 'astro:content';
+import { canonicalPath } from '@/utils/url';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft && data.locale === 'en');
@@ -29,8 +30,8 @@ export async function getStaticPaths() {
 }
 
 const { posts, currentPage, totalPages, totalPosts } = Astro.props;
-const prevPage = currentPage > 1 ? `/en/posts/page/${currentPage - 1}` : null;
-const nextPage = currentPage < totalPages ? `/en/posts/page/${currentPage + 1}` : null;
+const prevPage = currentPage > 1 ? canonicalPath(`/en/posts/page/${currentPage - 1}`) : null;
+const nextPage = currentPage < totalPages ? canonicalPath(`/en/posts/page/${currentPage + 1}`) : null;
 ---
 
 <BaseLayout
@@ -52,7 +53,7 @@ const nextPage = currentPage < totalPages ? `/en/posts/page/${currentPage + 1}` 
           title={post.data.title}
           description={post.data.description}
           image={post.data.image}
-          href={`/en/posts/${post.slug}`}
+          href={canonicalPath(`/en/posts/${post.slug}`)}
           category={post.data.category}
           date={post.data.publishedAt.toISOString().split('T')[0]}
           readingTime={post.data.readingTime}
@@ -70,7 +71,7 @@ const nextPage = currentPage < totalPages ? `/en/posts/page/${currentPage + 1}` 
       <div class="pagination-pages">
         {Array.from({ length: totalPages }, (_, i) => (
           <a
-            href={`/en/posts/page/${i + 1}`}
+            href={canonicalPath(`/en/posts/page/${i + 1}`)}
             class={`pagination-page ${currentPage === i + 1 ? 'active' : ''}`}
             aria-current={currentPage === i + 1 ? 'page' : undefined}
           >

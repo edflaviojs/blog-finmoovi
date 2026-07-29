@@ -3,6 +3,7 @@ import BillboardCarousel from './BillboardCarousel.astro';
 import AdSlot from './AdSlot.astro';
 import { imgSrcset } from '@/utils/responsive-image';
 import { categoryLabel, type Locale } from '@/utils/home-data';
+import { canonicalPath } from '@/utils/url';
 import { config } from '../../../site.config';
 
 /**
@@ -135,7 +136,7 @@ const T = {
         <div class="widget reveal in">
           <h4>{T.ferramentas}</h4>
           <div class="chips">
-            {TOOLS.map(tool => <a href={tool.href}>{tool.label[locale]}</a>)}
+            {TOOLS.map(tool => <a href={canonicalPath(tool.href)}>{tool.label[locale]}</a>)}
           </div>
         </div>
       )}
@@ -201,7 +202,7 @@ const T = {
       <div class="section-head reveal">
         <span class="bar" aria-hidden="true"></span>
         <h2>{T.ultimasTitle}</h2>
-        <a class="all" href={`${prefix}/posts/page/1`}>{T.verTudo}</a>
+        <a class="all" href={canonicalPath(`${prefix}/posts/page/1`)}>{T.verTudo}</a>
       </div>
       <div class="mini-wrap">
         {ultimas.map((c: any) => (
@@ -272,7 +273,7 @@ const T = {
       <small class="gloss-sub">{T.termoSub}</small>
       <div class="chips">
         {termoChips.map((t: any) => <a href={t.href}>{t.term}</a>)}
-        <a href={`${prefix}/glossario`} class="chip-all">{T.verGlossario}</a>
+        <a href={canonicalPath(`${prefix}/glossario`)} class="chip-all">{T.verGlossario}</a>
       </div>
     </div>
   )}

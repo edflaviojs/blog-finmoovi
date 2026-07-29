@@ -9,6 +9,7 @@ import Sidebar from '@components/sidebar/Sidebar.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
 import { getCollection } from 'astro:content';
 import { config } from '../../../../site.config';
+import { canonicalPath } from '@/utils/url';
 
 export async function getStaticPaths() {
   const glossario = await getCollection('glossario', ({ data }) => data.locale === 'es');
@@ -82,9 +83,9 @@ const schemaBreadcrumbItems = [
       <div class="layout-with-sidebar glossario-layout">
       <article class="glossario-article">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="/es">Inicio</a>
+          <a href={canonicalPath('/es')}>Inicio</a>
           <span>/</span>
-          <a href="/es/glossario">Glosario</a>
+          <a href={canonicalPath('/es/glossario')}>Glosario</a>
           <span>/</span>
           <span>{term.data.term}</span>
         </nav>
@@ -115,7 +116,7 @@ const schemaBreadcrumbItems = [
             <h3>Términos Relacionados</h3>
             <div class="related-grid">
               {relatedTerms.map(rt => (
-                <a href={`/es/glossario/${rt.slug}`} class="related-card">
+                <a href={canonicalPath(`/es/glossario/${rt.slug}`)} class="related-card">
                   <span class="related-question">¿Qué es {rt.data.term}?</span>
                   <p class="related-def">{rt.data.definition.substring(0, 100)}...</p>
                 </a>

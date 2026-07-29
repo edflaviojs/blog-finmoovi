@@ -1,5 +1,6 @@
 ---
 import { config } from '../../../site.config';
+import { canonicalPath } from '@/utils/url';
 
 // Aviso de cookies estilo mini-popup (Terra-like): pequeno, centralizado na
 // base, some ao aceitar e não volta (localStorage). Renderizado pelo Footer,
@@ -16,7 +17,7 @@ const T = {
 ---
 
 <div class="cookie-notice" id="cookie-notice" role="dialog" aria-label="Aviso de cookies" hidden>
-  <p><b>{config.siteName}</b> {T.pre} <a href={T.policy}>{T.link}</a>.</p>
+  <p><b>{config.siteName}</b> {T.pre} <a href={canonicalPath(T.policy)}>{T.link}</a>.</p>
   <button id="cookie-accept">{T.btn}</button>
 </div>
 

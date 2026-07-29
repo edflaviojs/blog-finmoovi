@@ -3,6 +3,7 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import { config } from '../../site.config';
+import { canonicalPath } from '@/utils/url';
 
 const brand = config.brand.name;
 const contactEmail = 'finmoovi@gmail.com';
@@ -75,8 +76,8 @@ const updated = '13 de julho de 2026';
 
         <h2>7. Privacidade</h2>
         <p>
-          O tratamento de dados é descrito na nossa <a href="/privacidade">Política de Privacidade</a> e o uso de
-          cookies na <a href="/cookies">Política de Cookies</a>.
+          O tratamento de dados é descrito na nossa <a href={canonicalPath('/privacidade')}>Política de Privacidade</a> e o uso de
+          cookies na <a href={canonicalPath('/cookies')}>Política de Cookies</a>.
         </p>
 
         <h2>8. Alterações</h2>

@@ -25,7 +25,7 @@ seo:
 La mayor parte del dinero que “desaparece” al final del mes proviene de compras impulsivas. Cambiar un café de **€1,26** por uno hecho en casa puede parecer irrelevante, pero en 30 días eso representa **€37,80**.  
 **Consejo práctico:** anota cada gasto superior a **€0,90** en un cuaderno o en una app; al final de la semana revisa cuánto podrías haber ahorrado si hubieras redirigido ese dinero a tu fondo de ahorro. Ese registro visual suele sorprender y motivar el cambio.
 
-## Monta un [fondo de emergencia](/es/glossario/es-emergency-fund) rápido
+## Monta un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) rápido
 
 Un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) debe cubrir de tres a seis meses de gastos fijos. Empieza definiendo tu costo mensual (servicios, alquiler, alimentación). Si tu gasto total es **€450**, la meta mínima sería **€1,350**. Destina **5 %** del salario directamente a una cuenta de rendimiento inmediato, como una cuenta corriente con rendimiento del banco central. Por ejemplo, quien gana **€810** destinará **€40,5** cada mes; en 12 meses habrá acumulado **€486**, ya una buena base para emergencias menores.
 
@@ -33,7 +33,7 @@ Un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) debe cubrir de tr
 
 ## Usa la técnica de los sobres digitales
 
-La técnica de los sobres (o “sobres digitales”) consiste en crear categorías en tu [aplicación financiera](/es/glossario/es-aplicacao-financeira) – vivienda, transporte, ocio, reserva. Cada categoría recibe un límite mensual. Si el presupuesto de ocio es **€54**, al gastar **€27** aún te quedan **€27** para el próximo mes. Esta separación mental evita el “gasto por fuera”. Muchos apps, como **FinMoovi**, permiten mover dinero entre sobres con pocos clics, manteniendo todo rastreable.
+La técnica de los sobres (o “sobres digitales”) consiste en crear categorías en tu [aplicación financiera](/es/glossario/es-aplicacion-financiera) – vivienda, transporte, ocio, reserva. Cada categoría recibe un límite mensual. Si el presupuesto de ocio es **€54**, al gastar **€27** aún te quedan **€27** para el próximo mes. Esta separación mental evita el “gasto por fuera”. Muchos apps, como **FinMoovi**, permiten mover dinero entre sobres con pocos clics, manteniendo todo rastreable.
 
 ## Aprovecha el cashback de forma inteligente
 
@@ -54,8 +54,8 @@ El momento de cambiar es ahora: elige una de las ideas anteriores, ajusta tu pre
 Reserva, como mínimo, el **10 %** del salario neto. Si la cifra parece alta, comienza con el **5 %** y aumenta gradualmente.  
 #### ¿Vale la pena el cashback incluso con compras pequeñas?
 Sí. Incluso **€1,80** de vuelta, si se reinvierte en la reserva, genera un efecto acumulativo a lo largo del tiempo.  
-#### ¿Cuál es la mejor cuenta para guardar la [reserva de emergencia](/es/glossario/es-reserva-de-emergencia)?
-Una cuenta con rendimiento atado a la **tasa interbancaria** o a **bonos del gobierno**, ya que garantizan [liquidez](/es/glossario/es-liquidity) y seguridad.  
+#### ¿Cuál es la mejor cuenta para guardar la [reserva de emergencia](/es/glossario/es-fondo-de-emergencia)?
+Una cuenta con rendimiento atado a la **tasa interbancaria** o a **bonos del gobierno**, ya que garantizan [liquidez](/es/glossario/es-liquidez) y seguridad.  
 #### ¿Puedo usar [aplicaciones](/es/posts/es-5-alternativas-al-mobills-en-2026) gratuitas para controlar mis gastos?
 Claro, apps como **FinMoovi** o **Guiabolso** ofrecen categorización automática y reportes detallados sin costo.
 

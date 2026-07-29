@@ -58,7 +58,7 @@ Os perigos do xing ling são reais e podem transformar um “pequeno achado” e
 - **[Volatilidade](/glossario/volatilidade)**: o valor pode cair drasticamente em poucos dias, principalmente em ativos digitais.
 - **Dificuldade de resgate**: alguns produtos não permitem retirada antes de um prazo longo, o que pode atrapalhar seu fluxo de caixa.
 
-**Dica prática:** nunca invista dinheiro que você precisa para pagar contas essenciais, como aluguel ou alimentação. O xing ling deve ficar na parte “extra” da sua [reserva de emergência](/glossario/emergency-fund).
+**Dica prática:** nunca invista dinheiro que você precisa para pagar contas essenciais, como aluguel ou alimentação. O xing ling deve ficar na parte “extra” da sua [reserva de emergência](/glossario/reserva-de-emergencia).
 
 ## Exemplos práticos
 

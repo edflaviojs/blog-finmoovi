@@ -54,7 +54,7 @@ A categoria de alimentação e bebidas recuou 0,24 % no mês, aliviando um pou
 ## Como se proteger
 
 - Revise seu orçamento mensal usando a [Calculadora de Orçamento](/ferramentas/calculadora-orcamento/) para identificar gastos que podem ser ajustados.  
-- Reforce sua [reserva de emergência](/glossario/emergency-fund) com a [Calculadora de Reserva de Emergência](/ferramentas/calculadora-reserva/) para enfrentar possíveis aumentos de preços.  
+- Reforce sua [reserva de emergência](/glossario/reserva-de-emergencia) com a [Calculadora de Reserva de Emergência](/ferramentas/calculadora-reserva/) para enfrentar possíveis aumentos de preços.  
 - Aproveite o [Conversor de Moedas](/ferramentas/conversor-moedas/) para monitorar a cotação do dólar (R$ 5,07) e do euro (R$ 5,78) antes de compras internacionais.  
 - Simule investimentos que superem a inflação usando o [Simulador de Investimento](/ferramentas/simulador-investimento/) e proteja seu patrimônio.
 

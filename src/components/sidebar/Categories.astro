@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { config } from '../../../site.config';
+import { canonicalPath } from '@/utils/url';
 
 const urlPath = Astro.url.pathname;
 let locale = 'pt';
@@ -25,7 +26,7 @@ const COLORS = ['var(--accent-primary)', 'var(--accent-green)', 'var(--accent-pu
 // Fonte ÚNICA: config.content.categoryNav (mesma do menu/rodapé).
 const categories = config.content.categoryNav.map((c, i) => ({
   label: locale === 'pt' ? c.label : (LOCALIZED_LABELS[locale]?.[c.slug] || c.label),
-  href: `${localePrefix}/categorias/${c.slug}`,
+  href: canonicalPath(`${localePrefix}/categorias/${c.slug}`),
   count: countByCategory(c.slug),
   color: COLORS[i % COLORS.length],
 }));

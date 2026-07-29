@@ -73,7 +73,7 @@ Se você ainda não tem uma conta poupança, siga estes passos simples para colo
 - **Automatize:** programe transferências automáticas logo após o pagamento; assim você não esquece de depositar.  
 - **Acompanhe o extrato:** verifique mensalmente o rendimento; isso ajuda a manter o hábito e a entender o crescimento.  
 - **Reavalie anualmente:** se a taxa Selic mudar, considere diversificar; **Dica prática:** compare a poupança com CDBs de 100 % do CDI para ver se vale a pena mudar parte do dinheiro.  
-- **Mantenha a [reserva de emergência](/glossario/emergency-fund):** a poupança é ideal para esse fundo, pois permite saque rápido sem perdas; **Dica prática:** mantenha pelo menos 3 a 6 meses de despesas guardados aqui.
+- **Mantenha a [reserva de emergência](/glossario/reserva-de-emergencia):** a poupança é ideal para esse fundo, pois permite saque rápido sem perdas; **Dica prática:** mantenha pelo menos 3 a 6 meses de despesas guardados aqui.
 
 ## Comece hoje
 

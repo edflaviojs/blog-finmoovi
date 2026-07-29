@@ -4,6 +4,7 @@ import { config } from '../../site.config';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+import { canonicalPath } from '@/utils/url';
 
 const breadcrumbItems = [
   { name: 'Início', url: '/' },
@@ -58,7 +59,7 @@ const faqSchema = {
         <h1>Orçamento Pessoal: Como Montar o Seu em 15 Minutos</h1>
         <p class="hero-subtitle">Um orçamento não é uma restrição — é liberdade. Saiba exatamente para onde vai cada real e tome decisões financeiras com confiança.</p>
         <div class="hero-cta-group">
-          <a href="/ferramentas/calculadora-orcamento" class="cta-primary">Calcular Meu Orçamento (Grátis)</a>
+          <a href={canonicalPath('/ferramentas/calculadora-orcamento')} class="cta-primary">Calcular Meu Orçamento (Grátis)</a>
           <a href="#como-montar" class="cta-secondary">Ver o guia ↓</a>
         </div>
       </div>
@@ -88,7 +89,7 @@ const faqSchema = {
           <div class="step-card">
             <span class="step-number">4</span>
             <h3>Reserve para futuro</h3>
-            <p>Pague-se primeiro. Separe 20% (ou o que puder) antes de gastar com qualquer coisa. <a href="/ferramentas/simulador-investimento">Simule o efeito</a>.</p>
+            <p>Pague-se primeiro. Separe 20% (ou o que puder) antes de gastar com qualquer coisa. <a href={canonicalPath('/ferramentas/simulador-investimento')}>Simule o efeito</a>.</p>
           </div>
         </div>
       </div>
@@ -116,7 +117,7 @@ const faqSchema = {
           </div>
         </div>
         <div class="budget-cta">
-          <a href="/ferramentas/calculadora-orcamento" class="cta-primary">Calcular Meu 50-30-20 →</a>
+          <a href={canonicalPath('/ferramentas/calculadora-orcamento')} class="cta-primary">Calcular Meu 50-30-20 →</a>
         </div>
       </div>
     </section>
@@ -125,19 +126,19 @@ const faqSchema = {
       <div class="container">
         <h2>Ferramentas para seu Orçamento</h2>
         <div class="tools-grid">
-          <a href="/ferramentas/calculadora-orcamento" class="tool-link">
+          <a href={canonicalPath('/ferramentas/calculadora-orcamento')} class="tool-link">
             <span class="tool-icon">💰</span>
             <span class="tool-name">Calculadora 50-30-20</span>
           </a>
-          <a href="/ferramentas/calculadora-juros-compostos" class="tool-link">
+          <a href={canonicalPath('/ferramentas/calculadora-juros-compostos')} class="tool-link">
             <span class="tool-icon">📈</span>
             <span class="tool-name">Juros Compostos</span>
           </a>
-          <a href="/ferramentas/simulador-investimento" class="tool-link">
+          <a href={canonicalPath('/ferramentas/simulador-investimento')} class="tool-link">
             <span class="tool-icon">🎯</span>
             <span class="tool-name">Simulador de Investimento</span>
           </a>
-          <a href="/ferramentas/conversor-moedas" class="tool-link">
+          <a href={canonicalPath('/ferramentas/conversor-moedas')} class="tool-link">
             <span class="tool-icon">💱</span>
             <span class="tool-name">Conversor de Moedas</span>
           </a>

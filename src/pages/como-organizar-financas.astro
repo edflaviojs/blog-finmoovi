@@ -4,6 +4,7 @@ import { config } from '../../site.config';
 import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import SchemaBreadcrumb from '@components/seo/SchemaBreadcrumb.astro';
+import { canonicalPath } from '@/utils/url';
 
 const breadcrumbItems = [
   { name: 'Início', url: '/' },
@@ -75,7 +76,7 @@ const faqSchema = {
           <div class="step-card">
             <span class="step-number">2</span>
             <h3>Aplique a regra 50-30-20</h3>
-            <p>Divida: 50% necessidades, 30% desejos, 20% futuro. <a href="/ferramentas/calculadora-orcamento">Use nossa calculadora</a>.</p>
+            <p>Divida: 50% necessidades, 30% desejos, 20% futuro. <a href={canonicalPath('/ferramentas/calculadora-orcamento')}>Use nossa calculadora</a>.</p>
           </div>
           <div class="step-card">
             <span class="step-number">3</span>
@@ -90,7 +91,7 @@ const faqSchema = {
           <div class="step-card">
             <span class="step-number">5</span>
             <h3>Comece a investir</h3>
-            <p>Nem que seja R$ 50/mês. Juros compostos a seu favor. <a href="/ferramentas/calculadora-juros-compostos">Simule aqui</a>.</p>
+            <p>Nem que seja R$ 50/mês. Juros compostos a seu favor. <a href={canonicalPath('/ferramentas/calculadora-juros-compostos')}>Simule aqui</a>.</p>
           </div>
         </div>
       </div>
@@ -101,19 +102,19 @@ const faqSchema = {
       <div class="container">
         <h2>Ferramentas Gratuitas para te Ajudar</h2>
         <div class="tools-grid">
-          <a href="/ferramentas/calculadora-orcamento" class="tool-link">
+          <a href={canonicalPath('/ferramentas/calculadora-orcamento')} class="tool-link">
             <span class="tool-icon">💰</span>
             <span class="tool-name">Calculadora 50-30-20</span>
           </a>
-          <a href="/ferramentas/calculadora-juros-compostos" class="tool-link">
+          <a href={canonicalPath('/ferramentas/calculadora-juros-compostos')} class="tool-link">
             <span class="tool-icon">📈</span>
             <span class="tool-name">Juros Compostos</span>
           </a>
-          <a href="/ferramentas/simulador-investimento" class="tool-link">
+          <a href={canonicalPath('/ferramentas/simulador-investimento')} class="tool-link">
             <span class="tool-icon">🎯</span>
             <span class="tool-name">Simulador de Investimento</span>
           </a>
-          <a href="/ferramentas/conversor-moedas" class="tool-link">
+          <a href={canonicalPath('/ferramentas/conversor-moedas')} class="tool-link">
             <span class="tool-icon">💱</span>
             <span class="tool-name">Conversor de Moedas</span>
           </a>

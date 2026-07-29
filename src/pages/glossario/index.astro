@@ -4,6 +4,7 @@ import Header from '@components/header/Header.astro';
 import Footer from '@components/footer/Footer.astro';
 import CTAVariado from '@components/glossario/CTAVariado.astro';
 import { getCollection } from 'astro:content';
+import { canonicalPath } from '@/utils/url';
 
 const glossario = await getCollection('glossario', ({ data }) => data.locale === 'pt');
 const sorted = glossario.sort((a, b) => a.data.term.localeCompare(b.data.term, 'pt-BR'));
@@ -72,7 +73,7 @@ const faqSchema = {
                   </summary>
                   <div class="term-answer">
                     <p class="term-definition">{term.data.definition}</p>
-                    <a href={`/glossario/${term.slug}`} class="term-read-more">
+                    <a href={canonicalPath(`/glossario/${term.slug}`)} class="term-read-more">
                       Ler explicação completa →
                     </a>
                   </div>
