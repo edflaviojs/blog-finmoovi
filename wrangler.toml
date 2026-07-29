@@ -7,8 +7,11 @@ bucket = "./dist"
 [build]
 command = "npm run build"
 
+# Mantido igual ao .node-version da raiz e ao node-version dos 53 workflows.
+# O Node 20 saiu de suporte e NAO le TypeScript nativamente — scripts que
+# importam site.config.ts (via scripts/lib/site.js) quebram nele.
 [build.environment]
-NODE_VERSION = "20"
+NODE_VERSION = "22"
 
 # KV namespace for newsletter subscribers
 # Create with: wrangler kv:namespace create NEWSLETTER_KV
