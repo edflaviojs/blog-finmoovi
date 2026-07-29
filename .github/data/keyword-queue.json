@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-29T11:14:55.719Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-07-29T11:27:43.733Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -17,8 +17,10 @@
       "category": "investimentos",
       "priority": 1,
       "source": "manual",
-      "status": "pending",
-      "addedAt": "2026-07-23T13:15:08.997Z"
+      "status": "used",
+      "addedAt": "2026-07-23T13:15:08.997Z",
+      "usedAt": "2026-07-29T11:27:43.733Z",
+      "usedBy": "gerar-post-investimentos"
     },
     {
       "keyword": "orçamento doméstico para quem recebe por semana",

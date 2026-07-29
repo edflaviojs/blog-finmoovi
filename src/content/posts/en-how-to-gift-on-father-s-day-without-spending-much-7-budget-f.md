@@ -83,7 +83,7 @@ The national statistics office reports that the average monthly income of worker
 Create a list in FinMoovi with items you’d like to give dad. Whenever there’s a promotion, add the reduced price. That way you buy at the right moment and avoid impulse purchases.
 
 ### 5.3. **Split the amount into smaller installments**
-If you opt for a pricier gift (e.g., a smartwatch), see if the store offers **interest‑free installments**. But pay attention: record each installment in FinMoovi so you don’t forget to pay and end up spending more next month.
+If you opt for a pricier gift (e.g., a smartwatch), see if the store offers **[interest](/en/glossario/en-interest)‑free installments**. But pay attention: record each installment in FinMoovi so you don’t forget to pay and end up spending more next month.
 
 ## 6️⃣ Final tips to avoid going into the red
 

@@ -73,7 +73,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 
 | Asset type                               | Risk       | Recommendation for 2nd half |
 |------------------------------------------|------------|------------------------------|
-| **Government bonds (central bank base rate)** (fixed income)        | Low        | Emergency reserve and safety contribution |
+| **Government bonds (central bank base rate)** ([fixed income](/en/glossario/en-fixed-income))        | Low        | Emergency reserve and safety contribution |
 | **Certificates of deposit (CDs) with daily liquidity**           | Low‑medium | Complement to government bonds, returns above savings |
 | **Index funds ([ETF](/en/glossario/en-etf)) of stocks**         | Medium‑high| Exposure to seasonal sectors (retail, energy) |
 | **Real‑estate funds**             | Medium     | Monthly rent receipts, good for passive income |
@@ -142,7 +142,7 @@ For the second half, most people focus on **short and medium term**, but don’t
 Yes. Begin with government bonds, which have daily liquidity and protect capital. As the reserve grows, diversify.
 
 **2. How much should I allocate to real‑estate funds?**  
-It depends on your passive‑income goal. An allocation of 10‑20 % usually yields monthly [dividends](/en/glossario/en-dividends) without hurting diversification.
+It depends on your passive‑income goal. An allocation of 10‑20 % usually yields monthly [dividends](/en/glossario/en-dividends) without hurting [diversification](/en/glossario/en-diversification).
 
 **3. Is it safe to buy international ETFs?**  
 It’s possible through brokers that offer access to overseas investment funds. Check custody fees and taxes.

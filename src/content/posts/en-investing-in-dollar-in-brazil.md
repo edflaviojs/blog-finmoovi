@@ -47,7 +47,7 @@ It's essential to consider these risks before investing in dollars and assess wh
 ## Benefits of Dollar Investment
 Investing in dollars can also have benefits, including:
 
-* Diversification: investing in dollars can help diversify your investment portfolio and reduce risk.
+* [Diversification](/en/glossario/en-diversification): investing in dollars can help diversify your investment portfolio and reduce risk.
 * Inflation protection: investing in dollars can help protect your assets against inflation in your country.
 * Potential for gains: the dollar's value can increase against the local currency, generating gains for the investor.
 
