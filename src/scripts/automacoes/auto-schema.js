@@ -4,13 +4,61 @@
  * The PostLayout reads these and injects as JSON-LD
  *
  * Usage: node src/scripts/automacoes/auto-schema.js
- * Safe to re-run: checks for existing schema before adding
+ *        node src/scripts/automacoes/auto-schema.js --force
+ *
+ * Safe to re-run: checks for existing schema before adding.
+ * Com --force o bloco existente é REGENERADO a partir do corpo atual (uso
+ * pontual, para reprocessar posts gerados por uma versão antiga do script).
+ * Sem a flag o comportamento é o de sempre: quem já tem bloco é pulado.
  */
 
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
+
+/** Bloco gerado por este script. Não-guloso: o JSON já escapa `-->` internamente. */
+const SCHEMA_BLOCK_RE = /<!-- SCHEMA_AUTO:[\s\S]*?-->/;
+
+/**
+ * Limpa marcação markdown de um trecho que vira texto puro dentro do JSON-LD.
+ *
+ * FONTE ÚNICA — todos os caminhos (FAQ por varredura, FAQ por seção e HowTo)
+ * bebem daqui. Antes cada um tinha a sua versão e só o caminho do FAQ resolvia
+ * links, o que vazava `[texto](url)` cru para o structured data.
+ *
+ * A ORDEM IMPORTA: os links são resolvidos ANTES de remover os caracteres de
+ * ênfase. Se `[` e `]` saíssem primeiro, a regex de link nunca casaria e a URL
+ * acabaria colada na palavra (era assim que nascia `ações/glossario/acoes`).
+ *
+ * @param {string} text - Trecho de markdown (título, pergunta ou linha de prosa).
+ * @returns {string} Texto puro, sem sintaxe de link, ênfase ou código.
+ */
+function stripMarkdown(text) {
+  return String(text)
+    .replace(/!\[([^\]]*)\]\([^)]*\)/g, '$1') // imagem → texto alternativo
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')  // link → rótulo (descarta a URL)
+    .replace(/[*_`]/g, '')                     // ênfase e código inline
+    .trim();
+}
+
+/**
+ * Corta `text` em no máximo `max` caracteres SEM partir palavra: recua até o
+ * último espaço e só então acrescenta reticências. `substring` cru produzia
+ * fragmentos como "...com liquidez/glossar" no meio de "glossario".
+ *
+ * @param {string} text - Texto já limpo de markdown.
+ * @param {number} max - Limite de caracteres do resultado (reticências incluídas).
+ * @returns {string} Texto íntegro, com "…" no fim apenas se houve corte.
+ */
+function truncateAtWord(text, max) {
+  const s = String(text).trim();
+  if (s.length <= max) return s;
+  const hard = s.slice(0, max - 1); // reserva 1 caractere para o "…"
+  const lastSpace = hard.lastIndexOf(' ');
+  const base = lastSpace > 0 ? hard.slice(0, lastSpace) : hard;
+  return base.replace(/[\s,;:.!?\-–—]+$/, '') + '…';
+}
 
 function parseFrontmatter(content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
@@ -25,18 +73,18 @@ function detectFAQContent(body) {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
     if (/^#{2,3}\s+.*\?$/.test(line)) {
-      const question = line.replace(/^#{2,3}\s+/, '');
+      const question = stripMarkdown(line.replace(/^#{2,3}\s+/, ''));
       let answer = '';
       for (let j = i + 1; j < lines.length; j++) {
         const nextLine = lines[j].trim();
         if (nextLine.startsWith('#') || (nextLine === '' && answer.length > 50)) break;
         if (nextLine) {
-          let clean = nextLine.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_`!]/g, '');
+          const clean = stripMarkdown(nextLine);
           answer += (answer ? ' ' : '') + clean;
         }
       }
       if (answer.length > 20) {
-        questions.push({ question, answer: answer.substring(0, 300).replace(/-->/g, '—>') });
+        questions.push({ question, answer: truncateAtWord(answer, 300).replace(/-->/g, '—>') });
       }
     }
   }
@@ -67,15 +115,15 @@ function parseFaqSection(body) {
     const h3 = line.match(/^###\s+(.+)$/);
     if (h3) {
       if (current && current.answer.length > 20) faqs.push(current);
-      current = { question: h3[1].replace(/[*_`]/g, '').trim(), answer: '' };
+      current = { question: stripMarkdown(h3[1]), answer: '' };
     } else if (current && line && !line.startsWith('#') && !line.startsWith('---') && !line.startsWith('<!--')) {
-      const clean = line.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_`!]/g, '');
+      const clean = stripMarkdown(line);
       current.answer += (current.answer ? ' ' : '') + clean;
     }
   }
   if (current && current.answer.length > 20) faqs.push(current);
 
-  return faqs.map(q => ({ question: q.question, answer: q.answer.substring(0, 300).replace(/-->/g, '—>') }));
+  return faqs.map(q => ({ question: q.question, answer: truncateAtWord(q.answer, 300).replace(/-->/g, '—>') }));
 }
 
 function buildFaqSchema(faqs) {
@@ -92,7 +140,11 @@ function buildFaqSchema(faqs) {
 
 function detectHowToContent(body, fm) {
   const steps = [];
-  const lines = body.split('\n');
+  // split(/\r?\n/) e não split('\n'): num checkout CRLF a linha termina em "\r",
+  // e como a regex de passo ancora em `$` sem flag /m (e `.` não casa "\r"),
+  // NENHUM passo era detectado — o script achava 0 HowTo no Windows e o normal
+  // na CI Linux. O caminho do FAQ nunca sofreu disso porque usa .trim().
+  const lines = body.split(/\r?\n/);
 
   const titleMatch = fm.match(/title:\s*"?([^"\n]+)"?/);
   const title = titleMatch ? titleMatch[1].trim() : '';
@@ -104,9 +156,9 @@ function detectHowToContent(body, fm) {
                       line.match(/^(\d+)\.\s+\*?\*?(.+?)\*?\*?$/);
     if (stepMatch) {
       if (currentStep) steps.push(currentStep);
-      currentStep = { name: stepMatch[2].replace(/[*_`]/g, '').trim(), text: '' };
+      currentStep = { name: stripMarkdown(stepMatch[2]), text: '' };
     } else if (currentStep && line.trim() && !line.startsWith('#')) {
-      currentStep.text += (currentStep.text ? ' ' : '') + line.trim().replace(/[*_`\[\]()!]/g, '');
+      currentStep.text += (currentStep.text ? ' ' : '') + stripMarkdown(line);
     } else if (currentStep && line.startsWith('#')) {
       steps.push(currentStep);
       currentStep = null;
@@ -117,24 +169,63 @@ function detectHowToContent(body, fm) {
   return steps.length >= 3 ? steps : null;
 }
 
+/** Monta os HowToStep do JSON-LD (fonte única dos dois caminhos que geram HowTo). */
+function buildHowToSteps(steps) {
+  return steps.slice(0, 8).map((s, i) => ({
+    "@type": "HowToStep",
+    "position": i + 1,
+    "name": s.name,
+    "text": truncateAtWord(s.text || s.name, 200)
+  }));
+}
+
+/**
+ * Grava o bloco SCHEMA_AUTO no arquivo.
+ *
+ * Quando o post JÁ tem bloco (regeneração via --force), substitui APENAS a
+ * substring do comentário: nenhum outro byte do markdown é reescrito, nem a
+ * quebra de linha que o precede — o diff fica confinado ao bloco. O replacer é
+ * uma função de propósito, para que `$&`/`$1` dentro do JSON não sejam
+ * interpretados como referências de substituição.
+ */
+function writeSchemaBlock(filePath, content, hadBlock, schema) {
+  const schemaStr = JSON.stringify(schema).replace(/-->/g, '--\\u003e');
+  const block = `<!-- SCHEMA_AUTO:${schemaStr} -->`;
+  const next = hadBlock
+    ? content.replace(SCHEMA_BLOCK_RE, () => block)
+    : content.trimEnd() + '\n' + block + '\n';
+  writeFileSync(filePath, next, 'utf-8');
+}
+
 function main() {
+  // --force: remove o bloco existente e regenera. Sem a flag o comportamento
+  // é exatamente o de antes (pular quem já tem bloco) — o workflow diário não
+  // muda de comportamento.
+  const force = process.argv.includes('--force');
+
   console.log('🏗️ Gerando schemas automáticos para posts...\n');
 
   const postFiles = readdirSync(POSTS_DIR).filter(f => f.endsWith('.md'));
   let faqCount = 0;
   let howToCount = 0;
   let skipped = 0;
+  let regenerated = 0;
+  let staleKept = 0;
 
   for (const file of postFiles) {
     const filePath = join(POSTS_DIR, file);
     const content = readFileSync(filePath, 'utf-8');
 
-    if (content.includes('<!-- SCHEMA_AUTO:')) {
+    const hadBlock = SCHEMA_BLOCK_RE.test(content);
+    if (hadBlock && !force) {
       skipped++;
       continue;
     }
+    if (hadBlock) regenerated++;
 
-    const { fm, body } = parseFrontmatter(content);
+    // O bloco antigo sai ANTES do parsing: senão o JSON do comentário entraria
+    // como prosa no último passo/resposta detectado.
+    const { fm, body } = parseFrontmatter(content.replace(SCHEMA_BLOCK_RE, ''));
 
     // Explicit "## Perguntas frequentes" section (posts novos, GEO): FAQPage
     // parseado dos H3+respostas; se o post também for um HowTo, os dois schemas
@@ -150,17 +241,10 @@ function main() {
           "@context": "https://schema.org",
           "@type": "HowTo",
           "name": titleMatch ? titleMatch[1].trim() : file.replace('.md', ''),
-          "step": steps.slice(0, 8).map((s, i) => ({
-            "@type": "HowToStep",
-            "position": i + 1,
-            "name": s.name,
-            "text": (s.text || s.name).substring(0, 200)
-          }))
+          "step": buildHowToSteps(steps)
         }, faqSchema];
       }
-      const schemaStr = JSON.stringify(schema).replace(/-->/g, '--\\u003e');
-      const schemaTag = `\n<!-- SCHEMA_AUTO:${schemaStr} -->`;
-      writeFileSync(filePath, content.trimEnd() + schemaTag + '\n', 'utf-8');
+      writeSchemaBlock(filePath, content, hadBlock, schema);
       faqCount++;
       console.log(`✅ FAQ (seção): ${file} (${sectionFaqs.length} perguntas${steps ? ' + HowTo' : ''})`);
       continue;
@@ -170,9 +254,7 @@ function main() {
     const faqs = detectFAQContent(body);
     if (faqs.length >= 2) {
       const schema = buildFaqSchema(faqs);
-      const schemaStr = JSON.stringify(schema).replace(/-->/g, '--\\u003e');
-      const schemaTag = `\n<!-- SCHEMA_AUTO:${schemaStr} -->`;
-      writeFileSync(filePath, content.trimEnd() + schemaTag + '\n', 'utf-8');
+      writeSchemaBlock(filePath, content, hadBlock, schema);
       faqCount++;
       console.log(`✅ FAQ: ${file} (${faqs.length} perguntas)`);
       continue;
@@ -186,23 +268,28 @@ function main() {
         "@context": "https://schema.org",
         "@type": "HowTo",
         "name": titleMatch ? titleMatch[1].trim() : file.replace('.md', ''),
-        "step": steps.slice(0, 8).map((s, i) => ({
-          "@type": "HowToStep",
-          "position": i + 1,
-          "name": s.name,
-          "text": (s.text || s.name).substring(0, 200)
-        }))
+        "step": buildHowToSteps(steps)
       };
-      const schemaStr = JSON.stringify(schema).replace(/-->/g, '--\\u003e');
-      const schemaTag = `\n<!-- SCHEMA_AUTO:${schemaStr} -->`;
-      writeFileSync(filePath, content.trimEnd() + schemaTag + '\n', 'utf-8');
+      writeSchemaBlock(filePath, content, hadBlock, schema);
       howToCount++;
       console.log(`✅ HowTo: ${file} (${steps.length} passos)`);
       continue;
     }
+
+    // Chegou aqui em --force = o post tinha bloco mas o corpo já não produz
+    // schema nenhum. O bloco antigo é PRESERVADO (remover apagaria rich results
+    // em produção), mas isso é estado misto: precisa aparecer.
+    if (hadBlock) {
+      regenerated--;
+      staleKept++;
+      console.warn(`⚠️  ${file}: bloco antigo mantido — o corpo atual não gera FAQ nem HowTo.`);
+    }
   }
 
-  console.log(`\n📊 Resultados: ${faqCount} FAQ + ${howToCount} HowTo = ${faqCount + howToCount} novos | ${skipped} já tinham schema`);
+  const modo = force
+    ? ` | modo --force: ${regenerated} regenerado(s), ${staleKept} bloco(s) antigo(s) mantido(s)`
+    : '';
+  console.log(`\n📊 Resultados: ${faqCount} FAQ + ${howToCount} HowTo = ${faqCount + howToCount} gravados | ${skipped} já tinham schema${modo}`);
 }
 
 main();
