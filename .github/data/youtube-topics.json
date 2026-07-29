@@ -90,6 +90,75 @@
       "source": "editorial",
       "glossaryRef": null,
       "status": "pending"
+    },
+    {
+      "id": "kw-perca-r-1-000-por-ano",
+      "theme": "Perca R$ 1.000 por ano?",
+      "angle": "Descubra como o CDI pode afetar seus investimentos",
+      "pillar": "investimento",
+      "source": "keyword-queue",
+      "glossaryRef": "cdi",
+      "status": "pending",
+      "sourceKeyword": "o que é CDI e como ele afeta seus investimentos"
+    },
+    {
+      "id": "kw-erro-ao-usar-amortizacao-price-r-200-mil-a-mais-no-financiam",
+      "theme": "Erro ao usar amortização Price: R$200 mil a mais no financiamento",
+      "angle": "Mostra em 45 s uma comparação rápida entre a tabela Price e a SAC, simulando um empréstimo de R$300 mil a 8% ao ano por 20 anos, revelando quanto a mais você paga usando Price e apontando o erro comum que muitas pessoas cometem",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": "amortizacao-price",
+      "status": "pending",
+      "sourceKeyword": "amortização price"
+    },
+    {
+      "id": "kw-divida-de-r-10-000-no-fies-veja-como-amortizar",
+      "theme": "Dívida de R$ 10.000 no FIES? Veja como amortizar!",
+      "angle": "Mostrarei um exemplo prático de como uma estudante conseguiu reduzir sua dívida do FIES em 2 anos",
+      "pillar": "mindset",
+      "source": "keyword-queue",
+      "glossaryRef": null,
+      "status": "pending",
+      "sourceKeyword": "amortização fies"
+    },
+    {
+      "id": "viral-xB7XJCP7LG8",
+      "theme": "5 erros financeiros",
+      "angle": "Como mudar seu mindset para evitar esses erros e alcançar a riqueza",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "xB7XJCP7LG8",
+        "title": "Nunca serás rico si ignoras estas 5 reglas del dinero 💰"
+      }
+    },
+    {
+      "id": "viral-jc7rFQLtrJg",
+      "theme": "Erros financeiros",
+      "angle": "Como evitar gastos desnecessários e criar um mindset de prosperidade",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "jc7rFQLtrJg",
+        "title": "pessoas sem o mínimo de educação financeira"
+      }
+    },
+    {
+      "id": "viral-NvOAZbXe04Q",
+      "theme": "5 filtros para enriquecer",
+      "angle": "Como aplicar mindset de milionário no dia a dia",
+      "pillar": "mindset",
+      "source": "viral",
+      "glossaryRef": null,
+      "status": "pending",
+      "viralRef": {
+        "videoId": "NvOAZbXe04Q",
+        "title": "Los 5 filtros para hacerte millonario #emprendimiento #millonario #negocios #educacionfinanciera"
+      }
     }
   ]
 }
