@@ -73,7 +73,7 @@ Al llegar el día de pago, dedica unos minutos a revisar el balance de la semana
 - ¿Quedó dinero sin usar en alguna categoría? Redistribúyelo a la siguiente semana o destínalo al ahorro.  
 - ¿Se excedió el límite en alguna área? Identifica la causa y ajusta el presupuesto para la próxima semana.  
 
-Este ciclo de revisión semanal crea un hábito que, con el tiempo, te brinda mayor seguridad financiera.
+Este ciclo de revisión semanal crea un hábito que, con el tiempo, te brinda mayor [seguridad financiera](/es/posts/es-7-mejores-apps-de-control-financiero-2026-guia-completa-para).
 
 ### 5. Aprovecha los “extras” sin romper el plan
 A veces aparecen gastos inesperados (una visita al médico, una reparación del coche). En FinMoovi puedes crear una categoría **“Imprevistos”** y asignarle un pequeño colchón semanal (por ejemplo, €30). Si el gasto supera ese monto, simplemente transfiere fondos desde la categoría **Ahorro / Emergencia**; así mantienes el equilibrio sin caer en deudas.
