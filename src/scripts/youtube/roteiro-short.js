@@ -260,10 +260,10 @@ Todo vídeo segue esta espinha FIXA, mas a FEATURE demonstrada é DERIVADA do te
 ⚠️ Os nomes em MAIÚSCULAS abaixo são a FUNÇÃO NARRATIVA de cada cena — NÃO são o valor do campo "role". O campo "role" aceita EXATAMENTE quatro valores: "hook", "beat", "cta", "outro". Escrever "beat-empatia", "beat-demo" ou qualquer outra variante REPROVA o roteiro inteiro. As três cenas do meio são TODAS role "beat".
 1. HOOK  → role "hook": a DOR VISÍVEL + um número real (a perda/o problema), já falando "${t.term}".
 2. BEAT-EMPATIA  → role "beat": valide a dor — POR QUE ela acontece (correria, pressa, cansaço, vergonha), SEM culpar ("não é preguiça sua, não").
-3. BEAT-VAZAMENTO  → role "beat": a consequência silenciosa que se acumula (é aqui que cabe o momento-história/metáfora animada da REGRA H).
+3. BEAT-VIRADA  → role "beat": a REVERSÃO de expectativa — o espectador acha que o problema é A e você mostra que é B ("não é o [A] que te quebra… é o [B] que ninguém soma"). É a consequência silenciosa que se acumula, dita como reviravolta e não como aviso. É aqui que o FIO CONDUTOR escala (estágio 2/3 da REGRA H).
 4. BEAT-DEMO  → role "beat": a FEATURE resolvendo EXATAMENTE a dor da cena 2, num shot "app" na tela mais coerente ("app" ∈ {${APP_SCREENS.join(', ')}}) — ex.: gasto por foto/voz → "smartcapture"; total do carrinho → "compras"; "pra onde foi o dinheiro?" → "fluxo"; simular juros → "calculadora"; saldo/alerta → "dashboard". A demo RESPONDE à fricção, não é enfeite.
 5. CTA (micro-ação)  → role "cta": um passo RÁPIDO de SEGUNDOS ("fotografa a próxima nota", "fala o gasto ali no corredor") — NUNCA "em 5 minutos" nem "reserve um tempo". Feature grátis, link na bio.
-6. OUTRO honesto  → role "outro": ver REGRA 6 (não nomeia o próximo tema).
+6. OUTRO honesto  → role "outro": ver REGRA 6 (não nomeia o próximo tema). É aqui que a PERGUNTA SEGURADA (REGRA I) é respondida e o FIO CONDUTOR é pago (estágio 3/3).
 Regra de ouro: se o vídeo não mostra um BOTÃO do app resolvendo a dor, não está pronto.`;
 }
 
@@ -350,10 +350,15 @@ REGRA G — TEMPO DE TELA DO APP (regra do dono 22/07 depois de assistir o víde
   · Cenas que carregam um shot "app" devem ter MENOS shots no total (2-3, não 5-6) — cada shot a mais depois do app rouba tempo de tela dele.
   · NUNCA ponha a âncora do app perto do fim da cena com mais shots vindo logo depois — isso faz o app entrar e sumir em 1-2s, o que o dono NÃO quer mais.
 
-REGRA H — MOMENTO-HISTÓRIA (o padrão-ouro do canal — regra do dono 22/07 depois de ver o vídeo v3.3: sobre a passagem "É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche", ele disse que "ficou perfeita — é isso que eu quero ver mais"): TODO Short precisa ter PELO MENOS 1 momento-história — uma MINI-HISTÓRIA FÍSICA contada na narração E animada de VERDADE, do início ao fim, em ≥2 shots "metaphor" CONECTADOS (a MESMA história continuando de um shot pro outro — nunca metáforas soltas/desconexas), com "sfx" batendo com a ação de cada etapa.
-  EXEMPLO CANÔNICO (o padrão a seguir, aprovado pelo dono): "É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche." → shot 1 metaphor "bola-neve" (bolinha rola e cresce descendo a ladeira, sfx "whoosh") + shot 2 metaphor "avalanche" (a mesma bola vira avalanche e derruba tudo, sfx "avalanche") — DUAS etapas da MESMA história física, uma continuando a outra.
-  Use esse molde: escolha (ou, se precisar, invente e represente com um "icon" coerente) uma metáfora física com começo-meio-fim que narre o PORQUÊ/COMO do assunto da cena, e anime-a de verdade em ≥2 shots seguidos que dão continuidade um ao outro.
-  ⚠️ A história é SEMPRE ORIGINAL e específica do tema — o DISPOSITIVO (contar uma mini-história física) se repete todo vídeo, mas o EXEMPLO/história NUNCA. A metáfora escolhida deve NASCER do assunto (ex.: ações → montanha-russa; taxas/tarifas → ralo; crescimento rápido → foguete; longo prazo → semente; hype que estoura → bolha), jamais a mesma metáfora nem o mesmo exemplo dos vídeos anteriores (ver ANTI-REPETIÇÃO).
+REGRA H — FIO CONDUTOR (o padrão-ouro do canal, agora como ESPINHA do vídeo inteiro): escolha UMA única metáfora física do catálogo que NASÇA do tema deste vídeo e faça dela o FIO CONDUTOR — ela reaparece em 3 ESTÁGIOS QUE CRESCEM, em cenas DIFERENTES, e o último estágio FECHA o vídeo. Não é enfeite pontual: é o objeto que o espectador segura do primeiro ao último segundo.
+  · Estágio 1/3 (cena "hook" ou 1º beat): o fio aparece PEQUENO e inofensivo.
+  · Estágio 2/3 (BEAT-VIRADA): o fio ESCALA — é aqui que a narração conta a mini-história física do PORQUÊ/COMO. EXEMPLO CANÔNICO desse momento, aprovado pelo dono (é o PADRÃO de qualidade, não um texto a copiar): "É dar tempo pro dinheiro se multiplicar sozinho. Que nem bola de neve descendo a ladeira: começa pequena… e vira uma avalanche."
+  · Estágio 3/3 (cena "outro"): o fio é PAGO — a consequência inteira numa imagem só, fechando o que o estágio 1 abriu.
+  Os 3 estágios são shots "metaphor" com a MESMA "metaphor" do catálogo (repetir a mesma metáfora DENTRO deste vídeo é obrigatório e correto); o que muda é a narração e o campo "note", onde você ESCREVE o estágio: "estágio 2/3 — …". Cada estágio leva um "sfx" DIFERENTE, batendo com a ação daquela etapa.
+  EXEMPLO SÓ DE ESTRUTURA (é o formato — o tema, os valores e a metáfora abaixo são de outro vídeo e não podem ser reusados): ralo → pinga uma moeda (1/3) → o fio de água vira jorro enquanto o mês passa (2/3) → o ralo engoliu um salário inteiro no ano (3/3).
+  ⚠️ A história é SEMPRE ORIGINAL e específica do tema — o DISPOSITIVO (o fio condutor) se repete todo vídeo, mas a metáfora e a história NUNCA. A metáfora escolhida deve NASCER do assunto e jamais pode ser nenhuma das usadas nos vídeos recentes (ver ANTI-REPETIÇÃO). A "anchor" é SEMPRE uma palavra FALADA de verdade, nunca o nome do catálogo.
+
+REGRA I — A PERGUNTA SEGURADA (é ela que prende o dedo até o fim): o vídeo tem UMA pergunta que ele se RECUSA a responder. Na cena "hook", um dos shots é "visual.type":"statement" com essa pergunta CURTÍSSIMA em MAIÚSCULAS na tela (≤40 chars) — ela nasce do tema deste vídeo. A narração do hook e dos beats NUNCA a responde, nem de raspão. A resposta (ou a virada dela) chega SÓ na cena "outro", junto do fechamento da REGRA 6. Varie a construção a cada vídeo — pergunta de destino ("PRA ONDE FOI?"), de culpa ("QUEM PAGA A CONTA?") e de quantidade ("QUANTO CUSTA ESPERAR?") são três FORMATOS diferentes, não frases a copiar.
 
 ════════ UNIDADE NA PRIMEIRA MENÇÃO (regra do dono) ════════
 Toda unidade (anos, %, R$, meses…) é FALADA por extenso na PRIMEIRA menção; nas menções seguintes, se o contexto já deixou claro do que se trata, pode falar só o número — sem repetir a unidade.
@@ -524,6 +529,33 @@ export function runHardAntiRepetitionChecks(script, recentContext) {
   for (const [where, text] of screenTexts) {
     if (hasSpelledOutNumber(text)) {
       errors.push(`${where}: números na tela devem ser ALGARISMOS (R$ 50), nunca por extenso ("${text}")`);
+    }
+  }
+
+  // (d) SENTINELA DOS EXEMPLOS DA REGRA H / REGRA I. O prompt PRECISA mostrar um
+  // exemplo para o modelo entender o formato do fio condutor (o "ralo" em 3
+  // estágios) e os formatos da pergunta segurada — e exemplo dentro de prompt é
+  // matéria-prima de cópia literal (mesma família da sentinela (a0) acima).
+  // O estrago aqui é PIOR que um vídeo ruim: a frase copiada entra no
+  // youtube-published.json → recentContext → vira o "vídeo anterior" que os
+  // PRÓXIMOS tentam não repetir. Uma cópia contamina a sequência, não o dia.
+  // Só entram trechos ESPECÍFICOS do exemplo: "ralo" e "jorro" ficam de FORA de
+  // propósito — "ralo" é metáfora legítima do catálogo e "jorro" é palavra comum;
+  // reprovar roteiro bom custa 4 tentativas e mata o vídeo do dia, o que é pior
+  // do que deixar passar uma cópia que o dono ainda revisa antes de publicar.
+  const flat = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const EXEMPLOS_NARRACAO = ['pinga uma moeda', 'engoliu um salario'];
+  const EXEMPLOS_TELA = ['pra onde foi', 'quem paga a conta', 'quanto custa esperar'];
+  const narracaoToda = flat(scenes.map((s) => (s && s.narration) || '').join(' '));
+  const copiadoNaNarracao = EXEMPLOS_NARRACAO.find((f) => narracaoToda.includes(f));
+  if (copiadoNaNarracao) {
+    errors.push(`a narração copiou o exemplo do prompt ("${copiadoNaNarracao}") — o ralo lá é só FORMATO; invente a história deste tema`);
+  }
+  for (const [where, text] of screenTexts) {
+    const copiadoNaTela = EXEMPLOS_TELA.find((p) => flat(text).includes(p));
+    if (copiadoNaTela) {
+      errors.push(`${where}: copiou uma pergunta-exemplo do prompt ("${copiadoNaTela}") — a pergunta segurada tem de nascer do tema deste vídeo`);
+      break; // 1 aviso basta — o bloco corretivo tem teto de 1200 chars
     }
   }
 
