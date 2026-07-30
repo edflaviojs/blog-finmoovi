@@ -1,0 +1,161 @@
+{
+  "slug": "viral-xB7XJCP7LG8",
+  "term": "5 erros financeiros",
+  "category": "mindset",
+  "keyword": "5 erros financeiros",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "afirmacao",
+    "frase": "*R$ 800* que você perde todo mês podem virar *R$ 12.000* se você parar com esses 5 erros financeiros.",
+    "counter": {
+      "from": 800,
+      "to": 12000,
+      "prefix": "R$"
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Ninguém te conta que 5 erros financeiros tiram R$ 800 do seu bolso todo mês.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "erros",
+          "visual": {
+            "type": "statement",
+            "text": "5 erros financeiros",
+            "note": "impacto inicial"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "800",
+          "visual": {
+            "type": "number",
+            "text": "R$ 800",
+            "note": "valor perdido"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "É fácil cair nessa, né? Você vive na correria, cansado, e acaba comprando sem pensar.",
+      "durationSec": 9,
+      "shots": [
+        {
+          "anchor": "correria",
+          "visual": {
+            "type": "icon",
+            "icon": "clock",
+            "note": "tempo corrido"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "cansado",
+          "visual": {
+            "type": "icon",
+            "icon": "warning",
+            "note": "cansaço"
+          },
+          "sfx": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Esse desperdício vira um foguete que decola rápido, e de repente estoura como uma bolha, levando seu dinheiro pro ralo.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "decola",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "foguete",
+            "note": "lançamento"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "estoura",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bolha",
+            "note": "estouro"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "ralo",
+          "visual": {
+            "type": "icon",
+            "icon": "chart-down",
+            "note": "dinheiro escorrendo"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Com o FinMoovi, abre o fluxo de caixa, vê exatamente pra onde foi cada centavo, e corta o gasto antes que vire problema.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "fluxo",
+          "visual": {
+            "type": "app",
+            "app": "fluxo",
+            "note": "visão do fluxo"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Então, fala o gasto aí no corredor e deixa o app calcular tudo pra você, rapidinho.",
+      "durationSec": 8,
+      "shots": [
+        {
+          "anchor": "calcular",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "simulação rápida"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Me conta nos comentários: qual foi o maior erro de gasto esse mês?",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "erro",
+          "visual": {
+            "type": "icon",
+            "icon": "question",
+            "note": "interação"
+          },
+          "sfx": "sparkle"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Fala o gasto aí no corredor e deixa o app calcular tudo pra você",
+    "target": "app"
+  },
+  "totalDurationSec": 51
+}
