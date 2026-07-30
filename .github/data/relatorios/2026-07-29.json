@@ -1,0 +1,457 @@
+{
+  "date": "2026-07-29",
+  "counts": {
+    "content": 9,
+    "videos": 1,
+    "pins": 3,
+    "failures": 3,
+    "runs": 30
+  },
+  "failures": [
+    {
+      "name": "Gerar Post Soluções FinMoovi",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30454217864",
+      "timeLisbon": "14:02"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30457204957",
+      "timeLisbon": "14:41"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30471482431",
+      "timeLisbon": "17:36"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-fixed-and-variable-expense",
+      "url": "https://blog.finmoovi.com/en/glossario/en-fixed-and-variable-expense",
+      "title": "fixed and variable expense - Financial Glossary",
+      "description": "What fixed and variable expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-gasto-fijo-y-variable",
+      "url": "https://blog.finmoovi.com/es/glossario/es-gasto-fijo-y-variable",
+      "title": "gasto fijo y variable - Glosario Financiero",
+      "description": "Qué es gasto fijo y variable y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "gasto-fixo-e-variavel",
+      "url": "https://blog.finmoovi.com/glossario/gasto-fixo-e-variavel",
+      "title": "gasto fixo e variavel - Glossário Financeiro",
+      "description": "O que é gasto fixo e variavel e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "entenda-a-amortizacao-price-e-otimize-suas-financas-em-2026",
+      "url": "https://blog.finmoovi.com/posts/entenda-a-amortizacao-price-e-otimize-suas-financas-em-2026",
+      "title": "Entenda a amortização PRICE e otimize suas finanças em 2026",
+      "description": "Descubra como a amortização PRICE pode transformar o pagamento de empréstimos, com dicas práticas e como usar o FinMoovi para controlar tudo em poucos minutos.",
+      "category": "dicas",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos",
+      "url": "https://blog.finmoovi.com/posts/entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos",
+      "title": "Entenda a taxa CDI e seu impacto nos seus investimentos",
+      "description": "Descubra o que é o CDI, como ele funciona e de que forma afeta a rentabilidade dos seus investimentos de renda fixa. Guia prático e direto.",
+      "category": "investimentos",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-entiende-la-amortizacion-price-y-optimiza-tus-finanzas-en-20",
+      "url": "https://blog.finmoovi.com/es/posts/es-entiende-la-amortizacion-price-y-optimiza-tus-finanzas-en-20",
+      "title": "Entiende la amortización PRICE y optimiza tus finanzas en 2026",
+      "description": "Descubre cómo la amortización PRICE puede transformar el pago de préstamos, con consejos prácticos y cómo usar FinMoovi para controlarlo en minutos.",
+      "category": "dicas",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus-inversion",
+      "url": "https://blog.finmoovi.com/es/posts/es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus-inversion",
+      "title": "Entiende la tasa interbancaria y su impacto en tus inversiones",
+      "description": "Descubre qué es la tasa interbancaria, cómo funciona y cómo afecta la rentabilidad de tus inversiones de renta fija. Guía práctica y directa.",
+      "category": "investimentos",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-understand-price-amortization-and-optimize-your-finances-in-",
+      "url": "https://blog.finmoovi.com/en/posts/en-understand-price-amortization-and-optimize-your-finances-in-",
+      "title": "Understand PRICE Amortization and Optimize Your Finances in 2026",
+      "description": "Learn how PRICE amortization can simplify loan payments and use FinMoovi to track them in minutes.",
+      "category": "dicas",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-understanding-the-interbank-rate-and-its-impact-on-your-inve",
+      "url": "https://blog.finmoovi.com/en/posts/en-understanding-the-interbank-rate-and-its-impact-on-your-inve",
+      "title": "Understanding the Interbank Rate and Its Impact on Your Investments",
+      "description": "Learn what the interbank rate is, how it works, and how it affects the returns of your fixed‑income investments. A practical, straight‑to‑the‑point guide.",
+      "category": "investimentos",
+      "publishedAt": "2026-07-29"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "nunca-faca-isso-dinheiro",
+      "videoId": "u5YB-tUDhLo",
+      "uploadedAt": "2026-07-29T09:27:33.428Z",
+      "title": "5 coisas que NUNCA faço com meu dinheiro",
+      "timeLisbon": "10:27"
+    }
+  ],
+  "pins": [
+    {
+      "slug": "entenda-a-amortizacao-price-e-otimize-suas-financas-em-2026",
+      "title": "Entenda a amortização PRICE e otimize suas finanças em 2026",
+      "pinId": "1105281933577148362",
+      "publishedAt": "2026-07-29T16:15:43.853Z",
+      "postUrl": "https://blog.finmoovi.com/posts/entenda-a-amortizacao-price-e-otimize-suas-financas-em-2026",
+      "timeLisbon": "17:15"
+    },
+    {
+      "slug": "entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos",
+      "title": "Entenda a taxa CDI e seu impacto nos seus investimentos",
+      "pinId": "1105281933577148380",
+      "publishedAt": "2026-07-29T16:15:54.978Z",
+      "postUrl": "https://blog.finmoovi.com/posts/entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos",
+      "timeLisbon": "17:15"
+    },
+    {
+      "slug": "como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz",
+      "title": "Como reduzir o peso do seu financiamento em 2026 com amortização inteligente",
+      "pinId": "1105281933577148384",
+      "publishedAt": "2026-07-29T16:15:58.573Z",
+      "postUrl": "https://blog.finmoovi.com/posts/como-reduzir-o-peso-do-seu-financiamento-em-2026-com-amortiz",
+      "timeLisbon": "17:15"
+    }
+  ],
+  "runsSummary": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "02:50"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:38"
+    },
+    {
+      "name": "YouTube — Converter Keywords em Temas (semanal)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:40"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:40"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "09:10"
+    },
+    {
+      "name": "Brand Mention Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "09:51"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:20"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:35"
+    },
+    {
+      "name": "GSC - Impulso Striking Distance",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:42"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:24"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:26"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:02"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:13"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 3,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:14"
+    },
+    {
+      "name": "Post Investimentos Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:26"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:52"
+    },
+    {
+      "name": "Gerar Post Soluções FinMoovi",
+      "count": 1,
+      "ok": 0,
+      "fail": 1,
+      "firstTimeLisbon": "14:02"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "count": 2,
+      "ok": 0,
+      "fail": 2,
+      "firstTimeLisbon": "14:41"
+    },
+    {
+      "name": "Gerar Conteúdo Social",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "14:41"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:23"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:52"
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:15"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:10"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "10:25"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "15:23"
+    }
+  ],
+  "pendencias": [
+    "Auditoria YouTube API: responder follow-up do Google com link do canal (prazo ~03/08) — depois aguardar aprovação p/ trocar uploads private→public",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Glossário Financeiro",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Refresh de Conteudo (decay)",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "times": [
+        "09:30"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "10:00",
+        "16:00",
+        "22:00"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Post BOFU (Ferramentas)",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "times": [
+        "15:00"
+      ]
+    }
+  ]
+}
