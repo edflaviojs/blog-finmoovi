@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Introduction to [Tesouro Direto](/en/glossario/en-tesouro-direto)
-The Tesouro Direto is a program by the Brazilian government that allows citizens to invest in public securities, such as LTN (Letras do Tesouro Nacional) and NTN (Notas do Tesouro Nacional). These securities represent loans made to the government, which pays interest to the investor. It's a way to invest in [fixed income](/en/glossario/en-fixed-income), with predefined returns and low risk.
+The Tesouro Direto is a program by the Brazilian government that allows citizens to invest in public securities, such as LTN (Letras do Tesouro Nacional) and NTN (Notas do Tesouro Nacional). These securities represent loans made to the government, which pays [interest](/en/glossario/en-interest) to the investor. It's a way to invest in [fixed income](/en/glossario/en-fixed-income), with predefined returns and low risk.
 
 For example, if you invest R$1,000 in an LTN title with a 1-year term and 5% annual interest, you'll receive R$1,050 after maturity. This means a return of R$50, or 5% of the invested value.
 

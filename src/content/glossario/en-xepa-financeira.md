@@ -31,7 +31,7 @@ A financial xepa works like a parallel spending system, where the person allocat
 ![What it is](/images/glossario/xepa-financeira-inline-1.webp)
 
 ## Advantages
-A financial xepa can have some benefits, such as allowing people to enjoy experiences and products that would not be available if they followed a very rigid budget. In addition, a financial xepa can be a way to reward oneself for achieving goals or objectives. **Practical tip:** it is important to set limits for the financial xepa, to prevent spending from getting out of control. For example, a person may decide to spend at most R$ 500 per month on non‑essential expenses.  
+A financial xepa can have some [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026), such as allowing people to enjoy experiences and products that would not be available if they followed a very rigid budget. In addition, a financial xepa can be a way to reward oneself for achieving goals or objectives. **Practical tip:** it is important to set limits for the financial xepa, to prevent spending from getting out of control. For example, a person may decide to spend at most R$ 500 per month on non‑essential expenses.  
 * Allows enjoying experiences and products  
 * Can be a way to reward oneself  
 * Can help reduce stress and anxiety  

@@ -33,7 +33,7 @@ A hedge basically works like a contract between two investors, where one of them
 If you have a salary of $1,000 per month and invest 10% of it in stocks, you have [$100](/en/posts/en-building-a-diversified-portfolio-with-r-500) invested. If you think the value of those stocks could drop 10% in the coming months, you can buy a hedge to protect your investment. If the stock value drops 10%, you would lose $10, but with the hedge, you can minimize that loss.
 
 ## Advantages
-Hedges have several advantages for investors. They allow investors to protect their investments against potential losses, which can be especially useful in volatile markets. In addition, hedges can be used to speculate on market movements, which can be a way to make money if you are correct. **Practical tip:** It’s important to remember that hedges also have costs, so you should assess whether the cost of the hedge is reasonable relative to the risk you are trying to mitigate.
+Hedges have several advantages for investors. They allow investors to protect their investments against potential losses, which can be especially useful in volatile markets. In addition, hedges can be used to speculate on market movements, which can be a way to make money if you are correct. **Practical tip:** It’s important to remember that hedges also have [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide), so you should assess whether the cost of the hedge is reasonable relative to the risk you are trying to mitigate.
 
 * Reduce the risk of losses
 * Protect wealth

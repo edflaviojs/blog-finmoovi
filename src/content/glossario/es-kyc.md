@@ -67,5 +67,5 @@ Para empezar a utilizar el proceso KYC, es importante entender qué información
 * Recopilar y preparar la documentación necesaria para el proceso de verificación
 
 ## Empieza hoy
-No espere más para empezar a utilizar el proceso KYC y proteger su identidad y finanzas. **Consejo práctico:** Comience por investigar y comparar diferentes instituciones financieras y sus procesos KYC, y luego recopile y prepare la documentación necesaria para el proceso de verificación. ¡Empiece hoy a proteger su futuro financiero!
+No espere más para empezar a utilizar el proceso KYC y proteger su identidad y finanzas. **Consejo práctico:** Comience por investigar y comparar diferentes instituciones financieras y sus procesos KYC, y luego recopile y prepare la documentación necesaria para el proceso de verificación. ¡Empiece hoy a proteger su futuro [financiero](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere)!
 

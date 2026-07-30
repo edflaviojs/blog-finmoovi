@@ -53,7 +53,7 @@ Using Yahoo Finance brings practical benefits that go beyond “seeing the sto
 
 Even though it’s a practical tool, Yahoo Finance has limitations that can create pitfalls if you’re not careful.  
 
-- **Delayed data:** in some situations (holidays, high volatility) quotes may be a few minutes delayed, which can affect quick buy or sell decisions  
+- **Delayed data:** in some situations (holidays, high [volatility](/en/glossario/en-volatility)) quotes may be a few minutes delayed, which can affect quick buy or sell decisions  
 - **Advertising:** the site displays ads that can distract or lead to offers of financial products without prior evaluation  
 - **Internet dependency:** if the connection drops, you lose immediate access to information, which can be critical in crisis moments  
 - **Incomplete information:** expert analyses are general; for specific decisions, you may need to seek additional sources or professional advice  

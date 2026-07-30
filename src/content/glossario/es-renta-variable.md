@@ -35,7 +35,7 @@ Renta Variable es todo lo que no tiene retorno garantizado. El precio sube y baj
 ## Riesgos
 
 - Pérdida de capital (tu inversión puede valer menos)  
-- Volatilidad (oscilaciones diarias)  
+- [Volatilidad](/es/glossario/es-volatilidad) (oscilaciones diarias)  
 - Riesgo de empresa (quiebra)  
 - Riesgo de mercado (crisis económicas)  
 

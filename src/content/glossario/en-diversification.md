@@ -23,7 +23,7 @@ Diversification is a financial strategy that aims to reduce the risk of loss of 
 
 Lists of assets for diversification include:
 * Company stocks
-* Debt securities
+* [Debt](/en/glossario/en-debt) securities
 * Real estate
 * [Investment](/en/glossario/en-investment-fund) funds
 * Other assets, such as commodities or cryptocurrencies

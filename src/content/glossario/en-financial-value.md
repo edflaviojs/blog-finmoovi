@@ -50,7 +50,7 @@ However, the value of an asset can also involve risks, especially if you don’t
 * **Loss risk:** if the asset’s value drops, you can lose money
 * **Inflation risk:** if inflation is high, the asset’s value may decline
 * **[Liquidity](/en/glossario/en-liquidity) risk:** if you can’t sell the asset quickly, you may lose money
-* **Credit risk:** if the company or issuer of the asset can’t meet its obligations, you can lose money
+* **[Credit](/en/glossario/en-credit) risk:** if the company or issuer of the asset can’t meet its obligations, you can lose money
 
 **Practical tip:** It’s important to understand the risks involved and take steps to minimize them, such as diversifying your portfolio and doing thorough research before investing.
 

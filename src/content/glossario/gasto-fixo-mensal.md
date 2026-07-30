@@ -19,7 +19,7 @@ seo:
 
 ## O que são gastos fixos mensais
 
-Um gasto fixo mensal é aquele que aparece todo mês, quase que na mesma data, e cujo valor não varia muito. Pense no aluguel, na conta de internet, no plano de celular ou na assinatura de um serviço de streaming. Mesmo que você não compre nada naquele dia, esses custos continuam “no bolso”, tirando parte da sua renda antes mesmo de você decidir onde gastar o que sobra.
+Um [gasto fixo](/glossario/gasto-fixo) mensal é aquele que aparece todo mês, quase que na mesma data, e cujo valor não varia muito. Pense no aluguel, na conta de internet, no plano de celular ou na assinatura de um serviço de streaming. Mesmo que você não compre nada naquele dia, esses [custos](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) continuam “no bolso”, tirando parte da sua renda antes mesmo de você decidir onde gastar o que sobra.
 
 ![O que são gastos fixos mensais](/images/glossario/gasto-fixo-mensal-inline-1.webp)
 
@@ -44,10 +44,10 @@ O primeiro passo para ganhar controle é listar tudo que sai todo mês. Não pre
 - Internet, TV a cabo ou streaming  
 - Plano de celular e telefone fixo  
 - Seguros (veículo, residência, saúde)  
-- Assinaturas de aplicativos ou clubes  
+- Assinaturas de [aplicativos](/posts/5-alternativas-ao-mobills-em-2026) ou clubes  
 - Mensalidades de academia ou cursos  
 
-Depois de listar, agrupe por categoria e anote o valor aproximado. Use uma planilha simples ou, ainda melhor, um app que capture a nota fiscal com foto ou voz e já categorize automaticamente. Assim, você evita o trabalho manual de digitar cada centavo.
+Depois de listar, agrupe por categoria e anote o valor aproximado. Use uma [planilha](/posts/migrando-da-planilha-para-um-app-financeiro) simples ou, ainda melhor, um app que capture a nota fiscal com foto ou voz e já categorize automaticamente. Assim, você evita o trabalho manual de digitar cada centavo.
 
 ## Estratégias simples para reduzir o peso
 
@@ -68,8 +68,8 @@ A tecnologia pode transformar esse processo cansativo em algo quase automático.
 - **Categorização automática** – usando inteligência artificial, ele coloca cada despesa na categoria correta (moradia, serviços, etc.).  
 - **Multimoeda** – suporte a diferentes moedas (BRL, USD, EUR), ideal para quem tem renda ou despesas em mais de um país.  
 - **Fluxo de caixa e relatórios** – visualize quanto já está comprometido e quanto ainda pode gastar, com gráficos simples.  
-- **Planejamento mensal e metas** – defina um teto para gastos fixos e acompanhe o progresso ao longo do mês.  
-- **Cartões de crédito e fatura** – sincronize suas faturas; o app avisa quando o limite está próximo de ser atingido.  
+- **[Planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) mensal e metas** – defina um teto para gastos fixos e acompanhe o progresso ao longo do mês.  
+- **Cartões de [crédito](/glossario/credito) e fatura** – sincronize suas faturas; o app avisa quando o limite está próximo de ser atingido.  
 - **Modo compras** – crie listas de supermercado; o total aparece em tempo real, ajudando a não extrapolar o orçamento.  
 - **Lembretes e alertas de saldo** – receba notificações quando uma conta está prestes a vencer ou quando o saldo está baixo.  
 - **Offline / PWA / sincronização** – mesmo sem internet, você ainda pode registrar despesas; tudo se atualiza quando conectar novamente.  

@@ -40,7 +40,7 @@ Investing in the stock exchange can be a great way to grow your wealth over time
 * [Diversificação](/en/glossario/en-diversification): investing in the stock exchange allows you to diversify your portfolio, reducing the risk of loss
 * [Liquidity](/en/glossario/en-liquidity): stocks can be bought and sold quickly, allowing you to access your money when needed
 
-**Practical tip:** It’s important to diversify your portfolio by investing in different types of stocks and sectors. For example, if you invest $200 per month in technology company stocks, it’s a good idea to also invest in stocks of companies in other sectors, such as health or finance.
+**Practical tip:** It’s important to diversify your portfolio by investing in different types of stocks and sectors. For example, if you invest $200 per month in technology company stocks, it’s a good idea to also invest in stocks of companies in other sectors, such as health or [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff).
 
 ![Advantages](/images/glossario/bolsa-de-valores-inline-3.webp)
 

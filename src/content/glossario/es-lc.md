@@ -34,7 +34,7 @@ La LC funciona de la siguiente manera: el comprador solicita a su banco que emit
 * Ventajas de la LC para el vendedor:
  + Garantiza el pago una vez que las condiciones de la transacción son cumplidas
  + Reduce el riesgo de impago o incumplimiento del comprador
- + Permite al vendedor ofrecer crédito al comprador sin asumir el riesgo de impago
+ + Permite al vendedor ofrecer [crédito](/es/glossario/es-credito) al comprador sin asumir el riesgo de impago
 
 ## Ventajas
 Las ventajas de la LC son numerosas. Para el comprador, la LC ofrece una forma segura de pagar por bienes o servicios sin tener que pagar de inmediato. Por ejemplo, si un empresario brasileño quiere importar mercancías de China, puede solicitar una LC para garantizar el pago de R$ 50.000,00 a los proveedores chinos. De esta manera, el empresario puede recibir las mercancías y venderlas antes de pagar el [valor](/es/glossario/es-valor-financiero) total. Para el vendedor, la LC ofrece una forma segura de recibir el pago por los bienes o servicios vendidos. Por ejemplo, si un productor de soja de Mato Grosso quiere vender su producción a un comprador de São Paulo, puede solicitar una LC para garantizar el pago de R$ 100.000,00.

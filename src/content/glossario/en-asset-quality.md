@@ -20,7 +20,7 @@ seo:
 
 ## What it is
 
-Quality, in the financial context, is the idea of prioritizing **[real value](/en/glossario/en-financial-value)** over quantity. Instead of buying the greatest number of things, you look for products, services or investments that truly deliver what they promise, last longer and bring sustainable benefits. This stance avoids unnecessary spending and helps build a more solid wealth over time.  
+Quality, in the financial context, is the idea of prioritizing **[real value](/en/glossario/en-financial-value)** over quantity. Instead of buying the greatest number of things, you look for products, services or investments that truly deliver what they promise, last longer and bring sustainable [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026). This stance avoids unnecessary spending and helps build a more solid wealth over time.  
 
 ![What it is](/images/glossario/qualidade-inline-1.webp)
 

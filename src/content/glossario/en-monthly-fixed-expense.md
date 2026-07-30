@@ -27,7 +27,7 @@ You’ve just opened the app to see how much you can spend on a weekend getaway,
 
 ## What a monthly fixed expense really means
 
-A monthly fixed expense (or “gasto fixo mensal”) is any cost that recurs with the same amount and frequency, typically once a month. Unlike variable costs—like a spontaneous dinner out or a fuel refill—fixed expenses don’t change much from one month to the next. Because they’re predictable, they’re the backbone of your cash flow, but they also lock up a large portion of your money, leaving less room for savings or discretionary spending.
+A monthly [fixed expense](/en/glossario/en-fixed-expense) (or “gasto fixo mensal”) is any cost that recurs with the same amount and frequency, typically once a month. Unlike variable [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide)—like a spontaneous dinner out or a fuel refill—fixed expenses don’t change much from one month to the next. Because they’re predictable, they’re the backbone of your cash flow, but they also lock up a large portion of your money, leaving less room for [savings](/en/glossario/en-savings) or discretionary spending.
 
 ## Why tracking them changes the game
 

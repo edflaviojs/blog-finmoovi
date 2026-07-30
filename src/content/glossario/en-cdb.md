@@ -21,7 +21,7 @@ seo:
 ## What it is
 The certificates of deposit (CDs) are a type of investment offered by banks and financial institutions. It is basically a loan you make to the bank, and in return, you receive a return on the invested [value](/en/glossario/en-financial-value). CDs are a popular option for those looking to invest their money with a moderate level of risk and reasonable profitability. Imagine you have a salary of $1,000 per month and can save $200 every month. You can invest that amount in a CD and receive a return according to the profitability offered by the bank.
 
-* The CD can have daily liquidity, semiannual or annual terms, which means you can redeem your investment after a certain period.  
+* The CD can have daily [liquidity](/en/glossario/en-liquidity), semiannual or annual terms, which means you can redeem your investment after a certain period.  
 * The return of the CD is calculated based on the [interest rate](/en/glossario/en-financial-fee) offered by the bank, which can vary according to the investment term and the financial institution.  
 * The CD is an investment option that can be made by individuals or legal entities.
 

@@ -26,7 +26,7 @@ Governance is a term that may seem complicated, but it's simpler than you think.
 - Implementation of controls to avoid excessive spending
 - Constant monitoring of finances  
 
-Governance is not limited to large companies; it is an essential practice for anyone who wants to have control over their finances. By adopting good governance practices, you can avoid financial problems, such as unnecessary debt or the lack of [savings](/en/glossario/en-savings) for the future.
+Governance is not limited to large companies; it is an essential practice for anyone who wants to have control over their finances. By adopting good governance practices, you can avoid financial problems, such as unnecessary [debt](/en/glossario/en-debt) or the lack of [savings](/en/glossario/en-savings) for the future.
 
 ![What it is](/images/glossario/governanca-inline-1.webp)
 

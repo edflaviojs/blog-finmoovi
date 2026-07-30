@@ -34,7 +34,7 @@ Muchas parejas enfrentan el desafío de lidiar con deudas, sea en tarjetas de [c
 Además de gestionar gastos y deudas, las parejas también deben considerar inversiones y ahorro. Esto puede incluir la creación de una reserva de emergencia, inversiones en acciones o fondos de inversión, o incluso la compra de un inmueble. **Consejo práctico:** considera invertir en un [Tesouro Direto](https://www.tesourodireto.com.br), que ofrece una forma segura y rentable de invertir tu dinero. Además, es importante estar al tanto de las tendencias económicas y financieras actuales, lo que puede hacerse siguiendo sitios como el del [Banco Central del Brasil](https://www.bcb.gov.br) o el [IBGE](https://www.ibge.gov.br).
 
 ## Educación Financiera
-La educación financiera es fundamental para que las parejas puedan tomar decisiones informadas sobre sus finanzas. Esto puede incluir la lectura de libros sobre finanzas personales, la participación en cursos o talleres, o incluso la consultoría con un planificador financiero. Una buena fuente de información es el sitio web de [Investopedia](https://www.investopedia.com), que ofrece artículos, vídeos y cursos sobre una amplia gama de temas financieros.
+La [educación financiera](/es/glossario/es-educacion-financiera) es fundamental para que las parejas puedan tomar decisiones informadas sobre sus finanzas. Esto puede incluir la lectura de libros sobre finanzas personales, la participación en cursos o talleres, o incluso la consultoría con un planificador financiero. Una buena fuente de información es el sitio web de [Investopedia](https://www.investopedia.com), que ofrece artículos, vídeos y cursos sobre una amplia gama de temas financieros.
 
 ![Inversiones y Ahorro](/images/posts/planejamento-financeiro-para-casais-4.webp)
 

@@ -36,7 +36,7 @@ For example, if you invest $1,000 in an equity fund and the fund has a total val
 ## Advantages
 Funds offer several advantages for investors. One of the main advantages is [diversification](/en/glossario/en-diversification). When you invest in a fund, you are investing in a variety of assets, which can reduce the risk of loss. In addition, funds are managed by experienced professionals who have access to information and resources you may not have.
 
-Another advantage is liquidity. Many funds allow you to redeem your investment at any time, which can be useful if you need cash quickly. **Practical tip:** it’s important to understand the fund’s redemption rules before investing, to avoid unpleasant surprises.
+Another advantage is [liquidity](/en/glossario/en-liquidity). Many funds allow you to redeem your investment at any time, which can be useful if you need cash quickly. **Practical tip:** it’s important to understand the fund’s redemption rules before investing, to avoid unpleasant surprises.
 
 ![Advantages](/images/glossario/fundos-inline-3.webp)
 

@@ -68,7 +68,7 @@ Imagine three friends who earn different salaries and decide to use Nubank to or
 - **Bruno**, with a salary of $1,100, opens the digital account and schedules automatic debit for the electricity bill. He also makes a monthly deposit of $200 in Nubank Invest, earning about 8 % per year in certificates of deposit (CDs), which generates roughly $16 of interest at the end of the first year.  
 - **Carla**, who receives $1,560, requests a personal loan of $1,000 to remodel her house. The contract has a rate of 1.9 % per month, and she pays it in 12 installments of $93, which fits the budget without needing to resort to higher‑interest credit cards.  
 
-**Practical tip:** always pay the Nubank credit‑card bill before the due date to avoid interest and keep your credit score high.  
+**Practical tip:** always pay the Nubank credit‑card bill before the due date to avoid interest and keep your [credit score](/en/glossario/en-credit-score) high.  
 
 **Practical tip:** use the “Goal” feature of the app to set aside money for trips or emergencies; the balance is locked and automatically earns interest.  
 

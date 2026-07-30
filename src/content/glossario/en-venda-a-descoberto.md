@@ -30,7 +30,7 @@ Short selling, or “short selling”, is when you sell a stock that **you do no
 
 The operation occurs in three basic steps:  
 
-- **Loan:** you borrow the [stocks](/en/glossario/en-stocks) from a broker or another investor.  
+- **[Loan](/en/glossario/en-loan):** you borrow the [stocks](/en/glossario/en-stocks) from a broker or another investor.  
 - **Sale:** you sell the stocks in the spot market at the current price.  
 - **Buy‑back:** when (or if) the price falls, you buy the same stocks at a lower price and return them to the lender, keeping the difference.  
 

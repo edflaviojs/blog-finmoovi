@@ -39,7 +39,7 @@ The main benefits of Tesouro Direto include:
 * **Liquidity:** Although bonds have fixed maturities, you can sell them before they mature if needed; however, you may face penalties or loss of interest.  
 * **[Diversification](/en/glossario/en-diversification):** Tesouro Direto can be a good option to diversify your investment portfolio, reducing reliance on just one type of [investment](/en/glossario/en-financial-investment).
 
-**Practical tip:** Consider Tesouro Direto as part of a long‑term investment strategy, because compound interest can significantly increase the value of your investment over time.
+**Practical tip:** Consider Tesouro Direto as part of a long‑term investment strategy, because [compound interest](/en/glossario/en-compound-interest) can significantly increase the value of your investment over time.
 
 ![Advantages](/images/glossario/tesouro-direto-inline-3.webp)
 

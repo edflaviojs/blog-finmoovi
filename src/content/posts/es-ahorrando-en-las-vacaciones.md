@@ -41,7 +41,7 @@ Aquí están algunos consejos prácticos para ahorrar en las vacaciones de julio
 Un presupuesto bien definido y el control de gastos son fundamentales para ahorrar en las vacaciones. Es importante tener una idea clara de cuánto puedes gastar y dónde puedes cortar gastos innecesarios. El [Banco Central do Brasil](https://www.bcb.gov.br) ofrece consejos y herramientas para ayudar a gestionar el presupuesto y controlar los gastos.
 
 ## Inversiones y Ahorro
-Además de ahorrar en las vacaciones, es importante pensar en inversiones y ahorro para el futuro. El [Tesouro Direto](https://www.tesourodireto.com.br) es una opción de inversión segura y rentable para los brasileños. Además, es importante tener un ahorro para emergencias e imprevistos.
+Además de ahorrar en las vacaciones, es importante pensar en inversiones y [ahorro](/es/glossario/es-ahorro) para el futuro. El [Tesouro Direto](https://www.tesourodireto.com.br) es una opción de inversión segura y rentable para los brasileños. Además, es importante tener un ahorro para emergencias e imprevistos.
 
 ![Presupuesto y Control de Gastos](/images/posts/economize-nas-ferias-4.webp)
 

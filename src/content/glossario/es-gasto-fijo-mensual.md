@@ -18,10 +18,10 @@ seo:
 ---
 
 ## ¿Por qué los gastos fijos mensuales te quitan el sueño?
-Te levantas, miras la cuenta del banco y ves que el dinero se ha ido como si fuera agua. Sabes que gran parte de esa salida es inevitable: el alquiler, la luz, el internet, la suscripción al gimnasio. Pero no sabes exactamente cuánto gastas cada mes ni cómo esos pagos encajan con tus metas de ahorro. Esa incertidumbre genera estrés y, a la larga, te impide planear viajes, comprar ese electrodoméstico o simplemente respirar tranquilo.
+Te levantas, miras la cuenta del banco y ves que el dinero se ha ido como si fuera agua. Sabes que gran parte de esa salida es inevitable: el alquiler, la luz, el internet, la suscripción al gimnasio. Pero no sabes exactamente cuánto gastas cada mes ni cómo esos pagos encajan con tus metas de [ahorro](/es/glossario/es-ahorro). Esa incertidumbre genera estrés y, a la larga, te impide planear viajes, comprar ese electrodoméstico o simplemente respirar tranquilo.
 
 ## ¿Qué es un gasto fijo mensual?
-Un gasto fijo mensual es cualquier desembolso que ocurre de forma regular, generalmente una vez al mes, y cuyo monto no varía mucho de un periodo a otro. No son compras impulsivas ni gastos variables como la cena fuera; son compromisos que tienes que cubrir para mantener tu estilo de vida. Ejemplos típicos son el alquiler, la cuota del seguro, la suscripción a una plataforma de streaming o el pago de la tarjeta de crédito que ya incluye intereses y cuotas.
+Un [gasto fijo](/es/glossario/es-gasto-fijo) mensual es cualquier desembolso que ocurre de forma regular, generalmente una vez al mes, y cuyo monto no varía mucho de un periodo a otro. No son compras impulsivas ni gastos variables como la cena fuera; son compromisos que tienes que cubrir para mantener tu estilo de vida. Ejemplos típicos son el alquiler, la cuota del seguro, la suscripción a una plataforma de streaming o el pago de la tarjeta de [crédito](/es/glossario/es-credito) que ya incluye intereses y cuotas.
 
 ![¿Por qué los gastos fijos mensuales te quitan el sueño?](/images/glossario/gasto-fixo-mensal-inline-1.webp)
 
@@ -36,7 +36,7 @@ Haz una revisión rápida de tus extractos bancarios y busca los pagos que apare
 - Seguros (vehículo, salud, vivienda)
 
 ## Herramientas para controlar los gastos fijos
-Una herramienta digital puede hacer que el seguimiento sea casi automático. Imagina que al recibir un recibo, simplemente tomas una foto o lo dictas y la app lo clasifica por ti. Además, si viajas o haces compras en otra moneda, la misma solución te muestra el valor convertido al tipo de cambio que prefieras, sin que tengas que hacer cálculos manuales. La visualización de flujo de caja te permite ver en un solo vistazo cuánto entra y cuánto sale, y los informes mensuales resaltan los gastos fijos frente a los variables.
+Una herramienta digital puede hacer que el seguimiento sea casi automático. Imagina que al recibir un recibo, simplemente tomas una foto o lo dictas y la app lo clasifica por ti. Además, si viajas o haces compras en otra moneda, la misma solución te muestra el valor convertido al tipo de [cambio](/es/glossario/es-cambio) que prefieras, sin que tengas que hacer cálculos manuales. La visualización de flujo de caja te permite ver en un solo vistazo cuánto entra y cuánto sale, y los [informes](/es/posts/es-tambien-te-quedas-sin-saber-a-donde-fue-tu-dinero-al-final-d) mensuales resaltan los gastos fijos frente a los variables.
 
 ![Cómo identificar tus gastos fijos](/images/glossario/gasto-fixo-mensal-inline-3.webp)
 
@@ -48,7 +48,7 @@ FinMoovi combina todas esas funciones en una experiencia amigable. Cuando recibe
 ## Consejos para mantener tus gastos bajo control
 **Consejo práctico:** Revisa tu lista de gastos fijos cada primer lunes del mes y elimina suscripciones que no uses.  
 **Consejo práctico:** Programa una alerta que te avise cuando el total de tus gastos fijos supere el 60 % de tus ingresos; así tendrás margen para imprevistos.  
-**Consejo práctico:** Usa la función multimoneda para comparar el costo de servicios en diferentes países antes de mudarte; verás de inmediato si el alquiler en la nueva ciudad representa un aumento razonable o no.
+**Consejo práctico:** Usa la función [multimoneda](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere) para comparar el costo de servicios en diferentes países antes de mudarte; verás de inmediato si el alquiler en la nueva ciudad representa un aumento razonable o no.
 
 ## Empieza hoy
 Abre FinMoovi, toca “Captura inteligente”, toma una foto al último recibo que tengas a mano y deja que la app lo categorice. En menos de cinco minutos tendrás tu primer gasto fijo registrado y una visión clara de cómo encaja en tu presupuesto mensual.

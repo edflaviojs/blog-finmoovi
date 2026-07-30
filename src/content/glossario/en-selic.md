@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-The Selic **rate** is a fundamental concept in the world of Brazilian [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff). It is the basic **interest** rate of the economy, set by the Monetary Policy Committee (Copom) of the Central Bank of Brazil. In other words, it is the interest rate that banks pay to lend money to the government and, in turn, influences the interest rates of all other loans and investments in the country. For example, if you earn R$ 5,000 a month and are thinking about investing in a fixed‑[income](/en/posts/en-building-a-diversified-portfolio-with-r-500) fund, the Selic rate can directly affect the return on your investment.
+The Selic **rate** is a fundamental concept in the world of Brazilian [finance](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff). It is the basic **[interest](/en/glossario/en-interest)** rate of the economy, set by the Monetary Policy Committee (Copom) of the Central Bank of Brazil. In other words, it is the interest rate that banks pay to lend money to the government and, in turn, influences the interest rates of all other loans and investments in the country. For example, if you earn R$ 5,000 a month and are thinking about investing in a fixed‑[income](/en/posts/en-building-a-diversified-portfolio-with-r-500) fund, the Selic rate can directly affect the return on your investment.
 
 * The Selic rate is used as a reference to calculate the interest rates of loans and investments  
 * It is set by the Copom of the Central Bank of Brazil  

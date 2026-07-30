@@ -35,7 +35,7 @@ As a freelancer, it's essential to think about the future and make investments t
 
 ![Gestão de Gastos](/images/posts/organizar-financas-autonomo-1.svg)
 
-**Practical tip:** Start by investing in a [savings account](/en/glossario/en-savings) or a low-risk investment fund. This will help ensure you have a reserve of money for the future without taking unnecessary risks.
+**Practical tip:** Start by investing in a [savings account](/en/glossario/en-savings) or a low-risk [investment fund](/en/glossario/en-investment-fund). This will help ensure you have a reserve of money for the future without taking unnecessary risks.
 
 ## Cash Flow Control
 Cash flow control is fundamental for freelancers. Without a fixed salary, it's easy to get lost in managing your money and end up with cash flow problems. To avoid this, it's essential to create a cash flow control plan. Here are some tips:
@@ -52,7 +52,7 @@ Performance analysis is essential for freelancers. Without a fixed salary, it's 
 ![Controle de Fluxo de Caixa](/images/posts/organizar-financas-autonomo-3.svg)
 
 ## Start Today
-Now that you know how to organize your finances as a freelancer, it's time to start putting these tips into practice. Remember that financial management is an ongoing process, and it's essential to always be aware of your expenses and income. With a little discipline and planning, you can achieve financial stability and guarantee a secure future.
+Now that you know how to organize your finances as a freelancer, it's time to start putting these tips into practice. Remember that [financial management](/en/posts/en-5-alternatives-to-mobills-in-2026) is an ongoing process, and it's essential to always be aware of your expenses and income. With a little discipline and planning, you can achieve financial stability and guarantee a secure future.
 
 ![Comece hoje](/images/posts/organizar-financas-autonomo-5.svg)
 

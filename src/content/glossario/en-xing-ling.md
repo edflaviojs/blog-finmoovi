@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-Xing ling is a collective investment method that combines the simplicity of a **fixed‑income** fund [/en/glossario/en-fixed-income] with the flexibility of a micro‑investment app. Instead of buying an entire security, you buy “pieces” of a portfolio that is already diversified in government bonds, CDBs (Certificates of Deposit) and debentures of solid companies. Each “ling” represents a fraction of **R$1,000** of the portfolio, and you can acquire as many as you want, according to the money you have available. The goal is to offer predictable returns, but higher than **[savings](/en/glossario/en-savings)**, without requiring advanced market knowledge.
+Xing ling is a collective investment method that combines the simplicity of a **fixed‑income** fund [/en/glossario/en-fixed-income] with the flexibility of a micro‑investment app. Instead of buying an entire security, you buy “pieces” of a portfolio that is already diversified in government bonds, CDBs (Certificates of Deposit) and [debentures](/en/glossario/en-debentures) of solid companies. Each “ling” represents a fraction of **R$1,000** of the portfolio, and you can acquire as many as you want, according to the money you have available. The goal is to offer predictable returns, but higher than **[savings](/en/glossario/en-savings)**, without requiring advanced market knowledge.
 
 ![What it is](/images/glossario/xing-ling-inline-1.webp)
 

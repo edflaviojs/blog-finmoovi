@@ -45,7 +45,7 @@ Aunque el Tesouro Direto es considerado una [inversión](/es/posts/es-montando-c
 
 * Riesgo de inflación: si la inflación aumenta, el valor real de su inversión puede disminuir.
 * Riesgo de liquidez: si usted necesita rescatar sus títulos antes del vencimiento, puede haber pérdida de intereses.
-* Riesgo de crédito: aunque el gobierno es considerado un deudor de bajo riesgo, aún existe el riesgo de incumplimiento.
+* Riesgo de [crédito](/es/glossario/es-credito): aunque el gobierno es considerado un deudor de bajo riesgo, aún existe el riesgo de incumplimiento.
 
 ![Riscos](/images/posts/tesouro-direto-para-iniciantes-4.webp)
 

@@ -29,7 +29,7 @@ Money is a fundamental concept in the world of finance, and understanding how it
 
 
 ## How it works
-Money works as a credit‑and‑debit system, where people and businesses exchange goods and services for cash. When you buy something, you’re transferring money from your pocket to the seller’s pocket. For example, if you buy a coffee for $2, you’re transferring $2 from your pocket to the coffee shop’s pocket. **Practical tip:** Always check product prices before buying to avoid spending more than you can.
+Money works as a [credit](/en/glossario/en-credit)‑and‑debit system, where people and businesses exchange goods and services for cash. When you buy something, you’re transferring money from your pocket to the seller’s pocket. For example, if you buy a coffee for $2, you’re transferring $2 from your pocket to the coffee shop’s pocket. **Practical tip:** Always check product prices before buying to avoid spending more than you can.
 
 When you receive your salary, you’re getting money that can be used to purchase things you need or want. If you earn $1,200 per month and spend $800 on bills and food, you still have $400 to save or invest. **Practical tip:** Try to save at least 10% of your salary to have an emergency reserve.
 

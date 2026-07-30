@@ -52,7 +52,7 @@ However, stocks also involve risks, including:
 * **[Volatility](/en/glossario/en-volatility) risk**: share prices can fluctuate rapidly, which can be stressful if you’re not prepared.
 * **Company risk**: if the company you invested in encounters problems, the share value can decline.
 
-**Practical tip:** It’s important to do careful research before investing in stocks. This includes reading annual reports, analyzing the company’s finances, and understanding the risks and challenges the company faces.
+**Practical tip:** It’s important to do careful research before investing in stocks. This includes reading annual [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o), analyzing the company’s finances, and understanding the risks and challenges the company faces.
 
 ## Practical examples
 Let’s consider an example. Imagine you earn R$ 5,000 per month and want to invest R$ 1,000 per month in stocks. You could invest in shares of companies like Petrobras, Vale, or Itaú Unibanco. If you invest R$ 1,000 per month in Petrobras shares, for instance, you could achieve an annual return of 10%, meaning you would receive R$ 100 per year in dividends.

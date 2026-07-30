@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-A **fee** is simply the charge applied for a service, an investment or a loan. In everyday life, we see account maintenance fees, **[interest](/en/glossario/en-interest)** fees on a financing, or administration fees on a fund. In simple terms, it’s the price you pay to use something that isn’t free.  
+A **fee** is simply the charge applied for a service, an investment or a loan. In everyday life, we see account maintenance fees, **[interest](/en/glossario/en-interest)** fees on a [financing](/en/glossario/en-financing), or administration fees on a fund. In simple terms, it’s the price you pay to use something that isn’t free.  
 
 ![What it is](/images/glossario/taxa-inline-1.webp)
 

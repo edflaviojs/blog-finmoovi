@@ -38,7 +38,7 @@ Existem muitas formas de economizar dinheiro e reduzir os gastos no cartão de c
 * Use transporte público ou bicicleta em vez de carro
 * Cancele assinaturas de serviços que não usa
 
-**Dica prática:** Você pode criar um fundo de emergência para cobrir despesas inesperadas e evitar ter que usar o cartão de crédito. Por exemplo, se você economizar R$ 1.000 por mês, terá R$ 12.000 em um ano, o que pode ser suficiente para cobrir despesas inesperadas.
+**Dica prática:** Você pode criar um [fundo de emergência](/ferramentas/calculadora-reserva) para cobrir despesas inesperadas e evitar ter que usar o cartão de crédito. Por exemplo, se você economizar R$ 1.000 por mês, terá R$ 12.000 em um ano, o que pode ser suficiente para cobrir despesas inesperadas.
 
 ![Dicas para Economizar](/images/posts/dicas-para-controlar-gastos-no-cartao-de-credito-3.webp)
 

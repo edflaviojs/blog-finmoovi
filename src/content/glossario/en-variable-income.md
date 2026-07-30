@@ -35,7 +35,7 @@ Variable Income is everything that doesn't have a guaranteed return. The price g
 ## Risks
 
 - Capital loss (your investment may be worth less)  
-- Volatility (daily fluctuations)  
+- [Volatility](/en/glossario/en-volatility) (daily fluctuations)  
 - Company risk (company bankruptcy)  
 - Market risk (economic crises)
 

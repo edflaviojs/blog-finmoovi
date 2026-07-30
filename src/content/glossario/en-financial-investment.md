@@ -38,7 +38,7 @@ When you decide to make an investment, you follow a very simple process: choose 
 - **Set the amount** you can commit without harming your monthly budget.  
 - **Monitor the return** periodically, but avoid tweaking too much so you don’t lose benefits.  
 
-The bank or brokerage records your transaction, calculates interest daily and, at the end of the period, credits the total amount (principal + interest) to your account. If the investment is in [fixed income](/en/glossario/en-fixed-income), the return is usually predictable; if it’s in variable income, such as equity funds, the gain can be higher, but volatility also increases.
+The bank or brokerage records your transaction, calculates interest daily and, at the end of the period, credits the total amount (principal + interest) to your account. If the investment is in [fixed income](/en/glossario/en-fixed-income), the return is usually predictable; if it’s in [variable income](/en/glossario/en-variable-income), such as equity funds, the gain can be higher, but volatility also increases.
 
 ## Advantages
 

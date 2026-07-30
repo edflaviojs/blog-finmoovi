@@ -31,7 +31,7 @@ Webull is an investment platform that allows users to buy and sell [ações](/en
 ## How it works
 Webull basically works like a securities brokerage, allowing users to buy and sell financial assets. However, it offers some advantages over traditional brokerages, such as lower fees and a more modern interface. **Practical tip:** Before you start investing, it’s important to define your financial goals and assess your risk profile. This will help you determine which assets are most suitable for you.
 
-When you create an account on Webull, you need to deposit money to start investing. You can do this via bank transfer or other payment methods. Then you can choose which financial assets you want to buy and sell using the platform’s interface. **Practical tip:** It’s important to diversify your investments to minimize risk. This means you shouldn’t put all your eggs in one basket, but rather spread your investments across different assets.
+When you create an account on Webull, you need to deposit money to start investing. You can do this via [bank transfer](/en/posts/en-pix-vs-ted-which-one-is-worth-it-in-2026) or other payment methods. Then you can choose which financial assets you want to buy and sell using the platform’s interface. **Practical tip:** It’s important to diversify your investments to minimize risk. This means you shouldn’t put all your eggs in one basket, but rather spread your investments across different assets.
 
 ## Advantages
 Webull offers several advantages compared to traditional securities brokerages. Some of the main advantages include:
