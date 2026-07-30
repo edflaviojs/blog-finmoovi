@@ -232,16 +232,21 @@ function getLocalizedDescription(term, language) {
   return descriptions[language];
 }
 
+// IMPLEMENTACAO23 — cada idioma leva SÓ as suas próprias palavras.
+// Antes, EN/ES herdavam um `baseKeywords` em português ('glossário', 'finanças')
+// e ainda ganhavam a etiqueta 'brazil'/'brasil'. `getLocalizedDescription` acima
+// foi universalizada no commit 83b7e229 (Fase 1) e esta função ficou de fora, pelo
+// que o cron diário voltou a marcar os verbetes EN/ES no dia seguinte — verificado
+// em en-fixed-expense.md (28/07) e en-fixed-and-variable-expense.md (29/07).
+// A forma abaixo é a do en-credit.md, que foi reparado à mão dentro do 83b7e229.
 function getLocalizedKeywords(term, language) {
-  const baseKeywords = [term, 'glossário', 'finanças'];
-
   if (language === 'en') {
-    return [...baseKeywords, 'glossary', 'finance', 'brazil'];
+    return [term, 'glossary', 'finance'];
   } else if (language === 'es') {
-    return [...baseKeywords, 'glosario', 'finanzas', 'brasil'];
+    return [term, 'glosario', 'finanzas'];
   }
 
-  return baseKeywords;
+  return [term, 'glossário', 'finanças'];
 }
 
 export { generateGlossaryTerm };
