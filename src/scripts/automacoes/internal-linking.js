@@ -28,8 +28,13 @@ const GENERIC_POST_ANCHORS = new Set([
   'investimento', 'investimentos', 'cotações', 'moedas', 'viagem', 'viagens',
   'dívida', 'dívidas', 'dólar', 'finanças', 'alternativas', 'finmoovi',
   // en
+  // `income` (30/07): mesma classe de `money`/`salary`/`expenses`, e a ausência
+  // era um furo real — o post en-building-a-diversified-portfolio-with-r-500 tem
+  // "income" nas tags, logo QUALQUER ocorrência da palavra em EN virava link para
+  // um artigo sobre carteira diversificada. Já tinha sido injetado em
+  // en-income-tax.md, onde a palavra aparece 22 vezes.
   'money', 'expenses', 'risks', 'account', 'accounts', 'salary', 'economy',
-  'bank', 'banks', 'credit', 'debit', 'budget', 'savings', 'investment',
+  'income', 'bank', 'banks', 'credit', 'debit', 'budget', 'savings', 'investment',
   'investments', 'quotes', 'travel', 'vacation', 'debt', 'debts', 'dollar',
   // es
   'dinero', 'riesgos', 'cuenta', 'cuentas', 'salario', 'economía', 'ahorro',

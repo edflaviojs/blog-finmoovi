@@ -51,7 +51,7 @@ Alguien que gana 40.000 al año **no** paga 20% de 40.000. Paga:
 Para un país, el impuesto sobre la renta es la principal forma de financiar los servicios públicos — escuelas, salud, transporte, seguridad. Para usted como contribuyente hay ventajas prácticas que vale la pena conocer:
 
 * **Las deducciones premian cosas que usted ya hace.** Aportes a pensiones, gastos de salud y educación suelen reducir lo que debe, así que dinero que iba a gastar de todos modos puede bajar la factura.
-* **Una declaración presentada sirve como prueba de ingresos.** Bancos y arrendadores la piden con frecuencia cuando usted solicita un préstamo o un alquiler.
+* **Una declaración presentada sirve como prueba de ingresos.** Bancos y arrendadores la piden con frecuencia cuando usted solicita un [préstamo](/es/glossario/es-prestamo) o un alquiler.
 * **Las devoluciones son comunes.** Si le retuvieron impuesto del salario durante el año, puede haber pagado más de lo que debía y recibir la diferencia.
 
 ![Ventajas](/images/glossario/imposto-de-renda-inline-3.webp)
@@ -70,7 +70,7 @@ Para un país, el impuesto sobre la renta es la principal forma de financiar los
 
 **Alguien con un ingreso extra.** La retención sobre su salario se calculó como si ese salario fuera su único ingreso. El trabajo por cuenta propia encima puede empujarlo a un tramo más alto, así que espere deber algo al declarar. Apartar una parte de cada pago evita la sorpresa.
 
-**Alguien que recibió alquiler.** El alquiler cuenta como ingreso en la mayoría de los sistemas, y los costos de mantener el inmueble suelen ser deducibles — justamente por eso vale la pena conservar esas facturas.
+**Alguien que recibió alquiler.** El alquiler cuenta como ingreso en la mayoría de los sistemas, y los [costos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica) de mantener el inmueble suelen ser deducibles — justamente por eso vale la pena conservar esas facturas.
 
 **Consejo práctico:** Registre ingresos y gastos a lo largo del año en un solo lugar, en vez de reconstruirlos de memoria en la semana de la declaración. FinMoovi los categoriza a medida que ocurren, así que al declarar usted lee un informe en lugar de hacer arqueología.
 

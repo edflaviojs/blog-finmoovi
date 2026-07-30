@@ -25,7 +25,7 @@ What changes from country to country is the detail — where the tax-free thresh
 
 ![What it is](/images/glossario/imposto-de-renda-inline-1.webp)
 
-Two ideas do most of the work. **Gross income** is everything you received during the year. **Taxable income** is what is left after the deductions your country allows — commonly pension contributions, medical costs, education, or dependants. The tax is calculated on the taxable income, not on the gross.
+Two ideas do most of the work. **Gross income** is everything you received during the year. **Taxable income** is what is left after the deductions your country allows — commonly pension contributions, medical [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide), education, or dependants. The tax is calculated on the taxable income, not on the gross.
 
 ## How it works
 
@@ -51,7 +51,7 @@ Someone earning 40,000 a year does **not** pay 20% of 40,000. They pay:
 For a country, income tax is the main way public services get funded — schools, health, transport, security. For you as a taxpayer there are practical upsides worth knowing:
 
 * **Deductions reward things you already do.** Pension contributions, health costs and education often reduce what you owe, so money you were going to spend anyway can lower the bill.
-* **A filed return is proof of income.** Banks and landlords frequently ask for it when you apply for a loan or a lease.
+* **A filed return is proof of income.** Banks and landlords frequently ask for it when you apply for a [loan](/en/glossario/en-loan) or a lease.
 * **Refunds are common.** If tax was withheld from your salary through the year, you may have paid more than you owed and get the difference back.
 
 ![Advantages](/images/glossario/imposto-de-renda-inline-3.webp)
