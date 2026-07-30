@@ -87,6 +87,34 @@ function needsAdaptation(text) {
 }
 
 /**
+ * Um valor devolvido pelo LLM só pode entrar no frontmatter se passar aqui.
+ *
+ * Motivado por dano REAL: em 30/07/2026 o batch escreveu
+ * `description: "...for diversifying your portfolio. (155 chars)"` em
+ * src/content/posts/en-quotes-semana-3-july-2026.md — o placeholder do formato do
+ * prompt (translation-prompt.js, "[... max 155 chars]") vazou para o valor publicado.
+ *
+ * Rejeita três classes:
+ *  1. resíduo de instrução do prompt;
+ *  2. newline ou `---` dentro do valor — parte o YAML do frontmatter e pode
+ *     derrubar o `astro build`, ou seja o deploy do site INTEIRO (o workflow que
+ *     causaria isso já fez push e fica verde; não há validação nem rollback);
+ *  3. valor vazio ou absurdamente longo.
+ *
+ * Limites medidos no corpus em 30/07 (474 ficheiros): título mais longo 85 chars,
+ * descrição mais longa 186. Os tetos abaixo dão folga e produziram 0 falsos
+ * positivos em títulos e 1 em descrições — justamente a contaminada.
+ */
+function fieldLooksClean(value, maxLen) {
+  if (!value) return false;
+  const v = value.trim();
+  if (!v || v.length > maxLen) return false;
+  if (/[\r\n]/.test(v) || v.includes('---')) return false;
+  if (/\(\s*\d+\s*chars?\s*\)|max \d+ chars|\[translated|\[adapted/i.test(v)) return false;
+  return true;
+}
+
+/**
  * Delays execution for the given milliseconds.
  * @param {number} ms
  */
@@ -130,6 +158,7 @@ async function main() {
 
   let fixed = 0;
   let errors = 0;
+  let skipped = 0;
 
   for (let i = 0; i < batch.length; i++) {
     const entry = batch[i];
@@ -137,8 +166,18 @@ async function main() {
     const filePath = join(ROOT, dir, entry.file);
 
     if (!existsSync(filePath)) {
-      console.log(`  [SKIP] ${entry.file} — file not found`);
-      errors++;
+      // ENTRADA MORTA. O audit está congelado (audit-content-results.json tem 1 só
+      // commit e nenhum workflow o regenera), logo ficheiros renomeados/removidos
+      // desde então continuam na fila — e, por serem severidade 3, no TOPO dela.
+      // Medido em 30/07/2026: 22 entradas mortas, e 10 dos 20 lugares do lote diário
+      // eram queimados nelas TODOS OS DIAS. Marcar como processada liberta o lugar.
+      console.log(`  [SKIP] ${entry.file} — não existe em disco; marcada como processada para sair da fila`);
+      if (!DRY_RUN && !progressSet.has(entry.file)) {
+        progress.push(entry.file);
+        progressSet.add(entry.file);
+        writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2), 'utf-8');
+      }
+      skipped++;
       continue;
     }
 
@@ -175,9 +214,22 @@ For ---TITULO---, ---META---, ---HEADLINE---, ---KEYWORDS--- just return the exi
 unless they contain R$ or Brazilian-specific terms that need adaptation.`,
       });
 
+      // O título e a descrição TÊM de ir no prompt. Antes só ia o corpo, e o
+      // `extraInstructions` acima pedia ao modelo para "devolver os valores
+      // existentes" de campos que ele nunca recebia — resultado: quando devolvia
+      // um título, estava a INVENTÁ-LO a partir do corpo. Foi assim que nasceu o
+      // título trocado em en-quotes-semana-3-july-2026.md em 30/07/2026.
+      // Formato `Title:`/`Meta:`/`Content:` = o mesmo que translatePost() usa em
+      // src/scripts/automacoes/gerar-post-investimentos.js.
+      const currentTitle = getFmField(frontmatter, 'title') || '';
+      const currentMeta = getFmField(frontmatter, 'description') || '';
+
       const prompt = `${instructions}
 
 ---ORIGINAL POST (${langName})---
+Title: ${currentTitle}
+Meta: ${currentMeta}
+Content:
 ${body}`;
 
       console.log(`  [${i + 1}/${batch.length}] Processing: ${entry.file} (severity: ${entry.severity})...`);
@@ -209,13 +261,41 @@ ${body}`;
       let newFrontmatter = frontmatter;
 
       // Only update frontmatter fields if they needed adaptation
-      if (fixedTitle && needsAdaptation(getFmField(frontmatter, 'title'))) {
+      const willWriteTitle = Boolean(fixedTitle && needsAdaptation(getFmField(frontmatter, 'title')));
+      const willWriteMeta = Boolean(fixedMeta && needsAdaptation(getFmField(frontmatter, 'description')));
+
+      // Guarda de contaminação. Rejeita o FICHEIRO INTEIRO, não só o campo: escrever
+      // o corpo e marcar progresso (mais abaixo) é a MESMA operação, portanto rejeitar
+      // apenas o campo gravaria o ficheiro como "processado" com o título velho — e o
+      // filtro da fila exclui para sempre o que está em progresso, tornando-o
+      // inalcançável. Não escrevendo nada, o ficheiro volta à fila e é retentado.
+      if (willWriteTitle && !fieldLooksClean(fixedTitle, 120)) {
+        console.log(`  [ERROR] ${entry.file} — título devolvido contaminado/inválido; ficheiro NÃO alterado, volta à fila`);
+        errors++;
+        continue;
+      }
+      if (willWriteMeta && !fieldLooksClean(fixedMeta, 200)) {
+        console.log(`  [ERROR] ${entry.file} — descrição devolvida contaminada/inválida; ficheiro NÃO alterado, volta à fila`);
+        errors++;
+        continue;
+      }
+
+      if (willWriteTitle) {
         newFrontmatter = setFmField(newFrontmatter, 'title', fixedTitle.trim());
       }
-      if (fixedMeta && needsAdaptation(getFmField(frontmatter, 'description'))) {
+      if (willWriteMeta) {
         newFrontmatter = setFmField(newFrontmatter, 'description', fixedMeta.trim());
       }
-      // Also try seo.metaTitle and seo.metaDescription (nested YAML)
+      // NOTA (30/07/2026): os campos aninhados `seo.metaTitle`/`seo.metaDescription`
+      // são INERTES aqui — `getFmField` não aceita indentação, logo devolve null e
+      // estes dois `if` nunca disparam. É DELIBERADO, não um bug a corrigir: medido,
+      // destrancá-los alcançaria 31 ficheiros, dos quais 4 são inúteis (a página de
+      // glossário ignora estes campos — ver src/pages/en/glossario/[slug].astro:73-95)
+      // e 16 são as séries de cotações/custo de vida, que são sobre o mercado
+      // brasileiro POR DESENHO. Ganho líquido ~11 ficheiros, em troca de pôr texto de
+      // IA no <h1> de páginas indexadas (seo.metaTitle vence o title em
+      // src/pages/en/posts/[slug].astro) num pipeline sem validação nem rollback.
+      // Decisão do dono: não destrancar.
       if (fixedTitle && needsAdaptation(getFmField(frontmatter, 'metaTitle'))) {
         newFrontmatter = setFmField(newFrontmatter, 'metaTitle', fixedTitle.trim());
       }
@@ -258,8 +338,9 @@ ${body}`;
   console.log('');
   console.log(`=== Done ===`);
   console.log(`Fixed:     ${fixed}`);
+  console.log(`Skipped:   ${skipped} (entradas mortas, retiradas da fila)`);
   console.log(`Errors:    ${errors}`);
-  console.log(`Remaining: ${pending.length - fixed}`);
+  console.log(`Remaining: ${pending.length - fixed - skipped}`);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
