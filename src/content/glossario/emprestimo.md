@@ -4,6 +4,7 @@ definition: "Entenda o que é empréstimo, como funciona, vantagens, riscos e ex
 title: "empréstimo - Glossário Financeiro"
 description: "Entenda o que é empréstimo, como funciona, vantagens, riscos e exemplos práticos de aplicação no mercado financeiro brasileiro."
 image: "/images/glossario/emprestimo.webp"
+imageAlt: "Moedas douradas empilhadas e um vidro com planta verde sobre fundo escuro."
 category: "basico"
 tags: ["empréstimo", "glossário", "finanças"]
 author: "FinMoovi"

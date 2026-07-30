@@ -4,6 +4,7 @@ definition: "Understand what qualidade is, how it works, advantages, risks and p
 title: "asset quality - Financial Glossary"
 description: "Understand what qualidade is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/qualidade.webp"
+imageAlt: "Golden coins and bars with a growing plant in a glass jar."
 category: "basico"
 tags: ["asset quality", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

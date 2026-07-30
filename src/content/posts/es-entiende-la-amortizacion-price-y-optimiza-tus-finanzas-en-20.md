@@ -3,6 +3,7 @@ title: "Entiende la amortización PRICE y optimiza tus finanzas en 2026"
 description: "Descubre cómo la amortización PRICE puede transformar el pago de préstamos, con consejos prácticos y cómo usar FinMoovi para controlarlo en minutos."
 tickerHeadline: "El truco que reduce tu deuda"
 image: "/images/posts/entenda-a-amortizacao-price-e-otimize-suas-financas-em-2026.webp"
+imageAlt: "Tres personas sonrientes revisan documentos financieros en una mesa de madera."
 category: "dicas"
 locale: "es"
 tags: ["amortización price","finanzas personales","economía","dinero"]

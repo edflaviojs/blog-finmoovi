@@ -5,6 +5,7 @@ category: "mercado"
 locale: "en"
 translationKey: "glossario-dividend-yield"
 image: "/images/glossario/dividend-yield.webp"
+imageAlt: "A stack of gold coins, a bar graph, and a plant in a glass jar filled with coins."
 relatedTerms: ["Dividendos","Ações","Rendimento"]
 publishedAt: 2026-06-11
 ---

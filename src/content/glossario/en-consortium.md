@@ -1,6 +1,7 @@
 ---
 term: "Consortium"
 image: "/images/glossario/en-consorcio.webp"
+imageAlt: "Gold coins and a glass jar with a green plant on a dark background."
 definition: "A group purchasing system where participants contribute monthly to a common fund and are periodically selected to receive the full amount."
 category: "credito"
 locale: "en"

@@ -4,6 +4,7 @@ definition: "Understand what bolsa de valores is, how it works, advantages, risk
 title: "bolsa de valores - Financial Glossary"
 description: "Understand what bolsa de valores is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/bolsa-de-valores.webp"
+imageAlt: "Gold coins, rising chart, and plant in glass on gradient background."
 category: "basico"
 tags: ["bolsa de valores", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

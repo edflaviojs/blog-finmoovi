@@ -3,6 +3,7 @@ title: "Como montar um orçamento que realmente funciona em 2026"
 description: "Descubra, em poucos minutos, como organizar seu dinheiro todo mês e ganhar tranquilidade financeira usando o FinMoovi."
 tickerHeadline: "O truque que salva seu salário"
 image: "/images/posts/como-montar-um-orcamento-que-realmente-funciona-em-2026.webp"
+imageAlt: "Notebook e monitor em mesa de madeira com xícara de café e plantas."
 category: "dicas"
 locale: "pt"
 tags: ["orçamento pessoal mensal","finanças pessoais","economia","dinheiro"]

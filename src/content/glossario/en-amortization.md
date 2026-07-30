@@ -1,6 +1,7 @@
 ---
 term: "Amortization"
 image: "/images/glossario/en-amortizacao.webp"
+imageAlt: "Gold coins stacked with rising arrow and plant in glass on dark background"
 definition: "The gradual reduction of a debt through periodic payments that cover both principal and interest."
 category: "credito"
 locale: "en"

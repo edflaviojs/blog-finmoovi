@@ -3,6 +3,7 @@ title: "Cómo crear un presupuesto que realmente funcione en 2026"
 description: "Descubre en pocos minutos cómo organizar tu dinero cada mes y ganar tranquilidad financiera con FinMoovi."
 tickerHeadline: "El truco que protege tu salario"
 image: "/images/posts/como-montar-um-orcamento-que-realmente-funciona-em-2026.webp"
+imageAlt: "Escritorio con portátil, monitor, taza de café y plantas junto a ventana iluminada."
 category: "dicas"
 locale: "es"
 tags: ["presupuesto personal mensual","finanzas personales","ahorro","dinero"]

@@ -4,6 +4,7 @@ definition: "Understand what diversificação is, how it works, advantages, risk
 title: "diversificação - Financial Glossary"
 description: "Understand what diversificação is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/diversificacao.webp"
+imageAlt: "A stack of gold coins, a bar graph, and a glass bowl with coins and a plant."
 category: "basico"
 tags: ["diversificação", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

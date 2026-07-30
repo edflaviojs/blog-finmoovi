@@ -1,6 +1,7 @@
 ---
 term: "Come-Cotas"
 image: "/images/glossario/en-come-cotas.webp"
+imageAlt: "Coins, piggy bank, and plant on a platform with an upward arrow."
 definition: "Fractional Shares are a form of investment where the investor buys a portion of an asset, usually an investment fund, and pays only a fraction of the total value of the asset. This allows investors with fewer financial resources to participate in investments that would normally be out of their reach."
 category: "impostos"
 locale: "en"

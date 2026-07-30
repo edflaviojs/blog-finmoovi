@@ -1,6 +1,7 @@
 ---
 term: "CDI"
 image: "/images/glossario/en-cdi.webp"
+imageAlt: "Stacks of gold coins and glass jars with green plants on dark surface."
 definition: "Interbank Deposit Certificate. The benchmark interest rate for fixed-income investments in Brazil. It closely follows the Selic rate."
 category: "investimentos"
 locale: "en"

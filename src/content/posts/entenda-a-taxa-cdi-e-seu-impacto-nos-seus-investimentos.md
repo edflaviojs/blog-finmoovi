@@ -3,6 +3,7 @@ title: "Entenda a taxa CDI e seu impacto nos seus investimentos"
 description: "Descubra o que é o CDI, como ele funciona e de que forma afeta a rentabilidade dos seus investimentos de renda fixa. Guia prático e direto."
 tickerHeadline: "Como a taxa CDI mexe no seu bolso"
 image: "/images/posts/entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos.webp"
+imageAlt: "Fita dourada ondulante sobre fundo gradiente azul escuro e amarelo, com espaço branco inferior."
 category: "investimentos"
 locale: "pt"
 tags: ["CDI","taxa interbancária","investimentos de renda fixa","rentabilidade","FinMoovi","o que é CDI e como ele afeta seus investimentos"]

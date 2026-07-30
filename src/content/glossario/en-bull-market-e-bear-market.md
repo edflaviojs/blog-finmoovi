@@ -5,6 +5,7 @@ category: "mercado"
 locale: "en"
 translationKey: "glossario-bull-market-e-bear-market"
 image: "/images/glossario/bull-market-e-bear-market.webp"
+imageAlt: "Gold coins, piggy bank, and plant in glass jar on dark background."
 relatedTerms: ["Risco","Investimento","Rentabilidade"]
 publishedAt: 2026-06-06
 ---

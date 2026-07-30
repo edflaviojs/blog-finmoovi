@@ -3,6 +3,7 @@ title: "Understand PRICE Amortization and Optimize Your Finances in 2026"
 description: "Learn how PRICE amortization can simplify loan payments and use FinMoovi to track them in minutes."
 tickerHeadline: "The trick that cuts your debt"
 image: "/images/posts/entenda-a-amortizacao-price-e-otimize-suas-financas-em-2026.webp"
+imageAlt: "Three smiling people review documents at a wooden table in a bright room."
 category: "dicas"
 locale: "en"
 tags: ["PRICE amortization","personal finance","budgeting","loan repayment"]

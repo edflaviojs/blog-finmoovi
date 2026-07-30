@@ -4,6 +4,7 @@ definition: "Understand what debt is, how it works, advantages, risks and practi
 title: "Debt - Financial Glossary"
 description: "Understand what debt is, how it works, advantages, risks and practical examples."
 image: "/images/glossario/divida.webp"
+imageAlt: "A piggy bank, coins, and gold bars on a dark purple background."
 category: "basico"
 tags: ["debt", "glossary", "finance"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "The ability to use money you don't have yet and pay for it later â€
 title: "Credit - Financial Glossary"
 description: "What credit is and how it quietly shows up on your bill â€” explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/credito.webp"
+imageAlt: "A glass jar filled with gold coins, surrounded by stacks of gold coins."
 category: "basico"
 tags: ["credit", "glossary", "finance"]
 author: "FinMoovi"

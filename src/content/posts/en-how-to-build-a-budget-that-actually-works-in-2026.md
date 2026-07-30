@@ -3,6 +3,7 @@ title: "How to Build a Budget That Actually Works in 2026"
 description: "Discover in minutes how to organize your money each month and gain financial peace of mind with FinMoovi."
 tickerHeadline: "The trick that saves your paycheck"
 image: "/images/posts/como-montar-um-orcamento-que-realmente-funciona-em-2026.webp"
+imageAlt: "Laptop and coffee cup on wooden desk near window"
 category: "dicas"
 locale: "en"
 tags: ["monthly personal budget","personal finance","saving","money"]

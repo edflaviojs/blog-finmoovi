@@ -3,6 +3,7 @@ title: "Understanding the Interbank Rate and Its Impact on Your Investments"
 description: "Learn what the interbank rate is, how it works, and how it affects the returns of your fixed‑income investments. A practical, straight‑to‑the‑point guide."
 tickerHeadline: "How the Interbank Rate Affects Your Wall"
 image: "/images/posts/entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos.webp"
+imageAlt: "Abstract golden ribbon floating against a dark blue gradient background."
 category: "investimentos"
 locale: "en"
 tags: ["interbank rate","fixed‑income investments","returns","FinMoovi","what is interbank rate","how it affects your investments"]

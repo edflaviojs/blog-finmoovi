@@ -1,6 +1,7 @@
 ---
 term: "Educação Financeira"
 image: "/images/glossario/educacao-financeira.webp"
+imageAlt: "Pilhas de moedas douradas com plantas crescendo, fundo roxo escuro."
 definition: "Conjunto de conhecimentos sobre como ganhar, gastar, poupar e investir dinheiro de forma consciente. Base para uma vida financeira saudável."
 category: "basico"
 relatedTerms: ["Orçamento Pessoal", "Reserva de Emergência", "Independência Financeira"]

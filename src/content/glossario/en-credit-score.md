@@ -1,6 +1,7 @@
 ---
 term: "Credit Score"
 image: "/images/glossario/en-score-de-credito.webp"
+imageAlt: "Gold coins, yellow bar chart, crystal ball, and plant in glass on dark background."
 definition: "A numerical score that indicates the probability of a person paying their bills on time. Ranges from 0 to 1000 in Brazil."
 category: "credito"
 locale: "en"

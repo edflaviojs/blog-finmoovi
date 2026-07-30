@@ -3,6 +3,7 @@ title: "Entiende la tasa interbancaria y su impacto en tus inversiones"
 description: "Descubre qué es la tasa interbancaria, cómo funciona y cómo afecta la rentabilidad de tus inversiones de renta fija. Guía práctica y directa."
 tickerHeadline: "Cómo la tasa interbancaria afecta tu bol"
 image: "/images/posts/entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos.webp"
+imageAlt: "Forma abstracta ondulada dorada sobre fondo degradado azul oscuro y amarillo."
 category: "investimentos"
 locale: "es"
 tags: ["tasa interbancaria","inversiones de renta fija","rentabilidad","FinMoovi","qué es la tasa interbancaria y cómo afecta tus inversiones"]

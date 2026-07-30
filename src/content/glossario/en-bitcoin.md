@@ -1,6 +1,7 @@
 ---
 term: "Bitcoin"
 image: "/images/glossario/en-bitcoin.webp"
+imageAlt: "Gold coins stacked with green plants in glass domes on dark background."
 definition: "The first and most well-known cryptocurrency. A decentralized digital currency that operates without banks or governments."
 category: "investimentos"
 locale: "en"
