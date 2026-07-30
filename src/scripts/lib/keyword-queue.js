@@ -45,6 +45,63 @@ function coveredByGlossario(keyword) {
   }
 }
 
+// ── NOME PRÓPRIO LOCAL ───────────────────────────────────────────────────────
+// A keyword da fila é o ASSUNTO do artigo. Se ela nomeia uma EMPRESA ou PROGRAMA
+// de um país só, o artigo não serve leitor nenhum fora dele — e é traduzido para
+// EN/ES de qualquer forma, porque keyword vinda da fila nasce `scope: universal`
+// (gerar-post-inteligente.js, e `scope: "universal"` fixo em gerar-dicas-financeiras
+// e gerar-post-orcamento). No glossário é pior: produziria verbetes chamados
+// "Saldo Devedor Cohab Mg", que o próprio gerador já classifica como "dívida
+// permanente no site". Medido em 30/07/2026: 7 keywords destas estavam pending.
+//
+// Decisão do dono (30/07/2026): DESCARTAR, não marcar br-only. A intenção de quem
+// busca "fatura do cartão <loja>" é achar a loja, não uma app de finanças; e no
+// glossário a marcação não conserta um nome quebrado. Se um destes temas
+// interessar, entra à mão por `data/keywords-manuais.csv` (que está limpo).
+//
+// ⚠️ FICAM DE FORA DE PROPÓSITO — falsos positivos MEDIDOS em 30/07:
+//   `americanas`     mataria "ações americanas", "bolsas americanas", "etf de ações americanas"
+//   `mercado livre`   mataria "o que é mercado livre" e "mercado livre de energia"
+//   `b3` `spc` `serasa`  matariam "o que é a b3", "consultar o spc",
+//                    "tirar nome do spc e serasa" — temas financeiros legítimos
+//   `nubank`         já é verbete PUBLICADO (glossario/nubank.md, scope br-only)
+//   `caixa` sozinha  é palavra comum ("fluxo de caixa"); ver CAIXA_BANCO_RE
+//   `inss` `fgts` `receita federal`  a tabela de tradução já os adapta
+//                    ("severance guarantee fund", "tax authority")
+// REGRA PARA ACRESCENTAR: só nome de ≥2 palavras, ou palavra única sem homónimo
+// em português. Testar contra o corpus antes — foi assim que os 6 acima caíram.
+const LOCAL_BRAND_RE = new RegExp('\\b(' + [
+  // bancos, fintechs e financeiras
+  'itau', 'bradesco', 'santander', 'banco do brasil', 'bancodobrasil', 'unibanco',
+  'caixa economica', 'caixa tem', 'sicoob', 'sicredi', 'banrisul', 'btg pactual',
+  'xp investimentos', 'nu invest', 'banco pan', 'banco bmg', 'daycoval', 'agibank',
+  'crefisa', 'facta', 'will bank', 'c6 bank', 'c6bank',
+  // meios de pagamento
+  'picpay', 'pagbank', 'pagseguro', 'mercado pago', 'cielo',
+  // retalho e marketplaces
+  'casas bahia', 'casasbahia', 'magazine luiza', 'magalu', 'lojas americanas',
+  'ponto frio', 'riachuelo', 'renner', 'pernambucanas', 'mercadolivre', 'shopee',
+  // programas e órgãos sem equivalente universal
+  'fies', 'prouni', 'sisu', 'bolsa familia', 'auxilio brasil',
+  'minha casa minha vida', 'desenrola brasil', 'pronampe', 'cadastro unico',
+  'meu inss', 'cohab', 'sebrae',
+].join('|') + ')\\b', 'i');
+
+// "caixa" sozinha NÃO pode entrar na lista acima: em português é palavra comum
+// ("fluxo de caixa" = cash flow, universal, e há uma entry manual curada assim).
+// Este padrão apanha só o sentido de BANCO, pelo contexto que a precede. Medido
+// em 30/07 nas 6 entries da fila que contêm "caixa": 6/6 correto (2 banco, 4
+// conceito). NÃO inclui "conta caixa" — em contabilidade é a conta de caixa.
+const CAIXA_BANCO_RE = /\b(?:financiamento|emprestimo|consorcio|saldo devedor|amortizacao|fatura|cartao|habitacao|minha casa)\s+(?:da\s+)?caixa\b/i;
+
+/** True se a keyword nomeia empresa/programa de um país só (não universaliza). */
+export function namesLocalBrand(keyword) {
+  // Colapsa separadores para apanhar "casas-bahia", "c6-bank", "fies:", "(sebrae)".
+  const n = normalizeKeyword(keyword).replace(/[^a-z0-9]+/g, ' ').trim();
+  if (!n) return false;
+  return LOCAL_BRAND_RE.test(n) || CAIXA_BANCO_RE.test(n);
+}
+
 /** Categorias aceitas nas entries (qualquer outra vira null = "qualquer gerador").
  *  'glossario' = termo para o glossário (consumido por glossario-auto-diario). */
 export const VALID_CATEGORIES = new Set(['dicas', 'investimentos', 'orcamento', 'glossario']);
@@ -177,8 +234,11 @@ export function addEntries(list, file = QUEUE_FILE) {
 /**
  * Entrega a próxima keyword pending elegível para as categorias dadas
  * (category da entry ∈ categories OU null), ordenando por priority asc e
- * addedAt asc. Cada candidata passa pelo isThemeCovered: se já coberta, vira
- * 'skipped' (reason 'ja-coberto') e segue para a próxima.
+ * addedAt asc. Cada candidata passa por 3 filtros e, se reprovar, vira 'skipped'
+ * com o motivo, seguindo para a próxima:
+ *   'nome-proprio-local' — nomeia empresa/programa de um país só (namesLocalBrand)
+ *   'ja-coberto'         — tema já coberto por post publicado (isThemeCovered)
+ *   'coberto-glossario'  — já existe verbete com esse núcleo
  *
  * `exactCategory: true` exige match EXATO de categoria (entries com category
  * null ficam de fora) — usado pelo glossário diário para NÃO drenar keywords
@@ -203,6 +263,15 @@ export function takeKeyword({ categories = [], exactCategory = false } = {}, fil
     let dirty = false;
     let chosen = null;
     for (const entry of candidates) {
+      // Antes do isThemeCovered de propósito: não lê o disco e o descarte vale
+      // independentemente de o tema estar coberto ou não.
+      if (namesLocalBrand(entry.keyword)) {
+        entry.status = 'skipped';
+        entry.reason = 'nome-proprio-local';
+        dirty = true;
+        console.log(`ℹ️ keyword-queue: "${entry.keyword}" nomeia empresa/programa de um país só — marcada como skipped (não universaliza).`);
+        continue;
+      }
       const canibal = isThemeCovered(entry.keyword);
       if (canibal.covered) {
         entry.status = 'skipped';
