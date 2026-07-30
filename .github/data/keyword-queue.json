@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-30T10:58:56.918Z",
-  "sourceCursor": 1,
+  "updatedAt": "2026-07-30T12:21:33.607Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -353,8 +353,10 @@
       "category": "glossario",
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-07-27T11:01:33.696Z"
+      "status": "used",
+      "addedAt": "2026-07-27T11:01:33.696Z",
+      "usedAt": "2026-07-30T12:21:33.607Z",
+      "usedBy": "glossario-auto-diario"
     },
     {
       "keyword": "gasto fixo de uma empresa",
