@@ -24,7 +24,7 @@ Vamos considerar um exemplo para entender melhor a diferença entre essas duas t
 ### Tabela Price
 - Prestação 1 a 12: R$ 946,11 (a amortização e os juros variam, mas o valor da prestação permanece constante)
 
-## [Comparação](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico)
+## Comparação
 A escolha entre a Tabela SAC e a Tabela Price depende do seu perfil de financiamento e das condições oferecidas pelo credor. A Tabela SAC pode ser mais vantajosa para quem prioriza a redução do saldo devedor de forma constante, enquanto a Tabela Price oferece a vantagem de ter prestações fixas, o que pode ser mais fácil de gerenciar orçamentariamente.
 
 | Característica | Tabela SAC | Tabela Price |

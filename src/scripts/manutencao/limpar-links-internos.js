@@ -10,9 +10,21 @@
  *  3. Teto por documento: posts = 8, glossário = 6. Sobrevivência por prioridade
  *     ferramenta > glossário > post; entre iguais, primeira ocorrência vence.
  *
+ *  0. (30/07/2026) Heading que é APENAS um link → texto puro. Causa: os
+ *     lookbehinds de glossário e de post em internal-linking.js eram
+ *     `(?<![\[#])` — UM caractere — e em `## Risks` o caractere anterior é um
+ *     espaço, logo não protegiam heading nenhum. Corrigido na origem no mesmo
+ *     dia; esta regra limpa o legado. Medido: 51 ficheiros (36 glossário + 15
+ *     posts), padrão dominante `## [Risks](/en/posts/en-cdb-vs-treasury-...)`.
+ *
  * NUNCA toca: frontmatter, imagens ![...], links externos, /contato, blocos ```.
  *
- * Uso: node src/scripts/manutencao/limpar-links-internos.js [--dry-run]
+ * Uso: node src/scripts/manutencao/limpar-links-internos.js [--dry-run] [--headings-only]
+ *
+ * ⚠️ `--headings-only` aplica SÓ a regra 0. Sem ele, as regras 1-3 correm sobre
+ * o acervo inteiro — medido em 30/07: 85 ficheiros alterados, 82 links
+ * repontados e 31 desfeitos. Use o modo restrito quando o objetivo for apenas
+ * o legado de headings.
  */
 
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
@@ -22,6 +34,7 @@ import { getGlossaryTerms, parseFrontmatter, INTERNAL_URL_RE } from '../automaco
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const GLOSSARIO_DIR = join(process.cwd(), 'src', 'content', 'glossario');
 const DRY_RUN = process.argv.includes('--dry-run');
+const HEADINGS_ONLY = process.argv.includes('--headings-only');
 
 const CAPS = { posts: 8, glossario: 6 };
 const PRIORITY = { ferramentas: 0, glossario: 1, posts: 2 };
@@ -51,7 +64,7 @@ function maskCodeBlocks(body) {
   return { masked, blocks };
 }
 
-function cleanBody(body, { cap, termUrlByName, ownUrl }) {
+function cleanBody(body, { cap, termUrlByName, ownUrl, headingsOnly = false }) {
   const { masked, blocks } = maskCodeBlocks(body);
 
   // Coleta os links markdown do corpo (imagens e não-internos ficam intactos)
@@ -65,30 +78,46 @@ function cleanBody(body, { cap, termUrlByName, ownUrl }) {
     links.push({ index: m.index, full, anchor, url, target: url, action: 'keep' });
   }
 
-  // 1) Coerência de âncora: nome de termo apontando para /posts/* → glossário
+  // 0) Heading que é APENAS um link → texto puro. Só desfaz quando TUDO o que
+  // está na linha é o marcador de heading + este link; heading com texto à volta
+  // fica intacto (é feio, mas legível, e são 227 ficheiros — fora de escopo).
   for (const l of links) {
-    if (classOf(l.target) === 'posts') {
-      const gUrl = termUrlByName.get(l.anchor.trim().toLowerCase());
-      if (gUrl) { l.target = gUrl; }
+    const lineStart = masked.lastIndexOf('\n', l.index) + 1;
+    let lineEnd = masked.indexOf('\n', l.index);
+    if (lineEnd === -1) lineEnd = masked.length;
+    const antes = masked.slice(lineStart, l.index);
+    const depois = masked.slice(l.index + l.full.length, lineEnd);
+    if (/^#{1,6}[ \t]+$/.test(antes) && /^[ \t\r]*$/.test(depois)) {
+      l.action = 'unlink';
     }
-    // Auto-link (glossário apontando para si mesmo) → texto puro
-    if (ownUrl && l.target === ownUrl) l.action = 'unlink';
   }
 
-  // 2) Dedup: primeiro link para cada destino vence; repetidos viram texto puro
-  const seen = new Set();
-  for (const l of links) {
-    if (l.action !== 'keep') continue;
-    if (seen.has(l.target)) l.action = 'unlink';
-    else seen.add(l.target);
-  }
+  if (!headingsOnly) {
+    // 1) Coerência de âncora: nome de termo apontando para /posts/* → glossário
+    for (const l of links) {
+      if (classOf(l.target) === 'posts') {
+        const gUrl = termUrlByName.get(l.anchor.trim().toLowerCase());
+        if (gUrl) { l.target = gUrl; }
+      }
+      // Auto-link (glossário apontando para si mesmo) → texto puro
+      if (ownUrl && l.target === ownUrl) l.action = 'unlink';
+    }
 
-  // 3) Teto com prioridade ferramenta > glossário > post; empate = 1ª ocorrência
-  const alive = links.filter(l => l.action === 'keep');
-  const ranked = [...alive].sort((a, b) =>
-    (PRIORITY[classOf(a.target)] - PRIORITY[classOf(b.target)]) || (a.index - b.index)
-  );
-  for (const l of ranked.slice(cap)) l.action = 'unlink';
+    // 2) Dedup: primeiro link para cada destino vence; repetidos viram texto puro
+    const seen = new Set();
+    for (const l of links) {
+      if (l.action !== 'keep') continue;
+      if (seen.has(l.target)) l.action = 'unlink';
+      else seen.add(l.target);
+    }
+
+    // 3) Teto com prioridade ferramenta > glossário > post; empate = 1ª ocorrência
+    const alive = links.filter(l => l.action === 'keep');
+    const ranked = [...alive].sort((a, b) =>
+      (PRIORITY[classOf(a.target)] - PRIORITY[classOf(b.target)]) || (a.index - b.index)
+    );
+    for (const l of ranked.slice(cap)) l.action = 'unlink';
+  }
 
   // Reconstrução por fatias (só reescreve o que mudou)
   let out = '';
@@ -147,6 +176,7 @@ function main() {
         cap,
         termUrlByName: termUrlByLocale[locale],
         ownUrl,
+        headingsOnly: HEADINGS_ONLY,
       });
 
       const r = report[locale];

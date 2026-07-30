@@ -22,7 +22,7 @@ translate: true
 ## Introducción
 Las [vacaciones](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) de julio son un momento esperado por muchos brasileños, una oportunidad para relajarse, viajar y disfrutar del tiempo con la familia y amigos. Sin embargo, es común que estos períodos de ocio estén acompañados de gastos excesivos, comprometiendo el [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) familiar y generando estrés financiero. En este artículo, vamos a explorar [consejos](/es/posts/es-7-errores-financieros-principiante) prácticos para ahorrar en las vacaciones de julio sin comprometer la diversión.
 
-## [Planeamiento Financiero](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s)
+## Planeamiento Financiero
 Antes de nada, es fundamental tener un planeamiento financiero sólido. Esto incluye definir un [presupuesto](/es/posts/es-organizar-finanzas-pareja) para las vacaciones, considerando todos los gastos posibles, desde pasajes y hospedaje hasta alimentación y actividades. Un ejemplo práctico es el caso de una familia de cuatro personas, con un salario mensual de R$ 8.000,00. Si ellos deciden viajar al Nordeste, el costo del pasaje aéreo puede variar de R$ 500,00 a R$ 1.000,00 por persona, dependiendo de la época y la compañía aérea. Además, el costo de la hospedaje puede variar de R$ 100,00 a R$ 300,00 por noche, dependiendo del tipo de alojamiento elegido.
 
 ## Consejos para Ahorrar

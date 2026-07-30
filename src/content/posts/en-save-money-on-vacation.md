@@ -22,7 +22,7 @@ translate: true
 ## Introduction
 The July [vacation](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation) is a highly anticipated time for many Brazilians, an opportunity to relax, [travel](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff), and enjoy time with family and friends. However, it's common for these periods of leisure to be accompanied by excessive spending, compromising the family [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) and generating financial stress. In this article, we'll explore practical tips to save [money](/en/posts/en-30-day-rule-for-purchases) on your July vacation without sacrificing fun.
 
-## [Financial Planning](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea)
+## Financial Planning
 First and foremost, it's essential to have a solid financial plan. This includes defining a [budget](/en/posts/en-how-to-create-personal-budget) for the vacation, considering all possible expenses, from transportation and accommodation to food and activities. A practical example is the case of a family of four, with a monthly salary of R$ 8,000.00. If they decide to travel to the Northeast, the cost of airfare can range from R$ 500.00 to R$ 1,000.00 per person, depending on the time and airline. Additionally, the cost of accommodation can range from R$ 100.00 to R$ 300.00 per night, depending on the type of accommodation chosen.
 
 ## Tips to Save [Money](/en/posts/en-avoid-impulse-purchases)

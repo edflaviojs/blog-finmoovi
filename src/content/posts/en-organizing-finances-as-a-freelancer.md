@@ -17,12 +17,12 @@ seo:
   keywords: ["how to organize finances as a freelancer","personal finance","economy","money"]
 ---
 
-## [Financial Planning](/en/posts/en-how-to-create-personal-budget)
+## Financial Planning
 When you're a freelancer, it's easy to get lost in managing your [money](/en/posts/en-30-day-rule-for-purchases). Without a fixed salary, it's common not to know exactly how much you'll earn the next month. That's why creating a personalized financial plan is crucial. Let's assume you earn an average of $1,000 per month. From this amount, it's essential to set aside a portion for essential [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea), such as rent ($200), water and electricity bills ($30), and food ($160). Additionally, it's essential to include a reserve for taxes and contributions, which can range from 10% to 20% of your monthly earnings.
 
 **Practical tip:** Set aside 10% of your monthly earnings for an emergency account. This will help ensure you have [money](/en/posts/en-financial-planning-for-couples) to cover unexpected expenses, such as a doctor's visit or car repairs.
 
-## [Expense Management](/en/posts/en-you-re-not-alone-in-struggling-to-organize-your-finances)
+## Expense Management
 [Expense management](/en/posts/en-you-also-forget-to-record-your-expenses) is another critical area for freelancers. Without a fixed salary, it's easy to get carried away with unnecessary expenses. To avoid this, it's essential to create a detailed budget. Here's an example of how you can divide your expenses:
 - Essential expenses: 50% of your monthly earnings ($500)
 - Non-essential expenses: 20% of your monthly earnings ($200)

@@ -42,7 +42,7 @@ Existem várias vantagens em entender e gerenciar o imposto de renda, como:
 * Evitar multas e penalidades por atraso ou erro na declaração do imposto de renda
 * **Dica prática:** utilize um aplicativo de [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026), como o [Nubank](/glossario/nubank), para ter controle sobre suas despesas e renda.
 
-## [Riscos](/posts/cdb-vs-tesouro-selic-qual-rende-mais-em-2026)
+## Riscos
 Existem também riscos associados ao imposto de renda, como:
 * Multas e penalidades por atraso ou erro na declaração do imposto de renda
 * Perda de deduções e abatimentos por falta de comprovantes

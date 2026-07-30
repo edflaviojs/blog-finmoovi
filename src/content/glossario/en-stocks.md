@@ -46,7 +46,7 @@ Stocks offer several advantages, including:
 
 
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 However, stocks also involve risks, including:
 * **Loss risk**: the value of the shares can drop, meaning you could lose money if you sell the shares for a lower price than you paid.
 * **[Volatility](/en/glossario/en-volatility) risk**: share prices can fluctuate rapidly, which can be stressful if you’re not prepared.

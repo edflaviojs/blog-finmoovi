@@ -17,7 +17,7 @@ seo:
   keywords: ["consejos para controlar gastos en la tarjeta de crédito","finanzas personales","economía","dinero"]
 ---
 
-## [Control de Gastos](/es/posts/es-metodo-50-30-20-para-presupuesto)
+## Control de Gastos
 Imagina que ganas $ 5.000 por mes y gastas $ 1.500 en gastos fijos, como alquiler, cuenta de luz y internet. Eso significa que tienes $ 3.500 disponibles para gastar en otras cosas, como comida, ocio y compras. Sin embargo, si no controlas tus gastos, es fácil superar ese límite y acabar con deudas en la [tarjeta de crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen).
 
 Una forma de evitar esto es crear un [presupuesto](/es/posts/es-como-crear-un-presupuesto-personal-en-5-pasos-simples) y llevar un registro de tus gastos. **Consejo práctico:** Puedes usar una aplicación de [gestión financiera](/es/posts/es-montando-cartera-diversificada-con-r-500) para registrar todos tus gastos y tener una visión clara de dónde está yendo tu [dinero](/es/posts/es-ahorra-en-las-compras-del-supermercado). Por ejemplo, si gastas $ 500 por mes en comida fuera, puedes intentar reducir ese [valor](/es/glossario/es-valor-financiero) a $ 300 y ahorrar $ 200.

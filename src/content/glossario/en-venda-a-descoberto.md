@@ -46,7 +46,7 @@ All this process takes place within the same broker, which handles the loan and 
 
 
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 
 - **Unlimited loss:** unlike a traditional purchase, where the maximum loss is the amount invested, in short selling the loss can be infinite because the stock price can rise without limit.  
 - **Margin call:** if the price rises sharply, the broker may require you to deposit more money (margin) or close the position immediately, generating a loss.  

@@ -46,7 +46,7 @@ LCs offer several advantages for both the buyer and the seller. For the buyer, t
 
 
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 Although LCs are a secure form of payment, they also involve some risks. One of the main risks is fraud risk, as LCs can be forged or altered. In addition, LCs can be used for illegal purposes, such as money laundering or tax evasion. **Practical tip:** It is important to verify the authenticity of the LC before accepting it, and it is also important to keep accurate records of the transactions.
 
 **Practical tip:** It is important to work with a reliable and experienced bank in LCs to minimize the risks.

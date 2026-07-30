@@ -33,7 +33,7 @@ Many couples face the challenge of dealing with debt, whether it's credit card d
 ## Investments and Savings
 In addition to managing expenses and debt, couples should also consider investments and savings. This can include creating an emergency fund, investing in stocks or investment funds, or even buying a property. **Practical tip:** consider investing in a [Tesouro Direto](https://www.tesourodireto.com.br), which offers a safe and profitable way to invest your money. Additionally, it's essential to stay up-to-date with current economic and financial trends, which can be done by following websites like the [Banco Central do Brasil](https://www.bcb.gov.br) or the [IBGE](https://www.ibge.gov.br).
 
-## [Financial Education](/en/glossario/en-financial-education)
+## Financial Education
 Financial education is fundamental for couples to make informed decisions about their finances. This can include reading books on personal finance, participating in courses or workshops, or even consulting with a financial planner. A good source of information is the [Investopedia](https://www.investopedia.com) website, which offers articles, videos, and courses on a wide range of financial topics.
 
 ![Investimentos e Poupança](/images/posts/planejamento-financeiro-para-casais-4.webp)

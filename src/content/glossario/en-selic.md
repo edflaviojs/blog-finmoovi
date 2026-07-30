@@ -48,7 +48,7 @@ The Selic rate offers several advantages for the Brazilian economy. One of the m
 
 The Selic rate can also influence the labor market. When the Selic rate is low, loans become cheaper and companies can invest more in expansion and hiring, which can reduce unemployment. For example, if you are a business owner earning R$ 8,000 a month and are thinking about expanding your business, a low Selic rate can make loans more accessible and affordable.
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 The Selic rate also carries risks. One of the main disadvantages is that it can negatively affect the country’s economic growth. When the Selic rate is high, loans become more expensive and people tend to save more and spend less, which can slow economic growth. Moreover, the Selic rate can influence the value of the real against other currencies, affecting the country’s exports and imports.
 
 * The Selic rate can negatively affect the country’s economic growth  

@@ -44,6 +44,6 @@ Investing in the stock exchange can be a great way to grow your wealth over time
 
 ![Advantages](/images/glossario/bolsa-de-valores-inline-3.webp)
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 However, investing in the stock exchange also involves risks. Here are some of the main risks:
 * Loss of value: stocks can decrease in value, resulting

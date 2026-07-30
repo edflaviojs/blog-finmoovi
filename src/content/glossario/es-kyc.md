@@ -44,7 +44,7 @@ El proceso KYC ofrece varias ventajas para las instituciones financieras y los c
 
 
 
-## [Riesgos](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
+## Riesgos
 Aunque el proceso KYC es importante para la seguridad y la confianza en las transacciones financieras, también puede presentar algunos riesgos. Algunos de los riesgos incluyen:
 * La recopilación y almacenamiento de información personal y financiera puede ser vulnerable a la piratería informática y el robo de identidad
 * El proceso de verificación puede ser lento y burocrático, lo que puede frustrar a los clientes

@@ -47,7 +47,7 @@ Other advantages of KYC include:
 
 
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 Although KYC is an important process for preventing illicit activities, there are also risks associated with it. **Practical tip:** one of the main risks is data breach, which can occur if the collected information is stored insecurely or accessed by unauthorized persons.
 
 Other risks include:

@@ -40,7 +40,7 @@ Webull offers several advantages compared to traditional securities brokerages. 
 * Analysis tools: Webull provides a variety of analysis tools and educational resources to help investors make informed decisions.  
 * Mobile access: The platform has a mobile interface, allowing you to monitor your investments and execute trades from anywhere.
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 Like any investment, Webull also involves risks. Some of the main risks include:
 * Loss risk: You can lose money if the financial assets you bought decrease in [valor](/en/glossario/en-financial-value).  
 * [Volatility](/en/glossario/en-volatility) risk: Prices of financial assets can be volatile, meaning they can rise or fall quickly.  

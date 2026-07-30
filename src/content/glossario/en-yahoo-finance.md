@@ -49,7 +49,7 @@ Using Yahoo Finance brings practical benefits that go beyond “seeing the sto
 - **Customizable alerts:** you can set notifications for when a stock rises or falls X %  
 - **App integration:** the same content can be viewed on your phone, making it easier to follow during daily routine  
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 
 Even though it’s a practical tool, Yahoo Finance has limitations that can create pitfalls if you’re not careful.  
 

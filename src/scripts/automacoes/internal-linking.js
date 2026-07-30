@@ -179,8 +179,16 @@ export function addLinksToBody(body, terms, postLinks, maxGlossaryLinks = 3, max
     if (existingUrls.has(url)) continue;
 
     const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // (?<!#[^\n]*) → nunca linkar dentro de heading. MESMA guarda do caminho de
+    // ferramenta acima (l.164). Antes daqui era `(?<![\[#])`, lookbehind de UM
+    // caractere: em `## Risks` o caractere anterior é um espaço, logo não
+    // protegia nada. Medido em 30/07: 51 ficheiros com um heading que É apenas
+    // um link e 227 com link dentro de heading — o padrão dominante era
+    // `## [Risks](/en/posts/en-cdb-vs-treasury-selic-...)`. Agravante: a guarda
+    // correta só vivia no caminho de ferramenta, e TOOL_LINKS não tem chaves
+    // en/es, portanto esse caminho nunca corre em EN/ES.
     const regex = new RegExp(
-      `(?<![\\[#])\\b(${escapedTerm})\\b(?![\\]\\(])`,
+      `(?<!#[^\\n]*)(?<!\\[)\\b(${escapedTerm})\\b(?![\\]\\(])`,
       'i'
     );
 
@@ -208,8 +216,9 @@ export function addLinksToBody(body, terms, postLinks, maxGlossaryLinks = 3, max
       !GENERIC_POST_ANCHORS.has(t.toLowerCase())
     )) {
       const escapedTag = tag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      // (?<!#[^\n]*) → nunca linkar dentro de heading (ver nota em l.183).
       const regex = new RegExp(
-        `(?<![\\[#])\\b(${escapedTag})\\b(?![\\]\\(])`,
+        `(?<!#[^\\n]*)(?<!\\[)\\b(${escapedTag})\\b(?![\\]\\(])`,
         'i'
       );
       const match = result.match(regex);

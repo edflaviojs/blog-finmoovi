@@ -32,7 +32,7 @@ Variable Income is everything that doesn't have a guaranteed return. The price g
 4. **Cryptocurrencies** — decentralized digital assets  
 5. **Derivatives** — futures contracts, options (advanced)
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 
 - Capital loss (your investment may be worth less)  
 - Volatility (daily fluctuations)  

@@ -50,7 +50,7 @@ Additionally, it's crucial to have an effective billing system to ensure you rec
 
 
 
-## [Financial Education](/en/glossario/en-financial-education)
+## Financial Education
 Financial education is essential for anyone, especially freelancers. This includes understanding basic financial concepts, such as interest, investments, and taxes. There are many resources available online, like [Investopedia](https://www.investopedia.com), that can help improve your financial knowledge.
 
 **Practical tip:** Set aside 1 hour per week to learn about personal finance and financial planning.

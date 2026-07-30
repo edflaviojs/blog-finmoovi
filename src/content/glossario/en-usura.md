@@ -46,7 +46,7 @@ However, it is important to remember that usury can have severe consequences, an
 
 ![Advantages](/images/glossario/usura-inline-3.webp)
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 Usury can have serious consequences for the borrower, including:
 * Loss of assets: if the borrower cannot repay the debt, the lender may seize assets such as a house or a car.  
 * Credit deterioration: usury can negatively affect the borrower’s credit, making it harder to obtain loans in the future.  

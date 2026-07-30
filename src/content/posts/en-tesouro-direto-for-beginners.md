@@ -40,7 +40,7 @@ There are several types of securities available in Tesouro Direto, each with its
 
 For example, if you invest R$5,000 in an LTN title with a 5-year term and 6% annual interest, you'll receive R$5,638.49 after maturity, considering annual [compound interest](/en/glossario/en-compound-interest).
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 Although Tesouro Direto is considered a low-risk [investment](/en/posts/en-building-a-diversified-portfolio-with-r-500), there are some risks to consider:
 
 * Inflation risk: if inflation increases, the real value of your investment may decrease.

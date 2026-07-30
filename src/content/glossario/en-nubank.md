@@ -51,7 +51,7 @@ Nubank’s proposition is to make banking services more transparent and cheaper.
 - Full control from the phone: block, limit and bill in real time  
 - Simple rewards program, without complicated rules  
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 
 Even with many advantages, using a fully digital bank has some points of attention. First, the dependence on the internet: if the phone freezes or the network drops, you may be left without immediate access to your money. Second, the credit limit can be automatically adjusted by the algorithm, which sometimes surprises people used to fixed limits. Finally, although the deposit insurance fund covers up to $50,000 per institution, the total [value](/en/glossario/en-financial-value) deposited is still subject to market risks in the investments.  
 

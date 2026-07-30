@@ -38,7 +38,7 @@ Diversification works because different assets have different cycles of apprecia
 ## Advantages
 Diversification has several advantages, including reducing the risk of loss of value, the possibility of increasing long‑term gains, and the peace of mind that your money is spread out safely. In addition, diversification can also help reduce stress and anxiety caused by market uncertainty. **Practical tip:** It’s important to diversify your investments according to your risk profile and financial goals. For example, if you are more conservative, you may want to allocate more money to debt securities and less to stocks.
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 Although diversification is a safe strategy, there are also risks involved. For example, if you diversify too much, you may miss out on higher returns from a specific asset. Moreover, diversification can be complex and require more time and effort to manage. **Practical tip:** It’s important to remember that diversification is not a “buy and forget” strategy, but an active management strategy. You need to monitor your investments regularly and make adjustments as needed.
 
 ![Advantages](/images/glossario/diversificacao-inline-3.webp)

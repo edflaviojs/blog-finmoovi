@@ -49,7 +49,7 @@ For people earning between **R$3,000** and **R$8,000**, xing ling brings benefit
 
 **Practical tip:** **Start with a contribution of [R$500](/en/posts/en-building-a-diversified-portfolio-with-r-500) and increase gradually as your budget allows.**  
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 
 Although xing ling is safer than individual stocks, it is not risk‑free. The main risk is interest‑rate variation: if the Central Bank raises the rate, the securities already bought may lose market value, although the return is still guaranteed until maturity. Another point of attention is management fees, which can reduce your net gain if the fund is very small. Finally, because the investment depends on an app, there is a risk of technical or cybersecurity failures.
 

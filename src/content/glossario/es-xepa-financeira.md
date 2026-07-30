@@ -39,7 +39,7 @@ Aunque la xepa financeira puede parecer una situación sin salida, hay algunas v
 * Aumento de la conciencia sobre los gastos y las deudas
 * Oportunidad de negociar con los acreedores para reducir los intereses o los pagos
 
-## [Riesgos](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
+## Riesgos
 La xepa financeira también conlleva algunos [riesgos](/es/posts/es-montando-cartera-diversificada-con-r-500) importantes, como la pérdida de la capacidad de crédito, la ejecución de bienes y la afectación de la salud mental. **Consejo práctico:** es importante abordar la xepa financeira de manera proactiva y buscar ayuda profesional si es necesario. Algunos de los riesgos de la xepa financeira incluyen:
 * Pérdida de la capacidad de crédito
 * Ejecución de bienes, como la casa o el coche

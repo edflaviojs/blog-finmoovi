@@ -43,7 +43,7 @@ The main benefits of Tesouro Direto include:
 
 ![Advantages](/images/glossario/tesouro-direto-inline-3.webp)
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 Although Tesouro Direto is considered a low‑risk investment, there are some factors to consider:
 * **Credit risk:** Although low, there is a risk that the government might not honor its commitments.  
 * **Inflation risk:** If inflation rises, the purchasing power of the invested money may decrease.  

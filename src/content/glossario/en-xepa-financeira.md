@@ -36,7 +36,7 @@ A financial xepa can have some benefits, such as allowing people to enjoy experi
 * Can be a way to reward oneself  
 * Can help reduce stress and anxiety  
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 However, the financial xepa can also have risks, such as accumulating [debt](/en/glossario/en-debt) or lacking resources for essential expenses. **Practical tip:** it is important to prioritize essential expenses, such as rent, food, and bills, before spending on non‑essential items. For example, if a person earns R$ 4.000 per month and spends R$ 2.000 on essential expenses, they need to be sure they have enough resources to cover those [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) before spending on non‑essential expenses.  
 * Accumulation of debt  
 * Lack of resources for essential expenses  

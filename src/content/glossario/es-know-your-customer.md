@@ -49,7 +49,7 @@ KYC (Conheça Seu Cliente) es el proceso que bancos y corretoras usan para verif
 - Préstamos y financiamientos
 - Inversiones por encima de ciertos valores
 
-## [Consejos](/es/posts/es-7-errores-financieros-principiante)
+## Consejos
 
 1. Mantén documentos digitalizados en el celular (facilita)  
 2. Comprobante de domicilio: cuenta de luz/agua de los últimos 3 meses  

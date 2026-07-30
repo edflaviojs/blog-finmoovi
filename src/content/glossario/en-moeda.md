@@ -42,7 +42,7 @@ Money has many advantages, such as:
 * Saving and investing: money lets people save and invest for the future.  
 * **Practical tip:** Use a finance app to track your expenses and income and get a clear view of your money.
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 However, money also carries risks, such as:
 * [Inflation](/en/glossario/en-inflation): inflation is when the value of money decreases over time, meaning the same amount of cash can buy fewer things.  
 * Unemployment: if you lose your job, you may not have money to buy the things you need.  

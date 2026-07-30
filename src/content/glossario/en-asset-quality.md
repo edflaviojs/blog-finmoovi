@@ -46,7 +46,7 @@ Focusing on quality brings benefits that go beyond the wallet. First, you reduce
 - Greater predictability in monthly budgets.  
 - Building a history of smart purchases that boosts self‑confidence.  
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 
 Despite the advantages, the pursuit of quality can bring some challenges. The main risk is falling into the “high price = better” trap. Not everything that [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) more has superior quality; some brands charge only for the name. Moreover, focusing too much on quality can postpone important decisions, such as investing money that sits idle while waiting for the “perfect option.”  
 

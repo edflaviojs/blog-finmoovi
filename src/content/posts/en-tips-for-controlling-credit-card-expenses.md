@@ -17,7 +17,7 @@ seo:
   keywords: ["tips for controlling credit card expenses","personal finance","economy","money"]
 ---
 
-## [Expense Control](/en/posts/en-how-to-create-personal-budget)
+## Expense Control
 Imagine you earn R$ 5,000 per month and spend R$ 1,500 on fixed expenses, such as rent, electricity, and internet. This means you have R$ 3,500 available to spend on other things, like food, leisure, and shopping. However, if you don't control your expenses, it's easy to exceed this limit and end up with [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026) debt.
 
 One way to avoid this is to create a [budget](/en/posts/en-5-tips-to-reorganize-your-finances-on-vacation) and track your expenses. **Practical tip:** You can use a [financial management](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f) app to record all your expenses and have a clear view of where your [money](/en/posts/en-avoid-impulse-purchases) is going. For example, if you spend R$ 500 per month on dining out, you can try to reduce that amount to R$ 300 and save R$ 200.

@@ -42,7 +42,7 @@ If you have a salary of $1,600 per month and invest 20% of it in stocks, you hav
 
 ![Advantages](/images/glossario/hedge-inline-3.webp)
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 However, hedges also have risks. If you buy a hedge and the market moves in your favor, you can lose the money you spent on the hedge. Moreover, hedges can be complex and difficult to understand, which can lead to investment mistakes. **Practical tip:** It’s important to do careful research and fully understand how the hedge works before investing.
 
 * Lose the money invested in the hedge

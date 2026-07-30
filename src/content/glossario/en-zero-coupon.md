@@ -44,7 +44,7 @@ Zero coupons have several advantages over other types of investments. One is sim
 
 
 
-## [Risks](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)
+## Risks
 However, zero coupons also have some risks. One is credit risk, which I mentioned earlier. Another is inflation risk, which can erode the real value of the money you’ll receive at maturity. Additionally, zero coupons can have liquidity risk, i.e., the risk that you cannot sell the security before maturity.
 
 **Practical tip:** It’s important to diversify your investments to reduce credit risk and other risks. That means you should invest in different types of assets, such as [stocks](/en/glossario/en-stocks), debt securities, and [investment funds](/en/glossario/en-investment-fund).
