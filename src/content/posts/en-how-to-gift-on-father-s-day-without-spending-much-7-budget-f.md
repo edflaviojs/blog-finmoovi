@@ -35,15 +35,15 @@ Before you start browsing the internet, set a ceiling. Use the **30 %** rule: 
 ## 2️⃣ Gift ideas under $5
 
 ### 2.1. Handmade breakfast kit
-- **What to buy:** cheese bread, instant coffee, homemade jam, seasonal fruit.  
+- **What to buy:** cheese bread, instant coffee, homemade jam, seasonal fruit.
 - **Cost:** about $7 if you shop at local markets and take advantage of promotions.
 
 ### 2.2. Used book or e‑book
-- **Where to find:** online used‑book stores or e‑book promotions on digital platforms.  
+- **Where to find:** online used‑book stores or e‑book promotions on digital platforms.
 - **Average price:** $4‑$6.
 
 ### 2.3. “Do‑it‑yourself” experience
-- **Example:** a fishing day, a bike ride, or a backyard barbecue.  
+- **Example:** a fishing day, a bike ride, or a backyard barbecue.
 - **Cost:** almost zero, just the food or fuel, which can stay within your limit.
 
 ## 3️⃣ Leverage **cashback** and coupons
@@ -52,8 +52,8 @@ Smart **cashback** can return up to 12 % of the amount spent at partner stores
 
 ![3️⃣ Leverage **cashback** and coupons](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--4.webp)
 
-1. **Choose a cashback app** ([FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f) integrates with partners that offer cashback).  
-2. **Activate coupons** before checkout – sites like *Cuponomia* or *Méliuz* usually have valid codes.  
+1. **Choose a cashback app** ([FinMoovi](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f) integrates with partners that offer cashback).
+2. **Activate coupons** before checkout – sites like *Cuponomia* or *Méliuz* usually have valid codes.
 3. **Pay with a [credit card](/en/posts/en-credit-card-vs-debit-card-which-is-worth-it-in-2026)** that offers extra cashback (up to 1 % additional).
 
 > **Result:** a $24 gift can generate up to $3 back, lowering the effective cost.
@@ -61,15 +61,15 @@ Smart **cashback** can return up to 12 % of the amount spent at partner stores
 ## 4️⃣ DIY (Do‑It‑Yourself) Gifts
 
 ### 4.1. Digital memory album
-- **How to make:** select old photos, use a free editor (Canva) and assemble an interactive PDF.  
+- **How to make:** select old photos, use a free editor (Canva) and assemble an interactive PDF.
 - **Cost:** zero, just your time.
 
 ### 4.2. Homemade craft beer or wine
-- **Materials:** reused bottles, custom label (printed at home).  
+- **Materials:** reused bottles, custom label (printed at home).
 - **[Investment](/en/posts/en-building-a-diversified-portfolio-with-r-500):** $6‑$8 for the supplies.
 
 ### 4.3. “Car Maintenance” kit
-- **Items:** oil, air filter, microfiber cloth.  
+- **Items:** oil, air filter, microfiber cloth.
 - **Why it works:** shows practical concern and also helps save on future maintenance.
 
 ## 5️⃣ Early planning: the strategy that saves your wallet
@@ -104,6 +104,6 @@ Gifting dad doesn’t have to mean extravagant spending. With a well‑defined l
 ---
 
 **Sources:**
-- [national statistics office – Average monthly income of workers](https://www.nationalstatistics.org)  
-- [credit bureaus – Consumption on commemorative dates 2023](https://www.creditbureaus.org)
+- national statistics office – Average monthly income of workers
+- credit bureaus – Consumption on commemorative dates 2023
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"How to Gift on Father's Day Without Spending Much: 7 Budget‑Friendly Ideas","step":[{"@type":"HowToStep","position":1,"name":"1. Handmade breakfast kit","text":"- What to buy: cheese bread, instant coffee, homemade jam, seasonal fruit. - Cost: about $7 if you shop at local markets and take advantage of promotions."},{"@type":"HowToStep","position":2,"name":"2. Used book or e‑book","text":"- Where to find: online used‑book stores or e‑book promotions on digital platforms. - Average price: $4‑$6."},{"@type":"HowToStep","position":3,"name":"3. “Do‑it‑yourself” experience","text":"- Example: a fishing day, a bike ride, or a backyard barbecue. - Cost: almost zero, just the food or fuel, which can stay within your limit."},{"@type":"HowToStep","position":4,"name":"Choose a cashback app (FinMoovi integrates with partners that offer cashback).","text":"Choose a cashback app (FinMoovi integrates with partners that offer cashback)."},{"@type":"HowToStep","position":5,"name":"Activate coupons before checkout – sites like Cuponomia or Méliuz usually have valid codes.","text":"Activate coupons before checkout – sites like Cuponomia or Méliuz usually have valid codes."},{"@type":"HowToStep","position":6,"name":"Pay with a credit card that offers extra cashback (up to 1 % additional).","text":"> Result: a $24 gift can generate up to $3 back, lowering the effective cost."},{"@type":"HowToStep","position":7,"name":"1. Digital memory album","text":"- How to make: select old photos, use a free editor (Canva) and assemble an interactive PDF. - Cost: zero, just your time."},{"@type":"HowToStep","position":8,"name":"2. Homemade craft beer or wine","text":"- Materials: reused bottles, custom label (printed at home). - Investment: $6‑$8 for the supplies."}]} -->

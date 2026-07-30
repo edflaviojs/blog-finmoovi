@@ -1,8 +1,13 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-07-29T07:40:48.777Z
-**Posts:** 213 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 33
+**Gerado em:** 2026-07-30T07:32:22.047Z
+**Posts:** 219 · limpos: 1 · bloqueados p/ revisao: 0 · com flags: 35
 
+## ✂️ Cortes aplicados (citacao/estatistica sem fonte confiavel)
+
+**en-how-to-gift-on-father-s-day-without-spending-much-7-budget-f.md**
+- link removido: https://www.nationalstatistics.org
+- link removido: https://www.creditbureaus.org
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
 
@@ -66,8 +71,16 @@
 **en-review-your-budget.md**
 - _Reviewing our [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according_
 
+**en-understand-price-amortization-and-optimize-your-finances-in-.md**
+- _Conforme o saldo vai diminuindo, a parcela passa a amortizar mais do principal._
+- _A PRICE tem parcelas fixas ao longo de todo o contrato, enquanto a SAC tem parcelas que diminuem conforme o saldo devedor é amortizado, resultando em pagamentos maiores no início e menores depois._
+
 **en-you-re-not-alone-in-struggling-to-organize-your-finances.md**
 - _According to statistics, people who use expense management apps like FinMoovi tend to save more and have better financial health._
+
+**entenda-a-amortizacao-price-e-otimize-suas-financas-em-2026.md**
+- _Conforme o saldo vai diminuindo, a parcela passa a amortizar mais do principal._
+- _A PRICE tem parcelas fixas ao longo de todo o contrato, enquanto a SAC tem parcelas que diminuem conforme o saldo devedor é amortizado, resultando em pagamentos maiores no início e menores depois._
 
 **es-migrando-de-la-hoja-de-calculo-a-una-app-financiera.md**
 - _De acuerdo con investigaciones, el 70% de las personas que usan hojas de cálculo abandonan en 30 días por falta de consistencia._
