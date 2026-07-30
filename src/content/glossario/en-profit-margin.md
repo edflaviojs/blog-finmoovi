@@ -12,7 +12,7 @@ readingTime: 2
 
 ## What is Profit Margin?
 
-Profit margin is what's left over from each real that comes in. If a company bills R$ 100 and has R$ 80 in [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide), its profit margin is 20%. The larger the margin, the more efficient the business is.
+Profit margin is what's left over from each dollar that comes in. If a company bills $100 and has $80 in [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide), its profit margin is 20%. The larger the margin, the more efficient the business is.
 
 ## Types of Margin
 
@@ -35,11 +35,11 @@ Profit margin is what's left over from each real that comes in. If a company bil
 
 | | Value | Margin |
 |--|-------|--------|
-| Billing | R$ 50,000 | - |
-| Cost of clothes | R$ 20,000 | Gross: 60% |
-| Expenses (rent, salaries) | R$ 20,000 | Operational: 20% |
-| Taxes | R$ 5,000 | Net: 10% |
-| **Net Profit** | **R$ 5,000** | |
+| Billing | $10,000 | - |
+| Cost of clothes | $4,000 | Gross: 60% |
+| Expenses (rent, salaries) | $4,000 | Operational: 20% |
+| Taxes | $1,000 | Net: 10% |
+| **Net Profit** | **$1,000** | |
 
 ## What it's for (investor)
 
@@ -50,4 +50,4 @@ When analyzing [stocks](/en/glossario/en-stocks), the profit margin shows:
 
 ## For [personal finance](/en/posts/en-30-day-rule-for-purchases)
 
-You also have a "margin": how much is left over from your salary after all expenses. If you earn R$ 5,000 and R$ 1,000 is left over, your personal margin is 20%. The ideal is at least 20% (50-30-20 rule).
+You also have a "margin": how much is left over from your salary after all expenses. If you earn $1,000 and $200 is left over, your personal margin is 20%. The ideal is at least 20% (50-30-20 rule).

@@ -22,11 +22,11 @@ Effectively managing [personal finances](/en/posts/en-5-tips-to-reorganize-your-
 
 ## Understanding Fixed Expenses
 Before you start reducing fixed expenses, it's important to understand what they are. Fixed expenses are regular [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) that typically occur every month and don't vary much in value. Examples include:
-* Rent or mortgage: R$ 2,500.00
-* Water, electricity, and gas bills: R$ 150.00
-* Internet and phone: R$ 100.00
-* Health insurance: R$ 500.00
-* Service subscriptions (streaming, software, etc.): R$ 200.00
+* Rent or mortgage: $500.00
+* Water, electricity, and gas bills: $30.00
+* Internet and phone: $20.00
+* Health insurance: $100.00
+* Service subscriptions (streaming, software, etc.): $40.00
 
 ## Analyzing Fixed Expenses
 To reduce fixed expenses, you need to conduct a detailed analysis of each expense. This includes:
@@ -46,13 +46,13 @@ Here are some practical tips to reduce fixed expenses:
 Let's consider a practical example:
 | Expense | Original Value | Reduced Value |
 | --- | --- | --- |
-| Rent | R$ 2,500.00 | R$ 2,200.00 (after negotiating with landlord) |
-| Water, electricity, and gas bills | R$ 150.00 | R$ 120.00 (after reviewing bills and eliminating unnecessary expenses) |
-| Internet and phone | R$ 100.00 | R$ 80.00 (after changing plans) |
-| Health insurance | R$ 500.00 | R$ 450.00 (after negotiating with insurance company) |
-| Service subscriptions | R$ 200.00 | R$ 100.00 (after canceling unnecessary subscriptions) |
+| Rent | $500.00 | $440.00 (after negotiating with landlord) |
+| Water, electricity, and gas bills | $30.00 | $24.00 (after reviewing bills and eliminating unnecessary expenses) |
+| Internet and phone | $20.00 | $16.00 (after changing plans) |
+| Health insurance | $100.00 | $90.00 (after negotiating with insurance company) |
+| Service subscriptions | $40.00 | $20.00 (after canceling unnecessary subscriptions) |
 
-With these reductions, you can save R$ 530.00 per month, which equals R$ 6,360.00 per year.
+With these reductions, you can save $106.00 per month, which equals $1,272.00 per year.
 
 ## Conclusion
 Reducing monthly fixed expenses is one of the main strategies to achieve financial stability. With the help of tools like FinMoovi, you can create a personalized budget and manage your finances effectively. Remember that reducing fixed expenses is an ongoing process that requires attention and discipline. Try FinMoovi today and start saving money! [Click here to learn more](https://finmoovi.com).

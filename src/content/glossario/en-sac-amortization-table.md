@@ -22,11 +22,11 @@ SAC (Constant Amortization System) is a [loan](/en/glossario/en-loan) repayment 
 
 ## Practical example
 
-[Financing](/en/glossario/en-financing) of R$ 120,000 in 10 years (120 months) at 1% per month:
-- Monthly amortization: R$ 120,000 ÷ 120 = R$ 1,000
-- 1st installment: R$ 1,000 + R$ 1,200 (interest) = **R$ 2,200**
-- 60th installment: R$ 1,000 + R$ 610 = **R$ 1,610**
-- 120th installment: R$ 1,000 + R$ 10 = **R$ 1,010**
+[Financing](/en/glossario/en-financing) of $24,000 in 10 years (120 months) at 1% per month:
+- Monthly amortization: $24,000 ÷ 120 = $200
+- 1st installment: $200 + $240 (interest) = **$440**
+- 60th installment: $200 + $122 = **$322**
+- 120th installment: $200 + $20 = **$202**
 
 ## SAC vs. Price
 

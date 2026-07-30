@@ -29,11 +29,11 @@ Bonus is an extra payment that the company offers to the employee, usually tied 
 
 ## How it works
 
-The logic of the bonus starts with clear goals. The company defines objectives – such as sales increase, cost reduction, or project delivery – and assigns a value to meeting those objectives. When the employee meets or exceeds the goal, the bonus is released. The calculation usually follows a simple formula: **Bonus = Base salary × Achievement percentage**. If the percentage is 20 % and the salary is R$5.000, the bonus will be R$1.000.
+The logic of the bonus starts with clear goals. The company defines objectives – such as sales increase, cost reduction, or project delivery – and assigns a value to meeting those objectives. When the employee meets or exceeds the goal, the bonus is released. The calculation usually follows a simple formula: **Bonus = Base salary × Achievement percentage**. If the percentage is 20 % and the salary is $1,000, the bonus will be $200.
 
 - **Sales target:** 10 % increase in sales generates 5 % bonus on the salary.  
-- **Project delivered on time:** fixed bonus of R$800.  
-- **Profit sharing:** proportional distribution of the company’s profit, calculated in reais.
+- **Project delivered on time:** fixed bonus of $160.  
+- **Profit sharing:** proportional distribution of the company’s profit, calculated in dollars.
 
 ## Advantages
 
@@ -55,17 +55,17 @@ Despite the advantages, the bonus also has points of attention. First, it can cr
 
 ## Practical examples
 
-Imagine you earn R$4.500 per month and the company offers a quarterly bonus of 10 % of the salary, conditioned on achieving 95 % of sales targets. If you reach 100 % of the targets, the bonus will be:
+Imagine you earn $900 per month and the company offers a quarterly bonus of 10 % of the salary, conditioned on achieving 95 % of sales targets. If you reach 100 % of the targets, the bonus will be:
 
-**Bonus = R$4.500 × 10 % = R$450** per quarter, totaling R$1.800 per year.
+**Bonus = $900 × 10 % = $90** per quarter, totaling $360 per year.
 
-Now, suppose the company has a profit‑sharing program (PLR) that distributes R$5.000 among all employees, proportional to salary. If you earn R$6.000, your share will be:
+Now, suppose the company has a profit‑sharing program (PLR) that distributes $1,000 among all employees, proportional to salary. If you earn $1,200, your share will be:
 
-**Share = (R$6.000 / sum of salaries) × R$5.000**. If the sum of salaries is R$120.000, your share will be R$250.
+**Share = ($1,200 / sum of salaries) × $1,000**. If the sum of salaries is $24,000, your share will be $50.
 
 **Practical tip:** **Set aside 30 % of the received bonus for an [emergency fund](/en/glossario/en-emergency-fund);** this turns the “gift” into financial security.
 
-Another case: an employee with a salary of R$7.200 receives a bonus of R$1.200 for closing a R$200.000 contract. He decides to use 50 % of the bonus to pay the credit‑card bill (R$600) and invests the other R$600 in a fixed‑income fund [fixed income](/en/glossario/en-fixed-income) ([yield](/en/glossario/en-yield), or financial return, of 6 % per year). In 12 months, the investment will yield approximately R$36, increasing the total gain of the bonus.
+Another case: an employee with a salary of $1,440 receives a bonus of $240 for closing a $40,000 contract. He decides to use 50 % of the bonus to pay the credit‑card bill ($120) and invests the other $120 in a fixed‑income fund [fixed income](/en/glossario/en-fixed-income) ([yield](/en/glossario/en-yield), or financial return, of 6 % per year). In 12 months, the investment will yield approximately $7, increasing the total gain of the bonus.
 
 **Practical tip:** **If the bonus is in shares, check the vesting period (the time you need to stay with the company to be entitled to the value);** this avoids surprises when trying to sell the shares too early.
 
@@ -77,7 +77,7 @@ For those who still don’t receive bonuses, the first step is to understand whi
 - **Monitor progress:** use spreadsheets or goal‑tracking apps (like Trello) to track your weekly performance.  
 - **Negotiate:** if the goals seem unattainable, request adjustments or a smaller, but guaranteed, bonus.
 
-**Practical tip:** **Set a monthly “bonus target” (for example, R$300) and work toward it as if it were extra salary;** this helps keep focus and measure success concretely.
+**Practical tip:** **Set a monthly “bonus target” (for example, $60) and work toward it as if it were extra salary;** this helps keep focus and measure success concretely.
 
 ## Start today
 

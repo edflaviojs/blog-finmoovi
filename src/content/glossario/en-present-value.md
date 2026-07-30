@@ -12,7 +12,7 @@ readingTime: 2
 
 ## What is Present Value?
 
-Present Value is what a future amount of [money](/en/posts/en-30-day-rule-for-purchases) is worth TODAY. R$ 1,000 in 1 year is worth less than R$ 1,000 today — because today you could invest it and have more in the future.
+Present Value is what a future amount of [money](/en/posts/en-30-day-rule-for-purchases) is worth TODAY. $200 in 1 year is worth less than $200 today — because today you could invest it and have more in the future.
 
 ## Formula
 
@@ -26,24 +26,24 @@ Where:
 
 ## Practical example
 
-Someone offers you R$ 10,000 in 2 years. With the [Selic](/en/glossario/en-selic) rate at 13% per year, what is it worth today?
+Someone offers you $2,000 in 2 years. With the [central bank base rate](/en/glossario/en-selic) at 13% per year, what is it worth today?
 
-PV = 10,000 ÷ (1.13)² = 10,000 ÷ 1.2769 = **R$ 7,831**
+PV = 2,000 ÷ (1.13)² = 2,000 ÷ 1.2769 = **$1,566**
 
-In other words: receiving R$ 10,000 in 2 years is the same as receiving R$ 7,831 today.
+In other words: receiving $2,000 in 2 years is the same as receiving $1,566 today.
 
 ## What it's used for
 
-1. **Comparing [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)** with different terms
-2. **Evaluating proposals** ("pay R$ 50,000 upfront or R$ 60,000 in 12 installments?")
-3. **Pricing** fixed-[income](/en/posts/en-building-a-diversified-portfolio-with-r-500) securities
+1. **Comparing [investments](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026)** with different terms  
+2. **Evaluating proposals** ("pay $10,000 upfront or $12,000 in 12 installments?")  
+3. **Pricing** fixed-[income](/en/posts/en-building-a-diversified-portfolio-with-r-500) securities  
 4. **Business decisions** (is this project worth it?)
 
 ## Application in everyday life
 
-When a store offers "12 installments with no interest of R$ 100 or R$ 1,000 upfront":
-- 12 installments = R$ 1,200 in total
-- But the present value of 12 installments of R$ 100 is less than R$ 1,200
+When a store offers "12 installments with no interest of $20 or $200 upfront":
+- 12 installments = $240 in total  
+- But the present value of 12 installments of $20 is less than $240  
 - If you can invest the [money](/en/posts/en-avoid-impulse-purchases) at 1%/month, paying in installments and investing the difference is better
 
 ## Simple rule
