@@ -27,6 +27,11 @@ function parseFrontmatter(content) {
   const draftMatch = yaml.match(/^draft:\s*(true|false)/m);
   data.draft = draftMatch ? draftMatch[1] === 'true' : false;
 
+  // Mesma leitura de `scope` que scripts/validate-i18n-sync.js faz.
+  // Ausente ⇒ 'universal' (default do schema, retrocompatível).
+  const scopeMatch = yaml.match(/^scope:\s*["']?([\w-]+)["']?\s*$/m);
+  data.scope = scopeMatch ? scopeMatch[1].trim() : 'universal';
+
   return data;
 }
 
@@ -42,12 +47,20 @@ function main() {
     if (!data.translationKey) continue;
 
     if (!groups[data.translationKey]) groups[data.translationKey] = {};
-    groups[data.translationKey][data.locale] = { file, title: data.title };
+    groups[data.translationKey][data.locale] = { file, title: data.title, scope: data.scope };
   }
 
   // Find groups missing EN or ES
   const brOnly = [];
   for (const [key, locales] of Object.entries(groups)) {
+    // Peça marcada como local (br-only/pt-only) NÃO precisa de par EN/ES — é o
+    // mesmo contrato dos 3 validadores i18n, que olham apenas o scope do PT
+    // (validar-i18n.js, lib/i18n-sync.js, scripts/validate-i18n-sync.js).
+    // Sem esta linha, os geradores que passaram a publicar temas brasileiros só em
+    // PT fariam este robô abrir uma issue por semana a pedir traduções que, por
+    // decisão editorial, não devem existir.
+    if (locales.pt && (locales.pt.scope || 'universal') !== 'universal') continue;
+
     if (locales.pt && (!locales.en || !locales.es)) {
       brOnly.push({
         translationKey: key,

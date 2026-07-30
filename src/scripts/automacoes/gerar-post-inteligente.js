@@ -27,35 +27,63 @@ if (!GROQ_API_KEY) {
 }
 
 /**
+ * IMPLEMENTACAO23 — temas ancorados no Brasil.
+ *
+ * Declarados AQUI uma única vez e referenciados nos pools abaixo, para que o Set e
+ * os pools nunca divirjam (duplicar a string nos dois lugares seria uma armadilha
+ * de manutenção). Estes temas continuam a ser gerados — não se perde o tráfego BR —
+ * mas nascem `scope: br-only` e NÃO são traduzidos para EN/ES (decisão do dono,
+ * 30/07/2026): imposto de renda, 13º, PIX, Tesouro Direto e CDB não existem para
+ * o leitor de inglês ou espanhol.
+ *
+ * ⚠️ As entradas dos pools continuam a ser STRINGS de propósito. Trocá-las por
+ * objetos `{topic, scope}` quebraria `chooseTopic` em SILÊNCIO: `topic.toLowerCase()`
+ * estouraria e, pior, o objeto vazaria para o prompt como "[object Object]" e
+ * desarmaria o guard anti-canibalização (que faz `String(text)` sem reclamar).
+ */
+const BR_TOPIC = {
+  tesouroRende: 'quanto rende 1000 reais no Tesouro Direto por mês',
+  cdbComoFunciona: 'como funciona o CDB e quanto ele rende',
+  dolarNoBrasil: 'como investir em dólar morando no Brasil',
+  irDocumentos: `imposto de renda ${CURRENT_YEAR}: documentos necessários`,
+  irPassoAPasso: 'declaração imposto de renda passo a passo',
+  irRestituicao: 'como conseguir maior restituição do IR',
+  decimoAdiantamento: 'como investir o adiantamento do 13º',
+  decimoSalario: 'como investir o 13º salário',
+  pixGolpes: 'PIX: golpes mais comuns e como se proteger',
+};
+const BR_ONLY_TOPICS = new Set(Object.values(BR_TOPIC));
+
+/**
  * Topics pool — dynamically prioritized based on analytics
  * These are long-tail SEO keywords with high search volume in Brazil
  */
 const TOPICS_BY_CATEGORY = {
   high_traffic: [
-    'como investir 100 reais por mês e ter renda passiva',
+    'como investir todo mês e ter renda passiva',
     `renda fixa vs renda variável: onde investir em ${CURRENT_YEAR}`,
     'como montar carteira de investimentos para iniciante',
-    'quanto rende 1000 reais no Tesouro Direto por mês',
+    BR_TOPIC.tesouroRende,
     'como usar cashback e cupons para economizar de verdade',
-    'como funciona o CDB e quanto ele rende',
+    BR_TOPIC.cdbComoFunciona,
     'melhores investimentos para quem ganha pouco',
     'como calcular quanto preciso para aposentar',
     'como fazer seu dinheiro render mais que a poupança',
-    'como investir em dólar morando no Brasil',
+    BR_TOPIC.dolarNoBrasil,
   ],
   seasonal: {
     0: ['metas financeiras para o ano novo: guia prático', 'como organizar finanças após as festas'],
-    1: ['como economizar no carnaval sem perder a diversão', `imposto de renda ${CURRENT_YEAR}: documentos necessários`],
-    2: ['declaração imposto de renda passo a passo', 'como conseguir maior restituição do IR'],
+    1: ['como economizar no carnaval sem perder a diversão', BR_TOPIC.irDocumentos],
+    2: [BR_TOPIC.irPassoAPasso, BR_TOPIC.irRestituicao],
     3: ['como economizar na Páscoa com a família', 'revisão financeira do primeiro trimestre'],
-    4: ['presente dia das mães sem estourar orçamento', 'como investir o adiantamento do 13º'],
+    4: ['presente dia das mães sem estourar orçamento', BR_TOPIC.decimoAdiantamento],
     5: ['presente dia dos namorados econômico e criativo', 'meio do ano: hora de revisar seu orçamento'],
     6: ['como economizar nas férias de julho', 'investimentos para o segundo semestre'],
     7: ['presente dia dos pais com economia', 'como se preparar financeiramente para Black Friday'],
     8: ['como aproveitar promoções de setembro', 'planejamento financeiro para o fim do ano'],
     9: ['Black Friday: como preparar sua lista de compras', 'como não cair em falsas promoções'],
     10: ['Black Friday: o que realmente vale a pena comprar', 'como financiar presentes de Natal sem dívidas'],
-    11: ['como controlar gastos no Natal e Réveillon', 'como investir o 13º salário', 'retrospectiva financeira do ano']
+    11: ['como controlar gastos no Natal e Réveillon', BR_TOPIC.decimoSalario, 'retrospectiva financeira do ano']
   },
   evergreen: [
     'como sair do cheque especial de uma vez por todas',
@@ -68,7 +96,7 @@ const TOPICS_BY_CATEGORY = {
     'como fazer um planejamento financeiro para comprar imóvel',
     'como identificar e eliminar gastos invisíveis',
     'como usar a técnica dos envelopes digitais',
-    'PIX: golpes mais comuns e como se proteger',
+    BR_TOPIC.pixGolpes,
     'como viver bem gastando menos que seus amigos',
     'como fazer orçamento doméstico em 15 minutos',
     'como superar o medo de investir',
@@ -343,7 +371,8 @@ ${post.content}`;
 /**
  * Create frontmatter and save post file
  */
-function savePost(post, slug, locale, imagePath) {
+// `scope`: 'universal' (default) ou 'br-only' quando o tema vem de BR_ONLY_TOPICS.
+function savePost(post, slug, locale, imagePath, scope = 'universal') {
   const date = new Date().toISOString().split('T')[0];
   const translationKey = slug;
   const localeSlug = locale === 'pt' ? slug : locale + '-' + slugify(post.title);
@@ -360,7 +389,7 @@ publishedAt: ${date}
 readingTime: ${Math.ceil(post.content.split(/\s+/).length / 200)}
 locale: "${locale}"
 translationKey: "${translationKey}"
-scope: "universal"
+scope: "${scope}"
 featured: false
 draft: false
 translate: true
@@ -395,7 +424,10 @@ async function main() {
     console.log(`📥 Tema vindo da fila de keywords: "${queueEntry.keyword}" (fonte: ${queueEntry.source})`);
   }
   const topic = queueEntry ? queueEntry.keyword : chooseTopic(insights);
-  console.log(`📝 Tópico escolhido: "${topic}"\n`);
+  // Escopo do tema: só o POOL carrega temas br-only. Keyword vinda da fila fica
+  // universal (a fila é alimentada por outra frente e tem curadoria própria).
+  const topicScope = !queueEntry && BR_ONLY_TOPICS.has(topic) ? 'br-only' : 'universal';
+  console.log(`📝 Tópico escolhido: "${topic}" (escopo: ${topicScope})\n`);
 
   // Anti-canibalização: pula sem gastar API se o tema já está coberto.
   const canibal = isThemeCovered(topic, POSTS_DIR);
@@ -447,24 +479,33 @@ async function main() {
   post.content = await insertInlineImages(post.content, slug);
 
   // 6. Save PT version
-  savePost(post, slug, 'pt', imagePath);
+  savePost(post, slug, 'pt', imagePath, topicScope);
+
+  // Peça br-only não é traduzida (decisão do dono, 30/07/2026): o instrumento é
+  // brasileiro e o leitor de EN/ES não o tem. O contrato do schema já DISPENSA o
+  // par EN/ES para grupos br-only — validar-i18n.js, lib/i18n-sync.js e
+  // scripts/validate-i18n-sync.js olham só o scope do PT e saltam o grupo — e o
+  // sincronizar-i18n.js exclui esses grupos da varredura, logo nenhum robô tenta
+  // preencher a lacuna nem acusa erro. Bónus: poupa 2 chamadas de IA por rodada.
+  const traduzir = topicScope !== 'br-only';
+  if (!traduzir) console.log(`🇧🇷 Tema br-only ("${topic}") — publicado só em PT, sem tradução EN/ES.`);
 
   // 7. Translate and save EN
-  if (config.locales.includes('en')) {
+  if (traduzir && config.locales.includes('en')) {
     console.log('🇺🇸 Traduzindo para inglês...');
     const enPost = await guardedTranslate(() => translatePost(post, 'en'), 'en', `${slug} (en)`);
     const ygEn = fixStaleYear(enPost.title);
     if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); enPost.title = ygEn.text; }
-    savePost(enPost, slug, 'en', imagePath);
+    savePost(enPost, slug, 'en', imagePath, topicScope);
   }
 
   // 8. Translate and save ES
-  if (config.locales.includes('es')) {
+  if (traduzir && config.locales.includes('es')) {
     console.log('🇪🇸 Traduzindo para espanhol...');
     const esPost = await guardedTranslate(() => translatePost(post, 'es'), 'es', `${slug} (es)`);
     const ygEs = fixStaleYear(esPost.title);
     if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); esPost.title = ygEs.text; }
-    savePost(esPost, slug, 'es', imagePath);
+    savePost(esPost, slug, 'es', imagePath, topicScope);
   }
 
   // 8.5. Fila de keywords: marca como usada SÓ após salvar+traduzir com sucesso.

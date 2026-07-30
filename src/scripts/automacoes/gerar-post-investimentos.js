@@ -14,28 +14,40 @@ import { execSync } from 'child_process';
 const POSTS_DIR = join(process.cwd(), 'src', 'content', 'posts');
 const IMAGES_DIR = join(process.cwd(), 'public', 'images', 'posts');
 
+// IMPLEMENTACAO23 — governança de escopo por tópico.
+// `scope: 'br-only'` = o INSTRUMENTO é brasileiro (não universaliza por tradução).
+// Essas peças nascem br-only e NÃO são traduzidas para EN/ES (decisão do dono,
+// 30/07/2026): um leitor de EN/ES não tem Tesouro Direto, CDB, LCI/LCA nem IRPF.
+// Ausente = universal (default do schema), publicado nos 3 idiomas como antes.
+//
+// ⚠️ CUIDADO AO REESCREVER O TEXTO DE UM TÓPICO: `isThemeCovered` (seo-guard.js)
+// bloqueia por 3 tokens de núcleo partilhados com um slug já publicado. Medido em
+// 30/07: 6 destes tópicos estão COVERED hoje (os das linhas do Tesouro, carteira
+// R$500, CDB vs Selic, FII, dólar e ETFs) — mudar-lhes o texto pode DESARMAR o
+// bloqueio e gerar um quase-duplicado. Por isso o tópico da carteira mantém a
+// palavra `montando`, que é um dos 3 tokens que o sustentam.
 const TOPICS = [
-  { topic: `como investir com pouco dinheiro em ${CURRENT_YEAR}`, keywords: ['investir pouco dinheiro', 'investir 100 reais', 'começar investir'] },
-  { topic: 'Tesouro Direto para iniciantes: guia completo', keywords: ['tesouro direto iniciante', 'como investir tesouro direto', 'tesouro selic'] },
-  { topic: 'como montar uma carteira diversificada com R$500', keywords: ['carteira diversificada', 'diversificar investimentos', 'investir 500 reais'] },
-  { topic: `CDB vs Tesouro Selic: qual rende mais em ${CURRENT_YEAR}`, keywords: ['cdb vs tesouro selic', 'qual rende mais', 'renda fixa comparação'] },
-  { topic: 'fundos imobiliários para iniciantes: como começar', keywords: ['fundos imobiliários iniciante', 'fii como investir', 'renda passiva fii'] },
-  { topic: 'como investir em dólar morando no Brasil', keywords: ['investir dólar brasil', 'comprar dólar investimento', 'dolarizar carteira'] },
+  { topic: `como investir com pouco dinheiro em ${CURRENT_YEAR}`, keywords: ['investir pouco dinheiro', 'investir aos poucos', 'começar investir'] },
+  { topic: 'Tesouro Direto para iniciantes: guia completo', scope: 'br-only', keywords: ['tesouro direto iniciante', 'como investir tesouro direto', 'tesouro selic'] },
+  { topic: 'montando uma carteira diversificada começando pequeno', keywords: ['carteira diversificada', 'diversificar investimentos', 'começar com pouco'] },
+  { topic: `CDB vs Tesouro Selic: qual rende mais em ${CURRENT_YEAR}`, scope: 'br-only', keywords: ['cdb vs tesouro selic', 'qual rende mais', 'renda fixa comparação'] },
+  { topic: 'fundos imobiliários para iniciantes: como começar', scope: 'br-only', keywords: ['fundos imobiliários iniciante', 'fii como investir', 'renda passiva fii'] },
+  { topic: 'como investir em dólar morando no Brasil', scope: 'br-only', keywords: ['investir dólar brasil', 'comprar dólar investimento', 'dolarizar carteira'] },
   { topic: 'ETFs: o que são e como investir', keywords: ['etf o que é', 'como investir etf', 'etf para iniciantes'] },
-  { topic: `previdência privada vale a pena em ${CURRENT_YEAR}?`, keywords: ['previdência privada vale a pena', 'pgbl ou vgbl', 'previdência ou investir'] },
+  { topic: `previdência privada vale a pena em ${CURRENT_YEAR}?`, scope: 'br-only', keywords: ['previdência privada vale a pena', 'pgbl ou vgbl', 'previdência ou investir'] },
   { topic: 'como calcular quanto preciso para me aposentar', keywords: ['quanto preciso aposentar', 'calculadora aposentadoria', 'independência financeira'] },
   { topic: 'renda fixa: melhores opções para conservadores', keywords: ['renda fixa conservador', 'investimento seguro', `melhor renda fixa ${CURRENT_YEAR}`] },
-  { topic: 'como investir o 13º salário de forma inteligente', keywords: ['investir 13 salário', 'o que fazer com 13', 'aplicar décimo terceiro'] },
+  { topic: 'como investir o 13º salário de forma inteligente', scope: 'br-only', keywords: ['investir 13 salário', 'o que fazer com 13', 'aplicar décimo terceiro'] },
   { topic: 'ações para iniciantes: primeiros passos na bolsa', keywords: ['ações iniciante', 'começar investir bolsa', 'comprar primeira ação'] },
   { topic: 'como viver de renda passiva com investimentos', keywords: ['renda passiva', 'viver de dividendos', 'investir para renda'] },
-  { topic: 'LCI e LCA: investimentos isentos de imposto de renda', keywords: ['lci lca', 'investimento isento ir', 'lci ou cdb'] },
+  { topic: 'LCI e LCA: investimentos isentos de imposto de renda', scope: 'br-only', keywords: ['lci lca', 'investimento isento ir', 'lci ou cdb'] },
   { topic: 'como escolher uma corretora de investimentos', keywords: ['melhor corretora', 'corretora para iniciante', 'abrir conta corretora'] },
   { topic: `investir em criptomoedas vale a pena em ${CURRENT_YEAR}?`, keywords: ['criptomoeda vale a pena', 'investir bitcoin', 'cripto para iniciantes'] },
-  { topic: 'como proteger seus investimentos da inflação', keywords: ['proteger inflação', 'investimento acima inflação', 'tesouro ipca'] },
-  { topic: 'quanto rende 10 mil reais por mês em renda fixa', keywords: ['quanto rende 10 mil', 'rendimento renda fixa', 'simulação investimento'] },
+  { topic: 'como proteger seus investimentos da inflação', keywords: ['proteger inflação', 'investimento acima inflação', 'título indexado à inflação'] },
+  { topic: 'quanto rende 10 mil por mês em renda fixa', keywords: ['quanto rende 10 mil', 'rendimento renda fixa', 'simulação investimento'] },
   { topic: 'como reinvestir dividendos de forma automática', keywords: ['reinvestir dividendos', 'juros compostos prática', 'dividendo composto'] },
-  { topic: 'debêntures: o que são e quando investir', keywords: ['debêntures o que é', 'investir debêntures', 'debênture incentivada'] },
-  { topic: 'como declarar investimentos no imposto de renda', keywords: ['declarar investimentos ir', 'imposto renda investimento', 'irpf investimentos'] },
+  { topic: 'debêntures: o que são e quando investir', keywords: ['debêntures o que é', 'investir debêntures', 'debênture risco e retorno'] },
+  { topic: 'como declarar investimentos no imposto de renda', scope: 'br-only', keywords: ['declarar investimentos ir', 'imposto renda investimento', 'irpf investimentos'] },
   { topic: 'fundos de investimento vs ETF: qual escolher', keywords: ['fundo vs etf', 'etf ou fundo', 'taxa administração fundo'] },
 ];
 
@@ -116,7 +128,7 @@ publishedAt: ${data.today}
 readingTime: ${Math.ceil(data.content.split(/\s+/).length / 200)}
 featured: false
 translationKey: "${data.translationKey || ''}"
-scope: "universal"
+scope: "${data.scope || 'universal'}"
 seo:
   metaTitle: "${data.title.replace(/"/g, '\\"')}"
   metaDescription: "${data.meta.replace(/"/g, '\\"')}"
@@ -137,7 +149,9 @@ async function main() {
   // Fase 3 — fila de keywords: tem prioridade sobre o pool semanal. takeKeyword
   // já pula temas cobertos; markUsed só é chamado após publicar com sucesso.
   const queueEntry = takeKeyword({ categories: ['investimentos'] });
-  let topic, topicKeywords;
+  // `topicScope` só existe na via do POOL — keyword vinda da fila fica universal
+  // (ausente ⇒ o savePost aplica o default 'universal').
+  let topic, topicKeywords, topicScope;
   if (queueEntry) {
     topic = queueEntry.keyword;
     topicKeywords = [queueEntry.keyword];
@@ -145,7 +159,7 @@ async function main() {
   } else {
     const weekOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (86400000 * 7));
     const topicIndex = weekOfYear % TOPICS.length;
-    ({ topic, keywords: topicKeywords } = TOPICS[topicIndex]);
+    ({ topic, keywords: topicKeywords, scope: topicScope } = TOPICS[topicIndex]);
   }
 
   console.log(`📝 ${topic}`);
@@ -285,24 +299,34 @@ REGRAS DE FORMA (mantidas):
     const imagePath = await generateCoverImage(title, slugPt, 'posts');
     const processed = await insertInlineImages(content, slugPt);
 
-    savePost(slugPt, { title, meta, headline, keywords: allKeywords, content: processed, imagePath, locale: 'pt', today, translationKey: slugPt });
+    savePost(slugPt, { title, meta, headline, keywords: allKeywords, content: processed, imagePath, locale: 'pt', today, translationKey: slugPt, scope: topicScope });
 
-    if (config.locales.includes('en')) {
+    // Peça br-only não é traduzida (decisão do dono, 30/07/2026): o instrumento é
+    // brasileiro e o leitor de EN/ES não o tem. O contrato do schema já DISPENSA o
+    // par EN/ES para grupos br-only — validar-i18n.js, lib/i18n-sync.js e
+    // scripts/validate-i18n-sync.js olham só o scope do PT e saltam o grupo — e o
+    // sincronizar-i18n.js exclui esses grupos da varredura, logo nenhum robô tenta
+    // preencher a lacuna nem acusa erro. Bónus: poupa 2 chamadas de IA e 60s de
+    // espera por rodada (a cota de IA é compartilhada por 27 workflows).
+    const traduzir = topicScope !== 'br-only';
+    if (!traduzir) console.log(`🇧🇷 Tema br-only ("${topic}") — publicado só em PT, sem tradução EN/ES.`);
+
+    if (traduzir && config.locales.includes('en')) {
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 EN...');
       const en = await guardedTranslate(() => translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'en'), 'en', `${slugPt} (en)`);
       const ygEn = fixStaleYear(en.title);
       if (ygEn.changed) { console.log(`[year-guard] título corrigido: "${ygEn.original}" → "${ygEn.text}"`); en.title = ygEn.text; }
-      savePost('en-' + createSlug(en.title), { ...en, imagePath, locale: 'en', today, translationKey: slugPt });
+      savePost('en-' + createSlug(en.title), { ...en, imagePath, locale: 'en', today, translationKey: slugPt, scope: topicScope });
     }
 
-    if (config.locales.includes('es')) {
+    if (traduzir && config.locales.includes('es')) {
       await new Promise(r => setTimeout(r, 30000));
       console.log('🌐 ES...');
       const es = await guardedTranslate(() => translatePost({ title, meta, headline, keywords: allKeywords, content: processed }, 'es'), 'es', `${slugPt} (es)`);
       const ygEs = fixStaleYear(es.title);
       if (ygEs.changed) { console.log(`[year-guard] título corrigido: "${ygEs.original}" → "${ygEs.text}"`); es.title = ygEs.text; }
-      savePost('es-' + createSlug(es.title), { ...es, imagePath, locale: 'es', today, translationKey: slugPt });
+      savePost('es-' + createSlug(es.title), { ...es, imagePath, locale: 'es', today, translationKey: slugPt, scope: topicScope });
     }
 
     execSync('node src/scripts/automacoes/internal-linking.js', { stdio: 'inherit' });
