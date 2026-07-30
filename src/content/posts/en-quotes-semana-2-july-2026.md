@@ -31,7 +31,7 @@ The week was marked by swings in international markets and by the movement of th
 
 - **Euro (EUR/LOCAL = $1.17)** – The euro also rose, but at a more modest pace, advancing 0.3 % in the same period. The difference between the euro and dollar quotes is still around $0.14, indicating that the local currency is weaker against the European single [currency](/en/glossario/en-moeda). If you have a trip planned to Europe or are thinking of investing in [funds](/en/glossario/en-investment-fund) that buy assets there, it’s worth keeping an eye on it.
 
-The good news is that volatility was not so aggressive; the pairs oscillated within narrow ranges, which brings a bit of peace of mind for those with investments tied to foreign currencies.
+The good news is that [volatility](/en/glossario/en-volatility) was not so aggressive; the pairs oscillated within narrow ranges, which brings a bit of peace of mind for those with investments tied to foreign currencies.
 
 ## 2. Central Bank Base Rate and the Impact on Investments
 
@@ -43,7 +43,7 @@ On Monday, the monetary policy committee decided to keep the **central bank base
 
 1. **[Fixed income](/en/glossario/en-fixed-income)** – Government bonds continue to yield close to the official rate, keeping them as “safe haven” for those who want to preserve capital without much risk exposure. If you have money saved in [savings](/en/glossario/en-savings), it’s worth moving to government bonds or to **certificates of deposit (CDs)** from solid banks that pay a percentage of the **interbank rate**.
 
-2. **[Variable income](/en/glossario/en-variable-income)** – High interest rates tend to make stocks more expensive, as the opportunity cost of investing in companies rises. Sectors like consumer and retail may feel pressure, while utilities (energy, water) tend to be more resilient. If you have a stock portfolio, consider strengthening positions in companies that pay consistent dividends – they usually perform better when rates are high.
+2. **[Variable income](/en/glossario/en-variable-income)** – High interest rates tend to make stocks more expensive, as the opportunity cost of investing in companies rises. Sectors like consumer and retail may feel pressure, while utilities (energy, water) tend to be more resilient. If you have a stock portfolio, consider strengthening positions in companies that pay consistent [dividends](/en/glossario/en-dividends) – they usually perform better when rates are high.
 
 ## 3. Practical Tip for the Individual Investor
 

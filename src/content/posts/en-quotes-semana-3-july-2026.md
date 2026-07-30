@@ -43,7 +43,7 @@ The [rate](/en/glossario/en-financial-fee) central bank base rate stayed at **13
 
 ## 3. Practical Tip for Individual Investors
 
-**Do a “currency review” of your portfolio**. Open your control app (for example, **FinMoovi**) and see how much money is kept in local currency, dollars and euros. If most of it is in the local currency, consider allocating **5 % to 10 %** to dollar‑linked assets (such as currency funds or BDRs of American companies) and, if you need protection against euro fluctuations, a small European‑currency fund may be enough. This simple diversification helps smooth the impact of exchange‑rate swings and also opens doors to profit opportunities when the currencies appreciate.
+**Do a “currency review” of your portfolio**. Open your control app (for example, **FinMoovi**) and see how much money is kept in local currency, dollars and euros. If most of it is in the local currency, consider allocating **5 % to 10 %** to dollar‑linked assets (such as currency funds or BDRs of American companies) and, if you need protection against euro fluctuations, a small European‑currency fund may be enough. This simple [diversification](/en/glossario/en-diversification) helps smooth the impact of exchange‑rate swings and also opens doors to profit opportunities when the currencies appreciate.
 
 ## 4. What to Expect Next Week
 

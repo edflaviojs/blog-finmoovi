@@ -38,7 +38,7 @@ In 2026 the landscape changed in three critical ways:
 ![How private pension works in 2026?](/images/posts/previdencia-privada-2026-vale-a-pena-guia-pratico-2.webp)
 
 1. **More competitive administration fees** – Competition among banks and insurers pushed the average fee from 2.5% a year down to about 1.8% for fixed‑income plans and 2.2% for equity‑linked plans.  
-2. **New index‑fund ([ETF](/en/glossario/en-etf)) options inside the plans** – Many managers now offer domestic and international equity ETFs as investment choices, widening diversification.  
+2. **New index‑fund ([ETF](/en/glossario/en-etf)) options inside the plans** – Many managers now offer domestic and international equity ETFs as investment choices, widening [diversification](/en/glossario/en-diversification).  
 3. **More transparent regulation** – The securities commission now requires institutions to publish quarterly performance history and the “total cost to the investor,” making plan comparison easier.
 
 These changes don’t turn private pension into a *miracle* return, but they give investors more tools to judge whether a plan is worth it compared to other investment alternatives.

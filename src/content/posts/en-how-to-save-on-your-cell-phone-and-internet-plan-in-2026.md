@@ -18,7 +18,7 @@ seo:
   keywords: ["how to save on cell phone and internet plan","personal finance","savings"]
 ---
 
-Saving on your cell phone and internet plan starts by looking at what you actually use: minutes, texts and data. If your bill is above R$150, there’s room to cut [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) without sacrificing the connection you need for work, study or fun.
+[Saving](/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026) on your cell phone and internet plan starts by looking at what you actually use: minutes, texts and data. If your bill is above R$150, there’s room to cut [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) without sacrificing the connection you need for work, study or fun.
 
 ## Review Your Contract
 The majority of contracts have automatic renewal clauses that raise the price each year. Open the latest bill, identify the base amount and the add‑ons (taxes, service fee). Compare with what you consume: someone who uses 4 GB of data per month might be paying for 10 GB that are never used. Note the real consumption and look for a plan that offers exactly what you need.
