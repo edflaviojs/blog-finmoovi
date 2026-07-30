@@ -209,28 +209,48 @@ Responda EXATAMENTE neste formato:
 /**
  * Parse AI response into structured post
  */
-function parseResponse(response) {
-  const titleMatch = response.match(/---TITULO---\n(.+)/);
-  const metaMatch = response.match(/---META---\n(.+)/);
-  const headlineMatch = response.match(/---HEADLINE---\n(.+)/);
-  const keywordsMatch = response.match(/---KEYWORDS---\n(.+)/);
-  const contentMatch = response.match(/---CONTEUDO---\n([\s\S]+)/);
+// Captura tolerante de um campo de UMA linha. O `\n` colado ao marcador (forma
+// anterior) falhava em 4 saídas plausíveis do LLM: resposta em CRLF (em JS o `.`
+// não casa `\r` e o `\n` literal não casa `\r\n`), linha em branco antes do valor,
+// espaço/tab sobrando após o marcador, e marcador seguido de valor recuado.
+// Isto NÃO é cosmético: parseResponse também lê a TRADUÇÃO (ver translatePost),
+// e guardedTranslate propaga o erro da 1ª tentativa — logo o estouro acontecia
+// DEPOIS de o post PT já estar salvo em disco e ANTES do `git commit`, e o post
+// era descartado em silêncio no runner efêmero.
+// Mantém-se de propósito a captura de UMA linha (não se copiou o `[\s\S]*?` do
+// gerar-post-investimentos.js): um título multi-linha viraria `title: "a\nb"` no
+// frontmatter, YAML inválido.
+function matchField(response, marker) {
+  const re = new RegExp(`---${marker}---[ \\t]*\\r?\\n(?:[ \\t]*\\r?\\n)*[ \\t]*(.+)`);
+  const m = response.match(re);
+  return m ? m[1].trim() : null;
+}
 
-  if (!titleMatch || !contentMatch) {
-    throw new Error('Failed to parse AI response');
+function parseResponse(response) {
+  const title = matchField(response, 'TITULO');
+  const meta = matchField(response, 'META');
+  const headlineRaw = matchField(response, 'HEADLINE');
+  const keywordsRaw = matchField(response, 'KEYWORDS');
+  const contentMatch = response.match(/---CONTEUDO---[ \t]*\r?\n([\s\S]+)/);
+
+  if (!title || !contentMatch) {
+    // O erro seco anterior ('Failed to parse AI response') não dizia o que veio,
+    // deixando o job vermelho sem diagnóstico. 300 chars é o mesmo teto que o
+    // gerar-post-investimentos.js já usa no log de formato inválido.
+    throw new Error(`Failed to parse AI response (titulo=${!!title}, conteudo=${!!contentMatch}). Inicio da resposta: ${String(response || '').slice(0, 300)}`);
   }
 
   // Headline do ticker: opcional (posts antigos/respostas sem o campo caem
   // no corte automático do título no CotacaoBar); teto rígido de 40 chars
-  const headline = headlineMatch
-    ? headlineMatch[1].trim().replace(/^["']|["']$/g, '').slice(0, 40)
+  const headline = headlineRaw
+    ? headlineRaw.replace(/^["']|["']$/g, '').slice(0, 40)
     : '';
 
   return {
-    title: titleMatch[1].trim().replace(/^["']|["']$/g, ''),
-    description: (metaMatch ? metaMatch[1].trim() : '').replace(/^["']|["']$/g, ''),
+    title: title.replace(/^["']|["']$/g, ''),
+    description: (meta || '').replace(/^["']|["']$/g, ''),
     headline,
-    keywords: keywordsMatch ? keywordsMatch[1].split(',').map(k => k.trim()) : [],
+    keywords: keywordsRaw ? keywordsRaw.split(',').map(k => k.trim()) : [],
     content: contentMatch[1].trim()
   };
 }
