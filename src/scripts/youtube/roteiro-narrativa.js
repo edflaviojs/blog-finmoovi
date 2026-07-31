@@ -386,6 +386,92 @@ const corrigirNumerais = (s) => NUMERAIS_ERRADOS.reduce(
 );
 
 /**
+ * NÚMERO POR EXTENSO — calculado, não pedido (31/07/2026).
+ *
+ * MEDIDO TRÊS VEZES: o roteiro sai com algarismos na fala ("Tá pagando 500 reais",
+ * "a primeira parcela é 1.111", "R$ 5 mil"). O prompt manda escrever por extenso
+ * e **nada pune** — o modo de falha crónico deste repositório. E vai direto para a
+ * VOZ e para a LEGENDA queimada.
+ *
+ * Não é caso para trava: converter "500" em "quinhentos" é aritmética. Vale aqui a
+ * mesma regra do simulador (§19.3) e do `cincocentos` (§19.9): **o que se calcula
+ * não se pede ao modelo.**
+ */
+const UNIDADES = ['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove'];
+const DEZ_A_DEZENOVE = ['dez', 'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove'];
+const DEZENAS = ['', '', 'vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta', 'oitenta', 'noventa'];
+const CENTENAS = ['', 'cento', 'duzentos', 'trezentos', 'quatrocentos', 'quinhentos', 'seiscentos', 'setecentos', 'oitocentos', 'novecentos'];
+
+function ate999(n) {
+  if (n === 0) return '';
+  if (n === 100) return 'cem';                       // "cem", não "cento"
+  const c = Math.floor(n / 100);
+  const r = n % 100;
+  const partes = [];
+  if (c) partes.push(CENTENAS[c]);
+  if (r < 10 && r > 0) partes.push(UNIDADES[r]);
+  else if (r >= 10 && r < 20) partes.push(DEZ_A_DEZENOVE[r - 10]);
+  else if (r >= 20) {
+    const d = Math.floor(r / 10);
+    const u = r % 10;
+    partes.push(u ? `${DEZENAS[d]} e ${UNIDADES[u]}` : DEZENAS[d]);
+  }
+  return partes.join(' e ');
+}
+
+export function porExtenso(valor) {
+  const n = Math.round(Number(valor));
+  if (!Number.isFinite(n) || n < 0 || n > 999999999) return null;
+  if (n === 0) return 'zero';
+
+  const milhoes = Math.floor(n / 1000000);
+  const milhares = Math.floor((n % 1000000) / 1000);
+  const resto = n % 1000;
+  const partes = [];
+  if (milhoes) partes.push(milhoes === 1 ? 'um milhão' : `${ate999(milhoes)} milhões`);
+  if (milhares) partes.push(milhares === 1 ? 'mil' : `${ate999(milhares)} mil`);
+  if (resto) partes.push(ate999(resto));
+
+  // O "e" antes da última parte só entra quando ela é pequena ou redonda:
+  // "dois mil E quatrocentos", mas "dois mil seiscentos e noventa e nove".
+  // Vale para a última parte seja ela o resto OU os milhares — sem isto saía
+  // "dois milhões quinhentos mil" em vez de "dois milhões E quinhentos mil".
+  const ultima = resto || milhares;
+  if (partes.length > 1 && ultima && (ultima < 100 || ultima % 100 === 0)) {
+    return `${partes.slice(0, -1).join(' ')} e ${partes[partes.length - 1]}`;
+  }
+  return partes.join(' ');
+}
+
+const soNumero = (s) => Number(String(s).replace(/\./g, ''));
+
+/**
+ * Troca os algarismos da fala por palavras.
+ * ⚠️ Decimais com vírgula ficam INTACTOS de propósito: "14,25%" partido em "14" e
+ * "25" daria "catorze,vinte e cinco por cento". Taxas são raras na fala (a ficha
+ * proíbe citar as que não calculou) e é melhor não lhes tocar do que estragá-las.
+ */
+export function numerosPorExtenso(texto) {
+  return String(texto || '')
+    // "R$ 500" → "quinhentos reais" (só quando "reais" ainda não vem a seguir)
+    .replace(/R\$\s*(\d[\d.]*)(?![,\d])(?!\s*(?:reais|real))/gi, (m, num) => {
+      const e = porExtenso(soNumero(num));
+      return e ? `${e} reais` : m;
+    })
+    // "R$ 500 reais" → "quinhentos reais" (não duplica a palavra)
+    .replace(/R\$\s*(\d[\d.]*)(?![,\d])/gi, (m, num) => porExtenso(soNumero(num)) || m)
+    // "30%" → "trinta por cento".
+    // ⚠️ Os dois lookarounds são o que protege "14,25%": sem o `(?<![\d,])` esta
+    // regra apanhava o "25" e escrevia "14,vinte e cinco por cento".
+    .replace(/(?<![\d,])(\d[\d.]*)(?![,\d])\s*%/g, (m, num) => {
+      const e = porExtenso(soNumero(num));
+      return e ? `${e} por cento` : m;
+    })
+    // o resto dos inteiros soltos (a vizinhança com vírgula exclui os decimais)
+    .replace(/(?<![\d,])\d[\d.]*\d(?![\d,])|(?<![\d,])\d+(?![\d,])/g, (m) => porExtenso(soNumero(m)) || m);
+}
+
+/**
  * LIMPEZA MECÂNICA — sanitizar em vez de reprovar (31/07/2026).
  *
  * O 5º teste esgotou as 3 tentativas oscilando entre defeitos: 1ª reprovou por
@@ -402,7 +488,9 @@ const corrigirNumerais = (s) => NUMERAIS_ERRADOS.reduce(
  * A grafia errada de numeral (ver NUMERAIS_ERRADOS) entra pela mesma porta.
  */
 export function limparFala(texto) {
-  return corrigirNumerais(String(texto || ''))
+  // primeiro os algarismos viram palavras, depois corrige-se a grafia dessas
+  // palavras — por esta ordem, senão "cincocentos" nunca chegaria a existir.
+  return corrigirNumerais(numerosPorExtenso(String(texto || '')))
     .replace(/[*_]/g, '')                                  // marcação: a voz lia "asterisco"
     .replace(/\s*[—–]\s*/g, ', ')                          // travessão vira a pausa que ele representa
     .replace(/\s*:\s*/g, '. ')                             // dois-pontos vira FRASE NOVA — trocar por vírgula deixava a maiúscula solta ("Lembre, Dinheiro…")

@@ -1,0 +1,118 @@
+name: YouTube — Vídeo COMPLETO pelas duas passagens (não publica)
+
+# FASE C-2 (IMPLEMENTACAO20 §20.3): o primeiro vídeo inteiro feito pelas passagens
+# 1 e 2, para o dono ASSISTIR.
+#
+# Faz tudo o que a produção faz — roteiro, voz, legendas, render — MENOS a última
+# coisa: **não envia nada para o YouTube**. O MP4 fica para download no fim da
+# página do run.
+#
+# A única diferença face ao pipeline diário é a origem do roteiro: aqui vem de
+# `coreografia.js` (passagem 1 + passagem 2) em vez de `roteiro-short.js`.
+# Também NÃO commita o roteiro nem consome tema da fila.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Termo do glossário (ex: juros-compostos) ou EDITORIAL:<id>'
+        required: false
+        default: 'juros-compostos'
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências (blog)
+        run: npm ci --no-audit --no-fund
+
+      - name: Roteiro pelas DUAS passagens
+        env:
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: |
+          set -euo pipefail
+          node src/scripts/youtube/coreografia.js --slug="${{ github.event.inputs.slug }}" --gravar
+          # o nome do ficheiro é o slug sem o prefixo EDITORIAL:
+          FILE_SLUG="${{ github.event.inputs.slug }}"
+          FILE_SLUG="${FILE_SLUG#EDITORIAL:}"
+          echo "FILE_SLUG=$FILE_SLUG" >> "$GITHUB_ENV"
+          test -f "src/scripts/youtube/output/$FILE_SLUG.script.json"
+
+      - name: Cache do Piper (binário + voz)
+        id: piper-cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/piper
+          key: piper-2023.11.14-2-pt_BR-faber-medium-v1.0.0
+
+      - name: Instalar Piper (fallback offline de voz)
+        run: |
+          set -euo pipefail
+          PIPER_DIR="$RUNNER_TEMP/piper"
+          BIN="$PIPER_DIR/piper/piper"
+          MODEL="$PIPER_DIR/pt_BR-faber-medium.onnx"
+          if ! ( [ -x "$BIN" ] && [ -f "$MODEL" ] && [ -f "$MODEL.json" ] ); then
+            mkdir -p "$PIPER_DIR"
+            if curl -fsSL "https://github.com/rhasspy/piper/releases/download/2023.11.14-2/piper_linux_x86_64.tar.gz" -o "$PIPER_DIR/piper.tar.gz" \
+              && tar -xzf "$PIPER_DIR/piper.tar.gz" -C "$PIPER_DIR" \
+              && curl -fsSL "https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx" -o "$MODEL" \
+              && curl -fsSL "https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx.json" -o "$MODEL.json"; then
+              rm -f "$PIPER_DIR/piper.tar.gz"
+            else
+              echo "::warning::Falha ao baixar o Piper — seguindo sem fallback offline."
+              exit 0
+            fi
+          fi
+          if [ -x "$BIN" ] && [ -f "$MODEL" ] && [ -f "$MODEL.json" ]; then
+            { echo "PIPER_BIN=$BIN"; echo "PIPER_MODEL=$MODEL"; } >> "$GITHUB_ENV"
+          else
+            echo "::warning::Piper incompleto — seguindo sem fallback offline."
+          fi
+
+      - name: Gerar áudio + timing (TTS + Whisper)
+        env:
+          TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
+        run: node src/scripts/youtube/tts-short.js --slug="$FILE_SLUG"
+
+      - name: Gerar legendas SRT ×3 (pt/en/es)
+        env:
+          TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/youtube/srt-short.js --slug="$FILE_SLUG"
+
+      # Sem isto o render cai no fixture versionado e sai o vídeo errado.
+      - name: Preparar roteiro para o Remotion
+        run: |
+          mkdir -p youtube-render/public/roteiro
+          cp "src/scripts/youtube/output/$FILE_SLUG.script.json" "youtube-render/public/roteiro/$FILE_SLUG.json"
+
+      - name: Instalar dependências (render)
+        working-directory: youtube-render
+        run: npm ci
+
+      - name: Renderizar o Short
+        working-directory: youtube-render
+        run: npx remotion render src/index.ts Short "out/$FILE_SLUG.mp4" --props="{\"slug\":\"$FILE_SLUG\"}" --crf=16 --jpeg-quality=95
+
+      - name: Deixar o vídeo para download
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-duas-passagens-${{ env.FILE_SLUG }}
+          path: |
+            youtube-render/out/${{ env.FILE_SLUG }}.mp4
+            src/scripts/youtube/output/${{ env.FILE_SLUG }}.script.json
+          retention-days: 14

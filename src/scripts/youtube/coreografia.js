@@ -395,6 +395,17 @@ if (executadoDireto) {
     console.log('\n⚠️ avisos do validador (não reprovam):');
     p2.avisos.forEach((a) => console.log(`   · ${a}`));
   }
-  console.log('\n📄 ROTEIRO COMPLETO (JSON):\n');
-  console.log(JSON.stringify(p2.roteiro, null, 2));
+  // Só com --gravar o roteiro vai para o disco. Sem a bandeira isto continua a ser
+  // um teste que não deixa rasto (fase C-1); com ela, alimenta o render (fase C-2).
+  if (args.gravar) {
+    const { writeFileSync, mkdirSync } = await import('fs');
+    const { join, dirname } = await import('path');
+    const destino = join(process.cwd(), 'src', 'scripts', 'youtube', 'output', `${p2.roteiro.slug}.script.json`);
+    mkdirSync(dirname(destino), { recursive: true });
+    writeFileSync(destino, `${JSON.stringify(p2.roteiro, null, 2)}\n`, 'utf-8');
+    console.log(`\n💾 roteiro gravado em ${destino}`);
+  } else {
+    console.log('\n📄 ROTEIRO COMPLETO (JSON):\n');
+    console.log(JSON.stringify(p2.roteiro, null, 2));
+  }
 }
