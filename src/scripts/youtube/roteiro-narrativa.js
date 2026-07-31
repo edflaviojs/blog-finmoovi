@@ -118,8 +118,10 @@ TESTE OBRIGATÓRIO: leia um bloco sem ler o anterior. Se ele fizer sentido sozin
 2. EMPATIA (~9s): por que isso acontece com gente normal (correria, cansaço, ninguém ensinou). Sem culpar quem assiste.
 3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é A e você mostra que é B — "não é o [A] que te quebra… é o [B] que ninguém soma".
    ⛔ TERMINE NA TENSÃO. Depois de virar, NÃO explique. Explicação depois da virada mata a virada.
-   ✗ "…é deixar a raiz parada; o Tesouro Selic faz a grana crescer todo dia." (virou e já explicou — a segunda metade desmancha a primeira)
-   ✓ "…é deixar a raiz parada. E o pior: o tempo não volta."
+   ✗ "…é deixar a raiz parada. E a raiz já está pegando, só falta nutrir." (a 2ª frase amolece a 1ª — e "pegando" o quê? "nutrir" como? frase que enche linguiça)
+   ✗ "…é deixar a raiz parada, o Tesouro Selic faz a grana crescer todo dia." (virou e já explicou)
+   ✓ "…é deixar a raiz parada. E o tempo não volta."
+   Depois da virada, ou você CALA, ou aumenta a tensão. Nunca conforta.
 4. A DEMONSTRAÇÃO (~10s): o app resolvendo ISSO que você acabou de revelar. **O app é quem AGE, não é rodapé.**
    ⛔ NO MÁXIMO DOIS valores em dinheiro neste bloco. Três ou mais viram boletim de banco e a pessoa desliga.
    ✗ "Cem reais dão dois mil seiscentos e noventa e nove; na poupança dá dois mil seiscentos e doze. A diferença são oitenta e seis. No FinMoovi basta abrir a calculadora." (três números empilhados e o app no fim, como enfeite)
@@ -142,6 +144,11 @@ SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (grátis)** e a 
 Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moedinha", nem "trocado", nem "dinheirinho". Se o valor parece pequeno, diga que PARECE pequeno — mas chame-o pelo nome. Diminutivo tira o valor da coisa que você está tentando valorizar.
 
 ════════ COMO A FALA FLUI (vídeo curto perdoa pouco) ════════
+- **PONTUAÇÃO É RESPIRAÇÃO, NÃO GRAMÁTICA.** Quem lê o texto é uma VOZ: ela PARA em cada vírgula e em cada ponto. Vírgula onde um falante não respiraria estraga a frase.
+  ✗ "Tesouro Direto com cem reais por mês, vale a pena?" → a voz respira no meio e a pergunta descola do resto.
+  ✓ "Tesouro Direto com cem reais por mês. Vale a pena?" → duas frases, duas intenções, respiro no lugar certo.
+  ✗ "Dez anos de atraso, custam caro."   ✓ "Dez anos de atraso custam caro."
+  Leia em voz alta: se você respirar onde NÃO há vírgula, ou não respirar onde HÁ, reescreva.
 - ⛔ NUNCA use ponto e vírgula, dois-pontos ou parênteses. Ninguém FALA assim. Use ponto, vírgula ou reticências.
 - Varie o fôlego: uma frase curta, uma mais longa, outra curta. Tudo do mesmo tamanho vira ladainha.
   ✓ "Cem reais por mês. Parece pouco, e é por isso que quase todo mundo deixa parado. Aí o tempo passa."
@@ -197,7 +204,7 @@ export function limparFala(texto) {
   return String(texto || '')
     .replace(/[*_]/g, '')                                  // marcação: a voz lia "asterisco"
     .replace(/\s*[—–]\s*/g, ', ')                          // travessão vira a pausa que ele representa
-    .replace(/\s*:\s*/g, ', ')                             // dois-pontos: ninguém fala assim
+    .replace(/\s*:\s*/g, '. ')                             // dois-pontos vira FRASE NOVA — trocar por vírgula deixava a maiúscula solta ("Lembre, Dinheiro…")
     .replace(/\s*;\s*/g, '. ')                             // ponto e vírgula vira frase nova
     .replace(/[()]/g, '')                                  // parênteses não existem na fala
     .replace(/\.\s*([a-záéíóúâêôãõç])/g, (m, c) => `. ${c.toUpperCase()}`) // maiúscula depois do ponto novo
@@ -293,7 +300,12 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
       }
     }
     // algarismos soltos na fala (a regra manda falar por extenso) que não sejam da ficha
-    const emAlgarismo = [...falaToda.matchAll(/\b(\d{2,})\b/g)].map((m) => Number(m[1]));
+    // O separador de milhar precisa entrar na captura: `\b(\d{2,})\b` partia
+    // "R$ 2.699" em "2" e "699" e acusava 699 como número inventado (falso alarme
+    // no 6º teste). Agora captura o número inteiro e remove os pontos.
+    const emAlgarismo = [...falaToda.matchAll(/\d[\d.]*\d|\d{2,}/g)]
+      .map((m) => Number(String(m[0]).replace(/\./g, '')))
+      .filter((v) => Number.isFinite(v) && v >= 10);
     const estranhos = emAlgarismo.filter((v) => !ficha.permitidos.some((p) => Math.abs(p - v) <= 2));
     if (estranhos.length) {
       avisos.push(`a fala tem números em algarismo fora da ficha (${estranhos.join(', ')}) — devem ser ditos por extenso e vir da ficha`);
