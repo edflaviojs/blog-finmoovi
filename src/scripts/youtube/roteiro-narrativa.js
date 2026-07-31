@@ -76,12 +76,37 @@ const cortar = (txt, max = 1500) => {
   return `${c.slice(0, Math.max(0, c.lastIndexOf(' ')))}… (trecho)`;
 };
 
+/**
+ * AS PALAVRAS DE CADA IMAGEM — e por que TODAS as imagens as recebem (31/07/2026).
+ *
+ * MEDIDO: das 8 gerações que passaram na validação, **8 escolheram "semente"**. Não
+ * foi acaso. O prompt anterior nomeava "semente" 2×, "raiz" 5×, e dava plantar/
+ * brotar/colher como o ÚNICO exemplo completo de fio condutor — nenhuma das outras
+ * 7 imagens era sequer citada. O modelo não escolhia: copiava o único exemplo.
+ *
+ * Estas palavras são as MESMAS que `PALAVRAS_DO_FIO` procura na hora de validar.
+ * Escrevê-las no prompt é alinhar prompt e trava — o modo de falha crónico deste
+ * repositório é justamente o prompt não dizer aquilo que a trava exige. Agora as
+ * 8 imagens partem em pé de igualdade.
+ */
+const DICAS_DO_FIO = {
+  'bola-neve': 'bola de neve, rolar, ladeira',
+  avalanche: 'avalanche, desabar, soterrar',
+  escorregao: 'escorregar, tropeçar, derrapar',
+  foguete: 'foguete, decolar, propulsão',
+  semente: 'plantar, brotar, raiz, colher',
+  'montanha-russa': 'montanha-russa, sobe e desce, looping',
+  bolha: 'bolha, inflar, estourar',
+  ralo: 'ralo, escoar, vazar, torneira',
+};
+
 // ─── o prompt ────────────────────────────────────────────────────────────────
 // PODADO de propósito: só entra aqui o que muda o TEXTO. Nada de ícones, sons,
 // tempo de tela, tipos de visual, âncoras ou JSON de shots.
 export function buildPromptNarrativa(t, proibidas, frasesRecentes, ficha = null) {
   const bloqueadas = proibidas.length ? proibidas.join(', ') : '(nenhuma ainda)';
   const disponiveis = METAPHORS.filter((m) => m !== 'clique-link' && !proibidas.includes(m));
+  const menuDeImagens = disponiveis.map((m) => `${m} (${DICAS_DO_FIO[m] || m})`).join(' · ');
   const evitarFrases = frasesRecentes.length
     ? `\nJÁ FOI DITO nos vídeos recentes (não repita nem parafraseie): ${frasesRecentes.map((f) => `"${f}"`).join(' · ')}`
     : '';
@@ -118,9 +143,9 @@ TESTE OBRIGATÓRIO: leia um bloco sem ler o anterior. Se ele fizer sentido sozin
 2. EMPATIA (~9s): por que isso acontece com gente normal (correria, cansaço, ninguém ensinou). Sem culpar quem assiste.
 3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é A e você mostra que é B — "não é o [A] que te quebra… é o [B] que ninguém soma".
    ⛔ TERMINE NA TENSÃO. Depois de virar, NÃO explique. Explicação depois da virada mata a virada.
-   ✗ "…é deixar a raiz parada. E a raiz já está pegando, só falta nutrir." (a 2ª frase amolece a 1ª — e "pegando" o quê? "nutrir" como? frase que enche linguiça)
-   ✗ "…é deixar a raiz parada, o Tesouro Selic faz a grana crescer todo dia." (virou e já explicou)
-   ✓ "…é deixar a raiz parada. E o tempo não volta."
+   ✗ "…é o tempo que ficou parado. E ele já está trabalhando, só falta ajustar." (a 2ª frase amolece a 1ª — e "trabalhando" como? "ajustar" o quê? frase que enche linguiça)
+   ✗ "…é o tempo que ficou parado, o Tesouro Selic faz a grana crescer todo dia." (virou e já explicou)
+   ✓ "…é o tempo que ficou parado. E ele não volta."
    Depois da virada, ou você CALA, ou aumenta a tensão. Nunca conforta.
 4. A DEMONSTRAÇÃO (~10s): o app resolvendo ISSO que você acabou de revelar. **O app é quem AGE, não é rodapé.**
    ⛔ NO MÁXIMO DOIS valores em dinheiro neste bloco. Três ou mais viram boletim de banco e a pessoa desliga.
@@ -131,9 +156,10 @@ TESTE OBRIGATÓRIO: leia um bloco sem ler o anterior. Se ele fizer sentido sozin
 
 ════════ O FIO CONDUTOR ════════
 Escolha UMA imagem física para o vídeo inteiro e faça-a CRESCER: pequena no bloco 1, forte no 3, paga no 6. É a mesma imagem sempre — nunca troque no meio.
-Escolha entre: ${disponiveis.join(', ')}.
-⚠️ A imagem tem de ser DITA NA FALA, em pelo menos DOIS blocos. Escolher "semente" e não falar de plantar, brotar ou colher em lugar nenhum NÃO conta — o campo fica preenchido e o vídeo fica sem fio.
-   ✓ assim: "é igual plantar uma semente…" (bloco 1) → "a raiz já está pegando" (bloco 3) → "e um dia você colhe" (bloco 6).
+Escolha entre: ${menuDeImagens}.
+Escolha a que COMBINA com este tema — a imagem existe para explicar, não para enfeitar. Se ela não explicar nada aqui, é a imagem errada.
+⚠️ A imagem tem de ser DITA NA FALA, com as palavras dela (as que estão entre parênteses acima), em pelo menos DOIS blocos. Preencher o campo "fioCondutor" e não falar da imagem em lugar nenhum NÃO conta: o campo fica cheio e o vídeo fica sem fio.
+   A forma é sempre esta: no bloco 1 a imagem aparece pequena, no bloco 3 ela está agindo, no bloco 6 ela dá o resultado. As palavras são SUAS — não copie nenhuma frase de exemplo deste texto.
 ⛔ PROIBIDAS (já usadas nos vídeos recentes): ${bloqueadas}${evitarFrases}
 
 ════════ O QUE VOCÊ PODE PROMETER ════════
@@ -186,6 +212,40 @@ Responda APENAS com JSON válido, sem markdown:
 const PAPEIS = ['gancho', 'empatia', 'virada', 'demonstracao', 'convite', 'fecho'];
 
 /**
+ * NUMERAL POR EXTENSO MAL ESCRITO — mecânico, logo LIMPA (31/07/2026).
+ *
+ * MEDIDO no teste de variedade: o MESMO roteiro escreveu "quinhentos reais" no
+ * gancho e "cincocentos reais" na demonstração. Não é ignorância do modelo, é
+ * escorregão de escrita — e ia inteiro para a VOZ e para a LEGENDA queimada.
+ * Grafia é mecânica: conserta-se por código, sem custar uma tentativa. Nenhuma das
+ * formas abaixo existe em português, por isso a troca nunca muda o sentido.
+ * O que esta lista não conhecer é apanhado pela sentinela em `validarNarrativa`.
+ */
+const NUMERAIS_ERRADOS = [
+  [/\bcincocentos\b/gi, 'quinhentos'],
+  [/\bcincocentas\b/gi, 'quinhentas'],
+  [/\bcincoentos\b/gi, 'quinhentos'],
+  [/\bcincoenta\b/gi, 'cinquenta'],
+  [/\bdoiscentos\b/gi, 'duzentos'],
+  [/\bdoiscentas\b/gi, 'duzentas'],
+  [/\bduascentos\b/gi, 'duzentos'],
+  [/\bduascentas\b/gi, 'duzentas'],
+  [/\btrescentos\b/gi, 'trezentos'],
+  [/\btrescentas\b/gi, 'trezentas'],
+  [/\btrêscentos\b/gi, 'trezentos'],
+  [/\btrêscentas\b/gi, 'trezentas'],
+];
+
+// Troca preservando a maiúscula inicial: "Cincocentos" no início de uma frase não
+// pode virar "quinhentos" em minúscula.
+const corrigirNumerais = (s) => NUMERAIS_ERRADOS.reduce(
+  (txt, [errado, certo]) => txt.replace(errado, (achado) => (
+    achado[0] === achado[0].toUpperCase() ? certo[0].toUpperCase() + certo.slice(1) : certo
+  )),
+  s,
+);
+
+/**
  * LIMPEZA MECÂNICA — sanitizar em vez de reprovar (31/07/2026).
  *
  * O 5º teste esgotou as 3 tentativas oscilando entre defeitos: 1ª reprovou por
@@ -199,9 +259,10 @@ const PAPEIS = ['gancho', 'empatia', 'virada', 'demonstracao', 'convite', 'fecho
  * vírgula de sentido. Só continua a reprovar o que é SEMÂNTICO — número inventado,
  * promessa falsa, fio ausente, bordão ausente, tamanho.
  * Cada trava que vira limpeza é uma tentativa devolvida ao que importa.
+ * A grafia errada de numeral (ver NUMERAIS_ERRADOS) entra pela mesma porta.
  */
 export function limparFala(texto) {
-  return String(texto || '')
+  return corrigirNumerais(String(texto || ''))
     .replace(/[*_]/g, '')                                  // marcação: a voz lia "asterisco"
     .replace(/\s*[—–]\s*/g, ', ')                          // travessão vira a pausa que ele representa
     .replace(/\s*:\s*/g, '. ')                             // dois-pontos vira FRASE NOVA — trocar por vírgula deixava a maiúscula solta ("Lembre, Dinheiro…")
@@ -242,6 +303,18 @@ const PALAVRAS_DO_FIO = {
   bolha: ['bolha', 'estour', 'infl', 'ar '],
   ralo: ['ralo', 'escorr', 'escoa', 'vaza', 'ping', 'torneira'],
 };
+
+// As ÚNICAS centenas que terminam em "centos/centas" em português. Quem não estiver
+// aqui e terminar assim é grafia inventada (ver a sentinela em `validarNarrativa`).
+// "acrescentos" entra na lista porque é palavra comum, não numeral.
+const CENTENAS_VALIDAS = new Set([
+  'quatrocentos', 'quatrocentas',
+  'seiscentos', 'seiscentas',
+  'setecentos', 'setecentas',
+  'oitocentos', 'oitocentas',
+  'novecentos', 'novecentas',
+  'acrescentos',
+]);
 
 // O que o canal PODE prometer. No 1º teste o modelo ofereceu "a planilha" — que
 // NÃO EXISTE. Promessa falsa indo ao ar é pior que CTA fraca.
@@ -310,6 +383,23 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     if (estranhos.length) {
       avisos.push(`a fala tem números em algarismo fora da ficha (${estranhos.join(', ')}) — devem ser ditos por extenso e vir da ficha`);
     }
+  }
+
+  // SENTINELA DOS NUMERAIS. `limparFala()` já conserta as grafias erradas conhecidas
+  // (ver NUMERAIS_ERRADOS); esta rede apanha as que ainda não conhecemos, para nunca
+  // mais sair um "cincocentos" na voz e na legenda. Corre SEMPRE, com ficha ou sem
+  // ela — o caso medido em 31/07 foi num tema SEM ficha.
+  // Falso alarme é quase impossível: só a família das centenas é olhada, e
+  // "duzentos", "trezentos" e "quinhentos" nem terminam em "centos".
+  const centosSuspeitos = [...new Set(
+    // O sufixo `\p{L}*` apanha também o erro de digitação com letra a mais
+    // ("setecentoss"); sem ele, `\b` exigia que a palavra terminasse exatamente em
+    // "centos" e a grafia torta escapava. O `\p{L}+` inicial é o que protege
+    // "centenas" e "centavos", que começam por "cent" e são palavras legítimas.
+    (falaToda.match(/\b\p{L}+cent(?:os|as)\p{L}*\b/giu) || []).map((p) => p.toLowerCase()),
+  )].filter((p) => !CENTENAS_VALIDAS.has(p));
+  if (centosSuspeitos.length) {
+    erros.push(`"${centosSuspeitos[0]}" não é um número escrito corretamente em português — corrija a grafia (ex.: duzentos, trezentos, quinhentos)`);
   }
 
   // brinde inexistente (ver BRINDES_PROIBIDOS)
