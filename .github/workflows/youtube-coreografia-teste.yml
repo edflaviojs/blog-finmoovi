@@ -1,0 +1,44 @@
+name: YouTube — Testar as DUAS passagens (narração + coreografia)
+
+# TESTE ISOLADO DA PASSAGEM 2 (IMPLEMENTACAO20 §20.3, fase C-1).
+#
+# Corre a passagem 1 (o texto) e a passagem 2 (o visual), monta o roteiro completo
+# e imprime-o no log — já passado pelo MESMO validador que a produção usa.
+#
+# NÃO renderiza, NÃO envia ao YouTube, NÃO commita, NÃO consome tema da fila.
+# Custo: duas chamadas de IA.
+#
+# Existe para o dono julgar as ESCOLHAS DE IMAGEM antes de gastarmos um vídeo —
+# e para medir o erro de palavra-âncora, que apareceu em 5 dos últimos 6 vídeos
+# de produção e chegou a apagar shots do vídeo sem ninguém dar por isso.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Termo do glossário (ex: juros-compostos) ou EDITORIAL:<id>'
+        required: false
+        default: 'juros-compostos'
+
+jobs:
+  coreografia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci --no-audit --no-fund
+
+      - name: Gerar as duas passagens e imprimir
+        env:
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/youtube/coreografia.js --slug="${{ github.event.inputs.slug }}"
