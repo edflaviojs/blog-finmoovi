@@ -25,6 +25,8 @@ import { synthesizeSpeech, transcribeWords, pickProvider, getTtsProviders, warmU
 import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { tmpdir } from 'os';
+import { execFileSync } from 'child_process';
 
 const OUTPUT_DIR = join(dirname(fileURLToPath(import.meta.url)), 'output');
 const AUDIO_ROOT = join(process.cwd(), 'youtube-render', 'public', 'audio');
@@ -252,6 +254,67 @@ function readScript(slug) {
   return JSON.parse(readFileSync(path, 'utf-8'));
 }
 
+/**
+ * DURAÇÃO REAL DO ÁUDIO (31/07/2026) — o conserto da dessincronia.
+ *
+ * Quando o Whisper devolve palavras SEM tempo, a duração da cena caía para
+ * `scene.durationSec` — a duração que o modelo ESCREVEU no roteiro, que é um
+ * palpite. Se o áudio real tiver outra duração, tudo o que vem depois desloca:
+ * foi exatamente o que o dono viu no vídeo SZSGAxqmmm0 ("o início até que está,
+ * mas depois fica totalmente dessincronizado").
+ *
+ * Ordem de tentativa, da mais barata para a mais cara:
+ *   1. cabeçalho WAV — aritmética pura, sem I/O nem processo (cobre o piper);
+ *   2. `ffprobe` — cobre MP3 do edge-tts (o runner ubuntu do Actions já o traz);
+ *   3. null → quem chama decide (hoje: cai na duração do roteiro, como antes).
+ * Nunca lança: medição é best-effort, não pode derrubar o vídeo do dia.
+ */
+export function medirDuracaoAudio(audio, ext) {
+  // 1) WAV: procura os chunks `fmt ` (taxa/canais/bits) e `data` (tamanho).
+  try {
+    if (audio.length > 44 && audio.toString('ascii', 0, 4) === 'RIFF' && audio.toString('ascii', 8, 12) === 'WAVE') {
+      let taxa = 0, canais = 0, bits = 0, bytesDados = 0;
+      let off = 12;
+      while (off + 8 <= audio.length) {
+        const id = audio.toString('ascii', off, off + 4);
+        const tam = audio.readUInt32LE(off + 4);
+        if (id === 'fmt ' && off + 24 <= audio.length) {
+          canais = audio.readUInt16LE(off + 10);
+          taxa = audio.readUInt32LE(off + 12);
+          bits = audio.readUInt16LE(off + 22);
+        } else if (id === 'data') {
+          bytesDados = Math.min(tam, audio.length - (off + 8));
+          break;
+        }
+        off += 8 + tam + (tam % 2); // chunks têm padding para tamanho par
+      }
+      const bytesPorSegundo = taxa * canais * (bits / 8);
+      if (bytesDados > 0 && bytesPorSegundo > 0) {
+        return +(bytesDados / bytesPorSegundo).toFixed(3);
+      }
+    }
+  } catch { /* cabeçalho inesperado → tenta o ffprobe */ }
+
+  // 2) ffprobe sobre um arquivo temporário.
+  let tmp;
+  try {
+    tmp = join(tmpdir(), `finmoovi-dur-${Date.now()}-${Math.round(Math.random() * 1e6)}.${ext || 'mp3'}`);
+    writeFileSync(tmp, audio);
+    const saida = execFileSync(
+      'ffprobe',
+      ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', tmp],
+      { encoding: 'utf-8', timeout: 15000 },
+    );
+    const seg = Number(String(saida).trim());
+    if (Number.isFinite(seg) && seg > 0) return +seg.toFixed(3);
+  } catch { /* sem ffprobe no PATH, ou arquivo ilegível */ }
+  finally {
+    try { if (tmp) unlinkSync(tmp); } catch { /* temp já removido */ }
+  }
+
+  return null;
+}
+
 // ── Síntese + validação de UMA cena (F1.5) ──
 // Extraído do loop principal p/ ser reaproveitado na re-síntese de "voz única"
 // (Fix 2): mesma lógica de tentativas/validação/backoff, só muda QUAL provedor
@@ -283,10 +346,17 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
     const ultimoFim = whisper.length ? Number(whisper[whisper.length - 1].end) : NaN;
     const medicaoOk = Number.isFinite(ultimoFim) && ultimoFim > 0;
     if (!medicaoOk && whisper.length) {
-      console.log(`  ⚠ cena ${id}${logSuffix}: Whisper devolveu ${whisper.length} palavra(s) SEM tempo válido — usando a duração do roteiro (${fallbackDurationSec}s) e alinhamento proporcional.`);
+      // Mede o ÁUDIO REAL antes de recorrer ao palpite do roteiro. Sem isto, a cena
+      // ficava com a duração ESCRITA pelo modelo e tudo o que vinha depois deslocava.
+      const real = medirDuracaoAudio(audio, ext);
+      const usada = real ?? fallbackDurationSec;
+      const origem = real ? `duração REAL do áudio (${real}s)` : `duração do roteiro (${fallbackDurationSec}s — ffprobe indisponível)`;
+      console.log(`  ⚠ cena ${id}${logSuffix}: Whisper devolveu ${whisper.length} palavra(s) SEM tempo válido — usando a ${origem} e alinhamento proporcional.`);
       whisper = []; // descarta tempos inválidos: alignWords cai na distribuição por peso
+      speechEnd = usada;
+    } else {
+      speechEnd = medicaoOk ? ultimoFim : fallbackDurationSec;
     }
-    speechEnd = medicaoOk ? ultimoFim : fallbackDurationSec;
 
     if (!isAudioBroken(speechEnd, wordCount)) {
       succeededAttempt = attempt;

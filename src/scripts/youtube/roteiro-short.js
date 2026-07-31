@@ -142,7 +142,16 @@ function findSentenceForAnchor(narration, anchor) {
  * Retorna [] gracioso se não houver nada. `publishedPath`/`outputDir` são
  * parametrizáveis só para teste; em produção usam os caminhos padrão.
  */
-export function loadRecentPublishedContext({ publishedPath = PUBLISHED_PATH, outputDir = OUTPUT_DIR, limit = 3 } = {}) {
+// Janela do anti-repetição: 3 → 4 (31/07/2026). Medido por simulação sobre os 9
+// vídeos já publicados, com `clique-link` isenta (obrigatória na CTA):
+//   janela 3 → teria reprovado 3/7 na 1ª tentativa · janela 4 → 4/7 · janela 5 → 5/7
+//   e em TODAS elas sobram ≥3 metáforas livres do catálogo de 8 úteis.
+// Ou seja: mesmo janela 6 é viável, mas cada reprovação custa uma tentativa (25s de
+// cooldown + chamada). 4 é o equilíbrio: a mesma metáfora só pode voltar depois de
+// 5 vídeos, sem dobrar o risco de esgotar as 4 tentativas.
+// ⚠️ Subir mais depende de AMPLIAR O CATÁLOGO (9 metáforas, cada uma desenhada à
+// mão no Remotion) — o dono quer "centenas"; ver IMPLEMENTACAO20 §17.5.
+export function loadRecentPublishedContext({ publishedPath = PUBLISHED_PATH, outputDir = OUTPUT_DIR, limit = 4 } = {}) {
   let published;
   try {
     published = JSON.parse(readFileSync(publishedPath, 'utf-8'));
@@ -531,6 +540,33 @@ export function runHardAntiRepetitionChecks(script, recentContext) {
   for (const [where, text] of screenTexts) {
     if (hasSpelledOutNumber(text)) {
       errors.push(`${where}: números na tela devem ser ALGARISMOS (R$ 50), nunca por extenso ("${text}")`);
+    }
+  }
+
+  // (c-bis) METÁFORA JÁ USADA NOS VÍDEOS RECENTES — agora com DENTES (31/07/2026).
+  // O bloco 🚫 do prompt já proibia, mas era ADVISORY: nada verificava. Medido nos
+  // 9 vídeos publicados: "avalanche" em CINCO deles, e o vídeo de 31/07 usou-a 2×
+  // tendo `nunca-faca-isso-dinheiro` (que também a usa) na janela dos anteriores.
+  // O dono: "isso cansa quem assistir 2 vídeos… é inadmissível".
+  // `clique-link` fica FORA da regra: é obrigatória na CTA por desenho (REGRA C),
+  // proibi-la tornaria o roteiro impossível.
+  const METAFORA_LIVRE = new Set(['clique-link']);
+  const usadasAntes = new Set();
+  for (const prev of list) {
+    for (const m of (prev.metaphors || [])) if (!METAFORA_LIVRE.has(m)) usadasAntes.add(m);
+  }
+  if (usadasAntes.size) {
+    const repetidas = new Set();
+    for (const s of scenes) {
+      for (const sh of (Array.isArray(s && s.shots) ? s.shots : [])) {
+        const v = sh && sh.visual;
+        if (v && v.type === 'metaphor' && v.metaphor && !METAFORA_LIVRE.has(v.metaphor) && usadasAntes.has(v.metaphor)) {
+          repetidas.add(v.metaphor);
+        }
+      }
+    }
+    if (repetidas.size) {
+      errors.push(`metáfora "${[...repetidas].join('", "')}" já foi usada nos vídeos recentes — o FIO CONDUTOR precisa de uma metáfora INÉDITA (proibidas agora: ${[...usadasAntes].join(', ')})`);
     }
   }
 

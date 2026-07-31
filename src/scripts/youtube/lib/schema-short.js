@@ -596,6 +596,32 @@ export function sanitizeScript(script) {
   const log = (msg) => console.log(`🧼 sanitizer: ${msg}`);
   const scenes = Array.isArray(script.scenes) ? script.scenes : [];
 
+  // 0-PRE-PRE. MARCAÇÃO DE ÊNFASE FORA DA INTRO (31/07/2026).
+  // `*asterisco*` é a marcação que o render destaca — e o prompt a autoriza SÓ em
+  // `intro.frase`. No roteiro `tesouro-direto-100` o modelo a espalhou pela
+  // NARRAÇÃO ("*Se liga* no que eu descobri"), e aí ela vaza para dois lados:
+  //   1. o TTS lê literalmente → a voz disse "asterisco se liga asterisco";
+  //   2. `alignWords` monta a legenda a partir da narração ORIGINAL → a legenda
+  //      queimada mostraria "*Se" e "liga*".
+  // Limpar aqui resolve os dois de uma vez, ANTES de a narração virar voz e SRT.
+  // `intro.frase` NÃO é tocada — lá a marcação é legítima e o render depende dela.
+  // Sanitizar em vez de reprovar: é quase-erro óbvio, sem perda de conteúdo, e
+  // reprovar custaria 4 tentativas e o vídeo do dia.
+  const limparEnfase = (txt) => String(txt)
+    .replace(/\*+/g, '')            // *ênfase* → ênfase
+    .replace(/\s*—\s*/g, ', ')      // travessão vira pausa de vírgula (legenda limpa)
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  scenes.forEach((scene, i) => {
+    if (!scene || typeof scene.narration !== 'string') return;
+    const antes = scene.narration;
+    const depois = limparEnfase(antes);
+    if (depois !== antes) {
+      log(`cena ${i + 1}: marcação/travessão removidos da narração (a voz lia "asterisco" e a legenda mostrava o símbolo)`);
+      scene.narration = depois;
+    }
+  });
+
   // 0-PRE. ROLE COMPOSTO → ROLE BASE. A moldura APP-FIRST do prompt nomeia as
   // cenas por FUNÇÃO ("BEAT-EMPATIA", "BEAT-VAZAMENTO", "BEAT-DEMO") e o LLM
   // copia esses nomes para o campo "role", que só aceita hook/beat/cta/outro.
