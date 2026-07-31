@@ -89,26 +89,39 @@ function stripThousands(num) {
 //   3x / 3×                 → 3 vezes
 // Importante: o número vem ANTES de "reais" (ordem natural que o dono pediu) —
 // "R$ 50 podem virar R$ 75" → "50 reais podem virar 75 reais".
+// Número falado: começa e TERMINA em dígito. `[\d.,]+` engolia o separador final —
+// em "R$ 100, 24 meses" capturava "100," e produzia "100, reais 24 meses", ou seja
+// a palavra "reais" saltava para DEPOIS da vírgula e a voz dizia "cem, reais vinte
+// e quatro meses". Medido em 31/07 no roteiro `tesouro-direto-100`.
+const NUM = String.raw`\d(?:[\d.,]*\d)?`;
+
 export function normalizeSpoken(text) {
   let out = String(text);
   // 1) R$ <número> <escala grande> → "<número> <escala> de reais" (milhão/bilhão/trilhão).
   out = out.replace(
-    /R\$\s*([\d.,]+)\s*(milhões|milhão|bilhões|bilhão|trilhões|trilhão)/gi,
+    new RegExp(String.raw`R\$\s*(${NUM})\s*(milhões|milhão|bilhões|bilhão|trilhões|trilhão)`, 'gi'),
     (_, num, scale) => `${stripThousands(num)} ${scale} de reais`,
+  );
+  // 1-bis) R$ <número>k → "<número> mil reais". O "k" de milhar é atalho de escrita
+  // que o modelo usa ("R$ 2,68k"); sem esta regra o "k" ficava ÓRFÃO colado no
+  // resultado da regra 3 e a voz tentava dizer "2,68 reaisk" (medido em 31/07).
+  out = out.replace(
+    new RegExp(String.raw`R\$\s*(${NUM})\s*k\b`, 'gi'),
+    (_, num) => `${stripThousands(num)} mil reais`,
   );
   // 2) R$ <número> mil → "<número> mil reais" ("mil" não leva "de reais").
   out = out.replace(
-    /R\$\s*([\d.,]+)\s*mil\b/gi,
+    new RegExp(String.raw`R\$\s*(${NUM})\s*mil\b`, 'gi'),
     (_, num) => `${stripThousands(num)} mil reais`,
   );
   // 3) R$ <número> simples → "<número> reais".
   out = out.replace(
-    /R\$\s*([\d.,]+)/g,
+    new RegExp(String.raw`R\$\s*(${NUM})`, 'g'),
     (_, num) => `${stripThousands(num)} reais`,
   );
   // 4) <número>% → "<número> por cento".
   out = out.replace(
-    /([\d.,]+)\s*%/g,
+    new RegExp(String.raw`(${NUM})\s*%`, 'g'),
     (_, num) => `${stripThousands(num)} por cento`,
   );
   // 5) <número>x / <número>× → "<número> vezes" (não casa "3x4"/dimensões).
@@ -259,7 +272,21 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
       continue;
     }
     whisper = await transcribeWords(audio, { ext });
-    speechEnd = whisper.length ? whisper[whisper.length - 1].end : fallbackDurationSec;
+    // REDE DE SEGURANÇA DA MEDIÇÃO (31/07/2026). O Whisper pode devolver palavras
+    // SEM tempo válido — o último `end` vem 0/não-numérico. Medido no run
+    // 30619739871: áudio de 725.616 bytes (piper) e 125.568 (edge), e mesmo assim
+    // speechEnd 0,00 nos DOIS provedores; o guard concluiu "áudio quebrado" e
+    // derrubou o vídeo do dia. O fallback só cobria a lista VAZIA — lista
+    // DEGENERADA passava batida.
+    // Agora: sem medição confiável, vale a duração do roteiro e o alinhamento
+    // proporcional (o vídeo sai com sincronia aproximada, em vez de não sair).
+    const ultimoFim = whisper.length ? Number(whisper[whisper.length - 1].end) : NaN;
+    const medicaoOk = Number.isFinite(ultimoFim) && ultimoFim > 0;
+    if (!medicaoOk && whisper.length) {
+      console.log(`  ⚠ cena ${id}${logSuffix}: Whisper devolveu ${whisper.length} palavra(s) SEM tempo válido — usando a duração do roteiro (${fallbackDurationSec}s) e alinhamento proporcional.`);
+      whisper = []; // descarta tempos inválidos: alignWords cai na distribuição por peso
+    }
+    speechEnd = medicaoOk ? ultimoFim : fallbackDurationSec;
 
     if (!isAudioBroken(speechEnd, wordCount)) {
       succeededAttempt = attempt;
