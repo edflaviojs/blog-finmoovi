@@ -48,7 +48,8 @@ function lerFrontmatter(caminho) {
   return { term: pick('term'), definition: pick('definition'), category: pick('category'), body };
 }
 
-function lerTema(slug) {
+// exportada em 31/07/2026 para a passagem 2 (`coreografia.js`) ler o mesmo tema
+export function lerTema(slug) {
   if (slug.startsWith('EDITORIAL:')) {
     const id = slug.slice('EDITORIAL:'.length);
     const data = JSON.parse(readFileSync(TOPICS_PATH, 'utf-8'));
@@ -91,21 +92,153 @@ const cortar = (txt, max = 1500) => {
  */
 const DICAS_DO_FIO = {
   'bola-neve': 'bola de neve, rolar, ladeira',
-  avalanche: 'avalanche, desabar, soterrar',
+  avalanche: 'avalanche, desabar, desmoronar',
   escorregao: 'escorregar, tropeçar, derrapar',
   foguete: 'foguete, decolar, propulsão',
   semente: 'plantar, brotar, raiz, colher',
   'montanha-russa': 'montanha-russa, sobe e desce, looping',
   bolha: 'bolha, inflar, estourar',
-  ralo: 'ralo, escoar, vazar, torneira',
+  ralo: 'ralo, escoar, escorrendo, vazar, torneira',
+  // leva 1 da ampliação (IMPLEMENTACAO20 §20.2 B1)
+  ampulheta: 'ampulheta, o tempo escorre, o prazo',
+  balanca: 'balança, pesar, pender para um lado',
+  'bola-de-ferro': 'bola de ferro, corrente, arrastar, acorrentado',
+  'guarda-chuva': 'guarda-chuva, chuva, ficar seco',
+  // leva 2
+  ratoeira: 'ratoeira, armadilha, isca, fechar',
+  'mochila-pedras': 'mochila, pedra, peso nas costas, carregar',
+  'areia-movedica': 'areia movediça, afundar, se debater',
+  domino: 'dominó, derrubar, cair em cadeia',
+  // leva 3
+  'castelo-cartas': 'castelo de cartas, vir abaixo, ruir',
+  gangorra: 'gangorra, sobe e desce, um lado pro outro',
+  'corda-bamba': 'corda bamba, equilíbrio, sem rede',
+  relogio: 'relógio, ponteiro, o tempo correndo',
+  // leva 4
+  vela: 'vela, queimar, derreter, chama',
+  'trem-perdido': 'trem, plataforma, perder o trem',
+  bifurcacao: 'bifurcação, dois caminhos, encruzilhada',
+  'duas-portas': 'duas portas, abrir uma, a outra fica fechada',
+  // leva 5
+  semaforo: 'semáforo, sinal verde, sinal vermelho',
+  cofre: 'cofre, trancar, guardado',
+  escudo: 'escudo, aparar o golpe, blindado',
+  boia: 'boia, te segura, ficar à tona',
+  // leva 6 (última)
+  escada: 'escada, degrau, um de cada vez',
+  'balde-furado': 'balde furado, furo, perde por baixo',
+  buraco: 'buraco, cavar, mais fundo',
+  fumaca: 'fumaça, virar fumaça, sobe e não volta',
 };
+
+/**
+ * O MAPA TIPO-DE-TEMA → IMAGEM (IMPLEMENTACAO20 §20.2 B3, 31/07/2026).
+ *
+ * POR QUE SÓ AGORA. Isto foi pedido em §19.7 e ADIADO de propósito: com 8 imagens
+ * úteis e 5 bloqueadas pela janela, filtrar por família deixaria UMA ou ZERO
+ * opções — seria empilhar trava sobre trava. Com 32 imagens (8 famílias × 4)
+ * passou a fazer sentido.
+ *
+ * O QUE ISTO É E O QUE NÃO É. Não é uma trava nova: é **encurtar o menu** antes de
+ * o modelo escolher. Ele não pode escolher mal aquilo que não lhe é oferecido —
+ * o mesmo princípio do simulador de números (§19.3) e da correção de 31/07 aos
+ * exemplos do prompt (§19.9).
+ *
+ * ⚠️ É uma PREFERÊNCIA, não uma prisão: se a família ficar sem nenhuma imagem
+ * livre, abre-se o catálogo todo e **escreve-se um aviso no log** — trava que
+ * aborta em silêncio é armadilha (regra deste repositório).
+ */
+export const FAMILIAS_DE_IMAGEM = {
+  crescer: ['bola-neve', 'foguete', 'semente', 'escada'],
+  vazar: ['ralo', 'balde-furado', 'buraco', 'fumaca'],
+  divida: ['bola-de-ferro', 'ratoeira', 'mochila-pedras', 'areia-movedica'],
+  queda: ['escorregao', 'avalanche', 'domino', 'castelo-cartas'],
+  risco: ['montanha-russa', 'bolha', 'gangorra', 'corda-bamba'],
+  tempo: ['ampulheta', 'relogio', 'vela', 'trem-perdido'],
+  decidir: ['balanca', 'bifurcacao', 'duas-portas', 'semaforo'],
+  proteger: ['guarda-chuva', 'cofre', 'escudo', 'boia'],
+};
+
+// As palavras do TEMA que apontam para cada família. Propositadamente específicas:
+// uma palavra vaga (ex.: "dinheiro") apontaria para tudo e não decidiria nada.
+// ⚠️ Sem plurais quando o singular já os apanha ("erro" apanha "erros"): duas
+// pistas para a mesma ideia contam DOIS pontos e falseiam a comparação.
+const PISTAS_DE_TEMA = {
+  crescer: ['investir', 'investimento', 'rendimento', 'render', 'juros compostos', 'aporte', 'poupar', 'poupanca', 'acumular', 'patrimonio', 'longo prazo', 'cdb', 'tesouro', 'selic', 'dividendo', 'renda passiva'],
+  vazar: ['taxa', 'tarifa', 'desperdicio', 'gasto', 'inflacao', 'assinatura', 'mensalidade', 'vazamento', 'para onde vai', 'sumindo', 'corroe'],
+  divida: ['divida', 'cartao', 'rotativo', 'parcelamento', 'financiamento', 'emprestimo', 'cheque especial', 'negativado', 'amortizacao', 'quitar', 'fatura'],
+  queda: ['erro', 'engano', 'nunca faca', 'cilada', 'furada', 'besteira', 'deslize', 'armadilha do'],
+  risco: ['risco', 'volatilidade', 'oscila', 'bolsa', 'acoes', 'cripto', 'bitcoin', 'especula', 'aposta', 'day trade', 'alavancagem'],
+  tempo: ['prazo', 'adiar', 'procrastin', 'comecar cedo', 'com que idade', 'anos antes', 'tarde demais', 'agora ou nunca', 'aposentadoria'],
+  decidir: ['comparacao', 'comparar', 'lado a lado', 'melhor opcao'],
+  proteger: ['reserva de emergencia', 'emergencia', 'seguro', 'imprevisto', 'colchao', 'protecao', 'se der errado'],
+};
+
+/**
+ * MARCADORES FORTES — ganham sozinhos, sem contagem.
+ * "Poupança vs CDB" é uma COMPARAÇÃO, mesmo tendo duas palavras de investimento:
+ * o vídeo é sobre escolher, não sobre render. Sem esta regra, "poupanca" + "cdb"
+ * faziam 2 pontos em `crescer` e ganhavam ao " vs " — medido em 31/07.
+ */
+const MARCADORES_FORTES = {
+  decidir: [' vs ', 'versus', 'qual e melhor', 'qual o melhor', 'qual rende mais', 'diferenca entre', 'vale mais a pena', 'quem ganha'],
+};
+
+/**
+ * Ordem de desempate. `queda` fica em ÚLTIMO de propósito: "3 erros de cartão" tem
+ * "erro" (queda) e "cartão" (dívida) — mas "erro" é a MOLDURA do vídeo, e "cartão"
+ * é o ASSUNTO. A imagem tem de nascer do assunto.
+ */
+const PRIORIDADE_DE_FAMILIA = ['divida', 'proteger', 'vazar', 'risco', 'tempo', 'crescer', 'decidir', 'queda'];
+
+const semAcentos = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+/**
+ * Decide a família do tema. Devolve `null` quando NÃO HÁ SINAL NENHUM — nesse caso
+ * o menu abre para o catálogo todo, porque restringir para o lado errado é pior do
+ * que não restringir.
+ */
+export function familiaDoTema(texto) {
+  const t = semAcentos(` ${texto} `);
+  for (const [fam, marcas] of Object.entries(MARCADORES_FORTES)) {
+    if (marcas.some((m) => t.includes(semAcentos(m)))) return fam;
+  }
+  const pontos = Object.entries(PISTAS_DE_TEMA)
+    .map(([fam, pistas]) => [fam, pistas.filter((p) => t.includes(semAcentos(p))).length])
+    .filter(([, n]) => n > 0);
+  if (!pontos.length) return null;
+  const maximo = Math.max(...pontos.map(([, n]) => n));
+  const empatadas = pontos.filter(([, n]) => n === maximo).map(([fam]) => fam);
+  return PRIORIDADE_DE_FAMILIA.find((fam) => empatadas.includes(fam)) || empatadas[0];
+}
+
+/**
+ * O menu que vai ao prompt: catálogo − clique-link − proibidas, e depois filtrado
+ * pela família SE isso ainda deixar alguma imagem. Devolve também o aviso, para
+ * quem chama o escrever no log.
+ */
+export function escolherImagens(temaTexto, proibidas = []) {
+  const livres = METAPHORS.filter((m) => m !== 'clique-link' && !proibidas.includes(m));
+  const familia = familiaDoTema(temaTexto);
+  if (!familia) return { lista: livres, familia: null, aviso: null };
+  const daFamilia = livres.filter((m) => (FAMILIAS_DE_IMAGEM[familia] || []).includes(m));
+  if (!daFamilia.length) {
+    return {
+      lista: livres,
+      familia,
+      aviso: `a família "${familia}" não tem nenhuma imagem livre (todas nos ${proibidas.length} vídeos recentes) — o menu abriu para o catálogo todo`,
+    };
+  }
+  return { lista: daFamilia, familia, aviso: null };
+}
 
 // ─── o prompt ────────────────────────────────────────────────────────────────
 // PODADO de propósito: só entra aqui o que muda o TEXTO. Nada de ícones, sons,
 // tempo de tela, tipos de visual, âncoras ou JSON de shots.
 export function buildPromptNarrativa(t, proibidas, frasesRecentes, ficha = null) {
   const bloqueadas = proibidas.length ? proibidas.join(', ') : '(nenhuma ainda)';
-  const disponiveis = METAPHORS.filter((m) => m !== 'clique-link' && !proibidas.includes(m));
+  // o menu já vem filtrado pela família do tema (ver `escolherImagens`)
+  const disponiveis = escolherImagens(`${t.term || ''} ${t.angle || ''} ${t.definition || ''}`, proibidas).lista;
   const menuDeImagens = disponiveis.map((m) => `${m} (${DICAS_DO_FIO[m] || m})`).join(' · ');
   // O alvo de tamanho sai das MESMAS constantes que a validação usa — escrever "117"
   // à mão aqui era deixar o prompt e a trava separarem-se no primeiro ajuste.
@@ -302,13 +435,61 @@ const MAX_PALAVRAS = Math.round(55 * PALAVRAS_POR_SEGUNDO); // 143 ≈ 55s
  */
 const PALAVRAS_DO_FIO = {
   'bola-neve': ['bola de neve', 'bolinha', 'neve', 'ladeira', 'rolar', 'rola'],
-  avalanche: ['avalanche', 'desab', 'soterr', 'montanha'],
+  // "montanha" saiu: casava com "montanha-russa" e deixava a avalanche passar sem
+  // se falar de avalanche nenhuma (achado do teste de cruzamento, 31/07).
+  avalanche: ['avalanche', 'desab', 'soterr', 'desmoron'],
   escorregao: ['escorreg', 'tropec', 'tropeç', 'derrap', 'escorrega'],
   foguete: ['foguete', 'decol', 'lançamento', 'propuls'],
   semente: ['semente', 'plant', 'brot', 'germin', 'raiz', 'colher', 'árvore', 'arvore', 'muda'],
   'montanha-russa': ['montanha-russa', 'montanha russa', 'sobe e desce', 'looping', 'carrinho'],
-  bolha: ['bolha', 'estour', 'infl', 'ar '],
-  ralo: ['ralo', 'escorr', 'escoa', 'vaza', 'ping', 'torneira'],
+  // "ar " saiu: casava com QUALQUER palavra terminada em "ar" seguida de espaço
+  // ("plantar e", "comprar o"…) — a bolha passava em praticamente qualquer texto.
+  bolha: ['bolha', 'estour', 'infl'],
+  // "escorr" saiu: casava com "escorrega" (que é o escorregão) e com "escorre" da
+  // ampulheta. "escorrend" é do ralo e só do ralo.
+  ralo: ['ralo', 'escorrend', 'escoa', 'vaza', 'ping', 'torneira'],
+  // leva 1 da ampliação. ⚠️ Cada entrada aqui TEM de casar com a mesma imagem em
+  // `DICAS_DO_FIO`: foi a divergência entre os dois que deu 8/8 à semente (§19.9).
+  // "relógio" saiu daqui na leva 3: passou a ser imagem própria, e deixar a palavra
+  // nas duas fazia a ampulheta passar sem se falar de areia nenhuma.
+  // "areia" sozinha saiu: era partilhada com a areia-movediça (as duas são areia).
+  // A ampulheta pede o nome dela, o tempo a escorrer ou o prazo.
+  ampulheta: ['ampulheta', 'o tempo escorre', 'prazo', 'ultimo grão', 'último grão', 'grão de areia'],
+  balanca: ['balanç', 'balanc', 'pesar', 'pesa mais', 'pender', 'pende', 'prato'],
+  // "peso"/"pesa" saíram: eram genéricos e a frase da balança validava esta imagem.
+  'bola-de-ferro': ['bola de ferro', 'corrente', 'arrast', 'acorrent', 'preso', 'presa'],
+  'guarda-chuva': ['guarda-chuva', 'guarda chuva', 'chuva', 'seco', 'molha', 'temporal'],
+  // leva 2. As formas COM e SEM acento entram as duas: a busca compara o texto tal
+  // como o modelo o escreveu, sem tirar acentos.
+  // "preso"/"presa" saíram: são da bola-de-ferro. A ratoeira tem palavras próprias.
+  ratoeira: ['ratoeira', 'armadilha', 'isca', 'fecha em cima', 'caiu na'],
+  'mochila-pedras': ['mochila', 'pedra', 'peso nas costas', 'carreg', 'costas'],
+  // "areia" sozinha saiu (ver ampulheta): o que define esta imagem é o MOVEDIÇA.
+  'areia-movedica': ['areia movediça', 'areia movedica', 'movediç', 'movedic', 'afund', 'atol'],
+  domino: ['dominó', 'domino', 'derrub', 'em cadeia', 'peça cai', 'peca cai'],
+  // leva 3
+  // "desab" saiu: é a palavra da avalanche. Esta imagem pede o castelo.
+  'castelo-cartas': ['castelo de cartas', 'castelo', 'de cartas', 'vem abaixo', 'vir abaixo', 'ruir'],
+  gangorra: ['gangorra', 'sobe e desce', 'sobe, desce', 'de um lado pro outro', 'pra cima e pra baixo'],
+  'corda-bamba': ['corda bamba', 'corda-bamba', 'na corda', 'equilíbri', 'equilibri', 'sem rede', 'desequilibr'],
+  relogio: ['relógio', 'relogio', 'ponteiro', 'o tempo corre', 'contra o tempo', 'hora passa', 'cada minuto'],
+  // leva 4
+  vela: ['vela', 'queim', 'derret', 'chama', 'pavio', 'apagar'],
+  'trem-perdido': ['trem', 'plataforma', 'vagão', 'vagao', 'estação', 'estacao', 'ja partiu', 'já partiu'],
+  bifurcacao: ['bifurca', 'dois caminhos', 'encruzilhada', 'estrada se divide', 'dois lados da estrada'],
+  'duas-portas': ['duas portas', 'porta', 'abre uma', 'abrir uma', 'a outra fecha'],
+  // leva 5
+  semaforo: ['semáforo', 'semaforo', 'sinal verde', 'sinal vermelho', 'sinal fecha', 'sinal abre', 'luz verde', 'luz vermelha'],
+  cofre: ['cofre', 'tranc', 'guardado', 'a salvo', 'no seguro'],
+  escudo: ['escudo', 'blind', 'golpe', 'aparar', 'aguenta o'],
+  boia: ['boia', 'bóia', 'salva-vidas', 'te segura', 'se segurar', 'à tona', 'a tona', 'flutu'],
+  // leva 6 (última)
+  escada: ['escada', 'degrau', 'um de cada vez', 'passo a passo', 'subindo aos poucos'],
+  // sem 'vaza' aqui: essa palavra é do ralo (ver o teste de cruzamento)
+  'balde-furado': ['balde', 'furo', 'furad', 'perde por baixo', 'enche e some'],
+  buraco: ['buraco', 'cavar', 'cavando', 'cava mais', 'mais fundo', 'fundo do poço'],
+  // sem 'queim' aqui: essa palavra é da vela
+  fumaca: ['fumaça', 'fumaca', 'virou fumaça', 'virar fumaça', 'evapor', 'foi pro ar'],
 };
 
 // As ÚNICAS centenas que terminam em "centos/centas" em português. Quem não estiver
@@ -327,7 +508,7 @@ const CENTENAS_VALIDAS = new Set([
 // NÃO EXISTE. Promessa falsa indo ao ar é pior que CTA fraca.
 const BRINDES_PROIBIDOS = /\b(planilha|ebook|e-book|pdf|apostila|curso|aula|checklist|mapa mental|template|guia completo)\b/i;
 
-export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = '') {
+export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = '', permitidas = null) {
   const erros = [];
   const avisos = [];
   if (!n || typeof n !== 'object') return { ok: false, erros: ['resposta não é objeto'], avisos };
@@ -436,6 +617,12 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   if (!fio) erros.push('sem "fioCondutor"');
   else if (!METAPHORS.includes(fio)) erros.push(`fioCondutor "${fio}" fora do catálogo (${METAPHORS.join('/')})`);
   else if (proibidas.includes(fio)) erros.push(`fioCondutor "${fio}" foi usado nos vídeos recentes — escolha outro`);
+  // O MENU TEM DE TER DENTES (§20.2 B3). Sem isto, o prompt oferece a lista curta
+  // da família e nada impede o modelo de ir buscar outra imagem — é o modo de
+  // falha crónico deste repositório: o prompt pede, nada pune, o modelo ignora.
+  else if (Array.isArray(permitidas) && permitidas.length && !permitidas.includes(fio)) {
+    erros.push(`fioCondutor "${fio}" não estava no menu deste tema — escolha uma de: ${permitidas.join(', ')}`);
+  }
   else {
     const pistas = PALAVRAS_DO_FIO[fio] || [fio];
     const blocosComFio = blocos.filter((b) => {
@@ -531,6 +718,8 @@ export function acumularExigencias(exigencias, novosErros) {
 
 export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frasesRecentes = [], ficha = null } = {}) {
   const base = buildPromptNarrativa(t, proibidas, frasesRecentes, ficha);
+  // a MESMA lista que foi ao prompt é a que a validação exige (§20.2 B3)
+  const { lista: permitidas } = escolherImagens(`${t.term || ''} ${t.angle || ''} ${t.definition || ''}`, proibidas);
   let corretivo = '';
   const exigencias = [];
   for (let i = 1; i <= tentativas; i++) {
@@ -550,7 +739,7 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
     if (Array.isArray(n.blocos)) {
       for (const b of n.blocos) if (b && typeof b.fala === 'string') b.fala = limparFala(b.fala);
     }
-    const v = validarNarrativa(n, proibidas, ficha, t && t.term);
+    const v = validarNarrativa(n, proibidas, ficha, t && t.term, permitidas);
     if (v.ok) return { narrativa: n, avisos: v.avisos, palavras: v.palavras, tentativa: i };
     // ver `acumularExigencias`: o tamanho substitui, o resto acumula
     const lista = acumularExigencias(exigencias, v.erros);
@@ -570,7 +759,13 @@ if (executadoDireto) {
   const recentes = loadRecentPublishedContext();
   const proibidas = [...new Set(recentes.flatMap((r) => r.metaphors || []))].filter((m) => m !== 'clique-link');
   const frases = recentes.flatMap((r) => r.stories || []).slice(0, 4);
-  if (proibidas.length) console.log(`🚫 imagens proibidas (${recentes.length} vídeos recentes): ${proibidas.join(', ')}\n`);
+  if (proibidas.length) console.log(`🚫 imagens proibidas (${recentes.length} vídeos recentes): ${proibidas.join(', ')}`);
+
+  // Que menu de imagens este tema vai receber, e porquê (§20.2 B3).
+  const escolha = escolherImagens(`${t.term} ${t.angle || ''} ${t.definition || ''}`, proibidas);
+  console.log(`🖼️  família do tema: ${escolha.familia || '(não identificada — menu aberto)'} → ${escolha.lista.length} imagem(ns) no menu: ${escolha.lista.join(', ')}`);
+  if (escolha.aviso) console.log(`⚠️  ${escolha.aviso}`);
+  console.log('');
 
   // A ficha nasce do TEMA + ÂNGULO. Se o tema não traz cenário (aporte e prazo),
   // não há ficha — e o prompt passa a proibir qualquer número fora do apoio.

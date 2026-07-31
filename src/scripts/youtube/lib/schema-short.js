@@ -77,7 +77,61 @@ const LEGACY_VISUAL_TYPES = ['title', 'number', 'chart', 'list', 'formula', 'sta
 // foguete=decolagem/crescimento rápido; semente=paciência/longo prazo;
 // montanha-russa=volatilidade/altos e baixos; bolha=expectativa que estoura;
 // ralo=dinheiro escorrendo/taxas. (Enum FROZEN — o renderer implementa as animações.)
-export const METAPHORS = ['bola-neve', 'avalanche', 'escorregao', 'clique-link', 'foguete', 'semente', 'montanha-russa', 'bolha', 'ralo'];
+//
+// LEVA 1 DA AMPLIAÇÃO (31/07/2026, IMPLEMENTACAO20 §20.2 B1): +4 imagens para as
+// quatro famílias de tema que estavam VAZIAS — tempo, decisão, dívida e proteção.
+// Motivo medido: com 9 imagens e a janela anti-repetição em 4 vídeos, sobravam só
+// TRÊS opções para qualquer tema do mundo, e a metáfora saía forçada (§19.10).
+// ⚠️ Acrescentar um nome aqui obriga a tocar em mais 6 sítios — a lista está no
+// §20.2 B2 do doc. Se o desenho faltar no render, a imagem sai como BOLA DE NEVE
+// (fallback silencioso) — a composição `Galeria` existe para tornar isso visível.
+export const METAPHORS = [
+  'bola-neve', 'avalanche', 'escorregao', 'clique-link', 'foguete', 'semente', 'montanha-russa', 'bolha', 'ralo',
+  'ampulheta', 'balanca', 'bola-de-ferro', 'guarda-chuva',
+  'ratoeira', 'mochila-pedras', 'areia-movedica', 'domino',
+  'castelo-cartas', 'gangorra', 'corda-bamba', 'relogio',
+  'vela', 'trem-perdido', 'bifurcacao', 'duas-portas',
+  'semaforo', 'cofre', 'escudo', 'boia',
+  'escada', 'balde-furado', 'buraco', 'fumaca',
+];
+
+// O que cada imagem QUER DIZER — fonte única, para o prompt e para a galeria não
+// se contradizerem. (O modo de falha crónico deste repo é exatamente esse.)
+export const METAPHOR_MEANINGS = {
+  'bola-neve': 'efeito cumulativo que cresce',
+  avalanche: 'o colapso, quando acumula demais',
+  escorregao: 'o erro comum, o tropeção',
+  'clique-link': 'a ação na tela (reservada à chamada)',
+  foguete: 'crescimento rápido, decolagem',
+  semente: 'paciência, longo prazo',
+  'montanha-russa': 'volatilidade, altos e baixos',
+  bolha: 'expectativa que estoura',
+  ralo: 'dinheiro escorrendo, taxas',
+  ampulheta: 'o tempo a passar, adiar custa',
+  balanca: 'comparar duas opções',
+  'bola-de-ferro': 'a dívida que prende e pesa',
+  'guarda-chuva': 'a reserva que protege',
+  ratoeira: 'a armadilha que fecha (rotativo, mínimo)',
+  'mochila-pedras': 'o peso que você carrega todo mês',
+  'areia-movedica': 'quanto mais se debate, mais afunda',
+  domino: 'um erro derruba o seguinte',
+  'castelo-cartas': 'parece firme, mas vem todo abaixo',
+  gangorra: 'o sobe e desce que não para',
+  'corda-bamba': 'o equilíbrio sem rede',
+  relogio: 'o relógio correndo contra você',
+  vela: 'o tempo queimando enquanto você espera',
+  'trem-perdido': 'a chance que já passou',
+  bifurcacao: 'a escolha que muda o caminho',
+  'duas-portas': 'só dá para abrir uma',
+  semaforo: 'a hora de parar ou de seguir',
+  cofre: 'o dinheiro guardado a salvo',
+  escudo: 'aguenta o golpe sem te derrubar',
+  boia: 'o que te segura quando aperta',
+  escada: 'subir um degrau de cada vez',
+  'balde-furado': 'enche por cima e perde por baixo',
+  buraco: 'quanto mais cava, mais fundo fica',
+  fumaca: 'o dinheiro que vira fumaça',
+};
 
 // Ícones disponíveis para shots do tipo 'icon'
 export const ICONS = [

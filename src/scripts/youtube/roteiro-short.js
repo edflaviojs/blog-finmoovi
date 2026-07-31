@@ -16,7 +16,7 @@
 
 import { generateText } from '../apis/kie-ai.js';
 import { buildMarketingPromptBlock } from '../lib/youtube-marketing.js';
-import { validateShortScript, sanitizeScript, BORDAO, VISUAL_TYPES, METAPHORS, ICONS, SFX, MAX_SFX_REPEATS, APP_SCREENS, longestSharedWordRun, hasSpelledOutNumber } from './lib/schema-short.js';
+import { validateShortScript, sanitizeScript, BORDAO, VISUAL_TYPES, METAPHORS, METAPHOR_MEANINGS, ICONS, SFX, MAX_SFX_REPEATS, APP_SCREENS, longestSharedWordRun, hasSpelledOutNumber } from './lib/schema-short.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync, realpathSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -142,16 +142,22 @@ function findSentenceForAnchor(narration, anchor) {
  * Retorna [] gracioso se não houver nada. `publishedPath`/`outputDir` são
  * parametrizáveis só para teste; em produção usam os caminhos padrão.
  */
-// Janela do anti-repetição: 3 → 4 (31/07/2026). Medido por simulação sobre os 9
-// vídeos já publicados, com `clique-link` isenta (obrigatória na CTA):
-//   janela 3 → teria reprovado 3/7 na 1ª tentativa · janela 4 → 4/7 · janela 5 → 5/7
-//   e em TODAS elas sobram ≥3 metáforas livres do catálogo de 8 úteis.
-// Ou seja: mesmo janela 6 é viável, mas cada reprovação custa uma tentativa (25s de
-// cooldown + chamada). 4 é o equilíbrio: a mesma metáfora só pode voltar depois de
-// 5 vídeos, sem dobrar o risco de esgotar as 4 tentativas.
-// ⚠️ Subir mais depende de AMPLIAR O CATÁLOGO (9 metáforas, cada uma desenhada à
-// mão no Remotion) — o dono quer "centenas"; ver IMPLEMENTACAO20 §17.5.
-export function loadRecentPublishedContext({ publishedPath = PUBLISHED_PATH, outputDir = OUTPUT_DIR, limit = 4 } = {}) {
+// Janela do anti-repetição: 3 → 4 (31/07 manhã) → 12 (31/07 tarde).
+//
+// A subida para 12 só foi possível porque o catálogo passou de 8 para 32 imagens
+// úteis (IMPLEMENTACAO20 §20.2). O limite antigo estava escrito aqui em texto:
+// "subir mais depende de AMPLIAR O CATÁLOGO" — foi o que se fez.
+//
+// MEDIDO sobre os 9 vídeos publicados, com `clique-link` isenta (obrigatória na CTA):
+//   média de 1,33 imagens DISTINTAS por vídeo · máximo 3
+//   janela 4 → 5 bloqueadas, 27 livres · janela 12 → 6 bloqueadas, 26 livres
+// (o histórico só tem 9 vídeos, por isso satura; projetando 1,33/vídeo, uma janela
+// de 12 bloqueia ~16 no pior caso e continuam a sobrar ~16 de 32.)
+//
+// 12 = duas semanas de publicação diária antes de uma imagem poder voltar. É o
+// número que o dono pediu quando disse "para nunca mais termos problema e ainda
+// termos sobra".
+export function loadRecentPublishedContext({ publishedPath = PUBLISHED_PATH, outputDir = OUTPUT_DIR, limit = 12 } = {}) {
   let published;
   try {
     published = JSON.parse(readFileSync(publishedPath, 'utf-8'));
@@ -333,7 +339,7 @@ REGRA C — METÁFORAS LITERAIS (o dono AMA): quando a narração usar uma metá
   · "é aqui que a maioria escorrega" → metaphor "escorregao", sfx "slide" (pode ser CÔMICO — o dono curte o humor no escorregão).
   · na CTA, quando a narração pedir o COMENTÁRIO (REGRA 5): metaphor "clique-link" (uma mãozinha percorre a tela e TOCA no botão "Comenta FINMOOVI"), sfx "click", na âncora onde isso é dito.
   PREFIRA usar na narração metáforas que existem no catálogo (${METAPHORS.join(', ')}); se usar outra, represente com um shot "icon" coerente.
-  SIGNIFICADO das metáforas (escolha a que NASCE do tema deste vídeo): bola-neve=efeito cumulativo que cresce; avalanche=o acúmulo virando algo enorme; escorregao=erro/tropeço comum; clique-link=tocar no botao de comentar (CTA); foguete=decolagem/crescimento rápido; semente=paciência/longo prazo; montanha-russa=volatilidade/altos e baixos; bolha=expectativa que estoura; ralo=dinheiro escorrendo/taxas.
+  SIGNIFICADO das metáforas (escolha a que NASCE do tema deste vídeo): ${METAPHORS.map((m) => `${m}=${METAPHOR_MEANINGS[m] || m}`).join('; ')}.
   ⚠️ A "anchor" NUNCA é o nome da metáfora/ícone do catálogo — é SEMPRE uma palavra FALADA de verdade na narração (ex.: metaphor "bola-neve" → anchor "bola", NUNCA "bola-neve"; metaphor "escorregao" → anchor "escorrega", NUNCA "escorregao").
 
 REGRA D — SFX: TEMPERO, NÃO METRÔNOMO (feedback do dono 22/07 depois de assistir o vídeo v3.3: "ainda tem som repetindo demais... cansativo" — aperte MAIS que na versão anterior). Regras de variedade sonora:

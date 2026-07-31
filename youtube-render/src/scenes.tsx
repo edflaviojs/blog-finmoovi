@@ -1428,7 +1428,1190 @@ const MetaDrain: React.FC<{ life: number }> = ({ life }) => {
   );
 };
 
-const ShotMetaphor: React.FC<{ metaphor?: string; life: number }> = ({ metaphor, life }) => {
+// ─── LEVA 1 DAS IMAGENS NOVAS (IMPLEMENTACAO20 §20.2 B1, 31/07/2026) ─────────
+// As quatro famílias de tema que estavam COMPLETAMENTE vazias no catálogo: tempo,
+// decisão, dívida e proteção. Mesmo desenho das antigas: SVG puro, cores da marca,
+// tudo movido por `life` (a vida do shot) para nunca depender de relógio real.
+
+// ampulheta: a areia desce de cima para baixo ao longo do shot (o tempo a passar,
+// adiar custa). Casa com 'ding'.
+const MetaHourglass: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 640, H = 620, cx = W / 2;
+  const topY = 110, midY = 320, botY = 530, halfW = 160;
+  const p = interpolate(frame, [0, life * 0.92], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  // areia de cima: a superfície desce até ao gargalo
+  const topoAreia = topY + (midY - topY) * p;
+  const meiaLarguraCima = halfW * ((midY - topoAreia) / (midY - topY));
+  // monte de baixo: cresce e alarga
+  const alturaMonte = (botY - midY) * 0.78 * p;
+  const meiaLarguraMonte = halfW * Math.min(1, p * 1.15);
+
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="hgl-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      {/* travessas de cima e de baixo */}
+      <rect x={cx - halfW - 26} y={topY - 34} width={(halfW + 26) * 2} height={26} rx={13} fill={BRAND.sub} opacity={0.55} />
+      <rect x={cx - halfW - 26} y={botY + 8} width={(halfW + 26) * 2} height={26} rx={13} fill={BRAND.sub} opacity={0.55} />
+      {/* o vidro */}
+      <polygon points={`${cx - halfW},${topY} ${cx + halfW},${topY} ${cx},${midY}`} fill="none" stroke={BRAND.sub} strokeWidth={7} strokeLinejoin="round" opacity={0.7} />
+      <polygon points={`${cx - halfW},${botY} ${cx + halfW},${botY} ${cx},${midY}`} fill="none" stroke={BRAND.sub} strokeWidth={7} strokeLinejoin="round" opacity={0.7} />
+      {/* areia que ainda não caiu */}
+      {p < 0.99 && (
+        <polygon
+          points={`${cx - meiaLarguraCima},${topoAreia} ${cx + meiaLarguraCima},${topoAreia} ${cx},${midY}`}
+          fill="url(#hgl-g)"
+        />
+      )}
+      {/* o fio de areia a cair */}
+      {p > 0.02 && p < 0.97 && (
+        <rect x={cx - 5} y={midY} width={10} height={Math.max(0, botY - alturaMonte - midY)} fill={BRAND.cyan} opacity={0.85} />
+      )}
+      {/* o monte que se forma em baixo */}
+      {p > 0.03 && (
+        <polygon
+          points={`${cx - meiaLarguraMonte},${botY} ${cx + meiaLarguraMonte},${botY} ${cx},${botY - alturaMonte}`}
+          fill="url(#hgl-g)"
+        />
+      )}
+    </svg>
+  );
+};
+
+// balanca: dois pratos, e o da direita vai ficando mais pesado até desequilibrar
+// (comparar duas opções — uma delas ganha). Casa com 'thud'.
+const MetaScale: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 760, H = 560, cx = W / 2, eixoY = 210, braco = 230;
+  const graus = interpolate(frame, [life * 0.12, life * 0.72], [0, 15], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const a = (graus * Math.PI) / 180;
+  const dx = Math.cos(a) * braco, dy = Math.sin(a) * braco;
+  const esq = { x: cx - dx, y: eixoY - dy };
+  const dir = { x: cx + dx, y: eixoY + dy };
+  const fioEsq = 90, fioDir = 90;
+
+  const Prato: React.FC<{ x: number; y: number; moedas: number }> = ({ x, y, moedas }) => (
+    <g>
+      <line x1={x} y1={y} x2={x} y2={y + fioEsq} stroke={BRAND.sub} strokeWidth={4} opacity={0.8} />
+      <path d={`M${x - 74},${y + fioEsq} Q${x},${y + fioEsq + 46} ${x + 74},${y + fioEsq}`} fill="none" stroke="url(#bal-g)" strokeWidth={9} strokeLinecap="round" />
+      {[0, 1, 2].map((i) => (i < moedas ? (
+        <circle key={i} cx={x - 26 + i * 26} cy={y + fioEsq - 16} r={17} fill="url(#bal-g)" stroke={BRAND.cyan} strokeWidth={3} />
+      ) : null))}
+    </g>
+  );
+
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="bal-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+      </defs>
+      {/* coluna e base */}
+      <rect x={cx - 9} y={eixoY} width={18} height={250} rx={8} fill={BRAND.sub} opacity={0.6} />
+      <rect x={cx - 96} y={455} width={192} height={22} rx={11} fill={BRAND.sub} opacity={0.6} />
+      {/* braço */}
+      <line x1={esq.x} y1={esq.y} x2={dir.x} y2={dir.y} stroke="url(#bal-g)" strokeWidth={12} strokeLinecap="round" />
+      <circle cx={cx} cy={eixoY} r={17} fill={BRAND.violet} stroke={BRAND.cyan} strokeWidth={4} />
+      {/* pratos: o da direita enche */}
+      <Prato x={esq.x} y={esq.y} moedas={1} />
+      <Prato x={dir.x} y={dir.y} moedas={Math.min(3, 1 + Math.floor(interpolate(frame, [0, life * 0.72], [0, 3], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })))} />
+    </svg>
+  );
+};
+
+// bola-de-ferro: a bola presa por corrente cresce e afunda o chão (a dívida que
+// prende e vai pesando). Casa com 'thud'.
+const MetaBallChain: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 700, H = 560, cx = W / 2 + 40, chao = 430;
+  const p = interpolate(frame, [0, life * 0.9], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const raio = 52 + p * 46;
+  const afunda = p * 34;                      // o chão cede debaixo da bola
+  const centroY = chao - raio + afunda;
+  const elos = [0, 1, 2, 3, 4, 5];
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="chn-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.violet} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      {/* o chão a ceder: uma curva que afunda debaixo da bola */}
+      <path
+        d={`M60,${chao} Q${cx},${chao + afunda * 1.8} ${W - 60},${chao}`}
+        fill="none" stroke={BRAND.sub} strokeWidth={8} strokeLinecap="round" opacity={0.55}
+      />
+      {/* a corrente, do canto de cima até à bola.
+          Elos GROSSOS e claros de propósito: a 1ª versão usava BRAND.sub fino e
+          sumia no fundo escuro (visto na galeria em 31/07). */}
+      {elos.map((i) => {
+        const t = i / (elos.length - 1);
+        const x = 150 + (cx - raio * 0.7 - 150) * t;
+        const y = 130 + (centroY - 130) * t;
+        return <ellipse key={i} cx={x} cy={y} rx={20} ry={13} fill="none" stroke={BRAND.text} strokeWidth={9} opacity={0.75} transform={`rotate(${i % 2 ? 40 : -40} ${x} ${y})`} />;
+      })}
+      {/* a bola. NÃO pode ser quase preta: o fundo do canal já é escuro e a bola
+          desaparecia. Ferro escuro, mas acima do fundo, com aro forte e brilho. */}
+      <circle cx={cx} cy={centroY} r={raio} fill="#2b3242" stroke="url(#chn-g)" strokeWidth={10} />
+      <circle cx={cx - raio * 0.3} cy={centroY - raio * 0.32} r={raio * 0.3} fill={BRAND.cyan} opacity={0.22} />
+      <circle cx={cx - raio * 0.38} cy={centroY - raio * 0.4} r={raio * 0.12} fill={BRAND.text} opacity={0.5} />
+      <rect x={cx - 13} y={centroY - raio - 22} width={26} height={26} rx={8} fill={BRAND.text} opacity={0.75} />
+    </svg>
+  );
+};
+
+// guarda-chuva: a chuva bate e ESCORRE pelos lados; debaixo, o dinheiro fica seco
+// (a reserva de emergência a proteger). Casa com 'whoosh'.
+const MetaUmbrella: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 720, H = 600, cx = W / 2;
+  const copaY = 300, copaR = 210;
+  const abre = interpolate(frame, [0, life * 0.22], [0.35, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const pingos = [-260, -190, -120, -55, 10, 75, 140, 205, 268];
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="umb-g" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="50%" stopColor={BRAND.violet} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      {/* a chuva: quem cai fora da copa vai até ao chão; quem bate na copa escorre */}
+      {pingos.map((ox, i) => {
+        const protegido = Math.abs(ox) < copaR * abre;
+        const ciclo = (frame + i * 9) % Math.max(1, Math.round(life * 0.42));
+        const t = ciclo / Math.max(1, Math.round(life * 0.42));
+        const x = cx + ox;
+        const yFim = protegido ? copaY - Math.sqrt(Math.max(0, 1 - (ox / (copaR * abre)) ** 2)) * 86 : 545;
+        const y = 40 + (yFim - 40) * t;
+        const desvio = protegido && t > 0.92 ? (ox < 0 ? -34 : 34) : 0;
+        return <rect key={i} x={x + desvio - 3} y={y} width={6} height={26} rx={3} fill={BRAND.cyan} opacity={0.75} />;
+      })}
+      {/* a copa */}
+      <path
+        d={`M${cx - copaR * abre},${copaY} A${copaR * abre},${96 * abre} 0 0 1 ${cx + copaR * abre},${copaY} Z`}
+        fill="url(#umb-g)"
+      />
+      {/* as pontas da copa */}
+      <path d={`M${cx - copaR * abre},${copaY} Q${cx - copaR * abre * 0.5},${copaY + 26} ${cx},${copaY} Q${cx + copaR * abre * 0.5},${copaY + 26} ${cx + copaR * abre},${copaY}`} fill="none" stroke={BRAND.bg} strokeWidth={6} opacity={0.5} />
+      {/* cabo */}
+      <rect x={cx - 6} y={copaY} width={12} height={170} rx={6} fill={BRAND.sub} opacity={0.85} />
+      <path d={`M${cx - 6},${copaY + 170} Q${cx - 6},${copaY + 206} ${cx - 44},${copaY + 200}`} fill="none" stroke={BRAND.sub} strokeWidth={12} strokeLinecap="round" opacity={0.85} />
+      {/* chão, para as moedas assentarem em vez de flutuarem */}
+      <line x1={cx - 200} y1={528} x2={cx + 200} y2={528} stroke={BRAND.sub} strokeWidth={7} strokeLinecap="round" opacity={0.45} />
+      {/* o dinheiro protegido, assente no chão e bem debaixo da copa (que vai até
+          ±210). Fica à DIREITA do cabo porque o punho curva para a esquerda —
+          centrá-lo fazia as moedas atravessarem o cabo. */}
+      {[0, 1, 2].map((i) => (
+        <g key={i} transform={`translate(${cx + 80} ${512 - i * 26})`}>
+          <ellipse cx={0} cy={0} rx={44} ry={14} fill={BRAND.violet} stroke={BRAND.cyan} strokeWidth={3} />
+        </g>
+      ))}
+    </svg>
+  );
+};
+
+// ─── LEVA 2 DAS IMAGENS NOVAS (IMPLEMENTACAO20 §20.2 B1, 31/07/2026) ─────────
+// Fecha a família DÍVIDA/PESO (ratoeira, mochila-pedras, areia-movedica) e reforça
+// ERRO/QUEDA (domino). Estilo aprovado pelo dono na leva 1.
+
+// ratoeira: a isca está lá, e a barra FECHA de repente (a armadilha do rotativo e
+// do pagamento mínimo). Casa com 'boom'.
+const MetaMousetrap: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 780, H = 540;
+  const baseX = 110, baseY = 330, baseW = 560, baseH = 92;
+  const pivo = { x: baseX + 52, y: baseY };
+  // FECHA CEDO (20%→30% da vida), de propósito. Na 1ª versão fechava aos 60% e num
+  // Short a imagem dura 1-2s: o espectador via só a barra aberta, que parecia um
+  // risco solto. O sentido desta imagem É o estalo — ele tem de acontecer à vista.
+  const graus = interpolate(frame, [life * 0.2, life * 0.3], [-116, -4], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic),
+  });
+  const fechou = frame > life * 0.3;
+  const barra = 500;
+  const a = (graus * Math.PI) / 180;
+  const pontaX = pivo.x + Math.cos(a) * barra;
+  const pontaY = pivo.y + Math.sin(a) * barra;
+  const iscaX = baseX + baseW * 0.68;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="rat-g" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor={BRAND.magenta} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+      </defs>
+      {/* a tábua */}
+      <rect x={baseX} y={baseY} width={baseW} height={baseH} rx={22} fill="#2b3242" stroke="url(#rat-g)" strokeWidth={9} />
+      {/* a isca. Desenhada ANTES da barra: depois do estalo a barra fica POR CIMA
+          dela, que é o que faz ler "ficou preso". */}
+      <circle cx={iscaX} cy={baseY - 2} r={34} fill={BRAND.yellow} stroke="#b59b00" strokeWidth={5} />
+      <text x={iscaX} y={baseY + 11} fontSize={34} fontWeight={900} textAnchor="middle" fill="#0d1117">$</text>
+      {/* a barra que fecha */}
+      <line x1={pivo.x} y1={pivo.y} x2={pontaX} y2={pontaY} stroke={BRAND.text} strokeWidth={17} strokeLinecap="round" />
+      {/* a mola */}
+      <circle cx={pivo.x} cy={pivo.y} r={28} fill="none" stroke={BRAND.cyan} strokeWidth={9} />
+      <circle cx={pivo.x} cy={pivo.y} r={13} fill={BRAND.cyan} />
+      {/* o estalo */}
+      {fechou && frame < life * 0.46 && [0, 1, 2, 3, 4].map((i) => {
+        const t = interpolate(frame, [life * 0.3, life * 0.46], [0, 1], { extrapolateRight: 'clamp' });
+        const ang = (-30 - i * 30) * Math.PI / 180;
+        return <circle key={i} cx={iscaX + Math.cos(ang) * 90 * t} cy={baseY + Math.sin(ang) * 90 * t} r={12 * (1 - t)} fill={BRAND.yellow} />;
+      })}
+    </svg>
+  );
+};
+
+// mochila-pedras: as pedras vão caindo dentro da mochila e ela AFUNDA (o peso que
+// se carrega todo mês). Casa com 'thud'.
+const MetaBackpack: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 720, H = 660, cx = W / 2;
+  const topo = 190, larg = 330, alt = 320, chao = 600;
+  const pedras = [0, 1, 2, 3];
+  const quantas = interpolate(frame, [0, life * 0.85], [0, pedras.length], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const afunda = interpolate(frame, [0, life * 0.85], [0, 54], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const y0 = topo + afunda;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="bkp-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+      </defs>
+      {/* chão, para o peso ter onde assentar */}
+      <line x1={cx - 250} y1={chao} x2={cx + 250} y2={chao} stroke={BRAND.sub} strokeWidth={8} strokeLinecap="round" opacity={0.45} />
+      {/* PEGA no topo — UMA só e pequena.
+          Na 1ª versão havia duas alças em arco por cima e o conjunto lia-se como um
+          COELHO (orelhas). Erro apanhado na galeria em 31/07. */}
+      <path d={`M${cx - 46},${y0 + 6} Q${cx},${y0 - 62} ${cx + 46},${y0 + 6}`} fill="none" stroke={BRAND.sub} strokeWidth={16} strokeLinecap="round" opacity={0.9} />
+      {/* o corpo */}
+      <rect x={cx - larg / 2} y={y0} width={larg} height={alt} rx={54} fill="#2b3242" stroke="url(#bkp-g)" strokeWidth={9} />
+      {/* a aba de cima, que dá a leitura de "mochila" sem cruzar nada */}
+      <path d={`M${cx - larg / 2 + 10},${y0 + 62} H${cx + larg / 2 - 10}`} stroke="url(#bkp-g)" strokeWidth={7} opacity={0.7} />
+      {/* AS PEDRAS EMPILHADAS NO FUNDO — é o fundo que carrega o peso.
+          Na 1ª versão flutuavam a meio do corpo e cruzavam com faixas e bolso: liam-se
+          como dentes brancos. Agora empilham de baixo para cima, em cinza-pedra. */}
+      {pedras.map((i) => {
+        if (i >= quantas) return null;
+        const fila = Math.floor(i / 2);
+        const px = cx + (i % 2 === 0 ? -62 : 62) + fila * 30;
+        const py = y0 + alt - 58 - fila * 74;
+        return (
+          <polygon
+            key={i}
+            points={`${px - 48},${py + 26} ${px - 26},${py - 30} ${px + 32},${py - 32} ${px + 50},${py + 14} ${px + 8},${py + 40}`}
+            fill={BRAND.sub} stroke={BRAND.text} strokeWidth={4} opacity={0.95}
+          />
+        );
+      })}
+    </svg>
+  );
+};
+
+// areia-movedica: quanto mais tempo passa, mais o dinheiro AFUNDA na areia (a
+// dívida em que quanto mais se mexe, mais se afunda). Casa com 'slide'.
+// Cor de AREIA de propósito: com o roxo/magenta do 'ralo' ficaria parecida demais.
+const MetaQuicksand: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  // LARGO DE PROPÓSITO (1160 > 1080 do vídeo): a areia tem de SANGRAR pelos lados
+  // e pelo fundo. Na 1ª versão o svg tinha 760 e a areia aparecia como um BLOCO
+  // amarelo com cantos retos no meio do ecrã — parecia uma barra, não chão.
+  const W = 1160, H = 660, cx = W / 2;
+  const superficie = 330;
+  const p = interpolate(frame, [0, life * 0.9], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const cy = 210 + 250 * p;                       // afunda até quase desaparecer
+  const tremor = Math.sin(frame / 5) * 8 * (1 - p);
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="qsd-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.yellow} stopOpacity={0.9} />
+          <stop offset="60%" stopColor="#6b5c10" stopOpacity={0.98} />
+          {/* desvanece no fundo, senão a areia acaba num corte reto (regra 2) */}
+          <stop offset="100%" stopColor="#6b5c10" stopOpacity={0} />
+        </linearGradient>
+      </defs>
+      {/* a moeda a afundar — desenhada ANTES da areia, para a areia a tapar */}
+      <g transform={`translate(${cx + tremor} ${cy})`}>
+        <circle cx={0} cy={0} r={72} fill={BRAND.violet} stroke={BRAND.cyan} strokeWidth={8} />
+        <text x={0} y={26} fontSize={72} fontWeight={900} textAnchor="middle" fill={BRAND.text}>$</text>
+      </g>
+      {/* a areia: dunas, largura toda, até ao fundo */}
+      <path
+        d={`M0,${superficie + 30}
+            C${W * 0.14},${superficie - 16} ${W * 0.28},${superficie + 8} ${W * 0.42},${superficie + 2}
+            C${W * 0.56},${superficie - 4} ${W * 0.7},${superficie + 30} ${W * 0.84},${superficie + 12}
+            C${W * 0.92},${superficie + 2} ${W * 0.96},${superficie + 10} ${W},${superficie + 4}
+            L${W},${H} L0,${H} Z`}
+        fill="url(#qsd-g)"
+      />
+      {/* ondas à volta do ponto onde ele afunda */}
+      {[0, 1, 2].map((i) => {
+        const t = ((frame / Math.max(1, life)) * 2 + i * 0.33) % 1;
+        return (
+          <ellipse
+            key={i} cx={cx} cy={superficie + 16} rx={80 + t * 210} ry={16 + t * 34}
+            fill="none" stroke={BRAND.bg} strokeWidth={7} opacity={(1 - t) * 0.45}
+          />
+        );
+      })}
+    </svg>
+  );
+};
+
+// domino: a primeira peça cai e derruba TODAS as outras, uma a uma (um erro puxa o
+// seguinte). Casa com 'click'.
+const MetaDominoes: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 880, H = 520;
+  const chao = 400, pecaW = 34, pecaH = 132, passo = 98;
+  const pecas = [0, 1, 2, 3, 4, 5, 6];
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="dom-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      <line x1={70} y1={chao} x2={W - 60} y2={chao} stroke={BRAND.sub} strokeWidth={8} strokeLinecap="round" opacity={0.5} />
+      {pecas.map((i) => {
+        const inicio = life * (0.1 + i * 0.085);
+        const graus = interpolate(frame, [inicio, inicio + life * 0.11], [0, 76], {
+          extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.quad),
+        });
+        const x = 110 + i * passo;
+        return (
+          <g key={i} transform={`rotate(${graus} ${x} ${chao})`}>
+            <rect x={x - pecaW / 2} y={chao - pecaH} width={pecaW} height={pecaH} rx={7} fill="url(#dom-g)" stroke={BRAND.text} strokeWidth={3} />
+            <circle cx={x} cy={chao - pecaH * 0.72} r={5} fill={BRAND.bg} opacity={0.55} />
+            <circle cx={x} cy={chao - pecaH * 0.28} r={5} fill={BRAND.bg} opacity={0.55} />
+          </g>
+        );
+      })}
+    </svg>
+  );
+};
+
+// ─── LEVA 3 DAS IMAGENS NOVAS (IMPLEMENTACAO20 §20.2 B1, 31/07/2026) ─────────
+// Fecha ERRO/QUEDA (castelo-cartas) e RISCO/OSCILAÇÃO (gangorra, corda-bamba), e
+// reforça TEMPO (relogio). Desenhadas já com as 4 regras que a leva 2 ensinou:
+// nada quase-preto · o chão sangra para fora do quadro · o instante-chave acontece
+// no primeiro terço · nada de duas formas simétricas por cima de um corpo.
+
+// castelo-cartas: parece firme e VEM TODO ABAIXO (o plano que não tinha base).
+// Casa com 'thud'.
+const MetaCardHouse: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 1120, H = 640, cx = W / 2, chao = 520;
+  const cartaW = 26, cartaH = 150;
+  // as cartas, de baixo para cima. `d` é a ordem em que caem (o topo primeiro).
+  const bases = [cx - 210, cx, cx + 210];
+  const cimas = [cx - 105, cx + 105];
+  type C = { x: number; y: number; rot: number; d: number; horizontal?: boolean };
+  const cartas: C[] = [];
+  bases.forEach((px, i) => {
+    cartas.push({ x: px - 42, y: chao, rot: 16, d: 4 + i });
+    cartas.push({ x: px + 42, y: chao, rot: -16, d: 4 + i });
+  });
+  bases.forEach((px, i) => cartas.push({ x: px, y: chao - cartaH - 4, rot: 0, d: 3 + i, horizontal: true }));
+  cimas.forEach((px, i) => {
+    cartas.push({ x: px - 42, y: chao - cartaH - 22, rot: 16, d: 1 + i });
+    cartas.push({ x: px + 42, y: chao - cartaH - 22, rot: -16, d: 1 + i });
+  });
+  cartas.push({ x: cx, y: chao - cartaH * 2 - 26, rot: 0, d: 0, horizontal: true });
+
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="cas-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+      </defs>
+      {/* o chão atravessa o quadro todo */}
+      <line x1={0} y1={chao} x2={W} y2={chao} stroke={BRAND.sub} strokeWidth={9} opacity={0.5} />
+      {cartas.map((c, i) => {
+        // DESABA CEDO: começa aos 22% e está no chão aos 55% (regra 3 da leva 2)
+        const inicio = life * (0.22 + c.d * 0.035);
+        const q = interpolate(frame, [inicio, inicio + life * 0.16], [0, 1], {
+          extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.in(Easing.quad),
+        });
+        // As HORIZONTAIS quase não rodam. Na 1ª versão rodavam 86° como as outras e
+        // ficavam de pé, atravessando a linha do chão — uma barra vertical abaixo do
+        // solo. Elas caem de chapa; quem tomba são as cartas em pé.
+        const alvo = c.horizontal ? (c.rot >= 0 ? 10 : -10) : (c.rot >= 0 ? 86 : -86);
+        const tomba = c.rot + q * (alvo - c.rot);
+        const desce = q * (chao - c.y - (c.horizontal ? 12 : 0));
+        const desliza = q * (c.x < cx ? -70 : 70);
+        return (
+          <g key={i} transform={`translate(${desliza} ${desce}) rotate(${tomba} ${c.x} ${c.y})`}>
+            <rect
+              x={c.x - (c.horizontal ? 96 : cartaW / 2)}
+              y={c.y - (c.horizontal ? 16 : cartaH)}
+              width={c.horizontal ? 192 : cartaW}
+              height={c.horizontal ? 16 : cartaH}
+              rx={6} fill="url(#cas-g)" stroke={BRAND.text} strokeWidth={3} opacity={0.95}
+            />
+          </g>
+        );
+      })}
+    </svg>
+  );
+};
+
+// gangorra: o sobe e desce que NÃO PARA (volatilidade do dia a dia).
+// Diferente da `balanca` de propósito: ali os pratos PENDURAM e o fiel para de um
+// lado; aqui a prancha assenta num apoio e oscila para sempre. Casa com 'whoosh'.
+const MetaSeesaw: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 1000, H = 560, cx = W / 2, chao = 470, apoioY = 350;
+  // já entra a oscilar — o movimento é o sentido da imagem (regra 3)
+  const graus = Math.sin(frame / 11) * 19;
+  const a = (graus * Math.PI) / 180;
+  const meia = 330;
+  const esq = { x: cx - Math.cos(a) * meia, y: apoioY - Math.sin(a) * meia };
+  const dir = { x: cx + Math.cos(a) * meia, y: apoioY + Math.sin(a) * meia };
+  const Moeda: React.FC<{ x: number; y: number }> = ({ x, y }) => (
+    <g transform={`translate(${x} ${y - 40})`}>
+      <circle cx={0} cy={0} r={34} fill={BRAND.yellow} stroke="#b59b00" strokeWidth={5} />
+      <text x={0} y={12} fontSize={34} fontWeight={900} textAnchor="middle" fill="#0d1117">$</text>
+    </g>
+  );
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="gan-g" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      <line x1={0} y1={chao} x2={W} y2={chao} stroke={BRAND.sub} strokeWidth={9} opacity={0.5} />
+      {/* o apoio: um triângulo cheio e grande — é o que distingue da balança */}
+      <polygon points={`${cx - 82},${chao} ${cx + 82},${chao} ${cx},${apoioY + 6}`} fill="#2b3242" stroke="url(#gan-g)" strokeWidth={8} />
+      {/* a prancha */}
+      <line x1={esq.x} y1={esq.y} x2={dir.x} y2={dir.y} stroke="url(#gan-g)" strokeWidth={22} strokeLinecap="round" />
+      {/* as moedas assentam EM CIMA da prancha (não penduradas) */}
+      <Moeda x={esq.x + 40} y={esq.y + 14} />
+      <Moeda x={dir.x - 40} y={dir.y + 14} />
+    </svg>
+  );
+};
+
+// corda-bamba: atravessar sem rede, e a corda cede debaixo do peso (o orçamento no
+// limite). Casa com 'whoosh'.
+const MetaTightrope: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 1080, H = 620, chao = 540;
+  const posteE = 130, posteD = W - 130, topo = 250;
+  const p = interpolate(frame, [0, life * 0.88], [0.12, 0.84], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const x = posteE + (posteD - posteE) * p;
+  // a corda cede mais quanto mais perto do meio
+  const cede = 110 * Math.sin(p * Math.PI);
+  const y = topo + cede;
+  const oscila = Math.sin(frame / 6) * 11;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="cor-g" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      <line x1={0} y1={chao} x2={W} y2={chao} stroke={BRAND.sub} strokeWidth={9} opacity={0.45} />
+      {/* os dois postes */}
+      {[posteE, posteD].map((px) => (
+        <rect key={px} x={px - 13} y={topo} width={26} height={chao - topo} rx={12} fill="#2b3242" stroke={BRAND.sub} strokeWidth={5} />
+      ))}
+      {/* A corda como DUAS RETAS até ao ponto onde ele pisa.
+          A 1ª versão usava uma curva quadrática com o ponto de controlo na posição
+          dele — mas uma Bézier NÃO passa pelo ponto de controlo, e a moeda aparecia
+          POR BAIXO da corda. Com duas retas o vértice é exatamente onde ele está. */}
+      <path
+        d={`M${posteE},${topo} L${x},${y} L${posteD},${topo}`}
+        fill="none" stroke="url(#cor-g)" strokeWidth={9} strokeLinecap="round" strokeLinejoin="round"
+      />
+      {/* quem atravessa: assenta EM CIMA da corda (o raio da moeda acima do vértice) */}
+      <g transform={`translate(${x} ${y}) rotate(${oscila})`}>
+        <line x1={-135} y1={-92} x2={135} y2={-92} stroke={BRAND.text} strokeWidth={9} strokeLinecap="round" opacity={0.9} />
+        <circle cx={0} cy={-46} r={40} fill={BRAND.violet} stroke={BRAND.cyan} strokeWidth={6} />
+        <text x={0} y={-32} fontSize={40} fontWeight={900} textAnchor="middle" fill={BRAND.text}>$</text>
+      </g>
+    </svg>
+  );
+};
+
+// relogio: os ponteiros correm e o mostrador vai FICANDO VERMELHO (o prazo a
+// apertar). Diferente da `ampulheta`: ali é areia a cair, aqui é o relógio a girar.
+// Casa com 'ding'.
+const MetaClock: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 640, H = 640, cx = W / 2, cy = H / 2, r = 220;
+  const p = interpolate(frame, [0, life], [0, 1], { extrapolateRight: 'clamp' });
+  const minuto = p * 360 * 3;      // corre depressa — o tempo foge
+  const hora = p * 360 * 0.55;
+  const arco = (a: number) => {
+    const rad = ((a - 90) * Math.PI) / 180;
+    return { x: cx + Math.cos(rad) * (r - 16), y: cy + Math.sin(rad) * (r - 16) };
+  };
+  const fim = arco(p * 359.9);
+  const grande = p * 359.9 > 180 ? 1 : 0;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="rel-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      {/* mostrador */}
+      <circle cx={cx} cy={cy} r={r} fill="#2b3242" stroke="url(#rel-g)" strokeWidth={12} />
+      {/* o arco que se enche à medida que o tempo passa */}
+      {p > 0.01 && (
+        <path
+          d={`M${cx},${cy - (r - 16)} A${r - 16},${r - 16} 0 ${grande} 1 ${fim.x},${fim.y}`}
+          fill="none" stroke={BRAND.magenta} strokeWidth={16} strokeLinecap="round" opacity={0.85}
+        />
+      )}
+      {/* marcas das horas */}
+      {Array.from({ length: 12 }).map((_, i) => {
+        const rad = ((i * 30 - 90) * Math.PI) / 180;
+        const grosso = i % 3 === 0;
+        return (
+          <line
+            key={i}
+            x1={cx + Math.cos(rad) * (r - 46)} y1={cy + Math.sin(rad) * (r - 46)}
+            x2={cx + Math.cos(rad) * (r - 74)} y2={cy + Math.sin(rad) * (r - 74)}
+            stroke={BRAND.text} strokeWidth={grosso ? 10 : 5} opacity={grosso ? 0.9 : 0.45} strokeLinecap="round"
+          />
+        );
+      })}
+      {/* ponteiros */}
+      <g transform={`rotate(${hora} ${cx} ${cy})`}>
+        <rect x={cx - 8} y={cy - 108} width={16} height={116} rx={8} fill={BRAND.text} />
+      </g>
+      <g transform={`rotate(${minuto} ${cx} ${cy})`}>
+        <rect x={cx - 6} y={cy - 168} width={12} height={176} rx={6} fill={BRAND.cyan} />
+      </g>
+      <circle cx={cx} cy={cy} r={18} fill={BRAND.magenta} stroke={BRAND.text} strokeWidth={5} />
+    </svg>
+  );
+};
+
+// ─── LEVA 4 DAS IMAGENS NOVAS (IMPLEMENTACAO20 §20.2 B1, 31/07/2026) ─────────
+// Fecha TEMPO/ATRASO (vela, trem-perdido) e DECIDIR/COMPARAR (bifurcacao,
+// duas-portas). Já desenhadas com as 6 regras das levas anteriores.
+
+// vela: a vela queima e ENCOLHE à vista (o tempo a arder enquanto se adia).
+// Diferente da ampulheta (areia) e do relogio (mostrador). Casa com 'sparkle'.
+const MetaCandle: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 660, H = 700, cx = W / 2, mesa = 600;
+  const p = interpolate(frame, [0, life * 0.85], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const topo = 190 + p * 300;                 // encolhe DEPRESSA — o tempo é o assunto
+  const tremula = 1 + Math.sin(frame / 3.5) * 0.09;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="vel-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.text} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+        <linearGradient id="vel-f" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.yellow} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      {/* a mesa atravessa o quadro */}
+      <line x1={0} y1={mesa} x2={W} y2={mesa} stroke={BRAND.sub} strokeWidth={9} opacity={0.5} />
+      {/* pires */}
+      <ellipse cx={cx} cy={mesa - 6} rx={126} ry={22} fill="#2b3242" stroke={BRAND.sub} strokeWidth={6} />
+      {/* o corpo da vela */}
+      <rect x={cx - 56} y={topo} width={112} height={mesa - 16 - topo} rx={18} fill="url(#vel-g)" opacity={0.95} />
+      {/* cera a escorrer pelo lado */}
+      <path d={`M${cx - 52},${topo + 26} q-16,44 4,84 q16,26 0,44`} fill="none" stroke={BRAND.text} strokeWidth={11} strokeLinecap="round" opacity={0.55} />
+      {/* pavio */}
+      <rect x={cx - 4} y={topo - 24} width={8} height={26} rx={4} fill="#2b3242" />
+      {/* a chama */}
+      <g transform={`translate(${cx} ${topo - 28}) scale(${tremula})`}>
+        <path d="M0,-86 C36,-46 34,-16 0,0 C-34,-16 -36,-46 0,-86 Z" fill="url(#vel-f)" />
+        <path d="M0,-46 C15,-26 14,-10 0,0 C-14,-10 -15,-26 0,-46 Z" fill={BRAND.text} opacity={0.65} />
+      </g>
+    </svg>
+  );
+};
+
+// trem-perdido: o comboio ARRANCA logo no início e some, e o dinheiro fica na
+// plataforma (a chance que já passou). Casa com 'whoosh'.
+const MetaMissedTrain: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 1180, H = 560, plataforma = 430;
+  // REGRA 3: a partida acontece no primeiro terço, senão ninguém vê o trem sair
+  const p = interpolate(frame, [life * 0.08, life * 0.55], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.in(Easing.quad),
+  });
+  const tx = p * 900;
+  const vagoes = [0, 1, 2];
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="trm-g" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+      </defs>
+      {/* os carris atravessam o quadro */}
+      <line x1={0} y1={plataforma} x2={W} y2={plataforma} stroke={BRAND.sub} strokeWidth={9} opacity={0.5} />
+      <line x1={0} y1={plataforma + 22} x2={W} y2={plataforma + 22} stroke={BRAND.sub} strokeWidth={5} opacity={0.3} />
+      {/* riscos de velocidade, atrás do trem */}
+      {p > 0.05 && p < 0.98 && [0, 1, 2].map((i) => (
+        <line
+          key={i} x1={300 + tx - 190 - i * 70} y1={300 + i * 40} x2={300 + tx - 90 - i * 70} y2={300 + i * 40}
+          stroke={BRAND.cyan} strokeWidth={7} strokeLinecap="round" opacity={0.4}
+        />
+      ))}
+      {/* o trem */}
+      <g transform={`translate(${tx} 0)`}>
+        {vagoes.map((i) => {
+          const x = 300 + i * 190;
+          return (
+            <g key={i}>
+              <rect x={x} y={plataforma - 168} width={168} height={150} rx={i === 0 ? 34 : 16} fill="#2b3242" stroke="url(#trm-g)" strokeWidth={8} />
+              <rect x={x + 26} y={plataforma - 142} width={54} height={46} rx={10} fill={BRAND.cyan} opacity={0.55} />
+              <rect x={x + 96} y={plataforma - 142} width={46} height={46} rx={10} fill={BRAND.cyan} opacity={0.35} />
+              <circle cx={x + 44} cy={plataforma - 8} r={20} fill={BRAND.sub} stroke={BRAND.text} strokeWidth={5} />
+              <circle cx={x + 124} cy={plataforma - 8} r={20} fill={BRAND.sub} stroke={BRAND.text} strokeWidth={5} />
+            </g>
+          );
+        })}
+      </g>
+      {/* quem ficou para trás */}
+      <g transform={`translate(150 ${plataforma - 52})`}>
+        <circle cx={0} cy={0} r={44} fill={BRAND.violet} stroke={BRAND.magenta} strokeWidth={7} />
+        <text x={0} y={16} fontSize={44} fontWeight={900} textAnchor="middle" fill={BRAND.text}>$</text>
+      </g>
+    </svg>
+  );
+};
+
+// bifurcacao: a estrada parte-se em DUAS e é preciso escolher (a decisão que muda o
+// caminho). Casa com 'whoosh'.
+const MetaFork: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 1040, H = 660, cx = W / 2;
+  const baixo = 630, no = 350, cima = 130;
+  const hesita = Math.sin(frame / 9) * 26;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="bif-e" x1="1" y1="1" x2="0" y2="0">
+          <stop offset="0%" stopColor={BRAND.violet} />
+          <stop offset="100%" stopColor={BRAND.cyan} />
+        </linearGradient>
+        <linearGradient id="bif-d" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0%" stopColor={BRAND.violet} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+        {/* o tronco DESVANECE em baixo em vez de acabar num corte reto (regra 2:
+            um corte a direito lê-se como um retângulo pousado, não como estrada).
+            ⚠️ Tem de ser aplicado a um <rect>, NÃO a um <line>: um degradê em
+            unidades de caixa delimitadora sobre uma linha vertical tem largura
+            ZERO e não pinta nada — foi o que aconteceu na 1ª tentativa, a estrada
+            desapareceu e sobraram só as faixas tracejadas a flutuar. */}
+        <linearGradient id="bif-t" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.violet} stopOpacity={0.95} />
+          <stop offset="62%" stopColor={BRAND.violet} stopOpacity={0.9} />
+          <stop offset="100%" stopColor={BRAND.violet} stopOpacity={0} />
+        </linearGradient>
+      </defs>
+      {/* o tronco comum, vindo de longe */}
+      <rect x={cx - 31} y={no} width={62} height={H - no} fill="url(#bif-t)" />
+      {/* os dois braços */}
+      <line x1={cx} y1={no} x2={cx - 330} y2={cima} stroke="url(#bif-e)" strokeWidth={54} strokeLinecap="round" />
+      <line x1={cx} y1={no} x2={cx + 330} y2={cima} stroke="url(#bif-d)" strokeWidth={54} strokeLinecap="round" />
+      {/* faixa tracejada no tronco, para ler como estrada */}
+      {[0, 1, 2].map((i) => (
+        <rect key={i} x={cx - 6} y={baixo - i * 92} width={12} height={46} rx={6} fill={BRAND.text} opacity={0.5} />
+      ))}
+      {/* quem tem de escolher, hesitando no nó */}
+      <g transform={`translate(${cx + hesita} ${no + 40})`}>
+        <circle cx={0} cy={0} r={46} fill={BRAND.yellow} stroke="#b59b00" strokeWidth={7} />
+        <text x={0} y={17} fontSize={46} fontWeight={900} textAnchor="middle" fill="#0d1117">$</text>
+      </g>
+    </svg>
+  );
+};
+
+// duas-portas: uma abre e a outra fica fechada — só dá para escolher UMA.
+// Casa com 'thud'.
+const MetaTwoDoors: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 960, H = 660, cx = W / 2, chao = 570, topo = 150;
+  const larg = 210, alt = chao - topo;
+  // REGRA 3: abre no primeiro terço
+  const abre = interpolate(frame, [life * 0.16, life * 0.34], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic),
+  });
+  const esqX = cx - 40 - larg;
+  const dirX = cx + 40;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="por-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+        <linearGradient id="por-luz" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.yellow} stopOpacity={0.95} />
+          <stop offset="100%" stopColor={BRAND.magenta} stopOpacity={0.6} />
+        </linearGradient>
+      </defs>
+      <line x1={0} y1={chao} x2={W} y2={chao} stroke={BRAND.sub} strokeWidth={9} opacity={0.5} />
+      {/* PORTA ESQUERDA — o VÃO com luz, e por cima o painel a abrir.
+          Na 1ª versão o painel era um rect com `scale(x)`: encolhia junto com o
+          contorno e ficava uma BARRA PRETA encostada à esquerda. Agora é um
+          polígono com dobradiça fixa e a aresta livre a recuar — lê-se como porta. */}
+      <rect x={esqX} y={topo} width={larg} height={alt} rx={14} fill="url(#por-luz)" opacity={abre} stroke="url(#por-g)" strokeWidth={9} />
+      {(() => {
+        const livre = esqX + larg * (1 - abre * 0.82);   // a aresta que se afasta
+        const perspetiva = 26 * abre;                     // cresce um pouco ao virar
+        return (
+          <g>
+            <polygon
+              points={`${esqX},${topo} ${livre},${topo - perspetiva} ${livre},${chao + perspetiva} ${esqX},${chao}`}
+              fill="#2b3242" stroke="url(#por-g)" strokeWidth={9} strokeLinejoin="round"
+            />
+            <circle cx={livre - 26} cy={topo + alt / 2} r={12} fill={BRAND.text} opacity={0.85} />
+          </g>
+        );
+      })()}
+      {/* PORTA DIREITA — fica fechada */}
+      <rect x={dirX} y={topo} width={larg} height={alt} rx={14} fill="#2b3242" stroke="url(#por-g)" strokeWidth={9} />
+      <circle cx={dirX + 34} cy={topo + alt / 2} r={12} fill={BRAND.text} opacity={0.85} />
+      {/* batentes, para se lerem como portas e não como dois retângulos */}
+      {[esqX, dirX].map((x) => (
+        <rect key={x} x={x - 16} y={topo - 22} width={larg + 32} height={22} rx={8} fill={BRAND.sub} opacity={0.55} />
+      ))}
+    </svg>
+  );
+};
+
+// ─── LEVA 5 DAS IMAGENS NOVAS (IMPLEMENTACAO20 §20.2 B1, 31/07/2026) ─────────
+// Fecha DECIDIR/COMPARAR (semaforo) e PROTEGER/RESERVA (cofre, escudo, boia).
+// Nota: o plano previa "colete" (salva-vidas). Virou BOIA — um colete não se lê
+// em 2 segundos num telemóvel, uma boia lê-se de imediato. Mesmo significado.
+
+// semaforo: o sinal MUDA à vista (a hora de parar ou de seguir). Casa com 'ding'.
+const MetaTrafficLight: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 620, H = 720, cx = W / 2;
+  const caixaY = 90, caixaH = 430, caixaW = 240;
+  // REGRA 3: a mudança acontece no primeiro terço — é ela o sentido da imagem
+  const mudou = interpolate(frame, [life * 0.2, life * 0.32], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
+  const luzes = [
+    { cor: BRAND.magenta, aceso: 1 - mudou },
+    { cor: BRAND.yellow, aceso: Math.sin(mudou * Math.PI) * 0.9 },
+    { cor: BRAND.cyan, aceso: mudou },
+  ];
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="sem-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+        {/* o poste desvanece em vez de acabar num corte (regra 2 + regra 7: num
+            RECT, que num <line> vertical o degradê não pinta) */}
+        <linearGradient id="sem-p" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.sub} stopOpacity={0.8} />
+          <stop offset="100%" stopColor={BRAND.sub} stopOpacity={0} />
+        </linearGradient>
+      </defs>
+      <rect x={cx - 17} y={caixaY + caixaH - 10} width={34} height={H - caixaY - caixaH + 10} fill="url(#sem-p)" />
+      <rect x={cx - caixaW / 2} y={caixaY} width={caixaW} height={caixaH} rx={44} fill="#2b3242" stroke="url(#sem-g)" strokeWidth={10} />
+      {luzes.map((l, i) => {
+        const cy = caixaY + 84 + i * 132;
+        return (
+          <g key={i}>
+            {/* halo de quem está aceso */}
+            {l.aceso > 0.05 && <circle cx={cx} cy={cy} r={74} fill={l.cor} opacity={l.aceso * 0.28} />}
+            <circle cx={cx} cy={cy} r={50} fill={l.cor} opacity={0.18 + l.aceso * 0.82} stroke={BRAND.bg} strokeWidth={5} />
+          </g>
+        );
+      })}
+    </svg>
+  );
+};
+
+// cofre: o segredo GIRA e a tranca fecha — o dinheiro fica a salvo. Casa com 'thud'.
+const MetaSafe: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 700, H = 660, cx = W / 2, cy = 330;
+  const lado = 400;
+  // gira depressa e TRANCA no primeiro terço (regra 3)
+  const giro = interpolate(frame, [0, life * 0.3], [0, 640], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic),
+  });
+  const trancado = interpolate(frame, [life * 0.28, life * 0.4], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="cof-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+      </defs>
+      {/* corpo */}
+      <rect x={cx - lado / 2} y={cy - lado / 2} width={lado} height={lado} rx={40} fill="#2b3242" stroke="url(#cof-g)" strokeWidth={11} />
+      {/* porta */}
+      <rect x={cx - lado / 2 + 34} y={cy - lado / 2 + 34} width={lado - 68} height={lado - 68} rx={26} fill="none" stroke={BRAND.sub} strokeWidth={6} opacity={0.6} />
+      {/* dobradiças, à esquerda */}
+      {[-70, 70].map((d) => (
+        <rect key={d} x={cx - lado / 2 + 8} y={cy + d - 26} width={26} height={52} rx={10} fill={BRAND.sub} opacity={0.75} />
+      ))}
+      {/* o segredo a girar */}
+      <g transform={`rotate(${giro} ${cx + 26} ${cy})`}>
+        <circle cx={cx + 26} cy={cy} r={82} fill="#0d1117" stroke="url(#cof-g)" strokeWidth={9} />
+        {[0, 60, 120].map((a) => {
+          const r = (a * Math.PI) / 180;
+          return (
+            <line
+              key={a}
+              x1={cx + 26 - Math.cos(r) * 62} y1={cy - Math.sin(r) * 62}
+              x2={cx + 26 + Math.cos(r) * 62} y2={cy + Math.sin(r) * 62}
+              stroke={BRAND.text} strokeWidth={11} strokeLinecap="round" opacity={0.9}
+            />
+          );
+        })}
+        <circle cx={cx + 26} cy={cy} r={22} fill={BRAND.violet} stroke={BRAND.text} strokeWidth={5} />
+      </g>
+      {/* a luz de TRANCADO */}
+      <circle cx={cx - lado / 2 + 78} cy={cy - lado / 2 + 78} r={20} fill={BRAND.cyan} opacity={0.2 + trancado * 0.8} />
+      {trancado > 0.4 && <circle cx={cx - lado / 2 + 78} cy={cy - lado / 2 + 78} r={38} fill={BRAND.cyan} opacity={(trancado - 0.4) * 0.35} />}
+    </svg>
+  );
+};
+
+// escudo: os golpes batem e RICOCHETEIAM — aguenta sem te derrubar. Casa com 'boom'.
+const MetaShield: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 700, H = 700, cx = W / 2, topo = 140;
+  const golpes = [0, 1, 2];
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="esc-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+      </defs>
+      {/* o escudo */}
+      <path
+        d={`M${cx},${topo} L${cx + 190},${topo + 76} L${cx + 190},${topo + 260}
+            C${cx + 190},${topo + 400} ${cx + 96},${topo + 468} ${cx},${topo + 500}
+            C${cx - 96},${topo + 468} ${cx - 190},${topo + 400} ${cx - 190},${topo + 260}
+            L${cx - 190},${topo + 76} Z`}
+        fill="#2b3242" stroke="url(#esc-g)" strokeWidth={13} strokeLinejoin="round"
+      />
+      {/* O SÍMBOLO no meio do escudo — é o dinheiro que está a ser protegido.
+          ⚠️ Aqui estava uma "nervura" central: um path VERTICAL com stroke em
+          degradê. Não pintou nada, pela mesma razão da bifurcação (regra 7): caixa
+          delimitadora de largura zero. 2ª vez no mesmo dia. */}
+      <text x={cx} y={topo + 330} fontSize={190} fontWeight={900} textAnchor="middle" fill={BRAND.text} opacity={0.9}>$</text>
+      {/* os golpes: chegam de cima e ricocheteiam. O 1º bate LOGO (regra 3).
+          Grandes e claros — na 1ª versão eram bolinhas de 20px e não se viam. */}
+      {golpes.map((i) => {
+        const inicio = life * (0.06 + i * 0.2);
+        const t = interpolate(frame, [inicio, inicio + life * 0.22], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+        if (t <= 0) return null;
+        const bateu = t > 0.5;
+        const ida = Math.min(t, 0.5) / 0.5;
+        const volta = bateu ? (t - 0.5) / 0.5 : 0;
+        const alvoX = cx - 100 + i * 100, alvoY = topo + 130 + i * 96;
+        const x = (cx + 360) + (alvoX - (cx + 360)) * ida + volta * 220;
+        const y = (topo - 160) + (alvoY - (topo - 160)) * ida - volta * 170;
+        return (
+          <g key={i}>
+            <circle cx={x} cy={y} r={30 * (1 - volta * 0.45)} fill={BRAND.magenta} stroke={BRAND.text} strokeWidth={5} opacity={1 - volta * 0.8} />
+            {bateu && volta < 0.6 && (
+              <>
+                <circle cx={alvoX} cy={alvoY} r={36 + volta * 130} fill="none" stroke={BRAND.yellow} strokeWidth={11} opacity={(0.6 - volta) * 1.6} />
+                <circle cx={alvoX} cy={alvoY} r={20 + volta * 70} fill={BRAND.yellow} opacity={(0.6 - volta) * 0.8} />
+              </>
+            )}
+          </g>
+        );
+      })}
+    </svg>
+  );
+};
+
+// boia: a água sobe mas a boia SEGURA o dinheiro à tona (a reserva que te salva).
+// Casa com 'whoosh'.
+const MetaLifebuoy: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  // largo para a água sangrar pelos lados (regra 2)
+  const W = 1160, H = 660, cx = W / 2;
+  const agua = 400;
+  const balanca = Math.sin(frame / 9) * 16;
+  const gira = Math.sin(frame / 13) * 7;
+  const cy = agua - 58 + balanca;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        {/* o último passo desvanece: o svg não chega ao fundo do vídeo e um corte
+            reto lia-se como uma faixa pousada, não como água (regra 2). */}
+        <linearGradient id="boi-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} stopOpacity={0.8} />
+          <stop offset="55%" stopColor={BRAND.violet} stopOpacity={0.95} />
+          <stop offset="100%" stopColor={BRAND.violet} stopOpacity={0} />
+        </linearGradient>
+      </defs>
+      {/* a boia */}
+      <g transform={`translate(${cx} ${cy}) rotate(${gira})`}>
+        <circle cx={0} cy={0} r={124} fill="none" stroke={BRAND.magenta} strokeWidth={54} />
+        {/* as quatro faixas claras */}
+        {[45, 135, 225, 315].map((a) => {
+          const r = (a * Math.PI) / 180;
+          return (
+            <line
+              key={a}
+              x1={Math.cos(r) * 98} y1={Math.sin(r) * 98}
+              x2={Math.cos(r) * 150} y2={Math.sin(r) * 150}
+              stroke={BRAND.text} strokeWidth={40} strokeLinecap="butt"
+            />
+          );
+        })}
+        {/* o dinheiro que ela segura */}
+        <circle cx={0} cy={0} r={62} fill={BRAND.violet} stroke={BRAND.cyan} strokeWidth={7} />
+        <text x={0} y={22} fontSize={62} fontWeight={900} textAnchor="middle" fill={BRAND.text}>$</text>
+      </g>
+      {/* a água, ondulada e a atravessar o quadro */}
+      <path
+        d={`M0,${agua + 24}
+            C${W * 0.16},${agua - 14} ${W * 0.32},${agua + 30} ${W * 0.5},${agua + 6}
+            C${W * 0.68},${agua - 18} ${W * 0.84},${agua + 28} ${W},${agua + 2}
+            L${W},${H} L0,${H} Z`}
+        fill="url(#boi-g)"
+      />
+      {/* espuma junto à boia */}
+      {[0, 1].map((i) => {
+        const t = ((frame / Math.max(1, life)) * 2.2 + i * 0.5) % 1;
+        return (
+          <ellipse key={i} cx={cx} cy={agua + 14} rx={140 + t * 190} ry={14 + t * 22} fill="none" stroke={BRAND.text} strokeWidth={6} opacity={(1 - t) * 0.4} />
+        );
+      })}
+    </svg>
+  );
+};
+
+// ─── LEVA 6, A ÚLTIMA (IMPLEMENTACAO20 §20.2 B1, 31/07/2026) ────────────────
+// Fecha CRESCER/ACUMULAR (escada) e PERDER/VAZAR (balde-furado, buraco, fumaca).
+// Nota: o plano previa "tijolos" em crescer; saiu a favor de "fumaca". A escada já
+// diz "crescer aos poucos" e os tijolos seriam quase a mesma imagem, enquanto
+// perder/vazar ficaria com 3. Assim as 8 famílias ficam com 4 cada.
+
+// escada: sobe-se um DEGRAU de cada vez (o progresso que não é salto). Casa com 'coin'.
+const MetaStairs: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 1120, H = 640;
+  const degraus = [0, 1, 2, 3, 4];
+  const largura = 190, altura = 82, base = 590, x0 = 40;
+  const p = interpolate(frame, [0, life * 0.9], [0, degraus.length - 0.001], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const atual = Math.floor(p);
+  const salto = Math.sin((p - atual) * Math.PI) * 42;      // pula de degrau em degrau
+  const moedaX = x0 + largura * (atual + (p - atual)) + largura / 2;
+  const moedaY = base - altura * (atual + 1) - 46 - salto;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="esd-g" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0%" stopColor={BRAND.violet} />
+          <stop offset="100%" stopColor={BRAND.cyan} />
+        </linearGradient>
+      </defs>
+      {/* os degraus. O primeiro nasce fora do quadro, à esquerda (regra 2). */}
+      {degraus.map((i) => {
+        const alto = altura * (i + 1);
+        return (
+          <rect
+            key={i}
+            x={i === 0 ? -60 : x0 + i * largura} y={base - alto}
+            width={i === 0 ? largura + 100 : largura} height={alto}
+            rx={10} fill="#2b3242" stroke="url(#esd-g)" strokeWidth={7}
+          />
+        );
+      })}
+      {/* quem sobe */}
+      <g transform={`translate(${moedaX} ${moedaY})`}>
+        <circle cx={0} cy={0} r={44} fill={BRAND.yellow} stroke="#b59b00" strokeWidth={6} />
+        <text x={0} y={16} fontSize={44} fontWeight={900} textAnchor="middle" fill="#0d1117">$</text>
+      </g>
+    </svg>
+  );
+};
+
+// balde-furado: enche por cima e PERDE por baixo (o orçamento que nunca fecha).
+// Diferente do 'ralo': ali o dinheiro espirala num funil; aqui escapa pelos furos
+// de um recipiente que devia segurar. Casa com 'coin'.
+const MetaLeakyBucket: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 760, H = 700, cx = W / 2;
+  const topo = 200, fundo = 560, meiaCima = 168, meiaBaixo = 118;
+  // Os furos ficam NA PAREDE, não no meio do balde. Na 1ª versão estavam no
+  // interior e liam-se como manchas escuras soltas. `naParede` calcula o x exato
+  // da parede inclinada para cada altura.
+  const naParede = (y: number, lado: -1 | 1) => {
+    const t = (y - topo) / (fundo - topo);
+    return cx + lado * (meiaCima - (meiaCima - meiaBaixo) * t);
+  };
+  const furos: { x: number; y: number; lado: -1 | 1 }[] = [
+    { y: 400, lado: -1 }, { y: 466, lado: 1 }, { y: 520, lado: -1 },
+  ].map((h) => ({ ...h, x: naParede(h.y, h.lado as -1 | 1) }));
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="bld-g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={BRAND.cyan} />
+          <stop offset="100%" stopColor={BRAND.violet} />
+        </linearGradient>
+      </defs>
+      {/* o que entra por cima */}
+      {[0, 1, 2].map((i) => {
+        const t = ((frame / Math.max(1, life)) * 2.4 + i * 0.33) % 1;
+        return <circle key={i} cx={cx} cy={40 + t * (topo - 60)} r={17} fill={BRAND.yellow} opacity={0.9} />;
+      })}
+      {/* o balde */}
+      <path
+        d={`M${cx - meiaCima},${topo} L${cx + meiaCima},${topo} L${cx + meiaBaixo},${fundo} L${cx - meiaBaixo},${fundo} Z`}
+        fill="#2b3242" stroke="url(#bld-g)" strokeWidth={11} strokeLinejoin="round"
+      />
+      <ellipse cx={cx} cy={topo} rx={meiaCima} ry={30} fill="#2b3242" stroke="url(#bld-g)" strokeWidth={11} />
+      {/* asa */}
+      <path d={`M${cx - meiaCima + 12},${topo - 6} Q${cx},${topo - 150} ${cx + meiaCima - 12},${topo - 6}`} fill="none" stroke={BRAND.sub} strokeWidth={12} strokeLinecap="round" opacity={0.85} />
+      {/* os furos e o que escapa por eles */}
+      {furos.map((f, i) => (
+        <g key={i}>
+          <circle cx={f.x} cy={f.y} r={18} fill={BRAND.bg} stroke={BRAND.sub} strokeWidth={4} />
+          {[0, 1].map((k) => {
+            const t = ((frame / Math.max(1, life)) * 2.6 + i * 0.4 + k * 0.5) % 1;
+            return (
+              <circle
+                key={k}
+                cx={f.x + f.lado * (14 + t * 78)} cy={f.y + t * t * 210}
+                r={14 * (1 - t * 0.45)} fill={BRAND.yellow} opacity={(1 - t) * 0.95}
+              />
+            );
+          })}
+        </g>
+      ))}
+    </svg>
+  );
+};
+
+// buraco: quanto mais se cava, MAIS FUNDO fica (a dívida que se tapa com dívida).
+// Corte lateral, não vista de cima — é isso que o separa do 'ralo'. Casa com 'thud'.
+const MetaHole: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 1160, H = 660, cx = W / 2, chao = 300;
+  const p = interpolate(frame, [0, life * 0.9], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const fundoY = chao + 60 + p * 250;
+  const meia = 130 + p * 60;
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="bur-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.violet} stopOpacity={0.85} />
+          <stop offset="55%" stopColor={BRAND.violet} stopOpacity={0.9} />
+          {/* desvanece no fundo (regra 2) */}
+          <stop offset="100%" stopColor={BRAND.violet} stopOpacity={0} />
+        </linearGradient>
+      </defs>
+      {/* a terra, dos dois lados, atravessando o quadro */}
+      <path d={`M0,${chao} L${cx - meia},${chao} L${cx - meia + 26},${fundoY} L${cx + meia - 26},${fundoY} L${cx + meia},${chao} L${W},${chao} L${W},${H} L0,${H} Z`} fill="url(#bur-g)" />
+      <path
+        d={`M0,${chao} L${cx - meia},${chao} L${cx - meia + 26},${fundoY} L${cx + meia - 26},${fundoY} L${cx + meia},${chao} L${W},${chao}`}
+        fill="none" stroke={BRAND.sub} strokeWidth={9} strokeLinejoin="round" opacity={0.75}
+      />
+      {/* montes de terra tirada, um de cada lado */}
+      {[-1, 1].map((s) => (
+        <path
+          key={s}
+          d={`M${cx + s * (meia + 40)},${chao} q${s * 70},${-40 - p * 40} ${s * 150},0 Z`}
+          fill={BRAND.sub} opacity={0.45}
+        />
+      ))}
+      {/* o dinheiro no fundo, cada vez mais longe */}
+      <g transform={`translate(${cx} ${fundoY - 44})`} opacity={0.9}>
+        <circle cx={0} cy={0} r={38} fill={BRAND.yellow} stroke="#b59b00" strokeWidth={6} />
+        <text x={0} y={14} fontSize={38} fontWeight={900} textAnchor="middle" fill="#0d1117">$</text>
+      </g>
+    </svg>
+  );
+};
+
+// fumaca: o dinheiro SOBE em fumaça e não volta (o gasto que evapora).
+// Diferente da 'vela': ali o corpo encolhe e marca tempo; aqui a moeda desfaz-se.
+// Casa com 'whoosh'.
+const MetaSmoke: React.FC<{ life: number }> = ({ life }) => {
+  const frame = useCurrentFrame();
+  const W = 700, H = 720, cx = W / 2, chao = 610;
+  const p = interpolate(frame, [0, life * 0.85], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const baforadas = [0, 1, 2, 3, 4];
+  return (
+    <svg width={W} height={H}>
+      <defs>
+        <linearGradient id="fum-c" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={BRAND.yellow} />
+          <stop offset="100%" stopColor={BRAND.magenta} />
+        </linearGradient>
+      </defs>
+      <line x1={0} y1={chao} x2={W} y2={chao} stroke={BRAND.sub} strokeWidth={9} opacity={0.45} />
+      {/* a fumaça a subir e a alargar. Clara e bem visível: na 1ª versão era cinza
+          a 40% sobre fundo roxo e quase não se via. */}
+      {baforadas.map((i) => {
+        const t = ((frame / Math.max(1, life)) * 1.6 + i * 0.2) % 1;
+        const desvio = Math.sin(t * Math.PI * 2 + i) * 54 * t;
+        return (
+          <circle
+            key={i}
+            cx={cx + desvio} cy={chao - 250 - t * 380}
+            r={30 + t * 70} fill={BRAND.text} opacity={(1 - t) * 0.5}
+          />
+        );
+      })}
+      {/* a chama — ACIMA da moeda. Na 1ª versão ficava por cima do "$" e tapava-o. */}
+      <path
+        d={`M${cx},${chao - 262} C${cx + 34},${chao - 220} ${cx + 32},${chao - 188} ${cx},${chao - 172} C${cx - 32},${chao - 188} ${cx - 34},${chao - 220} ${cx},${chao - 262} Z`}
+        fill={BRAND.yellow} opacity={0.95}
+      />
+      {/* a moeda a desfazer-se — encolhe pouco, para o "$" continuar legível */}
+      <g transform={`translate(${cx} ${chao - 92}) scale(${1 - p * 0.24})`} opacity={1 - p * 0.5}>
+        <circle cx={0} cy={0} r={74} fill="url(#fum-c)" stroke="#b59b00" strokeWidth={8} />
+        <text x={0} y={27} fontSize={76} fontWeight={900} textAnchor="middle" fill="#0d1117">$</text>
+      </g>
+    </svg>
+  );
+};
+
+// `export` acrescentado em 31/07/2026 só para a composição `Galeria` poder desenhar
+// cada imagem isolada (IMPLEMENTACAO20 §20.2 B0). O comportamento não muda.
+export const ShotMetaphor: React.FC<{ metaphor?: string; life: number }> = ({ metaphor, life }) => {
   if (metaphor === 'avalanche') return <MetaAvalanche life={life} />;
   if (metaphor === 'escorregao') return <MetaSlip life={life} />;
   if (metaphor === 'clique-link') return <MetaClickLink life={life} />;
@@ -1437,6 +2620,30 @@ const ShotMetaphor: React.FC<{ metaphor?: string; life: number }> = ({ metaphor,
   if (metaphor === 'montanha-russa') return <MetaRollercoaster life={life} />;
   if (metaphor === 'bolha') return <MetaBubble life={life} />;
   if (metaphor === 'ralo') return <MetaDrain life={life} />;
+  if (metaphor === 'ampulheta') return <MetaHourglass life={life} />;
+  if (metaphor === 'balanca') return <MetaScale life={life} />;
+  if (metaphor === 'bola-de-ferro') return <MetaBallChain life={life} />;
+  if (metaphor === 'guarda-chuva') return <MetaUmbrella life={life} />;
+  if (metaphor === 'ratoeira') return <MetaMousetrap life={life} />;
+  if (metaphor === 'mochila-pedras') return <MetaBackpack life={life} />;
+  if (metaphor === 'areia-movedica') return <MetaQuicksand life={life} />;
+  if (metaphor === 'domino') return <MetaDominoes life={life} />;
+  if (metaphor === 'castelo-cartas') return <MetaCardHouse life={life} />;
+  if (metaphor === 'gangorra') return <MetaSeesaw life={life} />;
+  if (metaphor === 'corda-bamba') return <MetaTightrope life={life} />;
+  if (metaphor === 'relogio') return <MetaClock life={life} />;
+  if (metaphor === 'vela') return <MetaCandle life={life} />;
+  if (metaphor === 'trem-perdido') return <MetaMissedTrain life={life} />;
+  if (metaphor === 'bifurcacao') return <MetaFork life={life} />;
+  if (metaphor === 'duas-portas') return <MetaTwoDoors life={life} />;
+  if (metaphor === 'semaforo') return <MetaTrafficLight life={life} />;
+  if (metaphor === 'cofre') return <MetaSafe life={life} />;
+  if (metaphor === 'escudo') return <MetaShield life={life} />;
+  if (metaphor === 'boia') return <MetaLifebuoy life={life} />;
+  if (metaphor === 'escada') return <MetaStairs life={life} />;
+  if (metaphor === 'balde-furado') return <MetaLeakyBucket life={life} />;
+  if (metaphor === 'buraco') return <MetaHole life={life} />;
+  if (metaphor === 'fumaca') return <MetaSmoke life={life} />;
   return <MetaSnowball life={life} />; // 'bola-neve' (default) — metáfora desconhecida → fallback
 };
 

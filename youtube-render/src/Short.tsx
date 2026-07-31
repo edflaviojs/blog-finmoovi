@@ -58,7 +58,19 @@ export type ShotVisual = {
   icon?: 'money' | 'coins' | 'growth' | 'clock' | 'card' | 'warning' | 'question' | 'mind'
     | 'piggy' | 'bank' | 'target' | 'trophy' | 'bulb' | 'hourglass' | 'wallet' | 'fire' | 'chart-down' | 'shield';
   metaphor?: 'bola-neve' | 'avalanche' | 'escorregao' | 'clique-link'
-    | 'foguete' | 'semente' | 'montanha-russa' | 'bolha' | 'ralo';
+    | 'foguete' | 'semente' | 'montanha-russa' | 'bolha' | 'ralo'
+    // leva 1 das imagens novas (IMPLEMENTACAO20 §20.2 B1)
+    | 'ampulheta' | 'balanca' | 'bola-de-ferro' | 'guarda-chuva'
+    // leva 2
+    | 'ratoeira' | 'mochila-pedras' | 'areia-movedica' | 'domino'
+    // leva 3
+    | 'castelo-cartas' | 'gangorra' | 'corda-bamba' | 'relogio'
+    // leva 4
+    | 'vela' | 'trem-perdido' | 'bifurcacao' | 'duas-portas'
+    // leva 5
+    | 'semaforo' | 'cofre' | 'escudo' | 'boia'
+    // leva 6 (última)
+    | 'escada' | 'balde-furado' | 'buraco' | 'fumaca';
   // b-roll de app nativo (v3.3): qual tela do FinMoovi renderizar dentro do celular.
   app?: AppScreen;
   note?: string;

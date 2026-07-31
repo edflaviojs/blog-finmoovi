@@ -19,6 +19,7 @@ import { SmartCapture3DShort, SmartCapture3DLong } from './SmartCapture3D';
 import { SmartCaptureVozShort, SmartCaptureVozLong } from './SmartCaptureVoz';
 import { AppTourShort, AppMosaicoShort, AppCarrosselShort, AppNumerosShort, AppQuadShort, AppTourLong, AppMosaicoLong, AppCarrosselLong, AppNumerosLong, AppQuadLong } from './AppOverview';
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
+import { Galeria, GALERIA_TOTAL_FRAMES, GALERIA_FPS } from './Galeria';
 import { cartoes } from './broll/cartoes';
 import { fluxo } from './broll/fluxo';
 import { extrato } from './broll/extrato';
@@ -65,6 +66,16 @@ const shortMetadata = async ({ props }: { props: ShortProps }) => {
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* Galeria das imagens do catálogo — para o dono VER e aprovar antes de
+          qualquer imagem nova ir para um vídeo (IMPLEMENTACAO20 §20.2 B0). */}
+      <Composition
+        id="Galeria"
+        component={Galeria}
+        durationInFrames={GALERIA_TOTAL_FRAMES}
+        fps={GALERIA_FPS}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="Short"
         component={Short}

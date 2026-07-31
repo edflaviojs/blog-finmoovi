@@ -1,0 +1,41 @@
+name: YouTube — Galeria de imagens (para o dono ver e aprovar)
+
+# GALERIA DO CATÁLOGO (IMPLEMENTACAO20 §20.2, passo B0).
+#
+# Renderiza um vídeo curto que mostra CADA imagem do catálogo sozinha, com o nome e
+# o significado, à mesma escala e velocidade em que aparece num Short — e deixa o
+# ficheiro para download no fim da página do run.
+#
+# Existe porque até 31/07/2026 não havia forma de ver uma imagem sem renderizar um
+# vídeo inteiro: as 9 existentes foram escritas em duas levas e NUNCA revistas.
+#
+# NÃO publica nada, NÃO commita nada, NÃO consome tema da fila. Só desenha e mostra.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  galeria:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Instalar dependências do render
+        working-directory: youtube-render
+        run: npm ci
+
+      - name: Renderizar a galeria
+        working-directory: youtube-render
+        run: npx remotion render src/index.ts Galeria out/galeria-imagens.mp4 --crf=18
+
+      - name: Deixar o vídeo para download
+        uses: actions/upload-artifact@v4
+        with:
+          name: galeria-imagens
+          path: youtube-render/out/galeria-imagens.mp4
+          retention-days: 14
