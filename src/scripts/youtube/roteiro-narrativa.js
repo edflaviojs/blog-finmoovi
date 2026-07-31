@@ -23,6 +23,7 @@
 import { generateText } from '../apis/kie-ai.js';
 import { BORDAO, METAPHORS, longestSharedWordRun } from './lib/schema-short.js';
 import { loadRecentPublishedContext } from './roteiro-short.js';
+import { montarFichaDeNumeros } from './lib/simulador.js';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
@@ -78,7 +79,7 @@ const cortar = (txt, max = 1500) => {
 // ─── o prompt ────────────────────────────────────────────────────────────────
 // PODADO de propósito: só entra aqui o que muda o TEXTO. Nada de ícones, sons,
 // tempo de tela, tipos de visual, âncoras ou JSON de shots.
-export function buildPromptNarrativa(t, proibidas, frasesRecentes) {
+export function buildPromptNarrativa(t, proibidas, frasesRecentes, ficha = null) {
   const bloqueadas = proibidas.length ? proibidas.join(', ') : '(nenhuma ainda)';
   const disponiveis = METAPHORS.filter((m) => m !== 'clique-link' && !proibidas.includes(m));
   const evitarFrases = frasesRecentes.length
@@ -91,7 +92,15 @@ SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (45 a 5
 NÃO descreva imagens, ícones, sons, efeitos ou cortes. Só o texto que a voz vai falar. Outra pessoa cuida do visual depois.
 
 TEMA: "${t.term}"${t.angle ? `\nÂNGULO: ${t.angle}` : ''}
-${t.definition ? `DEFINIÇÃO: ${t.definition}\n` : ''}${t.body ? `DADOS REAIS (use SOMENTE números daqui):\n${cortar(t.body)}\n` : ''}
+${t.definition ? `DEFINIÇÃO: ${t.definition}\n` : ''}${t.body ? `MATERIAL DE APOIO:\n${cortar(t.body)}\n` : ''}${ficha ? `
+════════ FICHA DE NÚMEROS — JÁ CALCULADA, NÃO REFAÇA A CONTA ════════
+${ficha.texto}
+
+Estes valores foram calculados por computador com as taxas oficiais do Banco Central. São os ÚNICOS números de dinheiro que você pode dizer.
+⛔ É PROIBIDO inventar, arredondar para outro valor, ou citar qualquer taxa/rendimento que não esteja aqui em cima. Se precisar de um número que não está na ficha, escreva a frase SEM número.
+` : `
+⛔ NÚMEROS: só pode citar números que apareçam no MATERIAL DE APOIO acima. Não invente valores, taxas ou rendimentos — este canal não tem como conferir o que você inventar, e um número errado no ar é pior do que nenhum número.
+`}
 ════════ A REGRA MAIOR — CADA FRASE PRECISA DA ANTERIOR ════════
 O vídeo é UMA fala contínua, não uma lista de frases bonitas. Cada bloco CONTINUA o anterior e prepara o seguinte.
 TESTE OBRIGATÓRIO: leia um bloco sem ler o anterior. Se ele fizer sentido sozinho, está SOLTO — reescreva até depender do anterior.
@@ -141,6 +150,7 @@ Responda APENAS com JSON válido, sem markdown:
 {
   "fioCondutor": "<uma das imagens permitidas>",
   "perguntaAberta": "<a pergunta do bloco 1, curta, MAIÚSCULAS, até 30 caracteres>",
+  "numerosCitados": [<todos os valores de DINHEIRO que você disse, em algarismos, ex: 2699>],
   "blocos": [
     { "papel": "gancho",       "fala": "..." },
     { "papel": "empatia",      "fala": "..." },
@@ -189,7 +199,7 @@ const PALAVRAS_DO_FIO = {
 // NÃO EXISTE. Promessa falsa indo ao ar é pior que CTA fraca.
 const BRINDES_PROIBIDOS = /\b(planilha|ebook|e-book|pdf|apostila|curso|aula|checklist|mapa mental|template|guia completo)\b/i;
 
-export function validarNarrativa(n, proibidas = []) {
+export function validarNarrativa(n, proibidas = [], ficha = null) {
   const erros = [];
   const avisos = [];
   if (!n || typeof n !== 'object') return { ok: false, erros: ['resposta não é objeto'], avisos };
@@ -215,6 +225,31 @@ export function validarNarrativa(n, proibidas = []) {
   }
   if (!/finmoovi/i.test(blocos[4]?.fala || '')) erros.push('o bloco "convite" não pede o comentário com a palavra FINMOOVI');
   if (!falaToda.toLowerCase().includes(BORDAO.toLowerCase().slice(0, 24))) avisos.push('o bordão do canal não aparece');
+
+  // NÚMEROS INVENTADOS — o defeito mais perigoso dos dois primeiros testes: o mesmo
+  // cálculo saiu R$ 2.725/R$ 2.540 numa vez e R$ 2.740/R$ 2.630 noutra, mais uma
+  // "Selic de 13,5%" que não existe. Com a ficha calculada no prompt, o modelo passa
+  // a declarar o que citou — e aqui confere-se contra o que o computador calculou.
+  if (ficha && Array.isArray(ficha.permitidos) && ficha.permitidos.length) {
+    const citados = Array.isArray(n.numerosCitados) ? n.numerosCitados : null;
+    if (!citados) {
+      avisos.push('o campo "numerosCitados" não veio — não foi possível conferir os valores ditos contra a ficha');
+    } else {
+      const foraDaFicha = citados
+        .map((v) => Math.round(Number(v)))
+        .filter((v) => Number.isFinite(v) && v >= 10)
+        .filter((v) => !ficha.permitidos.some((p) => Math.abs(p - v) <= 2));
+      if (foraDaFicha.length) {
+        erros.push(`a fala cita ${foraDaFicha.join(', ')} — número que NÃO está na ficha calculada. Use só: ${ficha.permitidos.slice(0, 6).join(', ')}`);
+      }
+    }
+    // algarismos soltos na fala (a regra manda falar por extenso) que não sejam da ficha
+    const emAlgarismo = [...falaToda.matchAll(/\b(\d{2,})\b/g)].map((m) => Number(m[1]));
+    const estranhos = emAlgarismo.filter((v) => !ficha.permitidos.some((p) => Math.abs(p - v) <= 2));
+    if (estranhos.length) {
+      avisos.push(`a fala tem números em algarismo fora da ficha (${estranhos.join(', ')}) — devem ser ditos por extenso e vir da ficha`);
+    }
+  }
 
   // brinde inexistente (ver BRINDES_PROIBIDOS)
   const brinde = falaToda.match(BRINDES_PROIBIDOS);
@@ -296,7 +331,7 @@ export async function gerarNarrativa(t, { tentativas = 3, proibidas = [], frases
       corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo:\n${[...new Set(exigencias)].join('\n')}`;
       continue;
     }
-    const v = validarNarrativa(n, proibidas);
+    const v = validarNarrativa(n, proibidas, ficha);
     if (v.ok) return { narrativa: n, avisos: v.avisos, palavras: v.palavras, tentativa: i };
     exigencias.push(...v.erros.map((e) => `- ${e}`));
     corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo, reescrevendo a narração inteira:\n${[...new Set(exigencias)].join('\n')}`;
@@ -317,9 +352,19 @@ if (executadoDireto) {
   const frases = recentes.flatMap((r) => r.stories || []).slice(0, 4);
   if (proibidas.length) console.log(`🚫 imagens proibidas (${recentes.length} vídeos recentes): ${proibidas.join(', ')}\n`);
 
-  const { narrativa, avisos, palavras, tentativa } = await gerarNarrativa(t, { proibidas, frasesRecentes: frases });
+  // A ficha nasce do TEMA + ÂNGULO. Se o tema não traz cenário (aporte e prazo),
+  // não há ficha — e o prompt passa a proibir qualquer número fora do apoio.
+  const ficha = montarFichaDeNumeros(`${t.term} ${t.angle || ''}`);
+  if (ficha) {
+    console.log('🧮 FICHA DE NÚMEROS (calculada aqui, com as taxas do Banco Central):');
+    for (const linha of ficha.texto.split('\n')) console.log(`   ${linha}`);
+    console.log('');
+  } else {
+    console.log('🧮 sem cenário numérico no tema — o modelo fica proibido de citar números fora do material de apoio.\n');
+  }
+  const { narrativa, avisos, palavras, tentativa } = await gerarNarrativa(t, { proibidas, frasesRecentes: frases, ficha });
 
-  console.log(`✅ aprovada na tentativa ${tentativa} — ${palavras} palavras (~${(palavras / 2.3).toFixed(0)}s de fala)`);
+  console.log(`✅ aprovada na tentativa ${tentativa} — ${palavras} palavras (~${(palavras / PALAVRAS_POR_SEGUNDO).toFixed(0)}s de fala)`);
   console.log(`🧵 fio condutor: ${narrativa.fioCondutor}`);
   console.log(`❓ pergunta segurada: ${narrativa.perguntaAberta}\n`);
   console.log('─'.repeat(72));
