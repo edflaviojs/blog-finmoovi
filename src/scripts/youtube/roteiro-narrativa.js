@@ -115,7 +115,16 @@ TESTE OBRIGATÓRIO: leia um bloco sem ler o anterior. Se ele fizer sentido sozin
 ════════ O FIO CONDUTOR ════════
 Escolha UMA imagem física para o vídeo inteiro e faça-a CRESCER: pequena no bloco 1, forte no 3, paga no 6. É a mesma imagem sempre — nunca troque no meio.
 Escolha entre: ${disponiveis.join(', ')}.
+⚠️ A imagem tem de ser DITA NA FALA, em pelo menos DOIS blocos. Escolher "semente" e não falar de plantar, brotar ou colher em lugar nenhum NÃO conta — o campo fica preenchido e o vídeo fica sem fio.
+   ✓ assim: "é igual plantar uma semente…" (bloco 1) → "a raiz já está pegando" (bloco 3) → "e um dia você colhe" (bloco 6).
 ⛔ PROIBIDAS (já usadas nos vídeos recentes): ${bloqueadas}${evitarFrases}
+
+════════ O QUE VOCÊ PODE PROMETER ════════
+SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (grátis)** e a **calculadora do blog**.
+⛔ É PROIBIDO oferecer planilha, ebook, PDF, apostila, curso, aula, checklist, mapa mental ou qualquer material que o canal não tem. Prometer o que não existe é pior do que não convidar.
+
+════════ COERÊNCIA DOS VALORES ════════
+Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moedinha", nem "trocado". Se o valor é pequeno, diga que parece pequeno — mas chame-o pelo que é.
 
 ════════ COMO A VOZ SOA ════════
 - Pontuação é RESPIRAÇÃO, não gramática. Vírgula só onde alguém respiraria de verdade.
@@ -145,9 +154,40 @@ Responda APENAS com JSON válido, sem markdown:
 
 // ─── validação: só o que é do TEXTO ──────────────────────────────────────────
 const PAPEIS = ['gancho', 'empatia', 'virada', 'demonstracao', 'convite', 'fecho'];
-// 45-55s de fala a ~2,3 palavras/s (média medida nas narrações reais do canal).
-const MIN_PALAVRAS = 100;
-const MAX_PALAVRAS = 150;
+
+/**
+ * VELOCIDADE DA VOZ — MEDIDA, não estimada (31/07/2026).
+ * A 1ª versão deste ficheiro usou 2,3 palavras/s de palpite e reprovou um texto de
+ * 135 palavras como "59s". Errado: no log real do TTS de `tesouro-direto-100` as 6
+ * cenas somaram 161 palavras em 62,1s → **2,6 palavras/s**. Com a taxa certa, 135
+ * palavras dão ~52s, dentro da faixa.
+ * Lição: calibrar por medição do pipeline, nunca por suposição.
+ */
+const PALAVRAS_POR_SEGUNDO = 2.6;
+const MIN_PALAVRAS = Math.round(45 * PALAVRAS_POR_SEGUNDO); // 117 ≈ 45s
+const MAX_PALAVRAS = Math.round(55 * PALAVRAS_POR_SEGUNDO); // 143 ≈ 55s
+
+/**
+ * O FIO CONDUTOR PRECISA SER DITO, não só declarado (31/07/2026).
+ * No 1º teste o modelo devolveu `fioCondutor: "semente"` e **não plantou semente
+ * nenhuma na narração** — campo preenchido, imagem ausente. O validador aceitou
+ * porque só olhava o campo. Estas são as palavras que provam que a imagem existe
+ * NA FALA; não precisam ser exatas (basta o radical).
+ */
+const PALAVRAS_DO_FIO = {
+  'bola-neve': ['bola de neve', 'bolinha', 'neve', 'ladeira', 'rolar', 'rola'],
+  avalanche: ['avalanche', 'desab', 'soterr', 'montanha'],
+  escorregao: ['escorreg', 'tropec', 'tropeç', 'derrap', 'escorrega'],
+  foguete: ['foguete', 'decol', 'lançamento', 'propuls'],
+  semente: ['semente', 'plant', 'brot', 'germin', 'raiz', 'colher', 'árvore', 'arvore', 'muda'],
+  'montanha-russa': ['montanha-russa', 'montanha russa', 'sobe e desce', 'looping', 'carrinho'],
+  bolha: ['bolha', 'estour', 'infl', 'ar '],
+  ralo: ['ralo', 'escorr', 'escoa', 'vaza', 'ping', 'torneira'],
+};
+
+// O que o canal PODE prometer. No 1º teste o modelo ofereceu "a planilha" — que
+// NÃO EXISTE. Promessa falsa indo ao ar é pior que CTA fraca.
+const BRINDES_PROIBIDOS = /\b(planilha|ebook|e-book|pdf|apostila|curso|aula|checklist|mapa mental|template|guia completo)\b/i;
 
 export function validarNarrativa(n, proibidas = []) {
   const erros = [];
@@ -176,11 +216,35 @@ export function validarNarrativa(n, proibidas = []) {
   if (!/finmoovi/i.test(blocos[4]?.fala || '')) erros.push('o bloco "convite" não pede o comentário com a palavra FINMOOVI');
   if (!falaToda.toLowerCase().includes(BORDAO.toLowerCase().slice(0, 24))) avisos.push('o bordão do canal não aparece');
 
-  // fio condutor
+  // brinde inexistente (ver BRINDES_PROIBIDOS)
+  const brinde = falaToda.match(BRINDES_PROIBIDOS);
+  if (brinde) {
+    erros.push(`a fala promete "${brinde[0]}", que NÃO EXISTE — só é permitido oferecer o app FinMoovi (grátis) ou a calculadora do blog`);
+  }
+  // "centavo" onde o assunto é reais: no 1º teste o modelo chamou cem reais de
+  // "esse centavo", duas vezes. Erro de grandeza que faz o vídeo parecer bobo.
+  if (/\bcentavos?\b/i.test(falaToda)) {
+    erros.push('a fala usa "centavo" — não chame reais de centavos; se for expressão, reescreva sem ela');
+  }
+
+  // fio condutor: precisa existir NO CATÁLOGO, ser inédito e — o que faltava — ser
+  // realmente DITO na narração, em mais de um bloco (é o fio que CRESCE).
   const fio = String(n.fioCondutor || '').trim();
   if (!fio) erros.push('sem "fioCondutor"');
   else if (!METAPHORS.includes(fio)) erros.push(`fioCondutor "${fio}" fora do catálogo (${METAPHORS.join('/')})`);
   else if (proibidas.includes(fio)) erros.push(`fioCondutor "${fio}" foi usado nos vídeos recentes — escolha outro`);
+  else {
+    const pistas = PALAVRAS_DO_FIO[fio] || [fio];
+    const blocosComFio = blocos.filter((b) => {
+      const f = String((b && b.fala) || '').toLowerCase();
+      return pistas.some((p) => f.includes(p));
+    }).length;
+    if (blocosComFio === 0) {
+      erros.push(`o fio condutor "${fio}" foi declarado mas NÃO APARECE na fala — a imagem tem de ser DITA (ex.: ${pistas.slice(0, 3).join(', ')}…), não só escolhida`);
+    } else if (blocosComFio < 2) {
+      erros.push(`o fio condutor "${fio}" aparece em 1 bloco só — ele precisa CRESCER: pequeno no início, forte na virada, pago no fecho`);
+    }
+  }
 
   // pergunta segurada: existe, é curta, e o fecho é quem a responde
   const perg = String(n.perguntaAberta || '').trim();
