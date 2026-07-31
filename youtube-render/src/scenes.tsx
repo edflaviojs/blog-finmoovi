@@ -62,12 +62,142 @@ const NOISE_TILE = 200;
 const NOISE_SVG = `<svg xmlns='http://www.w3.org/2000/svg' width='${NOISE_TILE}' height='${NOISE_TILE}'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(#n)'/></svg>`;
 const NOISE_DATA_URI = `data:image/svg+xml;utf8,${encodeURIComponent(NOISE_SVG)}`;
 
+// Base do fundo editorial: violeta profundo. NÃO é `BRAND.bg` (#0d1117, o preto do
+// app) de propósito — o vídeo precisa de campo de cor, a interface não.
+const EDITORIAL_BASE = '#1a1035';
+
+/**
+ * ETIQUETA DO TEMA (Onda 2, etapa 2) — o "carimbo" editorial que aparece em todas
+ * as cenas e dá unidade ao vídeo, como a chave de estilo da skill Vox.
+ *
+ * O texto vem do PRÓPRIO roteiro (`script.term`) — nada de dado novo a inventar.
+ * ⚠️ Temas editoriais/virais são FRASES, não termos curtos ("5 erros financeiros
+ * que tiram R$ 800 do seu bolso todo mês" é um tema real de 30/07): sem corte, a
+ * etiqueta atravessaria o quadro. Por isso o truncamento duro em 26 caracteres.
+ */
+export const EtiquetaTema: React.FC<{ tema?: string }> = ({ tema }) => {
+  const frame = useCurrentFrame();
+  const texto = String(tema || '').trim();
+  if (!texto) return null;
+  const curto = texto.length > 26 ? `${texto.slice(0, 26).trim()}…` : texto;
+  // entra junto com a cena e fica: é identidade, não animação de destaque.
+  const aparece = interpolate(frame, [0, 10], [0, 1], { extrapolateRight: 'clamp' });
+  return (
+    <div style={{
+      // top 138 (não 200): nas cenas de shot 'app' a moldura do celular começa por
+      // volta de y=230 e passava POR CIMA da etiqueta, cortando o texto (visto no
+      // frame 400 de 31/07). 138 fica entre a marca d'água (66-112) e o celular.
+      position: 'absolute', top: 138, left: 70,
+      background: BRAND.magenta, color: BRAND.text,
+      fontFamily: BODY, fontWeight: 900, fontSize: 32, letterSpacing: 3,
+      padding: '11px 24px', borderRadius: 8,
+      transform: `rotate(-2.5deg) scale(${0.94 + aparece * 0.06})`,
+      opacity: aparece,
+      textTransform: 'uppercase',
+      boxShadow: '0 10px 30px #00000055',
+    }}>
+      {curto}
+    </div>
+  );
+};
+
+/**
+ * TRILHO DE PROGRESSO (Onda 2, etapa 4) — a faixa inferior da maquete P5.
+ *
+ * Ocupa a faixa morta de baixo (medida em 30/07: ~60% do quadro era vazio) e dá ao
+ * espectador a noção de "quanto falta", que segura retenção. As marcas mostram as
+ * viradas de cena, então o vídeo passa a ter uma estrutura VISÍVEL.
+ *
+ * Deliberadamente NÃO tem texto: o texto de apoio da maquete P5 exigiria um dado
+ * que o roteiro não produz hoje — inventá-lo aqui seria escrever ficção na tela.
+ * Essa decisão está aberta na etapa 5 (o cartão de resultado).
+ */
+export const TrilhoProgresso: React.FC<{ totalFrames: number; marcas: number[] }> = ({ totalFrames, marcas }) => {
+  const frame = useCurrentFrame();
+  const p = Math.min(1, Math.max(0, frame / Math.max(1, totalFrames)));
+  return (
+    <div style={{ position: 'absolute', top: 1430, left: 70, right: 70, height: 10 }}>
+      <div style={{ position: 'absolute', inset: 0, background: '#0d111799', borderRadius: 6, border: `1px solid ${BRAND.text}1a` }} />
+      <div style={{ position: 'absolute', top: 0, left: 0, bottom: 0, width: `${p * 100}%`, background: BRAND.gradient, borderRadius: 6 }} />
+      {marcas.map((m, i) => {
+        const x = (m / Math.max(1, totalFrames)) * 100;
+        if (x <= 0 || x >= 100) return null;
+        return (
+          <div key={i} style={{ position: 'absolute', top: -4, left: `${x}%`, width: 3, height: 18, background: BRAND.text, opacity: 0.35, borderRadius: 2 }} />
+        );
+      })}
+    </div>
+  );
+};
+
+/**
+ * CARTÃO DE RESULTADO (Onda 2, etapa 5) — a transformação que o vídeo conta,
+ * visível o tempo todo em vez de passar 1,5s na abertura e sumir.
+ *
+ * FONTE DO DADO: `intro.counter` ({from, to, prefix}), que EXISTE em 9 de 9
+ * roteiros reais (medido em 31/07). Nada é pedido à IA e nada é inventado —
+ * decisão do dono entre 4 opções, justamente para não pôr na tela um número que
+ * ninguém confere (REGRA 25 da IMPLEMENTACAO23: nada neste repo valida factos).
+ *
+ * GUARDA (a opção "C"): sem `prefix`, o par vira número solto e ambíguo — medido
+ * no roteiro `aplicacao-financeira`, cujo counter é `0.5 → 8` (é porcentagem, mas
+ * o campo de unidade veio vazio). Nesses casos o cartão simplesmente NÃO aparece.
+ * Custo aceito: ~1 em 9 vídeos fica sem cartão; nenhum sai com número sem sentido.
+ */
+const compactoBR = (n: number): string => {
+  if (!Number.isFinite(n)) return '';
+  if (Math.abs(n) >= 1_000_000) {
+    const mi = n / 1_000_000;
+    // 3.200.000 → "3,2 mi"; 12.000.000 → "12 mi" (sem decimal inútil)
+    return `${nfBR.format(Number(mi.toFixed(mi < 10 ? 1 : 0)))} mi`;
+  }
+  return nfBR.format(Math.round(n));
+};
+
+export const CartaoResultado: React.FC<{ counter?: { from: number; to: number; prefix?: string } }> = ({ counter }) => {
+  const prefix = String(counter?.prefix ?? '').trim();
+  const from = Number(counter?.from);
+  const to = Number(counter?.to);
+  // guarda: sem unidade, ou par inválido/degenerado → não desenha nada.
+  if (!prefix || !Number.isFinite(from) || !Number.isFinite(to) || to <= from) return null;
+  return (
+    <div style={{
+      position: 'absolute', top: 1310, left: 70, right: 70, height: 96,
+      background: '#0d1117cc', borderRadius: 22, border: `2px solid ${BRAND.text}1f`,
+      display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 26,
+      fontFamily: DISPLAY, fontWeight: 900, letterSpacing: -1,
+    }}>
+      <span style={{ fontSize: 46, color: BRAND.sub }}>{prefix} {compactoBR(from)}</span>
+      <span style={{ fontSize: 40, color: BRAND.cyan }}>→</span>
+      <span style={{ fontSize: 58, color: BRAND.text }}>{prefix} {compactoBR(to)}</span>
+    </div>
+  );
+};
+
 export const Background: React.FC = () => {
   const frame = useCurrentFrame();
   const drift = Math.sin(frame / 40) * 40;
   const pulse = 0.16 + 0.05 * Math.sin(frame / 30);
   return (
-    <AbsoluteFill style={{ backgroundColor: BRAND.bg, overflow: 'hidden' }}>
+    // FUNDO EDITORIAL (Onda 2, etapa 1 — IMPLEMENTACAO20 §16). Era `BRAND.bg`
+    // (#0d1117) com 3 glows de opacidade 0,13-0,21: na prática, PRETO. Medido nos
+    // frames de 30/07 — ~60% do quadro era espaço morto, e é a causa nº1 do vídeo
+    // parecer "slide" (o diagnóstico do §16.2 falhou nisto por ter sido feito
+    // lendo código, sem olhar um único frame).
+    // Agora a base é um violeta profundo com FAIXA DIAGONAL e textura de pontos —
+    // o campo de cor chapado da linguagem editorial. Tudo o que já existia (glows,
+    // partículas, ruído) foi PRESERVADO por cima.
+    <AbsoluteFill style={{ backgroundColor: EDITORIAL_BASE, overflow: 'hidden' }}>
+      {/* faixa diagonal: divide o quadro em duas zonas de luz e mata o vazio */}
+      <AbsoluteFill style={{
+        background: `linear-gradient(160deg, transparent 0%, transparent 38%, ${BRAND.violet}40 38.2%, ${BRAND.violet}40 100%)`,
+      }} />
+      {/* textura de pontos: preenche sem competir com o conteúdo */}
+      <AbsoluteFill style={{
+        backgroundImage: `radial-gradient(${BRAND.text}12 2px, transparent 2px)`,
+        backgroundSize: '34px 34px',
+        opacity: 0.5,
+      }} />
       <div style={{
         position: 'absolute', top: -180 + drift, left: -260, width: 1100, height: 1100,
         background: glow(BRAND.cyan), opacity: pulse + 0.05,
@@ -527,7 +657,15 @@ const SceneStatement: React.FC<{ scene: Scene }> = ({ scene }) => {
   const w = interpolate(s, [0, 1], [0, 280]);
   const float = Math.sin(frame / 18) * 6;
   return (
-    <div style={{ transform: `translateY(${float}px)`, textAlign: 'center', maxWidth: 940 }}>
+    // Painel de contraste (Onda 2, etapa 3): a frase-soco é texto CLARO, e sobre o
+    // fundo editorial violeta ela perdia definição. O painel escuro translúcido a
+    // descola do fundo sem virar bloco de cor (esse fica só para os NÚMEROS, que
+    // são o destaque — se tudo tivesse bloco, nada teria destaque).
+    <div style={{
+      transform: `translateY(${float}px)`, textAlign: 'center', maxWidth: 940,
+      background: '#0d1117b3', borderRadius: 30, padding: '38px 44px 34px',
+      border: `2px solid ${BRAND.text}14`,
+    }}>
       <div style={{ color: BRAND.text, fontFamily: DISPLAY, fontSize: 82, fontWeight: 900, lineHeight: 1.12 }}>{scene.onScreenText}</div>
       <div style={{ height: 12, width: w, margin: '30px auto 0', borderRadius: 8, background: BRAND.gradient }} />
     </div>
@@ -797,6 +935,56 @@ function shotStartFrames(scene: Scene, timing: SceneTiming | null | undefined, f
     if (i > 0) v = Math.max(v, out[i - 1] + SHOT_MIN_GAP);
     out.push(v);
   }
+  return aplicarPisoDeVida(out, shots, fps, totalFrames);
+}
+
+/**
+ * PISO DE TEMPO DE TELA (31/07/2026) — conserto do "pisca e some".
+ *
+ * Cada shot entra na palavra-âncora e vive até o próximo. Quando a IA ancora um
+ * shot numa das ÚLTIMAS palavras da cena, sobra migalha. Medido no roteiro real
+ * `juros-compostos`: SEIS shots abaixo de 1,2s — `clique-link` 0,41s (o que o dono
+ * viu no s42), `avalanche` 0,34s (o CLÍMAX do momento-história aprovado em julho,
+ * piscando sem ninguém notar), ícones a 0,42s e 0,80s, frase final a 0,54s.
+ *
+ * Havia proteção para isto, mas SÓ para o shot `app` (piso de 2,5s, com erro duro
+ * no validador — REGRA G). Os demais tipos não tinham piso nenhum.
+ *
+ * Correção aqui, no RENDER, e não no prompt: vale para todo roteiro já existente e
+ * não depende de a IA acertar. O shot curto é ANTECIPADO (entra antes) em vez de
+ * descartado — sumir com a chamada "link na descrição" seria pior que mostrá-la
+ * cedo demais. Ele nunca é antecipado às custas do piso do shot anterior, e o
+ * `app` mantém o seu piso de 2,5s, que é regra do dono.
+ * Efeito colateral aceito: o shot anterior encurta um pouco (na CTA do fixture, o
+ * `app` cai de ~4,5s para ~3,7s — acima do piso).
+ */
+const SHOT_MIN_LIFE_SEC = 1.2;
+const APP_MIN_LIFE_SEC = 2.5; // espelha APP_FLOOR_SEC de schema-short.js
+// A pílula "Link na descrição" é a CHAMADA PARA AÇÃO do vídeo — o único momento que
+// pede um gesto do espectador. Com o piso comum (1,2s) ela ainda ficava menos tempo
+// no ar que ícones decorativos da cena seguinte, o que o dono apontou em 31/07 como
+// inversão de prioridade. Ganha piso próprio, o maior depois do `app`.
+const CLIQUE_MIN_LIFE_SEC = 2.2;
+
+const pisoDe = (shot: Shot | undefined, fps: number): number => {
+  const v = shot?.visual;
+  if (v?.type === 'app') return Math.round(APP_MIN_LIFE_SEC * fps);
+  if (v?.type === 'metaphor' && v.metaphor === 'clique-link') return Math.round(CLIQUE_MIN_LIFE_SEC * fps);
+  return Math.round(SHOT_MIN_LIFE_SEC * fps);
+};
+
+function aplicarPisoDeVida(starts: number[], shots: Shot[], fps: number, totalFrames: number): number[] {
+  const out = [...starts];
+  // de trás para frente: o aperto nasce no fim da cena e propaga em cascata.
+  for (let i = out.length - 1; i >= 1; i--) {
+    const fim = i === out.length - 1 ? totalFrames : out[i + 1];
+    const piso = pisoDe(shots[i], fps);
+    if (fim - out[i] >= piso) continue;
+    const limite = out[i - 1] + Math.max(SHOT_MIN_GAP, pisoDe(shots[i - 1], fps));
+    const alvo = fim - piso;
+    // nunca abaixo de `limite`: o anterior tem direito ao piso dele.
+    out[i] = Math.max(limite, Math.min(out[i], alvo));
+  }
   return out;
 }
 
@@ -807,27 +995,59 @@ const pseudoScene = (base: Scene, text?: string): Scene => ({
 });
 
 // ── Visuais de shot (vida = duração do shot) ─────────────────────────────────
+/**
+ * BLOCO DE COR do número (Onda 2, etapa 3). Antes o número era texto em GRADIENTE
+ * (ciano→violeta→magenta) sobre fundo quase-preto. Com o fundo editorial violeta
+ * (etapa 1) o miolo violeta do gradiente passou a sumir contra o fundo — medido no
+ * frame 250 de 31/07, a palavra "mês" quase desaparecia.
+ * Solução (a mesma da maquete P4 aprovada): bloco de cor SÓLIDO com texto escuro.
+ * Ganha contraste máximo e é a assinatura editorial da linguagem nova.
+ * O bloco é o background do PRÓPRIO texto — acompanha "R$ 500" ou "R$ 3,2 milhões"
+ * sem largura fixa, obrigatório num pipeline onde o texto muda todo dia.
+ */
+/**
+ * Corpo que CEDE ao conteúdo, para o bloco caber sempre numa linha só.
+ * Sem isto o texto quebrava e, com `box-decoration-break: clone`, virava dois
+ * retângulos de larguras diferentes empilhados — um degrau (visto no frame 250 de
+ * 31/07). Uma peça só é o que a linguagem editorial pede.
+ * Unbounded 900 mede ~0,62×corpo por caractere; 880px é a largura útil entre as
+ * margens do palco de shots. Teto 148 (o corpo antigo), piso 68 para nunca sumir.
+ */
+const LARGURA_UTIL = 800; // 800 + padding (64) deixa ~100px de respiro nas bordas
+const corpoQueCabe = (texto: string, teto = 148) =>
+  Math.max(68, Math.min(teto, Math.floor(LARGURA_UTIL / Math.max(1, texto.length * 0.62))));
+
+// Bloco de cor sólido: o destaque editorial dos NÚMEROS (ver comentário acima).
+const BlocoNumero: React.FC<{ texto: string; fontSize: number }> = ({ texto, fontSize }) => (
+  <div style={{ fontFamily: DISPLAY, fontSize, fontWeight: 900, lineHeight: 1.18, letterSpacing: -2, whiteSpace: 'nowrap' }}>
+    <span style={{
+      background: BRAND.cyan, color: '#0d1117',
+      padding: '10px 32px 18px', borderRadius: 18,
+      boxShadow: `0 18px 50px ${BRAND.cyan}33`,
+    }}>
+      {texto}
+    </span>
+  </div>
+);
+
 const ShotNumber: React.FC<{ text?: string }> = ({ text }) => {
-  const frame = useCurrentFrame();
-  const glow = 24 + Math.sin(frame / 7) * 12;
-  return (
-    <div style={{ ...gradientText, fontFamily: DISPLAY, fontSize: 148, fontWeight: 900, lineHeight: 1.05, filter: `drop-shadow(0 0 ${glow}px rgba(139,92,246,0.55))` }}>
-      {text}
-    </div>
-  );
+  const t = String(text ?? '');
+  // Corrige de passagem um defeito PRÉ-EXISTENTE (visível no frame 8s de 30/07):
+  // "R$ 500 /" a 148px fixos encostava na borda direita.
+  return <BlocoNumero texto={t} fontSize={corpoQueCabe(t)} />;
 };
 
 const ShotCounter: React.FC<{ from?: number; to?: number; prefix?: string; life: number }> = ({ from = 0, to = 0, prefix = '', life }) => {
   const frame = useCurrentFrame();
   const p = interpolate(frame, [0, Math.max(1, life - 4)], [0, 1], { extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
   const val = Math.round(from + (to - from) * p);
-  const size = interpolate(p, [0, 1], [112, 168]);
-  const glow = 24 + Math.sin(frame / 6) * 12;
-  return (
-    <div style={{ ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: size, lineHeight: 1.05, filter: `drop-shadow(0 0 ${glow}px rgba(139,92,246,0.5))` }}>
-      {prefix}{nfBR.format(val)}
-    </div>
-  );
+  const texto = `${prefix}${nfBR.format(val)}`;
+  // O contador CRESCE enquanto conta (era 112→168). O teto agora é o corpo que
+  // CABE no VALOR FINAL — não no valor corrente: senão o bloco encolheria a cada
+  // dígito novo (500 → 3.200.000) e pularia de tamanho no meio da contagem.
+  const tetoFinal = corpoQueCabe(`${prefix}${nfBR.format(to)}`, 156);
+  const base = interpolate(p, [0, 1], [Math.min(104, tetoFinal), tetoFinal]);
+  return <BlocoNumero texto={texto} fontSize={base} />;
 };
 
 const ShotIcon: React.FC<{ icon?: ShotIconKey }> = ({ icon }) => {
@@ -994,7 +1214,16 @@ const MetaClickLink: React.FC<{ life: number }> = ({ life }) => {
           />
         </g>
       </svg>
-      <AbsoluteFill style={{ background: '#fff', opacity: flash, pointerEvents: 'none' }} />
+      {/* Flash do clique. ERA um AbsoluteFill BRANCO CHAPADO: como este container
+          mede 900x520 (nao a tela), o flash desenhava um RETANGULO claro de bordas
+          retas no instante do toque — o "quadrado estranho" que o dono viu em 31/07.
+          Agora e um brilho RADIAL centrado no ponto do clique, que desvanece antes
+          de chegar as bordas: nao existe mais aresta para aparecer. */}
+      <AbsoluteFill style={{
+        background: `radial-gradient(circle 260px at 470px 232px, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.35) 38%, rgba(255,255,255,0) 72%)`,
+        opacity: flash,
+        pointerEvents: 'none',
+      }} />
     </div>
   );
 };
@@ -1415,15 +1644,63 @@ const AppShot: React.FC<{ app?: AppScreen; note?: string; base: Scene; life: num
   return <PhoneShot>{screen}</PhoneShot>;
 };
 
+/**
+ * GRAMÁTICA DE ENTRADA (Onda 2 — IMPLEMENTACAO20 §16.3 item 8).
+ *
+ * Até 30/07/2026 TODO shot entrava IGUAL: mesma mola, sempre vindo da DIREITA
+ * (translateX 40→0), sempre o mesmo push-in de 5%. Com 20+ shots por vídeo o olho
+ * aprende o padrão em segundos — é a assinatura mecânica da camada visual, e uma
+ * das 3 causas medidas do "parece IA" (§16.2, causa 4: temos motor de câmera, não
+ * direção de câmera).
+ *
+ * Agora a entrada NASCE do tipo do visual e alterna com o índice do shot, criando o
+ * whiplash de escala (macro ↔ plano aberto) que a skill Vox usa. É DETERMINÍSTICO
+ * de propósito: nada de random, que quebraria o replay frame-a-frame do Remotion.
+ */
+type EntradaShot = { x: number; y: number; s: number; kb: [number, number]; blur: number };
+const entradaFor = (type: string, i: number): EntradaShot => {
+  const par = i % 2 === 0;
+  switch (type) {
+    // app: a tela tem de entrar LIMPA e ficar legível ~4,5s (REGRA G do roteirista).
+    // Nada de zoom forte nem desfoque pesado aqui — seria trabalhar contra a regra.
+    case 'app': return { x: 0, y: 60, s: 0.92, kb: [1, 1.02], blur: 3 };
+    // números: MACRO — a câmera cai em cima do número.
+    case 'number':
+    case 'counter': return { x: 0, y: 0, s: 1.28, kb: par ? [1, 1.05] : [1.05, 1], blur: 7 };
+    // metáfora: PLANO ABERTO — a ação física precisa caber inteira no quadro.
+    case 'metaphor': return { x: 0, y: 0, s: 0.62, kb: [1, 1.04], blur: 5 };
+    case 'chart': return { x: 0, y: 70, s: 0.85, kb: [1, 1.05], blur: 4 };
+    case 'icon': return { x: 0, y: -60, s: 0.7, kb: par ? [1.04, 1] : [1, 1.04], blur: 5 };
+    // texto (statement/list/formula): mantém o lateral clássico, mas ALTERNANDO o
+    // lado — era sempre da direita.
+    default: return { x: par ? 50 : -50, y: 0, s: 0.75, kb: par ? [1, 1.05] : [1.05, 1], blur: 5 };
+  }
+};
+
+// Desfoque de ENTRADA, em quadros. Vale para todo shot.
+// Por que CSS e não as transições nativas com blur do Remotion (zoom-blur,
+// cross-zoom, linear-blur…): TODAS elas dependem de `html-in-canvas`, que exige
+// Chrome ≥148 COM a flag `chrome://flags/#canvas-draw-element` ligada à mão. O
+// runner do GitHub Actions não tem essa flag ⇒ o render diário morreria com
+// HTML_IN_CANVAS_UNSUPPORTED. `filter: blur()` roda em qualquer Chromium.
+const BLUR_FRAMES = 5;
+
 // Um shot: entra com pop+slide e mostra seu visual pela sua vida.
-const ShotView: React.FC<{ shot: Shot; life: number; base: Scene; revealFrame: number; durationFrames: number }> = ({ shot, life, base, revealFrame, durationFrames }) => {
+const ShotView: React.FC<{ shot: Shot; life: number; base: Scene; revealFrame: number; durationFrames: number; shotIndex?: number; stage?: number }> = ({ shot, life, base, revealFrame, durationFrames, shotIndex = 0, stage = 0 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const pop = spring({ frame, fps, config: { damping: 12, mass: 0.5 } });
-  const scale = interpolate(pop, [0, 1], [0.7, 1]);
-  const tx = interpolate(pop, [0, 1], [40, 0]);
-  const kb = interpolate(frame, [0, life], [1, 1.05], { extrapolateRight: 'clamp' });
   const v = shot.visual;
+  const ent = entradaFor(v.type, shotIndex);
+  const pop = spring({ frame, fps, config: { damping: 12, mass: 0.5 } });
+  const scale = interpolate(pop, [0, 1], [ent.s, 1]);
+  const tx = interpolate(pop, [0, 1], [ent.x, 0]);
+  const ty = interpolate(pop, [0, 1], [ent.y, 0]);
+  const kb = interpolate(frame, [0, life], ent.kb, { extrapolateRight: 'clamp' });
+  const blur = interpolate(frame, [0, BLUR_FRAMES], [ent.blur, 0], { extrapolateRight: 'clamp' });
+  // ESTÁGIO DO FIO CONDUTOR (REGRA H): a 2ª e a 3ª aparição da MESMA metáfora vêm
+  // maiores que a 1ª, para a imagem crescer junto com a história. Teto em +18% —
+  // acima disso a animação começa a encostar nas bordas do enquadramento.
+  const stageScale = v.type === 'metaphor' && stage > 1 ? 1 + Math.min(stage - 1, 2) * 0.09 : 1;
   // Entrada DIGITADA quando o shot de texto tem sfx de teclado/máquina de escrever.
   const typed = shot.sfx === 'typewriter' || shot.sfx === 'keyboard';
   const isTextShot = v.type === 'statement' || v.type === 'list' || v.type === 'formula';
@@ -1446,7 +1723,15 @@ const ShotView: React.FC<{ shot: Shot; life: number; base: Scene; revealFrame: n
   })();
   return (
     <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: 380, paddingLeft: 60, paddingRight: 60 }}>
-      <div style={{ transform: `translateX(${tx}px) scale(${scale * kb})`, textAlign: 'center' }}>
+      <div
+        style={{
+          transform: `translate(${tx}px, ${ty}px) scale(${scale * kb * stageScale})`,
+          // blur só nos primeiros quadros; abaixo de 0.05 sai do style para não
+          // deixar uma camada de composição ligada o vídeo inteiro (custo de render).
+          filter: blur > 0.05 ? `blur(${blur}px)` : undefined,
+          textAlign: 'center',
+        }}
+      >
         {inner}
       </div>
     </AbsoluteFill>
@@ -1454,7 +1739,7 @@ const ShotView: React.FC<{ shot: Shot; life: number; base: Scene; revealFrame: n
 };
 
 // Sequência de shots da cena — cada um no seu frame-âncora, contíguos (sem vazio).
-const SceneShots: React.FC<{ scene: Scene; timing?: SceneTiming | null; durationFrames: number }> = ({ scene, timing, durationFrames }) => {
+const SceneShots: React.FC<{ scene: Scene; timing?: SceneTiming | null; durationFrames: number; metaphorStages?: number[] }> = ({ scene, timing, durationFrames, metaphorStages }) => {
   const { fps } = useVideoConfig();
   const shots = scene.shots || [];
   const starts = shotStartFrames(scene, timing, fps, durationFrames);
@@ -1466,7 +1751,7 @@ const SceneShots: React.FC<{ scene: Scene; timing?: SceneTiming | null; duration
         const life = Math.max(1, end - start);
         return (
           <Sequence key={i} from={start} durationInFrames={life}>
-            <ShotView shot={shot} life={life} base={scene} revealFrame={0} durationFrames={life} />
+            <ShotView shot={shot} life={life} base={scene} revealFrame={0} durationFrames={life} shotIndex={i} stage={metaphorStages?.[i] || 0} />
           </Sequence>
         );
       })}
@@ -1558,8 +1843,35 @@ const ShotSfxTrack: React.FC<{ fires: ShotSfxFire[] }> = ({ fires }) => {
   );
 };
 
+/**
+ * ESTÁGIOS DO FIO CONDUTOR (Onda 2 / IMPLEMENTACAO20 §16). A REGRA H do roteirista
+ * manda UMA metáfora atravessar o vídeo em 3 estágios que CRESCEM. O render precisa
+ * saber em que estágio está para a 2ª e a 3ª aparição não serem um decalque da 1ª —
+ * sem isso a história cresce no texto e a imagem repete (o risco aberto da Onda 1).
+ *
+ * Conta a ocorrência de cada `visual.metaphor` na ORDEM do vídeo: 1ª = 1, 2ª = 2, …
+ * DELIBERADAMENTE não lê o `note` (onde o LLM escreve "estágio 2/3"): texto de LLM
+ * erra, contagem não. Se o roteiro só tiver 1 metáfora, o estágio é 1 e nada muda —
+ * roteiros antigos renderizam exatamente como antes.
+ *
+ * Retorna, por cena, um array paralelo aos shots: 0 = não é metáfora.
+ */
+export function computeMetaphorStages(scenes: Scene[]): number[][] {
+  const vistas: Record<string, number> = {};
+  return scenes.map((scene) => {
+    const shots = scene.shots || [];
+    return shots.map((shot) => {
+      const v = shot?.visual;
+      if (!v || v.type !== 'metaphor') return 0;
+      const chave = v.metaphor || 'bola-neve'; // mesmo fallback do ShotMetaphor
+      vistas[chave] = (vistas[chave] || 0) + 1;
+      return vistas[chave];
+    });
+  });
+}
+
 // Dispatcher — o role tem prioridade (cta/outro têm cena própria); senão usa visual.type.
-export const SceneRenderer: React.FC<{ scene: Scene; timing?: SceneTiming | null }> = ({ scene, timing }) => {
+export const SceneRenderer: React.FC<{ scene: Scene; timing?: SceneTiming | null; metaphorStages?: number[] }> = ({ scene, timing, metaphorStages }) => {
   const { fps } = useVideoConfig();
   // Mesmo cue (revealFrameFor) que o SceneShell usa pro punch — repassado ao
   // SceneChart pra sincronizar o DESENHO da curva com a fala, não só o soco.
@@ -1567,7 +1879,7 @@ export const SceneRenderer: React.FC<{ scene: Scene; timing?: SceneTiming | null
   const durationFrames = Math.max(1, Math.round((timing?.durationSec ?? scene.durationSec) * fps));
   // v3: se a cena traz `shots`, o motor de shots substitui o visual único central.
   if (scene.shots && scene.shots.length) {
-    return <SceneShots scene={scene} timing={timing} durationFrames={durationFrames} />;
+    return <SceneShots scene={scene} timing={timing} durationFrames={durationFrames} metaphorStages={metaphorStages} />;
   }
   const inner = (() => {
     if (scene.role === 'cta') return <SceneCta scene={scene} />;

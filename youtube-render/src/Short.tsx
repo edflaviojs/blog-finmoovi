@@ -1,12 +1,45 @@
 import { AbsoluteFill, Sequence, useVideoConfig } from 'remotion';
 import { TransitionSeries, linearTiming } from '@remotion/transitions';
+import type { TransitionPresentation } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
-import { Background, Watermark, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro, SignatureOutro, computeGlobalShotSfxFires } from './scenes';
+import { wipe } from '@remotion/transitions/wipe';
+import { Background, Watermark, EtiquetaTema, TrilhoProgresso, CartaoResultado, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro, SignatureOutro, computeGlobalShotSfxFires, computeMetaphorStages } from './scenes';
 import { BackgroundMusic } from './audio/music';
 import roteiroFixture from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
 export const TRANSITION_FRAMES = 8;
+// ⚠️ ESTE VALOR ESTÁ DUPLICADO em src/scripts/youtube/srt-short.js:24 (o gerador do
+// SRT recalcula os starts globais com a mesma sobreposição). Mudar aqui SEM mudar lá
+// dessincroniza a legenda do YouTube — bug já ocorrido e corrigido em 2026-07-22.
+// Menos óbvio, e descoberto na Onda 2: este número também define quanto do FIM do
+// áudio de cada cena é cortado (ver o `durationInFrames` do trilho mestre, abaixo).
+// A 8 frames (0,27s) come silêncio de fim de frase; subir muito começa a comer a
+// última sílaba. Só aumentar depois de MEDIR a cauda de silêncio das faixas de voz.
+
+/**
+ * RODÍZIO DE TRANSIÇÕES (Onda 2 — IMPLEMENTACAO20 §16.3 item 13).
+ * Era `i % 2 === 0 ? fade() : slide('from-right')`: um xadrez de duas transições,
+ * sempre na mesma ordem e sempre com a imagem PARADA. Agora são 5 em rodízio, com
+ * direções que variam — o corte deixa de ser previsível.
+ *
+ * ⚠️ Só entram aqui transições de CSS PURO. As bonitas do Remotion (zoom-blur,
+ * cross-zoom, crosswarp, linear-blur, dissolve, dreamy-zoom…) dependem TODAS de
+ * `html-in-canvas`, que exige Chrome ≥148 COM a flag `chrome://flags/#canvas-draw-element`
+ * ligada manualmente. O runner do GitHub Actions não tem essa flag ⇒ o render diário
+ * morreria com HTML_IN_CANVAS_UNSUPPORTED. O desfoque de movimento é feito por
+ * `filter: blur()` no conteúdo do shot (ver BLUR_FRAMES em scenes.tsx).
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any -- cada apresentação
+// tem seu próprio tipo de props (SlideProps ≠ WipeProps); a união não é atribuível
+// a `presentation`, que espera UM tipo. É o padrão para misturar transições.
+const TRANSICOES: Array<() => TransitionPresentation<any>> = [
+  () => slide({ direction: 'from-right' }),
+  () => wipe({ direction: 'from-bottom' }),
+  () => fade(),
+  () => slide({ direction: 'from-bottom' }),
+  () => wipe({ direction: 'from-left' }),
+];
 export const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s) antes das cenas
 export const INTRO_FRAMES_V3 = 45; // intro dinâmica v3 COMPRIMIDA (45f/1,5s): voz entra no ~seg 1
 export const SIGNATURE_FRAMES = 75; // assinatura final da marca (~2,5s) depois da última cena
@@ -132,18 +165,22 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
   // Comprimento do conteúdo (cenas + transições) — a assinatura entra logo após.
   const contentFrames = totalFramesFrom(durations, fps);
 
+  // ESTÁGIOS DO FIO CONDUTOR (Onda 2): calculado UMA vez para o vídeo inteiro e
+  // distribuído por cena — mesma forma como `computeGlobalShotSfxFires` já fazia.
+  const metaphorStagesByScene = computeMetaphorStages(script.scenes);
+
   const children: React.ReactNode[] = [];
   script.scenes.forEach((scene, i) => {
     children.push(
       <TransitionSeries.Sequence key={`s${i}`} durationInFrames={frames[i]}>
-        <SceneRenderer scene={scene} timing={sceneTimingFor(timing, scene, i)} />
+        <SceneRenderer scene={scene} timing={sceneTimingFor(timing, scene, i)} metaphorStages={metaphorStagesByScene[i]} />
       </TransitionSeries.Sequence>,
     );
     if (i < script.scenes.length - 1) {
       children.push(
         <TransitionSeries.Transition
           key={`t${i}`}
-          presentation={i % 2 === 0 ? fade() : slide({ direction: 'from-right' })}
+          presentation={TRANSICOES[i % TRANSICOES.length]()}
           timing={linearTiming({ durationInFrames: TRANSITION_FRAMES })}
         />,
       );
@@ -194,7 +231,19 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
         </Sequence>
       )}
       <Sequence from={introFrames}>
+        {/* Etiqueta do tema: fora do TransitionSeries de propósito — ela NÃO deve
+            entrar e sair a cada cena, é o elemento fixo que costura o vídeo todo.
+            Começa depois da intro para não competir com a frase de abertura. */}
+        <EtiquetaTema tema={script.term} />
+        {/* Trilho de progresso: também fora do TransitionSeries — atravessa o vídeo
+            inteiro. `masterStarts` já são os frames globais das viradas de cena. */}
+        <TrilhoProgresso totalFrames={contentFrames} marcas={masterStarts} />
         <TransitionSeries>{children}</TransitionSeries>
+        {/* Cartao DEPOIS do TransitionSeries de proposito: nas cenas de shot `app` a
+            moldura do celular desce ate ~y1310 e passava POR CIMA do cartao (visto
+            no frame 400 de 31/07). A parte baixa da tela do celular e vazia, entao
+            o cartao por cima nao tapa conteudo util. */}
+        <CartaoResultado counter={script.intro?.counter} />
         {/* Trilho MESTRE: áudio + legenda + ícones + SFX, sequencial e SEM sobreposição. */}
         {script.scenes.map((scene, i) => (
           <Sequence
