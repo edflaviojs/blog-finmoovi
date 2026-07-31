@@ -107,6 +107,9 @@ export function buildPromptNarrativa(t, proibidas, frasesRecentes, ficha = null)
   const bloqueadas = proibidas.length ? proibidas.join(', ') : '(nenhuma ainda)';
   const disponiveis = METAPHORS.filter((m) => m !== 'clique-link' && !proibidas.includes(m));
   const menuDeImagens = disponiveis.map((m) => `${m} (${DICAS_DO_FIO[m] || m})`).join(' · ');
+  // O alvo de tamanho sai das MESMAS constantes que a validação usa — escrever "117"
+  // à mão aqui era deixar o prompt e a trava separarem-se no primeiro ajuste.
+  const porBloco = `${Math.round(MIN_PALAVRAS / 6)} a ${Math.round(MAX_PALAVRAS / 6)}`;
   const evitarFrases = frasesRecentes.length
     ? `\nJÁ FOI DITO nos vídeos recentes (não repita nem parafraseie): ${frasesRecentes.map((f) => `"${f}"`).join(' · ')}`
     : '';
@@ -115,6 +118,8 @@ export function buildPromptNarrativa(t, proibidas, frasesRecentes, ficha = null)
 
 SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (45 a 55 segundos).
 NÃO descreva imagens, ícones, sons, efeitos ou cortes. Só o texto que a voz vai falar. Outra pessoa cuida do visual depois.
+
+⚠️ TAMANHO — É POR AQUI QUE ESTE ROTEIRO MAIS FALHA. A narração INTEIRA tem de ter entre ${MIN_PALAVRAS} e ${MAX_PALAVRAS} palavras, ou seja **${porBloco} palavras em CADA um dos 6 blocos**. Conte as palavras antes de responder. Um bloco com o dobro disto reprova o roteiro todo, por melhor que esteja escrito.
 
 TEMA: "${t.term}"${t.angle ? `\nÂNGULO: ${t.angle}` : ''}
 ${t.definition ? `DEFINIÇÃO: ${t.definition}\n` : ''}${t.body ? `MATERIAL DE APOIO:\n${cortar(t.body)}\n` : ''}${ficha ? `
@@ -159,7 +164,9 @@ Escolha UMA imagem física para o vídeo inteiro e faça-a CRESCER: pequena no b
 Escolha entre: ${menuDeImagens}.
 Escolha a que COMBINA com este tema — a imagem existe para explicar, não para enfeitar. Se ela não explicar nada aqui, é a imagem errada.
 ⚠️ A imagem tem de ser DITA NA FALA, com as palavras dela (as que estão entre parênteses acima), em pelo menos DOIS blocos. Preencher o campo "fioCondutor" e não falar da imagem em lugar nenhum NÃO conta: o campo fica cheio e o vídeo fica sem fio.
-   A forma é sempre esta: no bloco 1 a imagem aparece pequena, no bloco 3 ela está agindo, no bloco 6 ela dá o resultado. As palavras são SUAS — não copie nenhuma frase de exemplo deste texto.
+   A MECÂNICA — o exemplo abaixo usa DE PROPÓSITO uma imagem que NÃO está na lista, para você ver só a forma. ⛔ Nunca a use: se ela aparecer no seu texto, o roteiro é rejeitado.
+      bloco 1: "é uma pedra pequena na mochila…" → bloco 3: "e a mochila já pesa em cada passo" → bloco 6: "quem tira a pedra anda mais rápido".
+   Repare: é a MESMA imagem nos três, e ela CRESCE. Faça exatamente isto — com a sua imagem, e com as SUAS palavras.
 ⛔ PROIBIDAS (já usadas nos vídeos recentes): ${bloqueadas}${evitarFrases}
 
 ════════ O QUE VOCÊ PODE PROMETER ════════
@@ -496,6 +503,32 @@ function extrairJson(texto) {
 
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/**
+ * O CORRETOR NÃO PODE CARREGAR ORDENS QUE SE CONTRADIZEM (31/07/2026).
+ *
+ * MEDIDO no re-teste dos 3 temas: na 4ª tentativa o modelo recebia ao mesmo tempo
+ * "narração longa demais: 205 palavras" E "narração curta demais: 98 palavras".
+ * Duas ordens opostas — não havia como acertar, e 2 dos 3 temas esgotaram as
+ * tentativas (205 → 98 → 205 → 209). É o pêndulo da §19.4 outra vez, desta vez
+ * causado por acumulação CEGA das queixas, não pelo número de travas.
+ *
+ * O tamanho é a única exigência com DOIS LADOS, por isso é a única que se
+ * substitui em vez de se somar: fica sempre só a queixa mais recente.
+ * O resto continua a acumular — lá, esquecer uma queixa é deixá-la voltar.
+ */
+const SOBRE_TAMANHO = /narração (curta|longa) demais/;
+
+export function acumularExigencias(exigencias, novosErros) {
+  const novas = novosErros.map((e) => `- ${e}`);
+  if (novas.some((e) => SOBRE_TAMANHO.test(e))) {
+    for (let k = exigencias.length - 1; k >= 0; k--) {
+      if (SOBRE_TAMANHO.test(exigencias[k])) exigencias.splice(k, 1);
+    }
+  }
+  exigencias.push(...novas);
+  return [...new Set(exigencias)];
+}
+
 export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frasesRecentes = [], ficha = null } = {}) {
   const base = buildPromptNarrativa(t, proibidas, frasesRecentes, ficha);
   let corretivo = '';
@@ -519,8 +552,9 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
     }
     const v = validarNarrativa(n, proibidas, ficha, t && t.term);
     if (v.ok) return { narrativa: n, avisos: v.avisos, palavras: v.palavras, tentativa: i };
-    exigencias.push(...v.erros.map((e) => `- ${e}`));
-    corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo, reescrevendo a narração inteira:\n${[...new Set(exigencias)].join('\n')}`;
+    // ver `acumularExigencias`: o tamanho substitui, o resto acumula
+    const lista = acumularExigencias(exigencias, v.erros);
+    corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo, reescrevendo a narração inteira:\n${lista.join('\n')}`;
     console.log(`  ⚠ tentativa ${i}/${tentativas} reprovada: ${v.erros.join(' | ')}`);
   }
   throw new Error(`narração não passou na validação após ${tentativas} tentativas`);
