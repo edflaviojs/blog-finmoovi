@@ -1,0 +1,420 @@
+{
+  "date": "2026-07-30",
+  "counts": {
+    "content": 9,
+    "videos": 1,
+    "pins": 0,
+    "failures": 1,
+    "runs": 30
+  },
+  "failures": [
+    {
+      "name": "i18n Gate (PR Check)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30541936220",
+      "timeLisbon": "13:17"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-gasto-fijo-mensual",
+      "url": "https://blog.finmoovi.com/es/glossario/es-gasto-fijo-mensual",
+      "title": "gasto fijo mensual - Glosario Financiero",
+      "description": "Qué es gasto fijo mensual y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "gasto-fixo-mensal",
+      "url": "https://blog.finmoovi.com/glossario/gasto-fixo-mensal",
+      "title": "gasto fixo mensal - Glossário Financeiro",
+      "description": "O que é gasto fixo mensal e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-monthly-fixed-expense",
+      "url": "https://blog.finmoovi.com/en/glossario/en-monthly-fixed-expense",
+      "title": "monthly fixed expense - Financial Glossary",
+      "description": "What monthly fixed expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-7-best-personal-finance-apps-2026-complete-guide-to-organize",
+      "url": "https://blog.finmoovi.com/en/posts/en-7-best-personal-finance-apps-2026-complete-guide-to-organize",
+      "title": "7 Best Personal Finance Apps 2026 – Complete Guide to Organize Your Money",
+      "description": "Discover the 7 most efficient personal finance apps in 2026, with reviews, pros, cons, and the ideal pick for every profile.",
+      "category": "ferramentas",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-7-mejores-apps-de-control-financiero-2026-guia-completa-para",
+      "url": "https://blog.finmoovi.com/es/posts/es-7-mejores-apps-de-control-financiero-2026-guia-completa-para",
+      "title": "7 Mejores Apps de Control Financiero 2026 – Guía Completa para Organizar tu Dinero",
+      "description": "Descubre los 7 apps de finanzas personales más eficientes en 2026, con reseñas, pros, contras y la mejor opción para cada perfil.",
+      "category": "ferramentas",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "7-melhores-apps-de-controle-financeiro-2026-guia-completo-pa",
+      "url": "https://blog.finmoovi.com/posts/7-melhores-apps-de-controle-financeiro-2026-guia-completo-pa",
+      "title": "7 Melhores Apps de Controle Financeiro 2026 – Guia Completo para Organizar Seu Dinheiro",
+      "description": "Descubra os 7 apps de finanças pessoais mais eficientes em 2026, com avaliações, prós, contras e a escolha ideal para cada perfil.",
+      "category": "ferramentas",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-crear-un-presupuesto-que-realmente-funcione-en-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-crear-un-presupuesto-que-realmente-funcione-en-2026",
+      "title": "Cómo crear un presupuesto que realmente funcione en 2026",
+      "description": "Descubre en pocos minutos cómo organizar tu dinero cada mes y ganar tranquilidad financiera con FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-montar-um-orcamento-que-realmente-funciona-em-2026",
+      "url": "https://blog.finmoovi.com/posts/como-montar-um-orcamento-que-realmente-funciona-em-2026",
+      "title": "Como montar um orçamento que realmente funciona em 2026",
+      "description": "Descubra, em poucos minutos, como organizar seu dinheiro todo mês e ganhar tranquilidade financeira usando o FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-build-a-budget-that-actually-works-in-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-build-a-budget-that-actually-works-in-2026",
+      "title": "How to Build a Budget That Actually Works in 2026",
+      "description": "Discover in minutes how to organize your money each month and gain financial peace of mind with FinMoovi.",
+      "category": "dicas",
+      "publishedAt": "2026-07-30"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "viral-xB7XJCP7LG8",
+      "videoId": "srJhf0JPsKw",
+      "uploadedAt": "2026-07-30T09:17:13.719Z",
+      "title": "5 erros financeiros que tiram R$ 800 do seu bolso todo mês",
+      "timeLisbon": "10:17"
+    }
+  ],
+  "pins": [],
+  "runsSummary": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "02:43"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:30"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:32"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "08:56"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:11"
+    },
+    {
+      "name": "Glossário Financeiro",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:27"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:28"
+    },
+    {
+      "name": "GSC - Refresh de Conteudo (decay)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:32"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:07"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:09"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:38"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:57"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 3,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:59"
+    },
+    {
+      "name": "Post BOFU (Ferramentas)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:44"
+    },
+    {
+      "name": "i18n Gate (PR Check)",
+      "count": 4,
+      "ok": 3,
+      "fail": 1,
+      "firstTimeLisbon": "13:17"
+    },
+    {
+      "name": "Gerar Conteúdo Social",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "13:17"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:19"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:20"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:51"
+    },
+    {
+      "name": "Syndicate Content & Send Pingbacks",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:51"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "08:56"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "10:16"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "15:20"
+    }
+  ],
+  "pendencias": [
+    "Auditoria YouTube API: responder follow-up do Google com link do canal (prazo ~03/08) — depois aguardar aprovação p/ trocar uploads private→public",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Canibalizacao por query",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "times": [
+        "09:30"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "10:00",
+        "16:00",
+        "22:00"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Post Sazonal Semanal",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Webmentions & Outreach",
+      "times": [
+        "11:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Post Comparação Semanal",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "times": [
+        "14:00"
+      ]
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "times": [
+        "16:00"
+      ]
+    }
+  ]
+}
