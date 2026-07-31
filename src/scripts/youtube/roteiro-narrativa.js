@@ -116,9 +116,15 @@ TESTE OBRIGATÓRIO: leia um bloco sem ler o anterior. Se ele fizer sentido sozin
 ════════ A ESPINHA (6 blocos, nesta ordem) ════════
 1. GANCHO (~6s): a dor ou o número que choca, JÁ dizendo "${t.term}". Termine deixando uma pergunta no ar — e NÃO responda.
 2. EMPATIA (~9s): por que isso acontece com gente normal (correria, cansaço, ninguém ensinou). Sem culpar quem assiste.
-3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é A e você mostra que é B — "não é o [A] que te quebra… é o [B] que ninguém soma". É o coração do vídeo.
-4. A DEMONSTRAÇÃO (~10s): como o app FinMoovi resolve ISSO que você acabou de revelar, com número real. Uma ação de segundos, nunca "reserve um tempo".
-5. O CONVITE (~6s): peça o COMENTÁRIO com a palavra FINMOOVI. Molde a adaptar: "quer <o que resolve neste tema>? comenta FINMOOVI aqui que eu te mando."
+3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é A e você mostra que é B — "não é o [A] que te quebra… é o [B] que ninguém soma".
+   ⛔ TERMINE NA TENSÃO. Depois de virar, NÃO explique. Explicação depois da virada mata a virada.
+   ✗ "…é deixar a raiz parada; o Tesouro Selic faz a grana crescer todo dia." (virou e já explicou — a segunda metade desmancha a primeira)
+   ✓ "…é deixar a raiz parada. E o pior: o tempo não volta."
+4. A DEMONSTRAÇÃO (~10s): o app resolvendo ISSO que você acabou de revelar. **O app é quem AGE, não é rodapé.**
+   ⛔ NO MÁXIMO DOIS valores em dinheiro neste bloco. Três ou mais viram boletim de banco e a pessoa desliga.
+   ✗ "Cem reais dão dois mil seiscentos e noventa e nove; na poupança dá dois mil seiscentos e doze. A diferença são oitenta e seis. No FinMoovi basta abrir a calculadora." (três números empilhados e o app no fim, como enfeite)
+   ✓ "Eu joguei isso na calculadora do FinMoovi e ela me mostrou uma diferença de oitenta e seis reais. Só de escolher onde deixar o dinheiro."
+5. O CONVITE (~6s): peça o COMENTÁRIO com a palavra FINMOOVI, prometendo o que vai mandar. Molde a adaptar: "quer <o que resolve neste tema>? comenta FINMOOVI aqui que eu te mando."
 6. O FECHO (~8s): responda (ou vire do avesso) a pergunta do bloco 1 e termine com uma provocação. Sem "tchau", sem "até a próxima".
 
 ════════ O FIO CONDUTOR ════════
@@ -133,7 +139,14 @@ SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (grátis)** e a 
 ⛔ É PROIBIDO oferecer planilha, ebook, PDF, apostila, curso, aula, checklist, mapa mental ou qualquer material que o canal não tem. Prometer o que não existe é pior do que não convidar.
 
 ════════ COERÊNCIA DOS VALORES ════════
-Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moedinha", nem "trocado". Se o valor é pequeno, diga que parece pequeno — mas chame-o pelo que é.
+Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moedinha", nem "trocado", nem "dinheirinho". Se o valor parece pequeno, diga que PARECE pequeno — mas chame-o pelo nome. Diminutivo tira o valor da coisa que você está tentando valorizar.
+
+════════ COMO A FALA FLUI (vídeo curto perdoa pouco) ════════
+- ⛔ NUNCA use ponto e vírgula, dois-pontos ou parênteses. Ninguém FALA assim. Use ponto, vírgula ou reticências.
+- Varie o fôlego: uma frase curta, uma mais longa, outra curta. Tudo do mesmo tamanho vira ladainha.
+  ✓ "Cem reais por mês. Parece pouco, e é por isso que quase todo mundo deixa parado. Aí o tempo passa."
+- Cada bloco puxa o próximo pelo FIM: a última frase deve deixar o espectador querendo a seguinte.
+- Leia em voz alta antes de responder. Se você tropeçar, reescreva.
 
 ════════ COMO A VOZ SOA ════════
 - Pontuação é RESPIRAÇÃO, não gramática. Vírgula só onde alguém respiraria de verdade.
@@ -149,7 +162,7 @@ Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moe
 Responda APENAS com JSON válido, sem markdown:
 {
   "fioCondutor": "<uma das imagens permitidas>",
-  "perguntaAberta": "<a pergunta do bloco 1, curta, MAIÚSCULAS, até 30 caracteres>",
+  "perguntaAberta": "<a dúvida crua que o vídeo segura, MAIÚSCULAS, até 26 caracteres. É a pergunta que fica na TELA, não o título: NÃO repita o nome do tema, não abrevie nem corte palavras. Ex.: 'QUANTO RENDE MESMO?', 'PRA ONDE FOI?', 'VALE A PENA ESPERAR?'>",
   "numerosCitados": [<todos os valores de DINHEIRO que você disse, em algarismos, ex: 2699>],
   "blocos": [
     { "papel": "gancho",       "fala": "..." },
@@ -199,7 +212,7 @@ const PALAVRAS_DO_FIO = {
 // NÃO EXISTE. Promessa falsa indo ao ar é pior que CTA fraca.
 const BRINDES_PROIBIDOS = /\b(planilha|ebook|e-book|pdf|apostila|curso|aula|checklist|mapa mental|template|guia completo)\b/i;
 
-export function validarNarrativa(n, proibidas = [], ficha = null) {
+export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = '') {
   const erros = [];
   const avisos = [];
   if (!n || typeof n !== 'object') return { ok: false, erros: ['resposta não é objeto'], avisos };
@@ -256,10 +269,28 @@ export function validarNarrativa(n, proibidas = [], ficha = null) {
   if (brinde) {
     erros.push(`a fala promete "${brinde[0]}", que NÃO EXISTE — só é permitido oferecer o app FinMoovi (grátis) ou a calculadora do blog`);
   }
-  // "centavo" onde o assunto é reais: no 1º teste o modelo chamou cem reais de
-  // "esse centavo", duas vezes. Erro de grandeza que faz o vídeo parecer bobo.
-  if (/\bcentavos?\b/i.test(falaToda)) {
-    erros.push('a fala usa "centavo" — não chame reais de centavos; se for expressão, reescreva sem ela');
+  // GRANDEZA REBAIXADA. 1º teste: cem reais viraram "esse centavo". 3º teste: "esse
+  // dinheirinho". O mesmo vício — diminutivo tira o valor da coisa que o vídeo quer
+  // valorizar.
+  const rebaixa = falaToda.match(/\b(centavos?|dinheirinho|trocadinho|moedinha|mixaria|migalha)\b/i);
+  if (rebaixa) {
+    erros.push(`a fala rebaixa o valor com "${rebaixa[0]}" — diga que PARECE pouco, mas chame o dinheiro pelo nome`);
+  }
+
+  // PONTUAÇÃO DE TEXTO ESCRITO. O 3º teste trouxe ponto e vírgula na virada
+  // ("é deixar a raiz parada; o Tesouro Selic faz…"). Ninguém FALA assim, e num
+  // vídeo curto isso trava a leitura da voz.
+  const pontuacaoEscrita = falaToda.match(/[;:]|\(|\)/);
+  if (pontuacaoEscrita) {
+    erros.push(`a fala usa "${pontuacaoEscrita[0]}" — pontuação de texto escrito. Na fala só ponto, vírgula ou reticências`);
+  }
+
+  // BOLETIM DE BANCO. 3º teste: a demonstração empilhou três valores seguidos e o
+  // app virou rodapé. Mais de dois "reais" no mesmo bloco é sintoma disso.
+  const demonstracao = String(blocos[3]?.fala || '');
+  const quantosValores = (demonstracao.match(/\breais\b/gi) || []).length;
+  if (quantosValores > 2) {
+    erros.push(`o bloco "demonstracao" cita ${quantosValores} valores em dinheiro — no máximo DOIS, senão vira boletim de banco`);
   }
 
   // fio condutor: precisa existir NO CATÁLOGO, ser inédito e — o que faltava — ser
@@ -284,7 +315,20 @@ export function validarNarrativa(n, proibidas = [], ficha = null) {
   // pergunta segurada: existe, é curta, e o fecho é quem a responde
   const perg = String(n.perguntaAberta || '').trim();
   if (!perg) erros.push('sem "perguntaAberta"');
-  else if (perg.length > 30) erros.push(`"perguntaAberta" tem ${perg.length} chars (máximo 30 — é texto de tela)`);
+  else if (perg.length > 26) erros.push(`"perguntaAberta" tem ${perg.length} chars (máximo 26 — é texto de tela)`);
+  else if (!/\?$/.test(perg)) erros.push('"perguntaAberta" tem de ser uma pergunta e terminar com "?"');
+  else {
+    // No 3º teste saiu "TESOURO DIRETO COM 100 VALE?" — o tema espremido até caber,
+    // virando frase truncada. A pergunta é a DÚVIDA, não o título do vídeo.
+    const palavrasDoTema = String(temaTermo || '')
+      .toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .split(/\W+/).filter((w) => w.length >= 4);
+    const pergNorm = perg.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const repetidas = palavrasDoTema.filter((w) => pergNorm.includes(w));
+    if (repetidas.length >= 2) {
+      erros.push(`"perguntaAberta" repete o tema ("${repetidas.slice(0, 2).join(' ')}") — ela é a DÚVIDA crua, não o título (ex.: "QUANTO RENDE MESMO?")`);
+    }
+  }
 
   // ENCADEAMENTO (o motivo deste ficheiro existir): heurística, por isso é AVISO.
   // Um bloco que não retoma NENHUMA palavra de conteúdo do anterior é candidato a
@@ -331,7 +375,7 @@ export async function gerarNarrativa(t, { tentativas = 3, proibidas = [], frases
       corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo:\n${[...new Set(exigencias)].join('\n')}`;
       continue;
     }
-    const v = validarNarrativa(n, proibidas, ficha);
+    const v = validarNarrativa(n, proibidas, ficha, t && t.term);
     if (v.ok) return { narrativa: n, avisos: v.avisos, palavras: v.palavras, tentativa: i };
     exigencias.push(...v.erros.map((e) => `- ${e}`));
     corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo, reescrevendo a narração inteira:\n${[...new Set(exigencias)].join('\n')}`;
