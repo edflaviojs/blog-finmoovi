@@ -27,7 +27,7 @@
 
 import { generateText } from '../apis/kie-ai.js';
 import {
-  validateShortScript, VISUAL_TYPES, METAPHORS, ICONS, SFX, APP_SCREENS, MAX_SHOTS,
+  validateShortScript, VISUAL_TYPES, METAPHORS, ICONS, SFX, APP_SCREENS, MAX_SHOTS, MAX_TOTAL_SEC,
 } from './lib/schema-short.js';
 
 // A mesma taxa MEDIDA no log real do TTS que a passagem 1 usa (§19.5).
@@ -54,6 +54,35 @@ export function palavrasAncoraveis(fala) {
     if (limpa.length >= 4) lista.push({ n: lista.length + 1, palavra: limpa });
   }
   return lista;
+}
+
+// Palavras que não servem de palavra-chave por serem vazias de assunto.
+const VAZIAS = new Set(['que', 'com', 'para', 'por', 'uma', 'umas', 'uns', 'dos', 'das', 'nos', 'nas',
+  'pelo', 'pela', 'seu', 'sua', 'voce', 'mes', 'todo', 'toda', 'cada', 'mais', 'menos', 'isso',
+  'esse', 'essa', 'aquilo', 'como', 'quando', 'onde', 'quanto', 'custam', 'custa', 'ganha', 'vale', 'pena']);
+
+const semAcento = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+/**
+ * A PALAVRA-CHAVE TEM DE SER UMA QUE FOI MESMO DITA (erro apanhado em 31/07).
+ *
+ * O validador exige que `keyword` apareça na narração do gancho. A 1ª versão punha
+ * `keyword = t.term` — mas num tema editorial o `term` é a frase inteira
+ * ("3 erros de cartão que te custam R$ 500/mês"), que nenhuma narração vai conter.
+ * Resultado: reprovou 4 tentativas seguidas com um erro que **o modelo não podia
+ * corrigir**, porque a narração vem fechada da passagem 1. Pêndulo garantido.
+ *
+ * Agora escolhe-se, de entre as palavras do tema, a mais longa que o gancho DIZ.
+ * `term` continua a ser o tema inteiro (é ele que dá o título); `keyword` passa a
+ * ser a âncora falada.
+ */
+export function keywordFalada(termo, falaDoGancho) {
+  const gancho = semAcento(falaDoGancho);
+  const candidatas = String(termo || '')
+    .split(/[^\p{L}\p{N}]+/u)
+    .filter((w) => w.length >= 4 && !VAZIAS.has(semAcento(w)))
+    .sort((a, b) => b.length - a.length);
+  return candidatas.find((w) => gancho.includes(semAcento(w))) || null;
 }
 
 /** Duração da cena a partir das palavras — calculada, nunca pedida ao modelo. */
@@ -115,9 +144,11 @@ CATÁLOGOS (fora deles o roteiro é rejeitado):
 3. **O bloco DEMONSTRACAO precisa de UM shot do app**, e ele entra numa das PRIMEIRAS palavras do bloco: a tela do app tem de ficar visível uns 4 segundos, e se entrar no fim do bloco não dá tempo.
 4. **O som é TEMPERO: no MÁXIMO METADE dos shots leva som.** Se todos tocarem alguma coisa, cansa — o dono já reclamou disto. E o mesmo som não pode aparecer mais de 3× no vídeo inteiro. Para deixar em silêncio, basta omitir o campo "sfx".
 
-════════ MAIS DUAS COISAS QUE O CANAL EXIGE ════════
-· **DOIS shots do app no vídeo, não um.** O segundo vai no bloco CONVITE, mostrando a tela de que a narração fala — a pessoa vê o que vai receber antes de comentar.
-· Cada shot do app precisa de ~4 segundos de fala à frente dele, senão a tela mal aparece. Por isso: nunca ponha o app na última palavra de um bloco.
+════════ ONDE O APP PODE E NÃO PODE ENTRAR ════════
+· A tela do app precisa de **~4 segundos de fala à frente dela**, senão mal aparece.
+· ⛔ **Nunca ponha o app no CONVITE nem no FECHO** — são os blocos mais curtos e não dão esse tempo. O roteiro seria rejeitado.
+· ⛔ Nunca ponha o app na última palavra de um bloco, pela mesma razão.
+· Um segundo shot do app é bem-vindo, mas só num bloco LONGO (VIRADA ou DEMONSTRACAO).
 
 ════════ TEXTO NA TELA ════════
 Curto. A pessoa lê de relance, no telemóvel, enquanto ouve. Até 6 palavras.
@@ -231,7 +262,8 @@ export function montarRoteiro(t, narrativa, plano) {
     slug: t.slug,
     term: t.term,
     category: t.category || 'basico',
-    keyword: t.term,
+    // a âncora falada, não o tema inteiro (ver `keywordFalada`)
+    keyword: keywordFalada(t.term, narrativa.blocos[0]?.fala) || t.term,
     nextVideoTitle: '',
     intro: { style: 'pergunta', frase: plano.introFrase },
     scenes,
@@ -253,6 +285,26 @@ function extrairJson(texto) {
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export async function gerarCoreografia(t, narrativa, { tentativas = 4 } = {}) {
+  // ═══ FALHAR DEPRESSA NO QUE A PASSAGEM 2 NÃO PODE CONSERTAR (31/07/2026) ═══
+  // Medido: um roteiro reprovou 4 vezes seguidas por "a palavra-chave precisa ser
+  // FALADA na narração do hook". O modelo NÃO PODIA corrigir — a narração vem
+  // fechada da passagem 1 e ele só escreve o visual. Quatro chamadas de IA
+  // queimadas e uma mensagem de erro que apontava para o sítio errado.
+  // Estas verificações correm ANTES do ciclo e dizem qual é a causa real.
+  const kw = keywordFalada(t.term, narrativa.blocos[0]?.fala);
+  if (!kw) {
+    throw new Error(
+      `o gancho não diz nenhuma palavra do tema ("${t.term}") — o defeito é da PASSAGEM 1. `
+      + 'A passagem 2 só escreve o visual e não tem como consertar isto reescrevendo shots.',
+    );
+  }
+  const totalSec = narrativa.blocos.reduce((a, b) => a + duracaoDoBloco(b.fala), 0);
+  if (totalSec > MAX_TOTAL_SEC) {
+    throw new Error(
+      `a narração dá ${Math.round(totalSec)}s e o máximo de um Short é ${MAX_TOTAL_SEC}s — o defeito é do TAMANHO na passagem 1.`,
+    );
+  }
+
   const base = buildPromptCoreografia(t, narrativa);
   const exigencias = [];
   let corretivo = '';
