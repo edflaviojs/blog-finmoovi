@@ -315,8 +315,8 @@ function extrairJson(texto) {
 
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 
-export async function gerarNarrativa(t, { tentativas = 3, proibidas = [], frasesRecentes = [] } = {}) {
-  const base = buildPromptNarrativa(t, proibidas, frasesRecentes);
+export async function gerarNarrativa(t, { tentativas = 3, proibidas = [], frasesRecentes = [], ficha = null } = {}) {
+  const base = buildPromptNarrativa(t, proibidas, frasesRecentes, ficha);
   let corretivo = '';
   const exigencias = [];
   for (let i = 1; i <= tentativas; i++) {
