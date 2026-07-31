@@ -179,6 +179,34 @@ Responda APENAS com JSON válido, sem markdown:
 const PAPEIS = ['gancho', 'empatia', 'virada', 'demonstracao', 'convite', 'fecho'];
 
 /**
+ * LIMPEZA MECÂNICA — sanitizar em vez de reprovar (31/07/2026).
+ *
+ * O 5º teste esgotou as 3 tentativas oscilando entre defeitos: 1ª reprovou por
+ * tamanho + travessão, 2ª por "planilha", 3ª por travessão OUTRA VEZ. É o mesmo
+ * PÊNDULO já documentado neste repositório em julho — o modelo corrige uma
+ * exigência e viola outra.
+ *
+ * A causa foi minha: acumulei ~15 travas neste ficheiro, repetindo o erro que eu
+ * próprio diagnostiquei no prompt de produção. A correção não é afrouxar, é
+ * SEPARAR: pontuação é MECÂNICA e pode ser consertada por código, sem perder uma
+ * vírgula de sentido. Só continua a reprovar o que é SEMÂNTICO — número inventado,
+ * promessa falsa, fio ausente, bordão ausente, tamanho.
+ * Cada trava que vira limpeza é uma tentativa devolvida ao que importa.
+ */
+export function limparFala(texto) {
+  return String(texto || '')
+    .replace(/[*_]/g, '')                                  // marcação: a voz lia "asterisco"
+    .replace(/\s*[—–]\s*/g, ', ')                          // travessão vira a pausa que ele representa
+    .replace(/\s*:\s*/g, ', ')                             // dois-pontos: ninguém fala assim
+    .replace(/\s*;\s*/g, '. ')                             // ponto e vírgula vira frase nova
+    .replace(/[()]/g, '')                                  // parênteses não existem na fala
+    .replace(/\.\s*([a-záéíóúâêôãõç])/g, (m, c) => `. ${c.toUpperCase()}`) // maiúscula depois do ponto novo
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([,.!?…])/g, '$1')
+    .trim();
+}
+
+/**
  * VELOCIDADE DA VOZ — MEDIDA, não estimada (31/07/2026).
  * A 1ª versão deste ficheiro usou 2,3 palavras/s de palpite e reprovou um texto de
  * 135 palavras como "59s". Errado: no log real do TTS de `tesouro-direto-100` as 6
@@ -229,9 +257,9 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   if (palavras < MIN_PALAVRAS) erros.push(`narração curta demais: ${palavras} palavras (mínimo ${MIN_PALAVRAS} ≈ 45s)`);
   if (palavras > MAX_PALAVRAS) erros.push(`narração longa demais: ${palavras} palavras (máximo ${MAX_PALAVRAS} ≈ 55s)`);
 
-  // proibições que já nos morderam no ar
-  if (/[*_]/.test(falaToda)) erros.push('a fala tem marcação (* ou _) — a voz lê "asterisco"');
-  if (/—/.test(falaToda)) erros.push('a fala tem travessão — use vírgula ou ponto');
+  // Marcação, travessão, dois-pontos, ponto e vírgula e parênteses NÃO reprovam mais:
+  // são limpos por `limparFala()` antes de chegar aqui (ver o comentário lá em cima
+  // sobre o pêndulo do 5º teste). Aqui ficam só as exigências SEMÂNTICAS.
   if (/\bshorts?\b/i.test(falaToda)) erros.push('a fala diz "Short" — o canal fala sempre "vídeo"');
   if (/link (na|no|aqui)|clica no link|na bio|na descri/i.test(falaToda)) {
     erros.push('a fala manda clicar em link — em vídeo vertical o link não é clicável; o convite é o comentário');
@@ -283,14 +311,6 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   const rebaixa = falaToda.match(/\b(centavos?|dinheirinho|trocadinho|moedinha|mixaria|migalha)\b/i);
   if (rebaixa) {
     erros.push(`a fala rebaixa o valor com "${rebaixa[0]}" — diga que PARECE pouco, mas chame o dinheiro pelo nome`);
-  }
-
-  // PONTUAÇÃO DE TEXTO ESCRITO. O 3º teste trouxe ponto e vírgula na virada
-  // ("é deixar a raiz parada; o Tesouro Selic faz…"). Ninguém FALA assim, e num
-  // vídeo curto isso trava a leitura da voz.
-  const pontuacaoEscrita = falaToda.match(/[;:]|\(|\)/);
-  if (pontuacaoEscrita) {
-    erros.push(`a fala usa "${pontuacaoEscrita[0]}" — pontuação de texto escrito. Na fala só ponto, vírgula ou reticências`);
   }
 
   // BOLETIM DE BANCO. 3º teste: a demonstração empilhou três valores seguidos e o
@@ -374,7 +394,7 @@ function extrairJson(texto) {
 
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 
-export async function gerarNarrativa(t, { tentativas = 3, proibidas = [], frasesRecentes = [], ficha = null } = {}) {
+export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frasesRecentes = [], ficha = null } = {}) {
   const base = buildPromptNarrativa(t, proibidas, frasesRecentes, ficha);
   let corretivo = '';
   const exigencias = [];
@@ -389,6 +409,11 @@ export async function gerarNarrativa(t, { tentativas = 3, proibidas = [], frases
       exigencias.push(`- devolva JSON válido (${err.message})`);
       corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo:\n${[...new Set(exigencias)].join('\n')}`;
       continue;
+    }
+    // limpeza mecanica ANTES de validar: o que da para consertar por codigo nao
+    // pode custar uma tentativa (ver limparFala e o pendulo do 5o teste).
+    if (Array.isArray(n.blocos)) {
+      for (const b of n.blocos) if (b && typeof b.fala === 'string') b.fala = limparFala(b.fala);
     }
     const v = validarNarrativa(n, proibidas, ficha, t && t.term);
     if (v.ok) return { narrativa: n, avisos: v.avisos, palavras: v.palavras, tentativa: i };
