@@ -1,0 +1,198 @@
+{
+  "slug": "tesouro-direto-100",
+  "term": "Tesouro Direto com R$ 100 — vale a pena?",
+  "category": "investimento",
+  "keyword": "Tesouro Direto com R$ 100 — vale a pena?",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "*Se liga* no que *R$ 100* podem virar em 2 anos",
+    "counter": {
+      "from": 100,
+      "to": 2682,
+      "prefix": "R$"
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Tesouro Direto com R$ 100 — vale a pena? *Se liga* no que eu descobri: R$ 100 todo mês, 24 vezes. É como uma pequena avalanche. QUAL RENDIMENTO?",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 100"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "avalanche",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche",
+            "note": "pequena avalanche"
+          },
+          "sfx": "sparkle"
+        },
+        {
+          "anchor": "QUAL",
+          "visual": {
+            "type": "statement",
+            "text": "QUAL RENDIMENTO?"
+          },
+          "sfx": "boom"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "A maioria acha que R$ 100 não faz diferença, que é pouca grana pra investir. Mas não é falta de grana, é falta de estratégia. Você sente que tá perdendo tempo, né?",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "pouca",
+          "visual": {
+            "type": "icon",
+            "icon": "money",
+            "note": "pouca grana"
+          }
+        },
+        {
+          "anchor": "estratégia",
+          "visual": {
+            "type": "icon",
+            "icon": "target",
+            "note": "estratégia"
+          }
+        },
+        {
+          "anchor": "tempo",
+          "visual": {
+            "type": "icon",
+            "icon": "clock",
+            "note": "perdendo tempo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Não é o valor que te engana… é o efeito avalanche que ninguém soma. Cada R$ 100 vira uma avalanche de juros quando o Tesouro Selic trabalha.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "avalanche",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "avalanche",
+            "note": "avalanche crescente"
+          },
+          "sfx": "avalanche"
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2,68k"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Quer ver na prática? No app FinMoovi tem a calculadora que simula seu investimento. Só colocar R$ 100, 24 meses, taxa Selic, e sai R$ 2,68k. Na poupança sai só R$ 2,54k. Diferença de R$ 140.",
+      "durationSec": 12,
+      "shots": [
+        {
+          "anchor": "ver",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "simulador"
+          }
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2,68k"
+          }
+        },
+        {
+          "anchor": "R$",
+          "visual": {
+            "type": "number",
+            "text": "R$ 2,54k"
+          }
+        },
+        {
+          "anchor": "diferença",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 140"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Clica aqui e abre a calculadora do FinMoovi pra descobrir seu ganho. É rapidinho.",
+      "durationSec": 5,
+      "shots": [
+        {
+          "anchor": "clica",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link",
+            "note": "clicar no link"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "aqui",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "abrir calculadora"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "E tem um detalhe que engana até quem se controla — guarda essa. *Me conta* aqui embaixo: qual foi o teu erro desse mês?",
+      "durationSec": 8,
+      "shots": [
+        {
+          "anchor": "detalhe",
+          "visual": {
+            "type": "icon",
+            "icon": "warning",
+            "note": "detalhe perigoso"
+          }
+        },
+        {
+          "anchor": "erro",
+          "visual": {
+            "type": "statement",
+            "text": "Qual foi o teu erro desse mês?"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Abre a calculadora no app e vê o seu ganho agora",
+    "target": "app"
+  },
+  "totalDurationSec": 50
+}
