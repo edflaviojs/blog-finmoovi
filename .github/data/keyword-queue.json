@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-30T13:29:14.378Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-07-31T11:19:37.895Z",
+  "sourceCursor": 1,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -149,8 +149,10 @@
       "category": null,
       "priority": 1,
       "source": "manual",
-      "status": "pending",
-      "addedAt": "2026-07-23T20:12:37.196Z"
+      "status": "used",
+      "addedAt": "2026-07-23T20:12:37.196Z",
+      "usedAt": "2026-07-31T11:19:37.895Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "organizar finanças pessoais",
