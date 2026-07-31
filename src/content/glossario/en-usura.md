@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Usury is a financial term that refers to the practice of charging [interest](/en/glossario/en-interest) excessively on loans or [financing](/en/glossario/en-financing). This means that when you take a loan, you not only pay the [principal](/en/glossario/en-financial-value) amount, but also an additional [rate](/en/glossario/en-financial-fee), which is the interest. Usury occurs when these rates are very high, making it difficult for the borrower to repay the debt. For example, imagine you take a loan of R$ 5,000 with an interest rate of 20% per month. That means that at the end of the month you will have to pay R$ 6,000, which can be very hard for someone who earns R$ 4,000 a month.
+Usury is a financial term that refers to the practice of charging [interest](/en/glossario/en-interest) excessively on loans or [financing](/en/glossario/en-financing). This means that when you take a loan, you not only pay the [principal](/en/glossario/en-financial-value) amount, but also an additional [rate](/en/glossario/en-financial-fee), which is the interest. Usury occurs when these rates are very high, making it difficult for the borrower to repay the debt. For example, imagine you take a loan of $1,000 with an interest rate of 20% per month. That means that at the end of the month you will have to pay $1,200, which can be very hard for someone who earns $800 a month.
 
 * Usury can occur in different types of loans, including personal loans, [credit](/en/glossario/en-credit) cards, and vehicle financing.  
 * The interest rate is one of the main factors that determine whether a loan is usurious or not.  
@@ -26,7 +26,7 @@ Usury is a financial term that refers to the practice of charging [interest](/en
 
 ![What it is](/images/glossario/usura-inline-1.webp)
 
-Usury is a serious problem in Brazil, where many people do not have access to loans with reasonable interest rates. This can lead to a debt trap, where the borrower is forced to take additional loans to pay the interest on previous loans.
+Usury is a serious problem in many countries, where many people do not have access to loans with reasonable interest rates. This can lead to a debt trap, where the borrower is forced to take additional loans to pay the interest on previous loans.
 
 ## How it works
 Usury works in such a way that the lender charges excessive interest on the loan, making it difficult for the borrower to repay the debt. This can happen in different ways, including:
@@ -56,8 +56,8 @@ Usury can have serious consequences for the borrower, including:
 
 ## Practical examples
 Here are some practical examples of how usury can affect someone’s finances:
-* Imagine you take a loan of R$ 10,000 with an interest rate of 30% per month. That means that at the end of the month you will have to pay R$ 13,000, which can be very difficult for someone who earns R$ 5,000 a month.  
-* Imagine you have a credit card with a limit of R$ 5,000 and an interest rate of 20% per month. If you spend R$ 5,000 on the card and don’t pay the balance on time, you may have to pay R$ 6,000 at the end of the month, which can be very hard for someone who earns R$ 3,000 a month.
+* Imagine you take a loan of $2,000 with an interest rate of 30% per month. That means that at the end of the month you will have to pay $2,600, which can be very difficult for someone who earns $1,000 a month.  
+* Imagine you have a credit card with a limit of $1,000 and an interest rate of 20% per month. If you spend $1,000 on the card and don’t pay the balance on time, you may have to pay $1,200 at the end of the month, which can be very hard for someone who earns $600 a month.
 
 ## Start today
 Now that you understand better what usury is and how it can affect your finances, it’s important to start taking steps to avoid falling into this trap. **Practical tip:** Begin monitoring your finances closely, and make sure you have a plan to repay any debt you have. Also, be careful when taking loans, and be sure you understand the loan conditions before signing. With a bit of knowledge and planning, you can avoid usury and keep your finances healthy.

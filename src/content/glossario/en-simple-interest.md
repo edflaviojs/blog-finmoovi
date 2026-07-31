@@ -26,15 +26,15 @@ Where:
 
 ## Example
 
-R$ 1,000 at 10% per year for 3 years (simple interest):
-- Interest = 1,000 × 0.10 × 3 = R$ 300
-- Total: R$ 1,300
+$200 at 10% per year for 3 years (simple interest):
+- Interest = 200 × 0.10 × 3 = $60
+- Total: $260
 
 Compare with [compound interest](/en/glossario/en-compound-interest):
-- Year 1: 1,000 × 1.10 = R$ 1,100
-- Year 2: 1,100 × 1.10 = R$ 1,210
-- Year 3: 1,210 × 1.10 = R$ 1,331
-- Total: R$ 1,331 (R$ 31 more)
+- Year 1: 200 × 1.10 = $220
+- Year 2: 220 × 1.10 = $242
+- Year 3: 242 × 1.10 = $266
+- Total: $266 ($6 more)
 
 ## Where Simple Interest Appears
 

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-The yield, also known as yield, is a financial term that refers to the [taxa](/en/glossario/en-financial-fee) of return on an investment. In other words, it is the amount of money you earn relative to the [valor](/en/glossario/en-financial-value) invested. For example, if you invest R$ 1,000 in an [investment fund](/en/glossario/en-investment-fund) and receive R$ 50 in [dividends](/en/glossario/en-dividends), the yield would be 5% (R$ 50 / R$ 1,000). It’s important to understand that yield can vary depending on the type of investment and the time period the money is invested.
+The yield, also known as return, is a financial term that refers to the **rate**(/en/glossario/en-financial-fee) of return on an investment. In other words, it is the amount of money you earn relative to the **value**(/en/glossario/en-financial-value) invested. For example, if you invest $200 in an [investment fund](/en/glossario/en-investment-fund) and receive $10 in [dividends](/en/glossario/en-dividends), the yield would be 5% ($10 / $200). It’s important to understand that yield can vary depending on the type of investment and the time period the money is invested.
 
 Yield is an important measure for evaluating an investment’s performance, as it helps determine whether the investment is generating profit or not. In addition, yield can also be used to compare different investment options and choose the one that best meets your needs.
 
@@ -29,9 +29,9 @@ Yield is an important measure for evaluating an investment’s performance, as i
 * It can vary depending on the type of investment and the time period  
 
 ## How it works
-Yield works differently depending on the type of investment. For example, in an investment in [ações](/en/glossario/en-stocks), yield can be generated through dividends, which are payments made by the company to shareholders. In a debt securities investment, yield is generated through [juros](/en/glossario/en-interest), which are payments made by the issuer of the security to the investor.
+Yield works differently depending on the type of investment. For example, in an investment in [stocks](/en/glossario/en-stocks), yield can be generated through dividends, which are payments made by the company to shareholders. In a debt securities investment, yield is generated through [interest](/en/glossario/en-interest), which are payments made by the issuer of the security to the investor.
 
-**Practical tip:** It’s important to understand that yield is not the same as the investment’s value. For instance, if you invest R$ 1,000 in an investment fund and the fund’s value rises to R$ 1,200, the yield would be 20% (R$ 200 / R$ 1,000), but the investment’s value would be R$ 1,200.
+**Practical tip:** It’s important to understand that yield is not the same as the investment’s value. For instance, if you invest $200 in an investment fund and the fund’s value rises to $240, the yield would be 20% ($40 / $200), but the investment’s value would be $240.
 
 Yield can also be affected by factors such as inflation, interest rates, and risk. For example, if inflation is high, the yield of a debt‑security investment may be reduced because the purchasing power of money declines over time.
 
@@ -56,9 +56,9 @@ Yield also involves risks. One of the main risks is capital loss risk, which occ
 **Practical tip:** It’s important to understand the risks involved in an investment before deciding to invest. For example, if you are considering investing in a stock of a company that is facing financial difficulties, you should be aware that the capital‑loss risk is high.
 
 ## Practical examples
-Let’s consider some practical examples of how yield works. Suppose you are a public servant earning R$ 5,000 per month and you are considering investing R$ 1,000 in an investment fund. If the fund generates a yield of 10% per year, you will receive R$ 100 in dividends per year.
+Let’s consider some practical examples of how yield works. Suppose you are a public servant earning $1,000 per month and you are considering investing $200 in an investment fund. If the fund generates a yield of 10% per year, you will receive $20 in dividends per year.
 
-If you invest R$ 1,000 in a debt security with a yield of 5% per year, you will receive R$ 50 in interest per year. If you invest R$ 1,000 in a stock of a company that pays R$ 20 in dividends per year, you will receive R$ 20 in dividends per year.
+If you invest $200 in a debt security with a yield of 5% per year, you will receive $10 in interest per year. If you invest $200 in a stock of a company that pays $4 in dividends per year, you will receive $4 in dividends per year.
 
 ## Start today
-Now that you understand what yield is and how it works, it’s time to start investing. **Practical tip:** It’s important to start investing as soon as possible, because time is one of the main factors that affect yield. In addition, it’s important to diversify investments and understand the risks involved. With a bit of knowledge and planning, you can start generating profit and achieving your financial goals. So, don’t waste any more time and start investing today! You can begin with a small amount, such as R$ 100, and increase gradually as you become more comfortable with investing. Remember, the key is to start investing and stay consistent.
+Now that you understand what yield is and how it works, it’s time to start investing. **Practical tip:** It’s important to start investing as soon as possible, because time is one of the main factors that affect yield. In addition, it’s important to diversify investments and understand the risks involved. With a bit of knowledge and planning, you can start generating profit and achieving your financial goals. So, don’t waste any more time and start investing today! You can begin with a small amount, such as $20, and increase gradually as you become more comfortable with investing. Remember, the key is to start investing and stay consistent.

@@ -25,7 +25,7 @@ La “aplicación” es simplemente el acto de colocar tu dinero en algún instr
 
 ## Cómo funciona
 
-Cuando haces una aplicación, entregas tu dinero a una entidad (banco, corretora o fondo) que lo invierte en diferentes activos (como títulos de deuda, acciones o inmuebles). Esa entidad paga intereses o [dividendos](/es/glossario/es-dividendos), que son la recompensa por haber usado tu capital. El proceso se resume en tres pasos:
+Cuando haces una aplicación, entregas tu dinero a una entidad (banco, corredora o fondo) que lo invierte en diferentes activos (como títulos de deuda, acciones o inmuebles). Esa entidad paga intereses o [dividendos](/es/glossario/es-dividendos), que son la recompensa por haber usado tu capital. El proceso se resume en tres pasos:
 
 - **Depositas** el monto que deseas aplicar en la cuenta de la entidad.
 - **La entidad invierte** ese dinero según el tipo de aplicación que elegiste (renta fija, variable, etc.).
@@ -53,11 +53,11 @@ Como todo en la vida, las aplicaciones no están exentas de riesgos. Es importan
 
 ## Ejemplos prácticos
 
-Imagina que tu salario mensual está entre R$3.000 y R$8.000 y decides destinar una parte a una aplicación de renta fija (típicamente más segura). Aquí tienes tres escenarios reales:
+Imagina que tu salario mensual está entre €1,500 y €4,000 y decides destinar una parte a una aplicación de renta fija (típicamente más segura). Aquí tienes tres escenarios reales:
 
-- **Caso 1:** Salario R$3.500, aplicas R$500 mensuales en un CDB (Certificado de Depósito Bancario) con 110 % del CDI (índice de referencia). En un año, obtienes aproximadamente R$5.800 de rendimientos, sumando R$11.800 al final del período.
-- **Caso 2:** Salario R$5.200, aplicas R$1.000 en un fondo de inversión de [renta variable](/es/glossario/es-renta-variable) que históricamente rinde 12 % anual. Después de 2 años, tu inversión crece a R$2.530, generando R$1.530 de ganancias.
-- **Caso 3:** Salario R$7.800, destinas R$2.000 a un [Tesouro Direto](/es/glossario/es-tesouro-direto) (título del gobierno) con tasa de 8 % al año. En 3 años, el capital acumulado alcanza R$6.480, lo que representa R$2.480 de intereses.
+- **Caso 1:** Salario €630, aplicas €90 mensuales en certificados de depósito con 110 % de la tasa interbancaria. En un año, obtienes aproximadamente €1,044 de rendimientos, sumando €2,124 al final del período.
+- **Caso 2:** Salario €936, aplicas €180 en un fondo de inversión de [renta variable](/es/glossario/es-renta-variable) que históricamente rinde 12 % anual. Después de 2 años, tu inversión crece a €455, generando €275 de ganancias.
+- **Caso 3:** Salario €1,404, destinas €360 a [bonos del gobierno](/es/glossario/es-tesouro-direto) con tasa de 8 % al año. En 3 años, el capital acumulado alcanza €1,166, lo que representa €447 de intereses.
 
 En todos los casos, la clave está en ajustar el monto y el tipo de aplicación a tu capacidad de [ahorro](/es/posts/es-ahorra-en-las-compras-del-supermercado) y a tus metas.
 

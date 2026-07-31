@@ -54,13 +54,13 @@ All this process takes place within the same broker, which handles the loan and 
 
 ## Practical examples
 
-Imagine you earn R$5,000 per month and have R$20,000 available to invest. You believe that the shares of company X, priced at R$50, will fall in the coming months.  
+Imagine you earn **$1,000 per month** and have **$4,000** available to invest. You believe that the shares of company X, priced at **$10**, will fall in the coming months.  
 
-1. **Loan and sale:** you borrow 200 shares (200 × R$50 = R$10,000) and sell them immediately, receiving R$10,000.  
-2. **Price drop:** two weeks later, the stock falls to R$40. You buy 200 shares (200 × R$40 = R$8,000) and return them to the lender.  
-3. **Gross profit:** R$10,000 – R$8,000 = R$2,000. From this amount, subtract the borrowing fee (let’s say 2% per year, proportional to the period) and the brokerage fee, and you still have a net gain of about R$1,900.  
+1. **Loan and sale:** you borrow 200 shares (200 × $10 = $2,000) and sell them immediately, receiving $2,000.  
+2. **Price drop:** two weeks later, the stock falls to **$8**. You buy 200 shares (200 × $8 = $1,600) and return them to the lender.  
+3. **Gross profit:** $2,000 – $1,600 = $400. From this amount, subtract the borrowing fee (let’s say 2% per year, proportional to the period) and the brokerage fee, and you still have a net gain of about **$380**.  
 
-Now, see the opposite scenario: the stock rises to R$70. You need to buy the 200 shares for R$14,000, resulting in a loss of R$4,000 before costs. This example shows how [leverage](/en/glossario/en-leverage) can turn a small price movement into a significant gain or loss.
+Now, see the opposite scenario: the stock rises to **$14**. You need to buy the 200 shares for $2,800, resulting in a loss of **$800** before costs. This example shows how [leverage](/en/glossario/en-leverage) can turn a small price movement into a significant gain or loss.
 
 **Practical tip:** never use more than 10 % of your total capital in a single short‑selling trade; this helps limit the impact of an unexpected rise.
 

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## What it is
-Webull is an investment platform that allows users to buy and sell [ações](/en/glossario/en-stocks), options, ETFs (Exchange-Traded Funds) and other financial assets. It is a popular alternative to traditional securities brokerages, offering a more modern and accessible interface. Imagine you have a salary of R$ 5.000 per month and want to start investing a portion of it. With Webull, you can do this easily and safely.
+Webull is an investment platform that allows users to buy and sell [stocks](/en/glossario/en-stocks), options, ETFs (Exchange‑Traded Funds) and other financial assets. It is a popular alternative to traditional securities brokerages, offering a more modern and accessible interface. Imagine you have a salary of $1,000 per month and want to start investing a portion of it. With Webull, you can do this easily and safely.
 
 * The platform is regulated by the SEC (Securities and Exchange Commission) in the US, which ensures a certain level of security and reliability.  
 * Webull also offers a variety of analysis tools and educational resources to help investors make informed decisions.  
@@ -42,7 +42,7 @@ Webull offers several advantages compared to traditional securities brokerages. 
 
 ## Risks
 Like any investment, Webull also involves risks. Some of the main risks include:
-* Loss risk: You can lose money if the financial assets you bought decrease in [valor](/en/glossario/en-financial-value).  
+* Loss risk: You can lose money if the financial assets you bought decrease in [value](/en/glossario/en-financial-value).  
 * [Volatility](/en/glossario/en-volatility) risk: Prices of financial assets can be volatile, meaning they can rise or fall quickly.  
 * [Liquidity](/en/glossario/en-liquidity) risk: You may have difficulty selling your financial assets quickly, which can affect the price you receive.
 
@@ -53,9 +53,9 @@ Like any investment, Webull also involves risks. Some of the main risks include:
 **Practical tip:** It’s important to have a clear investment strategy and not let emotions drive your decisions. This means you shouldn’t buy or sell financial assets based on impulse or fear, but rather based on a careful analysis of the market.
 
 ## Practical examples
-Let’s consider a practical example. Imagine you have a salary of R$ 6.000 per month and want to start investing R$ 1.000 per month. You can use Webull to buy shares of companies like Petrobras or Vale, or to invest in ETFs that track the Brazilian stock index. **Practical tip:** It’s important to start investing early, because time is a great ally for investors. The earlier you start investing, the more time your money has to grow.
+Let’s consider a practical example. Imagine you have a salary of $1,200 per month and want to start investing $200 per month. You can use Webull to buy shares of companies like Apple or Microsoft, or to invest in ETFs that track the S&P 500. **Practical tip:** It’s important to start investing early, because time is a great ally for investors. The earlier you start investing, the more time your money has to grow.
 
-Another example is a person who earns R$ 4.000 per month and wants to invest R$ 500 per month. They can use Webull to buy options or to invest in more conservative financial assets, such as treasury bonds. **Practical tip:** It’s important to assess your risk profile before investing. If you are more conservative, you may want to invest in safer financial assets, like treasury bonds.
+Another example is a person who earns $800 per month and wants to invest $100 per month. They can use Webull to buy options or to invest in more conservative financial assets, such as government bonds. **Practical tip:** It’s important to assess your risk profile before investing. If you are more conservative, you may want to invest in safer financial assets, like government bonds.
 
 ## Start today
-Now that you know more about Webull and how it works, it’s time to start investing. Remember that the key to success is to start early and be consistent. **Practical tip:** Don’t be afraid to make mistakes. The important thing is to learn from them and keep investing. With Webull, you can start investing with just R$ 100 and can grow your [investment portfolio](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably) over time. So, what are you waiting for? Start investing today and see how your money can grow over time.
+Now that you know more about Webull and how it works, it’s time to start investing. Remember that the key to success is to start early and be consistent. **Practical tip:** Don’t be afraid to make mistakes. The important thing is to learn from them and keep investing. With Webull, you can start investing with just $20 and can grow your [investment portfolio](/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably) over time. So, what are you waiting for? Start investing today and see how your money can grow over time.

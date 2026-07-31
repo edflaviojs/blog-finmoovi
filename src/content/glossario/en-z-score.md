@@ -19,7 +19,7 @@ seo:
 
 ## What it is
 
-The **z‑score** is a simple way to see how far a number is from the average of a group, measured in standard deviations. Think of it as a “distance meter” that tells you whether something is typical or an outlier. If your monthly expense is R$5,500 and the average expense of people with similar incomes is R$4,800, the z‑score shows how unusual that R$5,500 is compared to the crowd.
+The **z‑score** is a simple way to see how far a number is from the average of a group, measured in standard deviations. Think of it as a “distance meter” that tells you whether something is typical or an outlier. If your monthly expense is $1,100 and the average expense of people with similar incomes is $960, the z‑score shows how unusual that $1,100 is compared to the crowd.
 
 ![What it is](/images/glossario/z-score-inline-1.webp)
 
@@ -55,7 +55,7 @@ Using the z‑score makes it easy to compare numbers that live in different scal
 
 ## Risks
 
-While the z‑score is handy, it’s not a magic wand. It assumes the data follows a normal distribution (the classic bell curve). If your data is heavily skewed—say, many people earn R$3,000 while a few earn R$8,000—the z‑score can mislead. Also, relying only on the z‑score ignores the underlying reasons behind the numbers.
+While the z‑score is handy, it’s not a magic wand. It assumes the data follows a normal distribution (the classic bell curve). If your data is heavily skewed—say, many people earn $600 while a few earn $1,600—the z‑score can mislead. Also, relying only on the z‑score ignores the underlying reasons behind the numbers.
 
 - Misinterpretation when data isn’t **normally distributed**.  
 - Over‑reliance can hide **contextual factors** (like a sudden medical expense).  
@@ -64,19 +64,19 @@ While the z‑score is handy, it’s not a magic wand. It assumes the data follo
 
 ## Practical examples
 
-Imagine you earn R$6,000 a month and want to see how your spending on groceries compares to others in the same income range (R$5,000‑R$7,000). After collecting data from 50 peers, you find:
+Imagine you earn $1,200 a month and want to see how your spending on groceries compares to others in the same income range ($1,000‑$1,400). After collecting data from 50 peers, you find:
 
-- Mean grocery spend: R$1,200  
-- Standard deviation: R$300  
-- Your grocery spend: R$1,800  
+- Mean grocery spend: $240  
+- Standard deviation: $60  
+- Your grocery spend: $360  
 
-Your z‑score = (1,800 − 1,200) / 300 = 2.0. A score of 2 means you’re spending two standard deviations above the average—quite high.  
+Your z‑score = (360 − 240) / 60 = 2.0. A score of 2 means you’re spending two standard deviations above the average—quite high.  
 
-Now look at a different case: you earn R$4,000 and save R$800 each month. The group’s average savings are R$600 with a standard deviation of R$150. Your z‑score = (800 − 600) / 150 ≈ 1.33, indicating you’re saving better than most, but not dramatically so.
+Now look at a different case: you earn $800 and save $160 each month. The group’s average savings are $120 with a standard deviation of $30. Your z‑score = (160 − 120) / 30 ≈ 1.33, indicating you’re saving better than most, but not dramatically so.
 
-- **Example 1:** Salary R$3,500, rent R$1,200 → z‑score = ‑0.5 (below average rent).  
-- **Example 2:** Salary R$7,800, investment in stocks R$2,500 → z‑score = 1.2 (above average investment).  
-- **Example 3:** Salary R$5,200, [emergency fund](/en/glossario/en-emergency-fund) R$10,000 → z‑score = 2.5 (very strong safety net).
+- **Example 1:** Salary $700, rent $240 → z‑score = ‑0.5 (below average rent).  
+- **Example 2:** Salary $1,560, investment in stocks $500 → z‑score = 1.2 (above average investment).  
+- **Example 3:** Salary $1,040, [emergency fund](/en/glossario/en-emergency-fund) $2,000 → z‑score = 2.5 (very strong safety net).
 
 These numbers help you decide whether to cut back, keep the pace, or push harder.
 
@@ -84,7 +84,7 @@ These numbers help you decide whether to cut back, keep the pace, or push harder
 
 Getting comfortable with the z‑score doesn’t require a finance degree—just a spreadsheet and a few minutes each month. Follow these steps, and you’ll have a clear picture of where you stand.
 
-- **Practical tip:** **Collect data** from at least 20 people in the same salary band (R$3,000‑R$8,000). Use a simple Google Sheet to log their monthly [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea).  
+- **Practical tip:** **Collect data** from at least 20 people in the same salary band ($600‑$1,600). Use a simple Google Sheet to log their monthly [expenses](/en/posts/en-5-tips-to-prepare-financially-for-the-second-half-of-the-yea).  
 - **Practical tip:** **Calculate the mean** by summing the column and dividing by the number of entries. The sheet’s `=AVERAGE()` function does the job instantly.  
 - **Practical tip:** **Use the built‑in STDEV.P function** (`=STDEV.P()`) to get the standard deviation, then apply the formula `=(YourValue‑Mean)/StdDev` in another column.  
 - Review the resulting z‑scores: values between –1 and 1 are “normal,” while anything outside that range deserves a closer look.  

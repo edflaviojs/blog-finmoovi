@@ -24,7 +24,7 @@ A Black Friday ya está en el calendario y, si aún no has empezado a guardar di
 
 ## 1. Define el objetivo: ¿cuánto quieres gastar?
 
-Antes de cualquier cosa, sabe exactamente cuánto pretendes gastar en la Black Friday. Según el **Banco Central de Brasil**, el consumo en noviembre de 2023 creció **13,2 %** respecto al mismo período del año anterior, impulsado por las compras de fin de año. Este dato muestra que los brasileños suelen gastar más en esta época.
+Antes de cualquier cosa, sabe exactamente cuánto pretendes gastar en la Black Friday. Según el **banco central**, el consumo en noviembre de 2023 creció **13,2 %** respecto al mismo período del año anterior, impulsado por las compras de fin de año. Este dato muestra que las personas suelen gastar más en esta época.
 
 **Cómo hacerlo:**
 
@@ -32,7 +32,7 @@ Antes de cualquier cosa, sabe exactamente cuánto pretendes gastar en la Black F
 2. **Investiga el precio medio** hoy (usa sitios de comparación o la propia tienda).
 3. **Suma todo** y añade un extra del 10 % para imprevistos o tasas.
 
-> *Ejemplo:* Si la TV cuesta R$ 2.500, las zapatillas R$ 350 y la cafetera R$ 200, el total será R$ 3.050. Añade 10 % → R$ 3.355. Ese será tu “budget” para la Black Friday.
+> *Ejemplo:* Si la TV cuesta €450, las zapatillas €63 y la cafetera €36, el total será €549. Añade 10 % → €604. Ese será tu “budget” para la Black Friday.
 
 ## 2. Crea una “alcancía” mensual
 
@@ -44,16 +44,16 @@ Ahora que tienes una cifra, transforma ese objetivo en metas mensuales. Si la Bl
 
 | Mes | Valor a ahorrar | Estrategia |
 |-----|----------------|------------|
-| Marzo | R$ 400 | Reduce gasto en snacks fuera de casa |
-| Abril | R$ 400 | Cambia el plan de TV por streaming |
-| Mayo | R$ 400 | Desactiva servicios de suscripción que no usas |
-| Junio | R$ 400 | Usa cupones de descuento en compras de supermercado |
-| Julio | R$ 400 | Vende artículos usados que ya no utilizas |
-| Agosto | R$ 400 | Reduce gasto en combustible (compartir coche, apps) |
-| Septiembre | R$ 400 | Negocia tarifas de internet y celular |
-| Octubre | R$ 400 | Elimina “lujos” temporales (cine, delivery) |
+| Marzo | €72 | Reduce gasto en snacks fuera de casa |
+| Abril | €72 | Cambia el plan de TV por streaming |
+| Mayo | €72 | Desactiva servicios de suscripción que no usas |
+| Junio | €72 | Usa cupones de descuento en compras de supermercado |
+| Julio | €72 | Vende artículos usados que ya no utilizas |
+| Agosto | €72 | Reduce gasto en combustible (compartir coche, apps) |
+| Septiembre | €72 | Negocia tarifas de internet y celular |
+| Octubre | €72 | Elimina “lujos” temporales (cine, delivery) |
 
-Total: **R$ 3.200**, ya cubriendo tu budget de R$ 3.355 y aún sobra un extra para imprevistos.
+Total: **€576**, ya cubriendo tu budget de €604 y aún sobra un extra para imprevistos.
 
 ### Herramienta amiga: FinMoovi
 
@@ -61,17 +61,17 @@ Para seguir esos depósitos mensuales, el **FinMoovi** funciona como una alcanc�
 
 ## 3. Reduce gastos fijos antes de la Black Friday
 
-Los gastos fijos son los villanos del ahorro. Según la **Serasa Experian**, la deuda media de las familias brasileñas en 2023 superó los R$ 12 mil, mostrando que muchas personas cargan con gastos innecesarios.
+Los gastos fijos son los villanos del ahorro. Según los **burós de crédito**, la deuda media de las familias en 2023 superó los €2 160, mostrando que muchas personas cargan con gastos innecesarios.
 
 **5 pasos para recortar costos:**
 
 1. **Renegocia el plan de celular** – muchas operadoras ofrecen paquetes más pequeños con hasta **30 %** de descuento si cambias de plan.
-2. **Ajusta la cuenta de energía** – cambia bombillas por LED, usa temporizadores y reduce el aire acondicionado 1 °C; esto puede ahorrar hasta **R$ 150** al mes.
+2. **Ajusta la cuenta de energía** – cambia bombillas por LED, usa temporizadores y reduce el aire acondicionado 1 °C; esto puede ahorrar hasta **€27** al mes.
 3. **Revisa suscripciones** – streaming, revistas digitales, softwares. Cancela lo que no uses.
 4. **Planifica las compras de supermercado** – haz lista, evita promociones impulsivas y usa apps de comparación de precios.
 5. **Negocia tarifas bancarias** – habla con tu banco y pide exención de tarifas o migra a una cuenta digital sin costos.
 
-Estas pequeñas economías, sumadas, pueden generar entre **R$ 1.000** y **R$ 1.500** en los próximos meses – dinero que puede ir directo a tu fondo de la Black Friday.
+Estas pequeñas economías, sumadas, pueden generar entre **€180** y **€270** en los próximos meses – dinero que puede ir directo a tu fondo de la Black Friday.
 
 ## 4. Usa el método “30 días” para compras impulsivas
 
@@ -86,19 +86,19 @@ La famosa **regla de los 30 días** funciona como un filtro mental: cuando ves a
 3. **Evalúa** al final del plazo: ¿la necesidad sigue presente?
 4. **Decide**: si sí, inclúyelo en tu presupuesto; si no, descarta la idea.
 
-Esta técnica reduce drásticamente las compras impulsivas, que, según el **IBGE**, representaron alrededor del **12 %** de los gastos de consumo en 2022.
+Esta técnica reduce drásticamente las compras impulsivas, que, según la **oficina de estadísticas**, representaron alrededor del **12 %** de los gastos de consumo en 2022.
 
 ## 5. Crea una “mezcla” de inversiones a corto plazo
 
-Guardar dinero en cuenta corriente rinde casi nada (aprox. **0,3 %** al año, tasa [Selic](/es/glossario/es-selic) actual). Para potenciar el ahorro hasta la Black Friday, considera aplicar parte del monto en inversiones de bajo riesgo y alta [liquidez](/es/glossario/es-liquidez).
+Guardar dinero en cuenta corriente rinde casi nada (aprox. **0,3 %** al año, tasa [tasa base del banco central](/es/glossario/es-selic) actual). Para potenciar el ahorro hasta la Black Friday, considera aplicar parte del monto en inversiones de bajo riesgo y alta [liquidez](/es/glossario/es-liquidez).
 
 **Opciones recomendadas:**
 
-- **[CDB](/es/glossario/es-cdb) con liquidez diaria** – rinde cercano al [CDI](/es/glossario/es-cdi) (actual ~13,15 % al año).
-- **Tesoro Selic** – título público con [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) atado a la tasa Selic, rescatable en cualquier momento.
-- **Fondos de [renta fija](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) a corto plazo** – algunos ofrecen rendimiento superior al 100 % del CDI.
+- **[certificados de depósito](/es/glossario/es-cdb) con liquidez diaria** – rinde cercano al [tasa interbancaria](/es/glossario/es-cdi) (actual ~13,15 % al año).
+- **Bonos del gobierno** – título público con [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) atado a la tasa base del banco central, rescatable en cualquier momento.
+- **Fondos de [renta fija](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) a corto plazo** – algunos ofrecen rendimiento superior al 100 % del tasa interbancaria.
 
-**Cómo hacerlo:** Abre la cuenta en una correduría (como **XP Investimentos** o **Rico**) y transfiere hasta **R$ 1.000** de tu “alcancía” mensual. El retorno puede añadir entre **R$ 150** y **R$ 250** a tu fondo hasta noviembre, aumentando tu poder de compra.
+**Cómo hacerlo:** Abre la cuenta en una correduría (como **XP Investimentos** o **Rico**) y transfiere hasta **€180** de tu “alcancía” mensual. El retorno puede añadir entre **€27** y **€45** a tu fondo hasta noviembre, aumentando tu poder de compra.
 
 > *Consejo extra:* Si usas FinMoovi, puedes conectar tu cuenta de inversiones y seguir el crecimiento de la reserva en tiempo real.
 
@@ -116,11 +116,11 @@ Llegar al día de la Black Friday sin un plan puede convertir la oportunidad en 
 
 ## 7. Reserva un “[fondo de emergencia](/es/glossario/es-fondo-de-emergencia)” para imprevistos
 
-Incluso con todo el plan, los imprevistos ocurren (reparación de auto, consulta médica). Para no tocar la reserva de la Black Friday, mantén un fondo de emergencia equivalente a **3 a 6 meses de gastos**. Según el **Bacen**, el 45 % de las familias brasileñas no tiene reserva de emergencia, lo que puede llevar al endeudamiento.
+Incluso con todo el plan, los imprevistos ocurren (reparación de auto, consulta médica). Para no tocar la reserva de la Black Friday, mantén un fondo de emergencia equivalente a **3 a 6 meses de gastos**. Según el **banco central**, el 45 % de las familias no tiene reserva de emergencia, lo que puede llevar al endeudamiento.
 
 **Cómo montar:**
-- Separa **R$ 200** al mes en una cuenta separada (puede ser en FinMoovi).
-- Cuando alcances entre **R$ 1.200** y **R$ 2.400**, deja de contribuir y usa solo en emergencias.
+- Separa **€36** al mes en una cuenta separada (puede ser en FinMoovi).
+- Cuando alcances entre **€216** y **€432**, deja de contribuir y usa solo en emergencias.
 
 ## 8. Evalúa el resultado y ajusta el plan
 

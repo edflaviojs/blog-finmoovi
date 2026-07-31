@@ -17,35 +17,35 @@ seo:
   keywords: ["xepa financeira", "glossário", "finanças", "glossary", "finance", "brazil"]
 ---
 
-## What it is
-A financial xepa, also known as "parallel expense", is a concept that refers to the [value](/en/glossario/en-financial-value) a person spends beyond their monthly budget. This can include expenses such as dining out, impulse purchases, trips, or any other spending not planned in the budget. It is important to understand that a financial xepa is not necessarily a problem, as long as it is controlled and does not affect the person's financial stability.  
+## What it is  
+A financial xepa, also known as “parallel expense,” is a concept that refers to the [value](/en/glossario/en-financial-value) a person spends beyond their monthly budget. This can include expenses such as dining out, impulse purchases, trips, or any other spending not planned in the budget. It is important to understand that a financial xepa is not necessarily a problem, as long as it is controlled and does not affect the person's financial stability.  
 * Non‑essential expenses  
 * Impulse spending  
 * Unplanned purchases  
 
-A financial xepa can be a challenge for many people, especially those who earn a fixed salary, such as R$ 5.000 per month. In this case, it is essential to have strict control over spending to avoid financial problems.
+A financial xepa can be a challenge for many people, especially those who earn a fixed salary, such as **$1,000 per month**. In this case, it is essential to have strict control over spending to avoid financial problems.
 
-## How it works
-A financial xepa works like a parallel spending system, where the person allocates a portion of their budget for non‑essential expenses. This can be done consciously, where the person decides how much they want to spend beyond their budget, or unconsciously, where expenses accumulate without the person noticing. **Practical tip:** it is important to keep a record of expenses to understand where the money is going and avoid unpleasant surprises at the end of the month. For example, if a person earns R$ 6.000 per month and spends R$ 1.000 on non‑essential expenses, they need to be sure they can afford this without compromising their financial stability.
+## How it works  
+A financial xepa works like a parallel spending system, where the person allocates a portion of their budget for non‑essential expenses. This can be done consciously, where the person decides how much they want to spend beyond their budget, or unconsciously, where expenses accumulate without the person noticing. **Practical tip:** it is important to keep a record of expenses to understand where the money is going and avoid unpleasant surprises at the end of the month. For example, if a person earns **$1,200 per month** and spends **$200 on non‑essential expenses**, they need to be sure they can afford this without compromising their financial stability.
 
 ![What it is](/images/glossario/xepa-financeira-inline-1.webp)
 
-## Advantages
-A financial xepa can have some [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026), such as allowing people to enjoy experiences and products that would not be available if they followed a very rigid budget. In addition, a financial xepa can be a way to reward oneself for achieving goals or objectives. **Practical tip:** it is important to set limits for the financial xepa, to prevent spending from getting out of control. For example, a person may decide to spend at most R$ 500 per month on non‑essential expenses.  
+## Advantages  
+A financial xepa can have some [benefits](/en/posts/en-cdb-vs-treasury-selic-which-yields-more-in-2026), such as allowing people to enjoy experiences and products that would not be available if they followed a very rigid budget. In addition, a financial xepa can be a way to reward oneself for achieving goals or objectives. **Practical tip:** it is important to set limits for the financial xepa, to prevent spending from getting out of control. For example, a person may decide to spend at most **$100 per month** on non‑essential expenses.  
 * Allows enjoying experiences and products  
 * Can be a way to reward oneself  
 * Can help reduce stress and anxiety  
 
-## Risks
-However, the financial xepa can also have risks, such as accumulating [debt](/en/glossario/en-debt) or lacking resources for essential expenses. **Practical tip:** it is important to prioritize essential expenses, such as rent, food, and bills, before spending on non‑essential items. For example, if a person earns R$ 4.000 per month and spends R$ 2.000 on essential expenses, they need to be sure they have enough resources to cover those [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) before spending on non‑essential expenses.  
+## Risks  
+However, the financial xepa can also have risks, such as accumulating [debt](/en/glossario/en-debt) or lacking resources for essential expenses. **Practical tip:** it is important to prioritize essential expenses, such as rent, food, and bills, before spending on non‑essential items. For example, if a person earns **$800 per month** and spends **$400 on essential expenses**, they need to be sure they have enough resources to cover those [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) before spending on non‑essential expenses.  
 * Accumulation of debt  
 * Lack of resources for essential expenses  
 * Difficulty achieving financial goals  
 
 ![Advantages](/images/glossario/xepa-financeira-inline-3.webp)
 
-## Practical examples
-A financial xepa can be applied in different ways, depending on each person's needs and goals. For example, a person who earns R$ 7.000 per month may decide to spend R$ 1.500 on non‑essential expenses, such as trips or luxury purchases. Another person who earns R$ 3.000 per month may decide to spend R$ 500 on non‑essential expenses, such as dining out or movies. **Practical tip:** it is important to remember that the financial xepa must be controlled and not affect the person's financial stability. In addition, it is essential to have an emergency plan to cover unexpected costs, such as a reserve of R$ 1.000 to R$ 2.000.
+## Practical examples  
+A financial xepa can be applied in different ways, depending on each person's needs and goals. For example, a person who earns **$1,400 per month** may decide to spend **$300 on non‑essential expenses**, such as trips or luxury purchases. Another person who earns **$600 per month** may decide to spend **$100 on non‑essential expenses**, such as dining out or movies. **Practical tip:** it is important to remember that the financial xepa must be controlled and not affect the person's financial stability. In addition, it is essential to have an emergency plan to cover unexpected costs, such as a reserve of **$200 to $400**.
 
-## Start today
+## Start today  
 Now that you understand what a financial xepa is and how it works, it’s time to start controlling your spending and creating a budget that meets your needs. **Practical tip:** start by recording all your expenses for one month to understand where your money is going. Then set limits for the financial xepa and prioritize essential spending. With a bit of discipline and [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips), you can enjoy a more stable and secure financial life. You can use a spending‑control app, such as [Nubank](/en/glossario/en-nubank), to help monitor your expenses and create a personalized budget. Remember that the financial xepa is a tool to help improve your financial life, not to compromise it. So start today to control your spending and build a brighter financial future!

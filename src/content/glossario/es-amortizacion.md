@@ -30,9 +30,9 @@ Amortización es el acto de pagar el [valor](/es/glossario/es-valor-financiero) 
 
 ## Ejemplo práctico
 
-[Financiamiento](/es/glossario/es-financiamiento) de R$ 100.000 en 30 años a 10% a.a.:
-- **SAC:** primera cuota ~R$ 1.111, última ~R$ 282. Total pagado: ~R$ 250.000
-- **Price:** todas las cuotas ~R$ 877. Total pagado: ~R$ 316.000
+[Financiamiento](/es/glossario/es-financiamiento) de €18.000 en 30 años a 10% a.a.:
+- **SAC:** primera cuota ~€200, última ~€51. Total pagado: ~€45.000
+- **Price:** todas las cuotas ~€158. Total pagado: ~€56.880
 
 ## Amortización extraordinaria
 

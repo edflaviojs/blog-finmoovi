@@ -29,7 +29,7 @@ The term “zero coupon” may sound complicated, but it’s simpler than you th
 
 
 ## How it works
-A zero coupon is issued at a discount to its face value, which is the amount the investor will receive at maturity. For example, if you buy a zero coupon with a face value of R$1.000,00 and a 5‑year term, you could pay R$600,00 for it. Over the 5 years you receive no interest, but at the end of the period you receive R$1.000,00. That means you earn R$400,00, which is the difference between the face value and the purchase price.
+A zero coupon is issued at a discount to its face value, which is the amount the investor will receive at maturity. For example, if you buy a zero coupon with a face value of $200 and a 5‑year term, you could pay $120 for it. Over the 5 years you receive no interest, but at the end of the period you receive $200. That means you earn $80, which is the difference between the face value and the purchase price.
 
 **Practical tip:** It’s important to remember that zero coupons carry credit risk, i.e., the risk that the company or government that issued the security won’t pay the face value at maturity.
 
@@ -50,9 +50,9 @@ However, zero coupons also have some risks. One is credit risk, which I mentione
 **Practical tip:** It’s important to diversify your investments to reduce credit risk and other risks. That means you should invest in different types of assets, such as [stocks](/en/glossario/en-stocks), debt securities, and [investment funds](/en/glossario/en-investment-fund).
 
 ## Practical examples
-Let’s consider a practical example. Suppose you earn R$5.000,00 per month and want to invest R$1.000,00 per month in zero coupons. You could buy zero coupons with a 5‑year term and a face value of R$1.000,00. Over the 5 years you receive no interest, but at the end of the period you receive R$1.000,00 for each zero coupon you bought. That means you’ll earn R$5.000,00, which is the difference between the face value and the purchase price.
+Let’s consider a practical example. Suppose you earn $1,000 per month and want to invest $200 per month in zero coupons. You could buy zero coupons with a 5‑year term and a face value of $200. Over the 5 years you receive no interest, but at the end of the period you receive $200 for each zero coupon you bought. That means you’ll earn $1,000, which is the difference between the face value and the purchase price.
 
-* Example: if you buy a zero coupon with a face value of R$1.000,00 and a 5‑year term, you could pay R$600,00 for it. Over the 5 years you receive no interest, but at the end of the period you receive R$1.000,00.  
+* Example: if you buy a zero coupon with a face value of $200 and a 5‑year term, you could pay $120 for it. Over the 5 years you receive no interest, but at the end of the period you receive $200.  
 * **Practical tip:** Remember that zero coupons have credit risk, so it’s important to invest in debt securities from secure companies or governments.
 
 ## Start today
