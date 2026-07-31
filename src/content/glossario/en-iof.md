@@ -1,6 +1,7 @@
 ---
 term: "IOF (Financial Operations Tax)"
 image: "/images/glossario/en-iof.webp"
+imageAlt: "A glass jar with a red lid, filled with coins and a plant sprout, surrounded by stacks of gold coins."
 definition: "A federal tax on financial operations including loans, foreign exchange, insurance, and securities transactions."
 category: "impostos"
 locale: "en"

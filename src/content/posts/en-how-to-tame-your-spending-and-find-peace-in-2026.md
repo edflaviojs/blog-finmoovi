@@ -3,6 +3,7 @@ title: "How to Tame Your Spending and Find Peace in 2026"
 description: "Simple, practical ways to control personal expenses, use FinMoovi and make your finances feel lighter and more organized."
 tickerHeadline: "The detail that makes your money work"
 image: "/images/posts/como-domar-os-gastos-e-ganhar-tranquilidade-em-2026.webp"
+imageAlt: "Brown wallet, coins, calculators, and green plant on white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["controlling personal expenses","personal finance","savings","money"]

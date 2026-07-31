@@ -4,6 +4,7 @@ definition: "Understand what income tax is, how it works, advantages, risks and 
 title: "Income Tax - Financial Glossary"
 description: "Understand what income tax is, how it works, advantages, risks and practical examples."
 image: "/images/glossario/imposto-de-renda.webp"
+imageAlt: "Gold coins, bar chart, pink piggy bank, and plant in jar on purple background"
 category: "basico"
 tags: ["income tax", "glossary", "finance"]
 author: "FinMoovi"

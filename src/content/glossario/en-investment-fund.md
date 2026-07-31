@@ -4,6 +4,7 @@ definition: "Understand what fundos is, how it works, advantages, risks and prac
 title: "investment fund - Financial Glossary"
 description: "Understand what fundos is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/fundos.webp"
+imageAlt: "A glass jar filled with coins, surrounded by stacks of gold coins and pink bars."
 category: "basico"
 tags: ["investment fund", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

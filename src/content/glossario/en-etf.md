@@ -4,6 +4,7 @@ definition: "Understand what etf is, how it works, advantages, risks and practic
 title: "etf - Financial Glossary"
 description: "Understand what etf is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/etf.webp"
+imageAlt: "Gold coins stacked in ascending order with green sprouts and a jar of coins on dark background."
 category: "basico"
 tags: ["etf", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

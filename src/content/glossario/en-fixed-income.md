@@ -4,6 +4,7 @@ definition: "Understand what fixed income is, how it works, advantages, risks an
 title: "Fixed Income - Financial Glossary"
 description: "Understand what fixed income is, how it works, advantages, risks and practical examples."
 image: "/images/glossario/renda-fixa.webp"
+imageAlt: "Stacks of gold coins and a glass jar with a sprouting plant on dark background"
 category: "basico"
 tags: ["fixed income", "glossary", "finance"]
 author: "FinMoovi"

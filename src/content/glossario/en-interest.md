@@ -4,6 +4,7 @@ definition: "Understand what juros is, how it works, advantages, risks and pract
 title: "juros - Financial Glossary"
 description: "Understand what juros is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/juros.webp"
+imageAlt: "A glass vase filled with coins and a plant, surrounded by stacks of gold coins."
 category: "basico"
 tags: ["juros", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

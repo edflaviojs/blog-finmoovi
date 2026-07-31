@@ -4,6 +4,7 @@ definition: "What fixed expense is and how it shows up in your everyday money �
 title: "fixed expense - Financial Glossary"
 description: "What fixed expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/gasto-fixo.webp"
+imageAlt: "Gold coins in stacks, a golden stand, and a glass jar with a green sprout on a dark surface."
 category: "basico"
 tags: ["fixed expense", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

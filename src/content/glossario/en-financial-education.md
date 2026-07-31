@@ -1,6 +1,7 @@
 ---
 term: "Financial Education"
 image: "/images/glossario/en-educacao-financeira.webp"
+imageAlt: "Gold coins, rising chart arrow, jar with plant, and scale on dark background"
 definition: "The set of knowledge and skills that help you make better decisions about money, spending, saving, and investing."
 category: "basico"
 locale: "en"

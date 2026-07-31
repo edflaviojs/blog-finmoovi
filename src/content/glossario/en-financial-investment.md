@@ -4,6 +4,7 @@ definition: "Understand what aplicação is, how it works, advantages, risks and
 title: "financial investment - Financial Glossary"
 description: "Understand what aplicação is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/aplicacao.webp"
+imageAlt: "Gold coins stacked and in glass containers with green plants growing, dark background."
 category: "basico"
 tags: ["financial investment", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

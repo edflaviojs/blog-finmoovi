@@ -4,6 +4,7 @@ definition: "Understand what taxa is, how it works, advantages, risks and practi
 title: "financial fee - Financial Glossary"
 description: "Understand what taxa is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/taxa.webp"
+imageAlt: "Gold coins, upward arrow, and jars with plants on dark background."
 category: "basico"
 tags: ["financial fee", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

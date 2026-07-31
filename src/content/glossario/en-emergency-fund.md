@@ -1,6 +1,7 @@
 ---
 term: "Emergency Fund"
 image: "/images/glossario/en-reserva-de-emergencia.webp"
+imageAlt: "Gold coins and glass jars with green plants on dark surface."
 definition: "Money set aside to cover unexpected expenses or income loss. Ideally 3 to 6 months of essential expenses."
 category: "basico"
 locale: "en"

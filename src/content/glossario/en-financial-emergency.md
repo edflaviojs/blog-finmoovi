@@ -1,6 +1,7 @@
 ---
 term: "Financial Emergency"
 image: "/images/glossario/en-urgencia-financeira.webp"
+imageAlt: "Stacks of gold coins and a glass jar with a green plant sprout."
 definition: "An unexpected situation that requires immediate use of financial resources, such as medical emergencies or job loss."
 category: "basico"
 locale: "en"

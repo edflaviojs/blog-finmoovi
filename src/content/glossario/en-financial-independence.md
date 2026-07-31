@@ -1,6 +1,7 @@
 ---
 term: "Financial Independence"
 image: "/images/glossario/en-independencia-financeira.webp"
+imageAlt: "Golden coins stacked in ascending order beside a jar with a growing plant."
 definition: "The state where your passive income covers all your living expenses without needing to work."
 category: "basico"
 locale: "en"

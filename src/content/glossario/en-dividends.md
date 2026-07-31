@@ -1,6 +1,7 @@
 ---
 term: "Dividends"
 image: "/images/glossario/en-dividendos.webp"
+imageAlt: "Gold coins, piggy bank in jar with plant, dark background."
 definition: "A portion of a company's profits distributed to shareholders. A form of passive income from stock investments."
 category: "investimentos"
 locale: "en"

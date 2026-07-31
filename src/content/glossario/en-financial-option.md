@@ -4,6 +4,7 @@ definition: "Understand what opcão is, how it works, advantages, risks and prac
 title: "financial option - Financial Glossary"
 description: "Understand what opcão is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/opcao.webp"
+imageAlt: "Gold coins and green plants arranged on a dark blue surface."
 category: "basico"
 tags: ["financial option", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

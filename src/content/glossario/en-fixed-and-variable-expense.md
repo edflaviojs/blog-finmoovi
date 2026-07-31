@@ -4,6 +4,7 @@ definition: "What fixed and variable expense is and how it shows up in your ever
 title: "fixed and variable expense - Financial Glossary"
 description: "What fixed and variable expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/gasto-fixo-e-variavel.webp"
+imageAlt: "Gold coin stacks rise, topped with arrow, beside glass jar with plant."
 category: "basico"
 tags: ["fixed and variable expense", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

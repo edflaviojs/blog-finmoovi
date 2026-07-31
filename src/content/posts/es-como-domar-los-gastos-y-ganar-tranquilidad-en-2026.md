@@ -3,6 +3,7 @@ title: "Cómo domar los gastos y ganar tranquilidad en 2026"
 description: "Descubre estrategias simples para controlar tus gastos, usar FinMoovi y hacer tu día a día financiero más ligero y organizado."
 tickerHeadline: "El detalle que hace rendir tu dinero"
 image: "/images/posts/como-domar-os-gastos-e-ganhar-tranquilidade-em-2026.webp"
+imageAlt: "Cuaderno marrón, monedas, calculadoras y planta verde sobre superficie blanca."
 category: "dicas"
 locale: "es"
 tags: ["controlar gastos personales","finanzas personales","economía","dinero"]
