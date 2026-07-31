@@ -155,14 +155,14 @@ Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moe
 - Números por extenso na fala ("cem reais", "trinta por cento") — nunca símbolos.
 - Diga a unidade na PRIMEIRA menção: "aos vinte e cinco anos… aos trinta e cinco".
 - Diga "vídeo", nunca "Short".
-- Diga o bordão UMA vez, encaixado: "${BORDAO}"
+- OBRIGATÓRIO: diga o bordão do canal UMA vez, encaixado numa frase (sem ele o roteiro é rejeitado): "${BORDAO}"
 - ⛔ NUNCA mande clicar em link ("link na descrição/bio/aqui embaixo"). Em vídeo vertical o link não é clicável — por isso o convite é o comentário.
 - ⛔ NUNCA use asteriscos, travessões ou qualquer marcação. Só texto limpo.
 
 Responda APENAS com JSON válido, sem markdown:
 {
   "fioCondutor": "<uma das imagens permitidas>",
-  "perguntaAberta": "<a dúvida crua que o vídeo segura, MAIÚSCULAS, até 26 caracteres. É a pergunta que fica na TELA, não o título: NÃO repita o nome do tema, não abrevie nem corte palavras. Ex.: 'QUANTO RENDE MESMO?', 'PRA ONDE FOI?', 'VALE A PENA ESPERAR?'>",
+  "perguntaAberta": "<a dúvida crua que o vídeo segura, MAIÚSCULAS, até 26 caracteres, SEMPRE na 3ª pessoa (é a dúvida de quem assiste, nunca sua: escreva RENDE, não RENDI). É a pergunta que fica na TELA, não o título: NÃO repita o nome do tema, não abrevie nem corte palavras. Ex.: 'QUANTO RENDE MESMO?', 'PRA ONDE FOI?', 'VALE A PENA ESPERAR?'>",
   "numerosCitados": [<todos os valores de DINHEIRO que você disse, em algarismos, ex: 2699>],
   "blocos": [
     { "papel": "gancho",       "fala": "..." },
@@ -237,7 +237,15 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     erros.push('a fala manda clicar em link — em vídeo vertical o link não é clicável; o convite é o comentário');
   }
   if (!/finmoovi/i.test(blocos[4]?.fala || '')) erros.push('o bloco "convite" não pede o comentário com a palavra FINMOOVI');
-  if (!falaToda.toLowerCase().includes(BORDAO.toLowerCase().slice(0, 24))) avisos.push('o bordão do canal não aparece');
+  // BORDÃO — passa de aviso a ERRO (31/07/2026). O prompt manda dizê-lo uma vez e
+  // nada cobrava: no 4º teste ele simplesmente sumiu. É o mesmo padrão que este
+  // repositório já pagou caro — o prompt pede, nada pune, o modelo ignora.
+  // A busca é por uma âncora SEM acento e em minúsculas: comparar a frase inteira
+  // com acentuação daria falso negativo à primeira variação de pontuação.
+  const semAcento = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  if (!semAcento(falaToda).includes(semAcento('dinheiro sem controle'))) {
+    erros.push(`o bordão do canal não foi dito — encaixe uma vez: "${BORDAO}"`);
+  }
 
   // NÚMEROS INVENTADOS — o defeito mais perigoso dos dois primeiros testes: o mesmo
   // cálculo saiu R$ 2.725/R$ 2.540 numa vez e R$ 2.740/R$ 2.630 noutra, mais uma
@@ -327,6 +335,13 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     const repetidas = palavrasDoTema.filter((w) => pergNorm.includes(w));
     if (repetidas.length >= 2) {
       erros.push(`"perguntaAberta" repete o tema ("${repetidas.slice(0, 2).join(' ')}") — ela é a DÚVIDA crua, não o título (ex.: "QUANTO RENDE MESMO?")`);
+    }
+    // 1ª PESSOA NA PERGUNTA DA TELA. No 4º teste saiu "QUANTO RENDI DE VERDADE?" —
+    // "rendi" é passado, 1ª pessoa, e foi parar na TELA com erro de português. A
+    // pergunta é a dúvida de QUEM ASSISTE, então nunca está na 1ª pessoa.
+    const primeiraPessoa = pergNorm.match(/\b(rendi|ganhei|perdi|investi|guardei|paguei|juntei|gastei|economizei|comprei)\b/);
+    if (primeiraPessoa) {
+      erros.push(`"perguntaAberta" usa "${primeiraPessoa[0]}" (1ª pessoa do passado) — a pergunta é a dúvida de QUEM ASSISTE. Use a 3ª pessoa: "QUANTO RENDE MESMO?"`);
     }
   }
 
