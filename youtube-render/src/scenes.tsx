@@ -684,7 +684,7 @@ const SceneTitle: React.FC<{ scene: Scene }> = ({ scene }) => {
   );
 };
 
-// CTA chamativa: título + linha "Link na descrição" + seta descendo animada.
+// CTA chamativa: título + linha "Comenta FINMOOVI" + seta descendo animada.
 const SceneCta: React.FC<{ scene: Scene }> = ({ scene }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -701,7 +701,7 @@ const SceneCta: React.FC<{ scene: Scene }> = ({ scene }) => {
         padding: '18px 34px', borderRadius: 999, border: `3px solid ${BRAND.cyan}`,
         background: 'rgba(34,211,238,0.10)', fontFamily: BODY, fontWeight: 800, fontSize: 46, color: BRAND.text,
       }}>
-        Link na descrição
+        Comenta FINMOOVI
       </div>
       <div style={{ marginTop: 20 + bounce, display: 'flex', justifyContent: 'center' }}>
         <svg width="90" height="90" viewBox="0 0 100 100" fill="none">
@@ -952,7 +952,7 @@ function shotStartFrames(scene: Scene, timing: SceneTiming | null | undefined, f
  *
  * Correção aqui, no RENDER, e não no prompt: vale para todo roteiro já existente e
  * não depende de a IA acertar. O shot curto é ANTECIPADO (entra antes) em vez de
- * descartado — sumir com a chamada "link na descrição" seria pior que mostrá-la
+ * descartado — sumir com a chamada para comentar seria pior que mostrá-la
  * cedo demais. Ele nunca é antecipado às custas do piso do shot anterior, e o
  * `app` mantém o seu piso de 2,5s, que é regra do dono.
  * Efeito colateral aceito: o shot anterior encurta um pouco (na CTA do fixture, o
@@ -960,7 +960,7 @@ function shotStartFrames(scene: Scene, timing: SceneTiming | null | undefined, f
  */
 const SHOT_MIN_LIFE_SEC = 1.2;
 const APP_MIN_LIFE_SEC = 2.5; // espelha APP_FLOOR_SEC de schema-short.js
-// A pílula "Link na descrição" é a CHAMADA PARA AÇÃO do vídeo — o único momento que
+// A pílula "Comenta FINMOOVI" é a CHAMADA PARA AÇÃO do vídeo — o único momento que
 // pede um gesto do espectador. Com o piso comum (1,2s) ela ainda ficava menos tempo
 // no ar que ícones decorativos da cena seguinte, o que o dono apontou em 31/07 como
 // inversão de prioridade. Ganha piso próprio, o maior depois do `app`.
@@ -1152,7 +1152,7 @@ const BUBBLE_POP_FRAC = 0.72;
 export const bubblePopOffset = (life: number) => Math.round(life * BUBBLE_POP_FRAC);
 
 // metáfora 'clique-link': uma mãozinha (cursor 👆 em SVG nativo, cores da marca)
-// viaja numa curva até a pílula "Link na descrição", PRESSIONA (pílula afunda +
+// viaja numa curva até a pílula "Comenta FINMOOVI", PRESSIONA (pílula afunda +
 // flash) no frame do 'click'. O som é agendado no MESMO frame (ver ShotSfxTrack).
 const MetaClickLink: React.FC<{ life: number }> = ({ life }) => {
   const frame = useCurrentFrame();
@@ -1179,7 +1179,7 @@ const MetaClickLink: React.FC<{ life: number }> = ({ life }) => {
   const flash = frame >= press ? interpolate(frame, [press, press + 2, press + 10], [0, 0.5, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) : 0;
   return (
     <div style={{ position: 'relative', width: W, height: H }}>
-      {/* pílula "Link na descrição" (mesmo estilo da CTA) */}
+      {/* pílula "Comenta FINMOOVI" (mesmo estilo da CTA) */}
       <div style={{
         position: 'absolute', left: 0, right: 0, top: 168, display: 'flex', justifyContent: 'center',
       }}>
@@ -1192,7 +1192,7 @@ const MetaClickLink: React.FC<{ life: number }> = ({ life }) => {
           boxShadow: pillGlow > 0 ? `0 0 ${Math.round(pillGlow * 46)}px rgba(34,211,238,${pillGlow * 0.7})` : '0 8px 30px rgba(0,0,0,0.35)',
         }}>
           <FinMooviIcon size={44} idSuffix="clk" />
-          Link na descrição
+          Comenta FINMOOVI
         </div>
       </div>
       {/* anel de clique + mãozinha */}
