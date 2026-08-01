@@ -369,8 +369,9 @@ Repare no que esse exemplo faz, porque é isso que se pede a você:
    ⛔ **NÃO termine com outra pergunta.** O fecho é quem responde, não quem pergunta.
    ✗ "…e quando você corta, os quinhentos reais voltam pra você. E agora?" (foi ao ar; o dono: *"o que é 'e agora'???"*)
    ✓ "…quem tira a pedra da mochila anda leve o mês inteiro."
-   ⛔ **O FECHO NÃO FALA DO CANAL.** Nada de blog, comentário, link, canal ou inscrição neste bloco — isso já foi pedido no bloco 5, e repetir aqui rouba o lugar da resposta. O computador confere.
+   ⛔ **O FECHO NÃO CITA FONTE NENHUMA.** Nada de blog, app, FinMoovi, comentário, link, canal ou inscrição neste bloco. O app é do bloco 4, o comentário é do bloco 5; aqui só cabe a RESPOSTA, a imagem e a assinatura. O computador confere.
    ✗ "O blog mostra que o mínimo é o que mais pesa." (foi ao ar e o dono reprovou)
+   ✗ "O app mostra que a pedra que pesa mais é…" (a mesma coisa com outra palavra)
    ✗ "Depois de comentar você vai ver que…" (pega no convite em vez da história)
    ✓ "O que mais pesa é o mínimo, aquele que parece pequeno e prende o seu pé."
    É AQUI, e só aqui, que entra o bordão do canal — como assinatura, na última frase.
@@ -381,8 +382,8 @@ Escolha entre: ${menuDeImagens}.
 Escolha a que COMBINA com este tema — a imagem existe para explicar, não para enfeitar. Se ela não explicar nada aqui, é a imagem errada.
 ⚠️ A imagem tem de ser DITA NA FALA, com as palavras dela (as que estão entre parênteses acima), **no BLOCO 1 obrigatoriamente e em pelo menos DOIS blocos ao todo**. Preencher o campo "fioCondutor" e não falar da imagem em lugar nenhum NÃO conta: o campo fica cheio e o vídeo fica sem fio.
 ⛔ **Se a imagem só entrar a meio do vídeo, a primeira metade fica sem sentido** — foi o defeito que o dono apanhou: *"ele vai falar da pedra na mochila somente na metade do vídeo, sem conexão nenhuma com aquilo que foi dito até agora"*. Ela abre o vídeo.
-   A MECÂNICA — o exemplo abaixo usa DE PROPÓSITO uma imagem que NÃO está na lista, para você ver só a forma. ⛔ Nunca a use: se ela aparecer no seu texto, o roteiro é rejeitado.
-      bloco 1: "é uma pedra pequena na mochila…" → bloco 3: "e a mochila já pesa em cada passo" → bloco 6: "quem tira a pedra anda mais rápido".
+   A MECÂNICA — o exemplo abaixo usa DE PROPÓSITO o **pneu murcho**, a MESMA imagem proibida do vídeo-exemplo lá em cima, para você ver só a forma. ⛔ Nunca a use, e nunca reaproveite estas frases: o computador confere.
+      bloco 1: "${MECANICA_DO_FIO[0]}…" → bloco 3: "${MECANICA_DO_FIO[1]}" → bloco 6: "${MECANICA_DO_FIO[2]}".
    Repare: é a MESMA imagem nos três, e ela CRESCE. Faça exatamente isto — com a sua imagem, e com as SUAS palavras.
 ⛔ PROIBIDAS (já usadas nos vídeos recentes): ${bloqueadas}${evitarFrases}
 
@@ -488,9 +489,35 @@ const EXEMPLO_DE_FORMA = [
  * · O bordão sai pela mesma razão: é obrigatório dizê-lo, à letra.
  * Sobra a ESCRITA — que é o que tem de ser original em cada vídeo.
  */
+/**
+ * OS TRÊS DEGRAUS DA IMAGEM — e a armadilha que eles eram até 02/08/2026.
+ *
+ * MEDIDO numa geração real de hoje: o fecho saiu *"Quem tira a pedra da mochila anda
+ * mais rápido"* — que era, à letra, o 3º degrau do exemplo que o prompt dava.
+ *
+ * E a causa é pior do que uma cópia. O exemplo dizia de si próprio: *"usa DE PROPÓSITO
+ * uma imagem que NÃO está na lista"* — e a imagem que usava era a **pedra na mochila**,
+ * que ESTÁ no catálogo desde a ampliação para 32 imagens (leva 2, 31/07). Ninguém voltou
+ * a olhar para o exemplo depois de o catálogo crescer. Resultado: sempre que o tema é
+ * dívida, o filtro por família oferece `mochila-pedras` **e o prompt oferece as frases
+ * prontas para ela** — nos três blocos.
+ *
+ * Duas correções, e as duas são precisas:
+ *  1. o exemplo passa a usar o **pneu murcho**, a mesma imagem já declarada proibida no
+ *     vídeo-exemplo. Assim há UMA imagem proibida em todo o prompt, e não duas histórias.
+ *  2. estas frases entram na comparação anti-cópia. Antes só o vídeo-exemplo era
+ *     policiado, e este ficava de fora — um exemplo copiável e sem sentinela.
+ */
+const MECANICA_DO_FIO = [
+  'é um furinho pequeno no pneu',
+  'e o pneu já vai murchando em cada quilômetro',
+  'quem tapa o furo volta a andar rápido',
+];
+
 const EXEMPLO_PARA_COMPARAR = [
   EXEMPLO_DE_FORMA[0], EXEMPLO_DE_FORMA[1], EXEMPLO_DE_FORMA[2], EXEMPLO_DE_FORMA[3],
   EXEMPLO_DE_FORMA[5].replace(BORDAO, ''),
+  ...MECANICA_DO_FIO,
 ].join(' ');
 
 /**
@@ -871,9 +898,31 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   // A busca é por uma âncora SEM acento e em minúsculas: comparar a frase inteira
   // com acentuação daria falso negativo à primeira variação de pontuação.
   const semAcento = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-  if (!semAcento(falaToda).includes(semAcento('dinheiro sem controle'))) {
-    erros.push(`o bordão do canal não foi dito — encaixe uma vez: "${BORDAO}"`);
-  } else if (!semAcento(blocos[5]?.fala || '').includes(semAcento('dinheiro sem controle'))) {
+  /**
+   * ⚠️ O BORDÃO PASSA A SER CONFERIDO INTEIRO (02/08/2026) — e a causa foi medida.
+   *
+   * A âncora acima eram só as três primeiras palavras. MEDIDO numa geração real de hoje:
+   * saiu *"Dinheiro sem controle ACABA INDO PARA O OUTRO LADO"* — o segundo leitor
+   * reescreveu a assinatura do canal, que ele está EXPRESSAMENTE proibido de tocar, e
+   * a verificação deixou passar porque a âncora curta continuava lá.
+   * A assinatura é o único texto do canal que não pode variar: ou é ele, ou não é.
+   *
+   * Compara-se por PALAVRAS (sem acentos, sem pontuação, sem espaços a mais): assim uma
+   * vírgula a mais ou o ponto final em falta não dão falso alarme, mas trocar uma palavra
+   * dá — que é exatamente o que se quer apanhar.
+   */
+  const soPalavras = (s) => semAcento(s).replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
+  const BORDAO_EM_PALAVRAS = soPalavras(BORDAO);
+  const ancoraCurta = semAcento('dinheiro sem controle');
+  if (!soPalavras(falaToda).includes(BORDAO_EM_PALAVRAS)) {
+    erros.push(
+      semAcento(falaToda).includes(ancoraCurta)
+        // ele TENTOU dizer o bordão e mudou-o: o aviso tem de dizer isso, senão o modelo
+        // acha que basta acrescentar outro e passa a haver dois.
+        ? `o bordão do canal foi ALTERADO — ele não se reescreve, diz-se à letra, exatamente assim: "${BORDAO}"`
+        : `o bordão do canal não foi dito — encaixe uma vez, à letra: "${BORDAO}"`,
+    );
+  } else if (!soPalavras(blocos[5]?.fala || '').includes(BORDAO_EM_PALAVRAS)) {
     // O BORDÃO SÓ NO FIM (decisão do dono, 01/08/2026).
     // Ele estava obrigatório em QUALQUER sítio e caiu no bloco 2, no meio da
     // história: *"essa frase fica muito sem sentido aí no meio… está mais
@@ -896,12 +945,19 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
    * ⚠️ Não colide com o bordão ("dinheiro sem controle é dinheiro dos outros") nem com o
    * nome FINMOOVI, que é exigido no bloco 5 e não aqui.
    */
+  /**
+   * ⚠️ ALARGADO EM 02/08/2026, no mesmo dia em que nasceu. A 1ª versão barrava blog,
+   * comentário, link, canal e inscrição — e a geração seguinte abriu o fecho com
+   * *"O app mostra que…"*. É a MESMA doença com outra palavra: o fecho a citar uma
+   * fonte em vez de responder. O app tem o bloco 4 e o convite tem o 5; o 6 é a
+   * resposta, a imagem e a assinatura. Mais nada.
+   */
   const intrusoNoFecho = String(blocos[5]?.fala || '')
-    .match(/\b(blogs?|coment\p{L}*|links?|canal|canais|inscri\p{L}*|inscrev\p{L}*)\b/iu);
+    .match(/\b(blogs?|coment\p{L}*|links?|canal|canais|inscri\p{L}*|inscrev\p{L}*|finmoovi|apps?|aplicativos?)\b/iu);
   if (intrusoNoFecho) {
     erros.push(
       `o bloco "fecho" fala de "${intrusoNoFecho[0]}" — o fecho responde à pergunta do bloco 1 e fecha a imagem. `
-      + 'O pedido de comentário já foi feito no bloco 5; repeti-lo aqui rouba o lugar da resposta.',
+      + 'O app é do bloco 4 e o pedido de comentário é do bloco 5; repetir aqui rouba o lugar da resposta.',
     );
   }
 

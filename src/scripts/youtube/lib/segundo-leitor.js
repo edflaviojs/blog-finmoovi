@@ -27,6 +27,11 @@
 
 import { generateText } from '../../apis/kie-ai.js';
 import { PERSONA, VICIOS, O_QUE_PRESERVAR } from './voz-do-canal.js';
+// ⚠️ O bordão VAI ESCRITO no prompt do leitor desde 02/08/2026. Antes dizia-se-lhe
+// "não mexa no bordão" sem nunca lhe dizer QUAL era a frase — e ele reescreveu-a
+// ("Dinheiro sem controle acaba indo para o outro lado"). Não se pede a alguém que
+// preserve à letra uma frase que não lhe foi mostrada.
+import { BORDAO } from './schema-short.js';
 
 const ORDEM = ['gancho', 'empatia', 'virada', 'demonstracao', 'convite', 'fecho'];
 
@@ -57,7 +62,8 @@ ${O_QUE_PRESERVAR}
 ════════ AS SUAS ALGEMAS — leia duas vezes ════════
 ⛔ NÃO invente factos, números, valores ou promessas. Nenhum número novo. Nenhum número alterado.
 ⛔ NÃO troque a imagem do vídeo por outra, nem a tire de onde ela está.
-⛔ NÃO mexa na frase do bordão do canal, nem a mude de sítio.
+⛔ NÃO mexa no BORDÃO DO CANAL, nem o mude de sítio. É esta frase, e vai copiada à letra, palavra por palavra: "${BORDAO}"
+   Não é uma frase para melhorar — é a assinatura do canal, igual em todos os vídeos. Reescrevê-la reprova a sua versão inteira.
 ⛔ NÃO mexa na palavra FINMOOVI nem no pedido de comentário.
 ⛔ NÃO acrescente nem tire blocos: são seis, na mesma ordem, com os mesmos papéis.
 ⛔ Mantenha o tamanho parecido — no máximo mais 5% de palavras que o original.
