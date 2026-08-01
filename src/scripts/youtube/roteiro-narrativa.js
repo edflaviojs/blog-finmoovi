@@ -302,6 +302,12 @@ O vídeo é UMA fala contínua, não uma lista de frases bonitas. **As PRIMEIRAS
    bloco 2: "O vilão escondido é a correria: você esquece de olhar a fatura e o dinheiro some."
    Por quê: abre com "o vilão", que é a palavra que ficou no ar. Quem ouve não consegue sair no meio.
 
+⛔ **RETOMAR NÃO É ECOAR.** Não abra um bloco repetindo a última palavra do anterior como pergunta solta. Isso cumpre a forma e mata a fala.
+   ✗ "…faz a dívida crescer." → "Crescer assim? No FinMoovi…"
+   ✗ "…a dica completa."      → "Completa? O que pesa mais…"
+   ✓ "…faz a dívida crescer." → "E é aí que ela cresce sem você ver: no FinMoovi…"
+   Toda abertura de bloco é uma FRASE INTEIRA, com sujeito e verbo. Nunca uma palavra com ponto de interrogação.
+
 ⛔ NENHUMA PALAVRA NOVA SEM PREPARAÇÃO. Não introduza um assunto que ninguém apresentou.
    ✗ "Mas não é o JUROS que te aprisiona…" — juros nunca tinha sido mencionado, cai do céu.
    ✗ "…é o PAGAMENTO MÍNIMO" dito só no último bloco, sem nunca ter aparecido antes.
@@ -746,6 +752,34 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
       .filter((p) => p.length >= 4 && !VAZIAS_DE_ASSUNTO.has(p))
       .map((p) => p.replace(/s$/, '')), // singular/plural contam como a mesma palavra
   );
+  /**
+   * ⚠️ A COLA ROBÓTICA — o tiro pela culatra da regra acima, apanhado no MESMO dia
+   * em que a instalei (01/08/2026).
+   *
+   * Bastava partilhar uma palavra com o bloco anterior. O modelo descobriu o atalho
+   * e passou a abrir os blocos ECOANDO a última palavra como pergunta solta:
+   *   "…faz a dívida crescer." → "**Crescer assim?** No FinMoovi…"
+   *   "…quinhentos reais."     → "**Reais que somem?** Quer descobrir…"
+   *   "…a dica completa."      → "**Completa?** O que pesa mais…"
+   * Cumpre a trava e destrói a fala — exatamente o que eu tinha escrito no
+   * comentário desta regra que NÃO podia acontecer.
+   *
+   * O conserto é medir se a abertura é uma FRASE ou um eco: uma frase de verdade
+   * tem sujeito e verbo e não cabe em quatro palavras.
+   */
+  const primeiraFrase = (texto) => String(texto || '').trim().split(/(?<=[.!?…])\s+/)[0] || '';
+  for (let i = 0; i < blocos.length; i++) {
+    const abertura = primeiraFrase(blocos[i]?.fala);
+    const nPalavras = abertura.split(/\s+/).filter(Boolean).length;
+    if (nPalavras && nPalavras < 5) {
+      erros.push(
+        `o bloco ${i + 1} (${PAPEIS[i]}) abre com "${abertura}" — ${nPalavras} palavras não são uma frase, são um eco. `
+        + 'Não retome o bloco anterior repetindo a última palavra dele como pergunta solta; retome com uma frase inteira, '
+        + 'como alguém a falar (✗ "Completa?" · ✓ "E essa dica completa é simples:").',
+      );
+    }
+  }
+
   for (let i = 1; i < blocos.length; i++) {
     const antes = assuntoDe(blocos[i - 1]?.fala || '');
     const agora = assuntoDe(blocos[i]?.fala || '');
