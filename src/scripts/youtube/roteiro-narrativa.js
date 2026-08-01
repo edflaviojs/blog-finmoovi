@@ -264,9 +264,24 @@ Estes valores foram calculados por computador com as taxas oficiais do Banco Cen
 ` : `
 ⛔ NÚMEROS: só pode citar números que apareçam no MATERIAL DE APOIO acima. Não invente valores, taxas ou rendimentos — este canal não tem como conferir o que você inventar, e um número errado no ar é pior do que nenhum número.
 `}
-════════ A REGRA MAIOR — CADA FRASE PRECISA DA ANTERIOR ════════
-O vídeo é UMA fala contínua, não uma lista de frases bonitas. Cada bloco CONTINUA o anterior e prepara o seguinte.
-TESTE OBRIGATÓRIO: leia um bloco sem ler o anterior. Se ele fizer sentido sozinho, está SOLTO — reescreva até depender do anterior.
+════════ A REGRA MAIOR — CADA BLOCO ABRE PEGANDO NO ANTERIOR ════════
+O vídeo é UMA fala contínua, não uma lista de frases bonitas. **As PRIMEIRAS PALAVRAS de cada bloco têm de agarrar aquilo que o bloco anterior acabou de dizer.**
+
+✗ SOLTO (foi ao ar e o dono reprovou):
+   bloco 1: "…tiram quinhentos reais do seu bolso todo mês. Qual será o maior vilão?"
+   bloco 2: "Na correria, a gente esquece de olhar a fatura e o dinheiro some."
+   Por quê: o bloco 1 pergunta quem é o vilão e o bloco 2 ignora a pergunta e começa um assunto novo. Duas frases que não se conhecem.
+
+✓ ENCADEADO (a mesma ideia, agora presa à anterior):
+   bloco 2: "O vilão escondido é a correria: você esquece de olhar a fatura e o dinheiro some."
+   Por quê: abre com "o vilão", que é a palavra que ficou no ar. Quem ouve não consegue sair no meio.
+
+⛔ NENHUMA PALAVRA NOVA SEM PREPARAÇÃO. Não introduza um assunto que ninguém apresentou.
+   ✗ "Mas não é o JUROS que te aprisiona…" — juros nunca tinha sido mencionado, cai do céu.
+   ✗ "…é o PAGAMENTO MÍNIMO" dito só no último bloco, sem nunca ter aparecido antes.
+   Se precisa de um conceito novo, apresente-o na frase em que ele entra.
+
+TESTE OBRIGATÓRIO: tape o bloco anterior e leia só este. Se ele fizer sentido sozinho, está SOLTO — reescreva até ele DEPENDER do anterior.
 
 ✗ ERRADO (foi ao ar e ninguém entendeu):
    "Tesouro Direto com 100 reais, vale a pena? Se liga no que eu descobri: 100 reais todo mês, 24 vezes. É como uma pequena avalanche. Qual rendimento?"
@@ -277,7 +292,8 @@ TESTE OBRIGATÓRIO: leia um bloco sem ler o anterior. Se ele fizer sentido sozin
    Por quê: a 2ª frase responde à 1ª, a 3ª explica a 2ª. Ninguém consegue sair no meio.
 
 ════════ A ESPINHA (6 blocos, nesta ordem) ════════
-1. GANCHO (~6s): a dor ou o número que choca, JÁ dizendo "${t.term}". Termine deixando uma pergunta no ar — e NÃO responda.
+1. GANCHO (~6s): a dor ou o número que choca, JÁ dizendo "${t.term}" **e JÁ com a imagem do vídeo na primeira frase**. Termine deixando uma pergunta no ar — e NÃO responda.
+   Molde do arranque: "<a imagem> faz você <a dor, com o número> sem perceber. <pergunta que fica no ar>"
 2. EMPATIA (~9s): por que isso acontece com gente normal (correria, cansaço, ninguém ensinou). Sem culpar quem assiste.
 3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é A e você mostra que é B — "não é o [A] que te quebra… é o [B] que ninguém soma".
    ⛔ TERMINE NA TENSÃO. Depois de virar, NÃO explique. Explicação depois da virada mata a virada.
@@ -290,13 +306,18 @@ TESTE OBRIGATÓRIO: leia um bloco sem ler o anterior. Se ele fizer sentido sozin
    ✗ "Cem reais dão dois mil seiscentos e noventa e nove; na poupança dá dois mil seiscentos e doze. A diferença são oitenta e seis. No FinMoovi basta abrir a calculadora." (três números empilhados e o app no fim, como enfeite)
    ✓ "Eu joguei isso na calculadora do FinMoovi e ela me mostrou uma diferença de oitenta e seis reais. Só de escolher onde deixar o dinheiro."
 5. O CONVITE (~6s): peça o COMENTÁRIO com a palavra FINMOOVI, prometendo o que vai mandar. Molde a adaptar: "quer <o que resolve neste tema>? comenta FINMOOVI aqui que eu te mando."
-6. O FECHO (~8s): responda (ou vire do avesso) a pergunta do bloco 1 e termine com uma provocação. Sem "tchau", sem "até a próxima".
+6. O FECHO (~8s): RESPONDA, com todas as letras, a pergunta que ficou no ar no bloco 1, e feche a imagem do vídeo. Sem "tchau", sem "até a próxima".
+   ⛔ **NÃO termine com outra pergunta.** O fecho é quem responde, não quem pergunta.
+   ✗ "…e quando você corta, os quinhentos reais voltam pra você. E agora?" (foi ao ar; o dono: *"o que é 'e agora'???"*)
+   ✓ "…quem tira a pedra da mochila anda leve o mês inteiro."
+   É AQUI, e só aqui, que entra o bordão do canal — como assinatura, na última frase.
 
 ════════ O FIO CONDUTOR ════════
 Escolha UMA imagem física para o vídeo inteiro e faça-a CRESCER: pequena no bloco 1, forte no 3, paga no 6. É a mesma imagem sempre — nunca troque no meio.
 Escolha entre: ${menuDeImagens}.
 Escolha a que COMBINA com este tema — a imagem existe para explicar, não para enfeitar. Se ela não explicar nada aqui, é a imagem errada.
-⚠️ A imagem tem de ser DITA NA FALA, com as palavras dela (as que estão entre parênteses acima), em pelo menos DOIS blocos. Preencher o campo "fioCondutor" e não falar da imagem em lugar nenhum NÃO conta: o campo fica cheio e o vídeo fica sem fio.
+⚠️ A imagem tem de ser DITA NA FALA, com as palavras dela (as que estão entre parênteses acima), **no BLOCO 1 obrigatoriamente e em pelo menos TRÊS blocos ao todo**. Preencher o campo "fioCondutor" e não falar da imagem em lugar nenhum NÃO conta: o campo fica cheio e o vídeo fica sem fio.
+⛔ **Se a imagem só entrar a meio do vídeo, a primeira metade fica sem sentido** — foi o defeito que o dono apanhou: *"ele vai falar da pedra na mochila somente na metade do vídeo, sem conexão nenhuma com aquilo que foi dito até agora"*. Ela abre o vídeo.
    A MECÂNICA — o exemplo abaixo usa DE PROPÓSITO uma imagem que NÃO está na lista, para você ver só a forma. ⛔ Nunca a use: se ela aparecer no seu texto, o roteiro é rejeitado.
       bloco 1: "é uma pedra pequena na mochila…" → bloco 3: "e a mochila já pesa em cada passo" → bloco 6: "quem tira a pedra anda mais rápido".
    Repare: é a MESMA imagem nos três, e ela CRESCE. Faça exatamente isto — com a sua imagem, e com as SUAS palavras.
@@ -336,7 +357,8 @@ Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moe
 - Números por extenso na fala ("cem reais", "trinta por cento") — nunca símbolos.
 - Diga a unidade na PRIMEIRA menção: "aos vinte e cinco anos… aos trinta e cinco".
 - Diga "vídeo", nunca "Short".
-- OBRIGATÓRIO: diga o bordão do canal UMA vez, encaixado numa frase (sem ele o roteiro é rejeitado): "${BORDAO}"
+- OBRIGATÓRIO: diga o bordão do canal UMA vez, **e SÓ no bloco 6 (o fecho)**, como assinatura: "${BORDAO}"
+  ⛔ No meio da história ele parte a corrente — o dono reprovou exatamente isso: *"fica muito sem sentido aí no meio, está mais atrapalhando do que ajudando"*.
 - ⛔ NUNCA mande clicar em link ("link na descrição/bio/aqui embaixo"). Em vídeo vertical o link não é clicável — por isso o convite é o comentário.
 - ⛔ NUNCA use asteriscos, travessões ou qualquer marcação. Só texto limpo.
 
@@ -653,6 +675,67 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   const semAcento = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   if (!semAcento(falaToda).includes(semAcento('dinheiro sem controle'))) {
     erros.push(`o bordão do canal não foi dito — encaixe uma vez: "${BORDAO}"`);
+  } else if (!semAcento(blocos[5]?.fala || '').includes(semAcento('dinheiro sem controle'))) {
+    // O BORDÃO SÓ NO FIM (decisão do dono, 01/08/2026).
+    // Ele estava obrigatório em QUALQUER sítio e caiu no bloco 2, no meio da
+    // história: *"essa frase fica muito sem sentido aí no meio… está mais
+    // atrapalhando do que ajudando"*. Um bordão fecha, não interrompe.
+    erros.push(`o bordão está no meio da história — ele só pode aparecer no ÚLTIMO bloco (fecho), como assinatura: "${BORDAO}"`);
+  }
+
+  /**
+   * A CORRENTE — cada bloco tem de PEGAR no anterior (defeito nº1 de 01/08/2026).
+   *
+   * O dono, depois de ouvir o vídeo: *"aqui já ficou meio estranho, ficou quase que
+   * uma frase solta, ela não tem conexão com a frase anterior"*. E deu a correção:
+   * o bloco 1 acaba a perguntar quem é o vilão, logo o bloco 2 tem de ABRIR com o
+   * vilão — *"tem continuação, tem sentido, não é uma frase sem nexo"*.
+   *
+   * ⚠️ POR QUE ESTA TRAVA E NÃO OUTRA. Sentido não se mede por código. O que se mede
+   * é se dois blocos seguidos falam sequer da MESMA COISA: uma continuação natural
+   * repete quase sempre um substantivo do que acabou de ser dito. Provado contra o
+   * caso real: o bloco 2 que o dono reprovou NÃO partilha uma única palavra com o
+   * bloco 1, e a reescrita que ele propôs ("O vilão escondido...") partilha "vilão".
+   *
+   * ⚠️ E O QUE ESTA TRAVA NÃO FAZ: não obriga a colar frases de ligação do género
+   * "e é aí que...". Isso daria cola robótica em todos os blocos, que é pior do que
+   * o defeito. A ligação verdadeira faz-se no prompt; isto é só a rede por baixo.
+   */
+  const VAZIAS_DE_ASSUNTO = new Set(['você', 'voce', 'para', 'como', 'quando', 'porque', 'porém', 'porem',
+    'mesmo', 'ainda', 'todo', 'toda', 'todos', 'todas', 'cada', 'mais', 'menos', 'muito', 'muita',
+    'isso', 'esse', 'essa', 'esses', 'essas', 'aquilo', 'aquele', 'aquela', 'sobre', 'entre',
+    'pode', 'podem', 'está', 'esta', 'estão', 'ser', 'tem', 'nem', 'sem', 'com', 'que', 'mas',
+    'agora', 'depois', 'antes', 'aqui', 'assim', 'sempre', 'nunca', 'nada', 'algo', 'coisa']);
+  const assuntoDe = (texto) => new Set(
+    semAcento(texto)
+      .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+      .split(/\s+/)
+      .filter((p) => p.length >= 4 && !VAZIAS_DE_ASSUNTO.has(p))
+      .map((p) => p.replace(/s$/, '')), // singular/plural contam como a mesma palavra
+  );
+  for (let i = 1; i < blocos.length; i++) {
+    const antes = assuntoDe(blocos[i - 1]?.fala || '');
+    const agora = assuntoDe(blocos[i]?.fala || '');
+    const comum = [...agora].filter((p) => antes.has(p));
+    if (!comum.length) {
+      erros.push(
+        `o bloco ${i + 1} (${PAPEIS[i]}) não pega em NADA do bloco ${i} (${PAPEIS[i - 1]}) — `
+        + 'é uma frase solta, não a continuação da história. Abra o bloco retomando aquilo '
+        + `que o anterior acabou de dizer (ex.: se o bloco ${i} termina a perguntar quem é o `
+        + 'vilão, comece por "o vilão escondido é...").',
+      );
+    }
+  }
+
+  /**
+   * O FECHO RESPONDE, NÃO PERGUNTA (defeito de 01/08/2026).
+   * O vídeo acabou em *"E agora?"* e o dono: *"o que é 'e agora'???"*. A instrução
+   * dizia "termine com uma provocação" e o modelo leu isso como FAZER OUTRA PERGUNTA.
+   * A instrução foi reescrita no MESMO passo que esta trava.
+   */
+  const fechoTexto = String(blocos[5]?.fala || '').trim();
+  if (/\?\s*$/.test(fechoTexto)) {
+    erros.push('o fecho acaba com uma PERGUNTA — ele é quem RESPONDE a pergunta do bloco 1, não quem faz outra. Termine numa afirmação.');
   }
 
   // NÚMEROS INVENTADOS — o defeito mais perigoso dos dois primeiros testes: o mesmo
@@ -737,14 +820,37 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   }
   else {
     const pistas = PALAVRAS_DO_FIO[fio] || [fio];
-    const blocosComFio = blocos.filter((b) => {
+    const temFio = (b) => {
       const f = String((b && b.fala) || '').toLowerCase();
       return pistas.some((p) => f.includes(p));
-    }).length;
+    };
+    const blocosComFio = blocos.filter(temFio).length;
     if (blocosComFio === 0) {
       erros.push(`o fio condutor "${fio}" foi declarado mas NÃO APARECE na fala — a imagem tem de ser DITA (ex.: ${pistas.slice(0, 3).join(', ')}…), não só escolhida`);
-    } else if (blocosComFio < 2) {
-      erros.push(`o fio condutor "${fio}" aparece em 1 bloco só — ele precisa CRESCER: pequeno no início, forte na virada, pago no fecho`);
+    } else {
+      /**
+       * A IMAGEM ENTRA LOGO NO BLOCO 1 — e isto é o defeito nº1 de 01/08/2026.
+       *
+       * A trava só exigia "2 blocos quaisquer". O texto do prompt pedia a imagem
+       * "pequena no bloco 1", mas nada verificava, então o modelo punha-a do bloco 3
+       * em diante e passava. O dono, ao ver o vídeo: *"ele vai falar da pedra na
+       * mochila somente na metade do vídeo, sem conexão nenhuma com aquilo que foi
+       * dito até agora"*. É o padrão crónico deste repositório — o prompt pede, nada
+       * pune, o modelo ignora.
+       *
+       * Palavras dele sobre o que quer no arranque: *"Pedras na mochila podem fazer
+       * você gastar R$ 500 todo mês sem perceber! Calma! Vou te explicar..."*
+       */
+      if (!temFio(blocos[0])) {
+        erros.push(
+          `o fio condutor "${fio}" não aparece no BLOCO 1 — a imagem tem de abrir o vídeo, `
+          + 'senão a história só começa a meio e a primeira metade fica sem sentido. '
+          + `Diga-a já na primeira frase (ex.: ${pistas.slice(0, 3).join(', ')}…).`,
+        );
+      }
+      if (blocosComFio < 3) {
+        erros.push(`o fio condutor "${fio}" aparece em ${blocosComFio} bloco(s) — ele precisa CRESCER ao longo do vídeo: pequeno no início, forte na virada, pago no fecho (mínimo 3 blocos)`);
+      }
     }
   }
 
@@ -773,19 +879,22 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     }
   }
 
-  // ENCADEAMENTO (o motivo deste ficheiro existir): heurística, por isso é AVISO.
-  // Um bloco que não retoma NENHUMA palavra de conteúdo do anterior é candidato a
-  // "solto". Não vira erro porque sinónimos e pronomes também encadeiam e a
-  // heurística não os vê — reprovar por isto queimaria tentativas à toa.
-  for (let i = 1; i < blocos.length; i++) {
-    const anterior = (blocos[i - 1]?.fala) || '';
-    const atual = (blocos[i]?.fala) || '';
-    if (!anterior || !atual) continue;
-    const compartilhado = longestSharedWordRun(anterior, atual, 1);
-    if (!compartilhado.length) {
-      avisos.push(`bloco ${i + 1} ("${PAPEIS[i]}") não retoma nenhuma palavra do anterior — verifique se não ficou solto`);
-    }
-  }
+  /**
+   * ⚠️ AQUI ESTAVA UM AVISO DE ENCADEAMENTO QUE NUNCA DISPAROU — e foi por isso que
+   * o vídeo de 01/08 saiu com blocos soltos sem ninguém dar por nada.
+   *
+   * Ele usava `longestSharedWordRun(anterior, atual, 1)`, ou seja bastava UMA palavra
+   * partilhada, incluindo "de", "o", "a", "que". Duas frases quaisquer de português
+   * partilham essas. Medido no caso real: o bloco 2 que o dono reprovou por estar
+   * *"solto, sem conexão com a frase anterior"* partilhava "de", "o" e "a" com o
+   * bloco 1 — e passava sem um único aviso.
+   *
+   * Duas correções, e a segunda é a que interessa:
+   *  1. só contam palavras de ASSUNTO (4+ letras, sem as vazias) — ver `assuntoDe`;
+   *  2. deixou de ser AVISO e passou a ERRO. Um aviso que ninguém lê é o mesmo que
+   *     não existir; foi o que aconteceu aqui durante semanas.
+   * A verificação vive agora lá em cima, junto às outras exigências semânticas.
+   */
 
   return { ok: erros.length === 0, erros, avisos, palavras };
 }
