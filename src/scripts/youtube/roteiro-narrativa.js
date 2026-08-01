@@ -249,7 +249,7 @@ export function buildPromptNarrativa(t, proibidas, frasesRecentes, ficha = null)
 
   return `Você é ROTEIRISTA de um canal brasileiro de finanças pessoais. Escreve como quem CONVERSA COM UM AMIGO: informal, direto, com gíria leve. Nunca formal, nunca "de livro".
 
-SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (45 a 55 segundos).
+SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (42 a 50 segundos).
 NÃO descreva imagens, ícones, sons, efeitos ou cortes. Só o texto que a voz vai falar. Outra pessoa cuida do visual depois.
 
 ⚠️ TAMANHO — É POR AQUI QUE ESTE ROTEIRO MAIS FALHA. A narração INTEIRA tem de ter entre ${MIN_PALAVRAS} e ${MAX_PALAVRAS} palavras, ou seja **${porBloco} palavras em CADA um dos 6 blocos**. Conte as palavras antes de responder. Um bloco com o dobro disto reprova o roteiro todo, por melhor que esteja escrito.
@@ -318,6 +318,14 @@ Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moe
 - ⛔ NUNCA use ponto e vírgula, dois-pontos ou parênteses. Ninguém FALA assim. Use ponto, vírgula ou reticências.
 - Varie o fôlego: uma frase curta, uma mais longa, outra curta. Tudo do mesmo tamanho vira ladainha.
   ✓ "Cem reais por mês. Parece pouco, e é por isso que quase todo mundo deixa parado. Aí o tempo passa."
+- **NÃO COLE DUAS IDEIAS SEM O ELO.** Sujeito e consequência precisam de um "que", "e" ou "porque" no meio. Sem ele a frase soa a manchete de jornal, não a alguém falando.
+  ✗ "Três erros de cartão tiram quinhentos reais por mês."   ✓ "Três erros de cartão QUE tiram quinhentos reais por mês."
+  ✗ "Dez anos parado custam um carro."   ✓ "São dez anos parado, e isso custa um carro."
+  Teste: se der para pôr a frase num título de jornal sem mudar nada, falta o elo.
+- **LINGUAGEM CONCRETA — a regra mais valiosa desta secção.** O dinheiro sai de um LUGAR e de um BOLSO. Diga qual. O abstrato explica; o concreto faz doer.
+  ✗ "…que desaparecem todo mês."   ✓ "…que desaparecem DO SEU BOLSO todo mês."
+  ✗ "no orçamento" → ✓ "na sua conta"  ·  ✗ "da sua renda" → ✓ "do seu salário"  ·  ✗ "em gastos" → ✓ "no que você paga sem ver"
+  Sempre que escrever uma perda ou um ganho, pergunte: sai de ONDE? entra ONDE? Se a frase não diz, ela está pela metade.
 - Cada bloco puxa o próximo pelo FIM: a última frase deve deixar o espectador querendo a seguinte.
 - Leia em voz alta antes de responder. Se você tropeçar, reescreva.
 
@@ -511,8 +519,24 @@ export function limparFala(texto) {
  * Lição: calibrar por medição do pipeline, nunca por suposição.
  */
 const PALAVRAS_POR_SEGUNDO = 2.6;
-const MIN_PALAVRAS = Math.round(45 * PALAVRAS_POR_SEGUNDO); // 117 ≈ 45s
-const MAX_PALAVRAS = Math.round(55 * PALAVRAS_POR_SEGUNDO); // 143 ≈ 55s
+/**
+ * O ALVO ENCURTOU: 117-143 → 110-130 palavras (T3, §21.4 — 01/08/2026).
+ *
+ * Porquê: a capa passou de 1,5s a 3,5s e cada cena ganhou 0,7s de respiro (T1 e T2).
+ * O tempo tem de sair de algum lado, e sai do texto — que é também a melhoria que o
+ * dono pediu: menos palavras, mais respiro, e a capa a prender.
+ *
+ * A conta, com a faixa nova: 130 palavras ÷ 2,6 = 50s de fala, + 2,2s de respiros
+ * (5 × 0,7s menos as sobreposições das transições) + 2,5s de assinatura + 0,9s até a
+ * voz entrar na capa = ~55,6s. O limite do Short é 60s.
+ *
+ * ⚠️ A margem real é MAIOR do que esta conta. Medido no vídeo de 31/07: 141 palavras
+ * em 51,1s de áudio = **2,76 palavras/s**, não 2,6. A constante acima é conservadora
+ * (foi medida noutro vídeo, a 2,59) e fica como está de propósito: errar para o lado
+ * do vídeo mais curto é seguro, errar para o outro estoura os 60s do YouTube.
+ */
+const MIN_PALAVRAS = 110; // ≈ 42s de fala
+const MAX_PALAVRAS = 130; // ≈ 50s de fala
 
 /**
  * O FIO CONDUTOR PRECISA SER DITO, não só declarado (31/07/2026).
@@ -610,8 +634,8 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
 
   const falaToda = blocos.map((b) => (b && b.fala) || '').join(' ');
   const palavras = falaToda.trim().split(/\s+/).filter(Boolean).length;
-  if (palavras < MIN_PALAVRAS) erros.push(`narração curta demais: ${palavras} palavras (mínimo ${MIN_PALAVRAS} ≈ 45s)`);
-  if (palavras > MAX_PALAVRAS) erros.push(`narração longa demais: ${palavras} palavras (máximo ${MAX_PALAVRAS} ≈ 55s)`);
+  if (palavras < MIN_PALAVRAS) erros.push(`narração curta demais: ${palavras} palavras (mínimo ${MIN_PALAVRAS} ≈ 42s)`);
+  if (palavras > MAX_PALAVRAS) erros.push(`narração longa demais: ${palavras} palavras (máximo ${MAX_PALAVRAS} ≈ 50s)`);
 
   // Marcação, travessão, dois-pontos, ponto e vírgula e parênteses NÃO reprovam mais:
   // são limpos por `limparFala()` antes de chegar aqui (ver o comentário lá em cima
