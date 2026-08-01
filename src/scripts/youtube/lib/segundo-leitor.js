@@ -137,7 +137,7 @@ function extrairJson(texto) {
  *
  * NUNCA lança. O pior caso devolve o original — ver a regra 3 lá em cima.
  */
-export async function revisarFala(narrativa, termo, validar, { tentativas = 2 } = {}) {
+export async function revisarFala(narrativa, termo, validar, { tentativas = 2, limpar = (x) => x } = {}) {
   const original = { narrativa, mexi: [], usada: 'original' };
   const base = buildPromptLeitor(narrativa, termo);
   let ultimoMotivo = 'não foi possível usar o leitor';
@@ -180,7 +180,10 @@ export async function revisarFala(narrativa, termo, validar, { tentativas = 2 } 
       continue;
     }
 
-    const revista = { ...narrativa, blocos: blocos.map((b) => ({ papel: b.papel, fala: b.fala.trim() })) };
+    // ⚠️ A limpeza mecânica corre ANTES de julgar. Quem chama passa-a em `limpar` (ver o
+    // comentário em `gerarNarrativa`): sem isto, a edição do leitor era deitada fora por
+    // um defeito de grafia ou de nome que o código conserta sozinho, sem custar nada.
+    const revista = limpar({ ...narrativa, blocos: blocos.map((b) => ({ papel: b.papel, fala: b.fala.trim() })) });
 
     // ⚠️ A REDE POR BAIXO: a versão editada volta a passar pelas travas de VERDADE.
     // Se o leitor partiu alguma (mexeu num número, tirou o bordão, esticou o texto),

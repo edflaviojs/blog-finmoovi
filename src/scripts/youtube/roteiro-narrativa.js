@@ -310,6 +310,9 @@ O vídeo é UMA fala contínua, não uma lista de frases bonitas. **As PRIMEIRAS
    ✓ "…faz a dívida crescer." → "E é aí que ela cresce sem você ver: no FinMoovi…"
    Toda abertura de bloco é uma FRASE INTEIRA, com sujeito e verbo. Nunca uma palavra com ponto de interrogação.
 
+⛔ **A ÚNICA EXCEÇÃO A ESTA REGRA: o bloco 6 NÃO pega no bloco 5.** O convite é um pedido a quem assiste — sai da história. Se o fecho pegar nele, o vídeo acaba a falar do blog e do comentário em vez de responder à pergunta que abriu tudo. **O bloco 6 agarra o BLOCO 1.**
+   ✗ "O blog mostra que o mínimo é o que mais pesa…" (foi ao ar; o dono reprovou — o vídeo não fecha a falar do blog)
+
 ⛔ NENHUMA PALAVRA NOVA SEM PREPARAÇÃO. Não introduza um assunto que ninguém apresentou.
    ✗ "Mas não é o JUROS que te aprisiona…" — juros nunca tinha sido mencionado, cai do céu.
    ✗ "…é o PAGAMENTO MÍNIMO" dito só no último bloco, sem nunca ter aparecido antes.
@@ -322,18 +325,18 @@ TESTE OBRIGATÓRIO: tape o bloco anterior e leia só este. Se ele fizer sentido 
    Por quê: "24 vezes" o quê? "avalanche" de quê? a pergunta final cai do céu. São quatro pedaços que não se conhecem.
 
 ✓ CERTO (o mesmo assunto, encadeado):
-   "Todo mundo acha que cem reais não muda nada. Só que eu fiz a conta de guardar esses cem reais por dois anos seguidos… e o número me assustou. Porque não é o valor que trabalha, é o tempo."
+   "Todo mundo acha que cem reais não muda nada. Só que eu fiz a conta de guardar esses cem reais por dois anos seguidos… e o número me assustou. Porque quem faz o trabalho ali é o tempo."
    Por quê: a 2ª frase responde à 1ª, a 3ª explica a 2ª. Ninguém consegue sair no meio.
 
 ════════ UM VÍDEO INTEIRO, PARA VOCÊ VER A FORMA ════════
-🔥 **ESTE EXEMPLO AUTODESTRÓI-SE.** Copie a FORMA e o TOM. **Se você repetir CINCO PALAVRAS SEGUIDAS de qualquer frase abaixo, o roteiro é rejeitado** — sem exceção, e o computador confere. O canal publica todos os dias: se cada vídeo repetir estas frases, todos soam iguais.
+🔥 **ESTE EXEMPLO AUTODESTRÓI-SE.** Copie a FORMA e o TOM. **Se você repetir SEIS PALAVRAS SEGUIDAS de qualquer frase abaixo, o roteiro é rejeitado** — sem exceção, e o computador confere. O canal publica todos os dias: se cada vídeo repetir estas frases, todos soam iguais.
 ⛔ A imagem do exemplo — **pneu murcho** — também NÃO está na sua lista. Se "pneu" aparecer no seu texto, é rejeitado.
 
 ${EXEMPLO_DE_FORMA.map((f, i) => `  ${i + 1}. "${f}"`).join('\n')}
 
 Repare no que esse exemplo faz, porque é isso que se pede a você:
 · o assunto e a imagem estão juntos na PRIMEIRA frase, e a imagem entra comparada ("que nem"), nunca definida;
-· cada bloco abre agarrando o anterior — "o pior", "não é o grande", "esses pequenos", "os seus", "os duzentos reais";
+· cada bloco abre agarrando o anterior — "o pior", "o desconto que te para", "esses pequenos", "os seus", "os duzentos reais";
 · quem fala é uma pessoa: "olha", "você nem lembra", "caladinho", "um pouquinho de cada vez";
 · o fecho responde à pergunta do início e só então vem o bordão.
 
@@ -348,11 +351,14 @@ Repare no que esse exemplo faz, porque é isso que se pede a você:
       Por quê: alguém está a falar. Diz o assunto, compara em vez de definir, dá o número e deixa a pergunta no ar.
    Molde do arranque: "<abertura de quem fala: olha / sabe / repara só> + <o tema> + <que parece / é tipo / é que nem> + <a imagem>. <a dor, com o número>. <pergunta que fica no ar>"
 2. EMPATIA (~9s): por que isso acontece com gente normal (correria, cansaço, ninguém ensinou). Sem culpar quem assiste.
-3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é A e você mostra que é B — "não é o [A] que te quebra… é o [B] que ninguém soma".
+3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é uma coisa, e você mostra que é outra.
+   ⛔ **NÃO USE O MOLDE "não é A, é B".** Ele está na lista de vícios aí em cima, é a marca da escrita de robô, e já foi ao ar neste canal. **Diga só o B**, como quem conta uma coisa que a pessoa ainda não sabia.
+   ✗ "Não é o valor que trabalha, é o tempo." (molde proibido — e o mesmo vale para "o problema não é X, é Y")
+   ✓ "Quem faz o trabalho ali é o tempo. E ele começou sem você."
    ⛔ TERMINE NA TENSÃO. Depois de virar, NÃO explique. Explicação depois da virada mata a virada.
-   ✗ "…é o tempo que ficou parado. E ele já está trabalhando, só falta ajustar." (a 2ª frase amolece a 1ª — e "trabalhando" como? "ajustar" o quê? frase que enche linguiça)
-   ✗ "…é o tempo que ficou parado, o Tesouro Selic faz a grana crescer todo dia." (virou e já explicou)
-   ✓ "…é o tempo que ficou parado. E ele não volta."
+   ✗ "Quem faz o trabalho ali é o tempo. E ele já está trabalhando, só falta ajustar." (a 2ª frase amolece a 1ª — "ajustar" o quê? frase que enche linguiça)
+   ✗ "Quem faz o trabalho ali é o tempo, o Tesouro Selic faz a grana crescer todo dia." (virou e já explicou)
+   ✓ "Quem faz o trabalho ali é o tempo. E ele não volta."
    Depois da virada, ou você CALA, ou aumenta a tensão. Nunca conforta.
 4. A DEMONSTRAÇÃO (~10s): o app resolvendo ISSO que você acabou de revelar. **O app é quem AGE, não é rodapé.**
    ⛔ NO MÁXIMO DOIS valores em dinheiro neste bloco. Três ou mais viram boletim de banco e a pessoa desliga.
@@ -363,18 +369,29 @@ Repare no que esse exemplo faz, porque é isso que se pede a você:
    ⛔ **NÃO termine com outra pergunta.** O fecho é quem responde, não quem pergunta.
    ✗ "…e quando você corta, os quinhentos reais voltam pra você. E agora?" (foi ao ar; o dono: *"o que é 'e agora'???"*)
    ✓ "…quem tira a pedra da mochila anda leve o mês inteiro."
+   ⛔ **O FECHO NÃO FALA DO CANAL.** Nada de blog, comentário, link, canal ou inscrição neste bloco — isso já foi pedido no bloco 5, e repetir aqui rouba o lugar da resposta. O computador confere.
+   ✗ "O blog mostra que o mínimo é o que mais pesa." (foi ao ar e o dono reprovou)
+   ✗ "Depois de comentar você vai ver que…" (pega no convite em vez da história)
+   ✓ "O que mais pesa é o mínimo, aquele que parece pequeno e prende o seu pé."
    É AQUI, e só aqui, que entra o bordão do canal — como assinatura, na última frase.
 
 ════════ O FIO CONDUTOR ════════
 Escolha UMA imagem física para o vídeo inteiro e faça-a CRESCER: pequena no bloco 1, forte no 3, paga no 6. É a mesma imagem sempre — nunca troque no meio.
 Escolha entre: ${menuDeImagens}.
 Escolha a que COMBINA com este tema — a imagem existe para explicar, não para enfeitar. Se ela não explicar nada aqui, é a imagem errada.
-⚠️ A imagem tem de ser DITA NA FALA, com as palavras dela (as que estão entre parênteses acima), **no BLOCO 1 obrigatoriamente e em pelo menos TRÊS blocos ao todo**. Preencher o campo "fioCondutor" e não falar da imagem em lugar nenhum NÃO conta: o campo fica cheio e o vídeo fica sem fio.
+⚠️ A imagem tem de ser DITA NA FALA, com as palavras dela (as que estão entre parênteses acima), **no BLOCO 1 obrigatoriamente e em pelo menos DOIS blocos ao todo**. Preencher o campo "fioCondutor" e não falar da imagem em lugar nenhum NÃO conta: o campo fica cheio e o vídeo fica sem fio.
 ⛔ **Se a imagem só entrar a meio do vídeo, a primeira metade fica sem sentido** — foi o defeito que o dono apanhou: *"ele vai falar da pedra na mochila somente na metade do vídeo, sem conexão nenhuma com aquilo que foi dito até agora"*. Ela abre o vídeo.
    A MECÂNICA — o exemplo abaixo usa DE PROPÓSITO uma imagem que NÃO está na lista, para você ver só a forma. ⛔ Nunca a use: se ela aparecer no seu texto, o roteiro é rejeitado.
       bloco 1: "é uma pedra pequena na mochila…" → bloco 3: "e a mochila já pesa em cada passo" → bloco 6: "quem tira a pedra anda mais rápido".
    Repare: é a MESMA imagem nos três, e ela CRESCE. Faça exatamente isto — com a sua imagem, e com as SUAS palavras.
 ⛔ PROIBIDAS (já usadas nos vídeos recentes): ${bloqueadas}${evitarFrases}
+
+════════ SE O TÍTULO PROMETE UMA QUANTIDADE, DIGA-AS PELO NOME ════════
+Se o TEMA ou o ÂNGULO prometerem um número de coisas — três erros, cinco dicas, dois caminhos — o vídeo TEM de as dizer, uma a uma, com nome. **Prometer três e nunca dizer quais é o defeito nº1 deste canal**: a pessoa fica à espera do que foi prometido, não vem, e sai.
+Diga-as com palavras do dia a dia, nunca com o nome técnico:
+   ✗ "os três são o rotativo, o mínimo e o parcelamento longo" (ninguém em casa sabe o que é isto)
+   ✓ "pagar só uma parte, deixar o resto rolando pro mês seguinte, e dividir a compra em muitas vezes"
+Elas cabem TODAS num bloco só — normalmente a virada ou a demonstração. **Esse bloco pode passar das ${porBloco} palavras; então os outros cinco têm de ficar mais curtos para o total não estourar.** É uma troca, não uma licença para escrever mais.
 
 ════════ O QUE VOCÊ PODE PROMETER ════════
 SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (grátis)** e a **calculadora do blog**.
@@ -456,7 +473,7 @@ const PAPEIS = ['gancho', 'empatia', 'virada', 'demonstracao', 'convite', 'fecho
 const EXEMPLO_DE_FORMA = [
   'Olha, tem três descontos na sua conta que são que nem pneu murcho: você anda, mas anda devagar. São duzentos reais por mês que somem sem você ver. Qual será o pior deles?',
   'O pior é o que você nem lembra que assinou. A vida corre, ninguém te ensinou a olhar isso, e o pneu vai perdendo ar caladinho.',
-  'Só que não é o desconto grande que te para. É o pequeno, que fica lá meses, esvaziando o pneu um pouquinho de cada vez.',
+  'Só que o desconto que te para é o pequeno. Aquele que fica lá meses, esvaziando o pneu um pouquinho de cada vez.',
   'No FinMoovi você abre a conta e ele te mostra esses pequenos, um por um, com o valor do lado. Aí você vê o pneu murchando.',
   'Quer ver os seus? Comenta FINMOOVI aqui que eu te mando a calculadora do blog.',
   `Os duzentos reais voltam quando você tira os pequenos da frente — é o pneu cheio de novo. ${BORDAO}`,
@@ -509,6 +526,74 @@ const corrigirNumerais = (s) => NUMERAIS_ERRADOS.reduce(
   )),
   s,
 );
+
+/**
+ * NOME ERRADO DE UMA COISA REAL — mecânico, logo LIMPA (02/08/2026).
+ *
+ * MEDIDO no roteiro de 01/08: a narração disse "taxa mínima". **Esse produto não existe
+ * com esse nome.** A parcela que o banco deixa pagar na fatura chama-se PAGAMENTO MÍNIMO.
+ * É erro de FACTO, não de gosto — logo é código, e não trava: consertar a grafia de um
+ * nome não pode custar uma tentativa ao gerador (mesma porta por onde entrou o
+ * "cincocentos", ver NUMERAIS_ERRADOS).
+ *
+ * ⚠️ O GUARDA DE CONTEXTO, e porque ele é o TEMA e não a fala.
+ * "Taxa mínima" pode ser legítimo noutro assunto ("taxa mínima de corretagem"). A 1ª
+ * versão deste conserto usava a narração gerada como contexto — e nesse desenho um vídeo
+ * sobre corretagem que dissesse "cartão" de passagem levava a troca e saía com
+ * "pagamento mínimo de corretagem", um absurdo. O TEMA é decidido ANTES de o modelo
+ * escrever e não muda a meio: se o vídeo é sobre cartão/fatura/crédito, "taxa mínima"
+ * está errado, ponto. Fora disso não se toca.
+ */
+/**
+ * ⚠️ E O ARTIGO TEM DE VIR JUNTO — apanhado a CORRER o conserto, não a lê-lo.
+ * "taxa" é feminino e "pagamento" é masculino. A 1ª versão trocava só o nome e produzia
+ * *"você paga A pagamento mínimo"*, que ia inteiro para a voz e para a legenda queimada.
+ * Por isso o determinante que vem à frente muda de género com ele.
+ */
+const DET_FEM_PARA_MASC = {
+  a: 'o', as: 'os', da: 'do', das: 'dos', na: 'no', nas: 'nos',
+  uma: 'um', umas: 'uns', essa: 'esse', essas: 'esses',
+  esta: 'este', estas: 'estes', aquela: 'aquele', aquelas: 'aqueles',
+  à: 'ao', às: 'aos', pela: 'pelo', pelas: 'pelos',
+  sua: 'seu', suas: 'seus', minha: 'meu', minhas: 'meus',
+  outra: 'outro', outras: 'outros',
+};
+
+// "Taxa mínima" no início de uma frase não pode virar "pagamento mínimo" em minúscula
+// (a mesma regra que `corrigirNumerais` já seguia).
+const preservarCaixa = (achado, novo) => (
+  achado[0] === achado[0].toUpperCase() ? novo[0].toUpperCase() + novo.slice(1) : novo
+);
+
+const TEMA_DE_CARTAO = /cart[ãa]o|fatura|cr[ée]dito/i;
+
+const NOMES_ERRADOS = [
+  {
+    // com determinante à frente: troca-se o determinante E o nome, de uma vez.
+    // A fronteira é por LETRA (não `\b`), senão "à" — que não é letra para o `\b` —
+    // escapava.
+    tema: TEMA_DE_CARTAO,
+    de: /(?<![\p{L}])(as|a|das|da|nas|na|umas|uma|essas|essa|estas|esta|aquelas|aquela|às|à|pelas|pela|suas|sua|minhas|minha|outras|outra)\s+taxa(s?)\s+m[íi]nima(s?)(?![\p{L}])/giu,
+    para: (_achado, det, plural) => {
+      const novoDet = DET_FEM_PARA_MASC[det.toLowerCase()] || det;
+      const nome = plural ? 'pagamentos mínimos' : 'pagamento mínimo';
+      return `${preservarCaixa(det, novoDet)} ${nome}`;
+    },
+  },
+  {
+    // sem determinante à frente ("paga taxa mínima todo mês")
+    tema: TEMA_DE_CARTAO,
+    de: /(?<![\p{L}])taxa(s?)\s+m[íi]nima(s?)(?![\p{L}])/giu,
+    para: (achado, plural) => preservarCaixa(achado, plural ? 'pagamentos mínimos' : 'pagamento mínimo'),
+  },
+];
+
+export function corrigirNomes(texto, tema = '') {
+  return NOMES_ERRADOS.reduce(
+    (txt, n) => (n.tema.test(String(tema)) ? txt.replace(n.de, n.para) : txt),
+    String(texto || ''),
+  );
+}
 
 /**
  * NÚMERO POR EXTENSO — calculado, não pedido (31/07/2026).
@@ -612,10 +697,11 @@ export function numerosPorExtenso(texto) {
  * Cada trava que vira limpeza é uma tentativa devolvida ao que importa.
  * A grafia errada de numeral (ver NUMERAIS_ERRADOS) entra pela mesma porta.
  */
-export function limparFala(texto) {
+export function limparFala(texto, tema = '') {
   // primeiro os algarismos viram palavras, depois corrige-se a grafia dessas
   // palavras — por esta ordem, senão "cincocentos" nunca chegaria a existir.
-  return corrigirNumerais(numerosPorExtenso(String(texto || '')))
+  // Só então os nomes errados (ver `corrigirNomes`), que dependem do TEMA.
+  return corrigirNomes(corrigirNumerais(numerosPorExtenso(String(texto || ''))), tema)
     .replace(/[*_]/g, '')                                  // marcação: a voz lia "asterisco"
     .replace(/\s*[—–]\s*/g, ', ')                          // travessão vira a pausa que ele representa
     .replace(/\s*:\s*/g, '. ')                             // dois-pontos vira FRASE NOVA — trocar por vírgula deixava a maiúscula solta ("Lembre, Dinheiro…")
@@ -793,6 +879,30 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     // história: *"essa frase fica muito sem sentido aí no meio… está mais
     // atrapalhando do que ajudando"*. Um bordão fecha, não interrompe.
     erros.push(`o bordão está no meio da história — ele só pode aparecer no ÚLTIMO bloco (fecho), como assinatura: "${BORDAO}"`);
+  }
+
+  /**
+   * O FECHO NÃO FALA DO CANAL (02/08/2026) — e a causa era prompt contra prompt.
+   *
+   * MEDIDO: o roteiro de 01/08 abriu o fecho com *"O blog mostra que…"*. Fui ver porquê e
+   * a culpa não era do modelo: a "REGRA MAIOR" manda cada bloco agarrar o anterior, e o
+   * bloco anterior ao fecho é o CONVITE, que fala do blog e do comentário. **O modelo
+   * obedeceu.** O prompt passou a dizer que o bloco 6 é a única exceção — e esta trava é a
+   * outra ponta, porque neste repositório o que o prompt pede e nada pune, o modelo ignora.
+   *
+   * É VERDADE, não gosto: ou o fecho fala do canal, ou não fala. Não se está a julgar tom.
+   * Forma mais barata de a cumprir sem fazer o que se quer: não dizer estas palavras — que
+   * é exatamente o objetivo. Não há atalho perverso.
+   * ⚠️ Não colide com o bordão ("dinheiro sem controle é dinheiro dos outros") nem com o
+   * nome FINMOOVI, que é exigido no bloco 5 e não aqui.
+   */
+  const intrusoNoFecho = String(blocos[5]?.fala || '')
+    .match(/\b(blogs?|coment\p{L}*|links?|canal|canais|inscri\p{L}*|inscrev\p{L}*)\b/iu);
+  if (intrusoNoFecho) {
+    erros.push(
+      `o bloco "fecho" fala de "${intrusoNoFecho[0]}" — o fecho responde à pergunta do bloco 1 e fecha a imagem. `
+      + 'O pedido de comentário já foi feito no bloco 5; repeti-lo aqui rouba o lugar da resposta.',
+    );
   }
 
   /**
@@ -1122,6 +1232,9 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
   const base = buildPromptNarrativa(t, proibidas, frasesRecentes, ficha);
   // a MESMA lista que foi ao prompt é a que a validação exige (§20.2 B3)
   const { lista: permitidas } = escolherImagens(`${t.term || ''} ${t.angle || ''} ${t.definition || ''}`, proibidas);
+  // O TEMA é o contexto da correção de nomes (ver `corrigirNomes`). Fica calculado uma
+  // vez: não depende do que o modelo escrever, e é isso que o torna seguro.
+  const temaTexto = `${t.term || ''} ${t.angle || ''} ${t.definition || ''}`;
   let corretivo = '';
   const exigencias = [];
   for (let i = 1; i <= tentativas; i++) {
@@ -1139,7 +1252,7 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
     // limpeza mecanica ANTES de validar: o que da para consertar por codigo nao
     // pode custar uma tentativa (ver limparFala e o pendulo do 5o teste).
     if (Array.isArray(n.blocos)) {
-      for (const b of n.blocos) if (b && typeof b.fala === 'string') b.fala = limparFala(b.fala);
+      for (const b of n.blocos) if (b && typeof b.fala === 'string') b.fala = limparFala(b.fala, temaTexto);
     }
     const apoio = `${(t && t.definition) || ''} ${(t && t.body) || ''}`;
     const conferir = (cand) => validarNarrativa(cand, proibidas, ficha, t && t.term, permitidas, apoio);
@@ -1152,7 +1265,19 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
        * Ele só mexe nas palavras; o resultado volta a passar pelas mesmas travas e,
        * se as partir, fica o original. Ver lib/segundo-leitor.js.
        */
-      const lido = await revisarFala(n, (t && t.term) || '', conferir);
+      /**
+       * ⚠️ A LIMPEZA VAI COM ELE, e é de propósito que vai como PARÂMETRO.
+       * O texto que o leitor devolve é julgado DENTRO de `revisarFala`; se a limpeza
+       * mecânica só corresse cá fora, o leitor seria reprovado por um "taxa mínima" que
+       * o código já sabe consertar — e perdia-se a edição inteira por causa disso.
+       * Passa-se a função em vez de a importar lá dentro: `roteiro-narrativa.js` já
+       * importa `revisarFala`, e o caminho inverso fecharia um ciclo entre os dois.
+       */
+      const limpar = (cand) => ({
+        ...cand,
+        blocos: (cand.blocos || []).map((b) => ({ ...b, fala: limparFala(b.fala, temaTexto) })),
+      });
+      const lido = await revisarFala(n, (t && t.term) || '', conferir, { limpar });
       if (lido.usada === 'leitor') {
         const vf = conferir(lido.narrativa);
         return { narrativa: lido.narrativa, avisos: vf.avisos, palavras: vf.palavras, tentativa: i, mexi: lido.mexi };

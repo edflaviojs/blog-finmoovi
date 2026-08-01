@@ -79,6 +79,13 @@ export const VICIOS = `
 
 14. METÁFORA QUE SE CONTRADIZ — a imagem tem de funcionar com a física dela do princípio ao fim.
     ✗ "esvaziando a mochila" quando o que a enche são pedras (fica mais PESADA, nunca mais vazia).
+
+15. CONECTOR DE TEXTO ESCRITO — "Além disso", "Ademais", "Portanto", "No entanto", "Dessa forma",
+    "Sendo assim", "Em suma", "Vale ressaltar", "Por outro lado". Isto escreve-se, não se fala.
+    ⚠️ **TROQUE o conector, NUNCA o corte.** Sem elo nenhum as frases ficam soltas, e frase solta é
+    o defeito que este canal mais paga. O elo falado existe e é curto:
+      "Além disso," → "E aí" · "No entanto," → "Só que" · "Portanto," → "Então" · "Dessa forma," → "Assim"
+    ✗ "Além disso, você ainda paga juros."   ✓ "E aí você ainda paga juros."
 `;
 
 /** A versão curta, para o ESCRITOR. Só os cinco que mais aparecem. */
@@ -88,6 +95,7 @@ export const VICIOS_ESSENCIAIS = `
 ⛔ Nada de abrir uma frase ecoando a última palavra da anterior.
 ⛔ Nada de palavra de escritório (drenagem, solução, estratégia) nem jargão de banco (rotativo, amortizar, encargos).
 ⛔ Nada de importância postiça ("é fundamental", "isso muda tudo").
+⛔ Nada de conector de texto escrito ("Além disso", "Portanto", "No entanto", "Dessa forma") — a fala liga com "E aí", "Só que", "Então". Trocar, nunca cortar: sem elo a frase fica solta.
 `;
 
 /**
