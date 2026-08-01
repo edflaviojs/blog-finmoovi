@@ -73,8 +73,44 @@ Responda APENAS com JSON válido, sem markdown:
     { "papel": "convite", "fala": "..." },
     { "papel": "fecho", "fala": "..." }
   ],
-  "mexi": ["<em poucas palavras, o que mudou e porquê — um item por bloco alterado>"]
+  "mexi": ["<em poucas palavras, o que mudou e porque. SEM aspas dentro do texto.>"]
 }`;
+}
+
+/**
+ * Extrai o "blocos" à força, mesmo que o resto do JSON venha partido.
+ *
+ * ⚠️ MEDIDO À PRIMEIRA CORRIDA: o leitor devolveu JSON inválido e a revisão foi
+ * inteiramente deitada fora — por causa do campo `mexi`, que é só um comentário
+ * para o log. O modelo escreveu aspas dentro das explicações e partiu o array.
+ * Perder a EDIÇÃO por causa de uma NOTA é absurdo, por isso a leitura passa a ser
+ * em duas fases: tenta o JSON todo; se falhar, vai buscar só o array que interessa,
+ * contando parênteses (e respeitando aspas e escapes, senão um "]" dentro de uma
+ * frase fechava o array cedo demais).
+ */
+function extrairArrayBlocos(s) {
+  const marca = s.indexOf('"blocos"');
+  if (marca === -1) return null;
+  const ini = s.indexOf('[', marca);
+  if (ini === -1) return null;
+  let profundidade = 0;
+  let dentroDeAspas = false;
+  let escapado = false;
+  for (let i = ini; i < s.length; i++) {
+    const c = s[i];
+    if (escapado) { escapado = false; continue; }
+    if (c === '\\') { escapado = true; continue; }
+    if (c === '"') { dentroDeAspas = !dentroDeAspas; continue; }
+    if (dentroDeAspas) continue;
+    if (c === '[') profundidade++;
+    else if (c === ']') {
+      profundidade--;
+      if (profundidade === 0) {
+        try { return JSON.parse(s.slice(ini, i + 1)); } catch { return null; }
+      }
+    }
+  }
+  return null;
 }
 
 function extrairJson(texto) {
@@ -83,8 +119,12 @@ function extrairJson(texto) {
   if (cerca) s = cerca[1].trim();
   const a = s.indexOf('{');
   const b = s.lastIndexOf('}');
-  if (a === -1 || b === -1) throw new Error('nenhum JSON na resposta do leitor');
-  return JSON.parse(s.slice(a, b + 1));
+  if (a !== -1 && b !== -1) {
+    try { return JSON.parse(s.slice(a, b + 1)); } catch { /* cai para o plano B */ }
+  }
+  const blocos = extrairArrayBlocos(s);
+  if (blocos) return { blocos, mexi: ['(a nota do leitor veio partida e foi ignorada)'] };
+  throw new Error('nenhum JSON aproveitável na resposta do leitor');
 }
 
 /**
@@ -97,46 +137,67 @@ function extrairJson(texto) {
  *
  * NUNCA lança. O pior caso devolve o original — ver a regra 3 lá em cima.
  */
-export async function revisarFala(narrativa, termo, validar) {
+export async function revisarFala(narrativa, termo, validar, { tentativas = 2 } = {}) {
   const original = { narrativa, mexi: [], usada: 'original' };
-  let bruto;
-  try {
-    bruto = await generateText(buildPromptLeitor(narrativa, termo), { maxTokens: 2000, temperature: 0.7 });
-  } catch (err) {
-    return { ...original, motivo: `a chamada ao leitor falhou (${err.message})` };
-  }
+  const base = buildPromptLeitor(narrativa, termo);
+  let ultimoMotivo = 'não foi possível usar o leitor';
 
-  let lido;
-  try {
-    lido = extrairJson(bruto);
-  } catch (err) {
-    return { ...original, motivo: `o leitor não devolveu JSON (${err.message})` };
-  }
+  // ⚠️ DUAS TENTATIVAS, e não uma. Na 1ª corrida a leitura falhou por um detalhe de
+  // formatação e a edição inteira foi deitada fora. Uma 2ª chamada custa segundos e
+  // recupera a maior parte desses casos. Mais do que duas seria teimosia: se ele
+  // erra duas vezes, o original vai na mesma e o vídeo sai à mesma.
+  for (let i = 1; i <= tentativas; i++) {
+    const prompt = i === 1 ? base : `${base}\n\n⚠️ A SUA RESPOSTA ANTERIOR FOI RECUSADA: ${ultimoMotivo}\nResponda só com o JSON pedido, sem aspas dentro dos textos.`;
 
-  const blocos = Array.isArray(lido.blocos) ? lido.blocos : [];
-  if (blocos.length !== ORDEM.length) {
-    return { ...original, motivo: `o leitor devolveu ${blocos.length} blocos em vez de ${ORDEM.length}` };
-  }
-  // os papéis têm de continuar na ordem — o leitor não reorganiza o vídeo
-  for (let i = 0; i < ORDEM.length; i++) {
-    if (!blocos[i] || blocos[i].papel !== ORDEM[i] || typeof blocos[i].fala !== 'string' || !blocos[i].fala.trim()) {
-      return { ...original, motivo: `o bloco ${i + 1} veio mal formado do leitor` };
+    let bruto;
+    try {
+      bruto = await generateText(prompt, { maxTokens: 2000, temperature: 0.7 });
+    } catch (err) {
+      ultimoMotivo = `a chamada ao leitor falhou (${err.message})`;
+      continue;
     }
+
+    let lido;
+    try {
+      lido = extrairJson(bruto);
+    } catch (err) {
+      ultimoMotivo = `o leitor não devolveu JSON (${err.message})`;
+      continue;
+    }
+
+    const blocos = Array.isArray(lido.blocos) ? lido.blocos : [];
+    if (blocos.length !== ORDEM.length) {
+      ultimoMotivo = `o leitor devolveu ${blocos.length} blocos em vez de ${ORDEM.length}`;
+      continue;
+    }
+    // os papéis têm de continuar na ordem — o leitor não reorganiza o vídeo
+    const malFormado = ORDEM.findIndex((papel, k) => !blocos[k]
+      || blocos[k].papel !== papel
+      || typeof blocos[k].fala !== 'string'
+      || !blocos[k].fala.trim());
+    if (malFormado !== -1) {
+      ultimoMotivo = `o bloco ${malFormado + 1} veio mal formado do leitor`;
+      continue;
+    }
+
+    const revista = { ...narrativa, blocos: blocos.map((b) => ({ papel: b.papel, fala: b.fala.trim() })) };
+
+    // ⚠️ A REDE POR BAIXO: a versão editada volta a passar pelas travas de VERDADE.
+    // Se o leitor partiu alguma (mexeu num número, tirou o bordão, esticou o texto),
+    // fica o original. Ele só pode melhorar a fala — nunca piorar o roteiro.
+    const v = validar(revista);
+    if (!v.ok) {
+      ultimoMotivo = `a versão do leitor foi recusada pelas travas: ${v.erros.join(' | ')}`;
+      continue;
+    }
+
+    return {
+      narrativa: revista,
+      mexi: Array.isArray(lido.mexi) ? lido.mexi.filter((m) => typeof m === 'string') : [],
+      usada: 'leitor',
+      tentativa: i,
+    };
   }
 
-  const revista = { ...narrativa, blocos: blocos.map((b) => ({ papel: b.papel, fala: b.fala.trim() })) };
-
-  // ⚠️ A REDE POR BAIXO: a versão editada volta a passar pelas travas de VERDADE.
-  // Se o leitor partiu alguma (mexeu num número, tirou o bordão, esticou o texto),
-  // fica o original. Ele só pode melhorar a fala — nunca piorar o roteiro.
-  const v = validar(revista);
-  if (!v.ok) {
-    return { ...original, motivo: `a versão do leitor foi recusada pelas travas: ${v.erros.join(' | ')}` };
-  }
-
-  return {
-    narrativa: revista,
-    mexi: Array.isArray(lido.mexi) ? lido.mexi.filter((m) => typeof m === 'string') : [],
-    usada: 'leitor',
-  };
+  return { ...original, motivo: ultimoMotivo };
 }
