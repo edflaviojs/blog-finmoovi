@@ -139,7 +139,9 @@ CATÁLOGOS (fora deles o roteiro é rejeitado):
 · sons: ${SFX.join(', ')}
 
 ════════ AS QUATRO REGRAS QUE REPROVAM ════════
-1. **A imagem do vídeo é "${narrativa.fioCondutor}" e só ela.** Sempre que ela for FALADA, ponha um shot {"type":"metaphor","metaphor":"${narrativa.fioCondutor}"} nessa palavra. Nunca use outra imagem do catálogo neste vídeo.
+1. **A imagem do vídeo é "${narrativa.fioCondutor}" e só ela.** Cada vez que ela for MENCIONADA na fala, ponha UM shot {"type":"metaphor","metaphor":"${narrativa.fioCondutor}"}. Nunca use outra imagem do catálogo neste vídeo.
+   ⛔ **UM shot por MENÇÃO, não um por palavra.** O nome da imagem pode ocupar várias palavras seguidas ("mochila de pedras" são três). Isso é UMA menção: escolha **só uma** dessas palavras — a mais forte — e ignore as outras.
+   ⛔ **Nunca dois shots seguidos com o mesmo visual.** A animação recomeçaria do zero à frente de quem assiste e você desperdiçaria um lugar de imagem. Entre duas aparições da imagem tem de haver outra coisa na tela.
 2. **O bloco CONVITE termina com** {"type":"metaphor","metaphor":"clique-link"} — é a mãozinha que toca no botão de comentar. Som "click".
 3. **O bloco DEMONSTRACAO precisa de UM shot do app**, e ele entra numa das PRIMEIRAS palavras do bloco: a tela do app tem de ficar visível uns 4 segundos, e se entrar no fim do bloco não dá tempo.
 4. **O som é TEMPERO: no MÁXIMO METADE dos shots leva som.** Se todos tocarem alguma coisa, cansa — o dono já reclamou disto. E o mesmo som não pode aparecer mais de 3× no vídeo inteiro. Para deixar em silêncio, basta omitir o campo "sfx".
@@ -167,6 +169,26 @@ Responda APENAS com JSON válido, sem markdown:
     { "papel": "fecho", "shots": [] }
   ]
 }`;
+}
+
+/**
+ * A "impressão digital" de um shot — o que o espectador vê.
+ *
+ * Dois shots com a MESMA chave, um a seguir ao outro, são o defeito que o dono
+ * apanhou no vídeo de 31/07 (§21.6): a animação recomeça do zero à frente dele e
+ * um lugar de imagem vai ao lixo.
+ *
+ * Imagens/ícones/telas comparam-se pelo NOME. Os visuais de texto só contam como
+ * repetição quando dizem EXATAMENTE o mesmo — dois "statement" com frases
+ * diferentes são cortes legítimos e não podem ser reprovados.
+ */
+export function chaveVisual(v) {
+  if (!v || typeof v !== 'object') return null;
+  if (v.type === 'metaphor') return `imagem "${v.metaphor}"`;
+  if (v.type === 'icon') return `ícone "${v.icon}"`;
+  if (v.type === 'app') return `tela do app "${v.app}"`;
+  const texto = typeof v.text === 'string' ? v.text.trim().toLowerCase() : '';
+  return texto ? `${v.type} "${texto}"` : null;
 }
 
 // ─── validação do PLANO (antes de virar roteiro) ─────────────────────────────
@@ -227,6 +249,32 @@ export function validarPlano(plano, narrativa) {
   const ultimoDoConvite = convite && (convite.shots || [])[(convite.shots || []).length - 1];
   if (!ultimoDoConvite || ultimoDoConvite.visual?.metaphor !== 'clique-link') {
     erros.push('o bloco "convite" não termina com a mãozinha ("clique-link") a tocar no botão de comentar');
+  }
+
+  // A REGRA 1 com dentes, parte 2 — O MESMO VISUAL DUAS VEZES SEGUIDAS (§21.6).
+  // MEDIDO no vídeo de 31/07: aconteceu em 4 das 6 cenas. "mochila de pedras" são
+  // duas palavras seguidas na lista de âncoras e o modelo pôs um shot em CADA uma.
+  // Não era desobediência: a regra 1 dizia "SEMPRE que ela for falada, ponha um
+  // shot" — o prompt mandava fazer exatamente o que agora se reprova. Por isso a
+  // regra 1 foi reescrita no MESMO commit que esta trava (lição do §19.9).
+  // Não é sistémico de uma imagem só: 9 das 32 do catálogo têm nome de duas ou mais
+  // palavras (bola de neve, castelo de cartas, areia movediça…), logo isto voltaria
+  // a acontecer sozinho.
+  // A varredura é sobre a SEQUÊNCIA INTEIRA, não bloco a bloco: o último shot de um
+  // bloco e o primeiro do seguinte também aparecem colados na tela.
+  const seguidos = blocos.flatMap((b, i) => (Array.isArray(b?.shots) ? b.shots : []).map((s, j) => ({
+    chave: chaveVisual(s?.visual), onde: `bloco ${i + 1} (${ORDEM_DOS_BLOCOS[i]}) shot ${j + 1}`,
+  })));
+  for (let i = 1; i < seguidos.length; i++) {
+    const atual = seguidos[i];
+    const anterior = seguidos[i - 1];
+    if (atual.chave && atual.chave === anterior.chave) {
+      erros.push(
+        `${atual.onde}: ${atual.chave} outra vez logo a seguir ao ${anterior.onde} — `
+        + 'a animação recomeça do zero e gasta um lugar de imagem. Se a imagem tem várias '
+        + 'palavras no nome, escolha SÓ UMA delas e use as outras âncoras para outro visual.',
+      );
+    }
   }
 
   if (!plano.introFrase || typeof plano.introFrase !== 'string') erros.push('sem "introFrase"');
