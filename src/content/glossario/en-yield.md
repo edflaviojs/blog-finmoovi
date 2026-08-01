@@ -33,7 +33,7 @@ Yield works differently depending on the type of investment. For example, in an 
 
 **Practical tip:** It’s important to understand that yield is not the same as the investment’s value. For instance, if you invest $200 in an investment fund and the fund’s value rises to $240, the yield would be 20% ($40 / $200), but the investment’s value would be $240.
 
-Yield can also be affected by factors such as inflation, interest rates, and risk. For example, if inflation is high, the yield of a debt‑security investment may be reduced because the purchasing power of money declines over time.
+Yield can also be affected by factors such as [inflation](/en/glossario/en-inflation), interest rates, and risk. For example, if inflation is high, the yield of a debt‑security investment may be reduced because the purchasing power of money declines over time.
 
 ## Advantages
 Yield offers several advantages for investors. One of the main advantages is the ability to generate profit without having to sell the investment. In addition, yield can also be used to fund expenses or future investments.
@@ -47,7 +47,7 @@ Yield offers several advantages for investors. One of the main advantages is the
 **Practical tip:** It’s important to diversify investments to minimize risk and maximize yield. For example, if you invest all your money in a single stock, you risk losing everything if the company fails. Conversely, if you invest in a diversified portfolio of stocks, debt securities, and other assets, you reduce risk and increase the chances of generating profit.
 
 ## Risks
-Yield also involves risks. One of the main risks is capital loss risk, which occurs when the investment’s value declines. In addition, yield can be affected by factors such as inflation, interest rates, and credit risk.
+Yield also involves risks. One of the main risks is capital loss risk, which occurs when the investment’s value declines. In addition, yield can be affected by factors such as inflation, interest rates, and [credit](/en/glossario/en-credit) risk.
 
 * Capital loss risk is one of the main risks of yield  
 * Credit risk can affect the yield of debt‑security investments  

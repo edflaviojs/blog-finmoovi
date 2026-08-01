@@ -33,7 +33,7 @@ Bitcoin (BTC) is the first and most well-known cryptocurrency in the world. It w
 
 ## How much to invest?
 
-The general recommendation is: **up to 5% of your assets** in cryptocurrencies. Never invest [money](/en/posts/en-30-day-rule-for-purchases) that you cannot afford to lose. Bitcoin is highly volatile.
+The general recommendation is: **up to 5% of your assets** in cryptocurrencies. Never [invest](/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026) [money](/en/posts/en-30-day-rule-for-purchases) that you cannot afford to lose. Bitcoin is highly volatile.
 
 ## How to buy in Brazil
 

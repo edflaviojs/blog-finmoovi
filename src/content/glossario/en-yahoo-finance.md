@@ -78,7 +78,7 @@ Starting to use Yahoo Finance is as simple as opening a messaging app. First, 
 
 - Access yahoo.com/finance or download the “Yahoo Finance” app from your phone’s store  
 - Enter the ticker (code) of the stock or fund you want to follow, for example “AAPL” for Apple  
-- Click “Add to list” to create your “watchlist” with the assets that interest you most  
+- Click “Add to list” to create your “watchlist” with the assets that [interest](/en/glossario/en-interest) you most  
 - Set price alerts: choose the percentage change that triggers the notification  
 - Explore the “News” tab to stay informed about events that may impact your investments  
 

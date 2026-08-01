@@ -27,13 +27,13 @@ Imagine you’re the owner of a small workshop that makes custom furniture. Ever
 
 ## What counts as a fixed expense?
 
-A fixed expense is a cost that stays the same (or changes very predictably) every month, regardless of how much you produce or sell. It’s the financial equivalent of a subscription you can’t cancel without serious consequences.
+A [fixed expense](/en/glossario/en-fixed-expense) is a cost that stays the same (or changes very predictably) every month, regardless of how much you produce or sell. It’s the financial equivalent of a subscription you can’t cancel without serious consequences.
 
 - Rent or lease payments for the premises
 - Utilities that have a base charge (electricity, water, internet)
 - Salaries of permanent staff
 - Insurance premiums
-- Loan repayments
+- [Loan](/en/glossario/en-loan) repayments
 - Software subscriptions with a monthly fee
 - Property taxes or municipal fees
 
@@ -53,7 +53,7 @@ When you know exactly how much you spend on fixed items, you can:
 
 - **Set realistic profit targets** – you’ll know the minimum revenue needed to cover those costs.
 - **Identify negotiation opportunities** – a lease that’s been the same for years might be ripe for a discount.
-- **Avoid cash‑flow surprises** – by planning for the inevitable, you won’t be caught off guard when a bill arrives.
+- **Avoid cash‑flow surprises** – by [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) for the inevitable, you won’t be caught off guard when a bill arrives.
 
 Missing a single fixed expense can throw off your entire financial picture, especially for small businesses where every dollar counts.
 
@@ -61,11 +61,11 @@ Missing a single fixed expense can throw off your entire financial picture, espe
 
 Here’s where a friend‑like app called FinMoovi steps in. Its standout feature is **smart capture**: you simply snap a photo of a receipt or speak the amount, and the app instantly categorizes the expense for you. No more manual entry, no more guessing which bill belongs to which category.
 
-- **Automatic categorization** – the AI reads the receipt, recognizes the vendor, and tags it as “Rent” or “Insurance” without you lifting a finger.
-- **Multi‑currency support** – whether you pay in dollars, euros, or any other currency, FinMoovi converts everything to your base currency for a unified view.
+- **[Automatic categorization](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o)** – the AI reads the receipt, recognizes the vendor, and tags it as “Rent” or “Insurance” without you lifting a finger.
+- **[Multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) support** – whether you pay in dollars, euros, or any other currency, FinMoovi converts everything to your base currency for a unified view.
 - **Cash‑flow reports** – see a real‑time graph of incoming and outgoing money, with fixed expenses highlighted in a distinct color.
 - **Monthly planning & goals** – set a target for how much you want to keep as profit after covering all fixed costs.
-- **Credit‑card integration** – link your business cards and let the app pull statements automatically.
+- **[Credit](/en/glossario/en-credit)‑card integration** – link your business cards and let the app pull statements automatically.
 - **Shopping mode** – create a purchase list, and as you add items, FinMoovi shows the running total, helping you stay within budget.
 - **Reminders & balance alerts** – get notified a day before a recurring bill is due, so you never miss a payment.
 - **Offline/PWA sync** – even without internet, you can capture receipts; they’ll sync automatically once you’re back online.

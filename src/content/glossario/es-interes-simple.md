@@ -30,7 +30,7 @@ R$ 1.000 al 10% anual por 3 años (intereses simples):
 - Intereses = 1.000 × 0,10 × 3 = R$ 300
 - Total: R$ 1.300
 
-Comparar con intereses compuestos:
+Comparar con [intereses compuestos](/es/posts/es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026):
 - Año 1: 1.000 × 1,10 = R$ 1.100
 - Año 2: 1.100 × 1,10 = R$ 1.210
 - Año 3: 1.210 × 1,10 = R$ 1.331

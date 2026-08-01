@@ -12,7 +12,7 @@ readingTime: 1
 
 ## ¿Qué son los [Juros](/es/glossario/es-interes) compuestos?
 
-Los intereses compuestos son intereses calculados sobre el [valor](/es/glossario/es-valor-financiero) original **más** los intereses ya acumulados. A diferencia de los intereses simples (que inciden solo sobre el valor inicial), los compuestos crecen exponencialmente.
+Los [intereses compuestos](/es/posts/es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026) son intereses calculados sobre el [valor](/es/glossario/es-valor-financiero) original **más** los intereses ya acumulados. A diferencia de los intereses simples (que inciden solo sobre el valor inicial), los compuestos crecen exponencialmente.
 
 ## Ejemplo práctico
 

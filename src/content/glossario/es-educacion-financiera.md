@@ -54,6 +54,6 @@ Desafortunadamente, la educación financiera no es prioridad en el currículo es
 2. Monte un [presupuesto](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) simple
 3. Pague deudas caras (cheque especial, rotativo)
 4. Monte una reserva de emergencia
-5. Empiece a invertir (incluso R$ 50/mes)
+5. Empiece a [invertir](/es/posts/es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026) (incluso R$ 50/mes)
 6. Lea 1 libro de finanzas por trimestre
 7. Use el [FinMoovi](/es/posts/es-5-alternativas-al-mobills-en-2026) para automatizar el control

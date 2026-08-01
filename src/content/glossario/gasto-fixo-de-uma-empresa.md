@@ -19,7 +19,7 @@ seo:
 
 ## Por que os gastos fixos tiram seu sono  
 
-Você já percebeu que, mesmo quando as vendas estão boas, o caixa parece “sugar” dinheiro como se fosse um buraco negro? A sensação de não saber para onde vai aquele valor que deveria estar disponível para investir ou pagar fornecedores costuma aparecer quando os gastos fixos da empresa são ignorados ou subestimados. É como ter um aluguel de um café por dia que você nem lembra de pagar, mas que, somado ao longo do mês, compromete quase metade do seu orçamento. Essa preocupação constante é o ponto de partida para entender o que realmente são os gastos fixos e como mantê‑los sob controle.
+Você já percebeu que, mesmo quando as vendas estão boas, o caixa parece “sugar” dinheiro como se fosse um buraco negro? A sensação de não saber para onde vai aquele valor que deveria estar disponível para [investir](/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026) ou pagar fornecedores costuma aparecer quando os gastos fixos da empresa são ignorados ou subestimados. É como ter um aluguel de um café por dia que você nem lembra de pagar, mas que, somado ao longo do mês, compromete quase metade do seu orçamento. Essa preocupação constante é o ponto de partida para entender o que realmente são os gastos fixos e como mantê‑los sob controle.
 
 ![Por que os gastos fixos tiram seu sono  ](/images/glossario/gasto-fixo-de-uma-empresa-inline-1.webp)
 
@@ -35,7 +35,7 @@ Gastos fixos são despesas que permanecem praticamente iguais mês a mês, indep
 - Licenças de software e serviços de assinatura  
 - Seguros e impostos que têm valores fixos ou calculados sobre bases estáveis  
 
-Essas despesas são “fixas” porque não variam com a produção. Elas são diferentes dos custos variáveis, como matéria‑prima ou comissões, que mudam de acordo com a quantidade vendida. Saber diferenciar esses dois tipos ajuda a montar um plano de caixa realista e a evitar surpresas desagradáveis.
+Essas despesas são “fixas” porque não variam com a produção. Elas são diferentes dos [custos](/posts/previdencia-privada-2026-vale-a-pena-guia-pratico) variáveis, como matéria‑prima ou comissões, que mudam de acordo com a quantidade vendida. Saber diferenciar esses dois tipos ajuda a montar um plano de caixa realista e a evitar surpresas desagradáveis.
 
 ## Como identificar seus gastos fixos  
 
@@ -51,7 +51,7 @@ Primeiro, faça um levantamento rápido das contas que chegam todo mês sem gran
 - **Software de gestão** – assinatura mensal semelhante ao custo de um streaming de música  
 - **Seguros** – valor de um seguro de carro básico  
 
-**Dica prática:** Use a captura inteligente do FinMoovi para fotografar a nota fiscal ou enviar uma gravação de voz descrevendo a despesa; o app categoriza automaticamente como “gasto fixo”. Assim, você ganha tempo e evita erros de classificação.
+**Dica prática:** Use a captura inteligente do FinMoovi para fotografar a nota fiscal ou enviar uma gravação de voz descrevendo a despesa; o app categoriza automaticamente como “[gasto fixo](/glossario/gasto-fixo)”. Assim, você ganha tempo e evita erros de classificação.
 
 ## Impacto no fluxo de caixa  
 
@@ -61,13 +61,13 @@ Com o FinMoovi, você tem acesso a relatórios de fluxo de caixa que mostram, em
 
 ## Ferramentas que ajudam: o FinMoovi  
 
-O FinMoovi foi pensado para quem quer transformar a gestão financeira em algo simples, como conversar com um amigo. Veja como algumas funcionalidades se encaixam na rotina de controle dos gastos fixos:
+O FinMoovi foi pensado para quem quer transformar a [gestão financeira](/posts/5-alternativas-ao-mobills-em-2026) em algo simples, como conversar com um amigo. Veja como algumas funcionalidades se encaixam na rotina de controle dos gastos fixos:
 
 - **Captura inteligente** – tire foto da nota ou grave a voz descrevendo a despesa; o app reconhece o valor e a categoria automaticamente.  
 - **Multimoeda** – registre despesas em reais, dólares ou euros; o app converte usando a taxa do dia, mantendo tudo organizado.  
 - **Fluxo de caixa e relatórios** – visualize, em gráficos claros, quanto do seu dinheiro está comprometido com custos fixos versus variáveis.  
-- **Planejamento mensal / metas** – defina um limite para gastos fixos e acompanhe o desempenho ao longo do mês.  
-- **Cartões de crédito / fatura** – importe extratos e veja como as parcelas de despesas fixas impactam a fatura.  
+- **[Planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) mensal / metas** – defina um limite para gastos fixos e acompanhe o desempenho ao longo do mês.  
+- **Cartões de [crédito](/glossario/credito) / fatura** – importe extratos e veja como as parcelas de despesas fixas impactam a fatura.  
 - **Modo compras** – crie listas de compras e veja o total em tempo real, evitando surpresas ao fechar a conta.  
 - **Lembretes / alertas de saldo** – receba notificações quando um gasto fixo está próximo de ultrapassar o orçamento definido.  
 - **Offline / PWA / sincronização** – registre despesas mesmo sem internet; ao reconectar, tudo se sincroniza automaticamente.  
