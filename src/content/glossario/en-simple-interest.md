@@ -1,6 +1,7 @@
 ---
 term: "Simple Interest"
 image: "/images/glossario/en-juros-simples.webp"
+imageAlt: "A glass jar with a plant growing in it, surrounded by stacks of gold coins."
 definition: "Interest calculated only on the initial principal amount. Unlike compound interest, it does not generate interest on interest."
 category: "basico"
 locale: "en"

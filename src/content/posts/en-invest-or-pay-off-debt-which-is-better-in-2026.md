@@ -3,6 +3,7 @@ title: "Invest or Pay Off Debt: Which Is Better in 2026?"
 description: "Discover when it’s smarter to invest or pay off debt, with a practical comparison, real‑life examples, and tips using FinMoovi. (154 chars)"
 tickerHeadline: "The choice that saves your wallet"
 image: "/images/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Brown notebook, black calculators, coins, and green plants on white marble surface."
 category: "investimentos"
 locale: "en"
 tags: ["invest","pay off debt","personal finance","financial planning","FinMoovi","compound interest","good debt","invest or pay debt"]

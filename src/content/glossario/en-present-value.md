@@ -1,6 +1,7 @@
 ---
 term: "Present Value"
 image: "/images/glossario/en-valor-presente.webp"
+imageAlt: "Stacks of gold coins, white piggy bank, and jar with plant sprout."
 definition: "The current worth of a future sum of money, discounted at a specific interest rate. A fundamental concept in financial analysis."
 category: "mercado"
 locale: "en"

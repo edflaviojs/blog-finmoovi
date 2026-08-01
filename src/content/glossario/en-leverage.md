@@ -5,6 +5,7 @@ category: "mercado"
 locale: "en"
 translationKey: "glossario-alavancagem"
 image: "/images/glossario/alavancagem.webp"
+imageAlt: "Gold coins and bars beside a glass jar with a growing plant."
 relatedTerms: ["Risco","Investimento","Dívida"]
 publishedAt: 2026-06-13
 ---

@@ -1,6 +1,7 @@
 ---
 term: "Overdraft"
 image: "/images/glossario/en-cheque-especial.webp"
+imageAlt: "Gold coins stacked as bars and in glass vases with green plants."
 definition: "A pre-approved credit line linked to your checking account. One of the most expensive forms of credit in Brazil."
 category: "credito"
 locale: "en"

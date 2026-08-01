@@ -3,6 +3,7 @@ title: "Investir vs Quitar dívidas: qual vale mais a pena em 2026?"
 description: "Descubra quando é melhor aplicar seu dinheiro ou pagar dívidas, com comparativo prático, exemplos reais e dicas usando o FinMoovi."
 tickerHeadline: "A escolha que salva seu bolso"
 image: "/images/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Caderno marrom, calculadora, moedas e plantas verdes sobre superfície branca de mármore."
 category: "investimentos"
 locale: "pt"
 tags: ["investir","quitar dívidas","finanças pessoais","planejamento financeiro","FinMoovi","juros compostos","dívida boa","investir ou pagar dívida"]

@@ -1,6 +1,7 @@
 ---
 term: "SAC Amortization Table"
 image: "/images/glossario/en-tabela-sac.webp"
+imageAlt: "A glass jar filled with coins, surrounded by stacks of gold coins on a dark blue surface."
 definition: "Constant Amortization System. A loan repayment method where installments decrease over time as the principal is reduced."
 category: "credito"
 locale: "en"

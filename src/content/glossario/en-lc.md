@@ -4,6 +4,7 @@ definition: "Understand what lc is, how it works, advantages, risks and practica
 title: "lc - Financial Glossary"
 description: "Understand what lc is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/lc.webp"
+imageAlt: "Gold coins, bar chart, and plant in glass on dark gradient background"
 category: "basico"
 tags: ["lc", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

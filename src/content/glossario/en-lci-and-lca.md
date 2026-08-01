@@ -1,6 +1,7 @@
 ---
 term: "LCI and LCA"
 image: "/images/glossario/en-lci-e-lca.webp"
+imageAlt: "Gold coins, piggy bank, and plants with yellow text L.CÁ on purple background"
 definition: "Real Estate Credit Letters (LCI) and Agribusiness Credit Letters (LCA). Fixed-income investments exempt from income tax for individuals."
 category: "investimentos"
 locale: "en"

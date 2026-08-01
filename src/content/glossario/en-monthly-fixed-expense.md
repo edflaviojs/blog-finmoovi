@@ -4,6 +4,7 @@ definition: "What monthly fixed expense is and how it shows up in your everyday 
 title: "monthly fixed expense - Financial Glossary"
 description: "What monthly fixed expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/gasto-fixo-mensal.webp"
+imageAlt: "Gold coins stacked beside a glass jar with a green plant."
 category: "basico"
 tags: ["monthly fixed expense", "glossary", "finance"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Understand what bônus is, how it works, advantages, risks and prac
 title: "salary bonus - Financial Glossary"
 description: "Understand what bônus is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/bonus.webp"
+imageAlt: "A glass jar with a Bitcoin logo, filled with coins and a plant growing out of it."
 category: "basico"
 tags: ["salary bonus", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

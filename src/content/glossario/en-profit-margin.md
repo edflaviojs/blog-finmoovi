@@ -1,6 +1,7 @@
 ---
 term: "Profit Margin"
 image: "/images/glossario/en-margem-de-lucro.webp"
+imageAlt: "Gold coin stacks and jar with plant on dark gradient background"
 definition: "The percentage of revenue that remains as profit after deducting all costs and expenses of a business."
 category: "basico"
 locale: "en"

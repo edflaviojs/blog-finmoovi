@@ -4,6 +4,7 @@ definition: "Understand what savings is, how it works, advantages, risks and pra
 title: "Savings - Financial Glossary"
 description: "Understand what savings is, how it works, advantages, risks and practical examples."
 image: "/images/glossario/poupanca.webp"
+imageAlt: "A collection of gold coins and a glass jar with a plant growing out of it on a dark surface."
 category: "basico"
 tags: ["savings", "glossary", "finance"]
 author: "FinMoovi"

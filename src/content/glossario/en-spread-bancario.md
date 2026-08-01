@@ -1,6 +1,7 @@
 ---
 term: "Spread Bancário"
 image: "/images/glossario/en-spread-bancario.webp"
+imageAlt: "A book open on a table with gold coins and a plant in a jar."
 definition: "The spread bancário is the difference between the value that a bank pays to borrow money and the value that it charges to lend the same money. This means that banks make money from the difference between these two rates."
 category: "credito"
 locale: "en"

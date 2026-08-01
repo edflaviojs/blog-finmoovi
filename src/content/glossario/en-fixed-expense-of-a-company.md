@@ -4,6 +4,7 @@ definition: "What fixed expense of a company is and how it shows up in your ever
 title: "fixed expense of a company - Financial Glossary"
 description: "What fixed expense of a company is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/gasto-fixo-de-uma-empresa.webp"
+imageAlt: "Gold coins, bar chart, glass piggy bank, and plant in jar on blue surface."
 category: "basico"
 tags: ["fixed expense of a company", "glossary", "finance"]
 author: "FinMoovi"

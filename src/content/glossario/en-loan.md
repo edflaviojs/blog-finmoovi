@@ -4,6 +4,7 @@ definition: "Money you borrow now and pay back over time in installments, plus a
 title: "Loan - Financial Glossary"
 description: "What a loan is and how each installment shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/emprestimo.webp"
+imageAlt: "Gold coins stacked beside glass jar with growing green plant sprout."
 category: "basico"
 tags: ["loan", "glossary", "finance"]
 author: "FinMoovi"

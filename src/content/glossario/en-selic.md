@@ -4,6 +4,7 @@ definition: "Understand what selic is, how it works, advantages, risks and pract
 title: "selic - Financial Glossary"
 description: "Understand what selic is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/selic.webp"
+imageAlt: "A dark blue and purple background with gold coins, a piggy bank, and a plant in a jar."
 category: "basico"
 tags: ["selic", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

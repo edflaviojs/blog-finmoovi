@@ -1,6 +1,7 @@
 ---
 term: "Know Your Customer (KYC)"
 image: "/images/glossario/en-know-your-customer.webp"
+imageAlt: "Gold coins stacked in a bar chart and a glass jar with a green plant."
 definition: "A verification process used by financial institutions to confirm the identity of their clients and prevent fraud and money laundering."
 category: "mercado"
 locale: "en"

@@ -5,6 +5,7 @@ category: "mercado"
 locale: "en"
 translationKey: "glossario-p-l-preco-lucro"
 image: "/images/glossario/p-l-preco-lucro.webp"
+imageAlt: "Stacks of gold coins, a jar, and a glass with sprouting plants on dark blue background."
 relatedTerms: ["Lucro por Ação","Preço de Ação","Retorno sobre o Patrimônio Líquido"]
 publishedAt: 2026-06-09
 ---

@@ -3,6 +3,7 @@ title: "Invertir vs pagar deudas: ¿qué conviene más en 2026?"
 description: "Descubre cuándo es más rentable invertir o liquidar deudas, con ejemplos reales y consejos prácticos usando FinMoovi."
 tickerHeadline: "La elección que salva tu bolsillo"
 image: "/images/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026.webp"
+imageAlt: "Calculadora negra, monedas, cuaderno marrón y plantas verdes sobre superficie de mármol blanco."
 category: "investimentos"
 locale: "es"
 tags: ["invertir","pagar deudas","finanzas personales","planificación financiera","FinMoovi","intereses compuestos","deuda buena","invertir o pagar deuda"]

@@ -1,6 +1,7 @@
 ---
 term: "Liquidity"
 image: "/images/glossario/en-liquidez.webp"
+imageAlt: "Gold coins, pink chart, and plant in glass vase on dark blue background."
 definition: "The ease and speed with which an asset can be converted into cash without significant loss of value."
 category: "investimentos"
 locale: "en"

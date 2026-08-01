@@ -4,6 +4,7 @@ definition: "Understand what moeda is, how it works, advantages, risks and pract
 title: "moeda - Financial Glossary"
 description: "Understand what moeda is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/moeda.webp"
+imageAlt: "Stacks of gold coins with an upward arrow and a plant in a glass jar."
 category: "basico"
 tags: ["moeda", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
