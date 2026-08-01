@@ -596,8 +596,25 @@ const PALAVRAS_POR_SEGUNDO = 2.6;
  * (foi medida noutro vídeo, a 2,59) e fica como está de propósito: errar para o lado
  * do vídeo mais curto é seguro, errar para o outro estoura os 60s do YouTube.
  */
-const MIN_PALAVRAS = 110; // ≈ 42s de fala
-const MAX_PALAVRAS = 130; // ≈ 50s de fala
+/**
+ * ⚠️ A JANELA ALARGOU DE 110-130 PARA 120-140 (01/08/2026, à tarde) — e é medição,
+ * não gosto.
+ *
+ * De manhã cortei para 110-130 para dar espaço à capa e aos respiros. À tarde,
+ * quando o dono pediu o tom de *"gerente de banco a explicar a um senhor humilde"*,
+ * a conta virou-se contra mim: **falar como gente gasta mais palavras**. "Olha, tem
+ * três errinhos no cartão que parecem pedra na mochila" diz o mesmo que "Três erros
+ * de cartão são pedras na mochila" com o dobro do calor e mais 5 palavras.
+ * Resultado medido: o gerador falhou as 4 tentativas, a primeira por 140 palavras.
+ *
+ * A conta refeita com o vídeo REAL de hoje (49,5s com 122 palavras):
+ *   total = palavras ÷ 2,76 + 5,6s (capa + respiros + assinatura)
+ *   140 palavras → 50,7s de fala → **56,3s de vídeo**. O limite do YouTube é 60s.
+ * Havia quase 10 segundos de folga a não ser usados, e era o tamanho — não o tom —
+ * que estava a apertar o texto.
+ */
+const MIN_PALAVRAS = 120; // ≈ 46s de fala
+const MAX_PALAVRAS = 140; // ≈ 51s de fala → ~56s de vídeo
 
 /**
  * O FIO CONDUTOR PRECISA SER DITO, não só declarado (31/07/2026).
@@ -780,11 +797,26 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     }
   }
 
-  for (let i = 1; i < blocos.length; i++) {
-    const antes = assuntoDe(blocos[i - 1]?.fala || '');
+  /**
+   * ⚠️ A CORRENTE É EXIGIDA NA ESPINHA DA HISTÓRIA (blocos 1→2→3→4), NÃO ATRAVÉS DO
+   * CONVITE. Corrigido na tarde de 01/08 depois de o gerador falhar 4 tentativas.
+   *
+   * O bloco 5 é a chamada para ação — "comenta FINMOOVI aqui" — e é, por desenho,
+   * uma PAUSA na história: o seu vocabulário é o do pedido, não o do assunto.
+   * Exigir que a história passe por dentro dele era lutar contra o próprio formato,
+   * e foi o que derrubou a 3ª tentativa.
+   * O fecho continua preso à história — só que ao CORPO dela (qualquer um dos
+   * blocos 1 a 4), e não à frase do convite que o antecede.
+   */
+  const ligaCom = (i, candidatos) => {
     const agora = assuntoDe(blocos[i]?.fala || '');
-    const comum = [...agora].filter((p) => antes.has(p));
-    if (!comum.length) {
+    return candidatos.some((j) => {
+      const antes = assuntoDe(blocos[j]?.fala || '');
+      return [...agora].some((p) => antes.has(p));
+    });
+  };
+  for (const i of [1, 2, 3]) {
+    if (!ligaCom(i, [i - 1])) {
       erros.push(
         `o bloco ${i + 1} (${PAPEIS[i]}) não pega em NADA do bloco ${i} (${PAPEIS[i - 1]}) — `
         + 'é uma frase solta, não a continuação da história. Abra o bloco retomando aquilo '
@@ -792,6 +824,12 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
         + 'vilão, comece por "o vilão escondido é...").',
       );
     }
+  }
+  if (blocos.length === 6 && !ligaCom(5, [0, 1, 2, 3])) {
+    erros.push(
+      'o fecho não retoma NADA da história (blocos 1 a 4) — ele é quem fecha o que foi contado. '
+      + 'Volte à imagem e à dor do início, com todas as letras.',
+    );
   }
 
   /**
@@ -972,8 +1010,16 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
           + `Diga-a já na primeira frase (ex.: ${pistas.slice(0, 3).join(', ')}…).`,
         );
       }
-      if (blocosComFio < 3) {
-        erros.push(`o fio condutor "${fio}" aparece em ${blocosComFio} bloco(s) — ele precisa CRESCER ao longo do vídeo: pequeno no início, forte na virada, pago no fecho (mínimo 3 blocos)`);
+      /**
+       * ⚠️ VOLTOU A 2, depois de eu o ter subido para 3 nesta mesma manhã.
+       * A exigência de 3 blocos derrubou uma das 4 tentativas do gerador, e não
+       * paga o que custa: **com o bloco 1 agora obrigatório**, "2 blocos" já
+       * significa "abre o vídeo e volta pelo menos uma vez". O crescimento da
+       * imagem é trabalho do prompt, não de mais uma trava — foi a acumular travas
+       * que o roteiro deixou de passar de todo.
+       */
+      if (blocosComFio < 2) {
+        erros.push(`o fio condutor "${fio}" aparece em 1 bloco só — ele precisa CRESCER: abre no início e volta, pelo menos, na virada ou no fecho`);
       }
 
       /**
