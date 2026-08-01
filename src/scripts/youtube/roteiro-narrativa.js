@@ -21,7 +21,7 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
-import { BORDAO, METAPHORS } from './lib/schema-short.js';
+import { BORDAO, METAPHORS, longestSharedWordRun } from './lib/schema-short.js';
 /**
  * ⚠️ IMPORTADO DA PASSAGEM 2 DE PROPÓSITO, e não copiado.
  *
@@ -273,6 +273,11 @@ Fale COM ele, não SOBRE o assunto: "olha", "sabe", "presta atenção", "calma",
    ✗ "O erro é uma pedra na mochila."     ✓ "O erro é tipo uma pedra que entra na mochila."
    ✗ "A dívida é uma bola de ferro."      ✓ "A dívida parece uma bola de ferro no pé."
 
+⛔ **A IMAGEM NÃO PODE CONTRADIZER-SE.** Ela tem de funcionar do princípio ao fim, com a física dela.
+   ✗ "…é o pequeno que fica lá meses, ESVAZIANDO a mochila um pouquinho de cada vez." (uma mochila com pedras fica mais PESADA, nunca mais vazia — a imagem parte-se ao meio)
+   ✓ "…é o pequeno que fica lá meses, pondo mais uma pedra de cada vez."
+   Antes de entregar, pergunte: o que a minha imagem faz é o que ela faria na vida real?
+
 ⛔ **PALAVRAS DE ESCRITÓRIO NÃO ENTRAM.** Drenagem, solução, estratégia, mecanismo, processo, impacto, gestão, otimizar, efetivamente, realizar, utilizar, adquirir. Troque por como se diz na rua: em vez de "parar essa drenagem", "parar de perder esse dinheiro".
 
 SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (42 a 50 segundos).
@@ -324,14 +329,10 @@ TESTE OBRIGATÓRIO: tape o bloco anterior e leia só este. Se ele fizer sentido 
    Por quê: a 2ª frase responde à 1ª, a 3ª explica a 2ª. Ninguém consegue sair no meio.
 
 ════════ UM VÍDEO INTEIRO, PARA VOCÊ VER A FORMA ════════
-⛔ A imagem deste exemplo — **pneu murcho** — NÃO está na sua lista. É de propósito: copie a FORMA e o TOM, nunca a imagem nem as frases. Se "pneu" aparecer no seu texto, o roteiro é rejeitado.
+🔥 **ESTE EXEMPLO AUTODESTRÓI-SE.** Copie a FORMA e o TOM. **Se você repetir CINCO PALAVRAS SEGUIDAS de qualquer frase abaixo, o roteiro é rejeitado** — sem exceção, e o computador confere. O canal publica todos os dias: se cada vídeo repetir estas frases, todos soam iguais.
+⛔ A imagem do exemplo — **pneu murcho** — também NÃO está na sua lista. Se "pneu" aparecer no seu texto, é rejeitado.
 
-  1. "Olha, tem três descontos na sua conta que são que nem pneu murcho: você anda, mas anda devagar. São duzentos reais por mês que somem sem você ver. Qual será o pior deles?"
-  2. "O pior é o que você nem lembra que assinou. A vida corre, ninguém te ensinou a olhar isso, e o pneu vai perdendo ar caladinho."
-  3. "Só que não é o desconto grande que te para. É o pequeno, que fica lá meses, esvaziando o pneu um pouquinho de cada vez."
-  4. "No FinMoovi você abre a conta e ele te mostra esses pequenos, um por um, com o valor do lado. Aí você vê o pneu murchando."
-  5. "Quer ver os seus? Comenta FINMOOVI aqui que eu te mando a calculadora do blog."
-  6. "Os duzentos reais voltam quando você tira os pequenos da frente — é o pneu cheio de novo. Dinheiro sem controle é dinheiro dos outros."
+${EXEMPLO_DE_FORMA.map((f, i) => `  ${i + 1}. "${f}"`).join('\n')}
 
 Repare no que esse exemplo faz, porque é isso que se pede a você:
 · o assunto e a imagem estão juntos na PRIMEIRA frase, e a imagem entra comparada ("que nem"), nunca definida;
@@ -435,6 +436,48 @@ Responda APENAS com JSON válido, sem markdown:
 
 // ─── validação: só o que é do TEXTO ──────────────────────────────────────────
 const PAPEIS = ['gancho', 'empatia', 'virada', 'demonstracao', 'convite', 'fecho'];
+
+/**
+ * O VÍDEO-EXEMPLO — e a razão de viver aqui, numa constante, e não escrito à mão
+ * dentro do prompt.
+ *
+ * Foi ele que finalmente destravou o TOM que o dono pediu (*"um gerente de banco
+ * falando de forma muito simples com um senhor muito humilde"*): sem um roteiro
+ * COMPLETO à frente, o modelo cumpria as regras e continuava a escrever cartazes.
+ *
+ * ⚠️ E logo na geração seguinte veio a fatura: ele copiou-o quase à letra —
+ * "ninguém te ensinou a olhar isso", "que fica lá meses", "um pouquinho de cada
+ * vez", "um por um, com o valor do lado". Já tinha acontecido em 31/07 (8 gerações
+ * em 8 copiaram o exemplo da semente). Num canal que publica todos os dias, isso
+ * significa **o mesmo texto todos os dias** — exatamente a repetição que o dono
+ * quis evitar quando escolheu 32 capas em vez de 8.
+ *
+ * Por isso o exemplo está AQUI: o prompt lê-o para ensinar, e o validador lê-o
+ * para PUNIR quem o copiar. Uma fonte só — se vivesse em dois sítios, um dia
+ * mudava-se um e a trava passava a defender um texto que já não existe.
+ */
+const EXEMPLO_DE_FORMA = [
+  'Olha, tem três descontos na sua conta que são que nem pneu murcho: você anda, mas anda devagar. São duzentos reais por mês que somem sem você ver. Qual será o pior deles?',
+  'O pior é o que você nem lembra que assinou. A vida corre, ninguém te ensinou a olhar isso, e o pneu vai perdendo ar caladinho.',
+  'Só que não é o desconto grande que te para. É o pequeno, que fica lá meses, esvaziando o pneu um pouquinho de cada vez.',
+  'No FinMoovi você abre a conta e ele te mostra esses pequenos, um por um, com o valor do lado. Aí você vê o pneu murchando.',
+  'Quer ver os seus? Comenta FINMOOVI aqui que eu te mando a calculadora do blog.',
+  `Os duzentos reais voltam quando você tira os pequenos da frente — é o pneu cheio de novo. ${BORDAO}`,
+];
+
+/**
+ * O TEXTO CONTRA O QUAL SE MEDE A CÓPIA — e repare no que fica DE FORA.
+ *
+ * · O bloco 5 (o convite) sai: "comenta FINMOOVI aqui que eu te mando" é o molde
+ *   que o próprio prompt manda usar. Puni-lo seria reprovar quem obedece — o modo
+ *   de falha crónico deste repositório.
+ * · O bordão sai pela mesma razão: é obrigatório dizê-lo, à letra.
+ * Sobra a ESCRITA — que é o que tem de ser original em cada vídeo.
+ */
+const EXEMPLO_PARA_COMPARAR = [
+  EXEMPLO_DE_FORMA[0], EXEMPLO_DE_FORMA[1], EXEMPLO_DE_FORMA[2], EXEMPLO_DE_FORMA[3],
+  EXEMPLO_DE_FORMA[5].replace(BORDAO, ''),
+].join(' ');
 
 /**
  * NUMERAL POR EXTENSO MAL ESCRITO — mecânico, logo LIMPA (31/07/2026).
@@ -906,6 +949,31 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     erros.push(
       `a fala usa palavra de escritório: "${encontradas.join('", "')}" — ninguém diz isso a conversar. `
       + 'Troque pelo que se diz na rua (ex.: "parar essa drenagem" → "parar de perder esse dinheiro").',
+    );
+  }
+
+  /**
+   * A TRAVA ANTI-CÓPIA — o exemplo tem de se QUEIMAR (aprovada pelo dono, 01/08).
+   *
+   * O vídeo-exemplo destravou o tom e, na geração seguinte, foi copiado quase à
+   * letra. Num canal diário isso é o mesmo texto todos os dias.
+   *
+   * SEIS palavras seguidas, e o número foi CALIBRADO, não escolhido.
+   * A 5, apanhava as cópias reais — "a vida corre ninguém te ensinou a olhar isso"
+   * (11 palavras) — mas apanhava também **"no FinMoovi você abre a"**, que é uma
+   * frase legítima: o nome do produto é obrigatório e empurra sempre para a mesma
+   * construção. Punir isso seria reprovar quem obedece.
+   * A 6, as cópias verdadeiras continuam todas apanhadas (as medidas tinham 6, 8 e
+   * 11 palavras) e a coincidência à volta da marca deixa de reprovar.
+   *
+   * ⚠️ O convite e o bordão estão FORA da comparação de propósito — são moldes que
+   * o próprio prompt manda usar (ver EXEMPLO_PARA_COMPARAR).
+   */
+  const copiado = longestSharedWordRun(falaToda, EXEMPLO_PARA_COMPARAR, 6);
+  if (copiado.length) {
+    erros.push(
+      `você copiou o exemplo: "${copiado.join(' ')}" — o exemplo serve para ver a FORMA, não para reaproveitar frases. `
+      + 'Este canal publica todos os dias; se cada vídeo repetir as mesmas frases, todos ficam iguais. Escreva com as suas palavras.',
     );
   }
 
