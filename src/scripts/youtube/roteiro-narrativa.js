@@ -1273,6 +1273,33 @@ const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
  */
 const SOBRE_TAMANHO = /narração (curta|longa) demais/;
 
+/**
+ * O CORRETIVO PEDE CIRURGIA, NÃO REESCRITA (02/08/2026) — e a causa está medida.
+ *
+ * A ordem anterior acabava em *"reescrevendo a narração inteira"*. MEDIDO em duas
+ * corridas reais de hoje, que falharam as 4 tentativas: o gerador oscilava entre DOIS
+ * defeitos, sempre os mesmos. Tentativa 1 copia uma frase do exemplo → mandam-no
+ * reescrever tudo → tentativa 2 já não copia mas tem 145 palavras → reescreve tudo
+ * outra vez → tentativa 3 volta a copiar. Conserta a queixa e parte o que já estava bem.
+ *
+ * A queixa costuma ser de UMA frase; a ordem é que era do texto todo. Isto não é trava
+ * nova nem regra nova sobre o que escrever — é dizer-lhe ONDE mexer. Uma frase trocada
+ * pelo mesmo número de palavras não mexe no tamanho, e o pêndulo perde as duas pernas.
+ *
+ * Vive numa função só porque o mesmo aviso é usado no erro de JSON e no de validação —
+ * escritos à mão em dois sítios, um dia divergiam.
+ */
+export function montarCorretivo(exigencias) {
+  return [
+    '⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo:',
+    ...exigencias,
+    '',
+    '⛔ **MEXA SÓ NO QUE ESTÁ APONTADO ACIMA.** Todo o resto — cada bloco e cada frase de que ninguém se queixou — volta EXATAMENTE IGUAL, palavra por palavra.',
+    'Reescrever o texto todo é o que faz este roteiro falhar: você conserta a queixa e parte outra coisa que já estava certa.',
+    'Se a queixa for uma frase copiada do exemplo, troque SÓ essa frase por outra sua, **com mais ou menos o mesmo número de palavras** — o resto do bloco fica como está.',
+  ].join('\n');
+}
+
 export function acumularExigencias(exigencias, novosErros) {
   const novas = novosErros.map((e) => `- ${e}`);
   if (novas.some((e) => SOBRE_TAMANHO.test(e))) {
@@ -1302,7 +1329,7 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
       n = extrairJson(bruto);
     } catch (err) {
       exigencias.push(`- devolva JSON válido (${err.message})`);
-      corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo:\n${[...new Set(exigencias)].join('\n')}`;
+      corretivo = montarCorretivo([...new Set(exigencias)]);
       continue;
     }
     // limpeza mecanica ANTES de validar: o que da para consertar por codigo nao
@@ -1342,7 +1369,7 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
     }
     // ver `acumularExigencias`: o tamanho substitui, o resto acumula
     const lista = acumularExigencias(exigencias, v.erros);
-    corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo, reescrevendo a narração inteira:\n${lista.join('\n')}`;
+    corretivo = montarCorretivo(lista);
     console.log(`  ⚠ tentativa ${i}/${tentativas} reprovada: ${v.erros.join(' | ')}`);
   }
   throw new Error(`narração não passou na validação após ${tentativas} tentativas`);
