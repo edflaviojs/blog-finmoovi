@@ -21,7 +21,17 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
-import { BORDAO, METAPHORS, longestSharedWordRun } from './lib/schema-short.js';
+import { BORDAO, METAPHORS } from './lib/schema-short.js';
+/**
+ * ⚠️ IMPORTADO DA PASSAGEM 2 DE PROPÓSITO, e não copiado.
+ *
+ * É esta função que a passagem 2 usa para decidir se o gancho diz alguma palavra do
+ * tema. Se aqui houvesse uma cópia, as duas passagens acabariam a divergir — e é
+ * exatamente esse o modo de falha crónico deste repositório. Uma regra, um sítio.
+ * (Não há ciclo: `coreografia.js` só importa este ficheiro dentro do bloco de
+ * execução direta, e por importação dinâmica.)
+ */
+import { keywordFalada } from './coreografia.js';
 import { loadRecentPublishedContext } from './roteiro-short.js';
 import { montarFichaDeNumeros } from './lib/simulador.js';
 import { readFileSync, existsSync } from 'fs';
@@ -293,7 +303,12 @@ TESTE OBRIGATÓRIO: tape o bloco anterior e leia só este. Se ele fizer sentido 
 
 ════════ A ESPINHA (6 blocos, nesta ordem) ════════
 1. GANCHO (~6s): a dor ou o número que choca, JÁ dizendo "${t.term}" **e JÁ com a imagem do vídeo na primeira frase**. Termine deixando uma pergunta no ar — e NÃO responda.
-   Molde do arranque: "<a imagem> faz você <a dor, com o número> sem perceber. <pergunta que fica no ar>"
+   ⚠️ **O TEMA E A IMAGEM CABEM NA MESMA FRASE, e os dois são OBRIGATÓRIOS.** Trocar um pelo outro reprova o roteiro.
+   ✗ "Uma mochila cheia de pedras faz você perder quinhentos reais por mês. Quem é o culpado?"
+      Por quê: a imagem está lá, mas o TEMA sumiu — quem clicou no título por causa de "erros de cartão" não ouve nem "erros" nem "cartão", e desiste.
+   ✓ "Três erros de cartão são pedras na sua mochila: quinhentos reais por mês que você nem sente. Qual pesa mais?"
+      Por quê: diz o assunto, planta a imagem e deixa a pergunta no ar — tudo em duas frases.
+   Molde do arranque: "<o tema> é/são <a imagem>: <a dor, com o número>. <pergunta que fica no ar>"
 2. EMPATIA (~9s): por que isso acontece com gente normal (correria, cansaço, ninguém ensinou). Sem culpar quem assiste.
 3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é A e você mostra que é B — "não é o [A] que te quebra… é o [B] que ninguém soma".
    ⛔ TERMINE NA TENSÃO. Depois de virar, NÃO explique. Explicação depois da virada mata a virada.
@@ -736,6 +751,30 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   const fechoTexto = String(blocos[5]?.fala || '').trim();
   if (/\?\s*$/.test(fechoTexto)) {
     erros.push('o fecho acaba com uma PERGUNTA — ele é quem RESPONDE a pergunta do bloco 1, não quem faz outra. Termine numa afirmação.');
+  }
+
+  /**
+   * O GANCHO TEM DE DIZER O TEMA — e esta trava nasceu de um defeito REAL de
+   * 01/08/2026, apanhado 20 minutos depois de eu instalar a regra da imagem.
+   *
+   * Ao passar a exigir a imagem logo na primeira frase, o modelo trocou o TEMA pela
+   * IMAGEM: o gancho saiu "Uma mochila cheia de pedras faz você perder quinhentos
+   * reais por mês" — sem "erros", sem "cartão". O vídeo prometia no título "3 erros
+   * de cartão" e não dizia nenhum.
+   *
+   * Pior: a PASSAGEM 2 recusa isso de imediato (`keywordFalada` devolve null) e a
+   * narração já vem fechada de cá — ou seja, o roteiro morria sem hipótese de
+   * conserto, com o erro a apontar para o sítio errado. Já paguei este pêndulo uma
+   * vez (§20.3, C-1: 4 chamadas queimadas).
+   *
+   * A regra vive na passagem 2; aqui só se FALHA MAIS CEDO, no único momento em que
+   * ainda há quem possa reescrever a frase.
+   */
+  if (temaTermo && blocos[0] && !keywordFalada(temaTermo, blocos[0].fala)) {
+    erros.push(
+      `o gancho não diz nenhuma palavra do tema ("${temaTermo}") — quem clica no título tem de ouvir o assunto na 1ª frase. `
+      + 'A imagem abre o vídeo, mas o TEMA tem de estar lá também: os dois cabem na mesma frase.',
+    );
   }
 
   // NÚMEROS INVENTADOS — o defeito mais perigoso dos dois primeiros testes: o mesmo
