@@ -323,6 +323,22 @@ TESTE OBRIGATÓRIO: tape o bloco anterior e leia só este. Se ele fizer sentido 
    "Todo mundo acha que cem reais não muda nada. Só que eu fiz a conta de guardar esses cem reais por dois anos seguidos… e o número me assustou. Porque não é o valor que trabalha, é o tempo."
    Por quê: a 2ª frase responde à 1ª, a 3ª explica a 2ª. Ninguém consegue sair no meio.
 
+════════ UM VÍDEO INTEIRO, PARA VOCÊ VER A FORMA ════════
+⛔ A imagem deste exemplo — **pneu murcho** — NÃO está na sua lista. É de propósito: copie a FORMA e o TOM, nunca a imagem nem as frases. Se "pneu" aparecer no seu texto, o roteiro é rejeitado.
+
+  1. "Olha, tem três descontos na sua conta que são que nem pneu murcho: você anda, mas anda devagar. São duzentos reais por mês que somem sem você ver. Qual será o pior deles?"
+  2. "O pior é o que você nem lembra que assinou. A vida corre, ninguém te ensinou a olhar isso, e o pneu vai perdendo ar caladinho."
+  3. "Só que não é o desconto grande que te para. É o pequeno, que fica lá meses, esvaziando o pneu um pouquinho de cada vez."
+  4. "No FinMoovi você abre a conta e ele te mostra esses pequenos, um por um, com o valor do lado. Aí você vê o pneu murchando."
+  5. "Quer ver os seus? Comenta FINMOOVI aqui que eu te mando a calculadora do blog."
+  6. "Os duzentos reais voltam quando você tira os pequenos da frente — é o pneu cheio de novo. Dinheiro sem controle é dinheiro dos outros."
+
+Repare no que esse exemplo faz, porque é isso que se pede a você:
+· o assunto e a imagem estão juntos na PRIMEIRA frase, e a imagem entra comparada ("que nem"), nunca definida;
+· cada bloco abre agarrando o anterior — "o pior", "não é o grande", "esses pequenos", "os seus", "os duzentos reais";
+· quem fala é uma pessoa: "olha", "você nem lembra", "caladinho", "um pouquinho de cada vez";
+· o fecho responde à pergunta do início e só então vem o bordão.
+
 ════════ A ESPINHA (6 blocos, nesta ordem) ════════
 1. GANCHO (~6s): a dor ou o número que choca, JÁ dizendo "${t.term}" **e JÁ com a imagem do vídeo na primeira frase**. Termine deixando uma pergunta no ar — e NÃO responda.
    ⚠️ **O TEMA E A IMAGEM CABEM NA MESMA FRASE, e os dois são OBRIGATÓRIOS.** Trocar um pelo outro reprova o roteiro.
