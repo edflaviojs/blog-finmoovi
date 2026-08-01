@@ -119,14 +119,27 @@ jobs:
       # Se a validação falhar mesmo após os retries internos, o step falha e o
       # job inteiro falha — o e-mail de falha do GitHub é o alerta (sem sistemas
       # de notificação extras).
-      - name: Gerar roteiro do termo (cron)
+      #
+      # ⚠️ AS DUAS PASSAGENS PASSARAM A SER O GERADOR DE PRODUÇÃO (01/08/2026,
+      # decisão do dono). Antes: `roteiro-short.js`, um prompt de 25.300 chars que
+      # pedia ao modelo o texto E o visual ao mesmo tempo. Agora:
+      #   passagem 1 (roteiro-narrativa.js) escreve SÓ a narração;
+      #   passagem 2 (coreografia.js) escreve SÓ o visual, escolhendo a
+      #   palavra-âncora por NÚMERO — é estruturalmente impossível inventar âncora.
+      # Motivo medido: 5 dos últimos 6 vídeos tiveram erro de âncora e em 2 deles
+      # um shot foi APAGADO do vídeo.
+      # O ficheiro escrito é o MESMO (output/<slug>.script.json, mesmas chaves), por
+      # isso nenhum passo a jusante muda.
+      # 🔁 PARA VOLTAR ATRÁS bastam esta linha e a antiga:
+      #   run: node src/scripts/youtube/roteiro-short.js --slug="$SLUG"
+      - name: Gerar roteiro do termo (cron) — duas passagens
         if: steps.resolve.outputs.skip != 'true' && env.GENERATE == 'true'
         env:
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
-        run: node src/scripts/youtube/roteiro-short.js --slug="$SLUG"
+        run: node src/scripts/youtube/coreografia.js --slug="$SLUG" --gravar
 
       # Comita o roteiro gerado (mesmo padrão do tracking) para o render ser
       # reproduzível e o histórico ficar registrado.
