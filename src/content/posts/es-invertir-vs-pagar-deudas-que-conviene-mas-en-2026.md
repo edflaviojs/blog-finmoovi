@@ -18,7 +18,7 @@ seo:
   keywords: ["invertir","pagar deudas","finanzas personales","planificación financiera","FinMoovi","intereses compuestos","deuda buena","invertir o pagar deuda"]
 ---
 
-Invertir o pagar deudas? La decisión depende del costo real de la deuda, de tu tolerancia al riesgo y de tus objetivos a corto plazo; si la tasa de interés de la deuda supera el rendimiento esperado de las inversiones, liquidarla suele ser la jugada más inteligente. Pero cuando la deuda tiene intereses bajos o es estratégica, invertir puede generar más valor con el tiempo.
+Invertir o pagar deudas? La decisión depende del costo real de la deuda, de tu tolerancia al riesgo y de tus objetivos a corto plazo; si la tasa de interés de la deuda supera el [rendimiento](/es/posts/es-montando-cartera-diversificada-con-r-500) esperado de las inversiones, liquidarla suele ser la jugada más inteligente. Pero cuando la deuda tiene intereses bajos o es estratégica, invertir puede generar más valor con el tiempo.
 
 ## Introducción  
 Imagina la siguiente escena: acabas de recibir el extracto de tu tarjeta de crédito, ves un saldo que ha crecido como espuma y, además, tienes una invitación a un curso online que promete cambiar tu carrera. Mientras tanto, tu móvil vibra recordándote que la factura de la luz ha subido inesperadamente. Sientes ese nudo en el pecho, piensas en abrir una cuenta de inversión para intentar hacer que el dinero “crezca”, pero también sabes que la deuda de la tarjeta está devorando parte de tu presupuesto. Esta situación es más común de lo que parece, y la disyuntiva entre invertir o pagar deudas puede parecer un dilema imposible.
@@ -26,10 +26,10 @@ Imagina la siguiente escena: acabas de recibir el extracto de tu tarjeta de cré
 FinMoovi llega como ese amigo que entiende tu día a día: al tomar foto de la factura o del recibo, la app reconoce automáticamente cada gasto, lo categoriza y te muestra cuánto estás pagando en intereses. En menos de cinco minutos puedes crear un plan de acción dentro de la app – definir un objetivo de liquidar esa deuda costosa y, al mismo tiempo, reservar una pequeña cantidad para comenzar a invertir.
 
 ## Cómo funciona invertir  
-Invertir significa destinar recursos a activos que pueden generar retorno a lo largo del tiempo, como acciones, fondos, bonos del gobierno o incluso criptomonedas. El objetivo es hacer que el dinero “trabaje” para ti, aprovechando el efecto de los intereses compuestos.
+Invertir significa destinar recursos a activos que pueden generar retorno a lo largo del tiempo, como [acciones](/es/glossario/es-acciones), fondos, bonos del gobierno o incluso criptomonedas. El objetivo es hacer que el dinero “trabaje” para ti, aprovechando el efecto de los intereses compuestos.
 
 - **Rendimiento esperado**: depende del tipo de activo; por ejemplo, un fondo de acciones puede rendir algo cercano al crecimiento del PIB de economías desarrolladas, mientras que un bono público de corto plazo suele seguir la tasa de referencia internacional.  
-- **Riesgo**: cuanto mayor sea el potencial de retorno, mayor será la volatilidad. Es importante conocer tu perfil – conservador, moderado o arriesgado – antes de elegir.  
+- **Riesgo**: cuanto mayor sea el potencial de retorno, mayor será la [volatilidad](/es/glossario/es-volatilidad). Es importante conocer tu perfil – conservador, moderado o arriesgado – antes de elegir.  
 - **Liquidez**: algunos instrumentos permiten rescate inmediato (como fondos del mercado monetario), mientras que otros exigen un periodo de carencia (como bonos a largo plazo).
 
 ![Cómo funciona invertir](/images/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026-2.webp)
@@ -40,11 +40,11 @@ En FinMoovi puedes usar la funcionalidad **Flujo de caja y reportes** para segui
 Pagar deudas consiste en liquidar el saldo pendiente, eliminando la obligación de pagar intereses futuros. Las deudas pueden clasificarse en:
 
 - **Deuda buena**: préstamos estudiantiles o financiación de vivienda con intereses por debajo de la media del mercado.  
-- **Deuda mala**: crédito rotativo, sobregiro o compras a plazos con intereses altos.
+- **Deuda mala**: crédito rotativo, [sobregiro](/es/glossario/es-sobregiro) o compras a plazos con intereses altos.
 
 Al liquidar una deuda, reduces el costo total del crédito, liberas espacio en tu presupuesto y mejoras tu puntuación crediticia, facilitando futuros financiamientos en condiciones más favorables.
 
-FinMoovi ofrece **Captura inteligente**: basta con fotografiar la factura o el contrato del préstamo y la app calcula el costo total de la deuda, mostrando el plazo ideal para liquidarla y el impacto en tu flujo de caja. En cinco minutos puedes programar un recordatorio de pago automático y seguir la evolución de la amortización.
+FinMoovi ofrece **Captura inteligente**: basta con fotografiar la factura o el contrato del préstamo y la app calcula el costo total de la deuda, mostrando el plazo ideal para liquidarla y el impacto en tu flujo de caja. En cinco minutos puedes programar un recordatorio de pago automático y seguir la evolución de la [amortización](/es/glossario/es-amortizacion).
 
 ## Tabla comparativa  
 
@@ -57,15 +57,15 @@ FinMoovi ofrece **Captura inteligente**: basta con fotografiar la factura o el c
 | **Impacto en el score crediticio** | Indirecto – inversiones exitosas pueden mejorar la percepción de estabilidad | Directo – reducción de deuda mejora el score rápidamente |
 | **Beneficio fiscal**         | Posibilidad de exención o reducción en algunos países (ej.: cuentas de pensión) | No hay beneficio fiscal directo |
 | **Tiempo para ver resultados** | Medio a largo plazo (meses a años)                 | Inmediato – al liquidar, el ahorro de intereses aparece en el siguiente extracto |
-| **Herramientas FinMoovi útiles** | Flujo de caja, reportes de rentabilidad, metas de inversión | Captura inteligente, recordatorios de pago, planificación mensual |
+| **Herramientas FinMoovi útiles** | Flujo de caja, reportes de [rentabilidad](/es/posts/es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus-inversion), metas de inversión | Captura inteligente, recordatorios de pago, planificación mensual |
 
 ![Tabla comparativa](/images/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026-4.webp)
 
 ## Cuándo elegir invertir  
 1. **Tasa de la deuda baja** – Si el costo de tu deuda está cercano o por debajo de la tasa media de retorno de los instrumentos que pretendes usar, el ganancia potencial puede superar el costo de la deuda.  
 2. **Objetivo a largo plazo** – Cuando tienes metas como la jubilación o la compra de una vivienda distante, invertir permite acumular patrimonio a lo largo de los años.  
-3. **Deuda estratégica** – Préstamos estudiantiles o financiación de vivienda con intereses por debajo de la inflación pueden considerarse “buen crédito”, pues permiten apalancar activos que se revalorizan.  
-4. **Reserva de emergencia constituida** – Si ya cuentas con un fondo de emergencia equivalente a tres a seis salarios mensuales, puedes destinar recursos excedentes a inversiones.
+3. **Deuda estratégica** – Préstamos estudiantiles o financiación de vivienda con intereses por debajo de la [inflación](/es/glossario/es-inflacion) pueden considerarse “buen crédito”, pues permiten apalancar activos que se revalorizan.  
+4. **Reserva de emergencia constituida** – Si ya cuentas con un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) equivalente a tres a seis salarios mensuales, puedes destinar recursos excedentes a inversiones.
 
 ## Cuándo elegir pagar deudas  
 1. **Tasa de interés alta** – Deudas con intereses superiores al 10 % anual (como tarjetas de crédito o sobregiros) erosionan tu poder de compra; liquidarlas genera un retorno inmediato equivalente a esa tasa.  

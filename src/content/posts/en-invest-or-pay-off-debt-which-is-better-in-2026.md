@@ -26,23 +26,23 @@ Picture this: you just opened your credit‑card statement and see the balance s
 FinMoovi acts like a friend who gets your daily hustle: snap a photo of a bill or receipt, and the app automatically recognizes each expense, categorizes it, and shows how much you’re paying in interest. In under five minutes you can craft an action plan inside the app—set a goal to eliminate that high‑cost debt while earmarking a modest amount to start investing.
 
 ## How Investing Works
-Investing means putting money into assets that can generate returns over time—stocks, funds, government bonds, or even cryptocurrencies. The goal is to make your money “work” for you, harnessing the power of compound interest.
+Investing means putting money into assets that can generate returns over time—stocks, funds, government bonds, or even cryptocurrencies. The goal is to make your money “work” for you, harnessing the power of [compound interest](/en/glossario/en-compound-interest).
 
 - **Expected return**: Varies by asset class; for example, an equity fund might deliver returns close to the growth rate of developed‑country economies, while a short‑term government bond typically tracks the international reference interest rate.
-- **Risk**: Higher potential returns come with higher volatility. Knowing your profile—conservative, moderate, or aggressive—is key before you pick an investment.
+- **Risk**: Higher potential returns come with higher [volatility](/en/glossario/en-volatility). Knowing your profile—conservative, moderate, or aggressive—is key before you pick an investment.
 - **Liquidity**: Some investments can be redeemed instantly (like money‑market funds), while others require a lock‑in period (such as long‑term bonds).
 
 ![How Investing Works](/images/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026-2.webp)
 
-In FinMoovi, the **Cash‑flow and Reports** feature lets you track investment performance, compare the real return with the interest rate on your debt, and tweak your strategy in real time.
+In FinMoovi, the **Cash‑flow and [Reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o)** feature lets you track investment performance, compare the real return with the interest rate on your debt, and tweak your strategy in real time.
 
 ## How Paying Off Debt Works
 Paying off debt means clearing the outstanding balance, eliminating future interest charges. Debts fall into two broad categories:
 
-- **Good debt**: Student loans or mortgage financing with interest below the market average.
+- **Good debt**: Student loans or mortgage [financing](/en/glossario/en-financing) with interest below the market average.
 - **Bad debt**: Credit‑card revolving balances, overdraft facilities, or installment purchases with high rates.
 
-When you retire a debt, you lower your total cost of credit, free up cash flow, and boost your credit score—making future financing easier and cheaper.
+When you retire a debt, you lower your total cost of credit, free up cash flow, and boost your [credit score](/en/glossario/en-credit-score)—making future financing easier and cheaper.
 
 FinMoovi offers **Smart Capture**: just photograph a bill or loan contract and the app calculates the total cost of the debt, shows the optimal payoff timeline, and displays the impact on your cash flow. In five minutes you can set an automatic‑payment reminder and watch the payoff progress.
 
@@ -57,15 +57,15 @@ FinMoovi offers **Smart Capture**: just photograph a bill or loan contract and t
 | **Credit‑score impact**      | Indirect – successful investing can signal stability | Direct – debt reduction improves score quickly      |
 | **Tax benefit**              | Possible exemptions or deductions in some countries | No direct tax advantage                              |
 | **Time to see results**      | Medium to long term (months to years)                | Immediate – interest savings appear on next bill    |
-| **FinMoovi tools**           | Cash‑flow, profitability reports, investment goals  | Smart Capture, payment reminders, monthly planning  |
+| **FinMoovi tools**           | Cash‑flow, profitability reports, investment goals  | Smart Capture, payment reminders, monthly [planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips)  |
 
 ![Comparison Table](/images/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026-4.webp)
 
 ## When to Choose Investing
 1. **Low debt cost** – If your debt’s interest is close to or below the average return you expect from investments, the potential upside can outweigh the debt cost.  
 2. **Long‑term goals** – For objectives like retirement or buying a home far in the future, investing helps you build wealth over the years.  
-3. **Strategic debt** – Student loans or mortgage financing with rates below inflation can be considered “good debt,” as they let you leverage assets that appreciate.  
-4. **Emergency fund in place** – If you already have a safety net equal to three to six months of expenses, you can allocate surplus cash to investments.
+3. **Strategic debt** – Student loans or mortgage financing with rates below [inflation](/en/glossario/en-inflation) can be considered “good debt,” as they let you leverage assets that appreciate.  
+4. **[Emergency fund](/en/glossario/en-emergency-fund) in place** – If you already have a safety net equal to three to six months of expenses, you can allocate surplus cash to investments.
 
 ## When to Choose Paying Off Debt
 1. **High interest rate** – Debts charging more than about 10 % annually (credit cards, overdrafts) erode purchasing power; paying them off yields an immediate return equal to that rate.  

@@ -68,7 +68,7 @@ Repeating this cycle turns the holiday into a healthy financial habit, preventin
 
 ## Get started today  
 
-Spend five minutes now to open your budgeting app, create a “Father’s Day” category, and set the target amount. Every small step today avoids a headache tomorrow and guarantees a gift that fits both your wallet and your heart.
+Spend five minutes now to open your [budgeting](/en/posts/en-how-to-turn-a-mess-of-bills-into-a-visual-control-system-in-) app, create a “Father’s Day” category, and set the target amount. Every small step today avoids a headache tomorrow and guarantees a gift that fits both your wallet and your heart.
 
 ## Frequently Asked Questions  
 

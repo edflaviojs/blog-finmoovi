@@ -21,15 +21,15 @@ seo:
 Investir ou quitar dívidas? A decisão depende do custo real da dívida, da sua tolerância ao risco e dos seus objetivos de curto prazo; se a taxa de juros da dívida supera o rendimento esperado dos investimentos, quitar costuma ser a jogada mais inteligente, mas quando a dívida tem juros baixos ou é estratégica, investir pode gerar mais valor ao longo do tempo.
 
 ## Introdução
-Imagine a seguinte cena: você acabou de receber o extrato do cartão de crédito, vê um saldo que cresceu como espuma e ainda tem aquele convite para um curso online que promete mudar sua carreira. Enquanto isso, seu celular vibra lembrando que a conta de luz chegou com aumento inesperado. Você sente aquele aperto no peito, pensa em abrir a conta de investimentos para tentar fazer o dinheiro “crescer”, mas também sabe que a dívida do cartão está devorando parte do seu orçamento. Essa situação é mais comum do que parece, e a escolha entre investir ou quitar dívidas pode parecer um dilema impossível.
+Imagine a seguinte cena: você acabou de receber o extrato do [cartão de crédito](/posts/cartao-de-credito-vs-cartao-de-debito-qual-vale-mais-a-pena-), vê um saldo que cresceu como espuma e ainda tem aquele convite para um curso online que promete mudar sua carreira. Enquanto isso, seu celular vibra lembrando que a conta de luz chegou com aumento inesperado. Você sente aquele aperto no peito, pensa em abrir a conta de investimentos para tentar fazer o dinheiro “crescer”, mas também sabe que a dívida do cartão está devorando parte do seu orçamento. Essa situação é mais comum do que parece, e a escolha entre investir ou quitar dívidas pode parecer um dilema impossível.
 
 O FinMoovi entra como um amigo que entende seu cotidiano: ao tirar foto da fatura ou da nota fiscal, o app reconhece automaticamente cada gasto, categoriza‑o e mostra quanto você está pagando em juros. Em menos de cinco minutos, você pode criar um plano de ação dentro do app – definir um objetivo de quitar aquele débito de alto custo e, ao mesmo tempo, reservar um pequeno valor para começar a investir.
 
 ## Como funciona Investir
-Investir significa aplicar recursos em ativos que podem gerar retorno ao longo do tempo, como ações, fundos, títulos ou até cripto‑moedas. O objetivo é fazer o dinheiro “trabahar” para você, aproveitando o efeito dos juros compostos.
+Investir significa aplicar recursos em ativos que podem gerar retorno ao longo do tempo, como ações, fundos, títulos ou até cripto‑moedas. O objetivo é fazer o dinheiro “trabahar” para você, aproveitando o efeito dos [juros compostos](/ferramentas/calculadora-juros-compostos).
 
 - **Rendimento esperado**: depende do tipo de ativo; por exemplo, um fundo de ações pode render algo próximo ao crescimento do PIB de países desenvolvidos, enquanto um título público de curto prazo costuma acompanhar a taxa de juros de referência internacional.
-- **Risco**: quanto maior o potencial de retorno, maior a volatilidade. É importante conhecer seu perfil – conservador, moderado ou arrojado – antes de escolher.
+- **Risco**: quanto maior o potencial de retorno, maior a [volatilidade](/glossario/volatilidade). É importante conhecer seu perfil – conservador, moderado ou arrojado – antes de escolher.
 - **Liquidez**: alguns investimentos permitem resgate imediato (como fundos de mercado monetário), enquanto outros exigem prazo de carência (como títulos de longo prazo).
 
 ![Como funciona Investir](/images/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026-2.webp)
@@ -41,12 +41,12 @@ No FinMoovi, você pode usar a funcionalidade **Fluxo de caixa e relatórios** p
 ## Como funciona Quitar Dívidas
 Quitar dívidas consiste em pagar o saldo devedor, eliminando a obrigação de pagar juros futuros. As dívidas podem ser classificadas em:
 
-- **Dívida boa**: empréstimos estudantis ou financiamento de imóvel com juros abaixo da média de mercado.
-- **Dívida ruim**: crédito rotativo, cheque especial ou parcelamento de compras com juros altos.
+- **Dívida boa**: empréstimos estudantis ou [financiamento](/glossario/financiamento) de imóvel com juros abaixo da média de mercado.
+- **Dívida ruim**: crédito rotativo, [cheque especial](/glossario/cheque-especial) ou parcelamento de compras com juros altos.
 
 Ao pagar uma dívida, você reduz o custo total do crédito, libera espaço no orçamento e melhora a pontuação de crédito, facilitando futuros financiamentos em condições mais favoráveis.
 
-O FinMoovi oferece **Captura inteligente**: basta fotografar a fatura ou o contrato de empréstimo e o app calcula o custo total da dívida, mostrando o prazo ideal para quitá‑la e o impacto no seu fluxo de caixa. Em cinco minutos você pode definir um lembrete de pagamento automático e acompanhar a evolução da quitação.
+O FinMoovi oferece **Captura inteligente**: basta fotografar a fatura ou o contrato de [empréstimo](/glossario/emprestimo) e o app calcula o custo total da dívida, mostrando o prazo ideal para quitá‑la e o impacto no seu fluxo de caixa. Em cinco minutos você pode definir um lembrete de pagamento automático e acompanhar a evolução da quitação.
 
 ## Tabela comparativa
 
@@ -56,7 +56,7 @@ O FinMoovi oferece **Captura inteligente**: basta fotografar a fatura ou o contr
 | **Custo efetivo**            | Depende da taxa de retorno (ex.: 7 % a 12 % ao ano) | Depende da taxa de juros da dívida (ex.: 15 % a 30 % ao ano) |
 | **Risco**                    | Variável – pode haver perdas temporárias            | Baixo – pagamento elimina risco de inadimplência   |
 | **Liquidez**                 | Varia conforme o ativo (imediata a longo prazo)    | Imediata – ao pagar, o dinheiro deixa de ser dívida |
-| **Impacto no score de crédito** | Indireto – investimentos bem-sucedidos podem melhorar a percepção de estabilidade | Direto – redução de dívida melhora o score rapidamente |
+| **Impacto no [score de crédito](/glossario/score-de-credito)** | Indireto – investimentos bem-sucedidos podem melhorar a percepção de estabilidade | Direto – redução de dívida melhora o score rapidamente |
 | **Benefício fiscal**         | Possibilidade de isenção ou redução em alguns países (ex.: contas de aposentadoria) | Não há benefício fiscal direto                     |
 | **Tempo para ver resultados** | Médio a longo prazo (meses a anos)                  | Imediato – ao quitar, a economia de juros aparece no próximo extrato |
 | **Ferramentas FinMoovi úteis** | Fluxo de caixa, relatórios de rentabilidade, metas de investimento | Captura inteligente, lembretes de pagamento, planejamento mensal |
@@ -69,7 +69,7 @@ O FinMoovi oferece **Captura inteligente**: basta fotografar a fatura ou o contr
 1. **Taxa da dívida baixa** – Se o custo da sua dívida está próximo ou abaixo da taxa média de retorno dos investimentos que você pretende fazer, o ganho potencial pode superar o custo da dívida.
 2. **Objetivo de longo prazo** – Quando você tem metas como aposentadoria ou compra de imóvel distante, investir permite acumular patrimônio ao longo dos anos.
 3. **Dívida estratégica** – Empréstimos estudantis ou financiamento de imóvel com juros abaixo da inflação podem ser considerados “bom crédito”, pois permitem alavancar ativos que se valorizam.
-4. **Reserva de emergência já constituída** – Se você já tem um fundo de emergência equivalente a três a seis salários mínimos, pode direcionar recursos excedentes para investimentos.
+4. **[Reserva de emergência](/glossario/reserva-de-emergencia) já constituída** – Se você já tem um fundo de emergência equivalente a três a seis salários mínimos, pode direcionar recursos excedentes para investimentos.
 
 ## Quando escolher Quitar Dívidas
 1. **Taxa de juros alta** – Dívidas com juros acima de 10 % ao ano (como cartão de crédito ou cheque especial) corroem seu poder de compra; quitá‑las gera retorno imediato equivalente à taxa de juros.
