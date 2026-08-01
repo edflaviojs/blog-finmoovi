@@ -133,11 +133,15 @@ const CapaFoguete: Coreografia = ({ life }) => {
         <path d={`M100,${CHAO - 240} L196,${CHAO - 58} L100,${CHAO - 58} Z`} fill={BRAND.violet} opacity={0.9} />
         <circle cx={0} cy={CHAO - 540} r={54} fill={BRAND.cyan} opacity={0.9} />
       </g>
+      {/* AO LADO do foguete, não por trás dele: o corpo do foguete vai até MEIO+10 e
+          o braço do ator alcança 236px, por isso a MEIO+270 ele continua agarrado e
+          deixa de se perder dentro do brilho da fuselagem. */}
       <Ator
         id="fg"
-        x={MEIO + 190 + tremor}
+        x={MEIO + 270 + tremor}
         sobe={sobe}
         {...alcancar(t)}
+        ombroB={152} cotoveloB={-16}
         inclina={-8 - t * 26}
         ancaA={-30 - t * 40} ancaB={-46 - t * 46} joelhoA={20 + t * 40} joelhoB={16 + t * 34}
         escala={0.92}
@@ -154,7 +158,9 @@ const CapaSemente: Coreografia = ({ life }) => {
   // a 300px ficava-lhe pela cintura e parecia um pauzinho espetado no chão
   const alturaCaule = interpolate(t, [0.2, 0.34, 1], [0, 720, 900], { extrapolateLeft: 'clamp', easing: Easing.out(Easing.cubic) });
   const recuo = interpolate(t, [0.26, 0.4], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const folha = interpolate(t, [0.3, 0.6], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  // as folhas TÊM de estar abertas no instante-chave (t≈0,34): a 0,3-0,6 elas ainda
+  // eram dois riscos e o caule lia-se como um tubo fluorescente espetado no chão
+  const folha = interpolate(t, [0.24, 0.4], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   return (
     <Palco life={life}>
       <defs>
@@ -173,11 +179,16 @@ const CapaSemente: Coreografia = ({ life }) => {
         d={`M${MEIO - 187},${CHAO - alturaCaule + 300} Q${MEIO - 187 - 220 * folha},${CHAO - alturaCaule + 210} ${MEIO - 187 - 40 * folha},${CHAO - alturaCaule + 470}`}
         fill={BRAND.violet} opacity={0.85 * folha}
       />
+      {/* recua MESMO quando o rebento irrompe: passo atrás, braços a proteger e o
+          tronco para trás. Antes ficava a olhar, parado, e não se lia susto nenhum. */}
       <Ator
         id="sm"
-        x={MEIO + 250}
+        x={interpolate(recuo, [0, 1], [MEIO + 140, MEIO + 300])}
         {...(t < 0.26 ? alcancar(t * 3) : olharCima(f / 4))}
-        inclina={interpolate(recuo, [0, 1], [16, -12])}
+        inclina={interpolate(recuo, [0, 1], [16, -22])}
+        ombroA={interpolate(recuo, [0, 1], [16, -84])}
+        ombroB={interpolate(recuo, [0, 1], [-14, -108])}
+        cotoveloA={40} cotoveloB={26}
         escala={0.94}
       />
     </Palco>
@@ -535,7 +546,7 @@ const CapaMochilaPedras: Coreografia = ({ life }) => {
           O grupo repete EXATAMENTE a transformação do ator (mesma posição, mesma
           rotação em torno dos pés, mesma escala) e só depois desce até ao ombro. É
           isto que faz a mochila tombar COM ele em vez de ficar para trás. */}
-      <g transform={`translate(${atorX} ${CHAO}) rotate(${pose.inclina || 0}) scale(${ESCALA})`}>
+      <g transform={`translate(${atorX} ${CHAO + queda * 46}) rotate(${pose.inclina || 0}) scale(${ESCALA})`}>
         {/* -190: bem atrás das costas. A -108 a mochila ficava POR CIMA do tronco e
             tapava-o — o ator lia-se como uma cabeça e umas pernas com uma caixa ao
             meio. O tronco tem de continuar a ver-se. */}
@@ -552,7 +563,11 @@ const CapaMochilaPedras: Coreografia = ({ life }) => {
           ))}
         </g>
       </g>
-      <Ator id="mp" x={atorX} {...pose} escala={ESCALA} />
+      {/* O BAQUE. `sobe` negativo baixa o corpo — é o que dá a sensação de "não
+          aguentou mais" em vez de "ajoelhou-se devagar". Não se pode resolver com
+          mais rotação: o corpo roda em torno dos pés e a cabeça sairia do quadro
+          (ver o aviso em `cair`). A sombra não encolhe porque só o salto a afeta. */}
+      <Ator id="mp" x={atorX} {...pose} sobe={-queda * 46} escala={ESCALA} />
       {escorrega > 0.1 && queda < 0.9 && <Riscos x={atorX - 40} y={CHAO - 26} n={2} larg={90} op={0.6 * (1 - queda)} />}
     </Palco>
   );
@@ -778,22 +793,27 @@ const CapaMontanhaRussa: Coreografia = ({ life }) => {
           escala (~350px), que é a proporção de alguém SENTADO nele.
           A pose é de sentado: coxas para a frente, joelhos dobrados, braços no ar. */}
       <g transform={`translate(${pos.x} ${pos.y}) rotate(${pos.ang})`}>
+        {/* ⚠️ Os pés VÃO AO FUNDO do carrinho (y=26), não ao ar acima dele. Com
+            chaoY=-20 a anca do ator ficava ACIMA da parede da frente e ele lia-se a
+            pairar por cima do carrinho em vez de ir sentado lá dentro. */}
         <Ator
           id="mr"
           x={0}
-          chaoY={-20}
           {...olharCima(f / 4)}
           ancaA={72} joelhoA={92} ancaB={58} joelhoB={86}
           ombroA={-160} ombroB={138} cotoveloA={-12} cotoveloB={22}
-          escala={0.46}
+          escala={0.34}
+          chaoY={40}
         />
         {/* ⚠️ SÓ A PAREDE DA FRENTE do carrinho, e desenhada DEPOIS do ator: assim ela
             tapa-lhe as pernas (ele vai sentado lá dentro) e deixa o tronco e a cabeça
             de fora. Com a caixa inteira por cima, o ator desaparecia e ficava um
             retângulo vazio a descer a rampa. */}
-        <rect x={-170} y={-96} width={340} height={126} rx={30} fill={PECA} stroke={BRAND.magenta} strokeWidth={15} style={brilho(BRAND.magenta, 26)} />
-        <circle cx={-98} cy={40} r={34} fill={BRAND.violet} stroke={BRAND.cyan} strokeWidth={8} />
-        <circle cx={98} cy={40} r={34} fill={BRAND.violet} stroke={BRAND.cyan} strokeWidth={8} />
+        {/* a parede tem de ser ALTA o suficiente para o ator caber lá dentro: com
+            126px e um ator de 345 ele ficava mais fora do carrinho do que dentro */}
+        <rect x={-180} y={-130} width={360} height={180} rx={34} fill={PECA} stroke={BRAND.magenta} strokeWidth={15} style={brilho(BRAND.magenta, 26)} />
+        <circle cx={-104} cy={62} r={36} fill={BRAND.violet} stroke={BRAND.cyan} strokeWidth={8} />
+        <circle cx={104} cy={62} r={36} fill={BRAND.violet} stroke={BRAND.cyan} strokeWidth={8} />
       </g>
     </Palco>
   );
