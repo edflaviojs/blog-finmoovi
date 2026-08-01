@@ -1,0 +1,479 @@
+{
+  "date": "2026-07-31",
+  "counts": {
+    "content": 9,
+    "videos": 1,
+    "pins": 3,
+    "failures": 6,
+    "runs": 46
+  },
+  "failures": [
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30619739871",
+      "timeLisbon": "10:23"
+    },
+    {
+      "name": "YouTube — Testar SÓ a narração (passagem 1)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30629168244",
+      "timeLisbon": "13:02"
+    },
+    {
+      "name": "YouTube — Testar SÓ a narração (passagem 1)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30631966123",
+      "timeLisbon": "13:48"
+    },
+    {
+      "name": "YouTube — Testar SÓ a narração (passagem 1)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30638108640",
+      "timeLisbon": "15:19"
+    },
+    {
+      "name": "YouTube — Testar SÓ a narração (passagem 1)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30638114066",
+      "timeLisbon": "15:19"
+    },
+    {
+      "name": "YouTube — Testar as DUAS passagens (narração + coreografia)",
+      "htmlUrl": "https://github.com/edflaviojs/blog-finmoovi/actions/runs/30665877552",
+      "timeLisbon": "22:14"
+    }
+  ],
+  "content": [
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "en",
+      "slug": "en-fixed-expense-of-a-company",
+      "url": "https://blog.finmoovi.com/en/glossario/en-fixed-expense-of-a-company",
+      "title": "fixed expense of a company - Financial Glossary",
+      "description": "What fixed expense of a company is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-31"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "es",
+      "slug": "es-gasto-fijo-de-una-empresa",
+      "url": "https://blog.finmoovi.com/es/glossario/es-gasto-fijo-de-una-empresa",
+      "title": "gasto fijo de una empresa - Glosario Financiero",
+      "description": "Qué es gasto fijo de una empresa y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-31"
+    },
+    {
+      "label": "Glossário",
+      "route": "glossario",
+      "locale": "pt",
+      "slug": "gasto-fixo-de-uma-empresa",
+      "url": "https://blog.finmoovi.com/glossario/gasto-fixo-de-uma-empresa",
+      "title": "gasto fixo de uma empresa - Glossário Financeiro",
+      "description": "O que é gasto fixo de uma empresa e como isso aparece no seu dia a dia — explicado de forma simples, com um jeito prático de acompanhar no FinMoovi.",
+      "category": "basico",
+      "publishedAt": "2026-07-31"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-como-domar-los-gastos-y-ganar-tranquilidad-en-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-como-domar-los-gastos-y-ganar-tranquilidad-en-2026",
+      "title": "Cómo domar los gastos y ganar tranquilidad en 2026",
+      "description": "Descubre estrategias simples para controlar tus gastos, usar FinMoovi y hacer tu día a día financiero más ligero y organizado.",
+      "category": "dicas",
+      "publishedAt": "2026-07-31"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "como-domar-os-gastos-e-ganhar-tranquilidade-em-2026",
+      "url": "https://blog.finmoovi.com/posts/como-domar-os-gastos-e-ganhar-tranquilidade-em-2026",
+      "title": "Como domar os gastos e ganhar tranquilidade em 2026",
+      "description": "Descubra estratégias simples para controlar despesas pessoais, usar o FinMoovi e transformar seu dia a dia financeiro em algo mais leve e organizado.",
+      "category": "dicas",
+      "publishedAt": "2026-07-31"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-how-to-tame-your-spending-and-find-peace-in-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-how-to-tame-your-spending-and-find-peace-in-2026",
+      "title": "How to Tame Your Spending and Find Peace in 2026",
+      "description": "Simple, practical ways to control personal expenses, use FinMoovi and make your finances feel lighter and more organized.",
+      "category": "dicas",
+      "publishedAt": "2026-07-31"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "es",
+      "slug": "es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026",
+      "url": "https://blog.finmoovi.com/es/posts/es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026",
+      "title": "Invertir vs pagar deudas: ¿qué conviene más en 2026?",
+      "description": "Descubre cuándo es más rentable invertir o liquidar deudas, con ejemplos reales y consejos prácticos usando FinMoovi.",
+      "category": "investimentos",
+      "publishedAt": "2026-07-31"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "en",
+      "slug": "en-invest-or-pay-off-debt-which-is-better-in-2026",
+      "url": "https://blog.finmoovi.com/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026",
+      "title": "Invest or Pay Off Debt: Which Is Better in 2026?",
+      "description": "Discover when it’s smarter to invest or pay off debt, with a practical comparison, real‑life examples, and tips using FinMoovi. (154 chars)",
+      "category": "investimentos",
+      "publishedAt": "2026-07-31"
+    },
+    {
+      "label": "Posts",
+      "route": "posts",
+      "locale": "pt",
+      "slug": "investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026",
+      "url": "https://blog.finmoovi.com/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026",
+      "title": "Investir vs Quitar dívidas: qual vale mais a pena em 2026?",
+      "description": "Descubra quando é melhor aplicar seu dinheiro ou pagar dívidas, com comparativo prático, exemplos reais e dicas usando o FinMoovi.",
+      "category": "investimentos",
+      "publishedAt": "2026-07-31"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "tesouro-direto-100",
+      "videoId": "SZSGAxqmmm0",
+      "uploadedAt": "2026-07-31T09:48:03.521Z",
+      "title": "Tesouro Direto com R$ 100 — vale a pena? Como transformar R$ 100/mês em R$ 2,68k",
+      "timeLisbon": "10:48"
+    }
+  ],
+  "pins": [
+    {
+      "slug": "como-domar-os-gastos-e-ganhar-tranquilidade-em-2026",
+      "title": "Como domar os gastos e ganhar tranquilidade em 2026",
+      "pinId": "1105281933577305864",
+      "publishedAt": "2026-07-31T16:29:55.790Z",
+      "postUrl": "https://blog.finmoovi.com/posts/como-domar-os-gastos-e-ganhar-tranquilidade-em-2026",
+      "timeLisbon": "17:29"
+    },
+    {
+      "slug": "investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026",
+      "title": "Investir vs Quitar dívidas: qual vale mais a pena em 2026?",
+      "pinId": "1105281933577305866",
+      "publishedAt": "2026-07-31T16:29:58.903Z",
+      "postUrl": "https://blog.finmoovi.com/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026",
+      "timeLisbon": "17:29"
+    },
+    {
+      "slug": "7-melhores-apps-de-controle-financeiro-2026-guia-completo-pa",
+      "title": "7 Melhores Apps de Controle Financeiro 2026 – Guia Completo para Organizar Seu Dinheiro",
+      "pinId": "1105281933577305879",
+      "publishedAt": "2026-07-31T16:30:06.639Z",
+      "postUrl": "https://blog.finmoovi.com/posts/7-melhores-apps-de-controle-financeiro-2026-guia-completo-pa",
+      "timeLisbon": "17:30"
+    }
+  ],
+  "runsSummary": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "count": 4,
+      "ok": 4,
+      "fail": 0,
+      "firstTimeLisbon": "03:00"
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:46"
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "08:48"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "count": 2,
+      "ok": 2,
+      "fail": 0,
+      "firstTimeLisbon": "09:20"
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "count": 2,
+      "ok": 1,
+      "fail": 1,
+      "firstTimeLisbon": "10:23"
+    },
+    {
+      "name": "Community Monitor",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:41"
+    },
+    {
+      "name": "GSC - Canibalizacao por query",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "10:48"
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:24"
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "11:26"
+    },
+    {
+      "name": "Fix i18n Content (Daily Batch)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:06"
+    },
+    {
+      "name": "YouTube — Testar SÓ a narração (passagem 1)",
+      "count": 16,
+      "ok": 12,
+      "fail": 4,
+      "firstTimeLisbon": "12:07"
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:18"
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "count": 3,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:21"
+    },
+    {
+      "name": "Webmentions & Outreach",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:49"
+    },
+    {
+      "name": "Post Sazonal Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "12:56"
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "13:49"
+    },
+    {
+      "name": "Post Comparação Semanal",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:03"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "15:23"
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:00"
+    },
+    {
+      "name": "Sindicação Extra (Hashnode + Tumblr + Blogger)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "16:13"
+    },
+    {
+      "name": "Social Distribution (Pinterest + Bookmarks)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "17:29"
+    },
+    {
+      "name": "YouTube — Testar as DUAS passagens (narração + coreografia)",
+      "count": 2,
+      "ok": 1,
+      "fail": 1,
+      "firstTimeLisbon": "22:14"
+    },
+    {
+      "name": "YouTube — Vídeo COMPLETO pelas duas passagens (não publica)",
+      "count": 1,
+      "ok": 1,
+      "fail": 0,
+      "firstTimeLisbon": "22:30"
+    }
+  ],
+  "emails": [
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "09:20"
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "timeLisbon": "10:29"
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "timeLisbon": "15:23"
+    }
+  ],
+  "pendencias": [
+    "Auditoria YouTube API: responder follow-up do Google com link do canal (prazo ~03/08) — depois aguardar aprovação p/ trocar uploads private→public",
+    "Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300",
+    "Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)",
+    "Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)",
+    "Pinterest: renovar refresh token até 16/09 (lembrete automático via issue quando faltar ≤7d)",
+    "Upgrade Pinterest p/ cadência diária? Avaliar analytics ~07/08"
+  ],
+  "agenda": [
+    {
+      "name": "IndexNow (indexação instantânea Bing/Copilot)",
+      "times": [
+        "01:00",
+        "07:00",
+        "13:00",
+        "19:00"
+      ]
+    },
+    {
+      "name": "Fact Firewall (anti-alucinacao)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Sincronizar i18n (auto-corretor PT/EN/ES)",
+      "times": [
+        "06:00"
+      ]
+    },
+    {
+      "name": "Digest Diario de Conteudo (7h Lisboa)",
+      "times": [
+        "06:40",
+        "07:40"
+      ]
+    },
+    {
+      "name": "Brand Mention Monitor",
+      "times": [
+        "07:00"
+      ]
+    },
+    {
+      "name": "YouTube — Renderizar Short (completo)",
+      "times": [
+        "07:30"
+      ]
+    },
+    {
+      "name": "Community Monitor",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Glossário Financeiro",
+      "times": [
+        "08:00"
+      ]
+    },
+    {
+      "name": "Year Refresh (anos defasados em títulos)",
+      "times": [
+        "08:15"
+      ]
+    },
+    {
+      "name": "GSC - Monitor de Indexacao",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Sazonal Multimercado (timezone)",
+      "times": [
+        "09:00"
+      ]
+    },
+    {
+      "name": "Auto Update Posts Antigos",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Gerar ALT descritivo das imagens (IA de visão)",
+      "times": [
+        "10:00",
+        "16:00",
+        "22:00"
+      ]
+    },
+    {
+      "name": "Gerar Dicas Financeiras",
+      "times": [
+        "10:00"
+      ]
+    },
+    {
+      "name": "Glossário Diário Automático",
+      "times": [
+        "12:00"
+      ]
+    },
+    {
+      "name": "Keep Alive",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Welcome Email Sequence",
+      "times": [
+        "13:00"
+      ]
+    },
+    {
+      "name": "Regenerar capas antigas do glossário (estilo 3D)",
+      "times": [
+        "13:30"
+      ]
+    }
+  ]
+}
