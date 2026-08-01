@@ -257,7 +257,23 @@ export function buildPromptNarrativa(t, proibidas, frasesRecentes, ficha = null)
     ? `\nJÁ FOI DITO nos vídeos recentes (não repita nem parafraseie): ${frasesRecentes.map((f) => `"${f}"`).join(' · ')}`
     : '';
 
-  return `Você é ROTEIRISTA de um canal brasileiro de finanças pessoais. Escreve como quem CONVERSA COM UM AMIGO: informal, direto, com gíria leve. Nunca formal, nunca "de livro".
+  return `Você é ROTEIRISTA de um canal brasileiro de finanças pessoais.
+
+════════ QUEM ESTÁ FALANDO, E COM QUEM ════════
+Escreva como **um gerente de banco explicando, com muita paciência e muita simplicidade, para um senhor humilde** que nunca estudou finanças e tem vergonha de perguntar.
+Ele não sabe o que é "rotativo", "amortizar", "drenagem" ou "estratégia". Se você usar uma palavra dessas, ele desliga.
+Fale COM ele, não SOBRE o assunto: "olha", "sabe", "presta atenção", "calma", "vou te explicar", "repara só".
+
+⛔ **NADA DE FRASE DE CARTAZ.** O maior defeito deste canal é a frase que parece escrita para um slide e não dita por uma pessoa.
+   ✗ "Três erros de cartão são pedras na sua mochila." (foi ao ar; o dono: *"se alguém falar isso num vídeo curto, a pessoa já sai — isso está robótico"*)
+   ✓ "Sabe esses três errinhos no cartão? É que nem carregar pedra na mochila."
+   A diferença: a segunda tem alguém a falar. A primeira é uma legenda.
+
+⛔ **A IMAGEM ENTRA COMO COMPARAÇÃO, NUNCA COMO DEFINIÇÃO.** Ninguém diz "X são Y". As pessoas dizem "é tipo", "parece", "é que nem", "é igual", "imagina".
+   ✗ "O erro é uma pedra na mochila."     ✓ "O erro é tipo uma pedra que entra na mochila."
+   ✗ "A dívida é uma bola de ferro."      ✓ "A dívida parece uma bola de ferro no pé."
+
+⛔ **PALAVRAS DE ESCRITÓRIO NÃO ENTRAM.** Drenagem, solução, estratégia, mecanismo, processo, impacto, gestão, otimizar, efetivamente, realizar, utilizar, adquirir. Troque por como se diz na rua: em vez de "parar essa drenagem", "parar de perder esse dinheiro".
 
 SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (42 a 50 segundos).
 NÃO descreva imagens, ícones, sons, efeitos ou cortes. Só o texto que a voz vai falar. Outra pessoa cuida do visual depois.
@@ -306,9 +322,11 @@ TESTE OBRIGATÓRIO: tape o bloco anterior e leia só este. Se ele fizer sentido 
    ⚠️ **O TEMA E A IMAGEM CABEM NA MESMA FRASE, e os dois são OBRIGATÓRIOS.** Trocar um pelo outro reprova o roteiro.
    ✗ "Uma mochila cheia de pedras faz você perder quinhentos reais por mês. Quem é o culpado?"
       Por quê: a imagem está lá, mas o TEMA sumiu — quem clicou no título por causa de "erros de cartão" não ouve nem "erros" nem "cartão", e desiste.
-   ✓ "Três erros de cartão são pedras na sua mochila: quinhentos reais por mês que você nem sente. Qual pesa mais?"
-      Por quê: diz o assunto, planta a imagem e deixa a pergunta no ar — tudo em duas frases.
-   Molde do arranque: "<o tema> é/são <a imagem>: <a dor, com o número>. <pergunta que fica no ar>"
+   ✗ "Três erros de cartão são pedras na sua mochila. Tiram quinhentos reais do seu bolso todo mês."
+      Por quê: diz tudo o que é preciso, mas diz como um cartaz. **"X são Y" não é fala, é definição.** Foi reprovado pelo dono.
+   ✓ "Olha, tem três errinhos no cartão que parecem uma mochila cheia de pedra nas suas costas. São quinhentos reais que somem do seu bolso todo mês. Qual será o mais pesado?"
+      Por quê: alguém está a falar. Diz o assunto, compara em vez de definir, dá o número e deixa a pergunta no ar.
+   Molde do arranque: "<abertura de quem fala: olha / sabe / repara só> + <o tema> + <que parece / é tipo / é que nem> + <a imagem>. <a dor, com o número>. <pergunta que fica no ar>"
 2. EMPATIA (~9s): por que isso acontece com gente normal (correria, cansaço, ninguém ensinou). Sem culpar quem assiste.
 3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é A e você mostra que é B — "não é o [A] que te quebra… é o [B] que ninguém soma".
    ⛔ TERMINE NA TENSÃO. Depois de virar, NÃO explique. Explicação depois da virada mata a virada.
@@ -770,6 +788,39 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
    * A regra vive na passagem 2; aqui só se FALHA MAIS CEDO, no único momento em que
    * ainda há quem possa reescrever a frase.
    */
+  /**
+   * A IMAGEM ENTRA COMO COMPARAÇÃO, NUNCA COMO DEFINIÇÃO (01/08/2026).
+   *
+   * O dono, ao ler "Três erros de cartão SÃO pedras na sua mochila":
+   * *"olha que frase nada a ver… se alguém falar isso num vídeo curto a pessoa já
+   * sai. Isso está robótico."* E deu a correção exata: *"3 erros de cartão QUE
+   * PARECE uma mochila com pedras"*.
+   *
+   * ⚠️ E a frase robótica saiu do MEU molde, que dizia literalmente "<o tema> é/são
+   * <a imagem>". Terceira vez hoje que o prompt produz aquilo que depois se reprova.
+   *
+   * A trava é positiva, não proibitiva: no bloco onde a imagem aparece pela primeira
+   * vez tem de haver uma palavra de COMPARAÇÃO. É assim que se fala de uma imagem
+   * na vida real — ninguém declara equivalências.
+   */
+  /**
+   * PALAVRAS DE ESCRITÓRIO — o dono quer *"um gerente de banco falando de forma
+   * muito simples com um senhor muito humilde"*. Estas palavras existem em
+   * relatórios, não em conversas. Saíram no roteiro de 01/08: "drenagem",
+   * "drenando", "a solução".
+   */
+  const PALAVRAS_DE_ESCRITORIO = ['drenagem', 'drenando', 'drenar', 'otimizar', 'otimizacao',
+    'estrategia', 'mecanismo', 'efetivamente', 'realizar', 'utilizar', 'adquirir',
+    'gestao', 'monitoramento', 'impacto financeiro', 'solucao'];
+  const falaSemAcento = semAcento(falaToda);
+  const encontradas = PALAVRAS_DE_ESCRITORIO.filter((p) => falaSemAcento.includes(p));
+  if (encontradas.length) {
+    erros.push(
+      `a fala usa palavra de escritório: "${encontradas.join('", "')}" — ninguém diz isso a conversar. `
+      + 'Troque pelo que se diz na rua (ex.: "parar essa drenagem" → "parar de perder esse dinheiro").',
+    );
+  }
+
   if (temaTermo && blocos[0] && !keywordFalada(temaTermo, blocos[0].fala)) {
     erros.push(
       `o gancho não diz nenhuma palavra do tema ("${temaTermo}") — quem clica no título tem de ouvir o assunto na 1ª frase. `
@@ -889,6 +940,37 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
       }
       if (blocosComFio < 3) {
         erros.push(`o fio condutor "${fio}" aparece em ${blocosComFio} bloco(s) — ele precisa CRESCER ao longo do vídeo: pequeno no início, forte na virada, pago no fecho (mínimo 3 blocos)`);
+      }
+
+      /**
+       * A IMAGEM ENTRA COMO COMPARAÇÃO, NUNCA COMO DEFINIÇÃO (01/08/2026).
+       *
+       * O dono, ao ler "Três erros de cartão SÃO pedras na sua mochila":
+       * *"olha que frase nada a ver… se alguém falar isso num vídeo curto a pessoa
+       * já sai. Isso está robótico."* E deu a correção exata: *"3 erros de cartão
+       * QUE PARECE uma mochila com pedras"*.
+       *
+       * ⚠️ E a frase robótica saiu do MEU molde, que dizia literalmente
+       * "<o tema> é/são <a imagem>". Terceira vez no mesmo dia que o prompt produz
+       * aquilo que a trava depois reprova — por isso o molde foi reescrito no MESMO
+       * passo que esta verificação.
+       *
+       * A trava é POSITIVA, não proibitiva: no bloco onde a imagem aparece pela
+       * primeira vez tem de existir uma palavra de COMPARAÇÃO. É assim que se fala
+       * de uma imagem na vida real — ninguém declara equivalências a conversar.
+       */
+      const COMPARACOES = ['tipo', 'parece', 'parecem', 'que nem', 'igual', 'como se',
+        'imagina', 'e como', 'sao como', 'lembra', 'nem que'];
+      const primeiroComFio = blocos.find(temFio);
+      if (primeiroComFio) {
+        const textoFio = semAcento(primeiroComFio.fala || '');
+        if (!COMPARACOES.some((c) => textoFio.includes(semAcento(c)))) {
+          erros.push(
+            `a imagem "${fio}" entra como DEFINIÇÃO ("X é/são Y") e não como comparação — soa a cartaz, não a alguém a falar, e quem assiste sai. `
+            + 'Use "que parece", "é tipo", "é que nem", "é igual a" ou "imagina". '
+            + '✗ "três erros de cartão são pedras na mochila" · ✓ "três errinhos no cartão que parecem pedra na mochila".',
+          );
+        }
       }
     }
   }
