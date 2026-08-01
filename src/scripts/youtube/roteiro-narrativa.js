@@ -280,6 +280,11 @@ Fale COM ele, não SOBRE o assunto: "olha", "sabe", "presta atenção", "calma",
 
 ⛔ **PALAVRAS DE ESCRITÓRIO NÃO ENTRAM.** Drenagem, solução, estratégia, mecanismo, processo, impacto, gestão, otimizar, efetivamente, realizar, utilizar, adquirir. Troque por como se diz na rua: em vez de "parar essa drenagem", "parar de perder esse dinheiro".
 
+⛔ **JARGÃO DE BANCO TAMBÉM NÃO.** Rotativo, saldo devedor, amortizar, encargos, IOF, liquidez, rentabilidade, aporte. Diga a COISA, não o nome dela.
+   ✗ "…e deixar o saldo rodar." (foi ao ar; o dono: *"nem eu estou entendendo, imagina um senhor humilde"*)
+   ✓ "…e deixar a dívida passar pro mês seguinte."
+   **Exceção única:** a palavra do próprio TEMA pode ser dita — é o título do vídeo. Mas explique-a na mesma frase, com palavras do dia a dia.
+
 SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (42 a 50 segundos).
 NÃO descreva imagens, ícones, sons, efeitos ou cortes. Só o texto que a voz vai falar. Outra pessoa cuida do visual depois.
 
@@ -757,7 +762,7 @@ const CENTENAS_VALIDAS = new Set([
 // NÃO EXISTE. Promessa falsa indo ao ar é pior que CTA fraca.
 const BRINDES_PROIBIDOS = /\b(planilha|ebook|e-book|pdf|apostila|curso|aula|checklist|mapa mental|template|guia completo)\b/i;
 
-export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = '', permitidas = null) {
+export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = '', permitidas = null, apoio = '') {
   const erros = [];
   const avisos = [];
   if (!n || typeof n !== 'object') return { ok: false, erros: ['resposta não é objeto'], avisos };
@@ -953,6 +958,29 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   }
 
   /**
+   * JARGÃO DE BANCO — o dono, ao ler "deixar o saldo rodar": *"nem eu estou
+   * entendendo, imagina um senhor humilde"* (01/08/2026).
+   *
+   * ⚠️ COM UMA EXCEÇÃO QUE É O QUE TORNA A TRAVA SEGURA: a palavra do PRÓPRIO TEMA
+   * é sempre permitida. Este canal tem vídeos de glossário — um vídeo sobre "juros
+   * compostos" TEM de dizer "juros compostos", é o título. O que se proíbe é
+   * ARRASTAR outro termo técnico para dentro da explicação, que é o que aconteceu
+   * aqui: o tema era "erros de cartão" e apareceu "saldo rodar" do nada.
+   */
+  const JARGAO = ['rotativo', 'saldo devedor', 'saldo rodar', 'saldo roda', 'amortiz',
+    'encargos', 'taxa efetiva', 'spread', 'liquidez', 'rentabilidade', 'aporte',
+    'capitaliza', 'indexad', 'cet ', 'iof'];
+  const temaNorm = semAcento(temaTermo || '');
+  const jargaoUsado = JARGAO.filter((j) => falaSemAcento.includes(j) && !temaNorm.includes(j));
+  if (jargaoUsado.length) {
+    erros.push(
+      `a fala usa jargão de banco que não está no tema: "${jargaoUsado.join('", "')}". `
+      + 'Do outro lado está alguém que nunca estudou finanças — se a palavra não se explica sozinha, '
+      + 'diga a COISA em vez do nome dela (✗ "deixar o saldo rodar" · ✓ "deixar a dívida passar pro mês seguinte").',
+    );
+  }
+
+  /**
    * A TRAVA ANTI-CÓPIA — o exemplo tem de se QUEIMAR (aprovada pelo dono, 01/08).
    *
    * O vídeo-exemplo destravou o tom e, na geração seguinte, foi copiado quase à
@@ -988,6 +1016,54 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   // cálculo saiu R$ 2.725/R$ 2.540 numa vez e R$ 2.740/R$ 2.630 noutra, mais uma
   // "Selic de 13,5%" que não existe. Com a ficha calculada no prompt, o modelo passa
   // a declarar o que citou — e aqui confere-se contra o que o computador calculou.
+  /**
+   * O BURACO DOS NÚMEROS — sem ficha calculada, NINGUÉM CONFERIA NADA (01/08/2026).
+   *
+   * Medido: no tema "3 erros de cartão que te custam R$ 500/mês" a narração disse
+   * *"deixa você pagando cerca de DUZENTOS reais a mais todo mês"*. Fui ver de onde
+   * vinha esse 200: **de lado nenhum**. O tema não tem ficha calculada e o ficheiro
+   * de apoio do glossário nem existe. O modelo tirou o número da cabeça.
+   *
+   * Passava porque toda a verificação de números vivia dentro do `if (ficha)`. Sem
+   * ficha, o prompt continuava a dizer "só números do material de apoio" e nada
+   * punia — o padrão crónico deste repositório. E é o defeito mais perigoso do
+   * canal: em julho saíram dois valores diferentes para a MESMA conta e uma Selic
+   * que não existe (§19.3).
+   *
+   * ⚠️ E confere-se o POR EXTENSO, não só os algarismos: a regra do canal manda
+   * dizer "duzentos reais", logo procurar por dígitos não encontraria nada.
+   */
+  const VALOR_POR_EXTENSO = {
+    cem: 100, duzentos: 200, trezentos: 300, quatrocentos: 400, quinhentos: 500,
+    seiscentos: 600, setecentos: 700, oitocentos: 800, novecentos: 900, mil: 1000,
+    // "cento" fica de fora de propósito: em "por cento" não é 100, é percentagem.
+  };
+  const numerosDoTexto = (txt) => new Set(
+    [...String(txt || '').matchAll(/\d[\d.]*\d|\d+/g)]
+      .map((m) => Number(String(m[0]).replace(/\./g, '')))
+      .filter((v) => Number.isFinite(v) && v >= 10),
+  );
+  if (!(ficha && Array.isArray(ficha.permitidos) && ficha.permitidos.length)) {
+    // sem ficha: só valem os números que estão no TÍTULO ou no material de apoio
+    const permitidosDoTema = new Set([...numerosDoTexto(temaTermo), ...numerosDoTexto(apoio)]);
+    const ditos = new Set();
+    const falaNorm = semAcento(falaToda);
+    for (const [palavra, valor] of Object.entries(VALOR_POR_EXTENSO)) {
+      if (new RegExp(`\\b${palavra}\\b`).test(falaNorm)) ditos.add(valor);
+    }
+    numerosDoTexto(falaToda).forEach((v) => ditos.add(v));
+    const inventados = [...ditos].filter((v) => ![...permitidosDoTema].some((p) => Math.abs(p - v) <= 2));
+    if (inventados.length) {
+      erros.push(
+        `a fala cita ${inventados.join(', ')} e esse número NÃO existe em lado nenhum — não há conta calculada para este tema `
+        + `e o material de apoio não o traz. ${permitidosDoTema.size
+          ? `Só pode dizer: ${[...permitidosDoTema].join(', ')}.`
+          : 'Escreva as frases SEM número.'} `
+        + 'Um número errado no ar é pior do que nenhum número.',
+      );
+    }
+  }
+
   if (ficha && Array.isArray(ficha.permitidos) && ficha.permitidos.length) {
     const citados = Array.isArray(n.numerosCitados) ? n.numerosCitados : null;
     if (!citados) {
@@ -1245,7 +1321,7 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
     if (Array.isArray(n.blocos)) {
       for (const b of n.blocos) if (b && typeof b.fala === 'string') b.fala = limparFala(b.fala);
     }
-    const v = validarNarrativa(n, proibidas, ficha, t && t.term, permitidas);
+    const v = validarNarrativa(n, proibidas, ficha, t && t.term, permitidas, `${(t && t.definition) || ''} ${(t && t.body) || ''}`);
     if (v.ok) return { narrativa: n, avisos: v.avisos, palavras: v.palavras, tentativa: i };
     // ver `acumularExigencias`: o tamanho substitui, o resto acumula
     const lista = acumularExigencias(exigencias, v.erros);
