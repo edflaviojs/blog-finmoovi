@@ -20,6 +20,7 @@ import { SmartCaptureVozShort, SmartCaptureVozLong } from './SmartCaptureVoz';
 import { AppTourShort, AppMosaicoShort, AppCarrosselShort, AppNumerosShort, AppQuadShort, AppTourLong, AppMosaicoLong, AppCarrosselLong, AppNumerosLong, AppQuadLong } from './AppOverview';
 import { AppScreen3DLong, AppScreen3DShort } from './AppScreen3D';
 import { Galeria, GALERIA_TOTAL_FRAMES, GALERIA_FPS } from './Galeria';
+import { GaleriaCapas, CAPAS_TOTAL_FRAMES, CAPAS_FPS } from './GaleriaCapas';
 import { cartoes } from './broll/cartoes';
 import { fluxo } from './broll/fluxo';
 import { extrato } from './broll/extrato';
@@ -73,6 +74,17 @@ export const RemotionRoot: React.FC = () => {
         component={Galeria}
         durationInFrames={GALERIA_TOTAL_FRAMES}
         fps={GALERIA_FPS}
+        width={1080}
+        height={1920}
+      />
+      {/* Galeria das 32 CAPAS — mesma ideia, para a abertura de cada vídeo
+          (IMPLEMENTACAO20 §21.2 T1). Cada capa à duração real de 3,5s, com a marca
+          do primeiro terço no ecrã. */}
+      <Composition
+        id="Capas"
+        component={GaleriaCapas}
+        durationInFrames={CAPAS_TOTAL_FRAMES}
+        fps={CAPAS_FPS}
         width={1080}
         height={1920}
       />

@@ -4,6 +4,10 @@ import { FinMooviIcon } from './icon';
 import { KaraokeCaption } from './captions';
 import { IconBurst, SHOT_ICONS, ShotIconKey } from './icons-fx';
 import { SceneSfx, resolveShotSfx } from './audio/sfx';
+// As 32 coreografias da capa disruptiva (T1, §21.2). Vivem em ficheiro próprio: o
+// scenes.tsx já tem 167KB e o ator + as 32 capas são outro assunto.
+import { COREOGRAFIAS, CoreografiaDaCapa } from './capas';
+import { PALCO_W, PALCO_H } from './capa';
 import type { Shot, AppScreen } from './Short';
 // Biblioteca de b-roll NATIVO (React puro, sem OffthreadVideo) — cada tela é uma
 // composição 1080×1920 completa; o AppShot (v3.3) as monta escaladas num celular.
@@ -303,7 +307,11 @@ export const DynamicIntro: React.FC<{
   frase: string;
   counter?: { from: number; to: number; prefix?: string };
   frames: number;
-}> = ({ frase, counter, frames }) => {
+  /** A imagem deste vídeo — escolhe a COREOGRAFIA da capa (T1, §21.2). Sem ela, a
+   *  capa cai no comportamento antigo (frase + ícones), que é o que os roteiros
+   *  anteriores a 01/08/2026 têm. */
+  metaphor?: string | null;
+}> = ({ frase, counter, frames, metaphor }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const tokens = parseFrase(frase);
@@ -348,8 +356,20 @@ export const DynamicIntro: React.FC<{
     );
   }
 
+  // A CAPA COM AÇÃO (T1): há coreografia quando o roteiro tem imagem. Sem imagem,
+  // fica o comportamento antigo (frase + ícones de curiosidade), para os roteiros
+  // anteriores a 01/08/2026 não abrirem com um ecrã meio vazio.
+  const temAcao = !!metaphor && !!COREOGRAFIAS[metaphor];
+
+  // SAÍDA SUAVE. A capa é opaca por cima da cena 1, que já está a correr por baixo
+  // desde os 0,9s; um corte seco no frame 105 daria um salto. Estes 8 frames finais
+  // revelam a cena que já vinha em curso.
+  const saida = temAcao
+    ? interpolate(frame, [frames - 8, frames], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
+    : 1;
+
   return (
-    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: 40 }}>
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: 40, opacity: saida }}>
       <Audio src={staticFile('sfx/boom.ogg')} volume={0.9} />
       {counter && (
         <Sequence from={counterStart - 6} durationInFrames={Math.round(fps * 1.5)}>
@@ -357,15 +377,29 @@ export const DynamicIntro: React.FC<{
         </Sequence>
       )}
 
-      {/* ícones de curiosidade MULTICOLOR crescendo (somem quando o contador entra) */}
-      {INTRO_CURIOSITY.map((c, i) => (
+      {/* O FUNDO da capa: opaco de propósito. A cena 1 já está a tocar por baixo e
+          não pode transparecer — o que prende no scroll é UMA imagem, não duas
+          sobrepostas. */}
+      {temAcao && <AbsoluteFill style={{ background: BRAND.bg }} />}
+
+      {/* A COREOGRAFIA — o palco é mais largo que o vídeo (1240 > 1080) para o chão
+          sangrar pelos lados; por isso o desvio de -80 à esquerda. */}
+      {temAcao && (
+        <div style={{ position: 'absolute', bottom: 120, left: (1080 - PALCO_W) / 2, width: PALCO_W, height: PALCO_H }}>
+          <CoreografiaDaCapa metaphor={metaphor} life={frames} />
+        </div>
+      )}
+
+      {/* ícones de curiosidade — só na capa SEM ação, senão competem com o ator */}
+      {!temAcao && INTRO_CURIOSITY.map((c, i) => (
         <CuriosityIcon key={i} which={c.which} x={c.x} y={c.y} delay={c.delay} color={c.color} glow={c.glow} fadeAt={counterStart - 4} />
       ))}
 
-      {/* frase com ênfase */}
+      {/* frase com ênfase — em CIMA quando há ação, para não tapar o ator */}
       <div style={{
         display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'baseline',
         gap: '10px 22px', width: 940, maxWidth: '92%', textAlign: 'center',
+        ...(temAcao ? { position: 'absolute' as const, top: 210 } : null),
         transform: `translateY(${fraseY}px) scale(${fraseScale})`,
       }}>
         {tokens.map((tk, i) => {
@@ -386,7 +420,12 @@ export const DynamicIntro: React.FC<{
         })}
       </div>
 
-      {hasCounter && counterEl}
+      {/* ⚠️ O CONTADOR GIGANTE NÃO CONVIVE COM A COREOGRAFIA. Visto no render do vídeo
+          inteiro: "R$1.447.607" atravessava a capa por cima do ator e da bola de neve,
+          e não se percebia nem uma coisa nem outra. Quando há ação, é a ação que é o
+          gancho — o número volta a aparecer no CartaoResultado, dentro do vídeo.
+          (Os roteiros do gerador novo já não trazem contador; isto protege os antigos.) */}
+      {hasCounter && !temAcao && counterEl}
 
       <AbsoluteFill style={{ background: '#fff', opacity: Math.max(slamFlash, endFlash), pointerEvents: 'none' }} />
     </AbsoluteFill>
@@ -3078,12 +3117,17 @@ export function computeMetaphorStages(scenes: Scene[]): number[][] {
 }
 
 // Dispatcher — o role tem prioridade (cta/outro têm cena própria); senão usa visual.type.
-export const SceneRenderer: React.FC<{ scene: Scene; timing?: SceneTiming | null; metaphorStages?: number[] }> = ({ scene, timing, metaphorStages }) => {
+export const SceneRenderer: React.FC<{ scene: Scene; timing?: SceneTiming | null; metaphorStages?: number[]; sceneFrames?: number }> = ({ scene, timing, metaphorStages, sceneFrames }) => {
   const { fps } = useVideoConfig();
   // Mesmo cue (revealFrameFor) que o SceneShell usa pro punch — repassado ao
   // SceneChart pra sincronizar o DESENHO da curva com a fala, não só o soco.
   const revealFrame = revealFrameFor(scene, timing, fps);
-  const durationFrames = Math.max(1, Math.round((timing?.durationSec ?? scene.durationSec) * fps));
+  // `sceneFrames` (T2, §21.3) é o comprimento REAL da cena — áudio + o respiro de
+  // 0,7s que o Short.tsx acrescenta. O fallback pelo áudio cru fica para quem
+  // renderiza uma cena isolada (Studio/galeria), onde não há respiro nenhum.
+  // ⚠️ Tem de ser o MESMO número que alimenta computeGlobalShotSfxFires, senão o
+  // som de um shot dispara num frame e a imagem dele aparece noutro.
+  const durationFrames = sceneFrames ?? Math.max(1, Math.round((timing?.durationSec ?? scene.durationSec) * fps));
   // v3: se a cena traz `shots`, o motor de shots substitui o visual único central.
   if (scene.shots && scene.shots.length) {
     return <SceneShots scene={scene} timing={timing} durationFrames={durationFrames} metaphorStages={metaphorStages} />;

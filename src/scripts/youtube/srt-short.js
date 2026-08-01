@@ -26,7 +26,18 @@ const TRANSITION_FRAMES = 8;
 // youtube-render/src/Short.tsx (introFramesFor). Qualquer mudança lá exige
 // mudança AQUI também, senão a legenda volta a dessincronizar da voz.
 const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s)
-const INTRO_FRAMES_V3 = 45; // intro dinâmica v3 COMPRIMIDA (45f/1,5s): voz entra no ~seg 1
+/**
+ * ⚠️ ESPELHO DE `VOZ_ENTRA_FRAMES`, **NÃO** DE `CAPA_FRAMES_V3` (T1, §21.2).
+ *
+ * Desde 01/08/2026 a capa tem DOIS números em Short.tsx: fica 3,5s no ecrã
+ * (CAPA_FRAMES_V3 = 105) mas a voz e tudo o resto começam aos 0,9s
+ * (VOZ_ENTRA_FRAMES = 27), com a capa desenhada POR CIMA.
+ *
+ * O que se espelha aqui é ONDE A VOZ COMEÇA. Copiar 105 para aqui atrasaria a
+ * legenda 2,6s em relação à fala — e seria a terceira vez que esta linha
+ * dessincroniza a legenda do YouTube.
+ */
+const VOZ_ENTRA_FRAMES = 27;
 const AUDIO_ROOT = join(process.cwd(), 'youtube-render', 'public', 'audio');
 const OUTPUT_DIR = join(dirname(fileURLToPath(import.meta.url)), 'output');
 
@@ -44,9 +55,18 @@ export function fmtTime(sec) {
   return `${p(Math.floor(ms / 3600000))}:${p(Math.floor((ms % 3600000) / 60000))}:${p(Math.floor((ms % 60000) / 1000))},${p(ms % 1000, 3)}`;
 }
 
+// RESPIRO ENTRE CENAS — ESPELHO de RESPIRO_SEC em youtube-render/src/Short.tsx
+// (T2, IMPLEMENTACAO20 §21.3). Lá, cada cena MENOS A ÚLTIMA passou a durar o áudio
+// medido + 0,7s de silêncio. Sem somar o mesmo aqui, a legenda ADIANTA-SE 0,7s por
+// cena — 3,5s ao fim de 6 cenas. É o mesmo modo de falha do TRANSITION_FRAMES e da
+// intro, os dois já registados neste ficheiro.
+const RESPIRO_SEC = 0.7;
+
 // Início de cada cena (seg) no timeline global, descontando as transições.
 export function masterStarts(scenes) {
-  const frames = scenes.map((s) => Math.max(1, Math.round(s.durationSec * FPS)));
+  const frames = scenes.map((s, i) => Math.max(1, Math.round(
+    (s.durationSec + (i < scenes.length - 1 ? RESPIRO_SEC : 0)) * FPS,
+  )));
   const starts = [];
   let prefix = 0;
   for (let i = 0; i < frames.length; i++) {
@@ -62,14 +82,14 @@ export function masterStarts(scenes) {
 // from={introFrames}>`, ou seja, o tempo global de qualquer cena = introSeconds +
 // masterStarts[i] + offset-dentro-da-cena. Sem somar a intro aqui, a legenda
 // aparece ANTES da voz (bug corrigido em 2026-07-22 — ver commit
-// "fix(youtube): SRT do YouTube agora soma a intro de 4s"). A v3 foi COMPRIMIDA
-// para 45f/1,5s (voz entra no ~seg 1, não no 4) — INTRO_FRAMES_V3/FPS = 1,5.
+// "fix(youtube): SRT do YouTube agora soma a intro de 4s"). Desde 01/08/2026 a v3
+// vale 27f/0,9s: a capa dura 3,5s mas a voz entra DENTRO dela (ver o aviso acima).
 // v3 = tem `intro.frase` OU `intro.counter`; legada = só `{big, sub}`; sem intro = 0.
 export function introSecondsFor(script) {
   const intro = script && script.intro;
   if (!intro) return 0;
   const isV3 = (typeof intro.frase === 'string' && intro.frase.length > 0) || !!intro.counter;
-  return (isV3 ? INTRO_FRAMES_V3 : INTRO_FRAMES) / FPS;
+  return (isV3 ? VOZ_ENTRA_FRAMES : INTRO_FRAMES) / FPS;
 }
 
 // Agrupa palavras (com start/end global) em blocos de legenda legíveis.

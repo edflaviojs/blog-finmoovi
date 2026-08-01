@@ -41,7 +41,31 @@ const TRANSICOES: Array<() => TransitionPresentation<any>> = [
   () => wipe({ direction: 'from-left' }),
 ];
 export const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s) antes das cenas
-export const INTRO_FRAMES_V3 = 45; // intro dinâmica v3 COMPRIMIDA (45f/1,5s): voz entra no ~seg 1
+
+/**
+ * A CAPA DISRUPTIVA (T1, IMPLEMENTACAO20 §21.2 — 01/08/2026).
+ *
+ * ANTES: 45 frames (1,5s) de texto MUDO, e a voz só começava DEPOIS. O dono viu
+ * 1,5s de cartaz parado e, quando a voz falava, já ia na 2ª cena — *"impossível de
+ * entender… só tem 1 segundo e não fala nada."*
+ *
+ * AGORA são DOIS números diferentes, e é essa a mudança que interessa:
+ *  · CAPA_FRAMES_V3 (105f / 3,5s) = quanto tempo a CAPA fica no ecrã.
+ *  · VOZ_ENTRA_FRAMES (27f / 0,9s) = onde começa TODO o resto (áudio, legenda,
+ *    cenas, SFX). A capa é desenhada POR CIMA, então dos 0,9s aos 3,5s a pessoa
+ *    ouve a primeira frase enquanto ainda vê a ação da capa.
+ *
+ * ⚠️ Isto torna a abertura mais CURTA em tempo morto, não mais longa: antes havia
+ * 1,5s sem voz nenhuma, agora há 0,9s. O vídeo final até encolhe 0,6s.
+ * ⚠️ O que se PERDE: os primeiros ~2,6s do visual da cena 1 ficam tapados pela capa.
+ * É deliberado — nesse tempo a capa É o visual, e é ela que decide se a pessoa fica.
+ *
+ * ⚠️ VOZ_ENTRA_FRAMES está ESPELHADO em `introSecondsFor()` de srt-short.js. É o
+ * OFFSET que tem de ser espelhado, NUNCA a duração da capa — espelhar 3,5s em vez
+ * de 0,9s atrasaria a legenda 2,6s em relação à voz.
+ */
+export const CAPA_FRAMES_V3 = 105;
+export const VOZ_ENTRA_FRAMES = 27;
 export const SIGNATURE_FRAMES = 75; // assinatura final da marca (~2,5s) depois da última cena
 
 // ── CONTRACT v3 — "SHOTS" ────────────────────────────────────────────────────
@@ -94,12 +118,40 @@ export type IntroSpec = {
 // intro v3 = tem `frase`. Só então usamos a DynamicIntro / INTRO_FRAMES_V3.
 export const isV3Intro = (intro?: IntroSpec | null): boolean => !!intro && typeof intro.frase === 'string' && intro.frase.length > 0;
 
-// Frames da abertura conforme o tipo de intro (v3 ~4s, legada ~1,5s, nenhuma 0).
-// ESPELHADO em `introSecondsFor()` de src/scripts/youtube/srt-short.js (gerador
-// do SRT) — qualquer mudança aqui exige a mesma mudança lá, senão a legenda do
-// YouTube dessincroniza da voz (bug corrigido em 2026-07-22).
+/**
+ * ONDE COMEÇA TUDO O RESTO (áudio, legenda, cenas, SFX) — o "offset único da intro".
+ * v3 = 27f (0,9s, a voz entra DENTRO da capa) · legada = 45f · sem intro = 0.
+ * ESPELHADO em `introSecondsFor()` de src/scripts/youtube/srt-short.js — qualquer
+ * mudança aqui exige a mesma mudança lá, senão a legenda do YouTube dessincroniza
+ * da voz (bug corrigido em 2026-07-22).
+ */
 export const introFramesFor = (script: ShortScript): number =>
-  !script.intro ? 0 : isV3Intro(script.intro) ? INTRO_FRAMES_V3 : INTRO_FRAMES;
+  !script.intro ? 0 : isV3Intro(script.intro) ? VOZ_ENTRA_FRAMES : INTRO_FRAMES;
+
+/**
+ * QUANTO TEMPO A CAPA FICA NO ECRÃ. Só isto — não é offset de nada.
+ * Na v3 é maior que o offset de propósito: a capa continua por cima enquanto a voz
+ * já fala. Na intro legada os dois valores coincidem (não havia voz por baixo).
+ */
+export const capaFramesFor = (script: ShortScript): number =>
+  !script.intro ? 0 : isV3Intro(script.intro) ? CAPA_FRAMES_V3 : INTRO_FRAMES;
+
+/**
+ * A IMAGEM DESTE VÍDEO — é ela que escolhe a coreografia da capa.
+ * Sai do PRÓPRIO roteiro (o primeiro shot de imagem que não seja a mãozinha da
+ * chamada), de propósito: assim o gerador não precisa de escrever mais um campo,
+ * nenhum prompt novo pode contradizer nenhuma trava nova, e os roteiros que já
+ * existem ganham capa sem serem tocados.
+ */
+export const fioCondutorDoScript = (script: ShortScript): string | null => {
+  for (const cena of script.scenes || []) {
+    for (const shot of cena.shots || []) {
+      const m = shot.visual?.metaphor;
+      if (shot.visual?.type === 'metaphor' && m && m !== 'clique-link') return m;
+    }
+  }
+  return null;
+};
 
 export type ShortScript = {
   slug: string;
@@ -148,9 +200,34 @@ const sceneTimingFor = (
   return timing.scenes.find((s) => String(s.id) === String(id)) ?? timing.scenes[i] ?? null;
 };
 
-// Duração de cada cena (seg): a MEDIDA do TTS (timing) ou a autoral do roteiro.
+/**
+ * RESPIRO ENTRE CENAS (IMPLEMENTACAO20 §21.3 — T2, 01/08/2026).
+ *
+ * ANTES: a cena durava EXATAMENTE o áudio medido. Como o trilho mestre corta
+ * TRANSITION_FRAMES do fim de cada faixa (ver o `durationInFrames` lá em baixo),
+ * o resultado era o PIOR dos dois mundos: a última fração de segundo de cada
+ * frase era DECEPADA e a frase seguinte entrava no instante exato — zero silêncio.
+ * O dono ouviu isto como "as falas ficam quase uma em cima da outra".
+ * A causa fui eu: ao passar a medir o áudio real (§17.8b) o respiro que existia
+ * por acidente desapareceu.
+ *
+ * DEPOIS: +0,7s no fim de cada cena MENOS a última. Desses 0,7s, 0,27s são comidos
+ * pela sobreposição da transição — sobram ~0,43s de silêncio REAL, perto da pausa
+ * que o TTS dá num ponto de interrogação (a única que o dono aprovou).
+ *
+ * ⚠️ ESTE VALOR ESTÁ DUPLICADO em src/scripts/youtube/srt-short.js (masterStarts).
+ * Mudar aqui SEM mudar lá faz a legenda ADIANTAR-SE 0,7s por cena (3,5s ao fim de
+ * 6 cenas) — o mesmo modo de falha do TRANSITION_FRAMES, documentado acima.
+ */
+export const RESPIRO_SEC = 0.7;
+
+// Duração de cada cena (seg): a MEDIDA do TTS (timing) ou a autoral do roteiro,
+// mais o respiro (menos na última cena, que é seguida pela assinatura da marca).
 export const sceneDurationsSec = (script: ShortScript, timing: ShortTiming): number[] =>
-  script.scenes.map((s, i) => sceneTimingFor(timing, s, i)?.durationSec || s.durationSec);
+  script.scenes.map((s, i) => {
+    const falada = sceneTimingFor(timing, s, i)?.durationSec || s.durationSec;
+    return i < script.scenes.length - 1 ? falada + RESPIRO_SEC : falada;
+  });
 
 export const sceneFramesFrom = (durationsSec: number[], fps: number) =>
   durationsSec.map((d) => Math.max(1, Math.round(d * fps)));
@@ -185,7 +262,12 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
   script.scenes.forEach((scene, i) => {
     children.push(
       <TransitionSeries.Sequence key={`s${i}`} durationInFrames={frames[i]}>
-        <SceneRenderer scene={scene} timing={sceneTimingFor(timing, scene, i)} metaphorStages={metaphorStagesByScene[i]} />
+        {/* `sceneFrames` = o comprimento REAL da cena, já com o respiro. Sem isto o
+            SceneRenderer voltaria a calcular a duração pelo áudio cru e (a) o último
+            shot acabaria antes do fim da cena, deixando ~0,7s de tela VAZIA, e (b) os
+            SFX — que recebem os frames JÁ com respiro via computeGlobalShotSfxFires —
+            dispariam em frames diferentes dos da imagem. */}
+        <SceneRenderer scene={scene} timing={sceneTimingFor(timing, scene, i)} metaphorStages={metaphorStagesByScene[i]} sceneFrames={frames[i]} />
       </TransitionSeries.Sequence>,
     );
     if (i < script.scenes.length - 1) {
@@ -216,6 +298,7 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
   // NUNCA divergem da abertura (a legenda não começa antes da voz). Nada de constante
   // fixa 45 no cálculo de offset — o 45 só alimenta o ramo legado de introFramesFor.
   const introFrames = introFramesFor(script);
+  const capaFrames = capaFramesFor(script);
 
   // Cooldown GLOBAL de SFX de shot (v3.4): calcula, pro vídeo INTEIRO, quais disparos
   // sobrevivem ao cooldown de 8s entre cenas (evita o mesmo som repetir cedo demais
@@ -233,15 +316,6 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
       <Background />
       <BackgroundMusic />
       <Watermark />
-      {script.intro && (
-        <Sequence durationInFrames={introFrames}>
-          {isV3Intro(script.intro) ? (
-            <DynamicIntro frase={script.intro.frase || ''} counter={script.intro.counter} frames={introFrames} />
-          ) : (
-            <ShockIntro big={script.intro.big || ''} sub={script.intro.sub || ''} />
-          )}
-        </Sequence>
-      )}
       <Sequence from={introFrames}>
         {/* Etiqueta do tema: fora do TransitionSeries de propósito — ela NÃO deve
             entrar e sair a cada cena, é o elemento fixo que costura o vídeo todo.
@@ -267,6 +341,25 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
           </Sequence>
         ))}
       </Sequence>
+      {/* A CAPA, POR CIMA DE TUDO — e a ordem aqui é o que faz isso acontecer.
+          Ela vem DEPOIS do bloco das cenas de propósito: irmãos posteriores pintam
+          por cima. Enquanto a capa está no ar (0 → 3,5s) a voz já toca por baixo
+          desde os 0,9s, que é exatamente o que o dono pediu. Antes a capa vinha
+          primeiro e, mesmo que durasse mais, as cenas tapavam-na. */}
+      {script.intro && (
+        <Sequence durationInFrames={capaFrames}>
+          {isV3Intro(script.intro) ? (
+            <DynamicIntro
+              frase={script.intro.frase || ''}
+              counter={script.intro.counter}
+              frames={capaFrames}
+              metaphor={fioCondutorDoScript(script)}
+            />
+          ) : (
+            <ShockIntro big={script.intro.big || ''} sub={script.intro.sub || ''} />
+          )}
+        </Sequence>
+      )}
       {/* Assinatura final da marca (~2,5s) — entra após a última cena. A duração da
           composição é estendida em +SIGNATURE_FRAMES no Root (calculateMetadata). */}
       <Sequence from={introFrames + contentFrames} durationInFrames={SIGNATURE_FRAMES}>
