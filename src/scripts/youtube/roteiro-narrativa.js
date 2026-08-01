@@ -32,6 +32,9 @@ import { BORDAO, METAPHORS, longestSharedWordRun } from './lib/schema-short.js';
  * execução direta, e por importação dinâmica.)
  */
 import { keywordFalada } from './coreografia.js';
+// O segundo leitor: quem arruma a FALA depois de o código garantir a VERDADE.
+import { revisarFala } from './lib/segundo-leitor.js';
+import { PERSONA, VICIOS_ESSENCIAIS, O_QUE_PRESERVAR } from './lib/voz-do-canal.js';
 import { loadRecentPublishedContext } from './roteiro-short.js';
 import { montarFichaDeNumeros } from './lib/simulador.js';
 import { readFileSync, existsSync } from 'fs';
@@ -260,30 +263,19 @@ export function buildPromptNarrativa(t, proibidas, frasesRecentes, ficha = null)
   return `Você é ROTEIRISTA de um canal brasileiro de finanças pessoais.
 
 ════════ QUEM ESTÁ FALANDO, E COM QUEM ════════
-Escreva como **um gerente de banco explicando, com muita paciência e muita simplicidade, para um senhor humilde** que nunca estudou finanças e tem vergonha de perguntar.
+${PERSONA}
 Ele não sabe o que é "rotativo", "amortizar", "drenagem" ou "estratégia". Se você usar uma palavra dessas, ele desliga.
-Fale COM ele, não SOBRE o assunto: "olha", "sabe", "presta atenção", "calma", "vou te explicar", "repara só".
-
+${VICIOS_ESSENCIAIS}
+${O_QUE_PRESERVAR}
 ⛔ **NADA DE FRASE DE CARTAZ.** O maior defeito deste canal é a frase que parece escrita para um slide e não dita por uma pessoa.
    ✗ "Três erros de cartão são pedras na sua mochila." (foi ao ar; o dono: *"se alguém falar isso num vídeo curto, a pessoa já sai — isso está robótico"*)
    ✓ "Sabe esses três errinhos no cartão? É que nem carregar pedra na mochila."
    A diferença: a segunda tem alguém a falar. A primeira é uma legenda.
-
-⛔ **A IMAGEM ENTRA COMO COMPARAÇÃO, NUNCA COMO DEFINIÇÃO.** Ninguém diz "X são Y". As pessoas dizem "é tipo", "parece", "é que nem", "é igual", "imagina".
-   ✗ "O erro é uma pedra na mochila."     ✓ "O erro é tipo uma pedra que entra na mochila."
-   ✗ "A dívida é uma bola de ferro."      ✓ "A dívida parece uma bola de ferro no pé."
+   A imagem entra sempre COMPARADA ("é tipo", "parece", "é que nem"), nunca definida ("X são Y").
 
 ⛔ **A IMAGEM NÃO PODE CONTRADIZER-SE.** Ela tem de funcionar do princípio ao fim, com a física dela.
-   ✗ "…é o pequeno que fica lá meses, ESVAZIANDO a mochila um pouquinho de cada vez." (uma mochila com pedras fica mais PESADA, nunca mais vazia — a imagem parte-se ao meio)
-   ✓ "…é o pequeno que fica lá meses, pondo mais uma pedra de cada vez."
-   Antes de entregar, pergunte: o que a minha imagem faz é o que ela faria na vida real?
-
-⛔ **PALAVRAS DE ESCRITÓRIO NÃO ENTRAM.** Drenagem, solução, estratégia, mecanismo, processo, impacto, gestão, otimizar, efetivamente, realizar, utilizar, adquirir. Troque por como se diz na rua: em vez de "parar essa drenagem", "parar de perder esse dinheiro".
-
-⛔ **JARGÃO DE BANCO TAMBÉM NÃO.** Rotativo, saldo devedor, amortizar, encargos, IOF, liquidez, rentabilidade, aporte. Diga a COISA, não o nome dela.
-   ✗ "…e deixar o saldo rodar." (foi ao ar; o dono: *"nem eu estou entendendo, imagina um senhor humilde"*)
-   ✓ "…e deixar a dívida passar pro mês seguinte."
-   **Exceção única:** a palavra do próprio TEMA pode ser dita — é o título do vídeo. Mas explique-a na mesma frase, com palavras do dia a dia.
+   ✗ "…ESVAZIANDO a mochila um pouquinho de cada vez." (o que a enche são pedras: fica mais PESADA, nunca mais vazia)
+   ✓ "…pondo mais uma pedra de cada vez."
 
 SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (42 a 50 segundos).
 NÃO descreva imagens, ícones, sons, efeitos ou cortes. Só o texto que a voz vai falar. Outra pessoa cuida do visual depois.
@@ -804,181 +796,34 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   }
 
   /**
-   * A CORRENTE — cada bloco tem de PEGAR no anterior (defeito nº1 de 01/08/2026).
+   * ═══ AQUI VIVIAM SEIS TRAVAS DE GOSTO. FORAM EMBORA (01/08/2026, à tarde) ═══
    *
-   * O dono, depois de ouvir o vídeo: *"aqui já ficou meio estranho, ficou quase que
-   * uma frase solta, ela não tem conexão com a frase anterior"*. E deu a correção:
-   * o bloco 1 acaba a perguntar quem é o vilão, logo o bloco 2 tem de ABRIR com o
-   * vilão — *"tem continuação, tem sentido, não é uma frase sem nexo"*.
+   * Eram: o encadeamento entre blocos, o eco na abertura, a comparação em vez de
+   * definição, o fecho sem pergunta, as palavras de escritório e o jargão de banco.
    *
-   * ⚠️ POR QUE ESTA TRAVA E NÃO OUTRA. Sentido não se mede por código. O que se mede
-   * é se dois blocos seguidos falam sequer da MESMA COISA: uma continuação natural
-   * repete quase sempre um substantivo do que acabou de ser dito. Provado contra o
-   * caso real: o bloco 2 que o dono reprovou NÃO partilha uma única palavra com o
-   * bloco 1, e a reescrita que ele propôs ("O vilão escondido...") partilha "vilão".
+   * PORQUE SAÍRAM, e está medido: com elas, o gerador falhou OITO tentativas
+   * seguidas, cada uma numa regra diferente. Conserta uma, parte outra. E quando
+   * uma delas era fácil de satisfazer, o modelo aprendia o atalho em vez do
+   * objetivo — a trava do encadeamento produziu "Crescer assim?", "Completa?",
+   * cola robótica pior do que o defeito original.
    *
-   * ⚠️ E O QUE ESTA TRAVA NÃO FAZ: não obriga a colar frases de ligação do género
-   * "e é aí que...". Isso daria cola robótica em todos os blocos, que é pior do que
-   * o defeito. A ligação verdadeira faz-se no prompt; isto é só a rede por baixo.
+   * A pergunta do dono que fechou o assunto: *"não existe outra forma de corrigirmos
+   * isso definitivamente? por essas tentativas e erros não vejo como algo seguro pro
+   * futuro."* Tinha razão. **Gosto não se mede com lista de palavras** — uma lista
+   * só sabe dizer "esta palavra é proibida", e escrever bem não é a ausência de
+   * palavras más.
+   *
+   * PARA ONDE FORAM: para o SEGUNDO LEITOR (lib/segundo-leitor.js), uma passagem de
+   * IA que lê o roteiro como espectador e reescreve o que soa a robô. Ele julga o
+   * que nenhuma lista julga — o tom, a frase morta, a metáfora que se contradiz.
+   *
+   * O QUE FICA AQUI: só VERDADE — números, catálogo de imagens, tema dito no gancho,
+   * bordão, tamanho, promessas, cópia do exemplo. Coisas que ou são verdade ou não
+   * são, e onde o código é melhor juiz que qualquer modelo.
+   *
+   * É a irmã da regra que este projeto já tinha: *o que se calcula não se pede ao
+   * modelo*. A outra metade é: *o que é gosto não se mede com regex*.
    */
-  const VAZIAS_DE_ASSUNTO = new Set(['você', 'voce', 'para', 'como', 'quando', 'porque', 'porém', 'porem',
-    'mesmo', 'ainda', 'todo', 'toda', 'todos', 'todas', 'cada', 'mais', 'menos', 'muito', 'muita',
-    'isso', 'esse', 'essa', 'esses', 'essas', 'aquilo', 'aquele', 'aquela', 'sobre', 'entre',
-    'pode', 'podem', 'está', 'esta', 'estão', 'ser', 'tem', 'nem', 'sem', 'com', 'que', 'mas',
-    'agora', 'depois', 'antes', 'aqui', 'assim', 'sempre', 'nunca', 'nada', 'algo', 'coisa']);
-  const assuntoDe = (texto) => new Set(
-    semAcento(texto)
-      .replace(/[^\p{L}\p{N}\s]/gu, ' ')
-      .split(/\s+/)
-      .filter((p) => p.length >= 4 && !VAZIAS_DE_ASSUNTO.has(p))
-      .map((p) => p.replace(/s$/, '')), // singular/plural contam como a mesma palavra
-  );
-  /**
-   * ⚠️ A COLA ROBÓTICA — o tiro pela culatra da regra acima, apanhado no MESMO dia
-   * em que a instalei (01/08/2026).
-   *
-   * Bastava partilhar uma palavra com o bloco anterior. O modelo descobriu o atalho
-   * e passou a abrir os blocos ECOANDO a última palavra como pergunta solta:
-   *   "…faz a dívida crescer." → "**Crescer assim?** No FinMoovi…"
-   *   "…quinhentos reais."     → "**Reais que somem?** Quer descobrir…"
-   *   "…a dica completa."      → "**Completa?** O que pesa mais…"
-   * Cumpre a trava e destrói a fala — exatamente o que eu tinha escrito no
-   * comentário desta regra que NÃO podia acontecer.
-   *
-   * O conserto é medir se a abertura é uma FRASE ou um eco: uma frase de verdade
-   * tem sujeito e verbo e não cabe em quatro palavras.
-   */
-  const primeiraFrase = (texto) => String(texto || '').trim().split(/(?<=[.!?…])\s+/)[0] || '';
-  for (let i = 0; i < blocos.length; i++) {
-    const abertura = primeiraFrase(blocos[i]?.fala);
-    const nPalavras = abertura.split(/\s+/).filter(Boolean).length;
-    if (nPalavras && nPalavras < 5) {
-      erros.push(
-        `o bloco ${i + 1} (${PAPEIS[i]}) abre com "${abertura}" — ${nPalavras} palavras não são uma frase, são um eco. `
-        + 'Não retome o bloco anterior repetindo a última palavra dele como pergunta solta; retome com uma frase inteira, '
-        + 'como alguém a falar (✗ "Completa?" · ✓ "E essa dica completa é simples:").',
-      );
-    }
-  }
-
-  /**
-   * ⚠️ A CORRENTE É EXIGIDA NA ESPINHA DA HISTÓRIA (blocos 1→2→3→4), NÃO ATRAVÉS DO
-   * CONVITE. Corrigido na tarde de 01/08 depois de o gerador falhar 4 tentativas.
-   *
-   * O bloco 5 é a chamada para ação — "comenta FINMOOVI aqui" — e é, por desenho,
-   * uma PAUSA na história: o seu vocabulário é o do pedido, não o do assunto.
-   * Exigir que a história passe por dentro dele era lutar contra o próprio formato,
-   * e foi o que derrubou a 3ª tentativa.
-   * O fecho continua preso à história — só que ao CORPO dela (qualquer um dos
-   * blocos 1 a 4), e não à frase do convite que o antecede.
-   */
-  const ligaCom = (i, candidatos) => {
-    const agora = assuntoDe(blocos[i]?.fala || '');
-    return candidatos.some((j) => {
-      const antes = assuntoDe(blocos[j]?.fala || '');
-      return [...agora].some((p) => antes.has(p));
-    });
-  };
-  for (const i of [1, 2, 3]) {
-    if (!ligaCom(i, [i - 1])) {
-      erros.push(
-        `o bloco ${i + 1} (${PAPEIS[i]}) não pega em NADA do bloco ${i} (${PAPEIS[i - 1]}) — `
-        + 'é uma frase solta, não a continuação da história. Abra o bloco retomando aquilo '
-        + `que o anterior acabou de dizer (ex.: se o bloco ${i} termina a perguntar quem é o `
-        + 'vilão, comece por "o vilão escondido é...").',
-      );
-    }
-  }
-  if (blocos.length === 6 && !ligaCom(5, [0, 1, 2, 3])) {
-    erros.push(
-      'o fecho não retoma NADA da história (blocos 1 a 4) — ele é quem fecha o que foi contado. '
-      + 'Volte à imagem e à dor do início, com todas as letras.',
-    );
-  }
-
-  /**
-   * O FECHO RESPONDE, NÃO PERGUNTA (defeito de 01/08/2026).
-   * O vídeo acabou em *"E agora?"* e o dono: *"o que é 'e agora'???"*. A instrução
-   * dizia "termine com uma provocação" e o modelo leu isso como FAZER OUTRA PERGUNTA.
-   * A instrução foi reescrita no MESMO passo que esta trava.
-   */
-  const fechoTexto = String(blocos[5]?.fala || '').trim();
-  if (/\?\s*$/.test(fechoTexto)) {
-    erros.push('o fecho acaba com uma PERGUNTA — ele é quem RESPONDE a pergunta do bloco 1, não quem faz outra. Termine numa afirmação.');
-  }
-
-  /**
-   * O GANCHO TEM DE DIZER O TEMA — e esta trava nasceu de um defeito REAL de
-   * 01/08/2026, apanhado 20 minutos depois de eu instalar a regra da imagem.
-   *
-   * Ao passar a exigir a imagem logo na primeira frase, o modelo trocou o TEMA pela
-   * IMAGEM: o gancho saiu "Uma mochila cheia de pedras faz você perder quinhentos
-   * reais por mês" — sem "erros", sem "cartão". O vídeo prometia no título "3 erros
-   * de cartão" e não dizia nenhum.
-   *
-   * Pior: a PASSAGEM 2 recusa isso de imediato (`keywordFalada` devolve null) e a
-   * narração já vem fechada de cá — ou seja, o roteiro morria sem hipótese de
-   * conserto, com o erro a apontar para o sítio errado. Já paguei este pêndulo uma
-   * vez (§20.3, C-1: 4 chamadas queimadas).
-   *
-   * A regra vive na passagem 2; aqui só se FALHA MAIS CEDO, no único momento em que
-   * ainda há quem possa reescrever a frase.
-   */
-  /**
-   * A IMAGEM ENTRA COMO COMPARAÇÃO, NUNCA COMO DEFINIÇÃO (01/08/2026).
-   *
-   * O dono, ao ler "Três erros de cartão SÃO pedras na sua mochila":
-   * *"olha que frase nada a ver… se alguém falar isso num vídeo curto a pessoa já
-   * sai. Isso está robótico."* E deu a correção exata: *"3 erros de cartão QUE
-   * PARECE uma mochila com pedras"*.
-   *
-   * ⚠️ E a frase robótica saiu do MEU molde, que dizia literalmente "<o tema> é/são
-   * <a imagem>". Terceira vez hoje que o prompt produz aquilo que depois se reprova.
-   *
-   * A trava é positiva, não proibitiva: no bloco onde a imagem aparece pela primeira
-   * vez tem de haver uma palavra de COMPARAÇÃO. É assim que se fala de uma imagem
-   * na vida real — ninguém declara equivalências.
-   */
-  /**
-   * PALAVRAS DE ESCRITÓRIO — o dono quer *"um gerente de banco falando de forma
-   * muito simples com um senhor muito humilde"*. Estas palavras existem em
-   * relatórios, não em conversas. Saíram no roteiro de 01/08: "drenagem",
-   * "drenando", "a solução".
-   */
-  const PALAVRAS_DE_ESCRITORIO = ['drenagem', 'drenando', 'drenar', 'otimizar', 'otimizacao',
-    'estrategia', 'mecanismo', 'efetivamente', 'realizar', 'utilizar', 'adquirir',
-    'gestao', 'monitoramento', 'impacto financeiro', 'solucao'];
-  const falaSemAcento = semAcento(falaToda);
-  const encontradas = PALAVRAS_DE_ESCRITORIO.filter((p) => falaSemAcento.includes(p));
-  if (encontradas.length) {
-    erros.push(
-      `a fala usa palavra de escritório: "${encontradas.join('", "')}" — ninguém diz isso a conversar. `
-      + 'Troque pelo que se diz na rua (ex.: "parar essa drenagem" → "parar de perder esse dinheiro").',
-    );
-  }
-
-  /**
-   * JARGÃO DE BANCO — o dono, ao ler "deixar o saldo rodar": *"nem eu estou
-   * entendendo, imagina um senhor humilde"* (01/08/2026).
-   *
-   * ⚠️ COM UMA EXCEÇÃO QUE É O QUE TORNA A TRAVA SEGURA: a palavra do PRÓPRIO TEMA
-   * é sempre permitida. Este canal tem vídeos de glossário — um vídeo sobre "juros
-   * compostos" TEM de dizer "juros compostos", é o título. O que se proíbe é
-   * ARRASTAR outro termo técnico para dentro da explicação, que é o que aconteceu
-   * aqui: o tema era "erros de cartão" e apareceu "saldo rodar" do nada.
-   */
-  const JARGAO = ['rotativo', 'saldo devedor', 'saldo rodar', 'saldo roda', 'amortiz',
-    'encargos', 'taxa efetiva', 'spread', 'liquidez', 'rentabilidade', 'aporte',
-    'capitaliza', 'indexad', 'cet ', 'iof'];
-  const temaNorm = semAcento(temaTermo || '');
-  const jargaoUsado = JARGAO.filter((j) => falaSemAcento.includes(j) && !temaNorm.includes(j));
-  if (jargaoUsado.length) {
-    erros.push(
-      `a fala usa jargão de banco que não está no tema: "${jargaoUsado.join('", "')}". `
-      + 'Do outro lado está alguém que nunca estudou finanças — se a palavra não se explica sozinha, '
-      + 'diga a COISA em vez do nome dela (✗ "deixar o saldo rodar" · ✓ "deixar a dívida passar pro mês seguinte").',
-    );
-  }
 
   /**
    * A TRAVA ANTI-CÓPIA — o exemplo tem de se QUEIMAR (aprovada pelo dono, 01/08).
@@ -1182,36 +1027,11 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
         erros.push(`o fio condutor "${fio}" aparece em 1 bloco só — ele precisa CRESCER: abre no início e volta, pelo menos, na virada ou no fecho`);
       }
 
-      /**
-       * A IMAGEM ENTRA COMO COMPARAÇÃO, NUNCA COMO DEFINIÇÃO (01/08/2026).
-       *
-       * O dono, ao ler "Três erros de cartão SÃO pedras na sua mochila":
-       * *"olha que frase nada a ver… se alguém falar isso num vídeo curto a pessoa
-       * já sai. Isso está robótico."* E deu a correção exata: *"3 erros de cartão
-       * QUE PARECE uma mochila com pedras"*.
-       *
-       * ⚠️ E a frase robótica saiu do MEU molde, que dizia literalmente
-       * "<o tema> é/são <a imagem>". Terceira vez no mesmo dia que o prompt produz
-       * aquilo que a trava depois reprova — por isso o molde foi reescrito no MESMO
-       * passo que esta verificação.
-       *
-       * A trava é POSITIVA, não proibitiva: no bloco onde a imagem aparece pela
-       * primeira vez tem de existir uma palavra de COMPARAÇÃO. É assim que se fala
-       * de uma imagem na vida real — ninguém declara equivalências a conversar.
-       */
-      const COMPARACOES = ['tipo', 'parece', 'parecem', 'que nem', 'igual', 'como se',
-        'imagina', 'e como', 'sao como', 'lembra', 'nem que'];
-      const primeiroComFio = blocos.find(temFio);
-      if (primeiroComFio) {
-        const textoFio = semAcento(primeiroComFio.fala || '');
-        if (!COMPARACOES.some((c) => textoFio.includes(semAcento(c)))) {
-          erros.push(
-            `a imagem "${fio}" entra como DEFINIÇÃO ("X é/são Y") e não como comparação — soa a cartaz, não a alguém a falar, e quem assiste sai. `
-            + 'Use "que parece", "é tipo", "é que nem", "é igual a" ou "imagina". '
-            + '✗ "três erros de cartão são pedras na mochila" · ✓ "três errinhos no cartão que parecem pedra na mochila".',
-          );
-        }
-      }
+      // ⚠️ A exigência de a imagem entrar como COMPARAÇÃO ("que parece", "é tipo")
+      // e não como definição ("X são Y") saiu daqui e foi para o SEGUNDO LEITOR.
+      // Continua a ser regra — está no catálogo de vícios da voz do canal — mas é
+      // ele que a julga: uma lista de palavras de comparação obrigava a colar
+      // "parece" algures na frase, que é o atalho, não o objetivo.
     }
   }
 
@@ -1321,8 +1141,24 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
     if (Array.isArray(n.blocos)) {
       for (const b of n.blocos) if (b && typeof b.fala === 'string') b.fala = limparFala(b.fala);
     }
-    const v = validarNarrativa(n, proibidas, ficha, t && t.term, permitidas, `${(t && t.definition) || ''} ${(t && t.body) || ''}`);
-    if (v.ok) return { narrativa: n, avisos: v.avisos, palavras: v.palavras, tentativa: i };
+    const apoio = `${(t && t.definition) || ''} ${(t && t.body) || ''}`;
+    const conferir = (cand) => validarNarrativa(cand, proibidas, ficha, t && t.term, permitidas, apoio);
+    const v = conferir(n);
+    if (v.ok) {
+      /**
+       * ═══ O SEGUNDO LEITOR ═══
+       * A narração está VERDADEIRA (números, catálogo, tamanho, promessas). Falta
+       * estar BEM DITA — e isso não se mede com listas de palavras, mede-se lendo.
+       * Ele só mexe nas palavras; o resultado volta a passar pelas mesmas travas e,
+       * se as partir, fica o original. Ver lib/segundo-leitor.js.
+       */
+      const lido = await revisarFala(n, (t && t.term) || '', conferir);
+      if (lido.usada === 'leitor') {
+        const vf = conferir(lido.narrativa);
+        return { narrativa: lido.narrativa, avisos: vf.avisos, palavras: vf.palavras, tentativa: i, mexi: lido.mexi };
+      }
+      return { narrativa: n, avisos: v.avisos, palavras: v.palavras, tentativa: i, mexi: [], leitorFalhou: lido.motivo };
+    }
     // ver `acumularExigencias`: o tamanho substitui, o resto acumula
     const lista = acumularExigencias(exigencias, v.erros);
     corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo, reescrevendo a narração inteira:\n${lista.join('\n')}`;
@@ -1359,9 +1195,19 @@ if (executadoDireto) {
   } else {
     console.log('🧮 sem cenário numérico no tema — o modelo fica proibido de citar números fora do material de apoio.\n');
   }
-  const { narrativa, avisos, palavras, tentativa } = await gerarNarrativa(t, { proibidas, frasesRecentes: frases, ficha });
+  const { narrativa, avisos, palavras, tentativa, mexi, leitorFalhou } = await gerarNarrativa(t, { proibidas, frasesRecentes: frases, ficha });
 
   console.log(`✅ aprovada na tentativa ${tentativa} — ${palavras} palavras (~${(palavras / PALAVRAS_POR_SEGUNDO).toFixed(0)}s de fala)`);
+  // O que o SEGUNDO LEITOR mexeu. É a única janela para o trabalho dele — sem isto
+  // ninguém sabe se ele está a melhorar a fala ou a passar a mão por cima.
+  if (leitorFalhou) {
+    console.log(`📖 segundo leitor NÃO foi usado: ${leitorFalhou}`);
+  } else if (mexi && mexi.length) {
+    console.log(`📖 segundo leitor mexeu em ${mexi.length}:`);
+    mexi.forEach((m) => console.log(`   · ${m}`));
+  } else {
+    console.log('📖 segundo leitor leu e não mexeu em nada.');
+  }
   console.log(`🧵 fio condutor: ${narrativa.fioCondutor}`);
   console.log(`❓ pergunta segurada: ${narrativa.perguntaAberta}\n`);
   console.log('─'.repeat(72));
