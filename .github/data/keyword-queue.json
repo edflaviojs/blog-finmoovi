@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T11:54:26.554Z",
+  "updatedAt": "2026-08-02T10:25:32.013Z",
   "sourceCursor": 0,
   "entries": [
     {
@@ -169,8 +169,10 @@
       "category": null,
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-07-23T20:12:37.921Z"
+      "status": "used",
+      "addedAt": "2026-07-23T20:12:37.921Z",
+      "usedAt": "2026-08-02T10:25:32.013Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "calculadora juros compostos",

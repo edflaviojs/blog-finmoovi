@@ -79,7 +79,7 @@ Aim for **2 %–5 %** of your net income, i.e., **$100‑$250**. That range 
 Online shopping often offers more competitive prices and lets you compare options quickly. However, if you’re worried about delivery delays, a brick‑and‑mortar store guarantees immediate possession.  
 
 ### How can I avoid the “last‑minute trap”?  
-Plan the purchase early, take advantage of the initial promotions, and move the earmarked amount into a separate account or budgeting app.  
+Plan the purchase early, take advantage of the initial promotions, and move the earmarked amount into a separate account or [budgeting](/en/posts/en-simple-everyday-saving-strategies-for-2026) app.  
 
 ### Can I use the same plan for other celebrations?  
 Absolutely. The method of setting a ceiling, creating a spending category, and reviewing the outcome works for Christmas, birthdays, and any other special occasions.  
