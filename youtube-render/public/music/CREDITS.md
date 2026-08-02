@@ -1,30 +1,34 @@
-# Música de fundo — origem e licença
+# Música de fundo — três faixas a rodar
 
-**Faixa atual:** *"Leito FinMoovi"* — **gerada pelo próprio canal**, por
-`src/scripts/youtube/gerar-trilha.js`.
-**Licença:** nenhuma. É nossa. **Não exige atribuição, não exige nada.**
+**Quem manda é `src/scripts/youtube/lib/musica.js`**, não este ficheiro. É lá que estão
+declaradas as faixas, o clima de cada uma e a linha de crédito. A descrição do vídeo vai
+buscar o crédito à faixa que ESSE vídeo usou — ninguém tem de se lembrar de nada.
 
-Para regerar (ou afinar o som), correr na raiz do repositório:
+| ficheiro | faixa | clima | vídeos |
+|---|---|---|---|
+| `bg-rock.mp3` | *Cool Rock* | alerta | dívida, erros, queda, dinheiro a fugir |
+| `bg-leve.mp3` | *Guiton Sketch* | leve | poupar, crescer, proteger |
+| `bg-serio.mp3` | *Inspired* | sério | decidir, comparar, prazo, risco |
 
-```
-node src/scripts/youtube/gerar-trilha.js
-```
+Todas de **Kevin MacLeod (incompetech.com)**, licença **CC BY 4.0** — uso comercial livre
+**com atribuição**, que entra sozinha na descrição. Cortadas aos 75s (um Short nunca passa
+de 60) com um desvanecimento no fim. O volume do leito ajusta-se em
+`youtube-render/src/audio/music.tsx` (`BED_VOLUME`).
 
-O volume do leito ajusta-se em `youtube-render/src/audio/music.tsx` (`BED_VOLUME`).
+**Para trocar uma faixa:** pôr o ficheiro aqui e mudar a entrada em `lib/musica.js`.
+O crédito, o render e a descrição seguem sozinhos.
 
 ---
 
-## ⚠️ A fonte da verdade NÃO é este ficheiro
+## Porque isto está assim
 
-Este texto é para humanos. **Quem manda é `src/scripts/youtube/lib/musica.js`** — é lá que
-está declarado se a faixa exige crédito, e é de lá que a descrição do vídeo o vai buscar
-sozinha. Trocar de faixa é mudar esse objeto; o resto acontece por si.
+De 21/07 a 02/08/2026 o canal usou uma faixa CC BY **sem a creditar** em 9 vídeos. O aviso
+estava escrito neste ficheiro, em maiúsculas, e não impediu nada — **porque nada no código
+o lia**. Um aviso que ninguém lê é o mesmo que não existir. Os 9 vídeos foram corrigidos
+por `src/scripts/youtube/corrigir-creditos-musica.js`.
 
-**Porquê:** de 21/07 a 02/08/2026 a faixa era *"Deliberate Thought"* de Kevin MacLeod
-(CC BY 4.0), que obriga a creditar o autor na descrição. **Este ficheiro dizia isso, em
-maiúsculas, e nove vídeos foram na mesma ao ar sem o crédito** — porque nada no código
-lia este aviso. Um aviso que ninguém lê é o mesmo que não existir.
-
-Os nove vídeos afetados são corrigidos por
-`src/scripts/youtube/corrigir-creditos-musica.js`, que lhes acrescenta a linha do crédito
-à descrição. O texto sai de `lib/musica.js` (`TRILHA_ANTERIOR`), nunca escrito à mão.
+Houve ainda uma tentativa de gerar a trilha por código (`gerar-trilha.js`, que continua a
+funcionar) para não haver licença nenhuma. O dono ouviu e reprovou duas versões — *"muito
+triste"*, depois *"desanimador"*. Guitarra, baixo e bateria tocados não se sintetizam com
+senos. A medição ajudou a perceber porquê (tom menor, metade da velocidade), mas quem
+decide se uma música serve é o ouvido.

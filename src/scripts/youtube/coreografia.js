@@ -26,6 +26,10 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
+// A música deste vídeo sai daqui, do TEMA — não se pergunta ao modelo. Ver `musica.js`.
+import { escolherTrilha } from './lib/musica.js';
+import { readFileSync as lerFicheiro } from 'node:fs';
+import { join as joinPath } from 'node:path';
 import {
   validateShortScript, VISUAL_TYPES, METAPHORS, ICONS, SFX, APP_SCREENS, MAX_SHOTS, MAX_TOTAL_SEC,
 } from './lib/schema-short.js';
@@ -311,6 +315,19 @@ export function validarPlano(plano, narrativa) {
   return { ok: erros.length === 0, erros };
 }
 
+/**
+ * Quantos vídeos o canal já publicou. Serve só de roda-dentada para os temas cujo
+ * clima não se conhece — assim as três faixas saem por igual sem guardar estado novo
+ * em lado nenhum: o registo de publicações já existe e já é a contagem.
+ * Se o ficheiro não existir (máquina limpa, primeiro vídeo), devolve 0 sem drama.
+ */
+function contarPublicados() {
+  try {
+    const p = joinPath(process.cwd(), '.github', 'data', 'youtube-published.json');
+    return Object.keys(JSON.parse(lerFicheiro(p, 'utf-8'))).length;
+  } catch { return 0; }
+}
+
 // ─── montagem do roteiro final ───────────────────────────────────────────────
 /** Converte o plano (índices) no roteiro que o render e o TTS consomem. */
 export function montarRoteiro(t, narrativa, plano) {
@@ -342,6 +359,15 @@ export function montarRoteiro(t, narrativa, plano) {
     keyword: keywordFalada(t.term, narrativa.blocos[0]?.fala) || t.term,
     nextVideoTitle: '',
     intro: { style: 'pergunta', frase: plano.introFrase },
+    /**
+     * A MÚSICA DESTE VÍDEO — decidida aqui e GRAVADA no roteiro (02/08/2026).
+     *
+     * Fica escrita no ficheiro por duas razões: quem monta o vídeo sabe qual tocar
+     * sem adivinhar, e quem escreve a descrição credita a faixa CERTA. Com três
+     * faixas a rodar, um crédito fixo estaria errado em dois vídeos em cada três.
+     * A escolha vem do tema, pela imagem do vídeo — sem chamada de IA nenhuma.
+     */
+    music: escolherTrilha(narrativa.fioCondutor, contarPublicados()),
     scenes,
     cta: { text: plano.ctaTexto, target: 'app' },
     totalDurationSec: Math.round(scenes.reduce((a, s) => a + s.durationSec, 0) * 10) / 10,

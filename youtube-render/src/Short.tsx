@@ -329,7 +329,7 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
   return (
     <AbsoluteFill>
       <Background />
-      <BackgroundMusic />
+      <BackgroundMusic ficheiro={(script as { music?: { ficheiro?: string } }).music?.ficheiro} />
       <Watermark />
       <Sequence from={introFrames}>
         {/* Etiqueta do tema: fora do TransitionSeries de propósito — ela NÃO deve
