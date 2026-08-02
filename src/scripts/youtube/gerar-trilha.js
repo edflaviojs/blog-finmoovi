@@ -33,25 +33,62 @@ import { execFileSync } from 'child_process';
 import { join } from 'path';
 
 const TAXA = 44100;
-const SEGUNDOS = 32;
+/**
+ * ⚠️ ESTES DOIS NÚMEROS SÃO MEDIDOS NA FAIXA ANTIGA, não escolhidos (02/08/2026).
+ *
+ * O dono ouviu a 1ª versão desta trilha e disse: *"achei a música muito triste, teria
+ * que ser mais ou menos parecida com a que usamos nos 9 vídeos"*. Em vez de adivinhar
+ * o que o incomodava, analisei a faixa antiga ("Deliberate Thought") e a minha, com o
+ * mesmo medidor. As duas diferenças estavam à vista:
+ *
+ *   |                        | a antiga    | a minha (triste) |
+ *   | onde a música assenta  | **LÁ MAIOR**| Lá MENOR         |
+ *   | andamento              | **133 bpm** | 68 bpm — metade  |
+ *   | brilho                 | 248 Hz      | 230 Hz (igual)   |
+ *
+ * Ou seja: eu tinha-a pousado num acorde triste **e** tocado a metade da velocidade.
+ * O brilho já estava certo. Corrigem-se as duas coisas e mais nada.
+ */
+const BPM = 133.33;              // medido: ~133 na faixa antiga
+const BATIDA = 60 / BPM;         // 0,45s
+const COMPASSO = BATIDA * 4;     // 1,8s
+const DUR_ACORDE = COMPASSO * 2; // 3,6s
+const SEGUNDOS = DUR_ACORDE * 8; // 28,8s — dá um número inteiro de amostras
 const CAUDA = 2; // segundos de cauda que se dobram para o início, para o loop não ter emenda
 
 // ─── notas (Hz) ──────────────────────────────────────────────────────────────
 const N = {
-  A2: 110.00, C3: 130.81, F2: 87.31, G2: 98.00,
-  A3: 220.00, B3: 246.94, C4: 261.63, D4: 293.66, E4: 329.63, F3: 174.61, G3: 196.00,
-  A4: 440.00, C5: 523.25, E5: 659.25, G4: 392.00,
+  A2: 110.00, D2: 73.42, E2: 82.41,
+  D3: 146.83, E3: 164.81, F3s: 185.00, G3s: 207.65, A3: 220.00, B3: 246.94, C4s: 277.18, D4: 293.66, E4: 329.63,
+  A4: 440.00, B4: 493.88, C5s: 554.37, D5: 587.33, E5: 659.25, F5s: 739.99,
 };
 
 /**
- * Os quatro acordes. Am–F–C–G é a volta mais calma e mais "esperançosa" que existe —
- * e esperança é o que este canal vende: dá para arrumar a vida.
+ * A volta, em LÁ MAIOR: A – D – A – E, duas vezes.
+ *
+ * Não é gosto meu — é o que a medição da faixa antiga pede. As notas que ela mais toca
+ * são, por esta ordem: **A (100%), E (67%), D (46%), C# (37%), F# (34%)**. Ora o acorde
+ * de Lá maior é A-C#-E e o de Ré maior é D-F#-A: **juntos dão exatamente essas cinco
+ * notas**. Por isso a volta é esta, e o Mi entra pouco (o G# dele mede só 18%).
+ * Nenhum acorde menor: é o menor que puxa a música para baixo.
+ */
+/**
+ * ⚠️ AS QUATRO NOTAS SOLTAS DE CADA ACORDE TÊM DE SER TODAS DIFERENTES.
+ * Nas versões 2 e 3 eu repetia a mesma nota de duas em duas batidas (por exemplo
+ * A4·C#5·E5·**C#5**) — e isso cria, sozinho, um passo com o dobro do tamanho. Foi por
+ * isso que o medidor insistiu em ouvir **66 bpm** por muito que eu mexesse nos volumes:
+ * o problema não era o volume, era o DESENHO. Quatro notas distintas e a repetição
+ * mais curta passa a ser o compasso, não meia batida.
  */
 const ACORDES = [
-  { baixo: N.A2, pad: [N.A3, N.C4, N.E4], solta: [N.A4, N.C5, N.E5] },
-  { baixo: N.F2, pad: [N.F3, N.A3, N.C4], solta: [N.C5, N.A4, N.C5] },
-  { baixo: N.C3, pad: [N.C4, N.E4, N.G4], solta: [N.E5, N.G4, N.C5] },
-  { baixo: N.G2, pad: [N.G3, N.B3, N.D4], solta: [N.D4 * 2, N.B3 * 2, N.G4] },
+  { baixo: N.A2, pad: [N.A3, N.C4s, N.E4], solta: [N.A4, N.C5s, N.E5, N.B4] },
+  { baixo: N.D2, pad: [N.D3, N.F3s, N.A3], solta: [N.D5, N.A4, N.F5s, N.D4] },
+  { baixo: N.A2, pad: [N.A3, N.C4s, N.E4], solta: [N.E5, N.C5s, N.A4, N.E4] },
+  { baixo: N.E2, pad: [N.E3, N.G3s, N.B3], solta: [N.B4, N.E5, N.G3s * 2, N.E4] },
+  { baixo: N.A2, pad: [N.A3, N.C4s, N.E4], solta: [N.C5s, N.E5, N.A4, N.B4] },
+  { baixo: N.D2, pad: [N.D3, N.F3s, N.A3], solta: [N.F5s, N.D5, N.A4, N.D4] },
+  { baixo: N.E2, pad: [N.E3, N.G3s, N.B3], solta: [N.E5, N.B4, N.G3s * 2, N.E4] },
+  { baixo: N.A2, pad: [N.A3, N.C4s, N.E4], solta: [N.A4, N.E5, N.C5s, N.E4] },
 ];
 
 const total = Math.round(TAXA * (SEGUNDOS + CAUDA));
@@ -90,27 +127,46 @@ const somar = (inicio, dur, freq, ganho, ataque, queda, pan = 0, timbre = 'pad')
 };
 
 // ─── compor ──────────────────────────────────────────────────────────────────
-const DUR_ACORDE = 4;
-for (let volta = 0; volta < 2; volta++) {
-  for (let a = 0; a < ACORDES.length; a++) {
-    const t0 = (volta * ACORDES.length + a) * DUR_ACORDE;
-    const ac = ACORDES[a];
+for (let a = 0; a < ACORDES.length; a++) {
+  const t0 = a * DUR_ACORDE;
+  const ac = ACORDES[a];
 
-    somar(t0, DUR_ACORDE + 1.5, ac.baixo, 0.26, 0.35, 3.2, 0, 'pad');
-    ac.pad.forEach((f, i) => {
-      // cada voz do acorde entra com um atraso mínimo — evita o "órgão" e soa a respiração
-      somar(t0 + i * 0.06, DUR_ACORDE + 1.6, f, 0.17, 1.2, 4.0, (i - 1) * 0.22, 'pad');
-    });
-    // três notas soltas por acorde: no início, a meio e no fim. Sempre poucas.
-    [0.0, 1.5, 3.0].forEach((off, i) => {
-      const f = ac.solta[i % ac.solta.length];
-      somar(t0 + off, 1.8, f, 0.085, 0.006, 0.5, i % 2 === 0 ? -0.35 : 0.35, 'solta');
-    });
+  // BAIXO uma vez por compasso (e não uma vez por acorde): é ele que dá o passo.
+  // Foi a falta disto que fez a 1ª versão soar a metade da velocidade.
+  for (let c = 0; c < 2; c++) {
+    somar(t0 + c * COMPASSO, COMPASSO + 0.6, ac.baixo, 0.24, 0.02, 1.1, 0, 'pad');
+  }
+
+  // PAD: continua lento, é o colchão. Ataque mais curto que na 1ª versão (0,8 em vez
+  // de 1,2) — a 133 bpm um ataque de 1,2s chegava atrasado ao acorde seguinte.
+  ac.pad.forEach((f, i) => {
+    somar(t0 + i * 0.05, DUR_ACORDE + 1.2, f, 0.135, 0.8, 3.2, (i - 1) * 0.22, 'pad');
+  });
+
+  /**
+   * NOTAS SOLTAS EM CADA BATIDA — são elas que fazem o andamento SENTIR-SE.
+   * ⚠️ Na 2ª versão estavam a 0,075 e o medidor continuava a ouvir 78 bpm em vez de
+   * 133: o colchão tapava-as e não havia ataque nenhum a marcar o tempo. Subiram de
+   * volume e encurtaram (0,22s de queda) — o que conta para o ouvido não é o volume
+   * médio, é o ATAQUE. Continuam abaixo do colchão, e a voz manda sempre.
+   */
+  // ⚠️ E TODAS AS BATIDAS TÊM DE PESAR O MESMO. Na 3ª versão eu alternava forte/fraco
+  // e o medidor passou a ouvir **66 bpm — metade** do pretendido: alternar cria um
+  // passo com o dobro do tamanho, e é esse que o ouvido segue. O acento fica só na
+  // 1ª batida de cada compasso, que marca o compasso sem partir a batida.
+  for (let b = 0; b < 8; b++) {
+    const f = ac.solta[b % ac.solta.length];
+    const acento = 0.112;
+    somar(t0 + b * BATIDA, BATIDA * 1.8, f, acento, 0.003, 0.22,
+      b % 2 === 0 ? -0.28 : 0.28, 'solta');
   }
 }
 
 // ─── costurar o loop: a cauda dobra-se para o início ──────────────────────────
-const nLoop = TAXA * SEGUNDOS;
+// ⚠️ ARREDONDAR AQUI É OBRIGATÓRIO. 60/133,33 não dá um número redondo de segundos, e
+// sem isto o comprimento do loop fica com casas decimais — o escritor do ficheiro
+// estoirou na última amostra à primeira tentativa. O áudio não nota meia amostra.
+const nLoop = Math.round(TAXA * SEGUNDOS);
 for (let i = 0; i < TAXA * CAUDA; i++) {
   esq[i] += esq[nLoop + i];
   dir[i] += dir[nLoop + i];
