@@ -24,6 +24,10 @@
 import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { getTitlePatterns } from '../lib/youtube-marketing.js';
+// ⚠️ A descrição passa a LER a licença da trilha em vez de alguém se lembrar dela.
+// Ver `lib/musica.js`: se a faixa exigir crédito, ele entra sozinho; se não exigir,
+// desaparece sozinho. Foi por não haver isto que 9 vídeos foram ao ar sem creditar.
+import { creditoDaMusica } from './lib/musica.js';
 
 // ─── caminhos ────────────────────────────────────────────────────────────────
 const ROOT = process.cwd();
@@ -225,6 +229,7 @@ function buildMetadata(raw, script) {
   const hashtags = buildHashtagList(raw.hashtags);
 
   const hook = sanitizeText(raw.descriptionHook, 1500);
+  const credito = creditoDaMusica();
   const description = sanitizeText([
     hook,
     '',
@@ -232,6 +237,8 @@ function buildMetadata(raw, script) {
     `📲 Organize suas finanças: ${APP_URL}`,
     '',
     hashtags.join(' '),
+    // só aparece quando a faixa em uso obriga — hoje não obriga, porque a trilha é nossa
+    ...(credito ? ['', credito] : []),
   ].join('\n'), 5000);
 
   // Tags: sanitiza, dedup (case-insensitive), 8–12, respeita limite ~460 chars.

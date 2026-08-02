@@ -1,0 +1,40 @@
+name: YouTube — Corrigir crédito da música (não publica)
+
+# Acrescenta a linha de crédito da faixa CC BY à DESCRIÇÃO dos vídeos publicados entre
+# 21/07 e 02/08/2026 — ver IMPLEMENTACAO20 §27.2.
+#
+# NÃO publica nada, NÃO renderiza, NÃO muda título/privacidade/miniatura.
+# Só a descrição, e só nos vídeos que contêm a faixa antiga.
+# Por omissão corre em ENSAIO (mostra o que faria). Para enviar a sério: aplicar=true.
+
+on:
+  workflow_dispatch:
+    inputs:
+      aplicar:
+        description: 'Enviar a sério (deixe desmarcado para só ver o que seria feito)'
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  creditos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Corrigir os créditos
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          if [ "${{ github.event.inputs.aplicar }}" = "true" ]; then
+            node src/scripts/youtube/corrigir-creditos-musica.js --aplicar
+          else
+            node src/scripts/youtube/corrigir-creditos-musica.js
+          fi
