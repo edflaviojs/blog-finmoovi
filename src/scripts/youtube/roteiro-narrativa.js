@@ -364,6 +364,12 @@ Repare no que esse exemplo faz, porque é isso que se pede a você:
    ⛔ NO MÁXIMO DOIS valores em dinheiro neste bloco. Três ou mais viram boletim de banco e a pessoa desliga.
    ✗ "Cem reais dão dois mil seiscentos e noventa e nove; na poupança dá dois mil seiscentos e doze. A diferença são oitenta e seis. No FinMoovi basta abrir a calculadora." (três números empilhados e o app no fim, como enfeite)
    ✓ "Eu joguei isso na calculadora do FinMoovi e ela me mostrou uma diferença de oitenta e seis reais. Só de escolher onde deixar o dinheiro."
+   ⛔ **DIGA O QUE APARECEU NO ECRÃ.** Frases como "mostrou onde o dinheiro aperta" ou "mostrou o estrago" não mostram nada — quem ouve fica na mesma.
+   Diga a coisa CONCRETA: qual dos erros ficou em primeiro lugar, o nome da linha da fatura, ou um valor **que já exista** neste roteiro.
+   ⚠️ **NÃO invente número nenhum para cumprir isto.** Se não houver um valor à mão, nomeie a COISA — é igualmente concreto e é verdade.
+   ⚠️ O exemplo abaixo usa o **pneu murcho** de propósito — a imagem já proibida — para você não poder aproveitar as palavras.
+   ✗ "a calculadora mostrou onde o dinheiro aperta" (vago: quem ouve fica sem saber nada)
+   ✓ "a calculadora pôs os três descontos lado a lado e apontou qual esvaziava mais o pneu" (concreto, e sem número novo)
 5. O CONVITE (~6s): peça o COMENTÁRIO com a palavra FINMOOVI, prometendo o que vai mandar. Molde a adaptar: "quer <o que resolve neste tema>? comenta FINMOOVI aqui que eu te mando."
 6. O FECHO (~8s): RESPONDA, com todas as letras, a pergunta que ficou no ar no bloco 1, e feche a imagem do vídeo. Sem "tchau", sem "até a próxima".
    ⛔ **NÃO termine com outra pergunta.** O fecho é quem responde, não quem pergunta.
@@ -393,6 +399,11 @@ Diga-as com palavras do dia a dia, nunca com o nome técnico:
    ✗ "os três são o rotativo, o mínimo e o parcelamento longo" (ninguém em casa sabe o que é isto)
    ✓ "pagar só uma parte, deixar o resto rolando pro mês seguinte, e dividir a compra em muitas vezes"
 Elas cabem TODAS num bloco só — normalmente a virada ou a demonstração. **Esse bloco pode passar das ${porBloco} palavras; então os outros cinco têm de ficar mais curtos para o total não estourar.** É uma troca, não uma licença para escrever mais.
+⛔ **CADA ITEM TEM DE SER UM ATO DIFERENTE.** Se dois deles puderem ser a mesma coisa, você nomeou o mesmo erro duas vezes e quem ouve fica baralhado.
+   ⚠️ O exemplo abaixo é DE OUTRO ASSUNTO de propósito — para você ver a forma e não poder aproveitar as palavras.
+   ✗ "guardar dinheiro, poupar todo mês, e separar uma parte do salário" (são o MESMO ato dito três vezes)
+   ✓ "cortar a assinatura que você não usa, trocar de supermercado, e levar comida de casa" (três coisas que se fazem em momentos diferentes)
+   Teste: consigo fazer uma SEM fazer a outra? Se não consigo, são a mesma.
 
 ════════ O QUE VOCÊ PODE PROMETER ════════
 SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (grátis)** e a **calculadora do blog**.

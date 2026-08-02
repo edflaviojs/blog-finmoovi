@@ -53,6 +53,14 @@ ${blocos}
 Leia em voz alta, como quem está a ver o vídeo no telemóvel, uma vez só, sem poder voltar atrás.
 Em cada frase pergunte: **uma pessoa diria isto assim, a outra pessoa?** Se a resposta for não, reescreva ESSA frase.
 
+**O TESTE DO SENHOR DE 70 ANOS — faça-o palavra a palavra, é o mais importante daqui.**
+Está a ler em voz alta para um senhor de setenta anos que saiu cedo da escola e nunca estudou finanças.
+**Se ele parasse para perguntar "o que é isso?", a palavra está errada** — troque-a pela do dia a dia, sem mudar o sentido.
+   ✗ "a parte restante" → ✓ "o que sobrou"
+   ✗ "o valor remanescente" → ✓ "o resto"
+   ✗ "efetuar o pagamento" → ✓ "pagar"
+Não é uma lista fechada: **é o teste que manda**. Qualquer palavra que só se escreva, e não se diga, cai por aqui.
+
 ════════ OS VÍCIOS A CAÇAR ════════
 ${VICIOS}
 
