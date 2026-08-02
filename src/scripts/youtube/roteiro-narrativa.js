@@ -262,6 +262,11 @@ export function buildPromptNarrativa(t, proibidas, frasesRecentes, ficha = null)
 
   return `Você é ROTEIRISTA de um canal brasileiro de finanças pessoais.
 
+🇧🇷 **ESCREVA EM PORTUGUÊS DO BRASIL FALADO, e só nele.** Quem assiste é brasileiro; um jeito de falar de Portugal soa estrangeiro e a pessoa sai.
+   ✓ tela, celular, ônibus, trem, gerente, "tá", "a gente", "você"
+   ✗ ecrã, telemóvel, autocarro, comboio, "está a fazer", "tu", "casa de banho"
+   ⚠️ **"está a fazer" não existe no Brasil.** No Brasil é "está fazendo" — ou, melhor ainda na fala, "tá fazendo".
+
 ════════ QUEM ESTÁ FALANDO, E COM QUEM ════════
 ${PERSONA}
 Ele não sabe o que é "rotativo", "amortizar", "drenagem" ou "estratégia". Se você usar uma palavra dessas, ele desliga.
@@ -347,24 +352,40 @@ Repare no que esse exemplo faz, porque é isso que se pede a você:
 ════════ A ESPINHA (6 blocos, nesta ordem) ════════
 1. GANCHO (~6s): **a 1ª FRASE É A CAPA DO VÍDEO** — e só depois começa a história.
 
-   ⚡ **A PRIMEIRA FRASE APARECE ESCRITA NO ECRÃ ENQUANTO VOCÊ A DIZ.** É a capa: letras grandes, com o boneco a cair. Quem está a passar o dedo lê e ouve a mesma coisa ao mesmo tempo — e é isso que faz o dedo parar.
-   · **NO MÁXIMO ${MAX_PALAVRAS_CAPA} PALAVRAS.** A capa fica no ecrã o tempo exato de a dizer; mais do que isso e ela sai a meio da frase.
+   ⚡ **A PRIMEIRA FRASE APARECE ESCRITA NO ECRÃ ENQUANTO VOCÊ A DIZ.** É a capa: letras grandes, com o boneco a cair. Quem tá passando o dedo lê e ouve a mesma coisa ao mesmo tempo — e é isso que faz o dedo parar.
+   · **NO MÁXIMO ${MAX_PALAVRAS_CAPA} PALAVRAS.** A capa fica na tela o tempo exato de a dizer; mais do que isso e ela sai a meio da frase.
    · Tem de funcionar SOZINHA, sem nada antes. É a primeira coisa que a pessoa ouve na vida.
-   · **ELA TEM DE INCOMODAR.** Não é um convite simpático — é um aviso que dá um aperto: a pessoa sente que já está a perder alguma coisa e que ainda vai a tempo. Um final tipo *"antes que seja tarde"*, *"e você nem viu"*, *"e já começou"* é o que dá esse aperto.
+   · **ELA TEM DE INCOMODAR.** Não é um convite simpático — é um aviso que dá um aperto: a pessoa sente que já tá perdendo alguma coisa e que ainda vai a tempo. Um final tipo *"antes que seja tarde"*, *"e nem perceber"*, *"e já começou"* é o que dá esse aperto.
+
+   🔴 **AS DUAS COISAS QUE MAIS FAZEM ESTA FRASE FALHAR** — o dono já reprovou por causa das duas:
+
+   **(a) QUEM PERDE É A PESSOA, e o verbo tem de dizer isso.** Erros não "levam" nem "tiram" dinheiro sozinhos — quem perde é ela. Diga **"faz você perder"**, e diga **de quanto em quanto tempo**.
+      ✗ "Três erros no cartão levam quinhentos reais, e você nem percebeu."
+         Por quê: *levam* para onde? E "não percebeu" o quê? São duas ideias soltas coladas por uma vírgula. O dono: *"se falar isso para uma criança ou para um senhor de 70 anos, eles não entendem"*.
+      ✓ "Três erros de quem usa cartão que fazem você perder quinhentos por mês e nem perceber."
+
+   **(b) UMA FRASE SÓ, PRESA POR UM "QUE".** Duas metades separadas por vírgula obrigam quem ouve a juntá-las sozinho — e num vídeo ouve-se uma vez só. O "que" faz o trabalho todo: liga quem faz, o que acontece, e a quem.
+
+   **O MOLDE QUE FUNCIONA:** *<quantas> <coisas> **de quem** <faz isso no dia a dia> **que faz você** <perder o quê> **por mês** **e nem perceber**.*
+   Adapte-o — não o copie palavra a palavra.
    ✗ "Você não vai acreditar nisso!" (não diz o que está em jogo — serve para qualquer vídeo do mundo)
    ✗ "Descubra o segredo dos bancos." (falso segredo, e continua sem dizer nada)
    ✗ "Veja como economizar." (simpático, morno, ninguém para o dedo)
    ⚠️ Os exemplos abaixo são de OUTROS assuntos de propósito, e o computador confere: **copiar um deles reprova o roteiro.** Veja a FORMA — o aperto no fim — e escreva a sua.
 ${EXEMPLOS_DE_CAPA.map((f) => `   ✓ "${f}"`).join('\n')}
 
-   DEPOIS dessa frase, e ainda dentro do bloco 1: diga "${t.term}" e a imagem do vídeo (comparada, nunca definida), dê a dor com o número, e termine deixando uma pergunta no ar — e NÃO responda.
+   ⛔ **DEPOIS DA FRASE DA CAPA, NÃO REPITA O QUE ELA JÁ DISSE.** Ela já deu o assunto, o valor e o intervalo de tempo. Repetir tudo outra vez na frase seguinte faz a pessoa ouvir a mesma coisa duas vezes seguidas e sentir que o vídeo está a encher tempo.
+      ✗ capa: "Três erros de quem usa cartão que fazem você perder quinhentos por mês…"
+        seguinte: "Olha, três erros de cartão parecem uma mochila… São quinhentos reais que saem do seu bolso todo mês." (repete o assunto E o valor E o "por mês")
+      ✓ seguinte: "Olha, é que nem carregar uma mochila cheia de pedra nas costas. Qual delas pesa mais?"
+   O RESTO DO BLOCO 1 traz só duas coisas novas: **a imagem do vídeo** (comparada, nunca definida) e **a pergunta que fica no ar** — e não a responda.
    ⚠️ **O TEMA E A IMAGEM CABEM NA MESMA FRASE, e os dois são OBRIGATÓRIOS.** Trocar um pelo outro reprova o roteiro.
    ✗ "Uma mochila cheia de pedras faz você perder quinhentos reais por mês. Quem é o culpado?"
       Por quê: a imagem está lá, mas o TEMA sumiu — quem clicou no título por causa de "erros de cartão" não ouve nem "erros" nem "cartão", e desiste.
    ✗ "Três erros de cartão são pedras na sua mochila. Tiram quinhentos reais do seu bolso todo mês."
       Por quê: diz tudo o que é preciso, mas diz como um cartaz. **"X são Y" não é fala, é definição.** Foi reprovado pelo dono.
    ✓ "Olha, tem três errinhos no cartão que parecem uma mochila cheia de pedra nas suas costas. São quinhentos reais que somem do seu bolso todo mês. Qual será o mais pesado?"
-      Por quê: alguém está a falar. Diz o assunto, compara em vez de definir, dá o número e deixa a pergunta no ar.
+      Por quê: alguém tá falando. Diz o assunto, compara em vez de definir, dá o número e deixa a pergunta no ar.
    Molde do arranque: "<abertura de quem fala: olha / sabe / repara só> + <o tema> + <que parece / é tipo / é que nem> + <a imagem>. <a dor, com o número>. <pergunta que fica no ar>"
 2. EMPATIA (~9s): por que isso acontece com gente normal (correria, cansaço, ninguém ensinou). Sem culpar quem assiste.
 3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é uma coisa, e você mostra que é outra.
@@ -556,9 +577,9 @@ const MECANICA_DO_FIO = [
  * Lembrar não chega — já falhei quatro vezes hoje a lembrar-me.
  */
 const EXEMPLOS_DE_CAPA = [
-  'Descubra o que está pesando no seu bolso antes que seja tarde demais!',
-  'Sua conta de luz tá comendo mais do que você imagina, e já começou.',
-  'Tem um erro na sua poupança tirando dinheiro todo mês sem você ver.',
+  'Quatro hábitos de quem faz mercado que fazem você gastar duzentos a mais por mês.',
+  'Três descuidos de quem tem conta em banco que fazem você pagar tarifa sem perceber.',
+  'Dois costumes de quem paga boleto atrasado que fazem você perder dinheiro todo mês.',
 ];
 
 const EXEMPLO_PARA_COMPARAR = [
@@ -834,12 +855,14 @@ const MIN_PALAVRAS = 120; // ≈ 46s de fala
 const MAX_PALAVRAS = 140; // ≈ 51s de fala → ~56s de vídeo
 
 /**
- * A FRASE DA CAPA (02/08/2026). É a 1ª frase falada E o texto que aparece no ecrã.
- * Treze palavras a 2,76 palavras/s = 4,7s, e a capa está desenhada para durar
- * exatamente isso (`CAPA_FRAMES_V3 = 168` em Short.tsx). Mexer num sem mexer no outro
+ * A FRASE DA CAPA (02/08/2026). É a 1ª frase falada E o texto que aparece na tela.
+ * Dezoito palavras a 2,76 palavras/s = 6,5s, e a capa está desenhada para durar
+ * exatamente isso (`CAPA_FRAMES_V3 = 223` em Short.tsx).
+ * ⚠️ Era 13 e reprovava a frase que o próprio dono escreveu como modelo — a trava
+ * estava a limitar aquilo que ele pede. O número sai da frase dele, não do meu gosto. Mexer num sem mexer no outro
  * faz a capa sair a meio da frase — os dois números são o mesmo facto.
  */
-const MAX_PALAVRAS_CAPA = 13;
+const MAX_PALAVRAS_CAPA = 18;
 
 /**
  * ⚠️ O ORÇAMENTO DEIXA DE SER IGUAL PARA TODOS — e é aritmética, não gosto.
@@ -848,7 +871,7 @@ const MAX_PALAVRAS_CAPA = 13;
  * repartido por igual, o gerador falhou as 4 tentativas seguidas — 159, 157 e 157
  * palavras. Ele não inventa a compensação sozinho; é preciso dizer-lhe a conta.
  */
-const ORCAMENTO_BLOCO1 = MAX_PALAVRAS_CAPA + 21;                                  // capa + história
+const ORCAMENTO_BLOCO1 = MAX_PALAVRAS_CAPA + 20;                                  // capa + história
 const ORCAMENTO_OUTROS = Math.floor((MAX_PALAVRAS - ORCAMENTO_BLOCO1) / 5);       // os outros cinco
 
 /**
@@ -1005,7 +1028,7 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
    * obedeceu.** O prompt passou a dizer que o bloco 6 é a única exceção — e esta trava é a
    * outra ponta, porque neste repositório o que o prompt pede e nada pune, o modelo ignora.
    *
-   * É VERDADE, não gosto: ou o fecho fala do canal, ou não fala. Não se está a julgar tom.
+   * É VERDADE, não gosto: ou o fecho fala do canal, ou não fala. Não se está julgar tom.
    * Forma mais barata de a cumprir sem fazer o que se quer: não dizer estas palavras — que
    * é exatamente o objetivo. Não há atalho perverso.
    * ⚠️ Não colide com o bordão ("dinheiro sem controle é dinheiro dos outros") nem com o
@@ -1085,7 +1108,7 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   /**
    * A 1ª FRASE TEM DE CABER NA CAPA (02/08/2026) — e é VERDADE, não gosto.
    *
-   * A capa fica 3,5s no ecrã e a voz entra aos 0,9s: são **2,6s**, que a 2,76
+   * A capa fica 3,5s na tela e a voz entra aos 0,9s: são **2,6s**, que a 2,76
    * palavras/s dão ~7 palavras. Dez é o teto com folga. Passar disso significa que a
    * frase escrita na capa acaba DEPOIS de a capa desaparecer — a pessoa lê metade.
    * Isto mede-se contando; se fosse "a frase é boa?" seria gosto e não entrava aqui.
@@ -1100,7 +1123,7 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   if (palavrasDaCapa > MAX_PALAVRAS_CAPA) {
     erros.push(
       `a 1ª frase do gancho tem ${palavrasDaCapa} palavras e ela é a CAPA do vídeo — no máximo ${MAX_PALAVRAS_CAPA}, `
-      + 'senão acaba depois de a capa sair do ecrã. Corte-a numa chamada curta e ponha o resto na frase seguinte. '
+      + 'senão acaba depois de a capa sair da tela. Corte-a numa chamada curta e ponha o resto na frase seguinte. '
       + `(veio: "${primeiraFrase}")`,
     );
   }
@@ -1498,7 +1521,7 @@ if (executadoDireto) {
 
   console.log(`✅ aprovada na tentativa ${tentativa} — ${palavras} palavras (~${(palavras / PALAVRAS_POR_SEGUNDO).toFixed(0)}s de fala)`);
   // O que o SEGUNDO LEITOR mexeu. É a única janela para o trabalho dele — sem isto
-  // ninguém sabe se ele está a melhorar a fala ou a passar a mão por cima.
+  // ninguém sabe se ele está melhorar a fala ou a passar a mão por cima.
   if (leitorFalhou) {
     console.log(`📖 segundo leitor NÃO foi usado: ${leitorFalhou}`);
   } else if (mexi && mexi.length) {

@@ -65,21 +65,25 @@ export const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s) antes das 
  * de 0,9s atrasaria a legenda 2,6s em relação à voz.
  */
 /**
- * ⚠️ 105 → 168 (3,5s → 5,6s) em 02/08/2026, e é conta, não gosto.
+ * ⚠️ 105 → 223 (3,5s → 7,4s) em 02/08/2026, e é conta, não gosto.
  *
  * A partir de agora a 1ª frase FALADA é a mesma que está escrita na capa (ideia do
- * dono: *"o gancho correto seria falar o que está escrito na primeira cena"*). Uma
- * chamada com a urgência que ele quer — *"Descubra o que está pesando no seu bolso
- * antes que seja tarde demais!"* — tem 13 palavras, e a 2,76 palavras/s leva 4,7s a
- * dizer. Com a voz a entrar aos 0,9s, a capa tem de ficar 0,9 + 4,7 = **5,6s**, senão
- * ela sai do ecrã a meio da frase e a pessoa lê metade.
+ * dono: *"o gancho correto seria falar o que está escrito na primeira cena"*).
+ *
+ * O número sai da FRASE DO DONO, não do meu gosto. Ele escreveu a chamada que quer —
+ * *"3 erros de quem usa cartão que faz você perder 500 por mês e nem perceber!"* —
+ * e ela tem 17 palavras quando os números vão por extenso. A regra ficou em 18, que
+ * a 2,76 palavras/s levam 6,5s a dizer. Com a voz a entrar aos 0,9s, a capa fica
+ * **7,4s**, senão ela sai da tela a meio da frase e a pessoa lê metade.
+ * (A 1ª versão pôs 13 palavras — e reprovou a frase do próprio dono. A trava estava
+ * a limitar aquilo que ele pede.)
  *
  * ⚠️ ISTO NÃO ALONGA O VÍDEO. Quem define o começo de tudo é `VOZ_ENTRA_FRAMES`
  * (0,9s) — ver `introFramesFor` logo abaixo. Este número só diz quanto tempo a capa
  * fica DESENHADA POR CIMA. O preço é tapar mais uns segundos do visual da cena 1, e
  * é deliberado: nos primeiros segundos quem manda é a capa.
  */
-export const CAPA_FRAMES_V3 = 168;
+export const CAPA_FRAMES_V3 = 223;
 export const VOZ_ENTRA_FRAMES = 27;
 export const SIGNATURE_FRAMES = 75; // assinatura final da marca (~2,5s) depois da última cena
 

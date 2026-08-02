@@ -143,7 +143,7 @@ CATÁLOGOS (fora deles o roteiro é rejeitado):
 · Um segundo shot do app é bem-vindo, mas só num bloco LONGO (VIRADA ou DEMONSTRACAO).
 
 ════════ TEXTO NA TELA ════════
-Curto. A pessoa lê de relance, no telemóvel, enquanto ouve. Até 6 palavras.
+Curto. A pessoa lê de relance, no celular, enquanto ouve. Até 6 palavras.
 ⛔ O texto da tela NÃO repete a frase falada — ou destaca a parte que importa, ou mostra o número.
 
 Responda APENAS com JSON válido, sem markdown:
@@ -275,7 +275,7 @@ export function validarPlano(plano, narrativa) {
    * que está escrito na primeira cena… e com o homem caindo, isso sim seria um gancho
    * de respeito"*.
    *
-   * A conta dá-lhe razão: a capa fica **3,5s** no ecrã e a voz entra aos **0,9s** —
+   * A conta dá-lhe razão: a capa fica **3,5s** no tela e a voz entra aos **0,9s** —
    * são 2,6s de voz sobre a capa, que a 2,76 palavras/s dão **~7 palavras**. Ou seja,
    * a primeira frase falada CABE inteira na capa. Ler e ouvir a mesma coisa ao mesmo
    * tempo bate com muito mais força do que ler uma e ouvir outra.

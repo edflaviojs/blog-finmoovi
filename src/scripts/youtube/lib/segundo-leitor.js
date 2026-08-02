@@ -40,7 +40,7 @@ export function buildPromptLeitor(narrativa, termo) {
     .map((b, i) => `${i + 1}. [${b.papel.toUpperCase()}] ${b.fala}`)
     .join('\n');
 
-  return `Você é o EDITOR de um canal brasileiro de finanças. Alguém já escreveu a narração deste vídeo curto. O seu trabalho NÃO é reescrever a história — é fazer com que ela soe a UMA PESSOA A FALAR.
+  return `Você é o EDITOR de um canal brasileiro de finanças. Alguém já escreveu a narração deste vídeo curto. O seu trabalho NÃO é reescrever a história — é fazer com que ela soe como UMA PESSOA FALANDO.
 
 QUEM FALA, E COM QUEM: ${PERSONA}
 
@@ -50,8 +50,8 @@ TEMA DO VÍDEO: "${termo}"
 ${blocos}
 
 ════════ COMO SE LÊ ISTO ════════
-Leia em voz alta, como quem está a ver o vídeo no telemóvel, uma vez só, sem poder voltar atrás.
-Em cada frase pergunte: **uma pessoa diria isto assim, a outra pessoa?** Se a resposta for não, reescreva ESSA frase.
+Leia em voz alta, como quem tá vendo o vídeo no celular, uma vez só, sem poder voltar atrás.
+Em cada frase pergunte: **uma pessoa fala assim com outra pessoa?** Se a resposta for não, reescreva ESSA frase.
 
 **O TESTE DO SENHOR DE 70 ANOS — faça-o palavra a palavra, é o mais importante daqui.**
 Está a ler em voz alta para um senhor de setenta anos que saiu cedo da escola e nunca estudou finanças.
@@ -62,11 +62,17 @@ Está a ler em voz alta para um senhor de setenta anos que saiu cedo da escola e
 Não é uma lista fechada: **é o teste que manda**. Qualquer palavra que só se escreva, e não se diga, cai por aqui.
 
 ════════ A PRIMEIRA FRASE É A CAPA — E É A QUE MAIS IMPORTA ════════
-A 1ª frase do bloco 1 aparece ESCRITA no ecrã ao mesmo tempo que é dita. É a única coisa que a pessoa lê antes de decidir se fica ou se passa o dedo.
-**Ela tem de INCOMODAR.** Não é um convite simpático: é um aviso que dá um aperto — a pessoa sente que já está a perder alguma coisa, e que ainda vai a tempo. Um fim tipo *"antes que seja tarde"*, *"e você nem viu"*, *"e já começou"* é o que dá esse aperto.
-Se ela estiver morna, reescreva-a — mas **sem inventar facto novo, sem número novo, e no máximo 13 palavras**.
-✗ "Três erros no cartão tiram seu dinheiro." (verdadeiro, mas morno)
-✓ "Três erros no cartão tiram seu dinheiro, e você nem percebeu."
+A 1ª frase do bloco 1 aparece ESCRITA na tela ao mesmo tempo que é dita. É a única coisa que a pessoa lê antes de decidir se fica ou se passa o dedo.
+**Ela tem de INCOMODAR.** Não é um convite simpático: é um aviso que dá um aperto — a pessoa sente que já tá perdendo alguma coisa, e que ainda vai a tempo. Um fim tipo *"antes que seja tarde"*, *"e você nem viu"*, *"e já começou"* é o que dá esse aperto.
+Se ela estiver morna, reescreva — mas **sem inventar facto novo, sem número novo, e no máximo 13 palavras**.
+🔴 **E ELA TEM DE SER ENTENDIDA À PRIMEIRA, OUVINDO UMA VEZ SÓ.** É aqui que este canal mais falha, e o dono já reprovou duas vezes pelo mesmo motivo. Duas regras:
+**(a) Quem perde é a PESSOA.** Erros não "levam" nem "tiram" dinheiro sozinhos. Diga "faz você perder", e diga de quanto em quanto tempo.
+**(b) Uma frase só, presa por um "que".** Duas metades coladas por vírgula obrigam quem ouve a juntá-las sozinho — e ouve-se uma vez só.
+✗ "Três erros no cartão levam quinhentos reais, e você nem percebeu."
+   (*levam* para onde? não percebeu o quê? o dono: *"se falar isso para um senhor de 70 anos, ele não entende"*)
+✓ "Três erros de quem usa cartão que fazem você perder quinhentos por mês e nem perceber."
+
+🇧🇷 **PORTUGUÊS DO BRASIL FALADO.** Nada de "está a fazer" (no Brasil é "tá fazendo"), nada de "ecrã" nem "telemóvel".
 
 ════════ OS VÍCIOS A CAÇAR ════════
 ${VICIOS}
