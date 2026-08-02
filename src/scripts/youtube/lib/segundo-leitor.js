@@ -157,7 +157,9 @@ export async function revisarFala(narrativa, termo, validar, { tentativas = 2, l
 
     let bruto;
     try {
-      bruto = await generateText(prompt, { maxTokens: 2000, temperature: 0.7 });
+      // `pago: 'leitor'` = claude-sonnet-5 pelo kie.ai. Ele julga o TOM, e é aqui que a
+      // qualidade paga — o leitor é a parte pequena do gasto. Gratuitos ficam por baixo.
+      bruto = await generateText(prompt, { maxTokens: 2000, temperature: 0.7, pago: 'leitor' });
     } catch (err) {
       ultimoMotivo = `a chamada ao leitor falhou (${err.message})`;
       continue;
