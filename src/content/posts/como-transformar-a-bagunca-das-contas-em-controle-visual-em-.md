@@ -3,6 +3,7 @@ title: "Como transformar a bagunça das contas em controle visual em 2026"
 description: "Descubra um método prático para organizar finanças pessoais usando visualização e automação, sem números confusos. Comece agora e veja a diferença."
 tickerHeadline: "Sua conta sob controle em minutos"
 image: "/images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em-.webp"
+imageAlt: "Três pessoas sorrindo em sala, analisando documentos e laptop sobre mesa branca."
 category: "dicas"
 locale: "pt"
 tags: ["organizar finanças pessoais","finanças pessoais","economia","dinheiro"]

@@ -1,6 +1,7 @@
 ---
 term: "Wealth Management"
 image: "/images/glossario/en-wealth-management.webp"
+imageAlt: "Gold coins and plant in glass jar with rising arrow on dark blue background."
 definition: "Professional financial advisory service for high-net-worth individuals, covering investments, tax planning, and estate planning."
 category: "investimentos"
 locale: "en"

@@ -1,6 +1,7 @@
 ---
 term: "Bitcoin"
 image: "/images/glossario/es-bitcoin.webp"
+imageAlt: "Una imagen de una jarra llena de monedas de Bitcoin y otros objetos de ahorro."
 definition: "La primera y más conocida criptomoneda. Una moneda digital descentralizada que opera sin bancos ni gobiernos."
 category: "investimentos"
 locale: "es"

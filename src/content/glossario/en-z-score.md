@@ -4,6 +4,7 @@ definition: "Understand what z-score is, how it works, advantages, risks and pra
 title: "z-score - Financial Glossary"
 description: "Understand what z-score is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/z-score.webp"
+imageAlt: "Gold coins, a Z block, and jars with sprouting plants on a gradient background."
 category: "basico"
 tags: ["z-score", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

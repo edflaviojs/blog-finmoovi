@@ -3,6 +3,7 @@ title: "How to Turn a Mess of Bills into a Visual Control System in 2026"
 description: "Learn a practical method to organize personal finances with visual tools and automation—no confusing numbers. Start now and see the difference."
 tickerHeadline: "Your finances under control in minutes"
 image: "/images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em-.webp"
+imageAlt: "Three smiling people review documents and laptop at a white table in a bright living room."
 category: "dicas"
 locale: "en"
 tags: ["personal finance organization","personal finance","budgeting","money management"]

@@ -3,6 +3,7 @@ title: "Estrategias simples para ahorrar día a día en 2026"
 description: "Descubre cómo pequeños hábitos cotidianos pueden generar grandes ahorros con consejos prácticos y la ayuda de FinMoovi."
 tickerHeadline: "El truco que multiplica tu ahorro"
 image: "/images/posts/estrategias-simples-para-economizar-no-dia-a-dia-em-2026.webp"
+imageAlt: "Cuaderno marrón, calculadora, monedas euro y plantas sobre superficie blanca."
 category: "dicas"
 locale: "es"
 tags: ["cómo ahorrar dinero","finanzas personales","ahorro","dinero"]

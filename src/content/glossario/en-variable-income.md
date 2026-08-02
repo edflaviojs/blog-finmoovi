@@ -1,6 +1,7 @@
 ---
 term: "Variable Income"
 image: "/images/glossario/en-renda-variavel.webp"
+imageAlt: "Gold coins stacked in varying heights beside glass jars with sprouting green plants."
 definition: "Investments where returns are not guaranteed and depend on market conditions. Examples: stocks, REITs, ETFs."
 category: "investimentos"
 locale: "en"

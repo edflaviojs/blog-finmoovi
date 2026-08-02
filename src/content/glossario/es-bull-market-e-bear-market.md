@@ -5,6 +5,7 @@ category: "mercado"
 locale: "es"
 translationKey: "glossario-bull-market-e-bear-market"
 image: "/images/glossario/bull-market-e-bear-market.webp"
+imageAlt: "Un mercado de valores en crecimiento y un mercado de valores en declive, con un fondo de colores rojo y azul."
 relatedTerms: ["Risco","Investimento","Rentabilidade"]
 publishedAt: 2026-06-06
 ---

@@ -4,6 +4,7 @@ definition: "Entienda qué es ações, cómo funciona, ventajas, riesgos y ejemp
 title: "ações - Glosario Financiero"
 description: "Entienda qué es ações, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/acoes.webp"
+imageAlt: "Monedas doradas y bloques naranjas ascendentes con plantas verdes sobre fondo oscuro."
 category: "basico"
 tags: ["ações", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Understand what yield is, how it works, advantages, risks and pract
 title: "yield - Financial Glossary"
 description: "Understand what yield is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/yield.webp"
+imageAlt: "Gold coins stacked in ascending bars beside a glass jar with growing plant."
 category: "basico"
 tags: ["yield", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Entienda qué es bônus, cómo funciona, ventajas, riesgos y ejempl
 title: "bono salarial - Glosario Financiero"
 description: "Entienda qué es bônus, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/bonus.webp"
+imageAlt: "Una imagen de monedas de oro y plata, plantas y un frasco de vidrio con un símbolo de Bitcoin."
 category: "basico"
 tags: ["bono salarial", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

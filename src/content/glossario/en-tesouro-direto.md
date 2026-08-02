@@ -4,6 +4,7 @@ definition: "Understand what tesouro direto is, how it works, advantages, risks 
 title: "Government Bonds - Financial Glossary"
 description: "Understand what government bonds are, how they work, their advantages, risks, and practical examples in the financial market."
 image: "/images/glossario/tesouro-direto.webp"
+imageAlt: "Gold coins and bars with growing plant in glass jar on dark background"
 category: "basico"
 tags: ["tesouro direto", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

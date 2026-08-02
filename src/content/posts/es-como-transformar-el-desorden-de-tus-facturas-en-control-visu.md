@@ -3,6 +3,7 @@ title: "Cómo transformar el desorden de tus facturas en control visual en 2026"
 description: "Descubre un método práctico para organizar tus finanzas personales con visualización y automatización, sin números confusos. Empieza ahora y nota la diferencia."
 tickerHeadline: "Tus cuentas bajo control en minutos"
 image: "/images/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em-.webp"
+imageAlt: "Tres personas revisan documentos y portátil en mesa blanca con planta y reloj."
 category: "dicas"
 locale: "es"
 tags: ["organizar finanzas personales","finanzas personales","economía","dinero"]

@@ -4,6 +4,7 @@ definition: "Entienda qué es bolsa de valores, cómo funciona, ventajas, riesgo
 title: "bolsa de valores - Glosario Financiero"
 description: "Entienda qué es bolsa de valores, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/bolsa-de-valores.webp"
+imageAlt: "Una bolsa de valores con un gráfico de crecimiento, monedas y una planta en un vaso."
 category: "basico"
 tags: ["bolsa de valores", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

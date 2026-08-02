@@ -3,6 +3,7 @@ title: "Simple Everyday Saving Strategies for 2026"
 description: "Turn daily habits into big savings with practical tips and the FinMoovi app that tracks every cent."
 tickerHeadline: "A tip that multiplies your savings"
 image: "/images/posts/estrategias-simples-para-economizar-no-dia-a-dia-em-2026.webp"
+imageAlt: "Brown notebook, calculator, coins, and green plants on a white marble surface."
 category: "dicas"
 locale: "en"
 tags: ["how to save money tips","personal finance","budgeting","money"]

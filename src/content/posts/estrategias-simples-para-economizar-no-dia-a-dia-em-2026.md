@@ -3,6 +3,7 @@ title: "Estratégias simples para economizar no dia a dia em 2026"
 description: "Descubra como transformar pequenos gestos cotidianos em grandes economias, com dicas práticas e o app FinMoovi ajudando você a controlar cada centavo."
 tickerHeadline: "A dica que multiplica sua poupança"
 image: "/images/posts/estrategias-simples-para-economizar-no-dia-a-dia-em-2026.webp"
+imageAlt: "Caderno marrom, calculadora, moedas e plantas sobre superfície branca."
 category: "dicas"
 locale: "pt"
 tags: ["como poupar dinheiro dicas","finanças pessoais","economia","dinheiro"]

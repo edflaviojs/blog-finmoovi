@@ -4,6 +4,7 @@ definition: "Entienda qué es aplicação, cómo funciona, ventajas, riesgos y e
 title: "aplicación financiera - Glosario Financiero"
 description: "Entienda qué es aplicação, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/aplicacao.webp"
+imageAlt: "Una imagen de monedas doradas y plantas en vasos, con fondo oscuro y tonos azules."
 category: "basico"
 tags: ["aplicación financiera", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

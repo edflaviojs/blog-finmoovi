@@ -4,6 +4,7 @@ definition: "Understand what ações is, how it works, advantages, risks and pra
 title: "ações - Financial Glossary"
 description: "Understand what ações is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/acoes.webp"
+imageAlt: "Gold coins stacked in ascending order with green plants, orange bars, and glass jar."
 category: "basico"
 tags: ["ações", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Understand what xepa financeira is, how it works, advantages, risks
 title: "xepa financeira - Financial Glossary"
 description: "Understand what xepa financeira is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/xepa-financeira.webp"
+imageAlt: "Stacks of gold coins and bars with green plants growing from them."
 category: "basico"
 tags: ["xepa financeira", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

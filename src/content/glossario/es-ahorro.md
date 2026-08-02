@@ -4,6 +4,7 @@ definition: "Entienda qué es poupança, cómo funciona, ventajas, riesgos y eje
 title: "poupança - Glosario Financiero"
 description: "Entienda qué es poupança, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/poupanca.webp"
+imageAlt: "Monedas doradas, barras ascendentes y planta verde en frasco sobre fondo oscuro."
 category: "basico"
 tags: ["poupança", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

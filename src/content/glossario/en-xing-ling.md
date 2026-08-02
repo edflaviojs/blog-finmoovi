@@ -4,6 +4,7 @@ definition: "Understand what xing ling is, how it works, advantages, risks and p
 title: "xing ling - Financial Glossary"
 description: "Understand what xing ling is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/xing-ling.webp"
+imageAlt: "Gold coins in stacks and jars with a green plant sprouting."
 category: "basico"
 tags: ["xing ling", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

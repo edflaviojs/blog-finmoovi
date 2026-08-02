@@ -5,6 +5,7 @@ category: "mercado"
 locale: "es"
 translationKey: "glossario-alavancagem"
 image: "/images/glossario/alavancagem.webp"
+imageAlt: "Una imagen de un fondo oscuro con monedas doradas y un vaso con una planta."
 relatedTerms: ["Risco","Investimento","Dívida"]
 publishedAt: 2026-06-13
 ---

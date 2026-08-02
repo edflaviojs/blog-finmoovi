@@ -4,6 +4,7 @@ definition: "What Unit Variable Expense is and how it shows up in your everyday 
 title: "Unit Variable Expense - Financial Glossary"
 description: "What Unit Variable Expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/gasto-variavel-unitario.webp"
+imageAlt: "Gold coins, orange bars, and a plant in a glass jar on a blue and pink background."
 category: "basico"
 tags: ["Unit Variable Expense", "glossary", "finance"]
 author: "FinMoovi"

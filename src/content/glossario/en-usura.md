@@ -4,6 +4,7 @@ definition: "Understand what usura is, how it works, advantages, risks and pract
 title: "usura - Financial Glossary"
 description: "Understand what usura is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/usura.webp"
+imageAlt: "Gold coins stacked in ascending order with upward arrow, glass jar with plant, dark background."
 category: "basico"
 tags: ["usura", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"

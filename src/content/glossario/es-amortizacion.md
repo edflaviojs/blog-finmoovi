@@ -1,6 +1,7 @@
 ---
 term: "Amortización"
 image: "/images/glossario/es-amortizacao.webp"
+imageAlt: "Monedas apiladas y frascos con monedas y planta verde sobre fondo oscuro."
 definition: "La reducción gradual de una deuda mediante pagos periódicos que cubren tanto el capital como los intereses."
 category: "credito"
 locale: "es"

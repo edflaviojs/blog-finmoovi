@@ -4,6 +4,7 @@ definition: "Understand what wall street is, how it works, advantages, risks and
 title: "wall street - Financial Glossary"
 description: "Understand what wall street is, how it works, advantages, risks and practical examples of application in the Brazilian financial market."
 image: "/images/glossario/wall-street.webp"
+imageAlt: "Gold coins in glass jars with rising orange arrow and green plant"
 category: "basico"
 tags: ["wall street", "glossário", "finanças", "glossary", "finance", "brazil"]
 author: "FinMoovi"
