@@ -158,7 +158,7 @@ Curto. A pessoa lê de relance, no telemóvel, enquanto ouve. Até 6 palavras.
 
 Responda APENAS com JSON válido, sem markdown:
 {
-  "introFrase": "<a frase de abertura, que aparece ANTES do vídeo começar. Até 9 palavras, com a parte forte entre *asteriscos*>",
+  "introFrase": "<a PRIMEIRA FRASE do bloco 1, COPIADA À LETRA, sem tirar nem pôr uma palavra — só com a parte forte entre *asteriscos*. NÃO invente uma frase nova: o que está escrito na capa é o que a voz diz nesse instante>",
   "ctaTexto": "<até 7 palavras, o título que aparece por cima do botão de comentar>",
   "blocos": [
     { "papel": "gancho", "shots": [ { "ancoraIndice": 2, "visual": { "type": "statement", "text": "…" }, "sfx": "boom" } ] },
@@ -277,7 +277,35 @@ export function validarPlano(plano, narrativa) {
     }
   }
 
+  /**
+   * A CAPA DIZ O QUE A VOZ DIZ (02/08/2026) — ideia do dono, e tem conta por trás.
+   *
+   * Até aqui a capa mostrava uma frase INVENTADA aqui, e a voz dizia outra coisa por
+   * cima. O dono, ao ver o vídeo: *"o gancho correto pro início deveria ser falar o
+   * que está escrito na primeira cena… e com o homem caindo, isso sim seria um gancho
+   * de respeito"*.
+   *
+   * A conta dá-lhe razão: a capa fica **3,5s** no ecrã e a voz entra aos **0,9s** —
+   * são 2,6s de voz sobre a capa, que a 2,76 palavras/s dão **~7 palavras**. Ou seja,
+   * a primeira frase falada CABE inteira na capa. Ler e ouvir a mesma coisa ao mesmo
+   * tempo bate com muito mais força do que ler uma e ouvir outra.
+   *
+   * Por isso a frase da capa deixa de ser inventada: é a 1ª frase do bloco 1, copiada.
+   * O modelo só escolhe qual a palavra a destacar (os *asteriscos*) — e o código
+   * confere que não mexeu em mais nada. Uma fonte, um sítio.
+   */
   if (!plano.introFrase || typeof plano.introFrase !== 'string') erros.push('sem "introFrase"');
+  else {
+    const primeiraFrase = String(narrativa?.blocos?.[0]?.fala || '').split(/(?<=[.!?…])\s+/)[0] || '';
+    const limpar = (s) => String(s).replace(/\*/g, '').replace(/\s+/g, ' ').trim().toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '');
+    if (primeiraFrase && limpar(plano.introFrase) !== limpar(primeiraFrase)) {
+      erros.push(
+        `"introFrase" não é a 1ª frase do bloco 1. Copie-a à letra e ponha só os *asteriscos*: "${primeiraFrase}" `
+        + `(veio: "${plano.introFrase}")`,
+      );
+    }
+  }
   if (!plano.ctaTexto || typeof plano.ctaTexto !== 'string') erros.push('sem "ctaTexto"');
 
   return { ok: erros.length === 0, erros };

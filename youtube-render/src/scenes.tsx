@@ -83,7 +83,29 @@ export const EtiquetaTema: React.FC<{ tema?: string }> = ({ tema }) => {
   const frame = useCurrentFrame();
   const texto = String(tema || '').trim();
   if (!texto) return null;
-  const curto = texto.length > 26 ? `${texto.slice(0, 26).trim()}…` : texto;
+  /**
+   * ⚠️ CORTAR POR PALAVRA, NUNCA POR LETRA (02/08/2026).
+   * O corte cego aos 26 caracteres punha **"3 ERROS DE CARTÃO QUE TE C…"** no ecrã
+   * durante os 58 segundos do vídeo — visto no render de hoje, em todos os fotogramas.
+   * Um rótulo cortado a meio de uma palavra lê-se como coisa partida, não como resumo.
+   * Agora corta na última palavra inteira que cabe e deixa cair as palavras de ligação
+   * penduradas no fim ("que", "de", "te"…), que sozinhas não dizem nada:
+   *   "3 erros de cartão que te custam R$ 500/mês" → **"3 ERROS DE CARTÃO"**
+   */
+  const curto = (() => {
+    if (texto.length <= 26) return texto;
+    const palavras = texto.split(/\s+/);
+    const cabem: string[] = [];
+    for (const p of palavras) {
+      if ([...cabem, p].join(' ').length > 26) break;
+      cabem.push(p);
+    }
+    const LIGACAO = new Set(['que', 'de', 'do', 'da', 'dos', 'das', 'e', 'em', 'no', 'na',
+      'com', 'para', 'pra', 'por', 'te', 'a', 'o', 'as', 'os', 'um', 'uma', 'ao', 'à']);
+    while (cabem.length > 1 && LIGACAO.has(cabem[cabem.length - 1].toLowerCase())) cabem.pop();
+    // se nem a 1ª palavra couber (palavra gigante), volta-se ao corte por letra
+    return cabem.length ? `${cabem.join(' ')}…` : `${texto.slice(0, 26).trim()}…`;
+  })();
   // entra junto com a cena e fica: é identidade, não animação de destaque.
   const aparece = interpolate(frame, [0, 10], [0, 1], { extrapolateRight: 'clamp' });
   return (

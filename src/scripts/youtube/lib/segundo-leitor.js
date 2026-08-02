@@ -61,6 +61,13 @@ Está a ler em voz alta para um senhor de setenta anos que saiu cedo da escola e
    ✗ "efetuar o pagamento" → ✓ "pagar"
 Não é uma lista fechada: **é o teste que manda**. Qualquer palavra que só se escreva, e não se diga, cai por aqui.
 
+════════ A PRIMEIRA FRASE É A CAPA — E É A QUE MAIS IMPORTA ════════
+A 1ª frase do bloco 1 aparece ESCRITA no ecrã ao mesmo tempo que é dita. É a única coisa que a pessoa lê antes de decidir se fica ou se passa o dedo.
+**Ela tem de INCOMODAR.** Não é um convite simpático: é um aviso que dá um aperto — a pessoa sente que já está a perder alguma coisa, e que ainda vai a tempo. Um fim tipo *"antes que seja tarde"*, *"e você nem viu"*, *"e já começou"* é o que dá esse aperto.
+Se ela estiver morna, reescreva-a — mas **sem inventar facto novo, sem número novo, e no máximo 13 palavras**.
+✗ "Três erros no cartão tiram seu dinheiro." (verdadeiro, mas morno)
+✓ "Três erros no cartão tiram seu dinheiro, e você nem percebeu."
+
 ════════ OS VÍCIOS A CAÇAR ════════
 ${VICIOS}
 

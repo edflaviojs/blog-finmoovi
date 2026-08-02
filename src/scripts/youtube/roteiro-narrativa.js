@@ -280,7 +280,11 @@ ${O_QUE_PRESERVAR}
 SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (42 a 50 segundos).
 NÃO descreva imagens, ícones, sons, efeitos ou cortes. Só o texto que a voz vai falar. Outra pessoa cuida do visual depois.
 
-⚠️ TAMANHO — É POR AQUI QUE ESTE ROTEIRO MAIS FALHA. A narração INTEIRA tem de ter entre ${MIN_PALAVRAS} e ${MAX_PALAVRAS} palavras, ou seja **${porBloco} palavras em CADA um dos 6 blocos**. Conte as palavras antes de responder. Um bloco com o dobro disto reprova o roteiro todo, por melhor que esteja escrito.
+⚠️ TAMANHO — É POR AQUI QUE ESTE ROTEIRO MAIS FALHA. A narração INTEIRA tem de ter entre ${MIN_PALAVRAS} e ${MAX_PALAVRAS} palavras. **Conte as palavras antes de responder.**
+O orçamento NÃO é igual para todos, porque o bloco 1 carrega a frase da capa:
+· **bloco 1 (gancho): até ${ORCAMENTO_BLOCO1} palavras** — sendo até ${MAX_PALAVRAS_CAPA} na frase da capa e o resto na história.
+· **blocos 2 a 6: até ${ORCAMENTO_OUTROS} palavras CADA UM.**
+Isto é uma troca, não uma licença: o que o bloco 1 ganha, os outros cinco têm de dar. Somando, dá ${MAX_PALAVRAS}.
 
 TEMA: "${t.term}"${t.angle ? `\nÂNGULO: ${t.angle}` : ''}
 ${t.definition ? `DEFINIÇÃO: ${t.definition}\n` : ''}${t.body ? `MATERIAL DE APOIO:\n${cortar(t.body)}\n` : ''}${ficha ? `
@@ -341,7 +345,19 @@ Repare no que esse exemplo faz, porque é isso que se pede a você:
 · o fecho responde à pergunta do início e só então vem o bordão.
 
 ════════ A ESPINHA (6 blocos, nesta ordem) ════════
-1. GANCHO (~6s): a dor ou o número que choca, JÁ dizendo "${t.term}" **e JÁ com a imagem do vídeo na primeira frase**. Termine deixando uma pergunta no ar — e NÃO responda.
+1. GANCHO (~6s): **a 1ª FRASE É A CAPA DO VÍDEO** — e só depois começa a história.
+
+   ⚡ **A PRIMEIRA FRASE APARECE ESCRITA NO ECRÃ ENQUANTO VOCÊ A DIZ.** É a capa: letras grandes, com o boneco a cair. Quem está a passar o dedo lê e ouve a mesma coisa ao mesmo tempo — e é isso que faz o dedo parar.
+   · **NO MÁXIMO ${MAX_PALAVRAS_CAPA} PALAVRAS.** A capa fica no ecrã o tempo exato de a dizer; mais do que isso e ela sai a meio da frase.
+   · Tem de funcionar SOZINHA, sem nada antes. É a primeira coisa que a pessoa ouve na vida.
+   · **ELA TEM DE INCOMODAR.** Não é um convite simpático — é um aviso que dá um aperto: a pessoa sente que já está a perder alguma coisa e que ainda vai a tempo. Um final tipo *"antes que seja tarde"*, *"e você nem viu"*, *"e já começou"* é o que dá esse aperto.
+   ✗ "Você não vai acreditar nisso!" (não diz o que está em jogo — serve para qualquer vídeo do mundo)
+   ✗ "Descubra o segredo dos bancos." (falso segredo, e continua sem dizer nada)
+   ✗ "Veja como economizar." (simpático, morno, ninguém para o dedo)
+   ⚠️ Os exemplos abaixo são de OUTROS assuntos de propósito, e o computador confere: **copiar um deles reprova o roteiro.** Veja a FORMA — o aperto no fim — e escreva a sua.
+${EXEMPLOS_DE_CAPA.map((f) => `   ✓ "${f}"`).join('\n')}
+
+   DEPOIS dessa frase, e ainda dentro do bloco 1: diga "${t.term}" e a imagem do vídeo (comparada, nunca definida), dê a dor com o número, e termine deixando uma pergunta no ar — e NÃO responda.
    ⚠️ **O TEMA E A IMAGEM CABEM NA MESMA FRASE, e os dois são OBRIGATÓRIOS.** Trocar um pelo outro reprova o roteiro.
    ✗ "Uma mochila cheia de pedras faz você perder quinhentos reais por mês. Quem é o culpado?"
       Por quê: a imagem está lá, mas o TEMA sumiu — quem clicou no título por causa de "erros de cartão" não ouve nem "erros" nem "cartão", e desiste.
@@ -398,7 +414,7 @@ Se o TEMA ou o ÂNGULO prometerem um número de coisas — três erros, cinco di
 Diga-as com palavras do dia a dia, nunca com o nome técnico:
    ✗ "os três são o rotativo, o mínimo e o parcelamento longo" (ninguém em casa sabe o que é isto)
    ✓ "pagar só uma parte, deixar o resto rolando pro mês seguinte, e dividir a compra em muitas vezes"
-Elas cabem TODAS num bloco só — normalmente a virada ou a demonstração. **Esse bloco pode passar das ${porBloco} palavras; então os outros cinco têm de ficar mais curtos para o total não estourar.** É uma troca, não uma licença para escrever mais.
+Elas cabem TODAS num bloco só — normalmente a virada ou a demonstração. **Esse bloco pode passar das ${ORCAMENTO_OUTROS} palavras; então os outros cinco têm de ficar mais curtos para o total não estourar.** É uma troca, não uma licença para escrever mais.
 ⛔ **CADA ITEM TEM DE SER UM ATO DIFERENTE.** Se dois deles puderem ser a mesma coisa, você nomeou o mesmo erro duas vezes e quem ouve fica baralhado.
    ⚠️ O exemplo abaixo é DE OUTRO ASSUNTO de propósito — para você ver a forma e não poder aproveitar as palavras.
    ✗ "guardar dinheiro, poupar todo mês, e separar uma parte do salário" (são o MESMO ato dito três vezes)
@@ -525,10 +541,31 @@ const MECANICA_DO_FIO = [
   'quem tapa o furo volta a andar rápido',
 ];
 
+/**
+ * AS FRASES DE CAPA DE EXEMPLO — e a 4ª vez que a mesma armadilha morde (02/08/2026).
+ *
+ * Hoje já aconteceu três vezes: o vídeo-exemplo, o exemplo da mecânica do fio, e os
+ * exemplos da lista de erros. **Escrevi exemplos usando o assunto e o número do vídeo
+ * que estava a testar, e o modelo copiou-os à letra, das três vezes.** À quarta,
+ * escrevi *"Seu cartão tá tirando quinhentos reais por mês e você nem viu"* — e saiu
+ * exatamente isso na geração seguinte.
+ *
+ * A regra que fica, e vale para QUALQUER exemplo que se escreva neste ficheiro:
+ *   **1. o exemplo é sempre de OUTRO assunto**, para não servir ao vídeo em curso;
+ *   **2. o exemplo entra na comparação anti-cópia**, para copiá-lo custar caro.
+ * Lembrar não chega — já falhei quatro vezes hoje a lembrar-me.
+ */
+const EXEMPLOS_DE_CAPA = [
+  'Descubra o que está pesando no seu bolso antes que seja tarde demais!',
+  'Sua conta de luz tá comendo mais do que você imagina, e já começou.',
+  'Tem um erro na sua poupança tirando dinheiro todo mês sem você ver.',
+];
+
 const EXEMPLO_PARA_COMPARAR = [
   EXEMPLO_DE_FORMA[0], EXEMPLO_DE_FORMA[1], EXEMPLO_DE_FORMA[2], EXEMPLO_DE_FORMA[3],
   EXEMPLO_DE_FORMA[5].replace(BORDAO, ''),
   ...MECANICA_DO_FIO,
+  ...EXEMPLOS_DE_CAPA,
 ].join(' ');
 
 /**
@@ -797,6 +834,24 @@ const MIN_PALAVRAS = 120; // ≈ 46s de fala
 const MAX_PALAVRAS = 140; // ≈ 51s de fala → ~56s de vídeo
 
 /**
+ * A FRASE DA CAPA (02/08/2026). É a 1ª frase falada E o texto que aparece no ecrã.
+ * Treze palavras a 2,76 palavras/s = 4,7s, e a capa está desenhada para durar
+ * exatamente isso (`CAPA_FRAMES_V3 = 168` em Short.tsx). Mexer num sem mexer no outro
+ * faz a capa sair a meio da frase — os dois números são o mesmo facto.
+ */
+const MAX_PALAVRAS_CAPA = 13;
+
+/**
+ * ⚠️ O ORÇAMENTO DEIXA DE SER IGUAL PARA TODOS — e é aritmética, não gosto.
+ * A frase da capa acrescentou ~13 palavras ao bloco 1 e o teto total NÃO pode subir
+ * (140 palavras já dão ~58s, e o limite do YouTube são 60). MEDIDO: com o orçamento
+ * repartido por igual, o gerador falhou as 4 tentativas seguidas — 159, 157 e 157
+ * palavras. Ele não inventa a compensação sozinho; é preciso dizer-lhe a conta.
+ */
+const ORCAMENTO_BLOCO1 = MAX_PALAVRAS_CAPA + 21;                                  // capa + história
+const ORCAMENTO_OUTROS = Math.floor((MAX_PALAVRAS - ORCAMENTO_BLOCO1) / 5);       // os outros cinco
+
+/**
  * O FIO CONDUTOR PRECISA SER DITO, não só declarado (31/07/2026).
  * No 1º teste o modelo devolveu `fioCondutor: "semente"` e **não plantou semente
  * nenhuma na narração** — campo preenchido, imagem ausente. O validador aceitou
@@ -1024,6 +1079,29 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     erros.push(
       `você copiou o exemplo: "${copiado.join(' ')}" — o exemplo serve para ver a FORMA, não para reaproveitar frases. `
       + 'Este canal publica todos os dias; se cada vídeo repetir as mesmas frases, todos ficam iguais. Escreva com as suas palavras.',
+    );
+  }
+
+  /**
+   * A 1ª FRASE TEM DE CABER NA CAPA (02/08/2026) — e é VERDADE, não gosto.
+   *
+   * A capa fica 3,5s no ecrã e a voz entra aos 0,9s: são **2,6s**, que a 2,76
+   * palavras/s dão ~7 palavras. Dez é o teto com folga. Passar disso significa que a
+   * frase escrita na capa acaba DEPOIS de a capa desaparecer — a pessoa lê metade.
+   * Isto mede-se contando; se fosse "a frase é boa?" seria gosto e não entrava aqui.
+   *
+   * ⚠️ O que esta trava NÃO garante é que a frase DIGA alguma coisa. A forma mais
+   * barata de a cumprir é escrever dez palavras vazias ("Olha, vou te contar uma
+   * coisa muito importante agora"). Contra isso não há conta que sirva — está no
+   * prompt com exemplos, e é o segundo leitor que julga.
+   */
+  const primeiraFrase = String(blocos[0]?.fala || '').split(/(?<=[.!?…])\s+/)[0] || '';
+  const palavrasDaCapa = primeiraFrase.trim() ? primeiraFrase.trim().split(/\s+/).length : 0;
+  if (palavrasDaCapa > MAX_PALAVRAS_CAPA) {
+    erros.push(
+      `a 1ª frase do gancho tem ${palavrasDaCapa} palavras e ela é a CAPA do vídeo — no máximo ${MAX_PALAVRAS_CAPA}, `
+      + 'senão acaba depois de a capa sair do ecrã. Corte-a numa chamada curta e ponha o resto na frase seguinte. '
+      + `(veio: "${primeiraFrase}")`,
     );
   }
 

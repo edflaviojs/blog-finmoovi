@@ -64,7 +64,22 @@ export const INTRO_FRAMES = 45; // abertura disruptiva legada (~1,5s) antes das 
  * OFFSET que tem de ser espelhado, NUNCA a duração da capa — espelhar 3,5s em vez
  * de 0,9s atrasaria a legenda 2,6s em relação à voz.
  */
-export const CAPA_FRAMES_V3 = 105;
+/**
+ * ⚠️ 105 → 168 (3,5s → 5,6s) em 02/08/2026, e é conta, não gosto.
+ *
+ * A partir de agora a 1ª frase FALADA é a mesma que está escrita na capa (ideia do
+ * dono: *"o gancho correto seria falar o que está escrito na primeira cena"*). Uma
+ * chamada com a urgência que ele quer — *"Descubra o que está pesando no seu bolso
+ * antes que seja tarde demais!"* — tem 13 palavras, e a 2,76 palavras/s leva 4,7s a
+ * dizer. Com a voz a entrar aos 0,9s, a capa tem de ficar 0,9 + 4,7 = **5,6s**, senão
+ * ela sai do ecrã a meio da frase e a pessoa lê metade.
+ *
+ * ⚠️ ISTO NÃO ALONGA O VÍDEO. Quem define o começo de tudo é `VOZ_ENTRA_FRAMES`
+ * (0,9s) — ver `introFramesFor` logo abaixo. Este número só diz quanto tempo a capa
+ * fica DESENHADA POR CIMA. O preço é tapar mais uns segundos do visual da cena 1, e
+ * é deliberado: nos primeiros segundos quem manda é a capa.
+ */
+export const CAPA_FRAMES_V3 = 168;
 export const VOZ_ENTRA_FRAMES = 27;
 export const SIGNATURE_FRAMES = 75; // assinatura final da marca (~2,5s) depois da última cena
 

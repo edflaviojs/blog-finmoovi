@@ -15,20 +15,31 @@
  */
 
 /**
- * A FAIXA ATUAL — nossa, feita por código (`src/scripts/youtube/gerar-trilha.js`).
+ * A FAIXA ATUAL — escolhida pelo OUVIDO do dono, não pelo meu (02/08/2026).
  *
- * Escolha do dono em 02/08: *"a música você decide pra mim, sempre condizente com o
- * nosso ecossistema e free"*. Gerar em vez de licenciar resolve as duas coisas de uma
- * vez — **não há licença que se possa violar** e é coerente com um canal onde o ator,
- * as capas e as cenas também nascem de código.
+ * A 1ª tentativa foi gerá-la por código (`gerar-trilha.js`), para não haver licença
+ * nenhuma. O dono ouviu duas versões e reprovou as duas: *"achei muito triste"* e
+ * depois *"está desanimador! A outra tinha tipo uma guitarra dando um peso, um ritmo
+ * a mais… tem que ser uma música que se adapta a apps financeiros, estilo comercial
+ * de televisão"*. Uma trilha profissional tem produção — guitarra, baixo, bateria
+ * tocados — e isso não se sintetiza com senos.
+ *
+ * ⚠️ E a lição de método: **eu não oiço.** Posso medir tom, andamento e brilho, e
+ * medi — foi assim que se descobriu que a 1ª estava em tom MENOR e a metade da
+ * velocidade. Mas "soa a comercial de banco" é ouvido, e o ouvido é do dono.
+ *
+ * Esta exige crédito — e **isso deixou de ser um risco**, porque a linha entra
+ * sozinha na descrição (ver `creditoDaMusica`). Foi exatamente essa máquina que se
+ * construiu hoje de manhã; sem ela, esta escolha teria repetido o problema dos 9
+ * vídeos. Instrumentos: bateria, baixo e guitarra elétrica. 209s, tom maior.
  */
 export const TRILHA = {
   ficheiro: 'music/bg.mp3',
-  titulo: 'Leito FinMoovi',
-  autor: 'gerado pelo próprio canal',
-  licenca: 'própria — sem terceiros',
-  exigeCredito: false,
-  linhaDeCredito: '',
+  titulo: 'Cool Rock',
+  autor: 'Kevin MacLeod (incompetech.com)',
+  licenca: 'CC BY 4.0',
+  exigeCredito: true,
+  linhaDeCredito: 'Música: "Cool Rock" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0',
   desde: '2026-08-02',
 };
 
