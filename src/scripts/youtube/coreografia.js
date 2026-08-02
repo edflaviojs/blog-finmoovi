@@ -28,6 +28,7 @@
 import { generateText } from '../apis/kie-ai.js';
 // A música deste vídeo sai daqui, do TEMA — não se pergunta ao modelo. Ver `musica.js`.
 import { escolherTrilha } from './lib/musica.js';
+import { keywordFalada, semAcento } from './lib/palavras.js';
 import { readFileSync as lerFicheiro } from 'node:fs';
 import { join as joinPath } from 'node:path';
 import {
@@ -60,34 +61,19 @@ export function palavrasAncoraveis(fala) {
   return lista;
 }
 
-// Palavras que não servem de palavra-chave por serem vazias de assunto.
-const VAZIAS = new Set(['que', 'com', 'para', 'por', 'uma', 'umas', 'uns', 'dos', 'das', 'nos', 'nas',
-  'pelo', 'pela', 'seu', 'sua', 'voce', 'mes', 'todo', 'toda', 'cada', 'mais', 'menos', 'isso',
-  'esse', 'essa', 'aquilo', 'como', 'quando', 'onde', 'quanto', 'custam', 'custa', 'ganha', 'vale', 'pena']);
-
-const semAcento = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-
 /**
- * A PALAVRA-CHAVE TEM DE SER UMA QUE FOI MESMO DITA (erro apanhado em 31/07).
+ * ⚠️ `keywordFalada` E `semAcento` MUDARAM-SE PARA `lib/palavras.js` (02/08/2026),
+ * e isso desfez um **círculo que impedia o robô diário de arrancar**.
  *
- * O validador exige que `keyword` apareça na narração do gancho. A 1ª versão punha
- * `keyword = t.term` — mas num tema editorial o `term` é a frase inteira
- * ("3 erros de cartão que te custam R$ 500/mês"), que nenhuma narração vai conter.
- * Resultado: reprovou 4 tentativas seguidas com um erro que **o modelo não podia
- * corrigir**, porque a narração vem fechada da passagem 1. Pêndulo garantido.
+ * Em 01/08 a passagem 1 passou a importar esta função daqui, e este ficheiro, quando
+ * corre sozinho (que é como o robô o chama), espera no fim para ir buscar a passagem
+ * 1. As duas ficavam à espera uma da outra: o processo morria em silêncio, sem erro.
+ * O defeito entrou 4h39m DEPOIS de o robô ter sido desligado, por isso nunca correu.
+ * A explicação completa está no cabeçalho de `lib/palavras.js`.
  *
- * Agora escolhe-se, de entre as palavras do tema, a mais longa que o gancho DIZ.
- * `term` continua a ser o tema inteiro (é ele que dá o título); `keyword` passa a
- * ser a âncora falada.
+ * Continua a ser re-exportada daqui para quem já a importava deste sítio.
  */
-export function keywordFalada(termo, falaDoGancho) {
-  const gancho = semAcento(falaDoGancho);
-  const candidatas = String(termo || '')
-    .split(/[^\p{L}\p{N}]+/u)
-    .filter((w) => w.length >= 4 && !VAZIAS.has(semAcento(w)))
-    .sort((a, b) => b.length - a.length);
-  return candidatas.find((w) => gancho.includes(semAcento(w))) || null;
-}
+export { keywordFalada };
 
 /** Duração da cena a partir das palavras — calculada, nunca pedida ao modelo. */
 export function duracaoDoBloco(fala) {

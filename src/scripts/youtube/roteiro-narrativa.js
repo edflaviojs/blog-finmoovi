@@ -31,7 +31,7 @@ import { BORDAO, METAPHORS, longestSharedWordRun } from './lib/schema-short.js';
  * (Não há ciclo: `coreografia.js` só importa este ficheiro dentro do bloco de
  * execução direta, e por importação dinâmica.)
  */
-import { keywordFalada } from './coreografia.js';
+import { keywordFalada } from './lib/palavras.js';
 // O segundo leitor: quem arruma a FALA depois de o código garantir a VERDADE.
 import { revisarFala } from './lib/segundo-leitor.js';
 import { PERSONA, VICIOS_ESSENCIAIS, O_QUE_PRESERVAR } from './lib/voz-do-canal.js';
