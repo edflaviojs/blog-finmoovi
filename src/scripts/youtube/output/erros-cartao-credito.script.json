@@ -1,0 +1,221 @@
+{
+  "slug": "erros-cartao-credito",
+  "term": "3 erros de cartão que te custam R$ 500/mês",
+  "category": "controle",
+  "keyword": "cartão",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Descubra o que está *pesando* no seu bolso"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Olha, tem três erros de cartão que parecem uma mochila cheia de pedras nas suas costas. São quinhentos reais por mês. Qual pesa mais?",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "mochila",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "statement",
+            "text": "R$ 500 todo mês"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "pesa",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Esse peso aparece porque a correria toma conta. Ninguém ensinou direito, e muita gente faz isso sem perceber, achando que está tudo bem.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "peso",
+          "visual": {
+            "type": "statement",
+            "text": "O peso vai acumulando"
+          }
+        },
+        {
+          "anchor": "correria",
+          "visual": {
+            "type": "icon",
+            "icon": "clock"
+          },
+          "sfx": "whoosh"
+        },
+        {
+          "anchor": "Ninguém",
+          "visual": {
+            "type": "statement",
+            "text": "Ninguém ensina isso direito"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E aí a mochila fica mais pesada. Pagar só uma parte, dividir a fatura em muitas vezes e sacar dinheiro no cartão.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "mochila",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Pagar",
+          "visual": {
+            "type": "statement",
+            "text": "Pagar só uma parte"
+          }
+        },
+        {
+          "anchor": "dividir",
+          "visual": {
+            "type": "statement",
+            "text": "Parcelar demais custa caro"
+          }
+        },
+        {
+          "anchor": "sacar",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "O FinMoovi mostra esses três lado a lado. Aí você vê que pagar só uma parte aparece primeiro, bem na frente dos outros.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "FinMoovi",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Visão geral dos gastos e do peso financeiro dos cartões"
+          }
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "statement",
+            "text": "O primeiro pesa mais"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "primeiro",
+          "visual": {
+            "type": "chart",
+            "text": "Primeiro: pagamento parcial"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer descobrir qual está pesando no seu bolso? Comenta FINMOOVI aqui que eu te mando a calculadora do blog.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "qual",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "FINMOOVI",
+          "visual": {
+            "type": "statement",
+            "text": "Comente FINMOOVI"
+          }
+        },
+        {
+          "anchor": "blog",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "O que mais pesa é pagar só uma parte da fatura. É como carregar mais uma pedra na mochila. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "statement",
+            "text": "Este é o maior peso"
+          }
+        },
+        {
+          "anchor": "pagar",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "mochila",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "controle",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Veja qual erro pesa mais",
+    "target": "app"
+  },
+  "totalDurationSec": 52.6
+}
