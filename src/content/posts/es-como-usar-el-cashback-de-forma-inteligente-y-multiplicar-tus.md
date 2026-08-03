@@ -35,7 +35,7 @@ No todas las tarjetas ofrecen la misma tasa de retorno. Algunas dan 1,5 % en t
 
 ## Transforma el cashback en “[dinero](/es/posts/es-ahorrando-en-la-cuenta-de-energia) de reserva”
 
-Muchas personas simplemente usan el crédito devuelto para pagar la factura de la tarjeta. Eso elimina el beneficio inmediato, pero pierde la oportunidad de crear una reserva. Reserva el cashback en una cuenta separada – puede ser una cuenta corriente con rendimiento automático o una cuenta digital que ofrezca rendimiento del 100 % de la **tasa interbancaria**.
+Muchas personas simplemente usan el [crédito](/es/glossario/es-credito) devuelto para pagar la factura de la tarjeta. Eso elimina el beneficio inmediato, pero pierde la oportunidad de crear una reserva. Reserva el cashback en una cuenta separada – puede ser una cuenta corriente con rendimiento automático o una cuenta digital que ofrezca rendimiento del 100 % de la **tasa interbancaria**.
 
 - Salario mensual: €810
 - Gastos mensuales con tarjeta: €360 (supermercado, combustible, delivery)

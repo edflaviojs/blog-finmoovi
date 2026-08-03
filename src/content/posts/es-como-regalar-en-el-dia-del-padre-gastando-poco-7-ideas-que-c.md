@@ -20,7 +20,7 @@ seo:
 
 ## 🎉 ¿Por qué tiene sentido ahorrar en el Día del Padre?
 
-El Día del Padre se acerca y, como en cualquier festivo, la tentación de gastar más de lo planeado es grande. ¿Pero quién dijo que un regalo caro = mejor regalo?
+El [Día del Padre](/es/posts/es-dia-del-padre-planifica-tus-gastos-sin-apretar-el-presupuest) se acerca y, como en cualquier festivo, la tentación de gastar más de lo planeado es grande. ¿Pero quién dijo que un regalo caro = mejor regalo?
 
 Con un poco de creatividad y [planificación](/es/posts/es-presupuesto-con-salario-minimo-consejos-practicos), puedes sorprender a tu papá sin que la cuenta se salga de control. ¿Vamos al paso a paso?
 

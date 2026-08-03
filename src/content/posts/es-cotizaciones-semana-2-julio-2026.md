@@ -48,9 +48,9 @@ La tasa base del banco central quedó en **13,75 % al año**, como ya estaba p
 
 ### 4. Qué esperar para la próxima semana
 
-- **Cambio:** La expectativa es que el dólar continúe estable, pero mantente atento a las decisiones de la Fed. Si hay cualquier cambio de postura, la moneda local puede reaccionar rápidamente. El euro podría sufrir más volatilidad si la Unión Europea decide ajustes en la tasa de intereses.
+- **Cambio:** La expectativa es que el dólar continúe estable, pero mantente atento a las decisiones de la Fed. Si hay cualquier cambio de postura, la moneda local puede reaccionar rápidamente. El euro podría sufrir más [volatilidad](/es/glossario/es-volatilidad) si la Unión Europea decide ajustes en la tasa de intereses.
 
-- **Tasa base del banco central:** La autoridad monetaria tiene una reunión programada para finales de julio. Si la inflación sigue alta, la tendencia es mantener la tasa o incluso subir un punto. Si eso ocurre, la renta fija será aún más ventajosa, mientras que las acciones pueden sentir más presión.
+- **Tasa base del banco central:** La autoridad monetaria tiene una reunión programada para finales de julio. Si la [inflación](/es/glossario/es-inflacion) sigue alta, la tendencia es mantener la tasa o incluso subir un punto. Si eso ocurre, la renta fija será aún más ventajosa, mientras que las acciones pueden sentir más presión.
 
 - **Inversiones:** Aprovecha la estabilidad cambiaria para reequilibrar la cartera. Si la parte en renta fija está por debajo de lo deseado, aumenta la exposición. Si quieres diversificar, considera [fondos](/es/glossario/es-fondo-de-inversion) internacionales que ya incluyen el dólar o el euro en la mezcla.
 
