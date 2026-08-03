@@ -1,0 +1,67 @@
+name: YouTube — Medir retenção dos Shorts
+
+# Tarefa nº1 do dono (IMPL20 §32.3): em que segundo as pessoas saem dos vídeos.
+# É esse número que dimensiona o CAPÍTULO do vídeo longo.
+#
+# 100% LEITURA no YouTube — não publica, não altera, não apaga. Escreve só o
+# ficheiro de histórico .github/data/youtube-retencao.json, para se poder
+# comparar a medição de hoje com a de daqui a um mês.
+#
+# Disparo MANUAL de propósito (sem cron): é medição de decisão, não rotina.
+# Quando houver audiência a sério, pode passar a semanal — é acrescentar 2 linhas.
+
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: 'Medir só um vídeo (id do YouTube). Vazio = todos os publicados.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-retencao
+  cancel-in-progress: false
+
+jobs:
+  medir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      # Sem `npm ci`: o script só usa o Node puro (fetch nativo). Instalar o
+      # projeto inteiro para uma leitura de 10 vídeos seria queimar minutos da
+      # cota à toa — a lição da IMPL24.
+      - name: Medir retenção
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          if [ -n "${{ github.event.inputs.video }}" ]; then
+            node src/scripts/youtube/retencao.js --video="${{ github.event.inputs.video }}"
+          else
+            node src/scripts/youtube/retencao.js
+          fi
+
+      - name: Guardar a medição
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/youtube-retencao.json
+          if git diff --staged --quiet; then
+            echo "Sem mudanças a guardar."
+          else
+            git commit -m "chore: medicao de retencao dos shorts [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          fi
