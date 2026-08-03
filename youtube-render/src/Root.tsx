@@ -1,5 +1,21 @@
-import { Composition, staticFile } from 'remotion';
+import { AbsoluteFill, Composition, staticFile } from 'remotion';
+import { Background, TelaBordao, TelaBordaoAtor, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES } from './scenes';
 import { Test } from './Test';
+
+// ♦ Pré-visualização isolada da TELA DO BORDÃO (03/08/2026) — para o dono aprovar
+// a assinatura sem renderizar um vídeo inteiro.
+const TelaBordaoPreview = () => (
+  <AbsoluteFill>
+    <Background />
+    <TelaBordao />
+  </AbsoluteFill>
+);
+const TelaBordaoAtorPreview = () => (
+  <AbsoluteFill>
+    <Background />
+    <TelaBordaoAtor />
+  </AbsoluteFill>
+);
 import { Short, ShortScript, ShortTiming, totalFrames, totalFramesFrom, sceneDurationsSec, introFramesFor, SIGNATURE_FRAMES } from './Short';
 import { AppBrollLong, AppBrollShort } from './AppBroll';
 import { AppScrollLong, AppScrollShort } from './AppScroll';
@@ -85,6 +101,22 @@ export const RemotionRoot: React.FC = () => {
         component={GaleriaCapas}
         durationInFrames={CAPAS_TOTAL_FRAMES}
         fps={CAPAS_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TelaBordao"
+        component={TelaBordaoPreview}
+        durationInFrames={BORDAO_FRAMES + BORDAO_OVERLAP_FRAMES}
+        fps={FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TelaBordaoAtor"
+        component={TelaBordaoAtorPreview}
+        durationInFrames={BORDAO_FRAMES + BORDAO_OVERLAP_FRAMES}
+        fps={FPS}
         width={1080}
         height={1920}
       />

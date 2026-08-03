@@ -4,7 +4,7 @@ import type { TransitionPresentation } from '@remotion/transitions';
 import { fade } from '@remotion/transitions/fade';
 import { slide } from '@remotion/transitions/slide';
 import { wipe } from '@remotion/transitions/wipe';
-import { Background, Watermark, EtiquetaTema, TrilhoProgresso, CartaoResultado, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro, SignatureOutro, computeGlobalShotSfxFires, computeMetaphorStages } from './scenes';
+import { Background, Watermark, EtiquetaTema, TrilhoProgresso, CartaoResultado, SceneRenderer, SceneAudioLayer, ShockIntro, DynamicIntro, SignatureOutro, TelaBordao, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES, computeGlobalShotSfxFires, computeMetaphorStages } from './scenes';
 import { BackgroundMusic } from './audio/music';
 import roteiroFixture from '../../src/scripts/youtube/output/juros-compostos.script.json';
 
@@ -163,6 +163,13 @@ export const capaFramesFor = (script: ShortScript): number =>
  * existem ganham capa sem serem tocados.
  */
 export const fioCondutorDoScript = (script: ShortScript): string | null => {
+  /**
+   * ♦ Desde 03/08/2026 o roteiro grava a imagem no campo `fioCondutor` — no padrão
+   * novo a metáfora não é falada, logo pode não existir NENHUM shot de metáfora e
+   * o scan abaixo devolvia null (capa sem coreografia). O campo é a fonte; o scan
+   * fica como fallback para os roteiros antigos, que continuam a funcionar igual.
+   */
+  if (script.fioCondutor && script.fioCondutor !== 'clique-link') return script.fioCondutor;
   for (const cena of script.scenes || []) {
     for (const shot of cena.shots || []) {
       const m = shot.visual?.metaphor;
@@ -177,6 +184,8 @@ export type ShortScript = {
   term: string;
   keyword: string;
   nextVideoTitle?: string;
+  /** ♦ 03/08/2026: a imagem do vídeo, gravada pela coreografia (capa + música). */
+  fioCondutor?: string;
   intro?: IntroSpec;
   scenes: Array<{
     id?: number;
@@ -379,6 +388,16 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
           )}
         </Sequence>
       )}
+      {/* ♦ A TELA DO BORDÃO (03/08/2026): por cima dos últimos ~2,5s da última cena,
+          o tempo exato de a voz dizer o bordão — custo ZERO em segundos. Vem ANTES
+          da assinatura no JSX de propósito: a assinatura pinta por cima durante o
+          overlap, e a passagem fica sem salto. Sempre idêntica em todos os vídeos. */}
+      <Sequence
+        from={Math.max(0, introFrames + contentFrames - BORDAO_FRAMES)}
+        durationInFrames={BORDAO_FRAMES + BORDAO_OVERLAP_FRAMES}
+      >
+        <TelaBordao />
+      </Sequence>
       {/* Assinatura final da marca (~2,5s) — entra após a última cena. A duração da
           composição é estendida em +SIGNATURE_FRAMES no Root (calculateMetadata). */}
       <Sequence from={introFrames + contentFrames} durationInFrames={SIGNATURE_FRAMES}>

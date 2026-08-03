@@ -7,7 +7,7 @@ import { SceneSfx, resolveShotSfx } from './audio/sfx';
 // As 32 coreografias da capa disruptiva (T1, §21.2). Vivem em ficheiro próprio: o
 // scenes.tsx já tem 167KB e o ator + as 32 capas são outro assunto.
 import { COREOGRAFIAS, CoreografiaDaCapa } from './capas';
-import { PALCO_W, PALCO_H } from './capa';
+import { PALCO_W, PALCO_H, Palco, Chao, Ator, MEIO, CHAO, PECA, brilho, andar } from './capa';
 import type { Shot, AppScreen } from './Short';
 // Biblioteca de b-roll NATIVO (React puro, sem OffthreadVideo) — cada tela é uma
 // composição 1080×1920 completa; o AppShot (v3.3) as monta escaladas num celular.
@@ -825,6 +825,187 @@ const SceneOutro: React.FC<{ scene: Scene }> = ({ scene }) => {
         <span style={gradientText}>@FinMoovi</span>
       </div>
     </div>
+  );
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ♦ A TELA DO BORDÃO (assinatura sonora do canal) — aprovada em conceito pelo
+// dono em 03/08/2026: "toda vez que falarmos esse bordão entre essa tela antes
+// do final FinMoovi". Entra POR CIMA dos últimos ~2,5s da última cena — o tempo
+// exato de a voz dizer o bordão — e por isso custa ZERO segundos de vídeo.
+// A receita de impacto é a das capas (regra 9 do §22): tremor e clarão, nunca
+// formas. DUAS pancadas, sincronizadas com as duas metades da frase falada:
+//   pancada 1 (frame ~0):  "DINHEIRO SEM CONTROLE"
+//   pancada 2 (frame ~34): "É DINHEIRO DOS OUTROS." (em gradiente da marca)
+// SEMPRE IDÊNTICA em todos os vídeos — a força de uma assinatura é a repetição.
+// No fim, o texto esvai enquanto a SignatureOutro (que pinta por cima) assume.
+// ─────────────────────────────────────────────────────────────────────────────
+export const BORDAO_FRAMES = 75;        // ~2,5s: 7 palavras a 2,76 palavras/s
+export const BORDAO_OVERLAP_FRAMES = 16; // segue por baixo da assinatura, sem salto
+
+export const TelaBordao: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const BEAT2 = 34; // a voz chega à 2ª metade da frase (~4 palavras depois)
+
+  // fundo escurece rápido: é uma TELA, não uma legenda por cima da cena
+  const escurecer = interpolate(frame, [0, 6], [0, 0.9], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  // pancada 1
+  const slam1 = spring({ frame, fps, config: { damping: 10, mass: 0.6 } });
+  const scale1 = interpolate(slam1, [0, 1], [2.1, 1]);
+  const shake1 = frame < 9 ? Math.sin(frame * 3.1) * (1 - frame / 9) * 9 : 0;
+  const flash1 = interpolate(frame, [0, 2, 11], [0.85, 0.5, 0], { extrapolateRight: 'clamp' });
+
+  // pancada 2
+  const slam2 = spring({ frame: frame - BEAT2, fps, config: { damping: 10, mass: 0.6 } });
+  const scale2 = interpolate(slam2, [0, 1], [2.1, 1]);
+  const shake2 = frame >= BEAT2 && frame < BEAT2 + 9 ? Math.sin((frame - BEAT2) * 3.1) * (1 - (frame - BEAT2) / 9) * 9 : 0;
+  // ⚠️ sem o `frame < BEAT2 ? 0` o clamp da esquerda deixava este clarão ACESO a 0,7
+  // desde o frame 0 — a tela abria cinzenta. Visto no fotograma 12, antes de mostrar.
+  const flash2 = frame < BEAT2 ? 0 : interpolate(frame, [BEAT2, BEAT2 + 2, BEAT2 + 11], [0.7, 0.4, 0], { extrapolateRight: 'clamp' });
+  const linha2Visivel = frame >= BEAT2 ? 1 : 0;
+
+  // risco de luz por baixo, depois da 2ª pancada — o "carimbo" fecha
+  const risco = interpolate(frame, [BEAT2 + 12, BEAT2 + 24], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  // o TEXTO esvai no fim (a SignatureOutro assume); o fundo escuro fica
+  const saidaTexto = interpolate(frame, [BORDAO_FRAMES, BORDAO_FRAMES + BORDAO_OVERLAP_FRAMES], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+      <AbsoluteFill style={{ background: BRAND.bg, opacity: escurecer }} />
+      <Audio src={staticFile('sfx/boom.ogg')} volume={0.85} />
+      <Sequence from={BEAT2} durationInFrames={Math.round(fps * 0.8)}>
+        <Audio src={staticFile('sfx/boom.ogg')} volume={0.6} />
+      </Sequence>
+      <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 26, opacity: saidaTexto, padding: '0 48px' }}>
+        <div style={{
+          fontFamily: DISPLAY, fontWeight: 900, fontSize: 96, lineHeight: 1.05, color: BRAND.text,
+          textAlign: 'center', transform: `scale(${scale1}) translateX(${shake1}px)`,
+          filter: 'drop-shadow(0 0 34px rgba(139,92,246,0.45))',
+        }}>DINHEIRO SEM CONTROLE</div>
+        <div style={{
+          ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: 108, lineHeight: 1.05,
+          textAlign: 'center', opacity: linha2Visivel, transform: `scale(${scale2}) translateX(${shake2}px)`,
+          filter: 'drop-shadow(0 0 44px rgba(139,92,246,0.6))',
+        }}>É DINHEIRO DOS OUTROS.</div>
+        <div style={{
+          height: 10, width: `${risco * 620}px`, borderRadius: 5, opacity: risco,
+          background: `linear-gradient(90deg, ${BRAND.cyan}, ${BRAND.violet}, ${BRAND.magenta})`,
+        }} />
+      </div>
+      <AbsoluteFill style={{ background: '#fff', opacity: Math.max(flash1, flash2), pointerEvents: 'none' }} />
+    </AbsoluteFill>
+  );
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ♦ A TELA DO BORDÃO, VARIANTE B — "O ATOR CARIMBANDO" (03/08/2026, a pedido do
+// dono para comparar com a A). O boneco oficial das capas entra a carregar um
+// CARIMBO gigante acima da cabeça, bate-o no chão — o Palco dá o tremor e o
+// clarão calibrados (regra 9) — e no impacto a frase salta ESTAMPADA como um
+// selo torto. Mesma duração e mesma saída da variante A.
+// ─────────────────────────────────────────────────────────────────────────────
+export const TelaBordaoAtor: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const IMPACTO = 28;
+
+  const escurecer = interpolate(frame, [0, 6], [0, 0.92], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const saidaTexto = interpolate(frame, [BORDAO_FRAMES, BORDAO_FRAMES + BORDAO_OVERLAP_FRAMES], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  // o ator entra da direita a carregar o carimbo; para, e bate
+  const atorX = interpolate(frame, [0, 24], [MEIO + 520, MEIO + 210], { extrapolateRight: 'clamp', easing: Easing.out(Easing.quad) });
+  const sw = interpolate(frame, [24, IMPACTO], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.in(Easing.quad) });
+  // braços: acima da cabeça a segurar → batida em frente (0 = braço para baixo; 180 = para cima)
+  // no fim os braços FECHAM junto ao corpo — a 68° o braço atravessava a moldura
+  // do selo (visto no fotograma 52 antes de mostrar)
+  const ombroA = interpolate(sw, [0, 1], [168, 44]);
+  const ombroB = interpolate(sw, [0, 1], [192, 26]);
+  const pernas = frame < 24 ? andar(frame / 3) : andar(8);
+  const inclina = interpolate(sw, [0, 1], [-4, 12]);
+
+  // o carimbo: acompanha as mãos no transporte (bem ACIMA da cabeça — colado à
+  // cabeça lia-se como um chapéu, visto no fotograma 14), desce em arco, fica no chão
+  const carimboX = interpolate(sw, [0, 1], [atorX, MEIO - 150]);
+  const carimboY = interpolate(sw, [0, 1], [CHAO - 870, CHAO - 96], { easing: Easing.in(Easing.cubic) });
+  const carimboRot = interpolate(sw, [0, 0.6, 1], [0, -14, 0]);
+
+  // o selo com a frase: salta no impacto, com soco (overshoot) e leve rotação
+  const pop = spring({ frame: frame - (IMPACTO + 2), fps, config: { damping: 10, mass: 0.5, stiffness: 170 } });
+  const seloVisivel = frame >= IMPACTO + 2 ? 1 : 0;
+  const seloScale = interpolate(pop, [0, 1], [1.7, 1]);
+  const flash = frame < IMPACTO ? 0 : interpolate(frame, [IMPACTO, IMPACTO + 2, IMPACTO + 10], [0.7, 0.4, 0], { extrapolateRight: 'clamp' });
+  const risco = interpolate(frame, [IMPACTO + 16, IMPACTO + 28], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  return (
+    <AbsoluteFill>
+      <AbsoluteFill style={{ background: BRAND.bg, opacity: escurecer }} />
+      <Sequence from={22} durationInFrames={Math.round(fps * 0.5)}>
+        <Audio src={staticFile(resolveShotSfx('whoosh'))} volume={0.5} />
+      </Sequence>
+      <Sequence from={IMPACTO} durationInFrames={Math.round(fps * 0.8)}>
+        <Audio src={staticFile('sfx/boom.ogg')} volume={0.9} />
+      </Sequence>
+
+      {/* o palco em baixo — mesmo enquadramento das capas; `em` = o instante da batida */}
+      <div style={{ position: 'absolute', bottom: -40, left: (1080 - PALCO_W) / 2, width: PALCO_W, height: PALCO_H, opacity: saidaTexto }}>
+        <Palco life={BORDAO_FRAMES} em={IMPACTO / BORDAO_FRAMES} focoX={MEIO - 130} focoY={CHAO - 200}>
+          <Chao />
+          <g transform={`translate(${carimboX} ${carimboY}) rotate(${carimboRot})`} style={brilho(BRAND.violet, 30)}>
+            <circle cy={-186} r={34} fill={PECA} stroke={BRAND.cyan} strokeWidth={7} />
+            <rect x={-26} y={-166} width={52} height={112} rx={18} fill={PECA} stroke={BRAND.cyan} strokeWidth={7} />
+            <rect x={-180} y={-54} width={360} height={100} rx={16} fill={PECA} stroke={BRAND.violet} strokeWidth={9} />
+          </g>
+          <Ator
+            id="bord"
+            x={atorX}
+            {...pernas}
+            ombroA={ombroA}
+            cotoveloA={interpolate(sw, [0, 1], [-14, 18])}
+            ombroB={ombroB}
+            cotoveloB={interpolate(sw, [0, 1], [14, 10])}
+            inclina={inclina}
+            cabeca={interpolate(sw, [0, 1], [-8, 10])}
+            escala={1.05}
+          />
+        </Palco>
+      </div>
+
+      {/* o SELO estampado com o bordão — torto de propósito, como carimbo real.
+          ⚠️ Linhas com quebra CONTROLADA (nowrap por linha): o texto solto partia
+          "DOS / OUTROS." em três linhas — visto no fotograma 52 antes de mostrar. */}
+      <div style={{
+        position: 'absolute', top: 170, left: 0, right: 0, display: 'flex', justifyContent: 'center',
+        opacity: seloVisivel * saidaTexto,
+      }}>
+        <div style={{
+          transform: `rotate(-3deg) scale(${seloScale})`,
+          border: `12px solid ${BRAND.violet}`, borderRadius: 34, padding: '42px 48px 48px',
+          boxShadow: '0 0 70px rgba(139,92,246,0.45), inset 0 0 40px rgba(139,92,246,0.18)',
+          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14,
+        }}>
+          <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 74, lineHeight: 1.06, color: BRAND.text, textAlign: 'center' }}>
+            <div style={{ whiteSpace: 'nowrap' }}>DINHEIRO SEM</div>
+            <div style={{ whiteSpace: 'nowrap' }}>CONTROLE</div>
+          </div>
+          <div style={{
+            ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: 82, lineHeight: 1.06, textAlign: 'center',
+            filter: 'drop-shadow(0 0 40px rgba(139,92,246,0.55))',
+          }}>
+            <div style={{ whiteSpace: 'nowrap' }}>É DINHEIRO</div>
+            <div style={{ whiteSpace: 'nowrap' }}>DOS OUTROS.</div>
+          </div>
+          <div style={{
+            height: 9, width: `${risco * 520}px`, borderRadius: 5, opacity: risco,
+            background: `linear-gradient(90deg, ${BRAND.cyan}, ${BRAND.violet}, ${BRAND.magenta})`,
+          }} />
+        </div>
+      </div>
+
+      <AbsoluteFill style={{ background: '#fff', opacity: flash, pointerEvents: 'none' }} />
+    </AbsoluteFill>
   );
 };
 
