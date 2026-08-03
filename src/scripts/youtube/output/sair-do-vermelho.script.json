@@ -1,0 +1,188 @@
+{
+  "slug": "sair-do-vermelho",
+  "term": "Sair do vermelho: o plano de três passos pra pagar a dívida sem apertar mais o mês",
+  "keyword": "",
+  "formato": "longo",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você já pagou uma dívida e mesmo assim o dinheiro nunca sobra? Isso acontece porque você paga uma conta, mas outras continuam levando dinheiro da sua conta todo mês.",
+      "durationSec": 11.15
+    },
+    {
+      "id": 2,
+      "role": "hook",
+      "narration": "Olha, não é falta de vontade, e muita gente passa por isso sem perceber onde o problema começa.",
+      "durationSec": 6.92
+    },
+    {
+      "id": 3,
+      "role": "hook",
+      "narration": "Neste vídeo eu vou te mostrar um plano de três passos para organizar as dívidas e voltar a respirar sem apertar mais o mês.",
+      "durationSec": 9.23
+    },
+    {
+      "id": 4,
+      "role": "hook",
+      "narration": "Você vai ver tudo o que deve escrito num lugar só e entender por qual conta vale a pena começar, sem mexer no que é essencial dentro da sua casa.",
+      "durationSec": 11.54
+    },
+    {
+      "id": 5,
+      "role": "beat",
+      "narration": "Mas por que parece que você paga, paga, e o dinheiro nunca sobra? É porque tem um monte de conta puxando um pouquinho do seu bolso ao mesmo tempo, e quase ninguém para pra juntar tudo.",
+      "durationSec": 13.85
+    },
+    {
+      "id": 6,
+      "role": "beat",
+      "narration": "Olha, pensa comigo. Você paga duzentos reais de uma parcela. Depois, paga cento e cinquenta reais de outra. Aí tem mais cem reais daquela compra que ficou pra depois. Cada uma parece que cabe no mês.",
+      "durationSec": 13.85
+    },
+    {
+      "id": 7,
+      "role": "beat",
+      "narration": "Só que, quando você soma duzentos, com cento e cinquenta, mais cem... Dá quatrocentos e cinquenta reais. É que nem uma torneira pingando o dia inteiro. Você quase não percebe cada gota, mas no fim o balde enche.",
+      "durationSec": 14.62
+    },
+    {
+      "id": 8,
+      "role": "beat",
+      "narration": "E enquanto você olha só para uma conta de cada vez, acaba não vendo o tamanho de tudo o que ainda falta pagar.",
+      "durationSec": 8.85
+    },
+    {
+      "id": 9,
+      "role": "beat",
+      "narration": "Eu joguei essas contas no FinMoovi e ele fez essa soma pra mim. Quando eu abri o aplicativo, apareceu lá uma linha chamada Dívidas, e nela estava o total de quatrocentos e cinquenta reais.",
+      "durationSec": 13.08
+    },
+    {
+      "id": 10,
+      "role": "beat",
+      "narration": "Naquela hora eu parei de adivinhar quanto faltava, porque estava tudo ali na tela, somado do jeito certo.",
+      "durationSec": 6.92
+    },
+    {
+      "id": 11,
+      "role": "beat",
+      "narration": "Só que ver esse total é só o começo. Quando você coloca tudo junto assim, fica muito mais fácil entender por onde vale a pena começar.",
+      "durationSec": 10
+    },
+    {
+      "id": 12,
+      "role": "beat",
+      "narration": "Pra começar, você já parou pra juntar todas essas contas num papel só? Quando você faz isso, aquele peso para de ficar escondido e fica bem mais fácil entender o que tá acontecendo de verdade.",
+      "durationSec": 13.46
+    },
+    {
+      "id": 13,
+      "role": "beat",
+      "narration": "Olha, pensa comigo. Tem a parcela do cartão, um empréstimo, uma compra parcelada e mais uma conta que atrasou. Olhando separadas, parece que dá pra pagar cada uma. Só que elas continuam lá, esperando pra tirar dinheiro da sua conta.",
+      "durationSec": 15.38
+    },
+    {
+      "id": 14,
+      "role": "beat",
+      "narration": "Aí você anota uma por uma e percebe um negócio que antes não aparecia. Aquilo que parecia pequeno, quando fica tudo junto no mesmo lugar, vira um susto.",
+      "durationSec": 10.77
+    },
+    {
+      "id": 15,
+      "role": "beat",
+      "narration": "Eu vi isso quando coloquei tudo na frente dos meus olhos e apareceu mil duzentos e oitenta reais espalhados em várias continhas. É que nem encher uma sacola aos poucos.",
+      "durationSec": 11.54
+    },
+    {
+      "id": 16,
+      "role": "beat",
+      "narration": "Você quase não percebe o peso até a hora de tentar levantar.",
+      "durationSec": 4.62
+    },
+    {
+      "id": 17,
+      "role": "beat",
+      "narration": "Eu joguei tudo isso no FinMoovi e ele fez a conta pra mim. Apareceu logo lá em cima o total. Mil duzentos e oitenta reais.",
+      "durationSec": 9.62
+    },
+    {
+      "id": 18,
+      "role": "beat",
+      "narration": "E logo embaixo o aplicativo me mostrou cada conta separada pelo nome, uma em cada linha. Eu bati o olho e finalmente consegui enxergar tudo de uma vez, sem ter que ficar pulando de aplicativo em aplicativo.",
+      "durationSec": 14.23
+    },
+    {
+      "id": 19,
+      "role": "beat",
+      "narration": "Só que ver tudo ali escrito ainda não diz qual dessas contas você tem que pagar primeiro. E é exatamente isso que vai fazer a diferença no próximo passo.",
+      "durationSec": 11.15
+    },
+    {
+      "id": 20,
+      "role": "beat",
+      "narration": "Sabe por que você paga, paga, e a dívida parece que não sai do lugar? É porque o seu dinheiro tá indo primeiro para a conta mais barata, enquanto a dívida maior continua crescendo nas suas costas.",
+      "durationSec": 14.23
+    },
+    {
+      "id": 21,
+      "role": "beat",
+      "narration": "Olha, presta atenção. Imagina que você conseguiu separar trezentos reais este mês. A vontade que dá é pingar esse dinheiro num monte de conta, porque parece que resolve um pouquinho de cada lado.",
+      "durationSec": 12.69
+    },
+    {
+      "id": 22,
+      "role": "beat",
+      "narration": "Só que vira o mês e o boleto continua lá, a parcela chega de novo e a conta nova não para de entrar. O mercado tá aí, a luz vence, o remédio aparece do nada.",
+      "durationSec": 13.46
+    },
+    {
+      "id": 23,
+      "role": "beat",
+      "narration": "É que nem tentar secar o chão com a torneira aberta. Você faz força, mas o serviço nunca termina. E aí bate aquele desânimo, porque o seu esforço simplesmente some.",
+      "durationSec": 11.54
+    },
+    {
+      "id": 24,
+      "role": "beat",
+      "narration": "Quando eu joguei isso no FinMoovi, ele já me mostrou tudo mastigado. Na tela apareceu a linha do Cartão de crédito, depois o Empréstimo e o Financiamento, cada um com o valor certinho que ainda faltava pagar.",
+      "durationSec": 14.23
+    },
+    {
+      "id": 25,
+      "role": "beat",
+      "narration": "E logo embaixo, ele já me deu o total das dívidas somado. Assim eu consegui ver na hora qual daquelas contas precisava receber os trezentos reais primeiro, sem precisar ficar pulando de um aplicativo para o outro.",
+      "durationSec": 14.23
+    },
+    {
+      "id": 26,
+      "role": "beat",
+      "narration": "Só que mesmo você fazendo tudo certinho, um gasto de surpresa sempre pode aparecer. E é justamente isso que vai decidir se você continua firme quando o mês apertar de novo.",
+      "durationSec": 11.92
+    },
+    {
+      "id": 27,
+      "role": "cta",
+      "narration": "Para continuar firme, você precisa enxergar direitinho o que tá pesando no seu bolso. Quer ver o seu? Comenta FINMOOVI aqui que eu te mando o app grátis e as calculadoras do blog pra você conferir tudo.",
+      "durationSec": 14.23
+    },
+    {
+      "id": 28,
+      "role": "outro",
+      "narration": "E é assim que você volta a respirar. Com esse plano de três passos, você organiza as dívidas, começa pela conta certa e segue pagando sem apertar mais o mês.",
+      "durationSec": 11.54
+    },
+    {
+      "id": 29,
+      "role": "outro",
+      "narration": "Calma, porque fazer isso não quer dizer que o caminho acaba aqui. Tem um costume que muita gente leva sem perceber e que faz a dívida voltar, mesmo depois de colocar quase tudo em ordem.",
+      "durationSec": 13.46
+    },
+    {
+      "id": 30,
+      "role": "outro",
+      "narration": "Vale prestar atenção nisso, porque é um errinho bem comum no dia a dia de muita gente. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 9.23
+    }
+  ]
+}

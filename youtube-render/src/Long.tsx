@@ -33,6 +33,7 @@ import { Background, Watermark, SignatureOutro, TelaBordao, BORDAO_FRAMES, BORDA
 import { BackgroundMusic } from './audio/music';
 import { activeIndex, wordTimingsFromReal, layoutWords } from './captions';
 import { CoreografiaDaCapa } from './capas';
+import { PALCO_W, PALCO_H } from './capa';
 import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 
 // ── o b-roll 16:9 já pronto (nenhuma destas composições foi tocada) ──────────
@@ -126,10 +127,24 @@ export const longTotalFrames = (script: LongScript, timing: LongTiming, fps: num
 const BASE = 46;
 const EMPHASIS = 66;
 
+/**
+ * ⚠️ SEIS PALAVRAS POR LINHA, E NÃO TRÊS — e a diferença viu-se num fotograma.
+ *
+ * `captions.tsx` agrupa de três em três, e faz sentido no formato vertical: a 56px
+ * num ecrã de 1080 de largura, três palavras já enchem a linha. Em 16:9 há 1560px
+ * úteis e a letra é mais pequena — a legenda saía com três palavrinhas perdidas no
+ * meio do ecrã, como se faltasse texto.
+ * O agrupamento é refeito AQUI, sem tocar em `captions.tsx`: aquele ficheiro serve o
+ * Short, que o robô publica todos os dias, e não tem nada que mudar por causa disto.
+ */
+const PALAVRAS_POR_LINHA = 6;
+const reagrupar = (timings: ReturnType<typeof layoutWords>) =>
+  timings.map((t, i) => ({ ...t, line: Math.floor(i / PALAVRAS_POR_LINHA) }));
+
 const LegendaLonga: React.FC<{ narration: string; totalFrames: number; words?: { word: string; start: number; end: number }[] }> = ({ narration, totalFrames, words }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const timings = words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, totalFrames);
+  const timings = reagrupar(words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, totalFrames));
   const active = activeIndex(timings, frame);
   const currentLine = timings[active]?.line ?? 0;
   const lineWords = timings.filter((t) => t.line === currentLine);
@@ -197,7 +212,11 @@ const CapaLonga: React.FC<{ pergunta: string; metaphor?: string | null; frames: 
 
   return (
     <AbsoluteFill style={{ opacity: sai }}>
-      <AbsoluteFill style={{ background: 'rgba(13,17,23,0.95)' }} />
+      {/* ⚠️ O FUNDO DA CAPA É OPACO, e a razão viu-se num fotograma antes de eu mostrar
+          seja o que for: a 0,95 de opacidade a legenda karaokê da cena 1 TRANSPARECIA
+          por baixo da capa, e lia-se texto a dobrar. É o primo do defeito §32.4 (a capa
+          a tapar a legenda) — aqui, ao contrário: a legenda a espreitar pela capa. */}
+      <AbsoluteFill style={{ background: BRAND.bg }} />
       <AbsoluteFill style={{ flexDirection: 'row', alignItems: 'center' }}>
         <div style={{
           flex: '0 0 980px', padding: '0 40px 0 90px', transform: `scale(${escala})`, transformOrigin: 'left center',
@@ -211,11 +230,19 @@ const CapaLonga: React.FC<{ pergunta: string; metaphor?: string | null; frames: 
             background: `linear-gradient(90deg, ${BRAND.cyan}, ${BRAND.violet}, ${BRAND.magenta})`,
           }} />
         </div>
-        <div style={{
-          flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center',
-          transform: `scale(${PALCO_ESCALA})`,
-        }}>
-          <CoreografiaDaCapa metaphor={metaphor} life={frames} />
+        {/* ⚠️ O PALCO É DESENHADO EM 1240×1560 E TEM DE SER ENCOLHIDO COM CAIXA PRÓPRIA.
+            Pôr o `scale` na coluna inteira parecia funcionar e não funcionava: o SVG
+            continuava a ocupar 1240px de LARGURA dentro de uma coluna de 940, transbordava
+            300px e o boneco saía pela direita fora. Visto no primeiro fotograma que
+            renderizei — e é por isso que se olha para o resultado, nunca para o código.
+            Agora a caixa tem o tamanho JÁ encolhido e o palco é escalado a partir do
+            canto, o que o mantém inteiro e centrado. */}
+        <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{ width: PALCO_W * PALCO_ESCALA, height: PALCO_H * PALCO_ESCALA, position: 'relative' }}>
+            <div style={{ position: 'absolute', top: 0, left: 0, transformOrigin: 'top left', transform: `scale(${PALCO_ESCALA})` }}>
+              <CoreografiaDaCapa metaphor={metaphor} life={frames} />
+            </div>
+          </div>
         </div>
       </AbsoluteFill>
       <AbsoluteFill style={{ background: '#fff', opacity: brilho, pointerEvents: 'none' }} />
@@ -232,17 +259,29 @@ const PlacaCapitulo: React.FC<{ numero: number; titulo: string }> = ({ numero, t
   const x = interpolate(entra, [0, 1], [-160, 0]);
 
   return (
-    <AbsoluteFill style={{ justifyContent: 'flex-end', alignItems: 'flex-start', padding: '0 0 230px 110px', opacity: sai }}>
-      <div style={{ transform: `translateX(${x}px)`, display: 'flex', alignItems: 'center', gap: 26 }}>
+    <AbsoluteFill style={{ justifyContent: 'flex-end', alignItems: 'flex-start', padding: '0 0 210px 90px', opacity: sai }}>
+      {/* ⚠️ A PLACA PRECISA DE FUNDO PRÓPRIO, e não é gosto — é legibilidade.
+          Sem ele, o título do capítulo caía POR CIMA do telemóvel do b-roll e as
+          últimas palavras desapareciam contra a tela clara. Apanhado no fotograma
+          1170, antes de renderizar o vídeo todo. O painel é escuro e desfocado, no
+          espírito do vidro fosco que o resto do canal já usa. */}
+      <div style={{
+        transform: `translateX(${x}px)`, display: 'flex', alignItems: 'center', gap: 24,
+        maxWidth: 1220, padding: '26px 44px 26px 34px', borderRadius: 26,
+        background: 'rgba(13,17,23,0.86)',
+        backdropFilter: 'blur(14px)',
+        border: '1px solid rgba(148,163,184,0.16)',
+        boxShadow: '0 24px 70px rgba(0,0,0,0.55)',
+      }}>
         <div style={{
-          fontFamily: DISPLAY, fontWeight: 900, fontSize: 128, lineHeight: 1,
+          fontFamily: DISPLAY, fontWeight: 900, fontSize: 120, lineHeight: 1,
           ...gradientText, filter: 'drop-shadow(0 0 30px rgba(139,92,246,0.55))',
         }}>{numero}</div>
-        <div style={{ borderLeft: `6px solid ${BRAND.violet}`, paddingLeft: 26, maxWidth: 1100 }}>
-          <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 26, letterSpacing: 3, color: BRAND.cyan }}>
+        <div style={{ borderLeft: `6px solid ${BRAND.violet}`, paddingLeft: 24 }}>
+          <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 24, letterSpacing: 3, color: BRAND.cyan }}>
             PASSO {numero}
           </div>
-          <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 62, lineHeight: 1.1, color: BRAND.text, marginTop: 8 }}>
+          <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 54, lineHeight: 1.12, color: BRAND.text, marginTop: 8 }}>
             {titulo}
           </div>
         </div>

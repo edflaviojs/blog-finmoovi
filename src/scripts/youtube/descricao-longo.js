@@ -159,7 +159,12 @@ if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/des
 
   // A descrição INTEIRA é montada por lista, então nunca sai cortada — mas confere-se
   // à mesma, porque foi exatamente isso que ninguém fez com as 9 primeiras.
-  const acabaEmLetra = /[\p{L}]$/u.test(d.texto.trim());
+  // ⚠️ A verificação ignora a linha das hashtags. A 1ª versão acusava a descrição de
+  // "acabar a meio da palavra" porque ela termina em "#FinMoovi" — uma letra. Um
+  // alarme que dispara sempre é um alarme que ninguém lê, e este canal já tem a
+  // experiência de avisos ignorados a custarem vídeos.
+  const semHashtags = d.texto.trim().split('\n').filter((l) => !l.trim().startsWith('#')).join('\n').trim();
+  const acabaEmLetra = /[\p{L}]$/u.test(semHashtags);
   console.log(acabaEmLetra ? '⚠️ a descrição acaba numa letra — confira' : '✅ a descrição acaba completa');
 
   const destino = join(OUTPUT_DIR, `${slug}.descricao.txt`);

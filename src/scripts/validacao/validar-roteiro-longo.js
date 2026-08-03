@@ -222,7 +222,7 @@ reprova(
     { ...EXEMPLO_DE_CAPITULO, regancho: 'Esse dinheiro rende duzentos e cinquenta reais por ano se você guardar.' },
     0, { plano: EXEMPLO_DE_CAPITULO },
   ),
-  'conta de rendimento',
+  'soe a rendimento com número',
 );
 reprova(
   'capítulo: não diz o número-chave que o mapa marcou',

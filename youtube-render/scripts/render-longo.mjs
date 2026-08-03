@@ -99,12 +99,21 @@ if (args.recomecar && existsSync(OUT)) {
 }
 mkdirSync(OUT, { recursive: true });
 
-const props = JSON.stringify({ slug });
-const propsFile = join(OUT, 'props.json');
-writeFileSync(propsFile, props, 'utf-8');
+/**
+ * ⚠️ O CAMINHO DOS PARÂMETROS TEM DE SER RELATIVO, e isto custou um render inteiro.
+ * A pasta deste projeto é `C:\Users\Ed Flávio\…` — tem um ESPAÇO no nome. Passado
+ * como caminho absoluto para um comando lançado através da consola, o espaço parte o
+ * argumento em dois e o Remotion recebe "C:\Users\Ed" e recusa. Relativo à pasta do
+ * render, não há espaço nenhum pelo caminho.
+ */
+const propsFile = 'out/longo/props.json';
+writeFileSync(join(OUT, 'props.json'), JSON.stringify({ slug }), 'utf-8');
 
 const feitas = [];
 for (const p of partes) {
+  // ⚠️ Relativo pela mesma razão do ficheiro de parâmetros: o caminho absoluto tem um
+  // espaço ("Ed Flávio") e parte-se em dois ao ser lançado pela consola.
+  const relativo = `out/longo/parte-${String(p.n).padStart(2, '0')}.mp4`;
   const destino = join(OUT, `parte-${String(p.n).padStart(2, '0')}.mp4`);
   if (existsSync(destino)) {
     console.log(`♻️  parte ${p.n} já existe — não se paga duas vezes pelo mesmo render`);
@@ -114,7 +123,7 @@ for (const p of partes) {
   console.log(`🎞️  parte ${p.n}/${partes.length} — fotogramas ${p.de}–${p.ate}…`);
   try {
     execFileSync('npx', [
-      'remotion', 'render', 'src/index.ts', 'Long', destino,
+      'remotion', 'render', 'src/index.ts', 'Long', relativo,
       `--frames=${p.de}-${p.ate}`,
       `--props=${propsFile}`,
       '--concurrency=2',

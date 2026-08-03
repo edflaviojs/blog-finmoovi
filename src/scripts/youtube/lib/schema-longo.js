@@ -422,12 +422,29 @@ function proibicoesGerais(fala, ondeEstou) {
    * rendimento é uma promessa que o canal não pode fazer.
    */
   for (const frase of frasesDe(fala)) {
-    if (!RADICAL_RENDIMENTO.test(semAcento(frase))) continue;
+    const gatilho = semAcento(frase).match(RADICAL_RENDIMENTO);
+    if (!gatilho) continue;
     const valores = valoresDaFrase(frase);
     if (!valores.length) continue;
+    /**
+     * ⚠️ A MENSAGEM DIZ QUAL FOI A PALAVRA, e isso não é cosmética.
+     * MEDIDO na 3ª corrida: o gatilho foi **"renda"** (o dinheiro que a pessoa GANHA),
+     * numa frase que não prometia rendimento nenhum — *"mil duzentos e oitenta reais
+     * que ainda precisam sair da sua renda"*. A queixa dizia "conta de rendimento" e
+     * o modelo não tinha como adivinhar que o problema era aquela palavra.
+     *
+     * 🔴 E FICA REGISTADO QUE ISTO É UM FALSO POSITIVO CONHECIDO, não um descuido.
+     * "renda" cai na mesma família de "rende"/"rendimento", e num vídeo de dívida a
+     * palavra aparece com toda a legitimidade. **Optei por NÃO estreitar a trava:**
+     * ela protege o número financeiro, que é a coisa mais perigosa deste canal, e o
+     * preço de a manter é uma tentativa a mais — enquanto o preço de a afrouxar é
+     * uma promessa de rendimento no ar. Estreitá-la é decisão editorial do dono.
+     * (O prompt, note-se, já empurra para "do seu salário" em vez de "da sua renda".)
+     */
     erros.push(
-      `${ondeEstou}: a frase "${frase}" faz uma conta de rendimento com valores (${valores.join(', ')}) e este vídeo NÃO tem conta calculada. `
-      + 'Conte a transformação sem prometer rendimento, ou tire o número dessa frase.',
+      `${ondeEstou}: a frase "${frase}" junta a palavra "${gatilho[0]}" a um valor (${valores.join(', ')}), `
+      + 'e este vídeo NÃO tem conta calculada — qualquer coisa que soe a rendimento com número é proibida aqui. '
+      + `Troque a palavra "${gatilho[0]}" (por exemplo, "o seu salário" ou "o que entra em casa") ou tire o número dessa frase.`,
     );
   }
 
