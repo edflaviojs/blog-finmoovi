@@ -10,9 +10,9 @@ name: YouTube — Publicar Short (horário nobre)
 # Horário: 15:00 UTC = 12:00 no Brasil (almoço). Para mudar para a noite
 # (19:00 BR), troque o cron por '0 22 * * *'. É UMA linha.
 #
-# Enquanto a auditoria da API durar, o upload continua PRIVADO e o dono publica
-# com 1 clique no Studio — mas a arquitetura já fica pronta para o dia em que a
-# porta private→public abrir.
+# A auditoria da API foi APROVADA (03/08/2026): a porta private→public abriu e o
+# upload já sobe PÚBLICO. Não há mais o clique manual no Studio — o que este
+# workflow entrega, vai ao ar na hora.
 #
 # Sem pendentes na fila = sucesso neutro (exit 78, o mesmo "nada a fazer" do
 # pick-next-short). O passo de publicar é BARATO e determinístico de propósito
@@ -87,7 +87,7 @@ jobs:
           test -f "youtube-render/out/$FILE_SLUG.mp4" || { echo "❌ MP4 não veio no artefato"; ls -R youtube-render | head -30; exit 1; }
           echo "🎞️ $(du -h "youtube-render/out/$FILE_SLUG.mp4" | cut -f1) prontos para entrega."
 
-      - name: Publicar no YouTube (privado até auditoria)
+      - name: Publicar no YouTube (público)
         if: steps.fila.outputs.skip != 'true'
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}

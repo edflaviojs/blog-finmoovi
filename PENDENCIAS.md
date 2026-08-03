@@ -7,7 +7,7 @@ Este arquivo alimenta a seção **📋 Pendências** do Relatório do Dia (e-mai
 
 ## Abertas
 
-- [ ] Auditoria YouTube API: responder follow-up do Google com link do canal (prazo ~03/08) — depois aguardar aprovação p/ trocar uploads private→public
+- [x] Auditoria YouTube API: APROVADA — uploads passaram de private para public em 03/08/2026 (upload-short.js)
 - [ ] Google Cloud billing: criar perfil de pagamentos PORTUGAL (NIF + cartão PT) → destrava vozes TTS premium + trial $300
 - [ ] Escolher voz definitiva do canal (Antonio edge ↔ Piper faber alternando; premium depende do billing)
 - [ ] Pinterest: avaliar o 1º pin com descrição rica SEO (sexta 24/07 ~16h)

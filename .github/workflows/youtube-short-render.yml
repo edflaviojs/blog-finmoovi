@@ -3,7 +3,7 @@ name: YouTube — Renderizar Short (completo)
 # Produz o Short inteiro na nuvem (IP limpo, sem o throttle do Edge local):
 # TTS por cena + Whisper (timing real) → legendas SRT ×3 → render Remotion
 # (voz + SFX + música + karaokê sincronizado). Sobe o MP4 + .srt como artefato.
-# Com upload=true, publica no YouTube (PRIVADO até a auditoria da API) — F1.4.
+# Com upload=true, publica no YouTube já PÚBLICO (auditoria aprovada) — F1.4.
 #
 # ♦ 03/08/2026 — cron diário: 06:30 UTC o job escolhe sozinho o PRÓXIMO termo,
 # GERA o roteiro fresco, comita, renderiza e PÕE NA FILA DE SAÍDA (não publica
@@ -24,7 +24,7 @@ on:
         required: false
         default: 'juros-compostos'
       upload:
-        description: 'Publicar no YouTube após render (privado até auditoria)'
+        description: 'Publicar no YouTube após render (vai PÚBLICO na hora)'
         type: boolean
         required: false
         default: false
@@ -283,7 +283,7 @@ jobs:
             git push
           fi
 
-      - name: Publicar no YouTube (privado até auditoria)
+      - name: Publicar no YouTube (público)
         if: steps.resolve.outputs.skip != 'true' && env.UPLOAD == 'true'
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}

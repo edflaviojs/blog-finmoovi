@@ -10,8 +10,8 @@
  *   - 3 faixas de legenda (captions.insert) a partir dos SRTs pt/en/es;
  *   - dedup + tracking em .github/data/youtube-published.json.
  *
- * ⚠️ AUDITORIA GOOGLE PENDENTE → a API força uploads como PRIVADOS. Isso é
- * esperado: o dono publica com 1 clique no YouTube Studio até a auditoria passar.
+ * ✅ AUDITORIA GOOGLE APROVADA (03/08/2026) → o upload já sobe PÚBLICO. Não há
+ * mais o passo manual de publicar no YouTube Studio: o que o robô manda, vai ao ar.
  *
  * Segredos (env, só no CI): YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET,
  * YOUTUBE_REFRESH_TOKEN. LLM: CEREBRAS_API_KEY / GROQ_API_KEY / CLOUDFLARE_*.
@@ -269,7 +269,7 @@ function buildMetadata(raw, script) {
       defaultAudioLanguage: 'pt-BR',
     },
     status: {
-      privacyStatus: 'private', // travado até a auditoria da API passar
+      privacyStatus: 'public', // auditoria da API aprovada (03/08/2026) — sobe já público
       selfDeclaredMadeForKids: false,
       license: 'youtube',
     },
@@ -447,7 +447,7 @@ async function main() {
   // Upload.
   const accessToken = await getAccessToken();
   log('🔑 Access token renovado.');
-  log('⬆️  Enviando vídeo (privado)...');
+  log('⬆️  Enviando vídeo (público)...');
   const videoId = await uploadVideo(accessToken, metadata, mp4Path);
   const url = `https://youtu.be/${videoId}`;
   log(`✅ Vídeo enviado: ${url}`);
@@ -468,7 +468,7 @@ async function main() {
   saveTracking(tracking);
   log(`📝 tracking atualizado em ${TRACKING}`);
 
-  log(`\n🔒 Vídeo PRIVADO — publicar com 1 clique no YouTube Studio (auditoria da API pendente).`);
+  log(`\n🌍 Vídeo PÚBLICO — já está no ar, sem passo manual no Studio.`);
   log(`   ${url}`);
 }
 
