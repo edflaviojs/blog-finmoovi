@@ -145,7 +145,28 @@ glossaryRef = slug do termo do glossario que serve de base ou null.`;
   }
 }
 
-function buildViralPrompt(title, pillar, estrutura) {
+/**
+ * O aviso de contexto: de que FORMATO e de que IDIOMA veio este viral.
+ *
+ * Sem isto, o modelo trata igual um titulo de video de 15 minutos e um de Short
+ * de 50 segundos — e o primeiro foi escrito para vender um CLIQUE, coisa que num
+ * Short nao existe. O idioma tambem conta: um viral estrangeiro ensina a FORMA,
+ * mas o assunto pode nao existir na vida de quem nos ve.
+ */
+function contextoDoViral(video) {
+  const linhas = [];
+  if (video?.formato === 'longo') {
+    linhas.push('ATENCAO: este viral e um VIDEO LONGO (' + Math.round((video.duracaoSeg || 0) / 60) + ' min). O titulo dele foi escrito para vender um CLIQUE numa miniatura. No nosso Short o video ja esta a tocar antes de alguem ler o titulo: aproveite a TENSAO e a promessa, nunca a formula de miniatura.');
+  } else if (video?.formato === 'short') {
+    linhas.push('Este viral e um SHORT, do mesmo formato que o nosso.');
+  }
+  if (video?.idioma && video.idioma !== 'pt') {
+    linhas.push('ATENCAO: este viral NAO e em portugues (' + video.idioma + '). Aproveite a FORMA, mas confirme que o assunto faz sentido na vida de quem vive no Brasil — nao traduza habitos que aqui nao existem.');
+  }
+  return linhas.length ? linhas.join('\n') + '\n' : '';
+}
+
+function buildViralPrompt(title, pillar, estrutura, contexto) {
   // ♦ 03/08/2026 — APRENDER A FORMA, NAO COPIAR O ASSUNTO (IMPL24 §3.2).
   // O detetive antigo so passava o TITULO, e o que voltava era o mesmo assunto
   // com outras palavras. O que faz o dedo parar, porem, e a ESTRUTURA (uma
@@ -157,7 +178,7 @@ function buildViralPrompt(title, pillar, estrutura) {
 
 Titulo viral: "${title}"
 Pilar: ${pillar}
-O QUE FEZ ESTE TITULO FUNCIONAR (leitura da forma, nao do assunto):
+${contexto || ''}O QUE FEZ ESTE TITULO FUNCIONAR (leitura da forma, nao do assunto):
 ${(estrutura || []).map((p) => '- ' + p).join('\n')}
 
 REGRAS:
@@ -175,7 +196,7 @@ async function transformViralToTopic(video, generateText) {
   const pillar = video.pillar || 'mindset';
   const estrutura = lerEstrutura(video);
   try {
-    const raw = await generateText(buildViralPrompt(video.title, pillar, estrutura), { maxTokens: 300, temperature: 0.7 });
+    const raw = await generateText(buildViralPrompt(video.title, pillar, estrutura, contextoDoViral(video)), { maxTokens: 300, temperature: 0.7 });
     const jsonMatch = raw.match(/\{[\s\S]*\}/);
     if (!jsonMatch) throw new Error('LLM nao retornou JSON');
     const parsed = JSON.parse(jsonMatch[0]);
@@ -208,7 +229,20 @@ async function transformViralToTopic(video, generateText) {
 
 async function importViralTopics({ topicsData, existingIds, existingThemeSlugs, generateText, dryRun }) {
   const trends = loadTrends();
-  const topVideos = Array.isArray(trends?.topVideos) ? trends.topVideos : [];
+  // ♦ 03/08/2026 — OS SHORTS VÊM PRIMEIRO.
+  // Estamos a aprender a fazer SHORTS. Um titulo de video longo vende um
+  // CLIQUE; num Short o video ja esta a tocar antes de alguem ler o titulo — sao
+  // jogos diferentes, e ate hoje aprendiamos com os dois misturados. A lista
+  // geral continua a ser usada a seguir (nunca ficamos sem candidatos), mas por
+  // esta ordem o nosso formato tem sempre a primeira palavra.
+  const soShorts = Array.isArray(trends?.topShorts) ? trends.topShorts : [];
+  const geral = Array.isArray(trends?.topVideos) ? trends.topVideos : [];
+  const vistos = new Set();
+  const topVideos = [...soShorts, ...geral].filter((v) => {
+    if (!v?.videoId || vistos.has(v.videoId)) return false;
+    vistos.add(v.videoId);
+    return true;
+  });
   if (topVideos.length === 0) {
     console.log('Nenhum video viral encontrado em youtube-trends.json.');
     return 0;
@@ -258,7 +292,7 @@ async function importViralTopics({ topicsData, existingIds, existingThemeSlugs, 
       const first = slice[0];
       const pillar = first.pillar || 'mindset';
       console.log('\nPrompt do 1o candidato viral (dry-run, nada foi chamado nem gravado):\n');
-      console.log(buildViralPrompt(first.title, pillar, lerEstrutura(first)));
+      console.log(buildViralPrompt(first.title, pillar, lerEstrutura(first), contextoDoViral(first)));
     } else {
       console.log('Nenhum candidato viral para exibir no dry-run.');
     }

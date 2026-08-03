@@ -18,12 +18,23 @@ const API_BASE = 'https://www.googleapis.com/youtube/v3';
 const API_KEY = process.env.YOUTUBE_API_KEY;
 const OUTPUT = join(process.cwd(), '.github', 'data', 'youtube-trends.json');
 
-// Search queries — one per content pillar
+/**
+ * AS BUSCAS — a LENTE do detetive, e a peça mais subjetiva de todo o sistema.
+ *
+ * O detetive não vê o YouTube: vê o que estas frases encontram. Tudo o que cair
+ * fora delas é invisível para o canal. Por isso ficam aqui em cima, à vista, e
+ * mexer nelas é decisão editorial do dono — não afinação técnica.
+ *
+ * ♦ 03/08/2026 (ordem do dono): `controle de gastos app` saiu — trazia sobretudo
+ * publicidade a aplicações concorrentes, não conversa sobre dinheiro. Entrou
+ * `sair do vermelho`, que é como as pessoas dizem o problema que o FinMoovi
+ * resolve. ⚠️ Com esta troca o pilar `ferramentas` fica sem busca própria.
+ */
 const QUERIES = [
   { q: 'finanças pessoais dicas', pillar: 'controle' },
   { q: 'como investir pouco dinheiro', pillar: 'investimento' },
   { q: 'educação financeira', pillar: 'mindset' },
-  { q: 'controle de gastos app', pillar: 'ferramentas' },
+  { q: 'sair do vermelho', pillar: 'controle' },
 ];
 
 // Filters
@@ -87,6 +98,48 @@ async function getVideoStats(videoIds) {
  * @param {object} stats - Video statistics item
  * @returns {object} Structured pattern data
  */
+/**
+ * Duração ISO-8601 do YouTube ("PT1M30S") em segundos. Devolve null se faltar.
+ */
+function duracaoEmSegundos(iso) {
+  const m = /^P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/.exec(String(iso || ''));
+  if (!m) return null;
+  return Number(m[1] || 0) * 86400 + Number(m[2] || 0) * 3600 + Number(m[3] || 0) * 60 + Number(m[4] || 0);
+}
+
+/**
+ * ♦ 03/08/2026 — SHORT OU VÍDEO LONGO? (pedido do dono)
+ *
+ * O coletor já pedia a duração ao YouTube e deitava-a fora. Sem ela, estávamos a
+ * aprender formas de título de vídeos de 15 minutos e a aplicá-las a Shorts de
+ * 50 segundos — e são jogos diferentes: num, o título vende um CLIQUE; no
+ * outro, o vídeo já está a tocar antes de alguém ler o título.
+ *
+ * 180s é o teto atual dos Shorts no YouTube; é o melhor indicador que a API dá
+ * sem adivinhar. Guardamos também os segundos, para se poder afinar depois.
+ */
+const TETO_SHORT_SEG = 180;
+
+/**
+ * ♦ 03/08/2026 — MARCAR O IDIOMA EM VEZ DE FINGIR QUE É TUDO PT (pedido do dono)
+ *
+ * Pedimos à API conteúdo em pt-BR, mas isso é uma SUGESTÃO, não uma regra: o
+ * vídeo nº1 da colheita de 03/08 chamava-se "Financial Literacy Exercise" e o
+ * nº2 era espanhol. Um viral estrangeiro continua a ensinar a FORMA do título —
+ * por isso marca-se, não se deita fora. Quem decide o que fazer com ele é quem
+ * o consome.
+ *
+ * Primeiro acredita-se no que a API declara; só quando ela não declara nada é
+ * que se olha para as palavras do título.
+ */
+const PISTAS_NAO_PT = /\b(the|your|you|how to|money|why|what|when|rich|save|budget|debt|el|la|los|las|dinero|ahorr\w*|deuda|riqueza|como ganar|por que|cuanto|mentalidad|reglas|familias)\b/i;
+
+function detetarIdioma(stats, title) {
+  const declarado = stats?.snippet?.defaultAudioLanguage || stats?.snippet?.defaultLanguage || '';
+  if (declarado) return declarado.toLowerCase().startsWith('pt') ? 'pt' : declarado.toLowerCase().slice(0, 2);
+  return PISTAS_NAO_PT.test(String(title || '')) ? 'nao-pt' : 'pt';
+}
+
 function extractPatterns(video, stats) {
   const title = video.snippet.title;
   const published = new Date(video.snippet.publishedAt);
@@ -103,6 +156,9 @@ function extractPatterns(video, stats) {
   const wordCount = title.split(/\s+/).length;
   const charCount = title.length;
 
+  const duracaoSeg = duracaoEmSegundos(stats?.contentDetails?.duration);
+  const formato = duracaoSeg == null ? 'desconhecido' : (duracaoSeg <= TETO_SHORT_SEG ? 'short' : 'longo');
+
   return {
     videoId: video.id.videoId || video.id,
     title,
@@ -112,6 +168,9 @@ function extractPatterns(video, stats) {
     likes,
     viewsPerDay,
     likeRatio,
+    duracaoSeg,
+    formato,
+    idioma: detetarIdioma(stats, title),
     titlePatterns: {
       hasNumber,
       hasQuestion,
@@ -218,13 +277,29 @@ async function main() {
   // Aggregate patterns
   const aggregate = computeAggregatePatterns(allVideos);
 
+  // ♦ 03/08/2026 — OS SHORTS TÊM LISTA PRÓPRIA.
+  // Um vídeo longo de um canal grande faz muito mais views/dia do que um Short,
+  // então ordenar tudo junto e cortar nos 20 podia deixar o nosso formato de
+  // fora precisamente na lista que serve para aprender a fazer Shorts. A lista
+  // geral fica como estava (nada a jusante quebra) e ganha-se uma segunda,
+  // só do nosso formato.
+  const shorts = allVideos.filter((v) => v.formato === 'short');
+  const contagem = {
+    shorts: shorts.length,
+    longos: allVideos.filter((v) => v.formato === 'longo').length,
+    naoPortugues: allVideos.filter((v) => v.idioma !== 'pt').length,
+  };
+  console.log(`  📐 formato: ${contagem.shorts} shorts · ${contagem.longos} longos | idioma: ${contagem.naoPortugues} não-português`);
+
   // Save output
   const output = {
     generatedAt: new Date().toISOString(),
     periodDays: MAX_AGE_DAYS,
     totalAnalyzed: allVideos.length,
+    contagem,
     aggregate,
     topVideos: allVideos.slice(0, 20),
+    topShorts: shorts.slice(0, 10),
   };
 
   const outputDir = join(process.cwd(), '.github', 'data');
