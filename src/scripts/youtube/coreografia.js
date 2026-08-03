@@ -341,8 +341,10 @@ export function montarRoteiro(t, narrativa, plano) {
     slug: t.slug,
     term: t.term,
     category: t.category || 'basico',
-    // a âncora falada, não o tema inteiro (ver `keywordFalada`)
-    keyword: keywordFalada(t.term, narrativa.blocos[0]?.fala) || t.term,
+    // a âncora falada, não o tema inteiro (ver `keywordFalada`).
+    // ♦ Desde 03/08/2026 a janela são os blocos 1+2 — a MESMA da trava da passagem 1
+    // e do validador do schema: com a capa-pergunta, o tema pode entrar só no bloco 2.
+    keyword: keywordFalada(t.term, `${narrativa.blocos[0]?.fala || ''} ${narrativa.blocos[1]?.fala || ''}`) || t.term,
     nextVideoTitle: '',
     intro: { style: 'pergunta', frase: plano.introFrase },
     /**
@@ -354,6 +356,15 @@ export function montarRoteiro(t, narrativa, plano) {
      * A escolha vem do tema, pela imagem do vídeo — sem chamada de IA nenhuma.
      */
     music: escolherTrilha(narrativa.fioCondutor, contarPublicados()),
+    /**
+     * ♦ A IMAGEM DO VÍDEO GRAVADA NO TOPO (03/08/2026). Desde o padrão novo a
+     * metáfora não precisa de ser FALADA — logo pode não haver nenhum shot de
+     * metáfora, e a capa (que a escolhia pelo 1º shot) e a janela anti-repetição
+     * (que a lia dos shots) ficavam ÀS CEGAS em silêncio. O campo é a fonte;
+     * o scan dos shots vira fallback para os roteiros antigos. Mesma manobra do
+     * campo `music` acima.
+     */
+    fioCondutor: narrativa.fioCondutor,
     scenes,
     cta: { text: plano.ctaTexto, target: 'app' },
     totalDurationSec: Math.round(scenes.reduce((a, s) => a + s.durationSec, 0) * 10) / 10,
@@ -379,10 +390,13 @@ export async function gerarCoreografia(t, narrativa, { tentativas = 4 } = {}) {
   // fechada da passagem 1 e ele só escreve o visual. Quatro chamadas de IA
   // queimadas e uma mensagem de erro que apontava para o sítio errado.
   // Estas verificações correm ANTES do ciclo e dizem qual é a causa real.
-  const kw = keywordFalada(t.term, narrativa.blocos[0]?.fala);
+  // ♦ Janela alargada para blocos 1+2 em 03/08/2026 — a MESMA da passagem 1 e do
+  // schema, senão a passagem 2 mataria o caso que a passagem 1 passou a permitir
+  // (o tema dito só no bloco 2, como no roteiro-modelo D do dono).
+  const kw = keywordFalada(t.term, `${narrativa.blocos[0]?.fala || ''} ${narrativa.blocos[1]?.fala || ''}`);
   if (!kw) {
     throw new Error(
-      `o gancho não diz nenhuma palavra do tema ("${t.term}") — o defeito é da PASSAGEM 1. `
+      `nem o gancho nem a empatia dizem alguma palavra do tema ("${t.term}") — o defeito é da PASSAGEM 1. `
       + 'A passagem 2 só escreve o visual e não tem como consertar isto reescrevendo shots.',
     );
   }

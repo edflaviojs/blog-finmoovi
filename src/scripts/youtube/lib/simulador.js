@@ -150,7 +150,12 @@ export function montarFichaDeNumeros(temaTexto) {
     permitidos.add(v);
     permitidos.add(Math.round(v / 10) * 10);   // arredondamento natural na fala
     permitidos.add(Math.round(v / 100) * 100);
+    // ♦ 03/08/2026: a fala natural do padrão novo arredonda ao milhar ("quase
+    // dezoito mil" para 17.800) — sem isto, a frase certa reprovava na trava.
+    if (v >= 1000) permitidos.add(Math.round(v / 1000) * 1000);
   }
+  // ♦ E o prazo dito em ANOS ("dez anos" para 120 meses) — a trava lê o número 10.
+  if (cen.meses % 12 === 0) permitidos.add(cen.meses / 12);
 
   return {
     cenario: cen,
