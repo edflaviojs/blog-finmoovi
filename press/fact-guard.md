@@ -1,7 +1,7 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-02T07:30:28.433Z
-**Posts:** 234 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 36
+**Gerado em:** 2026-08-03T08:26:44.509Z
+**Posts:** 237 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 35
 
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
@@ -68,10 +68,6 @@
 
 **en-review-your-budget.md**
 - _Reviewing our [budget](/en/posts/en-budgeting-with-minimum-wage-practical-tips) is a crucial step in this process, as it allows us to identify areas for improvement and adjust our strategies according_
-
-**en-understand-price-amortization-and-optimize-your-finances-in-.md**
-- _Conforme o saldo vai diminuindo, a parcela passa a amortizar mais do principal._
-- _A PRICE tem parcelas fixas ao longo de todo o contrato, enquanto a SAC tem parcelas que diminuem conforme o saldo devedor é amortizado, resultando em pagamentos maiores no início e menores depois._
 
 **en-you-re-not-alone-in-struggling-to-organize-your-finances.md**
 - _According to statistics, people who use expense management apps like FinMoovi tend to save more and have better financial health._
