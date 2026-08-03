@@ -35,7 +35,7 @@ El mecanismo del bono varía según la política de cada empresa, pero generalme
 - Si el empleado cumple o supera los objetivos, se calcula el [valor](/es/glossario/es-valor-financiero) del bono según un porcentaje preestablecido del salario o de la utilidad generada.  
 - El pago se realiza en la nómina o como un abono separado, y suele estar sujeto a impuestos como cualquier ingreso.
 
-En la práctica, si trabajas con un salario de R$5.000 y la empresa establece un bono del 10 % por alcanzar la meta de ventas, recibirás [R$500](/es/posts/es-montando-cartera-diversificada-con-r-500) extra al final del período.
+En la práctica, si trabajas con un salario de €900 y la empresa establece un bono del 10 % por alcanzar la meta de ventas, recibirás €90 extra al final del período.
 
 ## Ventajas
 
@@ -63,15 +63,15 @@ Aunque el bono suena como una bendición, también implica algunos riesgos que c
 
 Veamos cómo el bono impacta a diferentes salarios reales:
 
-- **Salario R$3.000:** La empresa ofrece un bono del 5 % por cumplimiento de metas trimestrales. Si lo logras, recibes R$150 extra cada trimestre, sumando R$600 al año.  
-- **Salario R$5.500:** Se establece un bono de 8 % al cerrar el año fiscal con utilidades. Un buen desempeño genera R$440 de bono, que puedes usar para pagar una deuda o invertir.  
-- **Salario R$8.000:** La compañía tiene un plan de participación en ganancias del 12 % para equipos que superen sus objetivos. Si tu equipo logra el objetivo, el bono sería R$960, suficiente para un viaje corto o para reforzar tu [fondo de emergencia](/es/glossario/es-fondo-de-emergencia).
+- **Salario €540:** La empresa ofrece un bono del 5 % por cumplimiento de metas trimestrales. Si lo logras, recibes €27 extra cada trimestre, sumando €108 al año.  
+- **Salario €990:** Se establece un bono de 8 % al cerrar el año fiscal con utilidades. Un buen desempeño genera aproximadamente €80 de bono, que puedes usar para pagar una deuda o invertir.  
+- **Salario €1,440:** La compañía tiene un plan de participación en ganancias del 12 % para equipos que superen sus objetivos. Si tu equipo logra el objetivo, el bono sería €173, suficiente para un viaje corto o para reforzar tu [fondo de emergencia](/es/glossario/es-fondo-de-emergencia).
 
 **Consejo práctico:** **Si recibes un bono, destina al menos el 30 % a tu ahorro o inversión antes de pensar en gastarlo.** Así conviertes ese ingreso extra en una herramienta para tu futuro.
 
 **Consejo práctico:** **Revisa siempre la hoja de pago y verifica que el cálculo del bono coincida con lo acordado; los errores son más comunes de lo que crees.**  
 
-**Consejo práctico:** **Usa una app de finanzas como Finanças+ para registrar el bono por separado y visualizar cómo afecta tu presupuesto mensual.** Es como tener a un amigo que te ayuda a organizar el dinero sin complicaciones.
+**Consejo práctico:** **Usa una app de finanzas como FinMoovi para registrar el bono por separado y visualizar cómo afecta tu presupuesto mensual.** Es como tener a un amigo que te ayuda a organizar el dinero sin complicaciones.
 
 ## Cómo empezar
 

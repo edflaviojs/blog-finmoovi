@@ -18,36 +18,30 @@ seo:
 ---
 
 ## [Educación financiera](/es/glossario/es-educacion-financiera) básica
-Enseñar [finanzas personales](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) a niños es esencial para que desarrollen hábitos saludables en relación con el [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado). Esto comienza con la comprensión básica de que el [dinero](/es/posts/es-cashback-inteligente) no es infinito y que es necesario trabajar para ganar. Por ejemplo, si un padre gana R$ 5.000 por mes y la familia gasta R$ 3.000 en gastos básicos, el niño puede comenzar a entender que el resto puede ser utilizado para ahorrar o invertir.
+Enseñar [finanzas personales](/es/posts/es-5-consejos-para-reorganizar-tus-finanzas-en-vacaciones) a niños es esencial para que desarrollen hábitos saludables en relación con el [dinero](/es/posts/es-ahorrando-en-las-compras-del-supermercado). Esto comienza con la comprensión básica de que el [dinero](/es/posts/es-cashback-inteligente) no es infinito y que es necesario trabajar para ganar. Por ejemplo, si un padre gana **€900** por mes y la familia gasta **€540** en gastos básicos, el niño puede comenzar a entender que el resto puede ser utilizado para ahorrar o invertir.
 
-Una forma práctica de comenzar es dar una mesada a los niños, que ellos pueden utilizar para comprar cosas que quieren, como juguetes o dulces. Sin embargo, es importante enseñar que la mesada también debe ser utilizada para ahorrar y ayudar en gastos de la familia. Por ejemplo, si la mesada es de R$ 100 por mes, el niño puede decidir guardar R$ 20 para comprar un juguete más caro en el futuro.
+Una forma práctica de comenzar es dar una mesada a los niños, que ellos pueden utilizar para comprar cosas que quieren, como juguetes o dulces. Sin embargo, es importante enseñar que la mesada también debe ser utilizada para ahorrar y ayudar en gastos de la familia. Por ejemplo, si la mesada es de **€18** por mes, el niño puede decidir guardar **€18** para comprar un juguete más caro en el futuro.
 
 ## Importancia de la [economía](/es/posts/es-ahorrando-en-la-cuenta-de-energia)
-La [economía](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) es un concepto importante para que los niños aprendan, ya que ayuda a entender que el [dinero](/es/posts/es-como-crear-una-reserva-de-emergencia) no es infinito y que es necesario tomar decisiones sobre cómo utilizarlo. Por ejemplo, si un niño quiere comprar un nuevo juego de videojuegos que cuesta R$ 200, él puede necesitar ahorrar durante varios meses para alcanzar ese objetivo.
+La [economía](/es/posts/es-ahorrando-en-la-cuenta-del-mercado) es un concepto importante para que los niños aprendan, ya que ayuda a entender que el [dinero](/es/posts/es-como-crear-una-reserva-de-emergencia) no es infinito y que es necesario tomar decisiones sobre cómo utilizarlo. Por ejemplo, si un niño quiere comprar un nuevo juego de videojuegos que cuesta **€36**, él puede necesitar ahorrar durante varios meses para alcanzar ese objetivo.
 
 **Consejo práctico:** Crea un sistema de "tarros" para el niño, donde él puede dividir su mesada en diferentes tarros para diferentes objetivos, como un tarro para ahorrar, uno para gastar y uno para donar. Esto ayuda a visualizar los objetivos financieros y a tomar decisiones conscientes sobre cómo utilizar el [dinero](/es/posts/es-consejos-para-controlar-gastos-en-la-tarjeta-de-credito).
 
 ![Importancia de la economía](/images/posts/educacao-financeira-para-criancas-2.webp)
 
-
-
 ## Enseñanza de finanzas personales
 La enseñanza de finanzas personales a niños puede comenzar con conceptos simples, como la diferencia entre necesidades y deseos. Por ejemplo, una necesidad es algo que es esencial para la vida, como comida y refugio, mientras que un deseo es algo que se quiere, pero no es necesario, como un juguete.
 
-Una forma de enseñar esto es crear un presupuesto familiar que incluya los gastos básicos y los objetivos financieros. Por ejemplo, si la familia tiene un presupuesto de R$ 5.000 por mes, puede ser necesario priorizar los gastos básicos, como alquiler y comida, y después decidir cómo utilizar el resto para alcanzar los objetivos financieros.
+Una forma de enseñar esto es crear un presupuesto familiar que incluya los gastos básicos y los objetivos financieros. Por ejemplo, si la familia tiene un presupuesto de **€900** por mes, puede ser necesario priorizar los gastos básicos, como alquiler y comida, y después decidir cómo utilizar el resto para alcanzar los objetivos financieros.
 
 ![Enseñanza de finanzas personales](/images/posts/educacao-financeira-para-criancas-3.webp)
 
-
-
 ## Recursos para educación financiera
-Existen muchos recursos disponibles para ayudar a educar a los niños sobre finanzas personales, incluyendo libros, juegos y aplicaciones. Por ejemplo, el [Banco Central del Brasil](https://www.bcb.gov.br) ofrece recursos educativos para niños y adolescentes, incluyendo juegos y actividades interactivas.
+Existen muchos recursos disponibles para ayudar a educar a los niños sobre finanzas personales, incluyendo libros, juegos y aplicaciones. Por ejemplo, el [Banco Central](/) ofrece recursos educativos para niños y adolescentes, incluyendo juegos y actividades interactivas.
 
 Además, existen aplicaciones, como el FinMoovi, que pueden ayudar a los niños a entender mejor cómo gestionar el dinero y alcanzar los objetivos financieros. Estas aplicaciones pueden ser una herramienta útil para enseñar finanzas personales de forma práctica y divertida.
 
 ![Recursos para educación financiera](/images/posts/educacao-financeira-para-criancas-4.webp)
-
-
 
 ## Comienza hoy
 No es necesario ser un experto en finanzas para enseñar a los niños sobre dinero. Lo importante es comenzar a conversar sobre el tema y encontrar formas prácticas de enseñar conceptos financieros. Con un poco de creatividad y paciencia, es posible ayudar a los niños a desarrollar hábitos saludables en relación con el dinero y promover una educación financiera sólida desde temprano.

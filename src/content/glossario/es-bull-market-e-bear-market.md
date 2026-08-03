@@ -18,18 +18,14 @@ Un Bull Market es un período en que el mercado de acciones está en alta, con l
 
 ![¿Qué son Bull Market y Bear Market?](/images/glossario/es-bull-market-e-bear-market-inline-1.webp)
 
-
-
-Por ejemplo, imagine que usted compró 100 acciones de la empresa XYZ por R$ 50 cada una. Si el mercado está en alta y el precio de las acciones sube a R$ 75, usted tendrá una ganancia de R$ 25 por acción, o un total de R$ 2.500.
+Por ejemplo, imagine que usted compró 100 acciones de la empresa XYZ por €9 cada una. Si el mercado está en alta y el precio de las acciones sube a €13,5, usted tendrá una ganancia de €4,5 por acción, o un total de €450.
 
 ## Bear Market
 Un Bear Market, por otro lado, es un período en que el mercado de acciones está en baja, con los precios de las acciones cayendo consistentemente. Esto generalmente ocurre durante períodos de recesión económica, cuando las empresas están enfrentando dificultades y las personas están pesimistas sobre el futuro. Durante un Bear Market, los inversores tienden a vender sus acciones, lo que aumenta la oferta y, consecuentemente, los precios caen.
 
-Por ejemplo, si usted compró 100 acciones de la empresa XYZ por R$ 50 cada una y el precio cae a R$ 30, usted tendrá una pérdida de R$ 20 por acción, o un total de R$ 2.000.
+Por ejemplo, si usted compró 100 acciones de la empresa XYZ por €9 cada una y el precio cae a €5,4, usted tendrá una pérdida de €3,6 por acción, o un total de €360.
 
 ![Bear Market](/images/glossario/es-bull-market-e-bear-market-inline-3.webp)
-
-
 
 ## Comparación entre Bull Market y Bear Market
 Aquí está una tabla comparativa entre los dos:

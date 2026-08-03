@@ -25,8 +25,6 @@ La bolsa de valores es un lugar donde se pueden comprar y vender acciones de emp
 
 ![Qué es](/images/glossario/bolsa-de-valores-inline-1.webp)
 
-
-
 ## Cómo funciona
 La bolsa de valores funciona de la siguiente manera: las empresas que desean vender acciones emiten un número determinado de acciones, que se venden a los inversores a un precio fijo. Luego, los inversores pueden vender sus acciones a otros inversores en el mercado de valores. El precio de las acciones se determina por la oferta y la demanda en el mercado. Si hay muchos inversores que quieren comprar acciones de una empresa, el precio de las acciones subirá. Por otro lado, si hay muchos inversores que quieren vender acciones de una empresa, el precio de las acciones bajará.
 
@@ -43,11 +41,9 @@ Invertir en la bolsa de valores puede ser una excelente forma de crecer tu patri
 * [Liquidez](/es/glossario/es-liquidez): puedes vender tus acciones fácilmente en el mercado de valores
 * Participación en el crecimiento económico: al invertir en la bolsa de valores, estás participando en el crecimiento económico de las empresas y del país
 
-**Consejo práctico:** es importante diversificar tus inversiones para reducir el riesgo. Por ejemplo, si tienes un salario de R$5.000 al mes, podrías invertir R$1.000 en acciones de una empresa de tecnología, R$1.000 en acciones de una empresa de consumo y R$1.000 en acciones de una empresa de servicios.
+**Consejo práctico:** es importante diversificar tus inversiones para reducir el riesgo. Por ejemplo, si tienes un salario de €900 al mes, podrías invertir €180 en acciones de una empresa de tecnología, €180 en acciones de una empresa de consumo y €180 en acciones de una empresa de servicios.
 
 ![Ventajas](/images/glossario/bolsa-de-valores-inline-3.webp)
-
-
 
 ## Riesgos
 Invertir en la bolsa de valores también conlleva riesgos. Algunos de los riesgos más comunes son:
@@ -58,9 +54,9 @@ Invertir en la bolsa de valores también conlleva riesgos. Algunos de los riesgo
 **Consejo práctico:** es importante investigar y analizar las empresas antes de invertir en ellas. Por ejemplo, si estás considerando invertir en una empresa de tecnología, debes investigar su historial de crecimiento, su competencia y su posición en el mercado.
 
 ## Ejemplos prácticos
-Supongamos que tienes un salario de R$6.000 al mes y decides invertir R$2.000 en acciones de una empresa de consumo. Si el precio de las acciones aumenta un 10% en un año, tu inversión valdrá R$2.200. Si decides vender tus acciones, podrías obtener una ganancia de R$200.
+Supongamos que tienes un salario de €1080 al mes y decides invertir €360 en acciones de una empresa de consumo. Si el precio de las acciones aumenta un 10% en un año, tu inversión valdrá €396. Si decides vender tus acciones, podrías obtener una ganancia de €36.
 
-Otro ejemplo es si tienes un salario de R$4.000 al mes y decides invertir R$1.500 en acciones de una empresa de servicios. Si el precio de las acciones aumenta un 15% en un año, tu inversión valdrá R$1.725. Si decides vender tus acciones, podrías obtener una ganancia de R$225.
+Otro ejemplo es si tienes un salario de €720 al mes y decides invertir €270 en acciones de una empresa de servicios. Si el precio de las acciones aumenta un 15% en un año, tu inversión valdrá €311. Si decides vender tus acciones, podrías obtener una ganancia de €41.
 
 **Consejo práctico:** es importante tener paciencia y no dejar que las fluctuaciones a corto plazo te asusten. La bolsa de valores es un mercado a largo plazo, y es importante mantener tus inversiones durante un período de tiempo para obtener los mejores resultados.
 
@@ -73,4 +69,3 @@ Para empezar a invertir en la bolsa de valores, debes seguir los siguientes paso
 
 ## Empieza hoy
 No esperes más para empezar a invertir en la bolsa de valores. Con una cantidad pequeña de dinero y un plan de inversión sólido, puedes empezar a crecer tu patrimonio a largo plazo. Recuerda que la bolsa de valores es un mercado a largo plazo, y es importante mantener tus inversiones durante un período de tiempo para obtener los mejores resultados. **Consejo práctico:** no te dejes intimidar por la complejidad del mercado de valores. Con un poco de investigación y planificación, puedes empezar a invertir en la bolsa de valores y alcanzar tus objetivos financieros. ¡Empieza hoy!
-

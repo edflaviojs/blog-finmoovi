@@ -59,11 +59,11 @@ Por eso, es fundamental conocer bien los [costos](/es/posts/es-prevision-privada
 
 ## Ejemplos prácticos
 
-A continuación, tres situaciones cotidianas con salarios entre R$ 3.000 y R$ 8.000 que ilustran cómo funciona el crédito en la práctica:
+A continuación, tres situaciones cotidianas con salarios entre €1,500 y €4,000 que ilustran cómo funciona el crédito en la práctica:
 
-- **María, salario R$ 3.500:** necesita comprar una lavadora de R$ 2.200. Usa su tarjeta de crédito con un límite de R$ 3.000 y paga el mínimo (R$ 100) en el primer mes. Si paga solo el mínimo, en 12 meses terminará pagando alrededor de R$ 2.800 por los intereses. **Consejo práctico:** pagar al menos el 30 % del saldo cada mes reduce drásticamente los intereses.
-- **Jorge, salario R$ 5.800:** quiere reformar su baño y necesita R$ 6.000. Opta por un préstamo personal con tasa fija del 12 % anual a 24 meses. Su cuota mensual será de aproximadamente R$ 300, lo que representa el 5 % de su ingreso, una carga manejable.
-- **Ana, salario R$ 8.000:** decide financiar un coche nuevo de R$ 40.000 mediante un crédito automotriz a 48 meses con tasa del 9 % anual. Su cuota mensual será de R$ 950, equivalente al 12 % de su salario, lo que le permite mantener un buen margen para otros gastos.
+- **María, salario €630:** necesita comprar una lavadora de €396. Usa su tarjeta de crédito con un límite de €540 y paga el mínimo (€18) en el primer mes. Si paga solo el mínimo, en 12 meses terminará pagando alrededor de €504 por los intereses. **Consejo práctico:** pagar al menos el 30 % del saldo cada mes reduce drásticamente los intereses.
+- **Jorge, salario €1,044:** quiere reformar su baño y necesita €1,080. Opta por un préstamo personal con tasa fija del 12 % anual a 24 meses. Su cuota mensual será de aproximadamente €54, lo que representa el 5 % de su ingreso, una carga manejable.
+- **Ana, salario €1,440:** decide financiar un coche nuevo de €7,200 mediante un crédito automotriz a 48 meses con tasa del 9 % anual. Su cuota mensual será de €171, equivalente al 12 % de su salario, lo que le permite mantener un buen margen para otros gastos.
 
 Estos ejemplos muestran cómo adaptar el tipo de crédito a tu ingreso y necesidad, evitando que la deuda supere tu capacidad de pago.
 

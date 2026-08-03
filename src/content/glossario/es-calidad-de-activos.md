@@ -23,8 +23,6 @@ La **qualidade** en finanzas no es un término técnico complicado; se refiere
 
 ![Qué es](/images/glossario/qualidade-inline-1.webp)
 
-
-
 ## Cómo funciona
 
 Para medir la qualidade se usan varios indicadores que, aunque suenen técnicos, son fáciles de interpretar una vez que sabes qué buscar.  
@@ -37,15 +35,13 @@ Al combinar estos datos, obtienes una “puntuación de calidad” que te dice s
 
 ## Ventajas
 
-Contar con ativos de alta qualidade trae beneficios claros para tu bolsillo y tu tranquilidad.  
+Contar con activos de alta qualidade trae beneficios claros para tu bolsillo y tu tranquilidad.  
 - **Menor riesgo de impago:** reduces la probabilidad de perder tu capital porque la entidad cumple con sus compromisos.  
 - **Flujo de caja predecible:** sabes con mayor certeza cuándo recibirás los intereses o [dividendos](/es/glossario/es-dividendos).  
 - **Acceso a mejores tasas:** instituciones con buena reputación suelen ofrecer condiciones más favorables, como tasas de interés más bajas en préstamos.  
 - **Mayor confianza del mercado:** los inversores tienden a preferir activos de calidad, lo que puede impulsar su precio y [liquidez](/es/glossario/es-liquidez).  
 
 ![Ventajas](/images/glossario/qualidade-inline-3.webp)
-
-
 
 En la práctica, esto significa que tu dinero trabaja de forma más estable y con menos sorpresas desagradables.
 
@@ -61,14 +57,14 @@ Reconocer estos riesgos te permite equilibrar tu cartera y no caer en la falsa s
 
 ## Ejemplos prácticos
 
-Supongamos que tienes un salario mensual de R$ 5.000 y decides destinar el 20 % a una inversión de calidad. Aquí tienes tres escenarios reales:  
-- **Bonos corporativos AA:** compras R$ 1.000 en bonos de una empresa con calificación AA, que paga 7 % anual. En un año recibes R$ 70 de intereses, sin riesgo de impago significativo.  
-- **Fondo de inversión de renta fija:** inviertes R$ 1.000 en un fondo que combina bonos del gobierno y corporativos de alta calidad, obteniendo un retorno promedio de 6,5 % al año. Al final del período, tu capital crece a R$ 1.065.  
-- **Acciones de empresa estable:** destinas R$ 1.000 a acciones de una compañía que ha pagado dividendos constantes (4 % anual). Además del dividendo de R$ 40, la acción mantiene su precio, manteniendo tu inversión segura.  
+Supongamos que tienes un salario mensual de €900 y decides destinar el 20 % a una inversión de calidad. Aquí tienes tres escenarios reales:  
+- **Bonos corporativos AA:** compras €180 en bonos de una empresa con calificación AA, que paga 7 % anual. En un año recibes €13 de intereses, sin riesgo de impago significativo.  
+- **Fondo de inversión de renta fija:** inviertes €180 en un fondo que combina bonos del gobierno y corporativos de alta calidad, obteniendo un retorno promedio de 6,5 % al año. Al final del período, tu capital crece a €192.  
+- **Acciones de empresa estable:** destinas €180 a acciones de una compañía que ha pagado dividendos constantes (4 % anual). Además del dividendo de €7, la acción mantiene su precio, manteniendo tu inversión segura.  
 
 **Consejo práctico:** **Diversifica entre bonos, fondos y acciones de calidad para equilibrar riesgo y rentabilidad.**  
 **Consejo práctico:** **Revisa la calificación de tus inversiones al menos una vez al año; una pequeña variación puede indicar la necesidad de ajustar tu cartera.**  
-**Consejo práctico:** **Mantén un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) de al menos tres salarios (R$ 9.000‑R$ 24.000) antes de comprometer dinero en activos de longo plazo.**  
+**Consejo práctico:** **Mantén un [fondo de emergencia](/es/glossario/es-fondo-de-emergencia) de al menos tres salarios (€1,620‑€4,320) antes de comprometer dinero en activos de largo plazo.**  
 
 Estos ejemplos demuestran cómo la qualidade se traduce en ingresos reales y previsibles, sin sacrificar la seguridad.
 
@@ -76,14 +72,13 @@ Estos ejemplos demuestran cómo la qualidade se traduce en ingresos reales y pre
 
 Dar los primeros pasos hacia una cartera basada en qualidade es más sencillo de lo que parece.  
 - **Define tu objetivo:** decide si buscas ingresos mensuales, ahorro para la jubilación o crecimiento del capital.  
-- **Evalúa tu presupuesto:** con un salario de R$ 3.000 a R$ 8.000, determina cuánto puedes destinar mensualmente sin afectar tus gastos esenciales.  
+- **Evalúa tu presupuesto:** con un salario de €540 a €1,440, determina cuánto puedes destinar mensualmente sin afectar tus gastos esenciales.  
 - **Elige instrumentos de calidad:** busca bonos con calificación AA o fondos de renta fija con historial de rendimientos estables.  
-- **Abre una cuenta en una fintech confiable:** apps como [Nubank](/es/glossario/es-nubank) o Banco Inter facilitan la compra de bonos y fondos con pocos clics, como lo haría un amigo que ya los usa.  
+- **Abre una cuenta en una fintech confiable:** apps como [FinMoovi](https://app.finmoovi.com) facilitan la compra de bonos y fondos con pocos clics, como lo haría un amigo que ya los usa.  
 - **Monitorea y ajusta:** revisa trimestralmente el desempeño y la calificación de tus inversiones; si algo cambia, redistribuye el capital.  
 
 Con estos pasos tendrás una base sólida para construir una cartera que protege tu dinero y genera ganancias constantes.
 
 ## Empieza hoy
 
-No esperes a que el próximo mes pase sin mover tu dinero. Con una pequeña acción—como abrir una cuenta en la app que ya usas para tus gastos diarios—puedes comenzar a invertir en activos de calidad y sentir la diferencia en tu futuro financiero. ¡Vamos, que tu próximo R$ 1.000 de ahorro ya está listo para trabajar por ti!
-
+No esperes a que el próximo mes pase sin mover tu dinero. Con una pequeña acción—como abrir una cuenta en la app que ya usas para tus gastos diarios—puedes comenzar a invertir en activos de calidad y sentir la diferencia en tu futuro financiero. ¡Vamos, que tu próximo €180 de ahorro ya está listo para trabajar por ti!

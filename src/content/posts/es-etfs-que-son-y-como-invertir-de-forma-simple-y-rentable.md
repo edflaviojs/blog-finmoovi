@@ -19,27 +19,27 @@ seo:
 
 ## Qué son los ETFs
 
-[ETF](/es/glossario/es-etf) es la sigla de **Exchange Traded Fund**, o Fondo Cotizado en Bolsa. En términos simples, un ETF reúne un conjunto de activos – acciones, bonos, materias primas – y reproduce el desempeño de un índice, como el Ibovespa o el S&P 500. Cada cuota del ETF puede comprarse o venderse en la bolsa como si fuera una acción común, lo que brinda practicidad y [liquidez](/es/glossario/es-liquidez).
+[ETF](/es/glossario/es-etf) es la sigla de **Exchange Traded Fund**, o Fondo Cotizado en Bolsa. En términos simples, un ETF reúne un conjunto de activos – acciones, bonos, materias primas – y reproduce el desempeño de un índice, como el índice de referencia o el S&P 500. Cada cuota del ETF puede comprarse o venderse en la bolsa como si fuera una acción común, lo que brinda practicidad y [liquidez](/es/glossario/es-liquidez).
 
 > **Primera aparición:** “ETF” (Exchange Traded Fund) – fondo que replica un índice y se negocia como acción.
 
 ## Cómo funciona en la práctica
 
-Cuando compras 10 cuotas de un ETF que replica el Ibovespa, estás, en la práctica, invirtiendo en todas las empresas que componen ese índice (en la misma proporción). Si el Ibovespa sube un 2 %, el [valor](/es/glossario/es-valor-financiero) de tus cuotas también sube aproximadamente un 2 %.
+Cuando compras 10 cuotas de un ETF que replica el índice de referencia, estás, en la práctica, invirtiendo en todas las empresas que componen ese índice (en la misma proporción). Si el índice sube un 2 %, el [valor](/es/glossario/es-valor-financiero) de tus cuotas también sube aproximadamente un 2 %.
 
 ![Como funciona na prática](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-2.webp)
 
-La gestión del fondo puede ser **pasiva** (simplemente sigue el índice) o **activa** (busca superar el índice). La mayoría de los ETFs en Brasil son pasivos, lo que reduce los costos de administración.
+La gestión del fondo puede ser **pasiva** (simplemente sigue el índice) o **activa** (busca superar el índice). La mayoría de los ETFs en muchos países son pasivos, lo que reduce los costos de administración.
 
 ### Ejemplo de rendimiento
 
-Imagina que inviertes **R$1.000** en un ETF que replica el índice de renta fija, con rentabilidad media del 6 % al año. En un año, tu inversión rendiría:
+Imagina que inviertes **€180** en un ETF que replica el índice de renta fija, con rentabilidad media del 6 % al año. En un año, tu inversión rendiría:
 
-- Valor invertido: R$1.000
-- Rentabilidad: 6 % → R$60
-- Valor al final del año: **R$1.060**
+- Valor invertido: €180  
+- Rentabilidad: 6 % → €11  
+- Valor al final del año: **€191**
 
-Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un [CDB](/es/glossario/es-cdb) con 6,2 % al año, la diferencia sería de solo R$2, mostrando cómo las comisiones de administración de los ETFs pueden impactar el resultado final.
+Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un [certificado de depósito](/es/glossario/es-cdb) con 6,2 % al año, la diferencia sería de solo €0,4, mostrando cómo las comisiones de administración de los ETFs pueden impactar el resultado final.
 
 ## Ventajas de los ETFs
 
@@ -48,14 +48,14 @@ Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un
 | **Diversificación instantánea** | Una sola cuota ya brinda exposición a decenas o cientos de activos. |
 | **Liquidez** | Puedes comprar y vender en cualquier momento que el mercado esté abierto. |
 | **Costos menores** | Las comisiones de administración suelen ser del 0,2 % al 0,5 % al año, muy por debajo de los fondos de gestión activa. |
-| **Transparencia** | La cartera del ETF se divulga diariamente en los sitios de los corredores y en la CVM. |
+| **Transparencia** | La cartera del ETF se divulga diariamente en los sitios de los corredores y en la autoridad reguladora. |
 | **Accesibilidad** | Es posible comenzar con valores bajos – algunos corredores permiten comprar fracciones de cuotas. |
 
 ## Cómo comenzar a invertir
 
 1. **Abre una cuenta en un corredor** – elige uno que ofrezca comisión de corretaje cero o reducida para ETFs.  
-2. **Define el objetivo** – si el foco es a largo plazo, un ETF de acciones puede ser adecuado; para renta fija, busca ETFs que sigan el [CDI](/es/glossario/es-cdi) o el Tesoro [Selic](/es/glossario/es-selic).  
-3. **Elabora un plan de aporte** – por ejemplo, invertir **R$500** cada mes en un ETF de acciones brasileñas.  
+2. **Define el objetivo** – si el foco es a largo plazo, un ETF de acciones puede ser adecuado; para renta fija, busca ETFs que sigan la [tasa interbancaria](/es/glossario/es-cdi) o los [bonos del gobierno](/es/glossario/es-selic).  
+3. **Elabora un plan de aporte** – por ejemplo, invertir **€90** cada mes en un ETF de acciones locales.  
 4. **Realiza la orden de compra** – selecciona el ticker (código) del ETF, indica la cantidad y confirma la operación.  
 5. **Sigue el desempeño** – usa reportes mensuales o una app de finanzas para ver cómo evoluciona tu inversión.
 
@@ -65,9 +65,9 @@ Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un
 
 | Mensual | Valor total después de 5 años (6 % a.a.) |
 |--------|-----------------------------------|
-| R$500 | ≈ R$36.800 |
-| R$1.000 | ≈ R$73.600 |
-| R$5.000 | ≈ R$368.000 |
+| €90 | ≈ €6.624 |
+| €180 | ≈ €13.248 |
+| €900 | ≈ €66.240 |
 
 *Simulación hecha con intereses compuestos mensuales, sin considerar impuestos o comisiones de corretaje.*
 
@@ -77,15 +77,15 @@ Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un
 - **Comisión de administración** – Aunque baja, reduce la rentabilidad, especialmente en períodos de bajo desempeño del índice.  
 - **Riesgo de mercado** – Si el índice cae, tu inversión también caerá. No hay garantía de capital.  
 - **Liquidación** – Aunque la cotización sea inmediata, la liquidación financiera ocurre en D+2 (dos días hábiles después de la compra).  
-- **Impuestos** – Las ganancias se gravan al 15 % para operaciones de renta variable, y hay exención para ventas hasta R$20.000 mensuales.  
+- **Impuestos** – Las ganancias se gravan al 15 % para operaciones de renta variable, y hay exención para ventas hasta €3.600 mensuales.  
 
 > **Consejo:** antes de comprar, verifica si el ETF está registrado en la **[CVM](https://www.cvm.gov.br)** y si el prospecto está disponible para consulta.
 
 ## Estrategias simples con ETFs
 
-- **Diversificación automática:** combina un ETF de acciones (ej.: BOVA11) con uno de renta fija (ej.: IMAB11) en proporciones 70/30 o 60/40, según tu perfil.  
+- **Diversificación automática:** combina un ETF de acciones (ej.: un ETF global) con uno de bonos (ej.: un ETF de bonos) en proporciones 70/30 o 60/40, según tu perfil.  
 - **Rebalanceo periódico:** cada 6 o 12 meses, ajusta las proporciones para mantener la estrategia original.  
-- **Aporte programado:** usa la función de compra automática del corredor para aplicar R$500 cada mes, reduciendo el riesgo de timing del mercado.  
+- **Aporte programado:** usa la función de compra automática del corredor para aplicar €90 cada mes, reduciendo el riesgo de timing del mercado.  
 
 ![Estratégias simples com ETFs](/images/posts/etfs-o-que-sao-e-como-investir-de-forma-simples-e-rentavel-6.webp)
 
@@ -93,7 +93,7 @@ Si, en [cambio](/es/glossario/es-cambio), hubieras colocado el mismo monto en un
 
 1. **Elige el ETF** que más se ajuste a tu objetivo (acciones, renta fija, sectores).  
 2. **Abre la cuenta** en un corredor que ofrezca herramientas de seguimiento, como reportes de posición y gráficos.  
-3. **Define un aporte** – comienza con R$500 o menos y aumenta gradualmente según tu presupuesto lo permita.  
+3. **Define un aporte** – comienza con €90 o menos y aumenta gradualmente según tu presupuesto lo permita.  
 4. **Monitorea** el desempeño mensualmente y ajusta la asignación si tu situación financiera cambia.  
 
 Recuerda que la inversión es una maratón, no una carrera de 100 m. Evalúa si tiene sentido para tu perfil, diversifica y mantén el foco a largo plazo.
@@ -101,4 +101,3 @@ Recuerda que la inversión es una maratón, no una carrera de 100 m. Evalúa s
 ---
 
 **Para seguir tus inversiones en un solo lugar, [prueba FinMoovi gratis por 7 días](https://finmoovi.com) — multi‑moneda, reportes inteligentes y 100 % offline.**
-<!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"ETFs: qué son y cómo invertir de forma simple y rentable","step":[{"@type":"HowToStep","position":1,"name":"Abre una cuenta en un corredor – elige uno que ofrezca comisión de corretaje cero o reducida para ETFs.","text":"Abre una cuenta en un corredor – elige uno que ofrezca comisión de corretaje cero o reducida para ETFs."},{"@type":"HowToStep","position":2,"name":"Define el objetivo – si el foco es a largo plazo, un ETF de acciones puede ser adecuado; para renta fija, busca ETFs que sigan el CDI o el Tesoro Selic.","text":"Define el objetivo – si el foco es a largo plazo, un ETF de acciones puede ser adecuado; para renta fija, busca ETFs que sigan el CDI o el Tesoro Selic."},{"@type":"HowToStep","position":3,"name":"Elabora un plan de aporte – por ejemplo, invertir R$500 cada mes en un ETF de acciones brasileñas.","text":"Elabora un plan de aporte – por ejemplo, invertir R$500 cada mes en un ETF de acciones brasileñas."},{"@type":"HowToStep","position":4,"name":"Realiza la orden de compra – selecciona el ticker (código) del ETF, indica la cantidad y confirma la operación.","text":"Realiza la orden de compra – selecciona el ticker (código) del ETF, indica la cantidad y confirma la operación."},{"@type":"HowToStep","position":5,"name":"Sigue el desempeño – usa reportes mensuales o una app de finanzas para ver cómo evoluciona tu inversión.","text":"Como começar a investir"},{"@type":"HowToStep","position":6,"name":"Elige el ETF que más se ajuste a tu objetivo (acciones, renta fija, sectores).","text":"Elige el ETF que más se ajuste a tu objetivo (acciones, renta fija, sectores)."},{"@type":"HowToStep","position":7,"name":"Abre la cuenta en un corredor que ofrezca herramientas de seguimiento, como reportes de posición y gráficos.","text":"Abre la cuenta en un corredor que ofrezca herramientas de seguimiento, como reportes de posición y gráficos."},{"@type":"HowToStep","position":8,"name":"Define un aporte – comienza con R$500 o menos y aumenta gradualmente según tu presupuesto lo permita.","text":"Define un aporte – comienza con R$500 o menos y aumenta gradualmente según tu presupuesto lo permita."}]} -->
