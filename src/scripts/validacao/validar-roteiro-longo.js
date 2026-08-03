@@ -36,6 +36,7 @@ import {
 import {
   EXEMPLO_DE_MAPA, EXEMPLO_DE_ABERTURA, EXEMPLO_DE_CAPITULO, EXEMPLO_DE_FECHO,
   EXEMPLO_DE_CHAMADA, EXEMPLO_PARA_COMPARAR,
+  buildPromptMapa, buildPromptAbertura, buildPromptCapitulo, buildPromptChamada, buildPromptFecho,
 } from '../youtube/roteiro-longo.js';
 import { BORDAO } from '../youtube/lib/schema-short.js';
 
@@ -355,6 +356,56 @@ const roteiroBom = {
   mesmoNumero.capitulos[1].numeroChave = 260;
   const v = validarLongo(mesmoNumero);
   ok('dois capítulos à volta do mesmo número são apanhados', !v.ok && v.erros.some((e) => /mesmo número/.test(e)), v.erros.join(' | '));
+}
+
+// ═══ 6. CADA TRAVA ESTÁ ESCRITA NO PROMPT QUE A DEVIA ENSINAR ════════════════
+console.log('\n6️⃣  CADA TRAVA ESTÁ ESCRITA NO PROMPT QUE A DEVIA ENSINAR');
+console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o prompt nunca a proibiu)\n');
+
+{
+  const tema = { term: 'tema de prova', angle: 'ângulo de prova', definition: '', body: '' };
+  const prompts = {
+    mapa: buildPromptMapa(tema, []),
+    abertura: buildPromptAbertura(tema, EXEMPLO_DE_MAPA, []),
+    capitulo: buildPromptCapitulo(tema, EXEMPLO_DE_MAPA, 0, ''),
+    chamada: buildPromptChamada(tema, EXEMPLO_DE_MAPA, ''),
+    fecho: buildPromptFecho(tema, EXEMPLO_DE_MAPA, ''),
+  };
+
+  /**
+   * Cada linha é: uma trava que existe no código, e a palavra que TEM de aparecer no
+   * prompt para quem escreve saber dela. Se alguém acrescentar uma trava sem ensinar
+   * a regra, esta prova fica vermelha — que é exatamente o que faltou nas quinze
+   * ocorrências anteriores deste defeito.
+   */
+  const alinhamento = [
+    ['percentagem proibida', ['capitulo', 'abertura', 'fecho', 'mapa'], /percentagem/i],
+    ['rendimento sem ficha', ['capitulo', 'abertura', 'fecho', 'mapa'], /prometer rendimento/i],
+    ['soma tem de bater', ['capitulo', 'mapa'], /soma/i],
+    ['não rebaixar o dinheiro', ['capitulo', 'abertura', 'fecho'], /moedinha|rebaixe o dinheiro/i],
+    ['brindes que não existem', ['capitulo', 'chamada'], /planilha/i],
+    ['diga "vídeo", nunca "Short"', ['capitulo', 'abertura', 'fecho'], /nunca "Short"/i],
+    ['o pedido é uma vez só', ['capitulo', 'abertura'], /NÃO PEÇA NADA|Não peça NADA/],
+    ['o bordão só no fecho', ['capitulo', 'abertura'], /bordão/i],
+    ['o bordão é a última frase', ['fecho'], /última frase do vídeo é o bordão|assinar/i],
+    ['o fecho não cita fonte', ['fecho'], /NÃO CITA FONTE/],
+    ['não prometer o próximo vídeo', ['fecho', 'mapa'], /pr[óo]ximo v[íi]deo/i],
+    ['a capa é pergunta e cabe na tela', ['abertura'], /PERGUNTA que dói/],
+    ['o título de capítulo não é genérico', ['mapa'], /Introdução/],
+    ['a chamada diz FINMOOVI', ['chamada'], /FINMOOVI/],
+    ['o capítulo abre com pergunta', ['capitulo'], /PERGUNTA que dói/],
+    ['a demonstração nomeia o app', ['capitulo'], /FinMoovi/],
+  ];
+
+  for (const [nome, onde, agulha] of alinhamento) {
+    const faltam = onde.filter((p) => !agulha.test(prompts[p]));
+    ok(`"${nome}" está escrito no(s) prompt(s): ${onde.join(', ')}`, faltam.length === 0, `falta em: ${faltam.join(', ')}`);
+  }
+
+  // E o inverso, que é o outro lado da mesma moeda: o prompt não pode ORDENAR o que a
+  // trava pune. O molde da chamada é o caso vivo — ele está no prompt E tem de passar.
+  const v = validarChamada(EXEMPLO_DE_CHAMADA);
+  ok('o molde que o prompt da chamada manda usar PASSA na trava da chamada', v.ok, v.erros.join(' | '));
 }
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════

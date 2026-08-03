@@ -202,6 +202,25 @@ export function valoresDaFrase(frase) {
 
 export const contarPalavras = (txt) => String(txt || '').trim().split(/\s+/).filter(Boolean).length;
 
+/**
+ * A QUEIXA DE TAMANHO DIZ QUANTAS PALAVRAS FALTAM OU SOBRAM — e isso não é cosmética.
+ * MEDIDO na 1ª corrida real (04/08): o capítulo 2 veio com 266 palavras, depois 252,
+ * depois 242, e esgotou as tentativas a DOIS do teto. Ele estava a convergir às
+ * cegas, porque a queixa só dizia a faixa. Dizer-lhe "corte 26 palavras" transforma
+ * três tentativas de adivinha numa instrução que se cumpre à primeira.
+ * ⚠️ A expressão "palavras — o orçamento" tem de continuar aqui: é por ela que o
+ * corretivo reconhece a queixa de tamanho e a SUBSTITUI em vez de a acumular (senão
+ * "curta demais" e "longa demais" chegam juntas e não há como acertar).
+ */
+function queixaDeTamanho(onde, n, faixa) {
+  const alvo = Math.round((faixa.min + faixa.max) / 2);
+  const ajuste = n > faixa.max
+    ? `**CORTE ${n - faixa.max} palavras** (o ideal é ficar perto de ${alvo}).`
+    : `**ACRESCENTE ${faixa.min - n} palavras** (o ideal é ficar perto de ${alvo}).`;
+  return `${onde}: ${n} palavras — o orçamento deste bloco é ${faixa.min} a ${faixa.max} `
+    + `(≈${Math.round(faixa.min / PALAVRAS_POR_SEGUNDO)}-${Math.round(faixa.max / PALAVRAS_POR_SEGUNDO)}s). ${ajuste}`;
+}
+
 export const frasesDe = (txt) => String(txt || '').split(/(?<=[.!?…])\s+/).map((f) => f.trim()).filter(Boolean);
 
 const soPalavras = (s) => semAcento(s).replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
@@ -432,7 +451,7 @@ export function validarAbertura(fala, { promessa = '', exemploParaComparar = '' 
 
   const n = contarPalavras(txt);
   if (n < ORCAMENTO.abertura.min || n > ORCAMENTO.abertura.max) {
-    erros.push(`abertura: ${n} palavras — o orçamento deste bloco é ${ORCAMENTO.abertura.min} a ${ORCAMENTO.abertura.max} (≈${Math.round(ORCAMENTO.abertura.min / PALAVRAS_POR_SEGUNDO)}-${Math.round(ORCAMENTO.abertura.max / PALAVRAS_POR_SEGUNDO)}s)`);
+    erros.push(queixaDeTamanho('abertura', n, ORCAMENTO.abertura));
   }
 
   const frases = frasesDe(txt);
@@ -501,7 +520,7 @@ export function validarCapitulo(cap, indice, { plano = {}, exemploParaComparar =
 
   const palavras = contarPalavras(fala);
   if (palavras < ORCAMENTO.capitulo.min || palavras > ORCAMENTO.capitulo.max) {
-    erros.push(`${onde}: ${palavras} palavras — o orçamento de um capítulo é ${ORCAMENTO.capitulo.min} a ${ORCAMENTO.capitulo.max} (≈${Math.round(ORCAMENTO.capitulo.min / PALAVRAS_POR_SEGUNDO)}-${Math.round(ORCAMENTO.capitulo.max / PALAVRAS_POR_SEGUNDO)}s)`);
+    erros.push(queixaDeTamanho(onde, palavras, ORCAMENTO.capitulo));
   }
 
   // A PERGUNTA que abre o capítulo é mesmo uma pergunta.
@@ -563,7 +582,7 @@ export function validarChamada(fala) {
 
   const n = contarPalavras(txt);
   if (n < ORCAMENTO.chamada.min || n > ORCAMENTO.chamada.max) {
-    erros.push(`chamada: ${n} palavras — o orçamento deste bloco é ${ORCAMENTO.chamada.min} a ${ORCAMENTO.chamada.max}. É um recado rápido, não um capítulo.`);
+    erros.push(`${queixaDeTamanho('chamada', n, ORCAMENTO.chamada)} É um recado rápido, não um capítulo.`);
   }
   if (!/finmoovi/i.test(txt)) erros.push('chamada: não diz FINMOOVI — é a palavra que a pessoa tem de escrever no comentário');
   if (!PALAVRAS_DE_CHAMADA.test(txt)) erros.push('chamada: não pede nada — é o único bloco do vídeo em que se pede, e ele tem de pedir');
@@ -591,7 +610,7 @@ export function validarFecho(fala, { promessa = '', exemploParaComparar = '' } =
 
   const n = contarPalavras(txt);
   if (n < ORCAMENTO.fecho.min || n > ORCAMENTO.fecho.max) {
-    erros.push(`fecho: ${n} palavras — o orçamento deste bloco é ${ORCAMENTO.fecho.min} a ${ORCAMENTO.fecho.max}`);
+    erros.push(queixaDeTamanho('fecho', n, ORCAMENTO.fecho));
   }
 
   // O BORDÃO, à letra e no fim. A comparação é por palavras sem acento nem pontuação:

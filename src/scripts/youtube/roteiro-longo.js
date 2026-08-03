@@ -240,7 +240,8 @@ const REGRAS_DE_NUMERO = `════════ OS NÚMEROS — a regra mais 
 ⛔ **PROIBIDO prometer rendimento** ("rende tanto", "o dinheiro trabalha e vira tanto"). Nada de juros, Selic, CDI, Tesouro ou poupança com valor colado.
 ✅ **PERMITIDO — e é isto que prende:** os números que o NARRADOR conta que somou, pagou ou viu na tela. Redondos, modestos, do dia a dia.
 ✅ **A SOMA TEM DE BATER.** Se você disser as parcelas, o total é a soma delas, sem arredondar para outro valor. O computador confere isso também.
-✅ Números por extenso na fala ("quinhentos reais"), nunca símbolos nem algarismos.`;
+✅ Números por extenso na fala ("quinhentos reais"), nunca símbolos nem algarismos.
+⛔ **NÃO REBAIXE O DINHEIRO.** Cem reais NÃO é "moedinha", "trocadinho", "dinheirinho", "mixaria", "migalha" nem "centavos". Se o valor parece pequeno, diga que PARECE pequeno — mas chame-o pelo nome. Diminutivo tira o valor à coisa que o vídeo está a tentar valorizar, e o computador confere.`;
 
 const REGRAS_DE_FALA = `════════ COMO A FALA FLUI ════════
 - **PONTUAÇÃO É RESPIRAÇÃO, NÃO GRAMÁTICA.** Quem lê o texto é uma VOZ: ela PARA em cada vírgula e em cada ponto.
@@ -590,7 +591,7 @@ function acumular(exigencias, novos) {
  * queixa em cima. A limpeza corre ANTES da validação de propósito — o que o código
  * sabe consertar (algarismos, travessões, dois-pontos) nunca pode custar uma tentativa.
  */
-async function gerarBloco({ nome, prompt, validar, tema, tentativas = 3, campos = ['fala'] }) {
+async function gerarBloco({ nome, prompt, validar, tema, tentativas = 5, campos = ['fala'] }) {
   const exigencias = [];
   let corretivo = '';
   let ultimo = null;
@@ -661,13 +662,59 @@ const primeirasFrases = (txt, n = 2) => frasesDe(txt).slice(0, n).join(' ');
 
 const falaDoCapitulo = (c) => PARTES_DO_CAPITULO.map((p) => String((c && c[p]) || '').trim()).filter(Boolean).join(' ');
 
-export async function gerarLongo(t, { proibidas = [], polir = true } = {}) {
+/**
+ * ═══ O CADERNO — cada bloco aprovado é gravado no instante em que passa ═══
+ *
+ * ⚠️ ISTO NASCEU DE UMA FALHA REAL, na 1ª corrida (04/08/2026). O mapa passou à
+ * primeira, a abertura à primeira, o capítulo 1 à primeira — e o capítulo 2 esgotou
+ * as tentativas por DUAS palavras acima do teto. **Todo o trabalho pago até ali foi
+ * deitado fora**, e a corrida seguinte teve de o comprar outra vez.
+ *
+ * É a contradição da própria ideia que este ficheiro defende: a lição das âncoras
+ * (§26.3 L1) diz que se tem de poder corrigir UM bloco sem partir os outros. Sem
+ * caderno, um bloco reprovado partia todos.
+ *
+ * Agora cada bloco aprovado vai para o disco assim que passa. Voltar a correr o
+ * comando continua de onde ficou e só paga o que falta. `--recomecar` deita fora o
+ * caderno de propósito, para quando se quer um vídeo novo do zero.
+ */
+function lerCaderno(slug, tema) {
+  if (args.recomecar) return null;
+  const p = join(OUTPUT_DIR, `${slug}.caderno.json`);
+  if (!existsSync(p)) return null;
+  try {
+    const c = JSON.parse(readFileSync(p, 'utf-8'));
+    // ⚠️ O caderno só serve se for do MESMO tema. Aproveitar o mapa de um tema para
+    // outro produziria um vídeo cujos capítulos não falam do que a capa promete —
+    // e ninguém daria por isso até o ver.
+    if (c && c.tema === tema) return c;
+    console.log('   ℹ️ há um caderno guardado, mas de OUTRO tema — vai ser ignorado');
+  } catch { /* caderno ilegível: começa do zero */ }
+  return null;
+}
+
+function gravarCaderno(slug, caderno) {
+  mkdirSync(OUTPUT_DIR, { recursive: true });
+  writeFileSync(join(OUTPUT_DIR, `${slug}.caderno.json`), JSON.stringify(caderno, null, 2), 'utf-8');
+}
+
+export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'longo-piloto' } = {}) {
   const temaTexto = `${t.term} ${t.angle || ''}`;
+  const caderno = lerCaderno(slug, t.term) || { tema: t.term, capitulos: [] };
+  const guardar = () => gravarCaderno(slug, caderno);
 
   // ── ANDAR 0 ────────────────────────────────────────────────────────────────
   console.log('\n🗺️  ANDAR 0 — O MAPA\n');
-  const { mapa, tentativa: tMapa } = await gerarMapa(t, { proibidas });
-  console.log(`   ✅ mapa aprovado na tentativa ${tMapa}`);
+  let mapa = caderno.mapa;
+  if (mapa) {
+    console.log('   ♻️ mapa retomado do caderno (não se paga duas vezes pela mesma coisa)');
+  } else {
+    const feito = await gerarMapa(t, { proibidas });
+    mapa = feito.mapa;
+    caderno.mapa = mapa;
+    guardar();
+    console.log(`   ✅ mapa aprovado na tentativa ${feito.tentativa}`);
+  }
   console.log(`   promessa: "${mapa.promessa}"`);
   mapa.capitulos.forEach((c, i) => {
     console.log(`   ${i + 1}. ${c.titulo}  ·  número-chave ${c.numeroChave}${c.somaDe ? ` (= ${c.somaDe.join(' + ')})` : ''}`);
@@ -680,13 +727,20 @@ export async function gerarLongo(t, { proibidas = [], polir = true } = {}) {
   const numerosUsados = [];
   const jaDito = [];
 
-  const abertura = await gerarBloco({
-    nome: 'abertura',
-    prompt: buildPromptAbertura(t, mapa, proibidas),
-    tema: temaTexto,
-    validar: (o) => validarAbertura(o.fala, { promessa: mapa.promessa, exemploParaComparar: EXEMPLO_PARA_COMPARAR }),
-  });
-  console.log(`   ✅ abertura — ${abertura._palavras} palavras (tentativa ${abertura._tentativa})`);
+  let abertura = caderno.abertura;
+  if (abertura) {
+    console.log(`   ♻️ abertura retomada do caderno — ${contarPalavras(abertura.fala)} palavras`);
+  } else {
+    abertura = await gerarBloco({
+      nome: 'abertura',
+      prompt: buildPromptAbertura(t, mapa, proibidas),
+      tema: temaTexto,
+      validar: (o) => validarAbertura(o.fala, { promessa: mapa.promessa, exemploParaComparar: EXEMPLO_PARA_COMPARAR }),
+    });
+    caderno.abertura = { fala: abertura.fala };
+    guardar();
+    console.log(`   ✅ abertura — ${abertura._palavras} palavras (tentativa ${abertura._tentativa})`);
+  }
   jaDito.push(frasesDe(abertura.fala)[0]);
 
   const capitulos = [];
@@ -701,16 +755,23 @@ export async function gerarLongo(t, { proibidas = [], polir = true } = {}) {
       comparacoesUsadas: [],
       jaDito,
     });
-    const cap = await gerarBloco({
-      nome: `capítulo ${i + 1}`,
-      prompt: buildPromptCapitulo(t, mapa, i, ancora),
-      tema: temaTexto,
-      campos: PARTES_DO_CAPITULO,
-      validar: (o) => validarCapitulo(o, i, { plano, exemploParaComparar: EXEMPLO_PARA_COMPARAR }),
-    });
-    const completo = { ...Object.fromEntries(PARTES_DO_CAPITULO.map((p) => [p, cap[p]])), titulo: plano.titulo, numeroChave: plano.numeroChave, somaDe: plano.somaDe };
+    let completo = caderno.capitulos[i];
+    if (completo) {
+      console.log(`   ♻️ capítulo ${i + 1} retomado do caderno — ${contarPalavras(falaDoCapitulo(completo))} palavras`);
+    } else {
+      const cap = await gerarBloco({
+        nome: `capítulo ${i + 1}`,
+        prompt: buildPromptCapitulo(t, mapa, i, ancora),
+        tema: temaTexto,
+        campos: PARTES_DO_CAPITULO,
+        validar: (o) => validarCapitulo(o, i, { plano, exemploParaComparar: EXEMPLO_PARA_COMPARAR }),
+      });
+      completo = { ...Object.fromEntries(PARTES_DO_CAPITULO.map((p) => [p, cap[p]])), titulo: plano.titulo, numeroChave: plano.numeroChave, somaDe: plano.somaDe };
+      caderno.capitulos[i] = completo;
+      guardar();
+      console.log(`   ✅ capítulo ${i + 1} — ${cap._palavras} palavras (tentativa ${cap._tentativa})`);
+    }
     capitulos.push(completo);
-    console.log(`   ✅ capítulo ${i + 1} — ${cap._palavras} palavras (tentativa ${cap._tentativa})`);
 
     numerosUsados.push(plano.numeroChave, ...(plano.somaDe || []));
     jaDito.push(frasesDe(completo.pergunta)[0]);
@@ -718,29 +779,43 @@ export async function gerarLongo(t, { proibidas = [], polir = true } = {}) {
     deQuem = `o capítulo ${i + 1}`;
   }
 
-  const chamada = await gerarBloco({
-    nome: 'chamada',
-    prompt: buildPromptChamada(t, mapa, blocoDaAncora({ paragrafoAnterior: ultimasFrases(anterior), deQuem, numerosUsados, jaDito })),
-    tema: temaTexto,
-    validar: (o) => validarChamada(o.fala),
-  });
-  console.log(`   ✅ chamada — ${chamada._palavras} palavras (tentativa ${chamada._tentativa})`);
+  let chamada = caderno.chamada;
+  if (chamada) {
+    console.log(`   ♻️ chamada retomada do caderno — ${contarPalavras(chamada.fala)} palavras`);
+  } else {
+    chamada = await gerarBloco({
+      nome: 'chamada',
+      prompt: buildPromptChamada(t, mapa, blocoDaAncora({ paragrafoAnterior: ultimasFrases(anterior), deQuem, numerosUsados, jaDito })),
+      tema: temaTexto,
+      validar: (o) => validarChamada(o.fala),
+    });
+    caderno.chamada = { fala: chamada.fala };
+    guardar();
+    console.log(`   ✅ chamada — ${chamada._palavras} palavras (tentativa ${chamada._tentativa})`);
+  }
 
-  const fecho = await gerarBloco({
-    nome: 'fecho',
-    prompt: buildPromptFecho(t, mapa, blocoDaAncora({
-      paragrafoAnterior: ultimasFrases(anterior),
-      deQuem: `o capítulo ${mapa.capitulos.length}`,
-      numerosUsados,
-      jaDito,
-    })),
-    tema: temaTexto,
-    validar: (o) => validarFecho(o.fala, {
-      promessa: mapa.promessa,
-      exemploParaComparar: EXEMPLO_PARA_COMPARAR.replace(BORDAO, ''),
-    }),
-  });
-  console.log(`   ✅ fecho — ${fecho._palavras} palavras (tentativa ${fecho._tentativa})`);
+  let fecho = caderno.fecho;
+  if (fecho) {
+    console.log(`   ♻️ fecho retomado do caderno — ${contarPalavras(fecho.fala)} palavras`);
+  } else {
+    fecho = await gerarBloco({
+      nome: 'fecho',
+      prompt: buildPromptFecho(t, mapa, blocoDaAncora({
+        paragrafoAnterior: ultimasFrases(anterior),
+        deQuem: `o capítulo ${mapa.capitulos.length}`,
+        numerosUsados,
+        jaDito,
+      })),
+      tema: temaTexto,
+      validar: (o) => validarFecho(o.fala, {
+        promessa: mapa.promessa,
+        exemploParaComparar: EXEMPLO_PARA_COMPARAR.replace(BORDAO, ''),
+      }),
+    });
+    caderno.fecho = { fala: fecho.fala };
+    guardar();
+    console.log(`   ✅ fecho — ${fecho._palavras} palavras (tentativa ${fecho._tentativa})`);
+  }
 
   let roteiro = {
     tema: t.term,
@@ -881,7 +956,8 @@ if (executadoDireto) {
     process.exit(0);
   }
 
-  const { roteiro, mapa, global } = await gerarLongo(t, { proibidas, polir: !args['sem-polir'] });
+  const slugDoVideo = String(args.slug && args.slug !== true ? args.slug : 'longo-piloto');
+  const { roteiro, mapa, global } = await gerarLongo(t, { proibidas, polir: !args['sem-polir'], slug: slugDoVideo });
 
   if (!global.ok) {
     console.log('❌ o vídeo NÃO passou nas travas globais:');
