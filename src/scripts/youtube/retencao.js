@@ -49,10 +49,12 @@ const ONLY_VIDEO = args.video && args.video !== true ? String(args.video) : null
 function log(msg) { console.log(msg); }
 
 /**
- * ⚠️ Cópia deliberada do getAccessToken do upload-short.js, e NÃO um import.
- * Aquele ficheiro chama `main()` no corpo do módulo — importá-lo aqui dispararia
- * um UPLOAD. Enquanto ele não for refatorado, duplicar 20 linhas de leitura é o
- * mal menor face a publicar um vídeo por acidente ao medir retenção.
+ * ⚠️ DÍVIDA CONHECIDA: isto é uma cópia do `getAccessToken` do upload-short.js.
+ * A razão original desapareceu no mesmo dia — aquele ficheiro passou a só correr
+ * quando é chamado pelo nome, e já se deixa importar em segurança (foi assim que
+ * o corretor de descrições ficou a usar as funções do robô em vez de as copiar).
+ * Fica a cópia por hoje para não mexer no que já está provado; quando alguém
+ * voltar aqui, a mudança certa é importar e apagar estas 20 linhas.
  */
 async function getAccessToken() {
   const clientId = process.env.YOUTUBE_CLIENT_ID;

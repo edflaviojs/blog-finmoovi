@@ -23,6 +23,7 @@
 
 import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { getTitlePatterns } from '../lib/youtube-marketing.js';
 // ⚠️ A descrição passa a LER a licença da trilha em vez de alguém se lembrar dela.
 // Ver `lib/musica.js`: se a faixa exigir crédito, ele entra sozinho; se não exigir,
@@ -577,7 +578,22 @@ async function main() {
   log(`   ${url}`);
 }
 
-main().catch((err) => {
-  console.error(`\n❌ ${err.message}`);
-  process.exit(1);
-});
+/**
+ * ♦ 03/08/2026 — SÓ CORRE QUANDO É CHAMADO PELO NOME.
+ *
+ * Antes, o `main()` corria no corpo do módulo: bastava alguém IMPORTAR este
+ * ficheiro para PUBLICAR UM VÍDEO sem querer. Isso obrigou a duplicar código em
+ * dois sítios (o medidor de retenção copiou o `getAccessToken`) — e duplicar é o
+ * modo de falha crónico deste repositório. Com esta guarda, o corretor de
+ * descrições usa as MESMAS funções que o robô usa, em vez de uma cópia que
+ * amanhã diverge.
+ */
+const executadoDiretamente = process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url;
+if (executadoDiretamente) {
+  main().catch((err) => {
+    console.error(`\n❌ ${err.message}`);
+    process.exit(1);
+  });
+}
+
+export { tryLlm, deterministicMeta, buildMetadata, getAccessToken, resolveToolUrl, respostaCortada };
