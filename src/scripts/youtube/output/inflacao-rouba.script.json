@@ -1,0 +1,212 @@
+{
+  "slug": "inflacao-rouba",
+  "term": "A inflação te rouba R$ 2 mil por ano — sem você perceber",
+  "category": "mindset",
+  "keyword": "inflação",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você percebe quando a *inflação encolhe seu salário* sem ninguém cortar um real?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "fumaca",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você percebe quando a inflação encolhe seu salário sem ninguém cortar um real? É quando o dinheiro passa a comprar menos.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "inflação",
+          "visual": {
+            "type": "statement",
+            "text": "Poder de compra cai"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        },
+        {
+          "anchor": "comprar",
+          "visual": {
+            "type": "icon",
+            "icon": "wallet"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "E aí a compra do mês pesa, o remédio fica mais caro, a conta sobe. Você trabalha o mesmo tanto, mas leva menos coisa pra casa.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "pesa",
+          "visual": {
+            "type": "icon",
+            "icon": "coins"
+          }
+        },
+        {
+          "anchor": "conta",
+          "visual": {
+            "type": "statement",
+            "text": "Tudo pesa mais"
+          },
+          "sfx": "ding"
+        },
+        {
+          "anchor": "menos",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E é aí que vem o susto. Num salário de quatro mil, são duzentos reais que somem todo mês. No ano, dois mil evaporam do seu bolso.",
+      "durationSec": 10.4,
+      "shots": [
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200"
+          }
+        },
+        {
+          "anchor": "dois",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 2000,
+            "prefix": "R$"
+          }
+        },
+        {
+          "anchor": "evaporam",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei isso no FinMoovi e ele me mostrou o dinheiro sumindo mês a mês. Ver aquele valor crescendo na tela deu até um aperto.",
+      "durationSec": 9.6,
+      "shots": [
+        {
+          "anchor": "isso",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Cálculo da perda anual"
+          }
+        },
+        {
+          "anchor": "sumindo",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        },
+        {
+          "anchor": "crescendo",
+          "visual": {
+            "type": "chart",
+            "text": "Perda mês a mês"
+          },
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver quanto isso pesa no seu caso? Comenta FINMOOVI aqui que eu te mando o app grátis.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "quanto",
+          "visual": {
+            "type": "statement",
+            "text": "Descubra sua perda"
+          }
+        },
+        {
+          "anchor": "mando",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Pois é, o seu salário encolhe caladinho, sem ninguém mexer nele. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 6.9,
+      "shots": [
+        {
+          "anchor": "encolhe",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "fumaca"
+          }
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "statement",
+            "text": "Controle seu dinheiro"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "shield"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Comente e receba grátis",
+    "target": "app"
+  },
+  "totalDurationSec": 51.9
+}
