@@ -1,0 +1,216 @@
+{
+  "slug": "erros-cartao-credito",
+  "term": "3 erros de cartão que te custam R$ 500/mês",
+  "category": "controle",
+  "keyword": "cartão",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Sabe quais *três erros no cartão tiram quinhentos reais* do seu bolso todo mês?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "mochila-pedras",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Sabe quais três erros no cartão tiram quinhentos reais do seu bolso todo mês? A conta cresce caladinha e você acaba pagando sem ver.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "cartão",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "cresce",
+          "visual": {
+            "type": "statement",
+            "text": "A conta cresce escondida"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "É quando você paga só uma parte da fatura, divide a conta em muitas vezes e ainda saca dinheiro no cartão.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "vezes",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "money"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "E cada um pesa. O primeiro leva cento e cinquenta reais, o outro duzentos, e o saque mais cento e cinquenta. Juntando tudo, bate nos quinhentos.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "pesa",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 200,
+            "prefix": "R$"
+          },
+          "sfx": "coin"
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "kaching"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei isso no FinMoovi e ele me mostrou que o saque no cartão ficou no topo da lista. Foi o que mais pesou.",
+      "durationSec": 9.2,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "dashboard",
+            "note": "Resumo financeiro com os gastos do cartão"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "saque",
+          "visual": {
+            "type": "app",
+            "app": "cartoes",
+            "note": "Lista dos custos do cartão em destaque"
+          }
+        },
+        {
+          "anchor": "pesou",
+          "visual": {
+            "type": "statement",
+            "text": "Saque foi o maior peso"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver o seu? Comenta FINMOOVI aqui que eu te mando o app grátis.",
+      "durationSec": 5.4,
+      "shots": [
+        {
+          "anchor": "Quer",
+          "visual": {
+            "type": "statement",
+            "text": "Veja seus gastos"
+          }
+        },
+        {
+          "anchor": "FINMOOVI",
+          "visual": {
+            "type": "statement",
+            "text": "Digite FINMOOVI"
+          },
+          "sfx": "typewriter"
+        },
+        {
+          "anchor": "grátis",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "Então foge disso. Esses três erros juntos tiram quinhentos reais do seu bolso todo mês. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "três",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
+          }
+        },
+        {
+          "anchor": "quinhentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 500"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle some"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Comente FINMOOVI agora",
+    "target": "app"
+  },
+  "totalDurationSec": 50.4
+}

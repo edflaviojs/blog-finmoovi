@@ -50,9 +50,9 @@
  * sfx chega ao limite (MAX_SFX_REPEATS); AVISO quando mais de 1 sfx
  * distinto se repete (≥2× cada) — a meta é NO MÁXIMO 1 som repetindo no
  * vídeo inteiro.
- * (3) MOMENTO-HISTÓRIA — AVISO leve se o vídeo tiver menos de 2 shots
- * "metaphor" — o padrão-ouro do canal é uma mini-história física narrada E
- * animada em ≥2 shots de metáfora conectados (ex.: bola-neve → avalanche).
+ * (3) ♦ o aviso MOMENTO-HISTÓRIA foi removido em 03/08/2026 — no padrão novo a
+ * metáfora não é falada e o normal é zero shots de metáfora; a imagem do vídeo
+ * vive no campo `fioCondutor` do script.
  */
 
 // Bordão oficial do canal (PRD 3b — inserir 1× por vídeo)
@@ -404,10 +404,17 @@ export function validateShortScript(script) {
 
   if (!roles.includes('beat')) errors.push('deve haver ≥1 cena "beat" (desenvolvimento)');
 
-  // --- Keyword falada no cold open (PRD 3b: garantida por código) ---
+  // --- Keyword falada no arranque ---
+  // ♦ 03/08/2026: o PRD 3b dizia "no cold open"; com a capa-pergunta o tema pode
+  // entrar só na 2ª cena (roteiro-modelo D do dono), então a janela passou a ser
+  // "hook OU a cena seguinte" — a MESMA janela da passagem 1 e do fail-fast da
+  // coreografia. É uma reversão CONSCIENTE da garantia antiga, registada no §31.
   const hook = scenes.find(s => s.role === 'hook');
-  if (hook && script.keyword && !norm(hook.narration).includes(norm(script.keyword))) {
-    errors.push('a palavra-chave precisa ser FALADA na narração da cena "hook"');
+  const idxHook = scenes.indexOf(hook);
+  const cenaSeguinte = idxHook >= 0 ? scenes[idxHook + 1] : null;
+  const narracaoDoArranque = `${hook ? hook.narration : ''} ${cenaSeguinte ? cenaSeguinte.narration : ''}`;
+  if (hook && script.keyword && !norm(narracaoDoArranque).includes(norm(script.keyword))) {
+    errors.push('a palavra-chave precisa ser FALADA na narração do arranque (cena "hook" ou a seguinte)');
   }
 
   // --- Bordão 1× no vídeo inteiro ---
@@ -564,14 +571,12 @@ export function validateShortScript(script) {
     if (count > 1) warnings.push(`ícone "${icon}" repetido ${count}× no vídeo (varie — há ${ICONS.length} ícones no catálogo)`);
   });
 
-  // --- Momento-história (regra do dono 22/07 — o padrão-ouro do canal: uma
-  // mini-história física narrada E animada em ≥2 shots "metaphor" conectados,
-  // ex.: bola-neve → avalanche. Catálogo de metáforas é pequeno, então isso é
-  // SEMPRE aviso, nunca erro) ---
-  const metaphorShotsCount = allShotsInOrder.filter(sh => sh && sh.visual && sh.visual.type === 'metaphor').length;
-  if (metaphorShotsCount < 2) {
-    warnings.push('menos de 2 shots "metaphor" no vídeo — o padrão-ouro do canal é o "momento-história": uma mini-história física narrada E animada em ≥2 shots de metáfora conectados (ex.: bola-neve → avalanche)');
-  }
+  // --- ♦ Aqui vivia o aviso "menos de 2 shots metaphor" (o "momento-história" de
+  // 22/07). REMOVIDO em 03/08/2026: no padrão aprovado pelo dono a metáfora não
+  // precisa de ser falada, logo o normal passou a ser ZERO shots de metáfora — o
+  // aviso ia disparar todos os dias pregando o estilo antigo, e aviso diário falso
+  // é ruído que esconde os verdadeiros. A imagem do vídeo vive no campo
+  // `fioCondutor` do script (capa + música). ---
 
   // --- Shots "app" (regra do dono 21/07: "em todos os shorts colocar ao menos
   // 2 b-rolls do nosso app") ---

@@ -13,7 +13,7 @@
     {
       "id": "erros-cartao-credito",
       "theme": "3 erros de cartão que te custam R$ 500/mês",
-      "angle": "Mostrar 3 erros comuns (rotativo, mínimo, parcelamento longo) com números reais de quanto cada um custa",
+      "angle": "Nomear 3 erros DIFERENTES entre si, com palavras do dia a dia: pagar só o mínimo (o resto fica rendendo juros contra você) · parcelar a fatura em muitas vezes · sacar dinheiro no cartão (o mais caro de todos, e quase ninguém sabe). Dizer quanto cada um pesa.",
       "pillar": "controle",
       "source": "editorial",
       "glossaryRef": "cartao-de-credito",

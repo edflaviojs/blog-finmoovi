@@ -31,7 +31,7 @@ import { BORDAO, METAPHORS, longestSharedWordRun } from './lib/schema-short.js';
  * (Não há ciclo: `coreografia.js` só importa este ficheiro dentro do bloco de
  * execução direta, e por importação dinâmica.)
  */
-import { keywordFalada } from './coreografia.js';
+import { keywordFalada, MAX_PALAVRAS_CAPA } from './lib/palavras.js';
 // O segundo leitor: quem arruma a FALA depois de o código garantir a VERDADE.
 import { revisarFala } from './lib/segundo-leitor.js';
 import { PERSONA, VICIOS_ESSENCIAIS, O_QUE_PRESERVAR } from './lib/voz-do-canal.js';
@@ -98,10 +98,10 @@ const cortar = (txt, max = 1500) => {
  * brotar/colher como o ÚNICO exemplo completo de fio condutor — nenhuma das outras
  * 7 imagens era sequer citada. O modelo não escolhia: copiava o único exemplo.
  *
- * Estas palavras são as MESMAS que `PALAVRAS_DO_FIO` procura na hora de validar.
- * Escrevê-las no prompt é alinhar prompt e trava — o modo de falha crónico deste
- * repositório é justamente o prompt não dizer aquilo que a trava exige. Agora as
- * 8 imagens partem em pé de igualdade.
+ * ♦ Desde 03/08/2026 estas palavras servem só ao MENU (ajudam o modelo a escolher
+ * a imagem certa para a CAPA VISUAL) — o dicionário de validação `PALAVRAS_DO_FIO`
+ * foi removido junto com as travas do fio falado. As dicas continuam para todas
+ * as imagens partirem em pé de igualdade na escolha.
  */
 const DICAS_DO_FIO = {
   'bola-neve': 'bola de neve, rolar, ladeira',
@@ -262,6 +262,11 @@ export function buildPromptNarrativa(t, proibidas, frasesRecentes, ficha = null)
 
   return `Você é ROTEIRISTA de um canal brasileiro de finanças pessoais.
 
+🇧🇷 **ESCREVA EM PORTUGUÊS DO BRASIL FALADO, e só nele.** Quem assiste é brasileiro; um jeito de falar de Portugal soa estrangeiro e a pessoa sai.
+   ✓ tela, celular, ônibus, trem, gerente, "tá", "a gente", "você"
+   ✗ ecrã, telemóvel, autocarro, comboio, "está a fazer", "tu", "casa de banho"
+   ⚠️ **"está a fazer" não existe no Brasil.** No Brasil é "está fazendo" — ou, melhor ainda na fala, "tá fazendo".
+
 ════════ QUEM ESTÁ FALANDO, E COM QUEM ════════
 ${PERSONA}
 Ele não sabe o que é "rotativo", "amortizar", "drenagem" ou "estratégia". Se você usar uma palavra dessas, ele desliga.
@@ -277,32 +282,39 @@ ${O_QUE_PRESERVAR}
    ✗ "…ESVAZIANDO a mochila um pouquinho de cada vez." (o que a enche são pedras: fica mais PESADA, nunca mais vazia)
    ✓ "…pondo mais uma pedra de cada vez."
 
-SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (42 a 50 segundos).
+SUA ÚNICA TAREFA AGORA: escrever a NARRAÇÃO falada de um vídeo curto (${Math.round(MIN_PALAVRAS / 2.6)} a ${Math.round(MAX_PALAVRAS / 2.6)} segundos de fala).
 NÃO descreva imagens, ícones, sons, efeitos ou cortes. Só o texto que a voz vai falar. Outra pessoa cuida do visual depois.
 
-⚠️ TAMANHO — É POR AQUI QUE ESTE ROTEIRO MAIS FALHA. A narração INTEIRA tem de ter entre ${MIN_PALAVRAS} e ${MAX_PALAVRAS} palavras, ou seja **${porBloco} palavras em CADA um dos 6 blocos**. Conte as palavras antes de responder. Um bloco com o dobro disto reprova o roteiro todo, por melhor que esteja escrito.
+⚠️ TAMANHO — É POR AQUI QUE ESTE ROTEIRO MAIS FALHA. A narração INTEIRA tem de ter entre ${MIN_PALAVRAS} e ${MAX_PALAVRAS} palavras. **Conte as palavras antes de responder.**
+O orçamento NÃO é igual para todos, porque o bloco 1 carrega a frase da capa:
+· **bloco 1 (gancho): até ${ORCAMENTO_BLOCO1} palavras** — sendo até ${MAX_PALAVRAS_CAPA} na frase da capa e o resto na história.
+· **blocos 2 a 6: até ${ORCAMENTO_OUTROS} palavras CADA UM.**
+Isto é uma troca, não uma licença: o que o bloco 1 ganha, os outros cinco têm de dar. Somando, dá ${MAX_PALAVRAS}.
 
 TEMA: "${t.term}"${t.angle ? `\nÂNGULO: ${t.angle}` : ''}
 ${t.definition ? `DEFINIÇÃO: ${t.definition}\n` : ''}${t.body ? `MATERIAL DE APOIO:\n${cortar(t.body)}\n` : ''}${ficha ? `
 ════════ FICHA DE NÚMEROS — JÁ CALCULADA, NÃO REFAÇA A CONTA ════════
 ${ficha.texto}
 
-Estes valores foram calculados por computador com as taxas oficiais do Banco Central. São os ÚNICOS números de dinheiro que você pode dizer.
-⛔ É PROIBIDO inventar, arredondar para outro valor, ou citar qualquer taxa/rendimento que não esteja aqui em cima. Se precisar de um número que não está na ficha, escreva a frase SEM número.
+Estes valores foram calculados por computador com as taxas oficiais do Banco Central. **Toda conta de rendimento (quanto vira, quanto rende, a diferença) usa SÓ estes números**, sem arredondar para outro valor.
+⛔ É PROIBIDO citar qualquer taxa ou percentagem que não esteja aqui em cima.
+Números de HISTÓRIA (o que o narrador conta que somou ou viu na tela: "cinquenta aqui, oitenta ali") podem existir — redondos, modestos, do dia a dia — mas NUNCA prometendo rendimento.
 ` : `
-⛔ NÚMEROS: só pode citar números que apareçam no MATERIAL DE APOIO acima. Não invente valores, taxas ou rendimentos — este canal não tem como conferir o que você inventar, e um número errado no ar é pior do que nenhum número.
+⛔ NÚMEROS — este tema NÃO tem conta calculada, então:
+· PROIBIDO citar percentagem, taxa ou rendimento ("rende tanto", "vira tanto com juros") — este canal não tem como conferir, e um número financeiro errado no ar é o defeito mais perigoso que existe aqui.
+· Números de HISTÓRIA podem existir (o que o narrador conta que somou, pagou ou viu na tela do app: "somei e deu novecentos") — redondos, modestos, do dia a dia. A soma tem de bater: se você diz as parcelas, o total é a soma delas.
 `}
 ════════ A REGRA MAIOR — CADA BLOCO ABRE PEGANDO NO ANTERIOR ════════
 O vídeo é UMA fala contínua, não uma lista de frases bonitas. **As PRIMEIRAS PALAVRAS de cada bloco têm de agarrar aquilo que o bloco anterior acabou de dizer.**
 
-✗ SOLTO (foi ao ar e o dono reprovou):
-   bloco 1: "…tiram quinhentos reais do seu bolso todo mês. Qual será o maior vilão?"
-   bloco 2: "Na correria, a gente esquece de olhar a fatura e o dinheiro some."
-   Por quê: o bloco 1 pergunta quem é o vilão e o bloco 2 ignora a pergunta e começa um assunto novo. Duas frases que não se conhecem.
+✗ SOLTO (o exemplo é de OUTRO assunto de propósito):
+   bloco 2: "No fim do mês a conta de luz chega mais alta, e ninguém sabe porquê."
+   bloco 3: "Organizar o dinheiro é um hábito importante."
+   Por quê: o bloco 3 ignora a conta de luz que o 2 acabou de apontar e começa um assunto novo. Duas frases que não se conhecem.
 
 ✓ ENCADEADO (a mesma ideia, agora presa à anterior):
-   bloco 2: "O vilão escondido é a correria: você esquece de olhar a fatura e o dinheiro some."
-   Por quê: abre com "o vilão", que é a palavra que ficou no ar. Quem ouve não consegue sair no meio.
+   bloco 3: "O porquê tava no chuveiro. Vinte minutos por dia, todo dia, e a conta sobe sozinha."
+   Por quê: abre respondendo ao "porquê" que tinha ficado no ar na frase anterior. Quem ouve não consegue sair no meio.
 
 ⛔ **RETOMAR NÃO É ECOAR.** Não abra um bloco repetindo a última palavra do anterior como pergunta solta. Isso cumpre a forma e mata a fala.
    ✗ "…faz a dívida crescer." → "Crescer assim? No FinMoovi…"
@@ -310,71 +322,91 @@ O vídeo é UMA fala contínua, não uma lista de frases bonitas. **As PRIMEIRAS
    ✓ "…faz a dívida crescer." → "E é aí que ela cresce sem você ver: no FinMoovi…"
    Toda abertura de bloco é uma FRASE INTEIRA, com sujeito e verbo. Nunca uma palavra com ponto de interrogação.
 
+⛔ **A ÚNICA EXCEÇÃO A ESTA REGRA: o bloco 6 NÃO pega no bloco 5.** O convite é um pedido a quem assiste — sai da história. Se o fecho pegar nele, o vídeo acaba a falar do blog e do comentário em vez de responder à pergunta que abriu tudo. **O bloco 6 agarra o BLOCO 1.**
+   ✗ "O blog mostra que o mínimo é o que mais pesa…" (foi ao ar; o dono reprovou — o vídeo não fecha a falar do blog)
+
 ⛔ NENHUMA PALAVRA NOVA SEM PREPARAÇÃO. Não introduza um assunto que ninguém apresentou.
    ✗ "Mas não é o JUROS que te aprisiona…" — juros nunca tinha sido mencionado, cai do céu.
    ✗ "…é o PAGAMENTO MÍNIMO" dito só no último bloco, sem nunca ter aparecido antes.
    Se precisa de um conceito novo, apresente-o na frase em que ele entra.
 
-TESTE OBRIGATÓRIO: tape o bloco anterior e leia só este. Se ele fizer sentido sozinho, está SOLTO — reescreva até ele DEPENDER do anterior.
+O teste: leia os dois blocos seguidos em voz alta. Se houver um salto de assunto no meio — se quem ouve puder perguntar "espera, de onde veio isso?" — reescreva a emenda. (Uma frase curta e seca que continua o MESMO assunto não é salto: "Ela cresceu." depois da conta é emenda perfeita.)
 
 ✗ ERRADO (foi ao ar e ninguém entendeu):
    "Tesouro Direto com 100 reais, vale a pena? Se liga no que eu descobri: 100 reais todo mês, 24 vezes. É como uma pequena avalanche. Qual rendimento?"
    Por quê: "24 vezes" o quê? "avalanche" de quê? a pergunta final cai do céu. São quatro pedaços que não se conhecem.
 
-✓ CERTO (o mesmo assunto, encadeado):
-   "Todo mundo acha que cem reais não muda nada. Só que eu fiz a conta de guardar esses cem reais por dois anos seguidos… e o número me assustou. Porque não é o valor que trabalha, é o tempo."
+✓ CERTO (o mesmo assunto, encadeado — e repare que abre PERGUNTANDO e responde já):
+   "Você acha que cem reais por mês não mudam nada? Eu fiz a conta de guardar isso por dois anos seguidos… e o número me assustou. Porque quem faz o trabalho ali é o tempo."
    Por quê: a 2ª frase responde à 1ª, a 3ª explica a 2ª. Ninguém consegue sair no meio.
 
 ════════ UM VÍDEO INTEIRO, PARA VOCÊ VER A FORMA ════════
-🔥 **ESTE EXEMPLO AUTODESTRÓI-SE.** Copie a FORMA e o TOM. **Se você repetir CINCO PALAVRAS SEGUIDAS de qualquer frase abaixo, o roteiro é rejeitado** — sem exceção, e o computador confere. O canal publica todos os dias: se cada vídeo repetir estas frases, todos soam iguais.
-⛔ A imagem do exemplo — **pneu murcho** — também NÃO está na sua lista. Se "pneu" aparecer no seu texto, é rejeitado.
+🔥 **ESTE EXEMPLO AUTODESTRÓI-SE.** Copie a FORMA e o TOM. **Se você repetir SEIS PALAVRAS SEGUIDAS de qualquer frase abaixo, o roteiro é rejeitado** — sem exceção, e o computador confere. O canal publica todos os dias: se cada vídeo repetir estas frases, todos soam iguais.
+⛔ O assunto do exemplo — tarifa de pacote de conta — é de OUTRO vídeo de propósito. O SEU assunto é o TEMA lá em cima.
 
 ${EXEMPLO_DE_FORMA.map((f, i) => `  ${i + 1}. "${f}"`).join('\n')}
 
 Repare no que esse exemplo faz, porque é isso que se pede a você:
-· o assunto e a imagem estão juntos na PRIMEIRA frase, e a imagem entra comparada ("que nem"), nunca definida;
-· cada bloco abre agarrando o anterior — "o pior", "não é o grande", "esses pequenos", "os seus", "os duzentos reais";
-· quem fala é uma pessoa: "olha", "você nem lembra", "caladinho", "um pouquinho de cada vez";
-· o fecho responde à pergunta do início e só então vem o bordão.
+· abre com uma PERGUNTA que dói e dá o choque na frase seguinte, sem repetir a pergunta;
+· UMA ideia do princípio ao fim, e um NÚMERO que se transforma (trinta e nove por mês… quase quinhentos no ano);
+· o app aparece FAZENDO, na primeira pessoa — "joguei isso no FinMoovi e ele me marcou" — nunca citado de passagem;
+· frases curtas, de gente: "Ninguém pediu. Ninguém olha.";
+· o fecho responde à pergunta da capa e só então vem o bordão.
 
 ════════ A ESPINHA (6 blocos, nesta ordem) ════════
-1. GANCHO (~6s): a dor ou o número que choca, JÁ dizendo "${t.term}" **e JÁ com a imagem do vídeo na primeira frase**. Termine deixando uma pergunta no ar — e NÃO responda.
-   ⚠️ **O TEMA E A IMAGEM CABEM NA MESMA FRASE, e os dois são OBRIGATÓRIOS.** Trocar um pelo outro reprova o roteiro.
-   ✗ "Uma mochila cheia de pedras faz você perder quinhentos reais por mês. Quem é o culpado?"
-      Por quê: a imagem está lá, mas o TEMA sumiu — quem clicou no título por causa de "erros de cartão" não ouve nem "erros" nem "cartão", e desiste.
-   ✗ "Três erros de cartão são pedras na sua mochila. Tiram quinhentos reais do seu bolso todo mês."
-      Por quê: diz tudo o que é preciso, mas diz como um cartaz. **"X são Y" não é fala, é definição.** Foi reprovado pelo dono.
-   ✓ "Olha, tem três errinhos no cartão que parecem uma mochila cheia de pedra nas suas costas. São quinhentos reais que somem do seu bolso todo mês. Qual será o mais pesado?"
-      Por quê: alguém está a falar. Diz o assunto, compara em vez de definir, dá o número e deixa a pergunta no ar.
-   Molde do arranque: "<abertura de quem fala: olha / sabe / repara só> + <o tema> + <que parece / é tipo / é que nem> + <a imagem>. <a dor, com o número>. <pergunta que fica no ar>"
-2. EMPATIA (~9s): por que isso acontece com gente normal (correria, cansaço, ninguém ensinou). Sem culpar quem assiste.
-3. A VIRADA (~10s): a reviravolta. O espectador acha que o problema é A e você mostra que é B — "não é o [A] que te quebra… é o [B] que ninguém soma".
-   ⛔ TERMINE NA TENSÃO. Depois de virar, NÃO explique. Explicação depois da virada mata a virada.
-   ✗ "…é o tempo que ficou parado. E ele já está trabalhando, só falta ajustar." (a 2ª frase amolece a 1ª — e "trabalhando" como? "ajustar" o quê? frase que enche linguiça)
-   ✗ "…é o tempo que ficou parado, o Tesouro Selic faz a grana crescer todo dia." (virou e já explicou)
-   ✓ "…é o tempo que ficou parado. E ele não volta."
-   Depois da virada, ou você CALA, ou aumenta a tensão. Nunca conforta.
-4. A DEMONSTRAÇÃO (~10s): o app resolvendo ISSO que você acabou de revelar. **O app é quem AGE, não é rodapé.**
+1. GANCHO (~7s): **a 1ª FRASE É A CAPA DO VÍDEO, e ela é uma PERGUNTA que dói.**
+
+   ⚡ **A PRIMEIRA FRASE APARECE ESCRITA NA TELA ENQUANTO VOCÊ A DIZ.** É a capa: letras grandes, com o boneco encenando a dor. Quem tá passando o dedo lê e ouve a mesma coisa ao mesmo tempo — e é isso que faz o dedo parar.
+   · **É uma PERGUNTA** — de dor, de vergonha ou de provocação — dirigida a quem assiste ("você"). Termina com "?". O computador confere.
+   · **NO MÁXIMO ${MAX_PALAVRAS_CAPA} PALAVRAS.** A capa fica na tela o tempo exato de a dizer; mais do que isso e ela sai a meio da frase.
+   · Tem de funcionar SOZINHA, sem nada antes. É a primeira coisa que a pessoa ouve na vida.
+   · 🔴 **A RESPOSTA VEM NA FRASE SEGUINTE, no MESMO bloco.** Pergunta pendurada é proibida neste canal: você pergunta e já dá o choque, o dado ou a resposta. E a resposta NÃO repete a pergunta — responde direto, seco.
+   ✗ "Você não vai acreditar nisso!" (nem é pergunta, nem diz o que está em jogo)
+   ✗ "Você sabia?" (pergunta vazia — serve para qualquer vídeo do mundo; a dor tem de estar DENTRO da pergunta)
+   ✗ "Descubra o segredo dos bancos." (falso segredo, e continua sem perguntar nada)
+   ⚠️ Os exemplos abaixo são de OUTROS assuntos de propósito, e o computador confere: **copiar um deles reprova o roteiro.** Veja a FORMA — a dor concreta dentro da pergunta, e o choque colado nela — e escreva a sua.
+${EXEMPLOS_DE_CAPA.map((f) => `   ✓ "${f}"`).join('\n')}
+   · **O TEMA entra de preferência já na pergunta da capa** — quem clicou no título precisa ouvir o assunto logo. Se não couber com naturalidade, ele TEM de ser dito até ao fim do bloco 2. O computador confere.
+   · A imagem do catálogo (lá embaixo) vive na CAPA VISUAL — você NÃO precisa de falar dela aqui.
+2. EMPATIA (~8s): o caso CONCRETO do dia a dia — as coisinhas que compõem o problema, nomeadas uma a uma, em frases curtas. É isso que acontece com gente normal (correria, cansaço, ninguém ensinou). Sem culpar quem assiste.
+3. A VIRADA (~10s): **O NÚMERO SE TRANSFORMA à frente de quem ouve.** O pequeno vira grande, o "nada" vira caro, o que parecia seguro cresce. **É a transformação que prende** — um valor antes, um valor depois, e o susto no meio.
+   ⛔ Número de CONTA (quanto rende, quanto vira com juros) SÓ da FICHA lá em cima. Sem ficha, faça a virada SEM prometer rendimento: a soma que ninguém tinha feito, o acumulado do ano, a verdade que aparece.
+   ⛔ **NÃO USE O MOLDE "não é A, é B".** Ele está na lista de vícios aí em cima, é a marca da escrita de robô, e já foi ao ar neste canal. **Diga só o B**, como quem conta uma coisa que a pessoa ainda não sabia.
+   ⛔ TERMINE NA TENSÃO. Depois de virar, NÃO explique. Explicação depois da virada mata a virada. Depois da virada, ou você CALA, ou aumenta a tensão. Nunca conforta.
+4. A DEMONSTRAÇÃO (~9s): **o app FEZ a conta — e você conta na PRIMEIRA PESSOA.** "Eu joguei isso na calculadora do FinMoovi e ela me mostrou…", "eu somei as minhas no FinMoovi e deu…". O número que assustou no bloco 3 é o app que produziu — é por isso que quem ouve vai querer o número DELA. **O app é quem AGE, não é rodapé.**
    ⛔ NO MÁXIMO DOIS valores em dinheiro neste bloco. Três ou mais viram boletim de banco e a pessoa desliga.
    ✗ "Cem reais dão dois mil seiscentos e noventa e nove; na poupança dá dois mil seiscentos e doze. A diferença são oitenta e seis. No FinMoovi basta abrir a calculadora." (três números empilhados e o app no fim, como enfeite)
    ✓ "Eu joguei isso na calculadora do FinMoovi e ela me mostrou uma diferença de oitenta e seis reais. Só de escolher onde deixar o dinheiro."
-5. O CONVITE (~6s): peça o COMENTÁRIO com a palavra FINMOOVI, prometendo o que vai mandar. Molde a adaptar: "quer <o que resolve neste tema>? comenta FINMOOVI aqui que eu te mando."
-6. O FECHO (~8s): RESPONDA, com todas as letras, a pergunta que ficou no ar no bloco 1, e feche a imagem do vídeo. Sem "tchau", sem "até a próxima".
+   ⛔ **DIGA O QUE APARECEU NA TELA.** Frases como "mostrou onde o dinheiro aperta" ou "mostrou o estrago" não mostram nada — quem ouve fica na mesma.
+   Diga a coisa CONCRETA: o nome da linha, a soma marcada, qual ficou em primeiro lugar, ou um valor **que já exista** neste roteiro.
+   ⚠️ **NÃO invente número nenhum para cumprir isto.** Se não houver um valor à mão, nomeie a COISA — é igualmente concreto e é verdade.
+5. O CONVITE (~6s): a pessoa acabou de ver um número que assustou ou animou — e ela quer o DELA. Peça o COMENTÁRIO com a palavra FINMOOVI, prometendo o que vai mandar. Molde a adaptar: "quer ver o SEU? comenta FINMOOVI aqui que eu te mando."
+6. O FECHO (~7s): **RESPONDA, com todas as letras, a PERGUNTA DA CAPA** — é a lição do vídeo numa frase, curta e dura, do tipo que se repete para um amigo. Sem "tchau", sem "até a próxima".
    ⛔ **NÃO termine com outra pergunta.** O fecho é quem responde, não quem pergunta.
    ✗ "…e quando você corta, os quinhentos reais voltam pra você. E agora?" (foi ao ar; o dono: *"o que é 'e agora'???"*)
-   ✓ "…quem tira a pedra da mochila anda leve o mês inteiro."
+   ⛔ **O FECHO NÃO CITA FONTE NENHUMA.** Nada de blog, app, FinMoovi, comentário, link, canal ou inscrição neste bloco. O app é do bloco 4, o comentário é do bloco 5; aqui só cabe a RESPOSTA e a assinatura. O computador confere.
+   ✗ "O blog mostra que o mínimo é o que mais pesa." (foi ao ar e o dono reprovou)
+   ✗ "Depois de comentar você vai ver que…" (pega no convite em vez da história)
    É AQUI, e só aqui, que entra o bordão do canal — como assinatura, na última frase.
 
-════════ O FIO CONDUTOR ════════
-Escolha UMA imagem física para o vídeo inteiro e faça-a CRESCER: pequena no bloco 1, forte no 3, paga no 6. É a mesma imagem sempre — nunca troque no meio.
+════════ A IMAGEM DA CAPA (o campo "fioCondutor") ════════
+Escolha UMA imagem do catálogo — é ela que vira a CENA DA CAPA (o boneco encenando a dor da pergunta) e que escolhe a música do vídeo. Escolha a que COMBINA com a dor deste tema.
 Escolha entre: ${menuDeImagens}.
-Escolha a que COMBINA com este tema — a imagem existe para explicar, não para enfeitar. Se ela não explicar nada aqui, é a imagem errada.
-⚠️ A imagem tem de ser DITA NA FALA, com as palavras dela (as que estão entre parênteses acima), **no BLOCO 1 obrigatoriamente e em pelo menos TRÊS blocos ao todo**. Preencher o campo "fioCondutor" e não falar da imagem em lugar nenhum NÃO conta: o campo fica cheio e o vídeo fica sem fio.
-⛔ **Se a imagem só entrar a meio do vídeo, a primeira metade fica sem sentido** — foi o defeito que o dono apanhou: *"ele vai falar da pedra na mochila somente na metade do vídeo, sem conexão nenhuma com aquilo que foi dito até agora"*. Ela abre o vídeo.
-   A MECÂNICA — o exemplo abaixo usa DE PROPÓSITO uma imagem que NÃO está na lista, para você ver só a forma. ⛔ Nunca a use: se ela aparecer no seu texto, o roteiro é rejeitado.
-      bloco 1: "é uma pedra pequena na mochila…" → bloco 3: "e a mochila já pesa em cada passo" → bloco 6: "quem tira a pedra anda mais rápido".
-   Repare: é a MESMA imagem nos três, e ela CRESCE. Faça exatamente isto — com a sua imagem, e com as SUAS palavras.
+⚠️ **Você NÃO precisa de falar da imagem na narração — e o normal é NÃO falar.** Ela vive no VISUAL. A metáfora falada quase desapareceu deste canal: quem prende é o NÚMERO que se transforma, não a comparação. Se uma comparação ajudar MESMO, é no máximo UMA no vídeo inteiro, com coisa que a pessoa já conhece, sempre comparada ("é tipo", "é que nem"), nunca definida ("X são Y") — e nunca uma imagem que obrigue quem ouve a segurar duas histórias na cabeça ao mesmo tempo.
 ⛔ PROIBIDAS (já usadas nos vídeos recentes): ${bloqueadas}${evitarFrases}
+
+════════ SE O TÍTULO PROMETE UMA QUANTIDADE, DIGA-AS PELO NOME ════════
+⚠️ O padrão deste canal é **UMA ideia por vídeo** — três coisas em 50 segundos é peso a mais, e quem ouve não acompanha. Esta secção só existe para os temas antigos que ainda prometem uma lista no título.
+Se o TEMA ou o ÂNGULO prometerem um número de coisas — três erros, cinco dicas, dois caminhos — o vídeo TEM de as dizer, uma a uma, com nome. **Prometer três e nunca dizer quais é o defeito nº1 deste canal**: a pessoa fica à espera do que foi prometido, não vem, e sai.
+Diga-as com palavras do dia a dia, nunca com o nome técnico:
+   ✗ "os três são o rotativo, o mínimo e o parcelamento longo" (ninguém em casa sabe o que é isto)
+   ✓ "pagar só uma parte, deixar o resto rolando pro mês seguinte, e dividir a compra em muitas vezes"
+Elas cabem TODAS num bloco só — normalmente a virada ou a demonstração. **Esse bloco pode passar das ${ORCAMENTO_OUTROS} palavras; então os outros cinco têm de ficar mais curtos para o total não estourar.** É uma troca, não uma licença para escrever mais.
+⛔ **CADA ITEM TEM DE SER UM ATO DIFERENTE.** Se dois deles puderem ser a mesma coisa, você nomeou o mesmo erro duas vezes e quem ouve fica baralhado.
+   ⚠️ O exemplo abaixo é DE OUTRO ASSUNTO de propósito — para você ver a forma e não poder aproveitar as palavras.
+   ✗ "guardar dinheiro, poupar todo mês, e separar uma parte do salário" (são o MESMO ato dito três vezes)
+   ✓ "cortar a assinatura que você não usa, trocar de supermercado, e levar comida de casa" (três coisas que se fazem em momentos diferentes)
+   Teste: consigo fazer uma SEM fazer a outra? Se não consigo, são a mesma.
 
 ════════ O QUE VOCÊ PODE PROMETER ════════
 SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (grátis)** e a **calculadora do blog**.
@@ -407,7 +439,7 @@ Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moe
 - Pontuação é RESPIRAÇÃO, não gramática. Vírgula só onde alguém respiraria de verdade.
   ✗ "Dez anos de atraso, custam caro."  ✓ "Dez anos de atraso custam caro."
 - Reticências só para suspense de efeito.
-- Números por extenso na fala ("cem reais", "trinta por cento") — nunca símbolos.
+- Números por extenso na fala ("cem reais", "novecentos reais") — nunca símbolos. (Percentagem só se a ficha ou o apoio a trouxerem.)
 - Diga a unidade na PRIMEIRA menção: "aos vinte e cinco anos… aos trinta e cinco".
 - Diga "vídeo", nunca "Short".
 - OBRIGATÓRIO: diga o bordão do canal UMA vez, **e SÓ no bloco 6 (o fecho)**, como assinatura: "${BORDAO}"
@@ -417,8 +449,7 @@ Não troque a grandeza do dinheiro. Cem reais NÃO é "um centavo", nem "uma moe
 
 Responda APENAS com JSON válido, sem markdown:
 {
-  "fioCondutor": "<uma das imagens permitidas>",
-  "perguntaAberta": "<a dúvida crua que o vídeo segura, MAIÚSCULAS, até 26 caracteres, SEMPRE na 3ª pessoa (é a dúvida de quem assiste, nunca sua: escreva RENDE, não RENDI). É a pergunta que fica na TELA, não o título: NÃO repita o nome do tema, não abrevie nem corte palavras. Ex.: 'QUANTO RENDE MESMO?', 'PRA ONDE FOI?', 'VALE A PENA ESPERAR?'>",
+  "fioCondutor": "<uma das imagens permitidas — vira a cena da capa>",
   "numerosCitados": [<todos os valores de DINHEIRO que você disse, em algarismos, ex: 2699>],
   "blocos": [
     { "papel": "gancho",       "fala": "..." },
@@ -453,13 +484,23 @@ const PAPEIS = ['gancho', 'empatia', 'virada', 'demonstracao', 'convite', 'fecho
  * para PUNIR quem o copiar. Uma fonte só — se vivesse em dois sítios, um dia
  * mudava-se um e a trava passava a defender um texto que já não existe.
  */
+/**
+ * ♦ REESCRITO EM 03/08/2026 no padrão que o dono aprovou (IMPLEMENTACAO20 §31):
+ * pergunta que dói + resposta colada · UMA ideia · número que se transforma ·
+ * app FAZENDO na 1ª pessoa · sem metáfora · fecho que responde + bordão.
+ * O assunto (tarifa de pacote de conta) é de OUTRO vídeo de propósito — a regra
+ * das ocorrências 10-13: exemplo é sempre de outro assunto E entra na anti-cópia.
+ */
 const EXEMPLO_DE_FORMA = [
-  'Olha, tem três descontos na sua conta que são que nem pneu murcho: você anda, mas anda devagar. São duzentos reais por mês que somem sem você ver. Qual será o pior deles?',
-  'O pior é o que você nem lembra que assinou. A vida corre, ninguém te ensinou a olhar isso, e o pneu vai perdendo ar caladinho.',
-  'Só que não é o desconto grande que te para. É o pequeno, que fica lá meses, esvaziando o pneu um pouquinho de cada vez.',
-  'No FinMoovi você abre a conta e ele te mostra esses pequenos, um por um, com o valor do lado. Aí você vê o pneu murchando.',
-  'Quer ver os seus? Comenta FINMOOVI aqui que eu te mando a calculadora do blog.',
-  `Os duzentos reais voltam quando você tira os pequenos da frente — é o pneu cheio de novo. ${BORDAO}`,
+  'Você sabe quanto o seu banco cobra só pra sua conta existir? Eu também não sabia. E era caro.',
+  'Tá lá no extrato com nome bonito, pacote de serviços. Ninguém pediu. Ninguém olha.',
+  'Eu fui ver a minha. Trinta e nove por mês. No fim do ano, quase quinhentos reais que saíram calados.',
+  // ⚠️ Esta frase NÃO pode partilhar 6 palavras com o molde "eu joguei isso na
+  // calculadora do FinMoovi" que o bloco 4 ENSINA — medido ao vivo em 03/08: o
+  // modelo obedeceu ao molde e a anti-cópia (que inclui este exemplo) barrou-o.
+  'Fui conferir no FinMoovi e ele tinha marcado a cobrança em vermelho, repetindo mês após mês na minha cara.',
+  'Quer ver se a sua conta tem uma dessas? Comenta FINMOOVI aqui que eu te mando o app grátis.',
+  `Tarifa que você não pediu é dinheiro que sai calado. ${BORDAO}`,
 ];
 
 /**
@@ -471,9 +512,43 @@ const EXEMPLO_DE_FORMA = [
  * · O bordão sai pela mesma razão: é obrigatório dizê-lo, à letra.
  * Sobra a ESCRITA — que é o que tem de ser original em cada vídeo.
  */
+/**
+ * ♦ AQUI VIVIA A "MECÂNICA DO FIO" (os três degraus da imagem). REMOVIDA em
+ * 03/08/2026, com o padrão novo: a imagem deixou de ser obrigatória na FALA (vive
+ * na capa visual), então ensinar os três degraus era ordenar o que a trava já não
+ * pede — a inversão exata do defeito crónico deste repositório. Saiu do prompt E
+ * da comparação anti-cópia no mesmo commit (as duas pontas, sempre).
+ */
+
+/**
+ * AS FRASES DE CAPA DE EXEMPLO — e a 4ª vez que a mesma armadilha morde (02/08/2026).
+ *
+ * Hoje já aconteceu três vezes: o vídeo-exemplo, o exemplo da mecânica do fio, e os
+ * exemplos da lista de erros. **Escrevi exemplos usando o assunto e o número do vídeo
+ * que estava a testar, e o modelo copiou-os à letra, das três vezes.** À quarta,
+ * escrevi *"Seu cartão tá tirando quinhentos reais por mês e você nem viu"* — e saiu
+ * exatamente isso na geração seguinte.
+ *
+ * A regra que fica, e vale para QUALQUER exemplo que se escreva neste ficheiro:
+ *   **1. o exemplo é sempre de OUTRO assunto**, para não servir ao vídeo em curso;
+ *   **2. o exemplo entra na comparação anti-cópia**, para copiá-lo custar caro.
+ * Lembrar não chega — já falhei quatro vezes hoje a lembrar-me.
+ */
+/**
+ * ♦ Desde 03/08/2026 a capa é uma PERGUNTA + o choque colado nela. Cada exemplo
+ * mostra as duas frases (a pergunta que a trava mede, e a resposta que o bloco 1
+ * exige). Assuntos de propósito diferentes entre si e do vídeo-exemplo.
+ */
+const EXEMPLOS_DE_CAPA = [
+  'Você sabe quanto pagou de juros no boleto que atrasou? Foi mais caro que o próprio boleto.',
+  'Quanto do seu mercado do mês termina no lixo? Tem geladeira jogando duzentos reais fora.',
+  'Você pagaria todo mês por um seguro de celular que nunca usou? Pois é isso que você tá fazendo.',
+];
+
 const EXEMPLO_PARA_COMPARAR = [
   EXEMPLO_DE_FORMA[0], EXEMPLO_DE_FORMA[1], EXEMPLO_DE_FORMA[2], EXEMPLO_DE_FORMA[3],
   EXEMPLO_DE_FORMA[5].replace(BORDAO, ''),
+  ...EXEMPLOS_DE_CAPA,
 ].join(' ');
 
 /**
@@ -509,6 +584,74 @@ const corrigirNumerais = (s) => NUMERAIS_ERRADOS.reduce(
   )),
   s,
 );
+
+/**
+ * NOME ERRADO DE UMA COISA REAL — mecânico, logo LIMPA (02/08/2026).
+ *
+ * MEDIDO no roteiro de 01/08: a narração disse "taxa mínima". **Esse produto não existe
+ * com esse nome.** A parcela que o banco deixa pagar na fatura chama-se PAGAMENTO MÍNIMO.
+ * É erro de FACTO, não de gosto — logo é código, e não trava: consertar a grafia de um
+ * nome não pode custar uma tentativa ao gerador (mesma porta por onde entrou o
+ * "cincocentos", ver NUMERAIS_ERRADOS).
+ *
+ * ⚠️ O GUARDA DE CONTEXTO, e porque ele é o TEMA e não a fala.
+ * "Taxa mínima" pode ser legítimo noutro assunto ("taxa mínima de corretagem"). A 1ª
+ * versão deste conserto usava a narração gerada como contexto — e nesse desenho um vídeo
+ * sobre corretagem que dissesse "cartão" de passagem levava a troca e saía com
+ * "pagamento mínimo de corretagem", um absurdo. O TEMA é decidido ANTES de o modelo
+ * escrever e não muda a meio: se o vídeo é sobre cartão/fatura/crédito, "taxa mínima"
+ * está errado, ponto. Fora disso não se toca.
+ */
+/**
+ * ⚠️ E O ARTIGO TEM DE VIR JUNTO — apanhado a CORRER o conserto, não a lê-lo.
+ * "taxa" é feminino e "pagamento" é masculino. A 1ª versão trocava só o nome e produzia
+ * *"você paga A pagamento mínimo"*, que ia inteiro para a voz e para a legenda queimada.
+ * Por isso o determinante que vem à frente muda de género com ele.
+ */
+const DET_FEM_PARA_MASC = {
+  a: 'o', as: 'os', da: 'do', das: 'dos', na: 'no', nas: 'nos',
+  uma: 'um', umas: 'uns', essa: 'esse', essas: 'esses',
+  esta: 'este', estas: 'estes', aquela: 'aquele', aquelas: 'aqueles',
+  à: 'ao', às: 'aos', pela: 'pelo', pelas: 'pelos',
+  sua: 'seu', suas: 'seus', minha: 'meu', minhas: 'meus',
+  outra: 'outro', outras: 'outros',
+};
+
+// "Taxa mínima" no início de uma frase não pode virar "pagamento mínimo" em minúscula
+// (a mesma regra que `corrigirNumerais` já seguia).
+const preservarCaixa = (achado, novo) => (
+  achado[0] === achado[0].toUpperCase() ? novo[0].toUpperCase() + novo.slice(1) : novo
+);
+
+const TEMA_DE_CARTAO = /cart[ãa]o|fatura|cr[ée]dito/i;
+
+const NOMES_ERRADOS = [
+  {
+    // com determinante à frente: troca-se o determinante E o nome, de uma vez.
+    // A fronteira é por LETRA (não `\b`), senão "à" — que não é letra para o `\b` —
+    // escapava.
+    tema: TEMA_DE_CARTAO,
+    de: /(?<![\p{L}])(as|a|das|da|nas|na|umas|uma|essas|essa|estas|esta|aquelas|aquela|às|à|pelas|pela|suas|sua|minhas|minha|outras|outra)\s+taxa(s?)\s+m[íi]nima(s?)(?![\p{L}])/giu,
+    para: (_achado, det, plural) => {
+      const novoDet = DET_FEM_PARA_MASC[det.toLowerCase()] || det;
+      const nome = plural ? 'pagamentos mínimos' : 'pagamento mínimo';
+      return `${preservarCaixa(det, novoDet)} ${nome}`;
+    },
+  },
+  {
+    // sem determinante à frente ("paga taxa mínima todo mês")
+    tema: TEMA_DE_CARTAO,
+    de: /(?<![\p{L}])taxa(s?)\s+m[íi]nima(s?)(?![\p{L}])/giu,
+    para: (achado, plural) => preservarCaixa(achado, plural ? 'pagamentos mínimos' : 'pagamento mínimo'),
+  },
+];
+
+export function corrigirNomes(texto, tema = '') {
+  return NOMES_ERRADOS.reduce(
+    (txt, n) => (n.tema.test(String(tema)) ? txt.replace(n.de, n.para) : txt),
+    String(texto || ''),
+  );
+}
 
 /**
  * NÚMERO POR EXTENSO — calculado, não pedido (31/07/2026).
@@ -612,10 +755,11 @@ export function numerosPorExtenso(texto) {
  * Cada trava que vira limpeza é uma tentativa devolvida ao que importa.
  * A grafia errada de numeral (ver NUMERAIS_ERRADOS) entra pela mesma porta.
  */
-export function limparFala(texto) {
+export function limparFala(texto, tema = '') {
   // primeiro os algarismos viram palavras, depois corrige-se a grafia dessas
   // palavras — por esta ordem, senão "cincocentos" nunca chegaria a existir.
-  return corrigirNumerais(numerosPorExtenso(String(texto || '')))
+  // Só então os nomes errados (ver `corrigirNomes`), que dependem do TEMA.
+  return corrigirNomes(corrigirNumerais(numerosPorExtenso(String(texto || ''))), tema)
     .replace(/[*_]/g, '')                                  // marcação: a voz lia "asterisco"
     .replace(/\s*[—–]\s*/g, ', ')                          // travessão vira a pausa que ele representa
     .replace(/\s*:\s*/g, '. ')                             // dois-pontos vira FRASE NOVA — trocar por vírgula deixava a maiúscula solta ("Lembre, Dinheiro…")
@@ -669,74 +813,42 @@ const PALAVRAS_POR_SEGUNDO = 2.6;
  * Havia quase 10 segundos de folga a não ser usados, e era o tamanho — não o tom —
  * que estava a apertar o texto.
  */
-const MIN_PALAVRAS = 120; // ≈ 46s de fala
+/**
+ * ⚠️ O MÍNIMO DESCEU DE 120 PARA 95 (03/08/2026) — e é a regra da trava que não
+ * pode reprovar o modelo do dono, não gosto. Os três roteiros-modelo que ele
+ * aprovou medem 103, 106 e 106 palavras (contados por código): com 120, os TRÊS
+ * reprovavam por "curta demais". 95 dá 8 palavras de folga ao pior caso.
+ * A conta do tempo: 95 ÷ 2,6 = ~37s de fala + capa/respiros/assinatura ≈ 42s de
+ * vídeo — curto, mas dentro do que o padrão novo pede (menos palavras, mais claro).
+ */
+const MIN_PALAVRAS = 95;  // ≈ 37s de fala
 const MAX_PALAVRAS = 140; // ≈ 51s de fala → ~56s de vídeo
 
 /**
- * O FIO CONDUTOR PRECISA SER DITO, não só declarado (31/07/2026).
- * No 1º teste o modelo devolveu `fioCondutor: "semente"` e **não plantou semente
- * nenhuma na narração** — campo preenchido, imagem ausente. O validador aceitou
- * porque só olhava o campo. Estas são as palavras que provam que a imagem existe
- * NA FALA; não precisam ser exatas (basta o radical).
+ * A FRASE DA CAPA: `MAX_PALAVRAS_CAPA` vive em `lib/palavras.js` desde 03/08/2026 —
+ * o segundo leitor precisa do MESMO número (dizia "13" enquanto a trava exigia 18,
+ * o padrão prompt-contra-validador). Uma regra, um sítio. A história do número
+ * (13→18 porque reprovava a frase-modelo do dono) está lá.
  */
-const PALAVRAS_DO_FIO = {
-  'bola-neve': ['bola de neve', 'bolinha', 'neve', 'ladeira', 'rolar', 'rola'],
-  // "montanha" saiu: casava com "montanha-russa" e deixava a avalanche passar sem
-  // se falar de avalanche nenhuma (achado do teste de cruzamento, 31/07).
-  avalanche: ['avalanche', 'desab', 'soterr', 'desmoron'],
-  escorregao: ['escorreg', 'tropec', 'tropeç', 'derrap', 'escorrega'],
-  foguete: ['foguete', 'decol', 'lançamento', 'propuls'],
-  semente: ['semente', 'plant', 'brot', 'germin', 'raiz', 'colher', 'árvore', 'arvore', 'muda'],
-  'montanha-russa': ['montanha-russa', 'montanha russa', 'sobe e desce', 'looping', 'carrinho'],
-  // "ar " saiu: casava com QUALQUER palavra terminada em "ar" seguida de espaço
-  // ("plantar e", "comprar o"…) — a bolha passava em praticamente qualquer texto.
-  bolha: ['bolha', 'estour', 'infl'],
-  // "escorr" saiu: casava com "escorrega" (que é o escorregão) e com "escorre" da
-  // ampulheta. "escorrend" é do ralo e só do ralo.
-  ralo: ['ralo', 'escorrend', 'escoa', 'vaza', 'ping', 'torneira'],
-  // leva 1 da ampliação. ⚠️ Cada entrada aqui TEM de casar com a mesma imagem em
-  // `DICAS_DO_FIO`: foi a divergência entre os dois que deu 8/8 à semente (§19.9).
-  // "relógio" saiu daqui na leva 3: passou a ser imagem própria, e deixar a palavra
-  // nas duas fazia a ampulheta passar sem se falar de areia nenhuma.
-  // "areia" sozinha saiu: era partilhada com a areia-movediça (as duas são areia).
-  // A ampulheta pede o nome dela, o tempo a escorrer ou o prazo.
-  ampulheta: ['ampulheta', 'o tempo escorre', 'prazo', 'ultimo grão', 'último grão', 'grão de areia'],
-  balanca: ['balanç', 'balanc', 'pesar', 'pesa mais', 'pender', 'pende', 'prato'],
-  // "peso"/"pesa" saíram: eram genéricos e a frase da balança validava esta imagem.
-  'bola-de-ferro': ['bola de ferro', 'corrente', 'arrast', 'acorrent', 'preso', 'presa'],
-  'guarda-chuva': ['guarda-chuva', 'guarda chuva', 'chuva', 'seco', 'molha', 'temporal'],
-  // leva 2. As formas COM e SEM acento entram as duas: a busca compara o texto tal
-  // como o modelo o escreveu, sem tirar acentos.
-  // "preso"/"presa" saíram: são da bola-de-ferro. A ratoeira tem palavras próprias.
-  ratoeira: ['ratoeira', 'armadilha', 'isca', 'fecha em cima', 'caiu na'],
-  'mochila-pedras': ['mochila', 'pedra', 'peso nas costas', 'carreg', 'costas'],
-  // "areia" sozinha saiu (ver ampulheta): o que define esta imagem é o MOVEDIÇA.
-  'areia-movedica': ['areia movediça', 'areia movedica', 'movediç', 'movedic', 'afund', 'atol'],
-  domino: ['dominó', 'domino', 'derrub', 'em cadeia', 'peça cai', 'peca cai'],
-  // leva 3
-  // "desab" saiu: é a palavra da avalanche. Esta imagem pede o castelo.
-  'castelo-cartas': ['castelo de cartas', 'castelo', 'de cartas', 'vem abaixo', 'vir abaixo', 'ruir'],
-  gangorra: ['gangorra', 'sobe e desce', 'sobe, desce', 'de um lado pro outro', 'pra cima e pra baixo'],
-  'corda-bamba': ['corda bamba', 'corda-bamba', 'na corda', 'equilíbri', 'equilibri', 'sem rede', 'desequilibr'],
-  relogio: ['relógio', 'relogio', 'ponteiro', 'o tempo corre', 'contra o tempo', 'hora passa', 'cada minuto'],
-  // leva 4
-  vela: ['vela', 'queim', 'derret', 'chama', 'pavio', 'apagar'],
-  'trem-perdido': ['trem', 'plataforma', 'vagão', 'vagao', 'estação', 'estacao', 'ja partiu', 'já partiu'],
-  bifurcacao: ['bifurca', 'dois caminhos', 'encruzilhada', 'estrada se divide', 'dois lados da estrada'],
-  'duas-portas': ['duas portas', 'porta', 'abre uma', 'abrir uma', 'a outra fecha'],
-  // leva 5
-  semaforo: ['semáforo', 'semaforo', 'sinal verde', 'sinal vermelho', 'sinal fecha', 'sinal abre', 'luz verde', 'luz vermelha'],
-  cofre: ['cofre', 'tranc', 'guardado', 'a salvo', 'no seguro'],
-  escudo: ['escudo', 'blind', 'golpe', 'aparar', 'aguenta o'],
-  boia: ['boia', 'bóia', 'salva-vidas', 'te segura', 'se segurar', 'à tona', 'a tona', 'flutu'],
-  // leva 6 (última)
-  escada: ['escada', 'degrau', 'um de cada vez', 'passo a passo', 'subindo aos poucos'],
-  // sem 'vaza' aqui: essa palavra é do ralo (ver o teste de cruzamento)
-  'balde-furado': ['balde', 'furo', 'furad', 'perde por baixo', 'enche e some'],
-  buraco: ['buraco', 'cavar', 'cavando', 'cava mais', 'mais fundo', 'fundo do poço'],
-  // sem 'queim' aqui: essa palavra é da vela
-  fumaca: ['fumaça', 'fumaca', 'virou fumaça', 'virar fumaça', 'evapor', 'foi pro ar'],
-};
+
+/**
+ * ⚠️ O ORÇAMENTO DEIXA DE SER IGUAL PARA TODOS — e é aritmética, não gosto.
+ * A frase da capa acrescentou ~13 palavras ao bloco 1 e o teto total NÃO pode subir
+ * (140 palavras já dão ~58s, e o limite do YouTube são 60). MEDIDO: com o orçamento
+ * repartido por igual, o gerador falhou as 4 tentativas seguidas — 159, 157 e 157
+ * palavras. Ele não inventa a compensação sozinho; é preciso dizer-lhe a conta.
+ */
+const ORCAMENTO_BLOCO1 = MAX_PALAVRAS_CAPA + 20;                                  // capa + história
+const ORCAMENTO_OUTROS = Math.floor((MAX_PALAVRAS - ORCAMENTO_BLOCO1) / 5);       // os outros cinco
+
+/**
+ * ♦ AQUI VIVIA `PALAVRAS_DO_FIO` — o dicionário que provava que a imagem era DITA
+ * na fala. REMOVIDO em 03/08/2026: com o padrão aprovado pelo dono a imagem vive
+ * na CAPA VISUAL e não precisa de ser falada, e as três travas que usavam este
+ * dicionário saíram (ver o comentário junto à validação do fioCondutor). As dicas
+ * que vão ao MENU do prompt continuam em `DICAS_DO_FIO` lá em cima — servem para
+ * o modelo escolher a imagem certa para a capa, não para a falar.
+ */
 
 // As ÚNICAS centenas que terminam em "centos/centas" em português. Quem não estiver
 // aqui e terminar assim é grafia inventada (ver a sentinela em `validarNarrativa`).
@@ -768,8 +880,8 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
 
   const falaToda = blocos.map((b) => (b && b.fala) || '').join(' ');
   const palavras = falaToda.trim().split(/\s+/).filter(Boolean).length;
-  if (palavras < MIN_PALAVRAS) erros.push(`narração curta demais: ${palavras} palavras (mínimo ${MIN_PALAVRAS} ≈ 42s)`);
-  if (palavras > MAX_PALAVRAS) erros.push(`narração longa demais: ${palavras} palavras (máximo ${MAX_PALAVRAS} ≈ 50s)`);
+  if (palavras < MIN_PALAVRAS) erros.push(`narração curta demais: ${palavras} palavras (mínimo ${MIN_PALAVRAS} ≈ ${Math.round(MIN_PALAVRAS / PALAVRAS_POR_SEGUNDO)}s)`);
+  if (palavras > MAX_PALAVRAS) erros.push(`narração longa demais: ${palavras} palavras (máximo ${MAX_PALAVRAS} ≈ ${Math.round(MAX_PALAVRAS / PALAVRAS_POR_SEGUNDO)}s)`);
 
   // Marcação, travessão, dois-pontos, ponto e vírgula e parênteses NÃO reprovam mais:
   // são limpos por `limparFala()` antes de chegar aqui (ver o comentário lá em cima
@@ -785,14 +897,67 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   // A busca é por uma âncora SEM acento e em minúsculas: comparar a frase inteira
   // com acentuação daria falso negativo à primeira variação de pontuação.
   const semAcento = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-  if (!semAcento(falaToda).includes(semAcento('dinheiro sem controle'))) {
-    erros.push(`o bordão do canal não foi dito — encaixe uma vez: "${BORDAO}"`);
-  } else if (!semAcento(blocos[5]?.fala || '').includes(semAcento('dinheiro sem controle'))) {
+  /**
+   * ⚠️ O BORDÃO PASSA A SER CONFERIDO INTEIRO (02/08/2026) — e a causa foi medida.
+   *
+   * A âncora acima eram só as três primeiras palavras. MEDIDO numa geração real de hoje:
+   * saiu *"Dinheiro sem controle ACABA INDO PARA O OUTRO LADO"* — o segundo leitor
+   * reescreveu a assinatura do canal, que ele está EXPRESSAMENTE proibido de tocar, e
+   * a verificação deixou passar porque a âncora curta continuava lá.
+   * A assinatura é o único texto do canal que não pode variar: ou é ele, ou não é.
+   *
+   * Compara-se por PALAVRAS (sem acentos, sem pontuação, sem espaços a mais): assim uma
+   * vírgula a mais ou o ponto final em falta não dão falso alarme, mas trocar uma palavra
+   * dá — que é exatamente o que se quer apanhar.
+   */
+  const soPalavras = (s) => semAcento(s).replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
+  const BORDAO_EM_PALAVRAS = soPalavras(BORDAO);
+  const ancoraCurta = semAcento('dinheiro sem controle');
+  if (!soPalavras(falaToda).includes(BORDAO_EM_PALAVRAS)) {
+    erros.push(
+      semAcento(falaToda).includes(ancoraCurta)
+        // ele TENTOU dizer o bordão e mudou-o: o aviso tem de dizer isso, senão o modelo
+        // acha que basta acrescentar outro e passa a haver dois.
+        ? `o bordão do canal foi ALTERADO — ele não se reescreve, diz-se à letra, exatamente assim: "${BORDAO}"`
+        : `o bordão do canal não foi dito — encaixe uma vez, à letra: "${BORDAO}"`,
+    );
+  } else if (!soPalavras(blocos[5]?.fala || '').includes(BORDAO_EM_PALAVRAS)) {
     // O BORDÃO SÓ NO FIM (decisão do dono, 01/08/2026).
     // Ele estava obrigatório em QUALQUER sítio e caiu no bloco 2, no meio da
     // história: *"essa frase fica muito sem sentido aí no meio… está mais
     // atrapalhando do que ajudando"*. Um bordão fecha, não interrompe.
     erros.push(`o bordão está no meio da história — ele só pode aparecer no ÚLTIMO bloco (fecho), como assinatura: "${BORDAO}"`);
+  }
+
+  /**
+   * O FECHO NÃO FALA DO CANAL (02/08/2026) — e a causa era prompt contra prompt.
+   *
+   * MEDIDO: o roteiro de 01/08 abriu o fecho com *"O blog mostra que…"*. Fui ver porquê e
+   * a culpa não era do modelo: a "REGRA MAIOR" manda cada bloco agarrar o anterior, e o
+   * bloco anterior ao fecho é o CONVITE, que fala do blog e do comentário. **O modelo
+   * obedeceu.** O prompt passou a dizer que o bloco 6 é a única exceção — e esta trava é a
+   * outra ponta, porque neste repositório o que o prompt pede e nada pune, o modelo ignora.
+   *
+   * É VERDADE, não gosto: ou o fecho fala do canal, ou não fala. Não se está julgar tom.
+   * Forma mais barata de a cumprir sem fazer o que se quer: não dizer estas palavras — que
+   * é exatamente o objetivo. Não há atalho perverso.
+   * ⚠️ Não colide com o bordão ("dinheiro sem controle é dinheiro dos outros") nem com o
+   * nome FINMOOVI, que é exigido no bloco 5 e não aqui.
+   */
+  /**
+   * ⚠️ ALARGADO EM 02/08/2026, no mesmo dia em que nasceu. A 1ª versão barrava blog,
+   * comentário, link, canal e inscrição — e a geração seguinte abriu o fecho com
+   * *"O app mostra que…"*. É a MESMA doença com outra palavra: o fecho a citar uma
+   * fonte em vez de responder. O app tem o bloco 4 e o convite tem o 5; o 6 é a
+   * resposta, a imagem e a assinatura. Mais nada.
+   */
+  const intrusoNoFecho = String(blocos[5]?.fala || '')
+    .match(/\b(blogs?|coment\p{L}*|links?|canal|canais|inscri\p{L}*|inscrev\p{L}*|finmoovi|apps?|aplicativos?)\b/iu);
+  if (intrusoNoFecho) {
+    erros.push(
+      `o bloco "fecho" fala de "${intrusoNoFecho[0]}" — o fecho é a RESPOSTA à pergunta da capa, mais o bordão. `
+      + 'O app é do bloco 4 e o pedido de comentário é do bloco 5; repetir aqui rouba o lugar da resposta.',
+    );
   }
 
   /**
@@ -850,62 +1015,176 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     );
   }
 
-  if (temaTermo && blocos[0] && !keywordFalada(temaTermo, blocos[0].fala)) {
+  /**
+   * A 1ª FRASE TEM DE CABER NA CAPA (02/08/2026) — e é VERDADE, não gosto.
+   *
+   * A capa fica 3,5s na tela e a voz entra aos 0,9s: são **2,6s**, que a 2,76
+   * palavras/s dão ~7 palavras. Dez é o teto com folga. Passar disso significa que a
+   * frase escrita na capa acaba DEPOIS de a capa desaparecer — a pessoa lê metade.
+   * Isto mede-se contando; se fosse "a frase é boa?" seria gosto e não entrava aqui.
+   *
+   * ⚠️ O que esta trava NÃO garante é que a frase DIGA alguma coisa. A forma mais
+   * barata de a cumprir é escrever dez palavras vazias ("Olha, vou te contar uma
+   * coisa muito importante agora"). Contra isso não há conta que sirva — está no
+   * prompt com exemplos, e é o segundo leitor que julga.
+   */
+  const frasesDoBloco1 = String(blocos[0]?.fala || '').split(/(?<=[.!?…])\s+/).filter((f) => f.trim());
+  const primeiraFrase = frasesDoBloco1[0] || '';
+  const palavrasDaCapa = primeiraFrase.trim() ? primeiraFrase.trim().split(/\s+/).length : 0;
+  if (palavrasDaCapa > MAX_PALAVRAS_CAPA) {
     erros.push(
-      `o gancho não diz nenhuma palavra do tema ("${temaTermo}") — quem clica no título tem de ouvir o assunto na 1ª frase. `
-      + 'A imagem abre o vídeo, mas o TEMA tem de estar lá também: os dois cabem na mesma frase.',
+      `a 1ª frase do gancho tem ${palavrasDaCapa} palavras e ela é a CAPA do vídeo — no máximo ${MAX_PALAVRAS_CAPA}, `
+      + 'senão acaba depois de a capa sair da tela. Corte-a numa chamada curta e ponha o resto na frase seguinte. '
+      + `(veio: "${primeiraFrase}")`,
+    );
+  }
+  /**
+   * ♦ A CAPA É UMA PERGUNTA, E A RESPOSTA VEM COLADA (03/08/2026) — padrão aprovado
+   * pelo dono nos roteiros-modelo D/E/F (IMPLEMENTACAO20 §31).
+   * O que se mede aqui é só a FORMA (termina em "?"; há pelo menos mais uma frase
+   * no bloco): se a pergunta dói e se a resposta responde, isso é gosto — julga o
+   * prompt e o segundo leitor, nunca uma regex ("Você sabia?" passa nesta trava de
+   * propósito; a forma mais barata de a cumprir é uma pergunta vazia, e contra isso
+   * trava nenhuma serve).
+   * ⚠️ Esta trava grava a ESTÉTICA ATUAL do dono: no dia em que ele aprovar uma
+   * capa-afirmação de choque, ela cai. Está escrito no §31 para ninguém esquecer.
+   */
+  // "?!" também conta como pergunta — sem isto, uma exclamação colada custava uma tentativa
+  if (primeiraFrase && !/\?[!…]*\s*$/.test(primeiraFrase.trim())) {
+    erros.push(
+      `a 1ª frase do gancho é a CAPA e tem de ser uma PERGUNTA que dói, terminada em "?" — `
+      + `é o padrão do canal: pergunta na capa, choque na frase seguinte. (veio: "${primeiraFrase}")`,
+    );
+  }
+  if (primeiraFrase && frasesDoBloco1.length < 2) {
+    erros.push(
+      'o bloco 1 tem só a pergunta da capa — a resposta/choque vem LOGO a seguir, no MESMO bloco. '
+      + 'Pergunta pendurada é proibida neste canal: pergunte e responda na frase seguinte.',
     );
   }
 
-  // NÚMEROS INVENTADOS — o defeito mais perigoso dos dois primeiros testes: o mesmo
-  // cálculo saiu R$ 2.725/R$ 2.540 numa vez e R$ 2.740/R$ 2.630 noutra, mais uma
-  // "Selic de 13,5%" que não existe. Com a ficha calculada no prompt, o modelo passa
-  // a declarar o que citou — e aqui confere-se contra o que o computador calculou.
   /**
-   * O BURACO DOS NÚMEROS — sem ficha calculada, NINGUÉM CONFERIA NADA (01/08/2026).
-   *
-   * Medido: no tema "3 erros de cartão que te custam R$ 500/mês" a narração disse
-   * *"deixa você pagando cerca de DUZENTOS reais a mais todo mês"*. Fui ver de onde
-   * vinha esse 200: **de lado nenhum**. O tema não tem ficha calculada e o ficheiro
-   * de apoio do glossário nem existe. O modelo tirou o número da cabeça.
-   *
-   * Passava porque toda a verificação de números vivia dentro do `if (ficha)`. Sem
-   * ficha, o prompt continuava a dizer "só números do material de apoio" e nada
-   * punia — o padrão crónico deste repositório. E é o defeito mais perigoso do
-   * canal: em julho saíram dois valores diferentes para a MESMA conta e uma Selic
-   * que não existe (§19.3).
-   *
-   * ⚠️ E confere-se o POR EXTENSO, não só os algarismos: a regra do canal manda
-   * dizer "duzentos reais", logo procurar por dígitos não encontraria nada.
+   * ♦ O TEMA PODE ENTRAR ATÉ AO BLOCO 2 (03/08/2026) — a trava anterior exigia-o no
+   * bloco 1 e REPROVAVA o roteiro-modelo D do dono (a capa-pergunta nem sempre cabe
+   * o nome do assunto com naturalidade; no D, "parcela" só entra no bloco 2).
+   * O casamento por família ("parcela"↔"parcelamento") vive em `keywordFalada`
+   * (lib/palavras.js) — uma regra, um sítio; a passagem 2 usa a MESMA janela.
    */
-  const VALOR_POR_EXTENSO = {
-    cem: 100, duzentos: 200, trezentos: 300, quatrocentos: 400, quinhentos: 500,
-    seiscentos: 600, setecentos: 700, oitocentos: 800, novecentos: 900, mil: 1000,
-    // "cento" fica de fora de propósito: em "por cento" não é 100, é percentagem.
+  const falaDoArranque = `${blocos[0]?.fala || ''} ${blocos[1]?.fala || ''}`;
+  if (temaTermo && blocos[0] && !keywordFalada(temaTermo, falaDoArranque)) {
+    erros.push(
+      `nem o gancho nem a empatia dizem alguma palavra do tema ("${temaTermo}") — quem clica no título `
+      + 'tem de ouvir o assunto logo no arranque. Encaixe o assunto na pergunta da capa ou, no máximo, no bloco 2.',
+    );
+  }
+
+  /**
+   * ♦ O GUARD DOS NÚMEROS FOI REDESENHADO EM 03/08/2026 — com o nome certo em cada
+   * camada, depois de a varredura adversarial derrubar duas versões.
+   *
+   * O anterior barrava QUALQUER valor sem fonte. MEDIDO: reprovava os TRÊS
+   * roteiros-modelo que o dono aprovou ("somei as minhas e deu novecentos" é número
+   * de HISTÓRIA — não afirma nada sobre o mundo, só sobre a história contada).
+   * E a verdade incómoda, provada na adversarial: nenhuma regra de texto barata
+   * separa "número de história" de "conta inventada" — a diferença é a AUTORIA.
+   * O "duzentos a mais" inventado de 01/08 é textualmente igual ao "novecentos" do
+   * dono. Fingir que uma trava resolve isso seria plantar a 15ª ocorrência.
+   *
+   * O que fica GARANTIDO POR CÓDIGO (verdade, não gosto):
+   *  1. PERCENTAGEM sem fonte → ERRO, sempre — em dígitos ("13,5%") OU por extenso
+   *     ("treze por cento"). É o caso Selic de julho, agora sem o furo do extenso.
+   *  2. Frase com RADICAL DE RENDIMENTO (rende, juros, selic, cdi, tesouro,
+   *     poupança, investe, vira/virou) + valor em dinheiro:
+   *     · sem ficha → ERRO (conta de rendimento exige conta calculada);
+   *     · com ficha → o valor tem de bater com a ficha.
+   *  3. Números de HISTÓRIA ficam por conta do PROMPT (redondos, modestos, nunca
+   *     prometendo rendimento) e do SEGUNDO LEITOR — não de regex.
+   * O buraco ASSUMIDO (está no §31): uma transformação de juros escrita sem nenhum
+   * radical escapa. O conserto verdadeiro é a ficha para mais temas (fase 2).
+   */
+  const EXTENSO_VALOR = {
+    um: 1, uma: 1, dois: 2, duas: 2, tres: 3, quatro: 4, cinco: 5, seis: 6, sete: 7, oito: 8, nove: 9,
+    dez: 10, onze: 11, doze: 12, treze: 13, catorze: 14, quatorze: 14, quinze: 15,
+    dezesseis: 16, dezessete: 17, dezoito: 18, dezenove: 19,
+    vinte: 20, trinta: 30, quarenta: 40, cinquenta: 50, sessenta: 60,
+    setenta: 70, oitenta: 80, noventa: 90,
+    cem: 100, cento: 100, duzentos: 200, duzentas: 200, trezentos: 300, trezentas: 300,
+    quatrocentos: 400, quatrocentas: 400, quinhentos: 500, quinhentas: 500,
+    seiscentos: 600, seiscentas: 600, setecentos: 700, setecentas: 700,
+    oitocentos: 800, oitocentas: 800, novecentos: 900, novecentas: 900,
   };
-  const numerosDoTexto = (txt) => new Set(
-    [...String(txt || '').matchAll(/\d[\d.]*\d|\d+/g)]
-      .map((m) => Number(String(m[0]).replace(/\./g, '')))
-      .filter((v) => Number.isFinite(v) && v >= 10),
-  );
-  if (!(ficha && Array.isArray(ficha.permitidos) && ficha.permitidos.length)) {
-    // sem ficha: só valem os números que estão no TÍTULO ou no material de apoio
-    const permitidosDoTema = new Set([...numerosDoTexto(temaTermo), ...numerosDoTexto(apoio)]);
-    const ditos = new Set();
-    const falaNorm = semAcento(falaToda);
-    for (const [palavra, valor] of Object.entries(VALOR_POR_EXTENSO)) {
-      if (new RegExp(`\\b${palavra}\\b`).test(falaNorm)) ditos.add(valor);
+  /**
+   * ♦ Lê os números por extenso COMPOSTOS: "dois mil seiscentos e noventa e nove"
+   * é UM número (2699), não quatro pedaços. A 1ª versão comparava os PEDAÇOS com a
+   * ficha e REPROVAVA o valor certo dito por extenso — exatamente como o canal
+   * manda dizer. Apanhado na revisão pós-execução, provado por teste.
+   * "por cento" corta a leitura de propósito: "quatorze por cento" é percentagem
+   * (tem trava própria), não o número 14 solto.
+   */
+  const valoresDaFrase = (frase) => {
+    const achados = new Set();
+    for (const m of String(frase).matchAll(/\d[\d.]*\d|\d+/g)) {
+      const v = Number(String(m[0]).replace(/\./g, ''));
+      if (Number.isFinite(v)) achados.add(v);
     }
-    numerosDoTexto(falaToda).forEach((v) => ditos.add(v));
-    const inventados = [...ditos].filter((v) => ![...permitidosDoTema].some((p) => Math.abs(p - v) <= 2));
-    if (inventados.length) {
+    const tokens = semAcento(frase).split(/[^\p{L}]+/u).filter(Boolean);
+    let acc = 0;      // o que ainda não passou pelo "mil"
+    let total = 0;    // milhares já fechados
+    let lendo = false;
+    const fechar = () => {
+      if (lendo && total + acc > 0) achados.add(total + acc);
+      acc = 0; total = 0; lendo = false;
+    };
+    for (let i = 0; i < tokens.length; i++) {
+      const t = tokens[i];
+      if (t === 'mil') { total += (acc || 1) * 1000; acc = 0; lendo = true; continue; }
+      if (Object.prototype.hasOwnProperty.call(EXTENSO_VALOR, t)) {
+        if (tokens[i + 1] === 'por' && tokens[i + 2] === 'cento') { acc = 0; total = 0; lendo = false; i += 2; continue; }
+        acc += EXTENSO_VALOR[t];
+        lendo = true;
+        continue;
+      }
+      if (t === 'e' && lendo) continue;
+      fechar();
+    }
+    fechar();
+    return [...achados].filter((v) => v >= 10);
+  };
+  // 1. percentagem sem fonte — sempre erro, com ficha ou sem ela
+  const fontesDePercentagem = `${temaTermo} ${apoio} ${(ficha && ficha.texto) || ''}`;
+  if ((/\bpor cento\b/.test(semAcento(falaToda)) || /%/.test(falaToda)) && !/%|por cento/i.test(fontesDePercentagem)) {
+    erros.push(
+      'a fala cita uma PERCENTAGEM e nenhuma fonte (ficha, título ou apoio) traz percentagem nenhuma — '
+      + 'taxa inventada é o defeito mais perigoso deste canal. Tire a percentagem e conte sem ela.',
+    );
+  }
+  // 2. conta de rendimento: frase a frase
+  /**
+   * ♦ "vira" SAIU da lista e "juro" (singular) também — apanhado na revisão
+   * pós-execução: o PRÓPRIO PROMPT da virada manda "o pequeno VIRA grande" e a
+   * soma de história ("cinquenta por mês vira seiscentos no ano") é ordenada por
+   * ele — punir "vira" era a 15ª ocorrência de prompt-contra-validador. E "Juro
+   * que…" (o verbo jurar) disparava o falso positivo. O custo: "doze mil vira
+   * dezoito mil" sem outro radical escapa — é o buraco JÁ assumido no §31.3.
+   */
+  const RADICAL_RENDIMENTO = /\b(rend\p{L}*|juros|selic|cdi|tesouro|poupanc\p{L}*|invest\p{L}*)\b/u;
+  for (const frase of falaToda.split(/(?<=[.!?…])\s+/)) {
+    if (!RADICAL_RENDIMENTO.test(semAcento(frase))) continue;
+    const valores = valoresDaFrase(frase);
+    if (!valores.length) continue;
+    if (!(ficha && Array.isArray(ficha.permitidos) && ficha.permitidos.length)) {
       erros.push(
-        `a fala cita ${inventados.join(', ')} e esse número NÃO existe em lado nenhum — não há conta calculada para este tema `
-        + `e o material de apoio não o traz. ${permitidosDoTema.size
-          ? `Só pode dizer: ${[...permitidosDoTema].join(', ')}.`
-          : 'Escreva as frases SEM número.'} `
-        + 'Um número errado no ar é pior do que nenhum número.',
+        `a frase "${frase.trim()}" faz uma conta de rendimento com valores (${valores.join(', ')}) e este tema NÃO tem conta calculada — `
+        + 'sem ficha, conte a virada sem prometer rendimento, ou tire o número dessa frase.',
       );
+    } else {
+      const fora = valores.filter((v) => !ficha.permitidos.some((p) => Math.abs(p - v) <= 2));
+      if (fora.length) {
+        erros.push(
+          `a frase "${frase.trim()}" cita ${fora.join(', ')} numa conta de rendimento e esse valor NÃO está na ficha calculada. `
+          + `Use só: ${ficha.permitidos.slice(0, 8).join(', ')}`,
+        );
+      }
     }
   }
 
@@ -919,7 +1198,10 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
         .filter((v) => Number.isFinite(v) && v >= 10)
         .filter((v) => !ficha.permitidos.some((p) => Math.abs(p - v) <= 2));
       if (foraDaFicha.length) {
-        erros.push(`a fala cita ${foraDaFicha.join(', ')} — número que NÃO está na ficha calculada. Use só: ${ficha.permitidos.slice(0, 6).join(', ')}`);
+        // ♦ Era ERRO e reprovava os números de HISTÓRIA do padrão do dono ("cinquenta
+        // aqui, oitenta ali"). As contas de RENDIMENTO já são conferidas frase a frase
+        // lá em cima; aqui fica o aviso, para o log contar o que foi dito fora da ficha.
+        avisos.push(`a fala cita ${foraDaFicha.join(', ')} fora da ficha — se for número de história, ok; conta de rendimento já teria reprovado acima`);
       }
     }
     // algarismos soltos na fala (a regra manda falar por extenso) que não sejam da ficha
@@ -973,8 +1255,8 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
     erros.push(`o bloco "demonstracao" cita ${quantosValores} valores em dinheiro — no máximo DOIS, senão vira boletim de banco`);
   }
 
-  // fio condutor: precisa existir NO CATÁLOGO, ser inédito e — o que faltava — ser
-  // realmente DITO na narração, em mais de um bloco (é o fio que CRESCE).
+  // fio condutor (♦ desde 03/08 é a IMAGEM DA CAPA, não precisa de ser falada):
+  // tem de existir no catálogo, ser inédito e vir do menu deste tema.
   const fio = String(n.fioCondutor || '').trim();
   if (!fio) erros.push('sem "fioCondutor"');
   else if (!METAPHORS.includes(fio)) erros.push(`fioCondutor "${fio}" fora do catálogo (${METAPHORS.join('/')})`);
@@ -985,80 +1267,22 @@ export function validarNarrativa(n, proibidas = [], ficha = null, temaTermo = ''
   else if (Array.isArray(permitidas) && permitidas.length && !permitidas.includes(fio)) {
     erros.push(`fioCondutor "${fio}" não estava no menu deste tema — escolha uma de: ${permitidas.join(', ')}`);
   }
-  else {
-    const pistas = PALAVRAS_DO_FIO[fio] || [fio];
-    const temFio = (b) => {
-      const f = String((b && b.fala) || '').toLowerCase();
-      return pistas.some((p) => f.includes(p));
-    };
-    const blocosComFio = blocos.filter(temFio).length;
-    if (blocosComFio === 0) {
-      erros.push(`o fio condutor "${fio}" foi declarado mas NÃO APARECE na fala — a imagem tem de ser DITA (ex.: ${pistas.slice(0, 3).join(', ')}…), não só escolhida`);
-    } else {
-      /**
-       * A IMAGEM ENTRA LOGO NO BLOCO 1 — e isto é o defeito nº1 de 01/08/2026.
-       *
-       * A trava só exigia "2 blocos quaisquer". O texto do prompt pedia a imagem
-       * "pequena no bloco 1", mas nada verificava, então o modelo punha-a do bloco 3
-       * em diante e passava. O dono, ao ver o vídeo: *"ele vai falar da pedra na
-       * mochila somente na metade do vídeo, sem conexão nenhuma com aquilo que foi
-       * dito até agora"*. É o padrão crónico deste repositório — o prompt pede, nada
-       * pune, o modelo ignora.
-       *
-       * Palavras dele sobre o que quer no arranque: *"Pedras na mochila podem fazer
-       * você gastar R$ 500 todo mês sem perceber! Calma! Vou te explicar..."*
-       */
-      if (!temFio(blocos[0])) {
-        erros.push(
-          `o fio condutor "${fio}" não aparece no BLOCO 1 — a imagem tem de abrir o vídeo, `
-          + 'senão a história só começa a meio e a primeira metade fica sem sentido. '
-          + `Diga-a já na primeira frase (ex.: ${pistas.slice(0, 3).join(', ')}…).`,
-        );
-      }
-      /**
-       * ⚠️ VOLTOU A 2, depois de eu o ter subido para 3 nesta mesma manhã.
-       * A exigência de 3 blocos derrubou uma das 4 tentativas do gerador, e não
-       * paga o que custa: **com o bloco 1 agora obrigatório**, "2 blocos" já
-       * significa "abre o vídeo e volta pelo menos uma vez". O crescimento da
-       * imagem é trabalho do prompt, não de mais uma trava — foi a acumular travas
-       * que o roteiro deixou de passar de todo.
-       */
-      if (blocosComFio < 2) {
-        erros.push(`o fio condutor "${fio}" aparece em 1 bloco só — ele precisa CRESCER: abre no início e volta, pelo menos, na virada ou no fecho`);
-      }
+  /**
+   * ♦ AQUI VIVIAM AS TRÊS TRAVAS DO FIO FALADO (dito na fala · no bloco 1 · em ≥2
+   * blocos). SAÍRAM em 03/08/2026 com o padrão aprovado pelo dono: a metáfora
+   * quase desapareceu da NARRAÇÃO — a imagem vive na CAPA VISUAL (é o campo
+   * "fioCondutor", que agora vai gravado no script para a capa e a música) e não
+   * precisa de ser falada. MEDIDO: as três reprovavam os roteiros-modelo D/E/F.
+   * O campo continua obrigatório e conferido (catálogo, inédito, menu) — é ele que
+   * escolhe a cena da capa e a trilha.
+   */
 
-      // ⚠️ A exigência de a imagem entrar como COMPARAÇÃO ("que parece", "é tipo")
-      // e não como definição ("X são Y") saiu daqui e foi para o SEGUNDO LEITOR.
-      // Continua a ser regra — está no catálogo de vícios da voz do canal — mas é
-      // ele que a julga: uma lista de palavras de comparação obrigava a colar
-      // "parece" algures na frase, que é o atalho, não o objetivo.
-    }
-  }
-
-  // pergunta segurada: existe, é curta, e o fecho é quem a responde
-  const perg = String(n.perguntaAberta || '').trim();
-  if (!perg) erros.push('sem "perguntaAberta"');
-  else if (perg.length > 26) erros.push(`"perguntaAberta" tem ${perg.length} chars (máximo 26 — é texto de tela)`);
-  else if (!/\?$/.test(perg)) erros.push('"perguntaAberta" tem de ser uma pergunta e terminar com "?"');
-  else {
-    // No 3º teste saiu "TESOURO DIRETO COM 100 VALE?" — o tema espremido até caber,
-    // virando frase truncada. A pergunta é a DÚVIDA, não o título do vídeo.
-    const palavrasDoTema = String(temaTermo || '')
-      .toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
-      .split(/\W+/).filter((w) => w.length >= 4);
-    const pergNorm = perg.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-    const repetidas = palavrasDoTema.filter((w) => pergNorm.includes(w));
-    if (repetidas.length >= 2) {
-      erros.push(`"perguntaAberta" repete o tema ("${repetidas.slice(0, 2).join(' ')}") — ela é a DÚVIDA crua, não o título (ex.: "QUANTO RENDE MESMO?")`);
-    }
-    // 1ª PESSOA NA PERGUNTA DA TELA. No 4º teste saiu "QUANTO RENDI DE VERDADE?" —
-    // "rendi" é passado, 1ª pessoa, e foi parar na TELA com erro de português. A
-    // pergunta é a dúvida de QUEM ASSISTE, então nunca está na 1ª pessoa.
-    const primeiraPessoa = pergNorm.match(/\b(rendi|ganhei|perdi|investi|guardei|paguei|juntei|gastei|economizei|comprei)\b/);
-    if (primeiraPessoa) {
-      erros.push(`"perguntaAberta" usa "${primeiraPessoa[0]}" (1ª pessoa do passado) — a pergunta é a dúvida de QUEM ASSISTE. Use a 3ª pessoa: "QUANTO RENDE MESMO?"`);
-    }
-  }
+  /**
+   * ♦ AQUI VIVIA A "perguntaAberta" (a pergunta pendurada na tela) e as suas 5
+   * validações. REMOVIDA em 03/08/2026: o padrão aprovado pelo dono proíbe
+   * pergunta pendurada — a pergunta agora É a capa (1ª frase) e a resposta vem
+   * colada. Verificado por grep: nenhum outro ficheiro consumia o campo.
+   */
 
   /**
    * ⚠️ AQUI ESTAVA UM AVISO DE ENCADEAMENTO QUE NUNCA DISPAROU — e foi por isso que
@@ -1107,6 +1331,33 @@ const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
  */
 const SOBRE_TAMANHO = /narração (curta|longa) demais/;
 
+/**
+ * O CORRETIVO PEDE CIRURGIA, NÃO REESCRITA (02/08/2026) — e a causa está medida.
+ *
+ * A ordem anterior acabava em *"reescrevendo a narração inteira"*. MEDIDO em duas
+ * corridas reais de hoje, que falharam as 4 tentativas: o gerador oscilava entre DOIS
+ * defeitos, sempre os mesmos. Tentativa 1 copia uma frase do exemplo → mandam-no
+ * reescrever tudo → tentativa 2 já não copia mas tem 145 palavras → reescreve tudo
+ * outra vez → tentativa 3 volta a copiar. Conserta a queixa e parte o que já estava bem.
+ *
+ * A queixa costuma ser de UMA frase; a ordem é que era do texto todo. Isto não é trava
+ * nova nem regra nova sobre o que escrever — é dizer-lhe ONDE mexer. Uma frase trocada
+ * pelo mesmo número de palavras não mexe no tamanho, e o pêndulo perde as duas pernas.
+ *
+ * Vive numa função só porque o mesmo aviso é usado no erro de JSON e no de validação —
+ * escritos à mão em dois sítios, um dia divergiam.
+ */
+export function montarCorretivo(exigencias) {
+  return [
+    '⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo:',
+    ...exigencias,
+    '',
+    '⛔ **MEXA SÓ NO QUE ESTÁ APONTADO ACIMA.** Todo o resto — cada bloco e cada frase de que ninguém se queixou — volta EXATAMENTE IGUAL, palavra por palavra.',
+    'Reescrever o texto todo é o que faz este roteiro falhar: você conserta a queixa e parte outra coisa que já estava certa.',
+    'Se a queixa for uma frase copiada do exemplo, troque SÓ essa frase por outra sua, **com mais ou menos o mesmo número de palavras** — o resto do bloco fica como está.',
+  ].join('\n');
+}
+
 export function acumularExigencias(exigencias, novosErros) {
   const novas = novosErros.map((e) => `- ${e}`);
   if (novas.some((e) => SOBRE_TAMANHO.test(e))) {
@@ -1122,24 +1373,29 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
   const base = buildPromptNarrativa(t, proibidas, frasesRecentes, ficha);
   // a MESMA lista que foi ao prompt é a que a validação exige (§20.2 B3)
   const { lista: permitidas } = escolherImagens(`${t.term || ''} ${t.angle || ''} ${t.definition || ''}`, proibidas);
+  // O TEMA é o contexto da correção de nomes (ver `corrigirNomes`). Fica calculado uma
+  // vez: não depende do que o modelo escrever, e é isso que o torna seguro.
+  const temaTexto = `${t.term || ''} ${t.angle || ''} ${t.definition || ''}`;
   let corretivo = '';
   const exigencias = [];
   for (let i = 1; i <= tentativas; i++) {
     if (i > 1) await dormir(20000); // mesmo respiro do gerador atual (token bucket)
     const prompt = corretivo ? `${base}\n\n${corretivo}` : base;
-    const bruto = await generateText(prompt, { maxTokens: 4000, temperature: 0.7 });
+    // `pago: 'escritor'` = gpt-5-2 pelo kie.ai, com os três gratuitos como rede por
+    // baixo. Ver `provedorPago` em apis/kie-ai.js para porque é este e não o Sonnet.
+    const bruto = await generateText(prompt, { maxTokens: 4000, temperature: 0.7, pago: 'escritor' });
     let n;
     try {
       n = extrairJson(bruto);
     } catch (err) {
       exigencias.push(`- devolva JSON válido (${err.message})`);
-      corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo:\n${[...new Set(exigencias)].join('\n')}`;
+      corretivo = montarCorretivo([...new Set(exigencias)]);
       continue;
     }
     // limpeza mecanica ANTES de validar: o que da para consertar por codigo nao
     // pode custar uma tentativa (ver limparFala e o pendulo do 5o teste).
     if (Array.isArray(n.blocos)) {
-      for (const b of n.blocos) if (b && typeof b.fala === 'string') b.fala = limparFala(b.fala);
+      for (const b of n.blocos) if (b && typeof b.fala === 'string') b.fala = limparFala(b.fala, temaTexto);
     }
     const apoio = `${(t && t.definition) || ''} ${(t && t.body) || ''}`;
     const conferir = (cand) => validarNarrativa(cand, proibidas, ficha, t && t.term, permitidas, apoio);
@@ -1152,7 +1408,19 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
        * Ele só mexe nas palavras; o resultado volta a passar pelas mesmas travas e,
        * se as partir, fica o original. Ver lib/segundo-leitor.js.
        */
-      const lido = await revisarFala(n, (t && t.term) || '', conferir);
+      /**
+       * ⚠️ A LIMPEZA VAI COM ELE, e é de propósito que vai como PARÂMETRO.
+       * O texto que o leitor devolve é julgado DENTRO de `revisarFala`; se a limpeza
+       * mecânica só corresse cá fora, o leitor seria reprovado por um "taxa mínima" que
+       * o código já sabe consertar — e perdia-se a edição inteira por causa disso.
+       * Passa-se a função em vez de a importar lá dentro: `roteiro-narrativa.js` já
+       * importa `revisarFala`, e o caminho inverso fecharia um ciclo entre os dois.
+       */
+      const limpar = (cand) => ({
+        ...cand,
+        blocos: (cand.blocos || []).map((b) => ({ ...b, fala: limparFala(b.fala, temaTexto) })),
+      });
+      const lido = await revisarFala(n, (t && t.term) || '', conferir, { limpar });
       if (lido.usada === 'leitor') {
         const vf = conferir(lido.narrativa);
         return { narrativa: lido.narrativa, avisos: vf.avisos, palavras: vf.palavras, tentativa: i, mexi: lido.mexi };
@@ -1161,7 +1429,7 @@ export async function gerarNarrativa(t, { tentativas = 4, proibidas = [], frases
     }
     // ver `acumularExigencias`: o tamanho substitui, o resto acumula
     const lista = acumularExigencias(exigencias, v.erros);
-    corretivo = `⚠️ A TENTATIVA ANTERIOR FOI REJEITADA. Corrija TUDO isto ao mesmo tempo, reescrevendo a narração inteira:\n${lista.join('\n')}`;
+    corretivo = montarCorretivo(lista);
     console.log(`  ⚠ tentativa ${i}/${tentativas} reprovada: ${v.erros.join(' | ')}`);
   }
   throw new Error(`narração não passou na validação após ${tentativas} tentativas`);
@@ -1199,7 +1467,7 @@ if (executadoDireto) {
 
   console.log(`✅ aprovada na tentativa ${tentativa} — ${palavras} palavras (~${(palavras / PALAVRAS_POR_SEGUNDO).toFixed(0)}s de fala)`);
   // O que o SEGUNDO LEITOR mexeu. É a única janela para o trabalho dele — sem isto
-  // ninguém sabe se ele está a melhorar a fala ou a passar a mão por cima.
+  // ninguém sabe se ele está melhorar a fala ou a passar a mão por cima.
   if (leitorFalhou) {
     console.log(`📖 segundo leitor NÃO foi usado: ${leitorFalhou}`);
   } else if (mexi && mexi.length) {
@@ -1208,8 +1476,7 @@ if (executadoDireto) {
   } else {
     console.log('📖 segundo leitor leu e não mexeu em nada.');
   }
-  console.log(`🧵 fio condutor: ${narrativa.fioCondutor}`);
-  console.log(`❓ pergunta segurada: ${narrativa.perguntaAberta}\n`);
+  console.log(`🧵 imagem da capa: ${narrativa.fioCondutor}\n`);
   console.log('─'.repeat(72));
   for (const b of narrativa.blocos) {
     console.log(`\n[${b.papel.toUpperCase()}]`);

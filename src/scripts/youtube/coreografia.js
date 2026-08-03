@@ -26,6 +26,11 @@
  */
 
 import { generateText } from '../apis/kie-ai.js';
+// A música deste vídeo sai daqui, do TEMA — não se pergunta ao modelo. Ver `musica.js`.
+import { escolherTrilha } from './lib/musica.js';
+import { keywordFalada, semAcento } from './lib/palavras.js';
+import { readFileSync as lerFicheiro } from 'node:fs';
+import { join as joinPath } from 'node:path';
 import {
   validateShortScript, VISUAL_TYPES, METAPHORS, ICONS, SFX, APP_SCREENS, MAX_SHOTS, MAX_TOTAL_SEC,
 } from './lib/schema-short.js';
@@ -56,34 +61,19 @@ export function palavrasAncoraveis(fala) {
   return lista;
 }
 
-// Palavras que não servem de palavra-chave por serem vazias de assunto.
-const VAZIAS = new Set(['que', 'com', 'para', 'por', 'uma', 'umas', 'uns', 'dos', 'das', 'nos', 'nas',
-  'pelo', 'pela', 'seu', 'sua', 'voce', 'mes', 'todo', 'toda', 'cada', 'mais', 'menos', 'isso',
-  'esse', 'essa', 'aquilo', 'como', 'quando', 'onde', 'quanto', 'custam', 'custa', 'ganha', 'vale', 'pena']);
-
-const semAcento = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-
 /**
- * A PALAVRA-CHAVE TEM DE SER UMA QUE FOI MESMO DITA (erro apanhado em 31/07).
+ * ⚠️ `keywordFalada` E `semAcento` MUDARAM-SE PARA `lib/palavras.js` (02/08/2026),
+ * e isso desfez um **círculo que impedia o robô diário de arrancar**.
  *
- * O validador exige que `keyword` apareça na narração do gancho. A 1ª versão punha
- * `keyword = t.term` — mas num tema editorial o `term` é a frase inteira
- * ("3 erros de cartão que te custam R$ 500/mês"), que nenhuma narração vai conter.
- * Resultado: reprovou 4 tentativas seguidas com um erro que **o modelo não podia
- * corrigir**, porque a narração vem fechada da passagem 1. Pêndulo garantido.
+ * Em 01/08 a passagem 1 passou a importar esta função daqui, e este ficheiro, quando
+ * corre sozinho (que é como o robô o chama), espera no fim para ir buscar a passagem
+ * 1. As duas ficavam à espera uma da outra: o processo morria em silêncio, sem erro.
+ * O defeito entrou 4h39m DEPOIS de o robô ter sido desligado, por isso nunca correu.
+ * A explicação completa está no cabeçalho de `lib/palavras.js`.
  *
- * Agora escolhe-se, de entre as palavras do tema, a mais longa que o gancho DIZ.
- * `term` continua a ser o tema inteiro (é ele que dá o título); `keyword` passa a
- * ser a âncora falada.
+ * Continua a ser re-exportada daqui para quem já a importava deste sítio.
  */
-export function keywordFalada(termo, falaDoGancho) {
-  const gancho = semAcento(falaDoGancho);
-  const candidatas = String(termo || '')
-    .split(/[^\p{L}\p{N}]+/u)
-    .filter((w) => w.length >= 4 && !VAZIAS.has(semAcento(w)))
-    .sort((a, b) => b.length - a.length);
-  return candidatas.find((w) => gancho.includes(semAcento(w))) || null;
-}
+export { keywordFalada };
 
 /** Duração da cena a partir das palavras — calculada, nunca pedida ao modelo. */
 export function duracaoDoBloco(fala) {
@@ -153,12 +143,12 @@ CATÁLOGOS (fora deles o roteiro é rejeitado):
 · Um segundo shot do app é bem-vindo, mas só num bloco LONGO (VIRADA ou DEMONSTRACAO).
 
 ════════ TEXTO NA TELA ════════
-Curto. A pessoa lê de relance, no telemóvel, enquanto ouve. Até 6 palavras.
+Curto. A pessoa lê de relance, no celular, enquanto ouve. Até 6 palavras.
 ⛔ O texto da tela NÃO repete a frase falada — ou destaca a parte que importa, ou mostra o número.
 
 Responda APENAS com JSON válido, sem markdown:
 {
-  "introFrase": "<a frase de abertura, que aparece ANTES do vídeo começar. Até 9 palavras, com a parte forte entre *asteriscos*>",
+  "introFrase": "<a PRIMEIRA FRASE do bloco 1, COPIADA À LETRA, sem tirar nem pôr uma palavra — só com a parte forte entre *asteriscos*. NÃO invente uma frase nova: o que está escrito na capa é o que a voz diz nesse instante>",
   "ctaTexto": "<até 7 palavras, o título que aparece por cima do botão de comentar>",
   "blocos": [
     { "papel": "gancho", "shots": [ { "ancoraIndice": 2, "visual": { "type": "statement", "text": "…" }, "sfx": "boom" } ] },
@@ -277,10 +267,51 @@ export function validarPlano(plano, narrativa) {
     }
   }
 
+  /**
+   * A CAPA DIZ O QUE A VOZ DIZ (02/08/2026) — ideia do dono, e tem conta por trás.
+   *
+   * Até aqui a capa mostrava uma frase INVENTADA aqui, e a voz dizia outra coisa por
+   * cima. O dono, ao ver o vídeo: *"o gancho correto pro início deveria ser falar o
+   * que está escrito na primeira cena… e com o homem caindo, isso sim seria um gancho
+   * de respeito"*.
+   *
+   * A conta dá-lhe razão: a capa fica **3,5s** no tela e a voz entra aos **0,9s** —
+   * são 2,6s de voz sobre a capa, que a 2,76 palavras/s dão **~7 palavras**. Ou seja,
+   * a primeira frase falada CABE inteira na capa. Ler e ouvir a mesma coisa ao mesmo
+   * tempo bate com muito mais força do que ler uma e ouvir outra.
+   *
+   * Por isso a frase da capa deixa de ser inventada: é a 1ª frase do bloco 1, copiada.
+   * O modelo só escolhe qual a palavra a destacar (os *asteriscos*) — e o código
+   * confere que não mexeu em mais nada. Uma fonte, um sítio.
+   */
   if (!plano.introFrase || typeof plano.introFrase !== 'string') erros.push('sem "introFrase"');
+  else {
+    const primeiraFrase = String(narrativa?.blocos?.[0]?.fala || '').split(/(?<=[.!?…])\s+/)[0] || '';
+    const limpar = (s) => String(s).replace(/\*/g, '').replace(/\s+/g, ' ').trim().toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '');
+    if (primeiraFrase && limpar(plano.introFrase) !== limpar(primeiraFrase)) {
+      erros.push(
+        `"introFrase" não é a 1ª frase do bloco 1. Copie-a à letra e ponha só os *asteriscos*: "${primeiraFrase}" `
+        + `(veio: "${plano.introFrase}")`,
+      );
+    }
+  }
   if (!plano.ctaTexto || typeof plano.ctaTexto !== 'string') erros.push('sem "ctaTexto"');
 
   return { ok: erros.length === 0, erros };
+}
+
+/**
+ * Quantos vídeos o canal já publicou. Serve só de roda-dentada para os temas cujo
+ * clima não se conhece — assim as três faixas saem por igual sem guardar estado novo
+ * em lado nenhum: o registo de publicações já existe e já é a contagem.
+ * Se o ficheiro não existir (máquina limpa, primeiro vídeo), devolve 0 sem drama.
+ */
+function contarPublicados() {
+  try {
+    const p = joinPath(process.cwd(), '.github', 'data', 'youtube-published.json');
+    return Object.keys(JSON.parse(lerFicheiro(p, 'utf-8'))).length;
+  } catch { return 0; }
 }
 
 // ─── montagem do roteiro final ───────────────────────────────────────────────
@@ -310,10 +341,30 @@ export function montarRoteiro(t, narrativa, plano) {
     slug: t.slug,
     term: t.term,
     category: t.category || 'basico',
-    // a âncora falada, não o tema inteiro (ver `keywordFalada`)
-    keyword: keywordFalada(t.term, narrativa.blocos[0]?.fala) || t.term,
+    // a âncora falada, não o tema inteiro (ver `keywordFalada`).
+    // ♦ Desde 03/08/2026 a janela são os blocos 1+2 — a MESMA da trava da passagem 1
+    // e do validador do schema: com a capa-pergunta, o tema pode entrar só no bloco 2.
+    keyword: keywordFalada(t.term, `${narrativa.blocos[0]?.fala || ''} ${narrativa.blocos[1]?.fala || ''}`) || t.term,
     nextVideoTitle: '',
     intro: { style: 'pergunta', frase: plano.introFrase },
+    /**
+     * A MÚSICA DESTE VÍDEO — decidida aqui e GRAVADA no roteiro (02/08/2026).
+     *
+     * Fica escrita no ficheiro por duas razões: quem monta o vídeo sabe qual tocar
+     * sem adivinhar, e quem escreve a descrição credita a faixa CERTA. Com três
+     * faixas a rodar, um crédito fixo estaria errado em dois vídeos em cada três.
+     * A escolha vem do tema, pela imagem do vídeo — sem chamada de IA nenhuma.
+     */
+    music: escolherTrilha(narrativa.fioCondutor, contarPublicados()),
+    /**
+     * ♦ A IMAGEM DO VÍDEO GRAVADA NO TOPO (03/08/2026). Desde o padrão novo a
+     * metáfora não precisa de ser FALADA — logo pode não haver nenhum shot de
+     * metáfora, e a capa (que a escolhia pelo 1º shot) e a janela anti-repetição
+     * (que a lia dos shots) ficavam ÀS CEGAS em silêncio. O campo é a fonte;
+     * o scan dos shots vira fallback para os roteiros antigos. Mesma manobra do
+     * campo `music` acima.
+     */
+    fioCondutor: narrativa.fioCondutor,
     scenes,
     cta: { text: plano.ctaTexto, target: 'app' },
     totalDurationSec: Math.round(scenes.reduce((a, s) => a + s.durationSec, 0) * 10) / 10,
@@ -339,10 +390,13 @@ export async function gerarCoreografia(t, narrativa, { tentativas = 4 } = {}) {
   // fechada da passagem 1 e ele só escreve o visual. Quatro chamadas de IA
   // queimadas e uma mensagem de erro que apontava para o sítio errado.
   // Estas verificações correm ANTES do ciclo e dizem qual é a causa real.
-  const kw = keywordFalada(t.term, narrativa.blocos[0]?.fala);
+  // ♦ Janela alargada para blocos 1+2 em 03/08/2026 — a MESMA da passagem 1 e do
+  // schema, senão a passagem 2 mataria o caso que a passagem 1 passou a permitir
+  // (o tema dito só no bloco 2, como no roteiro-modelo D do dono).
+  const kw = keywordFalada(t.term, `${narrativa.blocos[0]?.fala || ''} ${narrativa.blocos[1]?.fala || ''}`);
   if (!kw) {
     throw new Error(
-      `o gancho não diz nenhuma palavra do tema ("${t.term}") — o defeito é da PASSAGEM 1. `
+      `nem o gancho nem a empatia dizem alguma palavra do tema ("${t.term}") — o defeito é da PASSAGEM 1. `
       + 'A passagem 2 só escreve o visual e não tem como consertar isto reescrevendo shots.',
     );
   }
@@ -359,7 +413,11 @@ export async function gerarCoreografia(t, narrativa, { tentativas = 4 } = {}) {
 
   for (let i = 1; i <= tentativas; i++) {
     if (i > 1) await dormir(20000);
-    const bruto = await generateText(corretivo ? `${base}\n\n${corretivo}` : base, { maxTokens: 4000, temperature: 0.6 });
+    // `pago: 'escritor'` = gpt-5-2 pelo kie.ai, com os três gratuitos como rede por
+    // baixo (ver `provedorPago` em apis/kie-ai.js). É a terceira e última chamada do
+    // vídeo: ~0,4 cêntimos. Ela decide ONDE cada imagem entra e em que palavra — o
+    // texto pode estar perfeito e o vídeo continuar sem sentido se isto falhar.
+    const bruto = await generateText(corretivo ? `${base}\n\n${corretivo}` : base, { maxTokens: 4000, temperature: 0.6, pago: 'escritor' });
 
     let plano;
     try {

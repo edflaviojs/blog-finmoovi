@@ -66,6 +66,87 @@ function getTextProviders() {
 }
 
 /**
+ * O PROVEDOR PAGO — kie.ai, e só para quem PEDIR (02/08/2026).
+ *
+ * ⚠️ ISTO É OPT-IN, E A RAZÃO É DINHEIRO. Esta mesma `generateText` serve os 27 robôs
+ * do blog. Se o pago entrasse por omissão, **todos os posts do blog passavam a ser
+ * pagos** — e um post é ~10× maior que um vídeo. Só quem passar `pago:` o usa; hoje
+ * são dois sítios, ambos do vídeo curto: o escritor e o segundo leitor.
+ *
+ * ⚠️ A CHAVE CHAMA-SE `KIE_AI_KEY` E NÃO `KIE_API_KEY`. A segunda já existe em ~25
+ * workflows deste repositório e aponta para o **Groq** (ver `getTextProviders`).
+ * Reaproveitar o nome mandaria a chave do kie.ai para a porta do Groq.
+ *
+ * QUEM FAZ O QUÊ, e é decisão medida em 02/08 (IMPLEMENTACAO20 §25.6), não gosto:
+ *  · ESCRITOR = gpt-5-2. Num duelo de 5 rondas contra 3, o Sonnet foi reprovado
+ *    SEMPRE por tamanho (187, 181, 176, 159 e 152 palavras, com o limite em 140);
+ *    o GPT saiu com 140 e 137. O escritor tem de caber no número.
+ *  · LEITOR = claude-sonnet-5. Ele não tem número para cumprir (só pode crescer 5%),
+ *    é ele que julga o tom, e se a versão dele partir uma trava fica o original.
+ *
+ * As duas famílias falam LÍNGUAS diferentes (o kie revende cada uma ao dono original),
+ * daí o campo `formato`. A chave é a mesma para as duas.
+ */
+/**
+ * ♦ O LEITOR GANHOU SUBSTITUTOS (03/08/2026, ordem do dono) — e a causa foi vivida
+ * no próprio dia: o claude-sonnet-5 do kie.ai ficou AVARIADO (HTTP 500 em 16+
+ * pedidos, duas verificações com horas de intervalo) e as duas gerações do dia
+ * saíram SEM polimento, porque a rede por baixo era só o Groq gratuito (que no
+ * ambiente local nem chave válida tem). Num dia de avaria, o robô diário
+ * publicaria texto áspero sem ninguém saber.
+ *
+ * A fila do leitor: claude-sonnet-5 → gemini-3-pro → gpt-5-2.
+ *  · O Gemini vem ANTES do GPT de propósito: o escritor É o gpt-5-2, e quem relê
+ *    não deve ser da família de quem escreveu (o aluno a corrigir a própria
+ *    prova). O Gemini mantém o olhar independente e ainda é mais barato que o
+ *    Sonnet (0,38 vs 0,72 cêntimos por leitura).
+ *  · O GPT fica como último recurso pago: reler com o mesmo modelo ainda é melhor
+ *    do que publicar sem releitura.
+ * O ESCRITOR continua um só (gpt-5-2, decisão medida em §25.6 — o Sonnet estourava
+ * o tamanho 5 vezes em 5); a rede gratuita continua por baixo, como sempre.
+ */
+function provedoresPagos(papel) {
+  const chave = process.env.KIE_AI_KEY;
+  if (!chave || !papel) return [];
+  if (papel === 'leitor') {
+    return [
+      {
+        name: 'kie/claude-sonnet-5',
+        url: 'https://api.kie.ai/claude/v1/messages',
+        apiKey: chave,
+        model: 'claude-sonnet-5',
+        formato: 'anthropic',
+        insistir: 8,
+      },
+      {
+        name: 'kie/gemini-3-pro',
+        url: 'https://api.kie.ai/gemini-3-pro/v1/chat/completions',
+        apiKey: chave,
+        model: 'gemini-3-pro',
+        formato: 'openai',
+        insistir: 8,
+      },
+      {
+        name: 'kie/gpt-5-2',
+        url: 'https://api.kie.ai/gpt-5-2/v1/chat/completions',
+        apiKey: chave,
+        model: 'gpt-5-2',
+        formato: 'openai',
+        insistir: 8,
+      },
+    ];
+  }
+  return [{
+    name: 'kie/gpt-5-2',
+    url: 'https://api.kie.ai/gpt-5-2/v1/chat/completions',
+    apiKey: chave,
+    model: 'gpt-5-2',
+    formato: 'openai',
+    insistir: 8,
+  }];
+}
+
+/**
  * Gera texto com roteamento entre múltiplos provedores (API compatível OpenAI).
  * Tenta cada provedor na ordem; em rate limit (429) faz backoff curto e retenta
  * o mesmo; em erro/queda ou 429 esgotado, cai para o próximo provedor. Só lança
@@ -77,9 +158,15 @@ export async function generateText(prompt, options = {}) {
     temperature = 0.7,
     model,             // override opcional — aplicado apenas ao provedor primário
     retries = 2,       // tentativas por provedor em caso de 429
+    pago = null,       // 'escritor' | 'leitor' — opt-in dos modelos pagos (ver provedoresPagos)
   } = options;
 
   const providers = getTextProviders();
+  // Os pagos entram à FRENTE (na ordem da fila), e os gratuitos ficam como rede
+  // por baixo: se todos falharem, o vídeo sai à mesma com um gratuito.
+  const pagos = provedoresPagos(pago);
+  if (pagos.length) providers.unshift(...pagos);
+  const oPago = pagos.length > 0;
   if (providers.length === 0) {
     throw new Error('Nenhum provedor de IA configurado (defina CEREBRAS_API_KEY, GROQ_API_KEY/KIE_API_KEY ou CLOUDFLARE_ACCOUNT_ID+CLOUDFLARE_AI_TOKEN).');
   }
@@ -88,7 +175,17 @@ export async function generateText(prompt, options = {}) {
 
   for (let p = 0; p < providers.length; p++) {
     const provider = providers[p];
-    const useModel = (p === 0 && model) ? model : provider.model;
+    // o override de modelo continua a valer só para o primário GRATUITO — com o pago
+    // à frente, `p === 0` deixaria de ser quem o chamador julga que é.
+    const useModel = (p === 0 && model && !oPago) ? model : provider.model;
+    /**
+     * ⚠️ INSISTIR MUITO NO PAGO, e é medição: em 16 pedidos iguais ao kie.ai, 15
+     * falharam com HTTP 500 ("Network error") — avaria do lado deles, nunca um 429 de
+     * limite de taxa. E **as falhas NÃO consomem créditos** (medido: 15 falhas = 0).
+     * Logo insistir custa tempo e não dinheiro. Sem isto, o vídeo caía no gratuito
+     * quase sempre e o pago não servia para nada.
+     */
+    const maxTentativas = provider.insistir || retries;
 
     // Orçamento por requisição: provedores com tier de tokens-por-minuto contam
     // prompt + max_tokens contra o MESMO teto. Estimar antes evita queimar uma
@@ -109,16 +206,22 @@ export async function generateText(prompt, options = {}) {
       }
     }
 
-    for (let attempt = 1; attempt <= retries; attempt++) {
+    for (let attempt = 1; attempt <= maxTentativas; attempt++) {
       let response;
       try {
-        response = await fetch(provider.url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${provider.apiKey}`,
-          },
-          body: JSON.stringify({
+        // Cada família fala a sua língua. A do Claude no kie.ai exige `max_tokens`,
+        // `stream:false` e `thinkingFlag:false`, e leva o sistema num campo próprio.
+        const corpo = provider.formato === 'anthropic'
+          ? {
+            model: useModel,
+            system: config.ai.personality,
+            messages: [{ role: 'user', content: prompt }],
+            max_tokens: maxTokens,
+            temperature,
+            thinkingFlag: false,
+            stream: false,
+          }
+          : {
             model: useModel,
             messages: [
               { role: 'system', content: config.ai.personality },
@@ -126,7 +229,14 @@ export async function generateText(prompt, options = {}) {
             ],
             max_tokens: maxTokens,
             temperature,
-          }),
+          };
+        response = await fetch(provider.url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${provider.apiKey}`,
+          },
+          body: JSON.stringify(corpo),
         });
       } catch (err) {
         errors.push(`${provider.name}: erro de rede (${err.message})`);
@@ -136,7 +246,18 @@ export async function generateText(prompt, options = {}) {
 
       if (response.ok) {
         const data = await response.json();
-        const content = data.choices?.[0]?.message?.content || '';
+        // ⚠️ O kie.ai devolve HTTP 200 com um corpo de erro quando a chave é inválida
+        // (medido: `{"code":401,...}` com estado 200). Sem esta linha, uma chave errada
+        // parecia "resposta vazia" e caía em silêncio para o gratuito — a conta certa
+        // seria descobrir isso semanas depois, a olhar para vídeos piores.
+        if (provider.formato === 'anthropic' && data.code && Number(data.code) !== 200) {
+          errors.push(`${provider.name}: ${data.msg || `código ${data.code}`}`);
+          console.log(`⚠️ ${provider.name} recusou (${data.msg || data.code}) — tentando próximo provedor...`);
+          break;
+        }
+        const content = provider.formato === 'anthropic'
+          ? (data.content || []).filter((c) => c && c.type === 'text').map((c) => c.text).join('')
+          : (data.choices?.[0]?.message?.content || '');
         if (content) {
           const via = p > 0 ? ` (fallback #${p})` : ' (primário)';
           console.log(`🤖 Texto gerado via ${provider.name} — ${useModel}${via}`);
@@ -147,11 +268,19 @@ export async function generateText(prompt, options = {}) {
         break; // resposta vazia → próximo provedor
       }
 
-      if (response.status === 429 && attempt < retries) {
+      if (response.status === 429 && attempt < maxTentativas) {
         const wait = Math.ceil(20 * attempt);
-        console.log(`⏳ ${provider.name}: rate limit (429). Aguardando ${wait}s (tentativa ${attempt}/${retries})...`);
+        console.log(`⏳ ${provider.name}: rate limit (429). Aguardando ${wait}s (tentativa ${attempt}/${maxTentativas})...`);
         await new Promise(r => setTimeout(r, wait * 1000));
         continue; // retenta o MESMO provedor
+      }
+      // Avaria do fornecedor (5xx): retentar o MESMO, e depressa. Só para quem declara
+      // `insistir` — ou seja, hoje só o pago. Nos gratuitos um 5xx continua a saltar
+      // para o seguinte, que é o que sempre fez.
+      if (provider.insistir && response.status >= 500 && attempt < maxTentativas) {
+        console.log(`🔁 ${provider.name}: avaria do fornecedor (HTTP ${response.status}). Tentativa ${attempt}/${maxTentativas} — falhas não custam créditos.`);
+        await new Promise(r => setTimeout(r, 2000));
+        continue;
       }
 
       const errText = await response.text().catch(() => '');

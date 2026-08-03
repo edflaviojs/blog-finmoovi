@@ -44,8 +44,9 @@ export const VICIOS = `
 1. CONTRASTE BINÁRIO — "não é X, é Y" / "a pergunta não é X, é Y".
    Diga Y e pronto. ✗ "Não é o juro que te quebra, é o mínimo." ✓ "O que te quebra é o mínimo."
 
-2. PERGUNTA-RESPOSTA COLADA — a frase acaba a perguntar e a seguinte repete a pergunta para responder.
+2. PERGUNTA-RESPOSTA COLADA — a frase acaba a perguntar e a seguinte REPETE a pergunta para responder.
    ✗ "…qual pesa mais? / A que pesa mais é…"  ✓ "…qual pesa mais? / É a fatura que você deixou pra depois."
+   ⚠️ Perguntar e responder DIRETO é o padrão da capa deste canal — o vício é só o eco da pergunta dentro da resposta.
 
 3. ECO — abrir uma frase repetindo a última palavra da anterior, sobretudo como pergunta solta.
    ✗ "…faz a dívida crescer." → "Crescer assim?"
@@ -79,15 +80,23 @@ export const VICIOS = `
 
 14. METÁFORA QUE SE CONTRADIZ — a imagem tem de funcionar com a física dela do princípio ao fim.
     ✗ "esvaziando a mochila" quando o que a enche são pedras (fica mais PESADA, nunca mais vazia).
+
+15. CONECTOR DE TEXTO ESCRITO — "Além disso", "Ademais", "Portanto", "No entanto", "Dessa forma",
+    "Sendo assim", "Em suma", "Vale ressaltar", "Por outro lado". Isto escreve-se, não se fala.
+    ⚠️ **TROQUE o conector, NUNCA o corte.** Sem elo nenhum as frases ficam soltas, e frase solta é
+    o defeito que este canal mais paga. O elo falado existe e é curto:
+      "Além disso," → "E aí" · "No entanto," → "Só que" · "Portanto," → "Então" · "Dessa forma," → "Assim"
+    ✗ "Além disso, você ainda paga juros."   ✓ "E aí você ainda paga juros."
 `;
 
 /** A versão curta, para o ESCRITOR. Só os cinco que mais aparecem. */
 export const VICIOS_ESSENCIAIS = `
 ⛔ Nada de "não é X, é Y" — diga só o Y.
-⛔ Nada de acabar a perguntar e a frase seguinte repetir a pergunta para responder.
+⛔ Nada de acabar a perguntar e a frase seguinte REPETIR a pergunta para responder. (Perguntar e responder direto é o padrão da capa — o vício é só o eco.)
 ⛔ Nada de abrir uma frase ecoando a última palavra da anterior.
 ⛔ Nada de palavra de escritório (drenagem, solução, estratégia) nem jargão de banco (rotativo, amortizar, encargos).
 ⛔ Nada de importância postiça ("é fundamental", "isso muda tudo").
+⛔ Nada de conector de texto escrito ("Além disso", "Portanto", "No entanto", "Dessa forma") — a fala liga com "E aí", "Só que", "Então". Trocar, nunca cortar: sem elo a frase fica solta.
 `;
 
 /**

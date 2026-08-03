@@ -183,11 +183,25 @@ export function loadRecentPublishedContext({ publishedPath = PUBLISHED_PATH, out
     const scenes = Array.isArray(script && script.scenes) ? script.scenes : [];
     const metaphors = [];
     const stories = [];
+    /**
+     * ♦ A IMAGEM VEM PRIMEIRO DO CAMPO `fioCondutor` (03/08/2026). No padrão novo a
+     * metáfora não é falada → zero shots de metáfora → o scan abaixo devolvia listas
+     * vazias e a JANELA-12 ANTI-REPETIÇÃO morria EM SILÊNCIO (o mesmo fio podia sair
+     * dias seguidos e a trava do "fio inédito" virava letra morta). O campo é a
+     * fonte; o scan continua para os roteiros antigos e para as `stories`.
+     */
+    if (script && typeof script.fioCondutor === 'string' && script.fioCondutor && script.fioCondutor !== 'clique-link') {
+      metaphors.push(script.fioCondutor);
+    }
     for (const s of scenes) {
       const shots = Array.isArray(s && s.shots) ? s.shots : [];
       for (const sh of shots) {
         const v = sh && sh.visual;
-        if (v && v.type === 'metaphor' && v.metaphor) {
+        // ♦ `clique-link` fica de fora (03/08/2026): é a mãozinha OBRIGATÓRIA da
+        // CTA. No padrão novo ela é o único shot de metáfora que resta, e a frase
+        // dela ia parar ao "JÁ FOI DITO (não repita)" — proibindo o molde do
+        // convite que o próprio prompt ordena. Apanhado na revisão pós-execução.
+        if (v && v.type === 'metaphor' && v.metaphor && v.metaphor !== 'clique-link') {
           if (!metaphors.includes(v.metaphor)) metaphors.push(v.metaphor);
           const sentence = findSentenceForAnchor(s.narration, sh.anchor);
           if (sentence && !stories.includes(sentence)) stories.push(sentence);
