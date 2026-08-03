@@ -1,0 +1,340 @@
+{
+  "_doc": "Estrutura de capítulos de vídeos longos de finanças, acumulada colheita a colheita. Entrada para o desenho do vídeo longo do FinMoovi (IMPL20 §14). Um vídeo entra uma vez e não é reescrito.",
+  "videos": [
+    {
+      "videoId": "AEegnTtvXQo",
+      "title": "Assim que tiver dinheiro, COMPRE essas 10 coisas!",
+      "channel": "FONTE DA FORTUNA - Alexandre Winkler",
+      "duracaoSeg": 1160,
+      "idioma": "pt",
+      "viewsPerDay": 6261,
+      "vistoEm": "2026-08-03",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução"
+        },
+        {
+          "seg": 81,
+          "titulo": "Alimentação de qualidade"
+        },
+        {
+          "seg": 257,
+          "titulo": "Qualidade do sono"
+        },
+        {
+          "seg": 370,
+          "titulo": "Exercício físico"
+        },
+        {
+          "seg": 491,
+          "titulo": "Terceirizar serviços"
+        },
+        {
+          "seg": 618,
+          "titulo": "Saúde privada"
+        },
+        {
+          "seg": 720,
+          "titulo": "Moradia boa"
+        },
+        {
+          "seg": 822,
+          "titulo": "Viagens"
+        },
+        {
+          "seg": 922,
+          "titulo": "Roupas de Qualidade"
+        },
+        {
+          "seg": 975,
+          "titulo": "Tecnologia"
+        },
+        {
+          "seg": 1030,
+          "titulo": "Educação"
+        }
+      ]
+    },
+    {
+      "videoId": "uE_8raIkbeQ",
+      "title": "Como RECEBER R$500 por Mês de Aluguel com o VGIR11 E MXRF11 (Renda passiva com Fundos Imobiliários)",
+      "channel": "Gêmeos Investem",
+      "duracaoSeg": 1426,
+      "idioma": "pt",
+      "viewsPerDay": 3922,
+      "vistoEm": "2026-08-03",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Introdução"
+        },
+        {
+          "seg": 87,
+          "titulo": "Juros Compostos"
+        },
+        {
+          "seg": 268,
+          "titulo": "De onde os FIIs tiram dinheiro?"
+        },
+        {
+          "seg": 397,
+          "titulo": "Provando que dá para investir pouco (VGIR11)"
+        },
+        {
+          "seg": 683,
+          "titulo": "Quais os riscos?"
+        },
+        {
+          "seg": 880,
+          "titulo": "Provando que dá para investir pouco (MXRF11)"
+        }
+      ]
+    },
+    {
+      "videoId": "hh8rocU3ISg",
+      "title": "ADEUS, Planilhas Confusas! Crie um Controlador Financeiro com Google Forms e IA",
+      "channel": "João Ernani",
+      "duracaoSeg": 517,
+      "idioma": "pt",
+      "viewsPerDay": 1275,
+      "vistoEm": "2026-08-03",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "O grande problema de controlar gastos na rua"
+        },
+        {
+          "seg": 73,
+          "titulo": "Recado importante e agradecimento aos membros"
+        },
+        {
+          "seg": 99,
+          "titulo": "Passo 1: Criando o Google Forms no Drive"
+        },
+        {
+          "seg": 134,
+          "titulo": "Passo 2: Usando o Gemini IA para criar o formulário automaticamente"
+        },
+        {
+          "seg": 192,
+          "titulo": "Passo 3: Configurações essenciais do formulário"
+        },
+        {
+          "seg": 248,
+          "titulo": "Passo 4: Fazendo os primeiros lançamentos de teste"
+        },
+        {
+          "seg": 318,
+          "titulo": "Passo 5: O pulo do gato! Criando e linkando a Planilha Google"
+        },
+        {
+          "seg": 377,
+          "titulo": "Passo 6: Como transformar o formulário em um App no celular"
+        },
+        {
+          "seg": 480,
+          "titulo": "Conclusão e chamada para ação importante"
+        }
+      ]
+    },
+    {
+      "videoId": "C6ZOLlfnWIM",
+      "title": "5 DICAS práticas para juntar R$ 10 mil reais! Eu não perderia a 4 de jeito nenhum!",
+      "channel": "Raquel Mendes - Finanças",
+      "duracaoSeg": 790,
+      "idioma": "pt",
+      "viewsPerDay": 520,
+      "vistoEm": "2026-08-03",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "O plano para juntar R$ 10 mil do zero absoluto"
+        },
+        {
+          "seg": 100,
+          "titulo": "Por que economizar não é o suficiente para ficar rico"
+        },
+        {
+          "seg": 125,
+          "titulo": "Passo 1: Como definir metas financeiras impossíveis de ignorar"
+        },
+        {
+          "seg": 165,
+          "titulo": "Passo 2: Faxina financeira para encontrar dinheiro escondido"
+        },
+        {
+          "seg": 238,
+          "titulo": "Passo 3: Renda extra estratégica para acelerar o acúmulo"
+        },
+        {
+          "seg": 325,
+          "titulo": "A mentalidade de coragem contra a vergonha de prosperar"
+        },
+        {
+          "seg": 364,
+          "titulo": "Passo 4: Como vender o que está parado e gerar caixa rápido"
+        },
+        {
+          "seg": 427,
+          "titulo": "Passo 5: A regra de ouro para o seu dinheiro parar de sumir"
+        },
+        {
+          "seg": 508,
+          "titulo": "O que fazer quando tudo der errado nos seus 6 meses"
+        },
+        {
+          "seg": 623,
+          "titulo": "O poder de ter os primeiros R$ 10 mil na conta"
+        },
+        {
+          "seg": 690,
+          "titulo": "Como passar dos R$ 10 mil para os R$ 100 mil reais"
+        }
+      ]
+    },
+    {
+      "videoId": "uBuGtOJiBS8",
+      "title": "Como Juntar R$ 10 Mil do Zero (mesmo ganhando pouco)",
+      "channel": "Me Poupe!",
+      "duracaoSeg": 592,
+      "idioma": "pt",
+      "viewsPerDay": 453,
+      "vistoEm": "2026-08-03",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Como juntar 10 mil reais do zero"
+        },
+        {
+          "seg": 49,
+          "titulo": "Dica 1: dê um nome para sua meta financeira"
+        },
+        {
+          "seg": 174,
+          "titulo": "Dica 2: transforme sua meta em boletos para você mesma"
+        },
+        {
+          "seg": 240,
+          "titulo": "Dica 3: fuja do consórcio e crie disciplina para guardar dinheiro"
+        },
+        {
+          "seg": 342,
+          "titulo": "Dica 4: quanto guardar por mês para juntar R$ 10 mil"
+        },
+        {
+          "seg": 387,
+          "titulo": "Dica 5: use os juros compostos para acelerar sua meta"
+        },
+        {
+          "seg": 451,
+          "titulo": "Dica 6: pare de desperdiçar dinheiro com gastos inúteis"
+        },
+        {
+          "seg": 482,
+          "titulo": "Dica 7: comece a investir com o dinheiro que você tem"
+        },
+        {
+          "seg": 529,
+          "titulo": "Dica 8: venda o que você não usa e junte dinheiro mais rápido"
+        },
+        {
+          "seg": 559,
+          "titulo": "Compartilhe com quem precisa juntar os primeiros R$ 10 mil"
+        }
+      ]
+    },
+    {
+      "videoId": "ik624AKFDHQ",
+      "title": "Crie um app a partir de uma planilha em menos de 15 minutos (Google Shets + Gemini)",
+      "channel": "Murilo Maioli | Inteligência Artificial",
+      "duracaoSeg": 876,
+      "idioma": "pt",
+      "viewsPerDay": 318,
+      "vistoEm": "2026-08-03",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "Apresentando o App"
+        },
+        {
+          "seg": 41,
+          "titulo": "Ferramentas usadas para criar o app"
+        },
+        {
+          "seg": 95,
+          "titulo": "Principais funcionadas do App"
+        },
+        {
+          "seg": 125,
+          "titulo": "Função 1: Dashboard de receitas e despesas"
+        },
+        {
+          "seg": 275,
+          "titulo": "Função 2: Adicionando despesas e receitas"
+        },
+        {
+          "seg": 392,
+          "titulo": "Função 3: Deletando registros"
+        },
+        {
+          "seg": 453,
+          "titulo": "Passo a passo para criar o App"
+        },
+        {
+          "seg": 558,
+          "titulo": "Passo 1: Alterando o idioma da conta Google"
+        },
+        {
+          "seg": 620,
+          "titulo": "Passo 2: Criando o primeiro Canvas"
+        },
+        {
+          "seg": 701,
+          "titulo": "Passo 3: Gerando o App com prompt"
+        },
+        {
+          "seg": 834,
+          "titulo": "Conclusão"
+        }
+      ]
+    },
+    {
+      "videoId": "QThToEeS5uw",
+      "title": "Como ENRIQUECER mesmo GANHANDO POUCO (Lições do Zelador que FICOU MILIONÁRIO - Ronald Read)",
+      "channel": "Raquel Mendes - Finanças",
+      "duracaoSeg": 767,
+      "idioma": "pt",
+      "viewsPerDay": 291,
+      "vistoEm": "2026-08-03",
+      "capitulos": [
+        {
+          "seg": 0,
+          "titulo": "A lição de vida de Ronald Read"
+        },
+        {
+          "seg": 89,
+          "titulo": "Por que comportamento vence a inteligência"
+        },
+        {
+          "seg": 208,
+          "titulo": "Fase 1: Chegando aos primeiros R$ 100 mil"
+        },
+        {
+          "seg": 442,
+          "titulo": "Fase 2: O segredo da multiplicação constante"
+        },
+        {
+          "seg": 603,
+          "titulo": "Fase 3: Quando o dinheiro trabalha por você"
+        },
+        {
+          "seg": 709,
+          "titulo": "O convite para sua nova vida financeira"
+        }
+      ]
+    }
+  ],
+  "atualizadoEm": "2026-08-03T20:07:38.152Z",
+  "total": 7
+}
