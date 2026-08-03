@@ -87,27 +87,63 @@ function getTextProviders() {
  * As duas famílias falam LÍNGUAS diferentes (o kie revende cada uma ao dono original),
  * daí o campo `formato`. A chave é a mesma para as duas.
  */
-function provedorPago(papel) {
+/**
+ * ♦ O LEITOR GANHOU SUBSTITUTOS (03/08/2026, ordem do dono) — e a causa foi vivida
+ * no próprio dia: o claude-sonnet-5 do kie.ai ficou AVARIADO (HTTP 500 em 16+
+ * pedidos, duas verificações com horas de intervalo) e as duas gerações do dia
+ * saíram SEM polimento, porque a rede por baixo era só o Groq gratuito (que no
+ * ambiente local nem chave válida tem). Num dia de avaria, o robô diário
+ * publicaria texto áspero sem ninguém saber.
+ *
+ * A fila do leitor: claude-sonnet-5 → gemini-3-pro → gpt-5-2.
+ *  · O Gemini vem ANTES do GPT de propósito: o escritor É o gpt-5-2, e quem relê
+ *    não deve ser da família de quem escreveu (o aluno a corrigir a própria
+ *    prova). O Gemini mantém o olhar independente e ainda é mais barato que o
+ *    Sonnet (0,38 vs 0,72 cêntimos por leitura).
+ *  · O GPT fica como último recurso pago: reler com o mesmo modelo ainda é melhor
+ *    do que publicar sem releitura.
+ * O ESCRITOR continua um só (gpt-5-2, decisão medida em §25.6 — o Sonnet estourava
+ * o tamanho 5 vezes em 5); a rede gratuita continua por baixo, como sempre.
+ */
+function provedoresPagos(papel) {
   const chave = process.env.KIE_AI_KEY;
-  if (!chave || !papel) return null;
+  if (!chave || !papel) return [];
   if (papel === 'leitor') {
-    return {
-      name: 'kie/claude-sonnet-5',
-      url: 'https://api.kie.ai/claude/v1/messages',
-      apiKey: chave,
-      model: 'claude-sonnet-5',
-      formato: 'anthropic',
-      insistir: 8,
-    };
+    return [
+      {
+        name: 'kie/claude-sonnet-5',
+        url: 'https://api.kie.ai/claude/v1/messages',
+        apiKey: chave,
+        model: 'claude-sonnet-5',
+        formato: 'anthropic',
+        insistir: 8,
+      },
+      {
+        name: 'kie/gemini-3-pro',
+        url: 'https://api.kie.ai/gemini-3-pro/v1/chat/completions',
+        apiKey: chave,
+        model: 'gemini-3-pro',
+        formato: 'openai',
+        insistir: 8,
+      },
+      {
+        name: 'kie/gpt-5-2',
+        url: 'https://api.kie.ai/gpt-5-2/v1/chat/completions',
+        apiKey: chave,
+        model: 'gpt-5-2',
+        formato: 'openai',
+        insistir: 8,
+      },
+    ];
   }
-  return {
+  return [{
     name: 'kie/gpt-5-2',
     url: 'https://api.kie.ai/gpt-5-2/v1/chat/completions',
     apiKey: chave,
     model: 'gpt-5-2',
     formato: 'openai',
     insistir: 8,
-  };
+  }];
 }
 
 /**
@@ -122,14 +158,15 @@ export async function generateText(prompt, options = {}) {
     temperature = 0.7,
     model,             // override opcional — aplicado apenas ao provedor primário
     retries = 2,       // tentativas por provedor em caso de 429
-    pago = null,       // 'escritor' | 'leitor' — opt-in do modelo pago (ver provedorPago)
+    pago = null,       // 'escritor' | 'leitor' — opt-in dos modelos pagos (ver provedoresPagos)
   } = options;
 
   const providers = getTextProviders();
-  // O pago entra à FRENTE, e os gratuitos ficam como rede por baixo: se ele não
-  // responder ao fim das tentativas, o vídeo sai à mesma com um gratuito.
-  const oPago = provedorPago(pago);
-  if (oPago) providers.unshift(oPago);
+  // Os pagos entram à FRENTE (na ordem da fila), e os gratuitos ficam como rede
+  // por baixo: se todos falharem, o vídeo sai à mesma com um gratuito.
+  const pagos = provedoresPagos(pago);
+  if (pagos.length) providers.unshift(...pagos);
+  const oPago = pagos.length > 0;
   if (providers.length === 0) {
     throw new Error('Nenhum provedor de IA configurado (defina CEREBRAS_API_KEY, GROQ_API_KEY/KIE_API_KEY ou CLOUDFLARE_ACCOUNT_ID+CLOUDFLARE_AI_TOKEN).');
   }

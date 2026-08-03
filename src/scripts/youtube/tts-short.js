@@ -334,7 +334,17 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
       await sleep(RETRY_BACKOFF_MS[attempt - 1]);
       continue;
     }
-    whisper = await transcribeWords(audio, { ext });
+    // ♦ O WHISPER PODE NEM EXISTIR (03/08/2026): sem a chave (ambiente local) ou com
+    // o serviço fora, a chamada LANÇAVA e derrubava o job inteiro — a rede de baixo
+    // só cobria a lista vazia/degenerada, não a ausência. Agora a falha entra na
+    // MESMA rede: mede-se o áudio real e alinha-se proporcional, com aviso.
+    let whisperFalhou = null;
+    try {
+      whisper = await transcribeWords(audio, { ext });
+    } catch (err) {
+      whisperFalhou = err;
+      whisper = [];
+    }
     // REDE DE SEGURANÇA DA MEDIÇÃO (31/07/2026). O Whisper pode devolver palavras
     // SEM tempo válido — o último `end` vem 0/não-numérico. Medido no run
     // 30619739871: áudio de 725.616 bytes (piper) e 125.568 (edge), e mesmo assim
@@ -345,14 +355,17 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
     // proporcional (o vídeo sai com sincronia aproximada, em vez de não sair).
     const ultimoFim = whisper.length ? Number(whisper[whisper.length - 1].end) : NaN;
     const medicaoOk = Number.isFinite(ultimoFim) && ultimoFim > 0;
-    if (!medicaoOk && whisper.length) {
+    if (whisperFalhou || (!medicaoOk && whisper.length)) {
       // Mede o ÁUDIO REAL antes de recorrer ao palpite do roteiro. Sem isto, a cena
       // ficava com a duração ESCRITA pelo modelo e tudo o que vinha depois deslocava.
       const real = medirDuracaoAudio(audio, ext);
       const usada = real ?? fallbackDurationSec;
       const origem = real ? `duração REAL do áudio (${real}s)` : `duração do roteiro (${fallbackDurationSec}s — ffprobe indisponível)`;
-      console.log(`  ⚠ cena ${id}${logSuffix}: Whisper devolveu ${whisper.length} palavra(s) SEM tempo válido — usando a ${origem} e alinhamento proporcional.`);
-      whisper = []; // descarta tempos inválidos: alignWords cai na distribuição por peso
+      const motivo = whisperFalhou
+        ? `Whisper indisponível (${whisperFalhou.message})`
+        : `Whisper devolveu ${whisper.length} palavra(s) SEM tempo válido`;
+      console.log(`  ⚠ cena ${id}${logSuffix}: ${motivo} — usando a ${origem} e alinhamento proporcional.`);
+      whisper = []; // sem tempos válidos: alignWords cai na distribuição por peso
       speechEnd = usada;
     } else {
       speechEnd = medicaoOk ? ultimoFim : fallbackDurationSec;
