@@ -246,9 +246,12 @@ async function main() {
   log(`Vídeos com audiência : ${resumo.comAudiencia}/${resumo.videosMedidos}  (${resumo.viewsTotais} visualizações no total)`);
   log(`Vídeos com curva     : ${resumo.comCurva}`);
   if (resumo.comCurva) {
-    log(`Ficam nos 3 primeiros segundos : ${pc(resumo.ficamAte3s)}`);
-    log(`Ficam até meio do vídeo        : ${pc(resumo.ficamAte50pc)}`);
-    log(`Chegam ao fim                  : ${pc(resumo.ficamAteAoFim)}`);
+    // ⚠️ Este número PODE PASSAR DE 100%, e não é erro: em Shorts o vídeo
+    // repete em ciclo, e quem revê o início conta outra vez. 100% = a
+    // audiência viu aquele instante uma vez; 130% = reviu-o em média 1,3×.
+    log(`Início do vídeo (100% = visto 1×): ${pc(resumo.ficamAte3s)}`);
+    log(`A meio do vídeo                : ${pc(resumo.ficamAte50pc)}`);
+    log(`No último instante             : ${pc(resumo.ficamAteAoFim)}`);
     log(`Metade da audiência sai aos    : ${resumo.metadeSaiAosSegundos == null ? '—' : `${Math.round(resumo.metadeSaiAosSegundos)}s`}`);
     log(`Percentagem média assistida    : ${pc(resumo.percentagemMediaDoCanal)}`);
   } else {
@@ -266,7 +269,7 @@ async function main() {
     appendFileSync(process.env.GITHUB_STEP_SUMMARY,
       `## 📉 Retenção dos Shorts\n\n${linhas.join('\n')}\n\n` +
       (resumo.comCurva
-        ? `**Ficam nos 3s:** ${pc(resumo.ficamAte3s)} · **até meio:** ${pc(resumo.ficamAte50pc)} · **até ao fim:** ${pc(resumo.ficamAteAoFim)} · **metade sai aos:** ${resumo.metadeSaiAosSegundos == null ? '—' : `${Math.round(resumo.metadeSaiAosSegundos)}s`}\n`
+        ? `**Início (100% = visto 1×, acima disso = revisto):** ${pc(resumo.ficamAte3s)} · **a meio:** ${pc(resumo.ficamAte50pc)} · **no fim:** ${pc(resumo.ficamAteAoFim)} · **metade sai aos:** ${resumo.metadeSaiAosSegundos == null ? '—' : `${Math.round(resumo.metadeSaiAosSegundos)}s`}\n`
         : `⚠️ Sem curva: audiência pequena de mais.\n`));
   }
 }
