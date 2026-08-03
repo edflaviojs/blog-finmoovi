@@ -153,12 +153,18 @@ function loadScript(slug) {
  */
 const CALCULADORAS = [
   { pagina: 'calculadora-juros-compostos', termos: ['juros compostos', 'juros', 'render', 'rendimento', 'tesouro', 'poupanca', 'aplicacao'] },
-  { pagina: 'simulador-investimento', termos: ['investi', 'cdb', 'acoes', 'renda fixa', 'renda variavel', 'etf', 'dividendo'] },
+  { pagina: 'simulador-investimento', termos: ['investi', 'cdb', 'acoes', 'renda fixa', 'renda variavel', 'etf', 'dividendo', 'alavanc', 'mercado', 'bolsa'] },
   { pagina: 'calculadora-financiamento', termos: ['financiamento', 'amortiza', 'parcela', 'divida', 'emprestimo', 'credito', 'cartao', 'juros abusivos'] },
   { pagina: 'calculadora-reserva', termos: ['reserva', 'emergencia', 'imprevisto'] },
   { pagina: 'calculadora-aposentadoria', termos: ['aposenta', 'previdencia', 'inss'] },
   { pagina: 'calculadora-orcamento', termos: ['orcamento', 'gasto', 'salario', 'inflacao', 'economizar', 'controle', 'mesada', 'conta'] },
   { pagina: 'conversor-moedas', termos: ['dolar', 'euro', 'cambio', 'moeda'] },
+  // Rede final, de propósito NO FIM: os temas de hábito/comportamento ("5 erros
+  // financeiros", "5 coisas que nunca faço com meu dinheiro") não nomeiam
+  // nenhum produto financeiro, e sem esta linha caíam no índice — que foi o que
+  // aconteceu a 3 dos 10 primeiros vídeos. Vem depois de todas as outras para
+  // nunca roubar um tema que tenha calculadora própria.
+  { pagina: 'calculadora-orcamento', termos: ['dinheiro', 'erro', 'habito', 'mindset', 'divida'] },
 ];
 
 /** Sem acentos e em minúsculas, para a tabela casar com "inflação" e "inflacao". */
