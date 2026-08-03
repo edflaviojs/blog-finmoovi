@@ -87,7 +87,11 @@ export const CRITERIOS = [
     // por último e é PERMISSIVO de propósito — o detetive já procura em
     // consultas de finanças, então este só existe para apanhar um desgarrado.
     // Sem fronteira no fim: aqui, deixar passar a mais é inofensivo.
-    exigeUmDe: /\b(dinheiro|financ|invest|poupan|salario|divida|gasto|economi|orcament|renda|juros|cartao|credito|banco|conta|aposentad|reserva|emergencia|inflacao|imposto|pix|tesouro|cdb|fii|bolsa|acoes|aluguel|milha|custo|preco|caro|barato|pagar|parcel|compra|rico|pobre|milionario|patrimonio|centavo|real|reais|r\$)/,
+    // Inclui sinais em ESPANHOL de propósito: o detetive apanha muito viral em
+    // espanhol e o desenho do canal é traduzir o CONCEITO (decisão 14.1.3 do
+    // IMPL20). Sem eles, "Las 5 Reglas de las Familias Ricas" era recusado por
+    // "não é sobre finanças" — e é (apanhado na colheita de 03/08).
+    exigeUmDe: /\b(dinheiro|financ|invest|poupan|salario|divida|gasto|economi|orcament|renda|juros|cartao|credito|banco|conta|aposentad|reserva|emergencia|inflacao|imposto|pix|tesouro|cdb|fii|bolsa|acoes|aluguel|milha|custo|preco|caro|barato|pagar|parcel|compra|ric[ao]s?|pobre|milionario|patrimonio|centavo|real|reais|r\$|dinero|ahorr|invers|deuda|sueldo|riqueza|millonari|presupuesto|tarjeta)/,
   },
 ];
 
