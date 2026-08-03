@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T11:51:38.311Z",
+  "updatedAt": "2026-08-03T10:31:32.129Z",
   "sourceCursor": 1,
   "entries": [
     {
@@ -456,6 +456,198 @@
       "status": "skipped",
       "addedAt": "2026-07-27T11:01:33.697Z",
       "reason": "nome-proprio-local"
+    },
+    {
+      "keyword": "financing",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.687Z"
+    },
+    {
+      "keyword": "financiamiento",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.687Z"
+    },
+    {
+      "keyword": "fund investments",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.687Z"
+    },
+    {
+      "keyword": "acciones ejemplos",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.687Z"
+    },
+    {
+      "keyword": "foreign exchange",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.687Z"
+    },
+    {
+      "keyword": "pagos anticipados",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.687Z"
+    },
+    {
+      "keyword": "renta variable",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.687Z"
+    },
+    {
+      "keyword": "invertir en etfs",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.688Z"
+    },
+    {
+      "keyword": "wealth management",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.688Z"
+    },
+    {
+      "keyword": "fundo de investimento",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.688Z"
+    },
+    {
+      "keyword": "volatility",
+      "category": null,
+      "priority": 2,
+      "source": "gsc-gap",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:31.688Z"
+    },
+    {
+      "keyword": "fatura do cartão mais",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.126Z"
+    },
+    {
+      "keyword": "fatura do cartão atacadão",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.126Z"
+    },
+    {
+      "keyword": "categoria de despesas",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.126Z"
+    },
+    {
+      "keyword": "categoria de despesas pessoais",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.127Z"
+    },
+    {
+      "keyword": "categoria de despesas empresa",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.127Z"
+    },
+    {
+      "keyword": "teto de gastos governo lula",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.127Z"
+    },
+    {
+      "keyword": "teto de gastos campanha eleitoral 2026",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.127Z"
+    },
+    {
+      "keyword": "teto de gastos temer",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.127Z"
+    },
+    {
+      "keyword": "despesa recorrente significado",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.127Z"
+    },
+    {
+      "keyword": "despesa recorrente splitwise",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.128Z"
+    },
+    {
+      "keyword": "despesa recorrente conta azul",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.129Z"
+    },
+    {
+      "keyword": "controle de gastos pessoais",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.129Z"
+    },
+    {
+      "keyword": "controle de gastos planilha",
+      "category": "glossario",
+      "priority": 3,
+      "source": "autocomplete",
+      "status": "pending",
+      "addedAt": "2026-08-03T10:31:32.129Z"
     }
   ]
 }

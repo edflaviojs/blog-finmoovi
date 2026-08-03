@@ -1,19 +1,12 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-07-27T11:01:33.698Z
-**Totais:** 40 pendente(s) · 2 usada(s) · 7 pulada(s)
+**Atualizado em:** 2026-08-03T10:31:32.129Z
+**Totais:** 41 pendente(s) · 17 usada(s) · 15 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 19
+### Manuais (prioridade 1) — 12
 
-- o que é CDI e como ele afeta seus investimentos _(investimentos)_
-- orçamento doméstico para quem recebe por semana _(orcamento)_
-- orçamento pessoal mensal
-- controlar despesas pessoais
-- organizar finanças pessoais
-- gasto fixo _(glossario)_
-- gasto variável _(glossario)_
 - fluxo de caixa _(glossario)_
 - saldo devedor _(glossario)_
 - fatura do cartão _(glossario)_
@@ -27,39 +20,55 @@
 - renda mensal _(glossario)_
 - lista de compras _(glossario)_
 
-### Lacunas do GSC (prioridade 2) — 2
+### Lacunas do GSC (prioridade 2) — 11
 
-- calculadora juros compostos
-- kyc
+- financing
+- financiamiento
+- fund investments
+- acciones ejemplos
+- foreign exchange
+- pagos anticipados
+- renta variable
+- invertir en etfs
+- wealth management
+- fundo de investimento
+- volatility
 
-### Autocomplete (prioridade 3) — 19
+### Autocomplete (prioridade 3) — 18
 
-- amortização de financiamento
-- amortização price
-- amortização fies
-- como poupar dinheiro dicas
 - kyc o que é
 - kyco
-- kyc shopee
-- gasto fixo e variavel _(glossario)_
-- gasto fixo mensal _(glossario)_
-- gasto fixo de uma empresa _(glossario)_
-- gasto variavel unitario _(glossario)_
 - exemplo de gasto variável _(glossario)_
 - fluxo de caixa descontado _(glossario)_
 - fluxo de caixa excel _(glossario)_
-- fluxo de caixa sebrae _(glossario)_
-- saldo devedor cohab mg _(glossario)_
-- saldo devedor caixa _(glossario)_
-- saldo devedor facta _(glossario)_
-- fatura do cartão casas bahia _(glossario)_
+- fatura do cartão mais _(glossario)_
+- fatura do cartão atacadão _(glossario)_
+- categoria de despesas _(glossario)_
+- categoria de despesas pessoais _(glossario)_
+- categoria de despesas empresa _(glossario)_
+- teto de gastos governo lula _(glossario)_
+- teto de gastos campanha eleitoral 2026 _(glossario)_
+- teto de gastos temer _(glossario)_
+- despesa recorrente significado _(glossario)_
+- despesa recorrente splitwise _(glossario)_
+- despesa recorrente conta azul _(glossario)_
+- controle de gastos pessoais _(glossario)_
+- controle de gastos planilha _(glossario)_
 
 ## ✅ Últimas usadas
 
 | Keyword | Usada por | Em |
 |---|---|---|
-| poupar dinheiro dicas | gerar-dicas-financeiras | 2026-07-26 |
-| como economizar no plano de celular e internet | gerar-dicas-financeiras | 2026-07-24 |
+| gasto variável | glossario-auto-diario | 2026-08-02 |
+| como poupar dinheiro dicas | gerar-dicas-financeiras | 2026-08-02 |
+| gasto variavel unitario | glossario-auto-diario | 2026-08-01 |
+| organizar finanças pessoais | gerar-dicas-financeiras | 2026-08-01 |
+| gasto fixo de uma empresa | glossario-auto-diario | 2026-07-31 |
+| controlar despesas pessoais | gerar-dicas-financeiras | 2026-07-31 |
+| gasto fixo mensal | glossario-auto-diario | 2026-07-30 |
+| orçamento pessoal mensal | gerar-dicas-financeiras | 2026-07-30 |
+| gasto fixo e variavel | glossario-auto-diario | 2026-07-29 |
+| o que é CDI e como ele afeta seus investimentos | gerar-post-investimentos | 2026-07-29 |
 
 ## ⏭️ Puladas (já cobertas)
 
@@ -68,8 +77,16 @@
 - amortização credito habitação (descartada-revisao)
 - amortização caixa (descartada-revisao)
 - amortização o que é (coberto-glossario)
+- amortização fies (nome-proprio-local)
 - amortização de contrato (descartada-revisao)
 - amortização de parcelas (descartada-revisao)
+- kyc (coberto-glossario)
+- kyc shopee (nome-proprio-local)
+- fluxo de caixa sebrae (nome-proprio-local)
+- saldo devedor cohab mg (nome-proprio-local)
+- saldo devedor caixa (nome-proprio-local)
+- saldo devedor facta (nome-proprio-local)
+- fatura do cartão casas bahia (nome-proprio-local)
 
 ---
 _Gerado automaticamente por keyword-queue-sync.js (Fase 3). Fontes: data/keywords-manuais.csv · lacunas do GSC · Google Autocomplete._

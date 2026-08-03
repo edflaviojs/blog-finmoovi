@@ -1,28 +1,87 @@
 {
-  "generatedAt": "2026-07-27T10:31:25.165Z",
+  "generatedAt": "2026-08-03T10:31:31.625Z",
   "siteUrl": "https://blog.finmoovi.com/",
   "period": {
-    "startDate": "2026-06-29",
-    "endDate": "2026-07-27"
+    "startDate": "2026-07-06",
+    "endDate": "2026-08-03"
   },
   "hasData": true,
   "totals": {
-    "queries": 108,
-    "pages": 34,
-    "impressions": 178,
+    "queries": 1183,
+    "pages": 242,
+    "impressions": 3370,
     "clicks": 0
   },
   "opportunities": {
     "strikingDistance": [
+      {
+        "query": "mobills alternative",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 7.2,
+        "ctr": 0
+      },
+      {
+        "query": "what is credito",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 8,
+        "ctr": 0
+      },
+      {
+        "query": "tesouro selic ou cdb",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 5,
+        "ctr": 0
+      },
       {
         "query": "qué es cambio",
         "impressions": 4,
         "clicks": 0,
         "position": 9.8,
         "ctr": 0
+      },
+      {
+        "query": "que es wall street y como funciona",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 13.3,
+        "ctr": 0
+      },
+      {
+        "query": "vender al descubierto significado",
+        "impressions": 3,
+        "clicks": 0,
+        "position": 11,
+        "ctr": 0
       }
     ],
     "lowCtr": [
+      {
+        "query": "mobills alternative",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 7.2,
+        "ctr": 0,
+        "expectedCtr": 4
+      },
+      {
+        "query": "what is credito",
+        "impressions": 6,
+        "clicks": 0,
+        "position": 8,
+        "ctr": 0,
+        "expectedCtr": 3.2
+      },
+      {
+        "query": "tesouro selic ou cdb",
+        "impressions": 5,
+        "clicks": 0,
+        "position": 5,
+        "ctr": 0,
+        "expectedCtr": 6
+      },
       {
         "query": "qué es cambio",
         "impressions": 4,
@@ -34,85 +93,629 @@
     ],
     "gaps": [
       {
-        "query": "que es cambio",
-        "impressions": 10,
+        "query": "financing",
+        "impressions": 240,
         "clicks": 0,
-        "position": 28.6,
-        "suggestedSlug": "que-es-cambio"
+        "position": 43.1,
+        "suggestedSlug": "financing"
       },
       {
-        "query": "calculadora juros compostos",
-        "impressions": 5,
+        "query": "investment fund",
+        "impressions": 172,
         "clicks": 0,
-        "position": 70.6,
-        "suggestedSlug": "calculadora-juros-compostos"
+        "position": 79,
+        "suggestedSlug": "investment-fund"
       },
       {
-        "query": "definir cambio",
-        "impressions": 4,
+        "query": "financiamiento",
+        "impressions": 68,
         "clicks": 0,
-        "position": 38.8,
-        "suggestedSlug": "definir-cambio"
+        "position": 53.8,
+        "suggestedSlug": "financiamiento"
       },
       {
-        "query": "o que é câmbio",
-        "impressions": 4,
+        "query": "investment funds",
+        "impressions": 53,
         "clicks": 0,
-        "position": 80.5,
-        "suggestedSlug": "o-que-e-cambio"
+        "position": 83.6,
+        "suggestedSlug": "investment-funds"
       },
       {
-        "query": "qué es cambio",
-        "impressions": 4,
+        "query": "fund investment",
+        "impressions": 49,
         "clicks": 0,
-        "position": 9.8,
-        "suggestedSlug": "que-es-cambio"
+        "position": 71.4,
+        "suggestedSlug": "fund-investment"
       },
       {
-        "query": "amortização",
-        "impressions": 3,
+        "query": "fund investments",
+        "impressions": 43,
         "clicks": 0,
-        "position": 65,
-        "suggestedSlug": "amortizacao"
+        "position": 83,
+        "suggestedSlug": "fund-investments"
       },
       {
-        "query": "cambio que es",
-        "impressions": 3,
+        "query": "volatilidad que es",
+        "impressions": 41,
         "clicks": 0,
-        "position": 28,
-        "suggestedSlug": "cambio-que-es"
+        "position": 90.1,
+        "suggestedSlug": "volatilidad-que-es"
       },
       {
-        "query": "juros compostos calculadora",
-        "impressions": 3,
+        "query": "acciones ejemplos",
+        "impressions": 36,
         "clicks": 0,
-        "position": 86.3,
-        "suggestedSlug": "juros-compostos-calculadora"
+        "position": 67.9,
+        "suggestedSlug": "acciones-ejemplos"
       },
       {
-        "query": "kyc",
-        "impressions": 3,
+        "query": "invest funds",
+        "impressions": 31,
         "clicks": 0,
-        "position": 96,
-        "suggestedSlug": "kyc"
+        "position": 85.6,
+        "suggestedSlug": "invest-funds"
+      },
+      {
+        "query": "foreign exchange",
+        "impressions": 29,
+        "clicks": 0,
+        "position": 71.3,
+        "suggestedSlug": "foreign-exchange"
+      },
+      {
+        "query": "what is an investment fund",
+        "impressions": 29,
+        "clicks": 0,
+        "position": 71.8,
+        "suggestedSlug": "what-is-an-investment-fund"
+      },
+      {
+        "query": "pagos anticipados",
+        "impressions": 24,
+        "clicks": 0,
+        "position": 72.5,
+        "suggestedSlug": "pagos-anticipados"
+      },
+      {
+        "query": "renta variable",
+        "impressions": 22,
+        "clicks": 0,
+        "position": 60.5,
+        "suggestedSlug": "renta-variable"
+      },
+      {
+        "query": "renta variable que es",
+        "impressions": 22,
+        "clicks": 0,
+        "position": 56.1,
+        "suggestedSlug": "renta-variable-que-es"
+      },
+      {
+        "query": "what are investment funds",
+        "impressions": 22,
+        "clicks": 0,
+        "position": 71.4,
+        "suggestedSlug": "what-are-investment-funds"
+      },
+      {
+        "query": "invertir en etfs",
+        "impressions": 21,
+        "clicks": 0,
+        "position": 56.9,
+        "suggestedSlug": "invertir-en-etfs"
+      },
+      {
+        "query": "wealth management",
+        "impressions": 21,
+        "clicks": 0,
+        "position": 79.7,
+        "suggestedSlug": "wealth-management"
+      },
+      {
+        "query": "que es la renta variable",
+        "impressions": 20,
+        "clicks": 0,
+        "position": 63.1,
+        "suggestedSlug": "que-es-la-renta-variable"
+      },
+      {
+        "query": "etf que es",
+        "impressions": 18,
+        "clicks": 0,
+        "position": 89.1,
+        "suggestedSlug": "etf-que-es"
+      },
+      {
+        "query": "fundo de investimento",
+        "impressions": 17,
+        "clicks": 0,
+        "position": 88.5,
+        "suggestedSlug": "fundo-de-investimento"
+      },
+      {
+        "query": "invest fund",
+        "impressions": 17,
+        "clicks": 0,
+        "position": 83.9,
+        "suggestedSlug": "invest-fund"
+      },
+      {
+        "query": "que es renta variable",
+        "impressions": 17,
+        "clicks": 0,
+        "position": 56.1,
+        "suggestedSlug": "que-es-renta-variable"
+      },
+      {
+        "query": "etf investment",
+        "impressions": 16,
+        "clicks": 0,
+        "position": 66.1,
+        "suggestedSlug": "etf-investment"
+      },
+      {
+        "query": "how do investment funds work",
+        "impressions": 16,
+        "clicks": 0,
+        "position": 76.1,
+        "suggestedSlug": "how-do-investment-funds-work"
+      },
+      {
+        "query": "volatility",
+        "impressions": 16,
+        "clicks": 0,
+        "position": 67.1,
+        "suggestedSlug": "volatility"
       }
     ],
     "cannibalization": [
       {
-        "query": "que es cambio",
-        "totalImpressions": 10,
+        "query": "financing",
+        "totalImpressions": 240,
         "pages": [
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-cambio/",
-            "impressions": 6,
+            "page": "https://blog.finmoovi.com/en/glossario/en-financing/",
+            "impressions": 192,
             "clicks": 0,
-            "position": 41.3
+            "position": 41.9
           },
           {
-            "page": "https://blog.finmoovi.com/es/glossario/es-cambio",
+            "page": "https://blog.finmoovi.com/en/glossario/en-financing",
+            "impressions": 48,
+            "clicks": 0,
+            "position": 47.9
+          }
+        ]
+      },
+      {
+        "query": "investment fund",
+        "totalImpressions": 172,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund/",
+            "impressions": 107,
+            "clicks": 0,
+            "position": 79.7
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund",
+            "impressions": 65,
+            "clicks": 0,
+            "position": 77.8
+          }
+        ]
+      },
+      {
+        "query": "investment funds",
+        "totalImpressions": 53,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund/",
+            "impressions": 33,
+            "clicks": 0,
+            "position": 84
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund",
+            "impressions": 20,
+            "clicks": 0,
+            "position": 83
+          }
+        ]
+      },
+      {
+        "query": "fund investment",
+        "totalImpressions": 49,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund/",
+            "impressions": 32,
+            "clicks": 0,
+            "position": 76.4
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund",
+            "impressions": 17,
+            "clicks": 0,
+            "position": 61.8
+          }
+        ]
+      },
+      {
+        "query": "fund investments",
+        "totalImpressions": 43,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund/",
+            "impressions": 28,
+            "clicks": 0,
+            "position": 83.5
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund",
+            "impressions": 15,
+            "clicks": 0,
+            "position": 82
+          }
+        ]
+      },
+      {
+        "query": "volatilidad que es",
+        "totalImpressions": 41,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-volatilidad/",
+            "impressions": 25,
+            "clicks": 0,
+            "position": 92.1
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-volatilidad",
+            "impressions": 16,
+            "clicks": 0,
+            "position": 87
+          }
+        ]
+      },
+      {
+        "query": "acciones ejemplos",
+        "totalImpressions": 36,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-acciones",
+            "impressions": 20,
+            "clicks": 0,
+            "position": 59.6
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-acciones/",
+            "impressions": 16,
+            "clicks": 0,
+            "position": 78.4
+          }
+        ]
+      },
+      {
+        "query": "invest funds",
+        "totalImpressions": 31,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund/",
+            "impressions": 26,
+            "clicks": 0,
+            "position": 86.2
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund",
+            "impressions": 5,
+            "clicks": 0,
+            "position": 83
+          }
+        ]
+      },
+      {
+        "query": "foreign exchange",
+        "totalImpressions": 29,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-cambio/",
+            "impressions": 20,
+            "clicks": 0,
+            "position": 73.5
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-cambio",
+            "impressions": 9,
+            "clicks": 0,
+            "position": 66.4
+          }
+        ]
+      },
+      {
+        "query": "what is an investment fund",
+        "totalImpressions": 29,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund/",
+            "impressions": 19,
+            "clicks": 0,
+            "position": 71.1
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund",
+            "impressions": 10,
+            "clicks": 0,
+            "position": 73
+          }
+        ]
+      },
+      {
+        "query": "renta variable",
+        "totalImpressions": 22,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-renta-variable/",
+            "impressions": 16,
+            "clicks": 0,
+            "position": 65.8
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-renta-variable",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 46.7
+          }
+        ]
+      },
+      {
+        "query": "renta variable que es",
+        "totalImpressions": 22,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-renta-variable/",
+            "impressions": 12,
+            "clicks": 0,
+            "position": 58.4
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-renta-variable",
+            "impressions": 10,
+            "clicks": 0,
+            "position": 53.4
+          }
+        ]
+      },
+      {
+        "query": "what are investment funds",
+        "totalImpressions": 22,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund/",
+            "impressions": 12,
+            "clicks": 0,
+            "position": 71.8
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund",
+            "impressions": 10,
+            "clicks": 0,
+            "position": 70.9
+          }
+        ]
+      },
+      {
+        "query": "etf que es",
+        "totalImpressions": 20,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable/",
+            "impressions": 13,
+            "clicks": 0,
+            "position": 86.5
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-etf/",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 95.7
+          }
+        ]
+      },
+      {
+        "query": "que es la renta variable",
+        "totalImpressions": 20,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-renta-variable/",
+            "impressions": 13,
+            "clicks": 0,
+            "position": 64
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-renta-variable",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 61.6
+          }
+        ]
+      },
+      {
+        "query": "wealth management",
+        "totalImpressions": 20,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-wealth-management/",
+            "impressions": 17,
+            "clicks": 0,
+            "position": 77.1
+          },
+          {
+            "page": "https://blog.finmoovi.com/glossario/wealth-management/",
+            "impressions": 3,
+            "clicks": 0,
+            "position": 98
+          }
+        ]
+      },
+      {
+        "query": "etfs",
+        "totalImpressions": 18,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-etfs-what-they-are-and-how-to-invest-simply-and-profitably/",
+            "impressions": 9,
+            "clicks": 0,
+            "position": 66.4
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable/",
+            "impressions": 9,
+            "clicks": 0,
+            "position": 72.7
+          }
+        ]
+      },
+      {
+        "query": "invest fund",
+        "totalImpressions": 17,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund/",
+            "impressions": 15,
+            "clicks": 0,
+            "position": 84.1
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund",
+            "impressions": 2,
+            "clicks": 0,
+            "position": 82
+          }
+        ]
+      },
+      {
+        "query": "que es renta variable",
+        "totalImpressions": 17,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-renta-variable/",
+            "impressions": 10,
+            "clicks": 0,
+            "position": 61.1
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-renta-variable",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 49
+          }
+        ]
+      },
+      {
+        "query": "how do investment funds work",
+        "totalImpressions": 16,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund/",
+            "impressions": 10,
+            "clicks": 0,
+            "position": 74.5
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 78.7
+          }
+        ]
+      },
+      {
+        "query": "volatility",
+        "totalImpressions": 16,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-volatility/",
+            "impressions": 11,
+            "clicks": 0,
+            "position": 70.1
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-volatility",
+            "impressions": 5,
+            "clicks": 0,
+            "position": 60.4
+          }
+        ]
+      },
+      {
+        "query": "alternatives to spreadsheets for daily cash reporting",
+        "totalImpressions": 13,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide-20/",
+            "impressions": 7,
+            "clicks": 0,
+            "position": 73
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/posts/en-7-alternatives-to-google-sheets-for-finance-updated-guide-20",
+            "impressions": 6,
+            "clicks": 0,
+            "position": 73.2
+          }
+        ]
+      },
+      {
+        "query": "investment of funds",
+        "totalImpressions": 13,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund/",
+            "impressions": 8,
+            "clicks": 0,
+            "position": 81
+          },
+          {
+            "page": "https://blog.finmoovi.com/en/glossario/en-investment-fund",
+            "impressions": 5,
+            "clicks": 0,
+            "position": 80.4
+          }
+        ]
+      },
+      {
+        "query": "que es una renta variable",
+        "totalImpressions": 13,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-renta-variable/",
+            "impressions": 9,
+            "clicks": 0,
+            "position": 60.6
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-renta-variable",
             "impressions": 4,
             "clicks": 0,
-            "position": 9.5
+            "position": 33.5
+          }
+        ]
+      },
+      {
+        "query": "fondo de emergencia",
+        "totalImpressions": 12,
+        "pages": [
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-fondo-de-emergencia",
+            "impressions": 8,
+            "clicks": 0,
+            "position": 82.6
+          },
+          {
+            "page": "https://blog.finmoovi.com/es/glossario/es-fondo-de-emergencia/",
+            "impressions": 4,
+            "clicks": 0,
+            "position": 96.8
           }
         ]
       }
