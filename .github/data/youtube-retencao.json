@@ -1,0 +1,151 @@
+{
+  "medidoEm": "2026-08-03T16:30:31.702Z",
+  "resumo": {
+    "videosMedidos": 10,
+    "comAudiencia": 9,
+    "comCurva": 1,
+    "viewsTotais": 97,
+    "percentagemMediaDoCanal": 0.9231111111111111,
+    "metadeSaiAosSegundos": 14,
+    "ficamAte3s": 1.3,
+    "ficamAte50pc": 0.5,
+    "ficamAteAoFim": 0.2
+  },
+  "videos": [
+    {
+      "slug": "juros-compostos",
+      "videoId": "KtnTi_fctWs",
+      "publicadoEm": "2026-07-21",
+      "privacidade": "public",
+      "duracaoSeg": 71,
+      "views": 11,
+      "minutosTotais": 4,
+      "duracaoMediaSeg": 35,
+      "percentagemMedia": 0.5007,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "acoes",
+      "videoId": "s-2_o9PKpS0",
+      "publicadoEm": "2026-07-22",
+      "privacidade": "public",
+      "duracaoSeg": 49,
+      "views": 28,
+      "minutosTotais": 5,
+      "duracaoMediaSeg": 29,
+      "percentagemMedia": 0.607,
+      "curva": {
+        "pontos": 100,
+        "aos3s": 1.3,
+        "aos25pc": 0.7,
+        "aos50pc": 0.5,
+        "aos75pc": 0.4,
+        "noFim": 0.2,
+        "metadeSaiEmRatio": 0.29,
+        "metadeSaiEmSegundos": 14
+      },
+      "erro": null
+    },
+    {
+      "slug": "alavancagem",
+      "videoId": "HYm_vVfwTmM",
+      "publicadoEm": "2026-07-23",
+      "privacidade": "public",
+      "duracaoSeg": 49,
+      "views": 19,
+      "minutosTotais": 6,
+      "duracaoMediaSeg": 45,
+      "percentagemMedia": 0.9228000000000001,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "amortizacao",
+      "videoId": "HUcFsJHCr7w",
+      "publicadoEm": "2026-07-24",
+      "privacidade": "public",
+      "duracaoSeg": 60,
+      "views": 9,
+      "minutosTotais": 1,
+      "duracaoMediaSeg": 30,
+      "percentagemMedia": 0.5132,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "aplicacao-financeira",
+      "videoId": "JlIWqKb8Qv8",
+      "publicadoEm": "2026-07-25",
+      "privacidade": "public",
+      "duracaoSeg": 44,
+      "views": 12,
+      "minutosTotais": 1,
+      "duracaoMediaSeg": 20,
+      "percentagemMedia": 0.4551,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "divida-quitaria",
+      "videoId": "baITWiOojyY",
+      "publicadoEm": "2026-07-28",
+      "privacidade": "public",
+      "duracaoSeg": 57,
+      "views": 7,
+      "minutosTotais": 2,
+      "duracaoMediaSeg": 53,
+      "percentagemMedia": 0.9420000000000001,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "nunca-faca-isso-dinheiro",
+      "videoId": "u5YB-tUDhLo",
+      "publicadoEm": "2026-07-29",
+      "privacidade": "public",
+      "duracaoSeg": 51,
+      "views": 3,
+      "minutosTotais": 1,
+      "duracaoMediaSeg": 50,
+      "percentagemMedia": 0.9876,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "viral-xB7XJCP7LG8",
+      "videoId": "srJhf0JPsKw",
+      "publicadoEm": "2026-07-30",
+      "privacidade": "public",
+      "duracaoSeg": 41,
+      "views": 6,
+      "minutosTotais": 2,
+      "duracaoMediaSeg": 24,
+      "percentagemMedia": 0.5962,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "tesouro-direto-100",
+      "videoId": "SZSGAxqmmm0",
+      "publicadoEm": "2026-07-31",
+      "privacidade": "private",
+      "duracaoSeg": 65,
+      "views": 2,
+      "minutosTotais": 3,
+      "duracaoMediaSeg": 180,
+      "percentagemMedia": 2.7834,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    },
+    {
+      "slug": "inflacao-rouba",
+      "videoId": "Skeq19QPBkE",
+      "publicadoEm": "2026-08-03",
+      "privacidade": "private",
+      "duracaoSeg": 56,
+      "curva": null,
+      "erro": "sem dados suficientes (audiência pequena de mais)"
+    }
+  ]
+}
