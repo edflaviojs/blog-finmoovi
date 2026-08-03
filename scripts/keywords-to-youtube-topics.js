@@ -11,6 +11,10 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
+// O portao da marca: decide, POR CRITERIO ESCRITO, o que pode virar tema deste
+// canal. Corre antes da IA — nada morre em silencio e nao se gasta chamada com
+// o que ja sabiamos que ia ser recusado.
+import { avaliarViral, lerEstrutura } from '../src/scripts/youtube/lib/filtro-de-marca.js';
 
 const ROOT = process.cwd();
 const QUEUE_PATH = join(ROOT, '.github', 'data', 'keyword-queue.json');
@@ -141,15 +145,26 @@ glossaryRef = slug do termo do glossario que serve de base ou null.`;
   }
 }
 
-function buildViralPrompt(title, pillar) {
+function buildViralPrompt(title, pillar, estrutura) {
+  // ♦ 03/08/2026 — APRENDER A FORMA, NAO COPIAR O ASSUNTO (IMPL24 §3.2).
+  // O detetive antigo so passava o TITULO, e o que voltava era o mesmo assunto
+  // com outras palavras. O que faz o dedo parar, porem, e a ESTRUTURA (uma
+  // pergunta? um numero no inicio? uma perda em curso?) — e essa serve a
+  // qualquer assunto nosso. A leitura da forma vem do lerEstrutura(), que e
+  // codigo e nao opiniao, e viaja no `angle` porque e o angle que o gerador de
+  // roteiro ja le (sem canos novos).
   return `Voce recebe o TITULO de um video de financas que VIRALIZOU no YouTube (pode estar em espanhol ou ser clickbait). Extraia o CONCEITO financeiro por tras e transforme num TEMA de video curto (Short 45-55s) do canal FinMoovi, SEMPRE em portugues do Brasil.
 
 Titulo viral: "${title}"
 Pilar: ${pillar}
+O QUE FEZ ESTE TITULO FUNCIONAR (leitura da forma, nao do assunto):
+${(estrutura || []).map((p) => '- ' + p).join('\n')}
 
 REGRAS:
 - Responda SEMPRE em portugues do Brasil (traduza o CONCEITO; NUNCA copie o titulo).
 - O tema NAO pode ser "O que e X" nem "Entenda X" - deve ser cenario real, comparacao, lista de erros, simulacao com numeros em BRL ou provocacao.
+- APROVEITE A FORMA acima, NAO o assunto: se o viral funcionou por ser uma perda em curso, o nosso tambem deve mostrar dinheiro a sair AGORA; se funcionou por ser lista numerada, o nosso tambem promete um numero de coisas. O ASSUNTO tem de ser nosso.
+- O angle TEM de dizer, na primeira frase, qual e o mecanismo aproveitado (ex.: "perda em curso: mostrar o dinheiro a sair todo mes").
 - Se o titulo NAO for sobre financas pessoais/dinheiro/investimento, marque offTopic=true e deixe theme/angle vazios.
 - Maximo 60 chars no theme. O angle explica o COMO do video.
 
@@ -158,8 +173,9 @@ Responda EXATAMENTE neste JSON (sem markdown): {"offTopic":false,"theme":"...","
 
 async function transformViralToTopic(video, generateText) {
   const pillar = video.pillar || 'mindset';
+  const estrutura = lerEstrutura(video);
   try {
-    const raw = await generateText(buildViralPrompt(video.title, pillar), { maxTokens: 300, temperature: 0.7 });
+    const raw = await generateText(buildViralPrompt(video.title, pillar, estrutura), { maxTokens: 300, temperature: 0.7 });
     const jsonMatch = raw.match(/\{[\s\S]*\}/);
     if (!jsonMatch) throw new Error('LLM nao retornou JSON');
     const parsed = JSON.parse(jsonMatch[0]);
@@ -180,7 +196,9 @@ async function transformViralToTopic(video, generateText) {
       source: 'viral',
       glossaryRef: parsed.glossaryRef === 'null' ? null : (parsed.glossaryRef || null),
       status: 'pending',
-      viralRef: { videoId: video.videoId, title: video.title },
+      // `estrutura` fica registada para se poder responder, daqui a um mes, a
+      // pergunta que interessa: que FORMA de titulo e que nos rende audiencia?
+      viralRef: { videoId: video.videoId, title: video.title, estrutura },
     };
   } catch (err) {
     console.error('  Viral "' + video.title + '" falhou: ' + err.message + ' - descartando (sem fallback)');
@@ -200,13 +218,32 @@ async function importViralTopics({ topicsData, existingIds, existingThemeSlugs, 
     return 0;
   }
   const published = loadPublished();
-  const candidates = topVideos.filter((v) => {
+  const jaVistos = topVideos.filter((v) => {
     if (!v.videoId || !v.title) return false;
     if (existingIds.has('viral-' + v.videoId)) return false;
     if (published.has('viral-' + v.videoId)) return false;
     return true;
   });
-  console.log('Virais no trends: ' + topVideos.length + ' | apos dedup: ' + candidates.length);
+
+  // ♦ 03/08/2026 — O FILTRO DE CRITERIOS DA MARCA (IMPL24 §3.2).
+  // Antes disto, a unica coisa a decidir era uma pergunta a IA ("isto e sobre
+  // financas?"). Um juizo de opiniao, sem criterio escrito, num canal que fala
+  // do dinheiro de gente real. Cada recusa passa a ter motivo NO REGISTO.
+  const candidates = [];
+  const recusados = [];
+  for (const v of jaVistos) {
+    const veredito = avaliarViral(v);
+    if (veredito.entra) candidates.push(v);
+    else recusados.push({ video: v, veredito });
+  }
+
+  console.log('Virais no trends: ' + topVideos.length + ' | apos dedup: ' + jaVistos.length + ' | apos o filtro da marca: ' + candidates.length);
+  if (recusados.length) {
+    console.log('Recusados pelo filtro da marca (' + recusados.length + '):');
+    for (const r of recusados) {
+      console.log('  ✗ [' + r.veredito.criterio + '] "' + r.video.title.slice(0, 70) + '" — ' + r.veredito.motivo);
+    }
+  }
   // topVideos ja vem ordenado por viewsPerDay, entao o slice pega sempre os
   // MAIS virais do momento. Os que sobram NAO viram backlog: o youtube-trends
   // e regenerado toda semana pelo benchmark, e na proxima execucao a lista e
@@ -221,7 +258,7 @@ async function importViralTopics({ topicsData, existingIds, existingThemeSlugs, 
       const first = slice[0];
       const pillar = first.pillar || 'mindset';
       console.log('\nPrompt do 1o candidato viral (dry-run, nada foi chamado nem gravado):\n');
-      console.log(buildViralPrompt(first.title, pillar));
+      console.log(buildViralPrompt(first.title, pillar, lerEstrutura(first)));
     } else {
       console.log('Nenhum candidato viral para exibir no dry-run.');
     }

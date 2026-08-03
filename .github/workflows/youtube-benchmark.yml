@@ -1,9 +1,17 @@
-name: "YouTube — Benchmark de Tendências (semanal)"
+name: "YouTube — Detetive de tendências (diário)"
+
+# ♦ 03/08/2026 — PASSOU DE SEMANAL A DIÁRIO (IMPL24 §3.2, "detetive 1×/dia").
+# Com colheita semanal, um vídeo descoberto no domingo só era convertido em tema
+# na quarta: até 10 dias de atraso a perseguir "o que está a bombar AGORA".
+# Preço da mudança, medido antes: ~404 unidades das 10.000/dia da cota da API do
+# YouTube (4%), e um job de menos de 1 minuto — ~30 min de Actions por mês.
+# ⚠️ O RITMO DO CANAL NÃO MUDA: continuam a entrar 3 virais por semana na fila
+# (o cap em keywords-to-youtube-topics.js). Muda só o FRESCOR do que se escolhe.
 
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: '0 4 * * 0' # Domingos 04:00 UTC
+    - cron: '0 4 * * *' # todos os dias, 04:00 UTC
 
 permissions:
   contents: write
