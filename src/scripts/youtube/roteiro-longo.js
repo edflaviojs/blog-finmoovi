@@ -386,9 +386,33 @@ Responda APENAS com JSON válido, sem markdown:
 { "fala": "..." }`;
 }
 
+/**
+ * ⚠️ OS TRÊS MOLDES DA DEMONSTRAÇÃO — e por que são TRÊS, escolhidos por CÓDIGO.
+ *
+ * MEDIDO na 2ª corrida real (04/08/2026). O prompt dava UM molde ("eu joguei isso no
+ * FinMoovi e ele me mostrou…") e os três capítulos saíram assim:
+ *   cap 1: "Eu joguei essas contas no FinMoovi e ele fez a soma pra mim."
+ *   cap 2: "Eu joguei tudo no FinMoovi e ele me mostrou na tela…"
+ *   cap 3: "Eu joguei tudo no FinMoovi e ele fez a conta pra mim."
+ * A trava global apanhou-o — mas a culpa não era do modelo: **ele obedeceu ao molde
+ * que o prompt lhe deu, três vezes.** É a mesma doença de sempre, na forma mais
+ * traiçoeira: o prompt ORDENA a frase que a trava global PUNE.
+ *
+ * A cura é a que já funcionou na música (`lib/musica.js`): **não se pergunta ao
+ * modelo qual escolher.** Está medido neste projeto que, com opções à escolha, oito
+ * gerações em oito escolhem a mesma. Cada capítulo recebe o SEU molde, decidido pelo
+ * número do capítulo, e nunca vê os outros dois.
+ */
+const MOLDES_DA_DEMO = [
+  'Você lança as contas no FinMoovi e ele soma sozinho. Conte o que apareceu na tela.',
+  'Você abre a tela do FinMoovi e LÊ o que está lá escrito. Conte a linha que viu e o valor que estava nela.',
+  'O FinMoovi já tinha aquilo marcado antes de você perguntar. Conte o que ele mostrou quando você foi ver.',
+];
+
 export function buildPromptCapitulo(t, mapa, indice, ancora) {
   const plano = mapa.capitulos[indice];
   const seguinte = mapa.capitulos[indice + 1];
+  const molde = MOLDES_DA_DEMO[indice % MOLDES_DA_DEMO.length];
   const soma = Array.isArray(plano.somaDe) && plano.somaDe.length >= 2
     ? `\n   · **A soma é esta, e tem de bater:** ${plano.somaDe.join(' + ')} = ${plano.numeroChave}. Diga as parcelas UMA A UMA e depois o total, para quem ouve somar junto.`
     : '';
@@ -409,7 +433,9 @@ ${ancora ? `${ancora}\n` : ''}
 ════════ AS QUATRO PARTES DESTE CAPÍTULO (é a forma que o canal já provou) ════════
 1. **pergunta** (~4s de fala) — abre com uma PERGUNTA que dói, terminada em "?", e responde-lhe já na frase seguinte.
 2. **desenvolvimento** (~45s) — o caso concreto do dia a dia, nomeado coisa a coisa, sem culpar quem assiste. É AQUI que **o número se transforma** à frente de quem ouve: o pequeno vira grande, o "nada" vira caro. Termine na tensão, não conforte.
-3. **demonstracao** (~25s) — **o app FEZ a conta, e você conta na PRIMEIRA PESSOA.** "Eu joguei isso no FinMoovi e ele me mostrou…", "eu abri o balanço e estava lá somado". O app é quem AGE, não é rodapé. **DIGA O QUE APARECEU NA TELA** — o nome da linha, o total, a coisa concreta. Frases como "me mostrou o estrago" não mostram nada.
+3. **demonstracao** (~25s) — **o app FEZ a conta, e você conta na PRIMEIRA PESSOA.** O app é quem AGE, não é rodapé. **DIGA O QUE APARECEU NA TELA** — o nome da linha, o total, a coisa concreta. Frases como "me mostrou o estrago" não mostram nada.
+   🔴 **A DEMONSTRAÇÃO DESTE CAPÍTULO É ASSIM, e só assim:** ${molde}
+   Os outros capítulos deste vídeo demonstram o app de MANEIRA DIFERENTE. Se os três contarem a mesma cena com as mesmas palavras, quem assiste acha que já viu o vídeo e sai — e o computador reprova.
 4. **regancho** (~10s) — deixa a ponta no ar para o capítulo seguinte. Uma ou duas frases, sem prometer nada de fora deste vídeo.
 
 ⚠️ **TAMANHO: as quatro partes somadas, entre ${ORCAMENTO.capitulo.min} e ${ORCAMENTO.capitulo.max} palavras.** Conte antes de responder.
@@ -774,7 +800,20 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
     capitulos.push(completo);
 
     numerosUsados.push(plano.numeroChave, ...(plano.somaDe || []));
-    jaDito.push(frasesDe(completo.pergunta)[0]);
+    /**
+     * ⚠️ O QUE VAI PARA O "JÁ FOI DITO" — três frases por capítulo, e cada uma foi
+     * escolhida por ter REPETIDO na 2ª corrida real:
+     *  · a pergunta que abre (todos os capítulos abriam com a mesma construção);
+     *  · a primeira frase da demonstração (os três diziam "eu joguei tudo no FinMoovi");
+     *  · a frase que fecha o desenvolvimento ("cada uma parece que cabe no…" saiu
+     *    igual nos capítulos 1 e 2).
+     * Mandar só a pergunta era mandar um terço do problema.
+     */
+    jaDito.push(
+      frasesDe(completo.pergunta)[0],
+      frasesDe(completo.demonstracao)[0],
+      frasesDe(completo.desenvolvimento).slice(-1)[0],
+    );
     anterior = falaDoCapitulo(completo);
     deQuem = `o capítulo ${i + 1}`;
   }
@@ -831,7 +870,7 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
 
   // ── ANDAR 2 — as costuras ─────────────────────────────────────────────────
   console.log('\n🧵 ANDAR 2 — AS COSTURAS (só as junções)\n');
-  roteiro = await costurar(roteiro, temaTexto);
+  roteiro = await costurar(roteiro, temaTexto, (cand) => conferirBlocos(cand, mapa));
 
   // ── ANDAR 3 — o polidor, capítulo a capítulo ──────────────────────────────
   if (polir) {
@@ -860,17 +899,124 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
     console.log('\n💎 ANDAR 3 — polidor DESLIGADO (--sem-polir)\n');
   }
 
-  // ── ANDAR 4 — as travas globais ───────────────────────────────────────────
-  console.log('\n🔒 ANDAR 4 — AS TRAVAS GLOBAIS\n');
+  // ── ANDAR 4-a — O CONSERTO CIRÚRGICO DA REPETIÇÃO ─────────────────────────
+  /**
+   * ⚠️ ISTO É A PROMESSA DAS ÂNCORAS A SER CUMPRIDA, e não um extra.
+   * O §26.3 diz que a âncora existe para se poder "corrigir UM bloco sem partir os
+   * outros". Uma trava global que só se QUEIXA no fim não cumpre isso — deixa o
+   * dono com um vídeo partido e um relatório. Aqui, quando dois capítulos repetem a
+   * mesma frase, reescreve-se **só o de trás para a frente** (o mais tarde é o que
+   * repetiu), com a frase repetida escrita na queixa. Os outros não são tocados.
+   * Duas voltas no máximo: se ao fim de duas ainda repete, o relatório di-lo, e a
+   * decisão é do dono — insistir sozinho é o pêndulo que já custou dias.
+   */
+  for (let volta = 1; volta <= 2; volta++) {
+    const v = validarLongo(roteiro);
+    const repete = v.repeticoes || [];
+    if (!repete.length) break;
+
+    // o capítulo que repetiu é o de índice MAIOR (o que veio depois já tinha o
+    // anterior à frente e escreveu na mesma a mesma coisa)
+    const alvo = Math.max(...repete.map((r) => r.b));
+    const frases = repete.filter((r) => r.b === alvo).map((r) => r.frase);
+    console.log(`\n🩹 volta ${volta}: o capítulo ${alvo + 1} repete o que já foi dito — a reescrever SÓ ele`);
+    frases.forEach((f) => console.log(`      · "${f}"`));
+
+    const plano = mapa.capitulos[alvo];
+    const anteriores = roteiro.capitulos.filter((_, i) => i !== alvo);
+    const ancora = blocoDaAncora({
+      paragrafoAnterior: alvo > 0 ? ultimasFrases(falaDoCapitulo(roteiro.capitulos[alvo - 1])) : ultimasFrases(roteiro.abertura),
+      deQuem: alvo > 0 ? `o capítulo ${alvo}` : 'a abertura',
+      numerosUsados: mapa.capitulos.filter((_, i) => i !== alvo).flatMap((c) => [c.numeroChave, ...(c.somaDe || [])]),
+      jaDito: [
+        ...frases.map((f) => `${f} (ESTA foi dita noutro capítulo — não a repita)`),
+        ...anteriores.flatMap((c) => [frasesDe(c.demonstracao)[0], frasesDe(c.pergunta)[0]]).filter(Boolean),
+      ],
+    });
+
+    let novo;
+    try {
+      novo = await gerarBloco({
+        nome: `capítulo ${alvo + 1} (reescrita)`,
+        prompt: buildPromptCapitulo(t, mapa, alvo, ancora),
+        tema: temaTexto,
+        campos: PARTES_DO_CAPITULO,
+        tentativas: 3,
+        validar: (o) => validarCapitulo(o, alvo, { plano, exemploParaComparar: EXEMPLO_PARA_COMPARAR }),
+      });
+    } catch (err) {
+      console.log(`   ⚠️ a reescrita do capítulo ${alvo + 1} não passou (${err.message}) — fica o que estava`);
+      break;
+    }
+
+    const candidato = JSON.parse(JSON.stringify(roteiro));
+    candidato.capitulos[alvo] = {
+      ...candidato.capitulos[alvo],
+      ...Object.fromEntries(PARTES_DO_CAPITULO.map((p) => [p, novo[p]])),
+    };
+    // ⚠️ A REESCRITA SÓ ENTRA SE MELHORAR. Sem esta conta, uma reescrita que trocasse
+    // uma repetição por outra entrava à mesma e a volta seguinte via o mesmo número
+    // de queixas — o pêndulo, outra vez, agora em ponto grande.
+    const depois = validarLongo(candidato);
+    if ((depois.repeticoes || []).length < repete.length) {
+      roteiro = candidato;
+      console.log(`   ✅ capítulo ${alvo + 1} reescrito — repetições: ${repete.length} → ${(depois.repeticoes || []).length}`);
+    } else {
+      console.log(`   ⚠️ a reescrita não reduziu as repetições (${repete.length} → ${(depois.repeticoes || []).length}) — fica o original`);
+      break;
+    }
+  }
+
+  // ── ANDAR 4 — as travas ───────────────────────────────────────────────────
+  // ⚠️ AS DUAS CAMADAS, e as duas correm no FIM, sobre o texto que vai mesmo ao ar.
+  // As de BLOCO (cada bloco outra vez, agora costurado e polido) e as GLOBAIS (o que
+  // só se vê olhando o vídeo inteiro). Correr só as globais deixaria passar um bloco
+  // partido depois de aprovado — foi por isso que a costura passou a ser conferida.
+  console.log('\n🔒 ANDAR 4 — AS TRAVAS (bloco a bloco + globais)\n');
+  const blocos = conferirBlocos(roteiro, mapa);
+  if (!blocos.ok) {
+    console.log('   ❌ travas de BLOCO com queixas:');
+    blocos.erros.forEach((e) => console.log(`      · ${e}`));
+  } else {
+    console.log('   ✅ todos os blocos passam nas suas travas');
+  }
   const global = validarLongo(roteiro);
-  return { roteiro, mapa, global };
+  return { roteiro, mapa, global, blocos };
+}
+
+/**
+ * ⚠️ AS TRAVAS DE CADA BLOCO, CORRIDAS OUTRA VEZ SOBRE O ROTEIRO INTEIRO.
+ *
+ * Nasceu de um buraco meu, visto na 2ª corrida real: **a costura reescrevia a
+ * primeira frase de um bloco que já tinha sido aprovado, e ninguém voltava a
+ * conferir.** Uma emenda podia tirar o "Comenta FINMOOVI" da chamada ou a pergunta
+ * que abre um capítulo, e o vídeo seguia em frente — porque as travas globais só
+ * olham para o que atravessa blocos, não para o que vive dentro de um.
+ * É a mesma regra que faz o segundo leitor ser seguro: quem mexe volta a passar
+ * pelas travas, e se as partir, fica o original.
+ */
+export function conferirBlocos(roteiro, mapa) {
+  const erros = [];
+  const juntar = (v) => erros.push(...v.erros);
+  juntar(validarAbertura(roteiro.abertura, { promessa: mapa.promessa, exemploParaComparar: EXEMPLO_PARA_COMPARAR }));
+  (roteiro.capitulos || []).forEach((c, i) => {
+    juntar(validarCapitulo(c, i, { plano: mapa.capitulos[i] || {}, exemploParaComparar: EXEMPLO_PARA_COMPARAR }));
+  });
+  juntar(validarChamada(roteiro.chamada));
+  juntar(validarFecho(roteiro.fecho, {
+    promessa: mapa.promessa,
+    exemploParaComparar: EXEMPLO_PARA_COMPARAR.replace(BORDAO, ''),
+  }));
+  return { ok: erros.length === 0, erros };
 }
 
 /**
  * Corre a costura. Se falhar (ou devolver lixo), o roteiro segue INTACTO — é a mesma
  * regra do segundo leitor: isto é um lucro, nunca um ponto de falha.
+ * Cada emenda é aplicada e CONFERIDA sozinha: uma emenda que parta uma trava é
+ * deitada fora, e as outras seguem.
  */
-async function costurar(roteiro, temaTexto) {
+async function costurar(roteiro, temaTexto, conferir = () => ({ ok: true, erros: [] })) {
   const blocos = [
     ['a abertura', roteiro.abertura],
     ...roteiro.capitulos.map((c, i) => [`o capítulo ${i + 1}`, falaDoCapitulo(c)]),
@@ -903,7 +1049,7 @@ async function costurar(roteiro, temaTexto) {
     return roteiro;
   }
 
-  const out = JSON.parse(JSON.stringify(roteiro));
+  let out = JSON.parse(JSON.stringify(roteiro));
   let mexidas = 0;
   juncoes.forEach((j, k) => {
     const nova = limparFala(String((emendas[k] && emendas[k].inicio) || '').trim(), temaTexto);
@@ -915,14 +1061,24 @@ async function costurar(roteiro, temaTexto) {
       console.log(`   ⚠️ emenda ${k + 1} recusada: deixou de ser pergunta`);
       return;
     }
+    // A emenda é aplicada numa CÓPIA e conferida sozinha. Só entra no roteiro se
+    // passar em todas as travas do bloco que tocou.
+    const tentativa = JSON.parse(JSON.stringify(out));
     const alvo = j.indice;
     const trocar = (txt) => txt.replace(j.inicio, nova);
-    if (alvo === 0) out.abertura = trocar(out.abertura);
-    else if (alvo <= out.capitulos.length) {
-      const c = out.capitulos[alvo - 1];
+    if (alvo === 0) tentativa.abertura = trocar(tentativa.abertura);
+    else if (alvo <= tentativa.capitulos.length) {
+      const c = tentativa.capitulos[alvo - 1];
       c.pergunta = trocar(c.pergunta);
-    } else if (alvo === out.capitulos.length + 1) out.chamada = trocar(out.chamada);
-    else out.fecho = trocar(out.fecho);
+    } else if (alvo === tentativa.capitulos.length + 1) tentativa.chamada = trocar(tentativa.chamada);
+    else tentativa.fecho = trocar(tentativa.fecho);
+
+    const v = conferir(tentativa);
+    if (!v.ok) {
+      console.log(`   ⚠️ emenda ${k + 1} (${j.de} → ${j.para}) RECUSADA pelas travas: ${v.erros.join(' | ')}`);
+      return;
+    }
+    out = tentativa;
     mexidas++;
     console.log(`   ✏️  emenda ${k + 1} (${j.de} → ${j.para}): "${nova}"`);
   });
@@ -957,8 +1113,11 @@ if (executadoDireto) {
   }
 
   const slugDoVideo = String(args.slug && args.slug !== true ? args.slug : 'longo-piloto');
-  const { roteiro, mapa, global } = await gerarLongo(t, { proibidas, polir: !args['sem-polir'], slug: slugDoVideo });
+  const { roteiro, mapa, global, blocos } = await gerarLongo(t, { proibidas, polir: !args['sem-polir'], slug: slugDoVideo });
 
+  if (!blocos.ok) {
+    console.log('❌ há blocos com queixas (ver acima) — o vídeo NÃO está pronto');
+  }
   if (!global.ok) {
     console.log('❌ o vídeo NÃO passou nas travas globais:');
     global.erros.forEach((e) => console.log(`   · ${e}`));

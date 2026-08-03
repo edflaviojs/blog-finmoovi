@@ -682,10 +682,15 @@ export function validarLongo(roteiro) {
   //    Num Short isto não fazia falta: 50 segundos não chegam para alguém se repetir.
   //    Em seis minutos, repetir é o defeito mais provável — e é o que faz a pessoa
   //    sentir que já ouviu aquilo e sair.
+  // ⚠️ As repetições saem TAMBÉM em forma de lista, e não só de texto. Quem chama
+  // precisa de saber QUAL capítulo reescrever — e ler isso de dentro da mensagem
+  // seria depender do texto de um erro, que muda ao primeiro retoque de redação.
+  const repeticoes = [];
   for (let a = 0; a < caps.length; a++) {
     for (let b = a + 1; b < caps.length; b++) {
       const repetido = longestSharedWordRun(falaDoCapitulo(caps[a]), falaDoCapitulo(caps[b]), 6);
       if (repetido.length) {
+        repeticoes.push({ a, b, frase: repetido.join(' ') });
         erros.push(
           `os capítulos ${a + 1} e ${b + 1} repetem a mesma frase — "${repetido.join(' ')}". `
           + 'Cada capítulo tem de trazer coisa nova: quem ouve a mesma frase duas vezes acha que já viu o vídeo e sai.',
@@ -728,7 +733,7 @@ export function validarLongo(roteiro) {
   const palavras = contarPalavras(falaToda);
   const segundos = palavras / PALAVRAS_POR_SEGUNDO;
 
-  return { ok: erros.length === 0, erros, avisos, palavras, segundos };
+  return { ok: erros.length === 0, erros, avisos, palavras, segundos, repeticoes };
 }
 
 /** Junta tudo o que se fala, na ordem, para a voz e para as legendas. */

@@ -29,3 +29,9 @@ app-capture/
 
 # Preview local do Relatório do Dia (--dry-run) — nunca commitar
 digest-preview.html
+
+# artefactos do video longo (guiao, caderno e descricao gerados) — o codigo e que e versionado
+src/scripts/youtube/output/*.longo.json
+src/scripts/youtube/output/*.caderno.json
+src/scripts/youtube/output/*.descricao.txt
+youtube-render/out/

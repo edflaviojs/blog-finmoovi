@@ -31,7 +31,8 @@ import React from 'react';
 import { AbsoluteFill, Audio, Loop, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Background, Watermark, SignatureOutro, TelaBordao, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES } from './scenes';
 import { BackgroundMusic } from './audio/music';
-import { activeIndex, isEmphasisWord, wordTimingsFromReal, layoutWords } from './captions';
+import { activeIndex, wordTimingsFromReal, layoutWords } from './captions';
+import { CoreografiaDaCapa } from './capas';
 import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 
 // ── o b-roll 16:9 já pronto (nenhuma destas composições foi tocada) ──────────
@@ -168,30 +169,55 @@ const LegendaLonga: React.FC<{ narration: string; totalFrames: number; words?: {
 };
 
 // ── a capa ──────────────────────────────────────────────────────────────────
-const CapaLonga: React.FC<{ pergunta: string; tema: string; frames: number }> = ({ pergunta, frames }) => {
+/**
+ * A CAPA DO VÍDEO LONGO — e é ela que vira MINIATURA.
+ *
+ * ⚠️ O DESENHO É DIFERENTE DO SHORT, e tinha de ser. No vertical a pergunta fica em
+ * cima e o boneco em baixo, porque há altura de sobra. Em 16:9 há metade da altura e
+ * o dobro da largura: empilhar dava um ator do tamanho de um selo. Por isso aqui é
+ * lado a lado — a pergunta à esquerda, o boneco a encenar a dor à direita.
+ * O boneco é o MESMO das 32 capas (`CoreografiaDaCapa`), escolhido pelo campo
+ * `fioCondutor` do guião. Nenhuma das 32 coreografias foi tocada.
+ * ⚠️ O palco é desenhado em 1240×1560 (retrato). A escala de 0,66 põe-no dentro dos
+ * 1080 de altura com uma margem — sem ela, os pés do boneco ficavam cortados.
+ */
+const PALCO_ESCALA = 0.66;
+
+const CapaLonga: React.FC<{ pergunta: string; metaphor?: string | null; frames: number }> = ({ pergunta, metaphor, frames }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const entra = spring({ frame, fps, config: { damping: 16, mass: 0.7 } });
-  const escala = interpolate(entra, [0, 1], [1.14, 1]);
+  const escala = interpolate(entra, [0, 1], [1.1, 1]);
   const sai = interpolate(frame, [frames - 12, frames], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const brilho = interpolate(frame, [0, 3, 14], [0.7, 0.35, 0], { extrapolateRight: 'clamp' });
+  // A pergunta longa tem de encolher, senão sai da caixa. A conta é grosseira de
+  // propósito: o que interessa é nunca haver texto cortado, e a regra do canal já
+  // limita a pergunta a 18 palavras.
+  const tamanho = pergunta.length > 78 ? 62 : pergunta.length > 56 ? 72 : 84;
 
   return (
-    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', opacity: sai }}>
-      <AbsoluteFill style={{ background: 'rgba(13,17,23,0.94)' }} />
-      <div style={{
-        position: 'relative', zIndex: 1, maxWidth: 1560, padding: '0 60px', textAlign: 'center',
-        transform: `scale(${escala})`,
-      }}>
+    <AbsoluteFill style={{ opacity: sai }}>
+      <AbsoluteFill style={{ background: 'rgba(13,17,23,0.95)' }} />
+      <AbsoluteFill style={{ flexDirection: 'row', alignItems: 'center' }}>
         <div style={{
-          ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: 96, lineHeight: 1.08,
-          filter: 'drop-shadow(0 0 46px rgba(139,92,246,0.5))',
-        }}>{pergunta}</div>
+          flex: '0 0 980px', padding: '0 40px 0 90px', transform: `scale(${escala})`, transformOrigin: 'left center',
+        }}>
+          <div style={{
+            ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: tamanho, lineHeight: 1.1,
+            filter: 'drop-shadow(0 0 46px rgba(139,92,246,0.5))',
+          }}>{pergunta}</div>
+          <div style={{
+            marginTop: 40, height: 10, width: `${interpolate(entra, [0, 1], [0, 420])}px`, borderRadius: 5,
+            background: `linear-gradient(90deg, ${BRAND.cyan}, ${BRAND.violet}, ${BRAND.magenta})`,
+          }} />
+        </div>
         <div style={{
-          marginTop: 46, height: 10, width: `${interpolate(entra, [0, 1], [0, 560])}px`, borderRadius: 5,
-          margin: '46px auto 0', background: `linear-gradient(90deg, ${BRAND.cyan}, ${BRAND.violet}, ${BRAND.magenta})`,
-        }} />
-      </div>
+          flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center',
+          transform: `scale(${PALCO_ESCALA})`,
+        }}>
+          <CoreografiaDaCapa metaphor={metaphor} life={frames} />
+        </div>
+      </AbsoluteFill>
       <AbsoluteFill style={{ background: '#fff', opacity: brilho, pointerEvents: 'none' }} />
     </AbsoluteFill>
   );
@@ -269,7 +295,25 @@ const CenaLonga: React.FC<{ cena: LongScene; frames: number; palavras?: { word: 
   );
 };
 
-export const Long: React.FC<{ script: LongScript; timing?: LongTiming }> = ({ script, timing = null }) => {
+/**
+ * O GUIÃO DE RESERVA. Só existe para o Studio abrir sem rebentar quando ainda não há
+ * nenhum vídeo longo montado — no pipeline o guião real chega sempre por props.
+ * Repare que ele NÃO é um vídeo publicável: diz em letras gordas que é um marcador.
+ */
+export const GUIAO_DE_RESERVA: LongScript = {
+  slug: 'sem-guiao',
+  tema: 'sem guião carregado',
+  promessa: '',
+  capa: 'Nenhum guião longo foi montado ainda.',
+  capitulos: [],
+  scenes: [{
+    id: 1, bloco: 'abertura', parte: 'abertura', role: 'hook',
+    narration: 'Corra o montador do vídeo longo para ver alguma coisa aqui.',
+    palavras: 11, durationSec: 4, broll: 'AppMosaicoLong', brollFrames: 210,
+  }],
+};
+
+export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: string }> = ({ script = GUIAO_DE_RESERVA, timing = null }) => {
   const { fps } = useVideoConfig();
   const durs = durationsSec(script, timing);
   const frames = longFramesFrom(durs, fps);
@@ -317,7 +361,7 @@ export const Long: React.FC<{ script: LongScript; timing?: LongTiming }> = ({ sc
       <Sequence durationInFrames={Math.max(1, Math.min(CAPA_FRAMES, VOZ_ENTRA_FRAMES + (frames[0] || CAPA_FRAMES)))}>
         <CapaLonga
           pergunta={script.capa}
-          tema={script.tema}
+          metaphor={script.fioCondutor}
           frames={Math.max(1, Math.min(CAPA_FRAMES, VOZ_ENTRA_FRAMES + (frames[0] || CAPA_FRAMES)))}
         />
       </Sequence>
