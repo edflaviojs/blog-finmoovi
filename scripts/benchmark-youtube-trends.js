@@ -146,6 +146,40 @@ function detetarIdioma(stats, title) {
   return PISTAS_NAO_PT.test(String(title || '')) ? 'nao-pt' : 'pt';
 }
 
+/**
+ * ♦ 03/08/2026 — OS CAPÍTULOS DOS VÍDEOS LONGOS (a matéria-prima do nosso longo).
+ *
+ * Para escrever um vídeo de 6 minutos é preciso saber como os bons se ORGANIZAM:
+ * quantos capítulos, que tamanho, e como abrem. Essa informação está à vista de
+ * todos — os vídeos longos publicam os capítulos na descrição ("00:00 Introdução
+ * / 01:20 O erro nº 1") — e a API oficial dá-nos a descrição de qualquer vídeo
+ * DE GRAÇA. O coletor lia o título e deitava a descrição fora.
+ *
+ * Guardamos só os capítulos, nunca a descrição inteira: este ficheiro é
+ * commitado todos os dias, e descrições completas inchavam o repositório sem
+ * necessidade.
+ *
+ * Regra do YouTube: os capítulos só valem se o primeiro for 00:00 e houver pelo
+ * menos três. Lista que não cumpra isso é só uma data de horas soltas no texto.
+ */
+function lerCapitulos(descricao, duracaoSeg) {
+  const encontrados = [];
+  for (const linha of String(descricao || '').split('\n')) {
+    const m = /^\s*(?:[-•*]\s*)?(\d{1,2}:\d{2}(?::\d{2})?)\s*[-–—:|)]*\s*(.+?)\s*$/.exec(linha);
+    if (!m) continue;
+    const p = m[1].split(':').map(Number);
+    const seg = p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p[0] * 60 + p[1];
+    const titulo = m[2].replace(/^[-–—:|)\s]+/, '').trim();
+    if (!titulo || titulo.length > 120) continue;
+    if (duracaoSeg && seg > duracaoSeg) continue; // hora que não cabe no vídeo
+    if (encontrados.some((c) => c.seg === seg)) continue;
+    encontrados.push({ seg, titulo });
+  }
+  encontrados.sort((a, b) => a.seg - b.seg);
+  const valido = encontrados.length >= 3 && encontrados[0].seg === 0;
+  return valido ? encontrados : null;
+}
+
 function extractPatterns(video, stats) {
   const title = video.snippet.title;
   const published = new Date(video.snippet.publishedAt);
@@ -177,6 +211,7 @@ function extractPatterns(video, stats) {
     duracaoSeg,
     formato,
     idioma: detetarIdioma(stats, title),
+    capitulos: lerCapitulos(stats?.snippet?.description, duracaoSeg),
     titlePatterns: {
       hasNumber,
       hasQuestion,
@@ -237,6 +272,41 @@ function computeAggregatePatterns(videos) {
 }
 
 /**
+ * O ESTUDO DOS CAPÍTULOS — responde, com números, a "como é que os vídeos longos
+ * de finanças se organizam?". É a entrada de desenho do NOSSO vídeo longo
+ * (IMPL20 §14, fase F3): quantos capítulos, de que tamanho, e como se chama o
+ * primeiro (o que abre é o que segura a audiência).
+ */
+function estudarCapitulos(longos) {
+  const comCap = longos.filter((v) => Array.isArray(v.capitulos) && v.capitulos.length);
+  if (!comCap.length) {
+    return { longosAnalisados: longos.length, comCapitulos: 0 };
+  }
+  const media = (nums) => Math.round(nums.reduce((a, b) => a + b, 0) / nums.length);
+
+  const nCapitulos = comCap.map((v) => v.capitulos.length);
+  // Duração do 1º capítulo = quando o 2º começa. É o "cold open" deles.
+  const primeiros = comCap.map((v) => v.capitulos[1].seg).filter((s) => s > 0);
+  const segundosPorCapitulo = comCap
+    .filter((v) => v.duracaoSeg)
+    .map((v) => Math.round(v.duracaoSeg / v.capitulos.length));
+
+  return {
+    longosAnalisados: longos.length,
+    comCapitulos: comCap.length,
+    mediaDeCapitulos: media(nCapitulos),
+    minDeCapitulos: Math.min(...nCapitulos),
+    maxDeCapitulos: Math.max(...nCapitulos),
+    duracaoMediaDoPrimeiroSeg: primeiros.length ? media(primeiros) : null,
+    mediaSegundosPorCapitulo: segundosPorCapitulo.length ? media(segundosPorCapitulo) : null,
+    // Como eles CHAMAM a abertura e o fecho — os dois lugares onde se ganha e
+    // se perde a audiência.
+    aberturas: comCap.map((v) => v.capitulos[0].titulo).slice(0, 10),
+    fechos: comCap.map((v) => v.capitulos[v.capitulos.length - 1].titulo).slice(0, 10),
+  };
+}
+
+/**
  * Main entry point — collects trends and saves structured JSON output.
  */
 async function main() {
@@ -290,12 +360,19 @@ async function main() {
   // geral fica como estava (nada a jusante quebra) e ganha-se uma segunda,
   // só do nosso formato.
   const shorts = allVideos.filter((v) => v.formato === 'short');
+  const longos = allVideos.filter((v) => v.formato === 'longo');
   const contagem = {
     shorts: shorts.length,
-    longos: allVideos.filter((v) => v.formato === 'longo').length,
+    longos: longos.length,
     naoPortugues: allVideos.filter((v) => v.idioma !== 'pt').length,
   };
   console.log(`  📐 formato: ${contagem.shorts} shorts · ${contagem.longos} longos | idioma: ${contagem.naoPortugues} não-português`);
+
+  const estudoDeCapitulos = estudarCapitulos(longos);
+  console.log(`  📖 capítulos: ${estudoDeCapitulos.comCapitulos}/${estudoDeCapitulos.longosAnalisados} longos os publicam` +
+    (estudoDeCapitulos.comCapitulos
+      ? ` · média de ${estudoDeCapitulos.mediaDeCapitulos} capítulos · ${estudoDeCapitulos.mediaSegundosPorCapitulo}s cada · 1º capítulo dura ${estudoDeCapitulos.duracaoMediaDoPrimeiroSeg}s`
+      : ''));
 
   // Save output
   const output = {
@@ -304,8 +381,12 @@ async function main() {
     totalAnalyzed: allVideos.length,
     contagem,
     aggregate,
+    estudoDeCapitulos,
     topVideos: allVideos.slice(0, 20),
     topShorts: shorts.slice(0, 10),
+    // Lista própria dos LONGOS: é daqui que sai o desenho do nosso vídeo longo,
+    // e na lista geral eles misturam-se com os Shorts.
+    topLongos: longos.slice(0, 10),
   };
 
   const outputDir = join(process.cwd(), '.github', 'data');
