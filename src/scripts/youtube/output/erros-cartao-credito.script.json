@@ -6,7 +6,7 @@
   "nextVideoTitle": "",
   "intro": {
     "style": "pergunta",
-    "frase": "Três erros de quem usa cartão que fazem você *perder quinhentos reais* por mês e nem perceber."
+    "frase": "Sabe quais *três erros no cartão tiram quinhentos reais* do seu bolso todo mês?"
   },
   "music": {
     "id": "rock",
@@ -18,30 +18,54 @@
     "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
     "clima": "alerta"
   },
+  "fioCondutor": "mochila-pedras",
   "scenes": [
     {
       "id": 1,
       "role": "hook",
-      "narration": "Três erros de quem usa cartão que fazem você perder quinhentos reais por mês e nem perceber. Olha, é que nem carregar uma mochila cheia de pedra nas costas. Qual pesa mais?",
-      "durationSec": 12.3,
+      "narration": "Sabe quais três erros no cartão tiram quinhentos reais do seu bolso todo mês? A conta cresce caladinha e você acaba pagando sem ver.",
+      "durationSec": 9.2,
       "shots": [
         {
-          "anchor": "erros",
+          "anchor": "três",
           "visual": {
-            "type": "statement",
-            "text": "3 hábitos caros"
+            "type": "number",
+            "text": "R$ 500"
           },
           "sfx": "boom"
         },
         {
-          "anchor": "quinhentos",
+          "anchor": "cartão",
           "visual": {
-            "type": "number",
-            "text": "R$ 500"
+            "type": "metaphor",
+            "metaphor": "mochila-pedras"
           }
         },
         {
-          "anchor": "mochila",
+          "anchor": "cresce",
+          "visual": {
+            "type": "statement",
+            "text": "A conta cresce escondida"
+          },
+          "sfx": "alert"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "É quando você paga só uma parte da fatura, divide a conta em muitas vezes e ainda saca dinheiro no cartão.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "fatura",
+          "visual": {
+            "type": "icon",
+            "icon": "card"
+          }
+        },
+        {
+          "anchor": "vezes",
           "visual": {
             "type": "metaphor",
             "metaphor": "mochila-pedras"
@@ -49,42 +73,10 @@
           "sfx": "thud"
         },
         {
-          "anchor": "pesa",
+          "anchor": "dinheiro",
           "visual": {
             "type": "icon",
-            "icon": "question"
-          }
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "role": "beat",
-      "narration": "Esse peso aparece porque a correria toma conta, ninguém explicou direito e você vai pagando do jeito que dá.",
-      "durationSec": 7.3,
-      "shots": [
-        {
-          "anchor": "peso",
-          "visual": {
-            "type": "statement",
-            "text": "Peso invisível"
-          }
-        },
-        {
-          "anchor": "ninguém",
-          "visual": {
-            "type": "icon",
-            "icon": "mind"
-          },
-          "sfx": "alert"
-        },
-        {
-          "anchor": "pagando",
-          "visual": {
-            "type": "counter",
-            "from": 0,
-            "to": 500,
-            "prefix": "R$"
+            "icon": "money"
           }
         }
       ]
@@ -92,59 +84,64 @@
     {
       "id": 3,
       "role": "beat",
-      "narration": "E é aí que a mochila fica mais pesada. Pagar só uma parte, dividir a fatura em muitas vezes e sacar dinheiro no cartão.",
-      "durationSec": 9.2,
+      "narration": "E cada um pesa. O primeiro leva cento e cinquenta reais, o outro duzentos, e o saque mais cento e cinquenta. Juntando tudo, bate nos quinhentos.",
+      "durationSec": 10,
       "shots": [
         {
-          "anchor": "mochila",
+          "anchor": "pesa",
           "visual": {
             "type": "metaphor",
             "metaphor": "mochila-pedras"
           }
         },
         {
-          "anchor": "Pagar",
+          "anchor": "duzentos",
           "visual": {
-            "type": "list",
-            "text": "Parcial • Parcelar • Saque"
+            "type": "counter",
+            "from": 0,
+            "to": 200,
+            "prefix": "R$"
           },
-          "sfx": "typewriter"
+          "sfx": "coin"
         },
         {
-          "anchor": "sacar",
+          "anchor": "quinhentos",
           "visual": {
-            "type": "icon",
-            "icon": "card"
-          }
+            "type": "number",
+            "text": "R$ 500"
+          },
+          "sfx": "kaching"
         }
       ]
     },
     {
       "id": 4,
       "role": "beat",
-      "narration": "No FinMoovi você vê os três lado a lado, e ele te mostra qual erro tá pesando mais na sua mochila.",
-      "durationSec": 8.1,
+      "narration": "Eu joguei isso no FinMoovi e ele me mostrou que o saque no cartão ficou no topo da lista. Foi o que mais pesou.",
+      "durationSec": 9.2,
       "shots": [
         {
-          "anchor": "FinMoovi",
+          "anchor": "joguei",
           "visual": {
             "type": "app",
-            "app": "calculadora",
-            "note": "Comparação dos três erros e peso de cada um"
+            "app": "dashboard",
+            "note": "Resumo financeiro com os gastos do cartão"
+          },
+          "sfx": "click"
+        },
+        {
+          "anchor": "saque",
+          "visual": {
+            "type": "app",
+            "app": "cartoes",
+            "note": "Lista dos custos do cartão em destaque"
           }
         },
         {
-          "anchor": "mostra",
+          "anchor": "pesou",
           "visual": {
-            "type": "chart",
-            "text": "Impacto por erro"
-          }
-        },
-        {
-          "anchor": "pesando",
-          "visual": {
-            "type": "metaphor",
-            "metaphor": "mochila-pedras"
+            "type": "statement",
+            "text": "Saque foi o maior peso"
           },
           "sfx": "ding"
         }
@@ -153,25 +150,26 @@
     {
       "id": 5,
       "role": "cta",
-      "narration": "Quer descobrir o seu? Comenta FINMOOVI aqui que eu te mando a calculadora do blog.",
-      "durationSec": 5.8,
+      "narration": "Quer ver o seu? Comenta FINMOOVI aqui que eu te mando o app grátis.",
+      "durationSec": 5.4,
       "shots": [
         {
-          "anchor": "descobrir",
+          "anchor": "Quer",
           "visual": {
             "type": "statement",
-            "text": "Descubra seu maior erro"
+            "text": "Veja seus gastos"
           }
         },
         {
           "anchor": "FINMOOVI",
           "visual": {
-            "type": "icon",
-            "icon": "target"
-          }
+            "type": "statement",
+            "text": "Digite FINMOOVI"
+          },
+          "sfx": "typewriter"
         },
         {
-          "anchor": "mando",
+          "anchor": "grátis",
           "visual": {
             "type": "metaphor",
             "metaphor": "clique-link"
@@ -183,37 +181,36 @@
     {
       "id": 6,
       "role": "outro",
-      "narration": "O que mais pesa é pagar só uma parte da fatura. Tirando essa pedra da mochila, você anda bem mais leve. Dinheiro sem controle é dinheiro dos outros.",
-      "durationSec": 10.8,
+      "narration": "Então foge disso. Esses três erros juntos tiram quinhentos reais do seu bolso todo mês. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.5,
       "shots": [
         {
-          "anchor": "pesa",
-          "visual": {
-            "type": "statement",
-            "text": "Maior prejuízo"
-          }
-        },
-        {
-          "anchor": "pedra",
+          "anchor": "três",
           "visual": {
             "type": "metaphor",
             "metaphor": "mochila-pedras"
-          },
-          "sfx": "thud"
+          }
         },
         {
-          "anchor": "Dinheiro",
+          "anchor": "quinhentos",
           "visual": {
-            "type": "icon",
-            "icon": "wallet"
+            "type": "number",
+            "text": "R$ 500"
+          }
+        },
+        {
+          "anchor": "outros",
+          "visual": {
+            "type": "statement",
+            "text": "Dinheiro sem controle some"
           }
         }
       ]
     }
   ],
   "cta": {
-    "text": "Comente FINMOOVI e descubra",
+    "text": "Comente FINMOOVI agora",
     "target": "app"
   },
-  "totalDurationSec": 53.5
+  "totalDurationSec": 50.4
 }
