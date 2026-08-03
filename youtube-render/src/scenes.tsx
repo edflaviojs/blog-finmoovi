@@ -102,7 +102,14 @@ export const EtiquetaTema: React.FC<{ tema?: string }> = ({ tema }) => {
     }
     const LIGACAO = new Set(['que', 'de', 'do', 'da', 'dos', 'das', 'e', 'em', 'no', 'na',
       'com', 'para', 'pra', 'por', 'te', 'a', 'o', 'as', 'os', 'um', 'uma', 'ao', 'à']);
-    while (cabem.length > 1 && LIGACAO.has(cabem[cabem.length - 1].toLowerCase())) cabem.pop();
+    /**
+     * ♦ E NUNCA TERMINAR EM DINHEIRO PARTIDO (03/08/2026). Visto no vídeo real:
+     * "A inflação te rouba R$ 2 mil por ano" → o "mil" não coube e ficou
+     * **"A INFLAÇÃO TE ROUBA R$ 2…"** os 59s inteiros — lê-se como R$ 2. Um número
+     * ou um "R$" pendurados no corte são sempre expressão partida: caem também.
+     */
+    const PENDURADO = (p: string) => LIGACAO.has(p.toLowerCase()) || /^r\$$/i.test(p) || /^r?\$?\d[\d.,]*$/i.test(p);
+    while (cabem.length > 1 && PENDURADO(cabem[cabem.length - 1])) cabem.pop();
     // se nem a 1ª palavra couber (palavra gigante), volta-se ao corte por letra
     return cabem.length ? `${cabem.join(' ')}…` : `${texto.slice(0, 26).trim()}…`;
   })();

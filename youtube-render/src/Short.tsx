@@ -374,20 +374,36 @@ export const Short: React.FC<{ script?: ShortScript; timing?: ShortTiming; slug?
           por cima. Enquanto a capa está no ar (0 → 3,5s) a voz já toca por baixo
           desde os 0,9s, que é exatamente o que o dono pediu. Antes a capa vinha
           primeiro e, mesmo que durasse mais, as cenas tapavam-na. */}
-      {script.intro && (
-        <Sequence durationInFrames={capaFrames}>
-          {isV3Intro(script.intro) ? (
-            <DynamicIntro
-              frase={script.intro.frase || ''}
-              counter={script.intro.counter}
-              frames={capaFrames}
-              metaphor={fioCondutorDoScript(script)}
-            />
-          ) : (
-            <ShockIntro big={script.intro.big || ''} sub={script.intro.sub || ''} />
-          )}
-        </Sequence>
-      )}
+      {script.intro && (() => {
+        /**
+         * ♦ A CAPA NUNCA SOBREVIVE À CENA 1 (03/08/2026) — visto no 1º vídeo real
+         * do robô. A capa tem duração fixa (223f = 7,4s, o tempo de dizer 18
+         * palavras), mas uma pergunta CURTA encolhe a cena 1: no vídeo da inflação
+         * a cena 2 começou aos ~6,2s com a capa ainda no ar até 7,4s — a voz dizia
+         * "É quando o dinheiro passa…" e a legenda karaokê existia, mas TAPADA
+         * pela capa, que pinta por cima de tudo. Teto novo: a capa acaba, no mais
+         * tardar, quando a cena 2 arranca (o offset das legendas continua sendo os
+         * 0,9s da voz — este teto não mexe nele).
+         */
+        const arranqueDaCena2 = masterStarts.length > 1
+          ? introFrames + masterStarts[1]
+          : Number.POSITIVE_INFINITY;
+        const capaEfetiva = Math.max(1, Math.min(capaFrames, arranqueDaCena2));
+        return (
+          <Sequence durationInFrames={capaEfetiva}>
+            {isV3Intro(script.intro) ? (
+              <DynamicIntro
+                frase={script.intro.frase || ''}
+                counter={script.intro.counter}
+                frames={capaEfetiva}
+                metaphor={fioCondutorDoScript(script)}
+              />
+            ) : (
+              <ShockIntro big={script.intro.big || ''} sub={script.intro.sub || ''} />
+            )}
+          </Sequence>
+        );
+      })()}
       {/* ♦ A TELA DO BORDÃO (03/08/2026): por cima dos últimos ~2,5s da última cena,
           o tempo exato de a voz dizer o bordão — custo ZERO em segundos. Vem ANTES
           da assinatura no JSX de propósito: a assinatura pinta por cima durante o
