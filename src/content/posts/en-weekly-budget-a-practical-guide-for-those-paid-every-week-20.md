@@ -26,7 +26,7 @@ That’s exactly where the idea of a **weekly household budget** shines. Instead
 And the best part: the [FinMoovi app](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o) makes that adjustment feel natural. Snap a photo of a receipt or simply say “Weekly rent” and it will recognize the expense, automatically slot it into the right category, and deduct it from the week’s available balance. In under five minutes you have a clear view of how much you can still spend before the next paycheck hits.
 
 ### 5‑Minute Micro‑Action in FinMoovi
-1. Open the app and tap **Smart Capture**.  
+1. Open the app and tap **[Smart Capture](/en/posts/en-how-to-secure-financing-for-your-projects-without-headaches-)**.  
 2. Photograph the latest water bill or dictate “Water bill”.  
 3. Confirm the suggested category (e.g., **Fixed Expenses – Home**).  
 4. Watch the remaining weekly balance and tweak your spending limit if needed.  

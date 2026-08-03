@@ -43,7 +43,7 @@ Broad categories like “food” or “transport” are useful, but they can be 
 
 ## Automate with Smart Capture
 
-Here’s where FinMoovi shines. Open the app, select **smart capture**, point your camera at the receipt or bill, and in a few seconds the system extracts:
+Here’s where FinMoovi shines. Open the app, select **[smart capture](/en/posts/en-how-to-secure-financing-for-your-projects-without-headaches-)**, point your camera at the receipt or bill, and in a few seconds the system extracts:
 
 * Total amount  
 * Purchase date  

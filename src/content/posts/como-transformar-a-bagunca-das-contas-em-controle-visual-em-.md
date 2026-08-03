@@ -21,7 +21,7 @@ seo:
 
 Imagine a cena: você acorda, abre a gaveta da mesa e se depara com um monte de notas fiscais, recibos de supermercado, extratos de cartão e aquele papel amassado que diz “conta de luz”. Enquanto tenta encontrar o último comprovante de pagamento, o relógio já avançou meia‑hora e a ansiedade já começou a pesar. Essa bagunça é o que chamamos de “desordem financeira”, e ela impede que você tenha clareza sobre onde o dinheiro realmente está indo.
 
-A solução não está em guardar tudo em pastas diferentes ou em tentar lembrar mentalmente cada gasto. Trata‑se de criar um sistema visual e automático que transforma aquele caos em um painel simples, onde cada categoria aparece como um bloco de cor e cada despesa sai do papel para o celular em segundos. É exatamente isso que o **FinMoovi** faz: com a captura inteligente de notas fiscais, você tira uma foto do recibo, o app reconhece o valor, a data e a categoria, e já registra tudo automaticamente. Em menos de cinco minutos, você tem um registro pronto para ser analisado.
+A solução não está em guardar tudo em pastas diferentes ou em tentar lembrar mentalmente cada gasto. Trata‑se de criar um sistema visual e automático que transforma aquele caos em um painel simples, onde cada categoria aparece como um bloco de cor e cada despesa sai do papel para o celular em segundos. É exatamente isso que o **FinMoovi** faz: com a [captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de-ca) de notas fiscais, você tira uma foto do recibo, o app reconhece o valor, a data e a categoria, e já registra tudo automaticamente. Em menos de cinco minutos, você tem um registro pronto para ser analisado.
 
 ---
 

@@ -32,7 +32,7 @@ Para armar esta lista, probamos cada solución **30 días** en situaciones reale
 |----------|----------------|
 | **Facilidad de uso** | Interfaz intuitiva, curva de aprendizaje y disponibilidad de tutoriales. |
 | **Precio** | Modelo de cobro (gratuito, suscripción mensual o anual) y relación calidad‑precio. |
-| **Funcionalidades** | Captura inteligente de notas, [multimoneda](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere), reportes de flujo de caja, metas y alertas. |
+| **Funcionalidades** | [Captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac) de notas, [multimoneda](/es/posts/es-pierdes-el-control-de-los-gastos-cuando-viajas-usando-difere), reportes de flujo de caja, metas y alertas. |
 | **Seguridad** | Encriptación de datos, autenticación de dos factores y cumplimiento de normas internacionales (p. ej.: GDPR). |
 | **Soporte** | Canales de atención, tiempo de respuesta y calidad de las respuestas. |
 

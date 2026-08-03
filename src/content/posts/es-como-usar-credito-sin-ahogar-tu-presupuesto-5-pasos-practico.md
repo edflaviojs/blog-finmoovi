@@ -19,7 +19,7 @@ seo:
   keywords: ["financiación","finanzas personales","economía","dinero","crédito","presupuesto","ahorro"]
 ---
 
-Imagina la escena: acabas de recibir la propuesta de financiación para ese coche que siempre has querido, pero al abrir el contrato sientes un escalofrío. Las cuotas parecen pequeñas, pero cuando las comparas con los gastos del mes – alquiler, la factura de la luz, ese café diario – el peso empieza a notarse. De repente, el sueño de tener un coche nuevo se transforma en una preocupación constante: “¿Voy a poder ahorrar algo para emergencias?”
+Imagina la escena: acabas de recibir la propuesta de [financiación](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac) para ese coche que siempre has querido, pero al abrir el contrato sientes un escalofrío. Las cuotas parecen pequeñas, pero cuando las comparas con los gastos del mes – alquiler, la factura de la luz, ese café diario – el peso empieza a notarse. De repente, el sueño de tener un coche nuevo se transforma en una preocupación constante: “¿Voy a poder ahorrar algo para emergencias?”
 
 Este malestar es más frecuente de lo que parece, y la causa suele estar en la falta de visibilidad de a dónde va realmente el dinero. Cuando tienes todos los gastos mapeados y un plan claro, la financiación deja de ser un villano y pasa a ser una herramienta que encaja en tu flujo. Ahí es donde **FinMoovi** entra en juego: con la captura inteligente de facturas y documentos, la app convierte ese papel de propuesta en datos organizados en pocos clics. En menos de cinco minutos tienes la cuota, la tasa y el impacto en tu caja mensual en la palma de la mano.
 

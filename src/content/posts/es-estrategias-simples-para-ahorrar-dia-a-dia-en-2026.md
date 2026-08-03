@@ -27,7 +27,7 @@ Ahorrar no tiene que ser un plan complicado ni un sacrificio extremo. En la prá
 
 ## Crea el hábito de la captura inteligente  
 
-La primera barrera para ahorrar suele ser la falta de visibilidad. Cuando no sabemos cuánto gastamos, no podemos recortar lo superfluo. La función de captura inteligente de FinMoovi elimina ese obstáculo. Al fotografiar el recibo del supermercado, la app reconoce los ítems, los agrupa en las categorías correctas y actualiza tu flujo de caja al instante. Esa visualización inmediata ya crea un efecto de “freno” en las próximas decisiones de consumo.
+La primera barrera para ahorrar suele ser la falta de visibilidad. Cuando no sabemos cuánto gastamos, no podemos recortar lo superfluo. La función de [captura inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac) de FinMoovi elimina ese obstáculo. Al fotografiar el recibo del supermercado, la app reconoce los ítems, los agrupa en las categorías correctas y actualiza tu flujo de caja al instante. Esa visualización inmediata ya crea un efecto de “freno” en las próximas decisiones de consumo.
 
 **Consejo práctico:** antes de cerrar la cuenta del tarjeta, reserva un momento para revisar las categorías en la app; si algo parece fuera de lo normal, ajusta el límite de esa categoría para el próximo mes.
 

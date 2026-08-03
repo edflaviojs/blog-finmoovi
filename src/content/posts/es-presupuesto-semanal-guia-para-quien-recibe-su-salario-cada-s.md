@@ -26,7 +26,7 @@ Es precisamente en esa situación donde el concepto de **presupuesto doméstico 
 Y lo mejor: la app **FinMoovi** hace este ajuste de forma natural. Basta con tomar una foto del comprobante o simplemente decir “Alquiler de la semana” y la app reconoce el gasto, lo clasifica automáticamente en la categoría correcta y lo descuenta del saldo disponible para esa semana. En menos de cinco minutos tienes una visión clara de cuánto puedes gastar hasta la próxima entrada de salario.
 
 ### Micro‑acción de 5 minutos en FinMoovi
-1. Abre la app y toca **“Captura Inteligente”**.  
+1. Abre la app y toca **“[Captura Inteligente](/es/posts/es-como-conseguir-financiacion-para-tus-proyectos-sin-complicac)”**.  
 2. Fotografía la última factura de agua o dicta “Factura de agua”.  
 3. Confirma la categoría sugerida (por ejemplo, **“Gastos fijos – Hogar”**).  
 4. Observa el saldo restante para la semana y ajusta el límite de compras, si lo consideras necesario.  

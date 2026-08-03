@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-03T13:33:09.630Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-08-03T14:53:52.998Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -474,8 +474,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:31.687Z"
+      "status": "used",
+      "addedAt": "2026-08-03T10:31:31.687Z",
+      "usedAt": "2026-08-03T14:53:52.998Z",
+      "usedBy": "gerar-post-orcamento"
     },
     {
       "keyword": "fund investments",
