@@ -1,0 +1,116 @@
+name: YouTube — Publicar Short (horário nobre)
+
+# ♦ O CARTEIRO (03/08/2026 — IMPL20 §32 / IMPL24, decisão do dono).
+#
+# A produção (youtube-short-render.yml, cron 06:30 UTC) deixa o vídeo pronto
+# como ARTEFATO e regista o bilhete na fila de saída. ESTE workflow entrega:
+# baixa o artefato do run de produção e publica no YouTube — no horário nobre
+# do Brasil, não às 03:30 da manhã como era quando tudo acontecia num fôlego.
+#
+# Horário: 15:00 UTC = 12:00 no Brasil (almoço). Para mudar para a noite
+# (19:00 BR), troque o cron por '0 22 * * *'. É UMA linha.
+#
+# Enquanto a auditoria da API durar, o upload continua PRIVADO e o dono publica
+# com 1 clique no Studio — mas a arquitetura já fica pronta para o dia em que a
+# porta private→public abrir.
+#
+# Sem pendentes na fila = sucesso neutro (exit 78, o mesmo "nada a fazer" do
+# pick-next-short). O passo de publicar é BARATO e determinístico de propósito
+# (a lição da IMPL24): não carrega nada da produção além do bilhete.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 15 * * *'   # 12:00 BRT — almoço (noite BR: '0 22 * * *')
+
+# Escreve tracking + fila; lê artefatos de outro run.
+permissions:
+  contents: write
+  actions: read
+
+# MESMO grupo do cron de produção: os dois commitam nos mesmos ficheiros de
+# estado — serializar evita a corrida no tracking/fila.
+concurrency:
+  group: youtube-short-daily
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Próximo da fila de saída
+        id: fila
+        run: |
+          set +e
+          BILHETE="$(node src/scripts/youtube/outbox.js next)"
+          CODE=$?
+          set -e
+          if [ "$CODE" = "78" ]; then
+            echo "📭 nada a publicar hoje — sucesso neutro."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$CODE" != "0" ]; then
+            echo "❌ leitura da fila falhou (code $CODE)"
+            exit "$CODE"
+          fi
+          echo "bilhete: $BILHETE"
+          {
+            echo "FILE_SLUG=$(echo "$BILHETE" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).fileSlug))')"
+            echo "RUN_ID=$(echo "$BILHETE" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).runId))')"
+          } >> "$GITHUB_ENV"
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      - name: Instalar dependências
+        if: steps.fila.outputs.skip != 'true'
+        run: npm ci
+
+      # O artefato foi gravado a partir de youtube-render/ (ancestral comum dos
+      # caminhos), então baixá-lo PARA youtube-render/ reconstrói exatamente o
+      # layout que o upload-short espera: out/<slug>.mp4 + public/audio/<slug>/*.srt.
+      - name: Baixar o vídeo do run de produção
+        if: steps.fila.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download "$RUN_ID" --name "short-$FILE_SLUG" --dir youtube-render
+          test -f "youtube-render/out/$FILE_SLUG.mp4" || { echo "❌ MP4 não veio no artefato"; ls -R youtube-render | head -30; exit 1; }
+          echo "🎞️ $(du -h "youtube-render/out/$FILE_SLUG.mp4" | cut -f1) prontos para entrega."
+
+      - name: Publicar no YouTube (privado até auditoria)
+        if: steps.fila.outputs.skip != 'true'
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          # LLM grátis p/ metadados (fallback determinístico se ausente)
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/youtube/upload-short.js --slug="$FILE_SLUG"
+
+      - name: Tirar da fila e commitar tracking
+        if: steps.fila.outputs.skip != 'true'
+        run: |
+          node src/scripts/youtube/outbox.js done --file-slug="$FILE_SLUG"
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/youtube-published.json .github/data/youtube-outbox.json
+          if git diff --staged --quiet; then
+            echo "Sem mudanças a commitar."
+          else
+            git commit -m "chore: short $FILE_SLUG publicado (horario nobre) [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          fi

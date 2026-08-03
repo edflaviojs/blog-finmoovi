@@ -31,6 +31,7 @@
 
 import { readdirSync, readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { listOutboxPending } from './outbox.js';
 
 const ROOT = process.cwd();
 const GLOSSARIO_DIR = join(ROOT, 'src', 'content', 'glossario');
@@ -71,15 +72,23 @@ function listPtSlugs() {
     .sort();
 }
 
-/** Slugs já publicados (chaves do tracking). */
+/**
+ * Slugs já publicados (chaves do tracking) + os PRODUZIDOS À ESPERA DE ENTREGA.
+ * ♦ 03/08/2026, com a separação produção/publicação: um vídeo pronto na fila de
+ * saída (outbox) ainda não está no tracking — sem esta união, o cron do dia
+ * seguinte escolheria o MESMO tema outra vez se o carteiro falhasse um dia.
+ * A leitura da fila vem de `outbox.js` (uma regra, um sítio — é ele o dono do
+ * formato; e ele não importa ninguém, então não há ciclo).
+ */
 function listPublished() {
-  if (!existsSync(TRACKING)) return new Set();
-  try {
-    const data = JSON.parse(readFileSync(TRACKING, 'utf-8')) || {};
-    return new Set(Object.keys(data));
-  } catch {
-    return new Set();
+  const usados = new Set();
+  if (existsSync(TRACKING)) {
+    try {
+      for (const k of Object.keys(JSON.parse(readFileSync(TRACKING, 'utf-8')) || {})) usados.add(k);
+    } catch { /* tracking ilegível: segue só com o outbox */ }
   }
+  for (const s of listOutboxPending()) usados.add(s);
+  return usados;
 }
 
 // ─── Scoring ──────────────────────────────────────────────────────────────────

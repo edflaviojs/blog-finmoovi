@@ -5,12 +5,16 @@ name: YouTube — Renderizar Short (completo)
 # (voz + SFX + música + karaokê sincronizado). Sobe o MP4 + .srt como artefato.
 # Com upload=true, publica no YouTube (PRIVADO até a auditoria da API) — F1.4.
 #
-# F1.5 — cron diário: 06:30 UTC o job escolhe sozinho o PRÓXIMO termo do
-# glossário (alfabético, sem repetir), GERA o roteiro fresco, comita, renderiza
-# e publica. No disparo manual (workflow_dispatch) o comportamento é o de antes:
-# slug + upload vêm dos inputs e o roteiro já tem que existir — a menos que o
-# input `auto=true` seja usado, que replica o ciclo do cron sob demanda (ignora
-# o input slug, escolhe o próximo termo, gera o roteiro, sobe e publica).
+# ♦ 03/08/2026 — cron diário: 06:30 UTC o job escolhe sozinho o PRÓXIMO termo,
+# GERA o roteiro fresco, comita, renderiza e PÕE NA FILA DE SAÍDA (não publica
+# mais aqui!). Quem publica é o youtube-short-publish.yml, no horário nobre BR.
+# No disparo manual (workflow_dispatch) o comportamento é o de antes: slug +
+# upload vêm dos inputs e o roteiro já tem que existir — a menos que auto=true,
+# que replica o ciclo do cron sob demanda (escolhe, gera, renderiza, enfileira).
+# ⚠️ RECUPERAÇÃO de um vídeo mau do dia: re-rodar manual com upload=true publica
+# o NOVO direto (e às 15:00 o carteiro vê o tema já no tracking e só limpa a
+# fila). Re-rodar manual SEM upload NÃO troca o bilhete da fila — o carteiro
+# entregaria o artefato VELHO.
 
 on:
   workflow_dispatch:
@@ -67,7 +71,8 @@ jobs:
       #   • schedule, OU workflow_dispatch com auto=true → escolhe o próximo
       #     termo (ignora o input slug); se o glossário esgotou, marca
       #     skip=true e o resto do job é pulado (sucesso neutro, sem falha).
-      #     SLUG resolvido, UPLOAD=true, GENERATE=true (gera o roteiro fresco).
+      #     SLUG resolvido, UPLOAD=false + ENQUEUE=true (o vídeo vai para a
+      #     fila de saída; quem publica é o youtube-short-publish.yml).
       #     auto=true replica o ciclo do cron sob demanda, pra testar/repetir.
       #   • workflow_dispatch sem auto → SLUG/UPLOAD vêm dos inputs,
       #     GENERATE=false (comportamento manual de sempre).
@@ -98,7 +103,12 @@ jobs:
             {
               echo "SLUG=$SLUG"
               echo "FILE_SLUG=$FILE_SLUG"
-              echo "UPLOAD=true"
+              # ♦ 03/08/2026 — PRODUÇÃO SEPARADA DA PUBLICAÇÃO (IMPL20 §32/IMPL24):
+              # o cron PRODUZ de madrugada e põe o vídeo na FILA DE SAÍDA; quem
+              # publica é o youtube-short-publish.yml, no horário nobre BR.
+              # Publicar aqui às 06:30 UTC era publicar às 03:30 da manhã no Brasil.
+              echo "UPLOAD=false"
+              echo "ENQUEUE=true"
               echo "GENERATE=true"
             } >> "$GITHUB_ENV"
           else
@@ -106,6 +116,7 @@ jobs:
               echo "SLUG=${{ github.event.inputs.slug || 'juros-compostos' }}"
               echo "FILE_SLUG=${{ github.event.inputs.slug || 'juros-compostos' }}"
               echo "UPLOAD=${{ github.event.inputs.upload }}"
+              echo "ENQUEUE=false"
               echo "GENERATE=false"
             } >> "$GITHUB_ENV"
           fi
@@ -252,6 +263,25 @@ jobs:
             youtube-render/out/*.mp4
             youtube-render/public/audio/${{ env.FILE_SLUG }}/*.srt
           if-no-files-found: error
+
+      # ♦ 03/08/2026 — o vídeo produzido pelo CRON entra na FILA DE SAÍDA em vez de
+      # ser publicado aqui: o artefato short-<slug> guarda o MP4+SRTs e este bilhete
+      # diz ao carteiro (youtube-short-publish.yml) qual run baixar. O commit da fila
+      # serializa com o resto pelo concurrency group "daily".
+      - name: Pôr na fila de saída (cron)
+        if: steps.resolve.outputs.skip != 'true' && env.ENQUEUE == 'true'
+        run: |
+          node src/scripts/youtube/outbox.js enqueue --file-slug="$FILE_SLUG" --run-id="${{ github.run_id }}"
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/youtube-outbox.json
+          if git diff --staged --quiet; then
+            echo "Fila de saída sem mudanças."
+          else
+            git commit -m "chore: video $FILE_SLUG pronto na fila de saida [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          fi
 
       - name: Publicar no YouTube (privado até auditoria)
         if: steps.resolve.outputs.skip != 'true' && env.UPLOAD == 'true'
