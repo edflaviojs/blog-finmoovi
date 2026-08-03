@@ -32,6 +32,21 @@ const VAZIAS = new Set(['que', 'com', 'para', 'por', 'uma', 'umas', 'uns', 'dos'
 export const semAcento = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 
 /**
+ * A FRASE DA CAPA (02/08/2026): é a 1ª frase falada E o texto que aparece na tela.
+ * Dezoito palavras a 2,76 palavras/s = 6,5s, e a capa está desenhada para durar
+ * exatamente isso (`CAPA_FRAMES_V3 = 223` em Short.tsx) — os dois números são o
+ * MESMO facto; mexer num sem mexer no outro faz a capa sair a meio da frase.
+ * ⚠️ Já foi 13 e reprovava a frase que o próprio dono escreveu como modelo — o
+ * número sai da frase dele, não de gosto.
+ *
+ * VIVE AQUI (03/08/2026) porque o escritor (roteiro-narrativa) e o segundo leitor
+ * (segundo-leitor) precisam do MESMO número: o leitor dizia "13" enquanto a trava
+ * exigia 18 — o padrão prompt-contra-validador outra vez. Uma regra, um sítio, e o
+ * sítio é a folha que não importa ninguém.
+ */
+export const MAX_PALAVRAS_CAPA = 18;
+
+/**
  * A PALAVRA-CHAVE TEM DE SER UMA QUE FOI MESMO DITA (erro apanhado em 31/07).
  *
  * O validador exige que `keyword` apareça na narração do gancho. A 1ª versão punha
@@ -40,15 +55,47 @@ export const semAcento = (s) => String(s || '').toLowerCase().normalize('NFD').r
  * Resultado: reprovou 4 tentativas seguidas com um erro que **o modelo não podia
  * corrigir**, porque a narração vem fechada da passagem 1. Pêndulo garantido.
  *
- * Agora escolhe-se, de entre as palavras do tema, a mais longa que o gancho DIZ.
- * `term` continua a ser o tema inteiro (é ele que dá o título); `keyword` passa a
- * ser a âncora falada.
+ * ⚠️ ALARGADA EM 03/08/2026 — e a causa foi MEDIDA no roteiro-modelo do dono.
+ * A versão anterior exigia a palavra INTEIRA do tema dentro da fala: com o tema
+ * "parcelamento", uma fala que dissesse "parcela" não contava (medido: devolvia
+ * null nos dois blocos do roteiro D). A trava reprovava o modelo que o dono deu.
+ * Agora casa também por FAMÍLIA da palavra, por duas portas estreitas:
+ *   1. singular/plural — "erros"↔"erro", "cartões"↔"cartão" ("ões"→"ão" e "s" final);
+ *   2. prefixo comum ≥6 letras — "parcela"↔"parcelamento", "investe"↔"investimento".
+ * Estreitas de propósito: "cartas"↔"cartão" NÃO casa (nem plural um do outro, nem
+ * 6 de prefixo — prefixo comum é "carta", 5). Falsos positivos assumidos e de dano
+ * baixo: a família "financ-" casa entre si, "investir"↔"investigar".
+ * E siglas de 3 letras sem vogal ("cdb", "cdi") passam a ser candidatas — antes o
+ * filtro de 4 letras deixava esses temas SEM candidata nenhuma, erro incorrigível.
+ *
+ * O RETORNO: quando a fala tem a palavra do tema inteira, devolve-se a palavra do
+ * TEMA (como sempre); quando o casamento é por família, devolve-se a palavra que
+ * foi FALADA — é ela que existe na narração, e é isso que os validadores a jusante
+ * (schema-short) conferem por substring.
  */
+const singularizar = (s) => s.replace(/oes$/, 'ao').replace(/aes$/, 'ao').replace(/aos$/, 'ao').replace(/s$/, '');
+
 export function keywordFalada(termo, falaDoGancho) {
   const gancho = semAcento(falaDoGancho);
+  // ⚠️ Os tokens ORIGINAIS (com acento) andam lado a lado com os normalizados:
+  // a keyword vai para o TÍTULO público do YouTube (upload-short.js), e devolver
+  // "cartoes" sem acento estragava o título — apanhado na revisão pós-execução.
+  const tokensOriginais = String(falaDoGancho || '').split(/[^\p{L}\p{N}]+/u).filter(Boolean);
   const candidatas = String(termo || '')
     .split(/[^\p{L}\p{N}]+/u)
-    .filter((w) => w.length >= 4 && !VAZIAS.has(semAcento(w)))
+    .filter((w) => (w.length >= 4 || (w.length === 3 && !/[aeiou]/.test(semAcento(w)))) && !VAZIAS.has(semAcento(w)))
     .sort((a, b) => b.length - a.length);
-  return candidatas.find((w) => gancho.includes(semAcento(w))) || null;
+  for (const w of candidatas) {
+    const alvo = semAcento(w);
+    if (gancho.includes(alvo)) return w; // a porta de sempre: palavra inteira na fala
+    for (const original of tokensOriginais) {
+      const f = semAcento(original);
+      if (f.length < 4) continue;
+      if (singularizar(f) === singularizar(alvo)) return original.toLocaleLowerCase('pt-BR'); // singular/plural
+      let p = 0;
+      while (p < f.length && p < alvo.length && f[p] === alvo[p]) p++;
+      if (p >= 6) return original.toLocaleLowerCase('pt-BR'); // radical comum ("parcela" ↔ "parcelamento")
+    }
+  }
+  return null;
 }

@@ -32,6 +32,10 @@ import { PERSONA, VICIOS, O_QUE_PRESERVAR } from './voz-do-canal.js';
 // ("Dinheiro sem controle acaba indo para o outro lado"). Não se pede a alguém que
 // preserve à letra uma frase que não lhe foi mostrada.
 import { BORDAO } from './schema-short.js';
+// ⚠️ O limite da capa vem do MESMO sítio que a trava usa (03/08/2026). Este prompt
+// dizia "13 palavras" enquanto a trava exigia 18 — o leitor encolhia a capa que o
+// escritor tinha acertado. Prompt e trava leem a mesma constante, da mesma folha.
+import { MAX_PALAVRAS_CAPA } from './palavras.js';
 
 const ORDEM = ['gancho', 'empatia', 'virada', 'demonstracao', 'convite', 'fecho'];
 
@@ -63,14 +67,19 @@ Não é uma lista fechada: **é o teste que manda**. Qualquer palavra que só se
 
 ════════ A PRIMEIRA FRASE É A CAPA — E É A QUE MAIS IMPORTA ════════
 A 1ª frase do bloco 1 aparece ESCRITA na tela ao mesmo tempo que é dita. É a única coisa que a pessoa lê antes de decidir se fica ou se passa o dedo.
-**Ela tem de INCOMODAR.** Não é um convite simpático: é um aviso que dá um aperto — a pessoa sente que já tá perdendo alguma coisa, e que ainda vai a tempo. Um fim tipo *"antes que seja tarde"*, *"e você nem viu"*, *"e já começou"* é o que dá esse aperto.
-Se ela estiver morna, reescreva — mas **sem inventar facto novo, sem número novo, e no máximo 13 palavras**.
-🔴 **E ELA TEM DE SER ENTENDIDA À PRIMEIRA, OUVINDO UMA VEZ SÓ.** É aqui que este canal mais falha, e o dono já reprovou duas vezes pelo mesmo motivo. Duas regras:
-**(a) Quem perde é a PESSOA.** Erros não "levam" nem "tiram" dinheiro sozinhos. Diga "faz você perder", e diga de quanto em quanto tempo.
-**(b) Uma frase só, presa por um "que".** Duas metades coladas por vírgula obrigam quem ouve a juntá-las sozinho — e ouve-se uma vez só.
-✗ "Três erros no cartão levam quinhentos reais, e você nem percebeu."
-   (*levam* para onde? não percebeu o quê? o dono: *"se falar isso para um senhor de 70 anos, ele não entende"*)
-✓ "Três erros de quem usa cartão que fazem você perder quinhentos por mês e nem perceber."
+**Ela é uma PERGUNTA que dói** — de dor, de vergonha ou de provocação — e a frase logo a seguir dá o choque ou a resposta. É o padrão do canal: pergunta que incomoda, resposta na cara. **Nunca a transforme em afirmação, e nunca deixe a pergunta sem a resposta colada nela.**
+⚠️ E a resposta NÃO repete a pergunta para responder — ela responde direto ("Quantas assinaturas você paga? / Se você travou agora, esse vídeo é pra você.").
+Se a pergunta estiver morna, reescreva — mas **sem inventar facto novo, sem número novo, terminando em "?", e no máximo ${MAX_PALAVRAS_CAPA} palavras**.
+🔴 **E ELA TEM DE SER ENTENDIDA À PRIMEIRA, OUVINDO UMA VEZ SÓ.** É aqui que este canal mais falha. Palavra que um senhor de setenta anos não entenderia, troque.
+
+════════ OS SEIS PRINCÍPIOS DESTE CANAL — é contra eles que você julga ════════
+1. UMA ideia por vídeo. Se um bloco abrir assunto novo, corte o desvio, não a ideia.
+2. Um NÚMERO que se transforma à frente de quem ouve (antes → depois). É a transformação que prende, não enfeite.
+3. O app aparece FAZENDO a conta, na 1ª pessoa ("eu joguei isso no FinMoovi e ele me mostrou…"), nunca citado de passagem.
+4. Metáfora quase não existe. Se houver uma comparação, é com coisa que a pessoa JÁ conhece, uma vez só. Duas metáforas = corte uma.
+5. Nenhuma pergunta fica pendurada. Perguntou, respondeu.
+6. Frases curtas, sujeito e verbo. "Ela cresceu." "A cabeça não guarda isso."
+⚠️ Se aparecer uma conta de rendimento (dinheiro que "vira" mais dinheiro) que não veio de conta calculada, reescreva a frase para o número sair da tela do app ("o FinMoovi me mostrou…"), sem mudar o número — é história de quem conta, não promessa do canal.
 
 🇧🇷 **PORTUGUÊS DO BRASIL FALADO.** Nada de "está a fazer" (no Brasil é "tá fazendo"), nada de "ecrã" nem "telemóvel".
 
@@ -82,7 +91,7 @@ ${O_QUE_PRESERVAR}
 
 ════════ AS SUAS ALGEMAS — leia duas vezes ════════
 ⛔ NÃO invente factos, números, valores ou promessas. Nenhum número novo. Nenhum número alterado.
-⛔ NÃO troque a imagem do vídeo por outra, nem a tire de onde ela está.
+⛔ Se houver uma comparação na fala, NÃO a troque por outra nem acrescente novas — e não invente metáfora onde não há (o padrão do canal é quase sem metáfora).
 ⛔ NÃO mexa no BORDÃO DO CANAL, nem o mude de sítio. É esta frase, e vai copiada à letra, palavra por palavra: "${BORDAO}"
    Não é uma frase para melhorar — é a assinatura do canal, igual em todos os vídeos. Reescrevê-la reprova a sua versão inteira.
 ⛔ NÃO mexa na palavra FINMOOVI nem no pedido de comentário.
