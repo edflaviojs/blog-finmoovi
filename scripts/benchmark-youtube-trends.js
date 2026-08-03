@@ -19,6 +19,22 @@ const API_KEY = process.env.YOUTUBE_API_KEY;
 const OUTPUT = join(process.cwd(), '.github', 'data', 'youtube-trends.json');
 
 /**
+ * O ARQUIVO DE CAPÍTULOS — o único ficheiro deste coletor que ACUMULA.
+ *
+ * O `youtube-trends.json` é uma FOTOGRAFIA: cada colheita apaga a anterior, e é
+ * assim que deve ser (queremos o que está a bombar agora, não uma fila
+ * envelhecida). Mas para desenhar o nosso vídeo longo precisamos do contrário:
+ * quantos mais exemplos de estrutura, melhor. Na 1ª colheita apanhámos 7 vídeos
+ * com capítulos — indício, não dado. Guardando o que vai aparecendo, em duas
+ * semanas há 40 ou 50, e a conversa muda.
+ *
+ * Um vídeo entra uma vez e fica. Nunca é reescrito: a estrutura dele não muda,
+ * e reescrever só criaria ruído no histórico do repositório.
+ */
+const ARQUIVO_CAPITULOS = join(process.cwd(), '.github', 'data', 'youtube-capitulos.json');
+const MAX_NO_ARQUIVO = 300; // teto de segurança; ao ritmo real (~7/dia, quase todos repetidos) demora meses
+
+/**
  * AS BUSCAS — a LENTE do detetive, e a peça mais subjetiva de todo o sistema.
  *
  * O detetive não vê o YouTube: vê o que estas frases encontram. Tudo o que cair
@@ -272,15 +288,60 @@ function computeAggregatePatterns(videos) {
 }
 
 /**
+ * Junta os longos com capítulos desta colheita ao arquivo, e devolve o arquivo
+ * inteiro (é sobre ELE que o estudo passa a ser feito).
+ */
+function acumularCapitulos(longos) {
+  let arquivo = { _doc: 'Estrutura de capítulos de vídeos longos de finanças, acumulada colheita a colheita. Entrada para o desenho do vídeo longo do FinMoovi (IMPL20 §14). Um vídeo entra uma vez e não é reescrito.', videos: [] };
+  if (existsSync(ARQUIVO_CAPITULOS)) {
+    try {
+      const lido = JSON.parse(readFileSync(ARQUIVO_CAPITULOS, 'utf-8'));
+      if (Array.isArray(lido?.videos)) arquivo = { ...arquivo, ...lido };
+    } catch {
+      console.log('  ⚠️ arquivo de capítulos ilegível — a começar um novo (o antigo é substituído).');
+    }
+  }
+
+  const jaLa = new Set(arquivo.videos.map((v) => v.videoId));
+  const novos = longos
+    .filter((v) => Array.isArray(v.capitulos) && v.capitulos.length && !jaLa.has(v.videoId))
+    .map((v) => ({
+      videoId: v.videoId,
+      title: v.title,
+      channel: v.channel,
+      duracaoSeg: v.duracaoSeg,
+      idioma: v.idioma,
+      viewsPerDay: Math.round(v.viewsPerDay),
+      vistoEm: new Date().toISOString().slice(0, 10),
+      capitulos: v.capitulos,
+    }));
+
+  arquivo.videos.push(...novos);
+  // Se algum dia encher, sai o mais antigo — o material recente ensina mais.
+  if (arquivo.videos.length > MAX_NO_ARQUIVO) {
+    arquivo.videos = arquivo.videos.slice(arquivo.videos.length - MAX_NO_ARQUIVO);
+  }
+  arquivo.atualizadoEm = new Date().toISOString();
+  arquivo.total = arquivo.videos.length;
+
+  mkdirSync(join(process.cwd(), '.github', 'data'), { recursive: true });
+  writeFileSync(ARQUIVO_CAPITULOS, JSON.stringify(arquivo, null, 2));
+  console.log(`  🗄️ arquivo de capítulos: +${novos.length} novo(s) → ${arquivo.videos.length} vídeo(s) acumulados`);
+  return arquivo.videos;
+}
+
+/**
  * O ESTUDO DOS CAPÍTULOS — responde, com números, a "como é que os vídeos longos
  * de finanças se organizam?". É a entrada de desenho do NOSSO vídeo longo
  * (IMPL20 §14, fase F3): quantos capítulos, de que tamanho, e como se chama o
  * primeiro (o que abre é o que segura a audiência).
  */
+// ♦ Corre sobre o ARQUIVO ACUMULADO (ver acumularCapitulos), não sobre a
+// colheita do dia: com 7 vídeos isto era anedota; com 50, é desenho.
 function estudarCapitulos(longos) {
   const comCap = longos.filter((v) => Array.isArray(v.capitulos) && v.capitulos.length);
   if (!comCap.length) {
-    return { longosAnalisados: longos.length, comCapitulos: 0 };
+    return { fonte: 'arquivo acumulado', comCapitulos: 0 };
   }
   const media = (nums) => Math.round(nums.reduce((a, b) => a + b, 0) / nums.length);
 
@@ -292,7 +353,7 @@ function estudarCapitulos(longos) {
     .map((v) => Math.round(v.duracaoSeg / v.capitulos.length));
 
   return {
-    longosAnalisados: longos.length,
+    fonte: 'arquivo acumulado (.github/data/youtube-capitulos.json)',
     comCapitulos: comCap.length,
     mediaDeCapitulos: media(nCapitulos),
     minDeCapitulos: Math.min(...nCapitulos),
@@ -368,8 +429,11 @@ async function main() {
   };
   console.log(`  📐 formato: ${contagem.shorts} shorts · ${contagem.longos} longos | idioma: ${contagem.naoPortugues} não-português`);
 
-  const estudoDeCapitulos = estudarCapitulos(longos);
-  console.log(`  📖 capítulos: ${estudoDeCapitulos.comCapitulos}/${estudoDeCapitulos.longosAnalisados} longos os publicam` +
+  // O estudo passa a correr sobre o ARQUIVO (tudo o que já vimos), não só sobre
+  // a colheita de hoje — é essa a diferença entre indício e dado.
+  const acumulados = acumularCapitulos(longos);
+  const estudoDeCapitulos = estudarCapitulos(acumulados);
+  console.log(`  📖 capítulos: ${estudoDeCapitulos.comCapitulos} vídeo(s) no arquivo` +
     (estudoDeCapitulos.comCapitulos
       ? ` · média de ${estudoDeCapitulos.mediaDeCapitulos} capítulos · ${estudoDeCapitulos.mediaSegundosPorCapitulo}s cada · 1º capítulo dura ${estudoDeCapitulos.duracaoMediaDoPrimeiroSeg}s`
       : ''));
