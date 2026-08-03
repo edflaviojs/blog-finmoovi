@@ -1,6 +1,7 @@
 ---
 term: "Debentures"
 image: "/images/glossario/es-debentures.webp"
+imageAlt: "Monedas doradas apiladas, frasco con planta y caja fuerte sobre fondo oscuro."
 definition: "Títulos de deuda emitidos por empresas para captar capital. El inversor presta dinero a la empresa a cambio de intereses."
 category: "investimentos"
 locale: "es"

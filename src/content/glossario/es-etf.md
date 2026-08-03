@@ -4,6 +4,7 @@ definition: "Entienda qué es etf, cómo funciona, ventajas, riesgos y ejemplos 
 title: "etf - Glosario Financiero"
 description: "Entienda qué es etf, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/etf.webp"
+imageAlt: "Monedas doradas apiladas en forma ascendente con plantas verdes creciendo sobre ellas."
 category: "basico"
 tags: ["etf", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

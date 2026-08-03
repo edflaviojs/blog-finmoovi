@@ -1,6 +1,7 @@
 ---
 term: "Educación Financiera"
 image: "/images/glossario/es-educacao-financeira.webp"
+imageAlt: "Monedas doradas, barras blancas ascendentes y planta verde en frasco sobre fondo oscuro."
 definition: "El conjunto de conocimientos y habilidades que te ayudan a tomar mejores decisiones sobre dinero, gastos, ahorro e inversiones."
 category: "basico"
 locale: "es"

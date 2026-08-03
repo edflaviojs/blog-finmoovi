@@ -4,6 +4,7 @@ definition: "Qué es gasto fijo de una empresa y cómo aparece en tu día a día
 title: "gasto fijo de una empresa - Glosario Financiero"
 description: "Qué es gasto fijo de una empresa y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/gasto-fixo-de-uma-empresa.webp"
+imageAlt: "Monedas doradas, cerdito transparente y planta en vaso sobre fondo azul oscuro."
 category: "basico"
 tags: ["gasto fijo de una empresa", "glosario", "finanzas"]
 author: "FinMoovi"

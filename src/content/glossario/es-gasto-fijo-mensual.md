@@ -4,6 +4,7 @@ definition: "Qué es gasto fijo mensual y cómo aparece en tu día a día — ex
 title: "gasto fijo mensual - Glosario Financiero"
 description: "Qué es gasto fijo mensual y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/gasto-fixo-mensal.webp"
+imageAlt: "Monedas apiladas y barras doradas con planta verde en frasco sobre fondo degradado azul y magenta."
 category: "basico"
 tags: ["gasto fijo mensual", "glosario", "finanzas"]
 author: "FinMoovi"

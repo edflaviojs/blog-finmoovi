@@ -4,6 +4,7 @@ definition: "Qué es gasto variable unitario y cómo aparece en tu día a día �
 title: "gasto variable unitario - Glosario Financiero"
 description: "Qué es gasto variable unitario y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/gasto-variavel-unitario.webp"
+imageAlt: "Una imagen de un gráfico de barras, monedas y plantas en vasos de vidrio, con fondo azul y rojo."
 category: "basico"
 tags: ["gasto variable unitario", "glosario", "finanzas"]
 author: "FinMoovi"

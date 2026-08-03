@@ -3,6 +3,7 @@ title: "How to Use Credit Without Squeezing Your Budget: 5 Steps"
 description: "Learn how to turn a loan into an ally, use credit wisely and keep your finances calm. Practical 5‑step guide."
 tickerHeadline: "The trick that saves your credit"
 image: "/images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp"
+imageAlt: "Gold arrow rising through blue and yellow gradient background"
 category: "dicas"
 locale: "en"
 tags: ["financing","personal finance","budgeting","money"]

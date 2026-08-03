@@ -4,6 +4,7 @@ definition: "Entienda qué es dívida, cómo funciona, ventajas, riesgos y ejemp
 title: "dívida - Glosario Financiero"
 description: "Entienda qué es dívida, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/divida.webp"
+imageAlt: "Monedas y barras doradas apiladas, con un hucha rosa en frasco de vidrio."
 category: "basico"
 tags: ["dívida", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

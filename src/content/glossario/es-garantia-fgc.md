@@ -1,6 +1,7 @@
 ---
 term: "Garantía FGC"
 image: "/images/glossario/es-garantia-fgc.webp"
+imageAlt: "Monedas doradas apiladas y planta verde en vaso de vidrio sobre fondo oscuro."
 definition: "Protección proporcionada por el Fondo de Garantía de Crédito que cubre hasta R$250.000 por CPF por institución en caso de quiebra bancaria."
 category: "basico"
 locale: "es"

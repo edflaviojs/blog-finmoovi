@@ -4,6 +4,7 @@ definition: "Qué es gasto fijo y cómo aparece en tu día a día — explicado 
 title: "gasto fijo - Glosario Financiero"
 description: "Qué es gasto fijo y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/gasto-fixo.webp"
+imageAlt: "Una imagen de una mesa con monedas, una planta y un objeto de metal dorado."
 category: "basico"
 tags: ["gasto fijo", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Entienda qué es crédito, cómo funciona, ventajas, riesgos y ejem
 title: "crédito - Glosario Financiero"
 description: "Entienda qué es crédito, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/credito.webp"
+imageAlt: "Monedas doradas apiladas, gráfico ascendente y planta en frasco sobre fondo oscuro."
 category: "basico"
 tags: ["crédito", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

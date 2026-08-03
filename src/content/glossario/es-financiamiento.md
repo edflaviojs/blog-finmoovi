@@ -1,6 +1,7 @@
 ---
 term: "Financiamiento"
 image: "/images/glossario/es-financiamento.webp"
+imageAlt: "Monedas doradas apiladas y plantas verdes creciendo en frascos sobre fondo oscuro."
 definition: "Un préstamo a largo plazo para la compra de activos de alto valor como inmuebles o vehículos, donde el activo sirve como garantía."
 category: "credito"
 locale: "es"

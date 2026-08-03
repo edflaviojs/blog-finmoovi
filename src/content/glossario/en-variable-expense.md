@@ -4,6 +4,7 @@ definition: "What Variable expense is and how it shows up in your everyday money
 title: "Variable expense - Financial Glossary"
 description: "What Variable expense is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/gasto-variavel.webp"
+imageAlt: "Gold coins and bars arranged as ascending bars, with a plant growing from a jar of coins."
 category: "basico"
 tags: ["Variable expense", "glossary", "finance"]
 author: "FinMoovi"

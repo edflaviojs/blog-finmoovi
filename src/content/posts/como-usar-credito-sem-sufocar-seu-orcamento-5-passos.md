@@ -3,6 +3,7 @@ title: "Como usar crédito sem sufocar seu orçamento: 5 passos"
 description: "Descubra como transformar um financiamento em aliado, usando crédito de forma inteligente e mantendo a tranquilidade financeira. Guia prático em 5 passos."
 tickerHeadline: "O truque que salva seu crédito"
 image: "/images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp"
+imageAlt: "Fita dourada ondulada formando seta ascendente sobre fundo gradiente azul e amarelo."
 category: "dicas"
 locale: "pt"
 tags: ["financing","finanças pessoais","economia","dinheiro"]

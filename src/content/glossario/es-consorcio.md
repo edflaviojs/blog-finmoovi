@@ -1,6 +1,7 @@
 ---
 term: "Consorcio"
 image: "/images/glossario/es-consorcio.webp"
+imageAlt: "Monedas doradas apiladas, gráfico ascendente y planta en frasco sobre fondo azul oscuro."
 definition: "Un sistema de compra grupal donde los participantes contribuyen mensualmente a un fondo común y son seleccionados periódicamente para recibir el monto total."
 category: "credito"
 locale: "es"

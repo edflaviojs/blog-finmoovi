@@ -1,6 +1,7 @@
 ---
 term: "Come-Cotas"
 image: "/images/glossario/es-come-cotas.webp"
+imageAlt: "Monedas doradas apiladas y en frascos de vidrio con plantas verdes, fondo azul oscuro."
 definition: "Come-Cotas son una forma de inversión en la que el inversor compra una parte de un activo, generalmente un fondo de inversión, y paga solo una fracción del valor total del activo. Esto permite que los inversores con menos recursos financieros participen de inversiones que normalmente estarían fuera de su alcance."
 category: "impostos"
 locale: "es"

@@ -4,6 +4,7 @@ definition: "Entienda qué es qualidade, cómo funciona, ventajas, riesgos y eje
 title: "calidad de activos - Glosario Financiero"
 description: "Entienda qué es qualidade, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/qualidade.webp"
+imageAlt: "Monedas doradas, barras gráficas y planta en frasco sobre fondo azul oscuro."
 category: "basico"
 tags: ["calidad de activos", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

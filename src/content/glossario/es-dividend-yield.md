@@ -5,6 +5,7 @@ category: "mercado"
 locale: "es"
 translationKey: "glossario-dividend-yield"
 image: "/images/glossario/dividend-yield.webp"
+imageAlt: "Monedas doradas, gráfico ascendente y planta en frasco sobre fondo azul oscuro."
 relatedTerms: ["Dividendos","Ações","Rendimento"]
 publishedAt: 2026-06-11
 ---

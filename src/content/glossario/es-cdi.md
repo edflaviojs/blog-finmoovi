@@ -1,6 +1,7 @@
 ---
 term: "CDI"
 image: "/images/glossario/es-cdi.webp"
+imageAlt: "Monedas doradas y barras crecen en gráfico sobre base rosa con planta verde."
 definition: "Certificado de Depósito Interbancario. La tasa de referencia para inversiones de renta fija en Brasil. Sigue de cerca la tasa Selic."
 category: "investimentos"
 locale: "es"

@@ -3,6 +3,7 @@ title: "Cómo usar crédito sin ahogar tu presupuesto: 5 pasos prácticos"
 description: "Aprende a convertir un préstamo en aliado, manejando el crédito con inteligencia y manteniendo la tranquilidad financiera. Guía en 5 pasos."
 tickerHeadline: "El truco que protege tu crédito"
 image: "/images/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos.webp"
+imageAlt: "Flecha dorada ascendente ondulada sobre fondo degradado azul y amarillo."
 category: "dicas"
 locale: "es"
 tags: ["financiación","finanzas personales","economía","dinero","crédito","presupuesto","ahorro"]
