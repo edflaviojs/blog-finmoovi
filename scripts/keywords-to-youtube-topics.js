@@ -283,9 +283,36 @@ async function importViralTopics({ topicsData, existingIds, existingThemeSlugs, 
   // e regenerado toda semana pelo benchmark, e na proxima execucao a lista e
   // outra. Isso e proposital — queremos o que esta bombando agora, nao uma fila
   // envelhecida de virais de semanas atras.
-  const slice = candidates.slice(0, VIRAL_MAX_PER_RUN);
+  // ♦ 03/08/2026 — NO MAXIMO 1 ESTRANGEIRO EM CADA 3 (decisao do dono).
+  // A lista vem ordenada por views/dia, e nessa conta o estrangeiro ganha
+  // sempre: na colheita de 03/08 os dois melhores Shorts faziam 28.036 e 27.128
+  // views/dia contra 4.191 do melhor brasileiro — seis vezes mais. Sem esta
+  // regra, 2 das 3 vagas semanais seriam sempre de fora. A FORMA de prender
+  // atencao atravessa idiomas, mas o ASSUNTO que faz um brasileiro parar o dedo
+  // e outro — e o assunto vem colado a forma, por mais que o prompt avise.
+  const MAX_ESTRANGEIROS = 1;
+  const slice = [];
+  const adiadosPorIdioma = [];
+  let estrangeiros = 0;
+  for (const v of candidates) {
+    if (slice.length >= VIRAL_MAX_PER_RUN) break;
+    const naoPt = v.idioma && v.idioma !== 'pt';
+    if (naoPt && estrangeiros >= MAX_ESTRANGEIROS) { adiadosPorIdioma.push(v); continue; }
+    if (naoPt) estrangeiros++;
+    slice.push(v);
+  }
+  // Se nao houver brasileiros que cheguem, a vaga NAO fica vazia: e melhor um
+  // viral estrangeiro do que menos um video na fila.
+  if (slice.length < VIRAL_MAX_PER_RUN && adiadosPorIdioma.length) {
+    const faltam = VIRAL_MAX_PER_RUN - slice.length;
+    console.log('Sem candidatos em portugues suficientes — ' + faltam + ' vaga(s) preenchida(s) com estrangeiros.');
+    slice.push(...adiadosPorIdioma.slice(0, faltam));
+  }
+  if (adiadosPorIdioma.length) {
+    console.log('Adiados por serem estrangeiros (teto de ' + MAX_ESTRANGEIROS + ' por execucao): ' + adiadosPorIdioma.length);
+  }
   if (candidates.length > slice.length) {
-    console.log((candidates.length - slice.length) + ' virais fora do cap desta execucao (nao viram backlog: o trends e regenerado semanalmente).');
+    console.log((candidates.length - slice.length) + ' virais fora do cap desta execucao (nao viram backlog: o trends e regenerado diariamente).');
   }
   if (dryRun) {
     if (slice.length > 0) {

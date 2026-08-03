@@ -35,6 +35,12 @@ const QUERIES = [
   { q: 'como investir pouco dinheiro', pillar: 'investimento' },
   { q: 'educação financeira', pillar: 'mindset' },
   { q: 'sair do vermelho', pillar: 'controle' },
+  // A 5ª busca devolve ao pilar `ferramentas` a sua janela, sem repetir o erro
+  // da que saiu: procurar por "app" trazia publicidade de aplicações rivais.
+  // "planilha de gastos" traz quem JÁ está a tentar organizar-se com uma
+  // ferramenta — e é exatamente essa pessoa que o FinMoovi serve melhor do que
+  // a planilha. Custo: ~1% da cota diária da API.
+  { q: 'planilha de gastos', pillar: 'ferramentas' },
 ];
 
 // Filters
