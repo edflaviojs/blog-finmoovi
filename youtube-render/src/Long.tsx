@@ -369,6 +369,30 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
 
   const timingDe = (id: number) => timing?.scenes?.find((t) => String(t.id) === String(id));
 
+  /**
+   * ⚠️ QUANTO TEMPO A CAPA FICA NO ECRÃ — e isto foi MEDIDO, não estimado.
+   *
+   * A 1ª versão deixava a capa até ao fim da CENA 1. Medido no vídeo real: a voz
+   * acabava a pergunta aos 5,2s e a capa ficava até aos 8s — quase três segundos a
+   * mostrar uma pergunta que já tinha sido respondida, com o karaokê da resposta
+   * escondido por baixo. É a mesma família do defeito §32.4 (a capa a sobreviver à
+   * cena seguinte), só que aqui a cena era a mesma e o problema era a FRASE.
+   *
+   * Agora a capa acaba quando a PERGUNTA acaba de ser dita: contam-se as palavras da
+   * pergunta e pergunta-se ao timing da voz quando a última delas termina, mais meio
+   * segundo para a frase assentar. Sem timing (pré-visualização sem áudio), volta ao
+   * comportamento antigo.
+   */
+  const framesDaCapa = (() => {
+    const teto = Math.max(1, Math.min(CAPA_FRAMES, VOZ_ENTRA_FRAMES + (frames[0] || CAPA_FRAMES)));
+    const palavrasDaPergunta = String(script.capa || '').trim().split(/\s+/).filter(Boolean).length;
+    const ditas = timingDe(script.scenes[0]?.id)?.words;
+    if (!palavrasDaPergunta || !ditas || ditas.length < palavrasDaPergunta) return teto;
+    const fimDaPergunta = ditas[palavrasDaPergunta - 1]?.end;
+    if (!Number.isFinite(fimDaPergunta)) return teto;
+    return Math.max(1, Math.min(teto, VOZ_ENTRA_FRAMES + Math.round((fimDaPergunta + 0.5) * fps)));
+  })();
+
   return (
     <AbsoluteFill>
       <Background />
@@ -394,15 +418,9 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
       </Sequence>
 
       {/* A CAPA POR CIMA DE TUDO — irmãos posteriores pintam por cima. A voz já toca
-          por baixo desde os 0,9s, que é exatamente o que o dono pediu no Short.
-          ⚠️ E, como no Short, a capa NUNCA sobrevive à cena 2: uma pergunta curta
-          encolhe a cena 1 e a capa taparia a legenda seguinte (o defeito §32.4). */}
-      <Sequence durationInFrames={Math.max(1, Math.min(CAPA_FRAMES, VOZ_ENTRA_FRAMES + (frames[0] || CAPA_FRAMES)))}>
-        <CapaLonga
-          pergunta={script.capa}
-          metaphor={script.fioCondutor}
-          frames={Math.max(1, Math.min(CAPA_FRAMES, VOZ_ENTRA_FRAMES + (frames[0] || CAPA_FRAMES)))}
-        />
+          por baixo desde os 0,9s, que é exatamente o que o dono pediu no Short. */}
+      <Sequence durationInFrames={framesDaCapa}>
+        <CapaLonga pergunta={script.capa} metaphor={script.fioCondutor} frames={framesDaCapa} />
       </Sequence>
 
       {/* A TELA DO BORDÃO, por cima dos últimos ~2,5s — a mesma assinatura de todos os
