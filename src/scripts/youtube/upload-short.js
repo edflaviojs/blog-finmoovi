@@ -74,10 +74,22 @@ function sanitizeText(s, max) {
 // (viram parte do CamelCase), pra não quebrar o sentido da frase.
 const PT_STOPWORDS = new Set(['de', 'em', 'com', 'para', 'e', 'o', 'a', 'do', 'da']);
 
+// Primeira letra em maiúscula, sem tocar no resto (siglas como CDB ficam iguais).
+function maiusculaInicial(s) {
+  const t = String(s || '');
+  return t ? t.charAt(0).toUpperCase() + t.slice(1) : t;
+}
+
 // Divide uma frase em palavras (letras/números unicode), sem stripar acentos.
 function splitWords(s) {
   return String(s || '').split(/[^\p{L}\p{N}]+/u).filter(Boolean);
 }
+
+// Nenhuma hashtag deste canal precisa de mais do que isto. Acima daqui não é
+// uma hashtag: é uma LISTA que veio colada e que, em CamelCase, produz o
+// monstro que foi ao ar em 28/07 — "#ControleFinanceiroDívidasPlanejamento
+// Financeiro". Ninguém procura por isso, e ocupa o lugar de 3 hashtags boas.
+const MAX_PALAVRAS_HASHTAG = 4;
 
 // Constrói UM hashtag em CamelCase (token único, mantém acentos) a partir de
 // uma frase/tag crua — ex.: "investimento em ações" → "#InvestimentoEmAções".
@@ -87,19 +99,28 @@ function buildHashtag(raw) {
   if (!body) return '';
   const words = splitWords(body);
   if (!words.length) return '';
+  if (words.length > MAX_PALAVRAS_HASHTAG) return '';
   if (words.length === 1 && PT_STOPWORDS.has(words[0].toLowerCase())) return '';
   const camel = words.map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join('');
   return camel ? `#${camel}` : '';
 }
 
-// Divide o bloco cru de hashtags em frases, preservando frases multi-palavra:
-// se houver '#', cada token começa num '#' (a frase vai até o próximo '#');
-// sem '#', usa vírgula como separador (espaço quebraria frases multi-palavra).
+/**
+ * Divide o bloco cru de hashtags em frases.
+ *
+ * ♦ 03/08/2026 — A 15ª OCORRÊNCIA DE "O PROMPT MANDA O QUE O LEITOR NÃO ACEITA".
+ * O prompt aqui em baixo pede, com estas palavras, "hashtags separadas por
+ * ESPAÇO" — e este leitor só sabia separar por VÍRGULA. Quando o modelo obedecia
+ * ao prompt, as 3 hashtags chegavam como uma frase só e viravam UM monstro
+ * colado (medido no vídeo `baITWiOojyY`). Agora as três formas são aceites, por
+ * ordem de confiança: '#' explícito → vírgula → espaço (o que o prompt pede).
+ */
 function splitHashtagPhrases(raw) {
   const s = String(raw || '').trim();
   if (!s) return [];
   if (s.includes('#')) return s.split(/(?=#)/).map((x) => x.trim()).filter(Boolean);
-  return s.split(',').map((x) => x.trim()).filter(Boolean);
+  if (s.includes(',')) return s.split(',').map((x) => x.trim()).filter(Boolean);
+  return s.split(/\s+/).map((x) => x.trim()).filter(Boolean);
 }
 
 // Monta a lista final de hashtags a partir de frases cruas: token único cada
@@ -123,14 +144,83 @@ function loadScript(slug) {
   return JSON.parse(readFileSync(p, 'utf-8'));
 }
 
-// Resolve o link da calculadora: usa o cta.target se for URL, senão o padrão.
+/**
+ * As 7 calculadoras que EXISTEM no blog (todas verificadas a responder 200 em
+ * 03/08/2026), com os termos que as chamam. Tabela fixa de propósito: escolher
+ * o link é VERDADE, não gosto — não se pede a uma IA o que uma lista resolve.
+ * ⚠️ O endereço leva barra no fim: o Cloudflare serve COM barra final.
+ */
+const CALCULADORAS = [
+  { pagina: 'calculadora-juros-compostos', termos: ['juros compostos', 'juros', 'render', 'rendimento', 'tesouro', 'poupanca', 'aplicacao'] },
+  { pagina: 'simulador-investimento', termos: ['investi', 'cdb', 'acoes', 'renda fixa', 'renda variavel', 'etf', 'dividendo'] },
+  { pagina: 'calculadora-financiamento', termos: ['financiamento', 'amortiza', 'parcela', 'divida', 'emprestimo', 'credito', 'cartao', 'juros abusivos'] },
+  { pagina: 'calculadora-reserva', termos: ['reserva', 'emergencia', 'imprevisto'] },
+  { pagina: 'calculadora-aposentadoria', termos: ['aposenta', 'previdencia', 'inss'] },
+  { pagina: 'calculadora-orcamento', termos: ['orcamento', 'gasto', 'salario', 'inflacao', 'economizar', 'controle', 'mesada', 'conta'] },
+  { pagina: 'conversor-moedas', termos: ['dolar', 'euro', 'cambio', 'moeda'] },
+];
+
+/** Sem acentos e em minúsculas, para a tabela casar com "inflação" e "inflacao". */
+function semAcento(s) {
+  return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
+
+/**
+ * Resolve o link da calculadora.
+ *
+ * ♦ 03/08/2026 — os 10 primeiros vídeos foram todos ao ar a apontar para o
+ * ÍNDICE `/ferramentas/`. Motivo medido: o roteiro grava em `cta.target` a
+ * palavra "app" ou "blog" — nunca um endereço —, e a linha abaixo só aceitava
+ * endereço. Agora, quando não há URL, o tema escolhe a calculadora certa.
+ */
 function resolveToolUrl(script) {
   const t = script?.cta?.target;
   if (typeof t === 'string' && /^https?:\/\//.test(t)) return t;
-  return BLOG_TOOLS_URL;
+
+  const texto = semAcento([script?.keyword, script?.term, script?.category].filter(Boolean).join(' '));
+  for (const c of CALCULADORAS) {
+    if (c.termos.some((termo) => texto.includes(termo))) return `${BLOG_TOOLS_URL}${c.pagina}/`;
+  }
+  return BLOG_TOOLS_URL; // tema sem calculadora própria: o índice continua a servir
 }
 
 // ─── metadados via LLM (com fallback determinístico) ─────────────────────────
+
+/**
+ * ♦ 03/08/2026 — O DEFEITO QUE ESTRAGOU 5 DAS 9 DESCRIÇÕES QUE FORAM AO AR.
+ *
+ * O orçamento era de 600 fichas de resposta. Estes modelos gastam parte desse
+ * orçamento a RACIOCINAR antes de escrever, e quando raciocinam de mais a
+ * resposta é cortada a meio — mas chega ao código como uma resposta normal.
+ * Resultado medido nos vídeos publicados: a descrição acabava a meio da palavra
+ * ("...e use a calculadora grátis do Fin") e as hashtags, que vinham DEPOIS
+ * dela no formato pedido, nunca chegavam. Os 5 vídeos com descrição cortada são
+ * exatamente os 5 sem hashtags — a correlação é a prova.
+ *
+ * Duas curas, e são precisas as duas: orçamento com folga, e nunca aceitar uma
+ * resposta que não chegou ao fim.
+ */
+const ORCAMENTO_RESPOSTA = 2000;
+const TENTATIVAS_LLM = 2;
+
+/**
+ * Diz porque é que uma resposta NÃO serve — ou nada, se estiver inteira.
+ *
+ * O sinal mais fiável não é o tamanho: é a ORDEM. Pedimos título → descrição →
+ * hashtags → palavras-chave. Se as últimas partes faltam, a resposta parou pelo
+ * caminho. E uma descrição que acaba em letra, sem pontuação, acabou a meio de
+ * uma frase que ninguém escreveu até ao fim.
+ */
+function respostaCortada({ title, description, hashtagsRaw, tagsRaw }) {
+  if (!title) return 'sem título';
+  if (!description) return 'sem descrição';
+  if (!hashtagsRaw) return 'sem hashtags (a resposta parou antes delas)';
+  if (!tagsRaw) return 'sem palavras-chave (a resposta parou antes delas)';
+  const fim = description.trim().slice(-1);
+  if (/[\p{L}\p{N}]/u.test(fim)) return `descrição acaba a meio ("…${description.trim().slice(-30)}")`;
+  return null;
+}
+
 async function tryLlm(script) {
   // Import dinâmico e protegido: se o módulo/keys falharem, caímos no template.
   let generateText;
@@ -170,39 +260,52 @@ Dados do roteiro:
 - CTA: ${script?.cta?.text || ''}
 - Narração: ${narrationSummary}`;
 
-  try {
-    const out = await generateText(prompt, { maxTokens: 600, temperature: 0.6 });
-    const grab = (tag, next) => {
-      const re = new RegExp(`---${tag}---\\s*([\\s\\S]*?)(?=---(?:${next})---|$)`);
-      const m = out.match(re);
-      return m ? m[1].trim() : '';
-    };
-    const title = grab('TITULO', 'DESCRICAO');
-    const description = grab('DESCRICAO', 'HASHTAGS');
-    const hashtagsRaw = grab('HASHTAGS', 'TAGS');
-    const tagsRaw = grab('TAGS', '');
-    if (!title || !description) {
-      log('⚠️ LLM devolveu formato incompleto — usando template determinístico.');
-      return null;
+  for (let tentativa = 1; tentativa <= TENTATIVAS_LLM; tentativa++) {
+    try {
+      const out = await generateText(prompt, { maxTokens: ORCAMENTO_RESPOSTA, temperature: 0.6 });
+      const grab = (tag, next) => {
+        const re = new RegExp(`---${tag}---\\s*([\\s\\S]*?)(?=---(?:${next})---|$)`);
+        const m = out.match(re);
+        return m ? m[1].trim() : '';
+      };
+      const partes = {
+        title: grab('TITULO', 'DESCRICAO'),
+        description: grab('DESCRICAO', 'HASHTAGS'),
+        hashtagsRaw: grab('HASHTAGS', 'TAGS'),
+        tagsRaw: grab('TAGS', ''),
+      };
+
+      const defeito = respostaCortada(partes);
+      if (defeito) {
+        log(`⚠️ Resposta do LLM veio incompleta (${defeito}) — tentativa ${tentativa}/${TENTATIVAS_LLM}.`);
+        continue;
+      }
+
+      return {
+        title: partes.title.replace(/^["']|["']$/g, ''),
+        descriptionHook: partes.description,
+        hashtags: splitHashtagPhrases(partes.hashtagsRaw),
+        tags: partes.tagsRaw.split(',').map((t) => t.trim()).filter(Boolean),
+      };
+    } catch (err) {
+      log(`⚠️ LLM falhou (${err.message}) — tentativa ${tentativa}/${TENTATIVAS_LLM}.`);
     }
-    return {
-      title: title.replace(/^["']|["']$/g, ''),
-      descriptionHook: description,
-      hashtags: splitHashtagPhrases(hashtagsRaw),
-      tags: tagsRaw.split(',').map((t) => t.trim()).filter(Boolean),
-    };
-  } catch (err) {
-    log(`⚠️ LLM falhou (${err.message}) — usando template determinístico.`);
-    return null;
   }
+  log('⚠️ O LLM não devolveu resposta inteira — usando template determinístico (que sai sempre completo).');
+  return null;
 }
 
 // Template 100% determinístico a partir dos campos do roteiro.
 function deterministicMeta(script) {
   const kw = script.keyword || script.term || 'Finanças';
   const title = `${kw}: como funciona em 1 minuto`;
+  // ⚠️ `kw` e não `script.term`: nos temas editoriais o `term` é a FRASE do
+  // tema inteira ("A inflação te rouba R$ 2 mil por ano — sem você perceber"),
+  // e encaixada aqui dava "Entenda A inflação te rouba… de um jeito simples".
+  // Como este texto de reserva passou a ser usado sempre que a IA falha, o
+  // desleixo deixou de ser raro.
   const descriptionHook =
-    `Entenda ${script.term} de um jeito simples e rápido.\n` +
+    `Entenda ${kw} de um jeito simples e rápido.\n` +
     `${script?.cta?.text || 'Coloque em prática com as ferramentas grátis do FinMoovi.'}`;
   const hashtags = [
     buildHashtag(kw),
@@ -223,7 +326,9 @@ function deterministicMeta(script) {
 function buildMetadata(raw, script) {
   const toolUrl = resolveToolUrl(script);
 
-  const title = sanitizeText(raw.title, 100) || sanitizeText(`${script.keyword}`, 100);
+  // Maiúscula inicial: a palavra-chave entra crua no começo do título e saía em
+  // minúscula em metade dos vídeos ("ações: como…", "inflação: 3 erros…").
+  const title = maiusculaInicial(sanitizeText(raw.title, 100) || sanitizeText(`${script.keyword}`, 100));
 
   // Hashtags: token único (CamelCase), sem stopword solta, dedup, no máx 5 (#Shorts sempre por último).
   const hashtags = buildHashtagList(raw.hashtags);

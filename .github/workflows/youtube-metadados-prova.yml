@@ -1,0 +1,60 @@
+name: YouTube — Provar os metadados (sem publicar)
+
+# A PROVA QUE FALTAVA (03/08/2026).
+#
+# Durante 10 vídeos ninguém viu que a IA devolvia a descrição CORTADA a meio —
+# porque não havia maneira de olhar para o texto ANTES de ele ir ao ar. No
+# computador do dono não há chaves de IA, então a prova local cai sempre no
+# texto de reserva e o caminho que falha nunca era exercitado.
+#
+# Este botão corre o gerador de metadados EXATAMENTE como o robô o corre, com as
+# mesmas chaves, e mostra o resultado — mas em modo `--dry-run`: nada é enviado
+# ao YouTube. É a lição do dia em que 57 provas passaram e o robô não arrancava:
+# a prova tem de lançar o comando como o robô o lança.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Roteiro a usar (ex.: inflacao-rouba). Tem de existir em src/scripts/youtube/output/'
+        required: false
+        default: 'inflacao-rouba'
+      repetir:
+        description: 'Quantas vezes repetir (a resposta cortada é intermitente — 3 mostra melhor)'
+        required: false
+        default: '3'
+
+# Só leitura: esta prova não escreve no repositório nem no YouTube.
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-metadados-prova
+  cancel-in-progress: false
+
+jobs:
+  provar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Gerar metadados (dry-run, nada é publicado)
+        env:
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: |
+          for i in $(seq 1 "${{ github.event.inputs.repetir || 3 }}"); do
+            echo "══════════════════ passagem $i ══════════════════"
+            node src/scripts/youtube/upload-short.js --slug="${{ github.event.inputs.slug }}" --dry-run
+          done
