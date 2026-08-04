@@ -27,7 +27,7 @@ seo:
 
 Cuando llegas a casa después de un día ajetreado, abres la factura de la luz y ves ese número que parece crecer solo, la primera reacción suele ser “necesito cortar gastos”. Pero al mismo tiempo, la idea de **hacer que el dinero rinda más** también aparece, sobre todo cuando el próximo salario se siente más como un alivio que como un punto de partida. En ese momento, muchas personas empiezan a buscar opciones de inversión y se topan con la palabra **“fondos”**. ¿Qué son los fondos de inversión y cómo dar el primer paso sin complicaciones?
 
-En esencia, un fondo de inversión es un **condominio de recursos** donde inversores individuales juntan su dinero para aplicarlo en una cartera diversificada gestionada por profesionales. Cada cuota que adquieres representa una fracción de ese universo de activos – ya sean acciones, bonos del gobierno, inmuebles u otros. La gran ventaja está en la **diversificación automática** y en la **administración especializada**, que permite a quien tiene poco tiempo o poco conocimiento participar en estrategias más sofisticadas.
+En esencia, un [fondo de inversión](/es/glossario/es-fondo-de-inversion) es un **condominio de recursos** donde inversores individuales juntan su dinero para aplicarlo en una cartera diversificada gestionada por profesionales. Cada cuota que adquieres representa una fracción de ese universo de activos – ya sean [acciones](/es/glossario/es-acciones), bonos del gobierno, inmuebles u otros. La gran ventaja está en la **[diversificación](/es/glossario/es-diversificacion) automática** y en la **administración especializada**, que permite a quien tiene poco tiempo o poco conocimiento participar en estrategias más sofisticadas.
 
 ## ¿Por qué considerar fondos en lugar de invertir por cuenta propia?
 
@@ -44,10 +44,10 @@ Algunos fondos permiten invertir en sectores o regiones que serían complicados 
 
 | Tipo de fondo | En qué se invierte | Perfil ideal |
 |---------------|-------------------|--------------|
-| **Fondos de renta fija** | Bonos del gobierno y privados de bajo riesgo | Quien busca estabilidad y preservación de capital |
-| **Fondos de acciones** | Cartera de acciones de diferentes sectores | Quien acepta volatilidad a cambio de mayor potencial de retorno |
-| **Fondos multimercado** | Mezcla de renta fija, acciones, divisas y derivados | Inversores que buscan equilibrio entre riesgo y retorno |
-| **Fondos inmobiliarios (REITs)** | Inmuebles comerciales, centros comerciales, naves industriales | Quien busca ingresos periódicos y exposición al sector inmobiliario |
+| **Fondos de [renta fija](/es/glossario/es-renta-fija)** | Bonos del gobierno y privados de bajo riesgo | Quien busca estabilidad y preservación de capital |
+| **Fondos de acciones** | Cartera de acciones de diferentes sectores | Quien acepta [volatilidad](/es/glossario/es-volatilidad) a cambio de mayor potencial de retorno |
+| **Fondos multimercado** | Mezcla de renta fija, acciones, divisas y derivados | Inversores que buscan equilibrio entre [riesgo y retorno](/es/posts/es-etfs-que-son-y-como-invertir-de-forma-simple-y-rentable) |
+| **[Fondos inmobiliarios](/es/glossario/es-fondos-inmobiliarios) (REITs)** | Inmuebles comerciales, centros comerciales, naves industriales | Quien busca ingresos periódicos y exposición al sector inmobiliario |
 | **Fondos índice (ETFs)** | Replican índices globales como el S&P 500 | Quien quiere seguir el desempeño de un mercado entero con bajo costo |
 
 ![Tipos de fondos más comunes y cuándo cada uno hace sentido](/images/posts/como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir-2.webp)
@@ -79,7 +79,7 @@ FinMoovi incluye un recurso de **flujo de caja y reportes** que transforma la ta
 
 * Evolución del valor de la cuota a lo largo del tiempo  
 * Participación porcentual de cada fondo en tu cartera  
-* Comparativa de rentabilidad frente a benchmarks (como índices globales)
+* Comparativa de [rentabilidad](/es/posts/es-entiende-la-tasa-interbancaria-y-su-impacto-en-tus-inversion) frente a benchmarks (como índices globales)
 
 **Micro‑acción de 5 minutos:**  
 1. Abre FinMoovi y ve a la sección “Flujo de Caja”.  

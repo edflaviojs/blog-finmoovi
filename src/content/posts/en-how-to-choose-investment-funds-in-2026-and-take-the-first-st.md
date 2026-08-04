@@ -27,7 +27,7 @@ seo:
 
 When you get home after a hectic day, open the electricity bill and see that number that seems to grow on its own, the first thought is usually “I need to cut expenses.” At the same time, the idea of making your money work harder pops up, especially when the next paycheck feels more like a sigh of relief than a fresh start. That’s the moment many people start looking for investment options and run into the word **funds**. What are investment funds, and how can you take the first step without getting tangled in jargon?
 
-In simple terms, an investment fund is a pool of money where individual investors combine their cash to buy a diversified basket of assets managed by professionals. Each share (or “unit”) you buy represents a slice of that basket—stocks, government bonds, real‑estate, or other assets. The biggest perks are **automatic diversification** and **professional management**, which let people with little time or expertise tap into sophisticated strategies.
+In simple terms, an [investment fund](/en/glossario/en-investment-fund) is a pool of money where individual investors combine their cash to buy a diversified basket of assets managed by professionals. Each share (or “unit”) you buy represents a slice of that basket—[stocks](/en/glossario/en-stocks), government bonds, real‑estate, or other assets. The biggest perks are **automatic [diversification](/en/glossario/en-diversification)** and **professional management**, which let people with little time or expertise tap into sophisticated strategies.
 
 ## Why consider funds instead of going solo?
 
@@ -38,14 +38,14 @@ Buying a single stock puts all your risk on that one company. In a fund, your mo
 Fund managers study the market daily, rebalance portfolios, and keep an eye on macro‑economic indicators. That level of expertise is hard to match on your own.
 
 ### 3. Access to hard‑to‑reach markets  
-Some funds let you invest in sectors or regions that would be difficult to access directly, such as international infrastructure projects or emerging‑stage startups.
+Some funds let you [invest](/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026) in sectors or regions that would be difficult to access directly, such as international infrastructure projects or emerging‑stage startups.
 
 ## Most common fund types and when each makes sense
 
 | Fund type | Where the money goes | Ideal profile |
 |-----------|----------------------|---------------|
 | **Fixed‑income funds** | Low‑risk government and corporate bonds | Investors seeking stability and capital preservation |
-| **Equity funds** | Stock portfolios across different sectors | Those comfortable with volatility for higher return potential |
+| **Equity funds** | Stock portfolios across different sectors | Those comfortable with [volatility](/en/glossario/en-volatility) for higher return potential |
 | **Multi‑asset funds** | Mix of bonds, stocks, currencies, and derivatives | Investors who want a balance between risk and reward |
 | **Real‑estate funds (REITs)** | Commercial properties, shopping centers, warehouses | People looking for periodic income and exposure to real estate |
 | **Index funds (ETFs)** | Replicate global indexes like the S&P 500 | Anyone who wants low‑cost exposure to an entire market |
@@ -57,13 +57,13 @@ Your choice depends on the goal (building wealth, generating income, or protecti
 ## Practical steps to build your first fund investment
 
 ### 1. Define the goal and the horizon  
-Ask yourself why you want to invest: buying a home, securing retirement, or simply making your money “work” harder. A clear goal narrows down the right fund type.
+Ask yourself why you want to invest: buying a home, securing [retirement](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide), or simply making your money “work” harder. A clear goal narrows down the right fund type.
 
 ### 2. Assess your risk tolerance  
 Consider questions like: *“If my investment dropped 10 % in a month, would I stay calm or panic?”* Many broker‑ages and banks offer quick risk‑profiling tools.
 
 ### 3. Pick a broker or platform  
-Choose a provider that is transparent about fees (management fee, performance fee) and offers clear reports. Most modern platforms let you upload documents with a few taps.
+Choose a provider that is transparent about fees (management fee, performance fee) and offers clear [reports](/en/posts/en-do-you-also-lose-track-of-where-your-money-went-at-the-end-o). Most modern platforms let you upload documents with a few taps.
 
 ### 4. Open the account and make the first contribution  
 Once approved, transfer the amount you’re comfortable starting with. **You don’t need a huge sum**—many funds accept contributions as low as **$2,000** (or even less).
@@ -105,7 +105,7 @@ Investing in funds can be the bridge between the desire to grow your money and t
 ## Frequently Asked Questions
 
 ### What’s the difference between a fixed‑income fund and an equity fund?  
-Fixed‑income funds invest in credit instruments with lower risk and steadier returns, while equity funds buy shares of listed companies, offering higher upside potential but more volatility.
+Fixed‑income funds invest in [credit](/en/glossario/en-credit) instruments with lower risk and steadier returns, while equity funds buy shares of listed companies, offering higher upside potential but more volatility.
 
 ### Do I need a lot of money to start investing in funds?  
 No. Many platforms accept initial contributions as low as **$2,000** (or even less), letting beginners dip their toes gradually.

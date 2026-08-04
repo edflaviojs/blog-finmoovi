@@ -27,7 +27,7 @@ seo:
 
 Quando você chega em casa depois de um dia corrido, abre a conta de luz e vê aquele número que parece crescer sozinho, a primeira reação costuma ser “preciso cortar gastos”. Mas, ao mesmo tempo, a ideia de fazer o dinheiro render mais também surge, especialmente quando o próximo salário parece mais um alívio do que um ponto de partida. Nesse momento, muitas pessoas começam a pesquisar opções de investimento e acabam se deparando com a palavra “fundos”. O que são fundos de investimento e como dar o primeiro passo sem complicação?
 
-Em essência, um fundo de investimento é um condomínio de recursos onde investidores individuais juntam seu dinheiro para aplicar em uma carteira diversificada gerida por profissionais. Cada cota que você adquire representa uma fração desse universo de ativos – seja ações, títulos públicos, imóveis ou outros. A grande vantagem está na diversificação automática e na administração especializada, que permite que quem tem pouco tempo ou pouco conhecimento ainda participe de estratégias mais sofisticadas.
+Em essência, um [fundo de investimento](/glossario/fundo-de-investimento) é um condomínio de recursos onde investidores individuais juntam seu dinheiro para aplicar em uma carteira diversificada gerida por profissionais. Cada cota que você adquire representa uma fração desse universo de ativos – seja ações, títulos públicos, imóveis ou outros. A grande vantagem está na [diversificação](/glossario/diversificacao) automática e na administração especializada, que permite que quem tem pouco tempo ou pouco conhecimento ainda participe de estratégias mais sofisticadas.
 
 ## Por que considerar fundos ao invés de investir sozinho?
 
@@ -44,10 +44,10 @@ Alguns fundos permitem investir em setores ou regiões que seriam complicados de
 
 | Tipo de fundo | Onde o dinheiro é aplicado | Perfil ideal |
 |---------------|---------------------------|--------------|
-| **Fundos de renda fixa** | Títulos públicos e privados de baixo risco | Quem busca estabilidade e preservação de capital |
-| **Fundos de ações** | Carteiras de ações de diferentes setores | Quem aceita volatilidade em troca de potencial de retorno maior |
+| **Fundos de [renda fixa](/glossario/renda-fixa)** | Títulos públicos e privados de baixo risco | Quem busca estabilidade e preservação de capital |
+| **Fundos de ações** | Carteiras de ações de diferentes setores | Quem aceita [volatilidade](/glossario/volatilidade) em troca de potencial de retorno maior |
 | **Fundos multimercado** | Mistura de renda fixa, ações, moedas e derivativos | Investidores que gostam de equilíbrio entre risco e retorno |
-| **Fundos imobiliários (FIIs)** | Imóveis comerciais, shoppings, galpões | Quem busca renda periódica e exposição ao setor imobiliário |
+| **[Fundos imobiliários](/glossario/fundos-imobiliarios) (FIIs)** | Imóveis comerciais, shoppings, galpões | Quem busca renda periódica e exposição ao setor imobiliário |
 | **Fundos de índice (ETFs)** | Replicam índices globais como S&P 500 | Quem quer acompanhar o desempenho de um mercado inteiro com baixo custo |
 
 ![Tipos de fundos mais comuns e quando cada um faz sentido](/images/posts/como-escolher-fundos-de-investimento-em-2026-e-dar-o-primeir-2.webp)
@@ -83,7 +83,7 @@ O FinMoivi possui um recurso de **fluxo de caixa e relatórios** que transforma 
 
 * A evolução do valor da cota ao longo do tempo
 * A participação percentual de cada fundo na sua carteira
-* Comparativo de rentabilidade versus benchmarks (como índices globais)
+* Comparativo de [rentabilidade](/posts/entenda-a-taxa-cdi-e-seu-impacto-nos-seus-investimentos) versus benchmarks (como índices globais)
 
 **Micro‑ação de 5 minutos:**
 1. Abra o FinMoivi e vá até a seção “Fluxo de Caixa”.
@@ -96,7 +96,7 @@ Esse ciclo rápido ajuda a manter a **paz mental** e evita surpresas desagradáv
 ## Dicas para manter a disciplina e maximizar resultados
 
 1. **Rebalanceamento semestral** – Ajuste a proporção entre fundos de acordo com a performance e seu objetivo.
-2. **Aporte contínuo** – Mesmo que seja o equivalente a “um café por dia”, investir regularmente potencializa o efeito dos juros compostos.
+2. **Aporte contínuo** – Mesmo que seja o equivalente a “um café por dia”, investir regularmente potencializa o efeito dos [juros compostos](/ferramentas/calculadora-juros-compostos).
 3. **Cuidado com custos ocultos** – Taxas de administração altas podem corroer retornos. Prefira fundos com custos abaixo de “um salário mínimo” ao ano.
 4. **Use metas no FinMoivi** – Defina um alvo de rentabilidade e receba alertas quando estiver próximo ou precisar de revisão.
 
@@ -111,7 +111,7 @@ Investir em fundos pode ser a ponte que falta entre a vontade de fazer o dinheir
 ## Perguntas frequentes
 
 ### O que diferencia um fundo de renda fixa de um fundo de ações?
-Fundos de renda fixa aplicam em títulos de crédito com risco menor e retornos mais estáveis, enquanto fundos de ações investem em empresas listadas, oferecendo maior potencial de ganho porém com maior volatilidade.
+Fundos de renda fixa aplicam em títulos de [crédito](/glossario/credito) com risco menor e retornos mais estáveis, enquanto fundos de ações investem em empresas listadas, oferecendo maior potencial de ganho porém com maior volatilidade.
 
 ### É necessário ter muito dinheiro para começar a investir em fundos?
 Não. Muitas instituições aceitam aportes a partir de valores equivalentes a um salário mínimo ou menos, permitindo que iniciantes entrem gradualmente.

@@ -142,7 +142,7 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 Sí. Empieza con bonos del gobierno, que tienen liquidez diaria y protegen el capital. A medida que la reserva crezca, diversifica.
 
 **2. ¿Cuánto debo asignar a fondos inmobiliarios?**  
-Depende de tu objetivo de ingresos pasivos. Una asignación del 10‑20 % suele generar dividendos mensuales sin comprometer la diversificación.
+Depende de tu objetivo de ingresos pasivos. Una asignación del 10‑20 % suele generar [dividendos](/es/glossario/es-dividendos) mensuales sin comprometer la [diversificación](/es/glossario/es-diversificacion).
 
 **3. ¿Es seguro comprar ETFs internacionales?**  
 Es posible mediante corredoras que ofrecen acceso a fondos cotizados en el exterior. Evalúa costos de custodia e impuestos.

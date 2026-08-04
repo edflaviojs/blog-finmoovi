@@ -29,7 +29,7 @@ Existen varias formas de invertir en dólar, incluyendo:
 * **Compra de dólar en efectivo**: puedes comprar dólares en efectivo en una casa de cambio o en una agencia bancaria.
 * **Inversión en títulos de dólar**: puedes invertir en bonos del gobierno de EE. UU. o en títulos de empresas estadounidenses.
 * **Inversión en fondos de inversión en dólar**: puedes invertir en fondos de inversión que tienen como objetivo invertir en dólares.
-* **Inversión en acciones de empresas estadounidenses**: puedes invertir en acciones de empresas estadounidenses que se negocian en bolsas internacionales.
+* **Inversión en [acciones](/es/glossario/es-acciones) de empresas estadounidenses**: puedes invertir en acciones de empresas estadounidenses que se negocian en bolsas internacionales.
 
 ![Cómo Invertir en Dólar](/images/posts/investir-em-dolar-no-brasil-2.webp)
 
@@ -39,16 +39,16 @@ Vamos a considerar un ejemplo: si inviertes **€180** en dólares a una tasa de
 Invertir en dólar involucra riesgos, incluyendo:
 
 * **Riesgo de fluctuación cambiaria**: el valor del dólar puede variar frente a otras monedas, lo que puede afectar el valor de tu inversión.
-* **Riesgo de inflación**: la inflación en los Estados Unidos puede afectar el valor del dólar.
+* **Riesgo de [inflación](/es/glossario/es-inflacion)**: la inflación en los Estados Unidos puede afectar el valor del dólar.
 * **Riesgo de intereses**: las tasas de interés en los Estados Unidos pueden influir en el valor del dólar.
-* **Riesgo de liquidez**: puede ser difícil vender tu inversión en dólares rápidamente y a un precio justo.
+* **Riesgo de [liquidez](/es/glossario/es-liquidez)**: puede ser difícil vender tu inversión en dólares rápidamente y a un precio justo.
 
 Es importante considerar estos riesgos antes de invertir en dólar y evaluar si tiene sentido para tu perfil de inversor y objetivos financieros.
 
 ## Beneficios de la Inversión en Dólar
 Invertir en dólar también puede tener beneficios, incluyendo:
 
-* **Diversificación**: invertir en dólar ayuda a diversificar tu cartera y reducir el riesgo global.
+* **[Diversificación](/es/glossario/es-diversificacion)**: invertir en dólar ayuda a diversificar tu cartera y reducir el riesgo global.
 * **Protección contra la inflación**: el dólar puede servir como refugio frente a la inflación en tu país de residencia.
 * **Potencial de ganancias**: el valor del dólar puede aumentar frente a otras monedas, generando ganancias para el inversor.
 

@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Introducción a los bonos del gobierno
-Los bonos del gobierno son un programa del gobierno que permite a las personas invertir en títulos públicos, como LTN (Letras del Tesoro Nacional) y NTN (Notas del Tesoro Nacional). Estos títulos representan préstamos realizados al gobierno, que paga intereses al inversor. Es una forma de invertir en [renta fija](/es/glossario/es-renta-fija), con rendimientos predefinidos y bajo riesgo.
+Los bonos del gobierno son un programa del gobierno que permite a las personas [invertir](/es/posts/es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026) en títulos públicos, como LTN (Letras del Tesoro Nacional) y NTN (Notas del Tesoro Nacional). Estos títulos representan préstamos realizados al gobierno, que paga intereses al inversor. Es una forma de invertir en [renta fija](/es/glossario/es-renta-fija), con rendimientos predefinidos y bajo riesgo.
 
 Por ejemplo, si usted invierte €180 en un título LTN con plazo de 1 año y intereses del 5% anual, usted recibirá €189 después del vencimiento. Esto significa un rendimiento de €9, o el 5% del [valor](/es/glossario/es-valor-financiero) invertido.
 
