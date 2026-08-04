@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T15:02:40.962Z",
+  "updatedAt": "2026-08-04T15:05:22.962Z",
   "sourceCursor": 0,
   "entries": [
     {
@@ -939,6 +939,42 @@
       "source": "manual",
       "status": "pending",
       "addedAt": "2026-08-04T15:02:40.427Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "qual é a melhor forma de guardar dinheiro​",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T15:05:22.581Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "qual o melhor horário para tomar banho e economizar energia​",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T15:05:22.581Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "qual a temperatura ideal do ar-condicionado para economizar energia​",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T15:05:22.582Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "porque é importante economizar água​",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T15:05:22.582Z",
       "finmooviHook": "enviado via /status 04/08"
     }
   ]

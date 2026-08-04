@@ -1,11 +1,11 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-04T15:02:40.962Z
-**Totais:** 65 pendente(s) · 23 usada(s) · 16 pulada(s)
+**Atualizado em:** 2026-08-04T15:05:22.962Z
+**Totais:** 69 pendente(s) · 23 usada(s) · 16 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 43
+### Manuais (prioridade 1) — 47
 
 - fluxo de caixa _(glossario)_
 - saldo devedor _(glossario)_
@@ -50,6 +50,10 @@
 - tabela para economizar dinheiro​
 - supermercado economizando​
 - supermercado economiza​
+- qual é a melhor forma de guardar dinheiro​
+- qual o melhor horário para tomar banho e economizar energia​
+- qual a temperatura ideal do ar-condicionado para economizar energia​
+- porque é importante economizar água​
 
 ### Lacunas do GSC (prioridade 2) — 8
 
