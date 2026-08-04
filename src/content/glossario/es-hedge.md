@@ -4,6 +4,7 @@ definition: "Entienda qué es hedge, cómo funciona, ventajas, riesgos y ejemplo
 title: "hedge - Glosario Financiero"
 description: "Entienda qué es hedge, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/hedge.webp"
+imageAlt: "Monedas doradas, hucha y planta en campana de vidrio sobre fondo oscuro."
 category: "basico"
 tags: ["hedge", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

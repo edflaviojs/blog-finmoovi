@@ -4,6 +4,7 @@ definition: "Entienda qué es nubank, cómo funciona, ventajas, riesgos y ejempl
 title: "nubank - Glosario Financiero"
 description: "Entienda qué es nubank, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/nubank.webp"
+imageAlt: "Monedas doradas, barras púrpuras y una flecha naranja ascendente sobre fondo oscuro."
 category: "basico"
 tags: ["nubank", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

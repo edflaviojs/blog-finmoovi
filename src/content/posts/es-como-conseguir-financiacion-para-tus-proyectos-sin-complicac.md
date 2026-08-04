@@ -3,6 +3,7 @@ title: "Cómo conseguir financiación para tus proyectos sin complicaciones en 2
 description: "Descubre paso a paso cómo organizar tu dinero y obtener financiación de forma práctica con FinMoovi."
 tickerHeadline: "Financiación sin complicaciones"
 image: "/images/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de-ca.webp"
+imageAlt: "Gráfico financiero desenfocado con líneas de colores sobre fondo azul oscuro."
 category: "orcamento"
 locale: "es"
 tags: ["financiación","control de gastos","presupuesto personal","apps financieras","planificación financiera","captura inteligente","metas de pago","financiamiento"]

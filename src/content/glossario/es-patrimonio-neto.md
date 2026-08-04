@@ -1,6 +1,7 @@
 ---
 term: "Patrimonio Neto"
 image: "/images/glossario/es-patrimonio-liquido.webp"
+imageAlt: "Un artículo de finanzas personales sobre patrimonio neto, con gráficos de crecimiento y monedas en un vaso."
 definition: "El valor total de tus activos menos todas tus deudas y obligaciones."
 category: "basico"
 locale: "es"

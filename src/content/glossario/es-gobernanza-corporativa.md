@@ -4,6 +4,7 @@ definition: "Entienda qué es governança, cómo funciona, ventajas, riesgos y e
 title: "gobernanza corporativa - Glosario Financiero"
 description: "Entienda qué es governança, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/governanca.webp"
+imageAlt: "Monedas doradas apiladas y en frascos con plantas verdes, barras ascendentes, fondo oscuro."
 category: "basico"
 tags: ["gobernanza corporativa", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

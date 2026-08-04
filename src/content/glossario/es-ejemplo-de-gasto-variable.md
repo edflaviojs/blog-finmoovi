@@ -4,6 +4,7 @@ definition: "Qué es ejemplo de gasto variable y cómo aparece en tu día a día
 title: "ejemplo de gasto variable - Glosario Financiero"
 description: "Qué es ejemplo de gasto variable y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/exemplo-de-gasto-variavel.webp"
+imageAlt: "Pilas de monedas doradas, bloques blancos y plantas en frascos sobre fondo azul oscuro."
 category: "basico"
 tags: ["ejemplo de gasto variable", "glosario", "finanzas"]
 author: "FinMoovi"

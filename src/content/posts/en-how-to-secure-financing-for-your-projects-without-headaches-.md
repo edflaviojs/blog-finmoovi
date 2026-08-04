@@ -3,6 +3,7 @@ title: "How to Secure Financing for Your Projects Without Headaches in 2026"
 description: "Discover simple steps to organize your money and get financing easily with FinMoovi."
 tickerHeadline: "Financing Made Easy"
 image: "/images/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de-ca.webp"
+imageAlt: "Blurred financial dashboard screen showing colorful fluctuating line graphs and data points."
 category: "orcamento"
 locale: "en"
 tags: ["financing","expense control","personal budget","financial apps","financial planning","smart capture","payment goals","financing"]

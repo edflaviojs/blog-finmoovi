@@ -4,6 +4,7 @@ definition: "Entienda qué es el impuesto sobre la renta, cómo funciona, ventaj
 title: "Impuesto sobre la Renta - Glosario Financiero"
 description: "Entienda qué es el impuesto sobre la renta, cómo funciona, ventajas, riesgos y ejemplos prácticos."
 image: "/images/glossario/imposto-de-renda.webp"
+imageAlt: "Monedas apiladas, gráfico de barras ascendente, alcancía rosa y planta en frasco sobre fondo púrpura."
 category: "basico"
 tags: ["impuesto sobre la renta", "glosario", "finanzas"]
 author: "FinMoovi"

@@ -4,6 +4,7 @@ definition: "Qué es gasto variable y cómo aparece en tu día a día — explic
 title: "gasto variable - Glosario Financiero"
 description: "Qué es gasto variable y cómo aparece en tu día a día — explicado de forma simple, con una manera práctica de seguirlo en FinMoovi."
 image: "/images/glossario/gasto-variavel.webp"
+imageAlt: "Monedas doradas y barras ascendentes junto a planta en frasco sobre fondo oscuro."
 category: "basico"
 tags: ["gasto variable", "glosario", "finanzas"]
 author: "FinMoovi"

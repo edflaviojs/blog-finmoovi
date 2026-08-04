@@ -4,6 +4,7 @@ definition: "What Variable expense example is and how it shows up in your everyd
 title: "Variable expense example - Financial Glossary"
 description: "What Variable expense example is and how it shows up in your everyday money — explained simply, with a practical way to track it in FinMoovi."
 image: "/images/glossario/exemplo-de-gasto-variavel.webp"
+imageAlt: "Gold coins stacked and in glass jars, one sprouting a green plant."
 category: "basico"
 tags: ["Variable expense example", "glossary", "finance"]
 author: "FinMoovi"

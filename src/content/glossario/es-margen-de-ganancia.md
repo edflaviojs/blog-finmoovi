@@ -1,6 +1,7 @@
 ---
 term: "Margen de Ganancia"
 image: "/images/glossario/es-margem-de-lucro.webp"
+imageAlt: "Monedas de oro apiladas, barras blancas y frascos con plantas sobre fondo oscuro."
 definition: "El porcentaje de ingresos que queda como ganancia después de deducir todos los costos y gastos de un negocio."
 category: "basico"
 locale: "es"

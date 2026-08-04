@@ -1,6 +1,7 @@
 ---
 term: "Interés Compuesto"
 image: "/images/glossario/es-juros-compostos.webp"
+imageAlt: "Monedas doradas apiladas y un frasco de vidrio con plantas creciendo, fondo oscuro."
 definition: "Interés calculado sobre el capital inicial y los intereses acumulados de períodos anteriores. El efecto bola de nieve del dinero."
 category: "basico"
 locale: "es"

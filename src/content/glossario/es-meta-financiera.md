@@ -1,6 +1,7 @@
 ---
 term: "Meta Financiera"
 image: "/images/glossario/es-meta-financeira.webp"
+imageAlt: "Monedas doradas apiladas, frascos con plantas verdes y flecha ascendente sobre fondo oscuro."
 definition: "Un objetivo financiero específico y medible con un plazo definido. Ejemplos: fondo de emergencia, compra de casa, jubilación."
 category: "basico"
 locale: "es"

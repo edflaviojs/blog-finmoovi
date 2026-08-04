@@ -1,6 +1,7 @@
 ---
 term: "Pago Anticipado"
 image: "/images/glossario/es-quitacao-antecipada.webp"
+imageAlt: "Una imagen de una botella con monedas y una planta, junto a un montón de monedas doradas."
 definition: "Pagar una deuda antes de su vencimiento, generalmente con descuento en intereses. Un derecho garantizado por la ley del consumidor brasileña."
 category: "credito"
 locale: "es"

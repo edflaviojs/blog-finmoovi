@@ -4,6 +4,7 @@ definition: "Entienda qué es moeda, cómo funciona, ventajas, riesgos y ejemplo
 title: "moeda - Glosario Financiero"
 description: "Entienda qué es moeda, cómo funciona, ventajas, riesgos y ejemplos prácticos de aplicación en el mercado financiero brasileño."
 image: "/images/glossario/moeda.webp"
+imageAlt: "Monedas doradas apiladas con gráfico ascendente y planta verde en fondo azul oscuro."
 category: "basico"
 tags: ["moeda", "glossário", "finanças", "glosario", "finanzas", "brasil"]
 author: "FinMoovi"

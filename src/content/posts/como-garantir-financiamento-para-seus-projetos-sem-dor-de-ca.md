@@ -3,6 +3,7 @@ title: "Como garantir financiamento para seus projetos sem dor de cabeça em 202
 description: "Descubra, em passos simples, como organizar seu dinheiro e conseguir financiamento de forma prática, usando o FinMoovi."
 tickerHeadline: "Financiamento sem complicação"
 image: "/images/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de-ca.webp"
+imageAlt: "Gráficos financeiros coloridos e desfocados em fundo azul escuro."
 category: "orcamento"
 locale: "pt"
 tags: ["financiamento","controle de gastos","orçamento pessoal","apps financeiros","planejamento financeiro","captura inteligente","metas de pagamento","financiamiento"]

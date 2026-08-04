@@ -1,6 +1,7 @@
 ---
 term: "Interés Simple"
 image: "/images/glossario/es-juros-simples.webp"
+imageAlt: "Montones de monedas doradas, frasco con planta y flecha ascendente sobre fondo degradado azul y magenta."
 definition: "Interés calculado solo sobre el monto del capital inicial. A diferencia del interés compuesto, no genera interés sobre interés."
 category: "basico"
 locale: "es"

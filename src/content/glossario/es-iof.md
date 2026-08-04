@@ -1,6 +1,7 @@
 ---
 term: "IOF (Impuesto sobre Operaciones Financieras)"
 image: "/images/glossario/es-iof.webp"
+imageAlt: "Monedas doradas, gráficos de barras y plantas en frascos sobre fondo oscuro."
 definition: "Un impuesto federal sobre operaciones financieras incluyendo préstamos, cambio de divisas, seguros y transacciones de valores."
 category: "impostos"
 locale: "es"

@@ -1,6 +1,7 @@
 ---
 term: "Independencia Financiera"
 image: "/images/glossario/es-independencia-financeira.webp"
+imageAlt: "Monedas doradas, barras, planta en frasco y balanza sobre fondo oscuro."
 definition: "El estado donde tus ingresos pasivos cubren todos tus gastos sin necesidad de trabajar."
 category: "basico"
 locale: "es"

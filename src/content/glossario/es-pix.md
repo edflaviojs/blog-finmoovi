@@ -1,6 +1,7 @@
 ---
 term: "PIX"
 image: "/images/glossario/es-pix.webp"
+imageAlt: "Una imagen de una mesa con monedas, un cerdo de cerámica y una planta en un frasco."
 definition: "El sistema de pagos instantáneos de Brasil creado por el Banco Central. Permite transferencias gratuitas 24/7 entre cualquier cuenta bancaria."
 category: "basico"
 locale: "es"
