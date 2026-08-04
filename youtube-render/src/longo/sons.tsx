@@ -45,16 +45,20 @@ const VOLUME_DA_PALAVRA = 0.3;
 const INTERVALO_MINIMO_SEC = 3.5;
 const MAXIMO_POR_CENA = 2;
 
-export const SonsDaCena: React.FC<{
-  narration: string;
-  frames: number;
-  words?: { word: string; start: number; end: number }[];
-}> = ({ narration, frames, words }) => {
-  const { fps } = useVideoConfig();
-  const timings = words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, frames);
-  const intervalo = Math.round(INTERVALO_MINIMO_SEC * fps);
+export type Disparo = { from: number; chave: string; som: string; palavra: string };
 
-  const disparos: { from: number; som: string }[] = [];
+/**
+ * ⚠️ OS DISPAROS SÃO CALCULADOS AQUI, UMA VEZ, E SERVEM O SOM **E** O ÍCONE.
+ *
+ * O dono pediu: *"quando há muito texto… aqui deveria, quando se falar, aparecer um
+ * ícone relacionado JUNTO COM O SOM"*. A palavra "junto" é a especificação inteira: se
+ * o ícone escolher os seus momentos e o som escolher os dele, mais tarde ou mais cedo
+ * aparece um ícone sem som e ouve-se um som sem ícone. É a mesma regra de fonte única
+ * que o Short já usa no clique da mãozinha.
+ */
+export function disparosDaCena(timings: { word: string; start: number }[], fps: number): Disparo[] {
+  const intervalo = Math.round(INTERVALO_MINIMO_SEC * fps);
+  const disparos: Disparo[] = [];
   let ultimoFrame = -Infinity;
   let ultimoSom: string | null = null;
   for (const t of timings) {
@@ -67,8 +71,19 @@ export const SonsDaCena: React.FC<{
     if (from - ultimoFrame < intervalo) continue;
     ultimoFrame = from;
     ultimoSom = som;
-    disparos.push({ from, som });
+    disparos.push({ from, chave, som, palavra: t.word });
   }
+  return disparos;
+}
+
+export const SonsDaCena: React.FC<{
+  narration: string;
+  frames: number;
+  words?: { word: string; start: number; end: number }[];
+}> = ({ narration, frames, words }) => {
+  const { fps } = useVideoConfig();
+  const timings = words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, frames);
+  const disparos = disparosDaCena(timings, fps);
 
   return (
     <>
@@ -103,6 +118,22 @@ export const SomDoMomento: React.FC<{ ficheiro: string; atraso?: number; volume?
   );
 };
 
+/**
+ * 🔴 O `deslize` SAIU DA TRANSIÇÃO DO CAPÍTULO — e é o conserto de uma queixa dele.
+ *
+ * *"Sempre que tem a transição para a cena com o passo 1 ainda dá um errinho no som.
+ * Ele meio que pica e ou reinicia, mas há um ruído nessas transições."*
+ *
+ * Fui medir e **não há estalo nenhum**: o maior salto entre amostras à volta dos três
+ * cartões é ~290 em 32768, contra **3381** numa transição de cena normal — ou seja, doze
+ * vezes MENOR do que numa transição que ele nunca reparou.
+ *
+ * O que havia era o próprio som que eu lá pus. Fui ler o catálogo e está escrito com
+ * todas as letras no `audio/sfx.tsx`: **`slide` é um "apito descendo cómico"**. Um apito
+ * de desenho animado por cima da música limpa, no momento mais sério do vídeo — não é um
+ * ruído, é um som errado, e a diferença só se vê a ler o que o ficheiro é.
+ * Ficou o `subida` (o whoosh), que é o que uma passagem de capítulo pede.
+ */
 export const SOM = {
   moedas: 'sfx/money.ogg',
   pilha: 'sfx/coins.ogg',

@@ -31,7 +31,9 @@ import { CoreografiaDaCapa } from '../capas';
 // animadas** que ele já tem desenhadas e que o vídeo longo nunca usou — ver `Ilustracao`.
 import { ShotMetaphor, clickPressOffset } from '../scenes';
 import { PALCO_W, PALCO_H } from '../capa';
+import { SHOT_ICONS } from '../icons-fx';
 import { activeIndex, wordTimingsFromReal, layoutWords } from '../captions';
+import { disparosDaCena } from './sons';
 
 export type PalavraDita = { word: string; start: number; end: number };
 
@@ -281,7 +283,7 @@ export const TelaDoApp: React.FC<{ valor: number; rotulo?: string; passo?: numbe
  * o gancho fica encostado à esquerda com a barra de acento; a chamada acende a palavra
  * que a pessoa tem de escrever no comentário.
  */
-export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; variante?: string }> = ({ texto, etiquetaTexto, variante }) => {
+export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; variante?: string; frames: number }> = ({ texto, etiquetaTexto, variante, frames }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const entra = spring({ frame, fps, config: { damping: 17, mass: 0.7 } });
@@ -294,11 +296,25 @@ export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; va
   const n = texto.length;
   const tamanho = chamada ? 120 : n > 110 ? 60 : n > 74 ? 70 : n > 44 ? 82 : 96;
 
+  /**
+   * ⚠️ ESTE CARTÃO ERA UMA FOTOGRAFIA — e o dono viu-o: *"ainda tem muito texto e pouco
+   * movimento… tem que criar alguns efeitos mais dinâmicos nessas cenas."*
+   * Ele aparecia inteiro de uma vez e ficava quieto treze segundos.
+   * Agora **constrói-se palavra a palavra** (a mesma ideia do cartão de capítulo, que
+   * funcionou), a cena aproxima-se devagar e há uma forma abstrata a crescer por trás.
+   */
+  const palavras = String(texto).trim().split(/\s+/).filter(Boolean);
+  const passo = palavras.length > 14 ? 2 : 3;
+  const aproxima = interpolate(frame, [0, Math.max(1, frames)], [1, 1.05]);
+
   return (
-    <AbsoluteFill style={{
-      justifyContent: 'center', alignItems: aoLado ? 'flex-start' : 'center',
-      padding: `0 ${aoLado ? 120 : 190}px ${FUNDO_LIVRE}px ${aoLado ? 120 : 190}px`,
-    }}>
+    <AbsoluteFill style={{ overflow: 'hidden' }}>
+      <FundoAbstrato variante={aoLado ? 1 : 2} frames={frames} />
+      <AbsoluteFill style={{
+        justifyContent: 'center', alignItems: aoLado ? 'flex-start' : 'center',
+        padding: `0 ${aoLado ? 120 : 190}px ${FUNDO_LIVRE}px ${aoLado ? 120 : 190}px`,
+        transform: `scale(${aproxima})`,
+      }}>
       <div style={{
         maxWidth: 1500, textAlign: aoLado ? 'left' : 'center',
         opacity: entra, transform: `translateY(${interpolate(entra, [0, 1], [40, 0])}px)`,
@@ -309,15 +325,29 @@ export const CartaoDeFrase: React.FC<{ texto: string; etiquetaTexto?: string; va
           <div style={{
             fontFamily: BODY, fontWeight: 800, fontSize: 30, letterSpacing: 4,
             color: BRAND.cyan, textTransform: 'uppercase', marginBottom: 22,
+            opacity: interpolate(frame, [2, 14], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }),
           }}>{etiquetaTexto}</div>
         ) : null}
         <div style={{
+          display: 'flex', flexWrap: 'wrap', gap: `4px ${Math.round(tamanho * 0.26)}px`,
+          justifyContent: aoLado ? 'flex-start' : 'center',
           fontFamily: DISPLAY, fontWeight: 900, fontSize: tamanho, lineHeight: 1.16,
           color: BRAND.text, textShadow: '0 6px 40px rgba(0,0,0,0.65)',
         }}>
-          {chamada ? <span style={{ ...gradientText, filter: 'drop-shadow(0 0 44px rgba(139,92,246,0.55))' }}>{texto}</span> : texto}
+          {palavras.map((p, i) => {
+            const pop = spring({ frame: frame - (8 + i * passo), fps, config: { damping: 15, mass: 0.5 } });
+            return (
+              <span key={i} style={{
+                display: 'inline-block', opacity: pop,
+                transform: `translateY(${interpolate(pop, [0, 1], [22, 0])}px)`,
+                ...(chamada ? gradientText : {}),
+                ...(chamada ? { filter: 'drop-shadow(0 0 44px rgba(139,92,246,0.55))' } : {}),
+              }}>{p}</span>
+            );
+          })}
         </div>
       </div>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -404,8 +434,8 @@ export const Metafora: React.FC<{ fio?: string | null; estagio?: number; frames:
  * parado a mostrar texto".
  */
 export const PalavrasNaTela: React.FC<{
-  narration: string; frames: number; words?: PalavraDita[]; variante?: number;
-}> = ({ narration, frames, words, variante = 0 }) => {
+  narration: string; frames: number; words?: PalavraDita[]; variante?: number; pular?: number;
+}> = ({ narration, frames, words, variante = 0, pular = 0 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const aEsquerda = variante === 1;
@@ -418,7 +448,18 @@ export const PalavrasNaTela: React.FC<{
    */
   const porBloco = aEsquerda ? 6 : 8;
   const bruto = words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, frames);
-  const timings = bruto.map((t, i) => ({ ...t, line: Math.floor(i / porBloco) }));
+  /**
+   * ⚠️ `pular` — AS PALAVRAS QUE A CAPA JÁ MOSTROU NÃO SE REPETEM AQUI.
+   *
+   * O dono apanhou isto: a capa abre com *"Você já pagou uma dívida e mesmo assim parece
+   * que ela nunca acaba?"* e, mal ela sai, o ecrã seguinte começava com *"parece que ela
+   * nunca acaba? Isso acontece porque"*. A frase aparecia duas vezes seguidas.
+   * A causa é simples: a capa mostra a PRIMEIRA FRASE da abertura, mas os blocos de
+   * palavras eram contados desde a primeira palavra da cena — e um bloco de oito
+   * palavras cai a meio da pergunta, portanto a cauda dela vinha outra vez.
+   * Agora a cena 1 salta exatamente as palavras que a capa já disse.
+   */
+  const timings = bruto.slice(Math.max(0, pular)).map((t, i) => ({ ...t, line: Math.floor(i / porBloco) }));
   const active = activeIndex(timings, frame);
   const blocoAtual = timings[active]?.line ?? 0;
   const doBloco = timings.filter((t) => t.line === blocoAtual);
@@ -743,5 +784,53 @@ export const MaoQueClica: React.FC<{ frames: number }> = ({ frames }) => {
         <ShotMetaphor metaphor="clique-link" life={frames} />
       </div>
     </AbsoluteFill>
+  );
+};
+
+// ─── 11. os ícones que entram com o som ──────────────────────────────────────
+/**
+ * O ÍCONE APARECE COM O SOM, NA PALAVRA — pedido do dono depois de ver o vídeo:
+ * *"ainda sinto falta de entrar algumas animações, ícones de movimento… quando há muito
+ * texto, aqui deveria, quando se falar, aparecer um ícone relacionado JUNTO COM O SOM."*
+ *
+ * ⚠️ Os momentos NÃO são escolhidos aqui. Vêm do `disparosDaCena`, o mesmo que escolhe
+ * os sons — se cada camada escolhesse os seus, mais tarde ou mais cedo aparecia um ícone
+ * mudo e ouvia-se um som invisível.
+ *
+ * ⚠️ E NÃO É O `IconBurst` DO SHORT, embora ele exista e faça quase isto. Duas razões
+ * medidas: ele desenha a `top: 300` no meio do ecrã — num vertical de 1920 de altura é o
+ * terço superior, em 16:9 é **em cima do texto**; e ele dispara em TODA a palavra-gatilho,
+ * o que num vídeo de 933 palavras sobre dívida seria um ícone quase permanente.
+ * Aqui o ícone vive no canto, entra a rodar, respira e sai.
+ */
+export const IconesDaCena: React.FC<{
+  narration: string; frames: number; words?: PalavraDita[];
+}> = ({ narration, frames, words }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const timings = words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, frames);
+  const disparos = disparosDaCena(timings, fps);
+
+  const VIDA = Math.round(fps * 1.6);
+  const activo = [...disparos].reverse().find((d) => frame >= d.from && frame - d.from < VIDA);
+  if (!activo) return null;
+
+  const local = frame - activo.from;
+  const pop = spring({ frame: local, fps, config: { damping: 11, mass: 0.45 } });
+  const fade = interpolate(local, [0, 5, VIDA - 10, VIDA], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const flutua = Math.sin(local / 7) * 9;
+  const gira = interpolate(pop, [0, 1], [-22, 0]) + Math.sin(local / 22) * 3;
+  const Icone = SHOT_ICONS[activo.chave as keyof typeof SHOT_ICONS];
+  if (!Icone) return null;
+
+  return (
+    <div style={{
+      position: 'absolute', left: 96, bottom: 250,
+      opacity: fade,
+      transform: `translateY(${flutua}px) scale(${interpolate(pop, [0, 1], [0.35, 1])}) rotate(${gira}deg)`,
+      filter: 'drop-shadow(0 10px 34px rgba(139,92,246,0.55))',
+    }}>
+      <Icone />
+    </div>
   );
 };

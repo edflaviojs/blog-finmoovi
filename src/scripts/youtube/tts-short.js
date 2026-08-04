@@ -22,7 +22,7 @@
  */
 
 import { synthesizeSpeech, transcribeWords, pickProvider, getTtsProviders, warmUpTts } from './lib/tts-client.js';
-import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync, readdirSync, mkdtempSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { tmpdir } from 'os';
@@ -269,6 +269,54 @@ function readScript(slug) {
  *   3. null → quem chama decide (hoje: cai na duração do roteiro, como antes).
  * Nunca lança: medição é best-effort, não pode derrubar o vídeo do dia.
  */
+/**
+ * O MEDIDOR DE VOZ LOCAL — `faster-whisper`, sem chave e sem rede (04/08/2026).
+ *
+ * Devolve `[{word,start,end}]` ou `null` se não estiver instalado. **Nunca lança**: é
+ * um reforço, não uma dependência, e o robô diário não pode cair por causa dele.
+ *
+ * ⚠️ O PYTHON DO `PATH` NESTA MÁQUINA NÃO SERVE — é o atalho da Microsoft Store, que
+ * abre a loja em vez de correr. Por isso procura-se primeiro a instalação real do
+ * `winget` e só depois se confia no PATH (numa máquina Linux, o segundo é o que vale).
+ */
+export async function transcreverLocalmente(audio, ext) {
+  const acharPython = () => {
+    const local = process.env.LOCALAPPDATA;
+    if (local) {
+      const base = join(local, 'Programs', 'Python');
+      if (existsSync(base)) {
+        for (const v of readdirSync(base).filter((d) => /^Python3\d+$/.test(d)).sort().reverse()) {
+          const exe = join(base, v, 'python.exe');
+          if (existsSync(exe)) return exe;
+        }
+      }
+    }
+    return process.env.PYTHON || 'python3';
+  };
+
+  let ficheiro;
+  try {
+    const pasta = mkdtempSync(join(tmpdir(), 'fm-voz-'));
+    ficheiro = join(pasta, `cena.${ext || 'mp3'}`);
+    writeFileSync(ficheiro, audio);
+    const script = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..', 'scripts', 'transcrever-local.py');
+    if (!existsSync(script)) return null;
+    const saida = execFileSync(acharPython(), [script, ficheiro], {
+      encoding: 'utf-8',
+      maxBuffer: 32 * 1024 * 1024,
+      stdio: ['ignore', 'pipe', 'ignore'],
+      timeout: 180000,
+    });
+    const porFicheiro = JSON.parse(saida);
+    const palavras = Object.values(porFicheiro)[0] || [];
+    return palavras.length ? palavras : null;
+  } catch {
+    return null; // não instalado, ou falhou — segue-se a rede de sempre
+  } finally {
+    try { if (ficheiro) unlinkSync(ficheiro); } catch { /* a pasta temporária fica */ }
+  }
+}
+
 export function medirDuracaoAudio(audio, ext) {
   // 1) WAV: procura os chunks `fmt ` (taxa/canais/bits) e `data` (tamanho).
   try {
@@ -344,6 +392,31 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
     } catch (err) {
       whisperFalhou = err;
       whisper = [];
+    }
+    /**
+     * ♦ O MEDIDOR LOCAL, DE GRAÇA (04/08/2026) — autorizado pelo dono depois de ver o
+     * vídeo longo: *"pode mexer no medidor de voz, confio em você"*.
+     *
+     * ⚠️ ELE É O SEGUNDO DA FILA, NÃO O PRIMEIRO, e isso é deliberado. Na nuvem — onde
+     * o robô publica todos os dias — a chave do Together existe e o Whisper responde em
+     * segundos; correr um modelo local ANTES dele acrescentaria minutos a cada vídeo
+     * para chegar ao mesmo sítio. Aqui ele só entra quando o de cima falhou, que é
+     * exatamente o caso desta máquina (sem chave) e o caso de a nuvem ficar sem serviço.
+     *
+     * O ganho medido: sem ele, as palavras eram repartidas por PESO DE LETRAS, e no
+     * vídeo longo de 04/08 isso pôs cada palavra 0,47s fora do sítio em média (a pior,
+     * 1,88s). O dono viu o defeito no ecrã antes de eu o medir.
+     *
+     * Nunca lança: se o Python ou o `faster-whisper` não existirem, fica tudo como
+     * estava e a rede de baixo trata do resto. Um vídeo com sincronia aproximada é mau;
+     * um vídeo que não sai é pior.
+     */
+    if ((whisperFalhou || !whisper.length) && !process.env.SEM_MEDIDOR_LOCAL) {
+      const local = await transcreverLocalmente(audio, ext);
+      if (local && local.length) {
+        whisper = local;
+        whisperFalhou = null;
+      }
     }
     // REDE DE SEGURANÇA DA MEDIÇÃO (31/07/2026). O Whisper pode devolver palavras
     // SEM tempo válido — o último `end` vem 0/não-numérico. Medido no run

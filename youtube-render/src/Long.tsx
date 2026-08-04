@@ -39,7 +39,7 @@ import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 import {
   Etiqueta, CartaoDeNumero, CartaoDaConta, TelaDoApp, CartaoDeFrase, Metafora, PalavrasNaTela,
   CartaoDeCapitulo, CARTAO_CAPITULO_FRAMES, Ilustracao, MaoQueClica, momentoDoClique,
-  atrasoDaUltimaLinha,
+  atrasoDaUltimaLinha, IconesDaCena,
 } from './longo/telas';
 import type { LinhaDaConta } from './longo/telas';
 import { SonsDaCena, SomDoMomento, SOM } from './longo/sons';
@@ -437,7 +437,11 @@ const SomDaFamilia: React.FC<{ visual?: LongVisual; frames: number }> = ({ visua
  * e nesse caso volta-se ao b-roll de sempre — abrir o Studio num plano antigo não pode
  * rebentar por causa disto.
  */
-const CenaLonga: React.FC<{ cena: LongScene; frames: number; palavras?: { word: string; start: number; end: number }[] }> = ({ cena, frames, palavras }) => {
+const CenaLonga: React.FC<{
+  cena: LongScene; frames: number; palavras?: { word: string; start: number; end: number }[];
+  /** quantas palavras iniciais a CAPA já mostrou — só a cena 1 as tem. Ver `PalavrasNaTela`. */
+  pular?: number;
+}> = ({ cena, frames, palavras, pular = 0 }) => {
   const frame = useCurrentFrame();
   const v = cena.visual;
   // Entrada suave: sem isto, a troca de imagem a cada ~12s é um corte seco e o vídeo
@@ -456,11 +460,11 @@ const CenaLonga: React.FC<{ cena: LongScene; frames: number; palavras?: { word: 
         // isso que eu quero no vídeo"*. Ela já existe no render do Short e é
         // reaproveitada tal e qual, com o som no fotograma exato do toque.
         if (v.variante === 'chamada') return <MaoQueClica frames={frames} />;
-        return <CartaoDeFrase texto={v.texto ?? ''} etiquetaTexto={v.etiquetaTexto} variante={String(v.variante ?? '')} />;
+        return <CartaoDeFrase texto={v.texto ?? ''} etiquetaTexto={v.etiquetaTexto} variante={String(v.variante ?? '')} frames={frames} />;
       case 'metafora': return <Metafora fio={v.fio} estagio={v.estagio} frames={frames} />;
       case 'ilustracao': return <Ilustracao figura={v.figura || ''} frames={frames} />;
       case 'broll': return <CenaDeBroll comp={v.comp} brollFrames={v.brollFrames} />;
-      default: return <PalavrasNaTela narration={cena.narration} frames={frames} words={palavras} variante={Number(v.variante ?? 0)} />;
+      default: return <PalavrasNaTela narration={cena.narration} frames={frames} words={palavras} variante={Number(v.variante ?? 0)} pular={pular} />;
     }
   })();
 
@@ -483,6 +487,10 @@ const CenaLonga: React.FC<{ cena: LongScene; frames: number; palavras?: { word: 
         }} />
       ) : null}
       {comLegenda ? <LegendaLonga narration={cena.narration} totalFrames={frames} words={palavras} /> : null}
+      {/* ⚠️ OS ÍCONES ENTRAM COM O SOM, na palavra — pedido do dono: *"quando há muito
+          texto… deveria, quando se falar, aparecer um ícone relacionado junto com o som"*.
+          Os momentos são os MESMOS do `SonsDaCena` (ver `disparosDaCena`). */}
+      <IconesDaCena narration={cena.narration} frames={frames} words={palavras} />
       {/* A chapa do valor entra por cima de tudo — é ela que garante que o número certo
           está no ecrã nas repetições, sem repetir o cartão grande. */}
       {v?.etiqueta ? <Etiqueta valor={v.etiqueta.valor} rotulo={v.etiqueta.rotulo} /> : null}
@@ -530,9 +538,17 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
    * segundo para a frase assentar. Sem timing (pré-visualização sem áudio), volta ao
    * comportamento antigo.
    */
+  /**
+   * ⚠️ AS PALAVRAS QUE A CAPA JÁ DISSE — e a cena 1 não as repete.
+   * O dono apanhou isto: a capa mostrava a pergunta inteira e, mal saía, o ecrã
+   * seguinte recomeçava a meio dela (*"parece que ela nunca acaba? Isso acontece
+   * porque…"*). É o mesmo número que já se usava para saber quando a capa sai —
+   * agora serve as duas coisas, que é como tem de ser.
+   */
+  const palavrasDaPergunta = String(script.capa || '').trim().split(/\s+/).filter(Boolean).length;
+
   const framesDaCapa = (() => {
     const teto = Math.max(1, Math.min(CAPA_FRAMES, VOZ_ENTRA_FRAMES + (frames[0] || CAPA_FRAMES)));
-    const palavrasDaPergunta = String(script.capa || '').trim().split(/\s+/).filter(Boolean).length;
     const ditas = timingDe(script.scenes[0]?.id)?.words;
     if (!palavrasDaPergunta || !ditas || ditas.length < palavrasDaPergunta) return teto;
     const fimDaPergunta = ditas[palavrasDaPergunta - 1]?.end;
@@ -569,7 +585,7 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
           const t = timingDe(cena.id);
           return (
             <Sequence key={`c${i}`} from={inicios[i]} durationInFrames={frames[i]}>
-              <CenaLonga cena={cena} frames={frames[i]} palavras={t?.words} />
+              <CenaLonga cena={cena} frames={frames[i]} palavras={t?.words} pular={i === 0 ? palavrasDaPergunta : 0} />
               {t?.audioFile ? <Audio src={staticFile(t.audioFile)} /> : null}
               {/* ⚠️ OS SONS — o dono: *"não é só mostrar letras, ícones conforme as
                   palavras são ditas, mas sim usarmos também os sons sincronizados com

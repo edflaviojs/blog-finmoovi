@@ -92,7 +92,18 @@ const TETO_DE_BROLL = 3;
  * e, pior, o ator deixaria de ser um MOMENTO para passar a ser o fundo do vídeo.
  * Quatro, com pelo menos três cenas de intervalo, mantém-no como pontuação.
  */
-const TETO_DE_METAFORA = 4;
+/**
+ * ⚠️ DOIS, E NÃO QUATRO — baixado depois de o dono ver o vídeo:
+ * *"essa animação do boneco aparece várias vezes repetidas, nós temos muitas outras,
+ * não tem como encaixar as outras também, algo que faça sentido?"*
+ *
+ * Ele tem razão e a minha regra estava a puxar para o lado errado. A ideia do objeto
+ * condutor (a destilação #1 do VOX) é que ele REGRESSE — mas quatro regressos em seis
+ * minutos, sempre com o mesmo desenho, deixam de ser um regresso e passam a ser o
+ * papel de parede. **Duas aparições fazem dele um momento: uma na abertura, outra na
+ * virada.** Os lugares que sobram vão para as OUTRAS 32, que estavam paradas.
+ */
+const TETO_DE_METAFORA = 2;
 const INTERVALO_DA_METAFORA = 3;
 
 /** Quantos desenhos diferentes tem a família `palavras`. Ver `telas.tsx`. */
@@ -156,8 +167,13 @@ const ILUSTRACOES = [
   { figura: 'balde-furado', pista: /furad|nao para em pe|nao sobra nada|ta furado/ },
 ];
 
-/** Teto e intervalo da família das ilustrações — as mesmas razões da metáfora. */
-const TETO_DE_ILUSTRACOES = 4;
+/**
+ * SEIS — subido de quatro no mesmo momento em que a metáfora desceu para dois.
+ * É a mesma decisão vista do outro lado: o dono quer **variedade de desenhos**, não
+ * ausência deles. Aqui cada aparição é uma figura DIFERENTE (há 32 e nunca se repete
+ * uma), portanto seis não cansam como quatro do mesmo boneco cansavam.
+ */
+const TETO_DE_ILUSTRACOES = 6;
 const INTERVALO_DA_ILUSTRACAO = 3;
 
 /** Os nomes por que se apresenta cada valor da ficha de dívida quando ele vai ao ecrã. */
