@@ -1,6 +1,6 @@
 ---
-title: "Montando Cartera Diversificada con R$500"
-description: "Aprende a montar una cartera diversificada con solo R$500, entendiendo los conceptos básicos de inversión y gestión de riesgos."
+title: "Montando Cartera Diversificada con €90"
+description: "Aprende a montar una cartera diversificada con solo €90, entendiendo los conceptos básicos de inversión y gestión de riesgos."
 image: "/images/posts/montando-carteira-diversificada-com-r-500.webp"
 imageAlt: "Hombre con teléfono sentado en sofá con dos mujeres y una laptop."
 category: "investimentos"
@@ -18,7 +18,7 @@ seo:
 ---
 
 ## Introducción a la [Inversión](/es/posts/es-guia-completa-para-principiantes-sobre-tesouro-direto)
-Cuando se habla de invertir, muchas personas piensan que es necesario tener un gran capital para empezar. Sin embargo, es posible montar una cartera diversificada con solo R$500. Para ello, es importante entender lo que significa diversificar y por qué es importante. Diversificar significa distribuir tus [inversiones](/es/posts/es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale-ma) en diferentes tipos de activos, como [acciones](/es/glossario/es-acciones), títulos, fondos de [inversión](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica), etc., para reducir el riesgo de pérdidas. Imagina que tienes R$500 y decides invertir todo en una sola acción. Si esa acción cae, perderás todo tu inversión. Ya si distribuyes esos R$500 en diferentes activos, el riesgo de pérdida será menor.
+Cuando se habla de invertir, muchas personas piensan que es necesario tener un gran capital para empezar. Sin embargo, es posible montar una cartera diversificada con solo €90. Para ello, es importante entender lo que significa diversificar y por qué es importante. Diversificar significa distribuir tus [inversiones](/es/posts/es-prevision-privada-vs-invertir-por-cuenta-propia-cual-vale-ma) en diferentes tipos de activos, como [acciones](/es/glossario/es-acciones), títulos, fondos de [inversión](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica), etc., para reducir el riesgo de pérdidas. Imagina que tienes €90 y decides invertir todo en una sola acción. Si esa acción cae, perderás todo tu inversión. Ya si distribuyes esos €90 en diferentes activos, el riesgo de pérdida será menor.
 
 ## Tipos de [Inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026)
 Existen muchos tipos de inversiones disponibles en el mercado. Algunos ejemplos incluyen:
@@ -31,23 +31,17 @@ Antes de empezar a invertir, es importante definir tus objetivos y planificar c�
 
 ![Tipos de Inversiones](/images/posts/montando-carteira-diversificada-com-r-500-2.webp)
 
-
-
 ## Simulaciones de Rendimiento
-Vamos a considerar un ejemplo práctico. Supongamos que inviertes R$500 en un fondo de inversión que ofrece un rendimiento anual de 8%. Después de un año, tu inversión valdrá R$540. Si sigues invirtiendo R$500 todos los meses, después de 5 años, tu inversión puede valer alrededor de R$4.500, considerando el mismo rendimiento anual de 8%. Es importante recordar que estos son solo ejemplos y el desempeño real de las inversiones puede variar.
+Vamos a considerar un ejemplo práctico. Supongamos que inviertes €90 en un fondo de inversión que ofrece un rendimiento anual de 8 %. Después de un año, tu inversión valdrá €97,2. Si sigues invirtiendo €90 todos los meses, después de 5 años, tu inversión puede valer alrededor de €810, considerando el mismo rendimiento anual de 8 %. Es importante recordar que estos son solo ejemplos y el desempeño real de las inversiones puede variar.
 
 ## Riesgos
 Invertir siempre implica riesgos. El riesgo es la posibilidad de perder parte o todo tu inversión. Existen diferentes tipos de riesgos, como riesgo de mercado (el [valor](/es/glossario/es-valor-financiero) de los activos puede caer), riesgo de crédito (la empresa o gobierno que emitió el título puede no pagar), y riesgo de [liquidez](/es/glossario/es-liquidez) (puedes no ser capaz de vender tu inversión rápidamente o por el precio que deseas). Para gestionar estos riesgos, es importante diversificar tu cartera y entender los riesgos asociados a cada inversión. Evalúa si tiene sentido para tu perfil de riesgo y objetivos financieros.
 
 ![Simulaciones de Rendimiento](/images/posts/montando-carteira-diversificada-com-r-500-4.webp)
 
-
-
 ## Próximos Pasos
 Ahora que has entendido los conceptos básicos de inversión y diversificación, es hora de poner esos conocimientos en práctica. Considera empezar con pequeñas cantidades y aumentar tus inversiones a medida que te sientas más cómodo. Recuerda que la clave para el éxito es la consistencia y la paciencia. No tengas miedo de buscar ayuda de un profesional financiero si no te sientes seguro para invertir solo. Además, considera usar herramientas como el FinMoovi para ayudar a gestionar tus inversiones de forma eficiente.
 
 ![Próximos pasos](/images/posts/montando-carteira-diversificada-com-r-500-6.webp)
 
-
-
-Para acompañar tus inversiones en un solo lugar, prueba el [FinMoovi gratis por 7 días](https://finmoovi.com) — multi-moneda, informes inteligentes y 100% offline.
+Para acompañar tus inversiones en un solo lugar, prueba el [FinMoovi gratis por 7 días](https://finmoovi.com) — multi-moneda, informes inteligentes y 100 % offline.

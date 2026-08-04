@@ -25,8 +25,6 @@ La LC funciona de la siguiente manera: el comprador solicita a su banco que emit
 
 ![Qué es](/images/glossario/lc-inline-1.webp)
 
-
-
 * Ventajas de la LC para el comprador:
  + Garantiza el pago solo si las condiciones de la transacción son cumplidas
  + Permite al comprador negociar mejores precios con el vendedor
@@ -37,17 +35,15 @@ La LC funciona de la siguiente manera: el comprador solicita a su banco que emit
  + Permite al vendedor ofrecer [crédito](/es/glossario/es-credito) al comprador sin asumir el riesgo de impago
 
 ## Ventajas
-Las ventajas de la LC son numerosas. Para el comprador, la LC ofrece una forma segura de pagar por bienes o servicios sin tener que pagar de inmediato. Por ejemplo, si un empresario brasileño quiere importar mercancías de China, puede solicitar una LC para garantizar el pago de R$ 50.000,00 a los proveedores chinos. De esta manera, el empresario puede recibir las mercancías y venderlas antes de pagar el [valor](/es/glossario/es-valor-financiero) total. Para el vendedor, la LC ofrece una forma segura de recibir el pago por los bienes o servicios vendidos. Por ejemplo, si un productor de soja de Mato Grosso quiere vender su producción a un comprador de São Paulo, puede solicitar una LC para garantizar el pago de R$ 100.000,00.
+Las ventajas de la LC son numerosas. Para el comprador, la LC ofrece una forma segura de pagar por bienes o servicios sin tener que pagar de inmediato. Por ejemplo, si un empresario quiere importar mercancías de China, puede solicitar una LC para garantizar el pago de €9.000 a los proveedores chinos. De esta manera, el empresario puede recibir las mercancías y venderlas antes de pagar el [valor](/es/glossario/es-valor-financiero) total. Para el vendedor, la LC ofrece una forma segura de recibir el pago por los bienes o servicios vendidos. Por ejemplo, si un productor de soja de una región quiere vender su producción a un comprador de una ciudad, puede solicitar una LC para garantizar el pago de €18.000.
 
 ## Riesgos
 Aunque la LC es un instrumento financiero seguro, también conlleva algunos riesgos. Por ejemplo, si el comprador no cumple con las condiciones de la transacción, la LC puede ser rechazada y el vendedor puede no recibir el pago. **Consejo práctico:** siempre es importante leer cuidadosamente las condiciones de la LC y asegurarse de que se cumplan todas las obligaciones antes de solicitar el pago. Otro riesgo es que la LC puede ser costosa, ya que los bancos cobran comisiones por emitir y gestionar la LC. **Consejo práctico:** es importante comparar las comisiones de diferentes bancos antes de elegir uno para emitir la LC. **Consejo práctico:** también es importante asegurarse de que la LC sea irrevocable, para evitar que el comprador la cancele o modifique sin el consentimiento del vendedor.
 
 ![Ventajas](/images/glossario/lc-inline-3.webp)
 
-
-
 ## Ejemplos prácticos
-Un ejemplo práctico de cómo funciona la LC es el siguiente: supongamos que un empresario de São Paulo quiere comprar R$ 20.000,00 en mercancías de un proveedor de Minas Gerais. El empresario puede solicitar una LC para garantizar el pago de las mercancías, y el proveedor puede aceptar la LC como garantía de pago. Una vez que el proveedor entrega las mercancías, el empresario puede venderlas y pagar el valor total de R$ 20.000,00. Otro ejemplo es el de un trabajador que gana R$ 5.000,00 al mes y quiere comprar un automóvil por R$ 30.000,00. El trabajador puede solicitar una LC para garantizar el pago del automóvil, y el vendedor puede aceptar la LC como garantía de pago. Una vez que el trabajador recibe el automóvil, puede pagar el valor total de R$ 30.000,00 en cuotas mensuales.
+Un ejemplo práctico de cómo funciona la LC es el siguiente: supongamos que un empresario de una ciudad quiere comprar €3.600 en mercancías de un proveedor. El empresario puede solicitar una LC para garantizar el pago de las mercancías, y el proveedor puede aceptar la LC como garantía de pago. Una vez que el proveedor entrega las mercancías, el empresario puede venderlas y pagar el valor total de €3.600. Otro ejemplo es el de un trabajador que gana €900 al mes y quiere comprar un automóvil por €5.400. El trabajador puede solicitar una LC para garantizar el pago del automóvil, y el vendedor puede aceptar la LC como garantía de pago. Una vez que el trabajador recibe el automóvil, puede pagar el valor total de €5.400 en cuotas mensuales.
 
 ## Cómo empezar
 Para empezar a utilizar la LC, es importante elegir un banco que ofrezca este servicio y comparar las comisiones y condiciones de diferentes bancos. **Consejo práctico:** es importante leer cuidadosamente las condiciones de la LC y asegurarse de que se cumplan todas las obligaciones antes de solicitar el pago. También es importante asegurarse de que la LC sea irrevocable, para evitar que el comprador la cancele o modifique sin el consentimiento del vendedor. **Consejo práctico:** es importante mantener un registro detallado de todas las transacciones y comunicaciones relacionadas con la LC, para evitar malentendidos o disputas.

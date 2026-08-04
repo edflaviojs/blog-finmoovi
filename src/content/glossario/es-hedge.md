@@ -25,8 +25,6 @@ Un hedge funciona básicamente como un seguro para tus inversiones. Cuando crees
 
 ![Qué es](/images/glossario/hedge-inline-1.webp)
 
-
-
 * Algunas formas comunes de crear un hedge incluyen:
  + Comprar opciones de venta (puts) de acciones o índices
  + Vender opciones de compra (calls) de acciones o índices
@@ -41,21 +39,18 @@ Sin embargo, también hay riesgos asociados con los hedges. **Consejo práctico:
 
 ![Ventajas](/images/glossario/hedge-inline-3.webp)
 
-
-
 * Algunos riesgos asociados con los hedges incluyen:
  + Pérdida de valor si el mercado sube
  + Costos de transacción y comisiones
  + Riesgo de [liquidez](/es/glossario/es-liquidez) si no puedes vender tu hedge cuando lo necesites
 
 ## Ejemplos prácticos
-Imagina que eres un empleado con un salario de R$5.000 al mes y has invertido R$10.000 en acciones de una empresa. Si el mercado baja un 10%, tu inversión valdrá R$9.000. Sin embargo, si has creado un hedge comprando una opción de venta de esas acciones, podrías recuperar parte de la pérdida. **Consejo práctico:** siempre es importante investigar y entender los costos y riesgos asociados con un hedge antes de invertir.
+Imagina que eres un empleado con un salario de €900 al mes y has invertido €1.800 en acciones de una empresa. Si el mercado baja un 10%, tu inversión valdrá €1.620. Sin embargo, si has creado un hedge comprando una opción de venta de esas acciones, podrías recuperar parte de la pérdida. **Consejo práctico:** siempre es importante investigar y entender los costos y riesgos asociados con un hedge antes de invertir.
 
-Por ejemplo, si has invertido R$10.000 en acciones de una empresa y el mercado baja un 10%, tu inversión valdrá R$9.000. Sin embargo, si has creado un hedge comprando una opción de venta de esas acciones por R$500, podrías vender esa opción por R$1.000 si el mercado baja, lo que te permitiría recuperar parte de la pérdida.
+Por ejemplo, si has invertido €1.800 en acciones de una empresa y el mercado baja un 10%, tu inversión valdrá €1.620. Sin embargo, si has creado un hedge comprando una opción de venta de esas acciones por €90, podrías vender esa opción por €180 si el mercado baja, lo que te permitiría recuperar parte de la pérdida.
 
 ## Cómo empezar
 Para empezar a utilizar hedges en tus inversiones, es importante que tengas un buen entendimiento de los mercados financieros y de las estrategias de inversión. **Consejo práctico:** siempre es importante buscar la ayuda de un profesional financiero antes de invertir en hedges. Además, es importante que tengas una cartera de inversiones diversificada y que no inviertas más de lo que puedes perder.
 
 ## Empieza hoy
 No dejes que el miedo al riesgo te impida invertir en tu futuro. Con un poco de conocimiento y planificación, puedes utilizar hedges para proteger tus inversiones y alcanzar tus objetivos financieros. ¡Empieza hoy a investigar y a aprender sobre hedges, y verás cómo puedes dormir mejor por la noche sabiendo que has tomado medidas para proteger tu patrimonio!
-

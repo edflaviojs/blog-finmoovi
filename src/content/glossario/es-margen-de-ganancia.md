@@ -12,34 +12,34 @@ readingTime: 2
 
 ## ¿Qué es Margen de Ganancia?
 
-El margen de ganancia es cuánto sobra de cada real que entra. Si una empresa factura R$ 100 y tiene R$ 80 de [costos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica), su margen de ganancia es 20%. Cuanto mayor sea el margen, más eficiente es el negocio.
+El margen de ganancia es cuánto sobra de cada euro que entra. Si una empresa factura €18 y tiene €14 de [costos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica), su margen de ganancia es 20 %. Cuanto mayor sea el margen, más eficiente es el negocio.
 
 ## Tipos de margen
 
 ### Margen Bruta
 
-- (Ingresos - Costo de los Productos) ÷ Ingresos × 100
-- Muestra eficiencia en la producción/compra
+- (Ingresos - Costo de los Productos) ÷ Ingresos × 100  
+- Muestra eficiencia en la producción/compra  
 
 ### Margen Operacional
 
-- (Ingresos - Costos - Gastos Operacionales) ÷ Ingresos × 100
-- Muestra eficiencia de la operación
+- (Ingresos - Costos - Gastos Operacionales) ÷ Ingresos × 100  
+- Muestra eficiencia de la operación  
 
 ### Margen Líquida
 
-- Ganancia Neta ÷ Ingresos × 100
-- Muestra cuánto realmente sobra al final
+- Ganancia Neta ÷ Ingresos × 100  
+- Muestra cuánto realmente sobra al final  
 
 ## Ejemplo práctico (tienda de ropa)
 
 | | [Valor](/es/glossario/es-valor-financiero) | Margen |
 |--|-------|--------|
-| Facturación | R$ 50.000 | - |
-| Costo de la ropa | R$ 20.000 | Bruta: 60% |
-| Gastos (alquiler, salarios) | R$ 20.000 | Operacional: 20% |
-| Impuestos | R$ 5.000 | Líquida: 10% |
-| **Ganancia neta** | **R$ 5.000** | |
+| Facturación | €9.000 | - |
+| Costo de la ropa | €3.600 | Bruta: 60 % |
+| Gastos (alquiler, salarios) | €3.600 | Operacional: 20 % |
+| Impuestos | €900 | Líquida: 10 % |
+| **Ganancia neta** | **€900** | |
 
 ## Para qué sirve (inversor)
 
@@ -50,4 +50,4 @@ Al analizar [acciones](/es/glossario/es-acciones), el margen de ganancia muestra
 
 ## Para [finanzas personales](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar)
 
-También tienes una “margen”: cuánto sobra de tu salario después de todos los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s). Si ganas R$ 5.000 y sobran R$ 1.000, tu margen personal es 20%. Lo ideal es al menos 20% (regla 50-30-20).
+También tienes una “margen”: cuánto sobra de tu salario después de todos los [gastos](/es/posts/es-5-consejos-para-prepararse-financieramente-para-el-segundo-s). Si ganas €900 y sobran €180, tu margen personal es 20 %. Lo ideal es al menos 20 % (regla 50‑30‑20).

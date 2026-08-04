@@ -13,38 +13,38 @@ readingTime: 1
 
 ## ¿Qué es la Garantía FGC?
 
-El FGC (Fondo Garantidor de Créditos) es como un seguro para tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) en bancos. Si el banco quiebra, el FGC te devuelve tu dinero — hasta R$ 250.000 por CPF por institución financiera.
+El FGC (Fondo Garantidor de Créditos) es como un seguro para tus [inversiones](/es/posts/es-cdb-vs-tesouro-selic-cual-rinde-mas-en-2026) en bancos. Si el banco quiebra, el FGC te devuelve tu dinero — hasta **€45.000** por persona por institución financiera.
 
 ## ¿Qué está cubierto?
 
-- [CDB](/es/glossario/es-cdb) (Certificado de Depósito Bancário)
-- [LCI y LCA](/es/glossario/es-lci-y-lca)
-- [Poupança](/es/glossario/es-ahorro)
-- Cuenta corriente
-- RDB
-- Letras de [cambio](/es/glossario/es-cambio)
+- [certificados de depósito](/es/glossario/es-cdb) (Certificado de Depósito Bancário)  
+- [LCI y LCA](/es/glossario/es-lci-y-lca)  
+- [Poupança](/es/glossario/es-ahorro)  
+- Cuenta corriente  
+- RDB  
+- Letras de [cambio](/es/glossario/es-cambio)  
 
 ## ¿Qué NO está cubierto?
 
-- Acciones
-- Fondos de inversión
-- Deudas
-- Tesoro Directo (tiene garantía del gobierno federal)
-- CRI y CRA
-- Previsión privada
+- Acciones  
+- Fondos de inversión  
+- Deudas  
+- Bonos del gobierno (tienen garantía del gobierno federal)  
+- CRI y CRA  
+- Previsión privada  
 
 ## Límites
 
-- **R$ 250.000** por CPF por institución
-- **R$ 1.000.000** en total (techo global, se renueva cada 4 años)
+- **€45.000** por persona por institución  
+- **€180.000** en total (techo global, se renueva cada 4 años)  
 
 ## Estrategia práctica
 
-Si tienes R$ 500.000 para invertir en CDB:
-- Coloca R$ 250.000 en el Banco A
-- Coloca R$ 250.000 en el Banco B
-- Ambos están 100% cubiertos por el FGC
+Si tienes **€90.000** para invertir en certificados de depósito:  
+- Coloca **€45.000** en el Banco A  
+- Coloca **€45.000** en el Banco B  
+- Ambos están 100 % cubiertos por el FGC  
 
 ## Consejo importante
 
-Bancos más pequeños generalmente pagan tasas más altas (120-130% del [CDI](/es/glossario/es-cdi)) justamente porque son menos conocidos. Con la garantía del FGC, el riesgo es prácticamente el mismo que el de un gran banco — pero el rendimiento es mayor.
+Los bancos más pequeños generalmente pagan tasas más altas (120‑130 % de la [tasa interbancaria](/es/glossario/es-cdi)) justamente porque son menos conocidos. Con la garantía del FGC, el riesgo es prácticamente el mismo que el de un gran banco — pero el rendimiento es mayor.

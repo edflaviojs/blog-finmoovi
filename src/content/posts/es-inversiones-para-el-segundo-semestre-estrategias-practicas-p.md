@@ -27,7 +27,7 @@ seo:
 
 # Inversiones para el segundo semestre: estrategias prácticas para 2026
 
-El segundo semestre suele ser más agitado: vacaciones, fiestas de fin de año y la expectativa de un nuevo ciclo económico. Si aún no tienes un plan definido para los próximos seis meses, este artículo te ofrece un paso‑a‑paso para armar una cartera que combine seguridad y potencial de crecimiento, usando ejemplos reales del día a día en Brasil.
+El segundo semestre suele ser más agitado: vacaciones, fiestas de fin de año y la expectativa de un nuevo ciclo económico. Si aún no tienes un plan definido para los próximos seis meses, este artículo te ofrece un paso‑a‑paso para armar una cartera que combine seguridad y potencial de crecimiento, usando ejemplos reales del día a día.
 
 ---
 
@@ -50,14 +50,14 @@ Construir una reserva de emergencia y colocar recursos en activos de largo plazo
 
 ![Cómo armar la cartera: 5 pasos simples](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-2.webp)
 
-| Ítem                     | [Valor](/es/glossario/es-valor-financiero) (R$) |
+| Ítem                     | [Valor](/es/glossario/es-valor-financiero) (€) |
 |--------------------------|-----------|
-| Salario bruto mensual    | 3.500,00 |
-| Gastos fijos mensuales   | 1.800,00 |
-| Reserva de emergencia    | 5.000,00 |
-| Inversiones actuales     | 12.000,00 |
+| Salario bruto mensual    | 630,00 |
+| Gastos fijos mensuales   | 324,00 |
+| Reserva de emergencia    | 900,00 |
+| Inversiones actuales     | 2.160,00 |
 
-Después de pagar las cuentas, calcula cuánto sobra para nuevos aportes. En el ejemplo anterior, la persona tiene **R$ 1.700,00** de margen libre (3.500 – 1.800). Si destinas el 30 % de ese margen a nuevos aportes, el aporte mensual será **R$ 510,00**.
+Después de pagar las cuentas, calcula cuánto sobra para nuevos aportes. En el ejemplo anterior, la persona tiene **€306,00** de margen libre (630 – 324). Si destinas el 30 % de ese margen a nuevos aportes, el aporte mensual será **€92**.
 
 > **Consejo práctico:** Usa la app **FinMoovi** para registrar esas entradas y salidas. Permite categorizar cada gasto y ya muestra cuánto puedes invertir cada mes.
 
@@ -71,33 +71,33 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 ### Paso 3 – Elige la combinación de activos
 
-| Tipo de activo                     | Riesgo | Indicación para 2.º semestre |
-|------------------------------------|--------|-------------------------------|
-| **Tesoro [Selic](/es/glossario/es-selic)** (renta fija)     | Bajo   | Reserva de emergencia y aporte de seguridad |
-| **CDBs con [liquidez](/es/glossario/es-liquidez) diaria**       | Bajo‑medio | Complemento al Selic, rendimiento superior al ahorro |
-| **Fondos índice ([ETF](/es/glossario/es-etf)) de acciones**| Medio‑alto | Exposición a sectores estacionales (comercio, energía) |
-| **[Fondos inmobiliarios](/es/glossario/es-fondos-inmobiliarios) (FIIs)**    | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
-| **Criptomonedas o activos alternativos** | Alto | Solo 5 % de la cartera, para quien acepta volatilidad |
+| Tipo de activo                                                   | Riesgo | Indicación para 2.º semestre |
+|------------------------------------------------------------------|--------|-------------------------------|
+| **Bonos del gobierno (tasa base del banco central)** (renta fija) | Bajo   | Reserva de emergencia y aporte de seguridad |
+| **Certificados de depósito** con [liquidez](/es/glossario/es-liquidez) diaria | Bajo‑medio | Complemento a la tasa base del banco central, rendimiento superior al ahorro |
+| **Fondos índice ([ETF](/es/glossario/es-etf)) de acciones**      | Medio‑alto | Exposición a sectores estacionales (comercio, energía) |
+| **Fondos inmobiliarios** ([fondos inmobiliarios](/es/glossario/es-fondos-inmobiliarios)) | Medio  | Recepción de alquileres mensuales, bueno para quien busca ingresos pasivos |
+| **Criptomonedas o activos alternativos**                         | Alto   | Solo 5 % de la cartera, para quien acepta volatilidad |
 
-#### Ejemplo de asignación para quien gana R$ 3.500,00
+#### Ejemplo de asignación para quien gana €630,00
 
-- **Tesoro Selic:** 30 % (R$ 153,00) – liquidez inmediata.  
-- **CDBs de bancos medianos:** 20 % (R$ 102,00) – rentabilidad mayor que la tasa Selic.  
-- **ETF BOVA11 (IBOVESPA):** 25 % (R$ 128,00) – exposición al mercado accionario.  
-- **FIIs (ej.: KNRI11):** 20 % (R$ 102,00) – ingresos mensuales por alquileres.  
-- **Criptomonedas:** 5 % (R$ 25,00) – riesgo controlado, puede servir como “potencial de alta”.
+- **Bonos del gobierno:** 30 % (€28) – liquidez inmediata.  
+- **Certificados de depósito de bancos medianos:** 20 % (€18) – rentabilidad mayor que la tasa base del banco central.  
+- **ETF de acciones que replica un índice bursátil amplio:** 25 % (€23) – exposición al mercado accionario.  
+- **Fondos inmobiliarios (ej.: REITs):** 20 % (€18) – ingresos mensuales por alquileres.  
+- **Criptomonedas:** 5 % (€5) – riesgo controlado, puede servir como “potencial de alta”.
 
 > **Obs.:** Los porcentajes pueden variar según tu perfil de riesgo. Lo importante es mantener la disciplina del aporte mensual.
 
 ### Paso 4 – Aprovecha oportunidades estacionales
 
-1. **Comercio minorista:** Las ventas de fin de año suelen impulsar el índice Bovespa. Comprar cuotas de un ETF que replica el IBOVESPA a principios de julio puede generar ganancias cuando las empresas anuncian resultados positivos en agosto.  
+1. **Comercio minorista:** Las ventas de fin de año suelen impulsar los índices bursátiles. Comprar cuotas de un ETF que replica un índice bursátil amplio a principios de julio puede generar ganancias cuando las empresas anuncian resultados positivos en agosto.  
 
 2. **Turismo:** Empresas de aviación y hotelería tienden a subir a medida que se acercan las vacaciones de julio y diciembre. Una pequeña inversión en acciones de estos sectores puede valer la pena.  
 
-3. **Energía:** El aumento del consumo de aire acondicionado en otoño (mayo‑septiembre) eleva el precio de la energía. FIIs de energía o acciones de utilities pueden beneficiarse.  
+3. **Energía:** El aumento del consumo de aire acondicionado en otoño (mayo‑septiembre) eleva el precio de la energía. Fondos inmobiliarios de energía o acciones de utilities pueden beneficiarse.  
 
-> **Herramienta:** FinMoovi tiene alertas de mercado que avisan cuando los precios de ETFs o FIIs superan límites predefinidos, ayudándote a entrar en el momento justo.
+> **Herramienta:** FinMoovi tiene alertas de mercado que avisan cuando los precios de ETFs o fondos inmobiliarios superan límites predefinidos, ayudándote a entrar en el momento justo.
 
 ### Paso 5 – Monitorea y ajusta cada trimestre
 
@@ -111,25 +111,25 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 
 ### Inversor conservador
 
-- **80 % en Tesoro Selic y CDBs**, 15 % en FIIs de alta calidad, 5 % en ETF de acciones.  
+- **80 % en bonos del gobierno y certificados de depósito**, 15 % en fondos inmobiliarios de alta calidad, 5 % en ETF de acciones.  
 - Enfoque en preservación de capital y rendimientos estables.
 
 ### Inversor moderado
 
-- **50 % en renta fija (Selic + CDBs)**, 30 % en ETFs, 15 % en FIIs, 5 % en activos alternativos.  
+- **50 % en renta fija (bonos del gobierno + certificados de depósito)**, 30 % en ETFs, 15 % en fondos inmobiliarios, 5 % en activos alternativos.  
 - Busca equilibrio entre seguridad y potencial de valorización.
 
 ### Inversor agresivo
 
-- **30 % en renta fija**, 45 % en ETFs y acciones de sectores estacionales, 20 % en FIIs de nicho, 5 % en criptomonedas.  
-- Acepta mayor volatilidad a [cambio](/es/glossario/es-cambio) de retornos superiores.
+- **30 % en renta fija**, 45 % en ETFs y acciones de sectores estacionales, 20 % en fondos inmobiliarios de nicho, 5 % en criptomonedas.  
+- Acepta mayor volatilidad a cambio de retornos superiores.
 
 ---
 
 ## Herramientas y recursos útiles
 
-- **[Banco Central de Brasil](https://www.bcb.gov.br)** – consulta de la tasa Selic e indicadores económicos.  
-- **[Tesoro Directo](https://www.tesourodireto.com.br)** – portal oficial para adquirir títulos públicos.  
+- **[Banco Central]** – consulta de la tasa base del banco central e indicadores económicos.  
+- **[Portal de bonos del gobierno]** – sitio oficial para adquirir títulos públicos.  
 - **FinMoovi** – app de finanzas personales que integra control de gastos, metas de inversión y alertas de mercado. Ideal para quien quiere visualizar la cartera completa en un solo lugar.
 
 ![Herramientas y recursos útiles](/images/posts/investimentos-para-o-segundo-semestre-estrategias-praticas-p-4.webp)
@@ -139,13 +139,13 @@ Para el segundo semestre, la mayoría de la gente se concentra en **corto y medi
 ## Preguntas frecuentes (FAQ)
 
 **1. ¿Puedo comenzar a invertir aun con poca reserva?**  
-Sí. Empieza con el Tesoro Selic, que tiene liquidez diaria y protege el capital. A medida que la reserva crezca, diversifica.
+Sí. Empieza con bonos del gobierno, que tienen liquidez diaria y protegen el capital. A medida que la reserva crezca, diversifica.
 
-**2. ¿Cuánto debo asignar a FIIs?**  
+**2. ¿Cuánto debo asignar a fondos inmobiliarios?**  
 Depende de tu objetivo de ingresos pasivos. Una asignación del 10‑20 % suele generar dividendos mensuales sin comprometer la diversificación.
 
 **3. ¿Es seguro comprar ETFs internacionales?**  
-Es posible mediante corredoras que ofrecen acceso a BDRs o fondos de inversión en el exterior. Evalúa costos de custodia e impuestos.
+Es posible mediante corredoras que ofrecen acceso a fondos cotizados en el exterior. Evalúa costos de custodia e impuestos.
 
 ---
 

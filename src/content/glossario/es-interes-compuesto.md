@@ -16,15 +16,15 @@ Los [intereses compuestos](/es/posts/es-invertir-vs-pagar-deudas-que-conviene-ma
 
 ## Ejemplo práctico
 
-R$ 10.000 invertidos a 10% al año:
+€1.800 invertidos a 10% al año:
 
 | Año | Intereses Simples | Intereses Compuestos |
 |-----|-------------------|----------------------|
-| 1 | R$ 11.000 | R$ 11.000 |
-| 5 | R$ 15.000 | R$ 16.105 |
-| 10 | R$ 20.000 | R$ 25.937 |
-| 20 | R$ 30.000 | R$ 67.275 |
-| 30 | R$ 40.000 | R$ 174.494 |
+| 1 | €1.980 | €1.980 |
+| 5 | €2.700 | €2.899 |
+| 10 | €3.600 | €4.669 |
+| 20 | €5.400 | €12.110 |
+| 30 | €7.200 | €31.409 |
 
 ## La regla de los 72
 
@@ -34,4 +34,4 @@ Para saber en cuántos años tu dinero se duplica, divide 72 por la [tasa](/es/g
 
 ## Por qué empezar temprano importa
 
-Quien invierte R$ 500/mes de los 25 a los 65 años (a 10% a.a.) acumula **R$ 3,2 millones**. Quien empieza a los 35, acumula R$ 1,1 millón. 10 años de diferencia = 3x menos dinero.
+Quien invierte €90/mes de los 25 a los 65 años (a 10% a.a.) acumula **€576.000**. Quien empieza a los 35, acumula €198.000. 10 años de diferencia = 3x menos dinero.

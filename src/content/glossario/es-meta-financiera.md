@@ -12,11 +12,11 @@ readingTime: 2
 
 ## ¿Qué es Meta Financiera?
 
-Meta financiera es un objetivo concreto para tu dinero. No es "quiero ahorrar más" — es "quiero juntar R$ 10.000 hasta diciembre de 2025 para dar entrada al coche". Cuanto más específica, mayor la probabilidad de lograrla.
+Meta financiera es un objetivo concreto para tu dinero. No es "quiero ahorrar más" — es "quiero juntar **€1.800** hasta diciembre de 2025 para dar entrada al coche". Cuanto más específica, mayor la probabilidad de lograrla.
 
 ## Cómo definir buenas metas (método SMART)
 
-- **S**pecífica: "Juntar R$ 10.000" (no "ahorrar más")
+- **S**pecífica: "Juntar **€1.800**" (no "ahorrar más")
 - **M**ensurável: [valor](/es/glossario/es-valor-financiero) exacto que puedas seguir
 - **A**lcançável: posible con tus ingresos actuales
 - **R**elevante: importante para ti
@@ -26,19 +26,19 @@ Meta financiera es un objetivo concreto para tu dinero. No es "quiero ahorrar m�
 
 ### Corto plazo (hasta 1 año)
 
-- Crear reserva de emergencia de R$ 15.000
-- Cancelar tarjeta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) de R$ 3.000
-- Juntar R$ 5.000 para viaje
+- Crear reserva de emergencia de **€2.700**
+- Cancelar tarjeta de [crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen) de **€540**
+- Juntar **€900** para viaje
 
 ### Mediano plazo (1-5 años)
 
-- Juntar R$ 50.000 para entrada del apartamento
-- Cambiar de coche (R$ 30.000)
-- Hacer intercambio (R$ 20.000)
+- Juntar **€9.000** para entrada del apartamento
+- Cambiar de coche (**€5.400**)
+- Hacer intercambio (**€3.600**)
 
 ### Largo plazo (5+ años)
 
-- [Independencia financiera](/es/glossario/es-independencia-financiera) (R$ 1.500.000)
+- [Independencia financiera](/es/glossario/es-independencia-financiera) (**€270.000**)
 - [Jubilación](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica) complementaria
 - Comprar inmueble al contado
 

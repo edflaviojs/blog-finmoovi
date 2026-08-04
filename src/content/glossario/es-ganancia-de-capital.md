@@ -13,13 +13,13 @@ readingTime: 2
 
 ## ¿Qué es Ganancia de Capital?
 
-Ganancia de capital es la ganancia que obtienes cuando vendes algo por más de lo que pagaste. Compraste una acción por R$ 20 y la vendiste por R$ 30? Tu ganancia de capital es R$ 10. Esta ganancia puede ser gravada por el Impuesto de Renta.
+Ganancia de capital es la ganancia que obtienes cuando vendes algo por más de lo que pagaste. ¿Compraste una acción por €4 y la vendiste por €5? Tu ganancia de capital es €2. Esta ganancia puede ser gravada por el Impuesto de Renta.
 
 ## Donde incide
 
-- Venta de [acciones](/es/glossario/es-acciones) (más de R$ 20.000/mes)
+- Venta de [acciones](/es/glossario/es-acciones) (más de €3,600/mes)
 - Venta de inmuebles
-- Venta de criptomonedas (más de R$ 35.000/mes)
+- Venta de criptomonedas (más de €6,300/mes)
 - Venta de vehículos con ganancia
 - Venta de cualquier bien por encima del [valor](/es/glossario/es-valor-financiero) de compra
 
@@ -27,26 +27,26 @@ Ganancia de capital es la ganancia que obtienes cuando vendes algo por más de l
 
 ### Acciones
 
-- Operaciones normales: 15% sobre la ganancia
-- Day trade: 20% sobre la ganancia
-- Exención: ventas hasta R$ 20.000/mes
+- Operaciones normales: 15 % sobre la ganancia
+- Day trade: 20 % sobre la ganancia
+- Exención: ventas hasta €3,600/mes
 
 ### Inmuebles
 
-- 15% sobre la ganancia de capital
-- Exención: inmueble único hasta R$ 440.000 (si no vendiste otro en los últimos 5 años)
+- 15 % sobre la ganancia de capital
+- Exención: inmueble único hasta €79,200 (si no vendiste otro en los últimos 5 años)
 - Exención: si usas el valor para comprar otro inmueble en 180 días
 
 ### Criptomonedas
 
-- 15% sobre la ganancia en ventas más de R$ 35.000/mes
+- 15 % sobre la ganancia en ventas más de €6,300/mes
 
 ## ¿Cómo calcular?
 
 **Ganancia de Capital = Precio de Venta - Precio de Compra - [Costos](/es/posts/es-prevision-privada-2026-vale-la-pena-guia-practica)**
 
-Costos incluyen: corretaje, tasas, reformas (inmuebles), etc.
+Los costos incluyen: corretaje, tasas, reformas (inmuebles), etc.
 
 ## Consejo importante
 
-Mantén registro de todas las compras (notas de corretaje, contratos). Sin comprobante del precio de compra, la Receita puede considerar el costo como cero — y cobrar impuesto sobre el valor total de la venta.
+Mantén registro de todas las compras (notas de corretaje, contratos). Sin comprobante del precio de compra, la autoridad fiscal puede considerar el costo como cero — y cobrar impuesto sobre el valor total de la venta.

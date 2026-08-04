@@ -10,7 +10,7 @@ publishedAt: 2025-05-10
 readingTime: 2
 ---
 
-## ¿Qué son los [Juros](/es/glossario/es-interes) Simples?
+## ¿Qué son los [Intereses](/es/glossario/es-interes) Simples?
 
 Los intereses simples se calculan solo sobre el [valor](/es/glossario/es-valor-financiero) original (principal). No importa cuánto tiempo pase, los intereses siempre se calculan sobre el mismo valor inicial. Es el tipo más básico de intereses.
 
@@ -26,15 +26,15 @@ Donde:
 
 ## Ejemplo
 
-R$ 1.000 al 10% anual por 3 años (intereses simples):
-- Intereses = 1.000 × 0,10 × 3 = R$ 300
-- Total: R$ 1.300
+€180 al 10% anual por 3 años (intereses simples):
+- Intereses = 180 × 0,10 × 3 = €54
+- Total: €234
 
 Comparar con [intereses compuestos](/es/posts/es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026):
-- Año 1: 1.000 × 1,10 = R$ 1.100
-- Año 2: 1.100 × 1,10 = R$ 1.210
-- Año 3: 1.210 × 1,10 = R$ 1.331
-- Total: R$ 1.331 (R$ 31 más)
+- Año 1: 180 × 1,10 = €198
+- Año 2: 198 × 1,10 = €217,8
+- Año 3: 217,8 × 1,10 = €239,58
+- Total: €239,58 (≈ €60,58 más)
 
 ## Dónde aparecen los intereses simples
 

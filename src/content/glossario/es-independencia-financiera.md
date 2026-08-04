@@ -20,11 +20,11 @@ La independencia financiera es cuando tus inversiones generan ingresos suficient
 
 ## Ejemplo
 
-- Gastos mensuales: R$ 5.000
-- Gastos anuales: R$ 60.000
-- Patrimonio necesario: R$ 60.000 × 25 = **R$ 1.500.000**
+- Gastos mensuales: €900  
+- Gastos anuales: €10.800  
+- Patrimonio necesario: €10.800 × 25 = **€270.000**
 
-Con R$ 1,5 millón invertidos rindiendo 8% al año, tendrías R$ 120.000/año (R$ 10.000/mes) — más que suficiente.
+Con €270.000 invertidos rindiendo 8 % al año, tendrías €21.600/año (≈ €1.800/mes) — más que suficiente.
 
 ## ¿Cuánto tiempo lleva?
 
@@ -32,11 +32,11 @@ Depende de cuánto ahorras:
 
 | [Tasa](/es/glossario/es-tasa-financiera) de [ahorro](/es/glossario/es-ahorro) | Tiempo para IF |
 |-----------------|---------------|
-| 10% de la renta | 51 años |
-| 20% de la renta | 37 años |
-| 30% de la renta | 28 años |
-| 50% de la renta | 17 años |
-| 70% de la renta | 8 años |
+| 10 % de la renta | 51 años |
+| 20 % de la renta | 37 años |
+| 30 % de la renta | 28 años |
+| 50 % de la renta | 17 años |
+| 70 % de la renta | 8 años |
 
 ## Pasos para la independencia financiera
 
@@ -50,4 +50,4 @@ Depende de cuánto ahorras:
 
 ## Independencia financiera parcial
 
-No tiene que ser todo o nada. Tener el 50% de los gastos cubiertos por ingresos pasivos ya cambia tu vida — puedes trabajar medio tiempo, cambiar de carrera o aceptar un salario menor haciendo lo que amas.
+No tiene que ser todo o nada. Tener el 50 % de los gastos cubiertos por ingresos pasivos ya cambia tu vida — puedes trabajar medio tiempo, cambiar de carrera o aceptar un salario menor haciendo lo que amas.
