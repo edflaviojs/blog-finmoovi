@@ -1,11 +1,11 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-04T14:48:07.122Z
-**Totais:** 62 pendente(s) · 23 usada(s) · 16 pulada(s)
+**Atualizado em:** 2026-08-04T15:02:40.962Z
+**Totais:** 65 pendente(s) · 23 usada(s) · 16 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 40
+### Manuais (prioridade 1) — 43
 
 - fluxo de caixa _(glossario)_
 - saldo devedor _(glossario)_
@@ -47,6 +47,9 @@
 - como funciona financiamento de veiculo _(glossario)_
 - como funciona financiamento de veículos _(glossario)_
 - como funciona minha casa minha vida financiamento _(glossario)_
+- tabela para economizar dinheiro​
+- supermercado economizando​
+- supermercado economiza​
 
 ### Lacunas do GSC (prioridade 2) — 8
 
