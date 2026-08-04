@@ -26,8 +26,12 @@
  * Uso: node src/scripts/validacao/validar-roteiro-longo.js
  */
 
-import { readFileSync } from 'fs';
-import { join } from 'path';
+import { readFileSync, existsSync } from 'fs';
+import { join, dirname, resolve } from 'path';
+import { fileURLToPath } from 'url';
+
+/** A raiz do projeto — para as provas que leem ficheiros a sério (o guião montado). */
+const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
 import {
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
@@ -742,6 +746,52 @@ console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, e
   const lugares = escolherLugaresDaMetafora(cenasDeProva, 'mochila-pedras');
   ok('a pista forte da metáfora entra mesmo quando vem depois da fraca', lugares.has(3));
   ok('a metáfora respeita o intervalo mínimo entre aparições', [...lugares.keys()].every((i, n, todos) => n === 0 || i - todos[n - 1] >= 3));
+
+  /**
+   * (i-bis) AS TRÊS FOTOGRAFIAS DA MANUS.
+   *
+   * ⚠️ A prova que mais importa é a terceira: **a fotografia tem de cair numa cena cujo
+   * texto a chamou.** É a queixa nº 1 do dono posta em código — o ecrã não pode mostrar
+   * uma coisa enquanto a voz diz outra. Sem isto, bastava alguém afinar uma pista para
+   * as mãos a abrir uma fatura aterrarem no fecho do vídeo.
+   */
+  {
+    const { escolherLugaresDaFoto } = await import('../youtube/lib/imagens-longo.js');
+    const cenasReais = JSON.parse(
+      readFileSync(join(RAIZ, 'youtube-render', 'public', 'roteiro', 'sair-do-vermelho.json'), 'utf-8'),
+    ).scenes;
+    const fotos = cenasReais.filter((c) => c.visual?.tipo === 'foto');
+
+    ok('as três fotografias entram no vídeo', fotos.length === 3, `entraram ${fotos.length}`);
+    ok(
+      'nenhuma fotografia se repete',
+      new Set(fotos.map((c) => c.visual.ficheiro)).size === fotos.length,
+    );
+    ok(
+      'cada fotografia cai numa cena cujo TEXTO a chamou',
+      fotos.every((c) => {
+        const t = String(c.narration).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+        const esperado = {
+          'imagem-1-o-susto': /celular na mao|olhar a fatura com calma|sentei com o celular/,
+          'imagem-2-o-numero': /nao parava de crescer|valor nao parava|nao para de crescer/,
+          'imagem-3-a-virada': /sem desistir no meio do caminho|foi a primeira vez/,
+        }[String(c.visual.ficheiro).split('/').pop().replace(/\.\w+$/, '')];
+        return Boolean(esperado && esperado.test(t));
+      }),
+    );
+    ok(
+      'a imagem com TEXTO aparece inteira, nunca cortada (modo cartaz)',
+      fotos.every((c) => (String(c.visual.ficheiro).includes('o-numero') ? c.visual.movimento === 'cartaz' : c.visual.movimento !== 'cartaz')),
+    );
+    ok(
+      'as fotografias que o vídeo usa existem mesmo no disco',
+      fotos.every((c) => existsSync(join(RAIZ, 'youtube-render', 'public', c.visual.ficheiro))),
+    );
+    ok(
+      'as fotografias escolhem ANTES das ilustrações (senão ficavam sem casa)',
+      escolherLugaresDaFoto(cenasReais).size === 3,
+    );
+  }
 
   // (j) determinismo: o mesmo guião dá sempre o mesmo vídeo
   const outraVez = dirigirImagens(cenas.map((c) => ({ ...c, visual: undefined })), mapaDeProva);
