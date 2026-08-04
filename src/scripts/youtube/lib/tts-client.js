@@ -43,12 +43,22 @@ function escapeXml(s) {
 // singleton compartilhado — cada chamada (e cada retry) nasce e morre com sua
 // própria conexão. Assim um websocket morto/"envenenado" de uma tentativa nunca
 // contamina a próxima, e não deixamos sockets vazando (fonte de throttle em CI).
-async function edgeSynthOnce(text, voiceName) {
+async function edgeSynthOnce(text, voiceName, prosody) {
   const { MsEdgeTTS, OUTPUT_FORMAT } = await import('msedge-tts');
   const tts = new MsEdgeTTS();
   try {
     await tts.setMetadata(voiceName, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3);
-    const { audioStream } = tts.toStream(text);
+    /**
+     * ⚠️ `prosody` É O ÚNICO CONTROLO DE INTENÇÃO QUE ESTE MOTOR ACEITA (medido 04/08).
+     * A documentação diz que o texto *"can include SSML elements"*, mas o ponto de
+     * leitura gratuito do Edge **fecha a ligação** com qualquer marca por dentro — foi
+     * provado com `<break>`, `<prosody>`, prosódia aninhada e a variante mais simples
+     * possível: as quatro falharam, e o mesmo texto puro passou.
+     * O que ele aceita é o ritmo/tom **do pedido inteiro** — e é por isso que a camada
+     * de intenção (`lib/prosodia.js`) sintetiza frase a frase.
+     * Sem `prosody`, o comportamento é exatamente o de sempre.
+     */
+    const { audioStream } = tts.toStream(text, prosody);
     const chunks = [];
     await new Promise((res, rej) => {
       audioStream.on('data', (c) => chunks.push(c));
@@ -65,13 +75,13 @@ function edgeProvider() {
   return {
     name: 'edge',
     ext: 'mp3',
-    async synth(text, voice) {
+    async synth(text, voice, prosody) {
       let lastErr;
       // O endpoint do Edge às vezes fecha o stream cedo (turn.end não chega) — retenta,
       // sempre numa CONEXÃO NOVA (edgeSynthOnce recria a instância a cada tentativa).
       for (let attempt = 1; attempt <= 3; attempt++) {
         try {
-          const buf = await edgeSynthOnce(text, voice.name);
+          const buf = await edgeSynthOnce(text, voice.name, prosody);
           if (buf.length < 3000) throw new Error('áudio curto/truncado');
           return buf;
         } catch (err) {
@@ -205,9 +215,10 @@ export function pickProvider() {
  * em falha, cai para o próximo. Retorna { audio, provider, voice, ext }.
  *
  * @param {string} text
- * @param {{ voices?: object, providerName?: string }} [opts]
+ * @param {{ voices?: object, providerName?: string, prosody?: {rate?:string,pitch?:string,volume?:string} }} [opts]
+ * ⚠️  só é entendido pelo  (ver ); os outros ignoram-no.
  */
-export async function synthesizeSpeech(text, { voices = VOICES, providerName } = {}) {
+export async function synthesizeSpeech(text, { voices = VOICES, providerName, prosody } = {}) {
   const providers = getTtsProviders();
   if (!providers.length) {
     throw new Error('Nenhum provedor de TTS disponível (edge deveria estar sempre presente — verifique a dep msedge-tts).');
@@ -227,7 +238,7 @@ export async function synthesizeSpeech(text, { voices = VOICES, providerName } =
   for (const p of ordered) {
     const voice = voices[p.name] || {};
     try {
-      const audio = await p.synth(text, voice);
+      const audio = await p.synth(text, voice, prosody);
       if (!audio || audio.length < 500) throw new Error('áudio vazio/curto demais');
       return { audio, provider: p.name, ext: p.ext, voice: voice.name || p.name };
     } catch (err) {
