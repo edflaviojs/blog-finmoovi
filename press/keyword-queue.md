@@ -1,11 +1,11 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-04T15:06:04.455Z
-**Totais:** 111 pendente(s) · 23 usada(s) · 16 pulada(s)
+**Atualizado em:** 2026-08-04T15:12:11.666Z
+**Totais:** 132 pendente(s) · 23 usada(s) · 16 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 89
+### Manuais (prioridade 1) — 110
 
 - fluxo de caixa _(glossario)_
 - saldo devedor _(glossario)_
@@ -96,6 +96,27 @@
 - o que é economizar _(glossario)_
 - planejamento para guardar dinheiro _(glossario)_
 - planilha para economizar dinheiro _(glossario)_
+- farmácias economizar
+- figuras de como economizar agua
+- formas de como economizar agua
+- formas de economizar energia
+- como economizar agua
+- de como economizar água
+- de economizar água
+- economizar agua
+- para economizar água
+- sobre economizar água
+- de pessoas economizando água
+- economizando água
+- economizar energia
+- para economizar energia funciona
+- maneiras de como economizar água
+- me economiza
+- mercadinho economizar
+- mercado economizando
+- o que devemos fazer para economizar água
+- o que levar para comer na praia para economizar
+- por que é importante economizar energia elétrica
 
 ### Lacunas do GSC (prioridade 2) — 8
 
