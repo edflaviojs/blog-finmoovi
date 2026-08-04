@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-03T14:53:52.998Z",
-  "sourceCursor": 2,
+  "updatedAt": "2026-08-04T11:15:53.059Z",
+  "sourceCursor": 0,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -198,16 +198,19 @@
       "category": null,
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-07-27T10:31:26.174Z"
+      "status": "skipped",
+      "addedAt": "2026-07-27T10:31:26.174Z",
+      "reason": "coberto-glossario"
     },
     {
       "keyword": "kyco",
       "category": null,
       "priority": 3,
       "source": "autocomplete",
-      "status": "pending",
-      "addedAt": "2026-07-27T10:31:26.174Z"
+      "status": "used",
+      "addedAt": "2026-07-27T10:31:26.174Z",
+      "usedAt": "2026-08-04T11:15:53.059Z",
+      "usedBy": "gerar-dicas-financeiras"
     },
     {
       "keyword": "kyc shopee",
