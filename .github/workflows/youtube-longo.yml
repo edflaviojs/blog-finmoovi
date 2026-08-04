@@ -70,6 +70,29 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      # ⚠️ ESTE FICHEIRO VIVE NO RAMO PRINCIPAL, MAS O CÓDIGO DO VÍDEO LONGO NÃO (ainda).
+      #
+      # O GitHub só mostra o botão de arrancar um robô se o ficheiro dele existir no ramo
+      # principal — e depois deixa escolher de que ramo se corre. Só que o botão vem com o
+      # ramo principal já escolhido, e é fácil carregar sem trocar.
+      #
+      # Sem esta guarda, isso daria um erro obscuro dez passos mais à frente. Com ela, dá
+      # uma frase que diz o que fazer. É a lição de 02/08 (o robô que não arrancava): um
+      # programa que morre sem explicar porquê custa dias.
+      - name: Conferir que este ramo tem o código do vídeo longo
+        run: |
+          if [ ! -f "src/scripts/youtube/upload-longo.js" ]; then
+            echo "::error::Este ramo ($GITHUB_REF_NAME) não tem o código do vídeo longo."
+            echo ""
+            echo "  O que aconteceu: só a INSTRUÇÃO do robô está no ramo principal; o"
+            echo "  código vive no ramo de trabalho \"video-longo-04-08\"."
+            echo ""
+            echo "  O que fazer: carregar outra vez em \"Run workflow\" e, na caixa do ramo,"
+            echo "  escolher \"video-longo-04-08\" em vez do ramo principal."
+            exit 1
+          fi
+          echo "✅ o ramo $GITHUB_REF_NAME tem o código do vídeo longo."
+
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
