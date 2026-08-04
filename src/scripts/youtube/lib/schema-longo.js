@@ -529,6 +529,21 @@ export function validarMapa(mapa) {
    * é de UM capítulo só, e qual deles é decisão do mapa — não do modelo, que
    * escolheria "todos" se pudesse.
    */
+  /**
+   * ⚠️ QUAL DOS VALORES É UMA FATURA DE CARTÃO — e por que isto tem de ser declarado.
+   *
+   * A ficha de dívida aplica a taxa do ROTATIVO DO CARTÃO. Aplicá-la ao total de uma
+   * história que junta cartão, empréstimo e dinheiro devido a um amigo seria dizer que
+   * o amigo cobra 16% ao mês. É falso, e é o género de falsidade que ninguém repara e
+   * que destrói um canal de finanças. Por isso o mapa tem de apontar com o dedo QUAL
+   * dos valores é a fatura — e só sobre esse se faz a conta dos juros.
+   * Sem `contaDoCartao`, não há ficha, e o vídeo segue sem falar de juros.
+   */
+  const nomeDoCartao = String(mapa.contaDoCartao || '').trim();
+  if (nomeDoCartao && !valores.some((v) => String(v && v.nome).trim().toLowerCase() === nomeDoCartao.toLowerCase())) {
+    erros.push(`"contaDoCartao" aponta para "${nomeDoCartao}", que não está na lista de valores`);
+  }
+
   const ondeDemo = Number(mapa.capituloDaDemonstracao);
   if (!Number.isInteger(ondeDemo) || ondeDemo < 1 || ondeDemo > NUM_CAPITULOS) {
     erros.push(`"capituloDaDemonstracao" tem de ser 1, 2 ou 3 — o app é demonstrado num capítulo só (veio ${JSON.stringify(mapa.capituloDaDemonstracao)})`);

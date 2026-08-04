@@ -39,6 +39,7 @@ import {
   buildPromptMapa, buildPromptAbertura, buildPromptCapitulo, buildPromptChamada, buildPromptFecho,
 } from '../youtube/roteiro-longo.js';
 import { BORDAO } from '../youtube/lib/schema-short.js';
+import { montarFichaDeDivida } from '../youtube/lib/simulador.js';
 import { buildPromptLeitorBloco, buildPromptLeitorCapitulo } from '../youtube/lib/leitor-longo.js';
 
 let passou = 0;
@@ -147,6 +148,39 @@ const planoDoExemplo = (i) => ({
     `e diz o número-espinha (${EXEMPLO_DE_MAPA.numeroEspinha})`,
     ditosNoAto1.includes(EXEMPLO_DE_MAPA.numeroEspinha),
   );
+}
+
+// ═══ 1-bis. A FICHA DE DÍVIDA ════════════════════════════════════════════════
+console.log('\n1️⃣-bis  A FICHA DE DÍVIDA — a conta que o vídeo vai ensinar');
+console.log('   (é um número financeiro que vai ao ar: a aritmética tem de fechar)\n');
+
+{
+  const f = montarFichaDeDivida(1200);
+  if (!f) {
+    ok('há taxas de dívida colhidas do Banco Central', false, 'corra scripts/update-divida.js');
+  } else {
+    ok(`a ficha é calculada (fatura de ${f.fatura})`, true);
+    ok(`o mínimo mais o que sobra dá a fatura (${f.minimoPago} + ${f.sobra} = ${f.fatura})`, f.minimoPago + f.sobra === f.fatura);
+    ok(`o que sobra mais os juros do mês dá o saldo (${f.sobra} + ${f.jurosDoRotativo} = ${f.saldoParaParcelar})`, Math.abs(f.sobra + f.jurosDoRotativo - f.saldoParaParcelar) <= 1);
+    ok(`as parcelas mais o mínimo dão o total pago (${f.parcela}×${f.meses} + ${f.minimoPago} ≈ ${f.totalPago})`, Math.abs((f.parcela * f.meses) + f.minimoPago - f.totalPago) <= f.meses);
+    ok(`o "a mais" é o total menos a fatura (${f.totalPago} − ${f.fatura} = ${f.aMais})`, f.totalPago - f.fatura === f.aMais);
+    ok('pagar só o mínimo sai MAIS caro que pagar a fatura', f.totalPago > f.fatura);
+    /**
+     * ⚠️ A PROVA QUE IMPEDE UMA MENTIRA FINANCEIRA.
+     * A versão dramática desta história seria "o rotativo rola para sempre e a dívida
+     * dobra". **A lei brasileira proíbe isso desde 2017** (Resolução CMN 4.549: depois
+     * de um mês o banco é obrigado a parcelar). Se um dia alguém trocar o modelo por
+     * uma bola de neve infinita, o total dispara e esta prova acende.
+     */
+    ok(
+      `o modelo NÃO é bola de neve infinita — o total (${f.totalPago}) fica abaixo do dobro da fatura`,
+      f.totalPago < f.fatura * 2.5,
+      'um rotativo infinito daria muito mais — e seria falso desde 2017',
+    );
+    ok('a ficha declara a fonte e o que o número é', /Banco Central/.test(f.texto) && /mediana/.test(f.texto));
+    ok('a ficha NÃO deixa a percentagem entrar nos valores que se podem dizer', !f.permitidos.includes(16) && !f.permitidos.includes(15));
+    console.log(`     ↳ ${f.texto.split('\n').slice(-2, -1)[0]}`);
+  }
 }
 
 // ═══ 2. OS DADOS REAIS ═══════════════════════════════════════════════════════

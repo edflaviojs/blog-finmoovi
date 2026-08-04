@@ -1,0 +1,20 @@
+{
+  "updatedAt": "2026-08-04T07:07:49.399Z",
+  "periodo": "2026-07-14",
+  "fonte": "Banco Central do Brasil — Taxas de juros por instituição financeira",
+  "url": "https://www.bcb.gov.br/estatisticas/reporttxjuros",
+  "medida": "mediana das instituições listadas no período (NÃO é a média ponderada do mercado)",
+  "rotativo": {
+    "modalidade": "Cartão de crédito - rotativo total - Prefixado",
+    "aoMes": 16,
+    "aoAno": 493.7,
+    "instituicoes": 63
+  },
+  "parcelado": {
+    "modalidade": "Cartão de crédito - parcelado - Prefixado",
+    "aoMes": 8.815,
+    "aoAno": 175.485,
+    "instituicoes": 58
+  },
+  "minimoDaFatura": 0.15
+}

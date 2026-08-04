@@ -41,7 +41,7 @@ import { generateText } from '../apis/kie-ai.js';
 import { BORDAO, METAPHORS, METAPHOR_MEANINGS } from './lib/schema-short.js';
 import { MAX_PALAVRAS_CAPA } from './lib/palavras.js';
 import { PERSONA, VICIOS_ESSENCIAIS, O_QUE_PRESERVAR } from './lib/voz-do-canal.js';
-import { montarFichaDeNumeros } from './lib/simulador.js';
+import { montarFichaDeNumeros, montarFichaDeDivida } from './lib/simulador.js';
 import { polirCapitulo, polirBloco } from './lib/leitor-longo.js';
 import {
   ORCAMENTO, MOVIMENTOS, PARTES_DO_CAPITULO, PARTES_POSSIVEIS, NUM_CAPITULOS, MAX_PALAVRAS_TITULO, PALAVRAS_POR_SEGUNDO,
@@ -145,11 +145,12 @@ export const EXEMPLO_DE_MAPA = {
     { nome: 'o streaming que ninguém abria', valor: 39 },
     { nome: 'a academia parada', valor: 90 },
     { nome: 'o jogo do celular', valor: 60 },
-    { nome: 'o total por mês', valor: 189 },
+    { nome: 'a fatura do cartão onde as três caem', valor: 189 },
   ],
   somas: [
-    { de: ['o streaming que ninguém abria', 'a academia parada', 'o jogo do celular'], da: 'o total por mês' },
+    { de: ['o streaming que ninguém abria', 'a academia parada', 'o jogo do celular'], da: 'a fatura do cartão onde as três caem' },
   ],
+  contaDoCartao: 'a fatura do cartão onde as três caem',
   capituloDaDemonstracao: 2,
   capitulos: [
     {
@@ -369,14 +370,17 @@ ${A_HISTORIA}
 2. 🔴 **O NÚMERO-ESPINHA** (\`numeroEspinha\`) — **UM número de dinheiro para o vídeo INTEIRO**. É o número da história, e os três atos são obrigados a dizê-lo. O computador confere nos três.
 3. 🔴 **A LISTA DE VALORES** (\`valores\`) — **TODO o dinheiro que este vídeo pode dizer**, cada um com um nome do dia a dia. Nada fora desta lista pode ser falado em nenhum capítulo, e o computador confere. O número-espinha é um destes valores.
    · **somas** (quando houver) — que valores somam para dar qual. **A conta tem de bater exatamente.** É o narrador a somar à frente de quem ouve.
-4. **capituloDaDemonstracao** — 1, 2 ou 3. **O app aparece num capítulo SÓ**, com peso. Nos outros o nome dele nem é dito. (O costume dos vídeos que prendem: mostrar o problema antes da ferramenta.)
-5. **${NUM_CAPITULOS} CAPÍTULOS**, e são três ATOS da mesma história:
+4. 🧮 **contaDoCartao** — o NOME (da lista de valores) da conta que é uma **fatura de cartão de crédito**. Se a história não tiver nenhuma, escreva null.
+   ⚠️ **Isto não é um detalhe.** É sobre essa conta, e só sobre ela, que o computador calcula os juros REAIS do cartão com as taxas do Banco Central. Apontar o dinheiro devido a um amigo como se fosse cartão seria dizer que o amigo cobra juros de banco.
+   💡 **A história fica muito mais forte se uma das contas for do cartão** — é aí que estão os juros que ninguém entende, e é isso que o ato 2 vai poder ensinar.
+5. **capituloDaDemonstracao** — 1, 2 ou 3. **O app aparece num capítulo SÓ**, com peso. Nos outros o nome dele nem é dito. (O costume dos vídeos que prendem: mostrar o problema antes da ferramenta.)
+6. **${NUM_CAPITULOS} CAPÍTULOS**, e são três ATOS da mesma história:
    · **titulo** — no máximo ${MAX_PALAVRAS_TITULO} palavras, e ele PROMETE o que o ato entrega. ⛔ Proibido "Introdução", "Conclusão", "Parte 1", "Resumo".
    · **oQueAcrescenta** — o facto NOVO que este ato traz sobre o MESMO dinheiro. Se um ato não acrescenta nada, o vídeo dá voltas.
    · **oQueFicaEmAberto** — a ponta que este ato deixa no ar para o seguinte agarrar.
-6. **respostaDaPromessa** — a lição do fim, que responde ao que a promessa prometeu. Tem de falar da MESMA coisa.
-7. **lacoAberto** — a provocação final, DENTRO deste tema. ⛔ Proibido prometer "no próximo vídeo" ou "semana que vem": não há fila de vídeos, e prometer o que não existe é mentira.
-8. **fioCondutor** — a imagem da capa, uma destas: ${menuDeImagens(proibidas)}.
+7. **respostaDaPromessa** — a lição do fim, que responde ao que a promessa prometeu. Tem de falar da MESMA coisa.
+8. **lacoAberto** — a provocação final, DENTRO deste tema. ⛔ Proibido prometer "no próximo vídeo" ou "semana que vem": não há fila de vídeos, e prometer o que não existe é mentira.
+9. **fioCondutor** — a imagem da capa, uma destas: ${menuDeImagens(proibidas)}.
 
 ⛔ **O ERRO QUE MATOU O PRIMEIRO VÍDEO DESTE CANAL, para não o repetir:** os três capítulos tinham números diferentes e acabaram a contar histórias de **três pessoas diferentes** — no primeiro a dívida eram quatrocentos e cinquenta, no segundo mil duzentos e oitenta, no terceiro trezentos. Quem via sentia que o vídeo dava voltas. É por isso que agora há um número só.
 
@@ -396,6 +400,7 @@ Responda APENAS com JSON válido, sem markdown, exatamente com estes campos:
   "numeroEspinha": 0,
   "valores": [ { "nome": "...", "valor": 0 } ],
   "somas": [ { "de": ["...", "..."], "da": "..." } ],
+  "contaDoCartao": "...",
   "capituloDaDemonstracao": 2,
   "capitulos": [
     { "titulo": "...", "oQueAcrescenta": "...", "oQueFicaEmAberto": "..." },
@@ -480,6 +485,7 @@ Responda APENAS com JSON válido, sem markdown:
 
 export function buildPromptCapitulo(t, mapa, indice, ancora) {
   const plano = mapa.capitulos[indice];
+  const ficha = mapa.fichaDeDivida || null;
   const seguinte = mapa.capitulos[indice + 1];
   const temDemo = Number(mapa.capituloDaDemonstracao) === indice + 1;
   const valores = (mapa.valores || []).map((v) => `${v.valor} (${v.nome})`).join(' · ');
@@ -511,7 +517,16 @@ A PROMESSA DO VÍDEO: "${mapa.promessa}"
      Um valor que não esteja nesta lista é de outra história, e o computador reprova.${somas ? `\n   · **A conta que tem de bater:** ${somas}. Se disser as parcelas, diga o total, para quem ouve somar junto.` : ''}
    · **ESTE é o ATO ${indice + 1} — ${MOVIMENTOS[indice].nome}:** ${MOVIMENTOS[indice].faz}
      ⛔ **Aqui é PROIBIDO ${MOVIMENTOS[indice].proibido}**
-   · **O que ESTE ato acrescenta à história:** ${plano.oQueAcrescenta}${indice > 0 ? `
+   · **O que ESTE ato acrescenta à história:** ${plano.oQueAcrescenta}${ficha && indice === 1 ? `
+
+🧮 ════════ A CONTA JÁ ESTÁ FEITA — E É ESTE O ENSINAMENTO DO VÍDEO ════════
+Estes números foram calculados por computador com as taxas REAIS do Banco Central. **Não refaça nenhuma conta, não arredonde para outro valor, não invente um número melhor.**
+
+${ficha.texto}
+
+🔴 **É ISTO que o ato da ARMADILHA tem de ensinar**, contado como história, na primeira pessoa: o que acontece a quem paga só o mínimo da fatura. Escolha os números que fazem doer e diga-os por extenso — **não despeje a tabela toda**, que ninguém guarda cinco valores de cabeça. Dois ou três chegam, e o mais forte costuma ser **quanto se paga a mais no fim**.
+⛔ **NÃO diga percentagens nem taxas.** O que a pessoa entende é o REAL, não o "por cento". Diga "de mil e vinte viraram mil cento e oitenta e três num mês", nunca "dezasseis por cento ao mês".
+⛔ **NÃO diga que a dívida rola para sempre no rotativo.** Não rola: desde 2017 o banco é OBRIGADO a parcelar depois de um mês, e é isso que a conta acima já leva em conta. Assustar com uma coisa que a lei proíbe é perder a credibilidade de vez.` : ''}${indice > 0 ? `
    · ⛔ **O ato anterior JÁ ENTREGOU isto, e não se repete:** ${mapa.capitulos[indice - 1].oQueAcrescenta}` : ''}
    · **E deixa no ar:** ${plano.oQueFicaEmAberto}
 ${seguinte ? `O ato seguinte chama-se "${seguinte.titulo}" — o seu re-gancho aponta para lá SEM dizer o nome dele.` : 'Este é o último ato. O re-gancho entrega a conversa ao fim do vídeo.'}
@@ -783,9 +798,34 @@ const falaDoCapitulo = (c) => PARTES_POSSIVEIS.map((p) => String((c && c[p]) || 
 const planoDoCapitulo = (mapa, i) => ({
   ...(mapa.capitulos[i] || {}),
   numeroEspinha: mapa.numeroEspinha,
-  valoresPermitidos: (mapa.valores || []).map((v) => Number(v && v.valor)).filter(Number.isFinite),
+  /**
+   * ⚠️ A LISTA DO QUE SE PODE DIZER JUNTA DUAS FONTES, e as duas são precisas:
+   *  · os valores da HISTÓRIA, que o mapa inventou (a fatura, o empréstimo, o amigo);
+   *  · os valores da FICHA DE DÍVIDA, que o computador CALCULOU com as taxas do
+   *    Banco Central (os juros de um mês, a prestação, o total no fim).
+   * Sem a segunda metade, o ato da armadilha tinha o número calculado à frente e a
+   * trava reprovava-o por o dizer — o defeito nº1 desta casa, outra vez.
+   */
+  valoresPermitidos: [
+    ...(mapa.valores || []).map((v) => Number(v && v.valor)).filter(Number.isFinite),
+    ...((mapa.fichaDeDivida && mapa.fichaDeDivida.permitidos) || []),
+  ],
   temDemonstracao: Number(mapa.capituloDaDemonstracao) === i + 1,
 });
+
+/**
+ * A FICHA DE DÍVIDA DESTE VÍDEO — calculada DEPOIS do mapa, a partir da conta que o
+ * próprio mapa apontou como sendo a fatura do cartão. Devolve null (e o vídeo segue
+ * sem juros) quando não há conta de cartão na história ou quando as taxas do Banco
+ * Central ainda não foram colhidas.
+ */
+function fichaDoMapa(mapa) {
+  const nome = String(mapa.contaDoCartao || '').trim();
+  if (!nome) return null;
+  const valor = (mapa.valores || []).find((v) => String(v && v.nome).trim().toLowerCase() === nome.toLowerCase());
+  if (!valor) return null;
+  return montarFichaDeDivida(Number(valor.valor));
+}
 
 /**
  * ═══ O CADERNO — cada bloco aprovado é gravado no instante em que passa ═══
@@ -846,6 +886,20 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
   });
   console.log(`   fim: "${mapa.respostaDaPromessa}"`);
   console.log(`   imagem da capa: ${mapa.fioCondutor}`);
+
+  /**
+   * 🧮 A FICHA DE DÍVIDA — calculada aqui, com as taxas do Banco Central, e daqui em
+   * diante é ela que manda nos números dos juros. É a mesma regra de sempre neste
+   * projeto: **o que se calcula não se pede ao modelo.** Sem ela, o ato da armadilha
+   * só conseguia ensinar organização (foi o que o dono viu e reprovou).
+   */
+  mapa.fichaDeDivida = fichaDoMapa(mapa);
+  if (mapa.fichaDeDivida) {
+    console.log('\n🧮 FICHA DE DÍVIDA (calculada com as taxas do Banco Central):');
+    for (const linha of mapa.fichaDeDivida.texto.split('\n')) console.log(`   ${linha}`);
+  } else {
+    console.log('\n🧮 sem ficha de dívida — a história não tem uma fatura de cartão, ou as taxas ainda não foram colhidas (scripts/update-divida.js)');
+  }
 
   // ── ANDAR 1 ────────────────────────────────────────────────────────────────
   console.log('\n✍️  ANDAR 1 — OS BLOCOS, UM DE CADA VEZ (ancorados)\n');
