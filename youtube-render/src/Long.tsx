@@ -38,7 +38,7 @@ import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 // ── as telas que nascem do texto (04/08/2026) ────────────────────────────────
 import {
   Etiqueta, CartaoDeNumero, CartaoDaConta, TelaDoApp, CartaoDeFrase, Metafora, PalavrasNaTela,
-  CartaoDeCapitulo, CARTAO_CAPITULO_FRAMES, Ilustracao, MaoQueClica, momentoDoClique,
+  CartaoDeCapitulo, CARTAO_CAPITULO_FRAMES, Ilustracao, Foto, MaoQueClica, momentoDoClique,
   atrasoDaUltimaLinha, IconesDaCena,
 } from './longo/telas';
 import type { LinhaDaConta } from './longo/telas';
@@ -72,9 +72,12 @@ const BROLL: Record<string, React.FC> = {
  * valores do guião. Esta composição não inventa nem calcula nenhum.
  */
 export type LongVisual = {
-  tipo: 'numero' | 'conta' | 'app' | 'frase' | 'metafora' | 'ilustracao' | 'palavras' | 'broll';
+  tipo: 'numero' | 'conta' | 'app' | 'frase' | 'metafora' | 'ilustracao' | 'foto' | 'palavras' | 'broll';
   /** qual das 32 metáforas animadas do render do Short entra nesta cena */
   figura?: string;
+  /** a fotografia (caminho dentro de `public/`) e o passeio que ela faz */
+  ficheiro?: string;
+  movimento?: string;
   valor?: number;
   rotulo?: string;
   passo?: number;
@@ -417,6 +420,8 @@ const SomDaFamilia: React.FC<{ visual?: LongVisual; frames: number }> = ({ visua
       return <SomDoMomento ficheiro={SOM.estalo} volume={0.24} />;
     case 'metafora':
     case 'ilustracao':
+    // a fotografia entra com o mesmo deslize das outras imagens grandes
+    case 'foto':
       return <SomDoMomento ficheiro={SOM.deslize} volume={0.22} />;
     default:
       return null;
@@ -463,6 +468,7 @@ const CenaLonga: React.FC<{
         return <CartaoDeFrase texto={v.texto ?? ''} etiquetaTexto={v.etiquetaTexto} variante={String(v.variante ?? '')} frames={frames} />;
       case 'metafora': return <Metafora fio={v.fio} estagio={v.estagio} frames={frames} />;
       case 'ilustracao': return <Ilustracao figura={v.figura || ''} frames={frames} />;
+      case 'foto': return <Foto ficheiro={v.ficheiro || ''} movimento={v.movimento} frames={frames} />;
       case 'broll': return <CenaDeBroll comp={v.comp} brollFrames={v.brollFrames} />;
       default: return <PalavrasNaTela narration={cena.narration} frames={frames} words={palavras} variante={Number(v.variante ?? 0)} pular={pular} />;
     }

@@ -23,6 +23,7 @@
 
 import { synthesizeSpeech, transcribeWords, pickProvider, getTtsProviders, warmUpTts } from './lib/tts-client.js';
 import { planoDeLeitura } from './lib/prosodia.js';
+import { tratarVoz } from './lib/tratamento-de-voz.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync, readdirSync, mkdtempSync, rmSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -393,6 +394,9 @@ export function ligarIntencaoDaVoz(ligar) {
   INTENCAO_LIGADA = Boolean(ligar);
 }
 
+/** O tratamento de som da voz. Por omissão DESLIGADO — quem o liga é o formato longo. */
+let TRATAR_A_VOZ = false;
+
 /**
  * 🔴 APARA O SILÊNCIO DAS PONTAS DE CADA PEDAÇO — sem isto, a intenção sai ao contrário.
  *
@@ -635,6 +639,17 @@ async function main() {
   const INTENCAO_APROVADA_PELO_DONO = false;
   ligarIntencaoDaVoz(INTENCAO_APROVADA_PELO_DONO && script.formato === 'longo');
 
+  /**
+   * ═══ ✅ O TRATAMENTO DE SOM DA VOZ (04/08/2026) ═══
+   * O que a rádio faz antes de pôr alguém no ar. **Não toca no ritmo** — a prova é a
+   * duração: as três amostras que o dono ouviu duram 22,440 s as três, ao milésimo.
+   * Ele ouviu-as lado a lado e escolheu a "quente". Ver `lib/tratamento-de-voz.js`.
+   * ⚠️ Liga-se pelo FORMATO, tal como a intenção se ligava: o Short diário nunca o
+   * apanha por acidente. Levá-lo ao Short é decisão dele.
+   */
+  TRATAR_A_VOZ = script.formato === 'longo';
+  if (TRATAR_A_VOZ) console.log('   (voz com tratamento de som — o mesmo da amostra "quente")\n');
+
   const provider = pickProvider();
   if (!provider) throw new Error('nenhum provedor de TTS disponível');
   // Cadeia de provedores disponíveis nesta execução (edge → piper → azure), só p/
@@ -703,7 +718,14 @@ async function main() {
     // áudio validado — persiste + segue p/ alinhamento
     voiceUsed = voice;
     const audioName = `scene-${id}.${ext}`;
-    writeFileSync(join(audioDir, audioName), audio);
+    /**
+     * ⚠️ O TRATAMENTO ENTRA AQUI, **DEPOIS** DE O WHISPER TER MEDIDO — e é de propósito.
+     * O medidor trabalha melhor sobre o som cru, e o tratamento **não muda um único
+     * milissegundo** (provado: as três amostras que foram ao Desktop do dono duram
+     * 22,440 s as três). Logo, os tempos das palavras continuam a valer.
+     * Ver `lib/tratamento-de-voz.js`. Só no vídeo longo — nunca no Short diário.
+     */
+    writeFileSync(join(audioDir, audioName), TRATAR_A_VOZ ? tratarVoz(audio) : audio);
 
     // 2) timestamps reais + 3) alinhamento com o roteiro
     const durationSec = +(speechEnd + TAIL_PAD).toFixed(3);
@@ -764,7 +786,9 @@ async function main() {
         if (existsSync(oldPath)) { try { unlinkSync(oldPath); } catch { /* melhor esforço */ } }
 
         const audioName = `scene-${outScene.id}.${ext}`;
-        writeFileSync(join(audioDir, audioName), audio);
+        // ⚠️ a re-síntese também leva o tratamento, senão esta cena soaria diferente
+        // de todas as outras — e seria a única, o que se ouve ainda mais.
+        writeFileSync(join(audioDir, audioName), TRATAR_A_VOZ ? tratarVoz(audio) : audio);
 
         outScene.audioFile = `audio/${slug}/${audioName}`;
         outScene.durationSec = +(speechEnd + TAIL_PAD).toFixed(3);

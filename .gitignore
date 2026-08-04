@@ -36,5 +36,7 @@ src/scripts/youtube/output/*.caderno.json
 src/scripts/youtube/output/*.descricao.txt
 youtube-render/out/
 
-# as imagens da Manus sao pesadas (4-6 MB cada) e refazem-se com um comando
-youtube-render/public/manus/
+# As imagens da Manus vem em PNG de 4-6 MB. O que o video usa e a versao a 1920x1080
+# em JPEG (~250 KB), e ESSA vai para o repositorio — senao um clone limpo nao
+# consegue renderizar o video. Os PNG originais ficam de fora.
+youtube-render/public/manus/**/*.png

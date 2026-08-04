@@ -21,7 +21,7 @@
  */
 
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { BRAND, DISPLAY, BODY, gradientText } from '../theme';
 import { panel, Pop3D } from '../broll/card3d-kit';
 import { HeroCard } from '../CreditCards3D';
@@ -29,7 +29,7 @@ import { CoreografiaDaCapa } from '../capas';
 // ⚠️ IMPORTAR NÃO É TOCAR. O `scenes.tsx` é o render do Short, que publica todos os
 // dias, e não leva uma linha por causa disto. O que se traz de lá são as **32 metáforas
 // animadas** que ele já tem desenhadas e que o vídeo longo nunca usou — ver `Ilustracao`.
-import { ShotMetaphor, clickPressOffset } from '../scenes';
+import { ShotMetaphor, clickPressOffset, Watermark } from '../scenes';
 import { PALCO_W, PALCO_H } from '../capa';
 import { SHOT_ICONS } from '../icons-fx';
 import { activeIndex, wordTimingsFromReal, layoutWords } from '../captions';
@@ -756,6 +756,104 @@ export const Ilustracao: React.FC<{ figura: string; frames: number }> = ({ figur
           </div>
         </div>
       </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// ─── 9-bis. as fotografias ───────────────────────────────────────────────────
+/**
+ * 📸 A FOTOGRAFIA, COM MOVIMENTO — pedido do dono (04/08/2026, fim):
+ * *"quero que entrem as 3 imagens no vídeo, mas quero que elas fiquem com movimento,
+ * uma pode ser um zoom out, outra zoom in ou outro qualquer."*
+ *
+ * ⚠️ **A SANGRAR O ECRÃ, e é o contrário do que se fez às ilustrações.** As 32
+ * ilustrações são vinhetas de ~900×520 desenhadas para o vertical: esticadas viram
+ * fundo (§37.5, a parede de amarelo). Estas são fotografias de **2560×1440 feitas em
+ * 16:9 para este vídeo** — emoldurá-las seria desperdiçar a única coisa que elas têm
+ * de melhor, que é encherem o ecrã.
+ *
+ * ⚠️ **E O MOVIMENTO NUNCA MOSTRA BORDO.** Todos os passeios partem de uma escala
+ * MAIOR do que 1 e nunca descem abaixo dela — um zoom out honesto acabaria a mostrar
+ * a moldura preta à volta. Aqui "afastar" é ir de 1,14 para 1,03: lê-se como
+ * afastamento e continua a encher o ecrã.
+ *
+ * ⚠️ **A LEGENDA CONTINUA POR CIMA**, como em qualquer outra cena — por isso há um véu
+ * escuro em baixo: sobre uma fotografia clara, texto branco sem véu não se lê.
+ */
+/**
+ * ⚠️ 🔴 O CARTAZ NÃO PODE SER CORTADO, E ISSO SÓ SE VIU NO FOTOGRAMA.
+ *
+ * A 1ª versão tratava as três fotografias por igual: a encher o ecrã, com aproximação.
+ * Renderizado, o cartaz do juro apareceu **com o "AO MÊS" cortado em cima e o «Fonte:
+ * Banco Central do Brasil» cortado em baixo**.
+ *
+ * > Cortar a fonte de um número é pior do que cortar um pedaço de imagem: **é o que
+ * > torna aquele 16% uma afirmação verificável em vez de um número inventado.** Era a
+ * > única linha da imagem que não podia desaparecer, e foi a primeira a ir.
+ *
+ * Por isso há dois modos, e o modo não é enfeite:
+ *   · `cheia`  — fotografia. Enche o ecrã, e o passeio nunca desce abaixo de 1 (um zoom
+ *                out honesto acabaria a mostrar a moldura preta à volta);
+ *   · `cartaz` — imagem com TEXTO. Aparece **inteira**, sempre abaixo de 1, levantada
+ *                para o texto dela não brigar com a legenda que corre por baixo.
+ */
+const PASSEIOS: Record<string, { de: number; ate: number; x?: [number, number]; y?: [number, number]; modo?: 'cheia' | 'cartaz' }> = {
+  // aproxima devagar, e desce um nada — o olhar entra na imagem
+  aproxima: { de: 1.04, ate: 1.16, y: [-10, 14], modo: 'cheia' },
+  // afasta, mas sem nunca chegar ao bordo
+  afasta: { de: 1.16, ate: 1.04, modo: 'cheia' },
+  // o mais lento dos três, com uma deriva lateral: é o plano do fecho
+  'aproxima-lento': { de: 1.05, ate: 1.13, x: [18, -18], modo: 'cheia' },
+  // o cartaz: inteiro, sempre, com uma aproximação que nunca chega a cortar
+  cartaz: { de: 0.78, ate: 0.85, modo: 'cartaz' },
+};
+
+/** Quanto o cartaz sobe, para o texto dele ficar acima da faixa da legenda. */
+const CARTAZ_SOBE = 82;
+
+export const Foto: React.FC<{ ficheiro: string; movimento?: string; frames: number }> = ({ ficheiro, movimento = 'aproxima', frames }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const entra = spring({ frame, fps, config: { damping: 20, mass: 0.9 } });
+  const p = PASSEIOS[movimento] || PASSEIOS.aproxima;
+  const cartaz = p.modo === 'cartaz';
+  const fim = Math.max(1, frames);
+  const escala = interpolate(frame, [0, fim], [p.de, p.ate], { extrapolateRight: 'clamp' });
+  const dx = p.x ? interpolate(frame, [0, fim], p.x, { extrapolateRight: 'clamp' }) : 0;
+  const dy = (p.y ? interpolate(frame, [0, fim], p.y, { extrapolateRight: 'clamp' }) : 0) - (cartaz ? CARTAZ_SOBE : 0);
+
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden', backgroundColor: BRAND.bg }}>
+      {/* no modo cartaz há fundo à vista, e ele é do canal — não um preto qualquer */}
+      {cartaz ? <FundoAbstrato variante={1} frames={frames} /> : null}
+      <AbsoluteFill style={{ opacity: entra }}>
+        <img
+          src={staticFile(ficheiro)}
+          alt=""
+          style={{
+            width: '100%', height: '100%',
+            objectFit: cartaz ? 'contain' : 'cover',
+            transform: `scale(${escala}) translate(${dx}px, ${dy}px)`,
+            filter: cartaz ? 'drop-shadow(0 30px 70px rgba(0,0,0,0.65))' : undefined,
+          }}
+        />
+      </AbsoluteFill>
+      {/* o véu de baixo — sem ele a legenda branca desaparece sobre a parte clara */}
+      <AbsoluteFill style={{
+        background: `linear-gradient(to top, ${BRAND.bg}f2 0%, ${BRAND.bg}b0 ${FUNDO_LIVRE - 40}px, transparent ${FUNDO_LIVRE + 170}px)`,
+      }} />
+      {/* uma sombra suave em cima, para a assinatura do canal não competir com a foto */}
+      <AbsoluteFill style={{
+        background: `linear-gradient(to bottom, ${BRAND.bg}cc 0%, transparent 190px)`,
+      }} />
+      {/**
+       * ⚠️ A MARCA DO CANAL, OUTRA VEZ POR CIMA — e isto também só se viu no fotograma.
+       * O `Long.tsx` desenha a assinatura ANTES das cenas, portanto uma imagem que enche
+       * o ecrã tapa-a. Em três cenas de trinta, o vídeo ficava sem marca nenhuma, e é
+       * justamente nas três que alguém mais provavelmente recorta para partilhar.
+       * Não há risco de sair a dobrar: a de baixo está tapada pela fotografia.
+       */}
+      <Watermark />
     </AbsoluteFill>
   );
 };

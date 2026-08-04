@@ -63,8 +63,37 @@ STRICT RULES — no human figures, no faces, no hands unless explicitly asked fo
 
 Generate the image and ATTACH the final PNG file to your reply. Do not ask me any questions — if something is ambiguous, choose the boldest option.`;
 
+/**
+ * ═══ 🎨 O QUE FALTAVA NA 1ª CAPA, E O DONO VIU ANTES DE MIM ═══
+ *
+ * *"Achei que faltou um pouco das cores do nosso canal, ou será que isso não tem nada a
+ * ver?"* — **tem tudo a ver, e ele tem razão.**
+ *
+ * A 1ª capa é vermelha à esquerda e verde à direita, e isso está certo: é o vermelho e o
+ * verde que contam a história do antes e do depois num relance. **O que faltava era
+ * outra coisa: nada naquela imagem dizia FinMoovi.** Sem a marca, sem o fundo do canal,
+ * sem a faixa diagonal, aquela capa podia ser de qualquer canal de finanças do mundo — e
+ * um canal que quer audiência precisa de ser **reconhecido na lista** antes de ser lido.
+ *
+ * Portanto o conserto não é tirar o vermelho e o verde. É acrescentar o que nos
+ * identifica: o fundo quase-preto azulado do canal, a faixa diagonal, o gradiente
+ * ciano→violeta→magenta e a assinatura no canto.
+ *
+ * Há duas maneiras de o fazer, e a diferença entre elas é de gosto — por isso são duas
+ * variantes e quem escolhe é ele:
+ *   · `marca`  — o vermelho/verde continua a mandar, e a marca do canal entra por cima;
+ *   · `canal`  — as cores do canal mandam, e o vermelho/verde fica só nas setas e selos.
+ */
+const ASSINATURA_DO_CANAL = `
+BRAND SIGNATURE — this must read as a FinMoovi thumbnail at a glance:
+· the background is the channel's near-black blue (#0d1117) with darker panels (#161b22), never plain black;
+· a wide diagonal band sweeps from the top-right corner down to the left, filled with the channel gradient (#22d3ee cyan → #8b5cf6 violet → #d6219c magenta), semi-transparent over the scene;
+· faint concentric rings and a fine dot grid in the darkness, in the same violet;
+· in the TOP-LEFT corner, a small clean wordmark in a modern bold sans-serif reading exactly "FinMoovi", where "Fin" is white and "Moovi" is filled with the cyan-to-magenta gradient, preceded by a tiny rising-arrow spark icon in cyan and magenta.`;
+
 /** A CAPA. É o pedido do dono, adaptado: sem pessoa, antes/depois, vermelho contra verde. */
-function promptDaCapa({ titulo, aMais }) {
+function promptDaCapa({ titulo, aMais, variante = 'marca' }) {
+  if (variante === 'canal') return promptDaCapaDoCanal({ titulo, aMais });
   return `An ultra-high-definition 16K resolution cinematic YouTube thumbnail, 16:9 aspect ratio, 1280x720 pixels minimum, designed for maximum click-through rate on mobile.
 
 COMPOSITION — a dramatic BEFORE / AFTER split, divided by a thin diagonal beam of light running from top-right to bottom-left, glowing with a cyan-to-violet-to-magenta gradient (${PALETA.ciano} → ${PALETA.violeta} → ${PALETA.magenta}).
@@ -78,6 +107,31 @@ BACKGROUND — near-black (${PALETA.fundo}) with subtle darker panels (${PALETA.
 TYPOGRAPHY — bold, heavy, minimalist condensed sans-serif, ALL CAPS, across the upper third, pure white with a thin red-to-green gradient underline, reading exactly: "${titulo}"
 
 BADGES — a small burning red badge on the left half reading exactly "R$ ${aMais} A MAIS"; a small glowing green badge on the right half reading exactly "3 PASSOS".
+${ASSINATURA_DO_CANAL}
+${REGRAS_FIXAS}`;
+}
+
+/**
+ * A VARIANTE EM QUE AS CORES DO CANAL MANDAM.
+ * O vermelho e o verde ficam só onde carregam sentido — as duas setas e os dois selos —
+ * e tudo o resto é a paleta do canal. É a capa mais "nossa" das duas, e a pergunta que
+ * ela põe ao ouvido do dono é se continua a gritar o suficiente para ganhar o clique.
+ */
+function promptDaCapaDoCanal({ titulo, aMais }) {
+  return `An ultra-high-definition 16K resolution cinematic YouTube thumbnail, 16:9 aspect ratio, 1280x720 pixels minimum, designed for maximum click-through rate on mobile. Dark premium tech aesthetic, glassmorphism, neon edge lighting.
+
+COMPOSITION — a BEFORE / AFTER split told almost entirely in the channel's own colours, divided by a bright vertical shard of light in the cyan-to-magenta gradient (${PALETA.ciano} → ${PALETA.violeta} → ${PALETA.magenta}) that flares where it meets the floor.
+
+LEFT HALF, THE BEFORE — a chaotic tumbling stack of credit-card bills and glass cards rendered in cold dark violet and deep indigo, dissolving into shadow, lit from below by a single angry red (${PALETA.vermelho}) glow. One heavy jagged RED downward arrow cutting through them — the only strongly red object on this side.
+
+RIGHT HALF, THE AFTER — the same bills, now one clean orderly stack on a glossy reflective surface, rendered in the channel's cyan and violet neon, calm and precise. One bright GREEN (${PALETA.verde}) upward arrow rising out of the stack — the only strongly green object on this side.
+
+BACKGROUND — the channel's near-black blue (${PALETA.fundo}) with darker glass panels (${PALETA.painel}), concentric rings, a fine dot grid, and volumetric violet haze. Cinematic depth of field.
+
+TYPOGRAPHY — bold heavy condensed sans-serif, ALL CAPS, across the upper third, in pure white with the last word filled by the cyan-to-magenta gradient, reading exactly: "${titulo}"
+
+BADGES — a compact glass badge outlined in red on the left reading exactly "R$ ${aMais} A MAIS"; a compact glass badge outlined in green on the right reading exactly "3 PASSOS".
+${ASSINATURA_DO_CANAL}
 ${REGRAS_FIXAS}`;
 }
 
@@ -144,7 +198,12 @@ async function main() {
     const titulo = 'SAIR DO VERMELHO';
     const aMais = ficha?.aMais;
     if (!aMais) throw new Error('não encontrei o valor "a mais" no caderno — não invento números na capa');
-    trabalhos.push({ ficheiro: 'capa', onde: 'a miniatura do YouTube', prompt: promptDaCapa({ titulo, aMais }) });
+    const variante = args.variante && args.variante !== true ? String(args.variante) : 'marca';
+    trabalhos.push({
+      ficheiro: variante === 'marca' ? 'capa' : `capa-${variante}`,
+      onde: `a miniatura do YouTube (variante "${variante}")`,
+      prompt: promptDaCapa({ titulo, aMais, variante }),
+    });
   }
   if (so !== 'capa') {
     const juro = ficha?.taxas?.rotativoAoMes;
@@ -178,9 +237,29 @@ async function main() {
       }
       for (const [i, im] of imagens.entries()) {
         const ext = (im.filename || '').split('.').pop() || 'png';
-        const nome = imagens.length > 1 ? `${t.ficheiro}-${i + 1}.${ext}` : `${t.ficheiro}.${ext}`;
+        const base = imagens.length > 1 ? `${t.ficheiro}-${i + 1}` : t.ficheiro;
+        const nome = `${base}.${ext}`;
         const bytes = await descarregar(im.url, join(destino, nome), fs);
         console.log(`      ✅ ${nome} (${Math.round(bytes / 1024)} KB)`);
+        /**
+         * ⚠️ A VERSÃO QUE O VÍDEO USA É OUTRA, e por uma razão de arrumação: a Manus
+         * devolve PNG de 2560×1440 com 4 a 6 MB. O vídeo é 1920×1080, portanto **os
+         * pixels a mais não aparecem em lado nenhum** — só engordavam o repositório
+         * cinco vezes mais do que o maior ficheiro que lá está hoje (1,2 MB).
+         * Em JPEG, à medida certa, são ~250 KB e **essa** vai para o repositório: sem
+         * ela, um clone limpo não conseguia renderizar o vídeo.
+         */
+        if (t.ficheiro.startsWith('imagem-')) {
+          try {
+            const paraOVideo = join(destino, `${base}.jpg`);
+            execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', join(destino, nome),
+              '-vf', 'scale=1920:1080:flags=lanczos', '-q:v', '3', paraOVideo], { stdio: 'ignore' });
+            const kb = Math.round(fs.statSync(paraOVideo).size / 1024);
+            console.log(`         → ${base}.jpg (${kb} KB) — é esta que o vídeo usa`);
+          } catch (err) {
+            console.log(`         ⚠️ não deu para fazer a versão do vídeo (${err.message.split('\n')[0]})`);
+          }
+        }
       }
     } catch (err) {
       console.log(`      ❌ ${err.message.split('\n')[0]}`);

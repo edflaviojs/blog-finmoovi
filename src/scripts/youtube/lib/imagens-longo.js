@@ -176,6 +176,70 @@ const ILUSTRACOES = [
 const TETO_DE_ILUSTRACOES = 6;
 const INTERVALO_DA_ILUSTRACAO = 3;
 
+/**
+ * ═══ 📸 AS TRÊS FOTOGRAFIAS DA MANUS (04/08/2026, fim) ═══
+ *
+ * O dono: *"quero que entrem as 3 imagens no vídeo, mas quero que elas fiquem com
+ * movimento — uma pode ser um zoom out, outra zoom in ou outro qualquer"*.
+ *
+ * ⚠️ **ESTA TABELA TEM TRÊS LINHAS E VAI CONTINUAR A TER.** Não é um catálogo que
+ * cresce: são três imagens feitas à medida deste vídeo, cada uma para UMA cena. Quando
+ * o próximo vídeo longo for feito, geram-se as dele — uma fotografia de outra história
+ * no meio desta é o defeito nº 1 do dono outra vez (§36.2).
+ *
+ * ⚠️ **AS PISTAS SAÍRAM DE LER O GUIÃO, não de imaginar como as pessoas falam.** É a
+ * lição do `ralo`: a minha primeira lista de ilustrações, escrita de cabeça, não
+ * apanhava a frase que ABRE este vídeo.
+ *   · o susto → *"eu sentei com o celular na mão e resolvi olhar a fatura com calma"*
+ *   · o número → *"o valor não parava de crescer"* (é a cena do juro)
+ *   · a virada → *"consegui pagar a conta sem desistir no meio do caminho"*
+ */
+const FOTOS = [
+  {
+    ficheiro: 'manus/sair-do-vermelho/imagem-1-o-susto.jpg',
+    nome: 'o susto',
+    movimento: 'aproxima',
+    pista: /celular na mao|olhar a fatura com calma|sentei com o celular/,
+  },
+  {
+    ficheiro: 'manus/sair-do-vermelho/imagem-2-o-numero.jpg',
+    nome: 'o juro do rotativo',
+    movimento: 'cartaz',
+    pista: /nao parava de crescer|valor nao parava|nao para de crescer/,
+  },
+  {
+    ficheiro: 'manus/sair-do-vermelho/imagem-3-a-virada.jpg',
+    nome: 'a virada',
+    movimento: 'aproxima-lento',
+    pista: /sem desistir no meio do caminho|foi a primeira vez/,
+  },
+];
+
+/** Quantas cenas de distância uma fotografia guarda de outra imagem grande. */
+const INTERVALO_DA_FOTO = 2;
+
+/**
+ * Escolhe onde entram as fotografias — **antes** das ilustrações, e a ordem importa.
+ *
+ * São três e são específicas: se as ilustrações escolhessem primeiro, podiam levar
+ * justamente a cena que a fotografia descreve, e a fotografia ficava sem casa. As
+ * ilustrações são catorze pistas para seis lugares — têm por onde escolher; estas não.
+ */
+export function escolherLugaresDaFoto(cenas, ocupados = new Set()) {
+  const lugares = new Map();
+  const escolhidos = [];
+  cenas.forEach((c, i) => {
+    if (ocupados.has(i)) return;
+    if (escolhidos.some((j) => Math.abs(i - j) < INTERVALO_DA_FOTO)) return;
+    const texto = semAcento(c.narration);
+    const achada = FOTOS.find((f) => ![...lugares.values()].includes(f) && f.pista.test(texto));
+    if (!achada) return;
+    escolhidos.push(i);
+    lugares.set(i, achada);
+  });
+  return lugares;
+}
+
 /** Os nomes por que se apresenta cada valor da ficha de dívida quando ele vai ao ecrã. */
 const ROTULOS_DA_FICHA = {
   fatura: 'a fatura do cartão',
@@ -320,7 +384,7 @@ export function escolherLugaresDaMetafora(cenas, fio) {
  * queixava, porque nada estava errado, só desperdiçado.
  * Agora recebe a lista do que já está tomado e escolhe apenas entre o que sobra.
  */
-export function escolherLugaresDaIlustracao(cenas, lugaresDaMetafora = new Map(), fio = null, ocupados = new Set()) {
+export function escolherLugaresDaIlustracao(cenas, lugaresDaMetafora = new Map(), fio = null, ocupados = new Set(), lugaresDaFoto = new Map()) {
   const lugares = new Map();
   const usadas = new Set(fio ? [fio] : []);
   const escolhidos = [];
@@ -329,7 +393,8 @@ export function escolherLugaresDaIlustracao(cenas, lugaresDaMetafora = new Map()
   // desenhos"; uma ilustração ao lado do ator lê-se como duas coisas diferentes, que é o
   // que se quer. Com 3 dos dois lados, este guião só arranjava lugar para duas.
   const cabe = (i) => escolhidos.every((j) => Math.abs(i - j) >= INTERVALO_DA_ILUSTRACAO)
-    && ![...lugaresDaMetafora.keys()].some((j) => Math.abs(i - j) < 2);
+    && ![...lugaresDaMetafora.keys()].some((j) => Math.abs(i - j) < 2)
+    && ![...lugaresDaFoto.keys()].some((j) => Math.abs(i - j) < INTERVALO_DA_FOTO);
   const livre = (c, i) => !lugaresDaMetafora.has(i) && !ocupados.has(i)
     && c.parte !== 'demonstracao' && c.parte !== 'chamada';
 
@@ -462,13 +527,31 @@ export function dirigirImagens(cenas, mapa = {}) {
    */
   const livres = new Set(primeiraPassagem.map((c, i) => (c.visual.tipo === 'palavras' ? i : -1)).filter((i) => i >= 0));
   const ocupados = new Set(cenas.map((_, i) => i).filter((i) => !livres.has(i)));
-  const lugaresDaIlustracao = escolherLugaresDaIlustracao(cenas, lugaresDaMetafora, fio, ocupados);
 
-  const dirigida = primeiraPassagem.map((c, i) => (
-    lugaresDaIlustracao.has(i)
+  /**
+   * A 2ª PASSAGEM E MEIA — as FOTOGRAFIAS, antes das ilustrações.
+   * São três e cada uma serve uma cena só; as ilustrações têm catorze pistas para seis
+   * lugares. Quem tem menos por onde escolher escolhe primeiro.
+   */
+  const lugaresDaFoto = escolherLugaresDaFoto(cenas, ocupados);
+  for (const i of lugaresDaFoto.keys()) ocupados.add(i);
+
+  /**
+   * A 3ª PASSAGEM — as ilustrações entram no que ainda sobrou, e guardam distância das
+   * fotografias pela mesma razão que já guardavam da metáfora: duas imagens grandes
+   * coladas lêem-se como "agora o vídeo é de imagens", em vez de duas coisas diferentes.
+   */
+  const lugaresDaIlustracao = escolherLugaresDaIlustracao(cenas, lugaresDaMetafora, fio, ocupados, lugaresDaFoto);
+
+  const dirigida = primeiraPassagem.map((c, i) => {
+    if (lugaresDaFoto.has(i)) {
+      const f = lugaresDaFoto.get(i);
+      return { ...c, visual: { tipo: 'foto', ficheiro: f.ficheiro, nome: f.nome, movimento: f.movimento, etiqueta: c.visual.etiqueta } };
+    }
+    return lugaresDaIlustracao.has(i)
       ? { ...c, visual: { tipo: 'ilustracao', figura: lugaresDaIlustracao.get(i), etiqueta: c.visual.etiqueta } }
-      : c
-  ));
+      : c;
+  });
 
   return numerarVariantes(equilibrar(dirigida, { fio }));
 }
@@ -603,6 +686,31 @@ export function conferirImagens(cenas, mapa = {}) {
   const fioDoVideo = mapa.fioCondutor;
   if (fioDoVideo && figuras.includes(fioDoVideo)) {
     erros.push(`a ilustração "${fioDoVideo}" é o fio condutor do vídeo — ela tem família própria e não pode entrar como ilustração avulsa`);
+  }
+
+  /**
+   * (d-bis) AS FOTOGRAFIAS — cada uma no seu sítio, e nenhuma duas vezes.
+   * ⚠️ A prova que interessa é a última: **a fotografia tem de cair numa cena cujo texto
+   * a chamou.** Sem isto, bastava alguém mexer numa pista para uma fotografia de mãos a
+   * abrir uma fatura aterrar no fecho do vídeo — e seria outra vez a queixa nº 1 do dono,
+   * o ecrã a mostrar uma coisa e a voz a dizer outra.
+   */
+  const fotos = cenas.filter((c) => c.visual?.tipo === 'foto');
+  if (fotos.length > FOTOS.length) {
+    erros.push(`${fotos.length} fotografias — só existem ${FOTOS.length} feitas para este vídeo`);
+  }
+  const ficheiros = fotos.map((c) => c.visual.ficheiro);
+  const fotoRepetida = ficheiros.find((f, i) => ficheiros.indexOf(f) !== i);
+  if (fotoRepetida) erros.push(`a fotografia "${fotoRepetida}" aparece mais do que uma vez`);
+  for (const c of fotos) {
+    const dona = FOTOS.find((f) => f.ficheiro === c.visual.ficheiro);
+    if (!dona) {
+      erros.push(`a fotografia "${c.visual.ficheiro}" não está na lista deste vídeo`);
+      continue;
+    }
+    if (!dona.pista.test(semAcento(c.narration))) {
+      erros.push(`a fotografia "${dona.nome}" caiu numa cena que não a chamou: "${String(c.narration).slice(0, 60)}…"`);
+    }
   }
 
   // (e) o b-roll do catálogo tem teto
