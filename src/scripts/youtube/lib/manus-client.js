@@ -67,11 +67,14 @@ async function pedir(caminho, { metodo = 'POST', corpo } = {}) {
 export async function creditos() {
   const j = await pedir('/v2/usage.availableCredits', { metodo: 'GET' });
   return {
-    livres: j.free_credits,
-    total: j.total_credits,
-    restaHoje: j.refresh_credits,
-    porDia: j.max_refresh_credits,
-    intervalo: j.refresh_interval,
+    livres: j.free_credits ?? 0,
+    total: j.total_credits ?? 0,
+    // ⚠️ Quando a renovação do dia se esgota, o campo **desaparece da resposta** em vez
+    // de vir a zero. Sem este `?? 0` aparecia "undefined ainda por gastar hoje" — que é
+    // o pior dos dois mundos: não é um número e não é um aviso.
+    restaHoje: j.refresh_credits ?? 0,
+    porDia: j.max_refresh_credits ?? 0,
+    intervalo: j.refresh_interval || 'daily',
   };
 }
 
