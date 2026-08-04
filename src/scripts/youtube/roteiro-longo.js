@@ -42,7 +42,7 @@ import { BORDAO, METAPHORS, METAPHOR_MEANINGS } from './lib/schema-short.js';
 import { MAX_PALAVRAS_CAPA } from './lib/palavras.js';
 import { PERSONA, VICIOS_ESSENCIAIS, O_QUE_PRESERVAR } from './lib/voz-do-canal.js';
 import { montarFichaDeNumeros } from './lib/simulador.js';
-import { polirCapitulo } from './lib/leitor-longo.js';
+import { polirCapitulo, polirBloco } from './lib/leitor-longo.js';
 import {
   ORCAMENTO, PARTES_DO_CAPITULO, NUM_CAPITULOS, MAX_PALAVRAS_TITULO, PALAVRAS_POR_SEGUNDO,
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
@@ -893,6 +893,53 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
         console.log(`   ✅ capítulo ${i + 1} polido${lido.mexi.length ? ` — ${lido.mexi.join(' · ')}` : ' (sem notas)'}`);
       } else {
         console.log(`   ⚠️ capítulo ${i + 1} ficou com o original: ${lido.motivo}`);
+      }
+    }
+
+    /**
+     * ⚠️ E OS TRÊS BLOCOS DE PARÁGRAFO ÚNICO (04/08/2026, ordem do dono).
+     * No primeiro vídeo eles saíram SEM revisão nenhuma, porque o polidor estava
+     * desenhado à volta das quatro partes de um capítulo. O dono apanhou o resultado
+     * no fecho entregue ("muita gente" duas vezes em duas frases, mais uma frase de
+     * encher). Cada um leva o SEU prompt, porque as regras de verdade dos três são
+     * contraditórias entre si — o fecho tem de dizer o bordão, a abertura tem de o
+     * calar; a chamada tem de pedir, os outros dois têm de não pedir.
+     */
+    const soltos = [
+      {
+        papel: 'abertura',
+        ler: () => roteiro.abertura,
+        gravar: (t) => { roteiro.abertura = t; },
+        conferir: (t) => validarAbertura(t, { promessa: mapa.promessa, exemploParaComparar: EXEMPLO_PARA_COMPARAR }),
+      },
+      {
+        papel: 'chamada',
+        ler: () => roteiro.chamada,
+        gravar: (t) => { roteiro.chamada = t; },
+        conferir: (t) => validarChamada(t),
+      },
+      {
+        papel: 'fecho',
+        ler: () => roteiro.fecho,
+        gravar: (t) => { roteiro.fecho = t; },
+        conferir: (t) => validarFecho(t, {
+          promessa: mapa.promessa,
+          exemploParaComparar: EXEMPLO_PARA_COMPARAR.replace(BORDAO, ''),
+        }),
+      },
+    ];
+    for (const bloco of soltos) {
+      const lido = await polirBloco(
+        bloco.ler(),
+        { papel: bloco.papel, promessa: mapa.promessa, tema: t.term },
+        bloco.conferir,
+        { limpar: (texto) => limparFala(texto, temaTexto) },
+      );
+      if (lido.usada === 'leitor') {
+        bloco.gravar(lido.fala);
+        console.log(`   ✅ ${bloco.papel} polida${lido.mexi.length ? ` — ${lido.mexi.join(' · ')}` : ' (sem notas)'}`);
+      } else {
+        console.log(`   ⚠️ ${bloco.papel} ficou com o original: ${lido.motivo}`);
       }
     }
   } else {

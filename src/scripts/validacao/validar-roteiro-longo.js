@@ -39,6 +39,7 @@ import {
   buildPromptMapa, buildPromptAbertura, buildPromptCapitulo, buildPromptChamada, buildPromptFecho,
 } from '../youtube/roteiro-longo.js';
 import { BORDAO } from '../youtube/lib/schema-short.js';
+import { buildPromptLeitorBloco } from '../youtube/lib/leitor-longo.js';
 
 let passou = 0;
 let falhou = 0;
@@ -406,6 +407,35 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
   // trava pune. O molde da chamada é o caso vivo — ele está no prompt E tem de passar.
   const v = validarChamada(EXEMPLO_DE_CHAMADA);
   ok('o molde que o prompt da chamada manda usar PASSA na trava da chamada', v.ok, v.erros.join(' | '));
+
+  /**
+   * ⚠️ E O POLIDOR TAMBÉM CONTA — ele reescreve, logo pode partir uma trava.
+   * O polidor dos blocos de parágrafo único (abertura, chamada, fecho) foi ligado em
+   * 04/08 por ordem do dono. Se o prompt DELE não repetir as regras de verdade de
+   * cada bloco, ele vai reescrever à vontade, a versão vai ser recusada pelas travas,
+   * e o bloco fica áspero **sem ninguém perceber porquê** — porque o polidor falha em
+   * silêncio de propósito (é um lucro, nunca um ponto de falha).
+   */
+  const promptsDoPolidor = {
+    abertura: buildPromptLeitorBloco('texto de prova', { papel: 'abertura', promessa: 'promessa de prova', tema: 'tema de prova' }),
+    chamada: buildPromptLeitorBloco('texto de prova', { papel: 'chamada', promessa: 'promessa de prova', tema: 'tema de prova' }),
+    fecho: buildPromptLeitorBloco('texto de prova', { papel: 'fecho', promessa: 'promessa de prova', tema: 'tema de prova' }),
+  };
+  const alinhamentoDoPolidor = [
+    ['a capa continua pergunta e cabe na tela', 'abertura', /PERGUNTA que dói.*"\?"/s],
+    ['a abertura não pede nada', 'abertura', /NÃO peça nada/],
+    ['a abertura não diz o bordão', 'abertura', /NÃO escreva o bordão/],
+    ['a chamada mantém FINMOOVI e o pedido', 'chamada', /FINMOOVI e a pedir o comentário/],
+    ['a chamada não diz o bordão', 'chamada', /NÃO escreva o bordão/],
+    ['o fecho acaba no bordão à letra', 'fecho', /ÚLTIMA frase é o bordão do canal, à letra/],
+    ['o fecho não cita fonte', 'fecho', /NÃO cite fonte nenhuma/],
+    ['o fecho não promete próximo vídeo', 'fecho', /NÃO prometa um próximo vídeo/],
+    ['nenhum dos três cita percentagem', 'abertura', /NÃO cite percentagens/],
+    ['nenhum dos três rebaixa o dinheiro', 'fecho', /NÃO rebaixe o dinheiro/],
+  ];
+  for (const [nome, papel, agulha] of alinhamentoDoPolidor) {
+    ok(`polidor · "${nome}" está escrito no prompt do bloco "${papel}"`, agulha.test(promptsDoPolidor[papel]));
+  }
 }
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════
