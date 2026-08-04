@@ -610,13 +610,30 @@ async function main() {
   if (!scenes.length) throw new Error('roteiro sem cenas');
 
   /**
-   * ⚠️ A INTENÇÃO DA VOZ LIGA-SE PELO **FORMATO**, e não por uma opção da linha de
-   * comando. Assim o vídeo longo leva-a sempre — sem ninguém se lembrar — e o Short
-   * diário **nunca a apanha por acidente**, nem que alguém corra o comando à mão com
-   * uma opção a mais. Quem escreve o `formato` é o montador do longo.
+   * ═══ 🔴 A INTENÇÃO DA VOZ ESTÁ DESLIGADA, POR ORDEM DO DONO (04/08/2026) ═══
+   *
+   * Ela foi escrita nesse mesmo dia e ele ouviu o resultado: *"depois que você ajustou
+   * frase a frase a voz fica robotizada! Não sei se mexe na velocidade da voz, me parece
+   * que tem momento que ela acelera um pouquinho ou desacelera um pouco e **é aí que
+   * aparece mais robótico**. Qualquer coisa retiramos isso sem problema."*
+   *
+   * Ele apontou a causa certa. O plano de leitura muda a velocidade **ao ponto final**
+   * (-3% → -9% → -7%), e uma pessoa não faz isso: muda *dentro* da frase, devagar. Um
+   * salto de velocidade num limite de frase lê-se como um aparelho a mudar de definição.
+   * E há a causa maior, medida na §40.1: cortar por frase destrói o **arco da entoação**,
+   * porque o motor planeia a melodia sobre todo o texto que recebe — frase a frase,
+   * **todas acabam a cair**.
+   *
+   * ⚠️ **A MAQUINARIA FICA, o interruptor é que está em baixo.** O `lib/prosodia.js`, a
+   * apara das pontas e a montagem continuam aqui, testados e documentados, porque o dia
+   * em que o canal trocar de voz — ou passar a uma voz paga que aceite marcas por dentro
+   * — a pergunta volta. Apagar isto seria deitar fora a resposta junto com a experiência.
+   *
+   * 👉 Para voltar a ligá-la um dia: trocar `false` por `script.formato === 'longo'`.
+   *    E ouvir antes de entregar, que foi a lição desta.
    */
-  ligarIntencaoDaVoz(script.formato === 'longo');
-  if (script.formato === 'longo') console.log('   (voz COM intenção — pausas e ritmo por frase)\n');
+  const INTENCAO_APROVADA_PELO_DONO = false;
+  ligarIntencaoDaVoz(INTENCAO_APROVADA_PELO_DONO && script.formato === 'longo');
 
   const provider = pickProvider();
   if (!provider) throw new Error('nenhum provedor de TTS disponível');
