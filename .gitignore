@@ -35,3 +35,6 @@ src/scripts/youtube/output/*.longo.json
 src/scripts/youtube/output/*.caderno.json
 src/scripts/youtube/output/*.descricao.txt
 youtube-render/out/
+
+# as imagens da Manus sao pesadas (4-6 MB cada) e refazem-se com um comando
+youtube-render/public/manus/
