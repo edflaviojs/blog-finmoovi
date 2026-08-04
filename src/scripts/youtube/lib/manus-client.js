@@ -53,10 +53,26 @@ async function pedir(caminho, { metodo = 'POST', corpo } = {}) {
   return json;
 }
 
-/** Quantos créditos restam. Grátis: renova 300 por dia. */
+/**
+ * Quantos créditos restam.
+ *
+ * ⚠️ **O NOME `refresh_credits` ENGANA, E ISSO FOI MEDIDO.** Não é quanto renova por dia
+ * — é **quanto ainda resta da renovação de hoje**. Começou em 300 e, depois de cinco
+ * imagens, estava em 40. Quem o lesse como "renova 300" acharia que tinha 300 quando
+ * tinha 40. Por isso aqui ele chama-se `restaHoje`, e o teto (`max_refresh_credits`)
+ * vem à parte.
+ *
+ * Custo medido em 04/08/2026: **52 créditos por imagem** — ou seja, 5 a 6 por dia grátis.
+ */
 export async function creditos() {
   const j = await pedir('/v2/usage.availableCredits', { metodo: 'GET' });
-  return { livres: j.free_credits, total: j.total_credits, renovaPara: j.refresh_credits, intervalo: j.refresh_interval };
+  return {
+    livres: j.free_credits,
+    total: j.total_credits,
+    restaHoje: j.refresh_credits,
+    porDia: j.max_refresh_credits,
+    intervalo: j.refresh_interval,
+  };
 }
 
 const dorme = (ms) => new Promise((r) => setTimeout(r, ms));

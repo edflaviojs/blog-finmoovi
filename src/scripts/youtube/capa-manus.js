@@ -113,7 +113,8 @@ ${REGRAS_FIXAS}`,
 async function main() {
   if (args.creditos) {
     const c = await creditos();
-    console.log(`\n💳 créditos: ${c.livres} livres de ${c.total} · renova para ${c.renovaPara} (${c.intervalo})\n`);
+    console.log(`\n💳 créditos: ${c.total} ao todo · ${c.restaHoje} ainda por gastar hoje (de ${c.porDia}/dia) · ${c.livres} de saldo próprio`);
+    console.log(`   a 52 créditos por imagem, dá para mais ${Math.floor(c.total / 52)} imagem(ns)\n`);
     return;
   }
 
