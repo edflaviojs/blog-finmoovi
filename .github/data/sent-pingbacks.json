@@ -1996,5 +1996,59 @@
     "target": "https://schema.org",
     "status": "no-endpoint",
     "sentAt": "2026-07-30T15:52:13.141Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-transformar-a-bagunca-das-contas-em-controle-visual-em-/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-04T16:12:16.732Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/como-usar-credito-sem-sufocar-seu-orcamento-5-passos/",
+    "target": "https://www.investopedia.com/terms/f/financing.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-04T16:12:16.841Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-turn-a-mess-of-bills-into-a-visual-control-system-in-/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-04T16:12:16.862Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-how-to-use-credit-without-squeezing-your-budget-5-steps/",
+    "target": "https://www.investopedia.com/terms/f/financing.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-04T16:12:16.969Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/en/posts/en-invest-or-pay-off-debt-which-is-better-in-2026/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-04T16:12:16.989Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-transformar-el-desorden-de-tus-facturas-en-control-visu/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-04T16:12:17.007Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-como-usar-credito-sin-ahogar-tu-presupuesto-5-pasos-practico/",
+    "target": "https://www.investopedia.com/terms/f/financing.asp",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-04T16:12:17.084Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/es/posts/es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-04T16:12:17.103Z"
+  },
+  {
+    "source": "https://blog.finmoovi.com/posts/investir-vs-quitar-dividas-qual-vale-mais-a-pena-em-2026/",
+    "target": "https://schema.org",
+    "status": "no-endpoint",
+    "sentAt": "2026-08-04T16:12:17.120Z"
   }
 ]
