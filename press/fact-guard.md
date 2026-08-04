@@ -1,8 +1,13 @@
 # 🛡️ Fact Firewall — relatorio anti-alucinacao
 
-**Gerado em:** 2026-08-03T08:26:44.509Z
-**Posts:** 237 · limpos: 0 · bloqueados p/ revisao: 0 · com flags: 35
+**Gerado em:** 2026-08-04T07:36:53.306Z
+**Posts:** 243 · limpos: 1 · bloqueados p/ revisao: 0 · com flags: 35
 
+## ✂️ Cortes aplicados (citacao/estatistica sem fonte confiavel)
+
+**es-como-regalar-en-el-dia-del-padre-gastando-poco-7-ideas-que-c.md**
+- link removido: https://www.oficina-de-estadisticas.org
+- link removido: https://www.burodecredito.org
 
 ## ⚠️ Flags (atribuicao a fonte sem link — verificar/linkar ou cortar)
 

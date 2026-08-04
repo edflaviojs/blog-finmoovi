@@ -35,15 +35,15 @@ Antes de empezar a navegar por internet, fija un techo. Usa la regla del **30 
 ## 2️⃣ Ideas de regalo que cuestan menos de €9
 
 ### 2.1. Kit de desayuno artesanal
-- **Qué comprar:** pan de queso, café soluble, mermelada casera, frutas de temporada.  
+- **Qué comprar:** pan de queso, café soluble, mermelada casera, frutas de temporada.
 - **Cuánto cuesta:** en promedio ≈ €6, si lo compras en mercados locales y aprovechas promociones.
 
 ### 2.2. Libro usado o e‑book
-- **Dónde encontrar:** librerías de segunda mano en línea (p.ej.: Estante Virtual) o promociones de e‑books en tiendas digitales.  
+- **Dónde encontrar:** librerías de segunda mano en línea (p.ej.: Estante Virtual) o promociones de e‑books en tiendas digitales.
 - **Precio medio:** ≈ €4‑€5.
 
 ### 2.3. Experiencia “haz‑tú‑mismo”
-- **Ejemplo:** un día de pesca, un paseo en bicicleta o una parrillada en casa.  
+- **Ejemplo:** un día de pesca, un paseo en bicicleta o una parrillada en casa.
 - **Costo:** casi cero, solo el gasto en comida o combustible, que puede quedar dentro de tu límite.
 
 ## 3️⃣ Aprovecha el poder del **cashback** y los cupones
@@ -52,8 +52,8 @@ El **cashback inteligente** puede devolver hasta el 12 % del valor gastado en 
 
 ![3️⃣ Aprovecha el poder del **cashback** y los cupones](/images/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que--4.webp)
 
-1. **Elige una app de cashback** ([FinMoovi](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) tiene integración con socios que ofrecen cashback).  
-2. **Activa cupones** antes de finalizar la compra – sitios como *Cuponomia* o *Méliuz* suelen tener códigos válidos.  
+1. **Elige una app de cashback** ([FinMoovi](/es/posts/es-5-alternativas-a-organizze-en-2026-opciones-para-administrar) tiene integración con socios que ofrecen cashback).
+2. **Activa cupones** antes de finalizar la compra – sitios como *Cuponomia* o *Méliuz* suelen tener códigos válidos.
 3. **Paga con [tarjeta de crédito](/es/posts/es-tarjeta-de-credito-vs-tarjeta-de-debito-cual-vale-mas-la-pen)** que ofrezca cashback extra (hasta 1 % adicional).
 
 > **Resultado:** un regalo de €22 puede generar hasta €2.5 de vuelta, reduciendo el costo efectivo.
@@ -61,15 +61,15 @@ El **cashback inteligente** puede devolver hasta el 12 % del valor gastado en 
 ## 4️⃣ Regalos DIY (Hazlo Tú Mismo)
 
 ### 4.1. Álbum de recuerdos digital
-- **Cómo hacerlo:** selecciona fotos antiguas, usa un editor gratuito (Canva) y crea un PDF interactivo.  
+- **Cómo hacerlo:** selecciona fotos antiguas, usa un editor gratuito (Canva) y crea un PDF interactivo.
 - **Costo:** cero, solo tu tiempo.
 
 ### 4.2. Vino o cerveza artesanal casera
-- **Materiales:** botellas reutilizadas, etiqueta personalizada (impresa en casa).  
+- **Materiales:** botellas reutilizadas, etiqueta personalizada (impresa en casa).
 - **Inversión:** ≈ €5‑€7 por los insumos.
 
 ### 4.3. Kit “Mantenimiento del Auto”
-- **Artículos:** aceite, filtro de aire, paño de microfibra.  
+- **Artículos:** aceite, filtro de aire, paño de microfibra.
 - **Por qué funciona:** muestra preocupación práctica y además ayuda a ahorrar en mantenimiento futuro.
 
 ## 5️⃣ Planificación anticipada: la estrategia que salva tu bolsillo
@@ -104,6 +104,6 @@ Regalar a papá no tiene que ser sinónimo de gasto exagerado. Con un límite bi
 ---
 
 **Fuentes:**
-- [oficina de estadísticas – Ingreso medio mensual de los trabajadores](https://www.oficina-de-estadisticas.org)
-- [burós de crédito – Consumo en fechas conmemorativas 2023](https://www.burodecredito.org)
+- oficina de estadísticas – Ingreso medio mensual de los trabajadores
+- burós de crédito – Consumo en fechas conmemorativas 2023
 <!-- SCHEMA_AUTO:{"@context":"https://schema.org","@type":"HowTo","name":"Cómo Regalar en el Día del Padre Gastando Poco: 7 Ideas que Caben en el Bolsillo","step":[{"@type":"HowToStep","position":1,"name":"1. Kit de desayuno artesanal","text":"- Qué comprar: pan de queso, café soluble, mermelada casera, frutas de temporada. - Cuánto cuesta: en promedio ≈ €6."},{"@type":"HowToStep","position":2,"name":"2. Libro usado o e‑book","text":"- Dónde encontrar: librerías de segunda mano en línea (p.ej.: Estante Virtual) o promociones de e‑books en tiendas digitales. - Precio medio: ≈ €4‑€5."},{"@type":"HowToStep","position":3,"name":"3. Experiencia “haz‑tú‑mismo”","text":"- Ejemplo: un día de pesca, un paseo en bicicleta o una parrillada en casa. - Costo: casi cero, solo el gasto en comida o combustible, que puede quedar dentro de tu límite."},{"@type":"HowToStep","position":4,"name":"Elige una app de cashback (FinMoovi tiene integración con socios que ofrecen cashback).","text":"Elige una app de cashback (FinMoovi tiene integración con socios que ofrecen cashback)."},{"@type":"HowToStep","position":5,"name":"Activa cupones antes de finalizar la compra – sitios como Cuponomia o Méliuz suelen tener códigos válidos.","text":"Activa cupones antes de finalizar la compra – sitios como Cuponomia o Méliuz suelen tener códigos válidos."},{"@type":"HowToStep","position":6,"name":"Paga con tarjeta de crédito que ofrezca cashback extra (hasta 1 % adicional).","text":"Resultado: un regalo de €22 puede generar hasta €2.5 de vuelta, reduciendo el costo efectivo."},{"@type":"HowToStep","position":7,"name":"1. Álbum de recuerdos digital","text":"- Cómo hacerlo: selecciona fotos antiguas, usa un editor gratuito (Canva) y crea un PDF interactivo. - Costo: cero, solo tu tiempo."},{"@type":"HowToStep","position":8,"name":"2. Vino o cerveza artesanal casera","text":"- Materiales: botellas reutilizadas, etiqueta personalizada (impresa en casa). - Inversión: ≈ €5‑€7."}]} -->
