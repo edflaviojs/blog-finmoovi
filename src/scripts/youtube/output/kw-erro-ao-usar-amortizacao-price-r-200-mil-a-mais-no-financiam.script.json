@@ -1,0 +1,207 @@
+{
+  "slug": "kw-erro-ao-usar-amortizacao-price-r-200-mil-a-mais-no-financiam",
+  "term": "Erro ao usar amortização Price: R$200 mil a mais no financiamento",
+  "category": "mindset",
+  "keyword": "financiamento",
+  "nextVideoTitle": "",
+  "intro": {
+    "style": "pergunta",
+    "frase": "Você pagou *duzentos mil reais a mais* no seu financiamento pela tabela Price?"
+  },
+  "music": {
+    "id": "rock",
+    "ficheiro": "music/bg-rock.mp3",
+    "titulo": "Cool Rock",
+    "autor": "Kevin MacLeod (incompetech.com)",
+    "licenca": "CC BY 4.0",
+    "exigeCredito": true,
+    "linhaDeCredito": "Música: \"Cool Rock\" by Kevin MacLeod (incompetech.com) — Licensed under CC BY 4.0",
+    "clima": "alerta"
+  },
+  "fioCondutor": "bola-de-ferro",
+  "scenes": [
+    {
+      "id": 1,
+      "role": "hook",
+      "narration": "Você pagou duzentos mil reais a mais no seu financiamento pela tabela Price? Eu vi um contrato de trezentos mil e o susto apareceu na tela.",
+      "durationSec": 10,
+      "shots": [
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200.000"
+          },
+          "sfx": "boom"
+        },
+        {
+          "anchor": "Price",
+          "visual": {
+            "type": "statement",
+            "text": "Cuidado com o custo oculto"
+          }
+        },
+        {
+          "anchor": "susto",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          },
+          "sfx": "thud"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "role": "beat",
+      "narration": "Acontece que muita gente assina o papel cansada, olha só a parcela do começo e não compara com outro jeito de pagar.",
+      "durationSec": 8.5,
+      "shots": [
+        {
+          "anchor": "assina",
+          "visual": {
+            "type": "icon",
+            "icon": "warning"
+          }
+        },
+        {
+          "anchor": "compara",
+          "visual": {
+            "type": "list",
+            "text": "Compare antes de fechar"
+          },
+          "sfx": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "role": "beat",
+      "narration": "Só que essa comparação mostrou a tabela Price cobrando muito mais, dando duzentos mil reais a mais no fim das contas.",
+      "durationSec": 8.1,
+      "shots": [
+        {
+          "anchor": "comparação",
+          "visual": {
+            "type": "chart",
+            "text": "Price x alternativa"
+          }
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "counter",
+            "from": 0,
+            "to": 200000,
+            "prefix": "R$"
+          },
+          "sfx": "alert"
+        },
+        {
+          "anchor": "contas",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "role": "beat",
+      "narration": "Eu joguei os números desse contrato no FinMoovi e ele me mostrou essa diferença de duzentos mil na hora.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "joguei",
+          "visual": {
+            "type": "app",
+            "app": "calculadora",
+            "note": "Comparação entre financiamentos"
+          }
+        },
+        {
+          "anchor": "mostrou",
+          "visual": {
+            "type": "statement",
+            "text": "Diferença encontrada"
+          }
+        },
+        {
+          "anchor": "duzentos",
+          "visual": {
+            "type": "number",
+            "text": "R$ 200.000"
+          },
+          "sfx": "ding"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "role": "cta",
+      "narration": "Quer ver como tá o seu caso? Comenta FINMOOVI aqui embaixo que eu te mando o aplicativo de graça.",
+      "durationSec": 7.3,
+      "shots": [
+        {
+          "anchor": "caso",
+          "visual": {
+            "type": "icon",
+            "icon": "question"
+          }
+        },
+        {
+          "anchor": "FINMOOVI",
+          "visual": {
+            "type": "statement",
+            "text": "Veja seu resultado"
+          },
+          "sfx": "pop"
+        },
+        {
+          "anchor": "graça",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "clique-link"
+          },
+          "sfx": "click"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "role": "outro",
+      "narration": "A tabela Price pode te custar duzentos mil reais a mais, então compare antes de assinar. Dinheiro sem controle é dinheiro dos outros.",
+      "durationSec": 8.8,
+      "shots": [
+        {
+          "anchor": "Price",
+          "visual": {
+            "type": "statement",
+            "text": "Pode sair muito caro"
+          }
+        },
+        {
+          "anchor": "mais",
+          "visual": {
+            "type": "metaphor",
+            "metaphor": "bola-de-ferro"
+          },
+          "sfx": "thud"
+        },
+        {
+          "anchor": "Dinheiro",
+          "visual": {
+            "type": "icon",
+            "icon": "piggy"
+          }
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "text": "Comente FINMOOVI e receba grátis",
+    "target": "app"
+  },
+  "totalDurationSec": 50
+}
