@@ -140,8 +140,26 @@ jobs:
       - name: Instalar dependências (blog)
         run: npm ci
 
-      - name: Escolher o vídeo da semana
+      # ⚠️ O ROBÔ ALIMENTA-SE SOZINHO, MAS SÓ QUANDO TEM FOME.
+      #
+      # Ordem do dono (05/08): *"quero continuar usando a fonte que criamos da pesquisa da
+      # api do youtube… quero que busque os mais virais e crie tudo com base nisso"*.
+      #
+      # O detetive de tendências já corre todos os dias às 04:00 e guarda os dez vídeos
+      # LONGOS de finanças mais vistos dos últimos 60 dias — uma lista que até hoje ninguém
+      # lia. É dela que saem os temas.
+      #
+      # ⚠️ **Só se procura tema quando a fila está vazia**, e é de propósito: encher a fila
+      # todas as semanas era passar a perseguir o que estava a bombar há dois meses — o
+      # mesmo defeito que fez o detetive passar de semanal a diário.
+      - name: Escolher o vídeo da semana (e procurar temas se a fila estiver vazia)
         id: escolher
+        env:
+          KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
         run: |
           SLUG="${{ github.event.inputs.slug }}"
           if [ -z "$SLUG" ]; then
@@ -149,9 +167,15 @@ jobs:
             set +e
             SLUG="$(node src/scripts/youtube/pick-next-longo.js)"
             CODE=$?
+            if [ "$CODE" = "78" ]; then
+              echo "📭 fila vazia — a procurar temas no que está a bombar."
+              node src/scripts/youtube/temas-longo.js
+              SLUG="$(node src/scripts/youtube/pick-next-longo.js)"
+              CODE=$?
+            fi
             set -e
             if [ "$CODE" = "78" ]; then
-              echo "📭 a fila de temas do vídeo longo está vazia — nada a fazer hoje."
+              echo "📭 continua sem temas (nem os virais deram nada que sirva) — nada a fazer hoje."
               echo "skip=true" >> "$GITHUB_OUTPUT"
               exit 0
             fi
@@ -160,6 +184,24 @@ jobs:
           echo "🎬 vídeo da semana: $SLUG"
           echo "SLUG=$SLUG" >> "$GITHUB_ENV"
           echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      # ⚠️ A FILA TEM DE FICAR GUARDADA MESMO QUE O RESTO FALHE.
+      # Se os temas novos não forem gravados aqui, a corrida seguinte volta a lê-los dos
+      # mesmos virais, paga a IA outra vez e cria temas repetidos com outro nome — porque
+      # a dedup é feita contra o que está na fila. Guardar custa segundos.
+      - name: Guardar os temas novos na fila
+        if: steps.escolher.outputs.skip != 'true'
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/youtube-longos.json
+          if git diff --staged --quiet; then
+            echo "Sem temas novos (a fila já tinha o que fazer)."
+          else
+            git commit -m "chore: temas novos do video longo, vindos dos virais [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push
+          fi
 
       # ── 1. O GUIÃO ────────────────────────────────────────────────────────────
       # Só quando se pede. Por omissão usa-se o guião que já está no repositório, para a

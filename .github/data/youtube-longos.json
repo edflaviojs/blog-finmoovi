@@ -31,6 +31,58 @@
       ],
       "estado": "publicado-a-mao",
       "nota": "O PILOTO. Subido a mao pelo dono, agendado para 09/08/2026 as 19h00 do Brasil. NAO MEXER."
+    },
+    {
+      "slug": "educacao-financeira-como-fazer",
+      "titulo": "Educação financeira: como fazer o salário render sem ganhar mais",
+      "tema": "Como pequenos hábitos fazem o salário desaparecer antes do fim do mês",
+      "angulo": "A dor é receber entre R$ 2.000 e R$ 6.000 e sentir que o dinheiro some sem entender por quê. Eu mostro um cenário de quem ganha R$ 3.500 e perde cerca de R$ 820 por mês em gastos pouco percebidos, fazendo as contas em reais e usando o FinMoovi uma única vez para visualizar tudo. No fim, a pessoa aprende a identificar esses vazamentos sem precisar aumentar a renda.",
+      "glossario": "educacao-financeira",
+      "palavrasChave": [
+        "educação financeira",
+        "controle de gastos",
+        "orçamento pessoal",
+        "salário rende mais",
+        "dinheiro no fim do mês"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "jc7rFQLtrJg",
+        "title": "pessoas sem o mínimo de educação financeira",
+        "views": 619114,
+        "viewsPerDay": 24555,
+        "estrutura": [
+          "título afirmativo simples, sem número nem pergunta"
+        ]
+      },
+      "propostoEm": "2026-08-03T20:07:38.153Z"
+    },
+    {
+      "slug": "compras-inteligentes-escolhas-com",
+      "titulo": "Compras inteligentes: 10 escolhas com o salário que você já tem",
+      "tema": "10 compras que eu só faço depois de organizar meu dinheiro de verdade",
+      "angulo": "A dor é receber entre R$ 2.000 e R$ 6.000 por mês e gastar o dinheiro assim que ele entra, sem perceber o impacto no orçamento. Eu mostro um cenário de quem ganha R$ 3.500, paga R$ 2.700 em contas e decide o que vale comprar com os R$ 800 restantes, usando o FinMoovi uma única vez para fazer a conta. No fim, a pessoa aprende a diferenciar compras que fortalecem a vida financeira daquelas que só parecem boas na hora.",
+      "glossario": "orcamento-pessoal",
+      "palavrasChave": [
+        "compras inteligentes",
+        "organizar orçamento",
+        "controle financeiro",
+        "dinheiro do salário",
+        "educação financeira",
+        "gastos conscientes"
+      ],
+      "estado": "proposto",
+      "viralRef": {
+        "videoId": "AEegnTtvXQo",
+        "title": "Assim que tiver dinheiro, COMPRE essas 10 coisas!",
+        "views": 96031,
+        "viewsPerDay": 6261,
+        "estrutura": [
+          "lista numerada (o número está no início e promete quantas coisas vêm)",
+          "uma palavra em maiúsculas a marcar o tom"
+        ]
+      },
+      "propostoEm": "2026-08-03T20:07:38.153Z"
     }
   ]
 }

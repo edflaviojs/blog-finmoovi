@@ -27,6 +27,7 @@ import { fileURLToPath } from 'url';
 import { iniciosDasCenas, VOZ_ENTRA_FRAMES, RESPIRO_SEC, CARTAO_CAPITULO_FRAMES } from '../youtube/srt-longo.js';
 import { proximoDomingo, emPortugues, palavrasChave, montarMetadados, tituloAprovado, acharCapa } from '../youtube/upload-longo.js';
 import { proximoLongo, comoArgumentos } from '../youtube/pick-next-longo.js';
+import { conferirTema, caudaDoTitulo, fazerSlug } from '../youtube/temas-longo.js';
 import { tempoDosCapitulos } from '../youtube/descricao-longo.js';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
@@ -314,13 +315,32 @@ console.log('\n4. AS TRAVAS QUE PARAM TUDO');
     'o vídeo que o dono sobe à mão está no caderno — o robô nunca o publica outra vez',
     Boolean(caderno['sair-do-vermelho']),
   );
-  ok(
-    'e por isso a fila não tem nada por fazer hoje (é o esperado)',
-    proximoLongo({
-      fila: JSON.parse(readFileSync(join(RAIZ, '.github', 'data', 'youtube-longos.json'), 'utf-8')),
-      caderno,
-    }) === null,
-  );
+  /**
+   * ⚠️ A 1ª versão desta prova dizia *"a fila não tem nada por fazer hoje"* — e era
+   * verdade no minuto em que a escrevi, porque a fila só tinha o piloto. Assim que
+   * entraram temas a sério, ficou vermelha. **Estava a medir um ESTADO passageiro em vez
+   * de uma REGRA**, e uma prova assim acende sempre que o sistema funciona — que é a
+   * definição de um alarme que ninguém lê.
+   *
+   * A regra verdadeira é esta: **o que o selecionador devolver nunca pode ser um vídeo
+   * que já foi ao ar.** É isso que impede o canal de publicar duas vezes o mesmo.
+   */
+  {
+    const filaReal = JSON.parse(readFileSync(join(RAIZ, '.github', 'data', 'youtube-longos.json'), 'utf-8'));
+    const proximo = proximoLongo({ fila: filaReal, caderno });
+    ok(
+      'o próximo vídeo da fila nunca é um que já foi publicado',
+      proximo === null || !caderno[proximo.slug],
+      proximo ? `devolveu "${proximo.slug}"` : 'a fila está vazia',
+    );
+    ok(
+      'e todo o vídeo por fazer na fila já traz um título aprovado',
+      (filaReal.videos || [])
+        .filter((v) => !caderno[v.slug] && !['publicado', 'publicado-a-mao', 'suspenso', 'reprovado'].includes(String(v.estado || '')))
+        .every((v) => typeof v.titulo === 'string' && v.titulo.length >= 20),
+      'há um tema por fazer sem título — a subida dele pararia',
+    );
+  }
 
   /**
    * ⚠️ AS DUAS RÉGUAS DO SELECIONADOR. Ver o aviso em `pick-next-longo.js`: o `estado` é o
@@ -423,6 +443,93 @@ console.log('\n6. CONTRA O VÍDEO QUE FOI ENTREGUE');
   } else {
     console.log('  ⏭️  o guião montado não está nesta máquina — as quatro provas contra o vídeo real ficam de fora');
   }
+}
+
+// ═══ 7. OS TEMAS TIRADOS DO QUE ESTÁ A BOMBAR ════════════════════════════════
+console.log('\n7. OS TEMAS TIRADOS DOS VIRAIS');
+
+{
+  const bom = {
+    tema: 'Como parar de perder dinheiro em pequenos gastos do dia a dia',
+    angulo: 'Mostrar o cenário de quem ganha R$ 3.500 e perde R$ 480 por mês sem perceber.',
+    titulo: 'Gastos pequenos: como parar de perder dinheiro todo mês',
+    glossario: 'orcamento-pessoal',
+    palavrasChave: ['gastos pequenos', 'controle financeiro'],
+  };
+  const glossarios = new Set(['orcamento-pessoal', 'divida', 'educacao-financeira']);
+
+  ok('um tema bem escrito passa', conferirTema(bom, { glossarios }).length === 0, conferirTema(bom, { glossarios }).join(' · '));
+
+  const reprova = (nome, mudanca, agulha, extra = {}) => {
+    const queixas = conferirTema({ ...bom, ...mudanca }, { glossarios, ...extra });
+    ok(nome, queixas.some((q) => q.includes(agulha)), `queixas: ${queixas.join(' · ') || '(nenhuma)'}`);
+  };
+
+  reprova('um título curto de mais é recusado', { titulo: 'Gastos pequenos' }, 'mínimo');
+  reprova('um título comprido de mais é recusado',
+    { titulo: 'Gastos pequenos do dia a dia: como parar de perder dinheiro todos os meses sem cortar nada' }, 'máximo');
+
+  /**
+   * 🔴 A PROVA QUE NASCEU DO 1º ENSAIO, A 05/08.
+   * O pedido dá um exemplo de OUTRO assunto — como manda a regra desta casa — e o modelo
+   * copiou-lhe na mesma a cauda: os dois primeiros títulos propostos acabavam ambos em
+   * *"sem apertar mais o mês"*, e um deles era sobre cortar gastos.
+   * **O exemplo ensina a FORMA e o modelo copia as PALAVRAS.**
+   */
+  reprova('um título que copia a objeção do exemplo é recusado',
+    { titulo: 'Gastos pequenos: como parar sem apertar mais o mês' }, 'copia a objeção');
+
+  /**
+   * 🔴 E A SEGUNDA PROVA DO MESMO DIA, porque a primeira régua deixou passar o defeito.
+   * Saíram *"…como fazer o salário render **sem ganhar mais**"* e *"…10 gastos que cortar
+   * **sem ganhar mais**"*: não partilham quatro palavras seguidas em lado nenhum, e acabam
+   * na mesma frase. **A objeção tem três palavras, e é o FIM do título que se lê como
+   * repetição** quando os dois vídeos ficam lado a lado na lista do canal.
+   */
+  reprova('dois títulos que acabam na mesma frase são recusados',
+    { titulo: 'Gastos pequenos: como cortar sem ganhar mais' }, 'acaba como outro',
+    { caudasUsadas: [caudaDoTitulo('Educação financeira: fazer o salário render sem ganhar mais')] });
+  ok('e uma objeção DIFERENTE passa, mesmo com um título na fila',
+    conferirTema({ ...bom, titulo: 'Gastos pequenos: como cortar sem vender nada' },
+      { glossarios, caudasUsadas: [caudaDoTitulo('Educação financeira: fazer o salário render sem ganhar mais')] }).length === 0);
+
+  reprova('um título que promete um segredo é recusado', { titulo: 'Gastos: o segredo para nunca mais ficar sem dinheiro' }, 'segredo');
+  reprova('um título que promete enriquecer é recusado', { titulo: 'Investimentos: fique rico com pouco dinheiro por mês' }, 'enriquecer');
+  reprova('um título com "ninguém te conta" é recusado', { titulo: 'Gastos pequenos: o que ninguém te conta sobre dinheiro' }, 'falso segredo');
+  reprova('um título com urgência inventada é recusado', { titulo: 'Investimentos: corra antes que o dinheiro perca valor' }, 'urgência');
+  /**
+   * ⚠️ Metade dos virais que servem de modelo GRITAM — *"PARE DE SER ESCRAVO DAS
+   * DÍVIDAS"* —, e o modelo copia o que vê. Este canal não grita: a capa chama a atenção,
+   * o título explica.
+   */
+  reprova('um título aos berros é recusado', { titulo: 'Gastos: PARE DE PERDER DINHEIRO todo mês agora' }, 'grita');
+  ok('mas uma sigla em maiúsculas não conta como grito',
+    conferirTema({ ...bom, titulo: 'CDB e poupança: onde o seu dinheiro rende mais' }, { glossarios }).length === 0,
+    conferirTema({ ...bom, titulo: 'CDB e poupança: onde o seu dinheiro rende mais' }, { glossarios }).join(' · '));
+  reprova('um glossário que não existe é recusado', { glossario: 'nao-existe-isto' }, 'não existe');
+  reprova('sem ângulo é recusado — o escritor não saberia o que dizer', { angulo: '' }, 'sem ângulo');
+
+  // O nome curto: único, e sem acentos nem espaços.
+  const usados = new Set();
+  const s1 = fazerSlug('Gastos pequenos: como parar de perder dinheiro', usados); usados.add(s1);
+  const s2 = fazerSlug('Gastos pequenos: como parar de perder dinheiro', usados);
+  ok('o nome curto sai limpo, sem acentos nem espaços', /^[a-z0-9-]+$/.test(s1), s1);
+  ok('e dois títulos iguais não geram o mesmo nome', s1 !== s2, `${s1} / ${s2}`);
+
+  /**
+   * ⚠️ A FONTE. O detetive guarda `topLongos` (os dez vídeos LONGOS mais vistos) e
+   * ninguém a lia — o conversor do Short usa `topShorts` de propósito, porque um título
+   * de vídeo longo vende um clique e um Short já está a tocar antes de alguém o ler.
+   * Se esta lista desaparecer da colheita, isto tem de ficar vermelho.
+   */
+  const tendencias = existsSync(join(RAIZ, '.github', 'data', 'youtube-trends.json'))
+    ? JSON.parse(readFileSync(join(RAIZ, '.github', 'data', 'youtube-trends.json'), 'utf-8'))
+    : null;
+  ok('o detetive continua a guardar a lista dos vídeos LONGOS virais',
+    Array.isArray(tendencias?.topLongos) && tendencias.topLongos.length > 0,
+    `topLongos: ${tendencias?.topLongos?.length ?? 'não existe'}`);
+  ok('e cada um traz o que é preciso para se decidir sobre ele',
+    (tendencias?.topLongos || []).every((v) => v.videoId && v.title && Number.isFinite(v.duracaoSeg)));
 }
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════
