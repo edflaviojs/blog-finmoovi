@@ -1,11 +1,11 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-04T15:05:22.962Z
-**Totais:** 69 pendente(s) · 23 usada(s) · 16 pulada(s)
+**Atualizado em:** 2026-08-04T15:06:04.455Z
+**Totais:** 111 pendente(s) · 23 usada(s) · 16 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 47
+### Manuais (prioridade 1) — 89
 
 - fluxo de caixa _(glossario)_
 - saldo devedor _(glossario)_
@@ -54,6 +54,48 @@
 - qual o melhor horário para tomar banho e economizar energia​
 - qual a temperatura ideal do ar-condicionado para economizar energia​
 - porque é importante economizar água​
+- calculadora de investimento sardinha _(glossario)_
+- conceito de juros _(glossario)_
+- conceito de juros simples _(glossario)_
+- conceitos de juros _(glossario)_
+- conceitos de juros simples _(glossario)_
+- financiamento o que e _(glossario)_
+- juros de mora o que e _(glossario)_
+- juros o que e _(glossario)_
+- no contexto da economia a relacao entre consumo investimento _(glossario)_
+- o que e financeiro _(glossario)_
+- o que e finanças _(glossario)_
+- o que e juro _(glossario)_
+- o que e juros de mora _(glossario)_
+- o que e juros sobre capital proprio _(glossario)_
+- o que e montante _(glossario)_
+- o que e taxa _(glossario)_
+- o que e taxa de juros _(glossario)_
+- o que significa a palavra juro _(glossario)_
+- o que significa a palavra juros _(glossario)_
+- o que significa cred juros no extrato da caixa _(glossario)_
+- o que significa juros compostos _(glossario)_
+- o que significa juros de mora _(glossario)_
+- o que significa taxa _(glossario)_
+- oq significa juro _(glossario)_
+- quais investimentos tem juros compostos _(glossario)_
+- simulador de investimento sardinha _(glossario)_
+- taxa de investimento _(glossario)_
+- formas de economizar dinheiro _(glossario)_
+- gastar dinheiro _(glossario)_
+- gastar menos _(glossario)_
+- guardar dinheiro _(glossario)_
+- guardar dinheiro como _(glossario)_
+- juntar dinheiro em um ano _(glossario)_
+- meios de economizar energia _(glossario)_
+- melhores formas de guardar dinheiro _(glossario)_
+- metas para guardar dinheiro _(glossario)_
+- o que e poupar _(glossario)_
+- o que fazer para economizar energia _(glossario)_
+- o que significa economizar _(glossario)_
+- o que é economizar _(glossario)_
+- planejamento para guardar dinheiro _(glossario)_
+- planilha para economizar dinheiro _(glossario)_
 
 ### Lacunas do GSC (prioridade 2) — 8
 
