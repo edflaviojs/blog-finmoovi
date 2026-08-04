@@ -103,15 +103,36 @@ jobs:
       # defeito que fazia a música parecer que "cortava" (§42.1). Sem ffmpeg, o render
       # cai no método antigo e o vídeo sai com um buraco em cada capítulo, **sem falhar**.
       # Por isso confirma-se que existe, em vez de se assumir.
+      #
+      # 🔴 MEDIDO EM 04/08: **o ffmpeg NÃO existe na máquina da nuvem.** A 1ª corrida
+      # escreveu, com estas palavras, *"ffmpeg em falta — a instalar"*. Sem este passo o
+      # render caía no método antigo **sem falhar** e o vídeo saía com um buraco de som em
+      # cada capítulo — o defeito que custou um dia inteiro a caçar.
+      #
+      # 🔴 E MEDIDO NA 2ª CORRIDA: a instalação levou **22 segundos** na primeira e ficou
+      # **presa mais de 10 minutos** na segunda, com o código exatamente igual. É o
+      # instalador da máquina da nuvem a pendurar-se — acontece, e não é nosso.
+      # Portanto: tempo máximo em tudo (nada aqui pode ficar pendurado para sempre),
+      # tenta-se instalar SEM a atualização da lista primeiro (que é a parte que se
+      # pendura, e quase nunca é precisa), e só se isso falhar é que se atualiza.
+      # ⚠️ E no fim confere-se que o ffmpeg RESPONDE — nunca o código de saída do apt.
       - name: Garantir o ffmpeg (o costureiro do som)
         run: |
-          set -euo pipefail
+          set -uo pipefail
           if command -v ffmpeg >/dev/null && command -v ffprobe >/dev/null; then
-            echo "ffmpeg já cá está: $(ffmpeg -version | head -1)"
+            echo "ffmpeg já cá está."
           else
-            echo "ffmpeg em falta — a instalar."
-            sudo apt-get update -qq
-            sudo apt-get install -y -qq ffmpeg
+            echo "ffmpeg em falta — a instalar (sem atualizar a lista, que é o que se pendura)."
+            sudo timeout 300 apt-get install -y -qq ffmpeg || {
+              echo "::warning::não deu à primeira — a atualizar a lista e a tentar outra vez."
+              sudo timeout 300 apt-get update -qq || true
+              sudo timeout 600 apt-get install -y -qq ffmpeg || true
+            }
+          fi
+          # ⚠️ CONFERIR O RESULTADO, NUNCA O CÓDIGO DE SAÍDA — regra da casa.
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            echo "::error::o ffmpeg não ficou instalado. Sem ele o vídeo sairia com um buraco de som em cada capítulo, e SEM SE QUEIXAR. A corrida para aqui."
+            exit 1
           fi
           ffmpeg -version | head -1
           ffprobe -version | head -1
