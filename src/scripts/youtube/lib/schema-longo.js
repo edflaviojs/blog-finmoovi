@@ -574,6 +574,28 @@ function proibicoesGerais(fala, ondeEstou) {
 
   if (/\bshorts?\b/i.test(fala)) erros.push(`${ondeEstou}: a fala diz "Short" — o canal fala sempre "vídeo"`);
 
+  /**
+   * 🔴 O CANAL TRATA POR "VOCÊ", NUNCA POR "O SENHOR" — e isto foi MEDIDO no roteiro
+   * de 04/08, não é gosto.
+   *
+   * A persona do canal diz que o tom é *"um gerente de banco a explicar a um senhor
+   * humilde"*. O modelo leu "senhor" como a FORMA DE TRATAMENTO e começou a dirigir-se
+   * a quem assiste assim: *"E o senhor sabe por que parecia que nada andava?"*,
+   * *"o senhor para de bater cabeça"*. O vídeo abria em "você" e mudava para "o
+   * senhor" a meio — duas pessoas diferentes a falar com quem vê.
+   *
+   * ⚠️ A raiz está em `voz-do-canal.js`, que é PARTILHADO com o Short e por isso não
+   * se mexe sem ordem do dono (o Short pode ter o mesmo risco latente). O que se faz
+   * aqui é fechar a porta do lado do vídeo longo: a regra está no prompt E na trava.
+   */
+  const tratamento = fala.match(/\b(o|ao|do|pro|para o|com o) senhor(?!a)\b/i);
+  if (tratamento) {
+    erros.push(
+      `${ondeEstou}: trata quem assiste por "${tratamento[0]}" — neste canal fala-se sempre por "VOCÊ". `
+      + 'O "senhor humilde" da persona é a pessoa que se IMAGINA do outro lado, não a forma de a tratar.',
+    );
+  }
+
   const brinde = fala.match(BRINDES_PROIBIDOS);
   if (brinde) erros.push(`${ondeEstou}: promete "${brinde[0]}", que NÃO EXISTE — só há o app FinMoovi (grátis) e as calculadoras do blog`);
 

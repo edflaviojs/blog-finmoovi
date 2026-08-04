@@ -508,6 +508,9 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
     ['a chamada diz FINMOOVI', ['chamada'], /FINMOOVI/],
     ['o capítulo abre com pergunta', ['capitulo'], /PERGUNTA que dói/],
     ['a demonstração nomeia o app', ['capitulo'], /FinMoovi/],
+    ['trata por "você", nunca por "o senhor"', ['capitulo', 'abertura', 'fecho', 'chamada', 'mapa'], /NUNCA por "o senhor"/],
+    ['a abertura não gasta os números da história', ['abertura'], /NÃO GASTA OS NÚMEROS DA HISTÓRIA/],
+    ['os três atos têm nome e papel', ['capitulo', 'mapa'], /O SUSTO[\s\S]*A ARMADILHA[\s\S]*A VIRADA/],
   ];
 
   for (const [nome, onde, agulha] of alinhamento) {

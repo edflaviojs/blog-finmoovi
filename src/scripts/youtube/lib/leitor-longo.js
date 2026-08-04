@@ -95,6 +95,7 @@ ${O_QUE_PRESERVAR}
 ✓ Se uma parte já soa a gente, **deixe-a exatamente como está**. Editar de menos é melhor que editar de mais.
 
 🇧🇷 **PORTUGUÊS DO BRASIL FALADO.** Nada de "está a fazer" (no Brasil é "tá fazendo"), nada de "ecrã" nem "telemóvel".
+🔴 **TRATE SEMPRE POR "VOCÊ", NUNCA por "o senhor".** O senhor de setenta anos é quem você imagina a ouvir — não é como se fala com ele. Se o texto disser "o senhor", troque por "você".
 
 Responda APENAS com JSON válido, sem markdown:
 {
@@ -187,6 +188,7 @@ ${O_QUE_PRESERVAR}
 ✓ Se o texto já soa a gente, **devolva-o exatamente como está**. Editar de menos é melhor que editar de mais.
 
 🇧🇷 **PORTUGUÊS DO BRASIL FALADO.** Nada de "está a fazer" (no Brasil é "tá fazendo"), nada de "ecrã" nem "telemóvel".
+🔴 **TRATE SEMPRE POR "VOCÊ", NUNCA por "o senhor".** O senhor de setenta anos é quem você imagina a ouvir — não é como se fala com ele. Se o texto disser "o senhor", troque por "você".
 
 Responda APENAS com JSON válido, sem markdown:
 {
