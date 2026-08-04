@@ -162,7 +162,11 @@ export const BackgroundMusic: React.FC<{
     // ⚠️ A rampa cabe DENTRO da janela: sobe quando a voz cala e já está em baixo quando
     // ela volta. Numa janela curta demais para duas rampas, cada uma fica com metade —
     // senão a subida e a descida cruzavam-se e o leito nunca chegava a subir.
-    const meia = Math.min(rampa, Math.floor((j.ate - j.de) / 2));
+    // ⚠️ E o `-1` não é enfeite: sem ele, uma janela com exatamente o dobro da rampa dá
+    // dois pontos IGUAIS no meio, e o `interpolate` do Remotion exige uma escada sempre a
+    // subir — rebentaria o render inteiro. Não acontece com as janelas de hoje (o piso
+    // são 0,8s), mas esta peça é partilhada e uma armadilha destas espera anos.
+    const meia = Math.min(rampa, Math.floor((j.ate - j.de - 1) / 2));
     if (meia < 1) return BED_VOLUME;
     return interpolate(
       absoluto,
