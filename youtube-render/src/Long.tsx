@@ -396,7 +396,13 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
   return (
     <AbsoluteFill>
       <Background />
-      <BackgroundMusic ficheiro={script.music?.ficheiro} />
+      {/* ⚠️ COSTURA CRUZADA — e é o conserto de uma queixa do dono, medida com régua.
+          As faixas foram cortadas a 75s (34s, a leve) para Shorts, e trazem um
+          desvanecimento gravado no fim. Num vídeo de seis minutos elas recomeçavam
+          cinco vezes, e o último segundo estava 13 dB abaixo do primeiro: a música
+          morria e voltava de repente. Aqui as passagens sobrepõem-se; no Short fica
+          como estava. Ver o comentário longo em `audio/music.tsx`. */}
+      <BackgroundMusic ficheiro={script.music?.ficheiro} costura="cruzada" />
       <Watermark />
 
       <Sequence from={VOZ_ENTRA_FRAMES}>
