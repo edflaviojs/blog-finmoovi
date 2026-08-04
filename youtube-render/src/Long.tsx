@@ -31,6 +31,7 @@ import React from 'react';
 import { AbsoluteFill, Audio, Loop, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Background, Watermark, SignatureOutro, TelaBordao, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES } from './scenes';
 import { BackgroundMusic } from './audio/music';
+import type { JanelaSemVoz } from './audio/music';
 import { activeIndex, wordTimingsFromReal, layoutWords } from './captions';
 import { CoreografiaDaCapa } from './capas';
 import { PALCO_W, PALCO_H } from './capa';
@@ -525,6 +526,33 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
   const timingDe = (id: number) => timing?.scenes?.find((t) => String(t.id) === String(id));
 
   /**
+   * ⚠️ AS JANELAS EM QUE NÃO HÁ VOZ — e é aqui que se conserta o "corte" da música.
+   *
+   * O dono: *"o som meio que diminui rapidamente e volta já assim que essa tela inicia"*.
+   * Medido nos três cartões do vídeo que ele ouviu: o volume total cai **12 a 13 dB**
+   * quando a narração acaba, e volta de repente quando a cena seguinte começa. Não é a
+   * música — é a ausência da voz. Ver a tabela toda em `audio/music.tsx`.
+   *
+   * A janela é o buraco INTEIRO, não só o cartão: começa na última palavra dita da cena
+   * anterior (não no fim do ficheiro de áudio, que ainda traz cauda muda) e acaba quando
+   * a cena seguinte arranca. São ~3,3 segundos, dos quais 2,6 são o cartão.
+   *
+   * ⚠️ Só nos cartões. Entre duas cenas normais o silêncio é o respiro de 0,35s — não
+   * chega para duas rampas de 0,25s, e uma música a saltar de meio em meio segundo seria
+   * um defeito novo em vez de um conserto. Daí o piso de 0,8s.
+   */
+  const janelasSemVoz: JanelaSemVoz[] = cartoes.flatMap((c, i) => {
+    if (c < 0 || i === 0) return [];
+    const anterior = timingDe(script.scenes[i - 1].id);
+    const ditas = anterior?.words;
+    const fimDaFala = ditas?.length ? ditas[ditas.length - 1].end : anterior?.durationSec;
+    if (!Number.isFinite(fimDaFala)) return [];
+    const de = VOZ_ENTRA_FRAMES + inicios[i - 1] + Math.round((fimDaFala as number) * fps);
+    const ate = VOZ_ENTRA_FRAMES + inicios[i];
+    return ate - de >= Math.round(0.8 * fps) ? [{ de, ate }] : [];
+  });
+
+  /**
    * ⚠️ QUANTO TEMPO A CAPA FICA NO ECRÃ — e isto foi MEDIDO, não estimado.
    *
    * A 1ª versão deixava a capa até ao fim da CENA 1. Medido no vídeo real: a voz
@@ -565,7 +593,7 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
           cinco vezes, e o último segundo estava 13 dB abaixo do primeiro: a música
           morria e voltava de repente. Aqui as passagens sobrepõem-se; no Short fica
           como estava. Ver o comentário longo em `audio/music.tsx`. */}
-      <BackgroundMusic ficheiro={script.music?.ficheiro} costura="cruzada" />
+      <BackgroundMusic ficheiro={script.music?.ficheiro} costura="cruzada" janelasSemVoz={janelasSemVoz} />
       <Watermark />
 
       <Sequence from={VOZ_ENTRA_FRAMES}>

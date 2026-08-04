@@ -72,7 +72,55 @@ const FAIXAS: Record<string, { usavelSec: number }> = {
  *  troca não se notar, e cabe folgado nos 3s de desvanecimento que estamos a saltar. */
 const CRUZAMENTO_SEC = 2;
 
-export const BackgroundMusic: React.FC<{ ficheiro?: string; costura?: CosturaDaMusica }> = ({ ficheiro, costura = 'reinicio' }) => {
+/**
+ * ═══ 🔊 A MÚSICA SOBE QUANDO A NARRAÇÃO PÁRA (04/08/2026) ═══
+ *
+ * O dono, sobre a passagem de capítulo: *"ainda continua uma interrupção da música que
+ * fica parecendo que foi cortada… **o som meio que diminui rapidamente e volta já assim
+ * que essa tela inicia**."*
+ *
+ * 🔴 **NÃO É A MÚSICA QUE CORTA. É A VOZ QUE DESAPARECE.** Foram três tentativas a
+ * procurar o defeito na música — as faixas curtas, o desvanecimento gravado, o apito
+ * cómico — e todas erraram o alvo, porque o alvo não estava aqui dentro.
+ *
+ * MEDIDO no vídeo que ele ouviu (perfil de 100 em 100 ms, os três cartões):
+ *
+ * | | com voz | na janela do cartão | queda |
+ * |---|---|---|---|
+ * | capítulo 1 | -25,1 dB | -38,2 dB | **13,2 dB** |
+ * | capítulo 2 | -25,9 dB | -38,3 dB | **12,4 dB** |
+ * | capítulo 3 | -25,1 dB | -37,0 dB | **11,9 dB** |
+ *
+ * Doze decibéis é o mesmo que baixar o som a um quarto — e acontece em duas décimas de
+ * segundo, porque a voz acaba de repente. O ouvido não regista "acabou a narração",
+ * regista "cortaram o som".
+ *
+ * A CURA é a que o cinema usa há cem anos: **o leito da música sobe para preencher o
+ * buraco e desce quando a voz volta**, em rampa curta. A janela não é só o cartão — é
+ * todo o tempo SEM VOZ (o respiro do fim da cena anterior + os 2,6s do cartão), porque é
+ * esse o buraco inteiro. Quem calcula as janelas é o `Long.tsx`, que é o único sítio
+ * onde a linha do tempo existe.
+ *
+ * ⚠️ **SÓ NO RAMO DA COSTURA CRUZADA, e não é preguiça — é a mesma armadilha do §36.1.**
+ * O caminho por omissão usa `loop`, e o `<Loop>` do Remotion **reinicia a contagem de
+ * fotogramas a cada volta**: lá dentro não se sabe em que segundo do vídeo estamos, logo
+ * não há como saber se este instante é ou não um cartão. Aqui, o fotograma é absoluto e
+ * a conta é fiável. O Short usa o caminho por omissão, portanto **o vídeo diário sai
+ * exatamente igual** — e isso está provado byte a byte.
+ */
+export type JanelaSemVoz = { de: number; ate: number }; // fotogramas ABSOLUTOS do vídeo
+
+/** O leito sobe de 0,12 para isto enquanto não há voz. +8 dB — corta a queda medida de
+ *  ~13 dB para ~5, que é a diferença entre "cortaram o som" e "a música respirou". */
+const SWELL_VOLUME = 0.3;
+/** A rampa. Curta demais volta a ser um degrau; longa demais e o cartão já passou. */
+const SWELL_RAMPA_SEC = 0.25;
+
+export const BackgroundMusic: React.FC<{
+  ficheiro?: string;
+  costura?: CosturaDaMusica;
+  janelasSemVoz?: JanelaSemVoz[];
+}> = ({ ficheiro, costura = 'reinicio', janelasSemVoz }) => {
   const { fps, durationInFrames } = useVideoConfig();
   const src = ficheiro || TRACK_POR_OMISSAO;
   const fade = Math.min(Math.round(fps * 0.6), Math.floor(durationInFrames / 2));
@@ -102,15 +150,40 @@ export const BackgroundMusic: React.FC<{ ficheiro?: string; costura?: CosturaDaM
   const passo = usavel - cruz; // de quanto em quanto tempo entra uma passagem nova
   const passagens = Math.max(1, Math.ceil((durationInFrames - cruz) / passo));
 
+  /**
+   * O LEITO neste instante: 0,12 quando há voz, 0,30 nas janelas em que ela não existe.
+   * Sem janelas, devolve sempre 0,12 — que é o comportamento de sempre.
+   */
+  const rampa = Math.max(1, Math.round(SWELL_RAMPA_SEC * fps));
+  const leito = (absoluto: number) => {
+    if (!janelasSemVoz?.length) return BED_VOLUME;
+    const j = janelasSemVoz.find((x) => absoluto >= x.de && absoluto <= x.ate);
+    if (!j) return BED_VOLUME;
+    // ⚠️ A rampa cabe DENTRO da janela: sobe quando a voz cala e já está em baixo quando
+    // ela volta. Numa janela curta demais para duas rampas, cada uma fica com metade —
+    // senão a subida e a descida cruzavam-se e o leito nunca chegava a subir.
+    const meia = Math.min(rampa, Math.floor((j.ate - j.de) / 2));
+    if (meia < 1) return BED_VOLUME;
+    return interpolate(
+      absoluto,
+      [j.de, j.de + meia, j.ate - meia, j.ate],
+      [BED_VOLUME, SWELL_VOLUME, SWELL_VOLUME, BED_VOLUME],
+      { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
+    );
+  };
+
   /** O fade do princípio e do fim do VÍDEO. Ao contrário do caminho de cima, aqui ele
-   *  é calculado sobre o fotograma absoluto — é por isso que agora funciona mesmo. */
+   *  é calculado sobre o fotograma absoluto — é por isso que agora funciona mesmo.
+   *  ⚠️ O fade passou a ser um FATOR (0→1) multiplicado pelo leito. Sem janelas dá
+   *  exatamente o mesmo número de antes: interpolar até 0,12 ou interpolar até 1 e
+   *  multiplicar por 0,12 é a mesma reta. */
   const envelopeDoVideo = (absoluto: number) =>
     interpolate(
       absoluto,
       [0, fade, durationInFrames - fade, durationInFrames],
-      [0, BED_VOLUME, BED_VOLUME, 0],
+      [0, 1, 1, 0],
       { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' },
-    );
+    ) * leito(absoluto);
 
   return (
     <>
