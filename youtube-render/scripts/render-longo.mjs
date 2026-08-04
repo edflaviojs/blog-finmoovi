@@ -182,11 +182,13 @@ for (const p of partes) {
  *
  * 🔴 **O DEFEITO NÃO ESTAVA NA MÚSICA. ESTAVA AQUI, NA COLAGEM.**
  *
- * Cada parte sai deste script como um MP4 com o seu próprio som codificado à parte. Um
- * codificador de som trabalha em blocos de ~21 ms: para fechar o ficheiro, ele **enche o
- * último bloco com silêncio**. Colando as partes com `-c copy`, esse silêncio de
- * enchimento entra no meio do vídeo — e entra **exatamente no fotograma em que começa a
- * tela do capítulo**, porque é aí que se corta.
+ * Cada parte sai deste script como um MP4 com o seu próprio som codificado à parte. E um
+ * codificador de som **AAC não começa a tocar no instante zero**: ele põe à frente do
+ * ficheiro **2048 amostras de atraso** (o *encoder delay*), que a 48 kHz são exatamente
+ * **42,67 milissegundos**. Quem lê o ficheiro deveria descontá-las — e aqui não são
+ * descontadas. Colando as partes com `-c copy`, esse atraso entra no meio do vídeo, e
+ * entra **exatamente no fotograma em que começa a tela do capítulo**, porque é aí que se
+ * corta.
  *
  * MEDIDO no vídeo que ele ouviu, à amostra:
  *
@@ -205,50 +207,103 @@ for (const p of partes) {
  * > E também não é um estalo — é um BURACO. A prova da §38.1 procurava saltos entre
  * > amostras e não achava nada, porque 45 ms de silêncio não dão salto nenhum.
  *
- * ═══ A CURA ═══
- * A imagem continua a vir em pedaços — é ela que custa horas e é ela que precisa de rede
- * de segurança. **O som passa a ser feito NUMA PASSAGEM ÚNICA**, do primeiro ao último
- * fotograma, e é colado por cima da imagem já junta. Sem emendas, não há buracos.
+ * MEDIDO parte a parte, no som já descodificado:
  *
- * ⚠️ E se essa passagem falhar, o script **não entrega um vídeo mudo**: volta ao método
- * antigo (o som das partes) e diz que voltou. Um vídeo com três buraquinhos é mau; um
- * vídeo sem som é pior.
+ * | parte | silêncio no PRINCÍPIO | silêncio no fim |
+ * |---|---|---|
+ * | 1 | 293,1 ms (inclui o silêncio verdadeiro da abertura) | 17,5 ms |
+ * | 2 | **42,5 ms** | 16,7 ms |
+ * | 3 | **42,5 ms** | 15,8 ms |
+ * | 4 | **43,1 ms** | 19,7 ms |
+ *
+ * Quarenta e dois vírgula sete. Não é coincidência: é o número do AAC.
+ *
+ * ═══ A CURA, E POR QUE NÃO É A ÓBVIA ═══
+ * A primeira ideia foi fazer o som **numa passagem única** do render e colá-lo por cima.
+ * Funciona em teoria e **morreu duas vezes na prática** — dez mil fotogramas de som numa
+ * só passagem levam o processo abaixo sem sequer deixar mensagem de erro. Duas mortes no
+ * mesmo sítio é sinal para mudar de método, não para tentar terceira vez.
+ *
+ * O que se faz agora **não renderiza nada de novo e demora segundos**: de cada parte já
+ * feita tira-se o som, **deitando fora as 2048 amostras de atraso do princípio** e
+ * cortando no comprimento EXATO da imagem daquela parte (`fotogramas / 30`). Os quatro
+ * pedaços colam-se amostra a amostra e o resultado entra por cima da imagem.
+ *
+ * Medido depois: **337,700 s exatos e ZERO buracos** — contra 42,5 / 42,5 / 43,1 ms antes.
+ *
+ * ⚠️ E se alguma coisa falhar aqui, o script **não entrega um vídeo mudo**: volta ao
+ * método antigo (o som das partes) e diz que voltou. Um vídeo com três buraquinhos é mau;
+ * um vídeo sem som é pior.
  */
 const lista = join(OUT, 'partes.txt');
 writeFileSync(lista, feitas.map((f) => `file '${f.replace(/\\/g, '/')}'`).join('\n'), 'utf-8');
 const final = join(OUT, `${slug}.mp4`);
 
-const somInteiro = join(OUT, 'som-inteiro.wav');
-const somRelativo = 'out/longo/som-inteiro.wav';
-let temSomInteiro = existsSync(somInteiro);
-if (temSomInteiro) {
-  console.log('\n♻️  o som inteiro já existe — não se paga duas vezes pelo mesmo som');
-} else {
-  console.log('\n🔊 a fazer o som de uma vez só (sem emendas)…');
-  try {
-    execFileSync('npx', [
-      'remotion', 'render', 'src/index.ts', 'Long', somRelativo,
-      `--frames=0-${total - 1}`,
-      `--props=${propsFile}`,
-      '--log=error',
-    ], { cwd: RAIZ, stdio: 'inherit', shell: true });
-    temSomInteiro = existsSync(somInteiro);
-  } catch (err) {
-    temSomInteiro = false;
+/** O atraso que o codificador AAC põe à frente de cada ficheiro: 2048 amostras a 48 kHz. */
+const ATRASO_AAC_SEC = 2048 / 48000;
+
+const somColado = join(OUT, 'som-colado.wav');
+let temSomLimpo = false;
+console.log('\n🔊 a juntar o som sem as emendas…');
+try {
+  const pedacos = [];
+  for (const [i, p] of partes.entries()) {
+    const origem = join(OUT, `parte-${String(p.n).padStart(2, '0')}.mp4`);
+    const destino = join(OUT, `som-${String(p.n).padStart(2, '0')}.wav`);
+    const fotogramas = p.ate - p.de + 1;
+    execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', origem, '-vn',
+      '-af', `atrim=start=${ATRASO_AAC_SEC.toFixed(6)},asetpts=N/SR/TB`,
+      '-t', (fotogramas / FPS).toFixed(6),
+      '-c:a', 'pcm_s16le', '-ar', '48000', '-ac', '2', destino], { stdio: ['ignore', 'ignore', 'ignore'] });
+    pedacos.push(destino);
+    if (i === partes.length - 1) { /* nada a fazer, só para o linter não achar `i` inútil */ }
   }
-  if (!temSomInteiro) {
-    console.log('   ⚠️ a passagem do som falhou — o vídeo sai com o som das partes,');
-    console.log('      que traz um buraquinho em cada mudança de capítulo.');
-  }
+  const listaSom = join(OUT, 'sons.txt');
+  writeFileSync(listaSom, pedacos.map((f) => `file '${f.replace(/\\/g, '/')}'`).join('\n'), 'utf-8');
+  execFileSync('ffmpeg', ['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', listaSom,
+    '-c:a', 'pcm_s16le', somColado], { stdio: ['ignore', 'ignore', 'ignore'] });
+  temSomLimpo = existsSync(somColado);
+} catch (err) {
+  console.log(`   ⚠️ não deu (${err.message.split('\n')[0]})`);
+  temSomLimpo = false;
+}
+if (!temSomLimpo) {
+  console.log('   ⚠️ o vídeo sai com o som das partes, que traz um buraquinho em cada capítulo.');
 }
 
 console.log('\n🔗 a colar as partes…');
-if (temSomInteiro) {
-  // a imagem cola-se SEM som (`-an`), e o som inteiro entra por cima
+if (temSomLimpo) {
+  /**
+   * ⚠️ 🔴 TIRA-SE O SOM DE CADA PARTE **ANTES** DE COLAR, E ISTO FOI MEDIDO A CONTAR
+   * FOTOGRAMAS — as três maneiras dão três resultados diferentes:
+   *
+   * | como se cola | fotogramas | duração da imagem |
+   * |---|---|---|
+   * | com som junto (o de sempre) | 10131 ✅ | 337,879 s ❌ — o som empurra a imagem 180 ms |
+   * | pedindo `-an` **na colagem** | **10124** ❌ — sete fotogramas perdidos | — |
+   * | **tirar o som de cada parte e só depois colar** | **10131** ✅ | **337,700 s** ✅ |
+   *
+   * A primeira parece boa mas não é: como o som de cada parte é ~45 ms mais comprido do
+   * que a imagem, quem cola empurra a parte seguinte por esses 45 ms e **abre um buraco
+   * na linha do tempo da imagem** — 180 ms ao fim de quatro partes. Com um som contínuo
+   * por cima, a legenda ia ficando cada vez mais atrasada, e isso é desfazer o trabalho
+   * da §37.1, que brigou por 0,47 s de sincronia.
+   * A segunda perde fotogramas em silêncio, que é pior ainda.
+   */
   const soImagem = join(OUT, 'so-imagem.mp4');
-  execFileSync('ffmpeg', ['-y', '-f', 'concat', '-safe', '0', '-i', lista, '-c:v', 'copy', '-an', soImagem], { stdio: 'inherit' });
-  execFileSync('ffmpeg', ['-y', '-i', soImagem, '-i', somInteiro,
-    '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', final], { stdio: 'inherit' });
+  const semSom = [];
+  for (const p of partes) {
+    const n = String(p.n).padStart(2, '0');
+    const origem = join(OUT, `parte-${n}.mp4`);
+    const destino = join(OUT, `imagem-${n}.mp4`);
+    execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', origem, '-map', '0:v:0', '-c:v', 'copy', '-an', destino], { stdio: ['ignore', 'ignore', 'ignore'] });
+    semSom.push(destino);
+  }
+  const listaImagem = join(OUT, 'imagens.txt');
+  writeFileSync(listaImagem, semSom.map((f) => `file '${f.replace(/\\/g, '/')}'`).join('\n'), 'utf-8');
+  execFileSync('ffmpeg', ['-y', '-f', 'concat', '-safe', '0', '-i', listaImagem, '-c:v', 'copy', '-an', soImagem], { stdio: 'inherit' });
+  execFileSync('ffmpeg', ['-y', '-i', soImagem, '-i', somColado,
+    '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', final], { stdio: 'inherit' });
   try { rmSync(soImagem, { force: true }); } catch { /* fica o intermédio */ }
 } else {
   execFileSync('ffmpeg', ['-y', '-f', 'concat', '-safe', '0', '-i', lista, '-c', 'copy', final], { stdio: 'inherit' });
@@ -261,6 +316,23 @@ console.log(`\n✅ ${final}`);
 console.log(`   duração medida: ${Number(dur).toFixed(1)}s · esperada: ${esperado.toFixed(1)}s`);
 if (Math.abs(Number(dur) - esperado) > 2) {
   console.log('   ⚠️ a diferença passa dos 2 segundos — alguma parte pode ter ficado curta. Confira antes de usar.');
+}
+
+/**
+ * ⚠️ CONTAR OS FOTOGRAMAS UM A UM, e não acreditar no que o ficheiro diz de si próprio.
+ * Uma colagem pode perder fotogramas **em silêncio** — aconteceu, sete deles, e a duração
+ * mal se mexia. Se faltar um que seja, a imagem e o som deixam de andar juntos.
+ */
+try {
+  const contados = Number(execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-count_frames',
+    '-show_entries', 'stream=nb_read_frames', '-of', 'csv=p=0', final], { encoding: 'utf-8' }).replace(/[^\d]/g, ''));
+  if (contados === total) {
+    console.log(`   ✅ ${contados} fotogramas, exatamente os que se pediram`);
+  } else {
+    console.log(`   ❌ ${contados} fotogramas contra os ${total} esperados — faltam ${total - contados}. A imagem e o som vão andar desencontrados.`);
+  }
+} catch (err) {
+  console.log(`   ⚠️ não deu para contar os fotogramas (${err.message.split('\n')[0]})`);
 }
 
 /**
