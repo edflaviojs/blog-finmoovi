@@ -1,0 +1,281 @@
+name: YouTube — Vídeo longo (semanal)
+
+# ♦ O ROBÔ DO VÍDEO LONGO — IMPLEMENTACAO20 §44.
+#
+# ═══ 🔴 O RELÓGIO ESTÁ DESLIGADO, E ISSO É DE PROPÓSITO ═══
+# O `schedule` está comentado em baixo. Enquanto assim estiver, este robô SÓ corre
+# quando alguém carrega no botão. Há duas razões, e as duas são de verdade:
+#
+#   1. **Ninguém sabe quanto tempo dez mil fotogramas demoram nesta máquina da nuvem.**
+#      No portátil do dono o render foi morto TRÊS vezes por ser demasiado longo (§43.6).
+#      Ligar um relógio a um trabalho de duração desconhecida é assinar um cheque em
+#      branco. Primeiro mede-se — e é para isso que serve o botão.
+#   2. 🔴 **COLISÃO DE DATAS.** O primeiro vídeo (`sair-do-vermelho`) é subido À MÃO pelo
+#      dono e estreia **domingo 09/08 às 19h00 do Brasil**. Se o relógio estivesse ligado,
+#      o robô produzia no sábado 08 e marcava OUTRO vídeo para a MESMA hora.
+#
+# ═══ QUANDO SE LIGAR: SÁBADO, PRIVADO, COM A ESTREIA MARCADA ═══
+# O relógio a usar é `0 2 * * 6` — sábado às 02:00 universais (23h00 de sexta no Brasil).
+# ⚠️ **A hora foi escolhida, não sorteada:** o relógio do GitHub neste repositório já
+# atrasou **112 minutos** (medido — memória `blog-workflows-infra`), e a carga concentra-se
+# entre as 05:00 e as 12:00 universais, onde estão 50 agendamentos. Às 02:00 não está lá
+# quase ninguém, e sobram ~20 horas de folga até à estreia.
+#
+# E o atraso do relógio deixa de importar, porque **quem garante o segundo exato é o
+# YouTube**: o vídeo sobe privado com a estreia marcada. O dono tem um dia inteiro para o
+# ver no Studio antes de ir ao ar. Ver o cabeçalho de `upload-longo.js`.
+#
+# ═══ ⚠️ NADA AQUI TOCA NO ROBÔ DIÁRIO ═══
+# Grupo de execução próprio (o do Short chama-se "youtube-short-daily"), fila própria,
+# caderno próprio. O Short continua a produzir às 06:30 e a publicar às 15:00, sem saber
+# que isto existe.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Qual vídeo (o nome curto). Vazio = o primeiro por fazer na fila de temas.'
+        required: false
+        default: 'sair-do-vermelho'
+      gerar:
+        description: 'Escrever um guião NOVO (gasta IA). Desligado = usa o guião que já está no repositório.'
+        type: boolean
+        required: false
+        default: false
+      publicar:
+        description: '⚠️ Subir ao YouTube (privado, com a estreia marcada). Desligado = só faz o vídeo e guarda-o aqui.'
+        type: boolean
+        required: false
+        default: false
+  # ⚠️ NÃO DESCOMENTAR sem ter lido o cabeçalho. Ver as duas razões lá em cima.
+  # schedule:
+  #   - cron: '0 2 * * 6'   # sábado 02:00 UTC = sexta 23h00 no Brasil
+
+permissions:
+  contents: write
+
+# Grupo PRÓPRIO — nunca o "youtube-short-daily" do robô diário.
+concurrency:
+  group: youtube-longo-${{ github.event.inputs.slug || 'semanal' }}
+  cancel-in-progress: false
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    # ⚠️ São ~10 mil fotogramas. O teto do GitHub para um trabalho é de 6 horas; 5 dá
+    # folga e ainda avisa em vez de ficar pendurado.
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      # ⚠️ O SOM DO VÍDEO LONGO É COSTURADO COM O ffmpeg, E NÃO PELO RENDER.
+      # É ele que deita fora as 2048 amostras de atraso do princípio de cada parte — o
+      # defeito que fazia a música parecer que "cortava" (§42.1). Sem ffmpeg, o render
+      # cai no método antigo e o vídeo sai com um buraco em cada capítulo, **sem falhar**.
+      # Por isso confirma-se que existe, em vez de se assumir.
+      - name: Garantir o ffmpeg (o costureiro do som)
+        run: |
+          set -euo pipefail
+          if command -v ffmpeg >/dev/null && command -v ffprobe >/dev/null; then
+            echo "ffmpeg já cá está: $(ffmpeg -version | head -1)"
+          else
+            echo "ffmpeg em falta — a instalar."
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq ffmpeg
+          fi
+          ffmpeg -version | head -1
+          ffprobe -version | head -1
+
+      - name: Instalar dependências (blog)
+        run: npm ci
+
+      # ⚠️ AS PROVAS CORREM PRIMEIRO, E É POR ISSO QUE ESTÃO AQUI EM CIMA.
+      # Elas não gastam nada e demoram segundos. Descobrir que a hora de estreia está mal
+      # calculada DEPOIS de cinco horas de render é deitar fora cinco horas — e a corrida
+      # seguinte só cabe no dia seguinte.
+      - name: As provas de mesa (não gastam nada)
+        run: |
+          node src/scripts/validacao/validar-roteiro-longo.js
+          node src/scripts/validacao/validar-publicacao-longo.js
+
+      - name: Escolher o vídeo da semana
+        id: escolher
+        run: |
+          SLUG="${{ github.event.inputs.slug }}"
+          if [ -z "$SLUG" ]; then
+            # ⚠️ Fila vazia devolve 78 e isso é SUCESSO, não avaria. Mesmo rito do Short.
+            set +e
+            SLUG="$(node src/scripts/youtube/pick-next-longo.js)"
+            CODE=$?
+            set -e
+            if [ "$CODE" = "78" ]; then
+              echo "📭 a fila de temas do vídeo longo está vazia — nada a fazer hoje."
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            if [ "$CODE" != "0" ]; then echo "❌ a fila falhou (código $CODE)"; exit "$CODE"; fi
+          fi
+          echo "🎬 vídeo da semana: $SLUG"
+          echo "SLUG=$SLUG" >> "$GITHUB_ENV"
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      # ── 1. O GUIÃO ────────────────────────────────────────────────────────────
+      # Só quando se pede. Por omissão usa-se o guião que já está no repositório, para a
+      # medição ser sobre um vídeo CONHECIDO e não gastar IA à toa.
+      - name: Escrever o guião (só quando se pede)
+        if: steps.escolher.outputs.skip != 'true' && github.event.inputs.gerar == 'true'
+        env:
+          KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: |
+          set -euo pipefail
+          node src/scripts/youtube/pick-next-longo.js --como-argumentos --slug="$SLUG" > /tmp/tema.args
+          echo "tema escolhido:"; cat /tmp/tema.args
+          # ⚠️ UM ARGUMENTO POR LINHA (`-d '\n'`). Os temas trazem dois pontos, vírgulas e
+          # acentos; deixar o separador por conta do espaço partiria o tema a meio — que é
+          # exatamente o defeito nº 10 de §34.3, o caminho com um espaço a partir o comando.
+          xargs -d '\n' -a /tmp/tema.args node src/scripts/youtube/roteiro-longo.js --slug="$SLUG"
+
+      # ── 1-b. AS CENAS E AS IMAGENS ────────────────────────────────────────────
+      # ⚠️ CORRE SEMPRE, mesmo quando o guião já vinha escrito. O montador é que parte o
+      # texto em cenas e escolhe o que aparece em cada uma — e é **determinista**: há uma
+      # prova a dizer que *"o mesmo guião dá sempre exatamente as mesmas imagens"*. Por
+      # isso a pasta das cenas não vai para o repositório: refaz-se aqui, igual, de graça.
+      - name: Partir o guião em cenas e escolher as imagens
+        if: steps.escolher.outputs.skip != 'true'
+        run: |
+          set -euo pipefail
+          test -f "src/scripts/youtube/output/$SLUG.longo.json" || {
+            echo "❌ não há guião escrito para \"$SLUG\"."
+            echo "   Ou se liga o \"gerar\" (escreve um novo), ou o guião tem de estar no repositório."
+            exit 1
+          }
+          node src/scripts/youtube/montar-longo.js --slug="$SLUG"
+          test -f "youtube-render/public/roteiro/$SLUG.json" || { echo "❌ o montador não deixou o guião no sítio."; exit 1; }
+          node -e "const p=require('./youtube-render/public/roteiro/'+process.env.SLUG+'.json');console.log('✅ '+p.scenes.length+' cenas · '+p.palavras+' palavras · '+p.scenes.filter(s=>s.visual&&s.visual.tipo==='foto').length+' fotografias');"
+
+      # ── 2. A VOZ ─────────────────────────────────────────────────────────────
+      # ⚠️ O tratamento de som da voz liga-se sozinho pelo FORMATO do guião (longo), e o
+      # Short nunca o apanha por acidente. Ver §43.1.
+      - name: A voz, e os tempos medidos palavra a palavra
+        if: steps.escolher.outputs.skip != 'true'
+        env:
+          TOGETHER_TTS_API_KEY: ${{ secrets.TOGETHER_TTS_API_KEY }}
+        run: node src/scripts/youtube/tts-short.js --slug="$SLUG"
+
+      # ── 3. AS LEGENDAS ───────────────────────────────────────────────────────
+      # ⚠️ O gerador é PRÓPRIO do longo. O do Short punha a legenda até 7,13 s adiantada
+      # neste vídeo — a linha do tempo é outra (respiro, transições, cartões de capítulo).
+      # Está tudo medido no cabeçalho de `srt-longo.js`.
+      - name: As legendas (pt/en/es)
+        if: steps.escolher.outputs.skip != 'true'
+        env:
+          KIE_AI_KEY: ${{ secrets.KIE_AI_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+        run: node src/scripts/youtube/srt-longo.js --slug="$SLUG"
+
+      # ── 4. A DESCRIÇÃO ───────────────────────────────────────────────────────
+      - name: A descrição, com os capítulos cronometrados sobre a voz real
+        if: steps.escolher.outputs.skip != 'true'
+        run: node src/scripts/youtube/descricao-longo.js --slug="$SLUG"
+
+      - name: Instalar dependências (render)
+        if: steps.escolher.outputs.skip != 'true'
+        working-directory: youtube-render
+        run: npm ci
+
+      # ── 5. O VÍDEO ───────────────────────────────────────────────────────────
+      # ⚠️ O render é por PARTES, cortadas nos limites dos capítulos, e a colagem tira o
+      # som de cada parte ANTES de colar. Ele traz as suas próprias provas: conta os
+      # fotogramas UM A UM (nunca acredita na duração declarada) e varre o som à procura
+      # de buracos. O `--concurrency=2` já vive lá dentro.
+      - name: Fazer o vídeo (~10 mil fotogramas)
+        id: render
+        if: steps.escolher.outputs.skip != 'true'
+        working-directory: youtube-render
+        run: |
+          set -euo pipefail
+          COMECOU=$(date +%s)
+          node scripts/render-longo.mjs --slug="$SLUG"
+          ACABOU=$(date +%s)
+          MINUTOS=$(( (ACABOU - COMECOU) / 60 ))
+          echo "MINUTOS_DO_RENDER=$MINUTOS" >> "$GITHUB_ENV"
+          echo "⏱️  o vídeo levou $MINUTOS minutos a ser feito."
+
+      # ⚠️ CONFERIR O RESULTADO, NUNCA O CÓDIGO DE SAÍDA — a regra desta casa. O render já
+      # se confere a si próprio, mas quem lê isto quer o número à vista, e a MEDIÇÃO DO
+      # TEMPO é a razão de ser desta primeira corrida.
+      - name: O que saiu, em números
+        if: steps.escolher.outputs.skip != 'true'
+        run: |
+          set -euo pipefail
+          MP4="youtube-render/out/longo/$SLUG.mp4"
+          test -f "$MP4" || { echo "❌ o vídeo não existe: $MP4"; exit 1; }
+          FOTOGRAMAS=$(ffprobe -v error -select_streams v:0 -count_frames -show_entries stream=nb_read_frames -of csv=p=0 "$MP4" | tr -d '\r\n,')
+          SEGUNDOS=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$MP4")
+          TAMANHO=$(du -h "$MP4" | cut -f1)
+          {
+            echo "## 🎬 $SLUG"
+            echo ""
+            echo "| | |"
+            echo "|---|---|"
+            echo "| fotogramas (contados um a um) | **$FOTOGRAMAS** |"
+            echo "| duração | $SEGUNDOS s |"
+            echo "| tamanho | $TAMANHO |"
+            echo "| **minutos que o vídeo levou a ser feito** | **$MINUTOS_DO_RENDER** |"
+            echo "| legendas | $(ls youtube-render/public/audio/$SLUG/*.srt 2>/dev/null | wc -l) |"
+            echo ""
+            echo "> É este o número que decide se o relógio de sábado se pode ligar."
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "✅ $FOTOGRAMAS fotogramas · $SEGUNDOS s · $TAMANHO · $MINUTOS_DO_RENDER min a fazer"
+
+      - name: Guardar o vídeo, as legendas e a descrição
+        if: steps.escolher.outputs.skip != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: longo-${{ env.SLUG }}
+          path: |
+            youtube-render/out/longo/${{ env.SLUG }}.mp4
+            youtube-render/public/audio/${{ env.SLUG }}/*.srt
+            src/scripts/youtube/output/${{ env.SLUG }}.descricao.txt
+          if-no-files-found: error
+          retention-days: 30
+
+      # ── 6. A SUBIDA ──────────────────────────────────────────────────────────
+      # ⚠️ Só quando se pede. Sobe PRIVADO, com a estreia marcada para o próximo domingo
+      # às 19h00 do Brasil — e o próprio programa confirma com o YouTube que a marcação
+      # ficou lá, porque um vídeo que fica privado para sempre não se queixa a ninguém.
+      - name: Subir ao YouTube (privado, com estreia marcada)
+        if: steps.escolher.outputs.skip != 'true' && github.event.inputs.publicar == 'true'
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: node src/scripts/youtube/upload-longo.js --slug="$SLUG"
+
+      - name: Guardar no caderno do vídeo longo
+        if: steps.escolher.outputs.skip != 'true' && github.event.inputs.publicar == 'true'
+        run: |
+          git config user.name "FinMoovi Bot"
+          git config user.email "bot@finmoovi.com"
+          git add .github/data/youtube-longos-published.json .github/data/youtube-longos.json
+          if git diff --staged --quiet; then
+            echo "Nada de novo no caderno."
+          else
+            git commit -m "chore: video longo $SLUG agendado [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push
+          fi

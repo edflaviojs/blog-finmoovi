@@ -34,6 +34,13 @@ digest-preview.html
 src/scripts/youtube/output/*.longo.json
 src/scripts/youtube/output/*.caderno.json
 src/scripts/youtube/output/*.descricao.txt
+# ⚠️ EXCEPCAO, e ha uma razao: o guiao do video JA APROVADO tem de estar aqui, senao o
+# robo na nuvem (e um clone limpo) nao consegue refazer este video sem voltar a pagar a
+# IA que o escreveu — e a corrida de MEDICAO deixaria de ser comparavel com o que ja
+# saiu. E o mesmo argumento que ja poe as imagens da Manus no repositorio.
+# Sao 9 KB de texto. Quando o robo escrever os seus proprios guioes todas as semanas,
+# esta linha deixa de ser precisa.
+!src/scripts/youtube/output/sair-do-vermelho.longo.json
 youtube-render/out/
 
 # As imagens da Manus vem em PNG de 4-6 MB. O que o video usa e a versao a 1920x1080

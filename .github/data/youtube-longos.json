@@ -1,0 +1,36 @@
+{
+  "_leia": [
+    "A FILA DE TEMAS DO VIDEO LONGO — um por semana, e o dono aprova cada linha antes de entrar.",
+    "",
+    "Porque isto existe: o gerador do video longo tem UM tema escrito la dentro (o piloto).",
+    "Sem esta fila, o robo faria O MESMO VIDEO todas as semanas. Com ela, ele toma o primeiro",
+    "que ainda nao foi feito, e quando a fila acabar PARA em silencio, sem falhar nada.",
+    "",
+    "O TITULO E OBRIGATORIO e vem daqui — o robo nao inventa titulos. Um titulo mau e a coisa",
+    "mais cara que este canal pode por no ar, e e a unica que ninguem consegue desfazer depois",
+    "de a lista o mostrar. Sem titulo aprovado, a subida para.",
+    "",
+    "O padrao de titulo que o canal ja tem aceite: palavra-chave a frente (para a busca) + a",
+    "objecao removida — e NUNCA repetir o que a capa ja grita. Um titulo que repete a miniatura",
+    "desperdica metade do espaco que se tem para convencer."
+  ],
+  "videos": [
+    {
+      "slug": "sair-do-vermelho",
+      "titulo": "Dívida do cartão: como sair do vermelho sem apertar mais o mês",
+      "tema": "Sair do vermelho: o plano de três passos pra pagar a dívida sem apertar mais o mês",
+      "angulo": "A pessoa já tentou pagar e não conseguiu. Mostrar por que o dinheiro não sobra, como ver o tamanho real da dívida num sítio só, e por onde começar a atacar sem cortar o essencial.",
+      "glossario": "divida",
+      "palavrasChave": [
+        "sair do vermelho",
+        "dívida do cartão",
+        "juros do rotativo",
+        "pagar dívida",
+        "fatura do cartão",
+        "quitar dívidas"
+      ],
+      "estado": "publicado-a-mao",
+      "nota": "O PILOTO. Subido a mao pelo dono, agendado para 09/08/2026 as 19h00 do Brasil. NAO MEXER."
+    }
+  ]
+}
