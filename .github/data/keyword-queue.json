@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-04T11:15:53.059Z",
-  "sourceCursor": 0,
+  "updatedAt": "2026-08-04T11:53:19.269Z",
+  "sourceCursor": 2,
   "entries": [
     {
       "keyword": "como economizar no plano de celular e internet",
@@ -487,8 +487,10 @@
       "category": null,
       "priority": 2,
       "source": "gsc-gap",
-      "status": "pending",
-      "addedAt": "2026-08-03T10:31:31.687Z"
+      "status": "used",
+      "addedAt": "2026-08-03T10:31:31.687Z",
+      "usedAt": "2026-08-04T11:53:19.269Z",
+      "usedBy": "gerar-post-inteligente"
     },
     {
       "keyword": "acciones ejemplos",
