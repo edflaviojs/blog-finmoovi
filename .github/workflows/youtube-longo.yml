@@ -119,15 +119,6 @@ jobs:
       - name: Instalar dependências (blog)
         run: npm ci
 
-      # ⚠️ AS PROVAS CORREM PRIMEIRO, E É POR ISSO QUE ESTÃO AQUI EM CIMA.
-      # Elas não gastam nada e demoram segundos. Descobrir que a hora de estreia está mal
-      # calculada DEPOIS de cinco horas de render é deitar fora cinco horas — e a corrida
-      # seguinte só cabe no dia seguinte.
-      - name: As provas de mesa (não gastam nada)
-        run: |
-          node src/scripts/validacao/validar-roteiro-longo.js
-          node src/scripts/validacao/validar-publicacao-longo.js
-
       - name: Escolher o vídeo da semana
         id: escolher
         run: |
@@ -186,6 +177,24 @@ jobs:
           node src/scripts/youtube/montar-longo.js --slug="$SLUG"
           test -f "youtube-render/public/roteiro/$SLUG.json" || { echo "❌ o montador não deixou o guião no sítio."; exit 1; }
           node -e "const p=require('./youtube-render/public/roteiro/'+process.env.SLUG+'.json');console.log('✅ '+p.scenes.length+' cenas · '+p.palavras+' palavras · '+p.scenes.filter(s=>s.visual&&s.visual.tipo==='foto').length+' fotografias');"
+
+      # ⚠️ AS PROVAS CORREM AQUI, E O SÍTIO FOI ESCOLHIDO A DOER.
+      #
+      # 🔴 A 1ª versão punha-as logo no princípio, e a corrida de 04/08 na nuvem morreu
+      # em 46 segundos: **as 121 provas do roteiro precisam do guião JÁ MONTADO**, e num
+      # clone limpo ele ainda não existe. Isso revelou uma coisa maior — **essas provas
+      # nunca tinham corrido fora do portátil do dono**, onde o ficheiro estava lá por
+      # acaso, de uma corrida anterior. Uma prova que só corre numa máquina é meia prova.
+      #
+      # Agora correm logo a seguir ao montador, que demora dois segundos — e continuam a
+      # correr ANTES da voz, que é o primeiro passo que custa alguma coisa. Descobrir que
+      # a hora de estreia está mal calculada depois de cinco horas de render seria deitar
+      # fora cinco horas, e a corrida seguinte só cabia no dia seguinte.
+      - name: As provas de mesa (não gastam nada)
+        if: steps.escolher.outputs.skip != 'true'
+        run: |
+          node src/scripts/validacao/validar-roteiro-longo.js
+          node src/scripts/validacao/validar-publicacao-longo.js
 
       # ── 2. A VOZ ─────────────────────────────────────────────────────────────
       # ⚠️ O tratamento de som da voz liga-se sozinho pelo FORMATO do guião (longo), e o
