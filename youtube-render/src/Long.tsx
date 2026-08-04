@@ -38,8 +38,11 @@ import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 // ── as telas que nascem do texto (04/08/2026) ────────────────────────────────
 import {
   Etiqueta, CartaoDeNumero, CartaoDaConta, TelaDoApp, CartaoDeFrase, Metafora, PalavrasNaTela,
+  CartaoDeCapitulo, CARTAO_CAPITULO_FRAMES, Ilustracao, MaoQueClica, momentoDoClique,
+  atrasoDaUltimaLinha,
 } from './longo/telas';
 import type { LinhaDaConta } from './longo/telas';
+import { SonsDaCena, SomDoMomento, SOM } from './longo/sons';
 
 // ── o b-roll 16:9 já pronto (nenhuma destas composições foi tocada) ──────────
 import { CreditCards3DLong } from './CreditCards3D';
@@ -69,7 +72,9 @@ const BROLL: Record<string, React.FC> = {
  * valores do guião. Esta composição não inventa nem calcula nenhum.
  */
 export type LongVisual = {
-  tipo: 'numero' | 'conta' | 'app' | 'frase' | 'metafora' | 'palavras' | 'broll';
+  tipo: 'numero' | 'conta' | 'app' | 'frase' | 'metafora' | 'ilustracao' | 'palavras' | 'broll';
+  /** qual das 32 metáforas animadas do render do Short entra nesta cena */
+  figura?: string;
   valor?: number;
   rotulo?: string;
   passo?: number;
@@ -146,9 +151,42 @@ const durationsSec = (script: LongScript, timing: LongTiming): number[] =>
 
 export const longFramesFrom = (durs: number[], fps: number) => durs.map((d) => Math.max(1, Math.round(d * fps)));
 
+/**
+ * ⚠️ A LINHA DO TEMPO, COM OS CARTÕES DE CAPÍTULO PELO MEIO (04/08/2026, tarde).
+ *
+ * O dono viu o vídeo e apanhou uma sobreposição minha: *"aqui nessas cenas onde aparecem
+ * os cards dos Passos ficou muito congestionado, não dá tempo de ler nada"*. A placa
+ * entrava POR CIMA de uma cena que já tinha uma frase grande no ecrã — dois textos
+ * grandes ao mesmo tempo, 2,6 segundos, e ninguém lia nenhum.
+ *
+ * A ideia dele é melhor: *"daria até pra ganharmos mais tempo de vídeo/tela e respiro,
+ * daríamos pra criar uma cena somente com o card Passo 1 em movimento"*. Por isso o
+ * cartão passou a ter **cena própria**, ANTES da cena que abre o capítulo, e a placa
+ * sobreposta desapareceu.
+ *
+ * ⚠️ ESTA FUNÇÃO É A FONTE ÚNICA DA LINHA DO TEMPO, e tem de ser: o `render-longo.mjs`
+ * corta o vídeo em partes pelos limites de capítulo e precisa exatamente destes
+ * números. Enquanto a conta estava escrita em dois sítios, bastava mudar num para os
+ * cortes caírem no sítio errado — e isso já custou um render inteiro no §34.
+ */
+export const linhaDoTempo = (script: LongScript, timing: LongTiming, fps: number) => {
+  const frames = longFramesFrom(durationsSec(script, timing), fps);
+  const cartoes: number[] = [];   // fotograma em que o cartão de capítulo começa (-1 = não há)
+  const inicios: number[] = [];   // fotograma em que a cena começa
+  let acc = 0;
+  script.scenes.forEach((cena, i) => {
+    const temCartao = Boolean(cena.abreCapitulo && cena.capitulo);
+    cartoes.push(temCartao ? acc : -1);
+    if (temCartao) acc += CARTAO_CAPITULO_FRAMES;
+    inicios.push(acc);
+    acc += frames[i];
+  });
+  return { frames, inicios, cartoes, conteudo: acc };
+};
+
 export const longTotalFrames = (script: LongScript, timing: LongTiming, fps: number) =>
   CAPA_FRAMES > 0
-    ? VOZ_ENTRA_FRAMES + longFramesFrom(durationsSec(script, timing), fps).reduce((a, b) => a + b, 0) + SIGNATURE_FRAMES
+    ? VOZ_ENTRA_FRAMES + linhaDoTempo(script, timing, fps).conteudo + SIGNATURE_FRAMES
     : 0;
 
 // ── a legenda karaokê, refeita para 16:9 ────────────────────────────────────
@@ -349,6 +387,43 @@ const CenaDeBroll: React.FC<{ comp?: string; brollFrames?: number }> = ({ comp, 
 };
 
 /**
+ * O SOM DO QUE ACONTECE NO ECRÃ — a outra metade do pedido dos efeitos.
+ *
+ * Não é só a palavra dita que dispara som (isso é o `SonsDaCena`): é o próprio
+ * acontecimento visual. O número que conta leva a registadora, a conta leva um toque
+ * na primeira linha e um baque na última, o cartão do app desliza, a mãozinha clica.
+ *
+ * ⚠️ Cada atraso vem da MESMA conta que o desenho usa — `atrasoDaUltimaLinha` para a
+ * conta, `momentoDoClique` para a mão. Calculados em separado, mais tarde ou mais cedo
+ * deixariam de bater certo, e um som fora do sítio é pior do que som nenhum.
+ */
+const SomDaFamilia: React.FC<{ visual?: LongVisual; frames: number }> = ({ visual, frames }) => {
+  if (!visual) return null;
+  switch (visual.tipo) {
+    case 'numero':
+      return <SomDoMomento ficheiro={SOM.registadora} atraso={8} volume={0.3} />;
+    case 'conta':
+      return (
+        <>
+          <SomDoMomento ficheiro={SOM.toque} atraso={6} volume={0.22} />
+          <SomDoMomento ficheiro={SOM.baque} atraso={atrasoDaUltimaLinha(frames, (visual.linhas || []).length)} volume={0.34} />
+        </>
+      );
+    case 'app':
+      return <SomDoMomento ficheiro={SOM.cartao} atraso={10} volume={0.3} />;
+    case 'frase':
+      // a chamada é a mãozinha: o clique cai no fotograma exato do toque
+      if (visual.variante === 'chamada') return <SomDoMomento ficheiro={SOM.clique} atraso={momentoDoClique(frames)} volume={0.4} />;
+      return <SomDoMomento ficheiro={SOM.estalo} volume={0.24} />;
+    case 'metafora':
+    case 'ilustracao':
+      return <SomDoMomento ficheiro={SOM.deslize} volume={0.22} />;
+    default:
+      return null;
+  }
+};
+
+/**
  * ═══ A CENA ═══
  *
  * 🔴 O QUE MUDOU EM 04/08/2026, e é o conserto das três queixas do dono.
@@ -375,8 +450,15 @@ const CenaLonga: React.FC<{ cena: LongScene; frames: number; palavras?: { word: 
       case 'numero': return <CartaoDeNumero valor={v.valor ?? 0} rotulo={v.rotulo} />;
       case 'conta': return <CartaoDaConta linhas={v.linhas ?? []} frames={frames} />;
       case 'app': return <TelaDoApp valor={v.valor ?? 0} rotulo={v.rotulo} passo={v.passo} />;
-      case 'frase': return <CartaoDeFrase texto={v.texto ?? ''} etiquetaTexto={v.etiquetaTexto} variante={String(v.variante ?? '')} />;
+      case 'frase':
+        // ⚠️ A CHAMADA LEVA A MÃOZINHA — pedido direto do dono: *"quando fala comenta
+        // FinMoovi, no shorts tem a mãozinha caminhando e clicando com som no finmoovi,
+        // isso que eu quero no vídeo"*. Ela já existe no render do Short e é
+        // reaproveitada tal e qual, com o som no fotograma exato do toque.
+        if (v.variante === 'chamada') return <MaoQueClica frames={frames} />;
+        return <CartaoDeFrase texto={v.texto ?? ''} etiquetaTexto={v.etiquetaTexto} variante={String(v.variante ?? '')} />;
       case 'metafora': return <Metafora fio={v.fio} estagio={v.estagio} frames={frames} />;
+      case 'ilustracao': return <Ilustracao figura={v.figura || ''} frames={frames} />;
       case 'broll': return <CenaDeBroll comp={v.comp} brollFrames={v.brollFrames} />;
       default: return <PalavrasNaTela narration={cena.narration} frames={frames} words={palavras} variante={Number(v.variante ?? 0)} />;
     }
@@ -428,18 +510,9 @@ export const GUIAO_DE_RESERVA: LongScript = {
 
 export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: string }> = ({ script = GUIAO_DE_RESERVA, timing = null }) => {
   const { fps } = useVideoConfig();
-  const durs = durationsSec(script, timing);
-  const frames = longFramesFrom(durs, fps);
-
-  const inicios: number[] = [];
-  {
-    let acc = 0;
-    for (const f of frames) { inicios.push(acc); acc += f; }
-  }
-  const conteudo = frames.reduce((a, b) => a + b, 0);
-  const marcasDeCapitulo = script.scenes
-    .map((s, i) => (s.abreCapitulo ? inicios[i] : -1))
-    .filter((v) => v >= 0);
+  const { frames, inicios, cartoes, conteudo } = linhaDoTempo(script, timing, fps);
+  // as marcas do trilho apontam para o CARTÃO, que é onde o capítulo começa de facto
+  const marcasDeCapitulo = cartoes.filter((v) => v >= 0);
 
   const timingDe = (id: number) => timing?.scenes?.find((t) => String(t.id) === String(id));
 
@@ -481,17 +554,29 @@ export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: s
 
       <Sequence from={VOZ_ENTRA_FRAMES}>
         <TrilhoLongo total={conteudo} marcas={marcasDeCapitulo} />
+        {/* ⚠️ O CARTÃO DE CAPÍTULO É CENA, NÃO AUTOCOLANTE. Ver `linhaDoTempo`: ele
+            ocupa 2,6 segundos SEUS antes da cena que abre o capítulo, com movimento e
+            som, em vez de entrar por cima de um ecrã que já tinha texto grande. */}
+        {script.scenes.map((cena, i) => (cartoes[i] >= 0 ? (
+          <Sequence key={`cap${i}`} from={cartoes[i]} durationInFrames={CARTAO_CAPITULO_FRAMES}>
+            <CartaoDeCapitulo numero={cena.capitulo || 0} titulo={cena.tituloCapitulo || ''} />
+            <SomDoMomento ficheiro={SOM.deslize} volume={0.3} />
+            <SomDoMomento ficheiro={SOM.brilho} atraso={12} volume={0.22} />
+          </Sequence>
+        ) : null))}
+
         {script.scenes.map((cena, i) => {
           const t = timingDe(cena.id);
           return (
             <Sequence key={`c${i}`} from={inicios[i]} durationInFrames={frames[i]}>
               <CenaLonga cena={cena} frames={frames[i]} palavras={t?.words} />
               {t?.audioFile ? <Audio src={staticFile(t.audioFile)} /> : null}
-              {cena.abreCapitulo && cena.capitulo ? (
-                <Sequence durationInFrames={PLACA_FRAMES}>
-                  <PlacaCapitulo numero={cena.capitulo} titulo={cena.tituloCapitulo || ''} />
-                </Sequence>
-              ) : null}
+              {/* ⚠️ OS SONS — o dono: *"não é só mostrar letras, ícones conforme as
+                  palavras são ditas, mas sim usarmos também os sons sincronizados com
+                  relação ao que é dito, assim como já fazemos nos shorts"*. Tínhamos 18
+                  efeitos guardados e este vídeo usava zero. */}
+              <SonsDaCena narration={cena.narration} frames={frames[i]} words={t?.words} />
+              <SomDaFamilia visual={cena.visual} frames={frames[i]} />
             </Sequence>
           );
         })}

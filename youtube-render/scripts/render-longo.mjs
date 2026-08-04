@@ -45,6 +45,11 @@ const FPS = 30;
 const VOZ_ENTRA_FRAMES = 27;
 const RESPIRO_SEC = 0.35;
 const SIGNATURE_FRAMES = 75;
+// ⚠️ 04/08/2026: o cartão de capítulo passou a ter CENA PRÓPRIA (o dono: *"ficou muito
+// congestionado, não dá tempo de ler nada"*). Ele ocupa estes fotogramas ANTES da cena
+// que abre o capítulo — e é por isso que este número tem de estar aqui também, senão os
+// cortes por capítulo caem 2,6 segundos ao lado.
+const CARTAO_CAPITULO_FRAMES = 78;
 
 const slug = String(args.slug && args.slug !== true ? args.slug : 'sair-do-vermelho');
 const plano = JSON.parse(readFileSync(join(RAIZ, 'public', 'roteiro', `${slug}.json`), 'utf-8'));
@@ -64,18 +69,27 @@ const duracoes = plano.scenes.map((c, i) => {
   return i < plano.scenes.length - 1 ? falada + RESPIRO_SEC : falada;
 });
 const frames = duracoes.map((d) => Math.max(1, Math.round(d * FPS)));
+// ⚠️ A MESMA CONTA DO `linhaDoTempo` em src/Long.tsx: o cartão de capítulo ocupa lugar
+// próprio na linha do tempo, antes da cena que abre o capítulo.
 const inicios = [];
+const cartoes = [];
 {
   let acc = 0;
-  for (const f of frames) { inicios.push(acc); acc += f; }
+  plano.scenes.forEach((c, i) => {
+    const temCartao = Boolean(c.abreCapitulo && c.capitulo);
+    cartoes.push(temCartao ? acc : -1);
+    if (temCartao) acc += CARTAO_CAPITULO_FRAMES;
+    inicios.push(acc);
+    acc += frames[i];
+  });
 }
-const conteudo = frames.reduce((a, b) => a + b, 0);
+const conteudo = inicios.length ? inicios[inicios.length - 1] + frames[frames.length - 1] : 0;
 const total = VOZ_ENTRA_FRAMES + conteudo + SIGNATURE_FRAMES;
 
-// ── os cortes: nos limites de capítulo ──────────────────────────────────────
+// ── os cortes: nos limites de capítulo, que agora começam no CARTÃO ──────────
 const cortes = [0];
 plano.scenes.forEach((c, i) => {
-  if (c.abreCapitulo) cortes.push(VOZ_ENTRA_FRAMES + inicios[i]);
+  if (cartoes[i] >= 0) cortes.push(VOZ_ENTRA_FRAMES + cartoes[i]);
 });
 cortes.push(total);
 const partes = [];

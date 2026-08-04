@@ -37,6 +37,8 @@ const OUTPUT_DIR = join(AQUI, 'output');
 // ⚠️ ESPELHADOS de youtube-render/src/Long.tsx — ver o aviso no cabeçalho.
 const VOZ_ENTRA_SEG = 27 / 30;
 const RESPIRO_SEC = 0.35;
+/** ⚠️ ESPELHADO de `CARTAO_CAPITULO_FRAMES` (78 fotogramas) em `longo/telas.tsx`. */
+const CARTAO_CAPITULO_SEG = 78 / 30;
 
 const args = Object.fromEntries(
   process.argv.slice(2).filter((a) => a.startsWith('--')).map((a) => {
@@ -87,7 +89,13 @@ export function tempoDosCapitulos(plano, timing) {
   let t = VOZ_ENTRA_SEG;
   plano.scenes.forEach((cena, i) => {
     if (cena.abreCapitulo && cena.capitulo) {
+      // ⚠️ O CAPÍTULO COMEÇA NO CARTÃO, não na primeira frase falada. Desde 04/08 o
+      // cartão do "PASSO N" tem cena própria (o dono: *"ficou muito congestionado"*), e
+      // ele vem ANTES desta cena. Marcar o capítulo na fala mandaria quem clica no
+      // índice do YouTube para 2,6 segundos depois do início — e um capítulo apontado
+      // para o sítio errado é pior do que capítulo nenhum.
       marcas.push({ numero: cena.capitulo, titulo: cena.tituloCapitulo, seg: t });
+      t += CARTAO_CAPITULO_SEG;
     }
     const dur = medido(cena.id) || cena.durationSec;
     t += dur + (i < plano.scenes.length - 1 ? RESPIRO_SEC : 0);

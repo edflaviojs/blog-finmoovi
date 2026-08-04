@@ -179,6 +179,7 @@ if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/mon
     if (v.tipo === 'app') return `📱 o app · R$ ${v.valor}`;
     if (v.tipo === 'frase') return `🗒️  "${String(v.texto).slice(0, 34)}"`;
     if (v.tipo === 'metafora') return `🎭 ${v.fio} · estágio ${v.estagio}`;
+    if (v.tipo === 'ilustracao') return `🖼️  ${v.figura}`;
     if (v.tipo === 'broll') return `🎞️  ${v.comp}`;
     return '🔤 as palavras ditas';
   };

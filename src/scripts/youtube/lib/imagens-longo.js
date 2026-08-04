@@ -120,6 +120,46 @@ const PISTA_TUDO_JUNTO = /num (so |unico )?(lugar|sitio|lado)|num lugar so|tudo 
 const PISTA_PESO_FORTE = /peso|pesad|carreg|arrast|levantar|caixa|nas costas|mochila|pedra/;
 const PISTA_PESO_FRACA = /sufoco|apert|respir|aliviad|em cima|preso|presa/;
 
+/**
+ * ═══ AS 32 ILUSTRAÇÕES QUE ESTAVAM PARADAS (04/08/2026, tarde) ═══
+ *
+ * O dono pediu: *"temos que criar mais variações de telas, e sermos mais ilustrativos,
+ * não precisa ser em todo o vídeo, mas em certos pontos isso não deixa a audiência
+ * sair"*. Antes de mandar gerar seja o que for, fui ver o que já existe: **o render do
+ * Short tem 32 cenas animadas** — o ralo, a ampulheta, a ratoeira, a bola de ferro, a
+ * areia movediça, o dominó, o castelo de cartas, a corda bamba, a escada, o cofre… E o
+ * vídeo longo usava **uma**.
+ *
+ * ⚠️ ESTA TABELA É CURTA DE PROPÓSITO, e a razão é a queixa nº 1 dele. Uma tabela larga
+ * acerta em mais cenas e ENGANA-SE em algumas — e uma ilustração que não bate com o que
+ * se diz é exatamente o defeito que passámos o dia a consertar, só que agora em desenho
+ * em vez de número. Aqui só entram pistas que não têm outra leitura possível. Quando
+ * nenhuma casa, a cena fica nas palavras, que é sempre verdade.
+ */
+const ILUSTRACOES = [
+  { figura: 'ratoeira', pista: /armadilha|caiu na|cai na|preso nessa|presa nessa|sem saida/ },
+  // ⚠️ "vai saindo da conta" entrou depois de eu LER o guião aprovado em vez de imaginar
+  // como as pessoas falam: a frase que abre este vídeo é *"o dinheiro vai saindo da
+  // conta"* e a minha lista, escrita de cabeça, não a apanhava.
+  { figura: 'ralo', pista: /vai saindo|sai da conta|vai embora|foi embora|escorre|sumindo|some do nada|escapa|vazando/ },
+  { figura: 'buraco', pista: /buraco|fundo do poco|afunda|afundando/ },
+  { figura: 'ampulheta', pista: /demora|demorei|leva tempo|com o tempo|foi passando|meses passa/ },
+  { figura: 'relogio', pista: /todo mes|todo dia|virou costume|virou parte do meu dia|de novo e de novo|sempre na mesma/ },
+  { figura: 'bifurcacao', pista: /escolher|escolhi|decidir|decisao|por qual|por onde comecar/ },
+  { figura: 'escada', pista: /passo a passo|um de cada vez|aos poucos|degrau|primeiro passo/ },
+  { figura: 'avalanche', pista: /bola de neve|foi crescendo|nao parava de crescer|nao para de crescer|acumul|amontoa|engordando/ },
+  { figura: 'areia-movedica', pista: /nao sai(a|r)? do lugar|caladinho|sem fazer barulho|sem perceber|bem devagar|patinando/ },
+  { figura: 'castelo-cartas', pista: /desmorona|desaba|veio tudo abaixo|caiu tudo/ },
+  { figura: 'domino', pista: /um puxa o outro|em cadeia|uma atras da outra|efeito domino/ },
+  { figura: 'boia', pista: /respirar|respirou|aliviad|folga no mes|voltar a tona/ },
+  { figura: 'cofre', pista: /guardar|guardei|reserva|proteger|protege/ },
+  { figura: 'balde-furado', pista: /furad|nao para em pe|nao sobra nada|ta furado/ },
+];
+
+/** Teto e intervalo da família das ilustrações — as mesmas razões da metáfora. */
+const TETO_DE_ILUSTRACOES = 4;
+const INTERVALO_DA_ILUSTRACAO = 3;
+
 /** Os nomes por que se apresenta cada valor da ficha de dívida quando ele vai ao ecrã. */
 const ROTULOS_DA_FICHA = {
   fatura: 'a fatura do cartão',
@@ -245,6 +285,53 @@ export function escolherLugaresDaMetafora(cenas, fio) {
 }
 
 /**
+ * OS LUGARES DAS ILUSTRAÇÕES — escolhidos depois dos da metáfora, e nunca por cima.
+ *
+ * ⚠️ Três guardas, e cada uma tem um motivo:
+ *  · **nunca a figura do fio condutor** — essa é o objeto condutor do vídeo e tem
+ *    família própria; repetida aqui deixava de ser um regresso e passava a ser mobília;
+ *  · **nunca a mesma figura duas vezes** no mesmo vídeo, pela mesma razão;
+ *  · **teto e intervalo**, porque quatro ilustrações espalhadas são pontuação e dez
+ *    seguidas são a monotonia outra vez, só que às cores.
+ */
+/**
+ * ⚠️ `ocupados` É O PARÂMETRO QUE FALTAVA, e faltar custou duas ilustrações de três.
+ *
+ * A 1ª versão escolhia os lugares olhando só para o TEXTO, sem saber quais as cenas que
+ * as regras de cima já iam levar. Medido no guião aprovado: escolheu três lugares e
+ * **dois deles eram cenas que já tinham dono** (um re-gancho e o fecho, ambos com frase
+ * declarada). O vídeo ficou com UMA ilustração das quatro possíveis — e ninguém se
+ * queixava, porque nada estava errado, só desperdiçado.
+ * Agora recebe a lista do que já está tomado e escolhe apenas entre o que sobra.
+ */
+export function escolherLugaresDaIlustracao(cenas, lugaresDaMetafora = new Map(), fio = null, ocupados = new Set()) {
+  const lugares = new Map();
+  const usadas = new Set(fio ? [fio] : []);
+  const escolhidos = [];
+  // ⚠️ O intervalo entre ILUSTRAÇÕES é 3, mas para a METÁFORA basta 2 — e a diferença é
+  // deliberada. Duas ilustrações perto uma da outra lêem-se como "o vídeo agora é de
+  // desenhos"; uma ilustração ao lado do ator lê-se como duas coisas diferentes, que é o
+  // que se quer. Com 3 dos dois lados, este guião só arranjava lugar para duas.
+  const cabe = (i) => escolhidos.every((j) => Math.abs(i - j) >= INTERVALO_DA_ILUSTRACAO)
+    && ![...lugaresDaMetafora.keys()].some((j) => Math.abs(i - j) < 2);
+  const livre = (c, i) => !lugaresDaMetafora.has(i) && !ocupados.has(i)
+    && c.parte !== 'demonstracao' && c.parte !== 'chamada';
+
+  cenas.forEach((c, i) => {
+    if (escolhidos.length >= TETO_DE_ILUSTRACOES) return;
+    if (!livre(c, i) || !cabe(i)) return;
+    const texto = semAcento(c.narration);
+    const achada = ILUSTRACOES.find((x) => !usadas.has(x.figura) && x.pista.test(texto));
+    if (!achada) return;
+    usadas.add(achada.figura);
+    escolhidos.push(i);
+    lugares.set(i, achada.figura);
+  });
+
+  return lugares;
+}
+
+/**
  * ═══ O DIRETOR ═══
  * Recebe as cenas já partidas e o mapa do guião; devolve as mesmas cenas com um campo
  * `visual` cada. Determinístico: o mesmo guião dá sempre o mesmo vídeo.
@@ -268,7 +355,7 @@ export function dirigirImagens(cenas, mapa = {}) {
    */
   const lugaresDaMetafora = escolherLugaresDaMetafora(cenas, fio);
 
-  const dirigida = cenas.map((c, indice) => {
+  const primeiraPassagem = cenas.map((c, indice) => {
     const texto = semAcento(c.narration);
     const ditos = valoresDitosNaCena(c.narration, dic);
     const novos = ditos.filter((v) => !jaMostrado.has(v));
@@ -346,6 +433,26 @@ export function dirigirImagens(cenas, mapa = {}) {
     // 9. O CAVALO DE CARGA — as palavras ditas, grandes, como imagem.
     return { ...c, visual: { tipo: 'palavras', etiqueta } };
   });
+
+  /**
+   * A 2ª PASSAGEM — as ilustrações entram SÓ onde sobrou lugar.
+   *
+   * ⚠️ Tinha de ser depois, e a razão está medida: escolhidas antes, elas caíam em cenas
+   * que as regras de cima já iam levar (um re-gancho e o fecho, ambos com frase
+   * declarada), e o vídeo ficava com uma ilustração das quatro possíveis. Só as cenas
+   * que acabaram em `palavras` estão mesmo livres — são as que não têm número para
+   * mostrar nem frase escrita para citar, e por isso são exatamente as que mais
+   * beneficiam de um desenho.
+   */
+  const livres = new Set(primeiraPassagem.map((c, i) => (c.visual.tipo === 'palavras' ? i : -1)).filter((i) => i >= 0));
+  const ocupados = new Set(cenas.map((_, i) => i).filter((i) => !livres.has(i)));
+  const lugaresDaIlustracao = escolherLugaresDaIlustracao(cenas, lugaresDaMetafora, fio, ocupados);
+
+  const dirigida = primeiraPassagem.map((c, i) => (
+    lugaresDaIlustracao.has(i)
+      ? { ...c, visual: { tipo: 'ilustracao', figura: lugaresDaIlustracao.get(i), etiqueta: c.visual.etiqueta } }
+      : c
+  ));
 
   return numerarVariantes(equilibrar(dirigida, { fio }));
 }
@@ -467,6 +574,19 @@ export function conferirImagens(cenas, mapa = {}) {
   const metaforas = cenas.filter((c) => c.visual?.tipo === 'metafora');
   if (metaforas.length > TETO_DE_METAFORA) {
     erros.push(`${metaforas.length} cenas com o ator do fio condutor — o teto é ${TETO_DE_METAFORA}, senão ele deixa de ser um momento e passa a ser o fundo`);
+  }
+
+  // (d3) as ilustrações: teto, nunca repetidas, e nunca a figura do fio condutor
+  const ilustracoes = cenas.filter((c) => c.visual?.tipo === 'ilustracao');
+  if (ilustracoes.length > TETO_DE_ILUSTRACOES) {
+    erros.push(`${ilustracoes.length} ilustrações — o teto é ${TETO_DE_ILUSTRACOES}`);
+  }
+  const figuras = ilustracoes.map((c) => c.visual.figura);
+  const repetida = figuras.find((f, i) => figuras.indexOf(f) !== i);
+  if (repetida) erros.push(`a ilustração "${repetida}" aparece mais do que uma vez — há 32 desenhadas, não é preciso repetir`);
+  const fioDoVideo = mapa.fioCondutor;
+  if (fioDoVideo && figuras.includes(fioDoVideo)) {
+    erros.push(`a ilustração "${fioDoVideo}" é o fio condutor do vídeo — ela tem família própria e não pode entrar como ilustração avulsa`);
   }
 
   // (e) o b-roll do catálogo tem teto

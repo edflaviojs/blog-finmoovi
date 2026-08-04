@@ -26,6 +26,10 @@ import { BRAND, DISPLAY, BODY, gradientText } from '../theme';
 import { panel, Pop3D } from '../broll/card3d-kit';
 import { HeroCard } from '../CreditCards3D';
 import { CoreografiaDaCapa } from '../capas';
+// ⚠️ IMPORTAR NÃO É TOCAR. O `scenes.tsx` é o render do Short, que publica todos os
+// dias, e não leva uma linha por causa disto. O que se traz de lá são as **32 metáforas
+// animadas** que ele já tem desenhadas e que o vídeo longo nunca usou — ver `Ilustracao`.
+import { ShotMetaphor, clickPressOffset } from '../scenes';
 import { PALCO_W, PALCO_H } from '../capa';
 import { activeIndex, wordTimingsFromReal, layoutWords } from '../captions';
 
@@ -123,6 +127,23 @@ export const CartaoDeNumero: React.FC<{ valor: number; rotulo?: string }> = ({ v
 export type LinhaDaConta = { rotulo: string; valor: number; tom: string; forte?: boolean };
 
 /**
+ * ⚠️ 0,58 e não 0,78: no fotograma de prova, a meio da cena ainda faltavam as DUAS
+ * linhas que interessam (o total pago e o quanto é a mais) e o painel tinha um vazio em
+ * baixo à espera delas. A conta tem de estar FEITA quando a voz diz o resultado.
+ *
+ * ⚠️ E ISTO É FONTE ÚNICA. O desenho usa esta conta para saber quando cada linha entra,
+ * e o SOM usa-a para saber quando tocar o baque da última. Calculados em sítios
+ * diferentes, mais tarde ou mais cedo deixavam de bater certo — é a mesma regra que o
+ * Short já aplica ao clique da mãozinha.
+ */
+export const janelaDaConta = (frames: number, nLinhas: number): number =>
+  Math.max(8, Math.floor((frames * 0.58) / Math.max(1, nLinhas)));
+
+/** O fotograma em que a ÚLTIMA linha da conta entra — para o som cair em cima dela. */
+export const atrasoDaUltimaLinha = (frames: number, nLinhas: number): number =>
+  6 + Math.max(0, nLinhas - 1) * janelaDaConta(frames, nLinhas);
+
+/**
  * A CONTA A CONSTRUIR-SE LINHA A LINHA — é o **plano que o vídeo quer que se lembre**
  * (a destilação #9 do VOX: um plano-revelação por vídeo, e nós não tínhamos o conceito).
  *
@@ -137,10 +158,7 @@ export const CartaoDaConta: React.FC<{ linhas: LinhaDaConta[]; frames: number }>
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   // as linhas repartem o tempo da cena, com uma folga no fim para a última respirar
-  // ⚠️ 0,58 e não 0,78: no fotograma de prova, a meio da cena ainda faltavam as DUAS
-  // linhas que interessam (o total pago e o quanto é a mais) e o painel tinha um vazio
-  // em baixo à espera delas. A conta tem de estar FEITA quando a voz diz o resultado.
-  const janela = Math.max(8, Math.floor((frames * 0.58) / Math.max(1, linhas.length)));
+  const janela = janelaDaConta(frames, linhas.length);
   const cor = (tom: string) => (tom === 'alerta' ? '#f87171' : tom === 'mau' ? '#fb923c' : tom === 'bom' ? '#22c55e' : BRAND.text);
 
   return (
@@ -410,24 +428,37 @@ export const PalavrasNaTela: React.FC<{
   const compacto = doBloco.some((t) => t.word.length > 11) || porBloco > 7;
   const corpo = compacto ? 84 : 96;
 
+  /**
+   * ⚠️ O ECRÃ NUNCA ESTÁ PARADO — e isto é ordem direta do dono depois de ver o vídeo:
+   * *"aqui talvez se ir dando um zoom out ou zoom in acho que melhora um pouco"* e
+   * *"temos q dar mais ação, mais movimento, isso serve também para todo o vídeo".*
+   *
+   * Duas camadas de movimento, e são diferentes de propósito:
+   *  · a APROXIMAÇÃO LENTA da cena inteira (1,00 → 1,07 ao longo dos ~13 segundos). É
+   *    lenta que baste para não se notar como efeito e depressa que baste para o olho
+   *    saber que a imagem está viva. As cenas ímpares afastam-se em vez de se
+   *    aproximarem, senão seis cenas seguidas fariam todas o mesmo gesto;
+   *  · a ENTRADA de cada bloco de palavras, que desliza de lado e assenta.
+   */
+  const aproxima = variante % 2 === 0
+    ? interpolate(frame, [0, Math.max(1, frames)], [1, 1.07])
+    : interpolate(frame, [0, Math.max(1, frames)], [1.07, 1]);
+  const deriva = interpolate(frame, [0, Math.max(1, frames)], [0, aEsquerda ? 18 : -14]);
+
   return (
-    <AbsoluteFill style={{
-      justifyContent: 'center', alignItems: aEsquerda ? 'flex-start' : 'center',
-      padding: `120px ${aEsquerda ? 140 : 200}px ${FUNDO_LIVRE - 60}px ${aEsquerda ? 140 : 200}px`,
-    }}>
-      {/* variante 2: um traço de acento por trás, para o ecrã não ser só letra no vazio */}
-      {variante === 2 ? (
-        <div style={{
-          position: 'absolute', left: 0, right: 0, top: '50%', height: 300,
-          transform: 'translateY(-50%) skewY(-4deg)',
-          background: 'linear-gradient(100deg, rgba(34,211,238,0.10), rgba(139,92,246,0.16), rgba(214,33,156,0.10))',
-        }} />
-      ) : null}
+    <AbsoluteFill style={{ overflow: 'hidden' }}>
+      <FundoAbstrato variante={variante} frames={frames} />
+      <AbsoluteFill style={{
+        justifyContent: 'center', alignItems: aEsquerda ? 'flex-start' : 'center',
+        padding: `120px ${aEsquerda ? 140 : 200}px ${FUNDO_LIVRE - 60}px ${aEsquerda ? 140 : 200}px`,
+        transform: `scale(${aproxima}) translateX(${deriva}px)`,
+      }}>
       <div style={{
         display: 'flex', flexWrap: 'wrap', gap: '14px 18px', maxWidth: 1560,
         justifyContent: aEsquerda ? 'flex-start' : 'center',
         textAlign: aEsquerda ? 'left' : 'center',
-        opacity: entra, transform: `translateY(${interpolate(entra, [0, 1], [26, 0])}px)`,
+        opacity: entra,
+        transform: `translate(${interpolate(entra, [0, 1], [aEsquerda ? -46 : 0, 0])}px, ${interpolate(entra, [0, 1], [26, 0])}px)`,
         borderLeft: aEsquerda ? `10px solid ${BRAND.violet}` : 'none',
         paddingLeft: aEsquerda ? 46 : 0,
       }}>
@@ -451,6 +482,265 @@ export const PalavrasNaTela: React.FC<{
             }}>{t.word}</span>
           );
         })}
+      </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// ─── 7. os fundos abstratos ──────────────────────────────────────────────────
+/**
+ * AS FORMAS QUE CRESCEM POR TRÁS — pedido do dono, e sai de graça.
+ *
+ * *"Teria como em algumas colocarmos algumas imagens abstratas e essas imagens fossem
+ * crescendo com zoom out, etc, para retirar essa sensação de monótono?"*
+ *
+ * Não é preciso comprar nada nem gerar nada: são formas desenhadas por código, na
+ * paleta do canal, que **crescem devagar durante a cena inteira**. Quatro desenhos, e a
+ * cena escolhe pelo mesmo número que já escolhe o alinhamento do texto — portanto duas
+ * cenas seguidas nunca têm o mesmo fundo nem o mesmo movimento.
+ *
+ * ⚠️ Opacidades baixas de propósito (0,10 a 0,22). Isto é FUNDO: se competir com a
+ * palavra que está a ser dita, deixa de resolver a monotonia e passa a criar ruído —
+ * que é o defeito do lado oposto.
+ */
+export const FundoAbstrato: React.FC<{ variante: number; frames: number }> = ({ variante, frames }) => {
+  const frame = useCurrentFrame();
+  const t = interpolate(frame, [0, Math.max(1, frames)], [0, 1]);
+  const v = ((variante % 4) + 4) % 4;
+
+  if (v === 0) {
+    // manchas de cor que incham e derivam
+    const bolhas = [
+      { x: 22, y: 34, r: 460, c: 'rgba(34,211,238,0.16)', f: 1.0 },
+      { x: 78, y: 62, r: 520, c: 'rgba(139,92,246,0.20)', f: 1.3 },
+      { x: 56, y: 22, r: 380, c: 'rgba(214,33,156,0.13)', f: 0.8 },
+    ];
+    return (
+      <AbsoluteFill>
+        {bolhas.map((b, i) => (
+          <div key={i} style={{
+            position: 'absolute', left: `${b.x}%`, top: `${b.y}%`,
+            width: b.r, height: b.r, borderRadius: '50%',
+            background: `radial-gradient(circle, ${b.c}, rgba(13,17,23,0) 68%)`,
+            transform: `translate(-50%,-50%) scale(${1 + t * 0.5 * b.f}) translateY(${-t * 60 * b.f}px)`,
+          }} />
+        ))}
+      </AbsoluteFill>
+    );
+  }
+
+  if (v === 1) {
+    // anéis concêntricos que se abrem a partir do lado esquerdo (onde está o texto)
+    return (
+      <AbsoluteFill>
+        {[0, 1, 2, 3, 4].map((i) => {
+          const p = (t * 1.2 + i * 0.2) % 1.2;
+          return (
+            <div key={i} style={{
+              position: 'absolute', left: '18%', top: '50%',
+              width: 300 + p * 1500, height: 300 + p * 1500, borderRadius: '50%',
+              border: `2px solid rgba(139,92,246,${Math.max(0, 0.22 - p * 0.18)})`,
+              transform: 'translate(-50%,-50%)',
+            }} />
+          );
+        })}
+      </AbsoluteFill>
+    );
+  }
+
+  if (v === 2) {
+    // a faixa diagonal do canal, a abrir e a inclinar-se devagar
+    return (
+      <AbsoluteFill>
+        <div style={{
+          position: 'absolute', left: -200, right: -200, top: '50%',
+          height: 240 + t * 240,
+          transform: `translateY(-50%) skewY(${-4 - t * 2}deg) scale(${1 + t * 0.12})`,
+          background: 'linear-gradient(100deg, rgba(34,211,238,0.10), rgba(139,92,246,0.18), rgba(214,33,156,0.10))',
+        }} />
+      </AbsoluteFill>
+    );
+  }
+
+  // grelha de pontos que se afasta (dá profundidade sem desenhar nada)
+  const passo = 74;
+  return (
+    <AbsoluteFill style={{ opacity: 0.5 }}>
+      <div style={{
+        position: 'absolute', inset: -300,
+        backgroundImage: 'radial-gradient(rgba(148,163,184,0.35) 2px, transparent 2px)',
+        backgroundSize: `${passo}px ${passo}px`,
+        transform: `scale(${1.35 - t * 0.3}) rotate(${-2 + t * 1.4}deg)`,
+        maskImage: 'radial-gradient(ellipse at 50% 50%, black 20%, transparent 72%)',
+        WebkitMaskImage: 'radial-gradient(ellipse at 50% 50%, black 20%, transparent 72%)',
+      }} />
+    </AbsoluteFill>
+  );
+};
+
+// ─── 8. o cartão de capítulo, com cena própria ───────────────────────────────
+/**
+ * O CARD DO CAPÍTULO DEIXOU DE SER UM AUTOCOLANTE E PASSOU A SER UMA CENA.
+ *
+ * ⚠️ O dono apanhou isto a ver o vídeo: *"aqui nessas cenas onde aparecem os cards dos
+ * Passos ficou muito congestionado, não dá tempo de ler nada"*. Ele tinha razão e o
+ * fotograma prova-o: a placa entrava POR CIMA de uma cena que já tinha uma frase
+ * grande no ecrã. **Dois textos grandes ao mesmo tempo, 2,6 segundos.** Ninguém lê os
+ * dois — e o que se perde é justamente o que organiza o vídeo.
+ *
+ * A ideia de o pôr em cena própria é dele, e é melhor do que a minha: *"daria até pra
+ * ganharmos mais tempo de vídeo/tela e respiro… mas não podemos criar uma cena somente
+ * com o card e esse ficar parado! Temos q dar mais ação, mais movimento."*
+ *
+ * Por isso aqui nada está parado: o número entra em profundidade e roda, a barra
+ * cresce, o título aparece palavra a palavra e o fundo abre-se. E leva som.
+ */
+export const CARTAO_CAPITULO_FRAMES = 78; // 2,6s — o respiro, com a música a segurar
+
+export const CartaoDeCapitulo: React.FC<{ numero: number; titulo: string; frames?: number }> = ({ numero, titulo, frames = CARTAO_CAPITULO_FRAMES }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const entra = spring({ frame, fps, config: { damping: 16, mass: 0.8 } });
+  const sai = interpolate(frame, [frames - 10, frames], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  // a cena inteira aproxima-se devagar — a regra nova do dono, "nada parado"
+  const aproxima = interpolate(frame, [0, Math.max(1, frames)], [1.04, 1]);
+  const palavras = String(titulo).trim().split(/\s+/).filter(Boolean);
+
+  return (
+    <AbsoluteFill style={{ opacity: sai, overflow: 'hidden' }}>
+      <FundoAbstrato variante={1} frames={frames} />
+      {/* o clarão que abre a partir do número */}
+      <AbsoluteFill style={{
+        background: `radial-gradient(circle at 26% 50%, rgba(139,92,246,${interpolate(entra, [0, 1], [0.45, 0.16])}), rgba(13,17,23,0) 58%)`,
+      }} />
+      <AbsoluteFill style={{
+        flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+        gap: 70, padding: '0 140px', transform: `scale(${aproxima})`,
+      }}>
+        <div style={{
+          fontFamily: DISPLAY, fontWeight: 900, fontSize: 340, lineHeight: 0.9,
+          ...gradientText,
+          filter: 'drop-shadow(0 0 70px rgba(139,92,246,0.55))',
+          transform: `perspective(1200px) rotateY(${interpolate(entra, [0, 1], [-70, 0])}deg) translateZ(${interpolate(entra, [0, 1], [-500, 0])}px)`,
+          opacity: entra,
+        }}>{numero}</div>
+
+        <div style={{ borderLeft: `8px solid ${BRAND.violet}`, paddingLeft: 44, maxWidth: 1000 }}>
+          <div style={{
+            fontFamily: BODY, fontWeight: 800, fontSize: 30, letterSpacing: 6,
+            color: BRAND.cyan, marginBottom: 18,
+            opacity: interpolate(frame, [4, 16], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }),
+          }}>PASSO {numero}</div>
+          <div style={{
+            display: 'flex', flexWrap: 'wrap', gap: '6px 18px',
+            fontFamily: DISPLAY, fontWeight: 900, fontSize: 68, lineHeight: 1.14, color: BRAND.text,
+          }}>
+            {/* palavra a palavra: o título CONSTRÓI-SE, e é isso que dá a sensação de
+                que alguma coisa está a acontecer em vez de estar escrita */}
+            {palavras.map((p, i) => {
+              const pop = spring({ frame: frame - (10 + i * 3), fps, config: { damping: 15, mass: 0.5 } });
+              return (
+                <span key={i} style={{
+                  display: 'inline-block', opacity: pop,
+                  transform: `translateY(${interpolate(pop, [0, 1], [26, 0])}px)`,
+                }}>{p}</span>
+              );
+            })}
+          </div>
+          <div style={{
+            marginTop: 30, height: 8, borderRadius: 4,
+            width: `${interpolate(entra, [0, 1], [0, 560])}px`,
+            background: `linear-gradient(90deg, ${BRAND.cyan}, ${BRAND.violet}, ${BRAND.magenta})`,
+          }} />
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// ─── 9. as 32 metáforas animadas que estavam paradas ─────────────────────────
+/**
+ * ⚠️ O ACHADO QUE VALE MAIS DO QUE QUALQUER CÓDIGO NOVO: **já temos 32 ilustrações
+ * animadas desenhadas e pagas, e o vídeo longo usava UMA.**
+ *
+ * O dono pediu *"criar mais variações de telas, e sermos mais ilustrativos"*. Antes de
+ * gerar seja o que for, fui ver o que já existe: o `scenes.tsx` do Short tem 32 cenas
+ * animadas — o ralo, a ampulheta, a ratoeira, a bola de ferro, a areia movediça, o
+ * dominó, o castelo de cartas, a corda bamba, o balde furado, a avalanche, a balança,
+ * o cofre, o escudo, a bóia, a escada, o foguete, a semente… Todas na paleta do canal,
+ * todas com movimento próprio. **Estavam na gaveta.**
+ *
+ * ⚠️ Elas são desenhadas para o Short, em telas de ~720×660 a 900×520. Em 16:9 têm de
+ * ser ampliadas com caixa própria e cortadas em cima e em baixo — é o mesmo cuidado do
+ * ator da capa (§34 defeito 7), e por isso `overflow: hidden` e a âncora do chão.
+ */
+/**
+ * ⚠️ A ILUSTRAÇÃO VAI EMOLDURADA, E NÃO ESTICADA A OCUPAR O ECRÃ — corrigido a olhar o
+ * fotograma, como sempre.
+ *
+ * A 1ª versão ampliava-a 1,5× e punha-a a sangrar de bordo a bordo. Renderizei a
+ * `areia-movedica` e o que apareceu foi **uma parede de amarelo** a cobrir dois terços
+ * do ecrã, com o boneco a afundar do tamanho de uma moeda no meio: a mesma imagem que
+ * no Short é uma vinheta de 900×520 e funciona muito bem. Ampliar não a torna maior,
+ * torna-a **fundo** — e um fundo amarelo vivo briga com a paleta do canal inteiro.
+ *
+ * Emoldurada num painel, ela volta a ler-se como o que é: uma ILUSTRAÇÃO. E de
+ * caminho responde à outra coisa que o dono pediu — *"esses cards informativos poderiam
+ * ser utilizados mais, talvez com outros formatos"*.
+ */
+const ESCALA_DA_ILUSTRACAO = 1.06;
+const MOLDURA = { largura: 1180, altura: 620 };
+
+export const Ilustracao: React.FC<{ figura: string; frames: number }> = ({ figura, frames }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const entra = spring({ frame, fps, config: { damping: 18, mass: 0.8 } });
+  // aproximação lenta DENTRO da moldura — a regra "nada parado", sem sangrar o ecrã
+  const aproxima = interpolate(frame, [0, Math.max(1, frames)], [1, 1.09]);
+
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden' }}>
+      <FundoAbstrato variante={3} frames={frames} />
+      <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: FUNDO_LIVRE - 130 }}>
+        <div style={{
+          ...panel({ width: MOLDURA.largura, height: MOLDURA.altura, padding: 0 }),
+          overflow: 'hidden', position: 'relative',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          opacity: entra,
+          transform: `translateY(${interpolate(entra, [0, 1], [34, 0])}px) scale(${interpolate(entra, [0, 1], [0.94, 1])})`,
+        }}>
+          <div style={{ transform: `scale(${ESCALA_DA_ILUSTRACAO * aproxima})` }}>
+            <ShotMetaphor metaphor={figura} life={frames} />
+          </div>
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// ─── 10. a mãozinha da chamada ───────────────────────────────────────────────
+/**
+ * A MÃOZINHA A CLICAR NO "COMENTA FINMOOVI" — pedido direto do dono:
+ * *"quando fala comenta FinMoovi, no shorts tem a mãozinha caminhando e clicando com
+ * som no finmoovi, isso que eu quero no vídeo."*
+ *
+ * Ela já existe, desenhada e afinada, dentro do render do Short: a mão viaja numa
+ * curva, a pílula afunda, há um flash e um anel de clique. Aqui é **reaproveitada tal
+ * e qual** — e o `clickPressOffset` é a MESMA conta que o Short usa para marcar o
+ * instante do toque, o que garante que o som cai no fotograma exato do clique.
+ * ⚠️ Nada do `scenes.tsx` foi alterado.
+ */
+export const momentoDoClique = clickPressOffset;
+
+export const MaoQueClica: React.FC<{ frames: number }> = ({ frames }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const entra = spring({ frame, fps, config: { damping: 18, mass: 0.7 } });
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: FUNDO_LIVRE - 80 }}>
+      <div style={{ transform: `scale(${1.45 * interpolate(entra, [0, 1], [0.92, 1])})`, opacity: entra }}>
+        <ShotMetaphor metaphor="clique-link" life={frames} />
       </div>
     </AbsoluteFill>
   );
