@@ -31,7 +31,8 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { PARTES_DO_CAPITULO } from './lib/schema-longo.js';
+import { PARTES_POSSIVEIS } from './lib/schema-longo.js';
+import { dirigirImagens, conferirImagens } from './lib/imagens-longo.js';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = join(AQUI, 'output');
@@ -80,60 +81,20 @@ export function partirEmCenas(texto) {
 }
 
 /**
- * O B-ROLL 16:9 — só composições do catálogo que JÁ estão prontas e validadas
- * (`youtube-render/CATALOG.md`), e só as que não precisam de props nem da gravação
- * pesada de 313 MB. São desenhos nativos do app, com dados reais.
+ * 🔴 A RODA DE B-ROLL FOI DAQUI PARA FORA — 04/08/2026, e é o conserto do defeito nº 1.
  *
- * Duas listas, e a divisão é editorial:
- *  · DEMONSTRACAO — telas que MOSTRAM NÚMERO (donut, barras, lista, contador). É o
- *    que tem de estar no ecrã quando a narração diz "eu abri o app e estava lá".
- *  · CONTEXTO — as telas em movimento, para quando se está a contar a história.
- * As durações são as que o catálogo regista para cada composição; quando a cena é
- * mais comprida, a composição repete em ciclo (ver `Long.tsx`).
+ * O que estava aqui era uma roda: duas listas de composições do catálogo e um contador
+ * que ia rodando (cena 1 → primeira, cena 2 → segunda…), com uma única regra, "não
+ * repetir a de trás". **Ela nunca lia o texto.** Trinta cenas, trinta telas do app, e o
+ * ecrã a mostrar fatura R$ 1.240 e limite R$ 5.000 enquanto a voz dizia "mil e duzentos"
+ * — que foi exatamente o que o dono apanhou a ver o vídeo.
+ *
+ * Quem escolhe agora é o `lib/imagens-longo.js`, que lê a narração de cada cena e a
+ * lista fechada de valores do mapa. As listas antigas não foram substituídas por outras
+ * listas: das 16 composições do catálogo, **três** sobreviveram à conferência de "isto
+ * contradiz o que se está a dizer?", e vivem lá com o motivo de cada exclusão escrito.
  */
-export const BROLL_DEMONSTRACAO = [
-  { comp: 'BalancoDonutLong', frames: 210 },
-  { comp: 'FluxoBarrasLong', frames: 210 },
-  { comp: 'ExtratoListaLong', frames: 210 },
-  { comp: 'CartoesCountUpLong', frames: 210 },
-  { comp: 'ComprasCarrinhoLong', frames: 210 },
-  { comp: 'SmartCaptureVozLong', frames: 210 },
-];
-
-export const BROLL_CONTEXTO = [
-  { comp: 'CreditCards3DLong', frames: 210 },
-  { comp: 'FluxoCaixa3DLong', frames: 210 },
-  { comp: 'Extrato3DLong', frames: 210 },
-  { comp: 'Balanco3DLong', frames: 210 },
-  { comp: 'AppCarrosselLong', frames: 300 },
-  { comp: 'Compras3DLong', frames: 210 },
-  { comp: 'AppMosaicoLong', frames: 210 },
-  { comp: 'SmartCapture3DLong', frames: 210 },
-  { comp: 'AppQuadLong', frames: 210 },
-  { comp: 'AppNumerosLong', frames: 188 },
-];
-
-/**
- * Escolhe o b-roll de cada cena. Duas regras, e nenhuma delas é aleatória — um vídeo
- * que muda de imagem por sorteio não se consegue re-render igual, e depurar um
- * defeito visual que só acontece "às vezes" é o pior tempo que se pode gastar.
- *  1. cena de DEMONSTRAÇÃO recebe sempre uma tela com número;
- *  2. nunca a mesma composição duas vezes seguidas.
- */
-export function escolherBroll(cenas) {
-  let iDemo = 0;
-  let iCtx = 0;
-  let anterior = null;
-  return cenas.map((c) => {
-    const lista = c.parte === 'demonstracao' ? BROLL_DEMONSTRACAO : BROLL_CONTEXTO;
-    let escolha = lista[(c.parte === 'demonstracao' ? iDemo++ : iCtx++) % lista.length];
-    if (escolha.comp === anterior) {
-      escolha = lista[(c.parte === 'demonstracao' ? iDemo++ : iCtx++) % lista.length];
-    }
-    anterior = escolha.comp;
-    return { ...c, broll: escolha.comp, brollFrames: escolha.frames };
-  });
-}
+export { BROLL_PERMITIDO } from './lib/imagens-longo.js';
 
 /** Transforma o guião de seis blocos na lista de cenas do vídeo. */
 export function montarCenas(longo) {
@@ -146,8 +107,22 @@ export function montarCenas(longo) {
 
   empurrar(longo.abertura, { bloco: 'abertura', role: 'hook', capitulo: null, parte: 'abertura' });
 
+  /**
+   * 🔴 PERCORRE AS PARTES **POSSÍVEIS**, NÃO AS TRÊS FIXAS — conserto de 04/08/2026.
+   *
+   * Este laço andava a percorrer `PARTES_DO_CAPITULO`, que são três: pergunta,
+   * desenvolvimento e regancho. Só que nessa mesma manhã a demonstração do app deixou
+   * de estar nos três capítulos e passou a viver **num só** (§35.2), como uma parte à
+   * parte — e ninguém veio cá dizer isso a este ficheiro.
+   * Resultado, medido no guião aprovado: **73 palavras a menos no vídeo do que no
+   * guião** (860 contra 933), e as 73 eram exatamente o parágrafo em que o app faz a
+   * conta. O vídeo inteiro sobre organizar dívida **nunca chegava a mostrar o app**, e
+   * nada se queixava: o montador não tem como saber que uma parte lhe falta.
+   * `PARTES_POSSIVEIS` está escrita pela ordem em que é falada, e uma parte que o
+   * capítulo não tenha vem vazia e é ignorada pelo `empurrar`.
+   */
   (longo.capitulos || []).forEach((cap, i) => {
-    PARTES_DO_CAPITULO.forEach((parte) => {
+    PARTES_POSSIVEIS.forEach((parte) => {
       empurrar(cap[parte], {
         bloco: `capitulo${i + 1}`,
         role: 'beat',
@@ -172,13 +147,18 @@ export function montarCenas(longo) {
     }
   }
 
-  return escolherBroll(cenas).map((c, i) => ({
+  // ⚠️ O NÚMERO DA CENA É ATRIBUÍDO ANTES DO DIRETOR DE IMAGEM, e não por arrumação:
+  // é por ele que a conferência consegue dizer "a cena 14 mostra um número que não
+  // está no mapa" em vez de "uma cena qualquer".
+  const numeradas = cenas.map((c, i) => ({
     id: i + 1,
     ...c,
     // A duração autoral é só a rede por baixo: quem manda é o áudio medido pelo TTS.
     // Fica calculada pela MESMA velocidade que o resto do projeto usa (2,6 palavras/s).
     durationSec: +(c.palavras / 2.6).toFixed(2),
   }));
+
+  return dirigirImagens(numeradas, longo.mapa || {});
 }
 
 // ─── execução direta ─────────────────────────────────────────────────────────
@@ -193,15 +173,43 @@ if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/mon
 
   console.log(`\n🎬 MONTAGEM DO VÍDEO LONGO — "${longo.tema}"`);
   console.log(`   ${cenas.length} cenas · ${palavras} palavras ≈ ${Math.floor(segundos / 60)}min${String(Math.round(segundos % 60)).padStart(2, '0')} de fala\n`);
+  const desenhoDe = (v = {}) => {
+    if (v.tipo === 'numero') return `💰 R$ ${v.valor} · ${v.rotulo}`;
+    if (v.tipo === 'conta') return `🧮 A CONTA (${v.linhas.length} linhas) — o plano-revelação`;
+    if (v.tipo === 'app') return `📱 o app · R$ ${v.valor}`;
+    if (v.tipo === 'frase') return `🗒️  "${String(v.texto).slice(0, 34)}"`;
+    if (v.tipo === 'metafora') return `🎭 ${v.fio} · estágio ${v.estagio}`;
+    if (v.tipo === 'broll') return `🎞️  ${v.comp}`;
+    return '🔤 as palavras ditas';
+  };
   for (const c of cenas) {
     const marca = c.abreCapitulo ? `📖 CAP ${c.capitulo} · ${c.tituloCapitulo}` : '';
-    console.log(`   ${String(c.id).padStart(2)}. [${c.parte.padEnd(15)}] ${String(c.palavras).padStart(2)}p · ${c.broll.padEnd(22)} ${marca}`);
+    const etiq = c.visual?.etiqueta ? ` +etiqueta R$ ${c.visual.etiqueta.valor}` : '';
+    console.log(`   ${String(c.id).padStart(2)}. [${c.parte.padEnd(15)}] ${String(c.palavras).padStart(2)}p · ${desenhoDe(c.visual).padEnd(46)}${etiq} ${marca}`);
   }
+
+  const familias = cenas.reduce((a, c) => ({ ...a, [c.visual?.tipo || '?']: (a[c.visual?.tipo || '?'] || 0) + 1 }), {});
+  console.log(`\n   🎨 famílias de imagem: ${Object.entries(familias).map(([k, n]) => `${k} ${n}`).join(' · ')}`);
 
   const maiores = cenas.filter((c) => c.palavras > MAX_PALAVRAS_CENA);
   if (maiores.length) {
     console.log(`\n   ⚠️ ${maiores.length} cena(s) passam das ${MAX_PALAVRAS_CENA} palavras porque são UMA frase só: ${maiores.map((c) => `#${c.id} (${c.palavras})`).join(', ')}`);
   }
+
+  /**
+   * ⚠️ A CONFERÊNCIA CORRE ANTES DE SE ESCREVER FICHEIRO NENHUM.
+   * Um plano com um número errado no ecrã é pior do que plano nenhum: ele passa pela
+   * voz, pelo render de seis minutos e só se descobre a olhar o vídeo pronto. Aqui
+   * custa zero e é imediato.
+   */
+  const queixas = conferirImagens(cenas, longo.mapa || {});
+  if (queixas.length) {
+    console.log(`\n❌ ${queixas.length} problema(s) nas imagens — nada foi escrito:\n`);
+    for (const q of queixas) console.log(`   · ${q}`);
+    console.log('');
+    process.exit(1);
+  }
+  console.log('   ✅ conferência das imagens: todos os números do ecrã estão no mapa\n');
 
   // 1) o ficheiro que o `tts-short.js` já sabe ler, sem uma linha nova lá dentro
   const paraVoz = {

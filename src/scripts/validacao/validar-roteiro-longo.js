@@ -612,6 +612,145 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
   ok('polidor · avisa que encurtar abaixo do mínimo faz a versão ser recusada', /ABAIXO do mínimo/.test(capSemDemo));
 }
 
+// ═══ 7. O DIRETOR DE IMAGEM ═══════════════════════════════════════════════════
+/**
+ * ⚠️ ESTAS PROVAS NASCERAM DE UM DEFEITO REAL, e não de zelo.
+ *
+ * O dono viu o primeiro vídeo longo e disse: *"às vezes fala R$ 1.200 mas está mostrando
+ * um b-roll de R$ 5.000"*. A causa era que a escolha de imagens **nunca lia o texto**.
+ * A cura foi o `lib/imagens-longo.js`; estas provas são a rede por baixo dele.
+ *
+ * E a PRIMEIRA delas é a mais importante, porque apanha um defeito que já tinha
+ * acontecido e que ninguém teria visto: a montagem estava a **perder 73 palavras do
+ * guião** — o parágrafo inteiro em que o app faz a conta — porque o montador percorria
+ * três partes do capítulo e o guião passara a ter quatro. Nada dava erro. O vídeo saía
+ * mais curto e sem a demonstração, e só se descobriu por acaso.
+ */
+console.log('\n7️⃣  O DIRETOR DE IMAGEM (a imagem nasce do texto)');
+console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, em silêncio)\n');
+{
+  const { montarCenas } = await import('../youtube/montar-longo.js');
+  const {
+    dirigirImagens, conferirImagens, cenaDizFraseDeclarada, escolherLugaresDaMetafora,
+    dicionarioDeValores, BROLL_PERMITIDO,
+  } = await import('../youtube/lib/imagens-longo.js');
+
+  const mapaDeProva = {
+    ...EXEMPLO_DE_MAPA,
+    fichaDeDivida: montarFichaDeDivida(EXEMPLO_DE_MAPA.numeroEspinha),
+  };
+  const guiaoDeProva = {
+    tema: 'prova de mesa',
+    promessa: EXEMPLO_DE_MAPA.promessa,
+    fioCondutor: EXEMPLO_DE_MAPA.fioCondutor,
+    abertura: EXEMPLO_DE_ABERTURA,
+    capitulos: [1, 2, 3].map((n) => ({
+      ...EXEMPLO_DE_CAPITULO,
+      titulo: EXEMPLO_DE_MAPA.capitulos[n - 1].titulo,
+      ...(n === EXEMPLO_DE_MAPA.capituloDaDemonstracao ? { demonstracao: EXEMPLO_DE_DEMONSTRACAO } : {}),
+    })),
+    chamada: EXEMPLO_DE_CHAMADA,
+    fecho: EXEMPLO_DE_FECHO,
+    mapa: mapaDeProva,
+  };
+
+  // (a) A MONTAGEM NÃO PERDE UMA PALAVRA — a prova do defeito das 73 palavras
+  const cenas = montarCenas(guiaoDeProva);
+  const noGuiao = contarPalavras([
+    guiaoDeProva.abertura,
+    ...guiaoDeProva.capitulos.flatMap((c) => [c.pergunta, c.desenvolvimento, c.demonstracao, c.regancho].filter(Boolean)),
+    guiaoDeProva.chamada,
+    guiaoDeProva.fecho,
+  ].join(' '));
+  const nasCenas = cenas.reduce((a, c) => a + c.palavras, 0);
+  ok(
+    `a montagem leva TODAS as palavras do guião ao vídeo (${nasCenas} de ${noGuiao})`,
+    nasCenas === noGuiao,
+    `faltam ${noGuiao - nasCenas} palavras — alguma parte do capítulo não está a ser montada`,
+  );
+  ok(
+    'a demonstração do app CHEGA às cenas (é a parte que se perdia)',
+    cenas.some((c) => c.parte === 'demonstracao'),
+  );
+
+  // (b) o guião de exemplo passa a conferência inteira
+  const queixas = conferirImagens(cenas, mapaDeProva);
+  ok('o guião de exemplo passa a conferência das imagens', queixas.length === 0, queixas.join(' | '));
+
+  // (c) TODO número no ecrã está na lista fechada do mapa
+  const dic = dicionarioDeValores(mapaDeProva);
+  const foraDaLista = cenas.flatMap((c) => {
+    const v = c.visual || {};
+    return [v.valor, v.etiqueta?.valor, ...(v.linhas || []).map((l) => l.valor)]
+      .filter((n) => Number.isFinite(n) && !dic.has(n));
+  });
+  ok('nenhum número no ecrã está fora da lista de valores do mapa', foraDaLista.length === 0, foraDaLista.join(', '));
+
+  // (d) o app aparece num capítulo só, e é o que o mapa escolheu
+  const capsComApp = [...new Set(cenas.filter((c) => c.visual?.tipo === 'app').map((c) => c.capitulo))];
+  ok(
+    `o app aparece só no capítulo ${mapaDeProva.capituloDaDemonstracao}`,
+    capsComApp.length === 1 && capsComApp[0] === mapaDeProva.capituloDaDemonstracao,
+    `apareceu em ${capsComApp.join(', ')}`,
+  );
+
+  // (e) nunca três ecrãs iguais seguidos
+  const assinatura = (c) => `${c.visual?.tipo}${c.visual?.tipo === 'palavras' ? `/${c.visual.variante}` : ''}`;
+  const trioIgual = cenas.some((_, i) => i >= 2 && assinatura(cenas[i]) === assinatura(cenas[i - 1]) && assinatura(cenas[i]) === assinatura(cenas[i - 2]));
+  ok('nunca há três ecrãs iguais seguidos', !trioIgual);
+
+  // (f) OS CASOS MAUS REPROVAM — uma conferência que não morde não é conferência
+  const mau = (visualExtra, base = cenas) => conferirImagens(
+    base.map((c, i) => (i === 4 ? { ...c, visual: { ...c.visual, ...visualExtra } } : c)),
+    mapaDeProva,
+  );
+  ok('reprova um número que não está no mapa', mau({ tipo: 'numero', valor: 4321, rotulo: 'x' }).some((q) => /não está na lista/.test(q)));
+  ok('reprova uma frase que o guião não declarou', mau({ tipo: 'frase', texto: 'compre agora com desconto' }).some((q) => /não está declarada/.test(q)));
+  ok('reprova b-roll fora da lista permitida', mau({ tipo: 'broll', comp: 'AppNumerosLong' }).some((q) => /b-roll permitido|teto/.test(q)));
+  ok(
+    'reprova o app num segundo capítulo',
+    conferirImagens(
+      cenas.map((c) => (c.parte === 'regancho' && c.capitulo === 1 ? { ...c, visual: { tipo: 'app', valor: mapaDeProva.numeroEspinha } } : c)),
+      mapaDeProva,
+    ).some((q) => /capítulos/.test(q)),
+  );
+
+  // (g) ⚠️ O B-ROLL DO CATÁLOGO ESTÁ VAZIO DE PROPÓSITO — e a prova diz porquê, para
+  //     ninguém o voltar a encher sem medir. Ver o comentário em `imagens-longo.js`.
+  ok('a lista de b-roll do catálogo está vazia (todas as telas mostram dinheiro de outra história)', BROLL_PERMITIDO.length === 0);
+
+  // (h) A RÉGUA DAS SEIS PALAVRAS — reconhece a frase mesmo reescrita, e recusa a
+  //     parafraseada. Provado com o caso REAL que motivou a régua.
+  ok(
+    'reconhece a promessa mesmo com palavras à frente',
+    cenaDizFraseDeclarada('Neste vídeo, eu vou te mostrar como achar as assinaturas que você paga sem usar e cortar as maiores ainda hoje.', EXEMPLO_DE_MAPA.promessa),
+  );
+  ok(
+    'NÃO reconhece uma frase só parecida (senão o ecrã promete o que a voz não diz)',
+    !cenaDizFraseDeclarada('Tem um hábito pequeno que muita gente deixa pra lá.', 'Tem um hábito simples que faz muita gente voltar para a mesma dívida sem perceber.'),
+  );
+
+  // (i) A METÁFORA: a pista FORTE escolhe primeiro. Foi medido numa corrida real que,
+  //     sem isto, o ator era gasto num "apertar as contas" e já não havia lugar para o
+  //     "levantar uma caixa pesada", que é a imagem da virada.
+  const cenasDeProva = [
+    { id: 1, parte: 'desenvolvimento', narration: 'Eu vivia apertado com as contas de casa.' },
+    { id: 2, parte: 'desenvolvimento', narration: 'Era tudo igual.' },
+    { id: 3, parte: 'desenvolvimento', narration: 'Nada de especial aqui.' },
+    { id: 4, parte: 'desenvolvimento', narration: 'Foi igual levantar uma caixa pesada do jeito certo.' },
+  ];
+  const lugares = escolherLugaresDaMetafora(cenasDeProva, 'mochila-pedras');
+  ok('a pista forte da metáfora entra mesmo quando vem depois da fraca', lugares.has(3));
+  ok('a metáfora respeita o intervalo mínimo entre aparições', [...lugares.keys()].every((i, n, todos) => n === 0 || i - todos[n - 1] >= 3));
+
+  // (j) determinismo: o mesmo guião dá sempre o mesmo vídeo
+  const outraVez = dirigirImagens(cenas.map((c) => ({ ...c, visual: undefined })), mapaDeProva);
+  ok(
+    'o mesmo guião dá sempre exatamente as mesmas imagens',
+    JSON.stringify(outraVez.map((c) => c.visual)) === JSON.stringify(cenas.map((c) => c.visual)),
+  );
+}
+
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════
 console.log(`\n${'═'.repeat(72)}`);
 console.log(`  ${passou} provas verdes · ${falhou} vermelhas`);

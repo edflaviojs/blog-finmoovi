@@ -35,6 +35,11 @@ import { activeIndex, wordTimingsFromReal, layoutWords } from './captions';
 import { CoreografiaDaCapa } from './capas';
 import { PALCO_W, PALCO_H } from './capa';
 import { BRAND, DISPLAY, BODY, gradientText } from './theme';
+// ── as telas que nascem do texto (04/08/2026) ────────────────────────────────
+import {
+  Etiqueta, CartaoDeNumero, CartaoDaConta, TelaDoApp, CartaoDeFrase, Metafora, PalavrasNaTela,
+} from './longo/telas';
+import type { LinhaDaConta } from './longo/telas';
 
 // ── o b-roll 16:9 já pronto (nenhuma destas composições foi tocada) ──────────
 import { CreditCards3DLong } from './CreditCards3D';
@@ -58,6 +63,27 @@ const BROLL: Record<string, React.FC> = {
   AppMosaicoLong, AppCarrosselLong, AppQuadLong, AppNumerosLong,
 };
 
+/**
+ * O QUE ESTA CENA MOSTRA — decidido pelo `lib/imagens-longo.js` a partir do TEXTO.
+ * ⚠️ Todos os números que aqui chegam já foram conferidos contra a lista fechada de
+ * valores do guião. Esta composição não inventa nem calcula nenhum.
+ */
+export type LongVisual = {
+  tipo: 'numero' | 'conta' | 'app' | 'frase' | 'metafora' | 'palavras' | 'broll';
+  valor?: number;
+  rotulo?: string;
+  passo?: number;
+  linhas?: LinhaDaConta[];
+  texto?: string;
+  etiquetaTexto?: string;
+  variante?: string | number;
+  fio?: string | null;
+  estagio?: number;
+  comp?: string;
+  brollFrames?: number;
+  etiqueta?: { valor: number; rotulo?: string } | null;
+};
+
 export type LongScene = {
   id: number;
   bloco: string;
@@ -66,8 +92,10 @@ export type LongScene = {
   narration: string;
   palavras: number;
   durationSec: number;
-  broll: string;
-  brollFrames: number;
+  /** ⚠️ Guiões montados ANTES de 04/08 não têm `visual` — ver `CenaLonga`. */
+  visual?: LongVisual;
+  broll?: string;
+  brollFrames?: number;
   capitulo?: number | null;
   tituloCapitulo?: string;
   abreCapitulo?: boolean;
@@ -308,28 +336,74 @@ const TrilhoLongo: React.FC<{ total: number; marcas: number[] }> = ({ total, mar
 };
 
 // ── a cena ──────────────────────────────────────────────────────────────────
+/** O b-roll do catálogo, em ciclo — o caminho que era o ÚNICO e passou a ser um dos sete. */
+const CenaDeBroll: React.FC<{ comp?: string; brollFrames?: number }> = ({ comp, brollFrames }) => {
+  const Broll = BROLL[comp || ''] || BROLL.AppMosaicoLong;
+  return (
+    // A composição do catálogo tem duração própria; quando a cena é mais longa,
+    // ela repete em ciclo em vez de congelar no último fotograma.
+    <Loop durationInFrames={Math.max(30, brollFrames || 210)}>
+      <Broll />
+    </Loop>
+  );
+};
+
+/**
+ * ═══ A CENA ═══
+ *
+ * 🔴 O QUE MUDOU EM 04/08/2026, e é o conserto das três queixas do dono.
+ * Isto era uma linha: pegava no `cena.broll` que a roda tinha sorteado e punha-o no
+ * ecrã. Trinta cenas, trinta telas do app, nenhuma ligada ao que se estava a dizer —
+ * e com números gravados há meses a contradizer a voz.
+ * Agora a cena desenha o que o DIRETOR DE IMAGEM decidiu a partir do texto: sete
+ * famílias, e o b-roll do catálogo é uma delas, com teto de três aparições.
+ *
+ * ⚠️ O guião antigo continua a abrir. Um plano montado antes de hoje não tem `visual`,
+ * e nesse caso volta-se ao b-roll de sempre — abrir o Studio num plano antigo não pode
+ * rebentar por causa disto.
+ */
 const CenaLonga: React.FC<{ cena: LongScene; frames: number; palavras?: { word: string; start: number; end: number }[] }> = ({ cena, frames, palavras }) => {
   const frame = useCurrentFrame();
-  const Broll = BROLL[cena.broll] || BROLL.AppMosaicoLong;
-  // Entrada suave: sem isto, a troca de b-roll a cada ~15s é um corte seco e o vídeo
+  const v = cena.visual;
+  // Entrada suave: sem isto, a troca de imagem a cada ~12s é um corte seco e o vídeo
   // parece uma apresentação de slides.
   const entra = interpolate(frame, [0, 10], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
+  const conteudo = (() => {
+    if (!v) return <CenaDeBroll comp={cena.broll} brollFrames={cena.brollFrames} />;
+    switch (v.tipo) {
+      case 'numero': return <CartaoDeNumero valor={v.valor ?? 0} rotulo={v.rotulo} />;
+      case 'conta': return <CartaoDaConta linhas={v.linhas ?? []} frames={frames} />;
+      case 'app': return <TelaDoApp valor={v.valor ?? 0} rotulo={v.rotulo} passo={v.passo} />;
+      case 'frase': return <CartaoDeFrase texto={v.texto ?? ''} etiquetaTexto={v.etiquetaTexto} variante={String(v.variante ?? '')} />;
+      case 'metafora': return <Metafora fio={v.fio} estagio={v.estagio} frames={frames} />;
+      case 'broll': return <CenaDeBroll comp={v.comp} brollFrames={v.brollFrames} />;
+      default: return <PalavrasNaTela narration={cena.narration} frames={frames} words={palavras} variante={Number(v.variante ?? 0)} />;
+    }
+  })();
+
+  /**
+   * ⚠️ NAS CENAS DE `palavras` NÃO SE DESENHA A LEGENDA DE BAIXO.
+   * Ali as palavras ditas SÃO a imagem, em letra grande no meio do ecrã. Manter também
+   * a legenda punha o mesmo texto duas vezes no mesmo fotograma — que é o primo do
+   * defeito §34.3-6, em que a legenda transparecia por baixo da capa.
+   */
+  const comLegenda = !v || v.tipo !== 'palavras';
+
   return (
     <AbsoluteFill>
-      <AbsoluteFill style={{ opacity: entra }}>
-        {/* A composição do catálogo tem duração própria; quando a cena é mais longa,
-            ela repete em ciclo em vez de congelar no último fotograma. */}
-        <Loop durationInFrames={Math.max(30, cena.brollFrames)}>
-          <Broll />
-        </Loop>
-      </AbsoluteFill>
+      <AbsoluteFill style={{ opacity: entra }}>{conteudo}</AbsoluteFill>
       {/* Véu por baixo da legenda: sem ele, a legenda branca cai por cima de gráficos
           claros e deixa de se ler. Só a faixa de baixo é escurecida. */}
-      <AbsoluteFill style={{
-        background: 'linear-gradient(to top, rgba(13,17,23,0.92) 0%, rgba(13,17,23,0.75) 14%, rgba(13,17,23,0) 32%)',
-      }} />
-      <LegendaLonga narration={cena.narration} totalFrames={frames} words={palavras} />
+      {comLegenda ? (
+        <AbsoluteFill style={{
+          background: 'linear-gradient(to top, rgba(13,17,23,0.92) 0%, rgba(13,17,23,0.75) 14%, rgba(13,17,23,0) 32%)',
+        }} />
+      ) : null}
+      {comLegenda ? <LegendaLonga narration={cena.narration} totalFrames={frames} words={palavras} /> : null}
+      {/* A chapa do valor entra por cima de tudo — é ela que garante que o número certo
+          está no ecrã nas repetições, sem repetir o cartão grande. */}
+      {v?.etiqueta ? <Etiqueta valor={v.etiqueta.valor} rotulo={v.etiqueta.rotulo} /> : null}
     </AbsoluteFill>
   );
 };
