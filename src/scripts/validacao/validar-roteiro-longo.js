@@ -39,7 +39,7 @@ import {
   buildPromptMapa, buildPromptAbertura, buildPromptCapitulo, buildPromptChamada, buildPromptFecho,
 } from '../youtube/roteiro-longo.js';
 import { BORDAO } from '../youtube/lib/schema-short.js';
-import { buildPromptLeitorBloco } from '../youtube/lib/leitor-longo.js';
+import { buildPromptLeitorBloco, buildPromptLeitorCapitulo } from '../youtube/lib/leitor-longo.js';
 
 let passou = 0;
 let falhou = 0;
@@ -99,14 +99,14 @@ const planoDoExemplo = (i) => ({
     contarPalavras(n) >= ORCAMENTO.capitulo.min && contarPalavras(n) <= ORCAMENTO.capitulo.max,
   );
   /**
-   * E O ATO QUE LEVA A DEMONSTRAÇÃO. O desenvolvimento entra ENCURTADO de propósito:
-   * num ato com demonstração, ela ocupa o espaço que o desenvolvimento cede — não se
-   * somam os dois inteiros, senão o capítulo estoura o orçamento. Isto não é um truque
-   * da prova; é exatamente o que o prompt manda fazer (a demonstração vale ~25s).
+   * E O ATO QUE LEVA A DEMONSTRAÇÃO — com o orçamento PRÓPRIO dele.
+   * ⚠️ A 1ª versão desta prova encurtava o desenvolvimento à mão para caber nas 240
+   * palavras dos outros atos, e essa gambiarra escondia o defeito real: o ato com
+   * demonstração tem QUATRO partes e nunca coube nesse orçamento. Foi por isso que o
+   * capítulo 2 saiu com 243 numa corrida a sério. A cura foi dar-lhe orçamento próprio;
+   * a prova agora mede as quatro partes inteiras, como elas vão ao ar.
    */
-  const desenvolvimentoCurto = EXEMPLO_DE_CAPITULO.desenvolvimento
-    .split(/(?<=[.!?])\s+/).slice(0, 7).join(' ');
-  const ato2 = { ...EXEMPLO_DE_CAPITULO, desenvolvimento: desenvolvimentoCurto, demonstracao: EXEMPLO_DE_DEMONSTRACAO };
+  const ato2 = { ...EXEMPLO_DE_CAPITULO, demonstracao: EXEMPLO_DE_DEMONSTRACAO };
   const v2 = validarCapitulo(ato2, 1, { plano: planoDoExemplo(1) });
   ok('a demonstração-exemplo passa no ato que a leva', passa(v2), porque(v2));
 }
@@ -548,6 +548,31 @@ console.log('   (a prova nasceu de uma falha REAL: a trava punia "moedinha" e o 
   for (const [nome, papel, agulha] of alinhamentoDoPolidor) {
     ok(`polidor · "${nome}" está escrito no prompt do bloco "${papel}"`, agulha.test(promptsDoPolidor[papel]));
   }
+
+  /**
+   * 🔴 E O POLIDOR DOS CAPÍTULOS TEM DE SABER QUAL DELES LEVA O APP.
+   * Sem isto ele mandava, em TODOS os capítulos, "o app aparece FAZENDO a conta" —
+   * e nos dois que não demonstram, a trava proíbe até o nome. Seria o prompt a
+   * ordenar exatamente o que o validador reprova, com um agravante: o polidor falha
+   * em silêncio, portanto o capítulo ficaria áspero e ninguém saberia porquê.
+   */
+  const capSemDemo = buildPromptLeitorCapitulo(
+    { pergunta: 'P?', desenvolvimento: 'D', regancho: 'R' },
+    { titulo: 'T', promessa: 'X', posicao: 1, total: 3, temDemo: false },
+  );
+  const capComDemo = buildPromptLeitorCapitulo(
+    { pergunta: 'P?', desenvolvimento: 'D', demonstracao: 'M', regancho: 'R' },
+    { titulo: 'T', promessa: 'X', posicao: 2, total: 3, temDemo: true },
+  );
+  ok('polidor · o ato SEM app é proibido de escrever o nome do produto', /proibido escrever a palavra FinMoovi/.test(capSemDemo));
+  ok('polidor · o ato SEM app não pede "demonstracao" no JSON', !/"demonstracao": "/.test(capSemDemo));
+  ok('polidor · o ato COM app pede "demonstracao" no JSON', /"demonstracao": "/.test(capComDemo));
+  ok(
+    `polidor · cada ato recebe o SEU orçamento (${ORCAMENTO.capitulo.min}-${ORCAMENTO.capitulo.max} · ${ORCAMENTO.capituloComDemo.min}-${ORCAMENTO.capituloComDemo.max})`,
+    new RegExp(`${ORCAMENTO.capitulo.min} e ${ORCAMENTO.capitulo.max} palavras`).test(capSemDemo)
+      && new RegExp(`${ORCAMENTO.capituloComDemo.min} e ${ORCAMENTO.capituloComDemo.max} palavras`).test(capComDemo),
+  );
+  ok('polidor · avisa que encurtar abaixo do mínimo faz a versão ser recusada', /ABAIXO do mínimo/.test(capSemDemo));
 }
 
 // ═══ RESULTADO ═══════════════════════════════════════════════════════════════

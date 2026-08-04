@@ -44,7 +44,7 @@ import { PERSONA, VICIOS_ESSENCIAIS, O_QUE_PRESERVAR } from './lib/voz-do-canal.
 import { montarFichaDeNumeros } from './lib/simulador.js';
 import { polirCapitulo, polirBloco } from './lib/leitor-longo.js';
 import {
-  ORCAMENTO, PARTES_DO_CAPITULO, PARTES_POSSIVEIS, NUM_CAPITULOS, MAX_PALAVRAS_TITULO, PALAVRAS_POR_SEGUNDO,
+  ORCAMENTO, MOVIMENTOS, PARTES_DO_CAPITULO, PARTES_POSSIVEIS, NUM_CAPITULOS, MAX_PALAVRAS_TITULO, PALAVRAS_POR_SEGUNDO,
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
   contarPalavras, frasesDe, falaCorrida,
 } from './lib/schema-longo.js';
@@ -304,8 +304,17 @@ const REGRAS_DE_FALA = `════════ COMO A FALA FLUI ════�
  * e deixa só DUAS pessoas na cabeça de quem ouve: eu, que passei por isto, e você,
  * que está a passar. Uma terceira personagem obrigaria a segurar mais uma história.
  */
+const OS_MOVIMENTOS = MOVIMENTOS
+  .map((m, i) => `   **ATO ${i + 1} — ${m.nome}:** ${m.faz}\n      ⛔ Neste ato é proibido ${m.proibido}`)
+  .join('\n');
+
 const A_HISTORIA = `════════ A REGRA MAIOR DESTE VÍDEO: UMA HISTÓRIA SÓ ════════
-Este vídeo conta **UMA história, de UMA pessoa, com UM número**. Os três capítulos não são três assuntos — são três **atos da mesma história**, e o mesmo dinheiro aparece nos três, visto de ângulos diferentes.
+Este vídeo conta **UMA história, de UMA pessoa, com UM número**. Os três capítulos não são três assuntos — são três **atos da mesma história**, e o mesmo dinheiro aparece nos três.
+
+🎬 **E OS TRÊS ATOS SÃO ESTES, POR ESTA ORDEM. Não são três descrições da mesma cena:**
+${OS_MOVIMENTOS}
+
+🔴 **O ATO 2 É O CORAÇÃO DO VÍDEO.** É lá que está o **único ensinamento** — a coisa que a pessoa não sabia e que explica por que o problema continua mesmo quando ela se esforça. Se o ato 2 só voltar a mostrar o número que o ato 1 já mostrou, o vídeo dá voltas e quem vê sai. **Já aconteceu neste canal: o ato 1 e o ato 2 saíram com o mesmo domingo, a mesma fatura na mão e a mesma soma.**
 
 👤 **QUEM VIVEU A HISTÓRIA É VOCÊ, O NARRADOR.** Fale na PRIMEIRA PESSOA: "eu abri", "eu somei", "eu levei um susto".
 ⛔ **NÃO invente uma terceira pessoa** com nome ("a Cláudia", "o Seu Antônio"). Só existem duas pessoas neste vídeo: **EU**, que passei por isto, e **VOCÊ**, que está a passar. Uma personagem inventada é um caso de cliente que nunca existiu, e este canal não faz isso.
@@ -498,7 +507,10 @@ A PROMESSA DO VÍDEO: "${mapa.promessa}"
    · 🔴 **O NÚMERO DESTE VÍDEO É ${mapa.numeroEspinha}, e ele TEM de ser dito neste ato**, por extenso. É o mesmo número dos outros dois atos — é isso que faz o vídeo ter uma ideia só. O computador confere.
    · 🔴 **TODO o dinheiro que você pode dizer é este, e mais nenhum:** ${valores}.
      Um valor que não esteja nesta lista é de outra história, e o computador reprova.${somas ? `\n   · **A conta que tem de bater:** ${somas}. Se disser as parcelas, diga o total, para quem ouve somar junto.` : ''}
-   · **O que ESTE ato acrescenta à história:** ${plano.oQueAcrescenta}
+   · **ESTE é o ATO ${indice + 1} — ${MOVIMENTOS[indice].nome}:** ${MOVIMENTOS[indice].faz}
+     ⛔ **Aqui é PROIBIDO ${MOVIMENTOS[indice].proibido}**
+   · **O que ESTE ato acrescenta à história:** ${plano.oQueAcrescenta}${indice > 0 ? `
+   · ⛔ **O ato anterior JÁ ENTREGOU isto, e não se repete:** ${mapa.capitulos[indice - 1].oQueAcrescenta}` : ''}
    · **E deixa no ar:** ${plano.oQueFicaEmAberto}
 ${seguinte ? `O ato seguinte chama-se "${seguinte.titulo}" — o seu re-gancho aponta para lá SEM dizer o nome dele.` : 'Este é o último ato. O re-gancho entrega a conversa ao fim do vídeo.'}
 
@@ -509,7 +521,7 @@ ${ancora ? `${ancora}\n` : ''}
 ${blocoDaDemo}
 ${temDemo ? '4' : '3'}. **regancho** (~10s) — deixa a ponta no ar para o ato seguinte. Uma ou duas frases, sem prometer nada de fora deste vídeo.
 
-⚠️ **TAMANHO: tudo somado, entre ${ORCAMENTO.capitulo.min} e ${ORCAMENTO.capitulo.max} palavras.** Conte antes de responder.
+⚠️ **TAMANHO: tudo somado, entre ${(temDemo ? ORCAMENTO.capituloComDemo : ORCAMENTO.capitulo).min} e ${(temDemo ? ORCAMENTO.capituloComDemo : ORCAMENTO.capitulo).max} palavras.** Conte antes de responder.
 ⛔ **NÃO PEÇA NADA** — nem comentário, nem inscrição, nem curtir, nem link. Isso acontece UMA vez no vídeo, e não é aqui.
 ⛔ **NÃO DIGA O BORDÃO DO CANAL.** Ele é a assinatura e vive só na última frase do vídeo.
 ⛔ **NÃO USE O MOLDE "não é A, é B".** É a marca da escrita de robô. Diga só o B.
@@ -961,7 +973,7 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
   if (polir) {
     console.log('\n💎 ANDAR 3 — O POLIDOR, CAPÍTULO A CAPÍTULO\n');
     for (let i = 0; i < roteiro.capitulos.length; i++) {
-      const plano = mapa.capitulos[i];
+      const plano = planoDoCapitulo(mapa, i);
       const conferir = (cand) => validarCapitulo(cand, i, { plano: planoDoCapitulo(mapa, i), exemploParaComparar: EXEMPLO_PARA_COMPARAR });
       const limpar = (cand) => ({
         ...cand,
@@ -969,7 +981,7 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
       });
       const lido = await polirCapitulo(
         roteiro.capitulos[i],
-        { titulo: plano.titulo, promessa: mapa.promessa, posicao: i + 1, total: roteiro.capitulos.length },
+        { titulo: plano.titulo, promessa: mapa.promessa, posicao: i + 1, total: roteiro.capitulos.length, temDemo: plano.temDemonstracao },
         conferir,
         { limpar },
       );

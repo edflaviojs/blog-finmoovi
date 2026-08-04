@@ -88,9 +88,53 @@ export const PALAVRAS_POR_SEGUNDO = 2.6;
 export const ORCAMENTO = {
   abertura: { min: 90, max: 120 },
   capitulo: { min: 190, max: 240 },
+  /**
+   * ⚠️ O ATO QUE LEVA A DEMONSTRAÇÃO TEM ORÇAMENTO PRÓPRIO — e a 19ª ocorrência do
+   * defeito nº1 desta casa mora aqui, medida na 1ª corrida do modelo novo.
+   * Esse ato tem QUATRO partes em vez de três, e o prompt pede-lhe a pergunta, ~50s
+   * de história, ~25s de demonstração e o re-gancho. Isso não cabe em 240 palavras.
+   * Resultado: o capítulo 2 saiu com 243 e foi reprovado por três palavras — o prompt
+   * a pedir mais do que a trava deixa, outra vez.
+   * A conta: 240 + os ~25s da demonstração a 2,6 palavras/s ≈ 65 palavras.
+   */
+  capituloComDemo: { min: 215, max: 285 },
   chamada: { min: 22, max: 40 },
   fecho: { min: 85, max: 115 },
 };
+
+/**
+ * ═══ OS TRÊS MOVIMENTOS DA HISTÓRIA ═══
+ *
+ * ⚠️ NASCEU DE UM DEFEITO MEDIDO NA 1ª CORRIDA DO MODELO NOVO (04/08/2026).
+ * Eu tinha dito ao modelo "três atos da mesma história" e nunca lhe disse QUAIS. Ele
+ * fez o que era previsível: dois atos a contar a mesma cena. No vídeo que saiu, o
+ * ato 1 e o ato 2 eram **o mesmo domingo, a mesma fatura na mão e a mesma soma** —
+ * mudavam as palavras, mas quem via ouvia duas vezes a mesma descoberta. Isto é a
+ * outra cara do defeito que o dono apontou: antes eram três histórias, agora era uma
+ * história contada três vezes.
+ *
+ * A cura é dar nome aos movimentos. Não é uma trava (medir se um ato "avança" é
+ * gosto), é **desenho**: o ato 2 tem de trazer um MECANISMO — a coisa que a pessoa
+ * não sabia e que explica por que o problema não se resolve sozinho. É aí que mora o
+ * "um único ensinamento" que o dono pediu.
+ */
+export const MOVIMENTOS = [
+  {
+    nome: 'O SUSTO',
+    faz: 'o número aparece. O narrador conta como o descobriu, e quem ouve sente o baque com ele.',
+    proibido: 'explicar a causa — isso é do ato 2. Aqui só se DESCOBRE.',
+  },
+  {
+    nome: 'A ARMADILHA',
+    faz: 'o ENSINAMENTO do vídeo: o mecanismo que a pessoa não conhece e que faz o problema continuar mesmo quando ela se esforça. É a parte que ela vai repetir a alguém.',
+    proibido: 'voltar a descobrir o número — ele já foi descoberto no ato 1. Aqui ele já se sabe, e o que é novo é POR QUE ele não desaparece.',
+  },
+  {
+    nome: 'A VIRADA',
+    faz: 'o que o narrador fez de diferente depois de perceber a armadilha, e o que mudou no mês seguinte.',
+    proibido: 'prometer que é fácil, ou repetir a descoberta. Aqui já se AGE.',
+  },
+];
 
 /**
  * ⚠️ O TETO DO TÍTULO DE CAPÍTULO SAI DOS DADOS REAIS, NÃO DE GOSTO.
@@ -679,9 +723,11 @@ export function validarCapitulo(cap, indice, { plano = {}, exemploParaComparar =
   const fala = PARTES_POSSIVEIS.map((p) => String(cap[p] || '').trim()).filter(Boolean).join(' ');
   if (!fala) return { ok: false, erros, avisos };
 
+  // O ato com demonstração tem uma parte a mais, logo um orçamento a mais (ver ORCAMENTO).
+  const orcamento = temDemo ? ORCAMENTO.capituloComDemo : ORCAMENTO.capitulo;
   const palavras = contarPalavras(fala);
-  if (palavras < ORCAMENTO.capitulo.min || palavras > ORCAMENTO.capitulo.max) {
-    erros.push(queixaDeTamanho(onde, palavras, ORCAMENTO.capitulo));
+  if (palavras < orcamento.min || palavras > orcamento.max) {
+    erros.push(queixaDeTamanho(onde, palavras, orcamento));
   }
 
   // A PERGUNTA que abre o capítulo é mesmo uma pergunta.

@@ -29,7 +29,7 @@ import { generateText } from '../../apis/kie-ai.js';
 import { PERSONA, VICIOS, O_QUE_PRESERVAR } from './voz-do-canal.js';
 import { BORDAO } from './schema-short.js';
 import { MAX_PALAVRAS_CAPA } from './palavras.js';
-import { PARTES_DO_CAPITULO, ORCAMENTO } from './schema-longo.js';
+import { PARTES_DO_CAPITULO, PARTES_POSSIVEIS, ORCAMENTO } from './schema-longo.js';
 
 function extrairJson(texto) {
   let s = String(texto).trim();
@@ -41,10 +41,11 @@ function extrairJson(texto) {
   return JSON.parse(s.slice(a, b + 1));
 }
 
-export function buildPromptLeitorCapitulo(capitulo, { titulo, promessa, posicao, total }) {
-  const partes = PARTES_DO_CAPITULO
-    .map((p) => `[${p.toUpperCase()}]\n${capitulo[p]}`)
-    .join('\n\n');
+export function buildPromptLeitorCapitulo(capitulo, { titulo, promessa, posicao, total, temDemo = false }) {
+  const faixa = temDemo ? ORCAMENTO.capituloComDemo : ORCAMENTO.capitulo;
+  const presentes = PARTES_POSSIVEIS.filter((p) => typeof capitulo[p] === 'string' && capitulo[p].trim());
+  const contagem = presentes.map((p) => capitulo[p]).join(' ').trim().split(/\s+/).filter(Boolean).length;
+  const partes = presentes.map((p) => `[${p.toUpperCase()}]\n${capitulo[p]}`).join('\n\n');
 
   return `Você é o EDITOR de um canal brasileiro de finanças. Alguém já escreveu o capítulo ${posicao} de ${total} de um vídeo de seis minutos. O seu trabalho NÃO é reescrever a história — é fazer com que ela soe como UMA PESSOA FALANDO.
 
@@ -70,7 +71,9 @@ Está a ler em voz alta para um senhor de setenta anos que saiu cedo da escola e
 ════════ O QUE ESTE CAPÍTULO TEM DE FAZER ════════
 1. ABRIR com uma pergunta que dói, e responder-lhe já.
 2. Mostrar UM número que se transforma à frente de quem ouve. Se há uma soma, quem ouve tem de conseguir somar junto.
-3. O app aparece FAZENDO a conta, na primeira pessoa ("eu joguei isso no FinMoovi e ele me mostrou…"), nunca citado de passagem.
+${temDemo
+    ? '3. É NESTE capítulo que o app aparece, FAZENDO a conta, na primeira pessoa. Diga o que apareceu na TELA — o nome da linha, o total escrito.'
+    : '3. ⛔ O APP NÃO APARECE NESTE CAPÍTULO. **É proibido escrever a palavra FinMoovi aqui** — a demonstração é de outro capítulo, e se você a acrescentar a sua versão é recusada.'}
 4. FECHAR deixando uma ponta no ar, para o capítulo seguinte a agarrar. Sem prometer nada que não seja deste vídeo.
 5. Frases curtas, sujeito e verbo. Metáfora quase não existe — no máximo UMA comparação, com coisa que a pessoa já conhece.
 
@@ -85,18 +88,17 @@ ${O_QUE_PRESERVAR}
 ⛔ NÃO peça NADA a quem assiste: nem comentário, nem inscrição, nem curtir, nem link. Isso acontece uma única vez no vídeo, noutro bloco. Neste capítulo é proibido.
 ⛔ NÃO escreva o bordão do canal. Ele é a assinatura e vive só no último bloco. A frase é esta, e não é para usar aqui: "${BORDAO}"
 ⛔ NÃO cite percentagens nem taxas. Este vídeo não tem conta calculada.
-⛔ NÃO acrescente nem tire partes: são quatro, com estes nomes e nesta ordem.
-⛔ Mantenha o tamanho parecido — no máximo mais 5% de palavras que o original.
+⛔ NÃO acrescente nem tire partes: devolva exatamente as que recebeu, com estes nomes e nesta ordem.
+🔴 **TAMANHO — leia isto com atenção, porque é aqui que a sua versão costuma ser deitada fora.**
+   O capítulo INTEIRO tem de continuar entre **${faixa.min} e ${faixa.max} palavras**. Ele tem agora ${contagem}.
+   ⚠️ Se você cortar as frases de encher e ficar ABAIXO do mínimo, **a sua versão é recusada e o texto áspero fica no ar**. Cortar não é encurtar: o que sai de uma frase morta tem de voltar como **coisa concreta** — um detalhe, um número que já existe no texto, uma consequência. Nunca como enchimento novo.
 ✓ Se uma parte já soa a gente, **deixe-a exatamente como está**. Editar de menos é melhor que editar de mais.
 
 🇧🇷 **PORTUGUÊS DO BRASIL FALADO.** Nada de "está a fazer" (no Brasil é "tá fazendo"), nada de "ecrã" nem "telemóvel".
 
 Responda APENAS com JSON válido, sem markdown:
 {
-  "pergunta": "...",
-  "desenvolvimento": "...",
-  "demonstracao": "...",
-  "regancho": "...",
+  ${presentes.map((p) => `"${p}": "..."`).join(',\n  ')},
   "mexi": ["<em poucas palavras, o que mudou e porquê. SEM aspas dentro do texto.>"]
 }`;
 }
@@ -283,7 +285,8 @@ export async function polirCapitulo(capitulo, contexto, validar, { tentativas = 
       continue;
     }
 
-    const emFalta = PARTES_DO_CAPITULO.filter((p) => typeof lido[p] !== 'string' || !lido[p].trim());
+    const esperadas = PARTES_POSSIVEIS.filter((p) => typeof capitulo[p] === 'string' && capitulo[p].trim());
+    const emFalta = esperadas.filter((p) => typeof lido[p] !== 'string' || !lido[p].trim());
     if (emFalta.length) {
       ultimoMotivo = `o polidor devolveu o capítulo sem as partes: ${emFalta.join(', ')}`;
       continue;
@@ -291,7 +294,7 @@ export async function polirCapitulo(capitulo, contexto, validar, { tentativas = 
 
     const revisto = limpar({
       ...capitulo,
-      ...Object.fromEntries(PARTES_DO_CAPITULO.map((p) => [p, String(lido[p]).trim()])),
+      ...Object.fromEntries(esperadas.map((p) => [p, String(lido[p]).trim()])),
     });
 
     // A REDE POR BAIXO: a versão polida volta a passar pelas travas de VERDADE.
