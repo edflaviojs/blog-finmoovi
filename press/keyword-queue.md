@@ -1,11 +1,11 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-04T14:22:34.023Z
-**Totais:** 45 pendente(s) · 23 usada(s) · 16 pulada(s)
+**Atualizado em:** 2026-08-04T14:48:07.122Z
+**Totais:** 62 pendente(s) · 23 usada(s) · 16 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 23
+### Manuais (prioridade 1) — 40
 
 - fluxo de caixa _(glossario)_
 - saldo devedor _(glossario)_
@@ -30,6 +30,23 @@
 - orçamento gratis
 - app financas gratis
 - contas do dia
+- significado de credito _(glossario)_
+- cartao de credito pagbank como funciona _(glossario)_
+- como funciona a anuidade do cartão _(glossario)_
+- como funciona a amortização de financiamento _(glossario)_
+- como funciona a transferência de financiamento _(glossario)_
+- como funciona cartao virtual nubank _(glossario)_
+- como funciona construir limite no nubank _(glossario)_
+- como funciona financiamento _(glossario)_
+- como funciona financiamento bancário _(glossario)_
+- como funciona financiamento de carro _(glossario)_
+- como funciona financiamento de carros _(glossario)_
+- como funciona financiamento de casas _(glossario)_
+- como funciona financiamento de moto _(glossario)_
+- como funciona financiamento de motos _(glossario)_
+- como funciona financiamento de veiculo _(glossario)_
+- como funciona financiamento de veículos _(glossario)_
+- como funciona minha casa minha vida financiamento _(glossario)_
 
 ### Lacunas do GSC (prioridade 2) — 8
 
