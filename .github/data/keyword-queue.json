@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T12:51:49.214Z",
+  "updatedAt": "2026-08-04T14:22:34.023Z",
   "sourceCursor": 0,
   "entries": [
     {
@@ -661,6 +661,105 @@
       "source": "autocomplete",
       "status": "pending",
       "addedAt": "2026-08-03T10:31:32.129Z"
+    },
+    {
+      "keyword": "app de controle financeiro",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.693Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "qual o melhor aplicativo para controle financeiro",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.694Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "planilha de gastos mensal",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.694Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "template excel finanças pessoais",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.694Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "excel para despesas mensais",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.695Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "orçamento familiar excel",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.695Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "app finanças pessoais",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.695Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "excel despesas",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.695Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "orçamento gratis",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.695Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "app financas gratis",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.695Z",
+      "finmooviHook": "enviado via /status 04/08"
+    },
+    {
+      "keyword": "contas do dia",
+      "category": null,
+      "priority": 1,
+      "source": "manual",
+      "status": "pending",
+      "addedAt": "2026-08-04T14:22:33.695Z",
+      "finmooviHook": "enviado via /status 04/08"
     }
   ]
 }

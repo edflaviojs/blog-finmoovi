@@ -1,11 +1,11 @@
 # 🗂️ Fila de Keywords (Fase 3)
 
-**Atualizado em:** 2026-08-03T10:31:32.129Z
-**Totais:** 41 pendente(s) · 17 usada(s) · 15 pulada(s)
+**Atualizado em:** 2026-08-04T14:22:34.023Z
+**Totais:** 45 pendente(s) · 23 usada(s) · 16 pulada(s)
 
 ## ⏳ Pendentes por fonte
 
-### Manuais (prioridade 1) — 12
+### Manuais (prioridade 1) — 23
 
 - fluxo de caixa _(glossario)_
 - saldo devedor _(glossario)_
@@ -19,12 +19,20 @@
 - parcelamento _(glossario)_
 - renda mensal _(glossario)_
 - lista de compras _(glossario)_
+- app de controle financeiro
+- qual o melhor aplicativo para controle financeiro
+- planilha de gastos mensal
+- template excel finanças pessoais
+- excel para despesas mensais
+- orçamento familiar excel
+- app finanças pessoais
+- excel despesas
+- orçamento gratis
+- app financas gratis
+- contas do dia
 
-### Lacunas do GSC (prioridade 2) — 11
+### Lacunas do GSC (prioridade 2) — 8
 
-- financing
-- financiamiento
-- fund investments
 - acciones ejemplos
 - foreign exchange
 - pagos anticipados
@@ -34,12 +42,8 @@
 - fundo de investimento
 - volatility
 
-### Autocomplete (prioridade 3) — 18
+### Autocomplete (prioridade 3) — 14
 
-- kyc o que é
-- kyco
-- exemplo de gasto variável _(glossario)_
-- fluxo de caixa descontado _(glossario)_
 - fluxo de caixa excel _(glossario)_
 - fatura do cartão mais _(glossario)_
 - fatura do cartão atacadão _(glossario)_
@@ -59,16 +63,16 @@
 
 | Keyword | Usada por | Em |
 |---|---|---|
+| fluxo de caixa descontado | glossario-auto-diario | 2026-08-04 |
+| fund investments | gerar-post-inteligente | 2026-08-04 |
+| kyco | gerar-dicas-financeiras | 2026-08-04 |
+| financiamiento | gerar-post-orcamento | 2026-08-03 |
+| exemplo de gasto variável | glossario-auto-diario | 2026-08-03 |
+| financing | gerar-dicas-financeiras | 2026-08-03 |
 | gasto variável | glossario-auto-diario | 2026-08-02 |
 | como poupar dinheiro dicas | gerar-dicas-financeiras | 2026-08-02 |
 | gasto variavel unitario | glossario-auto-diario | 2026-08-01 |
 | organizar finanças pessoais | gerar-dicas-financeiras | 2026-08-01 |
-| gasto fixo de uma empresa | glossario-auto-diario | 2026-07-31 |
-| controlar despesas pessoais | gerar-dicas-financeiras | 2026-07-31 |
-| gasto fixo mensal | glossario-auto-diario | 2026-07-30 |
-| orçamento pessoal mensal | gerar-dicas-financeiras | 2026-07-30 |
-| gasto fixo e variavel | glossario-auto-diario | 2026-07-29 |
-| o que é CDI e como ele afeta seus investimentos | gerar-post-investimentos | 2026-07-29 |
 
 ## ⏭️ Puladas (já cobertas)
 
@@ -81,6 +85,7 @@
 - amortização de contrato (descartada-revisao)
 - amortização de parcelas (descartada-revisao)
 - kyc (coberto-glossario)
+- kyc o que é (coberto-glossario)
 - kyc shopee (nome-proprio-local)
 - fluxo de caixa sebrae (nome-proprio-local)
 - saldo devedor cohab mg (nome-proprio-local)
