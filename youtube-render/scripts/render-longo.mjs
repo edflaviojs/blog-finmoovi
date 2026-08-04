@@ -23,7 +23,7 @@
  *   node scripts/render-longo.mjs --slug=... --recomecar   (deita fora as partes feitas)
  */
 
-import { readFileSync, existsSync, mkdirSync, writeFileSync, rmSync } from 'fs';
+import { readFileSync, existsSync, mkdirSync, writeFileSync, rmSync, readdirSync } from 'fs';
 import { join, dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { execFileSync } from 'child_process';
@@ -107,9 +107,31 @@ for (const p of partes) {
 }
 console.log('');
 
+/**
+ * ⚠️ 🔴 `rmSync` NÃO APAGA NADA NESTA MÁQUINA, E ISSO QUASE ENTREGOU O VÍDEO ERRADO.
+ *
+ * O caminho do projeto tem um acento — `C:\Users\Ed Flávio\…` — e nesta máquina o apagar
+ * do Node falha em silêncio nesses caminhos. Resultado, visto no registo com estes olhos:
+ * a linha *"partes anteriores apagadas"* aparecia **e a seguir aparecia "parte 1 já
+ * existe"**. Com a voz acabada de refazer, o vídeo teria saído com a voz VELHA — a que o
+ * dono reprovou — e nada se queixaria.
+ *
+ * Portanto: apaga-se ficheiro a ficheiro, e **confere-se que desapareceram**. Se algum
+ * ficar, o script PÁRA, porque continuar seria entregar o vídeo de ontem com a cara do
+ * de hoje. É a regra da casa: conferir o RESULTADO, nunca o código de saída.
+ */
 if (args.recomecar && existsSync(OUT)) {
-  rmSync(OUT, { recursive: true, force: true });
-  console.log('🧹 partes anteriores apagadas (--recomecar)\n');
+  for (const f of readdirSync(OUT)) {
+    try { rmSync(join(OUT, f), { recursive: true, force: true }); } catch { /* confere-se abaixo */ }
+  }
+  const sobrou = existsSync(OUT) ? readdirSync(OUT) : [];
+  if (sobrou.length) {
+    console.log(`\n❌ o --recomecar não conseguiu apagar ${sobrou.length} ficheiro(s) em ${OUT}:`);
+    for (const f of sobrou.slice(0, 6)) console.log(`   · ${f}`);
+    console.log('   Apague a pasta à mão e volte a correr. (Continuar aqui daria um vídeo com o som antigo.)\n');
+    process.exit(1);
+  }
+  console.log('🧹 partes anteriores apagadas (--recomecar) — e conferido que a pasta ficou vazia\n');
 }
 mkdirSync(OUT, { recursive: true });
 
@@ -151,12 +173,86 @@ for (const p of partes) {
   feitas.push(destino);
 }
 
-// ── colar ───────────────────────────────────────────────────────────────────
+/**
+ * ═══ 🔴 O SOM É FEITO DE UMA VEZ SÓ, E A IMAGEM É QUE VEM EM PEDAÇOS (04/08/2026) ═══
+ *
+ * O dono, três vezes, sobre o mesmo ponto: *"a música corta rapidamente pra iniciar a
+ * próxima tela… acontece exatamente aos 32 segundos, e isso se repete sempre que inicia
+ * uma tela de passo 2, 3"*.
+ *
+ * 🔴 **O DEFEITO NÃO ESTAVA NA MÚSICA. ESTAVA AQUI, NA COLAGEM.**
+ *
+ * Cada parte sai deste script como um MP4 com o seu próprio som codificado à parte. Um
+ * codificador de som trabalha em blocos de ~21 ms: para fechar o ficheiro, ele **enche o
+ * último bloco com silêncio**. Colando as partes com `-c copy`, esse silêncio de
+ * enchimento entra no meio do vídeo — e entra **exatamente no fotograma em que começa a
+ * tela do capítulo**, porque é aí que se corta.
+ *
+ * MEDIDO no vídeo que ele ouviu, à amostra:
+ *
+ * | emenda | buraco de silêncio ABSOLUTO |
+ * |---|---|
+ * | Passo 1 (32,5s) | **45,6 ms** |
+ * | Passo 2 (102,5s) | **47,7 ms** |
+ * | Passo 3 (195,0s) | **58,4 ms** |
+ *
+ * E a prova que fecha o caso: o **mesmo trecho** renderizado sem cortar em partes **não
+ * tem buraco nenhum**. No vídeo anterior (o que ele preferia) estão lá os mesmos três
+ * buracos, um por capítulo, e mais nenhum em seis minutos.
+ *
+ * > Foi por isto que três tentativas de consertar "a música" falharam: o defeito nasce
+ * > **depois** do render, na colagem, e nenhuma medição feita à música o podia mostrar.
+ * > E também não é um estalo — é um BURACO. A prova da §38.1 procurava saltos entre
+ * > amostras e não achava nada, porque 45 ms de silêncio não dão salto nenhum.
+ *
+ * ═══ A CURA ═══
+ * A imagem continua a vir em pedaços — é ela que custa horas e é ela que precisa de rede
+ * de segurança. **O som passa a ser feito NUMA PASSAGEM ÚNICA**, do primeiro ao último
+ * fotograma, e é colado por cima da imagem já junta. Sem emendas, não há buracos.
+ *
+ * ⚠️ E se essa passagem falhar, o script **não entrega um vídeo mudo**: volta ao método
+ * antigo (o som das partes) e diz que voltou. Um vídeo com três buraquinhos é mau; um
+ * vídeo sem som é pior.
+ */
 const lista = join(OUT, 'partes.txt');
 writeFileSync(lista, feitas.map((f) => `file '${f.replace(/\\/g, '/')}'`).join('\n'), 'utf-8');
 const final = join(OUT, `${slug}.mp4`);
+
+const somInteiro = join(OUT, 'som-inteiro.wav');
+const somRelativo = 'out/longo/som-inteiro.wav';
+let temSomInteiro = existsSync(somInteiro);
+if (temSomInteiro) {
+  console.log('\n♻️  o som inteiro já existe — não se paga duas vezes pelo mesmo som');
+} else {
+  console.log('\n🔊 a fazer o som de uma vez só (sem emendas)…');
+  try {
+    execFileSync('npx', [
+      'remotion', 'render', 'src/index.ts', 'Long', somRelativo,
+      `--frames=0-${total - 1}`,
+      `--props=${propsFile}`,
+      '--log=error',
+    ], { cwd: RAIZ, stdio: 'inherit', shell: true });
+    temSomInteiro = existsSync(somInteiro);
+  } catch (err) {
+    temSomInteiro = false;
+  }
+  if (!temSomInteiro) {
+    console.log('   ⚠️ a passagem do som falhou — o vídeo sai com o som das partes,');
+    console.log('      que traz um buraquinho em cada mudança de capítulo.');
+  }
+}
+
 console.log('\n🔗 a colar as partes…');
-execFileSync('ffmpeg', ['-y', '-f', 'concat', '-safe', '0', '-i', lista, '-c', 'copy', final], { stdio: 'inherit' });
+if (temSomInteiro) {
+  // a imagem cola-se SEM som (`-an`), e o som inteiro entra por cima
+  const soImagem = join(OUT, 'so-imagem.mp4');
+  execFileSync('ffmpeg', ['-y', '-f', 'concat', '-safe', '0', '-i', lista, '-c:v', 'copy', '-an', soImagem], { stdio: 'inherit' });
+  execFileSync('ffmpeg', ['-y', '-i', soImagem, '-i', somInteiro,
+    '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', final], { stdio: 'inherit' });
+  try { rmSync(soImagem, { force: true }); } catch { /* fica o intermédio */ }
+} else {
+  execFileSync('ffmpeg', ['-y', '-f', 'concat', '-safe', '0', '-i', lista, '-c', 'copy', final], { stdio: 'inherit' });
+}
 
 // ⚠️ CONFERIR O RESULTADO, nunca o código de saída. É regra desta casa.
 const dur = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', final], { encoding: 'utf-8' }).trim();
@@ -165,4 +261,36 @@ console.log(`\n✅ ${final}`);
 console.log(`   duração medida: ${Number(dur).toFixed(1)}s · esperada: ${esperado.toFixed(1)}s`);
 if (Math.abs(Number(dur) - esperado) > 2) {
   console.log('   ⚠️ a diferença passa dos 2 segundos — alguma parte pode ter ficado curta. Confira antes de usar.');
+}
+
+/**
+ * ⚠️ A PROVA QUE TEM DE CORRER SEMPRE, e é a que faltava.
+ * Procura buracos de silêncio quase absoluto de 20 ms ou mais. Num vídeo com narração
+ * contínua e música por baixo, um buraco destes **não pode existir** a não ser no começo.
+ * É barata (lê o som uma vez) e é a única que apanha o defeito das emendas.
+ */
+console.log('\n🔎 à procura de buracos no som…');
+try {
+  const cru = execFileSync('ffmpeg', ['-v', 'error', '-i', final, '-ac', '1', '-ar', '48000', '-f', 's16le', '-'],
+    { maxBuffer: 1 << 30, encoding: 'buffer' });
+  const amostras = cru.length / 2;
+  const buracos = [];
+  let ini = -1;
+  for (let i = 0; i < amostras; i++) {
+    const v = Math.abs(cru.readInt16LE(i * 2) / 32768);
+    if (v < 0.0005) { if (ini < 0) ini = i; continue; }
+    if (ini >= 0) {
+      const ms = (i - ini) / 48;
+      if (ms >= 20 && ini > 4800) buracos.push({ seg: ini / 48000, ms });
+      ini = -1;
+    }
+  }
+  if (!buracos.length) {
+    console.log('   ✅ nenhum buraco. O som corre de ponta a ponta.');
+  } else {
+    console.log(`   ❌ ${buracos.length} buraco(s) — o som corta nestes instantes:`);
+    for (const b of buracos.slice(0, 8)) console.log(`      aos ${b.seg.toFixed(2)}s, durante ${b.ms.toFixed(0)} ms`);
+  }
+} catch (err) {
+  console.log(`   ⚠️ não deu para conferir o som (${err.message.split('\n')[0]})`);
 }
