@@ -1334,7 +1334,10 @@ if (executadoDireto) {
   console.log(`\n[ABERTURA]\n${roteiro.abertura}`);
   roteiro.capitulos.forEach((c, i) => {
     console.log(`\n[CAPÍTULO ${i + 1} — ${c.titulo}]`);
-    PARTES_DO_CAPITULO.forEach((p) => console.log(`  · ${c[p]}`));
+    // ⚠️ PARTES_POSSIVEIS, não PARTES_DO_CAPITULO: desde que a demonstração passou
+    // a viver num capítulo só, imprimir as três partes fixas ESCONDIA-A do ecrã. O
+    // texto estava lá e no ficheiro; só quem lia o terminal é que não o via.
+    PARTES_POSSIVEIS.filter((p) => c[p]).forEach((p) => console.log(`  · ${c[p]}`));
   });
   console.log(`\n[CHAMADA]\n${roteiro.chamada}`);
   console.log(`\n[FIM]\n${roteiro.fecho}`);
