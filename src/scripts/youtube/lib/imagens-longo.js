@@ -182,10 +182,16 @@ const INTERVALO_DA_ILUSTRACAO = 3;
  * O dono: *"quero que entrem as 3 imagens no vídeo, mas quero que elas fiquem com
  * movimento — uma pode ser um zoom out, outra zoom in ou outro qualquer"*.
  *
- * ⚠️ **ESTA TABELA TEM TRÊS LINHAS E VAI CONTINUAR A TER.** Não é um catálogo que
- * cresce: são três imagens feitas à medida deste vídeo, cada uma para UMA cena. Quando
- * o próximo vídeo longo for feito, geram-se as dele — uma fotografia de outra história
- * no meio desta é o defeito nº 1 do dono outra vez (§36.2).
+ * ⚠️ 🔴 **A TABELA É POR VÍDEO, E ISSO NÃO É ARRUMAÇÃO — É UMA TRAVA.**
+ * A 1ª versão tinha uma lista só, sem dono. Num vídeo NOVO cujo texto casasse com as
+ * mesmas pistas — e "o valor não parava de crescer" é uma frase que qualquer vídeo sobre
+ * dívida pode ter — o montador iria buscar **as fotografias DESTE vídeo**. Seria a
+ * queixa nº 1 do dono outra vez (§36.2), e da pior maneira: uma fotografia de outra
+ * história a ilustrar esta. Sem o `slug`, **nenhuma fotografia entra** — que é o
+ * comportamento certo para um vídeo que ainda não tem as suas.
+ *
+ * ⚠️ Três linhas por vídeo, e são feitas à medida dele. Quando o próximo vídeo longo for
+ * feito, geram-se as dele e acrescenta-se uma chave nova aqui.
  *
  * ⚠️ **AS PISTAS SAÍRAM DE LER O GUIÃO, não de imaginar como as pessoas falam.** É a
  * lição do `ralo`: a minha primeira lista de ilustrações, escrita de cabeça, não
@@ -194,7 +200,8 @@ const INTERVALO_DA_ILUSTRACAO = 3;
  *   · o número → *"o valor não parava de crescer"* (é a cena do juro)
  *   · a virada → *"consegui pagar a conta sem desistir no meio do caminho"*
  */
-const FOTOS = [
+const FOTOS_POR_VIDEO = {
+  'sair-do-vermelho': [
   {
     ficheiro: 'manus/sair-do-vermelho/imagem-1-o-susto.jpg',
     nome: 'o susto',
@@ -213,7 +220,8 @@ const FOTOS = [
     movimento: 'aproxima-lento',
     pista: /sem desistir no meio do caminho|foi a primeira vez/,
   },
-];
+  ],
+};
 
 /** Quantas cenas de distância uma fotografia guarda de outra imagem grande. */
 const INTERVALO_DA_FOTO = 2;
@@ -225,14 +233,18 @@ const INTERVALO_DA_FOTO = 2;
  * justamente a cena que a fotografia descreve, e a fotografia ficava sem casa. As
  * ilustrações são catorze pistas para seis lugares — têm por onde escolher; estas não.
  */
-export function escolherLugaresDaFoto(cenas, ocupados = new Set()) {
+export function escolherLugaresDaFoto(cenas, ocupados = new Set(), slug = null) {
   const lugares = new Map();
+  // ⚠️ Sem slug, ou com um slug que ainda não tem fotografias suas, isto devolve VAZIO.
+  // É de propósito: melhor um vídeo sem fotografias do que um vídeo com as de outro.
+  const doVideo = FOTOS_POR_VIDEO[String(slug || '')] || [];
+  if (!doVideo.length) return lugares;
   const escolhidos = [];
   cenas.forEach((c, i) => {
     if (ocupados.has(i)) return;
     if (escolhidos.some((j) => Math.abs(i - j) < INTERVALO_DA_FOTO)) return;
     const texto = semAcento(c.narration);
-    const achada = FOTOS.find((f) => ![...lugares.values()].includes(f) && f.pista.test(texto));
+    const achada = doVideo.find((f) => ![...lugares.values()].includes(f) && f.pista.test(texto));
     if (!achada) return;
     escolhidos.push(i);
     lugares.set(i, achada);
@@ -417,7 +429,7 @@ export function escolherLugaresDaIlustracao(cenas, lugaresDaMetafora = new Map()
  * Recebe as cenas já partidas e o mapa do guião; devolve as mesmas cenas com um campo
  * `visual` cada. Determinístico: o mesmo guião dá sempre o mesmo vídeo.
  */
-export function dirigirImagens(cenas, mapa = {}) {
+export function dirigirImagens(cenas, mapa = {}, slug = null) {
   const dic = dicionarioDeValores(mapa);
   const ficha = mapa.fichaDeDivida;
   const capituloDoApp = mapa.capituloDaDemonstracao;
@@ -533,7 +545,7 @@ export function dirigirImagens(cenas, mapa = {}) {
    * São três e cada uma serve uma cena só; as ilustrações têm catorze pistas para seis
    * lugares. Quem tem menos por onde escolher escolhe primeiro.
    */
-  const lugaresDaFoto = escolherLugaresDaFoto(cenas, ocupados);
+  const lugaresDaFoto = escolherLugaresDaFoto(cenas, ocupados, slug);
   for (const i of lugaresDaFoto.keys()) ocupados.add(i);
 
   /**
@@ -620,7 +632,7 @@ export function numerarVariantes(cenas) {
  * Ela NÃO julga se a imagem é bonita (isso é gosto, e mede-se olhando o fotograma).
  * Ela julga o que é VERDADE e se pode provar com o guião na mão.
  */
-export function conferirImagens(cenas, mapa = {}) {
+export function conferirImagens(cenas, mapa = {}, slugDoVideo = null) {
   const erros = [];
   const dic = dicionarioDeValores(mapa);
 
@@ -695,15 +707,16 @@ export function conferirImagens(cenas, mapa = {}) {
    * abrir uma fatura aterrar no fecho do vídeo — e seria outra vez a queixa nº 1 do dono,
    * o ecrã a mostrar uma coisa e a voz a dizer outra.
    */
+  const doVideo = FOTOS_POR_VIDEO[String(slugDoVideo || '')] || [];
   const fotos = cenas.filter((c) => c.visual?.tipo === 'foto');
-  if (fotos.length > FOTOS.length) {
-    erros.push(`${fotos.length} fotografias — só existem ${FOTOS.length} feitas para este vídeo`);
+  if (fotos.length > doVideo.length) {
+    erros.push(`${fotos.length} fotografias — só existem ${doVideo.length} feitas para este vídeo`);
   }
   const ficheiros = fotos.map((c) => c.visual.ficheiro);
   const fotoRepetida = ficheiros.find((f, i) => ficheiros.indexOf(f) !== i);
   if (fotoRepetida) erros.push(`a fotografia "${fotoRepetida}" aparece mais do que uma vez`);
   for (const c of fotos) {
-    const dona = FOTOS.find((f) => f.ficheiro === c.visual.ficheiro);
+    const dona = doVideo.find((f) => f.ficheiro === c.visual.ficheiro);
     if (!dona) {
       erros.push(`a fotografia "${c.visual.ficheiro}" não está na lista deste vídeo`);
       continue;

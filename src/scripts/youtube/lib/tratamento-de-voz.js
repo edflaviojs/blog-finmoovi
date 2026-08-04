@@ -48,7 +48,27 @@ import { writeFileSync, readFileSync, mkdtempSync, rmSync } from 'fs';
 import { join } from 'path';
 import { tmpdir } from 'os';
 
-/** A cadeia, exatamente como saiu na amostra que o dono aprovou. */
+/**
+ * A cadeia, como saiu na amostra que o dono aprovou — **com o volume baixado, e só o
+ * volume**.
+ *
+ * ⚠️ Ele ouviu o vídeo inteiro e disse: *"o tratamento do som eu só achei que ficou um
+ * pouco estourado demais. Achei muito alto! Se conseguisse diminuir um pouco o volume
+ * dele acho que ficaria perfeito."*
+ *
+ * **Mudou-se UMA coisa: o alvo de volume, de -16 para -19 LUFS** (e a folga de pico de
+ * -1,5 para -2,0 dB). O timbre — o corpo, a presença, o ar, o compressor — fica
+ * exatamente igual, porque foi esse timbre que ele escolheu entre três amostras.
+ *
+ * A conta que dá o número: o vídeo **sem** tratamento nenhum media **-20,5 LUFS** e ele
+ * nunca se queixou do volume; **com** o tratamento a -16 media -16,4 e achou alto. O -19
+ * põe o vídeo perto do que ele já ouvia sem reclamar, e mantém o ganho de timbre.
+ *
+ * ⚠️ E há uma razão a mais para não descer abaixo disto: **a música tem volume fixo**
+ * (0,12, e é uma peça partilhada com o Short). Cada decibel que a voz desce é um decibel
+ * que a música sobe em relação a ela. Mexer na música para compensar mudaria o vídeo
+ * diário — e isso não está em cima da mesa.
+ */
 export const RECEITA_QUENTE = [
   'highpass=f=70',
   'equalizer=f=160:t=q:w=1.0:g=3.5',
@@ -56,7 +76,7 @@ export const RECEITA_QUENTE = [
   'equalizer=f=2800:t=q:w=1.0:g=3.5',
   'equalizer=f=10000:t=q:w=1.0:g=3',
   'acompressor=threshold=-24dB:ratio=4:attack=5:release=120:makeup=3',
-  'loudnorm=I=-16:TP=-1.5:LRA=9',
+  'loudnorm=I=-19:TP=-2.0:LRA=9',
 ].join(',');
 
 /**

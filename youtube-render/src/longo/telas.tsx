@@ -797,15 +797,25 @@ export const Ilustracao: React.FC<{ figura: string; frames: number }> = ({ figur
  *   · `cartaz` — imagem com TEXTO. Aparece **inteira**, sempre abaixo de 1, levantada
  *                para o texto dela não brigar com a legenda que corre por baixo.
  */
+/**
+ * ⚠️ O MOVIMENTO SUBIU DEPOIS DE ELE VER: *"ficou ótimo, mas ainda colocaria um pouco de
+ * movimento um pouco mais rápido, quase não se percebe o zoom"*.
+ *
+ * A 1ª versão andava **12%** ao longo de toda a cena. Numa cena de dez a catorze
+ * segundos isso é cerca de 1% por segundo — abaixo do que o olho regista como
+ * movimento, portanto o custo estava lá e o efeito não. Passou a **25 a 28%**, que é a
+ * velocidade a que o cinema move uma fotografia parada. **Continua a ser um passeio, não
+ * um safanão** — e continua a nunca mostrar bordo.
+ */
 const PASSEIOS: Record<string, { de: number; ate: number; x?: [number, number]; y?: [number, number]; modo?: 'cheia' | 'cartaz' }> = {
-  // aproxima devagar, e desce um nada — o olhar entra na imagem
-  aproxima: { de: 1.04, ate: 1.16, y: [-10, 14], modo: 'cheia' },
+  // aproxima, e desce um pouco — o olhar entra na imagem
+  aproxima: { de: 1.03, ate: 1.30, y: [-26, 30], modo: 'cheia' },
   // afasta, mas sem nunca chegar ao bordo
-  afasta: { de: 1.16, ate: 1.04, modo: 'cheia' },
-  // o mais lento dos três, com uma deriva lateral: é o plano do fecho
-  'aproxima-lento': { de: 1.05, ate: 1.13, x: [18, -18], modo: 'cheia' },
-  // o cartaz: inteiro, sempre, com uma aproximação que nunca chega a cortar
-  cartaz: { de: 0.78, ate: 0.85, modo: 'cartaz' },
+  afasta: { de: 1.30, ate: 1.03, modo: 'cheia' },
+  // o plano do fecho: aproxima com deriva lateral, para o corredor "andar"
+  'aproxima-lento': { de: 1.04, ate: 1.28, x: [44, -44], modo: 'cheia' },
+  // o cartaz: inteiro, SEMPRE abaixo de 1, com uma aproximação que nunca chega a cortar
+  cartaz: { de: 0.74, ate: 0.94, modo: 'cartaz' },
 };
 
 /** Quanto o cartaz sobe, para o texto dele ficar acima da faixa da legenda. */

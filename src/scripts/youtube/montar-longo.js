@@ -97,7 +97,7 @@ export function partirEmCenas(texto) {
 export { BROLL_PERMITIDO } from './lib/imagens-longo.js';
 
 /** Transforma o guião de seis blocos na lista de cenas do vídeo. */
-export function montarCenas(longo) {
+export function montarCenas(longo, slug = null) {
   const cenas = [];
   const empurrar = (texto, meta) => {
     for (const pedaco of partirEmCenas(texto)) {
@@ -158,7 +158,10 @@ export function montarCenas(longo) {
     durationSec: +(c.palavras / 2.6).toFixed(2),
   }));
 
-  return dirigirImagens(numeradas, longo.mapa || {});
+  // ⚠️ O SLUG VAI JUNTO, e não é arrumação: as fotografias da Manus são feitas à
+  // medida de UM vídeo. Sem o slug, um vídeo novo cujo texto casasse com as mesmas
+  // pistas levaria as fotografias DESTE — que é a queixa nº 1 do dono outra vez.
+  return dirigirImagens(numeradas, longo.mapa || {}, slug);
 }
 
 // ─── execução direta ─────────────────────────────────────────────────────────
@@ -167,7 +170,7 @@ if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/mon
   const slug = String(args.slug && args.slug !== true ? args.slug : 'sair-do-vermelho');
   const longo = JSON.parse(readFileSync(join(OUTPUT_DIR, `${slug}.longo.json`), 'utf-8'));
 
-  const cenas = montarCenas(longo);
+  const cenas = montarCenas(longo, slug);
   const palavras = cenas.reduce((a, c) => a + c.palavras, 0);
   const segundos = palavras / 2.6;
 
@@ -203,7 +206,7 @@ if (process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('youtube/mon
    * voz, pelo render de seis minutos e só se descobre a olhar o vídeo pronto. Aqui
    * custa zero e é imediato.
    */
-  const queixas = conferirImagens(cenas, longo.mapa || {});
+  const queixas = conferirImagens(cenas, longo.mapa || {}, slug);
   if (queixas.length) {
     console.log(`\n❌ ${queixas.length} problema(s) nas imagens — nada foi escrito:\n`);
     for (const q of queixas) console.log(`   · ${q}`);

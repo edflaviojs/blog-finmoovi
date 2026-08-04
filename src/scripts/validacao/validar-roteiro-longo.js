@@ -788,8 +788,12 @@ console.log('   (a 1ª prova apanha a montagem a PERDER parágrafos do guião, e
       fotos.every((c) => existsSync(join(RAIZ, 'youtube-render', 'public', c.visual.ficheiro))),
     );
     ok(
+      'um vídeo SEM fotografias suas não leva as de outro',
+      escolherLugaresDaFoto(cenasReais, new Set(), 'outro-video-qualquer').size === 0,
+    );
+    ok(
       'as fotografias escolhem ANTES das ilustrações (senão ficavam sem casa)',
-      escolherLugaresDaFoto(cenasReais).size === 3,
+      escolherLugaresDaFoto(cenasReais, new Set(), 'sair-do-vermelho').size === 3,
     );
   }
 
