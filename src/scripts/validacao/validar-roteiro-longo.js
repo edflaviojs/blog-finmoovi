@@ -31,11 +31,11 @@ import { join } from 'path';
 
 import {
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
-  contarPalavras, ORCAMENTO, MAX_PALAVRAS_TITULO, PARTES_DO_CAPITULO,
+  contarPalavras, ORCAMENTO, MAX_PALAVRAS_TITULO, PARTES_DO_CAPITULO, valoresEmDinheiro,
 } from '../youtube/lib/schema-longo.js';
 import {
   EXEMPLO_DE_MAPA, EXEMPLO_DE_ABERTURA, EXEMPLO_DE_CAPITULO, EXEMPLO_DE_FECHO,
-  EXEMPLO_DE_CHAMADA, EXEMPLO_PARA_COMPARAR,
+  EXEMPLO_DE_CHAMADA, EXEMPLO_PARA_COMPARAR, EXEMPLO_DE_DEMONSTRACAO,
   buildPromptMapa, buildPromptAbertura, buildPromptCapitulo, buildPromptChamada, buildPromptFecho,
 } from '../youtube/roteiro-longo.js';
 import { BORDAO } from '../youtube/lib/schema-short.js';
@@ -77,14 +77,38 @@ console.log('   (é a prova que impede a 16ª ocorrência de prompt-contra-valid
       && contarPalavras(EXEMPLO_DE_ABERTURA.fala) <= ORCAMENTO.abertura.max,
   );
 }
+/**
+ * O PLANO DE UM CAPÍTULO, montado a partir do MAPA — é o que o gerador faz em
+ * produção, e a prova tem de o fazer igual. Se aqui se inventasse um plano à mão, as
+ * travas novas (o número-espinha, a lista fechada de valores, quem demonstra o app)
+ * não estariam a ser testadas de todo — passariam por não ter dados.
+ */
+const planoDoExemplo = (i) => ({
+  ...EXEMPLO_DE_MAPA.capitulos[i],
+  numeroEspinha: EXEMPLO_DE_MAPA.numeroEspinha,
+  valoresPermitidos: EXEMPLO_DE_MAPA.valores.map((v) => v.valor),
+  temDemonstracao: EXEMPLO_DE_MAPA.capituloDaDemonstracao === i + 1,
+});
+
 {
-  const v = validarCapitulo(EXEMPLO_DE_CAPITULO, 0, { plano: EXEMPLO_DE_CAPITULO });
+  const v = validarCapitulo(EXEMPLO_DE_CAPITULO, 0, { plano: planoDoExemplo(0) });
   const n = PARTES_DO_CAPITULO.map((p) => EXEMPLO_DE_CAPITULO[p]).join(' ');
-  ok('o capítulo-exemplo passa em validarCapitulo()', passa(v), porque(v));
+  ok('o capítulo-exemplo (ato 1, sem o app) passa em validarCapitulo()', passa(v), porque(v));
   ok(
     `o capítulo-exemplo cabe no orçamento (${contarPalavras(n)} palavras, faixa ${ORCAMENTO.capitulo.min}-${ORCAMENTO.capitulo.max})`,
     contarPalavras(n) >= ORCAMENTO.capitulo.min && contarPalavras(n) <= ORCAMENTO.capitulo.max,
   );
+  /**
+   * E O ATO QUE LEVA A DEMONSTRAÇÃO. O desenvolvimento entra ENCURTADO de propósito:
+   * num ato com demonstração, ela ocupa o espaço que o desenvolvimento cede — não se
+   * somam os dois inteiros, senão o capítulo estoura o orçamento. Isto não é um truque
+   * da prova; é exatamente o que o prompt manda fazer (a demonstração vale ~25s).
+   */
+  const desenvolvimentoCurto = EXEMPLO_DE_CAPITULO.desenvolvimento
+    .split(/(?<=[.!?])\s+/).slice(0, 7).join(' ');
+  const ato2 = { ...EXEMPLO_DE_CAPITULO, desenvolvimento: desenvolvimentoCurto, demonstracao: EXEMPLO_DE_DEMONSTRACAO };
+  const v2 = validarCapitulo(ato2, 1, { plano: planoDoExemplo(1) });
+  ok('a demonstração-exemplo passa no ato que a leva', passa(v2), porque(v2));
 }
 {
   const v = validarChamada(EXEMPLO_DE_CHAMADA);
@@ -99,12 +123,30 @@ console.log('   (é a prova que impede a 16ª ocorrência de prompt-contra-valid
   );
 }
 {
-  // O exemplo do CAPÍTULO tem de bater com o exemplo do MAPA na única coisa que os
-  // liga: a soma. Se um dia alguém mexer num sem mexer no outro, isto acende.
-  const soma = EXEMPLO_DE_CAPITULO.somaDe.reduce((a, b) => a + b, 0);
-  ok(`a soma do capítulo-exemplo bate (${EXEMPLO_DE_CAPITULO.somaDe.join(' + ')} = ${soma})`, soma === EXEMPLO_DE_CAPITULO.numeroChave);
-  const c2 = EXEMPLO_DE_MAPA.capitulos[1];
-  ok(`a soma do mapa-exemplo bate (${c2.somaDe.join(' + ')} = ${c2.somaDe.reduce((a, b) => a + b, 0)})`, c2.somaDe.reduce((a, b) => a + b, 0) === c2.numeroChave);
+  /**
+   * O QUE LIGA O MAPA-EXEMPLO AO CAPÍTULO-EXEMPLO: o dinheiro.
+   * Se um dia alguém mexer num sem mexer no outro, isto acende — e é o defeito mais
+   * caro que este vídeo pode ter, porque produz duas histórias no mesmo guião.
+   */
+  const valorDe = (nome) => EXEMPLO_DE_MAPA.valores.find((v) => v.nome === nome)?.valor;
+  const s = EXEMPLO_DE_MAPA.somas[0];
+  const soma = s.de.map(valorDe).reduce((a, b) => a + b, 0);
+  ok(`a soma do mapa-exemplo bate (${s.de.map(valorDe).join(' + ')} = ${valorDe(s.da)})`, soma === valorDe(s.da));
+  ok(
+    `o número-espinha (${EXEMPLO_DE_MAPA.numeroEspinha}) está na lista de valores`,
+    EXEMPLO_DE_MAPA.valores.some((v) => v.valor === EXEMPLO_DE_MAPA.numeroEspinha),
+  );
+
+  const ditosNoAto1 = valoresEmDinheiro(PARTES_DO_CAPITULO.map((p) => EXEMPLO_DE_CAPITULO[p]).join(' '));
+  const permitidos = EXEMPLO_DE_MAPA.valores.map((v) => v.valor);
+  ok(
+    `o capítulo-exemplo só diz dinheiro da lista (disse ${ditosNoAto1.join(', ')})`,
+    ditosNoAto1.every((v) => permitidos.includes(v)),
+  );
+  ok(
+    `e diz o número-espinha (${EXEMPLO_DE_MAPA.numeroEspinha})`,
+    ditosNoAto1.includes(EXEMPLO_DE_MAPA.numeroEspinha),
+  );
 }
 
 // ═══ 2. OS DADOS REAIS ═══════════════════════════════════════════════════════
@@ -149,9 +191,24 @@ const reprova = (nome, v, agulha) => ok(
 
 // — o mapa —
 reprova(
-  'mapa: dois capítulos com o MESMO número-chave',
-  validarMapa({ ...EXEMPLO_DE_MAPA, capitulos: EXEMPLO_DE_MAPA.capitulos.map((c) => ({ ...c, numeroChave: 100, somaDe: undefined })) }),
-  'já é o número-chave de outro capítulo',
+  'mapa: o número-espinha não está na lista de valores',
+  validarMapa({ ...EXEMPLO_DE_MAPA, numeroEspinha: 777 }),
+  'não está na lista de valores',
+);
+reprova(
+  'mapa: sem lista de valores (nada travaria o dinheiro inventado)',
+  validarMapa({ ...EXEMPLO_DE_MAPA, valores: [] }),
+  'sem "valores"',
+);
+reprova(
+  'mapa: o app demonstrado em capítulo nenhum',
+  validarMapa({ ...EXEMPLO_DE_MAPA, capituloDaDemonstracao: 0 }),
+  'tem de ser 1, 2 ou 3',
+);
+reprova(
+  'mapa: um ato que não acrescenta nada à história',
+  validarMapa({ ...EXEMPLO_DE_MAPA, capitulos: EXEMPLO_DE_MAPA.capitulos.map((c, i) => (i === 1 ? { ...c, oQueAcrescenta: '' } : c)) }),
+  'senão o vídeo dá voltas',
 );
 reprova(
   'mapa: um capítulo chamado "Introdução"',
@@ -159,8 +216,11 @@ reprova(
   'não promete nada',
 );
 reprova(
-  'mapa: a soma NÃO bate com o número-chave',
-  validarMapa({ ...EXEMPLO_DE_MAPA, capitulos: EXEMPLO_DE_MAPA.capitulos.map((c, i) => (i === 1 ? { ...c, somaDe: [39, 90, 61] } : c)) }),
+  'mapa: a soma NÃO bate (por um real que seja)',
+  validarMapa({
+    ...EXEMPLO_DE_MAPA,
+    valores: EXEMPLO_DE_MAPA.valores.map((v) => (v.nome === 'o jogo do celular' ? { ...v, valor: 61 } : v)),
+  }),
   'a conta tem de bater',
 );
 reprova(
@@ -213,7 +273,7 @@ reprova(
   'capítulo: cita uma percentagem por extenso',
   validarCapitulo(
     { ...EXEMPLO_DE_CAPITULO, regancho: 'E olha que isso é quase treze por cento do mercado do mês.' },
-    0, { plano: EXEMPLO_DE_CAPITULO },
+    0, { plano: planoDoExemplo(0) },
   ),
   'PERCENTAGEM',
 );
@@ -221,23 +281,48 @@ reprova(
   'capítulo: promete rendimento sem conta calculada',
   validarCapitulo(
     { ...EXEMPLO_DE_CAPITULO, regancho: 'Esse dinheiro rende duzentos e cinquenta reais por ano se você guardar.' },
-    0, { plano: EXEMPLO_DE_CAPITULO },
+    0, { plano: planoDoExemplo(0) },
   ),
   'soe a rendimento com número',
 );
 reprova(
-  'capítulo: não diz o número-chave que o mapa marcou',
+  'capítulo: NÃO diz o número deste vídeo (era o defeito nº1 do 1º vídeo)',
   validarCapitulo(
-    { ...EXEMPLO_DE_CAPITULO, desenvolvimento: 'E olha, não é desleixo seu. A gente faz a compra grande no sábado e no meio da semana a vida muda tudo. Um dia você sai tarde do trabalho, no outro come na rua, no outro o menino não quer aquilo. Aí a verdura murcha, a carne passa do prazo, o pão endurece, e ninguém soma nada disso porque cada perda parece pequena sozinha quando você olha para ela de longe e sem calma nenhuma.' },
-    0, { plano: EXEMPLO_DE_CAPITULO },
+    {
+      ...EXEMPLO_DE_CAPITULO,
+      desenvolvimento: EXEMPLO_DE_CAPITULO.desenvolvimento.replace(/e deu cento e oitenta e nove reais/, 'e deu um susto'),
+      regancho: EXEMPLO_DE_CAPITULO.regancho.replace(/cento e oitenta e nove reais/, 'esse dinheiro'),
+    },
+    0, { plano: planoDoExemplo(0) },
   ),
-  'NÃO é dito na fala',
+  'NÃO é dito neste ato',
+);
+reprova(
+  'capítulo: inventa dinheiro que não está na lista do mapa',
+  validarCapitulo(
+    { ...EXEMPLO_DE_CAPITULO, regancho: 'E no ano passado isso já tinha me custado dois mil e trezentos reais sem eu ver.' },
+    0, { plano: planoDoExemplo(0) },
+  ),
+  'esse dinheiro NÃO existe nesta história',
+);
+reprova(
+  'capítulo: nomeia o app num ato que não é o da demonstração',
+  validarCapitulo(
+    { ...EXEMPLO_DE_CAPITULO, regancho: `${EXEMPLO_DE_CAPITULO.regancho} Foi o FinMoovi que me mostrou isso.` },
+    0, { plano: planoDoExemplo(0) },
+  ),
+  'o app NÃO é demonstrado neste capítulo',
+);
+reprova(
+  'capítulo: é o da demonstração e não a escreveu',
+  validarCapitulo({ ...EXEMPLO_DE_CAPITULO }, 1, { plano: planoDoExemplo(1) }),
+  'falta a parte "demonstracao"',
 );
 reprova(
   'capítulo: a demonstração não nomeia o app',
   validarCapitulo(
-    { ...EXEMPLO_DE_CAPITULO, demonstracao: EXEMPLO_DE_CAPITULO.demonstracao.replace(/FinMoovi/g, 'aplicativo') },
-    0, { plano: EXEMPLO_DE_CAPITULO },
+    { ...EXEMPLO_DE_CAPITULO, demonstracao: EXEMPLO_DE_DEMONSTRACAO.replace(/FinMoovi/g, 'aplicativo') },
+    1, { plano: planoDoExemplo(1) },
   ),
   'não diz FinMoovi',
 );
@@ -245,7 +330,7 @@ reprova(
   'capítulo: pede inscrição (o erro que mata o formato longo)',
   validarCapitulo(
     { ...EXEMPLO_DE_CAPITULO, regancho: 'Se inscreve aqui que a próxima parte é a mais simples das três.' },
-    0, { plano: EXEMPLO_DE_CAPITULO },
+    0, { plano: planoDoExemplo(0) },
   ),
   'o pedido acontece UMA vez',
 );
@@ -253,7 +338,7 @@ reprova(
   'capítulo: a parte "pergunta" não abre com pergunta',
   validarCapitulo(
     { ...EXEMPLO_DE_CAPITULO, pergunta: 'Eu abri a geladeira num domingo e achei comida estragada lá no fundo. Naquela vez eu parei pra contar quanto tinha custado.' },
-    0, { plano: EXEMPLO_DE_CAPITULO },
+    0, { plano: planoDoExemplo(0) },
   ),
   'tem de ABRIR com uma pergunta',
 );
@@ -285,7 +370,7 @@ console.log('\n4️⃣  A ANTI-CÓPIA MORDE QUEM COPIAR O EXEMPLO');
 console.log('   (registado 13 vezes: todo exemplo escrito num prompt é copiado à letra)\n');
 
 {
-  const v = validarCapitulo(EXEMPLO_DE_CAPITULO, 0, { plano: EXEMPLO_DE_CAPITULO, exemploParaComparar: EXEMPLO_PARA_COMPARAR });
+  const v = validarCapitulo(EXEMPLO_DE_CAPITULO, 0, { plano: planoDoExemplo(0), exemploParaComparar: EXEMPLO_PARA_COMPARAR });
   ok('o capítulo-exemplo entregue tal e qual é REPROVADO por cópia', !v.ok && v.erros.some((e) => /copiou o exemplo/.test(e)), v.erros.join(' | '));
 }
 {
@@ -312,17 +397,27 @@ console.log('   (registado 13 vezes: todo exemplo escrito num prompt é copiado 
 // ═══ 5. AS TRAVAS GLOBAIS ════════════════════════════════════════════════════
 console.log('\n5️⃣  AS TRAVAS GLOBAIS (o que só se vê olhando o vídeo inteiro)\n');
 
+/**
+ * ⚠️ UM VÍDEO NO MODELO NOVO: a mesma história nos dois atos, o mesmo dinheiro, e o
+ * app nomeado NUMA VEZ SÓ. Antes deste conserto, esta peça de prova tinha um número
+ * diferente por capítulo e uma demonstração em cada — ou seja, reproduzia fielmente
+ * o defeito que o dono apanhou no primeiro vídeo. Uma prova que valida o defeito é
+ * pior do que não ter prova.
+ */
 const roteiroBom = {
   abertura: EXEMPLO_DE_ABERTURA.fala,
   capitulos: [
-    { ...EXEMPLO_DE_CAPITULO, numeroChave: 260 },
+    { ...EXEMPLO_DE_CAPITULO },
     {
-      titulo: 'O que o supermercado não conta na entrada',
-      numeroChave: 410,
-      pergunta: 'Quantas vezes você entrou pra comprar cinco coisas e saiu com o carrinho cheio? Comigo era toda semana.',
-      desenvolvimento: 'A loja está montada pra isso. O pão fica no fundo, o corredor do meio vende o que ninguém foi buscar, e a fila tem chocolate à altura do braço do seu filho. Contei um mês inteiro do que entrou no carrinho sem estar na lista, e deu quatrocentos e dez reais.',
-      demonstracao: 'Passei a montar a lista no FinMoovi antes de sair de casa, e ele vai somando enquanto eu marco os itens. Bateu no meu limite, aparece na tela ali mesmo, no corredor.',
-      regancho: 'E ainda falta a parte mais difícil de todas, que é o que fazer com o dinheiro que sobra dessa faxina.',
+      titulo: 'O que aparece quando você põe tudo no mesmo lugar',
+      // ⚠️ Esta frase foi reescrita porque a trava anti-repetição a apanhou a ECOAR o
+      // fim do ato anterior ("há quanto tempo é que isso já…"). Retomar não é ecoar —
+      // e a trava provou o seu valor apanhando o defeito na peça de prova de quem a
+      // escreveu.
+      pergunta: 'Você alguma vez foi ver desde quando aquilo saía da sua conta? Eu fui, e o que encontrei é pior do que a soma.',
+      desenvolvimento: 'Peguei as faturas dos meses anteriores, uma a uma. O streaming vinha desde o inverno. A academia, desde que eu troquei de emprego. O jogo, desde as férias do meu filho. Multipliquei os cento e oitenta e nove reais pelos meses em que ninguém tinha olhado, e o número que saiu dali não cabia numa margem de papel.',
+      demonstracao: 'Foi quando eu pus as três no FinMoovi que aquilo parou de ser um susto e virou uma linha na tela, com a data em que cada cobrança tinha começado.',
+      regancho: 'Só que saber há quanto tempo aquilo sai não devolve um real. A pergunta que interessa é outra: quais delas saem hoje?',
     },
   ],
   chamada: EXEMPLO_DE_CHAMADA,
@@ -336,9 +431,20 @@ const roteiroBom = {
 }
 {
   const repetido = JSON.parse(JSON.stringify(roteiroBom));
-  repetido.capitulos[1].desenvolvimento += ' E olha, não é desleixo seu. A gente faz a compra grande no sábado.';
+  repetido.capitulos[1].desenvolvimento += ' Naquele domingo eu sentei com ela na mão e fui descendo linha por linha.';
   const v = validarLongo(repetido);
   ok('dois capítulos que repetem a mesma frase são apanhados', !v.ok && v.erros.some((e) => /repetem a mesma frase/.test(e)), v.erros.join(' | '));
+}
+{
+  /**
+   * ⚠️ E A OUTRA METADE, que é a que faltava e custou a 18ª ocorrência:
+   * dizer o MESMO NÚMERO nos três atos é OBRIGATÓRIO, e não pode ser lido como
+   * repetição. Se alguém voltar a pôr os números na comparação, esta prova acende.
+   */
+  const mesmoNumero = JSON.parse(JSON.stringify(roteiroBom));
+  mesmoNumero.capitulos[1].regancho += ' E os cento e oitenta e nove reais continuavam lá.';
+  const v = validarLongo(mesmoNumero);
+  ok('dizer o MESMO número nos dois atos NÃO é lido como repetição', v.ok, v.erros.join(' | '));
 }
 {
   const pedeDuasVezes = JSON.parse(JSON.stringify(roteiroBom));
@@ -353,10 +459,16 @@ const roteiroBom = {
   ok('o bordão fora do fecho é apanhado', !v.ok && v.erros.some((e) => /bordão do canal aparece/.test(e)), v.erros.join(' | '));
 }
 {
-  const mesmoNumero = JSON.parse(JSON.stringify(roteiroBom));
-  mesmoNumero.capitulos[1].numeroChave = 260;
-  const v = validarLongo(mesmoNumero);
-  ok('dois capítulos à volta do mesmo número são apanhados', !v.ok && v.erros.some((e) => /mesmo número/.test(e)), v.erros.join(' | '));
+  /**
+   * 🔴 A TRAVA QUE SUBSTITUIU A DO "MESMO NÚMERO" — e a substituição é o coração do
+   * conserto de 04/08. A antiga exigia números DIFERENTES por capítulo e foi ela que
+   * produziu três histórias no mesmo vídeo. A nova garante o contrário: o produto
+   * aparece uma vez, e a história é uma só.
+   */
+  const appDuasVezes = JSON.parse(JSON.stringify(roteiroBom));
+  appDuasVezes.capitulos[0].regancho += ' Eu vi isso tudo no FinMoovi.';
+  const v = validarLongo(appDuasVezes);
+  ok('o app nomeado em DOIS capítulos é apanhado', !v.ok && v.erros.some((e) => /nomeado nos capítulos/.test(e)), v.erros.join(' | '));
 }
 
 // ═══ 6. CADA TRAVA ESTÁ ESCRITA NO PROMPT QUE A DEVIA ENSINAR ════════════════

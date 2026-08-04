@@ -43,8 +43,27 @@ import { keywordFalada, MAX_PALAVRAS_CAPA, semAcento } from './palavras.js';
 /** Os seis blocos, na ordem em que são falados. */
 export const BLOCOS_LONGO = ['abertura', 'capitulo1', 'capitulo2', 'capitulo3', 'chamada', 'fecho'];
 
-/** As quatro partes de um capítulo — a célula do padrão aprovado (§31). */
-export const PARTES_DO_CAPITULO = ['pergunta', 'desenvolvimento', 'demonstracao', 'regancho'];
+/**
+ * AS PARTES DE UM CAPÍTULO — e a demonstração do app deixou de estar em todos.
+ *
+ * ⚠️ MUDANÇA DE 04/08/2026, depois de o dono ver o primeiro vídeo:
+ * *"eu joguei na calculadora do FinMoovi… não me parece ser apenas 1 ideia central"*.
+ * Ele tinha razão, e a culpa era do desenho: eu tinha tornado a demonstração do app
+ * um parágrafo OBRIGATÓRIO nos três capítulos. Num vídeo de 50 segundos uma
+ * demonstração é o certo; em seis minutos, três demonstrações é a mesma cena contada
+ * três vezes — e o pior é que os dados dos concorrentes (§33.5) já diziam que o app
+ * merece UM capítulo, não uma menção em todos. Eu li isso e fiz o contrário.
+ *
+ * Agora: as três partes de baixo existem sempre, e a **demonstração vive num capítulo
+ * só**, escolhido no mapa. Nos outros dois o nome do produto nem pode ser dito.
+ */
+export const PARTES_DO_CAPITULO = ['pergunta', 'desenvolvimento', 'regancho'];
+
+/** A parte extra, que só o capítulo da demonstração tem. */
+export const PARTE_DEMO = 'demonstracao';
+
+/** Tudo o que pode existir num capítulo, pela ordem em que é falado. */
+export const PARTES_POSSIVEIS = ['pergunta', 'desenvolvimento', 'demonstracao', 'regancho'];
 
 export const NUM_CAPITULOS = 3;
 
@@ -98,8 +117,8 @@ const TITULOS_GENERICOS = [
 /**
  * AS PALAVRAS DA CHAMADA. Só podem existir no bloco `chamada` — é a trava que
  * garante o "CTA uma vez" do dono. Repare que `finmoovi` NÃO está aqui de propósito:
- * o app é DEMONSTRADO em todos os capítulos (é o padrão app-first, §3b-bis), e puni-lo
- * seria reprovar quem obedece ao prompt — o modo de falha crónico deste repositório.
+ * o app tem o seu momento no capítulo da demonstração, e é lá que o nome se diz. Quem
+ * cuida de "o app aparece uma vez só" é a trava própria em `validarLongo`, não esta.
  * O que só pode acontecer uma vez é o PEDIDO: comentar, inscrever, curtir, ir ao link.
  *
  * ⚠️ TRÊS PALAVRAS ÓBVIAS FICARAM DE FORA, E CADA UMA POR UM CASO REAL DO APP:
@@ -198,6 +217,68 @@ export function valoresDaFrase(frase) {
   return [...achados].filter((v) => v >= 10);
 }
 
+/**
+ * ═══ OS NÚMEROS QUE NÃO SÃO DINHEIRO ═══
+ *
+ * ⚠️ ESTA LISTA É A DIFERENÇA ENTRE UMA TRAVA ÚTIL E UMA TRAVA INSUPORTÁVEL.
+ * A trava nova exige que **todo valor em dinheiro dito no vídeo esteja declarado no
+ * mapa**. Mas o leitor de números não sabe o que é dinheiro: para ele, "dez anos",
+ * "quinze dias" e "vinte minutos" são números como os outros, e reprovariam frases
+ * perfeitamente inocentes.
+ * A regra: um número seguido de uma destas palavras é MEDIDA, não dinheiro. Tudo o
+ * resto, num canal de finanças, é dinheiro na prática.
+ * ⚠️ Não se pode exigir a palavra "reais" a seguir ao número, e isto foi medido: na
+ * fala natural ela cai a partir do segundo item — *"Foram oitenta reais de verdura.
+ * Cento e vinte de carne."* O 120 não tem "reais" nenhum ao lado e é dinheiro na
+ * mesma. Por isso a lista é de EXCEÇÕES, não de confirmações.
+ */
+const UNIDADES_QUE_NAO_SAO_DINHEIRO = [
+  'ano', 'anos', 'mes', 'meses', 'dia', 'dias', 'semana', 'semanas',
+  'hora', 'horas', 'minuto', 'minutos', 'segundo', 'segundos',
+  'vez', 'vezes', 'passo', 'passos', 'por cento', 'graus', 'quilo', 'quilos',
+];
+
+/**
+ * Os valores em DINHEIRO ditos num texto.
+ *
+ * ⚠️ A DECISÃO É PELA PALAVRA QUE VEM LOGO A SEGUIR AO NÚMERO, e a 1ª versão desta
+ * função errava exatamente aí: ela procurava a palavra de medida em QUALQUER sítio da
+ * frase. Numa frase como *"Trinta e nove reais de um streaming que ninguém abria
+ * desde o ano passado"*, o "ano" lá no fim fazia os trinta e nove passarem por medida
+ * de tempo e desaparecerem da conta. Apanhado a escrever o exemplo, antes de correr.
+ *
+ * Por isso este leitor tem o seu próprio contador de palavras: quando um número
+ * fecha, olha-se para o token IMEDIATAMENTE a seguir. Só esse decide.
+ */
+export function valoresEmDinheiro(texto) {
+  const tokens = semAcento(texto).split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+  const achados = new Set();
+  let acc = 0;
+  let total = 0;
+  let lendo = false;
+
+  const fechar = (proxima) => {
+    if (lendo && total + acc >= 10) {
+      const medida = UNIDADES_QUE_NAO_SAO_DINHEIRO.includes(proxima)
+        // "por cento" são dois tokens: o "por" sozinho não chega
+        || (proxima === 'por');
+      if (!medida) achados.add(total + acc);
+    }
+    acc = 0; total = 0; lendo = false;
+  };
+
+  for (let i = 0; i < tokens.length; i++) {
+    const t = tokens[i];
+    if (/^\d+$/.test(t)) { acc += Number(t); lendo = true; continue; }
+    if (t === 'mil') { total += (acc || 1) * 1000; acc = 0; lendo = true; continue; }
+    if (Object.prototype.hasOwnProperty.call(EXTENSO_VALOR, t)) { acc += EXTENSO_VALOR[t]; lendo = true; continue; }
+    if (t === 'e' && lendo) continue;
+    fechar(t);
+  }
+  fechar('');
+  return [...achados];
+}
+
 // ─── utilitários de contagem ─────────────────────────────────────────────────
 
 export const contarPalavras = (txt) => String(txt || '').trim().split(/\s+/).filter(Boolean).length;
@@ -258,7 +339,8 @@ const temBordao = (txt) => soPalavras(txt).includes(BORDAO_EM_PALAVRAS);
  * promete nada, um fecho que não responde ao que a abertura prometeu.
  *
  * Forma esperada:
- * { promessa, fioCondutor, capitulos: [{ titulo, numeroChave, somaDe?, oQueFicaEmAberto }], respostaDaPromessa }
+ * { promessa, fioCondutor, numeroEspinha, valores:[{nome,valor}], somas?:[{de:[nomes],da:nome}],
+ *   capituloDaDemonstracao, capitulos:[{titulo, oQueAcrescenta, oQueFicaEmAberto}], respostaDaPromessa, lacoAberto }
  */
 export function validarMapa(mapa) {
   const erros = [];
@@ -316,39 +398,10 @@ export function validarMapa(mapa) {
       titulosVistos.push(chave);
     }
 
-    // 4. O NÚMERO-CHAVE — próprio, e diferente do dos outros.
-    const num = Number(c && c.numeroChave);
-    if (!Number.isFinite(num) || num < 10) {
-      erros.push(`capítulo ${n}: "numeroChave" tem de ser um número de 10 para cima (veio ${JSON.stringify(c && c.numeroChave)}) — cada capítulo carrega UM número que se transforma`);
-    } else {
-      if (numerosVistos.some((v) => Math.abs(v - num) <= 1)) {
-        erros.push(`capítulo ${n}: o número ${num} já é o número-chave de outro capítulo — cada capítulo tem o seu, senão os três contam a mesma história`);
-      }
-      numerosVistos.push(num);
-    }
-
-    // 5. A SOMA TEM DE BATER. É a única conta que este vídeo pode fazer sem ficha:
-    //    o narrador soma o que diz ter visto. Se as parcelas não dão o total, é
-    //    número inventado — e isso mede-se, não se opina.
-    if (c && c.somaDe !== undefined && c.somaDe !== null) {
-      const partes = Array.isArray(c.somaDe) ? c.somaDe.map(Number) : null;
-      if (!partes || partes.length < 2 || partes.some((v) => !Number.isFinite(v))) {
-        erros.push(`capítulo ${n}: "somaDe" tem de ser uma lista de pelo menos dois números (ou não vir de todo)`);
-      } else {
-        const soma = partes.reduce((a, b) => a + b, 0);
-        /**
-         * ⚠️ AQUI A TOLERÂNCIA É ZERO, e é diferente de propósito da tolerância de ±1
-         * que existe mais abaixo (quando se procura o número DITO na fala).
-         * São duas coisas diferentes: ler um número numa frase falada admite folga
-         * (o narrador pode dizer "quase duzentos"); mas somar três números que o
-         * próprio mapa declarou é aritmética, e aritmética não tem folga nenhuma.
-         * A 1ª versão desta trava aceitava ±1 e deixava passar uma conta errada por
-         * um real — apanhado na prova de mesa, antes de gastar um cêntimo.
-         */
-        if (Number.isFinite(num) && Math.abs(soma - num) > 0.001) {
-          erros.push(`capítulo ${n}: a soma de ${partes.join(' + ')} dá ${soma}, e o número-chave é ${num}. A conta tem de bater — o narrador está a somar à frente de quem ouve.`);
-        }
-      }
+    // 4. O QUE ESTE ATO ACRESCENTA à mesma história (substituiu o número por capítulo).
+    const acrescenta = String((c && c.oQueAcrescenta) || '').trim();
+    if (!acrescenta) {
+      erros.push(`capítulo ${n}: sem "oQueAcrescenta" — cada ato tem de trazer um facto NOVO sobre a MESMA história, senão o vídeo dá voltas`);
     }
 
     const aberto = String((c && c.oQueFicaEmAberto) || '').trim();
@@ -356,6 +409,88 @@ export function validarMapa(mapa) {
       erros.push(`capítulo ${n}: sem "oQueFicaEmAberto" — cada capítulo acaba a deixar uma ponta que o seguinte agarra`);
     }
   });
+
+  /**
+   * ═══ 5. O NÚMERO-ESPINHA E A LISTA FECHADA DE VALORES ═══
+   *
+   * 🔴 ISTO SUBSTITUI A REGRA QUE CAUSOU O DEFEITO Nº1 DO PRIMEIRO VÍDEO.
+   *
+   * A regra antiga dizia: *"cada capítulo tem o SEU número, nenhum repete o do
+   * outro"*. A intenção era impedir que os três capítulos contassem a mesma coisa.
+   * O que saiu, medido no vídeo entregue ao dono:
+   *   capítulo 1 → a dívida da pessoa são 450 reais
+   *   capítulo 2 → a dívida da pessoa são 1.280 reais
+   *   capítulo 3 → sobram 300 reais
+   * **Três pessoas diferentes no mesmo vídeo.** É a trava a ensinar o atalho outra
+   * vez: a maneira mais barata de obedecer a "número diferente" é INVENTAR UMA
+   * HISTÓRIA NOVA. O dono viu logo — *"me parece que abre várias ideias no mesmo
+   * vídeo"* — e tinha razão.
+   *
+   * A regra nova é o contrário, e é o que ele pediu (uma ideia, uma história):
+   *  · **UM número-espinha** para o vídeo inteiro, dito nos TRÊS capítulos;
+   *  · **uma lista FECHADA de valores** — tudo o que se pode dizer em dinheiro neste
+   *    vídeo está declarado aqui, com nome, e a aritmética entre eles é conferida.
+   *    Um valor que não esteja na lista é, por definição, de outra história.
+   */
+  const valores = Array.isArray(mapa.valores) ? mapa.valores : [];
+  if (!valores.length) {
+    erros.push('sem "valores" — a lista de TODO o dinheiro que este vídeo pode dizer. Nada fora dela pode ser falado.');
+  }
+  const numeros = valores.map((v) => Number(v && v.valor));
+  valores.forEach((v, i) => {
+    if (!v || !String(v.nome || '').trim()) erros.push(`valores[${i}]: sem "nome" (o que este dinheiro é)`);
+    if (!Number.isFinite(numeros[i]) || numeros[i] < 10) {
+      erros.push(`valores[${i}] ("${(v && v.nome) || '?'}"): o valor tem de ser um número de 10 para cima (veio ${JSON.stringify(v && v.valor)})`);
+    }
+  });
+
+  const espinha = Number(mapa.numeroEspinha);
+  if (!Number.isFinite(espinha) || espinha < 10) {
+    erros.push(`sem "numeroEspinha" válido — é O número do vídeo, o que os três atos têm de dizer (veio ${JSON.stringify(mapa.numeroEspinha)})`);
+  } else if (numeros.length && !numeros.some((v) => Math.abs(v - espinha) <= 0.001)) {
+    erros.push(`o "numeroEspinha" (${espinha}) não está na lista de valores — ele é um deles, não um número à parte`);
+  }
+
+  // A ARITMÉTICA ENTRE OS VALORES. Tolerância ZERO: somar números que o próprio mapa
+  // declarou não tem folga nenhuma (a folga de ±1 existe só ao PROCURAR o número na
+  // fala, onde o narrador pode arredondar).
+  const somas = Array.isArray(mapa.somas) ? mapa.somas : [];
+  somas.forEach((s, i) => {
+    const partes = Array.isArray(s && s.de) ? s.de : [];
+    const nomeTotal = String((s && s.da) || '').trim();
+    const acharValor = (nome) => {
+      const achado = valores.find((v) => String(v && v.nome).trim().toLowerCase() === String(nome).trim().toLowerCase());
+      return achado ? Number(achado.valor) : NaN;
+    };
+    if (partes.length < 2 || !nomeTotal) {
+      erros.push(`somas[${i}]: precisa de "de" (dois ou mais nomes da lista) e "da" (o nome do total)`);
+      return;
+    }
+    const parcelas = partes.map(acharValor);
+    const total = acharValor(nomeTotal);
+    const emFalta = partes.filter((nome, k) => !Number.isFinite(parcelas[k]));
+    if (emFalta.length || !Number.isFinite(total)) {
+      erros.push(`somas[${i}]: estes nomes não existem na lista de valores: ${[...emFalta, Number.isFinite(total) ? null : nomeTotal].filter(Boolean).join(', ')}`);
+      return;
+    }
+    const soma = parcelas.reduce((a, b) => a + b, 0);
+    if (Math.abs(soma - total) > 0.001) {
+      erros.push(`somas[${i}]: ${partes.join(' + ')} dá ${soma}, mas "${nomeTotal}" vale ${total}. A conta tem de bater — o narrador está a somar à frente de quem ouve.`);
+    }
+  });
+
+  /**
+   * 6. O APP APARECE UMA VEZ, E O MAPA DIZ ONDE.
+   * O dono ouviu "eu joguei no FinMoovi" três vezes e reclamou. Agora a demonstração
+   * é de UM capítulo só, e qual deles é decisão do mapa — não do modelo, que
+   * escolheria "todos" se pudesse.
+   */
+  const ondeDemo = Number(mapa.capituloDaDemonstracao);
+  if (!Number.isInteger(ondeDemo) || ondeDemo < 1 || ondeDemo > NUM_CAPITULOS) {
+    erros.push(`"capituloDaDemonstracao" tem de ser 1, 2 ou 3 — o app é demonstrado num capítulo só (veio ${JSON.stringify(mapa.capituloDaDemonstracao)})`);
+  } else if (ondeDemo === 1) {
+    avisos.push('a demonstração do app está no capítulo 1 — funciona, mas quem prende costuma mostrar o problema antes da ferramenta');
+  }
 
   // 6. O FECHO RESPONDE À PROMESSA. Mede-se por partilha de assunto: a resposta tem
   //    de falar da MESMA coisa que foi prometida. Não se julga se responde BEM —
@@ -527,12 +662,21 @@ export function validarCapitulo(cap, indice, { plano = {}, exemploParaComparar =
   const onde = `capítulo ${n}`;
   if (!cap || typeof cap !== 'object') return { ok: false, erros: [`${onde}: não é um objeto`], avisos };
 
+  const temDemo = !!plano.temDemonstracao;
+
   for (const parte of PARTES_DO_CAPITULO) {
     if (!cap[parte] || typeof cap[parte] !== 'string' || !cap[parte].trim()) {
-      erros.push(`${onde}: falta a parte "${parte}" — as quatro são obrigatórias e cada uma é um parágrafo`);
+      erros.push(`${onde}: falta a parte "${parte}" — as três são obrigatórias e cada uma é um parágrafo`);
     }
   }
-  const fala = PARTES_DO_CAPITULO.map((p) => String(cap[p] || '').trim()).filter(Boolean).join(' ');
+  const demoEscrita = String(cap[PARTE_DEMO] || '').trim();
+  if (temDemo && !demoEscrita) {
+    erros.push(`${onde}: é ESTE o capítulo que demonstra o app, e falta a parte "demonstracao"`);
+  }
+  if (!temDemo && demoEscrita) {
+    erros.push(`${onde}: escreveu uma "demonstracao" e o app não é demonstrado aqui — ele aparece num capítulo só do vídeo inteiro`);
+  }
+  const fala = PARTES_POSSIVEIS.map((p) => String(cap[p] || '').trim()).filter(Boolean).join(' ');
   if (!fala) return { ok: false, erros, avisos };
 
   const palavras = contarPalavras(fala);
@@ -546,29 +690,56 @@ export function validarCapitulo(cap, indice, { plano = {}, exemploParaComparar =
     erros.push(`${onde}: a parte "pergunta" tem de ABRIR com uma pergunta terminada em "?" — é o que faz o capítulo pegar. (veio: "${frasesDe(pergunta)[0] || ''}")`);
   }
 
-  // O NÚMERO-CHAVE DO MAPA TEM DE SER DITO. É o que liga o mapa ao guião: sem isto,
-  // o mapa promete um número e o capítulo escreve outro, e ninguém dá por nada.
-  const numerosDitos = valoresDaFrase(fala);
-  const chave = Number(plano.numeroChave);
-  if (Number.isFinite(chave) && !numerosDitos.some((v) => Math.abs(v - chave) <= 1)) {
+  /**
+   * 🔴 O NÚMERO-ESPINHA TEM DE SER DITO EM TODOS OS TRÊS ATOS.
+   * É o contrário exato da regra antiga (um número diferente por capítulo), e é o
+   * que faz o vídeo ser UMA história em vez de três. Ver o porquê em `validarMapa`.
+   */
+  const dinheiroDito = valoresEmDinheiro(fala);
+  const espinha = Number(plano.numeroEspinha);
+  if (Number.isFinite(espinha) && !dinheiroDito.some((v) => Math.abs(v - espinha) <= 1)) {
     erros.push(
-      `${onde}: o número-chave deste capítulo é ${chave} e ele NÃO é dito na fala. `
-      + `Números ouvidos: ${numerosDitos.length ? numerosDitos.join(', ') : 'nenhum'}. Diga-o por extenso, na virada.`,
+      `${onde}: o número deste vídeo é ${espinha} e ele NÃO é dito neste ato. `
+      + `Dinheiro ouvido aqui: ${dinheiroDito.length ? dinheiroDito.join(', ') : 'nenhum'}. `
+      + 'Os três atos falam do MESMO dinheiro, visto de ângulos diferentes — é isso que faz o vídeo ter uma ideia só.',
     );
   }
-  // E as parcelas da soma também, senão a conta acontece fora do ecrã.
-  if (Array.isArray(plano.somaDe) && plano.somaDe.length >= 2) {
-    const emFalta = plano.somaDe.map(Number).filter((v) => Number.isFinite(v) && !numerosDitos.some((d) => Math.abs(d - v) <= 1));
-    if (emFalta.length) {
-      erros.push(`${onde}: a soma que o mapa marcou (${plano.somaDe.join(' + ')}) não aparece toda na fala — falta dizer ${emFalta.join(', ')}. Quem ouve tem de conseguir somar junto.`);
+
+  /**
+   * 🔴 E NENHUM VALOR PODE VIR DE FORA DA LISTA DO MAPA.
+   * Foi assim que o primeiro vídeo acabou com três dívidas diferentes: nada impedia
+   * cada capítulo de inventar o seu próprio dinheiro. Agora o mapa declara TUDO o que
+   * se pode dizer, e o que não estiver lá é, por definição, de outra história.
+   */
+  const permitidos = Array.isArray(plano.valoresPermitidos) ? plano.valoresPermitidos.map(Number).filter(Number.isFinite) : [];
+  if (permitidos.length) {
+    const forasteiros = dinheiroDito.filter((v) => !permitidos.some((p) => Math.abs(p - v) <= 1));
+    if (forasteiros.length) {
+      erros.push(
+        `${onde}: fala em ${forasteiros.join(', ')} e esse dinheiro NÃO existe nesta história. `
+        + `Só pode dizer: ${permitidos.join(', ')}. Inventar um valor novo é começar uma história nova a meio do vídeo.`,
+      );
     }
   }
 
-  // A DEMONSTRAÇÃO NOMEIA O PRODUTO. É estrutura: ou o parágrafo do app diz o nome
-  // do app, ou não é uma demonstração.
-  const demo = String(cap.demonstracao || '');
-  if (demo && !/finmoovi/i.test(demo)) {
-    erros.push(`${onde}: a parte "demonstracao" não diz FinMoovi — é o parágrafo em que o app FAZ a conta, na primeira pessoa`);
+  /**
+   * A DEMONSTRAÇÃO — e o nome do produto vive SÓ nela.
+   * O dono ouviu "eu joguei no FinMoovi" três vezes no primeiro vídeo. Agora o app é
+   * demonstrado num capítulo e os outros dois nem o nome dizem.
+   */
+  if (temDemo) {
+    if (demoEscrita && !/finmoovi/i.test(demoEscrita)) {
+      erros.push(`${onde}: a parte "demonstracao" não diz FinMoovi — é o parágrafo em que o app FAZ a conta, na primeira pessoa`);
+    }
+    const foraDaDemo = PARTES_DO_CAPITULO.map((p) => String(cap[p] || '')).join(' ');
+    if (/finmoovi/i.test(foraDaDemo)) {
+      erros.push(`${onde}: diz FinMoovi fora da parte "demonstracao" — o app tem o seu momento, e é só esse`);
+    }
+  } else if (/finmoovi/i.test(fala)) {
+    erros.push(
+      `${onde}: diz FinMoovi, e o app NÃO é demonstrado neste capítulo. `
+      + 'Ele aparece uma vez no vídeo inteiro, com peso. Repetir o nome em todos os atos foi o defeito que o dono apanhou no primeiro vídeo.',
+    );
   }
 
   if (temBordao(fala)) erros.push(`${onde}: diz o bordão do canal — ele é a assinatura e só pode aparecer no FECHO, uma vez`);
@@ -693,7 +864,7 @@ export function validarLongo(roteiro) {
   if (!roteiro || typeof roteiro !== 'object') return { ok: false, erros: ['o roteiro não é um objeto'], avisos };
 
   const caps = Array.isArray(roteiro.capitulos) ? roteiro.capitulos : [];
-  const falaDoCapitulo = (c) => PARTES_DO_CAPITULO.map((p) => String((c && c[p]) || '').trim()).filter(Boolean).join(' ');
+  const falaDoCapitulo = (c) => PARTES_POSSIVEIS.map((p) => String((c && c[p]) || '').trim()).filter(Boolean).join(' ');
 
   // 1. NADA REPETIDO ENTRE CAPÍTULOS.
   //    Num Short isto não fazia falta: 50 segundos não chegam para alguém se repetir.
@@ -703,9 +874,35 @@ export function validarLongo(roteiro) {
   // precisa de saber QUAL capítulo reescrever — e ler isso de dentro da mensagem
   // seria depender do texto de um erro, que muda ao primeiro retoque de redação.
   const repeticoes = [];
+  /**
+   * 🔴 OS NÚMEROS SAEM DA COMPARAÇÃO, E ISTO É A 18ª OCORRÊNCIA DO DEFEITO Nº1 DESTA
+   * CASA — apanhada pela prova de mesa, antes de gastar um cêntimo.
+   *
+   * O desenho novo ORDENA que os três atos digam o mesmo número-espinha (é isso que
+   * faz o vídeo ter uma história só). E esta trava, tal como estava, PUNIA-OS por
+   * isso: "cento e oitenta e nove reais" são seis palavras seguidas iguais nos três.
+   * O prompt a mandar exatamente o que o validador reprova, outra vez.
+   *
+   * A cura é a mesma de sempre — tirar da comparação aquilo que é obrigatório, como
+   * já se faz com o bordão e com o molde da chamada. Cada numeral é trocado por uma
+   * marca ÚNICA, que por isso nunca casa com nada. Sobra a ESCRITA, que é o que tem
+   * de ser diferente entre atos.
+   */
+  let marca = 0;
+  const semNumeros = (txt) => String(txt || '')
+    .split(/(\s+)/)
+    .map((p) => {
+      const limpo = semAcento(p).replace(/[^\p{L}\p{N}]/gu, '');
+      const eNumero = /^\d+$/.test(limpo)
+        || limpo === 'mil'
+        || Object.prototype.hasOwnProperty.call(EXTENSO_VALOR, limpo);
+      return eNumero ? `¤${marca++}` : p;
+    })
+    .join('');
+
   for (let a = 0; a < caps.length; a++) {
     for (let b = a + 1; b < caps.length; b++) {
-      const repetido = longestSharedWordRun(falaDoCapitulo(caps[a]), falaDoCapitulo(caps[b]), 6);
+      const repetido = longestSharedWordRun(semNumeros(falaDoCapitulo(caps[a])), semNumeros(falaDoCapitulo(caps[b])), 6);
       if (repetido.length) {
         repeticoes.push({ a, b, frase: repetido.join(' ') });
         erros.push(
@@ -736,15 +933,27 @@ export function validarLongo(roteiro) {
     erros.push(`o bordão do canal aparece em ${ondeAssina.join(', ')} — ele é a assinatura e diz-se UMA vez, no fecho`);
   }
 
-  // 4. AS CONTAS DOS TRÊS CAPÍTULOS SÃO DIFERENTES (o mapa já o exigia; aqui é o
-  //    texto real que o confirma, porque é o texto que vai ao ar).
-  const chaves = caps.map((c) => Number(c && c.numeroChave)).filter((v) => Number.isFinite(v));
-  for (let a = 0; a < chaves.length; a++) {
-    for (let b = a + 1; b < chaves.length; b++) {
-      if (Math.abs(chaves[a] - chaves[b]) <= 1) {
-        erros.push(`os capítulos ${a + 1} e ${b + 1} giram à volta do mesmo número (${chaves[a]}) — cada um tem de trazer o seu`);
-      }
-    }
+  /**
+   * 🔴 4. O NOME DO PRODUTO APARECE UMA VEZ NA HISTÓRIA (mais a chamada).
+   *
+   * Aqui vivia o contrário disto: uma trava que exigia que os três capítulos tivessem
+   * números DIFERENTES. Foi ela que produziu o defeito nº1 do primeiro vídeo — três
+   * dívidas diferentes na mesma história. Saiu, e no seu lugar entrou a regra que o
+   * dono pediu: **uma ideia, uma história, e o app com um momento só.**
+   * A chamada fica de fora da contagem de propósito: é lá que se pede, e pedir sem
+   * dizer o nome do app não faz sentido nenhum.
+   */
+  const capitulosComApp = caps
+    .map((c, i) => (/finmoovi/i.test(falaDoCapitulo(c)) ? i + 1 : 0))
+    .filter(Boolean);
+  if (capitulosComApp.length > 1) {
+    erros.push(
+      `o FinMoovi é nomeado nos capítulos ${capitulosComApp.join(' e ')} — ele tem UM momento no vídeo, com peso. `
+      + 'Foi ouvir "eu joguei no FinMoovi" três vezes que fez o dono reprovar o primeiro vídeo.',
+    );
+  }
+  if (/finmoovi/i.test(String(roteiro.abertura || '')) || /finmoovi/i.test(String(roteiro.fecho || ''))) {
+    erros.push('o FinMoovi é nomeado na abertura ou no fecho — a abertura é o problema e o fecho é a lição; o produto vive no seu capítulo e na chamada');
   }
 
   const palavras = contarPalavras(falaToda);
@@ -758,7 +967,7 @@ export function falaCorrida(roteiro) {
   const caps = Array.isArray(roteiro.capitulos) ? roteiro.capitulos : [];
   return [
     String(roteiro.abertura || '').trim(),
-    ...caps.map((c) => PARTES_DO_CAPITULO.map((p) => String((c && c[p]) || '').trim()).filter(Boolean).join(' ')),
+    ...caps.map((c) => PARTES_POSSIVEIS.map((p) => String((c && c[p]) || '').trim()).filter(Boolean).join(' ')),
     String(roteiro.chamada || '').trim(),
     String(roteiro.fecho || '').trim(),
   ].filter(Boolean);

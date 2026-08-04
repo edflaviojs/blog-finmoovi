@@ -44,7 +44,7 @@ import { PERSONA, VICIOS_ESSENCIAIS, O_QUE_PRESERVAR } from './lib/voz-do-canal.
 import { montarFichaDeNumeros } from './lib/simulador.js';
 import { polirCapitulo, polirBloco } from './lib/leitor-longo.js';
 import {
-  ORCAMENTO, PARTES_DO_CAPITULO, NUM_CAPITULOS, MAX_PALAVRAS_TITULO, PALAVRAS_POR_SEGUNDO,
+  ORCAMENTO, PARTES_DO_CAPITULO, PARTES_POSSIVEIS, NUM_CAPITULOS, MAX_PALAVRAS_TITULO, PALAVRAS_POR_SEGUNDO,
   validarMapa, validarAbertura, validarCapitulo, validarChamada, validarFecho, validarLongo,
   contarPalavras, frasesDe, falaCorrida,
 } from './lib/schema-longo.js';
@@ -128,25 +128,43 @@ export function lerTemaLongo() {
 //    está errado — não a trava.
 // ═══════════════════════════════════════════════════════════════════════════════
 
-/** O mapa-exemplo. Assunto: assinaturas esquecidas — NÃO é dívida, de propósito. */
+/**
+ * O mapa-exemplo. Assunto: assinaturas esquecidas — NÃO é dívida, de propósito.
+ *
+ * ⚠️ REESCRITO EM 04/08/2026, depois de o dono ver o primeiro vídeo. O mapa antigo
+ * dava um número DIFERENTE a cada capítulo (47 · 189 · 640) e era isso que ensinava o
+ * modelo a inventar uma história nova em cada ato. Agora há UM número (189) e uma
+ * lista fechada de tudo o que se pode dizer em dinheiro. Os três atos falam do mesmo
+ * dinheiro, visto de ângulos diferentes.
+ */
 export const EXEMPLO_DE_MAPA = {
   promessa: 'Vou te mostrar como achar as assinaturas que você paga sem usar e cortar as maiores ainda hoje',
   fioCondutor: 'ralo',
+  numeroEspinha: 189,
+  valores: [
+    { nome: 'o streaming que ninguém abria', valor: 39 },
+    { nome: 'a academia parada', valor: 90 },
+    { nome: 'o jogo do celular', valor: 60 },
+    { nome: 'o total por mês', valor: 189 },
+  ],
+  somas: [
+    { de: ['o streaming que ninguém abria', 'a academia parada', 'o jogo do celular'], da: 'o total por mês' },
+  ],
+  capituloDaDemonstracao: 2,
   capitulos: [
     {
-      titulo: 'Onde as assinaturas se escondem na fatura',
-      numeroChave: 47,
-      oQueFicaEmAberto: 'quantas dessas cobranças ele ainda não tinha visto',
+      titulo: 'O domingo em que eu li a fatura linha por linha',
+      oQueAcrescenta: 'o susto: de onde vêm os cento e oitenta e nove reais, item a item',
+      oQueFicaEmAberto: 'há quanto tempo é que aquilo já saía sem ninguém ver',
     },
     {
-      titulo: 'O teste dos trinta dias sem abrir',
-      numeroChave: 189,
-      somaDe: [39, 90, 60],
-      oQueFicaEmAberto: 'o que fazer com as que ele descobriu que não usa',
+      titulo: 'O que aparece quando você põe tudo no mesmo lugar',
+      oQueAcrescenta: 'o tempo: os mesmos cento e oitenta e nove reais multiplicados pelos meses que já passaram',
+      oQueFicaEmAberto: 'quais delas dá mesmo para cortar sem falta nenhuma',
     },
     {
-      titulo: 'Cancelar sem perder o que importa',
-      numeroChave: 640,
+      titulo: 'Cancelar sem perder o que a casa usa',
+      oQueAcrescenta: 'a saída: quais dos cento e oitenta e nove saem hoje e quais ficam',
       oQueFicaEmAberto: 'a cobrança que volta sozinha se ninguém olhar',
     },
   ],
@@ -166,24 +184,40 @@ export const EXEMPLO_DE_ABERTURA = {
     + 'e o que dá pra desligar hoje sem ninguém em casa reclamar.',
 };
 
-/** O capítulo-exemplo. Assunto: comida que estraga na geladeira. */
+/**
+ * O capítulo-exemplo — e agora é o **ATO 1 da MESMA história do mapa acima**, de
+ * propósito. Antes era um assunto à parte, e isso ensinava exatamente o defeito que
+ * o dono apanhou: cada capítulo com a sua história. Ver o mapa e depois o ato que
+ * nasce dele é o que mostra ao modelo que os dois são a mesma coisa.
+ * Repare: não diz FinMoovi (a demonstração é do ato 2), diz o número-espinha, e não
+ * cita um único valor que não esteja na lista do mapa.
+ */
 export const EXEMPLO_DE_CAPITULO = {
-  titulo: 'A conta do que apodrece no fundo da geladeira',
-  numeroChave: 260,
-  somaDe: [80, 120, 60],
-  pergunta: 'Você já abriu a geladeira num domingo e achou comida estragada lá no fundo? '
-    + 'Eu já achei, e daquela vez eu parei pra contar quanto tinha custado.',
-  desenvolvimento: 'E olha, não é desleixo seu. A gente faz a compra grande no sábado, enche o carrinho pra semana inteira, '
-    + 'e no meio da semana a vida muda tudo. Um dia você sai tarde do trabalho, no outro come na rua, no outro o menino não quer aquilo. '
-    + 'Aí a verdura murcha, a carne passa do prazo, o pão endurece. '
-    + 'Naquele mês eu somei tudo o que foi pro lixo. Oitenta reais de verdura. Cento e vinte de carne. Sessenta de pão e de leite. '
-    + 'Duzentos e sessenta reais que eu paguei, carreguei pra casa e nunca cheguei a comer.',
-  demonstracao: 'Sabe o que eu fiz depois disso? Fotografei a nota do mercado e joguei no FinMoovi, compra a compra. '
-    + 'No fim do mês eu abri o balanço e o app tinha juntado tudo numa linha só, mercado, com o total já somado. '
-    + 'Eu não precisei de calculadora nenhuma. Estava escrito na tela, e foi aí que aquilo deixou de ser uma sensação e virou um número.',
-  regancho: 'Só que ver o número na tela ainda não devolve o dinheiro. '
-    + 'Falta a parte que muda o mês seguinte, e ela é a mais simples das três.',
+  titulo: 'O domingo em que eu li a fatura linha por linha',
+  pergunta: 'Você sabe quantas coisas você paga todo mês sem usar? '
+    + 'Eu achava que sabia. Levei um susto.',
+  desenvolvimento: 'Olha, eu pago tudo em dia. Nunca atrasei um boleto na vida, e por isso mesmo nunca tinha parado para ler a fatura com calma. '
+    + 'Naquele domingo eu sentei com ela na mão e fui descendo linha por linha. '
+    + 'Trinta e nove reais de um streaming que ninguém lá em casa abria desde o inverno. '
+    + 'Noventa reais de uma academia onde eu não punha os pés. '
+    + 'Sessenta reais de um jogo de celular que o meu filho instalou e esqueceu. '
+    + 'Fui somando ali mesmo, na margem do papel, e deu cento e oitenta e nove reais. '
+    + 'Por mês. Saindo enquanto eu dormia, sem ninguém pedir e sem ninguém olhar. '
+    + 'E sabe o que doeu mais? Não foi o valor. Foi perceber que cada uma delas, sozinha, é pequena demais para eu ter reparado. '
+    + 'Ninguém me enganou. Fui eu que assinei as três, uma de cada vez, em meses diferentes, e nenhuma delas me pareceu cara no dia em que entrou.',
+  regancho: 'Só que se cento e oitenta e nove reais saem sem eu ver, a pergunta seguinte é feia. '
+    + 'Há quanto tempo é que isso já vinha acontecendo?',
 };
+
+/**
+ * A DEMONSTRAÇÃO-EXEMPLO, num campo à parte — porque agora ela vive num capítulo só.
+ * ⚠️ Ela mostra a regra que o dono pediu ao ver o primeiro vídeo: o app aparece UMA
+ * vez, com peso, e conta-se o que apareceu na TELA. Nada de "o app me mostrou o
+ * estrago" — isso não mostra nada.
+ */
+export const EXEMPLO_DE_DEMONSTRACAO = 'Foi aí que eu joguei as três no FinMoovi, uma por uma, com o dia da cobrança. '
+  + 'Quando abri a tela, elas estavam juntas numa linha só, com o total de cento e oitenta e nove reais escrito em cima. '
+  + 'E ao lado, uma coisa que eu não tinha pedido: há quantos meses cada uma vinha sendo cobrada.';
 
 /** O fecho-exemplo. Assunto: conta de luz (o mesmo da abertura, para o laço fechar). */
 export const EXEMPLO_DE_FECHO = 'No fim das contas, a sua conta de luz não sobe de uma vez. '
@@ -210,6 +244,7 @@ export const EXEMPLO_DE_CHAMADA = 'Quer ver quanto a sua casa está levando por 
 export const EXEMPLO_PARA_COMPARAR = [
   EXEMPLO_DE_ABERTURA.fala,
   ...PARTES_DO_CAPITULO.map((p) => EXEMPLO_DE_CAPITULO[p]),
+  EXEMPLO_DE_DEMONSTRACAO,
   EXEMPLO_DE_FECHO.replace(BORDAO, ''),
   EXEMPLO_DE_MAPA.promessa,
   EXEMPLO_DE_MAPA.respostaDaPromessa,
@@ -254,6 +289,41 @@ const REGRAS_DE_FALA = `════════ COMO A FALA FLUI ════�
   ✗ "…que desaparecem todo mês."   ✓ "…que desaparecem DA SUA CONTA todo mês."
 - Diga "vídeo", nunca "Short". Nunca diga "tchau", "até a próxima" nem "obrigado".`;
 
+/**
+ * ═══ A ESPINHA NARRATIVA — a mudança que o dono pediu em 04/08/2026 ═══
+ *
+ * *"me parece que abre várias ideias no mesmo vídeo. Pensei em algo com 1 único
+ * ensinamento, uma informação com storytelling."*
+ *
+ * ⚠️ E A PERSONAGEM É O NARRADOR, NA PRIMEIRA PESSOA. Decisão minha, a pedido dele,
+ * e a razão é a credibilidade: inventar uma "Cláudia que ganha dois mil e quatrocentos
+ * e devia mil e duzentos" é fabricar um caso de cliente que nunca existiu. Num canal
+ * cuja única vantagem é ter validadores de VERDADE, isso é a versão narrativa de
+ * inventar um número. O narrador contar o que ELE viveu é honesto (ele é a persona do
+ * canal), já é o padrão aprovado do Short ("eu joguei no FinMoovi e ele me mostrou"),
+ * e deixa só DUAS pessoas na cabeça de quem ouve: eu, que passei por isto, e você,
+ * que está a passar. Uma terceira personagem obrigaria a segurar mais uma história.
+ */
+const A_HISTORIA = `════════ A REGRA MAIOR DESTE VÍDEO: UMA HISTÓRIA SÓ ════════
+Este vídeo conta **UMA história, de UMA pessoa, com UM número**. Os três capítulos não são três assuntos — são três **atos da mesma história**, e o mesmo dinheiro aparece nos três, visto de ângulos diferentes.
+
+👤 **QUEM VIVEU A HISTÓRIA É VOCÊ, O NARRADOR.** Fale na PRIMEIRA PESSOA: "eu abri", "eu somei", "eu levei um susto".
+⛔ **NÃO invente uma terceira pessoa** com nome ("a Cláudia", "o Seu Antônio"). Só existem duas pessoas neste vídeo: **EU**, que passei por isto, e **VOCÊ**, que está a passar. Uma personagem inventada é um caso de cliente que nunca existiu, e este canal não faz isso.
+
+🎭 **O QUE FAZ ISTO PRENDER — use, são honestas:**
+· **A perda que está a acontecer AGORA**, não no futuro. "Enquanto você ouve isto, aquilo continua a sair."
+· **A conta que ninguém fez.** O número que a pessoa tem e não sabe que tem.
+· **A confissão.** Comece por admitir o seu próprio erro. Quem confessa não está a dar lição, e por isso ninguém se defende.
+· **A objeção antecipada.** Diga em voz alta o que a pessoa está a pensar: "você vai dizer que não sobra nada. Eu sei. Eu também dizia."
+· **O detalhe concreto e pequeno** — o domingo, a margem do papel, a fatura na mão. É o detalhe que faz acreditar, não o adjetivo.
+· **A promessa com data.** "Em que mês isto acaba" vale mais do que "você vai melhorar".
+
+⛔ **E O QUE ESTE CANAL NÃO FAZ, mesmo que dê clique:**
+· o falso segredo ("o que os bancos não querem que você saiba") — é mentira e mata a credibilidade;
+· o medo sem saída — assustar e não dar caminho é crueldade, e a pessoa sai;
+· urgência ou escassez inventada ("só hoje", "poucas vagas") — não temos nada disso;
+· número inventado para chocar — o computador confere e reprova.`;
+
 const O_QUE_PODE_PROMETER = `════════ O QUE VOCÊ PODE OFERECER ════════
 SOMENTE duas coisas, porque só estas existem: o **app FinMoovi (grátis)** e as **calculadoras do blog**.
 ⛔ É PROIBIDO oferecer planilha, ebook, PDF, apostila, curso, aula, checklist ou qualquer material que o canal não tem.`;
@@ -282,16 +352,23 @@ Nós medimos 64 capítulos de sete vídeos longos de finanças brasileiros. O qu
 · os fechos bons deixam uma ponta no ar, não uma despedida.
 Para seis minutos são **${NUM_CAPITULOS} capítulos**, e não mais.
 
+${A_HISTORIA}
+
 ════════ O QUE VOCÊ TEM DE DECIDIR ════════
 1. **A PROMESSA** — uma frase só, entre 5 e 25 palavras, dizendo o que a pessoa leva daqui. NÃO é pergunta. É o que o vídeo ENTREGA.
-2. **${NUM_CAPITULOS} CAPÍTULOS**, cada um com:
-   · **titulo** — no máximo ${MAX_PALAVRAS_TITULO} palavras, e ele PROMETE o que o capítulo entrega. ⛔ Proibido "Introdução", "Conclusão", "Parte 1", "Resumo" ou qualquer nome que sirva para qualquer vídeo.
-   · **numeroChave** — UM número de dinheiro (10 para cima) que se transforma dentro deste capítulo. ⛔ **Cada capítulo tem o SEU. Dois capítulos com o mesmo número contam a mesma história duas vezes** — o computador reprova.
-   · **somaDe** (só se houver soma) — as parcelas que dão o número-chave. **Elas têm de somar exatamente o número-chave.** O computador confere a conta.
-   · **oQueFicaEmAberto** — a ponta que este capítulo deixa no ar para o seguinte agarrar.
-3. **respostaDaPromessa** — a lição do fim, que responde ao que a promessa prometeu. Tem de falar da MESMA coisa.
-4. **lacoAberto** — a provocação final, DENTRO deste tema. ⛔ Proibido prometer "no próximo vídeo" ou "semana que vem": não há fila de vídeos, e prometer o que não existe é mentira.
-5. **fioCondutor** — a imagem da capa, uma destas: ${menuDeImagens(proibidas)}.
+2. 🔴 **O NÚMERO-ESPINHA** (\`numeroEspinha\`) — **UM número de dinheiro para o vídeo INTEIRO**. É o número da história, e os três atos são obrigados a dizê-lo. O computador confere nos três.
+3. 🔴 **A LISTA DE VALORES** (\`valores\`) — **TODO o dinheiro que este vídeo pode dizer**, cada um com um nome do dia a dia. Nada fora desta lista pode ser falado em nenhum capítulo, e o computador confere. O número-espinha é um destes valores.
+   · **somas** (quando houver) — que valores somam para dar qual. **A conta tem de bater exatamente.** É o narrador a somar à frente de quem ouve.
+4. **capituloDaDemonstracao** — 1, 2 ou 3. **O app aparece num capítulo SÓ**, com peso. Nos outros o nome dele nem é dito. (O costume dos vídeos que prendem: mostrar o problema antes da ferramenta.)
+5. **${NUM_CAPITULOS} CAPÍTULOS**, e são três ATOS da mesma história:
+   · **titulo** — no máximo ${MAX_PALAVRAS_TITULO} palavras, e ele PROMETE o que o ato entrega. ⛔ Proibido "Introdução", "Conclusão", "Parte 1", "Resumo".
+   · **oQueAcrescenta** — o facto NOVO que este ato traz sobre o MESMO dinheiro. Se um ato não acrescenta nada, o vídeo dá voltas.
+   · **oQueFicaEmAberto** — a ponta que este ato deixa no ar para o seguinte agarrar.
+6. **respostaDaPromessa** — a lição do fim, que responde ao que a promessa prometeu. Tem de falar da MESMA coisa.
+7. **lacoAberto** — a provocação final, DENTRO deste tema. ⛔ Proibido prometer "no próximo vídeo" ou "semana que vem": não há fila de vídeos, e prometer o que não existe é mentira.
+8. **fioCondutor** — a imagem da capa, uma destas: ${menuDeImagens(proibidas)}.
+
+⛔ **O ERRO QUE MATOU O PRIMEIRO VÍDEO DESTE CANAL, para não o repetir:** os três capítulos tinham números diferentes e acabaram a contar histórias de **três pessoas diferentes** — no primeiro a dívida eram quatrocentos e cinquenta, no segundo mil duzentos e oitenta, no terceiro trezentos. Quem via sentia que o vídeo dava voltas. É por isso que agora há um número só.
 
 ${REGRAS_DE_NUMERO}
 
@@ -300,16 +377,20 @@ ${REGRAS_DE_NUMERO}
 
 ${JSON.stringify(ex, null, 2)}
 
-Repare no que este exemplo faz: a promessa diz o que a pessoa LEVA; os três títulos prometem coisas diferentes; os três números são diferentes entre si; a soma do capítulo dois bate certo; e o fim responde à promessa falando da mesma coisa.
+Repare no que este exemplo faz: **UM número (cento e oitenta e nove) atravessa os três atos**; a lista de valores fecha tudo o que se pode dizer em dinheiro; a soma bate certo; cada ato acrescenta uma coisa nova sobre o MESMO dinheiro (de onde vem · há quanto tempo · o que sai hoje); o app tem um ato só; e o fim responde à promessa falando da mesma coisa.
 
 Responda APENAS com JSON válido, sem markdown, exatamente com estes campos:
 {
   "promessa": "...",
   "fioCondutor": "...",
+  "numeroEspinha": 0,
+  "valores": [ { "nome": "...", "valor": 0 } ],
+  "somas": [ { "de": ["...", "..."], "da": "..." } ],
+  "capituloDaDemonstracao": 2,
   "capitulos": [
-    { "titulo": "...", "numeroChave": 0, "somaDe": [0, 0], "oQueFicaEmAberto": "..." },
-    { "titulo": "...", "numeroChave": 0, "oQueFicaEmAberto": "..." },
-    { "titulo": "...", "numeroChave": 0, "oQueFicaEmAberto": "..." }
+    { "titulo": "...", "oQueAcrescenta": "...", "oQueFicaEmAberto": "..." },
+    { "titulo": "...", "oQueAcrescenta": "...", "oQueFicaEmAberto": "..." },
+    { "titulo": "...", "oQueAcrescenta": "...", "oQueFicaEmAberto": "..." }
   ],
   "respostaDaPromessa": "...",
   "lacoAberto": "..."
@@ -386,63 +467,53 @@ Responda APENAS com JSON válido, sem markdown:
 { "fala": "..." }`;
 }
 
-/**
- * ⚠️ OS TRÊS MOLDES DA DEMONSTRAÇÃO — e por que são TRÊS, escolhidos por CÓDIGO.
- *
- * MEDIDO na 2ª corrida real (04/08/2026). O prompt dava UM molde ("eu joguei isso no
- * FinMoovi e ele me mostrou…") e os três capítulos saíram assim:
- *   cap 1: "Eu joguei essas contas no FinMoovi e ele fez a soma pra mim."
- *   cap 2: "Eu joguei tudo no FinMoovi e ele me mostrou na tela…"
- *   cap 3: "Eu joguei tudo no FinMoovi e ele fez a conta pra mim."
- * A trava global apanhou-o — mas a culpa não era do modelo: **ele obedeceu ao molde
- * que o prompt lhe deu, três vezes.** É a mesma doença de sempre, na forma mais
- * traiçoeira: o prompt ORDENA a frase que a trava global PUNE.
- *
- * A cura é a que já funcionou na música (`lib/musica.js`): **não se pergunta ao
- * modelo qual escolher.** Está medido neste projeto que, com opções à escolha, oito
- * gerações em oito escolhem a mesma. Cada capítulo recebe o SEU molde, decidido pelo
- * número do capítulo, e nunca vê os outros dois.
- */
-const MOLDES_DA_DEMO = [
-  'Você lança as contas no FinMoovi e ele soma sozinho. Conte o que apareceu na tela.',
-  'Você abre a tela do FinMoovi e LÊ o que está lá escrito. Conte a linha que viu e o valor que estava nela.',
-  'O FinMoovi já tinha aquilo marcado antes de você perguntar. Conte o que ele mostrou quando você foi ver.',
-];
-
 export function buildPromptCapitulo(t, mapa, indice, ancora) {
   const plano = mapa.capitulos[indice];
   const seguinte = mapa.capitulos[indice + 1];
-  const molde = MOLDES_DA_DEMO[indice % MOLDES_DA_DEMO.length];
-  const soma = Array.isArray(plano.somaDe) && plano.somaDe.length >= 2
-    ? `\n   · **A soma é esta, e tem de bater:** ${plano.somaDe.join(' + ')} = ${plano.numeroChave}. Diga as parcelas UMA A UMA e depois o total, para quem ouve somar junto.`
-    : '';
+  const temDemo = Number(mapa.capituloDaDemonstracao) === indice + 1;
+  const valores = (mapa.valores || []).map((v) => `${v.valor} (${v.nome})`).join(' · ');
+  const somas = (mapa.somas || [])
+    .map((s) => `${s.de.join(' + ')} = ${s.da}`)
+    .join(' · ');
+
+  const blocoDaDemo = temDemo
+    ? `3. **demonstracao** (~25s) — 🔴 **É NESTE ATO, E SÓ NESTE, QUE O APP APARECE.**
+   Você conta na PRIMEIRA PESSOA o que aconteceu quando pôs aquilo no FinMoovi. O app é quem AGE, não é rodapé.
+   **DIGA O QUE APARECEU NA TELA** — o nome da linha, o total escrito, a coisa concreta. Frases como "me mostrou o estrago" não mostram nada.
+   ✓ Bom: mostrar uma coisa que a pessoa **não tinha pedido** e que o app revelou sozinho. É isso que faz querer abrir o app.
+   ⛔ Não repita o número-espinha como se fosse novidade — ele já foi dito. Aqui ele aparece **na tela**, e é isso que muda.`
+    : `⛔ **O APP NÃO APARECE NESTE ATO.** A demonstração é do capítulo ${mapa.capituloDaDemonstracao}, e **é proibido escrever a palavra FinMoovi aqui** — o computador confere.
+   Foi ouvir "eu joguei no FinMoovi" três vezes que fez o dono reprovar o primeiro vídeo deste canal. O produto tem um momento, e não é este.`;
 
   return `${CABECALHO}
 
-SUA TAREFA AGORA: escrever **SÓ O CAPÍTULO ${indice + 1} de ${NUM_CAPITULOS}** de um vídeo de seis minutos. Nem o que veio antes, nem o que vem depois.
+SUA TAREFA AGORA: escrever **SÓ O ATO ${indice + 1} de ${NUM_CAPITULOS}** de um vídeo de seis minutos. Nem o que veio antes, nem o que vem depois.
 
 ${contexto(t)}
+${A_HISTORIA}
+
 ════════ O MAPA JÁ DECIDIDO (não o discuta, cumpra-o) ════════
 A PROMESSA DO VÍDEO: "${mapa.promessa}"
-**ESTE capítulo chama-se: "${plano.titulo}"**
-   · **O número-chave deste capítulo é ${plano.numeroChave}** e ele TEM de ser dito na fala, por extenso. O computador confere.${soma}
-   · Este capítulo tem de deixar no ar: ${plano.oQueFicaEmAberto}
-${seguinte ? `O capítulo seguinte chama-se "${seguinte.titulo}" — o seu re-gancho tem de apontar para lá SEM dizer o nome dele.` : 'Este é o último capítulo. O re-gancho entrega a conversa ao fim do vídeo.'}
+**ESTE ato chama-se: "${plano.titulo}"**
+   · 🔴 **O NÚMERO DESTE VÍDEO É ${mapa.numeroEspinha}, e ele TEM de ser dito neste ato**, por extenso. É o mesmo número dos outros dois atos — é isso que faz o vídeo ter uma ideia só. O computador confere.
+   · 🔴 **TODO o dinheiro que você pode dizer é este, e mais nenhum:** ${valores}.
+     Um valor que não esteja nesta lista é de outra história, e o computador reprova.${somas ? `\n   · **A conta que tem de bater:** ${somas}. Se disser as parcelas, diga o total, para quem ouve somar junto.` : ''}
+   · **O que ESTE ato acrescenta à história:** ${plano.oQueAcrescenta}
+   · **E deixa no ar:** ${plano.oQueFicaEmAberto}
+${seguinte ? `O ato seguinte chama-se "${seguinte.titulo}" — o seu re-gancho aponta para lá SEM dizer o nome dele.` : 'Este é o último ato. O re-gancho entrega a conversa ao fim do vídeo.'}
 
 ${ancora ? `${ancora}\n` : ''}
-════════ AS QUATRO PARTES DESTE CAPÍTULO (é a forma que o canal já provou) ════════
-1. **pergunta** (~4s de fala) — abre com uma PERGUNTA que dói, terminada em "?", e responde-lhe já na frase seguinte.
-2. **desenvolvimento** (~45s) — o caso concreto do dia a dia, nomeado coisa a coisa, sem culpar quem assiste. É AQUI que **o número se transforma** à frente de quem ouve: o pequeno vira grande, o "nada" vira caro. Termine na tensão, não conforte.
-3. **demonstracao** (~25s) — **o app FEZ a conta, e você conta na PRIMEIRA PESSOA.** O app é quem AGE, não é rodapé. **DIGA O QUE APARECEU NA TELA** — o nome da linha, o total, a coisa concreta. Frases como "me mostrou o estrago" não mostram nada.
-   🔴 **A DEMONSTRAÇÃO DESTE CAPÍTULO É ASSIM, e só assim:** ${molde}
-   Os outros capítulos deste vídeo demonstram o app de MANEIRA DIFERENTE. Se os três contarem a mesma cena com as mesmas palavras, quem assiste acha que já viu o vídeo e sai — e o computador reprova.
-4. **regancho** (~10s) — deixa a ponta no ar para o capítulo seguinte. Uma ou duas frases, sem prometer nada de fora deste vídeo.
+════════ AS PARTES DESTE ATO ════════
+1. **pergunta** (~4s) — abre com uma PERGUNTA que dói, terminada em "?", e responde-lhe já na frase seguinte.
+2. **desenvolvimento** (~50s) — a história a andar, na primeira pessoa, com detalhes concretos e pequenos. É AQUI que o dinheiro deste vídeo aparece e **ganha um sentido novo**. Termine na tensão, não conforte.
+${blocoDaDemo}
+${temDemo ? '4' : '3'}. **regancho** (~10s) — deixa a ponta no ar para o ato seguinte. Uma ou duas frases, sem prometer nada de fora deste vídeo.
 
-⚠️ **TAMANHO: as quatro partes somadas, entre ${ORCAMENTO.capitulo.min} e ${ORCAMENTO.capitulo.max} palavras.** Conte antes de responder.
-⛔ **NÃO PEÇA NADA** — nem comentário, nem inscrição, nem curtir, nem link. Isso acontece UMA vez no vídeo, e não é aqui. Repetir o pedido a cada capítulo é o erro que mata o vídeo longo.
+⚠️ **TAMANHO: tudo somado, entre ${ORCAMENTO.capitulo.min} e ${ORCAMENTO.capitulo.max} palavras.** Conte antes de responder.
+⛔ **NÃO PEÇA NADA** — nem comentário, nem inscrição, nem curtir, nem link. Isso acontece UMA vez no vídeo, e não é aqui.
 ⛔ **NÃO DIGA O BORDÃO DO CANAL.** Ele é a assinatura e vive só na última frase do vídeo.
 ⛔ **NÃO USE O MOLDE "não é A, é B".** É a marca da escrita de robô. Diga só o B.
-⛔ Metáfora quase não existe neste canal. No máximo UMA comparação no capítulo inteiro, com coisa que a pessoa já conhece, sempre comparada ("é tipo", "é que nem"), nunca definida.
+⛔ Metáfora quase não existe neste canal. No máximo UMA comparação no ato inteiro, com coisa que a pessoa já conhece, sempre comparada ("é tipo", "é que nem"), nunca definida.
 
 ${REGRAS_DE_NUMERO}
 
@@ -450,21 +521,23 @@ ${REGRAS_DE_FALA}
 
 ${O_QUE_PODE_PROMETER}
 
-════════ UM CAPÍTULO INTEIRO, PARA VER A FORMA ════════
-🔥 **O assunto — comida que estraga na geladeira — é de OUTRO vídeo de propósito.** Copie a FORMA e o TOM. **Se repetir SEIS PALAVRAS SEGUIDAS deste exemplo, o capítulo é rejeitado** — o computador confere.
+════════ UM ATO INTEIRO, PARA VER A FORMA ════════
+🔥 **O assunto — assinaturas esquecidas — é de OUTRO vídeo de propósito, e este é o ato 1 do mapa-exemplo.** Copie a FORMA e o TOM. **Se repetir SEIS PALAVRAS SEGUIDAS deste exemplo, o ato é rejeitado** — o computador confere.
 
 [PERGUNTA] ${EXEMPLO_DE_CAPITULO.pergunta}
 
 [DESENVOLVIMENTO] ${EXEMPLO_DE_CAPITULO.desenvolvimento}
 
-[DEMONSTRACAO] ${EXEMPLO_DE_CAPITULO.demonstracao}
-
 [REGANCHO] ${EXEMPLO_DE_CAPITULO.regancho}
+${temDemo ? `
+E assim é a demonstração, quando chega a vez dela (é o ato 2 do mesmo exemplo):
 
-Repare: as três parcelas são ditas uma a uma e o total bate · o app aparece a FAZER, na primeira pessoa, e diz-se o que estava na tela · e o re-gancho deixa a ponta no ar sem prometer nada de fora.
+[DEMONSTRACAO] ${EXEMPLO_DE_DEMONSTRACAO}
+` : ''}
+Repare: quem fala é o narrador, contando o que VIVEU · o detalhe é pequeno e concreto (o domingo, a margem do papel) · as parcelas são ditas uma a uma e o total bate · e o re-gancho deixa uma pergunta feia no ar, sem prometer nada de fora.
 
 Responda APENAS com JSON válido, sem markdown:
-{ "pergunta": "...", "desenvolvimento": "...", "demonstracao": "...", "regancho": "..." }`;
+{ "pergunta": "...", "desenvolvimento": "...", ${temDemo ? '"demonstracao": "...", ' : ''}"regancho": "..." }`;
 }
 
 export function buildPromptChamada(t, mapa, ancora) {
@@ -686,7 +759,19 @@ export async function gerarMapa(t, { proibidas = [], tentativas = 3 } = {}) {
 const ultimasFrases = (txt, n = 2) => frasesDe(txt).slice(-n).join(' ');
 const primeirasFrases = (txt, n = 2) => frasesDe(txt).slice(0, n).join(' ');
 
-const falaDoCapitulo = (c) => PARTES_DO_CAPITULO.map((p) => String((c && c[p]) || '').trim()).filter(Boolean).join(' ');
+const falaDoCapitulo = (c) => PARTES_POSSIVEIS.map((p) => String((c && c[p]) || '').trim()).filter(Boolean).join(' ');
+
+/**
+ * O que o validador de um capítulo precisa de saber do MAPA — e vive numa função só
+ * porque é pedido em cinco sítios (escrita, polimento, costura, conserto, relatório).
+ * Escrito à mão nesses cinco, um dia divergiam, e a divergência seria invisível.
+ */
+const planoDoCapitulo = (mapa, i) => ({
+  ...(mapa.capitulos[i] || {}),
+  numeroEspinha: mapa.numeroEspinha,
+  valoresPermitidos: (mapa.valores || []).map((v) => Number(v && v.valor)).filter(Number.isFinite),
+  temDemonstracao: Number(mapa.capituloDaDemonstracao) === i + 1,
+});
 
 /**
  * ═══ O CADERNO — cada bloco aprovado é gravado no instante em que passa ═══
@@ -743,7 +828,7 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
   }
   console.log(`   promessa: "${mapa.promessa}"`);
   mapa.capitulos.forEach((c, i) => {
-    console.log(`   ${i + 1}. ${c.titulo}  ·  número-chave ${c.numeroChave}${c.somaDe ? ` (= ${c.somaDe.join(' + ')})` : ''}`);
+    console.log(`   ${i + 1}. ${c.titulo}${Number(mapa.capituloDaDemonstracao) === i + 1 ? '   [o app aparece aqui]' : ''}`);
   });
   console.log(`   fim: "${mapa.respostaDaPromessa}"`);
   console.log(`   imagem da capa: ${mapa.fioCondutor}`);
@@ -773,7 +858,7 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
   let anterior = abertura.fala;
   let deQuem = 'a abertura';
   for (let i = 0; i < mapa.capitulos.length; i++) {
-    const plano = mapa.capitulos[i];
+    const plano = planoDoCapitulo(mapa, i);
     const ancora = blocoDaAncora({
       paragrafoAnterior: ultimasFrases(anterior),
       deQuem,
@@ -789,17 +874,17 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
         nome: `capítulo ${i + 1}`,
         prompt: buildPromptCapitulo(t, mapa, i, ancora),
         tema: temaTexto,
-        campos: PARTES_DO_CAPITULO,
+        campos: PARTES_POSSIVEIS,
         validar: (o) => validarCapitulo(o, i, { plano, exemploParaComparar: EXEMPLO_PARA_COMPARAR }),
       });
-      completo = { ...Object.fromEntries(PARTES_DO_CAPITULO.map((p) => [p, cap[p]])), titulo: plano.titulo, numeroChave: plano.numeroChave, somaDe: plano.somaDe };
+      completo = { ...Object.fromEntries(PARTES_POSSIVEIS.filter((p) => typeof cap[p] === 'string').map((p) => [p, cap[p]])), titulo: plano.titulo };
       caderno.capitulos[i] = completo;
       guardar();
       console.log(`   ✅ capítulo ${i + 1} — ${cap._palavras} palavras (tentativa ${cap._tentativa})`);
     }
     capitulos.push(completo);
 
-    numerosUsados.push(plano.numeroChave, ...(plano.somaDe || []));
+    numerosUsados.push(...(plano.valoresPermitidos || []));
     /**
      * ⚠️ O QUE VAI PARA O "JÁ FOI DITO" — três frases por capítulo, e cada uma foi
      * escolhida por ter REPETIDO na 2ª corrida real:
@@ -811,7 +896,7 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
      */
     jaDito.push(
       frasesDe(completo.pergunta)[0],
-      frasesDe(completo.demonstracao)[0],
+      frasesDe(completo.demonstracao || '')[0],
       frasesDe(completo.desenvolvimento).slice(-1)[0],
     );
     anterior = falaDoCapitulo(completo);
@@ -877,10 +962,10 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
     console.log('\n💎 ANDAR 3 — O POLIDOR, CAPÍTULO A CAPÍTULO\n');
     for (let i = 0; i < roteiro.capitulos.length; i++) {
       const plano = mapa.capitulos[i];
-      const conferir = (cand) => validarCapitulo(cand, i, { plano, exemploParaComparar: EXEMPLO_PARA_COMPARAR });
+      const conferir = (cand) => validarCapitulo(cand, i, { plano: planoDoCapitulo(mapa, i), exemploParaComparar: EXEMPLO_PARA_COMPARAR });
       const limpar = (cand) => ({
         ...cand,
-        ...Object.fromEntries(PARTES_DO_CAPITULO.map((p) => [p, limparFala(cand[p], temaTexto)])),
+        ...Object.fromEntries(PARTES_POSSIVEIS.filter((p) => typeof cand[p] === 'string').map((p) => [p, limparFala(cand[p], temaTexto)])),
       });
       const lido = await polirCapitulo(
         roteiro.capitulos[i],
@@ -969,12 +1054,12 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
     console.log(`\n🩹 volta ${volta}: o capítulo ${alvo + 1} repete o que já foi dito — a reescrever SÓ ele`);
     frases.forEach((f) => console.log(`      · "${f}"`));
 
-    const plano = mapa.capitulos[alvo];
+    const plano = planoDoCapitulo(mapa, alvo);
     const anteriores = roteiro.capitulos.filter((_, i) => i !== alvo);
     const ancora = blocoDaAncora({
       paragrafoAnterior: alvo > 0 ? ultimasFrases(falaDoCapitulo(roteiro.capitulos[alvo - 1])) : ultimasFrases(roteiro.abertura),
       deQuem: alvo > 0 ? `o capítulo ${alvo}` : 'a abertura',
-      numerosUsados: mapa.capitulos.filter((_, i) => i !== alvo).flatMap((c) => [c.numeroChave, ...(c.somaDe || [])]),
+      numerosUsados: [],
       jaDito: [
         ...frases.map((f) => `${f} (ESTA foi dita noutro capítulo — não a repita)`),
         ...anteriores.flatMap((c) => [frasesDe(c.demonstracao)[0], frasesDe(c.pergunta)[0]]).filter(Boolean),
@@ -987,7 +1072,7 @@ export async function gerarLongo(t, { proibidas = [], polir = true, slug = 'long
         nome: `capítulo ${alvo + 1} (reescrita)`,
         prompt: buildPromptCapitulo(t, mapa, alvo, ancora),
         tema: temaTexto,
-        campos: PARTES_DO_CAPITULO,
+        campos: PARTES_POSSIVEIS,
         tentativas: 3,
         validar: (o) => validarCapitulo(o, alvo, { plano, exemploParaComparar: EXEMPLO_PARA_COMPARAR }),
       });
@@ -1047,7 +1132,7 @@ export function conferirBlocos(roteiro, mapa) {
   const juntar = (v) => erros.push(...v.erros);
   juntar(validarAbertura(roteiro.abertura, { promessa: mapa.promessa, exemploParaComparar: EXEMPLO_PARA_COMPARAR }));
   (roteiro.capitulos || []).forEach((c, i) => {
-    juntar(validarCapitulo(c, i, { plano: mapa.capitulos[i] || {}, exemploParaComparar: EXEMPLO_PARA_COMPARAR }));
+    juntar(validarCapitulo(c, i, { plano: planoDoCapitulo(mapa, i), exemploParaComparar: EXEMPLO_PARA_COMPARAR }));
   });
   juntar(validarChamada(roteiro.chamada));
   juntar(validarFecho(roteiro.fecho, {
