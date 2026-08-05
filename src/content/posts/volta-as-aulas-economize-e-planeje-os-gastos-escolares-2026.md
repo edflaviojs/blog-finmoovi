@@ -18,7 +18,7 @@ seo:
   keywords: ["volta às aulas","material escolar barato","back to school budget"]
 ---
 
-A manhã começa com o som da caixa registradora do supermercado, enquanto o filho de oito anos já está apontando para cada caderno, lápis e lanche que vê. A mãe, já com a lista em mãos, sente o coração acelerar ao perceber que o carrinho está se transformando em um pequeno depósito de papelão, e o orçamento familiar parece desaparecer mais rápido que o último pedaço de pão. Essa cena se repete em muitas casas: a pressão de garantir tudo que a escola pede, sem estourar o limite que a conta bancária aceita.
+A manhã começa com o som da caixa registradora do supermercado, enquanto o filho de oito anos já está apontando para cada caderno, lápis e lanche que vê. A mãe, já com a lista em mãos, sente o coração acelerar ao perceber que o carrinho está se transformando em um pequeno depósito de papelão, e o [orçamento familiar](/posts/como-presentear-no-dia-dos-pais-gastando-pouco-7-ideias-que-) parece desaparecer mais rápido que o último pedaço de pão. Essa cena se repete em muitas casas: a pressão de garantir tudo que a escola pede, sem estourar o limite que a conta bancária aceita.
 
 A solução começa com um passo simples dentro do FinMoovi: tire uma foto da nota fiscal da compra de material escolar, deixe o app categorizar automaticamente cada item e veja, em poucos segundos, quanto já foi gasto em “Material de Estudos”. Em cinco minutos você tem um panorama claro e pode decidir, na hora, o que manter e o que adiar.
 
@@ -32,7 +32,7 @@ Antes de correr para a loja, faça um levantamento dos materiais realmente neces
 
 ## Defina metas mensais de gasto
 
-Com a lista pronta, estabeleça um limite de gasto para cada mês até a data de início das aulas. O recurso de planejamento mensal do FinMoovi permite criar metas específicas, como “não ultrapassar o equivalente a duas vezes o preço de um lanche diário” para material escolar. Quando a meta for atingida, o app envia um alerta discreto, ajudando a manter o controle sem precisar abrir planilhas complicadas.
+Com a lista pronta, estabeleça um limite de gasto para cada mês até a data de início das aulas. O recurso de [planejamento](/posts/orcamento-com-salario-minimo-dicas-praticas) mensal do FinMoovi permite criar metas específicas, como “não ultrapassar o equivalente a duas vezes o preço de um lanche diário” para material escolar. Quando a meta for atingida, o app envia um alerta discreto, ajudando a manter o controle sem precisar abrir planilhas complicadas.
 
 ![Defina metas mensais de gasto](/images/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026-2.webp)
 
@@ -42,9 +42,9 @@ Esse método de metas mensais também facilita a divisão de despesas maiores, c
 
 ## Aproveite compras inteligentes
 
-Aproveitar promoções e comprar em quantidade são estratégias clássicas, mas requerem disciplina para não cair no excesso. Use o recurso de captura inteligente de notas fiscais do FinMoovi: ao registrar a compra, o app categoriza automaticamente e indica quais itens já foram comprados anteriormente. Assim, você evita comprar o mesmo caderno duas vezes e percebe rapidamente quando está gastando mais que o planejado.
+Aproveitar promoções e comprar em quantidade são estratégias clássicas, mas requerem disciplina para não cair no excesso. Use o recurso de [captura inteligente](/posts/como-garantir-financiamento-para-seus-projetos-sem-dor-de-ca) de notas fiscais do FinMoovi: ao registrar a compra, o app categoriza automaticamente e indica quais itens já foram comprados anteriormente. Assim, você evita comprar o mesmo caderno duas vezes e percebe rapidamente quando está gastando mais que o planejado.
 
-Além disso, explore opções multimoeda quando viajar ou comprar de sites internacionais. O FinMoovi converte automaticamente os valores, permitindo comparar o custo de um mesmo material em diferentes moedas, sem precisar de calculadora.
+Além disso, explore opções [multimoeda](/posts/voce-perde-o-controle-dos-gastos-quando-viaja-usando-moedas-) quando viajar ou comprar de sites internacionais. O FinMoovi converte automaticamente os valores, permitindo comparar o custo de um mesmo material em diferentes moedas, sem precisar de calculadora.
 
 ## Controle de despesas ao longo do semestre
 
@@ -80,4 +80,4 @@ Sim, o app permite registrar notas fiscais e consultar metas mesmo sem conexão 
 O recurso multimoeda converte automaticamente os valores, facilitando comparações entre compras feitas em diferentes países ou sites internacionais.
 
 ### Como evitar compras por impulso durante a temporada de volta às aulas?
-Ative alertas de saldo no FinMoovi e revise a lista de metas antes de entrar em lojas ou sites; assim, você tem um “freio” digital que impede gastos desnecessários.
+Ative [alertas de saldo](/posts/como-organizar-seu-dinheiro-com-um-app-facil-de-usar) no FinMoovi e revise a lista de metas antes de entrar em lojas ou sites; assim, você tem um “freio” digital que impede gastos desnecessários.

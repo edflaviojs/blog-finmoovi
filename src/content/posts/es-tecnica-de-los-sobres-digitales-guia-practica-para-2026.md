@@ -60,7 +60,7 @@ Este proceso lleva menos de 5 minutos y deja tu [presupuesto](/es/posts/es-como-
 
 1. **Registra cada gasto** – Ya sea en el móvil, en el ordenador o incluso hablando con un asistente de voz.  
 2. **Revisa el saldo** – Cuando un sobre se acerque a cero, la app enviará una notificación.  
-3. **Reasigna si es necesario** – Si gastaste menos en ocio, transfiere el excedente a la reserva o para pagar deudas.  
+3. **Reasigna si es necesario** – Si gastaste menos en ocio, transfiere el excedente a la reserva o para [pagar deudas](/es/posts/es-invertir-vs-pagar-deudas-que-conviene-mas-en-2026).  
 
 ![Monitorar y ajustar gastos](/images/posts/tecnica-dos-envelopes-digitais-guia-pratico-para-2024-4.webp)  
 

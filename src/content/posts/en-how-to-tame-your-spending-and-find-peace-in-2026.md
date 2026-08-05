@@ -41,7 +41,7 @@ When you log each expense in FinMoovi, the app automatically sorts them into the
 
 ## Automate Control with Alerts
 
-A common budget‑breaker is forgetting upcoming [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide)—like a mobile‑plan renewal or an annual credit‑card fee. FinMoovi lets you set **balance alerts** and **payment reminders**. Just tell the app to notify you when spending in a category reaches 80 % of the limit you set, and you’ll have time to act before the money runs out.
+A common budget‑breaker is forgetting upcoming [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide)—like a mobile‑plan renewal or an annual credit‑card fee. FinMoovi lets you set **[balance alerts](/en/posts/en-how-to-organize-your-money-with-an-easy-to-use-app)** and **payment reminders**. Just tell the app to notify you when spending in a category reaches 80 % of the limit you set, and you’ll have time to act before the money runs out.
 
 ## Turn Your Shopping List into an Ally
 

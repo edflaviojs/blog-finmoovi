@@ -18,7 +18,7 @@ seo:
   keywords: ["back to school","cheap school supplies","back to school budget"]
 ---
 
-The morning starts with the beep of the supermarket checkout, and your eight‑year‑old is already pointing at every notebook, pencil and snack on the shelf. You’ve got the shopping list in hand, but your heart races as the cart fills up like a cardboard vault and the family budget seems to disappear faster than the last slice of bread. This scene plays out in many households: the pressure to get everything the school asks for without blowing the bank account.
+The morning starts with the beep of the supermarket checkout, and your eight‑year‑old is already pointing at every notebook, pencil and snack on the shelf. You’ve got the shopping list in hand, but your heart races as the cart fills up like a cardboard vault and the [family budget](/en/posts/en-how-to-gift-on-father-s-day-without-spending-much-7-budget-f) seems to disappear faster than the last slice of bread. This scene plays out in many households: the pressure to get everything the school asks for without blowing the bank account.
 
 **The fix begins with one simple step in FinMoovi:** snap a photo of the receipt for the school‑supply haul, let the app automatically categorize each item, and in a few seconds see how much you’ve already spent on “Study Materials.” In five minutes you have a clear picture and can decide on the spot what to keep and what to postpone.
 
@@ -32,7 +32,7 @@ Before you sprint to the store, list the items that are truly needed. Schools of
 
 ## Set Monthly Spending Targets
 
-With the list ready, set a spending cap for each month leading up to the first day of class. FinMoovi’s monthly‑planning feature lets you create specific goals, such as “don’t exceed the equivalent of two daily coffees” for school supplies. When you hit the limit, the app sends a subtle alert, keeping you in control without the need for complex spreadsheets.
+With the list ready, set a spending cap for each month leading up to the first day of class. FinMoovi’s monthly‑[planning](/en/posts/en-budgeting-with-minimum-wage-practical-tips) feature lets you create specific goals, such as “don’t exceed the equivalent of two daily coffees” for school supplies. When you hit the limit, the app sends a subtle alert, keeping you in control without the need for complex spreadsheets.
 
 ![Defina metas mensais de gasto](/images/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026-2.webp)
 
@@ -40,13 +40,13 @@ This monthly‑goal approach also makes it easier to spread larger expenses—li
 
 ## Take Advantage of Smart Shopping
 
-Hunting for sales and buying in bulk are classic strategies, but they require discipline to avoid over‑buying. Use FinMoovi’s smart receipt capture: once you log a purchase, the app automatically categorizes it and flags items you’ve already bought. This helps you avoid buying the same notebook twice and quickly spot when you’re spending more than planned.
+Hunting for sales and buying in bulk are classic strategies, but they require discipline to avoid over‑buying. Use FinMoovi’s smart [receipt capture](/en/posts/en-how-to-organize-your-money-with-an-easy-to-use-app): once you log a purchase, the app automatically categorizes it and flags items you’ve already bought. This helps you avoid buying the same notebook twice and quickly spot when you’re spending more than planned.
 
-If you’re shopping abroad or on international websites, the app’s multi‑currency feature converts prices on the fly, so you can compare the cost of the same item in different currencies without reaching for a calculator.
+If you’re shopping abroad or on international websites, the app’s [multi‑currency](/en/posts/en-do-you-lose-track-of-your-spending-when-traveling-using-diff) feature converts prices on the fly, so you can compare the cost of the same item in different currencies without reaching for a calculator.
 
 ## Keep an Eye on Expenses All Semester
 
-Once classes start, spending doesn’t stop. There are recurring costs for art supplies, pencil replacements, and even extracurricular activities. FinMoovi’s cash‑flow view gives you a visual snapshot of each spending category, making quick adjustments a breeze. If you notice the “Art Supplies” category is eating up more than the equivalent of a dinner out each month, simply cut back on purchases or look for cheaper alternatives.
+Once classes start, spending doesn’t stop. There are recurring [costs](/en/posts/en-private-pension-2026-is-it-worth-it-practical-guide) for art supplies, pencil replacements, and even extracurricular activities. FinMoovi’s cash‑flow view gives you a visual snapshot of each spending category, making quick adjustments a breeze. If you notice the “Art Supplies” category is eating up more than the equivalent of a dinner out each month, simply cut back on purchases or look for cheaper [alternatives](/en/posts/en-5-alternatives-to-organizze-in-2026-options-to-manage-your-f).
 
 ![Controle de despesas ao longo do semestre](/images/posts/volta-as-aulas-economize-e-planeje-os-gastos-escolares-2026-4.webp)
 
