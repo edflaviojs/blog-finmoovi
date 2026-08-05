@@ -277,6 +277,20 @@ console.log('\n2. A HORA DE ESTREIA');
     estreiaOcupada(new Date('2026-08-09T22:00:00.000Z'), cadernoDeMesa, null)?.slug === 'ja-marcado',
   );
   /**
+   * 🔴 O QUE PROVA QUE UM VÍDEO JÁ FOI AO AR É TER IDENTIFICADOR DO YOUTUBE.
+   *
+   * A trava anti-repetição parava assim que encontrasse **uma linha** com aquele nome — e
+   * o caderno também guarda RESERVAS. Apanhado no minuto antes de mandar subir o primeiro
+   * vídeo a sério: o robô recusava-se a subir **e dizia que já estava publicado**. Uma
+   * mentira e uma paragem, pelo preço de uma.
+   */
+  const fluxoDoFicheiro = readFileSync(join(RAIZ, 'src', 'scripts', 'youtube', 'upload-longo.js'), 'utf-8');
+  ok(
+    'a trava anti-repetição olha para o VÍDEO no YouTube, não para a linha do caderno',
+    /caderno\[SLUG\]\?\.videoId/.test(fluxoDoFicheiro),
+    'ela voltou a parar só por haver uma linha — e uma reserva não é uma publicação',
+  );
+  /**
    * A prova contra o caderno REAL: hoje o piloto ocupa 09/08. Se alguém o apagar de lá, o
    * robô publica por cima do vídeo que o dono subiu à mão — e isto fica vermelho antes.
    */

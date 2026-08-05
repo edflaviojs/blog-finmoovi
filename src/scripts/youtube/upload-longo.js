@@ -539,11 +539,26 @@ async function principal() {
   }
 
   const caderno = lerCaderno();
-  if (!ENSAIO && caderno[SLUG]) {
+  /**
+   * 🔴 A TRAVA ANTI-REPETIÇÃO OLHA PARA O VÍDEO, NÃO PARA A LINHA.
+   *
+   * A 1ª versão parava assim que encontrasse **uma linha** no caderno com este nome — e o
+   * caderno também guarda **RESERVAS**: dias apontados para um vídeo que ainda não subiu.
+   * Resultado, apanhado no minuto antes de mandar subir o primeiro vídeo a sério: o robô
+   * recusava-se a subir **e dizia que já estava publicado**. Uma mentira e uma paragem,
+   * pelo preço de uma.
+   *
+   * O que prova que um vídeo já foi ao ar é ele ter **identificador do YouTube**. Sem
+   * isso, é intenção — e intenção não impede ninguém de trabalhar.
+   */
+  if (!ENSAIO && caderno[SLUG]?.videoId) {
     const j = caderno[SLUG];
-    log(`✅ "${SLUG}" já foi publicado em ${j.uploadedAt}${j.videoId ? ` → https://youtu.be/${j.videoId}` : ''}`);
-    log(`   ${j.nota || 'Nada a fazer (sem subida repetida).'}`);
+    log(`✅ "${SLUG}" já foi publicado em ${j.uploadedAt} → https://youtu.be/${j.videoId}`);
+    log('   Nada a fazer (sem subida repetida).');
     return;
+  }
+  if (!ENSAIO && caderno[SLUG]) {
+    log(`ℹ️  "${SLUG}" tinha uma reserva no caderno (${caderno[SLUG].estado || 'reservado'}) — vai subir agora e a reserva é preenchida.`);
   }
 
   // ── a descrição, com os capítulos cronometrados sobre a voz REAL ──
