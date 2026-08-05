@@ -17,6 +17,7 @@ const TelaBordaoAtorPreview = () => (
   </AbsoluteFill>
 );
 import { Short, ShortScript, ShortTiming, totalFrames, totalFramesFrom, sceneDurationsSec, introFramesFor, SIGNATURE_FRAMES } from './Short';
+import { Long, LongScript, LongTiming, longTotalFrames, GUIAO_DE_RESERVA } from './Long';
 import { AppBrollLong, AppBrollShort } from './AppBroll';
 import { AppScrollLong, AppScrollShort } from './AppScroll';
 import { Cards3DLong, Cards3DShort } from './Cards3D';
@@ -53,6 +54,7 @@ const fixtureScript = roteiroFixture as ShortScript;
 const fixtureIntroFrames = introFramesFor(fixtureScript);
 
 type ShortProps = { slug?: string; script?: ShortScript; timing?: ShortTiming };
+type LongProps = { slug?: string; script?: LongScript; timing?: LongTiming };
 
 // Resolve o roteiro: com slug (pipeline) lê o JSON de public/roteiro/<slug>.json;
 // sem slug (Studio/dev) usa o fixture importado.
@@ -76,6 +78,33 @@ const shortMetadata = async ({ props }: { props: ShortProps }) => {
     return { durationInFrames, props: { script, timing } };
   } catch {
     return { durationInFrames: totalFrames(script, FPS) + introFrames + SIGNATURE_FRAMES, props: { script, timing: null as ShortTiming } };
+  }
+};
+
+/**
+ * ♦ O VÍDEO LONGO (04/08/2026) — a primeira composição 16:9 deste canal.
+ * Lê o plano que o `montar-longo.js` escreve em `public/roteiro/<slug>.json` e, se
+ * existir, o `timing.json` que o `tts-short.js` já produz. Sem nenhum dos dois, cai
+ * no guião de reserva e o Studio abre à mesma.
+ * ⚠️ Nada aqui toca a composição `Short`: é uma entrada nova, ao lado.
+ */
+const longMetadata = async ({ props }: { props: LongProps }) => {
+  const slug = props.slug || 'sair-do-vermelho';
+  let script: LongScript;
+  try {
+    const res = await fetch(staticFile(`roteiro/${slug}.json`));
+    if (!res.ok) throw new Error('sem plano');
+    script = (await res.json()) as LongScript;
+  } catch {
+    return { durationInFrames: longTotalFrames(GUIAO_DE_RESERVA, null, FPS), props: { script: GUIAO_DE_RESERVA, timing: null as LongTiming } };
+  }
+  try {
+    const res = await fetch(staticFile(`audio/${slug}/timing.json`));
+    if (!res.ok) throw new Error('sem timing');
+    const timing = (await res.json()) as LongTiming;
+    return { durationInFrames: longTotalFrames(script, timing, FPS), props: { script, timing } };
+  } catch {
+    return { durationInFrames: longTotalFrames(script, null, FPS), props: { script, timing: null as LongTiming } };
   }
 };
 
@@ -129,6 +158,17 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         defaultProps={{ script: fixtureScript, timing: null as ShortTiming }}
         calculateMetadata={shortMetadata}
+      />
+      {/* ♦ O VÍDEO LONGO — 1920×1080. A duração real sai do `timing.json` da voz. */}
+      <Composition
+        id="Long"
+        component={Long}
+        durationInFrames={longTotalFrames(GUIAO_DE_RESERVA, null, FPS)}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ slug: 'sair-do-vermelho' }}
+        calculateMetadata={longMetadata}
       />
       <Composition
         id="AppBrollLong"

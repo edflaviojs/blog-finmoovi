@@ -22,7 +22,9 @@
  */
 
 import { synthesizeSpeech, transcribeWords, pickProvider, getTtsProviders, warmUpTts } from './lib/tts-client.js';
-import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync } from 'fs';
+import { planoDeLeitura } from './lib/prosodia.js';
+import { tratarVoz } from './lib/tratamento-de-voz.js';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync, readdirSync, mkdtempSync, rmSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { tmpdir } from 'os';
@@ -269,6 +271,54 @@ function readScript(slug) {
  *   3. null → quem chama decide (hoje: cai na duração do roteiro, como antes).
  * Nunca lança: medição é best-effort, não pode derrubar o vídeo do dia.
  */
+/**
+ * O MEDIDOR DE VOZ LOCAL — `faster-whisper`, sem chave e sem rede (04/08/2026).
+ *
+ * Devolve `[{word,start,end}]` ou `null` se não estiver instalado. **Nunca lança**: é
+ * um reforço, não uma dependência, e o robô diário não pode cair por causa dele.
+ *
+ * ⚠️ O PYTHON DO `PATH` NESTA MÁQUINA NÃO SERVE — é o atalho da Microsoft Store, que
+ * abre a loja em vez de correr. Por isso procura-se primeiro a instalação real do
+ * `winget` e só depois se confia no PATH (numa máquina Linux, o segundo é o que vale).
+ */
+export async function transcreverLocalmente(audio, ext) {
+  const acharPython = () => {
+    const local = process.env.LOCALAPPDATA;
+    if (local) {
+      const base = join(local, 'Programs', 'Python');
+      if (existsSync(base)) {
+        for (const v of readdirSync(base).filter((d) => /^Python3\d+$/.test(d)).sort().reverse()) {
+          const exe = join(base, v, 'python.exe');
+          if (existsSync(exe)) return exe;
+        }
+      }
+    }
+    return process.env.PYTHON || 'python3';
+  };
+
+  let ficheiro;
+  try {
+    const pasta = mkdtempSync(join(tmpdir(), 'fm-voz-'));
+    ficheiro = join(pasta, `cena.${ext || 'mp3'}`);
+    writeFileSync(ficheiro, audio);
+    const script = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..', 'scripts', 'transcrever-local.py');
+    if (!existsSync(script)) return null;
+    const saida = execFileSync(acharPython(), [script, ficheiro], {
+      encoding: 'utf-8',
+      maxBuffer: 32 * 1024 * 1024,
+      stdio: ['ignore', 'pipe', 'ignore'],
+      timeout: 180000,
+    });
+    const porFicheiro = JSON.parse(saida);
+    const palavras = Object.values(porFicheiro)[0] || [];
+    return palavras.length ? palavras : null;
+  } catch {
+    return null; // não instalado, ou falhou — segue-se a rede de sempre
+  } finally {
+    try { if (ficheiro) unlinkSync(ficheiro); } catch { /* a pasta temporária fica */ }
+  }
+}
+
 export function medirDuracaoAudio(audio, ext) {
   // 1) WAV: procura os chunks `fmt ` (taxa/canais/bits) e `data` (tamanho).
   try {
@@ -319,13 +369,160 @@ export function medirDuracaoAudio(audio, ext) {
 // Extraído do loop principal p/ ser reaproveitado na re-síntese de "voz única"
 // (Fix 2): mesma lógica de tentativas/validação/backoff, só muda QUAL provedor
 // pedir em cada tentativa (via `providerForAttempt(attempt)`).
+/**
+ * ═══ A INTENÇÃO DA VOZ (04/08/2026) ═══
+ *
+ * O dono: *"temos que passar um sentimento pro locutor… ele tem que entender as
+ * respirações, as vírgulas, pontos. Para não deixar nada mecanizado."*
+ * O texto seguia daqui para o motor como texto simples — e texto simples lê-se com a
+ * mesma cara do princípio ao fim. O `lib/prosodia.js` traduz a pontuação e o papel de
+ * cada frase em marcas de intenção. Ver lá as três decisões de desenho.
+ *
+ * ⚠️ DUAS TRAVAS, E AS DUAS SÃO OBRIGATÓRIAS:
+ *
+ * 1. **SÓ NO `edge`.** O `piper` é offline e lê texto puro: mandar-lhe SSML fá-lo dizer
+ *    *"break time 320 milissegundos"* em voz alta, no vídeo, à frente de toda a gente.
+ *    O `azure` aceitaria, mas nunca foi provado aqui — e uma trava não se abre por
+ *    suposição.
+ * 2. **SÓ ONDE FOI PEDIDO.** Por omissão está DESLIGADA, portanto o Short diário
+ *    continua exatamente como estava. Quem a liga é o vídeo longo, pelo `formato` que
+ *    o montador escreve no ficheiro do guião.
+ */
+let INTENCAO_LIGADA = false;
+
+export function ligarIntencaoDaVoz(ligar) {
+  INTENCAO_LIGADA = Boolean(ligar);
+}
+
+/** O tratamento de som da voz. Por omissão DESLIGADO — quem o liga é o formato longo. */
+let TRATAR_A_VOZ = false;
+
+/**
+ * 🔴 APARA O SILÊNCIO DAS PONTAS DE CADA PEDAÇO — sem isto, a intenção sai ao contrário.
+ *
+ * Medido no motor real: **cada** frase sintetizada volta com **0,19s de silêncio à
+ * frente e 0,85s atrás**. Colando pedaço + pausa + pedaço, a pausa que se ouve é
+ * 0,85 + a minha + 0,19 ≈ **1,3 segundos** — medi 1,395s onde tinha pedido 0,34s.
+ * Um segundo e meio entre duas frases não é uma respiração, é uma hesitação: o locutor
+ * ficava a soar inseguro, que é pior do que soar mecânico.
+ *
+ * Aparadas as pontas, a pausa que se ouve passa a ser exatamente a que está no plano.
+ * ⚠️ Ficam 40ms de guarda em cada ponta: a -45 dB, o começo de um "p" ou de um "t" é
+ * quase silêncio, e cortar rente comia o princípio da palavra.
+ */
+function apararSilencio(origem, destino) {
+  const trim = 'silenceremove=start_periods=1:start_duration=0.04:start_threshold=-45dB:detection=peak';
+  execFileSync('ffmpeg', [
+    '-v', 'error', '-y', '-i', origem,
+    '-af', `${trim},areverse,${trim},areverse`,
+    '-c:a', 'libmp3lame', '-b:a', '48k', '-ar', '24000', '-ac', '1',
+    destino,
+  ], { stdio: ['ignore', 'ignore', 'ignore'] });
+}
+
+/** O silêncio entre os pedaços, em mp3 do MESMO formato que o edge devolve. */
+function silencioMp3(ms, destino) {
+  execFileSync('ffmpeg', [
+    '-v', 'error', '-y',
+    '-f', 'lavfi', '-i', 'anullsrc=r=24000:cl=mono',
+    '-t', String(Math.max(0.02, ms / 1000)),
+    '-c:a', 'libmp3lame', '-b:a', '48k', '-ar', '24000', '-ac', '1',
+    destino,
+  ], { stdio: ['ignore', 'ignore', 'ignore'] });
+}
+
+/**
+ * ═══ A VOZ COM INTENÇÃO — frase a frase, com silêncio real pelo meio ═══
+ *
+ * Devolve o áudio da cena inteira, ou `null` se alguma coisa correr mal — e nesse caso
+ * quem chama volta ao caminho de sempre. **Nunca lança.**
+ *
+ * ⚠️ POR QUE FRASE A FRASE, E NÃO MARCAS NO TEXTO: está medido no `lib/prosodia.js` que
+ * o ponto de leitura gratuito do Edge **recusa qualquer SSML por dentro** — quatro
+ * variantes testadas, quatro ligações fechadas, e o mesmo texto puro a passar. O que ele
+ * aceita é o ritmo do pedido inteiro. Logo: um pedido por frase.
+ *
+ * ⚠️ E ISTO CUSTA PEDIDOS. Uma cena de três frases são três ligações em vez de uma; no
+ * guião inteiro, 77 em vez de 30. Por isso há um espaçamento entre elas (o motor do Edge
+ * castiga rajadas — é a razão do `SCENE_GAP_MS` que já existia) e por isso isto só corre
+ * no vídeo longo, que é semanal. O Short diário continua a fazer um pedido por cena.
+ */
+const GAP_ENTRE_FRASES_MS = 450;
+
+async function sintetizarComIntencao(narracao, provedor) {
+  const plano = planoDeLeitura(narracao);
+  if (plano.length < 2) return null; // uma frase só: não há nada a ganhar
+
+  let pasta;
+  try {
+    pasta = mkdtempSync(join(tmpdir(), 'fm-intencao-'));
+    const lista = [];
+    let voz = null;
+
+    for (const [i, pedaco] of plano.entries()) {
+      const r = await synthesizeSpeech(pedaco.texto, {
+        providerName: provedor,
+        prosody: { rate: pedaco.rate, pitch: pedaco.pitch },
+      });
+      voz = voz || r.voice;
+      const bruto = join(pasta, `b${String(i).padStart(2, '0')}.mp3`);
+      const f = join(pasta, `p${String(i).padStart(2, '0')}.mp3`);
+      writeFileSync(bruto, r.audio);
+      apararSilencio(bruto, f);
+      lista.push(f);
+      if (pedaco.pausaMs > 0) {
+        const s = join(pasta, `s${String(i).padStart(2, '0')}.mp3`);
+        silencioMp3(pedaco.pausaMs, s);
+        lista.push(s);
+      }
+      if (i < plano.length - 1) await sleep(GAP_ENTRE_FRASES_MS);
+    }
+
+    const alinhavo = join(pasta, 'lista.txt');
+    writeFileSync(alinhavo, lista.map((f) => `file '${f.replace(/\\/g, '/')}'`).join('\n'), 'utf-8');
+    const saida = join(pasta, 'cena.mp3');
+    // ⚠️ RECODIFICA-SE em vez de `-c copy`: colar mp3 sem recodificar só funciona se
+    // todos os pedaços tiverem exatamente os mesmos parâmetros, e um dia em que o motor
+    // devolva outro bitrate isto sairia com estalos. Treze segundos de fala recodificam
+    // num instante, e o formato fica garantido igual ao de sempre.
+    execFileSync('ffmpeg', [
+      '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', alinhavo,
+      '-c:a', 'libmp3lame', '-b:a', '48k', '-ar', '24000', '-ac', '1', saida,
+    ], { stdio: ['ignore', 'ignore', 'ignore'] });
+
+    const audio = readFileSync(saida);
+    return audio.length > 3000 ? { audio, ext: 'mp3', voice: voz, pedacos: plano.length } : null;
+  } catch (err) {
+    console.log(`  ⚠ voz com intenção falhou (${err.message.split('\n')[0]}) — segue o caminho de sempre`);
+    return null;
+  } finally {
+    try { if (pasta) rmSync(pasta, { recursive: true, force: true }); } catch { /* fica a pasta temporária */ }
+  }
+}
+
 async function synthesizeValidatedScene({ id, narration, wordCount, minDurationSec, fallbackDurationSec, providerForAttempt, logSuffix = '' }) {
   let audio, ext, voice, providerUsed, whisper, speechEnd, succeededAttempt;
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     const providerForThisAttempt = providerForAttempt(attempt);
 
     try {
-      ({ audio, ext, voice, provider: providerUsed } = await synthesizeSpeech(pronounce(narration, providerForThisAttempt), { providerName: providerForThisAttempt }));
+      const falado = pronounce(narration, providerForThisAttempt);
+      /**
+       * ⚠️ A INTENÇÃO SÓ ENTRA NO `edge`, e só onde foi pedida. O `piper` é offline e
+       * não tem prosódia nenhuma; o `azure` aceitaria, mas nunca foi provado aqui — e
+       * uma trava não se abre por suposição. Se a montagem falhar por qualquer razão,
+       * `sintetizarComIntencao` devolve nulo e cai-se no caminho de sempre: um vídeo
+       * com voz plana é muito melhor do que um vídeo que não sai.
+       */
+      const comArte = (INTENCAO_LIGADA && providerForThisAttempt === 'edge')
+        ? await sintetizarComIntencao(falado, providerForThisAttempt)
+        : null;
+      if (comArte) {
+        ({ audio, ext, voice } = comArte);
+        providerUsed = providerForThisAttempt;
+      } else {
+        ({ audio, ext, voice, provider: providerUsed } = await synthesizeSpeech(falado, { providerName: providerForThisAttempt }));
+      }
     } catch (err) {
       console.log(`  ⚠ cena ${id}${logSuffix}: ${providerForThisAttempt} falhou (${err.message}) — tentativa ${attempt}/${MAX_ATTEMPTS}`);
       if (attempt === MAX_ATTEMPTS) {
@@ -344,6 +541,31 @@ async function synthesizeValidatedScene({ id, narration, wordCount, minDurationS
     } catch (err) {
       whisperFalhou = err;
       whisper = [];
+    }
+    /**
+     * ♦ O MEDIDOR LOCAL, DE GRAÇA (04/08/2026) — autorizado pelo dono depois de ver o
+     * vídeo longo: *"pode mexer no medidor de voz, confio em você"*.
+     *
+     * ⚠️ ELE É O SEGUNDO DA FILA, NÃO O PRIMEIRO, e isso é deliberado. Na nuvem — onde
+     * o robô publica todos os dias — a chave do Together existe e o Whisper responde em
+     * segundos; correr um modelo local ANTES dele acrescentaria minutos a cada vídeo
+     * para chegar ao mesmo sítio. Aqui ele só entra quando o de cima falhou, que é
+     * exatamente o caso desta máquina (sem chave) e o caso de a nuvem ficar sem serviço.
+     *
+     * O ganho medido: sem ele, as palavras eram repartidas por PESO DE LETRAS, e no
+     * vídeo longo de 04/08 isso pôs cada palavra 0,47s fora do sítio em média (a pior,
+     * 1,88s). O dono viu o defeito no ecrã antes de eu o medir.
+     *
+     * Nunca lança: se o Python ou o `faster-whisper` não existirem, fica tudo como
+     * estava e a rede de baixo trata do resto. Um vídeo com sincronia aproximada é mau;
+     * um vídeo que não sai é pior.
+     */
+    if ((whisperFalhou || !whisper.length) && !process.env.SEM_MEDIDOR_LOCAL) {
+      const local = await transcreverLocalmente(audio, ext);
+      if (local && local.length) {
+        whisper = local;
+        whisperFalhou = null;
+      }
     }
     // REDE DE SEGURANÇA DA MEDIÇÃO (31/07/2026). O Whisper pode devolver palavras
     // SEM tempo válido — o último `end` vem 0/não-numérico. Medido no run
@@ -390,6 +612,43 @@ async function main() {
   const script = readScript(slug);
   const scenes = script.scenes || [];
   if (!scenes.length) throw new Error('roteiro sem cenas');
+
+  /**
+   * ═══ 🔴 A INTENÇÃO DA VOZ ESTÁ DESLIGADA, POR ORDEM DO DONO (04/08/2026) ═══
+   *
+   * Ela foi escrita nesse mesmo dia e ele ouviu o resultado: *"depois que você ajustou
+   * frase a frase a voz fica robotizada! Não sei se mexe na velocidade da voz, me parece
+   * que tem momento que ela acelera um pouquinho ou desacelera um pouco e **é aí que
+   * aparece mais robótico**. Qualquer coisa retiramos isso sem problema."*
+   *
+   * Ele apontou a causa certa. O plano de leitura muda a velocidade **ao ponto final**
+   * (-3% → -9% → -7%), e uma pessoa não faz isso: muda *dentro* da frase, devagar. Um
+   * salto de velocidade num limite de frase lê-se como um aparelho a mudar de definição.
+   * E há a causa maior, medida na §40.1: cortar por frase destrói o **arco da entoação**,
+   * porque o motor planeia a melodia sobre todo o texto que recebe — frase a frase,
+   * **todas acabam a cair**.
+   *
+   * ⚠️ **A MAQUINARIA FICA, o interruptor é que está em baixo.** O `lib/prosodia.js`, a
+   * apara das pontas e a montagem continuam aqui, testados e documentados, porque o dia
+   * em que o canal trocar de voz — ou passar a uma voz paga que aceite marcas por dentro
+   * — a pergunta volta. Apagar isto seria deitar fora a resposta junto com a experiência.
+   *
+   * 👉 Para voltar a ligá-la um dia: trocar `false` por `script.formato === 'longo'`.
+   *    E ouvir antes de entregar, que foi a lição desta.
+   */
+  const INTENCAO_APROVADA_PELO_DONO = false;
+  ligarIntencaoDaVoz(INTENCAO_APROVADA_PELO_DONO && script.formato === 'longo');
+
+  /**
+   * ═══ ✅ O TRATAMENTO DE SOM DA VOZ (04/08/2026) ═══
+   * O que a rádio faz antes de pôr alguém no ar. **Não toca no ritmo** — a prova é a
+   * duração: as três amostras que o dono ouviu duram 22,440 s as três, ao milésimo.
+   * Ele ouviu-as lado a lado e escolheu a "quente". Ver `lib/tratamento-de-voz.js`.
+   * ⚠️ Liga-se pelo FORMATO, tal como a intenção se ligava: o Short diário nunca o
+   * apanha por acidente. Levá-lo ao Short é decisão dele.
+   */
+  TRATAR_A_VOZ = script.formato === 'longo';
+  if (TRATAR_A_VOZ) console.log('   (voz com tratamento de som — o mesmo da amostra "quente")\n');
 
   const provider = pickProvider();
   if (!provider) throw new Error('nenhum provedor de TTS disponível');
@@ -459,7 +718,14 @@ async function main() {
     // áudio validado — persiste + segue p/ alinhamento
     voiceUsed = voice;
     const audioName = `scene-${id}.${ext}`;
-    writeFileSync(join(audioDir, audioName), audio);
+    /**
+     * ⚠️ O TRATAMENTO ENTRA AQUI, **DEPOIS** DE O WHISPER TER MEDIDO — e é de propósito.
+     * O medidor trabalha melhor sobre o som cru, e o tratamento **não muda um único
+     * milissegundo** (provado: as três amostras que foram ao Desktop do dono duram
+     * 22,440 s as três). Logo, os tempos das palavras continuam a valer.
+     * Ver `lib/tratamento-de-voz.js`. Só no vídeo longo — nunca no Short diário.
+     */
+    writeFileSync(join(audioDir, audioName), TRATAR_A_VOZ ? tratarVoz(audio) : audio);
 
     // 2) timestamps reais + 3) alinhamento com o roteiro
     const durationSec = +(speechEnd + TAIL_PAD).toFixed(3);
@@ -520,7 +786,9 @@ async function main() {
         if (existsSync(oldPath)) { try { unlinkSync(oldPath); } catch { /* melhor esforço */ } }
 
         const audioName = `scene-${outScene.id}.${ext}`;
-        writeFileSync(join(audioDir, audioName), audio);
+        // ⚠️ a re-síntese também leva o tratamento, senão esta cena soaria diferente
+        // de todas as outras — e seria a única, o que se ouve ainda mais.
+        writeFileSync(join(audioDir, audioName), TRATAR_A_VOZ ? tratarVoz(audio) : audio);
 
         outScene.audioFile = `audio/${slug}/${audioName}`;
         outScene.durationSec = +(speechEnd + TAIL_PAD).toFixed(3);

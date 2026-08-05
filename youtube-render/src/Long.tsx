@@ -1,0 +1,627 @@
+/**
+ * A COMPOSIÇÃO DO VÍDEO LONGO — 1920×1080, ~6 minutos (04/08/2026).
+ * IMPLEMENTACAO20 §14 F4. É a primeira montagem 16:9 deste canal.
+ *
+ * ═══ O QUE ELA REAPROVEITA, E É QUASE TUDO ═══
+ * · o b-roll 16:9 do catálogo (`CATALOG.md`) — dezenas de composições `*Long` já
+ *   prontas e validadas, com dados reais do app. Nenhuma foi tocada;
+ * · o fundo, a marca d'água, a assinatura final e a TELA DO BORDÃO (`scenes.tsx`),
+ *   que o dono escolheu em 03/08 e que é a mesma em todos os vídeos do canal;
+ * · as contas de karaokê de `captions.tsx` (quem fala quando), com a POSIÇÃO
+ *   refeita para 16:9 — o componente do Short tem `bottom: 300`, que num ecrã de
+ *   1080 de altura deixaria a legenda a meio da tela.
+ *
+ * ═══ O QUE É NOVO, E PORQUÊ ═══
+ * · **A PLACA DE CAPÍTULO.** É o que separa um vídeo longo de seis minutos de fala
+ *   corrida. Os dados reais (§33.5) mostram que os vídeos que prendem anunciam cada
+ *   capítulo — e o título que aqui aparece é o MESMO que vai para os capítulos da
+ *   descrição do YouTube.
+ * · **O TRILHO DE PROGRESSO**, que atravessa o vídeo inteiro com uma marca por
+ *   capítulo: em seis minutos, saber quanto falta é retenção.
+ * · **UMA IMAGEM NOVA A CADA ~15 SEGUNDOS.** O §26.4 avisou que o risco número um
+ *   deste formato é a monotonia. A cena mais longa deste vídeo dura o que a voz
+ *   demora a dizer 40 palavras, e nunca repete a composição anterior.
+ *
+ * ═══ O QUE ESTA COMPOSIÇÃO NÃO FAZ ═══
+ * Não mexe no `Short.tsx` nem em nada do robô diário. É um ficheiro novo, e a única
+ * coisa que precisa do exterior é uma entrada no `Root.tsx`.
+ */
+
+import React from 'react';
+import { AbsoluteFill, Audio, Loop, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
+import { Background, Watermark, SignatureOutro, TelaBordao, BORDAO_FRAMES, BORDAO_OVERLAP_FRAMES } from './scenes';
+import { BackgroundMusic } from './audio/music';
+import { activeIndex, wordTimingsFromReal, layoutWords } from './captions';
+import { CoreografiaDaCapa } from './capas';
+import { PALCO_W, PALCO_H } from './capa';
+import { BRAND, DISPLAY, BODY, gradientText } from './theme';
+// ── as telas que nascem do texto (04/08/2026) ────────────────────────────────
+import {
+  Etiqueta, CartaoDeNumero, CartaoDaConta, TelaDoApp, CartaoDeFrase, Metafora, PalavrasNaTela,
+  CartaoDeCapitulo, CARTAO_CAPITULO_FRAMES, Ilustracao, Foto, MaoQueClica, momentoDoClique,
+  atrasoDaUltimaLinha, IconesDaCena,
+} from './longo/telas';
+import type { LinhaDaConta } from './longo/telas';
+import { SonsDaCena, SomDoMomento, SOM } from './longo/sons';
+
+// ── o b-roll 16:9 já pronto (nenhuma destas composições foi tocada) ──────────
+import { CreditCards3DLong } from './CreditCards3D';
+import { CartoesCountUpLong } from './CartoesCountUp';
+import { FluxoCaixa3DLong } from './FluxoCaixa3D';
+import { FluxoBarrasLong } from './FluxoBarras';
+import { Extrato3DLong } from './Extrato3D';
+import { ExtratoListaLong } from './ExtratoLista';
+import { Balanco3DLong } from './Balanco3D';
+import { BalancoDonutLong } from './BalancoDonut';
+import { Compras3DLong } from './Compras3D';
+import { ComprasCarrinhoLong } from './ComprasCarrinho';
+import { SmartCapture3DLong } from './SmartCapture3D';
+import { SmartCaptureVozLong } from './SmartCaptureVoz';
+import { AppMosaicoLong, AppCarrosselLong, AppQuadLong, AppNumerosLong } from './AppOverview';
+
+const BROLL: Record<string, React.FC> = {
+  CreditCards3DLong, CartoesCountUpLong, FluxoCaixa3DLong, FluxoBarrasLong,
+  Extrato3DLong, ExtratoListaLong, Balanco3DLong, BalancoDonutLong,
+  Compras3DLong, ComprasCarrinhoLong, SmartCapture3DLong, SmartCaptureVozLong,
+  AppMosaicoLong, AppCarrosselLong, AppQuadLong, AppNumerosLong,
+};
+
+/**
+ * O QUE ESTA CENA MOSTRA — decidido pelo `lib/imagens-longo.js` a partir do TEXTO.
+ * ⚠️ Todos os números que aqui chegam já foram conferidos contra a lista fechada de
+ * valores do guião. Esta composição não inventa nem calcula nenhum.
+ */
+export type LongVisual = {
+  tipo: 'numero' | 'conta' | 'app' | 'frase' | 'metafora' | 'ilustracao' | 'foto' | 'palavras' | 'broll';
+  /** qual das 32 metáforas animadas do render do Short entra nesta cena */
+  figura?: string;
+  /** a fotografia (caminho dentro de `public/`) e o passeio que ela faz */
+  ficheiro?: string;
+  movimento?: string;
+  valor?: number;
+  rotulo?: string;
+  passo?: number;
+  linhas?: LinhaDaConta[];
+  texto?: string;
+  etiquetaTexto?: string;
+  variante?: string | number;
+  fio?: string | null;
+  estagio?: number;
+  comp?: string;
+  brollFrames?: number;
+  etiqueta?: { valor: number; rotulo?: string } | null;
+};
+
+export type LongScene = {
+  id: number;
+  bloco: string;
+  parte: string;
+  role: string;
+  narration: string;
+  palavras: number;
+  durationSec: number;
+  /** ⚠️ Guiões montados ANTES de 04/08 não têm `visual` — ver `CenaLonga`. */
+  visual?: LongVisual;
+  broll?: string;
+  brollFrames?: number;
+  capitulo?: number | null;
+  tituloCapitulo?: string;
+  abreCapitulo?: boolean;
+};
+
+export type LongScript = {
+  slug: string;
+  tema: string;
+  promessa: string;
+  fioCondutor?: string;
+  capa: string;
+  capitulos: { numero: number; titulo: string }[];
+  scenes: LongScene[];
+  music?: { ficheiro?: string };
+};
+
+export type LongTiming = {
+  slug: string;
+  scenes: { id: number; audioFile: string; durationSec: number; words: { word: string; start: number; end: number }[] }[];
+} | null;
+
+/**
+ * A CAPA. A pergunta que abre o vídeo fica escrita enquanto é dita — é o mesmo
+ * princípio do Short, e é ela que vai à miniatura.
+ * ⚠️ 8 segundos, e não os 7,4 do Short: a regra do canal dá 18 palavras à pergunta,
+ * e a 2,6 palavras/s isso são 6,9s. Com a voz a entrar aos 0,9s, 8s é o mínimo para
+ * a capa não sair da tela a meio da frase — o defeito exato que o dono apanhou no
+ * primeiro vídeo real do robô (§32.4).
+ */
+export const VOZ_ENTRA_FRAMES = 27;
+export const CAPA_FRAMES = 240;
+export const SIGNATURE_FRAMES = 75;
+export const PLACA_FRAMES = 78; // ~2,6s de placa de capítulo, por cima da cena
+/**
+ * O RESPIRO ENTRE CENAS. O TTS já acrescenta 0,35s de silêncio ao fim de cada fala
+ * (`TAIL_PAD`), e o Short soma mais 0,7s por cena. Aqui são 0,35s: num vídeo de seis
+ * minutos com ~23 cenas, 0,7s por cena seriam 16 segundos de silêncio — o dobro do
+ * que a fala precisa para respirar, e tempo morto é onde a audiência sai.
+ */
+export const RESPIRO_SEC = 0.35;
+
+const durationsSec = (script: LongScript, timing: LongTiming): number[] =>
+  script.scenes.map((s, i) => {
+    const medido = timing?.scenes?.find((t) => String(t.id) === String(s.id))?.durationSec;
+    const falada = medido || s.durationSec;
+    return i < script.scenes.length - 1 ? falada + RESPIRO_SEC : falada;
+  });
+
+export const longFramesFrom = (durs: number[], fps: number) => durs.map((d) => Math.max(1, Math.round(d * fps)));
+
+/**
+ * ⚠️ A LINHA DO TEMPO, COM OS CARTÕES DE CAPÍTULO PELO MEIO (04/08/2026, tarde).
+ *
+ * O dono viu o vídeo e apanhou uma sobreposição minha: *"aqui nessas cenas onde aparecem
+ * os cards dos Passos ficou muito congestionado, não dá tempo de ler nada"*. A placa
+ * entrava POR CIMA de uma cena que já tinha uma frase grande no ecrã — dois textos
+ * grandes ao mesmo tempo, 2,6 segundos, e ninguém lia nenhum.
+ *
+ * A ideia dele é melhor: *"daria até pra ganharmos mais tempo de vídeo/tela e respiro,
+ * daríamos pra criar uma cena somente com o card Passo 1 em movimento"*. Por isso o
+ * cartão passou a ter **cena própria**, ANTES da cena que abre o capítulo, e a placa
+ * sobreposta desapareceu.
+ *
+ * ⚠️ ESTA FUNÇÃO É A FONTE ÚNICA DA LINHA DO TEMPO, e tem de ser: o `render-longo.mjs`
+ * corta o vídeo em partes pelos limites de capítulo e precisa exatamente destes
+ * números. Enquanto a conta estava escrita em dois sítios, bastava mudar num para os
+ * cortes caírem no sítio errado — e isso já custou um render inteiro no §34.
+ */
+export const linhaDoTempo = (script: LongScript, timing: LongTiming, fps: number) => {
+  const frames = longFramesFrom(durationsSec(script, timing), fps);
+  const cartoes: number[] = [];   // fotograma em que o cartão de capítulo começa (-1 = não há)
+  const inicios: number[] = [];   // fotograma em que a cena começa
+  let acc = 0;
+  script.scenes.forEach((cena, i) => {
+    const temCartao = Boolean(cena.abreCapitulo && cena.capitulo);
+    cartoes.push(temCartao ? acc : -1);
+    if (temCartao) acc += CARTAO_CAPITULO_FRAMES;
+    inicios.push(acc);
+    acc += frames[i];
+  });
+  return { frames, inicios, cartoes, conteudo: acc };
+};
+
+export const longTotalFrames = (script: LongScript, timing: LongTiming, fps: number) =>
+  CAPA_FRAMES > 0
+    ? VOZ_ENTRA_FRAMES + linhaDoTempo(script, timing, fps).conteudo + SIGNATURE_FRAMES
+    : 0;
+
+// ── a legenda karaokê, refeita para 16:9 ────────────────────────────────────
+const BASE = 46;
+const EMPHASIS = 66;
+
+/**
+ * ⚠️ SEIS PALAVRAS POR LINHA, E NÃO TRÊS — e a diferença viu-se num fotograma.
+ *
+ * `captions.tsx` agrupa de três em três, e faz sentido no formato vertical: a 56px
+ * num ecrã de 1080 de largura, três palavras já enchem a linha. Em 16:9 há 1560px
+ * úteis e a letra é mais pequena — a legenda saía com três palavrinhas perdidas no
+ * meio do ecrã, como se faltasse texto.
+ * O agrupamento é refeito AQUI, sem tocar em `captions.tsx`: aquele ficheiro serve o
+ * Short, que o robô publica todos os dias, e não tem nada que mudar por causa disto.
+ */
+const PALAVRAS_POR_LINHA = 6;
+const reagrupar = (timings: ReturnType<typeof layoutWords>) =>
+  timings.map((t, i) => ({ ...t, line: Math.floor(i / PALAVRAS_POR_LINHA) }));
+
+const LegendaLonga: React.FC<{ narration: string; totalFrames: number; words?: { word: string; start: number; end: number }[] }> = ({ narration, totalFrames, words }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const timings = reagrupar(words && words.length ? wordTimingsFromReal(words, fps) : layoutWords(narration, totalFrames));
+  const active = activeIndex(timings, frame);
+  const currentLine = timings[active]?.line ?? 0;
+  const lineWords = timings.filter((t) => t.line === currentLine);
+  const lineStart = lineWords[0]?.start ?? 0;
+  const lineIn = spring({ frame: frame - lineStart, fps, config: { damping: 18, mass: 0.5 } });
+  const lineY = interpolate(lineIn, [0, 1], [22, 0]);
+
+  return (
+    <div style={{
+      position: 'absolute', bottom: 92, left: 180, right: 180,
+      display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center',
+      gap: '10px 14px', transform: `translateY(${lineY}px)`,
+      fontFamily: BODY, fontWeight: 800, lineHeight: 1.05,
+    }}>
+      {lineWords.map((t) => {
+        const idx = timings.indexOf(t);
+        const isActive = idx === active;
+        const pop = spring({ frame: frame - t.start, fps, config: { damping: 12, mass: 0.4 } });
+        const escala = t.emphasis && isActive ? interpolate(pop, [0, 1], [0.6, 1.04]) : (isActive ? interpolate(pop, [0, 1], [0.7, 1.1]) : 1);
+        const dito = frame >= t.start;
+        return (
+          <span key={idx} style={{
+            display: 'inline-block',
+            fontSize: t.emphasis ? EMPHASIS : BASE,
+            transform: `scale(${escala})`,
+            padding: isActive ? '2px 14px' : '2px 0',
+            borderRadius: 12,
+            background: isActive ? BRAND.gradient : 'transparent',
+            color: isActive ? '#0d1117' : t.emphasis ? BRAND.yellow : dito ? BRAND.text : 'rgba(148,163,184,0.55)',
+            textShadow: isActive ? 'none' : '0 3px 14px rgba(0,0,0,0.8)',
+            boxShadow: isActive ? '0 8px 26px rgba(139,92,246,0.45)' : 'none',
+          }}>{t.word}</span>
+        );
+      })}
+    </div>
+  );
+};
+
+// ── a capa ──────────────────────────────────────────────────────────────────
+/**
+ * A CAPA DO VÍDEO LONGO — e é ela que vira MINIATURA.
+ *
+ * ⚠️ O DESENHO É DIFERENTE DO SHORT, e tinha de ser. No vertical a pergunta fica em
+ * cima e o boneco em baixo, porque há altura de sobra. Em 16:9 há metade da altura e
+ * o dobro da largura: empilhar dava um ator do tamanho de um selo. Por isso aqui é
+ * lado a lado — a pergunta à esquerda, o boneco a encenar a dor à direita.
+ * O boneco é o MESMO das 32 capas (`CoreografiaDaCapa`), escolhido pelo campo
+ * `fioCondutor` do guião. Nenhuma das 32 coreografias foi tocada.
+ * ⚠️ O palco é desenhado em 1240×1560 (retrato). A escala de 0,66 põe-no dentro dos
+ * 1080 de altura com uma margem — sem ela, os pés do boneco ficavam cortados.
+ */
+const PALCO_ESCALA = 0.66;
+
+const CapaLonga: React.FC<{ pergunta: string; metaphor?: string | null; frames: number }> = ({ pergunta, metaphor, frames }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const entra = spring({ frame, fps, config: { damping: 16, mass: 0.7 } });
+  const escala = interpolate(entra, [0, 1], [1.1, 1]);
+  const sai = interpolate(frame, [frames - 12, frames], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const brilho = interpolate(frame, [0, 3, 14], [0.7, 0.35, 0], { extrapolateRight: 'clamp' });
+  // A pergunta longa tem de encolher, senão sai da caixa. A conta é grosseira de
+  // propósito: o que interessa é nunca haver texto cortado, e a regra do canal já
+  // limita a pergunta a 18 palavras.
+  const tamanho = pergunta.length > 78 ? 62 : pergunta.length > 56 ? 72 : 84;
+
+  return (
+    <AbsoluteFill style={{ opacity: sai }}>
+      {/* ⚠️ O FUNDO DA CAPA É OPACO, e a razão viu-se num fotograma antes de eu mostrar
+          seja o que for: a 0,95 de opacidade a legenda karaokê da cena 1 TRANSPARECIA
+          por baixo da capa, e lia-se texto a dobrar. É o primo do defeito §32.4 (a capa
+          a tapar a legenda) — aqui, ao contrário: a legenda a espreitar pela capa. */}
+      <AbsoluteFill style={{ background: BRAND.bg }} />
+      <AbsoluteFill style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <div style={{
+          flex: '0 0 980px', padding: '0 40px 0 90px', transform: `scale(${escala})`, transformOrigin: 'left center',
+        }}>
+          <div style={{
+            ...gradientText, fontFamily: DISPLAY, fontWeight: 900, fontSize: tamanho, lineHeight: 1.1,
+            filter: 'drop-shadow(0 0 46px rgba(139,92,246,0.5))',
+          }}>{pergunta}</div>
+          <div style={{
+            marginTop: 40, height: 10, width: `${interpolate(entra, [0, 1], [0, 420])}px`, borderRadius: 5,
+            background: `linear-gradient(90deg, ${BRAND.cyan}, ${BRAND.violet}, ${BRAND.magenta})`,
+          }} />
+        </div>
+        {/* ⚠️ O PALCO É DESENHADO EM 1240×1560 E TEM DE SER ENCOLHIDO COM CAIXA PRÓPRIA.
+            Pôr o `scale` na coluna inteira parecia funcionar e não funcionava: o SVG
+            continuava a ocupar 1240px de LARGURA dentro de uma coluna de 940, transbordava
+            300px e o boneco saía pela direita fora. Visto no primeiro fotograma que
+            renderizei — e é por isso que se olha para o resultado, nunca para o código.
+            Agora a caixa tem o tamanho JÁ encolhido e o palco é escalado a partir do
+            canto, o que o mantém inteiro e centrado. */}
+        <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{ width: PALCO_W * PALCO_ESCALA, height: PALCO_H * PALCO_ESCALA, position: 'relative' }}>
+            <div style={{ position: 'absolute', top: 0, left: 0, transformOrigin: 'top left', transform: `scale(${PALCO_ESCALA})` }}>
+              <CoreografiaDaCapa metaphor={metaphor} life={frames} />
+            </div>
+          </div>
+        </div>
+      </AbsoluteFill>
+      <AbsoluteFill style={{ background: '#fff', opacity: brilho, pointerEvents: 'none' }} />
+    </AbsoluteFill>
+  );
+};
+
+// ── a placa de capítulo ─────────────────────────────────────────────────────
+const PlacaCapitulo: React.FC<{ numero: number; titulo: string }> = ({ numero, titulo }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const entra = spring({ frame, fps, config: { damping: 17, mass: 0.6 } });
+  const sai = interpolate(frame, [PLACA_FRAMES - 14, PLACA_FRAMES], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const x = interpolate(entra, [0, 1], [-160, 0]);
+
+  return (
+    <AbsoluteFill style={{ justifyContent: 'flex-end', alignItems: 'flex-start', padding: '0 0 210px 90px', opacity: sai }}>
+      {/* ⚠️ A PLACA PRECISA DE FUNDO PRÓPRIO, e não é gosto — é legibilidade.
+          Sem ele, o título do capítulo caía POR CIMA do telemóvel do b-roll e as
+          últimas palavras desapareciam contra a tela clara. Apanhado no fotograma
+          1170, antes de renderizar o vídeo todo. O painel é escuro e desfocado, no
+          espírito do vidro fosco que o resto do canal já usa. */}
+      <div style={{
+        transform: `translateX(${x}px)`, display: 'flex', alignItems: 'center', gap: 24,
+        maxWidth: 1220, padding: '26px 44px 26px 34px', borderRadius: 26,
+        background: 'rgba(13,17,23,0.86)',
+        backdropFilter: 'blur(14px)',
+        border: '1px solid rgba(148,163,184,0.16)',
+        boxShadow: '0 24px 70px rgba(0,0,0,0.55)',
+      }}>
+        <div style={{
+          fontFamily: DISPLAY, fontWeight: 900, fontSize: 120, lineHeight: 1,
+          ...gradientText, filter: 'drop-shadow(0 0 30px rgba(139,92,246,0.55))',
+        }}>{numero}</div>
+        <div style={{ borderLeft: `6px solid ${BRAND.violet}`, paddingLeft: 24 }}>
+          <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 24, letterSpacing: 3, color: BRAND.cyan }}>
+            PASSO {numero}
+          </div>
+          <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontSize: 54, lineHeight: 1.12, color: BRAND.text, marginTop: 8 }}>
+            {titulo}
+          </div>
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ── o trilho de progresso, com uma marca por capítulo ───────────────────────
+const TrilhoLongo: React.FC<{ total: number; marcas: number[] }> = ({ total, marcas }) => {
+  const frame = useCurrentFrame();
+  const pct = Math.min(1, Math.max(0, frame / Math.max(1, total)));
+  return (
+    <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 8, background: 'rgba(148,163,184,0.16)' }}>
+      <div style={{ height: '100%', width: `${pct * 100}%`, background: BRAND.gradient, boxShadow: '0 0 18px rgba(139,92,246,0.6)' }} />
+      {marcas.map((m, i) => (
+        <div key={i} style={{
+          position: 'absolute', left: `${(m / Math.max(1, total)) * 100}%`, top: -4, width: 4, height: 16,
+          background: frame >= m ? BRAND.yellow : 'rgba(148,163,184,0.5)', borderRadius: 2,
+        }} />
+      ))}
+    </div>
+  );
+};
+
+// ── a cena ──────────────────────────────────────────────────────────────────
+/** O b-roll do catálogo, em ciclo — o caminho que era o ÚNICO e passou a ser um dos sete. */
+const CenaDeBroll: React.FC<{ comp?: string; brollFrames?: number }> = ({ comp, brollFrames }) => {
+  const Broll = BROLL[comp || ''] || BROLL.AppMosaicoLong;
+  return (
+    // A composição do catálogo tem duração própria; quando a cena é mais longa,
+    // ela repete em ciclo em vez de congelar no último fotograma.
+    <Loop durationInFrames={Math.max(30, brollFrames || 210)}>
+      <Broll />
+    </Loop>
+  );
+};
+
+/**
+ * O SOM DO QUE ACONTECE NO ECRÃ — a outra metade do pedido dos efeitos.
+ *
+ * Não é só a palavra dita que dispara som (isso é o `SonsDaCena`): é o próprio
+ * acontecimento visual. O número que conta leva a registadora, a conta leva um toque
+ * na primeira linha e um baque na última, o cartão do app desliza, a mãozinha clica.
+ *
+ * ⚠️ Cada atraso vem da MESMA conta que o desenho usa — `atrasoDaUltimaLinha` para a
+ * conta, `momentoDoClique` para a mão. Calculados em separado, mais tarde ou mais cedo
+ * deixariam de bater certo, e um som fora do sítio é pior do que som nenhum.
+ */
+const SomDaFamilia: React.FC<{ visual?: LongVisual; frames: number }> = ({ visual, frames }) => {
+  if (!visual) return null;
+  switch (visual.tipo) {
+    case 'numero':
+      return <SomDoMomento ficheiro={SOM.registadora} atraso={8} volume={0.3} />;
+    case 'conta':
+      return (
+        <>
+          <SomDoMomento ficheiro={SOM.toque} atraso={6} volume={0.22} />
+          <SomDoMomento ficheiro={SOM.baque} atraso={atrasoDaUltimaLinha(frames, (visual.linhas || []).length)} volume={0.34} />
+        </>
+      );
+    case 'app':
+      return <SomDoMomento ficheiro={SOM.cartao} atraso={10} volume={0.3} />;
+    case 'frase':
+      // a chamada é a mãozinha: o clique cai no fotograma exato do toque
+      if (visual.variante === 'chamada') return <SomDoMomento ficheiro={SOM.clique} atraso={momentoDoClique(frames)} volume={0.4} />;
+      return <SomDoMomento ficheiro={SOM.estalo} volume={0.24} />;
+    case 'metafora':
+    case 'ilustracao':
+    // a fotografia entra com o mesmo deslize das outras imagens grandes
+    case 'foto':
+      return <SomDoMomento ficheiro={SOM.deslize} volume={0.22} />;
+    default:
+      return null;
+  }
+};
+
+/**
+ * ═══ A CENA ═══
+ *
+ * 🔴 O QUE MUDOU EM 04/08/2026, e é o conserto das três queixas do dono.
+ * Isto era uma linha: pegava no `cena.broll` que a roda tinha sorteado e punha-o no
+ * ecrã. Trinta cenas, trinta telas do app, nenhuma ligada ao que se estava a dizer —
+ * e com números gravados há meses a contradizer a voz.
+ * Agora a cena desenha o que o DIRETOR DE IMAGEM decidiu a partir do texto: sete
+ * famílias, e o b-roll do catálogo é uma delas, com teto de três aparições.
+ *
+ * ⚠️ O guião antigo continua a abrir. Um plano montado antes de hoje não tem `visual`,
+ * e nesse caso volta-se ao b-roll de sempre — abrir o Studio num plano antigo não pode
+ * rebentar por causa disto.
+ */
+const CenaLonga: React.FC<{
+  cena: LongScene; frames: number; palavras?: { word: string; start: number; end: number }[];
+  /** quantas palavras iniciais a CAPA já mostrou — só a cena 1 as tem. Ver `PalavrasNaTela`. */
+  pular?: number;
+}> = ({ cena, frames, palavras, pular = 0 }) => {
+  const frame = useCurrentFrame();
+  const v = cena.visual;
+  // Entrada suave: sem isto, a troca de imagem a cada ~12s é um corte seco e o vídeo
+  // parece uma apresentação de slides.
+  const entra = interpolate(frame, [0, 10], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  const conteudo = (() => {
+    if (!v) return <CenaDeBroll comp={cena.broll} brollFrames={cena.brollFrames} />;
+    switch (v.tipo) {
+      case 'numero': return <CartaoDeNumero valor={v.valor ?? 0} rotulo={v.rotulo} />;
+      case 'conta': return <CartaoDaConta linhas={v.linhas ?? []} frames={frames} />;
+      case 'app': return <TelaDoApp valor={v.valor ?? 0} rotulo={v.rotulo} passo={v.passo} />;
+      case 'frase':
+        // ⚠️ A CHAMADA LEVA A MÃOZINHA — pedido direto do dono: *"quando fala comenta
+        // FinMoovi, no shorts tem a mãozinha caminhando e clicando com som no finmoovi,
+        // isso que eu quero no vídeo"*. Ela já existe no render do Short e é
+        // reaproveitada tal e qual, com o som no fotograma exato do toque.
+        if (v.variante === 'chamada') return <MaoQueClica frames={frames} />;
+        return <CartaoDeFrase texto={v.texto ?? ''} etiquetaTexto={v.etiquetaTexto} variante={String(v.variante ?? '')} frames={frames} />;
+      case 'metafora': return <Metafora fio={v.fio} estagio={v.estagio} frames={frames} />;
+      case 'ilustracao': return <Ilustracao figura={v.figura || ''} frames={frames} />;
+      case 'foto': return <Foto ficheiro={v.ficheiro || ''} movimento={v.movimento} frames={frames} />;
+      case 'broll': return <CenaDeBroll comp={v.comp} brollFrames={v.brollFrames} />;
+      default: return <PalavrasNaTela narration={cena.narration} frames={frames} words={palavras} variante={Number(v.variante ?? 0)} pular={pular} />;
+    }
+  })();
+
+  /**
+   * ⚠️ NAS CENAS DE `palavras` NÃO SE DESENHA A LEGENDA DE BAIXO.
+   * Ali as palavras ditas SÃO a imagem, em letra grande no meio do ecrã. Manter também
+   * a legenda punha o mesmo texto duas vezes no mesmo fotograma — que é o primo do
+   * defeito §34.3-6, em que a legenda transparecia por baixo da capa.
+   */
+  const comLegenda = !v || v.tipo !== 'palavras';
+
+  return (
+    <AbsoluteFill>
+      <AbsoluteFill style={{ opacity: entra }}>{conteudo}</AbsoluteFill>
+      {/* Véu por baixo da legenda: sem ele, a legenda branca cai por cima de gráficos
+          claros e deixa de se ler. Só a faixa de baixo é escurecida. */}
+      {comLegenda ? (
+        <AbsoluteFill style={{
+          background: 'linear-gradient(to top, rgba(13,17,23,0.92) 0%, rgba(13,17,23,0.75) 14%, rgba(13,17,23,0) 32%)',
+        }} />
+      ) : null}
+      {comLegenda ? <LegendaLonga narration={cena.narration} totalFrames={frames} words={palavras} /> : null}
+      {/* ⚠️ OS ÍCONES ENTRAM COM O SOM, na palavra — pedido do dono: *"quando há muito
+          texto… deveria, quando se falar, aparecer um ícone relacionado junto com o som"*.
+          Os momentos são os MESMOS do `SonsDaCena` (ver `disparosDaCena`). */}
+      <IconesDaCena narration={cena.narration} frames={frames} words={palavras} />
+      {/* A chapa do valor entra por cima de tudo — é ela que garante que o número certo
+          está no ecrã nas repetições, sem repetir o cartão grande. */}
+      {v?.etiqueta ? <Etiqueta valor={v.etiqueta.valor} rotulo={v.etiqueta.rotulo} /> : null}
+    </AbsoluteFill>
+  );
+};
+
+/**
+ * O GUIÃO DE RESERVA. Só existe para o Studio abrir sem rebentar quando ainda não há
+ * nenhum vídeo longo montado — no pipeline o guião real chega sempre por props.
+ * Repare que ele NÃO é um vídeo publicável: diz em letras gordas que é um marcador.
+ */
+export const GUIAO_DE_RESERVA: LongScript = {
+  slug: 'sem-guiao',
+  tema: 'sem guião carregado',
+  promessa: '',
+  capa: 'Nenhum guião longo foi montado ainda.',
+  capitulos: [],
+  scenes: [{
+    id: 1, bloco: 'abertura', parte: 'abertura', role: 'hook',
+    narration: 'Corra o montador do vídeo longo para ver alguma coisa aqui.',
+    palavras: 11, durationSec: 4, broll: 'AppMosaicoLong', brollFrames: 210,
+  }],
+};
+
+export const Long: React.FC<{ script?: LongScript; timing?: LongTiming; slug?: string }> = ({ script = GUIAO_DE_RESERVA, timing = null }) => {
+  const { fps } = useVideoConfig();
+  const { frames, inicios, cartoes, conteudo } = linhaDoTempo(script, timing, fps);
+  // as marcas do trilho apontam para o CARTÃO, que é onde o capítulo começa de facto
+  const marcasDeCapitulo = cartoes.filter((v) => v >= 0);
+
+  const timingDe = (id: number) => timing?.scenes?.find((t) => String(t.id) === String(id));
+
+  /**
+   * ⚠️ QUANTO TEMPO A CAPA FICA NO ECRÃ — e isto foi MEDIDO, não estimado.
+   *
+   * A 1ª versão deixava a capa até ao fim da CENA 1. Medido no vídeo real: a voz
+   * acabava a pergunta aos 5,2s e a capa ficava até aos 8s — quase três segundos a
+   * mostrar uma pergunta que já tinha sido respondida, com o karaokê da resposta
+   * escondido por baixo. É a mesma família do defeito §32.4 (a capa a sobreviver à
+   * cena seguinte), só que aqui a cena era a mesma e o problema era a FRASE.
+   *
+   * Agora a capa acaba quando a PERGUNTA acaba de ser dita: contam-se as palavras da
+   * pergunta e pergunta-se ao timing da voz quando a última delas termina, mais meio
+   * segundo para a frase assentar. Sem timing (pré-visualização sem áudio), volta ao
+   * comportamento antigo.
+   */
+  /**
+   * ⚠️ AS PALAVRAS QUE A CAPA JÁ DISSE — e a cena 1 não as repete.
+   * O dono apanhou isto: a capa mostrava a pergunta inteira e, mal saía, o ecrã
+   * seguinte recomeçava a meio dela (*"parece que ela nunca acaba? Isso acontece
+   * porque…"*). É o mesmo número que já se usava para saber quando a capa sai —
+   * agora serve as duas coisas, que é como tem de ser.
+   */
+  const palavrasDaPergunta = String(script.capa || '').trim().split(/\s+/).filter(Boolean).length;
+
+  const framesDaCapa = (() => {
+    const teto = Math.max(1, Math.min(CAPA_FRAMES, VOZ_ENTRA_FRAMES + (frames[0] || CAPA_FRAMES)));
+    const ditas = timingDe(script.scenes[0]?.id)?.words;
+    if (!palavrasDaPergunta || !ditas || ditas.length < palavrasDaPergunta) return teto;
+    const fimDaPergunta = ditas[palavrasDaPergunta - 1]?.end;
+    if (!Number.isFinite(fimDaPergunta)) return teto;
+    return Math.max(1, Math.min(teto, VOZ_ENTRA_FRAMES + Math.round((fimDaPergunta + 0.5) * fps)));
+  })();
+
+  return (
+    <AbsoluteFill>
+      <Background />
+      {/* ⚠️ COSTURA CRUZADA — e é o conserto de uma queixa do dono, medida com régua.
+          As faixas foram cortadas a 75s (34s, a leve) para Shorts, e trazem um
+          desvanecimento gravado no fim. Num vídeo de seis minutos elas recomeçavam
+          cinco vezes, e o último segundo estava 13 dB abaixo do primeiro: a música
+          morria e voltava de repente. Aqui as passagens sobrepõem-se; no Short fica
+          como estava. Ver o comentário longo em `audio/music.tsx`. */}
+      <BackgroundMusic ficheiro={script.music?.ficheiro} costura="cruzada" />
+      <Watermark />
+
+      <Sequence from={VOZ_ENTRA_FRAMES}>
+        <TrilhoLongo total={conteudo} marcas={marcasDeCapitulo} />
+        {/* ⚠️ O CARTÃO DE CAPÍTULO É CENA, NÃO AUTOCOLANTE. Ver `linhaDoTempo`: ele
+            ocupa 2,6 segundos SEUS antes da cena que abre o capítulo, com movimento e
+            som, em vez de entrar por cima de um ecrã que já tinha texto grande. */}
+        {script.scenes.map((cena, i) => (cartoes[i] >= 0 ? (
+          <Sequence key={`cap${i}`} from={cartoes[i]} durationInFrames={CARTAO_CAPITULO_FRAMES}>
+            <CartaoDeCapitulo numero={cena.capitulo || 0} titulo={cena.tituloCapitulo || ''} />
+            <SomDoMomento ficheiro={SOM.deslize} volume={0.3} />
+            <SomDoMomento ficheiro={SOM.brilho} atraso={12} volume={0.22} />
+          </Sequence>
+        ) : null))}
+
+        {script.scenes.map((cena, i) => {
+          const t = timingDe(cena.id);
+          return (
+            <Sequence key={`c${i}`} from={inicios[i]} durationInFrames={frames[i]}>
+              <CenaLonga cena={cena} frames={frames[i]} palavras={t?.words} pular={i === 0 ? palavrasDaPergunta : 0} />
+              {t?.audioFile ? <Audio src={staticFile(t.audioFile)} /> : null}
+              {/* ⚠️ OS SONS — o dono: *"não é só mostrar letras, ícones conforme as
+                  palavras são ditas, mas sim usarmos também os sons sincronizados com
+                  relação ao que é dito, assim como já fazemos nos shorts"*. Tínhamos 18
+                  efeitos guardados e este vídeo usava zero. */}
+              <SonsDaCena narration={cena.narration} frames={frames[i]} words={t?.words} />
+              <SomDaFamilia visual={cena.visual} frames={frames[i]} />
+            </Sequence>
+          );
+        })}
+      </Sequence>
+
+      {/* A CAPA POR CIMA DE TUDO — irmãos posteriores pintam por cima. A voz já toca
+          por baixo desde os 0,9s, que é exatamente o que o dono pediu no Short. */}
+      <Sequence durationInFrames={framesDaCapa}>
+        <CapaLonga pergunta={script.capa} metaphor={script.fioCondutor} frames={framesDaCapa} />
+      </Sequence>
+
+      {/* A TELA DO BORDÃO, por cima dos últimos ~2,5s — a mesma assinatura de todos os
+          vídeos do canal, escolhida pelo dono em 03/08. Custo ZERO em segundos. */}
+      <Sequence
+        from={Math.max(0, VOZ_ENTRA_FRAMES + conteudo - BORDAO_FRAMES)}
+        durationInFrames={BORDAO_FRAMES + BORDAO_OVERLAP_FRAMES}
+      >
+        <TelaBordao />
+      </Sequence>
+
+      <Sequence from={VOZ_ENTRA_FRAMES + conteudo} durationInFrames={SIGNATURE_FRAMES}>
+        <SignatureOutro />
+      </Sequence>
+    </AbsoluteFill>
+  );
+};

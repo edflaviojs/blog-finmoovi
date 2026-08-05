@@ -17,6 +17,7 @@ import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const STATS_PATH = join(process.cwd(), 'src', 'data', 'statistics.json');
+const DIVIDA_PATH = join(process.cwd(), 'src', 'data', 'divida.json');
 
 export function lerIndicadores() {
   if (!existsSync(STATS_PATH)) return null;
@@ -89,6 +90,127 @@ export function simularPoupanca({ aporteMensal, meses, taxaMensalPct }) {
     liquido: +total.toFixed(2),
     rendimentoLiquido: +(total - investido).toFixed(2),
   };
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// A FICHA DE DÍVIDA (04/08/2026) — a peça que faltava para o vídeo longo poder
+// ENSINAR alguma coisa sobre dívida em vez de só falar de organização.
+//
+// ⚠️ TUDO O QUE ESTÁ AQUI É ACRESCENTADO. Nada acima foi tocado: o `montarFichaDeNumeros`
+// que o Short corre todos os dias continua igual, linha por linha.
+// ═══════════════════════════════════════════════════════════════════════════════
+
+/** As taxas do cartão, colhidas por `scripts/update-divida.js`. Sem ficheiro, devolve null. */
+export function lerJurosDeDivida() {
+  if (!existsSync(DIVIDA_PATH)) return null;
+  try {
+    const d = JSON.parse(readFileSync(DIVIDA_PATH, 'utf-8'));
+    if (!d?.rotativo?.aoMes) return null;
+    return d;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * O QUE ACONTECE A QUEM PAGA SÓ O MÍNIMO DA FATURA — e o modelo segue a lei
+ * brasileira, não a lenda.
+ *
+ * ⚠️ A LENDA, QUE SERIA MAIS DRAMÁTICA E SERIA FALSA: "o resto fica rolando no
+ * rotativo mês após mês e dobra". **Isso deixou de ser verdade em 2017.** A Resolução
+ * CMN 4.549 obriga o banco a tirar a pessoa do rotativo depois de UM mês e a oferecer
+ * parcelamento. Um vídeo que ensinasse a bola de neve infinita estaria a assustar com
+ * uma coisa que a lei já proíbe — e num canal de finanças isso custa a credibilidade
+ * toda.
+ *
+ * O que este cálculo faz, e é o que de facto acontece:
+ *   1. paga-se o mínimo da fatura (o piso legal são 15%);
+ *   2. o que sobra fica UM mês no rotativo, à taxa do rotativo;
+ *   3. daí em diante o banco parcela o saldo, à taxa do parcelado.
+ * O resultado é quanto se paga, no fim, por uma fatura que não foi paga inteira.
+ *
+ * @param fatura  o valor da fatura
+ * @param meses   em quantas vezes o banco parcela o saldo (padrão 12)
+ */
+export function simularPagamentoMinimo({ fatura, meses = 12, juros = null }) {
+  const j = juros || lerJurosDeDivida();
+  if (!j || !Number.isFinite(fatura) || fatura <= 0) return null;
+
+  const taxaRotativo = j.rotativo.aoMes / 100;
+  // Sem a taxa do parcelado, usa-se a do rotativo — é o pior caso, e assumi-lo é
+  // mais honesto do que inventar um número melhor.
+  const taxaParcelado = (j.parcelado?.aoMes ?? j.rotativo.aoMes) / 100;
+  const percentagemMinima = j.minimoDaFatura ?? 0.15;
+
+  const minimoPago = fatura * percentagemMinima;
+  const sobra = fatura - minimoPago;
+  const jurosDoRotativo = sobra * taxaRotativo;
+  const saldoParaParcelar = sobra + jurosDoRotativo;
+
+  // Prestação de um parcelamento com juros compostos (Price).
+  const i = taxaParcelado;
+  const parcela = i > 0
+    ? (saldoParaParcelar * i) / (1 - (1 + i) ** -meses)
+    : saldoParaParcelar / meses;
+  const totalParcelado = parcela * meses;
+  const totalPago = minimoPago + totalParcelado;
+
+  const arredondar = (n) => Math.round(n);
+  return {
+    fatura: arredondar(fatura),
+    minimoPago: arredondar(minimoPago),
+    sobra: arredondar(sobra),
+    jurosDoRotativo: arredondar(jurosDoRotativo),
+    saldoParaParcelar: arredondar(saldoParaParcelar),
+    meses,
+    parcela: arredondar(parcela),
+    totalPago: arredondar(totalPago),
+    aMais: arredondar(totalPago - fatura),
+    taxas: {
+      rotativoAoMes: j.rotativo.aoMes,
+      parceladoAoMes: j.parcelado?.aoMes ?? null,
+      periodo: j.periodo,
+      fonte: j.fonte,
+      medida: j.medida,
+    },
+  };
+}
+
+/**
+ * A FICHA que entra no prompt do vídeo de dívida. Devolve `null` quando não há taxas
+ * colhidas — e nesse caso o gerador segue sem ficha, exatamente como fazia antes.
+ *
+ * ⚠️ `permitidos` é o que o roteiro pode DIZER. Repare no que está lá dentro e no que
+ * NÃO está: as percentagens ficam de fora de propósito (o vídeo longo tem uma trava
+ * que proíbe qualquer percentagem falada — o número que a pessoa entende é o REAL,
+ * não a taxa). O que entra são os valores em dinheiro, mais os arredondamentos
+ * naturais da fala ("quase quatrocentos").
+ */
+export function montarFichaDeDivida(fatura, { meses = 12 } = {}) {
+  const s = simularPagamentoMinimo({ fatura, meses });
+  if (!s) return null;
+
+  const permitidos = new Set();
+  for (const n of [s.fatura, s.minimoPago, s.sobra, s.jurosDoRotativo, s.saldoParaParcelar, s.parcela, s.totalPago, s.aMais]) {
+    const v = Math.round(Number(n));
+    if (!Number.isFinite(v) || v < 10) continue;
+    permitidos.add(v);
+    permitidos.add(Math.round(v / 10) * 10);
+    permitidos.add(Math.round(v / 100) * 100);
+    if (v >= 1000) permitidos.add(Math.round(v / 1000) * 1000);
+  }
+
+  const brl = (n) => n.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  const texto = [
+    `Fatura do cartão: R$ ${brl(s.fatura)}`,
+    `Pagando só o mínimo (${Math.round((s.minimoPago / s.fatura) * 100)}% da fatura, que é o piso da lei): paga R$ ${brl(s.minimoPago)} e ficam R$ ${brl(s.sobra)} por pagar`,
+    `Esses R$ ${brl(s.sobra)} ficam um mês no rotativo e viram R$ ${brl(s.saldoParaParcelar)} — são R$ ${brl(s.jurosDoRotativo)} de juros num mês só`,
+    `Depois o banco é obrigado a parcelar: ${s.meses} vezes de R$ ${brl(s.parcela)}`,
+    `Total pago no fim: R$ ${brl(s.totalPago)} — ou seja, R$ ${brl(s.aMais)} a mais do que a fatura`,
+    `(taxas do Banco Central, ${s.taxas.periodo}: rotativo ${String(s.taxas.rotativoAoMes).replace('.', ',')}% ao mês${s.taxas.parceladoAoMes ? `, parcelado ${String(s.taxas.parceladoAoMes).replace('.', ',')}% ao mês` : ''} — ${s.taxas.medida})`,
+  ].join('\n');
+
+  return { ...s, permitidos: [...permitidos].filter((n) => n >= 10), texto };
 }
 
 /**
