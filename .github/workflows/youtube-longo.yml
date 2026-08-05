@@ -161,9 +161,18 @@ jobs:
       # lista de quem se inscreveu, por isso o dia é a régua — não a hora.
       # ⚠️ Num disparo à mão isto NÃO trava: quem carrega no botão sabe o que quer, e há
       # sempre `--publicar-em` para escolher outra data.
+      #
+      # ⚠️ **LEVA AS CHAVES DO YOUTUBE, e é isso que torna a regra honesta.** O caderno
+      # guarda a INTENÇÃO; quem sabe a verdade é o YouTube. Um dia reservado por um vídeo
+      # que entretanto foi tornado público **não está ocupado** — e sem esta pergunta o
+      # canal perdia uma semana por causa de uma linha que já não era verdade.
       - name: Conferir que o domingo da estreia está livre
         id: data
         if: github.event_name == 'schedule'
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: |
           set +e
           node src/scripts/youtube/upload-longo.js --conferir-estreia

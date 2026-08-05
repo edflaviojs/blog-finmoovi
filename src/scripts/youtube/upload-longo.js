@@ -162,6 +162,77 @@ export function estreiaOcupada(estreia, caderno = lerCaderno(), slugAtual = null
   return null;
 }
 
+/**
+ * 🔴 O CADERNO DIZ A INTENÇÃO; **O YOUTUBE DIZ A VERDADE.**
+ *
+ * ═══ O CASO REAL QUE OBRIGOU A ISTO (05/08) ═══
+ * O dono quis subir o vídeo já pronto **só para validar a subida**, agendado para o
+ * domingo — e, depois de confirmar que subiu bem, **torná-lo público logo**, porque o
+ * vídeo está feito e não há razão para o deixar parado. Mas o domingo tinha de continuar
+ * a ser do **primeiro vídeo automático**.
+ *
+ * Com a reserva escrita no caderno, o robô de sábado veria o domingo ocupado e não faria
+ * nada — **e o canal perdia uma semana** por causa de uma linha que já não era verdade.
+ * A cura preguiçosa era alguém lembrar-se de apagar essa linha. **Uma regra que depende
+ * de alguém se lembrar não é uma regra.**
+ *
+ * ═══ O QUE SE FAZ ═══
+ * Pergunta-se ao YouTube o que é feito de cada vídeo reservado:
+ *   · **ainda privado e marcado para aquele dia** → o dia está mesmo ocupado;
+ *   · **já público** → foi publicado mais cedo, e **o dia ficou livre**;
+ *   · **sem identificador, ou o YouTube não responde** → trata-se como ocupado, porque
+ *     entre publicar dois vídeos no mesmo dia e não publicar nenhum, o erro barato é o
+ *     segundo.
+ *
+ * É a regra da casa aplicada ao calendário: **conferir o resultado, nunca o que está
+ * escrito**. E ela corrige-se sozinha nos dois sentidos — se o dono não mexer em nada, o
+ * vídeo de hoje estreia no domingo e o robô de sábado desiste; se o tornar público antes,
+ * o robô de sábado faz o vídeo novo para esse mesmo domingo.
+ */
+export async function estadoNoYouTube(videoIds, chave) {
+  if (!videoIds.length) return {};
+  const r = await fetch(
+    `https://www.googleapis.com/youtube/v3/videos?part=status&id=${videoIds.join(',')}`,
+    { headers: { Authorization: `Bearer ${chave}` } },
+  );
+  if (!r.ok) throw new Error(`o YouTube não respondeu (${r.status})`);
+  const j = await r.json();
+  const saida = {};
+  for (const v of j.items || []) {
+    saida[v.id] = { privacidade: v.status?.privacyStatus, estreia: v.status?.publishAt || null };
+  }
+  return saida;
+}
+
+/**
+ * A mesma pergunta de `estreiaOcupada`, mas **confirmada com o YouTube**.
+ * Sem chave, ou se a rede falhar, cai na resposta do caderno — que é a conservadora.
+ */
+export async function estreiaOcupadaDeVerdade(estreia, { caderno = lerCaderno(), slugAtual = null, chave = null, registar = () => {} } = {}) {
+  const ocupado = estreiaOcupada(estreia, caderno, slugAtual);
+  if (!ocupado || !chave) return ocupado;
+
+  const videoId = caderno[ocupado.slug]?.videoId;
+  if (!videoId) {
+    registar(`   (a reserva de "${ocupado.slug}" ainda não tem vídeo no YouTube — trata-se como ocupada)`);
+    return ocupado;
+  }
+  try {
+    const estados = await estadoNoYouTube([videoId], chave);
+    const e = estados[videoId];
+    if (!e) { registar(`   (o YouTube não conhece ${videoId} — trata-se como ocupada)`); return ocupado; }
+    if (e.privacidade === 'private' && e.estreia) {
+      registar(`   confirmado no YouTube: "${ocupado.slug}" continua privado, a estrear em ${e.estreia}`);
+      return ocupado;
+    }
+    registar(`   ✅ "${ocupado.slug}" já está ${e.privacidade === 'public' ? 'PÚBLICO' : e.privacidade} — o dia ficou livre.`);
+    return null;
+  } catch (err) {
+    registar(`   ⚠️ não deu para perguntar ao YouTube (${err.message}) — trata-se como ocupada, que é o erro barato.`);
+    return ocupado;
+  }
+}
+
 /** "domingo, 9 de agosto, às 19h00 do Brasil" — para quem lê o registo entender. */
 export function emPortugues(data) {
   const brasilia = new Date(data.getTime() - 3 * 3600 * 1000);
@@ -406,12 +477,31 @@ export function acharCapa(slug, existe = existsSync) {
  * fora 36 minutos e uma corrida de IA. Isto responde em milissegundos.
  * Devolve 78 ("nada a fazer") quando o dia está tomado — nunca um erro, porque não é um.
  */
-function conferirEstreiaSozinha() {
+async function conferirEstreiaSozinha() {
   const marcada = valor('publicar-em');
   const estreia = marcada ? new Date(marcada) : proximoDomingo();
   if (Number.isNaN(estreia.getTime())) throw new Error(`"${marcada}" não é uma data que eu saiba ler.`);
-  const ocupado = estreiaOcupada(estreia, lerCaderno(), SLUG);
   log(`📅 a próxima estreia seria ${emPortugues(estreia)}.`);
+
+  // ⚠️ Com as chaves à mão, pergunta-se ao YOUTUBE em vez de acreditar no caderno.
+  // Ver `estreiaOcupadaDeVerdade`: uma reserva de um vídeo que entretanto foi tornado
+  // público **não ocupa nada** — e sem isto o canal perdia uma semana por causa de uma
+  // linha que já não era verdade.
+  let chave = null;
+  try { chave = await getAccessToken(); } catch { /* sem chaves, decide o caderno */ }
+
+  /**
+   * 🔴 AQUI USA-SE O QUE FOI ESCRITO, NÃO O VALOR POR OMISSÃO — e a diferença é enorme.
+   *
+   * `SLUG` cai em "sair-do-vermelho" quando ninguém diz nada. Nesta conferência, o robô
+   * ainda **não escolheu** o vídeo da semana (ela corre antes disso, de propósito, para
+   * desistir cedo). Com o valor por omissão, o programa excluía a reserva do piloto por
+   * pensar que era ele próprio a subir — **e o dia parecia sempre livre**.
+   * Apanhado a correr o comando exato do robô, não a ler o código.
+   */
+  const ocupado = await estreiaOcupadaDeVerdade(estreia, {
+    caderno: lerCaderno(), slugAtual: valor('slug'), chave, registar: log,
+  });
   if (ocupado) {
     log(`⏭️  esse dia já é do vídeo "${ocupado.slug}" — um dia, um vídeo.`);
     log('   Nada a fazer hoje (não é avaria).');
@@ -421,7 +511,7 @@ function conferirEstreiaSozinha() {
 }
 
 async function principal() {
-  if (args['conferir-estreia']) { conferirEstreiaSozinha(); return; }
+  if (args['conferir-estreia']) { await conferirEstreiaSozinha(); return; }
   log(`\n=== YouTube · vídeo longo "${SLUG}"${ENSAIO ? ' (ENSAIO — nada é enviado)' : ''} ===`);
 
   // ── o que tem de existir ──

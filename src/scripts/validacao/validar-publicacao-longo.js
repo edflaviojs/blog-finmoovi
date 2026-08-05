@@ -258,6 +258,25 @@ console.log('\n2. A HORA DE ESTREIA');
     estreiaOcupada(new Date('2026-08-09T12:00:00.000Z'), cadernoDeMesa)?.slug === 'ja-marcado',
   );
   /**
+   * ⚠️ **UM VÍDEO NÃO OCUPA O DIA CONTRA SI PRÓPRIO.** O caderno guarda reservas — dias
+   * apontados para um vídeo que ainda não subiu. Sem isto, a mensagem era absurda:
+   * *"domingo já é do vídeo X"* a recusar o próprio X.
+   */
+  ok(
+    'mas o próprio vídeo pode subir para o dia que tem reservado',
+    estreiaOcupada(new Date('2026-08-09T22:00:00.000Z'), cadernoDeMesa, 'ja-marcado') === null,
+  );
+  /**
+   * 🔴 E A ARMADILHA QUE ISSO ABRIU, apanhada a correr o comando exato do robô: a
+   * conferência da data corre **antes** de o vídeo da semana ser escolhido, e o valor por
+   * omissão do nome fazia o programa excluir a reserva do piloto por pensar que era ele
+   * próprio a subir. **O dia parecia sempre livre.** Sem nome, não se exclui ninguém.
+   */
+  ok(
+    'e sem dizer que vídeo é, não se exclui reserva nenhuma',
+    estreiaOcupada(new Date('2026-08-09T22:00:00.000Z'), cadernoDeMesa, null)?.slug === 'ja-marcado',
+  );
+  /**
    * A prova contra o caderno REAL: hoje o piloto ocupa 09/08. Se alguém o apagar de lá, o
    * robô publica por cima do vídeo que o dono subiu à mão — e isto fica vermelho antes.
    */
