@@ -41,6 +41,7 @@ import { BRAND, DISPLAY, BODY, gradientText } from './theme';
 import { CoreografiaDaCapa } from './capas';
 import { PALCO_W, PALCO_H } from './capa';
 import { FinMooviIcon } from './icon';
+import { fitText } from '@remotion/layout-utils';
 
 /** O instante-chave da abertura. É o mesmo valor que o `Palco` usa como `em`. */
 export const INSTANTE_CHAVE = 0.34;
@@ -61,24 +62,33 @@ export type CapaFotoProps = {
 };
 
 /**
- * ⚠️ O NÚMERO NUNCA PODE PARTIR-SE AO MEIO — e a primeira versão partia.
- * Renderizada e OLHADA, "R$ 2 MIL" saiu em duas linhas: "R$ 2" em cima e "MIL" em
- * baixo. Um número partido deixa de ser um número; vira duas coisas que ninguém lê.
+ * ⚠️ O NÚMERO NUNCA PODE PARTIR-SE AO MEIO NEM SANGRAR PARA FORA — e as duas coisas
+ * aconteceram, uma a seguir à outra, porque eu estava a ADIVINHAR a largura do texto.
  *
- * Por isso não se escolhe o corpo da letra por degraus de comprimento (que é
- * adivinhar): mede-se a largura disponível e divide-se.
+ * A história, para não se repetir:
+ *   1ª tentativa — corpo escolhido por degraus de comprimento: "R$ 2 MIL" partiu-se
+ *      em duas linhas ("R$ 2" / "MIL"). Um número partido deixa de ser um número.
+ *   2ª — proibido partir e o corpo calculado a 0,58 por caractere: o "R" ficou
+ *      cortado pela margem esquerda.
+ *   3ª — subi para 0,70, medido no quadro renderizado. "R$ 2 MIL" passou a caber…
+ *      e "R$ 500/MÊS" sangrou à mesma. E tinha de sangrar: **não existe uma largura
+ *      média**. Um "1" e um "M" não medem o mesmo, e uma palavra cheia de maiúsculas
+ *      largas não mede como uma cheia de algarismos.
  *
- * ⚠️ O 0,58 da primeira tentativa foi um palpite e SANGROU — "R$ 2 MIL" saiu com o
- * "R" cortado pela margem esquerda. Medido no quadro renderizado: a 207px de corpo,
- * oito caracteres ocuparam os 1080 do quadro inteiro, ou seja 0,65 por caractere.
- * O valor aqui é 0,70 — o medido mais uma folga, porque um número que sangra é um
- * defeito visível e um número 7% mais pequeno não é defeito nenhum.
+ * A 4ª tentativa não adivinha: `fitText` **mede o texto de verdade** com a fonte
+ * verdadeira e devolve o corpo que cabe. É a peça oficial do Remotion para isto.
+ * Três tentativas a afinar um número inventado valeram menos do que uma medição.
  */
-const LARGURA_MEDIA_DO_CARACTERE = 0.70;
-
 function corpoDoNumero(texto: string, base: number, largura: number) {
   if (!texto.length) return base;
-  return Math.min(base, largura / (texto.length * LARGURA_MEDIA_DO_CARACTERE));
+  const medido = fitText({
+    text: texto,
+    withinWidth: largura,
+    fontFamily: DISPLAY,
+    fontWeight: 900,
+    letterSpacing: '-2px',
+  });
+  return Math.min(base, medido.fontSize);
 }
 
 const Fundo: React.FC = () => (
