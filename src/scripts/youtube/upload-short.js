@@ -41,6 +41,11 @@ const TRACKING = join(ROOT, '.github', 'data', 'youtube-published.json');
 const BLOG_TOOLS_URL = 'https://blog.finmoovi.com/ferramentas/';
 const APP_URL = 'https://finmoovi.com';
 
+// A palavra é a MESMA que a narração diz e que a pastilha do ecrã mostra —
+// "FINMOOVI", em maiúsculas. É por ela que o robô de respostas procura os
+// comentários, por isso mudá-la aqui obriga a mudá-la nos outros dois sítios.
+const CTA_COMENTARIO = '👉 Comenta FINMOOVI aqui embaixo que eu te mando o app.';
+
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const UPLOAD_URL = 'https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status';
 const CAPTIONS_URL = 'https://www.googleapis.com/upload/youtube/v3/captions?part=snippet&uploadType=multipart';
@@ -347,6 +352,15 @@ function buildMetadata(raw, script) {
   const credito = creditoDaMusica(script.music || TRILHA);
   const description = sanitizeText([
     hook,
+    '',
+    // ♦ 05/08/2026 — O CONVITE QUE FALTAVA NA DESCRIÇÃO.
+    // A narração pede "comenta FINMOOVI que eu te mando o app" e o ecrã mostra a
+    // pastilha com a mãozinha a carregar nela — mas a descrição não dizia uma
+    // palavra sobre isso. Quem vê o Short sem som (que é muita gente) recebia a
+    // chamada só pela imagem, e quem lê a descrição não encontrava nada que a
+    // confirmasse. A descrição do vídeo LONGO já trazia esta linha desde o início;
+    // era o Short que estava a menos.
+    CTA_COMENTARIO,
     '',
     `🔗 Calculadora grátis: ${toolUrl}`,
     `📲 Organize suas finanças: ${APP_URL}`,
